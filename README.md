@@ -8,7 +8,17 @@ Sud-tibbiy ekspertiza, sud toksikologiyasi va laboratoriya mutaxassislari, tadqi
 
 ## Holat
 
-**PHASE 0 — Tadqiqot va arxitektura rejasi.** Kod yozish egasining tasdig‘idan keyin boshlanadi.
+**PHASE 1 — Foundation tugadi** (egasining tasdig‘i kutilmoqda). Ilmiy kontent hali kiritilmagan.
 
-- Arxitektura va mahsulot rejasi: [`docs/00_ARXITEKTURA_REJASI.md`](docs/00_ARXITEKTURA_REJASI.md)
-- Progress jurnali: [`PROGRESS.md`](PROGRESS.md)
+- Arxitektura rejasi: [`docs/00_ARXITEKTURA_REJASI.md`](docs/00_ARXITEKTURA_REJASI.md)
+- Evidence audit va tahlillar: [`docs/01`](docs/01_EVIDENCE_AUDIT.md) – [`docs/07`](docs/07_POLICY_COMPLIANCE.md)
+- PHASE 1 hisoboti: [`docs/08_PHASE1_FOUNDATION.md`](docs/08_PHASE1_FOUNDATION.md)
+- Progress va release gate’lar: [`PROGRESS.md`](PROGRESS.md)
+
+## Ishga tushirish
+
+```bash
+flutter pub get                 # workspace (bitta lockfile)
+./tool/ci_local.sh              # CI bilan bir xil: format, analyze, barcha testlar
+cd apps/mobile && flutter run   # ilova
+```
