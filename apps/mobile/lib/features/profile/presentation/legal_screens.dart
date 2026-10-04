@@ -92,6 +92,13 @@ class AboutScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: t.bodySmall?.copyWith(color: c.textSecondary),
               ),
+              const SizedBox(height: FeSpace.xs),
+              Text(
+                l.aboutTrademarkPending,
+                key: const Key('about.trademark'),
+                textAlign: TextAlign.center,
+                style: t.bodySmall?.copyWith(color: c.textSecondary),
+              ),
             ],
           ),
         ),
