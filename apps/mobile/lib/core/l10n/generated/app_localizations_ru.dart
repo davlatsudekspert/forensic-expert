@@ -3282,4 +3282,32 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get disciplineSourcedTopics => 'Темы с источниками';
+
+  @override
+  String get aiRagAnswer => 'Ответ';
+
+  @override
+  String get aiRagJurisdictionNotApplicable =>
+      'Не правовой вопрос — юрисдикция не применяется';
+
+  @override
+  String get aiLimNotVerified =>
+      'Данные ещё не проверены квалифицированными рецензентами.';
+
+  @override
+  String get aiLimConflict =>
+      'Источники расходятся или перекрываются — см. ПРОТИВОРЕЧИЕ ДАННЫХ.';
+
+  @override
+  String aiLimRetracted(int n) {
+    return 'Исключено утверждений из отозванных или заменённых источников: $n.';
+  }
+
+  @override
+  String get aiLimExpert =>
+      'Интерпретация конкретного случая требует квалифицированного эксперта.';
+
+  @override
+  String get aiLimMock =>
+      'Сгенерировано ТЕСТОВЫМ провайдером — не рабочий ИИ-сервис.';
 }

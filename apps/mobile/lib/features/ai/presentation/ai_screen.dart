@@ -11,7 +11,9 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/ai/ai_architecture.dart';
+import '../../../domain/ai/rag_pipeline.dart';
 import '../../../domain/ports/ai_ports.dart';
+import 'rag_sections.dart';
 
 /// Forensic AI — PHASE 2: to‘liq UI/UX prototipi, **real AI ulanmagan**.
 ///
@@ -31,6 +33,7 @@ class _AiScreenState extends ConsumerState<AiScreen> {
   List<PiiFinding> _pii = const [];
   AiExperience _experience = AiExperience.professional;
   AiRouteResult? _result;
+  RagAnswer? _rag;
   bool _searching = false;
 
   Future<void> _findSources(String lang) async {
@@ -48,9 +51,22 @@ class _AiScreenState extends ConsumerState<AiScreen> {
           experience: _experience,
           entitlement: await ref.read(aiEntitlementServiceProvider).current(),
         );
+    // PHASE 9: tuzilgan RAG natijasi (provenance, ziddiyat, retraksiya).
+    final rag = await ref
+        .read(ragPipelineProvider(lang))
+        .ask(
+          AiQuestion(
+            text: text,
+            languageCode: lang,
+            jurisdictionId: ref.read(settingsControllerProvider).jurisdictionId,
+          ),
+          experience: _experience,
+          entitlement: await ref.read(aiEntitlementServiceProvider).current(),
+        );
     if (!mounted) return;
     setState(() {
       _result = r;
+      _rag = rag;
       _searching = false;
     });
   }
@@ -171,6 +187,8 @@ class _AiScreenState extends ConsumerState<AiScreen> {
                     ],
                   ),
                   if (_result case final r?) _RouteResultView(result: r),
+                  if (_rag case final a?)
+                    if (a.evidence.isNotEmpty) RagSectionsView(answer: a),
                   if (!available) ...[
                     const SizedBox(height: FeSpace.md),
                     Row(

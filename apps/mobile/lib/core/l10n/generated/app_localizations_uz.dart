@@ -3275,4 +3275,31 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get disciplineSourcedTopics => 'Manbali mavzular';
+
+  @override
+  String get aiRagAnswer => 'Javob';
+
+  @override
+  String get aiRagJurisdictionNotApplicable =>
+      'Huquqiy savol emas — yurisdiksiya qo‘llanmadi';
+
+  @override
+  String get aiLimNotVerified =>
+      'Dalillar hali malakali reviewerlar tomonidan tasdiqlanmagan.';
+
+  @override
+  String get aiLimConflict =>
+      'Manbalar mos kelmaydi yoki ustma-ust tushadi — DALILLAR ZIDDIYATI ga qarang.';
+
+  @override
+  String aiLimRetracted(int n) {
+    return 'Retraksiya qilingan yoki almashtirilgan manbalardan $n ta da’vo chiqarib tashlandi.';
+  }
+
+  @override
+  String get aiLimExpert =>
+      'Muayyan holatni talqin qilish malakali ekspertni talab qiladi.';
+
+  @override
+  String get aiLimMock => 'TEST provayderi yaratgan — ishchi AI xizmati emas.';
 }
