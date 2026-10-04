@@ -108,3 +108,25 @@ Batafsil: `docs/12_PURCHASE_VERIFICATION.md`.
 - Android: legacy + adaptive ikonka. iOS: AppIcon, alfa-kanalsiz 1024.
 - Trademark tekshiruvi tugamaguncha brend **tasdiqlangan emas** (RG-06); bu About ekranida aytiladi.
 - Bundle ID o‘zgartirilmadi. Nomzod `com.forensicexpert.app` (RG-09).
+
+## 8. Tekshiruvlar va o‘lchovlar
+
+| Tekshiruv | Natija |
+|---|---|
+| Analyze (app + packages, `--fatal-infos`) | ✅ toza |
+| Testlar | ✅ 663 (ilova 532, paketlar 131) + 1 skip |
+| Golden | ✅ 30 kadr |
+| gitleaks / OSV | ✅ / ✅ |
+| Release APK | ✅ 64.2 MB; label «FORENSIC EXPERT»; `BILLING` ruxsati; pilot paket ichida. ⚠️ **debug sertifikat bilan imzolangan** — RG-20 |
+
+O‘lchovlar **mobil qurilmada emas**. Host VM’da `flutter test` (JIT, debug) bilan olindi, n=5:
+
+| Ko‘rsatkich | Natija |
+|---|---|
+| Pilot paketni o‘rnatish (imzo + SHA-256 + integrity + atomik) | birinchi 256 ms (sqlite/Ed25519 isishi), keyingilari 12–24 ms |
+| Kutubxonani `content.db` dan yuklash | 6–40 ms |
+| Qidiruv indeksini qurish | 0.1–12 ms |
+| Qidiruv (EN/RU/UZ, xatoli) | 1.1–30 ms, median ≈ 2 ms |
+
+Real qurilmada o‘lchash — RG-10.
+

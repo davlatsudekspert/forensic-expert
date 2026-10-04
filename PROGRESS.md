@@ -40,6 +40,7 @@
 | RG-17 | Public release yig‘masi `FE_CONTENT_CHANNEL=production` va review’dan o‘tgan, production kalit bilan imzolangan kontent paketi (hozirgi pilot — development, NEEDS_REVIEW) | ⛔ OCHIQ | `docs/11` 1, 4-bo‘lim |
 | RG-18 | **Lifetime xaridini server tomonida tekshirish** (App Store Server API, Google Play Developer API, refund/revocation) va `FE_REQUIRE_SERVER_PURCHASE_VERIFICATION=true`. Hozir faqat store tasdig‘i — production-secure EMAS | ⛔ OCHIQ — **SECURITY / RELEASE BLOCKER** | `docs/12` |
 | RG-19 | Pilot claim’lar uchun tox/fm/lab reviewerlar (four-eyes) va RU/UZ nomlar review’i; PubChem stereoizomer CID’lari (tramadol, metamfetamin) va AlP CID tekshiruvi | ⛔ OCHIQ | `docs/11` 2-bo‘lim |
+| RG-20 | Release imzolash: hozirgi release APK **debug sertifikat** bilan imzolangan (Flutter shabloni). Upload key + Play App Signing / Apple distribution sertifikati, kalitlar faqat CI secret’da | ⛔ OCHIQ | `docs/11` 8-bo‘lim |
 | RG-15 | Har bir yurisdiksiya kontenti uchun legal reviewer va rasmiy manba; «Compare jurisdictions» faqat tekshirilgan kontent bilan | ⛔ OCHIQ | `docs/10` 7-bo‘lim |
 
 ## PHASE 1 — majburiy tekshiruvlar
@@ -71,5 +72,14 @@
 
 ## PHASE 3 — majburiy tekshiruvlar
 
-(yakuniy natijalar `docs/11` va yakuniy hisobotda)
+| Tekshiruv | Natija |
+|---|---|
+| flutter analyze / dart analyze packages (`--fatal-infos`) | ✅ No issues |
+| Avtomatik testlar | ✅ 663 (ilova 532 + paketlar 131), 1 skip (PHASE 1 preview) |
+| Golden / vizual regressiya | ✅ 30 kadr (4 tasi haqiqiy pilot kontent bilan) |
+| Kontent validator | ✅ development — 0 xato; production — 48 × FE008 bilan rad etiladi (kutilgan) |
+| Security: gitleaks / OSV | ✅ leak yo‘q / 132 paketda zaiflik yo‘q |
+| Release APK | ✅ build (64.2 MB, universal); ⚠️ debug sertifikat bilan imzolangan (RG-20) |
+| Real qurilma / emulator | ⛔ Muhitda yo‘q (KVM yo‘q) — RG-10 |
+| Lifetime server tekshiruvi | ⛔ Yo‘q — RG-18 SECURITY / RELEASE BLOCKER |
 
