@@ -13,7 +13,8 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/perf/startup_metrics.dart';
 import '../../../core/settings/app_settings.dart';
 import '../../../core/settings/settings_controller.dart';
-import '../../../core/widgets/common.dart';
+import '../../../core/widgets/fe_components.dart';
+import '../../../domain/ports/backend_ports.dart';
 
 class ProfileScreen extends ConsumerWidget {
   const ProfileScreen({super.key});
@@ -25,6 +26,13 @@ class ProfileScreen extends ConsumerWidget {
     final settings = ref.watch(settingsControllerProvider);
     final controller = ref.read(settingsControllerProvider.notifier);
     final content = ref.watch(contentStatusProvider);
+    final auth = ref.watch(authRepositoryProvider).current;
+    final t = Theme.of(context).textTheme;
+    final lang = Localizations.localeOf(context).languageCode;
+    final resolver = ref.watch(jurisdictionResolverProvider);
+    final jurisdiction =
+        resolver.byId(settings.jurisdictionId) ??
+        resolver.byId(internationalJurisdictionId)!;
 
     String modeLabel(UserMode? m) => switch (m) {
       UserMode.professional => l.modeProfessional,
@@ -42,6 +50,10 @@ class ProfileScreen extends ConsumerWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
+                  FeSectionHeader(
+                    l.profileSectionPreferences,
+                    padding: const EdgeInsets.only(bottom: FeSpace.xs),
+                  ),
                   _Row(
                     key: const Key('profile.language'),
                     icon: Icons.language,
@@ -49,42 +61,6 @@ class ProfileScreen extends ConsumerWidget {
                     value: l.languageNameNative,
                     onTap: () => context.go(Routes.profileLanguage),
                   ),
-                  const Divider(),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: FeSpace.sm),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          l.settingsTheme,
-                          style: Theme.of(context).textTheme.titleSmall,
-                        ),
-                        const SizedBox(height: FeSpace.xs),
-                        SegmentedButton<ThemeMode>(
-                          key: const Key('profile.theme'),
-                          showSelectedIcon: false,
-                          segments: [
-                            ButtonSegment(
-                              value: ThemeMode.system,
-                              label: Text(l.themeSystem),
-                            ),
-                            ButtonSegment(
-                              value: ThemeMode.light,
-                              label: Text(l.themeLight),
-                            ),
-                            ButtonSegment(
-                              value: ThemeMode.dark,
-                              label: Text(l.themeDark),
-                            ),
-                          ],
-                          selected: {settings.themeMode},
-                          onSelectionChanged: (s) =>
-                              controller.setThemeMode(s.single),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const Divider(),
                   _Row(
                     key: const Key('profile.mode'),
                     icon: Icons.tune,
@@ -92,7 +68,87 @@ class ProfileScreen extends ConsumerWidget {
                     value: modeLabel(settings.userMode),
                     onTap: () => context.go(Routes.profileMode),
                   ),
-                  const Divider(),
+                  _Row(
+                    key: const Key('profile.jurisdiction'),
+                    icon: Icons.public,
+                    title: l.settingsJurisdiction,
+                    value: jurisdiction.name(lang),
+                    onTap: () => context.go(Routes.profileJurisdiction),
+                  ),
+                  const SizedBox(height: FeSpace.sm),
+                  Text(l.settingsTheme, style: t.titleSmall),
+                  const SizedBox(height: FeSpace.xs),
+                  SegmentedButton<ThemeMode>(
+                    key: const Key('profile.theme'),
+                    showSelectedIcon: false,
+                    segments: [
+                      ButtonSegment(
+                        value: ThemeMode.system,
+                        label: Text(l.themeSystem),
+                      ),
+                      ButtonSegment(
+                        value: ThemeMode.light,
+                        label: Text(l.themeLight),
+                      ),
+                      ButtonSegment(
+                        value: ThemeMode.dark,
+                        label: Text(l.themeDark),
+                      ),
+                    ],
+                    selected: {settings.themeMode},
+                    onSelectionChanged: (s) =>
+                        controller.setThemeMode(s.single),
+                  ),
+                  const SizedBox(height: FeSpace.md),
+                  Text(l.settingsContrast, style: t.titleSmall),
+                  const SizedBox(height: FeSpace.xs),
+                  SegmentedButton<ContrastPreference>(
+                    key: const Key('profile.contrast'),
+                    showSelectedIcon: false,
+                    segments: [
+                      ButtonSegment(
+                        value: ContrastPreference.system,
+                        label: Text(l.themeSystem),
+                      ),
+                      ButtonSegment(
+                        value: ContrastPreference.standard,
+                        label: Text(l.contrastStandard),
+                      ),
+                      ButtonSegment(
+                        value: ContrastPreference.high,
+                        label: Text(l.contrastHigh),
+                      ),
+                    ],
+                    selected: {settings.contrast},
+                    onSelectionChanged: (s) => controller.setContrast(s.single),
+                  ),
+                  const SizedBox(height: FeSpace.xxs),
+                  Text(
+                    l.contrastSystemHint,
+                    style: t.bodySmall?.copyWith(color: c.textSecondary),
+                  ),
+                  FeSectionHeader(l.profileSectionAccount),
+                  _Row(
+                    key: const Key('profile.subscription'),
+                    icon: Icons.workspace_premium_outlined,
+                    title: l.subscriptionTitle,
+                    value: l.currentPlanFree,
+                    onTap: () => context.go(Routes.subscription),
+                  ),
+                  _Row(
+                    icon: Icons.person_outline,
+                    title: l.profileTitle,
+                    value: l.accountNone,
+                  ),
+                  // Akkaunt tizimi paydo bo‘lganda ko‘rinadi (Apple 5.1.1(v),
+                  // Google Play account deletion).
+                  if (auth.status == AuthStatus.signedIn)
+                    _Row(
+                      key: const Key('profile.deleteAccount'),
+                      icon: Icons.delete_outline,
+                      title: l.deleteAccount,
+                      onTap: () {},
+                    ),
                   _Row(
                     icon: Icons.storage_outlined,
                     title: l.scientificDatabaseLabel,
@@ -103,20 +159,44 @@ class ProfileScreen extends ConsumerWidget {
                       error: (_, _) => l.scientificDatabaseNotInstalled,
                     ),
                   ),
+                  FeSectionHeader(l.profileSectionAbout),
                   _Row(
-                    icon: Icons.info_outline,
-                    title: l.appVersionLabel,
-                    value: AppInfo.version,
+                    key: const Key('profile.privacy'),
+                    icon: Icons.privacy_tip_outlined,
+                    title: l.privacyPolicy,
+                    onTap: () => context.go(Routes.privacy),
                   ),
-                  SectionHeading(l.legalSection),
+                  _Row(
+                    key: const Key('profile.terms'),
+                    icon: Icons.description_outlined,
+                    title: l.termsOfUse,
+                    onTap: () => context.go(Routes.terms),
+                  ),
                   _Row(
                     key: const Key('profile.disclaimer'),
                     icon: Icons.gavel_outlined,
                     title: l.scientificDisclaimerLink,
                     onTap: () => context.go(Routes.profileDisclaimer),
                   ),
+                  _Row(
+                    key: const Key('profile.licenses'),
+                    icon: Icons.code,
+                    title: l.openSourceLicenses,
+                    onTap: () => showLicensePage(
+                      context: context,
+                      applicationName: l.appTitle,
+                      applicationVersion: AppInfo.version,
+                    ),
+                  ),
+                  _Row(
+                    key: const Key('profile.about'),
+                    icon: Icons.info_outline,
+                    title: l.aboutApp,
+                    value: '${l.appVersionLabel} ${AppInfo.version}',
+                    onTap: () => context.go(Routes.about),
+                  ),
                   if (kDebugMode || kProfileMode) ...[
-                    SectionHeading(l.diagnosticsSection),
+                    FeSectionHeader(l.diagnosticsSection),
                     _Diagnostics(color: c.textSecondary),
                   ],
                   const SizedBox(height: FeSpace.xl),

@@ -1,0 +1,322 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import 'package:go_router/go_router.dart';
+
+import '../../../app/providers.dart';
+import '../../../app/routes.dart';
+import '../../../core/design/theme.dart';
+import '../../../core/design/tokens.dart';
+import '../../../core/l10n/generated/app_localizations.dart';
+import '../../../core/layout/responsive.dart';
+import '../../../core/settings/app_settings.dart';
+import '../../../core/settings/settings_controller.dart';
+import '../../../core/widgets/common.dart';
+import '../../../core/widgets/fe_components.dart';
+import '../../../domain/library/library_models.dart';
+import '../../common/favorite_button.dart';
+import 'library_screen.dart';
+
+/// Kutubxona yozuvi kartochkasi.
+///
+/// Moddalar uchun kelajakdagi to‘liq tuzilma (Nomlar, Sinf, Metabolitlar,
+/// Namunalar, Usullar, Konsentratsiyalar, Talqin, Barqarorlik,
+/// Interferensiyalar, Manbalar, Dalil holati, Oxirgi tekshiruv) hozirdan
+/// ko‘rsatiladi. Hozircha **har bir bo‘lim — aniq belgilangan placeholder**.
+class EntryDetailScreen extends ConsumerWidget {
+  const EntryDetailScreen({super.key, required this.entryId});
+
+  final String entryId;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    final entry = ref.watch(libraryRepositoryProvider).byId(entryId);
+    if (entry == null) {
+      return Scaffold(appBar: AppBar(), body: const SizedBox.shrink());
+    }
+    final lang = Localizations.localeOf(context).languageCode;
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final isSubstance = entry.section == LibrarySection.substances;
+
+    final sections = isSubstance
+        ? [
+            (Icons.category_outlined, l.detailClass),
+            (Icons.account_tree_outlined, l.detailMetabolites),
+            (Icons.water_drop_outlined, l.detailSpecimens),
+            (Icons.biotech_outlined, l.detailMethods),
+            (Icons.show_chart, l.detailConcentrations),
+            (Icons.psychology_alt_outlined, l.detailInterpretation),
+            (Icons.ac_unit, l.detailStability),
+            (Icons.compare_arrows, l.detailInterferences),
+          ]
+        : <(IconData, String)>[];
+
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(entry.name.resolve(lang)),
+        actions: [FavoriteButton(id: entry.id)],
+      ),
+      body: SafeArea(
+        child: ListView(
+          children: [
+            FeContentFrame(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Wrap(
+                    spacing: FeSpace.xs,
+                    runSpacing: FeSpace.xxs,
+                    crossAxisAlignment: WrapCrossAlignment.center,
+                    children: [
+                      Icon(entry.section.icon, size: 18, color: c.accent),
+                      Text(entry.section.label(l), style: t.labelLarge),
+                      if (entry.isTestData) const TestDataBadge(),
+                    ],
+                  ),
+                  const SizedBox(height: FeSpace.sm),
+                  const UnverifiedBanner(),
+                  FeSectionHeader(l.detailEvidenceStatus),
+                  _KeyValue(
+                    label: l.detailEvidenceStatus,
+                    value: ReviewStatusBadge(status: entry.status),
+                  ),
+                  _KeyValue(
+                    label: l.detailLastReviewed,
+                    value: Text(
+                      entry.lastReviewed == null
+                          ? l.detailNotReviewed
+                          : MaterialLocalizations.of(context)
+                                .formatMediumDate(entry.lastReviewed!),
+                      style: t.bodyMedium,
+                    ),
+                  ),
+                  FeSectionHeader(l.detailNames),
+                  for (final code in const ['en', 'ru', 'uz'])
+                    if (entry.name.values[code] != null)
+                      _KeyValue(
+                        label: code.toUpperCase(),
+                        value: Text(
+                          entry.name.values[code]!,
+                          locale: Locale(code),
+                          style: t.bodyMedium,
+                        ),
+                      ),
+                  for (final s in entry.synonyms)
+                    _KeyValue(
+                      label: '≈',
+                      value: Text(s, style: t.bodyMedium),
+                    ),
+                  if (isSubstance) ...[
+                    FeSectionHeader(l.detailLayerScientific),
+                    FeBanner(
+                      key: const Key('entry.layer.scientific'),
+                      icon: Icons.public,
+                      text: l.detailLayerScientificNote,
+                    ),
+                  ],
+                  for (final (icon, title) in sections) ...[
+                    FeSectionHeader(title),
+                    if (title == l.detailConcentrations) ...[
+                      FeBanner(
+                        icon: Icons.gavel_outlined,
+                        text: l.detailConcentrationsNote,
+                        tone: FeBannerTone.warning,
+                      ),
+                      const SizedBox(height: FeSpace.xs),
+                    ],
+                    _Placeholder(icon: icon),
+                  ],
+                  if (isSubstance) _JurisdictionLayer(subjectId: entry.id),
+                  FeSectionHeader(l.detailReferences),
+                  OutlinedButton.icon(
+                    key: const Key('entry.sources'),
+                    icon: const Icon(Icons.format_quote_outlined),
+                    label: Text(l.sourcesButton),
+                    onPressed: () => showModalBottomSheet<void>(
+                      context: context,
+                      showDragHandle: true,
+                      builder: (_) => _SourcesSheet(entry: entry),
+                    ),
+                  ),
+                  const SizedBox(height: FeSpace.xl),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Yurisdiksiya qatlami — ilmiy dalillardan **alohida** blok.
+///
+/// Faqat review’dan o‘tgan va bugun kuchda bo‘lgan qoidalar ko‘rsatiladi
+/// ([JurisdictionResolver]). Hozir qoidalar yuklanmagan — halol bo‘sh holat.
+class _JurisdictionLayer extends ConsumerWidget {
+  const _JurisdictionLayer({required this.subjectId});
+
+  final String subjectId;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    final lang = Localizations.localeOf(context).languageCode;
+    final id = ref.watch(settingsControllerProvider).jurisdictionId;
+    final resolver = ref.watch(jurisdictionResolverProvider);
+    final view =
+        resolver.view(
+          jurisdictionId: id,
+          subjectType: 'substance',
+          subjectId: subjectId,
+          at: DateTime.now(),
+        ) ??
+        resolver.view(
+          jurisdictionId: internationalJurisdictionId,
+          subjectType: 'substance',
+          subjectId: subjectId,
+          at: DateTime.now(),
+        )!;
+    final isInternational = view.jurisdiction.id == internationalJurisdictionId;
+    return Column(
+      key: const Key('entry.layer.jurisdiction'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        FeSectionHeader(
+          l.detailLayerJurisdiction(view.jurisdiction.name(lang)),
+          actionLabel: l.detailChangeJurisdiction,
+          onAction: () => context.push(Routes.profileJurisdiction),
+        ),
+        if (isInternational) ...[
+          FeBanner(
+            icon: Icons.info_outline,
+            text: l.jurisdictionInternationalHint,
+          ),
+          const SizedBox(height: FeSpace.xs),
+        ],
+        for (final (icon, title) in [
+          (Icons.gavel_outlined, l.detailLegalStatus),
+          (Icons.rule_folder_outlined, l.detailNationalMethods),
+        ]) ...[
+          Padding(
+            padding: const EdgeInsets.only(top: FeSpace.xs, bottom: 4),
+            child: Text(title, style: Theme.of(context).textTheme.titleSmall),
+          ),
+          if (view.rules.isEmpty)
+            FeEmptyState(
+              icon: icon,
+              body: l.jurisdictionNoContent,
+              compact: true,
+            ),
+        ],
+      ],
+    );
+  }
+}
+
+class _KeyValue extends StatelessWidget {
+  const _KeyValue({required this.label, required this.value});
+
+  final String label;
+  final Widget value;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = FeTheme.of(context);
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: FeSpace.xxs),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          SizedBox(
+            width: 120,
+            child: Text(
+              label,
+              style: Theme.of(context).textTheme.bodySmall
+                  ?.copyWith(color: c.textSecondary),
+            ),
+          ),
+          Expanded(
+            child: Align(alignment: Alignment.centerLeft, child: value),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _Placeholder extends StatelessWidget {
+  const _Placeholder({required this.icon});
+
+  final IconData icon;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = FeTheme.of(context);
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        color: c.surface,
+        borderRadius: BorderRadius.circular(FeRadius.sm),
+        border: Border.all(color: c.border),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(FeSpace.sm),
+        child: Row(
+          children: [
+            Icon(icon, size: 18, color: c.textSecondary),
+            const SizedBox(width: FeSpace.xs),
+            Expanded(
+              child: Text(
+                AppLocalizations.of(context).detailPlaceholder,
+                style: Theme.of(context).textTheme.bodySmall
+                    ?.copyWith(color: c.textSecondary),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _SourcesSheet extends StatelessWidget {
+  const _SourcesSheet({required this.entry});
+
+  final LibraryEntry entry;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    return SafeArea(
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(
+          FeSpace.md,
+          0,
+          FeSpace.md,
+          FeSpace.lg,
+        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Semantics(
+              header: true,
+              child: Text(
+                l.sourcesButton,
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
+            ),
+            const SizedBox(height: FeSpace.sm),
+            FeEmptyState(
+              icon: Icons.format_quote_outlined,
+              body: l.sourcesNone,
+              compact: true,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
