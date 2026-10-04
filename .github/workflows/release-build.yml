@@ -94,9 +94,8 @@ jobs:
           channel: stable
           cache: true
       - run: flutter pub get --enforce-lockfile
-      - name: CocoaPods
-        working-directory: apps/mobile/ios
-        run: pod install --repo-update
+      # Podfile / Swift Package Manager integratsiyasini `flutter build ios`
+      # o‘zi yaratadi va o‘rnatadi (repozitoriyda Podfile yo‘q).
       - name: Compile (no codesign) — proves the iOS build
         working-directory: apps/mobile
         run: flutter build ios --release --no-codesign

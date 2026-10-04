@@ -503,7 +503,7 @@ class JurisdictionDetailScreen extends ConsumerWidget {
                             color: n > 0 ? c.accent : c.textSecondary,
                           ),
                           title: Text(l.legalDomainLabel(d)),
-                          trailing: Text(
+                          subtitle: Text(
                             n > 0
                                 ? l.legalDomainRecords(n)
                                 : l.legalDomainNoContent,
