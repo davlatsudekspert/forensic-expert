@@ -49,6 +49,8 @@ class PipelineBundle {
     required this.sourceExtras,
     required this.claimValues,
     required this.instrumentDatePrecision,
+    this.componentVersions = const {},
+    this.entityTiers = const {},
   });
 
   final String packVersion;
@@ -60,6 +62,16 @@ class PipelineBundle {
   /// claim_id → value (JSON) — `Claim.value` bilan bir xil, qulaylik uchun.
   final Map<String, Map<String, Object?>> claimValues;
   final Map<String, String> instrumentDatePrecision;
+
+  /// Komponent versiyalari (`scientific`, `jurisdiction`) — ilova versiyasi
+  /// bilan aralashtirilmaydi (`content_meta` ga yoziladi).
+  final Map<String, String> componentVersions;
+
+  /// Bilim obyekti ID → `free` / `student` / `pro`.
+  final Map<String, String> entityTiers;
+
+  /// Bilim obyektining kirish darajasi (berilmasa — `pro`).
+  String tierOf(String entityId) => entityTiers[entityId] ?? 'pro';
 
   /// Boshqa kanal uchun nusxa (masalan, production’ga urinish testi).
   PipelineBundle withChannel(BundleChannel c) => PipelineBundle(
@@ -77,11 +89,19 @@ class PipelineBundle {
       jurisdictions: content.jurisdictions,
       instruments: content.instruments,
       jurisdictionalRules: content.jurisdictionalRules,
+      authorities: content.authorities,
+      recipes: content.recipes,
+      screeningTests: content.screeningTests,
+      methods: content.methods,
+      emergingIssues: content.emergingIssues,
+      topics: content.topics,
     ),
     substances: substances,
     sourceExtras: sourceExtras,
     claimValues: claimValues,
     instrumentDatePrecision: instrumentDatePrecision,
+    componentVersions: componentVersions,
+    entityTiers: entityTiers,
   );
 }
 
@@ -94,17 +114,23 @@ class BundleFormatException implements Exception {
   String toString() => 'BundleFormatException: $message';
 }
 
-/// `fe-bundle/1` formatini o‘qiydi. Noma’lum enum qiymati yoki yetishmayotgan
-/// majburiy maydon — xato (jim o‘tkazib yuborish yo‘q).
+/// `fe-bundle/2` (va eski `fe-bundle/1`) formatini o‘qiydi. Noma’lum enum
+/// qiymati yoki yetishmayotgan majburiy maydon — xato (jim o‘tkazib yuborish
+/// yo‘q).
+///
+/// `/2` qo‘shimchalari: `authorities`, `topics`, `recipes`,
+/// `screening_tests`, `methods`, `emerging_issues`, `component_versions`,
+/// instrument/rule kengaytirilgan maydonlari, `source_class`.
 abstract final class BundleCodec {
-  static const format = 'fe-bundle/1';
+  static const format = 'fe-bundle/2';
+  static const supportedFormats = {'fe-bundle/1', format};
 
   static PipelineBundle decode(String json) {
     final root = jsonDecode(json);
     if (root is! Map<String, Object?>) {
       throw BundleFormatException('root must be an object');
     }
-    if (root['format'] != format) {
+    if (!supportedFormats.contains(root['format'])) {
       throw BundleFormatException('unsupported format ${root['format']}');
     }
     final channel = BundleChannel.values.byName(_str(root, 'channel'));
@@ -135,6 +161,9 @@ abstract final class BundleCodec {
             ),
             identifierVerified: s['identifier_verified'] == true,
             isTestData: s['is_test_data'] == true,
+            sourceClass: s['source_class'] == null
+                ? null
+                : SourceClass.values.byName(s['source_class']! as String),
           );
         }(),
     ];
@@ -212,8 +241,32 @@ abstract final class BundleCodec {
             lastVerifiedAt: _date(i['last_verified_at']),
             status: ScientificStatus.fromCode(_str(i, 'review_status')),
             isTestData: i['is_test_data'] == true,
+            authorityId: i['authority_id'] as String?,
+            publicationDate: _date(i['publication_date']),
+            lastAmendedAt: _date(i['last_amended_at']),
+            legalStatus: i['legal_status'] == null
+                ? InstrumentLegalStatus.inForce
+                : _legalStatus(i['legal_status']! as String),
+            language: i['language'] as String?,
+            translationStatus: i['translation_status'] == null
+                ? null
+                : TranslationStatus.values.firstWhere(
+                    (t) => t.code == i['translation_status'],
+                    orElse: () => throw BundleFormatException(
+                      'unknown translation_status ${i['translation_status']}',
+                    ),
+                  ),
           );
         }(),
+    ];
+
+    final authorities = [
+      for (final a in _list(root, 'authorities'))
+        Authority(
+          id: _str(a, 'authority_id'),
+          jurisdictionId: _str(a, 'jurisdiction_id'),
+          names: (a['names']! as Map).cast<String, String>(),
+        ),
     ];
 
     final rules = [
@@ -229,7 +282,56 @@ abstract final class BundleCodec {
           effectiveTo: _date(r['effective_to']),
           status: ScientificStatus.fromCode(_str(r, 'review_status')),
           isTestData: r['is_test_data'] == true,
+          articleSection: r['article_section'] as String?,
+          version: (r['version'] as int?) ?? 1,
+          topicKey: r['topic_key'] as String?,
+          appliesTo: r['applies_to'] == null
+              ? null
+              : {...(r['applies_to']! as List).cast<String>()},
         ),
+    ];
+
+    // PHASE 4 bilim obyektlari — KnowledgeJson (DB payload bilan bir xil).
+    final tiers = <String, String>{};
+    T entity<T>(
+      Map<String, Object?> m,
+      String idKey,
+      T Function(Object?) parse,
+    ) {
+      final id = _str(m, idKey);
+      final tier = m['tier_access'] as String?;
+      if (tier != null) {
+        if (!const {'free', 'student', 'pro'}.contains(tier)) {
+          throw BundleFormatException('unknown tier_access $tier for $id');
+        }
+        tiers[id] = tier;
+      }
+      try {
+        return parse(m);
+      } on FormatException catch (e) {
+        throw BundleFormatException('$id: ${e.message}');
+      }
+    }
+
+    final topics = [
+      for (final t in _list(root, 'topics'))
+        entity(t, 'topic_id', KnowledgeJson.topicFrom),
+    ];
+    final recipes = [
+      for (final r in _list(root, 'recipes'))
+        entity(r, 'recipe_id', KnowledgeJson.recipeFrom),
+    ];
+    final screeningTests = [
+      for (final t in _list(root, 'screening_tests'))
+        entity(t, 'screening_id', KnowledgeJson.screeningFrom),
+    ];
+    final methods = [
+      for (final m in _list(root, 'methods'))
+        entity(m, 'method_id', KnowledgeJson.methodFrom),
+    ];
+    final emerging = [
+      for (final e in _list(root, 'emerging_issues'))
+        entity(e, 'issue_id', KnowledgeJson.emergingFrom),
     ];
 
     final substances = [
@@ -266,13 +368,35 @@ abstract final class BundleCodec {
         jurisdictions: jurisdictions,
         instruments: instruments,
         jurisdictionalRules: rules,
+        authorities: authorities,
+        topics: topics,
+        recipes: recipes,
+        screeningTests: screeningTests,
+        methods: methods,
+        emergingIssues: emerging,
       ),
       substances: substances,
       sourceExtras: sourceExtras,
       claimValues: claimValues,
       instrumentDatePrecision: precision,
+      componentVersions: (root['component_versions'] as Map? ?? const {})
+          .cast<String, String>(),
+      entityTiers: tiers,
     );
   }
+
+  static InstrumentLegalStatus _legalStatus(String code) => switch (code) {
+    'in_force' => InstrumentLegalStatus.inForce,
+    'amended' => InstrumentLegalStatus.amended,
+    'superseded' => InstrumentLegalStatus.superseded,
+    'repealed' => InstrumentLegalStatus.repealed,
+    _ => throw BundleFormatException('unknown legal_status $code'),
+  };
+
+  static String legalStatusCode(InstrumentLegalStatus s) => switch (s) {
+    InstrumentLegalStatus.inForce => 'in_force',
+    _ => s.name,
+  };
 
   static List<Map<String, Object?>> _list(Map<String, Object?> m, String k) => [
     for (final e in (m[k] as List? ?? const [])) (e as Map).cast(),

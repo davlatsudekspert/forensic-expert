@@ -51,6 +51,10 @@ abstract final class RuleCodes {
   static const textLicense = 'FE025_TEXT_NOT_PERMITTED_BY_LICENSE';
   static const emergingWithoutProvenance =
       'FE026_EMERGING_ISSUE_WITHOUT_SOURCE_OR_DATE';
+
+  /// Ko‘rib chiqilgan ma’lumot yangi paketda jimgina yo‘qolgan, pasaygan
+  /// yoki versiyasi oshirilmay o‘zgargan (ReviewRegressionGuard).
+  static const silentReviewRegression = 'FE027_SILENT_REVIEW_REGRESSION';
 }
 
 /// Test ma’lumot ID’lari shu prefiks bilan boshlanadi — ko‘zga tashlanishi

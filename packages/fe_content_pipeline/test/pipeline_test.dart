@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:drift/native.dart';
@@ -39,6 +40,15 @@ void main() {
       for (final r in bundle.content.jurisdictionalRules) {
         expect(r.status, ScientificStatus.needsReview);
       }
+      final k = bundle.content;
+      for (final s in [
+        ...k.recipes.map((e) => e.status),
+        ...k.screeningTests.map((e) => e.status),
+        ...k.methods.map((e) => e.status),
+        ...k.emergingIssues.map((e) => e.status),
+      ]) {
+        expect(s, ScientificStatus.needsReview);
+      }
       expect(bundle.content.reviews, isEmpty);
     });
 
@@ -79,10 +89,78 @@ void main() {
         expect(c.jurisdictionId, isNull);
         expect(c.domain, isNot(ContentDomain.legal));
       }
+      final sources = {for (final s in bundle.content.sources) s.sourceId: s};
       for (final i in bundle.content.instruments) {
-        expect(i.jurisdictionId, 'INT');
         expect(i.officialSourceId, isNotEmpty);
+        expect(
+          sources[i.officialSourceId]!.sourceClass,
+          SourceClass.primaryOfficial,
+          reason: i.id,
+        );
       }
+    });
+
+    test('PHASE 4 domenlari: har biri kamida bitta real manbali yozuv', () {
+      final k = bundle.content;
+      final areas = {for (final t in k.topics) t.area};
+      expect(
+        areas,
+        containsAll([
+          KnowledgeArea.forensicMedicine,
+          KnowledgeArea.biochemistry,
+        ]),
+      );
+      expect(k.recipes, isNotEmpty);
+      expect(k.screeningTests, isNotEmpty);
+      expect(k.methods, isNotEmpty);
+      expect(k.emergingIssues, isNotEmpty);
+      expect(k.jurisdictions.map((j) => j.id), contains('GB'));
+      final cited = {for (final c in k.claims) c.entityId};
+      for (final id in [
+        ...k.topics.map((t) => t.id),
+        ...k.recipes.map((r) => r.reagentId),
+        ...k.screeningTests.map((t) => t.id),
+        ...k.methods.map((m) => m.id),
+        ...k.emergingIssues.map((e) => e.id),
+      ]) {
+        expect(cited, contains(id), reason: '$id — manbali claim yo‘q');
+      }
+    });
+
+    test('retsept taxmin qilinmagan; skrining ≠ tasdiqlash', () {
+      for (final r in bundle.content.recipes) {
+        // Ochiq manbada tasdiqlangan retsept topilmagan.
+        expect(r.hasPreparationData, isFalse, reason: r.id);
+        expect(r.ingredients, isEmpty);
+      }
+      for (final t in bundle.content.screeningTests) {
+        expect(t.confirmatoryMethodIds, isNotEmpty);
+        expect(t.supportsDefinitiveIdentification, isFalse);
+        expect(t.cutoff, isNull, reason: 'manbasiz cutoff yo‘q');
+      }
+    });
+
+    test('UK: hudud bo‘yicha qoida, Shimoliy Irlandiya — ma’lumot yo‘q', () {
+      final k = bundle.content;
+      final cells =
+          JurisdictionResolver(
+            jurisdictions: k.jurisdictions,
+            instruments: k.instruments,
+            rules: k.jurisdictionalRules,
+          ).compareCells(
+            jurisdictionIds: const ['GB-ENG', 'GB-WLS', 'GB-SCT', 'GB-NIR'],
+            subjectType: 'substance',
+            subjectId: 'ethanol',
+            at: DateTime.utc(2026, 10, 4),
+            includeUnreviewed: true,
+          );
+      Map<String, Object?>? blood(int i) =>
+          ((cells[i].rules.single.$1.value['limits']! as Map)['blood'] as Map)
+              .cast();
+      expect(blood(0)!['value'], 80);
+      expect(blood(1)!['value'], 80);
+      expect(blood(2)!['value'], 50); // SSI 2014/328 (aniqroq hudud)
+      expect(cells[3].hasData, isFalse); // xulosa chiqarilmaydi
     });
 
     test('bepul demo: ko‘pi bilan 3 ta yozuv', () {
@@ -139,6 +217,40 @@ void main() {
           builtAt: DateTime.utc(2026),
         ),
         throwsStateError,
+      );
+    });
+
+    test('FE027: ko‘rib chiqilgan ma’lumot jimgina pasaytirilmaydi', () async {
+      final c = bundle.content.claims.first;
+      final reviewedPrev = ContentBundle(
+        channel: BundleChannel.development,
+        claims: [
+          Claim(
+            claimId: c.claimId,
+            entityType: c.entityType,
+            entityId: c.entityId,
+            field: c.field,
+            value: c.value,
+            domain: c.domain,
+            declaredStatus: ScientificStatus.reviewed,
+            evidenceLevel: c.evidenceLevel,
+          ),
+        ],
+      );
+      await expectLater(
+        const PackBuilder().build(
+          bundle: bundle,
+          outDir: Directory('${tmp.path}/reg'),
+          builtAt: DateTime.utc(2026, 10, 4),
+          previous: reviewedPrev,
+        ),
+        throwsA(
+          isA<PipelineValidationError>().having(
+            (e) => e.report.hasCode(RuleCodes.silentReviewRegression),
+            'FE027',
+            isTrue,
+          ),
+        ),
       );
     });
 
@@ -213,7 +325,37 @@ void main() {
         addTearDown(d.close);
         expect(await d.integrityOk(), isTrue);
         expect(await d.containsTestData(), isFalse);
-        expect(await d.metaValue('pack_version'), '2026.10.1');
+        expect(await d.metaValue('pack_version'), '2026.10.2');
+        expect(await d.metaValue('bundle_format'), 'fe-bundle/2');
+        expect(await d.metaValue('component_version.jurisdiction'), isNotNull);
+        final k = await d
+            .customSelect(
+              'SELECT entity_type, COUNT(*) AS n FROM knowledge_entities '
+              "WHERE review_status = 'NEEDS_REVIEW' GROUP BY 1",
+            )
+            .get();
+        expect(
+          {for (final r in k) r.read<String>('entity_type')},
+          containsAll([
+            'topic',
+            'reagent',
+            'screening_test',
+            'method',
+            'emerging_issue',
+          ]),
+        );
+        final payload = await d
+            .customSelect(
+              'SELECT payload_json FROM knowledge_entities '
+              "WHERE entity_type = 'screening_test'",
+            )
+            .getSingle();
+        expect(
+          KnowledgeJson.screeningFrom(
+            jsonDecode(payload.read<String>('payload_json')),
+          ).confirmatoryMethodIds,
+          isNotEmpty,
+        );
         expect(await d.metaValue('channel'), 'development');
         final fts = db.FtsSearchIndex(d);
         Future<String?> top(String q) async {
@@ -230,6 +372,9 @@ void main() {
         expect(await top('acetaminophen'), 'paracetamol');
         expect(await top('norfentanyl'), 'fentanyl');
         expect(await top('fentanly'), 'fentanyl');
+        expect(await top('livor mortis'), 'fm-livor-mortis');
+        expect(await top('Marquis'), 'reagent-marquis');
+        expect(await top('нитазен'), 'emg-nitazenes');
         // FK: barcha citation’lar mavjud manbaga ishora qiladi.
         final orphan = await d
             .customSelect(

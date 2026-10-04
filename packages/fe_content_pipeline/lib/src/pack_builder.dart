@@ -62,8 +62,14 @@ class PackBuilder {
     required DateTime builtAt,
     String minAppVersion = '0.1.0',
     List<int>? signingSeed,
+    ContentBundle? previous,
   }) async {
-    final report = validator.validate(bundle.content);
+    final report = ValidationReport([
+      ...validator.validate(bundle.content).issues,
+      // FE027: ko‘rib chiqilgan ma’lumot jimgina almashtirilmaydi.
+      if (previous != null)
+        ...ReviewRegressionGuard.compare(previous, bundle.content).issues,
+    ]);
     if (!report.isValid) throw PipelineValidationError(report);
 
     final channel = PackChannel.values.byName(bundle.channel.name);

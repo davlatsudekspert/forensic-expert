@@ -12,7 +12,15 @@ cd "$(dirname "$0")/.."
 
 OUT=build/content_pack
 DEST=apps/mobile/assets/content/pilot
-dart run fe_content_pipeline:build_pack --input content/pilot/bundle.json --out "$OUT"
+# FE027: oxirgi commit qilingan bundle bilan solishtirish — ko‘rib chiqilgan
+# ma’lumot jimgina pasaytirilmaydi / almashtirilmaydi.
+PREV_ARGS=()
+PREV=$(mktemp)
+trap 'rm -f "$PREV"' EXIT
+if git show HEAD:content/pilot/bundle.json > "$PREV" 2>/dev/null; then
+  PREV_ARGS=(--previous "$PREV")
+fi
+dart run fe_content_pipeline:build_pack --input content/pilot/bundle.json --out "$OUT" "${PREV_ARGS[@]}"
 mkdir -p "$DEST"
 cp "$OUT/content.db" "$OUT/manifest.json" "$OUT/manifest.sig" "$DEST/"
 

@@ -1,6 +1,7 @@
 // Kontent paketini yig‘ish:
 //   dart run fe_content_pipeline:build_pack \
-//     --input content/pilot/bundle.json --out build/content_pack
+//     --input content/pilot/bundle.json --out build/content_pack \
+//     [--previous <oldingi bundle.json>]
 //
 // Production kanal uchun maxfiy kalit faqat muhit o‘zgaruvchisidan
 // (FE_PACK_SIGNING_SEED_B64, CI secret) olinadi; repozitoriyda kalit yo‘q.
@@ -19,6 +20,8 @@ Future<void> main(List<String> args) async {
   final input = arg('--input') ?? 'content/pilot/bundle.json';
   final out = arg('--out') ?? 'build/content_pack';
   final channelArg = arg('--channel');
+  // Oldingi chiqarilgan bundle (FE027 review regressiya himoyasi uchun).
+  final previousArg = arg('--previous');
 
   var bundle = BundleCodec.decode(File(input).readAsStringSync());
   if (channelArg != null) {
@@ -31,6 +34,9 @@ Future<void> main(List<String> args) async {
       outDir: Directory(out),
       builtAt: DateTime.now().toUtc(),
       signingSeed: seedB64 == null ? null : base64Decode(seedB64),
+      previous: previousArg == null
+          ? null
+          : BundleCodec.decode(File(previousArg).readAsStringSync()).content,
     );
     stdout.writeln(
       'OK ${pack.manifest.packVersion} channel=${pack.manifest.channel.name} '

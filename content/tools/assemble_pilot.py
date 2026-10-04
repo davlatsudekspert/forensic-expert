@@ -20,8 +20,12 @@ Qoidalar:
 """
 import datetime, json
 
+import assemble_p4
+
 FREE_DEMO = ["ethanol", "methanol", "carbon-monoxide"]  # 3 ta yozuv
-PACK_VERSION = "2026.10.1"
+PACK_VERSION = "2026.10.2"
+# Komponent versiyalari (ilova versiyasidan alohida).
+COMPONENT_VERSIONS = {"scientific": "2026.10.2", "jurisdiction": "2026.10.2"}
 
 
 def main():
@@ -73,6 +77,8 @@ def main():
     for m in mets:
         if m.get("verification") != "verified":
             continue
+        if m["substance"] in assemble_p4.CLAIM_TARGETS:
+            continue  # PHASE 4 bilim obyektlari — assemble_p4.py
         sid = m["substance"]
         src_id = f"SRC-{m['pmcid']}"
         open_text = m["license_mode"] == "openReuse"
@@ -150,19 +156,33 @@ def main():
                        rows=[x["text"] for x in c["rows"]]),
             effective_from=L["effective_from"], review_status="NEEDS_REVIEW"))
 
+    p4 = assemble_p4.build(today)
+    sources += p4["sources"]
+    claims += p4["claims"]
+    citations += p4["citations"]
+    instruments += p4["instruments"]
+    rules += p4["rules"]
+
     bundle = dict(
-        format="fe-bundle/1", pack_version=PACK_VERSION, channel="development",
+        format="fe-bundle/2", pack_version=PACK_VERSION, channel="development",
+        component_versions=COMPONENT_VERSIONS,
         assembled_at=today,
         jurisdictions=[dict(jurisdiction_id="INT", level="international",
-                            names={"en": "International"})],
+                            names={"en": "International"})]
+        + p4["jurisdictions"],
+        authorities=p4["authorities"],
         sources=sources, substances=substances, claims=claims,
         citations=citations, instruments=instruments, rules=rules,
+        topics=p4["topics"], methods=p4["methods"],
+        screening_tests=p4["screening_tests"], recipes=p4["recipes"],
+        emerging_issues=p4["emerging_issues"],
         reviewers=[], reviews=[])
     json.dump(bundle, open("pilot/bundle.json", "w"), ensure_ascii=False,
               indent=2)
     print(f"substances={len(substances)} claims={len(claims)} "
           f"sources={len(sources)} instruments={len(instruments)} "
-          f"rules={len(rules)}")
+          f"rules={len(rules)} topics={len(p4['topics'])} "
+          f"knowledge={sum(len(p4[k]) for k in ('methods', 'screening_tests', 'recipes', 'emerging_issues'))}")
 
 
 if __name__ == "__main__":

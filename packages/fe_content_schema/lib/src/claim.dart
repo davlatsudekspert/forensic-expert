@@ -14,6 +14,11 @@ enum EntityType {
   glossaryTerm,
   quizQuestion,
   legalStatus,
+
+  // PHASE 4 bilim sohalari.
+  reagent,
+  screeningTest,
+  emergingIssue,
 }
 
 /// Bitta ilmiy fakt yoki qiymat (6.3-bo‘lim).

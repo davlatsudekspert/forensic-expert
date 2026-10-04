@@ -47,6 +47,9 @@ class ContentDbWriter {
         'schema_version': '${db.ContentDatabase.contentSchemaVersion}',
         'built_at': builtAt.toUtc().toIso8601String(),
         'bundle_format': BundleCodec.format,
+        // Komponent versiyalari: ilova / ilmiy baza / yurisdiksiya alohida.
+        for (final v in b.componentVersions.entries)
+          'component_version.${v.key}': v.value,
       }.entries) {
         await run(
           'INSERT INTO content_meta (meta_key, meta_value) VALUES (?, ?)',
@@ -91,13 +94,22 @@ class ContentDbWriter {
           [j.id, j.level.name, j.parentId, j.iso3166, jsonEncode(j.names)],
         );
       }
+      for (final a in c.authorities) {
+        await run(
+          'INSERT INTO authorities (authority_id, jurisdiction_id, names_json) '
+          'VALUES (?,?,?)',
+          [a.id, a.jurisdictionId, jsonEncode(a.names)],
+        );
+      }
       for (final i in c.instruments) {
         await run(
           'INSERT INTO jurisdictional_instruments (instrument_id, '
           'jurisdiction_id, instrument_type, titles_json, official_source_id, '
           'official_reference, effective_from, effective_to, version, '
-          'last_verified_at, review_status, is_test_data) '
-          'VALUES (?,?,?,?,?,?,?,?,?,?,?,?)',
+          'last_verified_at, review_status, is_test_data, authority_id, '
+          'publication_date, last_amended_at, legal_status, language, '
+          'translation_status) '
+          'VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
           [
             i.id,
             i.jurisdictionId,
@@ -115,6 +127,12 @@ class ContentDbWriter {
             _d(i.lastVerifiedAt),
             i.status.code,
             i.isTestData ? 1 : 0,
+            i.authorityId,
+            _d(i.publicationDate),
+            _d(i.lastAmendedAt),
+            BundleCodec.legalStatusCode(i.legalStatus),
+            i.language,
+            i.translationStatus?.code,
           ],
         );
       }
@@ -122,8 +140,9 @@ class ContentDbWriter {
         await run(
           'INSERT INTO jurisdictional_rules (rule_id, instrument_id, '
           'rule_type, subject_type, subject_id, value_json, effective_from, '
-          'effective_to, review_status, is_test_data) '
-          'VALUES (?,?,?,?,?,?,?,?,?,?)',
+          'effective_to, review_status, is_test_data, article_section, '
+          'topic_key, applies_to_json, version) '
+          'VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
           [
             r.id,
             r.instrumentId,
@@ -135,6 +154,10 @@ class ContentDbWriter {
             _d(r.effectiveTo),
             r.status.code,
             r.isTestData ? 1 : 0,
+            r.articleSection,
+            r.topicKey,
+            r.appliesTo == null ? null : jsonEncode([...r.appliesTo!]..sort()),
+            r.version,
           ],
         );
       }
@@ -159,6 +182,37 @@ class ContentDbWriter {
             'INSERT INTO substance_i18n (substance_id, lang, name, '
             'translation_status) VALUES (?,?,?,?)',
             [s.substanceId, n.key, n.value, s.translationStatus[n.key]],
+          );
+        }
+      }
+
+      for (final e in _knowledgeRows(b)) {
+        await run(
+          'INSERT INTO knowledge_entities (entity_id, entity_type, area, '
+          'subtype, names_json, tier_access, review_status, version, '
+          'jurisdiction_id, organization, event_date, payload_json, '
+          'content_version, is_test_data) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
+          [
+            e.id,
+            e.type,
+            e.area,
+            e.subtype,
+            jsonEncode(e.names),
+            b.tierOf(e.tierKey ?? e.id),
+            e.status.code,
+            e.version,
+            e.jurisdictionId,
+            e.organization,
+            _d(e.eventDate),
+            jsonEncode(e.payload),
+            b.packVersion,
+            e.isTestData ? 1 : 0,
+          ],
+        );
+        for (final sid in e.sourceIds.toSet()) {
+          await run(
+            'INSERT INTO entity_sources (entity_id, source_id) VALUES (?,?)',
+            [e.id, sid],
           );
         }
       }
@@ -201,8 +255,110 @@ class ContentDbWriter {
     await _db.insertSearchTerms(_searchTerms(b));
   }
 
+  /// PHASE 4 bilim obyektlari → `knowledge_entities` qatorlari.
+  static List<_KnowledgeRow> _knowledgeRows(PipelineBundle b) {
+    final c = b.content;
+    return [
+      for (final t in c.topics)
+        _KnowledgeRow(
+          id: t.id,
+          type: 'topic',
+          area: t.area.name,
+          subtype: t.forensicMedicineTopic?.name,
+          names: t.names,
+          // Mavzu — faqat taksonomiya yozuvi; mazmuni claim’larda, ularning
+          // o‘z statusi bor. Mavzu o‘zi hech qachon «reviewed» emas.
+          status: ScientificStatus.needsReview,
+          version: 1,
+          payload: KnowledgeJson.topic(t),
+          sourceIds: const [],
+          isTestData: t.isTestData,
+        ),
+      for (final r in c.recipes)
+        _KnowledgeRow(
+          id: r.reagentId,
+          // Bundle’da kirish darajasi retsept ID’si bilan beriladi.
+          tierKey: r.id,
+          type: 'reagent',
+          area: KnowledgeArea.reagents.name,
+          names: r.names,
+          status: r.status,
+          version: r.version,
+          payload: KnowledgeJson.recipe(r),
+          sourceIds: r.sourceIds,
+          isTestData: r.isTestData,
+        ),
+      for (final t in c.screeningTests)
+        _KnowledgeRow(
+          id: t.id,
+          type: 'screening_test',
+          area: KnowledgeArea.screening.name,
+          organization: t.manufacturer,
+          names: t.names,
+          status: t.status,
+          version: t.version,
+          payload: KnowledgeJson.screening(t),
+          sourceIds: t.sourceIds,
+          isTestData: t.isTestData,
+        ),
+      for (final m in c.methods)
+        _KnowledgeRow(
+          id: m.id,
+          type: 'method',
+          area: KnowledgeArea.methods.name,
+          subtype: m.kind.name,
+          names: m.titles,
+          status: m.status,
+          version: m.version,
+          jurisdictionId: m.jurisdictionId,
+          organization: m.organization,
+          eventDate: m.effectiveFrom,
+          payload: KnowledgeJson.method(m),
+          sourceIds: m.sourceIds,
+          isTestData: m.isTestData,
+        ),
+      for (final e in c.emergingIssues)
+        _KnowledgeRow(
+          id: e.id,
+          type: 'emerging_issue',
+          area: KnowledgeArea.emergingIssues.name,
+          subtype: e.category.name,
+          names: e.titles,
+          status: e.status,
+          version: 1,
+          jurisdictionId: e.scopeJurisdictionId,
+          eventDate: e.date,
+          payload: KnowledgeJson.emerging(e),
+          sourceIds: e.sourceIds,
+          isTestData: e.isTestData,
+        ),
+    ];
+  }
+
+  static SearchCategory _categoryOf(_KnowledgeRow e) => switch (e.type) {
+    'reagent' => SearchCategory.reagent,
+    'screening_test' => SearchCategory.screeningTest,
+    'method' => SearchCategory.method,
+    'emerging_issue' => SearchCategory.emergingIssue,
+    _ when e.area == KnowledgeArea.forensicMedicine.name =>
+      SearchCategory.forensicMedicineTopic,
+    _ when e.area == KnowledgeArea.biochemistry.name =>
+      SearchCategory.biochemistryTopic,
+    _ => SearchCategory.topic,
+  };
+
   List<SearchTerm> _searchTerms(PipelineBundle b) {
-    final terms = <SearchTerm>[];
+    final terms = <SearchTerm>[
+      for (final e in _knowledgeRows(b))
+        for (final n in e.names.entries)
+          SearchTerm(
+            entityId: e.id,
+            category: _categoryOf(e),
+            term: n.value,
+            kind: n.key == 'en' ? TermKind.canonical : TermKind.localized,
+            lang: n.key,
+          ),
+    ];
     for (final s in b.substances) {
       final cat = s.entityKind == 'metabolite'
           ? SearchCategory.metabolite
@@ -261,4 +417,38 @@ class ContentDbWriter {
   }
 
   static String? _d(DateTime? d) => d?.toIso8601String().substring(0, 10);
+}
+
+class _KnowledgeRow {
+  const _KnowledgeRow({
+    required this.id,
+    required this.type,
+    required this.area,
+    required this.names,
+    required this.status,
+    required this.version,
+    required this.payload,
+    required this.sourceIds,
+    required this.isTestData,
+    this.subtype,
+    this.jurisdictionId,
+    this.organization,
+    this.eventDate,
+    this.tierKey,
+  });
+
+  final String id;
+  final String? tierKey;
+  final String type;
+  final String area;
+  final String? subtype;
+  final Map<String, String> names;
+  final ScientificStatus status;
+  final int version;
+  final String? jurisdictionId;
+  final String? organization;
+  final DateTime? eventDate;
+  final Map<String, Object?> payload;
+  final List<String> sourceIds;
+  final bool isTestData;
 }

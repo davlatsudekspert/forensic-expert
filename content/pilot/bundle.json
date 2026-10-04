@@ -1,7 +1,11 @@
 {
-  "format": "fe-bundle/1",
-  "pack_version": "2026.10.1",
+  "format": "fe-bundle/2",
+  "pack_version": "2026.10.2",
   "channel": "development",
+  "component_versions": {
+    "scientific": "2026.10.2",
+    "jurisdiction": "2026.10.2"
+  },
   "assembled_at": "2026-10-04",
   "jurisdictions": [
     {
@@ -9,6 +13,77 @@
       "level": "international",
       "names": {
         "en": "International"
+      }
+    },
+    {
+      "jurisdiction_id": "GB",
+      "level": "country",
+      "parent_id": "INT",
+      "iso3166": "GB",
+      "names": {
+        "en": "United Kingdom",
+        "ru": "Великобритания",
+        "uz": "Buyuk Britaniya"
+      }
+    },
+    {
+      "jurisdiction_id": "GB-ENG",
+      "level": "subdivision",
+      "parent_id": "GB",
+      "iso3166": "GB-ENG",
+      "names": {
+        "en": "England",
+        "ru": "Англия",
+        "uz": "Angliya"
+      }
+    },
+    {
+      "jurisdiction_id": "GB-WLS",
+      "level": "subdivision",
+      "parent_id": "GB",
+      "iso3166": "GB-WLS",
+      "names": {
+        "en": "Wales",
+        "ru": "Уэльс",
+        "uz": "Uels"
+      }
+    },
+    {
+      "jurisdiction_id": "GB-SCT",
+      "level": "subdivision",
+      "parent_id": "GB",
+      "iso3166": "GB-SCT",
+      "names": {
+        "en": "Scotland",
+        "ru": "Шотландия",
+        "uz": "Shotlandiya"
+      }
+    },
+    {
+      "jurisdiction_id": "GB-NIR",
+      "level": "subdivision",
+      "parent_id": "GB",
+      "iso3166": "GB-NIR",
+      "names": {
+        "en": "Northern Ireland",
+        "ru": "Северная Ирландия",
+        "uz": "Shimoliy Irlandiya"
+      }
+    }
+  ],
+  "authorities": [
+    {
+      "authority_id": "AUTH-GB-PARLIAMENT",
+      "jurisdiction_id": "GB",
+      "names": {
+        "en": "Parliament of the United Kingdom"
+      }
+    },
+    {
+      "authority_id": "AUTH-GB-SCT-MINISTERS",
+      "jurisdiction_id": "GB-SCT",
+      "names": {
+        "en": "The Scottish Ministers"
       }
     }
   ],
@@ -588,6 +663,208 @@
       "license_mode": "citeOnly",
       "identifier_verified": true,
       "notes": "PDF SHA-256: b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e"
+    },
+    {
+      "source_id": "SRC-PMC5431803",
+      "source_type": "journal_article",
+      "title": "Estimation of postmortem interval by vitreous potassium evaluation with a novel fluorescence aptasensor.",
+      "journal": "Scientific reports",
+      "publication_year": 2017,
+      "doi": "10.1038/s41598-017-02027-1",
+      "pmid": "28500353",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5431803/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC BY. Iqtibos PMC BioC asl matni bilan solishtirilgan: exact (1.0). Vitreous kaliyning PMI bilan chiziqli o‘sishi (Sturner 1963 ga havola bilan)."
+    },
+    {
+      "source_id": "SRC-PMC13224331",
+      "source_type": "journal_article",
+      "title": "Forensic Utility of Vitreous Potassium Concentration in Estimating Postmortem Interval: A Systematic Review.",
+      "journal": "Cureus",
+      "publication_year": 2026,
+      "doi": "10.7759/cureus.108128",
+      "pmid": "42231995",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13224331/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC BY. Iqtibos PMC BioC asl matni bilan solishtirilgan: exact (1.0). Harorat vitreous kaliy uchun chalg‘ituvchi omil (cheklov)."
+    },
+    {
+      "source_id": "SRC-PMC12147671",
+      "source_type": "journal_article",
+      "title": "Pharmacology of newly identified nitazene variants reveals structural determinants of affinity, potency, selectivity for mu opioid receptors.",
+      "journal": "Neuropharmacology",
+      "publication_year": 2025,
+      "doi": "10.1016/j.neuropharm.2025.110512",
+      "pmid": "40374158",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12147671/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC BY. Iqtibos PMC BioC asl matni bilan solishtirilgan: exact (1.0). Har yili yangi nitazenlar aniqlanmoqda (dolzarb muammo)."
+    },
+    {
+      "source_id": "SRC-PMC12450430",
+      "source_type": "journal_article",
+      "title": "Livor Mortis and Forensic Dermatology: A Review of Death-Related Gravity-Dependent Lividity and Postmortem Hypostasis.",
+      "journal": "Cureus",
+      "publication_year": 2025,
+      "doi": "10.7759/cureus.90760",
+      "pmid": "40984954",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12450430/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC BY. Iqtibos PMC BioC asl matni bilan solishtirilgan: exact (1.0). Sud dermatologiyasi bo‘yicha review; livor mortis ta’rifi va sinonimlari."
+    },
+    {
+      "source_id": "SRC-PMC11580817",
+      "source_type": "journal_article",
+      "title": "Application of Metabolomics and Machine Learning for the Prediction of Postmortem Interval.",
+      "journal": "Cureus",
+      "publication_year": 2024,
+      "doi": "10.7759/cureus.74161",
+      "pmid": "39575351",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11580817/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC BY. Iqtibos PMC BioC asl matni bilan solishtirilgan: exact (1.0). Algor mortis ta’rifi (tana sovishi)."
+    },
+    {
+      "source_id": "SRC-PMC10861637",
+      "source_type": "journal_article",
+      "title": "Bridging the gap between decomposition theory and forensic research on postmortem interval.",
+      "journal": "International journal of legal medicine",
+      "publication_year": 2024,
+      "doi": "10.1007/s00414-023-03060-8",
+      "pmid": "37491634",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10861637/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC BY. Iqtibos PMC BioC asl matni bilan solishtirilgan: exact (1.0). PMI baholashdagi noaniqlikni kamaytirish zarurligi haqida (cheklov)."
+    },
+    {
+      "source_id": "SRC-PMC11929145",
+      "source_type": "journal_article",
+      "title": "The Role of Toxicology Investigations in Overdose Deaths.",
+      "journal": "Cureus",
+      "publication_year": 2025,
+      "doi": "10.7759/cureus.79352",
+      "pmid": "40125171",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11929145/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC BY. Iqtibos PMC BioC asl matni bilan solishtirilgan: exact (1.0). GC-MS va LC-MS sud toksikologiyasida «gold standard» deb qaraladi."
+    },
+    {
+      "source_id": "SRC-PMC11961553",
+      "source_type": "journal_article",
+      "title": "Presumptive Tests for Xylazine-A Computer Vision Approach.",
+      "journal": "Analytical science advances",
+      "publication_year": 2025,
+      "doi": "10.1002/ansa.70008",
+      "pmid": "40177113",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11961553/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC BY. Iqtibos PMC BioC asl matni bilan solishtirilgan: exact (1.0). Marquis reagenti presumptiv testlarda (ksilazin misolida) qo‘llanadi."
+    },
+    {
+      "source_id": "SRC-PMC5537996",
+      "source_type": "journal_article",
+      "title": "An overview of forensic drug testing methods and their suitability for harm reduction point-of-care services.",
+      "journal": "Harm reduction journal",
+      "publication_year": 2017,
+      "doi": "10.1186/s12954-017-0179-5",
+      "pmid": "28760153",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5537996/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC BY. Iqtibos PMC BioC asl matni bilan solishtirilgan: exact (1.0). Rangli/spot testlar presumptiv."
+    },
+    {
+      "source_id": "SRC-PMC11402778",
+      "source_type": "journal_article",
+      "title": "Application of a molecular networking approach using LC-HRMS combined with the MetWork webserver for clinical and forensic toxicology.",
+      "journal": "Heliyon",
+      "publication_year": 2024,
+      "doi": "10.1016/j.heliyon.2024.e36735",
+      "pmid": "39286100",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11402778/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC BY. Iqtibos PMC BioC asl matni bilan solishtirilgan: exact (1.0). Immunoassay natijasi GC-MS/LC-MS bilan tasdiqlanguncha presumptiv."
+    },
+    {
+      "source_id": "SRC-PMC2688477",
+      "source_type": "journal_article",
+      "title": "Using molecular similarity to highlight the challenges of routine immunoassay-based drug of abuse/toxicology screening in emergency medicine.",
+      "journal": "BMC emergency medicine",
+      "publication_year": 2009,
+      "doi": "10.1186/1471-227X-9-5",
+      "pmid": "19400959",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2688477/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC BY. Iqtibos PMC BioC asl matni bilan solishtirilgan: exact (1.0). Skrining immunoassay’larida cross-reactivity sabab soxta musbat natija."
+    },
+    {
+      "source_id": "SRC-GB-RTA-1988-S11",
+      "source_type": "legislation",
+      "title": "Road Traffic Act 1988, section 11 — Interpretation of sections 4 to 10",
+      "organization": "legislation.gov.uk (The National Archives)",
+      "official_url": "https://www.legislation.gov.uk/ukpga/1988/52/section/11/data.xml",
+      "accessed_date": "2026-10-04",
+      "tier": "tier1",
+      "evidence_level": "A",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Matn legislation.gov.uk dan (Open Government Licence v3.0). SHA-256: 2123b14d28e0b86079adf727e8e70547cb9160f28e962727371023f2b10cc753. Matn holati: 2026-06-29; bo‘lim hududi (extent): E+W+S."
+    },
+    {
+      "source_id": "SRC-GB-SSI-2014-328",
+      "source_type": "legislation",
+      "title": "The Road Traffic Act 1988 (Prescribed Limit) (Scotland) Regulations 2014 (SSI 2014/328)",
+      "organization": "legislation.gov.uk (The National Archives)",
+      "official_url": "https://www.legislation.gov.uk/ssi/2014/328/data.xml",
+      "accessed_date": "2026-10-04",
+      "tier": "tier1",
+      "evidence_level": "A",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Matn legislation.gov.uk dan (Open Government Licence v3.0). SHA-256: 206953a8364518edb8dcf2a46bf11dae4132762fc405e7c1e482e1db5f322a75. Made: 2014-11-20; in force: 2014-12-05."
     }
   ],
   "substances": [
@@ -1671,6 +1948,171 @@
         ],
         "section": "Discussion"
       }
+    },
+    {
+      "claim_id": "C-BIO-VITREOUS-POTASSIUM-MARKER",
+      "entity_type": "topic",
+      "entity_id": "bio-vitreous-potassium",
+      "field": "marker",
+      "domain": "fm",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "B",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "excerpt": "It was worth mentioning that there was a linear rise in vitreous potassium concentration with advancing PMI, which was first described by Sturner in 1963.",
+        "section": "RESULTS"
+      }
+    },
+    {
+      "claim_id": "C-BIO-VITREOUS-POTASSIUM-LIMITATION",
+      "entity_type": "topic",
+      "entity_id": "bio-vitreous-potassium",
+      "field": "limitation",
+      "domain": "fm",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "excerpt": "These findings highlight the inconsistent influence of temperature on vitreous potassium, underscoring its role as a potential confounding factor in PMI estimation.",
+        "section": "INTRO"
+      }
+    },
+    {
+      "claim_id": "C-EMG-NITAZENES-SUMMARY",
+      "entity_type": "emergingIssue",
+      "entity_id": "emg-nitazenes",
+      "field": "summary",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "B",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "excerpt": "New nitazenes are discovered each year in drug samples and toxicology specimens, necessitating rapid pharmacological characterization.",
+        "section": "ABSTRACT"
+      }
+    },
+    {
+      "claim_id": "C-FM-LIVOR-MORTIS-DEFINITION",
+      "entity_type": "topic",
+      "entity_id": "fm-livor-mortis",
+      "field": "definition",
+      "domain": "fm",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "excerpt": "Livor mortis is an early postmortem change; it is also referred to as dependent lividity or postmortem hypostasis.",
+        "section": "ABSTRACT"
+      }
+    },
+    {
+      "claim_id": "C-FM-ALGOR-MORTIS-DEFINITION",
+      "entity_type": "topic",
+      "entity_id": "fm-algor-mortis",
+      "field": "definition",
+      "domain": "fm",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "B",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "excerpt": "Algor mortis is the progressive cooling of a body after death as it equilibrates with the ambient temperature.",
+        "section": "INTRO"
+      }
+    },
+    {
+      "claim_id": "C-FM-POSTMORTEM-INTERVAL-LIMITATION",
+      "entity_type": "topic",
+      "entity_id": "fm-postmortem-interval",
+      "field": "limitation",
+      "domain": "fm",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "excerpt": "Our framework reinforces the need for a multidisciplinary approach to PMI research, and calls for an adaptive research cycle that aims to reduce uncertainty in PMI estimates via experimentation, modelling, and validation.",
+        "section": "ABSTRACT"
+      }
+    },
+    {
+      "claim_id": "C-METHOD-GCMS-ROLE_IN_FORENSIC_TOXICOLOGY",
+      "entity_type": "method",
+      "entity_id": "method-gcms",
+      "field": "role_in_forensic_toxicology",
+      "domain": "lab",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "excerpt": "Forensic toxicologists employ a range of analytical methods, including gas chromatography-mass spectrometry (GC-MS) and liquid chromatography-mass spectrometry (LC-MS), which are considered gold standards in the field.",
+        "section": "INTRO"
+      }
+    },
+    {
+      "claim_id": "C-REAGENT-MARQUIS-USE_CONTEXT",
+      "entity_type": "reagent",
+      "entity_id": "reagent-marquis",
+      "field": "use_context",
+      "domain": "lab",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "B",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "excerpt": "Hence, this study aimed to investigate the potential application of Mandelin, Mecke and Marquis reagents in the presumptive testing for xylazine.",
+        "section": "INTRO"
+      }
+    },
+    {
+      "claim_id": "C-REAGENT-MARQUIS-TEST_CLASS_LIMITATION",
+      "entity_type": "reagent",
+      "entity_id": "reagent-marquis",
+      "field": "test_class_limitation",
+      "domain": "lab",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "excerpt": "Spot/color tests offer presumptive testing based on chemical reactions between analytes and indicators.",
+        "section": "INTRO"
+      }
+    },
+    {
+      "claim_id": "C-SCR-IMMUNOASSAY-DRUGS-PRESUMPTIVE_NATURE",
+      "entity_type": "screeningTest",
+      "entity_id": "scr-immunoassay-drugs",
+      "field": "presumptive_nature",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "B",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "excerpt": "Immunoassay results are also considered presumptive until confirmed by higher resolution techniques like gas or liquid chromatography-MS (GC-MS, LC-MS) methods.",
+        "section": "INTRO"
+      }
+    },
+    {
+      "claim_id": "C-SCR-IMMUNOASSAY-DRUGS-CROSS_REACTIVITY",
+      "entity_type": "screeningTest",
+      "entity_id": "scr-immunoassay-drugs",
+      "field": "cross_reactivity",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "B",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "excerpt": "All DOA/Tox screening immunoassays can be limited by false positives caused by cross-reactivity from structurally related compounds.",
+        "section": "ABSTRACT"
+      }
     }
   ],
   "citations": [
@@ -1863,6 +2305,61 @@
       "claim_id": "C-ALUMINIUM-PHOSPHIDE-TRANSFORMATION_PRODUCT",
       "source_id": "SRC-PMC12550317",
       "locator": "Discussion"
+    },
+    {
+      "claim_id": "C-BIO-VITREOUS-POTASSIUM-MARKER",
+      "source_id": "SRC-PMC5431803",
+      "locator": "RESULTS"
+    },
+    {
+      "claim_id": "C-BIO-VITREOUS-POTASSIUM-LIMITATION",
+      "source_id": "SRC-PMC13224331",
+      "locator": "INTRO"
+    },
+    {
+      "claim_id": "C-EMG-NITAZENES-SUMMARY",
+      "source_id": "SRC-PMC12147671",
+      "locator": "ABSTRACT"
+    },
+    {
+      "claim_id": "C-FM-LIVOR-MORTIS-DEFINITION",
+      "source_id": "SRC-PMC12450430",
+      "locator": "ABSTRACT"
+    },
+    {
+      "claim_id": "C-FM-ALGOR-MORTIS-DEFINITION",
+      "source_id": "SRC-PMC11580817",
+      "locator": "INTRO"
+    },
+    {
+      "claim_id": "C-FM-POSTMORTEM-INTERVAL-LIMITATION",
+      "source_id": "SRC-PMC10861637",
+      "locator": "ABSTRACT"
+    },
+    {
+      "claim_id": "C-METHOD-GCMS-ROLE_IN_FORENSIC_TOXICOLOGY",
+      "source_id": "SRC-PMC11929145",
+      "locator": "INTRO"
+    },
+    {
+      "claim_id": "C-REAGENT-MARQUIS-USE_CONTEXT",
+      "source_id": "SRC-PMC11961553",
+      "locator": "INTRO"
+    },
+    {
+      "claim_id": "C-REAGENT-MARQUIS-TEST_CLASS_LIMITATION",
+      "source_id": "SRC-PMC5537996",
+      "locator": "INTRO"
+    },
+    {
+      "claim_id": "C-SCR-IMMUNOASSAY-DRUGS-PRESUMPTIVE_NATURE",
+      "source_id": "SRC-PMC11402778",
+      "locator": "INTRO"
+    },
+    {
+      "claim_id": "C-SCR-IMMUNOASSAY-DRUGS-CROSS_REACTIVITY",
+      "source_id": "SRC-PMC2688477",
+      "locator": "ABSTRACT"
     }
   ],
   "instruments": [
@@ -1895,6 +2392,42 @@
       "last_verified_at": "2026-10-04",
       "review_status": "NEEDS_REVIEW",
       "date_precision": "year"
+    },
+    {
+      "instrument_id": "GB-RTA-1988-S11",
+      "jurisdiction_id": "GB",
+      "instrument_type": "law",
+      "authority_id": "AUTH-GB-PARLIAMENT",
+      "titles": {
+        "en": "Road Traffic Act 1988, s. 11"
+      },
+      "official_source_id": "SRC-GB-RTA-1988-S11",
+      "official_reference": "1988 c. 52, s. 11(2)",
+      "effective_from": "2018-03-01",
+      "version": "2018-03-01",
+      "last_verified_at": "2026-10-04",
+      "legal_status": "in_force",
+      "language": "en",
+      "review_status": "NEEDS_REVIEW",
+      "date_precision": "day"
+    },
+    {
+      "instrument_id": "GB-SCT-SSI-2014-328",
+      "jurisdiction_id": "GB-SCT",
+      "instrument_type": "regulation",
+      "authority_id": "AUTH-GB-SCT-MINISTERS",
+      "titles": {
+        "en": "The Road Traffic Act 1988 (Prescribed Limit) (Scotland) Regulations 2014"
+      },
+      "official_source_id": "SRC-GB-SSI-2014-328",
+      "official_reference": "SSI 2014/328, reg. 2 (made 2014-11-20)",
+      "effective_from": "2014-12-05",
+      "version": "2014-12-05",
+      "last_verified_at": "2026-10-04",
+      "legal_status": "in_force",
+      "language": "en",
+      "review_status": "NEEDS_REVIEW",
+      "date_precision": "day"
     }
   ],
   "rules": [
@@ -2051,6 +2584,215 @@
       },
       "effective_from": "2025-01-01",
       "review_status": "NEEDS_REVIEW"
+    },
+    {
+      "rule_id": "R-GB-ETHANOL-DRINK-DRIVE-LIMIT",
+      "instrument_id": "GB-RTA-1988-S11",
+      "rule_type": "legal_threshold",
+      "subject_type": "substance",
+      "subject_id": "ethanol",
+      "topic_key": "drink_drive.prescribed_limit",
+      "applies_to": [
+        "GB-ENG",
+        "GB-WLS",
+        "GB-SCT"
+      ],
+      "article_section": "s. 11(2)",
+      "value": {
+        "limits": {
+          "breath": {
+            "value": 35,
+            "unit": "µg/100 mL"
+          },
+          "blood": {
+            "value": 80,
+            "unit": "mg/100 mL"
+          },
+          "urine": {
+            "value": 107,
+            "unit": "mg/100 mL"
+          }
+        },
+        "excerpt": "“the prescribed limit” means, as the case may require— 35 microgrammes of alcohol in 100 millilitres of breath, 80 milligrammes of alcohol in 100 millilitres of blood, or 107 milligrammes of alcohol in 100 millilitres of urine, or such other proportion as may be prescribed by regulations",
+        "extent": "E+W+S"
+      },
+      "effective_from": "2018-03-01",
+      "review_status": "NEEDS_REVIEW"
+    },
+    {
+      "rule_id": "R-GB-SCT-ETHANOL-DRINK-DRIVE-LIMIT",
+      "instrument_id": "GB-SCT-SSI-2014-328",
+      "rule_type": "legal_threshold",
+      "subject_type": "substance",
+      "subject_id": "ethanol",
+      "topic_key": "drink_drive.prescribed_limit",
+      "article_section": "reg. 2",
+      "value": {
+        "limits": {
+          "breath": {
+            "value": 22,
+            "unit": "µg/100 mL"
+          },
+          "blood": {
+            "value": 50,
+            "unit": "mg/100 mL"
+          },
+          "urine": {
+            "value": 67,
+            "unit": "mg/100 mL"
+          }
+        },
+        "excerpt": "For the purpose of the definition of “the prescribed limit” in section 11(2) of The Road Traffic Act 1988, the prescribed proportion in relation to driving or attempting to drive, or being in charge of a vehicle, in Scotland, is— a 22 microgrammes of alcohol in 100 millilitres of breath; b 50 milligrammes of alcohol in 100 millilitres of blood; or c 67 milligrammes of alcohol in 100 millilitres of urine."
+      },
+      "effective_from": "2014-12-05",
+      "review_status": "NEEDS_REVIEW"
+    }
+  ],
+  "topics": [
+    {
+      "topic_id": "fm-livor-mortis",
+      "area": "forensicMedicine",
+      "forensic_medicine_topic": "livorMortis",
+      "tier_access": "free",
+      "names": {
+        "en": "Livor mortis",
+        "ru": "Трупные пятна",
+        "uz": "Murda dog‘lari (livor mortis)"
+      }
+    },
+    {
+      "topic_id": "fm-algor-mortis",
+      "area": "forensicMedicine",
+      "forensic_medicine_topic": "algorMortis",
+      "names": {
+        "en": "Algor mortis",
+        "ru": "Охлаждение трупа",
+        "uz": "Murdaning sovishi (algor mortis)"
+      }
+    },
+    {
+      "topic_id": "fm-postmortem-interval",
+      "area": "forensicMedicine",
+      "forensic_medicine_topic": "postmortemInterval",
+      "names": {
+        "en": "Postmortem interval (PMI)",
+        "ru": "Давность наступления смерти",
+        "uz": "O‘limdan keyingi vaqt (PMI)"
+      }
+    },
+    {
+      "topic_id": "bio-vitreous-potassium",
+      "area": "biochemistry",
+      "tier_access": "free",
+      "names": {
+        "en": "Vitreous potassium and PMI",
+        "ru": "Калий стекловидного тела и давность смерти",
+        "uz": "Shishasimon tana kaliysi va PMI"
+      }
+    }
+  ],
+  "methods": [
+    {
+      "method_id": "method-gcms",
+      "kind": "scientificMethod",
+      "titles": {
+        "en": "Gas chromatography–mass spectrometry (GC-MS)",
+        "ru": "Газовая хроматография — масс-спектрометрия (ГХ-МС)",
+        "uz": "Gaz xromatografiyasi — mass-spektrometriya (GX-MS)"
+      },
+      "techniques": [
+        "gcMs"
+      ],
+      "sections": {},
+      "text_origin": "originalSummary",
+      "status": "NEEDS_REVIEW",
+      "source_ids": [
+        "SRC-PMC11929145"
+      ],
+      "tier_access": "free"
+    }
+  ],
+  "screening_tests": [
+    {
+      "screening_id": "scr-immunoassay-drugs",
+      "names": {
+        "en": "Immunoassay drug screening",
+        "ru": "Иммуноанализ (скрининг наркотиков)",
+        "uz": "Immunoanaliz (giyohvand moddalar skriningi)"
+      },
+      "analyte": "drugs of abuse (class-based; see source)",
+      "specimen": "not specified in source",
+      "principle": "immunoassay",
+      "cross_reactivity": [
+        {
+          "text": "All DOA/Tox screening immunoassays can be limited by false positives caused by cross-reactivity from structurally related compounds.",
+          "source_id": "SRC-PMC2688477",
+          "locator": "ABSTRACT"
+        }
+      ],
+      "false_positive": [
+        {
+          "text": "All DOA/Tox screening immunoassays can be limited by false positives caused by cross-reactivity from structurally related compounds.",
+          "source_id": "SRC-PMC2688477",
+          "locator": "ABSTRACT"
+        }
+      ],
+      "limitations": [
+        {
+          "text": "Immunoassay results are also considered presumptive until confirmed by higher resolution techniques like gas or liquid chromatography-MS (GC-MS, LC-MS) methods.",
+          "source_id": "SRC-PMC11402778",
+          "locator": "INTRO"
+        }
+      ],
+      "confirmatory_method_ids": [
+        "method-gcms"
+      ],
+      "supports_definitive_identification": false,
+      "status": "NEEDS_REVIEW",
+      "source_ids": [
+        "SRC-PMC11402778",
+        "SRC-PMC2688477"
+      ],
+      "tier_access": "free"
+    }
+  ],
+  "recipes": [
+    {
+      "recipe_id": "recipe-marquis",
+      "reagent_id": "reagent-marquis",
+      "names": {
+        "en": "Marquis reagent",
+        "ru": "Реактив Марки",
+        "uz": "Marquis reaktivi"
+      },
+      "domain": "lab",
+      "status": "NEEDS_REVIEW",
+      "ingredients": [],
+      "steps": [],
+      "hazards": [],
+      "source_ids": [
+        "SRC-PMC11961553",
+        "SRC-PMC5537996"
+      ],
+      "tier_access": "free"
+    }
+  ],
+  "emerging_issues": [
+    {
+      "issue_id": "emg-nitazenes",
+      "category": "syntheticOpioids",
+      "titles": {
+        "en": "Newly identified nitazene variants",
+        "ru": "Новые варианты нитазенов",
+        "uz": "Nitazenlarning yangi variantlari"
+      },
+      "source_ids": [
+        "SRC-PMC12147671"
+      ],
+      "date": "2025-05-13",
+      "evidence_type": "peerReviewed",
+      "status": "NEEDS_REVIEW",
+      "tier_access": "free"
     }
   ],
   "reviewers": [],
