@@ -2,7 +2,12 @@
     <application
         android:label="FORENSIC EXPERT"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:usesCleartextTraffic="false">
+        <!-- PHASE 11: maxfiylik — qurilmadagi saralanganlar/qidiruv tarixi
+             bulutli zaxiraga tushmaydi; faqat HTTPS. -->
         <activity
             android:name=".MainActivity"
             android:exported="true"

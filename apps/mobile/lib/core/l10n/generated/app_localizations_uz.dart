@@ -3381,4 +3381,17 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get ldQualityAccreditation => 'Sifat va akkreditatsiya';
+
+  @override
+  String get deleteLocalData => 'Qurilmadagi ma’lumotlarni o‘chirish';
+
+  @override
+  String get deleteLocalDataBody =>
+      'Saralanganlar, qidiruv tarixi, yaqinda ko‘rilgan yozuvlar va darslar holati shu qurilmadan o‘chiriladi. Ilmiy baza va xaridlarga ta’sir qilmaydi. Akkaunt yo‘q: serverlarimizda siz haqingizda hech narsa saqlanmaydi.';
+
+  @override
+  String get deleteLocalDataConfirm => 'O‘chirish';
+
+  @override
+  String get deleteLocalDataDone => 'Qurilmadagi ma’lumotlar o‘chirildi';
 }

@@ -105,4 +105,9 @@ class UserDataController extends Notifier<UserDataSnapshot> {
 
   Future<void> clearSearchHistory() =>
       _set(state.copyWith(recentSearches: const []));
+
+  /// PHASE 11: qurilmadagi barcha shaxsiy ma’lumotni o‘chirish
+  /// (saralanganlar, tarix, darslar). Akkaunt tizimi yo‘q — serverda
+  /// foydalanuvchi ma’lumoti saqlanmaydi.
+  Future<void> deleteAllLocalData() => _set(const UserDataSnapshot());
 }

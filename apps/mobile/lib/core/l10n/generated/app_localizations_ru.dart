@@ -3389,4 +3389,17 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get ldQualityAccreditation => 'Качество и аккредитация';
+
+  @override
+  String get deleteLocalData => 'Удалить данные на этом устройстве';
+
+  @override
+  String get deleteLocalDataBody =>
+      'Закладки, история поиска, недавно просмотренные записи и прогресс уроков будут удалены с этого устройства. Научная база и покупки не затрагиваются. Аккаунта нет: на наших серверах о вас ничего не хранится.';
+
+  @override
+  String get deleteLocalDataConfirm => 'Удалить';
+
+  @override
+  String get deleteLocalDataDone => 'Локальные данные удалены';
 }

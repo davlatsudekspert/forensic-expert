@@ -72,6 +72,10 @@ class PurchaseVerificationService {
     if (t.revokedAt != null) {
       return const VerificationResult(VerificationOutcome.revoked);
     }
+    final state = EntitlementStateResolver.resolve(t, _clock());
+    if (state == EntitlementState.expired) {
+      return const VerificationResult(VerificationOutcome.expired);
+    }
     if (!t.isPurchased) {
       return const VerificationResult(VerificationOutcome.notPurchased);
     }
@@ -102,6 +106,7 @@ class PurchaseVerificationService {
       transactionId: t.transactionId,
       grantedAt: _clock().toUtc(),
       environment: t.environment,
+      expiresAt: t.expiresAt,
     );
     if (!await store.insertIfAbsent(record)) {
       // Parallel so‘rov boshqa akkauntga bog‘lab ulgurdi.
@@ -132,7 +137,26 @@ class PurchaseVerificationService {
   /// Akkaunt huquqlari (mijoz faqat shu javobga tayanadi).
   Future<bool> hasLifetime(String accountId, String productId) async =>
       (await store.forAccount(accountId))
-          .any((r) => r.productId == productId && r.active);
+          .any((r) => r.productId == productId && r.activeAt(_clock()));
+
+  /// Restore: mijoz qurilmadagi xaridlarni yuboradi; har biri store orqali
+  /// qayta tekshiriladi (replay himoyasi saqlanadi).
+  Future<List<VerificationResult>> restore(
+    String accountId,
+    StorePlatform platform,
+    Map<String, String> credentialsByProduct,
+  ) async => [
+    for (final e in credentialsByProduct.entries)
+      await verify(
+        VerificationRequest(
+          platform: platform,
+          accountId: accountId,
+          productId: e.key,
+          purchaseCredential: e.value,
+          idempotencyKey: 'restore:$accountId:${platform.name}:${e.value}',
+        ),
+      ),
+  ];
 }
 
 /// Store bildirishnomalari: refund / revoke / voided purchase.

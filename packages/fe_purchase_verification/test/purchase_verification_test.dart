@@ -200,4 +200,96 @@ void main() {
       returnsNormally,
     );
   });
+
+  group('obuna holatlari (Student Pro / Institution)', () {
+    final now = DateTime.utc(2026, 10, 4);
+    StoreTransaction sub({
+      DateTime? exp,
+      DateTime? grace,
+      bool renew = true,
+      DateTime? revoked,
+    }) => StoreTransaction(
+      platform: StorePlatform.appStore,
+      transactionId: 'T',
+      originalTransactionId: 'O',
+      productId: 'fe.student',
+      appIdentifier: 'com.example.forensic',
+      environment: StoreEnvironment.production,
+      purchasedAt: DateTime.utc(2026, 9, 1),
+      expiresAt: exp,
+      gracePeriodExpiresAt: grace,
+      autoRenewing: renew,
+      revokedAt: revoked,
+    );
+    EntitlementState st(StoreTransaction t) =>
+        EntitlementStateResolver.resolve(t, now);
+
+    test('holatlar mashinasi', () {
+      expect(st(sub()), EntitlementState.active); // Lifetime (muddatsiz)
+      expect(st(sub(exp: DateTime.utc(2026, 11, 1))), EntitlementState.active);
+      expect(
+        st(sub(exp: DateTime.utc(2026, 11, 1), renew: false)),
+        EntitlementState.cancelledActiveUntilExpiry,
+      );
+      expect(
+        st(
+          sub(
+            exp: DateTime.utc(2026, 10, 1),
+            grace: DateTime.utc(2026, 10, 10),
+          ),
+        ),
+        EntitlementState.gracePeriod,
+      );
+      expect(st(sub(exp: DateTime.utc(2026, 10, 1))), EntitlementState.expired);
+      expect(
+        st(sub(exp: DateTime.utc(2026, 11, 1), revoked: now)),
+        EntitlementState.revoked,
+      );
+      expect(
+        EntitlementStateResolver.grantsAccess(EntitlementState.gracePeriod),
+        isTrue,
+      );
+      expect(
+        EntitlementStateResolver.grantsAccess(EntitlementState.expired),
+        isFalse,
+      );
+    });
+
+    test('muddati tugagan obuna server tomonida rad etiladi', () async {
+      final s = PurchaseVerificationService(
+        config: const VerificationConfig(
+          appleBundleId: 'com.example.forensic',
+          googlePackageName: 'com.example.forensic',
+          allowedProductIds: {'fe.student'},
+        ),
+        store: InMemoryEntitlementStore(),
+        verifiers: [
+          MockStoreVerifier(StorePlatform.appStore, {
+            'old': sub(exp: DateTime.utc(2026, 9, 30)),
+            'cur': StoreTransaction(
+              platform: StorePlatform.appStore,
+              transactionId: 'T2',
+              originalTransactionId: 'O2',
+              productId: 'fe.student',
+              appIdentifier: 'com.example.forensic',
+              environment: StoreEnvironment.production,
+              purchasedAt: DateTime.utc(2026, 10, 1),
+              expiresAt: DateTime.utc(2026, 11, 1),
+              autoRenewing: true,
+            ),
+          }),
+        ],
+        clock: () => now,
+      );
+      final results = await s.restore('acc', StorePlatform.appStore, {
+        'fe.student': 'old',
+      });
+      expect(results.single.outcome, VerificationOutcome.expired);
+      final ok = await s.restore('acc', StorePlatform.appStore, {
+        'fe.student': 'cur',
+      });
+      expect(ok.single.outcome, VerificationOutcome.verified);
+      expect(await s.hasLifetime('acc', 'fe.student'), isTrue);
+    });
+  });
 }

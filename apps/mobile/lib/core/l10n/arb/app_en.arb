@@ -4424,5 +4424,21 @@
   "ldQualityAccreditation": "Quality and accreditation",
   "@ldQualityAccreditation": {
     "description": "Legal domain."
+  },
+  "deleteLocalData": "Delete data on this device",
+  "@deleteLocalData": {
+    "description": "Profile action."
+  },
+  "deleteLocalDataBody": "Bookmarks, search history, recently viewed records and lesson progress will be deleted from this device. The scientific database and purchases are not affected. There is no account: nothing is stored about you on our servers.",
+  "@deleteLocalDataBody": {
+    "description": "Dialog."
+  },
+  "deleteLocalDataConfirm": "Delete",
+  "@deleteLocalDataConfirm": {
+    "description": "Button."
+  },
+  "deleteLocalDataDone": "Local data deleted",
+  "@deleteLocalDataDone": {
+    "description": "Snackbar."
   }
 }

@@ -44,6 +44,9 @@ class StoreTransaction {
     this.revokedAt,
     this.isPurchased = true,
     this.needsAcknowledgement = false,
+    this.expiresAt,
+    this.gracePeriodExpiresAt,
+    this.autoRenewing = false,
   });
 
   final StorePlatform platform;
@@ -68,6 +71,62 @@ class StoreTransaction {
 
   /// Google: 3 kun ichida acknowledge qilinmasa, xarid qaytariladi.
   final bool needsAcknowledgement;
+
+  /// Obuna (Student Pro / Institution) muddati; bir martalik (Lifetime)
+  /// xaridda `null`.
+  final DateTime? expiresAt;
+
+  /// To‘lov muammosida store bergan imtiyozli davr oxiri.
+  final DateTime? gracePeriodExpiresAt;
+
+  /// Avtomatik yangilanish yoqilganmi (bekor qilingan obuna muddat
+  /// oxirigacha amal qiladi).
+  final bool autoRenewing;
+}
+
+/// Huquq holati — faqat server hisoblaydi; mijoz Pro holatiga ishonilmaydi.
+enum EntitlementState {
+  /// Amalda (Lifetime yoki muddati tugamagan obuna).
+  active,
+
+  /// Obuna bekor qilingan, lekin to‘langan muddat oxirigacha amal qiladi.
+  cancelledActiveUntilExpiry,
+
+  /// To‘lov muammosi — store imtiyozli davri.
+  gracePeriod,
+
+  /// Muddati tugagan.
+  expired,
+
+  /// Refund / bekor qilingan.
+  revoked,
+}
+
+/// Deterministik holat hisoblovchisi.
+abstract final class EntitlementStateResolver {
+  static EntitlementState resolve(StoreTransaction t, DateTime now) {
+    if (t.revokedAt != null) return EntitlementState.revoked;
+    final exp = t.expiresAt;
+    if (exp == null) return EntitlementState.active;
+    if (now.isBefore(exp)) {
+      return t.autoRenewing
+          ? EntitlementState.active
+          : EntitlementState.cancelledActiveUntilExpiry;
+    }
+    final grace = t.gracePeriodExpiresAt;
+    if (grace != null && now.isBefore(grace)) {
+      return EntitlementState.gracePeriod;
+    }
+    return EntitlementState.expired;
+  }
+
+  /// Ilovada Pro funksiyalar ochiqmi.
+  static bool grantsAccess(EntitlementState s) => switch (s) {
+    EntitlementState.active ||
+    EntitlementState.cancelledActiveUntilExpiry ||
+    EntitlementState.gracePeriod => true,
+    EntitlementState.expired || EntitlementState.revoked => false,
+  };
 }
 
 enum VerificationOutcome {
@@ -78,6 +137,9 @@ enum VerificationOutcome {
   sandboxNotAllowed,
   notPurchased,
   revoked,
+
+  /// Obuna muddati tugagan (imtiyozli davr ham).
+  expired,
 
   /// Bu xarid boshqa akkauntga bog‘langan (replay / ulashish).
   alreadyBoundToAnotherAccount,
@@ -113,6 +175,7 @@ class EntitlementRecord {
     required this.environment,
     this.revokedAt,
     this.revocationReason,
+    this.expiresAt,
   });
 
   final String accountId;
@@ -125,7 +188,14 @@ class EntitlementRecord {
   final DateTime? revokedAt;
   final String? revocationReason;
 
+  /// Obuna muddati (Lifetime’da `null`).
+  final DateTime? expiresAt;
+
   bool get active => revokedAt == null;
+
+  /// Vaqtga bog‘liq faollik (obuna muddati bilan).
+  bool activeAt(DateTime now) =>
+      active && (expiresAt == null || now.isBefore(expiresAt!));
 
   EntitlementRecord revoke(DateTime at, String reason) => EntitlementRecord(
     accountId: accountId,
@@ -137,6 +207,7 @@ class EntitlementRecord {
     environment: environment,
     revokedAt: at,
     revocationReason: reason,
+    expiresAt: expiresAt,
   );
 }
 

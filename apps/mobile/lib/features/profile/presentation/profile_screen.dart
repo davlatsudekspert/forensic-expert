@@ -6,6 +6,7 @@ import 'package:go_router/go_router.dart';
 import '../../../app/app_info.dart';
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
+import '../../../app/user_data.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
@@ -156,6 +157,43 @@ class ProfileScreen extends ConsumerWidget {
                       title: l.deleteAccount,
                       onTap: () {},
                     ),
+                  _Row(
+                    key: const Key('profile.deleteLocalData'),
+                    icon: Icons.delete_sweep_outlined,
+                    title: l.deleteLocalData,
+                    onTap: () async {
+                      final ok = await showDialog<bool>(
+                        context: context,
+                        builder: (ctx) => AlertDialog(
+                          title: Text(l.deleteLocalData),
+                          content: Text(l.deleteLocalDataBody),
+                          actions: [
+                            TextButton(
+                              onPressed: () => Navigator.pop(ctx, false),
+                              child: Text(
+                                MaterialLocalizations.of(ctx).cancelButtonLabel,
+                              ),
+                            ),
+                            FilledButton(
+                              key: const Key('profile.deleteLocalData.confirm'),
+                              onPressed: () => Navigator.pop(ctx, true),
+                              child: Text(l.deleteLocalDataConfirm),
+                            ),
+                          ],
+                        ),
+                      );
+                      if (ok == true) {
+                        await ref
+                            .read(userDataProvider.notifier)
+                            .deleteAllLocalData();
+                        if (context.mounted) {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(content: Text(l.deleteLocalDataDone)),
+                          );
+                        }
+                      }
+                    },
+                  ),
                   _Row(
                     icon: Icons.storage_outlined,
                     title: l.scientificDatabaseLabel,

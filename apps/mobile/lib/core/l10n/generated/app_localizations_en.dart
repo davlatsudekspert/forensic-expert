@@ -3378,4 +3378,17 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get ldQualityAccreditation => 'Quality and accreditation';
+
+  @override
+  String get deleteLocalData => 'Delete data on this device';
+
+  @override
+  String get deleteLocalDataBody =>
+      'Bookmarks, search history, recently viewed records and lesson progress will be deleted from this device. The scientific database and purchases are not affected. There is no account: nothing is stored about you on our servers.';
+
+  @override
+  String get deleteLocalDataConfirm => 'Delete';
+
+  @override
+  String get deleteLocalDataDone => 'Local data deleted';
 }

@@ -6213,6 +6213,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Quality and accreditation'**
   String get ldQualityAccreditation;
+
+  /// Profile action.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete data on this device'**
+  String get deleteLocalData;
+
+  /// Dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Bookmarks, search history, recently viewed records and lesson progress will be deleted from this device. The scientific database and purchases are not affected. There is no account: nothing is stored about you on our servers.'**
+  String get deleteLocalDataBody;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete'**
+  String get deleteLocalDataConfirm;
+
+  /// Snackbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Local data deleted'**
+  String get deleteLocalDataDone;
 }
 
 class _AppLocalizationsDelegate
