@@ -1,0 +1,15 @@
+name: fe_search_core
+description: Ko‘p tilli (EN/RU/UZ) qidiruv yadrosi — normalizatsiya, transliteratsiya, typo-tolerantlik va reyting. Sof Dart, platformaga bog‘liq emas.
+publish_to: none
+version: 0.1.0
+resolution: workspace
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  meta: ^1.19.0
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.31.0
