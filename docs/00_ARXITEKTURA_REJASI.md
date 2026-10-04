@@ -1120,3 +1120,245 @@ PHASE 1 ga o‘tishdan oldin quyidagi savollarga javobingiz kerak:
 ---
 
 *Ushbu hujjat — reja. Kod yozish egasining aniq tasdig‘idan keyin boshlanadi.*
+
+---
+
+# QO‘SHIMCHA — PHASE 0.5 qarorlari asosidagi arxitektura yangilanishlari
+
+> Egasining 2026-10-04 dagi qarorlari asosida qo‘shildi. Tekshiruv natijalari: `docs/01_EVIDENCE_AUDIT.md`.
+
+## 22. Yo‘nalish bo‘yicha reviewer tizimi
+
+**Qaror:** butun platformani bitta reviewer tasdiqlamaydi. Har bir yozuv o‘z **domeni** bo‘yicha malakali reviewer tomonidan tekshiriladi.
+
+### 22.1. Domenlar va rollar
+
+| Domen kodi | Qamrovi | Reviewer roli |
+|---|---|---|
+| `tox` | Forensic Toxicology / Sud-kimyo: moddalar, metabolitlar, konsentratsiyalar, talqin, namunalar | Toxicology Reviewer |
+| `fm` | Forensic Medicine: PMI, postmortem o‘zgarishlar, travmatologiya, kuyishlar, antropologiya, odontologiya, DVI | Forensic Medicine Reviewer |
+| `lab` | Analytical/Laboratory: analitik metodlar, laboratoriya kalkulyatorlari, validatsiya, statistika | Analytical/Lab Reviewer |
+| `legal` | Huquqiy status (yurisdiksiya bo‘yicha) | Legal Content Reviewer (yurist yoki huquqiy masalalarga vakolatli ekspert) |
+| `edu` | Ta’lim kontenti (kurs, quiz, flashcard) — ilmiy fakt baribir tegishli domen reviewer’idan o‘tadi | Education Editor |
+| `i18n:<lang>` | Tarjima sifati (uz, ru, en, …) | Translator + Translation Reviewer (har til uchun alohida) |
+
+Bir kishi bir nechta rolga ega bo‘lishi mumkin, lekin **bir yozuvning muallifi o‘sha yozuvni o‘zi review qila olmaydi** (four-eyes principle).
+
+### 22.2. Ilmiy va tarjima statuslari alohida
+
+```sql
+CREATE TABLE reviewers (
+  reviewer_id   TEXT PRIMARY KEY,
+  display_name  TEXT NOT NULL,
+  qualification TEXT,           -- lavozim, ilmiy daraja, tashkilot (ixtiyoriy ommaviy)
+  active        INTEGER NOT NULL DEFAULT 1
+);
+CREATE TABLE reviewer_domains (
+  reviewer_id TEXT REFERENCES reviewers,
+  domain      TEXT NOT NULL,    -- tox | fm | lab | legal | edu | i18n:uz | i18n:ru | i18n:en
+  can_verify  INTEGER NOT NULL DEFAULT 0,   -- VERIFIED berish huquqi (faqat tayinlangan katta reviewer)
+  granted_at  TEXT, granted_by TEXT,
+  PRIMARY KEY (reviewer_id, domain)
+);
+CREATE TABLE reviews (
+  review_id     TEXT PRIMARY KEY,
+  target_type   TEXT NOT NULL,  -- claim | translation | calc_method | source
+  target_id     TEXT NOT NULL,
+  target_version INTEGER NOT NULL,
+  domain        TEXT NOT NULL,
+  reviewer_id   TEXT NOT NULL REFERENCES reviewers,
+  decision      TEXT NOT NULL,  -- approve | request_changes | reject
+  comment       TEXT,
+  created_at    TEXT NOT NULL
+);
+```
+
+### 22.3. Statusni hisoblash qoidasi (server tarafda, deterministik)
+
+- `REVIEWED` — mos domendagi kamida 1 ta reviewer `approve` bergan (muallif emas).
+- `VERIFIED` — mos domendagi **2 ta turli** reviewer `approve` bergan, ulardan kamida bittasi `can_verify=1`, va har bir citation’ning `identifier_verified=1`.
+- Tarjima statusi (`translation_status`) ilmiy statusdan alohida: `machine_draft → translated → reviewed`. UI tarjima `reviewed` bo‘lmasa, kichik «Tarjima tekshirilmagan» belgisini ko‘rsatadi va asl (EN) matnga o‘tish tugmasini beradi.
+
+### 22.4. Hozirgi holat uchun xavfsizlik qoidasi
+
+Reviewerlar hali tayinlanmagan. Shuning uchun:
+
+1. Content pipeline validatori production pack’da `VERIFIED` statusli yozuv borligini tekshiradi va **bu yozuvga mos `reviews` yozuvlari bo‘lmasa, build’ni to‘xtatadi**. Statusni qo‘lda «VERIFIED» deb yozib qo‘yishning iloji yo‘q.
+2. Development/test pack’lardagi barcha ilmiy kontent `NEEDS_REVIEW` holatida bo‘ladi va UI’da **«MA’LUMOT TEKSHIRILMAGAN — EKSPERT TASDIG‘I KERAK»** banneri bilan ko‘rsatiladi.
+3. Production pack faqat `REVIEWED`/`VERIFIED` yozuvlarni oladi. Reviewerlar bo‘lmaguncha production pack ilmiy kontentsiz (faqat matematik kalkulyatorlar bilan) bo‘ladi.
+
+## 23. Ma’lumotlar ziddiyati (conflict) va provenance modeli
+
+**Qaror:** bir fakt turli manbalarda turlicha bo‘lsa, tizim bittasini yashirincha tanlamaydi.
+
+### 23.1. Model
+
+```sql
+-- Bir xil savolga (masalan: "X moddaning femoral qondagi qayd etilgan postmortem diapazoni")
+-- tegishli bir nechta claim bitta guruhga yig‘iladi
+CREATE TABLE claim_groups (
+  group_id     TEXT PRIMARY KEY,
+  entity_type  TEXT NOT NULL,
+  entity_id    TEXT NOT NULL,
+  field        TEXT NOT NULL,
+  context_key  TEXT NOT NULL,          -- masalan: 'matrix=femoral_blood;population=postmortem'
+  conflict_state TEXT NOT NULL,        -- consistent | minor_difference | conflict | unresolved
+  editorial_note_id TEXT,              -- reviewer izohi: farq sababi (metod, populyatsiya, yil, birlik)
+  display_policy TEXT NOT NULL         -- show_all | show_preferred_with_alternatives
+);
+ALTER TABLE claims ADD COLUMN group_id TEXT REFERENCES claim_groups;
+ALTER TABLE claims ADD COLUMN preferred INTEGER NOT NULL DEFAULT 0;  -- reviewer tanlovi, sabab majburiy
+ALTER TABLE claims ADD COLUMN preference_reason TEXT;
+```
+
+### 23.2. Qoidalar
+
+1. Har bir manbadagi qiymat **alohida claim** sifatida saqlanadi (birlashtirilmaydi, o‘rtachasi olinmaydi).
+2. Validator avtomatik ravishda bir guruhdagi qiymatlarni kanonik birlikka keltirib solishtiradi va farq chegaradan oshsa `conflict_state = conflict` qiladi.
+3. `preferred` faqat reviewer tomonidan, `preference_reason` bilan belgilanadi (masalan: «yangiroq, kattaroq tanlov, femoral namuna»).
+4. UI: asosiy ko‘rinishda afzal qiymat yoki barcha qiymatlar; `conflict` bo‘lsa — **«Manbalar o‘rtasida farq bor»** belgisi va barcha qiymatlarni manbalari bilan yonma-yon ko‘rsatuvchi «Farqni ko‘rish» paneli.
+5. AI javobida guruh `conflict` holatida bo‘lsa, model farqni aytishga majbur (tizim ko‘rsatmasi + validator).
+6. Ziddiyatli guruh reviewer navbatida ustuvor bo‘ladi.
+
+## 24. Scientific content update package xavfsizligi
+
+**Talab:** pack raqamli imzolangan, versiyalangan, rollback qilinadigan va yaxlitligi tekshiriladigan bo‘lishi kerak. Buzilgan yoki imzosiz pack hech qachon production bazani almashtirmaydi.
+
+### 24.1. Pack tuzilmasi
+
+```
+content-2026.10.1.fepack  (zip, store’ga emas, CDN’ga joylanadi)
+ ├─ manifest.json
+ │    { "pack_version": "2026.10.1", "schema_version": 3,
+ │      "min_app_version": "1.0.0", "max_app_version": null,
+ │      "base_version": "2026.10.0" | null,      // delta bo‘lsa
+ │      "created_at": "...", "critical": false,
+ │      "files": [{ "path": "content.db", "sha256": "...", "size": ... }],
+ │      "key_id": "fe-content-2026-a" }
+ ├─ manifest.sig          // Ed25519 imzo (manifest.json baytlari ustidan)
+ └─ content.db            // yoki delta.sql
+```
+
+### 24.2. Qurilmadagi tekshiruv tartibi (hammasi o‘tmasa — to‘xtatiladi)
+
+1. Manifestni yuklash → `key_id` ilovaga o‘rnatilgan ishonchli kalitlar ro‘yxatida bormi → Ed25519 imzo tekshiruvi.
+2. `pack_version` hozirgisidan **katta** bo‘lishi shart (downgrade/replay hujumiga qarshi). Rollback faqat lokal saqlangan oldingi versiyaga, foydalanuvchi yoki «kill-switch» manifest orqali.
+3. `min_app_version`/`schema_version` mosligi.
+4. Fayllarni vaqtinchalik katalogga yuklash → har birining SHA-256 xeshi va hajmi manifestga mosligi.
+5. Yangi `content.db` ni ochish → `PRAGMA integrity_check` → sxema versiyasi → smoke so‘rovlar (masalan, search indeksida yozuvlar soni > 0) → `calc_reference_cases` testlari ilovaning hisob dvigatelida o‘tishi.
+6. **Atomik almashtirish**: joriy bazani `content.prev.db` ga ko‘chirish, yangisini faol qilish (fayl nomini almashtirish), so‘ng ilova ichidagi DB ulanishini qayta ochish.
+7. Birinchi ochilishda xato bo‘lsa — avtomatik `content.prev.db` ga qaytish va xatoni (PII’siz) xabar qilish.
+8. Ilova bilan birga kelgan bazaviy pack (`assets/`) har doim saqlanadi — oxirgi chora sifatida.
+
+### 24.3. Kalitlarni boshqarish
+
+- Imzolovchi maxfiy kalit **faqat** offline/HSM yoki bulut KMS’da (masalan, imzolash CI’da alohida himoyalangan bosqichda); repozitoriyda hech qachon saqlanmaydi.
+- Ilovada 2 ta ochiq kalit: joriy va zaxira (rotation uchun). Kalit kompromat bo‘lsa — zaxira kalit bilan imzolangan «revocation» manifest + app update.
+- Har bir publish CMS audit log’iga yoziladi (kim, qachon, qaysi versiya, qaysi yozuvlar o‘zgardi).
+
+## 25. Backend abstraksiyasi (vendor lock-in yo‘q)
+
+**Qaror:** Supabase — afzal variant, lekin ilova unga bog‘lanib qolmaydi.
+
+```
+presentation  →  domain (use cases, entity’lar, repository INTERFEYSLARI)
+                     ↑
+data:  AuthRepository        ← SupabaseAuthDataSource   | (kelajak) FirebaseAuth / o‘z API
+       SyncRepository        ← SupabaseSyncDataSource   | RestSyncDataSource
+       AiRepository          ← EdgeFunctionAiDataSource | RestAiDataSource
+       ContentUpdateRepository ← HttpsCdnDataSource (backend’dan mustaqil, oddiy HTTPS + imzo)
+       ExternalSearchRepository ← ProxyDataSource
+       ContentRepository     ← LocalDriftDataSource (FAQAT lokal — backend’ga umuman bog‘liq emas)
+       CalculatorEngine      ← sof Dart paketi (FAQAT lokal)
+```
+
+Qoidalar:
+
+1. `supabase_flutter` paketi **faqat** `data/remote/supabase/` ichida import qilinadi. Bu qoida lint (custom `import_lint` yoki `dependency_validator`/arxitektura testi) bilan CI’da tekshiriladi.
+2. Backend’dagi biznes mantiq (AI, obuna tekshiruvi) Supabase-ga xos bo‘lmagan oddiy HTTP API sifatida loyihalanadi (Edge Function ichida ham, keyinchalik Cloud Run’da ham bir xil kontrakt — OpenAPI spetsifikatsiyasi).
+3. Postgres sxemasi standart SQL; Supabase-ga xos qismlar (RLS siyosatlari, auth.users) alohida migratsiya fayllarida.
+4. **Offline kafolat testi:** integratsiya testida tarmoq butunlay o‘chirilgan holda ilova ishga tushadi, qidiruv, kutubxona va barcha kalkulyatorlar ishlaydi. Bu test CI’da majburiy.
+
+## 26. Billing abstraksiyasi
+
+**Qaror:** RevenueCat — afzal variant; Apple StoreKit va Google Play Billing — source of truth.
+
+```
+domain:   EntitlementService (abstrakt)
+            - Stream<Entitlements> watch()
+            - Future<List<Offer>> offers()          // narxlar store’dan
+            - Future<PurchaseResult> purchase(OfferId)
+            - Future<void> restore()
+            - Uri manageSubscriptionsUri()
+data:     RevenueCatBillingAdapter   (V1)
+          StoreDirectBillingAdapter  (zaxira: in_app_purchase + o‘z backend validatsiyasi)
+          FakeBillingAdapter         (testlar)
+```
+
+1. Ilovaning qolgan qismi faqat `Entitlements` (masalan, `{studentPro: true, professionalPro: false, source: store, expiresAt: …}`) ni biladi. RevenueCat turlari domain’ga chiqmaydi.
+2. Mahsulot ID’lari store’dagi bilan bir xil va adapterdan mustaqil (`fe_student_pro_monthly` va h.k.). RevenueCat’dan voz kechilsa, store’dagi obunalar o‘zgarmaydi — faqat adapter almashtiriladi.
+3. Backend `subscriptions` jadvali store server notification’larini (App Store Server Notifications V2, Google RTDN) to‘g‘ridan-to‘g‘ri yoki RevenueCat webhook orqali qabul qiladi — ikkala yo‘l uchun bir xil normalizatsiya qatlami.
+4. Entitlement keshi imzolangan/himoyalangan lokal saqlanadi; offline grace period serverdan konfiguratsiya qilinadi.
+
+## 27. Logo: A / B / C professional solishtirma
+
+**Joriy yo‘nalish:** A — «Ridge Spectrum». Yakuniy logo **qulflanmagan**.
+
+### 27.1. Baholash mezonlari (1–5 ball)
+
+| Mezon | A — Ridge Spectrum | B — Evidence Bracket | C — FE Peak Monogram |
+|---|---|---|---|
+| Soha ma’nosi (dalil + fan) | 5 | 4 | 3 |
+| O‘ziga xoslik / klishedan uzoqlik | 4 | 3 | 3 |
+| 1024 px (store sahifasi) | 5 | 5 | 5 |
+| 180/120 px (iOS home screen) | 4 | 5 | 5 |
+| 48 px (Android launcher, mdpi) | 3 | 5 | 4 |
+| 29–32 px (Settings, Spotlight, bildirishnoma) | 2–3 (maxsus soddalashtirilgan versiya bilan 3) | 5 | 4 |
+| Android themed (monochrome) icon | 4 | 5 | 5 |
+| Android adaptive icon maskalari (doira, squircle, kvadrat) | 4 (markaziy kompozitsiya kerak) | 5 | 5 |
+| Trademark xavfi (tasviriy belgi sifatida) | O‘rta (barmoq izi motivlari kriminalistika brendlarida keng tarqalgan) | O‘rta (olti burchak kimyo brendlarida keng tarqalgan) | Past–o‘rta (harfli monogramma; «FE» kombinatsiyasi ko‘p) |
+| **Jami (taxminiy)** | **~35** | **~41** | **~38** |
+
+**Xulosa:** A ma’no jihatidan eng kuchli, lekin kichik o‘lchamda eng zaif. B kichik o‘lchamda eng yaxshi. Shuning uchun tavsiya — **gibrid tizim**:
+
+- **Primary logo / store marketing / splash:** A (to‘liq Ridge Spectrum).
+- **App icon:** A’ning «optik o‘lcham» versiyasi — 2 ta yoy + 3 ta cho‘qqi, chiziq qalinligi ikonka kengligining ≥ 1/14 qismi; agar 32 px testidan o‘tmasa, ikonka uchun B elementi (burchak qavslar) ichida soddalashtirilgan 2 yoyli belgi.
+- **UI ichki belgilar (verified badge va h.k.):** B’ning burchak qavslari.
+
+### 27.2. Kichik o‘lcham test protokoli (PHASE 1)
+
+1. Har bir variantni 1024, 512, 180, 120, 87, 80, 60, 58, 48, 40, 32, 29, 20 px da rasterlash.
+2. Light/dark fon, iOS dark/tinted ikonka rejimlari, Android 13+ themed icon.
+3. 5 ta foydalanuvchi (ekspert/talaba) — 32 px dagi ikonkani 10 ta boshqa ilova ikonkasi orasidan 2 soniyada topish testi.
+4. Kulrang (grayscale) va rang ko‘rligi simulyatsiyasi.
+
+### 27.3. Originallik va trademark tekshiruvi (logo qulflanishidan OLDIN majburiy)
+
+- **Nom:** «Forensic Expert» — tavsifiy (descriptive) ibora, shuning uchun so‘z belgisi sifatida ro‘yxatdan o‘tkazish qiyin va boshqalar ham ishlatishi mumkin. Store’lardagi nom to‘qnashuvlari `docs/02_COMPETITOR_ANALYSIS.md` da.
+- **Tasviriy belgi:** WIPO Global Brand Database (Nitstsa sinflari 9, 41, 42, 44) va Vena tasniflash kodlari (barmoq izi, olti burchak, grafik/diagramma) bo‘yicha o‘xshash belgilar qidiruvi; USPTO, EUIPO (TMview), Rospatent va O‘zbekiston Intellektual mulk agentligi bazalari.
+- Tekshiruvni **intellektual mulk bo‘yicha yurist** tasdiqlaydi (28-bo‘limdagi checklist).
+- Dizayn fayllari (vektor manba, eskizlar, sanalar) yaratilish isboti sifatida repozitoriyda saqlanadi.
+
+## 28. Legal-review checklist (public release’dan oldin)
+
+Development’ni to‘xtatmaydi, lekin **public release uchun majburiy shart**.
+
+| # | Band | Mas’ul | Holat |
+|---|---|---|---|
+| L-01 | Privacy Policy (EN/RU/UZ): qanday ma’lumot, qayerda, qancha muddat, uchinchi tomonlar (Supabase, RevenueCat, AI provayderi, crash reporting) | Yurist | Ochiq |
+| L-02 | O‘zbekiston «Shaxsga doir ma’lumotlar to‘g‘risida»gi qonuni: lokalizatsiya talabi (O‘zbekiston fuqarolarining shaxsiy ma’lumotlari O‘zbekistondagi serverlarda bo‘lishi), ma’lumotlar bazasini ro‘yxatdan o‘tkazish majburiyati bor-yo‘qligi | Yurist (UZ) | Ochiq — arxitekturaga ta’sir qilishi mumkin |
+| L-03 | Rossiya 152-FZ (lokalizatsiya) — RU foydalanuvchilari uchun | Yurist | Ochiq |
+| L-04 | GDPR (EI foydalanuvchilari), shu jumladan AI provayderiga ma’lumot uzatish | Yurist | Ochiq |
+| L-05 | Terms of Use: javobgarlikni cheklash, professional foydalanish, yosh chegarasi | Yurist | Ochiq |
+| L-06 | Scientific Disclaimer — matn va ko‘rsatilish joylari | Yurist + ilmiy muharrir | Qoralama bor |
+| L-07 | Obuna shartlari (auto-renew, bekor qilish, refund — store qoidalari), Apple 3.1.2 talab qilgan ma’lumotlar paywall’da | Yurist | Ochiq |
+| L-08 | Uchinchi tomon kontent litsenziyalari (`sources.license`), atributsiya sahifasi | Yurist + kontent muharriri | Ochiq |
+| L-09 | «LICENSE REQUIRED» ro‘yxatidagi manbalar bo‘yicha shartnomalar (`docs/03_SOURCE_MATRIX.md`) | Biznes + yurist | Ochiq |
+| L-10 | Trademark: nom va logo qidiruvi, ro‘yxatdan o‘tkazish strategiyasi (UZ, RU, EI, AQSh, Madrid tizimi) | IP yurist | Ochiq |
+| L-11 | Tibbiy dasturiy ta’minot (SaMD) sifatida tasniflanmasligi: intended use bayonoti (reference/education/calculation) — EI MDR, AQSh FDA, O‘zbekiston | Regulyator maslahatchisi | Ochiq |
+| L-12 | Giyohvand moddalar haqidagi kontent — mahalliy qonunchilikda «targ‘ibot» deb talqin qilinmasligi (UZ, RU) | Yurist (UZ/RU) | Ochiq — muhim |
+| L-13 | AI javoblari uchun javobgarlik, foydalanuvchi shikoyat mexanizmi | Yurist | Ochiq |
+| L-14 | Account deletion jarayoni va ma’lumotlarni saqlash muddatlari | Yurist + backend | Ochiq |
+| L-15 | Eksport nazorati (shifrlash) deklaratsiyasi | Texnik + yurist | Ochiq |
+| L-16 | Soliq: daromad oluvchi yuridik shaxs, store’lar bilan shartnoma, valyuta | Buxgalter/yurist | Ochiq |
+| L-17 | Reviewerlar bilan shartnoma (mas’uliyat, ism-sharifni ommaviy ko‘rsatishga rozilik) | Yurist | Ochiq |
