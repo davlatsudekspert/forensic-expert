@@ -1,0 +1,27 @@
+# PHASE 2 — xom o‘lchov natijalari. MOBIL QURILMA EMAS.
+# Muhit: Linux VM (4 vCPU, GPU yo‘q → software rasterizatsiya, Xvfb), Flutter 3.47.6, profile build.
+# Sana: 2026-10-04. Bu raqamlar Android/iOS qurilma natijasi sifatida talqin qilinmasin (RG-10).
+
+## A. flutter run --profile -d linux --trace-startup (build/start_up_info.json), µs
+### A1. Birinchi ishga tushirish (sozlama yo‘q → til tanlash ekrani)
+{"timeToFrameworkInitMicros":85096,"timeToFirstFrameMicros":123547,"timeToFirstFrameRasterizedMicros":203377,"timeAfterFrameworkInitMicros":38451}
+{"timeToFrameworkInitMicros":98858,"timeToFirstFrameMicros":147256,"timeToFirstFrameRasterizedMicros":243067,"timeAfterFrameworkInitMicros":48398}
+{"timeToFrameworkInitMicros":91384,"timeToFirstFrameMicros":139528,"timeToFirstFrameRasterizedMicros":214868,"timeAfterFrameworkInitMicros":48144}
+{"timeToFrameworkInitMicros":86844,"timeToFirstFrameMicros":136608,"timeToFirstFrameRasterizedMicros":214552,"timeAfterFrameworkInitMicros":49764}
+{"timeToFrameworkInitMicros":92676,"timeToFirstFrameMicros":143529,"timeToFirstFrameRasterizedMicros":220655,"timeAfterFrameworkInitMicros":50853}
+### A2. Onboarding tugagan (shared_preferences.json oldindan yozilgan → Home)
+{"timeToFrameworkInitMicros":97615,"timeToFirstFrameMicros":178158,"timeToFirstFrameRasterizedMicros":241493,"timeAfterFrameworkInitMicros":80543}
+{"timeToFrameworkInitMicros":74779,"timeToFirstFrameMicros":147639,"timeToFirstFrameRasterizedMicros":239776,"timeAfterFrameworkInitMicros":72860}
+{"timeToFrameworkInitMicros":84747,"timeToFirstFrameMicros":163953,"timeToFirstFrameRasterizedMicros":247512,"timeAfterFrameworkInitMicros":79206}
+{"timeToFrameworkInitMicros":90521,"timeToFirstFrameMicros":163410,"timeToFirstFrameRasterizedMicros":250715,"timeAfterFrameworkInitMicros":72889}
+{"timeToFrameworkInitMicros":87649,"timeToFirstFrameMicros":165224,"timeToFirstFrameRasterizedMicros":254371,"timeAfterFrameworkInitMicros":77575}
+
+## B. flutter drive --profile -d linux integration_test/phase2_perf_test.dart (3 yugurish), µs
+PHASE2_PERF {first_frame_since_main_us: 185514, settings_load_us: 44, navigation_to_first_frame_us: {nav.tools: [41290, 27479, 27898, 29177, 30860], nav.library: [86914, 30478, 34510, 31996, 20052], nav.ai: [53751, 20815, 21457, 32022, 19724], nav.profile: [52620, 22170, 28177, 31415, 29404], nav.home: [27980, 26634, 27962, 26875, 30949], /tools/tool/tool.lab.dilution: [45819, 38597, 36294, 28395, 41413], /library/entry/TEST-SUB-ETOH: [41905, 33003, 31954, 36043, 36592], /home/search: [37113, 34109, 35596, 36332, 33199]}, theme_switch_next_frame_us: [28498, 31621, 29378, 31314, 31697, 30966], language_switch_next_frame_us: [63374, 61052, 59782, 50634, 63527, 68299], local_search_latency_us: [1928, 1908, 1503, 1295, 1605, 1411, 1390, 1257]}
+PHASE2_PERF {first_frame_since_main_us: 171831, settings_load_us: 29, navigation_to_first_frame_us: {nav.tools: [40735, 32109, 30912, 32419, 19228], nav.library: [74612, 28706, 30782, 19565, 31937], nav.ai: [37191, 31463, 34031, 20010, 32833], nav.profile: [58071, 29302, 31050, 34107, 19415], nav.home: [25654, 26834, 26729, 28364, 28147], /tools/tool/tool.lab.dilution: [46429, 42204, 39770, 37428, 39505], /library/entry/TEST-SUB-ETOH: [51422, 32869, 44170, 37387, 30675], /home/search: [41759, 35836, 27464, 24094, 29346]}, theme_switch_next_frame_us: [29828, 32463, 31048, 19988, 35403, 28497], language_switch_next_frame_us: [84937, 69556, 72412, 71950, 82612, 74316], local_search_latency_us: [1438, 1416, 1218, 1028, 1230, 1042, 1158, 1023]}
+PHASE2_PERF {first_frame_since_main_us: 172862, settings_load_us: 30, navigation_to_first_frame_us: {nav.tools: [47170, 18547, 29026, 30725, 30430], nav.library: [63097, 30376, 29475, 31204, 30969], nav.ai: [25618, 21353, 24586, 20306, 38222], nav.profile: [52567, 27879, 29130, 30959, 29417], nav.home: [28627, 25720, 25501, 26144, 29826], /tools/tool/tool.lab.dilution: [48707, 38731, 42122, 39271, 28523], /library/entry/TEST-SUB-ETOH: [35308, 54834, 32376, 42600, 34221], /home/search: [32716, 34498, 33516, 36664, 37404]}, theme_switch_next_frame_us: [30326, 29022, 30201, 30314, 35754, 30898], language_switch_next_frame_us: [73678, 61037, 59532, 67944, 64804, 53296], local_search_latency_us: [6806, 2277, 1566, 1345, 1444, 1248, 1356, 1253]}
+
+## C. dart run packages/fe_database/tool/bench.dart (host VM, sintetik TEST-SYN terminlar)
+host: linux 4 CPU, Dart 3.13.5
+entities=500 terms=1500 create_schema_ms=102.3 index_ms=143.4 open_existing_median_ms=0.69 fts_search_median_ms=0.47 fts_search_p95_ms=1.80 (n=200)
+entities=5000 terms=15000 create_schema_ms=42.9 index_ms=494.5 open_existing_median_ms=0.73 fts_search_median_ms=0.71 fts_search_p95_ms=2.83 (n=200)
