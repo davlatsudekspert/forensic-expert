@@ -887,4 +887,161 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get accessLifetime => 'Umrbod';
+
+  @override
+  String get homePilotNotice =>
+      'Pilot ilmiy baza: barcha yozuvlar ekspert tekshiruvini kutmoqda. Ma’lumotlar manbalari bilan ko‘rsatiladi va yakuniy xulosa emas.';
+
+  @override
+  String get detailIdentity => 'Identifikatorlar';
+
+  @override
+  String get detailMolecularFormula => 'Molekulyar formula';
+
+  @override
+  String get detailMolecularWeight => 'Molekulyar massa (g/mol)';
+
+  @override
+  String get detailIupac => 'IUPAC nomi';
+
+  @override
+  String get detailBiomarker => 'Biomarker';
+
+  @override
+  String get detailTransformationProduct => 'Hosil bo‘ladigan mahsulot';
+
+  @override
+  String get detailMetabolismNote => 'Metabolizm';
+
+  @override
+  String get detailExcerpt => 'Manbadan iqtibos';
+
+  @override
+  String get detailExcerptWithheld =>
+      'Manba litsenziyasi qayta foydalanishga ruxsat bermagani uchun iqtibos ko‘rsatilmaydi. Manbani ochib o‘qing.';
+
+  @override
+  String get detailProvenance => 'Kelib chiqishi (provenance)';
+
+  @override
+  String detailEvidenceLevel(String level) {
+    return 'Dalil darajasi $level';
+  }
+
+  @override
+  String get detailReviewerStatus => 'Reviewer holati';
+
+  @override
+  String get detailReviewsNone =>
+      'Hali ekspert review yo‘q (2 ta talab qilinadi)';
+
+  @override
+  String detailReviewsCount(int count) {
+    return 'Ekspert review’lari: $count';
+  }
+
+  @override
+  String get detailVersion => 'Versiya';
+
+  @override
+  String detailVersionValue(int claim, String pack) {
+    return 'Claim v$claim · baza $pack';
+  }
+
+  @override
+  String get detailTranslationDraft =>
+      'Nomlar: mashina qoralamasi, tarjima tekshirilmagan';
+
+  @override
+  String get detailNoContentYet => 'Bu bo‘lim uchun manbali kontent hali yo‘q.';
+
+  @override
+  String detailSourceAccessed(String date) {
+    return 'Murojaat sanasi: $date';
+  }
+
+  @override
+  String get detailIdentifierVerified => 'Identifikator avtomatik tekshirilgan';
+
+  @override
+  String detailSourceLicence(String mode) {
+    return 'Litsenziya rejimi: $mode';
+  }
+
+  @override
+  String legalSchedule(String convention, String schedules) {
+    return '$convention: $schedules-jadval';
+  }
+
+  @override
+  String get legalListRow => 'Rasmiy ro‘yxatdagi qator';
+
+  @override
+  String legalEffective(String date) {
+    return 'Nashr $date dan amalda';
+  }
+
+  @override
+  String get legalDateYearOnly => '(manbada faqat yil ko‘rsatilgan)';
+
+  @override
+  String legalLastVerified(String date) {
+    return 'Oxirgi tekshiruv: $date';
+  }
+
+  @override
+  String get legalInternationalLayer => 'Xalqaro daraja (BMT konvensiyalari)';
+
+  @override
+  String get legalNotInListNote =>
+      'Bu ro‘yxatlarda yo‘qligi modda nazoratda emas degani emas: milliy qonunchilik farq qilishi mumkin.';
+
+  @override
+  String legalNoNational(String name) {
+    return '$name uchun milliy huquqiy kontent hali yuklanmagan.';
+  }
+
+  @override
+  String get lockedTitle => 'FORENSIC EXPERT Lifetime tarkibida';
+
+  @override
+  String get lockedBody =>
+      'Nomlar, ogohlantirishlar va manbalar ochiq qoladi. Ilmiy tafsilotlar va yurisdiksiya qatlami Lifetime Access bilan ochiladi.';
+
+  @override
+  String get freeDemoBadge => 'Bepul demo';
+
+  @override
+  String get lockedBadge => 'Lifetime';
+
+  @override
+  String searchMoreLocked(int count) {
+    return 'Lifetime bilan yana $count ta natija';
+  }
+
+  @override
+  String get learnEmptyCourses =>
+      'Kurslar o‘quv kontenti ekspert tekshiruvidan o‘tgach paydo bo‘ladi.';
+
+  @override
+  String get contentLoading => 'Ilmiy baza yuklanmoqda…';
+
+  @override
+  String get libraryNotInstalled => 'Bu yig‘mada ilmiy baza o‘rnatilmagan.';
+
+  @override
+  String get purchasePending => 'Xarid do‘kon tasdig‘ini kutmoqda.';
+
+  @override
+  String get purchaseFailed => 'Xarid yakunlanmadi.';
+
+  @override
+  String get purchaseCancelled => 'Xarid bekor qilindi.';
+
+  @override
+  String get purchaseSuccess => 'Umrbod kirish ochildi. Rahmat!';
+
+  @override
+  String get aboutTrademarkPending =>
+      'Nom va logo: tovar belgisi tekshiruvi yakunlanmagan.';
 }

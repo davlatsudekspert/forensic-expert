@@ -14,6 +14,7 @@ import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/library/library_models.dart';
 import '../../placeholder/presentation/in_development_view.dart';
+import 'content_entry_sections.dart';
 
 extension LibrarySectionL10n on LibrarySection {
   String label(AppLocalizations l) => switch (this) {
@@ -134,10 +135,24 @@ class _LibraryScreenState extends ConsumerState<LibraryScreen> {
                   ),
                   FeSectionHeader(_section.label(l)),
                   if (all.isEmpty)
-                    const InDevelopmentView(
-                      icon: Icons.local_library_outlined,
-                      embedded: true,
-                    )
+                    switch (ref.watch(contentLibraryProvider)) {
+                      AsyncLoading() => FeEmptyState(
+                        key: const Key('library.loading'),
+                        icon: Icons.hourglass_top,
+                        body: l.contentLoading,
+                      ),
+                      AsyncData(value: null)
+                          when _section == LibrarySection.substances =>
+                        FeEmptyState(
+                          key: const Key('library.notInstalled'),
+                          icon: Icons.storage_outlined,
+                          body: l.libraryNotInstalled,
+                        ),
+                      _ => const InDevelopmentView(
+                        icon: Icons.local_library_outlined,
+                        embedded: true,
+                      ),
+                    }
                   else if (entries.isEmpty)
                     FeEmptyState(
                       icon: Icons.filter_alt_off_outlined,
@@ -175,6 +190,8 @@ class _LibraryScreenState extends ConsumerState<LibraryScreen> {
                                       children: [
                                         ReviewStatusBadge(status: e.status),
                                         if (e.isTestData) const TestDataBadge(),
+                                        if (e.details != null)
+                                          AccessBadge(access: e.access),
                                       ],
                                     ),
                                   ],

@@ -27,6 +27,7 @@ dependencies:
   flutter_riverpod: ^3.4.3
   go_router: ^18.0.2
   shared_preferences: ^2.5.5
+  drift: ^2.35.1
   drift_flutter: ^0.3.1
   path_provider: ^2.1.6
 
@@ -46,6 +47,7 @@ flutter:
   assets:
     - assets/fonts/inter/OFL.txt
     - assets/fonts/jetbrains_mono/OFL.txt
+    - assets/content/pilot/
 
   # Shriftlar ilovaga o‘rnatilgan (offline; runtime’da yuklanmaydi). SIL OFL 1.1.
   fonts:

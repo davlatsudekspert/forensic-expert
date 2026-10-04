@@ -1677,6 +1677,264 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Lifetime'**
   String get accessLifetime;
+
+  /// Home notice while the content pack is the unreviewed pilot.
+  ///
+  /// In en, this message translates to:
+  /// **'Pilot scientific database: every entry is awaiting expert review. Information is shown with its sources and is not a final conclusion.'**
+  String get homePilotNotice;
+
+  /// Detail section.
+  ///
+  /// In en, this message translates to:
+  /// **'Identifiers'**
+  String get detailIdentity;
+
+  /// Identifier row.
+  ///
+  /// In en, this message translates to:
+  /// **'Molecular formula'**
+  String get detailMolecularFormula;
+
+  /// Identifier row.
+  ///
+  /// In en, this message translates to:
+  /// **'Molecular weight (g/mol)'**
+  String get detailMolecularWeight;
+
+  /// Identifier row.
+  ///
+  /// In en, this message translates to:
+  /// **'IUPAC name'**
+  String get detailIupac;
+
+  /// Detail section.
+  ///
+  /// In en, this message translates to:
+  /// **'Biomarker'**
+  String get detailBiomarker;
+
+  /// Detail section.
+  ///
+  /// In en, this message translates to:
+  /// **'Transformation product'**
+  String get detailTransformationProduct;
+
+  /// Detail section.
+  ///
+  /// In en, this message translates to:
+  /// **'Metabolism'**
+  String get detailMetabolismNote;
+
+  /// Quoted sentence from the source.
+  ///
+  /// In en, this message translates to:
+  /// **'Source excerpt'**
+  String get detailExcerpt;
+
+  /// Licence does not allow showing the quote.
+  ///
+  /// In en, this message translates to:
+  /// **'The quotation is not shown because the source licence does not permit reuse. Open the source to read it.'**
+  String get detailExcerptWithheld;
+
+  /// Provenance block heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Provenance'**
+  String get detailProvenance;
+
+  /// Evidence level chip.
+  ///
+  /// In en, this message translates to:
+  /// **'Evidence level {level}'**
+  String detailEvidenceLevel(String level);
+
+  /// Row label.
+  ///
+  /// In en, this message translates to:
+  /// **'Reviewer status'**
+  String get detailReviewerStatus;
+
+  /// No reviews yet.
+  ///
+  /// In en, this message translates to:
+  /// **'No expert reviews yet (2 required)'**
+  String get detailReviewsNone;
+
+  /// Review count.
+  ///
+  /// In en, this message translates to:
+  /// **'Expert reviews: {count}'**
+  String detailReviewsCount(int count);
+
+  /// Row label.
+  ///
+  /// In en, this message translates to:
+  /// **'Version'**
+  String get detailVersion;
+
+  /// Claim and database version.
+  ///
+  /// In en, this message translates to:
+  /// **'Claim v{claim} · database {pack}'**
+  String detailVersionValue(int claim, String pack);
+
+  /// Names are machine draft.
+  ///
+  /// In en, this message translates to:
+  /// **'Names: machine draft, translation not reviewed'**
+  String get detailTranslationDraft;
+
+  /// Section without sourced content.
+  ///
+  /// In en, this message translates to:
+  /// **'No sourced content for this section yet.'**
+  String get detailNoContentYet;
+
+  /// Source access date.
+  ///
+  /// In en, this message translates to:
+  /// **'Accessed {date}'**
+  String detailSourceAccessed(String date);
+
+  /// Identifier auto-check.
+  ///
+  /// In en, this message translates to:
+  /// **'Identifier checked automatically'**
+  String get detailIdentifierVerified;
+
+  /// Licence row.
+  ///
+  /// In en, this message translates to:
+  /// **'Licence mode: {mode}'**
+  String detailSourceLicence(String mode);
+
+  /// Control schedule line.
+  ///
+  /// In en, this message translates to:
+  /// **'{convention}: Schedule {schedules}'**
+  String legalSchedule(String convention, String schedules);
+
+  /// Row from the official list.
+  ///
+  /// In en, this message translates to:
+  /// **'Row in the official list'**
+  String get legalListRow;
+
+  /// Effective date.
+  ///
+  /// In en, this message translates to:
+  /// **'Edition in force from {date}'**
+  String legalEffective(String date);
+
+  /// Year-only precision.
+  ///
+  /// In en, this message translates to:
+  /// **'(source gives the year only)'**
+  String get legalDateYearOnly;
+
+  /// Last verified.
+  ///
+  /// In en, this message translates to:
+  /// **'Last verified {date}'**
+  String legalLastVerified(String date);
+
+  /// INT jurisdiction label.
+  ///
+  /// In en, this message translates to:
+  /// **'International (UN conventions)'**
+  String get legalInternationalLayer;
+
+  /// Absence is not proof.
+  ///
+  /// In en, this message translates to:
+  /// **'Absence from these lists does not mean a substance is uncontrolled: national law may differ.'**
+  String get legalNotInListNote;
+
+  /// No national content.
+  ///
+  /// In en, this message translates to:
+  /// **'No national legal content has been loaded for {name} yet.'**
+  String legalNoNational(String name);
+
+  /// Paywall card title.
+  ///
+  /// In en, this message translates to:
+  /// **'Included in FORENSIC EXPERT Lifetime'**
+  String get lockedTitle;
+
+  /// What stays open.
+  ///
+  /// In en, this message translates to:
+  /// **'Names, warnings and sources stay open. Scientific details and the jurisdiction layer unlock with Lifetime Access.'**
+  String get lockedBody;
+
+  /// Badge on free demo entries.
+  ///
+  /// In en, this message translates to:
+  /// **'Free demo'**
+  String get freeDemoBadge;
+
+  /// Badge on locked entries.
+  ///
+  /// In en, this message translates to:
+  /// **'Lifetime'**
+  String get lockedBadge;
+
+  /// Hidden results count.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} more results with Lifetime'**
+  String searchMoreLocked(int count);
+
+  /// No real courses yet.
+  ///
+  /// In en, this message translates to:
+  /// **'Courses will appear after expert review of the learning content.'**
+  String get learnEmptyCourses;
+
+  /// Loading DB.
+  ///
+  /// In en, this message translates to:
+  /// **'Loading scientific database…'**
+  String get contentLoading;
+
+  /// No pack.
+  ///
+  /// In en, this message translates to:
+  /// **'The scientific database is not installed in this build.'**
+  String get libraryNotInstalled;
+
+  /// Store pending.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchase is waiting for confirmation from the store.'**
+  String get purchasePending;
+
+  /// Purchase failed.
+  ///
+  /// In en, this message translates to:
+  /// **'The purchase was not completed.'**
+  String get purchaseFailed;
+
+  /// Purchase cancelled.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchase cancelled.'**
+  String get purchaseCancelled;
+
+  /// Unlocked.
+  ///
+  /// In en, this message translates to:
+  /// **'Lifetime access unlocked. Thank you!'**
+  String get purchaseSuccess;
+
+  /// Brand status.
+  ///
+  /// In en, this message translates to:
+  /// **'Name and logo: trademark clearance pending.'**
+  String get aboutTrademarkPending;
 }
 
 class _AppLocalizationsDelegate

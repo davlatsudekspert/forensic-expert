@@ -128,6 +128,13 @@ class HomeScreen extends ConsumerWidget {
                       icon: Icons.info_outline,
                       text: l.homePrototypeNotice,
                     ),
+                  ] else if (FeFlags.contentChannel != 'production') ...[
+                    const SizedBox(height: FeSpace.sm),
+                    FeBanner(
+                      key: const Key('home.pilotNotice'),
+                      icon: Icons.science_outlined,
+                      text: l.homePilotNotice,
+                    ),
                   ],
                   if (isStudent) ...[
                     const SizedBox(height: FeSpace.md),

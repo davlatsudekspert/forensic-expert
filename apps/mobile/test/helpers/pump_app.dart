@@ -8,6 +8,7 @@ import 'package:forensic_expert/app/router.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
 import 'package:forensic_expert/core/settings/settings_controller.dart';
 import 'package:forensic_expert/core/settings/settings_repository.dart';
+import 'package:forensic_expert/data/fixtures/test_fixtures.dart';
 import 'package:forensic_expert/data/local/content_store.dart';
 
 /// Onboarding tugagan foydalanuvchi sozlamalari.
@@ -33,6 +34,7 @@ Future<ProviderContainer> pumpApp(
   String? initialLocation,
   double pixelRatio = 3,
   List<Override> overrides = const [],
+  bool testFixtures = true,
 }) async {
   tester.view.physicalSize = size * pixelRatio;
   tester.view.devicePixelRatio = pixelRatio;
@@ -47,6 +49,16 @@ Future<ProviderContainer> pumpApp(
       initialSettingsProvider.overrideWithValue(settings),
       settingsRepositoryProvider.overrideWithValue(repo),
       contentStoreProvider.overrideWithValue(const FakeContentStore()),
+      // Ilova standarti — fixture’siz (faqat kontent paketi). UI testlari
+      // barqaror bo‘lishi uchun TEST fixture’lar shu yerda aniq ulanadi.
+      if (testFixtures) ...[
+        libraryRepositoryProvider.overrideWithValue(
+          const FixtureLibraryRepository(),
+        ),
+        learnRepositoryProvider.overrideWithValue(
+          const FixtureLearnRepository(),
+        ),
+      ],
       ...overrides,
     ],
   );

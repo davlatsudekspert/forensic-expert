@@ -26,6 +26,9 @@ void main() {
     'toolLodName',
     // O‘zbek tilida ham aynan «Formula» — tarjima to‘g‘ri.
     'calcFormula',
+    // PHASE 3: o‘zbekcha ham «Biomarker»; brend nomi «Lifetime».
+    'detailBiomarker',
+    'lockedBadge',
   };
 
   Set<String> placeholders(String s) =>

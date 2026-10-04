@@ -885,4 +885,162 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get accessLifetime => 'Lifetime';
+
+  @override
+  String get homePilotNotice =>
+      'Pilot scientific database: every entry is awaiting expert review. Information is shown with its sources and is not a final conclusion.';
+
+  @override
+  String get detailIdentity => 'Identifiers';
+
+  @override
+  String get detailMolecularFormula => 'Molecular formula';
+
+  @override
+  String get detailMolecularWeight => 'Molecular weight (g/mol)';
+
+  @override
+  String get detailIupac => 'IUPAC name';
+
+  @override
+  String get detailBiomarker => 'Biomarker';
+
+  @override
+  String get detailTransformationProduct => 'Transformation product';
+
+  @override
+  String get detailMetabolismNote => 'Metabolism';
+
+  @override
+  String get detailExcerpt => 'Source excerpt';
+
+  @override
+  String get detailExcerptWithheld =>
+      'The quotation is not shown because the source licence does not permit reuse. Open the source to read it.';
+
+  @override
+  String get detailProvenance => 'Provenance';
+
+  @override
+  String detailEvidenceLevel(String level) {
+    return 'Evidence level $level';
+  }
+
+  @override
+  String get detailReviewerStatus => 'Reviewer status';
+
+  @override
+  String get detailReviewsNone => 'No expert reviews yet (2 required)';
+
+  @override
+  String detailReviewsCount(int count) {
+    return 'Expert reviews: $count';
+  }
+
+  @override
+  String get detailVersion => 'Version';
+
+  @override
+  String detailVersionValue(int claim, String pack) {
+    return 'Claim v$claim · database $pack';
+  }
+
+  @override
+  String get detailTranslationDraft =>
+      'Names: machine draft, translation not reviewed';
+
+  @override
+  String get detailNoContentYet => 'No sourced content for this section yet.';
+
+  @override
+  String detailSourceAccessed(String date) {
+    return 'Accessed $date';
+  }
+
+  @override
+  String get detailIdentifierVerified => 'Identifier checked automatically';
+
+  @override
+  String detailSourceLicence(String mode) {
+    return 'Licence mode: $mode';
+  }
+
+  @override
+  String legalSchedule(String convention, String schedules) {
+    return '$convention: Schedule $schedules';
+  }
+
+  @override
+  String get legalListRow => 'Row in the official list';
+
+  @override
+  String legalEffective(String date) {
+    return 'Edition in force from $date';
+  }
+
+  @override
+  String get legalDateYearOnly => '(source gives the year only)';
+
+  @override
+  String legalLastVerified(String date) {
+    return 'Last verified $date';
+  }
+
+  @override
+  String get legalInternationalLayer => 'International (UN conventions)';
+
+  @override
+  String get legalNotInListNote =>
+      'Absence from these lists does not mean a substance is uncontrolled: national law may differ.';
+
+  @override
+  String legalNoNational(String name) {
+    return 'No national legal content has been loaded for $name yet.';
+  }
+
+  @override
+  String get lockedTitle => 'Included in FORENSIC EXPERT Lifetime';
+
+  @override
+  String get lockedBody =>
+      'Names, warnings and sources stay open. Scientific details and the jurisdiction layer unlock with Lifetime Access.';
+
+  @override
+  String get freeDemoBadge => 'Free demo';
+
+  @override
+  String get lockedBadge => 'Lifetime';
+
+  @override
+  String searchMoreLocked(int count) {
+    return '$count more results with Lifetime';
+  }
+
+  @override
+  String get learnEmptyCourses =>
+      'Courses will appear after expert review of the learning content.';
+
+  @override
+  String get contentLoading => 'Loading scientific database…';
+
+  @override
+  String get libraryNotInstalled =>
+      'The scientific database is not installed in this build.';
+
+  @override
+  String get purchasePending =>
+      'Purchase is waiting for confirmation from the store.';
+
+  @override
+  String get purchaseFailed => 'The purchase was not completed.';
+
+  @override
+  String get purchaseCancelled => 'Purchase cancelled.';
+
+  @override
+  String get purchaseSuccess => 'Lifetime access unlocked. Thank you!';
+
+  @override
+  String get aboutTrademarkPending =>
+      'Name and logo: trademark clearance pending.';
 }

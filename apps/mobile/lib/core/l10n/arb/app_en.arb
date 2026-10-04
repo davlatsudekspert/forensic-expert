@@ -1114,5 +1114,233 @@
   "accessLifetime": "Lifetime",
   "@accessLifetime": {
     "description": "Profile value: lifetime."
+  },
+  "homePilotNotice": "Pilot scientific database: every entry is awaiting expert review. Information is shown with its sources and is not a final conclusion.",
+  "@homePilotNotice": {
+    "description": "Home notice while the content pack is the unreviewed pilot."
+  },
+  "detailIdentity": "Identifiers",
+  "@detailIdentity": {
+    "description": "Detail section."
+  },
+  "detailMolecularFormula": "Molecular formula",
+  "@detailMolecularFormula": {
+    "description": "Identifier row."
+  },
+  "detailMolecularWeight": "Molecular weight (g/mol)",
+  "@detailMolecularWeight": {
+    "description": "Identifier row."
+  },
+  "detailIupac": "IUPAC name",
+  "@detailIupac": {
+    "description": "Identifier row."
+  },
+  "detailBiomarker": "Biomarker",
+  "@detailBiomarker": {
+    "description": "Detail section."
+  },
+  "detailTransformationProduct": "Transformation product",
+  "@detailTransformationProduct": {
+    "description": "Detail section."
+  },
+  "detailMetabolismNote": "Metabolism",
+  "@detailMetabolismNote": {
+    "description": "Detail section."
+  },
+  "detailExcerpt": "Source excerpt",
+  "@detailExcerpt": {
+    "description": "Quoted sentence from the source."
+  },
+  "detailExcerptWithheld": "The quotation is not shown because the source licence does not permit reuse. Open the source to read it.",
+  "@detailExcerptWithheld": {
+    "description": "Licence does not allow showing the quote."
+  },
+  "detailProvenance": "Provenance",
+  "@detailProvenance": {
+    "description": "Provenance block heading."
+  },
+  "detailEvidenceLevel": "Evidence level {level}",
+  "@detailEvidenceLevel": {
+    "description": "Evidence level chip.",
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "detailReviewerStatus": "Reviewer status",
+  "@detailReviewerStatus": {
+    "description": "Row label."
+  },
+  "detailReviewsNone": "No expert reviews yet (2 required)",
+  "@detailReviewsNone": {
+    "description": "No reviews yet."
+  },
+  "detailReviewsCount": "Expert reviews: {count}",
+  "@detailReviewsCount": {
+    "description": "Review count.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "detailVersion": "Version",
+  "@detailVersion": {
+    "description": "Row label."
+  },
+  "detailVersionValue": "Claim v{claim} · database {pack}",
+  "@detailVersionValue": {
+    "description": "Claim and database version.",
+    "placeholders": {
+      "claim": {
+        "type": "int"
+      },
+      "pack": {
+        "type": "String"
+      }
+    }
+  },
+  "detailTranslationDraft": "Names: machine draft, translation not reviewed",
+  "@detailTranslationDraft": {
+    "description": "Names are machine draft."
+  },
+  "detailNoContentYet": "No sourced content for this section yet.",
+  "@detailNoContentYet": {
+    "description": "Section without sourced content."
+  },
+  "detailSourceAccessed": "Accessed {date}",
+  "@detailSourceAccessed": {
+    "description": "Source access date.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "detailIdentifierVerified": "Identifier checked automatically",
+  "@detailIdentifierVerified": {
+    "description": "Identifier auto-check."
+  },
+  "detailSourceLicence": "Licence mode: {mode}",
+  "@detailSourceLicence": {
+    "description": "Licence row.",
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "legalSchedule": "{convention}: Schedule {schedules}",
+  "@legalSchedule": {
+    "description": "Control schedule line.",
+    "placeholders": {
+      "convention": {
+        "type": "String"
+      },
+      "schedules": {
+        "type": "String"
+      }
+    }
+  },
+  "legalListRow": "Row in the official list",
+  "@legalListRow": {
+    "description": "Row from the official list."
+  },
+  "legalEffective": "Edition in force from {date}",
+  "@legalEffective": {
+    "description": "Effective date.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "legalDateYearOnly": "(source gives the year only)",
+  "@legalDateYearOnly": {
+    "description": "Year-only precision."
+  },
+  "legalLastVerified": "Last verified {date}",
+  "@legalLastVerified": {
+    "description": "Last verified.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "legalInternationalLayer": "International (UN conventions)",
+  "@legalInternationalLayer": {
+    "description": "INT jurisdiction label."
+  },
+  "legalNotInListNote": "Absence from these lists does not mean a substance is uncontrolled: national law may differ.",
+  "@legalNotInListNote": {
+    "description": "Absence is not proof."
+  },
+  "legalNoNational": "No national legal content has been loaded for {name} yet.",
+  "@legalNoNational": {
+    "description": "No national content.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "lockedTitle": "Included in FORENSIC EXPERT Lifetime",
+  "@lockedTitle": {
+    "description": "Paywall card title."
+  },
+  "lockedBody": "Names, warnings and sources stay open. Scientific details and the jurisdiction layer unlock with Lifetime Access.",
+  "@lockedBody": {
+    "description": "What stays open."
+  },
+  "freeDemoBadge": "Free demo",
+  "@freeDemoBadge": {
+    "description": "Badge on free demo entries."
+  },
+  "lockedBadge": "Lifetime",
+  "@lockedBadge": {
+    "description": "Badge on locked entries."
+  },
+  "searchMoreLocked": "{count} more results with Lifetime",
+  "@searchMoreLocked": {
+    "description": "Hidden results count.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "learnEmptyCourses": "Courses will appear after expert review of the learning content.",
+  "@learnEmptyCourses": {
+    "description": "No real courses yet."
+  },
+  "contentLoading": "Loading scientific database…",
+  "@contentLoading": {
+    "description": "Loading DB."
+  },
+  "libraryNotInstalled": "The scientific database is not installed in this build.",
+  "@libraryNotInstalled": {
+    "description": "No pack."
+  },
+  "purchasePending": "Purchase is waiting for confirmation from the store.",
+  "@purchasePending": {
+    "description": "Store pending."
+  },
+  "purchaseFailed": "The purchase was not completed.",
+  "@purchaseFailed": {
+    "description": "Purchase failed."
+  },
+  "purchaseCancelled": "Purchase cancelled.",
+  "@purchaseCancelled": {
+    "description": "Purchase cancelled."
+  },
+  "purchaseSuccess": "Lifetime access unlocked. Thank you!",
+  "@purchaseSuccess": {
+    "description": "Unlocked."
+  },
+  "aboutTrademarkPending": "Name and logo: trademark clearance pending.",
+  "@aboutTrademarkPending": {
+    "description": "Brand status."
   }
 }

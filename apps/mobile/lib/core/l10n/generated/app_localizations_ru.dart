@@ -888,4 +888,162 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get accessLifetime => 'Пожизненный';
+
+  @override
+  String get homePilotNotice =>
+      'Пилотная научная база: все записи ожидают экспертной проверки. Сведения приводятся с источниками и не являются окончательным заключением.';
+
+  @override
+  String get detailIdentity => 'Идентификаторы';
+
+  @override
+  String get detailMolecularFormula => 'Молекулярная формула';
+
+  @override
+  String get detailMolecularWeight => 'Молекулярная масса (г/моль)';
+
+  @override
+  String get detailIupac => 'Название IUPAC';
+
+  @override
+  String get detailBiomarker => 'Биомаркер';
+
+  @override
+  String get detailTransformationProduct => 'Продукт превращения';
+
+  @override
+  String get detailMetabolismNote => 'Метаболизм';
+
+  @override
+  String get detailExcerpt => 'Цитата из источника';
+
+  @override
+  String get detailExcerptWithheld =>
+      'Цитата не показана: лицензия источника не разрешает повторное использование. Откройте источник.';
+
+  @override
+  String get detailProvenance => 'Происхождение данных';
+
+  @override
+  String detailEvidenceLevel(String level) {
+    return 'Уровень доказательности $level';
+  }
+
+  @override
+  String get detailReviewerStatus => 'Статус рецензирования';
+
+  @override
+  String get detailReviewsNone => 'Экспертных рецензий пока нет (требуется 2)';
+
+  @override
+  String detailReviewsCount(int count) {
+    return 'Экспертных рецензий: $count';
+  }
+
+  @override
+  String get detailVersion => 'Версия';
+
+  @override
+  String detailVersionValue(int claim, String pack) {
+    return 'Утверждение v$claim · база $pack';
+  }
+
+  @override
+  String get detailTranslationDraft =>
+      'Названия: машинный черновик, перевод не проверен';
+
+  @override
+  String get detailNoContentYet =>
+      'Для этого раздела пока нет контента с источниками.';
+
+  @override
+  String detailSourceAccessed(String date) {
+    return 'Дата обращения: $date';
+  }
+
+  @override
+  String get detailIdentifierVerified => 'Идентификатор проверен автоматически';
+
+  @override
+  String detailSourceLicence(String mode) {
+    return 'Режим лицензии: $mode';
+  }
+
+  @override
+  String legalSchedule(String convention, String schedules) {
+    return '$convention: список $schedules';
+  }
+
+  @override
+  String get legalListRow => 'Строка официального списка';
+
+  @override
+  String legalEffective(String date) {
+    return 'Издание действует с $date';
+  }
+
+  @override
+  String get legalDateYearOnly => '(в источнике указан только год)';
+
+  @override
+  String legalLastVerified(String date) {
+    return 'Последняя проверка: $date';
+  }
+
+  @override
+  String get legalInternationalLayer => 'Международный уровень (конвенции ООН)';
+
+  @override
+  String get legalNotInListNote =>
+      'Отсутствие в этих списках не означает, что вещество не контролируется: национальное законодательство может отличаться.';
+
+  @override
+  String legalNoNational(String name) {
+    return 'Национальный правовой контент для $name пока не загружен.';
+  }
+
+  @override
+  String get lockedTitle => 'Входит в FORENSIC EXPERT Lifetime';
+
+  @override
+  String get lockedBody =>
+      'Названия, предупреждения и источники остаются открытыми. Научные данные и юрисдикционный слой открываются с Lifetime Access.';
+
+  @override
+  String get freeDemoBadge => 'Бесплатно (демо)';
+
+  @override
+  String get lockedBadge => 'Lifetime';
+
+  @override
+  String searchMoreLocked(int count) {
+    return 'Ещё $count результатов в Lifetime';
+  }
+
+  @override
+  String get learnEmptyCourses =>
+      'Курсы появятся после экспертной проверки учебного контента.';
+
+  @override
+  String get contentLoading => 'Загрузка научной базы…';
+
+  @override
+  String get libraryNotInstalled =>
+      'В этой сборке научная база не установлена.';
+
+  @override
+  String get purchasePending => 'Покупка ожидает подтверждения магазина.';
+
+  @override
+  String get purchaseFailed => 'Покупка не завершена.';
+
+  @override
+  String get purchaseCancelled => 'Покупка отменена.';
+
+  @override
+  String get purchaseSuccess => 'Пожизненный доступ открыт. Спасибо!';
+
+  @override
+  String get aboutTrademarkPending =>
+      'Название и логотип: проверка товарного знака не завершена.';
 }

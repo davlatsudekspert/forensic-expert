@@ -1,3 +1,4 @@
+import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -15,6 +16,7 @@ import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/library/library_models.dart';
 import '../../common/favorite_button.dart';
+import 'content_entry_sections.dart';
 import 'library_screen.dart';
 
 /// Kutubxona yozuvi kartochkasi.
@@ -73,25 +75,30 @@ class EntryDetailScreen extends ConsumerWidget {
                       Icon(entry.section.icon, size: 18, color: c.accent),
                       Text(entry.section.label(l), style: t.labelLarge),
                       if (entry.isTestData) const TestDataBadge(),
+                      if (entry.details != null)
+                        AccessBadge(access: entry.access),
                     ],
                   ),
                   const SizedBox(height: FeSpace.sm),
-                  const UnverifiedBanner(),
-                  FeSectionHeader(l.detailEvidenceStatus),
-                  _KeyValue(
-                    label: l.detailEvidenceStatus,
-                    value: ReviewStatusBadge(status: entry.status),
-                  ),
-                  _KeyValue(
-                    label: l.detailLastReviewed,
-                    value: Text(
-                      entry.lastReviewed == null
-                          ? l.detailNotReviewed
-                          : MaterialLocalizations.of(context)
-                                .formatMediumDate(entry.lastReviewed!),
-                      style: t.bodyMedium,
+                  if (entry.status != ScientificStatus.verified)
+                    const UnverifiedBanner(),
+                  if (entry.details == null) ...[
+                    FeSectionHeader(l.detailEvidenceStatus),
+                    _KeyValue(
+                      label: l.detailEvidenceStatus,
+                      value: ReviewStatusBadge(status: entry.status),
                     ),
-                  ),
+                    _KeyValue(
+                      label: l.detailLastReviewed,
+                      value: Text(
+                        entry.lastReviewed == null
+                            ? l.detailNotReviewed
+                            : MaterialLocalizations.of(context)
+                                  .formatMediumDate(entry.lastReviewed!),
+                        style: t.bodyMedium,
+                      ),
+                    ),
+                  ],
                   FeSectionHeader(l.detailNames),
                   for (final code in const ['en', 'ru', 'uz'])
                     if (entry.name.values[code] != null)
@@ -108,38 +115,42 @@ class EntryDetailScreen extends ConsumerWidget {
                       label: '≈',
                       value: Text(s, style: t.bodyMedium),
                     ),
-                  if (isSubstance) ...[
-                    FeSectionHeader(l.detailLayerScientific),
-                    FeBanner(
-                      key: const Key('entry.layer.scientific'),
-                      icon: Icons.public,
-                      text: l.detailLayerScientificNote,
-                    ),
-                  ],
-                  for (final (icon, title) in sections) ...[
-                    FeSectionHeader(title),
-                    if (title == l.detailConcentrations) ...[
+                  if (entry.details != null)
+                    ContentEntryBody(entry: entry)
+                  else ...[
+                    if (isSubstance) ...[
+                      FeSectionHeader(l.detailLayerScientific),
                       FeBanner(
-                        icon: Icons.gavel_outlined,
-                        text: l.detailConcentrationsNote,
-                        tone: FeBannerTone.warning,
+                        key: const Key('entry.layer.scientific'),
+                        icon: Icons.public,
+                        text: l.detailLayerScientificNote,
                       ),
-                      const SizedBox(height: FeSpace.xs),
                     ],
-                    _Placeholder(icon: icon),
-                  ],
-                  if (isSubstance) _JurisdictionLayer(subjectId: entry.id),
-                  FeSectionHeader(l.detailReferences),
-                  OutlinedButton.icon(
-                    key: const Key('entry.sources'),
-                    icon: const Icon(Icons.format_quote_outlined),
-                    label: Text(l.sourcesButton),
-                    onPressed: () => showModalBottomSheet<void>(
-                      context: context,
-                      showDragHandle: true,
-                      builder: (_) => _SourcesSheet(entry: entry),
+                    for (final (icon, title) in sections) ...[
+                      FeSectionHeader(title),
+                      if (title == l.detailConcentrations) ...[
+                        FeBanner(
+                          icon: Icons.gavel_outlined,
+                          text: l.detailConcentrationsNote,
+                          tone: FeBannerTone.warning,
+                        ),
+                        const SizedBox(height: FeSpace.xs),
+                      ],
+                      _Placeholder(icon: icon),
+                    ],
+                    if (isSubstance) _JurisdictionLayer(subjectId: entry.id),
+                    FeSectionHeader(l.detailReferences),
+                    OutlinedButton.icon(
+                      key: const Key('entry.sources'),
+                      icon: const Icon(Icons.format_quote_outlined),
+                      label: Text(l.sourcesButton),
+                      onPressed: () => showModalBottomSheet<void>(
+                        context: context,
+                        showDragHandle: true,
+                        builder: (_) => _SourcesSheet(entry: entry),
+                      ),
                     ),
-                  ),
+                  ],
                   const SizedBox(height: FeSpace.xl),
                 ],
               ),

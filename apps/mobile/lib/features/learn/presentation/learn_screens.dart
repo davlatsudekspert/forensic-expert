@@ -46,7 +46,11 @@ class LearnScreen extends ConsumerWidget {
                   ),
                   FeSectionHeader(l.learnCourses),
                   if (courses.isEmpty)
-                    const InDevelopmentView(embedded: true)
+                    FeEmptyState(
+                      key: const Key('learn.noCourses'),
+                      icon: Icons.school_outlined,
+                      body: l.learnEmptyCourses,
+                    )
                   else
                     for (final course in courses)
                       Padding(

@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../core/flags.dart';
 import '../core/telemetry/telemetry.dart';
+import '../data/content/content_library_repository.dart';
 import '../data/fixtures/test_fixtures.dart';
 import '../data/local/content_store.dart';
 import '../data/offline/offline_ai.dart';
@@ -63,11 +64,20 @@ final identifierPolicyProvider = Provider<IdentifierPolicy>(
   (ref) => IdentifierPolicy.conservativeDefault(),
 );
 
-/// Kutubxona manbasi. PHASE 2: TEST fixture’lar (aniq belgilangan).
+/// Imzolangan kontent paketidan yuklangan kutubxona (lazy, birinchi
+/// so‘rovda; startup’ni kutdirmaydi).
+final contentLibraryProvider = FutureProvider<LibraryRepository?>((ref) async {
+  final db = await ref.watch(contentStoreProvider).openActive();
+  return db == null ? null : ContentLibraryRepository.load(db);
+});
+
+/// Kutubxona manbasi: kontent paketi; yuklanayotganda yoki paket bo‘lmasa
+/// — bo‘sh. TEST fixture’lar faqat `FE_TEST_FIXTURES=true` da.
 final libraryRepositoryProvider = Provider<LibraryRepository>(
   (ref) => FeFlags.showTestFixtures
       ? const FixtureLibraryRepository()
-      : const EmptyLibraryRepository(),
+      : ref.watch(contentLibraryProvider).value ??
+            const EmptyLibraryRepository(),
 );
 
 final learnRepositoryProvider = Provider<LearnRepository>(
@@ -90,4 +100,16 @@ final jurisdictionResolverProvider = Provider<JurisdictionResolver>(
     instruments: const [],
     rules: const [],
   ),
+);
+
+/// Joriy kirish huquqi (store o‘zgarishlarini kuzatadi).
+final entitlementsProvider = StreamProvider<Entitlements>(
+  (ref) => ref.watch(entitlementServiceProvider).watch(),
+);
+
+/// UI uchun sinxron qiymat: oqim hali kelmagan bo‘lsa — servisning joriy holati.
+final accessProvider = Provider<Entitlements>(
+  (ref) =>
+      ref.watch(entitlementsProvider).value ??
+      ref.watch(entitlementServiceProvider).current,
 );
