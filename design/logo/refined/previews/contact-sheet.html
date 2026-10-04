@@ -1,0 +1,153 @@
+<!doctype html><meta charset="utf-8"><title>Refined peak variants</title>
+<style>
+ body{font:14px system-ui, sans-serif;margin:24px;background:#F4F6F9;color:#0B1220;width:1500px}
+ h1{font-size:18px} h2{font-size:15px;margin:4px 0 10px}
+ .row{display:flex;gap:22px;align-items:flex-end;flex-wrap:wrap;margin-bottom:14px}
+ .col{display:flex;flex-direction:column;gap:6px;align-items:center}
+ .col span{font-size:11px;color:#4A5568;max-width:220px;text-align:center}
+ .dark{background:#0A101C;padding:8px;border-radius:8px} .dark span{color:#A3AEC0}
+ .mask{position:relative;overflow:hidden}
+ .masks{border-top:1px dashed #D9DFE7;padding-top:12px}
+ section{background:#fff;border:1px solid #D9DFE7;border-radius:12px;padding:16px;margin-bottom:16px}
+</style>
+<h1>FORENSIC EXPERT — A3 asosidagi takomillashtirilgan variantlar R1 / R2 / R3 (PROTOTIP · qulflanmagan)</h1>
+  <section>
+    <h2>A3 Nested Peaks (asos, solishtirish uchun)</h2>
+    <div class="row">
+      <div class="col"><span>1024 → 220</span><img src="A3-nested-peaks-icon-1024.png" width="220" height="220" style="border-radius:49px"></div>
+      <div class="col"><span>180 px (1:1)</span><img src="A3-nested-peaks-icon-180.png" width="180" height="180" style="border-radius:40px"></div>
+      <div class="col"><span>64 px (1:1)</span><img src="A3-nested-peaks-icon-64.png" width="64" height="64" style="border-radius:14px"></div>
+      <div class="col"><span>32 px (1:1)</span><img src="A3-nested-peaks-icon-32.png" width="32" height="32" style="border-radius:7px"></div>
+      <div class="col"><span>32 px ×8</span><img src="A3-nested-peaks-icon-32.png" width="256" height="256" style="image-rendering:pixelated;border-radius:57px"></div>
+      <div class="col"><span>silhouette 32 ×8</span><img src="A3-nested-peaks-silhouette-32.png" width="256" height="256" style="image-rendering:pixelated;background:#fff;outline:1px solid #D9DFE7"></div>
+    </div>
+    <div class="row">
+      <div class="col"><span>light</span><img src="../../prototypes/A3-nested-peaks-light.svg" width="110"></div>
+      <div class="col dark"><span>dark</span><img src="../../prototypes/A3-nested-peaks-dark.svg" width="110"></div>
+      <div class="col"><span>mono</span><img src="../../prototypes/A3-nested-peaks-mono.svg" width="110"></div>
+      <div class="col"><span>silhouette 64</span><img src="A3-nested-peaks-silhouette-64.png" width="64" height="64" style=""></div>
+      <div class="col"><span>silhouette 32</span><img src="A3-nested-peaks-silhouette-32.png" width="32" height="32" style=""></div>
+      <div class="col"><span>mono-small 16 px</span><img src="../../prototypes/A3-nested-peaks-mono-small.svg" width="16"></div>
+    </div>
+    <div class="row masks" id="masks-A3-nested-peaks">
+    <div class="col"><span>Android 108dp qatlam · qizil = 66dp safe · sariq = 72dp ko‘rinadigan</span><div style="position:relative;width:216px;height:216px">
+    <img src="A3-nested-peaks-icon-1024.png" width="216" height="216" style="display:block">
+    <svg width="216" height="216" style="position:absolute;left:0;top:0">
+      <rect x="36" y="36" width="144" height="144" fill="none" stroke="#F5A524" stroke-width="1" stroke-dasharray="4 3"/>
+      <circle cx="108" cy="108" r="66" fill="none" stroke="#FF4D6D" stroke-width="1.5"/>
+    </svg></div></div>
+    <div class="col"><span>Android: circle</span><div class="mask" style="width:150px;height:150px;clip-path:circle(50%)">
+  <img src="A3-nested-peaks-icon-1024.png" style="position:absolute;width:225px;height:225px;left:-37.5px;top:-37.5px"></div></div>
+    <div class="col"><span>Android: squircle</span><div class="mask" style="width:150px;height:150px;clip-path:path('M 150.00 75.00 L 149.92 94.18 L 149.68 102.10 L 149.28 108.13 L 148.71 113.16 L 147.98 117.52 L 147.09 121.40 L 146.03 124.88 L 144.80 128.03 L 143.39 130.90 L 141.80 133.52 L 140.03 135.90 L 138.07 138.07 L 135.90 140.03 L 133.52 141.80 L 130.90 143.39 L 128.03 144.80 L 124.88 146.03 L 121.40 147.09 L 117.52 147.98 L 113.16 148.71 L 108.13 149.28 L 102.10 149.68 L 94.18 149.92 L 75.00 150.00 L 55.82 149.92 L 47.90 149.68 L 41.87 149.28 L 36.84 148.71 L 32.48 147.98 L 28.60 147.09 L 25.12 146.03 L 21.97 144.80 L 19.10 143.39 L 16.48 141.80 L 14.10 140.03 L 11.93 138.07 L 9.97 135.90 L 8.20 133.52 L 6.61 130.90 L 5.20 128.03 L 3.97 124.88 L 2.91 121.40 L 2.02 117.52 L 1.29 113.16 L 0.72 108.13 L 0.32 102.10 L 0.08 94.18 L 0.00 75.00 L 0.08 55.82 L 0.32 47.90 L 0.72 41.87 L 1.29 36.84 L 2.02 32.48 L 2.91 28.60 L 3.97 25.12 L 5.20 21.97 L 6.61 19.10 L 8.20 16.48 L 9.97 14.10 L 11.93 11.93 L 14.10 9.97 L 16.48 8.20 L 19.10 6.61 L 21.97 5.20 L 25.12 3.97 L 28.60 2.91 L 32.48 2.02 L 36.84 1.29 L 41.87 0.72 L 47.90 0.32 L 55.82 0.08 L 75.00 0.00 L 94.18 0.08 L 102.10 0.32 L 108.13 0.72 L 113.16 1.29 L 117.52 2.02 L 121.40 2.91 L 124.88 3.97 L 128.03 5.20 L 130.90 6.61 L 133.52 8.20 L 135.90 9.97 L 138.07 11.93 L 140.03 14.10 L 141.80 16.48 L 143.39 19.10 L 144.80 21.97 L 146.03 25.12 L 147.09 28.60 L 147.98 32.48 L 148.71 36.84 L 149.28 41.87 L 149.68 47.90 L 149.92 55.82 Z')">
+  <img src="A3-nested-peaks-icon-1024.png" style="position:absolute;width:225px;height:225px;left:-37.5px;top:-37.5px"></div></div>
+    <div class="col"><span>Android: rounded square</span><div class="mask" style="width:150px;height:150px;border-radius:24.0px">
+  <img src="A3-nested-peaks-icon-1024.png" style="position:absolute;width:225px;height:225px;left:-37.5px;top:-37.5px"></div></div>
+    <div class="col"><span>iOS (r = 22.37%)</span><img src="A3-nested-peaks-icon-1024.png" width="150" height="150" style="border-radius:33.55px"></div>
+    <div class="col"><span>iOS 32 px ×6</span><img src="A3-nested-peaks-icon-32.png" width="192" height="192" style="image-rendering:pixelated;border-radius:43.0px"></div>
+  </div>
+  </section>
+  <section>
+    <h2>R1 Tailing Peak</h2>
+    <div class="row">
+      <div class="col"><span>1024 → 220</span><img src="R1-tailing-peak-icon-1024.png" width="220" height="220" style="border-radius:49px"></div>
+      <div class="col"><span>180 px (1:1)</span><img src="R1-tailing-peak-icon-180.png" width="180" height="180" style="border-radius:40px"></div>
+      <div class="col"><span>64 px (1:1)</span><img src="R1-tailing-peak-icon-64.png" width="64" height="64" style="border-radius:14px"></div>
+      <div class="col"><span>32 px (1:1)</span><img src="R1-tailing-peak-icon-32.png" width="32" height="32" style="border-radius:7px"></div>
+      <div class="col"><span>32 px ×8</span><img src="R1-tailing-peak-icon-32.png" width="256" height="256" style="image-rendering:pixelated;border-radius:57px"></div>
+      <div class="col"><span>silhouette 32 ×8</span><img src="R1-tailing-peak-silhouette-32.png" width="256" height="256" style="image-rendering:pixelated;background:#fff;outline:1px solid #D9DFE7"></div>
+    </div>
+    <div class="row">
+      <div class="col"><span>light</span><img src="../svg/R1-tailing-peak-light.svg" width="110"></div>
+      <div class="col dark"><span>dark</span><img src="../svg/R1-tailing-peak-dark.svg" width="110"></div>
+      <div class="col"><span>mono</span><img src="../svg/R1-tailing-peak-mono.svg" width="110"></div>
+      <div class="col"><span>silhouette 64</span><img src="R1-tailing-peak-silhouette-64.png" width="64" height="64" style=""></div>
+      <div class="col"><span>silhouette 32</span><img src="R1-tailing-peak-silhouette-32.png" width="32" height="32" style=""></div>
+      <div class="col"><span>mono-small 16 px</span><img src="../svg/R1-tailing-peak-mono-small.svg" width="16"></div>
+    </div>
+    <div class="row masks" id="masks-R1-tailing-peak">
+    <div class="col"><span>Android 108dp qatlam · qizil = 66dp safe · sariq = 72dp ko‘rinadigan</span><div style="position:relative;width:216px;height:216px">
+    <img src="R1-tailing-peak-icon-1024.png" width="216" height="216" style="display:block">
+    <svg width="216" height="216" style="position:absolute;left:0;top:0">
+      <rect x="36" y="36" width="144" height="144" fill="none" stroke="#F5A524" stroke-width="1" stroke-dasharray="4 3"/>
+      <circle cx="108" cy="108" r="66" fill="none" stroke="#FF4D6D" stroke-width="1.5"/>
+    </svg></div></div>
+    <div class="col"><span>Android: circle</span><div class="mask" style="width:150px;height:150px;clip-path:circle(50%)">
+  <img src="R1-tailing-peak-icon-1024.png" style="position:absolute;width:225px;height:225px;left:-37.5px;top:-37.5px"></div></div>
+    <div class="col"><span>Android: squircle</span><div class="mask" style="width:150px;height:150px;clip-path:path('M 150.00 75.00 L 149.92 94.18 L 149.68 102.10 L 149.28 108.13 L 148.71 113.16 L 147.98 117.52 L 147.09 121.40 L 146.03 124.88 L 144.80 128.03 L 143.39 130.90 L 141.80 133.52 L 140.03 135.90 L 138.07 138.07 L 135.90 140.03 L 133.52 141.80 L 130.90 143.39 L 128.03 144.80 L 124.88 146.03 L 121.40 147.09 L 117.52 147.98 L 113.16 148.71 L 108.13 149.28 L 102.10 149.68 L 94.18 149.92 L 75.00 150.00 L 55.82 149.92 L 47.90 149.68 L 41.87 149.28 L 36.84 148.71 L 32.48 147.98 L 28.60 147.09 L 25.12 146.03 L 21.97 144.80 L 19.10 143.39 L 16.48 141.80 L 14.10 140.03 L 11.93 138.07 L 9.97 135.90 L 8.20 133.52 L 6.61 130.90 L 5.20 128.03 L 3.97 124.88 L 2.91 121.40 L 2.02 117.52 L 1.29 113.16 L 0.72 108.13 L 0.32 102.10 L 0.08 94.18 L 0.00 75.00 L 0.08 55.82 L 0.32 47.90 L 0.72 41.87 L 1.29 36.84 L 2.02 32.48 L 2.91 28.60 L 3.97 25.12 L 5.20 21.97 L 6.61 19.10 L 8.20 16.48 L 9.97 14.10 L 11.93 11.93 L 14.10 9.97 L 16.48 8.20 L 19.10 6.61 L 21.97 5.20 L 25.12 3.97 L 28.60 2.91 L 32.48 2.02 L 36.84 1.29 L 41.87 0.72 L 47.90 0.32 L 55.82 0.08 L 75.00 0.00 L 94.18 0.08 L 102.10 0.32 L 108.13 0.72 L 113.16 1.29 L 117.52 2.02 L 121.40 2.91 L 124.88 3.97 L 128.03 5.20 L 130.90 6.61 L 133.52 8.20 L 135.90 9.97 L 138.07 11.93 L 140.03 14.10 L 141.80 16.48 L 143.39 19.10 L 144.80 21.97 L 146.03 25.12 L 147.09 28.60 L 147.98 32.48 L 148.71 36.84 L 149.28 41.87 L 149.68 47.90 L 149.92 55.82 Z')">
+  <img src="R1-tailing-peak-icon-1024.png" style="position:absolute;width:225px;height:225px;left:-37.5px;top:-37.5px"></div></div>
+    <div class="col"><span>Android: rounded square</span><div class="mask" style="width:150px;height:150px;border-radius:24.0px">
+  <img src="R1-tailing-peak-icon-1024.png" style="position:absolute;width:225px;height:225px;left:-37.5px;top:-37.5px"></div></div>
+    <div class="col"><span>iOS (r = 22.37%)</span><img src="R1-tailing-peak-icon-1024.png" width="150" height="150" style="border-radius:33.55px"></div>
+    <div class="col"><span>iOS 32 px ×6</span><img src="R1-tailing-peak-icon-32.png" width="192" height="192" style="image-rendering:pixelated;border-radius:43.0px"></div>
+  </div>
+  </section>
+  <section>
+    <h2>R2 Integrated Peak</h2>
+    <div class="row">
+      <div class="col"><span>1024 → 220</span><img src="R2-integrated-peak-icon-1024.png" width="220" height="220" style="border-radius:49px"></div>
+      <div class="col"><span>180 px (1:1)</span><img src="R2-integrated-peak-icon-180.png" width="180" height="180" style="border-radius:40px"></div>
+      <div class="col"><span>64 px (1:1)</span><img src="R2-integrated-peak-icon-64.png" width="64" height="64" style="border-radius:14px"></div>
+      <div class="col"><span>32 px (1:1)</span><img src="R2-integrated-peak-icon-32.png" width="32" height="32" style="border-radius:7px"></div>
+      <div class="col"><span>32 px ×8</span><img src="R2-integrated-peak-icon-32.png" width="256" height="256" style="image-rendering:pixelated;border-radius:57px"></div>
+      <div class="col"><span>silhouette 32 ×8</span><img src="R2-integrated-peak-silhouette-32.png" width="256" height="256" style="image-rendering:pixelated;background:#fff;outline:1px solid #D9DFE7"></div>
+    </div>
+    <div class="row">
+      <div class="col"><span>light</span><img src="../svg/R2-integrated-peak-light.svg" width="110"></div>
+      <div class="col dark"><span>dark</span><img src="../svg/R2-integrated-peak-dark.svg" width="110"></div>
+      <div class="col"><span>mono</span><img src="../svg/R2-integrated-peak-mono.svg" width="110"></div>
+      <div class="col"><span>silhouette 64</span><img src="R2-integrated-peak-silhouette-64.png" width="64" height="64" style=""></div>
+      <div class="col"><span>silhouette 32</span><img src="R2-integrated-peak-silhouette-32.png" width="32" height="32" style=""></div>
+      <div class="col"><span>mono-small 16 px</span><img src="../svg/R2-integrated-peak-mono-small.svg" width="16"></div>
+    </div>
+    <div class="row masks" id="masks-R2-integrated-peak">
+    <div class="col"><span>Android 108dp qatlam · qizil = 66dp safe · sariq = 72dp ko‘rinadigan</span><div style="position:relative;width:216px;height:216px">
+    <img src="R2-integrated-peak-icon-1024.png" width="216" height="216" style="display:block">
+    <svg width="216" height="216" style="position:absolute;left:0;top:0">
+      <rect x="36" y="36" width="144" height="144" fill="none" stroke="#F5A524" stroke-width="1" stroke-dasharray="4 3"/>
+      <circle cx="108" cy="108" r="66" fill="none" stroke="#FF4D6D" stroke-width="1.5"/>
+    </svg></div></div>
+    <div class="col"><span>Android: circle</span><div class="mask" style="width:150px;height:150px;clip-path:circle(50%)">
+  <img src="R2-integrated-peak-icon-1024.png" style="position:absolute;width:225px;height:225px;left:-37.5px;top:-37.5px"></div></div>
+    <div class="col"><span>Android: squircle</span><div class="mask" style="width:150px;height:150px;clip-path:path('M 150.00 75.00 L 149.92 94.18 L 149.68 102.10 L 149.28 108.13 L 148.71 113.16 L 147.98 117.52 L 147.09 121.40 L 146.03 124.88 L 144.80 128.03 L 143.39 130.90 L 141.80 133.52 L 140.03 135.90 L 138.07 138.07 L 135.90 140.03 L 133.52 141.80 L 130.90 143.39 L 128.03 144.80 L 124.88 146.03 L 121.40 147.09 L 117.52 147.98 L 113.16 148.71 L 108.13 149.28 L 102.10 149.68 L 94.18 149.92 L 75.00 150.00 L 55.82 149.92 L 47.90 149.68 L 41.87 149.28 L 36.84 148.71 L 32.48 147.98 L 28.60 147.09 L 25.12 146.03 L 21.97 144.80 L 19.10 143.39 L 16.48 141.80 L 14.10 140.03 L 11.93 138.07 L 9.97 135.90 L 8.20 133.52 L 6.61 130.90 L 5.20 128.03 L 3.97 124.88 L 2.91 121.40 L 2.02 117.52 L 1.29 113.16 L 0.72 108.13 L 0.32 102.10 L 0.08 94.18 L 0.00 75.00 L 0.08 55.82 L 0.32 47.90 L 0.72 41.87 L 1.29 36.84 L 2.02 32.48 L 2.91 28.60 L 3.97 25.12 L 5.20 21.97 L 6.61 19.10 L 8.20 16.48 L 9.97 14.10 L 11.93 11.93 L 14.10 9.97 L 16.48 8.20 L 19.10 6.61 L 21.97 5.20 L 25.12 3.97 L 28.60 2.91 L 32.48 2.02 L 36.84 1.29 L 41.87 0.72 L 47.90 0.32 L 55.82 0.08 L 75.00 0.00 L 94.18 0.08 L 102.10 0.32 L 108.13 0.72 L 113.16 1.29 L 117.52 2.02 L 121.40 2.91 L 124.88 3.97 L 128.03 5.20 L 130.90 6.61 L 133.52 8.20 L 135.90 9.97 L 138.07 11.93 L 140.03 14.10 L 141.80 16.48 L 143.39 19.10 L 144.80 21.97 L 146.03 25.12 L 147.09 28.60 L 147.98 32.48 L 148.71 36.84 L 149.28 41.87 L 149.68 47.90 L 149.92 55.82 Z')">
+  <img src="R2-integrated-peak-icon-1024.png" style="position:absolute;width:225px;height:225px;left:-37.5px;top:-37.5px"></div></div>
+    <div class="col"><span>Android: rounded square</span><div class="mask" style="width:150px;height:150px;border-radius:24.0px">
+  <img src="R2-integrated-peak-icon-1024.png" style="position:absolute;width:225px;height:225px;left:-37.5px;top:-37.5px"></div></div>
+    <div class="col"><span>iOS (r = 22.37%)</span><img src="R2-integrated-peak-icon-1024.png" width="150" height="150" style="border-radius:33.55px"></div>
+    <div class="col"><span>iOS 32 px ×6</span><img src="R2-integrated-peak-icon-32.png" width="192" height="192" style="image-rendering:pixelated;border-radius:43.0px"></div>
+  </div>
+  </section>
+  <section>
+    <h2>R3 Resolved Doublet</h2>
+    <div class="row">
+      <div class="col"><span>1024 → 220</span><img src="R3-resolved-doublet-icon-1024.png" width="220" height="220" style="border-radius:49px"></div>
+      <div class="col"><span>180 px (1:1)</span><img src="R3-resolved-doublet-icon-180.png" width="180" height="180" style="border-radius:40px"></div>
+      <div class="col"><span>64 px (1:1)</span><img src="R3-resolved-doublet-icon-64.png" width="64" height="64" style="border-radius:14px"></div>
+      <div class="col"><span>32 px (1:1)</span><img src="R3-resolved-doublet-icon-32.png" width="32" height="32" style="border-radius:7px"></div>
+      <div class="col"><span>32 px ×8</span><img src="R3-resolved-doublet-icon-32.png" width="256" height="256" style="image-rendering:pixelated;border-radius:57px"></div>
+      <div class="col"><span>silhouette 32 ×8</span><img src="R3-resolved-doublet-silhouette-32.png" width="256" height="256" style="image-rendering:pixelated;background:#fff;outline:1px solid #D9DFE7"></div>
+    </div>
+    <div class="row">
+      <div class="col"><span>light</span><img src="../svg/R3-resolved-doublet-light.svg" width="110"></div>
+      <div class="col dark"><span>dark</span><img src="../svg/R3-resolved-doublet-dark.svg" width="110"></div>
+      <div class="col"><span>mono</span><img src="../svg/R3-resolved-doublet-mono.svg" width="110"></div>
+      <div class="col"><span>silhouette 64</span><img src="R3-resolved-doublet-silhouette-64.png" width="64" height="64" style=""></div>
+      <div class="col"><span>silhouette 32</span><img src="R3-resolved-doublet-silhouette-32.png" width="32" height="32" style=""></div>
+      <div class="col"><span>mono-small 16 px</span><img src="../svg/R3-resolved-doublet-mono-small.svg" width="16"></div>
+    </div>
+    <div class="row masks" id="masks-R3-resolved-doublet">
+    <div class="col"><span>Android 108dp qatlam · qizil = 66dp safe · sariq = 72dp ko‘rinadigan</span><div style="position:relative;width:216px;height:216px">
+    <img src="R3-resolved-doublet-icon-1024.png" width="216" height="216" style="display:block">
+    <svg width="216" height="216" style="position:absolute;left:0;top:0">
+      <rect x="36" y="36" width="144" height="144" fill="none" stroke="#F5A524" stroke-width="1" stroke-dasharray="4 3"/>
+      <circle cx="108" cy="108" r="66" fill="none" stroke="#FF4D6D" stroke-width="1.5"/>
+    </svg></div></div>
+    <div class="col"><span>Android: circle</span><div class="mask" style="width:150px;height:150px;clip-path:circle(50%)">
+  <img src="R3-resolved-doublet-icon-1024.png" style="position:absolute;width:225px;height:225px;left:-37.5px;top:-37.5px"></div></div>
+    <div class="col"><span>Android: squircle</span><div class="mask" style="width:150px;height:150px;clip-path:path('M 150.00 75.00 L 149.92 94.18 L 149.68 102.10 L 149.28 108.13 L 148.71 113.16 L 147.98 117.52 L 147.09 121.40 L 146.03 124.88 L 144.80 128.03 L 143.39 130.90 L 141.80 133.52 L 140.03 135.90 L 138.07 138.07 L 135.90 140.03 L 133.52 141.80 L 130.90 143.39 L 128.03 144.80 L 124.88 146.03 L 121.40 147.09 L 117.52 147.98 L 113.16 148.71 L 108.13 149.28 L 102.10 149.68 L 94.18 149.92 L 75.00 150.00 L 55.82 149.92 L 47.90 149.68 L 41.87 149.28 L 36.84 148.71 L 32.48 147.98 L 28.60 147.09 L 25.12 146.03 L 21.97 144.80 L 19.10 143.39 L 16.48 141.80 L 14.10 140.03 L 11.93 138.07 L 9.97 135.90 L 8.20 133.52 L 6.61 130.90 L 5.20 128.03 L 3.97 124.88 L 2.91 121.40 L 2.02 117.52 L 1.29 113.16 L 0.72 108.13 L 0.32 102.10 L 0.08 94.18 L 0.00 75.00 L 0.08 55.82 L 0.32 47.90 L 0.72 41.87 L 1.29 36.84 L 2.02 32.48 L 2.91 28.60 L 3.97 25.12 L 5.20 21.97 L 6.61 19.10 L 8.20 16.48 L 9.97 14.10 L 11.93 11.93 L 14.10 9.97 L 16.48 8.20 L 19.10 6.61 L 21.97 5.20 L 25.12 3.97 L 28.60 2.91 L 32.48 2.02 L 36.84 1.29 L 41.87 0.72 L 47.90 0.32 L 55.82 0.08 L 75.00 0.00 L 94.18 0.08 L 102.10 0.32 L 108.13 0.72 L 113.16 1.29 L 117.52 2.02 L 121.40 2.91 L 124.88 3.97 L 128.03 5.20 L 130.90 6.61 L 133.52 8.20 L 135.90 9.97 L 138.07 11.93 L 140.03 14.10 L 141.80 16.48 L 143.39 19.10 L 144.80 21.97 L 146.03 25.12 L 147.09 28.60 L 147.98 32.48 L 148.71 36.84 L 149.28 41.87 L 149.68 47.90 L 149.92 55.82 Z')">
+  <img src="R3-resolved-doublet-icon-1024.png" style="position:absolute;width:225px;height:225px;left:-37.5px;top:-37.5px"></div></div>
+    <div class="col"><span>Android: rounded square</span><div class="mask" style="width:150px;height:150px;border-radius:24.0px">
+  <img src="R3-resolved-doublet-icon-1024.png" style="position:absolute;width:225px;height:225px;left:-37.5px;top:-37.5px"></div></div>
+    <div class="col"><span>iOS (r = 22.37%)</span><img src="R3-resolved-doublet-icon-1024.png" width="150" height="150" style="border-radius:33.55px"></div>
+    <div class="col"><span>iOS 32 px ×6</span><img src="R3-resolved-doublet-icon-32.png" width="192" height="192" style="image-rendering:pixelated;border-radius:43.0px"></div>
+  </div>
+  </section>

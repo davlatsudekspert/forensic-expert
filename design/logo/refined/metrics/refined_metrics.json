@@ -1,0 +1,214 @@
+{
+  "A3-nested-peaks": {
+    "safe_zone_icon_1024": {
+      "glyph_px": 186558,
+      "outside_px": 39430,
+      "outside_pct": 21.136,
+      "max_radius_grid": 50.69,
+      "safe_radius_grid": 30.56
+    },
+    "safe_zone_icon_small_64_info": {
+      "glyph_px": 941,
+      "outside_px": 264,
+      "outside_pct": 28.055,
+      "max_radius_grid": 51.41,
+      "safe_radius_grid": 30.56
+    },
+    "silhouette_32": {
+      "ink_coverage_pct": 20.6,
+      "ink_in_bbox_pct": 42.7,
+      "bbox_px": [
+        26,
+        19
+      ],
+      "components": 1,
+      "component_sizes": [
+        211
+      ],
+      "tiny_components_le3px": 0,
+      "enclosed_counters": 4
+    },
+    "icon_32": {
+      "ink_coverage_pct": 24.7,
+      "ink_in_bbox_pct": 47.6,
+      "bbox_px": [
+        28,
+        19
+      ],
+      "components": 1,
+      "component_sizes": [
+        253
+      ],
+      "tiny_components_le3px": 0,
+      "enclosed_counters": 8
+    },
+    "mirror": {
+      "asymmetry_bbox": 0.001,
+      "asymmetry_canvas": 0.001
+    },
+    "mirror_small_64": {
+      "asymmetry_bbox": 0.005,
+      "asymmetry_canvas": 0.005
+    }
+  },
+  "R1-tailing-peak": {
+    "safe_zone_icon_1024": {
+      "glyph_px": 72069,
+      "outside_px": 0,
+      "outside_pct": 0.0,
+      "max_radius_grid": 27.14,
+      "safe_radius_grid": 30.56
+    },
+    "safe_zone_icon_small_64_info": {
+      "glyph_px": 681,
+      "outside_px": 224,
+      "outside_pct": 32.893,
+      "max_radius_grid": 38.73,
+      "safe_radius_grid": 30.56
+    },
+    "silhouette_32": {
+      "ink_coverage_pct": 20.4,
+      "ink_in_bbox_pct": 43.2,
+      "bbox_px": [
+        22,
+        22
+      ],
+      "components": 3,
+      "component_sizes": [
+        167,
+        21,
+        21
+      ],
+      "tiny_components_le3px": 0,
+      "enclosed_counters": 0
+    },
+    "icon_32": {
+      "ink_coverage_pct": 18.8,
+      "ink_in_bbox_pct": 48.2,
+      "bbox_px": [
+        20,
+        20
+      ],
+      "components": 3,
+      "component_sizes": [
+        144,
+        25,
+        24
+      ],
+      "tiny_components_le3px": 0,
+      "enclosed_counters": 0
+    },
+    "mirror": {
+      "asymmetry_bbox": 0.501,
+      "asymmetry_canvas": 0.382
+    },
+    "mirror_small_64": {
+      "asymmetry_bbox": 0.297,
+      "asymmetry_canvas": 0.297
+    }
+  },
+  "R2-integrated-peak": {
+    "safe_zone_icon_1024": {
+      "glyph_px": 58725,
+      "outside_px": 0,
+      "outside_pct": 0.0,
+      "max_radius_grid": 29.34,
+      "safe_radius_grid": 30.56
+    },
+    "safe_zone_icon_small_64_info": {
+      "glyph_px": 688,
+      "outside_px": 80,
+      "outside_pct": 11.628,
+      "max_radius_grid": 42.29,
+      "safe_radius_grid": 30.56
+    },
+    "silhouette_32": {
+      "ink_coverage_pct": 23.5,
+      "ink_in_bbox_pct": 43.0,
+      "bbox_px": [
+        28,
+        20
+      ],
+      "components": 1,
+      "component_sizes": [
+        241
+      ],
+      "tiny_components_le3px": 0,
+      "enclosed_counters": 0
+    },
+    "icon_32": {
+      "ink_coverage_pct": 18.4,
+      "ink_in_bbox_pct": 46.1,
+      "bbox_px": [
+        24,
+        17
+      ],
+      "components": 1,
+      "component_sizes": [
+        188
+      ],
+      "tiny_components_le3px": 0,
+      "enclosed_counters": 0
+    },
+    "mirror": {
+      "asymmetry_bbox": 0.378,
+      "asymmetry_canvas": 0.39
+    },
+    "mirror_small_64": {
+      "asymmetry_bbox": 0.191,
+      "asymmetry_canvas": 0.207
+    }
+  },
+  "R3-resolved-doublet": {
+    "safe_zone_icon_1024": {
+      "glyph_px": 97075,
+      "outside_px": 0,
+      "outside_pct": 0.0,
+      "max_radius_grid": 28.04,
+      "safe_radius_grid": 30.56
+    },
+    "safe_zone_icon_small_64_info": {
+      "glyph_px": 1082,
+      "outside_px": 529,
+      "outside_pct": 48.891,
+      "max_radius_grid": 38.54,
+      "safe_radius_grid": 30.56
+    },
+    "silhouette_32": {
+      "ink_coverage_pct": 34.1,
+      "ink_in_bbox_pct": 40.1,
+      "bbox_px": [
+        30,
+        29
+      ],
+      "components": 1,
+      "component_sizes": [
+        349
+      ],
+      "tiny_components_le3px": 0,
+      "enclosed_counters": 4
+    },
+    "icon_32": {
+      "ink_coverage_pct": 29.8,
+      "ink_in_bbox_pct": 48.8,
+      "bbox_px": [
+        25,
+        25
+      ],
+      "components": 1,
+      "component_sizes": [
+        305
+      ],
+      "tiny_components_le3px": 0,
+      "enclosed_counters": 4
+    },
+    "mirror": {
+      "asymmetry_bbox": 0.521,
+      "asymmetry_canvas": 0.521
+    },
+    "mirror_small_64": {
+      "asymmetry_bbox": 0.519,
+      "asymmetry_canvas": 0.519
+    }
+  }
+}
