@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_riverpod/misc.dart' show Override;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/app.dart';
 import 'package:forensic_expert/app/providers.dart';
@@ -30,9 +31,11 @@ Future<ProviderContainer> pumpApp(
   double textScale = 1.0,
   Brightness platformBrightness = Brightness.light,
   String? initialLocation,
+  double pixelRatio = 3,
+  List<Override> overrides = const [],
 }) async {
-  tester.view.physicalSize = size * 3;
-  tester.view.devicePixelRatio = 3;
+  tester.view.physicalSize = size * pixelRatio;
+  tester.view.devicePixelRatio = pixelRatio;
   tester.platformDispatcher.textScaleFactorTestValue = textScale;
   tester.platformDispatcher.platformBrightnessTestValue = platformBrightness;
   addTearDown(tester.view.reset);
@@ -44,6 +47,7 @@ Future<ProviderContainer> pumpApp(
       initialSettingsProvider.overrideWithValue(settings),
       settingsRepositoryProvider.overrideWithValue(repo),
       contentStoreProvider.overrideWithValue(const FakeContentStore()),
+      ...overrides,
     ],
   );
   addTearDown(container.dispose);

@@ -38,4 +38,22 @@ void main() {
       }
     });
   }
+
+  for (final (name, tokens) in [
+    ('light high contrast', FePalette.lightHighContrast),
+    ('dark high contrast', FePalette.darkHighContrast),
+  ]) {
+    group('$name — WCAG AAA (≥ 7:1)', () {
+      for (final (fg, bg, label) in tokens.textPairs) {
+        test(label, () {
+          final r = contrast(fg, bg);
+          expect(
+            r,
+            greaterThanOrEqualTo(7),
+            reason: '$label = ${r.toStringAsFixed(2)}:1',
+          );
+        });
+      }
+    });
+  }
 }

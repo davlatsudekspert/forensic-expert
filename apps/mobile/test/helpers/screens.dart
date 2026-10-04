@@ -1,7 +1,7 @@
 import 'package:forensic_expert/app/routes.dart';
 
-/// Barcha PHASE 1 ekranlari (onboarding’dan tashqari) — a11y va kichik
-/// ekran testlari shu ro‘yxat bo‘yicha yuradi.
+/// Barcha asosiy ekranlar (onboarding’dan tashqari) — a11y, kichik ekran
+/// va offline testlari shu ro‘yxat bo‘yicha yuradi. PHASE 1 + PHASE 2.
 const shellScreens = <String>[
   Routes.home,
   Routes.search,
@@ -13,6 +13,18 @@ const shellScreens = <String>[
   Routes.profileLanguage,
   Routes.profileMode,
   Routes.profileDisclaimer,
+  // PHASE 2
+  Routes.learn,
+  Routes.quiz,
+  Routes.flashcards,
+  '/tools/tool/tool.lab.dilution',
+  '/home/module/forensicMedicine',
+  '/library/entry/TEST-SUB-ETOH',
+  Routes.purchase,
+  Routes.privacy,
+  Routes.terms,
+  Routes.about,
+  Routes.profileJurisdiction,
 ];
 
 const onboardingScreens = <String>[

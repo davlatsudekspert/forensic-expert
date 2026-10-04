@@ -21,6 +21,11 @@ void main() {
     'languageOptionSemantics',
     'moduleAi',
     'navAi',
+    // PHASE 2: brend/texnik nomlar va xalqaro atamalar.
+    'testDataBadge',
+    'toolLodName',
+    // O‘zbek tilida ham aynan «Formula» — tarjima to‘g‘ri.
+    'calcFormula',
   };
 
   Set<String> placeholders(String s) =>

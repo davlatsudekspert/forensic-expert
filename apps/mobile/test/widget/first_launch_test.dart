@@ -71,7 +71,7 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.byType(HomeScreen), findsOneWidget);
     expect(
-      find.text('Modda, metod, formula, mavzu yoki manbani qidiring…'),
+      find.text('Moddalar, usullar, vositalar va manbalarni qidiring…'),
       findsOneWidget,
     );
     expect(repo.value.onboardingComplete, isTrue);

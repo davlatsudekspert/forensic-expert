@@ -52,6 +52,25 @@ void main() {
     });
   }
 
+  // Yuqori kontrast (light va dark): tap target, label va kontrast.
+  for (final theme in [ThemeMode.light, ThemeMode.dark]) {
+    group('${theme.name} · high contrast', () {
+      for (final route in shellScreens) {
+        testWidgets(route, (tester) async {
+          final handle = tester.ensureSemantics();
+          await pumpApp(
+            tester,
+            settings: completedSettings(theme: theme)
+                .copyWith(contrast: ContrastPreference.high),
+            initialLocation: route,
+          );
+          await checkGuidelines(tester);
+          handle.dispose();
+        });
+      }
+    });
+  }
+
   testWidgets(
     'til variantlari ekran o‘quvchisi uchun tanlangan holatni beradi',
     (tester) async {

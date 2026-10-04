@@ -36,4 +36,30 @@ void main() {
     );
     expect((await repo.load()).locale, isNull);
   });
+
+  test('kontrast va yurisdiksiya saqlanadi; standartlar', () async {
+    SharedPreferences.setMockInitialValues({});
+    final repo = SharedPrefsSettingsRepository(
+      await SharedPreferences.getInstance(),
+    );
+    final initial = await repo.load();
+    expect(initial.contrast, ContrastPreference.system);
+    expect(initial.jurisdictionId, internationalJurisdictionId);
+    await repo.save(
+      initial.copyWith(contrast: ContrastPreference.high, jurisdictionId: 'UZ'),
+    );
+    final s = await SharedPrefsSettingsRepository(
+      await SharedPreferences.getInstance(),
+    ).load();
+    expect(s.contrast, ContrastPreference.high);
+    expect(s.jurisdictionId, 'UZ');
+  });
+
+  test('noma’lum kontrast qiymati system’ga qaytadi', () async {
+    SharedPreferences.setMockInitialValues({'fe.settings.contrast': 'ultra'});
+    final repo = SharedPrefsSettingsRepository(
+      await SharedPreferences.getInstance(),
+    );
+    expect((await repo.load()).contrast, ContrastPreference.system);
+  });
 }
