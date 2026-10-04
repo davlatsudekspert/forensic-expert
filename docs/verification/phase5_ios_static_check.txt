@@ -1,0 +1,16 @@
+[PASS] Info.plist o‘qiladi (plist sintaksisi)             
+[PASS] CFBundleDisplayName                                FORENSIC EXPERT
+[PASS] Bundle ID barcha konfiguratsiyada bir xil          uz.forensicexpert.forensicExpert
+[PASS] Deployment target ≥ 13.0 (bitta qiymat)            15.0
+[PASS] Launch screen                                      
+[PASS] Lokalizatsiyalar (en, ru, uz)                      en, ru, uz
+[PASS] AppIcon: barcha fayl mavjud, o‘lcham to‘g‘ri       
+[PASS] AppIcon: alpha kanal yo‘q (App Store talabi)       
+[PASS] 1024×1024 marketing ikon                           
+[PASS] StoreKit plagini (in_app_purchase_storekit)        
+[PASS] Qurilma oilasi                                     TARGETED_DEVICE_FAMILY = 1,2 (iPad layout real qurilmada tekshirilmagan)
+[OPEN] Privacy manifest (PrivacyInfo.xcprivacy)           yo‘q — ma’lumot yig‘ish va required-reason API deklaratsiyasi egasi/yurist tasdig‘ini talab qiladi
+[OPEN] Export compliance (ITSAppUsesNonExemptEncryption)  deklaratsiya qilinmagan — huquqiy qaror (faqat HTTPS bo‘lsa odatda exempt)
+[OPEN] Real Xcode build / TestFlight / real iPhone        bu muhitda macOS/Xcode yo‘q — iOS build BAJARILMAGAN
+
+PASS=11 FAIL=0 OPEN=3
