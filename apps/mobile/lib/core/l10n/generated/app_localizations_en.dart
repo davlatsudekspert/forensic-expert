@@ -702,7 +702,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get profileSectionPreferences => 'Preferences';
 
   @override
-  String get profileSectionAccount => 'Account and subscription';
+  String get profileSectionAccount => 'Account and purchases';
 
   @override
   String get profileSectionAbout => 'About and legal';
@@ -719,12 +719,6 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get contrastSystemHint =>
       'System follows the device accessibility setting.';
-
-  @override
-  String get subscriptionTitle => 'Subscription';
-
-  @override
-  String get currentPlanFree => 'Free plan';
 
   @override
   String get privacyPolicy => 'Privacy Policy';
@@ -761,74 +755,14 @@ class AppLocalizationsEn extends AppLocalizations {
       'The app version and the scientific database version are tracked separately.';
 
   @override
-  String get planFree => 'Free';
-
-  @override
-  String get planStudentPro => 'Student Pro';
-
-  @override
-  String get planProfessionalPro => 'Professional Pro';
-
-  @override
-  String get planCurrent => 'Current plan';
-
-  @override
-  String get priceUnavailable => 'Price unavailable';
-
-  @override
   String get storeNotConnected =>
-      'The store is not connected in this build. Prices are shown only from the App Store or Google Play.';
+      'The store is not connected in this build, so purchase is unavailable.';
 
   @override
-  String get subscribeAction => 'Subscribe';
-
-  @override
-  String get restorePurchases => 'Restore purchases';
-
-  @override
-  String get manageSubscription => 'Manage subscription';
+  String get restorePurchases => 'Restore Purchase';
 
   @override
   String get restoreNothing => 'No purchases to restore.';
-
-  @override
-  String get featLibrary => 'Substance library';
-
-  @override
-  String get featLabTools => 'Laboratory calculators';
-
-  @override
-  String get featLearning => 'Courses, quizzes and flashcards';
-
-  @override
-  String get featAdvancedTools => 'Advanced forensic tools';
-
-  @override
-  String get featAi => 'Forensic AI';
-
-  @override
-  String get featOffline => 'Offline access';
-
-  @override
-  String get featSafety => 'Disclaimers, limitations and sources';
-
-  @override
-  String get valueLimited => 'Limited';
-
-  @override
-  String get valueBasic => 'Basic';
-
-  @override
-  String get valueExtended => 'Extended';
-
-  @override
-  String get valueFull => 'Full';
-
-  @override
-  String get valueIncluded => 'Included';
-
-  @override
-  String get valueNotIncluded => 'Not included';
 
   @override
   String get subscriptionSafetyNote =>
@@ -888,4 +822,67 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get detailChangeJurisdiction => 'Change jurisdiction';
+
+  @override
+  String get purchaseTitle => 'Lifetime Access';
+
+  @override
+  String get purchaseOneTime => 'One-time purchase';
+
+  @override
+  String purchasePriceLine(String price) {
+    return '$price · One-time purchase';
+  }
+
+  @override
+  String get purchaseReferencePriceNote =>
+      'Reference price. The final price in your currency is shown by the App Store or Google Play.';
+
+  @override
+  String get purchaseValueReference => 'Professional forensic reference';
+
+  @override
+  String get purchaseValueTools => 'Scientific calculators & laboratory tools';
+
+  @override
+  String get purchaseValueSources => 'Verified sources & evidence status';
+
+  @override
+  String get purchaseValueOffline => 'Offline professional database';
+
+  @override
+  String get purchaseValueLearning => 'Learning & professional development';
+
+  @override
+  String get purchaseValueUpdates => 'Future scientific content updates';
+
+  @override
+  String get purchaseCta => 'Unlock FORENSIC EXPERT';
+
+  @override
+  String get purchaseFooter => 'One-time purchase · No recurring subscription';
+
+  @override
+  String get purchaseFreeTitle => 'Free version';
+
+  @override
+  String get purchaseFreeBody =>
+      'Try before you buy: a search demo, selected reference entries, selected tools and demo lessons.';
+
+  @override
+  String get purchaseAiNote =>
+      'Forensic AI is not included without limits: it has server costs. Any AI allowance will be stated clearly before purchase.';
+
+  @override
+  String get purchaseOwned => 'Lifetime access is active';
+
+  @override
+  String get purchaseUnavailableSnack =>
+      'Purchases are not available in this build.';
+
+  @override
+  String get accessFree => 'Free version';
+
+  @override
+  String get accessLifetime => 'Lifetime';
 }

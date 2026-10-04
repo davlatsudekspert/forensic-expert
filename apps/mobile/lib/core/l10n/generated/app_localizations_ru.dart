@@ -703,7 +703,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get profileSectionPreferences => 'Настройки';
 
   @override
-  String get profileSectionAccount => 'Аккаунт и подписка';
+  String get profileSectionAccount => 'Аккаунт и покупки';
 
   @override
   String get profileSectionAbout => 'О приложении и правовая информация';
@@ -720,12 +720,6 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get contrastSystemHint =>
       '«Системный» следует настройкам специальных возможностей устройства.';
-
-  @override
-  String get subscriptionTitle => 'Подписка';
-
-  @override
-  String get currentPlanFree => 'Бесплатный тариф';
 
   @override
   String get privacyPolicy => 'Политика конфиденциальности';
@@ -762,74 +756,14 @@ class AppLocalizationsRu extends AppLocalizations {
       'Версия приложения и версия научной базы данных учитываются раздельно.';
 
   @override
-  String get planFree => 'Бесплатный';
-
-  @override
-  String get planStudentPro => 'Student Pro';
-
-  @override
-  String get planProfessionalPro => 'Professional Pro';
-
-  @override
-  String get planCurrent => 'Текущий тариф';
-
-  @override
-  String get priceUnavailable => 'Цена недоступна';
-
-  @override
   String get storeNotConnected =>
-      'В этой сборке магазин не подключён. Цены показываются только из App Store или Google Play.';
+      'В этой сборке магазин не подключён, поэтому покупка недоступна.';
 
   @override
-  String get subscribeAction => 'Оформить подписку';
-
-  @override
-  String get restorePurchases => 'Восстановить покупки';
-
-  @override
-  String get manageSubscription => 'Управление подпиской';
+  String get restorePurchases => 'Восстановить покупку';
 
   @override
   String get restoreNothing => 'Нет покупок для восстановления.';
-
-  @override
-  String get featLibrary => 'Библиотека веществ';
-
-  @override
-  String get featLabTools => 'Лабораторные калькуляторы';
-
-  @override
-  String get featLearning => 'Курсы, тесты и карточки';
-
-  @override
-  String get featAdvancedTools => 'Расширенные экспертные инструменты';
-
-  @override
-  String get featAi => 'Forensic AI';
-
-  @override
-  String get featOffline => 'Офлайн-доступ';
-
-  @override
-  String get featSafety => 'Предупреждения, ограничения и источники';
-
-  @override
-  String get valueLimited => 'Ограниченно';
-
-  @override
-  String get valueBasic => 'Базовые';
-
-  @override
-  String get valueExtended => 'Расширенно';
-
-  @override
-  String get valueFull => 'Полностью';
-
-  @override
-  String get valueIncluded => 'Включено';
-
-  @override
-  String get valueNotIncluded => 'Не включено';
 
   @override
   String get subscriptionSafetyNote =>
@@ -889,4 +823,69 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get detailChangeJurisdiction => 'Сменить юрисдикцию';
+
+  @override
+  String get purchaseTitle => 'Пожизненный доступ';
+
+  @override
+  String get purchaseOneTime => 'Разовая покупка';
+
+  @override
+  String purchasePriceLine(String price) {
+    return '$price · Разовая покупка';
+  }
+
+  @override
+  String get purchaseReferencePriceNote =>
+      'Ориентировочная цена. Окончательную цену в вашей валюте покажет App Store или Google Play.';
+
+  @override
+  String get purchaseValueReference =>
+      'Профессиональный судебно-экспертный справочник';
+
+  @override
+  String get purchaseValueTools =>
+      'Научные калькуляторы и лабораторные инструменты';
+
+  @override
+  String get purchaseValueSources =>
+      'Проверенные источники и статус доказательности';
+
+  @override
+  String get purchaseValueOffline => 'Профессиональная офлайн-база';
+
+  @override
+  String get purchaseValueLearning => 'Обучение и профессиональное развитие';
+
+  @override
+  String get purchaseValueUpdates => 'Будущие обновления научного контента';
+
+  @override
+  String get purchaseCta => 'Открыть FORENSIC EXPERT';
+
+  @override
+  String get purchaseFooter => 'Разовая покупка · Без регулярной подписки';
+
+  @override
+  String get purchaseFreeTitle => 'Бесплатная версия';
+
+  @override
+  String get purchaseFreeBody =>
+      'Попробуйте до покупки: демо поиска, избранные справочные статьи, отдельные инструменты и демо-уроки.';
+
+  @override
+  String get purchaseAiNote =>
+      'Forensic AI не входит без ограничений: у него есть серверные расходы. Любой объём AI будет чётко указан до покупки.';
+
+  @override
+  String get purchaseOwned => 'Пожизненный доступ активен';
+
+  @override
+  String get purchaseUnavailableSnack => 'Покупки недоступны в этой сборке.';
+
+  @override
+  String get accessFree => 'Бесплатная версия';
+
+  @override
+  String get accessLifetime => 'Пожизненный';
 }

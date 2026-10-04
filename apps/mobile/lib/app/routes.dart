@@ -25,7 +25,7 @@ abstract final class Routes {
   static const profileMode = '/profile/mode';
   static const profileJurisdiction = '/profile/jurisdiction';
   static const profileDisclaimer = '/profile/disclaimer';
-  static const subscription = '/profile/subscription';
+  static const purchase = '/profile/purchase';
   static const privacy = '/profile/privacy';
   static const terms = '/profile/terms';
   static const about = '/profile/about';

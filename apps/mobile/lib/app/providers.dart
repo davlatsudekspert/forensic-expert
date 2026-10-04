@@ -36,6 +36,11 @@ final entitlementServiceProvider = Provider<EntitlementService>(
   (ref) => const StoreUnavailableEntitlementService(),
 );
 
+/// Forensic AI ruxsati Lifetime’dan alohida (server xarajati bor).
+final aiEntitlementServiceProvider = Provider<AiEntitlementService>(
+  (ref) => const NoAiEntitlementService(),
+);
+
 final aiAssistantProvider = Provider<AiAssistant>(
   (ref) => const UnavailableAiAssistant(),
 );

@@ -18,8 +18,8 @@ import '../features/onboarding/presentation/language_screen.dart';
 import '../features/onboarding/presentation/mode_screen.dart';
 import '../features/profile/presentation/legal_screens.dart';
 import '../features/profile/presentation/profile_screen.dart';
+import '../features/profile/presentation/purchase_screen.dart';
 import '../features/profile/presentation/settings_pickers.dart';
-import '../features/profile/presentation/subscription_screen.dart';
 import '../features/shell/presentation/app_shell.dart';
 import '../features/tools/presentation/module_hub_screen.dart';
 import '../features/tools/presentation/tool_detail_screen.dart';
@@ -193,9 +193,9 @@ final routerProvider = Provider<GoRouter>((ref) {
                     builder: (c, s) => const DisclaimerScreen(readOnly: true),
                   ),
                   GoRoute(
-                    path: 'subscription',
+                    path: 'purchase',
                     parentNavigatorKey: rootKey,
-                    builder: (c, s) => const SubscriptionScreen(),
+                    builder: (c, s) => const PurchaseScreen(),
                   ),
                   GoRoute(
                     path: 'privacy',

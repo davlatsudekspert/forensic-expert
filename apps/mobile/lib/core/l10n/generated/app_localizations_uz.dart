@@ -703,7 +703,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get profileSectionPreferences => 'Sozlamalar';
 
   @override
-  String get profileSectionAccount => 'Akkaunt va obuna';
+  String get profileSectionAccount => 'Akkaunt va xaridlar';
 
   @override
   String get profileSectionAbout => 'Ilova haqida va huquqiy ma’lumot';
@@ -720,12 +720,6 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get contrastSystemHint =>
       '«Tizim» qurilmaning maxsus imkoniyatlar sozlamasiga amal qiladi.';
-
-  @override
-  String get subscriptionTitle => 'Obuna';
-
-  @override
-  String get currentPlanFree => 'Bepul tarif';
 
   @override
   String get privacyPolicy => 'Maxfiylik siyosati';
@@ -762,74 +756,14 @@ class AppLocalizationsUz extends AppLocalizations {
       'Ilova versiyasi va ilmiy baza versiyasi alohida yuritiladi.';
 
   @override
-  String get planFree => 'Bepul';
-
-  @override
-  String get planStudentPro => 'Student Pro';
-
-  @override
-  String get planProfessionalPro => 'Professional Pro';
-
-  @override
-  String get planCurrent => 'Joriy tarif';
-
-  @override
-  String get priceUnavailable => 'Narx mavjud emas';
-
-  @override
   String get storeNotConnected =>
-      'Ushbu yig‘mada do‘kon ulanmagan. Narxlar faqat App Store yoki Google Play’dan ko‘rsatiladi.';
+      'Bu yig‘mada do‘kon ulanmagan, shuning uchun xarid qilib bo‘lmaydi.';
 
   @override
-  String get subscribeAction => 'Obuna bo‘lish';
-
-  @override
-  String get restorePurchases => 'Xaridlarni tiklash';
-
-  @override
-  String get manageSubscription => 'Obunani boshqarish';
+  String get restorePurchases => 'Xaridni tiklash';
 
   @override
   String get restoreNothing => 'Tiklanadigan xarid yo‘q.';
-
-  @override
-  String get featLibrary => 'Moddalar kutubxonasi';
-
-  @override
-  String get featLabTools => 'Laboratoriya kalkulyatorlari';
-
-  @override
-  String get featLearning => 'Kurslar, testlar va kartochkalar';
-
-  @override
-  String get featAdvancedTools => 'Kengaytirilgan ekspert vositalari';
-
-  @override
-  String get featAi => 'Forensic AI';
-
-  @override
-  String get featOffline => 'Oflayn kirish';
-
-  @override
-  String get featSafety => 'Ogohlantirishlar, cheklovlar va manbalar';
-
-  @override
-  String get valueLimited => 'Cheklangan';
-
-  @override
-  String get valueBasic => 'Asosiy';
-
-  @override
-  String get valueExtended => 'Kengaytirilgan';
-
-  @override
-  String get valueFull => 'To‘liq';
-
-  @override
-  String get valueIncluded => 'Mavjud';
-
-  @override
-  String get valueNotIncluded => 'Mavjud emas';
 
   @override
   String get subscriptionSafetyNote =>
@@ -889,4 +823,68 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get detailChangeJurisdiction => 'Yurisdiksiyani o‘zgartirish';
+
+  @override
+  String get purchaseTitle => 'Umrbod kirish';
+
+  @override
+  String get purchaseOneTime => 'Bir martalik xarid';
+
+  @override
+  String purchasePriceLine(String price) {
+    return '$price · Bir martalik xarid';
+  }
+
+  @override
+  String get purchaseReferencePriceNote =>
+      'Taxminiy narx. Yakuniy narxni sizning valyutangizda App Store yoki Google Play ko‘rsatadi.';
+
+  @override
+  String get purchaseValueReference =>
+      'Professional sud-ekspertiza ma’lumotnomasi';
+
+  @override
+  String get purchaseValueTools =>
+      'Ilmiy kalkulyatorlar va laboratoriya vositalari';
+
+  @override
+  String get purchaseValueSources => 'Tekshirilgan manbalar va dalil holati';
+
+  @override
+  String get purchaseValueOffline => 'Oflayn professional baza';
+
+  @override
+  String get purchaseValueLearning => 'Ta’lim va kasbiy rivojlanish';
+
+  @override
+  String get purchaseValueUpdates => 'Kelgusi ilmiy kontent yangilanishlari';
+
+  @override
+  String get purchaseCta => 'FORENSIC EXPERT’ni ochish';
+
+  @override
+  String get purchaseFooter => 'Bir martalik xarid · Takroriy obuna yo‘q';
+
+  @override
+  String get purchaseFreeTitle => 'Bepul versiya';
+
+  @override
+  String get purchaseFreeBody =>
+      'Xariddan oldin sinab ko‘ring: qidiruv demosi, tanlangan ma’lumotnoma yozuvlari, ayrim vositalar va demo darslar.';
+
+  @override
+  String get purchaseAiNote =>
+      'Forensic AI cheklovsiz kirmaydi: uning server xarajati bor. AI hajmi xariddan oldin aniq ko‘rsatiladi.';
+
+  @override
+  String get purchaseOwned => 'Umrbod kirish faol';
+
+  @override
+  String get purchaseUnavailableSnack => 'Bu yig‘mada xarid qilib bo‘lmaydi.';
+
+  @override
+  String get accessFree => 'Bepul versiya';
+
+  @override
+  String get accessLifetime => 'Umrbod';
 }

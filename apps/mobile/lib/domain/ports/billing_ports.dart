@@ -1,63 +1,70 @@
-/// Billing abstraksiyasi (`docs/00_ARXITEKTURA_REJASI.md`, 26-bo‘lim).
+/// Billing abstraksiyasi — **FORENSIC EXPERT Lifetime** modeli.
 ///
-/// * Haqiqat manbai — Apple StoreKit va Google Play Billing.
-/// * RevenueCat — afzal adapter (PHASE 9), lekin uning turlari domen
-///   qatlamiga chiqmaydi. Undan voz kechilsa, faqat adapter almashtiriladi.
-/// * Narxlar **hech qachon** kodda yo‘q — [Offer.localizedPrice] store’dan.
+/// Mahsulot qarori (PHASE 2, egasi): asosiy monetizatsiya — bitta
+/// **bir martalik xarid** (lifetime unlock), obuna emas.
+///
+/// * App Store: `Non-Consumable In-App Purchase`.
+/// * Google Play: `one-time product` (in-app product, iste’mol qilinmaydi).
+/// * Haqiqat manbai — Apple StoreKit va Google Play Billing (RevenueCat —
+///   ixtiyoriy adapter, turlari domen qatlamiga chiqmaydi).
+/// * Narx **UI kodida yo‘q**. Production’da [Offer.localizedPrice] —
+///   storefront qaytargan lokal narx. [BillingConfig.referenceLifetimePrice]
+///   faqat mahsulot/dizayn maqsadi (mock / reference) va store ulanmaganda
+///   «reference price» deb aniq belgilangan holda ko‘rsatiladi.
+/// * Forensic AI Lifetime’ga «cheksiz» kirmaydi — AI ruxsati va kvotasi
+///   alohida ([AiEntitlement]); server xarajati bor.
 library;
 
 import 'package:flutter/foundation.dart';
 
-enum PlanTier { free, studentPro, professionalPro, institution }
+/// Kirish darajasi. `institution` — kelajak (tashkilot litsenziyasi).
+enum AccessLevel { free, lifetime, institution }
 
 enum EntitlementSource { none, appStore, playStore, institution, promo }
 
 @immutable
 class Entitlements {
   const Entitlements({
-    required this.tier,
+    required this.access,
     required this.source,
-    this.expiresAt,
-    this.inGracePeriod = false,
+    this.purchasedAt,
   });
 
   static const free = Entitlements(
-    tier: PlanTier.free,
+    access: AccessLevel.free,
     source: EntitlementSource.none,
   );
 
-  final PlanTier tier;
+  final AccessLevel access;
   final EntitlementSource source;
-  final DateTime? expiresAt;
-  final bool inGracePeriod;
+  final DateTime? purchasedAt;
 
-  bool get hasStudentFeatures =>
-      tier == PlanTier.studentPro ||
-      tier == PlanTier.professionalPro ||
-      tier == PlanTier.institution;
-
-  bool get hasProfessionalFeatures =>
-      tier == PlanTier.professionalPro || tier == PlanTier.institution;
+  /// Asosiy professional mahsulot ochiqmi (Lifetime yoki tashkilot).
+  bool get hasFullAccess =>
+      access == AccessLevel.lifetime || access == AccessLevel.institution;
 }
 
-enum BillingPeriod { monthly, annual }
+/// Store’dagi mahsulot turi (adapter shunga qarab so‘rov yuboradi).
+enum StoreProductType {
+  /// App Store Non-Consumable / Google Play one-time product.
+  lifetimeUnlock,
+
+  /// Kelajak: qo‘shimcha AI paketi (consumable yoki alohida mahsulot).
+  aiPackage,
+}
 
 /// Store’dan kelgan taklif. Narx — store formatlagan lokal satr.
 @immutable
 class Offer {
   const Offer({
     required this.productId,
-    required this.tier,
-    required this.period,
+    required this.type,
     required this.localizedPrice,
-    this.hasIntroductoryTrial = false,
   });
 
   final String productId;
-  final PlanTier tier;
-  final BillingPeriod period;
+  final StoreProductType type;
   final String localizedPrice;
-  final bool hasIntroductoryTrial;
 }
 
 enum PurchaseOutcome { purchased, cancelled, pending, failed, unavailable }
@@ -65,17 +72,17 @@ enum PurchaseOutcome { purchased, cancelled, pending, failed, unavailable }
 /// Store’dagi mahsulot ID’lari (narx emas). Store konsollarida aynan
 /// shu ID’lar yaratiladi — adapterdan mustaqil.
 abstract final class ProductIds {
-  static const studentMonthly = 'fe_student_pro_monthly';
-  static const studentAnnual = 'fe_student_pro_annual';
-  static const professionalMonthly = 'fe_professional_pro_monthly';
-  static const professionalAnnual = 'fe_professional_pro_annual';
+  /// FORENSIC EXPERT Lifetime — Non-Consumable / one-time product.
+  static const lifetime = 'fe_lifetime_unlock';
 
-  static const all = [
-    studentMonthly,
-    studentAnnual,
-    professionalMonthly,
-    professionalAnnual,
-  ];
+  static const all = [lifetime];
+}
+
+/// Mahsulot konfiguratsiyasi (UI’dan tashqarida).
+abstract final class BillingConfig {
+  /// Mahsulot/dizayn maqsadi — **reference narx**, real narx emas.
+  /// Store ulangach har doim storefront qaytargan lokal narx ko‘rsatiladi.
+  static const referenceLifetimePrice = r'$59.99';
 }
 
 abstract interface class EntitlementService {
@@ -83,13 +90,116 @@ abstract interface class EntitlementService {
 
   Entitlements get current;
 
+  /// Store mavjud bo‘lsa — Lifetime taklifi (lokal narx bilan).
   Future<List<Offer>> offers();
 
   Future<PurchaseOutcome> purchase(String productId);
 
   /// Apple 3.1.1 «restore mechanism»; Google Play’da ham ko‘rsatiladi.
   Future<Entitlements> restore();
+}
 
-  /// Platformaning obunani boshqarish sahifasi.
-  Uri get manageSubscriptionsUri;
+// ---------------------------------------------------------------------------
+// Bepul demo va Lifetime chegarasi.
+// ---------------------------------------------------------------------------
+
+/// Mahsulot imkoniyatlari (gating birligi).
+enum ProductFeature {
+  globalSearch,
+  forensicMedicine,
+  forensicToxicology,
+  laboratoryTools,
+  substanceLibrary,
+  reagentsAndSolutions,
+  analyticalMethods,
+  expressTests,
+  biochemistry,
+  professionalCalculators,
+  learn,
+  offlineDatabase,
+  internationalStandards,
+  jurisdictionLayers,
+  verifiedReferences,
+
+  /// Hech qachon pullik devor ortida emas: disclaimer, cheklovlar,
+  /// manbalar/provenance tizimi.
+  safetyAndProvenance,
+}
+
+/// Bepul foydalanuvchi uchun demo hajmi.
+enum FeatureAccess {
+  /// To‘liq ochiq (Lifetime yoki hamma uchun).
+  full,
+
+  /// Bepul demo: mahsulot sifatini baholash uchun yetarli qism.
+  demo,
+}
+
+/// Qaysi imkoniyat bepul demoda qanday ochiq — bitta joyda.
+///
+/// Bepul versiya foydasiz yoki sun’iy buzilgan emas: har bir asosiy
+/// bo‘limdan haqiqiy demo bor, xavfsizlik va manbalar esa doim to‘liq.
+abstract final class AccessPolicy {
+  /// Bepul demoda doim ochiq vositalar (katalog ID’lari).
+  static const freeToolIds = {'tool.lab.dilution'};
+
+  /// Bepul demoda kutubxonadan nechta yozuv to‘liq ochiq (har bo‘limda).
+  static const freeEntriesPerSection = 3;
+
+  /// Bepul demoda nechta o‘quv kursi ochiq.
+  static const freeCourses = 1;
+
+  /// Global search: bepul demoda har guruhda ko‘rsatiladigan natijalar.
+  static const freeSearchResultsPerGroup = 3;
+
+  static FeatureAccess accessFor(ProductFeature f, Entitlements e) {
+    if (f == ProductFeature.safetyAndProvenance) return FeatureAccess.full;
+    return e.hasFullAccess ? FeatureAccess.full : FeatureAccess.demo;
+  }
+
+  static bool isToolUnlocked(String toolId, Entitlements e) =>
+      e.hasFullAccess || freeToolIds.contains(toolId);
+}
+
+// ---------------------------------------------------------------------------
+// Forensic AI — alohida ruxsat va kvota (Lifetime’ga «cheksiz» kirmaydi).
+// ---------------------------------------------------------------------------
+
+enum AiPlan {
+  /// AI ulanmagan (PHASE 2 holati).
+  none,
+
+  /// Kelajak: Lifetime egalariga ma’lum bepul kvota.
+  includedQuota,
+
+  /// Kelajak: qo‘shimcha AI paketi.
+  aiPackage,
+}
+
+@immutable
+class AiEntitlement {
+  const AiEntitlement({
+    required this.plan,
+    this.monthlyQuestionLimit,
+    this.usedThisPeriod = 0,
+  });
+
+  static const none = AiEntitlement(plan: AiPlan.none);
+
+  final AiPlan plan;
+
+  /// `null` faqat [AiPlan.none] da (cheklov tushunchasi yo‘q). AI hech
+  /// qachon «cheksiz» deb modellashtirilmaydi.
+  final int? monthlyQuestionLimit;
+  final int usedThisPeriod;
+
+  bool get canAsk =>
+      plan != AiPlan.none &&
+      monthlyQuestionLimit != null &&
+      usedThisPeriod < monthlyQuestionLimit!;
+}
+
+/// AI kvotasi manbai (kelajakda backend). PHASE 2 da real AI billing yo‘q.
+abstract interface class AiEntitlementService {
+  Future<AiEntitlement> current();
 }

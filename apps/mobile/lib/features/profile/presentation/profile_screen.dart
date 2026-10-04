@@ -129,11 +129,17 @@ class ProfileScreen extends ConsumerWidget {
                   ),
                   FeSectionHeader(l.profileSectionAccount),
                   _Row(
-                    key: const Key('profile.subscription'),
+                    key: const Key('profile.purchase'),
                     icon: Icons.workspace_premium_outlined,
-                    title: l.subscriptionTitle,
-                    value: l.currentPlanFree,
-                    onTap: () => context.go(Routes.subscription),
+                    title: l.purchaseTitle,
+                    value:
+                        ref
+                            .watch(entitlementServiceProvider)
+                            .current
+                            .hasFullAccess
+                        ? l.accessLifetime
+                        : l.accessFree,
+                    onTap: () => context.go(Routes.purchase),
                   ),
                   _Row(
                     icon: Icons.person_outline,

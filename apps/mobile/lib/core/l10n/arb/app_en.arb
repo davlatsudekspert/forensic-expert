@@ -885,7 +885,7 @@
   "@profileSectionPreferences": {
     "description": "Profile section."
   },
-  "profileSectionAccount": "Account and subscription",
+  "profileSectionAccount": "Account and purchases",
   "@profileSectionAccount": {
     "description": "Profile section."
   },
@@ -908,14 +908,6 @@
   "contrastSystemHint": "System follows the device accessibility setting.",
   "@contrastSystemHint": {
     "description": "Explains system contrast."
-  },
-  "subscriptionTitle": "Subscription",
-  "@subscriptionTitle": {
-    "description": "Screen title."
-  },
-  "currentPlanFree": "Free plan",
-  "@currentPlanFree": {
-    "description": "Current plan label."
   },
   "privacyPolicy": "Privacy Policy",
   "@privacyPolicy": {
@@ -957,97 +949,17 @@
   "@aboutVersions": {
     "description": "About text."
   },
-  "planFree": "Free",
-  "@planFree": {
-    "description": "Plan name."
-  },
-  "planStudentPro": "Student Pro",
-  "@planStudentPro": {
-    "description": "Plan name (brand)."
-  },
-  "planProfessionalPro": "Professional Pro",
-  "@planProfessionalPro": {
-    "description": "Plan name (brand)."
-  },
-  "planCurrent": "Current plan",
-  "@planCurrent": {
-    "description": "Current plan marker."
-  },
-  "priceUnavailable": "Price unavailable",
-  "@priceUnavailable": {
-    "description": "No store price."
-  },
-  "storeNotConnected": "The store is not connected in this build. Prices are shown only from the App Store or Google Play.",
+  "storeNotConnected": "The store is not connected in this build, so purchase is unavailable.",
   "@storeNotConnected": {
     "description": "Store not connected notice."
   },
-  "subscribeAction": "Subscribe",
-  "@subscribeAction": {
-    "description": "Subscribe button."
-  },
-  "restorePurchases": "Restore purchases",
+  "restorePurchases": "Restore Purchase",
   "@restorePurchases": {
     "description": "Restore purchases."
-  },
-  "manageSubscription": "Manage subscription",
-  "@manageSubscription": {
-    "description": "Manage subscription."
   },
   "restoreNothing": "No purchases to restore.",
   "@restoreNothing": {
     "description": "Restore result."
-  },
-  "featLibrary": "Substance library",
-  "@featLibrary": {
-    "description": "Plan feature."
-  },
-  "featLabTools": "Laboratory calculators",
-  "@featLabTools": {
-    "description": "Plan feature."
-  },
-  "featLearning": "Courses, quizzes and flashcards",
-  "@featLearning": {
-    "description": "Plan feature."
-  },
-  "featAdvancedTools": "Advanced forensic tools",
-  "@featAdvancedTools": {
-    "description": "Plan feature."
-  },
-  "featAi": "Forensic AI",
-  "@featAi": {
-    "description": "Plan feature."
-  },
-  "featOffline": "Offline access",
-  "@featOffline": {
-    "description": "Plan feature."
-  },
-  "featSafety": "Disclaimers, limitations and sources",
-  "@featSafety": {
-    "description": "Plan feature."
-  },
-  "valueLimited": "Limited",
-  "@valueLimited": {
-    "description": "Plan feature value."
-  },
-  "valueBasic": "Basic",
-  "@valueBasic": {
-    "description": "Plan feature value."
-  },
-  "valueExtended": "Extended",
-  "@valueExtended": {
-    "description": "Plan feature value."
-  },
-  "valueFull": "Full",
-  "@valueFull": {
-    "description": "Plan feature value."
-  },
-  "valueIncluded": "Included",
-  "@valueIncluded": {
-    "description": "Plan feature value (screen reader)."
-  },
-  "valueNotIncluded": "Not included",
-  "@valueNotIncluded": {
-    "description": "Plan feature value (screen reader)."
   },
   "subscriptionSafetyNote": "Disclaimers, limitations and sources are never behind a paywall.",
   "@subscriptionSafetyNote": {
@@ -1121,5 +1033,86 @@
   "detailChangeJurisdiction": "Change jurisdiction",
   "@detailChangeJurisdiction": {
     "description": "Action."
+  },
+  "purchaseTitle": "Lifetime Access",
+  "@purchaseTitle": {
+    "description": "Purchase screen title and profile row."
+  },
+  "purchaseOneTime": "One-time purchase",
+  "@purchaseOneTime": {
+    "description": "Purchase type label."
+  },
+  "purchasePriceLine": "{price} · One-time purchase",
+  "@purchasePriceLine": {
+    "description": "Price line; {price} comes from the store (or reference price).",
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "purchaseReferencePriceNote": "Reference price. The final price in your currency is shown by the App Store or Google Play.",
+  "@purchaseReferencePriceNote": {
+    "description": "Shown when the store price is not available."
+  },
+  "purchaseValueReference": "Professional forensic reference",
+  "@purchaseValueReference": {
+    "description": "Lifetime value."
+  },
+  "purchaseValueTools": "Scientific calculators & laboratory tools",
+  "@purchaseValueTools": {
+    "description": "Lifetime value."
+  },
+  "purchaseValueSources": "Verified sources & evidence status",
+  "@purchaseValueSources": {
+    "description": "Lifetime value."
+  },
+  "purchaseValueOffline": "Offline professional database",
+  "@purchaseValueOffline": {
+    "description": "Lifetime value."
+  },
+  "purchaseValueLearning": "Learning & professional development",
+  "@purchaseValueLearning": {
+    "description": "Lifetime value."
+  },
+  "purchaseValueUpdates": "Future scientific content updates",
+  "@purchaseValueUpdates": {
+    "description": "Lifetime value."
+  },
+  "purchaseCta": "Unlock FORENSIC EXPERT",
+  "@purchaseCta": {
+    "description": "Primary purchase button."
+  },
+  "purchaseFooter": "One-time purchase · No recurring subscription",
+  "@purchaseFooter": {
+    "description": "Below the purchase button."
+  },
+  "purchaseFreeTitle": "Free version",
+  "@purchaseFreeTitle": {
+    "description": "Free version section."
+  },
+  "purchaseFreeBody": "Try before you buy: a search demo, selected reference entries, selected tools and demo lessons.",
+  "@purchaseFreeBody": {
+    "description": "What the free version includes."
+  },
+  "purchaseAiNote": "Forensic AI is not included without limits: it has server costs. Any AI allowance will be stated clearly before purchase.",
+  "@purchaseAiNote": {
+    "description": "AI is not unlimited."
+  },
+  "purchaseOwned": "Lifetime access is active",
+  "@purchaseOwned": {
+    "description": "Shown when lifetime is active."
+  },
+  "purchaseUnavailableSnack": "Purchases are not available in this build.",
+  "@purchaseUnavailableSnack": {
+    "description": "Purchase tapped while store unavailable."
+  },
+  "accessFree": "Free version",
+  "@accessFree": {
+    "description": "Profile value: free access."
+  },
+  "accessLifetime": "Lifetime",
+  "@accessLifetime": {
+    "description": "Profile value: lifetime."
   }
 }

@@ -1,12 +1,10 @@
 import 'dart:async';
 
-import 'package:flutter/foundation.dart';
-
 import '../../domain/ports/billing_ports.dart';
 
-/// Store ulanmagan holat: faqat FREE tarif, takliflar yo‘q.
-/// PHASE 9 da `RevenueCatEntitlementService` (data/remote/revenuecat/)
-/// shu interfeysni amalga oshiradi.
+/// Store ulanmagan holat: faqat bepul demo, takliflar yo‘q.
+/// Keyinroq store adapteri (StoreKit Non-Consumable / Play one-time
+/// product, yoki RevenueCat) shu interfeysni amalga oshiradi.
 class StoreUnavailableEntitlementService implements EntitlementService {
   const StoreUnavailableEntitlementService();
 
@@ -25,9 +23,12 @@ class StoreUnavailableEntitlementService implements EntitlementService {
 
   @override
   Future<Entitlements> restore() async => Entitlements.free;
+}
+
+/// PHASE 2: Forensic AI ulanmagan — kvota yo‘q, billing yo‘q.
+class NoAiEntitlementService implements AiEntitlementService {
+  const NoAiEntitlementService();
 
   @override
-  Uri get manageSubscriptionsUri => defaultTargetPlatform == TargetPlatform.iOS
-      ? Uri.parse('https://apps.apple.com/account/subscriptions')
-      : Uri.parse('https://play.google.com/store/account/subscriptions');
+  Future<AiEntitlement> current() async => AiEntitlement.none;
 }

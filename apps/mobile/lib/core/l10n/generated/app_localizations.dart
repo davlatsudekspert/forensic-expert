@@ -1351,7 +1351,7 @@ abstract class AppLocalizations {
   /// Profile section.
   ///
   /// In en, this message translates to:
-  /// **'Account and subscription'**
+  /// **'Account and purchases'**
   String get profileSectionAccount;
 
   /// Profile section.
@@ -1383,18 +1383,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'System follows the device accessibility setting.'**
   String get contrastSystemHint;
-
-  /// Screen title.
-  ///
-  /// In en, this message translates to:
-  /// **'Subscription'**
-  String get subscriptionTitle;
-
-  /// Current plan label.
-  ///
-  /// In en, this message translates to:
-  /// **'Free plan'**
-  String get currentPlanFree;
 
   /// Legal link.
   ///
@@ -1456,143 +1444,23 @@ abstract class AppLocalizations {
   /// **'The app version and the scientific database version are tracked separately.'**
   String get aboutVersions;
 
-  /// Plan name.
-  ///
-  /// In en, this message translates to:
-  /// **'Free'**
-  String get planFree;
-
-  /// Plan name (brand).
-  ///
-  /// In en, this message translates to:
-  /// **'Student Pro'**
-  String get planStudentPro;
-
-  /// Plan name (brand).
-  ///
-  /// In en, this message translates to:
-  /// **'Professional Pro'**
-  String get planProfessionalPro;
-
-  /// Current plan marker.
-  ///
-  /// In en, this message translates to:
-  /// **'Current plan'**
-  String get planCurrent;
-
-  /// No store price.
-  ///
-  /// In en, this message translates to:
-  /// **'Price unavailable'**
-  String get priceUnavailable;
-
   /// Store not connected notice.
   ///
   /// In en, this message translates to:
-  /// **'The store is not connected in this build. Prices are shown only from the App Store or Google Play.'**
+  /// **'The store is not connected in this build, so purchase is unavailable.'**
   String get storeNotConnected;
-
-  /// Subscribe button.
-  ///
-  /// In en, this message translates to:
-  /// **'Subscribe'**
-  String get subscribeAction;
 
   /// Restore purchases.
   ///
   /// In en, this message translates to:
-  /// **'Restore purchases'**
+  /// **'Restore Purchase'**
   String get restorePurchases;
-
-  /// Manage subscription.
-  ///
-  /// In en, this message translates to:
-  /// **'Manage subscription'**
-  String get manageSubscription;
 
   /// Restore result.
   ///
   /// In en, this message translates to:
   /// **'No purchases to restore.'**
   String get restoreNothing;
-
-  /// Plan feature.
-  ///
-  /// In en, this message translates to:
-  /// **'Substance library'**
-  String get featLibrary;
-
-  /// Plan feature.
-  ///
-  /// In en, this message translates to:
-  /// **'Laboratory calculators'**
-  String get featLabTools;
-
-  /// Plan feature.
-  ///
-  /// In en, this message translates to:
-  /// **'Courses, quizzes and flashcards'**
-  String get featLearning;
-
-  /// Plan feature.
-  ///
-  /// In en, this message translates to:
-  /// **'Advanced forensic tools'**
-  String get featAdvancedTools;
-
-  /// Plan feature.
-  ///
-  /// In en, this message translates to:
-  /// **'Forensic AI'**
-  String get featAi;
-
-  /// Plan feature.
-  ///
-  /// In en, this message translates to:
-  /// **'Offline access'**
-  String get featOffline;
-
-  /// Plan feature.
-  ///
-  /// In en, this message translates to:
-  /// **'Disclaimers, limitations and sources'**
-  String get featSafety;
-
-  /// Plan feature value.
-  ///
-  /// In en, this message translates to:
-  /// **'Limited'**
-  String get valueLimited;
-
-  /// Plan feature value.
-  ///
-  /// In en, this message translates to:
-  /// **'Basic'**
-  String get valueBasic;
-
-  /// Plan feature value.
-  ///
-  /// In en, this message translates to:
-  /// **'Extended'**
-  String get valueExtended;
-
-  /// Plan feature value.
-  ///
-  /// In en, this message translates to:
-  /// **'Full'**
-  String get valueFull;
-
-  /// Plan feature value (screen reader).
-  ///
-  /// In en, this message translates to:
-  /// **'Included'**
-  String get valueIncluded;
-
-  /// Plan feature value (screen reader).
-  ///
-  /// In en, this message translates to:
-  /// **'Not included'**
-  String get valueNotIncluded;
 
   /// Subscription principle.
   ///
@@ -1695,6 +1563,120 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Change jurisdiction'**
   String get detailChangeJurisdiction;
+
+  /// Purchase screen title and profile row.
+  ///
+  /// In en, this message translates to:
+  /// **'Lifetime Access'**
+  String get purchaseTitle;
+
+  /// Purchase type label.
+  ///
+  /// In en, this message translates to:
+  /// **'One-time purchase'**
+  String get purchaseOneTime;
+
+  /// Price line; {price} comes from the store (or reference price).
+  ///
+  /// In en, this message translates to:
+  /// **'{price} · One-time purchase'**
+  String purchasePriceLine(String price);
+
+  /// Shown when the store price is not available.
+  ///
+  /// In en, this message translates to:
+  /// **'Reference price. The final price in your currency is shown by the App Store or Google Play.'**
+  String get purchaseReferencePriceNote;
+
+  /// Lifetime value.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional forensic reference'**
+  String get purchaseValueReference;
+
+  /// Lifetime value.
+  ///
+  /// In en, this message translates to:
+  /// **'Scientific calculators & laboratory tools'**
+  String get purchaseValueTools;
+
+  /// Lifetime value.
+  ///
+  /// In en, this message translates to:
+  /// **'Verified sources & evidence status'**
+  String get purchaseValueSources;
+
+  /// Lifetime value.
+  ///
+  /// In en, this message translates to:
+  /// **'Offline professional database'**
+  String get purchaseValueOffline;
+
+  /// Lifetime value.
+  ///
+  /// In en, this message translates to:
+  /// **'Learning & professional development'**
+  String get purchaseValueLearning;
+
+  /// Lifetime value.
+  ///
+  /// In en, this message translates to:
+  /// **'Future scientific content updates'**
+  String get purchaseValueUpdates;
+
+  /// Primary purchase button.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlock FORENSIC EXPERT'**
+  String get purchaseCta;
+
+  /// Below the purchase button.
+  ///
+  /// In en, this message translates to:
+  /// **'One-time purchase · No recurring subscription'**
+  String get purchaseFooter;
+
+  /// Free version section.
+  ///
+  /// In en, this message translates to:
+  /// **'Free version'**
+  String get purchaseFreeTitle;
+
+  /// What the free version includes.
+  ///
+  /// In en, this message translates to:
+  /// **'Try before you buy: a search demo, selected reference entries, selected tools and demo lessons.'**
+  String get purchaseFreeBody;
+
+  /// AI is not unlimited.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic AI is not included without limits: it has server costs. Any AI allowance will be stated clearly before purchase.'**
+  String get purchaseAiNote;
+
+  /// Shown when lifetime is active.
+  ///
+  /// In en, this message translates to:
+  /// **'Lifetime access is active'**
+  String get purchaseOwned;
+
+  /// Purchase tapped while store unavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchases are not available in this build.'**
+  String get purchaseUnavailableSnack;
+
+  /// Profile value: free access.
+  ///
+  /// In en, this message translates to:
+  /// **'Free version'**
+  String get accessFree;
+
+  /// Profile value: lifetime.
+  ///
+  /// In en, this message translates to:
+  /// **'Lifetime'**
+  String get accessLifetime;
 }
 
 class _AppLocalizationsDelegate
