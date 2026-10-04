@@ -15,6 +15,8 @@ import '../../../core/widgets/fe_data_components.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
 import '../../../domain/library/library_models.dart';
 import '../../common/favorite_button.dart';
+import '../../evidence/presentation/research_screens.dart';
+import '../../evidence/presentation/scientific_image.dart';
 import '../../library/presentation/content_entry_sections.dart';
 import '../knowledge_strings.dart';
 
@@ -127,6 +129,16 @@ class KnowledgeDetailScreen extends ConsumerWidget {
                         ),
                     ],
                   ],
+                  if (e.area == KnowledgeArea.histology) ...[
+                    const SizedBox(height: FeSpace.sm),
+                    FeBanner(
+                      key: const Key('histology.noDiagnosis'),
+                      icon: Icons.biotech_outlined,
+                      text: l.histologyNote,
+                    ),
+                  ],
+                  ScientificImageGallery(entityId: e.id),
+                  RelatedSection(entityId: e.id),
                   FeSectionHeader(l.knowledgeSources),
                   if (e.allSources.isEmpty)
                     Text(

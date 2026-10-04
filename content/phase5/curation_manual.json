@@ -1,0 +1,632 @@
+{
+ "methanol|metabolism": {
+  "reject": [
+   "PMC7808614",
+   "PMC10008642"
+  ],
+  "reason": "bakterial metabolizm / 2-nomzod: to‘qima fiksatsiyasi"
+ },
+ "isopropanol|metabolism": {
+  "reject": [
+   "PMC5894183",
+   "PMC5080687"
+  ],
+  "reason": "mikrob ishlab chiqarish / 2-nomzod: mikrob"
+ },
+ "acetone|metabolism": {
+  "reject": [
+   "PMC6330746",
+   "PMC10823632"
+  ],
+  "reason": "biotexnologik ishlab chiqarish / 2-nomzod: bakteriya"
+ },
+ "ethylene-glycol|metabolism": {
+  "reject": [
+   "PMC7158088"
+  ],
+  "reason": "mikrob shtammi metabolitlari"
+ },
+ "diethylene-glycol|metabolism": {
+  "reject": [
+   "PMC13502081",
+   "PMC13197575"
+  ],
+  "reason": "boshqa birikma (DEGME) metaboliti / 2-nomzod: boshqa birikma (1,4-butandiol)"
+ },
+ "toluene|metabolism": {
+  "reject": [
+   "PMC9569087",
+   "PMC5595782"
+  ],
+  "reason": "assotsiatsiya tadqiqoti, metabolizm haqida emas / 2-nomzod: bakteriya"
+ },
+ "butane|metabolism": {
+  "reject": [
+   "PMC10811727",
+   "PMC6056644"
+  ],
+  "reason": "mikrob metabolizmi / 2-nomzod: bakteriya"
+ },
+ "carbon-monoxide|metabolism": {
+  "reject": [
+   "PMC7432926",
+   "PMC11670904"
+  ],
+  "reason": "chekish biomarkeri, metabolizm emas / 2-nomzod: noaniq jumla"
+ },
+ "hydrogen-cyanide|metabolism": {
+  "reject": [
+   "PMC9887668",
+   "PMC11123099"
+  ],
+  "reason": "toksiklik mexanizmi, metabolizm emas / 2-nomzod: umumiy"
+ },
+ "hydrogen-sulfide|metabolism": {
+  "reject": [
+   "PMC11182692",
+   "PMC13176243"
+  ],
+  "reason": "ichak mikrobiotasi / 2-nomzod: mikrobiota"
+ },
+ "nitrous-oxide|metabolism": {
+  "reject": [
+   "PMC13394691"
+  ],
+  "reason": "biomonitoring, metabolizm emas"
+ },
+ "phosphine|metabolism": {
+  "reject": [
+   "PMC10757423"
+  ],
+  "reason": "hasharot rezistentligi"
+ },
+ "buprenorphine|metabolism": {
+  "reject": [
+   "PMC4919189"
+  ],
+  "reason": "analiz haqida, metabolizm emas"
+ },
+ "carfentanil|metabolism": {
+  "reject": [
+   "PMC10674982"
+  ],
+  "reason": "tarixiy eslatma, mazmunsiz"
+ },
+ "acetylfentanyl|metabolism": {
+  "reject": [
+   "PMC9629642"
+  ],
+  "reason": "rasm izohi"
+ },
+ "dextromethorphan|metabolism": {
+  "reject": [
+   "PMC11462627"
+  ],
+  "reason": "nojo‘ya ta’sir korrelyatsiyasi"
+ },
+ "cocaine|metabolism": {
+  "reject": [
+   "PMC9837138",
+   "PMC9502494"
+  ],
+  "reason": "terapevtik ferment strategiyasi / 2-nomzod: metabolomika"
+ },
+ "mda|metabolism": {
+  "reject": [
+   "PMC11816582",
+   "PMC11948839"
+  ],
+  "reason": "MDA-MB saraton hujayra liniyasi (boshqa ma’no) / 2-nomzod: saraton hujayra liniyalari"
+ },
+ "methamphetamine|metabolism": {
+  "reject": [
+   "PMC4704828"
+  ],
+  "reason": "o‘zaro ta’sir gipotezasi"
+ },
+ "methylphenidate|metabolism": {
+  "reject": [
+   "PMC6469618"
+  ],
+  "reason": "baliqlar ekotoksikologiyasi"
+ },
+ "cathinone|metabolism": {
+  "reject": [
+   "PMC9742833",
+   "PMC9783153"
+  ],
+  "reason": "kat bilan dori o‘zaro ta’siri / 2-nomzod: gipoteza"
+ },
+ "cbd|metabolism": {
+  "reject": [
+   "PMC12428432"
+  ],
+  "reason": "molekulyar docking"
+ },
+ "adb-butinaca|metabolism": {
+  "reject": [
+   "PMC13215650",
+   "PMC12886380"
+  ],
+  "reason": "konsentratsiya jumlasi, metabolizm emas / 2-nomzod: retention time siljishi"
+ },
+ "ketamine|metabolism": {
+  "reject": [
+   "PMC6838457"
+  ],
+  "reason": "kemiruvchilar tadqiqoti"
+ },
+ "pcp|metabolism": {
+  "reject": [
+   "PMC8635592"
+  ],
+  "reason": "boshqa birikma (3-MeO-PCP)"
+ },
+ "psilocybin|metabolism": {
+  "reject": [
+   "PMC11089204"
+  ],
+  "reason": "mazmunsiz umumiy jumla"
+ },
+ "ghb|metabolism": {
+  "reject": [
+   "PMC10238486"
+  ],
+  "reason": "metabolit nisbati, mazmunsiz"
+ },
+ "amphetamine|metabolism": {
+  "reject": [
+   "PMC8400571"
+  ],
+  "reason": "metabolizm haqida emas"
+ },
+ "norfentanyl|metabolism": {
+  "reject": [
+   "PMC6454115",
+   "PMC10416144"
+  ],
+  "reason": "boshqa birikma (furanyl norfentanyl) / 2-nomzod: biosensor"
+ },
+ "etonitazene|metabolism": {
+  "reject": [
+   "PMC12956958",
+   "PMC13391657"
+  ],
+  "reason": "boshqa birikma (fluoro-etonitazene) / 2-nomzod: boshqa birikma (metonitazene)"
+ },
+ "protonitazene|metabolism": {
+  "reject": [
+   "PMC12195359"
+  ],
+  "reason": "mazmunsiz (usul tavsifi)"
+ },
+ "difluoroethane|metabolism": {
+  "reject": [
+   "PMC6011111"
+  ],
+  "reason": "taxminiy (spekulyativ) jumla"
+ },
+ "lorazepam|metabolism": {
+  "reject": [
+   "PMC12953360"
+  ],
+  "reason": "umumiy, aniq emas"
+ },
+ "clonazepam|metabolism": {
+  "reject": [
+   "PMC12956958"
+  ],
+  "reason": "boshqa birikma (clonazafone)"
+ },
+ "flunitrazepam|metabolism": {
+  "reject": [
+   "PMC3929633"
+  ],
+  "reason": "tanlov asoslash jumlasi"
+ },
+ "flualprazolam|metabolism": {
+  "reject": [
+   "PMC9715448"
+  ],
+  "reason": "metabolitlar nomlanmagan"
+ },
+ "pentobarbital|metabolism": {
+  "reject": [
+   "PMC6314990"
+  ],
+  "reason": "kannabinoid tajribasi"
+ },
+ "bupropion|metabolism": {
+  "reject": [
+   "PMC5874814"
+  ],
+  "reason": "o‘zaro ta’sir ogohlantirishi"
+ },
+ "olanzapine|metabolism": {
+  "reject": [
+   "PMC10613299"
+  ],
+  "reason": "kontekstsiz"
+ },
+ "valproic-acid|metabolism": {
+  "reject": [
+   "PMC9108155"
+  ],
+  "reason": "umumiy jumla"
+ },
+ "lamotrigine|metabolism": {
+  "reject": [
+   "PMC11137871",
+   "PMC5833099"
+  ],
+  "reason": "bodring o‘simligida / 2-nomzod: korrelyatsiya"
+ },
+ "ibuprofen|metabolism": {
+  "reject": [
+   "PMC9195938"
+  ],
+  "reason": "mikroorganizmlar"
+ },
+ "metformin|metabolism": {
+  "reject": [
+   "PMC8946838",
+   "PMC7921791"
+  ],
+  "reason": "hujayra liniyasi / 2-nomzod: mexanizm"
+ },
+ "propranolol|metabolism": {
+  "reject": [
+   "PMC4917112"
+  ],
+  "reason": "bakteriyalar"
+ },
+ "verapamil|metabolism": {
+  "reject": [
+   "PMC7034088"
+  ],
+  "reason": "boshqa dori (HCPT) metabolizmi"
+ },
+ "colchicine|metabolism": {
+  "reject": [
+   "PMC10038372"
+  ],
+  "reason": "boshqa birikma (Gloriosine)"
+ },
+ "chlorpyrifos|metabolism": {
+  "reject": [
+   "PMC3466218"
+  ],
+  "reason": "zamburug‘ bioremediatsiyasi"
+ },
+ "paraquat|metabolism": {
+  "reject": [
+   "PMC13299595",
+   "PMC13210998"
+  ],
+  "reason": "metabolomik buzilish, metabolizm emas / 2-nomzod: bakteriya"
+ },
+ "malathion|metabolism": {
+  "reject": [
+   "PMC9502784"
+  ],
+  "reason": "bakteriyalar"
+ },
+ "carbofuran|metabolism": {
+  "reject": [
+   "PMC8989696",
+   "PMC8950912"
+  ],
+  "reason": "metabolit yo‘nalishi noaniq/noto‘g‘ri / 2-nomzod: bakteriya"
+ },
+ "brodifacoum|metabolism": {
+  "reject": [
+   "PMC13008109",
+   "PMC6765355"
+  ],
+  "reason": "atrof-muhit degradatsiyasi / 2-nomzod: noma’lum (taxmin)"
+ },
+ "ethanol|concentration": {
+  "reject": [
+   "PMC12839845",
+   "PMC5759182"
+  ],
+  "reason": "boshqa modda (formik kislota) / 2-nomzod: chegara tili (eng past o‘lim konsentratsiyasi)"
+ },
+ "methanol|concentration": {
+  "reject": [
+   "PMC12839845",
+   "PMC5759182"
+  ],
+  "reason": "boshqa modda (formik kislota) konsentratsiyasi / 2-nomzod: chegara tili"
+ },
+ "toluene|concentration": {
+  "reject": [
+   "PMC4539858"
+  ],
+  "reason": "kaliy, toluol emas"
+ },
+ "hydrogen-sulfide|concentration": {
+  "reject": [
+   "PMC11650590"
+  ],
+  "reason": "tiosulfat; normal/chegara qiymatlari"
+ },
+ "heroin|concentration": {
+  "reject": [
+   "PMC6829933",
+   "PMC10099738"
+  ],
+  "reason": "talqin chegarasi / 2-nomzod: morfin konsentratsiyasi (boshqa modda)"
+ },
+ "oxymorphone|concentration": {
+  "reject": [
+   "PMC6212520"
+  ],
+  "reason": "referens oraliqlar ro‘yxati (chegara tili)"
+ },
+ "norfentanyl|concentration": {
+  "reject": [
+   "PMC6454115"
+  ],
+  "reason": "boshqa birikma (cyclopropyl norfentanyl)"
+ },
+ "metonitazene|concentration": {
+  "reject": [
+   "PMC11324687"
+  ],
+  "reason": "boshqa birikma (N-pyrrolidino metonitazene)"
+ },
+ "protonitazene|concentration": {
+  "reject": [
+   "PMC12956980"
+  ],
+  "reason": "boshqa birikma (N-pyrrolidino protonitazene)"
+ },
+ "etonitazene|concentration": {
+  "reject": [
+   "PMC12956958",
+   "PMC11324687"
+  ],
+  "reason": "boshqa birikma (fluoro-etonitazene) / 2-nomzod: boshqa birikmalar"
+ },
+ "ephedrine|concentration": {
+  "reject": [
+   "PMC12732496"
+  ],
+  "reason": "boshqa birikma (psevdoefedrin)"
+ },
+ "thc|concentration": {
+  "reject": [
+   "PMC10536215"
+  ],
+  "reason": "THC-COOH, THC emas"
+ },
+ "pcp|concentration": {
+  "reject": [
+   "PMC11053433",
+   "PMC6946333"
+  ],
+  "reason": "boshqa birikma (3-MeO-PCP) / 2-nomzod: boshqa birikma (3-MeO-PCP)"
+ },
+ "ghb|concentration": {
+  "reject": [
+   "PMC5007834",
+   "PMC10196806"
+  ],
+  "reason": "o‘lim chegarasi tili / 2-nomzod: cut-off tili"
+ },
+ "temazepam|concentration": {
+  "reject": [
+   "PMC10385699"
+  ],
+  "reason": "toksik/fatal oraliq tili"
+ },
+ "bupropion|concentration": {
+  "reject": [
+   "PMC12735355"
+  ],
+  "reason": "doza, konsentratsiya emas"
+ },
+ "olanzapine|concentration": {
+  "reject": [
+   "PMC10477032"
+  ],
+  "reason": "terapevtik oraliq tili"
+ },
+ "quetiapine|concentration": {
+  "reject": [
+   "PMC11269378"
+  ],
+  "reason": "«toksik» chegara tili"
+ },
+ "carbamazepine|concentration": {
+  "reject": [
+   "PMC9170510",
+   "PMC5628224"
+  ],
+  "reason": "«fatal» chegara tili / 2-nomzod: chegara bosqichlari tili"
+ },
+ "valproic-acid|concentration": {
+  "reject": [
+   "PMC11090666"
+  ],
+  "reason": "normal oraliq tili"
+ },
+ "lamotrigine|concentration": {
+  "reject": [
+   "PMC11953093"
+  ],
+  "reason": "talqin oralig‘i"
+ },
+ "colchicine|concentration": {
+  "reject": [
+   "PMC9049641"
+  ],
+  "reason": "doza, konsentratsiya emas"
+ },
+ "malathion|concentration": {
+  "reject": [
+   "PMC8172840"
+  ],
+  "reason": "«lethal concentration» chegara tili"
+ },
+ "brodifacoum|concentration": {
+  "reject": [
+   "PMC5796583"
+  ],
+  "reason": "hayvon (boyo‘g‘li)"
+ },
+ "hydrogen-sulfide|analytical": {
+  "reject": [
+   "PMC11650590"
+  ],
+  "reason": "tiosulfat, H2S emas"
+ },
+ "acetylfentanyl|analytical": {
+  "reject": [
+   "PMC9629642"
+  ],
+  "reason": "kimyoviy degradatsiya mahsulotlari"
+ },
+ "furanylfentanyl|analytical": {
+  "reject": [
+   "PMC6314982"
+  ],
+  "reason": "vaqtga bog‘liq eskirgan da’vo"
+ },
+ "isotonitazene|analytical": {
+  "reject": [
+   "PMC11169013"
+  ],
+  "reason": "usul tafsiloti, mazmunsiz"
+ },
+ "metonitazene|analytical": {
+  "reject": [
+   "PMC11169013",
+   "PMC12794522"
+  ],
+  "reason": "inkubatsiya maydoni / 2-nomzod: qidiruv satri"
+ },
+ "protonitazene|analytical": {
+  "reject": [
+   "PMC12956980"
+  ],
+  "reason": "boshqa birikma"
+ },
+ "etonitazene|analytical": {
+  "reject": [
+   "PMC12956958",
+   "PMC11324687"
+  ],
+  "reason": "boshqa birikma / 2-nomzod: boshqa birikma"
+ },
+ "mitragynine|analytical": {
+  "reject": [
+   "PMC10934259"
+  ],
+  "reason": "rasm izohi"
+ },
+ "loperamide|analytical": {
+  "reject": [
+   "PMC3493557"
+  ],
+  "reason": "in vitro Ussing kamerasi"
+ },
+ "cocaine|analytical": {
+  "reject": [
+   "PMC7005170",
+   "PMC12471889"
+  ],
+  "reason": "atrof-muhit darajasi / 2-nomzod: ferment tadqiqoti"
+ },
+ "mda|analytical": {
+  "reject": [
+   "PMC3380914",
+   "PMC9496583"
+  ],
+  "reason": "malondialdegid (boshqa ma’no) / 2-nomzod: SERS metodi validatsiyasi (MDA ma’nosi noaniq)"
+ },
+ "alpha-pvp|analytical": {
+  "reject": [
+   "PMC7796222"
+  ],
+  "reason": "boshqa birikmalar (α-PHP, 4F-α-PVP)"
+ },
+ "jwh-018|analytical": {
+  "reject": [
+   "PMC6168621"
+  ],
+  "reason": "in vitro inkubatsiya"
+ },
+ "2c-b|analytical": {
+  "reject": [
+   "PMC6445230"
+  ],
+  "reason": "boshqa birikma (bk-2C-B)"
+ },
+ "bromazolam|analytical": {
+  "reject": [
+   "PMC12237981",
+   "PMC11306312"
+  ],
+  "reason": "epidemiologiya, metod emas / 2-nomzod: bromazolam ro‘yxatda aniq emas"
+ },
+ "clozapine|analytical": {
+  "reject": [
+   "PMC8589649"
+  ],
+  "reason": "retinoik kislota analizi"
+ },
+ "chlorpromazine|analytical": {
+  "reject": [
+   "PMC12294483"
+  ],
+  "reason": "fotokimyo"
+ },
+ "salicylic-acid|analytical": {
+  "reject": [
+   "PMC4451639",
+   "PMC10371099"
+  ],
+  "reason": "bakterial ferment / 2-nomzod: boshqa birikma"
+ },
+ "ibuprofen|analytical": {
+  "reject": [
+   "PMC13070318",
+   "PMC10610253"
+  ],
+  "reason": "suv umurtqasizlari / 2-nomzod: fizik-kimyoviy log D"
+ },
+ "colchicine|analytical": {
+  "reject": [
+   "PMC11232463"
+  ],
+  "reason": "o‘simlik"
+ },
+ "levamisole|analytical": {
+  "reject": [
+   "PMC3443238"
+  ],
+  "reason": "sintez tozaligi"
+ },
+ "chlorpyrifos|analytical": {
+  "reject": [
+   "PMC7369984",
+   "PMC3466218"
+  ],
+  "reason": "atrof-muhit ELISA / 2-nomzod: zamburug‘"
+ },
+ "parathion|analytical": {
+  "reject": [
+   "PMC4538366",
+   "PMC9124651"
+  ],
+  "reason": "metil-paration tozaligi / 2-nomzod: atrof-muhit HPTLC"
+ },
+ "thallium-sulfate|analytical": {
+  "reject": [
+   "PMC13017095"
+  ],
+  "reason": "kristallografiya"
+ }
+}

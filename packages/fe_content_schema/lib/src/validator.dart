@@ -4,6 +4,7 @@ import 'bundle.dart';
 import 'claim.dart';
 import 'concentration.dart';
 import 'enums.dart';
+import 'evidence_graph.dart';
 import 'jurisdiction.dart';
 import 'knowledge.dart';
 import 'source.dart';
@@ -55,6 +56,18 @@ abstract final class RuleCodes {
   /// Ko‘rib chiqilgan ma’lumot yangi paketda jimgina yo‘qolgan, pasaygan
   /// yoki versiyasi oshirilmay o‘zgargan (ReviewRegressionGuard).
   static const silentReviewRegression = 'FE027_SILENT_REVIEW_REGRESSION';
+
+  /// Research yozuvi: identifikatorsiz, yoki dissertatsiya/tezis/tezis
+  /// peer-reviewed maqola darajasida ko‘rsatilgan.
+  static const researchRecordInvalid = 'FE028_RESEARCH_RECORD_INVALID';
+  static const researchDuplicate = 'FE029_RESEARCH_DUPLICATE';
+  static const brokenLink = 'FE030_LINK_TO_UNKNOWN_ENTITY';
+  static const imageLicense = 'FE031_IMAGE_LICENSE_OR_METADATA';
+
+  /// Xabar qilingan konsentratsiya: namuna, kontekst va «chegara emas»
+  /// belgisi majburiy.
+  static const reportedConcentrationContext =
+      'FE032_CONCENTRATION_WITHOUT_CONTEXT';
 }
 
 /// Test ma’lumot ID’lari shu prefiks bilan boshlanadi — ko‘zga tashlanishi
@@ -247,6 +260,7 @@ class ContentValidator {
       isProduction,
     );
     _checkKnowledge(issues, bundle, sourcesById, resolver, isProduction);
+    _checkEvidenceGraph(issues, bundle, isProduction);
 
     return ValidationReport(List.unmodifiable(issues));
   }
@@ -732,6 +746,114 @@ class ContentValidator {
 
     for (final t in b.topics) {
       _checkTestData(issues, t.id, t.isTestData, isProduction);
+    }
+  }
+
+  void _checkEvidenceGraph(
+    List<ValidationIssue> issues,
+    ContentBundle b,
+    bool isProduction,
+  ) {
+    void err(String code, String id, String msg) =>
+        issues.add(ValidationIssue(code, IssueSeverity.error, id, msg));
+
+    final keys = <String, String>{};
+    for (final r in b.research) {
+      _checkTestData(issues, r.id, r.isTestData, isProduction);
+      if (!r.hasIdentifier || r.title.trim().isEmpty) {
+        err(
+          RuleCodes.researchRecordInvalid,
+          r.id,
+          'Needs a title and an identifier/URL.',
+        );
+      }
+      // Dalil darajasi turdan kuchli bo‘lmasligi kerak (A eng kuchli).
+      if (r.evidenceLevel.index < r.kind.maxEvidence.index) {
+        err(
+          RuleCodes.researchRecordInvalid,
+          r.id,
+          '${r.kind.code} cannot carry evidence level ${r.evidenceLevel.code}.',
+        );
+      }
+      if (r.status == ScientificStatus.verified ||
+          r.status == ScientificStatus.reviewed) {
+        err(
+          RuleCodes.statusMismatch,
+          r.id,
+          'Research records are not reviewed in this bundle.',
+        );
+      }
+      final k = r.dedupKey;
+      final prev = keys[k];
+      if (prev != null) {
+        err(RuleCodes.researchDuplicate, r.id, 'Duplicate of $prev ($k).');
+      } else {
+        keys[k] = r.id;
+      }
+    }
+
+    final known = <String>{
+      ...b.knownEntityIds,
+      for (final x in b.topics) x.id,
+      for (final x in b.recipes) x.reagentId,
+      for (final x in b.screeningTests) x.id,
+      for (final x in b.methods) x.id,
+      for (final x in b.emergingIssues) x.id,
+      for (final x in b.research) x.id,
+      for (final x in b.images) x.id,
+    };
+    for (final l in b.links) {
+      for (final id in [l.fromId, l.toId]) {
+        if (!known.contains(id)) {
+          err(
+            RuleCodes.brokenLink,
+            '${l.fromId}->${l.toId}',
+            'Unknown entity $id.',
+          );
+        }
+      }
+      if (l.basis.isEmpty) {
+        err(
+          RuleCodes.brokenLink,
+          '${l.fromId}->${l.toId}',
+          'Link needs a basis.',
+        );
+      }
+    }
+
+    for (final im in b.images) {
+      final ok =
+          allowedImageLicenses.contains(im.license) &&
+          im.attribution.isNotEmpty &&
+          (im.alt['en'] ?? '').isNotEmpty &&
+          !im.graphic &&
+          known.contains(im.entityId) &&
+          // Original sxema real natija sifatida ko‘rsatilmaydi.
+          !(im.isOriginalDiagram && im.representsRealData) &&
+          // Tashqi rasm — manba havolasi majburiy.
+          (im.isOriginalDiagram || (im.sourceUrl ?? '').isNotEmpty);
+      if (!ok) {
+        err(
+          RuleCodes.imageLicense,
+          im.id,
+          'License/attribution/alt/entity invalid.',
+        );
+      }
+    }
+
+    for (final c in b.claims) {
+      if (c.field != 'reported_concentration') continue;
+      final specimen = c.value['specimen'];
+      if (specimen is! List ||
+          specimen.isEmpty ||
+          c.value['context'] == null ||
+          c.value['not_a_threshold'] != true) {
+        err(
+          RuleCodes.reportedConcentrationContext,
+          c.claimId,
+          'Reported concentration needs specimen, context and not_a_threshold.',
+        );
+      }
     }
   }
 }

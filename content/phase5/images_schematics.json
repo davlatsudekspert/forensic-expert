@@ -1,0 +1,233 @@
+[
+ {
+  "image_id": "IMG-SCH-gcms-workflow",
+  "kind": "schematic",
+  "entity_id": "method-gcms",
+  "file": "phase5/images/schematics/gcms-workflow.png",
+  "sha256": "ec96fb03cca2432af23b2e4c999d85b65b3c8a78ada035876cd43387e38e085a",
+  "title": {
+   "en": "GC-MS — instrument workflow"
+  },
+  "alt": {
+   "en": "Schematic diagram: GC-MS — instrument workflow. Illustrative, not experimental data."
+  },
+  "creator": "FORENSIC EXPERT (original diagram)",
+  "source_name": "FORENSIC EXPERT",
+  "source_url": null,
+  "license": "original_work",
+  "attribution": "Original schematic — FORENSIC EXPERT",
+  "is_original_diagram": true,
+  "represents_real_data": false,
+  "accessed": "2026-10-04"
+ },
+ {
+  "image_id": "IMG-SCH-lcmsms-workflow",
+  "kind": "schematic",
+  "entity_id": "method-lcmsms",
+  "file": "phase5/images/schematics/lcmsms-workflow.png",
+  "sha256": "4a9c2ee648ec156b9cf525030b1442f2f4dda0ef5322156b71d664dde09a7a98",
+  "title": {
+   "en": "LC-MS/MS — instrument workflow"
+  },
+  "alt": {
+   "en": "Schematic diagram: LC-MS/MS — instrument workflow. Illustrative, not experimental data."
+  },
+  "creator": "FORENSIC EXPERT (original diagram)",
+  "source_name": "FORENSIC EXPERT",
+  "source_url": null,
+  "license": "original_work",
+  "attribution": "Original schematic — FORENSIC EXPERT",
+  "is_original_diagram": true,
+  "represents_real_data": false,
+  "accessed": "2026-10-04"
+ },
+ {
+  "image_id": "IMG-SCH-hsgc-workflow",
+  "kind": "schematic",
+  "entity_id": "method-headspace-gc",
+  "file": "phase5/images/schematics/hsgc-workflow.png",
+  "sha256": "f41dd22f0eb28edd503979742d1fc5be729976bf10a32467a3b695703d023e91",
+  "title": {
+   "en": "Headspace GC — workflow"
+  },
+  "alt": {
+   "en": "Schematic diagram: Headspace GC — workflow. Illustrative, not experimental data."
+  },
+  "creator": "FORENSIC EXPERT (original diagram)",
+  "source_name": "FORENSIC EXPERT",
+  "source_url": null,
+  "license": "original_work",
+  "attribution": "Original schematic — FORENSIC EXPERT",
+  "is_original_diagram": true,
+  "represents_real_data": false,
+  "accessed": "2026-10-04"
+ },
+ {
+  "image_id": "IMG-SCH-hplc-workflow",
+  "kind": "schematic",
+  "entity_id": "method-hplc",
+  "file": "phase5/images/schematics/hplc-workflow.png",
+  "sha256": "201b3b1ba98b99c629ff7303ebfa853892bf37c4b7c6272b2077c8901ec61133",
+  "title": {
+   "en": "HPLC — workflow"
+  },
+  "alt": {
+   "en": "Schematic diagram: HPLC — workflow. Illustrative, not experimental data."
+  },
+  "creator": "FORENSIC EXPERT (original diagram)",
+  "source_name": "FORENSIC EXPERT",
+  "source_url": null,
+  "license": "original_work",
+  "attribution": "Original schematic — FORENSIC EXPERT",
+  "is_original_diagram": true,
+  "represents_real_data": false,
+  "accessed": "2026-10-04"
+ },
+ {
+  "image_id": "IMG-SCH-sample-prep-workflow",
+  "kind": "schematic",
+  "entity_id": "method-spe",
+  "file": "phase5/images/schematics/sample-prep-workflow.png",
+  "sha256": "1d43b742cb42fe2577a5461bbb0590148bdd099811522e5dbd89b256f0c183da",
+  "title": {
+   "en": "Sample preparation — typical workflow"
+  },
+  "alt": {
+   "en": "Schematic diagram: Sample preparation — typical workflow. Illustrative, not experimental data."
+  },
+  "creator": "FORENSIC EXPERT (original diagram)",
+  "source_name": "FORENSIC EXPERT",
+  "source_url": null,
+  "license": "original_work",
+  "attribution": "Original schematic — FORENSIC EXPERT",
+  "is_original_diagram": true,
+  "represents_real_data": false,
+  "accessed": "2026-10-04"
+ },
+ {
+  "image_id": "IMG-SCH-screen-confirm",
+  "kind": "schematic",
+  "entity_id": "scr-immunoassay-drugs",
+  "file": "phase5/images/schematics/screen-confirm.png",
+  "sha256": "2569d19bafd35c7567b0d669705786e9c3f91193450c9a54a4378680a2366f36",
+  "title": {
+   "en": "Screening → confirmation"
+  },
+  "alt": {
+   "en": "Schematic diagram: Screening → confirmation. Illustrative, not experimental data."
+  },
+  "creator": "FORENSIC EXPERT (original diagram)",
+  "source_name": "FORENSIC EXPERT",
+  "source_url": null,
+  "license": "original_work",
+  "attribution": "Original schematic — FORENSIC EXPERT",
+  "is_original_diagram": true,
+  "represents_real_data": false,
+  "accessed": "2026-10-04"
+ },
+ {
+  "image_id": "IMG-SCH-histology-workflow",
+  "kind": "schematic",
+  "entity_id": "his-sampling",
+  "file": "phase5/images/schematics/histology-workflow.png",
+  "sha256": "0d25e25dc3ee1419eade6359298417afbf2552253fea8e69e47c6f598b49b1a1",
+  "title": {
+   "en": "Histology — laboratory workflow"
+  },
+  "alt": {
+   "en": "Schematic diagram: Histology — laboratory workflow. Illustrative, not experimental data."
+  },
+  "creator": "FORENSIC EXPERT (original diagram)",
+  "source_name": "FORENSIC EXPERT",
+  "source_url": null,
+  "license": "original_work",
+  "attribution": "Original schematic — FORENSIC EXPERT",
+  "is_original_diagram": true,
+  "represents_real_data": false,
+  "accessed": "2026-10-04"
+ },
+ {
+  "image_id": "IMG-SCH-validation-parameters",
+  "kind": "schematic",
+  "entity_id": "method-validation",
+  "file": "phase5/images/schematics/validation-parameters.png",
+  "sha256": "35696d6c9681835471385114f9e2bedbb0e0c3319fafe17774b494ff893b4b20",
+  "title": {
+   "en": "Method validation — typical parameters"
+  },
+  "alt": {
+   "en": "Schematic diagram: Method validation — typical parameters. Illustrative, not experimental data."
+  },
+  "creator": "FORENSIC EXPERT (original diagram)",
+  "source_name": "FORENSIC EXPERT",
+  "source_url": null,
+  "license": "original_work",
+  "attribution": "Original schematic — FORENSIC EXPERT",
+  "is_original_diagram": true,
+  "represents_real_data": false,
+  "accessed": "2026-10-04"
+ },
+ {
+  "image_id": "IMG-SCH-tlc-plate",
+  "kind": "schematic",
+  "entity_id": "method-tlc",
+  "file": "phase5/images/schematics/tlc-plate.png",
+  "sha256": "5c7b75a97709c78fddd0fb9fc7ec0372e2eff68239cb58be482a1071df0751ac",
+  "title": {
+   "en": "TLC — plate layout"
+  },
+  "alt": {
+   "en": "Schematic diagram: TLC — plate layout. Illustrative, not experimental data."
+  },
+  "creator": "FORENSIC EXPERT (original diagram)",
+  "source_name": "FORENSIC EXPERT",
+  "source_url": null,
+  "license": "original_work",
+  "attribution": "Original schematic — FORENSIC EXPERT",
+  "is_original_diagram": true,
+  "represents_real_data": false,
+  "accessed": "2026-10-04"
+ },
+ {
+  "image_id": "IMG-SCH-immunoassay-principle",
+  "kind": "schematic",
+  "entity_id": "method-immunoassay",
+  "file": "phase5/images/schematics/immunoassay-principle.png",
+  "sha256": "64fb375d685fd8f60cd541164c2d904ca0c648df40a087e47b7c3fa41ad6038f",
+  "title": {
+   "en": "Competitive immunoassay — principle"
+  },
+  "alt": {
+   "en": "Schematic diagram: Competitive immunoassay — principle. Illustrative, not experimental data."
+  },
+  "creator": "FORENSIC EXPERT (original diagram)",
+  "source_name": "FORENSIC EXPERT",
+  "source_url": null,
+  "license": "original_work",
+  "attribution": "Original schematic — FORENSIC EXPERT",
+  "is_original_diagram": true,
+  "represents_real_data": false,
+  "accessed": "2026-10-04"
+ },
+ {
+  "image_id": "IMG-SCH-postmortem-specimens",
+  "kind": "schematic",
+  "entity_id": "bio-sampling-site",
+  "file": "phase5/images/schematics/postmortem-specimens.png",
+  "sha256": "b59e3e2b029ba7c0d3f51b294fc42371e9aeddbc591fce566032ae6d074558c8",
+  "title": {
+   "en": "Postmortem specimens — overview"
+  },
+  "alt": {
+   "en": "Schematic diagram: Postmortem specimens — overview. Illustrative, not experimental data."
+  },
+  "creator": "FORENSIC EXPERT (original diagram)",
+  "source_name": "FORENSIC EXPERT",
+  "source_url": null,
+  "license": "original_work",
+  "attribution": "Original schematic — FORENSIC EXPERT",
+  "is_original_diagram": true,
+  "represents_real_data": false,
+  "accessed": "2026-10-04"
+ }
+]

@@ -1,0 +1,179 @@
+{
+ "met-deriv|principle": {
+  "reject": [
+   "PMC12940598"
+  ],
+  "reason": "oleorezin (sohadan tashqari)"
+ },
+ "met-calibration|principle": {
+  "reject": [
+   "PMC10582484",
+   "PMC11755661"
+  ],
+  "reason": "tor kontekst (soch), umumiy emas / 2-nomzod: metodga xos raqamlar, umumiy emas"
+ },
+ "rea-marquis|composition": {
+  "reject": [
+   "PMC8588055"
+  ],
+  "reason": "tadqiqotdagi modifikatsiyalangan protsedura, retsept emas"
+ },
+ "rea-mecke|composition": {
+  "reject": [
+   "PMC8635566"
+  ],
+  "reason": "tarixiy modifikatsiya, retsept emas"
+ },
+ "rea-dragendorff|composition": {
+  "reject": [
+   "PMC3032759"
+  ],
+  "reason": "to‘liq bo‘lmagan retsept (faqat bitta eritma) — adashtirishi mumkin"
+ },
+ "rea-iodoplatinate|composition": {
+  "reject": [
+   "PMC3596733"
+  ],
+  "reason": "«oldin tasvirlanganidek» — mazmun yo‘q"
+ },
+ "scr-benzo-ia|limitation": {
+  "reject": [
+   "PMC8746686"
+  ],
+  "reason": "maydon mos emas (ijobiy natija)"
+ },
+ "scr-fentanyl-ia|application": {
+  "reject": [
+   "PMC12430130"
+  ],
+  "reason": "umumiy texnologiya sharhi"
+ },
+ "scr-oral-fluid|limitation": {
+  "reject": [
+   "PMC10968443",
+   "PMC6856818"
+  ],
+  "reason": "cheklov emas / 2-nomzod: cheklov emas"
+ },
+ "fm-death-investigation|definition": {
+  "reject": [
+   "PMC12325475"
+  ],
+  "reason": "g‘ayrioddiy holat jumlasi"
+ },
+ "fm-rigor-mortis|definition": {
+  "reject": [
+   "PMC5863043",
+   "PMC12560940"
+  ],
+  "reason": "boshqa organizm (Dictyostelium) / 2-nomzod: mollyuska (adductor muscle)"
+ },
+ "fm-pmi-methods|limitation": {
+  "reject": [
+   "PMC12346081"
+  ],
+  "reason": "mazmunsiz"
+ },
+ "fm-drowning|limitation": {
+  "reject": [
+   "PMC11850479"
+  ],
+  "reason": "mazmunsiz tarixiy jumla"
+ },
+ "fm-burns|marker": {
+  "reject": [
+   "PMC12609627"
+  ],
+  "reason": "bitta holat talqini (qoida emas)"
+ },
+ "fm-electrical|definition": {
+  "reject": [
+   "PMC12009613",
+   "PMC10014766"
+  ],
+  "reason": "usul tavsifi / 2-nomzod: bitta holat"
+ },
+ "fm-hyperthermia|definition": {
+  "reject": [
+   "PMC10531952",
+   "PMC6373338"
+  ],
+  "reason": "mazmunsiz / 2-nomzod: ro‘yxat"
+ },
+ "fm-sex-estimation|marker": {
+  "reject": [
+   "PMC11627412",
+   "PMC10121348"
+  ],
+  "reason": "maqsad jumlasi / 2-nomzod: maqsad jumlasi"
+ },
+ "fm-stature-estimation|marker": {
+  "reject": [
+   "PMC11732771"
+  ],
+  "reason": "iqtibos parchasi"
+ },
+ "fm-dvi|definition": {
+  "reject": [
+   "PMC7646573"
+  ],
+  "reason": "konferensiyalar ro‘yxati"
+ },
+ "fm-pm-imaging|definition": {
+  "reject": [
+   "PMC11953209",
+   "PMC7220088"
+  ],
+  "reason": "tadqiqot maqsadi / 2-nomzod: bitta holat protsedurasi"
+ },
+ "his-sampling|principle": {
+  "reject": [
+   "PMC7220088",
+   "PMC12841370"
+  ],
+  "reason": "mazmunsiz / 2-nomzod: mavzu mos emas"
+ },
+ "his-he-stain|principle": {
+  "reject": [
+   "PMC1550228",
+   "PMC3458269"
+  ],
+  "reason": "mazmunsiz / 2-nomzod: mazmunsiz"
+ },
+ "his-putrefaction-artifact|limitation": {
+  "reject": [
+   "PMC13340943"
+  ],
+  "reason": "bitta holat"
+ },
+ "his-drowning|limitation": {
+  "reject": [
+   "PMC7220088"
+  ],
+  "reason": "bitta holat"
+ },
+ "his-sids|limitation": {
+  "reject": [
+   "PMC12841370"
+  ],
+  "reason": "biokimyo, gistologiya emas"
+ },
+ "bio-tryptase|marker": {
+  "reject": [
+   "PMC12584128"
+  ],
+  "reason": "diagnostik chegara tili"
+ },
+ "bio-insulin-cpeptide|marker": {
+  "reject": [
+   "PMC9636090"
+  ],
+  "reason": "kontekstsiz o‘rtacha qiymatlar"
+ },
+ "bio-cocaine-stability|limitation": {
+  "reject": [
+   "PMC8839019"
+  ],
+  "reason": "tadqiqot maqsadi"
+ }
+}

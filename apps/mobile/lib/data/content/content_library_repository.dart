@@ -103,6 +103,7 @@ class ContentLibraryRepository implements LibraryRepository {
           access: r.read<String>('tier_access') == 'free'
               ? EntryAccess.free
               : EntryAccess.lifetime,
+          group: r.readNullable<String>('substance_group'),
           details: EntryDetails(
             entityKind: r.read<String>('entity_kind'),
             packVersion: packVersion,

@@ -16,6 +16,12 @@ abstract final class Routes {
   static const forensicMedicine = '/home/area/forensicMedicine';
   static const biochemistry = '/home/area/biochemistry';
   static const exam = '/home/learn/exam';
+  static const histology = '/home/area/histology';
+  static const research = '/home/research';
+  static String researchFor(String entityId) =>
+      Uri(path: research, queryParameters: {'entity': entityId}).toString();
+  static String researchEntry(String id) => '/home/research/$id';
+  static String image(String id) => '/home/image/$id';
   static const quiz = '/home/learn/quiz';
   static const flashcards = '/home/learn/flashcards';
 

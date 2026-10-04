@@ -1,0 +1,4231 @@
+[
+ {
+  "target": "met-gcms|principle",
+  "entity": "method-gcms",
+  "field": "principle",
+  "query": "\"gas chromatography-mass spectrometry\"[Title/Abstract] AND (forensic OR postmortem OR autopsy OR medicolegal)",
+  "patterns": [
+   "GC[-–]MS|gas chromatography[-–‐ ]mass spectrometry",
+   "separat|volatil|thermally stable|electron (impact|ionization)",
+   "mass spectr|spectra|library|fragment"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC9325463",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Postmortem forensic toxicology cases: A retrospective review from Milan, Italy.",
+    "sentence": "Additionally, Blood Alcohol Concentration and detection of volatile substances were obtained with Head Space‐Gas Chromatography–Mass Spectrometry system.",
+    "journal": "Journal of forensic sciences",
+    "year": "2022",
+    "doi": "10.1111/1556-4029.15050",
+    "pmid": "35506762",
+    "authors": [
+     "Di Candia D",
+     "Giordano G",
+     "Boracchi M",
+     "Zoja R"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "met-gcms|limitation",
+  "entity": "method-gcms",
+  "field": "limitation",
+  "query": "\"gas chromatography-mass spectrometry\" derivatization (forensic OR postmortem OR autopsy OR medicolegal)",
+  "patterns": [
+   "GC[-–]MS|gas chromatography[-–‐ ]mass spectrometry",
+   "derivati[sz]ation|non-?volatile|thermally (labile|unstable)|polar"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC11929145",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "The Role of Toxicology Investigations in Overdose Deaths.",
+    "sentence": "However, GC-MS has certain limitations, including its ineffectiveness in analyzing non-volatile, polar, or thermolabile compounds, which may degrade at the high temperatures required for gas chromatography.",
+    "journal": "Cureus",
+    "year": "2025",
+    "doi": "10.7759/cureus.79352",
+    "pmid": "40125171",
+    "authors": [
+     "Sacco MA",
+     "Gualtieri S",
+     "Spiliopoulou C",
+     "Tarallo AP",
+     "Verrina MC",
+     "Aquila I"
+    ]
+   },
+   {
+    "pmcid": "PMC12567947",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Analytical Methods for the Determination of Diamorphine (Heroin) in Biological Matrices: A Review.",
+    "sentence": "GC–MS remains the workhorse for hair and sweat ultra-trace screening after derivatization.",
+    "journal": "Toxics",
+    "year": "2025",
+    "doi": "10.3390/toxics13100867",
+    "pmid": "41150567",
+    "authors": [
+     "Al-Asmari AI"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "met-gcfid|application",
+  "entity": "method-gc-fid",
+  "field": "application",
+  "query": "\"GC-FID\" (ethanol OR alcohol OR volatile) blood",
+  "patterns": [
+   "GC[-–]FID|flame ionization detect",
+   "ethanol|alcohol|volatile"
+  ],
+  "allow_methods": true,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC9331811",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Development of a Gas-Tight Syringe Headspace GC-FID Method for the Detection of Ethanol, and a Description of the Legal and Practical Framework for Its Analysis, in Samples of English and Welsh Motorists' Blood and Urine.",
+    "sentence": "The use of a dual-column, dual-detector HS-GC-FID to quantitate ethanol is a common analytical technique in forensic toxicology; however, most analytical systems utilise pressure-balance injection rather than a simplified gas-tight syringe, as per this technique.",
+    "journal": "Molecules (Basel, Switzerland)",
+    "year": "2022",
+    "doi": "10.3390/molecules27154771",
+    "pmid": "35897946",
+    "authors": [
+     "Taylor L",
+     "Saskőy L",
+     "Brodie T",
+     "Remeškevičius V",
+     "Moir HJ",
+     "Barker J"
+    ]
+   },
+   {
+    "pmcid": "PMC8840458",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Modeling Postmortem Ethanol Production/Insights into the Origin of Higher Alcohols.",
+    "sentence": "The most applied analytical methodology to detect ethanol and higher alcohols, among other congeners, in biological specimens and alcoholic beverages, is gas chromatography (GC) engaged to flame ionization detector (FID), using either direct or, most often, head space (HS) sampling.",
+    "journal": "Molecules (Basel, Switzerland)",
+    "year": "2022",
+    "doi": "10.3390/molecules27030700",
+    "pmid": "35163964",
+    "authors": [
+     "Boumba VA"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "met-hsgc|application",
+  "entity": "method-headspace-gc",
+  "field": "application",
+  "query": "\"headspace gas chromatography\" (ethanol OR alcohol OR volatile)",
+  "patterns": [
+   "head-?space",
+   "gas chromatograph|\\bGC\\b",
+   "ethanol|alcohol|volatile"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC9144713",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Comparative Study of Sample Carriers for the Identification of Volatile Compounds in Biological Fluids Using Raman Spectroscopy.",
+    "sentence": "For higher accuracy and precision, ethanol is determined in human blood through various types of gas chromatography (GC), including direct injection GC and headspace gas chromatography (HS-GC).",
+    "journal": "Molecules (Basel, Switzerland)",
+    "year": "2022",
+    "doi": "10.3390/molecules27103279",
+    "pmid": "35630756",
+    "authors": [
+     "Papaspyridakou P",
+     "Lykouras M",
+     "Kontoyannis C",
+     "Orkoula M"
+    ]
+   },
+   {
+    "pmcid": "PMC9331811",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Development of a Gas-Tight Syringe Headspace GC-FID Method for the Detection of Ethanol, and a Description of the Legal and Practical Framework for Its Analysis, in Samples of English and Welsh Motorists' Blood and Urine.",
+    "sentence": "Headspace gas chromatography with flame ionisation detection (GC-FID) is the industry standard alcohol analysis technique, due to its effectiveness at detecting volatile compounds with minimal sample preparation.",
+    "journal": "Molecules (Basel, Switzerland)",
+    "year": "2022",
+    "doi": "10.3390/molecules27154771",
+    "pmid": "35897946",
+    "authors": [
+     "Taylor L",
+     "Saskőy L",
+     "Brodie T",
+     "Remeškevičius V",
+     "Moir HJ",
+     "Barker J"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "met-lcmsms|principle",
+  "entity": "method-lcmsms",
+  "field": "principle",
+  "query": "\"LC-MS/MS\"[Title/Abstract] AND (forensic OR postmortem OR autopsy OR medicolegal) AND (sensitivity OR selectivity)",
+  "patterns": [
+   "LC[-–]MS/MS|liquid chromatography[-–‐ ]tandem mass spectrometry",
+   "sensitiv|selectiv|specific",
+   "(is|are|offers|provides|allows|enables|has become)\\b"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC11435590",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Paraquat Poisoning: Insights from Autopsy, Histology, and Liquid Chromatography with Tandem Mass Spectrometry in Multidisciplinary Forensic Toxicology Practice.",
+    "sentence": "This study aimed to evaluate autopsy findings, histopathology, and quantitative analysis of PQ in post-mortem human serum samples using liquid chromatography-tandem mass spectrometry (LC-MS/MS), a simple, sensitive, and specific method.",
+    "journal": "Toxics",
+    "year": "2024",
+    "doi": "10.3390/toxics12090675",
+    "pmid": "39330603",
+    "authors": [
+     "Nuwongsa I",
+     "Markmee T",
+     "Pholpo N",
+     "Chockjamsai M",
+     "Monum T",
+     "Amornlertwatana Y"
+    ]
+   },
+   {
+    "pmcid": "PMC11269451",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Development of an LC-MS/MS method for the determination of five psychoactive drugs in postmortem urine by optimization of enzymatic hydrolysis of glucuronide conjugates.",
+    "sentence": "Liquid chromatography–tandem mass spectrometry (LC–MS/MS), which is highly specific and sensitive and is capable of the simultaneous measurement of multiple analytes, is frequently used for these toxicological analyses.",
+    "journal": "Forensic toxicology",
+    "year": "2024",
+    "doi": "10.1007/s11419-024-00685-1",
+    "pmid": "38557936",
+    "authors": [
+     "Matsuo T",
+     "Ogawa T",
+     "Iwai M",
+     "Kubo K",
+     "Kondo F",
+     "Seno H"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "met-lcmsms|matrix",
+  "entity": "method-lcmsms",
+  "field": "limitation",
+  "query": "\"matrix effect\" \"LC-MS/MS\" (blood OR postmortem)",
+  "patterns": [
+   "matrix effects?",
+   "ion (suppression|enhancement)|suppress|enhance"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC10761401",
+    "license": "CC BY",
+    "section": "DISCUSS",
+    "title": "Quantification of 108 illicit drugs and metabolites in bile matrix by LC-MS/MS for the toxicological testing of sudden death cases.",
+    "sentence": "Testing matrix effect, we found that the present method was not ideal for the opioid buprenorphine and the metabolite of cannabinoids 11-Nor-9-carboxy-Δ9-tetrahydrocannabinol because of the suppression due to the matrix.",
+    "journal": "Archives of toxicology",
+    "year": "2024",
+    "doi": "10.1007/s00204-023-03631-z",
+    "pmid": "38051366",
+    "authors": [
+     "Franzin M",
+     "Ruoso R",
+     "Peruch M",
+     "Stocco G",
+     "D'Errico S",
+     "Addobbati R"
+    ]
+   },
+   {
+    "pmcid": "PMC6321130",
+    "license": "CC BY",
+    "section": "RESULTS",
+    "title": "A Review on Liquid Chromatography-Tandem Mass Spectrometry Methods for Rapid Quantification of Oncology Drugs.",
+    "sentence": "Efficient sample preparation to avoid severe signal suppression due to the matrix effect is the first key step in achieving high sensitivity and specificity of rapid LC-MS/MS methods.",
+    "journal": "Pharmaceutics",
+    "year": "2018",
+    "doi": "10.3390/pharmaceutics10040221",
+    "pmid": "30413076",
+    "authors": [
+     "Wong AL",
+     "Xiang X",
+     "Ong PS",
+     "Mitchell EQY",
+     "Syn N",
+     "Wee I"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "met-hplc|application",
+  "entity": "method-hplc",
+  "field": "application",
+  "query": "HPLC (\"diode array\" OR \"UV detection\") (forensic OR postmortem OR autopsy OR medicolegal)",
+  "patterns": [
+   "\\bHPLC\\b|high[- ]performance liquid chromatography",
+   "diode[- ]array|\\bDAD\\b|UV|ultraviolet"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC12567947",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Analytical Methods for the Determination of Diamorphine (Heroin) in Biological Matrices: A Review.",
+    "sentence": "HPLC with UV, fluorescence or diode-array detection enables robust quantification of morphine and its glucuronides in pharmacokinetic and clinical settings.",
+    "journal": "Toxics",
+    "year": "2025",
+    "doi": "10.3390/toxics13100867",
+    "pmid": "41150567",
+    "authors": [
+     "Al-Asmari AI"
+    ]
+   },
+   {
+    "pmcid": "PMC9144076",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Development, Optimization, and Validation of Forensic Analytical Method for Quantification of Anticholinesterase Pesticides in Biological Matrices from Suspected Cases of Animal Poisoning.",
+    "sentence": "The purpose of the present study was to develop and validate a method of high-performance liquid chromatography with diode array detector (HPLC–DAD) for the identification and quantitation of n-methyl carbamates, organophosphates and respective metabolites from biological samples of animals that were suspected of poisoning.",
+    "journal": "Toxics",
+    "year": "2022",
+    "doi": "10.3390/toxics10050269",
+    "pmid": "35622682",
+    "authors": [
+     "Fukushima AR",
+     "Peña-Muñoz JW",
+     "Leoni LAB",
+     "Nicoletti MA",
+     "Ferreira GM",
+     "Delorenzi JCMOB"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "met-tlc|application",
+  "entity": "method-tlc",
+  "field": "application",
+  "query": "\"thin-layer chromatography\" (drugs OR toxicology) screening",
+  "patterns": [
+   "thin[- ]layer chromatography|\\bTLC\\b",
+   "screen|identif|simple|inexpensive|low[- ]cost|rapid"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC2688477",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Using molecular similarity to highlight the challenges of routine immunoassay-based drug of abuse/toxicology screening in emergency medicine.",
+    "sentence": "Immunoassays have steadily displaced other DOA/Tox screening methods such as thin-layer chromatography or colorimetric assays.",
+    "journal": "BMC emergency medicine",
+    "year": "2009",
+    "doi": "10.1186/1471-227X-9-5",
+    "pmid": "19400959",
+    "authors": [
+     "Krasowski MD",
+     "Pizon AF",
+     "Siam MG",
+     "Giannoutsos S",
+     "Iyer M",
+     "Ekins S"
+    ]
+   },
+   {
+    "pmcid": "PMC9860899",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "A Non-Instrumental Green Analytical Method Based on Surfactant-Assisted Dispersive Liquid-Liquid Microextraction-Thin-Layer Chromatography-Smartphone-Based Digital Image Colorimetry(SA-DLLME-TLC-SDIC) for Determining Favipiravir in Biological Samples.",
+    "sentence": "TLC is one of the earliest planar chromatographic methods and is still used to separate and identify organic analytes in a mixture.",
+    "journal": "Molecules (Basel, Switzerland)",
+    "year": "2023",
+    "doi": "10.3390/molecules28020529",
+    "pmid": "36677588",
+    "authors": [
+     "Jain B",
+     "Jain R",
+     "Jaiswal PK",
+     "Zughaibi T",
+     "Sharma T",
+     "Kabir A"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "met-uvvis|application",
+  "entity": "method-uvvis",
+  "field": "application",
+  "query": "spectrophotometric (carboxyhemoglobin OR \"UV-Vis\") (forensic OR postmortem OR autopsy OR medicolegal)",
+  "patterns": [
+   "spectrophotometr|UV[-–/ ]?Vis",
+   "determin|measur|quantif"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC8246848",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Hydrogen cyanide and carboxyhemoglobin assessment in an open space fire-related fatality.",
+    "sentence": "COHb was determined by spectrophotometry as recommended by Katsumata et al. in 1982.",
+    "journal": "Journal of forensic sciences",
+    "year": "2021",
+    "doi": "10.1111/1556-4029.14649",
+    "pmid": "33369895",
+    "authors": [
+     "Tabian D",
+     "Bulgaru Iliescu D",
+     "Iov T",
+     "Barna B",
+     "Toma SI",
+     "Drochioiu G"
+    ]
+   },
+   {
+    "pmcid": "PMC12325415",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Contactless in vitro detection of carboxyhemoglobin using hyperspectral imaging (HSI).",
+    "sentence": "However, this metric is usually determined by spectrophotometry in the laboratory.",
+    "journal": "Forensic science, medicine, and pathology",
+    "year": "2025",
+    "doi": "10.1007/s12024-025-00949-1",
+    "pmid": "39904957",
+    "authors": [
+     "Czarkowski P",
+     "Babian C",
+     "Lüdtke S",
+     "Baumann S",
+     "Dreßler J"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "met-immunoassay|principle",
+  "entity": "method-immunoassay",
+  "field": "principle",
+  "query": "immunoassay antibody drugs screening principle",
+  "patterns": [
+   "immunoassays?",
+   "antibod",
+   "bind|antigen|competit"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC2688477",
+    "license": "CC BY",
+    "section": "RESULTS",
+    "title": "Using molecular similarity to highlight the challenges of routine immunoassay-based drug of abuse/toxicology screening in emergency medicine.",
+    "sentence": "All cocaine screening immunoassays currently marketed in the United States use antibodies raised against benzoylecognine, one of the two major cocaine metabolites in humans, as the antigenic target (Additional file 1, tab T).",
+    "journal": "BMC emergency medicine",
+    "year": "2009",
+    "doi": "10.1186/1471-227X-9-5",
+    "pmid": "19400959",
+    "authors": [
+     "Krasowski MD",
+     "Pizon AF",
+     "Siam MG",
+     "Giannoutsos S",
+     "Iyer M",
+     "Ekins S"
+    ]
+   },
+   {
+    "pmcid": "PMC3231171",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Small molecule immunosensing using surface plasmon resonance.",
+    "sentence": "Immunoassays involve the binding of an antibody to its target antigen, and so the antibody, being a high mass (approximately 150 kDa) protein, can act as the signal generator in SPR transduction.",
+    "journal": "Sensors (Basel, Switzerland)",
+    "year": "2010",
+    "doi": "10.3390/s100807323",
+    "pmid": "22163605",
+    "authors": [
+     "Mitchell J"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "met-spectroscopy|application",
+  "entity": "method-spectroscopy",
+  "field": "application",
+  "query": "(Raman OR FTIR OR \"infrared spectroscopy\") (seized drugs OR forensic)",
+  "patterns": [
+   "Raman|FT-?IR|infrared spectroscop",
+   "seized|street|illicit|drug|forensic",
+   "identif|non-?destructive|rapid|screen"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC12799672",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Detection of common drug metabolites in urine using attenuated total reflectance-Fourier transform infrared spectroscopy (ATR-FTIR).",
+    "sentence": "This study seeks to establish a rapid, non-invasive methodology for the detection of drug abuse through the identification of common urinary drug metabolites utilizing attenuated total reflectance Fourier transform infrared spectroscopy (ATR-FTIR).",
+    "journal": "Forensic science, medicine, and pathology",
+    "year": "2025",
+    "doi": "10.1007/s12024-025-01017-4",
+    "pmid": "40447931",
+    "authors": [
+     "Yu Y",
+     "Chen T",
+     "Yuan L",
+     "Sun M",
+     "Wu Y"
+    ]
+   },
+   {
+    "pmcid": "PMC5981217",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Soft and Robust Identification of Body Fluid Using Fourier Transform Infrared Spectroscopy and Chemometric Strategies for Forensic Analysis.",
+    "sentence": "Vibrational spectroscopy, such as Fourier transform infrared spectroscopy (FT-IR) and Raman spectroscopy, has advantageous properties for application to forensic BF identification; they characterize a sample non-invasively using light irradiation, and the spectral patterns are highly selective based on the molecules composing the sample.",
+    "journal": "Scientific reports",
+    "year": "2018",
+    "doi": "10.1038/s41598-018-26873-9",
+    "pmid": "29855535",
+    "authors": [
+     "Takamura A",
+     "Watanabe K",
+     "Akutsu T",
+     "Ozawa T"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "met-hrms|screening",
+  "entity": "method-hrms",
+  "field": "application",
+  "query": "\"high-resolution mass spectrometry\" (screening OR untargeted) toxicology",
+  "patterns": [
+   "high[- ]resolution mass spectrometry|HRMS|QTOF|Orbitrap",
+   "screen|untargeted|non-?targeted|retrospective"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC7987635",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Hyphenated high-resolution mass spectrometry-the \"all-in-one\" device in analytical toxicology?",
+    "sentence": "Another advantage of HRMS is the option of combined targeted and untargeted screening.",
+    "journal": "Analytical and bioanalytical chemistry",
+    "year": "2021",
+    "doi": "10.1007/s00216-020-03064-y",
+    "pmid": "33247339",
+    "authors": [
+     "Maurer HH"
+    ]
+   },
+   {
+    "pmcid": "PMC11022238",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Screening for Forensically Relevant Drugs Using Data-Independent High-Resolution Mass Spectrometry.",
+    "sentence": "Liquid chromatography hyphenated with high-resolution mass spectrometry (LC-HRMS) has become a popular technique for untargeted screening and presumptive identification of drugs of abuse due to its superior sensitivity and detection capabilities in complex matrices.",
+    "journal": "Chemical research in toxicology",
+    "year": "2024",
+    "doi": "10.1021/acs.chemrestox.3c00379",
+    "pmid": "38575522",
+    "authors": [
+     "Bates MN",
+     "Helm AE",
+     "Barkholtz HM"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "met-spe|principle",
+  "entity": "method-spe",
+  "field": "principle",
+  "query": "\"solid-phase extraction\" blood drugs forensic",
+  "patterns": [
+   "solid[- ]phase extraction|\\bSPE\\b",
+   "clean|extract|matri|interfer|concentrat"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC11022238",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Screening for Forensically Relevant Drugs Using Data-Independent High-Resolution Mass Spectrometry.",
+    "sentence": "A study from 2012 by Birkler et al. utilized solid phase extraction (SPE) cartridges for extracting 46 common drugs of abuse from whole blood.",
+    "journal": "Chemical research in toxicology",
+    "year": "2024",
+    "doi": "10.1021/acs.chemrestox.3c00379",
+    "pmid": "38575522",
+    "authors": [
+     "Bates MN",
+     "Helm AE",
+     "Barkholtz HM"
+    ]
+   },
+   {
+    "pmcid": "PMC10346202",
+    "license": "CC BY",
+    "section": "CONCL",
+    "title": "On the Application of Microfluidic-Based Technologies in Forensics: A Review.",
+    "sentence": "2- DNA extraction and purification-on-a-chip: They have been mainly performed by solid phase extraction (SPE) to effectively bind the DNA.",
+    "journal": "Sensors (Basel, Switzerland)",
+    "year": "2023",
+    "doi": "10.3390/s23135856",
+    "pmid": "37447704",
+    "authors": [
+     "Bazyar H"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "met-lle|principle",
+  "entity": "method-lle",
+  "field": "principle",
+  "query": "\"liquid-liquid extraction\" blood drugs toxicology",
+  "patterns": [
+   "liquid[–-]liquid extraction|\\bLLE\\b",
+   "extract|solvent|organic"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC8347684",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Lipemia in the Plasma Sample Affects Fentanyl Measurements by Means of HPLC-MS(2) after Liquid-Liquid Extraction.",
+    "sentence": "Liquid–liquid extraction provided a low matrix effect regardless of the lipid levels in the samples (<10%), but pronounced differences were found in the recovery and accuracy.",
+    "journal": "Molecules (Basel, Switzerland)",
+    "year": "2021",
+    "doi": "10.3390/molecules26154514",
+    "pmid": "34361667",
+    "authors": [
+     "Tikhomirov M",
+     "Śniegocki T",
+     "Poźniak B"
+    ]
+   },
+   {
+    "pmcid": "PMC11496346",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Development of two ultra-sensitive UHPLC-QqQ-MS/MS methods for the simultaneous determination of hydroxyzine and its active metabolite (cetirizine) in human blood: applications to real cases of forensic toxicology.",
+    "sentence": "Samples were extracted with simple and fast liquid–liquid extraction (ethyl acetate, pH 9).",
+    "journal": "Archives of toxicology",
+    "year": "2024",
+    "doi": "10.1007/s00204-024-03867-3",
+    "pmid": "39340585",
+    "authors": [
+     "Chłopaś-Konowałek A",
+     "Szpot P",
+     "Zawadzki M",
+     "Kukula-Koch W",
+     "Dudzińska E"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "met-ppt|principle",
+  "entity": "method-protein-precipitation",
+  "field": "principle",
+  "query": "\"protein precipitation\" blood toxicology LC-MS/MS",
+  "patterns": [
+   "protein precipitation",
+   "simple|fast|rapid|acetonitrile|methanol|matrix"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC10761401",
+    "license": "CC BY",
+    "section": "DISCUSS",
+    "title": "Quantification of 108 illicit drugs and metabolites in bile matrix by LC-MS/MS for the toxicological testing of sudden death cases.",
+    "sentence": "Sample preparation of the present method is fast, simple and consists mainly in enzymatic deconjugation and protein precipitation through organic solvents.",
+    "journal": "Archives of toxicology",
+    "year": "2024",
+    "doi": "10.1007/s00204-023-03631-z",
+    "pmid": "38051366",
+    "authors": [
+     "Franzin M",
+     "Ruoso R",
+     "Peruch M",
+     "Stocco G",
+     "D'Errico S",
+     "Addobbati R"
+    ]
+   },
+   {
+    "pmcid": "PMC12348445",
+    "license": "CC BY",
+    "section": "RESULTS",
+    "title": "Therapeutic Drug Monitoring of Everolimus Using Volumetric Absorptive Microsampling and Quantitative Dried Blood Spot Methods with LC-MS/MS in Adult Solid Organ Transplant Recipients: An Analytical and Clinical Comparative Study.",
+    "sentence": "Whole blood samples were prepared using a protein precipitation protocol involving a mixture of zinc sulfate, methanol, and acetonitrile, which is a widely accepted method for immunosuppressant extraction in LC-MS/MS assays.",
+    "journal": "Molecules (Basel, Switzerland)",
+    "year": "2025",
+    "doi": "10.3390/molecules30153139",
+    "pmid": "40807312",
+    "authors": [
+     "Kocur A",
+     "Olkowski B",
+     "Moczulski M",
+     "Miszewska-Szyszkowska D",
+     "Rostkowska OM",
+     "Polak K"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "met-quechers|application",
+  "entity": "method-quechers",
+  "field": "application",
+  "query": "QuEChERS (blood OR postmortem OR toxicology)",
+  "patterns": [
+   "QuEChERS",
+   "blood|post-?mortem|toxicolog|tissue"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC12858495",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Evaluation of blood impurity removal efficiency using the QuEChERS method.",
+    "sentence": "Residual cardiac blood samples were pretreated using deproteinization and QuEChERS methods.",
+    "journal": "Forensic toxicology",
+    "year": "2026",
+    "doi": "10.1007/s11419-025-00740-5",
+    "pmid": "41051724",
+    "authors": [
+     "Kuze H",
+     "Yoshida H",
+     "Tamagawa H",
+     "Nishihori T",
+     "Tokugawa Y",
+     "Yamamoto F"
+    ]
+   },
+   {
+    "pmcid": "PMC12858534",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Application of the transient matrix effect for determination of anabolic-androgenic steroids in biological samples by GC-MS/MS.",
+    "sentence": "Optimal QuEChERS extraction and multiple reaction monitoring transitions in GC–MS/MS were evaluated, confirming applicability with blood plasma samples.",
+    "journal": "Forensic toxicology",
+    "year": "2026",
+    "doi": "10.1007/s11419-025-00731-6",
+    "pmid": "40562948",
+    "authors": [
+     "Dybowski MP",
+     "Siwek K"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "met-deriv|principle",
+  "entity": "method-derivatization",
+  "field": "principle",
+  "query": "derivatization GC-MS (drugs OR toxicology) volatility",
+  "patterns": [
+   "derivati[sz]ation",
+   "volatil|thermal stabilit|chromatographic|polar"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC12940598",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Rapid GC-MS Characterization of Oleoresin, Turpentine and Rosin Using Tailored Chromatographic Programs.",
+    "sentence": "Subsequently, several studies reported the characterization of oleoresin, rosin or specific resin acids using GC-MS, generally in the form of methyl or trimethylsilyl esters, since compounds containing carboxylic acids require derivatization before they can be analyzed by GC-MS due to their low volatility.",
+    "journal": "International journal of molecular sciences",
+    "year": "2026",
+    "doi": "10.3390/ijms27041690",
+    "pmid": "41751826",
+    "authors": [
+     "Seixas N",
+     "Santos SAO",
+     "Silvestre AJD"
+    ]
+   },
+   {
+    "pmcid": "PMC6747491",
+    "license": "CC BY",
+    "section": "CONCL",
+    "title": "Distribution and Chemical Analysis of Pharmaceuticals and Personal Care Products (PPCPs) in the Environmental Systems: A Review.",
+    "sentence": "Although, efficient result can also be achieved with GC-MS with suitable derivatization of the compounds in spite of poor volatility of certain compounds.",
+    "journal": "International journal of environmental research and public health",
+    "year": "2019",
+    "doi": "10.3390/ijerph16173026",
+    "pmid": "31438569",
+    "authors": [
+     "Ohoro CR",
+     "Adeniji AO",
+     "Okoh AI",
+     "Okoh AOO"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "met-calibration|principle",
+  "entity": "method-calibration",
+  "field": "principle",
+  "query": "\"calibration curve\" \"forensic toxicology\" linearity",
+  "patterns": [
+   "calibration (curve|model|range)",
+   "linear|weight|range|matrix-matched"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC10582484",
+    "license": "CC BY",
+    "section": "RESULTS",
+    "title": "Validation of a new method for the detection of Ethyl glucuronide in larvae of Lucilia sericata as a marker of ante-mortem alcohol consumption.",
+    "sentence": "A calibration curve was constructed with a range of linearity between 5 pg mg−1 and 1500 pg mg−1 and the relative regression equation was calculated.",
+    "journal": "Heliyon",
+    "year": "2023",
+    "doi": "10.1016/j.heliyon.2023.e20802",
+    "pmid": "37860567",
+    "authors": [
+     "Cerioni A",
+     "Buratti E",
+     "Mietti G",
+     "Cippitelli M",
+     "Cingolani M",
+     "Froldi R"
+    ]
+   },
+   {
+    "pmcid": "PMC11755661",
+    "license": "CC BY",
+    "section": "DISCUSS",
+    "title": "The Issue of \"Smart Drugs\" on the Example of Modafinil: Toxicological Analysis of Evidences and Biological Samples.",
+    "sentence": "The authors employed an HPLC-UV method for the determination (calibration curves in a range of 5–150 µg/mL; R2 > 0.999; LOD: 15 (R-MOD) and 20 ng/mL (S-MOD); LLOQ: 45 (R-MOD) and 60 ng/mL (S-MOD); recoveries: 100.5–102.3% (SD from 0.4 to 1.0% for both enantiomers)).",
+    "journal": "Journal of xenobiotics",
+    "year": "2025",
+    "doi": "10.3390/jox15010015",
+    "pmid": "39846547",
+    "authors": [
+     "Nowak K",
+     "Chłopaś-Konowałek A",
+     "Szpot P",
+     "Zawadzki M"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "met-validation|principle",
+  "entity": "method-validation",
+  "field": "principle",
+  "query": "\"method validation\" \"forensic toxicology\"",
+  "patterns": [
+   "validat",
+   "selectivity|accuracy|precision|limit of detection|LOD|bias|carryover|matrix",
+   "forensic|toxicolog"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC12734456",
+    "license": "CC BY",
+    "section": "RESULTS",
+    "title": "Study on Stability of Remifentanil, Sufentanil, and Their Metabolites in Human Whole Blood and Urine.",
+    "sentence": "According to the Forensic Toxicology guidelines for method validation, drugs are considered stable if their concentrations remain within ±20% of the original values, meaning that a degradation of less than 20% is deemed insignificant and falls within the acceptable method bias.",
+    "journal": "Metabolites",
+    "year": "2025",
+    "doi": "10.3390/metabo15120804",
+    "pmid": "41441046",
+    "authors": [
+     "Wang Z",
+     "Gao H",
+     "Xu Y",
+     "Liang D",
+     "Ju X",
+     "Du K"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "met-uncertainty|principle",
+  "entity": "method-uncertainty",
+  "field": "principle",
+  "query": "\"measurement uncertainty\" (forensic OR toxicology OR blood alcohol)",
+  "patterns": [
+   "measurement uncertainty|uncertainty of measurement",
+   "estimat|evaluat|report|budget|interval|confidence"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC9331811",
+    "license": "CC BY",
+    "section": "RESULTS",
+    "title": "Development of a Gas-Tight Syringe Headspace GC-FID Method for the Detection of Ethanol, and a Description of the Legal and Practical Framework for Its Analysis, in Samples of English and Welsh Motorists' Blood and Urine.",
+    "sentence": "The bias was evaluated using a t-test incorporating the uncertainty of the target—the certified reference material uncertainty—into the measurement uncertainty.",
+    "journal": "Molecules (Basel, Switzerland)",
+    "year": "2022",
+    "doi": "10.3390/molecules27154771",
+    "pmid": "35897946",
+    "authors": [
+     "Taylor L",
+     "Saskőy L",
+     "Brodie T",
+     "Remeškevičius V",
+     "Moir HJ",
+     "Barker J"
+    ]
+   },
+   {
+    "pmcid": "PMC5696754",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Measurement uncertainty of blood ethanol concentration in drink-driving cases in an emergency laboratory.",
+    "sentence": "When measurement uncertainty values were added to the results of the 1034 drivers who were retrospectively screened, eight vehicle drivers had results with 95% confidence intervals that exceeded the legal limit 0.50 g/L.",
+    "journal": "Biochemia medica",
+    "year": "2017",
+    "doi": "10.11613/BM.2017.030708",
+    "pmid": "29180916",
+    "authors": [
+     "Ustundağ Y",
+     "Huysal K"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "met-qc|principle",
+  "entity": "method-qc",
+  "field": "principle",
+  "query": "\"quality control\" samples \"forensic toxicology\"",
+  "patterns": [
+   "quality control",
+   "samples?|materials?",
+   "accura|precis|batch|run|acceptance"
+  ],
+  "allow_methods": false,
+  "status": "not_found",
+  "candidates": []
+ },
+ {
+  "target": "met-idcriteria|principle",
+  "entity": "method-identification-criteria",
+  "field": "principle",
+  "query": "\"identification criteria\" \"retention time\" \"ion ratio\"",
+  "patterns": [
+   "retention time",
+   "ion ratios?|qualifier",
+   "criteri|toleran|identif"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC12692283",
+    "license": "CC BY",
+    "section": "RESULTS",
+    "title": "The Development and Validation of an LC-MS/MS Method for the Determination of Glyphosate, AMPA, and Glufosinate in Honey Following FMOC-Cl Derivatization: Application to Italian Samples.",
+    "sentence": "In addition to quantitative performance characteristics, qualitative identification criteria, such as ion ratio and retention time, were also assessed.",
+    "journal": "Foods (Basel, Switzerland)",
+    "year": "2025",
+    "doi": "10.3390/foods14234050",
+    "pmid": "41375988",
+    "authors": [
+     "Martinello M",
+     "Zanella S",
+     "Mutinelli F",
+     "Bertola M"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "met-postmortem-redistribution|limitation",
+  "entity": "method-validation",
+  "field": "limitation",
+  "query": "\"postmortem redistribution\" toxicology",
+  "patterns": [
+   "post-?mortem redistribution",
+   "concentration|central|peripheral|femoral|site"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC13234939",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Unlocking the potential of bone marrow in postmortem forensic toxicology: current evidence and future perspectives.",
+    "sentence": "This review summarizes the updated literature on BM anatomy, sampling site, xenobiotic distribution and stability, as well as the influence of postmortem redistribution (PMR) and putrefaction for toxicological interpretation of the analytical results.",
+    "journal": "Journal of analytical toxicology",
+    "year": "2026",
+    "doi": "10.1093/jat/bkag014",
+    "pmid": "41719197",
+    "authors": [
+     "Vanerio S",
+     "Galante N",
+     "Ravelli A",
+     "Bergamaschi RF",
+     "Battistini A",
+     "Casati S"
+    ]
+   },
+   {
+    "pmcid": "PMC11790690",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Postmortem redistribution of drugs: a literature review.",
+    "sentence": "Postmortem redistribution (PMR) describes anatomical and physiological changes that can falsely alter concentrations after death.",
+    "journal": "Forensic science, medicine, and pathology",
+    "year": "2024",
+    "doi": "10.1007/s12024-023-00709-z",
+    "pmid": "37715933",
+    "authors": [
+     "Abdelaal GMM",
+     "Hegazy NI",
+     "Etewa RL",
+     "Elmesallamy GEA"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "rea-marquis|composition",
+  "entity": "rea-marquis",
+  "field": "composition_statement",
+  "query": "\"Marquis\" (reagent OR test) (drugs OR forensic OR toxicology)",
+  "patterns": [
+   "Marquis(’s|'s)?\\s+(reagent|test)",
+   "compos|consist|prepar|contain|mixture of|solution of|made (up )?of|comprised",
+   "formaldehyde|sulfuric|sulphuric"
+  ],
+  "allow_methods": true,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC8588055",
+    "license": "CC BY",
+    "section": "METHODS",
+    "title": "A Colorimetric Membrane-Based Sensor with Improved Selectivity towards Amphetamine.",
+    "sentence": "For the modified Marquis test, 500 µL of concentrated sulfuric acid were mixed with 30 µL of solutions containing 1000 ppm of the analytes (final concentration in the solution, 60 ppm).",
+    "journal": "Molecules (Basel, Switzerland)",
+    "year": "2021",
+    "doi": "10.3390/molecules26216713",
+    "pmid": "34771122",
+    "authors": [
+     "Jornet-Martínez N",
+     "Campíns-Falcó P",
+     "Herráez-Hernández R"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "rea-marquis|use",
+  "entity": "rea-marquis",
+  "field": "use_context",
+  "query": "\"Marquis\" (reagent OR test) presumptive OR colour OR color",
+  "patterns": [
+   "Marquis(’s|'s)?\\s+(reagent|test)",
+   "presumptive|colou?r|spot|screen|detect|indicat|purple|violet|blue|orange|red"
+  ],
+  "allow_methods": false,
+  "status": "not_found",
+  "candidates": []
+ },
+ {
+  "target": "rea-mecke|composition",
+  "entity": "rea-mecke",
+  "field": "composition_statement",
+  "query": "\"Mecke\" (reagent OR test) (drugs OR forensic OR toxicology)",
+  "patterns": [
+   "Mecke(’s|'s)?\\s+(reagent|test)",
+   "compos|consist|prepar|contain|mixture of|solution of|made (up )?of|comprised",
+   "selen|sulfuric|sulphuric"
+  ],
+  "allow_methods": true,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC8635566",
+    "license": "CC BY",
+    "section": "METHODS",
+    "title": "Analysis of the autopsy, toxicological, and psychiatric reports of Portugal's first major forensic case: part III.",
+    "sentence": "António Joaquim Ferreira da Silva modified the composition of the Lafon reagent (or Mecke’s reagent) starting from 1 g ammonium selenium to 25 g or 50 g.",
+    "journal": "Forensic sciences research",
+    "year": "2021",
+    "doi": "10.1080/20961790.2021.1898079",
+    "pmid": "34868719",
+    "authors": [
+     "Dinis-Oliveira RJ"
+    ]
+   },
+   {
+    "pmcid": "PMC13189459",
+    "license": "CC BY",
+    "section": "RESULTS",
+    "title": "Rapid Detection of Tetracycline Residues in Milk Using Colorimetric Sensor Based on Polymethylmethacrylate (PMMA) and Polystyrene (PS) Polymers.",
+    "sentence": "Mecke’s reagent contains concentrated sulfuric acid and selenium acid, as evidenced by sulfur and selenium elements.",
+    "journal": "Journal of analytical methods in chemistry",
+    "year": "2026",
+    "doi": "10.1155/jamc/5412774",
+    "pmid": "42170101",
+    "authors": [
+     "Pratiwi R",
+     "Azizah PN",
+     "Hasanah AN"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "rea-mecke|use",
+  "entity": "rea-mecke",
+  "field": "use_context",
+  "query": "\"Mecke\" (reagent OR test) presumptive OR colour OR color",
+  "patterns": [
+   "Mecke(’s|'s)?\\s+(reagent|test)",
+   "presumptive|colou?r|spot|screen|detect|indicat|purple|violet|blue|orange|red"
+  ],
+  "allow_methods": false,
+  "status": "not_found",
+  "candidates": []
+ },
+ {
+  "target": "rea-mandelin|composition",
+  "entity": "rea-mandelin",
+  "field": "composition_statement",
+  "query": "\"Mandelin\" (reagent OR test) (drugs OR forensic OR toxicology)",
+  "patterns": [
+   "Mandelin(’s|'s)?\\s+(reagent|test)",
+   "compos|consist|prepar|contain|mixture of|solution of|made (up )?of|comprised",
+   "vanad|sulfuric|sulphuric"
+  ],
+  "allow_methods": true,
+  "status": "not_found",
+  "candidates": []
+ },
+ {
+  "target": "rea-mandelin|use",
+  "entity": "rea-mandelin",
+  "field": "use_context",
+  "query": "\"Mandelin\" (reagent OR test) presumptive OR colour OR color",
+  "patterns": [
+   "Mandelin(’s|'s)?\\s+(reagent|test)",
+   "presumptive|colou?r|spot|screen|detect|indicat|purple|violet|blue|orange|red"
+  ],
+  "allow_methods": false,
+  "status": "not_found",
+  "candidates": []
+ },
+ {
+  "target": "rea-simon|composition",
+  "entity": "rea-simon",
+  "field": "composition_statement",
+  "query": "\"Simon\" (reagent OR test) (drugs OR forensic OR toxicology)",
+  "patterns": [
+   "Simon(’s|'s)?\\s+(reagent|test)",
+   "compos|consist|prepar|contain|mixture of|solution of|made (up )?of|comprised",
+   "nitroprusside|acetaldehyde|carbonate"
+  ],
+  "allow_methods": true,
+  "status": "not_found",
+  "candidates": []
+ },
+ {
+  "target": "rea-simon|use",
+  "entity": "rea-simon",
+  "field": "use_context",
+  "query": "\"Simon\" (reagent OR test) presumptive OR colour OR color",
+  "patterns": [
+   "Simon(’s|'s)?\\s+(reagent|test)",
+   "presumptive|colou?r|spot|screen|detect|indicat|purple|violet|blue|orange|red"
+  ],
+  "allow_methods": false,
+  "status": "not_found",
+  "candidates": []
+ },
+ {
+  "target": "rea-scott|composition",
+  "entity": "rea-scott",
+  "field": "composition_statement",
+  "query": "\"Scott\" (reagent OR test) (drugs OR forensic OR toxicology)",
+  "patterns": [
+   "Scott(’s|'s)?\\s+(reagent|test)",
+   "compos|consist|prepar|contain|mixture of|solution of|made (up )?of|comprised",
+   "cobalt|thiocyanate"
+  ],
+  "allow_methods": true,
+  "status": "not_found",
+  "candidates": []
+ },
+ {
+  "target": "rea-scott|use",
+  "entity": "rea-scott",
+  "field": "use_context",
+  "query": "\"Scott\" (reagent OR test) presumptive OR colour OR color",
+  "patterns": [
+   "Scott(’s|'s)?\\s+(reagent|test)",
+   "presumptive|colou?r|spot|screen|detect|indicat|purple|violet|blue|orange|red"
+  ],
+  "allow_methods": false,
+  "status": "not_found",
+  "candidates": []
+ },
+ {
+  "target": "rea-cobalt-thiocyanate|composition",
+  "entity": "rea-cobalt-thiocyanate",
+  "field": "composition_statement",
+  "query": "\"cobalt thiocyanate\" (reagent OR test) (drugs OR forensic OR toxicology)",
+  "patterns": [
+   "cobalt thiocyanate(’s|'s)?\\s+(reagent|test)",
+   "compos|consist|prepar|contain|mixture of|solution of|made (up )?of|comprised",
+   "cobalt|thiocyanate|cocaine"
+  ],
+  "allow_methods": true,
+  "status": "not_found",
+  "candidates": []
+ },
+ {
+  "target": "rea-cobalt-thiocyanate|use",
+  "entity": "rea-cobalt-thiocyanate",
+  "field": "use_context",
+  "query": "\"cobalt thiocyanate\" (reagent OR test) presumptive OR colour OR color",
+  "patterns": [
+   "cobalt thiocyanate(’s|'s)?\\s+(reagent|test)",
+   "presumptive|colou?r|spot|screen|detect|indicat|purple|violet|blue|orange|red"
+  ],
+  "allow_methods": false,
+  "status": "not_found",
+  "candidates": []
+ },
+ {
+  "target": "rea-duquenois|composition",
+  "entity": "rea-duquenois",
+  "field": "composition_statement",
+  "query": "\"Duquenois\" (reagent OR test) (drugs OR forensic OR toxicology)",
+  "patterns": [
+   "Duquenois(’s|'s)?\\s+(reagent|test)",
+   "compos|consist|prepar|contain|mixture of|solution of|made (up )?of|comprised",
+   "vanillin|acetaldehyde|hydrochloric|chloroform"
+  ],
+  "allow_methods": true,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC12223337",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Identification of non-glandular trichome hairs in cannabis using vision-based deep learning methods.",
+    "sentence": "The Duquenois reagent is composed of ethanol, acetaldehyde, and vanillin.",
+    "journal": "Journal of forensic sciences",
+    "year": "2025",
+    "doi": "10.1111/1556-4029.70058",
+    "pmid": "40249026",
+    "authors": [
+     "Zvirin A",
+     "Shapira A",
+     "Attal E",
+     "Gozlan T",
+     "Soussan A",
+     "De La Vega D"
+    ]
+   },
+   {
+    "pmcid": "PMC3813261",
+    "license": "CC BY",
+    "section": "METHODS",
+    "title": "Gabapentin Determination in Human Plasma and Capsule by Coupling of Solid Phase Extraction, Derivatization Reaction, and UV-Vis Spectrophotometry.",
+    "sentence": "Duquenois reagent was prepared by mixing 2 g of vanillin with 0.3 mL of acetaldehyde and the volume was completed to 50 mL with ethyl alcohol.",
+    "journal": "Iranian journal of pharmaceutical research : IJPR",
+    "year": "2013",
+    "doi": null,
+    "pmid": "24250630",
+    "authors": [
+     "Kazemipour M",
+     "Fakhari I",
+     "Ansari M"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "rea-duquenois|use",
+  "entity": "rea-duquenois",
+  "field": "use_context",
+  "query": "\"Duquenois\" (reagent OR test) presumptive OR colour OR color",
+  "patterns": [
+   "Duquenois(’s|'s)?\\s+(reagent|test)",
+   "presumptive|colou?r|spot|screen|detect|indicat|purple|violet|blue|orange|red"
+  ],
+  "allow_methods": false,
+  "status": "not_found",
+  "candidates": []
+ },
+ {
+  "target": "rea-ehrlich|composition",
+  "entity": "rea-ehrlich",
+  "field": "composition_statement",
+  "query": "\"Ehrlich\" (reagent OR test) (drugs OR forensic OR toxicology)",
+  "patterns": [
+   "Ehrlich(’s|'s)?\\s+(reagent|test)",
+   "compos|consist|prepar|contain|mixture of|solution of|made (up )?of|comprised",
+   "dimethylaminobenzaldehyde|DMAB|indole"
+  ],
+  "allow_methods": true,
+  "status": "not_found",
+  "candidates": []
+ },
+ {
+  "target": "rea-ehrlich|use",
+  "entity": "rea-ehrlich",
+  "field": "use_context",
+  "query": "\"Ehrlich\" (reagent OR test) presumptive OR colour OR color",
+  "patterns": [
+   "Ehrlich(’s|'s)?\\s+(reagent|test)",
+   "presumptive|colou?r|spot|screen|detect|indicat|purple|violet|blue|orange|red"
+  ],
+  "allow_methods": false,
+  "status": "not_found",
+  "candidates": []
+ },
+ {
+  "target": "rea-dragendorff|composition",
+  "entity": "rea-dragendorff",
+  "field": "composition_statement",
+  "query": "\"Dragendorff\" (reagent OR test) (drugs OR forensic OR toxicology)",
+  "patterns": [
+   "Dragendorff(’s|'s)?\\s+(reagent|test)",
+   "compos|consist|prepar|contain|mixture of|solution of|made (up )?of|comprised",
+   "bismuth|iodide|alkaloid"
+  ],
+  "allow_methods": true,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC3032759",
+    "license": "CC BY",
+    "section": "METHODS",
+    "title": "Assessment of antiproliferative and antiplasmodial activities of five selected Apocynaceae species.",
+    "sentence": "Dragendorff reagent was prepared by dissolving 0.8 g of bismuth nitrate (Sigma) in 40 ml of distilled water and 10 ml of glacial acetic acid.",
+    "journal": "BMC complementary and alternative medicine",
+    "year": "2011",
+    "doi": "10.1186/1472-6882-11-3",
+    "pmid": "21232161",
+    "authors": [
+     "Wong SK",
+     "Lim YY",
+     "Abdullah NR",
+     "Nordin FJ"
+    ]
+   },
+   {
+    "pmcid": "PMC11421204",
+    "license": "CC BY",
+    "section": "METHODS",
+    "title": "An eco-friendly smartphone based HPTLC method versus conventional densitometric one for determination of Naltrexone and Bupropion.",
+    "sentence": "Dragendorff’s reagent was prepared by mixing 70 mL distilled water and 20 mL acetic acid with 5 mL of 40 g% potassium iodide solution and 5 mL of 1.7 g% w/v basic bismuth nitrate in 20% v/v acetic acid solution.",
+    "journal": "BMC chemistry",
+    "year": "2024",
+    "doi": "10.1186/s13065-024-01285-1",
+    "pmid": "39313836",
+    "authors": [
+     "Moaaz EM",
+     "Abdel-Moety EM",
+     "Rezk MR",
+     "Fayed AS"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "rea-dragendorff|use",
+  "entity": "rea-dragendorff",
+  "field": "use_context",
+  "query": "\"Dragendorff\" (reagent OR test) presumptive OR colour OR color",
+  "patterns": [
+   "Dragendorff(’s|'s)?\\s+(reagent|test)",
+   "presumptive|colou?r|spot|screen|detect|indicat|purple|violet|blue|orange|red"
+  ],
+  "allow_methods": false,
+  "status": "not_found",
+  "candidates": []
+ },
+ {
+  "target": "rea-fast-blue-bb|composition",
+  "entity": "rea-fast-blue-bb",
+  "field": "composition_statement",
+  "query": "\"Fast Blue BB\" (reagent OR test) (drugs OR forensic OR toxicology)",
+  "patterns": [
+   "Fast Blue BB(’s|'s)?\\s+(reagent|test)",
+   "compos|consist|prepar|contain|mixture of|solution of|made (up )?of|comprised",
+   "cannabinoid|THC|diazonium"
+  ],
+  "allow_methods": true,
+  "status": "not_found",
+  "candidates": []
+ },
+ {
+  "target": "rea-fast-blue-bb|use",
+  "entity": "rea-fast-blue-bb",
+  "field": "use_context",
+  "query": "\"Fast Blue BB\" (reagent OR test) presumptive OR colour OR color",
+  "patterns": [
+   "Fast Blue BB(’s|'s)?\\s+(reagent|test)",
+   "presumptive|colou?r|spot|screen|detect|indicat|purple|violet|blue|orange|red"
+  ],
+  "allow_methods": false,
+  "status": "not_found",
+  "candidates": []
+ },
+ {
+  "target": "rea-ninhydrin|composition",
+  "entity": "rea-ninhydrin",
+  "field": "composition_statement",
+  "query": "\"ninhydrin\" (reagent OR test) (drugs OR forensic OR toxicology)",
+  "patterns": [
+   "ninhydrin(’s|'s)?\\s+(reagent|test)",
+   "compos|consist|prepar|contain|mixture of|solution of|made (up )?of|comprised",
+   "amine|amino|purple|Ruhemann"
+  ],
+  "allow_methods": true,
+  "status": "not_found",
+  "candidates": []
+ },
+ {
+  "target": "rea-ninhydrin|use",
+  "entity": "rea-ninhydrin",
+  "field": "use_context",
+  "query": "\"ninhydrin\" (reagent OR test) presumptive OR colour OR color",
+  "patterns": [
+   "ninhydrin(’s|'s)?\\s+(reagent|test)",
+   "presumptive|colou?r|spot|screen|detect|indicat|purple|violet|blue|orange|red"
+  ],
+  "allow_methods": false,
+  "status": "not_found",
+  "candidates": []
+ },
+ {
+  "target": "rea-iodoplatinate|composition",
+  "entity": "rea-iodoplatinate",
+  "field": "composition_statement",
+  "query": "\"iodoplatinate\" (reagent OR test) (drugs OR forensic OR toxicology)",
+  "patterns": [
+   "iodoplatinate(’s|'s)?\\s+(reagent|test)",
+   "compos|consist|prepar|contain|mixture of|solution of|made (up )?of|comprised",
+   "platin|iodide|alkaloid|nitrogen"
+  ],
+  "allow_methods": true,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC3596733",
+    "license": "CC BY",
+    "section": "METHODS",
+    "title": "Comparison of liquid-liquid extraction-thin layer chromatography with solid-phase extraction-high-performance thin layer chromatography in detection of urinary morphine.",
+    "sentence": "Acidified iodoplatinate reagent was prepared as previously described.",
+    "journal": "Journal of biomedical research",
+    "year": "2011",
+    "doi": "10.1016/S1674-8301(11)60048-1",
+    "pmid": "23554712",
+    "authors": [
+     "Ahadi A",
+     "Partoazar A",
+     "Abedi-Khorasgani MH",
+     "Shetab-Boushehri SV"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "rea-iodoplatinate|use",
+  "entity": "rea-iodoplatinate",
+  "field": "use_context",
+  "query": "\"iodoplatinate\" (reagent OR test) presumptive OR colour OR color",
+  "patterns": [
+   "iodoplatinate(’s|'s)?\\s+(reagent|test)",
+   "presumptive|colou?r|spot|screen|detect|indicat|purple|violet|blue|orange|red"
+  ],
+  "allow_methods": false,
+  "status": "not_found",
+  "candidates": []
+ },
+ {
+  "target": "rea-trinder|composition",
+  "entity": "rea-trinder",
+  "field": "composition_statement",
+  "query": "\"Trinder\" (reagent OR test) (drugs OR forensic OR toxicology)",
+  "patterns": [
+   "Trinder(’s|'s)?\\s+(reagent|test)",
+   "compos|consist|prepar|contain|mixture of|solution of|made (up )?of|comprised",
+   "ferric|iron|salicyl"
+  ],
+  "allow_methods": true,
+  "status": "not_found",
+  "candidates": []
+ },
+ {
+  "target": "rea-trinder|use",
+  "entity": "rea-trinder",
+  "field": "use_context",
+  "query": "\"Trinder\" (reagent OR test) presumptive OR colour OR color",
+  "patterns": [
+   "Trinder(’s|'s)?\\s+(reagent|test)",
+   "presumptive|colou?r|spot|screen|detect|indicat|purple|violet|blue|orange|red"
+  ],
+  "allow_methods": false,
+  "status": "not_found",
+  "candidates": []
+ },
+ {
+  "target": "scr-fts|performance",
+  "entity": "scr-fentanyl-test-strips",
+  "field": "performance",
+  "query": "\"fentanyl test strips\"",
+  "patterns": [
+   "fentanyl test strips?|\\bFTS\\b",
+   "sensitiv|specific|false|detect|cross-?reactiv"
+  ],
+  "allow_methods": false,
+  "status": "not_found",
+  "candidates": []
+ },
+ {
+  "target": "scr-fts|limitation",
+  "entity": "scr-fentanyl-test-strips",
+  "field": "limitation",
+  "query": "\"fentanyl test strips\" analogs OR \"false positive\"",
+  "patterns": [
+   "fentanyl test strips?|\\bFTS\\b",
+   "false[- ]positive|false[- ]negative|analog|methamphetamine|MDMA|diphenhydramine|cannot|not detect|quantif"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC10702106",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Assessment of two brands of fentanyl test strips with 251 synthetic opioids reveals \"blind spots\" in detection capabilities.",
+    "sentence": "Previous reports indicate that in addition to fentanyl, FTS can also detect fentanyl analogs like acetyl fentanyl and butyryl fentanyl, with conflicting reports on their ability to detect fentanyl analogs like Carfentanil and furanyl fentanyl.",
+    "journal": "Harm reduction journal",
+    "year": "2023",
+    "doi": "10.1186/s12954-023-00911-w",
+    "pmid": "38057832",
+    "authors": [
+     "Hayes KL",
+     "Lieberman M"
+    ]
+   },
+   {
+    "pmcid": "PMC11425806",
+    "license": "CC BY",
+    "section": "DISCUSS",
+    "title": "Evaluation of Fentanyl Exposure Effects on Butyrylcholinesterase Activity as a Tool for Future On-Site Detection Methods.",
+    "sentence": "Given various levels of BChE inhibition was observed, selectivity preventing detection of all FRS may cause current FTS to provide false negative results.",
+    "journal": "ACS omega",
+    "year": "2024",
+    "doi": "10.1021/acsomega.4c06655",
+    "pmid": "39346813",
+    "authors": [
+     "Rania V",
+     "Newland A",
+     "Halámková L",
+     "Trojan V",
+     "Hřib R",
+     "Halámek J"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "scr-benzo-ia|limitation",
+  "entity": "scr-immunoassay-benzodiazepines",
+  "field": "limitation",
+  "query": "benzodiazepine immunoassay (lorazepam OR clonazepam) \"false negative\" OR glucuronide",
+  "patterns": [
+   "benzodiazepine",
+   "immunoassay",
+   "false[- ]negative|glucuronid|not (be )?detect|poor(ly)? cross|low cross|lorazepam|clonazepam"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC8746686",
+    "license": "CC BY",
+    "section": "CONCL",
+    "title": "Comparison of Two Immunoassay Screening Methods and a LC-MS/MS in Detecting Traditional and Designer Benzodiazepines in Urine.",
+    "sentence": "Indeed, the new immunoassay was demonstrated to be a reliable screening tool for monitoring a recent consumption of lorazepam, by guaranteeing the detection of this benzodiazepine at concentrations lower than 1 ng/mL without the need for sample hydrolysis.",
+    "journal": "Molecules (Basel, Switzerland)",
+    "year": "2021",
+    "doi": "10.3390/molecules27010112",
+    "pmid": "35011344",
+    "authors": [
+     "Rossi B",
+     "Freni F",
+     "Vignali C",
+     "Stramesi C",
+     "Collo G",
+     "Carelli C"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "scr-amph-ia|limitation",
+  "entity": "scr-immunoassay-amphetamines",
+  "field": "limitation",
+  "query": "amphetamine immunoassay \"false positive\"",
+  "patterns": [
+   "amphetamine",
+   "immunoassay|screen",
+   "false[- ]positive"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC6379996",
+    "license": "CC BY",
+    "section": "DISCUSS",
+    "title": "Accidental intoxications in toddlers: lack of cross-reactivity of vilazodone and its urinary metabolite M17 with drug of abuse screening immunoassays.",
+    "sentence": "Amphetamines immunoassays are also subject to false positives by less obviously structurally related compounds such as 1-methyl-3-phenylpiperazine (a metabolite of the antihypertensive medication labetalol) and mCPP (metabolite of trazodone).",
+    "journal": "BMC clinical pathology",
+    "year": "2019",
+    "doi": "10.1186/s12907-019-0084-9",
+    "pmid": "30820187",
+    "authors": [
+     "Martinez-Brokaw CD",
+     "Radke JB",
+     "Pierce JG",
+     "Ehlers A",
+     "Ekins S",
+     "Wood KE"
+    ]
+   },
+   {
+    "pmcid": "PMC11011420",
+    "license": "CC BY",
+    "section": "DISCUSS",
+    "title": "Applicability of a Chemiluminescence Immunoassay to Screen Postmortem Bile Specimens and Its Agreement with Confirmation Analysis.",
+    "sentence": "Indeed, it is well known that immunoassays are not “specific” and cross-reactions could occur, not only causing false positives but also false negatives, as for false-negative methamphetamine results caused by the presence of nor-2-chlorpromazine sulfoxide.",
+    "journal": "International journal of molecular sciences",
+    "year": "2024",
+    "doi": "10.3390/ijms25073825",
+    "pmid": "38612632",
+    "authors": [
+     "Franzin M",
+     "Ruoso R",
+     "Concato M",
+     "Radaelli D",
+     "D'Errico S",
+     "Addobbati R"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "scr-opiate-ia|limitation",
+  "entity": "scr-immunoassay-opiates",
+  "field": "limitation",
+  "query": "opiate immunoassay oxycodone OR fentanyl cross-reactivity",
+  "patterns": [
+   "opiate",
+   "immunoassay|screen",
+   "oxycodone|fentanyl|synthetic|cross-?reactiv|not detect"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC2688477",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Using molecular similarity to highlight the challenges of routine immunoassay-based drug of abuse/toxicology screening in emergency medicine.",
+    "sentence": "Examples of such published reports of DOA/Tox assay cross-reactivity include fluoroquinolone antibiotic cross-reactivity with opiate assays, venlafaxine cross-reactivity with PCP immunoassays, and quetiapine cross-reactivity with TCA assays.",
+    "journal": "BMC emergency medicine",
+    "year": "2009",
+    "doi": "10.1186/1471-227X-9-5",
+    "pmid": "19400959",
+    "authors": [
+     "Krasowski MD",
+     "Pizon AF",
+     "Siam MG",
+     "Giannoutsos S",
+     "Iyer M",
+     "Ekins S"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "scr-cannabis-ia|limitation",
+  "entity": "scr-immunoassay-cannabinoids",
+  "field": "limitation",
+  "query": "cannabinoid immunoassay synthetic cannabinoids OR \"false positive\" urine",
+  "patterns": [
+   "cannabinoid|THC",
+   "immunoassay|screen",
+   "false[- ]positive|synthetic cannabinoids?|not detect|cross-?reactiv|efavirenz|pantoprazole|ibuprofen"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC4029917",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Using cheminformatics to predict cross reactivity of \"designer drugs\" to their currently available immunoassays.",
+    "sentence": "Drug of abuse screening immunoassays directed at amphetamine or methamphetamine only detect a small subset of designer amphetamine-like drugs, and those immunoassays designed for tetrahydrocannabinol metabolites generally do not cross-react with synthetic cannabinoids lacking the classic cannabinoid chemical backbone.",
+    "journal": "Journal of cheminformatics",
+    "year": "2014",
+    "doi": "10.1186/1758-2946-6-22",
+    "pmid": "24851137",
+    "authors": [
+     "Krasowski MD",
+     "Ekins S"
+    ]
+   },
+   {
+    "pmcid": "PMC12182218",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Synthetic Cannabinoid (Mojo)-Induced ST-Segment Elevation Myocardial Infarction: A Case Report.",
+    "sentence": "Urine drug screening confirmed recent synthetic cannabinoid use.",
+    "journal": "Cureus",
+    "year": "2025",
+    "doi": "10.7759/cureus.84570",
+    "pmid": "40546626",
+    "authors": [
+     "Udoh KE",
+     "Udoh KE",
+     "Udoh AE"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "scr-fentanyl-ia|application",
+  "entity": "scr-immunoassay-fentanyl",
+  "field": "limitation",
+  "query": "fentanyl immunoassay analogs cross-reactivity urine",
+  "patterns": [
+   "fentanyl",
+   "immunoassay",
+   "analog|cross-?reactiv|norfentanyl|false"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC12430130",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Modern Methods for Detection of Fentanyl and Its Analogues: A Comprehensive Review of Technologies and Applications.",
+    "sentence": "Modern technology offers a range of solutions—from portable mass spectrometers and spectroscopic devices to electrochemical sensors and immunoassay kits—that enable on-site identification of fentanyl and its analogues.",
+    "journal": "Molecules (Basel, Switzerland)",
+    "year": "2025",
+    "doi": "10.3390/molecules30173577",
+    "pmid": "40942102",
+    "authors": [
+     "Bojarska E",
+     "Zajaczkowski W",
+     "Furtak E",
+     "Stela M",
+     "Gorniak L",
+     "Podogrocki M"
+    ]
+   },
+   {
+    "pmcid": "PMC11371532",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Performance of a Norfentanyl Immunoassay in Specimens with Low Concentrations of Fentanyl and/or Norfentanyl.",
+    "sentence": "Many fentanyl immunoassays are limited in their ability to detect norfentanyl.",
+    "journal": "The journal of applied laboratory medicine",
+    "year": "2024",
+    "doi": "10.1093/jalm/jfae036",
+    "pmid": "38656327",
+    "authors": [
+     "Uljon S",
+     "Tolan NV",
+     "Mahowald GK",
+     "Khaliq T",
+     "Urwiller ED",
+     "Fernandes MD"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "scr-oral-fluid|limitation",
+  "entity": "scr-oral-fluid-poc",
+  "field": "limitation",
+  "query": "\"oral fluid\" (point-of-care OR roadside OR on-site) drug test sensitivity",
+  "patterns": [
+   "oral fluid",
+   "point[- ]of[- ]care|roadside|on-?site|rapid",
+   "sensitiv|specific|false|confirm"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC10968443",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Detection of Cannabinoids in Oral Fluid Specimens as the Preferred Biological Matrix for a Point-of-Care Biosensor Diagnostic Device.",
+    "sentence": "Additionally, sample collection and pretreatment have been extensively studied, and specific devices for collecting oral fluid specimens have been perfected to allow rapid and effective sample collection.",
+    "journal": "Biosensors",
+    "year": "2024",
+    "doi": "10.3390/bios14030126",
+    "pmid": "38534233",
+    "authors": [
+     "Trif C",
+     "Harpaz D",
+     "Eltzov E",
+     "Parcharoen Y",
+     "Pechyen C",
+     "Marks RS"
+    ]
+   },
+   {
+    "pmcid": "PMC6856818",
+    "license": "CC BY",
+    "section": "DISCUSS",
+    "title": "Detection of Δ(9) THC in oral fluid following vaporized cannabis with varied cannabidiol (CBD) content: An evaluation of two point-of-collection testing devices.",
+    "sentence": "Overall, our data confirm that oral fluid THC is a good indicator of very recent cannabis use.20, 24, 34, 35, 36 As with previous studies,24, 25, 34, 36, 37 oral fluid cannabinoid concentrations were maximal at the time point closest to vaporization (10 minutes) and declined rapidly thereafter.",
+    "journal": "Drug testing and analysis",
+    "year": "2019",
+    "doi": "10.1002/dta.2687",
+    "pmid": "31442003",
+    "authors": [
+     "Arkell TR",
+     "Kevin RC",
+     "Stuart J",
+     "Lintzeris N",
+     "Haber PS",
+     "Ramaekers JG"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "scr-colour|limitation",
+  "entity": "scr-colour-tests",
+  "field": "limitation",
+  "query": "\"color test\" OR \"colour test\" presumptive \"false positive\" drugs",
+  "patterns": [
+   "colou?r (tests?|reagents?)|spot tests?",
+   "false[- ]positive|subjective|interfer|not specific|non-?specific|presumptive"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC9305489",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "A calibration friendly approach to identify drugs of abuse mixtures with a portable near-infrared analyzer.",
+    "sentence": "Second, color tests can only be used for presumptive testing on a limited set of illicit‐substances.",
+    "journal": "Drug testing and analysis",
+    "year": "2022",
+    "doi": "10.1002/dta.3231",
+    "pmid": "35098685",
+    "authors": [
+     "Kranenburg RF",
+     "Ramaker HJ",
+     "Sap S",
+     "van Asten AC"
+    ]
+   },
+   {
+    "pmcid": "PMC11961553",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Presumptive Tests for Xylazine-A Computer Vision Approach.",
+    "sentence": "To overcome the subjective limitations of determining spot test results by‐eye, we applied image and video analyses to quantify the distinctive features of presumptive tests with xylazine and thus differentiate it from other illicit substances tested under the same conditions, including morphine, fentanyl, heroin and methamphetamine.",
+    "journal": "Analytical science advances",
+    "year": "2025",
+    "doi": "10.1002/ansa.70008",
+    "pmid": "40177113",
+    "authors": [
+     "Chang HY",
+     "Donnachie K",
+     "McCabe TJD",
+     "Barrington H",
+     "Carlysle-Davies F",
+     "Ceniccola-Campos K"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "scr-ia-confirm|principle",
+  "entity": "scr-immunoassay-drugs",
+  "field": "confirmation_requirement",
+  "query": "immunoassay positive confirmed \"mass spectrometry\" urine drug testing",
+  "patterns": [
+   "immunoassay|screen(ing)? (test|result)",
+   "confirm",
+   "mass spectrometr|GC[-–]MS|LC[-–]MS"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC11371532",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Performance of a Norfentanyl Immunoassay in Specimens with Low Concentrations of Fentanyl and/or Norfentanyl.",
+    "sentence": "Due to the limitations of immunoassays (i.e., false-negative or false-positive results), clinicians may request confirmatory testing by LC-MS/MS if a definitive result is necessary.",
+    "journal": "The journal of applied laboratory medicine",
+    "year": "2024",
+    "doi": "10.1093/jalm/jfae036",
+    "pmid": "38656327",
+    "authors": [
+     "Uljon S",
+     "Tolan NV",
+     "Mahowald GK",
+     "Khaliq T",
+     "Urwiller ED",
+     "Fernandes MD"
+    ]
+   },
+   {
+    "pmcid": "PMC2688477",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Using molecular similarity to highlight the challenges of routine immunoassay-based drug of abuse/toxicology screening in emergency medicine.",
+    "sentence": "The causes for false positives for phencyclidine and tricyclic antidepressant screening immunoassays were investigated at the authors' medical center using gas chromatography/mass spectrometry as a confirmatory method.",
+    "journal": "BMC emergency medicine",
+    "year": "2009",
+    "doi": "10.1186/1471-227X-9-5",
+    "pmid": "19400959",
+    "authors": [
+     "Krasowski MD",
+     "Pizon AF",
+     "Siam MG",
+     "Giannoutsos S",
+     "Iyer M",
+     "Ekins S"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "fm-death-investigation|definition",
+  "entity": "fm-death-investigation",
+  "field": "definition",
+  "query": "\"death investigation\"[Title/Abstract] scene",
+  "patterns": [
+   "death (scene )?investigation",
+   "scene|circumstanc|history|multidisciplin|autopsy"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC12325475",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Partially inverted and degloved penile skin mimicking the appearance of female genitalia in cases of deaths caused by trains.",
+    "sentence": "In the challenging circumstances of a chaotic on-site railway death investigation, an inexperienced doctor might easily mistake male genitals for female genitals and thus delay correct identification of the victim by the police.",
+    "journal": "Forensic science, medicine, and pathology",
+    "year": "2025",
+    "doi": "10.1007/s12024-024-00910-8",
+    "pmid": "39621286",
+    "authors": [
+     "Zarattin M",
+     "Braham MY",
+     "Gassend JL"
+    ]
+   },
+   {
+    "pmcid": "PMC11490512",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Buprenorphine deaths confirmed by toxicology reveal a low proportion of opioid agonist treatment before death in Finland.",
+    "sentence": "Comprehensive information from medico-legal cause-of-death investigation as a starting point, combined with subsequent ante-mortem patient records, proved to be a successful approach to shed light on the Finnish scene of buprenorphine mortality.",
+    "journal": "International journal of legal medicine",
+    "year": "2024",
+    "doi": "10.1007/s00414-024-03273-5",
+    "pmid": "38910139",
+    "authors": [
+     "Mariottini C",
+     "Häkkinen M",
+     "Kriikku P",
+     "Ojanperä I"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "fm-cause-manner|definition",
+  "entity": "fm-cause-manner",
+  "field": "definition",
+  "query": "\"manner of death\" \"cause of death\" definition",
+  "patterns": [
+   "manner of death",
+   "natural|accident|suicide|homicide|undetermined",
+   "cause of death"
+  ],
+  "allow_methods": false,
+  "status": "not_found",
+  "candidates": []
+ },
+ {
+  "target": "fm-mechanism-of-death|definition",
+  "entity": "fm-mechanism-of-death",
+  "field": "definition",
+  "query": "\"mechanism of death\" \"cause of death\"",
+  "patterns": [
+   "mechanism of death",
+   "cause of death|physiolog|derangement"
+  ],
+  "allow_methods": false,
+  "status": "not_found",
+  "candidates": []
+ },
+ {
+  "target": "fm-postmortem-changes|definition",
+  "entity": "fm-postmortem-changes",
+  "field": "definition",
+  "query": "\"postmortem changes\"[Title/Abstract] early late",
+  "patterns": [
+   "post-?mortem changes",
+   "early|late|livor|rigor|algor|decompos|putref"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC10258654",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Analysis of Changes in Electrolytes Level in Serum After Death and Its Correlation With Postmortem Interval.",
+    "sentence": "In routine practice, postmortem interval is deduced by conventional or physical methods such as early and late postmortem changes, which are subjective methods and prone to errors.",
+    "journal": "Cureus",
+    "year": "2023",
+    "doi": "10.7759/cureus.38957",
+    "pmid": "37313102",
+    "authors": [
+     "Umapathi A",
+     "Chawla H",
+     "Singh SB",
+     "Tyagi A"
+    ]
+   },
+   {
+    "pmcid": "PMC7725292",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "The applicability of forensic time since death estimation methods for buried bodies in advanced decomposition stages.",
+    "sentence": "We used a multidisciplinary approach to investigate postmortem changes of morphology, skeletal muscle protein decomposition, presence of insects and other necrophilous animals as well as microbial communities (i.e., microbiomes) from August to November 2018 associated with two complete body exhumations and eight partial exhumations.",
+    "journal": "PloS one",
+    "year": "2020",
+    "doi": "10.1371/journal.pone.0243395",
+    "pmid": "33296399",
+    "authors": [
+     "Pittner S",
+     "Bugelli V",
+     "Benbow ME",
+     "Ehrenfellner B",
+     "Zissler A",
+     "Campobasso CP"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "fm-rigor-mortis|definition",
+  "entity": "fm-rigor-mortis",
+  "field": "definition",
+  "query": "\"rigor mortis\"[Title/Abstract] muscle ATP",
+  "patterns": [
+   "rigor mortis",
+   "ATP|muscle|stiff|rigid|actin|myosin"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC5863043",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Coupling of Rigor Mortis and Intestinal Necrosis during C. elegans Organismal Death.",
+    "sentence": "DC resembles mammalian rigor mortis, a postmortem necrosis-related process in which Ca2+ influx promotes muscle hyper-contraction.",
+    "journal": "Cell reports",
+    "year": "2018",
+    "doi": "10.1016/j.celrep.2018.02.050",
+    "pmid": "29514100",
+    "authors": [
+     "Galimov ER",
+     "Pryor RE",
+     "Poole SE",
+     "Benedetto A",
+     "Pincus Z",
+     "Gems D"
+    ]
+   },
+   {
+    "pmcid": "PMC12560940",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Energy Processes During Rigor Mortis in the Adductor Muscle of the Lion's Paw Scallop (Nodipecten subnodosus): Effects of Seasonality and Storage Temperature.",
+    "sentence": "This study investigated the effect of seasonality, storage temperature, and transportation on energy-related metabolites associated with rigor mortis in the adductor muscle.",
+    "journal": "Animals : an open access journal from MDPI",
+    "year": "2025",
+    "doi": "10.3390/ani15202953",
+    "pmid": "41153880",
+    "authors": [
+     "Jiménez-Ruiz EI",
+     "Ocaño-Higuera VM",
+     "Sumaya-Martínez MT",
+     "Márquez-Ríos E",
+     "Ruíz-Cruz S",
+     "Canizales-Rodríguez DF"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "fm-decomposition|definition",
+  "entity": "fm-decomposition",
+  "field": "definition",
+  "query": "decomposition stages human remains forensic",
+  "patterns": [
+   "decomposition",
+   "stages?|fresh|bloat|active decay|advanced decay|skeleton"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC8205910",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Suitability of specific soft tissue swabs for the forensic identification of highly decomposed bodies.",
+    "sentence": "However, at very progressed stages of decomposition, postmortem tissue putrefaction processes can decrease DNA yields considerably.",
+    "journal": "International journal of legal medicine",
+    "year": "2021",
+    "doi": "10.1007/s00414-021-02601-3",
+    "pmid": "33880634",
+    "authors": [
+     "Helm K",
+     "Matzenauer C",
+     "Neuhuber F",
+     "Monticelli F",
+     "Meyer H",
+     "Pittner S"
+    ]
+   },
+   {
+    "pmcid": "PMC12470946",
+    "license": "CC BY",
+    "section": "RESULTS",
+    "title": "A Synopsis of Two Decades of Arthropod Related Research at the Forensic Anthropology Research Facility (FARF), Texas State University (TXST), San Marcos, Texas, USA.",
+    "sentence": "The decomposition process was scored using Total Body Score (TBS) and Accumulated Degree Days (ADD) to compare the amount of time that was required to reach the skeletonization of the body trunk.",
+    "journal": "Insects",
+    "year": "2025",
+    "doi": "10.3390/insects16090897",
+    "pmid": "41009080",
+    "authors": [
+     "Nkhoma TB",
+     "Rakopoulou GD",
+     "Fortney SH",
+     "Wescott DJ",
+     "Spradley KM",
+     "Dadour IR"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "fm-pmi-methods|limitation",
+  "entity": "fm-pmi-methods",
+  "field": "limitation",
+  "query": "\"postmortem interval\" estimation methods accuracy",
+  "patterns": [
+   "post-?mortem interval|PMI",
+   "accura|precis|error|uncertain|limit|variab"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC12346081",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Current Understanding and Future Research Direction for Estimating the Postmortem Interval: A Systematic Review.",
+    "sentence": "Background: Accurate estimation of the postmortem interval (PMI) is critical in forensic death investigations.",
+    "journal": "Diagnostics (Basel, Switzerland)",
+    "year": "2025",
+    "doi": "10.3390/diagnostics15151954",
+    "pmid": "40804918",
+    "authors": [
+     "Strete G",
+     "Sălcudean A",
+     "Cozma AA",
+     "Radu CC"
+    ]
+   },
+   {
+    "pmcid": "PMC12957013",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Inter-operator reliability of the total decomposition score (TDS) method for estimating the post-mortem interval (PMI) in outdoor cases.",
+    "sentence": "Linear regression analyses between estimated and actual post-mortem intervals yielded low coefficients of determination, with R² = 34.1% for the TDS-based model and R² = 20.5% for the ADD-based model, indicating that both methods explain only a limited portion of the variance in the actual PMI (PMIa).",
+    "journal": "International journal of legal medicine",
+    "year": "2026",
+    "doi": "10.1007/s00414-025-03681-1",
+    "pmid": "41310302",
+    "authors": [
+     "Bugelli V",
+     "Strocchi M",
+     "Filippini T",
+     "Santunione AL",
+     "Calabrò F",
+     "Cecchi R"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "fm-blunt-trauma|definition",
+  "entity": "fm-blunt-trauma",
+  "field": "definition",
+  "query": "\"blunt force\" injuries abrasion contusion laceration",
+  "patterns": [
+   "blunt",
+   "abrasion|contusion|bruis|laceration"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC9804827",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Blunt force homicides in Denmark 1992-2016.",
+    "sentence": "Blunt force trauma causes external injuries in form of abrasions, contusions, and lacerations of the skin and internal injuries such as fractures, intracranial hemorrhages, and damage to internal organs.",
+    "journal": "Journal of forensic sciences",
+    "year": "2022",
+    "doi": "10.1111/1556-4029.15118",
+    "pmid": "35982577",
+    "authors": [
+     "Thomsen AH",
+     "Leth PM",
+     "Hougen HP",
+     "Villesen P"
+    ]
+   },
+   {
+    "pmcid": "PMC11964116",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Pattern and Forensic Significance of Defense Injuries in Homicide Cases: A Cross-Sectional Study.",
+    "sentence": "Incised wounds were predominant 36 (60%) in knife attacks, whereas contusions and fractures were frequently seen 33(55%) in blunt force trauma cases.",
+    "journal": "Cureus",
+    "year": "2025",
+    "doi": "10.7759/cureus.79959",
+    "pmid": "40177443",
+    "authors": [
+     "Das NG",
+     "Das N",
+     "Sil A"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "fm-sharp-trauma|definition",
+  "entity": "fm-sharp-trauma",
+  "field": "definition",
+  "query": "\"sharp force\" injuries \"stab wound\" \"incised wound\"",
+  "patterns": [
+   "incised wound|stab wound|sharp force",
+   "length|depth|deeper|longer|edge"
+  ],
+  "allow_methods": false,
+  "status": "not_found",
+  "candidates": []
+ },
+ {
+  "target": "fm-firearm|definition",
+  "entity": "fm-firearm",
+  "field": "definition",
+  "query": "gunshot wound entrance exit range forensic",
+  "patterns": [
+   "gunshot|firearm",
+   "entr(ance|y)|exit|range|soot|stippling|tattoo"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC10792621",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Artificial intelligence for human gunshot wound classification.",
+    "sentence": "Certain features are helpful in the identification of gunshot entrance and exit wounds, such as the presence of muzzle imprints, peripheral tears, stippling, bone beveling, and wound border irregularity.",
+    "journal": "Journal of pathology informatics",
+    "year": "2024",
+    "doi": "10.1016/j.jpi.2023.100361",
+    "pmid": "38234590",
+    "authors": [
+     "Cheng J",
+     "Schmidt C",
+     "Wilson A",
+     "Wang Z",
+     "Hao W",
+     "Pantanowitz J"
+    ]
+   },
+   {
+    "pmcid": "PMC11476102",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Pathological Changes and Sodium Rhodizonate Test as Tools for Investigating Gunshot Wounds in Veterinary Forensic Pathology.",
+    "sentence": "The aims of our study were to (1) investigate the gunshot wound morphology and lead residues in animals and (2) correlate the morphology of the gunshot wounds and the distribution of lead residues with the range of fire.",
+    "journal": "Animals : an open access journal from MDPI",
+    "year": "2024",
+    "doi": "10.3390/ani14192913",
+    "pmid": "39409862",
+    "authors": [
+     "Piegari G",
+     "d'Aquino I",
+     "Salanti GV",
+     "Romano V",
+     "Miletti G",
+     "Sannino E"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "fm-asphyxia|definition",
+  "entity": "fm-asphyxia",
+  "field": "definition",
+  "query": "asphyxia forensic classification hanging strangulation",
+  "patterns": [
+   "asphyxi",
+   "hanging|strangulation|smothering|suffocation|choking|compression"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC13030192",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "A Practical Diagnostic Approach to Non-Drowning Asphyxia in Animals: Forensic Pathology and Biomarkers.",
+    "sentence": "Asphyxiation can occur in any condition interfering with the uptake or utilization of oxygen and the elimination of carbon dioxide; this may be determined by lack of oxygen in the inspired air (vitiated atmosphere), obstruction of the air passages (suffocation, strangulation), restriction of chest movements (mechanical asphyxia), or histotoxic anoxia.",
+    "journal": "Veterinary sciences",
+    "year": "2026",
+    "doi": "10.3390/vetsci13030296",
+    "pmid": "41893713",
+    "authors": [
+     "Romano V",
+     "De Biase D",
+     "Russo V",
+     "Di Napoli E",
+     "Paciello O",
+     "Piegari G"
+    ]
+   },
+   {
+    "pmcid": "PMC13161347",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Death by hanging: possibilities and limits of medico-legal evidence.",
+    "sentence": "As the signs of asphyxia in general and especially those pointing to hanging may be scanty and discernible only for an experienced examiner, there is a high risk of misdiagnosis and incorrect interpretation.",
+    "journal": "International journal of legal medicine",
+    "year": "2026",
+    "doi": "10.1007/s00414-026-03734-z",
+    "pmid": "41721850",
+    "authors": [
+     "Pollak S",
+     "Große Perdekamp M",
+     "Thierauf-Emberger A"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "fm-drowning|limitation",
+  "entity": "fm-drowning",
+  "field": "limitation",
+  "query": "drowning diagnosis diatom test forensic",
+  "patterns": [
+   "drowning",
+   "diatom|diagnos|exclusion|difficult|challeng"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC11850479",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "The medico-legal interpretation of diatom findings for the diagnosis of fatal drowning: a systematic review.",
+    "sentence": "The diagnostic use of the diatom test for drowning has been under investigation for more than a century.",
+    "journal": "International journal of legal medicine",
+    "year": "2025",
+    "doi": "10.1007/s00414-024-03397-8",
+    "pmid": "39808189",
+    "authors": [
+     "Tyr A",
+     "Lunetta P",
+     "Zilg B",
+     "Winskog C",
+     "Heldring N"
+    ]
+   },
+   {
+    "pmcid": "PMC10421782",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Influence of the toxicological status on the diagnosis of fatal drowning.",
+    "sentence": "Xenobiotics are frequently involved in drowning cases but their influence on the diagnosis of fatal drowning has not been studied so far.",
+    "journal": "International journal of legal medicine",
+    "year": "2023",
+    "doi": "10.1007/s00414-023-03057-3",
+    "pmid": "37433906",
+    "authors": [
+     "Poulain C",
+     "Mathieu O",
+     "Gouetta V",
+     "Baccino É",
+     "Peyron PA"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "fm-burns|marker",
+  "entity": "fm-burns",
+  "field": "marker",
+  "query": "fire death carboxyhemoglobin soot airway vital",
+  "patterns": [
+   "soot|carboxyh(a)?emoglobin|COHb",
+   "airway|trachea|alive|vital|inhal"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC12609627",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "The Chestnut and the Imperfect Crime: A Case Report of Femicide and Staged Road Accident.",
+    "sentence": "Carboxyhemoglobin levels were below 5%, indicating a low level which did not support intravital inhalation of combustion gases.",
+    "journal": "Diagnostics (Basel, Switzerland)",
+    "year": "2025",
+    "doi": "10.3390/diagnostics15212664",
+    "pmid": "41225957",
+    "authors": [
+     "Baldino G",
+     "Biondo T",
+     "Raffino C",
+     "Čaplinskienė M",
+     "Vanin S",
+     "Spagnolo EV"
+    ]
+   },
+   {
+    "pmcid": "PMC10417010",
+    "license": "CC BY",
+    "section": "DISCUSS",
+    "title": "Homicides Disguised as Fire Deaths.",
+    "sentence": "A living person (not necessarily a conscious one) will quickly inhale smoke and soot, which can not only settle in the above-mentioned organs, but can either cause their thermal burns.",
+    "journal": "Acta medica Lituanica",
+    "year": "2023",
+    "doi": "10.15388/Amed.2023.30.1.10",
+    "pmid": "37575373",
+    "authors": [
+     "Žiūkaitė G",
+     "Jasaitė M",
+     "Chmieliauskas S",
+     "Vasiljevaitė D",
+     "Laima S",
+     "Banionis D"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "fm-electrical|definition",
+  "entity": "fm-electrical",
+  "field": "definition",
+  "query": "\"electrical injury\" OR electrocution forensic \"current mark\"",
+  "patterns": [
+   "electr",
+   "current mark|electric mark|entry|exit|burn"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC12009613",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Electrocutions in Free-Ranging Platyrrhine Nonhuman Primates: Diagnostic Features for a Threatening Condition.",
+    "sentence": "Gross and microscopic evaluations were conducted to assess the nature and extent of electrothermal injuries, including burns and tissue damage.",
+    "journal": "American journal of primatology",
+    "year": "2025",
+    "doi": "10.1002/ajp.70039",
+    "pmid": "40253702",
+    "authors": [
+     "Barros RM",
+     "Macêdo IL",
+     "Sousa DER",
+     "Cerqueira LA",
+     "Fonseca YNG",
+     "Sousa ALV"
+    ]
+   },
+   {
+    "pmcid": "PMC10014766",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Intramuscular hemorrhages in the pathway of an electric current through the body - two case reports.",
+    "sentence": "Externally visible electric marks were present in both cases.",
+    "journal": "Forensic science, medicine, and pathology",
+    "year": "2023",
+    "doi": "10.1007/s12024-022-00558-2",
+    "pmid": "36346538",
+    "authors": [
+     "Mittal P",
+     "Bohnert M"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "fm-hypothermia|marker",
+  "entity": "fm-hypothermia",
+  "field": "marker",
+  "query": "hypothermia death \"Wischnewski\" gastric",
+  "patterns": [
+   "hypotherm",
+   "Wischnewski|gastric (erosions|mucosa|lesions)|frost"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC11164732",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Hypothermic sepsis in time since death estimation - a case report.",
+    "sentence": "No further autopsy findings indicative of hypothermia (frost erythema, red lividity, “empty scrotum”, pancreatic haemorrhage, iliopsoas muscle haemorrhage) were observed.",
+    "journal": "International journal of legal medicine",
+    "year": "2024",
+    "doi": "10.1007/s00414-024-03193-4",
+    "pmid": "38374287",
+    "authors": [
+     "Potente S",
+     "Hanser V",
+     "Heinbuch S",
+     "Wrede A",
+     "Schäfer N",
+     "Schmidt P"
+    ]
+   },
+   {
+    "pmcid": "PMC8955028",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Biological Mechanisms behind Wischnewsky Spots Finding on Gastric Mucosa: Autopsy Cases and Literature Review.",
+    "sentence": "Wischnewsky Spots (WS) are blackish lesions of gastric mucosa, typically associated with hypothermic death.",
+    "journal": "International journal of environmental research and public health",
+    "year": "2022",
+    "doi": "10.3390/ijerph19063601",
+    "pmid": "35329287",
+    "authors": [
+     "Sacco MA",
+     "Abenavoli L",
+     "Juan C",
+     "Ricci P",
+     "Aquila I"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "fm-hyperthermia|definition",
+  "entity": "fm-hyperthermia",
+  "field": "definition",
+  "query": "hyperthermia OR \"heat stroke\" death forensic autopsy",
+  "patterns": [
+   "hypertherm|heat ?stroke",
+   "death|autopsy|diagnos|body temperature|non-?specific"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC10531952",
+    "license": "CC BY",
+    "section": "RESULTS",
+    "title": "Exploring the Potential of Proteome Analysis as a Promising Tool for Evaluation of Sudden Cardiac Death (SCD) in Forensic Settings: A Literature Review.",
+    "sentence": "The mechanisms of terminal myocardial injury can also occur in other causes of death, such as hyperthermia, drug abuse with cardiogenic effects, and cerebrovascular disease, where it is possible that there may have been mechanisms of terminal cardiac injury.",
+    "journal": "International journal of molecular sciences",
+    "year": "2023",
+    "doi": "10.3390/ijms241814351",
+    "pmid": "37762655",
+    "authors": [
+     "Sacco MA",
+     "Gualtieri S",
+     "Calanna L",
+     "Ricci P",
+     "Aquila I"
+    ]
+   },
+   {
+    "pmcid": "PMC6373338",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Effects of postmortem positional changes on conjunctival petechiae.",
+    "sentence": "The causes of death were sharp instrument injury, blunt force trauma, fire, intoxication, asphyxia, drowning, hypothermia, hyperthermia, acute heart failure, and natural causes.",
+    "journal": "Forensic science, medicine, and pathology",
+    "year": "2019",
+    "doi": "10.1007/s12024-018-0032-5",
+    "pmid": "30390281",
+    "authors": [
+     "Ikeda T",
+     "Tani N",
+     "Aoki Y",
+     "Shida A",
+     "Morioka F",
+     "Oritani S"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "fm-anthropology|definition",
+  "entity": "fm-anthropology",
+  "field": "definition",
+  "query": "\"forensic anthropology\"[Title/Abstract] skeletal remains",
+  "patterns": [
+   "forensic anthropolog",
+   "skelet|remains|biological profile|identif"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC11306639",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "The taphonomic effects of long-term burial in the South African Highveld.",
+    "sentence": "Taphonomy studies the environmental effects on remains from the time of deposition to the time of recovery and has been integrated into the field of forensic anthropology.",
+    "journal": "International journal of legal medicine",
+    "year": "2024",
+    "doi": "10.1007/s00414-024-03235-x",
+    "pmid": "38649549",
+    "authors": [
+     "Landsman C",
+     "Myburgh J",
+     "Meyer A"
+    ]
+   },
+   {
+    "pmcid": "PMC9602128",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "The Skeletal Remains of Soldiers from the Two World Wars: Between Identification, Health Research and Memorial Issues.",
+    "sentence": "Nevertheless, the process of identification and determining the cause of death requires the use of modern forensic anthropology by applying biological profiling and DNA analysis.",
+    "journal": "Genes",
+    "year": "2022",
+    "doi": "10.3390/genes13101852",
+    "pmid": "36292737",
+    "authors": [
+     "Meucci M",
+     "Verna E",
+     "Costedoat C"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "fm-age-estimation|limitation",
+  "entity": "fm-age-estimation",
+  "field": "limitation",
+  "query": "age estimation skeletal OR dental forensic accuracy",
+  "patterns": [
+   "age estimat",
+   "accura|error|reliab|method|interval"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC11694602",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Comparative Analysis of Dental Age Estimation: A Systematic Review and Meta-analysis Assessing Gender-Specific Accuracy of the Demirjian and Nolla Methods Across Different Age Groups.",
+    "sentence": "In conclusion, while the Demirjian and Nolla methods have unique advantages, using them together can provide a more robust and reliable age estimation.",
+    "journal": "Cureus",
+    "year": "2024",
+    "doi": "10.7759/cureus.75031",
+    "pmid": "39749055",
+    "authors": [
+     "Al-Juhani A",
+     "Binshalhoub A",
+     "Showail S",
+     "Alraythi M",
+     "Alzahrani A",
+     "Almutiri NF"
+    ]
+   },
+   {
+    "pmcid": "PMC11084977",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Uncovering Forensic Evidence: A Path to Age Estimation through DNA Methylation.",
+    "sentence": "DNA methylation holds significant promise for the development of reliable, accurate, and practical methods for age estimation in the future.",
+    "journal": "International journal of molecular sciences",
+    "year": "2024",
+    "doi": "10.3390/ijms25094917",
+    "pmid": "38732129",
+    "authors": [
+     "Castagnola MJ",
+     "Medina-Paz F",
+     "Zapico SC"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "fm-sex-estimation|marker",
+  "entity": "fm-sex-estimation",
+  "field": "marker",
+  "query": "sex estimation pelvis skull forensic accuracy",
+  "patterns": [
+   "sex (estimat|determin)",
+   "pelvis|pelvic|os coxae|skull|cranial|accura"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC11627412",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Sex estimation techniques based on skulls in forensic anthropology: A scoping review.",
+    "sentence": "This study aims to provide a scoping review of the literature on techniques used in skull-based sex estimation, serving as a valuable reference for researchers.",
+    "journal": "PloS one",
+    "year": "2024",
+    "doi": "10.1371/journal.pone.0311762",
+    "pmid": "39652615",
+    "authors": [
+     "Wang X",
+     "Liu G",
+     "Wu Q",
+     "Zheng Y",
+     "Song F",
+     "Li Y"
+    ]
+   },
+   {
+    "pmcid": "PMC10121348",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "A Geometric Morphometrics Approach for Sex Estimation Based on the Orbital Region of Human Skulls from Bosnian Population.",
+    "sentence": "The objective of this research was to analyse sex estimation of the orbital region on a sample of skulls from a Bosnian population using the geometric morphometric method.",
+    "journal": "Scanning",
+    "year": "2023",
+    "doi": "10.1155/2023/2223138",
+    "pmid": "37089258",
+    "authors": [
+     "Ajanović Z",
+     "Ajanović U",
+     "Dervišević L",
+     "Hot H",
+     "Voljevica A",
+     "Talović E"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "fm-stature-estimation|marker",
+  "entity": "fm-stature-estimation",
+  "field": "marker",
+  "query": "stature estimation long bones regression forensic",
+  "patterns": [
+   "stature",
+   "long bones?|femur|tibia|regression|formula"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC11732771",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Evaluating the accuracy of population-specific versus generic stature estimation regression equations in a South African sample.",
+    "sentence": "Results indicated that the Albanese et al. (Albanese J, Tuck A, Gomes J, Cardoso HFV (2016) An alternative approach for estimating stature for long bones that is not population- or group-specific.",
+    "journal": "International journal of legal medicine",
+    "year": "2025",
+    "doi": "10.1007/s00414-024-03340-x",
+    "pmid": "39356314",
+    "authors": [
+     "Bidmos M",
+     "Brits D"
+    ]
+   },
+   {
+    "pmcid": "PMC13329083",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Estimating the Stature of an Ancient North Andean Population From Articular Breadths and Diaphyseal Diameters: An Extension of Anzellini and Toyne (2020).",
+    "sentence": "Stature estimation of skeletal remains is mostly dependent on the lengths of long bones, but these are often unavailable in fragmented or commingled assemblages.",
+    "journal": "American journal of biological anthropology",
+    "year": "2026",
+    "doi": "10.1002/ajpa.70310",
+    "pmid": "42394121",
+    "authors": [
+     "Anzellini A",
+     "Toyne JM"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "fm-odontology|definition",
+  "entity": "fm-odontology",
+  "field": "definition",
+  "query": "\"forensic odontology\" identification dental records",
+  "patterns": [
+   "odontolog|dental",
+   "identif|records|comparison|ante-?mortem"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC10594786",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Maintenance of dental records and awareness of forensic odontology among pakistani dentists: a mixed-method study with implications for dental data repository.",
+    "sentence": "Dental records and forensic odontology play an important role in both healthcare and the legal system, aiding in personalized patient care, human identification, and legal proceedings.",
+    "journal": "BMC oral health",
+    "year": "2023",
+    "doi": "10.1186/s12903-023-03500-2",
+    "pmid": "37875855",
+    "authors": [
+     "Baqai HS",
+     "Zaidi SJA",
+     "Baig QA",
+     "Bashir MB",
+     "Anwar M",
+     "Ansari AS"
+    ]
+   },
+   {
+    "pmcid": "PMC6968523",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Forensic odontology in DVI: current practice and recent advances.",
+    "sentence": "Forensic odontology plays a key role in mass disaster victim identification (DVI) when good-quality antemortem (AM) dental records are available.",
+    "journal": "Forensic sciences research",
+    "year": "2019",
+    "doi": "10.1080/20961790.2019.1678710",
+    "pmid": "32002490",
+    "authors": [
+     "Forrest A"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "fm-dvi|definition",
+  "entity": "fm-dvi",
+  "field": "definition",
+  "query": "\"disaster victim identification\" Interpol primary identifiers",
+  "patterns": [
+   "disaster victim identification|\\bDVI\\b",
+   "DNA|fingerprint|dental|primary identif|Interpol"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC7646573",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Identifying terrorist attack victims.",
+    "sentence": "These include the annual INTERPOL conference on DVI in Lyon in 2016 and Singapore in 2017, the Australasian DVI conference in 2017, the mass fatality symposium organised by the office of the Chief Medical Examiner of Washington in 2016, and others.",
+    "journal": "Forensic sciences research",
+    "year": "2020",
+    "doi": "10.1080/20961790.2020.1821149",
+    "pmid": "33209508",
+    "authors": [
+     "Arrighi E",
+     "Charlot AM"
+    ]
+   },
+   {
+    "pmcid": "PMC7654639",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Disaster victim identification operations with fragmented, burnt, or commingled remains: experience-based recommendations.",
+    "sentence": "While recommendations are provided, they are not intended as proscriptive policy but rather as an addition to the general recommendations given in the International Criminal Police Organization (INTERPOL) DVI Guide, to inform preparative discussions between government officials, judiciary, police, and forensic specialists.",
+    "journal": "Forensic sciences research",
+    "year": "2020",
+    "doi": "10.1080/20961790.2020.1751385",
+    "pmid": "33224550",
+    "authors": [
+     "de Boer HH",
+     "Roberts J",
+     "Delabarde T",
+     "Mundorff AZ",
+     "Blau S"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "fm-pm-imaging|definition",
+  "entity": "fm-pm-imaging",
+  "field": "definition",
+  "query": "\"postmortem computed tomography\" autopsy complement",
+  "patterns": [
+   "post-?mortem (computed tomography|CT|imaging)|PMCT|virtopsy",
+   "autopsy|complement|non-?invasive|detect"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC11953209",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Enhanced autopsy triage (EA-Triage) in drug-related deaths: integrating quick toxicological analysis and postmortem computed tomography.",
+    "sentence": "The objective was to assess the diagnostic accuracy of an enhanced autopsy triage (EA-Triage) setup consisting of postmortem computed tomography (PMCT), simulated quick toxicological analysis (sQTA), external examination, and case information in determining cause of death (COD) in persons with past or current use of illegal drugs (drug-related deaths).",
+    "journal": "Forensic science, medicine, and pathology",
+    "year": "2025",
+    "doi": "10.1007/s12024-024-00819-2",
+    "pmid": "38683282",
+    "authors": [
+     "Kisbye LW",
+     "Rickert A",
+     "Hasselstrøm JB",
+     "Andersen CU",
+     "Lund HA",
+     "Rohde MC"
+    ]
+   },
+   {
+    "pmcid": "PMC7220088",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Diagnosis of drowning using postmortem computed tomography combined with endoscopic autopsy: A case report.",
+    "sentence": "Postmortem computed tomography, target coronary postmortem computed tomography angiography, and endoscopic autopsy were performed before conventional autopsy.",
+    "journal": "Medicine",
+    "year": "2020",
+    "doi": "10.1097/MD.0000000000019182",
+    "pmid": "32176043",
+    "authors": [
+     "Wang Z",
+     "Ma K",
+     "Zou D",
+     "Liu N",
+     "Li Z",
+     "Shao Y"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "his-sampling|principle",
+  "entity": "his-sampling",
+  "field": "principle",
+  "query": "forensic histology sampling autopsy tissue samples",
+  "patterns": [
+   "histolog",
+   "sampl",
+   "autops|tissue|organ"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC7220088",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Diagnosis of drowning using postmortem computed tomography combined with endoscopic autopsy: A case report.",
+    "sentence": "Target tissues are also sampled for histologic examination.",
+    "journal": "Medicine",
+    "year": "2020",
+    "doi": "10.1097/MD.0000000000019182",
+    "pmid": "32176043",
+    "authors": [
+     "Wang Z",
+     "Ma K",
+     "Zou D",
+     "Liu N",
+     "Li Z",
+     "Shao Y"
+    ]
+   },
+   {
+    "pmcid": "PMC12841370",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Post-Mortem Biomarkers in Sudden Cardiac Death: From Classical Biochemistry to Molecular Autopsy and Multi-Omics Forensic Approaches.",
+    "sentence": "Li et al. demonstrated upregulation of nuclear factor-κB (NF-κB) and activating transcription factor 3 (ATF3) in myocardial samples from autopsy-negative SCD, suggesting that subtle inflammatory processes may remain histologically silent.",
+    "journal": "International journal of molecular sciences",
+    "year": "2026",
+    "doi": "10.3390/ijms27020670",
+    "pmid": "41596321",
+    "authors": [
+     "Sacco MA",
+     "Mastrangelo H",
+     "Neri G",
+     "Aquila I"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "his-fixation|principle",
+  "entity": "his-fixation",
+  "field": "principle",
+  "query": "formalin fixation tissue histology autolysis",
+  "patterns": [
+   "formalin|fixation|fixed",
+   "autoly|tissue|preserv|morpholog"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC4169649",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Importance of formalin fixing conditions for HER2 testing in gastric cancer: immunohistochemical staining and fluorescence in situ hybridization.",
+    "sentence": "Here we examined the impact of formalin fixing conditions on HER2 immunohistochemistry (IHC) and fluorescence in situ hybridization (FISH) in xenografted tumor tissues.",
+    "journal": "Gastric cancer : official journal of the International Gastric Cancer Association and the Japanese Gastric Cancer Association",
+    "year": "2014",
+    "doi": "10.1007/s10120-013-0329-8",
+    "pmid": "24414131",
+    "authors": [
+     "Yamashita-Kashima Y",
+     "Shu S",
+     "Yorozu K",
+     "Hashizume K",
+     "Moriya Y",
+     "Fujimoto-Ouchi K"
+    ]
+   },
+   {
+    "pmcid": "PMC4556454",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Phase-Contrast Hounsfield Units of Fixated and Non-Fixated Soft-Tissue Samples.",
+    "sentence": "The fixation step stabilizes the fine structural details of cells and tissues prior to examination, and is most commonly performed in aldehyde.",
+    "journal": "PloS one",
+    "year": "2015",
+    "doi": "10.1371/journal.pone.0137016",
+    "pmid": "26322638",
+    "authors": [
+     "Willner M",
+     "Fior G",
+     "Marschner M",
+     "Birnbacher L",
+     "Schock J",
+     "Braun C"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "his-he-stain|principle",
+  "entity": "his-he-stain",
+  "field": "principle",
+  "query": "hematoxylin eosin staining forensic histology",
+  "patterns": [
+   "h(a)?ematoxylin|H&E",
+   "eosin|stain"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC1550228",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "The normal human chondro-osseous junctional region: evidence for contact of uncalcified cartilage with subchondral bone and marrow spaces.",
+    "sentence": "They were stained with haematoxylin and eosin and photographed.",
+    "journal": "BMC musculoskeletal disorders",
+    "year": "2006",
+    "doi": "10.1186/1471-2474-7-52",
+    "pmid": "16787529",
+    "authors": [
+     "Lyons TJ",
+     "McClure SF",
+     "Stoddart RW",
+     "McClure J"
+    ]
+   },
+   {
+    "pmcid": "PMC3458269",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Diffuse alveolar damage of the lungs in forensic autopsies: assessment of histopathological stages and causes of death.",
+    "sentence": "Hematoxylin- and eosin-stained lung preparations were reexamined in line with the 2002 American Thoracic Society/European Respiratory Society idiopathic interstitial pneumonia consensus criteria.",
+    "journal": "TheScientificWorldJournal",
+    "year": "2012",
+    "doi": "10.1100/2012/657316",
+    "pmid": "23028252",
+    "authors": [
+     "Nur Urer H",
+     "Ersoy G",
+     "Yılmazbayhan ED"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "his-ihc|application",
+  "entity": "his-ihc",
+  "field": "application",
+  "query": "immunohistochemistry forensic pathology markers wound OR myocardial",
+  "patterns": [
+   "immunohistochem|IHC",
+   "forensic|post-?mortem|autops",
+   "marker|express|detect"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC8770859",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Forensic Impact of the Omics Science Involved in the Wound: A Systematic Review.",
+    "sentence": "On the other hand, Turillazzi et al. investigated the immunohistochemical expression of a panel of cytokines and inflammatory cells in skin samples from an autopsy of hanging cases to evaluate whether the mark and signs of hanging occurred before or after the death of the victim.",
+    "journal": "Frontiers in medicine",
+    "year": "2021",
+    "doi": "10.3389/fmed.2021.786798",
+    "pmid": "35071269",
+    "authors": [
+     "Ros AC",
+     "Bacci S",
+     "Luna A",
+     "Legaz I"
+    ]
+   },
+   {
+    "pmcid": "PMC12170769",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Ischemic and non-ischemic myocardial injuries at autopsy- an overview for forensic pathologists.",
+    "sentence": "- Ancillary techniques (postmortem imaging, immunohistochemistry (IHC), NBT stain and postmortem chemistry) allow to detect myocardial injuries, but they cannot discriminate between ischemic and nonischemic causes of cell death.",
+    "journal": "International journal of legal medicine",
+    "year": "2025",
+    "doi": "10.1007/s00414-025-03479-1",
+    "pmid": "40172635",
+    "authors": [
+     "Michaud K",
+     "Basso C",
+     "de Boer HH",
+     "Fracasso T",
+     "de Gaspari M",
+     "Giordano C"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "his-wound-vitality|limitation",
+  "entity": "his-wound-vitality",
+  "field": "limitation",
+  "query": "wound vitality age estimation histology forensic",
+  "patterns": [
+   "vital|wound age",
+   "histolog|immunohistochem|inflammat|neutrophil|leukocyt",
+   "estimat|determin|limit|difficult|challeng"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC8770859",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Forensic Impact of the Omics Science Involved in the Wound: A Systematic Review.",
+    "sentence": "Due to supravital reactions and minor morphological changes evident during this time, immunohistochemical parameters for age assessment and vitality for human skin wounds remain challenging.",
+    "journal": "Frontiers in medicine",
+    "year": "2021",
+    "doi": "10.3389/fmed.2021.786798",
+    "pmid": "35071269",
+    "authors": [
+     "Ros AC",
+     "Bacci S",
+     "Luna A",
+     "Legaz I"
+    ]
+   },
+   {
+    "pmcid": "PMC12861040",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Histological and Immunohistochemical Biomarkers for Wound Age Estimation in Human Skin: A Systematic Review.",
+    "sentence": "This review synthesizes evidence on histological and immunohistochemical markers used for wound age estimation in human skin, with attention to their applicability across different post-traumatic intervals.",
+    "journal": "Cureus",
+    "year": "2026",
+    "doi": "10.7759/cureus.100607",
+    "pmid": "41631082",
+    "authors": [
+     "Ahmed AE",
+     "Aljohani WF",
+     "Moafa AK",
+     "Hattan FA",
+     "Altalhi YA",
+     "Alsulamy NS"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "his-mi-early|marker",
+  "entity": "his-mi-early",
+  "field": "marker",
+  "query": "early myocardial infarction postmortem histology markers",
+  "patterns": [
+   "myocardial (infarction|ischemi|ischaemi)",
+   "early|histolog|immunohistochem|marker|C5b|fibronectin|troponin"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC3663776",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Immunohistochemical detection of S100A1 in the postmortem diagnosis of acute myocardial infarction.",
+    "sentence": "For autopsy material, all human cases of definite myocardial infarction and suspected early infarction showed well-defined areas without S100A1 staining.",
+    "journal": "Diagnostic pathology",
+    "year": "2013",
+    "doi": "10.1186/1746-1596-8-84",
+    "pmid": "23683996",
+    "authors": [
+     "Bi H",
+     "Yang Y",
+     "Huang J",
+     "Li Y",
+     "Ma C",
+     "Cong B"
+    ]
+   },
+   {
+    "pmcid": "PMC11277133",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Postmortem Immunohistochemical Findings in Early Acute Myocardial Infarction: A Systematic Review.",
+    "sentence": "The diagnosis of early acute myocardial infarction is of particular importance in forensic practice considering the frequency of sudden cardiac death and the difficulty of positively identifying it through classical histological methods if survival is less than 6 h.",
+    "journal": "International journal of molecular sciences",
+    "year": "2024",
+    "doi": "10.3390/ijms25147625",
+    "pmid": "39062865",
+    "authors": [
+     "Isailă OM",
+     "Ion OM",
+     "Luta R",
+     "Catinas R",
+     "Ionita A",
+     "Haisan D"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "his-putrefaction-artifact|limitation",
+  "entity": "his-putrefaction-artifact",
+  "field": "limitation",
+  "query": "putrefaction autolysis artifacts histology postmortem",
+  "patterns": [
+   "autoly|putrefact|decompos",
+   "artifact|artefact|interpret|histolog"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC13340943",
+    "license": "CC BY",
+    "section": "DISCUSS",
+    "title": "Advancing fetal autopsy in cases of maceration: Underwater dissection technique and its forensic relevance.",
+    "sentence": "The degree and pattern of autolysis were comparable in both cases, and no immersion‐related artifacts—such as tissue edema, artificial separation of layers, or structural distortion—were observed (Figures 13 and 14).",
+    "journal": "Journal of forensic sciences",
+    "year": "2026",
+    "doi": "10.1111/1556-4029.70336",
+    "pmid": "41968570",
+    "authors": [
+     "Buffelli F",
+     "Duzioni S",
+     "Vellone VG",
+     "Bonsignore A",
+     "Fulcheri E"
+    ]
+   },
+   {
+    "pmcid": "PMC11277133",
+    "license": "CC BY",
+    "section": "DISCUSS",
+    "title": "Postmortem Immunohistochemical Findings in Early Acute Myocardial Infarction: A Systematic Review.",
+    "sentence": "However, particular aspects of each case must also be considered, such as cardiopulmonary resuscitation, catecholamine injection, drug use (ecstasy, cocaine), agonal artifacts, postmortem interval, autolysis, and pre-existing ischemic events, which can influence immunohistochemical results.",
+    "journal": "International journal of molecular sciences",
+    "year": "2024",
+    "doi": "10.3390/ijms25147625",
+    "pmid": "39062865",
+    "authors": [
+     "Isailă OM",
+     "Ion OM",
+     "Luta R",
+     "Catinas R",
+     "Ionita A",
+     "Haisan D"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "his-fat-embolism|marker",
+  "entity": "his-fat-embolism",
+  "field": "marker",
+  "query": "fat embolism postmortem histology \"Oil Red O\" OR Sudan",
+  "patterns": [
+   "fat embolism",
+   "Oil Red O|Sudan|lung|pulmonary|stain"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC10085886",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Fat embolism after intraosseous catheters in pediatric forensic autopsies.",
+    "sentence": "In our center, we performed the autopsy of a child who died from drowning and presented, at autopsy, a major pulmonary fat embolism (PFE).",
+    "journal": "International journal of legal medicine",
+    "year": "2023",
+    "doi": "10.1007/s00414-022-02848-4",
+    "pmid": "35771256",
+    "authors": [
+     "Castiglioni C",
+     "Carminati A",
+     "Fracasso T"
+    ]
+   },
+   {
+    "pmcid": "PMC10965743",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "In vivo study to assess fat embolism resulting from the Reamer-Irrigator-Aspirator 2 system compared to a novel aspirator-based concept for intramedullary bone graft harvesting.",
+    "sentence": "Fat embolism (FE) following intramedullary (IM) reaming can cause severe pulmonary complications and sudden death.",
+    "journal": "Archives of orthopaedic and trauma surgery",
+    "year": "2024",
+    "doi": "10.1007/s00402-024-05220-w",
+    "pmid": "38367064",
+    "authors": [
+     "Laubach M",
+     "Bessot A",
+     "Saifzadeh S",
+     "Savi FM",
+     "Hildebrand F",
+     "Bock N"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "his-drowning|limitation",
+  "entity": "his-drowning",
+  "field": "limitation",
+  "query": "drowning lung histology forensic emphysema aquosum",
+  "patterns": [
+   "drowning",
+   "histolog|lung|alveol|emphysema"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC7220088",
+    "license": "CC BY",
+    "section": "DISCUSS",
+    "title": "Diagnosis of drowning using postmortem computed tomography combined with endoscopic autopsy: A case report.",
+    "sentence": "Lung tissues collected via endoscopy were used for diatom tests, and the diatoms detected were identical to those in water samples, which aided in the diagnosis of drowning.",
+    "journal": "Medicine",
+    "year": "2020",
+    "doi": "10.1097/MD.0000000000019182",
+    "pmid": "32176043",
+    "authors": [
+     "Wang Z",
+     "Ma K",
+     "Zou D",
+     "Liu N",
+     "Li Z",
+     "Shao Y"
+    ]
+   },
+   {
+    "pmcid": "PMC7782435",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Macromorphological findings in cases of death in water: a critical view on \"drowning signs\".",
+    "sentence": "An important vital drowning sign is external foam, resulting from the mixture of air, water, bronchial mucosa secretions, and surfactant in the lungs.",
+    "journal": "International journal of legal medicine",
+    "year": "2021",
+    "doi": "10.1007/s00414-020-02469-9",
+    "pmid": "33237456",
+    "authors": [
+     "Schneppe S",
+     "Dokter M",
+     "Bockholdt B"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "his-sids|limitation",
+  "entity": "his-sids",
+  "field": "limitation",
+  "query": "histology sudden death heart conduction system autopsy",
+  "patterns": [
+   "histolog",
+   "sudden (cardiac )?death",
+   "heart|cardiac|myocard"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC12841370",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Post-Mortem Biomarkers in Sudden Cardiac Death: From Classical Biochemistry to Molecular Autopsy and Multi-Omics Forensic Approaches.",
+    "sentence": "Protein biomarkers remain the cornerstone of post-mortem biochemistry in sudden cardiac death (SCD), representing the first line of evidence when structural or histological signs of ischemia are absent.",
+    "journal": "International journal of molecular sciences",
+    "year": "2026",
+    "doi": "10.3390/ijms27020670",
+    "pmid": "41596321",
+    "authors": [
+     "Sacco MA",
+     "Mastrangelo H",
+     "Neri G",
+     "Aquila I"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "bio-vitreous-sodium-chloride|marker",
+  "entity": "bio-vitreous-sodium-chloride",
+  "field": "marker",
+  "query": "vitreous sodium chloride dehydration postmortem",
+  "patterns": [
+   "vitreous",
+   "sodium|chloride",
+   "dehydrat|hypernatr|stable"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC8773483",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "A Rapid Method for Postmortem Vitreous Chemistry-Deadside Analysis.",
+    "sentence": "Hyperglycemia can be clearly identified by analyzing vitreous fluid glucose levels, whilst vitreous potassium levels can provide an estimate of the postmortem interval and levels of sodium and chloride can reveal dehydration or water intoxication.",
+    "journal": "Biomolecules",
+    "year": "2021",
+    "doi": "10.3390/biom12010032",
+    "pmid": "35053180",
+    "authors": [
+     "Zilg B",
+     "Alkass K",
+     "Kronstrand R",
+     "Berg S",
+     "Druid H"
+    ]
+   },
+   {
+    "pmcid": "PMC10885086",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Myopia, Sodium Chloride, and Vitreous Fluid Imbalance: A Nutritional Epidemiology Perspective.",
+    "sentence": "In addition to affecting the vitreous fluid, a case of osmotic swelling in the aqueous humor-filled anterior chamber of a patient with hypernatremia was induced by sodium shifted into the lens, causing lens fiber damage and the rapid onset of myopic error.",
+    "journal": "Epidemiologia (Basel, Switzerland)",
+    "year": "2024",
+    "doi": "10.3390/epidemiologia5010003",
+    "pmid": "38390916",
+    "authors": [
+     "Brown RB"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "bio-vitreous-urea-creatinine|marker",
+  "entity": "bio-vitreous-urea-creatinine",
+  "field": "marker",
+  "query": "vitreous urea creatinine postmortem renal",
+  "patterns": [
+   "vitreous",
+   "urea|creatinine",
+   "renal|kidney|uremi|stable|antemortem|ante-mortem"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC12354637",
+    "license": "CC BY",
+    "section": "RESULTS",
+    "title": "Variance in intraindividual stability of vitreous humor for thanatochemistry.",
+    "sentence": "Urea concentrations in vitreous humor (VH) were significantly correlated with renal or infectious causes of death and multi-organ failure.",
+    "journal": "International journal of legal medicine",
+    "year": "2025",
+    "doi": "10.1007/s00414-025-03482-6",
+    "pmid": "40198360",
+    "authors": [
+     "Kaehler A",
+     "Kuta P",
+     "Renné T",
+     "Garland J",
+     "Tse R",
+     "Iwersen-Bergmann S"
+    ]
+   },
+   {
+    "pmcid": "PMC13163109",
+    "license": "CC BY",
+    "section": "DISCUSS",
+    "title": "Postmortem Aqueous Humor Analysis in Pigs as an Index of Antemortem Serum Biochemistry Profile and Diagnostic Aid in Animal Welfare.",
+    "sentence": "Notably, the correlation for urea nitrogen in finishing pigs (r = 0.971) exceeded values previously reported by Drolet et al. (r = 0.78 for aqueous humor and 0.69 for vitreous humor), similar to that for cats (r = 0.926), reinforcing the concept that urea nitrogen remains a stable and reliable indicator for at least 24 h postmortem.",
+    "journal": "Animals : an open access journal from MDPI",
+    "year": "2026",
+    "doi": "10.3390/ani16091358",
+    "pmid": "42121778",
+    "authors": [
+     "Mihaljević Ž",
+     "Šandor K",
+     "Naletilić Š",
+     "Vidić Z",
+     "Kilvain I",
+     "Lolić M"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "bio-vitreous-glucose|limitation",
+  "entity": "bio-vitreous-glucose",
+  "field": "limitation",
+  "query": "vitreous glucose postmortem hyperglycemia decrease",
+  "patterns": [
+   "vitreous",
+   "glucose",
+   "decreas|glycoly|hyperglyc|diabet|unreliable|cannot"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC5074458",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Risk Factors for Fatal Hyperglycaemia Confirmed by Forensic Postmortem Examination - A Nationwide Cohort in Sweden.",
+    "sentence": "Vitreous glucose was used to diagnose hyperglycaemia postmortem.",
+    "journal": "PloS one",
+    "year": "2016",
+    "doi": "10.1371/journal.pone.0164950",
+    "pmid": "27768720",
+    "authors": [
+     "Walz L",
+     "Jönsson AK",
+     "Zilg B",
+     "Östgren CJ",
+     "Druid H"
+    ]
+   },
+   {
+    "pmcid": "PMC4500977",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Postmortem diagnosis of diabetes mellitus and its complications.",
+    "sentence": "Considering the difficulties in interpreting glucose levels in postmortem blood, determination of glucose concentrations and those of its metabolites in biological fluids other than blood, such as vitreous humor and cerebrospinal fluid, was proposed in order to detect antemortem hyperglycemia.",
+    "journal": "Croatian medical journal",
+    "year": "2015",
+    "doi": "10.3325/cmj.2015.56.181",
+    "pmid": "26088843",
+    "authors": [
+     "Palmiere C"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "bio-bhb-ketoacidosis|marker",
+  "entity": "bio-bhb-ketoacidosis",
+  "field": "marker",
+  "query": "beta-hydroxybutyrate postmortem ketoacidosis",
+  "patterns": [
+   "hydroxybutyr|BHB",
+   "ketoacidosis|ketosis|diabet|alcohol"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC4500977",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Postmortem diagnosis of diabetes mellitus and its complications.",
+    "sentence": "Examples of these are glycated hemoglobin and beta-hydroxybutyrate determination, the latter being the most reliable indicator of ketoacidosis and its severity.",
+    "journal": "Croatian medical journal",
+    "year": "2015",
+    "doi": "10.3325/cmj.2015.56.181",
+    "pmid": "26088843",
+    "authors": [
+     "Palmiere C"
+    ]
+   },
+   {
+    "pmcid": "PMC12170697",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Post-mortem urine dipstick analysis for hyperglycemia and ketoacidosis: observer agreement and diagnostic value.",
+    "sentence": "The diagnostic value of specific dipstick scores was determined by calculating likelihood ratios for substantial hyperglycemia (vitreous humor glucose > 10 mmol/L), substantial ketoacidosis (serum BHB > 2.50 mmol/L) and elevated blood acetone (> 20 mg/L).",
+    "journal": "International journal of legal medicine",
+    "year": "2025",
+    "doi": "10.1007/s00414-025-03477-3",
+    "pmid": "40178582",
+    "authors": [
+     "Glengarry JM",
+     "Thompson B",
+     "Pricone M",
+     "Archer MS",
+     "de Boer HH"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "bio-hba1c|marker",
+  "entity": "bio-hba1c",
+  "field": "marker",
+  "query": "HbA1c postmortem blood diabetes",
+  "patterns": [
+   "HbA1c|glycated h(a)?emoglobin",
+   "post-?mortem|stable|antemortem|diabet"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC4500977",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Postmortem diagnosis of diabetes mellitus and its complications.",
+    "sentence": "Biochemical analyses, including vitreous glucose, blood (or alternative specimen) beta-hydroxybutyrate, and blood glycated hemoglobin determination, may complement postmortem investigations and provide useful information for determining the cause of death even in corpses with advanced decompositional changes.",
+    "journal": "Croatian medical journal",
+    "year": "2015",
+    "doi": "10.3325/cmj.2015.56.181",
+    "pmid": "26088843",
+    "authors": [
+     "Palmiere C"
+    ]
+   },
+   {
+    "pmcid": "PMC8066580",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Thanatochemical Study of Glycated Hemoglobin in Diabetic Status Assessment.",
+    "sentence": "In forensic medicine, the postmortem determination of glycated hemoglobin (HbA1c) helps identify undiagnosed cases of diabetes or cases with uncontrolled glycemic status.",
+    "journal": "Medicina (Kaunas, Lithuania)",
+    "year": "2021",
+    "doi": "10.3390/medicina57040342",
+    "pmid": "33918183",
+    "authors": [
+     "Girlescu N",
+     "Stoica B",
+     "Timofte AD",
+     "Hunea I",
+     "Diac M",
+     "Knieling A"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "bio-tryptase|marker",
+  "entity": "bio-tryptase",
+  "field": "marker",
+  "query": "postmortem tryptase anaphylaxis",
+  "patterns": [
+   "tryptase",
+   "anaphyla",
+   "post-?mortem|elevat|limit|interpret"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC12584128",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Beyond the numbers: Critical analysis of the role of postmortem tryptase in the forensic diagnosis of anaphylaxis.",
+    "sentence": "Biochemical studies consistently reported elevated postmortem β‐tryptase levels in anaphylaxis‐related deaths, with proposed diagnostic thresholds ranging from 30.4 to 64 μg/L.",
+    "journal": "Journal of forensic sciences",
+    "year": "2025",
+    "doi": "10.1111/1556-4029.70147",
+    "pmid": "40770873",
+    "authors": [
+     "Tomassini L",
+     "Ricchezze G",
+     "Gambelunghe C",
+     "Lancia M",
+     "Gramaccia M",
+     "De Micco F"
+    ]
+   },
+   {
+    "pmcid": "PMC10177871",
+    "license": "CC BY",
+    "section": "DISCUSS",
+    "title": "Postmortem Biochemistry and Immunohistochemistry in Anaphylactic Death Due to Hymenoptera Sting: A Forensic Case Report.",
+    "sentence": "Serum tryptase is a neutral protease of human mast cells, mostly used as a biomarker to better define the postmortem diagnosis of anaphylaxis.",
+    "journal": "International journal of environmental research and public health",
+    "year": "2023",
+    "doi": "10.3390/ijerph20095640",
+    "pmid": "37174160",
+    "authors": [
+     "Mondello C",
+     "Baldino G",
+     "Cianci V",
+     "Forzese E",
+     "Asmundo A",
+     "Ieni A"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "bio-crp-procalcitonin|marker",
+  "entity": "bio-crp-procalcitonin",
+  "field": "marker",
+  "query": "postmortem procalcitonin OR \"C-reactive protein\" sepsis",
+  "patterns": [
+   "procalcitonin|C-reactive protein|\\bCRP\\b",
+   "sepsis|infection|inflamm",
+   "post-?mortem"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC10314941",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Exploration of sepsis assisting parameters in hospital autopsied-patients: a prospective study.",
+    "sentence": "To increase specificity identifying agonal phase sepsis in the situations where blood cultures are discordant, multiple or negative at postmortem, we established a scoring system using blood cultures, procalcitonin (PCN) showing highest sensitivity and specificity for postmortem serum, and bone marrow polyhemophagocytosis (PHP).",
+    "journal": "Scientific reports",
+    "year": "2023",
+    "doi": "10.1038/s41598-023-37752-3",
+    "pmid": "37393368",
+    "authors": [
+     "Inai K",
+     "Higuchi S",
+     "Shimada A",
+     "Hisada K",
+     "Hida Y",
+     "Hatta S"
+    ]
+   },
+   {
+    "pmcid": "PMC4009711",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Markers for sepsis diagnosis in the forensic setting: state of the art.",
+    "sentence": "Procalcitonin determination for the postmortem diagnosis of sepsis in the realm of forensic pathology was originally proposed by Tsokos et al.",
+    "journal": "Croatian medical journal",
+    "year": "2014",
+    "doi": "10.3325/cmj.2014.55.103",
+    "pmid": "24778096",
+    "authors": [
+     "Palmiere C",
+     "Augsburger M"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "bio-cardiac-markers|limitation",
+  "entity": "bio-cardiac-markers",
+  "field": "limitation",
+  "query": "postmortem troponin OR NT-proBNP cardiac death",
+  "patterns": [
+   "troponin|NT-?proBNP|BNP",
+   "post-?mortem",
+   "cardiac|heart|myocard"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC12354503",
+    "license": "CC BY",
+    "section": "DISCUSS",
+    "title": "Assessment of cardiac biomarker \"point-of-care\" testing as postmortem diagnostic tool.",
+    "sentence": "Interestingly, the different half-lives of the cardiac biomarkers (half-life for each biomarker according to the literature: BNP = 20 min, NT-proBNP = 120 min, cTnI = 360 min, Myo = 120 to 180 min, CK-MB = 660 min) did not seem to influence postmortem stability for POCT within 24 h after autopsy.",
+    "journal": "International journal of legal medicine",
+    "year": "2025",
+    "doi": "10.1007/s00414-025-03517-y",
+    "pmid": "40439936",
+    "authors": [
+     "Federspiel JM",
+     "Kettner M",
+     "Potente S",
+     "Heinbuch S",
+     "Lux C",
+     "Verhoff MA"
+    ]
+   },
+   {
+    "pmcid": "PMC11719723",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "The Role of Cardiac Troponins in Postmortem Diagnosis of Myocardial Ischemia: A Systematic Review.",
+    "sentence": "Cardiac troponins, specifically cTnI and cTnT, are well-established biomarkers for myocardial injury in living patients, but their role in postmortem ischemia diagnosis is still under investigation.",
+    "journal": "International journal of molecular sciences",
+    "year": "2024",
+    "doi": "10.3390/ijms26010105",
+    "pmid": "39795962",
+    "authors": [
+     "Sacco MA",
+     "Gualtieri S",
+     "Grimaldi G",
+     "Monterossi MD",
+     "Aquila VR",
+     "Tarallo AP"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "bio-insulin-cpeptide|marker",
+  "entity": "bio-insulin-cpeptide",
+  "field": "marker",
+  "query": "insulin C-peptide ratio postmortem insulin poisoning vitreous",
+  "patterns": [
+   "insulin",
+   "C-?peptide",
+   "ratio|exogenous|poison|overdose"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC9636090",
+    "license": "CC BY",
+    "section": "RESULTS",
+    "title": "Characteristics of fatal insulin overdoses.",
+    "sentence": "The average blood level of insulin and C-peptide for these cases was 816 mU/L and 144 pmol/L, respectively, with an approximate ratio of 6:1.",
+    "journal": "Forensic science, medicine, and pathology",
+    "year": "2022",
+    "doi": "10.1007/s12024-022-00511-3",
+    "pmid": "35943711",
+    "authors": [
+     "Stephenson L",
+     "van den Heuvel C",
+     "Humphries M",
+     "Byard RW"
+    ]
+   },
+   {
+    "pmcid": "PMC9687110",
+    "license": "CC BY",
+    "section": "RESULTS",
+    "title": "Insulin and Oral Hypoglycemic Drug Overdose in Post-Mortem Investigations: A Literature Review.",
+    "sentence": "As shown, the most commonly performed analysis when insulin overdose was suspected was the quantification of insulin in blood (70.5%), while the next most common analysis was C-peptide blood quantification (39.7%).",
+    "journal": "Biomedicines",
+    "year": "2022",
+    "doi": "10.3390/biomedicines10112823",
+    "pmid": "36359343",
+    "authors": [
+     "Manetti AC",
+     "Visi G",
+     "Spina F",
+     "De Matteis A",
+     "Del Duca F",
+     "Turillazzi E"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "bio-csf|application",
+  "entity": "bio-csf",
+  "field": "application",
+  "query": "cerebrospinal fluid postmortem biochemistry",
+  "patterns": [
+   "cerebrospinal fluid|\\bCSF\\b",
+   "post-?mortem",
+   "biochem|marker|analy|concentration"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC8205912",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Myelin basic protein and neurofilament H in postmortem cerebrospinal fluid as surrogate markers of fatal traumatic brain injury.",
+    "sentence": "In addition to forensic neuropathological diagnostic methods, postmortem biochemical analyses of various cytokines, acute phase proteins, CNS biomarkers, or Na+-glucose transporters in CSF and brain tissue as well as investigations of the early tissue reaction of local microglia after trauma are meanwhile increasingly performed.",
+    "journal": "International journal of legal medicine",
+    "year": "2021",
+    "doi": "10.1007/s00414-021-02606-y",
+    "pmid": "33895854",
+    "authors": [
+     "Bohnert S",
+     "Wirth C",
+     "Schmitz W",
+     "Trella S",
+     "Monoranu CM",
+     "Ondruschka B"
+    ]
+   },
+   {
+    "pmcid": "PMC8301791",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Screening for Fatal Traumatic Brain Injuries in Cerebrospinal Fluid Using Blood-Validated CK and CK-MB Immunoassays.",
+    "sentence": "In this study, postmortem cerebrospinal fluid samples from 45 lethal TBI cases and 47 controls were analyzed using commercially available blood-validated assays for creatine kinase (CK) activity and its heart-type isoenzyme (CK–MB).",
+    "journal": "Biomolecules",
+    "year": "2021",
+    "doi": "10.3390/biom11071061",
+    "pmid": "34356685",
+    "authors": [
+     "Zwirner J",
+     "Anders S",
+     "Bohnert S",
+     "Burkhardt R",
+     "Da Broi U",
+     "Hammer N"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "bio-preanalytical-hemolysis|limitation",
+  "entity": "bio-preanalytical-hemolysis",
+  "field": "limitation",
+  "query": "postmortem blood hemolysis biochemistry interference",
+  "patterns": [
+   "h(a)?emoly",
+   "post-?mortem",
+   "interfer|unreliab|limit|affect"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC6179268",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Post-mortem serum concentrations of GFAP correlate with agony time but do not indicate a primary cerebral cause of death.",
+    "sentence": "GFAP levels were found to be unaffected by hemolysis or post-mortem interval.",
+    "journal": "PloS one",
+    "year": "2018",
+    "doi": "10.1371/journal.pone.0205323",
+    "pmid": "30304049",
+    "authors": [
+     "Breitling B",
+     "Brunkhorst R",
+     "Verhoff M",
+     "Foerch C"
+    ]
+   },
+   {
+    "pmcid": "PMC8228401",
+    "license": "CC BY",
+    "section": "DISCUSS",
+    "title": "The Vital Role of Thanatochemistry in the Postmortem Diagnostic of Diabetic Ketoacidosis-Case Report.",
+    "sentence": "Regarding the postmortem imbalances of carbohydrate metabolism, it should be noted that postmortem determination of blood glucose is unreliable, with significant fluctuations due to postmortem hemolysis and anaerobic glycolysis.",
+    "journal": "Diagnostics (Basel, Switzerland)",
+    "year": "2021",
+    "doi": "10.3390/diagnostics11060988",
+    "pmid": "34072541",
+    "authors": [
+     "Girlescu N",
+     "Stoica B",
+     "Hunea I",
+     "Diac M",
+     "Damian SI",
+     "David S"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "bio-sampling-site|limitation",
+  "entity": "bio-sampling-site",
+  "field": "limitation",
+  "query": "postmortem blood sampling site femoral cardiac toxicology",
+  "patterns": [
+   "femoral|peripheral",
+   "cardiac|heart|central",
+   "sampl|site|preferred|recommend|differ"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC8672767",
+    "license": "CC BY",
+    "section": "DISCUSS",
+    "title": "Effect of Time Since Death on Multipathogen Molecular Test Results of Postmortem Specimens Collected Using Minimally Invasive Tissue Sampling Techniques.",
+    "sentence": "Generally, in forensic autopsy practice, peripheral blood collection sites are preferred to cardiac blood when conducting biochemical and toxicology analyses.",
+    "journal": "Clinical infectious diseases : an official publication of the Infectious Diseases Society of America",
+    "year": "2021",
+    "doi": "10.1093/cid/ciab810",
+    "pmid": "34910183",
+    "authors": [
+     "Dawa J",
+     "Walong E",
+     "Onyango C",
+     "Mathaiya J",
+     "Muturi P",
+     "Bunei M"
+    ]
+   },
+   {
+    "pmcid": "PMC11790690",
+    "license": "CC BY",
+    "section": "INTRO",
+    "title": "Postmortem redistribution of drugs: a literature review.",
+    "sentence": "Although sampling protocols for toxicological postmortem examinations have not yet been universally standardized, central blood, peripheral blood, and liver are frequently collected for the determination of C/P and L/P ratios.",
+    "journal": "Forensic science, medicine, and pathology",
+    "year": "2024",
+    "doi": "10.1007/s12024-023-00709-z",
+    "pmid": "37715933",
+    "authors": [
+     "Abdelaal GMM",
+     "Hegazy NI",
+     "Etewa RL",
+     "Elmesallamy GEA"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "bio-ethanol-neoformation|limitation",
+  "entity": "bio-ethanol-neoformation",
+  "field": "limitation",
+  "query": "postmortem ethanol production putrefaction neoformation",
+  "patterns": [
+   "ethanol|alcohol",
+   "post-?mortem (production|formation|synthesis)|neo-?formation|putrefact|microbial|endogenous"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC10972208",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Ethanol and Higher Alcohols' Production in Fungal and Bacterial Laboratory Cultures and Significance for Forensic Samples.",
+    "sentence": "This correlation is expressed by mathematical models which estimate the concentration of microbial ethanol.",
+    "journal": "Microorganisms",
+    "year": "2024",
+    "doi": "10.3390/microorganisms12030462",
+    "pmid": "38543513",
+    "authors": [
+     "Boumba VA",
+     "Velivasi G",
+     "Kourkoumelis N"
+    ]
+   },
+   {
+    "pmcid": "PMC8840458",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Modeling Postmortem Ethanol Production/Insights into the Origin of Higher Alcohols.",
+    "sentence": "Higher alcohols (1-propanol, 1-butanol, isobutanol, 2-methyl-1-butanol (isoamyl-alcohol), and 3-methyl-2-butanol (amyl-alcohol)) are among the volatile compounds that are often detected in postmortem specimens and have been correlated with putrefaction and microbial activity.",
+    "journal": "Molecules (Basel, Switzerland)",
+    "year": "2022",
+    "doi": "10.3390/molecules27030700",
+    "pmid": "35163964",
+    "authors": [
+     "Boumba VA"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "bio-cocaine-stability|limitation",
+  "entity": "bio-cocaine-stability",
+  "field": "limitation",
+  "query": "cocaine stability blood fluoride benzoylecgonine storage",
+  "patterns": [
+   "cocaine",
+   "stabil|degrad|hydroly",
+   "fluoride|storage|temperature|benzoylecgonine"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC8839019",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Stability of Cocaine, Opiates, and Metabolites in Dried Saliva Spots.",
+    "sentence": "The present study aims to evaluate the long-term stability of COC, ecgonine methylester (EME), benzoylecgonine (BEG), cocaethylene (COET), norcocaine (NCOC), morphine (MOR), codeine (COD) and 6-monoacetylmorphine (6-MAM) in oral fluid samples.",
+    "journal": "Molecules (Basel, Switzerland)",
+    "year": "2022",
+    "doi": "10.3390/molecules27030641",
+    "pmid": "35163906",
+    "authors": [
+     "Almeida E",
+     "Soares S",
+     "Gonçalves J",
+     "Rosado T",
+     "Fernández N",
+     "Rodilla JM"
+    ]
+   },
+   {
+    "pmcid": "PMC13553925",
+    "license": "CC BY",
+    "section": "DISCUSS",
+    "title": "Diagnostic challenges in infant death associated with maternal cocaine abuse during pregnancy and lactation: a forensic case report and review of the literature.",
+    "sentence": "Huertas et al. demonstrated that while cocaine and its metabolites remain stable at −20 °C, they undergo significant degradation at 4 °C, with sodium fluoride preservative substantially retarding hydrolysis.",
+    "journal": "Frontiers in pediatrics",
+    "year": "2026",
+    "doi": "10.3389/fped.2026.1854801",
+    "pmid": "42718795",
+    "authors": [
+     "Iacoponi N",
+     "Maggi R",
+     "Nardini V",
+     "Chericoni S",
+     "Turillazzi E",
+     "Di Paolo M"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "bio-temperature-effect|limitation",
+  "entity": "bio-temperature-effect",
+  "field": "limitation",
+  "query": "temperature effect postmortem biochemical markers",
+  "patterns": [
+   "temperature",
+   "post-?mortem",
+   "marker|potassium|biochem|concentration|degrad"
+  ],
+  "allow_methods": false,
+  "status": "found",
+  "candidates": [
+   {
+    "pmcid": "PMC12532652",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "title": "Hypothermia drives fatty acid transporter 1 upregulation and lipid accumulation in renal tubules: evidence from forensic cases.",
+    "sentence": "Forensic pathology lacks generally accepted markers for hypothermia, relying instead on various physiological responses to low temperatures as postmortem diagnostic indicators.",
+    "journal": "International journal of legal medicine",
+    "year": "2025",
+    "doi": "10.1007/s00414-025-03550-x",
+    "pmid": "40536519",
+    "authors": [
+     "Horioka K",
+     "Tanaka H",
+     "Hayakawa A",
+     "Takahashi Y",
+     "Druid H",
+     "Pakanen L"
+    ]
+   },
+   {
+    "pmcid": "PMC11269370",
+    "license": "CC BY",
+    "section": "DISCUSS",
+    "title": "Can the cyanide metabolite, 2-aminothiazoline-4-carboxylic acid, be used for forensic verification of cyanide poisoning?",
+    "sentence": "The t1/2s of CN at RT and HBT (Table 2 and Figure S2B and C) show the rapid degradation of CN in postmortem blood at elevated temperatures.",
+    "journal": "Forensic toxicology",
+    "year": "2024",
+    "doi": "10.1007/s11419-024-00690-4",
+    "pmid": "38739353",
+    "authors": [
+     "Alluhayb AH",
+     "Severance C",
+     "Hendry-Hofer T",
+     "Bebarta VS",
+     "Logue BA"
+    ]
+   }
+  ]
+ }
+]

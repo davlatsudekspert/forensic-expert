@@ -1621,4 +1621,238 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get learnSimulatedCase => 'SIMULATED CASE — not a real case';
+
+  @override
+  String get moduleHistology => 'Forensic histology';
+
+  @override
+  String get moduleResearch => 'Research & evidence';
+
+  @override
+  String get group_alcohols_volatiles => 'Alcohols & volatiles';
+
+  @override
+  String get group_toxic_gases => 'Toxic gases';
+
+  @override
+  String get group_opioids => 'Opioids';
+
+  @override
+  String get group_stimulants => 'Stimulants';
+
+  @override
+  String get group_cannabinoids => 'Cannabinoids';
+
+  @override
+  String get group_hallucinogens_dissociatives =>
+      'Hallucinogens & dissociatives';
+
+  @override
+  String get group_benzodiazepines => 'Benzodiazepines';
+
+  @override
+  String get group_sedatives_hypnotics => 'Sedatives & hypnotics';
+
+  @override
+  String get group_barbiturates => 'Barbiturates';
+
+  @override
+  String get group_antidepressants => 'Antidepressants';
+
+  @override
+  String get group_antipsychotics => 'Antipsychotics';
+
+  @override
+  String get group_anticonvulsants => 'Anticonvulsants';
+
+  @override
+  String get group_pharmaceuticals => 'Common pharmaceuticals';
+
+  @override
+  String get group_adulterants => 'Adulterants';
+
+  @override
+  String get group_pesticides => 'Pesticides & rodenticides';
+
+  @override
+  String get group_metals_inorganic => 'Metals & inorganic poisons';
+
+  @override
+  String get groupAll => 'All groups';
+
+  @override
+  String get groupEditorialNote =>
+      'Groups are editorial navigation, not a scientific classification claim.';
+
+  @override
+  String get detailAnalyticalMethods => 'Analytical methods (from sources)';
+
+  @override
+  String get detailReportedConcentrations => 'Reported concentrations';
+
+  @override
+  String get concentrationNotThreshold =>
+      'Reported values from individual studies or cases — NOT toxic, lethal or legal thresholds. Interpretation depends on specimen, case context, tolerance and postmortem changes.';
+
+  @override
+  String get concentrationSpecimen => 'Specimen';
+
+  @override
+  String concentrationContext(String context) {
+    return 'Context: $context';
+  }
+
+  @override
+  String get detailStructure => 'Chemical structure';
+
+  @override
+  String get detailRelated => 'Related professional content';
+
+  @override
+  String get relationAnalysedBy => 'Analysed by (mentioned in source)';
+
+  @override
+  String get relationMetabolism => 'Mentioned together in a metabolism source';
+
+  @override
+  String get relationConfirmedBy => 'Confirmatory methods';
+
+  @override
+  String get relationRelatedTopic => 'Related topics';
+
+  @override
+  String get relationResearch => 'Research & evidence';
+
+  @override
+  String relationBasis(String basis) {
+    return 'Basis: $basis';
+  }
+
+  @override
+  String researchMore(int count) {
+    return 'All research ($count)';
+  }
+
+  @override
+  String get researchTitle => 'Research & evidence library';
+
+  @override
+  String get researchNote =>
+      'Metadata and links only — full texts are not copied. Dissertations, theses and conference papers are not shown at the level of peer-reviewed full articles.';
+
+  @override
+  String get researchAll => 'All';
+
+  @override
+  String get researchPeerReviewed => 'Peer-reviewed';
+
+  @override
+  String get researchNotPeerReviewed => 'Not a peer-reviewed article';
+
+  @override
+  String researchEvidence(String level) {
+    return 'Evidence $level';
+  }
+
+  @override
+  String get researchCopyLink => 'Copy link';
+
+  @override
+  String get researchLinkCopied => 'Link copied';
+
+  @override
+  String get researchLinked => 'Linked records';
+
+  @override
+  String researchCount(int count) {
+    return '$count records';
+  }
+
+  @override
+  String researchSourceApi(String api) {
+    return 'Indexed via $api';
+  }
+
+  @override
+  String get researchKindJournalArticle => 'Journal article';
+
+  @override
+  String get researchKindReview => 'Review';
+
+  @override
+  String get researchKindSystematicReview => 'Systematic review';
+
+  @override
+  String get researchKindMetaAnalysis => 'Meta-analysis';
+
+  @override
+  String get researchKindCaseReport => 'Case report';
+
+  @override
+  String get researchKindConferenceAbstract => 'Conference abstract';
+
+  @override
+  String get researchKindConferencePaper => 'Conference paper';
+
+  @override
+  String get researchKindDissertation => 'Doctoral dissertation';
+
+  @override
+  String get researchKindThesis => 'Thesis (Master’s / other)';
+
+  @override
+  String get researchKindOfficialReport => 'Official report';
+
+  @override
+  String get researchKindStandard => 'Standard / guideline';
+
+  @override
+  String get imageSchematic => 'Schematic — not experimental data';
+
+  @override
+  String get imageRealData => 'Figure from a published study';
+
+  @override
+  String get imageDepiction => 'Structure depiction (computed)';
+
+  @override
+  String imageLicense(String license) {
+    return 'License: $license';
+  }
+
+  @override
+  String get imageAttribution => 'Attribution';
+
+  @override
+  String get imageOriginalCaption => 'Original caption (source language)';
+
+  @override
+  String imageOpen(String title) {
+    return 'Open image: $title';
+  }
+
+  @override
+  String get imageUnavailable => 'Image unavailable offline';
+
+  @override
+  String get imagesHeading => 'Scientific visuals';
+
+  @override
+  String get licenseOriginalWork => 'Original work (FORENSIC EXPERT)';
+
+  @override
+  String get licenseFactualDepiction => 'Original depiction of factual data';
+
+  @override
+  String get histologyNote =>
+      'Reference information for professionals. The app and Forensic AI do not provide histological diagnoses.';
+
+  @override
+  String get fieldCaseObservation => 'Case observation (single case)';
+
+  @override
+  String get fieldComposition => 'Composition (as stated in source)';
+
+  @override
+  String get fieldConfirmation => 'Confirmation requirement';
 }

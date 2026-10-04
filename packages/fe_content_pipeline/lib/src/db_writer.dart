@@ -1,5 +1,7 @@
 import 'dart:convert';
+import 'dart:io';
 
+import 'package:crypto/crypto.dart' as crypto;
 import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:fe_database/fe_database.dart' as db;
 import 'package:fe_search_core/fe_search_core.dart';
@@ -166,7 +168,7 @@ class ContentDbWriter {
         await run(
           'INSERT INTO substances (substance_id, canonical_name, entity_kind, '
           'molecular_formula, tier_access, review_status, content_version, '
-          'is_test_data) VALUES (?,?,?,?,?,?,?,0)',
+          'is_test_data, substance_group) VALUES (?,?,?,?,?,?,?,0,?)',
           [
             s.substanceId,
             s.canonicalName,
@@ -175,6 +177,7 @@ class ContentDbWriter {
             s.tierAccess,
             ScientificStatus.needsReview.code,
             b.packVersion,
+            s.group,
           ],
         );
         for (final n in s.names.entries) {
@@ -244,6 +247,83 @@ class ContentDbWriter {
           ],
         );
       }
+      for (final r in c.research) {
+        await run(
+          'INSERT INTO research_records (research_id, kind, title, '
+          'authors_json, organization, container, pub_year, doi, pmid, pmcid, '
+          'handle, url, degree, open_access, source_api, accessed_date, '
+          'evidence_level, peer_reviewed, review_status, is_test_data) '
+          'VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
+          [
+            r.id,
+            r.kind.code,
+            r.title,
+            jsonEncode(r.authors),
+            r.organization,
+            r.container,
+            r.year,
+            r.doi,
+            r.pmid,
+            r.pmcid,
+            r.handle,
+            r.url,
+            r.degree,
+            r.openAccess,
+            r.sourceApi,
+            _d(r.accessedDate),
+            r.evidenceLevel.code,
+            r.kind.isPeerReviewedFullArticle ? 1 : 0,
+            r.status.code,
+            r.isTestData ? 1 : 0,
+          ],
+        );
+      }
+      for (final l in c.links) {
+        await run(
+          'INSERT OR IGNORE INTO entity_links (from_id, to_id, relation, basis) '
+          'VALUES (?,?,?,?)',
+          [l.fromId, l.toId, l.relation.code, l.basis],
+        );
+      }
+      for (final im in c.images) {
+        final bytes = await File('${b.imageRoot ?? '.'}/${im.file ?? ''}')
+            .readAsBytes();
+        final sha = crypto.sha256.convert(bytes).toString();
+        if (im.sha256 != null && im.sha256 != sha) {
+          throw StateError('Image hash mismatch: ${im.id}');
+        }
+        await run(
+          'INSERT INTO images (image_id, kind, entity_id, mime_type, bytes, '
+          'width, height, sha256, title_json, alt_json, caption_original, '
+          'creator, source_name, source_url, doi, license, attribution, '
+          'is_original_diagram, represents_real_data, graphic, accessed_date) '
+          'VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
+          [
+            im.id,
+            im.kind.code,
+            im.entityId,
+            (im.file ?? '').endsWith('.png') ? 'image/png' : 'image/jpeg',
+            bytes,
+            null,
+            null,
+            sha,
+            jsonEncode(im.title),
+            jsonEncode(im.alt),
+            im.captionOriginal,
+            im.creator,
+            im.sourceName,
+            im.sourceUrl,
+            im.doi,
+            im.license,
+            im.attribution,
+            im.isOriginalDiagram ? 1 : 0,
+            im.representsRealData ? 1 : 0,
+            im.graphic ? 1 : 0,
+            _d(im.accessedDate),
+          ],
+        );
+      }
+
       for (final ci in c.citations) {
         await run(
           'INSERT INTO citations (claim_id, source_id, locator) VALUES (?,?,?)',
@@ -349,6 +429,16 @@ class ContentDbWriter {
 
   List<SearchTerm> _searchTerms(PipelineBundle b) {
     final terms = <SearchTerm>[
+      // Research: sarlavha bo‘yicha (EN).
+      for (final r in b.content.research)
+        SearchTerm(
+          entityId: r.id,
+          category: SearchCategory.reference,
+          term: r.title,
+          kind: TermKind.canonical,
+          lang: 'en',
+          weight: 0.4,
+        ),
       for (final e in _knowledgeRows(b))
         for (final n in e.names.entries)
           SearchTerm(

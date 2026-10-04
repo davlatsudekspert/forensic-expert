@@ -15,6 +15,7 @@ class SubstanceRecord {
     required this.translationStatus,
     this.molecularFormula,
     this.synonyms = const [],
+    this.group,
   });
 
   final String substanceId;
@@ -27,6 +28,9 @@ class SubstanceRecord {
   final Map<String, String> names;
   final Map<String, String> translationStatus;
   final List<String> synonyms;
+
+  /// Tahririy guruh (masalan `opioids`) — navigatsiya, ilmiy claim emas.
+  final String? group;
 }
 
 /// Manba bilan birga keladigan, domen modelida bo‘lmagan qo‘shimcha
@@ -51,6 +55,7 @@ class PipelineBundle {
     required this.instrumentDatePrecision,
     this.componentVersions = const {},
     this.entityTiers = const {},
+    this.imageRoot,
   });
 
   final String packVersion;
@@ -69,6 +74,9 @@ class PipelineBundle {
 
   /// Bilim obyekti ID → `free` / `student` / `pro`.
   final Map<String, String> entityTiers;
+
+  /// Rasm fayllari yo‘llari shu katalogga nisbatan (bundle.json joyi).
+  final String? imageRoot;
 
   /// Bilim obyektining kirish darajasi (berilmasa — `pro`).
   String tierOf(String entityId) => entityTiers[entityId] ?? 'pro';
@@ -95,6 +103,10 @@ class PipelineBundle {
       methods: content.methods,
       emergingIssues: content.emergingIssues,
       topics: content.topics,
+      research: content.research,
+      links: content.links,
+      images: content.images,
+      knownEntityIds: content.knownEntityIds,
     ),
     substances: substances,
     sourceExtras: sourceExtras,
@@ -102,6 +114,7 @@ class PipelineBundle {
     instrumentDatePrecision: instrumentDatePrecision,
     componentVersions: componentVersions,
     entityTiers: entityTiers,
+    imageRoot: imageRoot,
   );
 }
 
@@ -122,10 +135,10 @@ class BundleFormatException implements Exception {
 /// `screening_tests`, `methods`, `emerging_issues`, `component_versions`,
 /// instrument/rule kengaytirilgan maydonlari, `source_class`.
 abstract final class BundleCodec {
-  static const format = 'fe-bundle/2';
-  static const supportedFormats = {'fe-bundle/1', format};
+  static const format = 'fe-bundle/3';
+  static const supportedFormats = {'fe-bundle/1', 'fe-bundle/2', format};
 
-  static PipelineBundle decode(String json) {
+  static PipelineBundle decode(String json, {String? imageRoot}) {
     final root = jsonDecode(json);
     if (root is! Map<String, Object?>) {
       throw BundleFormatException('root must be an object');
@@ -346,7 +359,27 @@ abstract final class BundleCodec {
           translationStatus: (s['translation_status']! as Map)
               .cast<String, String>(),
           synonyms: [...?(s['synonyms'] as List?)?.cast<String>()],
+          group: s['group'] as String?,
         ),
+    ];
+
+    // PHASE 5: research, bog‘lanishlar, rasmlar.
+    T ev<T>(Map<String, Object?> m, T Function(Map<String, Object?>) f) {
+      try {
+        return f(m);
+      } on FormatException catch (e) {
+        throw BundleFormatException(e.message);
+      }
+    }
+
+    final research = [
+      for (final r in _list(root, 'research')) ev(r, EvidenceJson.researchFrom),
+    ];
+    final links = [
+      for (final l in _list(root, 'links')) ev(l, EvidenceJson.linkFrom),
+    ];
+    final images = [
+      for (final i in _list(root, 'images')) ev(i, EvidenceJson.imageFrom),
     ];
 
     if ((root['reviews'] as List? ?? const []).isNotEmpty ||
@@ -374,6 +407,10 @@ abstract final class BundleCodec {
         screeningTests: screeningTests,
         methods: methods,
         emergingIssues: emerging,
+        research: research,
+        links: links,
+        images: images,
+        knownEntityIds: {for (final s in substances) s.substanceId},
       ),
       substances: substances,
       sourceExtras: sourceExtras,
@@ -382,6 +419,7 @@ abstract final class BundleCodec {
       componentVersions: (root['component_versions'] as Map? ?? const {})
           .cast<String, String>(),
       entityTiers: tiers,
+      imageRoot: imageRoot,
     );
   }
 

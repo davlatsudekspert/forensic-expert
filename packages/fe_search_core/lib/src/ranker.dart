@@ -50,6 +50,12 @@ class SearchRanker {
         if (distance <= allowed) {
           type = MatchType.fuzzy;
           quality = 1 - distance / (queryKey.length + 1);
+          // Faqat boshi o‘xshash uzunroq termin to‘liq o‘xshash qisqa
+          // termindan past turadi (masalan «fentanly» → «Fentanyl» >
+          // «Fentanyl immunoassay»).
+          if (head.length < termKey.length) {
+            quality *= head.length / termKey.length;
+          }
         }
       }
     }

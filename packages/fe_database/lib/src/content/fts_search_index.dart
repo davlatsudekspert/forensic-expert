@@ -29,7 +29,8 @@ class FtsSearchIndex implements SearchIndex {
           'FROM search_terms WHERE search_key >= ?1 AND search_key < ?2 '
           '${key.length >= 3 ? 'UNION SELECT entity_id, category, lang, term, term_kind, weight '
                     'FROM search_terms WHERE term_id IN '
-                    '(SELECT rowid FROM search_fts_tri WHERE search_fts_tri MATCH ?3 LIMIT $_candidateLimit)' : ''}',
+                    '(SELECT rowid FROM search_fts_tri WHERE search_fts_tri MATCH ?3 '
+                    'ORDER BY rank LIMIT $_candidateLimit)' : ''}',
           variables: [
             Variable<String>(key),
             Variable<String>('$key\u{FFFF}'),

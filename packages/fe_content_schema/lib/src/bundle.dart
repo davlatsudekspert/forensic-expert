@@ -2,6 +2,7 @@ import 'package:meta/meta.dart';
 
 import 'claim.dart';
 import 'enums.dart';
+import 'evidence_graph.dart';
 import 'jurisdiction.dart';
 import 'knowledge.dart';
 import 'review.dart';
@@ -28,6 +29,10 @@ class ContentBundle {
     this.methods = const [],
     this.emergingIssues = const [],
     this.topics = const [],
+    this.research = const [],
+    this.links = const [],
+    this.images = const [],
+    this.knownEntityIds = const {},
   });
 
   final BundleChannel channel;
@@ -51,4 +56,13 @@ class ContentBundle {
   final List<MethodRecord> methods;
   final List<EmergingIssue> emergingIssues;
   final List<KnowledgeTopic> topics;
+
+  // PHASE 5: evidence library, bilim grafigi, rasmlar.
+  final List<ResearchRecord> research;
+  final List<EntityLink> links;
+  final List<ScientificImage> images;
+
+  /// Bundle’dan tashqari ma’lum yozuvlar (masalan, moddalar) — bog‘lanish
+  /// yaxlitligi uchun (FE030).
+  final Set<String> knownEntityIds;
 }

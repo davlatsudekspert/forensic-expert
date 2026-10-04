@@ -21,11 +21,15 @@ Qoidalar:
 import datetime, json
 
 import assemble_p4
+import sys as _sys
+_sys.path.insert(0, "tools/p5")
+import assemble_p5  # noqa: E402
 
 FREE_DEMO = ["ethanol", "methanol", "carbon-monoxide"]  # 3 ta yozuv
-PACK_VERSION = "2026.10.2"
+PACK_VERSION = "2026.10.3"
 # Komponent versiyalari (ilova versiyasidan alohida).
-COMPONENT_VERSIONS = {"scientific": "2026.10.2", "jurisdiction": "2026.10.2"}
+COMPONENT_VERSIONS = {"scientific": "2026.10.3", "jurisdiction": "2026.10.3",
+                      "research": "2026.10.3"}
 
 
 def main():
@@ -163,8 +167,55 @@ def main():
     instruments += p4["instruments"]
     rules += p4["rules"]
 
+    # ---- PHASE 5 -------------------------------------------------------
+    p5 = assemble_p5.build({s["substance_id"] for s in substances}, today)
+    groups = p5["groups"]
+    for s in substances:
+        s["group"] = groups.get(s["substance_id"])
+    substances += p5["substances"]
+    have_src = {s["source_id"] for s in sources}
+    sources += [s for s in p5["sources"] if s["source_id"] not in have_src]
+    have_src |= {s["source_id"] for s in p5["sources"]}
+    claims += p5["claims"]
+    citations += p5["citations"]
+    have_rules = {r["rule_id"] for r in rules}
+    rules += [r for r in p5["rules"] if r["rule_id"] not in have_rules]
+    existing_entities = ({t["topic_id"] for t in p4["topics"]} | {m["method_id"] for m in p4["methods"]}
+                         | {r["reagent_id"] for r in p4["recipes"]} | {t["screening_id"] for t in p4["screening_tests"]}
+                         | {e["issue_id"] for e in p4["emerging_issues"]})
+    pt = assemble_p5.build_topics(existing_entities, today, None)
+    sources += [s for sid, s in pt["sources"].items() if sid not in have_src]
+    claims += pt["claims"]
+    citations += pt["citations"]
+    known = (existing_entities | {t["topic_id"] for t in pt["topics"]} | {m["method_id"] for m in pt["methods"]}
+             | {r["reagent_id"] for r in pt["recipes"]} | {s["screening_id"] for s in pt["screening"]}
+             | {s["substance_id"] for s in substances})
+    research, rstats = assemble_p5.build_research(known)
+    links = []
+    for l in p5["links"] + pt["links"]:
+        if l["from"] in known and l["to"] in known:
+            links.append(l)
+    for r in research:
+        for e in r.pop("_links"):
+            links.append({"from": e, "to": r["research_id"], "relation": "research", "basis": r["research_id"]})
+    images = assemble_p5.build_images(known)
+    # Bepul demo (har yangi bo‘limda bitta); manbalar va research hech qachon yopilmaydi.
+    free = {"reagent-dragendorff", "scr-fentanyl-test-strips", "method-lcmsms", "his-ihc", "fm-blunt-trauma"}
+    for t in pt["topics"]:
+        if t["topic_id"] in free:
+            t["tier_access"] = "free"
+    for m in pt["methods"]:
+        if m["method_id"] in free:
+            m["tier_access"] = "free"
+    for r in pt["recipes"]:
+        if r["reagent_id"] in free:
+            r["tier_access"] = "free"
+    for sc in pt["screening"]:
+        if sc["screening_id"] in free:
+            sc["tier_access"] = "free"
+
     bundle = dict(
-        format="fe-bundle/2", pack_version=PACK_VERSION, channel="development",
+        format="fe-bundle/3", pack_version=PACK_VERSION, channel="development",
         component_versions=COMPONENT_VERSIONS,
         assembled_at=today,
         jurisdictions=[dict(jurisdiction_id="INT", level="international",
@@ -173,16 +224,18 @@ def main():
         authorities=p4["authorities"],
         sources=sources, substances=substances, claims=claims,
         citations=citations, instruments=instruments, rules=rules,
-        topics=p4["topics"], methods=p4["methods"],
-        screening_tests=p4["screening_tests"], recipes=p4["recipes"],
+        topics=p4["topics"] + pt["topics"], methods=p4["methods"] + pt["methods"],
+        screening_tests=p4["screening_tests"] + pt["screening"], recipes=p4["recipes"] + pt["recipes"],
         emerging_issues=p4["emerging_issues"],
+        research=research, links=links, images=images,
         reviewers=[], reviews=[])
     json.dump(bundle, open("pilot/bundle.json", "w"), ensure_ascii=False,
               indent=2)
     print(f"substances={len(substances)} claims={len(claims)} "
           f"sources={len(sources)} instruments={len(instruments)} "
           f"rules={len(rules)} topics={len(p4['topics'])} "
-          f"knowledge={sum(len(p4[k]) for k in ('methods', 'screening_tests', 'recipes', 'emerging_issues'))}")
+          f"topics_p5={len(pt['topics'])} methods_p5={len(pt['methods'])} recipes_p5={len(pt['recipes'])} "
+          f"screening_p5={len(pt['screening'])} research={len(research)} {rstats} links={len(links)} images={len(images)}")
 
 
 if __name__ == "__main__":

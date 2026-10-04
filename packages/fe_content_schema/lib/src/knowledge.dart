@@ -11,6 +11,7 @@ enum KnowledgeArea {
   forensicMedicine,
   toxicology,
   biochemistry,
+  histology,
   laboratory,
   reagents,
   screening,

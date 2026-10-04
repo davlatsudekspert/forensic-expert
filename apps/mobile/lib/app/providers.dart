@@ -1,8 +1,11 @@
+import 'dart:typed_data';
+
 import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../core/flags.dart';
 import '../core/telemetry/telemetry.dart';
+import '../data/content/content_evidence_loader.dart';
 import '../data/content/content_knowledge_repository.dart';
 import '../data/content/content_library_repository.dart';
 import '../data/content/content_provenance.dart';
@@ -14,6 +17,7 @@ import '../data/offline/offline_backend.dart';
 import '../data/offline/offline_billing.dart';
 import '../domain/ai/ai_architecture.dart';
 import '../domain/ai/local_retrieval.dart';
+import '../domain/evidence/evidence_models.dart';
 import '../domain/jurisdiction/jurisdiction_catalog.dart';
 import '../domain/knowledge/knowledge_models.dart';
 import '../domain/learn/learn_models.dart';
@@ -207,6 +211,32 @@ final legalCatalogProvider = Provider<LegalCatalog>(
 final showUnreviewedLegalProvider = Provider<bool>(
   (ref) => FeFlags.contentChannel != 'production',
 );
+
+/// Research / Evidence Library, bilim grafigi va rasmlar katalogi.
+final contentEvidenceProvider = FutureProvider<EvidenceData?>((ref) async {
+  final db = await ref.watch(contentStoreProvider).openActive();
+  return db == null ? null : ContentEvidenceLoader.load(db);
+});
+
+final evidenceDataProvider = Provider<EvidenceData>(
+  (ref) => FeFlags.showTestFixtures
+      ? EvidenceData.empty
+      : ref.watch(contentEvidenceProvider).value ?? EvidenceData.empty,
+);
+
+/// Rasm baytlari — kerak bo‘lganda bazadan (offline).
+final imageBytesLoaderProvider = FutureProvider<ImageBytesLoader>((ref) async {
+  final db = await ref.watch(contentStoreProvider).openActive();
+  return db == null ? const NoImageBytesLoader() : DbImageBytesLoader(db);
+});
+
+final imageBytesProvider = FutureProvider.family<Uint8List?, String>((
+  ref,
+  imageId,
+) async {
+  final loader = await ref.watch(imageBytesLoaderProvider.future);
+  return loader.load(imageId);
+});
 
 /// Joriy kirish huquqi (store o‘zgarishlarini kuzatadi).
 final entitlementsProvider = StreamProvider<Entitlements>(

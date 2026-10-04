@@ -23,7 +23,11 @@ Future<void> main(List<String> args) async {
   // Oldingi chiqarilgan bundle (FE027 review regressiya himoyasi uchun).
   final previousArg = arg('--previous');
 
-  var bundle = BundleCodec.decode(File(input).readAsStringSync());
+  var bundle = BundleCodec.decode(
+    File(input).readAsStringSync(),
+    // Rasm yo‘llari bundle.json joylashgan katalogga nisbatan.
+    imageRoot: File(input).parent.path,
+  );
   if (channelArg != null) {
     bundle = bundle.withChannel(BundleChannel.values.byName(channelArg));
   }

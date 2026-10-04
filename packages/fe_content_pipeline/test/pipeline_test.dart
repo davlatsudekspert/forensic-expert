@@ -16,14 +16,84 @@ void main() {
   late Directory tmp;
 
   setUpAll(() {
-    bundle = BundleCodec.decode(bundleFile.readAsStringSync());
+    bundle = BundleCodec.decode(
+      bundleFile.readAsStringSync(),
+      imageRoot: bundleFile.parent.path,
+    );
   });
   setUp(() => tmp = Directory.systemTemp.createTempSync('fe_pipe'));
   tearDown(() => tmp.deleteSync(recursive: true));
 
   group('pilot to‘plami — qat’iy qoidalar', () {
-    test('10–20 ta pilot yozuv', () {
-      expect(bundle.substances.length, inInclusiveRange(10, 20));
+    test('PHASE 5: 100+ modda, har biri PubChem identifikatsiyasi bilan', () {
+      expect(bundle.substances.length, greaterThanOrEqualTo(100));
+      final withIdentity = {
+        for (final c in bundle.content.claims)
+          if (c.field == 'identity') c.entityId,
+      };
+      for (final s in bundle.substances) {
+        expect(withIdentity, contains(s.substanceId), reason: s.substanceId);
+        expect(s.group, isNotNull, reason: s.substanceId);
+      }
+    });
+
+    test('konsentratsiya — faqat kontekst bilan, chegara emas (FE032)', () {
+      final conc = [
+        for (final c in bundle.content.claims)
+          if (c.field == 'reported_concentration') c,
+      ];
+      expect(conc, isNotEmpty);
+      for (final c in conc) {
+        expect(c.value['not_a_threshold'], isTrue, reason: c.claimId);
+        expect(c.value['specimen'], isNotEmpty);
+        expect(
+          '${c.value['excerpt']}'.toLowerCase(),
+          isNot(
+            matches(RegExp(r'lethal concentration|toxic range|fatal range')),
+          ),
+          reason: c.claimId,
+        );
+      }
+    });
+
+    test('research: dublikat yo‘q, tezis/dissertatsiya E darajada', () {
+      final keys = <String>{};
+      for (final r in bundle.content.research) {
+        expect(keys.add(r.dedupKey), isTrue, reason: r.id);
+        if (!r.kind.isPeerReviewedFullArticle) {
+          expect(r.evidenceLevel, EvidenceLevel.e, reason: r.id);
+        }
+      }
+      expect(
+        bundle.content.research.where(
+          (r) => r.kind == ResearchKind.dissertation,
+        ),
+        isNotEmpty,
+      );
+    });
+
+    test('rasmlar: litsenziya, atribusiya, alt-text; graphic yo‘q', () {
+      expect(bundle.content.images.length, greaterThan(100));
+      for (final im in bundle.content.images) {
+        expect(allowedImageLicenses, contains(im.license), reason: im.id);
+        expect(im.attribution, isNotEmpty);
+        expect(im.alt['en'], isNotEmpty);
+        expect(im.graphic, isFalse);
+        if (!im.isOriginalDiagram) {
+          expect(im.sourceUrl, isNotNull, reason: im.id);
+        }
+      }
+    });
+
+    test('bilim grafigi: har bir bog‘lanishning asosi bor', () {
+      expect(bundle.content.links, isNotEmpty);
+      final claims = {for (final c in bundle.content.claims) c.claimId};
+      for (final l in bundle.content.links) {
+        if (l.relation == LinkRelation.analysedBy ||
+            l.relation == LinkRelation.metabolismCoMention) {
+          expect(claims, contains(l.basis), reason: '${l.fromId}->${l.toId}');
+        }
+      }
     });
 
     test('hech bir claim, hujjat yoki qoida VERIFIED/REVIEWED emas', () {
@@ -128,11 +198,25 @@ void main() {
     });
 
     test('retsept taxmin qilinmagan; skrining ≠ tasdiqlash', () {
+      final excerpts = {
+        for (final c in bundle.content.claims) '${c.value['excerpt']}',
+      };
       for (final r in bundle.content.recipes) {
-        // Ochiq manbada tasdiqlangan retsept topilmagan.
-        expect(r.hasPreparationData, isFalse, reason: r.id);
-        expect(r.ingredients, isEmpty);
+        if (!r.hasPreparationData) continue;
+        // Retsept bo‘lsa: manba majburiy, qadam manbadagi asl jumla,
+        // tartib faqat manba aniq aytgan bo‘lsa raqamlanadi.
+        expect(r.sourceIds, isNotEmpty, reason: r.id);
+        for (final st in r.steps) {
+          expect(excerpts, contains(st.text), reason: r.id);
+          if (!r.orderExplicitInSource) expect(st.order, isNull);
+        }
       }
+      expect(
+        bundle.content.recipes
+            .firstWhere((r) => r.id == 'recipe-marquis')
+            .hasPreparationData,
+        isFalse,
+      );
       for (final t in bundle.content.screeningTests) {
         expect(t.confirmatoryMethodIds, isNotEmpty);
         expect(t.supportsDefinitiveIdentification, isFalse);
@@ -325,8 +409,8 @@ void main() {
         addTearDown(d.close);
         expect(await d.integrityOk(), isTrue);
         expect(await d.containsTestData(), isFalse);
-        expect(await d.metaValue('pack_version'), '2026.10.2');
-        expect(await d.metaValue('bundle_format'), 'fe-bundle/2');
+        expect(await d.metaValue('pack_version'), bundle.packVersion);
+        expect(await d.metaValue('bundle_format'), BundleCodec.format);
         expect(await d.metaValue('component_version.jurisdiction'), isNotNull);
         final k = await d
             .customSelect(
@@ -344,10 +428,20 @@ void main() {
             'emerging_issue',
           ]),
         );
+        final counts = await d
+            .customSelect(
+              'SELECT (SELECT COUNT(*) FROM research_records) AS r, '
+              '(SELECT COUNT(*) FROM images) AS i, '
+              '(SELECT COUNT(*) FROM entity_links) AS l',
+            )
+            .getSingle();
+        expect(counts.read<int>('r'), bundle.content.research.length);
+        expect(counts.read<int>('i'), bundle.content.images.length);
+        expect(counts.read<int>('l'), greaterThan(0));
         final payload = await d
             .customSelect(
               'SELECT payload_json FROM knowledge_entities '
-              "WHERE entity_type = 'screening_test'",
+              "WHERE entity_id = 'scr-immunoassay-drugs'",
             )
             .getSingle();
         expect(
@@ -360,18 +454,23 @@ void main() {
         final fts = db.FtsSearchIndex(d);
         Future<String?> top(String q) async {
           final r = await fts.search(SearchQuery(q));
-          for (final hits in r.byCategory.values) {
-            if (hits.isNotEmpty) return hits.first.entityId;
-          }
-          return null;
+          // Barcha kategoriyalar bo‘yicha eng yuqori ball.
+          final all = [for (final h in r.byCategory.values) ...h]
+            ..sort((a, b) => b.score.compareTo(a.score));
+          return all.isEmpty ? null : all.first.entityId;
         }
 
         expect(await top('methamphetamine'), 'methamphetamine');
         expect(await top('метамфетамин'), 'methamphetamine');
         expect(await top('metamfetamin'), 'methamphetamine');
         expect(await top('acetaminophen'), 'paracetamol');
-        expect(await top('norfentanyl'), 'fentanyl');
-        expect(await top('fentanly'), 'fentanyl');
+        expect(await top('norfentanyl'), 'norfentanyl');
+        // Xatoli yozuv: modda eng yaxshi 3 natija ichida (skrining yozuvi
+        // «Fentanyl immunoassay» ham to‘g‘ri, yaqin natija).
+        final typo = await fts.search(const SearchQuery('fentanly'));
+        final ranked = [for (final h in typo.byCategory.values) ...h]
+          ..sort((a, b) => b.score.compareTo(a.score));
+        expect(ranked.take(3).map((h) => h.entityId), contains('fentanyl'));
         expect(await top('livor mortis'), 'fm-livor-mortis');
         expect(await top('Marquis'), 'reagent-marquis');
         expect(await top('нитазен'), 'emg-nitazenes');

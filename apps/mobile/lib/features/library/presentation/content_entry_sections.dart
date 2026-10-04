@@ -1,3 +1,4 @@
+import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -14,6 +15,8 @@ import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../core/widgets/fe_data_components.dart';
 import '../../../domain/library/library_models.dart';
+import '../../evidence/presentation/research_screens.dart';
+import '../../evidence/presentation/scientific_image.dart';
 import '../../legal/presentation/legal_rule_card.dart';
 
 /// Kontent paketidan kelgan yozuv uchun bo‘limlar.
@@ -44,11 +47,14 @@ class ContentEntryBody extends ConsumerWidget {
     final presentFields = {for (final c in d.claims) c.field};
     final emptySections = [
       (Icons.category_outlined, l.detailClass),
-      if (!presentFields.contains('metabolites'))
+      if (!presentFields.contains('metabolites') &&
+          !presentFields.contains('metabolism_note'))
         (Icons.account_tree_outlined, l.detailMetabolites),
       (Icons.water_drop_outlined, l.detailSpecimens),
-      (Icons.biotech_outlined, l.detailMethods),
-      (Icons.show_chart, l.detailConcentrations),
+      if (!presentFields.contains('analytical_method'))
+        (Icons.biotech_outlined, l.detailMethods),
+      if (!presentFields.contains('reported_concentration'))
+        (Icons.show_chart, l.detailConcentrations),
       (Icons.psychology_alt_outlined, l.detailInterpretation),
       (Icons.ac_unit, l.detailStability),
       (Icons.compare_arrows, l.detailInterferences),
@@ -58,6 +64,15 @@ class ContentEntryBody extends ConsumerWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         _ProvenanceCard(entry: entry),
+        // Struktura — identifikatsiya (paywall ortida emas).
+        for (final im
+            in ref
+                .watch(evidenceDataProvider)
+                .imagesFor(entry.id)
+                .where((m) => m.kind == ImageKind.chemicalStructure)) ...[
+          FeSectionHeader(l.detailStructure),
+          ScientificImageCard(meta: im),
+        ],
         if (!unlocked) ...[
           const SizedBox(height: FeSpace.md),
           const LockedContentCard(key: Key('entry.locked')),
@@ -69,10 +84,38 @@ class ContentEntryBody extends ConsumerWidget {
             text: l.detailLayerScientificNote,
           ),
           for (final (field, title) in scientificFields)
-            if (d.claim(field) case final claim?) ...[
+            if (d.claims.any((c) => c.field == field)) ...[
               FeSectionHeader(title),
-              ClaimCard(claim: claim),
+              for (final claim in d.claims.where((c) => c.field == field))
+                Padding(
+                  padding: const EdgeInsets.only(bottom: FeSpace.xs),
+                  child: ClaimCard(claim: claim),
+                ),
             ],
+          if (presentFields.contains('analytical_method')) ...[
+            FeSectionHeader(l.detailAnalyticalMethods),
+            for (final claim in d.claims.where(
+              (c) => c.field == 'analytical_method',
+            ))
+              Padding(
+                padding: const EdgeInsets.only(bottom: FeSpace.xs),
+                child: ClaimCard(claim: claim),
+              ),
+          ],
+          if (presentFields.contains('reported_concentration')) ...[
+            FeSectionHeader(l.detailReportedConcentrations),
+            FeBanner(
+              key: const Key('entry.concentration.notThreshold'),
+              icon: Icons.warning_amber_rounded,
+              text: l.concentrationNotThreshold,
+              tone: FeBannerTone.warning,
+            ),
+            const SizedBox(height: FeSpace.xs),
+            for (final claim in d.claims.where(
+              (c) => c.field == 'reported_concentration',
+            ))
+              _ConcentrationClaim(claim: claim),
+          ],
           for (final (icon, title) in emptySections) ...[
             FeSectionHeader(title),
             if (title == l.detailConcentrations) ...[
@@ -87,6 +130,7 @@ class ContentEntryBody extends ConsumerWidget {
           ],
           _ContentJurisdictionLayer(entry: entry),
         ],
+        RelatedSection(entityId: entry.id),
         FeSectionHeader(l.detailReferences),
         for (final s in d.allSources)
           Padding(
@@ -94,6 +138,53 @@ class ContentEntryBody extends ConsumerWidget {
             child: SourceTile(source: s),
           ),
       ],
+    );
+  }
+}
+
+/// Xabar qilingan konsentratsiya: namuna va kontekst chiplari + asl jumla.
+class _ConcentrationClaim extends StatelessWidget {
+  const _ConcentrationClaim({required this.claim});
+
+  final ClaimView claim;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final specimens = [
+      for (final s in (claim.value['specimen'] as List? ?? const [])) '$s',
+    ];
+    final context0 = claim.value['context'] as String?;
+    return Padding(
+      padding: const EdgeInsets.only(bottom: FeSpace.xs),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Wrap(
+            spacing: FeSpace.xs,
+            runSpacing: FeSpace.xxs,
+            crossAxisAlignment: WrapCrossAlignment.center,
+            children: [
+              Text(l.concentrationSpecimen, style: t.labelMedium),
+              for (final s in specimens)
+                StatusChip(
+                  icon: Icons.water_drop_outlined,
+                  label: s,
+                  color: c.textSecondary,
+                ),
+            ],
+          ),
+          if (context0 != null)
+            Text(
+              l.concentrationContext(context0),
+              style: t.bodySmall?.copyWith(color: c.textSecondary),
+            ),
+          const SizedBox(height: FeSpace.xxs),
+          ClaimCard(claim: claim),
+        ],
+      ),
     );
   }
 }

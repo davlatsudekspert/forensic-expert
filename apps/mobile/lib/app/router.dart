@@ -11,6 +11,8 @@ import '../core/settings/settings_controller.dart';
 import '../domain/catalog/tools_catalog.dart';
 import '../domain/knowledge/knowledge_models.dart';
 import '../features/ai/presentation/ai_screen.dart';
+import '../features/evidence/presentation/research_screens.dart';
+import '../features/evidence/presentation/scientific_image.dart';
 import '../features/home/presentation/home_screen.dart';
 import '../features/home/presentation/search_screen.dart';
 import '../features/knowledge/presentation/knowledge_detail_screen.dart';
@@ -118,6 +120,25 @@ final routerProvider = Provider<GoRouter>((ref) {
                         builder: (c, s) => const ExamScreen(),
                       ),
                     ],
+                  ),
+                  GoRoute(
+                    path: 'research',
+                    builder: (c, s) => ResearchLibraryScreen(
+                      entityId: s.uri.queryParameters['entity'],
+                    ),
+                    routes: [
+                      GoRoute(
+                        path: ':id',
+                        builder: (c, s) => ResearchDetailScreen(
+                          researchId: s.pathParameters['id']!,
+                        ),
+                      ),
+                    ],
+                  ),
+                  GoRoute(
+                    path: 'image/:id',
+                    builder: (c, s) =>
+                        ImageViewerScreen(imageId: s.pathParameters['id']!),
                   ),
                   GoRoute(
                     path: 'compare',

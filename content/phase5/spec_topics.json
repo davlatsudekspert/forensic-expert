@@ -1,0 +1,1224 @@
+[
+ {
+  "target": "met-gcms|principle",
+  "entity": "method-gcms",
+  "field": "principle",
+  "query": "\"gas chromatography-mass spectrometry\"[Title/Abstract] AND (forensic OR postmortem OR autopsy OR medicolegal)",
+  "patterns": [
+   "GC[-\u2013]MS|gas chromatography[-\u2013\u2010 ]mass spectrometry",
+   "separat|volatil|thermally stable|electron (impact|ionization)",
+   "mass spectr|spectra|library|fragment"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "met-gcms|limitation",
+  "entity": "method-gcms",
+  "field": "limitation",
+  "query": "\"gas chromatography-mass spectrometry\" derivatization (forensic OR postmortem OR autopsy OR medicolegal)",
+  "patterns": [
+   "GC[-\u2013]MS|gas chromatography[-\u2013\u2010 ]mass spectrometry",
+   "derivati[sz]ation|non-?volatile|thermally (labile|unstable)|polar"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "met-gcfid|application",
+  "entity": "method-gc-fid",
+  "field": "application",
+  "query": "\"GC-FID\" (ethanol OR alcohol OR volatile) blood",
+  "patterns": [
+   "GC[-\u2013]FID|flame ionization detect",
+   "ethanol|alcohol|volatile"
+  ],
+  "allow_methods": true
+ },
+ {
+  "target": "met-hsgc|application",
+  "entity": "method-headspace-gc",
+  "field": "application",
+  "query": "\"headspace gas chromatography\" (ethanol OR alcohol OR volatile)",
+  "patterns": [
+   "head-?space",
+   "gas chromatograph|\\bGC\\b",
+   "ethanol|alcohol|volatile"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "met-lcmsms|principle",
+  "entity": "method-lcmsms",
+  "field": "principle",
+  "query": "\"LC-MS/MS\"[Title/Abstract] AND (forensic OR postmortem OR autopsy OR medicolegal) AND (sensitivity OR selectivity)",
+  "patterns": [
+   "LC[-\u2013]MS/MS|liquid chromatography[-\u2013\u2010 ]tandem mass spectrometry",
+   "sensitiv|selectiv|specific",
+   "(is|are|offers|provides|allows|enables|has become)\\b"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "met-lcmsms|matrix",
+  "entity": "method-lcmsms",
+  "field": "limitation",
+  "query": "\"matrix effect\" \"LC-MS/MS\" (blood OR postmortem)",
+  "patterns": [
+   "matrix effects?",
+   "ion (suppression|enhancement)|suppress|enhance"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "met-hplc|application",
+  "entity": "method-hplc",
+  "field": "application",
+  "query": "HPLC (\"diode array\" OR \"UV detection\") (forensic OR postmortem OR autopsy OR medicolegal)",
+  "patterns": [
+   "\\bHPLC\\b|high[- ]performance liquid chromatography",
+   "diode[- ]array|\\bDAD\\b|UV|ultraviolet"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "met-tlc|application",
+  "entity": "method-tlc",
+  "field": "application",
+  "query": "\"thin-layer chromatography\" (drugs OR toxicology) screening",
+  "patterns": [
+   "thin[- ]layer chromatography|\\bTLC\\b",
+   "screen|identif|simple|inexpensive|low[- ]cost|rapid"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "met-uvvis|application",
+  "entity": "method-uvvis",
+  "field": "application",
+  "query": "spectrophotometric (carboxyhemoglobin OR \"UV-Vis\") (forensic OR postmortem OR autopsy OR medicolegal)",
+  "patterns": [
+   "spectrophotometr|UV[-\u2013/ ]?Vis",
+   "determin|measur|quantif"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "met-immunoassay|principle",
+  "entity": "method-immunoassay",
+  "field": "principle",
+  "query": "immunoassay antibody drugs screening principle",
+  "patterns": [
+   "immunoassays?",
+   "antibod",
+   "bind|antigen|competit"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "met-spectroscopy|application",
+  "entity": "method-spectroscopy",
+  "field": "application",
+  "query": "(Raman OR FTIR OR \"infrared spectroscopy\") (seized drugs OR forensic)",
+  "patterns": [
+   "Raman|FT-?IR|infrared spectroscop",
+   "seized|street|illicit|drug|forensic",
+   "identif|non-?destructive|rapid|screen"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "met-hrms|screening",
+  "entity": "method-hrms",
+  "field": "application",
+  "query": "\"high-resolution mass spectrometry\" (screening OR untargeted) toxicology",
+  "patterns": [
+   "high[- ]resolution mass spectrometry|HRMS|QTOF|Orbitrap",
+   "screen|untargeted|non-?targeted|retrospective"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "met-spe|principle",
+  "entity": "method-spe",
+  "field": "principle",
+  "query": "\"solid-phase extraction\" blood drugs forensic",
+  "patterns": [
+   "solid[- ]phase extraction|\\bSPE\\b",
+   "clean|extract|matri|interfer|concentrat"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "met-lle|principle",
+  "entity": "method-lle",
+  "field": "principle",
+  "query": "\"liquid-liquid extraction\" blood drugs toxicology",
+  "patterns": [
+   "liquid[\u2013-]liquid extraction|\\bLLE\\b",
+   "extract|solvent|organic"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "met-ppt|principle",
+  "entity": "method-protein-precipitation",
+  "field": "principle",
+  "query": "\"protein precipitation\" blood toxicology LC-MS/MS",
+  "patterns": [
+   "protein precipitation",
+   "simple|fast|rapid|acetonitrile|methanol|matrix"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "met-quechers|application",
+  "entity": "method-quechers",
+  "field": "application",
+  "query": "QuEChERS (blood OR postmortem OR toxicology)",
+  "patterns": [
+   "QuEChERS",
+   "blood|post-?mortem|toxicolog|tissue"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "met-deriv|principle",
+  "entity": "method-derivatization",
+  "field": "principle",
+  "query": "derivatization GC-MS (drugs OR toxicology) volatility",
+  "patterns": [
+   "derivati[sz]ation",
+   "volatil|thermal stabilit|chromatographic|polar"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "met-calibration|principle",
+  "entity": "method-calibration",
+  "field": "principle",
+  "query": "\"calibration curve\" \"forensic toxicology\" linearity",
+  "patterns": [
+   "calibration (curve|model|range)",
+   "linear|weight|range|matrix-matched"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "met-validation|principle",
+  "entity": "method-validation",
+  "field": "principle",
+  "query": "\"method validation\" \"forensic toxicology\"",
+  "patterns": [
+   "validat",
+   "selectivity|accuracy|precision|limit of detection|LOD|bias|carryover|matrix",
+   "forensic|toxicolog"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "met-uncertainty|principle",
+  "entity": "method-uncertainty",
+  "field": "principle",
+  "query": "\"measurement uncertainty\" (forensic OR toxicology OR blood alcohol)",
+  "patterns": [
+   "measurement uncertainty|uncertainty of measurement",
+   "estimat|evaluat|report|budget|interval|confidence"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "met-qc|principle",
+  "entity": "method-qc",
+  "field": "principle",
+  "query": "\"quality control\" samples \"forensic toxicology\"",
+  "patterns": [
+   "quality control",
+   "samples?|materials?",
+   "accura|precis|batch|run|acceptance"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "met-idcriteria|principle",
+  "entity": "method-identification-criteria",
+  "field": "principle",
+  "query": "\"identification criteria\" \"retention time\" \"ion ratio\"",
+  "patterns": [
+   "retention time",
+   "ion ratios?|qualifier",
+   "criteri|toleran|identif"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "met-postmortem-redistribution|limitation",
+  "entity": "method-validation",
+  "field": "limitation",
+  "query": "\"postmortem redistribution\" toxicology",
+  "patterns": [
+   "post-?mortem redistribution",
+   "concentration|central|peripheral|femoral|site"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "rea-marquis|composition",
+  "entity": "rea-marquis",
+  "field": "composition_statement",
+  "query": "\"Marquis\" (reagent OR test) (drugs OR forensic OR toxicology)",
+  "patterns": [
+   "Marquis(\u2019s|'s)?\\s+(reagent|test)",
+   "compos|consist|prepar|contain|mixture of|solution of|made (up )?of|comprised",
+   "formaldehyde|sulfuric|sulphuric"
+  ],
+  "allow_methods": true
+ },
+ {
+  "target": "rea-marquis|use",
+  "entity": "rea-marquis",
+  "field": "use_context",
+  "query": "\"Marquis\" (reagent OR test) presumptive OR colour OR color",
+  "patterns": [
+   "Marquis(\u2019s|'s)?\\s+(reagent|test)",
+   "presumptive|colou?r|spot|screen|detect|indicat|purple|violet|blue|orange|red"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "rea-mecke|composition",
+  "entity": "rea-mecke",
+  "field": "composition_statement",
+  "query": "\"Mecke\" (reagent OR test) (drugs OR forensic OR toxicology)",
+  "patterns": [
+   "Mecke(\u2019s|'s)?\\s+(reagent|test)",
+   "compos|consist|prepar|contain|mixture of|solution of|made (up )?of|comprised",
+   "selen|sulfuric|sulphuric"
+  ],
+  "allow_methods": true
+ },
+ {
+  "target": "rea-mecke|use",
+  "entity": "rea-mecke",
+  "field": "use_context",
+  "query": "\"Mecke\" (reagent OR test) presumptive OR colour OR color",
+  "patterns": [
+   "Mecke(\u2019s|'s)?\\s+(reagent|test)",
+   "presumptive|colou?r|spot|screen|detect|indicat|purple|violet|blue|orange|red"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "rea-mandelin|composition",
+  "entity": "rea-mandelin",
+  "field": "composition_statement",
+  "query": "\"Mandelin\" (reagent OR test) (drugs OR forensic OR toxicology)",
+  "patterns": [
+   "Mandelin(\u2019s|'s)?\\s+(reagent|test)",
+   "compos|consist|prepar|contain|mixture of|solution of|made (up )?of|comprised",
+   "vanad|sulfuric|sulphuric"
+  ],
+  "allow_methods": true
+ },
+ {
+  "target": "rea-mandelin|use",
+  "entity": "rea-mandelin",
+  "field": "use_context",
+  "query": "\"Mandelin\" (reagent OR test) presumptive OR colour OR color",
+  "patterns": [
+   "Mandelin(\u2019s|'s)?\\s+(reagent|test)",
+   "presumptive|colou?r|spot|screen|detect|indicat|purple|violet|blue|orange|red"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "rea-simon|composition",
+  "entity": "rea-simon",
+  "field": "composition_statement",
+  "query": "\"Simon\" (reagent OR test) (drugs OR forensic OR toxicology)",
+  "patterns": [
+   "Simon(\u2019s|'s)?\\s+(reagent|test)",
+   "compos|consist|prepar|contain|mixture of|solution of|made (up )?of|comprised",
+   "nitroprusside|acetaldehyde|carbonate"
+  ],
+  "allow_methods": true
+ },
+ {
+  "target": "rea-simon|use",
+  "entity": "rea-simon",
+  "field": "use_context",
+  "query": "\"Simon\" (reagent OR test) presumptive OR colour OR color",
+  "patterns": [
+   "Simon(\u2019s|'s)?\\s+(reagent|test)",
+   "presumptive|colou?r|spot|screen|detect|indicat|purple|violet|blue|orange|red"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "rea-scott|composition",
+  "entity": "rea-scott",
+  "field": "composition_statement",
+  "query": "\"Scott\" (reagent OR test) (drugs OR forensic OR toxicology)",
+  "patterns": [
+   "Scott(\u2019s|'s)?\\s+(reagent|test)",
+   "compos|consist|prepar|contain|mixture of|solution of|made (up )?of|comprised",
+   "cobalt|thiocyanate"
+  ],
+  "allow_methods": true
+ },
+ {
+  "target": "rea-scott|use",
+  "entity": "rea-scott",
+  "field": "use_context",
+  "query": "\"Scott\" (reagent OR test) presumptive OR colour OR color",
+  "patterns": [
+   "Scott(\u2019s|'s)?\\s+(reagent|test)",
+   "presumptive|colou?r|spot|screen|detect|indicat|purple|violet|blue|orange|red"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "rea-cobalt-thiocyanate|composition",
+  "entity": "rea-cobalt-thiocyanate",
+  "field": "composition_statement",
+  "query": "\"cobalt thiocyanate\" (reagent OR test) (drugs OR forensic OR toxicology)",
+  "patterns": [
+   "cobalt thiocyanate(\u2019s|'s)?\\s+(reagent|test)",
+   "compos|consist|prepar|contain|mixture of|solution of|made (up )?of|comprised",
+   "cobalt|thiocyanate|cocaine"
+  ],
+  "allow_methods": true
+ },
+ {
+  "target": "rea-cobalt-thiocyanate|use",
+  "entity": "rea-cobalt-thiocyanate",
+  "field": "use_context",
+  "query": "\"cobalt thiocyanate\" (reagent OR test) presumptive OR colour OR color",
+  "patterns": [
+   "cobalt thiocyanate(\u2019s|'s)?\\s+(reagent|test)",
+   "presumptive|colou?r|spot|screen|detect|indicat|purple|violet|blue|orange|red"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "rea-duquenois|composition",
+  "entity": "rea-duquenois",
+  "field": "composition_statement",
+  "query": "\"Duquenois\" (reagent OR test) (drugs OR forensic OR toxicology)",
+  "patterns": [
+   "Duquenois(\u2019s|'s)?\\s+(reagent|test)",
+   "compos|consist|prepar|contain|mixture of|solution of|made (up )?of|comprised",
+   "vanillin|acetaldehyde|hydrochloric|chloroform"
+  ],
+  "allow_methods": true
+ },
+ {
+  "target": "rea-duquenois|use",
+  "entity": "rea-duquenois",
+  "field": "use_context",
+  "query": "\"Duquenois\" (reagent OR test) presumptive OR colour OR color",
+  "patterns": [
+   "Duquenois(\u2019s|'s)?\\s+(reagent|test)",
+   "presumptive|colou?r|spot|screen|detect|indicat|purple|violet|blue|orange|red"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "rea-ehrlich|composition",
+  "entity": "rea-ehrlich",
+  "field": "composition_statement",
+  "query": "\"Ehrlich\" (reagent OR test) (drugs OR forensic OR toxicology)",
+  "patterns": [
+   "Ehrlich(\u2019s|'s)?\\s+(reagent|test)",
+   "compos|consist|prepar|contain|mixture of|solution of|made (up )?of|comprised",
+   "dimethylaminobenzaldehyde|DMAB|indole"
+  ],
+  "allow_methods": true
+ },
+ {
+  "target": "rea-ehrlich|use",
+  "entity": "rea-ehrlich",
+  "field": "use_context",
+  "query": "\"Ehrlich\" (reagent OR test) presumptive OR colour OR color",
+  "patterns": [
+   "Ehrlich(\u2019s|'s)?\\s+(reagent|test)",
+   "presumptive|colou?r|spot|screen|detect|indicat|purple|violet|blue|orange|red"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "rea-dragendorff|composition",
+  "entity": "rea-dragendorff",
+  "field": "composition_statement",
+  "query": "\"Dragendorff\" (reagent OR test) (drugs OR forensic OR toxicology)",
+  "patterns": [
+   "Dragendorff(\u2019s|'s)?\\s+(reagent|test)",
+   "compos|consist|prepar|contain|mixture of|solution of|made (up )?of|comprised",
+   "bismuth|iodide|alkaloid"
+  ],
+  "allow_methods": true
+ },
+ {
+  "target": "rea-dragendorff|use",
+  "entity": "rea-dragendorff",
+  "field": "use_context",
+  "query": "\"Dragendorff\" (reagent OR test) presumptive OR colour OR color",
+  "patterns": [
+   "Dragendorff(\u2019s|'s)?\\s+(reagent|test)",
+   "presumptive|colou?r|spot|screen|detect|indicat|purple|violet|blue|orange|red"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "rea-fast-blue-bb|composition",
+  "entity": "rea-fast-blue-bb",
+  "field": "composition_statement",
+  "query": "\"Fast Blue BB\" (reagent OR test) (drugs OR forensic OR toxicology)",
+  "patterns": [
+   "Fast Blue BB(\u2019s|'s)?\\s+(reagent|test)",
+   "compos|consist|prepar|contain|mixture of|solution of|made (up )?of|comprised",
+   "cannabinoid|THC|diazonium"
+  ],
+  "allow_methods": true
+ },
+ {
+  "target": "rea-fast-blue-bb|use",
+  "entity": "rea-fast-blue-bb",
+  "field": "use_context",
+  "query": "\"Fast Blue BB\" (reagent OR test) presumptive OR colour OR color",
+  "patterns": [
+   "Fast Blue BB(\u2019s|'s)?\\s+(reagent|test)",
+   "presumptive|colou?r|spot|screen|detect|indicat|purple|violet|blue|orange|red"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "rea-ninhydrin|composition",
+  "entity": "rea-ninhydrin",
+  "field": "composition_statement",
+  "query": "\"ninhydrin\" (reagent OR test) (drugs OR forensic OR toxicology)",
+  "patterns": [
+   "ninhydrin(\u2019s|'s)?\\s+(reagent|test)",
+   "compos|consist|prepar|contain|mixture of|solution of|made (up )?of|comprised",
+   "amine|amino|purple|Ruhemann"
+  ],
+  "allow_methods": true
+ },
+ {
+  "target": "rea-ninhydrin|use",
+  "entity": "rea-ninhydrin",
+  "field": "use_context",
+  "query": "\"ninhydrin\" (reagent OR test) presumptive OR colour OR color",
+  "patterns": [
+   "ninhydrin(\u2019s|'s)?\\s+(reagent|test)",
+   "presumptive|colou?r|spot|screen|detect|indicat|purple|violet|blue|orange|red"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "rea-iodoplatinate|composition",
+  "entity": "rea-iodoplatinate",
+  "field": "composition_statement",
+  "query": "\"iodoplatinate\" (reagent OR test) (drugs OR forensic OR toxicology)",
+  "patterns": [
+   "iodoplatinate(\u2019s|'s)?\\s+(reagent|test)",
+   "compos|consist|prepar|contain|mixture of|solution of|made (up )?of|comprised",
+   "platin|iodide|alkaloid|nitrogen"
+  ],
+  "allow_methods": true
+ },
+ {
+  "target": "rea-iodoplatinate|use",
+  "entity": "rea-iodoplatinate",
+  "field": "use_context",
+  "query": "\"iodoplatinate\" (reagent OR test) presumptive OR colour OR color",
+  "patterns": [
+   "iodoplatinate(\u2019s|'s)?\\s+(reagent|test)",
+   "presumptive|colou?r|spot|screen|detect|indicat|purple|violet|blue|orange|red"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "rea-trinder|composition",
+  "entity": "rea-trinder",
+  "field": "composition_statement",
+  "query": "\"Trinder\" (reagent OR test) (drugs OR forensic OR toxicology)",
+  "patterns": [
+   "Trinder(\u2019s|'s)?\\s+(reagent|test)",
+   "compos|consist|prepar|contain|mixture of|solution of|made (up )?of|comprised",
+   "ferric|iron|salicyl"
+  ],
+  "allow_methods": true
+ },
+ {
+  "target": "rea-trinder|use",
+  "entity": "rea-trinder",
+  "field": "use_context",
+  "query": "\"Trinder\" (reagent OR test) presumptive OR colour OR color",
+  "patterns": [
+   "Trinder(\u2019s|'s)?\\s+(reagent|test)",
+   "presumptive|colou?r|spot|screen|detect|indicat|purple|violet|blue|orange|red"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "scr-fts|performance",
+  "entity": "scr-fentanyl-test-strips",
+  "field": "performance",
+  "query": "\"fentanyl test strips\"",
+  "patterns": [
+   "fentanyl test strips?|\\bFTS\\b",
+   "sensitiv|specific|false|detect|cross-?reactiv"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "scr-fts|limitation",
+  "entity": "scr-fentanyl-test-strips",
+  "field": "limitation",
+  "query": "\"fentanyl test strips\" analogs OR \"false positive\"",
+  "patterns": [
+   "fentanyl test strips?|\\bFTS\\b",
+   "false[- ]positive|false[- ]negative|analog|methamphetamine|MDMA|diphenhydramine|cannot|not detect|quantif"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "scr-benzo-ia|limitation",
+  "entity": "scr-immunoassay-benzodiazepines",
+  "field": "limitation",
+  "query": "benzodiazepine immunoassay (lorazepam OR clonazepam) \"false negative\" OR glucuronide",
+  "patterns": [
+   "benzodiazepine",
+   "immunoassay",
+   "false[- ]negative|glucuronid|not (be )?detect|poor(ly)? cross|low cross|lorazepam|clonazepam"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "scr-amph-ia|limitation",
+  "entity": "scr-immunoassay-amphetamines",
+  "field": "limitation",
+  "query": "amphetamine immunoassay \"false positive\"",
+  "patterns": [
+   "amphetamine",
+   "immunoassay|screen",
+   "false[- ]positive"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "scr-opiate-ia|limitation",
+  "entity": "scr-immunoassay-opiates",
+  "field": "limitation",
+  "query": "opiate immunoassay oxycodone OR fentanyl cross-reactivity",
+  "patterns": [
+   "opiate",
+   "immunoassay|screen",
+   "oxycodone|fentanyl|synthetic|cross-?reactiv|not detect"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "scr-cannabis-ia|limitation",
+  "entity": "scr-immunoassay-cannabinoids",
+  "field": "limitation",
+  "query": "cannabinoid immunoassay synthetic cannabinoids OR \"false positive\" urine",
+  "patterns": [
+   "cannabinoid|THC",
+   "immunoassay|screen",
+   "false[- ]positive|synthetic cannabinoids?|not detect|cross-?reactiv|efavirenz|pantoprazole|ibuprofen"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "scr-fentanyl-ia|application",
+  "entity": "scr-immunoassay-fentanyl",
+  "field": "limitation",
+  "query": "fentanyl immunoassay analogs cross-reactivity urine",
+  "patterns": [
+   "fentanyl",
+   "immunoassay",
+   "analog|cross-?reactiv|norfentanyl|false"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "scr-oral-fluid|limitation",
+  "entity": "scr-oral-fluid-poc",
+  "field": "limitation",
+  "query": "\"oral fluid\" (point-of-care OR roadside OR on-site) drug test sensitivity",
+  "patterns": [
+   "oral fluid",
+   "point[- ]of[- ]care|roadside|on-?site|rapid",
+   "sensitiv|specific|false|confirm"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "scr-colour|limitation",
+  "entity": "scr-colour-tests",
+  "field": "limitation",
+  "query": "\"color test\" OR \"colour test\" presumptive \"false positive\" drugs",
+  "patterns": [
+   "colou?r (tests?|reagents?)|spot tests?",
+   "false[- ]positive|subjective|interfer|not specific|non-?specific|presumptive"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "scr-ia-confirm|principle",
+  "entity": "scr-immunoassay-drugs",
+  "field": "confirmation_requirement",
+  "query": "immunoassay positive confirmed \"mass spectrometry\" urine drug testing",
+  "patterns": [
+   "immunoassay|screen(ing)? (test|result)",
+   "confirm",
+   "mass spectrometr|GC[-\u2013]MS|LC[-\u2013]MS"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-death-investigation|definition",
+  "entity": "fm-death-investigation",
+  "field": "definition",
+  "query": "\"death investigation\"[Title/Abstract] scene",
+  "patterns": [
+   "death (scene )?investigation",
+   "scene|circumstanc|history|multidisciplin|autopsy"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-cause-manner|definition",
+  "entity": "fm-cause-manner",
+  "field": "definition",
+  "query": "\"manner of death\" \"cause of death\" definition",
+  "patterns": [
+   "manner of death",
+   "natural|accident|suicide|homicide|undetermined",
+   "cause of death"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-mechanism-of-death|definition",
+  "entity": "fm-mechanism-of-death",
+  "field": "definition",
+  "query": "\"mechanism of death\" \"cause of death\"",
+  "patterns": [
+   "mechanism of death",
+   "cause of death|physiolog|derangement"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-postmortem-changes|definition",
+  "entity": "fm-postmortem-changes",
+  "field": "definition",
+  "query": "\"postmortem changes\"[Title/Abstract] early late",
+  "patterns": [
+   "post-?mortem changes",
+   "early|late|livor|rigor|algor|decompos|putref"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-rigor-mortis|definition",
+  "entity": "fm-rigor-mortis",
+  "field": "definition",
+  "query": "\"rigor mortis\"[Title/Abstract] muscle ATP",
+  "patterns": [
+   "rigor mortis",
+   "ATP|muscle|stiff|rigid|actin|myosin"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-decomposition|definition",
+  "entity": "fm-decomposition",
+  "field": "definition",
+  "query": "decomposition stages human remains forensic",
+  "patterns": [
+   "decomposition",
+   "stages?|fresh|bloat|active decay|advanced decay|skeleton"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-pmi-methods|limitation",
+  "entity": "fm-pmi-methods",
+  "field": "limitation",
+  "query": "\"postmortem interval\" estimation methods accuracy",
+  "patterns": [
+   "post-?mortem interval|PMI",
+   "accura|precis|error|uncertain|limit|variab"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-blunt-trauma|definition",
+  "entity": "fm-blunt-trauma",
+  "field": "definition",
+  "query": "\"blunt force\" injuries abrasion contusion laceration",
+  "patterns": [
+   "blunt",
+   "abrasion|contusion|bruis|laceration"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-sharp-trauma|definition",
+  "entity": "fm-sharp-trauma",
+  "field": "definition",
+  "query": "\"sharp force\" injuries \"stab wound\" \"incised wound\"",
+  "patterns": [
+   "incised wound|stab wound|sharp force",
+   "length|depth|deeper|longer|edge"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-firearm|definition",
+  "entity": "fm-firearm",
+  "field": "definition",
+  "query": "gunshot wound entrance exit range forensic",
+  "patterns": [
+   "gunshot|firearm",
+   "entr(ance|y)|exit|range|soot|stippling|tattoo"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-asphyxia|definition",
+  "entity": "fm-asphyxia",
+  "field": "definition",
+  "query": "asphyxia forensic classification hanging strangulation",
+  "patterns": [
+   "asphyxi",
+   "hanging|strangulation|smothering|suffocation|choking|compression"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-drowning|limitation",
+  "entity": "fm-drowning",
+  "field": "limitation",
+  "query": "drowning diagnosis diatom test forensic",
+  "patterns": [
+   "drowning",
+   "diatom|diagnos|exclusion|difficult|challeng"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-burns|marker",
+  "entity": "fm-burns",
+  "field": "marker",
+  "query": "fire death carboxyhemoglobin soot airway vital",
+  "patterns": [
+   "soot|carboxyh(a)?emoglobin|COHb",
+   "airway|trachea|alive|vital|inhal"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-electrical|definition",
+  "entity": "fm-electrical",
+  "field": "definition",
+  "query": "\"electrical injury\" OR electrocution forensic \"current mark\"",
+  "patterns": [
+   "electr",
+   "current mark|electric mark|entry|exit|burn"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-hypothermia|marker",
+  "entity": "fm-hypothermia",
+  "field": "marker",
+  "query": "hypothermia death \"Wischnewski\" gastric",
+  "patterns": [
+   "hypotherm",
+   "Wischnewski|gastric (erosions|mucosa|lesions)|frost"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-hyperthermia|definition",
+  "entity": "fm-hyperthermia",
+  "field": "definition",
+  "query": "hyperthermia OR \"heat stroke\" death forensic autopsy",
+  "patterns": [
+   "hypertherm|heat ?stroke",
+   "death|autopsy|diagnos|body temperature|non-?specific"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-anthropology|definition",
+  "entity": "fm-anthropology",
+  "field": "definition",
+  "query": "\"forensic anthropology\"[Title/Abstract] skeletal remains",
+  "patterns": [
+   "forensic anthropolog",
+   "skelet|remains|biological profile|identif"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-age-estimation|limitation",
+  "entity": "fm-age-estimation",
+  "field": "limitation",
+  "query": "age estimation skeletal OR dental forensic accuracy",
+  "patterns": [
+   "age estimat",
+   "accura|error|reliab|method|interval"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-sex-estimation|marker",
+  "entity": "fm-sex-estimation",
+  "field": "marker",
+  "query": "sex estimation pelvis skull forensic accuracy",
+  "patterns": [
+   "sex (estimat|determin)",
+   "pelvis|pelvic|os coxae|skull|cranial|accura"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-stature-estimation|marker",
+  "entity": "fm-stature-estimation",
+  "field": "marker",
+  "query": "stature estimation long bones regression forensic",
+  "patterns": [
+   "stature",
+   "long bones?|femur|tibia|regression|formula"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-odontology|definition",
+  "entity": "fm-odontology",
+  "field": "definition",
+  "query": "\"forensic odontology\" identification dental records",
+  "patterns": [
+   "odontolog|dental",
+   "identif|records|comparison|ante-?mortem"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-dvi|definition",
+  "entity": "fm-dvi",
+  "field": "definition",
+  "query": "\"disaster victim identification\" Interpol primary identifiers",
+  "patterns": [
+   "disaster victim identification|\\bDVI\\b",
+   "DNA|fingerprint|dental|primary identif|Interpol"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-pm-imaging|definition",
+  "entity": "fm-pm-imaging",
+  "field": "definition",
+  "query": "\"postmortem computed tomography\" autopsy complement",
+  "patterns": [
+   "post-?mortem (computed tomography|CT|imaging)|PMCT|virtopsy",
+   "autopsy|complement|non-?invasive|detect"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "his-sampling|principle",
+  "entity": "his-sampling",
+  "field": "principle",
+  "query": "forensic histology sampling autopsy tissue samples",
+  "patterns": [
+   "histolog",
+   "sampl",
+   "autops|tissue|organ"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "his-fixation|principle",
+  "entity": "his-fixation",
+  "field": "principle",
+  "query": "formalin fixation tissue histology autolysis",
+  "patterns": [
+   "formalin|fixation|fixed",
+   "autoly|tissue|preserv|morpholog"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "his-he-stain|principle",
+  "entity": "his-he-stain",
+  "field": "principle",
+  "query": "hematoxylin eosin staining forensic histology",
+  "patterns": [
+   "h(a)?ematoxylin|H&E",
+   "eosin|stain"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "his-ihc|application",
+  "entity": "his-ihc",
+  "field": "application",
+  "query": "immunohistochemistry forensic pathology markers wound OR myocardial",
+  "patterns": [
+   "immunohistochem|IHC",
+   "forensic|post-?mortem|autops",
+   "marker|express|detect"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "his-wound-vitality|limitation",
+  "entity": "his-wound-vitality",
+  "field": "limitation",
+  "query": "wound vitality age estimation histology forensic",
+  "patterns": [
+   "vital|wound age",
+   "histolog|immunohistochem|inflammat|neutrophil|leukocyt",
+   "estimat|determin|limit|difficult|challeng"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "his-mi-early|marker",
+  "entity": "his-mi-early",
+  "field": "marker",
+  "query": "early myocardial infarction postmortem histology markers",
+  "patterns": [
+   "myocardial (infarction|ischemi|ischaemi)",
+   "early|histolog|immunohistochem|marker|C5b|fibronectin|troponin"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "his-putrefaction-artifact|limitation",
+  "entity": "his-putrefaction-artifact",
+  "field": "limitation",
+  "query": "putrefaction autolysis artifacts histology postmortem",
+  "patterns": [
+   "autoly|putrefact|decompos",
+   "artifact|artefact|interpret|histolog"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "his-fat-embolism|marker",
+  "entity": "his-fat-embolism",
+  "field": "marker",
+  "query": "fat embolism postmortem histology \"Oil Red O\" OR Sudan",
+  "patterns": [
+   "fat embolism",
+   "Oil Red O|Sudan|lung|pulmonary|stain"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "his-drowning|limitation",
+  "entity": "his-drowning",
+  "field": "limitation",
+  "query": "drowning lung histology forensic emphysema aquosum",
+  "patterns": [
+   "drowning",
+   "histolog|lung|alveol|emphysema"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "his-sids|limitation",
+  "entity": "his-sids",
+  "field": "limitation",
+  "query": "histology sudden death heart conduction system autopsy",
+  "patterns": [
+   "histolog",
+   "sudden (cardiac )?death",
+   "heart|cardiac|myocard"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "bio-vitreous-sodium-chloride|marker",
+  "entity": "bio-vitreous-sodium-chloride",
+  "field": "marker",
+  "query": "vitreous sodium chloride dehydration postmortem",
+  "patterns": [
+   "vitreous",
+   "sodium|chloride",
+   "dehydrat|hypernatr|stable"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "bio-vitreous-urea-creatinine|marker",
+  "entity": "bio-vitreous-urea-creatinine",
+  "field": "marker",
+  "query": "vitreous urea creatinine postmortem renal",
+  "patterns": [
+   "vitreous",
+   "urea|creatinine",
+   "renal|kidney|uremi|stable|antemortem|ante-mortem"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "bio-vitreous-glucose|limitation",
+  "entity": "bio-vitreous-glucose",
+  "field": "limitation",
+  "query": "vitreous glucose postmortem hyperglycemia decrease",
+  "patterns": [
+   "vitreous",
+   "glucose",
+   "decreas|glycoly|hyperglyc|diabet|unreliable|cannot"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "bio-bhb-ketoacidosis|marker",
+  "entity": "bio-bhb-ketoacidosis",
+  "field": "marker",
+  "query": "beta-hydroxybutyrate postmortem ketoacidosis",
+  "patterns": [
+   "hydroxybutyr|BHB",
+   "ketoacidosis|ketosis|diabet|alcohol"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "bio-hba1c|marker",
+  "entity": "bio-hba1c",
+  "field": "marker",
+  "query": "HbA1c postmortem blood diabetes",
+  "patterns": [
+   "HbA1c|glycated h(a)?emoglobin",
+   "post-?mortem|stable|antemortem|diabet"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "bio-tryptase|marker",
+  "entity": "bio-tryptase",
+  "field": "marker",
+  "query": "postmortem tryptase anaphylaxis",
+  "patterns": [
+   "tryptase",
+   "anaphyla",
+   "post-?mortem|elevat|limit|interpret"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "bio-crp-procalcitonin|marker",
+  "entity": "bio-crp-procalcitonin",
+  "field": "marker",
+  "query": "postmortem procalcitonin OR \"C-reactive protein\" sepsis",
+  "patterns": [
+   "procalcitonin|C-reactive protein|\\bCRP\\b",
+   "sepsis|infection|inflamm",
+   "post-?mortem"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "bio-cardiac-markers|limitation",
+  "entity": "bio-cardiac-markers",
+  "field": "limitation",
+  "query": "postmortem troponin OR NT-proBNP cardiac death",
+  "patterns": [
+   "troponin|NT-?proBNP|BNP",
+   "post-?mortem",
+   "cardiac|heart|myocard"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "bio-insulin-cpeptide|marker",
+  "entity": "bio-insulin-cpeptide",
+  "field": "marker",
+  "query": "insulin C-peptide ratio postmortem insulin poisoning vitreous",
+  "patterns": [
+   "insulin",
+   "C-?peptide",
+   "ratio|exogenous|poison|overdose"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "bio-csf|application",
+  "entity": "bio-csf",
+  "field": "application",
+  "query": "cerebrospinal fluid postmortem biochemistry",
+  "patterns": [
+   "cerebrospinal fluid|\\bCSF\\b",
+   "post-?mortem",
+   "biochem|marker|analy|concentration"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "bio-preanalytical-hemolysis|limitation",
+  "entity": "bio-preanalytical-hemolysis",
+  "field": "limitation",
+  "query": "postmortem blood hemolysis biochemistry interference",
+  "patterns": [
+   "h(a)?emoly",
+   "post-?mortem",
+   "interfer|unreliab|limit|affect"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "bio-sampling-site|limitation",
+  "entity": "bio-sampling-site",
+  "field": "limitation",
+  "query": "postmortem blood sampling site femoral cardiac toxicology",
+  "patterns": [
+   "femoral|peripheral",
+   "cardiac|heart|central",
+   "sampl|site|preferred|recommend|differ"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "bio-ethanol-neoformation|limitation",
+  "entity": "bio-ethanol-neoformation",
+  "field": "limitation",
+  "query": "postmortem ethanol production putrefaction neoformation",
+  "patterns": [
+   "ethanol|alcohol",
+   "post-?mortem (production|formation|synthesis)|neo-?formation|putrefact|microbial|endogenous"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "bio-cocaine-stability|limitation",
+  "entity": "bio-cocaine-stability",
+  "field": "limitation",
+  "query": "cocaine stability blood fluoride benzoylecgonine storage",
+  "patterns": [
+   "cocaine",
+   "stabil|degrad|hydroly",
+   "fluoride|storage|temperature|benzoylecgonine"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "bio-temperature-effect|limitation",
+  "entity": "bio-temperature-effect",
+  "field": "limitation",
+  "query": "temperature effect postmortem biochemical markers",
+  "patterns": [
+   "temperature",
+   "post-?mortem",
+   "marker|potassium|biochem|concentration|degrad"
+  ],
+  "allow_methods": false
+ }
+]

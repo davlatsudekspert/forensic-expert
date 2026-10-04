@@ -8077,6 +8077,17 @@ class Substances extends Table with TableInfo<Substances, Substance> {
     $customConstraints: 'NOT NULL DEFAULT 0',
     defaultValue: const CustomExpression('0'),
   );
+  static const VerificationMeta _substanceGroupMeta = const VerificationMeta(
+    'substanceGroup',
+  );
+  late final GeneratedColumn<String> substanceGroup = GeneratedColumn<String>(
+    'substance_group',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
   @override
   List<GeneratedColumn> get $columns => [
     substanceId,
@@ -8088,6 +8099,7 @@ class Substances extends Table with TableInfo<Substances, Substance> {
     lastReviewedAt,
     contentVersion,
     isTestData,
+    substanceGroup,
   ];
   @override
   String get aliasedName => _alias ?? actualTableName;
@@ -8188,6 +8200,15 @@ class Substances extends Table with TableInfo<Substances, Substance> {
         ),
       );
     }
+    if (data.containsKey('substance_group')) {
+      context.handle(
+        _substanceGroupMeta,
+        substanceGroup.isAcceptableOrUnknown(
+          data['substance_group']!,
+          _substanceGroupMeta,
+        ),
+      );
+    }
     return context;
   }
 
@@ -8233,6 +8254,10 @@ class Substances extends Table with TableInfo<Substances, Substance> {
         DriftSqlType.int,
         data['${effectivePrefix}is_test_data'],
       )!,
+      substanceGroup: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}substance_group'],
+      ),
     );
   }
 
@@ -8257,6 +8282,9 @@ class Substance extends DataClass implements Insertable<Substance> {
   final String? lastReviewedAt;
   final String contentVersion;
   final int isTestData;
+
+  /// PHASE 5: tahririy guruh (navigatsiya uchun; ilmiy claim emas).
+  final String? substanceGroup;
   const Substance({
     required this.substanceId,
     required this.canonicalName,
@@ -8267,6 +8295,7 @@ class Substance extends DataClass implements Insertable<Substance> {
     this.lastReviewedAt,
     required this.contentVersion,
     required this.isTestData,
+    this.substanceGroup,
   });
   @override
   Map<String, Expression> toColumns(bool nullToAbsent) {
@@ -8284,6 +8313,9 @@ class Substance extends DataClass implements Insertable<Substance> {
     }
     map['content_version'] = Variable<String>(contentVersion);
     map['is_test_data'] = Variable<int>(isTestData);
+    if (!nullToAbsent || substanceGroup != null) {
+      map['substance_group'] = Variable<String>(substanceGroup);
+    }
     return map;
   }
 
@@ -8302,6 +8334,9 @@ class Substance extends DataClass implements Insertable<Substance> {
           : Value(lastReviewedAt),
       contentVersion: Value(contentVersion),
       isTestData: Value(isTestData),
+      substanceGroup: substanceGroup == null && nullToAbsent
+          ? const Value.absent()
+          : Value(substanceGroup),
     );
   }
 
@@ -8320,6 +8355,7 @@ class Substance extends DataClass implements Insertable<Substance> {
       lastReviewedAt: serializer.fromJson<String?>(json['last_reviewed_at']),
       contentVersion: serializer.fromJson<String>(json['content_version']),
       isTestData: serializer.fromJson<int>(json['is_test_data']),
+      substanceGroup: serializer.fromJson<String?>(json['substance_group']),
     );
   }
   @override
@@ -8335,6 +8371,7 @@ class Substance extends DataClass implements Insertable<Substance> {
       'last_reviewed_at': serializer.toJson<String?>(lastReviewedAt),
       'content_version': serializer.toJson<String>(contentVersion),
       'is_test_data': serializer.toJson<int>(isTestData),
+      'substance_group': serializer.toJson<String?>(substanceGroup),
     };
   }
 
@@ -8348,6 +8385,7 @@ class Substance extends DataClass implements Insertable<Substance> {
     Value<String?> lastReviewedAt = const Value.absent(),
     String? contentVersion,
     int? isTestData,
+    Value<String?> substanceGroup = const Value.absent(),
   }) => Substance(
     substanceId: substanceId ?? this.substanceId,
     canonicalName: canonicalName ?? this.canonicalName,
@@ -8362,6 +8400,9 @@ class Substance extends DataClass implements Insertable<Substance> {
         : this.lastReviewedAt,
     contentVersion: contentVersion ?? this.contentVersion,
     isTestData: isTestData ?? this.isTestData,
+    substanceGroup: substanceGroup.present
+        ? substanceGroup.value
+        : this.substanceGroup,
   );
   Substance copyWithCompanion(SubstancesCompanion data) {
     return Substance(
@@ -8392,6 +8433,9 @@ class Substance extends DataClass implements Insertable<Substance> {
       isTestData: data.isTestData.present
           ? data.isTestData.value
           : this.isTestData,
+      substanceGroup: data.substanceGroup.present
+          ? data.substanceGroup.value
+          : this.substanceGroup,
     );
   }
 
@@ -8406,7 +8450,8 @@ class Substance extends DataClass implements Insertable<Substance> {
           ..write('reviewStatus: $reviewStatus, ')
           ..write('lastReviewedAt: $lastReviewedAt, ')
           ..write('contentVersion: $contentVersion, ')
-          ..write('isTestData: $isTestData')
+          ..write('isTestData: $isTestData, ')
+          ..write('substanceGroup: $substanceGroup')
           ..write(')'))
         .toString();
   }
@@ -8422,6 +8467,7 @@ class Substance extends DataClass implements Insertable<Substance> {
     lastReviewedAt,
     contentVersion,
     isTestData,
+    substanceGroup,
   );
   @override
   bool operator ==(Object other) =>
@@ -8435,7 +8481,8 @@ class Substance extends DataClass implements Insertable<Substance> {
           other.reviewStatus == this.reviewStatus &&
           other.lastReviewedAt == this.lastReviewedAt &&
           other.contentVersion == this.contentVersion &&
-          other.isTestData == this.isTestData);
+          other.isTestData == this.isTestData &&
+          other.substanceGroup == this.substanceGroup);
 }
 
 class SubstancesCompanion extends UpdateCompanion<Substance> {
@@ -8448,6 +8495,7 @@ class SubstancesCompanion extends UpdateCompanion<Substance> {
   final Value<String?> lastReviewedAt;
   final Value<String> contentVersion;
   final Value<int> isTestData;
+  final Value<String?> substanceGroup;
   const SubstancesCompanion({
     this.substanceId = const Value.absent(),
     this.canonicalName = const Value.absent(),
@@ -8458,6 +8506,7 @@ class SubstancesCompanion extends UpdateCompanion<Substance> {
     this.lastReviewedAt = const Value.absent(),
     this.contentVersion = const Value.absent(),
     this.isTestData = const Value.absent(),
+    this.substanceGroup = const Value.absent(),
   });
   SubstancesCompanion.insert({
     required String substanceId,
@@ -8469,6 +8518,7 @@ class SubstancesCompanion extends UpdateCompanion<Substance> {
     this.lastReviewedAt = const Value.absent(),
     required String contentVersion,
     this.isTestData = const Value.absent(),
+    this.substanceGroup = const Value.absent(),
   }) : substanceId = Value(substanceId),
        canonicalName = Value(canonicalName),
        entityKind = Value(entityKind),
@@ -8485,6 +8535,7 @@ class SubstancesCompanion extends UpdateCompanion<Substance> {
     Expression<String>? lastReviewedAt,
     Expression<String>? contentVersion,
     Expression<int>? isTestData,
+    Expression<String>? substanceGroup,
   }) {
     return RawValuesInsertable({
       if (substanceId != null) 'substance_id': substanceId,
@@ -8496,6 +8547,7 @@ class SubstancesCompanion extends UpdateCompanion<Substance> {
       if (lastReviewedAt != null) 'last_reviewed_at': lastReviewedAt,
       if (contentVersion != null) 'content_version': contentVersion,
       if (isTestData != null) 'is_test_data': isTestData,
+      if (substanceGroup != null) 'substance_group': substanceGroup,
     });
   }
 
@@ -8509,6 +8561,7 @@ class SubstancesCompanion extends UpdateCompanion<Substance> {
     Value<String?>? lastReviewedAt,
     Value<String>? contentVersion,
     Value<int>? isTestData,
+    Value<String?>? substanceGroup,
   }) {
     return SubstancesCompanion(
       substanceId: substanceId ?? this.substanceId,
@@ -8520,6 +8573,7 @@ class SubstancesCompanion extends UpdateCompanion<Substance> {
       lastReviewedAt: lastReviewedAt ?? this.lastReviewedAt,
       contentVersion: contentVersion ?? this.contentVersion,
       isTestData: isTestData ?? this.isTestData,
+      substanceGroup: substanceGroup ?? this.substanceGroup,
     );
   }
 
@@ -8553,6 +8607,9 @@ class SubstancesCompanion extends UpdateCompanion<Substance> {
     if (isTestData.present) {
       map['is_test_data'] = Variable<int>(isTestData.value);
     }
+    if (substanceGroup.present) {
+      map['substance_group'] = Variable<String>(substanceGroup.value);
+    }
     return map;
   }
 
@@ -8567,7 +8624,8 @@ class SubstancesCompanion extends UpdateCompanion<Substance> {
           ..write('reviewStatus: $reviewStatus, ')
           ..write('lastReviewedAt: $lastReviewedAt, ')
           ..write('contentVersion: $contentVersion, ')
-          ..write('isTestData: $isTestData')
+          ..write('isTestData: $isTestData, ')
+          ..write('substanceGroup: $substanceGroup')
           ..write(')'))
         .toString();
   }
@@ -10829,6 +10887,2598 @@ class SearchFtsTriCompanion extends UpdateCompanion<SearchFtsTriData> {
   }
 }
 
+class ResearchRecords extends Table
+    with TableInfo<ResearchRecords, ResearchRecord> {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  ResearchRecords(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _researchIdMeta = const VerificationMeta(
+    'researchId',
+  );
+  late final GeneratedColumn<String> researchId = GeneratedColumn<String>(
+    'research_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL PRIMARY KEY',
+  );
+  static const VerificationMeta _kindMeta = const VerificationMeta('kind');
+  late final GeneratedColumn<String> kind = GeneratedColumn<String>(
+    'kind',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (kind IN (\'journal_article\', \'review\', \'systematic_review\', \'meta_analysis\', \'case_report\', \'conference_abstract\', \'conference_paper\', \'dissertation\', \'thesis\', \'official_report\', \'standard\'))',
+  );
+  static const VerificationMeta _titleMeta = const VerificationMeta('title');
+  late final GeneratedColumn<String> title = GeneratedColumn<String>(
+    'title',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _authorsJsonMeta = const VerificationMeta(
+    'authorsJson',
+  );
+  late final GeneratedColumn<String> authorsJson = GeneratedColumn<String>(
+    'authors_json',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: 'NOT NULL DEFAULT \'[]\'',
+    defaultValue: const CustomExpression('\'[]\''),
+  );
+  static const VerificationMeta _organizationMeta = const VerificationMeta(
+    'organization',
+  );
+  late final GeneratedColumn<String> organization = GeneratedColumn<String>(
+    'organization',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _containerMeta = const VerificationMeta(
+    'container',
+  );
+  late final GeneratedColumn<String> container = GeneratedColumn<String>(
+    'container',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _pubYearMeta = const VerificationMeta(
+    'pubYear',
+  );
+  late final GeneratedColumn<String> pubYear = GeneratedColumn<String>(
+    'pub_year',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _doiMeta = const VerificationMeta('doi');
+  late final GeneratedColumn<String> doi = GeneratedColumn<String>(
+    'doi',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _pmidMeta = const VerificationMeta('pmid');
+  late final GeneratedColumn<String> pmid = GeneratedColumn<String>(
+    'pmid',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _pmcidMeta = const VerificationMeta('pmcid');
+  late final GeneratedColumn<String> pmcid = GeneratedColumn<String>(
+    'pmcid',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _handleMeta = const VerificationMeta('handle');
+  late final GeneratedColumn<String> handle = GeneratedColumn<String>(
+    'handle',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _urlMeta = const VerificationMeta('url');
+  late final GeneratedColumn<String> url = GeneratedColumn<String>(
+    'url',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _degreeMeta = const VerificationMeta('degree');
+  late final GeneratedColumn<String> degree = GeneratedColumn<String>(
+    'degree',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _openAccessMeta = const VerificationMeta(
+    'openAccess',
+  );
+  late final GeneratedColumn<String> openAccess = GeneratedColumn<String>(
+    'open_access',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _sourceApiMeta = const VerificationMeta(
+    'sourceApi',
+  );
+  late final GeneratedColumn<String> sourceApi = GeneratedColumn<String>(
+    'source_api',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _accessedDateMeta = const VerificationMeta(
+    'accessedDate',
+  );
+  late final GeneratedColumn<String> accessedDate = GeneratedColumn<String>(
+    'accessed_date',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _evidenceLevelMeta = const VerificationMeta(
+    'evidenceLevel',
+  );
+  late final GeneratedColumn<String> evidenceLevel = GeneratedColumn<String>(
+    'evidence_level',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _peerReviewedMeta = const VerificationMeta(
+    'peerReviewed',
+  );
+  late final GeneratedColumn<int> peerReviewed = GeneratedColumn<int>(
+    'peer_reviewed',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _reviewStatusMeta = const VerificationMeta(
+    'reviewStatus',
+  );
+  late final GeneratedColumn<String> reviewStatus = GeneratedColumn<String>(
+    'review_status',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (review_status IN (\'DRAFT\', \'VERIFIED\', \'REVIEWED\', \'NEEDS_REVIEW\', \'OUTDATED\', \'REJECTED\'))',
+  );
+  static const VerificationMeta _isTestDataMeta = const VerificationMeta(
+    'isTestData',
+  );
+  late final GeneratedColumn<int> isTestData = GeneratedColumn<int>(
+    'is_test_data',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+    $customConstraints: 'NOT NULL DEFAULT 0',
+    defaultValue: const CustomExpression('0'),
+  );
+  @override
+  List<GeneratedColumn> get $columns => [
+    researchId,
+    kind,
+    title,
+    authorsJson,
+    organization,
+    container,
+    pubYear,
+    doi,
+    pmid,
+    pmcid,
+    handle,
+    url,
+    degree,
+    openAccess,
+    sourceApi,
+    accessedDate,
+    evidenceLevel,
+    peerReviewed,
+    reviewStatus,
+    isTestData,
+  ];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'research_records';
+  @override
+  VerificationContext validateIntegrity(
+    Insertable<ResearchRecord> instance, {
+    bool isInserting = false,
+  }) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('research_id')) {
+      context.handle(
+        _researchIdMeta,
+        researchId.isAcceptableOrUnknown(data['research_id']!, _researchIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_researchIdMeta);
+    }
+    if (data.containsKey('kind')) {
+      context.handle(
+        _kindMeta,
+        kind.isAcceptableOrUnknown(data['kind']!, _kindMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_kindMeta);
+    }
+    if (data.containsKey('title')) {
+      context.handle(
+        _titleMeta,
+        title.isAcceptableOrUnknown(data['title']!, _titleMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_titleMeta);
+    }
+    if (data.containsKey('authors_json')) {
+      context.handle(
+        _authorsJsonMeta,
+        authorsJson.isAcceptableOrUnknown(
+          data['authors_json']!,
+          _authorsJsonMeta,
+        ),
+      );
+    }
+    if (data.containsKey('organization')) {
+      context.handle(
+        _organizationMeta,
+        organization.isAcceptableOrUnknown(
+          data['organization']!,
+          _organizationMeta,
+        ),
+      );
+    }
+    if (data.containsKey('container')) {
+      context.handle(
+        _containerMeta,
+        container.isAcceptableOrUnknown(data['container']!, _containerMeta),
+      );
+    }
+    if (data.containsKey('pub_year')) {
+      context.handle(
+        _pubYearMeta,
+        pubYear.isAcceptableOrUnknown(data['pub_year']!, _pubYearMeta),
+      );
+    }
+    if (data.containsKey('doi')) {
+      context.handle(
+        _doiMeta,
+        doi.isAcceptableOrUnknown(data['doi']!, _doiMeta),
+      );
+    }
+    if (data.containsKey('pmid')) {
+      context.handle(
+        _pmidMeta,
+        pmid.isAcceptableOrUnknown(data['pmid']!, _pmidMeta),
+      );
+    }
+    if (data.containsKey('pmcid')) {
+      context.handle(
+        _pmcidMeta,
+        pmcid.isAcceptableOrUnknown(data['pmcid']!, _pmcidMeta),
+      );
+    }
+    if (data.containsKey('handle')) {
+      context.handle(
+        _handleMeta,
+        handle.isAcceptableOrUnknown(data['handle']!, _handleMeta),
+      );
+    }
+    if (data.containsKey('url')) {
+      context.handle(
+        _urlMeta,
+        url.isAcceptableOrUnknown(data['url']!, _urlMeta),
+      );
+    }
+    if (data.containsKey('degree')) {
+      context.handle(
+        _degreeMeta,
+        degree.isAcceptableOrUnknown(data['degree']!, _degreeMeta),
+      );
+    }
+    if (data.containsKey('open_access')) {
+      context.handle(
+        _openAccessMeta,
+        openAccess.isAcceptableOrUnknown(data['open_access']!, _openAccessMeta),
+      );
+    }
+    if (data.containsKey('source_api')) {
+      context.handle(
+        _sourceApiMeta,
+        sourceApi.isAcceptableOrUnknown(data['source_api']!, _sourceApiMeta),
+      );
+    }
+    if (data.containsKey('accessed_date')) {
+      context.handle(
+        _accessedDateMeta,
+        accessedDate.isAcceptableOrUnknown(
+          data['accessed_date']!,
+          _accessedDateMeta,
+        ),
+      );
+    }
+    if (data.containsKey('evidence_level')) {
+      context.handle(
+        _evidenceLevelMeta,
+        evidenceLevel.isAcceptableOrUnknown(
+          data['evidence_level']!,
+          _evidenceLevelMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_evidenceLevelMeta);
+    }
+    if (data.containsKey('peer_reviewed')) {
+      context.handle(
+        _peerReviewedMeta,
+        peerReviewed.isAcceptableOrUnknown(
+          data['peer_reviewed']!,
+          _peerReviewedMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_peerReviewedMeta);
+    }
+    if (data.containsKey('review_status')) {
+      context.handle(
+        _reviewStatusMeta,
+        reviewStatus.isAcceptableOrUnknown(
+          data['review_status']!,
+          _reviewStatusMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_reviewStatusMeta);
+    }
+    if (data.containsKey('is_test_data')) {
+      context.handle(
+        _isTestDataMeta,
+        isTestData.isAcceptableOrUnknown(
+          data['is_test_data']!,
+          _isTestDataMeta,
+        ),
+      );
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {researchId};
+  @override
+  ResearchRecord map(Map<String, dynamic> data, {String? tablePrefix}) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return ResearchRecord(
+      researchId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}research_id'],
+      )!,
+      kind: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}kind'],
+      )!,
+      title: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}title'],
+      )!,
+      authorsJson: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}authors_json'],
+      )!,
+      organization: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}organization'],
+      ),
+      container: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}container'],
+      ),
+      pubYear: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}pub_year'],
+      ),
+      doi: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}doi'],
+      ),
+      pmid: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}pmid'],
+      ),
+      pmcid: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}pmcid'],
+      ),
+      handle: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}handle'],
+      ),
+      url: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}url'],
+      ),
+      degree: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}degree'],
+      ),
+      openAccess: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}open_access'],
+      ),
+      sourceApi: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}source_api'],
+      ),
+      accessedDate: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}accessed_date'],
+      ),
+      evidenceLevel: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}evidence_level'],
+      )!,
+      peerReviewed: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}peer_reviewed'],
+      )!,
+      reviewStatus: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}review_status'],
+      )!,
+      isTestData: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}is_test_data'],
+      )!,
+    );
+  }
+
+  @override
+  ResearchRecords createAlias(String alias) {
+    return ResearchRecords(attachedDatabase, alias);
+  }
+
+  @override
+  bool get withoutRowId => true;
+  @override
+  List<String> get customConstraints => const [
+    'CHECK(doi IS NOT NULL OR pmid IS NOT NULL OR handle IS NOT NULL OR url IS NOT NULL)',
+  ];
+  @override
+  bool get dontWriteConstraints => true;
+}
+
+class ResearchRecord extends DataClass implements Insertable<ResearchRecord> {
+  final String researchId;
+  final String kind;
+  final String title;
+  final String authorsJson;
+  final String? organization;
+  final String? container;
+  final String? pubYear;
+  final String? doi;
+  final String? pmid;
+  final String? pmcid;
+  final String? handle;
+  final String? url;
+  final String? degree;
+  final String? openAccess;
+  final String? sourceApi;
+  final String? accessedDate;
+  final String evidenceLevel;
+  final int peerReviewed;
+  final String reviewStatus;
+  final int isTestData;
+  const ResearchRecord({
+    required this.researchId,
+    required this.kind,
+    required this.title,
+    required this.authorsJson,
+    this.organization,
+    this.container,
+    this.pubYear,
+    this.doi,
+    this.pmid,
+    this.pmcid,
+    this.handle,
+    this.url,
+    this.degree,
+    this.openAccess,
+    this.sourceApi,
+    this.accessedDate,
+    required this.evidenceLevel,
+    required this.peerReviewed,
+    required this.reviewStatus,
+    required this.isTestData,
+  });
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['research_id'] = Variable<String>(researchId);
+    map['kind'] = Variable<String>(kind);
+    map['title'] = Variable<String>(title);
+    map['authors_json'] = Variable<String>(authorsJson);
+    if (!nullToAbsent || organization != null) {
+      map['organization'] = Variable<String>(organization);
+    }
+    if (!nullToAbsent || container != null) {
+      map['container'] = Variable<String>(container);
+    }
+    if (!nullToAbsent || pubYear != null) {
+      map['pub_year'] = Variable<String>(pubYear);
+    }
+    if (!nullToAbsent || doi != null) {
+      map['doi'] = Variable<String>(doi);
+    }
+    if (!nullToAbsent || pmid != null) {
+      map['pmid'] = Variable<String>(pmid);
+    }
+    if (!nullToAbsent || pmcid != null) {
+      map['pmcid'] = Variable<String>(pmcid);
+    }
+    if (!nullToAbsent || handle != null) {
+      map['handle'] = Variable<String>(handle);
+    }
+    if (!nullToAbsent || url != null) {
+      map['url'] = Variable<String>(url);
+    }
+    if (!nullToAbsent || degree != null) {
+      map['degree'] = Variable<String>(degree);
+    }
+    if (!nullToAbsent || openAccess != null) {
+      map['open_access'] = Variable<String>(openAccess);
+    }
+    if (!nullToAbsent || sourceApi != null) {
+      map['source_api'] = Variable<String>(sourceApi);
+    }
+    if (!nullToAbsent || accessedDate != null) {
+      map['accessed_date'] = Variable<String>(accessedDate);
+    }
+    map['evidence_level'] = Variable<String>(evidenceLevel);
+    map['peer_reviewed'] = Variable<int>(peerReviewed);
+    map['review_status'] = Variable<String>(reviewStatus);
+    map['is_test_data'] = Variable<int>(isTestData);
+    return map;
+  }
+
+  ResearchRecordsCompanion toCompanion(bool nullToAbsent) {
+    return ResearchRecordsCompanion(
+      researchId: Value(researchId),
+      kind: Value(kind),
+      title: Value(title),
+      authorsJson: Value(authorsJson),
+      organization: organization == null && nullToAbsent
+          ? const Value.absent()
+          : Value(organization),
+      container: container == null && nullToAbsent
+          ? const Value.absent()
+          : Value(container),
+      pubYear: pubYear == null && nullToAbsent
+          ? const Value.absent()
+          : Value(pubYear),
+      doi: doi == null && nullToAbsent ? const Value.absent() : Value(doi),
+      pmid: pmid == null && nullToAbsent ? const Value.absent() : Value(pmid),
+      pmcid: pmcid == null && nullToAbsent
+          ? const Value.absent()
+          : Value(pmcid),
+      handle: handle == null && nullToAbsent
+          ? const Value.absent()
+          : Value(handle),
+      url: url == null && nullToAbsent ? const Value.absent() : Value(url),
+      degree: degree == null && nullToAbsent
+          ? const Value.absent()
+          : Value(degree),
+      openAccess: openAccess == null && nullToAbsent
+          ? const Value.absent()
+          : Value(openAccess),
+      sourceApi: sourceApi == null && nullToAbsent
+          ? const Value.absent()
+          : Value(sourceApi),
+      accessedDate: accessedDate == null && nullToAbsent
+          ? const Value.absent()
+          : Value(accessedDate),
+      evidenceLevel: Value(evidenceLevel),
+      peerReviewed: Value(peerReviewed),
+      reviewStatus: Value(reviewStatus),
+      isTestData: Value(isTestData),
+    );
+  }
+
+  factory ResearchRecord.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return ResearchRecord(
+      researchId: serializer.fromJson<String>(json['research_id']),
+      kind: serializer.fromJson<String>(json['kind']),
+      title: serializer.fromJson<String>(json['title']),
+      authorsJson: serializer.fromJson<String>(json['authors_json']),
+      organization: serializer.fromJson<String?>(json['organization']),
+      container: serializer.fromJson<String?>(json['container']),
+      pubYear: serializer.fromJson<String?>(json['pub_year']),
+      doi: serializer.fromJson<String?>(json['doi']),
+      pmid: serializer.fromJson<String?>(json['pmid']),
+      pmcid: serializer.fromJson<String?>(json['pmcid']),
+      handle: serializer.fromJson<String?>(json['handle']),
+      url: serializer.fromJson<String?>(json['url']),
+      degree: serializer.fromJson<String?>(json['degree']),
+      openAccess: serializer.fromJson<String?>(json['open_access']),
+      sourceApi: serializer.fromJson<String?>(json['source_api']),
+      accessedDate: serializer.fromJson<String?>(json['accessed_date']),
+      evidenceLevel: serializer.fromJson<String>(json['evidence_level']),
+      peerReviewed: serializer.fromJson<int>(json['peer_reviewed']),
+      reviewStatus: serializer.fromJson<String>(json['review_status']),
+      isTestData: serializer.fromJson<int>(json['is_test_data']),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'research_id': serializer.toJson<String>(researchId),
+      'kind': serializer.toJson<String>(kind),
+      'title': serializer.toJson<String>(title),
+      'authors_json': serializer.toJson<String>(authorsJson),
+      'organization': serializer.toJson<String?>(organization),
+      'container': serializer.toJson<String?>(container),
+      'pub_year': serializer.toJson<String?>(pubYear),
+      'doi': serializer.toJson<String?>(doi),
+      'pmid': serializer.toJson<String?>(pmid),
+      'pmcid': serializer.toJson<String?>(pmcid),
+      'handle': serializer.toJson<String?>(handle),
+      'url': serializer.toJson<String?>(url),
+      'degree': serializer.toJson<String?>(degree),
+      'open_access': serializer.toJson<String?>(openAccess),
+      'source_api': serializer.toJson<String?>(sourceApi),
+      'accessed_date': serializer.toJson<String?>(accessedDate),
+      'evidence_level': serializer.toJson<String>(evidenceLevel),
+      'peer_reviewed': serializer.toJson<int>(peerReviewed),
+      'review_status': serializer.toJson<String>(reviewStatus),
+      'is_test_data': serializer.toJson<int>(isTestData),
+    };
+  }
+
+  ResearchRecord copyWith({
+    String? researchId,
+    String? kind,
+    String? title,
+    String? authorsJson,
+    Value<String?> organization = const Value.absent(),
+    Value<String?> container = const Value.absent(),
+    Value<String?> pubYear = const Value.absent(),
+    Value<String?> doi = const Value.absent(),
+    Value<String?> pmid = const Value.absent(),
+    Value<String?> pmcid = const Value.absent(),
+    Value<String?> handle = const Value.absent(),
+    Value<String?> url = const Value.absent(),
+    Value<String?> degree = const Value.absent(),
+    Value<String?> openAccess = const Value.absent(),
+    Value<String?> sourceApi = const Value.absent(),
+    Value<String?> accessedDate = const Value.absent(),
+    String? evidenceLevel,
+    int? peerReviewed,
+    String? reviewStatus,
+    int? isTestData,
+  }) => ResearchRecord(
+    researchId: researchId ?? this.researchId,
+    kind: kind ?? this.kind,
+    title: title ?? this.title,
+    authorsJson: authorsJson ?? this.authorsJson,
+    organization: organization.present ? organization.value : this.organization,
+    container: container.present ? container.value : this.container,
+    pubYear: pubYear.present ? pubYear.value : this.pubYear,
+    doi: doi.present ? doi.value : this.doi,
+    pmid: pmid.present ? pmid.value : this.pmid,
+    pmcid: pmcid.present ? pmcid.value : this.pmcid,
+    handle: handle.present ? handle.value : this.handle,
+    url: url.present ? url.value : this.url,
+    degree: degree.present ? degree.value : this.degree,
+    openAccess: openAccess.present ? openAccess.value : this.openAccess,
+    sourceApi: sourceApi.present ? sourceApi.value : this.sourceApi,
+    accessedDate: accessedDate.present ? accessedDate.value : this.accessedDate,
+    evidenceLevel: evidenceLevel ?? this.evidenceLevel,
+    peerReviewed: peerReviewed ?? this.peerReviewed,
+    reviewStatus: reviewStatus ?? this.reviewStatus,
+    isTestData: isTestData ?? this.isTestData,
+  );
+  ResearchRecord copyWithCompanion(ResearchRecordsCompanion data) {
+    return ResearchRecord(
+      researchId: data.researchId.present
+          ? data.researchId.value
+          : this.researchId,
+      kind: data.kind.present ? data.kind.value : this.kind,
+      title: data.title.present ? data.title.value : this.title,
+      authorsJson: data.authorsJson.present
+          ? data.authorsJson.value
+          : this.authorsJson,
+      organization: data.organization.present
+          ? data.organization.value
+          : this.organization,
+      container: data.container.present ? data.container.value : this.container,
+      pubYear: data.pubYear.present ? data.pubYear.value : this.pubYear,
+      doi: data.doi.present ? data.doi.value : this.doi,
+      pmid: data.pmid.present ? data.pmid.value : this.pmid,
+      pmcid: data.pmcid.present ? data.pmcid.value : this.pmcid,
+      handle: data.handle.present ? data.handle.value : this.handle,
+      url: data.url.present ? data.url.value : this.url,
+      degree: data.degree.present ? data.degree.value : this.degree,
+      openAccess: data.openAccess.present
+          ? data.openAccess.value
+          : this.openAccess,
+      sourceApi: data.sourceApi.present ? data.sourceApi.value : this.sourceApi,
+      accessedDate: data.accessedDate.present
+          ? data.accessedDate.value
+          : this.accessedDate,
+      evidenceLevel: data.evidenceLevel.present
+          ? data.evidenceLevel.value
+          : this.evidenceLevel,
+      peerReviewed: data.peerReviewed.present
+          ? data.peerReviewed.value
+          : this.peerReviewed,
+      reviewStatus: data.reviewStatus.present
+          ? data.reviewStatus.value
+          : this.reviewStatus,
+      isTestData: data.isTestData.present
+          ? data.isTestData.value
+          : this.isTestData,
+    );
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('ResearchRecord(')
+          ..write('researchId: $researchId, ')
+          ..write('kind: $kind, ')
+          ..write('title: $title, ')
+          ..write('authorsJson: $authorsJson, ')
+          ..write('organization: $organization, ')
+          ..write('container: $container, ')
+          ..write('pubYear: $pubYear, ')
+          ..write('doi: $doi, ')
+          ..write('pmid: $pmid, ')
+          ..write('pmcid: $pmcid, ')
+          ..write('handle: $handle, ')
+          ..write('url: $url, ')
+          ..write('degree: $degree, ')
+          ..write('openAccess: $openAccess, ')
+          ..write('sourceApi: $sourceApi, ')
+          ..write('accessedDate: $accessedDate, ')
+          ..write('evidenceLevel: $evidenceLevel, ')
+          ..write('peerReviewed: $peerReviewed, ')
+          ..write('reviewStatus: $reviewStatus, ')
+          ..write('isTestData: $isTestData')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode => Object.hash(
+    researchId,
+    kind,
+    title,
+    authorsJson,
+    organization,
+    container,
+    pubYear,
+    doi,
+    pmid,
+    pmcid,
+    handle,
+    url,
+    degree,
+    openAccess,
+    sourceApi,
+    accessedDate,
+    evidenceLevel,
+    peerReviewed,
+    reviewStatus,
+    isTestData,
+  );
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is ResearchRecord &&
+          other.researchId == this.researchId &&
+          other.kind == this.kind &&
+          other.title == this.title &&
+          other.authorsJson == this.authorsJson &&
+          other.organization == this.organization &&
+          other.container == this.container &&
+          other.pubYear == this.pubYear &&
+          other.doi == this.doi &&
+          other.pmid == this.pmid &&
+          other.pmcid == this.pmcid &&
+          other.handle == this.handle &&
+          other.url == this.url &&
+          other.degree == this.degree &&
+          other.openAccess == this.openAccess &&
+          other.sourceApi == this.sourceApi &&
+          other.accessedDate == this.accessedDate &&
+          other.evidenceLevel == this.evidenceLevel &&
+          other.peerReviewed == this.peerReviewed &&
+          other.reviewStatus == this.reviewStatus &&
+          other.isTestData == this.isTestData);
+}
+
+class ResearchRecordsCompanion extends UpdateCompanion<ResearchRecord> {
+  final Value<String> researchId;
+  final Value<String> kind;
+  final Value<String> title;
+  final Value<String> authorsJson;
+  final Value<String?> organization;
+  final Value<String?> container;
+  final Value<String?> pubYear;
+  final Value<String?> doi;
+  final Value<String?> pmid;
+  final Value<String?> pmcid;
+  final Value<String?> handle;
+  final Value<String?> url;
+  final Value<String?> degree;
+  final Value<String?> openAccess;
+  final Value<String?> sourceApi;
+  final Value<String?> accessedDate;
+  final Value<String> evidenceLevel;
+  final Value<int> peerReviewed;
+  final Value<String> reviewStatus;
+  final Value<int> isTestData;
+  const ResearchRecordsCompanion({
+    this.researchId = const Value.absent(),
+    this.kind = const Value.absent(),
+    this.title = const Value.absent(),
+    this.authorsJson = const Value.absent(),
+    this.organization = const Value.absent(),
+    this.container = const Value.absent(),
+    this.pubYear = const Value.absent(),
+    this.doi = const Value.absent(),
+    this.pmid = const Value.absent(),
+    this.pmcid = const Value.absent(),
+    this.handle = const Value.absent(),
+    this.url = const Value.absent(),
+    this.degree = const Value.absent(),
+    this.openAccess = const Value.absent(),
+    this.sourceApi = const Value.absent(),
+    this.accessedDate = const Value.absent(),
+    this.evidenceLevel = const Value.absent(),
+    this.peerReviewed = const Value.absent(),
+    this.reviewStatus = const Value.absent(),
+    this.isTestData = const Value.absent(),
+  });
+  ResearchRecordsCompanion.insert({
+    required String researchId,
+    required String kind,
+    required String title,
+    this.authorsJson = const Value.absent(),
+    this.organization = const Value.absent(),
+    this.container = const Value.absent(),
+    this.pubYear = const Value.absent(),
+    this.doi = const Value.absent(),
+    this.pmid = const Value.absent(),
+    this.pmcid = const Value.absent(),
+    this.handle = const Value.absent(),
+    this.url = const Value.absent(),
+    this.degree = const Value.absent(),
+    this.openAccess = const Value.absent(),
+    this.sourceApi = const Value.absent(),
+    this.accessedDate = const Value.absent(),
+    required String evidenceLevel,
+    required int peerReviewed,
+    required String reviewStatus,
+    this.isTestData = const Value.absent(),
+  }) : researchId = Value(researchId),
+       kind = Value(kind),
+       title = Value(title),
+       evidenceLevel = Value(evidenceLevel),
+       peerReviewed = Value(peerReviewed),
+       reviewStatus = Value(reviewStatus);
+  static Insertable<ResearchRecord> custom({
+    Expression<String>? researchId,
+    Expression<String>? kind,
+    Expression<String>? title,
+    Expression<String>? authorsJson,
+    Expression<String>? organization,
+    Expression<String>? container,
+    Expression<String>? pubYear,
+    Expression<String>? doi,
+    Expression<String>? pmid,
+    Expression<String>? pmcid,
+    Expression<String>? handle,
+    Expression<String>? url,
+    Expression<String>? degree,
+    Expression<String>? openAccess,
+    Expression<String>? sourceApi,
+    Expression<String>? accessedDate,
+    Expression<String>? evidenceLevel,
+    Expression<int>? peerReviewed,
+    Expression<String>? reviewStatus,
+    Expression<int>? isTestData,
+  }) {
+    return RawValuesInsertable({
+      if (researchId != null) 'research_id': researchId,
+      if (kind != null) 'kind': kind,
+      if (title != null) 'title': title,
+      if (authorsJson != null) 'authors_json': authorsJson,
+      if (organization != null) 'organization': organization,
+      if (container != null) 'container': container,
+      if (pubYear != null) 'pub_year': pubYear,
+      if (doi != null) 'doi': doi,
+      if (pmid != null) 'pmid': pmid,
+      if (pmcid != null) 'pmcid': pmcid,
+      if (handle != null) 'handle': handle,
+      if (url != null) 'url': url,
+      if (degree != null) 'degree': degree,
+      if (openAccess != null) 'open_access': openAccess,
+      if (sourceApi != null) 'source_api': sourceApi,
+      if (accessedDate != null) 'accessed_date': accessedDate,
+      if (evidenceLevel != null) 'evidence_level': evidenceLevel,
+      if (peerReviewed != null) 'peer_reviewed': peerReviewed,
+      if (reviewStatus != null) 'review_status': reviewStatus,
+      if (isTestData != null) 'is_test_data': isTestData,
+    });
+  }
+
+  ResearchRecordsCompanion copyWith({
+    Value<String>? researchId,
+    Value<String>? kind,
+    Value<String>? title,
+    Value<String>? authorsJson,
+    Value<String?>? organization,
+    Value<String?>? container,
+    Value<String?>? pubYear,
+    Value<String?>? doi,
+    Value<String?>? pmid,
+    Value<String?>? pmcid,
+    Value<String?>? handle,
+    Value<String?>? url,
+    Value<String?>? degree,
+    Value<String?>? openAccess,
+    Value<String?>? sourceApi,
+    Value<String?>? accessedDate,
+    Value<String>? evidenceLevel,
+    Value<int>? peerReviewed,
+    Value<String>? reviewStatus,
+    Value<int>? isTestData,
+  }) {
+    return ResearchRecordsCompanion(
+      researchId: researchId ?? this.researchId,
+      kind: kind ?? this.kind,
+      title: title ?? this.title,
+      authorsJson: authorsJson ?? this.authorsJson,
+      organization: organization ?? this.organization,
+      container: container ?? this.container,
+      pubYear: pubYear ?? this.pubYear,
+      doi: doi ?? this.doi,
+      pmid: pmid ?? this.pmid,
+      pmcid: pmcid ?? this.pmcid,
+      handle: handle ?? this.handle,
+      url: url ?? this.url,
+      degree: degree ?? this.degree,
+      openAccess: openAccess ?? this.openAccess,
+      sourceApi: sourceApi ?? this.sourceApi,
+      accessedDate: accessedDate ?? this.accessedDate,
+      evidenceLevel: evidenceLevel ?? this.evidenceLevel,
+      peerReviewed: peerReviewed ?? this.peerReviewed,
+      reviewStatus: reviewStatus ?? this.reviewStatus,
+      isTestData: isTestData ?? this.isTestData,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (researchId.present) {
+      map['research_id'] = Variable<String>(researchId.value);
+    }
+    if (kind.present) {
+      map['kind'] = Variable<String>(kind.value);
+    }
+    if (title.present) {
+      map['title'] = Variable<String>(title.value);
+    }
+    if (authorsJson.present) {
+      map['authors_json'] = Variable<String>(authorsJson.value);
+    }
+    if (organization.present) {
+      map['organization'] = Variable<String>(organization.value);
+    }
+    if (container.present) {
+      map['container'] = Variable<String>(container.value);
+    }
+    if (pubYear.present) {
+      map['pub_year'] = Variable<String>(pubYear.value);
+    }
+    if (doi.present) {
+      map['doi'] = Variable<String>(doi.value);
+    }
+    if (pmid.present) {
+      map['pmid'] = Variable<String>(pmid.value);
+    }
+    if (pmcid.present) {
+      map['pmcid'] = Variable<String>(pmcid.value);
+    }
+    if (handle.present) {
+      map['handle'] = Variable<String>(handle.value);
+    }
+    if (url.present) {
+      map['url'] = Variable<String>(url.value);
+    }
+    if (degree.present) {
+      map['degree'] = Variable<String>(degree.value);
+    }
+    if (openAccess.present) {
+      map['open_access'] = Variable<String>(openAccess.value);
+    }
+    if (sourceApi.present) {
+      map['source_api'] = Variable<String>(sourceApi.value);
+    }
+    if (accessedDate.present) {
+      map['accessed_date'] = Variable<String>(accessedDate.value);
+    }
+    if (evidenceLevel.present) {
+      map['evidence_level'] = Variable<String>(evidenceLevel.value);
+    }
+    if (peerReviewed.present) {
+      map['peer_reviewed'] = Variable<int>(peerReviewed.value);
+    }
+    if (reviewStatus.present) {
+      map['review_status'] = Variable<String>(reviewStatus.value);
+    }
+    if (isTestData.present) {
+      map['is_test_data'] = Variable<int>(isTestData.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('ResearchRecordsCompanion(')
+          ..write('researchId: $researchId, ')
+          ..write('kind: $kind, ')
+          ..write('title: $title, ')
+          ..write('authorsJson: $authorsJson, ')
+          ..write('organization: $organization, ')
+          ..write('container: $container, ')
+          ..write('pubYear: $pubYear, ')
+          ..write('doi: $doi, ')
+          ..write('pmid: $pmid, ')
+          ..write('pmcid: $pmcid, ')
+          ..write('handle: $handle, ')
+          ..write('url: $url, ')
+          ..write('degree: $degree, ')
+          ..write('openAccess: $openAccess, ')
+          ..write('sourceApi: $sourceApi, ')
+          ..write('accessedDate: $accessedDate, ')
+          ..write('evidenceLevel: $evidenceLevel, ')
+          ..write('peerReviewed: $peerReviewed, ')
+          ..write('reviewStatus: $reviewStatus, ')
+          ..write('isTestData: $isTestData')
+          ..write(')'))
+        .toString();
+  }
+}
+
+class EntityLinks extends Table with TableInfo<EntityLinks, EntityLink> {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  EntityLinks(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _fromIdMeta = const VerificationMeta('fromId');
+  late final GeneratedColumn<String> fromId = GeneratedColumn<String>(
+    'from_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _toIdMeta = const VerificationMeta('toId');
+  late final GeneratedColumn<String> toId = GeneratedColumn<String>(
+    'to_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _relationMeta = const VerificationMeta(
+    'relation',
+  );
+  late final GeneratedColumn<String> relation = GeneratedColumn<String>(
+    'relation',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (relation IN (\'analysed_by\', \'metabolism_co_mention\', \'confirmed_by\', \'used_in\', \'research\', \'related_topic\'))',
+  );
+  static const VerificationMeta _basisMeta = const VerificationMeta('basis');
+  late final GeneratedColumn<String> basis = GeneratedColumn<String>(
+    'basis',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (length(basis) > 0)',
+  );
+  @override
+  List<GeneratedColumn> get $columns => [fromId, toId, relation, basis];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'entity_links';
+  @override
+  VerificationContext validateIntegrity(
+    Insertable<EntityLink> instance, {
+    bool isInserting = false,
+  }) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('from_id')) {
+      context.handle(
+        _fromIdMeta,
+        fromId.isAcceptableOrUnknown(data['from_id']!, _fromIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_fromIdMeta);
+    }
+    if (data.containsKey('to_id')) {
+      context.handle(
+        _toIdMeta,
+        toId.isAcceptableOrUnknown(data['to_id']!, _toIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_toIdMeta);
+    }
+    if (data.containsKey('relation')) {
+      context.handle(
+        _relationMeta,
+        relation.isAcceptableOrUnknown(data['relation']!, _relationMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_relationMeta);
+    }
+    if (data.containsKey('basis')) {
+      context.handle(
+        _basisMeta,
+        basis.isAcceptableOrUnknown(data['basis']!, _basisMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_basisMeta);
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {fromId, toId, relation};
+  @override
+  EntityLink map(Map<String, dynamic> data, {String? tablePrefix}) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return EntityLink(
+      fromId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}from_id'],
+      )!,
+      toId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}to_id'],
+      )!,
+      relation: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}relation'],
+      )!,
+      basis: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}basis'],
+      )!,
+    );
+  }
+
+  @override
+  EntityLinks createAlias(String alias) {
+    return EntityLinks(attachedDatabase, alias);
+  }
+
+  @override
+  bool get withoutRowId => true;
+  @override
+  List<String> get customConstraints => const [
+    'PRIMARY KEY(from_id, to_id, relation)',
+  ];
+  @override
+  bool get dontWriteConstraints => true;
+}
+
+class EntityLink extends DataClass implements Insertable<EntityLink> {
+  final String fromId;
+  final String toId;
+  final String relation;
+  final String basis;
+  const EntityLink({
+    required this.fromId,
+    required this.toId,
+    required this.relation,
+    required this.basis,
+  });
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['from_id'] = Variable<String>(fromId);
+    map['to_id'] = Variable<String>(toId);
+    map['relation'] = Variable<String>(relation);
+    map['basis'] = Variable<String>(basis);
+    return map;
+  }
+
+  EntityLinksCompanion toCompanion(bool nullToAbsent) {
+    return EntityLinksCompanion(
+      fromId: Value(fromId),
+      toId: Value(toId),
+      relation: Value(relation),
+      basis: Value(basis),
+    );
+  }
+
+  factory EntityLink.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return EntityLink(
+      fromId: serializer.fromJson<String>(json['from_id']),
+      toId: serializer.fromJson<String>(json['to_id']),
+      relation: serializer.fromJson<String>(json['relation']),
+      basis: serializer.fromJson<String>(json['basis']),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'from_id': serializer.toJson<String>(fromId),
+      'to_id': serializer.toJson<String>(toId),
+      'relation': serializer.toJson<String>(relation),
+      'basis': serializer.toJson<String>(basis),
+    };
+  }
+
+  EntityLink copyWith({
+    String? fromId,
+    String? toId,
+    String? relation,
+    String? basis,
+  }) => EntityLink(
+    fromId: fromId ?? this.fromId,
+    toId: toId ?? this.toId,
+    relation: relation ?? this.relation,
+    basis: basis ?? this.basis,
+  );
+  EntityLink copyWithCompanion(EntityLinksCompanion data) {
+    return EntityLink(
+      fromId: data.fromId.present ? data.fromId.value : this.fromId,
+      toId: data.toId.present ? data.toId.value : this.toId,
+      relation: data.relation.present ? data.relation.value : this.relation,
+      basis: data.basis.present ? data.basis.value : this.basis,
+    );
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('EntityLink(')
+          ..write('fromId: $fromId, ')
+          ..write('toId: $toId, ')
+          ..write('relation: $relation, ')
+          ..write('basis: $basis')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode => Object.hash(fromId, toId, relation, basis);
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is EntityLink &&
+          other.fromId == this.fromId &&
+          other.toId == this.toId &&
+          other.relation == this.relation &&
+          other.basis == this.basis);
+}
+
+class EntityLinksCompanion extends UpdateCompanion<EntityLink> {
+  final Value<String> fromId;
+  final Value<String> toId;
+  final Value<String> relation;
+  final Value<String> basis;
+  const EntityLinksCompanion({
+    this.fromId = const Value.absent(),
+    this.toId = const Value.absent(),
+    this.relation = const Value.absent(),
+    this.basis = const Value.absent(),
+  });
+  EntityLinksCompanion.insert({
+    required String fromId,
+    required String toId,
+    required String relation,
+    required String basis,
+  }) : fromId = Value(fromId),
+       toId = Value(toId),
+       relation = Value(relation),
+       basis = Value(basis);
+  static Insertable<EntityLink> custom({
+    Expression<String>? fromId,
+    Expression<String>? toId,
+    Expression<String>? relation,
+    Expression<String>? basis,
+  }) {
+    return RawValuesInsertable({
+      if (fromId != null) 'from_id': fromId,
+      if (toId != null) 'to_id': toId,
+      if (relation != null) 'relation': relation,
+      if (basis != null) 'basis': basis,
+    });
+  }
+
+  EntityLinksCompanion copyWith({
+    Value<String>? fromId,
+    Value<String>? toId,
+    Value<String>? relation,
+    Value<String>? basis,
+  }) {
+    return EntityLinksCompanion(
+      fromId: fromId ?? this.fromId,
+      toId: toId ?? this.toId,
+      relation: relation ?? this.relation,
+      basis: basis ?? this.basis,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (fromId.present) {
+      map['from_id'] = Variable<String>(fromId.value);
+    }
+    if (toId.present) {
+      map['to_id'] = Variable<String>(toId.value);
+    }
+    if (relation.present) {
+      map['relation'] = Variable<String>(relation.value);
+    }
+    if (basis.present) {
+      map['basis'] = Variable<String>(basis.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('EntityLinksCompanion(')
+          ..write('fromId: $fromId, ')
+          ..write('toId: $toId, ')
+          ..write('relation: $relation, ')
+          ..write('basis: $basis')
+          ..write(')'))
+        .toString();
+  }
+}
+
+class Images extends Table with TableInfo<Images, Image> {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  Images(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _imageIdMeta = const VerificationMeta(
+    'imageId',
+  );
+  late final GeneratedColumn<String> imageId = GeneratedColumn<String>(
+    'image_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL PRIMARY KEY',
+  );
+  static const VerificationMeta _kindMeta = const VerificationMeta('kind');
+  late final GeneratedColumn<String> kind = GeneratedColumn<String>(
+    'kind',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (kind IN (\'chemical_structure\', \'schematic\', \'chromatogram\', \'mass_spectrum\', \'micrograph\', \'tlc_plate\', \'colour_test\', \'photo\'))',
+  );
+  static const VerificationMeta _entityIdMeta = const VerificationMeta(
+    'entityId',
+  );
+  late final GeneratedColumn<String> entityId = GeneratedColumn<String>(
+    'entity_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _mimeTypeMeta = const VerificationMeta(
+    'mimeType',
+  );
+  late final GeneratedColumn<String> mimeType = GeneratedColumn<String>(
+    'mime_type',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _bytesMeta = const VerificationMeta('bytes');
+  late final GeneratedColumn<Uint8List> bytes = GeneratedColumn<Uint8List>(
+    'bytes',
+    aliasedName,
+    false,
+    type: DriftSqlType.blob,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _widthMeta = const VerificationMeta('width');
+  late final GeneratedColumn<int> width = GeneratedColumn<int>(
+    'width',
+    aliasedName,
+    true,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _heightMeta = const VerificationMeta('height');
+  late final GeneratedColumn<int> height = GeneratedColumn<int>(
+    'height',
+    aliasedName,
+    true,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _sha256Meta = const VerificationMeta('sha256');
+  late final GeneratedColumn<String> sha256 = GeneratedColumn<String>(
+    'sha256',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _titleJsonMeta = const VerificationMeta(
+    'titleJson',
+  );
+  late final GeneratedColumn<String> titleJson = GeneratedColumn<String>(
+    'title_json',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _altJsonMeta = const VerificationMeta(
+    'altJson',
+  );
+  late final GeneratedColumn<String> altJson = GeneratedColumn<String>(
+    'alt_json',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _captionOriginalMeta = const VerificationMeta(
+    'captionOriginal',
+  );
+  late final GeneratedColumn<String> captionOriginal = GeneratedColumn<String>(
+    'caption_original',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _creatorMeta = const VerificationMeta(
+    'creator',
+  );
+  late final GeneratedColumn<String> creator = GeneratedColumn<String>(
+    'creator',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _sourceNameMeta = const VerificationMeta(
+    'sourceName',
+  );
+  late final GeneratedColumn<String> sourceName = GeneratedColumn<String>(
+    'source_name',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _sourceUrlMeta = const VerificationMeta(
+    'sourceUrl',
+  );
+  late final GeneratedColumn<String> sourceUrl = GeneratedColumn<String>(
+    'source_url',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _doiMeta = const VerificationMeta('doi');
+  late final GeneratedColumn<String> doi = GeneratedColumn<String>(
+    'doi',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _licenseMeta = const VerificationMeta(
+    'license',
+  );
+  late final GeneratedColumn<String> license = GeneratedColumn<String>(
+    'license',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _attributionMeta = const VerificationMeta(
+    'attribution',
+  );
+  late final GeneratedColumn<String> attribution = GeneratedColumn<String>(
+    'attribution',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (length(attribution) > 0)',
+  );
+  static const VerificationMeta _isOriginalDiagramMeta = const VerificationMeta(
+    'isOriginalDiagram',
+  );
+  late final GeneratedColumn<int> isOriginalDiagram = GeneratedColumn<int>(
+    'is_original_diagram',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _representsRealDataMeta =
+      const VerificationMeta('representsRealData');
+  late final GeneratedColumn<int> representsRealData = GeneratedColumn<int>(
+    'represents_real_data',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _graphicMeta = const VerificationMeta(
+    'graphic',
+  );
+  late final GeneratedColumn<int> graphic = GeneratedColumn<int>(
+    'graphic',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+    $customConstraints: 'NOT NULL DEFAULT 0 CHECK (graphic = 0)',
+    defaultValue: const CustomExpression('0'),
+  );
+  static const VerificationMeta _accessedDateMeta = const VerificationMeta(
+    'accessedDate',
+  );
+  late final GeneratedColumn<String> accessedDate = GeneratedColumn<String>(
+    'accessed_date',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  @override
+  List<GeneratedColumn> get $columns => [
+    imageId,
+    kind,
+    entityId,
+    mimeType,
+    bytes,
+    width,
+    height,
+    sha256,
+    titleJson,
+    altJson,
+    captionOriginal,
+    creator,
+    sourceName,
+    sourceUrl,
+    doi,
+    license,
+    attribution,
+    isOriginalDiagram,
+    representsRealData,
+    graphic,
+    accessedDate,
+  ];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'images';
+  @override
+  VerificationContext validateIntegrity(
+    Insertable<Image> instance, {
+    bool isInserting = false,
+  }) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('image_id')) {
+      context.handle(
+        _imageIdMeta,
+        imageId.isAcceptableOrUnknown(data['image_id']!, _imageIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_imageIdMeta);
+    }
+    if (data.containsKey('kind')) {
+      context.handle(
+        _kindMeta,
+        kind.isAcceptableOrUnknown(data['kind']!, _kindMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_kindMeta);
+    }
+    if (data.containsKey('entity_id')) {
+      context.handle(
+        _entityIdMeta,
+        entityId.isAcceptableOrUnknown(data['entity_id']!, _entityIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_entityIdMeta);
+    }
+    if (data.containsKey('mime_type')) {
+      context.handle(
+        _mimeTypeMeta,
+        mimeType.isAcceptableOrUnknown(data['mime_type']!, _mimeTypeMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_mimeTypeMeta);
+    }
+    if (data.containsKey('bytes')) {
+      context.handle(
+        _bytesMeta,
+        bytes.isAcceptableOrUnknown(data['bytes']!, _bytesMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_bytesMeta);
+    }
+    if (data.containsKey('width')) {
+      context.handle(
+        _widthMeta,
+        width.isAcceptableOrUnknown(data['width']!, _widthMeta),
+      );
+    }
+    if (data.containsKey('height')) {
+      context.handle(
+        _heightMeta,
+        height.isAcceptableOrUnknown(data['height']!, _heightMeta),
+      );
+    }
+    if (data.containsKey('sha256')) {
+      context.handle(
+        _sha256Meta,
+        sha256.isAcceptableOrUnknown(data['sha256']!, _sha256Meta),
+      );
+    } else if (isInserting) {
+      context.missing(_sha256Meta);
+    }
+    if (data.containsKey('title_json')) {
+      context.handle(
+        _titleJsonMeta,
+        titleJson.isAcceptableOrUnknown(data['title_json']!, _titleJsonMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_titleJsonMeta);
+    }
+    if (data.containsKey('alt_json')) {
+      context.handle(
+        _altJsonMeta,
+        altJson.isAcceptableOrUnknown(data['alt_json']!, _altJsonMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_altJsonMeta);
+    }
+    if (data.containsKey('caption_original')) {
+      context.handle(
+        _captionOriginalMeta,
+        captionOriginal.isAcceptableOrUnknown(
+          data['caption_original']!,
+          _captionOriginalMeta,
+        ),
+      );
+    }
+    if (data.containsKey('creator')) {
+      context.handle(
+        _creatorMeta,
+        creator.isAcceptableOrUnknown(data['creator']!, _creatorMeta),
+      );
+    }
+    if (data.containsKey('source_name')) {
+      context.handle(
+        _sourceNameMeta,
+        sourceName.isAcceptableOrUnknown(data['source_name']!, _sourceNameMeta),
+      );
+    }
+    if (data.containsKey('source_url')) {
+      context.handle(
+        _sourceUrlMeta,
+        sourceUrl.isAcceptableOrUnknown(data['source_url']!, _sourceUrlMeta),
+      );
+    }
+    if (data.containsKey('doi')) {
+      context.handle(
+        _doiMeta,
+        doi.isAcceptableOrUnknown(data['doi']!, _doiMeta),
+      );
+    }
+    if (data.containsKey('license')) {
+      context.handle(
+        _licenseMeta,
+        license.isAcceptableOrUnknown(data['license']!, _licenseMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_licenseMeta);
+    }
+    if (data.containsKey('attribution')) {
+      context.handle(
+        _attributionMeta,
+        attribution.isAcceptableOrUnknown(
+          data['attribution']!,
+          _attributionMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_attributionMeta);
+    }
+    if (data.containsKey('is_original_diagram')) {
+      context.handle(
+        _isOriginalDiagramMeta,
+        isOriginalDiagram.isAcceptableOrUnknown(
+          data['is_original_diagram']!,
+          _isOriginalDiagramMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_isOriginalDiagramMeta);
+    }
+    if (data.containsKey('represents_real_data')) {
+      context.handle(
+        _representsRealDataMeta,
+        representsRealData.isAcceptableOrUnknown(
+          data['represents_real_data']!,
+          _representsRealDataMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_representsRealDataMeta);
+    }
+    if (data.containsKey('graphic')) {
+      context.handle(
+        _graphicMeta,
+        graphic.isAcceptableOrUnknown(data['graphic']!, _graphicMeta),
+      );
+    }
+    if (data.containsKey('accessed_date')) {
+      context.handle(
+        _accessedDateMeta,
+        accessedDate.isAcceptableOrUnknown(
+          data['accessed_date']!,
+          _accessedDateMeta,
+        ),
+      );
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {imageId};
+  @override
+  Image map(Map<String, dynamic> data, {String? tablePrefix}) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return Image(
+      imageId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}image_id'],
+      )!,
+      kind: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}kind'],
+      )!,
+      entityId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}entity_id'],
+      )!,
+      mimeType: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}mime_type'],
+      )!,
+      bytes: attachedDatabase.typeMapping.read(
+        DriftSqlType.blob,
+        data['${effectivePrefix}bytes'],
+      )!,
+      width: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}width'],
+      ),
+      height: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}height'],
+      ),
+      sha256: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}sha256'],
+      )!,
+      titleJson: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}title_json'],
+      )!,
+      altJson: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}alt_json'],
+      )!,
+      captionOriginal: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}caption_original'],
+      ),
+      creator: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}creator'],
+      ),
+      sourceName: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}source_name'],
+      ),
+      sourceUrl: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}source_url'],
+      ),
+      doi: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}doi'],
+      ),
+      license: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}license'],
+      )!,
+      attribution: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}attribution'],
+      )!,
+      isOriginalDiagram: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}is_original_diagram'],
+      )!,
+      representsRealData: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}represents_real_data'],
+      )!,
+      graphic: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}graphic'],
+      )!,
+      accessedDate: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}accessed_date'],
+      ),
+    );
+  }
+
+  @override
+  Images createAlias(String alias) {
+    return Images(attachedDatabase, alias);
+  }
+
+  @override
+  List<String> get customConstraints => const [
+    'CHECK(NOT(is_original_diagram = 1 AND represents_real_data = 1))',
+  ];
+  @override
+  bool get dontWriteConstraints => true;
+}
+
+class Image extends DataClass implements Insertable<Image> {
+  final String imageId;
+  final String kind;
+  final String entityId;
+  final String mimeType;
+  final Uint8List bytes;
+  final int? width;
+  final int? height;
+  final String sha256;
+  final String titleJson;
+  final String altJson;
+  final String? captionOriginal;
+  final String? creator;
+  final String? sourceName;
+  final String? sourceUrl;
+  final String? doi;
+  final String license;
+  final String attribution;
+  final int isOriginalDiagram;
+  final int representsRealData;
+  final int graphic;
+  final String? accessedDate;
+  const Image({
+    required this.imageId,
+    required this.kind,
+    required this.entityId,
+    required this.mimeType,
+    required this.bytes,
+    this.width,
+    this.height,
+    required this.sha256,
+    required this.titleJson,
+    required this.altJson,
+    this.captionOriginal,
+    this.creator,
+    this.sourceName,
+    this.sourceUrl,
+    this.doi,
+    required this.license,
+    required this.attribution,
+    required this.isOriginalDiagram,
+    required this.representsRealData,
+    required this.graphic,
+    this.accessedDate,
+  });
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['image_id'] = Variable<String>(imageId);
+    map['kind'] = Variable<String>(kind);
+    map['entity_id'] = Variable<String>(entityId);
+    map['mime_type'] = Variable<String>(mimeType);
+    map['bytes'] = Variable<Uint8List>(bytes);
+    if (!nullToAbsent || width != null) {
+      map['width'] = Variable<int>(width);
+    }
+    if (!nullToAbsent || height != null) {
+      map['height'] = Variable<int>(height);
+    }
+    map['sha256'] = Variable<String>(sha256);
+    map['title_json'] = Variable<String>(titleJson);
+    map['alt_json'] = Variable<String>(altJson);
+    if (!nullToAbsent || captionOriginal != null) {
+      map['caption_original'] = Variable<String>(captionOriginal);
+    }
+    if (!nullToAbsent || creator != null) {
+      map['creator'] = Variable<String>(creator);
+    }
+    if (!nullToAbsent || sourceName != null) {
+      map['source_name'] = Variable<String>(sourceName);
+    }
+    if (!nullToAbsent || sourceUrl != null) {
+      map['source_url'] = Variable<String>(sourceUrl);
+    }
+    if (!nullToAbsent || doi != null) {
+      map['doi'] = Variable<String>(doi);
+    }
+    map['license'] = Variable<String>(license);
+    map['attribution'] = Variable<String>(attribution);
+    map['is_original_diagram'] = Variable<int>(isOriginalDiagram);
+    map['represents_real_data'] = Variable<int>(representsRealData);
+    map['graphic'] = Variable<int>(graphic);
+    if (!nullToAbsent || accessedDate != null) {
+      map['accessed_date'] = Variable<String>(accessedDate);
+    }
+    return map;
+  }
+
+  ImagesCompanion toCompanion(bool nullToAbsent) {
+    return ImagesCompanion(
+      imageId: Value(imageId),
+      kind: Value(kind),
+      entityId: Value(entityId),
+      mimeType: Value(mimeType),
+      bytes: Value(bytes),
+      width: width == null && nullToAbsent
+          ? const Value.absent()
+          : Value(width),
+      height: height == null && nullToAbsent
+          ? const Value.absent()
+          : Value(height),
+      sha256: Value(sha256),
+      titleJson: Value(titleJson),
+      altJson: Value(altJson),
+      captionOriginal: captionOriginal == null && nullToAbsent
+          ? const Value.absent()
+          : Value(captionOriginal),
+      creator: creator == null && nullToAbsent
+          ? const Value.absent()
+          : Value(creator),
+      sourceName: sourceName == null && nullToAbsent
+          ? const Value.absent()
+          : Value(sourceName),
+      sourceUrl: sourceUrl == null && nullToAbsent
+          ? const Value.absent()
+          : Value(sourceUrl),
+      doi: doi == null && nullToAbsent ? const Value.absent() : Value(doi),
+      license: Value(license),
+      attribution: Value(attribution),
+      isOriginalDiagram: Value(isOriginalDiagram),
+      representsRealData: Value(representsRealData),
+      graphic: Value(graphic),
+      accessedDate: accessedDate == null && nullToAbsent
+          ? const Value.absent()
+          : Value(accessedDate),
+    );
+  }
+
+  factory Image.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return Image(
+      imageId: serializer.fromJson<String>(json['image_id']),
+      kind: serializer.fromJson<String>(json['kind']),
+      entityId: serializer.fromJson<String>(json['entity_id']),
+      mimeType: serializer.fromJson<String>(json['mime_type']),
+      bytes: serializer.fromJson<Uint8List>(json['bytes']),
+      width: serializer.fromJson<int?>(json['width']),
+      height: serializer.fromJson<int?>(json['height']),
+      sha256: serializer.fromJson<String>(json['sha256']),
+      titleJson: serializer.fromJson<String>(json['title_json']),
+      altJson: serializer.fromJson<String>(json['alt_json']),
+      captionOriginal: serializer.fromJson<String?>(json['caption_original']),
+      creator: serializer.fromJson<String?>(json['creator']),
+      sourceName: serializer.fromJson<String?>(json['source_name']),
+      sourceUrl: serializer.fromJson<String?>(json['source_url']),
+      doi: serializer.fromJson<String?>(json['doi']),
+      license: serializer.fromJson<String>(json['license']),
+      attribution: serializer.fromJson<String>(json['attribution']),
+      isOriginalDiagram: serializer.fromJson<int>(json['is_original_diagram']),
+      representsRealData: serializer.fromJson<int>(
+        json['represents_real_data'],
+      ),
+      graphic: serializer.fromJson<int>(json['graphic']),
+      accessedDate: serializer.fromJson<String?>(json['accessed_date']),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'image_id': serializer.toJson<String>(imageId),
+      'kind': serializer.toJson<String>(kind),
+      'entity_id': serializer.toJson<String>(entityId),
+      'mime_type': serializer.toJson<String>(mimeType),
+      'bytes': serializer.toJson<Uint8List>(bytes),
+      'width': serializer.toJson<int?>(width),
+      'height': serializer.toJson<int?>(height),
+      'sha256': serializer.toJson<String>(sha256),
+      'title_json': serializer.toJson<String>(titleJson),
+      'alt_json': serializer.toJson<String>(altJson),
+      'caption_original': serializer.toJson<String?>(captionOriginal),
+      'creator': serializer.toJson<String?>(creator),
+      'source_name': serializer.toJson<String?>(sourceName),
+      'source_url': serializer.toJson<String?>(sourceUrl),
+      'doi': serializer.toJson<String?>(doi),
+      'license': serializer.toJson<String>(license),
+      'attribution': serializer.toJson<String>(attribution),
+      'is_original_diagram': serializer.toJson<int>(isOriginalDiagram),
+      'represents_real_data': serializer.toJson<int>(representsRealData),
+      'graphic': serializer.toJson<int>(graphic),
+      'accessed_date': serializer.toJson<String?>(accessedDate),
+    };
+  }
+
+  Image copyWith({
+    String? imageId,
+    String? kind,
+    String? entityId,
+    String? mimeType,
+    Uint8List? bytes,
+    Value<int?> width = const Value.absent(),
+    Value<int?> height = const Value.absent(),
+    String? sha256,
+    String? titleJson,
+    String? altJson,
+    Value<String?> captionOriginal = const Value.absent(),
+    Value<String?> creator = const Value.absent(),
+    Value<String?> sourceName = const Value.absent(),
+    Value<String?> sourceUrl = const Value.absent(),
+    Value<String?> doi = const Value.absent(),
+    String? license,
+    String? attribution,
+    int? isOriginalDiagram,
+    int? representsRealData,
+    int? graphic,
+    Value<String?> accessedDate = const Value.absent(),
+  }) => Image(
+    imageId: imageId ?? this.imageId,
+    kind: kind ?? this.kind,
+    entityId: entityId ?? this.entityId,
+    mimeType: mimeType ?? this.mimeType,
+    bytes: bytes ?? this.bytes,
+    width: width.present ? width.value : this.width,
+    height: height.present ? height.value : this.height,
+    sha256: sha256 ?? this.sha256,
+    titleJson: titleJson ?? this.titleJson,
+    altJson: altJson ?? this.altJson,
+    captionOriginal: captionOriginal.present
+        ? captionOriginal.value
+        : this.captionOriginal,
+    creator: creator.present ? creator.value : this.creator,
+    sourceName: sourceName.present ? sourceName.value : this.sourceName,
+    sourceUrl: sourceUrl.present ? sourceUrl.value : this.sourceUrl,
+    doi: doi.present ? doi.value : this.doi,
+    license: license ?? this.license,
+    attribution: attribution ?? this.attribution,
+    isOriginalDiagram: isOriginalDiagram ?? this.isOriginalDiagram,
+    representsRealData: representsRealData ?? this.representsRealData,
+    graphic: graphic ?? this.graphic,
+    accessedDate: accessedDate.present ? accessedDate.value : this.accessedDate,
+  );
+  Image copyWithCompanion(ImagesCompanion data) {
+    return Image(
+      imageId: data.imageId.present ? data.imageId.value : this.imageId,
+      kind: data.kind.present ? data.kind.value : this.kind,
+      entityId: data.entityId.present ? data.entityId.value : this.entityId,
+      mimeType: data.mimeType.present ? data.mimeType.value : this.mimeType,
+      bytes: data.bytes.present ? data.bytes.value : this.bytes,
+      width: data.width.present ? data.width.value : this.width,
+      height: data.height.present ? data.height.value : this.height,
+      sha256: data.sha256.present ? data.sha256.value : this.sha256,
+      titleJson: data.titleJson.present ? data.titleJson.value : this.titleJson,
+      altJson: data.altJson.present ? data.altJson.value : this.altJson,
+      captionOriginal: data.captionOriginal.present
+          ? data.captionOriginal.value
+          : this.captionOriginal,
+      creator: data.creator.present ? data.creator.value : this.creator,
+      sourceName: data.sourceName.present
+          ? data.sourceName.value
+          : this.sourceName,
+      sourceUrl: data.sourceUrl.present ? data.sourceUrl.value : this.sourceUrl,
+      doi: data.doi.present ? data.doi.value : this.doi,
+      license: data.license.present ? data.license.value : this.license,
+      attribution: data.attribution.present
+          ? data.attribution.value
+          : this.attribution,
+      isOriginalDiagram: data.isOriginalDiagram.present
+          ? data.isOriginalDiagram.value
+          : this.isOriginalDiagram,
+      representsRealData: data.representsRealData.present
+          ? data.representsRealData.value
+          : this.representsRealData,
+      graphic: data.graphic.present ? data.graphic.value : this.graphic,
+      accessedDate: data.accessedDate.present
+          ? data.accessedDate.value
+          : this.accessedDate,
+    );
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('Image(')
+          ..write('imageId: $imageId, ')
+          ..write('kind: $kind, ')
+          ..write('entityId: $entityId, ')
+          ..write('mimeType: $mimeType, ')
+          ..write('bytes: $bytes, ')
+          ..write('width: $width, ')
+          ..write('height: $height, ')
+          ..write('sha256: $sha256, ')
+          ..write('titleJson: $titleJson, ')
+          ..write('altJson: $altJson, ')
+          ..write('captionOriginal: $captionOriginal, ')
+          ..write('creator: $creator, ')
+          ..write('sourceName: $sourceName, ')
+          ..write('sourceUrl: $sourceUrl, ')
+          ..write('doi: $doi, ')
+          ..write('license: $license, ')
+          ..write('attribution: $attribution, ')
+          ..write('isOriginalDiagram: $isOriginalDiagram, ')
+          ..write('representsRealData: $representsRealData, ')
+          ..write('graphic: $graphic, ')
+          ..write('accessedDate: $accessedDate')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode => Object.hashAll([
+    imageId,
+    kind,
+    entityId,
+    mimeType,
+    $driftBlobEquality.hash(bytes),
+    width,
+    height,
+    sha256,
+    titleJson,
+    altJson,
+    captionOriginal,
+    creator,
+    sourceName,
+    sourceUrl,
+    doi,
+    license,
+    attribution,
+    isOriginalDiagram,
+    representsRealData,
+    graphic,
+    accessedDate,
+  ]);
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is Image &&
+          other.imageId == this.imageId &&
+          other.kind == this.kind &&
+          other.entityId == this.entityId &&
+          other.mimeType == this.mimeType &&
+          $driftBlobEquality.equals(other.bytes, this.bytes) &&
+          other.width == this.width &&
+          other.height == this.height &&
+          other.sha256 == this.sha256 &&
+          other.titleJson == this.titleJson &&
+          other.altJson == this.altJson &&
+          other.captionOriginal == this.captionOriginal &&
+          other.creator == this.creator &&
+          other.sourceName == this.sourceName &&
+          other.sourceUrl == this.sourceUrl &&
+          other.doi == this.doi &&
+          other.license == this.license &&
+          other.attribution == this.attribution &&
+          other.isOriginalDiagram == this.isOriginalDiagram &&
+          other.representsRealData == this.representsRealData &&
+          other.graphic == this.graphic &&
+          other.accessedDate == this.accessedDate);
+}
+
+class ImagesCompanion extends UpdateCompanion<Image> {
+  final Value<String> imageId;
+  final Value<String> kind;
+  final Value<String> entityId;
+  final Value<String> mimeType;
+  final Value<Uint8List> bytes;
+  final Value<int?> width;
+  final Value<int?> height;
+  final Value<String> sha256;
+  final Value<String> titleJson;
+  final Value<String> altJson;
+  final Value<String?> captionOriginal;
+  final Value<String?> creator;
+  final Value<String?> sourceName;
+  final Value<String?> sourceUrl;
+  final Value<String?> doi;
+  final Value<String> license;
+  final Value<String> attribution;
+  final Value<int> isOriginalDiagram;
+  final Value<int> representsRealData;
+  final Value<int> graphic;
+  final Value<String?> accessedDate;
+  final Value<int> rowid;
+  const ImagesCompanion({
+    this.imageId = const Value.absent(),
+    this.kind = const Value.absent(),
+    this.entityId = const Value.absent(),
+    this.mimeType = const Value.absent(),
+    this.bytes = const Value.absent(),
+    this.width = const Value.absent(),
+    this.height = const Value.absent(),
+    this.sha256 = const Value.absent(),
+    this.titleJson = const Value.absent(),
+    this.altJson = const Value.absent(),
+    this.captionOriginal = const Value.absent(),
+    this.creator = const Value.absent(),
+    this.sourceName = const Value.absent(),
+    this.sourceUrl = const Value.absent(),
+    this.doi = const Value.absent(),
+    this.license = const Value.absent(),
+    this.attribution = const Value.absent(),
+    this.isOriginalDiagram = const Value.absent(),
+    this.representsRealData = const Value.absent(),
+    this.graphic = const Value.absent(),
+    this.accessedDate = const Value.absent(),
+    this.rowid = const Value.absent(),
+  });
+  ImagesCompanion.insert({
+    required String imageId,
+    required String kind,
+    required String entityId,
+    required String mimeType,
+    required Uint8List bytes,
+    this.width = const Value.absent(),
+    this.height = const Value.absent(),
+    required String sha256,
+    required String titleJson,
+    required String altJson,
+    this.captionOriginal = const Value.absent(),
+    this.creator = const Value.absent(),
+    this.sourceName = const Value.absent(),
+    this.sourceUrl = const Value.absent(),
+    this.doi = const Value.absent(),
+    required String license,
+    required String attribution,
+    required int isOriginalDiagram,
+    required int representsRealData,
+    this.graphic = const Value.absent(),
+    this.accessedDate = const Value.absent(),
+    this.rowid = const Value.absent(),
+  }) : imageId = Value(imageId),
+       kind = Value(kind),
+       entityId = Value(entityId),
+       mimeType = Value(mimeType),
+       bytes = Value(bytes),
+       sha256 = Value(sha256),
+       titleJson = Value(titleJson),
+       altJson = Value(altJson),
+       license = Value(license),
+       attribution = Value(attribution),
+       isOriginalDiagram = Value(isOriginalDiagram),
+       representsRealData = Value(representsRealData);
+  static Insertable<Image> custom({
+    Expression<String>? imageId,
+    Expression<String>? kind,
+    Expression<String>? entityId,
+    Expression<String>? mimeType,
+    Expression<Uint8List>? bytes,
+    Expression<int>? width,
+    Expression<int>? height,
+    Expression<String>? sha256,
+    Expression<String>? titleJson,
+    Expression<String>? altJson,
+    Expression<String>? captionOriginal,
+    Expression<String>? creator,
+    Expression<String>? sourceName,
+    Expression<String>? sourceUrl,
+    Expression<String>? doi,
+    Expression<String>? license,
+    Expression<String>? attribution,
+    Expression<int>? isOriginalDiagram,
+    Expression<int>? representsRealData,
+    Expression<int>? graphic,
+    Expression<String>? accessedDate,
+    Expression<int>? rowid,
+  }) {
+    return RawValuesInsertable({
+      if (imageId != null) 'image_id': imageId,
+      if (kind != null) 'kind': kind,
+      if (entityId != null) 'entity_id': entityId,
+      if (mimeType != null) 'mime_type': mimeType,
+      if (bytes != null) 'bytes': bytes,
+      if (width != null) 'width': width,
+      if (height != null) 'height': height,
+      if (sha256 != null) 'sha256': sha256,
+      if (titleJson != null) 'title_json': titleJson,
+      if (altJson != null) 'alt_json': altJson,
+      if (captionOriginal != null) 'caption_original': captionOriginal,
+      if (creator != null) 'creator': creator,
+      if (sourceName != null) 'source_name': sourceName,
+      if (sourceUrl != null) 'source_url': sourceUrl,
+      if (doi != null) 'doi': doi,
+      if (license != null) 'license': license,
+      if (attribution != null) 'attribution': attribution,
+      if (isOriginalDiagram != null) 'is_original_diagram': isOriginalDiagram,
+      if (representsRealData != null)
+        'represents_real_data': representsRealData,
+      if (graphic != null) 'graphic': graphic,
+      if (accessedDate != null) 'accessed_date': accessedDate,
+      if (rowid != null) 'rowid': rowid,
+    });
+  }
+
+  ImagesCompanion copyWith({
+    Value<String>? imageId,
+    Value<String>? kind,
+    Value<String>? entityId,
+    Value<String>? mimeType,
+    Value<Uint8List>? bytes,
+    Value<int?>? width,
+    Value<int?>? height,
+    Value<String>? sha256,
+    Value<String>? titleJson,
+    Value<String>? altJson,
+    Value<String?>? captionOriginal,
+    Value<String?>? creator,
+    Value<String?>? sourceName,
+    Value<String?>? sourceUrl,
+    Value<String?>? doi,
+    Value<String>? license,
+    Value<String>? attribution,
+    Value<int>? isOriginalDiagram,
+    Value<int>? representsRealData,
+    Value<int>? graphic,
+    Value<String?>? accessedDate,
+    Value<int>? rowid,
+  }) {
+    return ImagesCompanion(
+      imageId: imageId ?? this.imageId,
+      kind: kind ?? this.kind,
+      entityId: entityId ?? this.entityId,
+      mimeType: mimeType ?? this.mimeType,
+      bytes: bytes ?? this.bytes,
+      width: width ?? this.width,
+      height: height ?? this.height,
+      sha256: sha256 ?? this.sha256,
+      titleJson: titleJson ?? this.titleJson,
+      altJson: altJson ?? this.altJson,
+      captionOriginal: captionOriginal ?? this.captionOriginal,
+      creator: creator ?? this.creator,
+      sourceName: sourceName ?? this.sourceName,
+      sourceUrl: sourceUrl ?? this.sourceUrl,
+      doi: doi ?? this.doi,
+      license: license ?? this.license,
+      attribution: attribution ?? this.attribution,
+      isOriginalDiagram: isOriginalDiagram ?? this.isOriginalDiagram,
+      representsRealData: representsRealData ?? this.representsRealData,
+      graphic: graphic ?? this.graphic,
+      accessedDate: accessedDate ?? this.accessedDate,
+      rowid: rowid ?? this.rowid,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (imageId.present) {
+      map['image_id'] = Variable<String>(imageId.value);
+    }
+    if (kind.present) {
+      map['kind'] = Variable<String>(kind.value);
+    }
+    if (entityId.present) {
+      map['entity_id'] = Variable<String>(entityId.value);
+    }
+    if (mimeType.present) {
+      map['mime_type'] = Variable<String>(mimeType.value);
+    }
+    if (bytes.present) {
+      map['bytes'] = Variable<Uint8List>(bytes.value);
+    }
+    if (width.present) {
+      map['width'] = Variable<int>(width.value);
+    }
+    if (height.present) {
+      map['height'] = Variable<int>(height.value);
+    }
+    if (sha256.present) {
+      map['sha256'] = Variable<String>(sha256.value);
+    }
+    if (titleJson.present) {
+      map['title_json'] = Variable<String>(titleJson.value);
+    }
+    if (altJson.present) {
+      map['alt_json'] = Variable<String>(altJson.value);
+    }
+    if (captionOriginal.present) {
+      map['caption_original'] = Variable<String>(captionOriginal.value);
+    }
+    if (creator.present) {
+      map['creator'] = Variable<String>(creator.value);
+    }
+    if (sourceName.present) {
+      map['source_name'] = Variable<String>(sourceName.value);
+    }
+    if (sourceUrl.present) {
+      map['source_url'] = Variable<String>(sourceUrl.value);
+    }
+    if (doi.present) {
+      map['doi'] = Variable<String>(doi.value);
+    }
+    if (license.present) {
+      map['license'] = Variable<String>(license.value);
+    }
+    if (attribution.present) {
+      map['attribution'] = Variable<String>(attribution.value);
+    }
+    if (isOriginalDiagram.present) {
+      map['is_original_diagram'] = Variable<int>(isOriginalDiagram.value);
+    }
+    if (representsRealData.present) {
+      map['represents_real_data'] = Variable<int>(representsRealData.value);
+    }
+    if (graphic.present) {
+      map['graphic'] = Variable<int>(graphic.value);
+    }
+    if (accessedDate.present) {
+      map['accessed_date'] = Variable<String>(accessedDate.value);
+    }
+    if (rowid.present) {
+      map['rowid'] = Variable<int>(rowid.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('ImagesCompanion(')
+          ..write('imageId: $imageId, ')
+          ..write('kind: $kind, ')
+          ..write('entityId: $entityId, ')
+          ..write('mimeType: $mimeType, ')
+          ..write('bytes: $bytes, ')
+          ..write('width: $width, ')
+          ..write('height: $height, ')
+          ..write('sha256: $sha256, ')
+          ..write('titleJson: $titleJson, ')
+          ..write('altJson: $altJson, ')
+          ..write('captionOriginal: $captionOriginal, ')
+          ..write('creator: $creator, ')
+          ..write('sourceName: $sourceName, ')
+          ..write('sourceUrl: $sourceUrl, ')
+          ..write('doi: $doi, ')
+          ..write('license: $license, ')
+          ..write('attribution: $attribution, ')
+          ..write('isOriginalDiagram: $isOriginalDiagram, ')
+          ..write('representsRealData: $representsRealData, ')
+          ..write('graphic: $graphic, ')
+          ..write('accessedDate: $accessedDate, ')
+          ..write('rowid: $rowid')
+          ..write(')'))
+        .toString();
+  }
+}
+
 abstract class _$ContentDatabase extends GeneratedDatabase {
   _$ContentDatabase(QueryExecutor e) : super(e);
   $ContentDatabaseManager get managers => $ContentDatabaseManager(this);
@@ -10879,6 +13529,21 @@ abstract class _$ContentDatabase extends GeneratedDatabase {
     'CREATE INDEX search_terms_key ON search_terms (search_key)',
   );
   late final SearchFtsTri searchFtsTri = SearchFtsTri(this);
+  late final ResearchRecords researchRecords = ResearchRecords(this);
+  late final Index researchByKind = Index(
+    'research_by_kind',
+    'CREATE INDEX research_by_kind ON research_records (kind)',
+  );
+  late final EntityLinks entityLinks = EntityLinks(this);
+  late final Index linksByTo = Index(
+    'links_by_to',
+    'CREATE INDEX links_by_to ON entity_links (to_id)',
+  );
+  late final Images images = Images(this);
+  late final Index imagesByEntity = Index(
+    'images_by_entity',
+    'CREATE INDEX images_by_entity ON images (entity_id)',
+  );
   @override
   Iterable<TableInfo<Table, Object?>> get allTables =>
       allSchemaEntities.whereType<TableInfo<Table, Object?>>();
@@ -10909,6 +13574,12 @@ abstract class _$ContentDatabase extends GeneratedDatabase {
     searchTerms,
     searchTermsKey,
     searchFtsTri,
+    researchRecords,
+    researchByKind,
+    entityLinks,
+    linksByTo,
+    images,
+    imagesByEntity,
   ];
   @override
   DriftDatabaseOptions get options =>
@@ -18163,6 +20834,7 @@ typedef $SubstancesCreateCompanionBuilder = SubstancesCompanion Function({
   Value<String?> lastReviewedAt,
   required String contentVersion,
   Value<int> isTestData,
+  Value<String?> substanceGroup,
 });
 typedef $SubstancesUpdateCompanionBuilder = SubstancesCompanion Function({
   Value<String> substanceId,
@@ -18174,6 +20846,7 @@ typedef $SubstancesUpdateCompanionBuilder = SubstancesCompanion Function({
   Value<String?> lastReviewedAt,
   Value<String> contentVersion,
   Value<int> isTestData,
+  Value<String?> substanceGroup,
 });
 
 final class $SubstancesReferences
@@ -18282,6 +20955,11 @@ class $SubstancesFilterComposer
     builder: (column) => ColumnFilters(column),
   );
 
+  ColumnFilters<String> get substanceGroup => $composableBuilder(
+    column: $table.substanceGroup,
+    builder: (column) => ColumnFilters(column),
+  );
+
   Expression<bool> substanceI18nRefs(
     Expression<bool> Function($SubstanceI18nFilterComposer f) f,
   ) {
@@ -18386,6 +21064,11 @@ class $SubstancesOrderingComposer
     column: $table.isTestData,
     builder: (column) => ColumnOrderings(column),
   );
+
+  ColumnOrderings<String> get substanceGroup => $composableBuilder(
+    column: $table.substanceGroup,
+    builder: (column) => ColumnOrderings(column),
+  );
 }
 
 class $SubstancesAnnotationComposer
@@ -18439,6 +21122,11 @@ class $SubstancesAnnotationComposer
 
   GeneratedColumn<int> get isTestData => $composableBuilder(
     column: $table.isTestData,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get substanceGroup => $composableBuilder(
+    column: $table.substanceGroup,
     builder: (column) => column,
   );
 
@@ -18533,6 +21221,7 @@ class $SubstancesTableManager
                 Value<String?> lastReviewedAt = const Value.absent(),
                 Value<String> contentVersion = const Value.absent(),
                 Value<int> isTestData = const Value.absent(),
+                Value<String?> substanceGroup = const Value.absent(),
               }) => SubstancesCompanion(
                 substanceId: substanceId,
                 canonicalName: canonicalName,
@@ -18543,6 +21232,7 @@ class $SubstancesTableManager
                 lastReviewedAt: lastReviewedAt,
                 contentVersion: contentVersion,
                 isTestData: isTestData,
+                substanceGroup: substanceGroup,
               ),
           createCompanionCallback:
               ({
@@ -18555,6 +21245,7 @@ class $SubstancesTableManager
                 Value<String?> lastReviewedAt = const Value.absent(),
                 required String contentVersion,
                 Value<int> isTestData = const Value.absent(),
+                Value<String?> substanceGroup = const Value.absent(),
               }) => SubstancesCompanion.insert(
                 substanceId: substanceId,
                 canonicalName: canonicalName,
@@ -18565,6 +21256,7 @@ class $SubstancesTableManager
                 lastReviewedAt: lastReviewedAt,
                 contentVersion: contentVersion,
                 isTestData: isTestData,
+                substanceGroup: substanceGroup,
               ),
           withReferenceMapper: (p0) => p0
               .map(
@@ -20260,6 +22952,1205 @@ typedef $SearchFtsTriProcessedTableManager =
       SearchFtsTriData,
       PrefetchHooks Function()
     >;
+typedef $ResearchRecordsCreateCompanionBuilder =
+    ResearchRecordsCompanion Function({
+      required String researchId,
+      required String kind,
+      required String title,
+      Value<String> authorsJson,
+      Value<String?> organization,
+      Value<String?> container,
+      Value<String?> pubYear,
+      Value<String?> doi,
+      Value<String?> pmid,
+      Value<String?> pmcid,
+      Value<String?> handle,
+      Value<String?> url,
+      Value<String?> degree,
+      Value<String?> openAccess,
+      Value<String?> sourceApi,
+      Value<String?> accessedDate,
+      required String evidenceLevel,
+      required int peerReviewed,
+      required String reviewStatus,
+      Value<int> isTestData,
+    });
+typedef $ResearchRecordsUpdateCompanionBuilder =
+    ResearchRecordsCompanion Function({
+      Value<String> researchId,
+      Value<String> kind,
+      Value<String> title,
+      Value<String> authorsJson,
+      Value<String?> organization,
+      Value<String?> container,
+      Value<String?> pubYear,
+      Value<String?> doi,
+      Value<String?> pmid,
+      Value<String?> pmcid,
+      Value<String?> handle,
+      Value<String?> url,
+      Value<String?> degree,
+      Value<String?> openAccess,
+      Value<String?> sourceApi,
+      Value<String?> accessedDate,
+      Value<String> evidenceLevel,
+      Value<int> peerReviewed,
+      Value<String> reviewStatus,
+      Value<int> isTestData,
+    });
+
+class $ResearchRecordsFilterComposer
+    extends Composer<_$ContentDatabase, ResearchRecords> {
+  $ResearchRecordsFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<String> get researchId => $composableBuilder(
+    column: $table.researchId,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get kind => $composableBuilder(
+    column: $table.kind,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get title => $composableBuilder(
+    column: $table.title,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get authorsJson => $composableBuilder(
+    column: $table.authorsJson,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get organization => $composableBuilder(
+    column: $table.organization,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get container => $composableBuilder(
+    column: $table.container,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get pubYear => $composableBuilder(
+    column: $table.pubYear,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get doi => $composableBuilder(
+    column: $table.doi,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get pmid => $composableBuilder(
+    column: $table.pmid,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get pmcid => $composableBuilder(
+    column: $table.pmcid,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get handle => $composableBuilder(
+    column: $table.handle,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get url => $composableBuilder(
+    column: $table.url,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get degree => $composableBuilder(
+    column: $table.degree,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get openAccess => $composableBuilder(
+    column: $table.openAccess,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get sourceApi => $composableBuilder(
+    column: $table.sourceApi,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get accessedDate => $composableBuilder(
+    column: $table.accessedDate,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get evidenceLevel => $composableBuilder(
+    column: $table.evidenceLevel,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get peerReviewed => $composableBuilder(
+    column: $table.peerReviewed,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get reviewStatus => $composableBuilder(
+    column: $table.reviewStatus,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get isTestData => $composableBuilder(
+    column: $table.isTestData,
+    builder: (column) => ColumnFilters(column),
+  );
+}
+
+class $ResearchRecordsOrderingComposer
+    extends Composer<_$ContentDatabase, ResearchRecords> {
+  $ResearchRecordsOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<String> get researchId => $composableBuilder(
+    column: $table.researchId,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get kind => $composableBuilder(
+    column: $table.kind,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get title => $composableBuilder(
+    column: $table.title,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get authorsJson => $composableBuilder(
+    column: $table.authorsJson,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get organization => $composableBuilder(
+    column: $table.organization,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get container => $composableBuilder(
+    column: $table.container,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get pubYear => $composableBuilder(
+    column: $table.pubYear,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get doi => $composableBuilder(
+    column: $table.doi,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get pmid => $composableBuilder(
+    column: $table.pmid,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get pmcid => $composableBuilder(
+    column: $table.pmcid,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get handle => $composableBuilder(
+    column: $table.handle,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get url => $composableBuilder(
+    column: $table.url,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get degree => $composableBuilder(
+    column: $table.degree,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get openAccess => $composableBuilder(
+    column: $table.openAccess,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get sourceApi => $composableBuilder(
+    column: $table.sourceApi,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get accessedDate => $composableBuilder(
+    column: $table.accessedDate,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get evidenceLevel => $composableBuilder(
+    column: $table.evidenceLevel,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<int> get peerReviewed => $composableBuilder(
+    column: $table.peerReviewed,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get reviewStatus => $composableBuilder(
+    column: $table.reviewStatus,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<int> get isTestData => $composableBuilder(
+    column: $table.isTestData,
+    builder: (column) => ColumnOrderings(column),
+  );
+}
+
+class $ResearchRecordsAnnotationComposer
+    extends Composer<_$ContentDatabase, ResearchRecords> {
+  $ResearchRecordsAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<String> get researchId => $composableBuilder(
+    column: $table.researchId,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get kind =>
+      $composableBuilder(column: $table.kind, builder: (column) => column);
+
+  GeneratedColumn<String> get title =>
+      $composableBuilder(column: $table.title, builder: (column) => column);
+
+  GeneratedColumn<String> get authorsJson => $composableBuilder(
+    column: $table.authorsJson,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get organization => $composableBuilder(
+    column: $table.organization,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get container =>
+      $composableBuilder(column: $table.container, builder: (column) => column);
+
+  GeneratedColumn<String> get pubYear =>
+      $composableBuilder(column: $table.pubYear, builder: (column) => column);
+
+  GeneratedColumn<String> get doi =>
+      $composableBuilder(column: $table.doi, builder: (column) => column);
+
+  GeneratedColumn<String> get pmid =>
+      $composableBuilder(column: $table.pmid, builder: (column) => column);
+
+  GeneratedColumn<String> get pmcid =>
+      $composableBuilder(column: $table.pmcid, builder: (column) => column);
+
+  GeneratedColumn<String> get handle =>
+      $composableBuilder(column: $table.handle, builder: (column) => column);
+
+  GeneratedColumn<String> get url =>
+      $composableBuilder(column: $table.url, builder: (column) => column);
+
+  GeneratedColumn<String> get degree =>
+      $composableBuilder(column: $table.degree, builder: (column) => column);
+
+  GeneratedColumn<String> get openAccess => $composableBuilder(
+    column: $table.openAccess,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get sourceApi =>
+      $composableBuilder(column: $table.sourceApi, builder: (column) => column);
+
+  GeneratedColumn<String> get accessedDate => $composableBuilder(
+    column: $table.accessedDate,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get evidenceLevel => $composableBuilder(
+    column: $table.evidenceLevel,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<int> get peerReviewed => $composableBuilder(
+    column: $table.peerReviewed,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get reviewStatus => $composableBuilder(
+    column: $table.reviewStatus,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<int> get isTestData => $composableBuilder(
+    column: $table.isTestData,
+    builder: (column) => column,
+  );
+}
+
+class $ResearchRecordsTableManager
+    extends
+        RootTableManager<
+          _$ContentDatabase,
+          ResearchRecords,
+          ResearchRecord,
+          $ResearchRecordsFilterComposer,
+          $ResearchRecordsOrderingComposer,
+          $ResearchRecordsAnnotationComposer,
+          $ResearchRecordsCreateCompanionBuilder,
+          $ResearchRecordsUpdateCompanionBuilder,
+          (
+            ResearchRecord,
+            BaseReferences<_$ContentDatabase, ResearchRecords, ResearchRecord>,
+          ),
+          ResearchRecord,
+          PrefetchHooks Function()
+        > {
+  $ResearchRecordsTableManager(_$ContentDatabase db, ResearchRecords table)
+    : super(
+        TableManagerState(
+          db: db,
+          table: table,
+          createFilteringComposer: () =>
+              $ResearchRecordsFilterComposer($db: db, $table: table),
+          createOrderingComposer: () =>
+              $ResearchRecordsOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer: () =>
+              $ResearchRecordsAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<String> researchId = const Value.absent(),
+                Value<String> kind = const Value.absent(),
+                Value<String> title = const Value.absent(),
+                Value<String> authorsJson = const Value.absent(),
+                Value<String?> organization = const Value.absent(),
+                Value<String?> container = const Value.absent(),
+                Value<String?> pubYear = const Value.absent(),
+                Value<String?> doi = const Value.absent(),
+                Value<String?> pmid = const Value.absent(),
+                Value<String?> pmcid = const Value.absent(),
+                Value<String?> handle = const Value.absent(),
+                Value<String?> url = const Value.absent(),
+                Value<String?> degree = const Value.absent(),
+                Value<String?> openAccess = const Value.absent(),
+                Value<String?> sourceApi = const Value.absent(),
+                Value<String?> accessedDate = const Value.absent(),
+                Value<String> evidenceLevel = const Value.absent(),
+                Value<int> peerReviewed = const Value.absent(),
+                Value<String> reviewStatus = const Value.absent(),
+                Value<int> isTestData = const Value.absent(),
+              }) => ResearchRecordsCompanion(
+                researchId: researchId,
+                kind: kind,
+                title: title,
+                authorsJson: authorsJson,
+                organization: organization,
+                container: container,
+                pubYear: pubYear,
+                doi: doi,
+                pmid: pmid,
+                pmcid: pmcid,
+                handle: handle,
+                url: url,
+                degree: degree,
+                openAccess: openAccess,
+                sourceApi: sourceApi,
+                accessedDate: accessedDate,
+                evidenceLevel: evidenceLevel,
+                peerReviewed: peerReviewed,
+                reviewStatus: reviewStatus,
+                isTestData: isTestData,
+              ),
+          createCompanionCallback:
+              ({
+                required String researchId,
+                required String kind,
+                required String title,
+                Value<String> authorsJson = const Value.absent(),
+                Value<String?> organization = const Value.absent(),
+                Value<String?> container = const Value.absent(),
+                Value<String?> pubYear = const Value.absent(),
+                Value<String?> doi = const Value.absent(),
+                Value<String?> pmid = const Value.absent(),
+                Value<String?> pmcid = const Value.absent(),
+                Value<String?> handle = const Value.absent(),
+                Value<String?> url = const Value.absent(),
+                Value<String?> degree = const Value.absent(),
+                Value<String?> openAccess = const Value.absent(),
+                Value<String?> sourceApi = const Value.absent(),
+                Value<String?> accessedDate = const Value.absent(),
+                required String evidenceLevel,
+                required int peerReviewed,
+                required String reviewStatus,
+                Value<int> isTestData = const Value.absent(),
+              }) => ResearchRecordsCompanion.insert(
+                researchId: researchId,
+                kind: kind,
+                title: title,
+                authorsJson: authorsJson,
+                organization: organization,
+                container: container,
+                pubYear: pubYear,
+                doi: doi,
+                pmid: pmid,
+                pmcid: pmcid,
+                handle: handle,
+                url: url,
+                degree: degree,
+                openAccess: openAccess,
+                sourceApi: sourceApi,
+                accessedDate: accessedDate,
+                evidenceLevel: evidenceLevel,
+                peerReviewed: peerReviewed,
+                reviewStatus: reviewStatus,
+                isTestData: isTestData,
+              ),
+          withReferenceMapper: (p0) => p0
+              .map(
+                (e) => (
+                  e.readTable<ResearchRecords, ResearchRecord>(table),
+                  BaseReferences<
+                    _$ContentDatabase,
+                    ResearchRecords,
+                    ResearchRecord
+                  >(db, table, e),
+                ),
+              )
+              .toList(),
+          prefetchHooksCallback: null,
+        ),
+      );
+}
+
+typedef $ResearchRecordsProcessedTableManager =
+    ProcessedTableManager<
+      _$ContentDatabase,
+      ResearchRecords,
+      ResearchRecord,
+      $ResearchRecordsFilterComposer,
+      $ResearchRecordsOrderingComposer,
+      $ResearchRecordsAnnotationComposer,
+      $ResearchRecordsCreateCompanionBuilder,
+      $ResearchRecordsUpdateCompanionBuilder,
+      (
+        ResearchRecord,
+        BaseReferences<_$ContentDatabase, ResearchRecords, ResearchRecord>,
+      ),
+      ResearchRecord,
+      PrefetchHooks Function()
+    >;
+typedef $EntityLinksCreateCompanionBuilder = EntityLinksCompanion Function({
+  required String fromId,
+  required String toId,
+  required String relation,
+  required String basis,
+});
+typedef $EntityLinksUpdateCompanionBuilder = EntityLinksCompanion Function({
+  Value<String> fromId,
+  Value<String> toId,
+  Value<String> relation,
+  Value<String> basis,
+});
+
+class $EntityLinksFilterComposer
+    extends Composer<_$ContentDatabase, EntityLinks> {
+  $EntityLinksFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<String> get fromId => $composableBuilder(
+    column: $table.fromId,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get toId => $composableBuilder(
+    column: $table.toId,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get relation => $composableBuilder(
+    column: $table.relation,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get basis => $composableBuilder(
+    column: $table.basis,
+    builder: (column) => ColumnFilters(column),
+  );
+}
+
+class $EntityLinksOrderingComposer
+    extends Composer<_$ContentDatabase, EntityLinks> {
+  $EntityLinksOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<String> get fromId => $composableBuilder(
+    column: $table.fromId,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get toId => $composableBuilder(
+    column: $table.toId,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get relation => $composableBuilder(
+    column: $table.relation,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get basis => $composableBuilder(
+    column: $table.basis,
+    builder: (column) => ColumnOrderings(column),
+  );
+}
+
+class $EntityLinksAnnotationComposer
+    extends Composer<_$ContentDatabase, EntityLinks> {
+  $EntityLinksAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<String> get fromId =>
+      $composableBuilder(column: $table.fromId, builder: (column) => column);
+
+  GeneratedColumn<String> get toId =>
+      $composableBuilder(column: $table.toId, builder: (column) => column);
+
+  GeneratedColumn<String> get relation =>
+      $composableBuilder(column: $table.relation, builder: (column) => column);
+
+  GeneratedColumn<String> get basis =>
+      $composableBuilder(column: $table.basis, builder: (column) => column);
+}
+
+class $EntityLinksTableManager
+    extends
+        RootTableManager<
+          _$ContentDatabase,
+          EntityLinks,
+          EntityLink,
+          $EntityLinksFilterComposer,
+          $EntityLinksOrderingComposer,
+          $EntityLinksAnnotationComposer,
+          $EntityLinksCreateCompanionBuilder,
+          $EntityLinksUpdateCompanionBuilder,
+          (
+            EntityLink,
+            BaseReferences<_$ContentDatabase, EntityLinks, EntityLink>,
+          ),
+          EntityLink,
+          PrefetchHooks Function()
+        > {
+  $EntityLinksTableManager(_$ContentDatabase db, EntityLinks table)
+    : super(
+        TableManagerState(
+          db: db,
+          table: table,
+          createFilteringComposer: () =>
+              $EntityLinksFilterComposer($db: db, $table: table),
+          createOrderingComposer: () =>
+              $EntityLinksOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer: () =>
+              $EntityLinksAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<String> fromId = const Value.absent(),
+                Value<String> toId = const Value.absent(),
+                Value<String> relation = const Value.absent(),
+                Value<String> basis = const Value.absent(),
+              }) => EntityLinksCompanion(
+                fromId: fromId,
+                toId: toId,
+                relation: relation,
+                basis: basis,
+              ),
+          createCompanionCallback:
+              ({
+                required String fromId,
+                required String toId,
+                required String relation,
+                required String basis,
+              }) => EntityLinksCompanion.insert(
+                fromId: fromId,
+                toId: toId,
+                relation: relation,
+                basis: basis,
+              ),
+          withReferenceMapper: (p0) => p0
+              .map(
+                (e) => (
+                  e.readTable<EntityLinks, EntityLink>(table),
+                  BaseReferences<_$ContentDatabase, EntityLinks, EntityLink>(
+                    db,
+                    table,
+                    e,
+                  ),
+                ),
+              )
+              .toList(),
+          prefetchHooksCallback: null,
+        ),
+      );
+}
+
+typedef $EntityLinksProcessedTableManager =
+    ProcessedTableManager<
+      _$ContentDatabase,
+      EntityLinks,
+      EntityLink,
+      $EntityLinksFilterComposer,
+      $EntityLinksOrderingComposer,
+      $EntityLinksAnnotationComposer,
+      $EntityLinksCreateCompanionBuilder,
+      $EntityLinksUpdateCompanionBuilder,
+      (EntityLink, BaseReferences<_$ContentDatabase, EntityLinks, EntityLink>),
+      EntityLink,
+      PrefetchHooks Function()
+    >;
+typedef $ImagesCreateCompanionBuilder = ImagesCompanion Function({
+  required String imageId,
+  required String kind,
+  required String entityId,
+  required String mimeType,
+  required Uint8List bytes,
+  Value<int?> width,
+  Value<int?> height,
+  required String sha256,
+  required String titleJson,
+  required String altJson,
+  Value<String?> captionOriginal,
+  Value<String?> creator,
+  Value<String?> sourceName,
+  Value<String?> sourceUrl,
+  Value<String?> doi,
+  required String license,
+  required String attribution,
+  required int isOriginalDiagram,
+  required int representsRealData,
+  Value<int> graphic,
+  Value<String?> accessedDate,
+  Value<int> rowid,
+});
+typedef $ImagesUpdateCompanionBuilder = ImagesCompanion Function({
+  Value<String> imageId,
+  Value<String> kind,
+  Value<String> entityId,
+  Value<String> mimeType,
+  Value<Uint8List> bytes,
+  Value<int?> width,
+  Value<int?> height,
+  Value<String> sha256,
+  Value<String> titleJson,
+  Value<String> altJson,
+  Value<String?> captionOriginal,
+  Value<String?> creator,
+  Value<String?> sourceName,
+  Value<String?> sourceUrl,
+  Value<String?> doi,
+  Value<String> license,
+  Value<String> attribution,
+  Value<int> isOriginalDiagram,
+  Value<int> representsRealData,
+  Value<int> graphic,
+  Value<String?> accessedDate,
+  Value<int> rowid,
+});
+
+class $ImagesFilterComposer extends Composer<_$ContentDatabase, Images> {
+  $ImagesFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<String> get imageId => $composableBuilder(
+    column: $table.imageId,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get kind => $composableBuilder(
+    column: $table.kind,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get entityId => $composableBuilder(
+    column: $table.entityId,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get mimeType => $composableBuilder(
+    column: $table.mimeType,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<Uint8List> get bytes => $composableBuilder(
+    column: $table.bytes,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get width => $composableBuilder(
+    column: $table.width,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get height => $composableBuilder(
+    column: $table.height,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get sha256 => $composableBuilder(
+    column: $table.sha256,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get titleJson => $composableBuilder(
+    column: $table.titleJson,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get altJson => $composableBuilder(
+    column: $table.altJson,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get captionOriginal => $composableBuilder(
+    column: $table.captionOriginal,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get creator => $composableBuilder(
+    column: $table.creator,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get sourceName => $composableBuilder(
+    column: $table.sourceName,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get sourceUrl => $composableBuilder(
+    column: $table.sourceUrl,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get doi => $composableBuilder(
+    column: $table.doi,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get license => $composableBuilder(
+    column: $table.license,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get attribution => $composableBuilder(
+    column: $table.attribution,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get isOriginalDiagram => $composableBuilder(
+    column: $table.isOriginalDiagram,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get representsRealData => $composableBuilder(
+    column: $table.representsRealData,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get graphic => $composableBuilder(
+    column: $table.graphic,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get accessedDate => $composableBuilder(
+    column: $table.accessedDate,
+    builder: (column) => ColumnFilters(column),
+  );
+}
+
+class $ImagesOrderingComposer extends Composer<_$ContentDatabase, Images> {
+  $ImagesOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<String> get imageId => $composableBuilder(
+    column: $table.imageId,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get kind => $composableBuilder(
+    column: $table.kind,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get entityId => $composableBuilder(
+    column: $table.entityId,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get mimeType => $composableBuilder(
+    column: $table.mimeType,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<Uint8List> get bytes => $composableBuilder(
+    column: $table.bytes,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<int> get width => $composableBuilder(
+    column: $table.width,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<int> get height => $composableBuilder(
+    column: $table.height,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get sha256 => $composableBuilder(
+    column: $table.sha256,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get titleJson => $composableBuilder(
+    column: $table.titleJson,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get altJson => $composableBuilder(
+    column: $table.altJson,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get captionOriginal => $composableBuilder(
+    column: $table.captionOriginal,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get creator => $composableBuilder(
+    column: $table.creator,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get sourceName => $composableBuilder(
+    column: $table.sourceName,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get sourceUrl => $composableBuilder(
+    column: $table.sourceUrl,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get doi => $composableBuilder(
+    column: $table.doi,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get license => $composableBuilder(
+    column: $table.license,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get attribution => $composableBuilder(
+    column: $table.attribution,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<int> get isOriginalDiagram => $composableBuilder(
+    column: $table.isOriginalDiagram,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<int> get representsRealData => $composableBuilder(
+    column: $table.representsRealData,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<int> get graphic => $composableBuilder(
+    column: $table.graphic,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get accessedDate => $composableBuilder(
+    column: $table.accessedDate,
+    builder: (column) => ColumnOrderings(column),
+  );
+}
+
+class $ImagesAnnotationComposer extends Composer<_$ContentDatabase, Images> {
+  $ImagesAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<String> get imageId =>
+      $composableBuilder(column: $table.imageId, builder: (column) => column);
+
+  GeneratedColumn<String> get kind =>
+      $composableBuilder(column: $table.kind, builder: (column) => column);
+
+  GeneratedColumn<String> get entityId =>
+      $composableBuilder(column: $table.entityId, builder: (column) => column);
+
+  GeneratedColumn<String> get mimeType =>
+      $composableBuilder(column: $table.mimeType, builder: (column) => column);
+
+  GeneratedColumn<Uint8List> get bytes =>
+      $composableBuilder(column: $table.bytes, builder: (column) => column);
+
+  GeneratedColumn<int> get width =>
+      $composableBuilder(column: $table.width, builder: (column) => column);
+
+  GeneratedColumn<int> get height =>
+      $composableBuilder(column: $table.height, builder: (column) => column);
+
+  GeneratedColumn<String> get sha256 =>
+      $composableBuilder(column: $table.sha256, builder: (column) => column);
+
+  GeneratedColumn<String> get titleJson =>
+      $composableBuilder(column: $table.titleJson, builder: (column) => column);
+
+  GeneratedColumn<String> get altJson =>
+      $composableBuilder(column: $table.altJson, builder: (column) => column);
+
+  GeneratedColumn<String> get captionOriginal => $composableBuilder(
+    column: $table.captionOriginal,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get creator =>
+      $composableBuilder(column: $table.creator, builder: (column) => column);
+
+  GeneratedColumn<String> get sourceName => $composableBuilder(
+    column: $table.sourceName,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get sourceUrl =>
+      $composableBuilder(column: $table.sourceUrl, builder: (column) => column);
+
+  GeneratedColumn<String> get doi =>
+      $composableBuilder(column: $table.doi, builder: (column) => column);
+
+  GeneratedColumn<String> get license =>
+      $composableBuilder(column: $table.license, builder: (column) => column);
+
+  GeneratedColumn<String> get attribution => $composableBuilder(
+    column: $table.attribution,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<int> get isOriginalDiagram => $composableBuilder(
+    column: $table.isOriginalDiagram,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<int> get representsRealData => $composableBuilder(
+    column: $table.representsRealData,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<int> get graphic =>
+      $composableBuilder(column: $table.graphic, builder: (column) => column);
+
+  GeneratedColumn<String> get accessedDate => $composableBuilder(
+    column: $table.accessedDate,
+    builder: (column) => column,
+  );
+}
+
+class $ImagesTableManager
+    extends
+        RootTableManager<
+          _$ContentDatabase,
+          Images,
+          Image,
+          $ImagesFilterComposer,
+          $ImagesOrderingComposer,
+          $ImagesAnnotationComposer,
+          $ImagesCreateCompanionBuilder,
+          $ImagesUpdateCompanionBuilder,
+          (Image, BaseReferences<_$ContentDatabase, Images, Image>),
+          Image,
+          PrefetchHooks Function()
+        > {
+  $ImagesTableManager(_$ContentDatabase db, Images table)
+    : super(
+        TableManagerState(
+          db: db,
+          table: table,
+          createFilteringComposer: () =>
+              $ImagesFilterComposer($db: db, $table: table),
+          createOrderingComposer: () =>
+              $ImagesOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer: () =>
+              $ImagesAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<String> imageId = const Value.absent(),
+                Value<String> kind = const Value.absent(),
+                Value<String> entityId = const Value.absent(),
+                Value<String> mimeType = const Value.absent(),
+                Value<Uint8List> bytes = const Value.absent(),
+                Value<int?> width = const Value.absent(),
+                Value<int?> height = const Value.absent(),
+                Value<String> sha256 = const Value.absent(),
+                Value<String> titleJson = const Value.absent(),
+                Value<String> altJson = const Value.absent(),
+                Value<String?> captionOriginal = const Value.absent(),
+                Value<String?> creator = const Value.absent(),
+                Value<String?> sourceName = const Value.absent(),
+                Value<String?> sourceUrl = const Value.absent(),
+                Value<String?> doi = const Value.absent(),
+                Value<String> license = const Value.absent(),
+                Value<String> attribution = const Value.absent(),
+                Value<int> isOriginalDiagram = const Value.absent(),
+                Value<int> representsRealData = const Value.absent(),
+                Value<int> graphic = const Value.absent(),
+                Value<String?> accessedDate = const Value.absent(),
+                Value<int> rowid = const Value.absent(),
+              }) => ImagesCompanion(
+                imageId: imageId,
+                kind: kind,
+                entityId: entityId,
+                mimeType: mimeType,
+                bytes: bytes,
+                width: width,
+                height: height,
+                sha256: sha256,
+                titleJson: titleJson,
+                altJson: altJson,
+                captionOriginal: captionOriginal,
+                creator: creator,
+                sourceName: sourceName,
+                sourceUrl: sourceUrl,
+                doi: doi,
+                license: license,
+                attribution: attribution,
+                isOriginalDiagram: isOriginalDiagram,
+                representsRealData: representsRealData,
+                graphic: graphic,
+                accessedDate: accessedDate,
+                rowid: rowid,
+              ),
+          createCompanionCallback:
+              ({
+                required String imageId,
+                required String kind,
+                required String entityId,
+                required String mimeType,
+                required Uint8List bytes,
+                Value<int?> width = const Value.absent(),
+                Value<int?> height = const Value.absent(),
+                required String sha256,
+                required String titleJson,
+                required String altJson,
+                Value<String?> captionOriginal = const Value.absent(),
+                Value<String?> creator = const Value.absent(),
+                Value<String?> sourceName = const Value.absent(),
+                Value<String?> sourceUrl = const Value.absent(),
+                Value<String?> doi = const Value.absent(),
+                required String license,
+                required String attribution,
+                required int isOriginalDiagram,
+                required int representsRealData,
+                Value<int> graphic = const Value.absent(),
+                Value<String?> accessedDate = const Value.absent(),
+                Value<int> rowid = const Value.absent(),
+              }) => ImagesCompanion.insert(
+                imageId: imageId,
+                kind: kind,
+                entityId: entityId,
+                mimeType: mimeType,
+                bytes: bytes,
+                width: width,
+                height: height,
+                sha256: sha256,
+                titleJson: titleJson,
+                altJson: altJson,
+                captionOriginal: captionOriginal,
+                creator: creator,
+                sourceName: sourceName,
+                sourceUrl: sourceUrl,
+                doi: doi,
+                license: license,
+                attribution: attribution,
+                isOriginalDiagram: isOriginalDiagram,
+                representsRealData: representsRealData,
+                graphic: graphic,
+                accessedDate: accessedDate,
+                rowid: rowid,
+              ),
+          withReferenceMapper: (p0) => p0
+              .map(
+                (e) => (
+                  e.readTable<Images, Image>(table),
+                  BaseReferences<_$ContentDatabase, Images, Image>(
+                    db,
+                    table,
+                    e,
+                  ),
+                ),
+              )
+              .toList(),
+          prefetchHooksCallback: null,
+        ),
+      );
+}
+
+typedef $ImagesProcessedTableManager =
+    ProcessedTableManager<
+      _$ContentDatabase,
+      Images,
+      Image,
+      $ImagesFilterComposer,
+      $ImagesOrderingComposer,
+      $ImagesAnnotationComposer,
+      $ImagesCreateCompanionBuilder,
+      $ImagesUpdateCompanionBuilder,
+      (Image, BaseReferences<_$ContentDatabase, Images, Image>),
+      Image,
+      PrefetchHooks Function()
+    >;
 
 class $ContentDatabaseManager {
   final _$ContentDatabase _db;
@@ -20304,4 +24195,9 @@ class $ContentDatabaseManager {
       $SearchTermsTableManager(_db, _db.searchTerms);
   $SearchFtsTriTableManager get searchFtsTri =>
       $SearchFtsTriTableManager(_db, _db.searchFtsTri);
+  $ResearchRecordsTableManager get researchRecords =>
+      $ResearchRecordsTableManager(_db, _db.researchRecords);
+  $EntityLinksTableManager get entityLinks =>
+      $EntityLinksTableManager(_db, _db.entityLinks);
+  $ImagesTableManager get images => $ImagesTableManager(_db, _db.images);
 }

@@ -2979,6 +2979,432 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'SIMULATED CASE — not a real case'**
   String get learnSimulatedCase;
+
+  /// Home module.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic histology'**
+  String get moduleHistology;
+
+  /// Home module.
+  ///
+  /// In en, this message translates to:
+  /// **'Research & evidence'**
+  String get moduleResearch;
+
+  /// Substance group (editorial navigation).
+  ///
+  /// In en, this message translates to:
+  /// **'Alcohols & volatiles'**
+  String get group_alcohols_volatiles;
+
+  /// Substance group (editorial navigation).
+  ///
+  /// In en, this message translates to:
+  /// **'Toxic gases'**
+  String get group_toxic_gases;
+
+  /// Substance group (editorial navigation).
+  ///
+  /// In en, this message translates to:
+  /// **'Opioids'**
+  String get group_opioids;
+
+  /// Substance group (editorial navigation).
+  ///
+  /// In en, this message translates to:
+  /// **'Stimulants'**
+  String get group_stimulants;
+
+  /// Substance group (editorial navigation).
+  ///
+  /// In en, this message translates to:
+  /// **'Cannabinoids'**
+  String get group_cannabinoids;
+
+  /// Substance group (editorial navigation).
+  ///
+  /// In en, this message translates to:
+  /// **'Hallucinogens & dissociatives'**
+  String get group_hallucinogens_dissociatives;
+
+  /// Substance group (editorial navigation).
+  ///
+  /// In en, this message translates to:
+  /// **'Benzodiazepines'**
+  String get group_benzodiazepines;
+
+  /// Substance group (editorial navigation).
+  ///
+  /// In en, this message translates to:
+  /// **'Sedatives & hypnotics'**
+  String get group_sedatives_hypnotics;
+
+  /// Substance group (editorial navigation).
+  ///
+  /// In en, this message translates to:
+  /// **'Barbiturates'**
+  String get group_barbiturates;
+
+  /// Substance group (editorial navigation).
+  ///
+  /// In en, this message translates to:
+  /// **'Antidepressants'**
+  String get group_antidepressants;
+
+  /// Substance group (editorial navigation).
+  ///
+  /// In en, this message translates to:
+  /// **'Antipsychotics'**
+  String get group_antipsychotics;
+
+  /// Substance group (editorial navigation).
+  ///
+  /// In en, this message translates to:
+  /// **'Anticonvulsants'**
+  String get group_anticonvulsants;
+
+  /// Substance group (editorial navigation).
+  ///
+  /// In en, this message translates to:
+  /// **'Common pharmaceuticals'**
+  String get group_pharmaceuticals;
+
+  /// Substance group (editorial navigation).
+  ///
+  /// In en, this message translates to:
+  /// **'Adulterants'**
+  String get group_adulterants;
+
+  /// Substance group (editorial navigation).
+  ///
+  /// In en, this message translates to:
+  /// **'Pesticides & rodenticides'**
+  String get group_pesticides;
+
+  /// Substance group (editorial navigation).
+  ///
+  /// In en, this message translates to:
+  /// **'Metals & inorganic poisons'**
+  String get group_metals_inorganic;
+
+  /// Substance group filter: all.
+  ///
+  /// In en, this message translates to:
+  /// **'All groups'**
+  String get groupAll;
+
+  /// Explains groups are editorial.
+  ///
+  /// In en, this message translates to:
+  /// **'Groups are editorial navigation, not a scientific classification claim.'**
+  String get groupEditorialNote;
+
+  /// Substance section.
+  ///
+  /// In en, this message translates to:
+  /// **'Analytical methods (from sources)'**
+  String get detailAnalyticalMethods;
+
+  /// Substance section.
+  ///
+  /// In en, this message translates to:
+  /// **'Reported concentrations'**
+  String get detailReportedConcentrations;
+
+  /// Permanent banner for reported concentrations.
+  ///
+  /// In en, this message translates to:
+  /// **'Reported values from individual studies or cases — NOT toxic, lethal or legal thresholds. Interpretation depends on specimen, case context, tolerance and postmortem changes.'**
+  String get concentrationNotThreshold;
+
+  /// Specimen chips label.
+  ///
+  /// In en, this message translates to:
+  /// **'Specimen'**
+  String get concentrationSpecimen;
+
+  /// Context label.
+  ///
+  /// In en, this message translates to:
+  /// **'Context: {context}'**
+  String concentrationContext(String context);
+
+  /// Chemical structure section.
+  ///
+  /// In en, this message translates to:
+  /// **'Chemical structure'**
+  String get detailStructure;
+
+  /// Knowledge graph section.
+  ///
+  /// In en, this message translates to:
+  /// **'Related professional content'**
+  String get detailRelated;
+
+  /// Graph relation label.
+  ///
+  /// In en, this message translates to:
+  /// **'Analysed by (mentioned in source)'**
+  String get relationAnalysedBy;
+
+  /// Graph relation label.
+  ///
+  /// In en, this message translates to:
+  /// **'Mentioned together in a metabolism source'**
+  String get relationMetabolism;
+
+  /// Graph relation label.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirmatory methods'**
+  String get relationConfirmedBy;
+
+  /// Graph relation label.
+  ///
+  /// In en, this message translates to:
+  /// **'Related topics'**
+  String get relationRelatedTopic;
+
+  /// Graph relation label.
+  ///
+  /// In en, this message translates to:
+  /// **'Research & evidence'**
+  String get relationResearch;
+
+  /// Basis of a link.
+  ///
+  /// In en, this message translates to:
+  /// **'Basis: {basis}'**
+  String relationBasis(String basis);
+
+  /// Show all research for entity.
+  ///
+  /// In en, this message translates to:
+  /// **'All research ({count})'**
+  String researchMore(int count);
+
+  /// Research library title.
+  ///
+  /// In en, this message translates to:
+  /// **'Research & evidence library'**
+  String get researchTitle;
+
+  /// Research library explainer.
+  ///
+  /// In en, this message translates to:
+  /// **'Metadata and links only — full texts are not copied. Dissertations, theses and conference papers are not shown at the level of peer-reviewed full articles.'**
+  String get researchNote;
+
+  /// Research filter all.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get researchAll;
+
+  /// Badge.
+  ///
+  /// In en, this message translates to:
+  /// **'Peer-reviewed'**
+  String get researchPeerReviewed;
+
+  /// Badge.
+  ///
+  /// In en, this message translates to:
+  /// **'Not a peer-reviewed article'**
+  String get researchNotPeerReviewed;
+
+  /// Evidence level badge.
+  ///
+  /// In en, this message translates to:
+  /// **'Evidence {level}'**
+  String researchEvidence(String level);
+
+  /// Copy link action.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy link'**
+  String get researchCopyLink;
+
+  /// Snackbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Link copied'**
+  String get researchLinkCopied;
+
+  /// Linked entities heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Linked records'**
+  String get researchLinked;
+
+  /// Count.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} records'**
+  String researchCount(int count);
+
+  /// Source API.
+  ///
+  /// In en, this message translates to:
+  /// **'Indexed via {api}'**
+  String researchSourceApi(String api);
+
+  /// Research kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Journal article'**
+  String get researchKindJournalArticle;
+
+  /// Research kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Review'**
+  String get researchKindReview;
+
+  /// Research kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Systematic review'**
+  String get researchKindSystematicReview;
+
+  /// Research kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Meta-analysis'**
+  String get researchKindMetaAnalysis;
+
+  /// Research kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Case report'**
+  String get researchKindCaseReport;
+
+  /// Research kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Conference abstract'**
+  String get researchKindConferenceAbstract;
+
+  /// Research kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Conference paper'**
+  String get researchKindConferencePaper;
+
+  /// Research kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Doctoral dissertation'**
+  String get researchKindDissertation;
+
+  /// Research kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Thesis (Master’s / other)'**
+  String get researchKindThesis;
+
+  /// Research kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Official report'**
+  String get researchKindOfficialReport;
+
+  /// Research kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Standard / guideline'**
+  String get researchKindStandard;
+
+  /// Image badge.
+  ///
+  /// In en, this message translates to:
+  /// **'Schematic — not experimental data'**
+  String get imageSchematic;
+
+  /// Image badge.
+  ///
+  /// In en, this message translates to:
+  /// **'Figure from a published study'**
+  String get imageRealData;
+
+  /// Image badge.
+  ///
+  /// In en, this message translates to:
+  /// **'Structure depiction (computed)'**
+  String get imageDepiction;
+
+  /// Image license.
+  ///
+  /// In en, this message translates to:
+  /// **'License: {license}'**
+  String imageLicense(String license);
+
+  /// Attribution heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Attribution'**
+  String get imageAttribution;
+
+  /// Original caption heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Original caption (source language)'**
+  String get imageOriginalCaption;
+
+  /// Open image semantics.
+  ///
+  /// In en, this message translates to:
+  /// **'Open image: {title}'**
+  String imageOpen(String title);
+
+  /// Image fallback.
+  ///
+  /// In en, this message translates to:
+  /// **'Image unavailable offline'**
+  String get imageUnavailable;
+
+  /// Gallery heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Scientific visuals'**
+  String get imagesHeading;
+
+  /// License label.
+  ///
+  /// In en, this message translates to:
+  /// **'Original work (FORENSIC EXPERT)'**
+  String get licenseOriginalWork;
+
+  /// License label.
+  ///
+  /// In en, this message translates to:
+  /// **'Original depiction of factual data'**
+  String get licenseFactualDepiction;
+
+  /// Histology disclaimer.
+  ///
+  /// In en, this message translates to:
+  /// **'Reference information for professionals. The app and Forensic AI do not provide histological diagnoses.'**
+  String get histologyNote;
+
+  /// Claim field.
+  ///
+  /// In en, this message translates to:
+  /// **'Case observation (single case)'**
+  String get fieldCaseObservation;
+
+  /// Claim field.
+  ///
+  /// In en, this message translates to:
+  /// **'Composition (as stated in source)'**
+  String get fieldComposition;
+
+  /// Claim field.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirmation requirement'**
+  String get fieldConfirmation;
 }
 
 class _AppLocalizationsDelegate

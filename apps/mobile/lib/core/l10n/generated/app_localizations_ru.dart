@@ -1623,4 +1623,240 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get learnSimulatedCase => 'СМОДЕЛИРОВАННЫЙ СЛУЧАЙ — не реальное дело';
+
+  @override
+  String get moduleHistology => 'Судебная гистология';
+
+  @override
+  String get moduleResearch => 'Исследования и доказательства';
+
+  @override
+  String get group_alcohols_volatiles => 'Спирты и летучие вещества';
+
+  @override
+  String get group_toxic_gases => 'Токсичные газы';
+
+  @override
+  String get group_opioids => 'Опиоиды';
+
+  @override
+  String get group_stimulants => 'Стимуляторы';
+
+  @override
+  String get group_cannabinoids => 'Каннабиноиды';
+
+  @override
+  String get group_hallucinogens_dissociatives =>
+      'Галлюциногены и диссоциативы';
+
+  @override
+  String get group_benzodiazepines => 'Бензодиазепины';
+
+  @override
+  String get group_sedatives_hypnotics => 'Седативные и снотворные';
+
+  @override
+  String get group_barbiturates => 'Барбитураты';
+
+  @override
+  String get group_antidepressants => 'Антидепрессанты';
+
+  @override
+  String get group_antipsychotics => 'Антипсихотики';
+
+  @override
+  String get group_anticonvulsants => 'Противосудорожные';
+
+  @override
+  String get group_pharmaceuticals => 'Распространённые лекарства';
+
+  @override
+  String get group_adulterants => 'Примеси (адюльтеранты)';
+
+  @override
+  String get group_pesticides => 'Пестициды и родентициды';
+
+  @override
+  String get group_metals_inorganic => 'Металлы и неорганические яды';
+
+  @override
+  String get groupAll => 'Все группы';
+
+  @override
+  String get groupEditorialNote =>
+      'Группы — редакционная навигация, а не научная классификация.';
+
+  @override
+  String get detailAnalyticalMethods => 'Аналитические методы (из источников)';
+
+  @override
+  String get detailReportedConcentrations => 'Сообщённые концентрации';
+
+  @override
+  String get concentrationNotThreshold =>
+      'Значения из отдельных исследований или случаев — НЕ токсические, летальные или правовые пороги. Интерпретация зависит от образца, контекста, толерантности и посмертных изменений.';
+
+  @override
+  String get concentrationSpecimen => 'Образец';
+
+  @override
+  String concentrationContext(String context) {
+    return 'Контекст: $context';
+  }
+
+  @override
+  String get detailStructure => 'Химическая структура';
+
+  @override
+  String get detailRelated => 'Связанные профессиональные материалы';
+
+  @override
+  String get relationAnalysedBy =>
+      'Анализируется методом (упомянуто в источнике)';
+
+  @override
+  String get relationMetabolism => 'Упомянуто вместе в источнике о метаболизме';
+
+  @override
+  String get relationConfirmedBy => 'Подтверждающие методы';
+
+  @override
+  String get relationRelatedTopic => 'Связанные темы';
+
+  @override
+  String get relationResearch => 'Исследования и доказательства';
+
+  @override
+  String relationBasis(String basis) {
+    return 'Основание: $basis';
+  }
+
+  @override
+  String researchMore(int count) {
+    return 'Все исследования ($count)';
+  }
+
+  @override
+  String get researchTitle => 'Библиотека исследований';
+
+  @override
+  String get researchNote =>
+      'Только метаданные и ссылки — полные тексты не копируются. Диссертации, тезисы и материалы конференций не приравниваются к рецензируемым статьям.';
+
+  @override
+  String get researchAll => 'Все';
+
+  @override
+  String get researchPeerReviewed => 'Рецензируемая';
+
+  @override
+  String get researchNotPeerReviewed => 'Не рецензируемая статья';
+
+  @override
+  String researchEvidence(String level) {
+    return 'Доказательность $level';
+  }
+
+  @override
+  String get researchCopyLink => 'Копировать ссылку';
+
+  @override
+  String get researchLinkCopied => 'Ссылка скопирована';
+
+  @override
+  String get researchLinked => 'Связанные записи';
+
+  @override
+  String researchCount(int count) {
+    return '$count записей';
+  }
+
+  @override
+  String researchSourceApi(String api) {
+    return 'Индексировано через $api';
+  }
+
+  @override
+  String get researchKindJournalArticle => 'Статья';
+
+  @override
+  String get researchKindReview => 'Обзор';
+
+  @override
+  String get researchKindSystematicReview => 'Систематический обзор';
+
+  @override
+  String get researchKindMetaAnalysis => 'Метаанализ';
+
+  @override
+  String get researchKindCaseReport => 'Описание случая';
+
+  @override
+  String get researchKindConferenceAbstract => 'Тезисы конференции';
+
+  @override
+  String get researchKindConferencePaper => 'Доклад конференции';
+
+  @override
+  String get researchKindDissertation => 'Докторская диссертация';
+
+  @override
+  String get researchKindThesis => 'Диссертация (магистерская / др.)';
+
+  @override
+  String get researchKindOfficialReport => 'Официальный отчёт';
+
+  @override
+  String get researchKindStandard => 'Стандарт / руководство';
+
+  @override
+  String get imageSchematic => 'Схема — не экспериментальные данные';
+
+  @override
+  String get imageRealData => 'Рисунок из опубликованного исследования';
+
+  @override
+  String get imageDepiction => 'Изображение структуры (рассчитано)';
+
+  @override
+  String imageLicense(String license) {
+    return 'Лицензия: $license';
+  }
+
+  @override
+  String get imageAttribution => 'Атрибуция';
+
+  @override
+  String get imageOriginalCaption => 'Оригинальная подпись';
+
+  @override
+  String imageOpen(String title) {
+    return 'Открыть изображение: $title';
+  }
+
+  @override
+  String get imageUnavailable => 'Изображение недоступно офлайн';
+
+  @override
+  String get imagesHeading => 'Научные иллюстрации';
+
+  @override
+  String get licenseOriginalWork => 'Оригинальная работа (FORENSIC EXPERT)';
+
+  @override
+  String get licenseFactualDepiction =>
+      'Оригинальное изображение фактических данных';
+
+  @override
+  String get histologyNote =>
+      'Справочная информация для специалистов. Приложение и Forensic AI не ставят гистологических диагнозов.';
+
+  @override
+  String get fieldCaseObservation => 'Наблюдение (единичный случай)';
+
+  @override
+  String get fieldComposition => 'Состав (как в источнике)';
+
+  @override
+  String get fieldConfirmation => 'Требование подтверждения';
 }

@@ -1624,4 +1624,238 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get learnSimulatedCase =>
       'SIMULYATSIYA QILINGAN HOLAT — real ish emas';
+
+  @override
+  String get moduleHistology => 'Sud gistologiyasi';
+
+  @override
+  String get moduleResearch => 'Tadqiqotlar va dalillar';
+
+  @override
+  String get group_alcohols_volatiles => 'Spirtlar va uchuvchan moddalar';
+
+  @override
+  String get group_toxic_gases => 'Toksik gazlar';
+
+  @override
+  String get group_opioids => 'Opioidlar';
+
+  @override
+  String get group_stimulants => 'Stimulyatorlar';
+
+  @override
+  String get group_cannabinoids => 'Kannabinoidlar';
+
+  @override
+  String get group_hallucinogens_dissociatives =>
+      'Gallyutsinogenlar va dissotsiativlar';
+
+  @override
+  String get group_benzodiazepines => 'Benzodiazepinlar';
+
+  @override
+  String get group_sedatives_hypnotics => 'Sedativ va uxlatuvchi';
+
+  @override
+  String get group_barbiturates => 'Barbituratlar';
+
+  @override
+  String get group_antidepressants => 'Antidepressantlar';
+
+  @override
+  String get group_antipsychotics => 'Antipsixotiklar';
+
+  @override
+  String get group_anticonvulsants => 'Antikonvulsantlar';
+
+  @override
+  String get group_pharmaceuticals => 'Keng tarqalgan dorilar';
+
+  @override
+  String get group_adulterants => 'Aralashmalar (adulterantlar)';
+
+  @override
+  String get group_pesticides => 'Pestitsidlar va rodentitsidlar';
+
+  @override
+  String get group_metals_inorganic => 'Metallar va anorganik zaharlar';
+
+  @override
+  String get groupAll => 'Barcha guruhlar';
+
+  @override
+  String get groupEditorialNote =>
+      'Guruhlar — tahririy navigatsiya, ilmiy tasnif da’vosi emas.';
+
+  @override
+  String get detailAnalyticalMethods => 'Analitik metodlar (manbalardan)';
+
+  @override
+  String get detailReportedConcentrations => 'Xabar qilingan konsentratsiyalar';
+
+  @override
+  String get concentrationNotThreshold =>
+      'Alohida tadqiqot yoki holatlardan olingan qiymatlar — toksik, o‘ldiruvchi yoki huquqiy chegara EMAS. Talqin namuna, holat konteksti, tolerantlik va o‘limdan keyingi o‘zgarishlarga bog‘liq.';
+
+  @override
+  String get concentrationSpecimen => 'Namuna';
+
+  @override
+  String concentrationContext(String context) {
+    return 'Kontekst: $context';
+  }
+
+  @override
+  String get detailStructure => 'Kimyoviy tuzilish';
+
+  @override
+  String get detailRelated => 'Bog‘liq professional materiallar';
+
+  @override
+  String get relationAnalysedBy => 'Tahlil metodi (manbada tilga olingan)';
+
+  @override
+  String get relationMetabolism => 'Metabolizm manbasida birga tilga olingan';
+
+  @override
+  String get relationConfirmedBy => 'Tasdiqlovchi metodlar';
+
+  @override
+  String get relationRelatedTopic => 'Bog‘liq mavzular';
+
+  @override
+  String get relationResearch => 'Tadqiqotlar va dalillar';
+
+  @override
+  String relationBasis(String basis) {
+    return 'Asos: $basis';
+  }
+
+  @override
+  String researchMore(int count) {
+    return 'Barcha tadqiqotlar ($count)';
+  }
+
+  @override
+  String get researchTitle => 'Tadqiqotlar kutubxonasi';
+
+  @override
+  String get researchNote =>
+      'Faqat metadata va havolalar — to‘liq matn ko‘chirilmaydi. Dissertatsiya, tezis va konferensiya materiallari peer-reviewed maqola bilan teng ko‘rsatilmaydi.';
+
+  @override
+  String get researchAll => 'Barchasi';
+
+  @override
+  String get researchPeerReviewed => 'Taqrizdan o‘tgan';
+
+  @override
+  String get researchNotPeerReviewed => 'Taqrizdan o‘tgan maqola emas';
+
+  @override
+  String researchEvidence(String level) {
+    return 'Dalil darajasi $level';
+  }
+
+  @override
+  String get researchCopyLink => 'Havolani nusxalash';
+
+  @override
+  String get researchLinkCopied => 'Havola nusxalandi';
+
+  @override
+  String get researchLinked => 'Bog‘liq yozuvlar';
+
+  @override
+  String researchCount(int count) {
+    return '$count ta yozuv';
+  }
+
+  @override
+  String researchSourceApi(String api) {
+    return '$api orqali indekslangan';
+  }
+
+  @override
+  String get researchKindJournalArticle => 'Maqola';
+
+  @override
+  String get researchKindReview => 'Sharh (review)';
+
+  @override
+  String get researchKindSystematicReview => 'Tizimli sharh';
+
+  @override
+  String get researchKindMetaAnalysis => 'Meta-tahlil';
+
+  @override
+  String get researchKindCaseReport => 'Holat tavsifi';
+
+  @override
+  String get researchKindConferenceAbstract => 'Konferensiya tezisi';
+
+  @override
+  String get researchKindConferencePaper => 'Konferensiya maqolasi';
+
+  @override
+  String get researchKindDissertation => 'Doktorlik dissertatsiyasi';
+
+  @override
+  String get researchKindThesis => 'Dissertatsiya (magistr / boshqa)';
+
+  @override
+  String get researchKindOfficialReport => 'Rasmiy hisobot';
+
+  @override
+  String get researchKindStandard => 'Standart / qo‘llanma';
+
+  @override
+  String get imageSchematic => 'Sxema — eksperimental ma’lumot emas';
+
+  @override
+  String get imageRealData => 'Nashr qilingan tadqiqotdan rasm';
+
+  @override
+  String get imageDepiction => 'Struktura tasviri (hisoblangan)';
+
+  @override
+  String imageLicense(String license) {
+    return 'Litsenziya: $license';
+  }
+
+  @override
+  String get imageAttribution => 'Atribusiya';
+
+  @override
+  String get imageOriginalCaption => 'Asl izoh (manba tilida)';
+
+  @override
+  String imageOpen(String title) {
+    return 'Rasmni ochish: $title';
+  }
+
+  @override
+  String get imageUnavailable => 'Rasm oflayn mavjud emas';
+
+  @override
+  String get imagesHeading => 'Ilmiy tasvirlar';
+
+  @override
+  String get licenseOriginalWork => 'Original ish (FORENSIC EXPERT)';
+
+  @override
+  String get licenseFactualDepiction => 'Faktik ma’lumotning original tasviri';
+
+  @override
+  String get histologyNote =>
+      'Mutaxassislar uchun ma’lumotnoma. Ilova va Forensic AI gistologik tashxis qo‘ymaydi.';
+
+  @override
+  String get fieldCaseObservation => 'Holat kuzatuvi (bitta holat)';
+
+  @override
+  String get fieldComposition => 'Tarkib (manbadagidek)';
+
+  @override
+  String get fieldConfirmation => 'Tasdiqlash talabi';
 }

@@ -2112,5 +2112,329 @@
   "learnSimulatedCase": "SIMULATED CASE — not a real case",
   "@learnSimulatedCase": {
     "description": "Label for simulated (non-real) case studies."
+  },
+  "moduleHistology": "Forensic histology",
+  "@moduleHistology": {
+    "description": "Home module."
+  },
+  "moduleResearch": "Research & evidence",
+  "@moduleResearch": {
+    "description": "Home module."
+  },
+  "group_alcohols_volatiles": "Alcohols & volatiles",
+  "@group_alcohols_volatiles": {
+    "description": "Substance group (editorial navigation)."
+  },
+  "group_toxic_gases": "Toxic gases",
+  "@group_toxic_gases": {
+    "description": "Substance group (editorial navigation)."
+  },
+  "group_opioids": "Opioids",
+  "@group_opioids": {
+    "description": "Substance group (editorial navigation)."
+  },
+  "group_stimulants": "Stimulants",
+  "@group_stimulants": {
+    "description": "Substance group (editorial navigation)."
+  },
+  "group_cannabinoids": "Cannabinoids",
+  "@group_cannabinoids": {
+    "description": "Substance group (editorial navigation)."
+  },
+  "group_hallucinogens_dissociatives": "Hallucinogens & dissociatives",
+  "@group_hallucinogens_dissociatives": {
+    "description": "Substance group (editorial navigation)."
+  },
+  "group_benzodiazepines": "Benzodiazepines",
+  "@group_benzodiazepines": {
+    "description": "Substance group (editorial navigation)."
+  },
+  "group_sedatives_hypnotics": "Sedatives & hypnotics",
+  "@group_sedatives_hypnotics": {
+    "description": "Substance group (editorial navigation)."
+  },
+  "group_barbiturates": "Barbiturates",
+  "@group_barbiturates": {
+    "description": "Substance group (editorial navigation)."
+  },
+  "group_antidepressants": "Antidepressants",
+  "@group_antidepressants": {
+    "description": "Substance group (editorial navigation)."
+  },
+  "group_antipsychotics": "Antipsychotics",
+  "@group_antipsychotics": {
+    "description": "Substance group (editorial navigation)."
+  },
+  "group_anticonvulsants": "Anticonvulsants",
+  "@group_anticonvulsants": {
+    "description": "Substance group (editorial navigation)."
+  },
+  "group_pharmaceuticals": "Common pharmaceuticals",
+  "@group_pharmaceuticals": {
+    "description": "Substance group (editorial navigation)."
+  },
+  "group_adulterants": "Adulterants",
+  "@group_adulterants": {
+    "description": "Substance group (editorial navigation)."
+  },
+  "group_pesticides": "Pesticides & rodenticides",
+  "@group_pesticides": {
+    "description": "Substance group (editorial navigation)."
+  },
+  "group_metals_inorganic": "Metals & inorganic poisons",
+  "@group_metals_inorganic": {
+    "description": "Substance group (editorial navigation)."
+  },
+  "groupAll": "All groups",
+  "@groupAll": {
+    "description": "Substance group filter: all."
+  },
+  "groupEditorialNote": "Groups are editorial navigation, not a scientific classification claim.",
+  "@groupEditorialNote": {
+    "description": "Explains groups are editorial."
+  },
+  "detailAnalyticalMethods": "Analytical methods (from sources)",
+  "@detailAnalyticalMethods": {
+    "description": "Substance section."
+  },
+  "detailReportedConcentrations": "Reported concentrations",
+  "@detailReportedConcentrations": {
+    "description": "Substance section."
+  },
+  "concentrationNotThreshold": "Reported values from individual studies or cases — NOT toxic, lethal or legal thresholds. Interpretation depends on specimen, case context, tolerance and postmortem changes.",
+  "@concentrationNotThreshold": {
+    "description": "Permanent banner for reported concentrations."
+  },
+  "concentrationSpecimen": "Specimen",
+  "@concentrationSpecimen": {
+    "description": "Specimen chips label."
+  },
+  "concentrationContext": "Context: {context}",
+  "@concentrationContext": {
+    "description": "Context label.",
+    "placeholders": {
+      "context": {
+        "type": "String"
+      }
+    }
+  },
+  "detailStructure": "Chemical structure",
+  "@detailStructure": {
+    "description": "Chemical structure section."
+  },
+  "detailRelated": "Related professional content",
+  "@detailRelated": {
+    "description": "Knowledge graph section."
+  },
+  "relationAnalysedBy": "Analysed by (mentioned in source)",
+  "@relationAnalysedBy": {
+    "description": "Graph relation label."
+  },
+  "relationMetabolism": "Mentioned together in a metabolism source",
+  "@relationMetabolism": {
+    "description": "Graph relation label."
+  },
+  "relationConfirmedBy": "Confirmatory methods",
+  "@relationConfirmedBy": {
+    "description": "Graph relation label."
+  },
+  "relationRelatedTopic": "Related topics",
+  "@relationRelatedTopic": {
+    "description": "Graph relation label."
+  },
+  "relationResearch": "Research & evidence",
+  "@relationResearch": {
+    "description": "Graph relation label."
+  },
+  "relationBasis": "Basis: {basis}",
+  "@relationBasis": {
+    "description": "Basis of a link.",
+    "placeholders": {
+      "basis": {
+        "type": "String"
+      }
+    }
+  },
+  "researchMore": "All research ({count})",
+  "@researchMore": {
+    "description": "Show all research for entity.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "researchTitle": "Research & evidence library",
+  "@researchTitle": {
+    "description": "Research library title."
+  },
+  "researchNote": "Metadata and links only — full texts are not copied. Dissertations, theses and conference papers are not shown at the level of peer-reviewed full articles.",
+  "@researchNote": {
+    "description": "Research library explainer."
+  },
+  "researchAll": "All",
+  "@researchAll": {
+    "description": "Research filter all."
+  },
+  "researchPeerReviewed": "Peer-reviewed",
+  "@researchPeerReviewed": {
+    "description": "Badge."
+  },
+  "researchNotPeerReviewed": "Not a peer-reviewed article",
+  "@researchNotPeerReviewed": {
+    "description": "Badge."
+  },
+  "researchEvidence": "Evidence {level}",
+  "@researchEvidence": {
+    "description": "Evidence level badge.",
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "researchCopyLink": "Copy link",
+  "@researchCopyLink": {
+    "description": "Copy link action."
+  },
+  "researchLinkCopied": "Link copied",
+  "@researchLinkCopied": {
+    "description": "Snackbar."
+  },
+  "researchLinked": "Linked records",
+  "@researchLinked": {
+    "description": "Linked entities heading."
+  },
+  "researchCount": "{count} records",
+  "@researchCount": {
+    "description": "Count.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "researchSourceApi": "Indexed via {api}",
+  "@researchSourceApi": {
+    "description": "Source API.",
+    "placeholders": {
+      "api": {
+        "type": "String"
+      }
+    }
+  },
+  "researchKindJournalArticle": "Journal article",
+  "@researchKindJournalArticle": {
+    "description": "Research kind."
+  },
+  "researchKindReview": "Review",
+  "@researchKindReview": {
+    "description": "Research kind."
+  },
+  "researchKindSystematicReview": "Systematic review",
+  "@researchKindSystematicReview": {
+    "description": "Research kind."
+  },
+  "researchKindMetaAnalysis": "Meta-analysis",
+  "@researchKindMetaAnalysis": {
+    "description": "Research kind."
+  },
+  "researchKindCaseReport": "Case report",
+  "@researchKindCaseReport": {
+    "description": "Research kind."
+  },
+  "researchKindConferenceAbstract": "Conference abstract",
+  "@researchKindConferenceAbstract": {
+    "description": "Research kind."
+  },
+  "researchKindConferencePaper": "Conference paper",
+  "@researchKindConferencePaper": {
+    "description": "Research kind."
+  },
+  "researchKindDissertation": "Doctoral dissertation",
+  "@researchKindDissertation": {
+    "description": "Research kind."
+  },
+  "researchKindThesis": "Thesis (Master’s / other)",
+  "@researchKindThesis": {
+    "description": "Research kind."
+  },
+  "researchKindOfficialReport": "Official report",
+  "@researchKindOfficialReport": {
+    "description": "Research kind."
+  },
+  "researchKindStandard": "Standard / guideline",
+  "@researchKindStandard": {
+    "description": "Research kind."
+  },
+  "imageSchematic": "Schematic — not experimental data",
+  "@imageSchematic": {
+    "description": "Image badge."
+  },
+  "imageRealData": "Figure from a published study",
+  "@imageRealData": {
+    "description": "Image badge."
+  },
+  "imageDepiction": "Structure depiction (computed)",
+  "@imageDepiction": {
+    "description": "Image badge."
+  },
+  "imageLicense": "License: {license}",
+  "@imageLicense": {
+    "description": "Image license.",
+    "placeholders": {
+      "license": {
+        "type": "String"
+      }
+    }
+  },
+  "imageAttribution": "Attribution",
+  "@imageAttribution": {
+    "description": "Attribution heading."
+  },
+  "imageOriginalCaption": "Original caption (source language)",
+  "@imageOriginalCaption": {
+    "description": "Original caption heading."
+  },
+  "imageOpen": "Open image: {title}",
+  "@imageOpen": {
+    "description": "Open image semantics.",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "imageUnavailable": "Image unavailable offline",
+  "@imageUnavailable": {
+    "description": "Image fallback."
+  },
+  "imagesHeading": "Scientific visuals",
+  "@imagesHeading": {
+    "description": "Gallery heading."
+  },
+  "licenseOriginalWork": "Original work (FORENSIC EXPERT)",
+  "@licenseOriginalWork": {
+    "description": "License label."
+  },
+  "licenseFactualDepiction": "Original depiction of factual data",
+  "@licenseFactualDepiction": {
+    "description": "License label."
+  },
+  "histologyNote": "Reference information for professionals. The app and Forensic AI do not provide histological diagnoses.",
+  "@histologyNote": {
+    "description": "Histology disclaimer."
+  },
+  "fieldCaseObservation": "Case observation (single case)",
+  "@fieldCaseObservation": {
+    "description": "Claim field."
+  },
+  "fieldComposition": "Composition (as stated in source)",
+  "@fieldComposition": {
+    "description": "Claim field."
+  },
+  "fieldConfirmation": "Confirmation requirement",
+  "@fieldConfirmation": {
+    "description": "Claim field."
   }
 }

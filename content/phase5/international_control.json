@@ -1,0 +1,1429 @@
+[
+ {
+  "substance_id": "morphine",
+  "incb_name": "MORPHINE",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "yellow",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf",
+  "source_sha256": "3f60040ba7b3302aa0393da185a35b17b4bc65bd8f29b62240f5dbc2e4f74ba0",
+  "convention": "Single Convention on Narcotic Drugs, 1961",
+  "edition": "Yellow List, 65th edition, July 2026",
+  "schedules": [
+   "I"
+  ],
+  "rows": [
+   {
+    "list": "yellow",
+    "line": 330,
+    "ids_code": "NM 009",
+    "text": "NM 009 57-27-2 MORPHINE the principal alkaloid of opium and of opium poppy",
+    "continuation": "",
+    "schedule": "I"
+   }
+  ]
+ },
+ {
+  "substance_id": "codeine",
+  "incb_name": "CODEINE",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "yellow",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf",
+  "source_sha256": "3f60040ba7b3302aa0393da185a35b17b4bc65bd8f29b62240f5dbc2e4f74ba0",
+  "convention": "Single Convention on Narcotic Drugs, 1961",
+  "edition": "Yellow List, 65th edition, July 2026",
+  "schedules": [
+   "II"
+  ],
+  "rows": [
+   {
+    "list": "yellow",
+    "line": 565,
+    "ids_code": "NC 005",
+    "text": "NC 005 76-57-3 CODEINE 3-methylmorphine (derivate of morphine, alkaloid",
+    "continuation": "contained in opium and poppy straw)",
+    "schedule": "II"
+   }
+  ]
+ },
+ {
+  "substance_id": "heroin",
+  "incb_name": "HEROIN",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "yellow",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf",
+  "source_sha256": "3f60040ba7b3302aa0393da185a35b17b4bc65bd8f29b62240f5dbc2e4f74ba0",
+  "convention": "Single Convention on Narcotic Drugs, 1961",
+  "edition": "Yellow List, 65th edition, July 2026",
+  "schedules": [
+   "I",
+   "IV"
+  ],
+  "rows": [
+   {
+    "list": "yellow",
+    "line": 275,
+    "ids_code": "NH 001",
+    "text": "NH 001 561-27-3 HEROIN diacetylmorphine (derivative of morphine)",
+    "continuation": "",
+    "schedule": "I"
+   },
+   {
+    "list": "yellow",
+    "line": 603,
+    "ids_code": "NH 001",
+    "text": "NH 001 561-27-3 HEROIN Diacetylmorphine (derivative of morphine)",
+    "continuation": null,
+    "schedule": "IV"
+   }
+  ]
+ },
+ {
+  "substance_id": "hydrocodone",
+  "incb_name": "HYDROCODONE",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "yellow",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf",
+  "source_sha256": "3f60040ba7b3302aa0393da185a35b17b4bc65bd8f29b62240f5dbc2e4f74ba0",
+  "convention": "Single Convention on Narcotic Drugs, 1961",
+  "edition": "Yellow List, 65th edition, July 2026",
+  "schedules": [
+   "I"
+  ],
+  "rows": [
+   {
+    "list": "yellow",
+    "line": 277,
+    "ids_code": "NH 002",
+    "text": "NH 002 125-29-1 HYDROCODONE dihydrocodeinone (derivative of morphine)",
+    "continuation": "",
+    "schedule": "I"
+   }
+  ]
+ },
+ {
+  "substance_id": "hydromorphone",
+  "incb_name": "HYDROMORPHONE",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "yellow",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf",
+  "source_sha256": "3f60040ba7b3302aa0393da185a35b17b4bc65bd8f29b62240f5dbc2e4f74ba0",
+  "convention": "Single Convention on Narcotic Drugs, 1961",
+  "edition": "Yellow List, 65th edition, July 2026",
+  "schedules": [
+   "I"
+  ],
+  "rows": [
+   {
+    "list": "yellow",
+    "line": 281,
+    "ids_code": "NH 004",
+    "text": "NH 004 466-99-9 HYDROMORPHONE dihydromorphinone (derivative of morphine)",
+    "continuation": "",
+    "schedule": "I"
+   }
+  ]
+ },
+ {
+  "substance_id": "oxycodone",
+  "incb_name": "OXYCODONE",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "yellow",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf",
+  "source_sha256": "3f60040ba7b3302aa0393da185a35b17b4bc65bd8f29b62240f5dbc2e4f74ba0",
+  "convention": "Single Convention on Narcotic Drugs, 1961",
+  "edition": "Yellow List, 65th edition, July 2026",
+  "schedules": [
+   "I"
+  ],
+  "rows": [
+   {
+    "list": "yellow",
+    "line": 396,
+    "ids_code": "NO 002",
+    "text": "NO 002 76-42-6 OXYCODONE 14-hydroxydihydrocodeinone (derivate of morphine)",
+    "continuation": "",
+    "schedule": "I"
+   }
+  ]
+ },
+ {
+  "substance_id": "oxymorphone",
+  "incb_name": "OXYMORPHONE",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "yellow",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf",
+  "source_sha256": "3f60040ba7b3302aa0393da185a35b17b4bc65bd8f29b62240f5dbc2e4f74ba0",
+  "convention": "Single Convention on Narcotic Drugs, 1961",
+  "edition": "Yellow List, 65th edition, July 2026",
+  "schedules": [
+   "I"
+  ],
+  "rows": [
+   {
+    "list": "yellow",
+    "line": 398,
+    "ids_code": "NO 003",
+    "text": "NO 003 76-41-5 OXYMORPHONE 14-hydroxydihydromorphinone (derivate of morphine)",
+    "continuation": "",
+    "schedule": "I"
+   }
+  ]
+ },
+ {
+  "substance_id": "methadone",
+  "incb_name": "METHADONE",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "yellow",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf",
+  "source_sha256": "3f60040ba7b3302aa0393da185a35b17b4bc65bd8f29b62240f5dbc2e4f74ba0",
+  "convention": "Single Convention on Narcotic Drugs, 1961",
+  "edition": "Yellow List, 65th edition, July 2026",
+  "schedules": [
+   "I"
+  ],
+  "rows": [
+   {
+    "list": "yellow",
+    "line": 302,
+    "ids_code": "NM 002",
+    "text": "NM 002 76-99-3 METHADONE 6-dimethylamino-4,4-diphenyl-3-heptanone",
+    "continuation": "",
+    "schedule": "I"
+   }
+  ]
+ },
+ {
+  "substance_id": "buprenorphine",
+  "incb_name": "BUPRENORPHINE",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "III"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 343,
+    "ids_code": "PB 006",
+    "text": "PB 006 52485-79-7 BUPRENORPHINE 2l-cyclopropyl-7-α-[(S)-1-hydroxy-1,2,2-",
+    "continuation": "trimethylpropyl]-6,14-endo-ethano-6,7,8,14-",
+    "schedule": "III"
+   }
+  ]
+ },
+ {
+  "substance_id": "fentanyl",
+  "incb_name": "FENTANYL",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "yellow",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf",
+  "source_sha256": "3f60040ba7b3302aa0393da185a35b17b4bc65bd8f29b62240f5dbc2e4f74ba0",
+  "convention": "Single Convention on Narcotic Drugs, 1961",
+  "edition": "Yellow List, 65th edition, July 2026",
+  "schedules": [
+   "I"
+  ],
+  "rows": [
+   {
+    "list": "yellow",
+    "line": 265,
+    "ids_code": "NF 001",
+    "text": "NF 001 437-38-7 FENTANYL 1-phenethyl-4-N-propionylanilinopiperidine",
+    "continuation": "",
+    "schedule": "I"
+   }
+  ]
+ },
+ {
+  "substance_id": "carfentanil",
+  "incb_name": "CARFENTANIL",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "yellow",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf",
+  "source_sha256": "3f60040ba7b3302aa0393da185a35b17b4bc65bd8f29b62240f5dbc2e4f74ba0",
+  "convention": "Single Convention on Narcotic Drugs, 1961",
+  "edition": "Yellow List, 65th edition, July 2026",
+  "schedules": [
+   "I",
+   "IV"
+  ],
+  "rows": [
+   {
+    "list": "yellow",
+    "line": 181,
+    "ids_code": "NC 090",
+    "text": "NC 090 59708-52-0 CARFENTANIL Methyl 1-(2-phenylethyl)-4-[phenyl(propanoyl)amino]piperidine-",
+    "continuation": "4-carboxylate",
+    "schedule": "I"
+   },
+   {
+    "list": "yellow",
+    "line": 598,
+    "ids_code": "NC 090",
+    "text": "NC 090 59708-52-0 CARFENTANIL Methyl 1-(2-phenylethyl)-4-",
+    "continuation": "[phenyl(propanoyl)amino]piperidine-4-carboxylate",
+    "schedule": "IV"
+   }
+  ]
+ },
+ {
+  "substance_id": "acetylfentanyl",
+  "incb_name": "ACETYLFENTANYL",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "yellow",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf",
+  "source_sha256": "3f60040ba7b3302aa0393da185a35b17b4bc65bd8f29b62240f5dbc2e4f74ba0",
+  "convention": "Single Convention on Narcotic Drugs, 1961",
+  "edition": "Yellow List, 65th edition, July 2026",
+  "schedules": [
+   "I",
+   "IV"
+  ],
+  "rows": [
+   {
+    "list": "yellow",
+    "line": 111,
+    "ids_code": "NA 019",
+    "text": "NA 019 3258-84-2 ACETYLFENTANYL N-Phenyl-N-[1-(2-phenylethyl)-4-piperidinyl]acetamide",
+    "continuation": "",
+    "schedule": "I"
+   },
+   {
+    "list": "yellow",
+    "line": 589,
+    "ids_code": "NA 019",
+    "text": "NA 019 3258-84-2 ACETYLFENTANYL N-Phenyl-N-[1-(2-phenylethyl)-4-",
+    "continuation": "piperidinyl]acetamide",
+    "schedule": "IV"
+   }
+  ]
+ },
+ {
+  "substance_id": "furanylfentanyl",
+  "incb_name": "FURANYLFENTANYL",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "yellow",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf",
+  "source_sha256": "3f60040ba7b3302aa0393da185a35b17b4bc65bd8f29b62240f5dbc2e4f74ba0",
+  "convention": "Single Convention on Narcotic Drugs, 1961",
+  "edition": "Yellow List, 65th edition, July 2026",
+  "schedules": [
+   "I"
+  ],
+  "rows": [
+   {
+    "list": "yellow",
+    "line": 270,
+    "ids_code": "NF 004",
+    "text": "NF 004 101345-66-8 FURANYLFENTANYL N-phenyl-N-[1-(2-phenylethyl)piperidin-4-yl]furan-2-carboxamide",
+    "continuation": "",
+    "schedule": "I"
+   }
+  ]
+ },
+ {
+  "substance_id": "sufentanil",
+  "incb_name": "SUFENTANIL",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "yellow",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf",
+  "source_sha256": "3f60040ba7b3302aa0393da185a35b17b4bc65bd8f29b62240f5dbc2e4f74ba0",
+  "convention": "Single Convention on Narcotic Drugs, 1961",
+  "edition": "Yellow List, 65th edition, July 2026",
+  "schedules": [
+   "I"
+  ],
+  "rows": [
+   {
+    "list": "yellow",
+    "line": 460,
+    "ids_code": "NS 001",
+    "text": "NS 001 56030-54-7 SUFENTANIL N-[4-(methoxymethyl)-1-[2-(2-thienyl)ethyl]-4-piperidyl]propionanilide",
+    "continuation": "",
+    "schedule": "I"
+   }
+  ]
+ },
+ {
+  "substance_id": "alfentanil",
+  "incb_name": "ALFENTANIL",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "yellow",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf",
+  "source_sha256": "3f60040ba7b3302aa0393da185a35b17b4bc65bd8f29b62240f5dbc2e4f74ba0",
+  "convention": "Single Convention on Narcotic Drugs, 1961",
+  "edition": "Yellow List, 65th edition, July 2026",
+  "schedules": [
+   "I"
+  ],
+  "rows": [
+   {
+    "list": "yellow",
+    "line": 119,
+    "ids_code": "NA 014",
+    "text": "NA 014 71195-58-9 ALFENTANIL N-[1-[2-(4-ethyl-4,5-dihydro-5-oxo-1H-tetrazol-1-yl)ethyl]-4-",
+    "continuation": "(methoxymethyl)-4-piperidinyl]-N-phenylpropanamide",
+    "schedule": "I"
+   }
+  ]
+ },
+ {
+  "substance_id": "isotonitazene",
+  "incb_name": "ISOTONITAZENE",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "yellow",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf",
+  "source_sha256": "3f60040ba7b3302aa0393da185a35b17b4bc65bd8f29b62240f5dbc2e4f74ba0",
+  "convention": "Single Convention on Narcotic Drugs, 1961",
+  "edition": "Yellow List, 65th edition, July 2026",
+  "schedules": [
+   "I"
+  ],
+  "rows": [
+   {
+    "list": "yellow",
+    "line": 287,
+    "ids_code": "NI 003",
+    "text": "NI 003 14188-81-9 ISOTONITAZENE N,N-diethyl-2-(2-(4-isopropoxybenzyl)-5-nitro-1H-",
+    "continuation": "benzo[d]imidazol-1-yl)ethan-1-amine",
+    "schedule": "I"
+   }
+  ]
+ },
+ {
+  "substance_id": "metonitazene",
+  "incb_name": "METONITAZENE",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "yellow",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf",
+  "source_sha256": "3f60040ba7b3302aa0393da185a35b17b4bc65bd8f29b62240f5dbc2e4f74ba0",
+  "convention": "Single Convention on Narcotic Drugs, 1961",
+  "edition": "Yellow List, 65th edition, July 2026",
+  "schedules": [
+   "I"
+  ],
+  "rows": [
+   {
+    "list": "yellow",
+    "line": 320,
+    "ids_code": "NM 026",
+    "text": "NM 026 14680-51-4 METONITAZENE N,N-diethyl-2-(2-(4-methoxybenzyl)-5-nitro-1H-benzo[d]imidazol-",
+    "continuation": "1-yl)ethan-1-amine",
+    "schedule": "I"
+   }
+  ]
+ },
+ {
+  "substance_id": "protonitazene",
+  "incb_name": "PROTONITAZENE",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "yellow",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf",
+  "source_sha256": "3f60040ba7b3302aa0393da185a35b17b4bc65bd8f29b62240f5dbc2e4f74ba0",
+  "convention": "Single Convention on Narcotic Drugs, 1961",
+  "edition": "Yellow List, 65th edition, July 2026",
+  "schedules": [
+   "I"
+  ],
+  "rows": [
+   {
+    "list": "yellow",
+    "line": 448,
+    "ids_code": "NP 035",
+    "text": "NP 035 95958-84-2 PROTONITAZENE N,N-Diethyl-5-nitro-2-[(4-propoxyphenyl)methyl]-1H-benzimidazole-",
+    "continuation": "1-ethanamine",
+    "schedule": "I"
+   }
+  ]
+ },
+ {
+  "substance_id": "etonitazene",
+  "incb_name": "ETONITAZENE",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "yellow",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf",
+  "source_sha256": "3f60040ba7b3302aa0393da185a35b17b4bc65bd8f29b62240f5dbc2e4f74ba0",
+  "convention": "Single Convention on Narcotic Drugs, 1961",
+  "edition": "Yellow List, 65th edition, July 2026",
+  "schedules": [
+   "I"
+  ],
+  "rows": [
+   {
+    "list": "yellow",
+    "line": 245,
+    "ids_code": "NE 006",
+    "text": "NE 006 911-65-9 ETONITAZENE 1-diethylaminoethyl-2-p-ethoxybenzyl-5-nitrobenzimidazole",
+    "continuation": "",
+    "schedule": "I"
+   }
+  ]
+ },
+ {
+  "substance_id": "etonitazepyne",
+  "incb_name": "ETONITAZEPYNE",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "yellow",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf",
+  "source_sha256": "3f60040ba7b3302aa0393da185a35b17b4bc65bd8f29b62240f5dbc2e4f74ba0",
+  "convention": "Single Convention on Narcotic Drugs, 1961",
+  "edition": "Yellow List, 65th edition, July 2026",
+  "schedules": [
+   "I"
+  ],
+  "rows": [
+   {
+    "list": "yellow",
+    "line": 250,
+    "ids_code": "NE010",
+    "text": "NE010 2785346-75-8 ETONITAZEPYNE 2-[(4-Ethoxyphenyl)methyl]-5-nitro-1-(2-pyrrolidin-1-ylethyl)-1H-",
+    "continuation": "benzoimidazole",
+    "schedule": "I"
+   }
+  ]
+ },
+ {
+  "substance_id": "cocaine",
+  "incb_name": "COCAINE",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "yellow",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf",
+  "source_sha256": "3f60040ba7b3302aa0393da185a35b17b4bc65bd8f29b62240f5dbc2e4f74ba0",
+  "convention": "Single Convention on Narcotic Drugs, 1961",
+  "edition": "Yellow List, 65th edition, July 2026",
+  "schedules": [
+   "I"
+  ],
+  "rows": [
+   {
+    "list": "yellow",
+    "line": 190,
+    "ids_code": "NC 004",
+    "text": "NC 004 50-36-2 COCAINE methyl ester of benzoylecgonine (an alkaloid found in coca leaves or",
+    "continuation": "prepared by synthesis from ecgonine)",
+    "schedule": "I"
+   }
+  ]
+ },
+ {
+  "substance_id": "amphetamine",
+  "incb_name": "AMFETAMINE",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "II"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 194,
+    "ids_code": "PA 003",
+    "text": "PA 003 300-62-9 AMFETAMINE amphetamine (±)-α-methylphenethylamine",
+    "continuation": null,
+    "schedule": "II"
+   }
+  ]
+ },
+ {
+  "substance_id": "methamphetamine",
+  "incb_name": "METAMFETAMINE",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "II"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 266,
+    "ids_code": "PM 005",
+    "text": "PM 005 537-46-2 METAMFETAMINE methamphetamine (+)-(S)-N,α-dimethylphenethylamine",
+    "continuation": null,
+    "schedule": "II"
+   },
+   {
+    "list": "green",
+    "line": 269,
+    "ids_code": "PM 015",
+    "text": "PM 015 7632-10-2 METAMFETAMINE methamphetamine (±)-N,α-dimethylphenethylamine",
+    "continuation": "RACEMATE racemate",
+    "schedule": "II"
+   }
+  ]
+ },
+ {
+  "substance_id": "mdma",
+  "incb_name": "MDMA",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "I"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 148,
+    "ids_code": "PM 011",
+    "text": "PM 011 MDMA (±)-N,α-dimethyl-3,4-(methylenedioxy)phenethylamine",
+    "continuation": null,
+    "schedule": "I"
+   }
+  ]
+ },
+ {
+  "substance_id": "mda",
+  "incb_name": "MDA",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "I"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 150,
+    "ids_code": "PM 014",
+    "text": "PM 014 TENAMFETAMINE MDA α-methyl-3,4-(methylenedioxy)phenethylamine",
+    "continuation": null,
+    "schedule": "I"
+   }
+  ]
+ },
+ {
+  "substance_id": "mdea",
+  "incb_name": "MDEA",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "I"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 154,
+    "ids_code": "PN 004",
+    "text": "PN 004 N-ethyl MDA, MDEA (±)-N-ethyl-α-methyl-3,4-(methylenedioxy)phenethylamine",
+    "continuation": null,
+    "schedule": "I"
+   }
+  ]
+ },
+ {
+  "substance_id": "mephedrone",
+  "incb_name": "MEPHEDRONE",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "II"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 274,
+    "ids_code": "PM 022",
+    "text": "PM 022 1189805-46-6 mephedrone, 4- (RS)-2-methylamino-1-(4-methylphenyl)propan-",
+    "continuation": "methylmethcathinone 1-one",
+    "schedule": "II"
+   }
+  ]
+ },
+ {
+  "substance_id": "mdpv",
+  "incb_name": "MDPV",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "II"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 271,
+    "ids_code": "PM 021",
+    "text": "PM 021 687603-66-3 MDPV, 3,4- (RS)-1-(Benzo[d][1,3]dioxol-5-yl)-2-",
+    "continuation": "methylenedioxypyrovale (pyrrolidin-1-yl)pentan-1-one",
+    "schedule": "II"
+   }
+  ]
+ },
+ {
+  "substance_id": "alpha-pvp",
+  "incb_name": "alpha-PVP",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "II"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 308,
+    "ids_code": "PP 022",
+    "text": "PP 022 14530-33-7 alpha-PVP α-pyrrolidinovalerophenone",
+    "continuation": "",
+    "schedule": "II"
+   }
+  ]
+ },
+ {
+  "substance_id": "methylphenidate",
+  "incb_name": "METHYLPHENIDATE",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "II"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 268,
+    "ids_code": "PM 007",
+    "text": "PM 007 113-45-1 METHYLPHENIDATE methyl α-phenyl-2-piperidine acetate",
+    "continuation": null,
+    "schedule": "II"
+   }
+  ]
+ },
+ {
+  "substance_id": "cathinone",
+  "incb_name": "CATHINONE",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "I"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 136,
+    "ids_code": "PC 010",
+    "text": "PC 010 CATHINONE (–)-(S)-2-aminopropiophenone",
+    "continuation": null,
+    "schedule": "I"
+   }
+  ]
+ },
+ {
+  "substance_id": "thc",
+  "incb_name": "delta-9-tetrahydro-",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "II"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 221,
+    "ids_code": "PD 010",
+    "text": "PD 010 1972-08-3 delta-9-tetrahydro- (6aR,10aR)-6a,7,8,10a-tetrahydro-6,6,9-",
+    "continuation": "cannabinol and its trimethyl-3-pentyl-6H-dibenzo[b,d]pyran-",
+    "schedule": "II"
+   }
+  ]
+ },
+ {
+  "substance_id": "jwh-018",
+  "incb_name": "JWH-018",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "II"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 260,
+    "ids_code": "PJ 001",
+    "text": "PJ 001 209414-07-3 JWH-018, AM-678 Naphthalene-1-yl(1-pentyl-1H-indol-3-",
+    "continuation": "yl)methanone",
+    "schedule": "II"
+   }
+  ]
+ },
+ {
+  "substance_id": "mdmb-4en-pinaca",
+  "incb_name": "MDMB-4en-PINACA",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "II"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 290,
+    "ids_code": "PM 030",
+    "text": "PM 030 2504100-70-1 MDMB-4en-PINACA Methyl 3,3-dimethyl-2-(1- (pent-4-en-1-yl)-1H-",
+    "continuation": "indazole-3- carboxamido)butanoate",
+    "schedule": "II"
+   }
+  ]
+ },
+ {
+  "substance_id": "adb-butinaca",
+  "incb_name": "ADB-BUTINACA",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "II"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 203,
+    "ids_code": "PA 011",
+    "text": "PA 011 2682867-55-4 ADB-BUTINACA N-[1-(aminocarbonyl)-2,2-dimethylpropyl]-1-butyl-",
+    "continuation": "1H-indazole-3-carboxamide",
+    "schedule": "II"
+   }
+  ]
+ },
+ {
+  "substance_id": "pcp",
+  "incb_name": "PHENCYCLIDINE",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "II"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 302,
+    "ids_code": "PP 005",
+    "text": "PP 005 77-10-1 PHENCYCLIDINE PCP 1-(1-phenylcyclohexyl)piperidine",
+    "continuation": null,
+    "schedule": "II"
+   }
+  ]
+ },
+ {
+  "substance_id": "lsd",
+  "incb_name": "LSD",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "I"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 146,
+    "ids_code": "PL 002",
+    "text": "PL 002 (+)-LYSERGIDE LSD, LSD-25 9,10-didehydro-N,N-diethyl-6-methylergoline-8β-carboxamide",
+    "continuation": null,
+    "schedule": "I"
+   }
+  ]
+ },
+ {
+  "substance_id": "psilocybin",
+  "incb_name": "PSILOCYBINE",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "I"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 163,
+    "ids_code": "PP 013",
+    "text": "PP 013 PSILOCYBINE 3-[2-(dimethylamino)ethyl]indol-4-yl dihydrogen phosphate",
+    "continuation": null,
+    "schedule": "I"
+   }
+  ]
+ },
+ {
+  "substance_id": "ghb",
+  "incb_name": "GHB",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "II"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 254,
+    "ids_code": "PG 002",
+    "text": "PG 002 591-81-1 gamma- GHB γ-hydroxybutyric acid",
+    "continuation": "HYDROXYBUTIRIC",
+    "schedule": "II"
+   }
+  ]
+ },
+ {
+  "substance_id": "2c-b",
+  "incb_name": "2C-B",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "II"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 205,
+    "ids_code": "PB 008",
+    "text": "PB 008 66142-81-2 2C-B 4-bromo-2,5-dimethoxyphenethylamine",
+    "continuation": null,
+    "schedule": "II"
+   }
+  ]
+ },
+ {
+  "substance_id": "alprazolam",
+  "incb_name": "ALPRAZOLAM",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "IV"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 366,
+    "ids_code": "PA 004",
+    "text": "PA 004 28981-97-7 ALPRAZOLAM 8-chloro-1-methyl-6-phenyl-4H-s-triazolo[4,3-",
+    "continuation": "a][1,4]benzodiazepine",
+    "schedule": "IV"
+   }
+  ]
+ },
+ {
+  "substance_id": "diazepam",
+  "incb_name": "DIAZEPAM",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "IV"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 400,
+    "ids_code": "PD 006",
+    "text": "PD 006 439-14-5 DIAZEPAM 7-chloro-1,3-dihydro-1-methyl-5-phenyl-2H-1,4-",
+    "continuation": "benzodiazepin-2-one",
+    "schedule": "IV"
+   }
+  ]
+ },
+ {
+  "substance_id": "nordiazepam",
+  "incb_name": "NORDAZEPAM",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "IV"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 460,
+    "ids_code": "PN 003",
+    "text": "PN 003 1088-11-5 NORDAZEPAM 7-chloro-1,3-dihydro-5-phenyl-2H-1,4-",
+    "continuation": "benzodiazepin-2-one",
+    "schedule": "IV"
+   }
+  ]
+ },
+ {
+  "substance_id": "oxazepam",
+  "incb_name": "OXAZEPAM",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "IV"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 462,
+    "ids_code": "PO 001",
+    "text": "PO 001 604-75-1 OXAZEPAM 7-chloro-1,3-dihydro-3-hydroxy-5-phenyl-2H-1,4-",
+    "continuation": "benzodiazepin-2-one",
+    "schedule": "IV"
+   }
+  ]
+ },
+ {
+  "substance_id": "temazepam",
+  "incb_name": "TEMAZEPAM",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "IV"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 488,
+    "ids_code": "PT 003",
+    "text": "PT 003 846-50-4 TEMAZEPAM 7-chloro-1,3-dihydro-3-hydroxy-1-methyl-5-phenyl-",
+    "continuation": "2H-1,4-benzodiazepin-2-one",
+    "schedule": "IV"
+   }
+  ]
+ },
+ {
+  "substance_id": "lorazepam",
+  "incb_name": "LORAZEPAM",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "IV"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 440,
+    "ids_code": "PL 004",
+    "text": "PL 004 846-49-1 LORAZEPAM 7-chloro-5-(o-chlorophenyl)-1,3-dihydro-3-hydroxy-2H-",
+    "continuation": "1,4-benzodiazepin-2-one",
+    "schedule": "IV"
+   }
+  ]
+ },
+ {
+  "substance_id": "clonazepam",
+  "incb_name": "CLONAZEPAM",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "IV"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 388,
+    "ids_code": "PC 005",
+    "text": "PC 005 1622-61-3 CLONAZEPAM 5-(o-chlorophenyl)-1,3-dihydro-7-nitro-2H-1,4-",
+    "continuation": "benzodiazepin-2-one",
+    "schedule": "IV"
+   }
+  ]
+ },
+ {
+  "substance_id": "midazolam",
+  "incb_name": "MIDAZOLAM",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "IV"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 452,
+    "ids_code": "PM 016",
+    "text": "PM 016 59467-70-8 MIDAZOLAM 8-chloro-6-(o-fluorophenyl)-1-methyl-4H-",
+    "continuation": "imidazo[1,5- a][1,4]benzodiazepine",
+    "schedule": "IV"
+   }
+  ]
+ },
+ {
+  "substance_id": "flunitrazepam",
+  "incb_name": "FLUNITRAZEPAM",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "III"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 348,
+    "ids_code": "PF 002",
+    "text": "PF 002 1622-62-4 FLUNITRAZEPAM 5-(o-fluorophenyl)-1,3-dihydro-1-methyl-7-nitro-2H-",
+    "continuation": "1,4-benzodiazepin-2-one",
+    "schedule": "III"
+   }
+  ]
+ },
+ {
+  "substance_id": "phenazepam",
+  "incb_name": "phenazepam",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "IV"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 484,
+    "ids_code": "PP 024",
+    "text": "PP 024 51753-57-2 phenazepam, 7-bromo-5-(2-chlorophenyl)-1,3-dihydro-2H-1,4-",
+    "continuation": "fenazepam benzodiazepin-2-one",
+    "schedule": "IV"
+   }
+  ]
+ },
+ {
+  "substance_id": "etizolam",
+  "incb_name": "etizolam",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "IV"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 411,
+    "ids_code": "PE 009",
+    "text": "PE 009 40054-69-1 ETIZOLAM 4-(2-Chlorophenyl)-2-ethyl-9-methyl-6H-thieno[3,2-",
+    "continuation": "f][1,2,4]triazolo[4,3a][1,4]diazepine",
+    "schedule": "IV"
+   }
+  ]
+ },
+ {
+  "substance_id": "bromazolam",
+  "incb_name": "bromazolam",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "IV"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 377,
+    "ids_code": "PB 009",
+    "text": "PB 009 71368-80-4 bromazolam 8-bromo-1-methyl-6-phenyl-4H-[1,2,4]triazolo[4,3-",
+    "continuation": "a][1,4]benzodiazepine",
+    "schedule": "IV"
+   }
+  ]
+ },
+ {
+  "substance_id": "flualprazolam",
+  "incb_name": "flualprazolam",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "IV"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 424,
+    "ids_code": "PF 011",
+    "text": "PF 011 28910-91-0 flualprazolam 8-Chloro-6-(2-fluoro-phenyl)-1-methyl-4h-",
+    "continuation": "benzo[f][1,2,4]triazolo[4,3-a][1,4]diazepime",
+    "schedule": "IV"
+   }
+  ]
+ },
+ {
+  "substance_id": "zolpidem",
+  "incb_name": "ZOLPIDEM",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "IV"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 495,
+    "ids_code": "PZ 002",
+    "text": "PZ 002 82626-48-0 ZOLPIDEM N,N,6-trimethyl-2-p-tolylimidazo[1,2-a]pyridine-3-",
+    "continuation": "acetamide",
+    "schedule": "IV"
+   }
+  ]
+ },
+ {
+  "substance_id": "phenobarbital",
+  "incb_name": "PHENOBARBITAL",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "IV"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 468,
+    "ids_code": "PP 008",
+    "text": "PP 008 50-06-6 PHENOBARBITAL 5-ethyl-5-phenylbarbituric acid",
+    "continuation": null,
+    "schedule": "IV"
+   }
+  ]
+ },
+ {
+  "substance_id": "pentobarbital",
+  "incb_name": "PENTOBARBITAL",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "III"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 351,
+    "ids_code": "PP 002",
+    "text": "PP 002 76-74-4 PENTOBARBITAL 5-ethyl-5-(1-methylbutyl)barbituric acid",
+    "continuation": null,
+    "schedule": "III"
+   }
+  ]
+ },
+ {
+  "substance_id": "secobarbital",
+  "incb_name": "SECOBARBITAL",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "II"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 324,
+    "ids_code": "PS 001",
+    "text": "PS 001 76-73-3 SECOBARBITAL 5-allyl-5-(1-methylbutyl)barbituric acid",
+    "continuation": null,
+    "schedule": "II"
+   }
+  ]
+ },
+ {
+  "substance_id": "butalbital",
+  "incb_name": "BUTALBITAL",
+  "accessed": "2026-10-04",
+  "status": "found",
+  "list": "green",
+  "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+  "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+  "convention": "Convention on Psychotropic Substances of 1971",
+  "edition": "Green List, 36th edition, 2025",
+  "schedules": [
+   "III"
+  ],
+  "rows": [
+   {
+    "list": "green",
+    "line": 342,
+    "ids_code": "PB 004",
+    "text": "PB 004 77-26-9 BUTALBITAL 5-allyl-5-isobutylbarbituric acid",
+    "continuation": null,
+    "schedule": "III"
+   }
+  ]
+ }
+]

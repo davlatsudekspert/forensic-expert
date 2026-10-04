@@ -20,7 +20,7 @@ class ContentDatabase extends _$ContentDatabase {
   ///
   /// 3 — PHASE 4: knowledge_entities, entity_sources, authorities; DRAFT
   /// status; i18n reviewer domeni; hujjat holati va qoida qamrovi.
-  static const contentSchemaVersion = 3;
+  static const contentSchemaVersion = 4;
 
   @override
   int get schemaVersion => contentSchemaVersion;
@@ -46,6 +46,7 @@ class ContentDatabase extends _$ContentDatabase {
       '(SELECT COUNT(*) FROM sources WHERE is_test_data = 1) + '
       '(SELECT COUNT(*) FROM claims WHERE is_test_data = 1) + '
       '(SELECT COUNT(*) FROM substances WHERE is_test_data = 1) + '
+      '(SELECT COUNT(*) FROM research_records WHERE is_test_data = 1) + '
       '(SELECT COUNT(*) FROM concentration_records WHERE is_test_data = 1) + '
       '(SELECT COUNT(*) FROM jurisdictional_instruments '
       'WHERE is_test_data = 1) + '

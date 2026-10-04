@@ -8,6 +8,8 @@ export 'src/bundle.dart';
 export 'src/claim.dart';
 export 'src/concentration.dart';
 export 'src/enums.dart';
+export 'src/evidence_graph.dart';
+export 'src/evidence_json.dart';
 export 'src/identifiers.dart';
 export 'src/jurisdiction.dart';
 export 'src/knowledge.dart';

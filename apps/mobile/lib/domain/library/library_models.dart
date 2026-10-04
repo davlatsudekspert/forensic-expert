@@ -29,6 +29,7 @@ class LibraryEntry {
     this.lastReviewed,
     this.access = EntryAccess.free,
     this.details,
+    this.group,
   });
 
   final String id;
@@ -46,6 +47,9 @@ class LibraryEntry {
 
   /// Kontent paketidan kelgan to‘liq ma’lumot. TEST fixture’larda `null`.
   final EntryDetails? details;
+
+  /// Tahririy guruh (masalan `opioids`) — navigatsiya uchun.
+  final String? group;
 }
 
 /// Kutubxona yozuviga kirish darajasi (kontent paketidagi `tier_access`).
