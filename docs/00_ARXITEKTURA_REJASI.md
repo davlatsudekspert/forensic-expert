@@ -586,6 +586,9 @@ CREATE TABLE interferences (
 );
 
 -- Huquqiy status — yurisdiksiyaga bog‘liq
+-- PHASE 2 YANGILANISHI: bu jadval umumiy Jurisdiction Layer bilan almashtirildi
+-- (jurisdictions / jurisdictional_instruments / jurisdictional_rules) —
+-- docs/10_GLOBAL_JURISDICTION_LAYER.md.
 CREATE TABLE legal_status (
   substance_id   TEXT NOT NULL,
   jurisdiction   TEXT NOT NULL,           -- ISO 3166 (UZ, RU, US, ...) yoki 'UN', 'EU'
