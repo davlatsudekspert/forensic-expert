@@ -8,7 +8,8 @@
 | 2026-10-04 | PHASE 2 | ✅ Tugadi va tasdiqlandi | Product UI: barcha asosiy ekranlar, Global Search, AI prototipi (iqtiboslar UX), Student/Pro rejimlari, Profil, **FORENSIC EXPERT Lifetime** (bir martalik xarid) ekrani, HC mavzu, golden suite, Global Scientific Core + Jurisdiction Layer, logo R1–R3. 607 test (+1 skip). Hisobot: `docs/09_PHASE2_PRODUCT_UI.md`, `docs/10_GLOBAL_JURISDICTION_LAYER.md`. |
 | 2026-10-04 | PHASE 3 | ✅ Tugadi — **egasi tasdig‘i kutilmoqda** | Pilot kontent: 18 modda + 2 bog‘liq yozuv, 38 claim, 40 manba (barchasi NEEDS_REVIEW). Kontent pipeline, imzolangan paket, provenance UI, Lifetime (store tasdig‘i, Restore, server tekshiruvi porti), bepul demo, R2 brend. Hisobot: `docs/11_PHASE3_PILOT_CONTENT.md`, `docs/12_PURCHASE_VERIFICATION.md`. |
 | 2026-10-04 | PHASE 4 | ✅ Tugadi — **egasi tasdig‘i kutilmoqda** | Global Forensic Knowledge System: sud tibbiyoti (25 mavzu), biokimyo, reagentlar, skrining, metodlar (4 tur), yangi muammolar, UK yurisdiksiyasi + Compare, Student Mode, Forensic AI arxitekturasi (LLM ulanmagan), DB v3, fe-bundle/2, FE017–FE027, premium dizayn. Pilot: 8 bilim obyekti, 11 claim, 13 manba (barchasi NEEDS_REVIEW). Hisobot: `docs/13`–`docs/17`. |
-| 2026-10-04 | PHASE 5 | ✅ Tugadi — **egasi tasdig‘i kutilmoqda** | Global professional kontent: 137 modda (127 tasida adabiyot dalili, 58 tasida INCB), 482 claim (54 reported concentration — threshold emas), 18 metod, 4 reagent, 7 skrining, FM 17 / gistologiya 6 / biokimyo 16 mavzu, Research Library 883 yozuv (dissertatsiya 59, tezis 17, konferensiya maqolasi 36, tezis-abstract 0), 156 litsenziyali rasm, 849 graf bog‘lanishi, reviewer navbati 835. Barchasi NEEDS_REVIEW. 959 test. iOS build bajarilmagan (Xcode yo‘q). Hisobot: `docs/18`, `docs/19`. **PHASE 6 boshlanmagan** |
+| 2026-10-04 | PHASE 5 | ✅ Tugadi — **egasi tasdig‘i kutilmoqda** | Global professional kontent: 137 modda (127 tasida adabiyot dalili, 58 tasida INCB), 482 claim (54 reported concentration — threshold emas), 18 metod, 4 reagent, 7 skrining, FM 17 / gistologiya 6 / biokimyo 16 mavzu, Research Library 883 yozuv (dissertatsiya 59, tezis 17, konferensiya maqolasi 36, tezis-abstract 0), 156 litsenziyali rasm, 849 graf bog‘lanishi, reviewer navbati 835. Barchasi NEEDS_REVIEW. 959 test. iOS build bajarilmagan (Xcode yo‘q). Hisobot: `docs/18`, `docs/19`. |
+| 2026-10-04 | PHASE 6 | ✅ Tugadi — **egasi tasdig‘i kutilmoqda** | Global platform: 20 forensic fan taksonomiyasi, 3 qatlamli yurisdiksiya arxitekturasi (249 ISO davlat, fallback yo‘q, hujjat metadata), Home/Library hub qayta tuzildi, research filtrlari, DB v5 (forensik dolzarblik alohida), 6 yangi kalkulyator (LOD/LOQ — ICH Q2(R1)), AI yurisdiksiya qoidasi, CRITICAL/WARNING/INFO/REVIEW, RU/UZ ekran-matn auditi. Yangi ilmiy fakt qo‘shilmadi; hammasi NEEDS_REVIEW. 1080 test (+1 skip). Hisobot: `docs/20`–`docs/25`. **PHASE 7 boshlanmagan** |
 
 ## Branch’lar (main’ga merge qilinmagan)
 
@@ -21,6 +22,7 @@
 | `claude/phase-3-pilot-content` | PHASE 3 (PHASE 2 ustiga) |
 | `claude/phase-4-global-forensic-system` | PHASE 4 (PHASE 3 ustiga) |
 | `claude/phase-5-global-professional-content` | PHASE 5 (PHASE 4 ustiga) |
+| `claude/global-forensic-platform` | PHASE 6 (PHASE 5 ustiga) |
 
 ## RELEASE GATES (public release’dan oldin majburiy; development’ni to‘xtatmaydi)
 
@@ -49,6 +51,7 @@
 | RG-21 | PHASE 4 bilim obyektlari (FM, biokimyo, reagent, skrining, metod, yangi muammolar) uchun domen reviewerlari; imtihon savollari faqat reviewer tasdiqlagan ta’lim kontentidan | ⛔ OCHIQ | `docs/15`, `docs/16` |
 | RG-23 | PHASE 5 kontenti: 835 elementli reviewer navbati (scientific / analytical / medicine_histology / legal / translation), research dalil darajalari va 8 ta CC BY tashqi rasm attribution’ining legal tekshiruvi | ⛔ OCHIQ | `docs/19`, `content/review/REVIEW_QUEUE.md` |
 | RG-24 | iOS: macOS/Xcode’da real build, TestFlight, real iPhone/iPad; privacy manifest (`PrivacyInfo.xcprivacy`) va export compliance (`ITSAppUsesNonExemptEncryption`) qarori. PHASE 5 da faqat statik tekshiruv (11 PASS / 3 OPEN) | ⛔ OCHIQ | `docs/19` 8-bo‘lim, `docs/verification/phase5_ios_static_check.txt` |
+| RG-25 | LOD/LOQ kalkulyatori: ICH Q2(R1) §6.3/7.3 koeffitsientlari rasmiy matn bilan tekshirildi; amaldagi ICH Q2(R2) bilan moslik va σ tanlash yo‘riqnomasini laboratoriya reviewer’i tasdiqlashi | ⛔ OCHIQ | `docs/21` 5-bo‘lim |
 | RG-22 | Forensic AI: server provayderi, ikkinchi xavfsizlik qatlami, eval, kvota va narx siyosati (ilovada kalit yo‘q) | ⛔ OCHIQ | `docs/16` |
 
 ## PHASE 1 — majburiy tekshiruvlar
@@ -122,3 +125,19 @@
 | iOS | ⚠️ Faqat statik tekshiruv (11 PASS / 0 FAIL / 3 OPEN). **Real iOS build bajarilmagan** (RG-24) |
 | Perf | ⚠️ Faqat host VM’da (`docs/19` 9-bo‘lim); qurilmada emas (RG-10) |
 | Lifetime server tekshiruvi | ⛔ Yo‘q — RG-18 SECURITY / RELEASE BLOCKER (o‘zgarmagan) |
+
+## PHASE 6 — majburiy tekshiruvlar
+
+| Tekshiruv | Natija |
+|---|---|
+| flutter analyze / dart analyze packages (`--fatal-infos`) | ✅ No issues |
+| Avtomatik testlar | ✅ 1080 PASS (ilova 866 + paketlar 214), 0 FAIL, 1 SKIP (PHASE 1 preview) |
+| Lokalizatsiya | ✅ RU/UZ ekran-matn auditi (22 ekran × 2 til), ARB parity |
+| Golden | ✅ 88 kadr (27 ta yangi PHASE 6, EN/RU/UZ, light/dark, 320dp ×1.3) |
+| Kontent validator | ✅ development — 0 xato; production — 576 × FE008 (kutilgan) |
+| Security: gitleaks / OSV | ✅ leak yo‘q / zaiflik yo‘q |
+| Release APK | ✅ 70.7 MB; ⚠️ debug sertifikat (RG-20). Store’ga yuborilmagan |
+| iOS | ⚠️ Faqat statik (11 PASS / 3 OPEN). Real build yo‘q (RG-24) |
+| Perf | ⚠️ Host VM (`docs/perf/phase6_raw.txt`); qurilmada emas (RG-10) |
+| Lifetime server tekshiruvi | ⛔ Yo‘q — RG-18 SECURITY / RELEASE BLOCKER (o‘zgarmagan) |
+
