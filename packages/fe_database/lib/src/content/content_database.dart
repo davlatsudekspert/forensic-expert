@@ -17,7 +17,10 @@ class ContentDatabase extends _$ContentDatabase {
   /// jurisdictional_rules; claims.knowledge_layer). content.db paket sifatida
   /// to‘liq almashtiriladi, shuning uchun in-place migratsiya kerak emas;
   /// eski (v1) paket verifier’da rad etiladi.
-  static const contentSchemaVersion = 2;
+  ///
+  /// 3 — PHASE 4: knowledge_entities, entity_sources, authorities; DRAFT
+  /// status; i18n reviewer domeni; hujjat holati va qoida qamrovi.
+  static const contentSchemaVersion = 3;
 
   @override
   int get schemaVersion => contentSchemaVersion;
@@ -46,7 +49,8 @@ class ContentDatabase extends _$ContentDatabase {
       '(SELECT COUNT(*) FROM concentration_records WHERE is_test_data = 1) + '
       '(SELECT COUNT(*) FROM jurisdictional_instruments '
       'WHERE is_test_data = 1) + '
-      '(SELECT COUNT(*) FROM jurisdictional_rules WHERE is_test_data = 1) '
+      '(SELECT COUNT(*) FROM jurisdictional_rules WHERE is_test_data = 1) + '
+      '(SELECT COUNT(*) FROM knowledge_entities WHERE is_test_data = 1) '
       'AS n',
     ).getSingle();
     return row.read<int>('n') > 0;
