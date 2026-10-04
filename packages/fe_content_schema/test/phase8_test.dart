@@ -77,9 +77,9 @@ void main() {
     expect(back.calculatorIds, ['tool.lab.molarity']);
     expect(
       _codes(
-        ContentBundle(
+        const ContentBundle(
           channel: BundleChannel.development,
-          sources: const [_paper],
+          sources: [_paper],
           recipes: [r],
         ),
       ),
@@ -107,9 +107,9 @@ void main() {
       expect(back.detectionWindow!.text, 'context');
       expect(
         _codes(
-          ContentBundle(
+          const ContentBundle(
             channel: BundleChannel.development,
-            sources: const [_paper],
+            sources: [_paper],
             screeningTests: [t],
           ),
         ),

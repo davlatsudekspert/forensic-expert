@@ -84,6 +84,7 @@ extension KnowledgeStrings on AppLocalizations {
   /// Solishtirish mavzusi (`topicKey`). Noma’lum kalit — o‘zi.
   String legalTopicName(String key) => switch (key) {
     'drink_drive.prescribed_limit' => compareTopicDrinkDrive,
+    'controlled_substance.status' => compareTopicControlStatus,
     _ => key,
   };
   String templateSectionName(String code) => switch (code) {

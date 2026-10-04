@@ -3310,4 +3310,83 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get aiLimMock =>
       'Сгенерировано ТЕСТОВЫМ провайдером — не рабочий ИИ-сервис.';
+
+  @override
+  String get instrOriginalTitle => 'Оригинальное название';
+
+  @override
+  String legalMissingFields(String fields) {
+    return 'Для этого документа не указано: $fields';
+  }
+
+  @override
+  String get lfOfficialTitle => 'Официальное название';
+
+  @override
+  String get lfOriginalTitle => 'Название на языке оригинала';
+
+  @override
+  String get lfArticle => 'Статья / раздел';
+
+  @override
+  String get lfOfficialUrl => 'Официальная ссылка';
+
+  @override
+  String get lfReviewStatus => 'Статус проверки';
+
+  @override
+  String get legalDomainsTitle => 'Правовые области';
+
+  @override
+  String legalDomainRecords(int n) {
+    return 'Записей: $n';
+  }
+
+  @override
+  String get legalDomainNoContent => 'Нет проверенного содержания';
+
+  @override
+  String get compareTopicControlStatus => 'Статус контроля';
+
+  @override
+  String get ldExpertStatus => 'Статус судебного эксперта';
+
+  @override
+  String get ldEvidenceHandling => 'Обращение с доказательствами';
+
+  @override
+  String get ldChainOfCustody => 'Цепочка хранения';
+
+  @override
+  String get ldSpecimenCollection => 'Отбор образцов';
+
+  @override
+  String get ldDeathInvestigation => 'Расследование смерти';
+
+  @override
+  String get ldAutopsy => 'Вскрытие';
+
+  @override
+  String get ldToxicology => 'Токсикология';
+
+  @override
+  String get ldAlcoholDriving => 'Алкоголь и вождение';
+
+  @override
+  String get ldControlledSubstances => 'Контролируемые вещества';
+
+  @override
+  String get ldReporting => 'Отчётность';
+
+  @override
+  String get ldLaboratoryStandards => 'Лабораторные стандарты';
+
+  @override
+  String get ldRetentionStorage => 'Хранение';
+
+  @override
+  String get ldTestimony => 'Показания в суде';
+
+  @override
+  String get ldQualityAccreditation => 'Качество и аккредитация';
 }

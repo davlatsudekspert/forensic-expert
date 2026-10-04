@@ -570,6 +570,9 @@ def apply(b):
             b["rules"].append(dict(
                 rule_id=rid, instrument_id=iid, rule_type="control_status",
                 subject_type="substance", subject_id=r["substance"],
+                # PHASE 10: Compare uchun mavzu. INCB (INT) qoidalari ataylab
+                # kalitsiz: milliy ro‘yxat xalqaro konvensiyani «bekor qilmaydi».
+                topic_key="controlled_substance.status",
                 article_section=r.get("section") or r["schedule"],
                 value=dict(schedule=r["schedule"], list_entry=r["matched"],
                            entry_text=r["context"][:400],

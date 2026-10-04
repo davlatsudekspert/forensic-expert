@@ -14,6 +14,7 @@ export 'src/identifiers.dart';
 export 'src/jurisdiction.dart';
 export 'src/knowledge.dart';
 export 'src/knowledge_json.dart';
+export 'src/legal_pipeline.dart';
 export 'src/provenance.dart';
 export 'src/provenance_json.dart';
 export 'src/regression_guard.dart';

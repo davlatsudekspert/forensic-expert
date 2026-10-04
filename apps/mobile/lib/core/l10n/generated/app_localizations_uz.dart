@@ -3302,4 +3302,83 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get aiLimMock => 'TEST provayderi yaratgan — ishchi AI xizmati emas.';
+
+  @override
+  String get instrOriginalTitle => 'Asl nomi';
+
+  @override
+  String legalMissingFields(String fields) {
+    return 'Bu hujjat uchun ko‘rsatilmagan: $fields';
+  }
+
+  @override
+  String get lfOfficialTitle => 'Rasmiy nomi';
+
+  @override
+  String get lfOriginalTitle => 'Asl tildagi nomi';
+
+  @override
+  String get lfArticle => 'Modda / bo‘lim';
+
+  @override
+  String get lfOfficialUrl => 'Rasmiy havola';
+
+  @override
+  String get lfReviewStatus => 'Tekshiruv holati';
+
+  @override
+  String get legalDomainsTitle => 'Huquqiy sohalar';
+
+  @override
+  String legalDomainRecords(int n) {
+    return '$n ta yozuv';
+  }
+
+  @override
+  String get legalDomainNoContent => 'Tasdiqlangan kontent yo‘q';
+
+  @override
+  String get compareTopicControlStatus => 'Nazorat holati';
+
+  @override
+  String get ldExpertStatus => 'Sud eksperti maqomi';
+
+  @override
+  String get ldEvidenceHandling => 'Dalillar bilan ishlash';
+
+  @override
+  String get ldChainOfCustody => 'Saqlash zanjiri';
+
+  @override
+  String get ldSpecimenCollection => 'Namuna olish';
+
+  @override
+  String get ldDeathInvestigation => 'O‘limni tekshirish';
+
+  @override
+  String get ldAutopsy => 'Yorib ko‘rish (autopsiya)';
+
+  @override
+  String get ldToxicology => 'Toksikologiya';
+
+  @override
+  String get ldAlcoholDriving => 'Alkogol va transport boshqarish';
+
+  @override
+  String get ldControlledSubstances => 'Nazorat ostidagi moddalar';
+
+  @override
+  String get ldReporting => 'Hisobot berish';
+
+  @override
+  String get ldLaboratoryStandards => 'Laboratoriya standartlari';
+
+  @override
+  String get ldRetentionStorage => 'Saqlash muddatlari';
+
+  @override
+  String get ldTestimony => 'Sudda ko‘rsatma berish';
+
+  @override
+  String get ldQualityAccreditation => 'Sifat va akkreditatsiya';
 }

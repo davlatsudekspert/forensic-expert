@@ -25709,6 +25709,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "morphine",
+      "topic_key": "controlled_substance.status",
       "article_section": "Class A",
       "value": {
         "schedule": "Class A",
@@ -25725,6 +25726,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "heroin",
+      "topic_key": "controlled_substance.status",
       "article_section": "Class A",
       "value": {
         "schedule": "Class A",
@@ -25741,6 +25743,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "fentanyl",
+      "topic_key": "controlled_substance.status",
       "article_section": "Class A",
       "value": {
         "schedule": "Class A",
@@ -25757,6 +25760,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "methadone",
+      "topic_key": "controlled_substance.status",
       "article_section": "Class A",
       "value": {
         "schedule": "Class A",
@@ -25773,6 +25777,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "tramadol",
+      "topic_key": "controlled_substance.status",
       "article_section": "Class C",
       "value": {
         "schedule": "Class C",
@@ -25789,6 +25794,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "cocaine",
+      "topic_key": "controlled_substance.status",
       "article_section": "Class A",
       "value": {
         "schedule": "Class A",
@@ -25805,6 +25811,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "amphetamine",
+      "topic_key": "controlled_substance.status",
       "article_section": "Class B",
       "value": {
         "schedule": "Class B",
@@ -25821,6 +25828,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "methamphetamine",
+      "topic_key": "controlled_substance.status",
       "article_section": "Class A",
       "value": {
         "schedule": "Class A",
@@ -25837,6 +25845,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "diazepam",
+      "topic_key": "controlled_substance.status",
       "article_section": "Class C",
       "value": {
         "schedule": "Class C",
@@ -25853,6 +25862,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "alprazolam",
+      "topic_key": "controlled_substance.status",
       "article_section": "Class C",
       "value": {
         "schedule": "Class C",
@@ -25869,6 +25879,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "pregabalin",
+      "topic_key": "controlled_substance.status",
       "article_section": "Class C",
       "value": {
         "schedule": "Class C",
@@ -25885,6 +25896,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "isotonitazene",
+      "topic_key": "controlled_substance.status",
       "article_section": "Class A",
       "value": {
         "schedule": "Class A",
@@ -25901,6 +25913,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "heroin",
+      "topic_key": "controlled_substance.status",
       "article_section": "21 CFR 1308.11",
       "value": {
         "schedule": "Schedule I",
@@ -25917,6 +25930,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "mdma",
+      "topic_key": "controlled_substance.status",
       "article_section": "21 CFR 1308.11",
       "value": {
         "schedule": "Schedule I",
@@ -25933,6 +25947,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "thc",
+      "topic_key": "controlled_substance.status",
       "article_section": "21 CFR 1308.11",
       "value": {
         "schedule": "Schedule I",
@@ -25949,6 +25964,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "isotonitazene",
+      "topic_key": "controlled_substance.status",
       "article_section": "21 CFR 1308.11",
       "value": {
         "schedule": "Schedule I",
@@ -25965,6 +25981,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "morphine",
+      "topic_key": "controlled_substance.status",
       "article_section": "21 CFR 1308.12",
       "value": {
         "schedule": "Schedule II",
@@ -25981,6 +25998,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "fentanyl",
+      "topic_key": "controlled_substance.status",
       "article_section": "21 CFR 1308.12",
       "value": {
         "schedule": "Schedule II",
@@ -25997,6 +26015,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "methadone",
+      "topic_key": "controlled_substance.status",
       "article_section": "21 CFR 1308.12",
       "value": {
         "schedule": "Schedule II",
@@ -26013,6 +26032,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "cocaine",
+      "topic_key": "controlled_substance.status",
       "article_section": "21 CFR 1308.12",
       "value": {
         "schedule": "Schedule II",
@@ -26029,6 +26049,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "amphetamine",
+      "topic_key": "controlled_substance.status",
       "article_section": "21 CFR 1308.12",
       "value": {
         "schedule": "Schedule II",
@@ -26045,6 +26066,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "methamphetamine",
+      "topic_key": "controlled_substance.status",
       "article_section": "21 CFR 1308.12",
       "value": {
         "schedule": "Schedule II",
@@ -26061,6 +26083,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "tramadol",
+      "topic_key": "controlled_substance.status",
       "article_section": "21 CFR 1308.14",
       "value": {
         "schedule": "Schedule IV",
@@ -26077,6 +26100,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "diazepam",
+      "topic_key": "controlled_substance.status",
       "article_section": "21 CFR 1308.14",
       "value": {
         "schedule": "Schedule IV",
@@ -26093,6 +26117,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "alprazolam",
+      "topic_key": "controlled_substance.status",
       "article_section": "21 CFR 1308.14",
       "value": {
         "schedule": "Schedule IV",
@@ -26109,6 +26134,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "pregabalin",
+      "topic_key": "controlled_substance.status",
       "article_section": "21 CFR 1308.15",
       "value": {
         "schedule": "Schedule V",
@@ -26125,6 +26151,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "heroin",
+      "topic_key": "controlled_substance.status",
       "article_section": "Anlage I",
       "value": {
         "schedule": "Anlage I",
@@ -26141,6 +26168,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "mdma",
+      "topic_key": "controlled_substance.status",
       "article_section": "Anlage I",
       "value": {
         "schedule": "Anlage I",
@@ -26157,6 +26185,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "thc",
+      "topic_key": "controlled_substance.status",
       "article_section": "Anlage I",
       "value": {
         "schedule": "Anlage I",
@@ -26173,6 +26202,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "methamphetamine",
+      "topic_key": "controlled_substance.status",
       "article_section": "Anlage II",
       "value": {
         "schedule": "Anlage II",
@@ -26189,6 +26219,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "isotonitazene",
+      "topic_key": "controlled_substance.status",
       "article_section": "Anlage II",
       "value": {
         "schedule": "Anlage II",
@@ -26205,6 +26236,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "morphine",
+      "topic_key": "controlled_substance.status",
       "article_section": "Anlage III",
       "value": {
         "schedule": "Anlage III",
@@ -26221,6 +26253,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "fentanyl",
+      "topic_key": "controlled_substance.status",
       "article_section": "Anlage III",
       "value": {
         "schedule": "Anlage III",
@@ -26237,6 +26270,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "methadone",
+      "topic_key": "controlled_substance.status",
       "article_section": "Anlage III",
       "value": {
         "schedule": "Anlage III",
@@ -26253,6 +26287,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "cocaine",
+      "topic_key": "controlled_substance.status",
       "article_section": "Anlage III",
       "value": {
         "schedule": "Anlage III",
@@ -26269,6 +26304,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "amphetamine",
+      "topic_key": "controlled_substance.status",
       "article_section": "Anlage III",
       "value": {
         "schedule": "Anlage III",
@@ -26285,6 +26321,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "diazepam",
+      "topic_key": "controlled_substance.status",
       "article_section": "Anlage III",
       "value": {
         "schedule": "Anlage III",
@@ -26301,6 +26338,7 @@
       "rule_type": "control_status",
       "subject_type": "substance",
       "subject_id": "alprazolam",
+      "topic_key": "controlled_substance.status",
       "article_section": "Anlage III",
       "value": {
         "schedule": "Anlage III",

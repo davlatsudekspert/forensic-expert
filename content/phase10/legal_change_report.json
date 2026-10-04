@@ -1,0 +1,48 @@
+{
+ "checked_at": "2026-10-04",
+ "baseline_created": true,
+ "errors": {},
+ "instruments": [
+  {
+   "instrument_id": "GB-MDA-1971-SCH2",
+   "checked_at": "2026-10-04",
+   "entries_fingerprint": "e92adf97644a2aaac091d4f7803f596c7b32cb43e66c2a94f4aa4bb38daab369",
+   "entries": 451,
+   "raw_changed_since_ingestion": false,
+   "list_entries_changed": false,
+   "status": "NO_CHANGE_DETECTED",
+   "note": null
+  },
+  {
+   "instrument_id": "US-21CFR1308",
+   "checked_at": "2026-10-04",
+   "entries_fingerprint": "a3fa34b4b1810181d483b12c64d7a17d86d1dc0e1ce8eb632f044dfaa54cbbd0",
+   "entries": 485,
+   "raw_changed_since_ingestion": false,
+   "list_entries_changed": false,
+   "status": "NO_CHANGE_DETECTED",
+   "note": null
+  },
+  {
+   "instrument_id": "DE-BTMG-ANL",
+   "checked_at": "2026-10-04",
+   "entries_fingerprint": "f437e0fcf25c4f97bc8ab1bfed907bc5a87dc5c63dddeb13ebfd3ae795362151",
+   "entries": 1534,
+   "raw_changed_since_ingestion": false,
+   "list_entries_changed": false,
+   "status": "NO_CHANGE_DETECTED",
+   "note": null
+  },
+  {
+   "instrument_id": "UZ-LAW-813-I",
+   "checked_at": "2026-10-04",
+   "entries_fingerprint": "7e81f6e6dc99a5d54db81c8ec01353fca75fffc4ef135abc7f4bb6bcb843e141",
+   "entries": 1,
+   "raw_changed_since_ingestion": false,
+   "list_entries_changed": false,
+   "status": "NO_CHANGE_DETECTED",
+   "note": null
+  }
+ ],
+ "policy": "Changes are proposals only; no automatic publication."
+}

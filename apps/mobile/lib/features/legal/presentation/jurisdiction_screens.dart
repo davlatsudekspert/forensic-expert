@@ -25,6 +25,40 @@ import '../../../domain/jurisdiction/jurisdiction_catalog.dart';
 /// KO‘RSATILMAYDI.
 
 extension DocumentKindL10n on AppLocalizations {
+  String legalFieldLabel(LegalRecordField f) => switch (f) {
+    LegalRecordField.officialTitle => lfOfficialTitle,
+    LegalRecordField.originalTitle => lfOriginalTitle,
+    LegalRecordField.authority => instrAuthority,
+    LegalRecordField.documentNumber => instrNumber,
+    LegalRecordField.articleSection => lfArticle,
+    LegalRecordField.officialUrl => lfOfficialUrl,
+    LegalRecordField.publicationDate => instrPublished,
+    LegalRecordField.effectiveDate => instrEffectiveFrom,
+    LegalRecordField.version => instrVersion,
+    LegalRecordField.status => instrLegalStatus,
+    LegalRecordField.lastChecked => instrLastVerified,
+    LegalRecordField.language => instrLanguage,
+    LegalRecordField.translationStatus => instrTranslation,
+    LegalRecordField.reviewStatus => lfReviewStatus,
+  };
+
+  String legalDomainLabel(LegalDomain d) => switch (d) {
+    LegalDomain.expertStatus => ldExpertStatus,
+    LegalDomain.evidenceHandling => ldEvidenceHandling,
+    LegalDomain.chainOfCustody => ldChainOfCustody,
+    LegalDomain.specimenCollection => ldSpecimenCollection,
+    LegalDomain.deathInvestigation => ldDeathInvestigation,
+    LegalDomain.autopsy => ldAutopsy,
+    LegalDomain.toxicology => ldToxicology,
+    LegalDomain.alcoholDriving => ldAlcoholDriving,
+    LegalDomain.controlledSubstances => ldControlledSubstances,
+    LegalDomain.reporting => ldReporting,
+    LegalDomain.laboratoryStandards => ldLaboratoryStandards,
+    LegalDomain.retentionStorage => ldRetentionStorage,
+    LegalDomain.testimony => ldTestimony,
+    LegalDomain.qualityAccreditation => ldQualityAccreditation,
+  };
+
   String documentKindLabel(DocumentKind k) => switch (k) {
     DocumentKind.law => docKindLaw,
     DocumentKind.regulation => docKindRegulation,
@@ -445,6 +479,41 @@ class JurisdictionDetailScreen extends ConsumerWidget {
                     else
                       for (final i in own) InstrumentCard(instrument: i),
                   ],
+                  if (!isIntl) ...[
+                    // PHASE 10: huquqiy domenlar — har biri bo‘yicha shu
+                    // yurisdiksiyada yozuv bor-yo‘qligi (yo‘q = tasdiqlangan
+                    // kontent yo‘q; boshqa davlat bilan to‘ldirilmaydi).
+                    FeSectionHeader(l.legalDomainsTitle),
+                    for (final d in LegalDomain.values)
+                      () {
+                        final n = [
+                          for (final r in resolver.rules)
+                            if (legalDomainOf(r) == d &&
+                                own.any((i) => i.id == r.instrumentId))
+                              r,
+                        ].length;
+                        return ListTile(
+                          key: Key('jurisdiction.domain.${d.name}'),
+                          dense: true,
+                          contentPadding: EdgeInsets.zero,
+                          leading: Icon(
+                            n > 0
+                                ? Icons.description_outlined
+                                : Icons.remove_circle_outline,
+                            color: n > 0 ? c.accent : c.textSecondary,
+                          ),
+                          title: Text(l.legalDomainLabel(d)),
+                          trailing: Text(
+                            n > 0
+                                ? l.legalDomainRecords(n)
+                                : l.legalDomainNoContent,
+                            style: t.bodySmall?.copyWith(
+                              color: c.textSecondary,
+                            ),
+                          ),
+                        );
+                      }(),
+                  ],
                   FeSectionHeader(l.jurisdictionIntlLayer),
                   if (intl.isEmpty)
                     FeBanner(
@@ -508,7 +577,26 @@ class InstrumentCard extends ConsumerWidget {
       if (i.lastVerifiedAt != null)
         (l.instrLastVerified, date(i.lastVerifiedAt!)),
       if (source != null) (l.instrSource, source.title),
+      // PHASE 10: asl tildagi rasmiy sarlavha.
+      if (i.language != null &&
+          i.language != lang &&
+          (i.titles[i.language] ?? '').isNotEmpty)
+        (l.instrOriginalTitle, i.titles[i.language]!),
     ];
+    final missing = LegalRecordCompleteness.missing(
+      i,
+      source: source == null
+          ? null
+          : Source(
+              sourceId: source.sourceId,
+              sourceType: SourceType.legislation,
+              title: source.title,
+              tier: SourceTier.tier1,
+              evidenceLevel: EvidenceLevel.a,
+              licenseMode: SourceLicenseMode.citeOnly,
+              officialUrl: source.url,
+            ),
+    );
     return Padding(
       padding: const EdgeInsets.only(bottom: FeSpace.sm),
       child: FeCard(
@@ -542,6 +630,18 @@ class InstrumentCard extends ConsumerWidget {
             ),
             const SizedBox(height: FeSpace.xs),
             FeMetaList(rows: rows),
+            if (missing.isNotEmpty)
+              Padding(
+                padding: const EdgeInsets.only(top: FeSpace.xs),
+                child: FeBanner(
+                  key: Key('instrument.missing.${i.id}'),
+                  icon: Icons.rule_outlined,
+                  tone: FeBannerTone.warning,
+                  text: l.legalMissingFields(
+                    [for (final f in missing) l.legalFieldLabel(f)].join(', '),
+                  ),
+                ),
+              ),
             if (source?.url case final url?)
               Align(
                 alignment: AlignmentDirectional.centerStart,

@@ -48,16 +48,30 @@ class _CompareJurisdictionsScreenState
       settingsControllerProvider.select((s) => s.jurisdictionId),
     );
 
-    final topics = <_Topic>{
-      for (final r in resolver.rules)
-        if (r.topicKey != null)
-          (
-            subjectType: r.subjectType,
-            subjectId: r.subjectId,
-            topicKey: r.topicKey!,
-          ),
-    }.toList();
+    final topics =
+        <_Topic>{
+            for (final r in resolver.rules)
+              if (r.topicKey != null)
+                (
+                  subjectType: r.subjectType,
+                  subjectId: r.subjectId,
+                  topicKey: r.topicKey!,
+                ),
+          }.toList()
+          // Avval umumiy mavzular (alkogol chegarasi), so‘ng moddalar bo‘yicha.
+          ..sort((a, b) {
+            final ac = a.topicKey.startsWith('controlled_substance') ? 1 : 0;
+            final bc = b.topicKey.startsWith('controlled_substance') ? 1 : 0;
+            return ac != bc ? ac - bc : a.subjectId.compareTo(b.subjectId);
+          });
     final topic = _topic ?? topics.firstOrNull;
+    final library = ref.watch(libraryRepositoryProvider);
+    String topicLabel(_Topic tp) {
+      final name = library.byId(tp.subjectId)?.name.resolve(lang);
+      return tp.topicKey.startsWith('controlled_substance') && name != null
+          ? '${l.legalTopicName(tp.topicKey)}: $name'
+          : l.legalTopicName(tp.topicKey);
+    }
 
     // Standart tanlov: qoidasi bor davlatlarning hududlari + foydalanuvchi
     // yurisdiksiyasi.
@@ -108,7 +122,7 @@ class _CompareJurisdictionsScreenState
                       body: l.compareNoTopics,
                     )
                   else ...[
-                    FeSectionHeader(l.legalTopicName(topic.topicKey)),
+                    FeSectionHeader(topicLabel(topic)),
                     Wrap(
                       spacing: FeSpace.xs,
                       runSpacing: FeSpace.xxs,
@@ -116,7 +130,10 @@ class _CompareJurisdictionsScreenState
                         for (final tp in topics)
                           if (topics.length > 1)
                             ChoiceChip(
-                              label: Text(l.legalTopicName(tp.topicKey)),
+                              key: Key(
+                                'compare.topic.${tp.subjectId}.${tp.topicKey}',
+                              ),
+                              label: Text(topicLabel(tp)),
                               selected: tp == topic,
                               onSelected: (_) => setState(() => _topic = tp),
                             ),
