@@ -143,3 +143,18 @@
 | Perf | ⚠️ Host VM (`docs/perf/phase6_raw.txt`); qurilmada emas (RG-10) |
 | Lifetime server tekshiruvi | ⛔ Yo‘q — RG-18 SECURITY / RELEASE BLOCKER (o‘zgarmagan) |
 
+
+## PHASE 7 — majburiy tekshiruvlar
+
+| Tekshiruv | Natija |
+|---|---|
+| flutter analyze / dart analyze packages (`--fatal-infos`) | ✅ No issues |
+| Avtomatik testlar | ✅ 1157 PASS (ilova 915 + paketlar 242), 0 FAIL, 1 SKIP |
+| Kontent validator (FE001–FE041) | ✅ development — 0 xato |
+| Golden / screenshot | ✅ 24 yangi PHASE 7 kadri (`docs/screenshots/phase7/`) |
+| Security: gitleaks / OSV | ✅ leak yo‘q / zaiflik yo‘q |
+| Release APK | ✅ 71.2 MB; ⚠️ debug imzo (RG-20). Store’ga yuborilmagan |
+| iOS | ⛔ Real build yo‘q (RG-24) |
+| Perf | ⚠️ Host VM (`docs/perf/phase7_raw.txt`); qurilmada emas (RG-10) |
+| Lifetime server tekshiruvi | ⛔ Arxitektura + mock testlar; haqiqiy tekshiruv yo‘q — RG-18 SECURITY / RELEASE BLOCKER |
+| **HUMAN VERIFIED** | **0** — reviewer qatnashmagan |
