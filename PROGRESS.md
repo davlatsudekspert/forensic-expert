@@ -6,7 +6,8 @@
 | 2026-10-04 | PHASE 0.5 | ✅ Tugadi | Evidence audit (72 band), raqobatchilar, source matrix, V1 scope, cost model (`docs/01`–`05`) |
 | 2026-10-04 | PHASE 1 | ✅ Tugadi va tasdiqlandi | Foundation: 5 ta paket + Flutter ilova, CI, l10n, dizayn tizimi, onboarding, abstraksiyalar, logo prototiplari. 322 test. Hisobot: `docs/08_PHASE1_FOUNDATION.md` |
 | 2026-10-04 | PHASE 2 | ✅ Tugadi va tasdiqlandi | Product UI: barcha asosiy ekranlar, Global Search, AI prototipi (iqtiboslar UX), Student/Pro rejimlari, Profil, **FORENSIC EXPERT Lifetime** (bir martalik xarid) ekrani, HC mavzu, golden suite, Global Scientific Core + Jurisdiction Layer, logo R1–R3. 607 test (+1 skip). Hisobot: `docs/09_PHASE2_PRODUCT_UI.md`, `docs/10_GLOBAL_JURISDICTION_LAYER.md`. |
-| 2026-10-04 | PHASE 3 | ✅ Tugadi — **egasi tasdig‘i kutilmoqda** | Pilot kontent: 18 modda + 2 bog‘liq yozuv, 38 claim, 40 manba (barchasi NEEDS_REVIEW). Kontent pipeline, imzolangan paket, provenance UI, Lifetime (store tasdig‘i, Restore, server tekshiruvi porti), bepul demo, R2 brend. Hisobot: `docs/11_PHASE3_PILOT_CONTENT.md`, `docs/12_PURCHASE_VERIFICATION.md`. **PHASE 4 boshlanmagan** |
+| 2026-10-04 | PHASE 3 | ✅ Tugadi — **egasi tasdig‘i kutilmoqda** | Pilot kontent: 18 modda + 2 bog‘liq yozuv, 38 claim, 40 manba (barchasi NEEDS_REVIEW). Kontent pipeline, imzolangan paket, provenance UI, Lifetime (store tasdig‘i, Restore, server tekshiruvi porti), bepul demo, R2 brend. Hisobot: `docs/11_PHASE3_PILOT_CONTENT.md`, `docs/12_PURCHASE_VERIFICATION.md`. |
+| 2026-10-04 | PHASE 4 | ✅ Tugadi — **egasi tasdig‘i kutilmoqda** | Global Forensic Knowledge System: sud tibbiyoti (25 mavzu), biokimyo, reagentlar, skrining, metodlar (4 tur), yangi muammolar, UK yurisdiksiyasi + Compare, Student Mode, Forensic AI arxitekturasi (LLM ulanmagan), DB v3, fe-bundle/2, FE017–FE027, premium dizayn. Pilot: 8 bilim obyekti, 11 claim, 13 manba (barchasi NEEDS_REVIEW). Hisobot: `docs/13`–`docs/17`. **PHASE 5 boshlanmagan** |
 
 ## Branch’lar (main’ga merge qilinmagan)
 
@@ -17,6 +18,7 @@
 | `claude/phase-1-foundation` | PHASE 1 (PHASE 0.5 ustiga) |
 | `claude/phase-2-product-ui` | PHASE 2 (PHASE 1 ustiga) |
 | `claude/phase-3-pilot-content` | PHASE 3 (PHASE 2 ustiga) |
+| `claude/phase-4-global-forensic-system` | PHASE 4 (PHASE 3 ustiga) |
 
 ## RELEASE GATES (public release’dan oldin majburiy; development’ni to‘xtatmaydi)
 
@@ -41,7 +43,9 @@
 | RG-18 | **Lifetime xaridini server tomonida tekshirish** (App Store Server API, Google Play Developer API, refund/revocation) va `FE_REQUIRE_SERVER_PURCHASE_VERIFICATION=true`. Hozir faqat store tasdig‘i — production-secure EMAS | ⛔ OCHIQ — **SECURITY / RELEASE BLOCKER** | `docs/12` |
 | RG-19 | Pilot claim’lar uchun tox/fm/lab reviewerlar (four-eyes) va RU/UZ nomlar review’i; PubChem stereoizomer CID’lari (tramadol, metamfetamin) va AlP CID tekshiruvi | ⛔ OCHIQ | `docs/11` 2-bo‘lim |
 | RG-20 | Release imzolash: hozirgi release APK **debug sertifikat** bilan imzolangan (Flutter shabloni). Upload key + Play App Signing / Apple distribution sertifikati, kalitlar faqat CI secret’da | ⛔ OCHIQ | `docs/11` 8-bo‘lim |
-| RG-15 | Har bir yurisdiksiya kontenti uchun legal reviewer va rasmiy manba; «Compare jurisdictions» faqat tekshirilgan kontent bilan | ⛔ OCHIQ | `docs/10` 7-bo‘lim |
+| RG-15 | Har bir yurisdiksiya kontenti uchun legal reviewer va rasmiy manba; «Compare jurisdictions» production’da faqat tekshirilgan kontent bilan (PHASE 4: UK pilot — NEEDS_REVIEW, faqat development kanalda) | ⛔ OCHIQ | `docs/10` 7-bo‘lim, `docs/14` |
+| RG-21 | PHASE 4 bilim obyektlari (FM, biokimyo, reagent, skrining, metod, yangi muammolar) uchun domen reviewerlari; imtihon savollari faqat reviewer tasdiqlagan ta’lim kontentidan | ⛔ OCHIQ | `docs/15`, `docs/16` |
+| RG-22 | Forensic AI: server provayderi, ikkinchi xavfsizlik qatlami, eval, kvota va narx siyosati (ilovada kalit yo‘q) | ⛔ OCHIQ | `docs/16` |
 
 ## PHASE 1 — majburiy tekshiruvlar
 
@@ -83,3 +87,17 @@
 | Real qurilma / emulator | ⛔ Muhitda yo‘q (KVM yo‘q) — RG-10 |
 | Lifetime server tekshiruvi | ⛔ Yo‘q — RG-18 SECURITY / RELEASE BLOCKER |
 
+
+## PHASE 4 — majburiy tekshiruvlar
+
+| Tekshiruv | Natija |
+|---|---|
+| flutter analyze / dart analyze packages (`--fatal-infos`) | ✅ No issues |
+| Avtomatik testlar | ✅ 880 (ilova 705 + paketlar 175), 1 skip (PHASE 1 preview) |
+| Golden / vizual regressiya | ✅ 37 kadr (7 ta yangi PHASE 4 ekrani, haqiqiy pilot paket bilan) |
+| a11y | ✅ 32 ekran (11 ta yangi) × light / dark / HC |
+| Kontent validator | ✅ development — 0 xato; production — 67 × FE008 bilan rad etiladi (kutilgan); FE027 regressiya himoyasi faol |
+| Security: gitleaks / OSV | ✅ leak yo‘q / 132 paketda zaiflik yo‘q |
+| Release APK | ✅ build (65.8 MB, universal); ⚠️ debug sertifikat bilan imzolangan (RG-20). Store’ga yuborilmagan |
+| Perf | ⚠️ Faqat host VM’da (`docs/13` 8-bo‘lim); qurilmada emas (RG-10) |
+| Lifetime server tekshiruvi | ⛔ Yo‘q — RG-18 SECURITY / RELEASE BLOCKER (o‘zgarmagan) |
