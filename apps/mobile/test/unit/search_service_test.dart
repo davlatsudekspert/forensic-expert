@@ -1,3 +1,4 @@
+import 'package:fe_search_core/fe_search_core.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/search_service.dart';
 import 'package:forensic_expert/data/fixtures/test_fixtures.dart';
@@ -62,14 +63,34 @@ void main() {
     );
   });
 
-  test('guruh xaritasi barcha kategoriyalarni qamraydi', () {
+  test('guruh xaritasi: har bir qidiruv toifasi aniq guruhga tushadi', () {
     expect(SearchGroup.values.map((g) => g.name), [
       'substances',
+      'topics',
       'methods',
+      'reagents',
+      'screening',
       'tools',
+      'standardsLaws',
       'learning',
       'references',
     ]);
+    // Har bir toifa (kelajakdagilar ham) xaritalangan — switch to‘liq.
+    for (final c in SearchCategory.values) {
+      expect(AppSearchService.groupOf(c), isA<SearchGroup>());
+    }
+    expect(
+      AppSearchService.groupOf(SearchCategory.screeningTest),
+      SearchGroup.screening,
+    );
+    expect(
+      AppSearchService.groupOf(SearchCategory.law),
+      SearchGroup.standardsLaws,
+    );
+    expect(
+      AppSearchService.groupOf(SearchCategory.reagent),
+      SearchGroup.reagents,
+    );
   });
 
   test('natija yo‘q holati', () async {

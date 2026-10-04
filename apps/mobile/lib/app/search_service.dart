@@ -11,7 +11,19 @@ import '../features/tools/tool_strings.dart';
 import 'providers.dart';
 
 /// Global Search natija guruhlari (UI tartibi).
-enum SearchGroup { substances, methods, tools, learning, references }
+/// PHASE 4 global taksonomiyasi (UI tartibi). Ichki (offline) natijalar —
+/// tashqi ilmiy qidiruvdan vizual ajratilgan.
+enum SearchGroup {
+  substances,
+  topics,
+  methods,
+  reagents,
+  screening,
+  tools,
+  standardsLaws,
+  learning,
+  references,
+}
 
 class AppSearchResult {
   const AppSearchResult(this.groups, this.latency);
@@ -103,11 +115,19 @@ class AppSearchService {
   static SearchGroup groupOf(SearchCategory c) => switch (c) {
     SearchCategory.substance ||
     SearchCategory.metabolite => SearchGroup.substances,
+    SearchCategory.forensicMedicineTopic ||
+    SearchCategory.biochemistryTopic ||
+    SearchCategory.emergingIssue => SearchGroup.topics,
+    // `topic` — namunalar (specimens) va umumiy laboratoriya mavzulari.
     SearchCategory.method || SearchCategory.topic => SearchGroup.methods,
+    SearchCategory.reagent || SearchCategory.solution => SearchGroup.reagents,
+    SearchCategory.screeningTest => SearchGroup.screening,
     SearchCategory.calculator => SearchGroup.tools,
+    SearchCategory.standard || SearchCategory.law => SearchGroup.standardsLaws,
     SearchCategory.learning ||
     SearchCategory.glossary ||
-    SearchCategory.caseStudy => SearchGroup.learning,
+    SearchCategory.caseStudy ||
+    SearchCategory.lesson => SearchGroup.learning,
     SearchCategory.reference => SearchGroup.references,
   };
 

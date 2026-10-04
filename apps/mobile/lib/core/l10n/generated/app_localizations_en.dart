@@ -1056,4 +1056,16 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get statusDraft => 'Draft';
+
+  @override
+  String get searchGroupTopics => 'Forensic medicine & biochemistry';
+
+  @override
+  String get searchGroupReagents => 'Reagents & solutions';
+
+  @override
+  String get searchGroupScreening => 'Screening tests';
+
+  @override
+  String get searchGroupStandardsLaws => 'Standards & laws';
 }

@@ -1959,6 +1959,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Draft'**
   String get statusDraft;
+
+  /// Search group.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic medicine & biochemistry'**
+  String get searchGroupTopics;
+
+  /// Search group.
+  ///
+  /// In en, this message translates to:
+  /// **'Reagents & solutions'**
+  String get searchGroupReagents;
+
+  /// Search group.
+  ///
+  /// In en, this message translates to:
+  /// **'Screening tests'**
+  String get searchGroupScreening;
+
+  /// Search group.
+  ///
+  /// In en, this message translates to:
+  /// **'Standards & laws'**
+  String get searchGroupStandardsLaws;
 }
 
 class _AppLocalizationsDelegate

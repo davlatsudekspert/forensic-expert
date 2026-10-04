@@ -209,6 +209,10 @@ class _Results extends ConsumerWidget {
     const freeLimit = AccessPolicy.freeSearchResultsPerGroup;
     String groupTitle(SearchGroup g) => switch (g) {
       SearchGroup.substances => l.librarySubstances,
+      SearchGroup.topics => l.searchGroupTopics,
+      SearchGroup.reagents => l.searchGroupReagents,
+      SearchGroup.screening => l.searchGroupScreening,
+      SearchGroup.standardsLaws => l.searchGroupStandardsLaws,
       SearchGroup.methods => l.libraryMethods,
       SearchGroup.tools => l.searchGroupTools,
       SearchGroup.learning => l.searchGroupLearning,
@@ -216,6 +220,10 @@ class _Results extends ConsumerWidget {
     };
     IconData groupIcon(SearchGroup g) => switch (g) {
       SearchGroup.substances => Icons.hub_outlined,
+      SearchGroup.topics => Icons.personal_injury_outlined,
+      SearchGroup.reagents => Icons.science_outlined,
+      SearchGroup.screening => Icons.fact_check_outlined,
+      SearchGroup.standardsLaws => Icons.gavel_outlined,
       SearchGroup.methods => Icons.biotech_outlined,
       SearchGroup.tools => Icons.calculate_outlined,
       SearchGroup.learning => Icons.school_outlined,

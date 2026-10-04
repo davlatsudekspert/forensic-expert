@@ -1,6 +1,8 @@
 import 'package:meta/meta.dart';
 
 /// Global Search natija toifalari (6-bo‘lim talabidagi tartibda).
+/// Qidiruv toifalari. Yangi toifa qo‘shish — faqat shu ro‘yxat va ilova
+/// guruhlash xaritasi (PHASE 4: global taksonomiya).
 enum SearchCategory {
   substance,
   metabolite,
@@ -11,6 +13,15 @@ enum SearchCategory {
   glossary,
   caseStudy,
   reference,
+  reagent,
+  solution,
+  screeningTest,
+  forensicMedicineTopic,
+  biochemistryTopic,
+  standard,
+  law,
+  lesson,
+  emergingIssue,
 }
 
 /// Indeksdagi termin turi — reytingga ta’sir qiladi.

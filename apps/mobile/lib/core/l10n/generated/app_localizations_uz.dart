@@ -1057,4 +1057,16 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get statusDraft => 'Qoralama';
+
+  @override
+  String get searchGroupTopics => 'Sud tibbiyoti va biokimyo';
+
+  @override
+  String get searchGroupReagents => 'Reagentlar va eritmalar';
+
+  @override
+  String get searchGroupScreening => 'Skrining testlari';
+
+  @override
+  String get searchGroupStandardsLaws => 'Standartlar va qonunlar';
 }

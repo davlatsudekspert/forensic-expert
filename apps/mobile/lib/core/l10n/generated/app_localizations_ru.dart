@@ -1059,4 +1059,16 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get statusDraft => 'Черновик';
+
+  @override
+  String get searchGroupTopics => 'Судебная медицина и биохимия';
+
+  @override
+  String get searchGroupReagents => 'Реактивы и растворы';
+
+  @override
+  String get searchGroupScreening => 'Скрининговые тесты';
+
+  @override
+  String get searchGroupStandardsLaws => 'Стандарты и законы';
 }
