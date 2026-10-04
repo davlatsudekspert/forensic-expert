@@ -1,6 +1,7 @@
 import 'package:meta/meta.dart';
 
 import 'enums.dart';
+import 'jurisdiction.dart';
 
 /// Fakt (claim) qaysi yozuvga tegishli.
 enum EntityType {
@@ -37,6 +38,9 @@ class Claim {
     this.isStructuredValue = false,
     this.isTestData = false,
     this.version = 1,
+    this.layer = KnowledgeLayer.internationalScientific,
+    this.jurisdictionId,
+    this.instrumentId,
   });
 
   final String claimId;
@@ -65,6 +69,15 @@ class Claim {
   /// TEST DATA.
   final bool isTestData;
   final int version;
+
+  /// Bilim qatlami. Standart — xalqaro ilmiy dalil (davlatga bog‘liq emas).
+  final KnowledgeLayer layer;
+
+  /// Faqat [KnowledgeLayer.jurisdictional] uchun: `UZ`, `US-CA` va h.k.
+  final String? jurisdictionId;
+
+  /// Faqat [KnowledgeLayer.jurisdictional] uchun: rasmiy hujjat ID’si.
+  final String? instrumentId;
 }
 
 /// Fakt ↔ manba bog‘lanishi.

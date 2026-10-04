@@ -2,6 +2,7 @@ import 'package:meta/meta.dart';
 
 import 'claim.dart';
 import 'enums.dart';
+import 'jurisdiction.dart';
 import 'review.dart';
 import 'source.dart';
 
@@ -17,6 +18,9 @@ class ContentBundle {
     this.reviewers = const [],
     this.reviews = const [],
     this.authorships = const [],
+    this.jurisdictions = const [],
+    this.instruments = const [],
+    this.jurisdictionalRules = const [],
   });
 
   final BundleChannel channel;
@@ -27,4 +31,9 @@ class ContentBundle {
   final List<Reviewer> reviewers;
   final List<Review> reviews;
   final List<Authorship> authorships;
+
+  /// Yurisdiksiya qatlami (Global Scientific Core’dan alohida).
+  final List<Jurisdiction> jurisdictions;
+  final List<JurisdictionalInstrument> instruments;
+  final List<JurisdictionalRule> jurisdictionalRules;
 }
