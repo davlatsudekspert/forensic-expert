@@ -10911,7 +10911,7 @@ class ResearchRecords extends Table
     false,
     type: DriftSqlType.string,
     requiredDuringInsert: true,
-    $customConstraints: 'NOT NULL CHECK (kind IN (\'journal_article\', \'review\', \'systematic_review\', \'meta_analysis\', \'case_report\', \'conference_abstract\', \'conference_paper\', \'dissertation\', \'thesis\', \'official_report\', \'standard\'))',
+    $customConstraints: 'NOT NULL CHECK (kind IN (\'journal_article\', \'review\', \'systematic_review\', \'meta_analysis\', \'case_report\', \'conference_abstract\', \'conference_paper\', \'dissertation\', \'thesis\', \'official_report\', \'standard\', \'guideline\', \'validation_study\', \'case_series\'))',
   );
   static const VerificationMeta _titleMeta = const VerificationMeta('title');
   late final GeneratedColumn<String> title = GeneratedColumn<String>(
@@ -11099,6 +11099,30 @@ class ResearchRecords extends Table
     $customConstraints: 'NOT NULL DEFAULT 0',
     defaultValue: const CustomExpression('0'),
   );
+  static const VerificationMeta _forensicRelevanceMeta = const VerificationMeta(
+    'forensicRelevance',
+  );
+  late final GeneratedColumn<String> forensicRelevance =
+      GeneratedColumn<String>(
+        'forensic_relevance',
+        aliasedName,
+        false,
+        type: DriftSqlType.string,
+        requiredDuringInsert: false,
+        $customConstraints: 'NOT NULL DEFAULT \'unassessed\' CHECK (forensic_relevance IN (\'unassessed\', \'direct\', \'supporting\', \'background\'))',
+        defaultValue: const CustomExpression('\'unassessed\''),
+      );
+  static const VerificationMeta _languageMeta = const VerificationMeta(
+    'language',
+  );
+  late final GeneratedColumn<String> language = GeneratedColumn<String>(
+    'language',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
   @override
   List<GeneratedColumn> get $columns => [
     researchId,
@@ -11121,6 +11145,8 @@ class ResearchRecords extends Table
     peerReviewed,
     reviewStatus,
     isTestData,
+    forensicRelevance,
+    language,
   ];
   @override
   String get aliasedName => _alias ?? actualTableName;
@@ -11287,6 +11313,21 @@ class ResearchRecords extends Table
         ),
       );
     }
+    if (data.containsKey('forensic_relevance')) {
+      context.handle(
+        _forensicRelevanceMeta,
+        forensicRelevance.isAcceptableOrUnknown(
+          data['forensic_relevance']!,
+          _forensicRelevanceMeta,
+        ),
+      );
+    }
+    if (data.containsKey('language')) {
+      context.handle(
+        _languageMeta,
+        language.isAcceptableOrUnknown(data['language']!, _languageMeta),
+      );
+    }
     return context;
   }
 
@@ -11376,6 +11417,14 @@ class ResearchRecords extends Table
         DriftSqlType.int,
         data['${effectivePrefix}is_test_data'],
       )!,
+      forensicRelevance: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}forensic_relevance'],
+      )!,
+      language: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}language'],
+      ),
     );
   }
 
@@ -11415,6 +11464,10 @@ class ResearchRecord extends DataClass implements Insertable<ResearchRecord> {
   final int peerReviewed;
   final String reviewStatus;
   final int isTestData;
+
+  /// PHASE 6: forensik dolzarblik dalil sifatidan alohida (reviewer belgilaydi).
+  final String forensicRelevance;
+  final String? language;
   const ResearchRecord({
     required this.researchId,
     required this.kind,
@@ -11436,6 +11489,8 @@ class ResearchRecord extends DataClass implements Insertable<ResearchRecord> {
     required this.peerReviewed,
     required this.reviewStatus,
     required this.isTestData,
+    required this.forensicRelevance,
+    this.language,
   });
   @override
   Map<String, Expression> toColumns(bool nullToAbsent) {
@@ -11484,6 +11539,10 @@ class ResearchRecord extends DataClass implements Insertable<ResearchRecord> {
     map['peer_reviewed'] = Variable<int>(peerReviewed);
     map['review_status'] = Variable<String>(reviewStatus);
     map['is_test_data'] = Variable<int>(isTestData);
+    map['forensic_relevance'] = Variable<String>(forensicRelevance);
+    if (!nullToAbsent || language != null) {
+      map['language'] = Variable<String>(language);
+    }
     return map;
   }
 
@@ -11527,6 +11586,10 @@ class ResearchRecord extends DataClass implements Insertable<ResearchRecord> {
       peerReviewed: Value(peerReviewed),
       reviewStatus: Value(reviewStatus),
       isTestData: Value(isTestData),
+      forensicRelevance: Value(forensicRelevance),
+      language: language == null && nullToAbsent
+          ? const Value.absent()
+          : Value(language),
     );
   }
 
@@ -11556,6 +11619,10 @@ class ResearchRecord extends DataClass implements Insertable<ResearchRecord> {
       peerReviewed: serializer.fromJson<int>(json['peer_reviewed']),
       reviewStatus: serializer.fromJson<String>(json['review_status']),
       isTestData: serializer.fromJson<int>(json['is_test_data']),
+      forensicRelevance: serializer.fromJson<String>(
+        json['forensic_relevance'],
+      ),
+      language: serializer.fromJson<String?>(json['language']),
     );
   }
   @override
@@ -11582,6 +11649,8 @@ class ResearchRecord extends DataClass implements Insertable<ResearchRecord> {
       'peer_reviewed': serializer.toJson<int>(peerReviewed),
       'review_status': serializer.toJson<String>(reviewStatus),
       'is_test_data': serializer.toJson<int>(isTestData),
+      'forensic_relevance': serializer.toJson<String>(forensicRelevance),
+      'language': serializer.toJson<String?>(language),
     };
   }
 
@@ -11606,6 +11675,8 @@ class ResearchRecord extends DataClass implements Insertable<ResearchRecord> {
     int? peerReviewed,
     String? reviewStatus,
     int? isTestData,
+    String? forensicRelevance,
+    Value<String?> language = const Value.absent(),
   }) => ResearchRecord(
     researchId: researchId ?? this.researchId,
     kind: kind ?? this.kind,
@@ -11627,6 +11698,8 @@ class ResearchRecord extends DataClass implements Insertable<ResearchRecord> {
     peerReviewed: peerReviewed ?? this.peerReviewed,
     reviewStatus: reviewStatus ?? this.reviewStatus,
     isTestData: isTestData ?? this.isTestData,
+    forensicRelevance: forensicRelevance ?? this.forensicRelevance,
+    language: language.present ? language.value : this.language,
   );
   ResearchRecord copyWithCompanion(ResearchRecordsCompanion data) {
     return ResearchRecord(
@@ -11668,6 +11741,10 @@ class ResearchRecord extends DataClass implements Insertable<ResearchRecord> {
       isTestData: data.isTestData.present
           ? data.isTestData.value
           : this.isTestData,
+      forensicRelevance: data.forensicRelevance.present
+          ? data.forensicRelevance.value
+          : this.forensicRelevance,
+      language: data.language.present ? data.language.value : this.language,
     );
   }
 
@@ -11693,13 +11770,15 @@ class ResearchRecord extends DataClass implements Insertable<ResearchRecord> {
           ..write('evidenceLevel: $evidenceLevel, ')
           ..write('peerReviewed: $peerReviewed, ')
           ..write('reviewStatus: $reviewStatus, ')
-          ..write('isTestData: $isTestData')
+          ..write('isTestData: $isTestData, ')
+          ..write('forensicRelevance: $forensicRelevance, ')
+          ..write('language: $language')
           ..write(')'))
         .toString();
   }
 
   @override
-  int get hashCode => Object.hash(
+  int get hashCode => Object.hashAll([
     researchId,
     kind,
     title,
@@ -11720,7 +11799,9 @@ class ResearchRecord extends DataClass implements Insertable<ResearchRecord> {
     peerReviewed,
     reviewStatus,
     isTestData,
-  );
+    forensicRelevance,
+    language,
+  ]);
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
@@ -11744,7 +11825,9 @@ class ResearchRecord extends DataClass implements Insertable<ResearchRecord> {
           other.evidenceLevel == this.evidenceLevel &&
           other.peerReviewed == this.peerReviewed &&
           other.reviewStatus == this.reviewStatus &&
-          other.isTestData == this.isTestData);
+          other.isTestData == this.isTestData &&
+          other.forensicRelevance == this.forensicRelevance &&
+          other.language == this.language);
 }
 
 class ResearchRecordsCompanion extends UpdateCompanion<ResearchRecord> {
@@ -11768,6 +11851,8 @@ class ResearchRecordsCompanion extends UpdateCompanion<ResearchRecord> {
   final Value<int> peerReviewed;
   final Value<String> reviewStatus;
   final Value<int> isTestData;
+  final Value<String> forensicRelevance;
+  final Value<String?> language;
   const ResearchRecordsCompanion({
     this.researchId = const Value.absent(),
     this.kind = const Value.absent(),
@@ -11789,6 +11874,8 @@ class ResearchRecordsCompanion extends UpdateCompanion<ResearchRecord> {
     this.peerReviewed = const Value.absent(),
     this.reviewStatus = const Value.absent(),
     this.isTestData = const Value.absent(),
+    this.forensicRelevance = const Value.absent(),
+    this.language = const Value.absent(),
   });
   ResearchRecordsCompanion.insert({
     required String researchId,
@@ -11811,6 +11898,8 @@ class ResearchRecordsCompanion extends UpdateCompanion<ResearchRecord> {
     required int peerReviewed,
     required String reviewStatus,
     this.isTestData = const Value.absent(),
+    this.forensicRelevance = const Value.absent(),
+    this.language = const Value.absent(),
   }) : researchId = Value(researchId),
        kind = Value(kind),
        title = Value(title),
@@ -11838,6 +11927,8 @@ class ResearchRecordsCompanion extends UpdateCompanion<ResearchRecord> {
     Expression<int>? peerReviewed,
     Expression<String>? reviewStatus,
     Expression<int>? isTestData,
+    Expression<String>? forensicRelevance,
+    Expression<String>? language,
   }) {
     return RawValuesInsertable({
       if (researchId != null) 'research_id': researchId,
@@ -11860,6 +11951,8 @@ class ResearchRecordsCompanion extends UpdateCompanion<ResearchRecord> {
       if (peerReviewed != null) 'peer_reviewed': peerReviewed,
       if (reviewStatus != null) 'review_status': reviewStatus,
       if (isTestData != null) 'is_test_data': isTestData,
+      if (forensicRelevance != null) 'forensic_relevance': forensicRelevance,
+      if (language != null) 'language': language,
     });
   }
 
@@ -11884,6 +11977,8 @@ class ResearchRecordsCompanion extends UpdateCompanion<ResearchRecord> {
     Value<int>? peerReviewed,
     Value<String>? reviewStatus,
     Value<int>? isTestData,
+    Value<String>? forensicRelevance,
+    Value<String?>? language,
   }) {
     return ResearchRecordsCompanion(
       researchId: researchId ?? this.researchId,
@@ -11906,6 +12001,8 @@ class ResearchRecordsCompanion extends UpdateCompanion<ResearchRecord> {
       peerReviewed: peerReviewed ?? this.peerReviewed,
       reviewStatus: reviewStatus ?? this.reviewStatus,
       isTestData: isTestData ?? this.isTestData,
+      forensicRelevance: forensicRelevance ?? this.forensicRelevance,
+      language: language ?? this.language,
     );
   }
 
@@ -11972,6 +12069,12 @@ class ResearchRecordsCompanion extends UpdateCompanion<ResearchRecord> {
     if (isTestData.present) {
       map['is_test_data'] = Variable<int>(isTestData.value);
     }
+    if (forensicRelevance.present) {
+      map['forensic_relevance'] = Variable<String>(forensicRelevance.value);
+    }
+    if (language.present) {
+      map['language'] = Variable<String>(language.value);
+    }
     return map;
   }
 
@@ -11997,7 +12100,9 @@ class ResearchRecordsCompanion extends UpdateCompanion<ResearchRecord> {
           ..write('evidenceLevel: $evidenceLevel, ')
           ..write('peerReviewed: $peerReviewed, ')
           ..write('reviewStatus: $reviewStatus, ')
-          ..write('isTestData: $isTestData')
+          ..write('isTestData: $isTestData, ')
+          ..write('forensicRelevance: $forensicRelevance, ')
+          ..write('language: $language')
           ..write(')'))
         .toString();
   }
@@ -22974,6 +23079,8 @@ typedef $ResearchRecordsCreateCompanionBuilder =
       required int peerReviewed,
       required String reviewStatus,
       Value<int> isTestData,
+      Value<String> forensicRelevance,
+      Value<String?> language,
     });
 typedef $ResearchRecordsUpdateCompanionBuilder =
     ResearchRecordsCompanion Function({
@@ -22997,6 +23104,8 @@ typedef $ResearchRecordsUpdateCompanionBuilder =
       Value<int> peerReviewed,
       Value<String> reviewStatus,
       Value<int> isTestData,
+      Value<String> forensicRelevance,
+      Value<String?> language,
     });
 
 class $ResearchRecordsFilterComposer
@@ -23105,6 +23214,16 @@ class $ResearchRecordsFilterComposer
 
   ColumnFilters<int> get isTestData => $composableBuilder(
     column: $table.isTestData,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get forensicRelevance => $composableBuilder(
+    column: $table.forensicRelevance,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get language => $composableBuilder(
+    column: $table.language,
     builder: (column) => ColumnFilters(column),
   );
 }
@@ -23217,6 +23336,16 @@ class $ResearchRecordsOrderingComposer
     column: $table.isTestData,
     builder: (column) => ColumnOrderings(column),
   );
+
+  ColumnOrderings<String> get forensicRelevance => $composableBuilder(
+    column: $table.forensicRelevance,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get language => $composableBuilder(
+    column: $table.language,
+    builder: (column) => ColumnOrderings(column),
+  );
 }
 
 class $ResearchRecordsAnnotationComposer
@@ -23305,6 +23434,14 @@ class $ResearchRecordsAnnotationComposer
     column: $table.isTestData,
     builder: (column) => column,
   );
+
+  GeneratedColumn<String> get forensicRelevance => $composableBuilder(
+    column: $table.forensicRelevance,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get language =>
+      $composableBuilder(column: $table.language, builder: (column) => column);
 }
 
 class $ResearchRecordsTableManager
@@ -23358,6 +23495,8 @@ class $ResearchRecordsTableManager
                 Value<int> peerReviewed = const Value.absent(),
                 Value<String> reviewStatus = const Value.absent(),
                 Value<int> isTestData = const Value.absent(),
+                Value<String> forensicRelevance = const Value.absent(),
+                Value<String?> language = const Value.absent(),
               }) => ResearchRecordsCompanion(
                 researchId: researchId,
                 kind: kind,
@@ -23379,6 +23518,8 @@ class $ResearchRecordsTableManager
                 peerReviewed: peerReviewed,
                 reviewStatus: reviewStatus,
                 isTestData: isTestData,
+                forensicRelevance: forensicRelevance,
+                language: language,
               ),
           createCompanionCallback:
               ({
@@ -23402,6 +23543,8 @@ class $ResearchRecordsTableManager
                 required int peerReviewed,
                 required String reviewStatus,
                 Value<int> isTestData = const Value.absent(),
+                Value<String> forensicRelevance = const Value.absent(),
+                Value<String?> language = const Value.absent(),
               }) => ResearchRecordsCompanion.insert(
                 researchId: researchId,
                 kind: kind,
@@ -23423,6 +23566,8 @@ class $ResearchRecordsTableManager
                 peerReviewed: peerReviewed,
                 reviewStatus: reviewStatus,
                 isTestData: isTestData,
+                forensicRelevance: forensicRelevance,
+                language: language,
               ),
           withReferenceMapper: (p0) => p0
               .map(

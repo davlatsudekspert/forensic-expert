@@ -1383,7 +1383,7 @@
   "@moduleReagents": {
     "description": "Home module."
   },
-  "moduleScreening": "Screening & express tests",
+  "moduleScreening": "Rapid & screening tests",
   "@moduleScreening": {
     "description": "Home module."
   },
@@ -3227,5 +3227,383 @@
   "translationNone": "Original language only",
   "@translationNone": {
     "description": "Translation status."
+  },
+  "libraryHubIntro": "One umbrella for scientific records. Every record shows its source and review status.",
+  "@libraryHubIntro": {
+    "description": "Library hub intro."
+  },
+  "libraryStandards": "Standards & official documents",
+  "@libraryStandards": {
+    "description": "Library section."
+  },
+  "libraryCount": "{count, plural, =0{No records yet} one{1 record} other{{count} records}}",
+  "@libraryCount": {
+    "description": "Record count.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "libraryGroupScience": "Scientific records",
+  "@libraryGroupScience": {
+    "description": "Library group."
+  },
+  "libraryGroupDocs": "Documents & evidence",
+  "@libraryGroupDocs": {
+    "description": "Library group."
+  },
+  "standardsIntro": "Standards, guidelines and methods are labelled by type. Only laws and regulations are legally binding — and only in their own jurisdiction.",
+  "@standardsIntro": {
+    "description": "Standards screen intro."
+  },
+  "researchFilterPeer": "Peer-reviewed only",
+  "@researchFilterPeer": {
+    "description": "Filter chip."
+  },
+  "researchFilterOpen": "Open access",
+  "@researchFilterOpen": {
+    "description": "Filter chip."
+  },
+  "researchPeriodAll": "Any year",
+  "@researchPeriodAll": {
+    "description": "Filter option."
+  },
+  "researchPeriodRecent": "2020 or later",
+  "@researchPeriodRecent": {
+    "description": "Filter option."
+  },
+  "researchPeriod2010": "2010–2019",
+  "@researchPeriod2010": {
+    "description": "Filter option."
+  },
+  "researchPeriodOlder": "Before 2010",
+  "@researchPeriodOlder": {
+    "description": "Filter option."
+  },
+  "researchDisciplineAll": "All disciplines",
+  "@researchDisciplineAll": {
+    "description": "Filter option."
+  },
+  "researchDiscipline": "Discipline",
+  "@researchDiscipline": {
+    "description": "Filter label."
+  },
+  "researchPeriod": "Period",
+  "@researchPeriod": {
+    "description": "Filter label."
+  },
+  "researchClear": "Clear filters",
+  "@researchClear": {
+    "description": "Action."
+  },
+  "researchRelevance": "Forensic relevance",
+  "@researchRelevance": {
+    "description": "Field."
+  },
+  "relevanceUnassessed": "Not yet assessed by a reviewer (separate from evidence level)",
+  "@relevanceUnassessed": {
+    "description": "Relevance."
+  },
+  "relevanceDirect": "Direct",
+  "@relevanceDirect": {
+    "description": "Relevance."
+  },
+  "relevanceSupporting": "Supporting",
+  "@relevanceSupporting": {
+    "description": "Relevance."
+  },
+  "relevanceBackground": "Background",
+  "@relevanceBackground": {
+    "description": "Relevance."
+  },
+  "researchOpenAccess": "Open access",
+  "@researchOpenAccess": {
+    "description": "Field."
+  },
+  "researchOpenPmc": "Yes — PubMed Central",
+  "@researchOpenPmc": {
+    "description": "Open access value."
+  },
+  "researchOpenLink": "Yes — free full-text link",
+  "@researchOpenLink": {
+    "description": "Open access value."
+  },
+  "researchOpenUnknown": "Not determined",
+  "@researchOpenUnknown": {
+    "description": "Open access value."
+  },
+  "researchDocKind": "Document type",
+  "@researchDocKind": {
+    "description": "Field."
+  },
+  "detailOnThisPage": "On this page",
+  "@detailOnThisPage": {
+    "description": "Section index header."
+  },
+  "detailNotYetSourced": "Not yet sourced",
+  "@detailNotYetSourced": {
+    "description": "Section header."
+  },
+  "detailJurisdictionShort": "Jurisdiction",
+  "@detailJurisdictionShort": {
+    "description": "Index chip."
+  },
+  "searchMetaboliteOf": "Metabolite of {name}",
+  "@searchMetaboliteOf": {
+    "description": "Search result meta.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "aiBlockedOfficial": "Forensic AI does not write official expert opinions, death certificates or definitive intoxication conclusions. It can help you find and compare sources.",
+  "@aiBlockedOfficial": {
+    "description": "AI safety block."
+  },
+  "aiJurisdictionRequired": "This is a legal or procedural question. Select a jurisdiction first — Forensic AI never assumes one.",
+  "@aiJurisdictionRequired": {
+    "description": "AI notice."
+  },
+  "aiSelectJurisdiction": "Select jurisdiction",
+  "@aiSelectJurisdiction": {
+    "description": "Action."
+  },
+  "aiSectionEvidenceStatus": "Evidence status",
+  "@aiSectionEvidenceStatus": {
+    "description": "AI answer section."
+  },
+  "aiSampleEvidenceStatus": "Each statement shows the review status and evidence level of the record it comes from.",
+  "@aiSampleEvidenceStatus": {
+    "description": "Placeholder."
+  },
+  "aiSectionJurisdiction": "Jurisdiction",
+  "@aiSectionJurisdiction": {
+    "description": "AI answer section."
+  },
+  "aiSampleJurisdiction": "Legal statements apply only to the selected jurisdiction; scientific statements are global.",
+  "@aiSampleJurisdiction": {
+    "description": "Placeholder."
+  },
+  "aiSectionRelated": "Related records",
+  "@aiSectionRelated": {
+    "description": "AI answer section."
+  },
+  "aiSampleRelated": "Links to the substance, method and research records used in the answer.",
+  "@aiSampleRelated": {
+    "description": "Placeholder."
+  },
+  "tpl_overview": "Overview",
+  "@tpl_overview": {
+    "description": "Content template section."
+  },
+  "tpl_names": "Names & synonyms",
+  "@tpl_names": {
+    "description": "Content template section."
+  },
+  "tpl_classification": "Classification",
+  "@tpl_classification": {
+    "description": "Content template section."
+  },
+  "tpl_metabolism": "Metabolism",
+  "@tpl_metabolism": {
+    "description": "Content template section."
+  },
+  "tpl_metabolites": "Metabolites",
+  "@tpl_metabolites": {
+    "description": "Content template section."
+  },
+  "tpl_specimens": "Specimens",
+  "@tpl_specimens": {
+    "description": "Content template section."
+  },
+  "tpl_screening": "Screening",
+  "@tpl_screening": {
+    "description": "Content template section."
+  },
+  "tpl_confirmation": "Confirmatory analysis",
+  "@tpl_confirmation": {
+    "description": "Content template section."
+  },
+  "tpl_analyticalMethods": "Analytical methods",
+  "@tpl_analyticalMethods": {
+    "description": "Content template section."
+  },
+  "tpl_reportedConcentrations": "Reported concentrations",
+  "@tpl_reportedConcentrations": {
+    "description": "Content template section."
+  },
+  "tpl_interpretation": "Interpretation",
+  "@tpl_interpretation": {
+    "description": "Content template section."
+  },
+  "tpl_postmortem": "Postmortem considerations",
+  "@tpl_postmortem": {
+    "description": "Content template section."
+  },
+  "tpl_stability": "Stability",
+  "@tpl_stability": {
+    "description": "Content template section."
+  },
+  "tpl_interferences": "Interferences",
+  "@tpl_interferences": {
+    "description": "Content template section."
+  },
+  "tpl_jurisdiction": "Jurisdiction-specific law & methods",
+  "@tpl_jurisdiction": {
+    "description": "Content template section."
+  },
+  "tpl_research": "Research & evidence",
+  "@tpl_research": {
+    "description": "Content template section."
+  },
+  "tpl_sources": "Sources",
+  "@tpl_sources": {
+    "description": "Content template section."
+  },
+  "tpl_principle": "Principle",
+  "@tpl_principle": {
+    "description": "Content template section."
+  },
+  "tpl_forensicUse": "Forensic use",
+  "@tpl_forensicUse": {
+    "description": "Content template section."
+  },
+  "tpl_samplePreparation": "Sample preparation",
+  "@tpl_samplePreparation": {
+    "description": "Content template section."
+  },
+  "tpl_instrumentation": "Instrumentation",
+  "@tpl_instrumentation": {
+    "description": "Content template section."
+  },
+  "tpl_qualitativeQuantitative": "Qualitative / quantitative use",
+  "@tpl_qualitativeQuantitative": {
+    "description": "Content template section."
+  },
+  "tpl_validation": "Validation requirements",
+  "@tpl_validation": {
+    "description": "Content template section."
+  },
+  "tpl_interference": "Interference",
+  "@tpl_interference": {
+    "description": "Content template section."
+  },
+  "tpl_limitations": "Limitations",
+  "@tpl_limitations": {
+    "description": "Content template section."
+  },
+  "tpl_qc": "Quality control",
+  "@tpl_qc": {
+    "description": "Content template section."
+  },
+  "tpl_relatedSubstances": "Related substances",
+  "@tpl_relatedSubstances": {
+    "description": "Content template section."
+  },
+  "tpl_relatedReagents": "Related reagents",
+  "@tpl_relatedReagents": {
+    "description": "Content template section."
+  },
+  "tpl_purpose": "Purpose",
+  "@tpl_purpose": {
+    "description": "Content template section."
+  },
+  "tpl_composition": "Composition",
+  "@tpl_composition": {
+    "description": "Content template section."
+  },
+  "tpl_preparation": "Preparation",
+  "@tpl_preparation": {
+    "description": "Content template section."
+  },
+  "tpl_storageStability": "Storage & stability",
+  "@tpl_storageStability": {
+    "description": "Content template section."
+  },
+  "tpl_safety": "Safety",
+  "@tpl_safety": {
+    "description": "Content template section."
+  },
+  "tpl_disposal": "Disposal",
+  "@tpl_disposal": {
+    "description": "Content template section."
+  },
+  "tpl_linkedMethods": "Linked methods & tests",
+  "@tpl_linkedMethods": {
+    "description": "Content template section."
+  },
+  "tpl_technology": "Technology",
+  "@tpl_technology": {
+    "description": "Content template section."
+  },
+  "tpl_targetSpecimen": "Target & specimen",
+  "@tpl_targetSpecimen": {
+    "description": "Content template section."
+  },
+  "tpl_cutoff": "Cutoff",
+  "@tpl_cutoff": {
+    "description": "Content template section."
+  },
+  "tpl_performance": "Sensitivity & specificity",
+  "@tpl_performance": {
+    "description": "Content template section."
+  },
+  "tpl_crossReactivity": "Cross-reactivity",
+  "@tpl_crossReactivity": {
+    "description": "Content template section."
+  },
+  "tpl_falseResults": "False positives / negatives",
+  "@tpl_falseResults": {
+    "description": "Content template section."
+  },
+  "tpl_marker": "Marker",
+  "@tpl_marker": {
+    "description": "Content template section."
+  },
+  "tpl_specimen": "Specimen",
+  "@tpl_specimen": {
+    "description": "Content template section."
+  },
+  "tpl_collectionContext": "Collection context",
+  "@tpl_collectionContext": {
+    "description": "Content template section."
+  },
+  "tpl_postmortemLimitations": "Postmortem limitations",
+  "@tpl_postmortemLimitations": {
+    "description": "Content template section."
+  },
+  "tpl_analyticalMethod": "Analytical method",
+  "@tpl_analyticalMethod": {
+    "description": "Content template section."
+  },
+  "tpl_interpretationLimitations": "Interpretation limitations",
+  "@tpl_interpretationLimitations": {
+    "description": "Content template section."
+  },
+  "tpl_definition": "Definition",
+  "@tpl_definition": {
+    "description": "Content template section."
+  },
+  "tpl_findings": "Findings",
+  "@tpl_findings": {
+    "description": "Content template section."
+  },
+  "tpl_methods": "Methods",
+  "@tpl_methods": {
+    "description": "Content template section."
+  },
+  "templateCoverage": "Sections with sourced data: {filled} of {total}",
+  "@templateCoverage": {
+    "description": "Template coverage.",
+    "placeholders": {
+      "filled": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
   }
 }

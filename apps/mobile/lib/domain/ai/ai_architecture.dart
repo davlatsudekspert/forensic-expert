@@ -102,6 +102,10 @@ enum SafetyBlock {
 
   /// Huquqiy xulosa (aybdorlik, jinoyat tarkibi…) so‘rovi.
   legalConclusion,
+
+  /// Rasmiy ekspert xulosasi / o‘lim guvohnomasi / qat’iy zaharlanish
+  /// xulosasini yozib berish so‘rovi.
+  officialOpinion,
 }
 
 @immutable
@@ -145,10 +149,39 @@ class SafetyPolicy {
     unicode: true,
   );
 
+  static final _official = RegExp(
+    r'(write|draft|prepare|issue)\s+(the\s+|an?\s+)?(official\s+)?'
+    r'(expert\s+(opinion|report|conclusion)|death\s+certificate)|'
+    r'was\s+(he|she|the\s+deceased|the\s+victim)\s+(intoxicated|poisoned)|'
+    r'(напиш|состав|подготов)\p{L}*\s+(заключени\p{L}*\s+эксперт|экспертн\p{L}*\s+заключени|свидетельств\p{L}*\s+о\s+смерти)|'
+    r'был\p{L}*\s+ли\s+(он|она|погибш\p{L}*)\s+(отравлен|в\s+состоянии\s+опьянения)|'
+    r'ekspert\s+xulosasi(ni)?\s+(yoz|tayyorla)|'
+    r'(zaharlangan|mast)\s+(edimi|bo‘lganmi)',
+    caseSensitive: false,
+    unicode: true,
+  );
+
+  /// Huquqiy / protsessual savol (yurisdiksiya kerak) — kalit so‘zlar.
+  static final _jurisdictional = RegExp(
+    r'\b(law|legal|illegal|statut\w*|regulation|controlled\s+substance|'
+    r'schedule[ds]?|drink[-\s]?driv\w*|driving\s+limit|prohibited|'
+    r'permitted|penalt\w*|offen[cs]e)\b|'
+    r'закон\p{L}*|правов\p{L}*|запрещ\p{L}*|контролируем\p{L}*|'
+    r'список\s+[IVX]+|наказани\p{L}*|лимит\p{L}*\s+алкогол|'
+    r'qonun\p{L}*|huquqiy|taqiqlan\p{L}*|nazorat\s+ro‘yxat\p{L}*|'
+    r'jazo\p{L}*|ruxsat\s+etilgan',
+    caseSensitive: false,
+    unicode: true,
+  );
+
+  /// Savol huquqiy qatlamga tegishlimi (yurisdiksiya tanlash kerakmi).
+  static bool isJurisdictional(String text) => _jurisdictional.hasMatch(text);
+
   SafetyDecision checkQuestion(String text) => SafetyDecision({
     if (_pii.scan(text).isNotEmpty) SafetyBlock.personalData,
     if (_finalConclusion.hasMatch(text)) SafetyBlock.finalCauseOrManner,
     if (_legal.hasMatch(text)) SafetyBlock.legalConclusion,
+    if (_official.hasMatch(text)) SafetyBlock.officialOpinion,
   });
 
   /// Model javobi ham tekshiriladi (yakuniy xulosa yoki PII qaytmasin).
@@ -212,6 +245,10 @@ enum AiRouteOutcome {
   /// Xavfsizlik qoidasi blokladi.
   blocked,
 
+  /// Huquqiy savol, lekin yurisdiksiya tanlanmagan — AI taxmin qilmaydi,
+  /// foydalanuvchidan tanlashni so‘raydi.
+  jurisdictionRequired,
+
   /// Kvota yo‘q yoki AI rejasi yo‘q.
   quotaUnavailable,
 
@@ -266,6 +303,11 @@ class AiRouter {
   }) async {
     final s = safety.checkQuestion(question.text);
     if (!s.allowed) return AiRouteResult(AiRouteOutcome.blocked, safety: s);
+    final j = question.jurisdictionId;
+    if (SafetyPolicy.isJurisdictional(question.text) &&
+        (j == null || j == 'INT')) {
+      return const AiRouteResult(AiRouteOutcome.jurisdictionRequired);
+    }
 
     final chunks = await retrieval.retrieve(question.text);
     if (chunks.isEmpty) {

@@ -110,7 +110,8 @@ void main() {
     await pumpApp(
       tester,
       settings: completedSettings(),
-      initialLocation: Routes.library,
+      // PHASE 6: Library — hub; ro‘yxat bo‘lim sahifasida.
+      initialLocation: Routes.librarySection('substances'),
       testFixtures: false,
       overrides: [libraryRepositoryProvider.overrideWithValue(repo)],
     );

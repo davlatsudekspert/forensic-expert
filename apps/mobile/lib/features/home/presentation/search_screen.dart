@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:fe_content_schema/fe_content_schema.dart' show ScientificStatus;
 import 'package:fe_search_core/fe_search_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -16,6 +17,7 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
 import '../../../domain/ports/billing_ports.dart';
+import '../../evidence/evidence_strings.dart';
 
 /// Global Search.
 ///
@@ -215,8 +217,12 @@ class _Results extends ConsumerWidget {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     final library = ref.watch(libraryRepositoryProvider);
+    final knowledge = ref.watch(knowledgeRepositoryProvider);
+    final evidence = ref.watch(evidenceDataProvider);
+    final lang = Localizations.localeOf(context).languageCode;
     final unlocked = ref.watch(accessProvider).hasFullAccess;
     const freeLimit = AccessPolicy.freeSearchResultsPerGroup;
+
     String groupTitle(SearchGroup g) => switch (g) {
       SearchGroup.substances => l.librarySubstances,
       SearchGroup.topics => l.searchGroupTopics,
@@ -228,6 +234,47 @@ class _Results extends ConsumerWidget {
       SearchGroup.learning => l.searchGroupLearning,
       SearchGroup.references => l.libraryReferences,
     };
+    String statusLabel(ScientificStatus s) => switch (s) {
+      ScientificStatus.verified => l.statusVerified,
+      ScientificStatus.reviewed => l.statusReviewed,
+      ScientificStatus.outdated => l.statusOutdated,
+      _ => l.statusNeedsReview,
+    };
+
+    /// Natija nima ekanini aniq ko‘rsatadi: kategoriya · (asosiy yozuv) ·
+    /// manba turi / dalil darajasi · review holati.
+    String metaOf(SearchGroup g, SearchHit hit) {
+      final parts = <String>[];
+      if (evidence.researchById(hit.entityId) case final r?) {
+        parts
+          ..add(l.researchKindName(r.kind))
+          ..add(l.researchEvidence(r.evidenceLevel))
+          ..add(statusLabel(r.status));
+      } else if (library.byId(hit.entityId) case final e?) {
+        final name = e.name.resolve(lang);
+        parts.add(
+          hit.category == SearchCategory.metabolite
+              ? l.searchMetaboliteOf(name)
+              : (name.toLowerCase() != hit.matchedTerm.toLowerCase()
+                    ? name
+                    : groupTitle(g)),
+        );
+        parts.add(statusLabel(e.status));
+      } else if (knowledge.byId(hit.entityId) case final k?) {
+        final name = k.name.resolve(lang);
+        if (name.toLowerCase() != hit.matchedTerm.toLowerCase()) {
+          parts.add(name);
+        }
+        parts
+          ..add(groupTitle(g))
+          ..add(statusLabel(k.status));
+      } else {
+        parts.add(groupTitle(g));
+        if (g == SearchGroup.tools) parts.add(l.statusNeedsReview);
+      }
+      return parts.join(FeGlyphs.middleDot);
+    }
+
     IconData groupIcon(SearchGroup g) => switch (g) {
       SearchGroup.substances => Icons.hub_outlined,
       SearchGroup.topics => Icons.personal_injury_outlined,
@@ -268,6 +315,7 @@ class _Results extends ConsumerWidget {
                   key: Key('search.hit.${hit.entityId}'),
                   icon: groupIcon(g),
                   title: hit.matchedTerm,
+                  meta: metaOf(g, hit),
                   isTestData:
                       hit.entityId.startsWith('TEST-') ||
                       (library.byId(hit.entityId)?.isTestData ?? false),
@@ -301,6 +349,7 @@ class _ResultTile extends StatelessWidget {
     super.key,
     required this.icon,
     required this.title,
+    required this.meta,
     required this.isTestData,
     required this.isPlannedTool,
     required this.onTap,
@@ -308,6 +357,10 @@ class _ResultTile extends StatelessWidget {
 
   final IconData icon;
   final String title;
+
+  /// Kategoriya / manba / review holati (foydalanuvchi nimani ochayotganini
+  /// bilsin).
+  final String meta;
   final bool isTestData;
   final bool isPlannedTool;
   final VoidCallback onTap;
@@ -320,23 +373,28 @@ class _ResultTile extends StatelessWidget {
       contentPadding: EdgeInsets.zero,
       leading: Icon(icon, color: c.accent),
       title: Text(title),
-      subtitle: isTestData || isPlannedTool
-          ? Padding(
-              padding: const EdgeInsets.only(top: FeSpace.xxs),
-              child: Wrap(
-                spacing: FeSpace.xs,
-                children: [
-                  if (isTestData) const TestDataBadge(),
-                  if (isPlannedTool)
-                    StatusChip(
-                      icon: Icons.schedule_outlined,
-                      label: l.toolStatusPlanned,
-                      color: c.textSecondary,
-                    ),
-                ],
+      subtitle: Padding(
+        padding: const EdgeInsets.only(top: FeSpace.xxs),
+        child: Wrap(
+          spacing: FeSpace.xs,
+          runSpacing: FeSpace.xxs,
+          crossAxisAlignment: WrapCrossAlignment.center,
+          children: [
+            Text(
+              meta,
+              style: Theme.of(context).textTheme.bodySmall
+                  ?.copyWith(color: c.textSecondary),
+            ),
+            if (isTestData) const TestDataBadge(),
+            if (isPlannedTool)
+              StatusChip(
+                icon: Icons.schedule_outlined,
+                label: l.toolStatusPlanned,
+                color: c.textSecondary,
               ),
-            )
-          : null,
+          ],
+        ),
+      ),
       trailing: const Icon(Icons.chevron_right),
       onTap: onTap,
     );

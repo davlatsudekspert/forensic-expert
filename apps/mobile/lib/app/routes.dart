@@ -28,6 +28,7 @@ abstract final class Routes {
   static const jurisdictionSelect = '/home/jurisdictions/select';
   static String jurisdiction(String id) => '/home/jurisdictions/$id';
   static String librarySection(String section) => '/library/section/$section';
+  static const libraryStandards = '/library/standards';
   static const quiz = '/home/learn/quiz';
   static const flashcards = '/home/learn/flashcards';
 

@@ -1999,7 +1999,7 @@ abstract class AppLocalizations {
   /// Home module.
   ///
   /// In en, this message translates to:
-  /// **'Screening & express tests'**
+  /// **'Rapid & screening tests'**
   String get moduleScreening;
 
   /// Home module.
@@ -4569,6 +4569,546 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Original language only'**
   String get translationNone;
+
+  /// Library hub intro.
+  ///
+  /// In en, this message translates to:
+  /// **'One umbrella for scientific records. Every record shows its source and review status.'**
+  String get libraryHubIntro;
+
+  /// Library section.
+  ///
+  /// In en, this message translates to:
+  /// **'Standards & official documents'**
+  String get libraryStandards;
+
+  /// Record count.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No records yet} one{1 record} other{{count} records}}'**
+  String libraryCount(int count);
+
+  /// Library group.
+  ///
+  /// In en, this message translates to:
+  /// **'Scientific records'**
+  String get libraryGroupScience;
+
+  /// Library group.
+  ///
+  /// In en, this message translates to:
+  /// **'Documents & evidence'**
+  String get libraryGroupDocs;
+
+  /// Standards screen intro.
+  ///
+  /// In en, this message translates to:
+  /// **'Standards, guidelines and methods are labelled by type. Only laws and regulations are legally binding — and only in their own jurisdiction.'**
+  String get standardsIntro;
+
+  /// Filter chip.
+  ///
+  /// In en, this message translates to:
+  /// **'Peer-reviewed only'**
+  String get researchFilterPeer;
+
+  /// Filter chip.
+  ///
+  /// In en, this message translates to:
+  /// **'Open access'**
+  String get researchFilterOpen;
+
+  /// Filter option.
+  ///
+  /// In en, this message translates to:
+  /// **'Any year'**
+  String get researchPeriodAll;
+
+  /// Filter option.
+  ///
+  /// In en, this message translates to:
+  /// **'2020 or later'**
+  String get researchPeriodRecent;
+
+  /// Filter option.
+  ///
+  /// In en, this message translates to:
+  /// **'2010–2019'**
+  String get researchPeriod2010;
+
+  /// Filter option.
+  ///
+  /// In en, this message translates to:
+  /// **'Before 2010'**
+  String get researchPeriodOlder;
+
+  /// Filter option.
+  ///
+  /// In en, this message translates to:
+  /// **'All disciplines'**
+  String get researchDisciplineAll;
+
+  /// Filter label.
+  ///
+  /// In en, this message translates to:
+  /// **'Discipline'**
+  String get researchDiscipline;
+
+  /// Filter label.
+  ///
+  /// In en, this message translates to:
+  /// **'Period'**
+  String get researchPeriod;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear filters'**
+  String get researchClear;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic relevance'**
+  String get researchRelevance;
+
+  /// Relevance.
+  ///
+  /// In en, this message translates to:
+  /// **'Not yet assessed by a reviewer (separate from evidence level)'**
+  String get relevanceUnassessed;
+
+  /// Relevance.
+  ///
+  /// In en, this message translates to:
+  /// **'Direct'**
+  String get relevanceDirect;
+
+  /// Relevance.
+  ///
+  /// In en, this message translates to:
+  /// **'Supporting'**
+  String get relevanceSupporting;
+
+  /// Relevance.
+  ///
+  /// In en, this message translates to:
+  /// **'Background'**
+  String get relevanceBackground;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Open access'**
+  String get researchOpenAccess;
+
+  /// Open access value.
+  ///
+  /// In en, this message translates to:
+  /// **'Yes — PubMed Central'**
+  String get researchOpenPmc;
+
+  /// Open access value.
+  ///
+  /// In en, this message translates to:
+  /// **'Yes — free full-text link'**
+  String get researchOpenLink;
+
+  /// Open access value.
+  ///
+  /// In en, this message translates to:
+  /// **'Not determined'**
+  String get researchOpenUnknown;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Document type'**
+  String get researchDocKind;
+
+  /// Section index header.
+  ///
+  /// In en, this message translates to:
+  /// **'On this page'**
+  String get detailOnThisPage;
+
+  /// Section header.
+  ///
+  /// In en, this message translates to:
+  /// **'Not yet sourced'**
+  String get detailNotYetSourced;
+
+  /// Index chip.
+  ///
+  /// In en, this message translates to:
+  /// **'Jurisdiction'**
+  String get detailJurisdictionShort;
+
+  /// Search result meta.
+  ///
+  /// In en, this message translates to:
+  /// **'Metabolite of {name}'**
+  String searchMetaboliteOf(String name);
+
+  /// AI safety block.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic AI does not write official expert opinions, death certificates or definitive intoxication conclusions. It can help you find and compare sources.'**
+  String get aiBlockedOfficial;
+
+  /// AI notice.
+  ///
+  /// In en, this message translates to:
+  /// **'This is a legal or procedural question. Select a jurisdiction first — Forensic AI never assumes one.'**
+  String get aiJurisdictionRequired;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Select jurisdiction'**
+  String get aiSelectJurisdiction;
+
+  /// AI answer section.
+  ///
+  /// In en, this message translates to:
+  /// **'Evidence status'**
+  String get aiSectionEvidenceStatus;
+
+  /// Placeholder.
+  ///
+  /// In en, this message translates to:
+  /// **'Each statement shows the review status and evidence level of the record it comes from.'**
+  String get aiSampleEvidenceStatus;
+
+  /// AI answer section.
+  ///
+  /// In en, this message translates to:
+  /// **'Jurisdiction'**
+  String get aiSectionJurisdiction;
+
+  /// Placeholder.
+  ///
+  /// In en, this message translates to:
+  /// **'Legal statements apply only to the selected jurisdiction; scientific statements are global.'**
+  String get aiSampleJurisdiction;
+
+  /// AI answer section.
+  ///
+  /// In en, this message translates to:
+  /// **'Related records'**
+  String get aiSectionRelated;
+
+  /// Placeholder.
+  ///
+  /// In en, this message translates to:
+  /// **'Links to the substance, method and research records used in the answer.'**
+  String get aiSampleRelated;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Overview'**
+  String get tpl_overview;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Names & synonyms'**
+  String get tpl_names;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Classification'**
+  String get tpl_classification;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Metabolism'**
+  String get tpl_metabolism;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Metabolites'**
+  String get tpl_metabolites;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Specimens'**
+  String get tpl_specimens;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Screening'**
+  String get tpl_screening;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirmatory analysis'**
+  String get tpl_confirmation;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Analytical methods'**
+  String get tpl_analyticalMethods;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Reported concentrations'**
+  String get tpl_reportedConcentrations;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Interpretation'**
+  String get tpl_interpretation;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Postmortem considerations'**
+  String get tpl_postmortem;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Stability'**
+  String get tpl_stability;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Interferences'**
+  String get tpl_interferences;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Jurisdiction-specific law & methods'**
+  String get tpl_jurisdiction;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Research & evidence'**
+  String get tpl_research;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Sources'**
+  String get tpl_sources;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Principle'**
+  String get tpl_principle;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic use'**
+  String get tpl_forensicUse;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Sample preparation'**
+  String get tpl_samplePreparation;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Instrumentation'**
+  String get tpl_instrumentation;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Qualitative / quantitative use'**
+  String get tpl_qualitativeQuantitative;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Validation requirements'**
+  String get tpl_validation;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Interference'**
+  String get tpl_interference;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Limitations'**
+  String get tpl_limitations;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Quality control'**
+  String get tpl_qc;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Related substances'**
+  String get tpl_relatedSubstances;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Related reagents'**
+  String get tpl_relatedReagents;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Purpose'**
+  String get tpl_purpose;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Composition'**
+  String get tpl_composition;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparation'**
+  String get tpl_preparation;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Storage & stability'**
+  String get tpl_storageStability;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Safety'**
+  String get tpl_safety;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Disposal'**
+  String get tpl_disposal;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Linked methods & tests'**
+  String get tpl_linkedMethods;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Technology'**
+  String get tpl_technology;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Target & specimen'**
+  String get tpl_targetSpecimen;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Cutoff'**
+  String get tpl_cutoff;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Sensitivity & specificity'**
+  String get tpl_performance;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Cross-reactivity'**
+  String get tpl_crossReactivity;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'False positives / negatives'**
+  String get tpl_falseResults;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Marker'**
+  String get tpl_marker;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Specimen'**
+  String get tpl_specimen;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Collection context'**
+  String get tpl_collectionContext;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Postmortem limitations'**
+  String get tpl_postmortemLimitations;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Analytical method'**
+  String get tpl_analyticalMethod;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Interpretation limitations'**
+  String get tpl_interpretationLimitations;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Definition'**
+  String get tpl_definition;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Findings'**
+  String get tpl_findings;
+
+  /// Content template section.
+  ///
+  /// In en, this message translates to:
+  /// **'Methods'**
+  String get tpl_methods;
+
+  /// Template coverage.
+  ///
+  /// In en, this message translates to:
+  /// **'Sections with sourced data: {filled} of {total}'**
+  String templateCoverage(int filled, int total);
 }
 
 class _AppLocalizationsDelegate

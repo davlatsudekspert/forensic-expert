@@ -161,6 +161,7 @@ class KnowledgeDetailScreen extends ConsumerWidget {
                   ],
                   ScientificImageGallery(entityId: e.id),
                   RelatedSection(entityId: e.id),
+                  if (unlocked) TemplateCoverageCard(entry: e),
                   FeSectionHeader(l.knowledgeSources),
                   if (e.allSources.isEmpty)
                     Text(
@@ -578,3 +579,95 @@ class _EmergingSection extends StatelessWidget {
 
 String _norm(String t) =>
     t.toLowerCase().replaceAll(RegExp(r'[^a-z0-9]+'), ' ').trim();
+
+/// Kontent shabloni qamrovi: qaysi bo‘limlarda manbali ma’lumot bor va
+/// qaysilari hali manbasiz. Bo‘sh bo‘limlar to‘qilmaydi — bitta qator.
+class TemplateCoverageCard extends ConsumerWidget {
+  const TemplateCoverageCard({super.key, required this.entry});
+
+  final KnowledgeEntry entry;
+
+  static TemplateKind? kindOf(KnowledgeEntry e) => switch (e.kind) {
+    KnowledgeKind.reagent => TemplateKind.reagent,
+    KnowledgeKind.screeningTest => TemplateKind.rapidTest,
+    KnowledgeKind.method => TemplateKind.method,
+    KnowledgeKind.topic when e.area == KnowledgeArea.biochemistry =>
+      TemplateKind.biomarker,
+    KnowledgeKind.topic => TemplateKind.forensicMedicineTopic,
+    _ => null,
+  };
+
+  static bool _structural(KnowledgeEntry e, String code) {
+    final r = e.recipe;
+    final t = e.screening;
+    return switch (code) {
+      'composition' => r != null && r.ingredients.isNotEmpty,
+      'preparation' => r != null && r.steps.isNotEmpty,
+      'storage_stability' =>
+        r != null &&
+            (r.storage != null || r.stability != null || r.temperature != null),
+      'safety' => r != null && r.hazards.isNotEmpty,
+      'disposal' => r?.disposalReference != null,
+      'qc' => r?.qcRequirement != null,
+      'technology' => t != null && t.principle.isNotEmpty,
+      'target_specimen' => t != null && t.analyte.isNotEmpty,
+      'cutoff' => t?.cutoff != null,
+      'performance' => t?.sensitivity != null || t?.specificity != null,
+      'cross_reactivity' => t != null && t.crossReactivity.isNotEmpty,
+      'false_results' =>
+        t != null && (t.falsePositive.isNotEmpty || t.falseNegative.isNotEmpty),
+      'limitations' => t != null && t.limitations.isNotEmpty,
+      _ => false,
+    };
+  }
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final kind = kindOf(entry);
+    if (kind == null) return const SizedBox.shrink();
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final ev = ref.watch(evidenceDataProvider);
+    final fields = {for (final x in entry.claims) x.field};
+    final relations = {
+      for (final x in ev.linksFrom(entry.id)) x.relation,
+      for (final x in ev.linksTo(entry.id)) x.relation,
+    };
+    final sections = ContentTemplates.of(kind);
+    final filled = [
+      for (final s in sections)
+        if (s.claimFields.any(fields.contains) ||
+            s.relations.any(relations.contains) ||
+            (s.structural && _structural(entry, s.code)))
+          s,
+    ];
+    final missing = [
+      for (final s in sections)
+        if (!filled.contains(s)) l.templateSectionName(s.code),
+    ];
+    return Padding(
+      padding: const EdgeInsets.only(top: FeSpace.sm),
+      child: FeCard(
+        key: const Key('knowledge.templateCoverage'),
+        padding: const EdgeInsets.all(FeSpace.sm),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              l.templateCoverage(filled.length, sections.length),
+              style: t.titleSmall,
+            ),
+            if (missing.isNotEmpty) ...[
+              const SizedBox(height: FeSpace.xxs),
+              Text(
+                '${l.detailNotYetSourced}: ${missing.join(FeGlyphs.middleDot)}',
+                style: t.bodySmall?.copyWith(color: c.textSecondary),
+              ),
+            ],
+          ],
+        ),
+      ),
+    );
+  }
+}

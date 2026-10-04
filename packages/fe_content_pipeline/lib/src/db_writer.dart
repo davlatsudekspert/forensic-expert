@@ -252,8 +252,9 @@ class ContentDbWriter {
           'INSERT INTO research_records (research_id, kind, title, '
           'authors_json, organization, container, pub_year, doi, pmid, pmcid, '
           'handle, url, degree, open_access, source_api, accessed_date, '
-          'evidence_level, peer_reviewed, review_status, is_test_data) '
-          'VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
+          'evidence_level, peer_reviewed, review_status, is_test_data, '
+          'forensic_relevance, language) '
+          'VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
           [
             r.id,
             r.kind.code,
@@ -275,6 +276,8 @@ class ContentDbWriter {
             r.kind.isPeerReviewedFullArticle ? 1 : 0,
             r.status.code,
             r.isTestData ? 1 : 0,
+            r.forensicRelevance.code,
+            r.language,
           ],
         );
       }

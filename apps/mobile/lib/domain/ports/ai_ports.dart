@@ -14,10 +14,18 @@ enum AiAvailability { notConfigured, offline, quotaExceeded, available }
 
 @immutable
 class AiQuestion {
-  const AiQuestion({required this.text, required this.languageCode});
+  const AiQuestion({
+    required this.text,
+    required this.languageCode,
+    this.jurisdictionId,
+  });
 
   final String text;
   final String languageCode;
+
+  /// Foydalanuvchi tanlagan yurisdiksiya (`INT` — tanlanmagan / xalqaro).
+  /// Huquqiy savolda AI yurisdiksiyani **taxmin qilmaydi**.
+  final String? jurisdictionId;
 }
 
 /// Javob qaysi bilim qatlamiga tayanadi (12.2 — ustuvorlik tartibi).

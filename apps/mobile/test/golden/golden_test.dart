@@ -164,7 +164,13 @@ void main() {
         true,
         std,
       ),
-      ('pilot_library_en_320', s('en'), Routes.library, false, small),
+      (
+        'pilot_library_en_320',
+        s('en'),
+        Routes.librarySection('substances'),
+        false,
+        small,
+      ),
       // PHASE 4 bilim sohalari va yurisdiksiya solishtiruvi.
       (
         'p4_reagent_norecipe_en',

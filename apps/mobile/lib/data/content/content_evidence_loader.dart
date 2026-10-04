@@ -56,6 +56,11 @@ abstract final class ContentEvidenceLoader {
           status: ScientificStatus.fromCode(r.read<String>('review_status')),
           linkedEntityIds: linked[r.read<String>('research_id')] ?? const [],
           isTestData: r.read<int>('is_test_data') == 1,
+          openAccess: r.readNullable<String>('open_access'),
+          forensicRelevance: ForensicRelevance.fromCode(
+            r.readNullable<String>('forensic_relevance'),
+          ),
+          language: r.readNullable<String>('language'),
         ),
     ];
     LocalizedText lt(String json) =>

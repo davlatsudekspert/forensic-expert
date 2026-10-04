@@ -1080,7 +1080,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get moduleReagents => 'Реактивы и растворы';
 
   @override
-  String get moduleScreening => 'Скрининг и экспресс-тесты';
+  String get moduleScreening => 'Экспресс- и скрининговые тесты';
 
   @override
   String get moduleMethods => 'Методы и СОП';
@@ -2490,4 +2490,298 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get translationNone => 'Только язык оригинала';
+
+  @override
+  String get libraryHubIntro =>
+      'Единый раздел научных записей. У каждой записи указаны источник и статус проверки.';
+
+  @override
+  String get libraryStandards => 'Стандарты и официальные документы';
+
+  @override
+  String libraryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count записи',
+      many: '$count записей',
+      few: '$count записи',
+      one: '1 запись',
+      zero: 'Записей пока нет',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get libraryGroupScience => 'Научные записи';
+
+  @override
+  String get libraryGroupDocs => 'Документы и доказательства';
+
+  @override
+  String get standardsIntro =>
+      'Стандарты, руководства и методики помечены по типу. Юридически обязательны только законы и нормативные акты — и только в своей юрисдикции.';
+
+  @override
+  String get researchFilterPeer => 'Только рецензируемые';
+
+  @override
+  String get researchFilterOpen => 'Открытый доступ';
+
+  @override
+  String get researchPeriodAll => 'Любой год';
+
+  @override
+  String get researchPeriodRecent => '2020 и позже';
+
+  @override
+  String get researchPeriod2010 => '2010–2019';
+
+  @override
+  String get researchPeriodOlder => 'До 2010';
+
+  @override
+  String get researchDisciplineAll => 'Все дисциплины';
+
+  @override
+  String get researchDiscipline => 'Дисциплина';
+
+  @override
+  String get researchPeriod => 'Период';
+
+  @override
+  String get researchClear => 'Сбросить фильтры';
+
+  @override
+  String get researchRelevance => 'Судебно-экспертная значимость';
+
+  @override
+  String get relevanceUnassessed =>
+      'Ещё не оценена рецензентом (отдельно от уровня доказательности)';
+
+  @override
+  String get relevanceDirect => 'Прямая';
+
+  @override
+  String get relevanceSupporting => 'Вспомогательная';
+
+  @override
+  String get relevanceBackground => 'Фоновая';
+
+  @override
+  String get researchOpenAccess => 'Открытый доступ';
+
+  @override
+  String get researchOpenPmc => 'Да — PubMed Central';
+
+  @override
+  String get researchOpenLink => 'Да — бесплатная ссылка на полный текст';
+
+  @override
+  String get researchOpenUnknown => 'Не определено';
+
+  @override
+  String get researchDocKind => 'Тип документа';
+
+  @override
+  String get detailOnThisPage => 'На этой странице';
+
+  @override
+  String get detailNotYetSourced => 'Пока без источников';
+
+  @override
+  String get detailJurisdictionShort => 'Юрисдикция';
+
+  @override
+  String searchMetaboliteOf(String name) {
+    return 'Метаболит: $name';
+  }
+
+  @override
+  String get aiBlockedOfficial =>
+      'Forensic AI не составляет официальные экспертные заключения, свидетельства о смерти и окончательные выводы об интоксикации. Он может помочь найти и сравнить источники.';
+
+  @override
+  String get aiJurisdictionRequired =>
+      'Это правовой или процессуальный вопрос. Сначала выберите юрисдикцию — Forensic AI никогда не предполагает её сам.';
+
+  @override
+  String get aiSelectJurisdiction => 'Выбрать юрисдикцию';
+
+  @override
+  String get aiSectionEvidenceStatus => 'Статус доказательств';
+
+  @override
+  String get aiSampleEvidenceStatus =>
+      'У каждого утверждения указаны статус проверки и уровень доказательности исходной записи.';
+
+  @override
+  String get aiSectionJurisdiction => 'Юрисдикция';
+
+  @override
+  String get aiSampleJurisdiction =>
+      'Правовые утверждения относятся только к выбранной юрисдикции; научные — глобальны.';
+
+  @override
+  String get aiSectionRelated => 'Связанные записи';
+
+  @override
+  String get aiSampleRelated =>
+      'Ссылки на записи о веществах, методах и исследованиях, использованные в ответе.';
+
+  @override
+  String get tpl_overview => 'Обзор';
+
+  @override
+  String get tpl_names => 'Названия и синонимы';
+
+  @override
+  String get tpl_classification => 'Классификация';
+
+  @override
+  String get tpl_metabolism => 'Метаболизм';
+
+  @override
+  String get tpl_metabolites => 'Метаболиты';
+
+  @override
+  String get tpl_specimens => 'Образцы';
+
+  @override
+  String get tpl_screening => 'Скрининг';
+
+  @override
+  String get tpl_confirmation => 'Подтверждающий анализ';
+
+  @override
+  String get tpl_analyticalMethods => 'Аналитические методы';
+
+  @override
+  String get tpl_reportedConcentrations => 'Сообщённые концентрации';
+
+  @override
+  String get tpl_interpretation => 'Интерпретация';
+
+  @override
+  String get tpl_postmortem => 'Посмертные аспекты';
+
+  @override
+  String get tpl_stability => 'Стабильность';
+
+  @override
+  String get tpl_interferences => 'Интерференции';
+
+  @override
+  String get tpl_jurisdiction => 'Право и методики юрисдикции';
+
+  @override
+  String get tpl_research => 'Исследования и доказательства';
+
+  @override
+  String get tpl_sources => 'Источники';
+
+  @override
+  String get tpl_principle => 'Принцип';
+
+  @override
+  String get tpl_forensicUse => 'Судебно-экспертное применение';
+
+  @override
+  String get tpl_samplePreparation => 'Пробоподготовка';
+
+  @override
+  String get tpl_instrumentation => 'Приборное оснащение';
+
+  @override
+  String get tpl_qualitativeQuantitative =>
+      'Качественное / количественное применение';
+
+  @override
+  String get tpl_validation => 'Требования к валидации';
+
+  @override
+  String get tpl_interference => 'Интерференция';
+
+  @override
+  String get tpl_limitations => 'Ограничения';
+
+  @override
+  String get tpl_qc => 'Контроль качества';
+
+  @override
+  String get tpl_relatedSubstances => 'Связанные вещества';
+
+  @override
+  String get tpl_relatedReagents => 'Связанные реагенты';
+
+  @override
+  String get tpl_purpose => 'Назначение';
+
+  @override
+  String get tpl_composition => 'Состав';
+
+  @override
+  String get tpl_preparation => 'Приготовление';
+
+  @override
+  String get tpl_storageStability => 'Хранение и стабильность';
+
+  @override
+  String get tpl_safety => 'Безопасность';
+
+  @override
+  String get tpl_disposal => 'Утилизация';
+
+  @override
+  String get tpl_linkedMethods => 'Связанные методы и тесты';
+
+  @override
+  String get tpl_technology => 'Технология';
+
+  @override
+  String get tpl_targetSpecimen => 'Мишень и образец';
+
+  @override
+  String get tpl_cutoff => 'Порог отсечения (cutoff)';
+
+  @override
+  String get tpl_performance => 'Чувствительность и специфичность';
+
+  @override
+  String get tpl_crossReactivity => 'Перекрёстная реактивность';
+
+  @override
+  String get tpl_falseResults => 'Ложноположительные / ложноотрицательные';
+
+  @override
+  String get tpl_marker => 'Маркер';
+
+  @override
+  String get tpl_specimen => 'Образец';
+
+  @override
+  String get tpl_collectionContext => 'Условия забора';
+
+  @override
+  String get tpl_postmortemLimitations => 'Посмертные ограничения';
+
+  @override
+  String get tpl_analyticalMethod => 'Аналитический метод';
+
+  @override
+  String get tpl_interpretationLimitations => 'Ограничения интерпретации';
+
+  @override
+  String get tpl_definition => 'Определение';
+
+  @override
+  String get tpl_findings => 'Находки';
+
+  @override
+  String get tpl_methods => 'Методы';
+
+  @override
+  String templateCoverage(int filled, int total) {
+    return 'Разделы с источниками: $filled из $total';
+  }
 }

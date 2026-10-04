@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../app/providers.dart';
+import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
+import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/ai/ai_architecture.dart';
 import '../../../domain/ports/ai_ports.dart';
@@ -37,7 +40,11 @@ class _AiScreenState extends ConsumerState<AiScreen> {
     final r = await ref
         .read(aiRouterProvider(lang))
         .route(
-          AiQuestion(text: text, languageCode: lang),
+          AiQuestion(
+            text: text,
+            languageCode: lang,
+            jurisdictionId: ref.read(settingsControllerProvider).jurisdictionId,
+          ),
           experience: _experience,
           entitlement: await ref.read(aiEntitlementServiceProvider).current(),
         );
@@ -237,10 +244,28 @@ class _RouteResultView extends StatelessWidget {
                   SafetyBlock.personalData => l.aiBlockedPii,
                   SafetyBlock.finalCauseOrManner => l.aiBlockedConclusion,
                   SafetyBlock.legalConclusion => l.aiBlockedLegal,
+                  SafetyBlock.officialOpinion => l.aiBlockedOfficial,
                 },
               ),
             )
-        else if (result.chunks.isEmpty)
+        else if (result.outcome == AiRouteOutcome.jurisdictionRequired) ...[
+          FeBanner(
+            key: const Key('ai.jurisdictionRequired'),
+            icon: Icons.public,
+            tone: FeBannerTone.warning,
+            text: l.aiJurisdictionRequired,
+          ),
+          const SizedBox(height: FeSpace.xs),
+          Align(
+            alignment: AlignmentDirectional.centerStart,
+            child: OutlinedButton.icon(
+              key: const Key('ai.selectJurisdiction'),
+              icon: const Icon(Icons.public),
+              label: Text(l.aiSelectJurisdiction),
+              onPressed: () => context.push(Routes.jurisdictionSelect),
+            ),
+          ),
+        ] else if (result.chunks.isEmpty)
           FeEmptyState(
             key: const Key('ai.noContext'),
             icon: Icons.search_off,
@@ -324,6 +349,24 @@ class _AnswerPreview extends StatelessWidget {
             _AnswerSection(
               title: l.aiSectionLimitations,
               text: l.aiSampleLimitation,
+              citations: const [],
+            ),
+            // PHASE 6: javob tuzilmasi — dalil holati, yurisdiksiya va
+            // bog‘liq yozuvlar. Citation metama’lumotlariga server/ilova
+            // egalik qiladi, model emas.
+            _AnswerSection(
+              title: l.aiSectionEvidenceStatus,
+              text: l.aiSampleEvidenceStatus,
+              citations: const [],
+            ),
+            _AnswerSection(
+              title: l.aiSectionJurisdiction,
+              text: l.aiSampleJurisdiction,
+              citations: const [],
+            ),
+            _AnswerSection(
+              title: l.aiSectionRelated,
+              text: l.aiSampleRelated,
               citations: const [],
             ),
             FeSectionHeader(l.sourcesButton),

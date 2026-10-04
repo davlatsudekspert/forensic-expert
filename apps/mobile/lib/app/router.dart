@@ -10,6 +10,7 @@ import '../core/settings/settings_controller.dart';
 
 import '../domain/catalog/tools_catalog.dart';
 import '../domain/knowledge/knowledge_models.dart';
+import '../domain/library/library_models.dart';
 import '../features/ai/presentation/ai_screen.dart';
 import '../features/disciplines/presentation/disciplines_screens.dart';
 import '../features/evidence/presentation/research_screens.dart';
@@ -239,6 +240,19 @@ final routerProvider = Provider<GoRouter>((ref) {
                     path: 'entry/:id',
                     builder: (c, s) =>
                         EntryDetailScreen(entryId: s.pathParameters['id']!),
+                  ),
+                  GoRoute(
+                    path: 'section/:section',
+                    builder: (c, s) => LibrarySectionScreen(
+                      section:
+                          LibrarySection.values
+                              .asNameMap()[s.pathParameters['section']] ??
+                          LibrarySection.substances,
+                    ),
+                  ),
+                  GoRoute(
+                    path: 'standards',
+                    builder: (c, s) => const StandardsScreen(),
                   ),
                 ],
               ),

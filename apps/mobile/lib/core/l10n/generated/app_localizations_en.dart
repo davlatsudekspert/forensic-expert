@@ -1077,7 +1077,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get moduleReagents => 'Reagents & solutions';
 
   @override
-  String get moduleScreening => 'Screening & express tests';
+  String get moduleScreening => 'Rapid & screening tests';
 
   @override
   String get moduleMethods => 'Methods & SOP';
@@ -2485,4 +2485,295 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get translationNone => 'Original language only';
+
+  @override
+  String get libraryHubIntro =>
+      'One umbrella for scientific records. Every record shows its source and review status.';
+
+  @override
+  String get libraryStandards => 'Standards & official documents';
+
+  @override
+  String libraryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count records',
+      one: '1 record',
+      zero: 'No records yet',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get libraryGroupScience => 'Scientific records';
+
+  @override
+  String get libraryGroupDocs => 'Documents & evidence';
+
+  @override
+  String get standardsIntro =>
+      'Standards, guidelines and methods are labelled by type. Only laws and regulations are legally binding — and only in their own jurisdiction.';
+
+  @override
+  String get researchFilterPeer => 'Peer-reviewed only';
+
+  @override
+  String get researchFilterOpen => 'Open access';
+
+  @override
+  String get researchPeriodAll => 'Any year';
+
+  @override
+  String get researchPeriodRecent => '2020 or later';
+
+  @override
+  String get researchPeriod2010 => '2010–2019';
+
+  @override
+  String get researchPeriodOlder => 'Before 2010';
+
+  @override
+  String get researchDisciplineAll => 'All disciplines';
+
+  @override
+  String get researchDiscipline => 'Discipline';
+
+  @override
+  String get researchPeriod => 'Period';
+
+  @override
+  String get researchClear => 'Clear filters';
+
+  @override
+  String get researchRelevance => 'Forensic relevance';
+
+  @override
+  String get relevanceUnassessed =>
+      'Not yet assessed by a reviewer (separate from evidence level)';
+
+  @override
+  String get relevanceDirect => 'Direct';
+
+  @override
+  String get relevanceSupporting => 'Supporting';
+
+  @override
+  String get relevanceBackground => 'Background';
+
+  @override
+  String get researchOpenAccess => 'Open access';
+
+  @override
+  String get researchOpenPmc => 'Yes — PubMed Central';
+
+  @override
+  String get researchOpenLink => 'Yes — free full-text link';
+
+  @override
+  String get researchOpenUnknown => 'Not determined';
+
+  @override
+  String get researchDocKind => 'Document type';
+
+  @override
+  String get detailOnThisPage => 'On this page';
+
+  @override
+  String get detailNotYetSourced => 'Not yet sourced';
+
+  @override
+  String get detailJurisdictionShort => 'Jurisdiction';
+
+  @override
+  String searchMetaboliteOf(String name) {
+    return 'Metabolite of $name';
+  }
+
+  @override
+  String get aiBlockedOfficial =>
+      'Forensic AI does not write official expert opinions, death certificates or definitive intoxication conclusions. It can help you find and compare sources.';
+
+  @override
+  String get aiJurisdictionRequired =>
+      'This is a legal or procedural question. Select a jurisdiction first — Forensic AI never assumes one.';
+
+  @override
+  String get aiSelectJurisdiction => 'Select jurisdiction';
+
+  @override
+  String get aiSectionEvidenceStatus => 'Evidence status';
+
+  @override
+  String get aiSampleEvidenceStatus =>
+      'Each statement shows the review status and evidence level of the record it comes from.';
+
+  @override
+  String get aiSectionJurisdiction => 'Jurisdiction';
+
+  @override
+  String get aiSampleJurisdiction =>
+      'Legal statements apply only to the selected jurisdiction; scientific statements are global.';
+
+  @override
+  String get aiSectionRelated => 'Related records';
+
+  @override
+  String get aiSampleRelated =>
+      'Links to the substance, method and research records used in the answer.';
+
+  @override
+  String get tpl_overview => 'Overview';
+
+  @override
+  String get tpl_names => 'Names & synonyms';
+
+  @override
+  String get tpl_classification => 'Classification';
+
+  @override
+  String get tpl_metabolism => 'Metabolism';
+
+  @override
+  String get tpl_metabolites => 'Metabolites';
+
+  @override
+  String get tpl_specimens => 'Specimens';
+
+  @override
+  String get tpl_screening => 'Screening';
+
+  @override
+  String get tpl_confirmation => 'Confirmatory analysis';
+
+  @override
+  String get tpl_analyticalMethods => 'Analytical methods';
+
+  @override
+  String get tpl_reportedConcentrations => 'Reported concentrations';
+
+  @override
+  String get tpl_interpretation => 'Interpretation';
+
+  @override
+  String get tpl_postmortem => 'Postmortem considerations';
+
+  @override
+  String get tpl_stability => 'Stability';
+
+  @override
+  String get tpl_interferences => 'Interferences';
+
+  @override
+  String get tpl_jurisdiction => 'Jurisdiction-specific law & methods';
+
+  @override
+  String get tpl_research => 'Research & evidence';
+
+  @override
+  String get tpl_sources => 'Sources';
+
+  @override
+  String get tpl_principle => 'Principle';
+
+  @override
+  String get tpl_forensicUse => 'Forensic use';
+
+  @override
+  String get tpl_samplePreparation => 'Sample preparation';
+
+  @override
+  String get tpl_instrumentation => 'Instrumentation';
+
+  @override
+  String get tpl_qualitativeQuantitative => 'Qualitative / quantitative use';
+
+  @override
+  String get tpl_validation => 'Validation requirements';
+
+  @override
+  String get tpl_interference => 'Interference';
+
+  @override
+  String get tpl_limitations => 'Limitations';
+
+  @override
+  String get tpl_qc => 'Quality control';
+
+  @override
+  String get tpl_relatedSubstances => 'Related substances';
+
+  @override
+  String get tpl_relatedReagents => 'Related reagents';
+
+  @override
+  String get tpl_purpose => 'Purpose';
+
+  @override
+  String get tpl_composition => 'Composition';
+
+  @override
+  String get tpl_preparation => 'Preparation';
+
+  @override
+  String get tpl_storageStability => 'Storage & stability';
+
+  @override
+  String get tpl_safety => 'Safety';
+
+  @override
+  String get tpl_disposal => 'Disposal';
+
+  @override
+  String get tpl_linkedMethods => 'Linked methods & tests';
+
+  @override
+  String get tpl_technology => 'Technology';
+
+  @override
+  String get tpl_targetSpecimen => 'Target & specimen';
+
+  @override
+  String get tpl_cutoff => 'Cutoff';
+
+  @override
+  String get tpl_performance => 'Sensitivity & specificity';
+
+  @override
+  String get tpl_crossReactivity => 'Cross-reactivity';
+
+  @override
+  String get tpl_falseResults => 'False positives / negatives';
+
+  @override
+  String get tpl_marker => 'Marker';
+
+  @override
+  String get tpl_specimen => 'Specimen';
+
+  @override
+  String get tpl_collectionContext => 'Collection context';
+
+  @override
+  String get tpl_postmortemLimitations => 'Postmortem limitations';
+
+  @override
+  String get tpl_analyticalMethod => 'Analytical method';
+
+  @override
+  String get tpl_interpretationLimitations => 'Interpretation limitations';
+
+  @override
+  String get tpl_definition => 'Definition';
+
+  @override
+  String get tpl_findings => 'Findings';
+
+  @override
+  String get tpl_methods => 'Methods';
+
+  @override
+  String templateCoverage(int filled, int total) {
+    return 'Sections with sourced data: $filled of $total';
+  }
 }

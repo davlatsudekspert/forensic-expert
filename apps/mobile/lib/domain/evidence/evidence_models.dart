@@ -32,10 +32,22 @@ class ResearchEntry {
     this.accessedDate,
     this.linkedEntityIds = const [],
     this.isTestData = false,
+    this.openAccess,
+    this.forensicRelevance = ForensicRelevance.unassessed,
+    this.language,
   });
 
   final String id;
   final ResearchKind kind;
+
+  /// `pmc` / `free_link` / `unknown` (manba API’sidan).
+  final String? openAccess;
+
+  /// Dalil sifatidan alohida; reviewer baholamaguncha `unassessed`.
+  final ForensicRelevance forensicRelevance;
+  final String? language;
+
+  bool get isOpenAccess => openAccess == 'pmc' || openAccess == 'free_link';
   final String title;
   final List<String> authors;
   final String? organization;

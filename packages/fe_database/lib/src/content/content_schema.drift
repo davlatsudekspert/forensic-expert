@@ -288,7 +288,7 @@ CREATE VIRTUAL TABLE search_fts_tri USING fts5(
 
 CREATE TABLE research_records (
   research_id TEXT NOT NULL PRIMARY KEY,
-  kind TEXT NOT NULL CHECK (kind IN ('journal_article','review','systematic_review','meta_analysis','case_report','conference_abstract','conference_paper','dissertation','thesis','official_report','standard')),
+  kind TEXT NOT NULL CHECK (kind IN ('journal_article','review','systematic_review','meta_analysis','case_report','conference_abstract','conference_paper','dissertation','thesis','official_report','standard','guideline','validation_study','case_series')),
   title TEXT NOT NULL,
   authors_json TEXT NOT NULL DEFAULT '[]',
   organization TEXT,
@@ -307,6 +307,9 @@ CREATE TABLE research_records (
   peer_reviewed INTEGER NOT NULL,
   review_status TEXT NOT NULL CHECK (review_status IN ('DRAFT','VERIFIED','REVIEWED','NEEDS_REVIEW','OUTDATED','REJECTED')),
   is_test_data INTEGER NOT NULL DEFAULT 0,
+  -- PHASE 6: forensik dolzarblik dalil sifatidan alohida (reviewer belgilaydi).
+  forensic_relevance TEXT NOT NULL DEFAULT 'unassessed' CHECK (forensic_relevance IN ('unassessed','direct','supporting','background')),
+  language TEXT,
   CHECK (doi IS NOT NULL OR pmid IS NOT NULL OR handle IS NOT NULL OR url IS NOT NULL)
 ) WITHOUT ROWID;
 

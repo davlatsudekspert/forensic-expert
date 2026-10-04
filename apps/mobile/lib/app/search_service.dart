@@ -131,6 +131,20 @@ class AppSearchService {
             ),
           );
         }
+        // Metabolitlar — ota moddaga olib boradi (manbali claim’lardan).
+        for (final c in e.details?.claims ?? const <ClaimView>[]) {
+          if (c.field != 'metabolites') continue;
+          for (final m in c.items) {
+            terms.add(
+              SearchTerm(
+                entityId: e.id,
+                category: SearchCategory.metabolite,
+                term: m,
+                kind: TermKind.synonym,
+              ),
+            );
+          }
+        }
         for (final s in e.synonyms) {
           terms.add(
             SearchTerm(

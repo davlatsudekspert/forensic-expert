@@ -194,7 +194,7 @@ void main() {
   testWidgets('kutubxona: guruh filtri faqat shu guruhni ko‘rsatadi', (
     tester,
   ) async {
-    await open(tester, Routes.library);
+    await open(tester, Routes.librarySection('substances'));
     expect(find.byKey(const Key('library.groups')), findsOneWidget);
     final chip = find.byKey(const Key('library.group.opioids'));
     await tester.ensureVisible(chip);

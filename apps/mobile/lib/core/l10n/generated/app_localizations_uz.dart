@@ -1078,7 +1078,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get moduleReagents => 'Reagentlar va eritmalar';
 
   @override
-  String get moduleScreening => 'Skrining va ekspress testlar';
+  String get moduleScreening => 'Ekspress va skrining testlari';
 
   @override
   String get moduleMethods => 'Metodlar va SOP';
@@ -2488,4 +2488,294 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get translationNone => 'Faqat asl tilda';
+
+  @override
+  String get libraryHubIntro =>
+      'Ilmiy yozuvlar uchun yagona markaz. Har bir yozuvda manba va tekshiruv holati ko‘rsatiladi.';
+
+  @override
+  String get libraryStandards => 'Standartlar va rasmiy hujjatlar';
+
+  @override
+  String libraryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta yozuv',
+      zero: 'Hali yozuv yo‘q',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get libraryGroupScience => 'Ilmiy yozuvlar';
+
+  @override
+  String get libraryGroupDocs => 'Hujjatlar va dalillar';
+
+  @override
+  String get standardsIntro =>
+      'Standart, qo‘llanma va metodlar turi bilan belgilangan. Faqat qonun va normativ hujjatlar qonuniy majburiy — va faqat o‘z yurisdiksiyasida.';
+
+  @override
+  String get researchFilterPeer => 'Faqat taqrizdan o‘tgan';
+
+  @override
+  String get researchFilterOpen => 'Ochiq kirish';
+
+  @override
+  String get researchPeriodAll => 'Istalgan yil';
+
+  @override
+  String get researchPeriodRecent => '2020 va keyin';
+
+  @override
+  String get researchPeriod2010 => '2010–2019';
+
+  @override
+  String get researchPeriodOlder => '2010 gacha';
+
+  @override
+  String get researchDisciplineAll => 'Barcha fanlar';
+
+  @override
+  String get researchDiscipline => 'Fan';
+
+  @override
+  String get researchPeriod => 'Davr';
+
+  @override
+  String get researchClear => 'Filtrlarni tozalash';
+
+  @override
+  String get researchRelevance => 'Sud-ekspert dolzarbligi';
+
+  @override
+  String get relevanceUnassessed =>
+      'Reviewer hali baholamagan (dalil darajasidan alohida)';
+
+  @override
+  String get relevanceDirect => 'Bevosita';
+
+  @override
+  String get relevanceSupporting => 'Yordamchi';
+
+  @override
+  String get relevanceBackground => 'Fon ma’lumoti';
+
+  @override
+  String get researchOpenAccess => 'Ochiq kirish';
+
+  @override
+  String get researchOpenPmc => 'Ha — PubMed Central';
+
+  @override
+  String get researchOpenLink => 'Ha — to‘liq matnga bepul havola';
+
+  @override
+  String get researchOpenUnknown => 'Aniqlanmagan';
+
+  @override
+  String get researchDocKind => 'Hujjat turi';
+
+  @override
+  String get detailOnThisPage => 'Shu sahifada';
+
+  @override
+  String get detailNotYetSourced => 'Hali manbasiz';
+
+  @override
+  String get detailJurisdictionShort => 'Yurisdiksiya';
+
+  @override
+  String searchMetaboliteOf(String name) {
+    return 'Metabolit: $name';
+  }
+
+  @override
+  String get aiBlockedOfficial =>
+      'Forensic AI rasmiy ekspert xulosasi, o‘lim guvohnomasi yoki zaharlanish bo‘yicha qat’iy xulosa yozmaydi. U manbalarni topish va solishtirishda yordam beradi.';
+
+  @override
+  String get aiJurisdictionRequired =>
+      'Bu huquqiy yoki protsessual savol. Avval yurisdiksiyani tanlang — Forensic AI uni hech qachon o‘zi taxmin qilmaydi.';
+
+  @override
+  String get aiSelectJurisdiction => 'Yurisdiksiyani tanlash';
+
+  @override
+  String get aiSectionEvidenceStatus => 'Dalil holati';
+
+  @override
+  String get aiSampleEvidenceStatus =>
+      'Har bir fikr uchun u olingan yozuvning tekshiruv holati va dalil darajasi ko‘rsatiladi.';
+
+  @override
+  String get aiSectionJurisdiction => 'Yurisdiksiya';
+
+  @override
+  String get aiSampleJurisdiction =>
+      'Huquqiy fikrlar faqat tanlangan yurisdiksiyaga tegishli; ilmiy fikrlar global.';
+
+  @override
+  String get aiSectionRelated => 'Bog‘liq yozuvlar';
+
+  @override
+  String get aiSampleRelated =>
+      'Javobda ishlatilgan modda, metod va tadqiqot yozuvlariga havolalar.';
+
+  @override
+  String get tpl_overview => 'Umumiy ma’lumot';
+
+  @override
+  String get tpl_names => 'Nomlar va sinonimlar';
+
+  @override
+  String get tpl_classification => 'Tasnif';
+
+  @override
+  String get tpl_metabolism => 'Metabolizm';
+
+  @override
+  String get tpl_metabolites => 'Metabolitlar';
+
+  @override
+  String get tpl_specimens => 'Namunalar';
+
+  @override
+  String get tpl_screening => 'Skrining';
+
+  @override
+  String get tpl_confirmation => 'Tasdiqlovchi tahlil';
+
+  @override
+  String get tpl_analyticalMethods => 'Analitik metodlar';
+
+  @override
+  String get tpl_reportedConcentrations => 'Xabar qilingan konsentratsiyalar';
+
+  @override
+  String get tpl_interpretation => 'Talqin';
+
+  @override
+  String get tpl_postmortem => 'O‘limdan keyingi jihatlar';
+
+  @override
+  String get tpl_stability => 'Barqarorlik';
+
+  @override
+  String get tpl_interferences => 'Interferensiyalar';
+
+  @override
+  String get tpl_jurisdiction => 'Yurisdiksiya qonuni va metodlari';
+
+  @override
+  String get tpl_research => 'Tadqiqotlar va dalillar';
+
+  @override
+  String get tpl_sources => 'Manbalar';
+
+  @override
+  String get tpl_principle => 'Prinsip';
+
+  @override
+  String get tpl_forensicUse => 'Sud-ekspert qo‘llanishi';
+
+  @override
+  String get tpl_samplePreparation => 'Namuna tayyorlash';
+
+  @override
+  String get tpl_instrumentation => 'Asbob-uskunalar';
+
+  @override
+  String get tpl_qualitativeQuantitative => 'Sifat / miqdoriy qo‘llanish';
+
+  @override
+  String get tpl_validation => 'Validatsiya talablari';
+
+  @override
+  String get tpl_interference => 'Interferensiya';
+
+  @override
+  String get tpl_limitations => 'Cheklovlar';
+
+  @override
+  String get tpl_qc => 'Sifat nazorati';
+
+  @override
+  String get tpl_relatedSubstances => 'Bog‘liq moddalar';
+
+  @override
+  String get tpl_relatedReagents => 'Bog‘liq reagentlar';
+
+  @override
+  String get tpl_purpose => 'Maqsad';
+
+  @override
+  String get tpl_composition => 'Tarkib';
+
+  @override
+  String get tpl_preparation => 'Tayyorlash';
+
+  @override
+  String get tpl_storageStability => 'Saqlash va barqarorlik';
+
+  @override
+  String get tpl_safety => 'Xavfsizlik';
+
+  @override
+  String get tpl_disposal => 'Utilizatsiya';
+
+  @override
+  String get tpl_linkedMethods => 'Bog‘liq metod va testlar';
+
+  @override
+  String get tpl_technology => 'Texnologiya';
+
+  @override
+  String get tpl_targetSpecimen => 'Nishon va namuna';
+
+  @override
+  String get tpl_cutoff => 'Cutoff qiymati';
+
+  @override
+  String get tpl_performance => 'Sezgirlik va o‘ziga xoslik';
+
+  @override
+  String get tpl_crossReactivity => 'Kesishgan reaktivlik';
+
+  @override
+  String get tpl_falseResults => 'Soxta musbat / manfiy natijalar';
+
+  @override
+  String get tpl_marker => 'Marker';
+
+  @override
+  String get tpl_specimen => 'Namuna';
+
+  @override
+  String get tpl_collectionContext => 'Namuna olish sharoiti';
+
+  @override
+  String get tpl_postmortemLimitations => 'O‘limdan keyingi cheklovlar';
+
+  @override
+  String get tpl_analyticalMethod => 'Analitik metod';
+
+  @override
+  String get tpl_interpretationLimitations => 'Talqin cheklovlari';
+
+  @override
+  String get tpl_definition => 'Ta’rif';
+
+  @override
+  String get tpl_findings => 'Topilmalar';
+
+  @override
+  String get tpl_methods => 'Metodlar';
+
+  @override
+  String templateCoverage(int filled, int total) {
+    return 'Manbali bo‘limlar: $filled / $total';
+  }
 }

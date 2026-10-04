@@ -14,7 +14,11 @@ import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../core/widgets/fe_data_components.dart';
 import '../../../domain/evidence/evidence_models.dart';
+import '../../../domain/knowledge/knowledge_models.dart';
+import '../../../domain/library/library_models.dart';
 import '../../common/view_recorder.dart';
+import '../../disciplines/discipline_strings.dart';
+import '../../legal/presentation/jurisdiction_screens.dart';
 import '../evidence_strings.dart';
 
 /// Ro‘yxatdagi research yozuvi.
@@ -101,22 +105,77 @@ class ResearchLibraryScreen extends ConsumerStatefulWidget {
       _ResearchLibraryScreenState();
 }
 
+enum _Period { all, recent, y2010, older }
+
 class _ResearchLibraryScreenState extends ConsumerState<ResearchLibraryScreen> {
   ResearchKind? _kind;
+  ForensicDiscipline? _discipline;
+  bool _peerOnly = false;
+  bool _openOnly = false;
+  _Period _period = _Period.all;
+
+  bool _inPeriod(ResearchEntry r) {
+    final y = int.tryParse(r.year ?? '');
+    return switch (_period) {
+      _Period.all => true,
+      _Period.recent => y != null && y >= 2020,
+      _Period.y2010 => y != null && y >= 2010 && y <= 2019,
+      _Period.older => y != null && y < 2010,
+    };
+  }
+
+  /// Research fani — bog‘langan yozuvlar fanidan (aniq xarita, taxmin yo‘q).
+  Set<ForensicDiscipline> _disciplinesOf(
+    ResearchEntry r,
+    KnowledgeRepository knowledge,
+    LibraryRepository library,
+  ) => {
+    for (final id in r.linkedEntityIds)
+      if (knowledge.byId(id) case final k?)
+        k.forensicMedicineTopic != null
+            ? disciplineOfFmTopic(k.forensicMedicineTopic!)
+            : disciplineOfArea(k.area)
+      else if (library.byId(id) != null)
+        ForensicDiscipline.forensicToxicology,
+  };
 
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
     final ev = ref.watch(evidenceDataProvider);
+    final knowledge = ref.watch(knowledgeRepositoryProvider);
+    final library = ref.watch(libraryRepositoryProvider);
     final base = widget.entityId == null
         ? ev.research
         : ev.researchFor(widget.entityId!);
     final kinds = {for (final r in base) r.kind}.toList()
       ..sort((a, b) => a.index.compareTo(b.index));
+    final discOf = {
+      for (final r in base) r.id: _disciplinesOf(r, knowledge, library),
+    };
+    final disciplines = {for (final d in discOf.values) ...d}.toList()
+      ..sort((a, b) => a.index.compareTo(b.index));
     final shown = [
       for (final r in base)
-        if (_kind == null || r.kind == _kind) r,
+        if ((_kind == null || r.kind == _kind) &&
+            (!_peerOnly || r.peerReviewed) &&
+            (!_openOnly || r.isOpenAccess) &&
+            _inPeriod(r) &&
+            (_discipline == null || discOf[r.id]!.contains(_discipline)))
+          r,
     ];
+    final anyFilter =
+        _kind != null ||
+        _discipline != null ||
+        _peerOnly ||
+        _openOnly ||
+        _period != _Period.all;
+    String periodLabel(_Period p) => switch (p) {
+      _Period.all => l.researchPeriodAll,
+      _Period.recent => l.researchPeriodRecent,
+      _Period.y2010 => l.researchPeriod2010,
+      _Period.older => l.researchPeriodOlder,
+    };
     return Scaffold(
       appBar: AppBar(title: Text(l.researchTitle)),
       body: SafeArea(
@@ -156,6 +215,94 @@ class _ResearchLibraryScreenState extends ConsumerState<ResearchLibraryScreen> {
                         ],
                       ),
                     ),
+                    const SizedBox(height: FeSpace.xs),
+                    Wrap(
+                      key: const Key('research.filters'),
+                      spacing: FeSpace.xs,
+                      runSpacing: FeSpace.xxs,
+                      children: [
+                        FilterChip(
+                          key: const Key('research.filter.peer'),
+                          label: Text(l.researchFilterPeer),
+                          selected: _peerOnly,
+                          onSelected: (v) => setState(() => _peerOnly = v),
+                        ),
+                        FilterChip(
+                          key: const Key('research.filter.open'),
+                          label: Text(l.researchFilterOpen),
+                          selected: _openOnly,
+                          onSelected: (v) => setState(() => _openOnly = v),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: FeSpace.xs),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: DropdownButtonFormField<_Period>(
+                            key: const Key('research.filter.period'),
+                            initialValue: _period,
+                            isExpanded: true,
+                            decoration: InputDecoration(
+                              labelText: l.researchPeriod,
+                              isDense: true,
+                            ),
+                            items: [
+                              for (final p in _Period.values)
+                                DropdownMenuItem(
+                                  value: p,
+                                  child: Text(periodLabel(p)),
+                                ),
+                            ],
+                            onChanged: (p) =>
+                                setState(() => _period = p ?? _Period.all),
+                          ),
+                        ),
+                        if (disciplines.isNotEmpty) ...[
+                          const SizedBox(width: FeSpace.xs),
+                          Expanded(
+                            child: DropdownButtonFormField<ForensicDiscipline?>(
+                              key: const Key('research.filter.discipline'),
+                              initialValue: _discipline,
+                              isExpanded: true,
+                              decoration: InputDecoration(
+                                labelText: l.researchDiscipline,
+                                isDense: true,
+                              ),
+                              items: [
+                                DropdownMenuItem(
+                                  child: Text(l.researchDisciplineAll),
+                                ),
+                                for (final d in disciplines)
+                                  DropdownMenuItem(
+                                    value: d,
+                                    child: Text(
+                                      l.disciplineName(d),
+                                      overflow: TextOverflow.ellipsis,
+                                    ),
+                                  ),
+                              ],
+                              onChanged: (d) => setState(() => _discipline = d),
+                            ),
+                          ),
+                        ],
+                      ],
+                    ),
+                    if (anyFilter)
+                      Align(
+                        alignment: AlignmentDirectional.centerStart,
+                        child: TextButton(
+                          key: const Key('research.filter.clear'),
+                          onPressed: () => setState(() {
+                            _kind = null;
+                            _discipline = null;
+                            _peerOnly = false;
+                            _openOnly = false;
+                            _period = _Period.all;
+                          }),
+                          child: Text(l.researchClear),
+                        ),
+                      ),
                     FeSectionHeader(l.researchCount(shown.length)),
                     if (shown.isEmpty)
                       FeEmptyState(
@@ -210,6 +357,24 @@ class ResearchDetailScreen extends ConsumerWidget {
       if (r.pmid != null) ('PMID', r.pmid!),
       if (r.pmcid != null) ('PMCID', r.pmcid!),
       if (r.handle != null) ('Handle', r.handle!),
+      (l.researchDocKind, l.documentKindLabel(documentKindOfResearch(r.kind))),
+      (
+        l.researchOpenAccess,
+        switch (r.openAccess) {
+          'pmc' => l.researchOpenPmc,
+          'free_link' => l.researchOpenLink,
+          _ => l.researchOpenUnknown,
+        },
+      ),
+      (
+        l.researchRelevance,
+        switch (r.forensicRelevance) {
+          ForensicRelevance.unassessed => l.relevanceUnassessed,
+          ForensicRelevance.direct => l.relevanceDirect,
+          ForensicRelevance.supporting => l.relevanceSupporting,
+          ForensicRelevance.background => l.relevanceBackground,
+        },
+      ),
     ];
     return Scaffold(
       appBar: AppBar(title: Text(l.researchKindName(r.kind))),

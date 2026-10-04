@@ -24,13 +24,38 @@ import '../../legal/presentation/legal_rule_card.dart';
 /// Paywall qoidasi: nomlar, ogohlantirishlar, provenance va **manbalar**
 /// hech qachon yopilmaydi. Lifetime’siz faqat ilmiy tafsilotlar va
 /// yurisdiksiya qatlami yopiladi.
-class ContentEntryBody extends ConsumerWidget {
+class ContentEntryBody extends ConsumerStatefulWidget {
   const ContentEntryBody({super.key, required this.entry});
 
   final LibraryEntry entry;
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<ContentEntryBody> createState() => _ContentEntryBodyState();
+}
+
+/// Progressive disclosure: «Shu sahifada» indeksi va manbasiz bo‘limlar
+/// bitta ixcham qatorda — cheksiz matn devori o‘rniga.
+class _ContentEntryBodyState extends ConsumerState<ContentEntryBody> {
+  final _anchors = <String, GlobalKey>{};
+
+  GlobalKey _anchor(String id) => _anchors.putIfAbsent(id, GlobalKey.new);
+
+  Widget _section(String id, String title) =>
+      KeyedSubtree(key: _anchor(id), child: FeSectionHeader(title));
+
+  void _jump(String id) {
+    final ctx = _anchors[id]?.currentContext;
+    if (ctx != null) {
+      Scrollable.ensureVisible(
+        ctx,
+        duration: const Duration(milliseconds: 200),
+      );
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final entry = widget.entry;
     final l = AppLocalizations.of(context);
     final d = entry.details!;
     final unlocked =
@@ -60,17 +85,49 @@ class ContentEntryBody extends ConsumerWidget {
       (Icons.compare_arrows, l.detailInterferences),
     ];
 
+    final hasStructure = ref
+        .watch(evidenceDataProvider)
+        .imagesFor(entry.id)
+        .any((m) => m.kind == ImageKind.chemicalStructure);
+    final index = <(String, String)>[
+      if (hasStructure) ('structure', l.detailStructure),
+      if (unlocked) ...[
+        for (final (field, title) in scientificFields)
+          if (presentFields.contains(field)) (field, title),
+        if (presentFields.contains('analytical_method'))
+          ('analytical_method', l.detailAnalyticalMethods),
+        if (presentFields.contains('reported_concentration'))
+          ('reported_concentration', l.detailReportedConcentrations),
+        ('jurisdiction', l.detailJurisdictionShort),
+      ],
+      ('related', l.detailRelated),
+      ('sources', l.detailReferences),
+    ];
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         _ProvenanceCard(entry: entry),
+        FeSectionHeader(l.detailOnThisPage),
+        Wrap(
+          key: const Key('entry.index'),
+          spacing: FeSpace.xs,
+          runSpacing: FeSpace.xxs,
+          children: [
+            for (final (id, title) in index)
+              ActionChip(
+                key: Key('entry.index.$id'),
+                label: Text(title),
+                onPressed: () => _jump(id),
+              ),
+          ],
+        ),
         // Struktura — identifikatsiya (paywall ortida emas).
         for (final im
             in ref
                 .watch(evidenceDataProvider)
                 .imagesFor(entry.id)
                 .where((m) => m.kind == ImageKind.chemicalStructure)) ...[
-          FeSectionHeader(l.detailStructure),
+          _section('structure', l.detailStructure),
           ScientificImageCard(meta: im),
         ],
         if (!unlocked) ...[
@@ -85,7 +142,7 @@ class ContentEntryBody extends ConsumerWidget {
           ),
           for (final (field, title) in scientificFields)
             if (d.claims.any((c) => c.field == field)) ...[
-              FeSectionHeader(title),
+              _section(field, title),
               for (final claim in d.claims.where((c) => c.field == field))
                 Padding(
                   padding: const EdgeInsets.only(bottom: FeSpace.xs),
@@ -93,7 +150,7 @@ class ContentEntryBody extends ConsumerWidget {
                 ),
             ],
           if (presentFields.contains('analytical_method')) ...[
-            FeSectionHeader(l.detailAnalyticalMethods),
+            _section('analytical_method', l.detailAnalyticalMethods),
             for (final claim in d.claims.where(
               (c) => c.field == 'analytical_method',
             ))
@@ -103,7 +160,7 @@ class ContentEntryBody extends ConsumerWidget {
               ),
           ],
           if (presentFields.contains('reported_concentration')) ...[
-            FeSectionHeader(l.detailReportedConcentrations),
+            _section('reported_concentration', l.detailReportedConcentrations),
             FeBanner(
               key: const Key('entry.concentration.notThreshold'),
               icon: Icons.warning_amber_rounded,
@@ -116,22 +173,47 @@ class ContentEntryBody extends ConsumerWidget {
             ))
               _ConcentrationClaim(claim: claim),
           ],
-          for (final (icon, title) in emptySections) ...[
-            FeSectionHeader(title),
-            if (title == l.detailConcentrations) ...[
-              FeBanner(
-                icon: Icons.gavel_outlined,
-                text: l.detailConcentrationsNote,
-                tone: FeBannerTone.warning,
+          if (emptySections.isNotEmpty) ...[
+            _section('not_sourced', l.detailNotYetSourced),
+            FeCard(
+              key: const Key('entry.notSourced'),
+              padding: const EdgeInsets.all(FeSpace.sm),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    [for (final (_, title) in emptySections) title]
+                        .join(FeGlyphs.middleDot),
+                    style: Theme.of(context).textTheme.bodyMedium,
+                  ),
+                  const SizedBox(height: FeSpace.xxs),
+                  Text(
+                    l.detailNoContentYet,
+                    style: Theme.of(context).textTheme.bodySmall
+                        ?.copyWith(color: FeTheme.of(context).textSecondary),
+                  ),
+                  if (!presentFields.contains('reported_concentration')) ...[
+                    const SizedBox(height: FeSpace.xs),
+                    FeBanner(
+                      icon: Icons.gavel_outlined,
+                      text: l.detailConcentrationsNote,
+                      tone: FeBannerTone.warning,
+                    ),
+                  ],
+                ],
               ),
-              const SizedBox(height: FeSpace.xs),
-            ],
-            FeEmptyState(icon: icon, body: l.detailNoContentYet, compact: true),
+            ),
           ],
-          _ContentJurisdictionLayer(entry: entry),
+          KeyedSubtree(
+            key: _anchor('jurisdiction'),
+            child: _ContentJurisdictionLayer(entry: entry),
+          ),
         ],
-        RelatedSection(entityId: entry.id),
-        FeSectionHeader(l.detailReferences),
+        KeyedSubtree(
+          key: _anchor('related'),
+          child: RelatedSection(entityId: entry.id),
+        ),
+        _section('sources', l.detailReferences),
         for (final s in d.allSources)
           Padding(
             padding: const EdgeInsets.only(bottom: FeSpace.xs),

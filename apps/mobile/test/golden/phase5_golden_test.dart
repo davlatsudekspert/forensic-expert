@@ -61,7 +61,7 @@ void main() {
         (
           name: 'p5_03_library_groups_en',
           settings: s('en'),
-          route: Routes.library,
+          route: Routes.librarySection('substances'),
           size: std,
           scale: 1,
           owned: true,
@@ -231,7 +231,7 @@ void main() {
         (
           name: 'p5_20_library_320_x13',
           settings: s('ru'),
-          route: Routes.library,
+          route: Routes.librarySection('substances'),
           size: small,
           scale: 1.3,
           owned: true,

@@ -12,8 +12,10 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../../domain/knowledge/knowledge_models.dart';
 import '../../../domain/library/library_models.dart';
 import '../../evidence/evidence_strings.dart';
+import '../../legal/presentation/jurisdiction_screens.dart';
 import '../../placeholder/presentation/in_development_view.dart';
 import 'content_entry_sections.dart';
 
@@ -37,16 +39,23 @@ extension LibrarySectionL10n on LibrarySection {
 
 enum _StatusFilter { all, verified, reviewed, needsReview }
 
-/// Ilmiy ma’lumotnoma markazi: bo‘limlar, filtr va bo‘lim ichida qidiruv.
-class LibraryScreen extends ConsumerStatefulWidget {
-  const LibraryScreen({super.key});
+/// Bo‘lim ro‘yxati: filtr, tahririy guruhlar va bo‘lim ichida qidiruv.
+/// (PHASE 6: Library hub’dan ochiladi — `/library/section/:section`.)
+class LibrarySectionScreen extends ConsumerStatefulWidget {
+  const LibrarySectionScreen({
+    super.key,
+    this.section = LibrarySection.substances,
+  });
+
+  final LibrarySection section;
 
   @override
-  ConsumerState<LibraryScreen> createState() => _LibraryScreenState();
+  ConsumerState<LibrarySectionScreen> createState() =>
+      _LibrarySectionScreenState();
 }
 
-class _LibraryScreenState extends ConsumerState<LibraryScreen> {
-  LibrarySection _section = LibrarySection.substances;
+class _LibrarySectionScreenState extends ConsumerState<LibrarySectionScreen> {
+  late LibrarySection _section = widget.section;
   _StatusFilter _status = _StatusFilter.all;
   String _filter = '';
 
@@ -98,7 +107,7 @@ class _LibraryScreenState extends ConsumerState<LibraryScreen> {
     };
 
     return Scaffold(
-      appBar: AppBar(title: Text(l.libraryTitle)),
+      appBar: AppBar(title: Text(_section.label(l))),
       body: SafeArea(
         child: ListView(
           children: [
@@ -260,6 +269,239 @@ class _LibraryScreenState extends ConsumerState<LibraryScreen> {
                           ),
                         ),
                       ),
+                  const SizedBox(height: FeSpace.lg),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Library — ilmiy yozuvlar uchun yagona hub (PHASE 6). Bitta tekis ro‘yxat
+/// o‘rniga: ilmiy yozuvlar va hujjatlar/dalillar guruhlari. Sonlar —
+/// paketdagi haqiqiy yozuvlar (sun’iy statistika emas).
+class LibraryScreen extends ConsumerWidget {
+  const LibraryScreen({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    final library = ref.watch(libraryRepositoryProvider);
+    final knowledge = ref.watch(knowledgeRepositoryProvider);
+    final evidence = ref.watch(evidenceDataProvider);
+    final resolver = ref.watch(jurisdictionResolverProvider);
+    int lib(LibrarySection s) => library.entries(s).length;
+    int kn(KnowledgeKind k) => knowledge.byKind(k).length;
+    final standards = [
+      for (final m in knowledge.byKind(KnowledgeKind.method))
+        if (m.method?.kind != MethodKind.scientificMethod) m,
+    ].length;
+
+    final science = <(String, IconData, String, int)>[
+      (
+        'substances',
+        Icons.hub_outlined,
+        l.librarySubstances,
+        lib(LibrarySection.substances),
+      ),
+      (
+        'methods',
+        Icons.biotech_outlined,
+        l.moduleMethods,
+        kn(KnowledgeKind.method),
+      ),
+      (
+        'reagents',
+        Icons.colorize_outlined,
+        l.moduleReagents,
+        kn(KnowledgeKind.reagent),
+      ),
+      (
+        'rapid',
+        Icons.fact_check_outlined,
+        l.moduleScreening,
+        kn(KnowledgeKind.screeningTest),
+      ),
+      (
+        'specimens',
+        Icons.water_drop_outlined,
+        l.librarySpecimens,
+        lib(LibrarySection.specimens),
+      ),
+      (
+        'glossary',
+        Icons.translate,
+        l.libraryGlossary,
+        lib(LibrarySection.glossary),
+      ),
+    ];
+    final docs = <(String, IconData, String, int)>[
+      ('standards', Icons.rule_folder_outlined, l.libraryStandards, standards),
+      (
+        'research',
+        Icons.library_books_outlined,
+        l.moduleResearch,
+        evidence.research.length,
+      ),
+      (
+        'references',
+        Icons.menu_book_outlined,
+        l.libraryReferences,
+        lib(LibrarySection.references),
+      ),
+      (
+        'jurisdictions',
+        Icons.account_balance_outlined,
+        l.jurisdictionsTitle,
+        resolver.instruments.length,
+      ),
+    ];
+
+    String route(String id) => switch (id) {
+      'substances' => Routes.librarySection(LibrarySection.substances.name),
+      'specimens' => Routes.librarySection(LibrarySection.specimens.name),
+      'glossary' => Routes.librarySection(LibrarySection.glossary.name),
+      'references' => Routes.librarySection(LibrarySection.references.name),
+      'methods' => Routes.knowledge(KnowledgeKind.method.name),
+      'reagents' => Routes.knowledge(KnowledgeKind.reagent.name),
+      'rapid' => Routes.knowledge(KnowledgeKind.screeningTest.name),
+      'standards' => Routes.libraryStandards,
+      'research' => Routes.research,
+      _ => Routes.jurisdictions,
+    };
+
+    Widget tile((String, IconData, String, int) x) {
+      final (id, icon, title, count) = x;
+      final c = FeTheme.of(context);
+      return Padding(
+        padding: const EdgeInsets.only(bottom: FeSpace.xs),
+        child: FeCard(
+          key: Key('library.hub.$id'),
+          padding: const EdgeInsets.symmetric(
+            horizontal: FeSpace.md,
+            vertical: FeSpace.sm,
+          ),
+          onTap: () => context.go(route(id)),
+          child: Row(
+            children: [
+              Icon(icon, color: c.accent),
+              const SizedBox(width: FeSpace.sm),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(title, style: Theme.of(context).textTheme.titleSmall),
+                    Text(
+                      l.libraryCount(count),
+                      style: Theme.of(context).textTheme.bodySmall
+                          ?.copyWith(color: c.textSecondary),
+                    ),
+                  ],
+                ),
+              ),
+              ExcludeSemantics(
+                child: Icon(Icons.chevron_right, color: c.textSecondary),
+              ),
+            ],
+          ),
+        ),
+      );
+    }
+
+    return Scaffold(
+      appBar: AppBar(title: Text(l.libraryTitle)),
+      body: SafeArea(
+        child: ListView(
+          key: const Key('library.hub'),
+          children: [
+            FeContentFrame(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  const SizedBox(height: FeSpace.sm),
+                  Text(
+                    l.libraryHubIntro,
+                    style: Theme.of(context).textTheme.bodySmall
+                        ?.copyWith(color: FeTheme.of(context).textSecondary),
+                  ),
+                  FeSectionHeader(l.libraryGroupScience),
+                  for (final x in science) tile(x),
+                  FeSectionHeader(l.libraryGroupDocs),
+                  for (final x in docs) tile(x),
+                  const SizedBox(height: FeSpace.lg),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Standartlar va rasmiy hujjatlar — har biri turi (STANDARD / GUIDELINE /
+/// METHOD / SOP / LAW / REGULATION) va majburiylik darajasi bilan.
+class StandardsScreen extends ConsumerWidget {
+  const StandardsScreen({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final lang = Localizations.localeOf(context).languageCode;
+    final knowledge = ref.watch(knowledgeRepositoryProvider);
+    final resolver = ref.watch(jurisdictionResolverProvider);
+    final methods = [
+      for (final m in knowledge.byKind(KnowledgeKind.method))
+        if (m.method != null && m.method!.kind != MethodKind.scientificMethod)
+          m,
+    ];
+    final instruments = resolver.instruments.toList();
+    Widget kindLine(DocumentKind k) => Text(
+      '${l.documentKindLabel(k)} · ${l.bindingLabel(k.binding)}',
+      style: t.labelSmall?.copyWith(color: c.textSecondary),
+    );
+    return Scaffold(
+      appBar: AppBar(title: Text(l.libraryStandards)),
+      body: SafeArea(
+        child: ListView(
+          key: const Key('library.standards'),
+          children: [
+            FeContentFrame(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  const SizedBox(height: FeSpace.sm),
+                  FeBanner(icon: Icons.gavel_outlined, text: l.standardsIntro),
+                  const SizedBox(height: FeSpace.sm),
+                  if (methods.isEmpty && instruments.isEmpty)
+                    FeEmptyState(
+                      icon: Icons.inventory_2_outlined,
+                      body: l.knowledgeEmpty,
+                    ),
+                  for (final m in methods)
+                    ListTile(
+                      key: Key('standards.${m.id}'),
+                      contentPadding: EdgeInsets.zero,
+                      title: Text(m.name.resolve(lang)),
+                      subtitle: kindLine(documentKindOfMethod(m.method!.kind)),
+                      trailing: const Icon(Icons.chevron_right),
+                      onTap: () => context.go(Routes.knowledgeEntry(m.id)),
+                    ),
+                  for (final i in instruments)
+                    ListTile(
+                      key: Key('standards.${i.id}'),
+                      contentPadding: EdgeInsets.zero,
+                      title: Text(i.titles[lang] ?? i.titles['en'] ?? i.id),
+                      subtitle: kindLine(documentKindOfInstrument(i.type)),
+                      trailing: const Icon(Icons.chevron_right),
+                      onTap: () =>
+                          context.go(Routes.jurisdiction(i.jurisdictionId)),
+                    ),
                   const SizedBox(height: FeSpace.lg),
                 ],
               ),
