@@ -1,0 +1,403 @@
+[
+  {
+    "substance": "ethanol",
+    "status": "found",
+    "pmcid": "PMC3756590",
+    "pmid": "23134050",
+    "doi": "10.35946/arcr.v34.3.09",
+    "title": "Genes encoding enzymes involved in ethanol metabolism.",
+    "journal": "Alcohol research : current reviews",
+    "year": "2012",
+    "license": "Creative Commons (https://creativecommons.org/publicdomain/mark/1.0/)",
+    "section": "(untitled opening section, before 'ADH Variants')",
+    "verbatim_sentence": "The acetaldehyde then is further oxidized by the enzyme aldehyde dehydrogenase (ALDH) to acetate, which is either excreted in the urine or reincorporated into intermediary metabolism as acetyl-CoA.",
+    "metabolites": [
+      "acetaldehyde",
+      "acetate",
+      "acetyl-CoA"
+    ],
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/metabolites_a.json",
+    "license_api": "CC0",
+    "license_mode": "openReuse",
+    "doi_source": "ncbi_idconv",
+    "doi_api": "10.35946/arcr.v34.3.09",
+    "source_sentence": "The acetaldehyde then is further oxidized by the enzyme aldehyde dehydrogenase (ALDH) to acetate, which is either excreted in the urine or reincorporated into intermediary metabolism as acetyl-CoA.",
+    "match": {
+      "type": "exact",
+      "ratio": 1.0
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  },
+  {
+    "substance": "methanol",
+    "status": "found",
+    "pmcid": "PMC11728796",
+    "pmid": "39771139",
+    "doi": "10.3390/toxics12120924",
+    "title": "The Perils of Methanol Exposure: Insights into Toxicity and Clinical Management.",
+    "journal": "Toxics",
+    "year": "2024",
+    "license": "CC BY 4.0",
+    "section": "3. Toxicokinetic",
+    "verbatim_sentence": "Methanol oxidation leads to the formation of formaldehyde, which is subsequently converted into formic acid.",
+    "metabolites": [
+      "formaldehyde",
+      "formic acid"
+    ],
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/metabolites_a.json",
+    "license_api": "CC BY",
+    "license_mode": "openReuse",
+    "doi_api": "10.3390/toxics12120924",
+    "source_sentence": "Methanol oxidation leads to the formation of formaldehyde, which is subsequently converted into formic acid.",
+    "match": {
+      "type": "exact",
+      "ratio": 1.0
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  },
+  {
+    "substance": "ethylene-glycol",
+    "status": "found",
+    "pmcid": "PMC9921105",
+    "pmid": "36765419",
+    "doi": "10.1186/s13054-022-04227-2",
+    "title": "Extracorporeal treatment for ethylene glycol poisoning: systematic review and recommendations from the EXTRIP workgroup.",
+    "journal": "Critical care (London, England)",
+    "year": "2023",
+    "license": "not_available",
+    "section": "Physicochemical characteristics and toxicokinetics",
+    "verbatim_sentence": "One third of absorbed EG is eliminated unchanged in urine while two-thirds are oxidized in the liver by the enzyme alcohol dehydrogenase (ADH) to glycolaldehyde, which is then rapidly converted to glycolate by aldehyde dehydrogenase [].",
+    "metabolites": [
+      "glycolaldehyde",
+      "glycolate"
+    ],
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/metabolites_a.json",
+    "license_api": "CC BY",
+    "license_mode": "openReuse",
+    "doi_api": "10.1186/s13054-022-04227-2",
+    "source_sentence": "One third of absorbed EG is eliminated unchanged in urine while two-thirds are oxidized in the liver by the enzyme alcohol dehydrogenase (ADH) to glycolaldehyde, which is then rapidly converted to glycolate by aldehyde dehydrogenase.",
+    "match": {
+      "type": "exact",
+      "ratio": 1.0
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  },
+  {
+    "substance": "morphine",
+    "status": "found",
+    "pmcid": "PMC9134088",
+    "pmid": "35645730",
+    "doi": "10.3389/fnmol.2022.882443",
+    "title": "Morphine-3-Glucuronide, Physiology and Behavior.",
+    "journal": "Frontiers in molecular neuroscience",
+    "year": "2022",
+    "license": "not_available",
+    "section": "Morphine Metabolism > Glucuronidation of Morphine",
+    "verbatim_sentence": "Glucuronidation occurs at the C3-OH and C6-OH positions, leading to two active metabolites: morphine-3-glucuronide (M3G) and morphine-6-glucuronide (M6G) ().",
+    "metabolites": [
+      "morphine-3-glucuronide (M3G)",
+      "morphine-6-glucuronide (M6G)"
+    ],
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/metabolites_a.json",
+    "license_api": "CC BY",
+    "license_mode": "openReuse",
+    "doi_api": "10.3389/fnmol.2022.882443",
+    "source_sentence": "Glucuronidation occurs at the C3-OH and C6-OH positions, leading to two active metabolites: morphine-3-glucuronide (M3G) and morphine-6-glucuronide (M6G).",
+    "match": {
+      "type": "exact",
+      "ratio": 1.0
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  },
+  {
+    "substance": "heroin",
+    "status": "found",
+    "pmcid": "PMC10082801",
+    "pmid": "37031205",
+    "doi": "10.1038/s41398-023-02406-5",
+    "title": "Heroin and its metabolites: relevance to heroin use disorder.",
+    "journal": "Translational psychiatry",
+    "year": "2023",
+    "license": "not_available",
+    "section": "Introduction",
+    "verbatim_sentence": "Since heroin is rapidly deacetylated to 6-monoacetylmorphine (6-MAM) and then to morphine, drug addiction literature has long settled on the notion that heroin is little more than a means to deliver morphine and/or 6-MAM to the brain [,].",
+    "metabolites": [
+      "6-monoacetylmorphine (6-MAM)",
+      "morphine"
+    ],
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/metabolites_a.json",
+    "license_api": "CC BY",
+    "license_mode": "openReuse",
+    "doi_api": "10.1038/s41398-023-02406-5",
+    "source_sentence": "Since heroin is rapidly deacetylated to 6-monoacetylmorphine (6-MAM) and then to morphine, drug addiction literature has long settled on the notion that heroin is little more than a means to deliver morphine and/or 6-MAM to the brain.",
+    "match": {
+      "type": "exact",
+      "ratio": 1.0
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  },
+  {
+    "substance": "fentanyl",
+    "status": "found",
+    "pmcid": "PMC10593981",
+    "pmid": "37788600",
+    "doi": "10.1097/ADM.0000000000001185",
+    "title": "Fentanyl Absorption, Distribution, Metabolism, and Excretion: Narrative Review and Clinical Significance Related to Illicitly Manufactured Fentanyl.",
+    "journal": "Journal of addiction medicine",
+    "year": "2023",
+    "license": "not_available",
+    "section": "3.1 Norfentanyl:",
+    "verbatim_sentence": "The primary biotransformation is N-dealkylation at the piperidine ring to norfentanyl, which is mediated by CYP3A-enzymes.",
+    "metabolites": [
+      "norfentanyl"
+    ],
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/metabolites_a.json",
+    "license_api": "author_manuscript",
+    "license_mode": "unknown",
+    "doi_api": "10.1097/ADM.0000000000001185",
+    "source_sentence": "The primary biotransformation is N-dealkylation at the piperidine ring to norfentanyl, which is mediated by CYP3A-enzymes.",
+    "match": {
+      "type": "exact",
+      "ratio": 1.0
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  },
+  {
+    "substance": "tramadol",
+    "status": "found",
+    "pmcid": "PMC13074819",
+    "pmid": "41976217",
+    "doi": "10.3390/molecules31071177",
+    "title": "Review of Structural Modification and Development of Novel Tramadol Derivatives",
+    "journal": "Molecules (Basel, Switzerland)",
+    "year": "2026",
+    "license": "CC BY 4.0",
+    "section": "2.2.1. Metabolic Activation Mechanism",
+    "verbatim_sentence": "O-demethylation catalyzed by CYP2D6 produces the active metabolite O-desmethyltramadol (M1,,), whereas N-demethylation mediated by CYP3A4 and CYP2B6 yields the metabolite M2, which can be further converted into downstream metabolites such as M5.",
+    "metabolites": [
+      "O-desmethyltramadol",
+      "M2",
+      "M5"
+    ],
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/metabolites_b.json",
+    "license_api": "CC BY",
+    "license_mode": "openReuse",
+    "doi_api": "10.3390/molecules31071177",
+    "source_sentence": "O-demethylation catalyzed by CYP2D6 produces the active metabolite O-desmethyltramadol (M1, 3, Figure 1), whereas N-demethylation mediated by CYP3A4 and CYP2B6 yields the metabolite M2, which can be further converted into downstream metabolites such as M5.",
+    "match": {
+      "type": "fuzzy",
+      "ratio": 0.978
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  },
+  {
+    "substance": "methamphetamine",
+    "status": "found",
+    "pmcid": "PMC9788588",
+    "pmid": "36557212",
+    "doi": "10.3390/metabo12121174",
+    "title": "Categorization of Cytochrome P4502D6 Activity Score by Urinary Amphetamine/Methamphetamine Ratios",
+    "journal": "Metabolites",
+    "year": "2022",
+    "license": "CC BY 4.0",
+    "section": "1. Introduction",
+    "verbatim_sentence": "CYP2D6 is a major enzyme for MA catabolism via 4-hydroxylation (8–11%) and-demethylation (2–7%) reaction to provide 4-hydroxymetamphetamine and amphetamine (AM), respectively [,].",
+    "metabolites": [
+      "4-hydroxymetamphetamine",
+      "amphetamine (AM)"
+    ],
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/metabolites_b.json",
+    "license_api": "CC BY",
+    "license_mode": "openReuse",
+    "doi_api": "10.3390/metabo12121174",
+    "source_sentence": "CYP2D6 is a major enzyme for MA catabolism via 4-hydroxylation (8–11%) and N-demethylation (2–7%) reaction to provide 4-hydroxymetamphetamine and amphetamine (AM), respectively.",
+    "match": {
+      "type": "fuzzy",
+      "ratio": 0.994
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  },
+  {
+    "substance": "cocaine",
+    "status": "found",
+    "pmcid": "PMC9032145",
+    "pmid": "35448887",
+    "doi": "10.3390/toxins14040278",
+    "title": "Cocaine: An Updated Overview on Chemistry, Detection, Biokinetics, and Pharmacotoxicological Aspects including Abuse Pattern",
+    "journal": "Toxins",
+    "year": "2022",
+    "license": "CC BY 4.0",
+    "section": "2.5.3. Metabolism",
+    "verbatim_sentence": "Cocaine yields two main metabolites: EME and BE, which may both undergo further hydrolysis into ecgonine (EC).",
+    "metabolites": [
+      "EME",
+      "BE",
+      "ecgonine (EC)"
+    ],
+    "note": "EME = ecgonine methyl ester, BE = benzoylecgonine (maqolaning 2.1–2.2 bo‘limlarida ochilgan)",
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/metabolites_b.json",
+    "license_api": "CC BY",
+    "license_mode": "openReuse",
+    "doi_api": "10.3390/toxins14040278",
+    "source_sentence": "Cocaine yields two main metabolites: EME and BE, which may both undergo further hydrolysis into ecgonine (EC).",
+    "match": {
+      "type": "exact",
+      "ratio": 1.0
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  },
+  {
+    "substance": "thc",
+    "status": "found",
+    "pmcid": "PMC13275792",
+    "pmid": "41942676",
+    "doi": "10.1007/s00414-026-03790-5",
+    "title": "Impact of CBD and hemp oil use on drug test results: a systematic review",
+    "journal": "International journal of legal medicine",
+    "year": "2026",
+    "license": "CC BY 4.0",
+    "section": "Introduction",
+    "verbatim_sentence": "Cannabis use or exposure is typically confirmed by detecting THC and its key metabolites, such as THC-COOH and 11-OH-THC, depending on the biological matrix [].",
+    "metabolites": [
+      "THC-COOH",
+      "11-OH-THC"
+    ],
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/metabolites_b.json",
+    "license_api": "CC BY",
+    "license_mode": "openReuse",
+    "doi_api": "10.1007/s00414-026-03790-5",
+    "source_sentence": "Cannabis use or exposure is typically confirmed by detecting THC and its key metabolites, such as THC-COOH and 11-OH-THC, depending on the biological matrix.",
+    "match": {
+      "type": "exact",
+      "ratio": 1.0
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  },
+  {
+    "substance": "alprazolam",
+    "status": "found",
+    "pmcid": "PMC9775082",
+    "pmid": "36551778",
+    "doi": "10.3390/biomedicines10123022",
+    "title": "Changes in Alprazolam Metabolism by CYP3A43 Mutants",
+    "journal": "Biomedicines",
+    "year": "2022",
+    "license": "CC BY 4.0",
+    "section": "1. Introduction",
+    "verbatim_sentence": "Alprazolam was shown to be metabolized by human CYP3A4 and CYP3A5 to the main metabolites 4-hydroxyalprazolam and α-hydroxyalprazolam [].",
+    "metabolites": [
+      "4-hydroxyalprazolam",
+      "α-hydroxyalprazolam"
+    ],
+    "note": "Birlamchi tadqiqot (review emas); kirish qismida avvalgi ishlarga havola bilan",
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/metabolites_b.json",
+    "license_api": "CC BY",
+    "license_mode": "openReuse",
+    "doi_api": "10.3390/biomedicines10123022",
+    "source_sentence": "Alprazolam was shown to be metabolized by human CYP3A4 and CYP3A5 to the main metabolites 4-hydroxyalprazolam and α-hydroxyalprazolam.",
+    "match": {
+      "type": "exact",
+      "ratio": 1.0
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  },
+  {
+    "substance": "phenazepam",
+    "status": "found",
+    "pmcid": "PMC8230725",
+    "pmid": "34208284",
+    "doi": "10.3390/ph14060560",
+    "title": "Designer Benzodiazepines: A Review of Toxicology and Public Health Risks",
+    "journal": "Pharmaceuticals (Basel, Switzerland)",
+    "year": "2021",
+    "license": "CC BY 4.0",
+    "section": "2.10. Phenazepam and 3-Hydroxyphenazepam",
+    "verbatim_sentence": "It is metabolized to the active metabolite 3-hydroxyphenazepam by different isoforms of CYP450 [,].",
+    "metabolites": [
+      "3-hydroxyphenazepam"
+    ],
+    "note": "Gap «It» bilan boshlanadi; ega oldingi gapda — phenazepam",
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/metabolites_b.json",
+    "license_api": "CC BY",
+    "license_mode": "openReuse",
+    "doi_api": "10.3390/ph14060560",
+    "source_sentence": "It is metabolized to the active metabolite 3-hydroxyphenazepam by different isoforms of CYP450.",
+    "match": {
+      "type": "exact",
+      "ratio": 1.0
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  }
+]

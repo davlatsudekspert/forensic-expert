@@ -1,0 +1,176 @@
+[
+  {
+    "substance_id": "morphine",
+    "list": "yellow",
+    "instrument_id": "INT-UN-1961",
+    "edition": "Yellow List, 65th edition, July 2026",
+    "source_url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf",
+    "source_sha256": "3f60040ba7b3302aa0393da185a35b17b4bc65bd8f29b62240f5dbc2e4f74ba0",
+    "accessed": "2026-10-04",
+    "ids_code": "NM 009",
+    "status": "found",
+    "schedules": [
+      "I"
+    ],
+    "rows": [
+      {
+        "line": 330,
+        "text": "NM 009 57-27-2 MORPHINE the principal alkaloid of opium and of opium poppy",
+        "schedule": "I"
+      }
+    ]
+  },
+  {
+    "substance_id": "heroin",
+    "list": "yellow",
+    "instrument_id": "INT-UN-1961",
+    "edition": "Yellow List, 65th edition, July 2026",
+    "source_url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf",
+    "source_sha256": "3f60040ba7b3302aa0393da185a35b17b4bc65bd8f29b62240f5dbc2e4f74ba0",
+    "accessed": "2026-10-04",
+    "ids_code": "NH 001",
+    "status": "found",
+    "schedules": [
+      "I",
+      "IV"
+    ],
+    "rows": [
+      {
+        "line": 275,
+        "text": "NH 001 561-27-3 HEROIN diacetylmorphine (derivative of morphine)",
+        "schedule": "I"
+      },
+      {
+        "line": 603,
+        "text": "NH 001 561-27-3 HEROIN Diacetylmorphine (derivative of morphine)",
+        "schedule": "IV"
+      }
+    ]
+  },
+  {
+    "substance_id": "fentanyl",
+    "list": "yellow",
+    "instrument_id": "INT-UN-1961",
+    "edition": "Yellow List, 65th edition, July 2026",
+    "source_url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf",
+    "source_sha256": "3f60040ba7b3302aa0393da185a35b17b4bc65bd8f29b62240f5dbc2e4f74ba0",
+    "accessed": "2026-10-04",
+    "ids_code": "NF 001",
+    "status": "found",
+    "schedules": [
+      "I"
+    ],
+    "rows": [
+      {
+        "line": 265,
+        "text": "NF 001 437-38-7 FENTANYL 1-phenethyl-4-N-propionylanilinopiperidine",
+        "schedule": "I"
+      }
+    ]
+  },
+  {
+    "substance_id": "cocaine",
+    "list": "yellow",
+    "instrument_id": "INT-UN-1961",
+    "edition": "Yellow List, 65th edition, July 2026",
+    "source_url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf",
+    "source_sha256": "3f60040ba7b3302aa0393da185a35b17b4bc65bd8f29b62240f5dbc2e4f74ba0",
+    "accessed": "2026-10-04",
+    "ids_code": "NC 004",
+    "status": "found",
+    "schedules": [
+      "I"
+    ],
+    "rows": [
+      {
+        "line": 190,
+        "text": "NC 004 50-36-2 COCAINE methyl ester of benzoylecgonine (an alkaloid found in coca leaves or",
+        "schedule": "I"
+      }
+    ]
+  },
+  {
+    "substance_id": "methamphetamine",
+    "list": "green",
+    "instrument_id": "INT-UN-1971",
+    "edition": "Green List, 36th edition, 2025",
+    "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+    "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+    "accessed": "2026-10-04",
+    "ids_code": "PM 005",
+    "status": "found",
+    "schedules": [
+      "II"
+    ],
+    "rows": [
+      {
+        "line": 266,
+        "text": "PM 005 537-46-2 METAMFETAMINE methamphetamine (+)-(S)-N,α-dimethylphenethylamine",
+        "schedule": "II"
+      }
+    ]
+  },
+  {
+    "substance_id": "thc",
+    "list": "green",
+    "instrument_id": "INT-UN-1971",
+    "edition": "Green List, 36th edition, 2025",
+    "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+    "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+    "accessed": "2026-10-04",
+    "ids_code": "PD 010",
+    "status": "found",
+    "schedules": [
+      "II"
+    ],
+    "rows": [
+      {
+        "line": 221,
+        "text": "PD 010 1972-08-3 delta-9-tetrahydro- (6aR,10aR)-6a,7,8,10a-tetrahydro-6,6,9-",
+        "schedule": "II"
+      }
+    ]
+  },
+  {
+    "substance_id": "alprazolam",
+    "list": "green",
+    "instrument_id": "INT-UN-1971",
+    "edition": "Green List, 36th edition, 2025",
+    "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+    "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+    "accessed": "2026-10-04",
+    "ids_code": "PA 004",
+    "status": "found",
+    "schedules": [
+      "IV"
+    ],
+    "rows": [
+      {
+        "line": 366,
+        "text": "PA 004 28981-97-7 ALPRAZOLAM 8-chloro-1-methyl-6-phenyl-4H-s-triazolo[4,3-",
+        "schedule": "IV"
+      }
+    ]
+  },
+  {
+    "substance_id": "phenazepam",
+    "list": "green",
+    "instrument_id": "INT-UN-1971",
+    "edition": "Green List, 36th edition, 2025",
+    "source_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+    "source_sha256": "b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e",
+    "accessed": "2026-10-04",
+    "ids_code": "PP 024",
+    "status": "found",
+    "schedules": [
+      "IV"
+    ],
+    "rows": [
+      {
+        "line": 484,
+        "text": "PP 024 51753-57-2 phenazepam, 7-bromo-5-(2-chlorophenyl)-1,3-dihydro-2H-1,4-",
+        "schedule": "IV"
+      }
+    ]
+  }
+]
