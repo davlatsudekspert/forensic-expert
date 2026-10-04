@@ -82,6 +82,105 @@ k("emergingCatBiomarkers","Emerging category.","New biomarkers","Новые би
 k("emergingCatMethods","Emerging category.","Emerging analytical methods","Новые аналитические методы","Yangi analitik metodlar")
 k("emergingCatLegal","Emerging category.","Legal / regulatory updates","Правовые и регуляторные изменения","Huquqiy / normativ yangilanishlar")
 
+# --- Ogohlantirish ierarxiyasi ----------------------------------------------
+k("severityCritical","Banner level for screen readers.","Critical","Критично","Muhim ogohlantirish")
+k("severityWarning","Banner level for screen readers.","Warning","Предупреждение","Ogohlantirish")
+k("severityInfo","Banner level for screen readers.","Information","Информация","Ma’lumot")
+k("severityReview","Banner level for screen readers.","Review status","Статус проверки","Tekshiruv holati")
+
+# --- Home ---------------------------------------------------------------------
+k("moduleStandardsLaws","Home module.","Law & jurisdictions","Право и юрисдикции","Huquq va yurisdiksiyalar")
+k("homeRecentlyViewed","Quick access block.","Recently viewed","Недавно просмотренные","Yaqinda ko‘rilganlar")
+k("homeQuickEmpty","Quick access empty state.","Recently viewed records, tools, favourites and searches will appear here. They are stored only on this device.","Здесь появятся недавно просмотренные записи, инструменты, избранное и поиски. Они хранятся только на этом устройстве.","Bu yerda yaqinda ko‘rilgan yozuvlar, vositalar, saralanganlar va qidiruvlar chiqadi. Ular faqat shu qurilmada saqlanadi.")
+k("homeJurisdictionChip","Home jurisdiction context.","Jurisdiction: {name}","Юрисдикция: {name}","Yurisdiksiya: {name}",{"name":S})
+k("homeChange","Action.","Change","Изменить","O‘zgartirish")
+k("homeAllDisciplines","Home tile.","All forensic disciplines","Все судебные дисциплины","Barcha sud-ekspert fanlari")
+k("homeAllDisciplinesBody","Home tile body.","20 disciplines — scope and currently available content","20 дисциплин — охват и доступный контент","20 ta fan — qamrov va mavjud kontent")
+
+# --- Fanlar ---------------------------------------------------------------------
+D6 = [("forensic_medicine","Forensic medicine","Судебная медицина","Sud tibbiyoti"),
+ ("forensic_pathology","Forensic pathology","Судебная патология","Sud patologiyasi"),
+ ("clinical_forensic_medicine","Clinical forensic medicine","Клиническая судебная медицина","Klinik sud tibbiyoti"),
+ ("forensic_radiology","Forensic radiology & imaging","Судебная радиология и визуализация","Sud radiologiyasi va vizualizatsiya"),
+ ("forensic_psychiatry","Forensic psychiatry & psychology","Судебная психиатрия и психология","Sud psixiatriyasi va psixologiyasi"),
+ ("forensic_toxicology","Forensic toxicology","Судебная токсикология","Sud toksikologiyasi"),
+ ("forensic_chemistry","Forensic chemistry","Судебная химия","Sud kimyosi"),
+ ("forensic_biochemistry","Forensic biochemistry","Судебная биохимия","Sud biokimyosi"),
+ ("analytical_science","Analytical science","Аналитическая наука","Analitik fan"),
+ ("forensic_biology","Forensic biology","Судебная биология","Sud biologiyasi"),
+ ("forensic_genetics","Forensic genetics / DNA","Судебная генетика / ДНК","Sud genetikasi / DNK"),
+ ("forensic_histology","Forensic histology","Судебная гистология","Sud gistologiyasi"),
+ ("forensic_anthropology","Forensic anthropology","Судебная антропология","Sud antropologiyasi"),
+ ("forensic_odontology","Forensic odontology","Судебная одонтология","Sud odontologiyasi"),
+ ("forensic_microbiology","Forensic microbiology","Судебная микробиология","Sud mikrobiologiyasi"),
+ ("forensic_entomology","Forensic entomology","Судебная энтомология","Sud entomologiyasi"),
+ ("human_identification","DVI / human identification","DVI / идентификация личности","DVI / shaxsni aniqlash"),
+ ("laboratory_quality","Laboratory quality & validation","Качество и валидация в лаборатории","Laboratoriya sifati va validatsiya"),
+ ("evidence_handling","Evidence handling & chain of custody","Обращение с доказательствами и цепочка хранения","Ashyoviy dalillar va saqlash zanjiri"),
+ ("education_research","Education & research","Образование и исследования","Ta’lim va tadqiqot")]
+for code,en,ru,uz in D6:
+    key = "disc_" + "".join(w.capitalize() if i else w for i,w in enumerate(code.split("_")))
+    k(key,"Forensic discipline name.",en,ru,uz)
+k("discGroupMedicine","Discipline group.","Medicine & pathology","Медицина и патология","Tibbiyot va patologiya")
+k("discGroupToxChem","Discipline group.","Toxicology & chemistry","Токсикология и химия","Toksikologiya va kimyo")
+k("discGroupBioId","Discipline group.","Biology & identification","Биология и идентификация","Biologiya va identifikatsiya")
+k("discGroupLab","Discipline group.","Laboratory & quality","Лаборатория и качество","Laboratoriya va sifat")
+k("discGroupEdu","Discipline group.","Education & research","Образование и исследования","Ta’lim va tadqiqot")
+k("disciplinesTitle","Screen title.","Forensic disciplines","Судебные дисциплины","Sud-ekspert fanlari")
+k("disciplinesIntro","Screen intro.","The platform architecture covers these disciplines. Content is added gradually and only with sources and expert review — an empty discipline means “not yet sourced”, not “no knowledge exists”.","Архитектура платформы охватывает эти дисциплины. Контент добавляется постепенно и только с источниками и экспертной проверкой — пустая дисциплина означает «ещё нет источников», а не «знаний нет».","Platforma arxitekturasi shu fanlarni qamraydi. Kontent bosqichma-bosqich va faqat manba hamda ekspert tekshiruvi bilan qo‘shiladi — bo‘sh fan «hali manba yo‘q» degani, «bilim yo‘q» degani emas.")
+k("disciplineRecords","Discipline record count.","{count, plural, =0{No sourced records yet} one{1 sourced record} other{{count} sourced records}}","{count, plural, =0{Пока нет записей с источниками} one{1 запись с источником} few{{count} записи с источниками} many{{count} записей с источниками} other{{count} записи с источниками}}","{count, plural, =0{Hali manbali yozuv yo‘q} other{{count} ta manbali yozuv}}",{"count":I})
+k("disciplineReferenceOnly","Badge.","Professional reference scope only","Только профессиональный справочный охват","Faqat professional ma’lumotnoma qamrovi")
+k("disciplineModules","Section header.","Modules","Модули","Modullar")
+k("disciplineTopics","Section header.","Planned topic structure","Планируемая структура тем","Rejalashtirilgan mavzular tuzilmasi")
+k("disciplineEmpty","Empty state.","No sourced content in this discipline yet. Records will be added only with verifiable sources and expert review.","В этой дисциплине пока нет контента с источниками. Записи будут добавляться только с проверяемыми источниками и экспертной проверкой.","Bu fanda hali manbali kontent yo‘q. Yozuvlar faqat tekshiriladigan manba va ekspert tekshiruvi bilan qo‘shiladi.")
+
+# --- Yurisdiksiyalar ------------------------------------------------------------
+k("jurisdictionsTitle","Screen title.","Law & jurisdictions","Право и юрисдикции","Huquq va yurisdiksiyalar")
+k("jurisdictionCurrent","Section header.","Current jurisdiction","Текущая юрисдикция","Joriy yurisdiksiya")
+k("jurisdictionLayersTitle","Section header.","Three separate layers","Три отдельных слоя","Uchta alohida qatlam")
+k("layerGlobalCore","Layer name.","Global scientific core — the same in every country","Глобальное научное ядро — одинаково во всех странах","Global ilmiy yadro — barcha davlatlarda bir xil")
+k("layerIntlStandards","Layer name.","International standards & methods — not law unless adopted","Международные стандарты и методы — не закон, если не приняты","Xalqaro standartlar va metodlar — qabul qilinmaguncha qonun emas")
+k("layerCountryLaw","Layer name.","Country / jurisdiction law & procedures — only for the selected jurisdiction","Право и процедуры страны / юрисдикции — только для выбранной юрисдикции","Davlat / yurisdiksiya qonuni va protseduralari — faqat tanlangan yurisdiksiya uchun")
+k("jurisdictionViewDetails","Action.","Legal & procedural layer","Правовой и процессуальный слой","Huquqiy va protsessual qatlam")
+k("jurisdictionWithContent","Section header.","Jurisdictions with pilot content","Юрисдикции с пилотным контентом","Pilot kontenti bor yurisdiksiyalar")
+k("jurisdictionSearchHint","Search hint.","Search country or ISO code","Поиск страны или кода ISO","Davlat yoki ISO kodini qidirish")
+k("jurisdictionNotVerified","Empty state.","Content not yet verified for this jurisdiction. Laws of other countries are never shown as a substitute.","Контент для этой юрисдикции ещё не проверен. Законы других стран никогда не показываются вместо него.","Bu yurisdiksiya uchun kontent hali tekshirilmagan. Boshqa davlat qonunlari hech qachon uning o‘rniga ko‘rsatilmaydi.")
+k("jurisdictionPilotContent","Coverage label.","Pilot content — needs review","Пилотный контент — требует проверки","Pilot kontent — tekshiruv kerak")
+k("jurisdictionNoContentShort","Coverage label.","Content not yet verified","Контент ещё не проверен","Kontent hali tekshirilmagan")
+k("jurisdictionChain","Detail line.","Applies via: {chain}","Применяется через: {chain}","Qo‘llanish zanjiri: {chain}",{"chain":S})
+k("jurisdictionGlobalWorks","Info banner.","Global scientific content works without selecting a jurisdiction. A jurisdiction is needed only for laws, controlled-substance schedules and national procedures.","Глобальный научный контент работает без выбора юрисдикции. Юрисдикция нужна только для законов, списков контролируемых веществ и национальных процедур.","Global ilmiy kontent yurisdiksiya tanlamasdan ishlaydi. Yurisdiksiya faqat qonunlar, nazoratdagi moddalar ro‘yxatlari va milliy protseduralar uchun kerak.")
+k("jurisdictionInstruments","Section header.","Official documents","Официальные документы","Rasmiy hujjatlar")
+k("jurisdictionIntlLayer","Section header.","International layer (applies to all)","Международный слой (для всех)","Xalqaro qatlam (hamma uchun)")
+k("jurisdictionOwnLayer","Section header.","Jurisdiction-specific layer","Слой конкретной юрисдикции","Aniq yurisdiksiya qatlami")
+k("jurisdictionCountryNames","Footnote.","Country names: Unicode CLDR. The list only enables selection — it does not mean legal content exists.","Названия стран: Unicode CLDR. Список только позволяет выбор — это не значит, что есть правовой контент.","Davlat nomlari: Unicode CLDR. Ro‘yxat faqat tanlash imkonini beradi — huquqiy kontent bor degani emas.")
+k("docKindLaw","Document kind label.","LAW","ЗАКОН","QONUN")
+k("docKindRegulation","Document kind label.","REGULATION","НОРМАТИВНЫЙ АКТ","NORMATIV HUJJAT")
+k("docKindStandard","Document kind label.","STANDARD","СТАНДАРТ","STANDART")
+k("docKindGuideline","Document kind label.","GUIDELINE","РУКОВОДСТВО","QO‘LLANMA")
+k("docKindMethod","Document kind label.","METHOD","МЕТОДИКА","METOD")
+k("docKindSop","Document kind label.","SOP","СОП","SOP")
+k("docKindArticle","Document kind label.","SCIENTIFIC ARTICLE","НАУЧНАЯ СТАТЬЯ","ILMIY MAQOLA")
+k("docKindOfficial","Document kind label.","OFFICIAL DOCUMENT","ОФИЦИАЛЬНЫЙ ДОКУМЕНТ","RASMIY HUJJAT")
+k("bindingLegal","Binding nature.","Legally binding in its jurisdiction while in force","Юридически обязателен в своей юрисдикции, пока действует","Kuchda bo‘lsa, o‘z yurisdiksiyasida qonuniy majburiy")
+k("bindingVoluntary","Binding nature.","Voluntary unless adopted by law or accreditation","Добровольный, если не принят законом или аккредитацией","Qonun yoki akkreditatsiya qabul qilmaguncha ixtiyoriy")
+k("bindingAdvisory","Binding nature.","Advisory — not legally binding","Рекомендательный — не обязателен юридически","Tavsiyaviy — qonuniy majburiy emas")
+k("bindingInstitutional","Binding nature.","Applies only within the issuing institution","Действует только в выпустившем учреждении","Faqat chiqargan muassasa ichida amal qiladi")
+k("bindingScientific","Binding nature.","Scientific evidence — not a normative document","Научное доказательство — не нормативный документ","Ilmiy dalil — normativ hujjat emas")
+k("instrNumber","Field.","Official number","Официальный номер","Rasmiy raqam")
+k("instrPublished","Field.","Published","Опубликован","E’lon qilingan")
+k("instrEffectiveFrom","Field.","In force from","Действует с","Kuchga kirgan")
+k("instrEffectiveTo","Field.","In force until","Действует до","Amal qilish muddati")
+k("instrAmended","Field.","Last amended","Последнее изменение","Oxirgi o‘zgartirish")
+k("instrVersion","Field.","Version / edition","Версия / редакция","Versiya / tahrir")
+k("instrLegalStatus","Field.","Legal status","Правовой статус","Huquqiy holat")
+k("instrLanguage","Field.","Official language","Официальный язык","Rasmiy til")
+k("instrTranslation","Field.","Translation","Перевод","Tarjima")
+k("instrLastVerified","Field.","Last verified","Последняя проверка","Oxirgi tekshiruv")
+k("instrReview","Field.","Review status","Статус проверки","Tekshiruv holati")
+k("instrSource","Field.","Official source","Официальный источник","Rasmiy manba")
+k("instrAuthority","Field.","Authority","Орган","Vakolatli organ")
+k("translationNone","Translation status.","Original language only","Только язык оригинала","Faqat asl tilda")
+
 for idx, code in enumerate(["en","ru","uz"]):
     p = f"{D}/app_{code}.arb"
     data = json.load(open(p, encoding="utf-8"), object_pairs_hook=collections.OrderedDict)

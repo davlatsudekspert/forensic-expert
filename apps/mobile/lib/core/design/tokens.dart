@@ -223,4 +223,6 @@ abstract final class FeTouch {
 abstract final class FeGlyphs {
   static const emDash = '—';
   static const bullet = '•  ';
+  static const middleDot = ' · ';
+  static const listSeparator = ', ';
 }

@@ -14,6 +14,7 @@ import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../core/widgets/fe_data_components.dart';
 import '../../../domain/evidence/evidence_models.dart';
+import '../../common/view_recorder.dart';
 import '../evidence_strings.dart';
 
 /// Ro‘yxatdagi research yozuvi.
@@ -216,6 +217,7 @@ class ResearchDetailScreen extends ConsumerWidget {
         child: ListView(
           key: Key('researchDetail.${r.id}'),
           children: [
+            ViewRecorder(id: r.id),
             FeContentFrame(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,

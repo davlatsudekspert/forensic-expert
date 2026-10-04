@@ -1083,7 +1083,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get moduleMethods => 'Methods & SOP';
 
   @override
-  String get moduleStandardsLaws => 'Standards & laws';
+  String get moduleStandardsLaws => 'Law & jurisdictions';
 
   @override
   String get moduleEmerging => 'Emerging issues';
@@ -2197,4 +2197,292 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get emergingCatLegal => 'Legal / regulatory updates';
+
+  @override
+  String get severityCritical => 'Critical';
+
+  @override
+  String get severityWarning => 'Warning';
+
+  @override
+  String get severityInfo => 'Information';
+
+  @override
+  String get severityReview => 'Review status';
+
+  @override
+  String get homeRecentlyViewed => 'Recently viewed';
+
+  @override
+  String get homeQuickEmpty =>
+      'Recently viewed records, tools, favourites and searches will appear here. They are stored only on this device.';
+
+  @override
+  String homeJurisdictionChip(String name) {
+    return 'Jurisdiction: $name';
+  }
+
+  @override
+  String get homeChange => 'Change';
+
+  @override
+  String get homeAllDisciplines => 'All forensic disciplines';
+
+  @override
+  String get homeAllDisciplinesBody =>
+      '20 disciplines — scope and currently available content';
+
+  @override
+  String get disc_forensicMedicine => 'Forensic medicine';
+
+  @override
+  String get disc_forensicPathology => 'Forensic pathology';
+
+  @override
+  String get disc_clinicalForensicMedicine => 'Clinical forensic medicine';
+
+  @override
+  String get disc_forensicRadiology => 'Forensic radiology & imaging';
+
+  @override
+  String get disc_forensicPsychiatry => 'Forensic psychiatry & psychology';
+
+  @override
+  String get disc_forensicToxicology => 'Forensic toxicology';
+
+  @override
+  String get disc_forensicChemistry => 'Forensic chemistry';
+
+  @override
+  String get disc_forensicBiochemistry => 'Forensic biochemistry';
+
+  @override
+  String get disc_analyticalScience => 'Analytical science';
+
+  @override
+  String get disc_forensicBiology => 'Forensic biology';
+
+  @override
+  String get disc_forensicGenetics => 'Forensic genetics / DNA';
+
+  @override
+  String get disc_forensicHistology => 'Forensic histology';
+
+  @override
+  String get disc_forensicAnthropology => 'Forensic anthropology';
+
+  @override
+  String get disc_forensicOdontology => 'Forensic odontology';
+
+  @override
+  String get disc_forensicMicrobiology => 'Forensic microbiology';
+
+  @override
+  String get disc_forensicEntomology => 'Forensic entomology';
+
+  @override
+  String get disc_humanIdentification => 'DVI / human identification';
+
+  @override
+  String get disc_laboratoryQuality => 'Laboratory quality & validation';
+
+  @override
+  String get disc_evidenceHandling => 'Evidence handling & chain of custody';
+
+  @override
+  String get disc_educationResearch => 'Education & research';
+
+  @override
+  String get discGroupMedicine => 'Medicine & pathology';
+
+  @override
+  String get discGroupToxChem => 'Toxicology & chemistry';
+
+  @override
+  String get discGroupBioId => 'Biology & identification';
+
+  @override
+  String get discGroupLab => 'Laboratory & quality';
+
+  @override
+  String get discGroupEdu => 'Education & research';
+
+  @override
+  String get disciplinesTitle => 'Forensic disciplines';
+
+  @override
+  String get disciplinesIntro =>
+      'The platform architecture covers these disciplines. Content is added gradually and only with sources and expert review — an empty discipline means “not yet sourced”, not “no knowledge exists”.';
+
+  @override
+  String disciplineRecords(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sourced records',
+      one: '1 sourced record',
+      zero: 'No sourced records yet',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get disciplineReferenceOnly => 'Professional reference scope only';
+
+  @override
+  String get disciplineModules => 'Modules';
+
+  @override
+  String get disciplineTopics => 'Planned topic structure';
+
+  @override
+  String get disciplineEmpty =>
+      'No sourced content in this discipline yet. Records will be added only with verifiable sources and expert review.';
+
+  @override
+  String get jurisdictionsTitle => 'Law & jurisdictions';
+
+  @override
+  String get jurisdictionCurrent => 'Current jurisdiction';
+
+  @override
+  String get jurisdictionLayersTitle => 'Three separate layers';
+
+  @override
+  String get layerGlobalCore =>
+      'Global scientific core — the same in every country';
+
+  @override
+  String get layerIntlStandards =>
+      'International standards & methods — not law unless adopted';
+
+  @override
+  String get layerCountryLaw =>
+      'Country / jurisdiction law & procedures — only for the selected jurisdiction';
+
+  @override
+  String get jurisdictionViewDetails => 'Legal & procedural layer';
+
+  @override
+  String get jurisdictionWithContent => 'Jurisdictions with pilot content';
+
+  @override
+  String get jurisdictionSearchHint => 'Search country or ISO code';
+
+  @override
+  String get jurisdictionNotVerified =>
+      'Content not yet verified for this jurisdiction. Laws of other countries are never shown as a substitute.';
+
+  @override
+  String get jurisdictionPilotContent => 'Pilot content — needs review';
+
+  @override
+  String get jurisdictionNoContentShort => 'Content not yet verified';
+
+  @override
+  String jurisdictionChain(String chain) {
+    return 'Applies via: $chain';
+  }
+
+  @override
+  String get jurisdictionGlobalWorks =>
+      'Global scientific content works without selecting a jurisdiction. A jurisdiction is needed only for laws, controlled-substance schedules and national procedures.';
+
+  @override
+  String get jurisdictionInstruments => 'Official documents';
+
+  @override
+  String get jurisdictionIntlLayer => 'International layer (applies to all)';
+
+  @override
+  String get jurisdictionOwnLayer => 'Jurisdiction-specific layer';
+
+  @override
+  String get jurisdictionCountryNames =>
+      'Country names: Unicode CLDR. The list only enables selection — it does not mean legal content exists.';
+
+  @override
+  String get docKindLaw => 'LAW';
+
+  @override
+  String get docKindRegulation => 'REGULATION';
+
+  @override
+  String get docKindStandard => 'STANDARD';
+
+  @override
+  String get docKindGuideline => 'GUIDELINE';
+
+  @override
+  String get docKindMethod => 'METHOD';
+
+  @override
+  String get docKindSop => 'SOP';
+
+  @override
+  String get docKindArticle => 'SCIENTIFIC ARTICLE';
+
+  @override
+  String get docKindOfficial => 'OFFICIAL DOCUMENT';
+
+  @override
+  String get bindingLegal =>
+      'Legally binding in its jurisdiction while in force';
+
+  @override
+  String get bindingVoluntary =>
+      'Voluntary unless adopted by law or accreditation';
+
+  @override
+  String get bindingAdvisory => 'Advisory — not legally binding';
+
+  @override
+  String get bindingInstitutional =>
+      'Applies only within the issuing institution';
+
+  @override
+  String get bindingScientific =>
+      'Scientific evidence — not a normative document';
+
+  @override
+  String get instrNumber => 'Official number';
+
+  @override
+  String get instrPublished => 'Published';
+
+  @override
+  String get instrEffectiveFrom => 'In force from';
+
+  @override
+  String get instrEffectiveTo => 'In force until';
+
+  @override
+  String get instrAmended => 'Last amended';
+
+  @override
+  String get instrVersion => 'Version / edition';
+
+  @override
+  String get instrLegalStatus => 'Legal status';
+
+  @override
+  String get instrLanguage => 'Official language';
+
+  @override
+  String get instrTranslation => 'Translation';
+
+  @override
+  String get instrLastVerified => 'Last verified';
+
+  @override
+  String get instrReview => 'Review status';
+
+  @override
+  String get instrSource => 'Official source';
+
+  @override
+  String get instrAuthority => 'Authority';
+
+  @override
+  String get translationNone => 'Original language only';
 }

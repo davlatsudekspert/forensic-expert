@@ -57,22 +57,21 @@ enum HomeModule {
     HomeModule.ai => l.moduleAi,
   };
 
-  /// Rejimga mos tartib: talaba kontenti professional ish oqimiga xalal bermaydi.
+  /// Home’dagi asosiy 12 bo‘lim (rejimga mos tartib). Qolgan sohalar
+  /// (gistologiya, yangi muammolar va 20 fan) — «Barcha fanlar» ichida.
   static List<HomeModule> orderFor(UserMode? mode) => switch (mode) {
     UserMode.student => const [
       learn,
       forensicMedicine,
       toxicology,
-      histology,
-      biochemistry,
       substances,
       laboratory,
       methods,
+      biochemistry,
       screening,
       reagents,
-      standardsLaws,
-      emerging,
       research,
+      standardsLaws,
       ai,
     ],
     UserMode.research => const [
@@ -80,32 +79,28 @@ enum HomeModule {
       substances,
       methods,
       toxicology,
-      emerging,
+      laboratory,
       screening,
       reagents,
-      laboratory,
       biochemistry,
       forensicMedicine,
-      histology,
       standardsLaws,
       learn,
       ai,
     ],
     _ => const [
-      toxicology,
-      substances,
-      screening,
-      reagents,
-      methods,
-      laboratory,
       forensicMedicine,
-      histology,
+      toxicology,
+      laboratory,
+      substances,
+      methods,
+      reagents,
+      screening,
       biochemistry,
-      research,
       standardsLaws,
-      emerging,
-      ai,
+      research,
       learn,
+      ai,
     ],
   };
 
@@ -120,7 +115,7 @@ enum HomeModule {
     HomeModule.screening => Routes.knowledge(KnowledgeKind.screeningTest.name),
     HomeModule.methods => Routes.knowledge(KnowledgeKind.method.name),
     HomeModule.emerging => Routes.knowledge(KnowledgeKind.emergingIssue.name),
-    HomeModule.standardsLaws => Routes.compare,
+    HomeModule.standardsLaws => Routes.jurisdictions,
     HomeModule.histology => Routes.histology,
     HomeModule.research => Routes.research,
     _ => Routes.module(name),
@@ -173,30 +168,34 @@ class HomeScreen extends ConsumerWidget {
                     hint: l.searchHint,
                     onTap: () => context.go(Routes.search),
                   ),
+                  const SizedBox(height: FeSpace.xs),
+                  const _JurisdictionContext(),
                   if (FeFlags.showTestFixtures) ...[
-                    const SizedBox(height: FeSpace.sm),
+                    const SizedBox(height: FeSpace.xs),
                     FeBanner(
                       icon: Icons.info_outline,
                       text: l.homePrototypeNotice,
                     ),
                   ] else if (FeFlags.contentChannel != 'production') ...[
-                    const SizedBox(height: FeSpace.sm),
+                    const SizedBox(height: FeSpace.xs),
                     FeBanner(
                       key: const Key('home.pilotNotice'),
                       icon: Icons.science_outlined,
                       text: l.homePilotNotice,
+                      tone: FeBannerTone.review,
                     ),
                   ],
-                  const SizedBox(height: FeSpace.sm),
-                  const _DatabaseCard(),
                   if (isStudent) ...[
                     const SizedBox(height: FeSpace.md),
                     const _ContinueLearningCard(),
                   ],
-                  if (!isStudent) const _QuickAccess(),
                   FeSectionHeader(l.homeAreasHeading),
                   _ModuleGrid(modules: modules),
-                  if (isStudent) const _RecentSearches(),
+                  const SizedBox(height: FeSpace.sm),
+                  const _AllDisciplinesTile(),
+                  const _QuickAccess(),
+                  const SizedBox(height: FeSpace.md),
+                  const _DatabaseCard(),
                   const SizedBox(height: FeSpace.lg),
                 ],
               ),
@@ -304,30 +303,34 @@ class _ContinueLearningCard extends StatelessWidget {
   }
 }
 
-/// Tezkor kirish: so‘nggi vositalar, saralanganlar, so‘nggi qidiruvlar.
-/// Bo‘sh bo‘lsa — sun’iy statistika emas, tushuntiruvchi bo‘sh holat.
+/// Tezkor kirish: yaqinda ko‘rilganlar, so‘nggi vositalar, saralanganlar,
+/// so‘nggi qidiruvlar — faqat to‘lgan bloklar ko‘rsatiladi (shovqin kam).
+/// Hammasi bo‘sh bo‘lsa — bitta tushuntiruvchi qator. Sun’iy statistika yo‘q.
 class _QuickAccess extends ConsumerWidget {
   const _QuickAccess();
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final lang = Localizations.localeOf(context).languageCode;
     final data = ref.watch(userDataProvider);
     final library = ref.watch(libraryRepositoryProvider);
-
     final knowledge = ref.watch(knowledgeRepositoryProvider);
-    String nameOf(String id) {
+    final evidence = ref.watch(evidenceDataProvider);
+
+    String? nameOf(String id) {
       final tool = ToolsCatalog.byId(id);
       if (tool != null) return l.toolName(tool);
       final k = knowledge.byId(id);
-      if (k != null) {
-        return k.name.resolve(Localizations.localeOf(context).languageCode);
-      }
+      if (k != null) return k.name.resolve(lang);
       final entry = library.byId(id);
-      if (entry != null) {
-        return entry.name.resolve(Localizations.localeOf(context).languageCode);
+      if (entry != null) return entry.name.resolve(lang);
+      final r = evidence.researchById(id);
+      if (r != null) {
+        return r.title.length > 60 ? '${r.title.substring(0, 57)}…' : r.title;
       }
-      return id;
+      return null; // O‘chirilgan yoki paketda yo‘q yozuv — ko‘rsatilmaydi.
     }
 
     void openId(String id) {
@@ -335,54 +338,160 @@ class _QuickAccess extends ConsumerWidget {
         context.go(Routes.tool(id));
       } else if (knowledge.byId(id) != null) {
         context.go(Routes.knowledgeEntry(id));
+      } else if (evidence.researchById(id) != null) {
+        context.go(Routes.researchEntry(id));
       } else {
         context.go(Routes.libraryEntry(id));
       }
     }
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        FeSectionHeader(l.homeQuickAccess),
+    List<(String, VoidCallback)> items(List<String> ids) => [
+      for (final id in ids)
+        if (nameOf(id) case final n?) (n, () => openId(id)),
+    ];
+
+    final blocks = <Widget>[
+      if (items(data.recentlyViewed) case final xs when xs.isNotEmpty)
+        _QuickBlock(
+          key: const Key('home.recentlyViewed'),
+          icon: Icons.visibility_outlined,
+          title: l.homeRecentlyViewed,
+          items: xs,
+        ),
+      if (items(data.recentTools) case final xs when xs.isNotEmpty)
         _QuickBlock(
           key: const Key('home.recentTools'),
           icon: Icons.history,
           title: l.homeRecentTools,
-          empty: l.homeEmptyRecentTools,
-          items: [
-            for (final id in data.recentTools) (nameOf(id), () => openId(id)),
-          ],
+          items: xs,
         ),
+      if (items(data.favorites) case final xs when xs.isNotEmpty)
         _QuickBlock(
           key: const Key('home.favorites'),
           icon: Icons.star_border,
           title: l.homeFavorites,
-          empty: l.homeEmptyFavorites,
+          items: xs,
+        ),
+      if (data.recentSearches.isNotEmpty)
+        _QuickBlock(
+          key: const Key('home.recentSearches'),
+          icon: Icons.manage_search,
+          title: l.homeRecentSearches,
           items: [
-            for (final id in data.favorites) (nameOf(id), () => openId(id)),
+            for (final q in data.recentSearches)
+              (q, () => context.go(Routes.searchWith(q))),
           ],
         ),
-        const _RecentSearches(),
+    ];
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        FeSectionHeader(l.homeQuickAccess),
+        if (blocks.isEmpty)
+          Text(
+            l.homeQuickEmpty,
+            key: const Key('home.quickEmpty'),
+            style: Theme.of(context).textTheme.bodySmall
+                ?.copyWith(color: c.textSecondary),
+          )
+        else
+          ...blocks,
       ],
     );
   }
 }
 
-class _RecentSearches extends ConsumerWidget {
-  const _RecentSearches();
+/// Joriy yurisdiksiya — ilmiy kontent yurisdiksiyasiz ishlaydi; bu faqat
+/// huquqiy/protsessual qatlam uchun. Bayroq ishlatilmaydi (ISO kod + nom).
+class _JurisdictionContext extends ConsumerWidget {
+  const _JurisdictionContext();
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
-    final recent = ref.watch(userDataProvider.select((d) => d.recentSearches));
-    return _QuickBlock(
-      key: const Key('home.recentSearches'),
-      icon: Icons.manage_search,
-      title: l.homeRecentSearches,
-      empty: l.homeEmptyRecentSearches,
-      items: [
-        for (final q in recent) (q, () => context.go(Routes.searchWith(q))),
-      ],
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final lang = Localizations.localeOf(context).languageCode;
+    final id = ref.watch(
+      settingsControllerProvider.select((s) => s.jurisdictionId),
+    );
+    final j = ref.watch(jurisdictionResolverProvider).byId(id);
+    final name = j?.name(lang) ?? id;
+    return Semantics(
+      button: true,
+      label: l.homeJurisdictionChip(name),
+      excludeSemantics: true,
+      child: InkWell(
+        key: const Key('home.jurisdiction'),
+        borderRadius: BorderRadius.circular(FeRadius.sm),
+        onTap: () => context.go(Routes.jurisdictions),
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(minHeight: 48),
+          child: Row(
+            children: [
+              Icon(Icons.public, size: 18, color: c.textSecondary),
+              const SizedBox(width: FeSpace.xs),
+              // Bitta o‘raladigan matn — 320 dp va ×2 shriftda ham sig‘adi.
+              Expanded(
+                child: Text.rich(
+                  TextSpan(
+                    children: [
+                      TextSpan(
+                        text: '${l.homeJurisdictionChip(name)} · ',
+                        style: t.bodySmall?.copyWith(color: c.textSecondary),
+                      ),
+                      TextSpan(
+                        text: l.homeChange,
+                        style: t.labelMedium?.copyWith(color: c.accent),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _AllDisciplinesTile extends StatelessWidget {
+  const _AllDisciplinesTile();
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    return FeCard(
+      key: const Key('home.allDisciplines'),
+      padding: const EdgeInsets.symmetric(
+        horizontal: FeSpace.md,
+        vertical: FeSpace.sm,
+      ),
+      onTap: () => context.go(Routes.disciplines),
+      child: Row(
+        children: [
+          Icon(Icons.apps_outlined, color: c.accent),
+          const SizedBox(width: FeSpace.sm),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(l.homeAllDisciplines, style: t.titleSmall),
+                Text(
+                  l.homeAllDisciplinesBody,
+                  style: t.bodySmall?.copyWith(color: c.textSecondary),
+                ),
+              ],
+            ),
+          ),
+          ExcludeSemantics(
+            child: Icon(Icons.chevron_right, color: c.textSecondary),
+          ),
+        ],
+      ),
     );
   }
 }
@@ -392,13 +501,11 @@ class _QuickBlock extends StatelessWidget {
     super.key,
     required this.icon,
     required this.title,
-    required this.empty,
     required this.items,
   });
 
   final IconData icon;
   final String title;
-  final String empty;
   final List<(String, VoidCallback)> items;
 
   @override
@@ -435,28 +542,16 @@ class _QuickBlock extends StatelessWidget {
                   ),
                 ],
               ),
-              if (items.isEmpty)
-                Padding(
-                  padding: const EdgeInsets.only(
-                    top: FeSpace.xxs,
-                    bottom: FeSpace.xs,
-                  ),
-                  child: Text(
-                    empty,
-                    style: t.bodySmall?.copyWith(color: c.textSecondary),
-                  ),
-                )
-              else
-                Padding(
-                  padding: const EdgeInsets.only(top: FeSpace.xxs),
-                  child: Wrap(
-                    spacing: FeSpace.xs,
-                    children: [
-                      for (final (label, onTap) in items)
-                        ActionChip(label: Text(label), onPressed: onTap),
-                    ],
-                  ),
+              Padding(
+                padding: const EdgeInsets.only(top: FeSpace.xxs),
+                child: Wrap(
+                  spacing: FeSpace.xs,
+                  children: [
+                    for (final (label, onTap) in items)
+                      ActionChip(label: Text(label), onPressed: onTap),
+                  ],
                 ),
+              ),
             ],
           ),
         ),
@@ -509,23 +604,27 @@ class _ModuleCard extends StatelessWidget {
       button: true,
       child: Card(
         clipBehavior: Clip.antiAlias,
+        margin: EdgeInsets.zero,
         child: InkWell(
           key: Key('home.module.${module.name}'),
           onTap: () => context.go(module.route),
           child: ConstrainedBox(
-            constraints: const BoxConstraints(minHeight: 96),
+            constraints: const BoxConstraints(minHeight: 64),
             child: Padding(
-              padding: const EdgeInsets.all(FeSpace.md),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisSize: MainAxisSize.min,
+              padding: const EdgeInsets.symmetric(
+                horizontal: FeSpace.sm,
+                vertical: FeSpace.sm,
+              ),
+              child: Row(
                 children: [
-                  Icon(module.icon, color: c.accent),
-                  const SizedBox(height: FeSpace.sm),
-                  Text(
-                    module.label(l),
-                    style: Theme.of(context).textTheme.titleSmall
-                        ?.copyWith(fontWeight: FontWeight.w600),
+                  Icon(module.icon, color: c.accent, size: 22),
+                  const SizedBox(width: FeSpace.sm),
+                  Expanded(
+                    child: Text(
+                      module.label(l),
+                      style: Theme.of(context).textTheme.titleSmall
+                          ?.copyWith(fontWeight: FontWeight.w600),
+                    ),
                   ),
                 ],
               ),

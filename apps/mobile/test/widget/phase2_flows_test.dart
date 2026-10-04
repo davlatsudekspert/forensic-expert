@@ -11,9 +11,9 @@ import 'package:forensic_expert/core/settings/settings_controller.dart';
 import 'package:forensic_expert/domain/ports/billing_ports.dart';
 import 'package:forensic_expert/features/home/presentation/search_screen.dart';
 import 'package:forensic_expert/features/learn/presentation/learn_screens.dart';
+import 'package:forensic_expert/features/legal/presentation/jurisdiction_screens.dart';
 import 'package:forensic_expert/features/library/presentation/entry_detail_screen.dart';
 import 'package:forensic_expert/features/profile/presentation/purchase_screen.dart';
-import 'package:forensic_expert/features/profile/presentation/settings_pickers.dart';
 
 import '../helpers/pump_app.dart';
 
@@ -189,11 +189,10 @@ void main() {
         initialLocation: Routes.profile,
       );
       await tapKey(tester, 'profile.jurisdiction');
-      expect(find.byType(JurisdictionPickerScreen), findsOneWidget);
-      // Compare jurisdictions — rejalashtirilgan, o‘chirilgan.
-      final compare = find.byKey(const Key('jurisdiction.compare'));
-      await tester.ensureVisible(compare);
-      expect(tester.widget<ListTile>(compare).enabled, isFalse);
+      // PHASE 6: global tanlovchi (249 ISO davlati). «Compare
+      // jurisdictions» endi «Huquq va yurisdiksiyalar» hub’ida (PHASE 4 dan
+      // beri ishlaydi) — tanlovchidagi o‘chirilgan yozuv olib tashlandi.
+      expect(find.byType(JurisdictionSelectScreen), findsOneWidget);
       await tapKey(tester, 'picker.jurisdiction.UZ');
       expect(c.read(settingsControllerProvider).jurisdictionId, 'UZ');
       expect(find.text('Uzbekistan'), findsOneWidget);

@@ -99,6 +99,66 @@ class EvidenceLevelBadge extends StatelessWidget {
   }
 }
 
+/// Claim / yozuv uchun bitta ixcham meta-qator: review holati + dalil
+/// darajasi. Ikki raqobatlashuvchi «pill» o‘rniga — vizual shovqin kamroq.
+/// Rang yagona belgi emas: holat ikonka shakli va matn bilan ifodalanadi.
+class EvidenceMetaLine extends StatelessWidget {
+  const EvidenceMetaLine({
+    super.key,
+    required this.statusLabel,
+    required this.statusIcon,
+    required this.statusColor,
+    required this.level,
+    required this.levelLabel,
+  });
+
+  final String statusLabel;
+  final IconData statusIcon;
+  final Color statusColor;
+
+  /// `A` … `E`.
+  final String level;
+  final String levelLabel;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final strong = level == 'A' || level == 'B';
+    return Semantics(
+      label: [statusLabel, levelLabel].join(FeGlyphs.listSeparator),
+      excludeSemantics: true,
+      child: Row(
+        children: [
+          Icon(statusIcon, size: 16, color: statusColor),
+          const SizedBox(width: FeSpace.xxs),
+          Flexible(
+            child: Text(
+              statusLabel,
+              style: t.labelMedium?.copyWith(color: statusColor),
+              overflow: TextOverflow.ellipsis,
+            ),
+          ),
+          Text(
+            FeGlyphs.middleDot,
+            style: t.labelMedium?.copyWith(color: c.textSecondary),
+          ),
+          Flexible(
+            child: Text(
+              levelLabel,
+              style: t.labelMedium?.copyWith(
+                color: strong ? c.accent : c.textSecondary,
+                fontWeight: FontWeight.w700,
+              ),
+              overflow: TextOverflow.ellipsis,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 /// Ikki ustunli ma’lumot jadvali (nom — qiymat). Qiymatlar tabular raqamlarda.
 class FeDataTable extends StatelessWidget {
   const FeDataTable({super.key, required this.rows});

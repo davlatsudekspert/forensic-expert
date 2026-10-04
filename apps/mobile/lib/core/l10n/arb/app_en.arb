@@ -1391,9 +1391,9 @@
   "@moduleMethods": {
     "description": "Home module."
   },
-  "moduleStandardsLaws": "Standards & laws",
+  "moduleStandardsLaws": "Law & jurisdictions",
   "@moduleStandardsLaws": {
-    "description": "Home module: standards, laws, jurisdiction comparison."
+    "description": "Home module."
   },
   "moduleEmerging": "Emerging issues",
   "@moduleEmerging": {
@@ -2864,5 +2864,368 @@
   "emergingCatLegal": "Legal / regulatory updates",
   "@emergingCatLegal": {
     "description": "Emerging category."
+  },
+  "severityCritical": "Critical",
+  "@severityCritical": {
+    "description": "Banner level for screen readers."
+  },
+  "severityWarning": "Warning",
+  "@severityWarning": {
+    "description": "Banner level for screen readers."
+  },
+  "severityInfo": "Information",
+  "@severityInfo": {
+    "description": "Banner level for screen readers."
+  },
+  "severityReview": "Review status",
+  "@severityReview": {
+    "description": "Banner level for screen readers."
+  },
+  "homeRecentlyViewed": "Recently viewed",
+  "@homeRecentlyViewed": {
+    "description": "Quick access block."
+  },
+  "homeQuickEmpty": "Recently viewed records, tools, favourites and searches will appear here. They are stored only on this device.",
+  "@homeQuickEmpty": {
+    "description": "Quick access empty state."
+  },
+  "homeJurisdictionChip": "Jurisdiction: {name}",
+  "@homeJurisdictionChip": {
+    "description": "Home jurisdiction context.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "homeChange": "Change",
+  "@homeChange": {
+    "description": "Action."
+  },
+  "homeAllDisciplines": "All forensic disciplines",
+  "@homeAllDisciplines": {
+    "description": "Home tile."
+  },
+  "homeAllDisciplinesBody": "20 disciplines — scope and currently available content",
+  "@homeAllDisciplinesBody": {
+    "description": "Home tile body."
+  },
+  "disc_forensicMedicine": "Forensic medicine",
+  "@disc_forensicMedicine": {
+    "description": "Forensic discipline name."
+  },
+  "disc_forensicPathology": "Forensic pathology",
+  "@disc_forensicPathology": {
+    "description": "Forensic discipline name."
+  },
+  "disc_clinicalForensicMedicine": "Clinical forensic medicine",
+  "@disc_clinicalForensicMedicine": {
+    "description": "Forensic discipline name."
+  },
+  "disc_forensicRadiology": "Forensic radiology & imaging",
+  "@disc_forensicRadiology": {
+    "description": "Forensic discipline name."
+  },
+  "disc_forensicPsychiatry": "Forensic psychiatry & psychology",
+  "@disc_forensicPsychiatry": {
+    "description": "Forensic discipline name."
+  },
+  "disc_forensicToxicology": "Forensic toxicology",
+  "@disc_forensicToxicology": {
+    "description": "Forensic discipline name."
+  },
+  "disc_forensicChemistry": "Forensic chemistry",
+  "@disc_forensicChemistry": {
+    "description": "Forensic discipline name."
+  },
+  "disc_forensicBiochemistry": "Forensic biochemistry",
+  "@disc_forensicBiochemistry": {
+    "description": "Forensic discipline name."
+  },
+  "disc_analyticalScience": "Analytical science",
+  "@disc_analyticalScience": {
+    "description": "Forensic discipline name."
+  },
+  "disc_forensicBiology": "Forensic biology",
+  "@disc_forensicBiology": {
+    "description": "Forensic discipline name."
+  },
+  "disc_forensicGenetics": "Forensic genetics / DNA",
+  "@disc_forensicGenetics": {
+    "description": "Forensic discipline name."
+  },
+  "disc_forensicHistology": "Forensic histology",
+  "@disc_forensicHistology": {
+    "description": "Forensic discipline name."
+  },
+  "disc_forensicAnthropology": "Forensic anthropology",
+  "@disc_forensicAnthropology": {
+    "description": "Forensic discipline name."
+  },
+  "disc_forensicOdontology": "Forensic odontology",
+  "@disc_forensicOdontology": {
+    "description": "Forensic discipline name."
+  },
+  "disc_forensicMicrobiology": "Forensic microbiology",
+  "@disc_forensicMicrobiology": {
+    "description": "Forensic discipline name."
+  },
+  "disc_forensicEntomology": "Forensic entomology",
+  "@disc_forensicEntomology": {
+    "description": "Forensic discipline name."
+  },
+  "disc_humanIdentification": "DVI / human identification",
+  "@disc_humanIdentification": {
+    "description": "Forensic discipline name."
+  },
+  "disc_laboratoryQuality": "Laboratory quality & validation",
+  "@disc_laboratoryQuality": {
+    "description": "Forensic discipline name."
+  },
+  "disc_evidenceHandling": "Evidence handling & chain of custody",
+  "@disc_evidenceHandling": {
+    "description": "Forensic discipline name."
+  },
+  "disc_educationResearch": "Education & research",
+  "@disc_educationResearch": {
+    "description": "Forensic discipline name."
+  },
+  "discGroupMedicine": "Medicine & pathology",
+  "@discGroupMedicine": {
+    "description": "Discipline group."
+  },
+  "discGroupToxChem": "Toxicology & chemistry",
+  "@discGroupToxChem": {
+    "description": "Discipline group."
+  },
+  "discGroupBioId": "Biology & identification",
+  "@discGroupBioId": {
+    "description": "Discipline group."
+  },
+  "discGroupLab": "Laboratory & quality",
+  "@discGroupLab": {
+    "description": "Discipline group."
+  },
+  "discGroupEdu": "Education & research",
+  "@discGroupEdu": {
+    "description": "Discipline group."
+  },
+  "disciplinesTitle": "Forensic disciplines",
+  "@disciplinesTitle": {
+    "description": "Screen title."
+  },
+  "disciplinesIntro": "The platform architecture covers these disciplines. Content is added gradually and only with sources and expert review — an empty discipline means “not yet sourced”, not “no knowledge exists”.",
+  "@disciplinesIntro": {
+    "description": "Screen intro."
+  },
+  "disciplineRecords": "{count, plural, =0{No sourced records yet} one{1 sourced record} other{{count} sourced records}}",
+  "@disciplineRecords": {
+    "description": "Discipline record count.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "disciplineReferenceOnly": "Professional reference scope only",
+  "@disciplineReferenceOnly": {
+    "description": "Badge."
+  },
+  "disciplineModules": "Modules",
+  "@disciplineModules": {
+    "description": "Section header."
+  },
+  "disciplineTopics": "Planned topic structure",
+  "@disciplineTopics": {
+    "description": "Section header."
+  },
+  "disciplineEmpty": "No sourced content in this discipline yet. Records will be added only with verifiable sources and expert review.",
+  "@disciplineEmpty": {
+    "description": "Empty state."
+  },
+  "jurisdictionsTitle": "Law & jurisdictions",
+  "@jurisdictionsTitle": {
+    "description": "Screen title."
+  },
+  "jurisdictionCurrent": "Current jurisdiction",
+  "@jurisdictionCurrent": {
+    "description": "Section header."
+  },
+  "jurisdictionLayersTitle": "Three separate layers",
+  "@jurisdictionLayersTitle": {
+    "description": "Section header."
+  },
+  "layerGlobalCore": "Global scientific core — the same in every country",
+  "@layerGlobalCore": {
+    "description": "Layer name."
+  },
+  "layerIntlStandards": "International standards & methods — not law unless adopted",
+  "@layerIntlStandards": {
+    "description": "Layer name."
+  },
+  "layerCountryLaw": "Country / jurisdiction law & procedures — only for the selected jurisdiction",
+  "@layerCountryLaw": {
+    "description": "Layer name."
+  },
+  "jurisdictionViewDetails": "Legal & procedural layer",
+  "@jurisdictionViewDetails": {
+    "description": "Action."
+  },
+  "jurisdictionWithContent": "Jurisdictions with pilot content",
+  "@jurisdictionWithContent": {
+    "description": "Section header."
+  },
+  "jurisdictionSearchHint": "Search country or ISO code",
+  "@jurisdictionSearchHint": {
+    "description": "Search hint."
+  },
+  "jurisdictionNotVerified": "Content not yet verified for this jurisdiction. Laws of other countries are never shown as a substitute.",
+  "@jurisdictionNotVerified": {
+    "description": "Empty state."
+  },
+  "jurisdictionPilotContent": "Pilot content — needs review",
+  "@jurisdictionPilotContent": {
+    "description": "Coverage label."
+  },
+  "jurisdictionNoContentShort": "Content not yet verified",
+  "@jurisdictionNoContentShort": {
+    "description": "Coverage label."
+  },
+  "jurisdictionChain": "Applies via: {chain}",
+  "@jurisdictionChain": {
+    "description": "Detail line.",
+    "placeholders": {
+      "chain": {
+        "type": "String"
+      }
+    }
+  },
+  "jurisdictionGlobalWorks": "Global scientific content works without selecting a jurisdiction. A jurisdiction is needed only for laws, controlled-substance schedules and national procedures.",
+  "@jurisdictionGlobalWorks": {
+    "description": "Info banner."
+  },
+  "jurisdictionInstruments": "Official documents",
+  "@jurisdictionInstruments": {
+    "description": "Section header."
+  },
+  "jurisdictionIntlLayer": "International layer (applies to all)",
+  "@jurisdictionIntlLayer": {
+    "description": "Section header."
+  },
+  "jurisdictionOwnLayer": "Jurisdiction-specific layer",
+  "@jurisdictionOwnLayer": {
+    "description": "Section header."
+  },
+  "jurisdictionCountryNames": "Country names: Unicode CLDR. The list only enables selection — it does not mean legal content exists.",
+  "@jurisdictionCountryNames": {
+    "description": "Footnote."
+  },
+  "docKindLaw": "LAW",
+  "@docKindLaw": {
+    "description": "Document kind label."
+  },
+  "docKindRegulation": "REGULATION",
+  "@docKindRegulation": {
+    "description": "Document kind label."
+  },
+  "docKindStandard": "STANDARD",
+  "@docKindStandard": {
+    "description": "Document kind label."
+  },
+  "docKindGuideline": "GUIDELINE",
+  "@docKindGuideline": {
+    "description": "Document kind label."
+  },
+  "docKindMethod": "METHOD",
+  "@docKindMethod": {
+    "description": "Document kind label."
+  },
+  "docKindSop": "SOP",
+  "@docKindSop": {
+    "description": "Document kind label."
+  },
+  "docKindArticle": "SCIENTIFIC ARTICLE",
+  "@docKindArticle": {
+    "description": "Document kind label."
+  },
+  "docKindOfficial": "OFFICIAL DOCUMENT",
+  "@docKindOfficial": {
+    "description": "Document kind label."
+  },
+  "bindingLegal": "Legally binding in its jurisdiction while in force",
+  "@bindingLegal": {
+    "description": "Binding nature."
+  },
+  "bindingVoluntary": "Voluntary unless adopted by law or accreditation",
+  "@bindingVoluntary": {
+    "description": "Binding nature."
+  },
+  "bindingAdvisory": "Advisory — not legally binding",
+  "@bindingAdvisory": {
+    "description": "Binding nature."
+  },
+  "bindingInstitutional": "Applies only within the issuing institution",
+  "@bindingInstitutional": {
+    "description": "Binding nature."
+  },
+  "bindingScientific": "Scientific evidence — not a normative document",
+  "@bindingScientific": {
+    "description": "Binding nature."
+  },
+  "instrNumber": "Official number",
+  "@instrNumber": {
+    "description": "Field."
+  },
+  "instrPublished": "Published",
+  "@instrPublished": {
+    "description": "Field."
+  },
+  "instrEffectiveFrom": "In force from",
+  "@instrEffectiveFrom": {
+    "description": "Field."
+  },
+  "instrEffectiveTo": "In force until",
+  "@instrEffectiveTo": {
+    "description": "Field."
+  },
+  "instrAmended": "Last amended",
+  "@instrAmended": {
+    "description": "Field."
+  },
+  "instrVersion": "Version / edition",
+  "@instrVersion": {
+    "description": "Field."
+  },
+  "instrLegalStatus": "Legal status",
+  "@instrLegalStatus": {
+    "description": "Field."
+  },
+  "instrLanguage": "Official language",
+  "@instrLanguage": {
+    "description": "Field."
+  },
+  "instrTranslation": "Translation",
+  "@instrTranslation": {
+    "description": "Field."
+  },
+  "instrLastVerified": "Last verified",
+  "@instrLastVerified": {
+    "description": "Field."
+  },
+  "instrReview": "Review status",
+  "@instrReview": {
+    "description": "Field."
+  },
+  "instrSource": "Official source",
+  "@instrSource": {
+    "description": "Field."
+  },
+  "instrAuthority": "Authority",
+  "@instrAuthority": {
+    "description": "Field."
+  },
+  "translationNone": "Original language only",
+  "@translationNone": {
+    "description": "Translation status."
   }
 }

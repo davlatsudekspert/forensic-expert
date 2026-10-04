@@ -150,8 +150,23 @@ class StatusChip extends StatelessWidget {
   }
 }
 
-/// Ma’lumot banneri (info / ogohlantirish).
-enum FeBannerTone { info, warning }
+/// Ogohlantirish ierarxiyasi: CRITICAL > WARNING > INFO > REVIEW.
+///
+/// Rang yagona belgi emas: har bir daraja o‘z ikonkasi shakli, chegara
+/// qalinligi va ekran o‘quvchisi uchun daraja nomi bilan ajraladi.
+enum FeBannerTone {
+  /// Noto‘g‘ri talqin xavfli (skrining ≠ tasdiq; konsentratsiya ≠ chegara).
+  critical,
+
+  /// Tekshirilmagan ma’lumot, cheklov.
+  warning,
+
+  /// Kontekst, tushuntirish.
+  info,
+
+  /// Review holati / provenance eslatmasi.
+  review,
+}
 
 class FeBanner extends StatelessWidget {
   const FeBanner({
@@ -168,34 +183,55 @@ class FeBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final c = FeTheme.of(context);
-    final (bg, fg, border) = switch (tone) {
-      FeBannerTone.info => (c.surface, c.textSecondary, c.border),
+    final (bg, fg, border, width) = switch (tone) {
+      FeBannerTone.critical => (c.surface, c.textPrimary, c.danger, 2.0),
       FeBannerTone.warning => (
         c.warningContainer,
         c.onWarningContainer,
         c.warning,
+        1.0,
       ),
+      FeBannerTone.info => (c.surface, c.textSecondary, c.border, 1.0),
+      FeBannerTone.review => (c.background, c.textSecondary, c.border, 1.0),
+    };
+    final l = AppLocalizations.of(context);
+    final level = switch (tone) {
+      FeBannerTone.critical => l.severityCritical,
+      FeBannerTone.warning => l.severityWarning,
+      FeBannerTone.info => l.severityInfo,
+      FeBannerTone.review => l.severityReview,
     };
     return Semantics(
       container: true,
+      label: level,
       child: DecoratedBox(
         decoration: BoxDecoration(
           color: bg,
           borderRadius: BorderRadius.circular(FeRadius.sm),
-          border: Border.all(color: border),
+          // Bir xil kenglik: borderRadius bilan notekis chegara ruxsat etilmaydi.
+          border: Border.all(color: border, width: width),
         ),
         child: Padding(
           padding: const EdgeInsets.all(FeSpace.sm),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Icon(icon, size: 20, color: fg),
+              Icon(
+                icon,
+                size: 20,
+                color: tone == FeBannerTone.critical ? c.danger : fg,
+              ),
               const SizedBox(width: FeSpace.xs),
               Expanded(
                 child: Text(
                   text,
-                  style: Theme.of(context).textTheme.bodySmall
-                      ?.copyWith(color: fg, height: 1.4),
+                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                    color: fg,
+                    height: 1.4,
+                    fontWeight: tone == FeBannerTone.critical
+                        ? FontWeight.w600
+                        : null,
+                  ),
                 ),
               ),
             ],

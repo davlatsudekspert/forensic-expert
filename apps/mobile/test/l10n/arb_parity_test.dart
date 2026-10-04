@@ -44,6 +44,7 @@ void main() {
     'calcLodReference',
     'tech_gcMsMs',
     'tech_lcMs',
+    'docKindSop',
   };
 
   Set<String> placeholders(String s) =>

@@ -16,6 +16,7 @@ class UserDataSnapshot {
     this.recentSearches = const [],
     this.completedLessons = const [],
     this.recentLessons = const [],
+    this.recentlyViewed = const [],
   });
 
   final List<String> favorites;
@@ -26,18 +27,23 @@ class UserDataSnapshot {
   final List<String> completedLessons;
   final List<String> recentLessons;
 
+  /// So‘nggi ochilgan yozuvlar (modda, metod, research) — faqat lokal.
+  final List<String> recentlyViewed;
+
   UserDataSnapshot copyWith({
     List<String>? favorites,
     List<String>? recentTools,
     List<String>? recentSearches,
     List<String>? completedLessons,
     List<String>? recentLessons,
+    List<String>? recentlyViewed,
   }) => UserDataSnapshot(
     favorites: favorites ?? this.favorites,
     recentTools: recentTools ?? this.recentTools,
     recentSearches: recentSearches ?? this.recentSearches,
     completedLessons: completedLessons ?? this.completedLessons,
     recentLessons: recentLessons ?? this.recentLessons,
+    recentlyViewed: recentlyViewed ?? this.recentlyViewed,
   );
 }
 
@@ -51,6 +57,7 @@ class SharedPrefsUserDataRepository implements UserDataRepository {
   static const _kSearch = 'fe.user.recent_searches';
   static const _kCompleted = 'fe.user.completed_lessons';
   static const _kLessons = 'fe.user.recent_lessons';
+  static const _kViewed = 'fe.user.recently_viewed';
 
   @override
   Future<UserDataSnapshot> load() async => UserDataSnapshot(
@@ -59,6 +66,7 @@ class SharedPrefsUserDataRepository implements UserDataRepository {
     recentSearches: _prefs.getStringList(_kSearch) ?? const [],
     completedLessons: _prefs.getStringList(_kCompleted) ?? const [],
     recentLessons: _prefs.getStringList(_kLessons) ?? const [],
+    recentlyViewed: _prefs.getStringList(_kViewed) ?? const [],
   );
 
   @override
@@ -68,6 +76,7 @@ class SharedPrefsUserDataRepository implements UserDataRepository {
     await _prefs.setStringList(_kSearch, d.recentSearches);
     await _prefs.setStringList(_kCompleted, d.completedLessons);
     await _prefs.setStringList(_kLessons, d.recentLessons);
+    await _prefs.setStringList(_kViewed, d.recentlyViewed);
   }
 }
 

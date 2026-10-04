@@ -67,7 +67,7 @@ class KnowledgeListScreen extends ConsumerWidget {
             key: const Key('screening.banner'),
             icon: Icons.report_gmailerrorred_outlined,
             text: l.screeningBanner,
-            tone: FeBannerTone.warning,
+            tone: FeBannerTone.critical,
           ),
         if (kind == KnowledgeKind.emergingIssue)
           FeBanner(icon: Icons.info_outline, text: l.emergingNote),

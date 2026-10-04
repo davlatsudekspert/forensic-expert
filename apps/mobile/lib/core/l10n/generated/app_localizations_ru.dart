@@ -1086,7 +1086,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get moduleMethods => 'Методы и СОП';
 
   @override
-  String get moduleStandardsLaws => 'Стандарты и законы';
+  String get moduleStandardsLaws => 'Право и юрисдикции';
 
   @override
   String get moduleEmerging => 'Новые проблемы';
@@ -2198,4 +2198,296 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get emergingCatLegal => 'Правовые и регуляторные изменения';
+
+  @override
+  String get severityCritical => 'Критично';
+
+  @override
+  String get severityWarning => 'Предупреждение';
+
+  @override
+  String get severityInfo => 'Информация';
+
+  @override
+  String get severityReview => 'Статус проверки';
+
+  @override
+  String get homeRecentlyViewed => 'Недавно просмотренные';
+
+  @override
+  String get homeQuickEmpty =>
+      'Здесь появятся недавно просмотренные записи, инструменты, избранное и поиски. Они хранятся только на этом устройстве.';
+
+  @override
+  String homeJurisdictionChip(String name) {
+    return 'Юрисдикция: $name';
+  }
+
+  @override
+  String get homeChange => 'Изменить';
+
+  @override
+  String get homeAllDisciplines => 'Все судебные дисциплины';
+
+  @override
+  String get homeAllDisciplinesBody =>
+      '20 дисциплин — охват и доступный контент';
+
+  @override
+  String get disc_forensicMedicine => 'Судебная медицина';
+
+  @override
+  String get disc_forensicPathology => 'Судебная патология';
+
+  @override
+  String get disc_clinicalForensicMedicine => 'Клиническая судебная медицина';
+
+  @override
+  String get disc_forensicRadiology => 'Судебная радиология и визуализация';
+
+  @override
+  String get disc_forensicPsychiatry => 'Судебная психиатрия и психология';
+
+  @override
+  String get disc_forensicToxicology => 'Судебная токсикология';
+
+  @override
+  String get disc_forensicChemistry => 'Судебная химия';
+
+  @override
+  String get disc_forensicBiochemistry => 'Судебная биохимия';
+
+  @override
+  String get disc_analyticalScience => 'Аналитическая наука';
+
+  @override
+  String get disc_forensicBiology => 'Судебная биология';
+
+  @override
+  String get disc_forensicGenetics => 'Судебная генетика / ДНК';
+
+  @override
+  String get disc_forensicHistology => 'Судебная гистология';
+
+  @override
+  String get disc_forensicAnthropology => 'Судебная антропология';
+
+  @override
+  String get disc_forensicOdontology => 'Судебная одонтология';
+
+  @override
+  String get disc_forensicMicrobiology => 'Судебная микробиология';
+
+  @override
+  String get disc_forensicEntomology => 'Судебная энтомология';
+
+  @override
+  String get disc_humanIdentification => 'DVI / идентификация личности';
+
+  @override
+  String get disc_laboratoryQuality => 'Качество и валидация в лаборатории';
+
+  @override
+  String get disc_evidenceHandling =>
+      'Обращение с доказательствами и цепочка хранения';
+
+  @override
+  String get disc_educationResearch => 'Образование и исследования';
+
+  @override
+  String get discGroupMedicine => 'Медицина и патология';
+
+  @override
+  String get discGroupToxChem => 'Токсикология и химия';
+
+  @override
+  String get discGroupBioId => 'Биология и идентификация';
+
+  @override
+  String get discGroupLab => 'Лаборатория и качество';
+
+  @override
+  String get discGroupEdu => 'Образование и исследования';
+
+  @override
+  String get disciplinesTitle => 'Судебные дисциплины';
+
+  @override
+  String get disciplinesIntro =>
+      'Архитектура платформы охватывает эти дисциплины. Контент добавляется постепенно и только с источниками и экспертной проверкой — пустая дисциплина означает «ещё нет источников», а не «знаний нет».';
+
+  @override
+  String disciplineRecords(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count записи с источниками',
+      many: '$count записей с источниками',
+      few: '$count записи с источниками',
+      one: '1 запись с источником',
+      zero: 'Пока нет записей с источниками',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get disciplineReferenceOnly =>
+      'Только профессиональный справочный охват';
+
+  @override
+  String get disciplineModules => 'Модули';
+
+  @override
+  String get disciplineTopics => 'Планируемая структура тем';
+
+  @override
+  String get disciplineEmpty =>
+      'В этой дисциплине пока нет контента с источниками. Записи будут добавляться только с проверяемыми источниками и экспертной проверкой.';
+
+  @override
+  String get jurisdictionsTitle => 'Право и юрисдикции';
+
+  @override
+  String get jurisdictionCurrent => 'Текущая юрисдикция';
+
+  @override
+  String get jurisdictionLayersTitle => 'Три отдельных слоя';
+
+  @override
+  String get layerGlobalCore =>
+      'Глобальное научное ядро — одинаково во всех странах';
+
+  @override
+  String get layerIntlStandards =>
+      'Международные стандарты и методы — не закон, если не приняты';
+
+  @override
+  String get layerCountryLaw =>
+      'Право и процедуры страны / юрисдикции — только для выбранной юрисдикции';
+
+  @override
+  String get jurisdictionViewDetails => 'Правовой и процессуальный слой';
+
+  @override
+  String get jurisdictionWithContent => 'Юрисдикции с пилотным контентом';
+
+  @override
+  String get jurisdictionSearchHint => 'Поиск страны или кода ISO';
+
+  @override
+  String get jurisdictionNotVerified =>
+      'Контент для этой юрисдикции ещё не проверен. Законы других стран никогда не показываются вместо него.';
+
+  @override
+  String get jurisdictionPilotContent => 'Пилотный контент — требует проверки';
+
+  @override
+  String get jurisdictionNoContentShort => 'Контент ещё не проверен';
+
+  @override
+  String jurisdictionChain(String chain) {
+    return 'Применяется через: $chain';
+  }
+
+  @override
+  String get jurisdictionGlobalWorks =>
+      'Глобальный научный контент работает без выбора юрисдикции. Юрисдикция нужна только для законов, списков контролируемых веществ и национальных процедур.';
+
+  @override
+  String get jurisdictionInstruments => 'Официальные документы';
+
+  @override
+  String get jurisdictionIntlLayer => 'Международный слой (для всех)';
+
+  @override
+  String get jurisdictionOwnLayer => 'Слой конкретной юрисдикции';
+
+  @override
+  String get jurisdictionCountryNames =>
+      'Названия стран: Unicode CLDR. Список только позволяет выбор — это не значит, что есть правовой контент.';
+
+  @override
+  String get docKindLaw => 'ЗАКОН';
+
+  @override
+  String get docKindRegulation => 'НОРМАТИВНЫЙ АКТ';
+
+  @override
+  String get docKindStandard => 'СТАНДАРТ';
+
+  @override
+  String get docKindGuideline => 'РУКОВОДСТВО';
+
+  @override
+  String get docKindMethod => 'МЕТОДИКА';
+
+  @override
+  String get docKindSop => 'СОП';
+
+  @override
+  String get docKindArticle => 'НАУЧНАЯ СТАТЬЯ';
+
+  @override
+  String get docKindOfficial => 'ОФИЦИАЛЬНЫЙ ДОКУМЕНТ';
+
+  @override
+  String get bindingLegal =>
+      'Юридически обязателен в своей юрисдикции, пока действует';
+
+  @override
+  String get bindingVoluntary =>
+      'Добровольный, если не принят законом или аккредитацией';
+
+  @override
+  String get bindingAdvisory => 'Рекомендательный — не обязателен юридически';
+
+  @override
+  String get bindingInstitutional =>
+      'Действует только в выпустившем учреждении';
+
+  @override
+  String get bindingScientific =>
+      'Научное доказательство — не нормативный документ';
+
+  @override
+  String get instrNumber => 'Официальный номер';
+
+  @override
+  String get instrPublished => 'Опубликован';
+
+  @override
+  String get instrEffectiveFrom => 'Действует с';
+
+  @override
+  String get instrEffectiveTo => 'Действует до';
+
+  @override
+  String get instrAmended => 'Последнее изменение';
+
+  @override
+  String get instrVersion => 'Версия / редакция';
+
+  @override
+  String get instrLegalStatus => 'Правовой статус';
+
+  @override
+  String get instrLanguage => 'Официальный язык';
+
+  @override
+  String get instrTranslation => 'Перевод';
+
+  @override
+  String get instrLastVerified => 'Последняя проверка';
+
+  @override
+  String get instrReview => 'Статус проверки';
+
+  @override
+  String get instrSource => 'Официальный источник';
+
+  @override
+  String get instrAuthority => 'Орган';
+
+  @override
+  String get translationNone => 'Только язык оригинала';
 }

@@ -1,5 +1,7 @@
 import 'package:fe_content_schema/fe_content_schema.dart';
 
+import 'country_directory.dart';
+
 /// Yurisdiksiyalar ro‘yxati (**Global Scientific Core + Jurisdiction Layer**).
 ///
 /// Bu yerda faqat yurisdiksiya **identifikatorlari va nomlari** bor
@@ -15,7 +17,33 @@ abstract final class JurisdictionCatalog {
   /// xalqaro standartlar ko‘rsatiladi.
   static const internationalId = 'INT';
 
+  /// Yevropa Ittifoqi a’zolari (ISO 3166-1) — faqat ierarxiya (EU → davlat).
+  static const euMembers = {
+    'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', //
+    'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK',
+    'SI', 'ES', 'SE',
+  };
+
   static final seed = List<Jurisdiction>.unmodifiable([
+    ..._curated,
+    // Qolgan ISO 3166-1 davlatlari — nomlar Unicode CLDR’dan. Bu faqat
+    // tanlash ro‘yxati: kontent bo‘lmasa UI «tekshirilmagan» deydi.
+    for (final c in CountryDirectory.all)
+      if (!_curatedIds.contains(c.code))
+        _country(
+          c.code,
+          c.en,
+          c.ru,
+          c.uz,
+          parentId: euMembers.contains(c.code)
+              ? 'EU'
+              : JurisdictionCatalog.internationalId,
+        ),
+  ]);
+
+  static final _curatedIds = {for (final j in _curated) j.id};
+
+  static final _curated = List<Jurisdiction>.unmodifiable([
     const Jurisdiction(
       id: internationalId,
       level: JurisdictionLevel.international,

@@ -90,6 +90,19 @@ class UserDataController extends Notifier<UserDataSnapshot> {
     ),
   );
 
+  static const maxRecentlyViewed = 8;
+
+  /// Yozuv ochildi (faqat ID; matn yoki holat ma’lumoti saqlanmaydi).
+  Future<void> recordViewed(String id) => _set(
+    state.copyWith(
+      recentlyViewed: [
+        id,
+        for (final x in state.recentlyViewed)
+          if (x != id) x,
+      ].take(maxRecentlyViewed).toList(),
+    ),
+  );
+
   Future<void> clearSearchHistory() =>
       _set(state.copyWith(recentSearches: const []));
 }

@@ -11,6 +11,7 @@ import '../core/settings/settings_controller.dart';
 import '../domain/catalog/tools_catalog.dart';
 import '../domain/knowledge/knowledge_models.dart';
 import '../features/ai/presentation/ai_screen.dart';
+import '../features/disciplines/presentation/disciplines_screens.dart';
 import '../features/evidence/presentation/research_screens.dart';
 import '../features/evidence/presentation/scientific_image.dart';
 import '../features/home/presentation/home_screen.dart';
@@ -19,6 +20,7 @@ import '../features/knowledge/presentation/knowledge_detail_screen.dart';
 import '../features/knowledge/presentation/knowledge_list_screen.dart';
 import '../features/learn/presentation/learn_screens.dart';
 import '../features/legal/presentation/compare_screen.dart';
+import '../features/legal/presentation/jurisdiction_screens.dart';
 import '../features/library/presentation/entry_detail_screen.dart';
 import '../features/library/presentation/library_screen.dart';
 import '../features/onboarding/presentation/disclaimer_screen.dart';
@@ -145,6 +147,33 @@ final routerProvider = Provider<GoRouter>((ref) {
                     builder: (c, s) => const CompareJurisdictionsScreen(),
                   ),
                   GoRoute(
+                    path: 'disciplines',
+                    builder: (c, s) => const DisciplinesScreen(),
+                    routes: [
+                      GoRoute(
+                        path: ':code',
+                        builder: (c, s) =>
+                            DisciplineScreen(code: s.pathParameters['code']!),
+                      ),
+                    ],
+                  ),
+                  GoRoute(
+                    path: 'jurisdictions',
+                    builder: (c, s) => const JurisdictionHubScreen(),
+                    routes: [
+                      GoRoute(
+                        path: 'select',
+                        builder: (c, s) => const JurisdictionSelectScreen(),
+                      ),
+                      GoRoute(
+                        path: ':id',
+                        builder: (c, s) => JurisdictionDetailScreen(
+                          id: s.pathParameters['id']!,
+                        ),
+                      ),
+                    ],
+                  ),
+                  GoRoute(
                     path: 'knowledge/:kind',
                     builder: (c, s) => KnowledgeListScreen(
                       kind: KnowledgeKind.values.byName(
@@ -239,7 +268,7 @@ final routerProvider = Provider<GoRouter>((ref) {
                   GoRoute(
                     path: 'jurisdiction',
                     parentNavigatorKey: rootKey,
-                    builder: (c, s) => const JurisdictionPickerScreen(),
+                    builder: (c, s) => const JurisdictionSelectScreen(),
                   ),
                   GoRoute(
                     path: 'disclaimer',

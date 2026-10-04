@@ -1084,7 +1084,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get moduleMethods => 'Metodlar va SOP';
 
   @override
-  String get moduleStandardsLaws => 'Standartlar va qonunlar';
+  String get moduleStandardsLaws => 'Huquq va yurisdiksiyalar';
 
   @override
   String get moduleEmerging => 'Yangi muammolar';
@@ -2202,4 +2202,290 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get emergingCatLegal => 'Huquqiy / normativ yangilanishlar';
+
+  @override
+  String get severityCritical => 'Muhim ogohlantirish';
+
+  @override
+  String get severityWarning => 'Ogohlantirish';
+
+  @override
+  String get severityInfo => 'Ma’lumot';
+
+  @override
+  String get severityReview => 'Tekshiruv holati';
+
+  @override
+  String get homeRecentlyViewed => 'Yaqinda ko‘rilganlar';
+
+  @override
+  String get homeQuickEmpty =>
+      'Bu yerda yaqinda ko‘rilgan yozuvlar, vositalar, saralanganlar va qidiruvlar chiqadi. Ular faqat shu qurilmada saqlanadi.';
+
+  @override
+  String homeJurisdictionChip(String name) {
+    return 'Yurisdiksiya: $name';
+  }
+
+  @override
+  String get homeChange => 'O‘zgartirish';
+
+  @override
+  String get homeAllDisciplines => 'Barcha sud-ekspert fanlari';
+
+  @override
+  String get homeAllDisciplinesBody => '20 ta fan — qamrov va mavjud kontent';
+
+  @override
+  String get disc_forensicMedicine => 'Sud tibbiyoti';
+
+  @override
+  String get disc_forensicPathology => 'Sud patologiyasi';
+
+  @override
+  String get disc_clinicalForensicMedicine => 'Klinik sud tibbiyoti';
+
+  @override
+  String get disc_forensicRadiology => 'Sud radiologiyasi va vizualizatsiya';
+
+  @override
+  String get disc_forensicPsychiatry => 'Sud psixiatriyasi va psixologiyasi';
+
+  @override
+  String get disc_forensicToxicology => 'Sud toksikologiyasi';
+
+  @override
+  String get disc_forensicChemistry => 'Sud kimyosi';
+
+  @override
+  String get disc_forensicBiochemistry => 'Sud biokimyosi';
+
+  @override
+  String get disc_analyticalScience => 'Analitik fan';
+
+  @override
+  String get disc_forensicBiology => 'Sud biologiyasi';
+
+  @override
+  String get disc_forensicGenetics => 'Sud genetikasi / DNK';
+
+  @override
+  String get disc_forensicHistology => 'Sud gistologiyasi';
+
+  @override
+  String get disc_forensicAnthropology => 'Sud antropologiyasi';
+
+  @override
+  String get disc_forensicOdontology => 'Sud odontologiyasi';
+
+  @override
+  String get disc_forensicMicrobiology => 'Sud mikrobiologiyasi';
+
+  @override
+  String get disc_forensicEntomology => 'Sud entomologiyasi';
+
+  @override
+  String get disc_humanIdentification => 'DVI / shaxsni aniqlash';
+
+  @override
+  String get disc_laboratoryQuality => 'Laboratoriya sifati va validatsiya';
+
+  @override
+  String get disc_evidenceHandling => 'Ashyoviy dalillar va saqlash zanjiri';
+
+  @override
+  String get disc_educationResearch => 'Ta’lim va tadqiqot';
+
+  @override
+  String get discGroupMedicine => 'Tibbiyot va patologiya';
+
+  @override
+  String get discGroupToxChem => 'Toksikologiya va kimyo';
+
+  @override
+  String get discGroupBioId => 'Biologiya va identifikatsiya';
+
+  @override
+  String get discGroupLab => 'Laboratoriya va sifat';
+
+  @override
+  String get discGroupEdu => 'Ta’lim va tadqiqot';
+
+  @override
+  String get disciplinesTitle => 'Sud-ekspert fanlari';
+
+  @override
+  String get disciplinesIntro =>
+      'Platforma arxitekturasi shu fanlarni qamraydi. Kontent bosqichma-bosqich va faqat manba hamda ekspert tekshiruvi bilan qo‘shiladi — bo‘sh fan «hali manba yo‘q» degani, «bilim yo‘q» degani emas.';
+
+  @override
+  String disciplineRecords(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta manbali yozuv',
+      zero: 'Hali manbali yozuv yo‘q',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get disciplineReferenceOnly =>
+      'Faqat professional ma’lumotnoma qamrovi';
+
+  @override
+  String get disciplineModules => 'Modullar';
+
+  @override
+  String get disciplineTopics => 'Rejalashtirilgan mavzular tuzilmasi';
+
+  @override
+  String get disciplineEmpty =>
+      'Bu fanda hali manbali kontent yo‘q. Yozuvlar faqat tekshiriladigan manba va ekspert tekshiruvi bilan qo‘shiladi.';
+
+  @override
+  String get jurisdictionsTitle => 'Huquq va yurisdiksiyalar';
+
+  @override
+  String get jurisdictionCurrent => 'Joriy yurisdiksiya';
+
+  @override
+  String get jurisdictionLayersTitle => 'Uchta alohida qatlam';
+
+  @override
+  String get layerGlobalCore =>
+      'Global ilmiy yadro — barcha davlatlarda bir xil';
+
+  @override
+  String get layerIntlStandards =>
+      'Xalqaro standartlar va metodlar — qabul qilinmaguncha qonun emas';
+
+  @override
+  String get layerCountryLaw =>
+      'Davlat / yurisdiksiya qonuni va protseduralari — faqat tanlangan yurisdiksiya uchun';
+
+  @override
+  String get jurisdictionViewDetails => 'Huquqiy va protsessual qatlam';
+
+  @override
+  String get jurisdictionWithContent => 'Pilot kontenti bor yurisdiksiyalar';
+
+  @override
+  String get jurisdictionSearchHint => 'Davlat yoki ISO kodini qidirish';
+
+  @override
+  String get jurisdictionNotVerified =>
+      'Bu yurisdiksiya uchun kontent hali tekshirilmagan. Boshqa davlat qonunlari hech qachon uning o‘rniga ko‘rsatilmaydi.';
+
+  @override
+  String get jurisdictionPilotContent => 'Pilot kontent — tekshiruv kerak';
+
+  @override
+  String get jurisdictionNoContentShort => 'Kontent hali tekshirilmagan';
+
+  @override
+  String jurisdictionChain(String chain) {
+    return 'Qo‘llanish zanjiri: $chain';
+  }
+
+  @override
+  String get jurisdictionGlobalWorks =>
+      'Global ilmiy kontent yurisdiksiya tanlamasdan ishlaydi. Yurisdiksiya faqat qonunlar, nazoratdagi moddalar ro‘yxatlari va milliy protseduralar uchun kerak.';
+
+  @override
+  String get jurisdictionInstruments => 'Rasmiy hujjatlar';
+
+  @override
+  String get jurisdictionIntlLayer => 'Xalqaro qatlam (hamma uchun)';
+
+  @override
+  String get jurisdictionOwnLayer => 'Aniq yurisdiksiya qatlami';
+
+  @override
+  String get jurisdictionCountryNames =>
+      'Davlat nomlari: Unicode CLDR. Ro‘yxat faqat tanlash imkonini beradi — huquqiy kontent bor degani emas.';
+
+  @override
+  String get docKindLaw => 'QONUN';
+
+  @override
+  String get docKindRegulation => 'NORMATIV HUJJAT';
+
+  @override
+  String get docKindStandard => 'STANDART';
+
+  @override
+  String get docKindGuideline => 'QO‘LLANMA';
+
+  @override
+  String get docKindMethod => 'METOD';
+
+  @override
+  String get docKindSop => 'SOP';
+
+  @override
+  String get docKindArticle => 'ILMIY MAQOLA';
+
+  @override
+  String get docKindOfficial => 'RASMIY HUJJAT';
+
+  @override
+  String get bindingLegal =>
+      'Kuchda bo‘lsa, o‘z yurisdiksiyasida qonuniy majburiy';
+
+  @override
+  String get bindingVoluntary =>
+      'Qonun yoki akkreditatsiya qabul qilmaguncha ixtiyoriy';
+
+  @override
+  String get bindingAdvisory => 'Tavsiyaviy — qonuniy majburiy emas';
+
+  @override
+  String get bindingInstitutional =>
+      'Faqat chiqargan muassasa ichida amal qiladi';
+
+  @override
+  String get bindingScientific => 'Ilmiy dalil — normativ hujjat emas';
+
+  @override
+  String get instrNumber => 'Rasmiy raqam';
+
+  @override
+  String get instrPublished => 'E’lon qilingan';
+
+  @override
+  String get instrEffectiveFrom => 'Kuchga kirgan';
+
+  @override
+  String get instrEffectiveTo => 'Amal qilish muddati';
+
+  @override
+  String get instrAmended => 'Oxirgi o‘zgartirish';
+
+  @override
+  String get instrVersion => 'Versiya / tahrir';
+
+  @override
+  String get instrLegalStatus => 'Huquqiy holat';
+
+  @override
+  String get instrLanguage => 'Rasmiy til';
+
+  @override
+  String get instrTranslation => 'Tarjima';
+
+  @override
+  String get instrLastVerified => 'Oxirgi tekshiruv';
+
+  @override
+  String get instrReview => 'Tekshiruv holati';
+
+  @override
+  String get instrSource => 'Rasmiy manba';
+
+  @override
+  String get instrAuthority => 'Vakolatli organ';
+
+  @override
+  String get translationNone => 'Faqat asl tilda';
 }

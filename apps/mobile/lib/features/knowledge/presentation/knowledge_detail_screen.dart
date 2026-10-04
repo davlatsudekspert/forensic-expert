@@ -15,6 +15,7 @@ import '../../../core/widgets/fe_data_components.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
 import '../../../domain/library/library_models.dart';
 import '../../common/favorite_button.dart';
+import '../../common/view_recorder.dart';
 import '../../evidence/evidence_strings.dart';
 import '../../evidence/presentation/research_screens.dart';
 import '../../evidence/presentation/scientific_image.dart';
@@ -94,6 +95,7 @@ class KnowledgeDetailScreen extends ConsumerWidget {
           key: Key('knowledgeDetail.${e.id}'),
           padding: const EdgeInsets.symmetric(vertical: FeSpace.sm),
           children: [
+            ViewRecorder(id: e.id),
             FeContentFrame(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -114,7 +116,7 @@ class KnowledgeDetailScreen extends ConsumerWidget {
                       key: const Key('screening.banner'),
                       icon: Icons.report_gmailerrorred_outlined,
                       text: l.screeningBanner,
-                      tone: FeBannerTone.warning,
+                      tone: FeBannerTone.critical,
                     ),
                     const SizedBox(height: FeSpace.sm),
                   ],

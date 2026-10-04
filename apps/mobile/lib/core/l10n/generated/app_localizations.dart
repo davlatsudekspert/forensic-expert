@@ -2008,10 +2008,10 @@ abstract class AppLocalizations {
   /// **'Methods & SOP'**
   String get moduleMethods;
 
-  /// Home module: standards, laws, jurisdiction comparison.
+  /// Home module.
   ///
   /// In en, this message translates to:
-  /// **'Standards & laws'**
+  /// **'Law & jurisdictions'**
   String get moduleStandardsLaws;
 
   /// Home module.
@@ -4047,6 +4047,528 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Legal / regulatory updates'**
   String get emergingCatLegal;
+
+  /// Banner level for screen readers.
+  ///
+  /// In en, this message translates to:
+  /// **'Critical'**
+  String get severityCritical;
+
+  /// Banner level for screen readers.
+  ///
+  /// In en, this message translates to:
+  /// **'Warning'**
+  String get severityWarning;
+
+  /// Banner level for screen readers.
+  ///
+  /// In en, this message translates to:
+  /// **'Information'**
+  String get severityInfo;
+
+  /// Banner level for screen readers.
+  ///
+  /// In en, this message translates to:
+  /// **'Review status'**
+  String get severityReview;
+
+  /// Quick access block.
+  ///
+  /// In en, this message translates to:
+  /// **'Recently viewed'**
+  String get homeRecentlyViewed;
+
+  /// Quick access empty state.
+  ///
+  /// In en, this message translates to:
+  /// **'Recently viewed records, tools, favourites and searches will appear here. They are stored only on this device.'**
+  String get homeQuickEmpty;
+
+  /// Home jurisdiction context.
+  ///
+  /// In en, this message translates to:
+  /// **'Jurisdiction: {name}'**
+  String homeJurisdictionChip(String name);
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Change'**
+  String get homeChange;
+
+  /// Home tile.
+  ///
+  /// In en, this message translates to:
+  /// **'All forensic disciplines'**
+  String get homeAllDisciplines;
+
+  /// Home tile body.
+  ///
+  /// In en, this message translates to:
+  /// **'20 disciplines — scope and currently available content'**
+  String get homeAllDisciplinesBody;
+
+  /// Forensic discipline name.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic medicine'**
+  String get disc_forensicMedicine;
+
+  /// Forensic discipline name.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic pathology'**
+  String get disc_forensicPathology;
+
+  /// Forensic discipline name.
+  ///
+  /// In en, this message translates to:
+  /// **'Clinical forensic medicine'**
+  String get disc_clinicalForensicMedicine;
+
+  /// Forensic discipline name.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic radiology & imaging'**
+  String get disc_forensicRadiology;
+
+  /// Forensic discipline name.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic psychiatry & psychology'**
+  String get disc_forensicPsychiatry;
+
+  /// Forensic discipline name.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic toxicology'**
+  String get disc_forensicToxicology;
+
+  /// Forensic discipline name.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic chemistry'**
+  String get disc_forensicChemistry;
+
+  /// Forensic discipline name.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic biochemistry'**
+  String get disc_forensicBiochemistry;
+
+  /// Forensic discipline name.
+  ///
+  /// In en, this message translates to:
+  /// **'Analytical science'**
+  String get disc_analyticalScience;
+
+  /// Forensic discipline name.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic biology'**
+  String get disc_forensicBiology;
+
+  /// Forensic discipline name.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic genetics / DNA'**
+  String get disc_forensicGenetics;
+
+  /// Forensic discipline name.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic histology'**
+  String get disc_forensicHistology;
+
+  /// Forensic discipline name.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic anthropology'**
+  String get disc_forensicAnthropology;
+
+  /// Forensic discipline name.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic odontology'**
+  String get disc_forensicOdontology;
+
+  /// Forensic discipline name.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic microbiology'**
+  String get disc_forensicMicrobiology;
+
+  /// Forensic discipline name.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic entomology'**
+  String get disc_forensicEntomology;
+
+  /// Forensic discipline name.
+  ///
+  /// In en, this message translates to:
+  /// **'DVI / human identification'**
+  String get disc_humanIdentification;
+
+  /// Forensic discipline name.
+  ///
+  /// In en, this message translates to:
+  /// **'Laboratory quality & validation'**
+  String get disc_laboratoryQuality;
+
+  /// Forensic discipline name.
+  ///
+  /// In en, this message translates to:
+  /// **'Evidence handling & chain of custody'**
+  String get disc_evidenceHandling;
+
+  /// Forensic discipline name.
+  ///
+  /// In en, this message translates to:
+  /// **'Education & research'**
+  String get disc_educationResearch;
+
+  /// Discipline group.
+  ///
+  /// In en, this message translates to:
+  /// **'Medicine & pathology'**
+  String get discGroupMedicine;
+
+  /// Discipline group.
+  ///
+  /// In en, this message translates to:
+  /// **'Toxicology & chemistry'**
+  String get discGroupToxChem;
+
+  /// Discipline group.
+  ///
+  /// In en, this message translates to:
+  /// **'Biology & identification'**
+  String get discGroupBioId;
+
+  /// Discipline group.
+  ///
+  /// In en, this message translates to:
+  /// **'Laboratory & quality'**
+  String get discGroupLab;
+
+  /// Discipline group.
+  ///
+  /// In en, this message translates to:
+  /// **'Education & research'**
+  String get discGroupEdu;
+
+  /// Screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic disciplines'**
+  String get disciplinesTitle;
+
+  /// Screen intro.
+  ///
+  /// In en, this message translates to:
+  /// **'The platform architecture covers these disciplines. Content is added gradually and only with sources and expert review — an empty discipline means “not yet sourced”, not “no knowledge exists”.'**
+  String get disciplinesIntro;
+
+  /// Discipline record count.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No sourced records yet} one{1 sourced record} other{{count} sourced records}}'**
+  String disciplineRecords(int count);
+
+  /// Badge.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional reference scope only'**
+  String get disciplineReferenceOnly;
+
+  /// Section header.
+  ///
+  /// In en, this message translates to:
+  /// **'Modules'**
+  String get disciplineModules;
+
+  /// Section header.
+  ///
+  /// In en, this message translates to:
+  /// **'Planned topic structure'**
+  String get disciplineTopics;
+
+  /// Empty state.
+  ///
+  /// In en, this message translates to:
+  /// **'No sourced content in this discipline yet. Records will be added only with verifiable sources and expert review.'**
+  String get disciplineEmpty;
+
+  /// Screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Law & jurisdictions'**
+  String get jurisdictionsTitle;
+
+  /// Section header.
+  ///
+  /// In en, this message translates to:
+  /// **'Current jurisdiction'**
+  String get jurisdictionCurrent;
+
+  /// Section header.
+  ///
+  /// In en, this message translates to:
+  /// **'Three separate layers'**
+  String get jurisdictionLayersTitle;
+
+  /// Layer name.
+  ///
+  /// In en, this message translates to:
+  /// **'Global scientific core — the same in every country'**
+  String get layerGlobalCore;
+
+  /// Layer name.
+  ///
+  /// In en, this message translates to:
+  /// **'International standards & methods — not law unless adopted'**
+  String get layerIntlStandards;
+
+  /// Layer name.
+  ///
+  /// In en, this message translates to:
+  /// **'Country / jurisdiction law & procedures — only for the selected jurisdiction'**
+  String get layerCountryLaw;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Legal & procedural layer'**
+  String get jurisdictionViewDetails;
+
+  /// Section header.
+  ///
+  /// In en, this message translates to:
+  /// **'Jurisdictions with pilot content'**
+  String get jurisdictionWithContent;
+
+  /// Search hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search country or ISO code'**
+  String get jurisdictionSearchHint;
+
+  /// Empty state.
+  ///
+  /// In en, this message translates to:
+  /// **'Content not yet verified for this jurisdiction. Laws of other countries are never shown as a substitute.'**
+  String get jurisdictionNotVerified;
+
+  /// Coverage label.
+  ///
+  /// In en, this message translates to:
+  /// **'Pilot content — needs review'**
+  String get jurisdictionPilotContent;
+
+  /// Coverage label.
+  ///
+  /// In en, this message translates to:
+  /// **'Content not yet verified'**
+  String get jurisdictionNoContentShort;
+
+  /// Detail line.
+  ///
+  /// In en, this message translates to:
+  /// **'Applies via: {chain}'**
+  String jurisdictionChain(String chain);
+
+  /// Info banner.
+  ///
+  /// In en, this message translates to:
+  /// **'Global scientific content works without selecting a jurisdiction. A jurisdiction is needed only for laws, controlled-substance schedules and national procedures.'**
+  String get jurisdictionGlobalWorks;
+
+  /// Section header.
+  ///
+  /// In en, this message translates to:
+  /// **'Official documents'**
+  String get jurisdictionInstruments;
+
+  /// Section header.
+  ///
+  /// In en, this message translates to:
+  /// **'International layer (applies to all)'**
+  String get jurisdictionIntlLayer;
+
+  /// Section header.
+  ///
+  /// In en, this message translates to:
+  /// **'Jurisdiction-specific layer'**
+  String get jurisdictionOwnLayer;
+
+  /// Footnote.
+  ///
+  /// In en, this message translates to:
+  /// **'Country names: Unicode CLDR. The list only enables selection — it does not mean legal content exists.'**
+  String get jurisdictionCountryNames;
+
+  /// Document kind label.
+  ///
+  /// In en, this message translates to:
+  /// **'LAW'**
+  String get docKindLaw;
+
+  /// Document kind label.
+  ///
+  /// In en, this message translates to:
+  /// **'REGULATION'**
+  String get docKindRegulation;
+
+  /// Document kind label.
+  ///
+  /// In en, this message translates to:
+  /// **'STANDARD'**
+  String get docKindStandard;
+
+  /// Document kind label.
+  ///
+  /// In en, this message translates to:
+  /// **'GUIDELINE'**
+  String get docKindGuideline;
+
+  /// Document kind label.
+  ///
+  /// In en, this message translates to:
+  /// **'METHOD'**
+  String get docKindMethod;
+
+  /// Document kind label.
+  ///
+  /// In en, this message translates to:
+  /// **'SOP'**
+  String get docKindSop;
+
+  /// Document kind label.
+  ///
+  /// In en, this message translates to:
+  /// **'SCIENTIFIC ARTICLE'**
+  String get docKindArticle;
+
+  /// Document kind label.
+  ///
+  /// In en, this message translates to:
+  /// **'OFFICIAL DOCUMENT'**
+  String get docKindOfficial;
+
+  /// Binding nature.
+  ///
+  /// In en, this message translates to:
+  /// **'Legally binding in its jurisdiction while in force'**
+  String get bindingLegal;
+
+  /// Binding nature.
+  ///
+  /// In en, this message translates to:
+  /// **'Voluntary unless adopted by law or accreditation'**
+  String get bindingVoluntary;
+
+  /// Binding nature.
+  ///
+  /// In en, this message translates to:
+  /// **'Advisory — not legally binding'**
+  String get bindingAdvisory;
+
+  /// Binding nature.
+  ///
+  /// In en, this message translates to:
+  /// **'Applies only within the issuing institution'**
+  String get bindingInstitutional;
+
+  /// Binding nature.
+  ///
+  /// In en, this message translates to:
+  /// **'Scientific evidence — not a normative document'**
+  String get bindingScientific;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Official number'**
+  String get instrNumber;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Published'**
+  String get instrPublished;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'In force from'**
+  String get instrEffectiveFrom;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'In force until'**
+  String get instrEffectiveTo;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Last amended'**
+  String get instrAmended;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Version / edition'**
+  String get instrVersion;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Legal status'**
+  String get instrLegalStatus;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Official language'**
+  String get instrLanguage;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Translation'**
+  String get instrTranslation;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Last verified'**
+  String get instrLastVerified;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Review status'**
+  String get instrReview;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Official source'**
+  String get instrSource;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Authority'**
+  String get instrAuthority;
+
+  /// Translation status.
+  ///
+  /// In en, this message translates to:
+  /// **'Original language only'**
+  String get translationNone;
 }
 
 class _AppLocalizationsDelegate

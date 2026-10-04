@@ -108,7 +108,7 @@ class ContentEntryBody extends ConsumerWidget {
               key: const Key('entry.concentration.notThreshold'),
               icon: Icons.warning_amber_rounded,
               text: l.concentrationNotThreshold,
-              tone: FeBannerTone.warning,
+              tone: FeBannerTone.critical,
             ),
             const SizedBox(height: FeSpace.xs),
             for (final claim in d.claims.where(
@@ -331,18 +331,7 @@ class ClaimCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Wrap(
-            spacing: FeSpace.xs,
-            runSpacing: FeSpace.xxs,
-            crossAxisAlignment: WrapCrossAlignment.center,
-            children: [
-              ReviewStatusBadge(status: claim.status),
-              EvidenceLevelBadge(
-                level: claim.evidenceLevel,
-                label: l.detailEvidenceLevel(claim.evidenceLevel),
-              ),
-            ],
-          ),
+          ClaimMeta(status: claim.status, level: claim.evidenceLevel),
           const SizedBox(height: FeSpace.xs),
           for (final (k, v) in identityRows)
             Padding(
@@ -623,6 +612,46 @@ class AccessBadge extends ConsumerWidget {
       icon: unlocked ? Icons.workspace_premium_outlined : Icons.lock_outline,
       label: l.lockedBadge,
       color: c.textSecondary,
+    );
+  }
+}
+
+/// Claim holati + dalil darajasi — bitta ixcham qator.
+class ClaimMeta extends StatelessWidget {
+  const ClaimMeta({super.key, required this.status, required this.level});
+
+  final ScientificStatus status;
+  final String level;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final (label, color, icon) = switch (status) {
+      ScientificStatus.verified => (
+        l.statusVerified,
+        c.verified,
+        Icons.verified_outlined,
+      ),
+      ScientificStatus.reviewed => (
+        l.statusReviewed,
+        c.reviewed,
+        Icons.fact_check_outlined,
+      ),
+      ScientificStatus.outdated => (
+        l.statusOutdated,
+        c.outdated,
+        Icons.history,
+      ),
+      ScientificStatus.rejected => (l.statusNeedsReview, c.danger, Icons.block),
+      _ => (l.statusNeedsReview, c.warning, Icons.pending_outlined),
+    };
+    return EvidenceMetaLine(
+      statusLabel: label,
+      statusIcon: icon,
+      statusColor: color,
+      level: level,
+      levelLabel: l.detailEvidenceLevel(level),
     );
   }
 }

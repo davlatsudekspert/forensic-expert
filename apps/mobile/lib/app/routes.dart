@@ -22,6 +22,12 @@ abstract final class Routes {
       Uri(path: research, queryParameters: {'entity': entityId}).toString();
   static String researchEntry(String id) => '/home/research/$id';
   static String image(String id) => '/home/image/$id';
+  static const disciplines = '/home/disciplines';
+  static String discipline(String code) => '/home/disciplines/$code';
+  static const jurisdictions = '/home/jurisdictions';
+  static const jurisdictionSelect = '/home/jurisdictions/select';
+  static String jurisdiction(String id) => '/home/jurisdictions/$id';
+  static String librarySection(String section) => '/library/section/$section';
   static const quiz = '/home/learn/quiz';
   static const flashcards = '/home/learn/flashcards';
 

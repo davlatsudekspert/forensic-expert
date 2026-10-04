@@ -80,6 +80,7 @@ void main() {
         'fe.user.recent_searches',
         'fe.user.completed_lessons',
         'fe.user.recent_lessons',
+        'fe.user.recently_viewed',
       });
     },
   );

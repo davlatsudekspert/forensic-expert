@@ -16,6 +16,7 @@ import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/library/library_models.dart';
 import '../../common/favorite_button.dart';
+import '../../common/view_recorder.dart';
 import 'content_entry_sections.dart';
 import 'library_screen.dart';
 
@@ -63,6 +64,7 @@ class EntryDetailScreen extends ConsumerWidget {
       body: SafeArea(
         child: ListView(
           children: [
+            ViewRecorder(id: entry.id),
             FeContentFrame(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
