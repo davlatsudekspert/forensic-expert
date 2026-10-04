@@ -1,0 +1,96 @@
+{
+  "packet_id": "P-C-MORPHINE-REPORTED_CONCENTRATION-P5",
+  "subject_id": "C-MORPHINE-REPORTED_CONCENTRATION-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "morphine",
+  "entity_names": {
+    "en": "Morphine",
+    "ru": "Морфин",
+    "uz": "Morfin"
+  },
+  "field": "reported_concentration",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "5 depicts the concentration distributions of free morphine in the blood in morphine deaths without alcohol or benzodiazepines (Mo/N) (median 0.30 μg/ml), morphine and alcohol (Mo/A) (0.40 μg/ml), morphine and benzodiazepines (Mo/B) (0.53 μg/ml), or morphine, alcohol, and benzodiazepines (Mo/AB) (0.80 μg/ml).",
+    "location": "RESULTS",
+    "proposed_value": {
+      "section": "RESULTS",
+      "specimen": [
+        "blood"
+      ],
+      "context": "postmortem / fatal cases",
+      "not_a_threshold": true
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC7578170",
+      "title": "Aspiration in lethal drug abuse-a consequence of opioid intoxication",
+      "type": "journal_article",
+      "doi": "10.1007/s00414-020-02412-y",
+      "pmid": "32929594",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7578170/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "RESULTS"
+    }
+  ],
+  "why_it_matters": "Concentration values are often misread as thresholds; the reviewer must confirm specimen, population, statistic and that the value is reported in context only.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [
+    "Analyte reported as free morphine.",
+    "Group medians only; ranges and group sizes are not in the excerpt."
+  ],
+  "concentration_context": {
+    "specimen": [
+      "blood"
+    ],
+    "sampling": "postmortem",
+    "subject_state": "deceased",
+    "population": "morphine deaths (study cohort; see source)",
+    "study_size": "not_stated",
+    "case_type": "deaths with morphine findings",
+    "co_intoxicants": "stratified: none / alcohol / benzodiazepines / alcohol + benzodiazepines",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "median per group: 0.30 / 0.40 / 0.53 / 0.80 μg/mL",
+    "reporting": "primary",
+    "limitations": [
+      "Analyte reported as free morphine.",
+      "Group medians only; ranges and group sizes are not in the excerpt."
+    ],
+    "curation": "pilot_manual"
+  },
+  "translations": {
+    "entity_names": {
+      "en": "Morphine",
+      "ru": "Морфин",
+      "uz": "Morfin"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

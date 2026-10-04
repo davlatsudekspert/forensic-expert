@@ -13,6 +13,7 @@ import '../domain/knowledge/knowledge_models.dart';
 import '../domain/library/library_models.dart';
 import '../features/ai/presentation/ai_screen.dart';
 import '../features/disciplines/presentation/disciplines_screens.dart';
+import '../features/evidence/presentation/provenance_screens.dart';
 import '../features/evidence/presentation/research_screens.dart';
 import '../features/evidence/presentation/scientific_image.dart';
 import '../features/home/presentation/home_screen.dart';
@@ -253,6 +254,39 @@ final routerProvider = Provider<GoRouter>((ref) {
                   GoRoute(
                     path: 'standards',
                     builder: (c, s) => const StandardsScreen(),
+                  ),
+                  GoRoute(
+                    path: 'conflicts',
+                    builder: (c, s) => const ConflictsScreen(),
+                    routes: [
+                      GoRoute(
+                        path: ':id',
+                        builder: (c, s) => ConflictDetailScreen(
+                          conflictId: s.pathParameters['id']!,
+                        ),
+                      ),
+                    ],
+                  ),
+                  GoRoute(
+                    path: 'specimens',
+                    builder: (c, s) => const SpecimensScreen(),
+                    routes: [
+                      GoRoute(
+                        path: ':id',
+                        builder: (c, s) => SpecimenDetailScreen(
+                          specimenId: s.pathParameters['id']!,
+                        ),
+                      ),
+                    ],
+                  ),
+                  GoRoute(
+                    path: 'chain/:id',
+                    builder: (c, s) =>
+                        KnowledgeChainScreen(entityId: s.pathParameters['id']!),
+                  ),
+                  GoRoute(
+                    path: 'review',
+                    builder: (c, s) => const ReviewStatusScreen(),
                   ),
                 ],
               ),

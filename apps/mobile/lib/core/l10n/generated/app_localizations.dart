@@ -3967,13 +3967,13 @@ abstract class AppLocalizations {
   /// Reference.
   ///
   /// In en, this message translates to:
-  /// **'ICH Q2(R1) Validation of Analytical Procedures: Text and Methodology — §6.3, §7.3'**
+  /// **'ICH Q2(R2) Validation of Analytical Procedures (2023) — §3.2.3.3'**
   String get calcLodReference;
 
   /// Reference note.
   ///
   /// In en, this message translates to:
-  /// **'Factors checked against the official ICH PDF text. ICH Q2(R2) supersedes R1 — a reviewer must confirm the current version.'**
+  /// **'Factors checked against the official ICH Q2(R2) PDF; they are unchanged from Q2(R1) (superseded). Q2(R2) also allows S/N and direct accuracy/precision confirmation. Laboratory reviewer confirmation pending (RG-25).'**
   String get calcLodReferenceNote;
 
   /// Action.
@@ -5109,6 +5109,828 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Sections with sourced data: {filled} of {total}'**
   String templateCoverage(int filled, int total);
+
+  /// Button on a claim.
+  ///
+  /// In en, this message translates to:
+  /// **'Where does this come from?'**
+  String get provWhereFrom;
+
+  /// Sheet title.
+  ///
+  /// In en, this message translates to:
+  /// **'Provenance of this statement'**
+  String get provSheetTitle;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Statement'**
+  String get provStatement;
+
+  /// Location in source.
+  ///
+  /// In en, this message translates to:
+  /// **'Location in source: {loc}'**
+  String provLocation(String loc);
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Source'**
+  String get provSource;
+
+  /// Source tier.
+  ///
+  /// In en, this message translates to:
+  /// **'Source tier {tier}'**
+  String provTier(String tier);
+
+  /// Tier A.
+  ///
+  /// In en, this message translates to:
+  /// **'A — official text, standard or guideline'**
+  String get provTierA;
+
+  /// Tier B.
+  ///
+  /// In en, this message translates to:
+  /// **'B — peer-reviewed publication'**
+  String get provTierB;
+
+  /// Tier C.
+  ///
+  /// In en, this message translates to:
+  /// **'C — handbook, database or secondary source'**
+  String get provTierC;
+
+  /// Reuse status.
+  ///
+  /// In en, this message translates to:
+  /// **'Open reuse'**
+  String get reuseOpen;
+
+  /// Reuse status.
+  ///
+  /// In en, this message translates to:
+  /// **'Cite only — text not reproduced'**
+  String get reuseCiteOnly;
+
+  /// Reuse status.
+  ///
+  /// In en, this message translates to:
+  /// **'Non-commercial licence'**
+  String get reuseNonCommercial;
+
+  /// Reuse status.
+  ///
+  /// In en, this message translates to:
+  /// **'LICENSE REQUIRED'**
+  String get reuseLicenseRequired;
+
+  /// Reuse status.
+  ///
+  /// In en, this message translates to:
+  /// **'Lookup only'**
+  String get reuseLookup;
+
+  /// Reuse status.
+  ///
+  /// In en, this message translates to:
+  /// **'Licence not determined'**
+  String get reuseUnknown;
+
+  /// Source lifecycle.
+  ///
+  /// In en, this message translates to:
+  /// **'Not retracted'**
+  String get srcLifecycleCurrent;
+
+  /// Source lifecycle.
+  ///
+  /// In en, this message translates to:
+  /// **'RETRACTED'**
+  String get srcLifecycleRetracted;
+
+  /// Source lifecycle.
+  ///
+  /// In en, this message translates to:
+  /// **'SUPERSEDED'**
+  String get srcLifecycleSuperseded;
+
+  /// Source lifecycle.
+  ///
+  /// In en, this message translates to:
+  /// **'WITHDRAWN'**
+  String get srcLifecycleWithdrawn;
+
+  /// Retraction check date.
+  ///
+  /// In en, this message translates to:
+  /// **'Retraction check: {date}'**
+  String provCheckedOn(String date);
+
+  /// Hash label.
+  ///
+  /// In en, this message translates to:
+  /// **'Archived copy SHA-256'**
+  String get provArchiveHash;
+
+  /// Version.
+  ///
+  /// In en, this message translates to:
+  /// **'Version: {v}'**
+  String provSourceVersion(String v);
+
+  /// Claim lifecycle label.
+  ///
+  /// In en, this message translates to:
+  /// **'Lifecycle'**
+  String get provLifecycle;
+
+  /// Lifecycle.
+  ///
+  /// In en, this message translates to:
+  /// **'Current'**
+  String get lcCurrent;
+
+  /// Lifecycle.
+  ///
+  /// In en, this message translates to:
+  /// **'Needs review'**
+  String get lcNeedsReview;
+
+  /// Lifecycle.
+  ///
+  /// In en, this message translates to:
+  /// **'Outdated'**
+  String get lcOutdated;
+
+  /// Lifecycle.
+  ///
+  /// In en, this message translates to:
+  /// **'Superseded'**
+  String get lcSuperseded;
+
+  /// Lifecycle.
+  ///
+  /// In en, this message translates to:
+  /// **'Retracted source'**
+  String get lcRetracted;
+
+  /// Lifecycle.
+  ///
+  /// In en, this message translates to:
+  /// **'Rejected'**
+  String get lcRejected;
+
+  /// Verified marker.
+  ///
+  /// In en, this message translates to:
+  /// **'Verified by qualified human reviewers'**
+  String get provHumanVerified;
+
+  /// Unverified marker.
+  ///
+  /// In en, this message translates to:
+  /// **'NOT VERIFIED — EXPERT CONFIRMATION REQUIRED'**
+  String get provNotVerified;
+
+  /// Reviewer role.
+  ///
+  /// In en, this message translates to:
+  /// **'Required reviewer: {role}'**
+  String provRequiredRole(String role);
+
+  /// Review count.
+  ///
+  /// In en, this message translates to:
+  /// **'Reviewer actions on this version: {n}'**
+  String provReviewsRecorded(int n);
+
+  /// Claim id.
+  ///
+  /// In en, this message translates to:
+  /// **'Record ID: {id} · v{v}'**
+  String provClaimId(String id, int v);
+
+  /// Reviewer role.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic toxicology'**
+  String get roleForensicToxicology;
+
+  /// Reviewer role.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic medicine'**
+  String get roleForensicMedicine;
+
+  /// Reviewer role.
+  ///
+  /// In en, this message translates to:
+  /// **'Laboratory / analytical'**
+  String get roleLaboratory;
+
+  /// Reviewer role.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic biochemistry'**
+  String get roleBiochemistry;
+
+  /// Reviewer role.
+  ///
+  /// In en, this message translates to:
+  /// **'Legal / jurisdiction'**
+  String get roleLegal;
+
+  /// Reviewer role.
+  ///
+  /// In en, this message translates to:
+  /// **'Translation'**
+  String get roleTranslation;
+
+  /// Reviewer role.
+  ///
+  /// In en, this message translates to:
+  /// **'Scientific editor / admin'**
+  String get roleEditor;
+
+  /// Retracted source banner.
+  ///
+  /// In en, this message translates to:
+  /// **'Source retracted — this statement is kept for transparency but is not current evidence.'**
+  String get bannerRetracted;
+
+  /// Superseded banner.
+  ///
+  /// In en, this message translates to:
+  /// **'All sources of this statement have been superseded.'**
+  String get bannerSuperseded;
+
+  /// Outdated banner.
+  ///
+  /// In en, this message translates to:
+  /// **'Flagged as outdated by a reviewer.'**
+  String get bannerOutdated;
+
+  /// Conflict banner.
+  ///
+  /// In en, this message translates to:
+  /// **'EVIDENCE CONFLICT — sources disagree or overlap. Tap to compare.'**
+  String get bannerConflict;
+
+  /// Screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Evidence conflicts'**
+  String get conflictsTitle;
+
+  /// Intro.
+  ///
+  /// In en, this message translates to:
+  /// **'Conflicts are shown, not hidden. Only a qualified reviewer can resolve one; the app never picks a winner.'**
+  String get conflictsIntro;
+
+  /// Conflict kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Direct contradiction'**
+  String get conflictKindDirect;
+
+  /// Conflict kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Depends on context'**
+  String get conflictKindContext;
+
+  /// Conflict kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Values overlap between contexts'**
+  String get conflictKindOverlap;
+
+  /// Conflict kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Described differently'**
+  String get conflictKindCharacterisation;
+
+  /// Label.
+  ///
+  /// In en, this message translates to:
+  /// **'Question'**
+  String get conflictQuestion;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Statements involved'**
+  String get conflictStatements;
+
+  /// State.
+  ///
+  /// In en, this message translates to:
+  /// **'Open — awaiting reviewer decision'**
+  String get conflictStateOpen;
+
+  /// State.
+  ///
+  /// In en, this message translates to:
+  /// **'Resolved by reviewer'**
+  String get conflictStateResolved;
+
+  /// Label.
+  ///
+  /// In en, this message translates to:
+  /// **'Summary of what the sources say'**
+  String get conflictNoteLabel;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Context (only what the source states)'**
+  String get ctxTitle;
+
+  /// Context field.
+  ///
+  /// In en, this message translates to:
+  /// **'Specimen'**
+  String get ctxSpecimen;
+
+  /// Context field.
+  ///
+  /// In en, this message translates to:
+  /// **'Sampling'**
+  String get ctxSampling;
+
+  /// Context field.
+  ///
+  /// In en, this message translates to:
+  /// **'Subject'**
+  String get ctxSubject;
+
+  /// Context field.
+  ///
+  /// In en, this message translates to:
+  /// **'Population'**
+  String get ctxPopulation;
+
+  /// Context field.
+  ///
+  /// In en, this message translates to:
+  /// **'Number of cases'**
+  String get ctxStudySize;
+
+  /// Context field.
+  ///
+  /// In en, this message translates to:
+  /// **'Case type'**
+  String get ctxCaseType;
+
+  /// Context field.
+  ///
+  /// In en, this message translates to:
+  /// **'Co-intoxicants'**
+  String get ctxCoIntoxicants;
+
+  /// Context field.
+  ///
+  /// In en, this message translates to:
+  /// **'Analytical method'**
+  String get ctxMethod;
+
+  /// Context field.
+  ///
+  /// In en, this message translates to:
+  /// **'Timing'**
+  String get ctxTiming;
+
+  /// Context field.
+  ///
+  /// In en, this message translates to:
+  /// **'Reported values'**
+  String get ctxStatistic;
+
+  /// Context field.
+  ///
+  /// In en, this message translates to:
+  /// **'Data origin'**
+  String get ctxReporting;
+
+  /// Context field.
+  ///
+  /// In en, this message translates to:
+  /// **'Limitations'**
+  String get ctxLimitations;
+
+  /// Missing value.
+  ///
+  /// In en, this message translates to:
+  /// **'not stated in the source'**
+  String get ctxNotStated;
+
+  /// Value.
+  ///
+  /// In en, this message translates to:
+  /// **'post-mortem'**
+  String get ctxPostmortem;
+
+  /// Value.
+  ///
+  /// In en, this message translates to:
+  /// **'ante-mortem'**
+  String get ctxAntemortem;
+
+  /// Value.
+  ///
+  /// In en, this message translates to:
+  /// **'mixed'**
+  String get ctxMixed;
+
+  /// Value.
+  ///
+  /// In en, this message translates to:
+  /// **'deceased'**
+  String get ctxDeceased;
+
+  /// Value.
+  ///
+  /// In en, this message translates to:
+  /// **'living'**
+  String get ctxLiving;
+
+  /// Value.
+  ///
+  /// In en, this message translates to:
+  /// **'Primary data of the cited study'**
+  String get ctxPrimary;
+
+  /// Value.
+  ///
+  /// In en, this message translates to:
+  /// **'Quoted from another study'**
+  String get ctxSecondary;
+
+  /// Value.
+  ///
+  /// In en, this message translates to:
+  /// **'Not yet assessed'**
+  String get ctxNotAssessed;
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'Context for this record has not been curated yet; only the specimen is shown.'**
+  String get ctxAutoMinimal;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Metabolites (sourced relations)'**
+  String get metRelationsTitle;
+
+  /// Relation kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Metabolite'**
+  String get metKindMetabolite;
+
+  /// Relation kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Active metabolite'**
+  String get metKindActive;
+
+  /// Relation kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Inactive metabolite'**
+  String get metKindInactive;
+
+  /// Relation kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Marker'**
+  String get metKindMarker;
+
+  /// Relation kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Artifact'**
+  String get metKindArtifact;
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'A role (active, marker…) is shown only when the cited text states it.'**
+  String get metRoleNote;
+
+  /// Label.
+  ///
+  /// In en, this message translates to:
+  /// **'Parent substance: {name}'**
+  String metParentOf(String name);
+
+  /// Screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Specimens'**
+  String get specimensTitle;
+
+  /// Intro.
+  ///
+  /// In en, this message translates to:
+  /// **'Specimen types with sourced statements and reported values. Reported values are never thresholds.'**
+  String get specimensIntro;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'About this specimen'**
+  String get specimenAbout;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Reported values in this specimen'**
+  String get specimenMeasured;
+
+  /// Empty.
+  ///
+  /// In en, this message translates to:
+  /// **'No sourced statements yet.'**
+  String get specimenNoClaims;
+
+  /// Category.
+  ///
+  /// In en, this message translates to:
+  /// **'Body fluid'**
+  String get specimenCatFluid;
+
+  /// Category.
+  ///
+  /// In en, this message translates to:
+  /// **'Tissue'**
+  String get specimenCatTissue;
+
+  /// Category.
+  ///
+  /// In en, this message translates to:
+  /// **'Keratinous matrix'**
+  String get specimenCatKeratinous;
+
+  /// Category.
+  ///
+  /// In en, this message translates to:
+  /// **'Contents'**
+  String get specimenCatContent;
+
+  /// Count.
+  ///
+  /// In en, this message translates to:
+  /// **'{n} records'**
+  String specimenRecords(int n);
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Specimens with reported values'**
+  String get detailMeasuredIn;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Screening tests (screening ≠ confirmation)'**
+  String get detailScreenedBy;
+
+  /// Screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Knowledge chain'**
+  String get chainTitle;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Show knowledge chain'**
+  String get chainOpen;
+
+  /// Intro.
+  ///
+  /// In en, this message translates to:
+  /// **'Every link below has a recorded basis (a sourced statement, an official list entry or a catalogue record). Tap a link to see it.'**
+  String get chainIntro;
+
+  /// Step.
+  ///
+  /// In en, this message translates to:
+  /// **'Metabolites'**
+  String get chainMetabolites;
+
+  /// Step.
+  ///
+  /// In en, this message translates to:
+  /// **'Specimens'**
+  String get chainSpecimens;
+
+  /// Step.
+  ///
+  /// In en, this message translates to:
+  /// **'Screening'**
+  String get chainScreening;
+
+  /// Step.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirmatory methods'**
+  String get chainConfirmation;
+
+  /// Step.
+  ///
+  /// In en, this message translates to:
+  /// **'Reagents'**
+  String get chainReagents;
+
+  /// Step.
+  ///
+  /// In en, this message translates to:
+  /// **'Research'**
+  String get chainResearch;
+
+  /// Step.
+  ///
+  /// In en, this message translates to:
+  /// **'Standards'**
+  String get chainStandards;
+
+  /// Step.
+  ///
+  /// In en, this message translates to:
+  /// **'Legal status'**
+  String get chainLegal;
+
+  /// Empty step.
+  ///
+  /// In en, this message translates to:
+  /// **'No sourced link yet'**
+  String get chainNone;
+
+  /// Basis label.
+  ///
+  /// In en, this message translates to:
+  /// **'Basis: {id}'**
+  String chainBasis(String id);
+
+  /// Count.
+  ///
+  /// In en, this message translates to:
+  /// **'{n} linked publications'**
+  String chainResearchCount(int n);
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Standards catalogue (metadata only)'**
+  String get stdCatalogue;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Current'**
+  String get stdStatusCurrent;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Proposed — not yet published'**
+  String get stdStatusProposed;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Superseded by {id}'**
+  String stdStatusSuperseded(String id);
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Withdrawn'**
+  String get stdStatusWithdrawn;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Status not determined'**
+  String get stdStatusUnknown;
+
+  /// Verification.
+  ///
+  /// In en, this message translates to:
+  /// **'Metadata checked on {date} at the publisher or registry'**
+  String stdVerifiedFrom(String date);
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'The text of the standard is not reproduced in the app.'**
+  String get stdTextNotReproduced;
+
+  /// Screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Scientific review status'**
+  String get reviewTitle;
+
+  /// Metric.
+  ///
+  /// In en, this message translates to:
+  /// **'Verified by humans'**
+  String get reviewHumanVerified;
+
+  /// Metric.
+  ///
+  /// In en, this message translates to:
+  /// **'Reviewed'**
+  String get reviewReviewed;
+
+  /// Metric.
+  ///
+  /// In en, this message translates to:
+  /// **'Awaiting review'**
+  String get reviewAwaiting;
+
+  /// Metric.
+  ///
+  /// In en, this message translates to:
+  /// **'Statements with a retracted source'**
+  String get reviewRetracted;
+
+  /// Metric.
+  ///
+  /// In en, this message translates to:
+  /// **'Reviewer actions recorded'**
+  String get reviewActions;
+
+  /// Metric.
+  ///
+  /// In en, this message translates to:
+  /// **'Registered reviewers'**
+  String get reviewReviewers;
+
+  /// Metric.
+  ///
+  /// In en, this message translates to:
+  /// **'Open evidence conflicts'**
+  String get reviewOpenConflicts;
+
+  /// Explanation.
+  ///
+  /// In en, this message translates to:
+  /// **'A statement becomes VERIFIED only after two independent qualified reviewers in its specialty approve the current version. The app and its authors cannot mark anything verified themselves.'**
+  String get reviewExplain;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Reviewer roles and permissions'**
+  String get reviewRolesTitle;
+
+  /// Permission.
+  ///
+  /// In en, this message translates to:
+  /// **'Can approve or reject in its specialty'**
+  String get reviewRoleApprove;
+
+  /// Permission.
+  ///
+  /// In en, this message translates to:
+  /// **'Can flag conflicts, outdated content and request changes — cannot approve'**
+  String get reviewRoleFlagOnly;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Possible actions'**
+  String get reviewActionsList;
+
+  /// Hub entry.
+  ///
+  /// In en, this message translates to:
+  /// **'Evidence conflicts'**
+  String get libraryConflicts;
+
+  /// Hub entry.
+  ///
+  /// In en, this message translates to:
+  /// **'Review status'**
+  String get libraryReview;
+
+  /// Method note.
+  ///
+  /// In en, this message translates to:
+  /// **'Published scientific method — not a validated procedure for any particular laboratory.'**
+  String get methodPublishedNote;
 }
 
 class _AppLocalizationsDelegate

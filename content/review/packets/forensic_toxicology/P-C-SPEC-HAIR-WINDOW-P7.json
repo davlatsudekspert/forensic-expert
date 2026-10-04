@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-SPEC-HAIR-WINDOW-P7",
+  "subject_id": "C-SPEC-HAIR-WINDOW-P7",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "hair",
+  "entity_names": {
+    "en": "Hair",
+    "ru": "Волосы",
+    "uz": "Soch"
+  },
+  "field": "detection_window",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "Hair analysis can also reveal exposure to toxins and stress levels by measuring substances stored in the hair over months.",
+    "location": "ABSTRACT",
+    "proposed_value": {
+      "section": "ABSTRACT"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC12586478",
+      "title": "The multifaceted role of hair as a biospecimen: recent advances in precision medicine and forensic science",
+      "type": "journal_article",
+      "doi": "10.1038/s12276-025-01548-4",
+      "pmid": "41145616",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12586478/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "Excluded retracted PMIDs at selection (PubMed check).",
+      "locator": "ABSTRACT"
+    }
+  ],
+  "why_it_matters": "Detection windows affect the interpretation of negative results.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Hair",
+      "ru": "Волосы",
+      "uz": "Soch"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

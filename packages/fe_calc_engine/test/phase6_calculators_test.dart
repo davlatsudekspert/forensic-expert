@@ -151,7 +151,7 @@ void main() {
     });
   });
 
-  test('LOD/LOQ (ICH Q2(R1) 6.3/7.3): 3.3σ/S va 10σ/S, manba bog‘langan', () {
+  test('LOD/LOQ (ICH Q2(R2) §3.2.3.3): 3.3σ/S va 10σ/S, manba bog‘langan', () {
     const c = LodLoqCalculator();
     final r = c.calculate(
       const LodLoqInput(
@@ -162,7 +162,11 @@ void main() {
     );
     expect(r.value.lod, closeTo(0.33, 1e-12));
     expect(r.value.loq, closeTo(1.0, 1e-12));
-    expect(c.descriptor.referenceSourceIds, ['SRC-ICH-Q2R1']);
+    expect(c.descriptor.referenceSourceIds, ['STD-ICH-Q2R2']);
+    // RG-25: R2 ga o‘tishda koeffitsientlar o‘zgarmadi, versiya oshdi.
+    expect(c.descriptor.engineVersion, '1.1.0');
+    expect(LodLoqCalculator.lodFactor, 3.3);
+    expect(LodLoqCalculator.loqFactor, 10.0);
     expect(c.descriptor.isDefinitional, isFalse);
     expect(
       () => c.calculate(

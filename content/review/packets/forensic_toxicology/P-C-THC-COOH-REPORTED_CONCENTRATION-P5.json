@@ -1,0 +1,96 @@
+{
+  "packet_id": "P-C-THC-COOH-REPORTED_CONCENTRATION-P5",
+  "subject_id": "C-THC-COOH-REPORTED_CONCENTRATION-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "thc-cooh",
+  "entity_names": {
+    "en": "THC-COOH",
+    "ru": "ТГК-COOH",
+    "uz": "THC-COOH"
+  },
+  "field": "reported_concentration",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "In these case study reports, THC-COOH levels ranged from 8.0 to 3894 ng/g in liver tissues and from 3 to 1774 ng/mL in kidney tissues.",
+    "location": "DISCUSS",
+    "proposed_value": {
+      "section": "DISCUSS",
+      "specimen": [
+        "liver",
+        "kidney"
+      ],
+      "context": "case report / series (see source)",
+      "not_a_threshold": true
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC10536215",
+      "title": "11-Nor-9-Carboxy Tetrahydrocannabinol Distribution in Fluid from the Chest Cavity in Cannabis-Related Post-Mortem Cases",
+      "type": "journal_article",
+      "doi": "10.3390/toxics11090740",
+      "pmid": "37755750",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10536215/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "DISCUSS"
+    }
+  ],
+  "why_it_matters": "Concentration values are often misread as thresholds; the reviewer must confirm specimen, population, statistic and that the value is reported in context only.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [
+    "Kidney tissue values are written in ng/mL in the source — reviewer to check units."
+  ],
+  "concentration_context": {
+    "specimen": [
+      "liver",
+      "kidney"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "case study reports (see source)",
+    "study_size": "not_stated",
+    "case_type": "cannabis-related case reports",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "range 8.0–3894 ng/g (liver); 3–1774 ng/mL (kidney, as written)",
+    "reporting": "secondary_citation",
+    "limitations": [
+      "Kidney tissue values are written in ng/mL in the source — reviewer to check units."
+    ],
+    "curation": "pilot_manual"
+  },
+  "translations": {
+    "entity_names": {
+      "en": "THC-COOH",
+      "ru": "ТГК-COOH",
+      "uz": "THC-COOH"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

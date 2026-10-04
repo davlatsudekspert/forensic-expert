@@ -1,0 +1,76 @@
+{
+  "packet_id": "P-C-BIO-VITREOUS-POTASSIUM-LIMITATION",
+  "subject_id": "C-BIO-VITREOUS-POTASSIUM-LIMITATION",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "bio-vitreous-potassium",
+  "entity_names": {
+    "en": "Vitreous potassium and PMI",
+    "ru": "Калий стекловидного тела и давность смерти",
+    "uz": "Shishasimon tana kaliysi va PMI"
+  },
+  "field": "limitation",
+  "domain": "fm",
+  "required_role": "forensic_biochemistry",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "These findings highlight the inconsistent influence of temperature on vitreous potassium, underscoring its role as a potential confounding factor in PMI estimation.",
+    "location": "INTRO",
+    "proposed_value": {
+      "section": "INTRO"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC13224331",
+      "title": "Forensic Utility of Vitreous Potassium Concentration in Estimating Postmortem Interval: A Systematic Review.",
+      "type": "journal_article",
+      "doi": "10.7759/cureus.108128",
+      "pmid": "42231995",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13224331/",
+      "tier": "B",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "INTRO"
+    }
+  ],
+  "why_it_matters": "Limitations prevent over-interpretation of a finding.",
+  "conflicts": [
+    {
+      "conflict_id": "CF-VITREOUS-K-PMI",
+      "kind": "context_dependent",
+      "question": "Can vitreous potassium be used to estimate the post-mortem interval?",
+      "note": "One source reports a linear rise of vitreous potassium with advancing PMI; another reports an inconsistent influence of temperature and calls it a potential confounding factor."
+    }
+  ],
+  "has_conflict": true,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Vitreous potassium and PMI",
+      "ru": "Калий стекловидного тела и давность смерти",
+      "uz": "Shishasimon tana kaliysi va PMI"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

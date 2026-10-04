@@ -1,0 +1,73 @@
+{
+  "packet_id": "P-C-COCAINE-IDENTITY",
+  "subject_id": "C-COCAINE-IDENTITY",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "cocaine",
+  "entity_names": {
+    "en": "Cocaine",
+    "ru": "Кокаин",
+    "uz": "Kokain"
+  },
+  "field": "identity",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": null,
+    "location": null,
+    "proposed_value": {
+      "pubchem_cid": 446220,
+      "molecular_formula": "C17H21NO4",
+      "molecular_weight": "303.35",
+      "inchikey": "ZPUCINDJVBIVPJ-LJISPDSOSA-N",
+      "iupac_name": "methyl (1R,2R,3S,5S)-3-benzoyloxy-8-methyl-8-azabicyclo[3.2.1]octane-2-carboxylate"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PUBCHEM-446220",
+      "title": "PubChem Compound Summary for CID 446220 (methyl (1R,2R,3S,5S)-3-benzoyloxy-8-methyl-8-azabicyclo[3.2.1]octane-2-carboxylate)",
+      "type": "database",
+      "doi": null,
+      "pmid": null,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/446220",
+      "tier": "B",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": null,
+      "locator": "Computed Properties"
+    }
+  ],
+  "why_it_matters": "Identifiers (formula, InChIKey, CID) anchor every other record about the substance.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Cocaine",
+      "ru": "Кокаин",
+      "uz": "Kokain"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

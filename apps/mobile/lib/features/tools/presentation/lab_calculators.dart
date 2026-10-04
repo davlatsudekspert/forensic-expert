@@ -598,7 +598,7 @@ class _StatsState extends State<DescriptiveStatsView> {
   }
 }
 
-/// Kalibrlash (OLS) — ixtiyoriy ravishda LOD/LOQ (ICH Q2(R1)) ga uzatish.
+/// Kalibrlash (OLS) — ixtiyoriy ravishda LOD/LOQ (ICH Q2(R2)) ga uzatish.
 class CalibrationView extends StatefulWidget {
   const CalibrationView({super.key, this.withLimits = false});
 

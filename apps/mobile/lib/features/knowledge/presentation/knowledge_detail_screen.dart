@@ -510,6 +510,15 @@ class _MethodSection extends ConsumerWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
+        if (method.kind == MethodKind.scientificMethod) ...[
+          FeBanner(
+            key: const Key('method.publishedNote'),
+            icon: Icons.science_outlined,
+            text: l.methodPublishedNote,
+            tone: FeBannerTone.warning,
+          ),
+          const SizedBox(height: FeSpace.xs),
+        ],
         FeSectionHeader(l.knowledgeDetails),
         if (method.organization != null)
           row(l.methodOrganization, method.organization!),

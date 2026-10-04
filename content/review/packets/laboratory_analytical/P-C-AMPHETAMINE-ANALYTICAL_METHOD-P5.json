@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-AMPHETAMINE-ANALYTICAL_METHOD-P5",
+  "subject_id": "C-AMPHETAMINE-ANALYTICAL_METHOD-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "amphetamine",
+  "entity_names": {
+    "en": "Amphetamine",
+    "ru": "Амфетамин",
+    "uz": "Amfetamin"
+  },
+  "field": "analytical_method",
+  "domain": "lab",
+  "required_role": "laboratory_analytical",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "While amphetamine was detected, methamphetamine could not be detected by liquid chromatography–tandem mass spectrometry (LC–MS/MS) in any of samples collected.",
+    "location": "ABSTRACT",
+    "proposed_value": {
+      "section": "ABSTRACT"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC10310599",
+      "title": "Detection of lisdexamfetamine and its metabolite d-amphetamine in urine and gastric contents collected from a cadaver at forensic autopsy",
+      "type": "journal_article",
+      "doi": "10.1007/s11419-022-00654-6",
+      "pmid": "36562920",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10310599/",
+      "tier": "B",
+      "evidence_level": "D",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "ABSTRACT"
+    }
+  ],
+  "why_it_matters": "Links the substance to an analytical technique; does not imply a validated method for any laboratory.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Amphetamine",
+      "ru": "Амфетамин",
+      "uz": "Amfetamin"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

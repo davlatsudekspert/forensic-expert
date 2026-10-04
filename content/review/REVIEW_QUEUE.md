@@ -1,21 +1,21 @@
 # Reviewer navbati (avtomatik yaratilgan)
 
-Jami element: **835** — barchasi `NEEDS_REVIEW`. Muallif o‘z claim’ini tasdiqlay olmaydi.
+Jami element: **881** — barchasi `NEEDS_REVIEW`. Muallif o‘z claim’ini tasdiqlay olmaydi.
 
 | Rol | Element | Har biriga kerakli review |
 |---|---|---|
-| scientific | 314 | 2 |
-| legal | 216 | 1 |
+| scientific | 320 | 2 |
+| legal | 254 | 1 |
 | translation | 137 | 1 |
 | analytical | 126 | 2 |
-| medicine_histology | 42 | 2 |
+| medicine_histology | 44 | 2 |
 
 | Tur | Soni |
 |---|---|
-| claim | 482 |
+| claim | 490 |
 | image | 156 |
 | translation | 137 |
-| legal_rule | 60 |
+| legal_rule | 98 |
 
 To‘liq ro‘yxat: `content/review/queue.csv` (jadval) va `queue.json`.
 Har bir qatorda: aniq manba (DOI/URL, bo‘lim), manbadan olingan asl jumla,

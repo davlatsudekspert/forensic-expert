@@ -1,0 +1,104 @@
+{
+  "packet_id": "P-C-METHADONE-REPORTED_CONCENTRATION-P5",
+  "subject_id": "C-METHADONE-REPORTED_CONCENTRATION-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "methadone",
+  "entity_names": {
+    "en": "Methadone",
+    "ru": "Метадон",
+    "uz": "Metadon"
+  },
+  "field": "reported_concentration",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "We observed that the average blood concentration of methadone found in adult cases is 503 ng/mL, higher than observed in children, and overlapping with the range of concentration normally reported in living patients undergoing MMT (400–1000 ng/ml).",
+    "location": "DISCUSS",
+    "proposed_value": {
+      "section": "DISCUSS",
+      "specimen": [
+        "blood"
+      ],
+      "context": "postmortem / fatal cases",
+      "not_a_threshold": true,
+      "context_label_correction": "P5 label 'clinical intoxication' replaced: excerpt and title describe post-mortem deaths."
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC12808249",
+      "title": "Characterizing post-mortem blood concentrations in methadone-related deaths",
+      "type": "journal_article",
+      "doi": "10.1007/s00414-025-03620-0",
+      "pmid": "41060397",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12808249/",
+      "tier": "B",
+      "evidence_level": "A",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "DISCUSS"
+    }
+  ],
+  "why_it_matters": "Concentration values are often misread as thresholds; the reviewer must confirm specimen, population, statistic and that the value is reported in context only.",
+  "conflicts": [
+    {
+      "conflict_id": "CF-METHADONE-PM-VS-LIVING",
+      "kind": "value_overlap",
+      "question": "Does a post-mortem methadone blood concentration distinguish toxicity from therapeutic use?",
+      "note": "The source states that the mean adult post-mortem concentration (503 ng/mL) overlaps the range reported in living patients on maintenance treatment (400–1000 ng/mL)."
+    }
+  ],
+  "has_conflict": true,
+  "limitations": [
+    "The 400–1000 ng/mL range quoted alongside refers to living patients in methadone maintenance treatment, not to this cohort.",
+    "Post-mortem values overlap living-patient values (see EVIDENCE CONFLICT)."
+  ],
+  "concentration_context": {
+    "specimen": [
+      "blood"
+    ],
+    "sampling": "postmortem",
+    "subject_state": "deceased",
+    "population": "adult methadone-related deaths (compared with children)",
+    "study_size": "not_stated",
+    "case_type": "methadone-related deaths",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "mean 503 ng/mL (adults)",
+    "reporting": "primary",
+    "limitations": [
+      "The 400–1000 ng/mL range quoted alongside refers to living patients in methadone maintenance treatment, not to this cohort.",
+      "Post-mortem values overlap living-patient values (see EVIDENCE CONFLICT)."
+    ],
+    "curation": "pilot_manual"
+  },
+  "translations": {
+    "entity_names": {
+      "en": "Methadone",
+      "ru": "Метадон",
+      "uz": "Metadon"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

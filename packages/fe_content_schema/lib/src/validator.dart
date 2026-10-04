@@ -7,6 +7,7 @@ import 'enums.dart';
 import 'evidence_graph.dart';
 import 'jurisdiction.dart';
 import 'knowledge.dart';
+import 'provenance.dart';
 import 'source.dart';
 import 'status_resolver.dart';
 
@@ -68,6 +69,29 @@ abstract final class RuleCodes {
   /// belgisi majburiy.
   static const reportedConcentrationContext =
       'FE032_CONCENTRATION_WITHOUT_CONTEXT';
+
+  // --- PHASE 7: tasdiqlanadigan kontent pipeline’i ---
+  /// Konsentratsiya claim’ida qat’iy kontekst kalitlaridan biri yo‘q yoki
+  /// noto‘g‘ri qiymat.
+  static const strictConcentrationContext =
+      'FE033_STRICT_CONCENTRATION_CONTEXT';
+
+  /// Retraksiya/almashtirilgan manbaga tayangan claim joriy (publishable)
+  /// deb e’lon qilingan yoki manba holati izchil emas.
+  static const sourceLifecycle = 'FE034_SOURCE_LIFECYCLE';
+  static const conflictInvalid = 'FE035_EVIDENCE_CONFLICT_INVALID';
+  static const metaboliteRelationInvalid = 'FE036_METABOLITE_RELATION_INVALID';
+
+  /// PHASE 7 graf qirrasi kuzatiladigan asossiz (claim/qoida/standart).
+  static const untraceableEdge = 'FE037_GRAPH_EDGE_WITHOUT_PROVENANCE';
+  static const standardInvalid = 'FE038_STANDARD_RECORD_INVALID';
+
+  /// Reviewer harakati: ruxsat yo‘q, soxta reviewer, eski versiya, izohsiz.
+  static const reviewActionInvalid = 'FE039_REVIEW_ACTION_INVALID';
+
+  /// DOI/PMID/formula/qisqartma tarjima qilingan yoki tarjima holati yo‘q.
+  static const termTranslationInvalid = 'FE040_TERM_TRANSLATION_INVALID';
+  static const specimenInvalid = 'FE041_SPECIMEN_RECORD_INVALID';
 }
 
 /// Test ma’lumot ID’lari shu prefiks bilan boshlanadi — ko‘zga tashlanishi
@@ -261,6 +285,7 @@ class ContentValidator {
     );
     _checkKnowledge(issues, bundle, sourcesById, resolver, isProduction);
     _checkEvidenceGraph(issues, bundle, isProduction);
+    _checkProvenance(issues, bundle, citationsByClaim);
 
     return ValidationReport(List.unmodifiable(issues));
   }
@@ -801,6 +826,10 @@ class ContentValidator {
       for (final x in b.emergingIssues) x.id,
       for (final x in b.research) x.id,
       for (final x in b.images) x.id,
+      // PHASE 7 tugunlari.
+      for (final x in b.specimens) x.id,
+      for (final x in b.standards) x.id,
+      for (final x in b.jurisdictionalRules) x.id,
     };
     for (final l in b.links) {
       for (final id in [l.fromId, l.toId]) {
@@ -853,6 +882,291 @@ class ContentValidator {
           c.claimId,
           'Reported concentration needs specimen, context and not_a_threshold.',
         );
+      }
+    }
+  }
+
+  /// PHASE 7 qoidalari (FE033–FE041).
+  void _checkProvenance(
+    List<ValidationIssue> issues,
+    ContentBundle b,
+    Map<String, List<String>> citationsByClaim,
+  ) {
+    void err(String code, String id, String msg) =>
+        issues.add(ValidationIssue(code, IssueSeverity.error, id, msg));
+
+    final claimsById = {for (final c in b.claims) c.claimId: c};
+    final sourceIds = {for (final s in b.sources) s.sourceId};
+    final prov = {for (final p in b.sourceProvenance) p.sourceId: p};
+    final specimenIds = {for (final s in b.specimens) s.id};
+
+    // FE033 — qat’iy konsentratsiya konteksti.
+    for (final c in b.claims) {
+      if (c.field != 'reported_concentration') continue;
+      final ctx = c.value[StrictConcentrationContext.key];
+      if (ctx is! Map) {
+        err(
+          RuleCodes.strictConcentrationContext,
+          c.claimId,
+          'Missing ${StrictConcentrationContext.key}.',
+        );
+        continue;
+      }
+      final missing = [
+        for (final k in StrictConcentrationContext.requiredKeys)
+          if (!ctx.containsKey(k) || ctx[k] == null) k,
+      ];
+      if (missing.isNotEmpty) {
+        err(
+          RuleCodes.strictConcentrationContext,
+          c.claimId,
+          'Missing keys: ${missing.join(', ')}.',
+        );
+      }
+      if (!StrictConcentrationContext.samplingValues.contains(
+            ctx['sampling'],
+          ) ||
+          !StrictConcentrationContext.subjectValues.contains(
+            ctx['subject_state'],
+          ) ||
+          !StrictConcentrationContext.reportingValues.contains(
+            ctx['reporting'],
+          )) {
+        err(
+          RuleCodes.strictConcentrationContext,
+          c.claimId,
+          'sampling/subject_state/reporting has an unknown value.',
+        );
+      }
+      final specimens = ctx['specimen'];
+      if (specimens is! List ||
+          specimens.isEmpty ||
+          (specimenIds.isNotEmpty && !specimens.every(specimenIds.contains))) {
+        err(
+          RuleCodes.strictConcentrationContext,
+          c.claimId,
+          'specimen must list known specimen IDs.',
+        );
+      }
+    }
+
+    // FE034 — manba hayot sikli.
+    for (final p in b.sourceProvenance) {
+      if (!sourceIds.contains(p.sourceId)) {
+        err(RuleCodes.sourceLifecycle, p.sourceId, 'Unknown source.');
+      }
+      if (p.lifecycle == SourceLifecycle.superseded &&
+          (p.supersededBy == null || !sourceIds.contains(p.supersededBy))) {
+        err(
+          RuleCodes.sourceLifecycle,
+          p.sourceId,
+          'Superseded source must name an existing successor.',
+        );
+      }
+      if (p.lifecycle != SourceLifecycle.current &&
+          (p.lifecycleBasis ?? '').isEmpty) {
+        err(
+          RuleCodes.sourceLifecycle,
+          p.sourceId,
+          'Non-current lifecycle needs a recorded basis.',
+        );
+      }
+    }
+    for (final c in b.claims) {
+      final verdict = ClaimLifecycleResolver.resolve(
+        status: c.declaredStatus,
+        sources: [
+          for (final id in citationsByClaim[c.claimId] ?? const <String>[])
+            prov[id] ?? SourceProvenance(sourceId: id),
+        ],
+      );
+      if (c.declaredStatus.isPublishable &&
+          (verdict.lifecycle == ClaimLifecycle.retracted ||
+              verdict.lifecycle == ClaimLifecycle.superseded)) {
+        err(
+          RuleCodes.sourceLifecycle,
+          c.claimId,
+          'Claim relies on ${verdict.reason}: cannot be shown as current.',
+        );
+      }
+    }
+
+    // FE035 — ziddiyatlar.
+    final conflictIds = <String>{};
+    for (final k in b.conflicts) {
+      if (!conflictIds.add(k.id)) {
+        err(RuleCodes.conflictInvalid, k.id, 'Duplicate conflict id.');
+      }
+      final unknown = k.claimIds.where((id) => !claimsById.containsKey(id));
+      if (unknown.isNotEmpty) {
+        err(RuleCodes.conflictInvalid, k.id, 'Unknown claims: $unknown.');
+      }
+      if (k.claimIds.toSet().length < k.kind.minClaims) {
+        err(
+          RuleCodes.conflictInvalid,
+          k.id,
+          '${k.kind.code} needs ${k.kind.minClaims} distinct claims.',
+        );
+      }
+      if (k.note.trim().isEmpty || k.question.trim().isEmpty) {
+        err(RuleCodes.conflictInvalid, k.id, 'Question and note required.');
+      }
+      if (k.state != EvidenceConflictState.open &&
+          !b.reviewActions.any((a) => a.subjectId == k.id)) {
+        err(
+          RuleCodes.conflictInvalid,
+          k.id,
+          'Only a reviewer action can resolve a conflict.',
+        );
+      }
+    }
+
+    // FE036 — metabolit munosabatlari.
+    for (final r in b.metaboliteRelations) {
+      final basis = claimsById[r.basisClaimId];
+      final entityOk =
+          basis != null &&
+          (basis.entityId == r.parentId || basis.entityId == r.metaboliteId);
+      final idsOk =
+          b.knownEntityIds.isEmpty ||
+          (b.knownEntityIds.contains(r.parentId) &&
+              (r.metaboliteId == null ||
+                  b.knownEntityIds.contains(r.metaboliteId)));
+      final specimensOk =
+          specimenIds.isEmpty || r.specimens.every(specimenIds.contains);
+      if (!entityOk || !idsOk || !specimensOk) {
+        err(
+          RuleCodes.metaboliteRelationInvalid,
+          r.id,
+          'Basis claim must belong to parent or metabolite; ids and '
+          'specimens must be known.',
+        );
+      }
+      if (basis != null && r.kind != MetaboliteRelationKind.metabolite) {
+        final text = '${basis.value['excerpt'] ?? ''}'.toLowerCase();
+        final word = switch (r.kind) {
+          MetaboliteRelationKind.activeMetabolite => 'active',
+          MetaboliteRelationKind.inactiveMetabolite => 'inactive',
+          MetaboliteRelationKind.marker => 'marker',
+          MetaboliteRelationKind.artifact => 'artifact',
+          MetaboliteRelationKind.metabolite => '',
+        };
+        if (!text.contains(word)) {
+          err(
+            RuleCodes.metaboliteRelationInvalid,
+            r.id,
+            'Role "${r.kind.code}" is not stated in the basis excerpt.',
+          );
+        }
+      }
+    }
+
+    // FE037 — PHASE 7 graf qirralari kuzatiladigan asosga ega.
+    final ruleIds = {for (final r in b.jurisdictionalRules) r.id};
+    final standardIds = {for (final s in b.standards) s.id};
+    final relationIds = {for (final r in b.metaboliteRelations) r.id};
+    final known = <String>{
+      ...b.knownEntityIds,
+      ...specimenIds,
+      ...standardIds,
+      ...ruleIds,
+      for (final x in b.topics) x.id,
+      for (final x in b.recipes) x.reagentId,
+      for (final x in b.screeningTests) x.id,
+      for (final x in b.methods) x.id,
+      for (final x in b.research) x.id,
+    };
+    for (final l in b.links) {
+      if (!l.relation.requiresTraceableBasis) continue;
+      final id = '${l.fromId}->${l.toId}';
+      final traceable =
+          claimsById.containsKey(l.basis) ||
+          ruleIds.contains(l.basis) ||
+          standardIds.contains(l.basis) ||
+          relationIds.contains(l.basis);
+      if (!traceable) {
+        err(RuleCodes.untraceableEdge, id, 'Basis ${l.basis} not traceable.');
+      }
+      if (!known.contains(l.fromId) || !known.contains(l.toId)) {
+        err(RuleCodes.untraceableEdge, id, 'Unknown endpoint.');
+      }
+    }
+
+    // FE038 — standartlar: faqat metadata; litsenziyali matn yo‘q.
+    for (final s in b.standards) {
+      if (s.status == StandardStatus.superseded &&
+          (s.supersededBy == null || !standardIds.contains(s.supersededBy))) {
+        err(
+          RuleCodes.standardInvalid,
+          s.id,
+          'Superseded standard must name an existing successor.',
+        );
+      }
+      if (s.verifiedFrom.isEmpty || !s.verifiedFrom.startsWith('https://')) {
+        err(RuleCodes.standardInvalid, s.id, 'verified_from must be https.');
+      }
+      if (s.sha256 != null && s.reuse == ReuseStatus.licenseRequired) {
+        err(
+          RuleCodes.standardInvalid,
+          s.id,
+          'Licensed standards are not archived in the app.',
+        );
+      }
+    }
+
+    // FE039 — reviewer harakatlari.
+    final reviewers = {for (final r in b.reviewers) r.reviewerId: r};
+    final authors = {for (final a in b.authorships) a.claimId: a.authorId};
+    for (final a in b.reviewActions) {
+      final claim = claimsById[a.subjectId];
+      final isConflict = conflictIds.contains(a.subjectId);
+      if (claim == null && !isConflict) {
+        err(RuleCodes.reviewActionInvalid, a.id, 'Unknown subject.');
+        continue;
+      }
+      final check = ReviewWorkflow.check(
+        action: a,
+        currentVersion: claim?.version ?? a.subjectVersion,
+        subjectDomain: claim?.domain ?? a.domain,
+        reviewers: reviewers,
+        authorId: authors[a.subjectId],
+      );
+      if (!check.ok) {
+        err(RuleCodes.reviewActionInvalid, a.id, check.reason);
+      }
+    }
+
+    // FE040 — termin tarjimalari.
+    for (final t in b.termTranslations) {
+      final changed = t.localized.values.any((v) => v != t.original);
+      if (!t.kind.translatable && changed) {
+        err(
+          RuleCodes.termTranslationInvalid,
+          t.id,
+          '${t.kind.code} must not be translated.',
+        );
+      }
+      if (!t.localized.keys.every(t.status.containsKey)) {
+        err(
+          RuleCodes.termTranslationInvalid,
+          t.id,
+          'Every localized value needs a translation status.',
+        );
+      }
+    }
+
+    // FE041 — namunalar.
+    final seen = <String>{};
+    for (final s in b.specimens) {
+      if (!seen.add(s.id) ||
+          (s.names['en'] ?? '').isEmpty ||
+          !const {
+            'fluid',
+            'tissue',
+            'keratinous',
+            'content',
+          }.contains(s.category)) {
+        err(RuleCodes.specimenInvalid, s.id, 'Invalid specimen record.');
       }
     }
   }

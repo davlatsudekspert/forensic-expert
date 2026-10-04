@@ -1,0 +1,76 @@
+{
+  "packet_id": "P-C-TRAMADOL-METABOLISM_NOTE-P5",
+  "subject_id": "C-TRAMADOL-METABOLISM_NOTE-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "tramadol",
+  "entity_names": {
+    "en": "Tramadol",
+    "ru": "Трамадол",
+    "uz": "Tramadol"
+  },
+  "field": "metabolism_note",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "Metabolization primarily occurs in the liver, catalyzed by the cytochrome P450 (CYP) enzymes CYP2D6 and CYP3A4-CYP2B6, producing the active metabolites O-desmethyltramadol (M1) and N-desmethyl-tramadol (M2), respectively.",
+    "location": "INTRO",
+    "proposed_value": {
+      "section": "INTRO"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC12300021",
+      "title": "Pharmacogenomics and Pharmacometabolomics in Precision Tramadol Prescribing for Enhanced Pain Management: Evidence from QBB and EMR Data",
+      "type": "journal_article",
+      "doi": "10.3390/ph18070971",
+      "pmid": "40732260",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12300021/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "INTRO"
+    }
+  ],
+  "why_it_matters": "Metabolic pathway statements support interpretation of parent/metabolite findings.",
+  "conflicts": [
+    {
+      "conflict_id": "CF-TRAMADOL-M2-ACTIVITY",
+      "kind": "inconsistent_characterisation",
+      "question": "Is N-desmethyltramadol (M2) described as an active metabolite?",
+      "note": "One source names only O-desmethyltramadol as the active metabolite and M2 simply as 'the metabolite M2'; another describes both M1 and M2 as 'active metabolites'."
+    }
+  ],
+  "has_conflict": true,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Tramadol",
+      "ru": "Трамадол",
+      "uz": "Tramadol"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

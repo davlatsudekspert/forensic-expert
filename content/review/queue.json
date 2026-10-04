@@ -4448,7 +4448,28 @@
     "urine"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood",
+     "serum-plasma",
+     "urine"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -4541,7 +4562,26 @@
     "blood"
    ],
    "context": "case report / series (see source)",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -4700,7 +4740,27 @@
     "blood"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "postmortem",
+    "subject_state": "deceased",
+    "population": "morphine deaths (study cohort; see source)",
+    "study_size": "not_stated",
+    "case_type": "deaths with morphine findings",
+    "co_intoxicants": "stratified: none / alcohol / benzodiazepines / alcohol + benzodiazepines",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "median per group: 0.30 / 0.40 / 0.53 / 0.80 μg/mL",
+    "reporting": "primary",
+    "limitations": [
+     "Analyte reported as free morphine.",
+     "Group medians only; ranges and group sizes are not in the excerpt."
+    ],
+    "curation": "pilot_manual"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -4749,7 +4809,26 @@
     "blood"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -4864,7 +4943,27 @@
     "vitreous humour"
    ],
    "context": "case report / series (see source)",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "vitreous"
+    ],
+    "sampling": "postmortem",
+    "subject_state": "deceased",
+    "population": "heroin-related fatalities, Jeddah 2008–2018; 61–70-year age group",
+    "study_size": "not_stated",
+    "case_type": "heroin-related fatalities",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "median 21 ng/mL (BNaF); median 52 ng/mL (vitreous humor)",
+    "reporting": "primary",
+    "limitations": [
+     "Second matrix is given as 'BNaF'; the abbreviation is not expanded in the excerpt.",
+     "Values refer to one age group only."
+    ],
+    "curation": "pilot_manual"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -5002,7 +5101,26 @@
     "blood"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -5116,8 +5234,29 @@
    "specimen": [
     "blood"
    ],
-   "context": "clinical intoxication",
-   "not_a_threshold": true
+   "context": "postmortem / fatal cases",
+   "not_a_threshold": true,
+   "context_label_correction": "P5 label 'clinical intoxication' replaced: excerpt and title describe post-mortem deaths.",
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "postmortem",
+    "subject_state": "deceased",
+    "population": "adult methadone-related deaths (compared with children)",
+    "study_size": "not_stated",
+    "case_type": "methadone-related deaths",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "mean 503 ng/mL (adults)",
+    "reporting": "primary",
+    "limitations": [
+     "The 400–1000 ng/mL range quoted alongside refers to living patients in methadone maintenance treatment, not to this cohort.",
+     "Post-mortem values overlap living-patient values (see EVIDENCE CONFLICT)."
+    ],
+    "curation": "pilot_manual"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -5188,7 +5327,26 @@
     "serum"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "serum-plasma"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -5260,7 +5418,27 @@
     "plasma"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "serum-plasma"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "single previously reported case",
+    "study_size": "1",
+    "case_type": "tramadol poisoning with hypoglycaemia and cardiac arrest (fatal outcome)",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "single value 5.2 mg/L (plasma)",
+    "reporting": "secondary_citation",
+    "limitations": [
+     "Value is cited from an earlier report, not measured by the citing authors.",
+     "Whether the plasma sample was taken before or after death is not stated in the excerpt."
+    ],
+    "curation": "pilot_manual"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -5375,7 +5553,27 @@
     "blood"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "postmortem",
+    "subject_state": "deceased",
+    "population": "deaths from natural causes with an incidental fentanyl finding",
+    "study_size": "12",
+    "case_type": "natural deaths; fentanyl considered incidental",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "range 2.7–33 ng/mL; mean 12 ng/mL",
+    "reporting": "secondary_citation",
+    "limitations": [
+     "Literature values summarised in a case report / literature review.",
+     "Partially overlaps values in fentanyl-attributed deaths (see EVIDENCE CONFLICT)."
+    ],
+    "curation": "pilot_manual"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -5424,7 +5622,26 @@
     "blood"
    ],
    "context": "drivers (DUID)",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -5473,7 +5690,26 @@
     "blood"
    ],
    "context": "case report / series (see source)",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -5523,7 +5759,27 @@
     "urine"
    ],
    "context": "case report / series (see source)",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood",
+     "urine"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -5573,7 +5829,26 @@
     "blood"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -5777,7 +6052,26 @@
     "blood"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -5848,7 +6142,26 @@
     "blood"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -5942,7 +6255,26 @@
     "blood"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "postmortem",
+    "subject_state": "deceased",
+    "population": "deaths reported to the National Programme on Substance Abuse Deaths (2000–2019)",
+    "study_size": "5339",
+    "case_type": "stratified: cardiac-related deaths / acute intoxication / chronic or binge use",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "mean ≈900 / ≈19,100 / ≈6,200 ng/mL",
+    "reporting": "secondary_citation",
+    "limitations": [
+     "Approximate means quoted in the introduction of another paper."
+    ],
+    "curation": "pilot_manual"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -5991,7 +6323,26 @@
     "blood"
    ],
    "context": "drivers (DUID)",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "antemortem",
+    "subject_state": "living",
+    "population": "motor vehicle drivers in Brittany, France, with at least one positive test",
+    "study_size": "10996",
+    "case_type": "drivers tested for alcohol/drugs",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "median 173.3 ng/mL",
+    "reporting": "primary",
+    "limitations": [
+     "Median across all positive drivers; not limited to cocaine-only cases."
+    ],
+    "curation": "pilot_manual"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -6107,7 +6458,28 @@
     "gastric contents"
    ],
    "context": "case report / series (see source)",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "urine",
+     "gastric"
+    ],
+    "sampling": "postmortem",
+    "subject_state": "deceased",
+    "population": "two fatal cases after oral ingestion",
+    "study_size": "2",
+    "case_type": "fatal oral amphetamine ingestion (case reports)",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "highest values: urine 2600 μg/mL (case 1); stomach content 14,000 μg/g (case 2)",
+    "reporting": "primary",
+    "limitations": [
+     "Highest values only; different units (μg/mL vs μg/g).",
+     "Two cases — not generalisable."
+    ],
+    "curation": "pilot_manual"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -6156,7 +6528,26 @@
     "blood"
    ],
    "context": "case report / series (see source)",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "postmortem",
+    "subject_state": "deceased",
+    "population": "nation-wide 7-year post-mortem study (see source)",
+    "study_size": "not_stated",
+    "case_type": "methamphetamine-positive post-mortem cases",
+    "co_intoxicants": "compared: methamphetamine only vs multiple substances",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "mean 2.68 (SD 13.7) vs 1.62 (SD 7.59) µg/mL; P = 0.255 (not significant)",
+    "reporting": "primary",
+    "limitations": [
+     "SD exceeds the mean — strongly skewed distribution."
+    ],
+    "curation": "pilot_manual"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -6228,7 +6619,26 @@
     "blood"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "postmortem",
+    "subject_state": "deceased",
+    "population": "MDMA-positive coronial cases, New Zealand",
+    "study_size": "73 quantified of 131",
+    "case_type": "coronial cases",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "mean 0.88 mg/L; range 0.01–9.30 mg/L (peripheral blood)",
+    "reporting": "primary",
+    "limitations": [
+     "Coronial cases include deaths not caused by MDMA; cause of death is not in the excerpt."
+    ],
+    "curation": "pilot_manual"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -6344,7 +6754,26 @@
     "blood"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -6394,7 +6823,27 @@
     "urine"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood",
+     "urine"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -6465,7 +6914,26 @@
     "blood"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -6558,7 +7026,27 @@
     "plasma"
    ],
    "context": "clinical intoxication",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "serum-plasma"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "paediatric cannabis intoxication cases, France",
+    "study_size": "26",
+    "case_type": "paediatric cannabis intoxication",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "mean THC 29 ng/mL; 11-OH-THC 21 ng/mL; THC-COOH 255 ng/mL (plasma)",
+    "reporting": "secondary_citation",
+    "limitations": [
+     "Cited from another study.",
+     "Time since exposure not stated in the excerpt."
+    ],
+    "curation": "pilot_manual"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -6674,7 +7162,27 @@
     "kidney"
    ],
    "context": "case report / series (see source)",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "liver",
+     "kidney"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "case study reports (see source)",
+    "study_size": "not_stated",
+    "case_type": "cannabis-related case reports",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "range 8.0–3894 ng/g (liver); 3–1774 ng/mL (kidney, as written)",
+    "reporting": "secondary_citation",
+    "limitations": [
+     "Kidney tissue values are written in ng/mL in the source — reviewer to check units."
+    ],
+    "curation": "pilot_manual"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -6767,7 +7275,26 @@
     "blood"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -6970,7 +7497,26 @@
     "blood"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -7151,7 +7697,27 @@
     "blood"
    ],
    "context": "case report / series (see source)",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "antemortem",
+    "subject_state": "not_stated",
+    "population": "two alprazolam toxicity cases",
+    "study_size": "2",
+    "case_type": "alprazolam toxicity",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "32.8 and 13.0 ng/mL",
+    "reporting": "secondary_citation",
+    "limitations": [
+     "Cited from other authors.",
+     "Outcome of the two cases is not stated in the excerpt."
+    ],
+    "curation": "pilot_manual"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -7442,7 +8008,26 @@
     "serum"
    ],
    "context": "clinical intoxication",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "serum-plasma"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -7535,7 +8120,26 @@
     "liver"
    ],
    "context": "case report / series (see source)",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "liver"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -7584,7 +8188,26 @@
     "blood"
    ],
    "context": "drivers (DUID)",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -7656,7 +8279,26 @@
     "blood"
    ],
    "context": "case report / series (see source)",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -7683,7 +8325,26 @@
     "blood"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -7711,7 +8372,26 @@
     "blood"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -7783,7 +8463,27 @@
     "gastric contents"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "serum-plasma",
+     "gastric"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -7942,7 +8642,26 @@
     "brain"
    ],
    "context": "case report / series (see source)",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "brain"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -8013,7 +8732,26 @@
     "brain"
    ],
    "context": "case report / series (see source)",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "brain"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -8151,7 +8889,26 @@
     "blood"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -8442,7 +9199,26 @@
     "blood"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -8558,7 +9334,27 @@
     "plasma"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood",
+     "serum-plasma"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -8783,7 +9579,26 @@
     "serum"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "serum-plasma"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -8854,7 +9669,26 @@
     "serum"
    ],
    "context": "clinical intoxication",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "serum-plasma"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -8925,7 +9759,26 @@
     "blood"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "postmortem",
+    "subject_state": "deceased",
+    "population": "drug-related deaths, Australia, 2000–2020",
+    "study_size": "not_stated",
+    "case_type": "drug-related deaths",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "mean 16.3 mg/L",
+    "reporting": "secondary_citation",
+    "limitations": [
+     "National data quoted for comparison, not measured in the citing study."
+    ],
+    "curation": "pilot_manual"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -9041,7 +9894,26 @@
     "blood"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -9091,7 +9963,27 @@
     "CSF"
    ],
    "context": "case report / series (see source)",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "serum-plasma",
+     "csf"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -9140,7 +10032,26 @@
     "liver"
    ],
    "context": "case report / series (see source)",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "liver"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -9211,7 +10122,26 @@
     "plasma"
    ],
    "context": "clinical intoxication",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "serum-plasma"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -9282,7 +10212,26 @@
     "serum"
    ],
    "context": "case report / series (see source)",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "serum-plasma"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -9331,7 +10280,26 @@
     "serum"
    ],
    "context": "clinical intoxication",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "serum-plasma"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -9798,7 +10766,26 @@
     "blood"
    ],
    "context": "postmortem / fatal cases",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -9891,7 +10878,26 @@
     "serum"
    ],
    "context": "clinical intoxication",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "serum-plasma"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -9963,7 +10969,27 @@
     "kidney"
    ],
    "context": "clinical intoxication",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "liver",
+     "kidney"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -10012,7 +11038,26 @@
     "blood"
    ],
    "context": "clinical intoxication",
-   "not_a_threshold": true
+   "not_a_threshold": true,
+   "context_strict": {
+    "specimen": [
+     "blood"
+    ],
+    "sampling": "not_stated",
+    "subject_state": "not_stated",
+    "population": "not_stated",
+    "study_size": "not_stated",
+    "case_type": "not_stated",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "not_stated",
+    "reporting": "not_assessed",
+    "limitations": [
+     "Context not yet curated (PHASE 7 pilot covers 17 substances)."
+    ],
+    "curation": "auto_minimal"
+   }
   },
   "status": "NEEDS_REVIEW"
  },
@@ -11513,6 +12558,182 @@
   "status": "NEEDS_REVIEW"
  },
  {
+  "kind": "claim",
+  "id": "C-FM-RIGOR-MORTIS-DEFINITION-P7",
+  "entity": "fm-rigor-mortis",
+  "field": "definition",
+  "domain": "fm",
+  "role": "medicine_histology",
+  "required_reviews": 2,
+  "source_id": "SRC-PMC11328696",
+  "source_title": "Paleoradiological and scientific investigations of the screaming woman mummy from the area beneath Senmut’s (1479–1458 BC) Theban tomb (TT71)",
+  "source_type": "journal_article",
+  "doi": "10.3389/fmed.2024.1406225",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11328696/",
+  "locator": "DISCUSS",
+  "license": "openReuse",
+  "evidence_level": "B",
+  "extracted_evidence": "Rigor mortis is the stiffening of muscles and joints after death, which begins with the face and lasts for several hours.",
+  "proposed_value": {
+   "section": "DISCUSS"
+  },
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "claim",
+  "id": "C-FM-ALGOR-MORTIS-LIMITATION-P7",
+  "entity": "fm-algor-mortis",
+  "field": "limitation",
+  "domain": "fm",
+  "role": "medicine_histology",
+  "required_reviews": 2,
+  "source_id": "SRC-PMC12346081",
+  "source_title": "Current Understanding and Future Research Direction for Estimating the Postmortem Interval: A Systematic Review",
+  "source_type": "journal_article",
+  "doi": "10.3390/diagnostics15151954",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12346081/",
+  "locator": "DISCUSS",
+  "license": "openReuse",
+  "evidence_level": "B",
+  "extracted_evidence": "Algor mortis is affected by a range of external and intrinsic variables, including ambient temperature, clothing, body mass, and humidity.",
+  "proposed_value": {
+   "section": "DISCUSS"
+  },
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "claim",
+  "id": "C-SPEC-ORAL-FLUID-USE-P7",
+  "entity": "oral-fluid",
+  "field": "use",
+  "domain": "tox",
+  "role": "scientific",
+  "required_reviews": 2,
+  "source_id": "SRC-PMC12655309",
+  "source_title": "A Novel and Validated GC-MS/MS Method for the Detection of Four Opioids and Seven Fentanoids in Oral Fluid for Forensic Applications",
+  "source_type": "journal_article",
+  "doi": "10.3390/molecules30224478",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12655309/",
+  "locator": "ABSTRACT",
+  "license": "openReuse",
+  "evidence_level": "B",
+  "extracted_evidence": "Oral fluid (OF) has emerged as a useful alternative to blood in forensic toxicology, offering a non-invasive and easily accessible matrix for the identification of a recent drug intake.",
+  "proposed_value": {
+   "section": "ABSTRACT"
+  },
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "claim",
+  "id": "C-SPEC-HAIR-WINDOW-P7",
+  "entity": "hair",
+  "field": "detection_window",
+  "domain": "tox",
+  "role": "scientific",
+  "required_reviews": 2,
+  "source_id": "SRC-PMC12586478",
+  "source_title": "The multifaceted role of hair as a biospecimen: recent advances in precision medicine and forensic science",
+  "source_type": "journal_article",
+  "doi": "10.1038/s12276-025-01548-4",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12586478/",
+  "locator": "ABSTRACT",
+  "license": "openReuse",
+  "evidence_level": "B",
+  "extracted_evidence": "Hair analysis can also reveal exposure to toxins and stress levels by measuring substances stored in the hair over months.",
+  "proposed_value": {
+   "section": "ABSTRACT"
+  },
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "claim",
+  "id": "C-SPEC-VITREOUS-USE-P7",
+  "entity": "vitreous",
+  "field": "use",
+  "domain": "tox",
+  "role": "scientific",
+  "required_reviews": 2,
+  "source_id": "SRC-PMC7355602",
+  "source_title": "Ethanol Determination in Post-Mortem Samples: Correlation between Blood and Vitreous Humor Concentration",
+  "source_type": "journal_article",
+  "doi": "10.3390/molecules25122724",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7355602/",
+  "locator": "INTRO",
+  "license": "openReuse",
+  "evidence_level": "B",
+  "extracted_evidence": "Vitreous humor (VH) is one of the biological specimens widely used in forensic toxicology, mostly when the body is severely damaged or affected by putrefaction.",
+  "proposed_value": {
+   "section": "INTRO"
+  },
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "claim",
+  "id": "C-SPEC-BILE-USE-P7",
+  "entity": "bile",
+  "field": "use",
+  "domain": "tox",
+  "role": "scientific",
+  "required_reviews": 2,
+  "source_id": "SRC-PMC11011420",
+  "source_title": "Applicability of a Chemiluminescence Immunoassay to Screen Postmortem Bile Specimens and Its Agreement with Confirmation Analysis",
+  "source_type": "journal_article",
+  "doi": "10.3390/ijms25073825",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11011420/",
+  "locator": "ABSTRACT",
+  "license": "openReuse",
+  "evidence_level": "B",
+  "extracted_evidence": "Bile has emerged as an alternative matrix for toxicological investigation of drugs in suspected forensic cases of overdose in adults and intoxications in children.",
+  "proposed_value": {
+   "section": "ABSTRACT"
+  },
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "claim",
+  "id": "C-SPEC-URINE-LIMITATION-P7",
+  "entity": "urine",
+  "field": "limitation",
+  "domain": "tox",
+  "role": "scientific",
+  "required_reviews": 2,
+  "source_id": "SRC-PMC8444253",
+  "source_title": "Illicit substances identified in the urine of 11.170 suspected drug users in North Tunisia",
+  "source_type": "journal_article",
+  "doi": "10.11604/pamj.2021.38.20.26781",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8444253/",
+  "locator": "DISCUSS",
+  "license": "openReuse",
+  "evidence_level": "B",
+  "extracted_evidence": "The main limitations of this study were firstly, the short detection window of drugs in urine samples; it would be suitable to use an alternative biological matrix (such as hair samples) to avoid false negative results.",
+  "proposed_value": {
+   "section": "DISCUSS"
+  },
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "claim",
+  "id": "C-SPEC-BLOOD-PMR-P7",
+  "entity": "blood",
+  "field": "limitation",
+  "domain": "tox",
+  "role": "scientific",
+  "required_reviews": 2,
+  "source_id": "SRC-PMC11790690",
+  "source_title": "Postmortem redistribution of drugs: a literature review",
+  "source_type": "journal_article",
+  "doi": "10.1007/s12024-023-00709-z",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11790690/",
+  "locator": "ABSTRACT",
+  "license": "openReuse",
+  "evidence_level": "B",
+  "extracted_evidence": "However, it is threatened by a significant phenomenon called postmortem redistribution (PMR), which refers to the alterations in drug levels occurring after death.",
+  "proposed_value": {
+   "section": "ABSTRACT"
+  },
+  "status": "NEEDS_REVIEW"
+ },
+ {
   "kind": "legal_rule",
   "id": "R-INT-MORPHINE-YELLOW",
   "entity": "morphine",
@@ -12951,6 +14172,690 @@
    ]
   },
   "extracted_evidence": "PB 004 77-26-9 BUTALBITAL 5-allyl-5-isobutylbarbituric acid",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-GB-MORPHINE-CONTROL",
+  "entity": "morphine",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-GB-MDA-1971-SCH2",
+  "proposed_value": {
+   "schedule": "Class A",
+   "list_entry": "Morphine",
+   "entry_text": "Morphine",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-GB-HEROIN-CONTROL",
+  "entity": "heroin",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-GB-MDA-1971-SCH2",
+  "proposed_value": {
+   "schedule": "Class A",
+   "list_entry": "Diamorphine",
+   "entry_text": "Diamorphine",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-GB-FENTANYL-CONTROL",
+  "entity": "fentanyl",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-GB-MDA-1971-SCH2",
+  "proposed_value": {
+   "schedule": "Class A",
+   "list_entry": "Fentanyl",
+   "entry_text": "Fentanyl",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-GB-METHADONE-CONTROL",
+  "entity": "methadone",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-GB-MDA-1971-SCH2",
+  "proposed_value": {
+   "schedule": "Class A",
+   "list_entry": "Methadone",
+   "entry_text": "Methadone",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-GB-TRAMADOL-CONTROL",
+  "entity": "tramadol",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-GB-MDA-1971-SCH2",
+  "proposed_value": {
+   "schedule": "Class C",
+   "list_entry": "Tramadol",
+   "entry_text": "Tramadol",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-GB-COCAINE-CONTROL",
+  "entity": "cocaine",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-GB-MDA-1971-SCH2",
+  "proposed_value": {
+   "schedule": "Class A",
+   "list_entry": "Cocaine",
+   "entry_text": "Cocaine",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-GB-AMPHETAMINE-CONTROL",
+  "entity": "amphetamine",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-GB-MDA-1971-SCH2",
+  "proposed_value": {
+   "schedule": "Class B",
+   "list_entry": "Amphetamine",
+   "entry_text": "Amphetamine",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-GB-METHAMPHETAMINE-CONTROL",
+  "entity": "methamphetamine",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-GB-MDA-1971-SCH2",
+  "proposed_value": {
+   "schedule": "Class A",
+   "list_entry": "Methylamphetamine",
+   "entry_text": "Methylamphetamine",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-GB-DIAZEPAM-CONTROL",
+  "entity": "diazepam",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-GB-MDA-1971-SCH2",
+  "proposed_value": {
+   "schedule": "Class C",
+   "list_entry": "Diazepam",
+   "entry_text": "Diazepam",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-GB-ALPRAZOLAM-CONTROL",
+  "entity": "alprazolam",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-GB-MDA-1971-SCH2",
+  "proposed_value": {
+   "schedule": "Class C",
+   "list_entry": "Alprazolam",
+   "entry_text": "Alprazolam",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-GB-PREGABALIN-CONTROL",
+  "entity": "pregabalin",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-GB-MDA-1971-SCH2",
+  "proposed_value": {
+   "schedule": "Class C",
+   "list_entry": "Pregabalin",
+   "entry_text": "Pregabalin ((S)-3-(aminomethyl)-5-methylhexanoic acid)",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-GB-ISOTONITAZENE-CONTROL",
+  "entity": "isotonitazene",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-GB-MDA-1971-SCH2",
+  "proposed_value": {
+   "schedule": "Class A",
+   "list_entry": "Isotonitazene",
+   "entry_text": "Isotonitazene",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-US-HEROIN-CONTROL",
+  "entity": "heroin",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-US-21CFR1308",
+  "proposed_value": {
+   "schedule": "Schedule I",
+   "list_entry": "Heroin",
+   "entry_text": "Heroin",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-US-MDMA-CONTROL",
+  "entity": "mdma",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-US-21CFR1308",
+  "proposed_value": {
+   "schedule": "Schedule I",
+   "list_entry": "3,4-Methylenedioxymethamphetamine",
+   "entry_text": "3,4-methylenedioxymethamphetamine (MDMA)",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-US-THC-CONTROL",
+  "entity": "thc",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-US-21CFR1308",
+  "proposed_value": {
+   "schedule": "Schedule I",
+   "list_entry": "Tetrahydrocannabinols",
+   "entry_text": "Tetrahydrocannabinols",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-US-ISOTONITAZENE-CONTROL",
+  "entity": "isotonitazene",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-US-21CFR1308",
+  "proposed_value": {
+   "schedule": "Schedule I",
+   "list_entry": "Isotonitazene",
+   "entry_text": "Isotonitazene ( N,N -diethyl-2-(2-(4-isopropoxybenzyl)-5-nitro-1 H -benzimidazol-1-yl)ethan-1-amine)",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-US-MORPHINE-CONTROL",
+  "entity": "morphine",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-US-21CFR1308",
+  "proposed_value": {
+   "schedule": "Schedule II",
+   "list_entry": "Morphine",
+   "entry_text": "Morphine",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-US-FENTANYL-CONTROL",
+  "entity": "fentanyl",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-US-21CFR1308",
+  "proposed_value": {
+   "schedule": "Schedule II",
+   "list_entry": "Fentanyl",
+   "entry_text": "Fentanyl",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-US-METHADONE-CONTROL",
+  "entity": "methadone",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-US-21CFR1308",
+  "proposed_value": {
+   "schedule": "Schedule II",
+   "list_entry": "Methadone",
+   "entry_text": "Methadone",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-US-COCAINE-CONTROL",
+  "entity": "cocaine",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-US-21CFR1308",
+  "proposed_value": {
+   "schedule": "Schedule II",
+   "list_entry": "Coca leaves",
+   "entry_text": "Coca leaves (9040) and any salt, compound, derivative or preparation of coca leaves (including cocaine (9041) and ecgonine (9180) and their salts, isomers, derivatives and salts of isomers and derivatives), and any salt, compound, derivative, or preparation thereof which is chemically equivalent or identical with any of these substances, except that the substances shall not include:",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-US-AMPHETAMINE-CONTROL",
+  "entity": "amphetamine",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-US-21CFR1308",
+  "proposed_value": {
+   "schedule": "Schedule II",
+   "list_entry": "Amphetamine",
+   "entry_text": "Amphetamine, its salts, optical isomers, and salts of its optical isomers",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-US-METHAMPHETAMINE-CONTROL",
+  "entity": "methamphetamine",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-US-21CFR1308",
+  "proposed_value": {
+   "schedule": "Schedule II",
+   "list_entry": "Methamphetamine",
+   "entry_text": "Methamphetamine, its salts, isomers, and salts of its isomers",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-US-TRAMADOL-CONTROL",
+  "entity": "tramadol",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-US-21CFR1308",
+  "proposed_value": {
+   "schedule": "Schedule IV",
+   "list_entry": "Tramadol",
+   "entry_text": "2-[(dimethylamino)methyl]-1-(3-methoxyphenyl)cyclohexanol, its salts, optical and geometric isomers and salts of these isomers (including tramadol)",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-US-DIAZEPAM-CONTROL",
+  "entity": "diazepam",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-US-21CFR1308",
+  "proposed_value": {
+   "schedule": "Schedule IV",
+   "list_entry": "Diazepam",
+   "entry_text": "Diazepam",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-US-ALPRAZOLAM-CONTROL",
+  "entity": "alprazolam",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-US-21CFR1308",
+  "proposed_value": {
+   "schedule": "Schedule IV",
+   "list_entry": "Alprazolam",
+   "entry_text": "Alprazolam",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-US-PREGABALIN-CONTROL",
+  "entity": "pregabalin",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-US-21CFR1308",
+  "proposed_value": {
+   "schedule": "Schedule V",
+   "list_entry": "Pregabalin",
+   "entry_text": "Pregabalin [(S)-3-(aminomethyl)-5-methylhexanoic acid]",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-DE-HEROIN-CONTROL",
+  "entity": "heroin",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-DE-BTMG-ANL",
+  "proposed_value": {
+   "schedule": "Anlage I",
+   "list_entry": "Heroin",
+   "entry_text": "Heroin (Diacetylmorphin, Diamorphin) – ausgenommen Diamorphin zu den in den Anlagen II und III bezeichneten Zwecken –",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-DE-MDMA-CONTROL",
+  "entity": "mdma",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-DE-BTMG-ANL",
+  "proposed_value": {
+   "schedule": "Anlage I",
+   "list_entry": "Methylendioxymetamfetamin",
+   "entry_text": "Methylendioxymetamfetamin (MDMA)",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-DE-THC-CONTROL",
+  "entity": "thc",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-DE-BTMG-ANL",
+  "proposed_value": {
+   "schedule": "Anlage I",
+   "list_entry": "Tetrahydrocannabinole",
+   "entry_text": "Tetrahydrocannabinole, folgende Isomeren und ihre stereochemischen Varianten:",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-DE-METHAMPHETAMINE-CONTROL",
+  "entity": "methamphetamine",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-DE-BTMG-ANL",
+  "proposed_value": {
+   "schedule": "Anlage II",
+   "list_entry": "Metamfetamin",
+   "entry_text": "Metamfetamin",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-DE-ISOTONITAZENE-CONTROL",
+  "entity": "isotonitazene",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-DE-BTMG-ANL",
+  "proposed_value": {
+   "schedule": "Anlage II",
+   "list_entry": "Isotonitazen",
+   "entry_text": "Isotonitazen (Iso)",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-DE-MORPHINE-CONTROL",
+  "entity": "morphine",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-DE-BTMG-ANL",
+  "proposed_value": {
+   "schedule": "Anlage III",
+   "list_entry": "Morphin",
+   "entry_text": "Morphin",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-DE-FENTANYL-CONTROL",
+  "entity": "fentanyl",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-DE-BTMG-ANL",
+  "proposed_value": {
+   "schedule": "Anlage III",
+   "list_entry": "Fentanyl",
+   "entry_text": "Fentanyl",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-DE-METHADONE-CONTROL",
+  "entity": "methadone",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-DE-BTMG-ANL",
+  "proposed_value": {
+   "schedule": "Anlage III",
+   "list_entry": "Methadon",
+   "entry_text": "Methadon",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-DE-COCAINE-CONTROL",
+  "entity": "cocaine",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-DE-BTMG-ANL",
+  "proposed_value": {
+   "schedule": "Anlage III",
+   "list_entry": "Cocain",
+   "entry_text": "Cocain (Benzoylecgoninmethylester)",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-DE-AMPHETAMINE-CONTROL",
+  "entity": "amphetamine",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-DE-BTMG-ANL",
+  "proposed_value": {
+   "schedule": "Anlage III",
+   "list_entry": "Amfetamin",
+   "entry_text": "Amfetamin",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-DE-DIAZEPAM-CONTROL",
+  "entity": "diazepam",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-DE-BTMG-ANL",
+  "proposed_value": {
+   "schedule": "Anlage III",
+   "list_entry": "Diazepam",
+   "entry_text": "Diazepam",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
+  "status": "NEEDS_REVIEW"
+ },
+ {
+  "kind": "legal_rule",
+  "id": "R-DE-ALPRAZOLAM-CONTROL",
+  "entity": "alprazolam",
+  "field": "control_status",
+  "domain": "legal",
+  "role": "legal",
+  "required_reviews": 1,
+  "source_id": "SRC-DE-BTMG-ANL",
+  "proposed_value": {
+   "schedule": "Anlage III",
+   "list_entry": "Alprazolam",
+   "entry_text": "Alprazolam",
+   "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+  },
+  "extracted_evidence": "",
   "status": "NEEDS_REVIEW"
  },
  {

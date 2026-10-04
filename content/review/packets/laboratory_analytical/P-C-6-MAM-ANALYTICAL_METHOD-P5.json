@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-6-MAM-ANALYTICAL_METHOD-P5",
+  "subject_id": "C-6-MAM-ANALYTICAL_METHOD-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "6-mam",
+  "entity_names": {
+    "en": "6-Monoacetylmorphine (6-MAM)",
+    "ru": "6-Моноацетилморфин (6-МАМ)",
+    "uz": "6-Monoatsetilmorfin (6-MAM)"
+  },
+  "field": "analytical_method",
+  "domain": "lab",
+  "required_role": "laboratory_analytical",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "In our previous studies, we analyzed 6-MAM, 6-AC, morphine, and codeine using two distinct LC-MS/MS systems, both of which were also employed in the current study.",
+    "location": "METHODS",
+    "proposed_value": {
+      "section": "METHODS"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC11945869",
+      "title": "A Quantitative and Comparative Study of Heroin-Related Metabolites in Different Postmortem Fluids and Tissues",
+      "type": "journal_article",
+      "doi": "10.3390/toxics13030229",
+      "pmid": "40137556",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11945869/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "METHODS"
+    }
+  ],
+  "why_it_matters": "Links the substance to an analytical technique; does not imply a validated method for any laboratory.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "6-Monoacetylmorphine (6-MAM)",
+      "ru": "6-Моноацетилморфин (6-МАМ)",
+      "uz": "6-Monoatsetilmorfin (6-MAM)"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

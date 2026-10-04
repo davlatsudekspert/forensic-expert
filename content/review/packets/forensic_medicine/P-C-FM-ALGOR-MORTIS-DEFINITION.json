@@ -1,0 +1,70 @@
+{
+  "packet_id": "P-C-FM-ALGOR-MORTIS-DEFINITION",
+  "subject_id": "C-FM-ALGOR-MORTIS-DEFINITION",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "fm-algor-mortis",
+  "entity_names": {
+    "en": "Algor mortis",
+    "ru": "Охлаждение трупа",
+    "uz": "Murdaning sovishi (algor mortis)"
+  },
+  "field": "definition",
+  "domain": "fm",
+  "required_role": "forensic_medicine",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "RETRACTED",
+  "claim": {
+    "excerpt": "Algor mortis is the progressive cooling of a body after death as it equilibrates with the ambient temperature.",
+    "location": "INTRO",
+    "proposed_value": {
+      "section": "INTRO"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC11580817",
+      "title": "Application of Metabolomics and Machine Learning for the Prediction of Postmortem Interval.",
+      "type": "journal_article",
+      "doi": "10.7759/cureus.74161",
+      "pmid": "39575351",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11580817/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "retracted",
+      "lifecycle_basis": "PubMed publication type 'Retracted Publication' (PMID 39575351). Retraction notice: Cureus 2025;17(1):r156, doi:10.7759/cureus.r156 (PMID 39791019).",
+      "locator": "INTRO"
+    }
+  ],
+  "why_it_matters": "Definitions are shown to students and practitioners as the canonical meaning of the term.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Algor mortis",
+      "ru": "Охлаждение трупа",
+      "uz": "Murdaning sovishi (algor mortis)"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "SOURCE RETRACTED: decide REJECT or replacement source; claim must not be shown as current.",
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

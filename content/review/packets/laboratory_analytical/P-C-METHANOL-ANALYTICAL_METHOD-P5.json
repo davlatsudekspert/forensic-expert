@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-METHANOL-ANALYTICAL_METHOD-P5",
+  "subject_id": "C-METHANOL-ANALYTICAL_METHOD-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "methanol",
+  "entity_names": {
+    "en": "Methanol",
+    "ru": "Метанол",
+    "uz": "Metanol"
+  },
+  "field": "analytical_method",
+  "domain": "lab",
+  "required_role": "laboratory_analytical",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "Thereafter, ethanol, methanol, and formate concentrations were measured by headspace GC/FID.",
+    "location": "ABSTRACT",
+    "proposed_value": {
+      "section": "ABSTRACT"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC5759182",
+      "title": "Simultaneous measurement of formic acid, methanol and ethanol in vitreous and blood samples of postmortem by headspace GC-FID",
+      "type": "journal_article",
+      "doi": "10.1186/s12995-017-0184-3",
+      "pmid": "29321805",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5759182/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "ABSTRACT"
+    }
+  ],
+  "why_it_matters": "Links the substance to an analytical technique; does not imply a validated method for any laboratory.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Methanol",
+      "ru": "Метанол",
+      "uz": "Metanol"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

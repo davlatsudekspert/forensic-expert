@@ -1,0 +1,55 @@
+{
+  "packet_id": "P-R-GB-TRAMADOL-CONTROL",
+  "subject_id": "R-GB-TRAMADOL-CONTROL",
+  "kind": "legal_rule",
+  "subject_version": 1,
+  "entity_id": "tramadol",
+  "entity_names": {
+    "en": "Tramadol",
+    "ru": "Трамадол",
+    "uz": "Tramadol"
+  },
+  "field": "control_status",
+  "domain": "legal",
+  "required_role": "legal_jurisdiction",
+  "required_reviews": 1,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "Tramadol",
+    "location": "Class C",
+    "proposed_value": {
+      "schedule": "Class C",
+      "list_entry": "Tramadol",
+      "entry_text": "Tramadol",
+      "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+    }
+  },
+  "sources": [
+    {
+      "instrument_id": "GB-MDA-1971-SCH2"
+    }
+  ],
+  "why_it_matters": "Legal status depends on jurisdiction and date; must be checked against the official text.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [
+    "NEEDS LEGAL REVIEW — not legal advice.",
+    "Exact list-entry match only; generic or class clauses are not evaluated."
+  ],
+  "concentration_context": null,
+  "translations": null,
+  "reviewer_checklist": [
+    "Entry exists in the official consolidated text on the review date.",
+    "Schedule/class is correct and in force.",
+    "Exceptions or preparations clauses do not change the status."
+  ],
+  "review_actions": []
+}

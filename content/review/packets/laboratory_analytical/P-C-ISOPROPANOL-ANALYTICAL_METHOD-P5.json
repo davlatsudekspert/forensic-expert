@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-ISOPROPANOL-ANALYTICAL_METHOD-P5",
+  "subject_id": "C-ISOPROPANOL-ANALYTICAL_METHOD-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "isopropanol",
+  "entity_names": {
+    "en": "Isopropanol",
+    "ru": "Изопропанол",
+    "uz": "Izopropanol"
+  },
+  "field": "analytical_method",
+  "domain": "lab",
+  "required_role": "laboratory_analytical",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "The aim of this study was to develop a method for the determination of methanol, acetone, ethanol, n-propanol, isopropanol, and n-butanol using headspace gas chromatography with dual columns and dual-flame ionization detectors.",
+    "location": "INTRO",
+    "proposed_value": {
+      "section": "INTRO"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC13214764",
+      "title": "Dual-Column HS-GC-FID/FID Method for In-Depth Analysis of Low-Molecular-Weight Volatile Alcohols in Postmortem Biological Material",
+      "type": "journal_article",
+      "doi": "10.3390/jox16030080",
+      "pmid": "42201075",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13214764/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "INTRO"
+    }
+  ],
+  "why_it_matters": "Links the substance to an analytical technique; does not imply a validated method for any laboratory.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Isopropanol",
+      "ru": "Изопропанол",
+      "uz": "Izopropanol"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-HEROIN-METABOLISM_NOTE-P5",
+  "subject_id": "C-HEROIN-METABOLISM_NOTE-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "heroin",
+  "entity_names": {
+    "en": "Heroin (diacetylmorphine)",
+    "ru": "Героин (диацетилморфин)",
+    "uz": "Geroin (diatsetilmorfin)"
+  },
+  "field": "metabolism_note",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "While codeine is not a direct metabolite of DIM, it may appear in postmortem samples following the use of “street heroin,” which often contains 6-acetylcodeine (6-AC), a synthetic byproduct that converts to codeine in vivo.",
+    "location": "INTRO",
+    "proposed_value": {
+      "section": "INTRO"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC12567947",
+      "title": "Analytical Methods for the Determination of Diamorphine (Heroin) in Biological Matrices: A Review",
+      "type": "journal_article",
+      "doi": "10.3390/toxics13100867",
+      "pmid": "41150567",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12567947/",
+      "tier": "B",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "INTRO"
+    }
+  ],
+  "why_it_matters": "Metabolic pathway statements support interpretation of parent/metabolite findings.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Heroin (diacetylmorphine)",
+      "ru": "Героин (диацетилморфин)",
+      "uz": "Geroin (diatsetilmorfin)"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

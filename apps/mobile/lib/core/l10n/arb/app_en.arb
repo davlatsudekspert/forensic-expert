@@ -2809,11 +2809,11 @@
   "@calcLodLimitationVerify": {
     "description": "Limitation."
   },
-  "calcLodReference": "ICH Q2(R1) Validation of Analytical Procedures: Text and Methodology — §6.3, §7.3",
+  "calcLodReference": "ICH Q2(R2) Validation of Analytical Procedures (2023) — §3.2.3.3",
   "@calcLodReference": {
     "description": "Reference."
   },
-  "calcLodReferenceNote": "Factors checked against the official ICH PDF text. ICH Q2(R2) supersedes R1 — a reviewer must confirm the current version.",
+  "calcLodReferenceNote": "Factors checked against the official ICH Q2(R2) PDF; they are unchanged from Q2(R1) (superseded). Q2(R2) also allows S/N and direct accuracy/precision confirmation. Laboratory reviewer confirmation pending (RG-25).",
   "@calcLodReferenceNote": {
     "description": "Reference note."
   },
@@ -3605,5 +3605,621 @@
         "type": "int"
       }
     }
+  },
+  "provWhereFrom": "Where does this come from?",
+  "@provWhereFrom": {
+    "description": "Button on a claim."
+  },
+  "provSheetTitle": "Provenance of this statement",
+  "@provSheetTitle": {
+    "description": "Sheet title."
+  },
+  "provStatement": "Statement",
+  "@provStatement": {
+    "description": "Section."
+  },
+  "provLocation": "Location in source: {loc}",
+  "@provLocation": {
+    "description": "Location in source.",
+    "placeholders": {
+      "loc": {
+        "type": "String"
+      }
+    }
+  },
+  "provSource": "Source",
+  "@provSource": {
+    "description": "Section."
+  },
+  "provTier": "Source tier {tier}",
+  "@provTier": {
+    "description": "Source tier.",
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "provTierA": "A — official text, standard or guideline",
+  "@provTierA": {
+    "description": "Tier A."
+  },
+  "provTierB": "B — peer-reviewed publication",
+  "@provTierB": {
+    "description": "Tier B."
+  },
+  "provTierC": "C — handbook, database or secondary source",
+  "@provTierC": {
+    "description": "Tier C."
+  },
+  "reuseOpen": "Open reuse",
+  "@reuseOpen": {
+    "description": "Reuse status."
+  },
+  "reuseCiteOnly": "Cite only — text not reproduced",
+  "@reuseCiteOnly": {
+    "description": "Reuse status."
+  },
+  "reuseNonCommercial": "Non-commercial licence",
+  "@reuseNonCommercial": {
+    "description": "Reuse status."
+  },
+  "reuseLicenseRequired": "LICENSE REQUIRED",
+  "@reuseLicenseRequired": {
+    "description": "Reuse status."
+  },
+  "reuseLookup": "Lookup only",
+  "@reuseLookup": {
+    "description": "Reuse status."
+  },
+  "reuseUnknown": "Licence not determined",
+  "@reuseUnknown": {
+    "description": "Reuse status."
+  },
+  "srcLifecycleCurrent": "Not retracted",
+  "@srcLifecycleCurrent": {
+    "description": "Source lifecycle."
+  },
+  "srcLifecycleRetracted": "RETRACTED",
+  "@srcLifecycleRetracted": {
+    "description": "Source lifecycle."
+  },
+  "srcLifecycleSuperseded": "SUPERSEDED",
+  "@srcLifecycleSuperseded": {
+    "description": "Source lifecycle."
+  },
+  "srcLifecycleWithdrawn": "WITHDRAWN",
+  "@srcLifecycleWithdrawn": {
+    "description": "Source lifecycle."
+  },
+  "provCheckedOn": "Retraction check: {date}",
+  "@provCheckedOn": {
+    "description": "Retraction check date.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "provArchiveHash": "Archived copy SHA-256",
+  "@provArchiveHash": {
+    "description": "Hash label."
+  },
+  "provSourceVersion": "Version: {v}",
+  "@provSourceVersion": {
+    "description": "Version.",
+    "placeholders": {
+      "v": {
+        "type": "String"
+      }
+    }
+  },
+  "provLifecycle": "Lifecycle",
+  "@provLifecycle": {
+    "description": "Claim lifecycle label."
+  },
+  "lcCurrent": "Current",
+  "@lcCurrent": {
+    "description": "Lifecycle."
+  },
+  "lcNeedsReview": "Needs review",
+  "@lcNeedsReview": {
+    "description": "Lifecycle."
+  },
+  "lcOutdated": "Outdated",
+  "@lcOutdated": {
+    "description": "Lifecycle."
+  },
+  "lcSuperseded": "Superseded",
+  "@lcSuperseded": {
+    "description": "Lifecycle."
+  },
+  "lcRetracted": "Retracted source",
+  "@lcRetracted": {
+    "description": "Lifecycle."
+  },
+  "lcRejected": "Rejected",
+  "@lcRejected": {
+    "description": "Lifecycle."
+  },
+  "provHumanVerified": "Verified by qualified human reviewers",
+  "@provHumanVerified": {
+    "description": "Verified marker."
+  },
+  "provNotVerified": "NOT VERIFIED — EXPERT CONFIRMATION REQUIRED",
+  "@provNotVerified": {
+    "description": "Unverified marker."
+  },
+  "provRequiredRole": "Required reviewer: {role}",
+  "@provRequiredRole": {
+    "description": "Reviewer role.",
+    "placeholders": {
+      "role": {
+        "type": "String"
+      }
+    }
+  },
+  "provReviewsRecorded": "Reviewer actions on this version: {n}",
+  "@provReviewsRecorded": {
+    "description": "Review count.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "provClaimId": "Record ID: {id} · v{v}",
+  "@provClaimId": {
+    "description": "Claim id.",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      },
+      "v": {
+        "type": "int"
+      }
+    }
+  },
+  "roleForensicToxicology": "Forensic toxicology",
+  "@roleForensicToxicology": {
+    "description": "Reviewer role."
+  },
+  "roleForensicMedicine": "Forensic medicine",
+  "@roleForensicMedicine": {
+    "description": "Reviewer role."
+  },
+  "roleLaboratory": "Laboratory / analytical",
+  "@roleLaboratory": {
+    "description": "Reviewer role."
+  },
+  "roleBiochemistry": "Forensic biochemistry",
+  "@roleBiochemistry": {
+    "description": "Reviewer role."
+  },
+  "roleLegal": "Legal / jurisdiction",
+  "@roleLegal": {
+    "description": "Reviewer role."
+  },
+  "roleTranslation": "Translation",
+  "@roleTranslation": {
+    "description": "Reviewer role."
+  },
+  "roleEditor": "Scientific editor / admin",
+  "@roleEditor": {
+    "description": "Reviewer role."
+  },
+  "bannerRetracted": "Source retracted — this statement is kept for transparency but is not current evidence.",
+  "@bannerRetracted": {
+    "description": "Retracted source banner."
+  },
+  "bannerSuperseded": "All sources of this statement have been superseded.",
+  "@bannerSuperseded": {
+    "description": "Superseded banner."
+  },
+  "bannerOutdated": "Flagged as outdated by a reviewer.",
+  "@bannerOutdated": {
+    "description": "Outdated banner."
+  },
+  "bannerConflict": "EVIDENCE CONFLICT — sources disagree or overlap. Tap to compare.",
+  "@bannerConflict": {
+    "description": "Conflict banner."
+  },
+  "conflictsTitle": "Evidence conflicts",
+  "@conflictsTitle": {
+    "description": "Screen title."
+  },
+  "conflictsIntro": "Conflicts are shown, not hidden. Only a qualified reviewer can resolve one; the app never picks a winner.",
+  "@conflictsIntro": {
+    "description": "Intro."
+  },
+  "conflictKindDirect": "Direct contradiction",
+  "@conflictKindDirect": {
+    "description": "Conflict kind."
+  },
+  "conflictKindContext": "Depends on context",
+  "@conflictKindContext": {
+    "description": "Conflict kind."
+  },
+  "conflictKindOverlap": "Values overlap between contexts",
+  "@conflictKindOverlap": {
+    "description": "Conflict kind."
+  },
+  "conflictKindCharacterisation": "Described differently",
+  "@conflictKindCharacterisation": {
+    "description": "Conflict kind."
+  },
+  "conflictQuestion": "Question",
+  "@conflictQuestion": {
+    "description": "Label."
+  },
+  "conflictStatements": "Statements involved",
+  "@conflictStatements": {
+    "description": "Section."
+  },
+  "conflictStateOpen": "Open — awaiting reviewer decision",
+  "@conflictStateOpen": {
+    "description": "State."
+  },
+  "conflictStateResolved": "Resolved by reviewer",
+  "@conflictStateResolved": {
+    "description": "State."
+  },
+  "conflictNoteLabel": "Summary of what the sources say",
+  "@conflictNoteLabel": {
+    "description": "Label."
+  },
+  "ctxTitle": "Context (only what the source states)",
+  "@ctxTitle": {
+    "description": "Section."
+  },
+  "ctxSpecimen": "Specimen",
+  "@ctxSpecimen": {
+    "description": "Context field."
+  },
+  "ctxSampling": "Sampling",
+  "@ctxSampling": {
+    "description": "Context field."
+  },
+  "ctxSubject": "Subject",
+  "@ctxSubject": {
+    "description": "Context field."
+  },
+  "ctxPopulation": "Population",
+  "@ctxPopulation": {
+    "description": "Context field."
+  },
+  "ctxStudySize": "Number of cases",
+  "@ctxStudySize": {
+    "description": "Context field."
+  },
+  "ctxCaseType": "Case type",
+  "@ctxCaseType": {
+    "description": "Context field."
+  },
+  "ctxCoIntoxicants": "Co-intoxicants",
+  "@ctxCoIntoxicants": {
+    "description": "Context field."
+  },
+  "ctxMethod": "Analytical method",
+  "@ctxMethod": {
+    "description": "Context field."
+  },
+  "ctxTiming": "Timing",
+  "@ctxTiming": {
+    "description": "Context field."
+  },
+  "ctxStatistic": "Reported values",
+  "@ctxStatistic": {
+    "description": "Context field."
+  },
+  "ctxReporting": "Data origin",
+  "@ctxReporting": {
+    "description": "Context field."
+  },
+  "ctxLimitations": "Limitations",
+  "@ctxLimitations": {
+    "description": "Context field."
+  },
+  "ctxNotStated": "not stated in the source",
+  "@ctxNotStated": {
+    "description": "Missing value."
+  },
+  "ctxPostmortem": "post-mortem",
+  "@ctxPostmortem": {
+    "description": "Value."
+  },
+  "ctxAntemortem": "ante-mortem",
+  "@ctxAntemortem": {
+    "description": "Value."
+  },
+  "ctxMixed": "mixed",
+  "@ctxMixed": {
+    "description": "Value."
+  },
+  "ctxDeceased": "deceased",
+  "@ctxDeceased": {
+    "description": "Value."
+  },
+  "ctxLiving": "living",
+  "@ctxLiving": {
+    "description": "Value."
+  },
+  "ctxPrimary": "Primary data of the cited study",
+  "@ctxPrimary": {
+    "description": "Value."
+  },
+  "ctxSecondary": "Quoted from another study",
+  "@ctxSecondary": {
+    "description": "Value."
+  },
+  "ctxNotAssessed": "Not yet assessed",
+  "@ctxNotAssessed": {
+    "description": "Value."
+  },
+  "ctxAutoMinimal": "Context for this record has not been curated yet; only the specimen is shown.",
+  "@ctxAutoMinimal": {
+    "description": "Note."
+  },
+  "metRelationsTitle": "Metabolites (sourced relations)",
+  "@metRelationsTitle": {
+    "description": "Section."
+  },
+  "metKindMetabolite": "Metabolite",
+  "@metKindMetabolite": {
+    "description": "Relation kind."
+  },
+  "metKindActive": "Active metabolite",
+  "@metKindActive": {
+    "description": "Relation kind."
+  },
+  "metKindInactive": "Inactive metabolite",
+  "@metKindInactive": {
+    "description": "Relation kind."
+  },
+  "metKindMarker": "Marker",
+  "@metKindMarker": {
+    "description": "Relation kind."
+  },
+  "metKindArtifact": "Artifact",
+  "@metKindArtifact": {
+    "description": "Relation kind."
+  },
+  "metRoleNote": "A role (active, marker…) is shown only when the cited text states it.",
+  "@metRoleNote": {
+    "description": "Note."
+  },
+  "metParentOf": "Parent substance: {name}",
+  "@metParentOf": {
+    "description": "Label.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "specimensTitle": "Specimens",
+  "@specimensTitle": {
+    "description": "Screen title."
+  },
+  "specimensIntro": "Specimen types with sourced statements and reported values. Reported values are never thresholds.",
+  "@specimensIntro": {
+    "description": "Intro."
+  },
+  "specimenAbout": "About this specimen",
+  "@specimenAbout": {
+    "description": "Section."
+  },
+  "specimenMeasured": "Reported values in this specimen",
+  "@specimenMeasured": {
+    "description": "Section."
+  },
+  "specimenNoClaims": "No sourced statements yet.",
+  "@specimenNoClaims": {
+    "description": "Empty."
+  },
+  "specimenCatFluid": "Body fluid",
+  "@specimenCatFluid": {
+    "description": "Category."
+  },
+  "specimenCatTissue": "Tissue",
+  "@specimenCatTissue": {
+    "description": "Category."
+  },
+  "specimenCatKeratinous": "Keratinous matrix",
+  "@specimenCatKeratinous": {
+    "description": "Category."
+  },
+  "specimenCatContent": "Contents",
+  "@specimenCatContent": {
+    "description": "Category."
+  },
+  "specimenRecords": "{n} records",
+  "@specimenRecords": {
+    "description": "Count.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "detailMeasuredIn": "Specimens with reported values",
+  "@detailMeasuredIn": {
+    "description": "Section."
+  },
+  "detailScreenedBy": "Screening tests (screening ≠ confirmation)",
+  "@detailScreenedBy": {
+    "description": "Section."
+  },
+  "chainTitle": "Knowledge chain",
+  "@chainTitle": {
+    "description": "Screen title."
+  },
+  "chainOpen": "Show knowledge chain",
+  "@chainOpen": {
+    "description": "Button."
+  },
+  "chainIntro": "Every link below has a recorded basis (a sourced statement, an official list entry or a catalogue record). Tap a link to see it.",
+  "@chainIntro": {
+    "description": "Intro."
+  },
+  "chainMetabolites": "Metabolites",
+  "@chainMetabolites": {
+    "description": "Step."
+  },
+  "chainSpecimens": "Specimens",
+  "@chainSpecimens": {
+    "description": "Step."
+  },
+  "chainScreening": "Screening",
+  "@chainScreening": {
+    "description": "Step."
+  },
+  "chainConfirmation": "Confirmatory methods",
+  "@chainConfirmation": {
+    "description": "Step."
+  },
+  "chainReagents": "Reagents",
+  "@chainReagents": {
+    "description": "Step."
+  },
+  "chainResearch": "Research",
+  "@chainResearch": {
+    "description": "Step."
+  },
+  "chainStandards": "Standards",
+  "@chainStandards": {
+    "description": "Step."
+  },
+  "chainLegal": "Legal status",
+  "@chainLegal": {
+    "description": "Step."
+  },
+  "chainNone": "No sourced link yet",
+  "@chainNone": {
+    "description": "Empty step."
+  },
+  "chainBasis": "Basis: {id}",
+  "@chainBasis": {
+    "description": "Basis label.",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "chainResearchCount": "{n} linked publications",
+  "@chainResearchCount": {
+    "description": "Count.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "stdCatalogue": "Standards catalogue (metadata only)",
+  "@stdCatalogue": {
+    "description": "Section."
+  },
+  "stdStatusCurrent": "Current",
+  "@stdStatusCurrent": {
+    "description": "Status."
+  },
+  "stdStatusProposed": "Proposed — not yet published",
+  "@stdStatusProposed": {
+    "description": "Status."
+  },
+  "stdStatusSuperseded": "Superseded by {id}",
+  "@stdStatusSuperseded": {
+    "description": "Status.",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "stdStatusWithdrawn": "Withdrawn",
+  "@stdStatusWithdrawn": {
+    "description": "Status."
+  },
+  "stdStatusUnknown": "Status not determined",
+  "@stdStatusUnknown": {
+    "description": "Status."
+  },
+  "stdVerifiedFrom": "Metadata checked on {date} at the publisher or registry",
+  "@stdVerifiedFrom": {
+    "description": "Verification.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "stdTextNotReproduced": "The text of the standard is not reproduced in the app.",
+  "@stdTextNotReproduced": {
+    "description": "Note."
+  },
+  "reviewTitle": "Scientific review status",
+  "@reviewTitle": {
+    "description": "Screen title."
+  },
+  "reviewHumanVerified": "Verified by humans",
+  "@reviewHumanVerified": {
+    "description": "Metric."
+  },
+  "reviewReviewed": "Reviewed",
+  "@reviewReviewed": {
+    "description": "Metric."
+  },
+  "reviewAwaiting": "Awaiting review",
+  "@reviewAwaiting": {
+    "description": "Metric."
+  },
+  "reviewRetracted": "Statements with a retracted source",
+  "@reviewRetracted": {
+    "description": "Metric."
+  },
+  "reviewActions": "Reviewer actions recorded",
+  "@reviewActions": {
+    "description": "Metric."
+  },
+  "reviewReviewers": "Registered reviewers",
+  "@reviewReviewers": {
+    "description": "Metric."
+  },
+  "reviewOpenConflicts": "Open evidence conflicts",
+  "@reviewOpenConflicts": {
+    "description": "Metric."
+  },
+  "reviewExplain": "A statement becomes VERIFIED only after two independent qualified reviewers in its specialty approve the current version. The app and its authors cannot mark anything verified themselves.",
+  "@reviewExplain": {
+    "description": "Explanation."
+  },
+  "reviewRolesTitle": "Reviewer roles and permissions",
+  "@reviewRolesTitle": {
+    "description": "Section."
+  },
+  "reviewRoleApprove": "Can approve or reject in its specialty",
+  "@reviewRoleApprove": {
+    "description": "Permission."
+  },
+  "reviewRoleFlagOnly": "Can flag conflicts, outdated content and request changes — cannot approve",
+  "@reviewRoleFlagOnly": {
+    "description": "Permission."
+  },
+  "reviewActionsList": "Possible actions",
+  "@reviewActionsList": {
+    "description": "Section."
+  },
+  "libraryConflicts": "Evidence conflicts",
+  "@libraryConflicts": {
+    "description": "Hub entry."
+  },
+  "libraryReview": "Review status",
+  "@libraryReview": {
+    "description": "Hub entry."
+  },
+  "methodPublishedNote": "Published scientific method — not a validated procedure for any particular laboratory.",
+  "@methodPublishedNote": {
+    "description": "Method note."
   }
 }

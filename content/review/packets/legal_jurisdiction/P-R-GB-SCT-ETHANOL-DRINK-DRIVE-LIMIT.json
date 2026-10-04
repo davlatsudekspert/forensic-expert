@@ -1,0 +1,66 @@
+{
+  "packet_id": "P-R-GB-SCT-ETHANOL-DRINK-DRIVE-LIMIT",
+  "subject_id": "R-GB-SCT-ETHANOL-DRINK-DRIVE-LIMIT",
+  "kind": "legal_rule",
+  "subject_version": 1,
+  "entity_id": "ethanol",
+  "entity_names": {
+    "en": "Ethanol",
+    "ru": "Этанол",
+    "uz": "Etanol"
+  },
+  "field": "legal_threshold",
+  "domain": "legal",
+  "required_role": "legal_jurisdiction",
+  "required_reviews": 1,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "For the purpose of the definition of “the prescribed limit” in section 11(2) of The Road Traffic Act 1988, the prescribed proportion in relation to driving or attempting to drive, or being in charge of a vehicle, in Scotland, is— a 22 microgrammes of alcohol in 100 millilitres of breath; b 50 milligrammes of alcohol in 100 millilitres of blood; or c 67 milligrammes of alcohol in 100 millilitres of urine.",
+    "location": "reg. 2",
+    "proposed_value": {
+      "limits": {
+        "breath": {
+          "value": 22,
+          "unit": "µg/100 mL"
+        },
+        "blood": {
+          "value": 50,
+          "unit": "mg/100 mL"
+        },
+        "urine": {
+          "value": 67,
+          "unit": "mg/100 mL"
+        }
+      },
+      "excerpt": "For the purpose of the definition of “the prescribed limit” in section 11(2) of The Road Traffic Act 1988, the prescribed proportion in relation to driving or attempting to drive, or being in charge of a vehicle, in Scotland, is— a 22 microgrammes of alcohol in 100 millilitres of breath; b 50 milligrammes of alcohol in 100 millilitres of blood; or c 67 milligrammes of alcohol in 100 millilitres of urine."
+    }
+  },
+  "sources": [
+    {
+      "instrument_id": "GB-SCT-SSI-2014-328"
+    }
+  ],
+  "why_it_matters": "Legal status depends on jurisdiction and date; must be checked against the official text.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [
+    "NEEDS LEGAL REVIEW — not legal advice.",
+    "Exact list-entry match only; generic or class clauses are not evaluated."
+  ],
+  "concentration_context": null,
+  "translations": null,
+  "reviewer_checklist": [
+    "Entry exists in the official consolidated text on the review date.",
+    "Schedule/class is correct and in force.",
+    "Exceptions or preparations clauses do not change the status."
+  ],
+  "review_actions": []
+}

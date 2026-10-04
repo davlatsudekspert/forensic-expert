@@ -1,0 +1,74 @@
+{
+  "packet_id": "P-C-COCAINE-METABOLITES",
+  "subject_id": "C-COCAINE-METABOLITES",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "cocaine",
+  "entity_names": {
+    "en": "Cocaine",
+    "ru": "Кокаин",
+    "uz": "Kokain"
+  },
+  "field": "metabolites",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "Cocaine yields two main metabolites: EME and BE, which may both undergo further hydrolysis into ecgonine (EC).",
+    "location": "2.5.3. Metabolism",
+    "proposed_value": {
+      "items": [
+        "EME",
+        "BE",
+        "ecgonine (EC)"
+      ],
+      "section": "2.5.3. Metabolism"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC9032145",
+      "title": "Cocaine: An Updated Overview on Chemistry, Detection, Biokinetics, and Pharmacotoxicological Aspects including Abuse Pattern",
+      "type": "journal_article",
+      "doi": "10.3390/toxins14040278",
+      "pmid": "35448887",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9032145/",
+      "tier": "B",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "2.5.3. Metabolism"
+    }
+  ],
+  "why_it_matters": "Metabolite identity drives which analyte is targeted and how a finding is interpreted.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Cocaine",
+      "ru": "Кокаин",
+      "uz": "Kokain"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

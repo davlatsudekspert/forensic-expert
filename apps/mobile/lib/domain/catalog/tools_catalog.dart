@@ -73,7 +73,7 @@ abstract final class ToolsCatalog {
     engineId: 'stats.linear_regression',
   );
 
-  /// ICH Q2(R1) 6.3 / 7.3 — manbali koeffitsientlar.
+  /// ICH Q2(R2) §3.2.3.3 — manbali koeffitsientlar (R1 6.3/7.3 bilan bir xil).
   static const lodLoq = ToolEntry(
     id: 'tool.lab.lod_loq',
     category: ToolCategory.laboratory,

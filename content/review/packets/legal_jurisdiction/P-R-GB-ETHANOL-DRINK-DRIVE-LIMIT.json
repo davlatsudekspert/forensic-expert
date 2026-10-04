@@ -1,0 +1,67 @@
+{
+  "packet_id": "P-R-GB-ETHANOL-DRINK-DRIVE-LIMIT",
+  "subject_id": "R-GB-ETHANOL-DRINK-DRIVE-LIMIT",
+  "kind": "legal_rule",
+  "subject_version": 1,
+  "entity_id": "ethanol",
+  "entity_names": {
+    "en": "Ethanol",
+    "ru": "Этанол",
+    "uz": "Etanol"
+  },
+  "field": "legal_threshold",
+  "domain": "legal",
+  "required_role": "legal_jurisdiction",
+  "required_reviews": 1,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "“the prescribed limit” means, as the case may require— 35 microgrammes of alcohol in 100 millilitres of breath, 80 milligrammes of alcohol in 100 millilitres of blood, or 107 milligrammes of alcohol in 100 millilitres of urine, or such other proportion as may be prescribed by regulations",
+    "location": "s. 11(2)",
+    "proposed_value": {
+      "limits": {
+        "breath": {
+          "value": 35,
+          "unit": "µg/100 mL"
+        },
+        "blood": {
+          "value": 80,
+          "unit": "mg/100 mL"
+        },
+        "urine": {
+          "value": 107,
+          "unit": "mg/100 mL"
+        }
+      },
+      "excerpt": "“the prescribed limit” means, as the case may require— 35 microgrammes of alcohol in 100 millilitres of breath, 80 milligrammes of alcohol in 100 millilitres of blood, or 107 milligrammes of alcohol in 100 millilitres of urine, or such other proportion as may be prescribed by regulations",
+      "extent": "E+W+S"
+    }
+  },
+  "sources": [
+    {
+      "instrument_id": "GB-RTA-1988-S11"
+    }
+  ],
+  "why_it_matters": "Legal status depends on jurisdiction and date; must be checked against the official text.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [
+    "NEEDS LEGAL REVIEW — not legal advice.",
+    "Exact list-entry match only; generic or class clauses are not evaluated."
+  ],
+  "concentration_context": null,
+  "translations": null,
+  "reviewer_checklist": [
+    "Entry exists in the official consolidated text on the review date.",
+    "Schedule/class is correct and in force.",
+    "Exceptions or preparations clauses do not change the status."
+  ],
+  "review_actions": []
+}

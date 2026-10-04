@@ -161,11 +161,32 @@ enum LinkRelation {
   research('research'),
 
   /// Mavzu ↔ mavzu (sud tibbiyoti ↔ gistologiya / biokimyo).
-  relatedTopic('related_topic');
+  relatedTopic('related_topic'),
+
+  // PHASE 7: provenance bilan bilim zanjirlari. Asos (basis) — claim, qoida
+  // yoki standart ID’si; `editorial:` asosi bu munosabatlarda taqiqlangan.
+
+  /// Ota modda → metabolit (MetaboliteRelation asosida).
+  hasMetabolite('has_metabolite'),
+
+  /// Modda/metabolit/mavzu → namuna: manbada shu namunada o‘lchangan.
+  measuredIn('measured_in'),
+
+  /// Modda → skrining testi (manbali claim).
+  screenedBy('screened_by'),
+
+  /// Standart → metod/kalkulyator (standart nomi va sohasi asosida).
+  standardFor('standard_for'),
+
+  /// Modda → yurisdiksion qoida (rasmiy ro‘yxat yozuvi).
+  legalStatus('legal_status');
 
   const LinkRelation(this.code);
 
   final String code;
+
+  /// Asosi tekshiriladigan (editorial bo‘lmagan) PHASE 7 munosabatlari.
+  bool get requiresTraceableBasis => index >= hasMetabolite.index;
 
   static LinkRelation fromCode(String c) => values.firstWhere(
     (k) => k.code == c,

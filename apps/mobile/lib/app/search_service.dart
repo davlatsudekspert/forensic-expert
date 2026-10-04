@@ -8,6 +8,7 @@ import '../core/l10n/generated/app_localizations.dart';
 import '../core/settings/app_settings.dart';
 import '../domain/catalog/tools_catalog.dart';
 import '../domain/evidence/evidence_models.dart';
+import '../domain/evidence/provenance_models.dart';
 import '../domain/knowledge/knowledge_models.dart';
 import '../domain/learn/learn_models.dart';
 import '../domain/library/library_models.dart';
@@ -53,8 +54,53 @@ class AppSearchService {
     KnowledgeRepository knowledge = const EmptyKnowledgeRepository(),
     Iterable<JurisdictionalInstrument> instruments = const [],
     Iterable<ResearchEntry> research = const [],
+    ProvenanceIndex? provenance,
   }) {
     final terms = <SearchTerm>[];
+    // PHASE 7: namunalar (EN/RU/UZ + manbadagi variantlar) va standartlar
+    // katalogi (belgilanishi va sarlavhasi).
+    for (final s in provenance?.specimens ?? const <SpecimenView>[]) {
+      for (final entry in s.names.values.entries) {
+        terms.add(
+          SearchTerm(
+            entityId: s.id,
+            category: SearchCategory.specimen,
+            term: entry.value,
+            kind: TermKind.localized,
+            lang: entry.key,
+          ),
+        );
+      }
+      for (final a in s.aliases) {
+        terms.add(
+          SearchTerm(
+            entityId: s.id,
+            category: SearchCategory.specimen,
+            term: a,
+            kind: TermKind.synonym,
+          ),
+        );
+      }
+    }
+    for (final st in provenance?.standards ?? const <StandardView>[]) {
+      terms
+        ..add(
+          SearchTerm(
+            entityId: st.id,
+            category: SearchCategory.standard,
+            term: st.designation,
+            kind: TermKind.canonical,
+          ),
+        )
+        ..add(
+          SearchTerm(
+            entityId: st.id,
+            category: SearchCategory.standard,
+            term: st.title,
+            kind: TermKind.synonym,
+          ),
+        );
+    }
     // PHASE 5 Research / Evidence Library — faqat sarlavha (metadata).
     for (final r in research) {
       terms.add(
@@ -196,7 +242,9 @@ class AppSearchService {
     SearchCategory.biochemistryTopic ||
     SearchCategory.emergingIssue => SearchGroup.topics,
     // `topic` — namunalar (specimens) va umumiy laboratoriya mavzulari.
-    SearchCategory.method || SearchCategory.topic => SearchGroup.methods,
+    SearchCategory.method ||
+    SearchCategory.topic ||
+    SearchCategory.specimen => SearchGroup.methods,
     SearchCategory.reagent || SearchCategory.solution => SearchGroup.reagents,
     SearchCategory.screeningTest => SearchGroup.screening,
     SearchCategory.calculator => SearchGroup.tools,
@@ -234,5 +282,6 @@ final searchServiceProvider = Provider<AppSearchService>(
     knowledge: ref.watch(knowledgeRepositoryProvider),
     instruments: ref.watch(jurisdictionResolverProvider).instruments,
     research: ref.watch(evidenceDataProvider).research,
+    provenance: ref.watch(provenanceIndexProvider),
   ),
 );

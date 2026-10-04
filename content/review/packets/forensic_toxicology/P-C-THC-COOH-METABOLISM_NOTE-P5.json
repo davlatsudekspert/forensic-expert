@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-THC-COOH-METABOLISM_NOTE-P5",
+  "subject_id": "C-THC-COOH-METABOLISM_NOTE-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "thc-cooh",
+  "entity_names": {
+    "en": "THC-COOH",
+    "ru": "ТГК-COOH",
+    "uz": "THC-COOH"
+  },
+  "field": "metabolism_note",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "However, the authors proved that also 11-nor-9-carboxy-Δ9-THC (THCCOOH), the main metabolite of THC that is generally ionized in negative mode, can be detected on spiked DUS.",
+    "location": "INTRO",
+    "proposed_value": {
+      "section": "INTRO"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC8434267",
+      "title": "Analysis of Cannabinoids and Metabolites in Dried Urine Spots (DUS)",
+      "type": "journal_article",
+      "doi": "10.3390/molecules26175334",
+      "pmid": "34500772",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8434267/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "INTRO"
+    }
+  ],
+  "why_it_matters": "Metabolic pathway statements support interpretation of parent/metabolite findings.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "THC-COOH",
+      "ru": "ТГК-COOH",
+      "uz": "THC-COOH"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

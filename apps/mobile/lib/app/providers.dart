@@ -18,6 +18,7 @@ import '../data/offline/offline_billing.dart';
 import '../domain/ai/ai_architecture.dart';
 import '../domain/ai/local_retrieval.dart';
 import '../domain/evidence/evidence_models.dart';
+import '../domain/evidence/provenance_models.dart';
 import '../domain/jurisdiction/jurisdiction_catalog.dart';
 import '../domain/knowledge/knowledge_models.dart';
 import '../domain/learn/learn_models.dart';
@@ -138,6 +139,14 @@ final contentProvenanceProvider = FutureProvider<ContentProvenance?>((
   final db = await ref.watch(contentStoreProvider).openActive();
   return db == null ? null : ContentProvenance.load(db);
 });
+
+/// PHASE 7 provenance qatlami (ziddiyatlar, namunalar, standartlar,
+/// metabolitlar, review holati). Paket yo‘q bo‘lsa — bo‘sh.
+final provenanceIndexProvider = Provider<ProvenanceIndex>(
+  (ref) =>
+      ref.watch(contentProvenanceProvider).value?.index ??
+      ProvenanceIndex.empty,
+);
 
 /// Bilim sohalari (mavzular, reagentlar, skrining, metodlar, yangi
 /// muammolar) — imzolangan paketdan.

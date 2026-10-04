@@ -2156,11 +2156,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get calcLodReference =>
-      'ICH Q2(R1) Validation of Analytical Procedures: Text and Methodology — §6.3, §7.3';
+      'ICH Q2(R2) Validation of Analytical Procedures (2023) — §3.2.3.3';
 
   @override
   String get calcLodReferenceNote =>
-      'Factors checked against the official ICH PDF text. ICH Q2(R2) supersedes R1 — a reviewer must confirm the current version.';
+      'Factors checked against the official ICH Q2(R2) PDF; they are unchanged from Q2(R1) (superseded). Q2(R2) also allows S/N and direct accuracy/precision confirmation. Laboratory reviewer confirmation pending (RG-25).';
 
   @override
   String get calcUseRegression => 'Use σ = s_y/x and S from this regression';
@@ -2776,4 +2776,453 @@ class AppLocalizationsEn extends AppLocalizations {
   String templateCoverage(int filled, int total) {
     return 'Sections with sourced data: $filled of $total';
   }
+
+  @override
+  String get provWhereFrom => 'Where does this come from?';
+
+  @override
+  String get provSheetTitle => 'Provenance of this statement';
+
+  @override
+  String get provStatement => 'Statement';
+
+  @override
+  String provLocation(String loc) {
+    return 'Location in source: $loc';
+  }
+
+  @override
+  String get provSource => 'Source';
+
+  @override
+  String provTier(String tier) {
+    return 'Source tier $tier';
+  }
+
+  @override
+  String get provTierA => 'A — official text, standard or guideline';
+
+  @override
+  String get provTierB => 'B — peer-reviewed publication';
+
+  @override
+  String get provTierC => 'C — handbook, database or secondary source';
+
+  @override
+  String get reuseOpen => 'Open reuse';
+
+  @override
+  String get reuseCiteOnly => 'Cite only — text not reproduced';
+
+  @override
+  String get reuseNonCommercial => 'Non-commercial licence';
+
+  @override
+  String get reuseLicenseRequired => 'LICENSE REQUIRED';
+
+  @override
+  String get reuseLookup => 'Lookup only';
+
+  @override
+  String get reuseUnknown => 'Licence not determined';
+
+  @override
+  String get srcLifecycleCurrent => 'Not retracted';
+
+  @override
+  String get srcLifecycleRetracted => 'RETRACTED';
+
+  @override
+  String get srcLifecycleSuperseded => 'SUPERSEDED';
+
+  @override
+  String get srcLifecycleWithdrawn => 'WITHDRAWN';
+
+  @override
+  String provCheckedOn(String date) {
+    return 'Retraction check: $date';
+  }
+
+  @override
+  String get provArchiveHash => 'Archived copy SHA-256';
+
+  @override
+  String provSourceVersion(String v) {
+    return 'Version: $v';
+  }
+
+  @override
+  String get provLifecycle => 'Lifecycle';
+
+  @override
+  String get lcCurrent => 'Current';
+
+  @override
+  String get lcNeedsReview => 'Needs review';
+
+  @override
+  String get lcOutdated => 'Outdated';
+
+  @override
+  String get lcSuperseded => 'Superseded';
+
+  @override
+  String get lcRetracted => 'Retracted source';
+
+  @override
+  String get lcRejected => 'Rejected';
+
+  @override
+  String get provHumanVerified => 'Verified by qualified human reviewers';
+
+  @override
+  String get provNotVerified => 'NOT VERIFIED — EXPERT CONFIRMATION REQUIRED';
+
+  @override
+  String provRequiredRole(String role) {
+    return 'Required reviewer: $role';
+  }
+
+  @override
+  String provReviewsRecorded(int n) {
+    return 'Reviewer actions on this version: $n';
+  }
+
+  @override
+  String provClaimId(String id, int v) {
+    return 'Record ID: $id · v$v';
+  }
+
+  @override
+  String get roleForensicToxicology => 'Forensic toxicology';
+
+  @override
+  String get roleForensicMedicine => 'Forensic medicine';
+
+  @override
+  String get roleLaboratory => 'Laboratory / analytical';
+
+  @override
+  String get roleBiochemistry => 'Forensic biochemistry';
+
+  @override
+  String get roleLegal => 'Legal / jurisdiction';
+
+  @override
+  String get roleTranslation => 'Translation';
+
+  @override
+  String get roleEditor => 'Scientific editor / admin';
+
+  @override
+  String get bannerRetracted =>
+      'Source retracted — this statement is kept for transparency but is not current evidence.';
+
+  @override
+  String get bannerSuperseded =>
+      'All sources of this statement have been superseded.';
+
+  @override
+  String get bannerOutdated => 'Flagged as outdated by a reviewer.';
+
+  @override
+  String get bannerConflict =>
+      'EVIDENCE CONFLICT — sources disagree or overlap. Tap to compare.';
+
+  @override
+  String get conflictsTitle => 'Evidence conflicts';
+
+  @override
+  String get conflictsIntro =>
+      'Conflicts are shown, not hidden. Only a qualified reviewer can resolve one; the app never picks a winner.';
+
+  @override
+  String get conflictKindDirect => 'Direct contradiction';
+
+  @override
+  String get conflictKindContext => 'Depends on context';
+
+  @override
+  String get conflictKindOverlap => 'Values overlap between contexts';
+
+  @override
+  String get conflictKindCharacterisation => 'Described differently';
+
+  @override
+  String get conflictQuestion => 'Question';
+
+  @override
+  String get conflictStatements => 'Statements involved';
+
+  @override
+  String get conflictStateOpen => 'Open — awaiting reviewer decision';
+
+  @override
+  String get conflictStateResolved => 'Resolved by reviewer';
+
+  @override
+  String get conflictNoteLabel => 'Summary of what the sources say';
+
+  @override
+  String get ctxTitle => 'Context (only what the source states)';
+
+  @override
+  String get ctxSpecimen => 'Specimen';
+
+  @override
+  String get ctxSampling => 'Sampling';
+
+  @override
+  String get ctxSubject => 'Subject';
+
+  @override
+  String get ctxPopulation => 'Population';
+
+  @override
+  String get ctxStudySize => 'Number of cases';
+
+  @override
+  String get ctxCaseType => 'Case type';
+
+  @override
+  String get ctxCoIntoxicants => 'Co-intoxicants';
+
+  @override
+  String get ctxMethod => 'Analytical method';
+
+  @override
+  String get ctxTiming => 'Timing';
+
+  @override
+  String get ctxStatistic => 'Reported values';
+
+  @override
+  String get ctxReporting => 'Data origin';
+
+  @override
+  String get ctxLimitations => 'Limitations';
+
+  @override
+  String get ctxNotStated => 'not stated in the source';
+
+  @override
+  String get ctxPostmortem => 'post-mortem';
+
+  @override
+  String get ctxAntemortem => 'ante-mortem';
+
+  @override
+  String get ctxMixed => 'mixed';
+
+  @override
+  String get ctxDeceased => 'deceased';
+
+  @override
+  String get ctxLiving => 'living';
+
+  @override
+  String get ctxPrimary => 'Primary data of the cited study';
+
+  @override
+  String get ctxSecondary => 'Quoted from another study';
+
+  @override
+  String get ctxNotAssessed => 'Not yet assessed';
+
+  @override
+  String get ctxAutoMinimal =>
+      'Context for this record has not been curated yet; only the specimen is shown.';
+
+  @override
+  String get metRelationsTitle => 'Metabolites (sourced relations)';
+
+  @override
+  String get metKindMetabolite => 'Metabolite';
+
+  @override
+  String get metKindActive => 'Active metabolite';
+
+  @override
+  String get metKindInactive => 'Inactive metabolite';
+
+  @override
+  String get metKindMarker => 'Marker';
+
+  @override
+  String get metKindArtifact => 'Artifact';
+
+  @override
+  String get metRoleNote =>
+      'A role (active, marker…) is shown only when the cited text states it.';
+
+  @override
+  String metParentOf(String name) {
+    return 'Parent substance: $name';
+  }
+
+  @override
+  String get specimensTitle => 'Specimens';
+
+  @override
+  String get specimensIntro =>
+      'Specimen types with sourced statements and reported values. Reported values are never thresholds.';
+
+  @override
+  String get specimenAbout => 'About this specimen';
+
+  @override
+  String get specimenMeasured => 'Reported values in this specimen';
+
+  @override
+  String get specimenNoClaims => 'No sourced statements yet.';
+
+  @override
+  String get specimenCatFluid => 'Body fluid';
+
+  @override
+  String get specimenCatTissue => 'Tissue';
+
+  @override
+  String get specimenCatKeratinous => 'Keratinous matrix';
+
+  @override
+  String get specimenCatContent => 'Contents';
+
+  @override
+  String specimenRecords(int n) {
+    return '$n records';
+  }
+
+  @override
+  String get detailMeasuredIn => 'Specimens with reported values';
+
+  @override
+  String get detailScreenedBy => 'Screening tests (screening ≠ confirmation)';
+
+  @override
+  String get chainTitle => 'Knowledge chain';
+
+  @override
+  String get chainOpen => 'Show knowledge chain';
+
+  @override
+  String get chainIntro =>
+      'Every link below has a recorded basis (a sourced statement, an official list entry or a catalogue record). Tap a link to see it.';
+
+  @override
+  String get chainMetabolites => 'Metabolites';
+
+  @override
+  String get chainSpecimens => 'Specimens';
+
+  @override
+  String get chainScreening => 'Screening';
+
+  @override
+  String get chainConfirmation => 'Confirmatory methods';
+
+  @override
+  String get chainReagents => 'Reagents';
+
+  @override
+  String get chainResearch => 'Research';
+
+  @override
+  String get chainStandards => 'Standards';
+
+  @override
+  String get chainLegal => 'Legal status';
+
+  @override
+  String get chainNone => 'No sourced link yet';
+
+  @override
+  String chainBasis(String id) {
+    return 'Basis: $id';
+  }
+
+  @override
+  String chainResearchCount(int n) {
+    return '$n linked publications';
+  }
+
+  @override
+  String get stdCatalogue => 'Standards catalogue (metadata only)';
+
+  @override
+  String get stdStatusCurrent => 'Current';
+
+  @override
+  String get stdStatusProposed => 'Proposed — not yet published';
+
+  @override
+  String stdStatusSuperseded(String id) {
+    return 'Superseded by $id';
+  }
+
+  @override
+  String get stdStatusWithdrawn => 'Withdrawn';
+
+  @override
+  String get stdStatusUnknown => 'Status not determined';
+
+  @override
+  String stdVerifiedFrom(String date) {
+    return 'Metadata checked on $date at the publisher or registry';
+  }
+
+  @override
+  String get stdTextNotReproduced =>
+      'The text of the standard is not reproduced in the app.';
+
+  @override
+  String get reviewTitle => 'Scientific review status';
+
+  @override
+  String get reviewHumanVerified => 'Verified by humans';
+
+  @override
+  String get reviewReviewed => 'Reviewed';
+
+  @override
+  String get reviewAwaiting => 'Awaiting review';
+
+  @override
+  String get reviewRetracted => 'Statements with a retracted source';
+
+  @override
+  String get reviewActions => 'Reviewer actions recorded';
+
+  @override
+  String get reviewReviewers => 'Registered reviewers';
+
+  @override
+  String get reviewOpenConflicts => 'Open evidence conflicts';
+
+  @override
+  String get reviewExplain =>
+      'A statement becomes VERIFIED only after two independent qualified reviewers in its specialty approve the current version. The app and its authors cannot mark anything verified themselves.';
+
+  @override
+  String get reviewRolesTitle => 'Reviewer roles and permissions';
+
+  @override
+  String get reviewRoleApprove => 'Can approve or reject in its specialty';
+
+  @override
+  String get reviewRoleFlagOnly =>
+      'Can flag conflicts, outdated content and request changes — cannot approve';
+
+  @override
+  String get reviewActionsList => 'Possible actions';
+
+  @override
+  String get libraryConflicts => 'Evidence conflicts';
+
+  @override
+  String get libraryReview => 'Review status';
+
+  @override
+  String get methodPublishedNote =>
+      'Published scientific method — not a validated procedure for any particular laboratory.';
 }

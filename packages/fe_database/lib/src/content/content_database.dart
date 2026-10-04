@@ -20,7 +20,11 @@ class ContentDatabase extends _$ContentDatabase {
   ///
   /// 3 — PHASE 4: knowledge_entities, entity_sources, authorities; DRAFT
   /// status; i18n reviewer domeni; hujjat holati va qoida qamrovi.
-  static const contentSchemaVersion = 5;
+  ///
+  /// 6 — PHASE 7: source_provenance, claim_lifecycle, evidence_conflicts,
+  /// review_actions, metabolite_relations, specimens, standards,
+  /// term_translations; yangi graf munosabatlari.
+  static const contentSchemaVersion = 6;
 
   @override
   int get schemaVersion => contentSchemaVersion;

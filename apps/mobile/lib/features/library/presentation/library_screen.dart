@@ -15,6 +15,7 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
 import '../../../domain/library/library_models.dart';
 import '../../evidence/evidence_strings.dart';
+import '../../evidence/presentation/provenance_screens.dart';
 import '../../legal/presentation/jurisdiction_screens.dart';
 import '../../placeholder/presentation/in_development_view.dart';
 import 'content_entry_sections.dart';
@@ -293,6 +294,7 @@ class LibraryScreen extends ConsumerWidget {
     final knowledge = ref.watch(knowledgeRepositoryProvider);
     final evidence = ref.watch(evidenceDataProvider);
     final resolver = ref.watch(jurisdictionResolverProvider);
+    final provenance = ref.watch(provenanceIndexProvider);
     int lib(LibrarySection s) => library.entries(s).length;
     int kn(KnowledgeKind k) => knowledge.byKind(k).length;
     // Standartlar ekrani bilan bir xil: ilmiy bo‘lmagan metodlar + rasmiy
@@ -304,7 +306,8 @@ class LibraryScreen extends ConsumerWidget {
                 m.method!.kind != MethodKind.scientificMethod)
               m,
         ].length +
-        resolver.instruments.length;
+        resolver.instruments.length +
+        provenance.standards.length;
 
     final science = <(String, IconData, String, int)>[
       (
@@ -335,7 +338,7 @@ class LibraryScreen extends ConsumerWidget {
         'specimens',
         Icons.water_drop_outlined,
         l.librarySpecimens,
-        lib(LibrarySection.specimens),
+        provenance.specimens.length,
       ),
       (
         'glossary',
@@ -364,11 +367,25 @@ class LibraryScreen extends ConsumerWidget {
         l.jurisdictionsTitle,
         resolver.instruments.length,
       ),
+      (
+        'conflicts',
+        Icons.compare_arrows,
+        l.libraryConflicts,
+        provenance.conflicts.length,
+      ),
+      (
+        'review',
+        Icons.fact_check_outlined,
+        l.libraryReview,
+        provenance.review.total,
+      ),
     ];
 
     String route(String id) => switch (id) {
       'substances' => Routes.librarySection(LibrarySection.substances.name),
-      'specimens' => Routes.librarySection(LibrarySection.specimens.name),
+      'specimens' => Routes.specimens,
+      'conflicts' => Routes.conflicts,
+      'review' => Routes.reviewStatus,
       'glossary' => Routes.librarySection(LibrarySection.glossary.name),
       'references' => Routes.librarySection(LibrarySection.references.name),
       'methods' => Routes.knowledge(KnowledgeKind.method.name),
@@ -467,6 +484,7 @@ class StandardsScreen extends ConsumerWidget {
           m,
     ];
     final instruments = resolver.instruments.toList();
+    final catalogue = ref.watch(provenanceIndexProvider).standards;
     Widget kindLine(DocumentKind k) => Text(
       '${l.documentKindLabel(k)} · ${l.bindingLabel(k.binding)}',
       style: t.labelSmall?.copyWith(color: c.textSecondary),
@@ -484,6 +502,11 @@ class StandardsScreen extends ConsumerWidget {
                   const SizedBox(height: FeSpace.sm),
                   FeBanner(icon: Icons.gavel_outlined, text: l.standardsIntro),
                   const SizedBox(height: FeSpace.sm),
+                  if (catalogue.isNotEmpty) ...[
+                    FeSectionHeader(l.stdCatalogue),
+                    for (final st in catalogue)
+                      StandardCatalogueTile(standard: st),
+                  ],
                   if (methods.isEmpty && instruments.isEmpty)
                     FeEmptyState(
                       icon: Icons.inventory_2_outlined,

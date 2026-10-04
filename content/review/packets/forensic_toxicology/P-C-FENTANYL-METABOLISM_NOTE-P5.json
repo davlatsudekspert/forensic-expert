@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-FENTANYL-METABOLISM_NOTE-P5",
+  "subject_id": "C-FENTANYL-METABOLISM_NOTE-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "fentanyl",
+  "entity_names": {
+    "en": "Fentanyl",
+    "ru": "Фентанил",
+    "uz": "Fentanil"
+  },
+  "field": "metabolism_note",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "Other biotransformations found included oxidation of the piperidine ethyl moiety and/or the phenethyl substructure, glucuronidation as well as amide hydrolysis to form metabolites identical to despropionyl fentanyl.",
+    "location": "ABSTRACT",
+    "proposed_value": {
+      "section": "ABSTRACT"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC6342890",
+      "title": "Correlations between metabolism and structural elements of the alicyclic fentanyl analogs cyclopropyl fentanyl, cyclobutyl fentanyl, cyclopentyl fentanyl, cyclohexyl fentanyl and 2,2,3,3-tetramethylcyclopropyl fentanyl studied by human hepatocytes and LC-QTOF-MS",
+      "type": "journal_article",
+      "doi": "10.1007/s00204-018-2330-9",
+      "pmid": "30361799",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6342890/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "ABSTRACT"
+    }
+  ],
+  "why_it_matters": "Metabolic pathway statements support interpretation of parent/metabolite findings.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Fentanyl",
+      "ru": "Фентанил",
+      "uz": "Fentanil"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

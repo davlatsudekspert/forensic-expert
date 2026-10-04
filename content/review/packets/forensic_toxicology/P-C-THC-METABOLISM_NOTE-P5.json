@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-THC-METABOLISM_NOTE-P5",
+  "subject_id": "C-THC-METABOLISM_NOTE-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "thc",
+  "entity_names": {
+    "en": "Δ9-Tetrahydrocannabinol (THC)",
+    "ru": "Δ9-Тетрагидроканнабинол (ТГК)",
+    "uz": "Δ9-Tetragidrokannabinol (TGK)"
+  },
+  "field": "metabolism_note",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "During phase I metabolism, it is metabolized to (−)-11-hydroxy-Δ-9-tetrahydrocannabinol ((−)-11-OH-Δ-9-THC), which is psychoactive, and to (−)-11-nor-9-carboxy-Δ-9-tetrahydrocannabinol ((−)-Δ-9-THC-COOH), which is psychoinactive.",
+    "location": "ABSTRACT",
+    "proposed_value": {
+      "section": "ABSTRACT"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC7578173",
+      "title": "Investigation of phase II metabolism of 11-hydroxy-Δ-9-tetrahydrocannabinol and metabolite verification by chemical synthesis of 11-hydroxy-Δ-9-tetrahydrocannabinol-glucuronide",
+      "type": "journal_article",
+      "doi": "10.1007/s00414-020-02387-w",
+      "pmid": "32808050",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7578173/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "ABSTRACT"
+    }
+  ],
+  "why_it_matters": "Metabolic pathway statements support interpretation of parent/metabolite findings.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Δ9-Tetrahydrocannabinol (THC)",
+      "ru": "Δ9-Тетрагидроканнабинол (ТГК)",
+      "uz": "Δ9-Tetragidrokannabinol (TGK)"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

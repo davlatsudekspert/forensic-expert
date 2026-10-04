@@ -90,8 +90,15 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
         context.go(Routes.tool(hit.entityId));
       case SearchGroup.learning:
         context.go(Routes.learn);
+      case SearchGroup.standardsLaws
+          when ref.read(provenanceIndexProvider).standard(hit.entityId) !=
+              null:
+        context.go(Routes.libraryStandards);
       case SearchGroup.standardsLaws:
         context.go(Routes.compare);
+      case SearchGroup.methods
+          when hit.category == SearchCategory.specimen:
+        context.go(Routes.specimen(hit.entityId));
       case SearchGroup.references
           when ref.read(evidenceDataProvider).researchById(hit.entityId) !=
               null:

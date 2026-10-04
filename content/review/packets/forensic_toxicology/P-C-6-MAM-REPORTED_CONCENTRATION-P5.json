@@ -1,0 +1,96 @@
+{
+  "packet_id": "P-C-6-MAM-REPORTED_CONCENTRATION-P5",
+  "subject_id": "C-6-MAM-REPORTED_CONCENTRATION-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "6-mam",
+  "entity_names": {
+    "en": "6-Monoacetylmorphine (6-MAM)",
+    "ru": "6-Моноацетилморфин (6-МАМ)",
+    "uz": "6-Monoatsetilmorfin (6-MAM)"
+  },
+  "field": "reported_concentration",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "6-MAM was not detected in 75% of the cases in the 10–20 year age group, whereas it was present in 40% in the 61–70 year age group and at concentrations (BNaF median, 21 ng/mL; vitreous humor median, 52 ng/mL).",
+    "location": "RESULTS",
+    "proposed_value": {
+      "section": "RESULTS",
+      "specimen": [
+        "vitreous humour"
+      ],
+      "context": "case report / series (see source)",
+      "not_a_threshold": true
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC10099738",
+      "title": "Heroin-Related Fatalities in Jeddah, Saudi Arabia, between 2008 and 2018",
+      "type": "journal_article",
+      "doi": "10.3390/toxics11030248",
+      "pmid": "36977013",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10099738/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "RESULTS"
+    }
+  ],
+  "why_it_matters": "Concentration values are often misread as thresholds; the reviewer must confirm specimen, population, statistic and that the value is reported in context only.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [
+    "Second matrix is given as 'BNaF'; the abbreviation is not expanded in the excerpt.",
+    "Values refer to one age group only."
+  ],
+  "concentration_context": {
+    "specimen": [
+      "vitreous"
+    ],
+    "sampling": "postmortem",
+    "subject_state": "deceased",
+    "population": "heroin-related fatalities, Jeddah 2008–2018; 61–70-year age group",
+    "study_size": "not_stated",
+    "case_type": "heroin-related fatalities",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "median 21 ng/mL (BNaF); median 52 ng/mL (vitreous humor)",
+    "reporting": "primary",
+    "limitations": [
+      "Second matrix is given as 'BNaF'; the abbreviation is not expanded in the excerpt.",
+      "Values refer to one age group only."
+    ],
+    "curation": "pilot_manual"
+  },
+  "translations": {
+    "entity_names": {
+      "en": "6-Monoacetylmorphine (6-MAM)",
+      "ru": "6-Моноацетилморфин (6-МАМ)",
+      "uz": "6-Monoatsetilmorfin (6-MAM)"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

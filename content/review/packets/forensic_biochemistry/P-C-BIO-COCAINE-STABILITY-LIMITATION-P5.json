@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-BIO-COCAINE-STABILITY-LIMITATION-P5",
+  "subject_id": "C-BIO-COCAINE-STABILITY-LIMITATION-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "bio-cocaine-stability",
+  "entity_names": {
+    "en": "Cocaine stability in specimens",
+    "ru": "Стабильность кокаина в образцах",
+    "uz": "Namunalarda kokain barqarorligi"
+  },
+  "field": "limitation",
+  "domain": "fm",
+  "required_role": "forensic_biochemistry",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "Huertas et al. demonstrated that while cocaine and its metabolites remain stable at −20 °C, they undergo significant degradation at 4 °C, with sodium fluoride preservative substantially retarding hydrolysis.",
+    "location": "DISCUSS",
+    "proposed_value": {
+      "section": "DISCUSS"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC13553925",
+      "title": "Diagnostic challenges in infant death associated with maternal cocaine abuse during pregnancy and lactation: a forensic case report and review of the literature",
+      "type": "journal_article",
+      "doi": "10.3389/fped.2026.1854801",
+      "pmid": "42718795",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13553925/",
+      "tier": "B",
+      "evidence_level": "A",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "DISCUSS"
+    }
+  ],
+  "why_it_matters": "Limitations prevent over-interpretation of a finding.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Cocaine stability in specimens",
+      "ru": "Стабильность кокаина в образцах",
+      "uz": "Namunalarda kokain barqarorligi"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

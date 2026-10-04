@@ -16,6 +16,7 @@ import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../core/widgets/fe_data_components.dart';
 import '../../../domain/library/library_models.dart';
+import '../../evidence/presentation/provenance_widgets.dart';
 import '../../evidence/presentation/research_screens.dart';
 import '../../evidence/presentation/scientific_image.dart';
 import '../../legal/presentation/legal_rule_card.dart';
@@ -71,12 +72,16 @@ class _ContentEntryBodyState extends ConsumerState<ContentEntryBody> {
       ('transformation_product', l.detailTransformationProduct),
     ];
     final presentFields = {for (final c in d.claims) c.field};
+    final hasSpecimens = ref
+        .watch(evidenceDataProvider)
+        .linksFrom(entry.id)
+        .any((x) => x.relation == LinkRelation.measuredIn);
     final emptySections = [
       (Icons.category_outlined, l.detailClass),
       if (!presentFields.contains('metabolites') &&
           !presentFields.contains('metabolism_note'))
         (Icons.account_tree_outlined, l.detailMetabolites),
-      (Icons.water_drop_outlined, l.detailSpecimens),
+      if (!hasSpecimens) (Icons.water_drop_outlined, l.detailSpecimens),
       if (!presentFields.contains('analytical_method'))
         (Icons.biotech_outlined, l.detailMethods),
       if (!presentFields.contains('reported_concentration'))
@@ -209,6 +214,7 @@ class _ContentEntryBodyState extends ConsumerState<ContentEntryBody> {
               ),
             ),
           ],
+          SubstanceProvenanceSections(entityId: entry.id),
           KeyedSubtree(
             key: _anchor('jurisdiction'),
             child: _ContentJurisdictionLayer(entry: entry),
@@ -249,21 +255,24 @@ class _ConcentrationClaim extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Wrap(
-            spacing: FeSpace.xs,
-            runSpacing: FeSpace.xxs,
-            crossAxisAlignment: WrapCrossAlignment.center,
-            children: [
-              Text(l.concentrationSpecimen, style: t.labelMedium),
-              for (final s in specimens)
-                StatusChip(
-                  icon: Icons.water_drop_outlined,
-                  label: s,
-                  color: c.textSecondary,
-                ),
-            ],
-          ),
-          if (context0 != null)
+          if (claim.strictContext == null)
+            Wrap(
+              spacing: FeSpace.xs,
+              runSpacing: FeSpace.xxs,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              children: [
+                Text(l.concentrationSpecimen, style: t.labelMedium),
+                for (final s in specimens)
+                  StatusChip(
+                    icon: Icons.water_drop_outlined,
+                    label: s,
+                    color: c.textSecondary,
+                  ),
+              ],
+            ),
+          if (claim.strictContext != null)
+            StrictContextTable(claim: claim)
+          else if (context0 != null)
             Text(
               l.concentrationContext(context0),
               style: t.bodySmall?.copyWith(color: c.textSecondary),
@@ -418,6 +427,7 @@ class ClaimCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+          ClaimLifecycleBanners(claim: claim),
           ClaimMeta(status: claim.status, level: claim.evidenceLevel),
           const SizedBox(height: FeSpace.xs),
           for (final (k, v) in identityRows)
@@ -490,6 +500,7 @@ class ClaimCard extends StatelessWidget {
               style: t.bodySmall?.copyWith(color: c.textSecondary),
             ),
           ],
+          ProvenanceButton(claim: claim),
         ],
       ),
     );

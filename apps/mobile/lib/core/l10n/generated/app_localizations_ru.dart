@@ -2157,11 +2157,11 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get calcLodReference =>
-      'ICH Q2(R1) Validation of Analytical Procedures: Text and Methodology — §6.3, §7.3';
+      'ICH Q2(R2) Validation of Analytical Procedures (2023) — §3.2.3.3';
 
   @override
   String get calcLodReferenceNote =>
-      'Коэффициенты сверены с официальным PDF ICH. ICH Q2(R2) заменяет R1 — актуальную версию должен подтвердить рецензент.';
+      'Коэффициенты сверены с официальным PDF ICH Q2(R2); они не изменились по сравнению с Q2(R1) (заменён). Q2(R2) допускает также S/N и прямое подтверждение точности/прецизионности. Требуется подтверждение лабораторного рецензента (RG-25).';
 
   @override
   String get calcUseRegression => 'Взять σ = s_y/x и S из этой регрессии';
@@ -2784,4 +2784,455 @@ class AppLocalizationsRu extends AppLocalizations {
   String templateCoverage(int filled, int total) {
     return 'Разделы с источниками: $filled из $total';
   }
+
+  @override
+  String get provWhereFrom => 'Откуда это утверждение?';
+
+  @override
+  String get provSheetTitle => 'Происхождение утверждения';
+
+  @override
+  String get provStatement => 'Утверждение';
+
+  @override
+  String provLocation(String loc) {
+    return 'Место в источнике: $loc';
+  }
+
+  @override
+  String get provSource => 'Источник';
+
+  @override
+  String provTier(String tier) {
+    return 'Уровень источника $tier';
+  }
+
+  @override
+  String get provTierA => 'A — официальный текст, стандарт или руководство';
+
+  @override
+  String get provTierB => 'B — рецензируемая публикация';
+
+  @override
+  String get provTierC => 'C — справочник, база данных или вторичный источник';
+
+  @override
+  String get reuseOpen => 'Открытое использование';
+
+  @override
+  String get reuseCiteOnly => 'Только ссылка — текст не воспроизводится';
+
+  @override
+  String get reuseNonCommercial => 'Некоммерческая лицензия';
+
+  @override
+  String get reuseLicenseRequired => 'ТРЕБУЕТСЯ ЛИЦЕНЗИЯ';
+
+  @override
+  String get reuseLookup => 'Только поиск';
+
+  @override
+  String get reuseUnknown => 'Лицензия не определена';
+
+  @override
+  String get srcLifecycleCurrent => 'Не отозван';
+
+  @override
+  String get srcLifecycleRetracted => 'ОТОЗВАН (RETRACTED)';
+
+  @override
+  String get srcLifecycleSuperseded => 'ЗАМЕНЁН';
+
+  @override
+  String get srcLifecycleWithdrawn => 'ОТОЗВАН АВТОРАМИ';
+
+  @override
+  String provCheckedOn(String date) {
+    return 'Проверка на отзыв: $date';
+  }
+
+  @override
+  String get provArchiveHash => 'SHA-256 архивной копии';
+
+  @override
+  String provSourceVersion(String v) {
+    return 'Версия: $v';
+  }
+
+  @override
+  String get provLifecycle => 'Жизненный цикл';
+
+  @override
+  String get lcCurrent => 'Актуально';
+
+  @override
+  String get lcNeedsReview => 'Требует проверки';
+
+  @override
+  String get lcOutdated => 'Устарело';
+
+  @override
+  String get lcSuperseded => 'Заменено';
+
+  @override
+  String get lcRetracted => 'Источник отозван';
+
+  @override
+  String get lcRejected => 'Отклонено';
+
+  @override
+  String get provHumanVerified => 'Проверено квалифицированными рецензентами';
+
+  @override
+  String get provNotVerified =>
+      'ИНФОРМАЦИЯ НЕ ПРОВЕРЕНА — ТРЕБУЕТСЯ ПОДТВЕРЖДЕНИЕ ЭКСПЕРТА';
+
+  @override
+  String provRequiredRole(String role) {
+    return 'Требуемый рецензент: $role';
+  }
+
+  @override
+  String provReviewsRecorded(int n) {
+    return 'Действий рецензентов по этой версии: $n';
+  }
+
+  @override
+  String provClaimId(String id, int v) {
+    return 'ID записи: $id · v$v';
+  }
+
+  @override
+  String get roleForensicToxicology => 'Судебная токсикология';
+
+  @override
+  String get roleForensicMedicine => 'Судебная медицина';
+
+  @override
+  String get roleLaboratory => 'Лаборатория / аналитика';
+
+  @override
+  String get roleBiochemistry => 'Судебная биохимия';
+
+  @override
+  String get roleLegal => 'Право / юрисдикция';
+
+  @override
+  String get roleTranslation => 'Перевод';
+
+  @override
+  String get roleEditor => 'Научный редактор / администратор';
+
+  @override
+  String get bannerRetracted =>
+      'Источник отозван — утверждение сохранено для прозрачности, но не является актуальным доказательством.';
+
+  @override
+  String get bannerSuperseded => 'Все источники этого утверждения заменены.';
+
+  @override
+  String get bannerOutdated => 'Отмечено рецензентом как устаревшее.';
+
+  @override
+  String get bannerConflict =>
+      'ПРОТИВОРЕЧИЕ ДАННЫХ — источники расходятся или перекрываются. Нажмите, чтобы сравнить.';
+
+  @override
+  String get conflictsTitle => 'Противоречия данных';
+
+  @override
+  String get conflictsIntro =>
+      'Противоречия показываются, а не скрываются. Разрешить их может только квалифицированный рецензент; приложение не выбирает «правильный» вариант.';
+
+  @override
+  String get conflictKindDirect => 'Прямое противоречие';
+
+  @override
+  String get conflictKindContext => 'Зависит от условий';
+
+  @override
+  String get conflictKindOverlap => 'Значения перекрываются между контекстами';
+
+  @override
+  String get conflictKindCharacterisation => 'Описано по-разному';
+
+  @override
+  String get conflictQuestion => 'Вопрос';
+
+  @override
+  String get conflictStatements => 'Утверждения';
+
+  @override
+  String get conflictStateOpen => 'Открыто — ожидает решения рецензента';
+
+  @override
+  String get conflictStateResolved => 'Разрешено рецензентом';
+
+  @override
+  String get conflictNoteLabel => 'Что говорят источники';
+
+  @override
+  String get ctxTitle => 'Контекст (только то, что указано в источнике)';
+
+  @override
+  String get ctxSpecimen => 'Образец';
+
+  @override
+  String get ctxSampling => 'Забор';
+
+  @override
+  String get ctxSubject => 'Субъект';
+
+  @override
+  String get ctxPopulation => 'Популяция';
+
+  @override
+  String get ctxStudySize => 'Число случаев';
+
+  @override
+  String get ctxCaseType => 'Тип случаев';
+
+  @override
+  String get ctxCoIntoxicants => 'Сопутствующие вещества';
+
+  @override
+  String get ctxMethod => 'Аналитический метод';
+
+  @override
+  String get ctxTiming => 'Время забора';
+
+  @override
+  String get ctxStatistic => 'Приведённые значения';
+
+  @override
+  String get ctxReporting => 'Происхождение данных';
+
+  @override
+  String get ctxLimitations => 'Ограничения';
+
+  @override
+  String get ctxNotStated => 'не указано в источнике';
+
+  @override
+  String get ctxPostmortem => 'посмертно';
+
+  @override
+  String get ctxAntemortem => 'прижизненно';
+
+  @override
+  String get ctxMixed => 'смешанно';
+
+  @override
+  String get ctxDeceased => 'умершие';
+
+  @override
+  String get ctxLiving => 'живые';
+
+  @override
+  String get ctxPrimary => 'Первичные данные цитируемого исследования';
+
+  @override
+  String get ctxSecondary => 'Цитируется из другого исследования';
+
+  @override
+  String get ctxNotAssessed => 'Ещё не оценено';
+
+  @override
+  String get ctxAutoMinimal =>
+      'Контекст этой записи ещё не проверен; показан только образец.';
+
+  @override
+  String get metRelationsTitle => 'Метаболиты (связи с источниками)';
+
+  @override
+  String get metKindMetabolite => 'Метаболит';
+
+  @override
+  String get metKindActive => 'Активный метаболит';
+
+  @override
+  String get metKindInactive => 'Неактивный метаболит';
+
+  @override
+  String get metKindMarker => 'Маркер';
+
+  @override
+  String get metKindArtifact => 'Артефакт';
+
+  @override
+  String get metRoleNote =>
+      'Роль (активный, маркер…) указывается, только если она прямо указана в источнике.';
+
+  @override
+  String metParentOf(String name) {
+    return 'Исходное вещество: $name';
+  }
+
+  @override
+  String get specimensTitle => 'Образцы';
+
+  @override
+  String get specimensIntro =>
+      'Типы образцов с утверждениями из источников и приведёнными значениями. Приведённые значения не являются порогами.';
+
+  @override
+  String get specimenAbout => 'Об образце';
+
+  @override
+  String get specimenMeasured => 'Приведённые значения в этом образце';
+
+  @override
+  String get specimenNoClaims => 'Пока нет утверждений из источников.';
+
+  @override
+  String get specimenCatFluid => 'Биологическая жидкость';
+
+  @override
+  String get specimenCatTissue => 'Ткань';
+
+  @override
+  String get specimenCatKeratinous => 'Кератиновая матрица';
+
+  @override
+  String get specimenCatContent => 'Содержимое';
+
+  @override
+  String specimenRecords(int n) {
+    return '$n записей';
+  }
+
+  @override
+  String get detailMeasuredIn => 'Образцы с приведёнными значениями';
+
+  @override
+  String get detailScreenedBy =>
+      'Скрининговые тесты (скрининг ≠ подтверждение)';
+
+  @override
+  String get chainTitle => 'Цепочка знаний';
+
+  @override
+  String get chainOpen => 'Показать цепочку знаний';
+
+  @override
+  String get chainIntro =>
+      'У каждой связи ниже есть основание (утверждение из источника, запись официального списка или каталога). Нажмите на связь, чтобы увидеть его.';
+
+  @override
+  String get chainMetabolites => 'Метаболиты';
+
+  @override
+  String get chainSpecimens => 'Образцы';
+
+  @override
+  String get chainScreening => 'Скрининг';
+
+  @override
+  String get chainConfirmation => 'Подтверждающие методы';
+
+  @override
+  String get chainReagents => 'Реагенты';
+
+  @override
+  String get chainResearch => 'Исследования';
+
+  @override
+  String get chainStandards => 'Стандарты';
+
+  @override
+  String get chainLegal => 'Правовой статус';
+
+  @override
+  String get chainNone => 'Пока нет связи с источником';
+
+  @override
+  String chainBasis(String id) {
+    return 'Основание: $id';
+  }
+
+  @override
+  String chainResearchCount(int n) {
+    return 'Связанных публикаций: $n';
+  }
+
+  @override
+  String get stdCatalogue => 'Каталог стандартов (только метаданные)';
+
+  @override
+  String get stdStatusCurrent => 'Действующий';
+
+  @override
+  String get stdStatusProposed => 'Проект — ещё не опубликован';
+
+  @override
+  String stdStatusSuperseded(String id) {
+    return 'Заменён: $id';
+  }
+
+  @override
+  String get stdStatusWithdrawn => 'Отменён';
+
+  @override
+  String get stdStatusUnknown => 'Статус не определён';
+
+  @override
+  String stdVerifiedFrom(String date) {
+    return 'Метаданные проверены $date у издателя или в реестре';
+  }
+
+  @override
+  String get stdTextNotReproduced =>
+      'Текст стандарта в приложении не воспроизводится.';
+
+  @override
+  String get reviewTitle => 'Статус научной проверки';
+
+  @override
+  String get reviewHumanVerified => 'Проверено людьми';
+
+  @override
+  String get reviewReviewed => 'Проверено одним рецензентом';
+
+  @override
+  String get reviewAwaiting => 'Ожидают проверки';
+
+  @override
+  String get reviewRetracted => 'Утверждения с отозванным источником';
+
+  @override
+  String get reviewActions => 'Записанных действий рецензентов';
+
+  @override
+  String get reviewReviewers => 'Зарегистрированных рецензентов';
+
+  @override
+  String get reviewOpenConflicts => 'Открытых противоречий данных';
+
+  @override
+  String get reviewExplain =>
+      'Утверждение становится VERIFIED только после одобрения текущей версии двумя независимыми квалифицированными рецензентами по специальности. Приложение и его авторы не могут сами отметить что-либо как проверенное.';
+
+  @override
+  String get reviewRolesTitle => 'Роли и права рецензентов';
+
+  @override
+  String get reviewRoleApprove =>
+      'Может одобрять или отклонять в своей специальности';
+
+  @override
+  String get reviewRoleFlagOnly =>
+      'Может отмечать противоречия, устаревание и запрашивать изменения — не может одобрять';
+
+  @override
+  String get reviewActionsList => 'Возможные действия';
+
+  @override
+  String get libraryConflicts => 'Противоречия данных';
+
+  @override
+  String get libraryReview => 'Статус проверки';
+
+  @override
+  String get methodPublishedNote =>
+      'Опубликованный научный метод — не валидированная методика для конкретной лаборатории.';
 }

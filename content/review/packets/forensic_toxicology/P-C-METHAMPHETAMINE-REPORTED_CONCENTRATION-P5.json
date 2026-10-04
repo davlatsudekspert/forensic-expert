@@ -1,0 +1,94 @@
+{
+  "packet_id": "P-C-METHAMPHETAMINE-REPORTED_CONCENTRATION-P5",
+  "subject_id": "C-METHAMPHETAMINE-REPORTED_CONCENTRATION-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "methamphetamine",
+  "entity_names": {
+    "en": "Methamphetamine",
+    "ru": "Метамфетамин",
+    "uz": "Metamfetamin"
+  },
+  "field": "reported_concentration",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "Cases where only methamphetamine was detected had a higher blood methamphetamine concentration (2.68; SD, 13.7 µg/mL) than cases with multiple substances (1.62; SD, 7.59 µg/mL), but this difference was not significant (P = 0.255).",
+    "location": "RESULTS",
+    "proposed_value": {
+      "section": "RESULTS",
+      "specimen": [
+        "blood"
+      ],
+      "context": "case report / series (see source)",
+      "not_a_threshold": true
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC11405366",
+      "title": "Shedding Light on Hidden Methamphetamine Abuse: A Nation-wide 7-year Post-mortem Study in Taiwan",
+      "type": "journal_article",
+      "doi": "10.2188/jea.JE20230263",
+      "pmid": "38462530",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11405366/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "RESULTS"
+    }
+  ],
+  "why_it_matters": "Concentration values are often misread as thresholds; the reviewer must confirm specimen, population, statistic and that the value is reported in context only.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [
+    "SD exceeds the mean — strongly skewed distribution."
+  ],
+  "concentration_context": {
+    "specimen": [
+      "blood"
+    ],
+    "sampling": "postmortem",
+    "subject_state": "deceased",
+    "population": "nation-wide 7-year post-mortem study (see source)",
+    "study_size": "not_stated",
+    "case_type": "methamphetamine-positive post-mortem cases",
+    "co_intoxicants": "compared: methamphetamine only vs multiple substances",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "mean 2.68 (SD 13.7) vs 1.62 (SD 7.59) µg/mL; P = 0.255 (not significant)",
+    "reporting": "primary",
+    "limitations": [
+      "SD exceeds the mean — strongly skewed distribution."
+    ],
+    "curation": "pilot_manual"
+  },
+  "translations": {
+    "entity_names": {
+      "en": "Methamphetamine",
+      "ru": "Метамфетамин",
+      "uz": "Metamfetamin"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

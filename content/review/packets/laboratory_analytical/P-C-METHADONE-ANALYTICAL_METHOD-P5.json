@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-METHADONE-ANALYTICAL_METHOD-P5",
+  "subject_id": "C-METHADONE-ANALYTICAL_METHOD-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "methadone",
+  "entity_names": {
+    "en": "Methadone",
+    "ru": "Метадон",
+    "uz": "Metadon"
+  },
+  "field": "analytical_method",
+  "domain": "lab",
+  "required_role": "laboratory_analytical",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "Femoral venous blood and brain (medulla) of 107 methadone-related deaths were analysed for methadone by GC-MS.",
+    "location": "METHODS",
+    "proposed_value": {
+      "section": "METHODS"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC7870766",
+      "title": "Brain/blood ratios of methadone and ABCB1 polymorphisms in methadone-related deaths",
+      "type": "journal_article",
+      "doi": "10.1007/s00414-021-02502-5",
+      "pmid": "33454797",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7870766/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "METHODS"
+    }
+  ],
+  "why_it_matters": "Links the substance to an analytical technique; does not imply a validated method for any laboratory.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Methadone",
+      "ru": "Метадон",
+      "uz": "Metadon"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

@@ -1,0 +1,94 @@
+{
+  "packet_id": "P-C-BENZOYLECGONINE-REPORTED_CONCENTRATION-P5",
+  "subject_id": "C-BENZOYLECGONINE-REPORTED_CONCENTRATION-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "benzoylecgonine",
+  "entity_names": {
+    "en": "Benzoylecgonine",
+    "ru": "Бензоилэкгонин",
+    "uz": "Benzoilekgonin"
+  },
+  "field": "reported_concentration",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "Among the 10,996 drivers with at least one positive test, the median blood concentrations of ethanol, THC, MDMA, amphetamine, benzoylecgonine, and 6-MAM were respectively 1.82 g/L, 2.41 ng/mL, 138.4 ng/mL, 67.7 ng/mL, 173.3 ng/mL, and 0.97 ng/mL.",
+    "location": "ABSTRACT",
+    "proposed_value": {
+      "section": "ABSTRACT",
+      "specimen": [
+        "blood"
+      ],
+      "context": "drivers (DUID)",
+      "not_a_threshold": true
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC8227838",
+      "title": "Alcohol and drug consumption among motor vehicle drivers in the Brittany region of France: A 9-year cross-sectional population study",
+      "type": "journal_article",
+      "doi": "10.1016/j.pmedr.2021.101454",
+      "pmid": "34194961",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8227838/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "ABSTRACT"
+    }
+  ],
+  "why_it_matters": "Concentration values are often misread as thresholds; the reviewer must confirm specimen, population, statistic and that the value is reported in context only.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [
+    "Median across all positive drivers; not limited to cocaine-only cases."
+  ],
+  "concentration_context": {
+    "specimen": [
+      "blood"
+    ],
+    "sampling": "antemortem",
+    "subject_state": "living",
+    "population": "motor vehicle drivers in Brittany, France, with at least one positive test",
+    "study_size": "10996",
+    "case_type": "drivers tested for alcohol/drugs",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "median 173.3 ng/mL",
+    "reporting": "primary",
+    "limitations": [
+      "Median across all positive drivers; not limited to cocaine-only cases."
+    ],
+    "curation": "pilot_manual"
+  },
+  "translations": {
+    "entity_names": {
+      "en": "Benzoylecgonine",
+      "ru": "Бензоилэкгонин",
+      "uz": "Benzoilekgonin"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

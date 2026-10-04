@@ -1,0 +1,98 @@
+{
+  "packet_id": "P-C-AMPHETAMINE-REPORTED_CONCENTRATION-P5",
+  "subject_id": "C-AMPHETAMINE-REPORTED_CONCENTRATION-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "amphetamine",
+  "entity_names": {
+    "en": "Amphetamine",
+    "ru": "Амфетамин",
+    "uz": "Amfetamin"
+  },
+  "field": "reported_concentration",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "Amphetamine was detected in all biological materials, the highest concentrations were found in urine (2600 μg/ml, case 1) and stomach content (14,000 μg/g, case 2).",
+    "location": "ABSTRACT",
+    "proposed_value": {
+      "section": "ABSTRACT",
+      "specimen": [
+        "urine",
+        "gastric contents"
+      ],
+      "context": "case report / series (see source)",
+      "not_a_threshold": true
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC11803147",
+      "title": "Fatal intoxication after oral ingestion of amphetamine: Two case reports",
+      "type": "journal_article",
+      "doi": "10.1016/j.fsisyn.2024.100568",
+      "pmid": "39925378",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11803147/",
+      "tier": "B",
+      "evidence_level": "D",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "ABSTRACT"
+    }
+  ],
+  "why_it_matters": "Concentration values are often misread as thresholds; the reviewer must confirm specimen, population, statistic and that the value is reported in context only.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [
+    "Highest values only; different units (μg/mL vs μg/g).",
+    "Two cases — not generalisable."
+  ],
+  "concentration_context": {
+    "specimen": [
+      "urine",
+      "gastric"
+    ],
+    "sampling": "postmortem",
+    "subject_state": "deceased",
+    "population": "two fatal cases after oral ingestion",
+    "study_size": "2",
+    "case_type": "fatal oral amphetamine ingestion (case reports)",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "highest values: urine 2600 μg/mL (case 1); stomach content 14,000 μg/g (case 2)",
+    "reporting": "primary",
+    "limitations": [
+      "Highest values only; different units (μg/mL vs μg/g).",
+      "Two cases — not generalisable."
+    ],
+    "curation": "pilot_manual"
+  },
+  "translations": {
+    "entity_names": {
+      "en": "Amphetamine",
+      "ru": "Амфетамин",
+      "uz": "Amfetamin"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

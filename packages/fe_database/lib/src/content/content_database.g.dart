@@ -12140,7 +12140,7 @@ class EntityLinks extends Table with TableInfo<EntityLinks, EntityLink> {
     false,
     type: DriftSqlType.string,
     requiredDuringInsert: true,
-    $customConstraints: 'NOT NULL CHECK (relation IN (\'analysed_by\', \'metabolism_co_mention\', \'confirmed_by\', \'used_in\', \'research\', \'related_topic\'))',
+    $customConstraints: 'NOT NULL CHECK (relation IN (\'analysed_by\', \'metabolism_co_mention\', \'confirmed_by\', \'used_in\', \'research\', \'related_topic\', \'has_metabolite\', \'measured_in\', \'screened_by\', \'standard_for\', \'legal_status\'))',
   );
   static const VerificationMeta _basisMeta = const VerificationMeta('basis');
   late final GeneratedColumn<String> basis = GeneratedColumn<String>(
@@ -13584,6 +13584,4466 @@ class ImagesCompanion extends UpdateCompanion<Image> {
   }
 }
 
+class SourceProvenance extends Table
+    with TableInfo<SourceProvenance, SourceProvenanceData> {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  SourceProvenance(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _sourceIdMeta = const VerificationMeta(
+    'sourceId',
+  );
+  late final GeneratedColumn<String> sourceId = GeneratedColumn<String>(
+    'source_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL PRIMARY KEY REFERENCES sources(source_id)',
+  );
+  static const VerificationMeta _hierarchyMeta = const VerificationMeta(
+    'hierarchy',
+  );
+  late final GeneratedColumn<String> hierarchy = GeneratedColumn<String>(
+    'hierarchy',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints:
+        'CHECK (hierarchy IS NULL OR hierarchy IN (\'A\', \'B\', \'C\'))',
+  );
+  static const VerificationMeta _reuseStatusMeta = const VerificationMeta(
+    'reuseStatus',
+  );
+  late final GeneratedColumn<String> reuseStatus = GeneratedColumn<String>(
+    'reuse_status',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (reuse_status IN (\'OPEN_REUSE\', \'CITE_ONLY\', \'NON_COMMERCIAL\', \'LICENSE_REQUIRED\', \'LOOKUP_ONLY\', \'UNKNOWN\'))',
+  );
+  static const VerificationMeta _languageMeta = const VerificationMeta(
+    'language',
+  );
+  late final GeneratedColumn<String> language = GeneratedColumn<String>(
+    'language',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _sha256Meta = const VerificationMeta('sha256');
+  late final GeneratedColumn<String> sha256 = GeneratedColumn<String>(
+    'sha256',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _sourceVersionMeta = const VerificationMeta(
+    'sourceVersion',
+  );
+  late final GeneratedColumn<String> sourceVersion = GeneratedColumn<String>(
+    'source_version',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _lifecycleMeta = const VerificationMeta(
+    'lifecycle',
+  );
+  late final GeneratedColumn<String> lifecycle = GeneratedColumn<String>(
+    'lifecycle',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: 'NOT NULL DEFAULT \'current\' CHECK (lifecycle IN (\'current\', \'superseded\', \'retracted\', \'withdrawn\'))',
+    defaultValue: const CustomExpression('\'current\''),
+  );
+  static const VerificationMeta _supersededByMeta = const VerificationMeta(
+    'supersededBy',
+  );
+  late final GeneratedColumn<String> supersededBy = GeneratedColumn<String>(
+    'superseded_by',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: 'REFERENCES sources(source_id)',
+  );
+  static const VerificationMeta _lifecycleCheckedAtMeta =
+      const VerificationMeta('lifecycleCheckedAt');
+  late final GeneratedColumn<String> lifecycleCheckedAt =
+      GeneratedColumn<String>(
+        'lifecycle_checked_at',
+        aliasedName,
+        true,
+        type: DriftSqlType.string,
+        requiredDuringInsert: false,
+        $customConstraints: '',
+      );
+  static const VerificationMeta _lifecycleBasisMeta = const VerificationMeta(
+    'lifecycleBasis',
+  );
+  late final GeneratedColumn<String> lifecycleBasis = GeneratedColumn<String>(
+    'lifecycle_basis',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _forensicRelevanceMeta = const VerificationMeta(
+    'forensicRelevance',
+  );
+  late final GeneratedColumn<String> forensicRelevance =
+      GeneratedColumn<String>(
+        'forensic_relevance',
+        aliasedName,
+        false,
+        type: DriftSqlType.string,
+        requiredDuringInsert: false,
+        $customConstraints: 'NOT NULL DEFAULT \'unassessed\' CHECK (forensic_relevance IN (\'unassessed\', \'direct\', \'supporting\', \'background\'))',
+        defaultValue: const CustomExpression('\'unassessed\''),
+      );
+  @override
+  List<GeneratedColumn> get $columns => [
+    sourceId,
+    hierarchy,
+    reuseStatus,
+    language,
+    sha256,
+    sourceVersion,
+    lifecycle,
+    supersededBy,
+    lifecycleCheckedAt,
+    lifecycleBasis,
+    forensicRelevance,
+  ];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'source_provenance';
+  @override
+  VerificationContext validateIntegrity(
+    Insertable<SourceProvenanceData> instance, {
+    bool isInserting = false,
+  }) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('source_id')) {
+      context.handle(
+        _sourceIdMeta,
+        sourceId.isAcceptableOrUnknown(data['source_id']!, _sourceIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_sourceIdMeta);
+    }
+    if (data.containsKey('hierarchy')) {
+      context.handle(
+        _hierarchyMeta,
+        hierarchy.isAcceptableOrUnknown(data['hierarchy']!, _hierarchyMeta),
+      );
+    }
+    if (data.containsKey('reuse_status')) {
+      context.handle(
+        _reuseStatusMeta,
+        reuseStatus.isAcceptableOrUnknown(
+          data['reuse_status']!,
+          _reuseStatusMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_reuseStatusMeta);
+    }
+    if (data.containsKey('language')) {
+      context.handle(
+        _languageMeta,
+        language.isAcceptableOrUnknown(data['language']!, _languageMeta),
+      );
+    }
+    if (data.containsKey('sha256')) {
+      context.handle(
+        _sha256Meta,
+        sha256.isAcceptableOrUnknown(data['sha256']!, _sha256Meta),
+      );
+    }
+    if (data.containsKey('source_version')) {
+      context.handle(
+        _sourceVersionMeta,
+        sourceVersion.isAcceptableOrUnknown(
+          data['source_version']!,
+          _sourceVersionMeta,
+        ),
+      );
+    }
+    if (data.containsKey('lifecycle')) {
+      context.handle(
+        _lifecycleMeta,
+        lifecycle.isAcceptableOrUnknown(data['lifecycle']!, _lifecycleMeta),
+      );
+    }
+    if (data.containsKey('superseded_by')) {
+      context.handle(
+        _supersededByMeta,
+        supersededBy.isAcceptableOrUnknown(
+          data['superseded_by']!,
+          _supersededByMeta,
+        ),
+      );
+    }
+    if (data.containsKey('lifecycle_checked_at')) {
+      context.handle(
+        _lifecycleCheckedAtMeta,
+        lifecycleCheckedAt.isAcceptableOrUnknown(
+          data['lifecycle_checked_at']!,
+          _lifecycleCheckedAtMeta,
+        ),
+      );
+    }
+    if (data.containsKey('lifecycle_basis')) {
+      context.handle(
+        _lifecycleBasisMeta,
+        lifecycleBasis.isAcceptableOrUnknown(
+          data['lifecycle_basis']!,
+          _lifecycleBasisMeta,
+        ),
+      );
+    }
+    if (data.containsKey('forensic_relevance')) {
+      context.handle(
+        _forensicRelevanceMeta,
+        forensicRelevance.isAcceptableOrUnknown(
+          data['forensic_relevance']!,
+          _forensicRelevanceMeta,
+        ),
+      );
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {sourceId};
+  @override
+  SourceProvenanceData map(Map<String, dynamic> data, {String? tablePrefix}) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return SourceProvenanceData(
+      sourceId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}source_id'],
+      )!,
+      hierarchy: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}hierarchy'],
+      ),
+      reuseStatus: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}reuse_status'],
+      )!,
+      language: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}language'],
+      ),
+      sha256: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}sha256'],
+      ),
+      sourceVersion: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}source_version'],
+      ),
+      lifecycle: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}lifecycle'],
+      )!,
+      supersededBy: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}superseded_by'],
+      ),
+      lifecycleCheckedAt: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}lifecycle_checked_at'],
+      ),
+      lifecycleBasis: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}lifecycle_basis'],
+      ),
+      forensicRelevance: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}forensic_relevance'],
+      )!,
+    );
+  }
+
+  @override
+  SourceProvenance createAlias(String alias) {
+    return SourceProvenance(attachedDatabase, alias);
+  }
+
+  @override
+  bool get withoutRowId => true;
+  @override
+  List<String> get customConstraints => const [
+    'CHECK(lifecycle = \'current\' OR lifecycle_basis IS NOT NULL)',
+    'CHECK(lifecycle <> \'superseded\' OR superseded_by IS NOT NULL)',
+  ];
+  @override
+  bool get dontWriteConstraints => true;
+}
+
+class SourceProvenanceData extends DataClass
+    implements Insertable<SourceProvenanceData> {
+  final String sourceId;
+  final String? hierarchy;
+  final String reuseStatus;
+  final String? language;
+  final String? sha256;
+  final String? sourceVersion;
+  final String lifecycle;
+  final String? supersededBy;
+  final String? lifecycleCheckedAt;
+  final String? lifecycleBasis;
+  final String forensicRelevance;
+  const SourceProvenanceData({
+    required this.sourceId,
+    this.hierarchy,
+    required this.reuseStatus,
+    this.language,
+    this.sha256,
+    this.sourceVersion,
+    required this.lifecycle,
+    this.supersededBy,
+    this.lifecycleCheckedAt,
+    this.lifecycleBasis,
+    required this.forensicRelevance,
+  });
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['source_id'] = Variable<String>(sourceId);
+    if (!nullToAbsent || hierarchy != null) {
+      map['hierarchy'] = Variable<String>(hierarchy);
+    }
+    map['reuse_status'] = Variable<String>(reuseStatus);
+    if (!nullToAbsent || language != null) {
+      map['language'] = Variable<String>(language);
+    }
+    if (!nullToAbsent || sha256 != null) {
+      map['sha256'] = Variable<String>(sha256);
+    }
+    if (!nullToAbsent || sourceVersion != null) {
+      map['source_version'] = Variable<String>(sourceVersion);
+    }
+    map['lifecycle'] = Variable<String>(lifecycle);
+    if (!nullToAbsent || supersededBy != null) {
+      map['superseded_by'] = Variable<String>(supersededBy);
+    }
+    if (!nullToAbsent || lifecycleCheckedAt != null) {
+      map['lifecycle_checked_at'] = Variable<String>(lifecycleCheckedAt);
+    }
+    if (!nullToAbsent || lifecycleBasis != null) {
+      map['lifecycle_basis'] = Variable<String>(lifecycleBasis);
+    }
+    map['forensic_relevance'] = Variable<String>(forensicRelevance);
+    return map;
+  }
+
+  SourceProvenanceCompanion toCompanion(bool nullToAbsent) {
+    return SourceProvenanceCompanion(
+      sourceId: Value(sourceId),
+      hierarchy: hierarchy == null && nullToAbsent
+          ? const Value.absent()
+          : Value(hierarchy),
+      reuseStatus: Value(reuseStatus),
+      language: language == null && nullToAbsent
+          ? const Value.absent()
+          : Value(language),
+      sha256: sha256 == null && nullToAbsent
+          ? const Value.absent()
+          : Value(sha256),
+      sourceVersion: sourceVersion == null && nullToAbsent
+          ? const Value.absent()
+          : Value(sourceVersion),
+      lifecycle: Value(lifecycle),
+      supersededBy: supersededBy == null && nullToAbsent
+          ? const Value.absent()
+          : Value(supersededBy),
+      lifecycleCheckedAt: lifecycleCheckedAt == null && nullToAbsent
+          ? const Value.absent()
+          : Value(lifecycleCheckedAt),
+      lifecycleBasis: lifecycleBasis == null && nullToAbsent
+          ? const Value.absent()
+          : Value(lifecycleBasis),
+      forensicRelevance: Value(forensicRelevance),
+    );
+  }
+
+  factory SourceProvenanceData.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return SourceProvenanceData(
+      sourceId: serializer.fromJson<String>(json['source_id']),
+      hierarchy: serializer.fromJson<String?>(json['hierarchy']),
+      reuseStatus: serializer.fromJson<String>(json['reuse_status']),
+      language: serializer.fromJson<String?>(json['language']),
+      sha256: serializer.fromJson<String?>(json['sha256']),
+      sourceVersion: serializer.fromJson<String?>(json['source_version']),
+      lifecycle: serializer.fromJson<String>(json['lifecycle']),
+      supersededBy: serializer.fromJson<String?>(json['superseded_by']),
+      lifecycleCheckedAt: serializer.fromJson<String?>(
+        json['lifecycle_checked_at'],
+      ),
+      lifecycleBasis: serializer.fromJson<String?>(json['lifecycle_basis']),
+      forensicRelevance: serializer.fromJson<String>(
+        json['forensic_relevance'],
+      ),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'source_id': serializer.toJson<String>(sourceId),
+      'hierarchy': serializer.toJson<String?>(hierarchy),
+      'reuse_status': serializer.toJson<String>(reuseStatus),
+      'language': serializer.toJson<String?>(language),
+      'sha256': serializer.toJson<String?>(sha256),
+      'source_version': serializer.toJson<String?>(sourceVersion),
+      'lifecycle': serializer.toJson<String>(lifecycle),
+      'superseded_by': serializer.toJson<String?>(supersededBy),
+      'lifecycle_checked_at': serializer.toJson<String?>(lifecycleCheckedAt),
+      'lifecycle_basis': serializer.toJson<String?>(lifecycleBasis),
+      'forensic_relevance': serializer.toJson<String>(forensicRelevance),
+    };
+  }
+
+  SourceProvenanceData copyWith({
+    String? sourceId,
+    Value<String?> hierarchy = const Value.absent(),
+    String? reuseStatus,
+    Value<String?> language = const Value.absent(),
+    Value<String?> sha256 = const Value.absent(),
+    Value<String?> sourceVersion = const Value.absent(),
+    String? lifecycle,
+    Value<String?> supersededBy = const Value.absent(),
+    Value<String?> lifecycleCheckedAt = const Value.absent(),
+    Value<String?> lifecycleBasis = const Value.absent(),
+    String? forensicRelevance,
+  }) => SourceProvenanceData(
+    sourceId: sourceId ?? this.sourceId,
+    hierarchy: hierarchy.present ? hierarchy.value : this.hierarchy,
+    reuseStatus: reuseStatus ?? this.reuseStatus,
+    language: language.present ? language.value : this.language,
+    sha256: sha256.present ? sha256.value : this.sha256,
+    sourceVersion: sourceVersion.present
+        ? sourceVersion.value
+        : this.sourceVersion,
+    lifecycle: lifecycle ?? this.lifecycle,
+    supersededBy: supersededBy.present ? supersededBy.value : this.supersededBy,
+    lifecycleCheckedAt: lifecycleCheckedAt.present
+        ? lifecycleCheckedAt.value
+        : this.lifecycleCheckedAt,
+    lifecycleBasis: lifecycleBasis.present
+        ? lifecycleBasis.value
+        : this.lifecycleBasis,
+    forensicRelevance: forensicRelevance ?? this.forensicRelevance,
+  );
+  SourceProvenanceData copyWithCompanion(SourceProvenanceCompanion data) {
+    return SourceProvenanceData(
+      sourceId: data.sourceId.present ? data.sourceId.value : this.sourceId,
+      hierarchy: data.hierarchy.present ? data.hierarchy.value : this.hierarchy,
+      reuseStatus: data.reuseStatus.present
+          ? data.reuseStatus.value
+          : this.reuseStatus,
+      language: data.language.present ? data.language.value : this.language,
+      sha256: data.sha256.present ? data.sha256.value : this.sha256,
+      sourceVersion: data.sourceVersion.present
+          ? data.sourceVersion.value
+          : this.sourceVersion,
+      lifecycle: data.lifecycle.present ? data.lifecycle.value : this.lifecycle,
+      supersededBy: data.supersededBy.present
+          ? data.supersededBy.value
+          : this.supersededBy,
+      lifecycleCheckedAt: data.lifecycleCheckedAt.present
+          ? data.lifecycleCheckedAt.value
+          : this.lifecycleCheckedAt,
+      lifecycleBasis: data.lifecycleBasis.present
+          ? data.lifecycleBasis.value
+          : this.lifecycleBasis,
+      forensicRelevance: data.forensicRelevance.present
+          ? data.forensicRelevance.value
+          : this.forensicRelevance,
+    );
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('SourceProvenanceData(')
+          ..write('sourceId: $sourceId, ')
+          ..write('hierarchy: $hierarchy, ')
+          ..write('reuseStatus: $reuseStatus, ')
+          ..write('language: $language, ')
+          ..write('sha256: $sha256, ')
+          ..write('sourceVersion: $sourceVersion, ')
+          ..write('lifecycle: $lifecycle, ')
+          ..write('supersededBy: $supersededBy, ')
+          ..write('lifecycleCheckedAt: $lifecycleCheckedAt, ')
+          ..write('lifecycleBasis: $lifecycleBasis, ')
+          ..write('forensicRelevance: $forensicRelevance')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode => Object.hash(
+    sourceId,
+    hierarchy,
+    reuseStatus,
+    language,
+    sha256,
+    sourceVersion,
+    lifecycle,
+    supersededBy,
+    lifecycleCheckedAt,
+    lifecycleBasis,
+    forensicRelevance,
+  );
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is SourceProvenanceData &&
+          other.sourceId == this.sourceId &&
+          other.hierarchy == this.hierarchy &&
+          other.reuseStatus == this.reuseStatus &&
+          other.language == this.language &&
+          other.sha256 == this.sha256 &&
+          other.sourceVersion == this.sourceVersion &&
+          other.lifecycle == this.lifecycle &&
+          other.supersededBy == this.supersededBy &&
+          other.lifecycleCheckedAt == this.lifecycleCheckedAt &&
+          other.lifecycleBasis == this.lifecycleBasis &&
+          other.forensicRelevance == this.forensicRelevance);
+}
+
+class SourceProvenanceCompanion extends UpdateCompanion<SourceProvenanceData> {
+  final Value<String> sourceId;
+  final Value<String?> hierarchy;
+  final Value<String> reuseStatus;
+  final Value<String?> language;
+  final Value<String?> sha256;
+  final Value<String?> sourceVersion;
+  final Value<String> lifecycle;
+  final Value<String?> supersededBy;
+  final Value<String?> lifecycleCheckedAt;
+  final Value<String?> lifecycleBasis;
+  final Value<String> forensicRelevance;
+  const SourceProvenanceCompanion({
+    this.sourceId = const Value.absent(),
+    this.hierarchy = const Value.absent(),
+    this.reuseStatus = const Value.absent(),
+    this.language = const Value.absent(),
+    this.sha256 = const Value.absent(),
+    this.sourceVersion = const Value.absent(),
+    this.lifecycle = const Value.absent(),
+    this.supersededBy = const Value.absent(),
+    this.lifecycleCheckedAt = const Value.absent(),
+    this.lifecycleBasis = const Value.absent(),
+    this.forensicRelevance = const Value.absent(),
+  });
+  SourceProvenanceCompanion.insert({
+    required String sourceId,
+    this.hierarchy = const Value.absent(),
+    required String reuseStatus,
+    this.language = const Value.absent(),
+    this.sha256 = const Value.absent(),
+    this.sourceVersion = const Value.absent(),
+    this.lifecycle = const Value.absent(),
+    this.supersededBy = const Value.absent(),
+    this.lifecycleCheckedAt = const Value.absent(),
+    this.lifecycleBasis = const Value.absent(),
+    this.forensicRelevance = const Value.absent(),
+  }) : sourceId = Value(sourceId),
+       reuseStatus = Value(reuseStatus);
+  static Insertable<SourceProvenanceData> custom({
+    Expression<String>? sourceId,
+    Expression<String>? hierarchy,
+    Expression<String>? reuseStatus,
+    Expression<String>? language,
+    Expression<String>? sha256,
+    Expression<String>? sourceVersion,
+    Expression<String>? lifecycle,
+    Expression<String>? supersededBy,
+    Expression<String>? lifecycleCheckedAt,
+    Expression<String>? lifecycleBasis,
+    Expression<String>? forensicRelevance,
+  }) {
+    return RawValuesInsertable({
+      if (sourceId != null) 'source_id': sourceId,
+      if (hierarchy != null) 'hierarchy': hierarchy,
+      if (reuseStatus != null) 'reuse_status': reuseStatus,
+      if (language != null) 'language': language,
+      if (sha256 != null) 'sha256': sha256,
+      if (sourceVersion != null) 'source_version': sourceVersion,
+      if (lifecycle != null) 'lifecycle': lifecycle,
+      if (supersededBy != null) 'superseded_by': supersededBy,
+      if (lifecycleCheckedAt != null)
+        'lifecycle_checked_at': lifecycleCheckedAt,
+      if (lifecycleBasis != null) 'lifecycle_basis': lifecycleBasis,
+      if (forensicRelevance != null) 'forensic_relevance': forensicRelevance,
+    });
+  }
+
+  SourceProvenanceCompanion copyWith({
+    Value<String>? sourceId,
+    Value<String?>? hierarchy,
+    Value<String>? reuseStatus,
+    Value<String?>? language,
+    Value<String?>? sha256,
+    Value<String?>? sourceVersion,
+    Value<String>? lifecycle,
+    Value<String?>? supersededBy,
+    Value<String?>? lifecycleCheckedAt,
+    Value<String?>? lifecycleBasis,
+    Value<String>? forensicRelevance,
+  }) {
+    return SourceProvenanceCompanion(
+      sourceId: sourceId ?? this.sourceId,
+      hierarchy: hierarchy ?? this.hierarchy,
+      reuseStatus: reuseStatus ?? this.reuseStatus,
+      language: language ?? this.language,
+      sha256: sha256 ?? this.sha256,
+      sourceVersion: sourceVersion ?? this.sourceVersion,
+      lifecycle: lifecycle ?? this.lifecycle,
+      supersededBy: supersededBy ?? this.supersededBy,
+      lifecycleCheckedAt: lifecycleCheckedAt ?? this.lifecycleCheckedAt,
+      lifecycleBasis: lifecycleBasis ?? this.lifecycleBasis,
+      forensicRelevance: forensicRelevance ?? this.forensicRelevance,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (sourceId.present) {
+      map['source_id'] = Variable<String>(sourceId.value);
+    }
+    if (hierarchy.present) {
+      map['hierarchy'] = Variable<String>(hierarchy.value);
+    }
+    if (reuseStatus.present) {
+      map['reuse_status'] = Variable<String>(reuseStatus.value);
+    }
+    if (language.present) {
+      map['language'] = Variable<String>(language.value);
+    }
+    if (sha256.present) {
+      map['sha256'] = Variable<String>(sha256.value);
+    }
+    if (sourceVersion.present) {
+      map['source_version'] = Variable<String>(sourceVersion.value);
+    }
+    if (lifecycle.present) {
+      map['lifecycle'] = Variable<String>(lifecycle.value);
+    }
+    if (supersededBy.present) {
+      map['superseded_by'] = Variable<String>(supersededBy.value);
+    }
+    if (lifecycleCheckedAt.present) {
+      map['lifecycle_checked_at'] = Variable<String>(lifecycleCheckedAt.value);
+    }
+    if (lifecycleBasis.present) {
+      map['lifecycle_basis'] = Variable<String>(lifecycleBasis.value);
+    }
+    if (forensicRelevance.present) {
+      map['forensic_relevance'] = Variable<String>(forensicRelevance.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('SourceProvenanceCompanion(')
+          ..write('sourceId: $sourceId, ')
+          ..write('hierarchy: $hierarchy, ')
+          ..write('reuseStatus: $reuseStatus, ')
+          ..write('language: $language, ')
+          ..write('sha256: $sha256, ')
+          ..write('sourceVersion: $sourceVersion, ')
+          ..write('lifecycle: $lifecycle, ')
+          ..write('supersededBy: $supersededBy, ')
+          ..write('lifecycleCheckedAt: $lifecycleCheckedAt, ')
+          ..write('lifecycleBasis: $lifecycleBasis, ')
+          ..write('forensicRelevance: $forensicRelevance')
+          ..write(')'))
+        .toString();
+  }
+}
+
+class ClaimLifecycle extends Table
+    with TableInfo<ClaimLifecycle, ClaimLifecycleData> {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  ClaimLifecycle(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _claimIdMeta = const VerificationMeta(
+    'claimId',
+  );
+  late final GeneratedColumn<String> claimId = GeneratedColumn<String>(
+    'claim_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL PRIMARY KEY REFERENCES claims(claim_id)',
+  );
+  static const VerificationMeta _lifecycleMeta = const VerificationMeta(
+    'lifecycle',
+  );
+  late final GeneratedColumn<String> lifecycle = GeneratedColumn<String>(
+    'lifecycle',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (lifecycle IN (\'CURRENT\', \'NEEDS_REVIEW\', \'OUTDATED\', \'SUPERSEDED\', \'RETRACTED\', \'REJECTED\'))',
+  );
+  static const VerificationMeta _reasonMeta = const VerificationMeta('reason');
+  late final GeneratedColumn<String> reason = GeneratedColumn<String>(
+    'reason',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _causedByJsonMeta = const VerificationMeta(
+    'causedByJson',
+  );
+  late final GeneratedColumn<String> causedByJson = GeneratedColumn<String>(
+    'caused_by_json',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: 'NOT NULL DEFAULT \'[]\'',
+    defaultValue: const CustomExpression('\'[]\''),
+  );
+  @override
+  List<GeneratedColumn> get $columns => [
+    claimId,
+    lifecycle,
+    reason,
+    causedByJson,
+  ];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'claim_lifecycle';
+  @override
+  VerificationContext validateIntegrity(
+    Insertable<ClaimLifecycleData> instance, {
+    bool isInserting = false,
+  }) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('claim_id')) {
+      context.handle(
+        _claimIdMeta,
+        claimId.isAcceptableOrUnknown(data['claim_id']!, _claimIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_claimIdMeta);
+    }
+    if (data.containsKey('lifecycle')) {
+      context.handle(
+        _lifecycleMeta,
+        lifecycle.isAcceptableOrUnknown(data['lifecycle']!, _lifecycleMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_lifecycleMeta);
+    }
+    if (data.containsKey('reason')) {
+      context.handle(
+        _reasonMeta,
+        reason.isAcceptableOrUnknown(data['reason']!, _reasonMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_reasonMeta);
+    }
+    if (data.containsKey('caused_by_json')) {
+      context.handle(
+        _causedByJsonMeta,
+        causedByJson.isAcceptableOrUnknown(
+          data['caused_by_json']!,
+          _causedByJsonMeta,
+        ),
+      );
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {claimId};
+  @override
+  ClaimLifecycleData map(Map<String, dynamic> data, {String? tablePrefix}) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return ClaimLifecycleData(
+      claimId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}claim_id'],
+      )!,
+      lifecycle: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}lifecycle'],
+      )!,
+      reason: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}reason'],
+      )!,
+      causedByJson: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}caused_by_json'],
+      )!,
+    );
+  }
+
+  @override
+  ClaimLifecycle createAlias(String alias) {
+    return ClaimLifecycle(attachedDatabase, alias);
+  }
+
+  @override
+  bool get withoutRowId => true;
+  @override
+  bool get dontWriteConstraints => true;
+}
+
+class ClaimLifecycleData extends DataClass
+    implements Insertable<ClaimLifecycleData> {
+  final String claimId;
+  final String lifecycle;
+  final String reason;
+  final String causedByJson;
+  const ClaimLifecycleData({
+    required this.claimId,
+    required this.lifecycle,
+    required this.reason,
+    required this.causedByJson,
+  });
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['claim_id'] = Variable<String>(claimId);
+    map['lifecycle'] = Variable<String>(lifecycle);
+    map['reason'] = Variable<String>(reason);
+    map['caused_by_json'] = Variable<String>(causedByJson);
+    return map;
+  }
+
+  ClaimLifecycleCompanion toCompanion(bool nullToAbsent) {
+    return ClaimLifecycleCompanion(
+      claimId: Value(claimId),
+      lifecycle: Value(lifecycle),
+      reason: Value(reason),
+      causedByJson: Value(causedByJson),
+    );
+  }
+
+  factory ClaimLifecycleData.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return ClaimLifecycleData(
+      claimId: serializer.fromJson<String>(json['claim_id']),
+      lifecycle: serializer.fromJson<String>(json['lifecycle']),
+      reason: serializer.fromJson<String>(json['reason']),
+      causedByJson: serializer.fromJson<String>(json['caused_by_json']),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'claim_id': serializer.toJson<String>(claimId),
+      'lifecycle': serializer.toJson<String>(lifecycle),
+      'reason': serializer.toJson<String>(reason),
+      'caused_by_json': serializer.toJson<String>(causedByJson),
+    };
+  }
+
+  ClaimLifecycleData copyWith({
+    String? claimId,
+    String? lifecycle,
+    String? reason,
+    String? causedByJson,
+  }) => ClaimLifecycleData(
+    claimId: claimId ?? this.claimId,
+    lifecycle: lifecycle ?? this.lifecycle,
+    reason: reason ?? this.reason,
+    causedByJson: causedByJson ?? this.causedByJson,
+  );
+  ClaimLifecycleData copyWithCompanion(ClaimLifecycleCompanion data) {
+    return ClaimLifecycleData(
+      claimId: data.claimId.present ? data.claimId.value : this.claimId,
+      lifecycle: data.lifecycle.present ? data.lifecycle.value : this.lifecycle,
+      reason: data.reason.present ? data.reason.value : this.reason,
+      causedByJson: data.causedByJson.present
+          ? data.causedByJson.value
+          : this.causedByJson,
+    );
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('ClaimLifecycleData(')
+          ..write('claimId: $claimId, ')
+          ..write('lifecycle: $lifecycle, ')
+          ..write('reason: $reason, ')
+          ..write('causedByJson: $causedByJson')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode => Object.hash(claimId, lifecycle, reason, causedByJson);
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is ClaimLifecycleData &&
+          other.claimId == this.claimId &&
+          other.lifecycle == this.lifecycle &&
+          other.reason == this.reason &&
+          other.causedByJson == this.causedByJson);
+}
+
+class ClaimLifecycleCompanion extends UpdateCompanion<ClaimLifecycleData> {
+  final Value<String> claimId;
+  final Value<String> lifecycle;
+  final Value<String> reason;
+  final Value<String> causedByJson;
+  const ClaimLifecycleCompanion({
+    this.claimId = const Value.absent(),
+    this.lifecycle = const Value.absent(),
+    this.reason = const Value.absent(),
+    this.causedByJson = const Value.absent(),
+  });
+  ClaimLifecycleCompanion.insert({
+    required String claimId,
+    required String lifecycle,
+    required String reason,
+    this.causedByJson = const Value.absent(),
+  }) : claimId = Value(claimId),
+       lifecycle = Value(lifecycle),
+       reason = Value(reason);
+  static Insertable<ClaimLifecycleData> custom({
+    Expression<String>? claimId,
+    Expression<String>? lifecycle,
+    Expression<String>? reason,
+    Expression<String>? causedByJson,
+  }) {
+    return RawValuesInsertable({
+      if (claimId != null) 'claim_id': claimId,
+      if (lifecycle != null) 'lifecycle': lifecycle,
+      if (reason != null) 'reason': reason,
+      if (causedByJson != null) 'caused_by_json': causedByJson,
+    });
+  }
+
+  ClaimLifecycleCompanion copyWith({
+    Value<String>? claimId,
+    Value<String>? lifecycle,
+    Value<String>? reason,
+    Value<String>? causedByJson,
+  }) {
+    return ClaimLifecycleCompanion(
+      claimId: claimId ?? this.claimId,
+      lifecycle: lifecycle ?? this.lifecycle,
+      reason: reason ?? this.reason,
+      causedByJson: causedByJson ?? this.causedByJson,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (claimId.present) {
+      map['claim_id'] = Variable<String>(claimId.value);
+    }
+    if (lifecycle.present) {
+      map['lifecycle'] = Variable<String>(lifecycle.value);
+    }
+    if (reason.present) {
+      map['reason'] = Variable<String>(reason.value);
+    }
+    if (causedByJson.present) {
+      map['caused_by_json'] = Variable<String>(causedByJson.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('ClaimLifecycleCompanion(')
+          ..write('claimId: $claimId, ')
+          ..write('lifecycle: $lifecycle, ')
+          ..write('reason: $reason, ')
+          ..write('causedByJson: $causedByJson')
+          ..write(')'))
+        .toString();
+  }
+}
+
+class EvidenceConflicts extends Table
+    with TableInfo<EvidenceConflicts, EvidenceConflict> {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  EvidenceConflicts(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _conflictIdMeta = const VerificationMeta(
+    'conflictId',
+  );
+  late final GeneratedColumn<String> conflictId = GeneratedColumn<String>(
+    'conflict_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL PRIMARY KEY',
+  );
+  static const VerificationMeta _entityIdMeta = const VerificationMeta(
+    'entityId',
+  );
+  late final GeneratedColumn<String> entityId = GeneratedColumn<String>(
+    'entity_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _questionMeta = const VerificationMeta(
+    'question',
+  );
+  late final GeneratedColumn<String> question = GeneratedColumn<String>(
+    'question',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (length(question) > 0)',
+  );
+  static const VerificationMeta _kindMeta = const VerificationMeta('kind');
+  late final GeneratedColumn<String> kind = GeneratedColumn<String>(
+    'kind',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (kind IN (\'direct_contradiction\', \'context_dependent\', \'value_overlap\', \'inconsistent_characterisation\'))',
+  );
+  static const VerificationMeta _noteMeta = const VerificationMeta('note');
+  late final GeneratedColumn<String> note = GeneratedColumn<String>(
+    'note',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (length(note) > 0)',
+  );
+  static const VerificationMeta _stateMeta = const VerificationMeta('state');
+  late final GeneratedColumn<String> state = GeneratedColumn<String>(
+    'state',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints:
+        'NOT NULL CHECK (state IN (\'open\', \'resolved_by_reviewer\'))',
+  );
+  static const VerificationMeta _detectedAtMeta = const VerificationMeta(
+    'detectedAt',
+  );
+  late final GeneratedColumn<String> detectedAt = GeneratedColumn<String>(
+    'detected_at',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  @override
+  List<GeneratedColumn> get $columns => [
+    conflictId,
+    entityId,
+    question,
+    kind,
+    note,
+    state,
+    detectedAt,
+  ];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'evidence_conflicts';
+  @override
+  VerificationContext validateIntegrity(
+    Insertable<EvidenceConflict> instance, {
+    bool isInserting = false,
+  }) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('conflict_id')) {
+      context.handle(
+        _conflictIdMeta,
+        conflictId.isAcceptableOrUnknown(data['conflict_id']!, _conflictIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_conflictIdMeta);
+    }
+    if (data.containsKey('entity_id')) {
+      context.handle(
+        _entityIdMeta,
+        entityId.isAcceptableOrUnknown(data['entity_id']!, _entityIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_entityIdMeta);
+    }
+    if (data.containsKey('question')) {
+      context.handle(
+        _questionMeta,
+        question.isAcceptableOrUnknown(data['question']!, _questionMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_questionMeta);
+    }
+    if (data.containsKey('kind')) {
+      context.handle(
+        _kindMeta,
+        kind.isAcceptableOrUnknown(data['kind']!, _kindMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_kindMeta);
+    }
+    if (data.containsKey('note')) {
+      context.handle(
+        _noteMeta,
+        note.isAcceptableOrUnknown(data['note']!, _noteMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_noteMeta);
+    }
+    if (data.containsKey('state')) {
+      context.handle(
+        _stateMeta,
+        state.isAcceptableOrUnknown(data['state']!, _stateMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_stateMeta);
+    }
+    if (data.containsKey('detected_at')) {
+      context.handle(
+        _detectedAtMeta,
+        detectedAt.isAcceptableOrUnknown(data['detected_at']!, _detectedAtMeta),
+      );
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {conflictId};
+  @override
+  EvidenceConflict map(Map<String, dynamic> data, {String? tablePrefix}) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return EvidenceConflict(
+      conflictId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}conflict_id'],
+      )!,
+      entityId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}entity_id'],
+      )!,
+      question: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}question'],
+      )!,
+      kind: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}kind'],
+      )!,
+      note: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}note'],
+      )!,
+      state: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}state'],
+      )!,
+      detectedAt: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}detected_at'],
+      ),
+    );
+  }
+
+  @override
+  EvidenceConflicts createAlias(String alias) {
+    return EvidenceConflicts(attachedDatabase, alias);
+  }
+
+  @override
+  bool get withoutRowId => true;
+  @override
+  bool get dontWriteConstraints => true;
+}
+
+class EvidenceConflict extends DataClass
+    implements Insertable<EvidenceConflict> {
+  final String conflictId;
+  final String entityId;
+  final String question;
+  final String kind;
+  final String note;
+  final String state;
+  final String? detectedAt;
+  const EvidenceConflict({
+    required this.conflictId,
+    required this.entityId,
+    required this.question,
+    required this.kind,
+    required this.note,
+    required this.state,
+    this.detectedAt,
+  });
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['conflict_id'] = Variable<String>(conflictId);
+    map['entity_id'] = Variable<String>(entityId);
+    map['question'] = Variable<String>(question);
+    map['kind'] = Variable<String>(kind);
+    map['note'] = Variable<String>(note);
+    map['state'] = Variable<String>(state);
+    if (!nullToAbsent || detectedAt != null) {
+      map['detected_at'] = Variable<String>(detectedAt);
+    }
+    return map;
+  }
+
+  EvidenceConflictsCompanion toCompanion(bool nullToAbsent) {
+    return EvidenceConflictsCompanion(
+      conflictId: Value(conflictId),
+      entityId: Value(entityId),
+      question: Value(question),
+      kind: Value(kind),
+      note: Value(note),
+      state: Value(state),
+      detectedAt: detectedAt == null && nullToAbsent
+          ? const Value.absent()
+          : Value(detectedAt),
+    );
+  }
+
+  factory EvidenceConflict.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return EvidenceConflict(
+      conflictId: serializer.fromJson<String>(json['conflict_id']),
+      entityId: serializer.fromJson<String>(json['entity_id']),
+      question: serializer.fromJson<String>(json['question']),
+      kind: serializer.fromJson<String>(json['kind']),
+      note: serializer.fromJson<String>(json['note']),
+      state: serializer.fromJson<String>(json['state']),
+      detectedAt: serializer.fromJson<String?>(json['detected_at']),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'conflict_id': serializer.toJson<String>(conflictId),
+      'entity_id': serializer.toJson<String>(entityId),
+      'question': serializer.toJson<String>(question),
+      'kind': serializer.toJson<String>(kind),
+      'note': serializer.toJson<String>(note),
+      'state': serializer.toJson<String>(state),
+      'detected_at': serializer.toJson<String?>(detectedAt),
+    };
+  }
+
+  EvidenceConflict copyWith({
+    String? conflictId,
+    String? entityId,
+    String? question,
+    String? kind,
+    String? note,
+    String? state,
+    Value<String?> detectedAt = const Value.absent(),
+  }) => EvidenceConflict(
+    conflictId: conflictId ?? this.conflictId,
+    entityId: entityId ?? this.entityId,
+    question: question ?? this.question,
+    kind: kind ?? this.kind,
+    note: note ?? this.note,
+    state: state ?? this.state,
+    detectedAt: detectedAt.present ? detectedAt.value : this.detectedAt,
+  );
+  EvidenceConflict copyWithCompanion(EvidenceConflictsCompanion data) {
+    return EvidenceConflict(
+      conflictId: data.conflictId.present
+          ? data.conflictId.value
+          : this.conflictId,
+      entityId: data.entityId.present ? data.entityId.value : this.entityId,
+      question: data.question.present ? data.question.value : this.question,
+      kind: data.kind.present ? data.kind.value : this.kind,
+      note: data.note.present ? data.note.value : this.note,
+      state: data.state.present ? data.state.value : this.state,
+      detectedAt: data.detectedAt.present
+          ? data.detectedAt.value
+          : this.detectedAt,
+    );
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('EvidenceConflict(')
+          ..write('conflictId: $conflictId, ')
+          ..write('entityId: $entityId, ')
+          ..write('question: $question, ')
+          ..write('kind: $kind, ')
+          ..write('note: $note, ')
+          ..write('state: $state, ')
+          ..write('detectedAt: $detectedAt')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode => Object.hash(
+    conflictId,
+    entityId,
+    question,
+    kind,
+    note,
+    state,
+    detectedAt,
+  );
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is EvidenceConflict &&
+          other.conflictId == this.conflictId &&
+          other.entityId == this.entityId &&
+          other.question == this.question &&
+          other.kind == this.kind &&
+          other.note == this.note &&
+          other.state == this.state &&
+          other.detectedAt == this.detectedAt);
+}
+
+class EvidenceConflictsCompanion extends UpdateCompanion<EvidenceConflict> {
+  final Value<String> conflictId;
+  final Value<String> entityId;
+  final Value<String> question;
+  final Value<String> kind;
+  final Value<String> note;
+  final Value<String> state;
+  final Value<String?> detectedAt;
+  const EvidenceConflictsCompanion({
+    this.conflictId = const Value.absent(),
+    this.entityId = const Value.absent(),
+    this.question = const Value.absent(),
+    this.kind = const Value.absent(),
+    this.note = const Value.absent(),
+    this.state = const Value.absent(),
+    this.detectedAt = const Value.absent(),
+  });
+  EvidenceConflictsCompanion.insert({
+    required String conflictId,
+    required String entityId,
+    required String question,
+    required String kind,
+    required String note,
+    required String state,
+    this.detectedAt = const Value.absent(),
+  }) : conflictId = Value(conflictId),
+       entityId = Value(entityId),
+       question = Value(question),
+       kind = Value(kind),
+       note = Value(note),
+       state = Value(state);
+  static Insertable<EvidenceConflict> custom({
+    Expression<String>? conflictId,
+    Expression<String>? entityId,
+    Expression<String>? question,
+    Expression<String>? kind,
+    Expression<String>? note,
+    Expression<String>? state,
+    Expression<String>? detectedAt,
+  }) {
+    return RawValuesInsertable({
+      if (conflictId != null) 'conflict_id': conflictId,
+      if (entityId != null) 'entity_id': entityId,
+      if (question != null) 'question': question,
+      if (kind != null) 'kind': kind,
+      if (note != null) 'note': note,
+      if (state != null) 'state': state,
+      if (detectedAt != null) 'detected_at': detectedAt,
+    });
+  }
+
+  EvidenceConflictsCompanion copyWith({
+    Value<String>? conflictId,
+    Value<String>? entityId,
+    Value<String>? question,
+    Value<String>? kind,
+    Value<String>? note,
+    Value<String>? state,
+    Value<String?>? detectedAt,
+  }) {
+    return EvidenceConflictsCompanion(
+      conflictId: conflictId ?? this.conflictId,
+      entityId: entityId ?? this.entityId,
+      question: question ?? this.question,
+      kind: kind ?? this.kind,
+      note: note ?? this.note,
+      state: state ?? this.state,
+      detectedAt: detectedAt ?? this.detectedAt,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (conflictId.present) {
+      map['conflict_id'] = Variable<String>(conflictId.value);
+    }
+    if (entityId.present) {
+      map['entity_id'] = Variable<String>(entityId.value);
+    }
+    if (question.present) {
+      map['question'] = Variable<String>(question.value);
+    }
+    if (kind.present) {
+      map['kind'] = Variable<String>(kind.value);
+    }
+    if (note.present) {
+      map['note'] = Variable<String>(note.value);
+    }
+    if (state.present) {
+      map['state'] = Variable<String>(state.value);
+    }
+    if (detectedAt.present) {
+      map['detected_at'] = Variable<String>(detectedAt.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('EvidenceConflictsCompanion(')
+          ..write('conflictId: $conflictId, ')
+          ..write('entityId: $entityId, ')
+          ..write('question: $question, ')
+          ..write('kind: $kind, ')
+          ..write('note: $note, ')
+          ..write('state: $state, ')
+          ..write('detectedAt: $detectedAt')
+          ..write(')'))
+        .toString();
+  }
+}
+
+class ConflictClaims extends Table
+    with TableInfo<ConflictClaims, ConflictClaim> {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  ConflictClaims(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _conflictIdMeta = const VerificationMeta(
+    'conflictId',
+  );
+  late final GeneratedColumn<String> conflictId = GeneratedColumn<String>(
+    'conflict_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL REFERENCES evidence_conflicts(conflict_id)',
+  );
+  static const VerificationMeta _claimIdMeta = const VerificationMeta(
+    'claimId',
+  );
+  late final GeneratedColumn<String> claimId = GeneratedColumn<String>(
+    'claim_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL REFERENCES claims(claim_id)',
+  );
+  @override
+  List<GeneratedColumn> get $columns => [conflictId, claimId];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'conflict_claims';
+  @override
+  VerificationContext validateIntegrity(
+    Insertable<ConflictClaim> instance, {
+    bool isInserting = false,
+  }) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('conflict_id')) {
+      context.handle(
+        _conflictIdMeta,
+        conflictId.isAcceptableOrUnknown(data['conflict_id']!, _conflictIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_conflictIdMeta);
+    }
+    if (data.containsKey('claim_id')) {
+      context.handle(
+        _claimIdMeta,
+        claimId.isAcceptableOrUnknown(data['claim_id']!, _claimIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_claimIdMeta);
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {conflictId, claimId};
+  @override
+  ConflictClaim map(Map<String, dynamic> data, {String? tablePrefix}) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return ConflictClaim(
+      conflictId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}conflict_id'],
+      )!,
+      claimId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}claim_id'],
+      )!,
+    );
+  }
+
+  @override
+  ConflictClaims createAlias(String alias) {
+    return ConflictClaims(attachedDatabase, alias);
+  }
+
+  @override
+  bool get withoutRowId => true;
+  @override
+  List<String> get customConstraints => const [
+    'PRIMARY KEY(conflict_id, claim_id)',
+  ];
+  @override
+  bool get dontWriteConstraints => true;
+}
+
+class ConflictClaim extends DataClass implements Insertable<ConflictClaim> {
+  final String conflictId;
+  final String claimId;
+  const ConflictClaim({required this.conflictId, required this.claimId});
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['conflict_id'] = Variable<String>(conflictId);
+    map['claim_id'] = Variable<String>(claimId);
+    return map;
+  }
+
+  ConflictClaimsCompanion toCompanion(bool nullToAbsent) {
+    return ConflictClaimsCompanion(
+      conflictId: Value(conflictId),
+      claimId: Value(claimId),
+    );
+  }
+
+  factory ConflictClaim.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return ConflictClaim(
+      conflictId: serializer.fromJson<String>(json['conflict_id']),
+      claimId: serializer.fromJson<String>(json['claim_id']),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'conflict_id': serializer.toJson<String>(conflictId),
+      'claim_id': serializer.toJson<String>(claimId),
+    };
+  }
+
+  ConflictClaim copyWith({String? conflictId, String? claimId}) =>
+      ConflictClaim(
+        conflictId: conflictId ?? this.conflictId,
+        claimId: claimId ?? this.claimId,
+      );
+  ConflictClaim copyWithCompanion(ConflictClaimsCompanion data) {
+    return ConflictClaim(
+      conflictId: data.conflictId.present
+          ? data.conflictId.value
+          : this.conflictId,
+      claimId: data.claimId.present ? data.claimId.value : this.claimId,
+    );
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('ConflictClaim(')
+          ..write('conflictId: $conflictId, ')
+          ..write('claimId: $claimId')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode => Object.hash(conflictId, claimId);
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is ConflictClaim &&
+          other.conflictId == this.conflictId &&
+          other.claimId == this.claimId);
+}
+
+class ConflictClaimsCompanion extends UpdateCompanion<ConflictClaim> {
+  final Value<String> conflictId;
+  final Value<String> claimId;
+  const ConflictClaimsCompanion({
+    this.conflictId = const Value.absent(),
+    this.claimId = const Value.absent(),
+  });
+  ConflictClaimsCompanion.insert({
+    required String conflictId,
+    required String claimId,
+  }) : conflictId = Value(conflictId),
+       claimId = Value(claimId);
+  static Insertable<ConflictClaim> custom({
+    Expression<String>? conflictId,
+    Expression<String>? claimId,
+  }) {
+    return RawValuesInsertable({
+      if (conflictId != null) 'conflict_id': conflictId,
+      if (claimId != null) 'claim_id': claimId,
+    });
+  }
+
+  ConflictClaimsCompanion copyWith({
+    Value<String>? conflictId,
+    Value<String>? claimId,
+  }) {
+    return ConflictClaimsCompanion(
+      conflictId: conflictId ?? this.conflictId,
+      claimId: claimId ?? this.claimId,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (conflictId.present) {
+      map['conflict_id'] = Variable<String>(conflictId.value);
+    }
+    if (claimId.present) {
+      map['claim_id'] = Variable<String>(claimId.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('ConflictClaimsCompanion(')
+          ..write('conflictId: $conflictId, ')
+          ..write('claimId: $claimId')
+          ..write(')'))
+        .toString();
+  }
+}
+
+class ReviewActions extends Table with TableInfo<ReviewActions, ReviewAction> {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  ReviewActions(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _actionIdMeta = const VerificationMeta(
+    'actionId',
+  );
+  late final GeneratedColumn<String> actionId = GeneratedColumn<String>(
+    'action_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL PRIMARY KEY',
+  );
+  static const VerificationMeta _subjectIdMeta = const VerificationMeta(
+    'subjectId',
+  );
+  late final GeneratedColumn<String> subjectId = GeneratedColumn<String>(
+    'subject_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _subjectVersionMeta = const VerificationMeta(
+    'subjectVersion',
+  );
+  late final GeneratedColumn<int> subjectVersion = GeneratedColumn<int>(
+    'subject_version',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _contentVersionMeta = const VerificationMeta(
+    'contentVersion',
+  );
+  late final GeneratedColumn<String> contentVersion = GeneratedColumn<String>(
+    'content_version',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _domainMeta = const VerificationMeta('domain');
+  late final GeneratedColumn<String> domain = GeneratedColumn<String>(
+    'domain',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _reviewerIdMeta = const VerificationMeta(
+    'reviewerId',
+  );
+  late final GeneratedColumn<String> reviewerId = GeneratedColumn<String>(
+    'reviewer_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL REFERENCES reviewers(reviewer_id)',
+  );
+  static const VerificationMeta _roleMeta = const VerificationMeta('role');
+  late final GeneratedColumn<String> role = GeneratedColumn<String>(
+    'role',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (role IN (\'forensic_toxicology\', \'forensic_medicine\', \'laboratory_analytical\', \'forensic_biochemistry\', \'legal_jurisdiction\', \'translation\', \'scientific_editor\'))',
+  );
+  static const VerificationMeta _actedAtMeta = const VerificationMeta(
+    'actedAt',
+  );
+  late final GeneratedColumn<String> actedAt = GeneratedColumn<String>(
+    'acted_at',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _noteMeta = const VerificationMeta('note');
+  late final GeneratedColumn<String> note = GeneratedColumn<String>(
+    'note',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: 'NOT NULL DEFAULT \'\'',
+    defaultValue: const CustomExpression('\'\''),
+  );
+  @override
+  List<GeneratedColumn> get $columns => [
+    actionId,
+    subjectId,
+    subjectVersion,
+    contentVersion,
+    domain,
+    reviewerId,
+    role,
+    actedAt,
+    note,
+  ];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'review_actions';
+  @override
+  VerificationContext validateIntegrity(
+    Insertable<ReviewAction> instance, {
+    bool isInserting = false,
+  }) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('action_id')) {
+      context.handle(
+        _actionIdMeta,
+        actionId.isAcceptableOrUnknown(data['action_id']!, _actionIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_actionIdMeta);
+    }
+    if (data.containsKey('subject_id')) {
+      context.handle(
+        _subjectIdMeta,
+        subjectId.isAcceptableOrUnknown(data['subject_id']!, _subjectIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_subjectIdMeta);
+    }
+    if (data.containsKey('subject_version')) {
+      context.handle(
+        _subjectVersionMeta,
+        subjectVersion.isAcceptableOrUnknown(
+          data['subject_version']!,
+          _subjectVersionMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_subjectVersionMeta);
+    }
+    if (data.containsKey('content_version')) {
+      context.handle(
+        _contentVersionMeta,
+        contentVersion.isAcceptableOrUnknown(
+          data['content_version']!,
+          _contentVersionMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_contentVersionMeta);
+    }
+    if (data.containsKey('domain')) {
+      context.handle(
+        _domainMeta,
+        domain.isAcceptableOrUnknown(data['domain']!, _domainMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_domainMeta);
+    }
+    if (data.containsKey('reviewer_id')) {
+      context.handle(
+        _reviewerIdMeta,
+        reviewerId.isAcceptableOrUnknown(data['reviewer_id']!, _reviewerIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_reviewerIdMeta);
+    }
+    if (data.containsKey('role')) {
+      context.handle(
+        _roleMeta,
+        role.isAcceptableOrUnknown(data['role']!, _roleMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_roleMeta);
+    }
+    if (data.containsKey('acted_at')) {
+      context.handle(
+        _actedAtMeta,
+        actedAt.isAcceptableOrUnknown(data['acted_at']!, _actedAtMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_actedAtMeta);
+    }
+    if (data.containsKey('note')) {
+      context.handle(
+        _noteMeta,
+        note.isAcceptableOrUnknown(data['note']!, _noteMeta),
+      );
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {actionId};
+  @override
+  ReviewAction map(Map<String, dynamic> data, {String? tablePrefix}) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return ReviewAction(
+      actionId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}action_id'],
+      )!,
+      subjectId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}subject_id'],
+      )!,
+      subjectVersion: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}subject_version'],
+      )!,
+      contentVersion: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}content_version'],
+      )!,
+      domain: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}domain'],
+      )!,
+      reviewerId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}reviewer_id'],
+      )!,
+      role: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}role'],
+      )!,
+      actedAt: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}acted_at'],
+      )!,
+      note: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}note'],
+      )!,
+    );
+  }
+
+  @override
+  ReviewActions createAlias(String alias) {
+    return ReviewActions(attachedDatabase, alias);
+  }
+
+  @override
+  bool get withoutRowId => true;
+  @override
+  bool get dontWriteConstraints => true;
+}
+
+class ReviewAction extends DataClass implements Insertable<ReviewAction> {
+  final String actionId;
+  final String subjectId;
+  final int subjectVersion;
+  final String contentVersion;
+  final String domain;
+  final String reviewerId;
+  final String role;
+  final String actedAt;
+  final String note;
+  const ReviewAction({
+    required this.actionId,
+    required this.subjectId,
+    required this.subjectVersion,
+    required this.contentVersion,
+    required this.domain,
+    required this.reviewerId,
+    required this.role,
+    required this.actedAt,
+    required this.note,
+  });
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['action_id'] = Variable<String>(actionId);
+    map['subject_id'] = Variable<String>(subjectId);
+    map['subject_version'] = Variable<int>(subjectVersion);
+    map['content_version'] = Variable<String>(contentVersion);
+    map['domain'] = Variable<String>(domain);
+    map['reviewer_id'] = Variable<String>(reviewerId);
+    map['role'] = Variable<String>(role);
+    map['acted_at'] = Variable<String>(actedAt);
+    map['note'] = Variable<String>(note);
+    return map;
+  }
+
+  ReviewActionsCompanion toCompanion(bool nullToAbsent) {
+    return ReviewActionsCompanion(
+      actionId: Value(actionId),
+      subjectId: Value(subjectId),
+      subjectVersion: Value(subjectVersion),
+      contentVersion: Value(contentVersion),
+      domain: Value(domain),
+      reviewerId: Value(reviewerId),
+      role: Value(role),
+      actedAt: Value(actedAt),
+      note: Value(note),
+    );
+  }
+
+  factory ReviewAction.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return ReviewAction(
+      actionId: serializer.fromJson<String>(json['action_id']),
+      subjectId: serializer.fromJson<String>(json['subject_id']),
+      subjectVersion: serializer.fromJson<int>(json['subject_version']),
+      contentVersion: serializer.fromJson<String>(json['content_version']),
+      domain: serializer.fromJson<String>(json['domain']),
+      reviewerId: serializer.fromJson<String>(json['reviewer_id']),
+      role: serializer.fromJson<String>(json['role']),
+      actedAt: serializer.fromJson<String>(json['acted_at']),
+      note: serializer.fromJson<String>(json['note']),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'action_id': serializer.toJson<String>(actionId),
+      'subject_id': serializer.toJson<String>(subjectId),
+      'subject_version': serializer.toJson<int>(subjectVersion),
+      'content_version': serializer.toJson<String>(contentVersion),
+      'domain': serializer.toJson<String>(domain),
+      'reviewer_id': serializer.toJson<String>(reviewerId),
+      'role': serializer.toJson<String>(role),
+      'acted_at': serializer.toJson<String>(actedAt),
+      'note': serializer.toJson<String>(note),
+    };
+  }
+
+  ReviewAction copyWith({
+    String? actionId,
+    String? subjectId,
+    int? subjectVersion,
+    String? contentVersion,
+    String? domain,
+    String? reviewerId,
+    String? role,
+    String? actedAt,
+    String? note,
+  }) => ReviewAction(
+    actionId: actionId ?? this.actionId,
+    subjectId: subjectId ?? this.subjectId,
+    subjectVersion: subjectVersion ?? this.subjectVersion,
+    contentVersion: contentVersion ?? this.contentVersion,
+    domain: domain ?? this.domain,
+    reviewerId: reviewerId ?? this.reviewerId,
+    role: role ?? this.role,
+    actedAt: actedAt ?? this.actedAt,
+    note: note ?? this.note,
+  );
+  ReviewAction copyWithCompanion(ReviewActionsCompanion data) {
+    return ReviewAction(
+      actionId: data.actionId.present ? data.actionId.value : this.actionId,
+      subjectId: data.subjectId.present ? data.subjectId.value : this.subjectId,
+      subjectVersion: data.subjectVersion.present
+          ? data.subjectVersion.value
+          : this.subjectVersion,
+      contentVersion: data.contentVersion.present
+          ? data.contentVersion.value
+          : this.contentVersion,
+      domain: data.domain.present ? data.domain.value : this.domain,
+      reviewerId: data.reviewerId.present
+          ? data.reviewerId.value
+          : this.reviewerId,
+      role: data.role.present ? data.role.value : this.role,
+      actedAt: data.actedAt.present ? data.actedAt.value : this.actedAt,
+      note: data.note.present ? data.note.value : this.note,
+    );
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('ReviewAction(')
+          ..write('actionId: $actionId, ')
+          ..write('subjectId: $subjectId, ')
+          ..write('subjectVersion: $subjectVersion, ')
+          ..write('contentVersion: $contentVersion, ')
+          ..write('domain: $domain, ')
+          ..write('reviewerId: $reviewerId, ')
+          ..write('role: $role, ')
+          ..write('actedAt: $actedAt, ')
+          ..write('note: $note')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode => Object.hash(
+    actionId,
+    subjectId,
+    subjectVersion,
+    contentVersion,
+    domain,
+    reviewerId,
+    role,
+    actedAt,
+    note,
+  );
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is ReviewAction &&
+          other.actionId == this.actionId &&
+          other.subjectId == this.subjectId &&
+          other.subjectVersion == this.subjectVersion &&
+          other.contentVersion == this.contentVersion &&
+          other.domain == this.domain &&
+          other.reviewerId == this.reviewerId &&
+          other.role == this.role &&
+          other.actedAt == this.actedAt &&
+          other.note == this.note);
+}
+
+class ReviewActionsCompanion extends UpdateCompanion<ReviewAction> {
+  final Value<String> actionId;
+  final Value<String> subjectId;
+  final Value<int> subjectVersion;
+  final Value<String> contentVersion;
+  final Value<String> domain;
+  final Value<String> reviewerId;
+  final Value<String> role;
+  final Value<String> actedAt;
+  final Value<String> note;
+  const ReviewActionsCompanion({
+    this.actionId = const Value.absent(),
+    this.subjectId = const Value.absent(),
+    this.subjectVersion = const Value.absent(),
+    this.contentVersion = const Value.absent(),
+    this.domain = const Value.absent(),
+    this.reviewerId = const Value.absent(),
+    this.role = const Value.absent(),
+    this.actedAt = const Value.absent(),
+    this.note = const Value.absent(),
+  });
+  ReviewActionsCompanion.insert({
+    required String actionId,
+    required String subjectId,
+    required int subjectVersion,
+    required String contentVersion,
+    required String domain,
+    required String reviewerId,
+    required String role,
+    required String actedAt,
+    this.note = const Value.absent(),
+  }) : actionId = Value(actionId),
+       subjectId = Value(subjectId),
+       subjectVersion = Value(subjectVersion),
+       contentVersion = Value(contentVersion),
+       domain = Value(domain),
+       reviewerId = Value(reviewerId),
+       role = Value(role),
+       actedAt = Value(actedAt);
+  static Insertable<ReviewAction> custom({
+    Expression<String>? actionId,
+    Expression<String>? subjectId,
+    Expression<int>? subjectVersion,
+    Expression<String>? contentVersion,
+    Expression<String>? domain,
+    Expression<String>? reviewerId,
+    Expression<String>? role,
+    Expression<String>? actedAt,
+    Expression<String>? note,
+  }) {
+    return RawValuesInsertable({
+      if (actionId != null) 'action_id': actionId,
+      if (subjectId != null) 'subject_id': subjectId,
+      if (subjectVersion != null) 'subject_version': subjectVersion,
+      if (contentVersion != null) 'content_version': contentVersion,
+      if (domain != null) 'domain': domain,
+      if (reviewerId != null) 'reviewer_id': reviewerId,
+      if (role != null) 'role': role,
+      if (actedAt != null) 'acted_at': actedAt,
+      if (note != null) 'note': note,
+    });
+  }
+
+  ReviewActionsCompanion copyWith({
+    Value<String>? actionId,
+    Value<String>? subjectId,
+    Value<int>? subjectVersion,
+    Value<String>? contentVersion,
+    Value<String>? domain,
+    Value<String>? reviewerId,
+    Value<String>? role,
+    Value<String>? actedAt,
+    Value<String>? note,
+  }) {
+    return ReviewActionsCompanion(
+      actionId: actionId ?? this.actionId,
+      subjectId: subjectId ?? this.subjectId,
+      subjectVersion: subjectVersion ?? this.subjectVersion,
+      contentVersion: contentVersion ?? this.contentVersion,
+      domain: domain ?? this.domain,
+      reviewerId: reviewerId ?? this.reviewerId,
+      role: role ?? this.role,
+      actedAt: actedAt ?? this.actedAt,
+      note: note ?? this.note,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (actionId.present) {
+      map['action_id'] = Variable<String>(actionId.value);
+    }
+    if (subjectId.present) {
+      map['subject_id'] = Variable<String>(subjectId.value);
+    }
+    if (subjectVersion.present) {
+      map['subject_version'] = Variable<int>(subjectVersion.value);
+    }
+    if (contentVersion.present) {
+      map['content_version'] = Variable<String>(contentVersion.value);
+    }
+    if (domain.present) {
+      map['domain'] = Variable<String>(domain.value);
+    }
+    if (reviewerId.present) {
+      map['reviewer_id'] = Variable<String>(reviewerId.value);
+    }
+    if (role.present) {
+      map['role'] = Variable<String>(role.value);
+    }
+    if (actedAt.present) {
+      map['acted_at'] = Variable<String>(actedAt.value);
+    }
+    if (note.present) {
+      map['note'] = Variable<String>(note.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('ReviewActionsCompanion(')
+          ..write('actionId: $actionId, ')
+          ..write('subjectId: $subjectId, ')
+          ..write('subjectVersion: $subjectVersion, ')
+          ..write('contentVersion: $contentVersion, ')
+          ..write('domain: $domain, ')
+          ..write('reviewerId: $reviewerId, ')
+          ..write('role: $role, ')
+          ..write('actedAt: $actedAt, ')
+          ..write('note: $note')
+          ..write(')'))
+        .toString();
+  }
+}
+
+class MetaboliteRelations extends Table
+    with TableInfo<MetaboliteRelations, MetaboliteRelation> {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  MetaboliteRelations(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _relationIdMeta = const VerificationMeta(
+    'relationId',
+  );
+  late final GeneratedColumn<String> relationId = GeneratedColumn<String>(
+    'relation_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL PRIMARY KEY',
+  );
+  static const VerificationMeta _parentIdMeta = const VerificationMeta(
+    'parentId',
+  );
+  late final GeneratedColumn<String> parentId = GeneratedColumn<String>(
+    'parent_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _metaboliteIdMeta = const VerificationMeta(
+    'metaboliteId',
+  );
+  late final GeneratedColumn<String> metaboliteId = GeneratedColumn<String>(
+    'metabolite_id',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _metaboliteNameMeta = const VerificationMeta(
+    'metaboliteName',
+  );
+  late final GeneratedColumn<String> metaboliteName = GeneratedColumn<String>(
+    'metabolite_name',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _kindMeta = const VerificationMeta('kind');
+  late final GeneratedColumn<String> kind = GeneratedColumn<String>(
+    'kind',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (kind IN (\'metabolite\', \'active_metabolite\', \'inactive_metabolite\', \'marker\', \'artifact\'))',
+  );
+  static const VerificationMeta _specimensJsonMeta = const VerificationMeta(
+    'specimensJson',
+  );
+  late final GeneratedColumn<String> specimensJson = GeneratedColumn<String>(
+    'specimens_json',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: 'NOT NULL DEFAULT \'[]\'',
+    defaultValue: const CustomExpression('\'[]\''),
+  );
+  static const VerificationMeta _basisClaimIdMeta = const VerificationMeta(
+    'basisClaimId',
+  );
+  late final GeneratedColumn<String> basisClaimId = GeneratedColumn<String>(
+    'basis_claim_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL REFERENCES claims(claim_id)',
+  );
+  @override
+  List<GeneratedColumn> get $columns => [
+    relationId,
+    parentId,
+    metaboliteId,
+    metaboliteName,
+    kind,
+    specimensJson,
+    basisClaimId,
+  ];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'metabolite_relations';
+  @override
+  VerificationContext validateIntegrity(
+    Insertable<MetaboliteRelation> instance, {
+    bool isInserting = false,
+  }) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('relation_id')) {
+      context.handle(
+        _relationIdMeta,
+        relationId.isAcceptableOrUnknown(data['relation_id']!, _relationIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_relationIdMeta);
+    }
+    if (data.containsKey('parent_id')) {
+      context.handle(
+        _parentIdMeta,
+        parentId.isAcceptableOrUnknown(data['parent_id']!, _parentIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_parentIdMeta);
+    }
+    if (data.containsKey('metabolite_id')) {
+      context.handle(
+        _metaboliteIdMeta,
+        metaboliteId.isAcceptableOrUnknown(
+          data['metabolite_id']!,
+          _metaboliteIdMeta,
+        ),
+      );
+    }
+    if (data.containsKey('metabolite_name')) {
+      context.handle(
+        _metaboliteNameMeta,
+        metaboliteName.isAcceptableOrUnknown(
+          data['metabolite_name']!,
+          _metaboliteNameMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_metaboliteNameMeta);
+    }
+    if (data.containsKey('kind')) {
+      context.handle(
+        _kindMeta,
+        kind.isAcceptableOrUnknown(data['kind']!, _kindMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_kindMeta);
+    }
+    if (data.containsKey('specimens_json')) {
+      context.handle(
+        _specimensJsonMeta,
+        specimensJson.isAcceptableOrUnknown(
+          data['specimens_json']!,
+          _specimensJsonMeta,
+        ),
+      );
+    }
+    if (data.containsKey('basis_claim_id')) {
+      context.handle(
+        _basisClaimIdMeta,
+        basisClaimId.isAcceptableOrUnknown(
+          data['basis_claim_id']!,
+          _basisClaimIdMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_basisClaimIdMeta);
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {relationId};
+  @override
+  MetaboliteRelation map(Map<String, dynamic> data, {String? tablePrefix}) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return MetaboliteRelation(
+      relationId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}relation_id'],
+      )!,
+      parentId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}parent_id'],
+      )!,
+      metaboliteId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}metabolite_id'],
+      ),
+      metaboliteName: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}metabolite_name'],
+      )!,
+      kind: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}kind'],
+      )!,
+      specimensJson: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}specimens_json'],
+      )!,
+      basisClaimId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}basis_claim_id'],
+      )!,
+    );
+  }
+
+  @override
+  MetaboliteRelations createAlias(String alias) {
+    return MetaboliteRelations(attachedDatabase, alias);
+  }
+
+  @override
+  bool get withoutRowId => true;
+  @override
+  bool get dontWriteConstraints => true;
+}
+
+class MetaboliteRelation extends DataClass
+    implements Insertable<MetaboliteRelation> {
+  final String relationId;
+  final String parentId;
+  final String? metaboliteId;
+  final String metaboliteName;
+  final String kind;
+  final String specimensJson;
+  final String basisClaimId;
+  const MetaboliteRelation({
+    required this.relationId,
+    required this.parentId,
+    this.metaboliteId,
+    required this.metaboliteName,
+    required this.kind,
+    required this.specimensJson,
+    required this.basisClaimId,
+  });
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['relation_id'] = Variable<String>(relationId);
+    map['parent_id'] = Variable<String>(parentId);
+    if (!nullToAbsent || metaboliteId != null) {
+      map['metabolite_id'] = Variable<String>(metaboliteId);
+    }
+    map['metabolite_name'] = Variable<String>(metaboliteName);
+    map['kind'] = Variable<String>(kind);
+    map['specimens_json'] = Variable<String>(specimensJson);
+    map['basis_claim_id'] = Variable<String>(basisClaimId);
+    return map;
+  }
+
+  MetaboliteRelationsCompanion toCompanion(bool nullToAbsent) {
+    return MetaboliteRelationsCompanion(
+      relationId: Value(relationId),
+      parentId: Value(parentId),
+      metaboliteId: metaboliteId == null && nullToAbsent
+          ? const Value.absent()
+          : Value(metaboliteId),
+      metaboliteName: Value(metaboliteName),
+      kind: Value(kind),
+      specimensJson: Value(specimensJson),
+      basisClaimId: Value(basisClaimId),
+    );
+  }
+
+  factory MetaboliteRelation.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return MetaboliteRelation(
+      relationId: serializer.fromJson<String>(json['relation_id']),
+      parentId: serializer.fromJson<String>(json['parent_id']),
+      metaboliteId: serializer.fromJson<String?>(json['metabolite_id']),
+      metaboliteName: serializer.fromJson<String>(json['metabolite_name']),
+      kind: serializer.fromJson<String>(json['kind']),
+      specimensJson: serializer.fromJson<String>(json['specimens_json']),
+      basisClaimId: serializer.fromJson<String>(json['basis_claim_id']),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'relation_id': serializer.toJson<String>(relationId),
+      'parent_id': serializer.toJson<String>(parentId),
+      'metabolite_id': serializer.toJson<String?>(metaboliteId),
+      'metabolite_name': serializer.toJson<String>(metaboliteName),
+      'kind': serializer.toJson<String>(kind),
+      'specimens_json': serializer.toJson<String>(specimensJson),
+      'basis_claim_id': serializer.toJson<String>(basisClaimId),
+    };
+  }
+
+  MetaboliteRelation copyWith({
+    String? relationId,
+    String? parentId,
+    Value<String?> metaboliteId = const Value.absent(),
+    String? metaboliteName,
+    String? kind,
+    String? specimensJson,
+    String? basisClaimId,
+  }) => MetaboliteRelation(
+    relationId: relationId ?? this.relationId,
+    parentId: parentId ?? this.parentId,
+    metaboliteId: metaboliteId.present ? metaboliteId.value : this.metaboliteId,
+    metaboliteName: metaboliteName ?? this.metaboliteName,
+    kind: kind ?? this.kind,
+    specimensJson: specimensJson ?? this.specimensJson,
+    basisClaimId: basisClaimId ?? this.basisClaimId,
+  );
+  MetaboliteRelation copyWithCompanion(MetaboliteRelationsCompanion data) {
+    return MetaboliteRelation(
+      relationId: data.relationId.present
+          ? data.relationId.value
+          : this.relationId,
+      parentId: data.parentId.present ? data.parentId.value : this.parentId,
+      metaboliteId: data.metaboliteId.present
+          ? data.metaboliteId.value
+          : this.metaboliteId,
+      metaboliteName: data.metaboliteName.present
+          ? data.metaboliteName.value
+          : this.metaboliteName,
+      kind: data.kind.present ? data.kind.value : this.kind,
+      specimensJson: data.specimensJson.present
+          ? data.specimensJson.value
+          : this.specimensJson,
+      basisClaimId: data.basisClaimId.present
+          ? data.basisClaimId.value
+          : this.basisClaimId,
+    );
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('MetaboliteRelation(')
+          ..write('relationId: $relationId, ')
+          ..write('parentId: $parentId, ')
+          ..write('metaboliteId: $metaboliteId, ')
+          ..write('metaboliteName: $metaboliteName, ')
+          ..write('kind: $kind, ')
+          ..write('specimensJson: $specimensJson, ')
+          ..write('basisClaimId: $basisClaimId')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode => Object.hash(
+    relationId,
+    parentId,
+    metaboliteId,
+    metaboliteName,
+    kind,
+    specimensJson,
+    basisClaimId,
+  );
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is MetaboliteRelation &&
+          other.relationId == this.relationId &&
+          other.parentId == this.parentId &&
+          other.metaboliteId == this.metaboliteId &&
+          other.metaboliteName == this.metaboliteName &&
+          other.kind == this.kind &&
+          other.specimensJson == this.specimensJson &&
+          other.basisClaimId == this.basisClaimId);
+}
+
+class MetaboliteRelationsCompanion extends UpdateCompanion<MetaboliteRelation> {
+  final Value<String> relationId;
+  final Value<String> parentId;
+  final Value<String?> metaboliteId;
+  final Value<String> metaboliteName;
+  final Value<String> kind;
+  final Value<String> specimensJson;
+  final Value<String> basisClaimId;
+  const MetaboliteRelationsCompanion({
+    this.relationId = const Value.absent(),
+    this.parentId = const Value.absent(),
+    this.metaboliteId = const Value.absent(),
+    this.metaboliteName = const Value.absent(),
+    this.kind = const Value.absent(),
+    this.specimensJson = const Value.absent(),
+    this.basisClaimId = const Value.absent(),
+  });
+  MetaboliteRelationsCompanion.insert({
+    required String relationId,
+    required String parentId,
+    this.metaboliteId = const Value.absent(),
+    required String metaboliteName,
+    required String kind,
+    this.specimensJson = const Value.absent(),
+    required String basisClaimId,
+  }) : relationId = Value(relationId),
+       parentId = Value(parentId),
+       metaboliteName = Value(metaboliteName),
+       kind = Value(kind),
+       basisClaimId = Value(basisClaimId);
+  static Insertable<MetaboliteRelation> custom({
+    Expression<String>? relationId,
+    Expression<String>? parentId,
+    Expression<String>? metaboliteId,
+    Expression<String>? metaboliteName,
+    Expression<String>? kind,
+    Expression<String>? specimensJson,
+    Expression<String>? basisClaimId,
+  }) {
+    return RawValuesInsertable({
+      if (relationId != null) 'relation_id': relationId,
+      if (parentId != null) 'parent_id': parentId,
+      if (metaboliteId != null) 'metabolite_id': metaboliteId,
+      if (metaboliteName != null) 'metabolite_name': metaboliteName,
+      if (kind != null) 'kind': kind,
+      if (specimensJson != null) 'specimens_json': specimensJson,
+      if (basisClaimId != null) 'basis_claim_id': basisClaimId,
+    });
+  }
+
+  MetaboliteRelationsCompanion copyWith({
+    Value<String>? relationId,
+    Value<String>? parentId,
+    Value<String?>? metaboliteId,
+    Value<String>? metaboliteName,
+    Value<String>? kind,
+    Value<String>? specimensJson,
+    Value<String>? basisClaimId,
+  }) {
+    return MetaboliteRelationsCompanion(
+      relationId: relationId ?? this.relationId,
+      parentId: parentId ?? this.parentId,
+      metaboliteId: metaboliteId ?? this.metaboliteId,
+      metaboliteName: metaboliteName ?? this.metaboliteName,
+      kind: kind ?? this.kind,
+      specimensJson: specimensJson ?? this.specimensJson,
+      basisClaimId: basisClaimId ?? this.basisClaimId,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (relationId.present) {
+      map['relation_id'] = Variable<String>(relationId.value);
+    }
+    if (parentId.present) {
+      map['parent_id'] = Variable<String>(parentId.value);
+    }
+    if (metaboliteId.present) {
+      map['metabolite_id'] = Variable<String>(metaboliteId.value);
+    }
+    if (metaboliteName.present) {
+      map['metabolite_name'] = Variable<String>(metaboliteName.value);
+    }
+    if (kind.present) {
+      map['kind'] = Variable<String>(kind.value);
+    }
+    if (specimensJson.present) {
+      map['specimens_json'] = Variable<String>(specimensJson.value);
+    }
+    if (basisClaimId.present) {
+      map['basis_claim_id'] = Variable<String>(basisClaimId.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('MetaboliteRelationsCompanion(')
+          ..write('relationId: $relationId, ')
+          ..write('parentId: $parentId, ')
+          ..write('metaboliteId: $metaboliteId, ')
+          ..write('metaboliteName: $metaboliteName, ')
+          ..write('kind: $kind, ')
+          ..write('specimensJson: $specimensJson, ')
+          ..write('basisClaimId: $basisClaimId')
+          ..write(')'))
+        .toString();
+  }
+}
+
+class Specimens extends Table with TableInfo<Specimens, Specimen> {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  Specimens(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _specimenIdMeta = const VerificationMeta(
+    'specimenId',
+  );
+  late final GeneratedColumn<String> specimenId = GeneratedColumn<String>(
+    'specimen_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL PRIMARY KEY',
+  );
+  static const VerificationMeta _categoryMeta = const VerificationMeta(
+    'category',
+  );
+  late final GeneratedColumn<String> category = GeneratedColumn<String>(
+    'category',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (category IN (\'fluid\', \'tissue\', \'keratinous\', \'content\'))',
+  );
+  static const VerificationMeta _namesJsonMeta = const VerificationMeta(
+    'namesJson',
+  );
+  late final GeneratedColumn<String> namesJson = GeneratedColumn<String>(
+    'names_json',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _aliasesJsonMeta = const VerificationMeta(
+    'aliasesJson',
+  );
+  late final GeneratedColumn<String> aliasesJson = GeneratedColumn<String>(
+    'aliases_json',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: 'NOT NULL DEFAULT \'[]\'',
+    defaultValue: const CustomExpression('\'[]\''),
+  );
+  @override
+  List<GeneratedColumn> get $columns => [
+    specimenId,
+    category,
+    namesJson,
+    aliasesJson,
+  ];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'specimens';
+  @override
+  VerificationContext validateIntegrity(
+    Insertable<Specimen> instance, {
+    bool isInserting = false,
+  }) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('specimen_id')) {
+      context.handle(
+        _specimenIdMeta,
+        specimenId.isAcceptableOrUnknown(data['specimen_id']!, _specimenIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_specimenIdMeta);
+    }
+    if (data.containsKey('category')) {
+      context.handle(
+        _categoryMeta,
+        category.isAcceptableOrUnknown(data['category']!, _categoryMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_categoryMeta);
+    }
+    if (data.containsKey('names_json')) {
+      context.handle(
+        _namesJsonMeta,
+        namesJson.isAcceptableOrUnknown(data['names_json']!, _namesJsonMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_namesJsonMeta);
+    }
+    if (data.containsKey('aliases_json')) {
+      context.handle(
+        _aliasesJsonMeta,
+        aliasesJson.isAcceptableOrUnknown(
+          data['aliases_json']!,
+          _aliasesJsonMeta,
+        ),
+      );
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {specimenId};
+  @override
+  Specimen map(Map<String, dynamic> data, {String? tablePrefix}) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return Specimen(
+      specimenId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}specimen_id'],
+      )!,
+      category: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}category'],
+      )!,
+      namesJson: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}names_json'],
+      )!,
+      aliasesJson: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}aliases_json'],
+      )!,
+    );
+  }
+
+  @override
+  Specimens createAlias(String alias) {
+    return Specimens(attachedDatabase, alias);
+  }
+
+  @override
+  bool get withoutRowId => true;
+  @override
+  bool get dontWriteConstraints => true;
+}
+
+class Specimen extends DataClass implements Insertable<Specimen> {
+  final String specimenId;
+  final String category;
+  final String namesJson;
+  final String aliasesJson;
+  const Specimen({
+    required this.specimenId,
+    required this.category,
+    required this.namesJson,
+    required this.aliasesJson,
+  });
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['specimen_id'] = Variable<String>(specimenId);
+    map['category'] = Variable<String>(category);
+    map['names_json'] = Variable<String>(namesJson);
+    map['aliases_json'] = Variable<String>(aliasesJson);
+    return map;
+  }
+
+  SpecimensCompanion toCompanion(bool nullToAbsent) {
+    return SpecimensCompanion(
+      specimenId: Value(specimenId),
+      category: Value(category),
+      namesJson: Value(namesJson),
+      aliasesJson: Value(aliasesJson),
+    );
+  }
+
+  factory Specimen.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return Specimen(
+      specimenId: serializer.fromJson<String>(json['specimen_id']),
+      category: serializer.fromJson<String>(json['category']),
+      namesJson: serializer.fromJson<String>(json['names_json']),
+      aliasesJson: serializer.fromJson<String>(json['aliases_json']),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'specimen_id': serializer.toJson<String>(specimenId),
+      'category': serializer.toJson<String>(category),
+      'names_json': serializer.toJson<String>(namesJson),
+      'aliases_json': serializer.toJson<String>(aliasesJson),
+    };
+  }
+
+  Specimen copyWith({
+    String? specimenId,
+    String? category,
+    String? namesJson,
+    String? aliasesJson,
+  }) => Specimen(
+    specimenId: specimenId ?? this.specimenId,
+    category: category ?? this.category,
+    namesJson: namesJson ?? this.namesJson,
+    aliasesJson: aliasesJson ?? this.aliasesJson,
+  );
+  Specimen copyWithCompanion(SpecimensCompanion data) {
+    return Specimen(
+      specimenId: data.specimenId.present
+          ? data.specimenId.value
+          : this.specimenId,
+      category: data.category.present ? data.category.value : this.category,
+      namesJson: data.namesJson.present ? data.namesJson.value : this.namesJson,
+      aliasesJson: data.aliasesJson.present
+          ? data.aliasesJson.value
+          : this.aliasesJson,
+    );
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('Specimen(')
+          ..write('specimenId: $specimenId, ')
+          ..write('category: $category, ')
+          ..write('namesJson: $namesJson, ')
+          ..write('aliasesJson: $aliasesJson')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode => Object.hash(specimenId, category, namesJson, aliasesJson);
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is Specimen &&
+          other.specimenId == this.specimenId &&
+          other.category == this.category &&
+          other.namesJson == this.namesJson &&
+          other.aliasesJson == this.aliasesJson);
+}
+
+class SpecimensCompanion extends UpdateCompanion<Specimen> {
+  final Value<String> specimenId;
+  final Value<String> category;
+  final Value<String> namesJson;
+  final Value<String> aliasesJson;
+  const SpecimensCompanion({
+    this.specimenId = const Value.absent(),
+    this.category = const Value.absent(),
+    this.namesJson = const Value.absent(),
+    this.aliasesJson = const Value.absent(),
+  });
+  SpecimensCompanion.insert({
+    required String specimenId,
+    required String category,
+    required String namesJson,
+    this.aliasesJson = const Value.absent(),
+  }) : specimenId = Value(specimenId),
+       category = Value(category),
+       namesJson = Value(namesJson);
+  static Insertable<Specimen> custom({
+    Expression<String>? specimenId,
+    Expression<String>? category,
+    Expression<String>? namesJson,
+    Expression<String>? aliasesJson,
+  }) {
+    return RawValuesInsertable({
+      if (specimenId != null) 'specimen_id': specimenId,
+      if (category != null) 'category': category,
+      if (namesJson != null) 'names_json': namesJson,
+      if (aliasesJson != null) 'aliases_json': aliasesJson,
+    });
+  }
+
+  SpecimensCompanion copyWith({
+    Value<String>? specimenId,
+    Value<String>? category,
+    Value<String>? namesJson,
+    Value<String>? aliasesJson,
+  }) {
+    return SpecimensCompanion(
+      specimenId: specimenId ?? this.specimenId,
+      category: category ?? this.category,
+      namesJson: namesJson ?? this.namesJson,
+      aliasesJson: aliasesJson ?? this.aliasesJson,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (specimenId.present) {
+      map['specimen_id'] = Variable<String>(specimenId.value);
+    }
+    if (category.present) {
+      map['category'] = Variable<String>(category.value);
+    }
+    if (namesJson.present) {
+      map['names_json'] = Variable<String>(namesJson.value);
+    }
+    if (aliasesJson.present) {
+      map['aliases_json'] = Variable<String>(aliasesJson.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('SpecimensCompanion(')
+          ..write('specimenId: $specimenId, ')
+          ..write('category: $category, ')
+          ..write('namesJson: $namesJson, ')
+          ..write('aliasesJson: $aliasesJson')
+          ..write(')'))
+        .toString();
+  }
+}
+
+class Standards extends Table with TableInfo<Standards, Standard> {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  Standards(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _standardIdMeta = const VerificationMeta(
+    'standardId',
+  );
+  late final GeneratedColumn<String> standardId = GeneratedColumn<String>(
+    'standard_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL PRIMARY KEY',
+  );
+  static const VerificationMeta _designationMeta = const VerificationMeta(
+    'designation',
+  );
+  late final GeneratedColumn<String> designation = GeneratedColumn<String>(
+    'designation',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _titleMeta = const VerificationMeta('title');
+  late final GeneratedColumn<String> title = GeneratedColumn<String>(
+    'title',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _publisherMeta = const VerificationMeta(
+    'publisher',
+  );
+  late final GeneratedColumn<String> publisher = GeneratedColumn<String>(
+    'publisher',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _documentKindMeta = const VerificationMeta(
+    'documentKind',
+  );
+  late final GeneratedColumn<String> documentKind = GeneratedColumn<String>(
+    'document_kind',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _statusMeta = const VerificationMeta('status');
+  late final GeneratedColumn<String> status = GeneratedColumn<String>(
+    'status',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (status IN (\'current\', \'proposed\', \'superseded\', \'withdrawn\', \'unknown\'))',
+  );
+  static const VerificationMeta _reuseStatusMeta = const VerificationMeta(
+    'reuseStatus',
+  );
+  late final GeneratedColumn<String> reuseStatus = GeneratedColumn<String>(
+    'reuse_status',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (reuse_status IN (\'OPEN_REUSE\', \'CITE_ONLY\', \'NON_COMMERCIAL\', \'LICENSE_REQUIRED\', \'LOOKUP_ONLY\', \'UNKNOWN\'))',
+  );
+  static const VerificationMeta _verifiedFromMeta = const VerificationMeta(
+    'verifiedFrom',
+  );
+  late final GeneratedColumn<String> verifiedFrom = GeneratedColumn<String>(
+    'verified_from',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _verifiedAtMeta = const VerificationMeta(
+    'verifiedAt',
+  );
+  late final GeneratedColumn<String> verifiedAt = GeneratedColumn<String>(
+    'verified_at',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _pubYearMeta = const VerificationMeta(
+    'pubYear',
+  );
+  late final GeneratedColumn<String> pubYear = GeneratedColumn<String>(
+    'pub_year',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _editionMeta = const VerificationMeta(
+    'edition',
+  );
+  late final GeneratedColumn<String> edition = GeneratedColumn<String>(
+    'edition',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _supersededByMeta = const VerificationMeta(
+    'supersededBy',
+  );
+  late final GeneratedColumn<String> supersededBy = GeneratedColumn<String>(
+    'superseded_by',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: 'REFERENCES standards(standard_id)',
+  );
+  static const VerificationMeta _urlMeta = const VerificationMeta('url');
+  late final GeneratedColumn<String> url = GeneratedColumn<String>(
+    'url',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _sha256Meta = const VerificationMeta('sha256');
+  late final GeneratedColumn<String> sha256 = GeneratedColumn<String>(
+    'sha256',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _disciplinesJsonMeta = const VerificationMeta(
+    'disciplinesJson',
+  );
+  late final GeneratedColumn<String> disciplinesJson = GeneratedColumn<String>(
+    'disciplines_json',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: 'NOT NULL DEFAULT \'[]\'',
+    defaultValue: const CustomExpression('\'[]\''),
+  );
+  static const VerificationMeta _noteMeta = const VerificationMeta('note');
+  late final GeneratedColumn<String> note = GeneratedColumn<String>(
+    'note',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  @override
+  List<GeneratedColumn> get $columns => [
+    standardId,
+    designation,
+    title,
+    publisher,
+    documentKind,
+    status,
+    reuseStatus,
+    verifiedFrom,
+    verifiedAt,
+    pubYear,
+    edition,
+    supersededBy,
+    url,
+    sha256,
+    disciplinesJson,
+    note,
+  ];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'standards';
+  @override
+  VerificationContext validateIntegrity(
+    Insertable<Standard> instance, {
+    bool isInserting = false,
+  }) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('standard_id')) {
+      context.handle(
+        _standardIdMeta,
+        standardId.isAcceptableOrUnknown(data['standard_id']!, _standardIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_standardIdMeta);
+    }
+    if (data.containsKey('designation')) {
+      context.handle(
+        _designationMeta,
+        designation.isAcceptableOrUnknown(
+          data['designation']!,
+          _designationMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_designationMeta);
+    }
+    if (data.containsKey('title')) {
+      context.handle(
+        _titleMeta,
+        title.isAcceptableOrUnknown(data['title']!, _titleMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_titleMeta);
+    }
+    if (data.containsKey('publisher')) {
+      context.handle(
+        _publisherMeta,
+        publisher.isAcceptableOrUnknown(data['publisher']!, _publisherMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_publisherMeta);
+    }
+    if (data.containsKey('document_kind')) {
+      context.handle(
+        _documentKindMeta,
+        documentKind.isAcceptableOrUnknown(
+          data['document_kind']!,
+          _documentKindMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_documentKindMeta);
+    }
+    if (data.containsKey('status')) {
+      context.handle(
+        _statusMeta,
+        status.isAcceptableOrUnknown(data['status']!, _statusMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_statusMeta);
+    }
+    if (data.containsKey('reuse_status')) {
+      context.handle(
+        _reuseStatusMeta,
+        reuseStatus.isAcceptableOrUnknown(
+          data['reuse_status']!,
+          _reuseStatusMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_reuseStatusMeta);
+    }
+    if (data.containsKey('verified_from')) {
+      context.handle(
+        _verifiedFromMeta,
+        verifiedFrom.isAcceptableOrUnknown(
+          data['verified_from']!,
+          _verifiedFromMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_verifiedFromMeta);
+    }
+    if (data.containsKey('verified_at')) {
+      context.handle(
+        _verifiedAtMeta,
+        verifiedAt.isAcceptableOrUnknown(data['verified_at']!, _verifiedAtMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_verifiedAtMeta);
+    }
+    if (data.containsKey('pub_year')) {
+      context.handle(
+        _pubYearMeta,
+        pubYear.isAcceptableOrUnknown(data['pub_year']!, _pubYearMeta),
+      );
+    }
+    if (data.containsKey('edition')) {
+      context.handle(
+        _editionMeta,
+        edition.isAcceptableOrUnknown(data['edition']!, _editionMeta),
+      );
+    }
+    if (data.containsKey('superseded_by')) {
+      context.handle(
+        _supersededByMeta,
+        supersededBy.isAcceptableOrUnknown(
+          data['superseded_by']!,
+          _supersededByMeta,
+        ),
+      );
+    }
+    if (data.containsKey('url')) {
+      context.handle(
+        _urlMeta,
+        url.isAcceptableOrUnknown(data['url']!, _urlMeta),
+      );
+    }
+    if (data.containsKey('sha256')) {
+      context.handle(
+        _sha256Meta,
+        sha256.isAcceptableOrUnknown(data['sha256']!, _sha256Meta),
+      );
+    }
+    if (data.containsKey('disciplines_json')) {
+      context.handle(
+        _disciplinesJsonMeta,
+        disciplinesJson.isAcceptableOrUnknown(
+          data['disciplines_json']!,
+          _disciplinesJsonMeta,
+        ),
+      );
+    }
+    if (data.containsKey('note')) {
+      context.handle(
+        _noteMeta,
+        note.isAcceptableOrUnknown(data['note']!, _noteMeta),
+      );
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {standardId};
+  @override
+  Standard map(Map<String, dynamic> data, {String? tablePrefix}) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return Standard(
+      standardId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}standard_id'],
+      )!,
+      designation: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}designation'],
+      )!,
+      title: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}title'],
+      )!,
+      publisher: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}publisher'],
+      )!,
+      documentKind: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}document_kind'],
+      )!,
+      status: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}status'],
+      )!,
+      reuseStatus: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}reuse_status'],
+      )!,
+      verifiedFrom: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}verified_from'],
+      )!,
+      verifiedAt: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}verified_at'],
+      )!,
+      pubYear: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}pub_year'],
+      ),
+      edition: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}edition'],
+      ),
+      supersededBy: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}superseded_by'],
+      ),
+      url: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}url'],
+      ),
+      sha256: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}sha256'],
+      ),
+      disciplinesJson: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}disciplines_json'],
+      )!,
+      note: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}note'],
+      ),
+    );
+  }
+
+  @override
+  Standards createAlias(String alias) {
+    return Standards(attachedDatabase, alias);
+  }
+
+  @override
+  bool get withoutRowId => true;
+  @override
+  List<String> get customConstraints => const [
+    'CHECK(status <> \'superseded\' OR superseded_by IS NOT NULL)',
+    'CHECK(reuse_status <> \'LICENSE_REQUIRED\' OR sha256 IS NULL)',
+  ];
+  @override
+  bool get dontWriteConstraints => true;
+}
+
+class Standard extends DataClass implements Insertable<Standard> {
+  final String standardId;
+  final String designation;
+  final String title;
+  final String publisher;
+  final String documentKind;
+  final String status;
+  final String reuseStatus;
+  final String verifiedFrom;
+  final String verifiedAt;
+  final String? pubYear;
+  final String? edition;
+  final String? supersededBy;
+  final String? url;
+  final String? sha256;
+  final String disciplinesJson;
+  final String? note;
+  const Standard({
+    required this.standardId,
+    required this.designation,
+    required this.title,
+    required this.publisher,
+    required this.documentKind,
+    required this.status,
+    required this.reuseStatus,
+    required this.verifiedFrom,
+    required this.verifiedAt,
+    this.pubYear,
+    this.edition,
+    this.supersededBy,
+    this.url,
+    this.sha256,
+    required this.disciplinesJson,
+    this.note,
+  });
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['standard_id'] = Variable<String>(standardId);
+    map['designation'] = Variable<String>(designation);
+    map['title'] = Variable<String>(title);
+    map['publisher'] = Variable<String>(publisher);
+    map['document_kind'] = Variable<String>(documentKind);
+    map['status'] = Variable<String>(status);
+    map['reuse_status'] = Variable<String>(reuseStatus);
+    map['verified_from'] = Variable<String>(verifiedFrom);
+    map['verified_at'] = Variable<String>(verifiedAt);
+    if (!nullToAbsent || pubYear != null) {
+      map['pub_year'] = Variable<String>(pubYear);
+    }
+    if (!nullToAbsent || edition != null) {
+      map['edition'] = Variable<String>(edition);
+    }
+    if (!nullToAbsent || supersededBy != null) {
+      map['superseded_by'] = Variable<String>(supersededBy);
+    }
+    if (!nullToAbsent || url != null) {
+      map['url'] = Variable<String>(url);
+    }
+    if (!nullToAbsent || sha256 != null) {
+      map['sha256'] = Variable<String>(sha256);
+    }
+    map['disciplines_json'] = Variable<String>(disciplinesJson);
+    if (!nullToAbsent || note != null) {
+      map['note'] = Variable<String>(note);
+    }
+    return map;
+  }
+
+  StandardsCompanion toCompanion(bool nullToAbsent) {
+    return StandardsCompanion(
+      standardId: Value(standardId),
+      designation: Value(designation),
+      title: Value(title),
+      publisher: Value(publisher),
+      documentKind: Value(documentKind),
+      status: Value(status),
+      reuseStatus: Value(reuseStatus),
+      verifiedFrom: Value(verifiedFrom),
+      verifiedAt: Value(verifiedAt),
+      pubYear: pubYear == null && nullToAbsent
+          ? const Value.absent()
+          : Value(pubYear),
+      edition: edition == null && nullToAbsent
+          ? const Value.absent()
+          : Value(edition),
+      supersededBy: supersededBy == null && nullToAbsent
+          ? const Value.absent()
+          : Value(supersededBy),
+      url: url == null && nullToAbsent ? const Value.absent() : Value(url),
+      sha256: sha256 == null && nullToAbsent
+          ? const Value.absent()
+          : Value(sha256),
+      disciplinesJson: Value(disciplinesJson),
+      note: note == null && nullToAbsent ? const Value.absent() : Value(note),
+    );
+  }
+
+  factory Standard.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return Standard(
+      standardId: serializer.fromJson<String>(json['standard_id']),
+      designation: serializer.fromJson<String>(json['designation']),
+      title: serializer.fromJson<String>(json['title']),
+      publisher: serializer.fromJson<String>(json['publisher']),
+      documentKind: serializer.fromJson<String>(json['document_kind']),
+      status: serializer.fromJson<String>(json['status']),
+      reuseStatus: serializer.fromJson<String>(json['reuse_status']),
+      verifiedFrom: serializer.fromJson<String>(json['verified_from']),
+      verifiedAt: serializer.fromJson<String>(json['verified_at']),
+      pubYear: serializer.fromJson<String?>(json['pub_year']),
+      edition: serializer.fromJson<String?>(json['edition']),
+      supersededBy: serializer.fromJson<String?>(json['superseded_by']),
+      url: serializer.fromJson<String?>(json['url']),
+      sha256: serializer.fromJson<String?>(json['sha256']),
+      disciplinesJson: serializer.fromJson<String>(json['disciplines_json']),
+      note: serializer.fromJson<String?>(json['note']),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'standard_id': serializer.toJson<String>(standardId),
+      'designation': serializer.toJson<String>(designation),
+      'title': serializer.toJson<String>(title),
+      'publisher': serializer.toJson<String>(publisher),
+      'document_kind': serializer.toJson<String>(documentKind),
+      'status': serializer.toJson<String>(status),
+      'reuse_status': serializer.toJson<String>(reuseStatus),
+      'verified_from': serializer.toJson<String>(verifiedFrom),
+      'verified_at': serializer.toJson<String>(verifiedAt),
+      'pub_year': serializer.toJson<String?>(pubYear),
+      'edition': serializer.toJson<String?>(edition),
+      'superseded_by': serializer.toJson<String?>(supersededBy),
+      'url': serializer.toJson<String?>(url),
+      'sha256': serializer.toJson<String?>(sha256),
+      'disciplines_json': serializer.toJson<String>(disciplinesJson),
+      'note': serializer.toJson<String?>(note),
+    };
+  }
+
+  Standard copyWith({
+    String? standardId,
+    String? designation,
+    String? title,
+    String? publisher,
+    String? documentKind,
+    String? status,
+    String? reuseStatus,
+    String? verifiedFrom,
+    String? verifiedAt,
+    Value<String?> pubYear = const Value.absent(),
+    Value<String?> edition = const Value.absent(),
+    Value<String?> supersededBy = const Value.absent(),
+    Value<String?> url = const Value.absent(),
+    Value<String?> sha256 = const Value.absent(),
+    String? disciplinesJson,
+    Value<String?> note = const Value.absent(),
+  }) => Standard(
+    standardId: standardId ?? this.standardId,
+    designation: designation ?? this.designation,
+    title: title ?? this.title,
+    publisher: publisher ?? this.publisher,
+    documentKind: documentKind ?? this.documentKind,
+    status: status ?? this.status,
+    reuseStatus: reuseStatus ?? this.reuseStatus,
+    verifiedFrom: verifiedFrom ?? this.verifiedFrom,
+    verifiedAt: verifiedAt ?? this.verifiedAt,
+    pubYear: pubYear.present ? pubYear.value : this.pubYear,
+    edition: edition.present ? edition.value : this.edition,
+    supersededBy: supersededBy.present ? supersededBy.value : this.supersededBy,
+    url: url.present ? url.value : this.url,
+    sha256: sha256.present ? sha256.value : this.sha256,
+    disciplinesJson: disciplinesJson ?? this.disciplinesJson,
+    note: note.present ? note.value : this.note,
+  );
+  Standard copyWithCompanion(StandardsCompanion data) {
+    return Standard(
+      standardId: data.standardId.present
+          ? data.standardId.value
+          : this.standardId,
+      designation: data.designation.present
+          ? data.designation.value
+          : this.designation,
+      title: data.title.present ? data.title.value : this.title,
+      publisher: data.publisher.present ? data.publisher.value : this.publisher,
+      documentKind: data.documentKind.present
+          ? data.documentKind.value
+          : this.documentKind,
+      status: data.status.present ? data.status.value : this.status,
+      reuseStatus: data.reuseStatus.present
+          ? data.reuseStatus.value
+          : this.reuseStatus,
+      verifiedFrom: data.verifiedFrom.present
+          ? data.verifiedFrom.value
+          : this.verifiedFrom,
+      verifiedAt: data.verifiedAt.present
+          ? data.verifiedAt.value
+          : this.verifiedAt,
+      pubYear: data.pubYear.present ? data.pubYear.value : this.pubYear,
+      edition: data.edition.present ? data.edition.value : this.edition,
+      supersededBy: data.supersededBy.present
+          ? data.supersededBy.value
+          : this.supersededBy,
+      url: data.url.present ? data.url.value : this.url,
+      sha256: data.sha256.present ? data.sha256.value : this.sha256,
+      disciplinesJson: data.disciplinesJson.present
+          ? data.disciplinesJson.value
+          : this.disciplinesJson,
+      note: data.note.present ? data.note.value : this.note,
+    );
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('Standard(')
+          ..write('standardId: $standardId, ')
+          ..write('designation: $designation, ')
+          ..write('title: $title, ')
+          ..write('publisher: $publisher, ')
+          ..write('documentKind: $documentKind, ')
+          ..write('status: $status, ')
+          ..write('reuseStatus: $reuseStatus, ')
+          ..write('verifiedFrom: $verifiedFrom, ')
+          ..write('verifiedAt: $verifiedAt, ')
+          ..write('pubYear: $pubYear, ')
+          ..write('edition: $edition, ')
+          ..write('supersededBy: $supersededBy, ')
+          ..write('url: $url, ')
+          ..write('sha256: $sha256, ')
+          ..write('disciplinesJson: $disciplinesJson, ')
+          ..write('note: $note')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode => Object.hash(
+    standardId,
+    designation,
+    title,
+    publisher,
+    documentKind,
+    status,
+    reuseStatus,
+    verifiedFrom,
+    verifiedAt,
+    pubYear,
+    edition,
+    supersededBy,
+    url,
+    sha256,
+    disciplinesJson,
+    note,
+  );
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is Standard &&
+          other.standardId == this.standardId &&
+          other.designation == this.designation &&
+          other.title == this.title &&
+          other.publisher == this.publisher &&
+          other.documentKind == this.documentKind &&
+          other.status == this.status &&
+          other.reuseStatus == this.reuseStatus &&
+          other.verifiedFrom == this.verifiedFrom &&
+          other.verifiedAt == this.verifiedAt &&
+          other.pubYear == this.pubYear &&
+          other.edition == this.edition &&
+          other.supersededBy == this.supersededBy &&
+          other.url == this.url &&
+          other.sha256 == this.sha256 &&
+          other.disciplinesJson == this.disciplinesJson &&
+          other.note == this.note);
+}
+
+class StandardsCompanion extends UpdateCompanion<Standard> {
+  final Value<String> standardId;
+  final Value<String> designation;
+  final Value<String> title;
+  final Value<String> publisher;
+  final Value<String> documentKind;
+  final Value<String> status;
+  final Value<String> reuseStatus;
+  final Value<String> verifiedFrom;
+  final Value<String> verifiedAt;
+  final Value<String?> pubYear;
+  final Value<String?> edition;
+  final Value<String?> supersededBy;
+  final Value<String?> url;
+  final Value<String?> sha256;
+  final Value<String> disciplinesJson;
+  final Value<String?> note;
+  const StandardsCompanion({
+    this.standardId = const Value.absent(),
+    this.designation = const Value.absent(),
+    this.title = const Value.absent(),
+    this.publisher = const Value.absent(),
+    this.documentKind = const Value.absent(),
+    this.status = const Value.absent(),
+    this.reuseStatus = const Value.absent(),
+    this.verifiedFrom = const Value.absent(),
+    this.verifiedAt = const Value.absent(),
+    this.pubYear = const Value.absent(),
+    this.edition = const Value.absent(),
+    this.supersededBy = const Value.absent(),
+    this.url = const Value.absent(),
+    this.sha256 = const Value.absent(),
+    this.disciplinesJson = const Value.absent(),
+    this.note = const Value.absent(),
+  });
+  StandardsCompanion.insert({
+    required String standardId,
+    required String designation,
+    required String title,
+    required String publisher,
+    required String documentKind,
+    required String status,
+    required String reuseStatus,
+    required String verifiedFrom,
+    required String verifiedAt,
+    this.pubYear = const Value.absent(),
+    this.edition = const Value.absent(),
+    this.supersededBy = const Value.absent(),
+    this.url = const Value.absent(),
+    this.sha256 = const Value.absent(),
+    this.disciplinesJson = const Value.absent(),
+    this.note = const Value.absent(),
+  }) : standardId = Value(standardId),
+       designation = Value(designation),
+       title = Value(title),
+       publisher = Value(publisher),
+       documentKind = Value(documentKind),
+       status = Value(status),
+       reuseStatus = Value(reuseStatus),
+       verifiedFrom = Value(verifiedFrom),
+       verifiedAt = Value(verifiedAt);
+  static Insertable<Standard> custom({
+    Expression<String>? standardId,
+    Expression<String>? designation,
+    Expression<String>? title,
+    Expression<String>? publisher,
+    Expression<String>? documentKind,
+    Expression<String>? status,
+    Expression<String>? reuseStatus,
+    Expression<String>? verifiedFrom,
+    Expression<String>? verifiedAt,
+    Expression<String>? pubYear,
+    Expression<String>? edition,
+    Expression<String>? supersededBy,
+    Expression<String>? url,
+    Expression<String>? sha256,
+    Expression<String>? disciplinesJson,
+    Expression<String>? note,
+  }) {
+    return RawValuesInsertable({
+      if (standardId != null) 'standard_id': standardId,
+      if (designation != null) 'designation': designation,
+      if (title != null) 'title': title,
+      if (publisher != null) 'publisher': publisher,
+      if (documentKind != null) 'document_kind': documentKind,
+      if (status != null) 'status': status,
+      if (reuseStatus != null) 'reuse_status': reuseStatus,
+      if (verifiedFrom != null) 'verified_from': verifiedFrom,
+      if (verifiedAt != null) 'verified_at': verifiedAt,
+      if (pubYear != null) 'pub_year': pubYear,
+      if (edition != null) 'edition': edition,
+      if (supersededBy != null) 'superseded_by': supersededBy,
+      if (url != null) 'url': url,
+      if (sha256 != null) 'sha256': sha256,
+      if (disciplinesJson != null) 'disciplines_json': disciplinesJson,
+      if (note != null) 'note': note,
+    });
+  }
+
+  StandardsCompanion copyWith({
+    Value<String>? standardId,
+    Value<String>? designation,
+    Value<String>? title,
+    Value<String>? publisher,
+    Value<String>? documentKind,
+    Value<String>? status,
+    Value<String>? reuseStatus,
+    Value<String>? verifiedFrom,
+    Value<String>? verifiedAt,
+    Value<String?>? pubYear,
+    Value<String?>? edition,
+    Value<String?>? supersededBy,
+    Value<String?>? url,
+    Value<String?>? sha256,
+    Value<String>? disciplinesJson,
+    Value<String?>? note,
+  }) {
+    return StandardsCompanion(
+      standardId: standardId ?? this.standardId,
+      designation: designation ?? this.designation,
+      title: title ?? this.title,
+      publisher: publisher ?? this.publisher,
+      documentKind: documentKind ?? this.documentKind,
+      status: status ?? this.status,
+      reuseStatus: reuseStatus ?? this.reuseStatus,
+      verifiedFrom: verifiedFrom ?? this.verifiedFrom,
+      verifiedAt: verifiedAt ?? this.verifiedAt,
+      pubYear: pubYear ?? this.pubYear,
+      edition: edition ?? this.edition,
+      supersededBy: supersededBy ?? this.supersededBy,
+      url: url ?? this.url,
+      sha256: sha256 ?? this.sha256,
+      disciplinesJson: disciplinesJson ?? this.disciplinesJson,
+      note: note ?? this.note,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (standardId.present) {
+      map['standard_id'] = Variable<String>(standardId.value);
+    }
+    if (designation.present) {
+      map['designation'] = Variable<String>(designation.value);
+    }
+    if (title.present) {
+      map['title'] = Variable<String>(title.value);
+    }
+    if (publisher.present) {
+      map['publisher'] = Variable<String>(publisher.value);
+    }
+    if (documentKind.present) {
+      map['document_kind'] = Variable<String>(documentKind.value);
+    }
+    if (status.present) {
+      map['status'] = Variable<String>(status.value);
+    }
+    if (reuseStatus.present) {
+      map['reuse_status'] = Variable<String>(reuseStatus.value);
+    }
+    if (verifiedFrom.present) {
+      map['verified_from'] = Variable<String>(verifiedFrom.value);
+    }
+    if (verifiedAt.present) {
+      map['verified_at'] = Variable<String>(verifiedAt.value);
+    }
+    if (pubYear.present) {
+      map['pub_year'] = Variable<String>(pubYear.value);
+    }
+    if (edition.present) {
+      map['edition'] = Variable<String>(edition.value);
+    }
+    if (supersededBy.present) {
+      map['superseded_by'] = Variable<String>(supersededBy.value);
+    }
+    if (url.present) {
+      map['url'] = Variable<String>(url.value);
+    }
+    if (sha256.present) {
+      map['sha256'] = Variable<String>(sha256.value);
+    }
+    if (disciplinesJson.present) {
+      map['disciplines_json'] = Variable<String>(disciplinesJson.value);
+    }
+    if (note.present) {
+      map['note'] = Variable<String>(note.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('StandardsCompanion(')
+          ..write('standardId: $standardId, ')
+          ..write('designation: $designation, ')
+          ..write('title: $title, ')
+          ..write('publisher: $publisher, ')
+          ..write('documentKind: $documentKind, ')
+          ..write('status: $status, ')
+          ..write('reuseStatus: $reuseStatus, ')
+          ..write('verifiedFrom: $verifiedFrom, ')
+          ..write('verifiedAt: $verifiedAt, ')
+          ..write('pubYear: $pubYear, ')
+          ..write('edition: $edition, ')
+          ..write('supersededBy: $supersededBy, ')
+          ..write('url: $url, ')
+          ..write('sha256: $sha256, ')
+          ..write('disciplinesJson: $disciplinesJson, ')
+          ..write('note: $note')
+          ..write(')'))
+        .toString();
+  }
+}
+
+class TermTranslations extends Table
+    with TableInfo<TermTranslations, TermTranslation> {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  TermTranslations(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _termIdMeta = const VerificationMeta('termId');
+  late final GeneratedColumn<String> termId = GeneratedColumn<String>(
+    'term_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL PRIMARY KEY',
+  );
+  static const VerificationMeta _kindMeta = const VerificationMeta('kind');
+  late final GeneratedColumn<String> kind = GeneratedColumn<String>(
+    'kind',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (kind IN (\'term\', \'abbreviation\', \'identifier\', \'formula\'))',
+  );
+  static const VerificationMeta _originalMeta = const VerificationMeta(
+    'original',
+  );
+  late final GeneratedColumn<String> original = GeneratedColumn<String>(
+    'original',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _originalLangMeta = const VerificationMeta(
+    'originalLang',
+  );
+  late final GeneratedColumn<String> originalLang = GeneratedColumn<String>(
+    'original_lang',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _canonicalMeta = const VerificationMeta(
+    'canonical',
+  );
+  late final GeneratedColumn<String> canonical = GeneratedColumn<String>(
+    'canonical',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _localizedJsonMeta = const VerificationMeta(
+    'localizedJson',
+  );
+  late final GeneratedColumn<String> localizedJson = GeneratedColumn<String>(
+    'localized_json',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _statusJsonMeta = const VerificationMeta(
+    'statusJson',
+  );
+  late final GeneratedColumn<String> statusJson = GeneratedColumn<String>(
+    'status_json',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  @override
+  List<GeneratedColumn> get $columns => [
+    termId,
+    kind,
+    original,
+    originalLang,
+    canonical,
+    localizedJson,
+    statusJson,
+  ];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'term_translations';
+  @override
+  VerificationContext validateIntegrity(
+    Insertable<TermTranslation> instance, {
+    bool isInserting = false,
+  }) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('term_id')) {
+      context.handle(
+        _termIdMeta,
+        termId.isAcceptableOrUnknown(data['term_id']!, _termIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_termIdMeta);
+    }
+    if (data.containsKey('kind')) {
+      context.handle(
+        _kindMeta,
+        kind.isAcceptableOrUnknown(data['kind']!, _kindMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_kindMeta);
+    }
+    if (data.containsKey('original')) {
+      context.handle(
+        _originalMeta,
+        original.isAcceptableOrUnknown(data['original']!, _originalMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_originalMeta);
+    }
+    if (data.containsKey('original_lang')) {
+      context.handle(
+        _originalLangMeta,
+        originalLang.isAcceptableOrUnknown(
+          data['original_lang']!,
+          _originalLangMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_originalLangMeta);
+    }
+    if (data.containsKey('canonical')) {
+      context.handle(
+        _canonicalMeta,
+        canonical.isAcceptableOrUnknown(data['canonical']!, _canonicalMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_canonicalMeta);
+    }
+    if (data.containsKey('localized_json')) {
+      context.handle(
+        _localizedJsonMeta,
+        localizedJson.isAcceptableOrUnknown(
+          data['localized_json']!,
+          _localizedJsonMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_localizedJsonMeta);
+    }
+    if (data.containsKey('status_json')) {
+      context.handle(
+        _statusJsonMeta,
+        statusJson.isAcceptableOrUnknown(data['status_json']!, _statusJsonMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_statusJsonMeta);
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {termId};
+  @override
+  TermTranslation map(Map<String, dynamic> data, {String? tablePrefix}) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return TermTranslation(
+      termId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}term_id'],
+      )!,
+      kind: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}kind'],
+      )!,
+      original: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}original'],
+      )!,
+      originalLang: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}original_lang'],
+      )!,
+      canonical: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}canonical'],
+      )!,
+      localizedJson: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}localized_json'],
+      )!,
+      statusJson: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}status_json'],
+      )!,
+    );
+  }
+
+  @override
+  TermTranslations createAlias(String alias) {
+    return TermTranslations(attachedDatabase, alias);
+  }
+
+  @override
+  bool get withoutRowId => true;
+  @override
+  bool get dontWriteConstraints => true;
+}
+
+class TermTranslation extends DataClass implements Insertable<TermTranslation> {
+  final String termId;
+  final String kind;
+  final String original;
+  final String originalLang;
+  final String canonical;
+  final String localizedJson;
+  final String statusJson;
+  const TermTranslation({
+    required this.termId,
+    required this.kind,
+    required this.original,
+    required this.originalLang,
+    required this.canonical,
+    required this.localizedJson,
+    required this.statusJson,
+  });
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['term_id'] = Variable<String>(termId);
+    map['kind'] = Variable<String>(kind);
+    map['original'] = Variable<String>(original);
+    map['original_lang'] = Variable<String>(originalLang);
+    map['canonical'] = Variable<String>(canonical);
+    map['localized_json'] = Variable<String>(localizedJson);
+    map['status_json'] = Variable<String>(statusJson);
+    return map;
+  }
+
+  TermTranslationsCompanion toCompanion(bool nullToAbsent) {
+    return TermTranslationsCompanion(
+      termId: Value(termId),
+      kind: Value(kind),
+      original: Value(original),
+      originalLang: Value(originalLang),
+      canonical: Value(canonical),
+      localizedJson: Value(localizedJson),
+      statusJson: Value(statusJson),
+    );
+  }
+
+  factory TermTranslation.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return TermTranslation(
+      termId: serializer.fromJson<String>(json['term_id']),
+      kind: serializer.fromJson<String>(json['kind']),
+      original: serializer.fromJson<String>(json['original']),
+      originalLang: serializer.fromJson<String>(json['original_lang']),
+      canonical: serializer.fromJson<String>(json['canonical']),
+      localizedJson: serializer.fromJson<String>(json['localized_json']),
+      statusJson: serializer.fromJson<String>(json['status_json']),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'term_id': serializer.toJson<String>(termId),
+      'kind': serializer.toJson<String>(kind),
+      'original': serializer.toJson<String>(original),
+      'original_lang': serializer.toJson<String>(originalLang),
+      'canonical': serializer.toJson<String>(canonical),
+      'localized_json': serializer.toJson<String>(localizedJson),
+      'status_json': serializer.toJson<String>(statusJson),
+    };
+  }
+
+  TermTranslation copyWith({
+    String? termId,
+    String? kind,
+    String? original,
+    String? originalLang,
+    String? canonical,
+    String? localizedJson,
+    String? statusJson,
+  }) => TermTranslation(
+    termId: termId ?? this.termId,
+    kind: kind ?? this.kind,
+    original: original ?? this.original,
+    originalLang: originalLang ?? this.originalLang,
+    canonical: canonical ?? this.canonical,
+    localizedJson: localizedJson ?? this.localizedJson,
+    statusJson: statusJson ?? this.statusJson,
+  );
+  TermTranslation copyWithCompanion(TermTranslationsCompanion data) {
+    return TermTranslation(
+      termId: data.termId.present ? data.termId.value : this.termId,
+      kind: data.kind.present ? data.kind.value : this.kind,
+      original: data.original.present ? data.original.value : this.original,
+      originalLang: data.originalLang.present
+          ? data.originalLang.value
+          : this.originalLang,
+      canonical: data.canonical.present ? data.canonical.value : this.canonical,
+      localizedJson: data.localizedJson.present
+          ? data.localizedJson.value
+          : this.localizedJson,
+      statusJson: data.statusJson.present
+          ? data.statusJson.value
+          : this.statusJson,
+    );
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('TermTranslation(')
+          ..write('termId: $termId, ')
+          ..write('kind: $kind, ')
+          ..write('original: $original, ')
+          ..write('originalLang: $originalLang, ')
+          ..write('canonical: $canonical, ')
+          ..write('localizedJson: $localizedJson, ')
+          ..write('statusJson: $statusJson')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode => Object.hash(
+    termId,
+    kind,
+    original,
+    originalLang,
+    canonical,
+    localizedJson,
+    statusJson,
+  );
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is TermTranslation &&
+          other.termId == this.termId &&
+          other.kind == this.kind &&
+          other.original == this.original &&
+          other.originalLang == this.originalLang &&
+          other.canonical == this.canonical &&
+          other.localizedJson == this.localizedJson &&
+          other.statusJson == this.statusJson);
+}
+
+class TermTranslationsCompanion extends UpdateCompanion<TermTranslation> {
+  final Value<String> termId;
+  final Value<String> kind;
+  final Value<String> original;
+  final Value<String> originalLang;
+  final Value<String> canonical;
+  final Value<String> localizedJson;
+  final Value<String> statusJson;
+  const TermTranslationsCompanion({
+    this.termId = const Value.absent(),
+    this.kind = const Value.absent(),
+    this.original = const Value.absent(),
+    this.originalLang = const Value.absent(),
+    this.canonical = const Value.absent(),
+    this.localizedJson = const Value.absent(),
+    this.statusJson = const Value.absent(),
+  });
+  TermTranslationsCompanion.insert({
+    required String termId,
+    required String kind,
+    required String original,
+    required String originalLang,
+    required String canonical,
+    required String localizedJson,
+    required String statusJson,
+  }) : termId = Value(termId),
+       kind = Value(kind),
+       original = Value(original),
+       originalLang = Value(originalLang),
+       canonical = Value(canonical),
+       localizedJson = Value(localizedJson),
+       statusJson = Value(statusJson);
+  static Insertable<TermTranslation> custom({
+    Expression<String>? termId,
+    Expression<String>? kind,
+    Expression<String>? original,
+    Expression<String>? originalLang,
+    Expression<String>? canonical,
+    Expression<String>? localizedJson,
+    Expression<String>? statusJson,
+  }) {
+    return RawValuesInsertable({
+      if (termId != null) 'term_id': termId,
+      if (kind != null) 'kind': kind,
+      if (original != null) 'original': original,
+      if (originalLang != null) 'original_lang': originalLang,
+      if (canonical != null) 'canonical': canonical,
+      if (localizedJson != null) 'localized_json': localizedJson,
+      if (statusJson != null) 'status_json': statusJson,
+    });
+  }
+
+  TermTranslationsCompanion copyWith({
+    Value<String>? termId,
+    Value<String>? kind,
+    Value<String>? original,
+    Value<String>? originalLang,
+    Value<String>? canonical,
+    Value<String>? localizedJson,
+    Value<String>? statusJson,
+  }) {
+    return TermTranslationsCompanion(
+      termId: termId ?? this.termId,
+      kind: kind ?? this.kind,
+      original: original ?? this.original,
+      originalLang: originalLang ?? this.originalLang,
+      canonical: canonical ?? this.canonical,
+      localizedJson: localizedJson ?? this.localizedJson,
+      statusJson: statusJson ?? this.statusJson,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (termId.present) {
+      map['term_id'] = Variable<String>(termId.value);
+    }
+    if (kind.present) {
+      map['kind'] = Variable<String>(kind.value);
+    }
+    if (original.present) {
+      map['original'] = Variable<String>(original.value);
+    }
+    if (originalLang.present) {
+      map['original_lang'] = Variable<String>(originalLang.value);
+    }
+    if (canonical.present) {
+      map['canonical'] = Variable<String>(canonical.value);
+    }
+    if (localizedJson.present) {
+      map['localized_json'] = Variable<String>(localizedJson.value);
+    }
+    if (statusJson.present) {
+      map['status_json'] = Variable<String>(statusJson.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('TermTranslationsCompanion(')
+          ..write('termId: $termId, ')
+          ..write('kind: $kind, ')
+          ..write('original: $original, ')
+          ..write('originalLang: $originalLang, ')
+          ..write('canonical: $canonical, ')
+          ..write('localizedJson: $localizedJson, ')
+          ..write('statusJson: $statusJson')
+          ..write(')'))
+        .toString();
+  }
+}
+
 abstract class _$ContentDatabase extends GeneratedDatabase {
   _$ContentDatabase(QueryExecutor e) : super(e);
   $ContentDatabaseManager get managers => $ContentDatabaseManager(this);
@@ -13649,6 +18109,33 @@ abstract class _$ContentDatabase extends GeneratedDatabase {
     'images_by_entity',
     'CREATE INDEX images_by_entity ON images (entity_id)',
   );
+  late final SourceProvenance sourceProvenance = SourceProvenance(this);
+  late final ClaimLifecycle claimLifecycle = ClaimLifecycle(this);
+  late final Index claimLifecycleByState = Index(
+    'claim_lifecycle_by_state',
+    'CREATE INDEX claim_lifecycle_by_state ON claim_lifecycle (lifecycle)',
+  );
+  late final EvidenceConflicts evidenceConflicts = EvidenceConflicts(this);
+  late final ConflictClaims conflictClaims = ConflictClaims(this);
+  late final Index conflictClaimsByClaim = Index(
+    'conflict_claims_by_claim',
+    'CREATE INDEX conflict_claims_by_claim ON conflict_claims (claim_id)',
+  );
+  late final ReviewActions reviewActions = ReviewActions(this);
+  late final MetaboliteRelations metaboliteRelations = MetaboliteRelations(
+    this,
+  );
+  late final Index metaboliteRelationsByParent = Index(
+    'metabolite_relations_by_parent',
+    'CREATE INDEX metabolite_relations_by_parent ON metabolite_relations (parent_id)',
+  );
+  late final Index metaboliteRelationsByMetabolite = Index(
+    'metabolite_relations_by_metabolite',
+    'CREATE INDEX metabolite_relations_by_metabolite ON metabolite_relations (metabolite_id)',
+  );
+  late final Specimens specimens = Specimens(this);
+  late final Standards standards = Standards(this);
+  late final TermTranslations termTranslations = TermTranslations(this);
   @override
   Iterable<TableInfo<Table, Object?>> get allTables =>
       allSchemaEntities.whereType<TableInfo<Table, Object?>>();
@@ -13685,6 +18172,19 @@ abstract class _$ContentDatabase extends GeneratedDatabase {
     linksByTo,
     images,
     imagesByEntity,
+    sourceProvenance,
+    claimLifecycle,
+    claimLifecycleByState,
+    evidenceConflicts,
+    conflictClaims,
+    conflictClaimsByClaim,
+    reviewActions,
+    metaboliteRelations,
+    metaboliteRelationsByParent,
+    metaboliteRelationsByMetabolite,
+    specimens,
+    standards,
+    termTranslations,
   ];
   @override
   DriftDatabaseOptions get options =>
@@ -18790,6 +23290,67 @@ final class $ClaimsReferences
       manager.$state.copyWith(prefetchedData: cache),
     );
   }
+
+  static MultiTypedResultKey<ClaimLifecycle, List<ClaimLifecycleData>>
+  _claimLifecycleRefsTable(_$ContentDatabase db) =>
+      MultiTypedResultKey.fromTable(
+        db.claimLifecycle,
+        aliasName: 'claims__claim_id__claim_lifecycle__claim_id',
+      );
+
+  $ClaimLifecycleProcessedTableManager get claimLifecycleRefs {
+    final manager = $ClaimLifecycleTableManager($_db, $_db.claimLifecycle)
+        .filter(
+          (f) => f.claimId.claimId.sqlEquals($_itemColumn<String>('claim_id')!),
+        );
+
+    final cache = $_typedResult.readTableOrNull(_claimLifecycleRefsTable($_db));
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: cache),
+    );
+  }
+
+  static MultiTypedResultKey<ConflictClaims, List<ConflictClaim>>
+  _conflictClaimsRefsTable(_$ContentDatabase db) =>
+      MultiTypedResultKey.fromTable(
+        db.conflictClaims,
+        aliasName: 'claims__claim_id__conflict_claims__claim_id',
+      );
+
+  $ConflictClaimsProcessedTableManager get conflictClaimsRefs {
+    final manager = $ConflictClaimsTableManager($_db, $_db.conflictClaims)
+        .filter(
+          (f) => f.claimId.claimId.sqlEquals($_itemColumn<String>('claim_id')!),
+        );
+
+    final cache = $_typedResult.readTableOrNull(_conflictClaimsRefsTable($_db));
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: cache),
+    );
+  }
+
+  static MultiTypedResultKey<MetaboliteRelations, List<MetaboliteRelation>>
+  _metaboliteRelationsRefsTable(_$ContentDatabase db) =>
+      MultiTypedResultKey.fromTable(
+        db.metaboliteRelations,
+        aliasName: 'claims__claim_id__metabolite_relations__basis_claim_id',
+      );
+
+  $MetaboliteRelationsProcessedTableManager get metaboliteRelationsRefs {
+    final manager =
+        $MetaboliteRelationsTableManager($_db, $_db.metaboliteRelations).filter(
+          (f) => f.basisClaimId.claimId.sqlEquals(
+            $_itemColumn<String>('claim_id')!,
+          ),
+        );
+
+    final cache = $_typedResult.readTableOrNull(
+      _metaboliteRelationsRefsTable($_db),
+    );
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: cache),
+    );
+  }
 }
 
 class $ClaimsFilterComposer extends Composer<_$ContentDatabase, Claims> {
@@ -18980,6 +23541,81 @@ class $ClaimsFilterComposer extends Composer<_$ContentDatabase, Claims> {
           }) => $ConcentrationRecordsFilterComposer(
             $db: $db,
             $table: $db.concentrationRecords,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return f(composer);
+  }
+
+  Expression<bool> claimLifecycleRefs(
+    Expression<bool> Function($ClaimLifecycleFilterComposer f) f,
+  ) {
+    final $ClaimLifecycleFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.claimId,
+      referencedTable: $db.claimLifecycle,
+      getReferencedColumn: (t) => t.claimId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $ClaimLifecycleFilterComposer(
+            $db: $db,
+            $table: $db.claimLifecycle,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return f(composer);
+  }
+
+  Expression<bool> conflictClaimsRefs(
+    Expression<bool> Function($ConflictClaimsFilterComposer f) f,
+  ) {
+    final $ConflictClaimsFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.claimId,
+      referencedTable: $db.conflictClaims,
+      getReferencedColumn: (t) => t.claimId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $ConflictClaimsFilterComposer(
+            $db: $db,
+            $table: $db.conflictClaims,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return f(composer);
+  }
+
+  Expression<bool> metaboliteRelationsRefs(
+    Expression<bool> Function($MetaboliteRelationsFilterComposer f) f,
+  ) {
+    final $MetaboliteRelationsFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.claimId,
+      referencedTable: $db.metaboliteRelations,
+      getReferencedColumn: (t) => t.basisClaimId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $MetaboliteRelationsFilterComposer(
+            $db: $db,
+            $table: $db.metaboliteRelations,
             $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
             joinBuilder: joinBuilder,
             $removeJoinBuilderFromRootComposer:
@@ -19320,6 +23956,81 @@ class $ClaimsAnnotationComposer extends Composer<_$ContentDatabase, Claims> {
     );
     return f(composer);
   }
+
+  Expression<T> claimLifecycleRefs<T extends Object>(
+    Expression<T> Function($ClaimLifecycleAnnotationComposer a) f,
+  ) {
+    final $ClaimLifecycleAnnotationComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.claimId,
+      referencedTable: $db.claimLifecycle,
+      getReferencedColumn: (t) => t.claimId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $ClaimLifecycleAnnotationComposer(
+            $db: $db,
+            $table: $db.claimLifecycle,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return f(composer);
+  }
+
+  Expression<T> conflictClaimsRefs<T extends Object>(
+    Expression<T> Function($ConflictClaimsAnnotationComposer a) f,
+  ) {
+    final $ConflictClaimsAnnotationComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.claimId,
+      referencedTable: $db.conflictClaims,
+      getReferencedColumn: (t) => t.claimId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $ConflictClaimsAnnotationComposer(
+            $db: $db,
+            $table: $db.conflictClaims,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return f(composer);
+  }
+
+  Expression<T> metaboliteRelationsRefs<T extends Object>(
+    Expression<T> Function($MetaboliteRelationsAnnotationComposer a) f,
+  ) {
+    final $MetaboliteRelationsAnnotationComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.claimId,
+      referencedTable: $db.metaboliteRelations,
+      getReferencedColumn: (t) => t.basisClaimId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $MetaboliteRelationsAnnotationComposer(
+            $db: $db,
+            $table: $db.metaboliteRelations,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return f(composer);
+  }
 }
 
 class $ClaimsTableManager
@@ -19341,6 +24052,9 @@ class $ClaimsTableManager
             bool instrumentId,
             bool citationsRefs,
             bool concentrationRecordsRefs,
+            bool claimLifecycleRefs,
+            bool conflictClaimsRefs,
+            bool metaboliteRelationsRefs,
           })
         > {
   $ClaimsTableManager(_$ContentDatabase db, Claims table)
@@ -19445,12 +24159,18 @@ class $ClaimsTableManager
                 instrumentId = false,
                 citationsRefs = false,
                 concentrationRecordsRefs = false,
+                claimLifecycleRefs = false,
+                conflictClaimsRefs = false,
+                metaboliteRelationsRefs = false,
               }) {
                 return PrefetchHooks(
                   db: db,
                   explicitlyWatchedTables: [
                     if (citationsRefs) db.citations,
                     if (concentrationRecordsRefs) db.concentrationRecords,
+                    if (claimLifecycleRefs) db.claimLifecycle,
+                    if (conflictClaimsRefs) db.conflictClaims,
+                    if (metaboliteRelationsRefs) db.metaboliteRelations,
                   ],
                   addJoins:
                       <
@@ -19540,6 +24260,62 @@ class $ClaimsTableManager
                               ),
                           typedResults: items,
                         ),
+                      if (claimLifecycleRefs)
+                        await $_getPrefetchedData<
+                          Claim,
+                          Claims,
+                          ClaimLifecycleData
+                        >(
+                          currentTable: table,
+                          referencedTable: $ClaimsReferences
+                              ._claimLifecycleRefsTable(db),
+                          managerFromTypedResult: (p0) => $ClaimsReferences(
+                            db,
+                            table,
+                            p0,
+                          ).claimLifecycleRefs,
+                          referencedItemsForCurrentItem:
+                              (item, referencedItems) => referencedItems.where(
+                                (e) => e.claimId == item.claimId,
+                              ),
+                          typedResults: items,
+                        ),
+                      if (conflictClaimsRefs)
+                        await $_getPrefetchedData<Claim, Claims, ConflictClaim>(
+                          currentTable: table,
+                          referencedTable: $ClaimsReferences
+                              ._conflictClaimsRefsTable(db),
+                          managerFromTypedResult: (p0) => $ClaimsReferences(
+                            db,
+                            table,
+                            p0,
+                          ).conflictClaimsRefs,
+                          referencedItemsForCurrentItem:
+                              (item, referencedItems) => referencedItems.where(
+                                (e) => e.claimId == item.claimId,
+                              ),
+                          typedResults: items,
+                        ),
+                      if (metaboliteRelationsRefs)
+                        await $_getPrefetchedData<
+                          Claim,
+                          Claims,
+                          MetaboliteRelation
+                        >(
+                          currentTable: table,
+                          referencedTable: $ClaimsReferences
+                              ._metaboliteRelationsRefsTable(db),
+                          managerFromTypedResult: (p0) => $ClaimsReferences(
+                            db,
+                            table,
+                            p0,
+                          ).metaboliteRelationsRefs,
+                          referencedItemsForCurrentItem:
+                              (item, referencedItems) => referencedItems.where(
+                                (e) => e.basisClaimId == item.claimId,
+                              ),
+                          typedResults: items,
+                        ),
                     ];
                   },
                 );
@@ -19566,6 +24342,9 @@ typedef $ClaimsProcessedTableManager =
         bool instrumentId,
         bool citationsRefs,
         bool concentrationRecordsRefs,
+        bool claimLifecycleRefs,
+        bool conflictClaimsRefs,
+        bool metaboliteRelationsRefs,
       })
     >;
 typedef $CitationsCreateCompanionBuilder = CitationsCompanion Function({
@@ -19979,6 +24758,26 @@ final class $ReviewersReferences
       manager.$state.copyWith(prefetchedData: cache),
     );
   }
+
+  static MultiTypedResultKey<ReviewActions, List<ReviewAction>>
+  _reviewActionsRefsTable(_$ContentDatabase db) =>
+      MultiTypedResultKey.fromTable(
+        db.reviewActions,
+        aliasName: 'reviewers__reviewer_id__review_actions__reviewer_id',
+      );
+
+  $ReviewActionsProcessedTableManager get reviewActionsRefs {
+    final manager = $ReviewActionsTableManager($_db, $_db.reviewActions).filter(
+      (f) => f.reviewerId.reviewerId.sqlEquals(
+        $_itemColumn<String>('reviewer_id')!,
+      ),
+    );
+
+    final cache = $_typedResult.readTableOrNull(_reviewActionsRefsTable($_db));
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: cache),
+    );
+  }
 }
 
 class $ReviewersFilterComposer extends Composer<_$ContentDatabase, Reviewers> {
@@ -20050,6 +24849,31 @@ class $ReviewersFilterComposer extends Composer<_$ContentDatabase, Reviewers> {
           }) => $ReviewsFilterComposer(
             $db: $db,
             $table: $db.reviews,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return f(composer);
+  }
+
+  Expression<bool> reviewActionsRefs(
+    Expression<bool> Function($ReviewActionsFilterComposer f) f,
+  ) {
+    final $ReviewActionsFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.reviewerId,
+      referencedTable: $db.reviewActions,
+      getReferencedColumn: (t) => t.reviewerId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $ReviewActionsFilterComposer(
+            $db: $db,
+            $table: $db.reviewActions,
             $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
             joinBuilder: joinBuilder,
             $removeJoinBuilderFromRootComposer:
@@ -20166,6 +24990,31 @@ class $ReviewersAnnotationComposer
     );
     return f(composer);
   }
+
+  Expression<T> reviewActionsRefs<T extends Object>(
+    Expression<T> Function($ReviewActionsAnnotationComposer a) f,
+  ) {
+    final $ReviewActionsAnnotationComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.reviewerId,
+      referencedTable: $db.reviewActions,
+      getReferencedColumn: (t) => t.reviewerId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $ReviewActionsAnnotationComposer(
+            $db: $db,
+            $table: $db.reviewActions,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return f(composer);
+  }
 }
 
 class $ReviewersTableManager
@@ -20181,7 +25030,11 @@ class $ReviewersTableManager
           $ReviewersUpdateCompanionBuilder,
           (Reviewer, $ReviewersReferences),
           Reviewer,
-          PrefetchHooks Function({bool reviewerDomainsRefs, bool reviewsRefs})
+          PrefetchHooks Function({
+            bool reviewerDomainsRefs,
+            bool reviewsRefs,
+            bool reviewActionsRefs,
+          })
         > {
   $ReviewersTableManager(_$ContentDatabase db, Reviewers table)
     : super(
@@ -20227,12 +25080,17 @@ class $ReviewersTableManager
               )
               .toList(),
           prefetchHooksCallback:
-              ({reviewerDomainsRefs = false, reviewsRefs = false}) {
+              ({
+                reviewerDomainsRefs = false,
+                reviewsRefs = false,
+                reviewActionsRefs = false,
+              }) {
                 return PrefetchHooks(
                   db: db,
                   explicitlyWatchedTables: [
                     if (reviewerDomainsRefs) db.reviewerDomains,
                     if (reviewsRefs) db.reviews,
+                    if (reviewActionsRefs) db.reviewActions,
                   ],
                   addJoins: null,
                   getPrefetchedDataCallback: (items) async {
@@ -20270,6 +25128,26 @@ class $ReviewersTableManager
                               ),
                           typedResults: items,
                         ),
+                      if (reviewActionsRefs)
+                        await $_getPrefetchedData<
+                          Reviewer,
+                          Reviewers,
+                          ReviewAction
+                        >(
+                          currentTable: table,
+                          referencedTable: $ReviewersReferences
+                              ._reviewActionsRefsTable(db),
+                          managerFromTypedResult: (p0) => $ReviewersReferences(
+                            db,
+                            table,
+                            p0,
+                          ).reviewActionsRefs,
+                          referencedItemsForCurrentItem:
+                              (item, referencedItems) => referencedItems.where(
+                                (e) => e.reviewerId == item.reviewerId,
+                              ),
+                          typedResults: items,
+                        ),
                     ];
                   },
                 );
@@ -20290,7 +25168,11 @@ typedef $ReviewersProcessedTableManager =
       $ReviewersUpdateCompanionBuilder,
       (Reviewer, $ReviewersReferences),
       Reviewer,
-      PrefetchHooks Function({bool reviewerDomainsRefs, bool reviewsRefs})
+      PrefetchHooks Function({
+        bool reviewerDomainsRefs,
+        bool reviewsRefs,
+        bool reviewActionsRefs,
+      })
     >;
 typedef $ReviewerDomainsCreateCompanionBuilder =
     ReviewerDomainsCompanion Function({
@@ -24296,6 +29178,3216 @@ typedef $ImagesProcessedTableManager =
       Image,
       PrefetchHooks Function()
     >;
+typedef $SourceProvenanceCreateCompanionBuilder =
+    SourceProvenanceCompanion Function({
+      required String sourceId,
+      Value<String?> hierarchy,
+      required String reuseStatus,
+      Value<String?> language,
+      Value<String?> sha256,
+      Value<String?> sourceVersion,
+      Value<String> lifecycle,
+      Value<String?> supersededBy,
+      Value<String?> lifecycleCheckedAt,
+      Value<String?> lifecycleBasis,
+      Value<String> forensicRelevance,
+    });
+typedef $SourceProvenanceUpdateCompanionBuilder =
+    SourceProvenanceCompanion Function({
+      Value<String> sourceId,
+      Value<String?> hierarchy,
+      Value<String> reuseStatus,
+      Value<String?> language,
+      Value<String?> sha256,
+      Value<String?> sourceVersion,
+      Value<String> lifecycle,
+      Value<String?> supersededBy,
+      Value<String?> lifecycleCheckedAt,
+      Value<String?> lifecycleBasis,
+      Value<String> forensicRelevance,
+    });
+
+final class $SourceProvenanceReferences
+    extends
+        BaseReferences<
+          _$ContentDatabase,
+          SourceProvenance,
+          SourceProvenanceData
+        > {
+  $SourceProvenanceReferences(super.$_db, super.$_table, super.$_typedResult);
+
+  static Sources _sourceIdTable(_$ContentDatabase db) => db.sources.createAlias(
+    'source_provenance__source_id__sources__source_id',
+  );
+
+  $SourcesProcessedTableManager get sourceId {
+    final $_column = $_itemColumn<String>('source_id')!;
+
+    final manager = $SourcesTableManager(
+      $_db,
+      $_db.sources,
+    ).filter((f) => f.sourceId.sqlEquals($_column));
+    final item = $_typedResult.readTableOrNull(_sourceIdTable($_db));
+    if (item == null) return manager;
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: [item]),
+    );
+  }
+
+  static Sources _supersededByTable(_$ContentDatabase db) => db.sources
+      .createAlias('source_provenance__superseded_by__sources__source_id');
+
+  $SourcesProcessedTableManager? get supersededBy {
+    final $_column = $_itemColumn<String>('superseded_by');
+    if ($_column == null) return null;
+    final manager = $SourcesTableManager(
+      $_db,
+      $_db.sources,
+    ).filter((f) => f.sourceId.sqlEquals($_column));
+    final item = $_typedResult.readTableOrNull(_supersededByTable($_db));
+    if (item == null) return manager;
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: [item]),
+    );
+  }
+}
+
+class $SourceProvenanceFilterComposer
+    extends Composer<_$ContentDatabase, SourceProvenance> {
+  $SourceProvenanceFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<String> get hierarchy => $composableBuilder(
+    column: $table.hierarchy,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get reuseStatus => $composableBuilder(
+    column: $table.reuseStatus,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get language => $composableBuilder(
+    column: $table.language,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get sha256 => $composableBuilder(
+    column: $table.sha256,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get sourceVersion => $composableBuilder(
+    column: $table.sourceVersion,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get lifecycle => $composableBuilder(
+    column: $table.lifecycle,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get lifecycleCheckedAt => $composableBuilder(
+    column: $table.lifecycleCheckedAt,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get lifecycleBasis => $composableBuilder(
+    column: $table.lifecycleBasis,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get forensicRelevance => $composableBuilder(
+    column: $table.forensicRelevance,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  $SourcesFilterComposer get sourceId {
+    final $SourcesFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.sourceId,
+      referencedTable: $db.sources,
+      getReferencedColumn: (t) => t.sourceId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $SourcesFilterComposer(
+            $db: $db,
+            $table: $db.sources,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+
+  $SourcesFilterComposer get supersededBy {
+    final $SourcesFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.supersededBy,
+      referencedTable: $db.sources,
+      getReferencedColumn: (t) => t.sourceId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $SourcesFilterComposer(
+            $db: $db,
+            $table: $db.sources,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $SourceProvenanceOrderingComposer
+    extends Composer<_$ContentDatabase, SourceProvenance> {
+  $SourceProvenanceOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<String> get hierarchy => $composableBuilder(
+    column: $table.hierarchy,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get reuseStatus => $composableBuilder(
+    column: $table.reuseStatus,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get language => $composableBuilder(
+    column: $table.language,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get sha256 => $composableBuilder(
+    column: $table.sha256,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get sourceVersion => $composableBuilder(
+    column: $table.sourceVersion,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get lifecycle => $composableBuilder(
+    column: $table.lifecycle,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get lifecycleCheckedAt => $composableBuilder(
+    column: $table.lifecycleCheckedAt,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get lifecycleBasis => $composableBuilder(
+    column: $table.lifecycleBasis,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get forensicRelevance => $composableBuilder(
+    column: $table.forensicRelevance,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  $SourcesOrderingComposer get sourceId {
+    final $SourcesOrderingComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.sourceId,
+      referencedTable: $db.sources,
+      getReferencedColumn: (t) => t.sourceId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $SourcesOrderingComposer(
+            $db: $db,
+            $table: $db.sources,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+
+  $SourcesOrderingComposer get supersededBy {
+    final $SourcesOrderingComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.supersededBy,
+      referencedTable: $db.sources,
+      getReferencedColumn: (t) => t.sourceId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $SourcesOrderingComposer(
+            $db: $db,
+            $table: $db.sources,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $SourceProvenanceAnnotationComposer
+    extends Composer<_$ContentDatabase, SourceProvenance> {
+  $SourceProvenanceAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<String> get hierarchy =>
+      $composableBuilder(column: $table.hierarchy, builder: (column) => column);
+
+  GeneratedColumn<String> get reuseStatus => $composableBuilder(
+    column: $table.reuseStatus,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get language =>
+      $composableBuilder(column: $table.language, builder: (column) => column);
+
+  GeneratedColumn<String> get sha256 =>
+      $composableBuilder(column: $table.sha256, builder: (column) => column);
+
+  GeneratedColumn<String> get sourceVersion => $composableBuilder(
+    column: $table.sourceVersion,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get lifecycle =>
+      $composableBuilder(column: $table.lifecycle, builder: (column) => column);
+
+  GeneratedColumn<String> get lifecycleCheckedAt => $composableBuilder(
+    column: $table.lifecycleCheckedAt,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get lifecycleBasis => $composableBuilder(
+    column: $table.lifecycleBasis,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get forensicRelevance => $composableBuilder(
+    column: $table.forensicRelevance,
+    builder: (column) => column,
+  );
+
+  $SourcesAnnotationComposer get sourceId {
+    final $SourcesAnnotationComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.sourceId,
+      referencedTable: $db.sources,
+      getReferencedColumn: (t) => t.sourceId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $SourcesAnnotationComposer(
+            $db: $db,
+            $table: $db.sources,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+
+  $SourcesAnnotationComposer get supersededBy {
+    final $SourcesAnnotationComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.supersededBy,
+      referencedTable: $db.sources,
+      getReferencedColumn: (t) => t.sourceId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $SourcesAnnotationComposer(
+            $db: $db,
+            $table: $db.sources,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $SourceProvenanceTableManager
+    extends
+        RootTableManager<
+          _$ContentDatabase,
+          SourceProvenance,
+          SourceProvenanceData,
+          $SourceProvenanceFilterComposer,
+          $SourceProvenanceOrderingComposer,
+          $SourceProvenanceAnnotationComposer,
+          $SourceProvenanceCreateCompanionBuilder,
+          $SourceProvenanceUpdateCompanionBuilder,
+          (SourceProvenanceData, $SourceProvenanceReferences),
+          SourceProvenanceData,
+          PrefetchHooks Function({bool sourceId, bool supersededBy})
+        > {
+  $SourceProvenanceTableManager(_$ContentDatabase db, SourceProvenance table)
+    : super(
+        TableManagerState(
+          db: db,
+          table: table,
+          createFilteringComposer: () =>
+              $SourceProvenanceFilterComposer($db: db, $table: table),
+          createOrderingComposer: () =>
+              $SourceProvenanceOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer: () =>
+              $SourceProvenanceAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<String> sourceId = const Value.absent(),
+                Value<String?> hierarchy = const Value.absent(),
+                Value<String> reuseStatus = const Value.absent(),
+                Value<String?> language = const Value.absent(),
+                Value<String?> sha256 = const Value.absent(),
+                Value<String?> sourceVersion = const Value.absent(),
+                Value<String> lifecycle = const Value.absent(),
+                Value<String?> supersededBy = const Value.absent(),
+                Value<String?> lifecycleCheckedAt = const Value.absent(),
+                Value<String?> lifecycleBasis = const Value.absent(),
+                Value<String> forensicRelevance = const Value.absent(),
+              }) => SourceProvenanceCompanion(
+                sourceId: sourceId,
+                hierarchy: hierarchy,
+                reuseStatus: reuseStatus,
+                language: language,
+                sha256: sha256,
+                sourceVersion: sourceVersion,
+                lifecycle: lifecycle,
+                supersededBy: supersededBy,
+                lifecycleCheckedAt: lifecycleCheckedAt,
+                lifecycleBasis: lifecycleBasis,
+                forensicRelevance: forensicRelevance,
+              ),
+          createCompanionCallback:
+              ({
+                required String sourceId,
+                Value<String?> hierarchy = const Value.absent(),
+                required String reuseStatus,
+                Value<String?> language = const Value.absent(),
+                Value<String?> sha256 = const Value.absent(),
+                Value<String?> sourceVersion = const Value.absent(),
+                Value<String> lifecycle = const Value.absent(),
+                Value<String?> supersededBy = const Value.absent(),
+                Value<String?> lifecycleCheckedAt = const Value.absent(),
+                Value<String?> lifecycleBasis = const Value.absent(),
+                Value<String> forensicRelevance = const Value.absent(),
+              }) => SourceProvenanceCompanion.insert(
+                sourceId: sourceId,
+                hierarchy: hierarchy,
+                reuseStatus: reuseStatus,
+                language: language,
+                sha256: sha256,
+                sourceVersion: sourceVersion,
+                lifecycle: lifecycle,
+                supersededBy: supersededBy,
+                lifecycleCheckedAt: lifecycleCheckedAt,
+                lifecycleBasis: lifecycleBasis,
+                forensicRelevance: forensicRelevance,
+              ),
+          withReferenceMapper: (p0) => p0
+              .map(
+                (e) => (
+                  e.readTable<SourceProvenance, SourceProvenanceData>(table),
+                  $SourceProvenanceReferences(db, table, e),
+                ),
+              )
+              .toList(),
+          prefetchHooksCallback: ({sourceId = false, supersededBy = false}) {
+            return PrefetchHooks(
+              db: db,
+              explicitlyWatchedTables: [],
+              addJoins:
+                  <
+                    T extends TableManagerState<
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic
+                    >
+                  >(state) {
+                    if (sourceId) {
+                      state = state.withJoin(
+                        currentTable: table,
+                        currentColumn: table.sourceId,
+                        referencedTable: $SourceProvenanceReferences
+                            ._sourceIdTable(db),
+                        referencedColumn: $SourceProvenanceReferences
+                            ._sourceIdTable(db)
+                            .sourceId,
+                      ) as T;
+                    }
+                    if (supersededBy) {
+                      state = state.withJoin(
+                        currentTable: table,
+                        currentColumn: table.supersededBy,
+                        referencedTable: $SourceProvenanceReferences
+                            ._supersededByTable(db),
+                        referencedColumn: $SourceProvenanceReferences
+                            ._supersededByTable(db)
+                            .sourceId,
+                      ) as T;
+                    }
+
+                    return state;
+                  },
+              getPrefetchedDataCallback: (items) async {
+                return [];
+              },
+            );
+          },
+        ),
+      );
+}
+
+typedef $SourceProvenanceProcessedTableManager =
+    ProcessedTableManager<
+      _$ContentDatabase,
+      SourceProvenance,
+      SourceProvenanceData,
+      $SourceProvenanceFilterComposer,
+      $SourceProvenanceOrderingComposer,
+      $SourceProvenanceAnnotationComposer,
+      $SourceProvenanceCreateCompanionBuilder,
+      $SourceProvenanceUpdateCompanionBuilder,
+      (SourceProvenanceData, $SourceProvenanceReferences),
+      SourceProvenanceData,
+      PrefetchHooks Function({bool sourceId, bool supersededBy})
+    >;
+typedef $ClaimLifecycleCreateCompanionBuilder =
+    ClaimLifecycleCompanion Function({
+      required String claimId,
+      required String lifecycle,
+      required String reason,
+      Value<String> causedByJson,
+    });
+typedef $ClaimLifecycleUpdateCompanionBuilder =
+    ClaimLifecycleCompanion Function({
+      Value<String> claimId,
+      Value<String> lifecycle,
+      Value<String> reason,
+      Value<String> causedByJson,
+    });
+
+final class $ClaimLifecycleReferences
+    extends
+        BaseReferences<_$ContentDatabase, ClaimLifecycle, ClaimLifecycleData> {
+  $ClaimLifecycleReferences(super.$_db, super.$_table, super.$_typedResult);
+
+  static Claims _claimIdTable(_$ContentDatabase db) =>
+      db.claims.createAlias('claim_lifecycle__claim_id__claims__claim_id');
+
+  $ClaimsProcessedTableManager get claimId {
+    final $_column = $_itemColumn<String>('claim_id')!;
+
+    final manager = $ClaimsTableManager(
+      $_db,
+      $_db.claims,
+    ).filter((f) => f.claimId.sqlEquals($_column));
+    final item = $_typedResult.readTableOrNull(_claimIdTable($_db));
+    if (item == null) return manager;
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: [item]),
+    );
+  }
+}
+
+class $ClaimLifecycleFilterComposer
+    extends Composer<_$ContentDatabase, ClaimLifecycle> {
+  $ClaimLifecycleFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<String> get lifecycle => $composableBuilder(
+    column: $table.lifecycle,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get reason => $composableBuilder(
+    column: $table.reason,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get causedByJson => $composableBuilder(
+    column: $table.causedByJson,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  $ClaimsFilterComposer get claimId {
+    final $ClaimsFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.claimId,
+      referencedTable: $db.claims,
+      getReferencedColumn: (t) => t.claimId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $ClaimsFilterComposer(
+            $db: $db,
+            $table: $db.claims,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $ClaimLifecycleOrderingComposer
+    extends Composer<_$ContentDatabase, ClaimLifecycle> {
+  $ClaimLifecycleOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<String> get lifecycle => $composableBuilder(
+    column: $table.lifecycle,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get reason => $composableBuilder(
+    column: $table.reason,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get causedByJson => $composableBuilder(
+    column: $table.causedByJson,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  $ClaimsOrderingComposer get claimId {
+    final $ClaimsOrderingComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.claimId,
+      referencedTable: $db.claims,
+      getReferencedColumn: (t) => t.claimId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $ClaimsOrderingComposer(
+            $db: $db,
+            $table: $db.claims,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $ClaimLifecycleAnnotationComposer
+    extends Composer<_$ContentDatabase, ClaimLifecycle> {
+  $ClaimLifecycleAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<String> get lifecycle =>
+      $composableBuilder(column: $table.lifecycle, builder: (column) => column);
+
+  GeneratedColumn<String> get reason =>
+      $composableBuilder(column: $table.reason, builder: (column) => column);
+
+  GeneratedColumn<String> get causedByJson => $composableBuilder(
+    column: $table.causedByJson,
+    builder: (column) => column,
+  );
+
+  $ClaimsAnnotationComposer get claimId {
+    final $ClaimsAnnotationComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.claimId,
+      referencedTable: $db.claims,
+      getReferencedColumn: (t) => t.claimId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $ClaimsAnnotationComposer(
+            $db: $db,
+            $table: $db.claims,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $ClaimLifecycleTableManager
+    extends
+        RootTableManager<
+          _$ContentDatabase,
+          ClaimLifecycle,
+          ClaimLifecycleData,
+          $ClaimLifecycleFilterComposer,
+          $ClaimLifecycleOrderingComposer,
+          $ClaimLifecycleAnnotationComposer,
+          $ClaimLifecycleCreateCompanionBuilder,
+          $ClaimLifecycleUpdateCompanionBuilder,
+          (ClaimLifecycleData, $ClaimLifecycleReferences),
+          ClaimLifecycleData,
+          PrefetchHooks Function({bool claimId})
+        > {
+  $ClaimLifecycleTableManager(_$ContentDatabase db, ClaimLifecycle table)
+    : super(
+        TableManagerState(
+          db: db,
+          table: table,
+          createFilteringComposer: () =>
+              $ClaimLifecycleFilterComposer($db: db, $table: table),
+          createOrderingComposer: () =>
+              $ClaimLifecycleOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer: () =>
+              $ClaimLifecycleAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<String> claimId = const Value.absent(),
+                Value<String> lifecycle = const Value.absent(),
+                Value<String> reason = const Value.absent(),
+                Value<String> causedByJson = const Value.absent(),
+              }) => ClaimLifecycleCompanion(
+                claimId: claimId,
+                lifecycle: lifecycle,
+                reason: reason,
+                causedByJson: causedByJson,
+              ),
+          createCompanionCallback:
+              ({
+                required String claimId,
+                required String lifecycle,
+                required String reason,
+                Value<String> causedByJson = const Value.absent(),
+              }) => ClaimLifecycleCompanion.insert(
+                claimId: claimId,
+                lifecycle: lifecycle,
+                reason: reason,
+                causedByJson: causedByJson,
+              ),
+          withReferenceMapper: (p0) => p0
+              .map(
+                (e) => (
+                  e.readTable<ClaimLifecycle, ClaimLifecycleData>(table),
+                  $ClaimLifecycleReferences(db, table, e),
+                ),
+              )
+              .toList(),
+          prefetchHooksCallback: ({claimId = false}) {
+            return PrefetchHooks(
+              db: db,
+              explicitlyWatchedTables: [],
+              addJoins:
+                  <
+                    T extends TableManagerState<
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic
+                    >
+                  >(state) {
+                    if (claimId) {
+                      state = state.withJoin(
+                        currentTable: table,
+                        currentColumn: table.claimId,
+                        referencedTable: $ClaimLifecycleReferences
+                            ._claimIdTable(db),
+                        referencedColumn: $ClaimLifecycleReferences
+                            ._claimIdTable(db)
+                            .claimId,
+                      ) as T;
+                    }
+
+                    return state;
+                  },
+              getPrefetchedDataCallback: (items) async {
+                return [];
+              },
+            );
+          },
+        ),
+      );
+}
+
+typedef $ClaimLifecycleProcessedTableManager =
+    ProcessedTableManager<
+      _$ContentDatabase,
+      ClaimLifecycle,
+      ClaimLifecycleData,
+      $ClaimLifecycleFilterComposer,
+      $ClaimLifecycleOrderingComposer,
+      $ClaimLifecycleAnnotationComposer,
+      $ClaimLifecycleCreateCompanionBuilder,
+      $ClaimLifecycleUpdateCompanionBuilder,
+      (ClaimLifecycleData, $ClaimLifecycleReferences),
+      ClaimLifecycleData,
+      PrefetchHooks Function({bool claimId})
+    >;
+typedef $EvidenceConflictsCreateCompanionBuilder =
+    EvidenceConflictsCompanion Function({
+      required String conflictId,
+      required String entityId,
+      required String question,
+      required String kind,
+      required String note,
+      required String state,
+      Value<String?> detectedAt,
+    });
+typedef $EvidenceConflictsUpdateCompanionBuilder =
+    EvidenceConflictsCompanion Function({
+      Value<String> conflictId,
+      Value<String> entityId,
+      Value<String> question,
+      Value<String> kind,
+      Value<String> note,
+      Value<String> state,
+      Value<String?> detectedAt,
+    });
+
+final class $EvidenceConflictsReferences
+    extends
+        BaseReferences<_$ContentDatabase, EvidenceConflicts, EvidenceConflict> {
+  $EvidenceConflictsReferences(super.$_db, super.$_table, super.$_typedResult);
+
+  static MultiTypedResultKey<ConflictClaims, List<ConflictClaim>>
+  _conflictClaimsRefsTable(_$ContentDatabase db) =>
+      MultiTypedResultKey.fromTable(
+        db.conflictClaims,
+        aliasName:
+            'evidence_conflicts__conflict_id__conflict_claims__conflict_id',
+      );
+
+  $ConflictClaimsProcessedTableManager get conflictClaimsRefs {
+    final manager = $ConflictClaimsTableManager($_db, $_db.conflictClaims)
+        .filter(
+          (f) => f.conflictId.conflictId.sqlEquals(
+            $_itemColumn<String>('conflict_id')!,
+          ),
+        );
+
+    final cache = $_typedResult.readTableOrNull(_conflictClaimsRefsTable($_db));
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: cache),
+    );
+  }
+}
+
+class $EvidenceConflictsFilterComposer
+    extends Composer<_$ContentDatabase, EvidenceConflicts> {
+  $EvidenceConflictsFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<String> get conflictId => $composableBuilder(
+    column: $table.conflictId,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get entityId => $composableBuilder(
+    column: $table.entityId,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get question => $composableBuilder(
+    column: $table.question,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get kind => $composableBuilder(
+    column: $table.kind,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get note => $composableBuilder(
+    column: $table.note,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get state => $composableBuilder(
+    column: $table.state,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get detectedAt => $composableBuilder(
+    column: $table.detectedAt,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  Expression<bool> conflictClaimsRefs(
+    Expression<bool> Function($ConflictClaimsFilterComposer f) f,
+  ) {
+    final $ConflictClaimsFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.conflictId,
+      referencedTable: $db.conflictClaims,
+      getReferencedColumn: (t) => t.conflictId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $ConflictClaimsFilterComposer(
+            $db: $db,
+            $table: $db.conflictClaims,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return f(composer);
+  }
+}
+
+class $EvidenceConflictsOrderingComposer
+    extends Composer<_$ContentDatabase, EvidenceConflicts> {
+  $EvidenceConflictsOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<String> get conflictId => $composableBuilder(
+    column: $table.conflictId,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get entityId => $composableBuilder(
+    column: $table.entityId,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get question => $composableBuilder(
+    column: $table.question,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get kind => $composableBuilder(
+    column: $table.kind,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get note => $composableBuilder(
+    column: $table.note,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get state => $composableBuilder(
+    column: $table.state,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get detectedAt => $composableBuilder(
+    column: $table.detectedAt,
+    builder: (column) => ColumnOrderings(column),
+  );
+}
+
+class $EvidenceConflictsAnnotationComposer
+    extends Composer<_$ContentDatabase, EvidenceConflicts> {
+  $EvidenceConflictsAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<String> get conflictId => $composableBuilder(
+    column: $table.conflictId,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get entityId =>
+      $composableBuilder(column: $table.entityId, builder: (column) => column);
+
+  GeneratedColumn<String> get question =>
+      $composableBuilder(column: $table.question, builder: (column) => column);
+
+  GeneratedColumn<String> get kind =>
+      $composableBuilder(column: $table.kind, builder: (column) => column);
+
+  GeneratedColumn<String> get note =>
+      $composableBuilder(column: $table.note, builder: (column) => column);
+
+  GeneratedColumn<String> get state =>
+      $composableBuilder(column: $table.state, builder: (column) => column);
+
+  GeneratedColumn<String> get detectedAt => $composableBuilder(
+    column: $table.detectedAt,
+    builder: (column) => column,
+  );
+
+  Expression<T> conflictClaimsRefs<T extends Object>(
+    Expression<T> Function($ConflictClaimsAnnotationComposer a) f,
+  ) {
+    final $ConflictClaimsAnnotationComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.conflictId,
+      referencedTable: $db.conflictClaims,
+      getReferencedColumn: (t) => t.conflictId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $ConflictClaimsAnnotationComposer(
+            $db: $db,
+            $table: $db.conflictClaims,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return f(composer);
+  }
+}
+
+class $EvidenceConflictsTableManager
+    extends
+        RootTableManager<
+          _$ContentDatabase,
+          EvidenceConflicts,
+          EvidenceConflict,
+          $EvidenceConflictsFilterComposer,
+          $EvidenceConflictsOrderingComposer,
+          $EvidenceConflictsAnnotationComposer,
+          $EvidenceConflictsCreateCompanionBuilder,
+          $EvidenceConflictsUpdateCompanionBuilder,
+          (EvidenceConflict, $EvidenceConflictsReferences),
+          EvidenceConflict,
+          PrefetchHooks Function({bool conflictClaimsRefs})
+        > {
+  $EvidenceConflictsTableManager(_$ContentDatabase db, EvidenceConflicts table)
+    : super(
+        TableManagerState(
+          db: db,
+          table: table,
+          createFilteringComposer: () =>
+              $EvidenceConflictsFilterComposer($db: db, $table: table),
+          createOrderingComposer: () =>
+              $EvidenceConflictsOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer: () =>
+              $EvidenceConflictsAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<String> conflictId = const Value.absent(),
+                Value<String> entityId = const Value.absent(),
+                Value<String> question = const Value.absent(),
+                Value<String> kind = const Value.absent(),
+                Value<String> note = const Value.absent(),
+                Value<String> state = const Value.absent(),
+                Value<String?> detectedAt = const Value.absent(),
+              }) => EvidenceConflictsCompanion(
+                conflictId: conflictId,
+                entityId: entityId,
+                question: question,
+                kind: kind,
+                note: note,
+                state: state,
+                detectedAt: detectedAt,
+              ),
+          createCompanionCallback:
+              ({
+                required String conflictId,
+                required String entityId,
+                required String question,
+                required String kind,
+                required String note,
+                required String state,
+                Value<String?> detectedAt = const Value.absent(),
+              }) => EvidenceConflictsCompanion.insert(
+                conflictId: conflictId,
+                entityId: entityId,
+                question: question,
+                kind: kind,
+                note: note,
+                state: state,
+                detectedAt: detectedAt,
+              ),
+          withReferenceMapper: (p0) => p0
+              .map(
+                (e) => (
+                  e.readTable<EvidenceConflicts, EvidenceConflict>(table),
+                  $EvidenceConflictsReferences(db, table, e),
+                ),
+              )
+              .toList(),
+          prefetchHooksCallback: ({conflictClaimsRefs = false}) {
+            return PrefetchHooks(
+              db: db,
+              explicitlyWatchedTables: [
+                if (conflictClaimsRefs) db.conflictClaims,
+              ],
+              addJoins: null,
+              getPrefetchedDataCallback: (items) async {
+                return [
+                  if (conflictClaimsRefs)
+                    await $_getPrefetchedData<
+                      EvidenceConflict,
+                      EvidenceConflicts,
+                      ConflictClaim
+                    >(
+                      currentTable: table,
+                      referencedTable: $EvidenceConflictsReferences
+                          ._conflictClaimsRefsTable(db),
+                      managerFromTypedResult: (p0) =>
+                          $EvidenceConflictsReferences(
+                            db,
+                            table,
+                            p0,
+                          ).conflictClaimsRefs,
+                      referencedItemsForCurrentItem: (item, referencedItems) =>
+                          referencedItems.where(
+                            (e) => e.conflictId == item.conflictId,
+                          ),
+                      typedResults: items,
+                    ),
+                ];
+              },
+            );
+          },
+        ),
+      );
+}
+
+typedef $EvidenceConflictsProcessedTableManager =
+    ProcessedTableManager<
+      _$ContentDatabase,
+      EvidenceConflicts,
+      EvidenceConflict,
+      $EvidenceConflictsFilterComposer,
+      $EvidenceConflictsOrderingComposer,
+      $EvidenceConflictsAnnotationComposer,
+      $EvidenceConflictsCreateCompanionBuilder,
+      $EvidenceConflictsUpdateCompanionBuilder,
+      (EvidenceConflict, $EvidenceConflictsReferences),
+      EvidenceConflict,
+      PrefetchHooks Function({bool conflictClaimsRefs})
+    >;
+typedef $ConflictClaimsCreateCompanionBuilder =
+    ConflictClaimsCompanion Function({
+      required String conflictId,
+      required String claimId,
+    });
+typedef $ConflictClaimsUpdateCompanionBuilder =
+    ConflictClaimsCompanion Function({
+      Value<String> conflictId,
+      Value<String> claimId,
+    });
+
+final class $ConflictClaimsReferences
+    extends BaseReferences<_$ContentDatabase, ConflictClaims, ConflictClaim> {
+  $ConflictClaimsReferences(super.$_db, super.$_table, super.$_typedResult);
+
+  static EvidenceConflicts _conflictIdTable(_$ContentDatabase db) =>
+      db.evidenceConflicts.createAlias(
+        'conflict_claims__conflict_id__evidence_conflicts__conflict_id',
+      );
+
+  $EvidenceConflictsProcessedTableManager get conflictId {
+    final $_column = $_itemColumn<String>('conflict_id')!;
+
+    final manager = $EvidenceConflictsTableManager(
+      $_db,
+      $_db.evidenceConflicts,
+    ).filter((f) => f.conflictId.sqlEquals($_column));
+    final item = $_typedResult.readTableOrNull(_conflictIdTable($_db));
+    if (item == null) return manager;
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: [item]),
+    );
+  }
+
+  static Claims _claimIdTable(_$ContentDatabase db) =>
+      db.claims.createAlias('conflict_claims__claim_id__claims__claim_id');
+
+  $ClaimsProcessedTableManager get claimId {
+    final $_column = $_itemColumn<String>('claim_id')!;
+
+    final manager = $ClaimsTableManager(
+      $_db,
+      $_db.claims,
+    ).filter((f) => f.claimId.sqlEquals($_column));
+    final item = $_typedResult.readTableOrNull(_claimIdTable($_db));
+    if (item == null) return manager;
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: [item]),
+    );
+  }
+}
+
+class $ConflictClaimsFilterComposer
+    extends Composer<_$ContentDatabase, ConflictClaims> {
+  $ConflictClaimsFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  $EvidenceConflictsFilterComposer get conflictId {
+    final $EvidenceConflictsFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.conflictId,
+      referencedTable: $db.evidenceConflicts,
+      getReferencedColumn: (t) => t.conflictId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $EvidenceConflictsFilterComposer(
+            $db: $db,
+            $table: $db.evidenceConflicts,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+
+  $ClaimsFilterComposer get claimId {
+    final $ClaimsFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.claimId,
+      referencedTable: $db.claims,
+      getReferencedColumn: (t) => t.claimId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $ClaimsFilterComposer(
+            $db: $db,
+            $table: $db.claims,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $ConflictClaimsOrderingComposer
+    extends Composer<_$ContentDatabase, ConflictClaims> {
+  $ConflictClaimsOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  $EvidenceConflictsOrderingComposer get conflictId {
+    final $EvidenceConflictsOrderingComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.conflictId,
+      referencedTable: $db.evidenceConflicts,
+      getReferencedColumn: (t) => t.conflictId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $EvidenceConflictsOrderingComposer(
+            $db: $db,
+            $table: $db.evidenceConflicts,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+
+  $ClaimsOrderingComposer get claimId {
+    final $ClaimsOrderingComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.claimId,
+      referencedTable: $db.claims,
+      getReferencedColumn: (t) => t.claimId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $ClaimsOrderingComposer(
+            $db: $db,
+            $table: $db.claims,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $ConflictClaimsAnnotationComposer
+    extends Composer<_$ContentDatabase, ConflictClaims> {
+  $ConflictClaimsAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  $EvidenceConflictsAnnotationComposer get conflictId {
+    final $EvidenceConflictsAnnotationComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.conflictId,
+      referencedTable: $db.evidenceConflicts,
+      getReferencedColumn: (t) => t.conflictId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $EvidenceConflictsAnnotationComposer(
+            $db: $db,
+            $table: $db.evidenceConflicts,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+
+  $ClaimsAnnotationComposer get claimId {
+    final $ClaimsAnnotationComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.claimId,
+      referencedTable: $db.claims,
+      getReferencedColumn: (t) => t.claimId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $ClaimsAnnotationComposer(
+            $db: $db,
+            $table: $db.claims,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $ConflictClaimsTableManager
+    extends
+        RootTableManager<
+          _$ContentDatabase,
+          ConflictClaims,
+          ConflictClaim,
+          $ConflictClaimsFilterComposer,
+          $ConflictClaimsOrderingComposer,
+          $ConflictClaimsAnnotationComposer,
+          $ConflictClaimsCreateCompanionBuilder,
+          $ConflictClaimsUpdateCompanionBuilder,
+          (ConflictClaim, $ConflictClaimsReferences),
+          ConflictClaim,
+          PrefetchHooks Function({bool conflictId, bool claimId})
+        > {
+  $ConflictClaimsTableManager(_$ContentDatabase db, ConflictClaims table)
+    : super(
+        TableManagerState(
+          db: db,
+          table: table,
+          createFilteringComposer: () =>
+              $ConflictClaimsFilterComposer($db: db, $table: table),
+          createOrderingComposer: () =>
+              $ConflictClaimsOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer: () =>
+              $ConflictClaimsAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<String> conflictId = const Value.absent(),
+                Value<String> claimId = const Value.absent(),
+              }) => ConflictClaimsCompanion(
+                conflictId: conflictId,
+                claimId: claimId,
+              ),
+          createCompanionCallback:
+              ({required String conflictId, required String claimId}) =>
+                  ConflictClaimsCompanion.insert(
+                    conflictId: conflictId,
+                    claimId: claimId,
+                  ),
+          withReferenceMapper: (p0) => p0
+              .map(
+                (e) => (
+                  e.readTable<ConflictClaims, ConflictClaim>(table),
+                  $ConflictClaimsReferences(db, table, e),
+                ),
+              )
+              .toList(),
+          prefetchHooksCallback: ({conflictId = false, claimId = false}) {
+            return PrefetchHooks(
+              db: db,
+              explicitlyWatchedTables: [],
+              addJoins:
+                  <
+                    T extends TableManagerState<
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic
+                    >
+                  >(state) {
+                    if (conflictId) {
+                      state = state.withJoin(
+                        currentTable: table,
+                        currentColumn: table.conflictId,
+                        referencedTable: $ConflictClaimsReferences
+                            ._conflictIdTable(db),
+                        referencedColumn: $ConflictClaimsReferences
+                            ._conflictIdTable(db)
+                            .conflictId,
+                      ) as T;
+                    }
+                    if (claimId) {
+                      state = state.withJoin(
+                        currentTable: table,
+                        currentColumn: table.claimId,
+                        referencedTable: $ConflictClaimsReferences
+                            ._claimIdTable(db),
+                        referencedColumn: $ConflictClaimsReferences
+                            ._claimIdTable(db)
+                            .claimId,
+                      ) as T;
+                    }
+
+                    return state;
+                  },
+              getPrefetchedDataCallback: (items) async {
+                return [];
+              },
+            );
+          },
+        ),
+      );
+}
+
+typedef $ConflictClaimsProcessedTableManager =
+    ProcessedTableManager<
+      _$ContentDatabase,
+      ConflictClaims,
+      ConflictClaim,
+      $ConflictClaimsFilterComposer,
+      $ConflictClaimsOrderingComposer,
+      $ConflictClaimsAnnotationComposer,
+      $ConflictClaimsCreateCompanionBuilder,
+      $ConflictClaimsUpdateCompanionBuilder,
+      (ConflictClaim, $ConflictClaimsReferences),
+      ConflictClaim,
+      PrefetchHooks Function({bool conflictId, bool claimId})
+    >;
+typedef $ReviewActionsCreateCompanionBuilder = ReviewActionsCompanion Function({
+  required String actionId,
+  required String subjectId,
+  required int subjectVersion,
+  required String contentVersion,
+  required String domain,
+  required String reviewerId,
+  required String role,
+  required String actedAt,
+  Value<String> note,
+});
+typedef $ReviewActionsUpdateCompanionBuilder = ReviewActionsCompanion Function({
+  Value<String> actionId,
+  Value<String> subjectId,
+  Value<int> subjectVersion,
+  Value<String> contentVersion,
+  Value<String> domain,
+  Value<String> reviewerId,
+  Value<String> role,
+  Value<String> actedAt,
+  Value<String> note,
+});
+
+final class $ReviewActionsReferences
+    extends BaseReferences<_$ContentDatabase, ReviewActions, ReviewAction> {
+  $ReviewActionsReferences(super.$_db, super.$_table, super.$_typedResult);
+
+  static Reviewers _reviewerIdTable(_$ContentDatabase db) => db.reviewers
+      .createAlias('review_actions__reviewer_id__reviewers__reviewer_id');
+
+  $ReviewersProcessedTableManager get reviewerId {
+    final $_column = $_itemColumn<String>('reviewer_id')!;
+
+    final manager = $ReviewersTableManager(
+      $_db,
+      $_db.reviewers,
+    ).filter((f) => f.reviewerId.sqlEquals($_column));
+    final item = $_typedResult.readTableOrNull(_reviewerIdTable($_db));
+    if (item == null) return manager;
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: [item]),
+    );
+  }
+}
+
+class $ReviewActionsFilterComposer
+    extends Composer<_$ContentDatabase, ReviewActions> {
+  $ReviewActionsFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<String> get actionId => $composableBuilder(
+    column: $table.actionId,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get subjectId => $composableBuilder(
+    column: $table.subjectId,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get subjectVersion => $composableBuilder(
+    column: $table.subjectVersion,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get contentVersion => $composableBuilder(
+    column: $table.contentVersion,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get domain => $composableBuilder(
+    column: $table.domain,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get role => $composableBuilder(
+    column: $table.role,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get actedAt => $composableBuilder(
+    column: $table.actedAt,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get note => $composableBuilder(
+    column: $table.note,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  $ReviewersFilterComposer get reviewerId {
+    final $ReviewersFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.reviewerId,
+      referencedTable: $db.reviewers,
+      getReferencedColumn: (t) => t.reviewerId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $ReviewersFilterComposer(
+            $db: $db,
+            $table: $db.reviewers,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $ReviewActionsOrderingComposer
+    extends Composer<_$ContentDatabase, ReviewActions> {
+  $ReviewActionsOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<String> get actionId => $composableBuilder(
+    column: $table.actionId,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get subjectId => $composableBuilder(
+    column: $table.subjectId,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<int> get subjectVersion => $composableBuilder(
+    column: $table.subjectVersion,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get contentVersion => $composableBuilder(
+    column: $table.contentVersion,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get domain => $composableBuilder(
+    column: $table.domain,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get role => $composableBuilder(
+    column: $table.role,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get actedAt => $composableBuilder(
+    column: $table.actedAt,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get note => $composableBuilder(
+    column: $table.note,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  $ReviewersOrderingComposer get reviewerId {
+    final $ReviewersOrderingComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.reviewerId,
+      referencedTable: $db.reviewers,
+      getReferencedColumn: (t) => t.reviewerId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $ReviewersOrderingComposer(
+            $db: $db,
+            $table: $db.reviewers,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $ReviewActionsAnnotationComposer
+    extends Composer<_$ContentDatabase, ReviewActions> {
+  $ReviewActionsAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<String> get actionId =>
+      $composableBuilder(column: $table.actionId, builder: (column) => column);
+
+  GeneratedColumn<String> get subjectId =>
+      $composableBuilder(column: $table.subjectId, builder: (column) => column);
+
+  GeneratedColumn<int> get subjectVersion => $composableBuilder(
+    column: $table.subjectVersion,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get contentVersion => $composableBuilder(
+    column: $table.contentVersion,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get domain =>
+      $composableBuilder(column: $table.domain, builder: (column) => column);
+
+  GeneratedColumn<String> get role =>
+      $composableBuilder(column: $table.role, builder: (column) => column);
+
+  GeneratedColumn<String> get actedAt =>
+      $composableBuilder(column: $table.actedAt, builder: (column) => column);
+
+  GeneratedColumn<String> get note =>
+      $composableBuilder(column: $table.note, builder: (column) => column);
+
+  $ReviewersAnnotationComposer get reviewerId {
+    final $ReviewersAnnotationComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.reviewerId,
+      referencedTable: $db.reviewers,
+      getReferencedColumn: (t) => t.reviewerId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $ReviewersAnnotationComposer(
+            $db: $db,
+            $table: $db.reviewers,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $ReviewActionsTableManager
+    extends
+        RootTableManager<
+          _$ContentDatabase,
+          ReviewActions,
+          ReviewAction,
+          $ReviewActionsFilterComposer,
+          $ReviewActionsOrderingComposer,
+          $ReviewActionsAnnotationComposer,
+          $ReviewActionsCreateCompanionBuilder,
+          $ReviewActionsUpdateCompanionBuilder,
+          (ReviewAction, $ReviewActionsReferences),
+          ReviewAction,
+          PrefetchHooks Function({bool reviewerId})
+        > {
+  $ReviewActionsTableManager(_$ContentDatabase db, ReviewActions table)
+    : super(
+        TableManagerState(
+          db: db,
+          table: table,
+          createFilteringComposer: () =>
+              $ReviewActionsFilterComposer($db: db, $table: table),
+          createOrderingComposer: () =>
+              $ReviewActionsOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer: () =>
+              $ReviewActionsAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<String> actionId = const Value.absent(),
+                Value<String> subjectId = const Value.absent(),
+                Value<int> subjectVersion = const Value.absent(),
+                Value<String> contentVersion = const Value.absent(),
+                Value<String> domain = const Value.absent(),
+                Value<String> reviewerId = const Value.absent(),
+                Value<String> role = const Value.absent(),
+                Value<String> actedAt = const Value.absent(),
+                Value<String> note = const Value.absent(),
+              }) => ReviewActionsCompanion(
+                actionId: actionId,
+                subjectId: subjectId,
+                subjectVersion: subjectVersion,
+                contentVersion: contentVersion,
+                domain: domain,
+                reviewerId: reviewerId,
+                role: role,
+                actedAt: actedAt,
+                note: note,
+              ),
+          createCompanionCallback:
+              ({
+                required String actionId,
+                required String subjectId,
+                required int subjectVersion,
+                required String contentVersion,
+                required String domain,
+                required String reviewerId,
+                required String role,
+                required String actedAt,
+                Value<String> note = const Value.absent(),
+              }) => ReviewActionsCompanion.insert(
+                actionId: actionId,
+                subjectId: subjectId,
+                subjectVersion: subjectVersion,
+                contentVersion: contentVersion,
+                domain: domain,
+                reviewerId: reviewerId,
+                role: role,
+                actedAt: actedAt,
+                note: note,
+              ),
+          withReferenceMapper: (p0) => p0
+              .map(
+                (e) => (
+                  e.readTable<ReviewActions, ReviewAction>(table),
+                  $ReviewActionsReferences(db, table, e),
+                ),
+              )
+              .toList(),
+          prefetchHooksCallback: ({reviewerId = false}) {
+            return PrefetchHooks(
+              db: db,
+              explicitlyWatchedTables: [],
+              addJoins:
+                  <
+                    T extends TableManagerState<
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic
+                    >
+                  >(state) {
+                    if (reviewerId) {
+                      state = state.withJoin(
+                        currentTable: table,
+                        currentColumn: table.reviewerId,
+                        referencedTable: $ReviewActionsReferences
+                            ._reviewerIdTable(db),
+                        referencedColumn: $ReviewActionsReferences
+                            ._reviewerIdTable(db)
+                            .reviewerId,
+                      ) as T;
+                    }
+
+                    return state;
+                  },
+              getPrefetchedDataCallback: (items) async {
+                return [];
+              },
+            );
+          },
+        ),
+      );
+}
+
+typedef $ReviewActionsProcessedTableManager =
+    ProcessedTableManager<
+      _$ContentDatabase,
+      ReviewActions,
+      ReviewAction,
+      $ReviewActionsFilterComposer,
+      $ReviewActionsOrderingComposer,
+      $ReviewActionsAnnotationComposer,
+      $ReviewActionsCreateCompanionBuilder,
+      $ReviewActionsUpdateCompanionBuilder,
+      (ReviewAction, $ReviewActionsReferences),
+      ReviewAction,
+      PrefetchHooks Function({bool reviewerId})
+    >;
+typedef $MetaboliteRelationsCreateCompanionBuilder =
+    MetaboliteRelationsCompanion Function({
+      required String relationId,
+      required String parentId,
+      Value<String?> metaboliteId,
+      required String metaboliteName,
+      required String kind,
+      Value<String> specimensJson,
+      required String basisClaimId,
+    });
+typedef $MetaboliteRelationsUpdateCompanionBuilder =
+    MetaboliteRelationsCompanion Function({
+      Value<String> relationId,
+      Value<String> parentId,
+      Value<String?> metaboliteId,
+      Value<String> metaboliteName,
+      Value<String> kind,
+      Value<String> specimensJson,
+      Value<String> basisClaimId,
+    });
+
+final class $MetaboliteRelationsReferences
+    extends
+        BaseReferences<
+          _$ContentDatabase,
+          MetaboliteRelations,
+          MetaboliteRelation
+        > {
+  $MetaboliteRelationsReferences(
+    super.$_db,
+    super.$_table,
+    super.$_typedResult,
+  );
+
+  static Claims _basisClaimIdTable(_$ContentDatabase db) => db.claims
+      .createAlias('metabolite_relations__basis_claim_id__claims__claim_id');
+
+  $ClaimsProcessedTableManager get basisClaimId {
+    final $_column = $_itemColumn<String>('basis_claim_id')!;
+
+    final manager = $ClaimsTableManager(
+      $_db,
+      $_db.claims,
+    ).filter((f) => f.claimId.sqlEquals($_column));
+    final item = $_typedResult.readTableOrNull(_basisClaimIdTable($_db));
+    if (item == null) return manager;
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: [item]),
+    );
+  }
+}
+
+class $MetaboliteRelationsFilterComposer
+    extends Composer<_$ContentDatabase, MetaboliteRelations> {
+  $MetaboliteRelationsFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<String> get relationId => $composableBuilder(
+    column: $table.relationId,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get parentId => $composableBuilder(
+    column: $table.parentId,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get metaboliteId => $composableBuilder(
+    column: $table.metaboliteId,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get metaboliteName => $composableBuilder(
+    column: $table.metaboliteName,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get kind => $composableBuilder(
+    column: $table.kind,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get specimensJson => $composableBuilder(
+    column: $table.specimensJson,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  $ClaimsFilterComposer get basisClaimId {
+    final $ClaimsFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.basisClaimId,
+      referencedTable: $db.claims,
+      getReferencedColumn: (t) => t.claimId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $ClaimsFilterComposer(
+            $db: $db,
+            $table: $db.claims,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $MetaboliteRelationsOrderingComposer
+    extends Composer<_$ContentDatabase, MetaboliteRelations> {
+  $MetaboliteRelationsOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<String> get relationId => $composableBuilder(
+    column: $table.relationId,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get parentId => $composableBuilder(
+    column: $table.parentId,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get metaboliteId => $composableBuilder(
+    column: $table.metaboliteId,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get metaboliteName => $composableBuilder(
+    column: $table.metaboliteName,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get kind => $composableBuilder(
+    column: $table.kind,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get specimensJson => $composableBuilder(
+    column: $table.specimensJson,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  $ClaimsOrderingComposer get basisClaimId {
+    final $ClaimsOrderingComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.basisClaimId,
+      referencedTable: $db.claims,
+      getReferencedColumn: (t) => t.claimId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $ClaimsOrderingComposer(
+            $db: $db,
+            $table: $db.claims,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $MetaboliteRelationsAnnotationComposer
+    extends Composer<_$ContentDatabase, MetaboliteRelations> {
+  $MetaboliteRelationsAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<String> get relationId => $composableBuilder(
+    column: $table.relationId,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get parentId =>
+      $composableBuilder(column: $table.parentId, builder: (column) => column);
+
+  GeneratedColumn<String> get metaboliteId => $composableBuilder(
+    column: $table.metaboliteId,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get metaboliteName => $composableBuilder(
+    column: $table.metaboliteName,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get kind =>
+      $composableBuilder(column: $table.kind, builder: (column) => column);
+
+  GeneratedColumn<String> get specimensJson => $composableBuilder(
+    column: $table.specimensJson,
+    builder: (column) => column,
+  );
+
+  $ClaimsAnnotationComposer get basisClaimId {
+    final $ClaimsAnnotationComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.basisClaimId,
+      referencedTable: $db.claims,
+      getReferencedColumn: (t) => t.claimId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $ClaimsAnnotationComposer(
+            $db: $db,
+            $table: $db.claims,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $MetaboliteRelationsTableManager
+    extends
+        RootTableManager<
+          _$ContentDatabase,
+          MetaboliteRelations,
+          MetaboliteRelation,
+          $MetaboliteRelationsFilterComposer,
+          $MetaboliteRelationsOrderingComposer,
+          $MetaboliteRelationsAnnotationComposer,
+          $MetaboliteRelationsCreateCompanionBuilder,
+          $MetaboliteRelationsUpdateCompanionBuilder,
+          (MetaboliteRelation, $MetaboliteRelationsReferences),
+          MetaboliteRelation,
+          PrefetchHooks Function({bool basisClaimId})
+        > {
+  $MetaboliteRelationsTableManager(
+    _$ContentDatabase db,
+    MetaboliteRelations table,
+  ) : super(
+        TableManagerState(
+          db: db,
+          table: table,
+          createFilteringComposer: () =>
+              $MetaboliteRelationsFilterComposer($db: db, $table: table),
+          createOrderingComposer: () =>
+              $MetaboliteRelationsOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer: () =>
+              $MetaboliteRelationsAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<String> relationId = const Value.absent(),
+                Value<String> parentId = const Value.absent(),
+                Value<String?> metaboliteId = const Value.absent(),
+                Value<String> metaboliteName = const Value.absent(),
+                Value<String> kind = const Value.absent(),
+                Value<String> specimensJson = const Value.absent(),
+                Value<String> basisClaimId = const Value.absent(),
+              }) => MetaboliteRelationsCompanion(
+                relationId: relationId,
+                parentId: parentId,
+                metaboliteId: metaboliteId,
+                metaboliteName: metaboliteName,
+                kind: kind,
+                specimensJson: specimensJson,
+                basisClaimId: basisClaimId,
+              ),
+          createCompanionCallback:
+              ({
+                required String relationId,
+                required String parentId,
+                Value<String?> metaboliteId = const Value.absent(),
+                required String metaboliteName,
+                required String kind,
+                Value<String> specimensJson = const Value.absent(),
+                required String basisClaimId,
+              }) => MetaboliteRelationsCompanion.insert(
+                relationId: relationId,
+                parentId: parentId,
+                metaboliteId: metaboliteId,
+                metaboliteName: metaboliteName,
+                kind: kind,
+                specimensJson: specimensJson,
+                basisClaimId: basisClaimId,
+              ),
+          withReferenceMapper: (p0) => p0
+              .map(
+                (e) => (
+                  e.readTable<MetaboliteRelations, MetaboliteRelation>(table),
+                  $MetaboliteRelationsReferences(db, table, e),
+                ),
+              )
+              .toList(),
+          prefetchHooksCallback: ({basisClaimId = false}) {
+            return PrefetchHooks(
+              db: db,
+              explicitlyWatchedTables: [],
+              addJoins:
+                  <
+                    T extends TableManagerState<
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic
+                    >
+                  >(state) {
+                    if (basisClaimId) {
+                      state = state.withJoin(
+                        currentTable: table,
+                        currentColumn: table.basisClaimId,
+                        referencedTable: $MetaboliteRelationsReferences
+                            ._basisClaimIdTable(db),
+                        referencedColumn: $MetaboliteRelationsReferences
+                            ._basisClaimIdTable(db)
+                            .claimId,
+                      ) as T;
+                    }
+
+                    return state;
+                  },
+              getPrefetchedDataCallback: (items) async {
+                return [];
+              },
+            );
+          },
+        ),
+      );
+}
+
+typedef $MetaboliteRelationsProcessedTableManager =
+    ProcessedTableManager<
+      _$ContentDatabase,
+      MetaboliteRelations,
+      MetaboliteRelation,
+      $MetaboliteRelationsFilterComposer,
+      $MetaboliteRelationsOrderingComposer,
+      $MetaboliteRelationsAnnotationComposer,
+      $MetaboliteRelationsCreateCompanionBuilder,
+      $MetaboliteRelationsUpdateCompanionBuilder,
+      (MetaboliteRelation, $MetaboliteRelationsReferences),
+      MetaboliteRelation,
+      PrefetchHooks Function({bool basisClaimId})
+    >;
+typedef $SpecimensCreateCompanionBuilder = SpecimensCompanion Function({
+  required String specimenId,
+  required String category,
+  required String namesJson,
+  Value<String> aliasesJson,
+});
+typedef $SpecimensUpdateCompanionBuilder = SpecimensCompanion Function({
+  Value<String> specimenId,
+  Value<String> category,
+  Value<String> namesJson,
+  Value<String> aliasesJson,
+});
+
+class $SpecimensFilterComposer extends Composer<_$ContentDatabase, Specimens> {
+  $SpecimensFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<String> get specimenId => $composableBuilder(
+    column: $table.specimenId,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get category => $composableBuilder(
+    column: $table.category,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get namesJson => $composableBuilder(
+    column: $table.namesJson,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get aliasesJson => $composableBuilder(
+    column: $table.aliasesJson,
+    builder: (column) => ColumnFilters(column),
+  );
+}
+
+class $SpecimensOrderingComposer
+    extends Composer<_$ContentDatabase, Specimens> {
+  $SpecimensOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<String> get specimenId => $composableBuilder(
+    column: $table.specimenId,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get category => $composableBuilder(
+    column: $table.category,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get namesJson => $composableBuilder(
+    column: $table.namesJson,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get aliasesJson => $composableBuilder(
+    column: $table.aliasesJson,
+    builder: (column) => ColumnOrderings(column),
+  );
+}
+
+class $SpecimensAnnotationComposer
+    extends Composer<_$ContentDatabase, Specimens> {
+  $SpecimensAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<String> get specimenId => $composableBuilder(
+    column: $table.specimenId,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get category =>
+      $composableBuilder(column: $table.category, builder: (column) => column);
+
+  GeneratedColumn<String> get namesJson =>
+      $composableBuilder(column: $table.namesJson, builder: (column) => column);
+
+  GeneratedColumn<String> get aliasesJson => $composableBuilder(
+    column: $table.aliasesJson,
+    builder: (column) => column,
+  );
+}
+
+class $SpecimensTableManager
+    extends
+        RootTableManager<
+          _$ContentDatabase,
+          Specimens,
+          Specimen,
+          $SpecimensFilterComposer,
+          $SpecimensOrderingComposer,
+          $SpecimensAnnotationComposer,
+          $SpecimensCreateCompanionBuilder,
+          $SpecimensUpdateCompanionBuilder,
+          (Specimen, BaseReferences<_$ContentDatabase, Specimens, Specimen>),
+          Specimen,
+          PrefetchHooks Function()
+        > {
+  $SpecimensTableManager(_$ContentDatabase db, Specimens table)
+    : super(
+        TableManagerState(
+          db: db,
+          table: table,
+          createFilteringComposer: () =>
+              $SpecimensFilterComposer($db: db, $table: table),
+          createOrderingComposer: () =>
+              $SpecimensOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer: () =>
+              $SpecimensAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<String> specimenId = const Value.absent(),
+                Value<String> category = const Value.absent(),
+                Value<String> namesJson = const Value.absent(),
+                Value<String> aliasesJson = const Value.absent(),
+              }) => SpecimensCompanion(
+                specimenId: specimenId,
+                category: category,
+                namesJson: namesJson,
+                aliasesJson: aliasesJson,
+              ),
+          createCompanionCallback:
+              ({
+                required String specimenId,
+                required String category,
+                required String namesJson,
+                Value<String> aliasesJson = const Value.absent(),
+              }) => SpecimensCompanion.insert(
+                specimenId: specimenId,
+                category: category,
+                namesJson: namesJson,
+                aliasesJson: aliasesJson,
+              ),
+          withReferenceMapper: (p0) => p0
+              .map(
+                (e) => (
+                  e.readTable<Specimens, Specimen>(table),
+                  BaseReferences<_$ContentDatabase, Specimens, Specimen>(
+                    db,
+                    table,
+                    e,
+                  ),
+                ),
+              )
+              .toList(),
+          prefetchHooksCallback: null,
+        ),
+      );
+}
+
+typedef $SpecimensProcessedTableManager =
+    ProcessedTableManager<
+      _$ContentDatabase,
+      Specimens,
+      Specimen,
+      $SpecimensFilterComposer,
+      $SpecimensOrderingComposer,
+      $SpecimensAnnotationComposer,
+      $SpecimensCreateCompanionBuilder,
+      $SpecimensUpdateCompanionBuilder,
+      (Specimen, BaseReferences<_$ContentDatabase, Specimens, Specimen>),
+      Specimen,
+      PrefetchHooks Function()
+    >;
+typedef $StandardsCreateCompanionBuilder = StandardsCompanion Function({
+  required String standardId,
+  required String designation,
+  required String title,
+  required String publisher,
+  required String documentKind,
+  required String status,
+  required String reuseStatus,
+  required String verifiedFrom,
+  required String verifiedAt,
+  Value<String?> pubYear,
+  Value<String?> edition,
+  Value<String?> supersededBy,
+  Value<String?> url,
+  Value<String?> sha256,
+  Value<String> disciplinesJson,
+  Value<String?> note,
+});
+typedef $StandardsUpdateCompanionBuilder = StandardsCompanion Function({
+  Value<String> standardId,
+  Value<String> designation,
+  Value<String> title,
+  Value<String> publisher,
+  Value<String> documentKind,
+  Value<String> status,
+  Value<String> reuseStatus,
+  Value<String> verifiedFrom,
+  Value<String> verifiedAt,
+  Value<String?> pubYear,
+  Value<String?> edition,
+  Value<String?> supersededBy,
+  Value<String?> url,
+  Value<String?> sha256,
+  Value<String> disciplinesJson,
+  Value<String?> note,
+});
+
+final class $StandardsReferences
+    extends BaseReferences<_$ContentDatabase, Standards, Standard> {
+  $StandardsReferences(super.$_db, super.$_table, super.$_typedResult);
+
+  static Standards _supersededByTable(_$ContentDatabase db) => db.standards
+      .createAlias('standards__superseded_by__standards__standard_id');
+
+  $StandardsProcessedTableManager? get supersededBy {
+    final $_column = $_itemColumn<String>('superseded_by');
+    if ($_column == null) return null;
+    final manager = $StandardsTableManager(
+      $_db,
+      $_db.standards,
+    ).filter((f) => f.standardId.sqlEquals($_column));
+    final item = $_typedResult.readTableOrNull(_supersededByTable($_db));
+    if (item == null) return manager;
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: [item]),
+    );
+  }
+}
+
+class $StandardsFilterComposer extends Composer<_$ContentDatabase, Standards> {
+  $StandardsFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<String> get standardId => $composableBuilder(
+    column: $table.standardId,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get designation => $composableBuilder(
+    column: $table.designation,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get title => $composableBuilder(
+    column: $table.title,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get publisher => $composableBuilder(
+    column: $table.publisher,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get documentKind => $composableBuilder(
+    column: $table.documentKind,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get status => $composableBuilder(
+    column: $table.status,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get reuseStatus => $composableBuilder(
+    column: $table.reuseStatus,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get verifiedFrom => $composableBuilder(
+    column: $table.verifiedFrom,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get verifiedAt => $composableBuilder(
+    column: $table.verifiedAt,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get pubYear => $composableBuilder(
+    column: $table.pubYear,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get edition => $composableBuilder(
+    column: $table.edition,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get url => $composableBuilder(
+    column: $table.url,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get sha256 => $composableBuilder(
+    column: $table.sha256,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get disciplinesJson => $composableBuilder(
+    column: $table.disciplinesJson,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get note => $composableBuilder(
+    column: $table.note,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  $StandardsFilterComposer get supersededBy {
+    final $StandardsFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.supersededBy,
+      referencedTable: $db.standards,
+      getReferencedColumn: (t) => t.standardId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $StandardsFilterComposer(
+            $db: $db,
+            $table: $db.standards,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $StandardsOrderingComposer
+    extends Composer<_$ContentDatabase, Standards> {
+  $StandardsOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<String> get standardId => $composableBuilder(
+    column: $table.standardId,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get designation => $composableBuilder(
+    column: $table.designation,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get title => $composableBuilder(
+    column: $table.title,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get publisher => $composableBuilder(
+    column: $table.publisher,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get documentKind => $composableBuilder(
+    column: $table.documentKind,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get status => $composableBuilder(
+    column: $table.status,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get reuseStatus => $composableBuilder(
+    column: $table.reuseStatus,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get verifiedFrom => $composableBuilder(
+    column: $table.verifiedFrom,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get verifiedAt => $composableBuilder(
+    column: $table.verifiedAt,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get pubYear => $composableBuilder(
+    column: $table.pubYear,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get edition => $composableBuilder(
+    column: $table.edition,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get url => $composableBuilder(
+    column: $table.url,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get sha256 => $composableBuilder(
+    column: $table.sha256,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get disciplinesJson => $composableBuilder(
+    column: $table.disciplinesJson,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get note => $composableBuilder(
+    column: $table.note,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  $StandardsOrderingComposer get supersededBy {
+    final $StandardsOrderingComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.supersededBy,
+      referencedTable: $db.standards,
+      getReferencedColumn: (t) => t.standardId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $StandardsOrderingComposer(
+            $db: $db,
+            $table: $db.standards,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $StandardsAnnotationComposer
+    extends Composer<_$ContentDatabase, Standards> {
+  $StandardsAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<String> get standardId => $composableBuilder(
+    column: $table.standardId,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get designation => $composableBuilder(
+    column: $table.designation,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get title =>
+      $composableBuilder(column: $table.title, builder: (column) => column);
+
+  GeneratedColumn<String> get publisher =>
+      $composableBuilder(column: $table.publisher, builder: (column) => column);
+
+  GeneratedColumn<String> get documentKind => $composableBuilder(
+    column: $table.documentKind,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get status =>
+      $composableBuilder(column: $table.status, builder: (column) => column);
+
+  GeneratedColumn<String> get reuseStatus => $composableBuilder(
+    column: $table.reuseStatus,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get verifiedFrom => $composableBuilder(
+    column: $table.verifiedFrom,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get verifiedAt => $composableBuilder(
+    column: $table.verifiedAt,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get pubYear =>
+      $composableBuilder(column: $table.pubYear, builder: (column) => column);
+
+  GeneratedColumn<String> get edition =>
+      $composableBuilder(column: $table.edition, builder: (column) => column);
+
+  GeneratedColumn<String> get url =>
+      $composableBuilder(column: $table.url, builder: (column) => column);
+
+  GeneratedColumn<String> get sha256 =>
+      $composableBuilder(column: $table.sha256, builder: (column) => column);
+
+  GeneratedColumn<String> get disciplinesJson => $composableBuilder(
+    column: $table.disciplinesJson,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get note =>
+      $composableBuilder(column: $table.note, builder: (column) => column);
+
+  $StandardsAnnotationComposer get supersededBy {
+    final $StandardsAnnotationComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.supersededBy,
+      referencedTable: $db.standards,
+      getReferencedColumn: (t) => t.standardId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $StandardsAnnotationComposer(
+            $db: $db,
+            $table: $db.standards,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $StandardsTableManager
+    extends
+        RootTableManager<
+          _$ContentDatabase,
+          Standards,
+          Standard,
+          $StandardsFilterComposer,
+          $StandardsOrderingComposer,
+          $StandardsAnnotationComposer,
+          $StandardsCreateCompanionBuilder,
+          $StandardsUpdateCompanionBuilder,
+          (Standard, $StandardsReferences),
+          Standard,
+          PrefetchHooks Function({bool supersededBy})
+        > {
+  $StandardsTableManager(_$ContentDatabase db, Standards table)
+    : super(
+        TableManagerState(
+          db: db,
+          table: table,
+          createFilteringComposer: () =>
+              $StandardsFilterComposer($db: db, $table: table),
+          createOrderingComposer: () =>
+              $StandardsOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer: () =>
+              $StandardsAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<String> standardId = const Value.absent(),
+                Value<String> designation = const Value.absent(),
+                Value<String> title = const Value.absent(),
+                Value<String> publisher = const Value.absent(),
+                Value<String> documentKind = const Value.absent(),
+                Value<String> status = const Value.absent(),
+                Value<String> reuseStatus = const Value.absent(),
+                Value<String> verifiedFrom = const Value.absent(),
+                Value<String> verifiedAt = const Value.absent(),
+                Value<String?> pubYear = const Value.absent(),
+                Value<String?> edition = const Value.absent(),
+                Value<String?> supersededBy = const Value.absent(),
+                Value<String?> url = const Value.absent(),
+                Value<String?> sha256 = const Value.absent(),
+                Value<String> disciplinesJson = const Value.absent(),
+                Value<String?> note = const Value.absent(),
+              }) => StandardsCompanion(
+                standardId: standardId,
+                designation: designation,
+                title: title,
+                publisher: publisher,
+                documentKind: documentKind,
+                status: status,
+                reuseStatus: reuseStatus,
+                verifiedFrom: verifiedFrom,
+                verifiedAt: verifiedAt,
+                pubYear: pubYear,
+                edition: edition,
+                supersededBy: supersededBy,
+                url: url,
+                sha256: sha256,
+                disciplinesJson: disciplinesJson,
+                note: note,
+              ),
+          createCompanionCallback:
+              ({
+                required String standardId,
+                required String designation,
+                required String title,
+                required String publisher,
+                required String documentKind,
+                required String status,
+                required String reuseStatus,
+                required String verifiedFrom,
+                required String verifiedAt,
+                Value<String?> pubYear = const Value.absent(),
+                Value<String?> edition = const Value.absent(),
+                Value<String?> supersededBy = const Value.absent(),
+                Value<String?> url = const Value.absent(),
+                Value<String?> sha256 = const Value.absent(),
+                Value<String> disciplinesJson = const Value.absent(),
+                Value<String?> note = const Value.absent(),
+              }) => StandardsCompanion.insert(
+                standardId: standardId,
+                designation: designation,
+                title: title,
+                publisher: publisher,
+                documentKind: documentKind,
+                status: status,
+                reuseStatus: reuseStatus,
+                verifiedFrom: verifiedFrom,
+                verifiedAt: verifiedAt,
+                pubYear: pubYear,
+                edition: edition,
+                supersededBy: supersededBy,
+                url: url,
+                sha256: sha256,
+                disciplinesJson: disciplinesJson,
+                note: note,
+              ),
+          withReferenceMapper: (p0) => p0
+              .map(
+                (e) => (
+                  e.readTable<Standards, Standard>(table),
+                  $StandardsReferences(db, table, e),
+                ),
+              )
+              .toList(),
+          prefetchHooksCallback: ({supersededBy = false}) {
+            return PrefetchHooks(
+              db: db,
+              explicitlyWatchedTables: [],
+              addJoins:
+                  <
+                    T extends TableManagerState<
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic
+                    >
+                  >(state) {
+                    if (supersededBy) {
+                      state = state.withJoin(
+                        currentTable: table,
+                        currentColumn: table.supersededBy,
+                        referencedTable: $StandardsReferences
+                            ._supersededByTable(db),
+                        referencedColumn: $StandardsReferences
+                            ._supersededByTable(db)
+                            .standardId,
+                      ) as T;
+                    }
+
+                    return state;
+                  },
+              getPrefetchedDataCallback: (items) async {
+                return [];
+              },
+            );
+          },
+        ),
+      );
+}
+
+typedef $StandardsProcessedTableManager =
+    ProcessedTableManager<
+      _$ContentDatabase,
+      Standards,
+      Standard,
+      $StandardsFilterComposer,
+      $StandardsOrderingComposer,
+      $StandardsAnnotationComposer,
+      $StandardsCreateCompanionBuilder,
+      $StandardsUpdateCompanionBuilder,
+      (Standard, $StandardsReferences),
+      Standard,
+      PrefetchHooks Function({bool supersededBy})
+    >;
+typedef $TermTranslationsCreateCompanionBuilder =
+    TermTranslationsCompanion Function({
+      required String termId,
+      required String kind,
+      required String original,
+      required String originalLang,
+      required String canonical,
+      required String localizedJson,
+      required String statusJson,
+    });
+typedef $TermTranslationsUpdateCompanionBuilder =
+    TermTranslationsCompanion Function({
+      Value<String> termId,
+      Value<String> kind,
+      Value<String> original,
+      Value<String> originalLang,
+      Value<String> canonical,
+      Value<String> localizedJson,
+      Value<String> statusJson,
+    });
+
+class $TermTranslationsFilterComposer
+    extends Composer<_$ContentDatabase, TermTranslations> {
+  $TermTranslationsFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<String> get termId => $composableBuilder(
+    column: $table.termId,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get kind => $composableBuilder(
+    column: $table.kind,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get original => $composableBuilder(
+    column: $table.original,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get originalLang => $composableBuilder(
+    column: $table.originalLang,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get canonical => $composableBuilder(
+    column: $table.canonical,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get localizedJson => $composableBuilder(
+    column: $table.localizedJson,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get statusJson => $composableBuilder(
+    column: $table.statusJson,
+    builder: (column) => ColumnFilters(column),
+  );
+}
+
+class $TermTranslationsOrderingComposer
+    extends Composer<_$ContentDatabase, TermTranslations> {
+  $TermTranslationsOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<String> get termId => $composableBuilder(
+    column: $table.termId,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get kind => $composableBuilder(
+    column: $table.kind,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get original => $composableBuilder(
+    column: $table.original,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get originalLang => $composableBuilder(
+    column: $table.originalLang,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get canonical => $composableBuilder(
+    column: $table.canonical,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get localizedJson => $composableBuilder(
+    column: $table.localizedJson,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get statusJson => $composableBuilder(
+    column: $table.statusJson,
+    builder: (column) => ColumnOrderings(column),
+  );
+}
+
+class $TermTranslationsAnnotationComposer
+    extends Composer<_$ContentDatabase, TermTranslations> {
+  $TermTranslationsAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<String> get termId =>
+      $composableBuilder(column: $table.termId, builder: (column) => column);
+
+  GeneratedColumn<String> get kind =>
+      $composableBuilder(column: $table.kind, builder: (column) => column);
+
+  GeneratedColumn<String> get original =>
+      $composableBuilder(column: $table.original, builder: (column) => column);
+
+  GeneratedColumn<String> get originalLang => $composableBuilder(
+    column: $table.originalLang,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get canonical =>
+      $composableBuilder(column: $table.canonical, builder: (column) => column);
+
+  GeneratedColumn<String> get localizedJson => $composableBuilder(
+    column: $table.localizedJson,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get statusJson => $composableBuilder(
+    column: $table.statusJson,
+    builder: (column) => column,
+  );
+}
+
+class $TermTranslationsTableManager
+    extends
+        RootTableManager<
+          _$ContentDatabase,
+          TermTranslations,
+          TermTranslation,
+          $TermTranslationsFilterComposer,
+          $TermTranslationsOrderingComposer,
+          $TermTranslationsAnnotationComposer,
+          $TermTranslationsCreateCompanionBuilder,
+          $TermTranslationsUpdateCompanionBuilder,
+          (
+            TermTranslation,
+            BaseReferences<
+              _$ContentDatabase,
+              TermTranslations,
+              TermTranslation
+            >,
+          ),
+          TermTranslation,
+          PrefetchHooks Function()
+        > {
+  $TermTranslationsTableManager(_$ContentDatabase db, TermTranslations table)
+    : super(
+        TableManagerState(
+          db: db,
+          table: table,
+          createFilteringComposer: () =>
+              $TermTranslationsFilterComposer($db: db, $table: table),
+          createOrderingComposer: () =>
+              $TermTranslationsOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer: () =>
+              $TermTranslationsAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<String> termId = const Value.absent(),
+                Value<String> kind = const Value.absent(),
+                Value<String> original = const Value.absent(),
+                Value<String> originalLang = const Value.absent(),
+                Value<String> canonical = const Value.absent(),
+                Value<String> localizedJson = const Value.absent(),
+                Value<String> statusJson = const Value.absent(),
+              }) => TermTranslationsCompanion(
+                termId: termId,
+                kind: kind,
+                original: original,
+                originalLang: originalLang,
+                canonical: canonical,
+                localizedJson: localizedJson,
+                statusJson: statusJson,
+              ),
+          createCompanionCallback:
+              ({
+                required String termId,
+                required String kind,
+                required String original,
+                required String originalLang,
+                required String canonical,
+                required String localizedJson,
+                required String statusJson,
+              }) => TermTranslationsCompanion.insert(
+                termId: termId,
+                kind: kind,
+                original: original,
+                originalLang: originalLang,
+                canonical: canonical,
+                localizedJson: localizedJson,
+                statusJson: statusJson,
+              ),
+          withReferenceMapper: (p0) => p0
+              .map(
+                (e) => (
+                  e.readTable<TermTranslations, TermTranslation>(table),
+                  BaseReferences<
+                    _$ContentDatabase,
+                    TermTranslations,
+                    TermTranslation
+                  >(db, table, e),
+                ),
+              )
+              .toList(),
+          prefetchHooksCallback: null,
+        ),
+      );
+}
+
+typedef $TermTranslationsProcessedTableManager =
+    ProcessedTableManager<
+      _$ContentDatabase,
+      TermTranslations,
+      TermTranslation,
+      $TermTranslationsFilterComposer,
+      $TermTranslationsOrderingComposer,
+      $TermTranslationsAnnotationComposer,
+      $TermTranslationsCreateCompanionBuilder,
+      $TermTranslationsUpdateCompanionBuilder,
+      (
+        TermTranslation,
+        BaseReferences<_$ContentDatabase, TermTranslations, TermTranslation>,
+      ),
+      TermTranslation,
+      PrefetchHooks Function()
+    >;
 
 class $ContentDatabaseManager {
   final _$ContentDatabase _db;
@@ -24345,4 +32437,22 @@ class $ContentDatabaseManager {
   $EntityLinksTableManager get entityLinks =>
       $EntityLinksTableManager(_db, _db.entityLinks);
   $ImagesTableManager get images => $ImagesTableManager(_db, _db.images);
+  $SourceProvenanceTableManager get sourceProvenance =>
+      $SourceProvenanceTableManager(_db, _db.sourceProvenance);
+  $ClaimLifecycleTableManager get claimLifecycle =>
+      $ClaimLifecycleTableManager(_db, _db.claimLifecycle);
+  $EvidenceConflictsTableManager get evidenceConflicts =>
+      $EvidenceConflictsTableManager(_db, _db.evidenceConflicts);
+  $ConflictClaimsTableManager get conflictClaims =>
+      $ConflictClaimsTableManager(_db, _db.conflictClaims);
+  $ReviewActionsTableManager get reviewActions =>
+      $ReviewActionsTableManager(_db, _db.reviewActions);
+  $MetaboliteRelationsTableManager get metaboliteRelations =>
+      $MetaboliteRelationsTableManager(_db, _db.metaboliteRelations);
+  $SpecimensTableManager get specimens =>
+      $SpecimensTableManager(_db, _db.specimens);
+  $StandardsTableManager get standards =>
+      $StandardsTableManager(_db, _db.standards);
+  $TermTranslationsTableManager get termTranslations =>
+      $TermTranslationsTableManager(_db, _db.termTranslations);
 }

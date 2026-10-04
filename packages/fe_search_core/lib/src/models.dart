@@ -22,6 +22,9 @@ enum SearchCategory {
   law,
   lesson,
   emergingIssue,
+
+  /// PHASE 7: namuna turi (qon, siydik, vitreous…).
+  specimen,
 }
 
 /// Indeksdagi termin turi — reytingga ta’sir qiladi.

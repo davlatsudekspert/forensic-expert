@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-SPEC-VITREOUS-USE-P7",
+  "subject_id": "C-SPEC-VITREOUS-USE-P7",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "vitreous",
+  "entity_names": {
+    "en": "Vitreous humour",
+    "ru": "Стекловидное тело",
+    "uz": "Shishasimon tana"
+  },
+  "field": "use",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "Vitreous humor (VH) is one of the biological specimens widely used in forensic toxicology, mostly when the body is severely damaged or affected by putrefaction.",
+    "location": "INTRO",
+    "proposed_value": {
+      "section": "INTRO"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC7355602",
+      "title": "Ethanol Determination in Post-Mortem Samples: Correlation between Blood and Vitreous Humor Concentration",
+      "type": "journal_article",
+      "doi": "10.3390/molecules25122724",
+      "pmid": "32545471",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7355602/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "Excluded retracted PMIDs at selection (PubMed check).",
+      "locator": "INTRO"
+    }
+  ],
+  "why_it_matters": "Describes when a specimen is used; affects sampling advice.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Vitreous humour",
+      "ru": "Стекловидное тело",
+      "uz": "Shishasimon tana"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

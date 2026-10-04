@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-FENTANYL-ANALYTICAL_METHOD-P5",
+  "subject_id": "C-FENTANYL-ANALYTICAL_METHOD-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "fentanyl",
+  "entity_names": {
+    "en": "Fentanyl",
+    "ru": "Фентанил",
+    "uz": "Fentanil"
+  },
+  "field": "analytical_method",
+  "domain": "lab",
+  "required_role": "laboratory_analytical",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "In addition to these standard analyses, fentanyl concentrations in blood were quantified by means of a specific validated ultra-performance liquid chromatography–tandem mass spectrometry (UPLC-MS/MS) method (Waters Corporation) to measure fentanyl, sufentanil, cefazolin, doxapram and keto-doxapram.",
+    "location": "CASE",
+    "proposed_value": {
+      "section": "CASE"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC9715521",
+      "title": "Case report on postmortem fentanyl measurement after overdose with more than 67 fentanyl patches",
+      "type": "journal_article",
+      "doi": "10.1007/s11419-021-00598-3",
+      "pmid": "36454494",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9715521/",
+      "tier": "B",
+      "evidence_level": "D",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "CASE"
+    }
+  ],
+  "why_it_matters": "Links the substance to an analytical technique; does not imply a validated method for any laboratory.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Fentanyl",
+      "ru": "Фентанил",
+      "uz": "Fentanil"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

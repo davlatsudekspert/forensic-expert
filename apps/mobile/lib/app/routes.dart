@@ -29,6 +29,13 @@ abstract final class Routes {
   static String jurisdiction(String id) => '/home/jurisdictions/$id';
   static String librarySection(String section) => '/library/section/$section';
   static const libraryStandards = '/library/standards';
+  // PHASE 7: provenance qatlami.
+  static const conflicts = '/library/conflicts';
+  static String conflict(String id) => '/library/conflicts/$id';
+  static const specimens = '/library/specimens';
+  static String specimen(String id) => '/library/specimens/$id';
+  static String chain(String id) => '/library/chain/$id';
+  static const reviewStatus = '/library/review';
   static const quiz = '/home/learn/quiz';
   static const flashcards = '/home/learn/flashcards';
 

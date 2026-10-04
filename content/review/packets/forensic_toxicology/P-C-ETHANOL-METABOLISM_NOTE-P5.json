@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-ETHANOL-METABOLISM_NOTE-P5",
+  "subject_id": "C-ETHANOL-METABOLISM_NOTE-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "ethanol",
+  "entity_names": {
+    "en": "Ethanol",
+    "ru": "Этанол",
+    "uz": "Etanol"
+  },
+  "field": "metabolism_note",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "Whether these effects are mediated by direct toxic effects of ethanol or its principal metabolite, acetaldehyde, has not yet been determined.",
+    "location": "INTRO",
+    "proposed_value": {
+      "section": "INTRO"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC3166768",
+      "title": "Acetaldehyde-Mediated Neurotoxicity: Relevance to Fetal Alcohol Spectrum Disorders",
+      "type": "journal_article",
+      "doi": "10.1155/2011/213286",
+      "pmid": null,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3166768/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": null,
+      "locator": "INTRO"
+    }
+  ],
+  "why_it_matters": "Metabolic pathway statements support interpretation of parent/metabolite findings.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Ethanol",
+      "ru": "Этанол",
+      "uz": "Etanol"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

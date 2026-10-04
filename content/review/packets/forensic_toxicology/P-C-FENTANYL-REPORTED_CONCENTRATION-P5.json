@@ -1,0 +1,103 @@
+{
+  "packet_id": "P-C-FENTANYL-REPORTED_CONCENTRATION-P5",
+  "subject_id": "C-FENTANYL-REPORTED_CONCENTRATION-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "fentanyl",
+  "entity_names": {
+    "en": "Fentanyl",
+    "ru": "Фентанил",
+    "uz": "Fentanil"
+  },
+  "field": "reported_concentration",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "Furthermore, a partial overlap was found with the blood values relating to cases of death due to natural causes, in which the finding of fentanyl was considered accidental (n = 12, range: 2.7–33 ng/mL, mean 12 ng/mL).",
+    "location": "DISCUSS",
+    "proposed_value": {
+      "section": "DISCUSS",
+      "specimen": [
+        "blood"
+      ],
+      "context": "postmortem / fatal cases",
+      "not_a_threshold": true
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC9863810",
+      "title": "Atypical Fentanyl Transdermal Patch Consumption and Fatalities: Case Report and Literature Review",
+      "type": "journal_article",
+      "doi": "10.3390/toxics11010046",
+      "pmid": "36668772",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9863810/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "DISCUSS"
+    }
+  ],
+  "why_it_matters": "Concentration values are often misread as thresholds; the reviewer must confirm specimen, population, statistic and that the value is reported in context only.",
+  "conflicts": [
+    {
+      "conflict_id": "CF-FENTANYL-INCIDENTAL",
+      "kind": "value_overlap",
+      "question": "Can a fentanyl blood concentration alone separate fentanyl-attributed deaths from incidental findings?",
+      "note": "The source reports partial overlap with blood values in natural-cause deaths where fentanyl was considered incidental (n = 12, 2.7–33 ng/mL)."
+    }
+  ],
+  "has_conflict": true,
+  "limitations": [
+    "Literature values summarised in a case report / literature review.",
+    "Partially overlaps values in fentanyl-attributed deaths (see EVIDENCE CONFLICT)."
+  ],
+  "concentration_context": {
+    "specimen": [
+      "blood"
+    ],
+    "sampling": "postmortem",
+    "subject_state": "deceased",
+    "population": "deaths from natural causes with an incidental fentanyl finding",
+    "study_size": "12",
+    "case_type": "natural deaths; fentanyl considered incidental",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "range 2.7–33 ng/mL; mean 12 ng/mL",
+    "reporting": "secondary_citation",
+    "limitations": [
+      "Literature values summarised in a case report / literature review.",
+      "Partially overlaps values in fentanyl-attributed deaths (see EVIDENCE CONFLICT)."
+    ],
+    "curation": "pilot_manual"
+  },
+  "translations": {
+    "entity_names": {
+      "en": "Fentanyl",
+      "ru": "Фентанил",
+      "uz": "Fentanil"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

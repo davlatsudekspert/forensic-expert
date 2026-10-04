@@ -1,0 +1,329 @@
+{
+ "checked": "2026-10-04",
+ "jurisdictions": [
+  {
+   "jurisdiction": "GB",
+   "instrument_id": "GB-MDA-1971-SCH2",
+   "title": "Misuse of Drugs Act 1971, Schedule 2 — Controlled drugs",
+   "authority": "Parliament of the United Kingdom",
+   "number": "1971 c. 38, Sch. 2",
+   "publication_date": "1971-05-27",
+   "effective_from": "1973-07-01",
+   "language": "en",
+   "official_url": "https://www.legislation.gov.uk/ukpga/1971/38/schedule/2",
+   "data_url": "https://www.legislation.gov.uk/ukpga/1971/38/schedule/2/data.xml",
+   "sha256": "12f8efe50fc982ef4e9c9d4ec2c8d8914d4ec465b0f2171320c8714afe292b91",
+   "version": "2025-01-18",
+   "license": "Open Government Licence v3.0",
+   "parts_found": [
+    "A",
+    "B",
+    "C"
+   ],
+   "rules": [
+    {
+     "substance": "morphine",
+     "schedule": "Class A",
+     "matched": "Morphine",
+     "context": "Morphine"
+    },
+    {
+     "substance": "heroin",
+     "schedule": "Class A",
+     "matched": "Diamorphine",
+     "context": "Diamorphine"
+    },
+    {
+     "substance": "fentanyl",
+     "schedule": "Class A",
+     "matched": "Fentanyl",
+     "context": "Fentanyl"
+    },
+    {
+     "substance": "methadone",
+     "schedule": "Class A",
+     "matched": "Methadone",
+     "context": "Methadone"
+    },
+    {
+     "substance": "tramadol",
+     "schedule": "Class C",
+     "matched": "Tramadol",
+     "context": "Tramadol"
+    },
+    {
+     "substance": "cocaine",
+     "schedule": "Class A",
+     "matched": "Cocaine",
+     "context": "Cocaine"
+    },
+    {
+     "substance": "amphetamine",
+     "schedule": "Class B",
+     "matched": "Amphetamine",
+     "context": "Amphetamine"
+    },
+    {
+     "substance": "methamphetamine",
+     "schedule": "Class A",
+     "matched": "Methylamphetamine",
+     "context": "Methylamphetamine"
+    },
+    {
+     "substance": "diazepam",
+     "schedule": "Class C",
+     "matched": "Diazepam",
+     "context": "Diazepam"
+    },
+    {
+     "substance": "alprazolam",
+     "schedule": "Class C",
+     "matched": "Alprazolam",
+     "context": "Alprazolam"
+    },
+    {
+     "substance": "pregabalin",
+     "schedule": "Class C",
+     "matched": "Pregabalin",
+     "context": "Pregabalin ((S)-3-(aminomethyl)-5-methylhexanoic acid)"
+    },
+    {
+     "substance": "isotonitazene",
+     "schedule": "Class A",
+     "matched": "Isotonitazene",
+     "context": "Isotonitazene"
+    }
+   ]
+  },
+  {
+   "jurisdiction": "US",
+   "instrument_id": "US-21CFR1308",
+   "title": "21 CFR Part 1308 — Schedules of Controlled Substances",
+   "authority": "Drug Enforcement Administration (DEA), U.S. Department of Justice",
+   "number": "21 CFR 1308.11–1308.15",
+   "language": "en",
+   "official_url": "https://www.ecfr.gov/current/title-21/chapter-II/part-1308",
+   "section_versions": {
+    "1308.11": "2026-10-01",
+    "1308.12": "2026-10-01",
+    "1308.13": "2026-10-01",
+    "1308.14": "2026-10-01",
+    "1308.15": "2026-10-01"
+   },
+   "sha256": {
+    "1308.11": "c7aadc21b8cf6be5c70f7d903be24b3cfaface1cad35f132743bed133ef4cc10",
+    "1308.12": "3c3b962d01e35770f456c822f565b08d62f8ca106d9996103983ee4764f92c89",
+    "1308.13": "c53e2454b20161d892737ebbb879f20ec4022200480105ca77788b23cf64c78f",
+    "1308.14": "1f147adaebccf6e71c272f5664a8a0e65ee97b42f1f87ac657aefcb633652ff8",
+    "1308.15": "adeb057b0e4ef71a3fe0f8df693516098f4e89daefeba1ebbb76edd646d4e7a6"
+   },
+   "license": "U.S. Government work (public domain)",
+   "rules": [
+    {
+     "substance": "heroin",
+     "schedule": "Schedule I",
+     "section": "21 CFR 1308.11",
+     "matched": "Heroin",
+     "context": "Heroin"
+    },
+    {
+     "substance": "mdma",
+     "schedule": "Schedule I",
+     "section": "21 CFR 1308.11",
+     "matched": "3,4-Methylenedioxymethamphetamine",
+     "context": "3,4-methylenedioxymethamphetamine (MDMA)"
+    },
+    {
+     "substance": "thc",
+     "schedule": "Schedule I",
+     "section": "21 CFR 1308.11",
+     "matched": "Tetrahydrocannabinols",
+     "context": "Tetrahydrocannabinols"
+    },
+    {
+     "substance": "isotonitazene",
+     "schedule": "Schedule I",
+     "section": "21 CFR 1308.11",
+     "matched": "Isotonitazene",
+     "context": "Isotonitazene ( N,N -diethyl-2-(2-(4-isopropoxybenzyl)-5-nitro-1 H -benzimidazol-1-yl)ethan-1-amine)"
+    },
+    {
+     "substance": "morphine",
+     "schedule": "Schedule II",
+     "section": "21 CFR 1308.12",
+     "matched": "Morphine",
+     "context": "Morphine"
+    },
+    {
+     "substance": "fentanyl",
+     "schedule": "Schedule II",
+     "section": "21 CFR 1308.12",
+     "matched": "Fentanyl",
+     "context": "Fentanyl"
+    },
+    {
+     "substance": "methadone",
+     "schedule": "Schedule II",
+     "section": "21 CFR 1308.12",
+     "matched": "Methadone",
+     "context": "Methadone"
+    },
+    {
+     "substance": "cocaine",
+     "schedule": "Schedule II",
+     "section": "21 CFR 1308.12",
+     "matched": "Coca leaves",
+     "context": "Coca leaves (9040) and any salt, compound, derivative or preparation of coca leaves (including cocaine (9041) and ecgonine (9180) and their salts, isomers, derivatives and salts of isomers and derivatives), and any salt, compound, derivative, or preparation thereof which is chemically equivalent or identical with any of these substances, except that the substances shall not include:"
+    },
+    {
+     "substance": "amphetamine",
+     "schedule": "Schedule II",
+     "section": "21 CFR 1308.12",
+     "matched": "Amphetamine",
+     "context": "Amphetamine, its salts, optical isomers, and salts of its optical isomers"
+    },
+    {
+     "substance": "methamphetamine",
+     "schedule": "Schedule II",
+     "section": "21 CFR 1308.12",
+     "matched": "Methamphetamine",
+     "context": "Methamphetamine, its salts, isomers, and salts of its isomers"
+    },
+    {
+     "substance": "tramadol",
+     "schedule": "Schedule IV",
+     "section": "21 CFR 1308.14",
+     "matched": "Tramadol",
+     "context": "2-[(dimethylamino)methyl]-1-(3-methoxyphenyl)cyclohexanol, its salts, optical and geometric isomers and salts of these isomers (including tramadol)"
+    },
+    {
+     "substance": "diazepam",
+     "schedule": "Schedule IV",
+     "section": "21 CFR 1308.14",
+     "matched": "Diazepam",
+     "context": "Diazepam"
+    },
+    {
+     "substance": "alprazolam",
+     "schedule": "Schedule IV",
+     "section": "21 CFR 1308.14",
+     "matched": "Alprazolam",
+     "context": "Alprazolam"
+    },
+    {
+     "substance": "pregabalin",
+     "schedule": "Schedule V",
+     "section": "21 CFR 1308.15",
+     "matched": "Pregabalin",
+     "context": "Pregabalin [(S)-3-(aminomethyl)-5-methylhexanoic acid]"
+    }
+   ]
+  },
+  {
+   "jurisdiction": "DE",
+   "instrument_id": "DE-BTMG-ANL",
+   "title": "Betäubungsmittelgesetz (BtMG), Anlagen I–III",
+   "authority": "Bundesministerium der Justiz (Veröffentlichung)",
+   "number": "BtMG 1981, Anlagen I–III",
+   "publication_date": "1981-07-28",
+   "language": "de",
+   "official_url": "https://www.gesetze-im-internet.de/btmg_1981/",
+   "sha256": {
+    "Anlage I": "a39c903a21610143a97e5cdd71790b97c7711f61559235e7b53b4bf416b56da9",
+    "Anlage II": "40866d3d07f57c9983751816bb20a201e379236948dbb2b1382fd724d6b6d70d",
+    "Anlage III": "47a67d5d19dc62d150d124bb13e83774ef71fa3d215a5490a205db9eb1f03d88"
+   },
+   "license": "Amtliches Werk (§ 5 UrhG)",
+   "rules": [
+    {
+     "substance": "heroin",
+     "schedule": "Anlage I",
+     "matched": "Heroin",
+     "context": "Heroin (Diacetylmorphin, Diamorphin) – ausgenommen Diamorphin zu den in den Anlagen II und III bezeichneten Zwecken –"
+    },
+    {
+     "substance": "mdma",
+     "schedule": "Anlage I",
+     "matched": "Methylendioxymetamfetamin",
+     "context": "Methylendioxymetamfetamin (MDMA)"
+    },
+    {
+     "substance": "thc",
+     "schedule": "Anlage I",
+     "matched": "Tetrahydrocannabinole",
+     "context": "Tetrahydrocannabinole, folgende Isomeren und ihre stereochemischen Varianten:"
+    },
+    {
+     "substance": "methamphetamine",
+     "schedule": "Anlage II",
+     "matched": "Metamfetamin",
+     "context": "Metamfetamin"
+    },
+    {
+     "substance": "isotonitazene",
+     "schedule": "Anlage II",
+     "matched": "Isotonitazen",
+     "context": "Isotonitazen (Iso)"
+    },
+    {
+     "substance": "morphine",
+     "schedule": "Anlage III",
+     "matched": "Morphin",
+     "context": "Morphin"
+    },
+    {
+     "substance": "fentanyl",
+     "schedule": "Anlage III",
+     "matched": "Fentanyl",
+     "context": "Fentanyl"
+    },
+    {
+     "substance": "methadone",
+     "schedule": "Anlage III",
+     "matched": "Methadon",
+     "context": "Methadon"
+    },
+    {
+     "substance": "cocaine",
+     "schedule": "Anlage III",
+     "matched": "Cocain",
+     "context": "Cocain (Benzoylecgoninmethylester)"
+    },
+    {
+     "substance": "amphetamine",
+     "schedule": "Anlage III",
+     "matched": "Amfetamin",
+     "context": "Amfetamin"
+    },
+    {
+     "substance": "diazepam",
+     "schedule": "Anlage III",
+     "matched": "Diazepam",
+     "context": "Diazepam"
+    },
+    {
+     "substance": "alprazolam",
+     "schedule": "Anlage III",
+     "matched": "Alprazolam",
+     "context": "Alprazolam"
+    }
+   ]
+  },
+  {
+   "jurisdiction": "UZ",
+   "instrument_id": "UZ-LAW-813-I",
+   "title": "Закон Республики Узбекистан «О наркотических средствах и психотропных веществах»",
+   "authority": "Олий Мажлис Республики Узбекистан",
+   "number": "№ 813-I",
+   "publication_date": "1999-08-19",
+   "language": "ru",
+   "official_url": "https://lex.uz/docs/86028",
+   "sha256": "6a10f32edb71b621fd01970fd8a506745ca2a2f20b0fa919a2087c761ee6619c",
+   "license": "Rasmiy hujjat (mualliflik huquqi obyekti emas)",
+   "title_verified": true,
+   "article_4_excerpt": "Наркотические средства, психотропные вещества и прекурсоры, подлежащие контролю в Республике Узбекистан, вносятся в следующие списки: Ҳужжатга таклиф юбориш Аудиони тинглаш Ҳужжат элементидан ҳавола олиш Список наркотических средств, оборот которых в Республике Узбекистан запрещен (далее — Список I); Ҳужжатга таклиф юбориш Аудиони тинглаш Ҳужжат элементидан ҳавола олиш Список наркотических средств, оборот которых в Республике Узбекистан ограничен (далее — Список II); Ҳужжатга таклиф юбориш Аудиони тинглаш Ҳужжат элементидан ҳавола олиш Список психотропных веществ, оборот которых в Республике Узбекистан ограничен (далее — Список III); Ҳужжатга таклиф юбориш Аудиони тинглаш Ҳужжат элементидан ",
+   "note": "Nazorat ro‘yxatlari (I–IV) alohida Vazirlar Mahkamasi hujjatida — bu pilotda modda bo‘yicha xaritalanmagan. ПЗ-246 qonun loyihasi kuchga kirmagan.",
+   "rules": []
+  }
+ ]
+}

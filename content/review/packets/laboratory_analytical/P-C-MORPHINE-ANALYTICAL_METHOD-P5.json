@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-MORPHINE-ANALYTICAL_METHOD-P5",
+  "subject_id": "C-MORPHINE-ANALYTICAL_METHOD-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "morphine",
+  "entity_names": {
+    "en": "Morphine",
+    "ru": "Морфин",
+    "uz": "Morfin"
+  },
+  "field": "analytical_method",
+  "domain": "lab",
+  "required_role": "laboratory_analytical",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "The liquid chromatography-tandem mass spectrometry (LC-MS/MS) screening confirmed the presence of morphine in all samples.",
+    "location": "RESULTS",
+    "proposed_value": {
+      "section": "RESULTS"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC8400298",
+      "title": "Significance of Metabolite Ratios in the Interpretation of Segmental Hair Testing Results-Differentiation of Single from Chronic Morphine Use in a Case Series",
+      "type": "journal_article",
+      "doi": "10.3390/metabo11080557",
+      "pmid": "34436497",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8400298/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "RESULTS"
+    }
+  ],
+  "why_it_matters": "Links the substance to an analytical technique; does not imply a validated method for any laboratory.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Morphine",
+      "ru": "Морфин",
+      "uz": "Morfin"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

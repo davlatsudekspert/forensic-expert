@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-11-OH-THC-ANALYTICAL_METHOD-P5",
+  "subject_id": "C-11-OH-THC-ANALYTICAL_METHOD-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "11-oh-thc",
+  "entity_names": {
+    "en": "11-Hydroxy-THC",
+    "ru": "11-Гидрокси-ТГК",
+    "uz": "11-Gidroksi-THC"
+  },
+  "field": "analytical_method",
+  "domain": "lab",
+  "required_role": "laboratory_analytical",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "Our aim was therefore to establish an efficient and robust liquid chromatography–tandem mass spectrometry (LC–MS–MS) method based on easily available (low-end) instrumentation enabling the simultaneous determination of THC, 11-OH-THC, THC-COOH, HHC, and CBD in plasma and whole-blood.",
+    "location": "INTRO",
+    "proposed_value": {
+      "section": "INTRO"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC11829072",
+      "title": "Quantification of ∆9-tetrahydrocannabinol, 11-OH-THC, THC-COOH, hexahydrocannabinol, and cannabidiol in human plasma and blood by liquid chromatography-tandem mass spectrometry",
+      "type": "journal_article",
+      "doi": "10.1093/jat/bkae094",
+      "pmid": "39656878",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11829072/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "INTRO"
+    }
+  ],
+  "why_it_matters": "Links the substance to an analytical technique; does not imply a validated method for any laboratory.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "11-Hydroxy-THC",
+      "ru": "11-Гидрокси-ТГК",
+      "uz": "11-Gidroksi-THC"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

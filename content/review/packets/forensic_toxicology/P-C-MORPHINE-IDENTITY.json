@@ -1,0 +1,73 @@
+{
+  "packet_id": "P-C-MORPHINE-IDENTITY",
+  "subject_id": "C-MORPHINE-IDENTITY",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "morphine",
+  "entity_names": {
+    "en": "Morphine",
+    "ru": "Морфин",
+    "uz": "Morfin"
+  },
+  "field": "identity",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": null,
+    "location": null,
+    "proposed_value": {
+      "pubchem_cid": 5288826,
+      "molecular_formula": "C17H19NO3",
+      "molecular_weight": "285.34",
+      "inchikey": "BQJCRHHNABKAKU-KBQPJGBKSA-N",
+      "iupac_name": "(4R,4aR,7S,7aR,12bS)-3-methyl-2,4,4a,7,7a,13-hexahydro-1H-4,12-methanobenzofuro[3,2-e]isoquinoline-7,9-diol"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PUBCHEM-5288826",
+      "title": "PubChem Compound Summary for CID 5288826 ((4R,4aR,7S,7aR,12bS)-3-methyl-2,4,4a,7,7a,13-hexahydro-1H-4,12-methanobenzofuro[3,2-e]isoquinoline-7,9-diol)",
+      "type": "database",
+      "doi": null,
+      "pmid": null,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5288826",
+      "tier": "B",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": null,
+      "locator": "Computed Properties"
+    }
+  ],
+  "why_it_matters": "Identifiers (formula, InChIKey, CID) anchor every other record about the substance.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Morphine",
+      "ru": "Морфин",
+      "uz": "Morfin"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

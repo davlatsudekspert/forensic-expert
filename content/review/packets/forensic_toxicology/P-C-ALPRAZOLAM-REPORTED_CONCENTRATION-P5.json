@@ -1,0 +1,96 @@
+{
+  "packet_id": "P-C-ALPRAZOLAM-REPORTED_CONCENTRATION-P5",
+  "subject_id": "C-ALPRAZOLAM-REPORTED_CONCENTRATION-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "alprazolam",
+  "entity_names": {
+    "en": "Alprazolam",
+    "ru": "Алпразолам",
+    "uz": "Alprazolam"
+  },
+  "field": "reported_concentration",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "give ante-mortem blood levels of 32.8 and 13.0 ng/mL for two alprazolam toxicity cases.",
+    "location": "DISCUSS",
+    "proposed_value": {
+      "section": "DISCUSS",
+      "specimen": [
+        "blood"
+      ],
+      "context": "case report / series (see source)",
+      "not_a_threshold": true
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC9516611",
+      "title": "Alprazolam-related deaths in Scotland, 2004-2020",
+      "type": "journal_article",
+      "doi": "10.1177/02698811221104065",
+      "pmid": "35912873",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9516611/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "DISCUSS"
+    }
+  ],
+  "why_it_matters": "Concentration values are often misread as thresholds; the reviewer must confirm specimen, population, statistic and that the value is reported in context only.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [
+    "Cited from other authors.",
+    "Outcome of the two cases is not stated in the excerpt."
+  ],
+  "concentration_context": {
+    "specimen": [
+      "blood"
+    ],
+    "sampling": "antemortem",
+    "subject_state": "not_stated",
+    "population": "two alprazolam toxicity cases",
+    "study_size": "2",
+    "case_type": "alprazolam toxicity",
+    "co_intoxicants": "not_stated",
+    "analytical_method": "not_stated",
+    "timing": "not_stated",
+    "statistic": "32.8 and 13.0 ng/mL",
+    "reporting": "secondary_citation",
+    "limitations": [
+      "Cited from other authors.",
+      "Outcome of the two cases is not stated in the excerpt."
+    ],
+    "curation": "pilot_manual"
+  },
+  "translations": {
+    "entity_names": {
+      "en": "Alprazolam",
+      "ru": "Алпразолам",
+      "uz": "Alprazolam"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

@@ -1,0 +1,73 @@
+{
+  "packet_id": "P-C-PREGABALIN-METABOLISM_NOTE",
+  "subject_id": "C-PREGABALIN-METABOLISM_NOTE",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "pregabalin",
+  "entity_names": {
+    "en": "Pregabalin",
+    "ru": "Прегабалин",
+    "uz": "Pregabalin"
+  },
+  "field": "metabolism_note",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "In our hands, the observed PGB values showed a decline consistent with the known pharmacokinetics of pregabalin, which displays rapid absorption, with peak levels reached within 1.5 h (up to 3 hours with food), high oral bioavailability, negligible metabolism, and almost exclusive renal elimination.",
+    "location": "Investigations",
+    "proposed_value": {
+      "items": [
+        "negligible metabolism",
+        "almost exclusive renal elimination"
+      ],
+      "section": "Investigations"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC13345593",
+      "title": "Case Report: High-dose pregabalin ingestion in an adolescent: clinical course and serial plasma concentrations.",
+      "type": "journal_article",
+      "doi": "10.3389/ftox.2026.1822851",
+      "pmid": "42422723",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13345593/",
+      "tier": "B",
+      "evidence_level": "D",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "Investigations"
+    }
+  ],
+  "why_it_matters": "Metabolic pathway statements support interpretation of parent/metabolite findings.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Pregabalin",
+      "ru": "Прегабалин",
+      "uz": "Pregabalin"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

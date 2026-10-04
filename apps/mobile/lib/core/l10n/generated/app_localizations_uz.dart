@@ -2160,11 +2160,11 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get calcLodReference =>
-      'ICH Q2(R1) Validation of Analytical Procedures: Text and Methodology — §6.3, §7.3';
+      'ICH Q2(R2) Validation of Analytical Procedures (2023) — §3.2.3.3';
 
   @override
   String get calcLodReferenceNote =>
-      'Koeffitsientlar rasmiy ICH PDF matni bilan solishtirildi. ICH Q2(R2) R1 o‘rnini bosadi — amaldagi versiyani reviewer tasdiqlashi kerak.';
+      'Koeffitsientlar rasmiy ICH Q2(R2) PDF bilan solishtirildi; Q2(R1) (almashtirilgan) dagidan o‘zgarmagan. Q2(R2) S/N va aniqlik/pretsizlik bilan bevosita tasdiqlashga ham ruxsat beradi. Laboratoriya reviewer tasdig‘i kutilmoqda (RG-25).';
 
   @override
   String get calcUseRegression =>
@@ -2778,4 +2778,456 @@ class AppLocalizationsUz extends AppLocalizations {
   String templateCoverage(int filled, int total) {
     return 'Manbali bo‘limlar: $filled / $total';
   }
+
+  @override
+  String get provWhereFrom => 'Bu ma’lumot qayerdan?';
+
+  @override
+  String get provSheetTitle => 'Ushbu da’voning kelib chiqishi';
+
+  @override
+  String get provStatement => 'Da’vo';
+
+  @override
+  String provLocation(String loc) {
+    return 'Manbadagi joyi: $loc';
+  }
+
+  @override
+  String get provSource => 'Manba';
+
+  @override
+  String provTier(String tier) {
+    return 'Manba darajasi $tier';
+  }
+
+  @override
+  String get provTierA => 'A — rasmiy matn, standart yoki qo‘llanma';
+
+  @override
+  String get provTierB => 'B — retsenziyalangan nashr';
+
+  @override
+  String get provTierC =>
+      'C — qo‘llanma, ma’lumotlar bazasi yoki ikkilamchi manba';
+
+  @override
+  String get reuseOpen => 'Ochiq foydalanish';
+
+  @override
+  String get reuseCiteOnly => 'Faqat havola — matn ko‘chirilmaydi';
+
+  @override
+  String get reuseNonCommercial => 'Notijoriy litsenziya';
+
+  @override
+  String get reuseLicenseRequired => 'LITSENZIYA KERAK';
+
+  @override
+  String get reuseLookup => 'Faqat qidiruv';
+
+  @override
+  String get reuseUnknown => 'Litsenziya aniqlanmagan';
+
+  @override
+  String get srcLifecycleCurrent => 'Retraksiya qilinmagan';
+
+  @override
+  String get srcLifecycleRetracted => 'RETRAKSIYA QILINGAN';
+
+  @override
+  String get srcLifecycleSuperseded => 'ALMASHTIRILGAN';
+
+  @override
+  String get srcLifecycleWithdrawn => 'QAYTARIB OLINGAN';
+
+  @override
+  String provCheckedOn(String date) {
+    return 'Retraksiya tekshiruvi: $date';
+  }
+
+  @override
+  String get provArchiveHash => 'Arxiv nusxasi SHA-256';
+
+  @override
+  String provSourceVersion(String v) {
+    return 'Versiya: $v';
+  }
+
+  @override
+  String get provLifecycle => 'Hayot sikli';
+
+  @override
+  String get lcCurrent => 'Joriy';
+
+  @override
+  String get lcNeedsReview => 'Tekshiruv kerak';
+
+  @override
+  String get lcOutdated => 'Eskirgan';
+
+  @override
+  String get lcSuperseded => 'Almashtirilgan';
+
+  @override
+  String get lcRetracted => 'Manba retraksiya qilingan';
+
+  @override
+  String get lcRejected => 'Rad etilgan';
+
+  @override
+  String get provHumanVerified => 'Malakali reviewerlar tomonidan tasdiqlangan';
+
+  @override
+  String get provNotVerified =>
+      'MA’LUMOT TEKSHIRILMAGAN — EKSPERT TASDIG‘I KERAK';
+
+  @override
+  String provRequiredRole(String role) {
+    return 'Kerakli reviewer: $role';
+  }
+
+  @override
+  String provReviewsRecorded(int n) {
+    return 'Ushbu versiya bo‘yicha reviewer harakatlari: $n';
+  }
+
+  @override
+  String provClaimId(String id, int v) {
+    return 'Yozuv ID: $id · v$v';
+  }
+
+  @override
+  String get roleForensicToxicology => 'Sud toksikologiyasi';
+
+  @override
+  String get roleForensicMedicine => 'Sud tibbiyoti';
+
+  @override
+  String get roleLaboratory => 'Laboratoriya / analitika';
+
+  @override
+  String get roleBiochemistry => 'Sud biokimyosi';
+
+  @override
+  String get roleLegal => 'Huquq / yurisdiksiya';
+
+  @override
+  String get roleTranslation => 'Tarjima';
+
+  @override
+  String get roleEditor => 'Ilmiy muharrir / admin';
+
+  @override
+  String get bannerRetracted =>
+      'Manba retraksiya qilingan — da’vo shaffoflik uchun saqlangan, lekin joriy dalil emas.';
+
+  @override
+  String get bannerSuperseded =>
+      'Ushbu da’voning barcha manbalari almashtirilgan.';
+
+  @override
+  String get bannerOutdated => 'Reviewer tomonidan eskirgan deb belgilangan.';
+
+  @override
+  String get bannerConflict =>
+      'DALILLAR ZIDDIYATI — manbalar mos kelmaydi yoki ustma-ust tushadi. Solishtirish uchun bosing.';
+
+  @override
+  String get conflictsTitle => 'Dalillar ziddiyatlari';
+
+  @override
+  String get conflictsIntro =>
+      'Ziddiyatlar yashirilmaydi. Ularni faqat malakali reviewer hal qiladi; ilova «to‘g‘ri» variantni tanlamaydi.';
+
+  @override
+  String get conflictKindDirect => 'To‘g‘ridan-to‘g‘ri qarama-qarshilik';
+
+  @override
+  String get conflictKindContext => 'Sharoitga bog‘liq';
+
+  @override
+  String get conflictKindOverlap =>
+      'Qiymatlar kontekstlar orasida ustma-ust tushadi';
+
+  @override
+  String get conflictKindCharacterisation => 'Turlicha tavsiflangan';
+
+  @override
+  String get conflictQuestion => 'Savol';
+
+  @override
+  String get conflictStatements => 'Ishtirok etgan da’volar';
+
+  @override
+  String get conflictStateOpen => 'Ochiq — reviewer qarori kutilmoqda';
+
+  @override
+  String get conflictStateResolved => 'Reviewer tomonidan hal qilingan';
+
+  @override
+  String get conflictNoteLabel => 'Manbalar nima deydi';
+
+  @override
+  String get ctxTitle => 'Kontekst (faqat manbada aytilgani)';
+
+  @override
+  String get ctxSpecimen => 'Namuna';
+
+  @override
+  String get ctxSampling => 'Namuna olish';
+
+  @override
+  String get ctxSubject => 'Sub’ekt';
+
+  @override
+  String get ctxPopulation => 'Populyatsiya';
+
+  @override
+  String get ctxStudySize => 'Holatlar soni';
+
+  @override
+  String get ctxCaseType => 'Holat turi';
+
+  @override
+  String get ctxCoIntoxicants => 'Birga aniqlangan moddalar';
+
+  @override
+  String get ctxMethod => 'Analitik metod';
+
+  @override
+  String get ctxTiming => 'Vaqt';
+
+  @override
+  String get ctxStatistic => 'Keltirilgan qiymatlar';
+
+  @override
+  String get ctxReporting => 'Ma’lumot kelib chiqishi';
+
+  @override
+  String get ctxLimitations => 'Cheklovlar';
+
+  @override
+  String get ctxNotStated => 'manbada ko‘rsatilmagan';
+
+  @override
+  String get ctxPostmortem => 'o‘limdan keyin';
+
+  @override
+  String get ctxAntemortem => 'hayotligida';
+
+  @override
+  String get ctxMixed => 'aralash';
+
+  @override
+  String get ctxDeceased => 'vafot etganlar';
+
+  @override
+  String get ctxLiving => 'tiriklar';
+
+  @override
+  String get ctxPrimary => 'Keltirilgan tadqiqotning birlamchi ma’lumoti';
+
+  @override
+  String get ctxSecondary => 'Boshqa tadqiqotdan iqtibos';
+
+  @override
+  String get ctxNotAssessed => 'Hali baholanmagan';
+
+  @override
+  String get ctxAutoMinimal =>
+      'Bu yozuv konteksti hali ko‘rib chiqilmagan; faqat namuna ko‘rsatilgan.';
+
+  @override
+  String get metRelationsTitle => 'Metabolitlar (manbali bog‘lanishlar)';
+
+  @override
+  String get metKindMetabolite => 'Metabolit';
+
+  @override
+  String get metKindActive => 'Faol metabolit';
+
+  @override
+  String get metKindInactive => 'Nofaol metabolit';
+
+  @override
+  String get metKindMarker => 'Marker';
+
+  @override
+  String get metKindArtifact => 'Artefakt';
+
+  @override
+  String get metRoleNote =>
+      'Rol (faol, marker…) faqat manba matnida aytilgan bo‘lsa ko‘rsatiladi.';
+
+  @override
+  String metParentOf(String name) {
+    return 'Asosiy modda: $name';
+  }
+
+  @override
+  String get specimensTitle => 'Namunalar';
+
+  @override
+  String get specimensIntro =>
+      'Manbali da’volar va keltirilgan qiymatlarga ega namuna turlari. Keltirilgan qiymatlar chegara emas.';
+
+  @override
+  String get specimenAbout => 'Namuna haqida';
+
+  @override
+  String get specimenMeasured => 'Shu namunadagi keltirilgan qiymatlar';
+
+  @override
+  String get specimenNoClaims => 'Hozircha manbali da’vo yo‘q.';
+
+  @override
+  String get specimenCatFluid => 'Biologik suyuqlik';
+
+  @override
+  String get specimenCatTissue => 'To‘qima';
+
+  @override
+  String get specimenCatKeratinous => 'Keratinli matritsa';
+
+  @override
+  String get specimenCatContent => 'Tarkib';
+
+  @override
+  String specimenRecords(int n) {
+    return '$n ta yozuv';
+  }
+
+  @override
+  String get detailMeasuredIn => 'Qiymat keltirilgan namunalar';
+
+  @override
+  String get detailScreenedBy => 'Skrining testlari (skrining ≠ tasdiqlash)';
+
+  @override
+  String get chainTitle => 'Bilim zanjiri';
+
+  @override
+  String get chainOpen => 'Bilim zanjirini ko‘rsatish';
+
+  @override
+  String get chainIntro =>
+      'Quyidagi har bir bog‘lanishning asosi bor (manbali da’vo, rasmiy ro‘yxat yozuvi yoki katalog yozuvi). Ko‘rish uchun bosing.';
+
+  @override
+  String get chainMetabolites => 'Metabolitlar';
+
+  @override
+  String get chainSpecimens => 'Namunalar';
+
+  @override
+  String get chainScreening => 'Skrining';
+
+  @override
+  String get chainConfirmation => 'Tasdiqlovchi metodlar';
+
+  @override
+  String get chainReagents => 'Reagentlar';
+
+  @override
+  String get chainResearch => 'Tadqiqotlar';
+
+  @override
+  String get chainStandards => 'Standartlar';
+
+  @override
+  String get chainLegal => 'Huquqiy holat';
+
+  @override
+  String get chainNone => 'Hozircha manbali bog‘lanish yo‘q';
+
+  @override
+  String chainBasis(String id) {
+    return 'Asos: $id';
+  }
+
+  @override
+  String chainResearchCount(int n) {
+    return '$n ta bog‘liq nashr';
+  }
+
+  @override
+  String get stdCatalogue => 'Standartlar katalogi (faqat metadata)';
+
+  @override
+  String get stdStatusCurrent => 'Amaldagi';
+
+  @override
+  String get stdStatusProposed => 'Loyiha — hali nashr etilmagan';
+
+  @override
+  String stdStatusSuperseded(String id) {
+    return 'Almashtirilgan: $id';
+  }
+
+  @override
+  String get stdStatusWithdrawn => 'Bekor qilingan';
+
+  @override
+  String get stdStatusUnknown => 'Holati aniqlanmagan';
+
+  @override
+  String stdVerifiedFrom(String date) {
+    return 'Metadata $date da nashriyot yoki registrda tekshirilgan';
+  }
+
+  @override
+  String get stdTextNotReproduced => 'Standart matni ilovada ko‘chirilmaydi.';
+
+  @override
+  String get reviewTitle => 'Ilmiy tekshiruv holati';
+
+  @override
+  String get reviewHumanVerified => 'Inson tomonidan tasdiqlangan';
+
+  @override
+  String get reviewReviewed => 'Ko‘rib chiqilgan';
+
+  @override
+  String get reviewAwaiting => 'Tekshiruv kutmoqda';
+
+  @override
+  String get reviewRetracted => 'Manbasi retraksiya qilingan da’volar';
+
+  @override
+  String get reviewActions => 'Yozilgan reviewer harakatlari';
+
+  @override
+  String get reviewReviewers => 'Ro‘yxatdagi reviewerlar';
+
+  @override
+  String get reviewOpenConflicts => 'Ochiq dalillar ziddiyatlari';
+
+  @override
+  String get reviewExplain =>
+      'Da’vo faqat o‘z sohasidagi ikki mustaqil malakali reviewer joriy versiyani tasdiqlagandan keyin VERIFIED bo‘ladi. Ilova va uning mualliflari hech narsani o‘zlari tasdiqlangan deb belgilay olmaydi.';
+
+  @override
+  String get reviewRolesTitle => 'Reviewer rollari va huquqlari';
+
+  @override
+  String get reviewRoleApprove =>
+      'O‘z sohasida tasdiqlashi yoki rad etishi mumkin';
+
+  @override
+  String get reviewRoleFlagOnly =>
+      'Ziddiyat, eskirganlikni belgilashi va o‘zgartirish so‘rashi mumkin — tasdiqlay olmaydi';
+
+  @override
+  String get reviewActionsList => 'Mumkin bo‘lgan harakatlar';
+
+  @override
+  String get libraryConflicts => 'Dalillar ziddiyatlari';
+
+  @override
+  String get libraryReview => 'Tekshiruv holati';
+
+  @override
+  String get methodPublishedNote =>
+      'Nashr etilgan ilmiy metod — biror laboratoriya uchun validatsiya qilingan tartib emas.';
 }

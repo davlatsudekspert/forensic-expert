@@ -1,0 +1,76 @@
+{
+  "packet_id": "P-C-BIO-VITREOUS-POTASSIUM-MARKER",
+  "subject_id": "C-BIO-VITREOUS-POTASSIUM-MARKER",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "bio-vitreous-potassium",
+  "entity_names": {
+    "en": "Vitreous potassium and PMI",
+    "ru": "Калий стекловидного тела и давность смерти",
+    "uz": "Shishasimon tana kaliysi va PMI"
+  },
+  "field": "marker",
+  "domain": "fm",
+  "required_role": "forensic_biochemistry",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "It was worth mentioning that there was a linear rise in vitreous potassium concentration with advancing PMI, which was first described by Sturner in 1963.",
+    "location": "RESULTS",
+    "proposed_value": {
+      "section": "RESULTS"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC5431803",
+      "title": "Estimation of postmortem interval by vitreous potassium evaluation with a novel fluorescence aptasensor.",
+      "type": "journal_article",
+      "doi": "10.1038/s41598-017-02027-1",
+      "pmid": "28500353",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5431803/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "RESULTS"
+    }
+  ],
+  "why_it_matters": "A marker claim can be used to support time-since-death or exposure reasoning.",
+  "conflicts": [
+    {
+      "conflict_id": "CF-VITREOUS-K-PMI",
+      "kind": "context_dependent",
+      "question": "Can vitreous potassium be used to estimate the post-mortem interval?",
+      "note": "One source reports a linear rise of vitreous potassium with advancing PMI; another reports an inconsistent influence of temperature and calls it a potential confounding factor."
+    }
+  ],
+  "has_conflict": true,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Vitreous potassium and PMI",
+      "ru": "Калий стекловидного тела и давность смерти",
+      "uz": "Shishasimon tana kaliysi va PMI"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

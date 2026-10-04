@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-11-OH-THC-METABOLISM_NOTE-P5",
+  "subject_id": "C-11-OH-THC-METABOLISM_NOTE-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "11-oh-thc",
+  "entity_names": {
+    "en": "11-Hydroxy-THC",
+    "ru": "11-Гидрокси-ТГК",
+    "uz": "11-Gidroksi-THC"
+  },
+  "field": "metabolism_note",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "THC is metabolized to an active metabolite, 11-hydroxy-Δ9-tetrahydrocannabinol (11-OH-THC), that is also psychoactive.",
+    "location": "INTRO",
+    "proposed_value": {
+      "section": "INTRO"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC10975434",
+      "title": "Cannabinoid-Induced Inhibition of Morphine Glucuronidation and the Potential for In Vivo Drug-Drug Interactions",
+      "type": "journal_article",
+      "doi": "10.3390/pharmaceutics16030418",
+      "pmid": "38543313",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10975434/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "INTRO"
+    }
+  ],
+  "why_it_matters": "Metabolic pathway statements support interpretation of parent/metabolite findings.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "11-Hydroxy-THC",
+      "ru": "11-Гидрокси-ТГК",
+      "uz": "11-Gidroksi-THC"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

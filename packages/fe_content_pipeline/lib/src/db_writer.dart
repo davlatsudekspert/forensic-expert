@@ -333,9 +333,185 @@ class ContentDbWriter {
           [ci.claimId, ci.sourceId, ci.locator],
         );
       }
+
+      await _writeProvenance(b, run, builtAt);
     });
 
     await _db.insertSearchTerms(_searchTerms(b));
+  }
+
+  /// PHASE 7: provenance, claim hayot sikli, ziddiyatlar, review harakatlari,
+  /// metabolitlar, namunalar, standartlar, terminlar.
+  Future<void> _writeProvenance(
+    PipelineBundle b,
+    Future<void> Function(String, List<Object?>) run,
+    DateTime builtAt,
+  ) async {
+    final c = b.content;
+    final prov = {for (final p in c.sourceProvenance) p.sourceId: p};
+    for (final s in c.sources) {
+      final p = prov[s.sourceId] ?? SourceProvenance(sourceId: s.sourceId);
+      await run(
+        'INSERT INTO source_provenance (source_id, hierarchy, reuse_status, '
+        'language, sha256, source_version, lifecycle, superseded_by, '
+        'lifecycle_checked_at, lifecycle_basis, forensic_relevance) '
+        'VALUES (?,?,?,?,?,?,?,?,?,?,?)',
+        [
+          s.sourceId,
+          SourceHierarchy.of(s.sourceClass)?.code,
+          ReuseStatus.of(s.licenseMode).code,
+          p.language,
+          p.sha256,
+          p.sourceVersion,
+          p.lifecycle.code,
+          p.supersededBy,
+          _d(p.lifecycleCheckedAt),
+          p.lifecycleBasis,
+          p.forensicRelevance.code,
+        ],
+      );
+    }
+
+    final byClaim = <String, List<String>>{};
+    for (final ci in c.citations) {
+      byClaim.putIfAbsent(ci.claimId, () => []).add(ci.sourceId);
+    }
+    final flaggedOutdated = {
+      for (final a in c.reviewActions)
+        if (a.action == ReviewActionType.flagOutdated) a.subjectId,
+    };
+    for (final cl in c.claims) {
+      final v = ClaimLifecycleResolver.resolve(
+        status: cl.declaredStatus,
+        sources: [
+          for (final id in byClaim[cl.claimId] ?? const <String>[])
+            prov[id] ?? SourceProvenance(sourceId: id),
+        ],
+        flaggedOutdated: flaggedOutdated.contains(cl.claimId),
+      );
+      await run(
+        'INSERT INTO claim_lifecycle (claim_id, lifecycle, reason, '
+        'caused_by_json) VALUES (?,?,?,?)',
+        [cl.claimId, v.lifecycle.code, v.reason, jsonEncode(v.sourceIds)],
+      );
+    }
+
+    for (final k in c.conflicts) {
+      await run(
+        'INSERT INTO evidence_conflicts (conflict_id, entity_id, question, '
+        'kind, note, state, detected_at) VALUES (?,?,?,?,?,?,?)',
+        [
+          k.id,
+          k.entityId,
+          k.question,
+          k.kind.code,
+          k.note,
+          k.state.code,
+          _d(k.detectedAt),
+        ],
+      );
+      for (final id in k.claimIds.toSet()) {
+        await run(
+          'INSERT INTO conflict_claims (conflict_id, claim_id) VALUES (?,?)',
+          [k.id, id],
+        );
+      }
+    }
+
+    for (final a in c.reviewActions) {
+      await run(
+        'INSERT INTO review_actions (action_id, subject_id, subject_version, '
+        'content_version, domain, reviewer_id, role, action, acted_at, note) '
+        'VALUES (?,?,?,?,?,?,?,?,?,?)',
+        [
+          a.id,
+          a.subjectId,
+          a.subjectVersion,
+          a.contentVersion,
+          a.domain.code,
+          a.reviewerId,
+          a.role.code,
+          a.action.code,
+          a.at.toUtc().toIso8601String(),
+          a.note,
+        ],
+      );
+    }
+
+    for (final r in c.metaboliteRelations) {
+      await run(
+        'INSERT INTO metabolite_relations (relation_id, parent_id, '
+        'metabolite_id, metabolite_name, kind, specimens_json, '
+        'basis_claim_id) VALUES (?,?,?,?,?,?,?)',
+        [
+          r.id,
+          r.parentId,
+          r.metaboliteId,
+          r.metaboliteName,
+          r.kind.code,
+          jsonEncode(r.specimens),
+          r.basisClaimId,
+        ],
+      );
+    }
+
+    for (final s in c.specimens) {
+      await run(
+        'INSERT INTO specimens (specimen_id, category, names_json, '
+        'aliases_json) VALUES (?,?,?,?)',
+        [s.id, s.category, jsonEncode(s.names), jsonEncode(s.aliases)],
+      );
+    }
+
+    // O‘z-o‘ziga havola (superseded_by): avval vorislar.
+    final standards = [...c.standards]
+      ..sort(
+        (x, y) =>
+            (x.supersededBy == null ? 0 : 1) - (y.supersededBy == null ? 0 : 1),
+      );
+    for (final s in standards) {
+      await run(
+        'INSERT INTO standards (standard_id, designation, title, publisher, '
+        'document_kind, status, reuse_status, verified_from, verified_at, '
+        'pub_year, edition, superseded_by, url, sha256, disciplines_json, '
+        'note) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
+        [
+          s.id,
+          s.designation,
+          s.title,
+          s.publisher,
+          s.documentKind.name,
+          s.status.code,
+          s.reuse.code,
+          s.verifiedFrom,
+          _d(s.verifiedAt),
+          s.year,
+          s.edition,
+          s.supersededBy,
+          s.url,
+          s.sha256,
+          jsonEncode([for (final d in s.disciplines) d.code]),
+          s.note,
+        ],
+      );
+    }
+
+    for (final t in c.termTranslations) {
+      await run(
+        'INSERT INTO term_translations (term_id, kind, original, '
+        'original_lang, canonical, localized_json, status_json) '
+        'VALUES (?,?,?,?,?,?,?)',
+        [
+          t.id,
+          t.kind.code,
+          t.original,
+          t.originalLang,
+          t.canonical,
+          jsonEncode(t.localized),
+          jsonEncode({for (final e in t.status.entries) e.key: e.value.code}),
+        ],
+      );
+    }
   }
 
   /// PHASE 4 bilim obyektlari → `knowledge_entities` qatorlari.
@@ -488,6 +664,53 @@ class ContentDbWriter {
           ),
         );
       }
+    }
+    // PHASE 7: namunalar va standartlar.
+    for (final sp in b.content.specimens) {
+      for (final n in sp.names.entries) {
+        terms.add(
+          SearchTerm(
+            entityId: sp.id,
+            category: SearchCategory.specimen,
+            term: n.value,
+            kind: n.key == 'en' ? TermKind.canonical : TermKind.localized,
+            lang: n.key,
+          ),
+        );
+      }
+      for (final a in sp.aliases) {
+        terms.add(
+          SearchTerm(
+            entityId: sp.id,
+            category: SearchCategory.specimen,
+            term: a,
+            kind: TermKind.synonym,
+            weight: 0.7,
+          ),
+        );
+      }
+    }
+    for (final st in b.content.standards) {
+      terms
+        ..add(
+          SearchTerm(
+            entityId: st.id,
+            category: SearchCategory.standard,
+            term: st.designation,
+            kind: TermKind.canonical,
+            lang: 'en',
+          ),
+        )
+        ..add(
+          SearchTerm(
+            entityId: st.id,
+            category: SearchCategory.standard,
+            term: st.title,
+            kind: TermKind.synonym,
+            lang: 'en',
+            weight: 0.6,
+          ),
+        );
     }
     // Metabolit / biomarker nomi bo‘yicha ota moddani topish.
     for (final cl in b.content.claims) {

@@ -1,0 +1,81 @@
+{
+  "packet_id": "P-C-TRAMADOL-METABOLITES",
+  "subject_id": "C-TRAMADOL-METABOLITES",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "tramadol",
+  "entity_names": {
+    "en": "Tramadol",
+    "ru": "Трамадол",
+    "uz": "Tramadol"
+  },
+  "field": "metabolites",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "O-demethylation catalyzed by CYP2D6 produces the active metabolite O-desmethyltramadol (M1, 3, Figure 1), whereas N-demethylation mediated by CYP3A4 and CYP2B6 yields the metabolite M2, which can be further converted into downstream metabolites such as M5.",
+    "location": "2.2.1. Metabolic Activation Mechanism",
+    "proposed_value": {
+      "items": [
+        "O-desmethyltramadol",
+        "M2",
+        "M5"
+      ],
+      "section": "2.2.1. Metabolic Activation Mechanism"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC13074819",
+      "title": "Review of Structural Modification and Development of Novel Tramadol Derivatives",
+      "type": "journal_article",
+      "doi": "10.3390/molecules31071177",
+      "pmid": "41976217",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13074819/",
+      "tier": "B",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "2.2.1. Metabolic Activation Mechanism"
+    }
+  ],
+  "why_it_matters": "Metabolite identity drives which analyte is targeted and how a finding is interpreted.",
+  "conflicts": [
+    {
+      "conflict_id": "CF-TRAMADOL-M2-ACTIVITY",
+      "kind": "inconsistent_characterisation",
+      "question": "Is N-desmethyltramadol (M2) described as an active metabolite?",
+      "note": "One source names only O-desmethyltramadol as the active metabolite and M2 simply as 'the metabolite M2'; another describes both M1 and M2 as 'active metabolites'."
+    }
+  ],
+  "has_conflict": true,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Tramadol",
+      "ru": "Трамадол",
+      "uz": "Tramadol"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-ALPRAZOLAM-METABOLISM_NOTE-P5",
+  "subject_id": "C-ALPRAZOLAM-METABOLISM_NOTE-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "alprazolam",
+  "entity_names": {
+    "en": "Alprazolam",
+    "ru": "Алпразолам",
+    "uz": "Alprazolam"
+  },
+  "field": "metabolism_note",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "We have earlier demonstrated an intrinsic difference in the biotransformation of alprazolam (ALP) in brain and liver, relatively more α-hydroxy alprazolam (α-OHALP) is formed in brain as compared to liver.",
+    "location": "ABSTRACT",
+    "proposed_value": {
+      "section": "ABSTRACT"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC2408964",
+      "title": "Drug metabolism in human brain: high levels of cytochrome P4503A43 in brain and metabolism of anti-anxiety drug alprazolam to its active metabolite",
+      "type": "journal_article",
+      "doi": "10.1371/journal.pone.0002337",
+      "pmid": "18545703",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2408964/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "ABSTRACT"
+    }
+  ],
+  "why_it_matters": "Metabolic pathway statements support interpretation of parent/metabolite findings.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Alprazolam",
+      "ru": "Алпразолам",
+      "uz": "Alprazolam"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

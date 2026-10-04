@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-ISOTONITAZENE-METABOLISM_NOTE-P5",
+  "subject_id": "C-ISOTONITAZENE-METABOLISM_NOTE-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "isotonitazene",
+  "entity_names": {
+    "en": "Isotonitazene",
+    "ru": "Изотонитазен",
+    "uz": "Izotonitazen"
+  },
+  "field": "metabolism_note",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "More recently, reported the identification of multiple metabolites isotonitazene, metonitazene, etodesnitazene, and metodesnitazene following incubation with human hepatocytes.",
+    "location": "DISCUSS",
+    "proposed_value": {
+      "section": "DISCUSS"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC11291330",
+      "title": "Metabolic characterization of the new benzimidazole synthetic opioids - nitazenes",
+      "type": "journal_article",
+      "doi": "10.3389/fphar.2024.1434573",
+      "pmid": "39092223",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11291330/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "DISCUSS"
+    }
+  ],
+  "why_it_matters": "Metabolic pathway statements support interpretation of parent/metabolite findings.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Isotonitazene",
+      "ru": "Изотонитазен",
+      "uz": "Izotonitazen"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

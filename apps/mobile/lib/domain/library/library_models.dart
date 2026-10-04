@@ -74,6 +74,14 @@ class SourceView {
     this.url,
     this.accessedDate,
     this.locator,
+    this.hierarchy,
+    this.reuseStatus = ReuseStatus.unknown,
+    this.lifecycle = SourceLifecycle.current,
+    this.lifecycleBasis,
+    this.lifecycleCheckedAt,
+    this.sha256,
+    this.sourceVersion,
+    this.language,
   });
 
   final String sourceId;
@@ -93,6 +101,47 @@ class SourceView {
 
   /// Manba ichidagi joy (bo‘lim, jadval).
   final String? locator;
+
+  // PHASE 7 provenance.
+  /// A / B / C ierarxiyasi (blog/AI — null).
+  final SourceHierarchy? hierarchy;
+  final ReuseStatus reuseStatus;
+  final SourceLifecycle lifecycle;
+  final String? lifecycleBasis;
+  final DateTime? lifecycleCheckedAt;
+  final String? sha256;
+  final String? sourceVersion;
+  final String? language;
+
+  bool get isRetracted =>
+      lifecycle == SourceLifecycle.retracted ||
+      lifecycle == SourceLifecycle.withdrawn;
+
+  SourceView withLocator(String? l) => SourceView(
+    sourceId: sourceId,
+    title: title,
+    sourceType: sourceType,
+    evidenceLevel: evidenceLevel,
+    licenseMode: licenseMode,
+    identifierVerified: identifierVerified,
+    organization: organization,
+    journal: journal,
+    year: year,
+    edition: edition,
+    doi: doi,
+    pmid: pmid,
+    url: url,
+    accessedDate: accessedDate,
+    locator: l,
+    hierarchy: hierarchy,
+    reuseStatus: reuseStatus,
+    lifecycle: lifecycle,
+    lifecycleBasis: lifecycleBasis,
+    lifecycleCheckedAt: lifecycleCheckedAt,
+    sha256: sha256,
+    sourceVersion: sourceVersion,
+    language: language,
+  );
 }
 
 /// Bitta ilmiy claim — qiymat, status, dalil darajasi, versiya, qatlam va
@@ -109,6 +158,10 @@ class ClaimView {
     required this.layer,
     required this.sources,
     required this.reviewCount,
+    this.lifecycle = ClaimLifecycle.needsReview,
+    this.lifecycleReason,
+    this.conflictIds = const [],
+    this.entityId,
   });
 
   final String claimId;
@@ -125,6 +178,18 @@ class ClaimView {
 
   /// Shu claim versiyasiga berilgan review’lar soni.
   final int reviewCount;
+
+  /// PHASE 7: hisoblangan hayot sikli (CURRENT / NEEDS_REVIEW / RETRACTED…).
+  final ClaimLifecycle lifecycle;
+  final String? lifecycleReason;
+
+  /// Shu claim qatnashgan ochiq «EVIDENCE CONFLICT» yozuvlari.
+  final List<String> conflictIds;
+  final String? entityId;
+
+  /// Qat’iy konsentratsiya konteksti (`context_strict`), bo‘lsa.
+  Map<String, Object?>? get strictContext =>
+      (value['context_strict'] as Map?)?.cast<String, Object?>();
 
   List<String> get items => [
     for (final i in (value['items'] as List? ?? const [])) '$i',

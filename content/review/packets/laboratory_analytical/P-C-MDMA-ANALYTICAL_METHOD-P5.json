@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-MDMA-ANALYTICAL_METHOD-P5",
+  "subject_id": "C-MDMA-ANALYTICAL_METHOD-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "mdma",
+  "entity_names": {
+    "en": "MDMA",
+    "ru": "МДМА",
+    "uz": "MDMA"
+  },
+  "field": "analytical_method",
+  "domain": "lab",
+  "required_role": "laboratory_analytical",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "Prior to 2013, screening of blood samples for Coronial and DUID cases was carried out using an ELISA method for MDMA/methamphetamine.",
+    "location": "METHODS",
+    "proposed_value": {
+      "section": "METHODS"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC13139824",
+      "title": "Trends in toxicological findings and drug seizures of MDMA in New Zealand from 2010 to 2022",
+      "type": "journal_article",
+      "doi": "10.1111/1556-4029.70284",
+      "pmid": "41676995",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13139824/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "METHODS"
+    }
+  ],
+  "why_it_matters": "Links the substance to an analytical technique; does not imply a validated method for any laboratory.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "MDMA",
+      "ru": "МДМА",
+      "uz": "MDMA"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

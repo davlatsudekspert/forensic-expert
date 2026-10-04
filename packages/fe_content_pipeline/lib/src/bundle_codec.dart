@@ -107,6 +107,13 @@ class PipelineBundle {
       links: content.links,
       images: content.images,
       knownEntityIds: content.knownEntityIds,
+      sourceProvenance: content.sourceProvenance,
+      conflicts: content.conflicts,
+      reviewActions: content.reviewActions,
+      metaboliteRelations: content.metaboliteRelations,
+      specimens: content.specimens,
+      standards: content.standards,
+      termTranslations: content.termTranslations,
     ),
     substances: substances,
     sourceExtras: sourceExtras,
@@ -135,8 +142,13 @@ class BundleFormatException implements Exception {
 /// `screening_tests`, `methods`, `emerging_issues`, `component_versions`,
 /// instrument/rule kengaytirilgan maydonlari, `source_class`.
 abstract final class BundleCodec {
-  static const format = 'fe-bundle/3';
-  static const supportedFormats = {'fe-bundle/1', 'fe-bundle/2', format};
+  static const format = 'fe-bundle/4';
+  static const supportedFormats = {
+    'fe-bundle/1',
+    'fe-bundle/2',
+    'fe-bundle/3',
+    format,
+  };
 
   static PipelineBundle decode(String json, {String? imageRoot}) {
     final root = jsonDecode(json);
@@ -382,6 +394,36 @@ abstract final class BundleCodec {
       for (final i in _list(root, 'images')) ev(i, EvidenceJson.imageFrom),
     ];
 
+    // PHASE 7 (`fe-bundle/4`): provenance, ziddiyatlar, review harakatlari,
+    // metabolitlar, namunalar, standartlar, terminlar.
+    final sourceProvenance = [
+      for (final s in _list(root, 'sources')) ev(s, ProvenanceJson.sourceFrom),
+    ];
+    final conflicts = [
+      for (final c in _list(root, 'conflicts'))
+        ev(c, ProvenanceJson.conflictFrom),
+    ];
+    final reviewActions = [
+      for (final a in _list(root, 'review_actions'))
+        ev(a, ProvenanceJson.actionFrom),
+    ];
+    final metaboliteRelations = [
+      for (final r in _list(root, 'metabolite_relations'))
+        ev(r, ProvenanceJson.metaboliteFrom),
+    ];
+    final specimens = [
+      for (final s in _list(root, 'specimens'))
+        ev(s, ProvenanceJson.specimenFrom),
+    ];
+    final standards = [
+      for (final s in _list(root, 'standards'))
+        ev(s, ProvenanceJson.standardFrom),
+    ];
+    final termTranslations = [
+      for (final t in _list(root, 'term_translations'))
+        ev(t, ProvenanceJson.termFrom),
+    ];
+
     if ((root['reviews'] as List? ?? const []).isNotEmpty ||
         (root['reviewers'] as List? ?? const []).isNotEmpty) {
       // Review yozuvlari CMS/PR orqali keladi — format keyingi bosqichda.
@@ -411,6 +453,13 @@ abstract final class BundleCodec {
         links: links,
         images: images,
         knownEntityIds: {for (final s in substances) s.substanceId},
+        sourceProvenance: sourceProvenance,
+        conflicts: conflicts,
+        reviewActions: reviewActions,
+        metaboliteRelations: metaboliteRelations,
+        specimens: specimens,
+        standards: standards,
+        termTranslations: termTranslations,
       ),
       substances: substances,
       sourceExtras: sourceExtras,

@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-TRAMADOL-ANALYTICAL_METHOD-P5",
+  "subject_id": "C-TRAMADOL-ANALYTICAL_METHOD-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "tramadol",
+  "entity_names": {
+    "en": "Tramadol",
+    "ru": "Трамадол",
+    "uz": "Tramadol"
+  },
+  "field": "analytical_method",
+  "domain": "lab",
+  "required_role": "laboratory_analytical",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "This study evaluated the performance of the Immunalysis Tapentadol 343 Urine Enzyme Immunoassay (EIA) screening kit, focusing on the prevalence of false-positive results due to cross-reactivity with tramadol.",
+    "location": "ABSTRACT",
+    "proposed_value": {
+      "section": "ABSTRACT"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC12842606",
+      "title": "Immunalysis tapentadol assay reformulation resolves tramadol interference",
+      "type": "journal_article",
+      "doi": "10.1093/jat/bkaf060",
+      "pmid": "40587090",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12842606/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "ABSTRACT"
+    }
+  ],
+  "why_it_matters": "Links the substance to an analytical technique; does not imply a validated method for any laboratory.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Tramadol",
+      "ru": "Трамадол",
+      "uz": "Tramadol"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

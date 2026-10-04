@@ -1,4 +1,4 @@
--- FORENSIC EXPERT content.db sxemasi (schema_version = 3: PHASE 4 global bilim tizimi).
+-- FORENSIC EXPERT content.db sxemasi (schema_version = 6: PHASE 7 provenance pipeline).
 -- Bu baza ilovada FAQAT O‘QISH uchun. U imzolangan kontent paketidan keladi.
 -- Hujjat: docs/00_ARXITEKTURA_REJASI.md (6, 9, 22, 23-bo‘limlar).
 --
@@ -318,7 +318,7 @@ CREATE INDEX research_by_kind ON research_records (kind);
 CREATE TABLE entity_links (
   from_id TEXT NOT NULL,
   to_id TEXT NOT NULL,
-  relation TEXT NOT NULL CHECK (relation IN ('analysed_by','metabolism_co_mention','confirmed_by','used_in','research','related_topic')),
+  relation TEXT NOT NULL CHECK (relation IN ('analysed_by','metabolism_co_mention','confirmed_by','used_in','research','related_topic','has_metabolite','measured_in','screened_by','standard_for','legal_status')),
   basis TEXT NOT NULL CHECK (length(basis) > 0),
   PRIMARY KEY (from_id, to_id, relation)
 ) WITHOUT ROWID;
@@ -351,3 +351,120 @@ CREATE TABLE images (
 );
 
 CREATE INDEX images_by_entity ON images (entity_id);
+
+-- ---------------------------------------------------------------------------
+-- PHASE 7 (schema_version = 6): tasdiqlanadigan kontent pipeline’i.
+-- Manba hayot sikli, claim hayot sikli (hisoblangan), dalil ziddiyatlari,
+-- review harakatlari, metabolit munosabatlari, namunalar, standartlar
+-- katalogi (faqat metadata), ilmiy termin tarjimalari.
+-- ---------------------------------------------------------------------------
+
+CREATE TABLE source_provenance (
+  source_id TEXT NOT NULL PRIMARY KEY REFERENCES sources (source_id),
+  hierarchy TEXT CHECK (hierarchy IS NULL OR hierarchy IN ('A','B','C')),
+  reuse_status TEXT NOT NULL CHECK (reuse_status IN ('OPEN_REUSE','CITE_ONLY','NON_COMMERCIAL','LICENSE_REQUIRED','LOOKUP_ONLY','UNKNOWN')),
+  language TEXT,
+  sha256 TEXT,
+  source_version TEXT,
+  lifecycle TEXT NOT NULL DEFAULT 'current' CHECK (lifecycle IN ('current','superseded','retracted','withdrawn')),
+  superseded_by TEXT REFERENCES sources (source_id),
+  lifecycle_checked_at TEXT,
+  lifecycle_basis TEXT,
+  forensic_relevance TEXT NOT NULL DEFAULT 'unassessed' CHECK (forensic_relevance IN ('unassessed','direct','supporting','background')),
+  CHECK (lifecycle = 'current' OR lifecycle_basis IS NOT NULL),
+  CHECK (lifecycle <> 'superseded' OR superseded_by IS NOT NULL)
+) WITHOUT ROWID;
+
+-- Hisoblangan (ClaimLifecycleResolver) — qo‘lda yozilmaydi.
+CREATE TABLE claim_lifecycle (
+  claim_id TEXT NOT NULL PRIMARY KEY REFERENCES claims (claim_id),
+  lifecycle TEXT NOT NULL CHECK (lifecycle IN ('CURRENT','NEEDS_REVIEW','OUTDATED','SUPERSEDED','RETRACTED','REJECTED')),
+  reason TEXT NOT NULL,
+  caused_by_json TEXT NOT NULL DEFAULT '[]'
+) WITHOUT ROWID;
+
+CREATE INDEX claim_lifecycle_by_state ON claim_lifecycle (lifecycle);
+
+CREATE TABLE evidence_conflicts (
+  conflict_id TEXT NOT NULL PRIMARY KEY,
+  entity_id TEXT NOT NULL,
+  question TEXT NOT NULL CHECK (length(question) > 0),
+  kind TEXT NOT NULL CHECK (kind IN ('direct_contradiction','context_dependent','value_overlap','inconsistent_characterisation')),
+  note TEXT NOT NULL CHECK (length(note) > 0),
+  state TEXT NOT NULL CHECK (state IN ('open','resolved_by_reviewer')),
+  detected_at TEXT
+) WITHOUT ROWID;
+
+CREATE TABLE conflict_claims (
+  conflict_id TEXT NOT NULL REFERENCES evidence_conflicts (conflict_id),
+  claim_id TEXT NOT NULL REFERENCES claims (claim_id),
+  PRIMARY KEY (conflict_id, claim_id)
+) WITHOUT ROWID;
+
+CREATE INDEX conflict_claims_by_claim ON conflict_claims (claim_id);
+
+-- Faqat haqiqiy reviewer harakatlari (reviewers jadvalidagi shaxs).
+CREATE TABLE review_actions (
+  action_id TEXT NOT NULL PRIMARY KEY,
+  subject_id TEXT NOT NULL,
+  subject_version INTEGER NOT NULL,
+  content_version TEXT NOT NULL,
+  domain TEXT NOT NULL,
+  reviewer_id TEXT NOT NULL REFERENCES reviewers (reviewer_id),
+  role TEXT NOT NULL CHECK (role IN ('forensic_toxicology','forensic_medicine','laboratory_analytical','forensic_biochemistry','legal_jurisdiction','translation','scientific_editor')),
+  action TEXT NOT NULL CHECK (action IN ('APPROVE','REJECT','REQUEST_CHANGE','FLAG_CONFLICT','FLAG_OUTDATED')),
+  acted_at TEXT NOT NULL,
+  note TEXT NOT NULL DEFAULT '',
+  CHECK (action = 'APPROVE' OR length(note) > 0)
+) WITHOUT ROWID;
+
+CREATE TABLE metabolite_relations (
+  relation_id TEXT NOT NULL PRIMARY KEY,
+  parent_id TEXT NOT NULL,
+  metabolite_id TEXT,
+  metabolite_name TEXT NOT NULL,
+  kind TEXT NOT NULL CHECK (kind IN ('metabolite','active_metabolite','inactive_metabolite','marker','artifact')),
+  specimens_json TEXT NOT NULL DEFAULT '[]',
+  basis_claim_id TEXT NOT NULL REFERENCES claims (claim_id)
+) WITHOUT ROWID;
+
+CREATE INDEX metabolite_relations_by_parent ON metabolite_relations (parent_id);
+CREATE INDEX metabolite_relations_by_metabolite ON metabolite_relations (metabolite_id);
+
+CREATE TABLE specimens (
+  specimen_id TEXT NOT NULL PRIMARY KEY,
+  category TEXT NOT NULL CHECK (category IN ('fluid','tissue','keratinous','content')),
+  names_json TEXT NOT NULL,
+  aliases_json TEXT NOT NULL DEFAULT '[]'
+) WITHOUT ROWID;
+
+CREATE TABLE standards (
+  standard_id TEXT NOT NULL PRIMARY KEY,
+  designation TEXT NOT NULL,
+  title TEXT NOT NULL,
+  publisher TEXT NOT NULL,
+  document_kind TEXT NOT NULL,
+  status TEXT NOT NULL CHECK (status IN ('current','proposed','superseded','withdrawn','unknown')),
+  reuse_status TEXT NOT NULL CHECK (reuse_status IN ('OPEN_REUSE','CITE_ONLY','NON_COMMERCIAL','LICENSE_REQUIRED','LOOKUP_ONLY','UNKNOWN')),
+  verified_from TEXT NOT NULL,
+  verified_at TEXT NOT NULL,
+  pub_year TEXT,
+  edition TEXT,
+  superseded_by TEXT REFERENCES standards (standard_id),
+  url TEXT,
+  sha256 TEXT,
+  disciplines_json TEXT NOT NULL DEFAULT '[]',
+  note TEXT,
+  CHECK (status <> 'superseded' OR superseded_by IS NOT NULL),
+  CHECK (reuse_status <> 'LICENSE_REQUIRED' OR sha256 IS NULL)
+) WITHOUT ROWID;
+
+CREATE TABLE term_translations (
+  term_id TEXT NOT NULL PRIMARY KEY,
+  kind TEXT NOT NULL CHECK (kind IN ('term','abbreviation','identifier','formula')),
+  original TEXT NOT NULL,
+  original_lang TEXT NOT NULL,
+  canonical TEXT NOT NULL,
+  localized_json TEXT NOT NULL,
+  status_json TEXT NOT NULL
+) WITHOUT ROWID;

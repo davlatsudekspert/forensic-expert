@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-FM-BLUNT-TRAUMA-DEFINITION-P5",
+  "subject_id": "C-FM-BLUNT-TRAUMA-DEFINITION-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "fm-blunt-trauma",
+  "entity_names": {
+    "en": "Blunt force trauma",
+    "ru": "Тупая травма",
+    "uz": "To‘mtoq jism jarohati"
+  },
+  "field": "definition",
+  "domain": "fm",
+  "required_role": "forensic_medicine",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "Blunt force trauma causes external injuries in form of abrasions, contusions, and lacerations of the skin and internal injuries such as fractures, intracranial hemorrhages, and damage to internal organs.",
+    "location": "INTRO",
+    "proposed_value": {
+      "section": "INTRO"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC9804827",
+      "title": "Blunt force homicides in Denmark 1992-2016",
+      "type": "journal_article",
+      "doi": "10.1111/1556-4029.15118",
+      "pmid": "35982577",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9804827/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "INTRO"
+    }
+  ],
+  "why_it_matters": "Definitions are shown to students and practitioners as the canonical meaning of the term.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Blunt force trauma",
+      "ru": "Тупая травма",
+      "uz": "To‘mtoq jism jarohati"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-FM-ALGOR-MORTIS-LIMITATION-P7",
+  "subject_id": "C-FM-ALGOR-MORTIS-LIMITATION-P7",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "fm-algor-mortis",
+  "entity_names": {
+    "en": "Algor mortis",
+    "ru": "Охлаждение трупа",
+    "uz": "Murdaning sovishi (algor mortis)"
+  },
+  "field": "limitation",
+  "domain": "fm",
+  "required_role": "forensic_medicine",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "Algor mortis is affected by a range of external and intrinsic variables, including ambient temperature, clothing, body mass, and humidity.",
+    "location": "DISCUSS",
+    "proposed_value": {
+      "section": "DISCUSS"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC12346081",
+      "title": "Current Understanding and Future Research Direction for Estimating the Postmortem Interval: A Systematic Review",
+      "type": "journal_article",
+      "doi": "10.3390/diagnostics15151954",
+      "pmid": "40804918",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12346081/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "Excluded retracted PMIDs at selection (PubMed check).",
+      "locator": "DISCUSS"
+    }
+  ],
+  "why_it_matters": "Limitations prevent over-interpretation of a finding.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Algor mortis",
+      "ru": "Охлаждение трупа",
+      "uz": "Murdaning sovishi (algor mortis)"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

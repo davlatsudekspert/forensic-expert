@@ -24,11 +24,13 @@ import assemble_p4
 import sys as _sys
 _sys.path.insert(0, "tools/p5")
 import assemble_p5  # noqa: E402
+_sys.path.insert(0, "tools/p7")
+import assemble_p7  # noqa: E402
 
 FREE_DEMO = ["ethanol", "methanol", "carbon-monoxide"]  # 3 ta yozuv
-PACK_VERSION = "2026.10.4"
+PACK_VERSION = "2026.10.5"
 # Komponent versiyalari (ilova versiyasidan alohida).
-COMPONENT_VERSIONS = {"scientific": "2026.10.4", "jurisdiction": "2026.10.3",
+COMPONENT_VERSIONS = {"scientific": "2026.10.5", "jurisdiction": "2026.10.5",
                       "research": "2026.10.3"}
 
 
@@ -215,7 +217,7 @@ def main():
             sc["tier_access"] = "free"
 
     bundle = dict(
-        format="fe-bundle/3", pack_version=PACK_VERSION, channel="development",
+        format="fe-bundle/4", pack_version=PACK_VERSION, channel="development",
         component_versions=COMPONENT_VERSIONS,
         assembled_at=today,
         jurisdictions=[dict(jurisdiction_id="INT", level="international",
@@ -229,13 +231,16 @@ def main():
         emerging_issues=p4["emerging_issues"],
         research=research, links=links, images=images,
         reviewers=[], reviews=[])
+    # ---- PHASE 7: provenance pipeline ----------------------------------
+    p7 = assemble_p7.apply(bundle)
     json.dump(bundle, open("pilot/bundle.json", "w"), ensure_ascii=False,
               indent=2)
     print(f"substances={len(substances)} claims={len(claims)} "
           f"sources={len(sources)} instruments={len(instruments)} "
           f"rules={len(rules)} topics={len(p4['topics'])} "
           f"topics_p5={len(pt['topics'])} methods_p5={len(pt['methods'])} recipes_p5={len(pt['recipes'])} "
-          f"screening_p5={len(pt['screening'])} research={len(research)} {rstats} links={len(links)} images={len(images)}")
+          f"screening_p5={len(pt['screening'])} research={len(research)} {rstats} links={len(bundle['links'])} images={len(images)}")
+    print("p7:", json.dumps(p7, ensure_ascii=False))
 
 
 if __name__ == "__main__":

@@ -5,6 +5,7 @@ import 'enums.dart';
 import 'evidence_graph.dart';
 import 'jurisdiction.dart';
 import 'knowledge.dart';
+import 'provenance.dart';
 import 'review.dart';
 import 'source.dart';
 
@@ -33,6 +34,13 @@ class ContentBundle {
     this.links = const [],
     this.images = const [],
     this.knownEntityIds = const {},
+    this.sourceProvenance = const [],
+    this.conflicts = const [],
+    this.reviewActions = const [],
+    this.metaboliteRelations = const [],
+    this.specimens = const [],
+    this.standards = const [],
+    this.termTranslations = const [],
   });
 
   final BundleChannel channel;
@@ -65,4 +73,15 @@ class ContentBundle {
   /// Bundle’dan tashqari ma’lum yozuvlar (masalan, moddalar) — bog‘lanish
   /// yaxlitligi uchun (FE030).
   final Set<String> knownEntityIds;
+
+  // PHASE 7: tasdiqlanadigan kontent pipeline’i.
+  final List<SourceProvenance> sourceProvenance;
+  final List<EvidenceConflict> conflicts;
+
+  /// Haqiqiy reviewer harakatlari. Reviewer bo‘lmasa — bo‘sh.
+  final List<ReviewAction> reviewActions;
+  final List<MetaboliteRelation> metaboliteRelations;
+  final List<SpecimenRecord> specimens;
+  final List<StandardRecord> standards;
+  final List<TermTranslation> termTranslations;
 }

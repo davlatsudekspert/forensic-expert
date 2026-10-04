@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-THC-COOH-ANALYTICAL_METHOD-P5",
+  "subject_id": "C-THC-COOH-ANALYTICAL_METHOD-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "thc-cooh",
+  "entity_names": {
+    "en": "THC-COOH",
+    "ru": "ТГК-COOH",
+    "uz": "THC-COOH"
+  },
+  "field": "analytical_method",
+  "domain": "lab",
+  "required_role": "laboratory_analytical",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "A simple and sensitive analytical method was developed for qualitative and quantitative analysis of Δ9-tetrahydrocannabinol (Δ9-THC) and its metabolite 11-nor-Δ9-tetrahydrocannabinol-carboxylic acid (Δ9-THC-COOH) in human postmortem blood using gas chromatography/mass spectrometry (GC-MS) in selected ion monitoring (SIM) mode.",
+    "location": "ABSTRACT",
+    "proposed_value": {
+      "section": "ABSTRACT"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC10146061",
+      "title": "Simple Method for the Determination of THC and THC-COOH in Human Postmortem Blood Samples by Gas Chromatography-Mass Spectrometry",
+      "type": "journal_article",
+      "doi": "10.3390/molecules28083586",
+      "pmid": "37110820",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10146061/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "ABSTRACT"
+    }
+  ],
+  "why_it_matters": "Links the substance to an analytical technique; does not imply a validated method for any laboratory.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "THC-COOH",
+      "ru": "ТГК-COOH",
+      "uz": "THC-COOH"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

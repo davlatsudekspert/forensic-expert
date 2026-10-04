@@ -1,0 +1,55 @@
+{
+  "packet_id": "P-R-US-ISOTONITAZENE-CONTROL",
+  "subject_id": "R-US-ISOTONITAZENE-CONTROL",
+  "kind": "legal_rule",
+  "subject_version": 1,
+  "entity_id": "isotonitazene",
+  "entity_names": {
+    "en": "Isotonitazene",
+    "ru": "Изотонитазен",
+    "uz": "Izotonitazen"
+  },
+  "field": "control_status",
+  "domain": "legal",
+  "required_role": "legal_jurisdiction",
+  "required_reviews": 1,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "Isotonitazene ( N,N -diethyl-2-(2-(4-isopropoxybenzyl)-5-nitro-1 H -benzimidazol-1-yl)ethan-1-amine)",
+    "location": "21 CFR 1308.11",
+    "proposed_value": {
+      "schedule": "Schedule I",
+      "list_entry": "Isotonitazene",
+      "entry_text": "Isotonitazene ( N,N -diethyl-2-(2-(4-isopropoxybenzyl)-5-nitro-1 H -benzimidazol-1-yl)ethan-1-amine)",
+      "note": "Exact list-entry match on the official text. Absence of a match does not mean a substance is uncontrolled."
+    }
+  },
+  "sources": [
+    {
+      "instrument_id": "US-21CFR1308"
+    }
+  ],
+  "why_it_matters": "Legal status depends on jurisdiction and date; must be checked against the official text.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [
+    "NEEDS LEGAL REVIEW — not legal advice.",
+    "Exact list-entry match only; generic or class clauses are not evaluated."
+  ],
+  "concentration_context": null,
+  "translations": null,
+  "reviewer_checklist": [
+    "Entry exists in the official consolidated text on the review date.",
+    "Schedule/class is correct and in force.",
+    "Exceptions or preparations clauses do not change the status."
+  ],
+  "review_actions": []
+}

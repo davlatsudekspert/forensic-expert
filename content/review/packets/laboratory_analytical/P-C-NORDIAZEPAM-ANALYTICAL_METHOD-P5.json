@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-NORDIAZEPAM-ANALYTICAL_METHOD-P5",
+  "subject_id": "C-NORDIAZEPAM-ANALYTICAL_METHOD-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "nordiazepam",
+  "entity_names": {
+    "en": "Nordiazepam",
+    "ru": "Нордазепам",
+    "uz": "Nordiazepam"
+  },
+  "field": "analytical_method",
+  "domain": "lab",
+  "required_role": "laboratory_analytical",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "Extracts were analysed by LC–MS/MS on an Agilent 6495 triple quadrupole (QQQ) system (Agilent Technologies, Waldbronn, Germany) for the detection and quantification of diazepam, nordazepam, oxazepam, and temazepam.",
+    "location": "METHODS",
+    "proposed_value": {
+      "section": "METHODS"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC12241295",
+      "title": "Evaluating the value of entomotoxicology in forensic toxicology casework using the first minipig model",
+      "type": "journal_article",
+      "doi": "10.1007/s11419-025-00728-1",
+      "pmid": "40419760",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12241295/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "METHODS"
+    }
+  ],
+  "why_it_matters": "Links the substance to an analytical technique; does not imply a validated method for any laboratory.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Nordiazepam",
+      "ru": "Нордазепам",
+      "uz": "Nordiazepam"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

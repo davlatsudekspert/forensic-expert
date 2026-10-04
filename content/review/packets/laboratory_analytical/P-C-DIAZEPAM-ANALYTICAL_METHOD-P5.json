@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-DIAZEPAM-ANALYTICAL_METHOD-P5",
+  "subject_id": "C-DIAZEPAM-ANALYTICAL_METHOD-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "diazepam",
+  "entity_names": {
+    "en": "Diazepam",
+    "ru": "Диазепам",
+    "uz": "Diazepam"
+  },
+  "field": "analytical_method",
+  "domain": "lab",
+  "required_role": "laboratory_analytical",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "A simple and reliable method was developed using LC-MS/MS to quantify alprazolam, bromazepam, clonazepam, diazepam, and flunitrazepam in clinical samples.",
+    "location": "ABSTRACT",
+    "proposed_value": {
+      "section": "ABSTRACT"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC12430268",
+      "title": "Development and Validation of an LC-MS/MS Method for the Simultaneous Determination of Alprazolam, Bromazepam, Clonazepam, Diazepam and Flunitrazpam in Human Urine and Its Application to Samples from Suspected Drug Abusers",
+      "type": "journal_article",
+      "doi": "10.3390/molecules30173451",
+      "pmid": "40941979",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12430268/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "ABSTRACT"
+    }
+  ],
+  "why_it_matters": "Links the substance to an analytical technique; does not imply a validated method for any laboratory.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Diazepam",
+      "ru": "Диазепам",
+      "uz": "Diazepam"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

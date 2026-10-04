@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-FM-POSTMORTEM-INTERVAL-LIMITATION-P5",
+  "subject_id": "C-FM-POSTMORTEM-INTERVAL-LIMITATION-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "fm-postmortem-interval",
+  "entity_names": {
+    "en": "Postmortem interval (PMI)",
+    "ru": "Давность наступления смерти",
+    "uz": "O‘limdan keyingi vaqt (PMI)"
+  },
+  "field": "limitation",
+  "domain": "fm",
+  "required_role": "forensic_medicine",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "Linear regression analyses between estimated and actual post-mortem intervals yielded low coefficients of determination, with R² = 34.1% for the TDS-based model and R² = 20.5% for the ADD-based model, indicating that both methods explain only a limited portion of the variance in the actual PMI (PMIa).",
+    "location": "ABSTRACT",
+    "proposed_value": {
+      "section": "ABSTRACT"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC12957013",
+      "title": "Inter-operator reliability of the total decomposition score (TDS) method for estimating the post-mortem interval (PMI) in outdoor cases",
+      "type": "journal_article",
+      "doi": "10.1007/s00414-025-03681-1",
+      "pmid": "41310302",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12957013/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "ABSTRACT"
+    }
+  ],
+  "why_it_matters": "Limitations prevent over-interpretation of a finding.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Postmortem interval (PMI)",
+      "ru": "Давность наступления смерти",
+      "uz": "O‘limdan keyingi vaqt (PMI)"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

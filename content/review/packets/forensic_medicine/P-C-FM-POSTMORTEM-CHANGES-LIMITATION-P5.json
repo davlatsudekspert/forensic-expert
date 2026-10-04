@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-FM-POSTMORTEM-CHANGES-LIMITATION-P5",
+  "subject_id": "C-FM-POSTMORTEM-CHANGES-LIMITATION-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "fm-postmortem-changes",
+  "entity_names": {
+    "en": "Postmortem changes",
+    "ru": "Посмертные изменения",
+    "uz": "O‘limdan keyingi o‘zgarishlar"
+  },
+  "field": "limitation",
+  "domain": "fm",
+  "required_role": "forensic_medicine",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "In routine practice, postmortem interval is deduced by conventional or physical methods such as early and late postmortem changes, which are subjective methods and prone to errors.",
+    "location": "ABSTRACT",
+    "proposed_value": {
+      "section": "ABSTRACT"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC10258654",
+      "title": "Analysis of Changes in Electrolytes Level in Serum After Death and Its Correlation With Postmortem Interval",
+      "type": "journal_article",
+      "doi": "10.7759/cureus.38957",
+      "pmid": "37313102",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10258654/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "ABSTRACT"
+    }
+  ],
+  "why_it_matters": "Limitations prevent over-interpretation of a finding.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Postmortem changes",
+      "ru": "Посмертные изменения",
+      "uz": "O‘limdan keyingi o‘zgarishlar"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

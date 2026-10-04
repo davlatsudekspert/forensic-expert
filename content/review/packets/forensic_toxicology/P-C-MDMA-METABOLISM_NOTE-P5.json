@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-MDMA-METABOLISM_NOTE-P5",
+  "subject_id": "C-MDMA-METABOLISM_NOTE-P5",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "mdma",
+  "entity_names": {
+    "en": "MDMA",
+    "ru": "МДМА",
+    "uz": "MDMA"
+  },
+  "field": "metabolism_note",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "MDMA metabolites are eventually excreted in urine as conjugated glucuronide and/or sulfate metabolites.",
+    "location": "INTRO",
+    "proposed_value": {
+      "section": "INTRO"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC11359928",
+      "title": "Pharmacogenomics of 3,4-Methylenedioxymethamphetamine (MDMA): A Narrative Review of the Literature",
+      "type": "journal_article",
+      "doi": "10.3390/pharmaceutics16081091",
+      "pmid": "39204437",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11359928/",
+      "tier": "B",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "INTRO"
+    }
+  ],
+  "why_it_matters": "Metabolic pathway statements support interpretation of parent/metabolite findings.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "MDMA",
+      "ru": "МДМА",
+      "uz": "MDMA"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

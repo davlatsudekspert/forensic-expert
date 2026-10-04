@@ -1,0 +1,73 @@
+{
+  "packet_id": "P-C-METHAMPHETAMINE-IDENTITY",
+  "subject_id": "C-METHAMPHETAMINE-IDENTITY",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "methamphetamine",
+  "entity_names": {
+    "en": "Methamphetamine",
+    "ru": "Метамфетамин",
+    "uz": "Metamfetamin"
+  },
+  "field": "identity",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": null,
+    "location": null,
+    "proposed_value": {
+      "pubchem_cid": 10836,
+      "molecular_formula": "C10H15N",
+      "molecular_weight": "149.23",
+      "inchikey": "MYWUZJCMWCOHBA-VIFPVBQESA-N",
+      "iupac_name": "(2S)-N-methyl-1-phenylpropan-2-amine"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PUBCHEM-10836",
+      "title": "PubChem Compound Summary for CID 10836 ((2S)-N-methyl-1-phenylpropan-2-amine)",
+      "type": "database",
+      "doi": null,
+      "pmid": null,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/10836",
+      "tier": "B",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": null,
+      "locator": "Computed Properties"
+    }
+  ],
+  "why_it_matters": "Identifiers (formula, InChIKey, CID) anchor every other record about the substance.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Methamphetamine",
+      "ru": "Метамфетамин",
+      "uz": "Metamfetamin"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

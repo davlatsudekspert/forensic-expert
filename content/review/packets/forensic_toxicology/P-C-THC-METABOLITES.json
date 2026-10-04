@@ -1,0 +1,73 @@
+{
+  "packet_id": "P-C-THC-METABOLITES",
+  "subject_id": "C-THC-METABOLITES",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "thc",
+  "entity_names": {
+    "en": "Δ9-Tetrahydrocannabinol (THC)",
+    "ru": "Δ9-Тетрагидроканнабинол (ТГК)",
+    "uz": "Δ9-Tetragidrokannabinol (TGK)"
+  },
+  "field": "metabolites",
+  "domain": "tox",
+  "required_role": "forensic_toxicology",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "Cannabis use or exposure is typically confirmed by detecting THC and its key metabolites, such as THC-COOH and 11-OH-THC, depending on the biological matrix.",
+    "location": "Introduction",
+    "proposed_value": {
+      "items": [
+        "THC-COOH",
+        "11-OH-THC"
+      ],
+      "section": "Introduction"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC13275792",
+      "title": "Impact of CBD and hemp oil use on drug test results: a systematic review",
+      "type": "journal_article",
+      "doi": "10.1007/s00414-026-03790-5",
+      "pmid": "41942676",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13275792/",
+      "tier": "B",
+      "evidence_level": "A",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "Introduction"
+    }
+  ],
+  "why_it_matters": "Metabolite identity drives which analyte is targeted and how a finding is interpreted.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Δ9-Tetrahydrocannabinol (THC)",
+      "ru": "Δ9-Тетрагидроканнабинол (ТГК)",
+      "uz": "Δ9-Tetragidrokannabinol (TGK)"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}
