@@ -3,6 +3,8 @@
 /// Bu status hech qachon qo‘lda belgilanmaydi — [StatusResolver] uni
 /// review yozuvlaridan hisoblaydi.
 enum ScientificStatus {
+  /// Muallif hali review’ga yubormagan qoralama.
+  draft('DRAFT'),
   verified('VERIFIED'),
   reviewed('REVIEWED'),
   needsReview('NEEDS_REVIEW'),
@@ -101,7 +103,10 @@ enum ContentDomain {
   fm('fm'),
   lab('lab'),
   legal('legal'),
-  edu('edu');
+  edu('edu'),
+
+  /// Tarjima reviewer’i — ilmiy yoki huquqiy claim’ni tasdiqlay olmaydi.
+  i18n('i18n');
 
   const ContentDomain(this.code);
 

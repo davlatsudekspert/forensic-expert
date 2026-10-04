@@ -1056,4 +1056,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get diagPurchaseServer => 'Покупка: проверена сервером';
+
+  @override
+  String get statusDraft => 'Черновик';
 }

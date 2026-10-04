@@ -82,6 +82,11 @@ class ReviewStatusBadge extends StatelessWidget {
         Icons.history,
       ),
       ScientificStatus.rejected => (l.statusNeedsReview, c.danger, Icons.block),
+      ScientificStatus.draft => (
+        l.statusDraft,
+        c.textSecondary,
+        Icons.edit_note_outlined,
+      ),
     };
     return Semantics(
       label: label,

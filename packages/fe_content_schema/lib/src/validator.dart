@@ -5,6 +5,7 @@ import 'claim.dart';
 import 'concentration.dart';
 import 'enums.dart';
 import 'jurisdiction.dart';
+import 'knowledge.dart';
 import 'source.dart';
 import 'status_resolver.dart';
 
@@ -35,6 +36,21 @@ abstract final class RuleCodes {
   static const invalidEffectivePeriod = 'FE015_INVALID_EFFECTIVE_PERIOD';
   static const unknownJurisdictionReference =
       'FE016_UNKNOWN_JURISDICTION_REFERENCE';
+
+  // --- PHASE 4: global bilim sohalari ---
+  static const sourceNotEvidence = 'FE017_SOURCE_CLASS_NOT_EVIDENCE';
+  static const recipeWithoutSource = 'FE018_RECIPE_WITHOUT_SOURCE';
+  static const unsourcedStepOrder = 'FE019_UNSOURCED_STEP_ORDER';
+  static const subjectStatusNotBacked = 'FE020_STATUS_NOT_BACKED_BY_REVIEWS';
+  static const screeningWithoutConfirmation =
+      'FE021_SCREENING_WITHOUT_CONFIRMATION_OR_LIMITATIONS';
+  static const unsourcedValue = 'FE022_UNSOURCED_VALUE';
+  static const definitiveIdWithoutAuthority =
+      'FE023_DEFINITIVE_IDENTIFICATION_WITHOUT_AUTHORITY';
+  static const methodKindMixing = 'FE024_METHOD_KIND_MIXING';
+  static const textLicense = 'FE025_TEXT_NOT_PERMITTED_BY_LICENSE';
+  static const emergingWithoutProvenance =
+      'FE026_EMERGING_ISSUE_WITHOUT_SOURCE_OR_DATE';
 }
 
 /// Test ma’lumot ID’lari shu prefiks bilan boshlanadi — ko‘zga tashlanishi
@@ -127,6 +143,18 @@ class ContentValidator {
         }
       }
 
+      if (sources.isNotEmpty &&
+          sources.every((src) => !src.sourceClass.canBackClaim)) {
+        issues.add(
+          ValidationIssue(
+            RuleCodes.sourceNotEvidence,
+            IssueSeverity.error,
+            claim.claimId,
+            'Claim is backed only by non-evidence sources (blog/AI/web).',
+          ),
+        );
+      }
+
       if (claim.isStructuredValue) {
         for (final s in sources) {
           if (!s.canBackStructuredValue) {
@@ -144,7 +172,11 @@ class ContentValidator {
       }
 
       final computed = resolver.resolve(claim, sources);
+      final draftOk =
+          claim.declaredStatus == ScientificStatus.draft &&
+          computed == ScientificStatus.needsReview;
       if (claim.declaredStatus != ScientificStatus.outdated &&
+          !draftOk &&
           claim.declaredStatus != computed) {
         issues.add(
           ValidationIssue(
@@ -210,6 +242,7 @@ class ContentValidator {
       instrumentsById,
       isProduction,
     );
+    _checkKnowledge(issues, bundle, sourcesById, resolver, isProduction);
 
     return ValidationReport(List.unmodifiable(issues));
   }
@@ -450,6 +483,251 @@ class ContentValidator {
           'Category "$category" is not allowed.',
         ),
       );
+    }
+  }
+
+  // ---------------------------------------------------------------------------
+  // PHASE 4: Reagents, Screening, Methods, Emerging, yurisdiksiya statuslari
+  // ---------------------------------------------------------------------------
+
+  void _checkKnowledge(
+    List<ValidationIssue> issues,
+    ContentBundle b,
+    Map<String, Source> sources,
+    StatusResolver resolver,
+    bool isProduction,
+  ) {
+    void err(String code, String id, String msg) =>
+        issues.add(ValidationIssue(code, IssueSeverity.error, id, msg));
+
+    void checkSourceRefs(String id, Iterable<String?> refs) {
+      for (final r in refs) {
+        if (r == null || r.isEmpty || !sources.containsKey(r)) {
+          err(
+            RuleCodes.unsourcedValue,
+            id,
+            'Value without a known source ($r).',
+          );
+        }
+      }
+    }
+
+    void checkStatus(
+      String id,
+      int version,
+      ScientificStatus declared,
+      ContentDomain domain,
+      List<String> sourceIds,
+      bool isTestData, {
+      bool checkTestData = true,
+    }) {
+      // Yurisdiksion yozuvlar TEST tekshiruvi _checkJurisdictionLayer’da.
+      if (checkTestData) _checkTestData(issues, id, isTestData, isProduction);
+      final srcs = [for (final s in sourceIds) ?sources[s]];
+      final computed = resolver.resolveSubject(
+        subjectId: id,
+        version: version,
+        domain: domain,
+        sources: srcs,
+      );
+      final ok =
+          declared == computed ||
+          declared == ScientificStatus.outdated ||
+          (declared == ScientificStatus.draft &&
+              computed == ScientificStatus.needsReview);
+      if (!ok) {
+        err(
+          RuleCodes.subjectStatusNotBacked,
+          id,
+          'Declared ${declared.code} but ${domain.code} reviews support '
+          '${computed.code}.',
+        );
+      }
+      if (checkTestData && isProduction && !declared.isPublishable) {
+        err(
+          RuleCodes.unpublishableStatus,
+          id,
+          '${declared.code} cannot enter a production bundle.',
+        );
+      }
+      if (srcs.isNotEmpty && srcs.every((x) => !x.sourceClass.canBackClaim)) {
+        err(RuleCodes.sourceNotEvidence, id, 'Only non-evidence sources.');
+      }
+    }
+
+    // Yurisdiksion hujjat va qoidalar — faqat legal reviewer.
+    for (final i in b.instruments) {
+      checkStatus(
+        i.id,
+        1,
+        i.status,
+        ContentDomain.legal,
+        [i.officialSourceId],
+        i.isTestData,
+        checkTestData: false,
+      );
+    }
+    for (final r in b.jurisdictionalRules) {
+      final inst = b.instruments.where((i) => i.id == r.instrumentId);
+      checkStatus(
+        r.id,
+        r.version,
+        r.status,
+        ContentDomain.legal,
+        [for (final i in inst) i.officialSourceId],
+        r.isTestData,
+        checkTestData: false,
+      );
+    }
+
+    for (final r in b.recipes) {
+      checkStatus(
+        r.id,
+        r.version,
+        r.status,
+        r.domain,
+        r.sourceIds,
+        r.isTestData,
+      );
+      if (r.hasPreparationData && r.sourceIds.isEmpty) {
+        err(
+          RuleCodes.recipeWithoutSource,
+          r.id,
+          'Preparation data without a source.',
+        );
+      }
+      checkSourceRefs(r.id, r.sourceIds);
+      checkSourceRefs(
+        r.id,
+        [
+          r.finalVolume?.sourceId,
+          r.storage?.sourceId,
+          r.temperature?.sourceId,
+          r.stability?.sourceId,
+          r.disposalReference?.sourceId,
+          r.qcRequirement?.sourceId,
+          for (final h in r.hazards) h.sourceId,
+        ].where((x) => x != null),
+      );
+      if (!r.orderExplicitInSource && r.steps.any((st) => st.order != null)) {
+        err(
+          RuleCodes.unsourcedStepOrder,
+          r.id,
+          'Order of addition is set but the source does not state it.',
+        );
+      }
+    }
+
+    for (final t in b.screeningTests) {
+      checkStatus(
+        t.id,
+        t.version,
+        t.status,
+        ContentDomain.tox,
+        t.sourceIds,
+        t.isTestData,
+      );
+      if (t.confirmatoryMethodIds.isEmpty || t.limitations.isEmpty) {
+        err(
+          RuleCodes.screeningWithoutConfirmation,
+          t.id,
+          'Screening test needs a confirmatory method and limitations.',
+        );
+      }
+      checkSourceRefs(
+        t.id,
+        [
+          t.cutoff?.sourceId,
+          t.sensitivity?.sourceId,
+          t.specificity?.sourceId,
+          t.storage?.sourceId,
+          for (final n in [
+            ...t.crossReactivity,
+            ...t.falsePositive,
+            ...t.falseNegative,
+            ...t.limitations,
+          ])
+            n.sourceId,
+        ].where((x) => x != null),
+      );
+      if (t.supportsDefinitiveIdentification) {
+        final src = sources[t.definitiveIdentificationSourceId];
+        final authoritative =
+            src != null &&
+            (src.sourceClass == SourceClass.primaryOfficial ||
+                src.sourceClass == SourceClass.standardGuideline);
+        if (!authoritative) {
+          err(
+            RuleCodes.definitiveIdWithoutAuthority,
+            t.id,
+            'Definitive identification requires an authoritative method.',
+          );
+        }
+      }
+    }
+
+    for (final m in b.methods) {
+      checkStatus(
+        m.id,
+        m.version,
+        m.status,
+        ContentDomain.lab,
+        m.sourceIds,
+        m.isTestData,
+      );
+      final org = m.organization != null && m.organization!.isNotEmpty;
+      final juris = m.jurisdictionId;
+      final mixing = switch (m.kind) {
+        MethodKind.scientificMethod => juris != null,
+        MethodKind.internationalStandard =>
+          !org || (juris != null && juris != 'INT'),
+        MethodKind.nationalMethod => !org || juris == null || juris == 'INT',
+        MethodKind.institutionalSop => !org,
+      };
+      if (mixing) {
+        err(
+          RuleCodes.methodKindMixing,
+          m.id,
+          '${m.kind.name}: organization/jurisdiction do not match kind.',
+        );
+      }
+      if (m.sections.isNotEmpty && m.sourceIds.isEmpty) {
+        err(RuleCodes.unsourcedValue, m.id, 'Method text without a source.');
+      }
+      if (m.textOrigin == TextOrigin.openLicenseExcerpt &&
+          m.sourceIds.any(
+            (s) => sources[s]?.licenseMode != SourceLicenseMode.openReuse,
+          )) {
+        err(
+          RuleCodes.textLicense,
+          m.id,
+          'Excerpted text from a source that does not permit reuse.',
+        );
+      }
+      checkSourceRefs(m.id, m.sourceIds);
+    }
+
+    for (final e in b.emergingIssues) {
+      checkStatus(
+        e.id,
+        1,
+        e.status,
+        ContentDomain.tox,
+        e.sourceIds,
+        e.isTestData,
+      );
+      if (e.sourceIds.isEmpty || e.date == null) {
+        err(
+          RuleCodes.emergingWithoutProvenance,
+          e.id,
+          'Emerging issue needs a source and a date.',
+        );
+      }
+      checkSourceRefs(e.id, e.sourceIds);
+    }
+
+    for (final t in b.topics) {
+      _checkTestData(issues, t.id, t.isTestData, isProduction);
     }
   }
 }

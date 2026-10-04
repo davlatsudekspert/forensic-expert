@@ -3,6 +3,7 @@ import 'package:meta/meta.dart';
 import 'claim.dart';
 import 'enums.dart';
 import 'jurisdiction.dart';
+import 'knowledge.dart';
 import 'review.dart';
 import 'source.dart';
 
@@ -21,6 +22,12 @@ class ContentBundle {
     this.jurisdictions = const [],
     this.instruments = const [],
     this.jurisdictionalRules = const [],
+    this.authorities = const [],
+    this.recipes = const [],
+    this.screeningTests = const [],
+    this.methods = const [],
+    this.emergingIssues = const [],
+    this.topics = const [],
   });
 
   final BundleChannel channel;
@@ -36,4 +43,12 @@ class ContentBundle {
   final List<Jurisdiction> jurisdictions;
   final List<JurisdictionalInstrument> instruments;
   final List<JurisdictionalRule> jurisdictionalRules;
+  final List<Authority> authorities;
+
+  // PHASE 4 bilim sohalari.
+  final List<SolutionRecipe> recipes;
+  final List<ScreeningTest> screeningTests;
+  final List<MethodRecord> methods;
+  final List<EmergingIssue> emergingIssues;
+  final List<KnowledgeTopic> topics;
 }

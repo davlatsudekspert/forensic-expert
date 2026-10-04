@@ -36,12 +36,32 @@ class StatusResolver {
     return map;
   }
 
-  ScientificStatus resolve(Claim claim, List<Source> claimSources) {
-    final reviews = (_reviewsByClaim[claim.claimId] ?? const <Review>[])
-        .where((r) => r.claimVersion == claim.version)
-        .where((r) => r.domain == claim.domain)
+  ScientificStatus resolve(Claim claim, List<Source> claimSources) =>
+      resolveSubject(
+        subjectId: claim.claimId,
+        version: claim.version,
+        domain: claim.domain,
+        sources: claimSources,
+      );
+
+  /// Har qanday review qilinadigan obyekt (claim, yurisdiksion qoida,
+  /// reagent retsepti, skrining testi, metod) uchun status.
+  ///
+  /// **Domen chegarasi:** faqat [domain] bo‘yicha huquqi bor reviewer’ning
+  /// review’i hisoblanadi — legal reviewer ilmiy claim’ni, ilmiy reviewer
+  /// davlat qonunini, tarjima reviewer’i esa hech birini tasdiqlay olmaydi.
+  ScientificStatus resolveSubject({
+    required String subjectId,
+    required int version,
+    required ContentDomain domain,
+    required List<Source> sources,
+  }) {
+    final claimSources = sources;
+    final reviews = (_reviewsByClaim[subjectId] ?? const <Review>[])
+        .where((r) => r.claimVersion == version)
+        .where((r) => r.domain == domain)
         .where(_isQualified)
-        .where((r) => r.reviewerId != _authors[claim.claimId])
+        .where((r) => r.reviewerId != _authors[subjectId])
         .toList();
 
     if (reviews.any((r) => r.decision == ReviewDecision.reject)) {
@@ -55,7 +75,7 @@ class StatusResolver {
     if (approvers.isEmpty) return ScientificStatus.needsReview;
 
     final hasSenior = approvers.any(
-      (id) => _reviewers[id]!.grantFor(claim.domain)!.canVerify,
+      (id) => _reviewers[id]!.grantFor(domain)!.canVerify,
     );
     final identifiersOk = claimSources
         .where((s) => s.hasPersistentIdentifier)

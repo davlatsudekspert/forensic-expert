@@ -1054,4 +1054,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get diagPurchaseServer => 'Xarid: server tomonidan tekshirilgan';
+
+  @override
+  String get statusDraft => 'Qoralama';
 }

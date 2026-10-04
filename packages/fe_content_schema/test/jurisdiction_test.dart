@@ -223,7 +223,7 @@ void main() {
       ],
       reviewers: const [toxReviewerSenior, toxReviewer, fmReviewer],
       jurisdictions: jurisdictions,
-      instruments: instruments ?? [_inst()],
+      instruments: instruments ?? [_inst(status: ScientificStatus.needsReview)],
       jurisdictionalRules: rules,
     );
 
@@ -248,7 +248,9 @@ void main() {
 
     test('default claim is international scientific and valid', () {
       expect(testClaim().layer, KnowledgeLayer.internationalScientific);
-      final report = validator.validate(bundle(rules: [_rule()]));
+      final report = validator.validate(
+        bundle(rules: [_rule(status: ScientificStatus.needsReview)]),
+      );
       expect(report.isValid, isTrue, reason: report.issues.join('\n'));
     });
 
@@ -297,14 +299,25 @@ void main() {
 
     test('FE014: instrument without a known official source', () {
       final report = validator.validate(
-        bundle(instruments: [_inst(sourceId: 'TEST-SRC-MISSING')]),
+        bundle(
+          instruments: [
+            _inst(
+              status: ScientificStatus.needsReview,
+              sourceId: 'TEST-SRC-MISSING',
+            ),
+          ],
+        ),
       );
       expect(report.hasCode(RuleCodes.instrumentWithoutOfficialSource), isTrue);
     });
 
     test('FE014: instrument without a version', () {
       final report = validator.validate(
-        bundle(instruments: [_inst(version: '')]),
+        bundle(
+          instruments: [
+            _inst(status: ScientificStatus.needsReview, version: ''),
+          ],
+        ),
       );
       expect(report.hasCode(RuleCodes.instrumentWithoutOfficialSource), isTrue);
     });
@@ -313,7 +326,11 @@ void main() {
       final report = validator.validate(
         bundle(
           instruments: [
-            _inst(from: DateTime.utc(2024), to: DateTime.utc(2023)),
+            _inst(
+              status: ScientificStatus.needsReview,
+              from: DateTime.utc(2024),
+              to: DateTime.utc(2023),
+            ),
           ],
         ),
       );
@@ -322,7 +339,14 @@ void main() {
 
     test('FE015: rule starts before its instrument', () {
       final report = validator.validate(
-        bundle(rules: [_rule(from: DateTime.utc(2019))]),
+        bundle(
+          rules: [
+            _rule(
+              status: ScientificStatus.needsReview,
+              from: DateTime.utc(2019),
+            ),
+          ],
+        ),
       );
       expect(report.hasCode(RuleCodes.invalidEffectivePeriod), isTrue);
     });
@@ -331,8 +355,15 @@ void main() {
       final report = validator.validate(
         bundle(
           claims: [legalClaim(jurisdictionId: 'XQ')],
-          instruments: [_inst(jurisdictionId: 'XQ')],
-          rules: [_rule(instrumentId: 'TEST-INST-NONE')],
+          instruments: [
+            _inst(status: ScientificStatus.needsReview, jurisdictionId: 'XQ'),
+          ],
+          rules: [
+            _rule(
+              status: ScientificStatus.needsReview,
+              instrumentId: 'TEST-INST-NONE',
+            ),
+          ],
           jurisdictions: const [
             _int,
             _xa,

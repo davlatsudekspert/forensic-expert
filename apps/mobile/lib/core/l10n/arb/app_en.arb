@@ -1354,5 +1354,9 @@
   "diagPurchaseServer": "Purchase: verified by the server",
   "@diagPurchaseServer": {
     "description": "Diagnostics (debug/profile only)."
+  },
+  "statusDraft": "Draft",
+  "@statusDraft": {
+    "description": "Scientific status: draft, not yet submitted for review."
   }
 }

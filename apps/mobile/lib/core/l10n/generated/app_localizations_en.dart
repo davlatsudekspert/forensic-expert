@@ -1053,4 +1053,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get diagPurchaseServer => 'Purchase: verified by the server';
+
+  @override
+  String get statusDraft => 'Draft';
 }

@@ -1953,6 +1953,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Purchase: verified by the server'**
   String get diagPurchaseServer;
+
+  /// Scientific status: draft, not yet submitted for review.
+  ///
+  /// In en, this message translates to:
+  /// **'Draft'**
+  String get statusDraft;
 }
 
 class _AppLocalizationsDelegate

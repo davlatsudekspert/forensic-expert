@@ -10,6 +10,7 @@ export 'src/concentration.dart';
 export 'src/enums.dart';
 export 'src/identifiers.dart';
 export 'src/jurisdiction.dart';
+export 'src/knowledge.dart';
 export 'src/review.dart';
 export 'src/source.dart';
 export 'src/status_resolver.dart';

@@ -65,6 +65,33 @@ class Jurisdiction {
   String name(String lang) => names[lang] ?? names['en'] ?? id;
 }
 
+/// Hujjat chiqargan vakolatli organ (parlament, vazirlik, BMT organi…).
+@immutable
+class Authority {
+  const Authority({
+    required this.id,
+    required this.jurisdictionId,
+    required this.names,
+  });
+
+  final String id;
+  final String jurisdictionId;
+  final Map<String, String> names;
+}
+
+/// Hujjatning huquqiy holati.
+enum InstrumentLegalStatus { inForce, amended, superseded, repealed }
+
+/// Ma’lumot turlari — hech biri boshqasidan **xulosa qilinmaydi**.
+enum LegalLayerKind {
+  internationalStandard,
+  internationalControl,
+  nationalLaw,
+  regionalLaw,
+  nationalMethod,
+  institutionalProcedure,
+}
+
 /// Rasmiy hujjat turi.
 enum InstrumentType {
   law,
@@ -94,11 +121,25 @@ class JurisdictionalInstrument {
     this.effectiveTo,
     this.lastVerifiedAt,
     this.isTestData = false,
+    this.authorityId,
+    this.publicationDate,
+    this.lastAmendedAt,
+    this.legalStatus = InstrumentLegalStatus.inForce,
+    this.language,
+    this.translationStatus,
   });
 
   final String id;
   final String jurisdictionId;
   final InstrumentType type;
+  final String? authorityId;
+  final DateTime? publicationDate;
+  final DateTime? lastAmendedAt;
+  final InstrumentLegalStatus legalStatus;
+
+  /// Rasmiy matn tili (ISO 639-1).
+  final String? language;
+  final TranslationStatus? translationStatus;
   final Map<String, String> titles;
 
   /// `Source.sourceId` — rasmiy huquqiy bazadagi manba (masalan lex.uz).
@@ -118,9 +159,29 @@ class JurisdictionalInstrument {
   final bool isTestData;
 
   bool isInForceAt(DateTime date) =>
+      legalStatus != InstrumentLegalStatus.repealed &&
+      legalStatus != InstrumentLegalStatus.superseded &&
       !date.isBefore(effectiveFrom) &&
       (effectiveTo == null || date.isBefore(effectiveTo!));
 }
+
+/// Hujjat qaysi qatlamga tegishli — yurisdiksiya darajasi va hujjat
+/// turidan **aniq** aniqlanadi (taxmin yo‘q).
+LegalLayerKind legalLayerOf(
+  JurisdictionalInstrument instrument,
+  JurisdictionLevel level,
+) => switch ((level, instrument.type)) {
+  (_, InstrumentType.nationalMethod) => LegalLayerKind.nationalMethod,
+  (_, InstrumentType.officialGuideline)
+      when level == JurisdictionLevel.international =>
+    LegalLayerKind.internationalStandard,
+  (_, InstrumentType.standard) when level == JurisdictionLevel.international =>
+    LegalLayerKind.internationalStandard,
+  (JurisdictionLevel.international || JurisdictionLevel.supranational, _) =>
+    LegalLayerKind.internationalControl,
+  (JurisdictionLevel.subdivision, _) => LegalLayerKind.regionalLaw,
+  (JurisdictionLevel.country, _) => LegalLayerKind.nationalLaw,
+};
 
 /// Yurisdiksion qoida turi.
 enum JurisdictionalRuleType {
@@ -148,10 +209,29 @@ class JurisdictionalRule {
     required this.status,
     this.effectiveTo,
     this.isTestData = false,
+    this.articleSection,
+    this.version = 1,
+    this.topicKey,
+    this.appliesTo,
   });
 
   final String id;
   final String instrumentId;
+
+  /// Bir xil mavzudagi qoidalar kaliti (masalan `drink_drive.prescribed_limit`).
+  /// Zanjirda bir xil kalit bo‘lsa — **eng aniq** yurisdiksiya qoidasi
+  /// amal qiladi (hudud > davlat > xalqaro).
+  final String? topicKey;
+
+  /// Hududiy qamrov: `null` — butun yurisdiksiya; aks holda faqat shu
+  /// hududlar (masalan RTA 1988 s.11: `{GB-ENG, GB-WLS, GB-SCT}`).
+  final Set<String>? appliesTo;
+
+  /// Hujjat ichidagi aniq joy (masalan «s.11(2)», «2-modda»).
+  final String? articleSection;
+
+  /// Qoida yozuvi versiyasi (review shu versiyaga bog‘lanadi).
+  final int version;
   final JurisdictionalRuleType ruleType;
 
   /// Masalan `substance`.
@@ -175,6 +255,7 @@ class JurisdictionView {
     required this.jurisdiction,
     required this.chain,
     required this.rules,
+    this.overridden = const [],
   });
 
   final Jurisdiction jurisdiction;
@@ -184,6 +265,9 @@ class JurisdictionView {
 
   /// Shu sanada kuchda bo‘lgan va publish qilish mumkin bo‘lgan qoidalar.
   final List<(JurisdictionalRule, JurisdictionalInstrument)> rules;
+
+  /// Aniqroq yurisdiksiya qoidasi bilan almashtirilgan qoidalar (shaffoflik).
+  final List<(JurisdictionalRule, JurisdictionalInstrument)> overridden;
 }
 
 /// Yurisdiksiya qatlamini hal qiluvchi.
@@ -205,6 +289,10 @@ class JurisdictionResolver {
   final Map<String, Jurisdiction> _jurisdictions;
   final Map<String, JurisdictionalInstrument> _instruments;
   final List<JurisdictionalRule> _rules;
+
+  Iterable<JurisdictionalRule> get rules => _rules;
+
+  Iterable<JurisdictionalInstrument> get instruments => _instruments.values;
 
   /// Barcha ma’lum yurisdiksiyalar (tanlash ro‘yxati uchun).
   Iterable<Jurisdiction> get jurisdictions => _jurisdictions.values;
@@ -230,25 +318,91 @@ class JurisdictionResolver {
     required String subjectType,
     required String subjectId,
     required DateTime at,
+    bool includeUnreviewed = false,
   }) {
     final chain = chainOf(jurisdictionId);
     if (chain.isEmpty) return null;
     final ids = {for (final j in chain) j.id};
+    final depth = {for (var i = 0; i < chain.length; i++) chain[i].id: i};
     final result = <(JurisdictionalRule, JurisdictionalInstrument)>[];
     for (final r in _rules) {
       if (r.subjectType != subjectType || r.subjectId != subjectId) continue;
-      if (!r.status.isPublishable || !r.isInForceAt(at)) continue;
+      if (!_shown(r.status, includeUnreviewed) || !r.isInForceAt(at)) {
+        continue;
+      }
       final inst = _instruments[r.instrumentId];
       if (inst == null || !ids.contains(inst.jurisdictionId)) continue;
-      if (!inst.status.isPublishable || !inst.isInForceAt(at)) continue;
+      if (!_shown(inst.status, includeUnreviewed) || !inst.isInForceAt(at)) {
+        continue;
+      }
+      // Hududiy qamrov: tanlangan hudud qoida qamrovida bo‘lmasa — o‘tadi.
+      final applies = r.appliesTo;
+      if (applies != null &&
+          inst.jurisdictionId != chain.first.id &&
+          !applies.contains(chain.first.id)) {
+        continue;
+      }
       result.add((r, inst));
+    }
+    // Bir xil topicKey: eng aniq yurisdiksiya ustun; qolganlari overridden.
+    final best = <String, int>{};
+    for (final (r, i) in result) {
+      final k = r.topicKey;
+      if (k == null) continue;
+      final d = depth[i.jurisdictionId]!;
+      if (!best.containsKey(k) || d < best[k]!) best[k] = d;
+    }
+    final kept = <(JurisdictionalRule, JurisdictionalInstrument)>[];
+    final overridden = <(JurisdictionalRule, JurisdictionalInstrument)>[];
+    for (final e in result) {
+      final k = e.$1.topicKey;
+      if (k != null && depth[e.$2.jurisdictionId]! > best[k]!) {
+        overridden.add(e);
+      } else {
+        kept.add(e);
+      }
     }
     return JurisdictionView(
       jurisdiction: chain.first,
       chain: chain,
-      rules: result,
+      rules: kept,
+      overridden: overridden,
     );
   }
+
+  /// Development kanalida tekshirilmagan qoidalar UI’da belgisi bilan
+  /// ko‘rsatilishi mumkin; production’da faqat publishable.
+  static bool _shown(ScientificStatus s, bool includeUnreviewed) =>
+      s.isPublishable ||
+      (includeUnreviewed &&
+          (s == ScientificStatus.needsReview || s == ScientificStatus.draft));
+
+  /// «Compare jurisdictions»: har bir yurisdiksiya uchun **faqat o‘z
+  /// zanjiridagi manbali qoidalar**. Qoida yo‘q bo‘lsa — [ComparisonCell.noData]
+  /// (hech qachon «ruxsat / taqiqlangan / nazoratda emas» deb xulosa
+  /// qilinmaydi).
+  List<ComparisonCell> compareCells({
+    required List<String> jurisdictionIds,
+    required String subjectType,
+    required String subjectId,
+    required DateTime at,
+    bool includeUnreviewed = false,
+  }) => [
+    for (final id in jurisdictionIds)
+      if (_jurisdictions[id] case final j?)
+        () {
+          final v = view(
+            jurisdictionId: id,
+            subjectType: subjectType,
+            subjectId: subjectId,
+            at: at,
+            includeUnreviewed: includeUnreviewed,
+          )!;
+          return v.rules.isEmpty
+              ? ComparisonCell.noData(j)
+              : ComparisonCell(j, v.rules);
+        }(),
+  ];
 
   /// Bir nechta yurisdiksiyani yonma-yon solishtirish (kelajak funksiyasi).
   List<JurisdictionView> compare({
@@ -265,4 +419,18 @@ class JurisdictionResolver {
         at: at,
       ),
   ];
+}
+
+/// Solishtirish katakchasi.
+@immutable
+class ComparisonCell {
+  const ComparisonCell(this.jurisdiction, this.rules);
+
+  /// Ma’lumot yo‘q — xulosa ham yo‘q.
+  const ComparisonCell.noData(this.jurisdiction) : rules = const [];
+
+  final Jurisdiction jurisdiction;
+  final List<(JurisdictionalRule, JurisdictionalInstrument)> rules;
+
+  bool get hasData => rules.isNotEmpty;
 }
