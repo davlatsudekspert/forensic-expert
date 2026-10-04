@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
+import 'package:forensic_expert/data/content/content_library_repository.dart';
 
+import '../helpers/fake_store.dart';
+import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 
 /// PHASE 2 vizual regressiya to‘plami (CI’da ishlaydi).
@@ -133,4 +137,58 @@ void main() {
       );
     });
   }
+
+  // PHASE 3: haqiqiy pilot paket (TEST fixture’siz).
+  group('pilot kontent', () {
+    late ContentLibraryRepository repo;
+    setUpAll(() async => repo = await loadPilotLibrary());
+
+    final pilot = <(String, AppSettings, String, bool, Size)>[
+      (
+        'pilot_entry_free_en',
+        s('en'),
+        Routes.libraryEntry('methanol'),
+        false,
+        std,
+      ),
+      (
+        'pilot_entry_locked_ru_dark',
+        s('ru', theme: dark),
+        Routes.libraryEntry('morphine'),
+        false,
+        std,
+      ),
+      (
+        'pilot_entry_lifetime_uz',
+        s('uz'),
+        Routes.libraryEntry('morphine'),
+        true,
+        std,
+      ),
+      ('pilot_library_en_320', s('en'), Routes.library, false, small),
+    ];
+    for (final (name, settings, route, owned, size) in pilot) {
+      testWidgets(name, (tester) async {
+        await pumpApp(
+          tester,
+          settings: settings,
+          size: size,
+          initialLocation: route,
+          pixelRatio: 1.5,
+          testFixtures: false,
+          overrides: [
+            libraryRepositoryProvider.overrideWithValue(repo),
+            entitlementServiceProvider.overrideWithValue(
+              FakeStore(owned: owned),
+            ),
+          ],
+        );
+        await tester.pumpAndSettle();
+        await expectLater(
+          find.byType(MaterialApp),
+          matchesGoldenFile('goldens/$name.png'),
+        );
+      });
+    }
+  });
 }

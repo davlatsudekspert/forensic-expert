@@ -5,7 +5,8 @@
 | 2026-10-04 | PHASE 0 | ✅ Tugadi | Arxitektura va mahsulot rejasi: `docs/00_ARXITEKTURA_REJASI.md` |
 | 2026-10-04 | PHASE 0.5 | ✅ Tugadi | Evidence audit (72 band), raqobatchilar, source matrix, V1 scope, cost model (`docs/01`–`05`) |
 | 2026-10-04 | PHASE 1 | ✅ Tugadi va tasdiqlandi | Foundation: 5 ta paket + Flutter ilova, CI, l10n, dizayn tizimi, onboarding, abstraksiyalar, logo prototiplari. 322 test. Hisobot: `docs/08_PHASE1_FOUNDATION.md` |
-| 2026-10-04 | PHASE 2 | ✅ Tugadi — **egasi tasdig‘i kutilmoqda** | Product UI: barcha asosiy ekranlar, Global Search, AI prototipi (iqtiboslar UX), Student/Pro rejimlari, Profil, **FORENSIC EXPERT Lifetime** (bir martalik xarid) ekrani, HC mavzu, golden suite, Global Scientific Core + Jurisdiction Layer, logo R1–R3. 607 test (+1 skip). Hisobot: `docs/09_PHASE2_PRODUCT_UI.md`, `docs/10_GLOBAL_JURISDICTION_LAYER.md`. **PHASE 3 boshlanmagan** |
+| 2026-10-04 | PHASE 2 | ✅ Tugadi va tasdiqlandi | Product UI: barcha asosiy ekranlar, Global Search, AI prototipi (iqtiboslar UX), Student/Pro rejimlari, Profil, **FORENSIC EXPERT Lifetime** (bir martalik xarid) ekrani, HC mavzu, golden suite, Global Scientific Core + Jurisdiction Layer, logo R1–R3. 607 test (+1 skip). Hisobot: `docs/09_PHASE2_PRODUCT_UI.md`, `docs/10_GLOBAL_JURISDICTION_LAYER.md`. |
+| 2026-10-04 | PHASE 3 | ✅ Tugadi — **egasi tasdig‘i kutilmoqda** | Pilot kontent: 18 modda + 2 bog‘liq yozuv, 38 claim, 40 manba (barchasi NEEDS_REVIEW). Kontent pipeline, imzolangan paket, provenance UI, Lifetime (store tasdig‘i, Restore, server tekshiruvi porti), bepul demo, R2 brend. Hisobot: `docs/11_PHASE3_PILOT_CONTENT.md`, `docs/12_PURCHASE_VERIFICATION.md`. **PHASE 4 boshlanmagan** |
 
 ## Branch’lar (main’ga merge qilinmagan)
 
@@ -15,6 +16,7 @@
 | `claude/phase-0-5-evidence-audit` | PHASE 0.5 (PHASE 0 ustiga) |
 | `claude/phase-1-foundation` | PHASE 1 (PHASE 0.5 ustiga) |
 | `claude/phase-2-product-ui` | PHASE 2 (PHASE 1 ustiga) |
+| `claude/phase-3-pilot-content` | PHASE 3 (PHASE 2 ustiga) |
 
 ## RELEASE GATES (public release’dan oldin majburiy; development’ni to‘xtatmaydi)
 
@@ -31,10 +33,13 @@
 | RG-09 | Application/Bundle ID va yuridik shaxs — yakuniy | ⛔ OCHIQ | `docs/08` R-05 |
 | RG-10 | Real qurilmada perf, TalkBack/VoiceOver tekshiruvi | ⛔ OCHIQ | `docs/08` R-04 |
 | RG-11 | RU/UZ UI tarjimalari va disclaimer matnlari review (PHASE 2 kalitlari va yurisdiksiya nomlari ham) | ⛔ OCHIQ | `docs/08` 8-bo‘lim, `docs/09` 9-bo‘lim |
-| RG-12 | Production build’da TEST fixture’lar o‘chirilgan (`--dart-define=FE_TEST_FIXTURES=false`) va ilovada TEST DATA ko‘rinmaydi | ⛔ OCHIQ | `docs/09` R-P2-02 |
+| RG-12 | Production build’da TEST fixture’lar o‘chirilgan va ilovada TEST DATA ko‘rinmaydi | ✅ PHASE 3: fixture’lar standart o‘chiq (faqat testlarda) | `docs/11` 4-bo‘lim |
 | RG-13 | Privacy Policy, Terms of Use, About — DRAFT matnlar yuridik review’dan o‘tishi | ⛔ OCHIQ | `docs/09` R-P2-05 |
-| RG-14 | Logo tanlovi (A3 / R1 / R2 / R3) — faqat egasi qarori, keyin trademark (RG-06) | ⛔ OCHIQ | `design/logo/refined/REFINED_VARIANTS.md` |
+| RG-14 | Logo tanlovi — egasi R2 ni tanladi; trademark (RG-06) tugamaguncha yuridik tasdiqlanmagan | ⏳ R2 tanlangan, RG-06 kutilmoqda | `design/logo/refined/REFINED_VARIANTS.md` |
 | RG-16 | Lifetime modeli: App Store Non-Consumable va Google Play one-time product (`fe_lifetime_unlock`) store’larda yaratish, narxni storefront’larda belgilash, `docs/05` xarajat/daromad modelini qayta hisoblash, AI kvota siyosatini aniqlash | ⛔ OCHIQ | `docs/09` 6-bo‘lim |
+| RG-17 | Public release yig‘masi `FE_CONTENT_CHANNEL=production` va review’dan o‘tgan, production kalit bilan imzolangan kontent paketi (hozirgi pilot — development, NEEDS_REVIEW) | ⛔ OCHIQ | `docs/11` 1, 4-bo‘lim |
+| RG-18 | **Lifetime xaridini server tomonida tekshirish** (App Store Server API, Google Play Developer API, refund/revocation) va `FE_REQUIRE_SERVER_PURCHASE_VERIFICATION=true`. Hozir faqat store tasdig‘i — production-secure EMAS | ⛔ OCHIQ — **SECURITY / RELEASE BLOCKER** | `docs/12` |
+| RG-19 | Pilot claim’lar uchun tox/fm/lab reviewerlar (four-eyes) va RU/UZ nomlar review’i; PubChem stereoizomer CID’lari (tramadol, metamfetamin) va AlP CID tekshiruvi | ⛔ OCHIQ | `docs/11` 2-bo‘lim |
 | RG-15 | Har bir yurisdiksiya kontenti uchun legal reviewer va rasmiy manba; «Compare jurisdictions» faqat tekshirilgan kontent bilan | ⛔ OCHIQ | `docs/10` 7-bo‘lim |
 
 ## PHASE 1 — majburiy tekshiruvlar
@@ -63,4 +68,8 @@
 | Offline | ✅ tarmoq taqiqlangan holda barcha ekranlar |
 | Performance | ⚠️ Faqat Linux desktop (profile, software render) va host VM’da o‘lchandi. Mobil qurilmada o‘lchanmagan (RG-10) |
 | CI | ✅ GitHub Actions run #4 — barcha joblar yashil (`docs/09` 13-bo‘lim) |
+
+## PHASE 3 — majburiy tekshiruvlar
+
+(yakuniy natijalar `docs/11` va yakuniy hisobotda)
 
