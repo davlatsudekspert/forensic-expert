@@ -158,3 +158,20 @@
 | Perf | ⚠️ Host VM (`docs/perf/phase7_raw.txt`); qurilmada emas (RG-10) |
 | Lifetime server tekshiruvi | ⛔ Arxitektura + mock testlar; haqiqiy tekshiruv yo‘q — RG-18 SECURITY / RELEASE BLOCKER |
 | **HUMAN VERIFIED** | **0** — reviewer qatnashmagan |
+
+## PHASE 8–12 — majburiy tekshiruvlar
+
+| Tekshiruv | Natija |
+|---|---|
+| flutter analyze / dart analyze packages (`--fatal-infos`) / format | ✅ toza |
+| Avtomatik testlar | ✅ 1253 PASS (ilova 1002 + paketlar 251), 0 FAIL, 1 SKIP |
+| Yakuniy UI auditi (320dp ×2.0, EN/RU/UZ) | ✅ 45 test; 1 overflow topilib tuzatildi |
+| Kontent validator | ✅ development — 0 xato; production — 633 × FE008 (kutilgan) |
+| Security: gitleaks / OSV | ✅ leak yo‘q / zaiflik yo‘q |
+| Android AAB/APK | ✅ quriladi; ⚠️ DEBUG imzo (RG-20) — CI artefakti, private |
+| iOS | ✅ macOS CI kompilyatsiya + imzosiz arxiv; ⛔ TestFlight — credentials yo‘q (RG-24) |
+| Impeccable | NOT AVAILABLE |
+| Lifetime server tekshiruvi | ⛔ RG-18 — faqat mock |
+| **HUMAN VERIFIED** | **0** |
+
+Hujjatlar: `docs/31`–`34`, `docs/FINAL_RELEASE_REPORT.md`, `docs/FINAL_RELEASE_CHECKLIST.md`, `docs/FINAL_ARTIFACT_MANIFEST.md`, `docs/store/`.

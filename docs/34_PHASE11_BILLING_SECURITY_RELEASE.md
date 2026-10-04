@@ -69,6 +69,7 @@ Narx kodda yo‘q — faqat store’dan (`ProductDetails.price`). Rejalashtirilg
 * `PrivacyInfo.xcprivacy` (tracking yo‘q, ma’lumot yig‘ilmaydi, UserDefaults CA92.1) Runner target’ga qo‘shilgan; `ITSAppUsesNonExemptEncryption=false`.
 * CI (`ios` job, macos-15): `pod install` → `flutter build ios --release --no-codesign` → `flutter build ipa --release --no-codesign` → **imzosiz** xcarchive artefakti.
 * Imzo + TestFlight: faqat qo‘lda (`workflow_dispatch`, `testflight=true`) va barcha sirlar bo‘lsa: `ASC_KEY_ID`, `ASC_ISSUER_ID`, `ASC_PRIVATE_KEY`, `APPLE_TEAM_ID` (`tool/ios_testflight.sh`; kalit vaqtinchalik katalogda, chop etilmaydi). App Review’ga yuborilmaydi.
+* CI natijasi (run 37239093623, commit a937da4): kompilyatsiya ✅, imzosiz xcarchive ✅ (artefakt ID 11316539373).
 * Sirlar mavjud emas → **TESTFLIGHT UPLOAD BLOCKED BY CREDENTIALS**.
 
 ## Store metadata
