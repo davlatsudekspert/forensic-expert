@@ -52,6 +52,49 @@ abstract final class ToolsCatalog {
     engineId: 'lab.solution.mass_required',
   );
 
+  static const molarity = ToolEntry(
+    id: 'tool.lab.molarity',
+    category: ToolCategory.laboratory,
+    availability: ToolAvailability.available,
+    engineId: 'lab.molarity.from_mass',
+  );
+
+  static const percent = ToolEntry(
+    id: 'tool.lab.percent',
+    category: ToolCategory.laboratory,
+    availability: ToolAvailability.available,
+    engineId: 'lab.percent.solute_amount',
+  );
+
+  static const calibration = ToolEntry(
+    id: 'tool.lab.calibration',
+    category: ToolCategory.laboratory,
+    availability: ToolAvailability.available,
+    engineId: 'stats.linear_regression',
+  );
+
+  /// ICH Q2(R1) 6.3 / 7.3 — manbali koeffitsientlar.
+  static const lodLoq = ToolEntry(
+    id: 'tool.lab.lod_loq',
+    category: ToolCategory.laboratory,
+    availability: ToolAvailability.available,
+    engineId: 'stats.lod_loq.ich',
+  );
+
+  static const stats = ToolEntry(
+    id: 'tool.lab.descriptive_stats',
+    category: ToolCategory.laboratory,
+    availability: ToolAvailability.available,
+    engineId: 'stats.descriptive',
+  );
+
+  static const units = ToolEntry(
+    id: 'tool.conv.concentration_units',
+    category: ToolCategory.conversions,
+    availability: ToolAvailability.available,
+    engineId: 'lab.concentration.convert',
+  );
+
   static const all = <ToolEntry>[
     ToolEntry(
       id: 'tool.fm.pmi_henssge',
@@ -71,31 +114,12 @@ abstract final class ToolsCatalog {
     ),
     dilution,
     solution,
-    ToolEntry(
-      id: 'tool.lab.molarity',
-      category: ToolCategory.laboratory,
-      availability: ToolAvailability.planned,
-    ),
-    ToolEntry(
-      id: 'tool.lab.calibration',
-      category: ToolCategory.laboratory,
-      availability: ToolAvailability.planned,
-    ),
-    ToolEntry(
-      id: 'tool.lab.lod_loq',
-      category: ToolCategory.laboratory,
-      availability: ToolAvailability.planned,
-    ),
-    ToolEntry(
-      id: 'tool.lab.descriptive_stats',
-      category: ToolCategory.laboratory,
-      availability: ToolAvailability.planned,
-    ),
-    ToolEntry(
-      id: 'tool.conv.concentration_units',
-      category: ToolCategory.conversions,
-      availability: ToolAvailability.planned,
-    ),
+    percent,
+    molarity,
+    calibration,
+    lodLoq,
+    stats,
+    units,
     ToolEntry(
       id: 'tool.conv.ethanol_units',
       category: ToolCategory.conversions,

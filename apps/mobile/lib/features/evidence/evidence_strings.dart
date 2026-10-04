@@ -15,6 +15,9 @@ extension EvidenceStrings on AppLocalizations {
     ResearchKind.thesis => researchKindThesis,
     ResearchKind.officialReport => researchKindOfficialReport,
     ResearchKind.standard => researchKindStandard,
+    ResearchKind.guideline => researchKindGuideline,
+    ResearchKind.validationStudy => researchKindValidationStudy,
+    ResearchKind.caseSeries => researchKindCaseSeries,
   };
 
   String licenseName(String license) => switch (license) {
@@ -49,6 +52,10 @@ extension EvidenceStrings on AppLocalizations {
     AnalyticalTechnique.gcFid => tech_gcFid,
     AnalyticalTechnique.headspaceGc => tech_headspaceGc,
     AnalyticalTechnique.gcMs => tech_gcMs,
+    AnalyticalTechnique.gcMsMs => tech_gcMsMs,
+    AnalyticalTechnique.lcMs => tech_lcMs,
+    AnalyticalTechnique.hrms => tech_hrms,
+    AnalyticalTechnique.spectrophotometry => tech_spectrophotometry,
     AnalyticalTechnique.hplc => tech_hplc,
     AnalyticalTechnique.lcMsMs => tech_lcMsMs,
     AnalyticalTechnique.uvVis => tech_uvVis,

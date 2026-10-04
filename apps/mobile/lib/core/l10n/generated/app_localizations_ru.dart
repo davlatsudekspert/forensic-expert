@@ -304,7 +304,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get toolMolarityDesc =>
-      'Пересчёт массовой концентрации в молярную и обратно.';
+      'Молярная концентрация по навеске, молярной массе и объёму.';
 
   @override
   String get toolCalibrationName => 'Калибровка и линейная регрессия';
@@ -330,7 +330,8 @@ class AppLocalizationsRu extends AppLocalizations {
   String get toolUnitsName => 'Пересчёт единиц концентрации';
 
   @override
-  String get toolUnitsDesc => 'мг/л, мкг/мл, нг/мл, ммоль/л и др.';
+  String get toolUnitsDesc =>
+      'мг/л, мкг/мл, нг/мл, ммоль/л; массовая ↔ молярная при заданной молярной массе.';
 
   @override
   String get toolEthanolUnitsName => 'Пересчёт единиц этанола';
@@ -1973,4 +1974,228 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get methodSection_validationStatus => 'Статус валидации';
+
+  @override
+  String get toolPercentName => 'Процентные растворы';
+
+  @override
+  String get toolPercentDesc =>
+      'Количество вещества для % (масс./об.), (об./об.) или (масс./масс.) по определению.';
+
+  @override
+  String get calcValue => 'Значение';
+
+  @override
+  String get calcFrom => 'Из';
+
+  @override
+  String get calcTo => 'В';
+
+  @override
+  String get calcConvertAssumption =>
+      'Приставки единиц — определения СИ; пересчёт массовой ↔ молярной использует ρ = c · M.';
+
+  @override
+  String get calcConvertLimitation =>
+      'Молярная масса должна браться из сертификата или проверенных идентификационных данных; калькулятор её не оценивает.';
+
+  @override
+  String get calcMolarityMass => 'Навеска';
+
+  @override
+  String get calcMolarityVolume => 'Конечный объём';
+
+  @override
+  String get calcMolarityResult => 'Молярная концентрация';
+
+  @override
+  String get calcMolarityAssumption =>
+      'Определение молярной концентрации: c = n / V, где n = m · p / M.';
+
+  @override
+  String get calcPercentBasis => 'Тип процентной концентрации';
+
+  @override
+  String get calcPercentWv => '% (масс./об.) — г на 100 мл';
+
+  @override
+  String get calcPercentVv => '% (об./об.) — мл на 100 мл';
+
+  @override
+  String get calcPercentWw => '% (масс./масс.) — г на 100 г';
+
+  @override
+  String get calcPercentValue => 'Процент (%)';
+
+  @override
+  String get calcPercentTotalMl => 'Общий объём раствора (мл)';
+
+  @override
+  String get calcPercentTotalG => 'Общая масса раствора (г)';
+
+  @override
+  String get calcPercentSolute => 'Количество растворённого вещества';
+
+  @override
+  String get calcPercentAssumption =>
+      'Определения процентной концентрации — как указано для каждого типа.';
+
+  @override
+  String get calcPercentLimitationBasis =>
+      'масс./об., об./об. и масс./масс. не взаимозаменяемы — используйте тип, указанный в валидированной методике или СОП.';
+
+  @override
+  String get calcErrorPercent => 'Введите процент больше 0 и не более 100.';
+
+  @override
+  String get calcStatsValues =>
+      'Значения (через пробел, запятую или с новой строки)';
+
+  @override
+  String get calcStatsN => 'n';
+
+  @override
+  String get calcStatsMean => 'Среднее';
+
+  @override
+  String get calcStatsMedian => 'Медиана';
+
+  @override
+  String get calcStatsSd => 'СО (n − 1)';
+
+  @override
+  String get calcStatsCv => 'КВ %';
+
+  @override
+  String get calcStatsMin => 'Минимум';
+
+  @override
+  String get calcStatsMax => 'Максимум';
+
+  @override
+  String get calcStatsAssumption =>
+      'Выборочное стандартное отклонение со знаменателем n − 1.';
+
+  @override
+  String get calcStatsLimitation =>
+      'Проверка выбросов и нормальности не выполняется.';
+
+  @override
+  String get calcStatsWarnSd => 'Для СО и КВ нужно не менее двух значений.';
+
+  @override
+  String get calcErrorValues => 'Введите только числовые значения.';
+
+  @override
+  String get calcRegPoints => 'Точки калибровки (по одной паре «x y» в строке)';
+
+  @override
+  String get calcRegSlope => 'Наклон (b)';
+
+  @override
+  String get calcRegIntercept => 'Свободный член (a)';
+
+  @override
+  String get calcRegR2 => 'R²';
+
+  @override
+  String get calcRegSyx => 'Остаточное СО (s_y/x)';
+
+  @override
+  String get calcRegAssumptionOls =>
+      'Метод наименьших квадратов без весов, y = a + b·x.';
+
+  @override
+  String get calcRegLimitationRange =>
+      'Справедливо только в пределах калибровочного диапазона; взвешивание и линейность определяются валидацией методики.';
+
+  @override
+  String get calcRegWarnFew =>
+      'Менее пяти точек калибровки — интерпретируйте с осторожностью.';
+
+  @override
+  String get calcErrorPoints => 'Введите не менее трёх пар «x y» с разными x.';
+
+  @override
+  String get calcLodSigma => 'Стандартное отклонение отклика (σ)';
+
+  @override
+  String get calcLodSlope => 'Наклон калибровочной кривой (S)';
+
+  @override
+  String get calcLodSigmaBasis => 'Источник σ';
+
+  @override
+  String get calcLodBasisBlank => 'СО откликов холостых проб';
+
+  @override
+  String get calcLodBasisResidual => 'Остаточное СО регрессии';
+
+  @override
+  String get calcLodBasisIntercept => 'СО свободных членов регрессий';
+
+  @override
+  String get calcLodLod => 'Предел обнаружения (DL = 3,3σ/S)';
+
+  @override
+  String get calcLodLoq => 'Предел количественного определения (QL = 10σ/S)';
+
+  @override
+  String get calcLodAssumptionSigma =>
+      'σ оценивается одним из подходов, названных в источнике: СО холостых проб, остаточное СО или СО свободных членов.';
+
+  @override
+  String get calcLodAssumptionLinear => 'Отклик линеен вблизи предела.';
+
+  @override
+  String get calcLodLimitationOne =>
+      'Это один из нескольких допустимых подходов; другие — визуальная оценка и отношение сигнал/шум.';
+
+  @override
+  String get calcLodLimitationVerify =>
+      'Источник требует подтверждать рассчитанные пределы анализом проб вблизи предела.';
+
+  @override
+  String get calcLodReference =>
+      'ICH Q2(R1) Validation of Analytical Procedures: Text and Methodology — §6.3, §7.3';
+
+  @override
+  String get calcLodReferenceNote =>
+      'Коэффициенты сверены с официальным PDF ICH. ICH Q2(R2) заменяет R1 — актуальную версию должен подтвердить рецензент.';
+
+  @override
+  String get calcUseRegression => 'Взять σ = s_y/x и S из этой регрессии';
+
+  @override
+  String get calcErrorSigma => 'Введите σ > 0 и ненулевой наклон.';
+
+  @override
+  String get researchKindGuideline => 'Руководство';
+
+  @override
+  String get researchKindValidationStudy => 'Валидационное исследование';
+
+  @override
+  String get researchKindCaseSeries => 'Серия случаев';
+
+  @override
+  String get tech_gcMsMs => 'ГХ-МС/МС';
+
+  @override
+  String get tech_lcMs => 'ЖХ-МС';
+
+  @override
+  String get tech_hrms => 'HRMS (масс-спектрометрия высокого разрешения)';
+
+  @override
+  String get tech_spectrophotometry => 'Спектрофотометрия';
+
+  @override
+  String get emergingCatBiomarkers => 'Новые биомаркеры';
+
+  @override
+  String get emergingCatMethods => 'Новые аналитические методы';
+
+  @override
+  String get emergingCatLegal => 'Правовые и регуляторные изменения';
 }

@@ -306,7 +306,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get toolMolarityDesc =>
-      'Massa va molyar konsentratsiya o‘rtasida o‘tkazish.';
+      'Tortilgan massa, molyar massa va hajmdan molyar konsentratsiya.';
 
   @override
   String get toolCalibrationName => 'Kalibrlash va chiziqli regressiya';
@@ -332,7 +332,8 @@ class AppLocalizationsUz extends AppLocalizations {
   String get toolUnitsName => 'Konsentratsiya birliklari konvertori';
 
   @override
-  String get toolUnitsDesc => 'mg/L, µg/mL, ng/mL, mmol/L va boshqalar.';
+  String get toolUnitsDesc =>
+      'mg/L, µg/mL, ng/mL, mmol/L; berilgan molyar massa bilan massa ↔ molyar.';
 
   @override
   String get toolEthanolUnitsName => 'Etanol birliklari konvertori';
@@ -1972,4 +1973,233 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get methodSection_validationStatus => 'Validatsiya holati';
+
+  @override
+  String get toolPercentName => 'Foizli eritmalar';
+
+  @override
+  String get toolPercentDesc =>
+      '% (w/v), (v/v) yoki (w/w) uchun ta’rif bo‘yicha erigan modda miqdori.';
+
+  @override
+  String get calcValue => 'Qiymat';
+
+  @override
+  String get calcFrom => 'Dan';
+
+  @override
+  String get calcTo => 'Ga';
+
+  @override
+  String get calcConvertAssumption =>
+      'Birlik prefikslari — SI ta’riflari; massa ↔ molyar o‘tish ρ = c · M dan foydalanadi.';
+
+  @override
+  String get calcConvertLimitation =>
+      'Molyar massa sertifikat yoki tekshirilgan identifikatsiya ma’lumotidan olinadi; kalkulyator uni taxmin qilmaydi.';
+
+  @override
+  String get calcMolarityMass => 'Tortilgan massa';
+
+  @override
+  String get calcMolarityVolume => 'Yakuniy hajm';
+
+  @override
+  String get calcMolarityResult => 'Molyar konsentratsiya';
+
+  @override
+  String get calcMolarityAssumption =>
+      'Molyar konsentratsiya ta’rifi: c = n / V, bunda n = m · p / M.';
+
+  @override
+  String get calcPercentBasis => 'Foiz turi';
+
+  @override
+  String get calcPercentWv => '% (w/v) — 100 mL da g';
+
+  @override
+  String get calcPercentVv => '% (v/v) — 100 mL da mL';
+
+  @override
+  String get calcPercentWw => '% (w/w) — 100 g da g';
+
+  @override
+  String get calcPercentValue => 'Foiz (%)';
+
+  @override
+  String get calcPercentTotalMl => 'Eritmaning umumiy hajmi (mL)';
+
+  @override
+  String get calcPercentTotalG => 'Eritmaning umumiy massasi (g)';
+
+  @override
+  String get calcPercentSolute => 'Erigan modda miqdori';
+
+  @override
+  String get calcPercentAssumption =>
+      'Har bir tur uchun ko‘rsatilgan foiz ta’riflari.';
+
+  @override
+  String get calcPercentLimitationBasis =>
+      'w/v, v/v va w/w o‘zaro almashtirilmaydi — validatsiyadan o‘tgan metod yoki SOP’dagi turni ishlating.';
+
+  @override
+  String get calcErrorPercent =>
+      '0 dan katta va 100 dan oshmaydigan foiz kiriting.';
+
+  @override
+  String get calcStatsValues =>
+      'Qiymatlar (bo‘sh joy, vergul yoki yangi qator bilan)';
+
+  @override
+  String get calcStatsN => 'n';
+
+  @override
+  String get calcStatsMean => 'O‘rtacha';
+
+  @override
+  String get calcStatsMedian => 'Mediana';
+
+  @override
+  String get calcStatsSd => 'SO (n − 1)';
+
+  @override
+  String get calcStatsCv => 'VK %';
+
+  @override
+  String get calcStatsMin => 'Minimum';
+
+  @override
+  String get calcStatsMax => 'Maksimum';
+
+  @override
+  String get calcStatsAssumption =>
+      'Maxraji n − 1 bo‘lgan tanlanma standart og‘ishi.';
+
+  @override
+  String get calcStatsLimitation =>
+      'Chetga chiquvchi qiymat yoki normallik tekshiruvi bajarilmaydi.';
+
+  @override
+  String get calcStatsWarnSd => 'SO va VK uchun kamida ikkita qiymat kerak.';
+
+  @override
+  String get calcErrorValues => 'Faqat sonli qiymatlar kiriting.';
+
+  @override
+  String get calcRegPoints =>
+      'Kalibrlash nuqtalari (har qatorda bitta «x y» juftligi)';
+
+  @override
+  String get calcRegSlope => 'Qiyalik (b)';
+
+  @override
+  String get calcRegIntercept => 'Kesishma (a)';
+
+  @override
+  String get calcRegR2 => 'R²';
+
+  @override
+  String get calcRegSyx => 'Qoldiq SO (s_y/x)';
+
+  @override
+  String get calcRegAssumptionOls =>
+      'Vaznsiz eng kichik kvadratlar usuli, y = a + b·x.';
+
+  @override
+  String get calcRegLimitationRange =>
+      'Faqat kalibrlangan diapazon ichida amal qiladi; vazn va chiziqlilik metod validatsiyasida belgilanadi.';
+
+  @override
+  String get calcRegWarnFew =>
+      'Kalibrlash nuqtalari beshtadan kam — ehtiyotkorlik bilan talqin qiling.';
+
+  @override
+  String get calcErrorPoints =>
+      'Kamida uchta turli x qiymatli «x y» juftligini kiriting.';
+
+  @override
+  String get calcLodSigma => 'Javob standart og‘ishi (σ)';
+
+  @override
+  String get calcLodSlope => 'Kalibrlash egri chizig‘i qiyaligi (S)';
+
+  @override
+  String get calcLodSigmaBasis => 'σ asosi';
+
+  @override
+  String get calcLodBasisBlank => 'Bo‘sh namunalar javobining SO';
+
+  @override
+  String get calcLodBasisResidual => 'Regressiya chizig‘ining qoldiq SO';
+
+  @override
+  String get calcLodBasisIntercept =>
+      'Regressiya chiziqlari y-kesishmalarining SO';
+
+  @override
+  String get calcLodLod => 'Aniqlash chegarasi (DL = 3,3σ/S)';
+
+  @override
+  String get calcLodLoq => 'Miqdoriy aniqlash chegarasi (QL = 10σ/S)';
+
+  @override
+  String get calcLodAssumptionSigma =>
+      'σ manbada keltirilgan usullardan biri bilan baholanadi: bo‘sh namuna SO, qoldiq SO yoki y-kesishmalar SO.';
+
+  @override
+  String get calcLodAssumptionLinear => 'Chegara yaqinida javob chiziqli.';
+
+  @override
+  String get calcLodLimitationOne =>
+      'Bu bir nechta qabul qilingan usuldan biri; boshqalari — vizual baho va signal/shovqin nisbati.';
+
+  @override
+  String get calcLodLimitationVerify =>
+      'Manba hisoblangan chegaralarni chegara yaqinidagi namunalarni tahlil qilib tasdiqlashni talab qiladi.';
+
+  @override
+  String get calcLodReference =>
+      'ICH Q2(R1) Validation of Analytical Procedures: Text and Methodology — §6.3, §7.3';
+
+  @override
+  String get calcLodReferenceNote =>
+      'Koeffitsientlar rasmiy ICH PDF matni bilan solishtirildi. ICH Q2(R2) R1 o‘rnini bosadi — amaldagi versiyani reviewer tasdiqlashi kerak.';
+
+  @override
+  String get calcUseRegression =>
+      'Shu regressiyadagi σ = s_y/x va S dan foydalanish';
+
+  @override
+  String get calcErrorSigma => 'σ > 0 va noldan farqli qiyalik kiriting.';
+
+  @override
+  String get researchKindGuideline => 'Qo‘llanma (guideline)';
+
+  @override
+  String get researchKindValidationStudy => 'Validatsiya tadqiqoti';
+
+  @override
+  String get researchKindCaseSeries => 'Holatlar seriyasi';
+
+  @override
+  String get tech_gcMsMs => 'GC-MS/MS';
+
+  @override
+  String get tech_lcMs => 'LC-MS';
+
+  @override
+  String get tech_hrms => 'HRMS (yuqori aniqlikdagi mass-spektrometriya)';
+
+  @override
+  String get tech_spectrophotometry => 'Spektrofotometriya';
+
+  @override
+  String get emergingCatBiomarkers => 'Yangi biomarkerlar';
+
+  @override
+  String get emergingCatMethods => 'Yangi analitik metodlar';
+
+  @override
+  String get emergingCatLegal => 'Huquqiy / normativ yangilanishlar';
 }

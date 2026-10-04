@@ -201,7 +201,10 @@ enum FeatureAccess {
 /// bo‘limdan haqiqiy demo bor, xavfsizlik va manbalar esa doim to‘liq.
 abstract final class AccessPolicy {
   /// Bepul demoda doim ochiq vositalar (katalog ID’lari).
-  static const freeToolIds = {'tool.lab.dilution'};
+  static const freeToolIds = {
+    'tool.lab.dilution',
+    'tool.conv.concentration_units',
+  };
 
   /// Bepul demoda kutubxonadan nechta yozuv to‘liq ochiq (har bo‘limda).
   static const freeEntriesPerSection = 3;

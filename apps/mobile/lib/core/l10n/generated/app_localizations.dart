@@ -637,7 +637,7 @@ abstract class AppLocalizations {
   /// Tool description.
   ///
   /// In en, this message translates to:
-  /// **'Convert between mass and molar concentration.'**
+  /// **'Molar concentration from weighed mass, molar mass and volume.'**
   String get toolMolarityDesc;
 
   /// Tool name.
@@ -685,7 +685,7 @@ abstract class AppLocalizations {
   /// Tool description.
   ///
   /// In en, this message translates to:
-  /// **'mg/L, µg/mL, ng/mL, mmol/L and more.'**
+  /// **'mg/L, µg/mL, ng/mL, mmol/L; mass ↔ molar with a supplied molar mass.'**
   String get toolUnitsDesc;
 
   /// Tool name.
@@ -3633,6 +3633,420 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Validation status'**
   String get methodSection_validationStatus;
+
+  /// Tool name.
+  ///
+  /// In en, this message translates to:
+  /// **'Percentage solutions'**
+  String get toolPercentName;
+
+  /// Tool description.
+  ///
+  /// In en, this message translates to:
+  /// **'Solute amount for % (w/v), (v/v) or (w/w) by definition.'**
+  String get toolPercentDesc;
+
+  /// Calculator input.
+  ///
+  /// In en, this message translates to:
+  /// **'Value'**
+  String get calcValue;
+
+  /// Calculator input.
+  ///
+  /// In en, this message translates to:
+  /// **'From'**
+  String get calcFrom;
+
+  /// Calculator input.
+  ///
+  /// In en, this message translates to:
+  /// **'To'**
+  String get calcTo;
+
+  /// Assumption.
+  ///
+  /// In en, this message translates to:
+  /// **'Unit prefixes are SI definitions; mass ↔ molar conversion uses ρ = c · M.'**
+  String get calcConvertAssumption;
+
+  /// Limitation.
+  ///
+  /// In en, this message translates to:
+  /// **'The molar mass must come from a certificate or verified identity data; the calculator never estimates it.'**
+  String get calcConvertLimitation;
+
+  /// Calculator input.
+  ///
+  /// In en, this message translates to:
+  /// **'Weighed mass'**
+  String get calcMolarityMass;
+
+  /// Calculator input.
+  ///
+  /// In en, this message translates to:
+  /// **'Final volume'**
+  String get calcMolarityVolume;
+
+  /// Calculator output.
+  ///
+  /// In en, this message translates to:
+  /// **'Molar concentration'**
+  String get calcMolarityResult;
+
+  /// Assumption.
+  ///
+  /// In en, this message translates to:
+  /// **'Definition of amount-of-substance concentration: c = n / V, with n = m · p / M.'**
+  String get calcMolarityAssumption;
+
+  /// Calculator input.
+  ///
+  /// In en, this message translates to:
+  /// **'Percentage basis'**
+  String get calcPercentBasis;
+
+  /// Option.
+  ///
+  /// In en, this message translates to:
+  /// **'% (w/v) — g per 100 mL'**
+  String get calcPercentWv;
+
+  /// Option.
+  ///
+  /// In en, this message translates to:
+  /// **'% (v/v) — mL per 100 mL'**
+  String get calcPercentVv;
+
+  /// Option.
+  ///
+  /// In en, this message translates to:
+  /// **'% (w/w) — g per 100 g'**
+  String get calcPercentWw;
+
+  /// Calculator input.
+  ///
+  /// In en, this message translates to:
+  /// **'Percentage (%)'**
+  String get calcPercentValue;
+
+  /// Calculator input.
+  ///
+  /// In en, this message translates to:
+  /// **'Total solution volume (mL)'**
+  String get calcPercentTotalMl;
+
+  /// Calculator input.
+  ///
+  /// In en, this message translates to:
+  /// **'Total solution mass (g)'**
+  String get calcPercentTotalG;
+
+  /// Calculator output.
+  ///
+  /// In en, this message translates to:
+  /// **'Solute amount'**
+  String get calcPercentSolute;
+
+  /// Assumption.
+  ///
+  /// In en, this message translates to:
+  /// **'Percentage definitions as stated for each basis.'**
+  String get calcPercentAssumption;
+
+  /// Limitation.
+  ///
+  /// In en, this message translates to:
+  /// **'w/v, v/v and w/w are not interchangeable — use the basis stated in the validated method or SOP.'**
+  String get calcPercentLimitationBasis;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a percentage greater than 0 and at most 100.'**
+  String get calcErrorPercent;
+
+  /// Calculator input.
+  ///
+  /// In en, this message translates to:
+  /// **'Values (separated by spaces, commas or new lines)'**
+  String get calcStatsValues;
+
+  /// Statistic.
+  ///
+  /// In en, this message translates to:
+  /// **'n'**
+  String get calcStatsN;
+
+  /// Statistic.
+  ///
+  /// In en, this message translates to:
+  /// **'Mean'**
+  String get calcStatsMean;
+
+  /// Statistic.
+  ///
+  /// In en, this message translates to:
+  /// **'Median'**
+  String get calcStatsMedian;
+
+  /// Statistic.
+  ///
+  /// In en, this message translates to:
+  /// **'SD (n − 1)'**
+  String get calcStatsSd;
+
+  /// Statistic.
+  ///
+  /// In en, this message translates to:
+  /// **'CV %'**
+  String get calcStatsCv;
+
+  /// Statistic.
+  ///
+  /// In en, this message translates to:
+  /// **'Minimum'**
+  String get calcStatsMin;
+
+  /// Statistic.
+  ///
+  /// In en, this message translates to:
+  /// **'Maximum'**
+  String get calcStatsMax;
+
+  /// Assumption.
+  ///
+  /// In en, this message translates to:
+  /// **'Sample standard deviation with an n − 1 denominator.'**
+  String get calcStatsAssumption;
+
+  /// Limitation.
+  ///
+  /// In en, this message translates to:
+  /// **'No outlier test or normality check is performed.'**
+  String get calcStatsLimitation;
+
+  /// Warning.
+  ///
+  /// In en, this message translates to:
+  /// **'At least two values are needed for SD and CV.'**
+  String get calcStatsWarnSd;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter numeric values only.'**
+  String get calcErrorValues;
+
+  /// Calculator input.
+  ///
+  /// In en, this message translates to:
+  /// **'Calibration points (one “x y” pair per line)'**
+  String get calcRegPoints;
+
+  /// Statistic.
+  ///
+  /// In en, this message translates to:
+  /// **'Slope (b)'**
+  String get calcRegSlope;
+
+  /// Statistic.
+  ///
+  /// In en, this message translates to:
+  /// **'Intercept (a)'**
+  String get calcRegIntercept;
+
+  /// Statistic.
+  ///
+  /// In en, this message translates to:
+  /// **'R²'**
+  String get calcRegR2;
+
+  /// Statistic.
+  ///
+  /// In en, this message translates to:
+  /// **'Residual SD (s_y/x)'**
+  String get calcRegSyx;
+
+  /// Assumption.
+  ///
+  /// In en, this message translates to:
+  /// **'Ordinary least squares, unweighted, y = a + b·x.'**
+  String get calcRegAssumptionOls;
+
+  /// Limitation.
+  ///
+  /// In en, this message translates to:
+  /// **'Valid only within the calibrated range; weighting and linearity are decided by method validation.'**
+  String get calcRegLimitationRange;
+
+  /// Warning.
+  ///
+  /// In en, this message translates to:
+  /// **'Fewer than five calibration points — interpret with caution.'**
+  String get calcRegWarnFew;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter at least three “x y” pairs with different x values.'**
+  String get calcErrorPoints;
+
+  /// Calculator input.
+  ///
+  /// In en, this message translates to:
+  /// **'Standard deviation of the response (σ)'**
+  String get calcLodSigma;
+
+  /// Calculator input.
+  ///
+  /// In en, this message translates to:
+  /// **'Slope of the calibration curve (S)'**
+  String get calcLodSlope;
+
+  /// Calculator input.
+  ///
+  /// In en, this message translates to:
+  /// **'Basis of σ'**
+  String get calcLodSigmaBasis;
+
+  /// Option.
+  ///
+  /// In en, this message translates to:
+  /// **'SD of blank responses'**
+  String get calcLodBasisBlank;
+
+  /// Option.
+  ///
+  /// In en, this message translates to:
+  /// **'Residual SD of the regression line'**
+  String get calcLodBasisResidual;
+
+  /// Option.
+  ///
+  /// In en, this message translates to:
+  /// **'SD of y-intercepts of regression lines'**
+  String get calcLodBasisIntercept;
+
+  /// Statistic.
+  ///
+  /// In en, this message translates to:
+  /// **'Detection limit (DL = 3.3σ/S)'**
+  String get calcLodLod;
+
+  /// Statistic.
+  ///
+  /// In en, this message translates to:
+  /// **'Quantitation limit (QL = 10σ/S)'**
+  String get calcLodLoq;
+
+  /// Assumption.
+  ///
+  /// In en, this message translates to:
+  /// **'σ is estimated by one of the approaches named in the source: blank SD, residual SD or SD of y-intercepts.'**
+  String get calcLodAssumptionSigma;
+
+  /// Assumption.
+  ///
+  /// In en, this message translates to:
+  /// **'The response is linear near the limit.'**
+  String get calcLodAssumptionLinear;
+
+  /// Limitation.
+  ///
+  /// In en, this message translates to:
+  /// **'This is one of several accepted approaches; visual evaluation and signal-to-noise are others.'**
+  String get calcLodLimitationOne;
+
+  /// Limitation.
+  ///
+  /// In en, this message translates to:
+  /// **'The source requires calculated limits to be confirmed by analysing samples near the limit.'**
+  String get calcLodLimitationVerify;
+
+  /// Reference.
+  ///
+  /// In en, this message translates to:
+  /// **'ICH Q2(R1) Validation of Analytical Procedures: Text and Methodology — §6.3, §7.3'**
+  String get calcLodReference;
+
+  /// Reference note.
+  ///
+  /// In en, this message translates to:
+  /// **'Factors checked against the official ICH PDF text. ICH Q2(R2) supersedes R1 — a reviewer must confirm the current version.'**
+  String get calcLodReferenceNote;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Use σ = s_y/x and S from this regression'**
+  String get calcUseRegression;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter σ > 0 and a non-zero slope.'**
+  String get calcErrorSigma;
+
+  /// Research kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Guideline'**
+  String get researchKindGuideline;
+
+  /// Research kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Validation study'**
+  String get researchKindValidationStudy;
+
+  /// Research kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Case series'**
+  String get researchKindCaseSeries;
+
+  /// Analytical technique name.
+  ///
+  /// In en, this message translates to:
+  /// **'GC-MS/MS'**
+  String get tech_gcMsMs;
+
+  /// Analytical technique name.
+  ///
+  /// In en, this message translates to:
+  /// **'LC-MS'**
+  String get tech_lcMs;
+
+  /// Analytical technique name.
+  ///
+  /// In en, this message translates to:
+  /// **'HRMS (high-resolution mass spectrometry)'**
+  String get tech_hrms;
+
+  /// Analytical technique name.
+  ///
+  /// In en, this message translates to:
+  /// **'Spectrophotometry'**
+  String get tech_spectrophotometry;
+
+  /// Emerging category.
+  ///
+  /// In en, this message translates to:
+  /// **'New biomarkers'**
+  String get emergingCatBiomarkers;
+
+  /// Emerging category.
+  ///
+  /// In en, this message translates to:
+  /// **'Emerging analytical methods'**
+  String get emergingCatMethods;
+
+  /// Emerging category.
+  ///
+  /// In en, this message translates to:
+  /// **'Legal / regulatory updates'**
+  String get emergingCatLegal;
 }
 
 class _AppLocalizationsDelegate

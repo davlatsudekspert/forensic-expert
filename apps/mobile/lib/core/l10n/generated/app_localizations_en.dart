@@ -305,7 +305,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get toolMolarityDesc =>
-      'Convert between mass and molar concentration.';
+      'Molar concentration from weighed mass, molar mass and volume.';
 
   @override
   String get toolCalibrationName => 'Calibration and linear regression';
@@ -331,7 +331,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get toolUnitsName => 'Concentration unit converter';
 
   @override
-  String get toolUnitsDesc => 'mg/L, µg/mL, ng/mL, mmol/L and more.';
+  String get toolUnitsDesc =>
+      'mg/L, µg/mL, ng/mL, mmol/L; mass ↔ molar with a supplied molar mass.';
 
   @override
   String get toolEthanolUnitsName => 'Ethanol unit converter';
@@ -1969,4 +1970,231 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get methodSection_validationStatus => 'Validation status';
+
+  @override
+  String get toolPercentName => 'Percentage solutions';
+
+  @override
+  String get toolPercentDesc =>
+      'Solute amount for % (w/v), (v/v) or (w/w) by definition.';
+
+  @override
+  String get calcValue => 'Value';
+
+  @override
+  String get calcFrom => 'From';
+
+  @override
+  String get calcTo => 'To';
+
+  @override
+  String get calcConvertAssumption =>
+      'Unit prefixes are SI definitions; mass ↔ molar conversion uses ρ = c · M.';
+
+  @override
+  String get calcConvertLimitation =>
+      'The molar mass must come from a certificate or verified identity data; the calculator never estimates it.';
+
+  @override
+  String get calcMolarityMass => 'Weighed mass';
+
+  @override
+  String get calcMolarityVolume => 'Final volume';
+
+  @override
+  String get calcMolarityResult => 'Molar concentration';
+
+  @override
+  String get calcMolarityAssumption =>
+      'Definition of amount-of-substance concentration: c = n / V, with n = m · p / M.';
+
+  @override
+  String get calcPercentBasis => 'Percentage basis';
+
+  @override
+  String get calcPercentWv => '% (w/v) — g per 100 mL';
+
+  @override
+  String get calcPercentVv => '% (v/v) — mL per 100 mL';
+
+  @override
+  String get calcPercentWw => '% (w/w) — g per 100 g';
+
+  @override
+  String get calcPercentValue => 'Percentage (%)';
+
+  @override
+  String get calcPercentTotalMl => 'Total solution volume (mL)';
+
+  @override
+  String get calcPercentTotalG => 'Total solution mass (g)';
+
+  @override
+  String get calcPercentSolute => 'Solute amount';
+
+  @override
+  String get calcPercentAssumption =>
+      'Percentage definitions as stated for each basis.';
+
+  @override
+  String get calcPercentLimitationBasis =>
+      'w/v, v/v and w/w are not interchangeable — use the basis stated in the validated method or SOP.';
+
+  @override
+  String get calcErrorPercent =>
+      'Enter a percentage greater than 0 and at most 100.';
+
+  @override
+  String get calcStatsValues =>
+      'Values (separated by spaces, commas or new lines)';
+
+  @override
+  String get calcStatsN => 'n';
+
+  @override
+  String get calcStatsMean => 'Mean';
+
+  @override
+  String get calcStatsMedian => 'Median';
+
+  @override
+  String get calcStatsSd => 'SD (n − 1)';
+
+  @override
+  String get calcStatsCv => 'CV %';
+
+  @override
+  String get calcStatsMin => 'Minimum';
+
+  @override
+  String get calcStatsMax => 'Maximum';
+
+  @override
+  String get calcStatsAssumption =>
+      'Sample standard deviation with an n − 1 denominator.';
+
+  @override
+  String get calcStatsLimitation =>
+      'No outlier test or normality check is performed.';
+
+  @override
+  String get calcStatsWarnSd => 'At least two values are needed for SD and CV.';
+
+  @override
+  String get calcErrorValues => 'Enter numeric values only.';
+
+  @override
+  String get calcRegPoints => 'Calibration points (one “x y” pair per line)';
+
+  @override
+  String get calcRegSlope => 'Slope (b)';
+
+  @override
+  String get calcRegIntercept => 'Intercept (a)';
+
+  @override
+  String get calcRegR2 => 'R²';
+
+  @override
+  String get calcRegSyx => 'Residual SD (s_y/x)';
+
+  @override
+  String get calcRegAssumptionOls =>
+      'Ordinary least squares, unweighted, y = a + b·x.';
+
+  @override
+  String get calcRegLimitationRange =>
+      'Valid only within the calibrated range; weighting and linearity are decided by method validation.';
+
+  @override
+  String get calcRegWarnFew =>
+      'Fewer than five calibration points — interpret with caution.';
+
+  @override
+  String get calcErrorPoints =>
+      'Enter at least three “x y” pairs with different x values.';
+
+  @override
+  String get calcLodSigma => 'Standard deviation of the response (σ)';
+
+  @override
+  String get calcLodSlope => 'Slope of the calibration curve (S)';
+
+  @override
+  String get calcLodSigmaBasis => 'Basis of σ';
+
+  @override
+  String get calcLodBasisBlank => 'SD of blank responses';
+
+  @override
+  String get calcLodBasisResidual => 'Residual SD of the regression line';
+
+  @override
+  String get calcLodBasisIntercept => 'SD of y-intercepts of regression lines';
+
+  @override
+  String get calcLodLod => 'Detection limit (DL = 3.3σ/S)';
+
+  @override
+  String get calcLodLoq => 'Quantitation limit (QL = 10σ/S)';
+
+  @override
+  String get calcLodAssumptionSigma =>
+      'σ is estimated by one of the approaches named in the source: blank SD, residual SD or SD of y-intercepts.';
+
+  @override
+  String get calcLodAssumptionLinear =>
+      'The response is linear near the limit.';
+
+  @override
+  String get calcLodLimitationOne =>
+      'This is one of several accepted approaches; visual evaluation and signal-to-noise are others.';
+
+  @override
+  String get calcLodLimitationVerify =>
+      'The source requires calculated limits to be confirmed by analysing samples near the limit.';
+
+  @override
+  String get calcLodReference =>
+      'ICH Q2(R1) Validation of Analytical Procedures: Text and Methodology — §6.3, §7.3';
+
+  @override
+  String get calcLodReferenceNote =>
+      'Factors checked against the official ICH PDF text. ICH Q2(R2) supersedes R1 — a reviewer must confirm the current version.';
+
+  @override
+  String get calcUseRegression => 'Use σ = s_y/x and S from this regression';
+
+  @override
+  String get calcErrorSigma => 'Enter σ > 0 and a non-zero slope.';
+
+  @override
+  String get researchKindGuideline => 'Guideline';
+
+  @override
+  String get researchKindValidationStudy => 'Validation study';
+
+  @override
+  String get researchKindCaseSeries => 'Case series';
+
+  @override
+  String get tech_gcMsMs => 'GC-MS/MS';
+
+  @override
+  String get tech_lcMs => 'LC-MS';
+
+  @override
+  String get tech_hrms => 'HRMS (high-resolution mass spectrometry)';
+
+  @override
+  String get tech_spectrophotometry => 'Spectrophotometry';
+
+  @override
+  String get emergingCatBiomarkers => 'New biomarkers';
+
+  @override
+  String get emergingCatMethods => 'Emerging analytical methods';
+
+  @override
+  String get emergingCatLegal => 'Legal / regulatory updates';
 }

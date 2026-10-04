@@ -374,7 +374,7 @@
   "@toolMolarityName": {
     "description": "Tool name."
   },
-  "toolMolarityDesc": "Convert between mass and molar concentration.",
+  "toolMolarityDesc": "Molar concentration from weighed mass, molar mass and volume.",
   "@toolMolarityDesc": {
     "description": "Tool description."
   },
@@ -406,7 +406,7 @@
   "@toolUnitsName": {
     "description": "Tool name."
   },
-  "toolUnitsDesc": "mg/L, µg/mL, ng/mL, mmol/L and more.",
+  "toolUnitsDesc": "mg/L, µg/mL, ng/mL, mmol/L; mass ↔ molar with a supplied molar mass.",
   "@toolUnitsDesc": {
     "description": "Tool description."
   },
@@ -2588,5 +2588,281 @@
   "methodSection_validationStatus": "Validation status",
   "@methodSection_validationStatus": {
     "description": "Method section heading."
+  },
+  "toolPercentName": "Percentage solutions",
+  "@toolPercentName": {
+    "description": "Tool name."
+  },
+  "toolPercentDesc": "Solute amount for % (w/v), (v/v) or (w/w) by definition.",
+  "@toolPercentDesc": {
+    "description": "Tool description."
+  },
+  "calcValue": "Value",
+  "@calcValue": {
+    "description": "Calculator input."
+  },
+  "calcFrom": "From",
+  "@calcFrom": {
+    "description": "Calculator input."
+  },
+  "calcTo": "To",
+  "@calcTo": {
+    "description": "Calculator input."
+  },
+  "calcConvertAssumption": "Unit prefixes are SI definitions; mass ↔ molar conversion uses ρ = c · M.",
+  "@calcConvertAssumption": {
+    "description": "Assumption."
+  },
+  "calcConvertLimitation": "The molar mass must come from a certificate or verified identity data; the calculator never estimates it.",
+  "@calcConvertLimitation": {
+    "description": "Limitation."
+  },
+  "calcMolarityMass": "Weighed mass",
+  "@calcMolarityMass": {
+    "description": "Calculator input."
+  },
+  "calcMolarityVolume": "Final volume",
+  "@calcMolarityVolume": {
+    "description": "Calculator input."
+  },
+  "calcMolarityResult": "Molar concentration",
+  "@calcMolarityResult": {
+    "description": "Calculator output."
+  },
+  "calcMolarityAssumption": "Definition of amount-of-substance concentration: c = n / V, with n = m · p / M.",
+  "@calcMolarityAssumption": {
+    "description": "Assumption."
+  },
+  "calcPercentBasis": "Percentage basis",
+  "@calcPercentBasis": {
+    "description": "Calculator input."
+  },
+  "calcPercentWv": "% (w/v) — g per 100 mL",
+  "@calcPercentWv": {
+    "description": "Option."
+  },
+  "calcPercentVv": "% (v/v) — mL per 100 mL",
+  "@calcPercentVv": {
+    "description": "Option."
+  },
+  "calcPercentWw": "% (w/w) — g per 100 g",
+  "@calcPercentWw": {
+    "description": "Option."
+  },
+  "calcPercentValue": "Percentage (%)",
+  "@calcPercentValue": {
+    "description": "Calculator input."
+  },
+  "calcPercentTotalMl": "Total solution volume (mL)",
+  "@calcPercentTotalMl": {
+    "description": "Calculator input."
+  },
+  "calcPercentTotalG": "Total solution mass (g)",
+  "@calcPercentTotalG": {
+    "description": "Calculator input."
+  },
+  "calcPercentSolute": "Solute amount",
+  "@calcPercentSolute": {
+    "description": "Calculator output."
+  },
+  "calcPercentAssumption": "Percentage definitions as stated for each basis.",
+  "@calcPercentAssumption": {
+    "description": "Assumption."
+  },
+  "calcPercentLimitationBasis": "w/v, v/v and w/w are not interchangeable — use the basis stated in the validated method or SOP.",
+  "@calcPercentLimitationBasis": {
+    "description": "Limitation."
+  },
+  "calcErrorPercent": "Enter a percentage greater than 0 and at most 100.",
+  "@calcErrorPercent": {
+    "description": "Error."
+  },
+  "calcStatsValues": "Values (separated by spaces, commas or new lines)",
+  "@calcStatsValues": {
+    "description": "Calculator input."
+  },
+  "calcStatsN": "n",
+  "@calcStatsN": {
+    "description": "Statistic."
+  },
+  "calcStatsMean": "Mean",
+  "@calcStatsMean": {
+    "description": "Statistic."
+  },
+  "calcStatsMedian": "Median",
+  "@calcStatsMedian": {
+    "description": "Statistic."
+  },
+  "calcStatsSd": "SD (n − 1)",
+  "@calcStatsSd": {
+    "description": "Statistic."
+  },
+  "calcStatsCv": "CV %",
+  "@calcStatsCv": {
+    "description": "Statistic."
+  },
+  "calcStatsMin": "Minimum",
+  "@calcStatsMin": {
+    "description": "Statistic."
+  },
+  "calcStatsMax": "Maximum",
+  "@calcStatsMax": {
+    "description": "Statistic."
+  },
+  "calcStatsAssumption": "Sample standard deviation with an n − 1 denominator.",
+  "@calcStatsAssumption": {
+    "description": "Assumption."
+  },
+  "calcStatsLimitation": "No outlier test or normality check is performed.",
+  "@calcStatsLimitation": {
+    "description": "Limitation."
+  },
+  "calcStatsWarnSd": "At least two values are needed for SD and CV.",
+  "@calcStatsWarnSd": {
+    "description": "Warning."
+  },
+  "calcErrorValues": "Enter numeric values only.",
+  "@calcErrorValues": {
+    "description": "Error."
+  },
+  "calcRegPoints": "Calibration points (one “x y” pair per line)",
+  "@calcRegPoints": {
+    "description": "Calculator input."
+  },
+  "calcRegSlope": "Slope (b)",
+  "@calcRegSlope": {
+    "description": "Statistic."
+  },
+  "calcRegIntercept": "Intercept (a)",
+  "@calcRegIntercept": {
+    "description": "Statistic."
+  },
+  "calcRegR2": "R²",
+  "@calcRegR2": {
+    "description": "Statistic."
+  },
+  "calcRegSyx": "Residual SD (s_y/x)",
+  "@calcRegSyx": {
+    "description": "Statistic."
+  },
+  "calcRegAssumptionOls": "Ordinary least squares, unweighted, y = a + b·x.",
+  "@calcRegAssumptionOls": {
+    "description": "Assumption."
+  },
+  "calcRegLimitationRange": "Valid only within the calibrated range; weighting and linearity are decided by method validation.",
+  "@calcRegLimitationRange": {
+    "description": "Limitation."
+  },
+  "calcRegWarnFew": "Fewer than five calibration points — interpret with caution.",
+  "@calcRegWarnFew": {
+    "description": "Warning."
+  },
+  "calcErrorPoints": "Enter at least three “x y” pairs with different x values.",
+  "@calcErrorPoints": {
+    "description": "Error."
+  },
+  "calcLodSigma": "Standard deviation of the response (σ)",
+  "@calcLodSigma": {
+    "description": "Calculator input."
+  },
+  "calcLodSlope": "Slope of the calibration curve (S)",
+  "@calcLodSlope": {
+    "description": "Calculator input."
+  },
+  "calcLodSigmaBasis": "Basis of σ",
+  "@calcLodSigmaBasis": {
+    "description": "Calculator input."
+  },
+  "calcLodBasisBlank": "SD of blank responses",
+  "@calcLodBasisBlank": {
+    "description": "Option."
+  },
+  "calcLodBasisResidual": "Residual SD of the regression line",
+  "@calcLodBasisResidual": {
+    "description": "Option."
+  },
+  "calcLodBasisIntercept": "SD of y-intercepts of regression lines",
+  "@calcLodBasisIntercept": {
+    "description": "Option."
+  },
+  "calcLodLod": "Detection limit (DL = 3.3σ/S)",
+  "@calcLodLod": {
+    "description": "Statistic."
+  },
+  "calcLodLoq": "Quantitation limit (QL = 10σ/S)",
+  "@calcLodLoq": {
+    "description": "Statistic."
+  },
+  "calcLodAssumptionSigma": "σ is estimated by one of the approaches named in the source: blank SD, residual SD or SD of y-intercepts.",
+  "@calcLodAssumptionSigma": {
+    "description": "Assumption."
+  },
+  "calcLodAssumptionLinear": "The response is linear near the limit.",
+  "@calcLodAssumptionLinear": {
+    "description": "Assumption."
+  },
+  "calcLodLimitationOne": "This is one of several accepted approaches; visual evaluation and signal-to-noise are others.",
+  "@calcLodLimitationOne": {
+    "description": "Limitation."
+  },
+  "calcLodLimitationVerify": "The source requires calculated limits to be confirmed by analysing samples near the limit.",
+  "@calcLodLimitationVerify": {
+    "description": "Limitation."
+  },
+  "calcLodReference": "ICH Q2(R1) Validation of Analytical Procedures: Text and Methodology — §6.3, §7.3",
+  "@calcLodReference": {
+    "description": "Reference."
+  },
+  "calcLodReferenceNote": "Factors checked against the official ICH PDF text. ICH Q2(R2) supersedes R1 — a reviewer must confirm the current version.",
+  "@calcLodReferenceNote": {
+    "description": "Reference note."
+  },
+  "calcUseRegression": "Use σ = s_y/x and S from this regression",
+  "@calcUseRegression": {
+    "description": "Action."
+  },
+  "calcErrorSigma": "Enter σ > 0 and a non-zero slope.",
+  "@calcErrorSigma": {
+    "description": "Error."
+  },
+  "researchKindGuideline": "Guideline",
+  "@researchKindGuideline": {
+    "description": "Research kind."
+  },
+  "researchKindValidationStudy": "Validation study",
+  "@researchKindValidationStudy": {
+    "description": "Research kind."
+  },
+  "researchKindCaseSeries": "Case series",
+  "@researchKindCaseSeries": {
+    "description": "Research kind."
+  },
+  "tech_gcMsMs": "GC-MS/MS",
+  "@tech_gcMsMs": {
+    "description": "Analytical technique name."
+  },
+  "tech_lcMs": "LC-MS",
+  "@tech_lcMs": {
+    "description": "Analytical technique name."
+  },
+  "tech_hrms": "HRMS (high-resolution mass spectrometry)",
+  "@tech_hrms": {
+    "description": "Analytical technique name."
+  },
+  "tech_spectrophotometry": "Spectrophotometry",
+  "@tech_spectrophotometry": {
+    "description": "Analytical technique name."
+  },
+  "emergingCatBiomarkers": "New biomarkers",
+  "@emergingCatBiomarkers": {
+    "description": "Emerging category."
+  },
+  "emergingCatMethods": "Emerging analytical methods",
+  "@emergingCatMethods": {
+    "description": "Emerging category."
+  },
+  "emergingCatLegal": "Legal / regulatory updates",
+  "@emergingCatLegal": {
+    "description": "Emerging category."
   }
 }

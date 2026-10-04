@@ -36,6 +36,14 @@ void main() {
     'tech_hplc',
     'tech_lcMsMs',
     'tech_headspaceGc',
+    // PHASE 6: statistik belgilar va xalqaro qisqartmalar; ICH hujjat nomi
+    // rasmiy inglizcha sarlavha (tarjima qilinmaydi).
+    'calcStatsN',
+    'calcRegR2',
+    'calcStatsMin',
+    'calcLodReference',
+    'tech_gcMsMs',
+    'tech_lcMs',
   };
 
   Set<String> placeholders(String s) =>

@@ -16,6 +16,7 @@ import '../../../domain/ports/billing_ports.dart';
 import '../../common/favorite_button.dart';
 import '../../library/presentation/content_entry_sections.dart';
 import '../tool_strings.dart';
+import 'lab_calculators.dart';
 
 /// Vosita sahifasi. Mavjud kalkulyator — to‘liq INPUT · METHOD · FORMULA ·
 /// RESULT · ASSUMPTIONS · LIMITATIONS · REFERENCES tuzilmasi bilan.
@@ -69,7 +70,19 @@ class _ToolDetailScreenState extends ConsumerState<ToolDetailScreen> {
                   ? const _DilutionCalculatorView()
                   : tool.engineId == ToolsCatalog.solution.engineId
                   ? const _SolutionCalculatorView()
-                  : _PlannedToolView(tool: tool),
+                  : switch (tool.engineId) {
+                      'lab.concentration.convert' =>
+                        const ConcentrationConvertView(),
+                      'lab.molarity.from_mass' => const MolarityView(),
+                      'lab.percent.solute_amount' =>
+                        const PercentSolutionView(),
+                      'stats.descriptive' => const DescriptiveStatsView(),
+                      'stats.linear_regression' => const CalibrationView(),
+                      'stats.lod_loq.ich' => const CalibrationView(
+                        withLimits: true,
+                      ),
+                      _ => _PlannedToolView(tool: tool),
+                    },
             ),
           ],
         ),
