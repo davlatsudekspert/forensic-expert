@@ -1,0 +1,61 @@
+name: forensic_expert
+description: "FORENSIC EXPERT — professional forensic reference, education and scientific calculation software."
+publish_to: 'none'
+version: 0.1.0+1
+resolution: workspace
+
+environment:
+  sdk: ^3.13.0
+  flutter: ">=3.47.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  fe_calc_engine:
+    path: ../../packages/fe_calc_engine
+  fe_content_package:
+    path: ../../packages/fe_content_package
+  fe_content_schema:
+    path: ../../packages/fe_content_schema
+  fe_database:
+    path: ../../packages/fe_database
+  fe_search_core:
+    path: ../../packages/fe_search_core
+  flutter_riverpod: ^3.4.3
+  go_router: ^18.0.2
+  shared_preferences: ^2.5.5
+  drift_flutter: ^0.3.1
+  path_provider: ^2.1.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/fonts/inter/OFL.txt
+    - assets/fonts/jetbrains_mono/OFL.txt
+
+  # Shriftlar ilovaga o‘rnatilgan (offline; runtime’da yuklanmaydi). SIL OFL 1.1.
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/inter/Inter-Regular.ttf
+        - asset: assets/fonts/inter/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/inter/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/inter/Inter-Bold.ttf
+          weight: 700
+    - family: JetBrainsMono
+      fonts:
+        - asset: assets/fonts/jetbrains_mono/JetBrainsMono-Regular.ttf
+        - asset: assets/fonts/jetbrains_mono/JetBrainsMono-Medium.ttf
+          weight: 500
