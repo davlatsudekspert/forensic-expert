@@ -1,0 +1,48 @@
+{
+  "accessed": "2026-10-04",
+  "rta": {
+    "url": "https://www.legislation.gov.uk/ukpga/1988/52/section/11/data.xml",
+    "sha256": "2123b14d28e0b86079adf727e8e70547cb9160f28e962727371023f2b10cc753",
+    "version_valid": "2026-06-29",
+    "extents": "E+W+S",
+    "section": "s.11(2)",
+    "excerpt": "the prescribed limit ” means, as the case may require— 35 microgrammes of alcohol in 100 millilitres of breath, 80 milligrammes of alcohol in 100 millilitres of blood, or 107 milligrammes of alcohol in 100 millilitres of urine, or such other proportion as may be prescribed by regulations .... “ registered health care professional ” means a person (other than a medical practitioner) who is— a regis",
+    "limits": {
+      "breath": {
+        "value": 35,
+        "unit": "µg/100 mL"
+      },
+      "blood": {
+        "value": 80,
+        "unit": "mg/100 mL"
+      },
+      "urine": {
+        "value": 107,
+        "unit": "mg/100 mL"
+      }
+    }
+  },
+  "ssi": {
+    "url": "https://www.legislation.gov.uk/ssi/2014/328/data.xml",
+    "sha256": "206953a8364518edb8dcf2a46bf11dae4132762fc405e7c1e482e1db5f322a75",
+    "made": "2014-11-20",
+    "version_valid": "2014-12-05",
+    "in_force": "2014-12-05",
+    "section": "reg. 2",
+    "excerpt": "Prescription of proportion of alcohol 2 For the purpose of the definition of “the prescribed limit” in section 11(2) of The Road Traffic Act 1988, the prescribed proportion in relation to driving or attempting to drive, or being in charge of a vehicle, in Scotland, is— a 22 microgrammes of alcohol in 100 millilitres of breath; b 50 milligrammes of alcohol in 100 millilitres of blood; or c 67 milligrammes of alcohol in 100 millilitres of urine. Proportion of alcohol for replacement of breath spec",
+    "limits": {
+      "breath": {
+        "value": 22,
+        "unit": "µg/100 mL"
+      },
+      "blood": {
+        "value": 50,
+        "unit": "mg/100 mL"
+      },
+      "urine": {
+        "value": 67,
+        "unit": "mg/100 mL"
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_note": "PHASE 4 kuratsiya qarorlari (kontent muhandisi; ilmiy reviewer EMAS). Qabul qilingan gaplar ham NEEDS_REVIEW bo‘lib qoladi.",
+  "accept": {
+    "fm-livor-mortis": "Sud dermatologiyasi bo‘yicha review; livor mortis ta’rifi va sinonimlari.",
+    "fm-algor-mortis": "Algor mortis ta’rifi (tana sovishi).",
+    "fm-pmi-uncertainty": "PMI baholashdagi noaniqlikni kamaytirish zarurligi haqida (cheklov).",
+    "bio-vitreous-potassium": "Vitreous kaliyning PMI bilan chiziqli o‘sishi (Sturner 1963 ga havola bilan).",
+    "bio-vitreous-confounding": "Harorat vitreous kaliy uchun chalg‘ituvchi omil (cheklov).",
+    "scr-immunoassay-presumptive": "Immunoassay natijasi GC-MS/LC-MS bilan tasdiqlanguncha presumptiv.",
+    "scr-cross-reactivity": "Skrining immunoassay’larida cross-reactivity sabab soxta musbat natija.",
+    "met-gcms": "GC-MS va LC-MS sud toksikologiyasida «gold standard» deb qaraladi.",
+    "rea-marquis": "Marquis reagenti presumptiv testlarda (ksilazin misolida) qo‘llanadi.",
+    "rea-color-tests-presumptive": "Rangli/spot testlar presumptiv.",
+    "emg-nitazenes": "Har yili yangi nitazenlar aniqlanmoqda (dolzarb muammo)."
+  },
+  "reject": {
+    "fm-rigor-mortis": "Topilgan yagona gap faqat chaynash muskullari (stomatologik autopsiya) haqida — umumiy ta’rif emas.",
+    "bio-postmortem-limits": "Shartga mos ochiq litsenziyali gap topilmadi.",
+    "met-lcmsms": "Veterinariya maqolasi, bitta tadqiqot tavsifi — umumiy metod tavsifi emas.",
+    "_earlier": "Baliq go‘shti (rigor), SARS-CoV-2 (PMI), qidiruv mezonlari gaplari (GC-MS, LC-MS/MS) va lidokain rangi (Marquis) avvalroq rad etilgan."
+  }
+}

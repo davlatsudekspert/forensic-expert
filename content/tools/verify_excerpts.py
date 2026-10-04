@@ -93,7 +93,9 @@ def license_mode(lic):
 def main():
     accessed = datetime.date.today().isoformat()
     out = []
-    for path in sorted(glob.glob("pilot/candidates/metabolites_*.json")):
+    paths = sorted(glob.glob("pilot/candidates/metabolites_*.json")) + \
+        sorted(glob.glob("pilot/candidates/curated_*.json"))
+    for path in paths:
         for c in json.load(open(path)):
             rec = dict(c, accessed=accessed, candidate_file=path)
             if c.get("status") != "found":

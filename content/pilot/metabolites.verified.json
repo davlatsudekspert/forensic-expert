@@ -601,5 +601,390 @@
       "doi_matches": true
     },
     "verification": "verified"
+  },
+  {
+    "substance": "bio-vitreous-potassium",
+    "field": "marker",
+    "status": "found",
+    "pmcid": "PMC5431803",
+    "pmid": "28500353",
+    "doi": "10.1038/s41598-017-02027-1",
+    "title": "Estimation of postmortem interval by vitreous potassium evaluation with a novel fluorescence aptasensor.",
+    "journal": "Scientific reports",
+    "year": "2017",
+    "license": "CC BY",
+    "section": "RESULTS",
+    "verbatim_sentence": "It was worth mentioning that there was a linear rise in vitreous potassium concentration with advancing PMI, which was first described by Sturner in 1963.",
+    "metabolites": [
+      "potassium",
+      "vitreous"
+    ],
+    "note": "Vitreous kaliyning PMI bilan chiziqli o‘sishi (Sturner 1963 ga havola bilan).",
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/curated_topics.json",
+    "license_api": "CC BY",
+    "license_mode": "openReuse",
+    "doi_api": "10.1038/s41598-017-02027-1",
+    "source_sentence": "It was worth mentioning that there was a linear rise in vitreous potassium concentration with advancing PMI, which was first described by Sturner in 1963.",
+    "match": {
+      "type": "exact",
+      "ratio": 1.0
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  },
+  {
+    "substance": "bio-vitreous-confounding",
+    "field": "limitation",
+    "status": "found",
+    "pmcid": "PMC13224331",
+    "pmid": "42231995",
+    "doi": "10.7759/cureus.108128",
+    "title": "Forensic Utility of Vitreous Potassium Concentration in Estimating Postmortem Interval: A Systematic Review.",
+    "journal": "Cureus",
+    "year": "2026",
+    "license": "CC BY",
+    "section": "INTRO",
+    "verbatim_sentence": "These findings highlight the inconsistent influence of temperature on vitreous potassium, underscoring its role as a potential confounding factor in PMI estimation.",
+    "metabolites": [
+      "vitreous potassium",
+      "confounding factor"
+    ],
+    "note": "Harorat vitreous kaliy uchun chalg‘ituvchi omil (cheklov).",
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/curated_topics.json",
+    "license_api": "CC BY",
+    "license_mode": "openReuse",
+    "doi_api": "10.7759/cureus.108128",
+    "source_sentence": "These findings highlight the inconsistent influence of temperature on vitreous potassium, underscoring its role as a potential confounding factor in PMI estimation.",
+    "match": {
+      "type": "exact",
+      "ratio": 1.0
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  },
+  {
+    "substance": "emg-nitazenes",
+    "field": "emerging",
+    "status": "found",
+    "pmcid": "PMC12147671",
+    "pmid": "40374158",
+    "doi": "10.1016/j.neuropharm.2025.110512",
+    "title": "Pharmacology of newly identified nitazene variants reveals structural determinants of affinity, potency, selectivity for mu opioid receptors.",
+    "journal": "Neuropharmacology",
+    "year": "2025",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "verbatim_sentence": "New nitazenes are discovered each year in drug samples and toxicology specimens, necessitating rapid pharmacological characterization.",
+    "metabolites": [
+      "nitazene",
+      "New"
+    ],
+    "note": "Har yili yangi nitazenlar aniqlanmoqda (dolzarb muammo).",
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/curated_topics.json",
+    "license_api": "CC BY",
+    "license_mode": "openReuse",
+    "doi_api": "10.1016/j.neuropharm.2025.110512",
+    "source_sentence": "New nitazenes are discovered each year in drug samples and toxicology specimens, necessitating rapid pharmacological characterization.",
+    "match": {
+      "type": "exact",
+      "ratio": 1.0
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  },
+  {
+    "substance": "fm-livor-mortis",
+    "field": "definition",
+    "status": "found",
+    "pmcid": "PMC12450430",
+    "pmid": "40984954",
+    "doi": "10.7759/cureus.90760",
+    "title": "Livor Mortis and Forensic Dermatology: A Review of Death-Related Gravity-Dependent Lividity and Postmortem Hypostasis.",
+    "journal": "Cureus",
+    "year": "2025",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "verbatim_sentence": "Livor mortis is an early postmortem change; it is also referred to as dependent lividity or postmortem hypostasis.",
+    "metabolites": [
+      "Livor mortis",
+      "hypostas"
+    ],
+    "note": "Sud dermatologiyasi bo‘yicha review; livor mortis ta’rifi va sinonimlari.",
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/curated_topics.json",
+    "license_api": "CC BY",
+    "license_mode": "openReuse",
+    "doi_api": "10.7759/cureus.90760",
+    "source_sentence": "Livor mortis is an early postmortem change; it is also referred to as dependent lividity or postmortem hypostasis.",
+    "match": {
+      "type": "exact",
+      "ratio": 1.0
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  },
+  {
+    "substance": "fm-algor-mortis",
+    "field": "definition",
+    "status": "found",
+    "pmcid": "PMC11580817",
+    "pmid": "39575351",
+    "doi": "10.7759/cureus.74161",
+    "title": "Application of Metabolomics and Machine Learning for the Prediction of Postmortem Interval.",
+    "journal": "Cureus",
+    "year": "2024",
+    "license": "CC BY",
+    "section": "INTRO",
+    "verbatim_sentence": "Algor mortis is the progressive cooling of a body after death as it equilibrates with the ambient temperature.",
+    "metabolites": [
+      "Algor mortis",
+      "cool"
+    ],
+    "note": "Algor mortis ta’rifi (tana sovishi).",
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/curated_topics.json",
+    "license_api": "CC BY",
+    "license_mode": "openReuse",
+    "doi_api": "10.7759/cureus.74161",
+    "source_sentence": "Algor mortis is the progressive cooling of a body after death as it equilibrates with the ambient temperature.",
+    "match": {
+      "type": "exact",
+      "ratio": 1.0
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  },
+  {
+    "substance": "fm-pmi-uncertainty",
+    "field": "limitation",
+    "status": "found",
+    "pmcid": "PMC10861637",
+    "pmid": "37491634",
+    "doi": "10.1007/s00414-023-03060-8",
+    "title": "Bridging the gap between decomposition theory and forensic research on postmortem interval.",
+    "journal": "International journal of legal medicine",
+    "year": "2024",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "verbatim_sentence": "Our framework reinforces the need for a multidisciplinary approach to PMI research, and calls for an adaptive research cycle that aims to reduce uncertainty in PMI estimates via experimentation, modelling, and validation.",
+    "metabolites": [
+      "PMI",
+      "uncertaint"
+    ],
+    "note": "PMI baholashdagi noaniqlikni kamaytirish zarurligi haqida (cheklov).",
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/curated_topics.json",
+    "license_api": "CC BY",
+    "license_mode": "openReuse",
+    "doi_api": "10.1007/s00414-023-03060-8",
+    "source_sentence": "Our framework reinforces the need for a multidisciplinary approach to PMI research, and calls for an adaptive research cycle that aims to reduce uncertainty in PMI estimates via experimentation, modelling, and validation.",
+    "match": {
+      "type": "exact",
+      "ratio": 1.0
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  },
+  {
+    "substance": "met-gcms",
+    "field": "principle",
+    "status": "found",
+    "pmcid": "PMC11929145",
+    "pmid": "40125171",
+    "doi": "10.7759/cureus.79352",
+    "title": "The Role of Toxicology Investigations in Overdose Deaths.",
+    "journal": "Cureus",
+    "year": "2025",
+    "license": "CC BY",
+    "section": "INTRO",
+    "verbatim_sentence": "Forensic toxicologists employ a range of analytical methods, including gas chromatography-mass spectrometry (GC-MS) and liquid chromatography-mass spectrometry (LC-MS), which are considered gold standards in the field.",
+    "metabolites": [
+      "gas chromatography-mass spectrometry",
+      "considered gold standard"
+    ],
+    "note": "GC-MS va LC-MS sud toksikologiyasida «gold standard» deb qaraladi.",
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/curated_topics.json",
+    "license_api": "CC BY",
+    "license_mode": "openReuse",
+    "doi_api": "10.7759/cureus.79352",
+    "source_sentence": "Forensic toxicologists employ a range of analytical methods, including gas chromatography-mass spectrometry (GC-MS) and liquid chromatography-mass spectrometry (LC-MS), which are considered gold standards in the field.",
+    "match": {
+      "type": "exact",
+      "ratio": 1.0
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  },
+  {
+    "substance": "rea-marquis",
+    "field": "principle",
+    "status": "found",
+    "pmcid": "PMC11961553",
+    "pmid": "40177113",
+    "doi": "10.1002/ansa.70008",
+    "title": "Presumptive Tests for Xylazine-A Computer Vision Approach.",
+    "journal": "Analytical science advances",
+    "year": "2025",
+    "license": "CC BY",
+    "section": "INTRO",
+    "verbatim_sentence": "Hence, this study aimed to investigate the potential application of Mandelin, Mecke and Marquis reagents in the presumptive testing for xylazine.",
+    "metabolites": [
+      "Marquis reagent",
+      "presumptive"
+    ],
+    "note": "Marquis reagenti presumptiv testlarda (ksilazin misolida) qo‘llanadi.",
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/curated_topics.json",
+    "license_api": "CC BY",
+    "license_mode": "openReuse",
+    "doi_api": "10.1002/ansa.70008",
+    "source_sentence": "Hence, this study aimed to investigate the potential application of Mandelin, Mecke and Marquis reagents in the presumptive testing for xylazine.",
+    "match": {
+      "type": "exact",
+      "ratio": 1.0
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  },
+  {
+    "substance": "rea-color-tests-presumptive",
+    "field": "limitation",
+    "status": "found",
+    "pmcid": "PMC5537996",
+    "pmid": "28760153",
+    "doi": "10.1186/s12954-017-0179-5",
+    "title": "An overview of forensic drug testing methods and their suitability for harm reduction point-of-care services.",
+    "journal": "Harm reduction journal",
+    "year": "2017",
+    "license": "CC BY",
+    "section": "INTRO",
+    "verbatim_sentence": "Spot/color tests offer presumptive testing based on chemical reactions between analytes and indicators.",
+    "metabolites": [
+      "color tests",
+      "presumptive"
+    ],
+    "note": "Rangli/spot testlar presumptiv.",
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/curated_topics.json",
+    "license_api": "CC BY",
+    "license_mode": "openReuse",
+    "doi_api": "10.1186/s12954-017-0179-5",
+    "source_sentence": "Spot/color tests offer presumptive testing based on chemical reactions between analytes and indicators.",
+    "match": {
+      "type": "exact",
+      "ratio": 1.0
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  },
+  {
+    "substance": "scr-immunoassay-presumptive",
+    "field": "principle",
+    "status": "found",
+    "pmcid": "PMC11402778",
+    "pmid": "39286100",
+    "doi": "10.1016/j.heliyon.2024.e36735",
+    "title": "Application of a molecular networking approach using LC-HRMS combined with the MetWork webserver for clinical and forensic toxicology.",
+    "journal": "Heliyon",
+    "year": "2024",
+    "license": "CC BY",
+    "section": "INTRO",
+    "verbatim_sentence": "Immunoassay results are also considered presumptive until confirmed by higher resolution techniques like gas or liquid chromatography-MS (GC-MS, LC-MS) methods.",
+    "metabolites": [
+      "Immunoassay",
+      "presumptive"
+    ],
+    "note": "Immunoassay natijasi GC-MS/LC-MS bilan tasdiqlanguncha presumptiv.",
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/curated_topics.json",
+    "license_api": "CC BY",
+    "license_mode": "openReuse",
+    "doi_api": "10.1016/j.heliyon.2024.e36735",
+    "source_sentence": "Immunoassay results are also considered presumptive until confirmed by higher resolution techniques like gas or liquid chromatography-MS (GC-MS, LC-MS) methods.",
+    "match": {
+      "type": "exact",
+      "ratio": 1.0
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  },
+  {
+    "substance": "scr-cross-reactivity",
+    "field": "limitation",
+    "status": "found",
+    "pmcid": "PMC2688477",
+    "pmid": "19400959",
+    "doi": "10.1186/1471-227X-9-5",
+    "title": "Using molecular similarity to highlight the challenges of routine immunoassay-based drug of abuse/toxicology screening in emergency medicine.",
+    "journal": "BMC emergency medicine",
+    "year": "2009",
+    "license": "CC BY",
+    "section": "ABSTRACT",
+    "verbatim_sentence": "All DOA/Tox screening immunoassays can be limited by false positives caused by cross-reactivity from structurally related compounds.",
+    "metabolites": [
+      "cross-reactiv",
+      "false positive"
+    ],
+    "note": "Skrining immunoassay’larida cross-reactivity sabab soxta musbat natija.",
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/curated_topics.json",
+    "license_api": "CC BY",
+    "license_mode": "openReuse",
+    "doi_api": "10.1186/1471-227X-9-5",
+    "source_sentence": "All DOA/Tox screening immunoassays can be limited by false positives caused by cross-reactivity from structurally related compounds.",
+    "match": {
+      "type": "exact",
+      "ratio": 1.0
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
   }
 ]
