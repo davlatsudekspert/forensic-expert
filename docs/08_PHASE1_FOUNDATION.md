@@ -122,6 +122,7 @@ Litsenziyalar pub cache’dagi LICENSE fayllaridan tekshirildi.
 - `dart format --set-exit-if-changed` — o‘zgarish yo‘q.
 - Generatsiya qilingan kod (drift, gen-l10n) qayta generatsiyada farq bermaydi.
 - `tool/ci_local.sh` — **OK**.
+- **GitHub Actions CI** (run 37177945661, commit `536d837`): Analyze & test ✅, gitleaks ✅, OSV ✅; Dependency review — faqat PR’da ishlaydi (o‘tkazib yuborildi).
 - gitleaks (git tarixi va fayllar) — **no leaks found**.
 - osv-scanner (`pubspec.lock`, 123 paket) — **No issues found**.
 
@@ -177,5 +178,5 @@ Litsenziyalar pub cache’dagi LICENSE fayllaridan tekshirildi.
 | R-07 | Google Play shaxsiy akkaunt uchun 12 tester × 14 kun talabi | O‘rta | Tashkilot akkaunti tavsiya etiladi |
 | R-08 | RU/UZ UI tarjimalari review qilinmagan | O‘rta | i18n reviewer |
 | R-09 | `drift_flutter` 0.x versiyada | Past | Kuzatiladi; zarurat bo‘lsa `sqlite3` to‘g‘ridan-to‘g‘ri |
-| R-10 | CI GitHub’da hali ishga tushmagan — workflow faqat lokal ekvivalent bilan sinalgan | Past | Birinchi push’da tekshiriladi |
+| R-10 | ~~CI GitHub’da sinalmagan~~ — **yopildi**: GitHub Actions run #2 (commit `536d837`) — barcha joblar ✅ | — | — |
 | R-11 | PHASE 0/0.5/1 branch’lari main’ga merge qilinmagan; main bo‘sh | Ma’lumot | Egasining qarori |
