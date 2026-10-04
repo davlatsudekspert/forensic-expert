@@ -1,0 +1,18 @@
+# Dart pub workspace root (https://dart.dev/tools/pub/workspaces).
+# Bitta lockfile — barcha paketlar bir xil dependency versiyalarini ishlatadi.
+name: forensic_expert_workspace
+publish_to: none
+
+environment:
+  sdk: ^3.13.0
+
+workspace:
+  - apps/mobile
+  - packages/fe_content_schema
+  - packages/fe_search_core
+  - packages/fe_calc_engine
+  - packages/fe_content_package
+  - packages/fe_database
+
+dev_dependencies:
+  lints: ^6.0.0

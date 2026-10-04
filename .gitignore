@@ -1,0 +1,29 @@
+# Dart / Flutter
+.dart_tool/
+.packages
+build/
+coverage/
+*.iml
+.idea/
+.vscode/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Sirlar — HECH QACHON commit qilinmaydi
+.env
+.env.*
+!.env.example
+*.pem
+*.p8
+*.p12
+*.jks
+*.keystore
+key.properties
+**/secrets/
+*.private.key
+*_private_key*
+google-services.json
+GoogleService-Info.plist
+
+# Test natijalari
+**/failures/
