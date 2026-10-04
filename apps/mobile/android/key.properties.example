@@ -1,0 +1,7 @@
+# RG-20 — release imzo namunasi. Nusxa: android/key.properties (gitignore’da).
+# HAQIQIY QIYMATLARNI BU FAYLGA YOZMANG va hech qachon commit qilmang.
+# Keystore faylini repozitoriydan tashqarida saqlang (masalan ~/keys/).
+storeFile=/absolute/path/outside/repo/upload-keystore.jks
+storePassword=CHANGE_ME
+keyAlias=upload
+keyPassword=CHANGE_ME

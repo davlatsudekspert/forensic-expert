@@ -161,6 +161,10 @@ void main() {
         for (final k in KnowledgeKind.values)
           for (final e in pilot.knowledge.byKind(k)) e.id,
         for (final r in ev.research) r.id,
+        // PHASE 7 tugunlari: namunalar, standartlar, yurisdiksion qoidalar.
+        for (final s in pilot.provenance.specimens) s.id,
+        for (final s in pilot.provenance.standards) s.id,
+        for (final r in pilot.legal.rules) r.id,
       };
       expect(ev.links, isNotEmpty);
       for (final l in ev.links) {

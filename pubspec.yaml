@@ -14,6 +14,7 @@ workspace:
   - packages/fe_content_package
   - packages/fe_database
   - packages/fe_content_pipeline
+  - packages/fe_purchase_verification
 
 dev_dependencies:
   lints: ^6.0.0

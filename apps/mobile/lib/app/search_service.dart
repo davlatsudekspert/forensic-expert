@@ -15,6 +15,23 @@ import '../domain/library/library_models.dart';
 import '../features/tools/tool_strings.dart';
 import 'providers.dart';
 
+/// Standart belgilanishining qidiriladigan qismlari: `ANSI/ASTM E2329-25`
+/// → `ASTM E2329-25`, `E2329-25`, `E2329`; `ICH Q2(R2)` → `Q2(R2)`.
+/// (Indeks terminni boshidan moslaydi — raqamli belgilanish o‘rtada qoladi.)
+List<String> designationAliases(String designation) {
+  final tokens = designation
+      .split(RegExp(r'[\s/]+'))
+      .where((t) => t.isNotEmpty)
+      .toList();
+  final out = <String>{
+    for (var i = 1; i < tokens.length; i++) tokens.sublist(i).join(' '),
+  };
+  final last = tokens.isEmpty ? '' : tokens.last;
+  final noYear = last.replaceFirst(RegExp(r'-\d{2}$'), '');
+  if (noYear != last && noYear.length >= 3) out.add(noYear);
+  return out.toList();
+}
+
 /// Global Search natija guruhlari (UI tartibi).
 /// PHASE 4 global taksonomiyasi (UI tartibi). Ichki (offline) natijalar —
 /// tashqi ilmiy qidiruvdan vizual ajratilgan.
@@ -100,6 +117,16 @@ class AppSearchService {
             kind: TermKind.synonym,
           ),
         );
+      for (final a in designationAliases(st.designation)) {
+        terms.add(
+          SearchTerm(
+            entityId: st.id,
+            category: SearchCategory.standard,
+            term: a,
+            kind: TermKind.abbreviation,
+          ),
+        );
+      }
     }
     // PHASE 5 Research / Evidence Library — faqat sarlavha (metadata).
     for (final r in research) {

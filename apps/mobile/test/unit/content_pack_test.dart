@@ -84,19 +84,23 @@ void main() {
     });
 
     test('yurisdiksiya qatlami alohida: INT qoidalari INCB manbasi bilan', () {
-      final morphine = repo.byId('morphine')!.details!;
-      final rule = morphine.legalRules.single;
+      // PHASE 7: GB/US/DE qoidalari ham bor — INT qatlami alohida tekshiriladi.
+      List<LegalRuleView> intRules(String id) => [
+        for (final r in repo.byId(id)!.details!.legalRules)
+          if (r.jurisdictionId == 'INT') r,
+      ];
+      final rule = intRules('morphine').single;
       expect(rule.jurisdictionId, 'INT');
       expect(rule.schedules, ['I']);
       expect(rule.status, ScientificStatus.needsReview);
       expect(rule.source.title, contains('Yellow List'));
-      final heroin = repo.byId('heroin')!.details!.legalRules.single;
+      final heroin = intRules('heroin').single;
       expect(heroin.schedules, ['I', 'IV']);
-      final thc = repo.byId('thc')!.details!.legalRules.single;
+      final thc = intRules('thc').single;
       expect(thc.datePrecision, 'year');
       // Ro‘yxatlarda yo‘q moddalar uchun qoida YARATILMAGAN.
-      expect(repo.byId('tramadol')!.details!.legalRules, isEmpty);
-      expect(repo.byId('pregabalin')!.details!.legalRules, isEmpty);
+      expect(intRules('tramadol'), isEmpty);
+      expect(intRules('pregabalin'), isEmpty);
     });
   });
 }

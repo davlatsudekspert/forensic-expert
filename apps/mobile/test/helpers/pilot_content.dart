@@ -1,3 +1,5 @@
+import 'package:forensic_expert/domain/evidence/provenance_models.dart';
+
 import 'dart:io';
 
 import 'package:drift/native.dart';
@@ -33,6 +35,7 @@ class PilotContent {
     this.status,
     this.evidence,
     this.images,
+    this.provenance,
   );
 
   final ContentLibraryRepository library;
@@ -42,6 +45,9 @@ class PilotContent {
   final EvidenceData evidence;
   final MemoryImageBytesLoader images;
 
+  /// PHASE 7 provenance qatlami.
+  final ProvenanceIndex provenance;
+
   List<Override> get overrides => [
     evidenceDataProvider.overrideWithValue(evidence),
     imageBytesLoaderProvider.overrideWith((ref) async => images),
@@ -49,6 +55,7 @@ class PilotContent {
     knowledgeRepositoryProvider.overrideWithValue(knowledge),
     contentLegalDataProvider.overrideWithValue(legal),
     contentStatusProvider.overrideWith((ref) async => status),
+    provenanceIndexProvider.overrideWithValue(provenance),
   ];
 }
 
@@ -80,6 +87,7 @@ Future<PilotContent> loadPilotContent() async {
           in await db.customSelect('SELECT image_id, bytes FROM images').get())
         r.read<String>('image_id'): r.read<Uint8List>('bytes'),
     }),
+    prov.index,
   );
   await db.close();
   return content;

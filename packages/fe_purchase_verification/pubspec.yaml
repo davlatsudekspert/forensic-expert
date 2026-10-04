@@ -1,0 +1,19 @@
+name: fe_purchase_verification
+description: >-
+  RG-18 — server tomonida xaridni tekshirish (App Store Server API, Google Play
+  Developer API) arxitekturasi. Faqat SERVERDA ishlatiladi; mobil ilova bu
+  paketga bog‘lanmaydi. Haqiqiy kalitlar bu repozitoriyda yo‘q — store
+  mijozlari portlar orqali, testlarda mock.
+publish_to: none
+version: 0.1.0
+resolution: workspace
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  meta: ^1.19.0
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.31.0

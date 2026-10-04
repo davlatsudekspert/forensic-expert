@@ -137,9 +137,10 @@ void main() {
 
     testWidgets('kontent yo‘q davlat: «tekshirilmagan», boshqa davlat '
         'qonuni fallback sifatida ko‘rsatilmaydi', (tester) async {
-      await open(tester, Routes.jurisdiction('DE'));
+      // PHASE 7: DE endi pilot hujjatiga ega — kontentsiz davlat sifatida FR.
+      await open(tester, Routes.jurisdiction('FR'));
       expect(find.byKey(const Key('jurisdiction.notVerified')), findsOneWidget);
-      // UK pilot hujjatlari Germaniya sahifasida YO‘Q.
+      // UK pilot hujjatlari Fransiya sahifasida YO‘Q.
       for (final i in pilot.legal.instruments) {
         if (i.jurisdictionId.startsWith('GB')) {
           expect(find.byKey(Key('instrument.${i.id}')), findsNothing);
