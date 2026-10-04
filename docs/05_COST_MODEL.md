@@ -33,7 +33,7 @@
 | Apple Developer Program | $99/yil | https://developer.apple.com/programs/whats-included/ | VERIFIED |
 | App Store komissiyasi | 30% standart; Small Business Program va obunaning 2-yilidan 15% | https://developer.apple.com/app-store/small-business-program/ | VERIFIED |
 | Google Play ro‘yxatdan o‘tish | $25, bir marta | https://support.google.com/googleplay/android-developer/answer/6112435 | VERIFIED |
-| Google Play xizmat haqi | Obunalar 15%; boshqa xaridlar yiliga birinchi $1M uchun 15% (O‘zbekiston ham shu guruhda). AQSh/UK/EEA/Avstraliya/Yaponiyada 2026 dan yangi tuzilma | https://support.google.com/googleplay/android-developer/answer/112622 | VERIFIED (yangi bozorlar — PARTIALLY) |
+| Google Play xizmat haqi | Hozir: obunalar 15%; boshqa xaridlar yiliga birinchi $1M uchun 15%. **Yangi tuzilma** (obunalar 10% + billing fee): EEA/UK/AQSh — 2026-06-30, AU/JP — 2026-09-30, KR — 2026-12-31, **qolgan dunyo, jumladan O‘zbekiston va Rossiya — 2027-09-30 dan** | https://support.google.com/googleplay/android-developer/answer/112622; https://support.google.com/googleplay/android-developer/answer/16954621 | VERIFIED (yangi tuzilma tafsilotlari — PARTIALLY) |
 | Cloudflare R2 | $0.015/GB-oy; **egress bepul**; oyiga 10 GB storage bepul | https://developers.cloudflare.com/r2/pricing/ | VERIFIED |
 | Sentry | Developer bepul (1 foydalanuvchi, 5K xato/oy); Team $26/oy (yillik to‘lov bilan) | https://sentry.io/pricing/ | VERIFIED / PARTIALLY |
 | Firebase Crashlytics | Bepul | https://firebase.google.com/pricing | VERIFIED |

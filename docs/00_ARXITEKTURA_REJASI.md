@@ -15,6 +15,7 @@
 Bu hujjatda ikki xil belgidan foydalanaman. Ular loyihaning «hech narsani o‘ylab topma» qoidasini rejalash bosqichining o‘zida qo‘llash uchun kerak:
 
 - **[TEKSHIRISH KERAK]** — men xotiramdan bilgan, lekin hali birlamchi manba orqali tekshirmagan fakt: nashr yili, standart raqami, litsenziya sharti yoki API imkoniyati. PHASE 0 yakunida har biri rasmiy manbadan tekshiriladi yoki o‘chiriladi.
+- **[AUDIT: STATUS — ID]** — PHASE 0.5 da tekshirilgan band; ID `docs/01_EVIDENCE_AUDIT.md` dagi qatorga ishora qiladi.
 - **MA’LUMOT TEKSHIRILMAGAN — EKSPERT TASDIG‘I KERAK** — ilovaning o‘zida ishlatiladigan rasmiy status (pastda, 6-bo‘limda).
 
 Bu hujjatda birorta ham konsentratsiya, koeffitsient yoki toksik/fatal diapazon qiymati **ataylab keltirilmagan**. Raqamli ilmiy qiymatlar faqat content pipeline orqali, manbasi bilan va review’dan keyin kiritiladi.
@@ -64,7 +65,7 @@ Loyihaning eng qiyin qismi kod emas — **ilmiy kontent va uning review jarayoni
 
 ## 2. Jahondagi asosiy raqobatchilar va bizning farqimiz
 
-> Eslatma: quyidagi ro‘yxat bilimlarimga asoslangan. Har bir mahsulotning hozirgi holati, narxi va mobil ilovasi bor-yo‘qligi PHASE 0 davomida App Store / Google Play va rasmiy saytlar orqali **[TEKSHIRISH KERAK]**.
+> Eslatma: quyidagi ro‘yxat bilimlarimga asoslangan. Har bir mahsulotning hozirgi holati, narxi va mobil ilovasi bor-yo‘qligi PHASE 0 davomida App Store / Google Play va rasmiy saytlar orqali **[AUDIT: jonli tekshirildi — `docs/02_COMPETITOR_ANALYSIS.md`]**. Muhim tuzatish: NLM WISER 2023-02-28 da to‘xtatilgan (A-21); eng yaqin raqobatchi — 4n6 Tools Pro (Slovakiya).
 
 ### 2.1. Raqobatchilar toifalari
 
@@ -83,7 +84,7 @@ Loyihaning eng qiyin qismi kod emas — **ilmiy kontent va uning review jarayoni
 1. **Sud ekspertizasiga ixtisoslashgan** — klinik emas, postmortem va laboratoriya konteksti.
 2. **Provenance hamma joyda** — har bir raqam ostida «Manbalar» tugmasi.
 3. **Offline-first** — laboratoriya va morgda internet bo‘lmasligi mumkin.
-4. **EN / RU / UZ** — MDH va Markaziy Osiyo bozorida bunday professional mahsulot deyarli yo‘q (bu ham **[TEKSHIRISH KERAK]**, lekin bilishimcha shunday).
+4. **EN / RU / UZ** — MDH va Markaziy Osiyo bozorida bunday professional mahsulot deyarli yo‘q **[AUDIT: VERIFIED — RU/UZ storefront’larda bunday ilova topilmadi, `02_COMPETITOR_ANALYSIS.md` G-1]**.
 5. **Shaffof kalkulyatorlar** — formula, taxminlar, noaniqlik va cheklov ko‘rsatiladi.
 6. **Xavfsiz AI** — RAG, faqat ichki manbalardan, yakuniy xulosasiz.
 7. **Ta’lim va professional rejim bitta platformada** — talaba kelajakda professional obunachiga aylanadi.
@@ -128,7 +129,7 @@ Ijtimoiy tarmoq, foydalanuvchilar o‘rtasida chat, reels, marketplace, reklama 
 
 ## 4. Ishonchli ilmiy manbalarning aniq ro‘yxati
 
-Har bir manba uchun **qanday foydalanish huquqiy jihatdan mumkinligi** ko‘rsatilgan. Litsenziya shartlari PHASE 0 da har bir manbaning rasmiy «Terms of Use» sahifasidan **[TEKSHIRISH KERAK]**.
+Har bir manba uchun **qanday foydalanish huquqiy jihatdan mumkinligi** ko‘rsatilgan. Litsenziya shartlari PHASE 0 da har bir manbaning rasmiy «Terms of Use» sahifasidan tekshirildi **[AUDIT: B-01…B-15; yakuniy rejimlar — `docs/03_SOURCE_MATRIX.md`]**.
 
 ### 4.1. 1-daraja — asosiy / yuqori ishonch
 
@@ -139,36 +140,36 @@ Har bir manba uchun **qanday foydalanish huquqiy jihatdan mumkinligi** ko‘rsat
 | **PubMed Central (Open Access subset)** | Ochiq litsenziyali to‘liq matnlar | Faqat litsenziyasi ruxsat bergan maqolalar (CC BY va h.k.) |
 | **NIST Chemistry WebBook** | Fizik-kimyoviy ma’lumotlar, ba’zi spektrlar | Onlayn reference; **NIST mass spektral kutubxonasi pullik** — ilovaga kiritilmaydi |
 | **NIST Forensic Science / OSAC Registry** | Sud fanlari standartlari ro‘yxati | Bibliografik havola; standartlar matni ko‘chirilmaydi |
-| **AAFS Standards Board (ASB)** standartlari | Masalan, sud toksikologiyasida metod validatsiyasi standarti (ANSI/ASB Standard 036 **[TEKSHIRISH KERAK]**) | Havola va qisqa mustaqil tavsif |
+| **AAFS Standards Board (ASB)** standartlari | Masalan, sud toksikologiyasida metod validatsiyasi standarti (ANSI/ASB Standard 036, 2019 **[AUDIT: VERIFIED — A-18; tijoriy ko‘chirish taqiqlangan → CITE-ONLY]**). Qamrov standartlari: 119 — o‘lim tergovi, 120 — haydovchilar, 121 — DFC **[AUDIT: A-19]** | Havola va qisqa mustaqil tavsif |
 | **UNODC** | Laboratoriya qo‘llanmalari (giyohvand moddalarni aniqlash bo‘yicha tavsiya etilgan metodlar), Early Warning Advisory on NPS, xalqaro nazorat ro‘yxatlari | Ommaviy hujjatlar; havola va mustaqil xulosa |
 | **WHO** | Xalqaro nazorat bo‘yicha tavsiyalar (ECDD), ICD-11 | Havola |
-| **EUDA** (sobiq EMCDDA, 2024-yildan EU Drugs Agency **[TEKSHIRISH KERAK]**) | Modda profillari, NPS ma’lumotlari | Havola, litsenziyasi ruxsat bergan qismlar |
-| **SWGDRUG** | Modda monografiyalari, analiz bo‘yicha tavsiyalar, bepul mass spektral kutubxona | Bepul; foydalanish shartlari **[TEKSHIRISH KERAK]** |
+| **EUDA** (sobiq EMCDDA, 2024-07-02 dan EU Drugs Agency, Reg. (EU) 2023/1322 **[AUDIT: VERIFIED — B-01]**) | Modda profillari, NPS ma’lumotlari | Havola, litsenziyasi ruxsat bergan qismlar |
+| **SWGDRUG** | Modda monografiyalari, analiz bo‘yicha tavsiyalar, bepul mass spektral kutubxona | Bepul, lekin «All rights reserved» — qayta tarqatish uchun ruxsat kerak **[AUDIT: PARTIALLY — B-03]** |
 | **CDC / NIOSH** | Kimyoviy xavf ma’lumotlari (masalan, NIOSH Pocket Guide) | AQSh davlat ma’lumoti; havola |
 | **FDA** | Dori yorliqlari (DailyMed orqali — NLM) | Ochiq ma’lumot |
-| **ChEBI** (EMBL-EBI) | Kimyoviy ontologiya, sinflar | CC BY 4.0 **[TEKSHIRISH KERAK]** |
+| **ChEBI** (EMBL-EBI) | Kimyoviy ontologiya, sinflar | CC BY 4.0 **[AUDIT: VERIFIED — B-06]** |
 | **Peer-reviewed jurnallar** | Journal of Analytical Toxicology, Forensic Science International, Journal of Forensic Sciences, International Journal of Legal Medicine, Drug Testing and Analysis, Forensic Toxicology, Clinical Toxicology | Faqat bibliografik havola (DOI/PMID) + mustaqil ravishda chiqarilgan faktlar. Ochiq litsenziyali maqolalardan ko‘proq foydalanish mumkin |
 
 ### 4.2. 2-daraja — professional ilmiy adabiyot
 
 | Manba | Foydalanish |
 |---|---|
-| Baselt R.C., *Disposition of Toxic Drugs and Chemicals in Man* (Biomedical Publications; eng so‘nggi nashr **[TEKSHIRISH KERAK]**) | **Faqat bibliografik havola.** Jadvallari ko‘chirilmaydi. Litsenziya olinsa — alohida shartnoma |
+| Baselt R.C., *Disposition of Toxic Drugs and Chemicals in Man* (Biomedical Publications; 12-nashr, 2020; MedicinesComplete’da onlayn obuna **[AUDIT: VERIFIED — A-15; LICENSE REQUIRED LR-02]**) | **Faqat bibliografik havola.** Jadvallari ko‘chirilmaydi. Litsenziya olinsa — alohida shartnoma |
 | *Clarke’s Analysis of Drugs and Poisons* (Pharmaceutical Press) | Faqat havola; onlayn versiyasi uchun institutsional litsenziya varianti alohida ko‘riladi |
-| Schulz M. va hamk., terapevtik va toksik qon konsentratsiyalari bo‘yicha review (Critical Care jurnalida, 2012 va yangilangan versiyasi 2020 **[TEKSHIRISH KERAK]**) | Ochiq kirishli bo‘lsa, litsenziyasi (CC BY?) **[TEKSHIRISH KERAK]** — ruxsat bersa, atributsiya bilan strukturaviy ma’lumot sifatida |
-| TIAFT ma’lumotlari (reference qiymatlar, UV spektrlar) | Foydalanish shartlari **[TEKSHIRISH KERAK]** |
+| Schulz M. va hamk., terapevtik va toksik qon konsentratsiyalari bo‘yicha review (Crit Care 2012, doi:10.1186/cc11441, CC BY 2.0; Crit Care 2020, doi:10.1186/s13054-020-02915-5, CC BY 4.0 **[AUDIT: VERIFIED — A-01, A-02]**) | OPEN-REUSE — atributsiya bilan strukturaviy ma’lumot sifatida; V1 reference konsentratsiyalarining asosiy ochiq manbasi |
+| TIAFT ma’lumotlari (reference qiymatlar, UV spektrlar) | TIAFT endi Schulz maqolalariga havola beradi; alohida ro‘yxat topilmadi **[AUDIT: PARTIALLY — B-08]** |
 | Saukko P., Knight B., *Knight’s Forensic Pathology* | Havola |
 | Henssge C., Madea B. va hamk. — o‘lim vaqtini aniqlash bo‘yicha birlamchi maqolalar va monografiya | Henssge kalkulyatori uchun **birlamchi maqolalardan** formula va koeffitsientlar tekshiriladi |
-| Widmark E.M.P. (1932) va keyingi modifikatsiyalar (Watson P.E. va hamk., 1980 — umumiy tana suvi **[TEKSHIRISH KERAK]**; Seidl, Forrest va boshqa modifikatsiyalar) | Ethanol kalkulyatorlari uchun birlamchi manbalar |
+| Widmark E.M.P. (1932) va keyingi modifikatsiyalar (Watson P.E. va hamk., 1980 — umumiy tana suvi, doi:10.1093/ajcn/33.1.27 **[AUDIT: VERIFIED — A-04]**; Seidl, Forrest va boshqa modifikatsiyalar) | Ethanol kalkulyatorlari uchun birlamchi manbalar |
 | Jones A.W. — etanol farmakokinetikasi bo‘yicha review maqolalar | Eliminatsiya tezligi diapazonlari va cheklovlar uchun |
 | Moffat, Osselton, Widdop (Clarke’s muharrirlari), Levine B. *Principles of Forensic Toxicology*, Karch S. *Drug Abuse Handbook* | Havola, ta’lim kontenti uchun mustaqil tavsif |
-| Rus tilidagi sud-tibbiyot darsliklari (masalan, Pigolkin Yu.I. tahriri ostidagi «Судебная медицина» **[TEKSHIRISH KERAK]**) | RU terminologiyasi uchun |
+| Rus tilidagi sud-tibbiyot darsliklari (masalan, Pigolkin Yu.I. tahriri ostidagi «Судебная медицина», 4-изд., ГЭОТАР-Медиа, 2022 **[AUDIT: PARTIALLY — A-17]**) | RU terminologiyasi uchun |
 
 ### 4.3. 3-daraja — milliy manbalar
 
 | Davlat | Manba | Nima uchun |
 |---|---|---|
-| O‘zbekiston | **lex.uz** — Qonunchilik ma’lumotlari milliy bazasi | Narkotik vositalar, psixotrop moddalar va prekursorlar ro‘yxatlari, «Narkotik vositalar va psixotrop moddalar to‘g‘risida»gi qonun, sud-ekspertiza faoliyati to‘g‘risidagi qonunchilik. Aniq hujjat raqamlari va oxirgi tahrirlari **[TEKSHIRISH KERAK]** |
+| O‘zbekiston | **lex.uz** — Qonunchilik ma’lumotlari milliy bazasi | «Giyohvandlik vositalari va psixotrop moddalar toʻgʻrisida»gi qonun (813-I, 19.08.1999); nazorat ro‘yxatlari — VM qarori №330 (12.11.2015) ilovalari; «Sud ekspertizasi to‘g‘risida»gi ZRU-249 (2010) → 2026-12-13 dan yangi «Sud-ekspertlik faoliyati to‘g‘risida»gi ZRU-1152 **[AUDIT: VERIFIED — F-01, F-02, F-05]** |
 | O‘zbekiston | Sog‘liqni saqlash vazirligi, Respublika sud-tibbiy ekspertizasi ilmiy-amaliy markazi rasmiy hujjatlari | Milliy metodik ko‘rsatmalar (ochiq bo‘lsa) |
 | Rossiya | Rossiya hukumati qarorlari (narkotik vositalar ro‘yxati), Sog‘liqni saqlash vazirligining sud-tibbiy ekspertiza tartibi | RU foydalanuvchilari uchun huquqiy kontekst |
 | AQSh | DEA Controlled Substances Act Schedules (21 CFR 1308) | Huquqiy status |
@@ -181,7 +182,7 @@ Har bir manba uchun **qanday foydalanish huquqiy jihatdan mumkinligi** ko‘rsat
 
 - Bloglar, forumlar, Wikipedia (faqat birlamchi manbani topish uchun yo‘naltiruvchi sifatida mumkin, havola sifatida emas).
 - Litsenziyasiz ko‘chirilgan PDF darsliklar.
-- DrugBank — tijoriy foydalanish uchun litsenziya talab qiladi **[TEKSHIRISH KERAK]**; litsenziyasiz ishlatilmaydi.
+- DrugBank — to‘liq ma’lumotlar CC BY-NC, tijoriy foydalanish uchun pullik litsenziya **[AUDIT: VERIFIED — B-07]**; faqat **DrugBank Open Data (CC0)** ishlatiladi.
 - AI tomonidan yaratilgan, manbasi tekshirilmagan matn.
 
 ---
@@ -191,7 +192,7 @@ Har bir manba uchun **qanday foydalanish huquqiy jihatdan mumkinligi** ko‘rsat
 | Ma’lumot turi | Birlamchi manba | Ikkilamchi / tekshiruv | Minimal status (ekspert kontentida ko‘rsatish uchun) |
 |---|---|---|---|
 | Kimyoviy nom, IUPAC, formula, molekulyar massa, InChIKey | PubChem | ChEBI, NIST WebBook | `VERIFIED` (avtomatik tekshirish + inson ko‘rigi) |
-| CAS raqami | PubChem (CAS ro‘yxatga olish raqamlari CAS kompaniyasining ma’lumoti — foydalanish shartlari **[TEKSHIRISH KERAK]**) | NIST WebBook | `REVIEWED` |
+| CAS raqami | PubChem (CAS ro‘yxatga olish raqamlari CAS kompaniyasining ma’lumoti — ommaga ko‘rsatish/qidiruv uchun CAS litsenziyasi talab qilinadi **[AUDIT: VERIFIED — B-05]**) → **V1 da ko‘rsatilmaydi** | — | LICENSE REQUIRED (LR-01) |
 | Sinonimlar (EN) | PubChem (filtrlangan — PubChemda juda ko‘p shovqinli sinonim bor) | UNODC, SWGDRUG | `REVIEWED` |
 | RU / UZ nomlari | Rasmiy ro‘yxatlar (lex.uz, RU hukumat ro‘yxatlari), darsliklar | Ilmiy tarjimon + reviewer | `REVIEWED` |
 | Dori/kimyoviy sinf | WHO ATC (dorilar uchun), ChEBI | Darsliklar | `REVIEWED` |
@@ -414,7 +415,7 @@ Tez (<50 ms lokal so‘rov, 1500+ yozuvli bazada), typo-tolerant, ko‘p tilli, 
 | Variant | Baho |
 |---|---|
 | **SQLite FTS5 (drift orqali)** | ✅ Tanlov. Barcha platformada yetuk, `trigram` tokenizer bilan qisman/typo moslik, BM25 reytingi, bitta fayl — content pack bilan birga yetkaziladi |
-| Isar / ObjectBox full-text | Yetarli emas: ko‘p tilli typo-tolerantlik zaif, Isar loyihasining kelajagi noaniq **[TEKSHIRISH KERAK]** |
+| Isar / ObjectBox full-text | Yetarli emas: ko‘p tilli typo-tolerantlik zaif, Isar 2023-04 dan barqaror relizsiz **[AUDIT: VERIFIED — E-01]** |
 | Meilisearch/Typesense (server) | Offline-first talabga zid |
 | O‘zimizning in-memory indeks | Murakkab, xotira sarfi katta |
 
@@ -476,7 +477,7 @@ Alohida tab: **EXTERNAL SCIENTIFIC SEARCH**. O‘z serverimizdagi proxy orqali (
 - PubMed (E-utilities) — maqolalar;
 - PubChem (PUG-REST) — birikmalar;
 - Crossref REST API — DOI metadata;
-- NIST WebBook — rasmiy API mavjudligi **[TEKSHIRISH KERAK]**; bo‘lmasa faqat tashqi havola.
+- NIST WebBook — rasmiy API yo‘q **[AUDIT: VERIFIED — B-09]** → faqat tashqi havola.
 
 Natijalar kulrang «EXTERNAL — NOT VERIFIED» belgisi bilan chiqadi va **hech qachon avtomatik ravishda ichki bazaga tushmaydi**. Professional foydalanuvchi «Taklif qilish» tugmasi orqali CMS’dagi review navbatiga yuborishi mumkin.
 
@@ -777,7 +778,7 @@ Bu qoidalar uchun alohida **AI evaluation to‘plami** (200+ test savoli, EN/RU/
 ### 12.5. Model va infratuzilma
 
 - LLM: Anthropic Claude API (server tarafdan; ilovada API kalit yo‘q). Ko‘p tilli (EN/RU/UZ) sifat PHASE 8 boshida eval to‘plami bilan o‘lchanadi. Model tanlovi narx/sifat bo‘yicha o‘sha paytda yakunlanadi.
-- Embedding: ko‘p tilli embedding modeli; tanlov o‘zbek tilidagi retrieval sifatini eval qilib aniqlanadi **[TEKSHIRISH KERAK — o‘zbek tili uchun sifat]**.
+- Embedding: ko‘p tilli embedding modeli; tanlov o‘zbek tilidagi retrieval sifatini eval qilib aniqlanadi **[AUDIT: narx tekshirildi (voyage-4, `05`); o‘zbek tili sifati — PHASE 8 eval’da o‘lchanadi]**.
 - Backend: Supabase (Postgres + pgvector + Edge Functions + Auth) — tez boshlash uchun. Muqobil: o‘z serverimiz (Cloud Run + Postgres). Qaror PHASE 1 da.
 - Logging: savol matni default holatda **saqlanmaydi**; faqat anonim metrikalar (token soni, kechikish, validator natijasi). Foydalanuvchi ixtiyoriy ravishda «javobni yaxshilash uchun yuborish» ni tanlashi mumkin.
 
@@ -807,7 +808,7 @@ Bu qoidalar uchun alohida **AI evaluation to‘plami** (200+ test savoli, EN/RU/
 
 ### 14.1. Ma’lumotlar minimalizmi
 
-- Akkauntsiz ishlash mumkin. Akkaunt: email yoki Sign in with Apple / Google. (Agar uchinchi tomon login bo‘lsa, Apple Sign in with Apple’ni ham taklif qilishni talab qiladi — Guideline 4.8 **[TEKSHIRISH KERAK]**.)
+- Akkauntsiz ishlash mumkin. Akkaunt: email yoki Sign in with Apple / Google. (Agar uchinchi tomon login bo‘lsa, Apple Sign in with Apple’ni ham taklif qilishni talab qiladi — Guideline 4.8 **[AUDIT: VERIFIED — C-02]**: talab Sign in with Apple deb nomlanmagan, maxfiylik xususiyatlari orqali ta’riflangan; Sign in with Apple bu talabga javob beradi.)
 - Ism, lavozim, tashkilot so‘ralmaydi (ixtiyoriy).
 - Analitika: privacy-friendly, PII’siz, opt-in (masalan, o‘z serverimizda yoki PII yubormaydigan konfiguratsiyada). Reklama SDK’lari **yo‘q**.
 
@@ -816,7 +817,7 @@ Bu qoidalar uchun alohida **AI evaluation to‘plami** (200+ test savoli, EN/RU/
 - **On-device PII detektori** (regex + qoidalar): ism-familiya shakllari (kirill/lotin), pasport (O‘zbekiston formati va boshqalar), telefon raqamlari, manzil belgilari, email, sana + ism birikmasi, ish/case raqamlari («№», «Ish raqami», «дело №» kabi naqshlar).
 - Topilsa: matn ichida ajratib ko‘rsatiladi, «Olib tashlash» / «Baribir yuborish» tanlovi. Default — yubormaslik.
 - AI oynasi tepasida doimiy banner: «Shaxsiy ma’lumot, ism, ish raqami yoki pasport ma’lumotlarini kiritmang».
-- Server tarafda ikkinchi qatlam filtri; LLM provayderi bilan ma’lumotni o‘qitishda ishlatmaslik sharti (API shartlariga muvofiq **[TEKSHIRISH KERAK]**).
+- Server tarafda ikkinchi qatlam filtri; LLM provayderi bilan ma’lumotni o‘qitishda ishlatmaslik sharti (Anthropic Commercial Terms: «Anthropic may not train models on Customer Content from Services» **[AUDIT: VERIFIED — `05_COST_MODEL.md`]**).
 
 ### 14.3. Lokal ma’lumotlarni himoyalash
 
@@ -837,7 +838,7 @@ Bu qoidalar uchun alohida **AI evaluation to‘plami** (200+ test savoli, EN/RU/
 
 ### 14.5. Huquqiy hujjatlar
 
-Privacy Policy, Terms of Use, Scientific Disclaimer, Data Safety (Google Play), App Privacy «nutrition label» (App Store), Delete Account (ilova ichida + veb sahifa). O‘zbekistonning shaxsga doir ma’lumotlar to‘g‘risidagi qonuni va lokalizatsiya talablari, GDPR — yuridik ko‘rik **[TEKSHIRISH KERAK]**.
+Privacy Policy, Terms of Use, Scientific Disclaimer, Data Safety (Google Play), App Privacy «nutrition label» (App Store), Delete Account (ilova ichida + veb sahifa). O‘zbekistonning shaxsga doir ma’lumotlar to‘g‘risidagi qonuni va lokalizatsiya talablari, GDPR — yuridik ko‘rik kerak. **[AUDIT: PARTIALLY — F-03, F-04]** O‘zbekiston lokalizatsiya talabi (27-1-modda) 2026-03-26 da ZRU-1125 bilan toraytirilgan: majburiy lokal saqlash — biometrik, genetik va telekom foydalanuvchilari ma’lumotlari; qolganlari adekvatlik yoki standart shartnoma bandlari asosida chetda mumkin. Bizning ilova biometrik/genetik ma’lumot yig‘maydi. Yakuniy xulosa — yurist (L-02).
 
 ---
 
@@ -886,7 +887,7 @@ Barcha konsepsiyalarda taqiqlangan: tibbiy xoch, bosh suyagi, politsiya nishoni,
 - **Symbol:** 3 yoy + 3 ta har xil balandlikdagi cho‘qqi; bitta chiziq qalinligi (monoline), dumaloq uchlar yo‘q — aniqlik hissi uchun to‘g‘ri kesilgan uchlar.
 - **32 px:** ichki yoy soni 2 ga kamaytirilgan maxsus kichik versiya (optical sizing).
 - **Afzalligi:** sohaga xos, lekin klishe emas; dalil va laboratoriyani birlashtiradi.
-- **Xavf:** barmoq izi elementi ba’zi kriminalistika brendlarida ishlatiladi — trademark qidiruvi kerak **[TEKSHIRISH KERAK]**.
+- **Xavf:** barmoq izi elementi ba’zi kriminalistika brendlarida ishlatiladi — trademark qidiruvi kerak **[AUDIT: Store’lar tekshirildi (`02` 5-bo‘lim); rasmiy reestrlar — ochiq O-11]**.
 
 ### Konsepsiya B — «EVIDENCE BRACKET»
 
@@ -939,7 +940,7 @@ Barcha juftliklar WCAG 2.2 AA (oddiy matn ≥ 4.5:1) bo‘yicha avtomatik test q
 
 - UI: **Inter** (lotin + kirill to‘liq qo‘llab-quvvatlanadi, OFL litsenziya) — o‘zbek lotin belgilari (o‘, g‘) tekshiriladi.
 - Raqamlar va formulalar: **JetBrains Mono** yoki **IBM Plex Mono** (tabular figures — natijalar ustunlarda tekis turishi uchun).
-- Formulalar: `flutter_math_fork` (LaTeX render) **[TEKSHIRISH KERAK — paket holati]**.
+- Formulalar: build vaqtida LaTeX → SVG render (afzal) yoki `flutter_math_fork` **[AUDIT: E-06 — ishlaydi, lekin kam qo‘llab-quvvatlanadi]**.
 - Shriftlar ilova ichiga o‘rnatiladi (offline, Google Fonts’dan runtime’da yuklanmaydi).
 - Tip shkalasi: 12 / 14 / 16 / 18 / 22 / 28 / 34; Dynamic Type bilan 200% gacha masshtablash.
 
@@ -961,7 +962,7 @@ Search bar · Category result list · Entity card · Status badge · Sources she
 
 | Variant | Afzallik | Kamchilik |
 |---|---|---|
-| **RevenueCat** (`purchases_flutter`) | Ikki platforma bitta API, server tarafda receipt validatsiyasi, webhook’lar, entitlement modeli, tez ishga tushirish | Uchinchi tomon, daromaddan foiz (ma’lum hajmdan keyin) **[TEKSHIRISH KERAK — joriy narxlar]** |
+| **RevenueCat** (`purchases_flutter`) | Ikki platforma bitta API, server tarafda receipt validatsiyasi, webhook’lar, entitlement modeli, tez ishga tushirish | Uchinchi tomon, daromaddan foiz (ma’lum hajmdan keyin) **[AUDIT: VERIFIED — MTR $2 500 gacha bepul, keyin 1%; `05_COST_MODEL.md`]** |
 | `in_app_purchase` (rasmiy Flutter plagini) + o‘z backend | To‘liq nazorat, uchinchi tomon yo‘q | App Store Server API va Google Play Developer API bilan validatsiya, notification’lar, grace period — hammasini o‘zimiz yozamiz |
 
 **Tavsiya:** V1 uchun RevenueCat (xato xavfi kam, tezroq). Arxitekturada `BillingRepository` interfeysi orqali ajratilgan — keyin o‘z backendga o‘tish mumkin.
@@ -985,7 +986,7 @@ Entitlements:
 - Offline: oxirgi tasdiqlangan entitlement holati xavfsiz keshlanadi; muddati o‘tgan bo‘lsa, ma’lum grace period.
 - **Restore Purchases** tugmasi Profile → Subscription va paywall’da.
 - **Manage Subscription** — platformaning obuna boshqarish sahifasiga deep link.
-- Institution (kelajak): universitet/tashkilot uchun server-side litsenziya (domen email yoki taklif kodi orqali). Apple qoidalariga muvofiqligi alohida tekshiriladi **[TEKSHIRISH KERAK]**.
+- Institution (kelajak): universitet/tashkilot uchun server-side litsenziya (domen email yoki taklif kodi orqali). Apple qoidalariga muvofiqligi alohida tekshiriladi **[AUDIT: ochiq — FUTURE]**.
 
 ### 18.3. Testlar
 
@@ -997,8 +998,8 @@ StoreKit Configuration fayl (Xcode lokal test), Sandbox va TestFlight; Google Pl
 
 | Risk | Platforma | Ehtimoli | Choralar |
 |---|---|---|---|
-| Tibbiy ilova sifatida qat’iy ko‘rik (ma’lumot aniqligi, metodologiya oshkoraligi) | Apple (Guideline 1.4.1 **[TEKSHIRISH KERAK]**) | O‘rta | Har bir hisobda metodologiya va manba ochiq; disclaimer; «diagnoz qo‘ymaydi» positioning |
-| Health apps deklaratsiyasi | Google Play (Health apps policy, Health app declaration **[TEKSHIRISH KERAK]**) | Yuqori (majburiy forma) | Kategoriya: Medical / Education; to‘g‘ri deklaratsiya |
+| Tibbiy ilova sifatida qat’iy ko‘rik (ma’lumot aniqligi, metodologiya oshkoraligi) | Apple (Guideline 1.4.1 **[AUDIT: VERIFIED — C-01]**) | O‘rta | Har bir hisobda metodologiya va manba ochiq; disclaimer; «diagnoz qo‘ymaydi» positioning |
+| Health apps deklaratsiyasi | Google Play (Health apps policy, Health app declaration **[AUDIT: VERIFIED — D-01]**) | Yuqori (majburiy forma) | Kategoriya: «Medical Reference and Education»; tavsifda «not a medical device and does not diagnose, treat, cure, or prevent any medical condition» disclaimeri majburiy |
 | Giyohvand moddalar mavzusi | Ikkalasi | O‘rta | Kontent reference/ta’lim xarakterida; sotib olish, tayyorlash, iste’mol qilish usullari, dozalash maslahati **yo‘q**. Sintez yo‘llari kiritilmaydi |
 | AI generatsiya kontenti | Google Play AI-generated content siyosati; Apple 1.x | O‘rta | Ilova ichida AI javobi haqida shikoyat qilish tugmasi; xavfsizlik filtrlari |
 | Sezgir tasvirlar (jarohatlar, autopsiya) | Ikkalasi | O‘rta | V1’da fotosuratlar yo‘q yoki minimal; sxematik chizmalar; blur + ogohlantirish; yosh reytingi mos ravishda (masalan, 17+/Mature) |
@@ -1007,7 +1008,7 @@ StoreKit Configuration fayl (Xcode lokal test), Sandbox va TestFlight; Google Pl
 | Minimal funksionallik | Apple 4.2 | Past | Offline kutubxona + kalkulyatorlar yetarli |
 | Privacy label / Data safety | Ikkalasi | Yuqori (majburiy) | Haqiqiy SDK’lar bo‘yicha aniq to‘ldirish; reklama SDK yo‘q |
 | Uchinchi tomon kontent litsenziyasi | Ikkalasi (IP shikoyat) | O‘rta | Har bir manbaning litsenziyasi `sources.license` da; About → Atributsiyalar |
-| Eksport nazorati (shifrlash) | Apple (ITSAppUsesNonExemptEncryption) | Past | Standart HTTPS/OS shifrlash — odatda istisno; tekshiriladi **[TEKSHIRISH KERAK]** |
+| Eksport nazorati (shifrlash) | Apple (ITSAppUsesNonExemptEncryption) | Past | Standart HTTPS/OS shifrlash — istisno **[AUDIT: VERIFIED — C-08]**; SQLCipher/sqlite3mc ishlatilsa deklaratsiya qayta ko‘riladi |
 | Ba’zi davlatlarda tibbiy dasturiy ta’minot (SaMD) sifatida talqin | Regulyator | Past–o‘rta | Positioning: reference/education/calculation; diagnostika va davolash qarori yo‘q. Yuridik ko‘rik tavsiya etiladi |
 
 Store positioning: **«Professional forensic reference, education and scientific calculation software.»** Consumer diagnosis app sifatida ko‘rsatilmaydi.
@@ -1024,8 +1025,8 @@ Store positioning: **«Professional forensic reference, education and scientific
 | Arxitektura | Feature-first + Clean (presentation / domain / data) | Kalkulyator va domen mantiqini UI’dan ajratish talabi |
 | State | **Riverpod** | Testlanadigan, compile-safe, keraksiz rebuild’larni nazorat qilish oson |
 | Navigatsiya | **go_router** (StatefulShellRoute — har bir tab o‘z stack’ini saqlaydi) | Bottom nav’da tab almashganda holat saqlanadi → «instant» his |
-| DB | **drift** (SQLite, FTS5) + content.db (read-only) + user.db (read-write) | SQL kuchi, migratsiya, background isolate, test qulayligi |
-| Shifrlash | `flutter_secure_storage` + SQLCipher yoki maydon shifrlash | 14-bo‘lim |
+| DB | **drift** (SQLite, FTS5) + content.db (read-only) + user.db (read-write); SQLite `sqlite3` 3.x paketi build hooks orqali (FTS5 bilan) | SQL kuchi, migratsiya, background isolate, test qulayligi. **[AUDIT: E-03]** `sqlite3_flutter_libs` EOL — ishlatilmaydi |
+| Shifrlash | `flutter_secure_storage` + **maydon darajasida AES-256-GCM** (afzal) yoki `sqlite3` hooks orqali SQLCipher/sqlite3mc | 14-bo‘lim. **[AUDIT: E-05, C-08]** `sqlcipher_flutter_libs` EOL; SQLCipher eksport deklaratsiyasi va litsenziyasiga ta’sir qiladi, shuning uchun maydon shifrlash afzal |
 | i18n | `flutter_localizations` + **gen-l10n (ARB)**; kontent tarjimalari bazada | Hardcode yo‘q; RTL (arab) uchun tayyor |
 | Hisob dvigateli | Sof Dart paketi `packages/calc_engine` (Flutter’ga bog‘liq emas) | UI’dan to‘liq ajratilgan, alohida test qilinadi, kelajakda backend/veb’da qayta ishlatiladi |
 | Qidiruv | `packages/search_core` (normalizatsiya, transliteratsiya, reyting) | Alohida test |
@@ -1064,7 +1065,7 @@ forensic-expert/
 
 | Phase | Mazmuni | Chiqish mezoni (Definition of Done) |
 |---|---|---|
-| **0** | Tadqiqot, manba strategiyasi, raqobatchilar tahlili (**ushbu hujjat**), [TEKSHIRISH KERAK] belgilarini yopish, V1 moddalar ro‘yxatini ekspert bilan kelishish | Egasining tasdig‘i; ilmiy muharrir tayinlangan |
+| **0** | Tadqiqot, manba strategiyasi, raqobatchilar tahlili (**ushbu hujjat**), [TEKSHIRISH KERAK] belgilarini yopish (✅ PHASE 0.5), V1 moddalar ro‘yxatini ekspert bilan kelishish | Egasining tasdig‘i; ilmiy muharrir tayinlangan |
 | **1** | Monorepo, Flutter skeleti, CI, design system tokenlari, tipografiya, logo (tanlangan konsepsiya vektorda), i18n infratuzilmasi, backend tanlovi | `flutter analyze` toza, CI yashil, golden testlar, tokenlar kontrast testidan o‘tgan |
 | **2** | Language selector (birinchi ekran), disclaimer, mode tanlash, bottom navigation, Settings (til/tema/mode) | 320 dp va 200% shrift testlari; EN/RU/UZ to‘liq; cold start maqsadi o‘lchangan |
 | **3** | content.db sxemasi, content pipeline v0 (validator + build + imzo), test kontenti, Global Search (FTS5, transliteratsiya, typo) | Search testlari (EN/RU/UZ, kirill/lotin, xatolar), <50 ms; imzo tekshiruvi testlari |
@@ -1115,7 +1116,7 @@ PHASE 1 ga o‘tishdan oldin quyidagi savollarga javobingiz kerak:
 6. **Henssge:** V1’ga kiritish (qat’iy review sharti bilan) yoki V1.1 ga qoldirish?
 7. **Litsenziyali manbalar:** Baselt/Clarke’s/TIAFT kabi manbalar uchun noshirlar bilan litsenziya muzokarasi rejalashtiriladimi yoki V1 faqat ochiq manbalar + havolalar bilanmi?
 8. **Yuridik ko‘rik:** Privacy Policy/Terms va O‘zbekiston shaxsga doir ma’lumotlar qonunchiligi bo‘yicha yurist jalb qilinadimi?
-9. **Hujjatdagi [TEKSHIRISH KERAK] belgilari:** PHASE 0 davomida ularni rasmiy manbalar (PubMed, rasmiy saytlar, lex.uz) orqali tekshirib, hujjatni yangilashimga ruxsat berasizmi?
+9. **Hujjatdagi [TEKSHIRISH KERAK] belgilari:** PHASE 0 davomida ularni rasmiy manbalar (PubMed, rasmiy saytlar, lex.uz) orqali tekshirib, hujjatni yangilashimga ruxsat berasizmi? — **Ruxsat berildi; bajarildi (PHASE 0.5, `docs/01_EVIDENCE_AUDIT.md`).**
 
 ---
 
