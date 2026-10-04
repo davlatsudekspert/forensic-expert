@@ -1069,4 +1069,559 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get searchGroupStandardsLaws => 'Standartlar va qonunlar';
+
+  @override
+  String get moduleBiochemistry => 'Biokimyo';
+
+  @override
+  String get moduleReagents => 'Reagentlar va eritmalar';
+
+  @override
+  String get moduleScreening => 'Skrining va ekspress testlar';
+
+  @override
+  String get moduleMethods => 'Metodlar va SOP';
+
+  @override
+  String get moduleStandardsLaws => 'Standartlar va qonunlar';
+
+  @override
+  String get moduleEmerging => 'Yangi muammolar';
+
+  @override
+  String get homeAreasHeading => 'Professional bo‘limlar';
+
+  @override
+  String get homeDbTitle => 'Oflayn baza';
+
+  @override
+  String homeDbPack(String version) {
+    return 'Kontent paketi $version';
+  }
+
+  @override
+  String homeDbScientific(String version) {
+    return 'Ilmiy ma’lumot $version';
+  }
+
+  @override
+  String homeDbJurisdiction(String version) {
+    return 'Yurisdiksiya ma’lumoti $version';
+  }
+
+  @override
+  String get homeDbOffline =>
+      'Oflayn ishlaydi. Qidiruv va savollar shu qurilmada qoladi.';
+
+  @override
+  String get homeDbNotInstalled => 'Kontent paketi o‘rnatilmagan.';
+
+  @override
+  String get homeDbLoading => 'Oflayn baza ochilmoqda…';
+
+  @override
+  String get knowledgeEmpty => 'O‘rnatilgan paketda hozircha yozuv yo‘q.';
+
+  @override
+  String get knowledgeNoSourcedContent => 'Hozircha manbali ma’lumot yo‘q';
+
+  @override
+  String get knowledgeStatements => 'Manbali ma’lumotlar';
+
+  @override
+  String get knowledgeSafety => 'Cheklovlar va xavfsizlik';
+
+  @override
+  String get knowledgeSources => 'Manbalar';
+
+  @override
+  String get knowledgeDetails => 'Tafsilotlar';
+
+  @override
+  String knowledgeSourceRef(String source) {
+    return 'Manba: $source';
+  }
+
+  @override
+  String get knowledgeNotInSource =>
+      'Manbalarda ko‘rsatilmagan — taxmin qilinmaydi';
+
+  @override
+  String get knowledgeTaxonomy => 'Mavzular';
+
+  @override
+  String knowledgeTopicCount(int count, int total) {
+    return '$total mavzudan $count tasida manbali ma’lumot bor';
+  }
+
+  @override
+  String get reagentPreparation => 'Tayyorlash';
+
+  @override
+  String get reagentNoRecipe =>
+      'Manbalarda tasdiqlangan tayyorlash retsepti topilmadi. Tarkib, miqdor, qo‘shish tartibi, saqlash va yaroqlilik muddati ko‘rsatilmaydi va taxmin qilinmaydi.';
+
+  @override
+  String get reagentIngredients => 'Tarkib';
+
+  @override
+  String get reagentFinalVolume => 'Yakuniy hajm';
+
+  @override
+  String get reagentSteps => 'Bosqichlar';
+
+  @override
+  String get reagentOrderNotStated =>
+      'Manba qo‘shish tartibini aytmaydi — bosqichlar raqamsiz ko‘rsatilgan.';
+
+  @override
+  String get reagentStorage => 'Saqlash';
+
+  @override
+  String get reagentTemperature => 'Harorat';
+
+  @override
+  String get reagentStability => 'Barqarorlik';
+
+  @override
+  String get reagentHazards => 'Xavflar';
+
+  @override
+  String get reagentDisposal => 'Utilizatsiya';
+
+  @override
+  String get reagentQc => 'Sifat nazorati';
+
+  @override
+  String get reagentOpenCalculator => 'Eritma tayyorlash kalkulyatori';
+
+  @override
+  String get screeningBanner =>
+      'SKRINING NATIJASI ≠ TASDIQLANGAN IDENTIFIKATSIYA. Ijobiy skrining dastlabki natija bo‘lib, validatsiyadan o‘tgan tasdiqlovchi metodni talab qiladi.';
+
+  @override
+  String get screeningAnalyte => 'Analit';
+
+  @override
+  String get screeningSpecimen => 'Namuna';
+
+  @override
+  String get screeningPrinciple => 'Prinsip';
+
+  @override
+  String get screeningCutoff => 'Chegara qiymati (cut-off)';
+
+  @override
+  String get screeningSensitivity => 'Sezgirlik';
+
+  @override
+  String get screeningSpecificity => 'Spetsifiklik';
+
+  @override
+  String get screeningCrossReactivity => 'Kross-reaktivlik';
+
+  @override
+  String get screeningFalsePositive => 'Soxta ijobiy natijalar';
+
+  @override
+  String get screeningFalseNegative => 'Soxta salbiy natijalar';
+
+  @override
+  String get screeningLimitations => 'Cheklovlar';
+
+  @override
+  String get screeningConfirmatory => 'Tasdiqlovchi metodlar';
+
+  @override
+  String get methodKindScientific => 'Ilmiy metodlar';
+
+  @override
+  String get methodKindInternational => 'Xalqaro standartlar';
+
+  @override
+  String get methodKindNational => 'Milliy metodikalar';
+
+  @override
+  String get methodKindSop => 'Muassasa SOP’lari';
+
+  @override
+  String get methodKindNote =>
+      'Metod turlari aralashtirilmaydi: ilmiy metod huquqiy talab emas, muassasa SOP’i esa faqat o‘sha muassasada amal qiladi.';
+
+  @override
+  String get methodNoKindEntries => 'Bu turdagi yozuv hozircha yo‘q.';
+
+  @override
+  String get methodOrganization => 'Tashkilot';
+
+  @override
+  String get methodJurisdiction => 'Yurisdiksiya';
+
+  @override
+  String get methodTechniques => 'Tahlil texnikalari';
+
+  @override
+  String get methodDocumentVersion => 'Hujjat versiyasi';
+
+  @override
+  String emergingDate(String date) {
+    return 'Nashr qilingan: $date';
+  }
+
+  @override
+  String get emergingEvidenceType => 'Dalil turi';
+
+  @override
+  String get emergingScopeGlobal => 'Qamrov: global';
+
+  @override
+  String get evidenceTypeOfficialAlert => 'Rasmiy ogohlantirish';
+
+  @override
+  String get evidenceTypePeerReviewed => 'Taqrizdan o‘tgan nashr';
+
+  @override
+  String get evidenceTypeReport => 'Hisobot';
+
+  @override
+  String get evidenceTypeStandard => 'Standart';
+
+  @override
+  String get emergingNote =>
+      'Har bir yozuvda manba, sana, dalil turi va qamrov bor. Bu yangiliklar lentasi emas.';
+
+  @override
+  String get emergingCatNps => 'Yangi psixoaktiv moddalar';
+
+  @override
+  String get emergingCatSyntheticOpioids => 'Sintetik opioidlar';
+
+  @override
+  String get emergingCatStimulants => 'Yangi stimulyatorlar';
+
+  @override
+  String get emergingCatAnalytical => 'Analitik muammolar';
+
+  @override
+  String get emergingCatInterferences => 'Yangi interferensiyalar';
+
+  @override
+  String get emergingCatPostmortem => 'O‘limdan keyingi talqin';
+
+  @override
+  String get emergingCatStandards => 'Yangi standartlar';
+
+  @override
+  String get emergingCatValidation => 'Metod validatsiyasi';
+
+  @override
+  String get emergingCatQuality => 'Laboratoriya sifati';
+
+  @override
+  String get emergingCatAlert => 'Ilmiy ogohlantirish';
+
+  @override
+  String get fmTopicDeathInvestigation => 'O‘lim holatini tekshirish';
+
+  @override
+  String get fmTopicCauseMechanismManner => 'O‘lim sababi, mexanizmi va turi';
+
+  @override
+  String get fmTopicPostmortemChanges => 'O‘limdan keyingi o‘zgarishlar';
+
+  @override
+  String get fmTopicPostmortemInterval => 'O‘limdan keyingi vaqt';
+
+  @override
+  String get fmTopicAlgorMortis => 'Murdaning sovishi';
+
+  @override
+  String get fmTopicRigorMortis => 'Murda qotishi';
+
+  @override
+  String get fmTopicLivorMortis => 'Murda dog‘lari';
+
+  @override
+  String get fmTopicDecomposition => 'Chirish';
+
+  @override
+  String get fmTopicTrauma => 'Jarohat';
+
+  @override
+  String get fmTopicBluntForceInjury => 'To‘mtoq jism jarohati';
+
+  @override
+  String get fmTopicSharpForceInjury => 'O‘tkir jism jarohati';
+
+  @override
+  String get fmTopicFirearmInjury => 'O‘qotar qurol jarohati';
+
+  @override
+  String get fmTopicAsphyxia => 'Asfiksiya';
+
+  @override
+  String get fmTopicBurns => 'Kuyishlar';
+
+  @override
+  String get fmTopicElectricalInjury => 'Elektr jarohati';
+
+  @override
+  String get fmTopicHypoHyperthermia => 'Gipo- va gipertermiya';
+
+  @override
+  String get fmTopicDrowning => 'Cho‘kish';
+
+  @override
+  String get fmTopicAnthropology => 'Sud antropologiyasi';
+
+  @override
+  String get fmTopicAgeEstimation => 'Yoshni aniqlash';
+
+  @override
+  String get fmTopicSexEstimation => 'Jinsni aniqlash';
+
+  @override
+  String get fmTopicStatureEstimation => 'Bo‘yni aniqlash';
+
+  @override
+  String get fmTopicOdontology => 'Sud odontologiyasi';
+
+  @override
+  String get fmTopicDisasterVictimIdentification =>
+      'Falokat qurbonlarini identifikatsiya qilish';
+
+  @override
+  String get fmTopicHistology => 'Sud gistologiyasi';
+
+  @override
+  String get fmTopicPostmortemImaging => 'O‘limdan keyingi vizualizatsiya';
+
+  @override
+  String get compareTitle => 'Yurisdiksiyalarni solishtirish';
+
+  @override
+  String get compareTopicDrinkDrive =>
+      'Mast holda haydash: belgilangan alkogol chegarasi';
+
+  @override
+  String get compareNoData => 'Ma’lumot yo‘q — xulosa chiqarilmaydi';
+
+  @override
+  String get compareNoTopics =>
+      'Paketda hozircha solishtiriladigan huquqiy ma’lumot yo‘q.';
+
+  @override
+  String get compareNotAdvice =>
+      'Ma’lumotnoma, yuridik maslahat emas. Har doim amaldagi rasmiy matnni tekshiring.';
+
+  @override
+  String get compareNoInference =>
+      'Ma’lumot yo‘qligi «ruxsat», «nazoratda emas» yoki «taqiqlangan» degani emas.';
+
+  @override
+  String compareOverrides(String jurisdiction) {
+    return '$jurisdiction qoidasi o‘rniga amal qiladi';
+  }
+
+  @override
+  String compareArticle(String section) {
+    return 'Modda/bo‘lim: $section';
+  }
+
+  @override
+  String compareAuthority(String name) {
+    return 'Organ: $name';
+  }
+
+  @override
+  String get compareOfficialExcerpt => 'Rasmiy matn';
+
+  @override
+  String get specimenBreath => 'Nafas';
+
+  @override
+  String get specimenBlood => 'Qon';
+
+  @override
+  String get specimenUrine => 'Siydik';
+
+  @override
+  String get legalThresholdTitle => 'Huquqiy chegara';
+
+  @override
+  String get legalLayerNational => 'Milliy / hududiy qonun';
+
+  @override
+  String get legalOpenCompare => 'Yurisdiksiyalarni solishtirish';
+
+  @override
+  String get toolSolutionName => 'Eritma tayyorlash (kerakli massa)';
+
+  @override
+  String get toolSolutionDesc =>
+      'Berilgan konsentratsiya va hajm uchun modda massasi: m = C·V(·M)/p. Molyar massa va tozalikni siz kiritasiz (sertifikat/yorliq).';
+
+  @override
+  String get calcTargetConc => 'Maqsadli konsentratsiya';
+
+  @override
+  String get calcMolarMass => 'Molyar massa (g/mol)';
+
+  @override
+  String get calcPurity => 'Tozalik (0–1)';
+
+  @override
+  String get calcMassRequired => 'Kerakli massa';
+
+  @override
+  String get calcErrorMolarMass =>
+      'Molyar konsentratsiya uchun molyar massani sertifikat yoki yorliqdan kiriting.';
+
+  @override
+  String get calcErrorPurity =>
+      'Tozalik 0 dan katta va 1 dan oshmasligi kerak.';
+
+  @override
+  String get calcSolutionAssumptionDefinition =>
+      'Konsentratsiya ta’rifi bo‘yicha hisob (empirik koeffitsiyentsiz).';
+
+  @override
+  String get calcSolutionAssumptionInputs =>
+      'Molyar massa va tozalikni foydalanuvchi kiritadi; hech narsa taxmin qilinmaydi.';
+
+  @override
+  String get calcSolutionLimitationRecipe =>
+      'Bu reagent retsepti emas: modda tanlovi, tartib, saqlash va barqarorlik faqat tasdiqlangan manba yoki SOP’dan.';
+
+  @override
+  String get calcSolutionLimitationVolume =>
+      'Eritishda hajm o‘zgarishi hisobga olinmaydi.';
+
+  @override
+  String get calcWarnPurity => 'Tozalik tuzatmasi qo‘llandi.';
+
+  @override
+  String legalExtent(String extent) {
+    return 'Hududiy amal qilishi: $extent';
+  }
+
+  @override
+  String legalAppliesTo(String places) {
+    return 'Qo‘llaniladi: $places';
+  }
+
+  @override
+  String get legalStatusInForce => 'Amalda';
+
+  @override
+  String get legalStatusAmended => 'O‘zgartirilgan';
+
+  @override
+  String get legalStatusSuperseded => 'Almashtirilgan';
+
+  @override
+  String get legalStatusRepealed => 'Kuchini yo‘qotgan';
+
+  @override
+  String get aiExperienceProfessional => 'Mutaxassis';
+
+  @override
+  String get aiExperienceTutor => 'Ustoz (Tutor)';
+
+  @override
+  String get aiExperienceProfessionalHint =>
+      'Mutaxassislar uchun qisqa, manbaga tayangan javoblar.';
+
+  @override
+  String get aiExperienceTutorHint =>
+      'O‘rganish uchun bosqichma-bosqich tushuntirish, har doim manba bilan.';
+
+  @override
+  String get aiFindSources => 'Manbalarni oflayn topish';
+
+  @override
+  String get aiRetrievalTitle => 'Oflayn bazadagi mos ma’lumotlar';
+
+  @override
+  String get aiRetrievalNote =>
+      'Bu AI javobi emas: bular lokal qidiruv natijalari, har birining manbasi bor.';
+
+  @override
+  String get aiNoContext =>
+      'Oflayn bazada ishonchli kontekst yo‘q — javob berilmaydi.';
+
+  @override
+  String get aiBlockedConclusion =>
+      'O‘lim sababi yoki turi bo‘yicha yakuniy xulosa berilmaydi. Bu — ish materiallari to‘liq bo‘lgan ekspert qarori.';
+
+  @override
+  String get aiBlockedLegal =>
+      'Huquqiy xulosa (aybdorlik, ayblov, jazo) berilmaydi.';
+
+  @override
+  String get aiBlockedPii =>
+      'Qidirish yoki so‘rashdan oldin shaxsiy ma’lumotni olib tashlang.';
+
+  @override
+  String get learnLevelAll => 'Barcha darajalar';
+
+  @override
+  String get learnLevelFoundation => 'Boshlang‘ich';
+
+  @override
+  String get learnLevelIntermediate => 'O‘rta';
+
+  @override
+  String get learnLevelAdvanced => 'Yuqori';
+
+  @override
+  String learnProgressValue(int done, int total) {
+    return '$total darsdan $done tasi tugatildi';
+  }
+
+  @override
+  String get learnHistory => 'Yaqinda o‘rganilgan';
+
+  @override
+  String get learnBookmarks => 'Xatcho‘plar';
+
+  @override
+  String get learnBookmarksEmpty =>
+      'Mavzuni yulduzcha bilan belgilang — u shu yerda chiqadi.';
+
+  @override
+  String get learnMarkComplete => 'Tugatildi deb belgilash';
+
+  @override
+  String get learnCompleted => 'Tugatildi';
+
+  @override
+  String get learnCourseSourceNote =>
+      'Darslar manbadagi asl jumlalarni ko‘rsatadi. Yangi ilmiy matn yozilmaydi; mazmun ekspert tekshiruvini kutmoqda.';
+
+  @override
+  String get learnExam => 'Imtihon rejimi';
+
+  @override
+  String get learnExamIntro =>
+      'Barcha savollarga javob bering. Natija va izohlar faqat topshirgandan keyin chiqadi.';
+
+  @override
+  String get learnExamSubmit => 'Imtihonni topshirish';
+
+  @override
+  String learnExamScore(int correct, int total) {
+    return 'Natija: $total dan $correct';
+  }
+
+  @override
+  String get learnExamEmpty =>
+      'Tekshirilgan imtihon savollari hozircha yo‘q. Savollar avtomatik yaratilmaydi.';
+
+  @override
+  String get learnExamRetry => 'Qayta urinish';
+
+  @override
+  String get learnSimulatedCase =>
+      'SIMULYATSIYA QILINGAN HOLAT — real ish emas';
 }

@@ -44,6 +44,14 @@ abstract final class ToolsCatalog {
     engineId: 'lab.dilution.c1v1',
   );
 
+  /// m = C·V(·M)/p — ta’rifiy hisob; reagent retsepti emas.
+  static const solution = ToolEntry(
+    id: 'tool.lab.solution',
+    category: ToolCategory.laboratory,
+    availability: ToolAvailability.available,
+    engineId: 'lab.solution.mass_required',
+  );
+
   static const all = <ToolEntry>[
     ToolEntry(
       id: 'tool.fm.pmi_henssge',
@@ -62,6 +70,7 @@ abstract final class ToolsCatalog {
       availability: ToolAvailability.planned,
     ),
     dilution,
+    solution,
     ToolEntry(
       id: 'tool.lab.molarity',
       category: ToolCategory.laboratory,

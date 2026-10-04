@@ -3,13 +3,19 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../core/flags.dart';
 import '../core/telemetry/telemetry.dart';
+import '../data/content/content_knowledge_repository.dart';
 import '../data/content/content_library_repository.dart';
+import '../data/content/content_provenance.dart';
+import '../data/fixtures/knowledge_fixtures.dart';
 import '../data/fixtures/test_fixtures.dart';
 import '../data/local/content_store.dart';
 import '../data/offline/offline_ai.dart';
 import '../data/offline/offline_backend.dart';
 import '../data/offline/offline_billing.dart';
+import '../domain/ai/ai_architecture.dart';
+import '../domain/ai/local_retrieval.dart';
 import '../domain/jurisdiction/jurisdiction_catalog.dart';
+import '../domain/knowledge/knowledge_models.dart';
 import '../domain/learn/learn_models.dart';
 import '../domain/library/library_models.dart';
 import '../domain/ports/ai_ports.dart';
@@ -50,6 +56,35 @@ final piiScannerProvider = Provider<PiiScanner>(
   (ref) => const RegexPiiScanner(),
 );
 
+/// LLM provayderi — PHASE 4 da ulanmagan (kalit ilovada yo‘q).
+final aiProviderProvider = Provider<AiProvider>(
+  (ref) => const UnconfiguredAiProvider(),
+);
+
+/// Forensic AI marshrutizatori: xavfsizlik → kvota → lokal qidiruv →
+/// provayder → citation tekshiruvi. Til — qidiruv natijasi sarlavhalari uchun.
+final aiRouterProvider = Provider.family<AiRouter, String>((ref, lang) {
+  final library = ref.watch(libraryRepositoryProvider);
+  final knowledge = ref.watch(knowledgeRepositoryProvider);
+  final sourceIds = <String>{
+    for (final e in library.entries(LibrarySection.substances))
+      for (final s in e.details?.allSources ?? const <SourceView>[]) s.sourceId,
+    for (final kind in KnowledgeKind.values)
+      for (final e in knowledge.byKind(kind))
+        for (final s in e.allSources) s.sourceId,
+  };
+  return AiRouter(
+    safety: SafetyPolicy(ref.watch(piiScannerProvider)),
+    retrieval: LocalRetrievalProvider(
+      library: library,
+      knowledge: knowledge,
+      languageCode: lang,
+    ),
+    provider: ref.watch(aiProviderProvider),
+    citations: CitationResolver(knownSourceIds: sourceIds),
+  );
+});
+
 final contentStoreProvider = Provider<ContentStore>(
   (ref) => LocalContentStore(),
 );
@@ -83,7 +118,7 @@ final libraryRepositoryProvider = Provider<LibraryRepository>(
 final learnRepositoryProvider = Provider<LearnRepository>(
   (ref) => FeFlags.showTestFixtures
       ? const FixtureLearnRepository()
-      : const EmptyLearnRepository(),
+      : ContentLearnRepository(ref.watch(knowledgeRepositoryProvider)),
 );
 
 /// Telemetriya — PHASE 2 da hech narsa yubormaydi.
@@ -91,15 +126,86 @@ final telemetryProvider = Provider<TelemetrySink>(
   (ref) => const NoopTelemetrySink(),
 );
 
-/// Jurisdiction Layer. Hozircha faqat yurisdiksiyalar ro‘yxati bor —
-/// rasmiy hujjat va qoidalar yo‘q (ular imzolangan kontent paketidan keladi).
-/// Shu sababli har qanday yurisdiksiya uchun natija — «kontent yuklanmagan».
-final jurisdictionResolverProvider = Provider<JurisdictionResolver>(
-  (ref) => JurisdictionResolver(
-    jurisdictions: JurisdictionCatalog.seed,
-    instruments: const [],
-    rules: const [],
-  ),
+/// Kontent paketidagi manba va claim’lar (kutubxona va bilim sohalari
+/// uchun umumiy, bir marta o‘qiladi).
+final contentProvenanceProvider = FutureProvider<ContentProvenance?>((
+  ref,
+) async {
+  final db = await ref.watch(contentStoreProvider).openActive();
+  return db == null ? null : ContentProvenance.load(db);
+});
+
+/// Bilim sohalari (mavzular, reagentlar, skrining, metodlar, yangi
+/// muammolar) — imzolangan paketdan.
+final contentKnowledgeProvider = FutureProvider<KnowledgeRepository?>((
+  ref,
+) async {
+  final db = await ref.watch(contentStoreProvider).openActive();
+  if (db == null) return null;
+  return ContentKnowledgeLoader.load(
+    db,
+    provenance: await ref.watch(contentProvenanceProvider.future),
+  );
+});
+
+final knowledgeRepositoryProvider = Provider<KnowledgeRepository>(
+  (ref) => FeFlags.showTestFixtures
+      ? FixtureKnowledgeRepository()
+      : ref.watch(contentKnowledgeProvider).value ??
+            const EmptyKnowledgeRepository(),
+);
+
+final contentLegalFutureProvider = FutureProvider<ContentLegalData?>((
+  ref,
+) async {
+  final db = await ref.watch(contentStoreProvider).openActive();
+  if (db == null) return null;
+  return ContentLegalData.load(
+    db,
+    provenance: await ref.watch(contentProvenanceProvider.future),
+  );
+});
+
+/// Yuklangan yurisdiksiya ma’lumoti (`null` — paket yo‘q / yuklanmoqda).
+final contentLegalDataProvider = Provider<ContentLegalData?>(
+  (ref) => ref.watch(contentLegalFutureProvider).value,
+);
+
+/// Jurisdiction Layer: ilova katalogi (faqat nomlar) + kontent paketidagi
+/// yurisdiksiyalar, rasmiy hujjatlar va qoidalar. Paketda ma’lumot yo‘q
+/// yurisdiksiya uchun natija — «ma’lumot yo‘q» (xulosa chiqarilmaydi).
+final jurisdictionResolverProvider = Provider<JurisdictionResolver>((ref) {
+  final data = ref.watch(contentLegalDataProvider);
+  final byId = {for (final j in JurisdictionCatalog.seed) j.id: j};
+  for (final j in data?.jurisdictions ?? const <Jurisdiction>[]) {
+    // Paket nomlari katalog tarjimalarini o‘chirmaydi (birlashtiriladi).
+    final seed = byId[j.id];
+    byId[j.id] = seed == null
+        ? j
+        : Jurisdiction(
+            id: j.id,
+            level: j.level,
+            parentId: j.parentId,
+            iso3166: j.iso3166,
+            names: {...seed.names, ...j.names},
+          );
+  }
+  return JurisdictionResolver(
+    jurisdictions: byId.values,
+    instruments: data?.instruments ?? const [],
+    rules: data?.rules ?? const [],
+  );
+});
+
+final legalCatalogProvider = Provider<LegalCatalog>(
+  (ref) => ref.watch(contentLegalDataProvider)?.catalog ?? LegalCatalog.empty,
+);
+
+/// Tekshirilmagan (NEEDS_REVIEW) huquqiy qoidalar ko‘rsatiladimi.
+/// Faqat development/pilot kanalda — har doim status belgisi bilan.
+/// Production kanalda faqat reviewer tasdiqlagan qoidalar.
+final showUnreviewedLegalProvider = Provider<bool>(
+  (ref) => FeFlags.contentChannel != 'production',
 );
 
 /// Joriy kirish huquqi (store o‘zgarishlarini kuzatadi).

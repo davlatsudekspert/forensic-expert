@@ -1071,4 +1071,556 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get searchGroupStandardsLaws => 'Стандарты и законы';
+
+  @override
+  String get moduleBiochemistry => 'Биохимия';
+
+  @override
+  String get moduleReagents => 'Реактивы и растворы';
+
+  @override
+  String get moduleScreening => 'Скрининг и экспресс-тесты';
+
+  @override
+  String get moduleMethods => 'Методы и СОП';
+
+  @override
+  String get moduleStandardsLaws => 'Стандарты и законы';
+
+  @override
+  String get moduleEmerging => 'Новые проблемы';
+
+  @override
+  String get homeAreasHeading => 'Профессиональные разделы';
+
+  @override
+  String get homeDbTitle => 'Офлайн-база';
+
+  @override
+  String homeDbPack(String version) {
+    return 'Пакет контента $version';
+  }
+
+  @override
+  String homeDbScientific(String version) {
+    return 'Научные данные $version';
+  }
+
+  @override
+  String homeDbJurisdiction(String version) {
+    return 'Юрисдикционные данные $version';
+  }
+
+  @override
+  String get homeDbOffline =>
+      'Работает офлайн. Поиск и вопросы остаются на устройстве.';
+
+  @override
+  String get homeDbNotInstalled => 'Пакет контента не установлен.';
+
+  @override
+  String get homeDbLoading => 'Открытие офлайн-базы…';
+
+  @override
+  String get knowledgeEmpty => 'В установленном пакете пока нет записей.';
+
+  @override
+  String get knowledgeNoSourcedContent => 'Пока нет материалов с источниками';
+
+  @override
+  String get knowledgeStatements => 'Утверждения с источниками';
+
+  @override
+  String get knowledgeSafety => 'Ограничения и безопасность';
+
+  @override
+  String get knowledgeSources => 'Источники';
+
+  @override
+  String get knowledgeDetails => 'Подробности';
+
+  @override
+  String knowledgeSourceRef(String source) {
+    return 'Источник: $source';
+  }
+
+  @override
+  String get knowledgeNotInSource => 'В источниках не указано — не оценивается';
+
+  @override
+  String get knowledgeTaxonomy => 'Темы';
+
+  @override
+  String knowledgeTopicCount(int count, int total) {
+    return 'Материалы с источниками: $count из $total тем';
+  }
+
+  @override
+  String get reagentPreparation => 'Приготовление';
+
+  @override
+  String get reagentNoRecipe =>
+      'В источниках не найден проверенный рецепт приготовления. Компоненты, количества, порядок, хранение и срок годности не показываются и не оцениваются.';
+
+  @override
+  String get reagentIngredients => 'Компоненты';
+
+  @override
+  String get reagentFinalVolume => 'Конечный объём';
+
+  @override
+  String get reagentSteps => 'Этапы';
+
+  @override
+  String get reagentOrderNotStated =>
+      'Источник не указывает порядок добавления — этапы перечислены без нумерации.';
+
+  @override
+  String get reagentStorage => 'Хранение';
+
+  @override
+  String get reagentTemperature => 'Температура';
+
+  @override
+  String get reagentStability => 'Стабильность';
+
+  @override
+  String get reagentHazards => 'Опасности';
+
+  @override
+  String get reagentDisposal => 'Утилизация';
+
+  @override
+  String get reagentQc => 'Контроль качества';
+
+  @override
+  String get reagentOpenCalculator => 'Калькулятор приготовления раствора';
+
+  @override
+  String get screeningBanner =>
+      'РЕЗУЛЬТАТ СКРИНИНГА ≠ ПОДТВЕРЖДЁННАЯ ИДЕНТИФИКАЦИЯ. Положительный скрининг предварителен и требует валидированного подтверждающего метода.';
+
+  @override
+  String get screeningAnalyte => 'Аналит';
+
+  @override
+  String get screeningSpecimen => 'Образец';
+
+  @override
+  String get screeningPrinciple => 'Принцип';
+
+  @override
+  String get screeningCutoff => 'Пороговое значение';
+
+  @override
+  String get screeningSensitivity => 'Чувствительность';
+
+  @override
+  String get screeningSpecificity => 'Специфичность';
+
+  @override
+  String get screeningCrossReactivity => 'Перекрёстная реактивность';
+
+  @override
+  String get screeningFalsePositive => 'Ложноположительные';
+
+  @override
+  String get screeningFalseNegative => 'Ложноотрицательные';
+
+  @override
+  String get screeningLimitations => 'Ограничения';
+
+  @override
+  String get screeningConfirmatory => 'Подтверждающие методы';
+
+  @override
+  String get methodKindScientific => 'Научные методы';
+
+  @override
+  String get methodKindInternational => 'Международные стандарты';
+
+  @override
+  String get methodKindNational => 'Национальные методики';
+
+  @override
+  String get methodKindSop => 'СОП учреждений';
+
+  @override
+  String get methodKindNote =>
+      'Типы методов не смешиваются: научный метод — не правовое требование, а СОП действует только в своём учреждении.';
+
+  @override
+  String get methodNoKindEntries => 'Записей этого типа пока нет.';
+
+  @override
+  String get methodOrganization => 'Организация';
+
+  @override
+  String get methodJurisdiction => 'Юрисдикция';
+
+  @override
+  String get methodTechniques => 'Методы анализа';
+
+  @override
+  String get methodDocumentVersion => 'Версия документа';
+
+  @override
+  String emergingDate(String date) {
+    return 'Опубликовано $date';
+  }
+
+  @override
+  String get emergingEvidenceType => 'Тип доказательства';
+
+  @override
+  String get emergingScopeGlobal => 'Охват: глобальный';
+
+  @override
+  String get evidenceTypeOfficialAlert => 'Официальное предупреждение';
+
+  @override
+  String get evidenceTypePeerReviewed => 'Рецензируемая публикация';
+
+  @override
+  String get evidenceTypeReport => 'Отчёт';
+
+  @override
+  String get evidenceTypeStandard => 'Стандарт';
+
+  @override
+  String get emergingNote =>
+      'У каждой записи есть источник, дата, тип доказательства и охват. Это не новостная лента.';
+
+  @override
+  String get emergingCatNps => 'Новые психоактивные вещества';
+
+  @override
+  String get emergingCatSyntheticOpioids => 'Синтетические опиоиды';
+
+  @override
+  String get emergingCatStimulants => 'Новые стимуляторы';
+
+  @override
+  String get emergingCatAnalytical => 'Аналитические проблемы';
+
+  @override
+  String get emergingCatInterferences => 'Новые интерференции';
+
+  @override
+  String get emergingCatPostmortem => 'Посмертная интерпретация';
+
+  @override
+  String get emergingCatStandards => 'Новые стандарты';
+
+  @override
+  String get emergingCatValidation => 'Валидация методов';
+
+  @override
+  String get emergingCatQuality => 'Качество лаборатории';
+
+  @override
+  String get emergingCatAlert => 'Научное предупреждение';
+
+  @override
+  String get fmTopicDeathInvestigation => 'Расследование смерти';
+
+  @override
+  String get fmTopicCauseMechanismManner => 'Причина, механизм и род смерти';
+
+  @override
+  String get fmTopicPostmortemChanges => 'Посмертные изменения';
+
+  @override
+  String get fmTopicPostmortemInterval => 'Давность наступления смерти';
+
+  @override
+  String get fmTopicAlgorMortis => 'Охлаждение трупа';
+
+  @override
+  String get fmTopicRigorMortis => 'Трупное окоченение';
+
+  @override
+  String get fmTopicLivorMortis => 'Трупные пятна';
+
+  @override
+  String get fmTopicDecomposition => 'Гниение';
+
+  @override
+  String get fmTopicTrauma => 'Травма';
+
+  @override
+  String get fmTopicBluntForceInjury => 'Тупая травма';
+
+  @override
+  String get fmTopicSharpForceInjury => 'Острая травма';
+
+  @override
+  String get fmTopicFirearmInjury => 'Огнестрельная травма';
+
+  @override
+  String get fmTopicAsphyxia => 'Асфиксия';
+
+  @override
+  String get fmTopicBurns => 'Ожоги';
+
+  @override
+  String get fmTopicElectricalInjury => 'Электротравма';
+
+  @override
+  String get fmTopicHypoHyperthermia => 'Гипо- и гипертермия';
+
+  @override
+  String get fmTopicDrowning => 'Утопление';
+
+  @override
+  String get fmTopicAnthropology => 'Судебная антропология';
+
+  @override
+  String get fmTopicAgeEstimation => 'Определение возраста';
+
+  @override
+  String get fmTopicSexEstimation => 'Определение пола';
+
+  @override
+  String get fmTopicStatureEstimation => 'Определение роста';
+
+  @override
+  String get fmTopicOdontology => 'Судебная одонтология';
+
+  @override
+  String get fmTopicDisasterVictimIdentification =>
+      'Идентификация жертв катастроф';
+
+  @override
+  String get fmTopicHistology => 'Судебная гистология';
+
+  @override
+  String get fmTopicPostmortemImaging => 'Посмертная визуализация';
+
+  @override
+  String get compareTitle => 'Сравнение юрисдикций';
+
+  @override
+  String get compareTopicDrinkDrive =>
+      'Вождение в нетрезвом виде: установленный предел алкоголя';
+
+  @override
+  String get compareNoData => 'Нет данных — вывод не делается';
+
+  @override
+  String get compareNoTopics =>
+      'В пакете пока нет сопоставимых правовых данных.';
+
+  @override
+  String get compareNotAdvice =>
+      'Справочная информация, не юридическая консультация. Сверяйтесь с действующим официальным текстом.';
+
+  @override
+  String get compareNoInference =>
+      'Отсутствие данных не означает «разрешено», «не контролируется» или «запрещено».';
+
+  @override
+  String compareOverrides(String jurisdiction) {
+    return 'Заменяет правило: $jurisdiction';
+  }
+
+  @override
+  String compareArticle(String section) {
+    return 'Статья/раздел: $section';
+  }
+
+  @override
+  String compareAuthority(String name) {
+    return 'Орган: $name';
+  }
+
+  @override
+  String get compareOfficialExcerpt => 'Официальный текст';
+
+  @override
+  String get specimenBreath => 'Выдыхаемый воздух';
+
+  @override
+  String get specimenBlood => 'Кровь';
+
+  @override
+  String get specimenUrine => 'Моча';
+
+  @override
+  String get legalThresholdTitle => 'Правовой предел';
+
+  @override
+  String get legalLayerNational => 'Национальное / региональное право';
+
+  @override
+  String get legalOpenCompare => 'Сравнить юрисдикции';
+
+  @override
+  String get toolSolutionName => 'Приготовление раствора (необходимая масса)';
+
+  @override
+  String get toolSolutionDesc =>
+      'Масса вещества для заданной концентрации и объёма: m = C·V(·M)/p. Молярную массу и чистоту вводите вы (сертификат/этикетка).';
+
+  @override
+  String get calcTargetConc => 'Целевая концентрация';
+
+  @override
+  String get calcMolarMass => 'Молярная масса (г/моль)';
+
+  @override
+  String get calcPurity => 'Чистота (0–1)';
+
+  @override
+  String get calcMassRequired => 'Необходимая масса';
+
+  @override
+  String get calcErrorMolarMass =>
+      'Для молярной концентрации введите молярную массу из сертификата или этикетки.';
+
+  @override
+  String get calcErrorPurity => 'Чистота должна быть больше 0 и не больше 1.';
+
+  @override
+  String get calcSolutionAssumptionDefinition =>
+      'Расчёт по определению концентрации (без эмпирических коэффициентов).';
+
+  @override
+  String get calcSolutionAssumptionInputs =>
+      'Молярную массу и чистоту вводит пользователь; ничего не оценивается.';
+
+  @override
+  String get calcSolutionLimitationRecipe =>
+      'Это не рецепт реактива: выбор вещества, порядок, хранение и стабильность — только из проверенного источника или СОП.';
+
+  @override
+  String get calcSolutionLimitationVolume =>
+      'Изменение объёма при растворении не учитывается.';
+
+  @override
+  String get calcWarnPurity => 'Применена поправка на чистоту.';
+
+  @override
+  String legalExtent(String extent) {
+    return 'Территориальное действие: $extent';
+  }
+
+  @override
+  String legalAppliesTo(String places) {
+    return 'Применяется: $places';
+  }
+
+  @override
+  String get legalStatusInForce => 'Действует';
+
+  @override
+  String get legalStatusAmended => 'С изменениями';
+
+  @override
+  String get legalStatusSuperseded => 'Заменён';
+
+  @override
+  String get legalStatusRepealed => 'Утратил силу';
+
+  @override
+  String get aiExperienceProfessional => 'Профессионал';
+
+  @override
+  String get aiExperienceTutor => 'Наставник';
+
+  @override
+  String get aiExperienceProfessionalHint =>
+      'Краткие ответы с источниками для специалистов.';
+
+  @override
+  String get aiExperienceTutorHint =>
+      'Пошаговые объяснения для обучения, всегда с источниками.';
+
+  @override
+  String get aiFindSources => 'Найти источники офлайн';
+
+  @override
+  String get aiRetrievalTitle => 'Подходящие утверждения в офлайн-базе';
+
+  @override
+  String get aiRetrievalNote =>
+      'Это не ответ ИИ: это результаты локального поиска, у каждого есть источник.';
+
+  @override
+  String get aiNoContext =>
+      'В офлайн-базе нет надёжного контекста — ответ не даётся.';
+
+  @override
+  String get aiBlockedConclusion =>
+      'Окончательные выводы о причине или роде смерти не даются. Это решение эксперта с полными материалами дела.';
+
+  @override
+  String get aiBlockedLegal =>
+      'Юридические выводы (вина, обвинение, наказание) не даются.';
+
+  @override
+  String get aiBlockedPii =>
+      'Удалите персональные данные перед поиском или вопросом.';
+
+  @override
+  String get learnLevelAll => 'Все уровни';
+
+  @override
+  String get learnLevelFoundation => 'Базовый';
+
+  @override
+  String get learnLevelIntermediate => 'Средний';
+
+  @override
+  String get learnLevelAdvanced => 'Продвинутый';
+
+  @override
+  String learnProgressValue(int done, int total) {
+    return 'Пройдено уроков: $done из $total';
+  }
+
+  @override
+  String get learnHistory => 'Недавно изученные';
+
+  @override
+  String get learnBookmarks => 'Закладки';
+
+  @override
+  String get learnBookmarksEmpty =>
+      'Добавьте тему в закладки звёздочкой, чтобы найти её здесь.';
+
+  @override
+  String get learnMarkComplete => 'Отметить как пройденный';
+
+  @override
+  String get learnCompleted => 'Пройден';
+
+  @override
+  String get learnCourseSourceNote =>
+      'Уроки показывают исходные утверждения источников. Новый научный текст не пишется; материалы ждут экспертной проверки.';
+
+  @override
+  String get learnExam => 'Режим экзамена';
+
+  @override
+  String get learnExamIntro =>
+      'Ответьте на все вопросы. Результаты и пояснения появятся только после отправки.';
+
+  @override
+  String get learnExamSubmit => 'Завершить экзамен';
+
+  @override
+  String learnExamScore(int correct, int total) {
+    return 'Результат: $correct из $total';
+  }
+
+  @override
+  String get learnExamEmpty =>
+      'Проверенных экзаменационных вопросов пока нет. Вопросы не генерируются автоматически.';
+
+  @override
+  String get learnExamRetry => 'Пройти снова';
+
+  @override
+  String get learnSimulatedCase => 'СМОДЕЛИРОВАННЫЙ СЛУЧАЙ — не реальное дело';
 }

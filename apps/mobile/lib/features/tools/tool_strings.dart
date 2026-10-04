@@ -5,6 +5,7 @@ import '../../domain/catalog/tools_catalog.dart';
 extension ToolStrings on AppLocalizations {
   String toolName(ToolEntry t) => switch (t.id) {
     'tool.lab.dilution' => toolDilutionName,
+    'tool.lab.solution' => toolSolutionName,
     'tool.tox.widmark' => toolWidmarkName,
     'tool.tox.back_calculation' => toolBackCalcName,
     'tool.fm.pmi_henssge' => toolPmiName,
@@ -19,6 +20,7 @@ extension ToolStrings on AppLocalizations {
 
   String toolDescription(ToolEntry t) => switch (t.id) {
     'tool.lab.dilution' => toolDilutionDesc,
+    'tool.lab.solution' => toolSolutionDesc,
     'tool.tox.widmark' => toolWidmarkDesc,
     'tool.tox.back_calculation' => toolBackCalcDesc,
     'tool.fm.pmi_henssge' => toolPmiDesc,

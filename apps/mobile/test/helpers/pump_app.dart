@@ -8,6 +8,7 @@ import 'package:forensic_expert/app/router.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
 import 'package:forensic_expert/core/settings/settings_controller.dart';
 import 'package:forensic_expert/core/settings/settings_repository.dart';
+import 'package:forensic_expert/data/fixtures/knowledge_fixtures.dart';
 import 'package:forensic_expert/data/fixtures/test_fixtures.dart';
 import 'package:forensic_expert/data/local/content_store.dart';
 
@@ -57,6 +58,9 @@ Future<ProviderContainer> pumpApp(
         ),
         learnRepositoryProvider.overrideWithValue(
           const FixtureLearnRepository(),
+        ),
+        knowledgeRepositoryProvider.overrideWithValue(
+          FixtureKnowledgeRepository(),
         ),
       ],
       ...overrides,

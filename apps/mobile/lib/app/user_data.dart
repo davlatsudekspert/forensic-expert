@@ -65,6 +65,31 @@ class UserDataController extends Notifier<UserDataSnapshot> {
     );
   }
 
+  static const maxRecentLessons = 10;
+
+  bool isLessonCompleted(String id) => state.completedLessons.contains(id);
+
+  Future<void> toggleLessonCompleted(String id) => _set(
+    state.copyWith(
+      completedLessons: isLessonCompleted(id)
+          ? [
+              for (final x in state.completedLessons)
+                if (x != id) x,
+            ]
+          : [...state.completedLessons, id],
+    ),
+  );
+
+  Future<void> recordLessonOpened(String id) => _set(
+    state.copyWith(
+      recentLessons: [
+        id,
+        for (final x in state.recentLessons)
+          if (x != id) x,
+      ].take(maxRecentLessons).toList(),
+    ),
+  );
+
   Future<void> clearSearchHistory() =>
       _set(state.copyWith(recentSearches: const []));
 }

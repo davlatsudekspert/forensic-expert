@@ -3,7 +3,6 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
-import 'package:forensic_expert/data/content/content_library_repository.dart';
 
 import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
@@ -140,8 +139,8 @@ void main() {
 
   // PHASE 3: haqiqiy pilot paket (TEST fixture’siz).
   group('pilot kontent', () {
-    late ContentLibraryRepository repo;
-    setUpAll(() async => repo = await loadPilotLibrary());
+    late PilotContent content;
+    setUpAll(() async => content = await loadPilotContent());
 
     final pilot = <(String, AppSettings, String, bool, Size)>[
       (
@@ -166,6 +165,26 @@ void main() {
         std,
       ),
       ('pilot_library_en_320', s('en'), Routes.library, false, small),
+      // PHASE 4 bilim sohalari va yurisdiksiya solishtiruvi.
+      (
+        'p4_reagent_norecipe_en',
+        s('en'),
+        Routes.knowledgeEntry('reagent-marquis'),
+        false,
+        std,
+      ),
+      (
+        'p4_screening_uz_dark',
+        s('uz', theme: dark),
+        Routes.knowledgeEntry('scr-immunoassay-drugs'),
+        false,
+        std,
+      ),
+      ('p4_methods_ru', s('ru'), Routes.knowledge('method'), false, std),
+      ('p4_fm_hub_en', s('en'), Routes.forensicMedicine, false, std),
+      ('p4_compare_en', s('en'), Routes.compare, false, std),
+      ('p4_compare_uz_320', s('uz'), Routes.compare, false, small),
+      ('p4_home_pilot_en', s('en'), Routes.home, false, std),
     ];
     for (final (name, settings, route, owned, size) in pilot) {
       testWidgets(name, (tester) async {
@@ -177,7 +196,7 @@ void main() {
           pixelRatio: 1.5,
           testFixtures: false,
           overrides: [
-            libraryRepositoryProvider.overrideWithValue(repo),
+            ...content.overrides,
             entitlementServiceProvider.overrideWithValue(
               FakeStore(owned: owned),
             ),

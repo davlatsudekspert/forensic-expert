@@ -11,8 +11,12 @@ import '../helpers/pump_app.dart';
 
 /// Haqiqiy pilot paket bilan UI: provenance, ogohlantirish, paywall.
 void main() {
+  late PilotContent pilot;
   late ContentLibraryRepository repo;
-  setUpAll(() async => repo = await loadPilotLibrary());
+  setUpAll(() async {
+    pilot = await loadPilotContent();
+    repo = pilot.library;
+  });
 
   Future<void> open(
     WidgetTester tester,
@@ -26,7 +30,7 @@ void main() {
       initialLocation: Routes.libraryEntry(id),
       testFixtures: false,
       overrides: [
-        libraryRepositoryProvider.overrideWithValue(repo),
+        ...pilot.overrides,
         entitlementServiceProvider.overrideWithValue(FakeStore(owned: owned)),
       ],
     );

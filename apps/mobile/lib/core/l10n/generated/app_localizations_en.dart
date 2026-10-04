@@ -1068,4 +1068,557 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get searchGroupStandardsLaws => 'Standards & laws';
+
+  @override
+  String get moduleBiochemistry => 'Biochemistry';
+
+  @override
+  String get moduleReagents => 'Reagents & solutions';
+
+  @override
+  String get moduleScreening => 'Screening & express tests';
+
+  @override
+  String get moduleMethods => 'Methods & SOP';
+
+  @override
+  String get moduleStandardsLaws => 'Standards & laws';
+
+  @override
+  String get moduleEmerging => 'Emerging issues';
+
+  @override
+  String get homeAreasHeading => 'Professional areas';
+
+  @override
+  String get homeDbTitle => 'Offline database';
+
+  @override
+  String homeDbPack(String version) {
+    return 'Content pack $version';
+  }
+
+  @override
+  String homeDbScientific(String version) {
+    return 'Scientific data $version';
+  }
+
+  @override
+  String homeDbJurisdiction(String version) {
+    return 'Jurisdiction data $version';
+  }
+
+  @override
+  String get homeDbOffline =>
+      'Works offline. Searches and questions stay on this device.';
+
+  @override
+  String get homeDbNotInstalled => 'Content pack is not installed.';
+
+  @override
+  String get homeDbLoading => 'Opening the offline database…';
+
+  @override
+  String get knowledgeEmpty => 'No records in the installed content pack yet.';
+
+  @override
+  String get knowledgeNoSourcedContent => 'No sourced content yet';
+
+  @override
+  String get knowledgeStatements => 'Sourced statements';
+
+  @override
+  String get knowledgeSafety => 'Limitations & safety';
+
+  @override
+  String get knowledgeSources => 'Sources';
+
+  @override
+  String get knowledgeDetails => 'Details';
+
+  @override
+  String knowledgeSourceRef(String source) {
+    return 'Source: $source';
+  }
+
+  @override
+  String get knowledgeNotInSource =>
+      'Not stated in the sources — not estimated';
+
+  @override
+  String get knowledgeTaxonomy => 'Topics';
+
+  @override
+  String knowledgeTopicCount(int count, int total) {
+    return '$count of $total topics have sourced content';
+  }
+
+  @override
+  String get reagentPreparation => 'Preparation';
+
+  @override
+  String get reagentNoRecipe =>
+      'No verified preparation recipe was found in the sources. Ingredients, amounts, order of addition, storage and shelf life are not shown and are never estimated.';
+
+  @override
+  String get reagentIngredients => 'Ingredients';
+
+  @override
+  String get reagentFinalVolume => 'Final volume';
+
+  @override
+  String get reagentSteps => 'Steps';
+
+  @override
+  String get reagentOrderNotStated =>
+      'The source does not state the order of addition — steps are listed without numbering.';
+
+  @override
+  String get reagentStorage => 'Storage';
+
+  @override
+  String get reagentTemperature => 'Temperature';
+
+  @override
+  String get reagentStability => 'Stability';
+
+  @override
+  String get reagentHazards => 'Hazards';
+
+  @override
+  String get reagentDisposal => 'Disposal';
+
+  @override
+  String get reagentQc => 'Quality control';
+
+  @override
+  String get reagentOpenCalculator => 'Solution preparation calculator';
+
+  @override
+  String get screeningBanner =>
+      'SCREENING RESULT ≠ CONFIRMED IDENTIFICATION. A positive screen is presumptive and requires a validated confirmatory method.';
+
+  @override
+  String get screeningAnalyte => 'Analyte';
+
+  @override
+  String get screeningSpecimen => 'Specimen';
+
+  @override
+  String get screeningPrinciple => 'Principle';
+
+  @override
+  String get screeningCutoff => 'Cut-off';
+
+  @override
+  String get screeningSensitivity => 'Sensitivity';
+
+  @override
+  String get screeningSpecificity => 'Specificity';
+
+  @override
+  String get screeningCrossReactivity => 'Cross-reactivity';
+
+  @override
+  String get screeningFalsePositive => 'False positives';
+
+  @override
+  String get screeningFalseNegative => 'False negatives';
+
+  @override
+  String get screeningLimitations => 'Limitations';
+
+  @override
+  String get screeningConfirmatory => 'Confirmatory methods';
+
+  @override
+  String get methodKindScientific => 'Scientific methods';
+
+  @override
+  String get methodKindInternational => 'International standards';
+
+  @override
+  String get methodKindNational => 'National methods';
+
+  @override
+  String get methodKindSop => 'Institutional SOPs';
+
+  @override
+  String get methodKindNote =>
+      'Method types are kept separate: a scientific method is not a legal requirement, and an institutional SOP applies only to its institution.';
+
+  @override
+  String get methodNoKindEntries => 'No records of this type yet.';
+
+  @override
+  String get methodOrganization => 'Organization';
+
+  @override
+  String get methodJurisdiction => 'Jurisdiction';
+
+  @override
+  String get methodTechniques => 'Techniques';
+
+  @override
+  String get methodDocumentVersion => 'Document version';
+
+  @override
+  String emergingDate(String date) {
+    return 'Published $date';
+  }
+
+  @override
+  String get emergingEvidenceType => 'Evidence type';
+
+  @override
+  String get emergingScopeGlobal => 'Scope: global';
+
+  @override
+  String get evidenceTypeOfficialAlert => 'Official alert';
+
+  @override
+  String get evidenceTypePeerReviewed => 'Peer-reviewed publication';
+
+  @override
+  String get evidenceTypeReport => 'Report';
+
+  @override
+  String get evidenceTypeStandard => 'Standard';
+
+  @override
+  String get emergingNote =>
+      'Each item has a source, a date, an evidence type and a scope. This is not a news feed.';
+
+  @override
+  String get emergingCatNps => 'New psychoactive substances';
+
+  @override
+  String get emergingCatSyntheticOpioids => 'Synthetic opioids';
+
+  @override
+  String get emergingCatStimulants => 'Novel stimulants';
+
+  @override
+  String get emergingCatAnalytical => 'Analytical challenges';
+
+  @override
+  String get emergingCatInterferences => 'New interferences';
+
+  @override
+  String get emergingCatPostmortem => 'Postmortem interpretation';
+
+  @override
+  String get emergingCatStandards => 'New standards';
+
+  @override
+  String get emergingCatValidation => 'Method validation';
+
+  @override
+  String get emergingCatQuality => 'Laboratory quality';
+
+  @override
+  String get emergingCatAlert => 'Scientific alert';
+
+  @override
+  String get fmTopicDeathInvestigation => 'Death investigation';
+
+  @override
+  String get fmTopicCauseMechanismManner =>
+      'Cause, mechanism and manner of death';
+
+  @override
+  String get fmTopicPostmortemChanges => 'Postmortem changes';
+
+  @override
+  String get fmTopicPostmortemInterval => 'Postmortem interval';
+
+  @override
+  String get fmTopicAlgorMortis => 'Algor mortis';
+
+  @override
+  String get fmTopicRigorMortis => 'Rigor mortis';
+
+  @override
+  String get fmTopicLivorMortis => 'Livor mortis';
+
+  @override
+  String get fmTopicDecomposition => 'Decomposition';
+
+  @override
+  String get fmTopicTrauma => 'Trauma';
+
+  @override
+  String get fmTopicBluntForceInjury => 'Blunt force injury';
+
+  @override
+  String get fmTopicSharpForceInjury => 'Sharp force injury';
+
+  @override
+  String get fmTopicFirearmInjury => 'Firearm injury';
+
+  @override
+  String get fmTopicAsphyxia => 'Asphyxia';
+
+  @override
+  String get fmTopicBurns => 'Burns';
+
+  @override
+  String get fmTopicElectricalInjury => 'Electrical injury';
+
+  @override
+  String get fmTopicHypoHyperthermia => 'Hypothermia and hyperthermia';
+
+  @override
+  String get fmTopicDrowning => 'Drowning';
+
+  @override
+  String get fmTopicAnthropology => 'Forensic anthropology';
+
+  @override
+  String get fmTopicAgeEstimation => 'Age estimation';
+
+  @override
+  String get fmTopicSexEstimation => 'Sex estimation';
+
+  @override
+  String get fmTopicStatureEstimation => 'Stature estimation';
+
+  @override
+  String get fmTopicOdontology => 'Forensic odontology';
+
+  @override
+  String get fmTopicDisasterVictimIdentification =>
+      'Disaster victim identification';
+
+  @override
+  String get fmTopicHistology => 'Forensic histology';
+
+  @override
+  String get fmTopicPostmortemImaging => 'Postmortem imaging';
+
+  @override
+  String get compareTitle => 'Compare jurisdictions';
+
+  @override
+  String get compareTopicDrinkDrive =>
+      'Drink-driving: prescribed alcohol limit';
+
+  @override
+  String get compareNoData => 'No data — no conclusion is drawn';
+
+  @override
+  String get compareNoTopics =>
+      'No comparable legal data in the content pack yet.';
+
+  @override
+  String get compareNotAdvice =>
+      'Reference information, not legal advice. Always check the current official text.';
+
+  @override
+  String get compareNoInference =>
+      'Missing data never means “allowed”, “not controlled” or “prohibited”.';
+
+  @override
+  String compareOverrides(String jurisdiction) {
+    return 'Overrides the rule of $jurisdiction';
+  }
+
+  @override
+  String compareArticle(String section) {
+    return 'Section: $section';
+  }
+
+  @override
+  String compareAuthority(String name) {
+    return 'Authority: $name';
+  }
+
+  @override
+  String get compareOfficialExcerpt => 'Official text';
+
+  @override
+  String get specimenBreath => 'Breath';
+
+  @override
+  String get specimenBlood => 'Blood';
+
+  @override
+  String get specimenUrine => 'Urine';
+
+  @override
+  String get legalThresholdTitle => 'Legal limit';
+
+  @override
+  String get legalLayerNational => 'National / regional law';
+
+  @override
+  String get legalOpenCompare => 'Compare jurisdictions';
+
+  @override
+  String get toolSolutionName => 'Solution preparation (mass required)';
+
+  @override
+  String get toolSolutionDesc =>
+      'Mass of substance for a target concentration and final volume: m = C·V(·M)/p. Molar mass and purity come from you (certificate/label).';
+
+  @override
+  String get calcTargetConc => 'Target concentration';
+
+  @override
+  String get calcMolarMass => 'Molar mass (g/mol)';
+
+  @override
+  String get calcPurity => 'Purity (0–1)';
+
+  @override
+  String get calcMassRequired => 'Mass required';
+
+  @override
+  String get calcErrorMolarMass =>
+      'Enter the molar mass from the certificate or label for a molar concentration.';
+
+  @override
+  String get calcErrorPurity => 'Purity must be greater than 0 and at most 1.';
+
+  @override
+  String get calcSolutionAssumptionDefinition =>
+      'Definitional calculation of concentration (no empirical coefficients).';
+
+  @override
+  String get calcSolutionAssumptionInputs =>
+      'Molar mass and purity are supplied by the user; nothing is estimated.';
+
+  @override
+  String get calcSolutionLimitationRecipe =>
+      'This is not a reagent recipe: substance choice, order, storage and stability come only from a verified source or SOP.';
+
+  @override
+  String get calcSolutionLimitationVolume =>
+      'Volume change on dissolution is ignored.';
+
+  @override
+  String get calcWarnPurity => 'Purity correction applied.';
+
+  @override
+  String legalExtent(String extent) {
+    return 'Territorial extent: $extent';
+  }
+
+  @override
+  String legalAppliesTo(String places) {
+    return 'Applies to: $places';
+  }
+
+  @override
+  String get legalStatusInForce => 'In force';
+
+  @override
+  String get legalStatusAmended => 'Amended';
+
+  @override
+  String get legalStatusSuperseded => 'Superseded';
+
+  @override
+  String get legalStatusRepealed => 'Repealed';
+
+  @override
+  String get aiExperienceProfessional => 'Professional';
+
+  @override
+  String get aiExperienceTutor => 'Tutor';
+
+  @override
+  String get aiExperienceProfessionalHint =>
+      'Concise, source-first answers for practitioners.';
+
+  @override
+  String get aiExperienceTutorHint =>
+      'Step-by-step explanations for learning, always with sources.';
+
+  @override
+  String get aiFindSources => 'Find sources offline';
+
+  @override
+  String get aiRetrievalTitle => 'Matching statements in the offline database';
+
+  @override
+  String get aiRetrievalNote =>
+      'This is not an AI answer: these are local search results, each with its source.';
+
+  @override
+  String get aiNoContext =>
+      'No reliable context in the offline database — no answer is given.';
+
+  @override
+  String get aiBlockedConclusion =>
+      'Final conclusions on the cause or manner of death are not provided. That decision belongs to the expert with the full case.';
+
+  @override
+  String get aiBlockedLegal =>
+      'Legal conclusions (guilt, charges, sentencing) are not provided.';
+
+  @override
+  String get aiBlockedPii => 'Remove personal data before searching or asking.';
+
+  @override
+  String get learnLevelAll => 'All levels';
+
+  @override
+  String get learnLevelFoundation => 'Foundation';
+
+  @override
+  String get learnLevelIntermediate => 'Intermediate';
+
+  @override
+  String get learnLevelAdvanced => 'Advanced';
+
+  @override
+  String learnProgressValue(int done, int total) {
+    return '$done of $total lessons completed';
+  }
+
+  @override
+  String get learnHistory => 'Recently studied';
+
+  @override
+  String get learnBookmarks => 'Bookmarks';
+
+  @override
+  String get learnBookmarksEmpty =>
+      'Bookmark a topic with the star to find it here.';
+
+  @override
+  String get learnMarkComplete => 'Mark as completed';
+
+  @override
+  String get learnCompleted => 'Completed';
+
+  @override
+  String get learnCourseSourceNote =>
+      'Lessons show original source statements. No new scientific text is written; content awaits expert review.';
+
+  @override
+  String get learnExam => 'Exam mode';
+
+  @override
+  String get learnExamIntro =>
+      'Answer all questions. Results and explanations appear only after you submit.';
+
+  @override
+  String get learnExamSubmit => 'Submit exam';
+
+  @override
+  String learnExamScore(int correct, int total) {
+    return 'Score: $correct of $total';
+  }
+
+  @override
+  String get learnExamEmpty =>
+      'No reviewed exam questions yet. Questions are not generated automatically.';
+
+  @override
+  String get learnExamRetry => 'Try again';
+
+  @override
+  String get learnSimulatedCase => 'SIMULATED CASE — not a real case';
 }

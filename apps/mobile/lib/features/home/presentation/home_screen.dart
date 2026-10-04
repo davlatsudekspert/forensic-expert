@@ -14,15 +14,23 @@ import '../../../core/settings/app_settings.dart';
 import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/brand_mark.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../../core/widgets/fe_data_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
+import '../../../domain/knowledge/knowledge_models.dart';
 import '../../tools/tool_strings.dart';
 
-/// Home modullari. ID’lar marshrut parametri sifatida ishlatiladi.
+/// Home modullari (professional bo‘limlar). ID’lar marshrut parametri.
 enum HomeModule {
   forensicMedicine(Icons.monitor_heart_outlined),
   toxicology(Icons.science_outlined),
+  biochemistry(Icons.bubble_chart_outlined),
   laboratory(Icons.biotech_outlined),
+  reagents(Icons.colorize_outlined),
+  screening(Icons.fact_check_outlined),
+  methods(Icons.rule_folder_outlined),
   substances(Icons.hub_outlined),
+  standardsLaws(Icons.gavel_outlined),
+  emerging(Icons.new_releases_outlined),
   learn(Icons.school_outlined),
   ai(Icons.auto_awesome_outlined);
 
@@ -33,8 +41,14 @@ enum HomeModule {
   String label(AppLocalizations l) => switch (this) {
     HomeModule.forensicMedicine => l.moduleForensicMedicine,
     HomeModule.toxicology => l.moduleToxicology,
+    HomeModule.biochemistry => l.moduleBiochemistry,
     HomeModule.laboratory => l.moduleLaboratory,
+    HomeModule.reagents => l.moduleReagents,
+    HomeModule.screening => l.moduleScreening,
+    HomeModule.methods => l.moduleMethods,
     HomeModule.substances => l.moduleSubstances,
+    HomeModule.standardsLaws => l.moduleStandardsLaws,
+    HomeModule.emerging => l.moduleEmerging,
     HomeModule.learn => l.moduleLearn,
     HomeModule.ai => l.moduleAi,
   };
@@ -45,23 +59,41 @@ enum HomeModule {
       learn,
       forensicMedicine,
       toxicology,
+      biochemistry,
       substances,
       laboratory,
+      methods,
+      screening,
+      reagents,
+      standardsLaws,
+      emerging,
       ai,
     ],
     UserMode.research => const [
       substances,
+      methods,
       toxicology,
-      forensicMedicine,
+      emerging,
+      screening,
+      reagents,
       laboratory,
+      biochemistry,
+      forensicMedicine,
+      standardsLaws,
       learn,
       ai,
     ],
     _ => const [
       toxicology,
       substances,
+      screening,
+      reagents,
+      methods,
       laboratory,
       forensicMedicine,
+      biochemistry,
+      standardsLaws,
+      emerging,
       ai,
       learn,
     ],
@@ -72,6 +104,13 @@ enum HomeModule {
     HomeModule.ai => Routes.ai,
     HomeModule.learn => Routes.learn,
     HomeModule.substances => Routes.library,
+    HomeModule.forensicMedicine => Routes.forensicMedicine,
+    HomeModule.biochemistry => Routes.biochemistry,
+    HomeModule.reagents => Routes.knowledge(KnowledgeKind.reagent.name),
+    HomeModule.screening => Routes.knowledge(KnowledgeKind.screeningTest.name),
+    HomeModule.methods => Routes.knowledge(KnowledgeKind.method.name),
+    HomeModule.emerging => Routes.knowledge(KnowledgeKind.emergingIssue.name),
+    HomeModule.standardsLaws => Routes.compare,
     _ => Routes.module(name),
   };
 }
@@ -136,12 +175,14 @@ class HomeScreen extends ConsumerWidget {
                       text: l.homePilotNotice,
                     ),
                   ],
+                  const SizedBox(height: FeSpace.sm),
+                  const _DatabaseCard(),
                   if (isStudent) ...[
                     const SizedBox(height: FeSpace.md),
                     const _ContinueLearningCard(),
                   ],
                   if (!isStudent) const _QuickAccess(),
-                  FeSectionHeader(l.homeModulesHeading),
+                  FeSectionHeader(l.homeAreasHeading),
                   _ModuleGrid(modules: modules),
                   if (isStudent) const _RecentSearches(),
                   const SizedBox(height: FeSpace.lg),
@@ -150,6 +191,65 @@ class HomeScreen extends ConsumerWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+/// Oflayn baza holati: paket versiyasi, ilmiy va yurisdiksiya komponent
+/// versiyalari, maxfiylik eslatmasi. Sun’iy statistika yo‘q.
+class _DatabaseCard extends ConsumerWidget {
+  const _DatabaseCard();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final status = ref.watch(contentStatusProvider);
+    final versions = ref.watch(legalCatalogProvider).componentVersions;
+    final secondary = t.bodySmall?.copyWith(color: c.textSecondary);
+    final lines = status.when(
+      data: (s) => s.isInstalled
+          ? [
+              Text(
+                l.homeDbPack(s.packVersion!),
+                key: const Key('home.db.pack'),
+                style: FeThemeBuilder.numeric(t.bodyMedium!),
+              ),
+              if (versions['scientific'] case final v?)
+                Text(l.homeDbScientific(v), style: secondary),
+              if (versions['jurisdiction'] case final v?)
+                Text(l.homeDbJurisdiction(v), style: secondary),
+            ]
+          : [Text(l.homeDbNotInstalled, style: secondary)],
+      loading: () => [FeSkeleton(lines: 2, semanticLabel: l.homeDbLoading)],
+      error: (_, _) => [Text(l.homeDbNotInstalled, style: secondary)],
+    );
+    return FeCard(
+      key: const Key('home.database'),
+      padding: const EdgeInsets.all(FeSpace.sm),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Icon(Icons.offline_pin_outlined, color: c.accent),
+          const SizedBox(width: FeSpace.sm),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Semantics(
+                  header: true,
+                  child: Text(l.homeDbTitle, style: t.titleSmall),
+                ),
+                const SizedBox(height: 2),
+                ...lines,
+                const SizedBox(height: FeSpace.xxs),
+                Text(l.homeDbOffline, style: secondary),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -203,9 +303,14 @@ class _QuickAccess extends ConsumerWidget {
     final data = ref.watch(userDataProvider);
     final library = ref.watch(libraryRepositoryProvider);
 
+    final knowledge = ref.watch(knowledgeRepositoryProvider);
     String nameOf(String id) {
       final tool = ToolsCatalog.byId(id);
       if (tool != null) return l.toolName(tool);
+      final k = knowledge.byId(id);
+      if (k != null) {
+        return k.name.resolve(Localizations.localeOf(context).languageCode);
+      }
       final entry = library.byId(id);
       if (entry != null) {
         return entry.name.resolve(Localizations.localeOf(context).languageCode);
@@ -216,6 +321,8 @@ class _QuickAccess extends ConsumerWidget {
     void openId(String id) {
       if (ToolsCatalog.byId(id) != null) {
         context.go(Routes.tool(id));
+      } else if (knowledge.byId(id) != null) {
+        context.go(Routes.knowledgeEntry(id));
       } else {
         context.go(Routes.libraryEntry(id));
       }

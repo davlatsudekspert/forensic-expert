@@ -1,3 +1,5 @@
+import 'package:fe_content_schema/fe_content_schema.dart'
+    show InstrumentType, JurisdictionalInstrument, KnowledgeArea;
 import 'package:fe_search_core/fe_search_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -5,6 +7,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../core/l10n/generated/app_localizations.dart';
 import '../core/settings/app_settings.dart';
 import '../domain/catalog/tools_catalog.dart';
+import '../domain/knowledge/knowledge_models.dart';
 import '../domain/learn/learn_models.dart';
 import '../domain/library/library_models.dart';
 import '../features/tools/tool_strings.dart';
@@ -46,8 +49,55 @@ class AppSearchService {
   factory AppSearchService.build({
     required LibraryRepository library,
     required LearnRepository learn,
+    KnowledgeRepository knowledge = const EmptyKnowledgeRepository(),
+    Iterable<JurisdictionalInstrument> instruments = const [],
   }) {
     final terms = <SearchTerm>[];
+    // PHASE 4 bilim sohalari.
+    for (final kind in KnowledgeKind.values) {
+      for (final e in knowledge.byKind(kind)) {
+        final cat = switch (kind) {
+          KnowledgeKind.reagent => SearchCategory.reagent,
+          KnowledgeKind.screeningTest => SearchCategory.screeningTest,
+          KnowledgeKind.method => SearchCategory.method,
+          KnowledgeKind.emergingIssue => SearchCategory.emergingIssue,
+          KnowledgeKind.topic =>
+            e.area == KnowledgeArea.biochemistry
+                ? SearchCategory.biochemistryTopic
+                : SearchCategory.forensicMedicineTopic,
+        };
+        for (final entry in e.name.values.entries) {
+          terms.add(
+            SearchTerm(
+              entityId: e.id,
+              category: cat,
+              term: entry.value,
+              kind: TermKind.localized,
+              lang: entry.key,
+            ),
+          );
+        }
+      }
+    }
+    // Rasmiy hujjatlar (qonun / standart) — sarlavha bo‘yicha.
+    for (final i in instruments) {
+      final cat =
+          i.type == InstrumentType.standard ||
+              i.type == InstrumentType.officialGuideline
+          ? SearchCategory.standard
+          : SearchCategory.law;
+      for (final entry in i.titles.entries) {
+        terms.add(
+          SearchTerm(
+            entityId: i.id,
+            category: cat,
+            term: entry.value,
+            kind: TermKind.canonical,
+            lang: entry.key,
+          ),
+        );
+      }
+    }
     for (final section in LibrarySection.values) {
       for (final e in library.entries(section)) {
         final cat = switch (section) {
@@ -154,5 +204,7 @@ final searchServiceProvider = Provider<AppSearchService>(
   (ref) => AppSearchService.build(
     library: ref.watch(libraryRepositoryProvider),
     learn: ref.watch(learnRepositoryProvider),
+    knowledge: ref.watch(knowledgeRepositoryProvider),
+    instruments: ref.watch(jurisdictionResolverProvider).instruments,
   ),
 );

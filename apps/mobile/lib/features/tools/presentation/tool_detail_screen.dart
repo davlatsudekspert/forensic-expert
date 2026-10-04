@@ -67,6 +67,8 @@ class _ToolDetailScreenState extends ConsumerState<ToolDetailScreen> {
                   ? const LockedContentCard(key: Key('tool.lockedCard'))
                   : tool.engineId == ToolsCatalog.dilution.engineId
                   ? const _DilutionCalculatorView()
+                  : tool.engineId == ToolsCatalog.solution.engineId
+                  ? const _SolutionCalculatorView()
                   : _PlannedToolView(tool: tool),
             ),
           ],
@@ -344,6 +346,232 @@ class _DilutionCalculatorViewState extends State<_DilutionCalculatorView> {
         _Bullet(l.calcDilutionAssumptionMixing),
         FeSectionHeader(l.calcLimitations),
         _Bullet(l.calcDilutionLimitationContraction),
+        FeSectionHeader(l.calcReferences),
+        Text(
+          l.calcDefinitional,
+          style: t.bodySmall?.copyWith(color: c.textSecondary),
+        ),
+        const SizedBox(height: FeSpace.xl),
+      ],
+    );
+  }
+}
+
+class _SolutionCalculatorView extends StatefulWidget {
+  const _SolutionCalculatorView();
+
+  @override
+  State<_SolutionCalculatorView> createState() =>
+      _SolutionCalculatorViewState();
+}
+
+class _SolutionCalculatorViewState extends State<_SolutionCalculatorView> {
+  static const _concUnits = [
+    Unit.gramPerLiter,
+    Unit.milligramPerMilliliter,
+    Unit.milligramPerLiter,
+    Unit.microgramPerMilliliter,
+    Unit.millimolePerLiter,
+    Unit.micromolePerLiter,
+  ];
+  static const _volUnits = [Unit.milliliter, Unit.liter, Unit.microliter];
+
+  final _calc = const SolutionPreparationCalculator();
+  final _conc = TextEditingController();
+  final _vol = TextEditingController();
+  final _molar = TextEditingController();
+  final _purity = TextEditingController(text: '1');
+  Unit _concUnit = Unit.gramPerLiter;
+  Unit _volUnit = Unit.milliliter;
+  String? _error;
+  CalcResult<SolutionPreparationOutput>? _result;
+
+  @override
+  void dispose() {
+    for (final c in [_conc, _vol, _molar, _purity]) {
+      c.dispose();
+    }
+    super.dispose();
+  }
+
+  bool get _isMolar => _concUnit.dimension == Dimension.molarConcentration;
+
+  double? _num(TextEditingController c) =>
+      double.tryParse(c.text.trim().replaceAll(',', '.'));
+
+  void _calculate(AppLocalizations l) {
+    setState(() {
+      _result = null;
+      _error = null;
+      final conc = _num(_conc);
+      final vol = _num(_vol);
+      final purity = _num(_purity);
+      if (conc == null || vol == null || purity == null) {
+        _error = l.calcErrorPositive;
+        return;
+      }
+      try {
+        _result = _calc.calculate(
+          SolutionPreparationInput(
+            targetConcentration: Quantity(conc, _concUnit),
+            finalVolume: Quantity(vol, _volUnit),
+            molarMassGPerMol: _isMolar ? _num(_molar) : null,
+            purityFraction: purity,
+          ),
+        );
+      } on CalcInputException catch (e) {
+        _error = switch (e.code) {
+          'molar_mass_required' => l.calcErrorMolarMass,
+          'purity_out_of_range' => l.calcErrorPurity,
+          _ => l.calcErrorPositive,
+        };
+      }
+    });
+  }
+
+  static String _format(double v) {
+    final s = v.toStringAsPrecision(6);
+    return s.contains('e') ? s : double.parse(s).toString();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final d = _calc.descriptor;
+    final result = _result;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        const SizedBox(height: FeSpace.sm),
+        Text(l.toolSolutionDesc, style: t.bodyMedium),
+        const SizedBox(height: FeSpace.sm),
+        FeBanner(
+          icon: Icons.pending_outlined,
+          text: l.calcNeedsReviewNotice,
+          tone: FeBannerTone.warning,
+        ),
+        const SizedBox(height: FeSpace.xs),
+        FeBanner(
+          key: const Key('calc.solution.notRecipe'),
+          icon: Icons.science_outlined,
+          text: l.calcSolutionLimitationRecipe,
+        ),
+        FeSectionHeader(l.calcInput),
+        _QuantityField(
+          key: const Key('calc.solution.conc'),
+          label: l.calcTargetConc,
+          controller: _conc,
+          unit: _concUnit,
+          units: _concUnits,
+          unitLabel: l.calcUnit,
+          onUnit: (u) => setState(() {
+            _concUnit = u;
+            _result = null;
+          }),
+        ),
+        const SizedBox(height: FeSpace.sm),
+        _QuantityField(
+          key: const Key('calc.solution.vol'),
+          label: l.calcFinalVol,
+          controller: _vol,
+          unit: _volUnit,
+          units: _volUnits,
+          unitLabel: l.calcUnit,
+          onUnit: (u) => setState(() => _volUnit = u),
+        ),
+        if (_isMolar) ...[
+          const SizedBox(height: FeSpace.sm),
+          TextField(
+            key: const Key('calc.solution.molar'),
+            controller: _molar,
+            keyboardType: const TextInputType.numberWithOptions(decimal: true),
+            decoration: InputDecoration(labelText: l.calcMolarMass),
+          ),
+        ],
+        const SizedBox(height: FeSpace.sm),
+        TextField(
+          key: const Key('calc.solution.purity'),
+          controller: _purity,
+          keyboardType: const TextInputType.numberWithOptions(decimal: true),
+          decoration: InputDecoration(labelText: l.calcPurity),
+        ),
+        const SizedBox(height: FeSpace.sm),
+        FilledButton(
+          key: const Key('calc.calculate'),
+          onPressed: () => _calculate(l),
+          child: Text(l.calcCalculate),
+        ),
+        if (_error != null) ...[
+          const SizedBox(height: FeSpace.sm),
+          Semantics(
+            liveRegion: true,
+            child: Text(
+              _error!,
+              key: const Key('calc.error'),
+              style: t.bodyMedium?.copyWith(color: c.danger),
+            ),
+          ),
+        ],
+        FeSectionHeader(l.calcResult),
+        Semantics(
+          liveRegion: true,
+          child: DecoratedBox(
+            decoration: BoxDecoration(
+              color: c.surface,
+              borderRadius: BorderRadius.circular(FeRadius.md),
+              border: Border.all(color: c.border),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.all(FeSpace.md),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(l.calcMassRequired, style: t.labelLarge),
+                  const SizedBox(height: FeSpace.xxs),
+                  Text(
+                    result == null
+                        ? FeGlyphs.emDash
+                        : '${_format(result.value.mass.value)} '
+                              '${result.value.mass.unit.symbol}',
+                    key: const Key('calc.result'),
+                    style: FeThemeBuilder.numeric(t.headlineSmall!),
+                  ),
+                  if (result != null && result.warnings.isNotEmpty) ...[
+                    const SizedBox(height: FeSpace.xs),
+                    FeBanner(icon: Icons.info_outline, text: l.calcWarnPurity),
+                  ],
+                ],
+              ),
+            ),
+          ),
+        ),
+        FeSectionHeader(l.calcMethod),
+        Wrap(
+          spacing: FeSpace.sm,
+          runSpacing: FeSpace.xxs,
+          crossAxisAlignment: WrapCrossAlignment.center,
+          children: [
+            const ReviewStatusBadge(status: ScientificStatus.needsReview),
+            Text(
+              '${d.id} · v${d.engineVersion}',
+              style: FeThemeBuilder.numeric(t.bodySmall!)
+                  .copyWith(color: c.textSecondary),
+            ),
+          ],
+        ),
+        FeSectionHeader(l.calcFormula),
+        Text(
+          'm = C · V (· M) / p',
+          style: FeThemeBuilder.numeric(t.titleMedium!),
+        ),
+        FeSectionHeader(l.calcAssumptions),
+        _Bullet(l.calcSolutionAssumptionDefinition),
+        _Bullet(l.calcSolutionAssumptionInputs),
+        FeSectionHeader(l.calcLimitations),
+        _Bullet(l.calcSolutionLimitationRecipe),
+        _Bullet(l.calcSolutionLimitationVolume),
         FeSectionHeader(l.calcReferences),
         Text(
           l.calcDefinitional,

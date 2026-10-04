@@ -18,13 +18,25 @@ const shellScreens = <String>[
   Routes.quiz,
   Routes.flashcards,
   '/tools/tool/tool.lab.dilution',
-  '/home/module/forensicMedicine',
+  Routes.forensicMedicine,
   '/library/entry/TEST-SUB-ETOH',
   Routes.purchase,
   Routes.privacy,
   Routes.terms,
   Routes.about,
   Routes.profileJurisdiction,
+  // PHASE 4 (TEST fixture’lar bilan; pilot paket alohida testlarda)
+  Routes.biochemistry,
+  '/home/knowledge/reagent',
+  '/home/knowledge/screeningTest',
+  '/home/knowledge/method',
+  '/home/knowledge/emergingIssue',
+  '/home/entry/TEST-REAGENT-1',
+  '/home/entry/TEST-SCREEN-1',
+  '/home/entry/TEST-METHOD-nationalMethod',
+  Routes.compare,
+  Routes.exam,
+  '/tools/tool/tool.lab.solution',
 ];
 
 const onboardingScreens = <String>[

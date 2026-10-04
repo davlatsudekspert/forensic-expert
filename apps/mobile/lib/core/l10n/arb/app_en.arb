@@ -1374,5 +1374,743 @@
   "searchGroupStandardsLaws": "Standards & laws",
   "@searchGroupStandardsLaws": {
     "description": "Search group."
+  },
+  "moduleBiochemistry": "Biochemistry",
+  "@moduleBiochemistry": {
+    "description": "Home module."
+  },
+  "moduleReagents": "Reagents & solutions",
+  "@moduleReagents": {
+    "description": "Home module."
+  },
+  "moduleScreening": "Screening & express tests",
+  "@moduleScreening": {
+    "description": "Home module."
+  },
+  "moduleMethods": "Methods & SOP",
+  "@moduleMethods": {
+    "description": "Home module."
+  },
+  "moduleStandardsLaws": "Standards & laws",
+  "@moduleStandardsLaws": {
+    "description": "Home module: standards, laws, jurisdiction comparison."
+  },
+  "moduleEmerging": "Emerging issues",
+  "@moduleEmerging": {
+    "description": "Home module."
+  },
+  "homeAreasHeading": "Professional areas",
+  "@homeAreasHeading": {
+    "description": "Home section heading."
+  },
+  "homeDbTitle": "Offline database",
+  "@homeDbTitle": {
+    "description": "Home: offline database card title."
+  },
+  "homeDbPack": "Content pack {version}",
+  "@homeDbPack": {
+    "description": "Content pack version.",
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "homeDbScientific": "Scientific data {version}",
+  "@homeDbScientific": {
+    "description": "Scientific DB component version.",
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "homeDbJurisdiction": "Jurisdiction data {version}",
+  "@homeDbJurisdiction": {
+    "description": "Jurisdiction data component version.",
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "homeDbOffline": "Works offline. Searches and questions stay on this device.",
+  "@homeDbOffline": {
+    "description": "Home: privacy/offline note."
+  },
+  "homeDbNotInstalled": "Content pack is not installed.",
+  "@homeDbNotInstalled": {
+    "description": "Home: no content pack."
+  },
+  "homeDbLoading": "Opening the offline database…",
+  "@homeDbLoading": {
+    "description": "Home: content pack loading."
+  },
+  "knowledgeEmpty": "No records in the installed content pack yet.",
+  "@knowledgeEmpty": {
+    "description": "Knowledge list empty state."
+  },
+  "knowledgeNoSourcedContent": "No sourced content yet",
+  "@knowledgeNoSourcedContent": {
+    "description": "Taxonomy topic without content."
+  },
+  "knowledgeStatements": "Sourced statements",
+  "@knowledgeStatements": {
+    "description": "Section: sourced statements (claims)."
+  },
+  "knowledgeSafety": "Limitations & safety",
+  "@knowledgeSafety": {
+    "description": "Section: limitations and safety (never paywalled)."
+  },
+  "knowledgeSources": "Sources",
+  "@knowledgeSources": {
+    "description": "Section: sources."
+  },
+  "knowledgeDetails": "Details",
+  "@knowledgeDetails": {
+    "description": "Section: structured details."
+  },
+  "knowledgeSourceRef": "Source: {source}",
+  "@knowledgeSourceRef": {
+    "description": "Value attribution to a source.",
+    "placeholders": {
+      "source": {
+        "type": "String"
+      }
+    }
+  },
+  "knowledgeNotInSource": "Not stated in the sources — not estimated",
+  "@knowledgeNotInSource": {
+    "description": "Field not stated by any source."
+  },
+  "knowledgeTaxonomy": "Topics",
+  "@knowledgeTaxonomy": {
+    "description": "Section: topic taxonomy."
+  },
+  "knowledgeTopicCount": "{count} of {total} topics have sourced content",
+  "@knowledgeTopicCount": {
+    "description": "Topics with content count.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "reagentPreparation": "Preparation",
+  "@reagentPreparation": {
+    "description": "Reagent: preparation section."
+  },
+  "reagentNoRecipe": "No verified preparation recipe was found in the sources. Ingredients, amounts, order of addition, storage and shelf life are not shown and are never estimated.",
+  "@reagentNoRecipe": {
+    "description": "Reagent without verified recipe."
+  },
+  "reagentIngredients": "Ingredients",
+  "@reagentIngredients": {
+    "description": "Recipe ingredients."
+  },
+  "reagentFinalVolume": "Final volume",
+  "@reagentFinalVolume": {
+    "description": "Recipe final volume."
+  },
+  "reagentSteps": "Steps",
+  "@reagentSteps": {
+    "description": "Recipe steps."
+  },
+  "reagentOrderNotStated": "The source does not state the order of addition — steps are listed without numbering.",
+  "@reagentOrderNotStated": {
+    "description": "Source does not state order."
+  },
+  "reagentStorage": "Storage",
+  "@reagentStorage": {
+    "description": "Recipe storage."
+  },
+  "reagentTemperature": "Temperature",
+  "@reagentTemperature": {
+    "description": "Recipe temperature."
+  },
+  "reagentStability": "Stability",
+  "@reagentStability": {
+    "description": "Recipe stability / shelf life."
+  },
+  "reagentHazards": "Hazards",
+  "@reagentHazards": {
+    "description": "Recipe hazards."
+  },
+  "reagentDisposal": "Disposal",
+  "@reagentDisposal": {
+    "description": "Recipe disposal reference."
+  },
+  "reagentQc": "Quality control",
+  "@reagentQc": {
+    "description": "Recipe QC requirement."
+  },
+  "reagentOpenCalculator": "Solution preparation calculator",
+  "@reagentOpenCalculator": {
+    "description": "Button to the solution preparation calculator."
+  },
+  "screeningBanner": "SCREENING RESULT ≠ CONFIRMED IDENTIFICATION. A positive screen is presumptive and requires a validated confirmatory method.",
+  "@screeningBanner": {
+    "description": "Permanent screening disclaimer."
+  },
+  "screeningAnalyte": "Analyte",
+  "@screeningAnalyte": {
+    "description": "Screening field."
+  },
+  "screeningSpecimen": "Specimen",
+  "@screeningSpecimen": {
+    "description": "Screening field."
+  },
+  "screeningPrinciple": "Principle",
+  "@screeningPrinciple": {
+    "description": "Screening field."
+  },
+  "screeningCutoff": "Cut-off",
+  "@screeningCutoff": {
+    "description": "Screening field."
+  },
+  "screeningSensitivity": "Sensitivity",
+  "@screeningSensitivity": {
+    "description": "Screening field."
+  },
+  "screeningSpecificity": "Specificity",
+  "@screeningSpecificity": {
+    "description": "Screening field."
+  },
+  "screeningCrossReactivity": "Cross-reactivity",
+  "@screeningCrossReactivity": {
+    "description": "Screening field."
+  },
+  "screeningFalsePositive": "False positives",
+  "@screeningFalsePositive": {
+    "description": "Screening field."
+  },
+  "screeningFalseNegative": "False negatives",
+  "@screeningFalseNegative": {
+    "description": "Screening field."
+  },
+  "screeningLimitations": "Limitations",
+  "@screeningLimitations": {
+    "description": "Screening field."
+  },
+  "screeningConfirmatory": "Confirmatory methods",
+  "@screeningConfirmatory": {
+    "description": "Screening: confirmatory methods."
+  },
+  "methodKindScientific": "Scientific methods",
+  "@methodKindScientific": {
+    "description": "Method kind."
+  },
+  "methodKindInternational": "International standards",
+  "@methodKindInternational": {
+    "description": "Method kind."
+  },
+  "methodKindNational": "National methods",
+  "@methodKindNational": {
+    "description": "Method kind."
+  },
+  "methodKindSop": "Institutional SOPs",
+  "@methodKindSop": {
+    "description": "Method kind."
+  },
+  "methodKindNote": "Method types are kept separate: a scientific method is not a legal requirement, and an institutional SOP applies only to its institution.",
+  "@methodKindNote": {
+    "description": "Explains that method kinds are never mixed."
+  },
+  "methodNoKindEntries": "No records of this type yet.",
+  "@methodNoKindEntries": {
+    "description": "No method records of a kind."
+  },
+  "methodOrganization": "Organization",
+  "@methodOrganization": {
+    "description": "Method field."
+  },
+  "methodJurisdiction": "Jurisdiction",
+  "@methodJurisdiction": {
+    "description": "Method field."
+  },
+  "methodTechniques": "Techniques",
+  "@methodTechniques": {
+    "description": "Method field."
+  },
+  "methodDocumentVersion": "Document version",
+  "@methodDocumentVersion": {
+    "description": "Method field."
+  },
+  "emergingDate": "Published {date}",
+  "@emergingDate": {
+    "description": "Emerging issue date.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "emergingEvidenceType": "Evidence type",
+  "@emergingEvidenceType": {
+    "description": "Emerging issue field."
+  },
+  "emergingScopeGlobal": "Scope: global",
+  "@emergingScopeGlobal": {
+    "description": "Emerging issue scope."
+  },
+  "evidenceTypeOfficialAlert": "Official alert",
+  "@evidenceTypeOfficialAlert": {
+    "description": "Evidence type."
+  },
+  "evidenceTypePeerReviewed": "Peer-reviewed publication",
+  "@evidenceTypePeerReviewed": {
+    "description": "Evidence type."
+  },
+  "evidenceTypeReport": "Report",
+  "@evidenceTypeReport": {
+    "description": "Evidence type."
+  },
+  "evidenceTypeStandard": "Standard",
+  "@evidenceTypeStandard": {
+    "description": "Evidence type."
+  },
+  "emergingNote": "Each item has a source, a date, an evidence type and a scope. This is not a news feed.",
+  "@emergingNote": {
+    "description": "Emerging issues explainer."
+  },
+  "emergingCatNps": "New psychoactive substances",
+  "@emergingCatNps": {
+    "description": "Emerging category."
+  },
+  "emergingCatSyntheticOpioids": "Synthetic opioids",
+  "@emergingCatSyntheticOpioids": {
+    "description": "Emerging category."
+  },
+  "emergingCatStimulants": "Novel stimulants",
+  "@emergingCatStimulants": {
+    "description": "Emerging category."
+  },
+  "emergingCatAnalytical": "Analytical challenges",
+  "@emergingCatAnalytical": {
+    "description": "Emerging category."
+  },
+  "emergingCatInterferences": "New interferences",
+  "@emergingCatInterferences": {
+    "description": "Emerging category."
+  },
+  "emergingCatPostmortem": "Postmortem interpretation",
+  "@emergingCatPostmortem": {
+    "description": "Emerging category."
+  },
+  "emergingCatStandards": "New standards",
+  "@emergingCatStandards": {
+    "description": "Emerging category."
+  },
+  "emergingCatValidation": "Method validation",
+  "@emergingCatValidation": {
+    "description": "Emerging category."
+  },
+  "emergingCatQuality": "Laboratory quality",
+  "@emergingCatQuality": {
+    "description": "Emerging category."
+  },
+  "emergingCatAlert": "Scientific alert",
+  "@emergingCatAlert": {
+    "description": "Emerging category."
+  },
+  "fmTopicDeathInvestigation": "Death investigation",
+  "@fmTopicDeathInvestigation": {
+    "description": "Forensic medicine taxonomy topic name."
+  },
+  "fmTopicCauseMechanismManner": "Cause, mechanism and manner of death",
+  "@fmTopicCauseMechanismManner": {
+    "description": "Forensic medicine taxonomy topic name."
+  },
+  "fmTopicPostmortemChanges": "Postmortem changes",
+  "@fmTopicPostmortemChanges": {
+    "description": "Forensic medicine taxonomy topic name."
+  },
+  "fmTopicPostmortemInterval": "Postmortem interval",
+  "@fmTopicPostmortemInterval": {
+    "description": "Forensic medicine taxonomy topic name."
+  },
+  "fmTopicAlgorMortis": "Algor mortis",
+  "@fmTopicAlgorMortis": {
+    "description": "Forensic medicine taxonomy topic name."
+  },
+  "fmTopicRigorMortis": "Rigor mortis",
+  "@fmTopicRigorMortis": {
+    "description": "Forensic medicine taxonomy topic name."
+  },
+  "fmTopicLivorMortis": "Livor mortis",
+  "@fmTopicLivorMortis": {
+    "description": "Forensic medicine taxonomy topic name."
+  },
+  "fmTopicDecomposition": "Decomposition",
+  "@fmTopicDecomposition": {
+    "description": "Forensic medicine taxonomy topic name."
+  },
+  "fmTopicTrauma": "Trauma",
+  "@fmTopicTrauma": {
+    "description": "Forensic medicine taxonomy topic name."
+  },
+  "fmTopicBluntForceInjury": "Blunt force injury",
+  "@fmTopicBluntForceInjury": {
+    "description": "Forensic medicine taxonomy topic name."
+  },
+  "fmTopicSharpForceInjury": "Sharp force injury",
+  "@fmTopicSharpForceInjury": {
+    "description": "Forensic medicine taxonomy topic name."
+  },
+  "fmTopicFirearmInjury": "Firearm injury",
+  "@fmTopicFirearmInjury": {
+    "description": "Forensic medicine taxonomy topic name."
+  },
+  "fmTopicAsphyxia": "Asphyxia",
+  "@fmTopicAsphyxia": {
+    "description": "Forensic medicine taxonomy topic name."
+  },
+  "fmTopicBurns": "Burns",
+  "@fmTopicBurns": {
+    "description": "Forensic medicine taxonomy topic name."
+  },
+  "fmTopicElectricalInjury": "Electrical injury",
+  "@fmTopicElectricalInjury": {
+    "description": "Forensic medicine taxonomy topic name."
+  },
+  "fmTopicHypoHyperthermia": "Hypothermia and hyperthermia",
+  "@fmTopicHypoHyperthermia": {
+    "description": "Forensic medicine taxonomy topic name."
+  },
+  "fmTopicDrowning": "Drowning",
+  "@fmTopicDrowning": {
+    "description": "Forensic medicine taxonomy topic name."
+  },
+  "fmTopicAnthropology": "Forensic anthropology",
+  "@fmTopicAnthropology": {
+    "description": "Forensic medicine taxonomy topic name."
+  },
+  "fmTopicAgeEstimation": "Age estimation",
+  "@fmTopicAgeEstimation": {
+    "description": "Forensic medicine taxonomy topic name."
+  },
+  "fmTopicSexEstimation": "Sex estimation",
+  "@fmTopicSexEstimation": {
+    "description": "Forensic medicine taxonomy topic name."
+  },
+  "fmTopicStatureEstimation": "Stature estimation",
+  "@fmTopicStatureEstimation": {
+    "description": "Forensic medicine taxonomy topic name."
+  },
+  "fmTopicOdontology": "Forensic odontology",
+  "@fmTopicOdontology": {
+    "description": "Forensic medicine taxonomy topic name."
+  },
+  "fmTopicDisasterVictimIdentification": "Disaster victim identification",
+  "@fmTopicDisasterVictimIdentification": {
+    "description": "Forensic medicine taxonomy topic name."
+  },
+  "fmTopicHistology": "Forensic histology",
+  "@fmTopicHistology": {
+    "description": "Forensic medicine taxonomy topic name."
+  },
+  "fmTopicPostmortemImaging": "Postmortem imaging",
+  "@fmTopicPostmortemImaging": {
+    "description": "Forensic medicine taxonomy topic name."
+  },
+  "compareTitle": "Compare jurisdictions",
+  "@compareTitle": {
+    "description": "Compare jurisdictions screen title."
+  },
+  "compareTopicDrinkDrive": "Drink-driving: prescribed alcohol limit",
+  "@compareTopicDrinkDrive": {
+    "description": "Comparison topic: drink-driving limit."
+  },
+  "compareNoData": "No data — no conclusion is drawn",
+  "@compareNoData": {
+    "description": "Comparison cell without data."
+  },
+  "compareNoTopics": "No comparable legal data in the content pack yet.",
+  "@compareNoTopics": {
+    "description": "No comparable legal data."
+  },
+  "compareNotAdvice": "Reference information, not legal advice. Always check the current official text.",
+  "@compareNotAdvice": {
+    "description": "Comparison disclaimer."
+  },
+  "compareNoInference": "Missing data never means “allowed”, “not controlled” or “prohibited”.",
+  "@compareNoInference": {
+    "description": "Explains noData semantics."
+  },
+  "compareOverrides": "Overrides the rule of {jurisdiction}",
+  "@compareOverrides": {
+    "description": "Rule overrides a less specific one.",
+    "placeholders": {
+      "jurisdiction": {
+        "type": "String"
+      }
+    }
+  },
+  "compareArticle": "Section: {section}",
+  "@compareArticle": {
+    "description": "Article / section of instrument.",
+    "placeholders": {
+      "section": {
+        "type": "String"
+      }
+    }
+  },
+  "compareAuthority": "Authority: {name}",
+  "@compareAuthority": {
+    "description": "Issuing authority.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "compareOfficialExcerpt": "Official text",
+  "@compareOfficialExcerpt": {
+    "description": "Official text excerpt label."
+  },
+  "specimenBreath": "Breath",
+  "@specimenBreath": {
+    "description": "Specimen."
+  },
+  "specimenBlood": "Blood",
+  "@specimenBlood": {
+    "description": "Specimen."
+  },
+  "specimenUrine": "Urine",
+  "@specimenUrine": {
+    "description": "Specimen."
+  },
+  "legalThresholdTitle": "Legal limit",
+  "@legalThresholdTitle": {
+    "description": "Legal threshold rule title."
+  },
+  "legalLayerNational": "National / regional law",
+  "@legalLayerNational": {
+    "description": "Legal layer chip: national/regional law."
+  },
+  "legalOpenCompare": "Compare jurisdictions",
+  "@legalOpenCompare": {
+    "description": "Button opening jurisdiction comparison."
+  },
+  "toolSolutionName": "Solution preparation (mass required)",
+  "@toolSolutionName": {
+    "description": "Tool name."
+  },
+  "toolSolutionDesc": "Mass of substance for a target concentration and final volume: m = C·V(·M)/p. Molar mass and purity come from you (certificate/label).",
+  "@toolSolutionDesc": {
+    "description": "Tool description."
+  },
+  "calcTargetConc": "Target concentration",
+  "@calcTargetConc": {
+    "description": "Calculator field."
+  },
+  "calcMolarMass": "Molar mass (g/mol)",
+  "@calcMolarMass": {
+    "description": "Calculator field."
+  },
+  "calcPurity": "Purity (0–1)",
+  "@calcPurity": {
+    "description": "Calculator field."
+  },
+  "calcMassRequired": "Mass required",
+  "@calcMassRequired": {
+    "description": "Calculator result label."
+  },
+  "calcErrorMolarMass": "Enter the molar mass from the certificate or label for a molar concentration.",
+  "@calcErrorMolarMass": {
+    "description": "Calculator error."
+  },
+  "calcErrorPurity": "Purity must be greater than 0 and at most 1.",
+  "@calcErrorPurity": {
+    "description": "Calculator error."
+  },
+  "calcSolutionAssumptionDefinition": "Definitional calculation of concentration (no empirical coefficients).",
+  "@calcSolutionAssumptionDefinition": {
+    "description": "Calculator assumption."
+  },
+  "calcSolutionAssumptionInputs": "Molar mass and purity are supplied by the user; nothing is estimated.",
+  "@calcSolutionAssumptionInputs": {
+    "description": "Calculator assumption."
+  },
+  "calcSolutionLimitationRecipe": "This is not a reagent recipe: substance choice, order, storage and stability come only from a verified source or SOP.",
+  "@calcSolutionLimitationRecipe": {
+    "description": "Calculator limitation."
+  },
+  "calcSolutionLimitationVolume": "Volume change on dissolution is ignored.",
+  "@calcSolutionLimitationVolume": {
+    "description": "Calculator limitation."
+  },
+  "calcWarnPurity": "Purity correction applied.",
+  "@calcWarnPurity": {
+    "description": "Calculator warning."
+  },
+  "legalExtent": "Territorial extent: {extent}",
+  "@legalExtent": {
+    "description": "Territorial extent of a legal provision.",
+    "placeholders": {
+      "extent": {
+        "type": "String"
+      }
+    }
+  },
+  "legalAppliesTo": "Applies to: {places}",
+  "@legalAppliesTo": {
+    "description": "Rule applies to listed subdivisions.",
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "legalStatusInForce": "In force",
+  "@legalStatusInForce": {
+    "description": "Instrument legal status."
+  },
+  "legalStatusAmended": "Amended",
+  "@legalStatusAmended": {
+    "description": "Instrument legal status."
+  },
+  "legalStatusSuperseded": "Superseded",
+  "@legalStatusSuperseded": {
+    "description": "Instrument legal status."
+  },
+  "legalStatusRepealed": "Repealed",
+  "@legalStatusRepealed": {
+    "description": "Instrument legal status."
+  },
+  "aiExperienceProfessional": "Professional",
+  "@aiExperienceProfessional": {
+    "description": "AI experience toggle."
+  },
+  "aiExperienceTutor": "Tutor",
+  "@aiExperienceTutor": {
+    "description": "AI experience toggle."
+  },
+  "aiExperienceProfessionalHint": "Concise, source-first answers for practitioners.",
+  "@aiExperienceProfessionalHint": {
+    "description": "AI experience hint."
+  },
+  "aiExperienceTutorHint": "Step-by-step explanations for learning, always with sources.",
+  "@aiExperienceTutorHint": {
+    "description": "AI experience hint."
+  },
+  "aiFindSources": "Find sources offline",
+  "@aiFindSources": {
+    "description": "Button: offline retrieval."
+  },
+  "aiRetrievalTitle": "Matching statements in the offline database",
+  "@aiRetrievalTitle": {
+    "description": "Retrieval results heading."
+  },
+  "aiRetrievalNote": "This is not an AI answer: these are local search results, each with its source.",
+  "@aiRetrievalNote": {
+    "description": "Retrieval results disclaimer."
+  },
+  "aiNoContext": "No reliable context in the offline database — no answer is given.",
+  "@aiNoContext": {
+    "description": "No retrieval context."
+  },
+  "aiBlockedConclusion": "Final conclusions on the cause or manner of death are not provided. That decision belongs to the expert with the full case.",
+  "@aiBlockedConclusion": {
+    "description": "Safety block."
+  },
+  "aiBlockedLegal": "Legal conclusions (guilt, charges, sentencing) are not provided.",
+  "@aiBlockedLegal": {
+    "description": "Safety block."
+  },
+  "aiBlockedPii": "Remove personal data before searching or asking.",
+  "@aiBlockedPii": {
+    "description": "Safety block."
+  },
+  "learnLevelAll": "All levels",
+  "@learnLevelAll": {
+    "description": "Study level filter."
+  },
+  "learnLevelFoundation": "Foundation",
+  "@learnLevelFoundation": {
+    "description": "Study level."
+  },
+  "learnLevelIntermediate": "Intermediate",
+  "@learnLevelIntermediate": {
+    "description": "Study level."
+  },
+  "learnLevelAdvanced": "Advanced",
+  "@learnLevelAdvanced": {
+    "description": "Study level."
+  },
+  "learnProgressValue": "{done} of {total} lessons completed",
+  "@learnProgressValue": {
+    "description": "Lessons completed.",
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "learnHistory": "Recently studied",
+  "@learnHistory": {
+    "description": "Recently opened lessons."
+  },
+  "learnBookmarks": "Bookmarks",
+  "@learnBookmarks": {
+    "description": "Bookmarks section."
+  },
+  "learnBookmarksEmpty": "Bookmark a topic with the star to find it here.",
+  "@learnBookmarksEmpty": {
+    "description": "No bookmarks."
+  },
+  "learnMarkComplete": "Mark as completed",
+  "@learnMarkComplete": {
+    "description": "Toggle lesson completion."
+  },
+  "learnCompleted": "Completed",
+  "@learnCompleted": {
+    "description": "Lesson completed chip."
+  },
+  "learnCourseSourceNote": "Lessons show original source statements. No new scientific text is written; content awaits expert review.",
+  "@learnCourseSourceNote": {
+    "description": "Explains content-based course."
+  },
+  "learnExam": "Exam mode",
+  "@learnExam": {
+    "description": "Exam mode tile/title."
+  },
+  "learnExamIntro": "Answer all questions. Results and explanations appear only after you submit.",
+  "@learnExamIntro": {
+    "description": "Exam mode intro."
+  },
+  "learnExamSubmit": "Submit exam",
+  "@learnExamSubmit": {
+    "description": "Exam submit button."
+  },
+  "learnExamScore": "Score: {correct} of {total}",
+  "@learnExamScore": {
+    "description": "Exam score.",
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "learnExamEmpty": "No reviewed exam questions yet. Questions are not generated automatically.",
+  "@learnExamEmpty": {
+    "description": "No exam questions."
+  },
+  "learnExamRetry": "Try again",
+  "@learnExamRetry": {
+    "description": "Exam retry."
+  },
+  "learnSimulatedCase": "SIMULATED CASE — not a real case",
+  "@learnSimulatedCase": {
+    "description": "Label for simulated (non-real) case studies."
   }
 }

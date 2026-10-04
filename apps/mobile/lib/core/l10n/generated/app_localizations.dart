@@ -1983,6 +1983,1002 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Standards & laws'**
   String get searchGroupStandardsLaws;
+
+  /// Home module.
+  ///
+  /// In en, this message translates to:
+  /// **'Biochemistry'**
+  String get moduleBiochemistry;
+
+  /// Home module.
+  ///
+  /// In en, this message translates to:
+  /// **'Reagents & solutions'**
+  String get moduleReagents;
+
+  /// Home module.
+  ///
+  /// In en, this message translates to:
+  /// **'Screening & express tests'**
+  String get moduleScreening;
+
+  /// Home module.
+  ///
+  /// In en, this message translates to:
+  /// **'Methods & SOP'**
+  String get moduleMethods;
+
+  /// Home module: standards, laws, jurisdiction comparison.
+  ///
+  /// In en, this message translates to:
+  /// **'Standards & laws'**
+  String get moduleStandardsLaws;
+
+  /// Home module.
+  ///
+  /// In en, this message translates to:
+  /// **'Emerging issues'**
+  String get moduleEmerging;
+
+  /// Home section heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional areas'**
+  String get homeAreasHeading;
+
+  /// Home: offline database card title.
+  ///
+  /// In en, this message translates to:
+  /// **'Offline database'**
+  String get homeDbTitle;
+
+  /// Content pack version.
+  ///
+  /// In en, this message translates to:
+  /// **'Content pack {version}'**
+  String homeDbPack(String version);
+
+  /// Scientific DB component version.
+  ///
+  /// In en, this message translates to:
+  /// **'Scientific data {version}'**
+  String homeDbScientific(String version);
+
+  /// Jurisdiction data component version.
+  ///
+  /// In en, this message translates to:
+  /// **'Jurisdiction data {version}'**
+  String homeDbJurisdiction(String version);
+
+  /// Home: privacy/offline note.
+  ///
+  /// In en, this message translates to:
+  /// **'Works offline. Searches and questions stay on this device.'**
+  String get homeDbOffline;
+
+  /// Home: no content pack.
+  ///
+  /// In en, this message translates to:
+  /// **'Content pack is not installed.'**
+  String get homeDbNotInstalled;
+
+  /// Home: content pack loading.
+  ///
+  /// In en, this message translates to:
+  /// **'Opening the offline database…'**
+  String get homeDbLoading;
+
+  /// Knowledge list empty state.
+  ///
+  /// In en, this message translates to:
+  /// **'No records in the installed content pack yet.'**
+  String get knowledgeEmpty;
+
+  /// Taxonomy topic without content.
+  ///
+  /// In en, this message translates to:
+  /// **'No sourced content yet'**
+  String get knowledgeNoSourcedContent;
+
+  /// Section: sourced statements (claims).
+  ///
+  /// In en, this message translates to:
+  /// **'Sourced statements'**
+  String get knowledgeStatements;
+
+  /// Section: limitations and safety (never paywalled).
+  ///
+  /// In en, this message translates to:
+  /// **'Limitations & safety'**
+  String get knowledgeSafety;
+
+  /// Section: sources.
+  ///
+  /// In en, this message translates to:
+  /// **'Sources'**
+  String get knowledgeSources;
+
+  /// Section: structured details.
+  ///
+  /// In en, this message translates to:
+  /// **'Details'**
+  String get knowledgeDetails;
+
+  /// Value attribution to a source.
+  ///
+  /// In en, this message translates to:
+  /// **'Source: {source}'**
+  String knowledgeSourceRef(String source);
+
+  /// Field not stated by any source.
+  ///
+  /// In en, this message translates to:
+  /// **'Not stated in the sources — not estimated'**
+  String get knowledgeNotInSource;
+
+  /// Section: topic taxonomy.
+  ///
+  /// In en, this message translates to:
+  /// **'Topics'**
+  String get knowledgeTaxonomy;
+
+  /// Topics with content count.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} of {total} topics have sourced content'**
+  String knowledgeTopicCount(int count, int total);
+
+  /// Reagent: preparation section.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparation'**
+  String get reagentPreparation;
+
+  /// Reagent without verified recipe.
+  ///
+  /// In en, this message translates to:
+  /// **'No verified preparation recipe was found in the sources. Ingredients, amounts, order of addition, storage and shelf life are not shown and are never estimated.'**
+  String get reagentNoRecipe;
+
+  /// Recipe ingredients.
+  ///
+  /// In en, this message translates to:
+  /// **'Ingredients'**
+  String get reagentIngredients;
+
+  /// Recipe final volume.
+  ///
+  /// In en, this message translates to:
+  /// **'Final volume'**
+  String get reagentFinalVolume;
+
+  /// Recipe steps.
+  ///
+  /// In en, this message translates to:
+  /// **'Steps'**
+  String get reagentSteps;
+
+  /// Source does not state order.
+  ///
+  /// In en, this message translates to:
+  /// **'The source does not state the order of addition — steps are listed without numbering.'**
+  String get reagentOrderNotStated;
+
+  /// Recipe storage.
+  ///
+  /// In en, this message translates to:
+  /// **'Storage'**
+  String get reagentStorage;
+
+  /// Recipe temperature.
+  ///
+  /// In en, this message translates to:
+  /// **'Temperature'**
+  String get reagentTemperature;
+
+  /// Recipe stability / shelf life.
+  ///
+  /// In en, this message translates to:
+  /// **'Stability'**
+  String get reagentStability;
+
+  /// Recipe hazards.
+  ///
+  /// In en, this message translates to:
+  /// **'Hazards'**
+  String get reagentHazards;
+
+  /// Recipe disposal reference.
+  ///
+  /// In en, this message translates to:
+  /// **'Disposal'**
+  String get reagentDisposal;
+
+  /// Recipe QC requirement.
+  ///
+  /// In en, this message translates to:
+  /// **'Quality control'**
+  String get reagentQc;
+
+  /// Button to the solution preparation calculator.
+  ///
+  /// In en, this message translates to:
+  /// **'Solution preparation calculator'**
+  String get reagentOpenCalculator;
+
+  /// Permanent screening disclaimer.
+  ///
+  /// In en, this message translates to:
+  /// **'SCREENING RESULT ≠ CONFIRMED IDENTIFICATION. A positive screen is presumptive and requires a validated confirmatory method.'**
+  String get screeningBanner;
+
+  /// Screening field.
+  ///
+  /// In en, this message translates to:
+  /// **'Analyte'**
+  String get screeningAnalyte;
+
+  /// Screening field.
+  ///
+  /// In en, this message translates to:
+  /// **'Specimen'**
+  String get screeningSpecimen;
+
+  /// Screening field.
+  ///
+  /// In en, this message translates to:
+  /// **'Principle'**
+  String get screeningPrinciple;
+
+  /// Screening field.
+  ///
+  /// In en, this message translates to:
+  /// **'Cut-off'**
+  String get screeningCutoff;
+
+  /// Screening field.
+  ///
+  /// In en, this message translates to:
+  /// **'Sensitivity'**
+  String get screeningSensitivity;
+
+  /// Screening field.
+  ///
+  /// In en, this message translates to:
+  /// **'Specificity'**
+  String get screeningSpecificity;
+
+  /// Screening field.
+  ///
+  /// In en, this message translates to:
+  /// **'Cross-reactivity'**
+  String get screeningCrossReactivity;
+
+  /// Screening field.
+  ///
+  /// In en, this message translates to:
+  /// **'False positives'**
+  String get screeningFalsePositive;
+
+  /// Screening field.
+  ///
+  /// In en, this message translates to:
+  /// **'False negatives'**
+  String get screeningFalseNegative;
+
+  /// Screening field.
+  ///
+  /// In en, this message translates to:
+  /// **'Limitations'**
+  String get screeningLimitations;
+
+  /// Screening: confirmatory methods.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirmatory methods'**
+  String get screeningConfirmatory;
+
+  /// Method kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Scientific methods'**
+  String get methodKindScientific;
+
+  /// Method kind.
+  ///
+  /// In en, this message translates to:
+  /// **'International standards'**
+  String get methodKindInternational;
+
+  /// Method kind.
+  ///
+  /// In en, this message translates to:
+  /// **'National methods'**
+  String get methodKindNational;
+
+  /// Method kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Institutional SOPs'**
+  String get methodKindSop;
+
+  /// Explains that method kinds are never mixed.
+  ///
+  /// In en, this message translates to:
+  /// **'Method types are kept separate: a scientific method is not a legal requirement, and an institutional SOP applies only to its institution.'**
+  String get methodKindNote;
+
+  /// No method records of a kind.
+  ///
+  /// In en, this message translates to:
+  /// **'No records of this type yet.'**
+  String get methodNoKindEntries;
+
+  /// Method field.
+  ///
+  /// In en, this message translates to:
+  /// **'Organization'**
+  String get methodOrganization;
+
+  /// Method field.
+  ///
+  /// In en, this message translates to:
+  /// **'Jurisdiction'**
+  String get methodJurisdiction;
+
+  /// Method field.
+  ///
+  /// In en, this message translates to:
+  /// **'Techniques'**
+  String get methodTechniques;
+
+  /// Method field.
+  ///
+  /// In en, this message translates to:
+  /// **'Document version'**
+  String get methodDocumentVersion;
+
+  /// Emerging issue date.
+  ///
+  /// In en, this message translates to:
+  /// **'Published {date}'**
+  String emergingDate(String date);
+
+  /// Emerging issue field.
+  ///
+  /// In en, this message translates to:
+  /// **'Evidence type'**
+  String get emergingEvidenceType;
+
+  /// Emerging issue scope.
+  ///
+  /// In en, this message translates to:
+  /// **'Scope: global'**
+  String get emergingScopeGlobal;
+
+  /// Evidence type.
+  ///
+  /// In en, this message translates to:
+  /// **'Official alert'**
+  String get evidenceTypeOfficialAlert;
+
+  /// Evidence type.
+  ///
+  /// In en, this message translates to:
+  /// **'Peer-reviewed publication'**
+  String get evidenceTypePeerReviewed;
+
+  /// Evidence type.
+  ///
+  /// In en, this message translates to:
+  /// **'Report'**
+  String get evidenceTypeReport;
+
+  /// Evidence type.
+  ///
+  /// In en, this message translates to:
+  /// **'Standard'**
+  String get evidenceTypeStandard;
+
+  /// Emerging issues explainer.
+  ///
+  /// In en, this message translates to:
+  /// **'Each item has a source, a date, an evidence type and a scope. This is not a news feed.'**
+  String get emergingNote;
+
+  /// Emerging category.
+  ///
+  /// In en, this message translates to:
+  /// **'New psychoactive substances'**
+  String get emergingCatNps;
+
+  /// Emerging category.
+  ///
+  /// In en, this message translates to:
+  /// **'Synthetic opioids'**
+  String get emergingCatSyntheticOpioids;
+
+  /// Emerging category.
+  ///
+  /// In en, this message translates to:
+  /// **'Novel stimulants'**
+  String get emergingCatStimulants;
+
+  /// Emerging category.
+  ///
+  /// In en, this message translates to:
+  /// **'Analytical challenges'**
+  String get emergingCatAnalytical;
+
+  /// Emerging category.
+  ///
+  /// In en, this message translates to:
+  /// **'New interferences'**
+  String get emergingCatInterferences;
+
+  /// Emerging category.
+  ///
+  /// In en, this message translates to:
+  /// **'Postmortem interpretation'**
+  String get emergingCatPostmortem;
+
+  /// Emerging category.
+  ///
+  /// In en, this message translates to:
+  /// **'New standards'**
+  String get emergingCatStandards;
+
+  /// Emerging category.
+  ///
+  /// In en, this message translates to:
+  /// **'Method validation'**
+  String get emergingCatValidation;
+
+  /// Emerging category.
+  ///
+  /// In en, this message translates to:
+  /// **'Laboratory quality'**
+  String get emergingCatQuality;
+
+  /// Emerging category.
+  ///
+  /// In en, this message translates to:
+  /// **'Scientific alert'**
+  String get emergingCatAlert;
+
+  /// Forensic medicine taxonomy topic name.
+  ///
+  /// In en, this message translates to:
+  /// **'Death investigation'**
+  String get fmTopicDeathInvestigation;
+
+  /// Forensic medicine taxonomy topic name.
+  ///
+  /// In en, this message translates to:
+  /// **'Cause, mechanism and manner of death'**
+  String get fmTopicCauseMechanismManner;
+
+  /// Forensic medicine taxonomy topic name.
+  ///
+  /// In en, this message translates to:
+  /// **'Postmortem changes'**
+  String get fmTopicPostmortemChanges;
+
+  /// Forensic medicine taxonomy topic name.
+  ///
+  /// In en, this message translates to:
+  /// **'Postmortem interval'**
+  String get fmTopicPostmortemInterval;
+
+  /// Forensic medicine taxonomy topic name.
+  ///
+  /// In en, this message translates to:
+  /// **'Algor mortis'**
+  String get fmTopicAlgorMortis;
+
+  /// Forensic medicine taxonomy topic name.
+  ///
+  /// In en, this message translates to:
+  /// **'Rigor mortis'**
+  String get fmTopicRigorMortis;
+
+  /// Forensic medicine taxonomy topic name.
+  ///
+  /// In en, this message translates to:
+  /// **'Livor mortis'**
+  String get fmTopicLivorMortis;
+
+  /// Forensic medicine taxonomy topic name.
+  ///
+  /// In en, this message translates to:
+  /// **'Decomposition'**
+  String get fmTopicDecomposition;
+
+  /// Forensic medicine taxonomy topic name.
+  ///
+  /// In en, this message translates to:
+  /// **'Trauma'**
+  String get fmTopicTrauma;
+
+  /// Forensic medicine taxonomy topic name.
+  ///
+  /// In en, this message translates to:
+  /// **'Blunt force injury'**
+  String get fmTopicBluntForceInjury;
+
+  /// Forensic medicine taxonomy topic name.
+  ///
+  /// In en, this message translates to:
+  /// **'Sharp force injury'**
+  String get fmTopicSharpForceInjury;
+
+  /// Forensic medicine taxonomy topic name.
+  ///
+  /// In en, this message translates to:
+  /// **'Firearm injury'**
+  String get fmTopicFirearmInjury;
+
+  /// Forensic medicine taxonomy topic name.
+  ///
+  /// In en, this message translates to:
+  /// **'Asphyxia'**
+  String get fmTopicAsphyxia;
+
+  /// Forensic medicine taxonomy topic name.
+  ///
+  /// In en, this message translates to:
+  /// **'Burns'**
+  String get fmTopicBurns;
+
+  /// Forensic medicine taxonomy topic name.
+  ///
+  /// In en, this message translates to:
+  /// **'Electrical injury'**
+  String get fmTopicElectricalInjury;
+
+  /// Forensic medicine taxonomy topic name.
+  ///
+  /// In en, this message translates to:
+  /// **'Hypothermia and hyperthermia'**
+  String get fmTopicHypoHyperthermia;
+
+  /// Forensic medicine taxonomy topic name.
+  ///
+  /// In en, this message translates to:
+  /// **'Drowning'**
+  String get fmTopicDrowning;
+
+  /// Forensic medicine taxonomy topic name.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic anthropology'**
+  String get fmTopicAnthropology;
+
+  /// Forensic medicine taxonomy topic name.
+  ///
+  /// In en, this message translates to:
+  /// **'Age estimation'**
+  String get fmTopicAgeEstimation;
+
+  /// Forensic medicine taxonomy topic name.
+  ///
+  /// In en, this message translates to:
+  /// **'Sex estimation'**
+  String get fmTopicSexEstimation;
+
+  /// Forensic medicine taxonomy topic name.
+  ///
+  /// In en, this message translates to:
+  /// **'Stature estimation'**
+  String get fmTopicStatureEstimation;
+
+  /// Forensic medicine taxonomy topic name.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic odontology'**
+  String get fmTopicOdontology;
+
+  /// Forensic medicine taxonomy topic name.
+  ///
+  /// In en, this message translates to:
+  /// **'Disaster victim identification'**
+  String get fmTopicDisasterVictimIdentification;
+
+  /// Forensic medicine taxonomy topic name.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic histology'**
+  String get fmTopicHistology;
+
+  /// Forensic medicine taxonomy topic name.
+  ///
+  /// In en, this message translates to:
+  /// **'Postmortem imaging'**
+  String get fmTopicPostmortemImaging;
+
+  /// Compare jurisdictions screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Compare jurisdictions'**
+  String get compareTitle;
+
+  /// Comparison topic: drink-driving limit.
+  ///
+  /// In en, this message translates to:
+  /// **'Drink-driving: prescribed alcohol limit'**
+  String get compareTopicDrinkDrive;
+
+  /// Comparison cell without data.
+  ///
+  /// In en, this message translates to:
+  /// **'No data — no conclusion is drawn'**
+  String get compareNoData;
+
+  /// No comparable legal data.
+  ///
+  /// In en, this message translates to:
+  /// **'No comparable legal data in the content pack yet.'**
+  String get compareNoTopics;
+
+  /// Comparison disclaimer.
+  ///
+  /// In en, this message translates to:
+  /// **'Reference information, not legal advice. Always check the current official text.'**
+  String get compareNotAdvice;
+
+  /// Explains noData semantics.
+  ///
+  /// In en, this message translates to:
+  /// **'Missing data never means “allowed”, “not controlled” or “prohibited”.'**
+  String get compareNoInference;
+
+  /// Rule overrides a less specific one.
+  ///
+  /// In en, this message translates to:
+  /// **'Overrides the rule of {jurisdiction}'**
+  String compareOverrides(String jurisdiction);
+
+  /// Article / section of instrument.
+  ///
+  /// In en, this message translates to:
+  /// **'Section: {section}'**
+  String compareArticle(String section);
+
+  /// Issuing authority.
+  ///
+  /// In en, this message translates to:
+  /// **'Authority: {name}'**
+  String compareAuthority(String name);
+
+  /// Official text excerpt label.
+  ///
+  /// In en, this message translates to:
+  /// **'Official text'**
+  String get compareOfficialExcerpt;
+
+  /// Specimen.
+  ///
+  /// In en, this message translates to:
+  /// **'Breath'**
+  String get specimenBreath;
+
+  /// Specimen.
+  ///
+  /// In en, this message translates to:
+  /// **'Blood'**
+  String get specimenBlood;
+
+  /// Specimen.
+  ///
+  /// In en, this message translates to:
+  /// **'Urine'**
+  String get specimenUrine;
+
+  /// Legal threshold rule title.
+  ///
+  /// In en, this message translates to:
+  /// **'Legal limit'**
+  String get legalThresholdTitle;
+
+  /// Legal layer chip: national/regional law.
+  ///
+  /// In en, this message translates to:
+  /// **'National / regional law'**
+  String get legalLayerNational;
+
+  /// Button opening jurisdiction comparison.
+  ///
+  /// In en, this message translates to:
+  /// **'Compare jurisdictions'**
+  String get legalOpenCompare;
+
+  /// Tool name.
+  ///
+  /// In en, this message translates to:
+  /// **'Solution preparation (mass required)'**
+  String get toolSolutionName;
+
+  /// Tool description.
+  ///
+  /// In en, this message translates to:
+  /// **'Mass of substance for a target concentration and final volume: m = C·V(·M)/p. Molar mass and purity come from you (certificate/label).'**
+  String get toolSolutionDesc;
+
+  /// Calculator field.
+  ///
+  /// In en, this message translates to:
+  /// **'Target concentration'**
+  String get calcTargetConc;
+
+  /// Calculator field.
+  ///
+  /// In en, this message translates to:
+  /// **'Molar mass (g/mol)'**
+  String get calcMolarMass;
+
+  /// Calculator field.
+  ///
+  /// In en, this message translates to:
+  /// **'Purity (0–1)'**
+  String get calcPurity;
+
+  /// Calculator result label.
+  ///
+  /// In en, this message translates to:
+  /// **'Mass required'**
+  String get calcMassRequired;
+
+  /// Calculator error.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the molar mass from the certificate or label for a molar concentration.'**
+  String get calcErrorMolarMass;
+
+  /// Calculator error.
+  ///
+  /// In en, this message translates to:
+  /// **'Purity must be greater than 0 and at most 1.'**
+  String get calcErrorPurity;
+
+  /// Calculator assumption.
+  ///
+  /// In en, this message translates to:
+  /// **'Definitional calculation of concentration (no empirical coefficients).'**
+  String get calcSolutionAssumptionDefinition;
+
+  /// Calculator assumption.
+  ///
+  /// In en, this message translates to:
+  /// **'Molar mass and purity are supplied by the user; nothing is estimated.'**
+  String get calcSolutionAssumptionInputs;
+
+  /// Calculator limitation.
+  ///
+  /// In en, this message translates to:
+  /// **'This is not a reagent recipe: substance choice, order, storage and stability come only from a verified source or SOP.'**
+  String get calcSolutionLimitationRecipe;
+
+  /// Calculator limitation.
+  ///
+  /// In en, this message translates to:
+  /// **'Volume change on dissolution is ignored.'**
+  String get calcSolutionLimitationVolume;
+
+  /// Calculator warning.
+  ///
+  /// In en, this message translates to:
+  /// **'Purity correction applied.'**
+  String get calcWarnPurity;
+
+  /// Territorial extent of a legal provision.
+  ///
+  /// In en, this message translates to:
+  /// **'Territorial extent: {extent}'**
+  String legalExtent(String extent);
+
+  /// Rule applies to listed subdivisions.
+  ///
+  /// In en, this message translates to:
+  /// **'Applies to: {places}'**
+  String legalAppliesTo(String places);
+
+  /// Instrument legal status.
+  ///
+  /// In en, this message translates to:
+  /// **'In force'**
+  String get legalStatusInForce;
+
+  /// Instrument legal status.
+  ///
+  /// In en, this message translates to:
+  /// **'Amended'**
+  String get legalStatusAmended;
+
+  /// Instrument legal status.
+  ///
+  /// In en, this message translates to:
+  /// **'Superseded'**
+  String get legalStatusSuperseded;
+
+  /// Instrument legal status.
+  ///
+  /// In en, this message translates to:
+  /// **'Repealed'**
+  String get legalStatusRepealed;
+
+  /// AI experience toggle.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional'**
+  String get aiExperienceProfessional;
+
+  /// AI experience toggle.
+  ///
+  /// In en, this message translates to:
+  /// **'Tutor'**
+  String get aiExperienceTutor;
+
+  /// AI experience hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Concise, source-first answers for practitioners.'**
+  String get aiExperienceProfessionalHint;
+
+  /// AI experience hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Step-by-step explanations for learning, always with sources.'**
+  String get aiExperienceTutorHint;
+
+  /// Button: offline retrieval.
+  ///
+  /// In en, this message translates to:
+  /// **'Find sources offline'**
+  String get aiFindSources;
+
+  /// Retrieval results heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Matching statements in the offline database'**
+  String get aiRetrievalTitle;
+
+  /// Retrieval results disclaimer.
+  ///
+  /// In en, this message translates to:
+  /// **'This is not an AI answer: these are local search results, each with its source.'**
+  String get aiRetrievalNote;
+
+  /// No retrieval context.
+  ///
+  /// In en, this message translates to:
+  /// **'No reliable context in the offline database — no answer is given.'**
+  String get aiNoContext;
+
+  /// Safety block.
+  ///
+  /// In en, this message translates to:
+  /// **'Final conclusions on the cause or manner of death are not provided. That decision belongs to the expert with the full case.'**
+  String get aiBlockedConclusion;
+
+  /// Safety block.
+  ///
+  /// In en, this message translates to:
+  /// **'Legal conclusions (guilt, charges, sentencing) are not provided.'**
+  String get aiBlockedLegal;
+
+  /// Safety block.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove personal data before searching or asking.'**
+  String get aiBlockedPii;
+
+  /// Study level filter.
+  ///
+  /// In en, this message translates to:
+  /// **'All levels'**
+  String get learnLevelAll;
+
+  /// Study level.
+  ///
+  /// In en, this message translates to:
+  /// **'Foundation'**
+  String get learnLevelFoundation;
+
+  /// Study level.
+  ///
+  /// In en, this message translates to:
+  /// **'Intermediate'**
+  String get learnLevelIntermediate;
+
+  /// Study level.
+  ///
+  /// In en, this message translates to:
+  /// **'Advanced'**
+  String get learnLevelAdvanced;
+
+  /// Lessons completed.
+  ///
+  /// In en, this message translates to:
+  /// **'{done} of {total} lessons completed'**
+  String learnProgressValue(int done, int total);
+
+  /// Recently opened lessons.
+  ///
+  /// In en, this message translates to:
+  /// **'Recently studied'**
+  String get learnHistory;
+
+  /// Bookmarks section.
+  ///
+  /// In en, this message translates to:
+  /// **'Bookmarks'**
+  String get learnBookmarks;
+
+  /// No bookmarks.
+  ///
+  /// In en, this message translates to:
+  /// **'Bookmark a topic with the star to find it here.'**
+  String get learnBookmarksEmpty;
+
+  /// Toggle lesson completion.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark as completed'**
+  String get learnMarkComplete;
+
+  /// Lesson completed chip.
+  ///
+  /// In en, this message translates to:
+  /// **'Completed'**
+  String get learnCompleted;
+
+  /// Explains content-based course.
+  ///
+  /// In en, this message translates to:
+  /// **'Lessons show original source statements. No new scientific text is written; content awaits expert review.'**
+  String get learnCourseSourceNote;
+
+  /// Exam mode tile/title.
+  ///
+  /// In en, this message translates to:
+  /// **'Exam mode'**
+  String get learnExam;
+
+  /// Exam mode intro.
+  ///
+  /// In en, this message translates to:
+  /// **'Answer all questions. Results and explanations appear only after you submit.'**
+  String get learnExamIntro;
+
+  /// Exam submit button.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit exam'**
+  String get learnExamSubmit;
+
+  /// Exam score.
+  ///
+  /// In en, this message translates to:
+  /// **'Score: {correct} of {total}'**
+  String learnExamScore(int correct, int total);
+
+  /// No exam questions.
+  ///
+  /// In en, this message translates to:
+  /// **'No reviewed exam questions yet. Questions are not generated automatically.'**
+  String get learnExamEmpty;
+
+  /// Exam retry.
+  ///
+  /// In en, this message translates to:
+  /// **'Try again'**
+  String get learnExamRetry;
+
+  /// Label for simulated (non-real) case studies.
+  ///
+  /// In en, this message translates to:
+  /// **'SIMULATED CASE — not a real case'**
+  String get learnSimulatedCase;
 }
 
 class _AppLocalizationsDelegate

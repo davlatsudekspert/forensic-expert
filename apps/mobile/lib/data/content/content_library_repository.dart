@@ -4,6 +4,7 @@ import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:fe_database/fe_database.dart';
 
 import '../../domain/library/library_models.dart';
+import 'content_provenance.dart';
 
 /// Kutubxona — imzolangan kontent paketidagi `content.db` dan.
 ///
@@ -18,83 +19,9 @@ class ContentLibraryRepository implements LibraryRepository {
     final packVersion = await db.metaValue('pack_version') ?? '—';
     final channel = await db.metaValue('channel') ?? 'unknown';
 
-    final sources = <String, Map<String, Object?>>{
-      for (final r in await db.customSelect('SELECT * FROM sources').get())
-        r.read<String>('source_id'): r.data,
-    };
-    SourceView source(String id, String? locator) {
-      final s = sources[id]!;
-      return SourceView(
-        sourceId: id,
-        title: s['title']! as String,
-        sourceType: s['source_type']! as String,
-        evidenceLevel: s['evidence_level']! as String,
-        licenseMode: s['license_mode']! as String,
-        identifierVerified: s['identifier_verified'] == 1,
-        organization: s['organization'] as String?,
-        journal: s['journal'] as String?,
-        year: s['publication_year'] as int?,
-        edition: s['edition'] as String?,
-        doi: s['doi'] as String?,
-        pmid: s['pmid'] as String?,
-        url: s['official_url'] as String?,
-        accessedDate: _date(s['accessed_date']),
-        locator: locator,
-      );
-    }
-
-    final citations = <String, List<SourceView>>{};
-    for (final r in await db.customSelect('SELECT * FROM citations').get()) {
-      citations
-          .putIfAbsent(r.read<String>('claim_id'), () => [])
-          .add(
-            source(
-              r.read<String>('source_id'),
-              r.readNullable<String>('locator'),
-            ),
-          );
-    }
-
-    final reviewCounts = <String, int>{
-      for (final r
-          in await db
-              .customSelect(
-                'SELECT target_id, target_version, COUNT(*) AS n FROM reviews '
-                "WHERE target_type = 'claim' GROUP BY target_id, target_version",
-              )
-              .get())
-        '${r.read<String>('target_id')}#${r.read<int>('target_version')}': r
-            .read<int>('n'),
-    };
-
-    final claimsByEntity = <String, List<ClaimView>>{};
-    for (final r
-        in await db
-            .customSelect('SELECT * FROM claims ORDER BY claim_id')
-            .get()) {
-      final id = r.read<String>('claim_id');
-      final version = r.read<int>('version');
-      claimsByEntity
-          .putIfAbsent(r.read<String>('entity_id'), () => [])
-          .add(
-            ClaimView(
-              claimId: id,
-              field: r.read<String>('field'),
-              value: (jsonDecode(r.read<String>('value_json')) as Map)
-                  .cast<String, Object?>(),
-              status: ScientificStatus.fromCode(
-                r.read<String>('review_status'),
-              ),
-              evidenceLevel: r.read<String>('evidence_level'),
-              version: version,
-              layer: KnowledgeLayer.values.firstWhere(
-                (l) => l.code == r.read<String>('knowledge_layer'),
-              ),
-              sources: citations[id] ?? const [],
-              reviewCount: reviewCounts['$id#$version'] ?? 0,
-            ),
-          );
-    }
+    final prov = await ContentProvenance.load(db);
+    final source = prov.source;
+    final claimsByEntity = prov.claimsByEntity;
 
     final rulesBySubject = <String, List<LegalRuleView>>{};
     for (final r
@@ -170,7 +97,7 @@ class ContentLibraryRepository implements LibraryRepository {
             for (final e in names.entries) e.key: e.value.$1,
           }),
           synonyms: synonyms[id] ?? const [],
-          status: _aggregate(claims),
+          status: aggregateStatus([for (final c in claims) c.status]),
           isTestData: r.read<int>('is_test_data') == 1,
           lastReviewed: _date(r.data['last_reviewed_at']),
           access: r.read<String>('tier_access') == 'free'
@@ -190,21 +117,6 @@ class ContentLibraryRepository implements LibraryRepository {
       );
     }
     return ContentLibraryRepository._(entries);
-  }
-
-  /// Yozuv statusi — eng zaif claim statusi (hech qachon ko‘tarilmaydi).
-  static ScientificStatus _aggregate(List<ClaimView> claims) {
-    if (claims.isEmpty) return ScientificStatus.needsReview;
-    const order = [
-      ScientificStatus.rejected,
-      ScientificStatus.outdated,
-      ScientificStatus.needsReview,
-      ScientificStatus.reviewed,
-      ScientificStatus.verified,
-    ];
-    return claims
-        .map((c) => c.status)
-        .reduce((a, b) => order.indexOf(a) <= order.indexOf(b) ? a : b);
   }
 
   static DateTime? _date(Object? v) =>

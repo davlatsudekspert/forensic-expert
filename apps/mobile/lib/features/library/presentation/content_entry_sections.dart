@@ -12,7 +12,9 @@ import '../../../core/settings/app_settings.dart';
 import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../../core/widgets/fe_data_components.dart';
 import '../../../domain/library/library_models.dart';
+import '../../legal/presentation/legal_rule_card.dart';
 
 /// Kontent paketidan kelgan yozuv uchun bo‘limlar.
 ///
@@ -69,7 +71,7 @@ class ContentEntryBody extends ConsumerWidget {
           for (final (field, title) in scientificFields)
             if (d.claim(field) case final claim?) ...[
               FeSectionHeader(title),
-              _ClaimCard(claim: claim),
+              ClaimCard(claim: claim),
             ],
           for (final (icon, title) in emptySections) ...[
             FeSectionHeader(title),
@@ -209,8 +211,8 @@ class _ProvenanceCard extends StatelessWidget {
   }
 }
 
-class _ClaimCard extends StatelessWidget {
-  const _ClaimCard({required this.claim});
+class ClaimCard extends StatelessWidget {
+  const ClaimCard({super.key, required this.claim});
 
   final ClaimView claim;
 
@@ -244,10 +246,9 @@ class _ClaimCard extends StatelessWidget {
             crossAxisAlignment: WrapCrossAlignment.center,
             children: [
               ReviewStatusBadge(status: claim.status),
-              StatusChip(
-                icon: Icons.layers_outlined,
+              EvidenceLevelBadge(
+                level: claim.evidenceLevel,
                 label: l.detailEvidenceLevel(claim.evidenceLevel),
-                color: c.textSecondary,
               ),
             ],
           ),
@@ -418,24 +419,31 @@ class _ContentJurisdictionLayer extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
-    final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
     final lang = Localizations.localeOf(context).languageCode;
     final selectedId = ref.watch(settingsControllerProvider).jurisdictionId;
     final resolver = ref.watch(jurisdictionResolverProvider);
-    final chain = resolver.chainOf(selectedId);
-    final selected = chain.isEmpty
-        ? resolver.byId(internationalJurisdictionId)!
-        : chain.first;
-    final chainIds = chain.isEmpty
-        ? {internationalJurisdictionId}
-        : {for (final j in chain) j.id};
-    final rules = [
-      for (final r in entry.details!.legalRules)
-        if (chainIds.contains(r.jurisdictionId)) r,
-    ];
-    String date(DateTime d) =>
-        MaterialLocalizations.of(context).formatMediumDate(d);
+    final view =
+        resolver.view(
+          jurisdictionId: selectedId,
+          subjectType: 'substance',
+          subjectId: entry.id,
+          at: DateTime.now(),
+          includeUnreviewed: ref.watch(showUnreviewedLegalProvider),
+        ) ??
+        resolver.view(
+          jurisdictionId: internationalJurisdictionId,
+          subjectType: 'substance',
+          subjectId: entry.id,
+          at: DateTime.now(),
+          includeUnreviewed: ref.watch(showUnreviewedLegalProvider),
+        )!;
+    final selected = view.jurisdiction;
+    final rules = view.rules;
+    final hasNational = [for (final (_, i) in rules) i.jurisdictionId]
+        .any((id) => id != internationalJurisdictionId);
+    final hasTopic = [for (final (r, _) in rules) r.topicKey]
+        .any((k) => k != null);
 
     return Column(
       key: const Key('entry.layer.jurisdiction'),
@@ -448,52 +456,17 @@ class _ContentJurisdictionLayer extends ConsumerWidget {
         ),
         Text(l.detailLegalStatus, style: t.titleSmall),
         const SizedBox(height: FeSpace.xxs),
-        for (final r in rules)
+        for (final (rule, instrument) in rules)
           Padding(
             padding: const EdgeInsets.only(bottom: FeSpace.xs),
-            child: FeCard(
-              key: Key('legal.${r.ruleId}'),
-              padding: const EdgeInsets.all(FeSpace.sm),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Wrap(
-                    spacing: FeSpace.xs,
-                    runSpacing: FeSpace.xxs,
-                    children: [
-                      ReviewStatusBadge(status: r.status),
-                      StatusChip(
-                        icon: Icons.public,
-                        label: l.legalInternationalLayer,
-                        color: c.textSecondary,
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: FeSpace.xs),
-                  Text(
-                    l.legalSchedule(
-                      r.convention ?? r.instrumentTitle,
-                      r.schedules.join(', '),
-                    ),
-                    style: t.bodyMedium?.copyWith(fontWeight: FontWeight.w600),
-                  ),
-                  Text(
-                    r.instrumentTitle,
-                    locale: const Locale('en'),
-                    style: t.bodySmall,
-                  ),
-                  Text(
-                    '${l.legalEffective(date(r.effectiveFrom))}'
-                    '${r.datePrecision == 'year' ? ' ${l.legalDateYearOnly}' : ''}',
-                    style: t.bodySmall?.copyWith(color: c.textSecondary),
-                  ),
-                  if (r.lastVerifiedAt != null)
-                    Text(
-                      l.legalLastVerified(date(r.lastVerifiedAt!)),
-                      style: t.bodySmall?.copyWith(color: c.textSecondary),
-                    ),
-                ],
-              ),
+            child: LegalRuleCard(
+              rule: rule,
+              instrument: instrument,
+              overrides: [
+                for (final (o, oi) in view.overridden)
+                  if (o.topicKey == rule.topicKey)
+                    resolver.byId(oi.jurisdictionId),
+              ].nonNulls.firstOrNull,
             ),
           ),
         if (rules.isEmpty)
@@ -502,7 +475,7 @@ class _ContentJurisdictionLayer extends ConsumerWidget {
             body: l.jurisdictionNoContent,
             compact: true,
           ),
-        if (selected.id != internationalJurisdictionId)
+        if (selected.id != internationalJurisdictionId && !hasNational)
           FeEmptyState(
             key: const Key('legal.noNational'),
             icon: Icons.flag_outlined,
@@ -510,6 +483,16 @@ class _ContentJurisdictionLayer extends ConsumerWidget {
             compact: true,
           ),
         FeBanner(icon: Icons.info_outline, text: l.legalNotInListNote),
+        if (hasTopic)
+          Align(
+            alignment: AlignmentDirectional.centerStart,
+            child: TextButton.icon(
+              key: const Key('legal.openCompare'),
+              icon: const Icon(Icons.compare_arrows),
+              label: Text(l.legalOpenCompare),
+              onPressed: () => context.push(Routes.compare),
+            ),
+          ),
         Padding(
           padding: const EdgeInsets.only(top: FeSpace.xs, bottom: 4),
           child: Text(l.detailNationalMethods, style: t.titleSmall),

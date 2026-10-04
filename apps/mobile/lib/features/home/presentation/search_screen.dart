@@ -88,8 +88,14 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
         context.go(Routes.tool(hit.entityId));
       case SearchGroup.learning:
         context.go(Routes.learn);
+      case SearchGroup.standardsLaws:
+        context.go(Routes.compare);
       default:
-        context.go(Routes.libraryEntry(hit.entityId));
+        context.go(
+          ref.read(knowledgeRepositoryProvider).byId(hit.entityId) != null
+              ? Routes.knowledgeEntry(hit.entityId)
+              : Routes.libraryEntry(hit.entityId),
+        );
     }
   }
 

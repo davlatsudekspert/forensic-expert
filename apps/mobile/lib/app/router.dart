@@ -1,3 +1,4 @@
+import 'package:fe_content_schema/fe_content_schema.dart' show KnowledgeArea;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -6,11 +7,16 @@ import '../core/l10n/generated/app_localizations.dart';
 import '../core/perf/navigation_timing.dart';
 import '../core/settings/app_settings.dart';
 import '../core/settings/settings_controller.dart';
+
 import '../domain/catalog/tools_catalog.dart';
+import '../domain/knowledge/knowledge_models.dart';
 import '../features/ai/presentation/ai_screen.dart';
 import '../features/home/presentation/home_screen.dart';
 import '../features/home/presentation/search_screen.dart';
+import '../features/knowledge/presentation/knowledge_detail_screen.dart';
+import '../features/knowledge/presentation/knowledge_list_screen.dart';
 import '../features/learn/presentation/learn_screens.dart';
+import '../features/legal/presentation/compare_screen.dart';
 import '../features/library/presentation/entry_detail_screen.dart';
 import '../features/library/presentation/library_screen.dart';
 import '../features/onboarding/presentation/disclaimer_screen.dart';
@@ -107,7 +113,36 @@ final routerProvider = Provider<GoRouter>((ref) {
                         path: 'flashcards',
                         builder: (c, s) => const FlashcardsScreen(),
                       ),
+                      GoRoute(
+                        path: 'exam',
+                        builder: (c, s) => const ExamScreen(),
+                      ),
                     ],
+                  ),
+                  GoRoute(
+                    path: 'compare',
+                    builder: (c, s) => const CompareJurisdictionsScreen(),
+                  ),
+                  GoRoute(
+                    path: 'knowledge/:kind',
+                    builder: (c, s) => KnowledgeListScreen(
+                      kind: KnowledgeKind.values.byName(
+                        s.pathParameters['kind']!,
+                      ),
+                    ),
+                  ),
+                  GoRoute(
+                    path: 'entry/:id',
+                    builder: (c, s) =>
+                        KnowledgeDetailScreen(entryId: s.pathParameters['id']!),
+                  ),
+                  GoRoute(
+                    path: 'area/:area',
+                    builder: (c, s) => AreaHubScreen(
+                      area: KnowledgeArea.values.byName(
+                        s.pathParameters['area']!,
+                      ),
+                    ),
                   ),
                   GoRoute(
                     path: 'module/:id',
@@ -118,8 +153,6 @@ final routerProvider = Provider<GoRouter>((ref) {
                       return ModuleHubScreen(
                         title: module?.label(l) ?? l.inDevelopmentTitle,
                         category: switch (module) {
-                          HomeModule.forensicMedicine =>
-                            ToolCategory.forensicMedicine,
                           HomeModule.toxicology => ToolCategory.toxicology,
                           HomeModule.laboratory => ToolCategory.laboratory,
                           _ => null,

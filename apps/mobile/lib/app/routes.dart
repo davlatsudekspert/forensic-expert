@@ -10,6 +10,12 @@ abstract final class Routes {
       Uri(path: search, queryParameters: {'q': query}).toString();
   static String module(String id) => '/home/module/$id';
   static const learn = '/home/learn';
+  static const compare = '/home/compare';
+  static String knowledge(String kind) => '/home/knowledge/$kind';
+  static String knowledgeEntry(String id) => '/home/entry/$id';
+  static const forensicMedicine = '/home/area/forensicMedicine';
+  static const biochemistry = '/home/area/biochemistry';
+  static const exam = '/home/learn/exam';
   static const quiz = '/home/learn/quiz';
   static const flashcards = '/home/learn/flashcards';
 

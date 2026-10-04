@@ -215,3 +215,23 @@ abstract interface class LibraryRepository {
 
   LibraryEntry? byId(String id);
 }
+
+/// Yozuv statusi — eng zaif claim statusi (hech qachon ko‘tarilmaydi).
+/// Claim bo‘lmasa — NEEDS_REVIEW.
+ScientificStatus aggregateStatus(Iterable<ScientificStatus> statuses) {
+  const order = [
+    ScientificStatus.rejected,
+    ScientificStatus.outdated,
+    ScientificStatus.draft,
+    ScientificStatus.needsReview,
+    ScientificStatus.reviewed,
+    ScientificStatus.verified,
+  ];
+  var weakest = ScientificStatus.verified;
+  var any = false;
+  for (final s in statuses) {
+    any = true;
+    if (order.indexOf(s) < order.indexOf(weakest)) weakest = s;
+  }
+  return any ? weakest : ScientificStatus.needsReview;
+}

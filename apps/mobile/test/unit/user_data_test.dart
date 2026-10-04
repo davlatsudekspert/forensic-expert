@@ -78,6 +78,8 @@ void main() {
         'fe.user.favorites',
         'fe.user.recent_tools',
         'fe.user.recent_searches',
+        'fe.user.completed_lessons',
+        'fe.user.recent_lessons',
       });
     },
   );

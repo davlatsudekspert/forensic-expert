@@ -4,28 +4,57 @@ import 'package:go_router/go_router.dart';
 
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
+import '../../../app/user_data.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
+import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/learn/learn_models.dart';
 import '../../../domain/ports/billing_ports.dart';
 import '../../placeholder/presentation/in_development_view.dart';
 
 /// Student / Resident dashboard. Professional rejim bilan bir xil dizayn
-/// tizimi (bitta ilova), lekin ta’limga yo‘naltirilgan tuzilma.
-class LearnScreen extends ConsumerWidget {
+/// tizimi (bitta ilova), lekin ta’limga yo‘naltirilgan tuzilma: darajalar,
+/// kurslar, progress va tarix, xatcho‘plar, mashq va imtihon rejimi.
+class LearnScreen extends ConsumerStatefulWidget {
   const LearnScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<LearnScreen> createState() => _LearnScreenState();
+}
+
+class _LearnScreenState extends ConsumerState<LearnScreen> {
+  StudyLevel? _level;
+
+  String _levelName(AppLocalizations l, StudyLevel v) => switch (v) {
+    StudyLevel.foundation => l.learnLevelFoundation,
+    StudyLevel.intermediate => l.learnLevelIntermediate,
+    StudyLevel.advanced => l.learnLevelAdvanced,
+  };
+
+  @override
+  Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
     final repo = ref.watch(learnRepositoryProvider);
+    final knowledge = ref.watch(knowledgeRepositoryProvider);
+    final data = ref.watch(userDataProvider);
     final lang = Localizations.localeOf(context).languageCode;
-    final courses = repo.courses();
+    final all = repo.courses();
+    final courses = [
+      for (final course in all)
+        if (_level == null || course.level == _level) course,
+    ];
+    final lessons = [for (final course in all) ...course.lessons];
+    final done = lessons
+        .where((x) => data.completedLessons.contains(x.id))
+        .length;
+    final lessonById = {for (final x in lessons) x.id: x};
+    final unlockedAll = ref.watch(accessProvider).hasFullAccess;
+    final bookmarks = [for (final id in data.favorites) ?knowledge.byId(id)];
 
     return Scaffold(
       appBar: AppBar(title: Text(l.moduleLearn)),
@@ -40,12 +69,78 @@ class LearnScreen extends ConsumerWidget {
                     l.learnProgress,
                     padding: const EdgeInsets.only(bottom: FeSpace.xs),
                   ),
-                  FeEmptyState(
-                    icon: Icons.insights_outlined,
-                    body: l.learnProgressEmpty,
-                    compact: true,
-                  ),
+                  if (lessons.isEmpty)
+                    FeEmptyState(
+                      icon: Icons.insights_outlined,
+                      body: l.learnProgressEmpty,
+                      compact: true,
+                    )
+                  else
+                    FeCard(
+                      key: const Key('learn.progress'),
+                      padding: const EdgeInsets.all(FeSpace.sm),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Text(
+                            l.learnProgressValue(done, lessons.length),
+                            style: t.bodyMedium,
+                          ),
+                          const SizedBox(height: FeSpace.xs),
+                          LinearProgressIndicator(
+                            value: done / lessons.length,
+                            semanticsLabel: l.learnProgressValue(
+                              done,
+                              lessons.length,
+                            ),
+                          ),
+                          if (data.recentLessons.isNotEmpty) ...[
+                            const SizedBox(height: FeSpace.sm),
+                            Text(l.learnHistory, style: t.labelLarge),
+                            Wrap(
+                              spacing: FeSpace.xs,
+                              children: [
+                                for (final id in data.recentLessons)
+                                  if (lessonById[id] case final lesson?)
+                                    ActionChip(
+                                      label: Text(lesson.title.resolve(lang)),
+                                      onPressed: () => _openLesson(lesson),
+                                    ),
+                              ],
+                            ),
+                          ],
+                        ],
+                      ),
+                    ),
                   FeSectionHeader(l.learnCourses),
+                  Wrap(
+                    spacing: FeSpace.xs,
+                    runSpacing: FeSpace.xxs,
+                    children: [
+                      ChoiceChip(
+                        key: const Key('learn.level.all'),
+                        label: Text(l.learnLevelAll),
+                        selected: _level == null,
+                        onSelected: (_) => setState(() => _level = null),
+                      ),
+                      for (final v in StudyLevel.values)
+                        ChoiceChip(
+                          key: Key('learn.level.${v.name}'),
+                          label: Text(_levelName(l, v)),
+                          selected: _level == v,
+                          onSelected: (_) => setState(() => _level = v),
+                        ),
+                    ],
+                  ),
+                  const SizedBox(height: FeSpace.xs),
+                  if (courses.any((x) => !x.isTestData))
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: FeSpace.xs),
+                      child: FeBanner(
+                        icon: Icons.menu_book_outlined,
+                        text: l.learnCourseSourceNote,
+                      ),
+                    ),
                   if (courses.isEmpty)
                     FeEmptyState(
                       key: const Key('learn.noCourses'),
@@ -53,57 +148,100 @@ class LearnScreen extends ConsumerWidget {
                       body: l.learnEmptyCourses,
                     )
                   else
-                    for (final (i, course) in courses.indexed)
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: FeSpace.xs),
-                        child: FeCard(
-                          key: Key('learn.course.${course.id}'),
-                          // Bepul demo: birinchi kurs(lar); qolganlari Lifetime.
-                          onTap:
-                              i < AccessPolicy.freeCourses ||
-                                  ref.watch(accessProvider).hasFullAccess
-                              ? () => _showLessons(context, course, lang)
-                              : () => context.push(Routes.purchase),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                course.title.resolve(lang),
-                                style: t.titleSmall,
-                              ),
-                              const SizedBox(height: FeSpace.xxs),
-                              Wrap(
-                                spacing: FeSpace.xs,
-                                runSpacing: FeSpace.xxs,
-                                crossAxisAlignment: WrapCrossAlignment.center,
-                                children: [
-                                  Text(
-                                    l.learnLessonCount(course.lessons.length),
-                                    style: t.bodySmall?.copyWith(
-                                      color: c.textSecondary,
+                    for (final course in courses)
+                      () {
+                        final i = all.indexOf(course);
+                        final free =
+                            i < AccessPolicy.freeCourses || unlockedAll;
+                        final courseDone = course.lessons
+                            .where((x) => data.completedLessons.contains(x.id))
+                            .length;
+                        return Padding(
+                          padding: const EdgeInsets.only(bottom: FeSpace.xs),
+                          child: FeCard(
+                            key: Key('learn.course.${course.id}'),
+                            // Bepul demo: birinchi kurs(lar); qolganlari Lifetime.
+                            onTap: free
+                                ? () => _showLessons(context, course, lang)
+                                : () => context.push(Routes.purchase),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  course.title.resolve(lang),
+                                  style: t.titleSmall,
+                                ),
+                                const SizedBox(height: FeSpace.xxs),
+                                Wrap(
+                                  spacing: FeSpace.xs,
+                                  runSpacing: FeSpace.xxs,
+                                  crossAxisAlignment: WrapCrossAlignment.center,
+                                  children: [
+                                    Text(
+                                      l.learnLessonCount(course.lessons.length),
+                                      style: t.bodySmall?.copyWith(
+                                        color: c.textSecondary,
+                                      ),
                                     ),
-                                  ),
-                                  if (i >= AccessPolicy.freeCourses &&
-                                      !ref.watch(accessProvider).hasFullAccess)
                                     StatusChip(
-                                      key: Key('learn.locked.${course.id}'),
-                                      icon: Icons.lock_outline,
-                                      label: l.lockedBadge,
+                                      icon: Icons.signal_cellular_alt,
+                                      label: _levelName(l, course.level),
                                       color: c.textSecondary,
                                     ),
-                                  StatusChip(
-                                    icon: Icons.radio_button_unchecked,
-                                    label: l.learnNotStarted,
-                                    color: c.textSecondary,
-                                  ),
-                                  if (course.isTestData) const TestDataBadge(),
-                                ],
-                              ),
-                            ],
+                                    ReviewStatusBadge(status: course.status),
+                                    if (!free)
+                                      StatusChip(
+                                        key: Key('learn.locked.${course.id}'),
+                                        icon: Icons.lock_outline,
+                                        label: l.lockedBadge,
+                                        color: c.textSecondary,
+                                      ),
+                                    if (courseDone == 0)
+                                      StatusChip(
+                                        icon: Icons.radio_button_unchecked,
+                                        label: l.learnNotStarted,
+                                        color: c.textSecondary,
+                                      )
+                                    else
+                                      StatusChip(
+                                        icon: Icons.check_circle_outline,
+                                        label:
+                                            '$courseDone/${course.lessons.length}',
+                                        color: c.accent,
+                                      ),
+                                    if (course.isTestData)
+                                      const TestDataBadge(),
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
-                        ),
-                      ),
-                  FeSectionHeader('${l.learnQuiz} · ${l.learnFlashcards}'),
+                        );
+                      }(),
+                  FeSectionHeader(l.learnBookmarks),
+                  if (bookmarks.isEmpty)
+                    FeEmptyState(
+                      key: const Key('learn.bookmarks.empty'),
+                      icon: Icons.star_border,
+                      body: l.learnBookmarksEmpty,
+                      compact: true,
+                    )
+                  else
+                    Wrap(
+                      spacing: FeSpace.xs,
+                      children: [
+                        for (final e in bookmarks)
+                          ActionChip(
+                            avatar: const Icon(Icons.star, size: 18),
+                            label: Text(e.name.resolve(lang)),
+                            onPressed: () =>
+                                context.push(Routes.knowledgeEntry(e.id)),
+                          ),
+                      ],
+                    ),
+                  FeSectionHeader(
+                    '${l.learnQuiz} · ${l.learnFlashcards} · ${l.learnExam}',
+                  ),
                   _PracticeGrid(
                     items: [
                       (
@@ -117,6 +255,12 @@ class LearnScreen extends ConsumerWidget {
                         Icons.style_outlined,
                         l.learnFlashcards,
                         () => context.go(Routes.flashcards),
+                      ),
+                      (
+                        const Key('learn.exam'),
+                        Icons.timer_outlined,
+                        l.learnExam,
+                        () => context.go(Routes.exam),
                       ),
                     ],
                   ),
@@ -136,10 +280,20 @@ class LearnScreen extends ConsumerWidget {
                                   cs.title.resolve(lang),
                                   style: t.bodyMedium,
                                 ),
-                                if (cs.isTestData) ...[
-                                  const SizedBox(height: FeSpace.xxs),
-                                  const TestDataBadge(),
-                                ],
+                                const SizedBox(height: FeSpace.xxs),
+                                Wrap(
+                                  spacing: FeSpace.xs,
+                                  runSpacing: FeSpace.xxs,
+                                  children: [
+                                    StatusChip(
+                                      key: Key('learn.simulated.${cs.id}'),
+                                      icon: Icons.theater_comedy_outlined,
+                                      label: l.learnSimulatedCase,
+                                      color: c.warning,
+                                    ),
+                                    if (cs.isTestData) const TestDataBadge(),
+                                  ],
+                                ),
                               ],
                             ),
                           ),
@@ -156,19 +310,169 @@ class LearnScreen extends ConsumerWidget {
     );
   }
 
+  void _openLesson(Lesson lesson) {
+    ref.read(userDataProvider.notifier).recordLessonOpened(lesson.id);
+    if (lesson.entryId != null) {
+      context.push(Routes.knowledgeEntry(lesson.entryId!));
+    }
+  }
+
   void _showLessons(BuildContext context, Course course, String lang) {
+    final l = AppLocalizations.of(context);
     showModalBottomSheet<void>(
       context: context,
       showDragHandle: true,
-      builder: (context) => SafeArea(
+      builder: (context) => Consumer(
+        builder: (context, ref, _) {
+          final completed = ref.watch(
+            userDataProvider.select((d) => d.completedLessons),
+          );
+          return SafeArea(
+            child: ListView(
+              shrinkWrap: true,
+              children: [
+                for (final lesson in course.lessons)
+                  ListTile(
+                    key: Key('learn.lesson.${lesson.id}'),
+                    leading: const Icon(Icons.article_outlined),
+                    title: Text(lesson.title.resolve(lang)),
+                    onTap: lesson.entryId == null
+                        ? null
+                        : () {
+                            Navigator.of(context).pop();
+                            _openLesson(lesson);
+                          },
+                    trailing: Checkbox(
+                      key: Key('learn.complete.${lesson.id}'),
+                      value: completed.contains(lesson.id),
+                      semanticLabel: l.learnMarkComplete,
+                      onChanged: (_) => ref
+                          .read(userDataProvider.notifier)
+                          .toggleLessonCompleted(lesson.id),
+                    ),
+                  ),
+              ],
+            ),
+          );
+        },
+      ),
+    );
+  }
+}
+
+/// Imtihon rejimi: barcha javoblar tanlanadi, natija va izoh faqat
+/// topshirgandan keyin. Savollar faqat repozitoriydan (to‘qilmaydi).
+class ExamScreen extends ConsumerStatefulWidget {
+  const ExamScreen({super.key});
+
+  @override
+  ConsumerState<ExamScreen> createState() => _ExamScreenState();
+}
+
+class _ExamScreenState extends ConsumerState<ExamScreen> {
+  final _answers = <String, int>{};
+  bool _submitted = false;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final lang = Localizations.localeOf(context).languageCode;
+    final questions = ref.watch(learnRepositoryProvider).quiz();
+    final correct = questions
+        .where((q) => _answers[q.id] == q.correctIndex)
+        .length;
+
+    return Scaffold(
+      appBar: AppBar(title: Text(l.learnExam)),
+      body: SafeArea(
         child: ListView(
-          shrinkWrap: true,
           children: [
-            for (final lesson in course.lessons)
-              ListTile(
-                leading: const Icon(Icons.article_outlined),
-                title: Text(lesson.title.resolve(lang)),
+            FeContentFrame(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  const SizedBox(height: FeSpace.sm),
+                  if (questions.isEmpty)
+                    FeEmptyState(
+                      key: const Key('exam.empty'),
+                      icon: Icons.timer_off_outlined,
+                      body: l.learnExamEmpty,
+                    )
+                  else ...[
+                    FeBanner(icon: Icons.info_outline, text: l.learnExamIntro),
+                    if (_submitted) ...[
+                      const SizedBox(height: FeSpace.sm),
+                      Semantics(
+                        liveRegion: true,
+                        child: Text(
+                          l.learnExamScore(correct, questions.length),
+                          key: const Key('exam.score'),
+                          style: t.titleMedium,
+                        ),
+                      ),
+                    ],
+                    for (final (n, q) in questions.indexed) ...[
+                      FeSectionHeader('${n + 1}. ${q.stem.resolve(lang)}'),
+                      if (q.isTestData)
+                        const Align(
+                          alignment: AlignmentDirectional.centerStart,
+                          child: TestDataBadge(),
+                        ),
+                      RadioGroup<int>(
+                        groupValue: _answers[q.id],
+                        onChanged: (v) {
+                          if (_submitted || v == null) return;
+                          setState(() => _answers[q.id] = v);
+                        },
+                        child: Column(
+                          children: [
+                            for (final (i, o) in q.options.indexed)
+                              RadioListTile<int>(
+                                key: Key('exam.${q.id}.$i'),
+                                value: i,
+                                enabled: !_submitted,
+                                title: Text(o.resolve(lang)),
+                                secondary: _submitted && i == q.correctIndex
+                                    ? Icon(
+                                        Icons.check_circle_outline,
+                                        color: c.verified,
+                                      )
+                                    : null,
+                              ),
+                          ],
+                        ),
+                      ),
+                      if (_submitted)
+                        Text(
+                          q.explanation.resolve(lang),
+                          style: t.bodySmall?.copyWith(color: c.textSecondary),
+                        ),
+                    ],
+                    const SizedBox(height: FeSpace.md),
+                    if (!_submitted)
+                      FilledButton(
+                        key: const Key('exam.submit'),
+                        onPressed: _answers.length == questions.length
+                            ? () => setState(() => _submitted = true)
+                            : null,
+                        child: Text(l.learnExamSubmit),
+                      )
+                    else
+                      OutlinedButton(
+                        key: const Key('exam.retry'),
+                        onPressed: () => setState(() {
+                          _answers.clear();
+                          _submitted = false;
+                        }),
+                        child: Text(l.learnExamRetry),
+                      ),
+                  ],
+                  const SizedBox(height: FeSpace.xl),
+                ],
               ),
+            ),
           ],
         ),
       ),

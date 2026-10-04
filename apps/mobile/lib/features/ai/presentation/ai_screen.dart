@@ -7,6 +7,7 @@ import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../../domain/ai/ai_architecture.dart';
 import '../../../domain/ports/ai_ports.dart';
 
 /// Forensic AI — PHASE 2: to‘liq UI/UX prototipi, **real AI ulanmagan**.
@@ -25,6 +26,27 @@ class AiScreen extends ConsumerStatefulWidget {
 class _AiScreenState extends ConsumerState<AiScreen> {
   final _controller = TextEditingController();
   List<PiiFinding> _pii = const [];
+  AiExperience _experience = AiExperience.professional;
+  AiRouteResult? _result;
+  bool _searching = false;
+
+  Future<void> _findSources(String lang) async {
+    final text = _controller.text.trim();
+    if (text.isEmpty) return;
+    setState(() => _searching = true);
+    final r = await ref
+        .read(aiRouterProvider(lang))
+        .route(
+          AiQuestion(text: text, languageCode: lang),
+          experience: _experience,
+          entitlement: await ref.read(aiEntitlementServiceProvider).current(),
+        );
+    if (!mounted) return;
+    setState(() {
+      _result = r;
+      _searching = false;
+    });
+  }
 
   @override
   void dispose() {
@@ -68,6 +90,32 @@ class _AiScreenState extends ConsumerState<AiScreen> {
                     tone: FeBannerTone.warning,
                   ),
                   FeSectionHeader(l.aiAskTitle),
+                  SegmentedButton<AiExperience>(
+                    key: const Key('ai.experience'),
+                    segments: [
+                      ButtonSegment(
+                        value: AiExperience.professional,
+                        icon: const Icon(Icons.work_outline),
+                        label: Text(l.aiExperienceProfessional),
+                      ),
+                      ButtonSegment(
+                        value: AiExperience.tutor,
+                        icon: const Icon(Icons.school_outlined),
+                        label: Text(l.aiExperienceTutor),
+                      ),
+                    ],
+                    selected: {_experience},
+                    onSelectionChanged: (v) =>
+                        setState(() => _experience = v.first),
+                  ),
+                  const SizedBox(height: FeSpace.xxs),
+                  Text(
+                    _experience == AiExperience.tutor
+                        ? l.aiExperienceTutorHint
+                        : l.aiExperienceProfessionalHint,
+                    style: t.bodySmall?.copyWith(color: c.textSecondary),
+                  ),
+                  const SizedBox(height: FeSpace.sm),
                   TextField(
                     key: const Key('ai.input'),
                     controller: _controller,
@@ -91,16 +139,31 @@ class _AiScreenState extends ConsumerState<AiScreen> {
                     ),
                   ],
                   const SizedBox(height: FeSpace.sm),
-                  Align(
-                    alignment: AlignmentDirectional.centerEnd,
-                    child: FilledButton.icon(
-                      key: const Key('ai.send'),
-                      icon: const Icon(Icons.send_outlined),
-                      label: Text(l.aiSend),
-                      // Real AI ulanmagan; PII topilsa ham yuborilmaydi.
-                      onPressed: available && kinds.isEmpty ? () {} : null,
-                    ),
+                  Wrap(
+                    alignment: WrapAlignment.end,
+                    spacing: FeSpace.xs,
+                    runSpacing: FeSpace.xs,
+                    children: [
+                      OutlinedButton.icon(
+                        key: const Key('ai.findSources'),
+                        icon: const Icon(Icons.travel_explore_outlined),
+                        label: Text(l.aiFindSources),
+                        onPressed: _searching || kinds.isNotEmpty
+                            ? null
+                            : () => _findSources(
+                                Localizations.localeOf(context).languageCode,
+                              ),
+                      ),
+                      FilledButton.icon(
+                        key: const Key('ai.send'),
+                        icon: const Icon(Icons.send_outlined),
+                        label: Text(l.aiSend),
+                        // Real AI ulanmagan; PII topilsa ham yuborilmaydi.
+                        onPressed: available && kinds.isEmpty ? () {} : null,
+                      ),
+                    ],
                   ),
+                  if (_result case final r?) _RouteResultView(result: r),
                   if (!available) ...[
                     const SizedBox(height: FeSpace.md),
                     Row(
@@ -141,6 +204,80 @@ class _AiScreenState extends ConsumerState<AiScreen> {
           ],
         ),
       ),
+    );
+  }
+}
+
+/// Lokal qidiruv natijasi yoki xavfsizlik blokining sababi.
+class _RouteResultView extends StatelessWidget {
+  const _RouteResultView({required this.result});
+
+  final AiRouteResult result;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final blocks = result.safety?.blocks ?? const <SafetyBlock>{};
+    return Column(
+      key: Key('ai.result.${result.outcome.name}'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        const SizedBox(height: FeSpace.sm),
+        if (result.outcome == AiRouteOutcome.blocked)
+          for (final b in blocks)
+            Padding(
+              padding: const EdgeInsets.only(bottom: FeSpace.xs),
+              child: FeBanner(
+                key: Key('ai.blocked.${b.name}'),
+                icon: Icons.block,
+                tone: FeBannerTone.warning,
+                text: switch (b) {
+                  SafetyBlock.personalData => l.aiBlockedPii,
+                  SafetyBlock.finalCauseOrManner => l.aiBlockedConclusion,
+                  SafetyBlock.legalConclusion => l.aiBlockedLegal,
+                },
+              ),
+            )
+        else if (result.chunks.isEmpty)
+          FeEmptyState(
+            key: const Key('ai.noContext'),
+            icon: Icons.search_off,
+            body: l.aiNoContext,
+            compact: true,
+          )
+        else ...[
+          FeSectionHeader(l.aiRetrievalTitle),
+          FeBanner(icon: Icons.info_outline, text: l.aiRetrievalNote),
+          const SizedBox(height: FeSpace.xs),
+          for (final ch in result.chunks)
+            Padding(
+              padding: const EdgeInsets.only(bottom: FeSpace.xs),
+              child: FeCard(
+                key: Key('ai.chunk.${ch.chunkId}'),
+                padding: const EdgeInsets.all(FeSpace.sm),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    if (ch.title != null) Text(ch.title!, style: t.titleSmall),
+                    const SizedBox(height: 2),
+                    Text(
+                      ch.text,
+                      locale: const Locale('en'),
+                      style: t.bodySmall?.copyWith(fontStyle: FontStyle.italic),
+                    ),
+                    const SizedBox(height: 2),
+                    Text(
+                      ch.sourceIds.join(', '),
+                      style: t.bodySmall?.copyWith(color: c.textSecondary),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+        ],
+      ],
     );
   }
 }
