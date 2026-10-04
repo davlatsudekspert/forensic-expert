@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-ENT-PMI-INSECTS-PRINCIPLE_TEMPERATURE-P8",
+  "subject_id": "C-ENT-PMI-INSECTS-PRINCIPLE_TEMPERATURE-P8",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "ent-pmi-insects",
+  "entity_names": {
+    "en": "Forensic entomology and PMI",
+    "ru": "Судебная энтомология и давность смерти",
+    "uz": "Sud entomologiyasi va o‘lim vaqti"
+  },
+  "field": "principle_temperature",
+  "domain": "fm",
+  "required_role": "forensic_medicine",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "The second method uses the regularity of insect development, in particular a close relationship between temperature and the rate of development.",
+    "location": "INTRO",
+    "proposed_value": {
+      "section": "INTRO"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC9188545",
+      "title": "Temperature models of development for Necrodes littoralis L. (Coleoptera: Silphidae), a carrion beetle of forensic importance in the Palearctic region",
+      "type": "journal_article",
+      "doi": "10.1038/s41598-022-13901-y",
+      "pmid": "35690667",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9188545/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "INTRO"
+    }
+  ],
+  "why_it_matters": "Shown to users as sourced evidence.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Forensic entomology and PMI",
+      "ru": "Судебная энтомология и давность смерти",
+      "uz": "Sud entomologiyasi va o‘lim vaqti"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

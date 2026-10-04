@@ -13,6 +13,15 @@ extension KnowledgeStrings on AppLocalizations {
     KnowledgeKind.emergingIssue => moduleEmerging,
   };
 
+  String methodEvidenceTypeLabel(MethodEvidenceType t) => switch (t) {
+    MethodEvidenceType.internationalStandard => evInternationalStandard,
+    MethodEvidenceType.guideline => evGuideline,
+    MethodEvidenceType.publishedValidatedMethod => evPublishedValidated,
+    MethodEvidenceType.nationalMethod => evNationalMethod,
+    MethodEvidenceType.localSopReference => evLocalSop,
+    MethodEvidenceType.educationalSummary => evEducationalSummary,
+  };
+
   String methodKindTitle(MethodKind k) => switch (k) {
     MethodKind.scientificMethod => methodKindScientific,
     MethodKind.internationalStandard => methodKindInternational,

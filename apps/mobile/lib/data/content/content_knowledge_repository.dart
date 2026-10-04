@@ -81,6 +81,7 @@ abstract final class ContentKnowledgeLoader {
           claims: claims,
           sources: entitySources[id] ?? const [],
           forensicMedicineTopic: topic?.forensicMedicineTopic,
+          discipline: topic?.discipline,
           recipe: kind == KnowledgeKind.reagent
               ? KnowledgeJson.recipeFrom(payload)
               : null,

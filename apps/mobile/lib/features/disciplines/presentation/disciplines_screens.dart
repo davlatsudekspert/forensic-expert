@@ -61,11 +61,7 @@ int recordCount(
   var n = 0;
   for (final kind in KnowledgeKind.values) {
     for (final e in knowledge.byKind(kind)) {
-      final fm = e.forensicMedicineTopic;
-      final disc = fm != null
-          ? disciplineOfFmTopic(fm)
-          : disciplineOfArea(e.area);
-      if (disc == d) n++;
+      if (e.effectiveDiscipline == d) n++;
     }
   }
   if (d == ForensicDiscipline.forensicToxicology) {
@@ -163,6 +159,12 @@ class DisciplineScreen extends ConsumerWidget {
       for (final e in knowledge.byKind(KnowledgeKind.topic))
         if (e.forensicMedicineTopic != null) e.forensicMedicineTopic!,
     };
+    // PHASE 8: fanga aniq biriktirilgan manbali mavzular.
+    final lang = Localizations.localeOf(context).languageCode;
+    final ownTopics = [
+      for (final e in knowledge.byKind(KnowledgeKind.topic))
+        if (e.discipline == d) e,
+    ];
     return Scaffold(
       appBar: AppBar(title: Text(l.disciplineName(d))),
       body: SafeArea(
@@ -197,6 +199,18 @@ class DisciplineScreen extends ConsumerWidget {
                         title: Text(m.label(l)),
                         trailing: const Icon(Icons.chevron_right),
                         onTap: () => context.go(m.route),
+                      ),
+                  ],
+                  if (ownTopics.isNotEmpty) ...[
+                    FeSectionHeader(l.disciplineSourcedTopics),
+                    for (final e in ownTopics)
+                      ListTile(
+                        key: Key('discipline.topic.${e.id}'),
+                        contentPadding: EdgeInsets.zero,
+                        leading: Icon(Icons.article_outlined, color: c.accent),
+                        title: Text(e.name.resolve(lang)),
+                        trailing: const Icon(Icons.chevron_right),
+                        onTap: () => context.push(Routes.knowledgeEntry(e.id)),
                       ),
                   ],
                   if (fmTopics.isNotEmpty) ...[

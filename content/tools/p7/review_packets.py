@@ -60,6 +60,8 @@ def main():
                    "bio-ethanol-neoformation", "bio-cocaine-stability", "bio-sampling-site"])
     for k in b["conflicts"]:
         scope.add(k["entity_id"])
+    # PHASE 8: fanga aniq biriktirilgan yangi mavzular.
+    scope |= {t["topic_id"] for t in b["topics"] if t.get("discipline")}
 
     out = "review/packets"
     shutil.rmtree(out, ignore_errors=True)

@@ -115,10 +115,12 @@ void main() {
       expect(find.textContaining('sourced records'), findsWidgets);
     });
 
-    testWidgets('entomologiya: kontent yo‘q — halol bo‘sh holat', (
+    // PHASE 8: entomologiya endi manbali mavzuga ega — bo‘sh fan sifatida
+    // sud psixiatriyasi tekshiriladi.
+    testWidgets('sud psixiatriyasi: kontent yo‘q — halol bo‘sh holat', (
       tester,
     ) async {
-      await open(tester, Routes.discipline('forensic_entomology'));
+      await open(tester, Routes.discipline('forensic_psychiatry'));
       expect(find.byKey(const Key('discipline.empty')), findsOneWidget);
     });
   });

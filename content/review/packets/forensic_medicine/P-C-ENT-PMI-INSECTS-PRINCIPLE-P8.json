@@ -1,0 +1,69 @@
+{
+  "packet_id": "P-C-ENT-PMI-INSECTS-PRINCIPLE-P8",
+  "subject_id": "C-ENT-PMI-INSECTS-PRINCIPLE-P8",
+  "kind": "claim",
+  "subject_version": 1,
+  "entity_id": "ent-pmi-insects",
+  "entity_names": {
+    "en": "Forensic entomology and PMI",
+    "ru": "Судебная энтомология и давность смерти",
+    "uz": "Sud entomologiyasi va o‘lim vaqti"
+  },
+  "field": "principle",
+  "domain": "fm",
+  "required_role": "forensic_medicine",
+  "required_reviews": 2,
+  "allowed_actions": [
+    "APPROVE",
+    "REJECT",
+    "REQUEST_CHANGE",
+    "FLAG_CONFLICT",
+    "FLAG_OUTDATED"
+  ],
+  "status": "NEEDS_REVIEW",
+  "lifecycle": "NEEDS_REVIEW",
+  "claim": {
+    "excerpt": "Forensic entomology applies insect evidence to legal problems such as the estimation of minimum postmortem interval (mPMI).",
+    "location": "ABSTRACT",
+    "proposed_value": {
+      "section": "ABSTRACT"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PMC4491565",
+      "title": "The First Survey of Forensically Important Entomofauna Collected from Medicolegal Autopsies in South Korea",
+      "type": "journal_article",
+      "doi": "10.1155/2015/606728",
+      "pmid": "26185759",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4491565/",
+      "tier": "B",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "lifecycle": "current",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "locator": "ABSTRACT"
+    }
+  ],
+  "why_it_matters": "Shown to users as sourced evidence.",
+  "conflicts": [],
+  "has_conflict": false,
+  "limitations": [],
+  "concentration_context": null,
+  "translations": {
+    "entity_names": {
+      "en": "Forensic entomology and PMI",
+      "ru": "Судебная энтомология и давность смерти",
+      "uz": "Sud entomologiyasi va o‘lim vaqti"
+    },
+    "status": "machine_draft (RU/UZ) — translation reviewer required"
+  },
+  "reviewer_checklist": [
+    "Excerpt matches the source at the stated location.",
+    "Proposed value says no more than the excerpt.",
+    "Source is current (not retracted/superseded) and the licence allows this use.",
+    "Context and limitations are complete; nothing is presented as a threshold.",
+    "Conflicts listed are fairly described."
+  ],
+  "review_actions": []
+}

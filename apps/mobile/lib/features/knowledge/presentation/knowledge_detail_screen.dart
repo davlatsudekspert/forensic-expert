@@ -423,6 +423,19 @@ class _RecipeSection extends StatelessWidget {
             entry: entry,
           ),
           _Field(label: l.reagentQc, note: r.qcRequirement, entry: entry),
+          // PHASE 8: to‘liq shablon — manbasiz maydon «manbali emas».
+          _Field(
+            label: l.reagentConcentration,
+            value: r.concentration,
+            entry: entry,
+          ),
+          _Field(label: l.reagentSolvent, note: r.solvent, entry: entry),
+          _Field(label: l.reagentPh, value: r.ph, entry: entry),
+          _Field(label: l.reagentExpiry, note: r.expiry, entry: entry),
+          for (final h in r.hazards)
+            _Field(label: l.reagentHazards, note: h, entry: entry),
+          for (final p in r.ppe)
+            _Field(label: l.reagentPpe, note: p, entry: entry),
         ],
         const SizedBox(height: FeSpace.xs),
         Align(
@@ -468,6 +481,18 @@ class _ScreeningSection extends ConsumerWidget {
           value: test.specificity,
           entry: entry,
         ),
+        _Field(
+          label: l.screeningResultType,
+          note: test.resultType,
+          entry: entry,
+        ),
+        _Field(
+          label: l.screeningDetectionWindow,
+          note: test.detectionWindow,
+          entry: entry,
+        ),
+        for (final n in test.interferences)
+          _Field(label: l.screeningInterference, note: n, entry: entry),
         FeSectionHeader(l.screeningConfirmatory),
         for (final id in test.confirmatoryMethodIds)
           ListTile(
@@ -510,7 +535,17 @@ class _MethodSection extends ConsumerWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        if (method.kind == MethodKind.scientificMethod) ...[
+        Padding(
+          padding: const EdgeInsets.only(bottom: FeSpace.xs),
+          child: StatusChip(
+            key: const Key('method.evidenceType'),
+            icon: Icons.description_outlined,
+            label: l.methodEvidenceTypeLabel(method.effectiveEvidenceType),
+            color: c.textSecondary,
+          ),
+        ),
+        if (method.effectiveEvidenceType ==
+            MethodEvidenceType.educationalSummary) ...[
           FeBanner(
             key: const Key('method.publishedNote'),
             icon: Icons.science_outlined,

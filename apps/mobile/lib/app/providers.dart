@@ -17,6 +17,8 @@ import '../data/offline/offline_backend.dart';
 import '../data/offline/offline_billing.dart';
 import '../domain/ai/ai_architecture.dart';
 import '../domain/ai/local_retrieval.dart';
+import '../domain/ai/provenance_retrieval.dart';
+import '../domain/ai/rag_pipeline.dart';
 import '../domain/evidence/evidence_models.dart';
 import '../domain/evidence/provenance_models.dart';
 import '../domain/jurisdiction/jurisdiction_catalog.dart';
@@ -87,6 +89,46 @@ final aiRouterProvider = Provider.family<AiRouter, String>((ref, lang) {
     ),
     provider: ref.watch(aiProviderProvider),
     citations: CitationResolver(knownSourceIds: sourceIds),
+  );
+});
+
+/// PHASE 9: RAG quvuri (provenance bilan). Provayder ulanmagan bo‘lsa —
+/// faqat manbalar (retrievalOnly); mock provayder production deb atalmaydi.
+final ragPipelineProvider = Provider.family<RagPipeline, String>((ref, lang) {
+  final index = ref.watch(provenanceIndexProvider);
+  final library = ref.watch(libraryRepositoryProvider);
+  final knowledge = ref.watch(knowledgeRepositoryProvider);
+  final titles = <String, String>{
+    for (final e in library.entries(LibrarySection.substances))
+      e.id: e.name.resolve(lang),
+    for (final kind in KnowledgeKind.values)
+      for (final e in knowledge.byKind(kind)) e.id: e.name.resolve(lang),
+    for (final s in index.specimens) s.id: s.names.resolve(lang),
+  };
+  final retrieval = ProvenanceRetrieval(
+    index: index,
+    entityTitles: titles,
+    legalRules: () {
+      final legal = ref.watch(contentLegalDataProvider);
+      if (legal == null) {
+        return <(JurisdictionalRule, JurisdictionalInstrument)>[];
+      }
+      final byId = {for (final i in legal.instruments) i.id: i};
+      return [
+        for (final r in legal.rules)
+          if (byId[r.instrumentId] case final i?) (r, i),
+      ];
+    }(),
+  );
+  return RagPipeline(
+    safety: SafetyPolicy(ref.watch(piiScannerProvider)),
+    retrieve: (q, intent, j) =>
+        retrieval.retrieve(q, intent, jurisdictionId: j),
+    provider: ref.watch(aiProviderProvider),
+    knownSourceIds: {
+      for (final c in index.claimsById.values)
+        for (final s in c.sources) s.sourceId,
+    },
   );
 });
 

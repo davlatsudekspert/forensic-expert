@@ -1184,7 +1184,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get reagentStability => 'Stability';
 
   @override
-  String get reagentHazards => 'Hazards';
+  String get reagentHazards => 'Hazard';
 
   @override
   String get reagentDisposal => 'Disposal';
@@ -3225,4 +3225,50 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get methodPublishedNote =>
       'Published scientific method — not a validated procedure for any particular laboratory.';
+
+  @override
+  String get reagentConcentration => 'Concentration';
+
+  @override
+  String get reagentSolvent => 'Solvent';
+
+  @override
+  String get reagentPh => 'pH';
+
+  @override
+  String get reagentExpiry => 'Expiry / shelf life';
+
+  @override
+  String get reagentPpe => 'Personal protective equipment';
+
+  @override
+  String get screeningResultType =>
+      'Result type (qualitative / semi-quantitative)';
+
+  @override
+  String get screeningDetectionWindow => 'Detection window (context-dependent)';
+
+  @override
+  String get screeningInterference => 'Interference';
+
+  @override
+  String get evInternationalStandard => 'International standard';
+
+  @override
+  String get evGuideline => 'Guideline';
+
+  @override
+  String get evPublishedValidated => 'Published validated method';
+
+  @override
+  String get evNationalMethod => 'National method';
+
+  @override
+  String get evLocalSop => 'Local SOP reference';
+
+  @override
+  String get evEducationalSummary => 'Educational summary';
+
+  @override
+  String get disciplineSourcedTopics => 'Sourced topics';
 }

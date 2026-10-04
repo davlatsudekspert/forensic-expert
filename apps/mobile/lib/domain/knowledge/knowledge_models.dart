@@ -37,6 +37,7 @@ class KnowledgeEntry {
     this.version = 1,
     this.packVersion,
     this.forensicMedicineTopic,
+    this.discipline,
     this.recipe,
     this.screening,
     this.method,
@@ -62,6 +63,15 @@ class KnowledgeEntry {
   final List<SourceView> sources;
 
   final ForensicMedicineTopic? forensicMedicineTopic;
+
+  /// PHASE 8: aniq fan (berilmasa — maydon / FM mavzusidan).
+  final ForensicDiscipline? discipline;
+
+  ForensicDiscipline get effectiveDiscipline =>
+      discipline ??
+      (forensicMedicineTopic != null
+          ? disciplineOfFmTopic(forensicMedicineTopic!)
+          : disciplineOfArea(area));
   final SolutionRecipe? recipe;
   final ScreeningTest? screening;
   final MethodRecord? method;

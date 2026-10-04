@@ -1,9 +1,9 @@
 {
   "format": "fe-bundle/4",
-  "pack_version": "2026.10.5",
+  "pack_version": "2026.10.6",
   "channel": "development",
   "component_versions": {
-    "scientific": "2026.10.5",
+    "scientific": "2026.10.6",
     "jurisdiction": "2026.10.5",
     "research": "2026.10.3"
   },
@@ -9546,6 +9546,146 @@
       "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted."
     },
     {
+      "source_id": "SRC-PMC11049589",
+      "source_type": "journal_article",
+      "title": "PCR in Forensic Science: A Critical Review",
+      "journal": "Genes",
+      "publication_year": 2024,
+      "doi": "10.3390/genes15040438",
+      "pmid": "38674373",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11049589/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "lifecycle": "current",
+      "lifecycle_checked_at": "2026-10-04",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "language": "en",
+      "notes": "Litsenziya (PMC BioC): CC BY. Iqtibos asl matndan dasturiy ajratilgan (find_p8_sentences.py). PHASE 8."
+    },
+    {
+      "source_id": "SRC-PMC12652486",
+      "source_type": "journal_article",
+      "title": "Analysis of Human Degraded DNA in Forensic Genetics",
+      "journal": "Genes",
+      "publication_year": 2025,
+      "doi": "10.3390/genes16111375",
+      "pmid": "41300826",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12652486/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "lifecycle": "current",
+      "lifecycle_checked_at": "2026-10-04",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "language": "en",
+      "notes": "Litsenziya (PMC BioC): CC BY. Iqtibos asl matndan dasturiy ajratilgan (find_p8_sentences.py). PHASE 8."
+    },
+    {
+      "source_id": "SRC-PMC4491565",
+      "source_type": "journal_article",
+      "title": "The First Survey of Forensically Important Entomofauna Collected from Medicolegal Autopsies in South Korea",
+      "journal": "BioMed research international",
+      "publication_year": 2015,
+      "doi": "10.1155/2015/606728",
+      "pmid": "26185759",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4491565/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "lifecycle": "current",
+      "lifecycle_checked_at": "2026-10-04",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "language": "en",
+      "notes": "Litsenziya (PMC BioC): CC BY. Iqtibos asl matndan dasturiy ajratilgan (find_p8_sentences.py). PHASE 8."
+    },
+    {
+      "source_id": "SRC-PMC9188545",
+      "source_type": "journal_article",
+      "title": "Temperature models of development for Necrodes littoralis L. (Coleoptera: Silphidae), a carrion beetle of forensic importance in the Palearctic region",
+      "journal": "Scientific reports",
+      "publication_year": 2022,
+      "doi": "10.1038/s41598-022-13901-y",
+      "pmid": "35690667",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9188545/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "lifecycle": "current",
+      "lifecycle_checked_at": "2026-10-04",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "language": "en",
+      "notes": "Litsenziya (PMC BioC): CC BY. Iqtibos asl matndan dasturiy ajratilgan (find_p8_sentences.py). PHASE 8."
+    },
+    {
+      "source_id": "SRC-PMC6197100",
+      "source_type": "journal_article",
+      "title": "Thanatomicrobiome composition profiling as a tool for forensic investigation",
+      "journal": "Forensic sciences research",
+      "publication_year": 2018,
+      "doi": "10.1080/20961790.2018.1466430",
+      "pmid": "30483658",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6197100/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "lifecycle": "current",
+      "lifecycle_checked_at": "2026-10-04",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "language": "en",
+      "notes": "Litsenziya (PMC BioC): CC BY. Iqtibos asl matndan dasturiy ajratilgan (find_p8_sentences.py). PHASE 8."
+    },
+    {
+      "source_id": "SRC-PMC11839505",
+      "source_type": "journal_article",
+      "title": "A review of methods of age estimation based on postmortem computed tomography",
+      "journal": "Forensic sciences research",
+      "publication_year": 2025,
+      "doi": "10.1093/fsr/owae036",
+      "pmid": "39990697",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11839505/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "lifecycle": "current",
+      "lifecycle_checked_at": "2026-10-04",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "language": "en",
+      "notes": "Litsenziya (PMC BioC): CC BY. Iqtibos asl matndan dasturiy ajratilgan (find_p8_sentences.py). PHASE 8."
+    },
+    {
+      "source_id": "SRC-PMC11790690",
+      "source_type": "journal_article",
+      "title": "Postmortem redistribution of drugs: a literature review",
+      "journal": "Forensic science, medicine, and pathology",
+      "publication_year": 2024,
+      "doi": "10.1007/s12024-023-00709-z",
+      "pmid": "37715933",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11790690/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "lifecycle": "current",
+      "lifecycle_checked_at": "2026-10-04",
+      "lifecycle_basis": "PubMed 'Retracted Publication[pt]' check: not retracted.",
+      "language": "en",
+      "notes": "Litsenziya (PMC BioC): CC BY. Iqtibos asl matndan dasturiy ajratilgan (find_p8_sentences.py). PHASE 8."
+    },
+    {
       "source_id": "SRC-PMC11328696",
       "source_type": "journal_article",
       "title": "Paleoradiological and scientific investigations of the screaming woman mummy from the area beneath Senmut’s (1479–1458 BC) Theban tomb (TT71)",
@@ -9674,26 +9814,6 @@
       "doi": "10.11604/pamj.2021.38.20.26781",
       "pmid": "34567345",
       "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8444253/",
-      "accessed_date": "2026-10-04",
-      "tier": "tier2",
-      "evidence_level": "B",
-      "license_mode": "openReuse",
-      "identifier_verified": true,
-      "lifecycle": "current",
-      "lifecycle_checked_at": "2026-10-04",
-      "lifecycle_basis": "Excluded retracted PMIDs at selection (PubMed check).",
-      "language": "en",
-      "notes": "Litsenziya (PMC BioC): CC BY. Iqtibos asl matndan dasturiy ajratilgan (find_p7_sentences.py). PHASE 7."
-    },
-    {
-      "source_id": "SRC-PMC11790690",
-      "source_type": "journal_article",
-      "title": "Postmortem redistribution of drugs: a literature review",
-      "journal": "Forensic science, medicine, and pathology",
-      "publication_year": 2024,
-      "doi": "10.1007/s12024-023-00709-z",
-      "pmid": "37715933",
-      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11790690/",
       "accessed_date": "2026-10-04",
       "tier": "tier2",
       "evidence_level": "B",
@@ -21443,6 +21563,111 @@
       }
     },
     {
+      "claim_id": "C-GEN-STR-PROFILING-PRINCIPLE-P8",
+      "entity_type": "topic",
+      "entity_id": "gen-str-profiling",
+      "field": "principle",
+      "domain": "lab",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "B",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "excerpt": "However, the advent of STR multiplexing PCR for DNA profiling allowed the introduction of additional hypervariable STR loci such that the technique of DNA profiling quickly superseded RFLP analysis to become the cornerstone of the forensic biology discipline.",
+        "section": "INTRO"
+      }
+    },
+    {
+      "claim_id": "C-GEN-STR-PROFILING-LIMITATION-P8",
+      "entity_type": "topic",
+      "entity_id": "gen-str-profiling",
+      "field": "limitation",
+      "domain": "lab",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "B",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "excerpt": "Nevertheless, forensic scientists frequently deal with challenging samples where DNA integrity is compromised through various degradation processes that affect amplification efficiency.",
+        "section": "INTRO"
+      }
+    },
+    {
+      "claim_id": "C-ENT-PMI-INSECTS-PRINCIPLE-P8",
+      "entity_type": "topic",
+      "entity_id": "ent-pmi-insects",
+      "field": "principle",
+      "domain": "fm",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "B",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "excerpt": "Forensic entomology applies insect evidence to legal problems such as the estimation of minimum postmortem interval (mPMI).",
+        "section": "ABSTRACT"
+      }
+    },
+    {
+      "claim_id": "C-ENT-PMI-INSECTS-PRINCIPLE_TEMPERATURE-P8",
+      "entity_type": "topic",
+      "entity_id": "ent-pmi-insects",
+      "field": "principle_temperature",
+      "domain": "fm",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "B",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "excerpt": "The second method uses the regularity of insect development, in particular a close relationship between temperature and the rate of development.",
+        "section": "INTRO"
+      }
+    },
+    {
+      "claim_id": "C-MIC-THANATOMICROBIOME-PRINCIPLE-P8",
+      "entity_type": "topic",
+      "entity_id": "mic-thanatomicrobiome",
+      "field": "principle",
+      "domain": "fm",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "B",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "excerpt": "Thanatomicrobiome, or the postmortem microbiome, has been recognized as a useful microbial marker of the time and location of host death.",
+        "section": "ABSTRACT"
+      }
+    },
+    {
+      "claim_id": "C-RAD-PMCT-APPLICATION-P8",
+      "entity_type": "topic",
+      "entity_id": "rad-pmct",
+      "field": "application",
+      "domain": "fm",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "B",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "excerpt": "Postmortem computed tomography allows the analysis of several areas of the body at the same time, which may not be possible in the case of clinical trials (where the examination area should be limited).",
+        "section": "ABSTRACT"
+      }
+    },
+    {
+      "claim_id": "C-TOX-POSTMORTEM-REDISTRIBUTION-PRINCIPLE-P8",
+      "entity_type": "topic",
+      "entity_id": "tox-postmortem-redistribution",
+      "field": "principle",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "B",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "excerpt": "For example, basic lipophilic drugs with a volume of distribution higher than 3 L/kg are likely to undergo PMR.",
+        "section": "INTRO"
+      }
+    },
+    {
       "claim_id": "C-FM-RIGOR-MORTIS-DEFINITION-P7",
       "entity_type": "topic",
       "entity_id": "fm-rigor-mortis",
@@ -23975,6 +24200,41 @@
       "locator": "ABSTRACT"
     },
     {
+      "claim_id": "C-GEN-STR-PROFILING-PRINCIPLE-P8",
+      "source_id": "SRC-PMC11049589",
+      "locator": "INTRO"
+    },
+    {
+      "claim_id": "C-GEN-STR-PROFILING-LIMITATION-P8",
+      "source_id": "SRC-PMC12652486",
+      "locator": "INTRO"
+    },
+    {
+      "claim_id": "C-ENT-PMI-INSECTS-PRINCIPLE-P8",
+      "source_id": "SRC-PMC4491565",
+      "locator": "ABSTRACT"
+    },
+    {
+      "claim_id": "C-ENT-PMI-INSECTS-PRINCIPLE_TEMPERATURE-P8",
+      "source_id": "SRC-PMC9188545",
+      "locator": "INTRO"
+    },
+    {
+      "claim_id": "C-MIC-THANATOMICROBIOME-PRINCIPLE-P8",
+      "source_id": "SRC-PMC6197100",
+      "locator": "ABSTRACT"
+    },
+    {
+      "claim_id": "C-RAD-PMCT-APPLICATION-P8",
+      "source_id": "SRC-PMC11839505",
+      "locator": "ABSTRACT"
+    },
+    {
+      "claim_id": "C-TOX-POSTMORTEM-REDISTRIBUTION-PRINCIPLE-P8",
+      "source_id": "SRC-PMC11790690",
+      "locator": "INTRO"
+    },
+    {
       "claim_id": "C-FM-RIGOR-MORTIS-DEFINITION-P7",
       "source_id": "SRC-PMC11328696",
       "locator": "DISCUSS"
@@ -26424,6 +26684,62 @@
         "ru": "Влияние температуры и маркеры гипотермии",
         "uz": "Harorat ta’siri va gipotermiya markerlari"
       }
+    },
+    {
+      "topic_id": "gen-str-profiling",
+      "area": "laboratory",
+      "names": {
+        "en": "DNA profiling (STR)",
+        "ru": "ДНК-профилирование (STR)",
+        "uz": "DNK profillash (STR)"
+      },
+      "discipline": "forensic_genetics",
+      "tier_access": "pro"
+    },
+    {
+      "topic_id": "ent-pmi-insects",
+      "area": "forensicMedicine",
+      "names": {
+        "en": "Forensic entomology and PMI",
+        "ru": "Судебная энтомология и давность смерти",
+        "uz": "Sud entomologiyasi va o‘lim vaqti"
+      },
+      "discipline": "forensic_entomology",
+      "tier_access": "pro"
+    },
+    {
+      "topic_id": "mic-thanatomicrobiome",
+      "area": "forensicMedicine",
+      "names": {
+        "en": "Thanatomicrobiome",
+        "ru": "Танатомикробиом",
+        "uz": "Tanatomikrobiom"
+      },
+      "discipline": "forensic_microbiology",
+      "tier_access": "pro"
+    },
+    {
+      "topic_id": "rad-pmct",
+      "area": "forensicMedicine",
+      "names": {
+        "en": "Post-mortem CT (PMCT)",
+        "ru": "Посмертная КТ (ПМКТ)",
+        "uz": "O‘limdan keyingi KT (PMCT)"
+      },
+      "discipline": "forensic_radiology",
+      "tier_access": "pro",
+      "forensic_medicine_topic": "postmortemImaging"
+    },
+    {
+      "topic_id": "tox-postmortem-redistribution",
+      "area": "toxicology",
+      "names": {
+        "en": "Post-mortem redistribution",
+        "ru": "Посмертное перераспределение",
+        "uz": "O‘limdan keyingi qayta taqsimlanish"
+      },
+      "discipline": "forensic_toxicology",
+      "tier_access": "pro"
     },
     {
       "topic_id": "fm-rigor-mortis",
@@ -53999,6 +54315,36 @@
       "to": "RS-e460742a28f0",
       "relation": "research",
       "basis": "RS-e460742a28f0"
+    },
+    {
+      "from": "rad-pmct",
+      "to": "fm-postmortem-changes",
+      "relation": "related_topic",
+      "basis": "editorial:taxonomy"
+    },
+    {
+      "from": "ent-pmi-insects",
+      "to": "fm-postmortem-interval",
+      "relation": "related_topic",
+      "basis": "editorial:taxonomy"
+    },
+    {
+      "from": "mic-thanatomicrobiome",
+      "to": "fm-postmortem-interval",
+      "relation": "related_topic",
+      "basis": "editorial:taxonomy"
+    },
+    {
+      "from": "mic-thanatomicrobiome",
+      "to": "fm-decomposition",
+      "relation": "related_topic",
+      "basis": "editorial:taxonomy"
+    },
+    {
+      "from": "tox-postmortem-redistribution",
+      "to": "bio-sampling-site",
+      "relation": "related_topic",
+      "basis": "editorial:taxonomy"
     },
     {
       "from": "fm-rigor-mortis",

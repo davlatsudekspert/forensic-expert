@@ -1,5 +1,6 @@
 import 'enums.dart';
 import 'knowledge.dart';
+import 'taxonomy.dart';
 
 /// PHASE 4 bilim yozuvlarining JSON ko‘rinishi — bitta joyda.
 ///
@@ -67,6 +68,7 @@ abstract final class KnowledgeJson {
           'amount': i.amount,
           'unit': i.unit,
           if (i.role != null) 'role': i.role,
+          if (i.grade != null) 'grade': i.grade,
         },
     ],
     if (r.finalVolume != null) 'final_volume': value(r.finalVolume!),
@@ -85,6 +87,12 @@ abstract final class KnowledgeJson {
     'source_ids': r.sourceIds,
     'version': r.version,
     'is_test_data': r.isTestData,
+    if (r.concentration != null) 'concentration': value(r.concentration!),
+    if (r.solvent != null) 'solvent': note(r.solvent!),
+    if (r.ph != null) 'ph': value(r.ph!),
+    if (r.expiry != null) 'expiry': note(r.expiry!),
+    'ppe': [for (final n in r.ppe) note(n)],
+    'calculator_ids': r.calculatorIds,
   };
 
   static SolutionRecipe recipeFrom(Object? j) {
@@ -106,6 +114,7 @@ abstract final class KnowledgeJson {
               amount: _req<num>(i, 'amount'),
               unit: _req<String>(i, 'unit'),
               role: i['role'] as String?,
+              grade: i['grade'] as String?,
             );
           }(),
       ],
@@ -130,6 +139,12 @@ abstract final class KnowledgeJson {
       sourceIds: _strList(m['source_ids']),
       version: (m['version'] as int?) ?? 1,
       isTestData: m['is_test_data'] == true,
+      concentration: valueFrom(m['concentration']),
+      solvent: noteFrom(m['solvent']),
+      ph: valueFrom(m['ph']),
+      expiry: noteFrom(m['expiry']),
+      ppe: _notes(m['ppe']),
+      calculatorIds: _strList(m['calculator_ids']),
     );
   }
 
@@ -159,6 +174,9 @@ abstract final class KnowledgeJson {
     'source_ids': t.sourceIds,
     'version': t.version,
     'is_test_data': t.isTestData,
+    if (t.resultType != null) 'result_type': note(t.resultType!),
+    'interferences': [for (final n in t.interferences) note(n)],
+    if (t.detectionWindow != null) 'detection_window': note(t.detectionWindow!),
   };
 
   static ScreeningTest screeningFrom(Object? j) {
@@ -188,6 +206,9 @@ abstract final class KnowledgeJson {
       sourceIds: _strList(m['source_ids']),
       version: (m['version'] as int?) ?? 1,
       isTestData: m['is_test_data'] == true,
+      resultType: noteFrom(m['result_type']),
+      interferences: _notes(m['interferences']),
+      detectionWindow: noteFrom(m['detection_window']),
     );
   }
 
@@ -205,6 +226,7 @@ abstract final class KnowledgeJson {
     if (r.supersededAt != null) 'superseded_at': _d(r.supersededAt),
     'sections': {for (final e in r.sections.entries) e.key.name: e.value},
     'text_origin': r.textOrigin.name,
+    if (r.evidenceType != null) 'evidence_type': r.evidenceType!.name,
     'status': r.status.code,
     'source_ids': r.sourceIds,
     'version': r.version,
@@ -238,6 +260,9 @@ abstract final class KnowledgeJson {
       sourceIds: _strList(m['source_ids']),
       version: (m['version'] as int?) ?? 1,
       isTestData: m['is_test_data'] == true,
+      evidenceType: m['evidence_type'] == null
+          ? null
+          : _enum(MethodEvidenceType.values, m['evidence_type']! as String),
     );
   }
 
@@ -285,6 +310,7 @@ abstract final class KnowledgeJson {
     if (t.forensicMedicineTopic != null)
       'forensic_medicine_topic': t.forensicMedicineTopic!.name,
     'is_test_data': t.isTestData,
+    if (t.discipline != null) 'discipline': t.discipline!.code,
   };
 
   static KnowledgeTopic topicFrom(Object? j) {
@@ -298,6 +324,12 @@ abstract final class KnowledgeJson {
           ? null
           : _enum(ForensicMedicineTopic.values, fm),
       isTestData: m['is_test_data'] == true,
+      discipline: m['discipline'] == null
+          ? null
+          : ForensicDiscipline.fromCode(m['discipline']! as String) ??
+                (throw FormatException(
+                  'unknown discipline ${m['discipline']}',
+                )),
     );
   }
 

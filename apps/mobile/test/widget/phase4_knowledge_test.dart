@@ -96,10 +96,10 @@ void main() {
   });
 
   testWidgets(
-    'sud tibbiyoti: 25 mavzudan 18 tasi manbali (PHASE 7: rigor mortis), manbasizlari «ma’lumot yo‘q»',
+    'sud tibbiyoti: 25 mavzudan 19 tasi manbali (PHASE 7: rigor mortis; PHASE 8: PMCT), manbasizlari «ma’lumot yo‘q»',
     (tester) async {
       await open(tester, Routes.forensicMedicine);
-      expect(find.text('18 of 25 topics have sourced content'), findsOneWidget);
+      expect(find.text('19 of 25 topics have sourced content'), findsOneWidget);
       // Rigor mortis endi manbali (PHASE 7) — manbasiz qator yo‘q.
       expect(find.byKey(const Key('fm.topic.rigorMortis')), findsNothing);
       await see(tester, find.byKey(const Key('fm.topic.sharpForceInjury')));

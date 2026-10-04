@@ -51,6 +51,7 @@ void main() {
     'researchPeriod2010',
     'tpl_marker',
     'metKindMarker',
+    'reagentPh',
   };
   // Allowlist’dagi kalit qiymati (masalan, «Lifetime» brendi) boshqa
   // kalitda ham uchrasa — u ham ruxsat etilgan.

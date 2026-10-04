@@ -26,11 +26,13 @@ _sys.path.insert(0, "tools/p5")
 import assemble_p5  # noqa: E402
 _sys.path.insert(0, "tools/p7")
 import assemble_p7  # noqa: E402
+_sys.path.insert(0, "tools/p8")
+import assemble_p8  # noqa: E402
 
 FREE_DEMO = ["ethanol", "methanol", "carbon-monoxide"]  # 3 ta yozuv
-PACK_VERSION = "2026.10.5"
+PACK_VERSION = "2026.10.6"
 # Komponent versiyalari (ilova versiyasidan alohida).
-COMPONENT_VERSIONS = {"scientific": "2026.10.5", "jurisdiction": "2026.10.5",
+COMPONENT_VERSIONS = {"scientific": "2026.10.6", "jurisdiction": "2026.10.5",
                       "research": "2026.10.3"}
 
 
@@ -232,6 +234,7 @@ def main():
         research=research, links=links, images=images,
         reviewers=[], reviews=[])
     # ---- PHASE 7: provenance pipeline ----------------------------------
+    p8 = assemble_p8.apply(bundle)  # PHASE 8: yangi fanlar (p7 dan oldin: provenance qamrab olsin)
     p7 = assemble_p7.apply(bundle)
     json.dump(bundle, open("pilot/bundle.json", "w"), ensure_ascii=False,
               indent=2)
@@ -241,6 +244,7 @@ def main():
           f"topics_p5={len(pt['topics'])} methods_p5={len(pt['methods'])} recipes_p5={len(pt['recipes'])} "
           f"screening_p5={len(pt['screening'])} research={len(research)} {rstats} links={len(bundle['links'])} images={len(images)}")
     print("p7:", json.dumps(p7, ensure_ascii=False))
+    print("p8:", json.dumps(p8, ensure_ascii=False))
 
 
 if __name__ == "__main__":

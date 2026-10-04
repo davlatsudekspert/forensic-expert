@@ -1535,9 +1535,9 @@
   "@reagentStability": {
     "description": "Recipe stability / shelf life."
   },
-  "reagentHazards": "Hazards",
+  "reagentHazards": "Hazard",
   "@reagentHazards": {
-    "description": "Recipe hazards."
+    "description": "Recipe field."
   },
   "reagentDisposal": "Disposal",
   "@reagentDisposal": {
@@ -4221,5 +4221,65 @@
   "methodPublishedNote": "Published scientific method — not a validated procedure for any particular laboratory.",
   "@methodPublishedNote": {
     "description": "Method note."
+  },
+  "reagentConcentration": "Concentration",
+  "@reagentConcentration": {
+    "description": "Recipe field."
+  },
+  "reagentSolvent": "Solvent",
+  "@reagentSolvent": {
+    "description": "Recipe field."
+  },
+  "reagentPh": "pH",
+  "@reagentPh": {
+    "description": "Recipe field."
+  },
+  "reagentExpiry": "Expiry / shelf life",
+  "@reagentExpiry": {
+    "description": "Recipe field."
+  },
+  "reagentPpe": "Personal protective equipment",
+  "@reagentPpe": {
+    "description": "Recipe field."
+  },
+  "screeningResultType": "Result type (qualitative / semi-quantitative)",
+  "@screeningResultType": {
+    "description": "Screening field."
+  },
+  "screeningDetectionWindow": "Detection window (context-dependent)",
+  "@screeningDetectionWindow": {
+    "description": "Screening field."
+  },
+  "screeningInterference": "Interference",
+  "@screeningInterference": {
+    "description": "Screening field."
+  },
+  "evInternationalStandard": "International standard",
+  "@evInternationalStandard": {
+    "description": "Method evidence type."
+  },
+  "evGuideline": "Guideline",
+  "@evGuideline": {
+    "description": "Method evidence type."
+  },
+  "evPublishedValidated": "Published validated method",
+  "@evPublishedValidated": {
+    "description": "Method evidence type."
+  },
+  "evNationalMethod": "National method",
+  "@evNationalMethod": {
+    "description": "Method evidence type."
+  },
+  "evLocalSop": "Local SOP reference",
+  "@evLocalSop": {
+    "description": "Method evidence type."
+  },
+  "evEducationalSummary": "Educational summary",
+  "@evEducationalSummary": {
+    "description": "Method evidence type."
+  },
+  "disciplineSourcedTopics": "Sourced topics",
+  "@disciplineSourcedTopics": {
+    "description": "Section."
   }
 }

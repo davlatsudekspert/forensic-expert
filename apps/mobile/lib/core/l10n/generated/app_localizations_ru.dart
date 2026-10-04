@@ -1186,7 +1186,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get reagentStability => 'Стабильность';
 
   @override
-  String get reagentHazards => 'Опасности';
+  String get reagentHazards => 'Опасность';
 
   @override
   String get reagentDisposal => 'Утилизация';
@@ -3235,4 +3235,51 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get methodPublishedNote =>
       'Опубликованный научный метод — не валидированная методика для конкретной лаборатории.';
+
+  @override
+  String get reagentConcentration => 'Концентрация';
+
+  @override
+  String get reagentSolvent => 'Растворитель';
+
+  @override
+  String get reagentPh => 'pH';
+
+  @override
+  String get reagentExpiry => 'Срок годности';
+
+  @override
+  String get reagentPpe => 'Средства индивидуальной защиты';
+
+  @override
+  String get screeningResultType =>
+      'Тип результата (качественный / полуколичественный)';
+
+  @override
+  String get screeningDetectionWindow =>
+      'Окно обнаружения (зависит от условий)';
+
+  @override
+  String get screeningInterference => 'Интерференция';
+
+  @override
+  String get evInternationalStandard => 'Международный стандарт';
+
+  @override
+  String get evGuideline => 'Руководство';
+
+  @override
+  String get evPublishedValidated => 'Опубликованный валидированный метод';
+
+  @override
+  String get evNationalMethod => 'Национальная методика';
+
+  @override
+  String get evLocalSop => 'Ссылка на локальную СОП';
+
+  @override
+  String get evEducationalSummary => 'Учебное обобщение';
+
+  @override
+  String get disciplineSourcedTopics => 'Темы с источниками';
 }

@@ -1185,7 +1185,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get reagentStability => 'Barqarorlik';
 
   @override
-  String get reagentHazards => 'Xavflar';
+  String get reagentHazards => 'Xavf';
 
   @override
   String get reagentDisposal => 'Utilizatsiya';
@@ -3230,4 +3230,49 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get methodPublishedNote =>
       'Nashr etilgan ilmiy metod — biror laboratoriya uchun validatsiya qilingan tartib emas.';
+
+  @override
+  String get reagentConcentration => 'Konsentratsiya';
+
+  @override
+  String get reagentSolvent => 'Erituvchi';
+
+  @override
+  String get reagentPh => 'pH';
+
+  @override
+  String get reagentExpiry => 'Yaroqlilik muddati';
+
+  @override
+  String get reagentPpe => 'Shaxsiy himoya vositalari';
+
+  @override
+  String get screeningResultType => 'Natija turi (sifat / yarim miqdoriy)';
+
+  @override
+  String get screeningDetectionWindow => 'Aniqlash oynasi (sharoitga bog‘liq)';
+
+  @override
+  String get screeningInterference => 'Interferensiya';
+
+  @override
+  String get evInternationalStandard => 'Xalqaro standart';
+
+  @override
+  String get evGuideline => 'Qo‘llanma';
+
+  @override
+  String get evPublishedValidated => 'Nashr etilgan validatsiyalangan metod';
+
+  @override
+  String get evNationalMethod => 'Milliy metodika';
+
+  @override
+  String get evLocalSop => 'Mahalliy SOP havolasi';
+
+  @override
+  String get evEducationalSummary => 'Ta’limiy umumlashma';
+
+  @override
+  String get disciplineSourcedTopics => 'Manbali mavzular';
 }

@@ -92,6 +92,9 @@ abstract final class RuleCodes {
   /// DOI/PMID/formula/qisqartma tarjima qilingan yoki tarjima holati yo‘q.
   static const termTranslationInvalid = 'FE040_TERM_TRANSLATION_INVALID';
   static const specimenInvalid = 'FE041_SPECIMEN_RECORD_INVALID';
+
+  // --- PHASE 8 ---
+  static const methodEvidenceType = 'FE042_METHOD_EVIDENCE_TYPE_UNSUPPORTED';
 }
 
 /// Test ma’lumot ID’lari shu prefiks bilan boshlanadi — ko‘zga tashlanishi
@@ -650,6 +653,11 @@ class ContentValidator {
           r.disposalReference?.sourceId,
           r.qcRequirement?.sourceId,
           for (final h in r.hazards) h.sourceId,
+          r.concentration?.sourceId,
+          r.solvent?.sourceId,
+          r.ph?.sourceId,
+          r.expiry?.sourceId,
+          for (final n in r.ppe) n.sourceId,
         ].where((x) => x != null),
       );
       if (!r.orderExplicitInSource && r.steps.any((st) => st.order != null)) {
@@ -689,8 +697,11 @@ class ContentValidator {
             ...t.falsePositive,
             ...t.falseNegative,
             ...t.limitations,
+            ...t.interferences,
           ])
             n.sourceId,
+          t.resultType?.sourceId,
+          t.detectionWindow?.sourceId,
         ].where((x) => x != null),
       );
       if (t.supportsDefinitiveIdentification) {
@@ -736,6 +747,29 @@ class ContentValidator {
       }
       if (m.sections.isNotEmpty && m.sourceIds.isEmpty) {
         err(RuleCodes.unsourcedValue, m.id, 'Method text without a source.');
+      }
+      // FE042: «standart / qo‘llanma / validatsiya qilingan metod» deb
+      // belgilash uchun rasmiy yoki nashr manbasi majburiy; ta’limiy
+      // umumlashma hech qachon «validatsiya qilingan» deb ko‘rsatilmaydi.
+      final ev = m.effectiveEvidenceType;
+      if (ev != MethodEvidenceType.educationalSummary && m.sourceIds.isEmpty) {
+        err(
+          RuleCodes.methodEvidenceType,
+          m.id,
+          '${ev.name} requires a source.',
+        );
+      }
+      if (ev == MethodEvidenceType.internationalStandard &&
+          !m.sourceIds.any(
+            (s) =>
+                sources[s]?.sourceClass == SourceClass.standardGuideline ||
+                sources[s]?.sourceClass == SourceClass.primaryOfficial,
+          )) {
+        err(
+          RuleCodes.methodEvidenceType,
+          m.id,
+          'internationalStandard needs a standard/official source.',
+        );
       }
       if (m.textOrigin == TextOrigin.openLicenseExcerpt &&
           m.sourceIds.any(

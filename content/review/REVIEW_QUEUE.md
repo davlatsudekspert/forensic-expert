@@ -1,18 +1,18 @@
 # Reviewer navbati (avtomatik yaratilgan)
 
-Jami element: **881** — barchasi `NEEDS_REVIEW`. Muallif o‘z claim’ini tasdiqlay olmaydi.
+Jami element: **888** — barchasi `NEEDS_REVIEW`. Muallif o‘z claim’ini tasdiqlay olmaydi.
 
 | Rol | Element | Har biriga kerakli review |
 |---|---|---|
-| scientific | 320 | 2 |
+| scientific | 321 | 2 |
 | legal | 254 | 1 |
 | translation | 137 | 1 |
-| analytical | 126 | 2 |
-| medicine_histology | 44 | 2 |
+| analytical | 128 | 2 |
+| medicine_histology | 48 | 2 |
 
 | Tur | Soni |
 |---|---|
-| claim | 490 |
+| claim | 497 |
 | image | 156 |
 | translation | 137 |
 | legal_rule | 98 |

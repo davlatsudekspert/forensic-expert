@@ -1,6 +1,7 @@
 import 'package:meta/meta.dart';
 
 import 'enums.dart';
+import 'taxonomy.dart';
 
 /// Global Forensic Science Platform — bilim sohalari (PHASE 4).
 ///
@@ -136,12 +137,16 @@ class Ingredient {
     required this.amount,
     required this.unit,
     this.role,
+    this.grade,
   });
 
   final String name;
   final num amount;
   final String unit;
   final String? role;
+
+  /// Tozalik / sinf (masalan «analytical grade») — faqat manbada bo‘lsa.
+  final String? grade;
 }
 
 @immutable
@@ -183,6 +188,12 @@ class SolutionRecipe {
     this.sourceIds = const [],
     this.version = 1,
     this.isTestData = false,
+    this.concentration,
+    this.solvent,
+    this.ph,
+    this.expiry,
+    this.ppe = const [],
+    this.calculatorIds = const [],
   });
 
   final String id;
@@ -208,13 +219,28 @@ class SolutionRecipe {
   final int version;
   final bool isTestData;
 
+  // PHASE 8: to‘liq professional shablon. Har biri manbali yoki yo‘q.
+  final SourcedValue? concentration;
+  final SourcedNote? solvent;
+  final SourcedValue? ph;
+  final SourcedNote? expiry;
+  final List<SourcedNote> ppe;
+
+  /// Deterministik kalkulyatorlar (molarlik, foizli eritma) — tahririy
+  /// bog‘lanish; ilmiy qiymat emas, hisob foydalanuvchi kiritganidan.
+  final List<String> calculatorIds;
+
   bool get hasPreparationData =>
       ingredients.isNotEmpty ||
       steps.isNotEmpty ||
       finalVolume != null ||
       storage != null ||
       temperature != null ||
-      stability != null;
+      stability != null ||
+      concentration != null ||
+      solvent != null ||
+      ph != null ||
+      expiry != null;
 }
 
 // ---------------------------------------------------------------------------
@@ -248,6 +274,9 @@ class ScreeningTest {
     this.definitiveIdentificationSourceId,
     this.version = 1,
     this.isTestData = false,
+    this.resultType,
+    this.interferences = const [],
+    this.detectionWindow,
   });
 
   final String id;
@@ -270,6 +299,15 @@ class ScreeningTest {
   /// Faqat avtoritet metod buni aniq qo‘llab-quvvatlasa (FE023).
   final bool supportsDefinitiveIdentification;
   final String? definitiveIdentificationSourceId;
+
+  // PHASE 8.
+  /// Sifat / yarim miqdoriy — manba aytgan bo‘lsa.
+  final SourcedNote? resultType;
+  final List<SourcedNote> interferences;
+
+  /// Aniqlash oynasi — doim kontekst bilan (namuna, doza, populyatsiya);
+  /// universal muddat sifatida ko‘rsatilmaydi.
+  final SourcedNote? detectionWindow;
   final ScientificStatus status;
   final List<String> sourceIds;
   final int version;
@@ -320,6 +358,21 @@ enum TextOrigin {
   openLicenseExcerpt,
 }
 
+/// PHASE 8: metod yozuvi qanday hujjat ekani (UI va validator uchun).
+enum MethodEvidenceType {
+  internationalStandard,
+  guideline,
+
+  /// Nashr etilgan, validatsiya ma’lumoti keltirilgan metod — baribir har
+  /// laboratoriya uchun validatsiya qilingan degani emas.
+  publishedValidatedMethod,
+  nationalMethod,
+  localSopReference,
+
+  /// Adabiyotdan ta’limiy umumlashma (protokol emas).
+  educationalSummary,
+}
+
 @immutable
 class MethodRecord {
   const MethodRecord({
@@ -338,10 +391,24 @@ class MethodRecord {
     this.textOrigin = TextOrigin.originalSummary,
     this.version = 1,
     this.isTestData = false,
+    this.evidenceType,
   });
 
   final String id;
   final MethodKind kind;
+
+  /// Aniq berilmasa — [kind] dan konservativ xulosa.
+  final MethodEvidenceType? evidenceType;
+
+  MethodEvidenceType get effectiveEvidenceType =>
+      evidenceType ??
+      switch (kind) {
+        MethodKind.internationalStandard =>
+          MethodEvidenceType.internationalStandard,
+        MethodKind.nationalMethod => MethodEvidenceType.nationalMethod,
+        MethodKind.institutionalSop => MethodEvidenceType.localSopReference,
+        MethodKind.scientificMethod => MethodEvidenceType.educationalSummary,
+      };
   final Map<String, String> titles;
   final List<AnalyticalTechnique> techniques;
   final String? organization;
@@ -424,6 +491,7 @@ class KnowledgeTopic {
     required this.names,
     this.forensicMedicineTopic,
     this.isTestData = false,
+    this.discipline,
   });
 
   final String id;
@@ -431,4 +499,8 @@ class KnowledgeTopic {
   final Map<String, String> names;
   final ForensicMedicineTopic? forensicMedicineTopic;
   final bool isTestData;
+
+  /// PHASE 8: aniq fan (genetika, entomologiya, mikrobiologiya…). Berilmasa
+  /// — maydon / FM mavzusidan.
+  final ForensicDiscipline? discipline;
 }

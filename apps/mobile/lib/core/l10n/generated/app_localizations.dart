@@ -2182,10 +2182,10 @@ abstract class AppLocalizations {
   /// **'Stability'**
   String get reagentStability;
 
-  /// Recipe hazards.
+  /// Recipe field.
   ///
   /// In en, this message translates to:
-  /// **'Hazards'**
+  /// **'Hazard'**
   String get reagentHazards;
 
   /// Recipe disposal reference.
@@ -5931,6 +5931,96 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Published scientific method — not a validated procedure for any particular laboratory.'**
   String get methodPublishedNote;
+
+  /// Recipe field.
+  ///
+  /// In en, this message translates to:
+  /// **'Concentration'**
+  String get reagentConcentration;
+
+  /// Recipe field.
+  ///
+  /// In en, this message translates to:
+  /// **'Solvent'**
+  String get reagentSolvent;
+
+  /// Recipe field.
+  ///
+  /// In en, this message translates to:
+  /// **'pH'**
+  String get reagentPh;
+
+  /// Recipe field.
+  ///
+  /// In en, this message translates to:
+  /// **'Expiry / shelf life'**
+  String get reagentExpiry;
+
+  /// Recipe field.
+  ///
+  /// In en, this message translates to:
+  /// **'Personal protective equipment'**
+  String get reagentPpe;
+
+  /// Screening field.
+  ///
+  /// In en, this message translates to:
+  /// **'Result type (qualitative / semi-quantitative)'**
+  String get screeningResultType;
+
+  /// Screening field.
+  ///
+  /// In en, this message translates to:
+  /// **'Detection window (context-dependent)'**
+  String get screeningDetectionWindow;
+
+  /// Screening field.
+  ///
+  /// In en, this message translates to:
+  /// **'Interference'**
+  String get screeningInterference;
+
+  /// Method evidence type.
+  ///
+  /// In en, this message translates to:
+  /// **'International standard'**
+  String get evInternationalStandard;
+
+  /// Method evidence type.
+  ///
+  /// In en, this message translates to:
+  /// **'Guideline'**
+  String get evGuideline;
+
+  /// Method evidence type.
+  ///
+  /// In en, this message translates to:
+  /// **'Published validated method'**
+  String get evPublishedValidated;
+
+  /// Method evidence type.
+  ///
+  /// In en, this message translates to:
+  /// **'National method'**
+  String get evNationalMethod;
+
+  /// Method evidence type.
+  ///
+  /// In en, this message translates to:
+  /// **'Local SOP reference'**
+  String get evLocalSop;
+
+  /// Method evidence type.
+  ///
+  /// In en, this message translates to:
+  /// **'Educational summary'**
+  String get evEducationalSummary;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Sourced topics'**
+  String get disciplineSourcedTopics;
 }
 
 class _AppLocalizationsDelegate

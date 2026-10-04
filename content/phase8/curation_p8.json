@@ -1,0 +1,55 @@
+{
+  "curated_at": "2026-10-04",
+  "curator": "pipeline (Claude) — NOT a human reviewer",
+  "accepted": [
+    {
+      "claim_id": "C-GEN-STR-PROFILING-PRINCIPLE-P8",
+      "pmcid": "PMC11049589",
+      "note": null
+    },
+    {
+      "claim_id": "C-GEN-STR-PROFILING-LIMITATION-P8",
+      "pmcid": "PMC12652486",
+      "note": null
+    },
+    {
+      "claim_id": "C-ENT-PMI-INSECTS-PRINCIPLE-P8",
+      "pmcid": "PMC4491565",
+      "note": null
+    },
+    {
+      "claim_id": "C-ENT-PMI-INSECTS-PRINCIPLE_TEMPERATURE-P8",
+      "pmcid": "PMC9188545",
+      "note": "Field renamed: the sentence states the temperature–development relationship (a principle), not a limitation."
+    },
+    {
+      "claim_id": "C-MIC-THANATOMICROBIOME-PRINCIPLE-P8",
+      "pmcid": "PMC6197100",
+      "note": null
+    },
+    {
+      "claim_id": "C-RAD-PMCT-APPLICATION-P8",
+      "pmcid": "PMC11839505",
+      "note": "Field renamed: the sentence describes a capability of PMCT, not a limitation."
+    },
+    {
+      "claim_id": "C-TOX-POSTMORTEM-REDISTRIBUTION-PRINCIPLE-P8",
+      "pmcid": "PMC11790690",
+      "note": null
+    }
+  ],
+  "rejected": [
+    {
+      "topic": "rad-pmct",
+      "field": "principle",
+      "pmcid": "PMC11953209",
+      "reason": "Methods-type sentence (lists procedures performed); no statement about PMCT."
+    },
+    {
+      "topic": "qa-accreditation",
+      "field": "principle",
+      "pmcid": "PMC11202440",
+      "reason": "Describes one laboratory's accreditation; not a general statement."
+    }
+  ]
+}
