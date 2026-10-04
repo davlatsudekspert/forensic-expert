@@ -1,0 +1,15 @@
+name: fe_calc_engine
+description: Hisoblash dvigateli — UI’dan to‘liq ajratilgan, sof Dart. Har bir formula mustaqil reference misollar bilan test qilinadi.
+publish_to: none
+version: 0.1.0
+resolution: workspace
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  meta: ^1.19.0
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.31.0
