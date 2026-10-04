@@ -32,6 +32,20 @@ PILOT = [
     ("phosphine", "phosphine", "Phosphine"),
 ]
 
+# Ko‘rsatiladigan sinonimlar — faqat PubChem sinonimlar ro‘yxatida REAL
+# mavjud bo‘lsa qo‘shiladi (registrdan qat’i nazar solishtiriladi).
+WANTED_SYNONYMS = {
+    "ethanol": ["ethyl alcohol"],
+    "methanol": ["methyl alcohol"],
+    "ethylene-glycol": ["ethane-1,2-diol"],
+    "heroin": ["heroin", "diacetylmorphine"],
+    "6-mam": ["6-MAM", "6-monoacetylmorphine"],
+    "thc": ["dronabinol", "delta-9-tetrahydrocannabinol", "THC"],
+    "paracetamol": ["paracetamol", "acetaminophen", "APAP"],
+    "carbon-monoxide": ["CO"],
+    "aluminium-phosphide": ["aluminium phosphide"],
+}
+
 BASE = "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound"
 PROPS = "MolecularFormula,MolecularWeight,InChIKey,IUPACName"
 
@@ -64,6 +78,15 @@ def main():
                 "iupac_name": p.get("IUPACName"),
                 "source_url": f"https://pubchem.ncbi.nlm.nih.gov/compound/{cid}",
             })
+            wanted = WANTED_SYNONYMS.get(sid, [])
+            if wanted:
+                syn = get(f"{BASE}/cid/{cid}/synonyms/JSON")
+                syn = syn["InformationList"]["Information"][0]["Synonym"]
+                lower = {x.lower(): x for x in syn}
+                rec["synonyms_verified"] = [w for w in wanted
+                                            if w.lower() in lower]
+                rec["synonyms_rejected"] = [w for w in wanted
+                                            if w.lower() not in lower]
             rec.setdefault("status", "resolved")
         except Exception as e:  # noqa: BLE001
             rec["status"] = f"error: {e}"

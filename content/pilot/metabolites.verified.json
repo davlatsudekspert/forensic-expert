@@ -399,5 +399,207 @@
       "doi_matches": true
     },
     "verification": "verified"
+  },
+  {
+    "substance": "amitriptyline",
+    "field": "metabolites",
+    "status": "found",
+    "pmcid": "PMC5478479",
+    "pmid": "27997040",
+    "doi": "10.1002/cpt.597",
+    "title": "Clinical pharmacogenetics implementation consortium guideline (CPIC) for CYP2D6 and CYP2C19 genotypes and dosing of tricyclic antidepressants: 2016 update.",
+    "journal": "Clinical pharmacology and therapeutics",
+    "year": "2017",
+    "license": "not_available",
+    "section": "Background",
+    "verbatim_sentence": "The tertiary amines (e.g., amitriptyline) are mainly metabolized by CYP2C19 to desmethyl-metabolites (), also referred to as secondary amines (e.g., nortriptyline).",
+    "metabolites": [
+      "nortriptyline"
+    ],
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/metabolites_c.json",
+    "license_api": "author_manuscript",
+    "license_mode": "unknown",
+    "doi_api": "10.1002/cpt.597",
+    "source_sentence": "The tertiary amines (e.g., amitriptyline) are mainly metabolized by CYP2C19 to desmethyl-metabolites (Figure 1), also referred to as secondary amines (e.g., nortriptyline).",
+    "match": {
+      "type": "fuzzy",
+      "ratio": 0.967
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  },
+  {
+    "substance": "paracetamol",
+    "field": "metabolites",
+    "status": "found",
+    "pmcid": "PMC11567147",
+    "pmid": "39554796",
+    "doi": "10.3390/livers4030024",
+    "title": "Role of Mitochondrial Iron Uptake in Acetaminophen Hepatotoxicity.",
+    "journal": "Livers",
+    "year": "2024",
+    "license": "CC BY 4.0",
+    "section": "Metabolism of APAP",
+    "verbatim_sentence": "After an overdose of APAP, the sulfate and glucuronide pathways become saturated, and CYP450 produces relatively more NAPQI.",
+    "metabolites": [
+      "sulfate",
+      "glucuronide",
+      "NAPQI"
+    ],
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/metabolites_c.json",
+    "license_api": "CC BY",
+    "license_mode": "openReuse",
+    "doi_api": "10.3390/livers4030024",
+    "source_sentence": "After an overdose of APAP, the sulfate and glucuronide pathways become saturated, and CYP450 produces relatively more NAPQI.",
+    "match": {
+      "type": "exact",
+      "ratio": 1.0
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  },
+  {
+    "substance": "pregabalin",
+    "field": "metabolism_note",
+    "status": "found",
+    "pmcid": "PMC13345593",
+    "pmid": "42422723",
+    "doi": "10.3389/ftox.2026.1822851",
+    "title": "Case Report: High-dose pregabalin ingestion in an adolescent: clinical course and serial plasma concentrations.",
+    "journal": "Frontiers in toxicology",
+    "year": "2026",
+    "license": "not_available",
+    "section": "Investigations",
+    "verbatim_sentence": "In our hands, the observed PGB values showed a decline consistent with the known pharmacokinetics of pregabalin, which displays rapid absorption, with peak levels reached within 1.5 h (up to 3 hours with food), high oral bioavailability, negligible metabolism, and almost exclusive renal elimination ().",
+    "metabolites": [
+      "negligible metabolism",
+      "almost exclusive renal elimination"
+    ],
+    "note": "Case report (dalil darajasi D); boshqa manba bilan almashtirish tavsiya etiladi",
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/metabolites_c.json",
+    "license_api": "CC BY",
+    "license_mode": "openReuse",
+    "doi_api": "10.3389/ftox.2026.1822851",
+    "source_sentence": "In our hands, the observed PGB values showed a decline consistent with the known pharmacokinetics of pregabalin, which displays rapid absorption, with peak levels reached within 1.5 h (up to 3 hours with food), high oral bioavailability, negligible metabolism, and almost exclusive renal elimination.",
+    "match": {
+      "type": "exact",
+      "ratio": 1.0
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  },
+  {
+    "substance": "carbon-monoxide",
+    "field": "biomarker",
+    "status": "found",
+    "pmcid": "PMC11899572",
+    "pmid": "40075828",
+    "doi": "10.3390/diagnostics15050581",
+    "title": "Carbon Monoxide Poisoning: Diagnosis, Prognostic Factors, Treatment Strategies, and Future Perspectives.",
+    "journal": "Diagnostics (Basel, Switzerland)",
+    "year": "2025",
+    "license": "CC BY 4.0",
+    "section": "7.1. Limitations of Current Techniques",
+    "verbatim_sentence": "Carboxyhaemoglobin (COHb) testing using blood gas analysers or spectrophotometry remains the primary diagnostic method for carbon monoxide (CO) poisoning.",
+    "metabolites": [
+      "Carboxyhaemoglobin (COHb)"
+    ],
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/metabolites_c.json",
+    "license_api": "CC BY",
+    "license_mode": "openReuse",
+    "doi_api": "10.3390/diagnostics15050581",
+    "source_sentence": "Carboxyhaemoglobin (COHb) testing using blood gas analysers or spectrophotometry remains the primary diagnostic method for carbon monoxide (CO) poisoning.",
+    "match": {
+      "type": "exact",
+      "ratio": 1.0
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  },
+  {
+    "substance": "chlorpyrifos",
+    "field": "metabolites",
+    "status": "found",
+    "pmcid": "PMC13164365",
+    "pmid": "42123501",
+    "doi": "10.3390/ijms27093909",
+    "title": "Chlorpyrifos and Chlorpyrifos-Oxon: A Widening Spectrum of Toxicity.",
+    "journal": "International journal of molecular sciences",
+    "year": "2026",
+    "license": "CC BY 4.0",
+    "section": "1. Introduction",
+    "verbatim_sentence": "The toxicity of chlorpyrifos is primarily mediated by its active metabolite, chlorpyrifos-oxon, which is formed via cytochrome P450-mediated desulfuration of the parent compound.",
+    "metabolites": [
+      "chlorpyrifos-oxon"
+    ],
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/metabolites_c.json",
+    "license_api": "CC BY",
+    "license_mode": "openReuse",
+    "doi_api": "10.3390/ijms27093909",
+    "source_sentence": "The toxicity of chlorpyrifos is primarily mediated by its active metabolite, chlorpyrifos-oxon, which is formed via cytochrome P450-mediated desulfuration of the parent compound.",
+    "match": {
+      "type": "exact",
+      "ratio": 1.0
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
+  },
+  {
+    "substance": "aluminium-phosphide",
+    "field": "transformation_product",
+    "status": "found",
+    "pmcid": "PMC12550317",
+    "pmid": "41140947",
+    "doi": "10.1016/j.dialog.2025.100247",
+    "title": "Meta-analysis of mortality burden due to Aluminum phosphide poisoning in India: A call for strong policy and decision making.",
+    "journal": "Dialogues in health",
+    "year": "2025",
+    "license": "Creative Commons",
+    "section": "Discussion",
+    "verbatim_sentence": "The release of phosphine gas from AlP occurs immediately upon contact with water and hydrochloric acid in the gastrointestinal tract, rapidly absorbing it into the bloodstream and reducing oxyhemoglobin levels.",
+    "metabolites": [
+      "phosphine gas"
+    ],
+    "accessed": "2026-10-04",
+    "candidate_file": "pilot/candidates/metabolites_c.json",
+    "license_api": "CC BY-NC",
+    "license_mode": "nonCommercial",
+    "doi_api": "10.1016/j.dialog.2025.100247",
+    "source_sentence": "The release of phosphine gas from AlP occurs immediately upon contact with water and hydrochloric acid in the gastrointestinal tract, rapidly absorbing it into the bloodstream and reducing oxyhemoglobin levels.",
+    "match": {
+      "type": "exact",
+      "ratio": 1.0
+    },
+    "checks": {
+      "excerpt_in_fulltext": true,
+      "metabolites_in_excerpt": true,
+      "doi_matches": true
+    },
+    "verification": "verified"
   }
 ]

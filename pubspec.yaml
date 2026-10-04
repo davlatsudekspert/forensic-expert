@@ -13,6 +13,7 @@ workspace:
   - packages/fe_calc_engine
   - packages/fe_content_package
   - packages/fe_database
+  - packages/fe_content_pipeline
 
 dev_dependencies:
   lints: ^6.0.0

@@ -1,0 +1,27 @@
+name: fe_content_pipeline
+description: Kontent pipeline — manba JSON → validator → content.db (FTS5) → imzolangan paket. Faqat CI / offline muhitda ishlaydi, ilovaga kirmaydi.
+publish_to: none
+version: 0.1.0
+resolution: workspace
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  crypto: ^3.0.7
+  cryptography: ^2.9.0
+  drift: ^2.35.1
+  fe_content_package:
+    path: ../fe_content_package
+  fe_content_schema:
+    path: ../fe_content_schema
+  fe_database:
+    path: ../fe_database
+  fe_search_core:
+    path: ../fe_search_core
+  meta: ^1.19.0
+  sqlite3: ^3.7.0
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.31.0

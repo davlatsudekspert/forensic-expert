@@ -1,0 +1,2058 @@
+{
+  "format": "fe-bundle/1",
+  "pack_version": "2026.10.1",
+  "channel": "development",
+  "assembled_at": "2026-10-04",
+  "jurisdictions": [
+    {
+      "jurisdiction_id": "INT",
+      "level": "international",
+      "names": {
+        "en": "International"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "SRC-PUBCHEM-702",
+      "source_type": "database",
+      "title": "PubChem Compound Summary for CID 702 (ethanol)",
+      "organization": "National Center for Biotechnology Information (NCBI), U.S. National Library of Medicine",
+      "official_url": "https://pubchem.ncbi.nlm.nih.gov/compound/702",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Identifikatorlar PubChem PUG REST orqali avtomatik olingan. Litsenziya: PubChem hisoblangan xossalari — legal reviewer tasdig‘i kerak."
+    },
+    {
+      "source_id": "SRC-PUBCHEM-887",
+      "source_type": "database",
+      "title": "PubChem Compound Summary for CID 887 (methanol)",
+      "organization": "National Center for Biotechnology Information (NCBI), U.S. National Library of Medicine",
+      "official_url": "https://pubchem.ncbi.nlm.nih.gov/compound/887",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Identifikatorlar PubChem PUG REST orqali avtomatik olingan. Litsenziya: PubChem hisoblangan xossalari — legal reviewer tasdig‘i kerak."
+    },
+    {
+      "source_id": "SRC-PUBCHEM-174",
+      "source_type": "database",
+      "title": "PubChem Compound Summary for CID 174 (ethane-1,2-diol)",
+      "organization": "National Center for Biotechnology Information (NCBI), U.S. National Library of Medicine",
+      "official_url": "https://pubchem.ncbi.nlm.nih.gov/compound/174",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Identifikatorlar PubChem PUG REST orqali avtomatik olingan. Litsenziya: PubChem hisoblangan xossalari — legal reviewer tasdig‘i kerak."
+    },
+    {
+      "source_id": "SRC-PUBCHEM-5288826",
+      "source_type": "database",
+      "title": "PubChem Compound Summary for CID 5288826 ((4R,4aR,7S,7aR,12bS)-3-methyl-2,4,4a,7,7a,13-hexahydro-1H-4,12-methanobenzofuro[3,2-e]isoquinoline-7,9-diol)",
+      "organization": "National Center for Biotechnology Information (NCBI), U.S. National Library of Medicine",
+      "official_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5288826",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Identifikatorlar PubChem PUG REST orqali avtomatik olingan. Litsenziya: PubChem hisoblangan xossalari — legal reviewer tasdig‘i kerak."
+    },
+    {
+      "source_id": "SRC-PUBCHEM-5462328",
+      "source_type": "database",
+      "title": "PubChem Compound Summary for CID 5462328 ([(4R,4aR,7S,7aR,12bS)-9-acetyloxy-3-methyl-2,4,4a,7,7a,13-hexahydro-1H-4,12-methanobenzofuro[3,2-e]isoquinolin-7-yl] acetate)",
+      "organization": "National Center for Biotechnology Information (NCBI), U.S. National Library of Medicine",
+      "official_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5462328",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Identifikatorlar PubChem PUG REST orqali avtomatik olingan. Litsenziya: PubChem hisoblangan xossalari — legal reviewer tasdig‘i kerak."
+    },
+    {
+      "source_id": "SRC-PUBCHEM-5462507",
+      "source_type": "database",
+      "title": "PubChem Compound Summary for CID 5462507 ([(4R,4aR,7S,7aR,12bS)-9-hydroxy-3-methyl-2,4,4a,7,7a,13-hexahydro-1H-4,12-methanobenzofuro[3,2-e]isoquinolin-7-yl] acetate)",
+      "organization": "National Center for Biotechnology Information (NCBI), U.S. National Library of Medicine",
+      "official_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5462507",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Identifikatorlar PubChem PUG REST orqali avtomatik olingan. Litsenziya: PubChem hisoblangan xossalari — legal reviewer tasdig‘i kerak."
+    },
+    {
+      "source_id": "SRC-PUBCHEM-3345",
+      "source_type": "database",
+      "title": "PubChem Compound Summary for CID 3345 (N-phenyl-N-[1-(2-phenylethyl)piperidin-4-yl]propanamide)",
+      "organization": "National Center for Biotechnology Information (NCBI), U.S. National Library of Medicine",
+      "official_url": "https://pubchem.ncbi.nlm.nih.gov/compound/3345",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Identifikatorlar PubChem PUG REST orqali avtomatik olingan. Litsenziya: PubChem hisoblangan xossalari — legal reviewer tasdig‘i kerak."
+    },
+    {
+      "source_id": "SRC-PUBCHEM-33741",
+      "source_type": "database",
+      "title": "PubChem Compound Summary for CID 33741 (cis-(1R,2R)-2-[(dimethylamino)methyl]-1-(3-methoxyphenyl)cyclohexan-1-ol)",
+      "organization": "National Center for Biotechnology Information (NCBI), U.S. National Library of Medicine",
+      "official_url": "https://pubchem.ncbi.nlm.nih.gov/compound/33741",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Identifikatorlar PubChem PUG REST orqali avtomatik olingan. Litsenziya: PubChem hisoblangan xossalari — legal reviewer tasdig‘i kerak."
+    },
+    {
+      "source_id": "SRC-PUBCHEM-10836",
+      "source_type": "database",
+      "title": "PubChem Compound Summary for CID 10836 ((2S)-N-methyl-1-phenylpropan-2-amine)",
+      "organization": "National Center for Biotechnology Information (NCBI), U.S. National Library of Medicine",
+      "official_url": "https://pubchem.ncbi.nlm.nih.gov/compound/10836",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Identifikatorlar PubChem PUG REST orqali avtomatik olingan. Litsenziya: PubChem hisoblangan xossalari — legal reviewer tasdig‘i kerak."
+    },
+    {
+      "source_id": "SRC-PUBCHEM-446220",
+      "source_type": "database",
+      "title": "PubChem Compound Summary for CID 446220 (methyl (1R,2R,3S,5S)-3-benzoyloxy-8-methyl-8-azabicyclo[3.2.1]octane-2-carboxylate)",
+      "organization": "National Center for Biotechnology Information (NCBI), U.S. National Library of Medicine",
+      "official_url": "https://pubchem.ncbi.nlm.nih.gov/compound/446220",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Identifikatorlar PubChem PUG REST orqali avtomatik olingan. Litsenziya: PubChem hisoblangan xossalari — legal reviewer tasdig‘i kerak."
+    },
+    {
+      "source_id": "SRC-PUBCHEM-16078",
+      "source_type": "database",
+      "title": "PubChem Compound Summary for CID 16078 ((6aR,10aR)-6,6,9-trimethyl-3-pentyl-6a,7,8,10a-tetrahydrobenzo[c]chromen-1-ol)",
+      "organization": "National Center for Biotechnology Information (NCBI), U.S. National Library of Medicine",
+      "official_url": "https://pubchem.ncbi.nlm.nih.gov/compound/16078",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Identifikatorlar PubChem PUG REST orqali avtomatik olingan. Litsenziya: PubChem hisoblangan xossalari — legal reviewer tasdig‘i kerak."
+    },
+    {
+      "source_id": "SRC-PUBCHEM-2118",
+      "source_type": "database",
+      "title": "PubChem Compound Summary for CID 2118 (8-chloro-1-methyl-6-phenyl-4H-[1,2,4]triazolo[4,3-a][1,4]benzodiazepine)",
+      "organization": "National Center for Biotechnology Information (NCBI), U.S. National Library of Medicine",
+      "official_url": "https://pubchem.ncbi.nlm.nih.gov/compound/2118",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Identifikatorlar PubChem PUG REST orqali avtomatik olingan. Litsenziya: PubChem hisoblangan xossalari — legal reviewer tasdig‘i kerak."
+    },
+    {
+      "source_id": "SRC-PUBCHEM-40113",
+      "source_type": "database",
+      "title": "PubChem Compound Summary for CID 40113 (7-bromo-5-(2-chlorophenyl)-1,3-dihydro-1,4-benzodiazepin-2-one)",
+      "organization": "National Center for Biotechnology Information (NCBI), U.S. National Library of Medicine",
+      "official_url": "https://pubchem.ncbi.nlm.nih.gov/compound/40113",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Identifikatorlar PubChem PUG REST orqali avtomatik olingan. Litsenziya: PubChem hisoblangan xossalari — legal reviewer tasdig‘i kerak."
+    },
+    {
+      "source_id": "SRC-PUBCHEM-2160",
+      "source_type": "database",
+      "title": "PubChem Compound Summary for CID 2160 (N,N-dimethyl-3-(2-tricyclo[9.4.0.03,8]pentadeca-1(15),3,5,7,11,13-hexaenylidene)propan-1-amine)",
+      "organization": "National Center for Biotechnology Information (NCBI), U.S. National Library of Medicine",
+      "official_url": "https://pubchem.ncbi.nlm.nih.gov/compound/2160",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Identifikatorlar PubChem PUG REST orqali avtomatik olingan. Litsenziya: PubChem hisoblangan xossalari — legal reviewer tasdig‘i kerak."
+    },
+    {
+      "source_id": "SRC-PUBCHEM-1983",
+      "source_type": "database",
+      "title": "PubChem Compound Summary for CID 1983 (N-(4-hydroxyphenyl)acetamide)",
+      "organization": "National Center for Biotechnology Information (NCBI), U.S. National Library of Medicine",
+      "official_url": "https://pubchem.ncbi.nlm.nih.gov/compound/1983",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Identifikatorlar PubChem PUG REST orqali avtomatik olingan. Litsenziya: PubChem hisoblangan xossalari — legal reviewer tasdig‘i kerak."
+    },
+    {
+      "source_id": "SRC-PUBCHEM-5486971",
+      "source_type": "database",
+      "title": "PubChem Compound Summary for CID 5486971 ((3S)-3-(aminomethyl)-5-methylhexanoic acid)",
+      "organization": "National Center for Biotechnology Information (NCBI), U.S. National Library of Medicine",
+      "official_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5486971",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Identifikatorlar PubChem PUG REST orqali avtomatik olingan. Litsenziya: PubChem hisoblangan xossalari — legal reviewer tasdig‘i kerak."
+    },
+    {
+      "source_id": "SRC-PUBCHEM-281",
+      "source_type": "database",
+      "title": "PubChem Compound Summary for CID 281 (carbon monoxide)",
+      "organization": "National Center for Biotechnology Information (NCBI), U.S. National Library of Medicine",
+      "official_url": "https://pubchem.ncbi.nlm.nih.gov/compound/281",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Identifikatorlar PubChem PUG REST orqali avtomatik olingan. Litsenziya: PubChem hisoblangan xossalari — legal reviewer tasdig‘i kerak."
+    },
+    {
+      "source_id": "SRC-PUBCHEM-2730",
+      "source_type": "database",
+      "title": "PubChem Compound Summary for CID 2730 (diethoxy-sulfanylidene-[(3,5,6-trichloro-2-pyridinyl)oxy]-lambda5-phosphane)",
+      "organization": "National Center for Biotechnology Information (NCBI), U.S. National Library of Medicine",
+      "official_url": "https://pubchem.ncbi.nlm.nih.gov/compound/2730",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Identifikatorlar PubChem PUG REST orqali avtomatik olingan. Litsenziya: PubChem hisoblangan xossalari — legal reviewer tasdig‘i kerak."
+    },
+    {
+      "source_id": "SRC-PUBCHEM-16126812",
+      "source_type": "database",
+      "title": "PubChem Compound Summary for CID 16126812 (aluminum phosphorus(3-))",
+      "organization": "National Center for Biotechnology Information (NCBI), U.S. National Library of Medicine",
+      "official_url": "https://pubchem.ncbi.nlm.nih.gov/compound/16126812",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Identifikatorlar PubChem PUG REST orqali avtomatik olingan. Litsenziya: PubChem hisoblangan xossalari — legal reviewer tasdig‘i kerak."
+    },
+    {
+      "source_id": "SRC-PUBCHEM-24404",
+      "source_type": "database",
+      "title": "PubChem Compound Summary for CID 24404 (phosphane)",
+      "organization": "National Center for Biotechnology Information (NCBI), U.S. National Library of Medicine",
+      "official_url": "https://pubchem.ncbi.nlm.nih.gov/compound/24404",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Identifikatorlar PubChem PUG REST orqali avtomatik olingan. Litsenziya: PubChem hisoblangan xossalari — legal reviewer tasdig‘i kerak."
+    },
+    {
+      "source_id": "SRC-PMC3756590",
+      "source_type": "journal_article",
+      "title": "Genes encoding enzymes involved in ethanol metabolism.",
+      "journal": "Alcohol research : current reviews",
+      "publication_year": 2012,
+      "doi": "10.35946/arcr.v34.3.09",
+      "pmid": "23134050",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3756590/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC0. Iqtibos asl matn bilan solishtirilgan: exact (1.0). "
+    },
+    {
+      "source_id": "SRC-PMC11728796",
+      "source_type": "journal_article",
+      "title": "The Perils of Methanol Exposure: Insights into Toxicity and Clinical Management.",
+      "journal": "Toxics",
+      "publication_year": 2024,
+      "doi": "10.3390/toxics12120924",
+      "pmid": "39771139",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11728796/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC BY. Iqtibos asl matn bilan solishtirilgan: exact (1.0). "
+    },
+    {
+      "source_id": "SRC-PMC9921105",
+      "source_type": "journal_article",
+      "title": "Extracorporeal treatment for ethylene glycol poisoning: systematic review and recommendations from the EXTRIP workgroup.",
+      "journal": "Critical care (London, England)",
+      "publication_year": 2023,
+      "doi": "10.1186/s13054-022-04227-2",
+      "pmid": "36765419",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9921105/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "A",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC BY. Iqtibos asl matn bilan solishtirilgan: exact (1.0). "
+    },
+    {
+      "source_id": "SRC-PMC9134088",
+      "source_type": "journal_article",
+      "title": "Morphine-3-Glucuronide, Physiology and Behavior.",
+      "journal": "Frontiers in molecular neuroscience",
+      "publication_year": 2022,
+      "doi": "10.3389/fnmol.2022.882443",
+      "pmid": "35645730",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9134088/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC BY. Iqtibos asl matn bilan solishtirilgan: exact (1.0). "
+    },
+    {
+      "source_id": "SRC-PMC10082801",
+      "source_type": "journal_article",
+      "title": "Heroin and its metabolites: relevance to heroin use disorder.",
+      "journal": "Translational psychiatry",
+      "publication_year": 2023,
+      "doi": "10.1038/s41398-023-02406-5",
+      "pmid": "37031205",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10082801/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC BY. Iqtibos asl matn bilan solishtirilgan: exact (1.0). "
+    },
+    {
+      "source_id": "SRC-PMC10593981",
+      "source_type": "journal_article",
+      "title": "Fentanyl Absorption, Distribution, Metabolism, and Excretion: Narrative Review and Clinical Significance Related to Illicitly Manufactured Fentanyl.",
+      "journal": "Journal of addiction medicine",
+      "publication_year": 2023,
+      "doi": "10.1097/ADM.0000000000001185",
+      "pmid": "37788600",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10593981/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "unknown",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): author_manuscript. Iqtibos asl matn bilan solishtirilgan: exact (1.0). "
+    },
+    {
+      "source_id": "SRC-PMC13074819",
+      "source_type": "journal_article",
+      "title": "Review of Structural Modification and Development of Novel Tramadol Derivatives",
+      "journal": "Molecules (Basel, Switzerland)",
+      "publication_year": 2026,
+      "doi": "10.3390/molecules31071177",
+      "pmid": "41976217",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13074819/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC BY. Iqtibos asl matn bilan solishtirilgan: fuzzy (0.978). "
+    },
+    {
+      "source_id": "SRC-PMC9788588",
+      "source_type": "journal_article",
+      "title": "Categorization of Cytochrome P4502D6 Activity Score by Urinary Amphetamine/Methamphetamine Ratios",
+      "journal": "Metabolites",
+      "publication_year": 2022,
+      "doi": "10.3390/metabo12121174",
+      "pmid": "36557212",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9788588/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC BY. Iqtibos asl matn bilan solishtirilgan: fuzzy (0.994). "
+    },
+    {
+      "source_id": "SRC-PMC9032145",
+      "source_type": "journal_article",
+      "title": "Cocaine: An Updated Overview on Chemistry, Detection, Biokinetics, and Pharmacotoxicological Aspects including Abuse Pattern",
+      "journal": "Toxins",
+      "publication_year": 2022,
+      "doi": "10.3390/toxins14040278",
+      "pmid": "35448887",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9032145/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC BY. Iqtibos asl matn bilan solishtirilgan: exact (1.0). EME = ecgonine methyl ester, BE = benzoylecgonine (maqolaning 2.1–2.2 bo‘limlarida ochilgan)"
+    },
+    {
+      "source_id": "SRC-PMC13275792",
+      "source_type": "journal_article",
+      "title": "Impact of CBD and hemp oil use on drug test results: a systematic review",
+      "journal": "International journal of legal medicine",
+      "publication_year": 2026,
+      "doi": "10.1007/s00414-026-03790-5",
+      "pmid": "41942676",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13275792/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "A",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC BY. Iqtibos asl matn bilan solishtirilgan: exact (1.0). "
+    },
+    {
+      "source_id": "SRC-PMC9775082",
+      "source_type": "journal_article",
+      "title": "Changes in Alprazolam Metabolism by CYP3A43 Mutants",
+      "journal": "Biomedicines",
+      "publication_year": 2022,
+      "doi": "10.3390/biomedicines10123022",
+      "pmid": "36551778",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9775082/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "B",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC BY. Iqtibos asl matn bilan solishtirilgan: exact (1.0). Birlamchi tadqiqot (review emas); kirish qismida avvalgi ishlarga havola bilan"
+    },
+    {
+      "source_id": "SRC-PMC8230725",
+      "source_type": "journal_article",
+      "title": "Designer Benzodiazepines: A Review of Toxicology and Public Health Risks",
+      "journal": "Pharmaceuticals (Basel, Switzerland)",
+      "publication_year": 2021,
+      "doi": "10.3390/ph14060560",
+      "pmid": "34208284",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8230725/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC BY. Iqtibos asl matn bilan solishtirilgan: exact (1.0). Gap «It» bilan boshlanadi; ega oldingi gapda — phenazepam"
+    },
+    {
+      "source_id": "SRC-PMC5478479",
+      "source_type": "journal_article",
+      "title": "Clinical pharmacogenetics implementation consortium guideline (CPIC) for CYP2D6 and CYP2C19 genotypes and dosing of tricyclic antidepressants: 2016 update.",
+      "journal": "Clinical pharmacology and therapeutics",
+      "publication_year": 2017,
+      "doi": "10.1002/cpt.597",
+      "pmid": "27997040",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5478479/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "A",
+      "license_mode": "unknown",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): author_manuscript. Iqtibos asl matn bilan solishtirilgan: fuzzy (0.967). "
+    },
+    {
+      "source_id": "SRC-PMC11567147",
+      "source_type": "journal_article",
+      "title": "Role of Mitochondrial Iron Uptake in Acetaminophen Hepatotoxicity.",
+      "journal": "Livers",
+      "publication_year": 2024,
+      "doi": "10.3390/livers4030024",
+      "pmid": "39554796",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11567147/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC BY. Iqtibos asl matn bilan solishtirilgan: exact (1.0). "
+    },
+    {
+      "source_id": "SRC-PMC13345593",
+      "source_type": "journal_article",
+      "title": "Case Report: High-dose pregabalin ingestion in an adolescent: clinical course and serial plasma concentrations.",
+      "journal": "Frontiers in toxicology",
+      "publication_year": 2026,
+      "doi": "10.3389/ftox.2026.1822851",
+      "pmid": "42422723",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13345593/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "D",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC BY. Iqtibos asl matn bilan solishtirilgan: exact (1.0). Case report (dalil darajasi D); boshqa manba bilan almashtirish tavsiya etiladi"
+    },
+    {
+      "source_id": "SRC-PMC11899572",
+      "source_type": "journal_article",
+      "title": "Carbon Monoxide Poisoning: Diagnosis, Prognostic Factors, Treatment Strategies, and Future Perspectives.",
+      "journal": "Diagnostics (Basel, Switzerland)",
+      "publication_year": 2025,
+      "doi": "10.3390/diagnostics15050581",
+      "pmid": "40075828",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11899572/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC BY. Iqtibos asl matn bilan solishtirilgan: exact (1.0). "
+    },
+    {
+      "source_id": "SRC-PMC13164365",
+      "source_type": "journal_article",
+      "title": "Chlorpyrifos and Chlorpyrifos-Oxon: A Widening Spectrum of Toxicity.",
+      "journal": "International journal of molecular sciences",
+      "publication_year": 2026,
+      "doi": "10.3390/ijms27093909",
+      "pmid": "42123501",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13164365/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "C",
+      "license_mode": "openReuse",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC BY. Iqtibos asl matn bilan solishtirilgan: exact (1.0). "
+    },
+    {
+      "source_id": "SRC-PMC12550317",
+      "source_type": "journal_article",
+      "title": "Meta-analysis of mortality burden due to Aluminum phosphide poisoning in India: A call for strong policy and decision making.",
+      "journal": "Dialogues in health",
+      "publication_year": 2025,
+      "doi": "10.1016/j.dialog.2025.100247",
+      "pmid": "41140947",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12550317/",
+      "accessed_date": "2026-10-04",
+      "tier": "tier2",
+      "evidence_level": "A",
+      "license_mode": "nonCommercial",
+      "identifier_verified": true,
+      "notes": "Litsenziya (PMC API): CC BY-NC. Iqtibos asl matn bilan solishtirilgan: exact (1.0). "
+    },
+    {
+      "source_id": "SRC-INCB-YELLOW-LIST-65",
+      "source_type": "legislation",
+      "title": "List of Narcotic Drugs under International Control (Yellow List), 65th edition",
+      "organization": "International Narcotics Control Board (INCB)",
+      "edition": "65th edition, July 2026",
+      "official_url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf",
+      "accessed_date": "2026-10-04",
+      "tier": "tier1",
+      "evidence_level": "A",
+      "license_mode": "citeOnly",
+      "identifier_verified": true,
+      "notes": "PDF SHA-256: 3f60040ba7b3302aa0393da185a35b17b4bc65bd8f29b62240f5dbc2e4f74ba0"
+    },
+    {
+      "source_id": "SRC-INCB-GREEN-LIST-36",
+      "source_type": "legislation",
+      "title": "List of Psychotropic Substances under International Control (Green List), 36th edition",
+      "organization": "International Narcotics Control Board (INCB)",
+      "edition": "36th edition, 2025",
+      "official_url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+      "accessed_date": "2026-10-04",
+      "tier": "tier1",
+      "evidence_level": "A",
+      "license_mode": "citeOnly",
+      "identifier_verified": true,
+      "notes": "PDF SHA-256: b9f381f574666cedd1cb998d4350bc6641a013de801721edb19a33d36e6d0b5e"
+    }
+  ],
+  "substances": [
+    {
+      "substance_id": "ethanol",
+      "canonical_name": "ethanol",
+      "entity_kind": "substance",
+      "molecular_formula": "C2H6O",
+      "tier_access": "free",
+      "names": {
+        "en": "Ethanol",
+        "ru": "Этанол",
+        "uz": "Etanol"
+      },
+      "translation_status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      },
+      "synonyms": [
+        "ethyl alcohol"
+      ]
+    },
+    {
+      "substance_id": "methanol",
+      "canonical_name": "methanol",
+      "entity_kind": "substance",
+      "molecular_formula": "CH4O",
+      "tier_access": "free",
+      "names": {
+        "en": "Methanol",
+        "ru": "Метанол",
+        "uz": "Metanol"
+      },
+      "translation_status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      },
+      "synonyms": [
+        "methyl alcohol"
+      ]
+    },
+    {
+      "substance_id": "ethylene-glycol",
+      "canonical_name": "ethylene glycol",
+      "entity_kind": "substance",
+      "molecular_formula": "C2H6O2",
+      "tier_access": "pro",
+      "names": {
+        "en": "Ethylene glycol",
+        "ru": "Этиленгликоль",
+        "uz": "Etilenglikol"
+      },
+      "translation_status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      },
+      "synonyms": [
+        "ethane-1,2-diol"
+      ]
+    },
+    {
+      "substance_id": "morphine",
+      "canonical_name": "morphine",
+      "entity_kind": "substance",
+      "molecular_formula": "C17H19NO3",
+      "tier_access": "pro",
+      "names": {
+        "en": "Morphine",
+        "ru": "Морфин",
+        "uz": "Morfin"
+      },
+      "translation_status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      },
+      "synonyms": []
+    },
+    {
+      "substance_id": "heroin",
+      "canonical_name": "heroin (diacetylmorphine)",
+      "entity_kind": "substance",
+      "molecular_formula": "C21H23NO5",
+      "tier_access": "pro",
+      "names": {
+        "en": "Heroin (diacetylmorphine)",
+        "ru": "Героин (диацетилморфин)",
+        "uz": "Geroin (diatsetilmorfin)"
+      },
+      "translation_status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      },
+      "synonyms": [
+        "heroin",
+        "diacetylmorphine"
+      ]
+    },
+    {
+      "substance_id": "6-mam",
+      "canonical_name": "6-monoacetylmorphine (6-mam)",
+      "entity_kind": "metabolite",
+      "molecular_formula": "C19H21NO4",
+      "tier_access": "pro",
+      "names": {
+        "en": "6-Monoacetylmorphine (6-MAM)",
+        "ru": "6-Моноацетилморфин (6-МАМ)",
+        "uz": "6-Monoatsetilmorfin (6-MAM)"
+      },
+      "translation_status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      },
+      "synonyms": [
+        "6-MAM",
+        "6-monoacetylmorphine"
+      ]
+    },
+    {
+      "substance_id": "fentanyl",
+      "canonical_name": "fentanyl",
+      "entity_kind": "substance",
+      "molecular_formula": "C22H28N2O",
+      "tier_access": "pro",
+      "names": {
+        "en": "Fentanyl",
+        "ru": "Фентанил",
+        "uz": "Fentanil"
+      },
+      "translation_status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      },
+      "synonyms": []
+    },
+    {
+      "substance_id": "tramadol",
+      "canonical_name": "tramadol",
+      "entity_kind": "substance",
+      "molecular_formula": "C16H25NO2",
+      "tier_access": "pro",
+      "names": {
+        "en": "Tramadol",
+        "ru": "Трамадол",
+        "uz": "Tramadol"
+      },
+      "translation_status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      },
+      "synonyms": []
+    },
+    {
+      "substance_id": "methamphetamine",
+      "canonical_name": "methamphetamine",
+      "entity_kind": "substance",
+      "molecular_formula": "C10H15N",
+      "tier_access": "pro",
+      "names": {
+        "en": "Methamphetamine",
+        "ru": "Метамфетамин",
+        "uz": "Metamfetamin"
+      },
+      "translation_status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      },
+      "synonyms": []
+    },
+    {
+      "substance_id": "cocaine",
+      "canonical_name": "cocaine",
+      "entity_kind": "substance",
+      "molecular_formula": "C17H21NO4",
+      "tier_access": "pro",
+      "names": {
+        "en": "Cocaine",
+        "ru": "Кокаин",
+        "uz": "Kokain"
+      },
+      "translation_status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      },
+      "synonyms": []
+    },
+    {
+      "substance_id": "thc",
+      "canonical_name": "δ9-tetrahydrocannabinol (thc)",
+      "entity_kind": "substance",
+      "molecular_formula": "C21H30O2",
+      "tier_access": "pro",
+      "names": {
+        "en": "Δ9-Tetrahydrocannabinol (THC)",
+        "ru": "Δ9-Тетрагидроканнабинол (ТГК)",
+        "uz": "Δ9-Tetragidrokannabinol (TGK)"
+      },
+      "translation_status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      },
+      "synonyms": [
+        "dronabinol",
+        "delta-9-tetrahydrocannabinol",
+        "THC"
+      ]
+    },
+    {
+      "substance_id": "alprazolam",
+      "canonical_name": "alprazolam",
+      "entity_kind": "substance",
+      "molecular_formula": "C17H13ClN4",
+      "tier_access": "pro",
+      "names": {
+        "en": "Alprazolam",
+        "ru": "Алпразолам",
+        "uz": "Alprazolam"
+      },
+      "translation_status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      },
+      "synonyms": []
+    },
+    {
+      "substance_id": "phenazepam",
+      "canonical_name": "phenazepam",
+      "entity_kind": "substance",
+      "molecular_formula": "C15H10BrClN2O",
+      "tier_access": "pro",
+      "names": {
+        "en": "Phenazepam",
+        "ru": "Феназепам",
+        "uz": "Fenazepam"
+      },
+      "translation_status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      },
+      "synonyms": []
+    },
+    {
+      "substance_id": "amitriptyline",
+      "canonical_name": "amitriptyline",
+      "entity_kind": "substance",
+      "molecular_formula": "C20H23N",
+      "tier_access": "pro",
+      "names": {
+        "en": "Amitriptyline",
+        "ru": "Амитриптилин",
+        "uz": "Amitriptilin"
+      },
+      "translation_status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      },
+      "synonyms": []
+    },
+    {
+      "substance_id": "paracetamol",
+      "canonical_name": "paracetamol (acetaminophen)",
+      "entity_kind": "substance",
+      "molecular_formula": "C8H9NO2",
+      "tier_access": "pro",
+      "names": {
+        "en": "Paracetamol (acetaminophen)",
+        "ru": "Парацетамол",
+        "uz": "Paratsetamol"
+      },
+      "translation_status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      },
+      "synonyms": [
+        "paracetamol",
+        "acetaminophen",
+        "APAP"
+      ]
+    },
+    {
+      "substance_id": "pregabalin",
+      "canonical_name": "pregabalin",
+      "entity_kind": "substance",
+      "molecular_formula": "C8H17NO2",
+      "tier_access": "pro",
+      "names": {
+        "en": "Pregabalin",
+        "ru": "Прегабалин",
+        "uz": "Pregabalin"
+      },
+      "translation_status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      },
+      "synonyms": []
+    },
+    {
+      "substance_id": "carbon-monoxide",
+      "canonical_name": "carbon monoxide",
+      "entity_kind": "substance",
+      "molecular_formula": "CO",
+      "tier_access": "free",
+      "names": {
+        "en": "Carbon monoxide",
+        "ru": "Монооксид углерода (угарный газ)",
+        "uz": "Uglerod monoksidi (is gazi)"
+      },
+      "translation_status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      },
+      "synonyms": []
+    },
+    {
+      "substance_id": "chlorpyrifos",
+      "canonical_name": "chlorpyrifos",
+      "entity_kind": "substance",
+      "molecular_formula": "C9H11Cl3NO3PS",
+      "tier_access": "pro",
+      "names": {
+        "en": "Chlorpyrifos",
+        "ru": "Хлорпирифос",
+        "uz": "Xlorpirifos"
+      },
+      "translation_status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      },
+      "synonyms": []
+    },
+    {
+      "substance_id": "aluminium-phosphide",
+      "canonical_name": "aluminium phosphide",
+      "entity_kind": "substance",
+      "molecular_formula": "AlP",
+      "tier_access": "pro",
+      "names": {
+        "en": "Aluminium phosphide",
+        "ru": "Фосфид алюминия",
+        "uz": "Alyuminiy fosfidi"
+      },
+      "translation_status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      },
+      "synonyms": [
+        "aluminium phosphide"
+      ]
+    },
+    {
+      "substance_id": "phosphine",
+      "canonical_name": "phosphine",
+      "entity_kind": "transformation_product",
+      "molecular_formula": "H3P",
+      "tier_access": "pro",
+      "names": {
+        "en": "Phosphine",
+        "ru": "Фосфин",
+        "uz": "Fosfin"
+      },
+      "translation_status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      },
+      "synonyms": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C-ETHANOL-IDENTITY",
+      "entity_type": "substance",
+      "entity_id": "ethanol",
+      "field": "identity",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": true,
+      "value": {
+        "pubchem_cid": 702,
+        "molecular_formula": "C2H6O",
+        "molecular_weight": "46.07",
+        "inchikey": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N",
+        "iupac_name": "ethanol"
+      }
+    },
+    {
+      "claim_id": "C-METHANOL-IDENTITY",
+      "entity_type": "substance",
+      "entity_id": "methanol",
+      "field": "identity",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": true,
+      "value": {
+        "pubchem_cid": 887,
+        "molecular_formula": "CH4O",
+        "molecular_weight": "32.042",
+        "inchikey": "OKKJLVBELUTLKV-UHFFFAOYSA-N",
+        "iupac_name": "methanol"
+      }
+    },
+    {
+      "claim_id": "C-ETHYLENE-GLYCOL-IDENTITY",
+      "entity_type": "substance",
+      "entity_id": "ethylene-glycol",
+      "field": "identity",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": true,
+      "value": {
+        "pubchem_cid": 174,
+        "molecular_formula": "C2H6O2",
+        "molecular_weight": "62.07",
+        "inchikey": "LYCAIKOWRPUZTN-UHFFFAOYSA-N",
+        "iupac_name": "ethane-1,2-diol"
+      }
+    },
+    {
+      "claim_id": "C-MORPHINE-IDENTITY",
+      "entity_type": "substance",
+      "entity_id": "morphine",
+      "field": "identity",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": true,
+      "value": {
+        "pubchem_cid": 5288826,
+        "molecular_formula": "C17H19NO3",
+        "molecular_weight": "285.34",
+        "inchikey": "BQJCRHHNABKAKU-KBQPJGBKSA-N",
+        "iupac_name": "(4R,4aR,7S,7aR,12bS)-3-methyl-2,4,4a,7,7a,13-hexahydro-1H-4,12-methanobenzofuro[3,2-e]isoquinoline-7,9-diol"
+      }
+    },
+    {
+      "claim_id": "C-HEROIN-IDENTITY",
+      "entity_type": "substance",
+      "entity_id": "heroin",
+      "field": "identity",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": true,
+      "value": {
+        "pubchem_cid": 5462328,
+        "molecular_formula": "C21H23NO5",
+        "molecular_weight": "369.4",
+        "inchikey": "GVGLGOZIDCSQPN-PVHGPHFFSA-N",
+        "iupac_name": "[(4R,4aR,7S,7aR,12bS)-9-acetyloxy-3-methyl-2,4,4a,7,7a,13-hexahydro-1H-4,12-methanobenzofuro[3,2-e]isoquinolin-7-yl] acetate"
+      }
+    },
+    {
+      "claim_id": "C-6-MAM-IDENTITY",
+      "entity_type": "substance",
+      "entity_id": "6-mam",
+      "field": "identity",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": true,
+      "value": {
+        "pubchem_cid": 5462507,
+        "molecular_formula": "C19H21NO4",
+        "molecular_weight": "327.4",
+        "inchikey": "JJGYGPZNTOPXGV-SSTWWWIQSA-N",
+        "iupac_name": "[(4R,4aR,7S,7aR,12bS)-9-hydroxy-3-methyl-2,4,4a,7,7a,13-hexahydro-1H-4,12-methanobenzofuro[3,2-e]isoquinolin-7-yl] acetate"
+      }
+    },
+    {
+      "claim_id": "C-FENTANYL-IDENTITY",
+      "entity_type": "substance",
+      "entity_id": "fentanyl",
+      "field": "identity",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": true,
+      "value": {
+        "pubchem_cid": 3345,
+        "molecular_formula": "C22H28N2O",
+        "molecular_weight": "336.5",
+        "inchikey": "PJMPHNIQZUBGLI-UHFFFAOYSA-N",
+        "iupac_name": "N-phenyl-N-[1-(2-phenylethyl)piperidin-4-yl]propanamide"
+      }
+    },
+    {
+      "claim_id": "C-TRAMADOL-IDENTITY",
+      "entity_type": "substance",
+      "entity_id": "tramadol",
+      "field": "identity",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": true,
+      "value": {
+        "pubchem_cid": 33741,
+        "molecular_formula": "C16H25NO2",
+        "molecular_weight": "263.37",
+        "inchikey": "TVYLLZQTGLZFBW-ZBFHGGJFSA-N",
+        "iupac_name": "cis-(1R,2R)-2-[(dimethylamino)methyl]-1-(3-methoxyphenyl)cyclohexan-1-ol"
+      }
+    },
+    {
+      "claim_id": "C-METHAMPHETAMINE-IDENTITY",
+      "entity_type": "substance",
+      "entity_id": "methamphetamine",
+      "field": "identity",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": true,
+      "value": {
+        "pubchem_cid": 10836,
+        "molecular_formula": "C10H15N",
+        "molecular_weight": "149.23",
+        "inchikey": "MYWUZJCMWCOHBA-VIFPVBQESA-N",
+        "iupac_name": "(2S)-N-methyl-1-phenylpropan-2-amine"
+      }
+    },
+    {
+      "claim_id": "C-COCAINE-IDENTITY",
+      "entity_type": "substance",
+      "entity_id": "cocaine",
+      "field": "identity",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": true,
+      "value": {
+        "pubchem_cid": 446220,
+        "molecular_formula": "C17H21NO4",
+        "molecular_weight": "303.35",
+        "inchikey": "ZPUCINDJVBIVPJ-LJISPDSOSA-N",
+        "iupac_name": "methyl (1R,2R,3S,5S)-3-benzoyloxy-8-methyl-8-azabicyclo[3.2.1]octane-2-carboxylate"
+      }
+    },
+    {
+      "claim_id": "C-THC-IDENTITY",
+      "entity_type": "substance",
+      "entity_id": "thc",
+      "field": "identity",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": true,
+      "value": {
+        "pubchem_cid": 16078,
+        "molecular_formula": "C21H30O2",
+        "molecular_weight": "314.5",
+        "inchikey": "CYQFCXCEBYINGO-IAGOWNOFSA-N",
+        "iupac_name": "(6aR,10aR)-6,6,9-trimethyl-3-pentyl-6a,7,8,10a-tetrahydrobenzo[c]chromen-1-ol"
+      }
+    },
+    {
+      "claim_id": "C-ALPRAZOLAM-IDENTITY",
+      "entity_type": "substance",
+      "entity_id": "alprazolam",
+      "field": "identity",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": true,
+      "value": {
+        "pubchem_cid": 2118,
+        "molecular_formula": "C17H13ClN4",
+        "molecular_weight": "308.8",
+        "inchikey": "VREFGVBLTWBCJP-UHFFFAOYSA-N",
+        "iupac_name": "8-chloro-1-methyl-6-phenyl-4H-[1,2,4]triazolo[4,3-a][1,4]benzodiazepine"
+      }
+    },
+    {
+      "claim_id": "C-PHENAZEPAM-IDENTITY",
+      "entity_type": "substance",
+      "entity_id": "phenazepam",
+      "field": "identity",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": true,
+      "value": {
+        "pubchem_cid": 40113,
+        "molecular_formula": "C15H10BrClN2O",
+        "molecular_weight": "349.61",
+        "inchikey": "CGMJQQJSWIRRRL-UHFFFAOYSA-N",
+        "iupac_name": "7-bromo-5-(2-chlorophenyl)-1,3-dihydro-1,4-benzodiazepin-2-one"
+      }
+    },
+    {
+      "claim_id": "C-AMITRIPTYLINE-IDENTITY",
+      "entity_type": "substance",
+      "entity_id": "amitriptyline",
+      "field": "identity",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": true,
+      "value": {
+        "pubchem_cid": 2160,
+        "molecular_formula": "C20H23N",
+        "molecular_weight": "277.4",
+        "inchikey": "KRMDCWKBEZIMAB-UHFFFAOYSA-N",
+        "iupac_name": "N,N-dimethyl-3-(2-tricyclo[9.4.0.03,8]pentadeca-1(15),3,5,7,11,13-hexaenylidene)propan-1-amine"
+      }
+    },
+    {
+      "claim_id": "C-PARACETAMOL-IDENTITY",
+      "entity_type": "substance",
+      "entity_id": "paracetamol",
+      "field": "identity",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": true,
+      "value": {
+        "pubchem_cid": 1983,
+        "molecular_formula": "C8H9NO2",
+        "molecular_weight": "151.16",
+        "inchikey": "RZVAJINKPMORJF-UHFFFAOYSA-N",
+        "iupac_name": "N-(4-hydroxyphenyl)acetamide"
+      }
+    },
+    {
+      "claim_id": "C-PREGABALIN-IDENTITY",
+      "entity_type": "substance",
+      "entity_id": "pregabalin",
+      "field": "identity",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": true,
+      "value": {
+        "pubchem_cid": 5486971,
+        "molecular_formula": "C8H17NO2",
+        "molecular_weight": "159.23",
+        "inchikey": "AYXYPKUFHZROOJ-ZETCQYMHSA-N",
+        "iupac_name": "(3S)-3-(aminomethyl)-5-methylhexanoic acid"
+      }
+    },
+    {
+      "claim_id": "C-CARBON-MONOXIDE-IDENTITY",
+      "entity_type": "substance",
+      "entity_id": "carbon-monoxide",
+      "field": "identity",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": true,
+      "value": {
+        "pubchem_cid": 281,
+        "molecular_formula": "CO",
+        "molecular_weight": "28.010",
+        "inchikey": "UGFAIRIUMAVXCW-UHFFFAOYSA-N",
+        "iupac_name": "carbon monoxide"
+      }
+    },
+    {
+      "claim_id": "C-CHLORPYRIFOS-IDENTITY",
+      "entity_type": "substance",
+      "entity_id": "chlorpyrifos",
+      "field": "identity",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": true,
+      "value": {
+        "pubchem_cid": 2730,
+        "molecular_formula": "C9H11Cl3NO3PS",
+        "molecular_weight": "350.6",
+        "inchikey": "SBPBAQFWLVIOKP-UHFFFAOYSA-N",
+        "iupac_name": "diethoxy-sulfanylidene-[(3,5,6-trichloro-2-pyridinyl)oxy]-lambda5-phosphane"
+      }
+    },
+    {
+      "claim_id": "C-ALUMINIUM-PHOSPHIDE-IDENTITY",
+      "entity_type": "substance",
+      "entity_id": "aluminium-phosphide",
+      "field": "identity",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": true,
+      "value": {
+        "pubchem_cid": 16126812,
+        "molecular_formula": "AlP",
+        "molecular_weight": "57.955300",
+        "inchikey": "PGCGUUGEUBFBPP-UHFFFAOYSA-N",
+        "iupac_name": "aluminum phosphorus(3-)"
+      }
+    },
+    {
+      "claim_id": "C-PHOSPHINE-IDENTITY",
+      "entity_type": "substance",
+      "entity_id": "phosphine",
+      "field": "identity",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": true,
+      "value": {
+        "pubchem_cid": 24404,
+        "molecular_formula": "H3P",
+        "molecular_weight": "33.998",
+        "inchikey": "XYFCBTPGUUZFHI-UHFFFAOYSA-N",
+        "iupac_name": "phosphane"
+      }
+    },
+    {
+      "claim_id": "C-ETHANOL-METABOLITES",
+      "entity_type": "substance",
+      "entity_id": "ethanol",
+      "field": "metabolites",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "items": [
+          "acetaldehyde",
+          "acetate",
+          "acetyl-CoA"
+        ],
+        "section": "(untitled opening section, before 'ADH Variants')",
+        "excerpt": "The acetaldehyde then is further oxidized by the enzyme aldehyde dehydrogenase (ALDH) to acetate, which is either excreted in the urine or reincorporated into intermediary metabolism as acetyl-CoA."
+      }
+    },
+    {
+      "claim_id": "C-METHANOL-METABOLITES",
+      "entity_type": "substance",
+      "entity_id": "methanol",
+      "field": "metabolites",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "items": [
+          "formaldehyde",
+          "formic acid"
+        ],
+        "section": "3. Toxicokinetic",
+        "excerpt": "Methanol oxidation leads to the formation of formaldehyde, which is subsequently converted into formic acid."
+      }
+    },
+    {
+      "claim_id": "C-ETHYLENE-GLYCOL-METABOLITES",
+      "entity_type": "substance",
+      "entity_id": "ethylene-glycol",
+      "field": "metabolites",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "A",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "items": [
+          "glycolaldehyde",
+          "glycolate"
+        ],
+        "section": "Physicochemical characteristics and toxicokinetics",
+        "excerpt": "One third of absorbed EG is eliminated unchanged in urine while two-thirds are oxidized in the liver by the enzyme alcohol dehydrogenase (ADH) to glycolaldehyde, which is then rapidly converted to glycolate by aldehyde dehydrogenase."
+      }
+    },
+    {
+      "claim_id": "C-MORPHINE-METABOLITES",
+      "entity_type": "substance",
+      "entity_id": "morphine",
+      "field": "metabolites",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "items": [
+          "morphine-3-glucuronide (M3G)",
+          "morphine-6-glucuronide (M6G)"
+        ],
+        "section": "Morphine Metabolism > Glucuronidation of Morphine",
+        "excerpt": "Glucuronidation occurs at the C3-OH and C6-OH positions, leading to two active metabolites: morphine-3-glucuronide (M3G) and morphine-6-glucuronide (M6G)."
+      }
+    },
+    {
+      "claim_id": "C-HEROIN-METABOLITES",
+      "entity_type": "substance",
+      "entity_id": "heroin",
+      "field": "metabolites",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "items": [
+          "6-monoacetylmorphine (6-MAM)",
+          "morphine"
+        ],
+        "section": "Introduction",
+        "excerpt": "Since heroin is rapidly deacetylated to 6-monoacetylmorphine (6-MAM) and then to morphine, drug addiction literature has long settled on the notion that heroin is little more than a means to deliver morphine and/or 6-MAM to the brain."
+      }
+    },
+    {
+      "claim_id": "C-FENTANYL-METABOLITES",
+      "entity_type": "substance",
+      "entity_id": "fentanyl",
+      "field": "metabolites",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "items": [
+          "norfentanyl"
+        ],
+        "section": "3.1 Norfentanyl:"
+      }
+    },
+    {
+      "claim_id": "C-TRAMADOL-METABOLITES",
+      "entity_type": "substance",
+      "entity_id": "tramadol",
+      "field": "metabolites",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "items": [
+          "O-desmethyltramadol",
+          "M2",
+          "M5"
+        ],
+        "section": "2.2.1. Metabolic Activation Mechanism",
+        "excerpt": "O-demethylation catalyzed by CYP2D6 produces the active metabolite O-desmethyltramadol (M1, 3, Figure 1), whereas N-demethylation mediated by CYP3A4 and CYP2B6 yields the metabolite M2, which can be further converted into downstream metabolites such as M5."
+      }
+    },
+    {
+      "claim_id": "C-METHAMPHETAMINE-METABOLITES",
+      "entity_type": "substance",
+      "entity_id": "methamphetamine",
+      "field": "metabolites",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "B",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "items": [
+          "4-hydroxymetamphetamine",
+          "amphetamine (AM)"
+        ],
+        "section": "1. Introduction",
+        "excerpt": "CYP2D6 is a major enzyme for MA catabolism via 4-hydroxylation (8–11%) and N-demethylation (2–7%) reaction to provide 4-hydroxymetamphetamine and amphetamine (AM), respectively."
+      }
+    },
+    {
+      "claim_id": "C-COCAINE-METABOLITES",
+      "entity_type": "substance",
+      "entity_id": "cocaine",
+      "field": "metabolites",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "items": [
+          "EME",
+          "BE",
+          "ecgonine (EC)"
+        ],
+        "section": "2.5.3. Metabolism",
+        "excerpt": "Cocaine yields two main metabolites: EME and BE, which may both undergo further hydrolysis into ecgonine (EC)."
+      }
+    },
+    {
+      "claim_id": "C-THC-METABOLITES",
+      "entity_type": "substance",
+      "entity_id": "thc",
+      "field": "metabolites",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "A",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "items": [
+          "THC-COOH",
+          "11-OH-THC"
+        ],
+        "section": "Introduction",
+        "excerpt": "Cannabis use or exposure is typically confirmed by detecting THC and its key metabolites, such as THC-COOH and 11-OH-THC, depending on the biological matrix."
+      }
+    },
+    {
+      "claim_id": "C-ALPRAZOLAM-METABOLITES",
+      "entity_type": "substance",
+      "entity_id": "alprazolam",
+      "field": "metabolites",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "B",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "items": [
+          "4-hydroxyalprazolam",
+          "α-hydroxyalprazolam"
+        ],
+        "section": "1. Introduction",
+        "excerpt": "Alprazolam was shown to be metabolized by human CYP3A4 and CYP3A5 to the main metabolites 4-hydroxyalprazolam and α-hydroxyalprazolam."
+      }
+    },
+    {
+      "claim_id": "C-PHENAZEPAM-METABOLITES",
+      "entity_type": "substance",
+      "entity_id": "phenazepam",
+      "field": "metabolites",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "items": [
+          "3-hydroxyphenazepam"
+        ],
+        "section": "2.10. Phenazepam and 3-Hydroxyphenazepam",
+        "excerpt": "It is metabolized to the active metabolite 3-hydroxyphenazepam by different isoforms of CYP450."
+      }
+    },
+    {
+      "claim_id": "C-AMITRIPTYLINE-METABOLITES",
+      "entity_type": "substance",
+      "entity_id": "amitriptyline",
+      "field": "metabolites",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "A",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "items": [
+          "nortriptyline"
+        ],
+        "section": "Background"
+      }
+    },
+    {
+      "claim_id": "C-PARACETAMOL-METABOLITES",
+      "entity_type": "substance",
+      "entity_id": "paracetamol",
+      "field": "metabolites",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "items": [
+          "sulfate",
+          "glucuronide",
+          "NAPQI"
+        ],
+        "section": "Metabolism of APAP",
+        "excerpt": "After an overdose of APAP, the sulfate and glucuronide pathways become saturated, and CYP450 produces relatively more NAPQI."
+      }
+    },
+    {
+      "claim_id": "C-PREGABALIN-METABOLISM_NOTE",
+      "entity_type": "substance",
+      "entity_id": "pregabalin",
+      "field": "metabolism_note",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "D",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "items": [
+          "negligible metabolism",
+          "almost exclusive renal elimination"
+        ],
+        "section": "Investigations",
+        "excerpt": "In our hands, the observed PGB values showed a decline consistent with the known pharmacokinetics of pregabalin, which displays rapid absorption, with peak levels reached within 1.5 h (up to 3 hours with food), high oral bioavailability, negligible metabolism, and almost exclusive renal elimination."
+      }
+    },
+    {
+      "claim_id": "C-CARBON-MONOXIDE-BIOMARKER",
+      "entity_type": "substance",
+      "entity_id": "carbon-monoxide",
+      "field": "biomarker",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "items": [
+          "Carboxyhaemoglobin (COHb)"
+        ],
+        "section": "7.1. Limitations of Current Techniques",
+        "excerpt": "Carboxyhaemoglobin (COHb) testing using blood gas analysers or spectrophotometry remains the primary diagnostic method for carbon monoxide (CO) poisoning."
+      }
+    },
+    {
+      "claim_id": "C-CHLORPYRIFOS-METABOLITES",
+      "entity_type": "substance",
+      "entity_id": "chlorpyrifos",
+      "field": "metabolites",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "C",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "items": [
+          "chlorpyrifos-oxon"
+        ],
+        "section": "1. Introduction",
+        "excerpt": "The toxicity of chlorpyrifos is primarily mediated by its active metabolite, chlorpyrifos-oxon, which is formed via cytochrome P450-mediated desulfuration of the parent compound."
+      }
+    },
+    {
+      "claim_id": "C-ALUMINIUM-PHOSPHIDE-TRANSFORMATION_PRODUCT",
+      "entity_type": "substance",
+      "entity_id": "aluminium-phosphide",
+      "field": "transformation_product",
+      "domain": "tox",
+      "declared_status": "NEEDS_REVIEW",
+      "evidence_level": "A",
+      "layer": "international_scientific",
+      "is_structured_value": false,
+      "value": {
+        "items": [
+          "phosphine gas"
+        ],
+        "section": "Discussion"
+      }
+    }
+  ],
+  "citations": [
+    {
+      "claim_id": "C-ETHANOL-IDENTITY",
+      "source_id": "SRC-PUBCHEM-702",
+      "locator": "Computed Properties"
+    },
+    {
+      "claim_id": "C-METHANOL-IDENTITY",
+      "source_id": "SRC-PUBCHEM-887",
+      "locator": "Computed Properties"
+    },
+    {
+      "claim_id": "C-ETHYLENE-GLYCOL-IDENTITY",
+      "source_id": "SRC-PUBCHEM-174",
+      "locator": "Computed Properties"
+    },
+    {
+      "claim_id": "C-MORPHINE-IDENTITY",
+      "source_id": "SRC-PUBCHEM-5288826",
+      "locator": "Computed Properties"
+    },
+    {
+      "claim_id": "C-HEROIN-IDENTITY",
+      "source_id": "SRC-PUBCHEM-5462328",
+      "locator": "Computed Properties"
+    },
+    {
+      "claim_id": "C-6-MAM-IDENTITY",
+      "source_id": "SRC-PUBCHEM-5462507",
+      "locator": "Computed Properties"
+    },
+    {
+      "claim_id": "C-FENTANYL-IDENTITY",
+      "source_id": "SRC-PUBCHEM-3345",
+      "locator": "Computed Properties"
+    },
+    {
+      "claim_id": "C-TRAMADOL-IDENTITY",
+      "source_id": "SRC-PUBCHEM-33741",
+      "locator": "Computed Properties"
+    },
+    {
+      "claim_id": "C-METHAMPHETAMINE-IDENTITY",
+      "source_id": "SRC-PUBCHEM-10836",
+      "locator": "Computed Properties"
+    },
+    {
+      "claim_id": "C-COCAINE-IDENTITY",
+      "source_id": "SRC-PUBCHEM-446220",
+      "locator": "Computed Properties"
+    },
+    {
+      "claim_id": "C-THC-IDENTITY",
+      "source_id": "SRC-PUBCHEM-16078",
+      "locator": "Computed Properties"
+    },
+    {
+      "claim_id": "C-ALPRAZOLAM-IDENTITY",
+      "source_id": "SRC-PUBCHEM-2118",
+      "locator": "Computed Properties"
+    },
+    {
+      "claim_id": "C-PHENAZEPAM-IDENTITY",
+      "source_id": "SRC-PUBCHEM-40113",
+      "locator": "Computed Properties"
+    },
+    {
+      "claim_id": "C-AMITRIPTYLINE-IDENTITY",
+      "source_id": "SRC-PUBCHEM-2160",
+      "locator": "Computed Properties"
+    },
+    {
+      "claim_id": "C-PARACETAMOL-IDENTITY",
+      "source_id": "SRC-PUBCHEM-1983",
+      "locator": "Computed Properties"
+    },
+    {
+      "claim_id": "C-PREGABALIN-IDENTITY",
+      "source_id": "SRC-PUBCHEM-5486971",
+      "locator": "Computed Properties"
+    },
+    {
+      "claim_id": "C-CARBON-MONOXIDE-IDENTITY",
+      "source_id": "SRC-PUBCHEM-281",
+      "locator": "Computed Properties"
+    },
+    {
+      "claim_id": "C-CHLORPYRIFOS-IDENTITY",
+      "source_id": "SRC-PUBCHEM-2730",
+      "locator": "Computed Properties"
+    },
+    {
+      "claim_id": "C-ALUMINIUM-PHOSPHIDE-IDENTITY",
+      "source_id": "SRC-PUBCHEM-16126812",
+      "locator": "Computed Properties"
+    },
+    {
+      "claim_id": "C-PHOSPHINE-IDENTITY",
+      "source_id": "SRC-PUBCHEM-24404",
+      "locator": "Computed Properties"
+    },
+    {
+      "claim_id": "C-ETHANOL-METABOLITES",
+      "source_id": "SRC-PMC3756590",
+      "locator": "(untitled opening section, before 'ADH Variants')"
+    },
+    {
+      "claim_id": "C-METHANOL-METABOLITES",
+      "source_id": "SRC-PMC11728796",
+      "locator": "3. Toxicokinetic"
+    },
+    {
+      "claim_id": "C-ETHYLENE-GLYCOL-METABOLITES",
+      "source_id": "SRC-PMC9921105",
+      "locator": "Physicochemical characteristics and toxicokinetics"
+    },
+    {
+      "claim_id": "C-MORPHINE-METABOLITES",
+      "source_id": "SRC-PMC9134088",
+      "locator": "Morphine Metabolism > Glucuronidation of Morphine"
+    },
+    {
+      "claim_id": "C-HEROIN-METABOLITES",
+      "source_id": "SRC-PMC10082801",
+      "locator": "Introduction"
+    },
+    {
+      "claim_id": "C-FENTANYL-METABOLITES",
+      "source_id": "SRC-PMC10593981",
+      "locator": "3.1 Norfentanyl:"
+    },
+    {
+      "claim_id": "C-TRAMADOL-METABOLITES",
+      "source_id": "SRC-PMC13074819",
+      "locator": "2.2.1. Metabolic Activation Mechanism"
+    },
+    {
+      "claim_id": "C-METHAMPHETAMINE-METABOLITES",
+      "source_id": "SRC-PMC9788588",
+      "locator": "1. Introduction"
+    },
+    {
+      "claim_id": "C-COCAINE-METABOLITES",
+      "source_id": "SRC-PMC9032145",
+      "locator": "2.5.3. Metabolism"
+    },
+    {
+      "claim_id": "C-THC-METABOLITES",
+      "source_id": "SRC-PMC13275792",
+      "locator": "Introduction"
+    },
+    {
+      "claim_id": "C-ALPRAZOLAM-METABOLITES",
+      "source_id": "SRC-PMC9775082",
+      "locator": "1. Introduction"
+    },
+    {
+      "claim_id": "C-PHENAZEPAM-METABOLITES",
+      "source_id": "SRC-PMC8230725",
+      "locator": "2.10. Phenazepam and 3-Hydroxyphenazepam"
+    },
+    {
+      "claim_id": "C-AMITRIPTYLINE-METABOLITES",
+      "source_id": "SRC-PMC5478479",
+      "locator": "Background"
+    },
+    {
+      "claim_id": "C-PARACETAMOL-METABOLITES",
+      "source_id": "SRC-PMC11567147",
+      "locator": "Metabolism of APAP"
+    },
+    {
+      "claim_id": "C-PREGABALIN-METABOLISM_NOTE",
+      "source_id": "SRC-PMC13345593",
+      "locator": "Investigations"
+    },
+    {
+      "claim_id": "C-CARBON-MONOXIDE-BIOMARKER",
+      "source_id": "SRC-PMC11899572",
+      "locator": "7.1. Limitations of Current Techniques"
+    },
+    {
+      "claim_id": "C-CHLORPYRIFOS-METABOLITES",
+      "source_id": "SRC-PMC13164365",
+      "locator": "1. Introduction"
+    },
+    {
+      "claim_id": "C-ALUMINIUM-PHOSPHIDE-TRANSFORMATION_PRODUCT",
+      "source_id": "SRC-PMC12550317",
+      "locator": "Discussion"
+    }
+  ],
+  "instruments": [
+    {
+      "instrument_id": "INT-INCB-YL-65",
+      "jurisdiction_id": "INT",
+      "instrument_type": "controlled_substance_schedule",
+      "titles": {
+        "en": "List of Narcotic Drugs under International Control (Yellow List), 65th edition"
+      },
+      "official_source_id": "SRC-INCB-YELLOW-LIST-65",
+      "official_reference": "Single Convention on Narcotic Drugs, 1961 — 65th edition, July 2026",
+      "effective_from": "2026-07-01",
+      "version": "65th edition, July 2026",
+      "last_verified_at": "2026-10-04",
+      "review_status": "NEEDS_REVIEW",
+      "date_precision": "month"
+    },
+    {
+      "instrument_id": "INT-INCB-GL-36",
+      "jurisdiction_id": "INT",
+      "instrument_type": "controlled_substance_schedule",
+      "titles": {
+        "en": "List of Psychotropic Substances under International Control (Green List), 36th edition"
+      },
+      "official_source_id": "SRC-INCB-GREEN-LIST-36",
+      "official_reference": "Convention on Psychotropic Substances of 1971 — 36th edition, 2025",
+      "effective_from": "2025-01-01",
+      "version": "36th edition, 2025",
+      "last_verified_at": "2026-10-04",
+      "review_status": "NEEDS_REVIEW",
+      "date_precision": "year"
+    }
+  ],
+  "rules": [
+    {
+      "rule_id": "R-INT-MORPHINE-YELLOW",
+      "instrument_id": "INT-INCB-YL-65",
+      "rule_type": "control_status",
+      "subject_type": "substance",
+      "subject_id": "morphine",
+      "value": {
+        "convention": "Single Convention on Narcotic Drugs, 1961",
+        "schedules": [
+          "I"
+        ],
+        "ids_code": "NM 009",
+        "rows": [
+          "NM 009 57-27-2 MORPHINE the principal alkaloid of opium and of opium poppy"
+        ]
+      },
+      "effective_from": "2026-07-01",
+      "review_status": "NEEDS_REVIEW"
+    },
+    {
+      "rule_id": "R-INT-HEROIN-YELLOW",
+      "instrument_id": "INT-INCB-YL-65",
+      "rule_type": "control_status",
+      "subject_type": "substance",
+      "subject_id": "heroin",
+      "value": {
+        "convention": "Single Convention on Narcotic Drugs, 1961",
+        "schedules": [
+          "I",
+          "IV"
+        ],
+        "ids_code": "NH 001",
+        "rows": [
+          "NH 001 561-27-3 HEROIN diacetylmorphine (derivative of morphine)",
+          "NH 001 561-27-3 HEROIN Diacetylmorphine (derivative of morphine)"
+        ]
+      },
+      "effective_from": "2026-07-01",
+      "review_status": "NEEDS_REVIEW"
+    },
+    {
+      "rule_id": "R-INT-FENTANYL-YELLOW",
+      "instrument_id": "INT-INCB-YL-65",
+      "rule_type": "control_status",
+      "subject_type": "substance",
+      "subject_id": "fentanyl",
+      "value": {
+        "convention": "Single Convention on Narcotic Drugs, 1961",
+        "schedules": [
+          "I"
+        ],
+        "ids_code": "NF 001",
+        "rows": [
+          "NF 001 437-38-7 FENTANYL 1-phenethyl-4-N-propionylanilinopiperidine"
+        ]
+      },
+      "effective_from": "2026-07-01",
+      "review_status": "NEEDS_REVIEW"
+    },
+    {
+      "rule_id": "R-INT-COCAINE-YELLOW",
+      "instrument_id": "INT-INCB-YL-65",
+      "rule_type": "control_status",
+      "subject_type": "substance",
+      "subject_id": "cocaine",
+      "value": {
+        "convention": "Single Convention on Narcotic Drugs, 1961",
+        "schedules": [
+          "I"
+        ],
+        "ids_code": "NC 004",
+        "rows": [
+          "NC 004 50-36-2 COCAINE methyl ester of benzoylecgonine (an alkaloid found in coca leaves or"
+        ]
+      },
+      "effective_from": "2026-07-01",
+      "review_status": "NEEDS_REVIEW"
+    },
+    {
+      "rule_id": "R-INT-METHAMPHETAMINE-GREEN",
+      "instrument_id": "INT-INCB-GL-36",
+      "rule_type": "control_status",
+      "subject_type": "substance",
+      "subject_id": "methamphetamine",
+      "value": {
+        "convention": "Convention on Psychotropic Substances of 1971",
+        "schedules": [
+          "II"
+        ],
+        "ids_code": "PM 005",
+        "rows": [
+          "PM 005 537-46-2 METAMFETAMINE methamphetamine (+)-(S)-N,α-dimethylphenethylamine"
+        ]
+      },
+      "effective_from": "2025-01-01",
+      "review_status": "NEEDS_REVIEW"
+    },
+    {
+      "rule_id": "R-INT-THC-GREEN",
+      "instrument_id": "INT-INCB-GL-36",
+      "rule_type": "control_status",
+      "subject_type": "substance",
+      "subject_id": "thc",
+      "value": {
+        "convention": "Convention on Psychotropic Substances of 1971",
+        "schedules": [
+          "II"
+        ],
+        "ids_code": "PD 010",
+        "rows": [
+          "PD 010 1972-08-3 delta-9-tetrahydro- (6aR,10aR)-6a,7,8,10a-tetrahydro-6,6,9-"
+        ]
+      },
+      "effective_from": "2025-01-01",
+      "review_status": "NEEDS_REVIEW"
+    },
+    {
+      "rule_id": "R-INT-ALPRAZOLAM-GREEN",
+      "instrument_id": "INT-INCB-GL-36",
+      "rule_type": "control_status",
+      "subject_type": "substance",
+      "subject_id": "alprazolam",
+      "value": {
+        "convention": "Convention on Psychotropic Substances of 1971",
+        "schedules": [
+          "IV"
+        ],
+        "ids_code": "PA 004",
+        "rows": [
+          "PA 004 28981-97-7 ALPRAZOLAM 8-chloro-1-methyl-6-phenyl-4H-s-triazolo[4,3-"
+        ]
+      },
+      "effective_from": "2025-01-01",
+      "review_status": "NEEDS_REVIEW"
+    },
+    {
+      "rule_id": "R-INT-PHENAZEPAM-GREEN",
+      "instrument_id": "INT-INCB-GL-36",
+      "rule_type": "control_status",
+      "subject_type": "substance",
+      "subject_id": "phenazepam",
+      "value": {
+        "convention": "Convention on Psychotropic Substances of 1971",
+        "schedules": [
+          "IV"
+        ],
+        "ids_code": "PP 024",
+        "rows": [
+          "PP 024 51753-57-2 phenazepam, 7-bromo-5-(2-chlorophenyl)-1,3-dihydro-2H-1,4-"
+        ]
+      },
+      "effective_from": "2025-01-01",
+      "review_status": "NEEDS_REVIEW"
+    }
+  ],
+  "reviewers": [],
+  "reviews": []
+}
