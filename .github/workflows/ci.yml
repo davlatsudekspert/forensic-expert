@@ -1,0 +1,99 @@
+# FORENSIC EXPERT — CI
+# Har bir push va PR’da: format, generatsiya qilingan kod, statik tahlil,
+# barcha testlar, secret scanning va dependency xavfsizlik tekshiruvi.
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  FLUTTER_VERSION: "3.47.6"
+
+jobs:
+  analyze-and-test:
+    name: Analyze & test
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+
+      - name: Dependencies (bitta workspace lockfile)
+        run: flutter pub get --enforce-lockfile
+
+      - name: Generated code is up to date (drift, gen-l10n)
+        run: |
+          (cd packages/fe_database && dart run build_runner build)
+          (cd apps/mobile && flutter gen-l10n)
+          git diff --exit-code
+
+      - name: Format
+        run: dart format --output=none --set-exit-if-changed $(git ls-files '*.dart' | grep -v -E '\.g\.dart$|/generated/')
+
+      - name: Analyze (packages)
+        run: dart analyze --fatal-infos packages
+
+      - name: Analyze (app)
+        working-directory: apps/mobile
+        run: flutter analyze --fatal-infos
+
+      - name: Test (pure Dart packages)
+        run: |
+          for p in packages/*; do
+            echo "::group::$p"
+            (cd "$p" && dart test)
+            echo "::endgroup::"
+          done
+
+      - name: Test (app — unit, widget, a11y, l10n, architecture, offline)
+        working-directory: apps/mobile
+        run: flutter test --coverage
+
+  secret-scan:
+    name: Secret scanning (gitleaks)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: gitleaks
+        run: |
+          curl -sSL https://github.com/gitleaks/gitleaks/releases/download/v8.28.0/gitleaks_8.28.0_linux_x64.tar.gz | tar xz gitleaks
+          ./gitleaks git --no-banner --redact -v .
+
+  dependency-scan:
+    name: Dependency vulnerabilities (OSV)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: osv-scanner
+        run: |
+          curl -sSL -o osv-scanner https://github.com/google/osv-scanner/releases/download/v2.2.2/osv-scanner_linux_amd64
+          chmod +x osv-scanner
+          ./osv-scanner scan source --lockfile=pubspec.lock
+
+  dependency-review:
+    name: Dependency review (PR)
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/dependency-review-action@v4
+        with:
+          fail-on-severity: high
+          deny-licenses: GPL-2.0, GPL-3.0, AGPL-3.0
