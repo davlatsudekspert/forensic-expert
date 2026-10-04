@@ -103,7 +103,7 @@ Batafsil: `docs/10_GLOBAL_JURISDICTION_LAYER.md`.
 | Lokal qidiruv (ilova ichida, fixture indeks) | 1.37 ms (max 6.8; n=24) | `AppSearchService.latency` |
 | content.db ochish (mavjud fayl) | 0.69–0.73 ms | `fe_database/tool/bench.dart`, host |
 | FTS5 qidiruv, 15 000 sintetik termin | median 0.71 ms, p95 2.83 ms | o‘sha |
-| Release APK (universal, 3 ABI) | 62.3 MB | `flutter build apk --release` (Lifetime ekrani qo‘shilishidan oldingi build) |
+| Release APK (universal, 3 ABI) | 62.3 MB | `flutter build apk --release`, yakuniy PHASE 2 kodi |
 
 Izohlar:
 
@@ -164,3 +164,15 @@ Tavsiya: avval domen va yuridik shaxsni hal qilish, keyin A yoki D variantini ta
 | R-P2-07 | Bepul demo hajmi (`AccessPolicy`: 3 yozuv / 1 kurs / 1 vosita) — taklif, tasdiqlanmagan; UI’da qulflash hali qo‘llanmagan (kontent TEST) | Egasi; kontent paydo bo‘lganda gating UI |
 | R-P2-09 | `docs/05` xarajat modeli obuna asosida | RG-16 |
 | R-P2-08 | Yurisdiksiya ro‘yxatidagi davlat nomlari (RU/UZ) review qilinmagan | RG-11 |
+
+## 13. CI
+
+GitHub Actions run #4 (`c7996fa`), https://github.com/davlatsudekspert/forensic-expert/actions/runs/37186714523:
+
+| Job | Natija |
+|---|---|
+| Analyze & test (pub get, generated code, format, analyze, paket testlari, ilova testlari + golden) | ✅ success |
+| Secret scanning (gitleaks) | ✅ success |
+| Dependency vulnerabilities (OSV) | ✅ success |
+| Dependency review (PR) | ⏭ skipped (faqat PR’da ishlaydi; PR ochilmagan) |
+

@@ -62,5 +62,5 @@
 | Golden / vizual regressiya | ✅ 26 kadr, CI’da |
 | Offline | ✅ tarmoq taqiqlangan holda barcha ekranlar |
 | Performance | ⚠️ Faqat Linux desktop (profile, software render) va host VM’da o‘lchandi. Mobil qurilmada o‘lchanmagan (RG-10) |
-| CI | GitHub Actions natijasi `docs/09` va yakuniy hisobotda |
+| CI | ✅ GitHub Actions run #4 — barcha joblar yashil (`docs/09` 13-bo‘lim) |
 
