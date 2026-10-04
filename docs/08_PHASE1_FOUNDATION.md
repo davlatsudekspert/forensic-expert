@@ -159,7 +159,7 @@ Litsenziyalar pub cache’dagi LICENSE fayllaridan tekshirildi.
 ## 8. Lokalizatsiya
 
 - Ilova UI’sida hardcoded foydalanuvchi matni **yo‘q** (statik test).
-- 3 til × 68 kalit: kalitlar, placeholder’lar va bo‘sh qiymatlar avtomatik tekshiriladi. EN bilan bir xil qolgan tarjima ham ushlanadi (brend nomlaridan tashqari).
+- 3 til × 64 kalit: kalitlar, placeholder’lar va bo‘sh qiymatlar avtomatik tekshiriladi. EN bilan bir xil qolgan tarjima ham ushlanadi (brend nomlaridan tashqari).
 - O‘zbek matnida apostrof bir xil (‘ va ’), ASCII `'` yo‘q.
 - Material lokalizatsiyasi `uz` uchun ham ishlaydi (3 tilda render testi).
 - **Ochiq:** RU/UZ UI matnlari men tomonimdan tayyorlangan — `i18n:ru` / `i18n:uz` reviewer ko‘rib chiqishi kerak. Ayniqsa disclaimer matnlari yuridik ko‘rikdan ham o‘tishi kerak.
@@ -172,7 +172,7 @@ Litsenziyalar pub cache’dagi LICENSE fayllaridan tekshirildi.
 | R-02 | CAS bo‘yicha noaniqliklar (ichki saqlash, davlat ro‘yxatlari, kichik hajm) | O‘rta | CAS’ga so‘rov (`07_POLICY_COMPLIANCE.md`, 1.3); sxema CAS’siz ishlaydi |
 | R-03 | Reviewerlar tayinlanmagan → production’da ilmiy kontent bo‘lmaydi | Yuqori (biznes) | Pilot (`06`) development kanalida |
 | R-04 | Real qurilmada perf va screen reader tekshirilmagan | O‘rta | PHASE 2 ning birinchi qadami |
-| R-05 | Bundle ID `uz.forensicexpert.forensic_expert` — vaqtinchalik; domen va yuridik shaxsga bog‘liq | O‘rta | Store ro‘yxatdan o‘tishdan oldin hal qilinadi (keyin o‘zgartirib bo‘lmaydi) |
+| R-05 | Application/Bundle ID (`uz.forensicexpert.forensic_expert` Android, `uz.forensicexpert.forensicExpert` iOS) — vaqtinchalik; domen va yuridik shaxsga bog‘liq | O‘rta | Store ro‘yxatdan o‘tishdan oldin hal qilinadi (keyin o‘zgartirib bo‘lmaydi) |
 | R-06 | Logo A3 «tog‘ / A harfi» assotsiatsiyasi; trademark tekshirilmagan | O‘rta | `design/logo/LOGO_PROTOTYPES.md` |
 | R-07 | Google Play shaxsiy akkaunt uchun 12 tester × 14 kun talabi | O‘rta | Tashkilot akkaunti tavsiya etiladi |
 | R-08 | RU/UZ UI tarjimalari review qilinmagan | O‘rta | i18n reviewer |
