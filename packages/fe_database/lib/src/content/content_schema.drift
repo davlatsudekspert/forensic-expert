@@ -1,0 +1,172 @@
+-- FORENSIC EXPERT content.db sxemasi (skelet, schema_version = 1).
+-- Bu baza ilovada FAQAT O‘QISH uchun. U imzolangan kontent paketidan keladi.
+-- Hujjat: docs/00_ARXITEKTURA_REJASI.md (6, 9, 22, 23-bo‘limlar).
+--
+-- Muhim qarorlar:
+--  * CAS uchun alohida ustun YO‘Q. Barcha tashqi identifikatorlar
+--    external_identifiers jadvalida; ularni ishlatish IdentifierPolicy’ga bog‘liq.
+--  * Konsentratsiyalar uchun "fatal" toifasi YO‘Q (CHECK cheklovi).
+--  * is_test_data — test ma’lumotni production’dan ajratish.
+
+CREATE TABLE content_meta (
+  meta_key TEXT NOT NULL PRIMARY KEY,
+  meta_value TEXT NOT NULL
+) WITHOUT ROWID;
+
+CREATE TABLE sources (
+  source_id TEXT NOT NULL PRIMARY KEY,
+  source_type TEXT NOT NULL,
+  title TEXT NOT NULL,
+  authors_json TEXT NOT NULL DEFAULT '[]',
+  organization TEXT,
+  journal TEXT,
+  publication_year INTEGER,
+  edition TEXT,
+  doi TEXT,
+  pmid TEXT,
+  official_url TEXT,
+  accessed_date TEXT,
+  tier INTEGER NOT NULL CHECK (tier IN (1, 2, 3)),
+  evidence_level TEXT NOT NULL CHECK (evidence_level IN ('A','B','C','D','E')),
+  license_mode TEXT NOT NULL,
+  license_agreement_id TEXT,
+  identifier_verified INTEGER NOT NULL DEFAULT 0,
+  review_status TEXT NOT NULL,
+  last_reviewed_at TEXT,
+  version INTEGER NOT NULL DEFAULT 1,
+  is_test_data INTEGER NOT NULL DEFAULT 0
+) WITHOUT ROWID;
+
+CREATE TABLE claim_groups (
+  group_id TEXT NOT NULL PRIMARY KEY,
+  entity_type TEXT NOT NULL,
+  entity_id TEXT NOT NULL,
+  field TEXT NOT NULL,
+  context_key TEXT NOT NULL,
+  conflict_state TEXT NOT NULL CHECK (conflict_state IN ('consistent','minor_difference','conflict','unresolved')),
+  editorial_note TEXT,
+  display_policy TEXT NOT NULL DEFAULT 'show_all'
+) WITHOUT ROWID;
+
+CREATE TABLE claims (
+  claim_id TEXT NOT NULL PRIMARY KEY,
+  entity_type TEXT NOT NULL,
+  entity_id TEXT NOT NULL,
+  field TEXT NOT NULL,
+  value_json TEXT NOT NULL,
+  domain TEXT NOT NULL CHECK (domain IN ('tox','fm','lab','legal','edu')),
+  review_status TEXT NOT NULL CHECK (review_status IN ('VERIFIED','REVIEWED','NEEDS_REVIEW','OUTDATED','REJECTED')),
+  evidence_level TEXT NOT NULL,
+  group_id TEXT REFERENCES claim_groups (group_id),
+  preferred INTEGER NOT NULL DEFAULT 0,
+  preference_reason TEXT,
+  version INTEGER NOT NULL DEFAULT 1,
+  updated_at TEXT NOT NULL,
+  is_test_data INTEGER NOT NULL DEFAULT 0,
+  CHECK (preferred = 0 OR preference_reason IS NOT NULL)
+) WITHOUT ROWID;
+
+CREATE INDEX claims_by_entity ON claims (entity_type, entity_id, field);
+
+CREATE TABLE citations (
+  claim_id TEXT NOT NULL REFERENCES claims (claim_id),
+  source_id TEXT NOT NULL REFERENCES sources (source_id),
+  locator TEXT,
+  PRIMARY KEY (claim_id, source_id)
+) WITHOUT ROWID;
+
+CREATE TABLE reviewers (
+  reviewer_id TEXT NOT NULL PRIMARY KEY,
+  display_name TEXT NOT NULL,
+  qualification TEXT,
+  active INTEGER NOT NULL DEFAULT 1
+) WITHOUT ROWID;
+
+CREATE TABLE reviewer_domains (
+  reviewer_id TEXT NOT NULL REFERENCES reviewers (reviewer_id),
+  domain TEXT NOT NULL,
+  can_verify INTEGER NOT NULL DEFAULT 0,
+  PRIMARY KEY (reviewer_id, domain)
+) WITHOUT ROWID;
+
+CREATE TABLE reviews (
+  review_id TEXT NOT NULL PRIMARY KEY,
+  target_type TEXT NOT NULL,
+  target_id TEXT NOT NULL,
+  target_version INTEGER NOT NULL,
+  domain TEXT NOT NULL,
+  reviewer_id TEXT NOT NULL REFERENCES reviewers (reviewer_id),
+  decision TEXT NOT NULL CHECK (decision IN ('approve','request_changes','reject')),
+  created_at TEXT NOT NULL
+) WITHOUT ROWID;
+
+CREATE TABLE substances (
+  substance_id TEXT NOT NULL PRIMARY KEY,
+  canonical_name TEXT NOT NULL UNIQUE,
+  entity_kind TEXT NOT NULL,
+  molecular_formula TEXT,
+  tier_access TEXT NOT NULL CHECK (tier_access IN ('free','student','pro')),
+  review_status TEXT NOT NULL,
+  last_reviewed_at TEXT,
+  content_version TEXT NOT NULL,
+  is_test_data INTEGER NOT NULL DEFAULT 0
+) WITHOUT ROWID;
+
+CREATE TABLE substance_i18n (
+  substance_id TEXT NOT NULL REFERENCES substances (substance_id),
+  lang TEXT NOT NULL,
+  name TEXT NOT NULL,
+  description_md TEXT,
+  translation_status TEXT NOT NULL CHECK (translation_status IN ('machine_draft','translated','reviewed')),
+  PRIMARY KEY (substance_id, lang)
+) WITHOUT ROWID;
+
+-- Tashqi identifikatorlar: pubchem_cid, inchikey, chebi, drugbank_open, cas_rn...
+-- Qaysi biri saqlanadi/ko‘rsatiladi/qidiriladi — IdentifierPolicy hal qiladi.
+CREATE TABLE external_identifiers (
+  entity_type TEXT NOT NULL,
+  entity_id TEXT NOT NULL,
+  scheme TEXT NOT NULL,
+  identifier_value TEXT NOT NULL,
+  source_id TEXT NOT NULL REFERENCES sources (source_id),
+  PRIMARY KEY (entity_type, entity_id, scheme, identifier_value)
+) WITHOUT ROWID;
+
+CREATE TABLE concentration_records (
+  record_id TEXT NOT NULL PRIMARY KEY,
+  substance_id TEXT NOT NULL REFERENCES substances (substance_id),
+  category TEXT NOT NULL CHECK (category IN ('therapeutic_reference','toxic_reference','reported_postmortem','reported_impairment')),
+  specimen_code TEXT NOT NULL,
+  population TEXT NOT NULL,
+  value_type TEXT NOT NULL,
+  value_low REAL,
+  value_high REAL,
+  value_central REAL,
+  unit TEXT NOT NULL,
+  n_cases INTEGER,
+  claim_id TEXT NOT NULL REFERENCES claims (claim_id),
+  is_test_data INTEGER NOT NULL DEFAULT 0
+) WITHOUT ROWID;
+
+-- Global Search terminlari. search_key — fe_search_core SearchNormalizer.searchKey().
+CREATE TABLE search_terms (
+  term_id INTEGER NOT NULL PRIMARY KEY,
+  entity_type TEXT NOT NULL,
+  entity_id TEXT NOT NULL,
+  category TEXT NOT NULL,
+  lang TEXT,
+  term TEXT NOT NULL,
+  search_key TEXT NOT NULL,
+  term_kind TEXT NOT NULL,
+  weight REAL NOT NULL DEFAULT 1.0
+) AS SearchTermRow;
+
+CREATE INDEX search_terms_key ON search_terms (search_key);
+
+-- Typo-tolerant qidiruv: trigram tokenizer (SQLite >= 3.34).
+CREATE VIRTUAL TABLE search_fts_tri USING fts5(
+  search_key,
+  content='search_terms',
+  content_rowid='term_id',
+  tokenize='trigram'
+);

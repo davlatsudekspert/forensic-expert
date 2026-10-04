@@ -1,0 +1,23 @@
+name: fe_database
+description: Offline SQLite bazalari (drift) — content.db (faqat o‘qish, imzolangan paketdan) va user.db (foydalanuvchi ma’lumotlari). FTS5 trigram qidiruv indeksi.
+publish_to: none
+version: 0.1.0
+resolution: workspace
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  drift: ^2.35.1
+  fe_content_schema:
+    path: ../fe_content_schema
+  fe_search_core:
+    path: ../fe_search_core
+  meta: ^1.19.0
+  sqlite3: ^3.7.0
+
+dev_dependencies:
+  build_runner: ^2.16.1
+  drift_dev: ^2.35.1
+  lints: ^6.0.0
+  test: ^1.31.0
