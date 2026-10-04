@@ -4728,28 +4728,6 @@
  },
  {
   "kind": "claim",
-  "id": "C-CODEINE-ANALYTICAL_METHOD-P5",
-  "entity": "codeine",
-  "field": "analytical_method",
-  "domain": "lab",
-  "role": "analytical",
-  "required_reviews": 2,
-  "source_id": "SRC-PMC12846103",
-  "source_title": "Domestic Abuse of Codeine: A Case Study of Non-Medical Use Leading to Fatal Outcome",
-  "source_type": "journal_article",
-  "doi": "10.3390/toxics14010071",
-  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12846103/",
-  "locator": "ABSTRACT",
-  "license": "openReuse",
-  "evidence_level": "D",
-  "extracted_evidence": "Post-mortem LC–MS/MS analysis revealed the presence of codeine (0.66 µg/mL), morphine (0.02 µg/mL), hydroxyzine (2.52 µg/mL), alprazolam (0.15 µg/mL), paracetamol (30.64 µg/mL), and additional substances in blood samples.",
-  "proposed_value": {
-   "section": "ABSTRACT"
-  },
-  "status": "NEEDS_REVIEW"
- },
- {
-  "kind": "claim",
   "id": "C-CODEINE-REPORTED_CONCENTRATION-P5",
   "entity": "codeine",
   "field": "reported_concentration",
@@ -5452,28 +5430,6 @@
  },
  {
   "kind": "claim",
-  "id": "C-CARFENTANIL-METABOLISM_NOTE-P5",
-  "entity": "carfentanil",
-  "field": "metabolism_note",
-  "domain": "tox",
-  "role": "scientific",
-  "required_reviews": 2,
-  "source_id": "SRC-PMC5962730",
-  "source_title": "Activity-Based Detection and Bioanalytical Confirmation of a Fatal Carfentanil Intoxication",
-  "source_type": "journal_article",
-  "doi": "10.3389/fphar.2018.00486",
-  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5962730/",
-  "locator": "CASE",
-  "license": "openReuse",
-  "evidence_level": "B",
-  "extracted_evidence": "Norcarfentanil, the major metabolite of carfentanil, was only able to generate low opioid activity at a high concentration (1 μM/326 ng/mL) (Figure 2A).",
-  "proposed_value": {
-   "section": "CASE"
-  },
-  "status": "NEEDS_REVIEW"
- },
- {
-  "kind": "claim",
   "id": "C-CARFENTANIL-ANALYTICAL_METHOD-P5",
   "entity": "carfentanil",
   "field": "analytical_method",
@@ -5590,28 +5546,6 @@
   "extracted_evidence": "4-ANPP is a major metabolite of methoxyacetylfentanyl (Mardal et al.,) and furanylfentanyl (Watanabe et al.,) and a minor metabolite of acetylfentanyl (Watanabe et al.,), and was detected in every blood and urine samples when one of the three analogs was taken.",
   "proposed_value": {
    "section": "DISCUSS"
-  },
-  "status": "NEEDS_REVIEW"
- },
- {
-  "kind": "claim",
-  "id": "C-FURANYLFENTANYL-ANALYTICAL_METHOD-P5",
-  "entity": "furanylfentanyl",
-  "field": "analytical_method",
-  "domain": "lab",
-  "role": "analytical",
-  "required_reviews": 2,
-  "source_id": "SRC-PMC11306479",
-  "source_title": "Intoxications involving methoxyacetylfentanyl and U-47700: a study of 3 polydrug fatalities",
-  "source_type": "journal_article",
-  "doi": "10.1007/s00414-024-03263-7",
-  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11306479/",
-  "locator": "RESULTS",
-  "license": "openReuse",
-  "evidence_level": "D",
-  "extracted_evidence": "Toxicological analyses of case 3 allowed to identify the following compounds by LC–MS/MS analysis of femoral blood: MeACF (340 ng/ml), furanylfentanyl (4.3 ng/ml) 4-ANPP (15 ng/ml), alprazolam (69 ng/ml) and alpha-hydroxyalprazolam (3.2 ng/ml) as well as traces of diazepam and nordazepam (< LOQ of 5 ng/ml).",
-  "proposed_value": {
-   "section": "RESULTS"
   },
   "status": "NEEDS_REVIEW"
  },
@@ -7108,28 +7042,6 @@
  },
  {
   "kind": "claim",
-  "id": "C-GHB-ANALYTICAL_METHOD-P5",
-  "entity": "ghb",
-  "field": "analytical_method",
-  "domain": "lab",
-  "role": "analytical",
-  "required_reviews": 2,
-  "source_id": "SRC-PMC10238486",
-  "source_title": "Urinary concentrations of GHB and its novel amino acid and carnitine conjugates following controlled GHB administration to humans",
-  "source_type": "journal_article",
-  "doi": "10.1038/s41598-023-36213-1",
-  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10238486/",
-  "locator": "ABSTRACT",
-  "license": "openReuse",
-  "evidence_level": "B",
-  "extracted_evidence": "We used LC–MS/MS for validated quantification of human urine samples collected within two randomized, double-blinded, placebo-controlled crossover studies (GHB 50 mg/kg, 79 participants) at approximately 4.5, 8, 11, and 28 h after intake.",
-  "proposed_value": {
-   "section": "ABSTRACT"
-  },
-  "status": "NEEDS_REVIEW"
- },
- {
-  "kind": "claim",
   "id": "C-2C-B-METABOLISM_NOTE-P5",
   "entity": "2c-b",
   "field": "metabolism_note",
@@ -7651,28 +7563,6 @@
  },
  {
   "kind": "claim",
-  "id": "C-PHENAZEPAM-METABOLISM_NOTE-P5",
-  "entity": "phenazepam",
-  "field": "metabolism_note",
-  "domain": "tox",
-  "role": "scientific",
-  "required_reviews": 2,
-  "source_id": "SRC-PMC8230725",
-  "source_title": "Designer Benzodiazepines: A Review of Toxicology and Public Health Risks",
-  "source_type": "journal_article",
-  "doi": "10.3390/ph14060560",
-  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8230725/",
-  "locator": "RESULTS",
-  "license": "openReuse",
-  "evidence_level": "C",
-  "extracted_evidence": "It is metabolized to the active metabolite 3-hydroxyphenazepam by different isoforms of CYP450.",
-  "proposed_value": {
-   "section": "RESULTS"
-  },
-  "status": "NEEDS_REVIEW"
- },
- {
-  "kind": "claim",
   "id": "C-PHENAZEPAM-REPORTED_CONCENTRATION-P5",
   "entity": "phenazepam",
   "field": "reported_concentration",
@@ -7794,28 +7684,6 @@
    ],
    "context": "postmortem / fatal cases",
    "not_a_threshold": true
-  },
-  "status": "NEEDS_REVIEW"
- },
- {
-  "kind": "claim",
-  "id": "C-FLUALPRAZOLAM-ANALYTICAL_METHOD-P5",
-  "entity": "flualprazolam",
-  "field": "analytical_method",
-  "domain": "lab",
-  "role": "analytical",
-  "required_reviews": 2,
-  "source_id": "SRC-PMC9715448",
-  "source_title": "A case of fatal multidrug intoxication involving flualprazolam: distribution in body fluids and solid tissues",
-  "source_type": "journal_article",
-  "doi": "10.1007/s11419-021-00591-w",
-  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9715448/",
-  "locator": "RESULTS",
-  "license": "openReuse",
-  "evidence_level": "D",
-  "extracted_evidence": "In postmortem femoral blood, flualprazolam (21.9 ng/mL), its metabolite hydroxyflualprazolam, bromazepam and flumazenil as well as tilidine and nortilidine were detected by LC–MS/MS.",
-  "proposed_value": {
-   "section": "RESULTS"
   },
   "status": "NEEDS_REVIEW"
  },

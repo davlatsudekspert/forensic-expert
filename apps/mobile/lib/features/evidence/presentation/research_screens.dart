@@ -133,24 +133,27 @@ class _ResearchLibraryScreenState extends ConsumerState<ResearchLibraryScreen> {
                       text: l.researchNote,
                     ),
                     const SizedBox(height: FeSpace.sm),
-                    Wrap(
-                      spacing: FeSpace.xs,
-                      runSpacing: FeSpace.xxs,
-                      children: [
-                        ChoiceChip(
-                          key: const Key('research.kind.all'),
-                          label: Text(l.researchAll),
-                          selected: _kind == null,
-                          onSelected: (_) => setState(() => _kind = null),
-                        ),
-                        for (final k in kinds)
-                          ChoiceChip(
-                            key: Key('research.kind.${k.code}'),
-                            label: Text(l.researchKindName(k)),
-                            selected: _kind == k,
-                            onSelected: (_) => setState(() => _kind = k),
-                          ),
-                      ],
+                    SingleChildScrollView(
+                      key: const Key('research.kinds'),
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: [
+                          for (final k in <ResearchKind?>[null, ...kinds])
+                            Padding(
+                              padding: const EdgeInsets.only(right: FeSpace.xs),
+                              child: ChoiceChip(
+                                key: Key('research.kind.${k?.code ?? 'all'}'),
+                                label: Text(
+                                  k == null
+                                      ? l.researchAll
+                                      : l.researchKindName(k),
+                                ),
+                                selected: _kind == k,
+                                onSelected: (_) => setState(() => _kind = k),
+                              ),
+                            ),
+                        ],
+                      ),
                     ),
                     FeSectionHeader(l.researchCount(shown.length)),
                     if (shown.isEmpty)
@@ -197,11 +200,11 @@ class ResearchDetailScreen extends ConsumerWidget {
     final library = ref.watch(libraryRepositoryProvider);
     final knowledge = ref.watch(knowledgeRepositoryProvider);
     final rows = <(String, String)>[
-      if (r.authors.isNotEmpty) ('Authors', r.authors.join(', ')),
-      if (r.container != null) ('Journal / conference', r.container!),
-      if (r.organization != null) ('Institution', r.organization!),
-      if (r.degree != null) ('Degree', r.degree!),
-      if (r.year != null) ('Year', r.year!),
+      if (r.authors.isNotEmpty) (l.metaAuthors, r.authors.join(', ')),
+      if (r.container != null) (l.metaContainer, r.container!),
+      if (r.organization != null) (l.metaInstitution, r.organization!),
+      if (r.degree != null) (l.metaDegree, r.degree!),
+      if (r.year != null) (l.metaYear, r.year!),
       if (r.doi != null) ('DOI', r.doi!),
       if (r.pmid != null) ('PMID', r.pmid!),
       if (r.pmcid != null) ('PMCID', r.pmcid!),
@@ -241,7 +244,7 @@ class ResearchDetailScreen extends ConsumerWidget {
                   const SizedBox(height: FeSpace.sm),
                   SelectableText(r.title, style: t.titleMedium),
                   const SizedBox(height: FeSpace.sm),
-                  FeDataTable(rows: rows),
+                  FeMetaList(rows: rows),
                   if (r.sourceApi != null) ...[
                     const SizedBox(height: FeSpace.xs),
                     Text(
@@ -367,7 +370,10 @@ class RelatedSection extends ConsumerWidget {
     ];
     final research = ev.researchFor(entityId);
     final any =
-        groups.any((g) => g.$3.isNotEmpty) ||
+        groups.any((g) {
+          final (_, _, ids) = g;
+          return ids.isNotEmpty;
+        }) ||
         analysedSubstances.isNotEmpty ||
         research.isNotEmpty;
     if (!any) return const SizedBox.shrink();

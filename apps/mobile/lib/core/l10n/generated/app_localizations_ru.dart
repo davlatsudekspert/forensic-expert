@@ -1859,4 +1859,118 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get fieldConfirmation => 'Требование подтверждения';
+
+  @override
+  String get metaAuthors => 'Авторы';
+
+  @override
+  String get metaContainer => 'Журнал / конференция';
+
+  @override
+  String get metaInstitution => 'Учреждение';
+
+  @override
+  String get metaDegree => 'Степень';
+
+  @override
+  String get metaYear => 'Год';
+
+  @override
+  String get metaCreator => 'Автор изображения';
+
+  @override
+  String get metaSource => 'Источник';
+
+  @override
+  String get metaAccessed => 'Дата обращения';
+
+  @override
+  String get tech_tlc => 'ТСХ (тонкослойная хроматография)';
+
+  @override
+  String get tech_gc => 'ГХ';
+
+  @override
+  String get tech_gcFid => 'ГХ-ПИД';
+
+  @override
+  String get tech_headspaceGc => 'Парофазная ГХ';
+
+  @override
+  String get tech_gcMs => 'ГХ-МС';
+
+  @override
+  String get tech_hplc => 'ВЭЖХ';
+
+  @override
+  String get tech_lcMsMs => 'ЖХ-МС/МС';
+
+  @override
+  String get tech_uvVis => 'УФ-видимая спектрофотометрия';
+
+  @override
+  String get tech_immunoassay => 'Иммуноанализ';
+
+  @override
+  String get tech_spectroscopy => 'Спектроскопия';
+
+  @override
+  String get tech_samplePreparation => 'Пробоподготовка';
+
+  @override
+  String get tech_extraction => 'Экстракция';
+
+  @override
+  String get tech_calibration => 'Калибровка';
+
+  @override
+  String get tech_qualityControl => 'Контроль качества';
+
+  @override
+  String get tech_validation => 'Валидация методики';
+
+  @override
+  String get tech_uncertainty => 'Неопределённость измерений';
+
+  @override
+  String get tech_statistics => 'Статистика';
+
+  @override
+  String get methodSection_purpose => 'Назначение';
+
+  @override
+  String get methodSection_scope => 'Область применения';
+
+  @override
+  String get methodSection_analytes => 'Аналиты';
+
+  @override
+  String get methodSection_specimens => 'Образцы';
+
+  @override
+  String get methodSection_principle => 'Принцип';
+
+  @override
+  String get methodSection_equipment => 'Оборудование';
+
+  @override
+  String get methodSection_reagents => 'Реагенты';
+
+  @override
+  String get methodSection_samplePreparation => 'Пробоподготовка';
+
+  @override
+  String get methodSection_calibrationQc => 'Калибровка и контроль качества';
+
+  @override
+  String get methodSection_workflow => 'Порядок работы';
+
+  @override
+  String get methodSection_interpretation => 'Интерпретация';
+
+  @override
+  String get methodSection_limitations => 'Ограничения';
+
+  @override
+  String get methodSection_validationStatus => 'Статус валидации';
 }

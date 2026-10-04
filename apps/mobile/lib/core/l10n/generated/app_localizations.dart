@@ -3405,6 +3405,234 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Confirmation requirement'**
   String get fieldConfirmation;
+
+  /// Research metadata label.
+  ///
+  /// In en, this message translates to:
+  /// **'Authors'**
+  String get metaAuthors;
+
+  /// Research metadata label.
+  ///
+  /// In en, this message translates to:
+  /// **'Journal / conference'**
+  String get metaContainer;
+
+  /// Research metadata label.
+  ///
+  /// In en, this message translates to:
+  /// **'Institution'**
+  String get metaInstitution;
+
+  /// Research metadata label.
+  ///
+  /// In en, this message translates to:
+  /// **'Degree'**
+  String get metaDegree;
+
+  /// Research metadata label.
+  ///
+  /// In en, this message translates to:
+  /// **'Year'**
+  String get metaYear;
+
+  /// Image metadata label.
+  ///
+  /// In en, this message translates to:
+  /// **'Creator'**
+  String get metaCreator;
+
+  /// Image metadata label.
+  ///
+  /// In en, this message translates to:
+  /// **'Source'**
+  String get metaSource;
+
+  /// Image metadata label.
+  ///
+  /// In en, this message translates to:
+  /// **'Accessed'**
+  String get metaAccessed;
+
+  /// Analytical technique name.
+  ///
+  /// In en, this message translates to:
+  /// **'TLC (thin-layer chromatography)'**
+  String get tech_tlc;
+
+  /// Analytical technique name.
+  ///
+  /// In en, this message translates to:
+  /// **'GC'**
+  String get tech_gc;
+
+  /// Analytical technique name.
+  ///
+  /// In en, this message translates to:
+  /// **'GC-FID'**
+  String get tech_gcFid;
+
+  /// Analytical technique name.
+  ///
+  /// In en, this message translates to:
+  /// **'Headspace GC'**
+  String get tech_headspaceGc;
+
+  /// Analytical technique name.
+  ///
+  /// In en, this message translates to:
+  /// **'GC-MS'**
+  String get tech_gcMs;
+
+  /// Analytical technique name.
+  ///
+  /// In en, this message translates to:
+  /// **'HPLC'**
+  String get tech_hplc;
+
+  /// Analytical technique name.
+  ///
+  /// In en, this message translates to:
+  /// **'LC-MS/MS'**
+  String get tech_lcMsMs;
+
+  /// Analytical technique name.
+  ///
+  /// In en, this message translates to:
+  /// **'UV-Vis spectrophotometry'**
+  String get tech_uvVis;
+
+  /// Analytical technique name.
+  ///
+  /// In en, this message translates to:
+  /// **'Immunoassay'**
+  String get tech_immunoassay;
+
+  /// Analytical technique name.
+  ///
+  /// In en, this message translates to:
+  /// **'Spectroscopy'**
+  String get tech_spectroscopy;
+
+  /// Analytical technique name.
+  ///
+  /// In en, this message translates to:
+  /// **'Sample preparation'**
+  String get tech_samplePreparation;
+
+  /// Analytical technique name.
+  ///
+  /// In en, this message translates to:
+  /// **'Extraction'**
+  String get tech_extraction;
+
+  /// Analytical technique name.
+  ///
+  /// In en, this message translates to:
+  /// **'Calibration'**
+  String get tech_calibration;
+
+  /// Analytical technique name.
+  ///
+  /// In en, this message translates to:
+  /// **'Quality control'**
+  String get tech_qualityControl;
+
+  /// Analytical technique name.
+  ///
+  /// In en, this message translates to:
+  /// **'Method validation'**
+  String get tech_validation;
+
+  /// Analytical technique name.
+  ///
+  /// In en, this message translates to:
+  /// **'Measurement uncertainty'**
+  String get tech_uncertainty;
+
+  /// Analytical technique name.
+  ///
+  /// In en, this message translates to:
+  /// **'Statistics'**
+  String get tech_statistics;
+
+  /// Method section heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Purpose'**
+  String get methodSection_purpose;
+
+  /// Method section heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Scope'**
+  String get methodSection_scope;
+
+  /// Method section heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Analytes'**
+  String get methodSection_analytes;
+
+  /// Method section heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Specimens'**
+  String get methodSection_specimens;
+
+  /// Method section heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Principle'**
+  String get methodSection_principle;
+
+  /// Method section heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Equipment'**
+  String get methodSection_equipment;
+
+  /// Method section heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Reagents'**
+  String get methodSection_reagents;
+
+  /// Method section heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Sample preparation'**
+  String get methodSection_samplePreparation;
+
+  /// Method section heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Calibration and QC'**
+  String get methodSection_calibrationQc;
+
+  /// Method section heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Workflow'**
+  String get methodSection_workflow;
+
+  /// Method section heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Interpretation'**
+  String get methodSection_interpretation;
+
+  /// Method section heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Limitations'**
+  String get methodSection_limitations;
+
+  /// Method section heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Validation status'**
+  String get methodSection_validationStatus;
 }
 
 class _AppLocalizationsDelegate

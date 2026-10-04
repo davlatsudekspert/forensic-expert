@@ -15,6 +15,7 @@ import '../../../core/widgets/fe_data_components.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
 import '../../../domain/library/library_models.dart';
 import '../../common/favorite_button.dart';
+import '../../evidence/evidence_strings.dart';
 import '../../evidence/presentation/research_screens.dart';
 import '../../evidence/presentation/scientific_image.dart';
 import '../../library/presentation/content_entry_sections.dart';
@@ -46,24 +47,42 @@ class KnowledgeDetailScreen extends ConsumerWidget {
     }
     final unlocked =
         e.access == EntryAccess.free || ref.watch(accessProvider).hasFullAccess;
-    final safetyClaims = [
+    // Bir xil manba jumlasi sahifada bir marta: claim (status va dalil
+    // darajasi bilan) tuzilgan izohdan ustun; retsept qadami esa claim’dan.
+    final recipeSteps = {
+      for (final st in e.recipe?.steps ?? const <PreparationStep>[])
+        _norm(st.text),
+    };
+    final claims = [
       for (final x in e.claims)
+        if (x.excerpt == null || !recipeSteps.contains(_norm(x.excerpt!))) x,
+    ];
+    final claimExcerpts = {
+      for (final x in claims)
+        if (x.excerpt != null) _norm(x.excerpt!),
+    };
+    final safetyClaims = [
+      for (final x in claims)
         if (safetyClaimFields.contains(x.field)) x,
     ];
     final otherClaims = [
-      for (final x in e.claims)
+      for (final x in claims)
         if (!safetyClaimFields.contains(x.field)) x,
     ];
-    final safetyNotes = <(String, SourcedNote)>[
-      if (e.screening case final s?) ...[
-        for (final n in s.limitations) (l.screeningLimitations, n),
-        for (final n in s.crossReactivity) (l.screeningCrossReactivity, n),
-        for (final n in s.falsePositive) (l.screeningFalsePositive, n),
-        for (final n in s.falseNegative) (l.screeningFalseNegative, n),
-      ],
-      if (e.recipe case final r?)
-        for (final n in r.hazards) (l.reagentHazards, n),
-    ];
+    final safetyNotes =
+        <(String, SourcedNote)>[
+          if (e.screening case final s?) ...[
+            for (final n in s.limitations) (l.screeningLimitations, n),
+            for (final n in s.crossReactivity) (l.screeningCrossReactivity, n),
+            for (final n in s.falsePositive) (l.screeningFalsePositive, n),
+            for (final n in s.falseNegative) (l.screeningFalseNegative, n),
+          ],
+          if (e.recipe case final r?)
+            for (final n in r.hazards) (l.reagentHazards, n),
+        ].where((x) {
+          final (_, note) = x;
+          return !claimExcerpts.contains(_norm(note.text));
+        }).toList();
 
     return Scaffold(
       appBar: AppBar(
@@ -99,6 +118,15 @@ class KnowledgeDetailScreen extends ConsumerWidget {
                     ),
                     const SizedBox(height: FeSpace.sm),
                   ],
+                  if (e.area == KnowledgeArea.histology) ...[
+                    FeBanner(
+                      key: const Key('histology.noDiagnosis'),
+                      icon: Icons.biotech_outlined,
+                      text: l.histologyNote,
+                      tone: FeBannerTone.warning,
+                    ),
+                    const SizedBox(height: FeSpace.sm),
+                  ],
                   _Header(entry: e),
                   if (safetyClaims.isNotEmpty || safetyNotes.isNotEmpty) ...[
                     FeSectionHeader(l.knowledgeSafety),
@@ -128,14 +156,6 @@ class KnowledgeDetailScreen extends ConsumerWidget {
                           child: ClaimCard(claim: x),
                         ),
                     ],
-                  ],
-                  if (e.area == KnowledgeArea.histology) ...[
-                    const SizedBox(height: FeSpace.sm),
-                    FeBanner(
-                      key: const Key('histology.noDiagnosis'),
-                      icon: Icons.biotech_outlined,
-                      text: l.histologyNote,
-                    ),
                   ],
                   ScientificImageGallery(entityId: e.id),
                   RelatedSection(entityId: e.id),
@@ -498,11 +518,12 @@ class _MethodSection extends ConsumerWidget {
         if (method.techniques.isNotEmpty)
           row(
             l.methodTechniques,
-            method.techniques.map((x) => x.name).join(', '),
+            method.techniques.map(l.techniqueName).join(', '),
           ),
         if (method.documentVersion != null)
           row(l.methodDocumentVersion, method.documentVersion!),
-        for (final s in method.sections.entries) row(s.key.name, s.value),
+        for (final s in method.sections.entries)
+          row(l.methodSectionName(s.key), s.value),
       ],
     );
   }
@@ -552,3 +573,6 @@ class _EmergingSection extends StatelessWidget {
     );
   }
 }
+
+String _norm(String t) =>
+    t.toLowerCase().replaceAll(RegExp(r'[^a-z0-9]+'), ' ').trim();

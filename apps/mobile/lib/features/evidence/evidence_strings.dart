@@ -42,4 +42,40 @@ extension EvidenceStrings on AppLocalizations {
     'metals_inorganic' => group_metals_inorganic,
     _ => g,
   };
+
+  String techniqueName(AnalyticalTechnique t) => switch (t) {
+    AnalyticalTechnique.tlc => tech_tlc,
+    AnalyticalTechnique.gc => tech_gc,
+    AnalyticalTechnique.gcFid => tech_gcFid,
+    AnalyticalTechnique.headspaceGc => tech_headspaceGc,
+    AnalyticalTechnique.gcMs => tech_gcMs,
+    AnalyticalTechnique.hplc => tech_hplc,
+    AnalyticalTechnique.lcMsMs => tech_lcMsMs,
+    AnalyticalTechnique.uvVis => tech_uvVis,
+    AnalyticalTechnique.immunoassay => tech_immunoassay,
+    AnalyticalTechnique.spectroscopy => tech_spectroscopy,
+    AnalyticalTechnique.samplePreparation => tech_samplePreparation,
+    AnalyticalTechnique.extraction => tech_extraction,
+    AnalyticalTechnique.calibration => tech_calibration,
+    AnalyticalTechnique.qualityControl => tech_qualityControl,
+    AnalyticalTechnique.validation => tech_validation,
+    AnalyticalTechnique.uncertainty => tech_uncertainty,
+    AnalyticalTechnique.statistics => tech_statistics,
+  };
+
+  String methodSectionName(MethodSection s) => switch (s) {
+    MethodSection.purpose => methodSection_purpose,
+    MethodSection.scope => methodSection_scope,
+    MethodSection.analytes => methodSection_analytes,
+    MethodSection.specimens => methodSection_specimens,
+    MethodSection.principle => methodSection_principle,
+    MethodSection.equipment => methodSection_equipment,
+    MethodSection.reagents => methodSection_reagents,
+    MethodSection.samplePreparation => methodSection_samplePreparation,
+    MethodSection.calibrationQc => methodSection_calibrationQc,
+    MethodSection.workflow => methodSection_workflow,
+    MethodSection.interpretation => methodSection_interpretation,
+    MethodSection.limitations => methodSection_limitations,
+    MethodSection.validationStatus => methodSection_validationStatus,
+  };
 }

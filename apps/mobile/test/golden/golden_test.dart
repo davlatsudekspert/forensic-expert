@@ -202,7 +202,7 @@ void main() {
             ),
           ],
         );
-        await tester.pumpAndSettle();
+        await settleImages(tester);
         await expectLater(
           find.byType(MaterialApp),
           matchesGoldenFile('goldens/$name.png'),

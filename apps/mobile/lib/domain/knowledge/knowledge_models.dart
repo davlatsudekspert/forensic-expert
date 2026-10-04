@@ -19,6 +19,7 @@ const safetyClaimFields = {
   'test_class_limitation',
   'cross_reactivity',
   'presumptive_nature',
+  'confirmation_requirement',
 };
 
 @immutable

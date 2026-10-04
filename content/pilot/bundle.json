@@ -3447,30 +3447,6 @@
       "notes": "Litsenziya (PMC BioC API): CC BY. Jumla asl matndan (DISCUSS) dasturiy ajratilgan; kuratsiya: phase5/curation_manual.json."
     },
     {
-      "source_id": "SRC-PMC11306479",
-      "source_type": "journal_article",
-      "title": "Intoxications involving methoxyacetylfentanyl and U-47700: a study of 3 polydrug fatalities",
-      "authors": [
-        "Giorgetti A",
-        "Große Perdekamp M",
-        "Franchetti G",
-        "Pircher R",
-        "Pollak S",
-        "Pelotti S"
-      ],
-      "journal": "International journal of legal medicine",
-      "publication_year": 2024,
-      "doi": "10.1007/s00414-024-03263-7",
-      "pmid": "38831139",
-      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11306479/",
-      "accessed_date": "2026-10-04",
-      "tier": "tier2",
-      "evidence_level": "D",
-      "license_mode": "openReuse",
-      "identifier_verified": true,
-      "notes": "Litsenziya (PMC BioC API): CC BY. Jumla asl matndan (RESULTS) dasturiy ajratilgan; kuratsiya: phase5/curation_manual.json."
-    },
-    {
       "source_id": "SRC-PMC6609322",
       "source_type": "journal_article",
       "title": "Fatalities caused by novel opioids: a review",
@@ -4826,30 +4802,6 @@
       "license_mode": "openReuse",
       "identifier_verified": true,
       "notes": "Litsenziya (PMC BioC API): CC BY. Jumla asl matndan (INTRO) dasturiy ajratilgan; kuratsiya: phase5/curation_manual.json."
-    },
-    {
-      "source_id": "SRC-PMC10238486",
-      "source_type": "journal_article",
-      "title": "Urinary concentrations of GHB and its novel amino acid and carnitine conjugates following controlled GHB administration to humans",
-      "authors": [
-        "Steuer AE",
-        "Bavato F",
-        "Schnider LK",
-        "Dornbierer DA",
-        "Bosch OG",
-        "Quednow BB"
-      ],
-      "journal": "Scientific reports",
-      "publication_year": 2023,
-      "doi": "10.1038/s41598-023-36213-1",
-      "pmid": "37268859",
-      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10238486/",
-      "accessed_date": "2026-10-04",
-      "tier": "tier2",
-      "evidence_level": "B",
-      "license_mode": "openReuse",
-      "identifier_verified": true,
-      "notes": "Litsenziya (PMC BioC API): CC BY. Jumla asl matndan (ABSTRACT) dasturiy ajratilgan; kuratsiya: phase5/curation_manual.json."
     },
     {
       "source_id": "SRC-PMC5859368",
@@ -14552,21 +14504,6 @@
       }
     },
     {
-      "claim_id": "C-CODEINE-ANALYTICAL_METHOD-P5",
-      "entity_type": "substance",
-      "entity_id": "codeine",
-      "field": "analytical_method",
-      "domain": "lab",
-      "declared_status": "NEEDS_REVIEW",
-      "evidence_level": "D",
-      "layer": "international_scientific",
-      "is_structured_value": false,
-      "value": {
-        "excerpt": "Post-mortem LC–MS/MS analysis revealed the presence of codeine (0.66 µg/mL), morphine (0.02 µg/mL), hydroxyzine (2.52 µg/mL), alprazolam (0.15 µg/mL), paracetamol (30.64 µg/mL), and additional substances in blood samples.",
-        "section": "ABSTRACT"
-      }
-    },
-    {
       "claim_id": "C-CODEINE-REPORTED_CONCENTRATION-P5",
       "entity_type": "substance",
       "entity_id": "codeine",
@@ -15059,21 +14996,6 @@
       }
     },
     {
-      "claim_id": "C-CARFENTANIL-METABOLISM_NOTE-P5",
-      "entity_type": "substance",
-      "entity_id": "carfentanil",
-      "field": "metabolism_note",
-      "domain": "tox",
-      "declared_status": "NEEDS_REVIEW",
-      "evidence_level": "B",
-      "layer": "international_scientific",
-      "is_structured_value": false,
-      "value": {
-        "excerpt": "Norcarfentanil, the major metabolite of carfentanil, was only able to generate low opioid activity at a high concentration (1 μM/326 ng/mL) (Figure 2A).",
-        "section": "CASE"
-      }
-    },
-    {
       "claim_id": "C-CARFENTANIL-ANALYTICAL_METHOD-P5",
       "entity_type": "substance",
       "entity_id": "carfentanil",
@@ -15157,21 +15079,6 @@
       "value": {
         "excerpt": "4-ANPP is a major metabolite of methoxyacetylfentanyl (Mardal et al.,) and furanylfentanyl (Watanabe et al.,) and a minor metabolite of acetylfentanyl (Watanabe et al.,), and was detected in every blood and urine samples when one of the three analogs was taken.",
         "section": "DISCUSS"
-      }
-    },
-    {
-      "claim_id": "C-FURANYLFENTANYL-ANALYTICAL_METHOD-P5",
-      "entity_type": "substance",
-      "entity_id": "furanylfentanyl",
-      "field": "analytical_method",
-      "domain": "lab",
-      "declared_status": "NEEDS_REVIEW",
-      "evidence_level": "D",
-      "layer": "international_scientific",
-      "is_structured_value": false,
-      "value": {
-        "excerpt": "Toxicological analyses of case 3 allowed to identify the following compounds by LC–MS/MS analysis of femoral blood: MeACF (340 ng/ml), furanylfentanyl (4.3 ng/ml) 4-ANPP (15 ng/ml), alprazolam (69 ng/ml) and alpha-hydroxyalprazolam (3.2 ng/ml) as well as traces of diazepam and nordazepam (< LOQ of 5 ng/ml).",
-        "section": "RESULTS"
       }
     },
     {
@@ -16218,21 +16125,6 @@
       }
     },
     {
-      "claim_id": "C-GHB-ANALYTICAL_METHOD-P5",
-      "entity_type": "substance",
-      "entity_id": "ghb",
-      "field": "analytical_method",
-      "domain": "lab",
-      "declared_status": "NEEDS_REVIEW",
-      "evidence_level": "B",
-      "layer": "international_scientific",
-      "is_structured_value": false,
-      "value": {
-        "excerpt": "We used LC–MS/MS for validated quantification of human urine samples collected within two randomized, double-blinded, placebo-controlled crossover studies (GHB 50 mg/kg, 79 participants) at approximately 4.5, 8, 11, and 28 h after intake.",
-        "section": "ABSTRACT"
-      }
-    },
-    {
       "claim_id": "C-2C-B-METABOLISM_NOTE-P5",
       "entity_type": "substance",
       "entity_id": "2c-b",
@@ -16593,21 +16485,6 @@
       }
     },
     {
-      "claim_id": "C-PHENAZEPAM-METABOLISM_NOTE-P5",
-      "entity_type": "substance",
-      "entity_id": "phenazepam",
-      "field": "metabolism_note",
-      "domain": "tox",
-      "declared_status": "NEEDS_REVIEW",
-      "evidence_level": "C",
-      "layer": "international_scientific",
-      "is_structured_value": false,
-      "value": {
-        "excerpt": "It is metabolized to the active metabolite 3-hydroxyphenazepam by different isoforms of CYP450.",
-        "section": "RESULTS"
-      }
-    },
-    {
       "claim_id": "C-PHENAZEPAM-REPORTED_CONCENTRATION-P5",
       "entity_type": "substance",
       "entity_id": "phenazepam",
@@ -16696,21 +16573,6 @@
         ],
         "context": "postmortem / fatal cases",
         "not_a_threshold": true
-      }
-    },
-    {
-      "claim_id": "C-FLUALPRAZOLAM-ANALYTICAL_METHOD-P5",
-      "entity_type": "substance",
-      "entity_id": "flualprazolam",
-      "field": "analytical_method",
-      "domain": "lab",
-      "declared_status": "NEEDS_REVIEW",
-      "evidence_level": "D",
-      "layer": "international_scientific",
-      "is_structured_value": false,
-      "value": {
-        "excerpt": "In postmortem femoral blood, flualprazolam (21.9 ng/mL), its metabolite hydroxyflualprazolam, bromazepam and flumazenil as well as tilidine and nortilidine were detected by LC–MS/MS.",
-        "section": "RESULTS"
       }
     },
     {
@@ -20288,11 +20150,6 @@
       "locator": "INTRO"
     },
     {
-      "claim_id": "C-CODEINE-ANALYTICAL_METHOD-P5",
-      "source_id": "SRC-PMC12846103",
-      "locator": "ABSTRACT"
-    },
-    {
       "claim_id": "C-CODEINE-REPORTED_CONCENTRATION-P5",
       "source_id": "SRC-PMC12846103",
       "locator": "ABSTRACT"
@@ -20443,11 +20300,6 @@
       "locator": "DISCUSS"
     },
     {
-      "claim_id": "C-CARFENTANIL-METABOLISM_NOTE-P5",
-      "source_id": "SRC-PMC5962730",
-      "locator": "CASE"
-    },
-    {
       "claim_id": "C-CARFENTANIL-ANALYTICAL_METHOD-P5",
       "source_id": "SRC-PMC5962730",
       "locator": "CASE"
@@ -20471,11 +20323,6 @@
       "claim_id": "C-FURANYLFENTANYL-METABOLISM_NOTE-P5",
       "source_id": "SRC-PMC6454115",
       "locator": "DISCUSS"
-    },
-    {
-      "claim_id": "C-FURANYLFENTANYL-ANALYTICAL_METHOD-P5",
-      "source_id": "SRC-PMC11306479",
-      "locator": "RESULTS"
     },
     {
       "claim_id": "C-FURANYLFENTANYL-REPORTED_CONCENTRATION-P5",
@@ -20798,11 +20645,6 @@
       "locator": "INTRO"
     },
     {
-      "claim_id": "C-GHB-ANALYTICAL_METHOD-P5",
-      "source_id": "SRC-PMC10238486",
-      "locator": "ABSTRACT"
-    },
-    {
       "claim_id": "C-2C-B-METABOLISM_NOTE-P5",
       "source_id": "SRC-PMC5859368",
       "locator": "INTRO"
@@ -20918,11 +20760,6 @@
       "locator": "ABSTRACT"
     },
     {
-      "claim_id": "C-PHENAZEPAM-METABOLISM_NOTE-P5",
-      "source_id": "SRC-PMC8230725",
-      "locator": "RESULTS"
-    },
-    {
       "claim_id": "C-PHENAZEPAM-REPORTED_CONCENTRATION-P5",
       "source_id": "SRC-PMC8230725",
       "locator": "RESULTS"
@@ -20946,11 +20783,6 @@
       "claim_id": "C-BROMAZOLAM-REPORTED_CONCENTRATION-P5",
       "source_id": "SRC-PMC13040413",
       "locator": "ABSTRACT"
-    },
-    {
-      "claim_id": "C-FLUALPRAZOLAM-ANALYTICAL_METHOD-P5",
-      "source_id": "SRC-PMC9715448",
-      "locator": "RESULTS"
     },
     {
       "claim_id": "C-FLUALPRAZOLAM-REPORTED_CONCENTRATION-P5",
@@ -25414,35 +25246,6 @@
       "review_status": "NEEDS_REVIEW"
     },
     {
-      "research_id": "RS-1b3f96c36d6a",
-      "kind": "journal_article",
-      "title": "Transcriptomic Characterization of Inhalation Phosphine Toxicity in Adult Male Sprague-Dawley Rats",
-      "authors": [
-        "Hartog MA",
-        "Lewandowski RJ",
-        "Hofmann CS",
-        "Melber AA",
-        "Rothwell CC",
-        "Sherman K",
-        "Andres J",
-        "Tressler JA"
-      ],
-      "organization": null,
-      "container": "Chemical research in toxicology",
-      "year": "2021",
-      "doi": "10.1021/acs.chemrestox.1c00108",
-      "pmid": "34427094",
-      "pmcid": null,
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/34427094/",
-      "degree": null,
-      "open_access": "unknown",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
       "research_id": "RS-88820a52dd6d",
       "kind": "review",
       "title": "Phosphine toxicity: a story of disrupted mitochondrial metabolism",
@@ -26216,31 +26019,6 @@
       "review_status": "NEEDS_REVIEW"
     },
     {
-      "research_id": "RS-dfcefd4cb1b3",
-      "kind": "journal_article",
-      "title": "Oxycodone self-administration activates the mitogen-activated protein kinase/ mitogen- and stress-activated protein kinase (MAPK-MSK) signaling pathway in the rat dorsal striatum",
-      "authors": [
-        "Blackwood CA",
-        "McCoy MT",
-        "Ladenheim B",
-        "Cadet JL"
-      ],
-      "organization": null,
-      "container": "Scientific reports",
-      "year": "2021",
-      "doi": "10.1038/s41598-021-82206-3",
-      "pmid": "33510349",
-      "pmcid": "PMC7843984",
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33510349/",
-      "degree": null,
-      "open_access": "pmc",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
       "research_id": "RS-be3305a1e30e",
       "kind": "journal_article",
       "title": "Oxycodone-related deaths in Sweden 2006-2018",
@@ -26289,30 +26067,6 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/35469698/",
       "degree": null,
       "open_access": "pmc",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
-      "research_id": "RS-71c3a105a9ca",
-      "kind": "journal_article",
-      "title": "Oxycodone-like discriminative stimulus effects of fentanyl-related emerging drugs of abuse in mice",
-      "authors": [
-        "Walentiny DM",
-        "Moisa LT",
-        "Beardsley PM"
-      ],
-      "organization": null,
-      "container": "Neuropharmacology",
-      "year": "2019",
-      "doi": "10.1016/j.neuropharm.2019.02.007",
-      "pmid": "30735691",
-      "pmcid": null,
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/30735691/",
-      "degree": null,
-      "open_access": "unknown",
       "source_api": "pubmed",
       "accessed": "2026-10-04",
       "evidence_level": "B",
@@ -26890,33 +26644,6 @@
       "review_status": "NEEDS_REVIEW"
     },
     {
-      "research_id": "RS-c6ccf5c02df0",
-      "kind": "journal_article",
-      "title": "Fentanyl-related substances elicit antinociception and hyperlocomotion in mice via opioid receptors",
-      "authors": [
-        "Varshneya NB",
-        "Walentiny DM",
-        "Moisa LT",
-        "Walker TD",
-        "Akinfiresoye LR",
-        "Beardsley PM"
-      ],
-      "organization": null,
-      "container": "Pharmacology, biochemistry, and behavior",
-      "year": "2021",
-      "doi": "10.1016/j.pbb.2021.173242",
-      "pmid": "34302853",
-      "pmcid": "PMC9044821",
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/34302853/",
-      "degree": null,
-      "open_access": "pmc",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
       "research_id": "RS-d908490973e9",
       "kind": "journal_article",
       "title": "The distribution and redistribution of fentanyl & norfentanyl in post mortem samples",
@@ -26983,35 +26710,6 @@
       "pmcid": null,
       "handle": null,
       "url": "https://pubmed.ncbi.nlm.nih.gov/29432758/",
-      "degree": null,
-      "open_access": "unknown",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
-      "research_id": "RS-cf63afebe589",
-      "kind": "journal_article",
-      "title": "Determination of Fentanyl, Alpha-Methylfentanyl, Beta-Hydroxyfentanyl and the Metabolite Norfentanyl in Rat Urine by LC-MS-MS",
-      "authors": [
-        "Li L",
-        "Yu X",
-        "Lyu L",
-        "Duan H",
-        "Chen Y",
-        "Bian J",
-        "Xu Z",
-        "Liu L"
-      ],
-      "organization": null,
-      "container": "Journal of analytical toxicology",
-      "year": "2022",
-      "doi": "10.1093/jat/bkab021",
-      "pmid": "33647104",
-      "pmcid": null,
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33647104/",
       "degree": null,
       "open_access": "unknown",
       "source_api": "pubmed",
@@ -27195,34 +26893,6 @@
       "review_status": "NEEDS_REVIEW"
     },
     {
-      "research_id": "RS-5447482451c0",
-      "kind": "journal_article",
-      "title": "Use of hepatocytes isolated from a liver-humanized mouse for studies on the metabolism of drugs: application to the metabolism of fentanyl and acetylfentanyl",
-      "authors": [
-        "Kanamori T",
-        "Togawa-Iwata Y",
-        "Segawa H",
-        "Yamamuro T",
-        "Kuwayama K",
-        "Tsujikawa K",
-        "Inoue H"
-      ],
-      "organization": null,
-      "container": "Forensic toxicology",
-      "year": "2018",
-      "doi": "10.1007/s11419-018-0425-x",
-      "pmid": "29963210",
-      "pmcid": "PMC6002451",
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29963210/",
-      "degree": null,
-      "open_access": "pmc",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
       "research_id": "RS-f17eed69a04c",
       "kind": "journal_article",
       "title": "Postmortem and Toxicological Findings in a Series of Furanylfentanyl-Related Deaths",
@@ -27292,63 +26962,6 @@
       "pmcid": null,
       "handle": null,
       "url": "https://pubmed.ncbi.nlm.nih.gov/32064536/",
-      "degree": null,
-      "open_access": "unknown",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
-      "research_id": "RS-8428cdbe2712",
-      "kind": "journal_article",
-      "title": "Sufentanil alleviates cerebral ischemia-reperfusion injury by inhibiting inflammation and protecting the blood-brain barrier in rats",
-      "authors": [
-        "Wang Z",
-        "Du X",
-        "Yu D",
-        "Yang Y",
-        "Ma G",
-        "Jia X",
-        "Cheng L"
-      ],
-      "organization": null,
-      "container": "European journal of histochemistry : EJH",
-      "year": "2022",
-      "doi": "10.4081/ejh.2022.3328",
-      "pmid": "35016494",
-      "pmcid": "PMC8764464",
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35016494/",
-      "degree": null,
-      "open_access": "pmc",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
-      "research_id": "RS-408842d23b2d",
-      "kind": "journal_article",
-      "title": "Sufentanil Alleviates Intrathecal Lidocaine Induced Prolonged Sensory and Motor Impairments but not the Spinal Histological Injury in Rats",
-      "authors": [
-        "Zhang Z",
-        "Chen Y",
-        "Wang E",
-        "Wu L",
-        "Wang R",
-        "Song Z",
-        "Weng Y",
-        "Sun Z"
-      ],
-      "organization": null,
-      "container": "Neurochemical research",
-      "year": "2018",
-      "doi": "10.1007/s11064-018-2524-9",
-      "pmid": "29704143",
-      "pmcid": null,
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29704143/",
       "degree": null,
       "open_access": "unknown",
       "source_api": "pubmed",
@@ -27565,33 +27178,6 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/36154843/",
       "degree": null,
       "open_access": "unknown",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
-      "research_id": "RS-5e17edf86e9f",
-      "kind": "journal_article",
-      "title": "Plasma pharmacokinetics and pharmacodynamic effects of the 2-benzylbenzimidazole synthetic opioid, isotonitazene, in male rats",
-      "authors": [
-        "Walton SE",
-        "Krotulski AJ",
-        "Glatfelter GC",
-        "Walther D",
-        "Logan BK",
-        "Baumann MH"
-      ],
-      "organization": null,
-      "container": "Psychopharmacology",
-      "year": "2023",
-      "doi": "10.1007/s00213-022-06292-5",
-      "pmid": "36526866",
-      "pmcid": "PMC12908709",
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36526866/",
-      "degree": null,
-      "open_access": "pmc",
       "source_api": "pubmed",
       "accessed": "2026-10-04",
       "evidence_level": "B",
@@ -27855,29 +27441,6 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/35477798/",
       "degree": null,
       "open_access": "pmc",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
-      "research_id": "RS-fb1d9fa7172f",
-      "kind": "journal_article",
-      "title": "Oral etonitazene and cocaine consumption by AA, ANA and Wistar rats",
-      "authors": [
-        "Hyyatiä P",
-        "Sinclair JD"
-      ],
-      "organization": null,
-      "container": "Psychopharmacology",
-      "year": "1993",
-      "doi": "10.1007/BF02253529",
-      "pmid": "7870981",
-      "pmcid": null,
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/7870981/",
-      "degree": null,
-      "open_access": "unknown",
       "source_api": "pubmed",
       "accessed": "2026-10-04",
       "evidence_level": "B",
@@ -28372,32 +27935,6 @@
       "pmcid": null,
       "handle": null,
       "url": "https://pubmed.ncbi.nlm.nih.gov/10408106/",
-      "degree": null,
-      "open_access": "unknown",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
-      "research_id": "RS-f7c1c66f22fa",
-      "kind": "journal_article",
-      "title": "Detection of cocaine and benzoylecgonine in formalin fixed rat tissues",
-      "authors": [
-        "Hilal A",
-        "Dağlioğlu N",
-        "Battal D",
-        "Yener F",
-        "Dağlioğlu K"
-      ],
-      "organization": null,
-      "container": "Toxicology mechanisms and methods",
-      "year": "2009",
-      "doi": "10.1080/15376510903147132",
-      "pmid": "19778243",
-      "pmcid": null,
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/19778243/",
       "degree": null,
       "open_access": "unknown",
       "source_api": "pubmed",
@@ -29512,35 +29049,6 @@
       "review_status": "NEEDS_REVIEW"
     },
     {
-      "research_id": "RS-ed5cd11d516a",
-      "kind": "journal_article",
-      "title": "Effects of Chronic Ephedrine Toxicity on Functional Connections, Cell Apoptosis, and CREB-Related Proteins in the Prefrontal Cortex of Rhesus Monkeys",
-      "authors": [
-        "Duan S",
-        "Ma Y",
-        "Xie L",
-        "Zheng L",
-        "Huang J",
-        "Guo R",
-        "Sun Z",
-        "Xie Y"
-      ],
-      "organization": null,
-      "container": "Neurotoxicity research",
-      "year": "2020",
-      "doi": "10.1007/s12640-019-00146-3",
-      "pmid": "31858422",
-      "pmcid": null,
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/31858422/",
-      "degree": null,
-      "open_access": "unknown",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
       "research_id": "RS-95fe3fdcb3c8",
       "kind": "journal_article",
       "title": "Aqueous chlorination of ephedrine: Kinetic, reaction mechanism and toxicity assessment",
@@ -29961,35 +29469,6 @@
       "review_status": "NEEDS_REVIEW"
     },
     {
-      "research_id": "RS-7cc18b29811c",
-      "kind": "journal_article",
-      "title": "The Old and the New: Cardiovascular and Respiratory Alterations Induced by Acute JWH-018 Administration Compared to Δ(9)-THC-A Preclinical Study in Mice",
-      "authors": [
-        "Marchetti B",
-        "Bilel S",
-        "Tirri M",
-        "Arfè R",
-        "Corli G",
-        "Roda E",
-        "Locatelli CA",
-        "Cavarretta E"
-      ],
-      "organization": null,
-      "container": "International journal of molecular sciences",
-      "year": "2023",
-      "doi": "10.3390/ijms24021631",
-      "pmid": "36675144",
-      "pmcid": "PMC9865969",
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36675144/",
-      "degree": null,
-      "open_access": "pmc",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
       "research_id": "RS-0fdca4f195c6",
       "kind": "journal_article",
       "title": "The synthetic cannabinoid JWH-018 modulates Saccharomyces cerevisiae energetic metabolism",
@@ -30040,35 +29519,6 @@
       "pmcid": "PMC9110546",
       "handle": null,
       "url": "https://pubmed.ncbi.nlm.nih.gov/33501595/",
-      "degree": null,
-      "open_access": "pmc",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
-      "research_id": "RS-a55d7cef3920",
-      "kind": "journal_article",
-      "title": "In Vivo Bio-Activation of JWH-175 to JWH-018: Pharmacodynamic and Pharmacokinetic Studies in Mice",
-      "authors": [
-        "Tirri M",
-        "Arfè R",
-        "Bilel S",
-        "Corli G",
-        "Marchetti B",
-        "Fantinati A",
-        "Vincenzi F",
-        "De-Giorgio F"
-      ],
-      "organization": null,
-      "container": "International journal of molecular sciences",
-      "year": "2022",
-      "doi": "10.3390/ijms23148030",
-      "pmid": "35887377",
-      "pmcid": "PMC9318133",
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35887377/",
       "degree": null,
       "open_access": "pmc",
       "source_api": "pubmed",
@@ -30151,35 +29601,6 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/35985137/",
       "degree": null,
       "open_access": "unknown",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
-      "research_id": "RS-a4e7e6a95768",
-      "kind": "journal_article",
-      "title": "Differential cannabinoid-like effects and pharmacokinetics of ADB-BICA, ADB-BINACA, ADB-4en-PINACA and MDMB-4en-PINACA in mice: A comparative study",
-      "authors": [
-        "Zhou F",
-        "Wang X",
-        "Tan S",
-        "Shi Y",
-        "Xie B",
-        "Xiang P",
-        "Cong B",
-        "Ma C"
-      ],
-      "organization": null,
-      "container": "Addiction biology",
-      "year": "2024",
-      "doi": "10.1111/adb.13372",
-      "pmid": "38380735",
-      "pmcid": "PMC10898835",
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38380735/",
-      "degree": null,
-      "open_access": "pmc",
       "source_api": "pubmed",
       "accessed": "2026-10-04",
       "evidence_level": "B",
@@ -30870,35 +30291,6 @@
       "review_status": "NEEDS_REVIEW"
     },
     {
-      "research_id": "RS-bcb670bd4495",
-      "kind": "journal_article",
-      "title": "Acute pharmacological profile of 2C-B-Fly-NBOMe in male Wistar rats-pharmacokinetics, effects on behaviour and thermoregulation",
-      "authors": [
-        "Syrová K",
-        "Šíchová K",
-        "Danda H",
-        "Lhotková E",
-        "Jorratt P",
-        "Pinterová-Leca N",
-        "Vejmola Č",
-        "Olejníková-Ladislavová L"
-      ],
-      "organization": null,
-      "container": "Frontiers in pharmacology",
-      "year": "2023",
-      "doi": "10.3389/fphar.2023.1120419",
-      "pmid": "36969854",
-      "pmcid": "PMC10033663",
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36969854/",
-      "degree": null,
-      "open_access": "pmc",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
       "research_id": "RS-6b1e4b329ec3",
       "kind": "case_report",
       "title": "Alprazolam-related hepatotoxicity",
@@ -30941,33 +30333,6 @@
       "pmcid": null,
       "handle": null,
       "url": "https://pubmed.ncbi.nlm.nih.gov/32413536/",
-      "degree": null,
-      "open_access": "unknown",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
-      "research_id": "RS-ce017444992e",
-      "kind": "journal_article",
-      "title": "Post-mortem Redistribution of Alprazolam in Rats",
-      "authors": [
-        "Hořínková J",
-        "Kozlík P",
-        "Křížek T",
-        "Michaličková D",
-        "Šíma M",
-        "Slanař O"
-      ],
-      "organization": null,
-      "container": "Prague medical report",
-      "year": "2020",
-      "doi": "10.14712/23362936.2020.21",
-      "pmid": "33270012",
-      "pmcid": null,
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33270012/",
       "degree": null,
       "open_access": "unknown",
       "source_api": "pubmed",
@@ -31713,33 +31078,6 @@
       "source_api": "pubmed",
       "accessed": "2026-10-04",
       "evidence_level": "C",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
-      "research_id": "RS-f696352379e3",
-      "kind": "journal_article",
-      "title": "Cannabidiol reduces soman-induced lethality and seizure severity in female plasma carboxylesterase knockout mice treated with midazolam",
-      "authors": [
-        "Kundrick ER",
-        "Marrero-Rosado BM",
-        "de Araujo Furtado M",
-        "Stone M",
-        "Schultz CR",
-        "Lumley LA"
-      ],
-      "organization": null,
-      "container": "Neurotoxicology",
-      "year": "2021",
-      "doi": "10.1016/j.neuro.2020.12.002",
-      "pmid": "33290784",
-      "pmcid": "PMC7856212",
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33290784/",
-      "degree": null,
-      "open_access": "pmc",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
       "review_status": "NEEDS_REVIEW"
     },
     {
@@ -33467,28 +32805,6 @@
       "review_status": "NEEDS_REVIEW"
     },
     {
-      "research_id": "RS-4e3e3300636a",
-      "kind": "journal_article",
-      "title": "Vinpocetine attenuates fluoxetine-induced liver damage in rats; Role of Nrf2 and PPAR-γ",
-      "authors": [
-        "Mohamed Kamel GA"
-      ],
-      "organization": null,
-      "container": "Human & experimental toxicology",
-      "year": "2021",
-      "doi": "10.1177/09603271211051597",
-      "pmid": "34669537",
-      "pmcid": null,
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/34669537/",
-      "degree": null,
-      "open_access": "unknown",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
       "research_id": "RS-c7cbbf3f8a54",
       "kind": "journal_article",
       "title": "Measuring Ambulation, Motor, and Behavioral Outcomes with Post-stroke Fluoxetine in Tanzania: The Phase II MAMBO Trial",
@@ -34273,33 +33589,6 @@
       "review_status": "NEEDS_REVIEW"
     },
     {
-      "research_id": "RS-c4a0b76bb20e",
-      "kind": "journal_article",
-      "title": "Protective role of endocannabinoid signaling in an animal model of haloperidol-induced tardive dyskinesia",
-      "authors": [
-        "Röpke J",
-        "Ferreira-Vieira TH",
-        "Iglesias LP",
-        "Asth L",
-        "Ribeiro FM",
-        "Moreira FA"
-      ],
-      "organization": null,
-      "container": "Pharmacology, biochemistry, and behavior",
-      "year": "2021",
-      "doi": "10.1016/j.pbb.2021.173193",
-      "pmid": "33933537",
-      "pmcid": null,
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33933537/",
-      "degree": null,
-      "open_access": "unknown",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
       "research_id": "RS-9e71192b7d2d",
       "kind": "journal_article",
       "title": "Risperidone: rhabdomyolysis",
@@ -34467,34 +33756,6 @@
       "source_api": "pubmed",
       "accessed": "2026-10-04",
       "evidence_level": "C",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
-      "research_id": "RS-0fe4d403ebee",
-      "kind": "journal_article",
-      "title": "Agmatine protection against chlorpromazine-induced forebrain cortex injury in rats",
-      "authors": [
-        "Dejanovic B",
-        "Stevanovic I",
-        "Ninkovic M",
-        "Stojanovic I",
-        "Lavrnja I",
-        "Radicevic T",
-        "Pavlovic M"
-      ],
-      "organization": null,
-      "container": "Journal of veterinary science",
-      "year": "2016",
-      "doi": "10.4142/jvs.2016.17.1.53",
-      "pmid": "27051340",
-      "pmcid": "PMC4808644",
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/27051340/",
-      "degree": null,
-      "open_access": "pmc",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
       "review_status": "NEEDS_REVIEW"
     },
     {
@@ -36173,35 +35434,6 @@
       "review_status": "NEEDS_REVIEW"
     },
     {
-      "research_id": "RS-78c1b4b646e0",
-      "kind": "journal_article",
-      "title": "Levamisole, a cocaine cutting agent, induces acute and subchronic systemic alterations in Wistar rats",
-      "authors": [
-        "Laurentino AOM",
-        "Solómon J",
-        "Tonietto BD",
-        "Cestonaro LV",
-        "Dos Santos NG",
-        "Piton YV",
-        "Izolan L",
-        "Marques D"
-      ],
-      "organization": null,
-      "container": "Toxicology and applied pharmacology",
-      "year": "2021",
-      "doi": "10.1016/j.taap.2021.115649",
-      "pmid": "34273407",
-      "pmcid": null,
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/34273407/",
-      "degree": null,
-      "open_access": "unknown",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
       "research_id": "RS-71665c88de17",
       "kind": "review",
       "title": "Cocaine-levamisole thrombotic vasculopathy",
@@ -36247,31 +35479,6 @@
       "review_status": "NEEDS_REVIEW"
     },
     {
-      "research_id": "RS-2214420d5136",
-      "kind": "meta_analysis",
-      "title": "Impact of chlorpyrifos on blood glucose concentration in an animal model: a systematic review and meta-analysis",
-      "authors": [
-        "Farkhondeh T",
-        "Amirabadizadeh A",
-        "Samarghandian S",
-        "Mehrpour O"
-      ],
-      "organization": null,
-      "container": "Environmental science and pollution research international",
-      "year": "2020",
-      "doi": "10.1007/s11356-019-07229-w",
-      "pmid": "31848960",
-      "pmcid": null,
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/31848960/",
-      "degree": null,
-      "open_access": "unknown",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "A",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
       "research_id": "RS-13b129796ba3",
       "kind": "journal_article",
       "title": "Early embryonic exposure to chlorpyrifos-cypermethrin combination induces pattern deficits in the heart of domestic hen",
@@ -36292,31 +35499,6 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/33270332/",
       "degree": null,
       "open_access": "unknown",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
-      "research_id": "RS-9eea37388008",
-      "kind": "journal_article",
-      "title": "Comparative effects of chlorpyrifos in wild type and cannabinoid Cb1 receptor knockout mice",
-      "authors": [
-        "Baireddy P",
-        "Liu J",
-        "Hinsdale M",
-        "Pope C"
-      ],
-      "organization": null,
-      "container": "Toxicology and applied pharmacology",
-      "year": "2011",
-      "doi": "10.1016/j.taap.2011.05.018",
-      "pmid": "21672545",
-      "pmcid": "PMC3205254",
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/21672545/",
-      "degree": null,
-      "open_access": "pmc",
       "source_api": "pubmed",
       "accessed": "2026-10-04",
       "evidence_level": "B",
@@ -36938,33 +36120,6 @@
       "review_status": "NEEDS_REVIEW"
     },
     {
-      "research_id": "RS-0d2601ffc90e",
-      "kind": "journal_article",
-      "title": "Intentional Carbofuran poisoning in 7 dogs",
-      "authors": [
-        "Pivariu D",
-        "Oros AN",
-        "Tabaran F",
-        "Gal A",
-        "Martonos C",
-        "Nagy AL"
-      ],
-      "organization": null,
-      "container": "BMC veterinary research",
-      "year": "2020",
-      "doi": "10.1186/s12917-020-02534-w",
-      "pmid": "32867767",
-      "pmcid": "PMC7457768",
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/32867767/",
-      "degree": null,
-      "open_access": "pmc",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
       "research_id": "RS-991154fe711d",
       "kind": "journal_article",
       "title": "Carbofuran-induced alterations (in vivo) in high-energy phosphates, creatine kinase (CK) and CK isoenzymes",
@@ -37037,79 +36192,6 @@
       "pmcid": null,
       "handle": null,
       "url": "https://pubmed.ncbi.nlm.nih.gov/11291736/",
-      "degree": null,
-      "open_access": "unknown",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
-      "research_id": "RS-6eaaae579edb",
-      "kind": "journal_article",
-      "title": "Organoleptic assessment and median lethal dose determination of oral aldicarb in rats",
-      "authors": [
-        "Rice NC",
-        "Rauscher NA",
-        "Moffett MC",
-        "Myers TM"
-      ],
-      "organization": null,
-      "container": "Annals of the New York Academy of Sciences",
-      "year": "2020",
-      "doi": "10.1111/nyas.14448",
-      "pmid": "32761625",
-      "pmcid": "PMC7708594",
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/32761625/",
-      "degree": null,
-      "open_access": "pmc",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
-      "research_id": "RS-94e13befb0fc",
-      "kind": "review",
-      "title": "Treatment rationale for dogs poisoned with aldicarb (carbamate pesticide)",
-      "authors": [
-        "Arnot LF",
-        "Veale DJ",
-        "Steyl JC",
-        "Myburgh JG"
-      ],
-      "organization": null,
-      "container": "Journal of the South African Veterinary Association",
-      "year": "2011",
-      "doi": "10.4102/jsava.v82i4.80",
-      "pmid": "22616438",
-      "pmcid": null,
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/22616438/",
-      "degree": null,
-      "open_access": "unknown",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "C",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
-      "research_id": "RS-078b708fd02a",
-      "kind": "journal_article",
-      "title": "Acute aldicarb toxicity in dogs: 15 cases (2001-2009)",
-      "authors": [
-        "Anastasio JD",
-        "Sharp CR"
-      ],
-      "organization": null,
-      "container": "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)",
-      "year": "2011",
-      "doi": "10.1111/j.1476-4431.2011.00613.x",
-      "pmid": "21631711",
-      "pmcid": null,
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/21631711/",
       "degree": null,
       "open_access": "unknown",
       "source_api": "pubmed",
@@ -37246,30 +36328,6 @@
       "review_status": "NEEDS_REVIEW"
     },
     {
-      "research_id": "RS-315d9e3104a9",
-      "kind": "journal_article",
-      "title": "LC-MS-MS Analysis of Brodifacoum Isomers in Rat Tissue",
-      "authors": [
-        "Hauck ZZ",
-        "Feinstein DL",
-        "van Breemen RB"
-      ],
-      "organization": null,
-      "container": "Journal of analytical toxicology",
-      "year": "2016",
-      "doi": "10.1093/jat/bkw008",
-      "pmid": "26912564",
-      "pmcid": "PMC4834430",
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/26912564/",
-      "degree": null,
-      "open_access": "pmc",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
       "research_id": "RS-4d108ae332b7",
       "kind": "case_report",
       "title": "Case of brodifacoum-contaminated synthetic cannabinoid",
@@ -37290,30 +36348,6 @@
       "pmcid": null,
       "handle": null,
       "url": "https://pubmed.ncbi.nlm.nih.gov/30148410/",
-      "degree": null,
-      "open_access": "unknown",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "D",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
-      "research_id": "RS-e4a59f6be18a",
-      "kind": "case_report",
-      "title": "Brodifacoum toxicosis in two horses",
-      "authors": [
-        "McConnico RS",
-        "Copedge K",
-        "Bischoff KL"
-      ],
-      "organization": null,
-      "container": "Journal of the American Veterinary Medical Association",
-      "year": "1997",
-      "doi": null,
-      "pmid": "9333092",
-      "pmcid": null,
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/9333092/",
       "degree": null,
       "open_access": "unknown",
       "source_api": "pubmed",
@@ -40593,34 +39627,6 @@
       "review_status": "NEEDS_REVIEW"
     },
     {
-      "research_id": "RS-3b0479ea736c",
-      "kind": "journal_article",
-      "title": "Compact Arterial Monitoring Device Use in Resuscitative Endovascular Balloon Occlusion of the Aorta (REBOA): A Simple Validation Study in Swine",
-      "authors": [
-        "Lussier G",
-        "Evans AJ",
-        "Houston I",
-        "Wilsnack A",
-        "Russo CM",
-        "Vietor R",
-        "Bedocs P"
-      ],
-      "organization": null,
-      "container": "Cureus",
-      "year": "2024",
-      "doi": "10.7759/cureus.70789",
-      "pmid": "39493181",
-      "pmcid": "PMC11531354",
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39493181/",
-      "degree": null,
-      "open_access": "pmc",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
       "research_id": "RS-9e7280ecb6fb",
       "kind": "journal_article",
       "title": "Non-Cardiac Cause of Death in Selected Group Children with Cardiac Pathology: A Retrospective Single Institute Study",
@@ -41424,31 +40430,6 @@
       "review_status": "NEEDS_REVIEW"
     },
     {
-      "research_id": "RS-e7ca804cda05",
-      "kind": "journal_article",
-      "title": "Why are Wischnewski spots not always present in lethal hypothermia? The results of testing a stress-reduced animal model",
-      "authors": [
-        "Bright F",
-        "Winskog C",
-        "Walker M",
-        "Byard RW"
-      ],
-      "organization": null,
-      "container": "Journal of forensic and legal medicine",
-      "year": "2013",
-      "doi": "10.1016/j.jflm.2013.05.003",
-      "pmid": "23910881",
-      "pmcid": null,
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/23910881/",
-      "degree": null,
-      "open_access": "unknown",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
       "research_id": "RS-b04271bc0157",
       "kind": "review",
       "title": "Hyperthermia and postmortem biochemical investigations",
@@ -42134,55 +41115,6 @@
       "review_status": "NEEDS_REVIEW"
     },
     {
-      "research_id": "RS-f0d90241b73e",
-      "kind": "journal_article",
-      "title": "Effects of autolysis and prolonged formalin fixation on histomorphology and immunohistochemistry of normal canine brain tissue: an experimental study",
-      "authors": [
-        "Koehler JW",
-        "Miller AD",
-        "Rissi DR"
-      ],
-      "organization": null,
-      "container": "Journal of veterinary diagnostic investigation : official publication of the American Association of Veterinary Laboratory Diagnosticians, Inc",
-      "year": "2024",
-      "doi": "10.1177/10406387231220649",
-      "pmid": "38212877",
-      "pmcid": "PMC10929626",
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38212877/",
-      "degree": null,
-      "open_access": "pmc",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
-      "research_id": "RS-b4f24ae69d29",
-      "kind": "journal_article",
-      "title": "An In Vitro Approach to Evaluate the Impact of Autolysis and Formalin Fixation on the Detection of Canine Distemper Virus and Innate Immune Response Antigens",
-      "authors": [
-        "Gerhards H",
-        "Rohn K",
-        "Puff C",
-        "Baumgärtner W"
-      ],
-      "organization": null,
-      "container": "Viruses",
-      "year": "2025",
-      "doi": "10.3390/v17121575",
-      "pmid": "41472246",
-      "pmcid": "PMC12737447",
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41472246/",
-      "degree": null,
-      "open_access": "pmc",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
       "research_id": "RS-7e8f88fdc315",
       "kind": "journal_article",
       "title": "Chromatin immunoprecipitation in postmortem brain",
@@ -42799,31 +41731,6 @@
       "review_status": "NEEDS_REVIEW"
     },
     {
-      "research_id": "RS-1cf3e6022af3",
-      "kind": "journal_article",
-      "title": "Postmortem Analysis of Vitreous Urea Nitrogen, Creatinine, and Magnesium of Renal and Post-Renal Disease in Cats",
-      "authors": [
-        "Stern AW",
-        "Roig D",
-        "Valerio C",
-        "Denagamage T"
-      ],
-      "organization": null,
-      "container": "Toxics",
-      "year": "2023",
-      "doi": "10.3390/toxics11080685",
-      "pmid": "37624190",
-      "pmcid": "PMC10458759",
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/37624190/",
-      "degree": null,
-      "open_access": "pmc",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
       "research_id": "RS-6d7a30bc3fea",
       "kind": "journal_article",
       "title": "Urea nitrogen, creatinine, and uric acid levels in postmortem serum, vitreous humor, and pericardial fluid",
@@ -42893,31 +41800,6 @@
       "pmcid": null,
       "handle": null,
       "url": "https://pubmed.ncbi.nlm.nih.gov/19167848/",
-      "degree": null,
-      "open_access": "unknown",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
-      "research_id": "RS-2b53f54e177a",
-      "kind": "journal_article",
-      "title": "Changes of 1, 5-AG in Vitreous Humor of Rabbit Cadavers with Hyperglycemic Metabolism",
-      "authors": [
-        "Liu FF",
-        "Wu H",
-        "Wang W",
-        "Xie Y"
-      ],
-      "organization": null,
-      "container": "Fa yi xue za zhi",
-      "year": "2023",
-      "doi": "10.12116/j.issn.1004-5619.2021.410403",
-      "pmid": "37038850",
-      "pmcid": null,
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/37038850/",
       "degree": null,
       "open_access": "unknown",
       "source_api": "pubmed",
@@ -43620,34 +42502,6 @@
       "review_status": "NEEDS_REVIEW"
     },
     {
-      "research_id": "RS-3ddb93beccce",
-      "kind": "journal_article",
-      "title": "The effect of sodium fluoride preservative and storage temperature on the stability of cocaine in horse blood, sheep vitreous and deer muscle",
-      "authors": [
-        "Rees KA",
-        "Jones NS",
-        "McLaughlin PA",
-        "Seulin S",
-        "Leyton V",
-        "Yonamine M",
-        "Osselton MD"
-      ],
-      "organization": null,
-      "container": "Forensic science international",
-      "year": "2012",
-      "doi": "10.1016/j.forsciint.2011.11.001",
-      "pmid": "22185825",
-      "pmcid": null,
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/22185825/",
-      "degree": null,
-      "open_access": "unknown",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
       "research_id": "RS-a5b048c97857",
       "kind": "journal_article",
       "title": "Improved long-term stability of blood cocaine in evacuated collection tubes",
@@ -43665,31 +42519,6 @@
       "pmcid": null,
       "handle": null,
       "url": "https://pubmed.ncbi.nlm.nih.gov/8355007/",
-      "degree": null,
-      "open_access": "unknown",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
-      "research_id": "RS-6c9d4ad84c66",
-      "kind": "journal_article",
-      "title": "The effect of sodium fluoride preservative and storage temperature on the stability of 6-acetylmorphine in horse blood, sheep vitreous and deer muscle",
-      "authors": [
-        "Rees KA",
-        "Jones NS",
-        "McLaughlin PA",
-        "Osselton MD"
-      ],
-      "organization": null,
-      "container": "Forensic science international",
-      "year": "2012",
-      "doi": "10.1016/j.forsciint.2011.11.002",
-      "pmid": "22185827",
-      "pmcid": null,
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/22185827/",
       "degree": null,
       "open_access": "unknown",
       "source_api": "pubmed",
@@ -47104,12 +45933,6 @@
       "basis": "C-MORPHINE-ANALYTICAL_METHOD-P5"
     },
     {
-      "from": "codeine",
-      "to": "method-lcmsms",
-      "relation": "analysed_by",
-      "basis": "C-CODEINE-ANALYTICAL_METHOD-P5"
-    },
-    {
       "from": "heroin",
       "to": "codeine",
       "relation": "metabolism_co_mention",
@@ -47228,12 +46051,6 @@
       "to": "acetylfentanyl",
       "relation": "metabolism_co_mention",
       "basis": "C-FURANYLFENTANYL-METABOLISM_NOTE-P5"
-    },
-    {
-      "from": "furanylfentanyl",
-      "to": "method-lcmsms",
-      "relation": "analysed_by",
-      "basis": "C-FURANYLFENTANYL-ANALYTICAL_METHOD-P5"
     },
     {
       "from": "sufentanil",
@@ -47422,12 +46239,6 @@
       "basis": "C-PSILOCYBIN-ANALYTICAL_METHOD-P5"
     },
     {
-      "from": "ghb",
-      "to": "method-lcmsms",
-      "relation": "analysed_by",
-      "basis": "C-GHB-ANALYTICAL_METHOD-P5"
-    },
-    {
       "from": "2c-b",
       "to": "method-hrms",
       "relation": "analysed_by",
@@ -47552,12 +46363,6 @@
       "to": "method-lcmsms",
       "relation": "analysed_by",
       "basis": "C-FLUNITRAZEPAM-ANALYTICAL_METHOD-P5"
-    },
-    {
-      "from": "flualprazolam",
-      "to": "method-lcmsms",
-      "relation": "analysed_by",
-      "basis": "C-FLUALPRAZOLAM-ANALYTICAL_METHOD-P5"
     },
     {
       "from": "zolpidem",
@@ -48287,12 +47092,6 @@
     },
     {
       "from": "phosphine",
-      "to": "RS-1b3f96c36d6a",
-      "relation": "research",
-      "basis": "RS-1b3f96c36d6a"
-    },
-    {
-      "from": "phosphine",
       "to": "RS-88820a52dd6d",
       "relation": "research",
       "basis": "RS-88820a52dd6d"
@@ -48479,12 +47278,6 @@
     },
     {
       "from": "oxycodone",
-      "to": "RS-dfcefd4cb1b3",
-      "relation": "research",
-      "basis": "RS-dfcefd4cb1b3"
-    },
-    {
-      "from": "oxycodone",
       "to": "RS-be3305a1e30e",
       "relation": "research",
       "basis": "RS-be3305a1e30e"
@@ -48494,12 +47287,6 @@
       "to": "RS-f8a41ea41821",
       "relation": "research",
       "basis": "RS-f8a41ea41821"
-    },
-    {
-      "from": "oxycodone",
-      "to": "RS-71c3a105a9ca",
-      "relation": "research",
-      "basis": "RS-71c3a105a9ca"
     },
     {
       "from": "oxymorphone",
@@ -48640,12 +47427,6 @@
       "basis": "RS-4f1006a7a7c2"
     },
     {
-      "from": "fentanyl",
-      "to": "RS-c6ccf5c02df0",
-      "relation": "research",
-      "basis": "RS-c6ccf5c02df0"
-    },
-    {
       "from": "norfentanyl",
       "to": "RS-d908490973e9",
       "relation": "research",
@@ -48662,12 +47443,6 @@
       "to": "RS-16972bf33f80",
       "relation": "research",
       "basis": "RS-16972bf33f80"
-    },
-    {
-      "from": "norfentanyl",
-      "to": "RS-cf63afebe589",
-      "relation": "research",
-      "basis": "RS-cf63afebe589"
     },
     {
       "from": "carfentanil",
@@ -48718,12 +47493,6 @@
       "basis": "RS-e2066f6c2763"
     },
     {
-      "from": "acetylfentanyl",
-      "to": "RS-5447482451c0",
-      "relation": "research",
-      "basis": "RS-5447482451c0"
-    },
-    {
       "from": "furanylfentanyl",
       "to": "RS-f17eed69a04c",
       "relation": "research",
@@ -48740,18 +47509,6 @@
       "to": "RS-3a638edbf496",
       "relation": "research",
       "basis": "RS-3a638edbf496"
-    },
-    {
-      "from": "sufentanil",
-      "to": "RS-8428cdbe2712",
-      "relation": "research",
-      "basis": "RS-8428cdbe2712"
-    },
-    {
-      "from": "sufentanil",
-      "to": "RS-408842d23b2d",
-      "relation": "research",
-      "basis": "RS-408842d23b2d"
     },
     {
       "from": "sufentanil",
@@ -48806,12 +47563,6 @@
       "to": "RS-9ad26359e2d9",
       "relation": "research",
       "basis": "RS-9ad26359e2d9"
-    },
-    {
-      "from": "isotonitazene",
-      "to": "RS-5e17edf86e9f",
-      "relation": "research",
-      "basis": "RS-5e17edf86e9f"
     },
     {
       "from": "metonitazene",
@@ -48878,12 +47629,6 @@
       "to": "RS-5c019591cf22",
       "relation": "research",
       "basis": "RS-5c019591cf22"
-    },
-    {
-      "from": "etonitazene",
-      "to": "RS-fb1d9fa7172f",
-      "relation": "research",
-      "basis": "RS-fb1d9fa7172f"
     },
     {
       "from": "etonitazepyne",
@@ -49004,12 +47749,6 @@
       "to": "RS-0518843a6153",
       "relation": "research",
       "basis": "RS-0518843a6153"
-    },
-    {
-      "from": "benzoylecgonine",
-      "to": "RS-f7c1c66f22fa",
-      "relation": "research",
-      "basis": "RS-f7c1c66f22fa"
     },
     {
       "from": "cocaethylene",
@@ -49289,12 +48028,6 @@
     },
     {
       "from": "ephedrine",
-      "to": "RS-ed5cd11d516a",
-      "relation": "research",
-      "basis": "RS-ed5cd11d516a"
-    },
-    {
-      "from": "ephedrine",
       "to": "RS-95fe3fdcb3c8",
       "relation": "research",
       "basis": "RS-95fe3fdcb3c8"
@@ -49397,12 +48130,6 @@
     },
     {
       "from": "jwh-018",
-      "to": "RS-7cc18b29811c",
-      "relation": "research",
-      "basis": "RS-7cc18b29811c"
-    },
-    {
-      "from": "jwh-018",
       "to": "RS-0fdca4f195c6",
       "relation": "research",
       "basis": "RS-0fdca4f195c6"
@@ -49412,12 +48139,6 @@
       "to": "RS-aef2fde6b926",
       "relation": "research",
       "basis": "RS-aef2fde6b926"
-    },
-    {
-      "from": "jwh-018",
-      "to": "RS-a55d7cef3920",
-      "relation": "research",
-      "basis": "RS-a55d7cef3920"
     },
     {
       "from": "mdmb-4en-pinaca",
@@ -49436,12 +48157,6 @@
       "to": "RS-351dcf17e1a3",
       "relation": "research",
       "basis": "RS-351dcf17e1a3"
-    },
-    {
-      "from": "mdmb-4en-pinaca",
-      "to": "RS-a4e7e6a95768",
-      "relation": "research",
-      "basis": "RS-a4e7e6a95768"
     },
     {
       "from": "adb-butinaca",
@@ -49606,12 +48321,6 @@
       "basis": "RS-a9e7da360d05"
     },
     {
-      "from": "2c-b",
-      "to": "RS-bcb670bd4495",
-      "relation": "research",
-      "basis": "RS-bcb670bd4495"
-    },
-    {
       "from": "alprazolam",
       "to": "RS-6b1e4b329ec3",
       "relation": "research",
@@ -49622,12 +48331,6 @@
       "to": "RS-36f7e64c39be",
       "relation": "research",
       "basis": "RS-36f7e64c39be"
-    },
-    {
-      "from": "alprazolam",
-      "to": "RS-ce017444992e",
-      "relation": "research",
-      "basis": "RS-ce017444992e"
     },
     {
       "from": "alprazolam",
@@ -49814,12 +48517,6 @@
       "to": "RS-bf6ea59f25ab",
       "relation": "research",
       "basis": "RS-bf6ea59f25ab"
-    },
-    {
-      "from": "midazolam",
-      "to": "RS-f696352379e3",
-      "relation": "research",
-      "basis": "RS-f696352379e3"
     },
     {
       "from": "midazolam",
@@ -50243,12 +48940,6 @@
     },
     {
       "from": "fluoxetine",
-      "to": "RS-4e3e3300636a",
-      "relation": "research",
-      "basis": "RS-4e3e3300636a"
-    },
-    {
-      "from": "fluoxetine",
       "to": "RS-c7cbbf3f8a54",
       "relation": "research",
       "basis": "RS-c7cbbf3f8a54"
@@ -50446,12 +49137,6 @@
       "basis": "RS-953d6c4732c8"
     },
     {
-      "from": "haloperidol",
-      "to": "RS-c4a0b76bb20e",
-      "relation": "research",
-      "basis": "RS-c4a0b76bb20e"
-    },
-    {
       "from": "risperidone",
       "to": "RS-9e71192b7d2d",
       "relation": "research",
@@ -50492,12 +49177,6 @@
       "to": "RS-d3fc58229f4d",
       "relation": "research",
       "basis": "RS-d3fc58229f4d"
-    },
-    {
-      "from": "chlorpromazine",
-      "to": "RS-0fe4d403ebee",
-      "relation": "research",
-      "basis": "RS-0fe4d403ebee"
     },
     {
       "from": "carbamazepine",
@@ -50927,12 +49606,6 @@
     },
     {
       "from": "levamisole",
-      "to": "RS-78c1b4b646e0",
-      "relation": "research",
-      "basis": "RS-78c1b4b646e0"
-    },
-    {
-      "from": "levamisole",
       "to": "RS-71665c88de17",
       "relation": "research",
       "basis": "RS-71665c88de17"
@@ -50945,21 +49618,9 @@
     },
     {
       "from": "chlorpyrifos",
-      "to": "RS-2214420d5136",
-      "relation": "research",
-      "basis": "RS-2214420d5136"
-    },
-    {
-      "from": "chlorpyrifos",
       "to": "RS-13b129796ba3",
       "relation": "research",
       "basis": "RS-13b129796ba3"
-    },
-    {
-      "from": "chlorpyrifos",
-      "to": "RS-9eea37388008",
-      "relation": "research",
-      "basis": "RS-9eea37388008"
     },
     {
       "from": "aluminium-phosphide",
@@ -51113,12 +49774,6 @@
     },
     {
       "from": "carbofuran",
-      "to": "RS-0d2601ffc90e",
-      "relation": "research",
-      "basis": "RS-0d2601ffc90e"
-    },
-    {
-      "from": "carbofuran",
       "to": "RS-991154fe711d",
       "relation": "research",
       "basis": "RS-991154fe711d"
@@ -51134,24 +49789,6 @@
       "to": "RS-8a64d83ecdd6",
       "relation": "research",
       "basis": "RS-8a64d83ecdd6"
-    },
-    {
-      "from": "aldicarb",
-      "to": "RS-6eaaae579edb",
-      "relation": "research",
-      "basis": "RS-6eaaae579edb"
-    },
-    {
-      "from": "aldicarb",
-      "to": "RS-94e13befb0fc",
-      "relation": "research",
-      "basis": "RS-94e13befb0fc"
-    },
-    {
-      "from": "aldicarb",
-      "to": "RS-078b708fd02a",
-      "relation": "research",
-      "basis": "RS-078b708fd02a"
     },
     {
       "from": "strychnine",
@@ -51185,21 +49822,9 @@
     },
     {
       "from": "brodifacoum",
-      "to": "RS-315d9e3104a9",
-      "relation": "research",
-      "basis": "RS-315d9e3104a9"
-    },
-    {
-      "from": "brodifacoum",
       "to": "RS-4d108ae332b7",
       "relation": "research",
       "basis": "RS-4d108ae332b7"
-    },
-    {
-      "from": "brodifacoum",
-      "to": "RS-e4a59f6be18a",
-      "relation": "research",
-      "basis": "RS-e4a59f6be18a"
     },
     {
       "from": "arsenic-trioxide",
@@ -51892,12 +50517,6 @@
       "basis": "RS-84ae4c891055"
     },
     {
-      "from": "fm-hypothermia",
-      "to": "RS-e7ca804cda05",
-      "relation": "research",
-      "basis": "RS-e7ca804cda05"
-    },
-    {
       "from": "fm-anthropology",
       "to": "RS-fb76e01683b3",
       "relation": "research",
@@ -51986,18 +50605,6 @@
       "to": "RS-5ecb09e2aa59",
       "relation": "research",
       "basis": "RS-5ecb09e2aa59"
-    },
-    {
-      "from": "his-fixation",
-      "to": "RS-f0d90241b73e",
-      "relation": "research",
-      "basis": "RS-f0d90241b73e"
-    },
-    {
-      "from": "his-fixation",
-      "to": "RS-b4f24ae69d29",
-      "relation": "research",
-      "basis": "RS-b4f24ae69d29"
     },
     {
       "from": "his-fixation",
@@ -52103,12 +50710,6 @@
     },
     {
       "from": "bio-vitreous-urea-creatinine",
-      "to": "RS-1cf3e6022af3",
-      "relation": "research",
-      "basis": "RS-1cf3e6022af3"
-    },
-    {
-      "from": "bio-vitreous-urea-creatinine",
       "to": "RS-6d7a30bc3fea",
       "relation": "research",
       "basis": "RS-6d7a30bc3fea"
@@ -52124,12 +50725,6 @@
       "to": "RS-dbb470281f80",
       "relation": "research",
       "basis": "RS-dbb470281f80"
-    },
-    {
-      "from": "bio-vitreous-glucose",
-      "to": "RS-2b53f54e177a",
-      "relation": "research",
-      "basis": "RS-2b53f54e177a"
     },
     {
       "from": "bio-bhb-ketoacidosis",
@@ -52289,21 +50884,9 @@
     },
     {
       "from": "bio-cocaine-stability",
-      "to": "RS-3ddb93beccce",
-      "relation": "research",
-      "basis": "RS-3ddb93beccce"
-    },
-    {
-      "from": "bio-cocaine-stability",
       "to": "RS-a5b048c97857",
       "relation": "research",
       "basis": "RS-a5b048c97857"
-    },
-    {
-      "from": "bio-cocaine-stability",
-      "to": "RS-6c9d4ad84c66",
-      "relation": "research",
-      "basis": "RS-6c9d4ad84c66"
     },
     {
       "from": "bio-temperature-effect",

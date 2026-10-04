@@ -165,6 +165,14 @@ class AreaHubScreen extends ConsumerWidget {
     } else {
       children.addAll([
         const SizedBox(height: FeSpace.sm),
+        if (area == KnowledgeArea.histology) ...[
+          FeBanner(
+            key: const Key('histology.noDiagnosis'),
+            icon: Icons.biotech_outlined,
+            text: l.histologyNote,
+          ),
+          const SizedBox(height: FeSpace.sm),
+        ],
         if (topics.isEmpty)
           FeEmptyState(icon: Icons.inbox_outlined, body: l.knowledgeEmpty)
         else
@@ -174,7 +182,11 @@ class AreaHubScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(isFm ? l.moduleForensicMedicine : l.moduleBiochemistry),
+        title: Text(switch (area) {
+          KnowledgeArea.forensicMedicine => l.moduleForensicMedicine,
+          KnowledgeArea.histology => l.moduleHistology,
+          _ => l.moduleBiochemistry,
+        }),
       ),
       body: SafeArea(
         child: ListView(

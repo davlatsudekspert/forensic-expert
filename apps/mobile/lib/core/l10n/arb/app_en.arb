@@ -2436,5 +2436,157 @@
   "fieldConfirmation": "Confirmation requirement",
   "@fieldConfirmation": {
     "description": "Claim field."
+  },
+  "metaAuthors": "Authors",
+  "@metaAuthors": {
+    "description": "Research metadata label."
+  },
+  "metaContainer": "Journal / conference",
+  "@metaContainer": {
+    "description": "Research metadata label."
+  },
+  "metaInstitution": "Institution",
+  "@metaInstitution": {
+    "description": "Research metadata label."
+  },
+  "metaDegree": "Degree",
+  "@metaDegree": {
+    "description": "Research metadata label."
+  },
+  "metaYear": "Year",
+  "@metaYear": {
+    "description": "Research metadata label."
+  },
+  "metaCreator": "Creator",
+  "@metaCreator": {
+    "description": "Image metadata label."
+  },
+  "metaSource": "Source",
+  "@metaSource": {
+    "description": "Image metadata label."
+  },
+  "metaAccessed": "Accessed",
+  "@metaAccessed": {
+    "description": "Image metadata label."
+  },
+  "tech_tlc": "TLC (thin-layer chromatography)",
+  "@tech_tlc": {
+    "description": "Analytical technique name."
+  },
+  "tech_gc": "GC",
+  "@tech_gc": {
+    "description": "Analytical technique name."
+  },
+  "tech_gcFid": "GC-FID",
+  "@tech_gcFid": {
+    "description": "Analytical technique name."
+  },
+  "tech_headspaceGc": "Headspace GC",
+  "@tech_headspaceGc": {
+    "description": "Analytical technique name."
+  },
+  "tech_gcMs": "GC-MS",
+  "@tech_gcMs": {
+    "description": "Analytical technique name."
+  },
+  "tech_hplc": "HPLC",
+  "@tech_hplc": {
+    "description": "Analytical technique name."
+  },
+  "tech_lcMsMs": "LC-MS/MS",
+  "@tech_lcMsMs": {
+    "description": "Analytical technique name."
+  },
+  "tech_uvVis": "UV-Vis spectrophotometry",
+  "@tech_uvVis": {
+    "description": "Analytical technique name."
+  },
+  "tech_immunoassay": "Immunoassay",
+  "@tech_immunoassay": {
+    "description": "Analytical technique name."
+  },
+  "tech_spectroscopy": "Spectroscopy",
+  "@tech_spectroscopy": {
+    "description": "Analytical technique name."
+  },
+  "tech_samplePreparation": "Sample preparation",
+  "@tech_samplePreparation": {
+    "description": "Analytical technique name."
+  },
+  "tech_extraction": "Extraction",
+  "@tech_extraction": {
+    "description": "Analytical technique name."
+  },
+  "tech_calibration": "Calibration",
+  "@tech_calibration": {
+    "description": "Analytical technique name."
+  },
+  "tech_qualityControl": "Quality control",
+  "@tech_qualityControl": {
+    "description": "Analytical technique name."
+  },
+  "tech_validation": "Method validation",
+  "@tech_validation": {
+    "description": "Analytical technique name."
+  },
+  "tech_uncertainty": "Measurement uncertainty",
+  "@tech_uncertainty": {
+    "description": "Analytical technique name."
+  },
+  "tech_statistics": "Statistics",
+  "@tech_statistics": {
+    "description": "Analytical technique name."
+  },
+  "methodSection_purpose": "Purpose",
+  "@methodSection_purpose": {
+    "description": "Method section heading."
+  },
+  "methodSection_scope": "Scope",
+  "@methodSection_scope": {
+    "description": "Method section heading."
+  },
+  "methodSection_analytes": "Analytes",
+  "@methodSection_analytes": {
+    "description": "Method section heading."
+  },
+  "methodSection_specimens": "Specimens",
+  "@methodSection_specimens": {
+    "description": "Method section heading."
+  },
+  "methodSection_principle": "Principle",
+  "@methodSection_principle": {
+    "description": "Method section heading."
+  },
+  "methodSection_equipment": "Equipment",
+  "@methodSection_equipment": {
+    "description": "Method section heading."
+  },
+  "methodSection_reagents": "Reagents",
+  "@methodSection_reagents": {
+    "description": "Method section heading."
+  },
+  "methodSection_samplePreparation": "Sample preparation",
+  "@methodSection_samplePreparation": {
+    "description": "Method section heading."
+  },
+  "methodSection_calibrationQc": "Calibration and QC",
+  "@methodSection_calibrationQc": {
+    "description": "Method section heading."
+  },
+  "methodSection_workflow": "Workflow",
+  "@methodSection_workflow": {
+    "description": "Method section heading."
+  },
+  "methodSection_interpretation": "Interpretation",
+  "@methodSection_interpretation": {
+    "description": "Method section heading."
+  },
+  "methodSection_limitations": "Limitations",
+  "@methodSection_limitations": {
+    "description": "Method section heading."
+  },
+  "methodSection_validationStatus": "Validation status",
+  "@methodSection_validationStatus": {
+    "description": "Method section heading."
   }
 }

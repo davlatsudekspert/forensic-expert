@@ -1858,4 +1858,118 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get fieldConfirmation => 'Tasdiqlash talabi';
+
+  @override
+  String get metaAuthors => 'Mualliflar';
+
+  @override
+  String get metaContainer => 'Jurnal / konferensiya';
+
+  @override
+  String get metaInstitution => 'Muassasa';
+
+  @override
+  String get metaDegree => 'Ilmiy daraja';
+
+  @override
+  String get metaYear => 'Yil';
+
+  @override
+  String get metaCreator => 'Tasvir muallifi';
+
+  @override
+  String get metaSource => 'Manba';
+
+  @override
+  String get metaAccessed => 'Murojaat sanasi';
+
+  @override
+  String get tech_tlc => 'TLC (yupqa qatlamli xromatografiya)';
+
+  @override
+  String get tech_gc => 'GC';
+
+  @override
+  String get tech_gcFid => 'GC-FID';
+
+  @override
+  String get tech_headspaceGc => 'Headspace GC';
+
+  @override
+  String get tech_gcMs => 'GC-MS';
+
+  @override
+  String get tech_hplc => 'HPLC';
+
+  @override
+  String get tech_lcMsMs => 'LC-MS/MS';
+
+  @override
+  String get tech_uvVis => 'UV-Vis spektrofotometriya';
+
+  @override
+  String get tech_immunoassay => 'Immunoanaliz';
+
+  @override
+  String get tech_spectroscopy => 'Spektroskopiya';
+
+  @override
+  String get tech_samplePreparation => 'Namuna tayyorlash';
+
+  @override
+  String get tech_extraction => 'Ekstraksiya';
+
+  @override
+  String get tech_calibration => 'Kalibrlash';
+
+  @override
+  String get tech_qualityControl => 'Sifat nazorati';
+
+  @override
+  String get tech_validation => 'Metod validatsiyasi';
+
+  @override
+  String get tech_uncertainty => 'O‘lchash noaniqligi';
+
+  @override
+  String get tech_statistics => 'Statistika';
+
+  @override
+  String get methodSection_purpose => 'Maqsad';
+
+  @override
+  String get methodSection_scope => 'Qo‘llanish sohasi';
+
+  @override
+  String get methodSection_analytes => 'Analitlar';
+
+  @override
+  String get methodSection_specimens => 'Namunalar';
+
+  @override
+  String get methodSection_principle => 'Prinsip';
+
+  @override
+  String get methodSection_equipment => 'Jihozlar';
+
+  @override
+  String get methodSection_reagents => 'Reagentlar';
+
+  @override
+  String get methodSection_samplePreparation => 'Namuna tayyorlash';
+
+  @override
+  String get methodSection_calibrationQc => 'Kalibrlash va sifat nazorati';
+
+  @override
+  String get methodSection_workflow => 'Ish tartibi';
+
+  @override
+  String get methodSection_interpretation => 'Talqin';
+
+  @override
+  String get methodSection_limitations => 'Cheklovlar';
+
+  @override
+  String get methodSection_validationStatus => 'Validatsiya holati';
 }

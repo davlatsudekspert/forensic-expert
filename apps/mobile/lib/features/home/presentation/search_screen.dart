@@ -90,6 +90,10 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
         context.go(Routes.learn);
       case SearchGroup.standardsLaws:
         context.go(Routes.compare);
+      case SearchGroup.references
+          when ref.read(evidenceDataProvider).researchById(hit.entityId) !=
+              null:
+        context.go(Routes.researchEntry(hit.entityId));
       default:
         context.go(
           ref.read(knowledgeRepositoryProvider).byId(hit.entityId) != null

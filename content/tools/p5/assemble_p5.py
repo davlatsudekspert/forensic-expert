@@ -84,6 +84,11 @@ def src_record(c, lvl, acc):
                       "kuratsiya: phase5/curation_manual.json.")
 
 
+CONC_OR_DOSE = re.compile(
+    r"\d+(?:[.,]\d+)?\s*(?:ng|µg|μg|ug|mg|g|mmol|µmol|μmol|nmol|µM|μM|nM|mM)"
+    r"(?:\s*/\s*(?:mL|ml|L|l|dL|dl|g|kg))?\b")
+
+
 def build(existing_ids, acc):
     ident = json.load(open(P + "identity.json"))
     by_id = {s["id"]: s for s in ident}
@@ -124,7 +129,23 @@ def build(existing_ids, acc):
     # Guruh mavjud (PHASE 3) yozuvlar uchun ham — assemble_pilot o‘rnatadi.
     groups = {s["id"]: s["group"] for s in ident}
 
+    # Konsentratsiya/doza qiymatli jumla faqat «Reported concentration»
+    # bo‘limida (doimiy «threshold emas» banneri bilan) ko‘rsatiladi; boshqa
+    # maydonda bunday jumla rad etiladi. Bir xil jumla bitta yozuvda bir marta.
+    seen_sentences = {(m["substance"], m["source_sentence"]) for m in
+                      json.load(open("pilot/metabolites.verified.json")) if m.get("source_sentence")}
+    rejected = []
     for c in cur:
+        key = (c["entity"], c["sentence"])
+        if c["field"] != "reported_concentration" and CONC_OR_DOSE.search(c["sentence"]):
+            rejected.append(dict(entity=c["entity"], field=c["field"], pmcid=c["pmcid"],
+                                 reason="concentration/dose value outside reported-concentration section"))
+            continue
+        if key in seen_sentences:
+            rejected.append(dict(entity=c["entity"], field=c["field"], pmcid=c["pmcid"],
+                                 reason="duplicate sentence already shown for this entity"))
+            continue
+        seen_sentences.add(key)
         lvl = level(pts.get(c.get("pmid"), []))
         sid = f"SRC-{c['pmcid']}"
         if sid not in sources:
@@ -148,6 +169,8 @@ def build(existing_ids, acc):
             for other, rx in alias_res.items():
                 if other != c["entity"] and re.search(r"(?<![\w-])" + rx + r"(?![\w-])", c["sentence"], re.I):
                     links.append(dict(**{"from": c["entity"], "to": other, "relation": "metabolism_co_mention", "basis": cid}))
+
+    json.dump(rejected, open(P + "claims_rejected_assembly.json", "w"), ensure_ascii=False, indent=1)
 
     # INCB qoidalari (yangi moddalar; PHASE 3 dagilari mavjud qoidalar bilan).
     ctrl = json.load(open(P + "international_control.json"))
@@ -375,8 +398,18 @@ def dedup_key(r):
     return f"title:{_norm_title(r['title'])}|{first}"
 
 
+# Inson sud-tibbiy amaliyoti platformasi: hayvon / veterinariya tadqiqotlari
+# kutubxonaga kiritilmaydi (inson materiali ham tilga olinganlari bundan mustasno).
+ANIMAL_STUDY = re.compile(
+    r"\b(rats?|mice|mouse|murine|rabbits?|pigs?|piglets?|swine|porcine|dogs?|canine|cats?|feline|"
+    r"sheep|ovine|bovine|cattle|horses?|equine|zebrafish|animal model|monkeys?|primates?|"
+    r"guinea pigs?|poultry|fish|wistar|sprague)\b", re.I)
+HUMAN = re.compile(r"\bhumans?\b", re.I)
+
+
 def build_research(known_entities):
-    merged, stats = {}, {"input": 0, "duplicates": 0}
+    merged, stats = {}, {"input": 0, "duplicates": 0, "rejected_animal": 0}
+    rejected = []
     title_index = {}
     for part in ("pubmed", "crossref", "epmc"):
         path = P + f"research_{part}.json"
@@ -397,6 +430,11 @@ def build_research(known_entities):
             title_index[tk] = k
     out = []
     for k, r in merged.items():
+        if ANIMAL_STUDY.search(r["title"]) and not HUMAN.search(r["title"]):
+            stats["rejected_animal"] += 1
+            rejected.append(dict(title=r["title"], doi=r.get("doi"), pmid=r.get("pmid"),
+                                 reason="animal/veterinary study — out of scope for human forensic library"))
+            continue
         rid = "RS-" + hashlib.sha1(k.encode()).hexdigest()[:12]
         links = [REAGENT(x) if x.startswith("rea-") else x for x in r.get("links", [])]
         out.append(dict(research_id=rid, kind=r["kind"], title=r["title"], authors=r.get("authors", []),
@@ -407,6 +445,7 @@ def build_research(known_entities):
                         evidence_level=r["evidence_level"], review_status="NEEDS_REVIEW",
                         _links=[x for x in links if x in known_entities]))
     stats["unique"] = len(out)
+    json.dump(rejected, open(P + "research_rejected.json", "w"), ensure_ascii=False, indent=1)
     return out, stats
 
 

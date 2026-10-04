@@ -95,13 +95,14 @@ void main() {
     await see(tester, find.byKey(const Key('methods.empty.institutionalSop')));
   });
 
-  testWidgets('sud tibbiyoti: 25 mavzu, manbasizlari «ma’lumot yo‘q»', (
-    tester,
-  ) async {
-    await open(tester, Routes.forensicMedicine);
-    expect(find.text('3 of 25 topics have sourced content'), findsOneWidget);
-    await see(tester, find.byKey(const Key('fm.topic.rigorMortis')));
-  });
+  testWidgets(
+    'sud tibbiyoti: 25 mavzudan 17 tasi manbali, manbasizlari «ma’lumot yo‘q»',
+    (tester) async {
+      await open(tester, Routes.forensicMedicine);
+      expect(find.text('17 of 25 topics have sourced content'), findsOneWidget);
+      await see(tester, find.byKey(const Key('fm.topic.rigorMortis')));
+    },
+  );
 
   testWidgets(
     'solishtirish: Shotlandiya 50 mg, Sh. Irlandiya — ma’lumot yo‘q',

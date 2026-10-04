@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:forensic_expert/app/providers.dart';
+import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
+
+import '../helpers/fake_store.dart';
+import '../helpers/pilot_content.dart';
 
 import '../helpers/pump_app.dart';
 import '../helpers/screens.dart';
@@ -51,6 +56,45 @@ void main() {
       }
     });
   }
+
+  // PHASE 5 ekranlari — haqiqiy pilot paket (rasm, research, gistologiya).
+  group('PHASE 5 · pilot kontent', () {
+    late PilotContent pilot;
+    setUpAll(() async => pilot = await loadPilotContent());
+    final routes = [
+      Routes.libraryEntry('morphine'),
+      Routes.library,
+      Routes.research,
+      Routes.researchEntry('RS-582d32d8a823'),
+      Routes.image('IMG-EXT-pmc6445230-ienz_a_1333987_f0004_b'),
+      Routes.histology,
+      Routes.knowledgeEntry('his-mi-early'),
+      Routes.knowledgeEntry('reagent-dragendorff'),
+      Routes.knowledgeEntry('scr-fentanyl-test-strips'),
+    ];
+    for (final theme in [ThemeMode.light, ThemeMode.dark]) {
+      for (final route in routes) {
+        testWidgets('${theme.name} $route', (tester) async {
+          final handle = tester.ensureSemantics();
+          await pumpApp(
+            tester,
+            settings: completedSettings(theme: theme),
+            initialLocation: route,
+            testFixtures: false,
+            overrides: [
+              ...pilot.overrides,
+              entitlementServiceProvider.overrideWithValue(
+                FakeStore(owned: true),
+              ),
+            ],
+          );
+          await settleImages(tester);
+          await checkGuidelines(tester);
+          handle.dispose();
+        });
+      }
+    }
+  });
 
   // Yuqori kontrast (light va dark): tap target, label va kontrast.
   for (final theme in [ThemeMode.light, ThemeMode.dark]) {

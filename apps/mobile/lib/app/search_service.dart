@@ -7,6 +7,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../core/l10n/generated/app_localizations.dart';
 import '../core/settings/app_settings.dart';
 import '../domain/catalog/tools_catalog.dart';
+import '../domain/evidence/evidence_models.dart';
 import '../domain/knowledge/knowledge_models.dart';
 import '../domain/learn/learn_models.dart';
 import '../domain/library/library_models.dart';
@@ -51,8 +52,20 @@ class AppSearchService {
     required LearnRepository learn,
     KnowledgeRepository knowledge = const EmptyKnowledgeRepository(),
     Iterable<JurisdictionalInstrument> instruments = const [],
+    Iterable<ResearchEntry> research = const [],
   }) {
     final terms = <SearchTerm>[];
+    // PHASE 5 Research / Evidence Library — faqat sarlavha (metadata).
+    for (final r in research) {
+      terms.add(
+        SearchTerm(
+          entityId: r.id,
+          category: SearchCategory.reference,
+          term: r.title,
+          kind: TermKind.canonical,
+        ),
+      );
+    }
     // PHASE 4 bilim sohalari.
     for (final kind in KnowledgeKind.values) {
       for (final e in knowledge.byKind(kind)) {
@@ -206,5 +219,6 @@ final searchServiceProvider = Provider<AppSearchService>(
     learn: ref.watch(learnRepositoryProvider),
     knowledge: ref.watch(knowledgeRepositoryProvider),
     instruments: ref.watch(jurisdictionResolverProvider).instruments,
+    research: ref.watch(evidenceDataProvider).research,
   ),
 );

@@ -13,6 +13,7 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/library/library_models.dart';
+import '../../evidence/evidence_strings.dart';
 import '../../placeholder/presentation/in_development_view.dart';
 import 'content_entry_sections.dart';
 
@@ -48,6 +49,9 @@ class _LibraryScreenState extends ConsumerState<LibraryScreen> {
   LibrarySection _section = LibrarySection.substances;
   _StatusFilter _status = _StatusFilter.all;
   String _filter = '';
+
+  /// Tahririy modda guruhi filtri (null — barchasi).
+  String? _group;
   static const _normalizer = SearchNormalizer();
 
   bool _matches(LibraryEntry e) {
@@ -58,6 +62,11 @@ class _LibraryScreenState extends ConsumerState<LibraryScreen> {
       _StatusFilter.needsReview => e.status == ScientificStatus.needsReview,
     };
     if (!okStatus) return false;
+    if (_section == LibrarySection.substances &&
+        _group != null &&
+        e.group != _group) {
+      return false;
+    }
     final key = _normalizer.searchKey(_filter);
     if (key.isEmpty) return true;
     return [
@@ -74,6 +83,12 @@ class _LibraryScreenState extends ConsumerState<LibraryScreen> {
     final lang = Localizations.localeOf(context).languageCode;
     final all = repo.entries(_section);
     final entries = all.where(_matches).toList();
+    final groups = _section == LibrarySection.substances
+        ? ({for (final e in all) ?e.group}.toList()..sort(
+            (a, b) =>
+                l.substanceGroupName(a).compareTo(l.substanceGroupName(b)),
+          ))
+        : const <String>[];
 
     String statusLabel(_StatusFilter s) => switch (s) {
       _StatusFilter.all => l.filterAll,
@@ -103,7 +118,10 @@ class _LibraryScreenState extends ConsumerState<LibraryScreen> {
                               avatar: Icon(s.icon, size: 18),
                               label: Text(s.label(l)),
                               selected: _section == s,
-                              onSelected: (_) => setState(() => _section = s),
+                              onSelected: (_) => setState(() {
+                                _section = s;
+                                _group = null;
+                              }),
                             ),
                           ),
                       ],
@@ -133,7 +151,42 @@ class _LibraryScreenState extends ConsumerState<LibraryScreen> {
                         ),
                     ],
                   ),
-                  FeSectionHeader(_section.label(l)),
+                  if (groups.isNotEmpty) ...[
+                    const SizedBox(height: FeSpace.xs),
+                    SingleChildScrollView(
+                      key: const Key('library.groups'),
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: [
+                          for (final g in [null, ...groups])
+                            Padding(
+                              padding: const EdgeInsets.only(right: FeSpace.xs),
+                              child: ChoiceChip(
+                                key: Key('library.group.${g ?? 'all'}'),
+                                label: Text(
+                                  g == null
+                                      ? l.groupAll
+                                      : l.substanceGroupName(g),
+                                ),
+                                selected: _group == g,
+                                onSelected: (_) => setState(() => _group = g),
+                              ),
+                            ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: FeSpace.xxs),
+                    Text(
+                      l.groupEditorialNote,
+                      style: Theme.of(context).textTheme.bodySmall
+                          ?.copyWith(color: c.textSecondary),
+                    ),
+                  ],
+                  FeSectionHeader(
+                    _group == null
+                        ? _section.label(l)
+                        : '${_section.label(l)} · ${l.substanceGroupName(_group!)}',
+                  ),
                   if (all.isEmpty)
                     switch (ref.watch(contentLibraryProvider)) {
                       AsyncLoading() => FeEmptyState(

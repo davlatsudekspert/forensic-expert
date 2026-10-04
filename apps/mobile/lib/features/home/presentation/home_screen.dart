@@ -31,6 +31,8 @@ enum HomeModule {
   substances(Icons.hub_outlined),
   standardsLaws(Icons.gavel_outlined),
   emerging(Icons.new_releases_outlined),
+  histology(Icons.grid_view_outlined),
+  research(Icons.library_books_outlined),
   learn(Icons.school_outlined),
   ai(Icons.auto_awesome_outlined);
 
@@ -49,6 +51,8 @@ enum HomeModule {
     HomeModule.substances => l.moduleSubstances,
     HomeModule.standardsLaws => l.moduleStandardsLaws,
     HomeModule.emerging => l.moduleEmerging,
+    HomeModule.histology => l.moduleHistology,
+    HomeModule.research => l.moduleResearch,
     HomeModule.learn => l.moduleLearn,
     HomeModule.ai => l.moduleAi,
   };
@@ -59,6 +63,7 @@ enum HomeModule {
       learn,
       forensicMedicine,
       toxicology,
+      histology,
       biochemistry,
       substances,
       laboratory,
@@ -67,9 +72,11 @@ enum HomeModule {
       reagents,
       standardsLaws,
       emerging,
+      research,
       ai,
     ],
     UserMode.research => const [
+      research,
       substances,
       methods,
       toxicology,
@@ -79,6 +86,7 @@ enum HomeModule {
       laboratory,
       biochemistry,
       forensicMedicine,
+      histology,
       standardsLaws,
       learn,
       ai,
@@ -91,7 +99,9 @@ enum HomeModule {
       methods,
       laboratory,
       forensicMedicine,
+      histology,
       biochemistry,
+      research,
       standardsLaws,
       emerging,
       ai,
@@ -111,6 +121,8 @@ enum HomeModule {
     HomeModule.methods => Routes.knowledge(KnowledgeKind.method.name),
     HomeModule.emerging => Routes.knowledge(KnowledgeKind.emergingIssue.name),
     HomeModule.standardsLaws => Routes.compare,
+    HomeModule.histology => Routes.histology,
+    HomeModule.research => Routes.research,
     _ => Routes.module(name),
   };
 }

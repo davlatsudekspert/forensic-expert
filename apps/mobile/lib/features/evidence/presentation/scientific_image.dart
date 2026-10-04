@@ -212,10 +212,10 @@ class ImageViewerScreen extends ConsumerWidget {
         MaterialLocalizations.of(context).formatMediumDate(d);
     final rows = <(String, String)>[
       (l.imageAttribution, meta.attribution),
-      if (meta.creator != null) ('Creator', meta.creator!),
-      if (meta.sourceName != null) ('Source', meta.sourceName!),
+      if (meta.creator != null) (l.metaCreator, meta.creator!),
+      if (meta.sourceName != null) (l.metaSource, meta.sourceName!),
       if (meta.doi != null) ('DOI', meta.doi!),
-      if (meta.accessedDate != null) ('Accessed', date(meta.accessedDate!)),
+      if (meta.accessedDate != null) (l.metaAccessed, date(meta.accessedDate!)),
     ];
     return Scaffold(
       appBar: AppBar(title: Text(meta.title.resolve(lang))),
@@ -249,22 +249,7 @@ class ImageViewerScreen extends ConsumerWidget {
                     ],
                   ),
                   FeSectionHeader(l.imageAttribution),
-                  for (final (k, v) in rows)
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: FeSpace.xs),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            k,
-                            style: t.labelMedium?.copyWith(
-                              color: c.textSecondary,
-                            ),
-                          ),
-                          SelectableText(v, style: t.bodyMedium),
-                        ],
-                      ),
-                    ),
+                  FeMetaList(rows: rows),
                   if (meta.sourceUrl != null)
                     Align(
                       alignment: AlignmentDirectional.centerStart,

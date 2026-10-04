@@ -29,6 +29,13 @@ void main() {
     // PHASE 3: o‘zbekcha ham «Biomarker»; brend nomi «Lifetime».
     'detailBiomarker',
     'lockedBadge',
+    // PHASE 5: xalqaro analitik qisqartmalar (o‘zbekchada ham aynan shunday).
+    'tech_gc',
+    'tech_gcFid',
+    'tech_gcMs',
+    'tech_hplc',
+    'tech_lcMsMs',
+    'tech_headspaceGc',
   };
 
   Set<String> placeholders(String s) =>

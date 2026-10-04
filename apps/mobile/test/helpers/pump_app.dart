@@ -81,3 +81,15 @@ Future<ProviderContainer> pumpApp(
   }
   return container;
 }
+
+/// `Image.memory` fake-async zonada dekodlanmaydi: ekrandagi rasmlarni real
+/// async’da oldindan yuklaydi (golden/screenshot uchun).
+Future<void> settleImages(WidgetTester tester) async {
+  await tester.pumpAndSettle();
+  await tester.runAsync(() async {
+    for (final e in find.byType(Image).evaluate()) {
+      await precacheImage((e.widget as Image).image, e);
+    }
+  });
+  await tester.pumpAndSettle();
+}

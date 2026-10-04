@@ -1855,4 +1855,118 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get fieldConfirmation => 'Confirmation requirement';
+
+  @override
+  String get metaAuthors => 'Authors';
+
+  @override
+  String get metaContainer => 'Journal / conference';
+
+  @override
+  String get metaInstitution => 'Institution';
+
+  @override
+  String get metaDegree => 'Degree';
+
+  @override
+  String get metaYear => 'Year';
+
+  @override
+  String get metaCreator => 'Creator';
+
+  @override
+  String get metaSource => 'Source';
+
+  @override
+  String get metaAccessed => 'Accessed';
+
+  @override
+  String get tech_tlc => 'TLC (thin-layer chromatography)';
+
+  @override
+  String get tech_gc => 'GC';
+
+  @override
+  String get tech_gcFid => 'GC-FID';
+
+  @override
+  String get tech_headspaceGc => 'Headspace GC';
+
+  @override
+  String get tech_gcMs => 'GC-MS';
+
+  @override
+  String get tech_hplc => 'HPLC';
+
+  @override
+  String get tech_lcMsMs => 'LC-MS/MS';
+
+  @override
+  String get tech_uvVis => 'UV-Vis spectrophotometry';
+
+  @override
+  String get tech_immunoassay => 'Immunoassay';
+
+  @override
+  String get tech_spectroscopy => 'Spectroscopy';
+
+  @override
+  String get tech_samplePreparation => 'Sample preparation';
+
+  @override
+  String get tech_extraction => 'Extraction';
+
+  @override
+  String get tech_calibration => 'Calibration';
+
+  @override
+  String get tech_qualityControl => 'Quality control';
+
+  @override
+  String get tech_validation => 'Method validation';
+
+  @override
+  String get tech_uncertainty => 'Measurement uncertainty';
+
+  @override
+  String get tech_statistics => 'Statistics';
+
+  @override
+  String get methodSection_purpose => 'Purpose';
+
+  @override
+  String get methodSection_scope => 'Scope';
+
+  @override
+  String get methodSection_analytes => 'Analytes';
+
+  @override
+  String get methodSection_specimens => 'Specimens';
+
+  @override
+  String get methodSection_principle => 'Principle';
+
+  @override
+  String get methodSection_equipment => 'Equipment';
+
+  @override
+  String get methodSection_reagents => 'Reagents';
+
+  @override
+  String get methodSection_samplePreparation => 'Sample preparation';
+
+  @override
+  String get methodSection_calibrationQc => 'Calibration and QC';
+
+  @override
+  String get methodSection_workflow => 'Workflow';
+
+  @override
+  String get methodSection_interpretation => 'Interpretation';
+
+  @override
+  String get methodSection_limitations => 'Limitations';
+
+  @override
+  String get methodSection_validationStatus => 'Validation status';
 }

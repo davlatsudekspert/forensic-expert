@@ -142,6 +142,48 @@ class FeDataTable extends StatelessWidget {
   }
 }
 
+/// Bibliografik / attribution metadata: yorliq ustida, qiymat ostida
+/// (uzun matnlar 320 dp va katta shriftda so‘z ichida bo‘linmaydi).
+class FeMetaList extends StatelessWidget {
+  const FeMetaList({super.key, required this.rows});
+
+  final List<(String, String)> rows;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        for (final (i, (k, v)) in rows.indexed)
+          MergeSemantics(
+            child: Container(
+              constraints: const BoxConstraints(minHeight: 48),
+              padding: const EdgeInsets.symmetric(vertical: FeSpace.xs),
+              decoration: BoxDecoration(
+                border: i == 0
+                    ? null
+                    : Border(top: BorderSide(color: c.border)),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    k,
+                    style: t.labelMedium?.copyWith(color: c.textSecondary),
+                  ),
+                  const SizedBox(height: FeSpace.xxs),
+                  SelectableText(v, style: t.bodyMedium),
+                ],
+              ),
+            ),
+          ),
+      ],
+    );
+  }
+}
+
 /// Yuklanish skeleti — statik (animatsiyasiz), ekran o‘quvchisiga
 /// «yuklanmoqda» deb e’lon qilinadi.
 class FeSkeleton extends StatelessWidget {

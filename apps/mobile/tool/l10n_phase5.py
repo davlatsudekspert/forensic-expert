@@ -90,6 +90,40 @@ k("fieldCaseObservation","Claim field.","Case observation (single case)","Наб
 k("fieldComposition","Claim field.","Composition (as stated in source)","Состав (как в источнике)","Tarkib (manbadagidek)")
 k("fieldConfirmation","Claim field.","Confirmation requirement","Требование подтверждения","Tasdiqlash talabi")
 
+# Metadata yorliqlari
+k("metaAuthors","Research metadata label.","Authors","Авторы","Mualliflar")
+k("metaContainer","Research metadata label.","Journal / conference","Журнал / конференция","Jurnal / konferensiya")
+k("metaInstitution","Research metadata label.","Institution","Учреждение","Muassasa")
+k("metaDegree","Research metadata label.","Degree","Степень","Ilmiy daraja")
+k("metaYear","Research metadata label.","Year","Год","Yil")
+k("metaCreator","Image metadata label.","Creator","Автор изображения","Tasvir muallifi")
+k("metaSource","Image metadata label.","Source","Источник","Manba")
+k("metaAccessed","Image metadata label.","Accessed","Дата обращения","Murojaat sanasi")
+
+# Analitik texnikalar (qisqartmalar xalqaro)
+T = [("tlc","TLC (thin-layer chromatography)","ТСХ (тонкослойная хроматография)","TLC (yupqa qatlamli xromatografiya)"),
+ ("gc","GC","ГХ","GC"),("gcFid","GC-FID","ГХ-ПИД","GC-FID"),("headspaceGc","Headspace GC","Парофазная ГХ","Headspace GC"),
+ ("gcMs","GC-MS","ГХ-МС","GC-MS"),("hplc","HPLC","ВЭЖХ","HPLC"),("lcMsMs","LC-MS/MS","ЖХ-МС/МС","LC-MS/MS"),
+ ("uvVis","UV-Vis spectrophotometry","УФ-видимая спектрофотометрия","UV-Vis spektrofotometriya"),
+ ("immunoassay","Immunoassay","Иммуноанализ","Immunoanaliz"),("spectroscopy","Spectroscopy","Спектроскопия","Spektroskopiya"),
+ ("samplePreparation","Sample preparation","Пробоподготовка","Namuna tayyorlash"),("extraction","Extraction","Экстракция","Ekstraksiya"),
+ ("calibration","Calibration","Калибровка","Kalibrlash"),("qualityControl","Quality control","Контроль качества","Sifat nazorati"),
+ ("validation","Method validation","Валидация методики","Metod validatsiyasi"),("uncertainty","Measurement uncertainty","Неопределённость измерений","O‘lchash noaniqligi"),
+ ("statistics","Statistics","Статистика","Statistika")]
+for code,en,ru,uz in T:
+    k("tech_"+code,"Analytical technique name.",en,ru,uz)
+
+# Metod bo‘limlari
+MS = [("purpose","Purpose","Назначение","Maqsad"),("scope","Scope","Область применения","Qo‘llanish sohasi"),
+ ("analytes","Analytes","Аналиты","Analitlar"),("specimens","Specimens","Образцы","Namunalar"),
+ ("principle","Principle","Принцип","Prinsip"),("equipment","Equipment","Оборудование","Jihozlar"),
+ ("reagents","Reagents","Реагенты","Reagentlar"),("samplePreparation","Sample preparation","Пробоподготовка","Namuna tayyorlash"),
+ ("calibrationQc","Calibration and QC","Калибровка и контроль качества","Kalibrlash va sifat nazorati"),
+ ("workflow","Workflow","Порядок работы","Ish tartibi"),("interpretation","Interpretation","Интерпретация","Talqin"),
+ ("limitations","Limitations","Ограничения","Cheklovlar"),("validationStatus","Validation status","Статус валидации","Validatsiya holati")]
+for code,en,ru,uz in MS:
+    k("methodSection_"+code,"Method section heading.",en,ru,uz)
+
 for idx, code in enumerate(["en","ru","uz"]):
     p = f"{D}/app_{code}.arb"
     data = json.load(open(p, encoding="utf-8"), object_pairs_hook=collections.OrderedDict)
