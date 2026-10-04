@@ -99,8 +99,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get navProfile => 'Профиль';
 
   @override
-  String get searchHint =>
-      'Поиск вещества, метода, формулы, темы или источника…';
+  String get searchHint => 'Поиск веществ, методов, инструментов, источников…';
 
   @override
   String get searchUnavailable =>
@@ -218,4 +217,676 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get libraryTitle => 'Библиотека';
+
+  @override
+  String get homeQuickAccess => 'Быстрый доступ';
+
+  @override
+  String get homeRecentTools => 'Недавние инструменты';
+
+  @override
+  String get homeFavorites => 'Избранное';
+
+  @override
+  String get homeRecentSearches => 'Недавние запросы';
+
+  @override
+  String get homeEmptyRecentTools =>
+      'Здесь появятся открытые вами инструменты.';
+
+  @override
+  String get homeEmptyFavorites =>
+      'Добавляйте инструменты и записи библиотеки в избранное — они появятся здесь.';
+
+  @override
+  String get homeEmptyRecentSearches =>
+      'Ваши запросы хранятся только на этом устройстве.';
+
+  @override
+  String get homeContinueLearning => 'Продолжить обучение';
+
+  @override
+  String get homeStudyHubBody => 'Курсы, тесты, карточки и разбор случаев.';
+
+  @override
+  String get homePrototypeNotice =>
+      'Прототип: записи с пометкой TEST DATA — заглушки, а не научный контент.';
+
+  @override
+  String get testDataBadge => 'TEST DATA';
+
+  @override
+  String get seeAll => 'Все';
+
+  @override
+  String get openAction => 'Открыть';
+
+  @override
+  String get toolsSubtitle =>
+      'Калькуляторы и пересчёты с формулой, допущениями и ограничениями.';
+
+  @override
+  String get toolCategoryToxicology => 'Токсикология';
+
+  @override
+  String get toolCategoryConversions => 'Пересчёт единиц';
+
+  @override
+  String get toolDilutionName => 'Разведение (C₁V₁ = C₂V₂)';
+
+  @override
+  String get toolDilutionDesc =>
+      'Расчёт любого из четырёх параметров разведения.';
+
+  @override
+  String get toolWidmarkName => 'Алкоголь в крови (Видмарк)';
+
+  @override
+  String get toolWidmarkDesc =>
+      'Оценка с указанием допущений, неопределённости и ограничений.';
+
+  @override
+  String get toolBackCalcName => 'Обратный расчёт этанола';
+
+  @override
+  String get toolBackCalcDesc =>
+      'Оценка диапазона на более ранний момент времени.';
+
+  @override
+  String get toolPmiName => 'Давность смерти (Хенссге)';
+
+  @override
+  String get toolPmiDesc =>
+      'Запланировано на V1.1 после научной и лицензионной проверки.';
+
+  @override
+  String get toolMolarityName => 'Молярность и массовая концентрация';
+
+  @override
+  String get toolMolarityDesc =>
+      'Пересчёт массовой концентрации в молярную и обратно.';
+
+  @override
+  String get toolCalibrationName => 'Калибровка и линейная регрессия';
+
+  @override
+  String get toolCalibrationDesc =>
+      'Градуировочная зависимость, остатки и статистика аппроксимации.';
+
+  @override
+  String get toolLodName => 'LOD / LOQ';
+
+  @override
+  String get toolLodDesc =>
+      'Пределы обнаружения и количественного определения по градуировке.';
+
+  @override
+  String get toolStatsName => 'Описательная статистика';
+
+  @override
+  String get toolStatsDesc => 'Среднее, медиана, СО и КВ.';
+
+  @override
+  String get toolUnitsName => 'Пересчёт единиц концентрации';
+
+  @override
+  String get toolUnitsDesc => 'мг/л, мкг/мл, нг/мл, ммоль/л и др.';
+
+  @override
+  String get toolEthanolUnitsName => 'Пересчёт единиц этанола';
+
+  @override
+  String get toolEthanolUnitsDesc => 'г/л, ‰, мг/дл и г/100 мл.';
+
+  @override
+  String get toolStatusAvailable => 'Доступно';
+
+  @override
+  String get toolStatusPlanned => 'Запланировано';
+
+  @override
+  String get toolPlannedBody =>
+      'Инструмент запланирован. Он будет добавлен только после экспертной проверки метода, формулы и источников.';
+
+  @override
+  String get favoriteAdd => 'Добавить в избранное';
+
+  @override
+  String get favoriteRemove => 'Удалить из избранного';
+
+  @override
+  String get calcInput => 'Входные данные';
+
+  @override
+  String get calcMethod => 'Метод';
+
+  @override
+  String get calcFormula => 'Формула';
+
+  @override
+  String get calcResult => 'Результат';
+
+  @override
+  String get calcAssumptions => 'Допущения';
+
+  @override
+  String get calcLimitations => 'Ограничения';
+
+  @override
+  String get calcReferences => 'Источники';
+
+  @override
+  String get calcSolveFor => 'Найти';
+
+  @override
+  String get calcStockConc => 'Исходная концентрация (C₁)';
+
+  @override
+  String get calcStockVol => 'Объём исходного раствора (V₁)';
+
+  @override
+  String get calcFinalConc => 'Конечная концентрация (C₂)';
+
+  @override
+  String get calcFinalVol => 'Конечный объём (V₂)';
+
+  @override
+  String get calcUnit => 'Единица';
+
+  @override
+  String get calcCalculate => 'Рассчитать';
+
+  @override
+  String get calcEnterValues => 'Введите три значения, чтобы найти четвёртое.';
+
+  @override
+  String get calcErrorPositive => 'Введите положительное число.';
+
+  @override
+  String get calcErrorUnits =>
+      'Обе концентрации должны быть в совместимых единицах (массовых или молярных).';
+
+  @override
+  String get calcWarnExceeds =>
+      'Конечная концентрация выше исходной — проверьте данные.';
+
+  @override
+  String get calcDilutionAssumptionConservation =>
+      'При разведении количество вещества сохраняется.';
+
+  @override
+  String get calcDilutionAssumptionMixing =>
+      'Объёмы аддитивны, смешивание полное.';
+
+  @override
+  String get calcDilutionLimitationContraction =>
+      'Не подходит при заметном уменьшении объёма при смешивании (например, концентрированный этанол и вода).';
+
+  @override
+  String get calcDefinitional =>
+      'Определяющее соотношение (сохранение количества вещества); литературные значения не используются.';
+
+  @override
+  String get calcNeedsReviewNotice =>
+      'Калькулятор ещё не проверен лабораторным рецензентом.';
+
+  @override
+  String calcResultSemantics(String value) {
+    return 'Результат: $value';
+  }
+
+  @override
+  String get librarySubstances => 'Вещества';
+
+  @override
+  String get libraryMethods => 'Аналитические методы';
+
+  @override
+  String get librarySpecimens => 'Образцы';
+
+  @override
+  String get libraryReferences => 'Источники';
+
+  @override
+  String get libraryGlossary => 'Глоссарий';
+
+  @override
+  String get libraryFilterHint => 'Фильтр раздела…';
+
+  @override
+  String get filterAll => 'Все';
+
+  @override
+  String get libraryEmptyFiltered => 'Нет записей, соответствующих фильтру.';
+
+  @override
+  String get detailNames => 'Названия и синонимы';
+
+  @override
+  String get detailClass => 'Класс';
+
+  @override
+  String get detailMetabolites => 'Метаболиты';
+
+  @override
+  String get detailSpecimens => 'Образцы';
+
+  @override
+  String get detailMethods => 'Аналитические методы';
+
+  @override
+  String get detailConcentrations => 'Референтные концентрации';
+
+  @override
+  String get detailInterpretation => 'Интерпретация';
+
+  @override
+  String get detailStability => 'Стабильность и хранение';
+
+  @override
+  String get detailInterferences => 'Интерференции';
+
+  @override
+  String get detailReferences => 'Источники';
+
+  @override
+  String get detailEvidenceStatus => 'Статус доказательности';
+
+  @override
+  String get detailLastReviewed => 'Последняя проверка';
+
+  @override
+  String get detailNotReviewed => 'Не проверено';
+
+  @override
+  String get detailPlaceholder => 'Заглушка — научного контента пока нет.';
+
+  @override
+  String get detailConcentrationsNote =>
+      'Концентрация сама по себе не устанавливает причину смерти. Значения будут показаны только с указанием матрицы, популяции и источников.';
+
+  @override
+  String get sourcesButton => 'Источники';
+
+  @override
+  String get sourcesNone => 'Источников нет — это тестовые данные.';
+
+  @override
+  String get searchGroupTools => 'Инструменты';
+
+  @override
+  String get searchGroupLearning => 'Обучение';
+
+  @override
+  String get searchClearHistory => 'Очистить историю';
+
+  @override
+  String get searchClearQuery => 'Очистить';
+
+  @override
+  String searchNoResultsTitle(String query) {
+    return 'Ничего не найдено по запросу «$query»';
+  }
+
+  @override
+  String get searchNoResultsBody =>
+      'Проверьте написание или попробуйте другой язык — поддерживаются английские, русские и узбекские названия.';
+
+  @override
+  String get searchOfflineLabel => 'На устройстве · офлайн';
+
+  @override
+  String get searchExternalTitle => 'Научные базы данных (онлайн)';
+
+  @override
+  String get searchExternalBody =>
+      'Поиск в PubMed, PubChem и Crossref появится в одной из следующих версий. Внешние результаты никогда не смешиваются с проверенными внутренними данными.';
+
+  @override
+  String get searchTypeToStart => 'Введите не менее двух символов.';
+
+  @override
+  String searchResultsSemantics(int count) {
+    return 'Результатов: $count';
+  }
+
+  @override
+  String get aiAskTitle => 'Вопрос Forensic AI';
+
+  @override
+  String get aiInputHint =>
+      'Спросите о веществах, методах или ограничениях интерпретации…';
+
+  @override
+  String get aiSend => 'Отправить';
+
+  @override
+  String aiPiiDetected(String kinds) {
+    return 'Обнаружены возможные персональные данные: $kinds. Удалите их перед отправкой.';
+  }
+
+  @override
+  String get piiKindEmail => 'эл. почта';
+
+  @override
+  String get piiKindPhone => 'номер телефона';
+
+  @override
+  String get piiKindPassport => 'номер паспорта/ID';
+
+  @override
+  String get piiKindCase => 'номер дела';
+
+  @override
+  String get piiKindName => 'ФИО';
+
+  @override
+  String get piiKindAddress => 'адрес';
+
+  @override
+  String get aiPreviewTitle => 'Формат ответа (предпросмотр)';
+
+  @override
+  String get aiPreviewNotice =>
+      'Прототип интерфейса. Ниже — текст-заглушка: это не ответ ИИ и не научный контент.';
+
+  @override
+  String get aiSectionAvailable => 'Имеющиеся данные';
+
+  @override
+  String get aiSectionConsiderations => 'Дифференциальные соображения';
+
+  @override
+  String get aiSectionLimitations => 'Ограничения интерпретации';
+
+  @override
+  String get aiSampleInternal =>
+      'Утверждение-заглушка, подтверждённое проверенным внутренним источником.';
+
+  @override
+  String get aiSampleExternal =>
+      'Утверждение-заглушка из внешнего источника, который не проверялся.';
+
+  @override
+  String get aiSampleLimitation =>
+      'Ограничение-заглушка — окончательная интерпретация требует полного контекста случая.';
+
+  @override
+  String get aiEvidenceInternalVerified => 'Внутренний · подтверждено';
+
+  @override
+  String get aiEvidenceInternalReviewed => 'Внутренний · проверено';
+
+  @override
+  String get aiEvidenceExternal => 'Внешний · не проверено';
+
+  @override
+  String aiPlaceholderSource(int number) {
+    return 'Источник-заглушка $number';
+  }
+
+  @override
+  String aiCitationSemantics(int number) {
+    return 'Источник $number';
+  }
+
+  @override
+  String get aiExpertJudgment =>
+      'Окончательное профессиональное суждение принадлежит квалифицированному специалисту. Forensic AI не формирует экспертных заключений.';
+
+  @override
+  String get aiReport => 'Пожаловаться на ответ';
+
+  @override
+  String get learnCourses => 'Курсы';
+
+  @override
+  String get learnLessons => 'Уроки';
+
+  @override
+  String get learnQuiz => 'Тест';
+
+  @override
+  String get learnFlashcards => 'Карточки';
+
+  @override
+  String get learnCases => 'Разбор случаев';
+
+  @override
+  String get learnProgress => 'Прогресс';
+
+  @override
+  String get learnNotStarted => 'Не начато';
+
+  @override
+  String get learnProgressEmpty =>
+      'Прогресс сохраняется на этом устройстве, когда вы начнёте.';
+
+  @override
+  String learnLessonCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count урока',
+      many: '$count уроков',
+      few: '$count урока',
+      one: '$count урок',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get learnStart => 'Начать';
+
+  @override
+  String get quizCheck => 'Проверить ответ';
+
+  @override
+  String get quizCorrect => 'Верно';
+
+  @override
+  String get quizIncorrect => 'Неверно';
+
+  @override
+  String get quizExplanation => 'Пояснение';
+
+  @override
+  String get flashcardShowAnswer => 'Показать ответ';
+
+  @override
+  String get flashcardKnew => 'Знаю';
+
+  @override
+  String get flashcardAgain => 'Повторить';
+
+  @override
+  String get profileSectionPreferences => 'Настройки';
+
+  @override
+  String get profileSectionAccount => 'Аккаунт и подписка';
+
+  @override
+  String get profileSectionAbout => 'О приложении и правовая информация';
+
+  @override
+  String get settingsContrast => 'Контраст';
+
+  @override
+  String get contrastStandard => 'Стандартный';
+
+  @override
+  String get contrastHigh => 'Высокий';
+
+  @override
+  String get contrastSystemHint =>
+      '«Системный» следует настройкам специальных возможностей устройства.';
+
+  @override
+  String get subscriptionTitle => 'Подписка';
+
+  @override
+  String get currentPlanFree => 'Бесплатный тариф';
+
+  @override
+  String get privacyPolicy => 'Политика конфиденциальности';
+
+  @override
+  String get termsOfUse => 'Условия использования';
+
+  @override
+  String get openSourceLicenses => 'Лицензии открытого ПО';
+
+  @override
+  String get aboutApp => 'О приложении';
+
+  @override
+  String get deleteAccount => 'Удалить аккаунт';
+
+  @override
+  String get accountNone => 'Без аккаунта — приложение работает без входа.';
+
+  @override
+  String get legalDraftNotice =>
+      'Черновик. Документ будет опубликован после профессиональной юридической проверки.';
+
+  @override
+  String get privacySummary =>
+      'Основная библиотека и калькуляторы работают офлайн. История поиска и прогресс хранятся на вашем устройстве. В приложении нет рекламных SDK. Персональные данные и сведения о делах никогда не передаются ИИ автоматически.';
+
+  @override
+  String get aboutBody =>
+      'Профессиональное справочное, обучающее и научно-расчётное приложение для судебной экспертизы.';
+
+  @override
+  String get aboutVersions =>
+      'Версия приложения и версия научной базы данных учитываются раздельно.';
+
+  @override
+  String get planFree => 'Бесплатный';
+
+  @override
+  String get planStudentPro => 'Student Pro';
+
+  @override
+  String get planProfessionalPro => 'Professional Pro';
+
+  @override
+  String get planCurrent => 'Текущий тариф';
+
+  @override
+  String get priceUnavailable => 'Цена недоступна';
+
+  @override
+  String get storeNotConnected =>
+      'В этой сборке магазин не подключён. Цены показываются только из App Store или Google Play.';
+
+  @override
+  String get subscribeAction => 'Оформить подписку';
+
+  @override
+  String get restorePurchases => 'Восстановить покупки';
+
+  @override
+  String get manageSubscription => 'Управление подпиской';
+
+  @override
+  String get restoreNothing => 'Нет покупок для восстановления.';
+
+  @override
+  String get featLibrary => 'Библиотека веществ';
+
+  @override
+  String get featLabTools => 'Лабораторные калькуляторы';
+
+  @override
+  String get featLearning => 'Курсы, тесты и карточки';
+
+  @override
+  String get featAdvancedTools => 'Расширенные экспертные инструменты';
+
+  @override
+  String get featAi => 'Forensic AI';
+
+  @override
+  String get featOffline => 'Офлайн-доступ';
+
+  @override
+  String get featSafety => 'Предупреждения, ограничения и источники';
+
+  @override
+  String get valueLimited => 'Ограниченно';
+
+  @override
+  String get valueBasic => 'Базовые';
+
+  @override
+  String get valueExtended => 'Расширенно';
+
+  @override
+  String get valueFull => 'Полностью';
+
+  @override
+  String get valueIncluded => 'Включено';
+
+  @override
+  String get valueNotIncluded => 'Не включено';
+
+  @override
+  String get subscriptionSafetyNote =>
+      'Предупреждения, ограничения и источники никогда не скрываются за подпиской.';
+
+  @override
+  String get moduleHubTools => 'Инструменты раздела';
+
+  @override
+  String get moduleHubReference => 'Справочник';
+
+  @override
+  String get settingsJurisdiction => 'Юрисдикция';
+
+  @override
+  String get jurisdictionPickerIntro =>
+      'Научные данные международны и одинаковы для всех стран. Юрисдикция выбирает только правовой и процессуальный слой (законы, списки контролируемых веществ, национальные методики), который всегда показывается отдельно.';
+
+  @override
+  String get jurisdictionGroupGlobal => 'Международные и региональные';
+
+  @override
+  String get jurisdictionGroupCountries => 'Страны';
+
+  @override
+  String get jurisdictionNoContent =>
+      'Правовой и процессуальный контент для этой юрисдикции пока не загружен. Каждая будущая запись будет содержать официальный источник, дату вступления в силу, редакцию и дату последней проверки.';
+
+  @override
+  String get jurisdictionCompare => 'Сравнить юрисдикции';
+
+  @override
+  String get jurisdictionCompareSoon =>
+      'Запланировано. Станет доступно, когда появится проверенный правовой контент хотя бы для двух юрисдикций.';
+
+  @override
+  String get jurisdictionInternationalHint =>
+      'Выбрано «Международный»: здесь применимы только международные конвенции и стандарты. Выберите страну, чтобы увидеть её правовой слой.';
+
+  @override
+  String get detailLayerScientific => 'Международные научные данные';
+
+  @override
+  String get detailLayerScientificNote =>
+      'Не зависит от страны. Правовой статус и национальные процедуры показаны ниже отдельно.';
+
+  @override
+  String detailLayerJurisdiction(String name) {
+    return 'Юрисдикционный слой: $name';
+  }
+
+  @override
+  String get detailLegalStatus => 'Правовой статус';
+
+  @override
+  String get detailNationalMethods => 'Национальные методики и процедуры';
+
+  @override
+  String get detailChangeJurisdiction => 'Сменить юрисдикцию';
 }

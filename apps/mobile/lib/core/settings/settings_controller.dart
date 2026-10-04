@@ -33,6 +33,12 @@ class SettingsController extends Notifier<AppSettings> {
   Future<void> setThemeMode(ThemeMode mode) =>
       _update(state.copyWith(themeMode: mode));
 
+  Future<void> setContrast(ContrastPreference contrast) =>
+      _update(state.copyWith(contrast: contrast));
+
+  Future<void> setJurisdiction(String jurisdictionId) =>
+      _update(state.copyWith(jurisdictionId: jurisdictionId));
+
   Future<void> setUserMode(UserMode mode) =>
       _update(state.copyWith(userMode: mode));
 

@@ -6,15 +6,24 @@ import 'tokens.dart';
 /// Tema kengaytmasi — Material ColorScheme’da yo‘q tokenlar (status ranglari).
 @immutable
 class FeTheme extends ThemeExtension<FeTheme> {
-  const FeTheme(this.colors);
+  const FeTheme(this.colors, {this.highContrast = false});
 
   final FeColorTokens colors;
+
+  /// Yuqori kontrast rejimi faolmi (chegaralar qalinroq, AAA ranglar).
+  final bool highContrast;
+
+  static bool isHighContrast(BuildContext context) =>
+      Theme.of(context).extension<FeTheme>()!.highContrast;
 
   static FeColorTokens of(BuildContext context) =>
       Theme.of(context).extension<FeTheme>()!.colors;
 
   @override
-  FeTheme copyWith({FeColorTokens? colors}) => FeTheme(colors ?? this.colors);
+  FeTheme copyWith({FeColorTokens? colors, bool? highContrast}) => FeTheme(
+    colors ?? this.colors,
+    highContrast: highContrast ?? this.highContrast,
+  );
 
   @override
   FeTheme lerp(covariant FeTheme? other, double t) =>
@@ -30,9 +39,20 @@ abstract final class FeFonts {
 abstract final class FeThemeBuilder {
   static ThemeData light() => _build(FePalette.light, Brightness.light);
 
+  static ThemeData lightHighContrast() =>
+      _build(FePalette.lightHighContrast, Brightness.light, highContrast: true);
+
+  static ThemeData darkHighContrast() =>
+      _build(FePalette.darkHighContrast, Brightness.dark, highContrast: true);
+
   static ThemeData dark() => _build(FePalette.dark, Brightness.dark);
 
-  static ThemeData _build(FeColorTokens c, Brightness brightness) {
+  static ThemeData _build(
+    FeColorTokens c,
+    Brightness brightness, {
+    bool highContrast = false,
+  }) {
+    final borderWidth = highContrast ? 1.5 : 1.0;
     final scheme = ColorScheme(
       brightness: brightness,
       primary: c.brand,
@@ -67,7 +87,7 @@ abstract final class FeThemeBuilder {
       scaffoldBackgroundColor: c.background,
       materialTapTargetSize: MaterialTapTargetSize.padded,
       visualDensity: VisualDensity.standard,
-      extensions: [FeTheme(c)],
+      extensions: [FeTheme(c, highContrast: highContrast)],
     );
 
     final text = base.textTheme.apply(
@@ -105,7 +125,7 @@ abstract final class FeThemeBuilder {
         margin: EdgeInsets.zero,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(FeRadius.md),
-          side: BorderSide(color: c.border),
+          side: BorderSide(color: c.border, width: borderWidth),
         ),
       ),
       dividerTheme: DividerThemeData(color: c.border, thickness: 1, space: 1),

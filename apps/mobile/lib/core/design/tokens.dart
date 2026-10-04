@@ -130,6 +130,61 @@ abstract final class FePalette {
     danger: Color(0xFFF97066),
     focusRing: Color(0xFF4CC9D6),
   );
+
+  /// Yuqori kontrast (light) — barcha matn juftliklari ≥ 7:1 (WCAG AAA),
+  /// chegaralar to‘q. OS «Increase contrast» yoki ilova sozlamasi bilan.
+  static const lightHighContrast = FeColorTokens(
+    background: Color(0xFFFFFFFF),
+    surface: Color(0xFFFFFFFF),
+    surfaceRaised: Color(0xFFFFFFFF),
+    surfaceSunken: Color(0xFFF0F2F5),
+    border: Color(0xFF3D4757),
+    borderStrong: Color(0xFF0B1220),
+    textPrimary: Color(0xFF000000),
+    textSecondary: Color(0xFF1F2937),
+    textOnBrand: Color(0xFFFFFFFF),
+    brand: Color(0xFF071230),
+    brandContainer: Color(0xFFD5DCEA),
+    accent: Color(0xFF00474F),
+    onAccent: Color(0xFFFFFFFF),
+    accentContainer: Color(0xFFCDEBEE),
+    onAccentContainer: Color(0xFF00262B),
+    verified: Color(0xFF0B4A2E),
+    reviewed: Color(0xFF12336E),
+    warning: Color(0xFF573700),
+    warningContainer: Color(0xFFFFEBB8),
+    onWarningContainer: Color(0xFF331F00),
+    outdated: Color(0xFF2E3542),
+    danger: Color(0xFF7A140D),
+    focusRing: Color(0xFF00474F),
+  );
+
+  /// Yuqori kontrast (dark) — barcha matn juftliklari ≥ 7:1 (WCAG AAA).
+  static const darkHighContrast = FeColorTokens(
+    background: Color(0xFF000000),
+    surface: Color(0xFF05080F),
+    surfaceRaised: Color(0xFF0B111D),
+    surfaceSunken: Color(0xFF000000),
+    border: Color(0xFFB8C2D3),
+    borderStrong: Color(0xFFFFFFFF),
+    textPrimary: Color(0xFFFFFFFF),
+    textSecondary: Color(0xFFDDE3EC),
+    textOnBrand: Color(0xFF000000),
+    brand: Color(0xFFF2F5FA),
+    brandContainer: Color(0xFF1A2640),
+    accent: Color(0xFF8FE6EE),
+    onAccent: Color(0xFF000000),
+    accentContainer: Color(0xFF003A40),
+    onAccentContainer: Color(0xFFE6FBFD),
+    verified: Color(0xFFA6F0C9),
+    reviewed: Color(0xFFC2D8FF),
+    warning: Color(0xFFFFDA85),
+    warningContainer: Color(0xFF2B1F00),
+    onWarningContainer: Color(0xFFFFF0CC),
+    outdated: Color(0xFFDDE3EC),
+    danger: Color(0xFFFFB4AB),
+    focusRing: Color(0xFF8FE6EE),
+  );
 }
 
 /// Masofa shkalasi — 4 pt grid.
@@ -161,4 +216,11 @@ abstract final class FeMotion {
 /// Minimal bosiladigan maydon — Material va Apple HIG talablariga mos.
 abstract final class FeTouch {
   static const double minTarget = 48;
+}
+
+/// Tildan mustaqil tipografik belgilar (matn emas — lokalizatsiya talab
+/// qilmaydi).
+abstract final class FeGlyphs {
+  static const emDash = '—';
+  static const bullet = '•  ';
 }

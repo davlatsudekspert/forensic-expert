@@ -100,7 +100,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get searchHint =>
-      'Modda, metod, formula, mavzu yoki manbani qidiring…';
+      'Moddalar, usullar, vositalar va manbalarni qidiring…';
 
   @override
   String get searchUnavailable =>
@@ -218,4 +218,675 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get libraryTitle => 'Kutubxona';
+
+  @override
+  String get homeQuickAccess => 'Tezkor kirish';
+
+  @override
+  String get homeRecentTools => 'So‘nggi vositalar';
+
+  @override
+  String get homeFavorites => 'Saralanganlar';
+
+  @override
+  String get homeRecentSearches => 'So‘nggi qidiruvlar';
+
+  @override
+  String get homeEmptyRecentTools =>
+      'Siz ochgan vositalar shu yerda ko‘rinadi.';
+
+  @override
+  String get homeEmptyFavorites =>
+      'Vosita yoki kutubxona yozuvlarini saralanganlarga qo‘shing — ular shu yerda turadi.';
+
+  @override
+  String get homeEmptyRecentSearches =>
+      'Qidiruvlaringiz faqat shu qurilmada saqlanadi.';
+
+  @override
+  String get homeContinueLearning => 'O‘qishni davom ettirish';
+
+  @override
+  String get homeStudyHubBody =>
+      'Kurslar, testlar, kartochkalar va holatlar tahlili.';
+
+  @override
+  String get homePrototypeNotice =>
+      'Prototip: TEST DATA belgili yozuvlar — namunaviy ma’lumot, ilmiy kontent emas.';
+
+  @override
+  String get testDataBadge => 'TEST DATA';
+
+  @override
+  String get seeAll => 'Barchasi';
+
+  @override
+  String get openAction => 'Ochish';
+
+  @override
+  String get toolsSubtitle =>
+      'Formula, taxminlar va cheklovlar ko‘rsatilgan kalkulyator va konversiyalar.';
+
+  @override
+  String get toolCategoryToxicology => 'Toksikologiya';
+
+  @override
+  String get toolCategoryConversions => 'Birlik konversiyalari';
+
+  @override
+  String get toolDilutionName => 'Suyultirish (C₁V₁ = C₂V₂)';
+
+  @override
+  String get toolDilutionDesc =>
+      'Suyultirishning to‘rtta qiymatidan istalgan birini hisoblash.';
+
+  @override
+  String get toolWidmarkName => 'Qondagi alkogol (Widmark)';
+
+  @override
+  String get toolWidmarkDesc =>
+      'Taxminlar, noaniqlik va cheklovlar ko‘rsatilgan holda baholash.';
+
+  @override
+  String get toolBackCalcName => 'Etanolni teskari hisoblash';
+
+  @override
+  String get toolBackCalcDesc =>
+      'Oldingi vaqt nuqtasi uchun diapazonli baholash.';
+
+  @override
+  String get toolPmiName => 'O‘lim vaqtini aniqlash (Henssge)';
+
+  @override
+  String get toolPmiDesc =>
+      'Ilmiy va litsenziya tekshiruvidan so‘ng V1.1 da rejalashtirilgan.';
+
+  @override
+  String get toolMolarityName => 'Molyarlik va massa konsentratsiyasi';
+
+  @override
+  String get toolMolarityDesc =>
+      'Massa va molyar konsentratsiya o‘rtasida o‘tkazish.';
+
+  @override
+  String get toolCalibrationName => 'Kalibrlash va chiziqli regressiya';
+
+  @override
+  String get toolCalibrationDesc =>
+      'Kalibrlash egri chizig‘i, qoldiqlar va moslik statistikasi.';
+
+  @override
+  String get toolLodName => 'LOD / LOQ';
+
+  @override
+  String get toolLodDesc =>
+      'Kalibrlash ma’lumotlari asosida aniqlash va miqdoriy aniqlash chegaralari.';
+
+  @override
+  String get toolStatsName => 'Tavsifiy statistika';
+
+  @override
+  String get toolStatsDesc => 'O‘rtacha, mediana, SD va CV.';
+
+  @override
+  String get toolUnitsName => 'Konsentratsiya birliklari konvertori';
+
+  @override
+  String get toolUnitsDesc => 'mg/L, µg/mL, ng/mL, mmol/L va boshqalar.';
+
+  @override
+  String get toolEthanolUnitsName => 'Etanol birliklari konvertori';
+
+  @override
+  String get toolEthanolUnitsDesc => 'g/L, ‰, mg/dL va g/100 mL.';
+
+  @override
+  String get toolStatusAvailable => 'Mavjud';
+
+  @override
+  String get toolStatusPlanned => 'Rejalashtirilgan';
+
+  @override
+  String get toolPlannedBody =>
+      'Bu vosita rejalashtirilgan. U faqat usul, formula va manbalar ekspert tekshiruvidan o‘tgandan keyin qo‘shiladi.';
+
+  @override
+  String get favoriteAdd => 'Saralanganlarga qo‘shish';
+
+  @override
+  String get favoriteRemove => 'Saralanganlardan olib tashlash';
+
+  @override
+  String get calcInput => 'Kiritiladigan qiymatlar';
+
+  @override
+  String get calcMethod => 'Usul';
+
+  @override
+  String get calcFormula => 'Formula';
+
+  @override
+  String get calcResult => 'Natija';
+
+  @override
+  String get calcAssumptions => 'Taxminlar';
+
+  @override
+  String get calcLimitations => 'Cheklovlar';
+
+  @override
+  String get calcReferences => 'Manbalar';
+
+  @override
+  String get calcSolveFor => 'Topiladigan qiymat';
+
+  @override
+  String get calcStockConc => 'Boshlang‘ich konsentratsiya (C₁)';
+
+  @override
+  String get calcStockVol => 'Boshlang‘ich eritma hajmi (V₁)';
+
+  @override
+  String get calcFinalConc => 'Yakuniy konsentratsiya (C₂)';
+
+  @override
+  String get calcFinalVol => 'Yakuniy hajm (V₂)';
+
+  @override
+  String get calcUnit => 'Birlik';
+
+  @override
+  String get calcCalculate => 'Hisoblash';
+
+  @override
+  String get calcEnterValues =>
+      'To‘rtinchisini topish uchun uchta qiymatni kiriting.';
+
+  @override
+  String get calcErrorPositive => 'Musbat son kiriting.';
+
+  @override
+  String get calcErrorUnits =>
+      'Ikkala konsentratsiya mos birlikda bo‘lishi kerak (massa yoki molyar).';
+
+  @override
+  String get calcWarnExceeds =>
+      'Yakuniy konsentratsiya boshlang‘ichdan yuqori — ma’lumotlarni tekshiring.';
+
+  @override
+  String get calcDilutionAssumptionConservation =>
+      'Suyultirishda modda miqdori o‘zgarmaydi.';
+
+  @override
+  String get calcDilutionAssumptionMixing =>
+      'Hajmlar qo‘shiluvchan, aralashtirish to‘liq.';
+
+  @override
+  String get calcDilutionLimitationContraction =>
+      'Aralashtirishda hajm sezilarli kamayadigan hollarda mos emas (masalan, konsentrlangan etanol va suv).';
+
+  @override
+  String get calcDefinitional =>
+      'Ta’rifiy munosabat (modda miqdorining saqlanishi); adabiyotdagi qiymatlar ishlatilmaydi.';
+
+  @override
+  String get calcNeedsReviewNotice =>
+      'Bu kalkulyator hali laboratoriya reviewer’i tomonidan tekshirilmagan.';
+
+  @override
+  String calcResultSemantics(String value) {
+    return 'Natija: $value';
+  }
+
+  @override
+  String get librarySubstances => 'Moddalar';
+
+  @override
+  String get libraryMethods => 'Analitik usullar';
+
+  @override
+  String get librarySpecimens => 'Namunalar';
+
+  @override
+  String get libraryReferences => 'Manbalar';
+
+  @override
+  String get libraryGlossary => 'Glossariy';
+
+  @override
+  String get libraryFilterHint => 'Bo‘lim bo‘yicha filtr…';
+
+  @override
+  String get filterAll => 'Barchasi';
+
+  @override
+  String get libraryEmptyFiltered => 'Filtrga mos yozuv yo‘q.';
+
+  @override
+  String get detailNames => 'Nomlar va sinonimlar';
+
+  @override
+  String get detailClass => 'Sinf';
+
+  @override
+  String get detailMetabolites => 'Metabolitlar';
+
+  @override
+  String get detailSpecimens => 'Namunalar';
+
+  @override
+  String get detailMethods => 'Analitik usullar';
+
+  @override
+  String get detailConcentrations => 'Reference konsentratsiyalar';
+
+  @override
+  String get detailInterpretation => 'Talqin';
+
+  @override
+  String get detailStability => 'Barqarorlik va saqlash';
+
+  @override
+  String get detailInterferences => 'Interferensiyalar';
+
+  @override
+  String get detailReferences => 'Manbalar';
+
+  @override
+  String get detailEvidenceStatus => 'Dalil holati';
+
+  @override
+  String get detailLastReviewed => 'Oxirgi tekshiruv';
+
+  @override
+  String get detailNotReviewed => 'Tekshirilmagan';
+
+  @override
+  String get detailPlaceholder => 'Namunaviy joy — ilmiy kontent hali yo‘q.';
+
+  @override
+  String get detailConcentrationsNote =>
+      'Konsentratsiyaning o‘zi o‘lim sababini isbotlamaydi. Qiymatlar faqat matritsa, populyatsiya va manbalar bilan ko‘rsatiladi.';
+
+  @override
+  String get sourcesButton => 'Manbalar';
+
+  @override
+  String get sourcesNone => 'Manba yo‘q — bu test ma’lumoti.';
+
+  @override
+  String get searchGroupTools => 'Vositalar';
+
+  @override
+  String get searchGroupLearning => 'Ta’lim';
+
+  @override
+  String get searchClearHistory => 'Tarixni tozalash';
+
+  @override
+  String get searchClearQuery => 'Tozalash';
+
+  @override
+  String searchNoResultsTitle(String query) {
+    return '«$query» bo‘yicha natija topilmadi';
+  }
+
+  @override
+  String get searchNoResultsBody =>
+      'Imloni tekshiring yoki boshqa tilda yozib ko‘ring — inglizcha, ruscha va o‘zbekcha nomlar qo‘llab-quvvatlanadi.';
+
+  @override
+  String get searchOfflineLabel => 'Qurilmada · oflayn';
+
+  @override
+  String get searchExternalTitle => 'Ilmiy bazalar (onlayn)';
+
+  @override
+  String get searchExternalBody =>
+      'PubMed, PubChem va Crossref bo‘yicha qidiruv keyingi versiyalardan birida qo‘shiladi. Tashqi natijalar tekshirilgan ichki ma’lumotlar bilan hech qachon aralashtirilmaydi.';
+
+  @override
+  String get searchTypeToStart => 'Kamida ikki belgi kiriting.';
+
+  @override
+  String searchResultsSemantics(int count) {
+    return 'Natijalar: $count';
+  }
+
+  @override
+  String get aiAskTitle => 'Forensic AI’ga savol';
+
+  @override
+  String get aiInputHint =>
+      'Moddalar, usullar yoki talqin cheklovlari haqida so‘rang…';
+
+  @override
+  String get aiSend => 'Yuborish';
+
+  @override
+  String aiPiiDetected(String kinds) {
+    return 'Shaxsiy ma’lumot bo‘lishi mumkin: $kinds. Yuborishdan oldin olib tashlang.';
+  }
+
+  @override
+  String get piiKindEmail => 'elektron pochta';
+
+  @override
+  String get piiKindPhone => 'telefon raqami';
+
+  @override
+  String get piiKindPassport => 'pasport/ID raqami';
+
+  @override
+  String get piiKindCase => 'ish raqami';
+
+  @override
+  String get piiKindName => 'F.I.Sh.';
+
+  @override
+  String get piiKindAddress => 'manzil';
+
+  @override
+  String get aiPreviewTitle => 'Javob ko‘rinishi (namuna)';
+
+  @override
+  String get aiPreviewNotice =>
+      'Interfeys prototipi. Quyida — to‘ldiruvchi matn: bu AI javobi ham, ilmiy kontent ham emas.';
+
+  @override
+  String get aiSectionAvailable => 'Mavjud ma’lumotlar';
+
+  @override
+  String get aiSectionConsiderations => 'Differensial mulohazalar';
+
+  @override
+  String get aiSectionLimitations => 'Talqin cheklovlari';
+
+  @override
+  String get aiSampleInternal =>
+      'Tekshirilgan ichki manba bilan tasdiqlangan namunaviy fikr.';
+
+  @override
+  String get aiSampleExternal =>
+      'Tekshirilmagan tashqi manbadan olingan namunaviy fikr.';
+
+  @override
+  String get aiSampleLimitation =>
+      'Namunaviy cheklov — yakuniy talqin uchun holatning to‘liq konteksti kerak.';
+
+  @override
+  String get aiEvidenceInternalVerified => 'Ichki · tasdiqlangan';
+
+  @override
+  String get aiEvidenceInternalReviewed => 'Ichki · ko‘rib chiqilgan';
+
+  @override
+  String get aiEvidenceExternal => 'Tashqi · tekshirilmagan';
+
+  @override
+  String aiPlaceholderSource(int number) {
+    return 'Namunaviy manba $number';
+  }
+
+  @override
+  String aiCitationSemantics(int number) {
+    return 'Manba $number';
+  }
+
+  @override
+  String get aiExpertJudgment =>
+      'Yakuniy professional xulosa malakali mutaxassisga tegishli. Forensic AI ekspert xulosasini bermaydi.';
+
+  @override
+  String get aiReport => 'Javob ustidan shikoyat qilish';
+
+  @override
+  String get learnCourses => 'Kurslar';
+
+  @override
+  String get learnLessons => 'Darslar';
+
+  @override
+  String get learnQuiz => 'Test';
+
+  @override
+  String get learnFlashcards => 'Kartochkalar';
+
+  @override
+  String get learnCases => 'Holatlar tahlili';
+
+  @override
+  String get learnProgress => 'O‘zlashtirish';
+
+  @override
+  String get learnNotStarted => 'Boshlanmagan';
+
+  @override
+  String get learnProgressEmpty =>
+      'Boshlaganingizdan so‘ng natijalar shu qurilmada saqlanadi.';
+
+  @override
+  String learnLessonCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta dars',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get learnStart => 'Boshlash';
+
+  @override
+  String get quizCheck => 'Javobni tekshirish';
+
+  @override
+  String get quizCorrect => 'To‘g‘ri';
+
+  @override
+  String get quizIncorrect => 'Noto‘g‘ri';
+
+  @override
+  String get quizExplanation => 'Izoh';
+
+  @override
+  String get flashcardShowAnswer => 'Javobni ko‘rsatish';
+
+  @override
+  String get flashcardKnew => 'Bilaman';
+
+  @override
+  String get flashcardAgain => 'Takrorlash';
+
+  @override
+  String get profileSectionPreferences => 'Sozlamalar';
+
+  @override
+  String get profileSectionAccount => 'Akkaunt va obuna';
+
+  @override
+  String get profileSectionAbout => 'Ilova haqida va huquqiy ma’lumot';
+
+  @override
+  String get settingsContrast => 'Kontrast';
+
+  @override
+  String get contrastStandard => 'Standart';
+
+  @override
+  String get contrastHigh => 'Yuqori';
+
+  @override
+  String get contrastSystemHint =>
+      '«Tizim» qurilmaning maxsus imkoniyatlar sozlamasiga amal qiladi.';
+
+  @override
+  String get subscriptionTitle => 'Obuna';
+
+  @override
+  String get currentPlanFree => 'Bepul tarif';
+
+  @override
+  String get privacyPolicy => 'Maxfiylik siyosati';
+
+  @override
+  String get termsOfUse => 'Foydalanish shartlari';
+
+  @override
+  String get openSourceLicenses => 'Ochiq kodli dasturlar litsenziyalari';
+
+  @override
+  String get aboutApp => 'Ilova haqida';
+
+  @override
+  String get deleteAccount => 'Akkauntni o‘chirish';
+
+  @override
+  String get accountNone => 'Akkauntsiz — ilova tizimga kirmasdan ishlaydi.';
+
+  @override
+  String get legalDraftNotice =>
+      'Qoralama. Hujjat professional yuridik tekshiruvdan so‘ng e’lon qilinadi.';
+
+  @override
+  String get privacySummary =>
+      'Asosiy kutubxona va kalkulyatorlar oflayn ishlaydi. Qidiruv tarixi va natijalar qurilmangizda saqlanadi. Ilovada reklama SDK’lari yo‘q. Shaxsiy ma’lumot va ish tafsilotlari AI’ga hech qachon avtomatik yuborilmaydi.';
+
+  @override
+  String get aboutBody =>
+      'Sud ekspertizasi uchun professional ma’lumotnoma, ta’lim va ilmiy hisob-kitob ilovasi.';
+
+  @override
+  String get aboutVersions =>
+      'Ilova versiyasi va ilmiy baza versiyasi alohida yuritiladi.';
+
+  @override
+  String get planFree => 'Bepul';
+
+  @override
+  String get planStudentPro => 'Student Pro';
+
+  @override
+  String get planProfessionalPro => 'Professional Pro';
+
+  @override
+  String get planCurrent => 'Joriy tarif';
+
+  @override
+  String get priceUnavailable => 'Narx mavjud emas';
+
+  @override
+  String get storeNotConnected =>
+      'Ushbu yig‘mada do‘kon ulanmagan. Narxlar faqat App Store yoki Google Play’dan ko‘rsatiladi.';
+
+  @override
+  String get subscribeAction => 'Obuna bo‘lish';
+
+  @override
+  String get restorePurchases => 'Xaridlarni tiklash';
+
+  @override
+  String get manageSubscription => 'Obunani boshqarish';
+
+  @override
+  String get restoreNothing => 'Tiklanadigan xarid yo‘q.';
+
+  @override
+  String get featLibrary => 'Moddalar kutubxonasi';
+
+  @override
+  String get featLabTools => 'Laboratoriya kalkulyatorlari';
+
+  @override
+  String get featLearning => 'Kurslar, testlar va kartochkalar';
+
+  @override
+  String get featAdvancedTools => 'Kengaytirilgan ekspert vositalari';
+
+  @override
+  String get featAi => 'Forensic AI';
+
+  @override
+  String get featOffline => 'Oflayn kirish';
+
+  @override
+  String get featSafety => 'Ogohlantirishlar, cheklovlar va manbalar';
+
+  @override
+  String get valueLimited => 'Cheklangan';
+
+  @override
+  String get valueBasic => 'Asosiy';
+
+  @override
+  String get valueExtended => 'Kengaytirilgan';
+
+  @override
+  String get valueFull => 'To‘liq';
+
+  @override
+  String get valueIncluded => 'Mavjud';
+
+  @override
+  String get valueNotIncluded => 'Mavjud emas';
+
+  @override
+  String get subscriptionSafetyNote =>
+      'Ogohlantirishlar, cheklovlar va manbalar hech qachon pullik obuna ortida yashirilmaydi.';
+
+  @override
+  String get moduleHubTools => 'Bo‘lim vositalari';
+
+  @override
+  String get moduleHubReference => 'Ma’lumotnoma';
+
+  @override
+  String get settingsJurisdiction => 'Yurisdiksiya';
+
+  @override
+  String get jurisdictionPickerIntro =>
+      'Ilmiy dalillar xalqaro va barcha davlatlar uchun bir xil. Yurisdiksiya faqat huquqiy va protsessual qatlamni (qonunlar, nazoratdagi moddalar ro‘yxatlari, milliy metodikalar) tanlaydi — u doim alohida ko‘rsatiladi.';
+
+  @override
+  String get jurisdictionGroupGlobal => 'Xalqaro va mintaqaviy';
+
+  @override
+  String get jurisdictionGroupCountries => 'Davlatlar';
+
+  @override
+  String get jurisdictionNoContent =>
+      'Bu yurisdiksiya uchun huquqiy va protsessual kontent hali yuklanmagan. Kelajakdagi har bir yozuvda rasmiy manba, kuchga kirgan sana, tahrir va oxirgi tekshiruv sanasi ko‘rsatiladi.';
+
+  @override
+  String get jurisdictionCompare => 'Yurisdiksiyalarni solishtirish';
+
+  @override
+  String get jurisdictionCompareSoon =>
+      'Rejalashtirilgan. Kamida ikki yurisdiksiya uchun tekshirilgan huquqiy kontent paydo bo‘lgach ishga tushadi.';
+
+  @override
+  String get jurisdictionInternationalHint =>
+      '«Xalqaro» tanlangan: bu yerda faqat xalqaro konvensiyalar va standartlar. Davlatning huquqiy qatlamini ko‘rish uchun davlatni tanlang.';
+
+  @override
+  String get detailLayerScientific => 'Xalqaro ilmiy dalillar';
+
+  @override
+  String get detailLayerScientificNote =>
+      'Davlatga bog‘liq emas. Huquqiy maqom va milliy protseduralar quyida alohida ko‘rsatiladi.';
+
+  @override
+  String detailLayerJurisdiction(String name) {
+    return 'Yurisdiksiya qatlami: $name';
+  }
+
+  @override
+  String get detailLegalStatus => 'Huquqiy maqom';
+
+  @override
+  String get detailNationalMethods => 'Milliy metodikalar va protseduralar';
+
+  @override
+  String get detailChangeJurisdiction => 'Yurisdiksiyani o‘zgartirish';
 }

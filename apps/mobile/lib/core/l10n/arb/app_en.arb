@@ -1,134 +1,1125 @@
 {
   "@@locale": "en",
   "appTitle": "FORENSIC EXPERT",
-  "@appTitle": {"description": "Brand name. Not translated."},
+  "@appTitle": {
+    "description": "Brand name. Not translated."
+  },
   "appTagline": "Evidence · Science · Precision",
-  "@appTagline": {"description": "Brand tagline. Kept in English in all locales."},
+  "@appTagline": {
+    "description": "Brand tagline. Kept in English in all locales."
+  },
   "languageNameNative": "English",
-  "@languageNameNative": {"description": "Name of this language written in this language (endonym)."},
+  "@languageNameNative": {
+    "description": "Name of this language written in this language (endonym)."
+  },
   "chooseLanguageTitle": "Choose your language",
-  "@chooseLanguageTitle": {"description": "First-launch language screen heading, shown in each language."},
+  "@chooseLanguageTitle": {
+    "description": "First-launch language screen heading, shown in each language."
+  },
   "languageOptionSemantics": "{language}. {state}",
   "@languageOptionSemantics": {
     "description": "Screen reader label for a language option.",
-    "placeholders": {"language": {"type": "String"}, "state": {"type": "String"}}
+    "placeholders": {
+      "language": {
+        "type": "String"
+      },
+      "state": {
+        "type": "String"
+      }
+    }
   },
   "stateSelected": "Selected",
-  "@stateSelected": {"description": "Screen reader state for a selected option."},
+  "@stateSelected": {
+    "description": "Screen reader state for a selected option."
+  },
   "stateNotSelected": "Not selected",
-  "@stateNotSelected": {"description": "Screen reader state for an unselected option."},
+  "@stateNotSelected": {
+    "description": "Screen reader state for an unselected option."
+  },
   "actionContinue": "Continue",
-  "@actionContinue": {"description": "Primary button to proceed."},
+  "@actionContinue": {
+    "description": "Primary button to proceed."
+  },
   "actionBack": "Back",
-  "@actionBack": {"description": "Back navigation."},
+  "@actionBack": {
+    "description": "Back navigation."
+  },
   "disclaimerTitle": "Scientific disclaimer",
-  "@disclaimerTitle": {"description": "Onboarding disclaimer heading."},
+  "@disclaimerTitle": {
+    "description": "Onboarding disclaimer heading."
+  },
   "disclaimerBody": "Forensic Expert is intended for professional reference, education and scientific calculation. It does not replace validated laboratory procedures, institutional protocols, applicable law or qualified professional judgment.",
-  "@disclaimerBody": {"description": "Mandatory scientific disclaimer (owner-approved English wording)."},
+  "@disclaimerBody": {
+    "description": "Mandatory scientific disclaimer (owner-approved English wording)."
+  },
   "disclaimerNoConclusions": "The app never issues forensic expert conclusions. A measured concentration alone does not establish a cause of death. Final professional judgment belongs to a qualified specialist.",
-  "@disclaimerNoConclusions": {"description": "Additional onboarding notice about interpretation limits."},
+  "@disclaimerNoConclusions": {
+    "description": "Additional onboarding notice about interpretation limits."
+  },
   "disclaimerConsult": "For medical advice, diagnosis or treatment, consult a qualified healthcare professional.",
-  "@disclaimerConsult": {"description": "Reminder required by store health policies."},
+  "@disclaimerConsult": {
+    "description": "Reminder required by store health policies."
+  },
   "disclaimerAccept": "I understand",
-  "@disclaimerAccept": {"description": "Accept disclaimer button."},
+  "@disclaimerAccept": {
+    "description": "Accept disclaimer button."
+  },
   "modeTitle": "How will you use Forensic Expert?",
-  "@modeTitle": {"description": "Onboarding usage mode question."},
+  "@modeTitle": {
+    "description": "Onboarding usage mode question."
+  },
   "modeSubtitle": "This adapts your dashboard. You can change it later in Profile.",
-  "@modeSubtitle": {"description": "Explains that mode can be changed."},
+  "@modeSubtitle": {
+    "description": "Explains that mode can be changed."
+  },
   "modeProfessional": "Professional",
-  "@modeProfessional": {"description": "Usage mode."},
+  "@modeProfessional": {
+    "description": "Usage mode."
+  },
   "modeProfessionalDescription": "Forensic medical and toxicology experts, laboratory specialists",
-  "@modeProfessionalDescription": {"description": "Usage mode description."},
+  "@modeProfessionalDescription": {
+    "description": "Usage mode description."
+  },
   "modeStudent": "Student / Resident",
-  "@modeStudent": {"description": "Usage mode."},
+  "@modeStudent": {
+    "description": "Usage mode."
+  },
   "modeStudentDescription": "Courses, glossary, flashcards and practice",
-  "@modeStudentDescription": {"description": "Usage mode description."},
+  "@modeStudentDescription": {
+    "description": "Usage mode description."
+  },
   "modeResearch": "Research / Education",
-  "@modeResearch": {"description": "Usage mode."},
+  "@modeResearch": {
+    "description": "Usage mode."
+  },
   "modeResearchDescription": "Scientific library, references and teaching",
-  "@modeResearchDescription": {"description": "Usage mode description."},
+  "@modeResearchDescription": {
+    "description": "Usage mode description."
+  },
   "navHome": "Home",
-  "@navHome": {"description": "Bottom navigation tab."},
+  "@navHome": {
+    "description": "Bottom navigation tab."
+  },
   "navTools": "Tools",
-  "@navTools": {"description": "Bottom navigation tab."},
+  "@navTools": {
+    "description": "Bottom navigation tab."
+  },
   "navLibrary": "Library",
-  "@navLibrary": {"description": "Bottom navigation tab."},
+  "@navLibrary": {
+    "description": "Bottom navigation tab."
+  },
   "navAi": "AI",
-  "@navAi": {"description": "Bottom navigation tab."},
+  "@navAi": {
+    "description": "Bottom navigation tab."
+  },
   "navProfile": "Profile",
-  "@navProfile": {"description": "Bottom navigation tab."},
-  "searchHint": "Search a substance, method, formula, topic or source…",
-  "@searchHint": {"description": "Global search field hint on Home."},
+  "@navProfile": {
+    "description": "Bottom navigation tab."
+  },
+  "searchHint": "Search substances, methods, tools, references…",
+  "@searchHint": {
+    "description": "Global search field hint on Home."
+  },
   "searchUnavailable": "Search will become available when the verified scientific database is installed.",
-  "@searchUnavailable": {"description": "Shown in PHASE 1 because no content pack exists yet."},
+  "@searchUnavailable": {
+    "description": "Shown in PHASE 1 because no content pack exists yet."
+  },
   "moduleForensicMedicine": "Forensic Medicine",
-  "@moduleForensicMedicine": {"description": "Home module."},
+  "@moduleForensicMedicine": {
+    "description": "Home module."
+  },
   "moduleToxicology": "Forensic Toxicology",
-  "@moduleToxicology": {"description": "Home module."},
+  "@moduleToxicology": {
+    "description": "Home module."
+  },
   "moduleLaboratory": "Laboratory",
-  "@moduleLaboratory": {"description": "Home module."},
+  "@moduleLaboratory": {
+    "description": "Home module."
+  },
   "moduleSubstances": "Substance Library",
-  "@moduleSubstances": {"description": "Home module."},
+  "@moduleSubstances": {
+    "description": "Home module."
+  },
   "moduleLearn": "Learn",
-  "@moduleLearn": {"description": "Home module."},
+  "@moduleLearn": {
+    "description": "Home module."
+  },
   "moduleAi": "Forensic AI",
-  "@moduleAi": {"description": "Home module."},
+  "@moduleAi": {
+    "description": "Home module."
+  },
   "homeModulesHeading": "Modules",
-  "@homeModulesHeading": {"description": "Section heading on Home."},
+  "@homeModulesHeading": {
+    "description": "Section heading on Home."
+  },
   "inDevelopmentTitle": "In development",
-  "@inDevelopmentTitle": {"description": "Placeholder title for sections not built yet."},
+  "@inDevelopmentTitle": {
+    "description": "Placeholder title for sections not built yet."
+  },
   "inDevelopmentBody": "This section will be available in a later development phase. No scientific content is shown until it has passed expert review.",
-  "@inDevelopmentBody": {"description": "Placeholder body."},
+  "@inDevelopmentBody": {
+    "description": "Placeholder body."
+  },
   "unverifiedBanner": "UNVERIFIED DATA — EXPERT CONFIRMATION REQUIRED",
-  "@unverifiedBanner": {"description": "Mandatory banner for content that is not reviewed."},
+  "@unverifiedBanner": {
+    "description": "Mandatory banner for content that is not reviewed."
+  },
   "statusVerified": "Verified",
-  "@statusVerified": {"description": "Scientific review status."},
+  "@statusVerified": {
+    "description": "Scientific review status."
+  },
   "statusReviewed": "Reviewed",
-  "@statusReviewed": {"description": "Scientific review status."},
+  "@statusReviewed": {
+    "description": "Scientific review status."
+  },
   "statusNeedsReview": "Needs review",
-  "@statusNeedsReview": {"description": "Scientific review status."},
+  "@statusNeedsReview": {
+    "description": "Scientific review status."
+  },
   "statusOutdated": "Outdated",
-  "@statusOutdated": {"description": "Scientific review status."},
+  "@statusOutdated": {
+    "description": "Scientific review status."
+  },
   "aiNotConnectedTitle": "Forensic AI is not connected yet",
-  "@aiNotConnectedTitle": {"description": "AI tab title in PHASE 1."},
+  "@aiNotConnectedTitle": {
+    "description": "AI tab title in PHASE 1."
+  },
   "aiNotConnectedBody": "Forensic AI will answer only from the reviewed internal knowledge base, always show its sources and never issue expert conclusions. The core library and calculators work without AI.",
-  "@aiNotConnectedBody": {"description": "AI tab body."},
+  "@aiNotConnectedBody": {
+    "description": "AI tab body."
+  },
   "aiPiiWarning": "Do not enter names, case numbers, passport data, phone numbers, addresses or other personal information.",
-  "@aiPiiWarning": {"description": "Permanent privacy warning in the AI tab."},
+  "@aiPiiWarning": {
+    "description": "Permanent privacy warning in the AI tab."
+  },
   "profileTitle": "Profile",
-  "@profileTitle": {"description": "Profile screen title."},
+  "@profileTitle": {
+    "description": "Profile screen title."
+  },
   "settingsLanguage": "Language",
-  "@settingsLanguage": {"description": "Settings row."},
+  "@settingsLanguage": {
+    "description": "Settings row."
+  },
   "settingsTheme": "Appearance",
-  "@settingsTheme": {"description": "Settings row."},
+  "@settingsTheme": {
+    "description": "Settings row."
+  },
   "themeSystem": "System",
-  "@themeSystem": {"description": "Theme option."},
+  "@themeSystem": {
+    "description": "Theme option."
+  },
   "themeLight": "Light",
-  "@themeLight": {"description": "Theme option."},
+  "@themeLight": {
+    "description": "Theme option."
+  },
   "themeDark": "Dark",
-  "@themeDark": {"description": "Theme option."},
+  "@themeDark": {
+    "description": "Theme option."
+  },
   "settingsMode": "Usage mode",
-  "@settingsMode": {"description": "Settings row."},
+  "@settingsMode": {
+    "description": "Settings row."
+  },
   "scientificDatabaseLabel": "Scientific database",
-  "@scientificDatabaseLabel": {"description": "Settings row showing content pack version."},
+  "@scientificDatabaseLabel": {
+    "description": "Settings row showing content pack version."
+  },
   "scientificDatabaseNotInstalled": "Not installed yet",
-  "@scientificDatabaseNotInstalled": {"description": "No content pack installed."},
+  "@scientificDatabaseNotInstalled": {
+    "description": "No content pack installed."
+  },
   "appVersionLabel": "App version",
-  "@appVersionLabel": {"description": "Settings row."},
+  "@appVersionLabel": {
+    "description": "Settings row."
+  },
   "legalSection": "Legal",
-  "@legalSection": {"description": "Settings section."},
+  "@legalSection": {
+    "description": "Settings section."
+  },
   "scientificDisclaimerLink": "Scientific disclaimer",
-  "@scientificDisclaimerLink": {"description": "Settings row."},
+  "@scientificDisclaimerLink": {
+    "description": "Settings row."
+  },
   "diagnosticsSection": "Diagnostics",
-  "@diagnosticsSection": {"description": "Developer diagnostics section (debug/profile builds only)."},
+  "@diagnosticsSection": {
+    "description": "Developer diagnostics section (debug/profile builds only)."
+  },
   "diagnosticsStartup": "Time to first frame: {ms} ms",
-  "@diagnosticsStartup": {"description": "Startup metric.", "placeholders": {"ms": {"type": "int"}}},
+  "@diagnosticsStartup": {
+    "description": "Startup metric.",
+    "placeholders": {
+      "ms": {
+        "type": "int"
+      }
+    }
+  },
   "diagnosticsSettingsLoad": "Settings load: {ms} ms",
-  "@diagnosticsSettingsLoad": {"description": "Startup metric.", "placeholders": {"ms": {"type": "int"}}},
+  "@diagnosticsSettingsLoad": {
+    "description": "Startup metric.",
+    "placeholders": {
+      "ms": {
+        "type": "int"
+      }
+    }
+  },
   "diagnosticsNotMeasured": "Not measured",
-  "@diagnosticsNotMeasured": {"description": "Metric not available."},
+  "@diagnosticsNotMeasured": {
+    "description": "Metric not available."
+  },
   "toolsTitle": "Tools",
-  "@toolsTitle": {"description": "Tools tab title."},
+  "@toolsTitle": {
+    "description": "Tools tab title."
+  },
   "libraryTitle": "Library",
-  "@libraryTitle": {"description": "Library tab title."}
+  "@libraryTitle": {
+    "description": "Library tab title."
+  },
+  "homeQuickAccess": "Quick access",
+  "@homeQuickAccess": {
+    "description": "Home section."
+  },
+  "homeRecentTools": "Recent tools",
+  "@homeRecentTools": {
+    "description": "Home quick access block."
+  },
+  "homeFavorites": "Favorites",
+  "@homeFavorites": {
+    "description": "Home quick access block."
+  },
+  "homeRecentSearches": "Recent searches",
+  "@homeRecentSearches": {
+    "description": "Home quick access block."
+  },
+  "homeEmptyRecentTools": "Tools you open will appear here.",
+  "@homeEmptyRecentTools": {
+    "description": "Empty state."
+  },
+  "homeEmptyFavorites": "Add tools or library entries to favorites to keep them here.",
+  "@homeEmptyFavorites": {
+    "description": "Empty state."
+  },
+  "homeEmptyRecentSearches": "Your searches are stored only on this device.",
+  "@homeEmptyRecentSearches": {
+    "description": "Empty state; also privacy note."
+  },
+  "homeContinueLearning": "Continue learning",
+  "@homeContinueLearning": {
+    "description": "Student home card title."
+  },
+  "homeStudyHubBody": "Courses, quizzes, flashcards and case studies.",
+  "@homeStudyHubBody": {
+    "description": "Student home card body."
+  },
+  "homePrototypeNotice": "Prototype build: entries marked TEST DATA are placeholders, not scientific content.",
+  "@homePrototypeNotice": {
+    "description": "Honest notice in prototype builds."
+  },
+  "testDataBadge": "TEST DATA",
+  "@testDataBadge": {
+    "description": "Badge for fixture data. Kept in English as a technical marker."
+  },
+  "seeAll": "See all",
+  "@seeAll": {
+    "description": "Link to full list."
+  },
+  "openAction": "Open",
+  "@openAction": {
+    "description": "Generic open action."
+  },
+  "toolsSubtitle": "Calculators and conversions with formula, assumptions and limitations.",
+  "@toolsSubtitle": {
+    "description": "Tools screen subtitle."
+  },
+  "toolCategoryToxicology": "Toxicology",
+  "@toolCategoryToxicology": {
+    "description": "Tools category."
+  },
+  "toolCategoryConversions": "Conversions",
+  "@toolCategoryConversions": {
+    "description": "Tools category."
+  },
+  "toolDilutionName": "Dilution (C₁V₁ = C₂V₂)",
+  "@toolDilutionName": {
+    "description": "Tool name."
+  },
+  "toolDilutionDesc": "Solve for any one of the four values of a dilution.",
+  "@toolDilutionDesc": {
+    "description": "Tool description."
+  },
+  "toolWidmarkName": "Blood alcohol (Widmark)",
+  "@toolWidmarkName": {
+    "description": "Tool name."
+  },
+  "toolWidmarkDesc": "Estimate with stated assumptions, uncertainty and limitations.",
+  "@toolWidmarkDesc": {
+    "description": "Tool description."
+  },
+  "toolBackCalcName": "Ethanol back-calculation",
+  "@toolBackCalcName": {
+    "description": "Tool name."
+  },
+  "toolBackCalcDesc": "Range-based estimate for an earlier point in time.",
+  "@toolBackCalcDesc": {
+    "description": "Tool description."
+  },
+  "toolPmiName": "Time since death (Henssge)",
+  "@toolPmiName": {
+    "description": "Tool name."
+  },
+  "toolPmiDesc": "Planned for V1.1 after scientific and licensing review.",
+  "@toolPmiDesc": {
+    "description": "Tool description."
+  },
+  "toolMolarityName": "Molarity and mass concentration",
+  "@toolMolarityName": {
+    "description": "Tool name."
+  },
+  "toolMolarityDesc": "Convert between mass and molar concentration.",
+  "@toolMolarityDesc": {
+    "description": "Tool description."
+  },
+  "toolCalibrationName": "Calibration and linear regression",
+  "@toolCalibrationName": {
+    "description": "Tool name."
+  },
+  "toolCalibrationDesc": "Calibration curve, residuals and fit statistics.",
+  "@toolCalibrationDesc": {
+    "description": "Tool description."
+  },
+  "toolLodName": "LOD / LOQ",
+  "@toolLodName": {
+    "description": "Tool name (technical abbreviations)."
+  },
+  "toolLodDesc": "Limits of detection and quantitation from calibration data.",
+  "@toolLodDesc": {
+    "description": "Tool description."
+  },
+  "toolStatsName": "Descriptive statistics",
+  "@toolStatsName": {
+    "description": "Tool name."
+  },
+  "toolStatsDesc": "Mean, median, SD and CV.",
+  "@toolStatsDesc": {
+    "description": "Tool description."
+  },
+  "toolUnitsName": "Concentration unit converter",
+  "@toolUnitsName": {
+    "description": "Tool name."
+  },
+  "toolUnitsDesc": "mg/L, µg/mL, ng/mL, mmol/L and more.",
+  "@toolUnitsDesc": {
+    "description": "Tool description."
+  },
+  "toolEthanolUnitsName": "Ethanol unit converter",
+  "@toolEthanolUnitsName": {
+    "description": "Tool name."
+  },
+  "toolEthanolUnitsDesc": "g/L, ‰, mg/dL and g/100 mL.",
+  "@toolEthanolUnitsDesc": {
+    "description": "Tool description."
+  },
+  "toolStatusAvailable": "Available",
+  "@toolStatusAvailable": {
+    "description": "Tool availability."
+  },
+  "toolStatusPlanned": "Planned",
+  "@toolStatusPlanned": {
+    "description": "Tool availability."
+  },
+  "toolPlannedBody": "This tool is planned. It will be added only after its method, formula and sources pass expert review.",
+  "@toolPlannedBody": {
+    "description": "Planned tool notice."
+  },
+  "favoriteAdd": "Add to favorites",
+  "@favoriteAdd": {
+    "description": "Favorite toggle (screen reader)."
+  },
+  "favoriteRemove": "Remove from favorites",
+  "@favoriteRemove": {
+    "description": "Favorite toggle (screen reader)."
+  },
+  "calcInput": "Input",
+  "@calcInput": {
+    "description": "Calculator section."
+  },
+  "calcMethod": "Method",
+  "@calcMethod": {
+    "description": "Calculator section."
+  },
+  "calcFormula": "Formula",
+  "@calcFormula": {
+    "description": "Calculator section."
+  },
+  "calcResult": "Result",
+  "@calcResult": {
+    "description": "Calculator section."
+  },
+  "calcAssumptions": "Assumptions",
+  "@calcAssumptions": {
+    "description": "Calculator section."
+  },
+  "calcLimitations": "Limitations",
+  "@calcLimitations": {
+    "description": "Calculator section."
+  },
+  "calcReferences": "References",
+  "@calcReferences": {
+    "description": "Calculator section."
+  },
+  "calcSolveFor": "Solve for",
+  "@calcSolveFor": {
+    "description": "Label for the unknown selector."
+  },
+  "calcStockConc": "Stock concentration (C₁)",
+  "@calcStockConc": {
+    "description": "Dilution input."
+  },
+  "calcStockVol": "Stock volume (V₁)",
+  "@calcStockVol": {
+    "description": "Dilution input."
+  },
+  "calcFinalConc": "Final concentration (C₂)",
+  "@calcFinalConc": {
+    "description": "Dilution input."
+  },
+  "calcFinalVol": "Final volume (V₂)",
+  "@calcFinalVol": {
+    "description": "Dilution input."
+  },
+  "calcUnit": "Unit",
+  "@calcUnit": {
+    "description": "Unit selector label."
+  },
+  "calcCalculate": "Calculate",
+  "@calcCalculate": {
+    "description": "Calculate button."
+  },
+  "calcEnterValues": "Enter three values to calculate the fourth.",
+  "@calcEnterValues": {
+    "description": "Hint."
+  },
+  "calcErrorPositive": "Enter a positive number.",
+  "@calcErrorPositive": {
+    "description": "Validation."
+  },
+  "calcErrorUnits": "Both concentrations must use compatible units (mass or molar).",
+  "@calcErrorUnits": {
+    "description": "Validation."
+  },
+  "calcWarnExceeds": "The final concentration is higher than the stock — check the input.",
+  "@calcWarnExceeds": {
+    "description": "Result warning."
+  },
+  "calcDilutionAssumptionConservation": "The amount of substance is conserved during dilution.",
+  "@calcDilutionAssumptionConservation": {
+    "description": "Dilution assumption."
+  },
+  "calcDilutionAssumptionMixing": "Volumes are additive and mixing is complete.",
+  "@calcDilutionAssumptionMixing": {
+    "description": "Dilution assumption."
+  },
+  "calcDilutionLimitationContraction": "Not suitable where volume contraction on mixing is significant (for example, concentrated ethanol and water).",
+  "@calcDilutionLimitationContraction": {
+    "description": "Dilution limitation."
+  },
+  "calcDefinitional": "Definitional relationship (conservation of the amount of substance); no literature values are used.",
+  "@calcDefinitional": {
+    "description": "Reference note for definitional formulas."
+  },
+  "calcNeedsReviewNotice": "This calculator has not yet been reviewed by a laboratory reviewer.",
+  "@calcNeedsReviewNotice": {
+    "description": "Calculator review notice."
+  },
+  "calcResultSemantics": "Result: {value}",
+  "@calcResultSemantics": {
+    "description": "Screen reader label for the result.",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "librarySubstances": "Substances",
+  "@librarySubstances": {
+    "description": "Library section."
+  },
+  "libraryMethods": "Analytical methods",
+  "@libraryMethods": {
+    "description": "Library section."
+  },
+  "librarySpecimens": "Specimens",
+  "@librarySpecimens": {
+    "description": "Library section."
+  },
+  "libraryReferences": "References",
+  "@libraryReferences": {
+    "description": "Library section."
+  },
+  "libraryGlossary": "Glossary",
+  "@libraryGlossary": {
+    "description": "Library section."
+  },
+  "libraryFilterHint": "Filter this section…",
+  "@libraryFilterHint": {
+    "description": "Filter field hint."
+  },
+  "filterAll": "All",
+  "@filterAll": {
+    "description": "Status filter."
+  },
+  "libraryEmptyFiltered": "No entries match the filter.",
+  "@libraryEmptyFiltered": {
+    "description": "Empty state."
+  },
+  "detailNames": "Names and synonyms",
+  "@detailNames": {
+    "description": "Substance card section."
+  },
+  "detailClass": "Class",
+  "@detailClass": {
+    "description": "Substance card section."
+  },
+  "detailMetabolites": "Metabolites",
+  "@detailMetabolites": {
+    "description": "Substance card section."
+  },
+  "detailSpecimens": "Specimens",
+  "@detailSpecimens": {
+    "description": "Substance card section."
+  },
+  "detailMethods": "Analytical methods",
+  "@detailMethods": {
+    "description": "Substance card section."
+  },
+  "detailConcentrations": "Reference concentrations",
+  "@detailConcentrations": {
+    "description": "Substance card section."
+  },
+  "detailInterpretation": "Interpretation",
+  "@detailInterpretation": {
+    "description": "Substance card section."
+  },
+  "detailStability": "Stability and storage",
+  "@detailStability": {
+    "description": "Substance card section."
+  },
+  "detailInterferences": "Interferences",
+  "@detailInterferences": {
+    "description": "Substance card section."
+  },
+  "detailReferences": "References",
+  "@detailReferences": {
+    "description": "Substance card section."
+  },
+  "detailEvidenceStatus": "Evidence status",
+  "@detailEvidenceStatus": {
+    "description": "Card field."
+  },
+  "detailLastReviewed": "Last reviewed",
+  "@detailLastReviewed": {
+    "description": "Card field."
+  },
+  "detailNotReviewed": "Not reviewed",
+  "@detailNotReviewed": {
+    "description": "Card field value."
+  },
+  "detailPlaceholder": "Placeholder — no scientific content yet.",
+  "@detailPlaceholder": {
+    "description": "Placeholder section body."
+  },
+  "detailConcentrationsNote": "A concentration alone does not establish a cause of death. Values will be shown only with matrix, population and sources.",
+  "@detailConcentrationsNote": {
+    "description": "Mandatory interpretation note."
+  },
+  "sourcesButton": "Sources",
+  "@sourcesButton": {
+    "description": "Opens provenance sheet."
+  },
+  "sourcesNone": "No sources — this entry is test data.",
+  "@sourcesNone": {
+    "description": "Sources sheet empty state."
+  },
+  "searchGroupTools": "Tools",
+  "@searchGroupTools": {
+    "description": "Search result group."
+  },
+  "searchGroupLearning": "Learning",
+  "@searchGroupLearning": {
+    "description": "Search result group."
+  },
+  "searchClearHistory": "Clear history",
+  "@searchClearHistory": {
+    "description": "Clears local search history."
+  },
+  "searchClearQuery": "Clear",
+  "@searchClearQuery": {
+    "description": "Clears the query field."
+  },
+  "searchNoResultsTitle": "No results for “{query}”",
+  "@searchNoResultsTitle": {
+    "description": "No results heading.",
+    "placeholders": {
+      "query": {
+        "type": "String"
+      }
+    }
+  },
+  "searchNoResultsBody": "Check the spelling or try another language — English, Russian and Uzbek names are supported.",
+  "@searchNoResultsBody": {
+    "description": "No results hint."
+  },
+  "searchOfflineLabel": "On this device · offline",
+  "@searchOfflineLabel": {
+    "description": "Label for internal results."
+  },
+  "searchExternalTitle": "Scientific databases (online)",
+  "@searchExternalTitle": {
+    "description": "External search section."
+  },
+  "searchExternalBody": "PubMed, PubChem and Crossref search will be added in a later version. External results are never mixed with reviewed internal data.",
+  "@searchExternalBody": {
+    "description": "External search placeholder."
+  },
+  "searchTypeToStart": "Type at least two characters.",
+  "@searchTypeToStart": {
+    "description": "Hint before typing."
+  },
+  "searchResultsSemantics": "{count} results",
+  "@searchResultsSemantics": {
+    "description": "Screen reader summary.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "aiAskTitle": "Ask Forensic AI",
+  "@aiAskTitle": {
+    "description": "AI input heading."
+  },
+  "aiInputHint": "Ask about substances, methods or limits of interpretation…",
+  "@aiInputHint": {
+    "description": "AI input hint."
+  },
+  "aiSend": "Send",
+  "@aiSend": {
+    "description": "Send button."
+  },
+  "aiPiiDetected": "Possible personal data detected: {kinds}. Remove it before sending.",
+  "@aiPiiDetected": {
+    "description": "Live PII warning.",
+    "placeholders": {
+      "kinds": {
+        "type": "String"
+      }
+    }
+  },
+  "piiKindEmail": "email",
+  "@piiKindEmail": {
+    "description": "PII kind."
+  },
+  "piiKindPhone": "phone number",
+  "@piiKindPhone": {
+    "description": "PII kind."
+  },
+  "piiKindPassport": "passport/ID number",
+  "@piiKindPassport": {
+    "description": "PII kind."
+  },
+  "piiKindCase": "case number",
+  "@piiKindCase": {
+    "description": "PII kind."
+  },
+  "piiKindName": "full name",
+  "@piiKindName": {
+    "description": "PII kind."
+  },
+  "piiKindAddress": "address",
+  "@piiKindAddress": {
+    "description": "PII kind."
+  },
+  "aiPreviewTitle": "Answer layout preview",
+  "@aiPreviewTitle": {
+    "description": "Answer layout preview heading."
+  },
+  "aiPreviewNotice": "UI prototype. The sample below is placeholder text — not AI output and not scientific content.",
+  "@aiPreviewNotice": {
+    "description": "Prototype notice."
+  },
+  "aiSectionAvailable": "Available information",
+  "@aiSectionAvailable": {
+    "description": "AI answer section."
+  },
+  "aiSectionConsiderations": "Differential considerations",
+  "@aiSectionConsiderations": {
+    "description": "AI answer section."
+  },
+  "aiSectionLimitations": "Limitations of interpretation",
+  "@aiSectionLimitations": {
+    "description": "AI answer section."
+  },
+  "aiSampleInternal": "Placeholder statement supported by a reviewed internal source.",
+  "@aiSampleInternal": {
+    "description": "Placeholder sentence."
+  },
+  "aiSampleExternal": "Placeholder statement from an external source that has not been reviewed.",
+  "@aiSampleExternal": {
+    "description": "Placeholder sentence."
+  },
+  "aiSampleLimitation": "Placeholder limitation — a final interpretation requires the full case context.",
+  "@aiSampleLimitation": {
+    "description": "Placeholder sentence."
+  },
+  "aiEvidenceInternalVerified": "Internal · verified",
+  "@aiEvidenceInternalVerified": {
+    "description": "Evidence tier label."
+  },
+  "aiEvidenceInternalReviewed": "Internal · reviewed",
+  "@aiEvidenceInternalReviewed": {
+    "description": "Evidence tier label."
+  },
+  "aiEvidenceExternal": "External · not reviewed",
+  "@aiEvidenceExternal": {
+    "description": "Evidence tier label."
+  },
+  "aiPlaceholderSource": "Placeholder source {number}",
+  "@aiPlaceholderSource": {
+    "description": "Placeholder source title.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "aiCitationSemantics": "Source {number}",
+  "@aiCitationSemantics": {
+    "description": "Screen reader label for a citation marker.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "aiExpertJudgment": "Final professional judgment belongs to a qualified specialist. Forensic AI does not issue expert conclusions.",
+  "@aiExpertJudgment": {
+    "description": "Mandatory footer."
+  },
+  "aiReport": "Report this answer",
+  "@aiReport": {
+    "description": "Report AI content (Google Play policy)."
+  },
+  "learnCourses": "Courses",
+  "@learnCourses": {
+    "description": "Learn section."
+  },
+  "learnLessons": "Lessons",
+  "@learnLessons": {
+    "description": "Learn section."
+  },
+  "learnQuiz": "Quiz",
+  "@learnQuiz": {
+    "description": "Learn section."
+  },
+  "learnFlashcards": "Flashcards",
+  "@learnFlashcards": {
+    "description": "Learn section."
+  },
+  "learnCases": "Case studies",
+  "@learnCases": {
+    "description": "Learn section."
+  },
+  "learnProgress": "Progress",
+  "@learnProgress": {
+    "description": "Learn section."
+  },
+  "learnNotStarted": "Not started",
+  "@learnNotStarted": {
+    "description": "Progress state."
+  },
+  "learnProgressEmpty": "Progress is saved on this device once you start.",
+  "@learnProgressEmpty": {
+    "description": "Progress empty state."
+  },
+  "learnLessonCount": "{count, plural, =1{1 lesson} other{{count} lessons}}",
+  "@learnLessonCount": {
+    "description": "Lesson count.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "learnStart": "Start",
+  "@learnStart": {
+    "description": "Start action."
+  },
+  "quizCheck": "Check answer",
+  "@quizCheck": {
+    "description": "Quiz action."
+  },
+  "quizCorrect": "Correct",
+  "@quizCorrect": {
+    "description": "Quiz feedback."
+  },
+  "quizIncorrect": "Incorrect",
+  "@quizIncorrect": {
+    "description": "Quiz feedback."
+  },
+  "quizExplanation": "Explanation",
+  "@quizExplanation": {
+    "description": "Quiz explanation heading."
+  },
+  "flashcardShowAnswer": "Show answer",
+  "@flashcardShowAnswer": {
+    "description": "Flashcard action."
+  },
+  "flashcardKnew": "Knew it",
+  "@flashcardKnew": {
+    "description": "Flashcard rating."
+  },
+  "flashcardAgain": "Review again",
+  "@flashcardAgain": {
+    "description": "Flashcard rating."
+  },
+  "profileSectionPreferences": "Preferences",
+  "@profileSectionPreferences": {
+    "description": "Profile section."
+  },
+  "profileSectionAccount": "Account and subscription",
+  "@profileSectionAccount": {
+    "description": "Profile section."
+  },
+  "profileSectionAbout": "About and legal",
+  "@profileSectionAbout": {
+    "description": "Profile section."
+  },
+  "settingsContrast": "Contrast",
+  "@settingsContrast": {
+    "description": "Settings row."
+  },
+  "contrastStandard": "Standard",
+  "@contrastStandard": {
+    "description": "Contrast option."
+  },
+  "contrastHigh": "High",
+  "@contrastHigh": {
+    "description": "Contrast option."
+  },
+  "contrastSystemHint": "System follows the device accessibility setting.",
+  "@contrastSystemHint": {
+    "description": "Explains system contrast."
+  },
+  "subscriptionTitle": "Subscription",
+  "@subscriptionTitle": {
+    "description": "Screen title."
+  },
+  "currentPlanFree": "Free plan",
+  "@currentPlanFree": {
+    "description": "Current plan label."
+  },
+  "privacyPolicy": "Privacy Policy",
+  "@privacyPolicy": {
+    "description": "Legal link."
+  },
+  "termsOfUse": "Terms of Use",
+  "@termsOfUse": {
+    "description": "Legal link."
+  },
+  "openSourceLicenses": "Open-source licenses",
+  "@openSourceLicenses": {
+    "description": "Legal link."
+  },
+  "aboutApp": "About",
+  "@aboutApp": {
+    "description": "About link."
+  },
+  "deleteAccount": "Delete account",
+  "@deleteAccount": {
+    "description": "Account deletion."
+  },
+  "accountNone": "No account — the app works without signing in.",
+  "@accountNone": {
+    "description": "No account state."
+  },
+  "legalDraftNotice": "Draft. This document will be published after professional legal review.",
+  "@legalDraftNotice": {
+    "description": "Draft notice on legal documents."
+  },
+  "privacySummary": "The core library and calculators work offline. Search history and progress stay on your device. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically.",
+  "@privacySummary": {
+    "description": "Privacy draft summary."
+  },
+  "aboutBody": "Professional forensic reference, education and scientific calculation software.",
+  "@aboutBody": {
+    "description": "About text."
+  },
+  "aboutVersions": "The app version and the scientific database version are tracked separately.",
+  "@aboutVersions": {
+    "description": "About text."
+  },
+  "planFree": "Free",
+  "@planFree": {
+    "description": "Plan name."
+  },
+  "planStudentPro": "Student Pro",
+  "@planStudentPro": {
+    "description": "Plan name (brand)."
+  },
+  "planProfessionalPro": "Professional Pro",
+  "@planProfessionalPro": {
+    "description": "Plan name (brand)."
+  },
+  "planCurrent": "Current plan",
+  "@planCurrent": {
+    "description": "Current plan marker."
+  },
+  "priceUnavailable": "Price unavailable",
+  "@priceUnavailable": {
+    "description": "No store price."
+  },
+  "storeNotConnected": "The store is not connected in this build. Prices are shown only from the App Store or Google Play.",
+  "@storeNotConnected": {
+    "description": "Store not connected notice."
+  },
+  "subscribeAction": "Subscribe",
+  "@subscribeAction": {
+    "description": "Subscribe button."
+  },
+  "restorePurchases": "Restore purchases",
+  "@restorePurchases": {
+    "description": "Restore purchases."
+  },
+  "manageSubscription": "Manage subscription",
+  "@manageSubscription": {
+    "description": "Manage subscription."
+  },
+  "restoreNothing": "No purchases to restore.",
+  "@restoreNothing": {
+    "description": "Restore result."
+  },
+  "featLibrary": "Substance library",
+  "@featLibrary": {
+    "description": "Plan feature."
+  },
+  "featLabTools": "Laboratory calculators",
+  "@featLabTools": {
+    "description": "Plan feature."
+  },
+  "featLearning": "Courses, quizzes and flashcards",
+  "@featLearning": {
+    "description": "Plan feature."
+  },
+  "featAdvancedTools": "Advanced forensic tools",
+  "@featAdvancedTools": {
+    "description": "Plan feature."
+  },
+  "featAi": "Forensic AI",
+  "@featAi": {
+    "description": "Plan feature."
+  },
+  "featOffline": "Offline access",
+  "@featOffline": {
+    "description": "Plan feature."
+  },
+  "featSafety": "Disclaimers, limitations and sources",
+  "@featSafety": {
+    "description": "Plan feature."
+  },
+  "valueLimited": "Limited",
+  "@valueLimited": {
+    "description": "Plan feature value."
+  },
+  "valueBasic": "Basic",
+  "@valueBasic": {
+    "description": "Plan feature value."
+  },
+  "valueExtended": "Extended",
+  "@valueExtended": {
+    "description": "Plan feature value."
+  },
+  "valueFull": "Full",
+  "@valueFull": {
+    "description": "Plan feature value."
+  },
+  "valueIncluded": "Included",
+  "@valueIncluded": {
+    "description": "Plan feature value (screen reader)."
+  },
+  "valueNotIncluded": "Not included",
+  "@valueNotIncluded": {
+    "description": "Plan feature value (screen reader)."
+  },
+  "subscriptionSafetyNote": "Disclaimers, limitations and sources are never behind a paywall.",
+  "@subscriptionSafetyNote": {
+    "description": "Subscription principle."
+  },
+  "moduleHubTools": "Tools in this section",
+  "@moduleHubTools": {
+    "description": "Module hub section."
+  },
+  "moduleHubReference": "Reference",
+  "@moduleHubReference": {
+    "description": "Module hub section."
+  },
+  "settingsJurisdiction": "Jurisdiction",
+  "@settingsJurisdiction": {
+    "description": "Settings row: country/jurisdiction for the legal layer."
+  },
+  "jurisdictionPickerIntro": "Scientific evidence is international and the same in every country. The jurisdiction only selects the legal and procedural layer (laws, controlled-substance schedules, national methods), which is always shown separately.",
+  "@jurisdictionPickerIntro": {
+    "description": "Picker intro. Explains layer separation."
+  },
+  "jurisdictionGroupGlobal": "International and regional",
+  "@jurisdictionGroupGlobal": {
+    "description": "Picker group header."
+  },
+  "jurisdictionGroupCountries": "Countries",
+  "@jurisdictionGroupCountries": {
+    "description": "Picker group header."
+  },
+  "jurisdictionNoContent": "No legal or procedural content has been loaded for this jurisdiction yet. Every future entry will show its official source, effective date, version and last verification date.",
+  "@jurisdictionNoContent": {
+    "description": "Honest empty state for the legal layer."
+  },
+  "jurisdictionCompare": "Compare jurisdictions",
+  "@jurisdictionCompare": {
+    "description": "Planned feature title."
+  },
+  "jurisdictionCompareSoon": "Planned. Becomes available once verified legal content exists for at least two jurisdictions.",
+  "@jurisdictionCompareSoon": {
+    "description": "Planned feature note."
+  },
+  "jurisdictionInternationalHint": "International is selected: only international conventions and standards apply here. Choose a country to see its legal layer.",
+  "@jurisdictionInternationalHint": {
+    "description": "Detail hint when International is selected."
+  },
+  "detailLayerScientific": "International scientific evidence",
+  "@detailLayerScientific": {
+    "description": "Detail section: global scientific core."
+  },
+  "detailLayerScientificNote": "Not country-specific. Legal status and national procedures are shown separately below.",
+  "@detailLayerScientificNote": {
+    "description": "Detail note under scientific layer."
+  },
+  "detailLayerJurisdiction": "Jurisdiction layer: {name}",
+  "@detailLayerJurisdiction": {
+    "description": "Detail section: jurisdiction layer header.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "detailLegalStatus": "Legal status",
+  "@detailLegalStatus": {
+    "description": "Detail row in jurisdiction layer."
+  },
+  "detailNationalMethods": "National methods and procedures",
+  "@detailNationalMethods": {
+    "description": "Detail row in jurisdiction layer."
+  },
+  "detailChangeJurisdiction": "Change jurisdiction",
+  "@detailChangeJurisdiction": {
+    "description": "Action."
+  }
 }

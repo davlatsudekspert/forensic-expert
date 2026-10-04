@@ -20,6 +20,8 @@ class SharedPrefsSettingsRepository implements SettingsRepository {
   static const _kTheme = 'fe.settings.theme';
   static const _kMode = 'fe.settings.mode';
   static const _kDisclaimer = 'fe.settings.disclaimer_version';
+  static const _kContrast = 'fe.settings.contrast';
+  static const _kJurisdiction = 'fe.settings.jurisdiction';
 
   @override
   Future<AppSettings> load() async => AppSettings(
@@ -29,6 +31,11 @@ class SharedPrefsSettingsRepository implements SettingsRepository {
         ThemeMode.system,
     userMode: UserMode.values.asNameMap()[_prefs.getString(_kMode)],
     acceptedDisclaimerVersion: _prefs.getInt(_kDisclaimer),
+    contrast:
+        ContrastPreference.values.asNameMap()[_prefs.getString(_kContrast)] ??
+        ContrastPreference.system,
+    jurisdictionId:
+        _prefs.getString(_kJurisdiction) ?? internationalJurisdictionId,
   );
 
   @override
@@ -36,6 +43,8 @@ class SharedPrefsSettingsRepository implements SettingsRepository {
     final locale = s.locale;
     if (locale != null) await _prefs.setString(_kLocale, locale.languageCode);
     await _prefs.setString(_kTheme, s.themeMode.name);
+    await _prefs.setString(_kContrast, s.contrast.name);
+    await _prefs.setString(_kJurisdiction, s.jurisdictionId);
     final mode = s.userMode;
     if (mode != null) await _prefs.setString(_kMode, mode.name);
     final d = s.acceptedDisclaimerVersion;

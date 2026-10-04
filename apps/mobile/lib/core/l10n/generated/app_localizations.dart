@@ -265,7 +265,7 @@ abstract class AppLocalizations {
   /// Global search field hint on Home.
   ///
   /// In en, this message translates to:
-  /// **'Search a substance, method, formula, topic or source…'**
+  /// **'Search substances, methods, tools, references…'**
   String get searchHint;
 
   /// Shown in PHASE 1 because no content pack exists yet.
@@ -483,6 +483,1218 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Library'**
   String get libraryTitle;
+
+  /// Home section.
+  ///
+  /// In en, this message translates to:
+  /// **'Quick access'**
+  String get homeQuickAccess;
+
+  /// Home quick access block.
+  ///
+  /// In en, this message translates to:
+  /// **'Recent tools'**
+  String get homeRecentTools;
+
+  /// Home quick access block.
+  ///
+  /// In en, this message translates to:
+  /// **'Favorites'**
+  String get homeFavorites;
+
+  /// Home quick access block.
+  ///
+  /// In en, this message translates to:
+  /// **'Recent searches'**
+  String get homeRecentSearches;
+
+  /// Empty state.
+  ///
+  /// In en, this message translates to:
+  /// **'Tools you open will appear here.'**
+  String get homeEmptyRecentTools;
+
+  /// Empty state.
+  ///
+  /// In en, this message translates to:
+  /// **'Add tools or library entries to favorites to keep them here.'**
+  String get homeEmptyFavorites;
+
+  /// Empty state; also privacy note.
+  ///
+  /// In en, this message translates to:
+  /// **'Your searches are stored only on this device.'**
+  String get homeEmptyRecentSearches;
+
+  /// Student home card title.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue learning'**
+  String get homeContinueLearning;
+
+  /// Student home card body.
+  ///
+  /// In en, this message translates to:
+  /// **'Courses, quizzes, flashcards and case studies.'**
+  String get homeStudyHubBody;
+
+  /// Honest notice in prototype builds.
+  ///
+  /// In en, this message translates to:
+  /// **'Prototype build: entries marked TEST DATA are placeholders, not scientific content.'**
+  String get homePrototypeNotice;
+
+  /// Badge for fixture data. Kept in English as a technical marker.
+  ///
+  /// In en, this message translates to:
+  /// **'TEST DATA'**
+  String get testDataBadge;
+
+  /// Link to full list.
+  ///
+  /// In en, this message translates to:
+  /// **'See all'**
+  String get seeAll;
+
+  /// Generic open action.
+  ///
+  /// In en, this message translates to:
+  /// **'Open'**
+  String get openAction;
+
+  /// Tools screen subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Calculators and conversions with formula, assumptions and limitations.'**
+  String get toolsSubtitle;
+
+  /// Tools category.
+  ///
+  /// In en, this message translates to:
+  /// **'Toxicology'**
+  String get toolCategoryToxicology;
+
+  /// Tools category.
+  ///
+  /// In en, this message translates to:
+  /// **'Conversions'**
+  String get toolCategoryConversions;
+
+  /// Tool name.
+  ///
+  /// In en, this message translates to:
+  /// **'Dilution (C₁V₁ = C₂V₂)'**
+  String get toolDilutionName;
+
+  /// Tool description.
+  ///
+  /// In en, this message translates to:
+  /// **'Solve for any one of the four values of a dilution.'**
+  String get toolDilutionDesc;
+
+  /// Tool name.
+  ///
+  /// In en, this message translates to:
+  /// **'Blood alcohol (Widmark)'**
+  String get toolWidmarkName;
+
+  /// Tool description.
+  ///
+  /// In en, this message translates to:
+  /// **'Estimate with stated assumptions, uncertainty and limitations.'**
+  String get toolWidmarkDesc;
+
+  /// Tool name.
+  ///
+  /// In en, this message translates to:
+  /// **'Ethanol back-calculation'**
+  String get toolBackCalcName;
+
+  /// Tool description.
+  ///
+  /// In en, this message translates to:
+  /// **'Range-based estimate for an earlier point in time.'**
+  String get toolBackCalcDesc;
+
+  /// Tool name.
+  ///
+  /// In en, this message translates to:
+  /// **'Time since death (Henssge)'**
+  String get toolPmiName;
+
+  /// Tool description.
+  ///
+  /// In en, this message translates to:
+  /// **'Planned for V1.1 after scientific and licensing review.'**
+  String get toolPmiDesc;
+
+  /// Tool name.
+  ///
+  /// In en, this message translates to:
+  /// **'Molarity and mass concentration'**
+  String get toolMolarityName;
+
+  /// Tool description.
+  ///
+  /// In en, this message translates to:
+  /// **'Convert between mass and molar concentration.'**
+  String get toolMolarityDesc;
+
+  /// Tool name.
+  ///
+  /// In en, this message translates to:
+  /// **'Calibration and linear regression'**
+  String get toolCalibrationName;
+
+  /// Tool description.
+  ///
+  /// In en, this message translates to:
+  /// **'Calibration curve, residuals and fit statistics.'**
+  String get toolCalibrationDesc;
+
+  /// Tool name (technical abbreviations).
+  ///
+  /// In en, this message translates to:
+  /// **'LOD / LOQ'**
+  String get toolLodName;
+
+  /// Tool description.
+  ///
+  /// In en, this message translates to:
+  /// **'Limits of detection and quantitation from calibration data.'**
+  String get toolLodDesc;
+
+  /// Tool name.
+  ///
+  /// In en, this message translates to:
+  /// **'Descriptive statistics'**
+  String get toolStatsName;
+
+  /// Tool description.
+  ///
+  /// In en, this message translates to:
+  /// **'Mean, median, SD and CV.'**
+  String get toolStatsDesc;
+
+  /// Tool name.
+  ///
+  /// In en, this message translates to:
+  /// **'Concentration unit converter'**
+  String get toolUnitsName;
+
+  /// Tool description.
+  ///
+  /// In en, this message translates to:
+  /// **'mg/L, µg/mL, ng/mL, mmol/L and more.'**
+  String get toolUnitsDesc;
+
+  /// Tool name.
+  ///
+  /// In en, this message translates to:
+  /// **'Ethanol unit converter'**
+  String get toolEthanolUnitsName;
+
+  /// Tool description.
+  ///
+  /// In en, this message translates to:
+  /// **'g/L, ‰, mg/dL and g/100 mL.'**
+  String get toolEthanolUnitsDesc;
+
+  /// Tool availability.
+  ///
+  /// In en, this message translates to:
+  /// **'Available'**
+  String get toolStatusAvailable;
+
+  /// Tool availability.
+  ///
+  /// In en, this message translates to:
+  /// **'Planned'**
+  String get toolStatusPlanned;
+
+  /// Planned tool notice.
+  ///
+  /// In en, this message translates to:
+  /// **'This tool is planned. It will be added only after its method, formula and sources pass expert review.'**
+  String get toolPlannedBody;
+
+  /// Favorite toggle (screen reader).
+  ///
+  /// In en, this message translates to:
+  /// **'Add to favorites'**
+  String get favoriteAdd;
+
+  /// Favorite toggle (screen reader).
+  ///
+  /// In en, this message translates to:
+  /// **'Remove from favorites'**
+  String get favoriteRemove;
+
+  /// Calculator section.
+  ///
+  /// In en, this message translates to:
+  /// **'Input'**
+  String get calcInput;
+
+  /// Calculator section.
+  ///
+  /// In en, this message translates to:
+  /// **'Method'**
+  String get calcMethod;
+
+  /// Calculator section.
+  ///
+  /// In en, this message translates to:
+  /// **'Formula'**
+  String get calcFormula;
+
+  /// Calculator section.
+  ///
+  /// In en, this message translates to:
+  /// **'Result'**
+  String get calcResult;
+
+  /// Calculator section.
+  ///
+  /// In en, this message translates to:
+  /// **'Assumptions'**
+  String get calcAssumptions;
+
+  /// Calculator section.
+  ///
+  /// In en, this message translates to:
+  /// **'Limitations'**
+  String get calcLimitations;
+
+  /// Calculator section.
+  ///
+  /// In en, this message translates to:
+  /// **'References'**
+  String get calcReferences;
+
+  /// Label for the unknown selector.
+  ///
+  /// In en, this message translates to:
+  /// **'Solve for'**
+  String get calcSolveFor;
+
+  /// Dilution input.
+  ///
+  /// In en, this message translates to:
+  /// **'Stock concentration (C₁)'**
+  String get calcStockConc;
+
+  /// Dilution input.
+  ///
+  /// In en, this message translates to:
+  /// **'Stock volume (V₁)'**
+  String get calcStockVol;
+
+  /// Dilution input.
+  ///
+  /// In en, this message translates to:
+  /// **'Final concentration (C₂)'**
+  String get calcFinalConc;
+
+  /// Dilution input.
+  ///
+  /// In en, this message translates to:
+  /// **'Final volume (V₂)'**
+  String get calcFinalVol;
+
+  /// Unit selector label.
+  ///
+  /// In en, this message translates to:
+  /// **'Unit'**
+  String get calcUnit;
+
+  /// Calculate button.
+  ///
+  /// In en, this message translates to:
+  /// **'Calculate'**
+  String get calcCalculate;
+
+  /// Hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter three values to calculate the fourth.'**
+  String get calcEnterValues;
+
+  /// Validation.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a positive number.'**
+  String get calcErrorPositive;
+
+  /// Validation.
+  ///
+  /// In en, this message translates to:
+  /// **'Both concentrations must use compatible units (mass or molar).'**
+  String get calcErrorUnits;
+
+  /// Result warning.
+  ///
+  /// In en, this message translates to:
+  /// **'The final concentration is higher than the stock — check the input.'**
+  String get calcWarnExceeds;
+
+  /// Dilution assumption.
+  ///
+  /// In en, this message translates to:
+  /// **'The amount of substance is conserved during dilution.'**
+  String get calcDilutionAssumptionConservation;
+
+  /// Dilution assumption.
+  ///
+  /// In en, this message translates to:
+  /// **'Volumes are additive and mixing is complete.'**
+  String get calcDilutionAssumptionMixing;
+
+  /// Dilution limitation.
+  ///
+  /// In en, this message translates to:
+  /// **'Not suitable where volume contraction on mixing is significant (for example, concentrated ethanol and water).'**
+  String get calcDilutionLimitationContraction;
+
+  /// Reference note for definitional formulas.
+  ///
+  /// In en, this message translates to:
+  /// **'Definitional relationship (conservation of the amount of substance); no literature values are used.'**
+  String get calcDefinitional;
+
+  /// Calculator review notice.
+  ///
+  /// In en, this message translates to:
+  /// **'This calculator has not yet been reviewed by a laboratory reviewer.'**
+  String get calcNeedsReviewNotice;
+
+  /// Screen reader label for the result.
+  ///
+  /// In en, this message translates to:
+  /// **'Result: {value}'**
+  String calcResultSemantics(String value);
+
+  /// Library section.
+  ///
+  /// In en, this message translates to:
+  /// **'Substances'**
+  String get librarySubstances;
+
+  /// Library section.
+  ///
+  /// In en, this message translates to:
+  /// **'Analytical methods'**
+  String get libraryMethods;
+
+  /// Library section.
+  ///
+  /// In en, this message translates to:
+  /// **'Specimens'**
+  String get librarySpecimens;
+
+  /// Library section.
+  ///
+  /// In en, this message translates to:
+  /// **'References'**
+  String get libraryReferences;
+
+  /// Library section.
+  ///
+  /// In en, this message translates to:
+  /// **'Glossary'**
+  String get libraryGlossary;
+
+  /// Filter field hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Filter this section…'**
+  String get libraryFilterHint;
+
+  /// Status filter.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get filterAll;
+
+  /// Empty state.
+  ///
+  /// In en, this message translates to:
+  /// **'No entries match the filter.'**
+  String get libraryEmptyFiltered;
+
+  /// Substance card section.
+  ///
+  /// In en, this message translates to:
+  /// **'Names and synonyms'**
+  String get detailNames;
+
+  /// Substance card section.
+  ///
+  /// In en, this message translates to:
+  /// **'Class'**
+  String get detailClass;
+
+  /// Substance card section.
+  ///
+  /// In en, this message translates to:
+  /// **'Metabolites'**
+  String get detailMetabolites;
+
+  /// Substance card section.
+  ///
+  /// In en, this message translates to:
+  /// **'Specimens'**
+  String get detailSpecimens;
+
+  /// Substance card section.
+  ///
+  /// In en, this message translates to:
+  /// **'Analytical methods'**
+  String get detailMethods;
+
+  /// Substance card section.
+  ///
+  /// In en, this message translates to:
+  /// **'Reference concentrations'**
+  String get detailConcentrations;
+
+  /// Substance card section.
+  ///
+  /// In en, this message translates to:
+  /// **'Interpretation'**
+  String get detailInterpretation;
+
+  /// Substance card section.
+  ///
+  /// In en, this message translates to:
+  /// **'Stability and storage'**
+  String get detailStability;
+
+  /// Substance card section.
+  ///
+  /// In en, this message translates to:
+  /// **'Interferences'**
+  String get detailInterferences;
+
+  /// Substance card section.
+  ///
+  /// In en, this message translates to:
+  /// **'References'**
+  String get detailReferences;
+
+  /// Card field.
+  ///
+  /// In en, this message translates to:
+  /// **'Evidence status'**
+  String get detailEvidenceStatus;
+
+  /// Card field.
+  ///
+  /// In en, this message translates to:
+  /// **'Last reviewed'**
+  String get detailLastReviewed;
+
+  /// Card field value.
+  ///
+  /// In en, this message translates to:
+  /// **'Not reviewed'**
+  String get detailNotReviewed;
+
+  /// Placeholder section body.
+  ///
+  /// In en, this message translates to:
+  /// **'Placeholder — no scientific content yet.'**
+  String get detailPlaceholder;
+
+  /// Mandatory interpretation note.
+  ///
+  /// In en, this message translates to:
+  /// **'A concentration alone does not establish a cause of death. Values will be shown only with matrix, population and sources.'**
+  String get detailConcentrationsNote;
+
+  /// Opens provenance sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'Sources'**
+  String get sourcesButton;
+
+  /// Sources sheet empty state.
+  ///
+  /// In en, this message translates to:
+  /// **'No sources — this entry is test data.'**
+  String get sourcesNone;
+
+  /// Search result group.
+  ///
+  /// In en, this message translates to:
+  /// **'Tools'**
+  String get searchGroupTools;
+
+  /// Search result group.
+  ///
+  /// In en, this message translates to:
+  /// **'Learning'**
+  String get searchGroupLearning;
+
+  /// Clears local search history.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear history'**
+  String get searchClearHistory;
+
+  /// Clears the query field.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear'**
+  String get searchClearQuery;
+
+  /// No results heading.
+  ///
+  /// In en, this message translates to:
+  /// **'No results for “{query}”'**
+  String searchNoResultsTitle(String query);
+
+  /// No results hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Check the spelling or try another language — English, Russian and Uzbek names are supported.'**
+  String get searchNoResultsBody;
+
+  /// Label for internal results.
+  ///
+  /// In en, this message translates to:
+  /// **'On this device · offline'**
+  String get searchOfflineLabel;
+
+  /// External search section.
+  ///
+  /// In en, this message translates to:
+  /// **'Scientific databases (online)'**
+  String get searchExternalTitle;
+
+  /// External search placeholder.
+  ///
+  /// In en, this message translates to:
+  /// **'PubMed, PubChem and Crossref search will be added in a later version. External results are never mixed with reviewed internal data.'**
+  String get searchExternalBody;
+
+  /// Hint before typing.
+  ///
+  /// In en, this message translates to:
+  /// **'Type at least two characters.'**
+  String get searchTypeToStart;
+
+  /// Screen reader summary.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} results'**
+  String searchResultsSemantics(int count);
+
+  /// AI input heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask Forensic AI'**
+  String get aiAskTitle;
+
+  /// AI input hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask about substances, methods or limits of interpretation…'**
+  String get aiInputHint;
+
+  /// Send button.
+  ///
+  /// In en, this message translates to:
+  /// **'Send'**
+  String get aiSend;
+
+  /// Live PII warning.
+  ///
+  /// In en, this message translates to:
+  /// **'Possible personal data detected: {kinds}. Remove it before sending.'**
+  String aiPiiDetected(String kinds);
+
+  /// PII kind.
+  ///
+  /// In en, this message translates to:
+  /// **'email'**
+  String get piiKindEmail;
+
+  /// PII kind.
+  ///
+  /// In en, this message translates to:
+  /// **'phone number'**
+  String get piiKindPhone;
+
+  /// PII kind.
+  ///
+  /// In en, this message translates to:
+  /// **'passport/ID number'**
+  String get piiKindPassport;
+
+  /// PII kind.
+  ///
+  /// In en, this message translates to:
+  /// **'case number'**
+  String get piiKindCase;
+
+  /// PII kind.
+  ///
+  /// In en, this message translates to:
+  /// **'full name'**
+  String get piiKindName;
+
+  /// PII kind.
+  ///
+  /// In en, this message translates to:
+  /// **'address'**
+  String get piiKindAddress;
+
+  /// Answer layout preview heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Answer layout preview'**
+  String get aiPreviewTitle;
+
+  /// Prototype notice.
+  ///
+  /// In en, this message translates to:
+  /// **'UI prototype. The sample below is placeholder text — not AI output and not scientific content.'**
+  String get aiPreviewNotice;
+
+  /// AI answer section.
+  ///
+  /// In en, this message translates to:
+  /// **'Available information'**
+  String get aiSectionAvailable;
+
+  /// AI answer section.
+  ///
+  /// In en, this message translates to:
+  /// **'Differential considerations'**
+  String get aiSectionConsiderations;
+
+  /// AI answer section.
+  ///
+  /// In en, this message translates to:
+  /// **'Limitations of interpretation'**
+  String get aiSectionLimitations;
+
+  /// Placeholder sentence.
+  ///
+  /// In en, this message translates to:
+  /// **'Placeholder statement supported by a reviewed internal source.'**
+  String get aiSampleInternal;
+
+  /// Placeholder sentence.
+  ///
+  /// In en, this message translates to:
+  /// **'Placeholder statement from an external source that has not been reviewed.'**
+  String get aiSampleExternal;
+
+  /// Placeholder sentence.
+  ///
+  /// In en, this message translates to:
+  /// **'Placeholder limitation — a final interpretation requires the full case context.'**
+  String get aiSampleLimitation;
+
+  /// Evidence tier label.
+  ///
+  /// In en, this message translates to:
+  /// **'Internal · verified'**
+  String get aiEvidenceInternalVerified;
+
+  /// Evidence tier label.
+  ///
+  /// In en, this message translates to:
+  /// **'Internal · reviewed'**
+  String get aiEvidenceInternalReviewed;
+
+  /// Evidence tier label.
+  ///
+  /// In en, this message translates to:
+  /// **'External · not reviewed'**
+  String get aiEvidenceExternal;
+
+  /// Placeholder source title.
+  ///
+  /// In en, this message translates to:
+  /// **'Placeholder source {number}'**
+  String aiPlaceholderSource(int number);
+
+  /// Screen reader label for a citation marker.
+  ///
+  /// In en, this message translates to:
+  /// **'Source {number}'**
+  String aiCitationSemantics(int number);
+
+  /// Mandatory footer.
+  ///
+  /// In en, this message translates to:
+  /// **'Final professional judgment belongs to a qualified specialist. Forensic AI does not issue expert conclusions.'**
+  String get aiExpertJudgment;
+
+  /// Report AI content (Google Play policy).
+  ///
+  /// In en, this message translates to:
+  /// **'Report this answer'**
+  String get aiReport;
+
+  /// Learn section.
+  ///
+  /// In en, this message translates to:
+  /// **'Courses'**
+  String get learnCourses;
+
+  /// Learn section.
+  ///
+  /// In en, this message translates to:
+  /// **'Lessons'**
+  String get learnLessons;
+
+  /// Learn section.
+  ///
+  /// In en, this message translates to:
+  /// **'Quiz'**
+  String get learnQuiz;
+
+  /// Learn section.
+  ///
+  /// In en, this message translates to:
+  /// **'Flashcards'**
+  String get learnFlashcards;
+
+  /// Learn section.
+  ///
+  /// In en, this message translates to:
+  /// **'Case studies'**
+  String get learnCases;
+
+  /// Learn section.
+  ///
+  /// In en, this message translates to:
+  /// **'Progress'**
+  String get learnProgress;
+
+  /// Progress state.
+  ///
+  /// In en, this message translates to:
+  /// **'Not started'**
+  String get learnNotStarted;
+
+  /// Progress empty state.
+  ///
+  /// In en, this message translates to:
+  /// **'Progress is saved on this device once you start.'**
+  String get learnProgressEmpty;
+
+  /// Lesson count.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 lesson} other{{count} lessons}}'**
+  String learnLessonCount(int count);
+
+  /// Start action.
+  ///
+  /// In en, this message translates to:
+  /// **'Start'**
+  String get learnStart;
+
+  /// Quiz action.
+  ///
+  /// In en, this message translates to:
+  /// **'Check answer'**
+  String get quizCheck;
+
+  /// Quiz feedback.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct'**
+  String get quizCorrect;
+
+  /// Quiz feedback.
+  ///
+  /// In en, this message translates to:
+  /// **'Incorrect'**
+  String get quizIncorrect;
+
+  /// Quiz explanation heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Explanation'**
+  String get quizExplanation;
+
+  /// Flashcard action.
+  ///
+  /// In en, this message translates to:
+  /// **'Show answer'**
+  String get flashcardShowAnswer;
+
+  /// Flashcard rating.
+  ///
+  /// In en, this message translates to:
+  /// **'Knew it'**
+  String get flashcardKnew;
+
+  /// Flashcard rating.
+  ///
+  /// In en, this message translates to:
+  /// **'Review again'**
+  String get flashcardAgain;
+
+  /// Profile section.
+  ///
+  /// In en, this message translates to:
+  /// **'Preferences'**
+  String get profileSectionPreferences;
+
+  /// Profile section.
+  ///
+  /// In en, this message translates to:
+  /// **'Account and subscription'**
+  String get profileSectionAccount;
+
+  /// Profile section.
+  ///
+  /// In en, this message translates to:
+  /// **'About and legal'**
+  String get profileSectionAbout;
+
+  /// Settings row.
+  ///
+  /// In en, this message translates to:
+  /// **'Contrast'**
+  String get settingsContrast;
+
+  /// Contrast option.
+  ///
+  /// In en, this message translates to:
+  /// **'Standard'**
+  String get contrastStandard;
+
+  /// Contrast option.
+  ///
+  /// In en, this message translates to:
+  /// **'High'**
+  String get contrastHigh;
+
+  /// Explains system contrast.
+  ///
+  /// In en, this message translates to:
+  /// **'System follows the device accessibility setting.'**
+  String get contrastSystemHint;
+
+  /// Screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscription'**
+  String get subscriptionTitle;
+
+  /// Current plan label.
+  ///
+  /// In en, this message translates to:
+  /// **'Free plan'**
+  String get currentPlanFree;
+
+  /// Legal link.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy Policy'**
+  String get privacyPolicy;
+
+  /// Legal link.
+  ///
+  /// In en, this message translates to:
+  /// **'Terms of Use'**
+  String get termsOfUse;
+
+  /// Legal link.
+  ///
+  /// In en, this message translates to:
+  /// **'Open-source licenses'**
+  String get openSourceLicenses;
+
+  /// About link.
+  ///
+  /// In en, this message translates to:
+  /// **'About'**
+  String get aboutApp;
+
+  /// Account deletion.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete account'**
+  String get deleteAccount;
+
+  /// No account state.
+  ///
+  /// In en, this message translates to:
+  /// **'No account — the app works without signing in.'**
+  String get accountNone;
+
+  /// Draft notice on legal documents.
+  ///
+  /// In en, this message translates to:
+  /// **'Draft. This document will be published after professional legal review.'**
+  String get legalDraftNotice;
+
+  /// Privacy draft summary.
+  ///
+  /// In en, this message translates to:
+  /// **'The core library and calculators work offline. Search history and progress stay on your device. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically.'**
+  String get privacySummary;
+
+  /// About text.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional forensic reference, education and scientific calculation software.'**
+  String get aboutBody;
+
+  /// About text.
+  ///
+  /// In en, this message translates to:
+  /// **'The app version and the scientific database version are tracked separately.'**
+  String get aboutVersions;
+
+  /// Plan name.
+  ///
+  /// In en, this message translates to:
+  /// **'Free'**
+  String get planFree;
+
+  /// Plan name (brand).
+  ///
+  /// In en, this message translates to:
+  /// **'Student Pro'**
+  String get planStudentPro;
+
+  /// Plan name (brand).
+  ///
+  /// In en, this message translates to:
+  /// **'Professional Pro'**
+  String get planProfessionalPro;
+
+  /// Current plan marker.
+  ///
+  /// In en, this message translates to:
+  /// **'Current plan'**
+  String get planCurrent;
+
+  /// No store price.
+  ///
+  /// In en, this message translates to:
+  /// **'Price unavailable'**
+  String get priceUnavailable;
+
+  /// Store not connected notice.
+  ///
+  /// In en, this message translates to:
+  /// **'The store is not connected in this build. Prices are shown only from the App Store or Google Play.'**
+  String get storeNotConnected;
+
+  /// Subscribe button.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscribe'**
+  String get subscribeAction;
+
+  /// Restore purchases.
+  ///
+  /// In en, this message translates to:
+  /// **'Restore purchases'**
+  String get restorePurchases;
+
+  /// Manage subscription.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage subscription'**
+  String get manageSubscription;
+
+  /// Restore result.
+  ///
+  /// In en, this message translates to:
+  /// **'No purchases to restore.'**
+  String get restoreNothing;
+
+  /// Plan feature.
+  ///
+  /// In en, this message translates to:
+  /// **'Substance library'**
+  String get featLibrary;
+
+  /// Plan feature.
+  ///
+  /// In en, this message translates to:
+  /// **'Laboratory calculators'**
+  String get featLabTools;
+
+  /// Plan feature.
+  ///
+  /// In en, this message translates to:
+  /// **'Courses, quizzes and flashcards'**
+  String get featLearning;
+
+  /// Plan feature.
+  ///
+  /// In en, this message translates to:
+  /// **'Advanced forensic tools'**
+  String get featAdvancedTools;
+
+  /// Plan feature.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic AI'**
+  String get featAi;
+
+  /// Plan feature.
+  ///
+  /// In en, this message translates to:
+  /// **'Offline access'**
+  String get featOffline;
+
+  /// Plan feature.
+  ///
+  /// In en, this message translates to:
+  /// **'Disclaimers, limitations and sources'**
+  String get featSafety;
+
+  /// Plan feature value.
+  ///
+  /// In en, this message translates to:
+  /// **'Limited'**
+  String get valueLimited;
+
+  /// Plan feature value.
+  ///
+  /// In en, this message translates to:
+  /// **'Basic'**
+  String get valueBasic;
+
+  /// Plan feature value.
+  ///
+  /// In en, this message translates to:
+  /// **'Extended'**
+  String get valueExtended;
+
+  /// Plan feature value.
+  ///
+  /// In en, this message translates to:
+  /// **'Full'**
+  String get valueFull;
+
+  /// Plan feature value (screen reader).
+  ///
+  /// In en, this message translates to:
+  /// **'Included'**
+  String get valueIncluded;
+
+  /// Plan feature value (screen reader).
+  ///
+  /// In en, this message translates to:
+  /// **'Not included'**
+  String get valueNotIncluded;
+
+  /// Subscription principle.
+  ///
+  /// In en, this message translates to:
+  /// **'Disclaimers, limitations and sources are never behind a paywall.'**
+  String get subscriptionSafetyNote;
+
+  /// Module hub section.
+  ///
+  /// In en, this message translates to:
+  /// **'Tools in this section'**
+  String get moduleHubTools;
+
+  /// Module hub section.
+  ///
+  /// In en, this message translates to:
+  /// **'Reference'**
+  String get moduleHubReference;
+
+  /// Settings row: country/jurisdiction for the legal layer.
+  ///
+  /// In en, this message translates to:
+  /// **'Jurisdiction'**
+  String get settingsJurisdiction;
+
+  /// Picker intro. Explains layer separation.
+  ///
+  /// In en, this message translates to:
+  /// **'Scientific evidence is international and the same in every country. The jurisdiction only selects the legal and procedural layer (laws, controlled-substance schedules, national methods), which is always shown separately.'**
+  String get jurisdictionPickerIntro;
+
+  /// Picker group header.
+  ///
+  /// In en, this message translates to:
+  /// **'International and regional'**
+  String get jurisdictionGroupGlobal;
+
+  /// Picker group header.
+  ///
+  /// In en, this message translates to:
+  /// **'Countries'**
+  String get jurisdictionGroupCountries;
+
+  /// Honest empty state for the legal layer.
+  ///
+  /// In en, this message translates to:
+  /// **'No legal or procedural content has been loaded for this jurisdiction yet. Every future entry will show its official source, effective date, version and last verification date.'**
+  String get jurisdictionNoContent;
+
+  /// Planned feature title.
+  ///
+  /// In en, this message translates to:
+  /// **'Compare jurisdictions'**
+  String get jurisdictionCompare;
+
+  /// Planned feature note.
+  ///
+  /// In en, this message translates to:
+  /// **'Planned. Becomes available once verified legal content exists for at least two jurisdictions.'**
+  String get jurisdictionCompareSoon;
+
+  /// Detail hint when International is selected.
+  ///
+  /// In en, this message translates to:
+  /// **'International is selected: only international conventions and standards apply here. Choose a country to see its legal layer.'**
+  String get jurisdictionInternationalHint;
+
+  /// Detail section: global scientific core.
+  ///
+  /// In en, this message translates to:
+  /// **'International scientific evidence'**
+  String get detailLayerScientific;
+
+  /// Detail note under scientific layer.
+  ///
+  /// In en, this message translates to:
+  /// **'Not country-specific. Legal status and national procedures are shown separately below.'**
+  String get detailLayerScientificNote;
+
+  /// Detail section: jurisdiction layer header.
+  ///
+  /// In en, this message translates to:
+  /// **'Jurisdiction layer: {name}'**
+  String detailLayerJurisdiction(String name);
+
+  /// Detail row in jurisdiction layer.
+  ///
+  /// In en, this message translates to:
+  /// **'Legal status'**
+  String get detailLegalStatus;
+
+  /// Detail row in jurisdiction layer.
+  ///
+  /// In en, this message translates to:
+  /// **'National methods and procedures'**
+  String get detailNationalMethods;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Change jurisdiction'**
+  String get detailChangeJurisdiction;
 }
 
 class _AppLocalizationsDelegate
