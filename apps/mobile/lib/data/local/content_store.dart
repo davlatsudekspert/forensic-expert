@@ -1,0 +1,87 @@
+import 'dart:io';
+
+import 'package:drift_flutter/drift_flutter.dart';
+import 'package:fe_database/fe_database.dart';
+import 'package:flutter/foundation.dart';
+import 'package:path_provider/path_provider.dart';
+
+import '../../core/perf/startup_metrics.dart';
+
+/// O‘rnatilgan ilmiy baza holati.
+@immutable
+class ContentStatus {
+  const ContentStatus({required this.packVersion, required this.isTestData});
+
+  static const notInstalled = ContentStatus(
+    packVersion: null,
+    isTestData: false,
+  );
+
+  /// Masalan `2026.10`; `null` — paket o‘rnatilmagan.
+  final String? packVersion;
+  final bool isTestData;
+
+  bool get isInstalled => packVersion != null;
+}
+
+/// Lokal kontent bazasiga kirish nuqtasi.
+///
+/// * Baza **hech qachon** startup yo‘lida ochilmaydi — birinchi kadrdan
+///   keyin, kerak bo‘lganda (lazy).
+/// * Ochilish vaqti `content_db.open` sifatida o‘lchanadi.
+/// * Faol paket `fe_content_package` `PackInstaller.activeDir` da turadi.
+abstract interface class ContentStore {
+  Future<ContentStatus> status();
+}
+
+class LocalContentStore implements ContentStore {
+  LocalContentStore({Future<Directory> Function()? supportDir})
+    : _supportDir = supportDir ?? getApplicationSupportDirectory;
+
+  final Future<Directory> Function() _supportDir;
+  ContentDatabase? _db;
+
+  static const _packDir = 'content/active';
+  static const _dbFile = 'content.db';
+
+  Future<File> _activeDbFile() async {
+    final dir = await _supportDir();
+    return File('${dir.path}/$_packDir/$_dbFile');
+  }
+
+  @override
+  Future<ContentStatus> status() async {
+    final file = await _activeDbFile();
+    if (!file.existsSync()) return ContentStatus.notInstalled;
+    final db = await _open(file);
+    return ContentStatus(
+      packVersion: await db.metaValue('pack_version'),
+      isTestData: await db.containsTestData(),
+    );
+  }
+
+  Future<ContentDatabase> _open(File file) async {
+    final existing = _db;
+    if (existing != null) return existing;
+    return StartupMetrics.instance.measure(PerfMarks.contentDbOpen, () async {
+      final db = ContentDatabase(
+        driftDatabase(
+          name: 'content',
+          native: DriftNativeOptions(databasePath: () async => file.path),
+        ),
+      );
+      await db.customSelect('SELECT 1').get();
+      return _db = db;
+    });
+  }
+}
+
+/// Testlar uchun.
+class FakeContentStore implements ContentStore {
+  const FakeContentStore([this.value = ContentStatus.notInstalled]);
+
+  final ContentStatus value;
+
+  @override
+  Future<ContentStatus> status() async => value;
+}
