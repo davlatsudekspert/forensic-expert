@@ -12,7 +12,12 @@ class ContentDatabase extends _$ContentDatabase {
   ContentDatabase(super.executor);
 
   /// Kontent sxemasi versiyasi — `PackManifest.schemaVersion` bilan mos.
-  static const contentSchemaVersion = 1;
+  ///
+  /// 2 — Jurisdiction Layer (jurisdictions, jurisdictional_instruments,
+  /// jurisdictional_rules; claims.knowledge_layer). content.db paket sifatida
+  /// to‘liq almashtiriladi, shuning uchun in-place migratsiya kerak emas;
+  /// eski (v1) paket verifier’da rad etiladi.
+  static const contentSchemaVersion = 2;
 
   @override
   int get schemaVersion => contentSchemaVersion;
@@ -38,7 +43,10 @@ class ContentDatabase extends _$ContentDatabase {
       '(SELECT COUNT(*) FROM sources WHERE is_test_data = 1) + '
       '(SELECT COUNT(*) FROM claims WHERE is_test_data = 1) + '
       '(SELECT COUNT(*) FROM substances WHERE is_test_data = 1) + '
-      '(SELECT COUNT(*) FROM concentration_records WHERE is_test_data = 1) '
+      '(SELECT COUNT(*) FROM concentration_records WHERE is_test_data = 1) + '
+      '(SELECT COUNT(*) FROM jurisdictional_instruments '
+      'WHERE is_test_data = 1) + '
+      '(SELECT COUNT(*) FROM jurisdictional_rules WHERE is_test_data = 1) '
       'AS n',
     ).getSingle();
     return row.read<int>('n') > 0;

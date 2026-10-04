@@ -1408,6 +1408,1784 @@ class SourcesCompanion extends UpdateCompanion<Source> {
   }
 }
 
+class Jurisdictions extends Table with TableInfo<Jurisdictions, Jurisdiction> {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  Jurisdictions(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _jurisdictionIdMeta = const VerificationMeta(
+    'jurisdictionId',
+  );
+  late final GeneratedColumn<String> jurisdictionId = GeneratedColumn<String>(
+    'jurisdiction_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL PRIMARY KEY',
+  );
+  static const VerificationMeta _levelMeta = const VerificationMeta('level');
+  late final GeneratedColumn<String> level = GeneratedColumn<String>(
+    'level',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (level IN (\'international\', \'supranational\', \'country\', \'subdivision\'))',
+  );
+  static const VerificationMeta _parentIdMeta = const VerificationMeta(
+    'parentId',
+  );
+  late final GeneratedColumn<String> parentId = GeneratedColumn<String>(
+    'parent_id',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: 'REFERENCES jurisdictions(jurisdiction_id)',
+  );
+  static const VerificationMeta _iso3166Meta = const VerificationMeta(
+    'iso3166',
+  );
+  late final GeneratedColumn<String> iso3166 = GeneratedColumn<String>(
+    'iso3166',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _namesJsonMeta = const VerificationMeta(
+    'namesJson',
+  );
+  late final GeneratedColumn<String> namesJson = GeneratedColumn<String>(
+    'names_json',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: 'NOT NULL DEFAULT \'{}\'',
+    defaultValue: const CustomExpression('\'{}\''),
+  );
+  @override
+  List<GeneratedColumn> get $columns => [
+    jurisdictionId,
+    level,
+    parentId,
+    iso3166,
+    namesJson,
+  ];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'jurisdictions';
+  @override
+  VerificationContext validateIntegrity(
+    Insertable<Jurisdiction> instance, {
+    bool isInserting = false,
+  }) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('jurisdiction_id')) {
+      context.handle(
+        _jurisdictionIdMeta,
+        jurisdictionId.isAcceptableOrUnknown(
+          data['jurisdiction_id']!,
+          _jurisdictionIdMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_jurisdictionIdMeta);
+    }
+    if (data.containsKey('level')) {
+      context.handle(
+        _levelMeta,
+        level.isAcceptableOrUnknown(data['level']!, _levelMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_levelMeta);
+    }
+    if (data.containsKey('parent_id')) {
+      context.handle(
+        _parentIdMeta,
+        parentId.isAcceptableOrUnknown(data['parent_id']!, _parentIdMeta),
+      );
+    }
+    if (data.containsKey('iso3166')) {
+      context.handle(
+        _iso3166Meta,
+        iso3166.isAcceptableOrUnknown(data['iso3166']!, _iso3166Meta),
+      );
+    }
+    if (data.containsKey('names_json')) {
+      context.handle(
+        _namesJsonMeta,
+        namesJson.isAcceptableOrUnknown(data['names_json']!, _namesJsonMeta),
+      );
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {jurisdictionId};
+  @override
+  Jurisdiction map(Map<String, dynamic> data, {String? tablePrefix}) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return Jurisdiction(
+      jurisdictionId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}jurisdiction_id'],
+      )!,
+      level: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}level'],
+      )!,
+      parentId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}parent_id'],
+      ),
+      iso3166: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}iso3166'],
+      ),
+      namesJson: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}names_json'],
+      )!,
+    );
+  }
+
+  @override
+  Jurisdictions createAlias(String alias) {
+    return Jurisdictions(attachedDatabase, alias);
+  }
+
+  @override
+  bool get withoutRowId => true;
+  @override
+  bool get dontWriteConstraints => true;
+}
+
+class Jurisdiction extends DataClass implements Insertable<Jurisdiction> {
+  final String jurisdictionId;
+
+  /// INT, EU, UZ, US, US-CA
+  final String level;
+  final String? parentId;
+  final String? iso3166;
+  final String namesJson;
+  const Jurisdiction({
+    required this.jurisdictionId,
+    required this.level,
+    this.parentId,
+    this.iso3166,
+    required this.namesJson,
+  });
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['jurisdiction_id'] = Variable<String>(jurisdictionId);
+    map['level'] = Variable<String>(level);
+    if (!nullToAbsent || parentId != null) {
+      map['parent_id'] = Variable<String>(parentId);
+    }
+    if (!nullToAbsent || iso3166 != null) {
+      map['iso3166'] = Variable<String>(iso3166);
+    }
+    map['names_json'] = Variable<String>(namesJson);
+    return map;
+  }
+
+  JurisdictionsCompanion toCompanion(bool nullToAbsent) {
+    return JurisdictionsCompanion(
+      jurisdictionId: Value(jurisdictionId),
+      level: Value(level),
+      parentId: parentId == null && nullToAbsent
+          ? const Value.absent()
+          : Value(parentId),
+      iso3166: iso3166 == null && nullToAbsent
+          ? const Value.absent()
+          : Value(iso3166),
+      namesJson: Value(namesJson),
+    );
+  }
+
+  factory Jurisdiction.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return Jurisdiction(
+      jurisdictionId: serializer.fromJson<String>(json['jurisdiction_id']),
+      level: serializer.fromJson<String>(json['level']),
+      parentId: serializer.fromJson<String?>(json['parent_id']),
+      iso3166: serializer.fromJson<String?>(json['iso3166']),
+      namesJson: serializer.fromJson<String>(json['names_json']),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'jurisdiction_id': serializer.toJson<String>(jurisdictionId),
+      'level': serializer.toJson<String>(level),
+      'parent_id': serializer.toJson<String?>(parentId),
+      'iso3166': serializer.toJson<String?>(iso3166),
+      'names_json': serializer.toJson<String>(namesJson),
+    };
+  }
+
+  Jurisdiction copyWith({
+    String? jurisdictionId,
+    String? level,
+    Value<String?> parentId = const Value.absent(),
+    Value<String?> iso3166 = const Value.absent(),
+    String? namesJson,
+  }) => Jurisdiction(
+    jurisdictionId: jurisdictionId ?? this.jurisdictionId,
+    level: level ?? this.level,
+    parentId: parentId.present ? parentId.value : this.parentId,
+    iso3166: iso3166.present ? iso3166.value : this.iso3166,
+    namesJson: namesJson ?? this.namesJson,
+  );
+  Jurisdiction copyWithCompanion(JurisdictionsCompanion data) {
+    return Jurisdiction(
+      jurisdictionId: data.jurisdictionId.present
+          ? data.jurisdictionId.value
+          : this.jurisdictionId,
+      level: data.level.present ? data.level.value : this.level,
+      parentId: data.parentId.present ? data.parentId.value : this.parentId,
+      iso3166: data.iso3166.present ? data.iso3166.value : this.iso3166,
+      namesJson: data.namesJson.present ? data.namesJson.value : this.namesJson,
+    );
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('Jurisdiction(')
+          ..write('jurisdictionId: $jurisdictionId, ')
+          ..write('level: $level, ')
+          ..write('parentId: $parentId, ')
+          ..write('iso3166: $iso3166, ')
+          ..write('namesJson: $namesJson')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode =>
+      Object.hash(jurisdictionId, level, parentId, iso3166, namesJson);
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is Jurisdiction &&
+          other.jurisdictionId == this.jurisdictionId &&
+          other.level == this.level &&
+          other.parentId == this.parentId &&
+          other.iso3166 == this.iso3166 &&
+          other.namesJson == this.namesJson);
+}
+
+class JurisdictionsCompanion extends UpdateCompanion<Jurisdiction> {
+  final Value<String> jurisdictionId;
+  final Value<String> level;
+  final Value<String?> parentId;
+  final Value<String?> iso3166;
+  final Value<String> namesJson;
+  const JurisdictionsCompanion({
+    this.jurisdictionId = const Value.absent(),
+    this.level = const Value.absent(),
+    this.parentId = const Value.absent(),
+    this.iso3166 = const Value.absent(),
+    this.namesJson = const Value.absent(),
+  });
+  JurisdictionsCompanion.insert({
+    required String jurisdictionId,
+    required String level,
+    this.parentId = const Value.absent(),
+    this.iso3166 = const Value.absent(),
+    this.namesJson = const Value.absent(),
+  }) : jurisdictionId = Value(jurisdictionId),
+       level = Value(level);
+  static Insertable<Jurisdiction> custom({
+    Expression<String>? jurisdictionId,
+    Expression<String>? level,
+    Expression<String>? parentId,
+    Expression<String>? iso3166,
+    Expression<String>? namesJson,
+  }) {
+    return RawValuesInsertable({
+      if (jurisdictionId != null) 'jurisdiction_id': jurisdictionId,
+      if (level != null) 'level': level,
+      if (parentId != null) 'parent_id': parentId,
+      if (iso3166 != null) 'iso3166': iso3166,
+      if (namesJson != null) 'names_json': namesJson,
+    });
+  }
+
+  JurisdictionsCompanion copyWith({
+    Value<String>? jurisdictionId,
+    Value<String>? level,
+    Value<String?>? parentId,
+    Value<String?>? iso3166,
+    Value<String>? namesJson,
+  }) {
+    return JurisdictionsCompanion(
+      jurisdictionId: jurisdictionId ?? this.jurisdictionId,
+      level: level ?? this.level,
+      parentId: parentId ?? this.parentId,
+      iso3166: iso3166 ?? this.iso3166,
+      namesJson: namesJson ?? this.namesJson,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (jurisdictionId.present) {
+      map['jurisdiction_id'] = Variable<String>(jurisdictionId.value);
+    }
+    if (level.present) {
+      map['level'] = Variable<String>(level.value);
+    }
+    if (parentId.present) {
+      map['parent_id'] = Variable<String>(parentId.value);
+    }
+    if (iso3166.present) {
+      map['iso3166'] = Variable<String>(iso3166.value);
+    }
+    if (namesJson.present) {
+      map['names_json'] = Variable<String>(namesJson.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('JurisdictionsCompanion(')
+          ..write('jurisdictionId: $jurisdictionId, ')
+          ..write('level: $level, ')
+          ..write('parentId: $parentId, ')
+          ..write('iso3166: $iso3166, ')
+          ..write('namesJson: $namesJson')
+          ..write(')'))
+        .toString();
+  }
+}
+
+class JurisdictionalInstruments extends Table
+    with TableInfo<JurisdictionalInstruments, JurisdictionalInstrument> {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  JurisdictionalInstruments(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _instrumentIdMeta = const VerificationMeta(
+    'instrumentId',
+  );
+  late final GeneratedColumn<String> instrumentId = GeneratedColumn<String>(
+    'instrument_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL PRIMARY KEY',
+  );
+  static const VerificationMeta _jurisdictionIdMeta = const VerificationMeta(
+    'jurisdictionId',
+  );
+  late final GeneratedColumn<String> jurisdictionId = GeneratedColumn<String>(
+    'jurisdiction_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL REFERENCES jurisdictions(jurisdiction_id)',
+  );
+  static const VerificationMeta _instrumentTypeMeta = const VerificationMeta(
+    'instrumentType',
+  );
+  late final GeneratedColumn<String> instrumentType = GeneratedColumn<String>(
+    'instrument_type',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (instrument_type IN (\'law\', \'regulation\', \'controlled_substance_schedule\', \'standard\', \'national_method\', \'official_guideline\', \'international_convention\'))',
+  );
+  static const VerificationMeta _titlesJsonMeta = const VerificationMeta(
+    'titlesJson',
+  );
+  late final GeneratedColumn<String> titlesJson = GeneratedColumn<String>(
+    'titles_json',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: 'NOT NULL DEFAULT \'{}\'',
+    defaultValue: const CustomExpression('\'{}\''),
+  );
+  static const VerificationMeta _officialSourceIdMeta = const VerificationMeta(
+    'officialSourceId',
+  );
+  late final GeneratedColumn<String> officialSourceId = GeneratedColumn<String>(
+    'official_source_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL REFERENCES sources(source_id)',
+  );
+  static const VerificationMeta _officialReferenceMeta = const VerificationMeta(
+    'officialReference',
+  );
+  late final GeneratedColumn<String> officialReference =
+      GeneratedColumn<String>(
+        'official_reference',
+        aliasedName,
+        true,
+        type: DriftSqlType.string,
+        requiredDuringInsert: false,
+        $customConstraints: '',
+      );
+  static const VerificationMeta _effectiveFromMeta = const VerificationMeta(
+    'effectiveFrom',
+  );
+  late final GeneratedColumn<String> effectiveFrom = GeneratedColumn<String>(
+    'effective_from',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _effectiveToMeta = const VerificationMeta(
+    'effectiveTo',
+  );
+  late final GeneratedColumn<String> effectiveTo = GeneratedColumn<String>(
+    'effective_to',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _versionMeta = const VerificationMeta(
+    'version',
+  );
+  late final GeneratedColumn<String> version = GeneratedColumn<String>(
+    'version',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (length(version) > 0)',
+  );
+  static const VerificationMeta _lastVerifiedAtMeta = const VerificationMeta(
+    'lastVerifiedAt',
+  );
+  late final GeneratedColumn<String> lastVerifiedAt = GeneratedColumn<String>(
+    'last_verified_at',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _reviewStatusMeta = const VerificationMeta(
+    'reviewStatus',
+  );
+  late final GeneratedColumn<String> reviewStatus = GeneratedColumn<String>(
+    'review_status',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (review_status IN (\'VERIFIED\', \'REVIEWED\', \'NEEDS_REVIEW\', \'OUTDATED\', \'REJECTED\'))',
+  );
+  static const VerificationMeta _isTestDataMeta = const VerificationMeta(
+    'isTestData',
+  );
+  late final GeneratedColumn<int> isTestData = GeneratedColumn<int>(
+    'is_test_data',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+    $customConstraints: 'NOT NULL DEFAULT 0',
+    defaultValue: const CustomExpression('0'),
+  );
+  @override
+  List<GeneratedColumn> get $columns => [
+    instrumentId,
+    jurisdictionId,
+    instrumentType,
+    titlesJson,
+    officialSourceId,
+    officialReference,
+    effectiveFrom,
+    effectiveTo,
+    version,
+    lastVerifiedAt,
+    reviewStatus,
+    isTestData,
+  ];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'jurisdictional_instruments';
+  @override
+  VerificationContext validateIntegrity(
+    Insertable<JurisdictionalInstrument> instance, {
+    bool isInserting = false,
+  }) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('instrument_id')) {
+      context.handle(
+        _instrumentIdMeta,
+        instrumentId.isAcceptableOrUnknown(
+          data['instrument_id']!,
+          _instrumentIdMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_instrumentIdMeta);
+    }
+    if (data.containsKey('jurisdiction_id')) {
+      context.handle(
+        _jurisdictionIdMeta,
+        jurisdictionId.isAcceptableOrUnknown(
+          data['jurisdiction_id']!,
+          _jurisdictionIdMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_jurisdictionIdMeta);
+    }
+    if (data.containsKey('instrument_type')) {
+      context.handle(
+        _instrumentTypeMeta,
+        instrumentType.isAcceptableOrUnknown(
+          data['instrument_type']!,
+          _instrumentTypeMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_instrumentTypeMeta);
+    }
+    if (data.containsKey('titles_json')) {
+      context.handle(
+        _titlesJsonMeta,
+        titlesJson.isAcceptableOrUnknown(data['titles_json']!, _titlesJsonMeta),
+      );
+    }
+    if (data.containsKey('official_source_id')) {
+      context.handle(
+        _officialSourceIdMeta,
+        officialSourceId.isAcceptableOrUnknown(
+          data['official_source_id']!,
+          _officialSourceIdMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_officialSourceIdMeta);
+    }
+    if (data.containsKey('official_reference')) {
+      context.handle(
+        _officialReferenceMeta,
+        officialReference.isAcceptableOrUnknown(
+          data['official_reference']!,
+          _officialReferenceMeta,
+        ),
+      );
+    }
+    if (data.containsKey('effective_from')) {
+      context.handle(
+        _effectiveFromMeta,
+        effectiveFrom.isAcceptableOrUnknown(
+          data['effective_from']!,
+          _effectiveFromMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_effectiveFromMeta);
+    }
+    if (data.containsKey('effective_to')) {
+      context.handle(
+        _effectiveToMeta,
+        effectiveTo.isAcceptableOrUnknown(
+          data['effective_to']!,
+          _effectiveToMeta,
+        ),
+      );
+    }
+    if (data.containsKey('version')) {
+      context.handle(
+        _versionMeta,
+        version.isAcceptableOrUnknown(data['version']!, _versionMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_versionMeta);
+    }
+    if (data.containsKey('last_verified_at')) {
+      context.handle(
+        _lastVerifiedAtMeta,
+        lastVerifiedAt.isAcceptableOrUnknown(
+          data['last_verified_at']!,
+          _lastVerifiedAtMeta,
+        ),
+      );
+    }
+    if (data.containsKey('review_status')) {
+      context.handle(
+        _reviewStatusMeta,
+        reviewStatus.isAcceptableOrUnknown(
+          data['review_status']!,
+          _reviewStatusMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_reviewStatusMeta);
+    }
+    if (data.containsKey('is_test_data')) {
+      context.handle(
+        _isTestDataMeta,
+        isTestData.isAcceptableOrUnknown(
+          data['is_test_data']!,
+          _isTestDataMeta,
+        ),
+      );
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {instrumentId};
+  @override
+  JurisdictionalInstrument map(
+    Map<String, dynamic> data, {
+    String? tablePrefix,
+  }) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return JurisdictionalInstrument(
+      instrumentId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}instrument_id'],
+      )!,
+      jurisdictionId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}jurisdiction_id'],
+      )!,
+      instrumentType: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}instrument_type'],
+      )!,
+      titlesJson: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}titles_json'],
+      )!,
+      officialSourceId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}official_source_id'],
+      )!,
+      officialReference: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}official_reference'],
+      ),
+      effectiveFrom: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}effective_from'],
+      )!,
+      effectiveTo: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}effective_to'],
+      ),
+      version: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}version'],
+      )!,
+      lastVerifiedAt: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}last_verified_at'],
+      ),
+      reviewStatus: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}review_status'],
+      )!,
+      isTestData: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}is_test_data'],
+      )!,
+    );
+  }
+
+  @override
+  JurisdictionalInstruments createAlias(String alias) {
+    return JurisdictionalInstruments(attachedDatabase, alias);
+  }
+
+  @override
+  bool get withoutRowId => true;
+  @override
+  List<String> get customConstraints => const [
+    'CHECK(effective_to IS NULL OR effective_to > effective_from)',
+  ];
+  @override
+  bool get dontWriteConstraints => true;
+}
+
+class JurisdictionalInstrument extends DataClass
+    implements Insertable<JurisdictionalInstrument> {
+  final String instrumentId;
+  final String jurisdictionId;
+  final String instrumentType;
+  final String titlesJson;
+  final String officialSourceId;
+  final String? officialReference;
+  final String effectiveFrom;
+  final String? effectiveTo;
+  final String version;
+  final String? lastVerifiedAt;
+  final String reviewStatus;
+  final int isTestData;
+  const JurisdictionalInstrument({
+    required this.instrumentId,
+    required this.jurisdictionId,
+    required this.instrumentType,
+    required this.titlesJson,
+    required this.officialSourceId,
+    this.officialReference,
+    required this.effectiveFrom,
+    this.effectiveTo,
+    required this.version,
+    this.lastVerifiedAt,
+    required this.reviewStatus,
+    required this.isTestData,
+  });
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['instrument_id'] = Variable<String>(instrumentId);
+    map['jurisdiction_id'] = Variable<String>(jurisdictionId);
+    map['instrument_type'] = Variable<String>(instrumentType);
+    map['titles_json'] = Variable<String>(titlesJson);
+    map['official_source_id'] = Variable<String>(officialSourceId);
+    if (!nullToAbsent || officialReference != null) {
+      map['official_reference'] = Variable<String>(officialReference);
+    }
+    map['effective_from'] = Variable<String>(effectiveFrom);
+    if (!nullToAbsent || effectiveTo != null) {
+      map['effective_to'] = Variable<String>(effectiveTo);
+    }
+    map['version'] = Variable<String>(version);
+    if (!nullToAbsent || lastVerifiedAt != null) {
+      map['last_verified_at'] = Variable<String>(lastVerifiedAt);
+    }
+    map['review_status'] = Variable<String>(reviewStatus);
+    map['is_test_data'] = Variable<int>(isTestData);
+    return map;
+  }
+
+  JurisdictionalInstrumentsCompanion toCompanion(bool nullToAbsent) {
+    return JurisdictionalInstrumentsCompanion(
+      instrumentId: Value(instrumentId),
+      jurisdictionId: Value(jurisdictionId),
+      instrumentType: Value(instrumentType),
+      titlesJson: Value(titlesJson),
+      officialSourceId: Value(officialSourceId),
+      officialReference: officialReference == null && nullToAbsent
+          ? const Value.absent()
+          : Value(officialReference),
+      effectiveFrom: Value(effectiveFrom),
+      effectiveTo: effectiveTo == null && nullToAbsent
+          ? const Value.absent()
+          : Value(effectiveTo),
+      version: Value(version),
+      lastVerifiedAt: lastVerifiedAt == null && nullToAbsent
+          ? const Value.absent()
+          : Value(lastVerifiedAt),
+      reviewStatus: Value(reviewStatus),
+      isTestData: Value(isTestData),
+    );
+  }
+
+  factory JurisdictionalInstrument.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return JurisdictionalInstrument(
+      instrumentId: serializer.fromJson<String>(json['instrument_id']),
+      jurisdictionId: serializer.fromJson<String>(json['jurisdiction_id']),
+      instrumentType: serializer.fromJson<String>(json['instrument_type']),
+      titlesJson: serializer.fromJson<String>(json['titles_json']),
+      officialSourceId: serializer.fromJson<String>(json['official_source_id']),
+      officialReference: serializer.fromJson<String?>(
+        json['official_reference'],
+      ),
+      effectiveFrom: serializer.fromJson<String>(json['effective_from']),
+      effectiveTo: serializer.fromJson<String?>(json['effective_to']),
+      version: serializer.fromJson<String>(json['version']),
+      lastVerifiedAt: serializer.fromJson<String?>(json['last_verified_at']),
+      reviewStatus: serializer.fromJson<String>(json['review_status']),
+      isTestData: serializer.fromJson<int>(json['is_test_data']),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'instrument_id': serializer.toJson<String>(instrumentId),
+      'jurisdiction_id': serializer.toJson<String>(jurisdictionId),
+      'instrument_type': serializer.toJson<String>(instrumentType),
+      'titles_json': serializer.toJson<String>(titlesJson),
+      'official_source_id': serializer.toJson<String>(officialSourceId),
+      'official_reference': serializer.toJson<String?>(officialReference),
+      'effective_from': serializer.toJson<String>(effectiveFrom),
+      'effective_to': serializer.toJson<String?>(effectiveTo),
+      'version': serializer.toJson<String>(version),
+      'last_verified_at': serializer.toJson<String?>(lastVerifiedAt),
+      'review_status': serializer.toJson<String>(reviewStatus),
+      'is_test_data': serializer.toJson<int>(isTestData),
+    };
+  }
+
+  JurisdictionalInstrument copyWith({
+    String? instrumentId,
+    String? jurisdictionId,
+    String? instrumentType,
+    String? titlesJson,
+    String? officialSourceId,
+    Value<String?> officialReference = const Value.absent(),
+    String? effectiveFrom,
+    Value<String?> effectiveTo = const Value.absent(),
+    String? version,
+    Value<String?> lastVerifiedAt = const Value.absent(),
+    String? reviewStatus,
+    int? isTestData,
+  }) => JurisdictionalInstrument(
+    instrumentId: instrumentId ?? this.instrumentId,
+    jurisdictionId: jurisdictionId ?? this.jurisdictionId,
+    instrumentType: instrumentType ?? this.instrumentType,
+    titlesJson: titlesJson ?? this.titlesJson,
+    officialSourceId: officialSourceId ?? this.officialSourceId,
+    officialReference: officialReference.present
+        ? officialReference.value
+        : this.officialReference,
+    effectiveFrom: effectiveFrom ?? this.effectiveFrom,
+    effectiveTo: effectiveTo.present ? effectiveTo.value : this.effectiveTo,
+    version: version ?? this.version,
+    lastVerifiedAt: lastVerifiedAt.present
+        ? lastVerifiedAt.value
+        : this.lastVerifiedAt,
+    reviewStatus: reviewStatus ?? this.reviewStatus,
+    isTestData: isTestData ?? this.isTestData,
+  );
+  JurisdictionalInstrument copyWithCompanion(
+    JurisdictionalInstrumentsCompanion data,
+  ) {
+    return JurisdictionalInstrument(
+      instrumentId: data.instrumentId.present
+          ? data.instrumentId.value
+          : this.instrumentId,
+      jurisdictionId: data.jurisdictionId.present
+          ? data.jurisdictionId.value
+          : this.jurisdictionId,
+      instrumentType: data.instrumentType.present
+          ? data.instrumentType.value
+          : this.instrumentType,
+      titlesJson: data.titlesJson.present
+          ? data.titlesJson.value
+          : this.titlesJson,
+      officialSourceId: data.officialSourceId.present
+          ? data.officialSourceId.value
+          : this.officialSourceId,
+      officialReference: data.officialReference.present
+          ? data.officialReference.value
+          : this.officialReference,
+      effectiveFrom: data.effectiveFrom.present
+          ? data.effectiveFrom.value
+          : this.effectiveFrom,
+      effectiveTo: data.effectiveTo.present
+          ? data.effectiveTo.value
+          : this.effectiveTo,
+      version: data.version.present ? data.version.value : this.version,
+      lastVerifiedAt: data.lastVerifiedAt.present
+          ? data.lastVerifiedAt.value
+          : this.lastVerifiedAt,
+      reviewStatus: data.reviewStatus.present
+          ? data.reviewStatus.value
+          : this.reviewStatus,
+      isTestData: data.isTestData.present
+          ? data.isTestData.value
+          : this.isTestData,
+    );
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('JurisdictionalInstrument(')
+          ..write('instrumentId: $instrumentId, ')
+          ..write('jurisdictionId: $jurisdictionId, ')
+          ..write('instrumentType: $instrumentType, ')
+          ..write('titlesJson: $titlesJson, ')
+          ..write('officialSourceId: $officialSourceId, ')
+          ..write('officialReference: $officialReference, ')
+          ..write('effectiveFrom: $effectiveFrom, ')
+          ..write('effectiveTo: $effectiveTo, ')
+          ..write('version: $version, ')
+          ..write('lastVerifiedAt: $lastVerifiedAt, ')
+          ..write('reviewStatus: $reviewStatus, ')
+          ..write('isTestData: $isTestData')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode => Object.hash(
+    instrumentId,
+    jurisdictionId,
+    instrumentType,
+    titlesJson,
+    officialSourceId,
+    officialReference,
+    effectiveFrom,
+    effectiveTo,
+    version,
+    lastVerifiedAt,
+    reviewStatus,
+    isTestData,
+  );
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is JurisdictionalInstrument &&
+          other.instrumentId == this.instrumentId &&
+          other.jurisdictionId == this.jurisdictionId &&
+          other.instrumentType == this.instrumentType &&
+          other.titlesJson == this.titlesJson &&
+          other.officialSourceId == this.officialSourceId &&
+          other.officialReference == this.officialReference &&
+          other.effectiveFrom == this.effectiveFrom &&
+          other.effectiveTo == this.effectiveTo &&
+          other.version == this.version &&
+          other.lastVerifiedAt == this.lastVerifiedAt &&
+          other.reviewStatus == this.reviewStatus &&
+          other.isTestData == this.isTestData);
+}
+
+class JurisdictionalInstrumentsCompanion
+    extends UpdateCompanion<JurisdictionalInstrument> {
+  final Value<String> instrumentId;
+  final Value<String> jurisdictionId;
+  final Value<String> instrumentType;
+  final Value<String> titlesJson;
+  final Value<String> officialSourceId;
+  final Value<String?> officialReference;
+  final Value<String> effectiveFrom;
+  final Value<String?> effectiveTo;
+  final Value<String> version;
+  final Value<String?> lastVerifiedAt;
+  final Value<String> reviewStatus;
+  final Value<int> isTestData;
+  const JurisdictionalInstrumentsCompanion({
+    this.instrumentId = const Value.absent(),
+    this.jurisdictionId = const Value.absent(),
+    this.instrumentType = const Value.absent(),
+    this.titlesJson = const Value.absent(),
+    this.officialSourceId = const Value.absent(),
+    this.officialReference = const Value.absent(),
+    this.effectiveFrom = const Value.absent(),
+    this.effectiveTo = const Value.absent(),
+    this.version = const Value.absent(),
+    this.lastVerifiedAt = const Value.absent(),
+    this.reviewStatus = const Value.absent(),
+    this.isTestData = const Value.absent(),
+  });
+  JurisdictionalInstrumentsCompanion.insert({
+    required String instrumentId,
+    required String jurisdictionId,
+    required String instrumentType,
+    this.titlesJson = const Value.absent(),
+    required String officialSourceId,
+    this.officialReference = const Value.absent(),
+    required String effectiveFrom,
+    this.effectiveTo = const Value.absent(),
+    required String version,
+    this.lastVerifiedAt = const Value.absent(),
+    required String reviewStatus,
+    this.isTestData = const Value.absent(),
+  }) : instrumentId = Value(instrumentId),
+       jurisdictionId = Value(jurisdictionId),
+       instrumentType = Value(instrumentType),
+       officialSourceId = Value(officialSourceId),
+       effectiveFrom = Value(effectiveFrom),
+       version = Value(version),
+       reviewStatus = Value(reviewStatus);
+  static Insertable<JurisdictionalInstrument> custom({
+    Expression<String>? instrumentId,
+    Expression<String>? jurisdictionId,
+    Expression<String>? instrumentType,
+    Expression<String>? titlesJson,
+    Expression<String>? officialSourceId,
+    Expression<String>? officialReference,
+    Expression<String>? effectiveFrom,
+    Expression<String>? effectiveTo,
+    Expression<String>? version,
+    Expression<String>? lastVerifiedAt,
+    Expression<String>? reviewStatus,
+    Expression<int>? isTestData,
+  }) {
+    return RawValuesInsertable({
+      if (instrumentId != null) 'instrument_id': instrumentId,
+      if (jurisdictionId != null) 'jurisdiction_id': jurisdictionId,
+      if (instrumentType != null) 'instrument_type': instrumentType,
+      if (titlesJson != null) 'titles_json': titlesJson,
+      if (officialSourceId != null) 'official_source_id': officialSourceId,
+      if (officialReference != null) 'official_reference': officialReference,
+      if (effectiveFrom != null) 'effective_from': effectiveFrom,
+      if (effectiveTo != null) 'effective_to': effectiveTo,
+      if (version != null) 'version': version,
+      if (lastVerifiedAt != null) 'last_verified_at': lastVerifiedAt,
+      if (reviewStatus != null) 'review_status': reviewStatus,
+      if (isTestData != null) 'is_test_data': isTestData,
+    });
+  }
+
+  JurisdictionalInstrumentsCompanion copyWith({
+    Value<String>? instrumentId,
+    Value<String>? jurisdictionId,
+    Value<String>? instrumentType,
+    Value<String>? titlesJson,
+    Value<String>? officialSourceId,
+    Value<String?>? officialReference,
+    Value<String>? effectiveFrom,
+    Value<String?>? effectiveTo,
+    Value<String>? version,
+    Value<String?>? lastVerifiedAt,
+    Value<String>? reviewStatus,
+    Value<int>? isTestData,
+  }) {
+    return JurisdictionalInstrumentsCompanion(
+      instrumentId: instrumentId ?? this.instrumentId,
+      jurisdictionId: jurisdictionId ?? this.jurisdictionId,
+      instrumentType: instrumentType ?? this.instrumentType,
+      titlesJson: titlesJson ?? this.titlesJson,
+      officialSourceId: officialSourceId ?? this.officialSourceId,
+      officialReference: officialReference ?? this.officialReference,
+      effectiveFrom: effectiveFrom ?? this.effectiveFrom,
+      effectiveTo: effectiveTo ?? this.effectiveTo,
+      version: version ?? this.version,
+      lastVerifiedAt: lastVerifiedAt ?? this.lastVerifiedAt,
+      reviewStatus: reviewStatus ?? this.reviewStatus,
+      isTestData: isTestData ?? this.isTestData,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (instrumentId.present) {
+      map['instrument_id'] = Variable<String>(instrumentId.value);
+    }
+    if (jurisdictionId.present) {
+      map['jurisdiction_id'] = Variable<String>(jurisdictionId.value);
+    }
+    if (instrumentType.present) {
+      map['instrument_type'] = Variable<String>(instrumentType.value);
+    }
+    if (titlesJson.present) {
+      map['titles_json'] = Variable<String>(titlesJson.value);
+    }
+    if (officialSourceId.present) {
+      map['official_source_id'] = Variable<String>(officialSourceId.value);
+    }
+    if (officialReference.present) {
+      map['official_reference'] = Variable<String>(officialReference.value);
+    }
+    if (effectiveFrom.present) {
+      map['effective_from'] = Variable<String>(effectiveFrom.value);
+    }
+    if (effectiveTo.present) {
+      map['effective_to'] = Variable<String>(effectiveTo.value);
+    }
+    if (version.present) {
+      map['version'] = Variable<String>(version.value);
+    }
+    if (lastVerifiedAt.present) {
+      map['last_verified_at'] = Variable<String>(lastVerifiedAt.value);
+    }
+    if (reviewStatus.present) {
+      map['review_status'] = Variable<String>(reviewStatus.value);
+    }
+    if (isTestData.present) {
+      map['is_test_data'] = Variable<int>(isTestData.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('JurisdictionalInstrumentsCompanion(')
+          ..write('instrumentId: $instrumentId, ')
+          ..write('jurisdictionId: $jurisdictionId, ')
+          ..write('instrumentType: $instrumentType, ')
+          ..write('titlesJson: $titlesJson, ')
+          ..write('officialSourceId: $officialSourceId, ')
+          ..write('officialReference: $officialReference, ')
+          ..write('effectiveFrom: $effectiveFrom, ')
+          ..write('effectiveTo: $effectiveTo, ')
+          ..write('version: $version, ')
+          ..write('lastVerifiedAt: $lastVerifiedAt, ')
+          ..write('reviewStatus: $reviewStatus, ')
+          ..write('isTestData: $isTestData')
+          ..write(')'))
+        .toString();
+  }
+}
+
+class JurisdictionalRules extends Table
+    with TableInfo<JurisdictionalRules, JurisdictionalRule> {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  JurisdictionalRules(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _ruleIdMeta = const VerificationMeta('ruleId');
+  late final GeneratedColumn<String> ruleId = GeneratedColumn<String>(
+    'rule_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL PRIMARY KEY',
+  );
+  static const VerificationMeta _instrumentIdMeta = const VerificationMeta(
+    'instrumentId',
+  );
+  late final GeneratedColumn<String> instrumentId = GeneratedColumn<String>(
+    'instrument_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints:
+        'NOT NULL REFERENCES jurisdictional_instruments(instrument_id)',
+  );
+  static const VerificationMeta _ruleTypeMeta = const VerificationMeta(
+    'ruleType',
+  );
+  late final GeneratedColumn<String> ruleType = GeneratedColumn<String>(
+    'rule_type',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (rule_type IN (\'control_status\', \'procedure_requirement\', \'legal_threshold\'))',
+  );
+  static const VerificationMeta _subjectTypeMeta = const VerificationMeta(
+    'subjectType',
+  );
+  late final GeneratedColumn<String> subjectType = GeneratedColumn<String>(
+    'subject_type',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _subjectIdMeta = const VerificationMeta(
+    'subjectId',
+  );
+  late final GeneratedColumn<String> subjectId = GeneratedColumn<String>(
+    'subject_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _valueJsonMeta = const VerificationMeta(
+    'valueJson',
+  );
+  late final GeneratedColumn<String> valueJson = GeneratedColumn<String>(
+    'value_json',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _effectiveFromMeta = const VerificationMeta(
+    'effectiveFrom',
+  );
+  late final GeneratedColumn<String> effectiveFrom = GeneratedColumn<String>(
+    'effective_from',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _effectiveToMeta = const VerificationMeta(
+    'effectiveTo',
+  );
+  late final GeneratedColumn<String> effectiveTo = GeneratedColumn<String>(
+    'effective_to',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: '',
+  );
+  static const VerificationMeta _reviewStatusMeta = const VerificationMeta(
+    'reviewStatus',
+  );
+  late final GeneratedColumn<String> reviewStatus = GeneratedColumn<String>(
+    'review_status',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (review_status IN (\'VERIFIED\', \'REVIEWED\', \'NEEDS_REVIEW\', \'OUTDATED\', \'REJECTED\'))',
+  );
+  static const VerificationMeta _isTestDataMeta = const VerificationMeta(
+    'isTestData',
+  );
+  late final GeneratedColumn<int> isTestData = GeneratedColumn<int>(
+    'is_test_data',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+    $customConstraints: 'NOT NULL DEFAULT 0',
+    defaultValue: const CustomExpression('0'),
+  );
+  @override
+  List<GeneratedColumn> get $columns => [
+    ruleId,
+    instrumentId,
+    ruleType,
+    subjectType,
+    subjectId,
+    valueJson,
+    effectiveFrom,
+    effectiveTo,
+    reviewStatus,
+    isTestData,
+  ];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'jurisdictional_rules';
+  @override
+  VerificationContext validateIntegrity(
+    Insertable<JurisdictionalRule> instance, {
+    bool isInserting = false,
+  }) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('rule_id')) {
+      context.handle(
+        _ruleIdMeta,
+        ruleId.isAcceptableOrUnknown(data['rule_id']!, _ruleIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_ruleIdMeta);
+    }
+    if (data.containsKey('instrument_id')) {
+      context.handle(
+        _instrumentIdMeta,
+        instrumentId.isAcceptableOrUnknown(
+          data['instrument_id']!,
+          _instrumentIdMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_instrumentIdMeta);
+    }
+    if (data.containsKey('rule_type')) {
+      context.handle(
+        _ruleTypeMeta,
+        ruleType.isAcceptableOrUnknown(data['rule_type']!, _ruleTypeMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_ruleTypeMeta);
+    }
+    if (data.containsKey('subject_type')) {
+      context.handle(
+        _subjectTypeMeta,
+        subjectType.isAcceptableOrUnknown(
+          data['subject_type']!,
+          _subjectTypeMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_subjectTypeMeta);
+    }
+    if (data.containsKey('subject_id')) {
+      context.handle(
+        _subjectIdMeta,
+        subjectId.isAcceptableOrUnknown(data['subject_id']!, _subjectIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_subjectIdMeta);
+    }
+    if (data.containsKey('value_json')) {
+      context.handle(
+        _valueJsonMeta,
+        valueJson.isAcceptableOrUnknown(data['value_json']!, _valueJsonMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_valueJsonMeta);
+    }
+    if (data.containsKey('effective_from')) {
+      context.handle(
+        _effectiveFromMeta,
+        effectiveFrom.isAcceptableOrUnknown(
+          data['effective_from']!,
+          _effectiveFromMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_effectiveFromMeta);
+    }
+    if (data.containsKey('effective_to')) {
+      context.handle(
+        _effectiveToMeta,
+        effectiveTo.isAcceptableOrUnknown(
+          data['effective_to']!,
+          _effectiveToMeta,
+        ),
+      );
+    }
+    if (data.containsKey('review_status')) {
+      context.handle(
+        _reviewStatusMeta,
+        reviewStatus.isAcceptableOrUnknown(
+          data['review_status']!,
+          _reviewStatusMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_reviewStatusMeta);
+    }
+    if (data.containsKey('is_test_data')) {
+      context.handle(
+        _isTestDataMeta,
+        isTestData.isAcceptableOrUnknown(
+          data['is_test_data']!,
+          _isTestDataMeta,
+        ),
+      );
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {ruleId};
+  @override
+  JurisdictionalRule map(Map<String, dynamic> data, {String? tablePrefix}) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return JurisdictionalRule(
+      ruleId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}rule_id'],
+      )!,
+      instrumentId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}instrument_id'],
+      )!,
+      ruleType: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}rule_type'],
+      )!,
+      subjectType: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}subject_type'],
+      )!,
+      subjectId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}subject_id'],
+      )!,
+      valueJson: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}value_json'],
+      )!,
+      effectiveFrom: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}effective_from'],
+      )!,
+      effectiveTo: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}effective_to'],
+      ),
+      reviewStatus: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}review_status'],
+      )!,
+      isTestData: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}is_test_data'],
+      )!,
+    );
+  }
+
+  @override
+  JurisdictionalRules createAlias(String alias) {
+    return JurisdictionalRules(attachedDatabase, alias);
+  }
+
+  @override
+  bool get withoutRowId => true;
+  @override
+  List<String> get customConstraints => const [
+    'CHECK(effective_to IS NULL OR effective_to > effective_from)',
+  ];
+  @override
+  bool get dontWriteConstraints => true;
+}
+
+class JurisdictionalRule extends DataClass
+    implements Insertable<JurisdictionalRule> {
+  final String ruleId;
+  final String instrumentId;
+  final String ruleType;
+  final String subjectType;
+  final String subjectId;
+  final String valueJson;
+  final String effectiveFrom;
+  final String? effectiveTo;
+  final String reviewStatus;
+  final int isTestData;
+  const JurisdictionalRule({
+    required this.ruleId,
+    required this.instrumentId,
+    required this.ruleType,
+    required this.subjectType,
+    required this.subjectId,
+    required this.valueJson,
+    required this.effectiveFrom,
+    this.effectiveTo,
+    required this.reviewStatus,
+    required this.isTestData,
+  });
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['rule_id'] = Variable<String>(ruleId);
+    map['instrument_id'] = Variable<String>(instrumentId);
+    map['rule_type'] = Variable<String>(ruleType);
+    map['subject_type'] = Variable<String>(subjectType);
+    map['subject_id'] = Variable<String>(subjectId);
+    map['value_json'] = Variable<String>(valueJson);
+    map['effective_from'] = Variable<String>(effectiveFrom);
+    if (!nullToAbsent || effectiveTo != null) {
+      map['effective_to'] = Variable<String>(effectiveTo);
+    }
+    map['review_status'] = Variable<String>(reviewStatus);
+    map['is_test_data'] = Variable<int>(isTestData);
+    return map;
+  }
+
+  JurisdictionalRulesCompanion toCompanion(bool nullToAbsent) {
+    return JurisdictionalRulesCompanion(
+      ruleId: Value(ruleId),
+      instrumentId: Value(instrumentId),
+      ruleType: Value(ruleType),
+      subjectType: Value(subjectType),
+      subjectId: Value(subjectId),
+      valueJson: Value(valueJson),
+      effectiveFrom: Value(effectiveFrom),
+      effectiveTo: effectiveTo == null && nullToAbsent
+          ? const Value.absent()
+          : Value(effectiveTo),
+      reviewStatus: Value(reviewStatus),
+      isTestData: Value(isTestData),
+    );
+  }
+
+  factory JurisdictionalRule.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return JurisdictionalRule(
+      ruleId: serializer.fromJson<String>(json['rule_id']),
+      instrumentId: serializer.fromJson<String>(json['instrument_id']),
+      ruleType: serializer.fromJson<String>(json['rule_type']),
+      subjectType: serializer.fromJson<String>(json['subject_type']),
+      subjectId: serializer.fromJson<String>(json['subject_id']),
+      valueJson: serializer.fromJson<String>(json['value_json']),
+      effectiveFrom: serializer.fromJson<String>(json['effective_from']),
+      effectiveTo: serializer.fromJson<String?>(json['effective_to']),
+      reviewStatus: serializer.fromJson<String>(json['review_status']),
+      isTestData: serializer.fromJson<int>(json['is_test_data']),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'rule_id': serializer.toJson<String>(ruleId),
+      'instrument_id': serializer.toJson<String>(instrumentId),
+      'rule_type': serializer.toJson<String>(ruleType),
+      'subject_type': serializer.toJson<String>(subjectType),
+      'subject_id': serializer.toJson<String>(subjectId),
+      'value_json': serializer.toJson<String>(valueJson),
+      'effective_from': serializer.toJson<String>(effectiveFrom),
+      'effective_to': serializer.toJson<String?>(effectiveTo),
+      'review_status': serializer.toJson<String>(reviewStatus),
+      'is_test_data': serializer.toJson<int>(isTestData),
+    };
+  }
+
+  JurisdictionalRule copyWith({
+    String? ruleId,
+    String? instrumentId,
+    String? ruleType,
+    String? subjectType,
+    String? subjectId,
+    String? valueJson,
+    String? effectiveFrom,
+    Value<String?> effectiveTo = const Value.absent(),
+    String? reviewStatus,
+    int? isTestData,
+  }) => JurisdictionalRule(
+    ruleId: ruleId ?? this.ruleId,
+    instrumentId: instrumentId ?? this.instrumentId,
+    ruleType: ruleType ?? this.ruleType,
+    subjectType: subjectType ?? this.subjectType,
+    subjectId: subjectId ?? this.subjectId,
+    valueJson: valueJson ?? this.valueJson,
+    effectiveFrom: effectiveFrom ?? this.effectiveFrom,
+    effectiveTo: effectiveTo.present ? effectiveTo.value : this.effectiveTo,
+    reviewStatus: reviewStatus ?? this.reviewStatus,
+    isTestData: isTestData ?? this.isTestData,
+  );
+  JurisdictionalRule copyWithCompanion(JurisdictionalRulesCompanion data) {
+    return JurisdictionalRule(
+      ruleId: data.ruleId.present ? data.ruleId.value : this.ruleId,
+      instrumentId: data.instrumentId.present
+          ? data.instrumentId.value
+          : this.instrumentId,
+      ruleType: data.ruleType.present ? data.ruleType.value : this.ruleType,
+      subjectType: data.subjectType.present
+          ? data.subjectType.value
+          : this.subjectType,
+      subjectId: data.subjectId.present ? data.subjectId.value : this.subjectId,
+      valueJson: data.valueJson.present ? data.valueJson.value : this.valueJson,
+      effectiveFrom: data.effectiveFrom.present
+          ? data.effectiveFrom.value
+          : this.effectiveFrom,
+      effectiveTo: data.effectiveTo.present
+          ? data.effectiveTo.value
+          : this.effectiveTo,
+      reviewStatus: data.reviewStatus.present
+          ? data.reviewStatus.value
+          : this.reviewStatus,
+      isTestData: data.isTestData.present
+          ? data.isTestData.value
+          : this.isTestData,
+    );
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('JurisdictionalRule(')
+          ..write('ruleId: $ruleId, ')
+          ..write('instrumentId: $instrumentId, ')
+          ..write('ruleType: $ruleType, ')
+          ..write('subjectType: $subjectType, ')
+          ..write('subjectId: $subjectId, ')
+          ..write('valueJson: $valueJson, ')
+          ..write('effectiveFrom: $effectiveFrom, ')
+          ..write('effectiveTo: $effectiveTo, ')
+          ..write('reviewStatus: $reviewStatus, ')
+          ..write('isTestData: $isTestData')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode => Object.hash(
+    ruleId,
+    instrumentId,
+    ruleType,
+    subjectType,
+    subjectId,
+    valueJson,
+    effectiveFrom,
+    effectiveTo,
+    reviewStatus,
+    isTestData,
+  );
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is JurisdictionalRule &&
+          other.ruleId == this.ruleId &&
+          other.instrumentId == this.instrumentId &&
+          other.ruleType == this.ruleType &&
+          other.subjectType == this.subjectType &&
+          other.subjectId == this.subjectId &&
+          other.valueJson == this.valueJson &&
+          other.effectiveFrom == this.effectiveFrom &&
+          other.effectiveTo == this.effectiveTo &&
+          other.reviewStatus == this.reviewStatus &&
+          other.isTestData == this.isTestData);
+}
+
+class JurisdictionalRulesCompanion extends UpdateCompanion<JurisdictionalRule> {
+  final Value<String> ruleId;
+  final Value<String> instrumentId;
+  final Value<String> ruleType;
+  final Value<String> subjectType;
+  final Value<String> subjectId;
+  final Value<String> valueJson;
+  final Value<String> effectiveFrom;
+  final Value<String?> effectiveTo;
+  final Value<String> reviewStatus;
+  final Value<int> isTestData;
+  const JurisdictionalRulesCompanion({
+    this.ruleId = const Value.absent(),
+    this.instrumentId = const Value.absent(),
+    this.ruleType = const Value.absent(),
+    this.subjectType = const Value.absent(),
+    this.subjectId = const Value.absent(),
+    this.valueJson = const Value.absent(),
+    this.effectiveFrom = const Value.absent(),
+    this.effectiveTo = const Value.absent(),
+    this.reviewStatus = const Value.absent(),
+    this.isTestData = const Value.absent(),
+  });
+  JurisdictionalRulesCompanion.insert({
+    required String ruleId,
+    required String instrumentId,
+    required String ruleType,
+    required String subjectType,
+    required String subjectId,
+    required String valueJson,
+    required String effectiveFrom,
+    this.effectiveTo = const Value.absent(),
+    required String reviewStatus,
+    this.isTestData = const Value.absent(),
+  }) : ruleId = Value(ruleId),
+       instrumentId = Value(instrumentId),
+       ruleType = Value(ruleType),
+       subjectType = Value(subjectType),
+       subjectId = Value(subjectId),
+       valueJson = Value(valueJson),
+       effectiveFrom = Value(effectiveFrom),
+       reviewStatus = Value(reviewStatus);
+  static Insertable<JurisdictionalRule> custom({
+    Expression<String>? ruleId,
+    Expression<String>? instrumentId,
+    Expression<String>? ruleType,
+    Expression<String>? subjectType,
+    Expression<String>? subjectId,
+    Expression<String>? valueJson,
+    Expression<String>? effectiveFrom,
+    Expression<String>? effectiveTo,
+    Expression<String>? reviewStatus,
+    Expression<int>? isTestData,
+  }) {
+    return RawValuesInsertable({
+      if (ruleId != null) 'rule_id': ruleId,
+      if (instrumentId != null) 'instrument_id': instrumentId,
+      if (ruleType != null) 'rule_type': ruleType,
+      if (subjectType != null) 'subject_type': subjectType,
+      if (subjectId != null) 'subject_id': subjectId,
+      if (valueJson != null) 'value_json': valueJson,
+      if (effectiveFrom != null) 'effective_from': effectiveFrom,
+      if (effectiveTo != null) 'effective_to': effectiveTo,
+      if (reviewStatus != null) 'review_status': reviewStatus,
+      if (isTestData != null) 'is_test_data': isTestData,
+    });
+  }
+
+  JurisdictionalRulesCompanion copyWith({
+    Value<String>? ruleId,
+    Value<String>? instrumentId,
+    Value<String>? ruleType,
+    Value<String>? subjectType,
+    Value<String>? subjectId,
+    Value<String>? valueJson,
+    Value<String>? effectiveFrom,
+    Value<String?>? effectiveTo,
+    Value<String>? reviewStatus,
+    Value<int>? isTestData,
+  }) {
+    return JurisdictionalRulesCompanion(
+      ruleId: ruleId ?? this.ruleId,
+      instrumentId: instrumentId ?? this.instrumentId,
+      ruleType: ruleType ?? this.ruleType,
+      subjectType: subjectType ?? this.subjectType,
+      subjectId: subjectId ?? this.subjectId,
+      valueJson: valueJson ?? this.valueJson,
+      effectiveFrom: effectiveFrom ?? this.effectiveFrom,
+      effectiveTo: effectiveTo ?? this.effectiveTo,
+      reviewStatus: reviewStatus ?? this.reviewStatus,
+      isTestData: isTestData ?? this.isTestData,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (ruleId.present) {
+      map['rule_id'] = Variable<String>(ruleId.value);
+    }
+    if (instrumentId.present) {
+      map['instrument_id'] = Variable<String>(instrumentId.value);
+    }
+    if (ruleType.present) {
+      map['rule_type'] = Variable<String>(ruleType.value);
+    }
+    if (subjectType.present) {
+      map['subject_type'] = Variable<String>(subjectType.value);
+    }
+    if (subjectId.present) {
+      map['subject_id'] = Variable<String>(subjectId.value);
+    }
+    if (valueJson.present) {
+      map['value_json'] = Variable<String>(valueJson.value);
+    }
+    if (effectiveFrom.present) {
+      map['effective_from'] = Variable<String>(effectiveFrom.value);
+    }
+    if (effectiveTo.present) {
+      map['effective_to'] = Variable<String>(effectiveTo.value);
+    }
+    if (reviewStatus.present) {
+      map['review_status'] = Variable<String>(reviewStatus.value);
+    }
+    if (isTestData.present) {
+      map['is_test_data'] = Variable<int>(isTestData.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('JurisdictionalRulesCompanion(')
+          ..write('ruleId: $ruleId, ')
+          ..write('instrumentId: $instrumentId, ')
+          ..write('ruleType: $ruleType, ')
+          ..write('subjectType: $subjectType, ')
+          ..write('subjectId: $subjectId, ')
+          ..write('valueJson: $valueJson, ')
+          ..write('effectiveFrom: $effectiveFrom, ')
+          ..write('effectiveTo: $effectiveTo, ')
+          ..write('reviewStatus: $reviewStatus, ')
+          ..write('isTestData: $isTestData')
+          ..write(')'))
+        .toString();
+  }
+}
+
 class ClaimGroups extends Table with TableInfo<ClaimGroups, ClaimGroup> {
   @override
   final GeneratedDatabase attachedDatabase;
@@ -2094,6 +3872,40 @@ class Claims extends Table with TableInfo<Claims, Claim> {
     $customConstraints: 'NOT NULL DEFAULT 0',
     defaultValue: const CustomExpression('0'),
   );
+  static const VerificationMeta _knowledgeLayerMeta = const VerificationMeta(
+    'knowledgeLayer',
+  );
+  late final GeneratedColumn<String> knowledgeLayer = GeneratedColumn<String>(
+    'knowledge_layer',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: 'NOT NULL DEFAULT \'international_scientific\' CHECK (knowledge_layer IN (\'international_scientific\', \'international_standard\', \'jurisdictional\'))',
+    defaultValue: const CustomExpression('\'international_scientific\''),
+  );
+  static const VerificationMeta _jurisdictionIdMeta = const VerificationMeta(
+    'jurisdictionId',
+  );
+  late final GeneratedColumn<String> jurisdictionId = GeneratedColumn<String>(
+    'jurisdiction_id',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: 'REFERENCES jurisdictions(jurisdiction_id)',
+  );
+  static const VerificationMeta _instrumentIdMeta = const VerificationMeta(
+    'instrumentId',
+  );
+  late final GeneratedColumn<String> instrumentId = GeneratedColumn<String>(
+    'instrument_id',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: 'REFERENCES jurisdictional_instruments(instrument_id)',
+  );
   @override
   List<GeneratedColumn> get $columns => [
     claimId,
@@ -2110,6 +3922,9 @@ class Claims extends Table with TableInfo<Claims, Claim> {
     version,
     updatedAt,
     isTestData,
+    knowledgeLayer,
+    jurisdictionId,
+    instrumentId,
   ];
   @override
   String get aliasedName => _alias ?? actualTableName;
@@ -2237,6 +4052,33 @@ class Claims extends Table with TableInfo<Claims, Claim> {
         ),
       );
     }
+    if (data.containsKey('knowledge_layer')) {
+      context.handle(
+        _knowledgeLayerMeta,
+        knowledgeLayer.isAcceptableOrUnknown(
+          data['knowledge_layer']!,
+          _knowledgeLayerMeta,
+        ),
+      );
+    }
+    if (data.containsKey('jurisdiction_id')) {
+      context.handle(
+        _jurisdictionIdMeta,
+        jurisdictionId.isAcceptableOrUnknown(
+          data['jurisdiction_id']!,
+          _jurisdictionIdMeta,
+        ),
+      );
+    }
+    if (data.containsKey('instrument_id')) {
+      context.handle(
+        _instrumentIdMeta,
+        instrumentId.isAcceptableOrUnknown(
+          data['instrument_id']!,
+          _instrumentIdMeta,
+        ),
+      );
+    }
     return context;
   }
 
@@ -2302,6 +4144,18 @@ class Claims extends Table with TableInfo<Claims, Claim> {
         DriftSqlType.int,
         data['${effectivePrefix}is_test_data'],
       )!,
+      knowledgeLayer: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}knowledge_layer'],
+      )!,
+      jurisdictionId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}jurisdiction_id'],
+      ),
+      instrumentId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}instrument_id'],
+      ),
     );
   }
 
@@ -2315,6 +4169,7 @@ class Claims extends Table with TableInfo<Claims, Claim> {
   @override
   List<String> get customConstraints => const [
     'CHECK(preferred = 0 OR preference_reason IS NOT NULL)',
+    'CHECK((knowledge_layer = \'jurisdictional\' AND jurisdiction_id IS NOT NULL AND instrument_id IS NOT NULL)OR(knowledge_layer <> \'jurisdictional\' AND jurisdiction_id IS NULL AND instrument_id IS NULL))',
   ];
   @override
   bool get dontWriteConstraints => true;
@@ -2335,6 +4190,11 @@ class Claim extends DataClass implements Insertable<Claim> {
   final int version;
   final String updatedAt;
   final int isTestData;
+
+  /// Global Scientific Core + Jurisdiction Layer (schema_version = 2).
+  final String knowledgeLayer;
+  final String? jurisdictionId;
+  final String? instrumentId;
   const Claim({
     required this.claimId,
     required this.entityType,
@@ -2350,6 +4210,9 @@ class Claim extends DataClass implements Insertable<Claim> {
     required this.version,
     required this.updatedAt,
     required this.isTestData,
+    required this.knowledgeLayer,
+    this.jurisdictionId,
+    this.instrumentId,
   });
   @override
   Map<String, Expression> toColumns(bool nullToAbsent) {
@@ -2372,6 +4235,13 @@ class Claim extends DataClass implements Insertable<Claim> {
     map['version'] = Variable<int>(version);
     map['updated_at'] = Variable<String>(updatedAt);
     map['is_test_data'] = Variable<int>(isTestData);
+    map['knowledge_layer'] = Variable<String>(knowledgeLayer);
+    if (!nullToAbsent || jurisdictionId != null) {
+      map['jurisdiction_id'] = Variable<String>(jurisdictionId);
+    }
+    if (!nullToAbsent || instrumentId != null) {
+      map['instrument_id'] = Variable<String>(instrumentId);
+    }
     return map;
   }
 
@@ -2395,6 +4265,13 @@ class Claim extends DataClass implements Insertable<Claim> {
       version: Value(version),
       updatedAt: Value(updatedAt),
       isTestData: Value(isTestData),
+      knowledgeLayer: Value(knowledgeLayer),
+      jurisdictionId: jurisdictionId == null && nullToAbsent
+          ? const Value.absent()
+          : Value(jurisdictionId),
+      instrumentId: instrumentId == null && nullToAbsent
+          ? const Value.absent()
+          : Value(instrumentId),
     );
   }
 
@@ -2418,6 +4295,9 @@ class Claim extends DataClass implements Insertable<Claim> {
       version: serializer.fromJson<int>(json['version']),
       updatedAt: serializer.fromJson<String>(json['updated_at']),
       isTestData: serializer.fromJson<int>(json['is_test_data']),
+      knowledgeLayer: serializer.fromJson<String>(json['knowledge_layer']),
+      jurisdictionId: serializer.fromJson<String?>(json['jurisdiction_id']),
+      instrumentId: serializer.fromJson<String?>(json['instrument_id']),
     );
   }
   @override
@@ -2438,6 +4318,9 @@ class Claim extends DataClass implements Insertable<Claim> {
       'version': serializer.toJson<int>(version),
       'updated_at': serializer.toJson<String>(updatedAt),
       'is_test_data': serializer.toJson<int>(isTestData),
+      'knowledge_layer': serializer.toJson<String>(knowledgeLayer),
+      'jurisdiction_id': serializer.toJson<String?>(jurisdictionId),
+      'instrument_id': serializer.toJson<String?>(instrumentId),
     };
   }
 
@@ -2456,6 +4339,9 @@ class Claim extends DataClass implements Insertable<Claim> {
     int? version,
     String? updatedAt,
     int? isTestData,
+    String? knowledgeLayer,
+    Value<String?> jurisdictionId = const Value.absent(),
+    Value<String?> instrumentId = const Value.absent(),
   }) => Claim(
     claimId: claimId ?? this.claimId,
     entityType: entityType ?? this.entityType,
@@ -2473,6 +4359,11 @@ class Claim extends DataClass implements Insertable<Claim> {
     version: version ?? this.version,
     updatedAt: updatedAt ?? this.updatedAt,
     isTestData: isTestData ?? this.isTestData,
+    knowledgeLayer: knowledgeLayer ?? this.knowledgeLayer,
+    jurisdictionId: jurisdictionId.present
+        ? jurisdictionId.value
+        : this.jurisdictionId,
+    instrumentId: instrumentId.present ? instrumentId.value : this.instrumentId,
   );
   Claim copyWithCompanion(ClaimsCompanion data) {
     return Claim(
@@ -2500,6 +4391,15 @@ class Claim extends DataClass implements Insertable<Claim> {
       isTestData: data.isTestData.present
           ? data.isTestData.value
           : this.isTestData,
+      knowledgeLayer: data.knowledgeLayer.present
+          ? data.knowledgeLayer.value
+          : this.knowledgeLayer,
+      jurisdictionId: data.jurisdictionId.present
+          ? data.jurisdictionId.value
+          : this.jurisdictionId,
+      instrumentId: data.instrumentId.present
+          ? data.instrumentId.value
+          : this.instrumentId,
     );
   }
 
@@ -2519,7 +4419,10 @@ class Claim extends DataClass implements Insertable<Claim> {
           ..write('preferenceReason: $preferenceReason, ')
           ..write('version: $version, ')
           ..write('updatedAt: $updatedAt, ')
-          ..write('isTestData: $isTestData')
+          ..write('isTestData: $isTestData, ')
+          ..write('knowledgeLayer: $knowledgeLayer, ')
+          ..write('jurisdictionId: $jurisdictionId, ')
+          ..write('instrumentId: $instrumentId')
           ..write(')'))
         .toString();
   }
@@ -2540,6 +4443,9 @@ class Claim extends DataClass implements Insertable<Claim> {
     version,
     updatedAt,
     isTestData,
+    knowledgeLayer,
+    jurisdictionId,
+    instrumentId,
   );
   @override
   bool operator ==(Object other) =>
@@ -2558,7 +4464,10 @@ class Claim extends DataClass implements Insertable<Claim> {
           other.preferenceReason == this.preferenceReason &&
           other.version == this.version &&
           other.updatedAt == this.updatedAt &&
-          other.isTestData == this.isTestData);
+          other.isTestData == this.isTestData &&
+          other.knowledgeLayer == this.knowledgeLayer &&
+          other.jurisdictionId == this.jurisdictionId &&
+          other.instrumentId == this.instrumentId);
 }
 
 class ClaimsCompanion extends UpdateCompanion<Claim> {
@@ -2576,6 +4485,9 @@ class ClaimsCompanion extends UpdateCompanion<Claim> {
   final Value<int> version;
   final Value<String> updatedAt;
   final Value<int> isTestData;
+  final Value<String> knowledgeLayer;
+  final Value<String?> jurisdictionId;
+  final Value<String?> instrumentId;
   const ClaimsCompanion({
     this.claimId = const Value.absent(),
     this.entityType = const Value.absent(),
@@ -2591,6 +4503,9 @@ class ClaimsCompanion extends UpdateCompanion<Claim> {
     this.version = const Value.absent(),
     this.updatedAt = const Value.absent(),
     this.isTestData = const Value.absent(),
+    this.knowledgeLayer = const Value.absent(),
+    this.jurisdictionId = const Value.absent(),
+    this.instrumentId = const Value.absent(),
   });
   ClaimsCompanion.insert({
     required String claimId,
@@ -2607,6 +4522,9 @@ class ClaimsCompanion extends UpdateCompanion<Claim> {
     this.version = const Value.absent(),
     required String updatedAt,
     this.isTestData = const Value.absent(),
+    this.knowledgeLayer = const Value.absent(),
+    this.jurisdictionId = const Value.absent(),
+    this.instrumentId = const Value.absent(),
   }) : claimId = Value(claimId),
        entityType = Value(entityType),
        entityId = Value(entityId),
@@ -2631,6 +4549,9 @@ class ClaimsCompanion extends UpdateCompanion<Claim> {
     Expression<int>? version,
     Expression<String>? updatedAt,
     Expression<int>? isTestData,
+    Expression<String>? knowledgeLayer,
+    Expression<String>? jurisdictionId,
+    Expression<String>? instrumentId,
   }) {
     return RawValuesInsertable({
       if (claimId != null) 'claim_id': claimId,
@@ -2647,6 +4568,9 @@ class ClaimsCompanion extends UpdateCompanion<Claim> {
       if (version != null) 'version': version,
       if (updatedAt != null) 'updated_at': updatedAt,
       if (isTestData != null) 'is_test_data': isTestData,
+      if (knowledgeLayer != null) 'knowledge_layer': knowledgeLayer,
+      if (jurisdictionId != null) 'jurisdiction_id': jurisdictionId,
+      if (instrumentId != null) 'instrument_id': instrumentId,
     });
   }
 
@@ -2665,6 +4589,9 @@ class ClaimsCompanion extends UpdateCompanion<Claim> {
     Value<int>? version,
     Value<String>? updatedAt,
     Value<int>? isTestData,
+    Value<String>? knowledgeLayer,
+    Value<String?>? jurisdictionId,
+    Value<String?>? instrumentId,
   }) {
     return ClaimsCompanion(
       claimId: claimId ?? this.claimId,
@@ -2681,6 +4608,9 @@ class ClaimsCompanion extends UpdateCompanion<Claim> {
       version: version ?? this.version,
       updatedAt: updatedAt ?? this.updatedAt,
       isTestData: isTestData ?? this.isTestData,
+      knowledgeLayer: knowledgeLayer ?? this.knowledgeLayer,
+      jurisdictionId: jurisdictionId ?? this.jurisdictionId,
+      instrumentId: instrumentId ?? this.instrumentId,
     );
   }
 
@@ -2729,6 +4659,15 @@ class ClaimsCompanion extends UpdateCompanion<Claim> {
     if (isTestData.present) {
       map['is_test_data'] = Variable<int>(isTestData.value);
     }
+    if (knowledgeLayer.present) {
+      map['knowledge_layer'] = Variable<String>(knowledgeLayer.value);
+    }
+    if (jurisdictionId.present) {
+      map['jurisdiction_id'] = Variable<String>(jurisdictionId.value);
+    }
+    if (instrumentId.present) {
+      map['instrument_id'] = Variable<String>(instrumentId.value);
+    }
     return map;
   }
 
@@ -2748,7 +4687,10 @@ class ClaimsCompanion extends UpdateCompanion<Claim> {
           ..write('preferenceReason: $preferenceReason, ')
           ..write('version: $version, ')
           ..write('updatedAt: $updatedAt, ')
-          ..write('isTestData: $isTestData')
+          ..write('isTestData: $isTestData, ')
+          ..write('knowledgeLayer: $knowledgeLayer, ')
+          ..write('jurisdictionId: $jurisdictionId, ')
+          ..write('instrumentId: $instrumentId')
           ..write(')'))
         .toString();
   }
@@ -6987,6 +8929,20 @@ abstract class _$ContentDatabase extends GeneratedDatabase {
   $ContentDatabaseManager get managers => $ContentDatabaseManager(this);
   late final ContentMeta contentMeta = ContentMeta(this);
   late final Sources sources = Sources(this);
+  late final Jurisdictions jurisdictions = Jurisdictions(this);
+  late final JurisdictionalInstruments jurisdictionalInstruments =
+      JurisdictionalInstruments(this);
+  late final Index instrumentsByJurisdiction = Index(
+    'instruments_by_jurisdiction',
+    'CREATE INDEX instruments_by_jurisdiction ON jurisdictional_instruments (jurisdiction_id)',
+  );
+  late final JurisdictionalRules jurisdictionalRules = JurisdictionalRules(
+    this,
+  );
+  late final Index rulesBySubject = Index(
+    'rules_by_subject',
+    'CREATE INDEX rules_by_subject ON jurisdictional_rules (subject_type, subject_id)',
+  );
   late final ClaimGroups claimGroups = ClaimGroups(this);
   late final Claims claims = Claims(this);
   late final Index claimsByEntity = Index(
@@ -7018,6 +8974,11 @@ abstract class _$ContentDatabase extends GeneratedDatabase {
   List<DatabaseSchemaEntity> get allSchemaEntities => [
     contentMeta,
     sources,
+    jurisdictions,
+    jurisdictionalInstruments,
+    instrumentsByJurisdiction,
+    jurisdictionalRules,
+    rulesBySubject,
     claimGroups,
     claims,
     claimsByEntity,
@@ -7227,6 +9188,38 @@ final class $SourcesReferences
     extends BaseReferences<_$ContentDatabase, Sources, Source> {
   $SourcesReferences(super.$_db, super.$_table, super.$_typedResult);
 
+  static MultiTypedResultKey<
+    JurisdictionalInstruments,
+    List<JurisdictionalInstrument>
+  >
+  _jurisdictionalInstrumentsRefsTable(
+    _$ContentDatabase db,
+  ) => MultiTypedResultKey.fromTable(
+    db.jurisdictionalInstruments,
+    aliasName:
+        'sources__source_id__jurisdictional_instruments__official_source_id',
+  );
+
+  $JurisdictionalInstrumentsProcessedTableManager
+  get jurisdictionalInstrumentsRefs {
+    final manager =
+        $JurisdictionalInstrumentsTableManager(
+          $_db,
+          $_db.jurisdictionalInstruments,
+        ).filter(
+          (f) => f.officialSourceId.sourceId.sqlEquals(
+            $_itemColumn<String>('source_id')!,
+          ),
+        );
+
+    final cache = $_typedResult.readTableOrNull(
+      _jurisdictionalInstrumentsRefsTable($_db),
+    );
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: cache),
+    );
+  }
+
   static MultiTypedResultKey<Citations, List<Citation>> _citationsRefsTable(
     _$ContentDatabase db,
   ) => MultiTypedResultKey.fromTable(
@@ -7380,6 +9373,31 @@ class $SourcesFilterComposer extends Composer<_$ContentDatabase, Sources> {
     column: $table.isTestData,
     builder: (column) => ColumnFilters(column),
   );
+
+  Expression<bool> jurisdictionalInstrumentsRefs(
+    Expression<bool> Function($JurisdictionalInstrumentsFilterComposer f) f,
+  ) {
+    final $JurisdictionalInstrumentsFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.sourceId,
+      referencedTable: $db.jurisdictionalInstruments,
+      getReferencedColumn: (t) => t.officialSourceId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $JurisdictionalInstrumentsFilterComposer(
+            $db: $db,
+            $table: $db.jurisdictionalInstruments,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return f(composer);
+  }
 
   Expression<bool> citationsRefs(
     Expression<bool> Function($CitationsFilterComposer f) f,
@@ -7643,6 +9661,32 @@ class $SourcesAnnotationComposer extends Composer<_$ContentDatabase, Sources> {
     builder: (column) => column,
   );
 
+  Expression<T> jurisdictionalInstrumentsRefs<T extends Object>(
+    Expression<T> Function($JurisdictionalInstrumentsAnnotationComposer a) f,
+  ) {
+    final $JurisdictionalInstrumentsAnnotationComposer composer =
+        $composerBuilder(
+          composer: this,
+          getCurrentColumn: (t) => t.sourceId,
+          referencedTable: $db.jurisdictionalInstruments,
+          getReferencedColumn: (t) => t.officialSourceId,
+          builder:
+              (
+                joinBuilder, {
+                $addJoinBuilderToRootComposer,
+                $removeJoinBuilderFromRootComposer,
+              }) => $JurisdictionalInstrumentsAnnotationComposer(
+                $db: $db,
+                $table: $db.jurisdictionalInstruments,
+                $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+                joinBuilder: joinBuilder,
+                $removeJoinBuilderFromRootComposer:
+                    $removeJoinBuilderFromRootComposer,
+              ),
+        );
+    return f(composer);
+  }
+
   Expression<T> citationsRefs<T extends Object>(
     Expression<T> Function($CitationsAnnotationComposer a) f,
   ) {
@@ -7708,6 +9752,7 @@ class $SourcesTableManager
           (Source, $SourcesReferences),
           Source,
           PrefetchHooks Function({
+            bool jurisdictionalInstrumentsRefs,
             bool citationsRefs,
             bool externalIdentifiersRefs,
           })
@@ -7824,16 +9869,42 @@ class $SourcesTableManager
               )
               .toList(),
           prefetchHooksCallback:
-              ({citationsRefs = false, externalIdentifiersRefs = false}) {
+              ({
+                jurisdictionalInstrumentsRefs = false,
+                citationsRefs = false,
+                externalIdentifiersRefs = false,
+              }) {
                 return PrefetchHooks(
                   db: db,
                   explicitlyWatchedTables: [
+                    if (jurisdictionalInstrumentsRefs)
+                      db.jurisdictionalInstruments,
                     if (citationsRefs) db.citations,
                     if (externalIdentifiersRefs) db.externalIdentifiers,
                   ],
                   addJoins: null,
                   getPrefetchedDataCallback: (items) async {
                     return [
+                      if (jurisdictionalInstrumentsRefs)
+                        await $_getPrefetchedData<
+                          Source,
+                          Sources,
+                          JurisdictionalInstrument
+                        >(
+                          currentTable: table,
+                          referencedTable: $SourcesReferences
+                              ._jurisdictionalInstrumentsRefsTable(db),
+                          managerFromTypedResult: (p0) => $SourcesReferences(
+                            db,
+                            table,
+                            p0,
+                          ).jurisdictionalInstrumentsRefs,
+                          referencedItemsForCurrentItem:
+                              (item, referencedItems) => referencedItems.where(
+                                (e) => e.officialSourceId == item.sourceId,
+                              ),
+                          typedResults: items,
+                        ),
                       if (citationsRefs)
                         await $_getPrefetchedData<Source, Sources, Citation>(
                           currentTable: table,
@@ -7887,7 +9958,1738 @@ typedef $SourcesProcessedTableManager =
       $SourcesUpdateCompanionBuilder,
       (Source, $SourcesReferences),
       Source,
-      PrefetchHooks Function({bool citationsRefs, bool externalIdentifiersRefs})
+      PrefetchHooks Function({
+        bool jurisdictionalInstrumentsRefs,
+        bool citationsRefs,
+        bool externalIdentifiersRefs,
+      })
+    >;
+typedef $JurisdictionsCreateCompanionBuilder = JurisdictionsCompanion Function({
+  required String jurisdictionId,
+  required String level,
+  Value<String?> parentId,
+  Value<String?> iso3166,
+  Value<String> namesJson,
+});
+typedef $JurisdictionsUpdateCompanionBuilder = JurisdictionsCompanion Function({
+  Value<String> jurisdictionId,
+  Value<String> level,
+  Value<String?> parentId,
+  Value<String?> iso3166,
+  Value<String> namesJson,
+});
+
+final class $JurisdictionsReferences
+    extends BaseReferences<_$ContentDatabase, Jurisdictions, Jurisdiction> {
+  $JurisdictionsReferences(super.$_db, super.$_table, super.$_typedResult);
+
+  static Jurisdictions _parentIdTable(_$ContentDatabase db) => db.jurisdictions
+      .createAlias('jurisdictions__parent_id__jurisdictions__jurisdiction_id');
+
+  $JurisdictionsProcessedTableManager? get parentId {
+    final $_column = $_itemColumn<String>('parent_id');
+    if ($_column == null) return null;
+    final manager = $JurisdictionsTableManager(
+      $_db,
+      $_db.jurisdictions,
+    ).filter((f) => f.jurisdictionId.sqlEquals($_column));
+    final item = $_typedResult.readTableOrNull(_parentIdTable($_db));
+    if (item == null) return manager;
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: [item]),
+    );
+  }
+
+  static MultiTypedResultKey<
+    JurisdictionalInstruments,
+    List<JurisdictionalInstrument>
+  >
+  _jurisdictionalInstrumentsRefsTable(_$ContentDatabase db) =>
+      MultiTypedResultKey.fromTable(
+        db.jurisdictionalInstruments,
+        aliasName: 'jurisdictions__jurisdiction_id__jurisdictional_instruments__jurisdiction_id',
+      );
+
+  $JurisdictionalInstrumentsProcessedTableManager
+  get jurisdictionalInstrumentsRefs {
+    final manager =
+        $JurisdictionalInstrumentsTableManager(
+          $_db,
+          $_db.jurisdictionalInstruments,
+        ).filter(
+          (f) => f.jurisdictionId.jurisdictionId.sqlEquals(
+            $_itemColumn<String>('jurisdiction_id')!,
+          ),
+        );
+
+    final cache = $_typedResult.readTableOrNull(
+      _jurisdictionalInstrumentsRefsTable($_db),
+    );
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: cache),
+    );
+  }
+
+  static MultiTypedResultKey<Claims, List<Claim>> _claimsRefsTable(
+    _$ContentDatabase db,
+  ) => MultiTypedResultKey.fromTable(
+    db.claims,
+    aliasName: 'jurisdictions__jurisdiction_id__claims__jurisdiction_id',
+  );
+
+  $ClaimsProcessedTableManager get claimsRefs {
+    final manager = $ClaimsTableManager($_db, $_db.claims).filter(
+      (f) => f.jurisdictionId.jurisdictionId.sqlEquals(
+        $_itemColumn<String>('jurisdiction_id')!,
+      ),
+    );
+
+    final cache = $_typedResult.readTableOrNull(_claimsRefsTable($_db));
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: cache),
+    );
+  }
+}
+
+class $JurisdictionsFilterComposer
+    extends Composer<_$ContentDatabase, Jurisdictions> {
+  $JurisdictionsFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<String> get jurisdictionId => $composableBuilder(
+    column: $table.jurisdictionId,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get level => $composableBuilder(
+    column: $table.level,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get iso3166 => $composableBuilder(
+    column: $table.iso3166,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get namesJson => $composableBuilder(
+    column: $table.namesJson,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  $JurisdictionsFilterComposer get parentId {
+    final $JurisdictionsFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.parentId,
+      referencedTable: $db.jurisdictions,
+      getReferencedColumn: (t) => t.jurisdictionId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $JurisdictionsFilterComposer(
+            $db: $db,
+            $table: $db.jurisdictions,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+
+  Expression<bool> jurisdictionalInstrumentsRefs(
+    Expression<bool> Function($JurisdictionalInstrumentsFilterComposer f) f,
+  ) {
+    final $JurisdictionalInstrumentsFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.jurisdictionId,
+      referencedTable: $db.jurisdictionalInstruments,
+      getReferencedColumn: (t) => t.jurisdictionId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $JurisdictionalInstrumentsFilterComposer(
+            $db: $db,
+            $table: $db.jurisdictionalInstruments,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return f(composer);
+  }
+
+  Expression<bool> claimsRefs(
+    Expression<bool> Function($ClaimsFilterComposer f) f,
+  ) {
+    final $ClaimsFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.jurisdictionId,
+      referencedTable: $db.claims,
+      getReferencedColumn: (t) => t.jurisdictionId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $ClaimsFilterComposer(
+            $db: $db,
+            $table: $db.claims,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return f(composer);
+  }
+}
+
+class $JurisdictionsOrderingComposer
+    extends Composer<_$ContentDatabase, Jurisdictions> {
+  $JurisdictionsOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<String> get jurisdictionId => $composableBuilder(
+    column: $table.jurisdictionId,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get level => $composableBuilder(
+    column: $table.level,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get iso3166 => $composableBuilder(
+    column: $table.iso3166,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get namesJson => $composableBuilder(
+    column: $table.namesJson,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  $JurisdictionsOrderingComposer get parentId {
+    final $JurisdictionsOrderingComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.parentId,
+      referencedTable: $db.jurisdictions,
+      getReferencedColumn: (t) => t.jurisdictionId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $JurisdictionsOrderingComposer(
+            $db: $db,
+            $table: $db.jurisdictions,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $JurisdictionsAnnotationComposer
+    extends Composer<_$ContentDatabase, Jurisdictions> {
+  $JurisdictionsAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<String> get jurisdictionId => $composableBuilder(
+    column: $table.jurisdictionId,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get level =>
+      $composableBuilder(column: $table.level, builder: (column) => column);
+
+  GeneratedColumn<String> get iso3166 =>
+      $composableBuilder(column: $table.iso3166, builder: (column) => column);
+
+  GeneratedColumn<String> get namesJson =>
+      $composableBuilder(column: $table.namesJson, builder: (column) => column);
+
+  $JurisdictionsAnnotationComposer get parentId {
+    final $JurisdictionsAnnotationComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.parentId,
+      referencedTable: $db.jurisdictions,
+      getReferencedColumn: (t) => t.jurisdictionId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $JurisdictionsAnnotationComposer(
+            $db: $db,
+            $table: $db.jurisdictions,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+
+  Expression<T> jurisdictionalInstrumentsRefs<T extends Object>(
+    Expression<T> Function($JurisdictionalInstrumentsAnnotationComposer a) f,
+  ) {
+    final $JurisdictionalInstrumentsAnnotationComposer composer =
+        $composerBuilder(
+          composer: this,
+          getCurrentColumn: (t) => t.jurisdictionId,
+          referencedTable: $db.jurisdictionalInstruments,
+          getReferencedColumn: (t) => t.jurisdictionId,
+          builder:
+              (
+                joinBuilder, {
+                $addJoinBuilderToRootComposer,
+                $removeJoinBuilderFromRootComposer,
+              }) => $JurisdictionalInstrumentsAnnotationComposer(
+                $db: $db,
+                $table: $db.jurisdictionalInstruments,
+                $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+                joinBuilder: joinBuilder,
+                $removeJoinBuilderFromRootComposer:
+                    $removeJoinBuilderFromRootComposer,
+              ),
+        );
+    return f(composer);
+  }
+
+  Expression<T> claimsRefs<T extends Object>(
+    Expression<T> Function($ClaimsAnnotationComposer a) f,
+  ) {
+    final $ClaimsAnnotationComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.jurisdictionId,
+      referencedTable: $db.claims,
+      getReferencedColumn: (t) => t.jurisdictionId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $ClaimsAnnotationComposer(
+            $db: $db,
+            $table: $db.claims,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return f(composer);
+  }
+}
+
+class $JurisdictionsTableManager
+    extends
+        RootTableManager<
+          _$ContentDatabase,
+          Jurisdictions,
+          Jurisdiction,
+          $JurisdictionsFilterComposer,
+          $JurisdictionsOrderingComposer,
+          $JurisdictionsAnnotationComposer,
+          $JurisdictionsCreateCompanionBuilder,
+          $JurisdictionsUpdateCompanionBuilder,
+          (Jurisdiction, $JurisdictionsReferences),
+          Jurisdiction,
+          PrefetchHooks Function({
+            bool parentId,
+            bool jurisdictionalInstrumentsRefs,
+            bool claimsRefs,
+          })
+        > {
+  $JurisdictionsTableManager(_$ContentDatabase db, Jurisdictions table)
+    : super(
+        TableManagerState(
+          db: db,
+          table: table,
+          createFilteringComposer: () =>
+              $JurisdictionsFilterComposer($db: db, $table: table),
+          createOrderingComposer: () =>
+              $JurisdictionsOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer: () =>
+              $JurisdictionsAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<String> jurisdictionId = const Value.absent(),
+                Value<String> level = const Value.absent(),
+                Value<String?> parentId = const Value.absent(),
+                Value<String?> iso3166 = const Value.absent(),
+                Value<String> namesJson = const Value.absent(),
+              }) => JurisdictionsCompanion(
+                jurisdictionId: jurisdictionId,
+                level: level,
+                parentId: parentId,
+                iso3166: iso3166,
+                namesJson: namesJson,
+              ),
+          createCompanionCallback:
+              ({
+                required String jurisdictionId,
+                required String level,
+                Value<String?> parentId = const Value.absent(),
+                Value<String?> iso3166 = const Value.absent(),
+                Value<String> namesJson = const Value.absent(),
+              }) => JurisdictionsCompanion.insert(
+                jurisdictionId: jurisdictionId,
+                level: level,
+                parentId: parentId,
+                iso3166: iso3166,
+                namesJson: namesJson,
+              ),
+          withReferenceMapper: (p0) => p0
+              .map(
+                (e) => (
+                  e.readTable<Jurisdictions, Jurisdiction>(table),
+                  $JurisdictionsReferences(db, table, e),
+                ),
+              )
+              .toList(),
+          prefetchHooksCallback:
+              ({
+                parentId = false,
+                jurisdictionalInstrumentsRefs = false,
+                claimsRefs = false,
+              }) {
+                return PrefetchHooks(
+                  db: db,
+                  explicitlyWatchedTables: [
+                    if (jurisdictionalInstrumentsRefs)
+                      db.jurisdictionalInstruments,
+                    if (claimsRefs) db.claims,
+                  ],
+                  addJoins:
+                      <
+                        T extends TableManagerState<
+                          dynamic,
+                          dynamic,
+                          dynamic,
+                          dynamic,
+                          dynamic,
+                          dynamic,
+                          dynamic,
+                          dynamic,
+                          dynamic,
+                          dynamic,
+                          dynamic
+                        >
+                      >(state) {
+                        if (parentId) {
+                          state = state.withJoin(
+                            currentTable: table,
+                            currentColumn: table.parentId,
+                            referencedTable: $JurisdictionsReferences
+                                ._parentIdTable(db),
+                            referencedColumn: $JurisdictionsReferences
+                                ._parentIdTable(db)
+                                .jurisdictionId,
+                          ) as T;
+                        }
+
+                        return state;
+                      },
+                  getPrefetchedDataCallback: (items) async {
+                    return [
+                      if (jurisdictionalInstrumentsRefs)
+                        await $_getPrefetchedData<
+                          Jurisdiction,
+                          Jurisdictions,
+                          JurisdictionalInstrument
+                        >(
+                          currentTable: table,
+                          referencedTable: $JurisdictionsReferences
+                              ._jurisdictionalInstrumentsRefsTable(db),
+                          managerFromTypedResult: (p0) =>
+                              $JurisdictionsReferences(
+                                db,
+                                table,
+                                p0,
+                              ).jurisdictionalInstrumentsRefs,
+                          referencedItemsForCurrentItem:
+                              (item, referencedItems) => referencedItems.where(
+                                (e) => e.jurisdictionId == item.jurisdictionId,
+                              ),
+                          typedResults: items,
+                        ),
+                      if (claimsRefs)
+                        await $_getPrefetchedData<
+                          Jurisdiction,
+                          Jurisdictions,
+                          Claim
+                        >(
+                          currentTable: table,
+                          referencedTable: $JurisdictionsReferences
+                              ._claimsRefsTable(db),
+                          managerFromTypedResult: (p0) =>
+                              $JurisdictionsReferences(
+                                db,
+                                table,
+                                p0,
+                              ).claimsRefs,
+                          referencedItemsForCurrentItem:
+                              (item, referencedItems) => referencedItems.where(
+                                (e) => e.jurisdictionId == item.jurisdictionId,
+                              ),
+                          typedResults: items,
+                        ),
+                    ];
+                  },
+                );
+              },
+        ),
+      );
+}
+
+typedef $JurisdictionsProcessedTableManager =
+    ProcessedTableManager<
+      _$ContentDatabase,
+      Jurisdictions,
+      Jurisdiction,
+      $JurisdictionsFilterComposer,
+      $JurisdictionsOrderingComposer,
+      $JurisdictionsAnnotationComposer,
+      $JurisdictionsCreateCompanionBuilder,
+      $JurisdictionsUpdateCompanionBuilder,
+      (Jurisdiction, $JurisdictionsReferences),
+      Jurisdiction,
+      PrefetchHooks Function({
+        bool parentId,
+        bool jurisdictionalInstrumentsRefs,
+        bool claimsRefs,
+      })
+    >;
+typedef $JurisdictionalInstrumentsCreateCompanionBuilder =
+    JurisdictionalInstrumentsCompanion Function({
+      required String instrumentId,
+      required String jurisdictionId,
+      required String instrumentType,
+      Value<String> titlesJson,
+      required String officialSourceId,
+      Value<String?> officialReference,
+      required String effectiveFrom,
+      Value<String?> effectiveTo,
+      required String version,
+      Value<String?> lastVerifiedAt,
+      required String reviewStatus,
+      Value<int> isTestData,
+    });
+typedef $JurisdictionalInstrumentsUpdateCompanionBuilder =
+    JurisdictionalInstrumentsCompanion Function({
+      Value<String> instrumentId,
+      Value<String> jurisdictionId,
+      Value<String> instrumentType,
+      Value<String> titlesJson,
+      Value<String> officialSourceId,
+      Value<String?> officialReference,
+      Value<String> effectiveFrom,
+      Value<String?> effectiveTo,
+      Value<String> version,
+      Value<String?> lastVerifiedAt,
+      Value<String> reviewStatus,
+      Value<int> isTestData,
+    });
+
+final class $JurisdictionalInstrumentsReferences
+    extends
+        BaseReferences<
+          _$ContentDatabase,
+          JurisdictionalInstruments,
+          JurisdictionalInstrument
+        > {
+  $JurisdictionalInstrumentsReferences(
+    super.$_db,
+    super.$_table,
+    super.$_typedResult,
+  );
+
+  static Jurisdictions _jurisdictionIdTable(_$ContentDatabase db) =>
+      db.jurisdictions.createAlias(
+        'jurisdictional_instruments__jurisdiction_id__jurisdictions__jurisdiction_id',
+      );
+
+  $JurisdictionsProcessedTableManager get jurisdictionId {
+    final $_column = $_itemColumn<String>('jurisdiction_id')!;
+
+    final manager = $JurisdictionsTableManager(
+      $_db,
+      $_db.jurisdictions,
+    ).filter((f) => f.jurisdictionId.sqlEquals($_column));
+    final item = $_typedResult.readTableOrNull(_jurisdictionIdTable($_db));
+    if (item == null) return manager;
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: [item]),
+    );
+  }
+
+  static Sources _officialSourceIdTable(_$ContentDatabase db) =>
+      db.sources.createAlias(
+        'jurisdictional_instruments__official_source_id__sources__source_id',
+      );
+
+  $SourcesProcessedTableManager get officialSourceId {
+    final $_column = $_itemColumn<String>('official_source_id')!;
+
+    final manager = $SourcesTableManager(
+      $_db,
+      $_db.sources,
+    ).filter((f) => f.sourceId.sqlEquals($_column));
+    final item = $_typedResult.readTableOrNull(_officialSourceIdTable($_db));
+    if (item == null) return manager;
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: [item]),
+    );
+  }
+
+  static MultiTypedResultKey<JurisdictionalRules, List<JurisdictionalRule>>
+  _jurisdictionalRulesRefsTable(_$ContentDatabase db) =>
+      MultiTypedResultKey.fromTable(
+        db.jurisdictionalRules,
+        aliasName: 'jurisdictional_instruments__instrument_id__jurisdictional_rules__instrument_id',
+      );
+
+  $JurisdictionalRulesProcessedTableManager get jurisdictionalRulesRefs {
+    final manager =
+        $JurisdictionalRulesTableManager($_db, $_db.jurisdictionalRules).filter(
+          (f) => f.instrumentId.instrumentId.sqlEquals(
+            $_itemColumn<String>('instrument_id')!,
+          ),
+        );
+
+    final cache = $_typedResult.readTableOrNull(
+      _jurisdictionalRulesRefsTable($_db),
+    );
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: cache),
+    );
+  }
+
+  static MultiTypedResultKey<Claims, List<Claim>> _claimsRefsTable(
+    _$ContentDatabase db,
+  ) => MultiTypedResultKey.fromTable(
+    db.claims,
+    aliasName:
+        'jurisdictional_instruments__instrument_id__claims__instrument_id',
+  );
+
+  $ClaimsProcessedTableManager get claimsRefs {
+    final manager = $ClaimsTableManager($_db, $_db.claims).filter(
+      (f) => f.instrumentId.instrumentId.sqlEquals(
+        $_itemColumn<String>('instrument_id')!,
+      ),
+    );
+
+    final cache = $_typedResult.readTableOrNull(_claimsRefsTable($_db));
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: cache),
+    );
+  }
+}
+
+class $JurisdictionalInstrumentsFilterComposer
+    extends Composer<_$ContentDatabase, JurisdictionalInstruments> {
+  $JurisdictionalInstrumentsFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<String> get instrumentId => $composableBuilder(
+    column: $table.instrumentId,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get instrumentType => $composableBuilder(
+    column: $table.instrumentType,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get titlesJson => $composableBuilder(
+    column: $table.titlesJson,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get officialReference => $composableBuilder(
+    column: $table.officialReference,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get effectiveFrom => $composableBuilder(
+    column: $table.effectiveFrom,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get effectiveTo => $composableBuilder(
+    column: $table.effectiveTo,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get version => $composableBuilder(
+    column: $table.version,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get lastVerifiedAt => $composableBuilder(
+    column: $table.lastVerifiedAt,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get reviewStatus => $composableBuilder(
+    column: $table.reviewStatus,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get isTestData => $composableBuilder(
+    column: $table.isTestData,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  $JurisdictionsFilterComposer get jurisdictionId {
+    final $JurisdictionsFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.jurisdictionId,
+      referencedTable: $db.jurisdictions,
+      getReferencedColumn: (t) => t.jurisdictionId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $JurisdictionsFilterComposer(
+            $db: $db,
+            $table: $db.jurisdictions,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+
+  $SourcesFilterComposer get officialSourceId {
+    final $SourcesFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.officialSourceId,
+      referencedTable: $db.sources,
+      getReferencedColumn: (t) => t.sourceId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $SourcesFilterComposer(
+            $db: $db,
+            $table: $db.sources,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+
+  Expression<bool> jurisdictionalRulesRefs(
+    Expression<bool> Function($JurisdictionalRulesFilterComposer f) f,
+  ) {
+    final $JurisdictionalRulesFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.instrumentId,
+      referencedTable: $db.jurisdictionalRules,
+      getReferencedColumn: (t) => t.instrumentId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $JurisdictionalRulesFilterComposer(
+            $db: $db,
+            $table: $db.jurisdictionalRules,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return f(composer);
+  }
+
+  Expression<bool> claimsRefs(
+    Expression<bool> Function($ClaimsFilterComposer f) f,
+  ) {
+    final $ClaimsFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.instrumentId,
+      referencedTable: $db.claims,
+      getReferencedColumn: (t) => t.instrumentId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $ClaimsFilterComposer(
+            $db: $db,
+            $table: $db.claims,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return f(composer);
+  }
+}
+
+class $JurisdictionalInstrumentsOrderingComposer
+    extends Composer<_$ContentDatabase, JurisdictionalInstruments> {
+  $JurisdictionalInstrumentsOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<String> get instrumentId => $composableBuilder(
+    column: $table.instrumentId,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get instrumentType => $composableBuilder(
+    column: $table.instrumentType,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get titlesJson => $composableBuilder(
+    column: $table.titlesJson,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get officialReference => $composableBuilder(
+    column: $table.officialReference,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get effectiveFrom => $composableBuilder(
+    column: $table.effectiveFrom,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get effectiveTo => $composableBuilder(
+    column: $table.effectiveTo,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get version => $composableBuilder(
+    column: $table.version,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get lastVerifiedAt => $composableBuilder(
+    column: $table.lastVerifiedAt,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get reviewStatus => $composableBuilder(
+    column: $table.reviewStatus,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<int> get isTestData => $composableBuilder(
+    column: $table.isTestData,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  $JurisdictionsOrderingComposer get jurisdictionId {
+    final $JurisdictionsOrderingComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.jurisdictionId,
+      referencedTable: $db.jurisdictions,
+      getReferencedColumn: (t) => t.jurisdictionId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $JurisdictionsOrderingComposer(
+            $db: $db,
+            $table: $db.jurisdictions,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+
+  $SourcesOrderingComposer get officialSourceId {
+    final $SourcesOrderingComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.officialSourceId,
+      referencedTable: $db.sources,
+      getReferencedColumn: (t) => t.sourceId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $SourcesOrderingComposer(
+            $db: $db,
+            $table: $db.sources,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $JurisdictionalInstrumentsAnnotationComposer
+    extends Composer<_$ContentDatabase, JurisdictionalInstruments> {
+  $JurisdictionalInstrumentsAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<String> get instrumentId => $composableBuilder(
+    column: $table.instrumentId,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get instrumentType => $composableBuilder(
+    column: $table.instrumentType,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get titlesJson => $composableBuilder(
+    column: $table.titlesJson,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get officialReference => $composableBuilder(
+    column: $table.officialReference,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get effectiveFrom => $composableBuilder(
+    column: $table.effectiveFrom,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get effectiveTo => $composableBuilder(
+    column: $table.effectiveTo,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get version =>
+      $composableBuilder(column: $table.version, builder: (column) => column);
+
+  GeneratedColumn<String> get lastVerifiedAt => $composableBuilder(
+    column: $table.lastVerifiedAt,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get reviewStatus => $composableBuilder(
+    column: $table.reviewStatus,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<int> get isTestData => $composableBuilder(
+    column: $table.isTestData,
+    builder: (column) => column,
+  );
+
+  $JurisdictionsAnnotationComposer get jurisdictionId {
+    final $JurisdictionsAnnotationComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.jurisdictionId,
+      referencedTable: $db.jurisdictions,
+      getReferencedColumn: (t) => t.jurisdictionId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $JurisdictionsAnnotationComposer(
+            $db: $db,
+            $table: $db.jurisdictions,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+
+  $SourcesAnnotationComposer get officialSourceId {
+    final $SourcesAnnotationComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.officialSourceId,
+      referencedTable: $db.sources,
+      getReferencedColumn: (t) => t.sourceId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $SourcesAnnotationComposer(
+            $db: $db,
+            $table: $db.sources,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+
+  Expression<T> jurisdictionalRulesRefs<T extends Object>(
+    Expression<T> Function($JurisdictionalRulesAnnotationComposer a) f,
+  ) {
+    final $JurisdictionalRulesAnnotationComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.instrumentId,
+      referencedTable: $db.jurisdictionalRules,
+      getReferencedColumn: (t) => t.instrumentId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $JurisdictionalRulesAnnotationComposer(
+            $db: $db,
+            $table: $db.jurisdictionalRules,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return f(composer);
+  }
+
+  Expression<T> claimsRefs<T extends Object>(
+    Expression<T> Function($ClaimsAnnotationComposer a) f,
+  ) {
+    final $ClaimsAnnotationComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.instrumentId,
+      referencedTable: $db.claims,
+      getReferencedColumn: (t) => t.instrumentId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $ClaimsAnnotationComposer(
+            $db: $db,
+            $table: $db.claims,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return f(composer);
+  }
+}
+
+class $JurisdictionalInstrumentsTableManager
+    extends
+        RootTableManager<
+          _$ContentDatabase,
+          JurisdictionalInstruments,
+          JurisdictionalInstrument,
+          $JurisdictionalInstrumentsFilterComposer,
+          $JurisdictionalInstrumentsOrderingComposer,
+          $JurisdictionalInstrumentsAnnotationComposer,
+          $JurisdictionalInstrumentsCreateCompanionBuilder,
+          $JurisdictionalInstrumentsUpdateCompanionBuilder,
+          (JurisdictionalInstrument, $JurisdictionalInstrumentsReferences),
+          JurisdictionalInstrument,
+          PrefetchHooks Function({
+            bool jurisdictionId,
+            bool officialSourceId,
+            bool jurisdictionalRulesRefs,
+            bool claimsRefs,
+          })
+        > {
+  $JurisdictionalInstrumentsTableManager(
+    _$ContentDatabase db,
+    JurisdictionalInstruments table,
+  ) : super(
+        TableManagerState(
+          db: db,
+          table: table,
+          createFilteringComposer: () =>
+              $JurisdictionalInstrumentsFilterComposer($db: db, $table: table),
+          createOrderingComposer: () =>
+              $JurisdictionalInstrumentsOrderingComposer(
+                $db: db,
+                $table: table,
+              ),
+          createComputedFieldComposer: () =>
+              $JurisdictionalInstrumentsAnnotationComposer(
+                $db: db,
+                $table: table,
+              ),
+          updateCompanionCallback:
+              ({
+                Value<String> instrumentId = const Value.absent(),
+                Value<String> jurisdictionId = const Value.absent(),
+                Value<String> instrumentType = const Value.absent(),
+                Value<String> titlesJson = const Value.absent(),
+                Value<String> officialSourceId = const Value.absent(),
+                Value<String?> officialReference = const Value.absent(),
+                Value<String> effectiveFrom = const Value.absent(),
+                Value<String?> effectiveTo = const Value.absent(),
+                Value<String> version = const Value.absent(),
+                Value<String?> lastVerifiedAt = const Value.absent(),
+                Value<String> reviewStatus = const Value.absent(),
+                Value<int> isTestData = const Value.absent(),
+              }) => JurisdictionalInstrumentsCompanion(
+                instrumentId: instrumentId,
+                jurisdictionId: jurisdictionId,
+                instrumentType: instrumentType,
+                titlesJson: titlesJson,
+                officialSourceId: officialSourceId,
+                officialReference: officialReference,
+                effectiveFrom: effectiveFrom,
+                effectiveTo: effectiveTo,
+                version: version,
+                lastVerifiedAt: lastVerifiedAt,
+                reviewStatus: reviewStatus,
+                isTestData: isTestData,
+              ),
+          createCompanionCallback:
+              ({
+                required String instrumentId,
+                required String jurisdictionId,
+                required String instrumentType,
+                Value<String> titlesJson = const Value.absent(),
+                required String officialSourceId,
+                Value<String?> officialReference = const Value.absent(),
+                required String effectiveFrom,
+                Value<String?> effectiveTo = const Value.absent(),
+                required String version,
+                Value<String?> lastVerifiedAt = const Value.absent(),
+                required String reviewStatus,
+                Value<int> isTestData = const Value.absent(),
+              }) => JurisdictionalInstrumentsCompanion.insert(
+                instrumentId: instrumentId,
+                jurisdictionId: jurisdictionId,
+                instrumentType: instrumentType,
+                titlesJson: titlesJson,
+                officialSourceId: officialSourceId,
+                officialReference: officialReference,
+                effectiveFrom: effectiveFrom,
+                effectiveTo: effectiveTo,
+                version: version,
+                lastVerifiedAt: lastVerifiedAt,
+                reviewStatus: reviewStatus,
+                isTestData: isTestData,
+              ),
+          withReferenceMapper: (p0) => p0
+              .map(
+                (e) => (
+                  e.readTable<
+                    JurisdictionalInstruments,
+                    JurisdictionalInstrument
+                  >(table),
+                  $JurisdictionalInstrumentsReferences(db, table, e),
+                ),
+              )
+              .toList(),
+          prefetchHooksCallback:
+              ({
+                jurisdictionId = false,
+                officialSourceId = false,
+                jurisdictionalRulesRefs = false,
+                claimsRefs = false,
+              }) {
+                return PrefetchHooks(
+                  db: db,
+                  explicitlyWatchedTables: [
+                    if (jurisdictionalRulesRefs) db.jurisdictionalRules,
+                    if (claimsRefs) db.claims,
+                  ],
+                  addJoins:
+                      <
+                        T extends TableManagerState<
+                          dynamic,
+                          dynamic,
+                          dynamic,
+                          dynamic,
+                          dynamic,
+                          dynamic,
+                          dynamic,
+                          dynamic,
+                          dynamic,
+                          dynamic,
+                          dynamic
+                        >
+                      >(state) {
+                        if (jurisdictionId) {
+                          state = state.withJoin(
+                            currentTable: table,
+                            currentColumn: table.jurisdictionId,
+                            referencedTable:
+                                $JurisdictionalInstrumentsReferences
+                                    ._jurisdictionIdTable(db),
+                            referencedColumn:
+                                $JurisdictionalInstrumentsReferences
+                                    ._jurisdictionIdTable(db)
+                                    .jurisdictionId,
+                          ) as T;
+                        }
+                        if (officialSourceId) {
+                          state = state.withJoin(
+                            currentTable: table,
+                            currentColumn: table.officialSourceId,
+                            referencedTable:
+                                $JurisdictionalInstrumentsReferences
+                                    ._officialSourceIdTable(db),
+                            referencedColumn:
+                                $JurisdictionalInstrumentsReferences
+                                    ._officialSourceIdTable(db)
+                                    .sourceId,
+                          ) as T;
+                        }
+
+                        return state;
+                      },
+                  getPrefetchedDataCallback: (items) async {
+                    return [
+                      if (jurisdictionalRulesRefs)
+                        await $_getPrefetchedData<
+                          JurisdictionalInstrument,
+                          JurisdictionalInstruments,
+                          JurisdictionalRule
+                        >(
+                          currentTable: table,
+                          referencedTable: $JurisdictionalInstrumentsReferences
+                              ._jurisdictionalRulesRefsTable(db),
+                          managerFromTypedResult: (p0) =>
+                              $JurisdictionalInstrumentsReferences(
+                                db,
+                                table,
+                                p0,
+                              ).jurisdictionalRulesRefs,
+                          referencedItemsForCurrentItem:
+                              (item, referencedItems) => referencedItems.where(
+                                (e) => e.instrumentId == item.instrumentId,
+                              ),
+                          typedResults: items,
+                        ),
+                      if (claimsRefs)
+                        await $_getPrefetchedData<
+                          JurisdictionalInstrument,
+                          JurisdictionalInstruments,
+                          Claim
+                        >(
+                          currentTable: table,
+                          referencedTable: $JurisdictionalInstrumentsReferences
+                              ._claimsRefsTable(db),
+                          managerFromTypedResult: (p0) =>
+                              $JurisdictionalInstrumentsReferences(
+                                db,
+                                table,
+                                p0,
+                              ).claimsRefs,
+                          referencedItemsForCurrentItem:
+                              (item, referencedItems) => referencedItems.where(
+                                (e) => e.instrumentId == item.instrumentId,
+                              ),
+                          typedResults: items,
+                        ),
+                    ];
+                  },
+                );
+              },
+        ),
+      );
+}
+
+typedef $JurisdictionalInstrumentsProcessedTableManager =
+    ProcessedTableManager<
+      _$ContentDatabase,
+      JurisdictionalInstruments,
+      JurisdictionalInstrument,
+      $JurisdictionalInstrumentsFilterComposer,
+      $JurisdictionalInstrumentsOrderingComposer,
+      $JurisdictionalInstrumentsAnnotationComposer,
+      $JurisdictionalInstrumentsCreateCompanionBuilder,
+      $JurisdictionalInstrumentsUpdateCompanionBuilder,
+      (JurisdictionalInstrument, $JurisdictionalInstrumentsReferences),
+      JurisdictionalInstrument,
+      PrefetchHooks Function({
+        bool jurisdictionId,
+        bool officialSourceId,
+        bool jurisdictionalRulesRefs,
+        bool claimsRefs,
+      })
+    >;
+typedef $JurisdictionalRulesCreateCompanionBuilder =
+    JurisdictionalRulesCompanion Function({
+      required String ruleId,
+      required String instrumentId,
+      required String ruleType,
+      required String subjectType,
+      required String subjectId,
+      required String valueJson,
+      required String effectiveFrom,
+      Value<String?> effectiveTo,
+      required String reviewStatus,
+      Value<int> isTestData,
+    });
+typedef $JurisdictionalRulesUpdateCompanionBuilder =
+    JurisdictionalRulesCompanion Function({
+      Value<String> ruleId,
+      Value<String> instrumentId,
+      Value<String> ruleType,
+      Value<String> subjectType,
+      Value<String> subjectId,
+      Value<String> valueJson,
+      Value<String> effectiveFrom,
+      Value<String?> effectiveTo,
+      Value<String> reviewStatus,
+      Value<int> isTestData,
+    });
+
+final class $JurisdictionalRulesReferences
+    extends
+        BaseReferences<
+          _$ContentDatabase,
+          JurisdictionalRules,
+          JurisdictionalRule
+        > {
+  $JurisdictionalRulesReferences(
+    super.$_db,
+    super.$_table,
+    super.$_typedResult,
+  );
+
+  static JurisdictionalInstruments _instrumentIdTable(_$ContentDatabase db) =>
+      db.jurisdictionalInstruments.createAlias(
+        'jurisdictional_rules__instrument_id__jurisdictional_instruments__instrument_id',
+      );
+
+  $JurisdictionalInstrumentsProcessedTableManager get instrumentId {
+    final $_column = $_itemColumn<String>('instrument_id')!;
+
+    final manager = $JurisdictionalInstrumentsTableManager(
+      $_db,
+      $_db.jurisdictionalInstruments,
+    ).filter((f) => f.instrumentId.sqlEquals($_column));
+    final item = $_typedResult.readTableOrNull(_instrumentIdTable($_db));
+    if (item == null) return manager;
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: [item]),
+    );
+  }
+}
+
+class $JurisdictionalRulesFilterComposer
+    extends Composer<_$ContentDatabase, JurisdictionalRules> {
+  $JurisdictionalRulesFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<String> get ruleId => $composableBuilder(
+    column: $table.ruleId,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get ruleType => $composableBuilder(
+    column: $table.ruleType,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get subjectType => $composableBuilder(
+    column: $table.subjectType,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get subjectId => $composableBuilder(
+    column: $table.subjectId,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get valueJson => $composableBuilder(
+    column: $table.valueJson,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get effectiveFrom => $composableBuilder(
+    column: $table.effectiveFrom,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get effectiveTo => $composableBuilder(
+    column: $table.effectiveTo,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get reviewStatus => $composableBuilder(
+    column: $table.reviewStatus,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get isTestData => $composableBuilder(
+    column: $table.isTestData,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  $JurisdictionalInstrumentsFilterComposer get instrumentId {
+    final $JurisdictionalInstrumentsFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.instrumentId,
+      referencedTable: $db.jurisdictionalInstruments,
+      getReferencedColumn: (t) => t.instrumentId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $JurisdictionalInstrumentsFilterComposer(
+            $db: $db,
+            $table: $db.jurisdictionalInstruments,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $JurisdictionalRulesOrderingComposer
+    extends Composer<_$ContentDatabase, JurisdictionalRules> {
+  $JurisdictionalRulesOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<String> get ruleId => $composableBuilder(
+    column: $table.ruleId,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get ruleType => $composableBuilder(
+    column: $table.ruleType,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get subjectType => $composableBuilder(
+    column: $table.subjectType,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get subjectId => $composableBuilder(
+    column: $table.subjectId,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get valueJson => $composableBuilder(
+    column: $table.valueJson,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get effectiveFrom => $composableBuilder(
+    column: $table.effectiveFrom,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get effectiveTo => $composableBuilder(
+    column: $table.effectiveTo,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get reviewStatus => $composableBuilder(
+    column: $table.reviewStatus,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<int> get isTestData => $composableBuilder(
+    column: $table.isTestData,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  $JurisdictionalInstrumentsOrderingComposer get instrumentId {
+    final $JurisdictionalInstrumentsOrderingComposer composer =
+        $composerBuilder(
+          composer: this,
+          getCurrentColumn: (t) => t.instrumentId,
+          referencedTable: $db.jurisdictionalInstruments,
+          getReferencedColumn: (t) => t.instrumentId,
+          builder:
+              (
+                joinBuilder, {
+                $addJoinBuilderToRootComposer,
+                $removeJoinBuilderFromRootComposer,
+              }) => $JurisdictionalInstrumentsOrderingComposer(
+                $db: $db,
+                $table: $db.jurisdictionalInstruments,
+                $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+                joinBuilder: joinBuilder,
+                $removeJoinBuilderFromRootComposer:
+                    $removeJoinBuilderFromRootComposer,
+              ),
+        );
+    return composer;
+  }
+}
+
+class $JurisdictionalRulesAnnotationComposer
+    extends Composer<_$ContentDatabase, JurisdictionalRules> {
+  $JurisdictionalRulesAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<String> get ruleId =>
+      $composableBuilder(column: $table.ruleId, builder: (column) => column);
+
+  GeneratedColumn<String> get ruleType =>
+      $composableBuilder(column: $table.ruleType, builder: (column) => column);
+
+  GeneratedColumn<String> get subjectType => $composableBuilder(
+    column: $table.subjectType,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get subjectId =>
+      $composableBuilder(column: $table.subjectId, builder: (column) => column);
+
+  GeneratedColumn<String> get valueJson =>
+      $composableBuilder(column: $table.valueJson, builder: (column) => column);
+
+  GeneratedColumn<String> get effectiveFrom => $composableBuilder(
+    column: $table.effectiveFrom,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get effectiveTo => $composableBuilder(
+    column: $table.effectiveTo,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get reviewStatus => $composableBuilder(
+    column: $table.reviewStatus,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<int> get isTestData => $composableBuilder(
+    column: $table.isTestData,
+    builder: (column) => column,
+  );
+
+  $JurisdictionalInstrumentsAnnotationComposer get instrumentId {
+    final $JurisdictionalInstrumentsAnnotationComposer composer =
+        $composerBuilder(
+          composer: this,
+          getCurrentColumn: (t) => t.instrumentId,
+          referencedTable: $db.jurisdictionalInstruments,
+          getReferencedColumn: (t) => t.instrumentId,
+          builder:
+              (
+                joinBuilder, {
+                $addJoinBuilderToRootComposer,
+                $removeJoinBuilderFromRootComposer,
+              }) => $JurisdictionalInstrumentsAnnotationComposer(
+                $db: $db,
+                $table: $db.jurisdictionalInstruments,
+                $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+                joinBuilder: joinBuilder,
+                $removeJoinBuilderFromRootComposer:
+                    $removeJoinBuilderFromRootComposer,
+              ),
+        );
+    return composer;
+  }
+}
+
+class $JurisdictionalRulesTableManager
+    extends
+        RootTableManager<
+          _$ContentDatabase,
+          JurisdictionalRules,
+          JurisdictionalRule,
+          $JurisdictionalRulesFilterComposer,
+          $JurisdictionalRulesOrderingComposer,
+          $JurisdictionalRulesAnnotationComposer,
+          $JurisdictionalRulesCreateCompanionBuilder,
+          $JurisdictionalRulesUpdateCompanionBuilder,
+          (JurisdictionalRule, $JurisdictionalRulesReferences),
+          JurisdictionalRule,
+          PrefetchHooks Function({bool instrumentId})
+        > {
+  $JurisdictionalRulesTableManager(
+    _$ContentDatabase db,
+    JurisdictionalRules table,
+  ) : super(
+        TableManagerState(
+          db: db,
+          table: table,
+          createFilteringComposer: () =>
+              $JurisdictionalRulesFilterComposer($db: db, $table: table),
+          createOrderingComposer: () =>
+              $JurisdictionalRulesOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer: () =>
+              $JurisdictionalRulesAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<String> ruleId = const Value.absent(),
+                Value<String> instrumentId = const Value.absent(),
+                Value<String> ruleType = const Value.absent(),
+                Value<String> subjectType = const Value.absent(),
+                Value<String> subjectId = const Value.absent(),
+                Value<String> valueJson = const Value.absent(),
+                Value<String> effectiveFrom = const Value.absent(),
+                Value<String?> effectiveTo = const Value.absent(),
+                Value<String> reviewStatus = const Value.absent(),
+                Value<int> isTestData = const Value.absent(),
+              }) => JurisdictionalRulesCompanion(
+                ruleId: ruleId,
+                instrumentId: instrumentId,
+                ruleType: ruleType,
+                subjectType: subjectType,
+                subjectId: subjectId,
+                valueJson: valueJson,
+                effectiveFrom: effectiveFrom,
+                effectiveTo: effectiveTo,
+                reviewStatus: reviewStatus,
+                isTestData: isTestData,
+              ),
+          createCompanionCallback:
+              ({
+                required String ruleId,
+                required String instrumentId,
+                required String ruleType,
+                required String subjectType,
+                required String subjectId,
+                required String valueJson,
+                required String effectiveFrom,
+                Value<String?> effectiveTo = const Value.absent(),
+                required String reviewStatus,
+                Value<int> isTestData = const Value.absent(),
+              }) => JurisdictionalRulesCompanion.insert(
+                ruleId: ruleId,
+                instrumentId: instrumentId,
+                ruleType: ruleType,
+                subjectType: subjectType,
+                subjectId: subjectId,
+                valueJson: valueJson,
+                effectiveFrom: effectiveFrom,
+                effectiveTo: effectiveTo,
+                reviewStatus: reviewStatus,
+                isTestData: isTestData,
+              ),
+          withReferenceMapper: (p0) => p0
+              .map(
+                (e) => (
+                  e.readTable<JurisdictionalRules, JurisdictionalRule>(table),
+                  $JurisdictionalRulesReferences(db, table, e),
+                ),
+              )
+              .toList(),
+          prefetchHooksCallback: ({instrumentId = false}) {
+            return PrefetchHooks(
+              db: db,
+              explicitlyWatchedTables: [],
+              addJoins:
+                  <
+                    T extends TableManagerState<
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic
+                    >
+                  >(state) {
+                    if (instrumentId) {
+                      state = state.withJoin(
+                        currentTable: table,
+                        currentColumn: table.instrumentId,
+                        referencedTable: $JurisdictionalRulesReferences
+                            ._instrumentIdTable(db),
+                        referencedColumn: $JurisdictionalRulesReferences
+                            ._instrumentIdTable(db)
+                            .instrumentId,
+                      ) as T;
+                    }
+
+                    return state;
+                  },
+              getPrefetchedDataCallback: (items) async {
+                return [];
+              },
+            );
+          },
+        ),
+      );
+}
+
+typedef $JurisdictionalRulesProcessedTableManager =
+    ProcessedTableManager<
+      _$ContentDatabase,
+      JurisdictionalRules,
+      JurisdictionalRule,
+      $JurisdictionalRulesFilterComposer,
+      $JurisdictionalRulesOrderingComposer,
+      $JurisdictionalRulesAnnotationComposer,
+      $JurisdictionalRulesCreateCompanionBuilder,
+      $JurisdictionalRulesUpdateCompanionBuilder,
+      (JurisdictionalRule, $JurisdictionalRulesReferences),
+      JurisdictionalRule,
+      PrefetchHooks Function({bool instrumentId})
     >;
 typedef $ClaimGroupsCreateCompanionBuilder = ClaimGroupsCompanion Function({
   required String groupId,
@@ -8259,6 +12061,9 @@ typedef $ClaimsCreateCompanionBuilder = ClaimsCompanion Function({
   Value<int> version,
   required String updatedAt,
   Value<int> isTestData,
+  Value<String> knowledgeLayer,
+  Value<String?> jurisdictionId,
+  Value<String?> instrumentId,
 });
 typedef $ClaimsUpdateCompanionBuilder = ClaimsCompanion Function({
   Value<String> claimId,
@@ -8275,6 +12080,9 @@ typedef $ClaimsUpdateCompanionBuilder = ClaimsCompanion Function({
   Value<int> version,
   Value<String> updatedAt,
   Value<int> isTestData,
+  Value<String> knowledgeLayer,
+  Value<String?> jurisdictionId,
+  Value<String?> instrumentId,
 });
 
 final class $ClaimsReferences
@@ -8292,6 +12100,43 @@ final class $ClaimsReferences
       $_db.claimGroups,
     ).filter((f) => f.groupId.sqlEquals($_column));
     final item = $_typedResult.readTableOrNull(_groupIdTable($_db));
+    if (item == null) return manager;
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: [item]),
+    );
+  }
+
+  static Jurisdictions _jurisdictionIdTable(_$ContentDatabase db) => db
+      .jurisdictions
+      .createAlias('claims__jurisdiction_id__jurisdictions__jurisdiction_id');
+
+  $JurisdictionsProcessedTableManager? get jurisdictionId {
+    final $_column = $_itemColumn<String>('jurisdiction_id');
+    if ($_column == null) return null;
+    final manager = $JurisdictionsTableManager(
+      $_db,
+      $_db.jurisdictions,
+    ).filter((f) => f.jurisdictionId.sqlEquals($_column));
+    final item = $_typedResult.readTableOrNull(_jurisdictionIdTable($_db));
+    if (item == null) return manager;
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: [item]),
+    );
+  }
+
+  static JurisdictionalInstruments _instrumentIdTable(_$ContentDatabase db) =>
+      db.jurisdictionalInstruments.createAlias(
+        'claims__instrument_id__jurisdictional_instruments__instrument_id',
+      );
+
+  $JurisdictionalInstrumentsProcessedTableManager? get instrumentId {
+    final $_column = $_itemColumn<String>('instrument_id');
+    if ($_column == null) return null;
+    final manager = $JurisdictionalInstrumentsTableManager(
+      $_db,
+      $_db.jurisdictionalInstruments,
+    ).filter((f) => f.instrumentId.sqlEquals($_column));
+    final item = $_typedResult.readTableOrNull(_instrumentIdTable($_db));
     if (item == null) return manager;
     return ProcessedTableManager(
       manager.$state.copyWith(prefetchedData: [item]),
@@ -8414,6 +12259,11 @@ class $ClaimsFilterComposer extends Composer<_$ContentDatabase, Claims> {
     builder: (column) => ColumnFilters(column),
   );
 
+  ColumnFilters<String> get knowledgeLayer => $composableBuilder(
+    column: $table.knowledgeLayer,
+    builder: (column) => ColumnFilters(column),
+  );
+
   $ClaimGroupsFilterComposer get groupId {
     final $ClaimGroupsFilterComposer composer = $composerBuilder(
       composer: this,
@@ -8428,6 +12278,52 @@ class $ClaimsFilterComposer extends Composer<_$ContentDatabase, Claims> {
           }) => $ClaimGroupsFilterComposer(
             $db: $db,
             $table: $db.claimGroups,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+
+  $JurisdictionsFilterComposer get jurisdictionId {
+    final $JurisdictionsFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.jurisdictionId,
+      referencedTable: $db.jurisdictions,
+      getReferencedColumn: (t) => t.jurisdictionId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $JurisdictionsFilterComposer(
+            $db: $db,
+            $table: $db.jurisdictions,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+
+  $JurisdictionalInstrumentsFilterComposer get instrumentId {
+    final $JurisdictionalInstrumentsFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.instrumentId,
+      referencedTable: $db.jurisdictionalInstruments,
+      getReferencedColumn: (t) => t.instrumentId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $JurisdictionalInstrumentsFilterComposer(
+            $db: $db,
+            $table: $db.jurisdictionalInstruments,
             $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
             joinBuilder: joinBuilder,
             $removeJoinBuilderFromRootComposer:
@@ -8561,6 +12457,11 @@ class $ClaimsOrderingComposer extends Composer<_$ContentDatabase, Claims> {
     builder: (column) => ColumnOrderings(column),
   );
 
+  ColumnOrderings<String> get knowledgeLayer => $composableBuilder(
+    column: $table.knowledgeLayer,
+    builder: (column) => ColumnOrderings(column),
+  );
+
   $ClaimGroupsOrderingComposer get groupId {
     final $ClaimGroupsOrderingComposer composer = $composerBuilder(
       composer: this,
@@ -8581,6 +12482,53 @@ class $ClaimsOrderingComposer extends Composer<_$ContentDatabase, Claims> {
                 $removeJoinBuilderFromRootComposer,
           ),
     );
+    return composer;
+  }
+
+  $JurisdictionsOrderingComposer get jurisdictionId {
+    final $JurisdictionsOrderingComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.jurisdictionId,
+      referencedTable: $db.jurisdictions,
+      getReferencedColumn: (t) => t.jurisdictionId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $JurisdictionsOrderingComposer(
+            $db: $db,
+            $table: $db.jurisdictions,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+
+  $JurisdictionalInstrumentsOrderingComposer get instrumentId {
+    final $JurisdictionalInstrumentsOrderingComposer composer =
+        $composerBuilder(
+          composer: this,
+          getCurrentColumn: (t) => t.instrumentId,
+          referencedTable: $db.jurisdictionalInstruments,
+          getReferencedColumn: (t) => t.instrumentId,
+          builder:
+              (
+                joinBuilder, {
+                $addJoinBuilderToRootComposer,
+                $removeJoinBuilderFromRootComposer,
+              }) => $JurisdictionalInstrumentsOrderingComposer(
+                $db: $db,
+                $table: $db.jurisdictionalInstruments,
+                $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+                joinBuilder: joinBuilder,
+                $removeJoinBuilderFromRootComposer:
+                    $removeJoinBuilderFromRootComposer,
+              ),
+        );
     return composer;
   }
 }
@@ -8642,6 +12590,11 @@ class $ClaimsAnnotationComposer extends Composer<_$ContentDatabase, Claims> {
     builder: (column) => column,
   );
 
+  GeneratedColumn<String> get knowledgeLayer => $composableBuilder(
+    column: $table.knowledgeLayer,
+    builder: (column) => column,
+  );
+
   $ClaimGroupsAnnotationComposer get groupId {
     final $ClaimGroupsAnnotationComposer composer = $composerBuilder(
       composer: this,
@@ -8662,6 +12615,53 @@ class $ClaimsAnnotationComposer extends Composer<_$ContentDatabase, Claims> {
                 $removeJoinBuilderFromRootComposer,
           ),
     );
+    return composer;
+  }
+
+  $JurisdictionsAnnotationComposer get jurisdictionId {
+    final $JurisdictionsAnnotationComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.jurisdictionId,
+      referencedTable: $db.jurisdictions,
+      getReferencedColumn: (t) => t.jurisdictionId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $JurisdictionsAnnotationComposer(
+            $db: $db,
+            $table: $db.jurisdictions,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+
+  $JurisdictionalInstrumentsAnnotationComposer get instrumentId {
+    final $JurisdictionalInstrumentsAnnotationComposer composer =
+        $composerBuilder(
+          composer: this,
+          getCurrentColumn: (t) => t.instrumentId,
+          referencedTable: $db.jurisdictionalInstruments,
+          getReferencedColumn: (t) => t.instrumentId,
+          builder:
+              (
+                joinBuilder, {
+                $addJoinBuilderToRootComposer,
+                $removeJoinBuilderFromRootComposer,
+              }) => $JurisdictionalInstrumentsAnnotationComposer(
+                $db: $db,
+                $table: $db.jurisdictionalInstruments,
+                $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+                joinBuilder: joinBuilder,
+                $removeJoinBuilderFromRootComposer:
+                    $removeJoinBuilderFromRootComposer,
+              ),
+        );
     return composer;
   }
 
@@ -8731,6 +12731,8 @@ class $ClaimsTableManager
           Claim,
           PrefetchHooks Function({
             bool groupId,
+            bool jurisdictionId,
+            bool instrumentId,
             bool citationsRefs,
             bool concentrationRecordsRefs,
           })
@@ -8762,6 +12764,9 @@ class $ClaimsTableManager
                 Value<int> version = const Value.absent(),
                 Value<String> updatedAt = const Value.absent(),
                 Value<int> isTestData = const Value.absent(),
+                Value<String> knowledgeLayer = const Value.absent(),
+                Value<String?> jurisdictionId = const Value.absent(),
+                Value<String?> instrumentId = const Value.absent(),
               }) => ClaimsCompanion(
                 claimId: claimId,
                 entityType: entityType,
@@ -8777,6 +12782,9 @@ class $ClaimsTableManager
                 version: version,
                 updatedAt: updatedAt,
                 isTestData: isTestData,
+                knowledgeLayer: knowledgeLayer,
+                jurisdictionId: jurisdictionId,
+                instrumentId: instrumentId,
               ),
           createCompanionCallback:
               ({
@@ -8794,6 +12802,9 @@ class $ClaimsTableManager
                 Value<int> version = const Value.absent(),
                 required String updatedAt,
                 Value<int> isTestData = const Value.absent(),
+                Value<String> knowledgeLayer = const Value.absent(),
+                Value<String?> jurisdictionId = const Value.absent(),
+                Value<String?> instrumentId = const Value.absent(),
               }) => ClaimsCompanion.insert(
                 claimId: claimId,
                 entityType: entityType,
@@ -8809,6 +12820,9 @@ class $ClaimsTableManager
                 version: version,
                 updatedAt: updatedAt,
                 isTestData: isTestData,
+                knowledgeLayer: knowledgeLayer,
+                jurisdictionId: jurisdictionId,
+                instrumentId: instrumentId,
               ),
           withReferenceMapper: (p0) => p0
               .map(
@@ -8821,6 +12835,8 @@ class $ClaimsTableManager
           prefetchHooksCallback:
               ({
                 groupId = false,
+                jurisdictionId = false,
+                instrumentId = false,
                 citationsRefs = false,
                 concentrationRecordsRefs = false,
               }) {
@@ -8856,6 +12872,28 @@ class $ClaimsTableManager
                             referencedColumn: $ClaimsReferences
                                 ._groupIdTable(db)
                                 .groupId,
+                          ) as T;
+                        }
+                        if (jurisdictionId) {
+                          state = state.withJoin(
+                            currentTable: table,
+                            currentColumn: table.jurisdictionId,
+                            referencedTable: $ClaimsReferences
+                                ._jurisdictionIdTable(db),
+                            referencedColumn: $ClaimsReferences
+                                ._jurisdictionIdTable(db)
+                                .jurisdictionId,
+                          ) as T;
+                        }
+                        if (instrumentId) {
+                          state = state.withJoin(
+                            currentTable: table,
+                            currentColumn: table.instrumentId,
+                            referencedTable: $ClaimsReferences
+                                ._instrumentIdTable(db),
+                            referencedColumn: $ClaimsReferences
+                                ._instrumentIdTable(db)
+                                .instrumentId,
                           ) as T;
                         }
 
@@ -8918,6 +12956,8 @@ typedef $ClaimsProcessedTableManager =
       Claim,
       PrefetchHooks Function({
         bool groupId,
+        bool jurisdictionId,
+        bool instrumentId,
         bool citationsRefs,
         bool concentrationRecordsRefs,
       })
@@ -12397,6 +16437,15 @@ class $ContentDatabaseManager {
   $ContentMetaTableManager get contentMeta =>
       $ContentMetaTableManager(_db, _db.contentMeta);
   $SourcesTableManager get sources => $SourcesTableManager(_db, _db.sources);
+  $JurisdictionsTableManager get jurisdictions =>
+      $JurisdictionsTableManager(_db, _db.jurisdictions);
+  $JurisdictionalInstrumentsTableManager get jurisdictionalInstruments =>
+      $JurisdictionalInstrumentsTableManager(
+        _db,
+        _db.jurisdictionalInstruments,
+      );
+  $JurisdictionalRulesTableManager get jurisdictionalRules =>
+      $JurisdictionalRulesTableManager(_db, _db.jurisdictionalRules);
   $ClaimGroupsTableManager get claimGroups =>
       $ClaimGroupsTableManager(_db, _db.claimGroups);
   $ClaimsTableManager get claims => $ClaimsTableManager(_db, _db.claims);

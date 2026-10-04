@@ -160,6 +160,160 @@ void main() {
     });
   });
 
+  group('Jurisdiction Layer (schema v2)', () {
+    Future<void> seed() async {
+      await db
+          .into(db.sources)
+          .insert(
+            SourcesCompanion.insert(
+              sourceId: 'TEST-SRC-OFFICIAL',
+              sourceType: 'official_document',
+              title: 'TEST DATA — official source placeholder',
+              tier: 1,
+              evidenceLevel: 'A',
+              licenseMode: 'openReuse',
+              reviewStatus: 'NEEDS_REVIEW',
+              isTestData: const Value(1),
+            ),
+          );
+      // ISO 3166 user-assigned kod (XA) — real davlat emas.
+      await db
+          .into(db.jurisdictions)
+          .insert(
+            JurisdictionsCompanion.insert(
+              jurisdictionId: 'XA',
+              level: 'country',
+            ),
+          );
+      await db
+          .into(db.jurisdictionalInstruments)
+          .insert(
+            JurisdictionalInstrumentsCompanion.insert(
+              instrumentId: 'TEST-INST-XA',
+              jurisdictionId: 'XA',
+              instrumentType: 'controlled_substance_schedule',
+              officialSourceId: 'TEST-SRC-OFFICIAL',
+              effectiveFrom: '2020-01-01',
+              version: 'TEST-v1',
+              reviewStatus: 'NEEDS_REVIEW',
+              isTestData: const Value(1),
+            ),
+          );
+    }
+
+    ClaimsCompanion claim({
+      required String id,
+      String layer = 'international_scientific',
+      String? jurisdictionId,
+      String? instrumentId,
+    }) => ClaimsCompanion.insert(
+      claimId: id,
+      entityType: 'substance',
+      entityId: 'TEST-SUB-X',
+      field: 'legal_status',
+      valueJson: '{}',
+      domain: 'legal',
+      reviewStatus: 'NEEDS_REVIEW',
+      evidenceLevel: 'C',
+      updatedAt: '2026-10-04',
+      isTestData: const Value(1),
+      knowledgeLayer: Value(layer),
+      jurisdictionId: Value(jurisdictionId),
+      instrumentId: Value(instrumentId),
+    );
+
+    test('claim qatlami standart — international_scientific', () async {
+      await seed();
+      await db.into(db.claims).insert(claim(id: 'TEST-C-SCI'));
+      final row = await (db.select(
+        db.claims,
+      )..where((t) => t.claimId.equals('TEST-C-SCI'))).getSingle();
+      expect(row.knowledgeLayer, 'international_scientific');
+      expect(row.jurisdictionId, equals(null));
+    });
+
+    test('yurisdiksion claim yurisdiksiya va hujjatga bog‘lanadi', () async {
+      await seed();
+      await db
+          .into(db.claims)
+          .insert(
+            claim(
+              id: 'TEST-C-JUR',
+              layer: 'jurisdictional',
+              jurisdictionId: 'XA',
+              instrumentId: 'TEST-INST-XA',
+            ),
+          );
+      expect(await db.containsTestData(), isTrue);
+    });
+
+    test('qatlamlar aralashmaydi (CHECK)', () async {
+      await seed();
+      // Ilmiy claim davlatga bog‘lana olmaydi.
+      await expectLater(
+        db.into(db.claims).insert(claim(id: 'TEST-C1', jurisdictionId: 'XA')),
+        throwsA(isA<SqliteException>()),
+      );
+      // Yurisdiksion claim hujjatsiz bo‘lmaydi.
+      await expectLater(
+        db
+            .into(db.claims)
+            .insert(
+              claim(
+                id: 'TEST-C2',
+                layer: 'jurisdictional',
+                jurisdictionId: 'XA',
+              ),
+            ),
+        throwsA(isA<SqliteException>()),
+      );
+      // Noma’lum qatlam.
+      await expectLater(
+        db.into(db.claims).insert(claim(id: 'TEST-C3', layer: 'national')),
+        throwsA(isA<SqliteException>()),
+      );
+    });
+
+    test('kuchga kirish davri va rasmiy manba majburiy', () async {
+      await seed();
+      await expectLater(
+        db
+            .into(db.jurisdictionalInstruments)
+            .insert(
+              JurisdictionalInstrumentsCompanion.insert(
+                instrumentId: 'TEST-INST-BAD',
+                jurisdictionId: 'XA',
+                instrumentType: 'law',
+                officialSourceId: 'TEST-SRC-OFFICIAL',
+                effectiveFrom: '2024-01-01',
+                effectiveTo: const Value('2023-01-01'),
+                version: 'TEST-v1',
+                reviewStatus: 'NEEDS_REVIEW',
+                isTestData: const Value(1),
+              ),
+            ),
+        throwsA(isA<SqliteException>()),
+      );
+      await expectLater(
+        db
+            .into(db.jurisdictionalInstruments)
+            .insert(
+              JurisdictionalInstrumentsCompanion.insert(
+                instrumentId: 'TEST-INST-NOSRC',
+                jurisdictionId: 'XA',
+                instrumentType: 'law',
+                officialSourceId: 'TEST-SRC-MISSING',
+                effectiveFrom: '2024-01-01',
+                version: 'TEST-v1',
+                reviewStatus: 'NEEDS_REVIEW',
+                isTestData: const Value(1),
+              ),
+            ),
+        throwsA(isA<SqliteException>()),
+      );
+    });
+  });
+
   test('UserDatabase bookmark skeleti', () async {
     final u = UserDatabase(NativeDatabase.memory());
     await u.addBookmark('substance', 'TEST-SUB-METH', DateTime.utc(2026));
