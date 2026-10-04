@@ -1044,4 +1044,14 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get aboutTrademarkPending =>
       'Nom va logo: tovar belgisi tekshiruvi yakunlanmagan.';
+
+  @override
+  String get diagPurchaseNone => 'Xarid: do‘kon tasdiqlamagan';
+
+  @override
+  String get diagPurchaseStore =>
+      'Xarid: faqat do‘kon tasdiqlagan — server tekshiruvi ulanmagan (release blocker)';
+
+  @override
+  String get diagPurchaseServer => 'Xarid: server tomonidan tekshirilgan';
 }

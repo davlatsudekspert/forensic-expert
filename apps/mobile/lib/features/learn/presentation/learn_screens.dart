@@ -10,6 +10,7 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/learn/learn_models.dart';
+import '../../../domain/ports/billing_ports.dart';
 import '../../placeholder/presentation/in_development_view.dart';
 
 /// Student / Resident dashboard. Professional rejim bilan bir xil dizayn
@@ -52,12 +53,17 @@ class LearnScreen extends ConsumerWidget {
                       body: l.learnEmptyCourses,
                     )
                   else
-                    for (final course in courses)
+                    for (final (i, course) in courses.indexed)
                       Padding(
                         padding: const EdgeInsets.only(bottom: FeSpace.xs),
                         child: FeCard(
                           key: Key('learn.course.${course.id}'),
-                          onTap: () => _showLessons(context, course, lang),
+                          // Bepul demo: birinchi kurs(lar); qolganlari Lifetime.
+                          onTap:
+                              i < AccessPolicy.freeCourses ||
+                                  ref.watch(accessProvider).hasFullAccess
+                              ? () => _showLessons(context, course, lang)
+                              : () => context.push(Routes.purchase),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -77,6 +83,14 @@ class LearnScreen extends ConsumerWidget {
                                       color: c.textSecondary,
                                     ),
                                   ),
+                                  if (i >= AccessPolicy.freeCourses &&
+                                      !ref.watch(accessProvider).hasFullAccess)
+                                    StatusChip(
+                                      key: Key('learn.locked.${course.id}'),
+                                      icon: Icons.lock_outline,
+                                      label: l.lockedBadge,
+                                      color: c.textSecondary,
+                                    ),
                                   StatusChip(
                                     icon: Icons.radio_button_unchecked,
                                     label: l.learnNotStarted,

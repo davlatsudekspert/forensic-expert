@@ -31,7 +31,7 @@ class PurchaseScreen extends ConsumerWidget {
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
     final billing = ref.watch(entitlementServiceProvider);
-    final owned = billing.current.hasFullAccess;
+    final owned = ref.watch(accessProvider).hasFullAccess;
     final offers = ref.watch(offersProvider).value ?? const <Offer>[];
     Offer? lifetime;
     for (final o in offers) {
@@ -52,11 +52,14 @@ class PurchaseScreen extends ConsumerWidget {
     Future<void> buy() async {
       final messenger = ScaffoldMessenger.of(context);
       final outcome = await billing.purchase(ProductIds.lifetime);
-      if (outcome == PurchaseOutcome.unavailable) {
-        messenger.showSnackBar(
-          SnackBar(content: Text(l.purchaseUnavailableSnack)),
-        );
-      }
+      final text = switch (outcome) {
+        PurchaseOutcome.purchased => l.purchaseSuccess,
+        PurchaseOutcome.pending => l.purchasePending,
+        PurchaseOutcome.cancelled => l.purchaseCancelled,
+        PurchaseOutcome.failed => l.purchaseFailed,
+        PurchaseOutcome.unavailable => l.purchaseUnavailableSnack,
+      };
+      messenger.showSnackBar(SnackBar(content: Text(text)));
     }
 
     return Scaffold(

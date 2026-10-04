@@ -1935,6 +1935,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Name and logo: trademark clearance pending.'**
   String get aboutTrademarkPending;
+
+  /// Diagnostics (debug/profile only).
+  ///
+  /// In en, this message translates to:
+  /// **'Purchase: none confirmed by the store'**
+  String get diagPurchaseNone;
+
+  /// Diagnostics (debug/profile only).
+  ///
+  /// In en, this message translates to:
+  /// **'Purchase: confirmed by the store only — server verification not connected (release blocker)'**
+  String get diagPurchaseStore;
+
+  /// Diagnostics (debug/profile only).
+  ///
+  /// In en, this message translates to:
+  /// **'Purchase: verified by the server'**
+  String get diagPurchaseServer;
 }
 
 class _AppLocalizationsDelegate

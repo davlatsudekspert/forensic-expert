@@ -22,12 +22,22 @@ enum AccessLevel { free, lifetime, institution }
 
 enum EntitlementSource { none, appStore, playStore, institution, promo }
 
+/// Huquq qanday tasdiqlangan.
+///
+/// * [storeConfirmed] — xaridni qurilmadagi StoreKit / Google Play Billing
+///   shu Apple ID / Google akkaunti uchun tasdiqladi (ilovaning lokal
+///   yozuvi EMAS). Server tekshiruvi YO‘Q — production uchun yetarli emas.
+/// * [serverVerified] — backend App Store Server API / Google Play
+///   Developer API orqali tekshirdi.
+enum EntitlementVerification { none, storeConfirmed, serverVerified }
+
 @immutable
 class Entitlements {
   const Entitlements({
     required this.access,
     required this.source,
     this.purchasedAt,
+    this.verification = EntitlementVerification.none,
   });
 
   static const free = Entitlements(
@@ -38,6 +48,7 @@ class Entitlements {
   final AccessLevel access;
   final EntitlementSource source;
   final DateTime? purchasedAt;
+  final EntitlementVerification verification;
 
   /// Asosiy professional mahsulot ochiqmi (Lifetime yoki tashkilot).
   bool get hasFullAccess =>
@@ -83,6 +94,55 @@ abstract final class BillingConfig {
   /// Mahsulot/dizayn maqsadi — **reference narx**, real narx emas.
   /// Store ulangach har doim storefront qaytargan lokal narx ko‘rsatiladi.
   static const referenceLifetimePrice = r'$59.99';
+}
+
+// ---------------------------------------------------------------------------
+// Xaridni server tomonida tekshirish (arxitektura; backend — RG-18).
+// ---------------------------------------------------------------------------
+
+/// Store’dan kelgan xarid dalili (backend’ga yuboriladi).
+@immutable
+class PurchaseEvidence {
+  const PurchaseEvidence({
+    required this.productId,
+    required this.platform,
+    required this.serverVerificationData,
+    this.purchaseId,
+  });
+
+  final String productId;
+  final EntitlementSource platform;
+
+  /// iOS: StoreKit 2 JWS / tranzaksiya JSON; Android: purchase token.
+  final String serverVerificationData;
+  final String? purchaseId;
+}
+
+enum VerificationStatus {
+  /// Backend tasdiqladi.
+  verified,
+
+  /// Backend rad etdi (soxta, qaytarilgan, boshqa ilova) — huquq YO‘Q.
+  rejected,
+
+  /// Backend sozlanmagan (hozirgi holat) — RELEASE BLOCKER RG-18.
+  serverNotConfigured,
+
+  /// Tarmoq yo‘q — offline foydalanuvchi uchun vaqtinchalik qaror.
+  networkError,
+}
+
+abstract interface class PurchaseVerifier {
+  Future<VerificationStatus> verify(PurchaseEvidence evidence);
+}
+
+/// PHASE 3 holati: backend yo‘q. Hech qachon «verified» qaytarmaydi.
+class UnconfiguredPurchaseVerifier implements PurchaseVerifier {
+  const UnconfiguredPurchaseVerifier();
+
+  @override
+  Future<VerificationStatus> verify(PurchaseEvidence evidence) async =>
+      VerificationStatus.serverNotConfigured;
 }
 
 abstract interface class EntitlementService {

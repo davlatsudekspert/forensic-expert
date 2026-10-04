@@ -1043,4 +1043,14 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get aboutTrademarkPending =>
       'Name and logo: trademark clearance pending.';
+
+  @override
+  String get diagPurchaseNone => 'Purchase: none confirmed by the store';
+
+  @override
+  String get diagPurchaseStore =>
+      'Purchase: confirmed by the store only — server verification not connected (release blocker)';
+
+  @override
+  String get diagPurchaseServer => 'Purchase: verified by the server';
 }

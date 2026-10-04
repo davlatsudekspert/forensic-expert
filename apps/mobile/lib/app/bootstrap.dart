@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
@@ -8,8 +10,14 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../core/perf/startup_metrics.dart';
 import '../core/settings/settings_controller.dart';
 import '../core/settings/settings_repository.dart';
+import '../data/billing/in_app_purchase_client.dart';
+import '../data/billing/store_entitlement_service.dart';
 import '../data/local/user_data_repository.dart';
+import '../data/remote/http_purchase_verifier.dart';
+import '../domain/ports/billing_ports.dart';
 import 'app.dart';
+import 'app_info.dart';
+import 'providers.dart';
 import 'user_data.dart';
 
 /// Ilovani ishga tushirish.
@@ -45,6 +53,19 @@ Future<void> bootstrap() async {
         settingsRepositoryProvider.overrideWithValue(repo),
         userDataRepositoryProvider.overrideWithValue(userDataRepo),
         initialUserDataProvider.overrideWithValue(userData),
+        // Lifetime: faqat mobil store’larda. Boshqa platformada — store yo‘q.
+        if (!kIsWeb && (Platform.isAndroid || Platform.isIOS))
+          entitlementServiceProvider.overrideWithValue(
+            StoreEntitlementService(
+              client: InAppPurchaseStoreClient(),
+              verifier: HttpPurchaseVerifier.fromEnvironment(
+                bundleId: AppInfo.applicationId,
+              ),
+              platformSource: Platform.isIOS
+                  ? EntitlementSource.appStore
+                  : EntitlementSource.playStore,
+            ),
+          ),
       ],
       child: const ForensicExpertApp(),
     ),

@@ -1046,4 +1046,14 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get aboutTrademarkPending =>
       'Название и логотип: проверка товарного знака не завершена.';
+
+  @override
+  String get diagPurchaseNone => 'Покупка: магазин не подтвердил';
+
+  @override
+  String get diagPurchaseStore =>
+      'Покупка: подтверждена только магазином — серверная проверка не подключена (блокирует релиз)';
+
+  @override
+  String get diagPurchaseServer => 'Покупка: проверена сервером';
 }

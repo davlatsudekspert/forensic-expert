@@ -3,6 +3,7 @@ import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../app/providers.dart';
 import '../../../app/user_data.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
@@ -11,7 +12,9 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
+import '../../../domain/ports/billing_ports.dart';
 import '../../common/favorite_button.dart';
+import '../../library/presentation/content_entry_sections.dart';
 import '../tool_strings.dart';
 
 /// Vosita sahifasi. Mavjud kalkulyator — to‘liq INPUT · METHOD · FORMULA ·
@@ -55,7 +58,14 @@ class _ToolDetailScreenState extends ConsumerState<ToolDetailScreen> {
         child: ListView(
           children: [
             FeContentFrame(
-              child: tool.engineId == ToolsCatalog.dilution.engineId
+              child:
+                  tool.isAvailable &&
+                      !AccessPolicy.isToolUnlocked(
+                        tool.id,
+                        ref.watch(accessProvider),
+                      )
+                  ? const LockedContentCard(key: Key('tool.lockedCard'))
+                  : tool.engineId == ToolsCatalog.dilution.engineId
                   ? const _DilutionCalculatorView()
                   : _PlannedToolView(tool: tool),
             ),

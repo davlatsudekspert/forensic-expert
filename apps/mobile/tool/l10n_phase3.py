@@ -52,6 +52,10 @@ k("purchaseCancelled","Purchase cancelled.","Purchase cancelled.","Покупк�
 k("purchaseSuccess","Unlocked.","Lifetime access unlocked. Thank you!","Пожизненный доступ открыт. Спасибо!","Umrbod kirish ochildi. Rahmat!")
 k("aboutTrademarkPending","Brand status.","Name and logo: trademark clearance pending.","Название и логотип: проверка товарного знака не завершена.","Nom va logo: tovar belgisi tekshiruvi yakunlanmagan.")
 
+k("diagPurchaseNone","Diagnostics (debug/profile only).","Purchase: none confirmed by the store","Покупка: магазин не подтвердил","Xarid: do‘kon tasdiqlamagan")
+k("diagPurchaseStore","Diagnostics (debug/profile only).","Purchase: confirmed by the store only — server verification not connected (release blocker)","Покупка: подтверждена только магазином — серверная проверка не подключена (блокирует релиз)","Xarid: faqat do‘kon tasdiqlagan — server tekshiruvi ulanmagan (release blocker)")
+k("diagPurchaseServer","Diagnostics (debug/profile only).","Purchase: verified by the server","Покупка: проверена сервером","Xarid: server tomonidan tekshirilgan")
+
 for idx, code in enumerate(["en","ru","uz"]):
     p = f"{D}/app_{code}.arb"
     data = json.load(open(p, encoding="utf-8"), object_pairs_hook=collections.OrderedDict)

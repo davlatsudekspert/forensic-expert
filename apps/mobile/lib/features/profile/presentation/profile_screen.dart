@@ -15,6 +15,7 @@ import '../../../core/settings/app_settings.dart';
 import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/ports/backend_ports.dart';
+import '../../../domain/ports/billing_ports.dart';
 
 class ProfileScreen extends ConsumerWidget {
   const ProfileScreen({super.key});
@@ -204,6 +205,17 @@ class ProfileScreen extends ConsumerWidget {
                   if (kDebugMode || kProfileMode) ...[
                     FeSectionHeader(l.diagnosticsSection),
                     _Diagnostics(color: c.textSecondary),
+                    Text(
+                      switch (ref.watch(accessProvider).verification) {
+                        EntitlementVerification.none => l.diagPurchaseNone,
+                        EntitlementVerification.storeConfirmed =>
+                          l.diagPurchaseStore,
+                        EntitlementVerification.serverVerified =>
+                          l.diagPurchaseServer,
+                      },
+                      key: const Key('diag.purchase'),
+                      style: t.bodySmall?.copyWith(color: c.textSecondary),
+                    ),
                   ],
                   const SizedBox(height: FeSpace.xl),
                 ],

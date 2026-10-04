@@ -6,4 +6,8 @@
 abstract final class AppInfo {
   static const version = '0.1.0';
   static const build = 1;
+
+  /// VAQTINCHALIK ID (RG-09). Nomzod: `com.forensicexpert.app` — egasi
+  /// tasdiqlamaguncha va store’da ro‘yxatdan o‘tmaguncha o‘zgartirilmaydi.
+  static const applicationId = 'uz.forensicexpert.forensic_expert';
 }

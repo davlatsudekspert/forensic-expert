@@ -1,7 +1,9 @@
 import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
@@ -9,26 +11,32 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
+import '../../../domain/ports/billing_ports.dart';
 import '../../common/favorite_button.dart';
 import '../tool_strings.dart';
 
 /// Vosita kartochkasi: nom, qisqa vazifa, holat va favorite.
-class ToolTile extends StatelessWidget {
+class ToolTile extends ConsumerWidget {
   const ToolTile({super.key, required this.tool, this.showFavorite = true});
 
   final ToolEntry tool;
   final bool showFavorite;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
+    final locked =
+        tool.isAvailable &&
+        !AccessPolicy.isToolUnlocked(tool.id, ref.watch(accessProvider));
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
     return Card(
       key: Key('tool.${tool.id}'),
       clipBehavior: Clip.antiAlias,
       child: InkWell(
-        onTap: () => context.go(Routes.tool(tool.id)),
+        onTap: locked
+            ? () => context.push(Routes.purchase)
+            : () => context.go(Routes.tool(tool.id)),
         child: Padding(
           padding: const EdgeInsets.fromLTRB(
             FeSpace.md,
@@ -64,6 +72,13 @@ class ToolTile extends StatelessWidget {
                       spacing: FeSpace.xs,
                       runSpacing: FeSpace.xxs,
                       children: [
+                        if (locked)
+                          StatusChip(
+                            key: Key('tool.locked.${tool.id}'),
+                            icon: Icons.lock_outline,
+                            label: l.lockedBadge,
+                            color: c.textSecondary,
+                          ),
                         if (tool.isAvailable) ...[
                           StatusChip(
                             icon: Icons.check_circle_outline,

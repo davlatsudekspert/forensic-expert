@@ -15,6 +15,7 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
+import '../../../domain/ports/billing_ports.dart';
 
 /// Global Search.
 ///
@@ -204,6 +205,8 @@ class _Results extends ConsumerWidget {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     final library = ref.watch(libraryRepositoryProvider);
+    final unlocked = ref.watch(accessProvider).hasFullAccess;
+    const freeLimit = AccessPolicy.freeSearchResultsPerGroup;
     String groupTitle(SearchGroup g) => switch (g) {
       SearchGroup.substances => l.librarySubstances,
       SearchGroup.methods => l.libraryMethods,
@@ -240,7 +243,9 @@ class _Results extends ConsumerWidget {
           for (final g in SearchGroup.values)
             if (result.groups[g]!.isNotEmpty) ...[
               FeSectionHeader(groupTitle(g)),
-              for (final hit in result.groups[g]!)
+              for (final hit in result.groups[g]!.take(
+                unlocked ? result.groups[g]!.length : freeLimit,
+              ))
                 _ResultTile(
                   key: Key('search.hit.${hit.entityId}'),
                   icon: groupIcon(g),
@@ -252,6 +257,19 @@ class _Results extends ConsumerWidget {
                       g == SearchGroup.tools &&
                       !(ToolsCatalog.byId(hit.entityId)?.isAvailable ?? true),
                   onTap: () => onOpen(g, hit),
+                ),
+              // Bepul demo: har guruhda cheklangan natija; qolganlari
+              // Lifetime bilan (yashirin emas — soni aniq ko‘rsatiladi).
+              if (!unlocked && result.groups[g]!.length > freeLimit)
+                ListTile(
+                  key: Key('search.more.${g.name}'),
+                  contentPadding: EdgeInsets.zero,
+                  leading: Icon(Icons.lock_outline, color: c.accent),
+                  title: Text(
+                    l.searchMoreLocked(result.groups[g]!.length - freeLimit),
+                  ),
+                  trailing: const Icon(Icons.chevron_right),
+                  onTap: () => context.push(Routes.purchase),
                 ),
             ],
         ],
