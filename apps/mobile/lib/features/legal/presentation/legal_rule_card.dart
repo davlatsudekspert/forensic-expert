@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../app/providers.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
+import '../../../core/l10n/date_format.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
@@ -47,8 +48,7 @@ class LegalRuleCard extends ConsumerWidget {
     final layer = jurisdiction == null
         ? null
         : legalLayerOf(instrument, jurisdiction.level);
-    String date(DateTime d) =>
-        MaterialLocalizations.of(context).formatMediumDate(d);
+    String date(DateTime d) => feDate(context, d);
     final v = rule.value;
     final limits = (v['limits'] as Map?)?.cast<String, Object?>();
     final excerpt = v['excerpt'] as String?;

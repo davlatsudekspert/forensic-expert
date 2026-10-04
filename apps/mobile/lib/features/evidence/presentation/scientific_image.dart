@@ -8,6 +8,7 @@ import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
+import '../../../core/l10n/date_format.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
@@ -208,8 +209,7 @@ class ImageViewerScreen extends ConsumerWidget {
         ),
       );
     }
-    String date(DateTime d) =>
-        MaterialLocalizations.of(context).formatMediumDate(d);
+    String date(DateTime d) => feDate(context, d);
     final rows = <(String, String)>[
       (l.imageAttribution, meta.attribution),
       if (meta.creator != null) (l.metaCreator, meta.creator!),

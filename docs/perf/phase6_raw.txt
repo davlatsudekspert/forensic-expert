@@ -1,0 +1,17 @@
+PHASE5 PERF
+install (imzo + SHA-256): 357.949 ms
+kutubxona yuklash: 87.031 ms
+bilim obyektlari: 35.402 ms
+evidence (research 883, link 849, rasm meta 156): 37.221 ms
+bitta rasm baytlari (129080 B): 1.922 ms
+qidiruv indeksi: 14.661 ms
+qidiruv (8 so‘rov): min 24.934 ms, median 43.514 ms, max 99.241 ms
+PHASE6 PERF
+ilova → Home birinchi kadr (oflayn, backend kutilmaydi): 861.376 ms
+navigatsiya /library: 163.111 ms
+navigatsiya /library/entry/morphine: 513.933 ms
+navigatsiya /home/research: 251.096 ms
+navigatsiya /home/jurisdictions/select: 177.9 ms
+navigatsiya /home/disciplines: 151.431 ms
+til almashtirish (en → uz): 865.644 ms
+mavzu almashtirish (light → dark): 515.794 ms

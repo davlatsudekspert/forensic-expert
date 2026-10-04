@@ -15,7 +15,12 @@ import '../../../core/widgets/fe_components.dart';
 String formatNumber(double v) {
   if (v == 0) return '0';
   final s = v.toStringAsPrecision(6);
-  return s.contains('e') ? s : double.parse(s).toString();
+  if (s.contains('e')) return s;
+  final d = double.parse(s);
+  // Butun son — «.0» siz (1000, emas 1000.0).
+  return d == d.truncateToDouble() && d.abs() < 1e12
+      ? d.toInt().toString()
+      : d.toString();
 }
 
 double? _num(TextEditingController c) =>
@@ -576,7 +581,10 @@ class _StatsState extends State<DescriptiveStatsView> {
           minLines: 3,
           maxLines: 8,
           keyboardType: TextInputType.multiline,
-          decoration: InputDecoration(labelText: l.calcStatsValues),
+          decoration: InputDecoration(
+            labelText: l.calcStatsValues,
+            alignLabelWithHint: true,
+          ),
         ),
       ],
       onCalculate: () => _run(l),
@@ -682,7 +690,10 @@ class _CalibrationState extends State<CalibrationView> {
       minLines: 4,
       maxLines: 10,
       keyboardType: TextInputType.multiline,
-      decoration: InputDecoration(labelText: l.calcRegPoints),
+      decoration: InputDecoration(
+        labelText: l.calcRegPoints,
+        alignLabelWithHint: true,
+      ),
     );
     if (!widget.withLimits) {
       return CalcScaffold(

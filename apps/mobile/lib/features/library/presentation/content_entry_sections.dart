@@ -8,6 +8,7 @@ import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
+import '../../../core/l10n/date_format.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/settings/app_settings.dart';
 import '../../../core/settings/settings_controller.dart';
@@ -108,18 +109,22 @@ class _ContentEntryBodyState extends ConsumerState<ContentEntryBody> {
       children: [
         _ProvenanceCard(entry: entry),
         FeSectionHeader(l.detailOnThisPage),
-        Wrap(
+        SingleChildScrollView(
           key: const Key('entry.index'),
-          spacing: FeSpace.xs,
-          runSpacing: FeSpace.xxs,
-          children: [
-            for (final (id, title) in index)
-              ActionChip(
-                key: Key('entry.index.$id'),
-                label: Text(title),
-                onPressed: () => _jump(id),
-              ),
-          ],
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: [
+              for (final (id, title) in index)
+                Padding(
+                  padding: const EdgeInsets.only(right: FeSpace.xs),
+                  child: ActionChip(
+                    key: Key('entry.index.$id'),
+                    label: Text(title),
+                    onPressed: () => _jump(id),
+                  ),
+                ),
+            ],
+          ),
         ),
         // Struktura — identifikatsiya (paywall ortida emas).
         for (final im
@@ -506,8 +511,7 @@ class SourceTile extends StatelessWidget {
     final link = source.doi != null
         ? 'https://doi.org/${source.doi}'
         : source.url;
-    String date(DateTime d) =>
-        MaterialLocalizations.of(context).formatMediumDate(d);
+    String date(DateTime d) => feDate(context, d);
     return FeCard(
       key: Key('source.${source.sourceId}'),
       padding: const EdgeInsets.all(FeSpace.sm),

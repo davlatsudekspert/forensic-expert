@@ -295,10 +295,16 @@ class LibraryScreen extends ConsumerWidget {
     final resolver = ref.watch(jurisdictionResolverProvider);
     int lib(LibrarySection s) => library.entries(s).length;
     int kn(KnowledgeKind k) => knowledge.byKind(k).length;
-    final standards = [
-      for (final m in knowledge.byKind(KnowledgeKind.method))
-        if (m.method?.kind != MethodKind.scientificMethod) m,
-    ].length;
+    // Standartlar ekrani bilan bir xil: ilmiy bo‘lmagan metodlar + rasmiy
+    // hujjatlar (qonun, regulation, standart).
+    final standards =
+        [
+          for (final m in knowledge.byKind(KnowledgeKind.method))
+            if (m.method != null &&
+                m.method!.kind != MethodKind.scientificMethod)
+              m,
+        ].length +
+        resolver.instruments.length;
 
     final science = <(String, IconData, String, int)>[
       (

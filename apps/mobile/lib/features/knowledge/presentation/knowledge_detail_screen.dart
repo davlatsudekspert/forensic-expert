@@ -7,6 +7,7 @@ import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
+import '../../../core/l10n/date_format.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/common.dart';
@@ -565,9 +566,7 @@ class _EmergingSection extends StatelessWidget {
         const SizedBox(height: FeSpace.xs),
         if (issue.date != null)
           Text(
-            l.emergingDate(
-              MaterialLocalizations.of(context).formatMediumDate(issue.date!),
-            ),
+            l.emergingDate(feDate(context, issue.date!)),
             style: t.bodySmall,
           ),
         if (issue.scopeJurisdictionId == null)

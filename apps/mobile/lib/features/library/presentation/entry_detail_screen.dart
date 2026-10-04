@@ -8,6 +8,7 @@ import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
+import '../../../core/l10n/date_format.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/settings/app_settings.dart';
@@ -95,8 +96,7 @@ class EntryDetailScreen extends ConsumerWidget {
                       value: Text(
                         entry.lastReviewed == null
                             ? l.detailNotReviewed
-                            : MaterialLocalizations.of(context)
-                                  .formatMediumDate(entry.lastReviewed!),
+                            : feDate(context, entry.lastReviewed!),
                         style: t.bodyMedium,
                       ),
                     ),

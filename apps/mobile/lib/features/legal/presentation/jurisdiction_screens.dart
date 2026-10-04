@@ -8,6 +8,7 @@ import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
+import '../../../core/l10n/date_format.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/settings/settings_controller.dart';
@@ -282,13 +283,13 @@ class _JurisdictionSelectState extends ConsumerState<JurisdictionSelectScreen> {
         if (hasOwnContent(resolver, j.id)) j,
     ];
 
-    Widget tile(Jurisdiction j) {
+    Widget tile(Jurisdiction j, {String section = ''}) {
       final selected = j.id == current;
       final has = j.id == JurisdictionCatalog.internationalId
           ? resolver.instruments.isNotEmpty
           : hasOwnContent(resolver, j.id);
       return ListTile(
-        key: Key('picker.jurisdiction.${j.id}'),
+        key: Key('picker.jurisdiction.$section${j.id}'),
         contentPadding: EdgeInsets.zero,
         leading: _IsoCode(j.iso3166 ?? j.id),
         title: Text(j.name(lang)),
@@ -316,45 +317,60 @@ class _JurisdictionSelectState extends ConsumerState<JurisdictionSelectScreen> {
     return Scaffold(
       appBar: AppBar(title: Text(l.settingsJurisdiction)),
       body: SafeArea(
-        child: ListView(
+        // 249 davlat — lazy ro‘yxat (faqat ko‘rinadigan qatorlar quriladi).
+        child: CustomScrollView(
           key: const Key('jurisdictions.select'),
-          children: [
-            FeContentFrame(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  const SizedBox(height: FeSpace.sm),
-                  FeBanner(
-                    icon: Icons.layers_outlined,
-                    text: l.jurisdictionPickerIntro,
-                  ),
-                  const SizedBox(height: FeSpace.sm),
-                  TextField(
-                    key: const Key('jurisdictions.search'),
-                    onChanged: (v) => setState(() => _q = v),
-                    decoration: InputDecoration(
-                      hintText: l.jurisdictionSearchHint,
-                      prefixIcon: const Icon(Icons.search),
-                      isDense: true,
+          slivers: [
+            SliverToBoxAdapter(
+              child: FeContentFrame(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    const SizedBox(height: FeSpace.sm),
+                    FeBanner(
+                      icon: Icons.layers_outlined,
+                      text: l.jurisdictionPickerIntro,
                     ),
+                    const SizedBox(height: FeSpace.sm),
+                    TextField(
+                      key: const Key('jurisdictions.search'),
+                      onChanged: (v) => setState(() => _q = v),
+                      decoration: InputDecoration(
+                        hintText: l.jurisdictionSearchHint,
+                        prefixIcon: const Icon(Icons.search),
+                        isDense: true,
+                      ),
+                    ),
+                    if (global.isNotEmpty) ...[
+                      FeSectionHeader(l.jurisdictionGroupGlobal),
+                      for (final j in global) tile(j),
+                    ],
+                    if (withContent.isNotEmpty && q.isEmpty) ...[
+                      FeSectionHeader(l.jurisdictionWithContent),
+                      for (final j in withContent) tile(j, section: 'content.'),
+                    ],
+                    FeSectionHeader(l.jurisdictionGroupCountries),
+                  ],
+                ),
+              ),
+            ),
+            SliverList.builder(
+              itemCount: countries.length,
+              itemBuilder: (context, i) =>
+                  FeContentFrame(child: tile(countries[i])),
+            ),
+            SliverToBoxAdapter(
+              child: FeContentFrame(
+                child: Padding(
+                  padding: const EdgeInsets.only(
+                    top: FeSpace.sm,
+                    bottom: FeSpace.xl,
                   ),
-                  if (global.isNotEmpty) ...[
-                    FeSectionHeader(l.jurisdictionGroupGlobal),
-                    for (final j in global) tile(j),
-                  ],
-                  if (withContent.isNotEmpty && q.isEmpty) ...[
-                    FeSectionHeader(l.jurisdictionWithContent),
-                    for (final j in withContent) tile(j),
-                  ],
-                  FeSectionHeader(l.jurisdictionGroupCountries),
-                  for (final j in countries) tile(j),
-                  const SizedBox(height: FeSpace.sm),
-                  Text(
+                  child: Text(
                     l.jurisdictionCountryNames,
                     style: t.bodySmall?.copyWith(color: c.textSecondary),
                   ),
-                  const SizedBox(height: FeSpace.xl),
-                ],
+                ),
               ),
             ),
           ],
@@ -468,8 +484,7 @@ class InstrumentCard extends ConsumerWidget {
     final authority = i.authorityId == null
         ? null
         : catalog.authorities[i.authorityId]?.resolve(lang);
-    String date(DateTime d) =>
-        MaterialLocalizations.of(context).formatMediumDate(d);
+    String date(DateTime d) => feDate(context, d);
     final rows = <(String, String)>[
       if (i.officialReference != null) (l.instrNumber, i.officialReference!),
       if (authority != null) (l.instrAuthority, authority),
@@ -502,7 +517,10 @@ class InstrumentCard extends ConsumerWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Row(
+            Wrap(
+              spacing: FeSpace.sm,
+              runSpacing: FeSpace.xxs,
+              crossAxisAlignment: WrapCrossAlignment.center,
               children: [
                 Text(
                   l.documentKindLabel(kind),
@@ -513,7 +531,6 @@ class InstrumentCard extends ConsumerWidget {
                     color: c.accent,
                   ),
                 ),
-                const Spacer(),
                 ReviewStatusBadge(status: i.status),
               ],
             ),

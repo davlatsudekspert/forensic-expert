@@ -193,6 +193,12 @@ void main() {
       // jurisdictions» endi «Huquq va yurisdiksiyalar» hub’ida (PHASE 4 dan
       // beri ishlaydi) — tanlovchidagi o‘chirilgan yozuv olib tashlandi.
       expect(find.byType(JurisdictionSelectScreen), findsOneWidget);
+      // 249 davlat — lazy ro‘yxat: avval qidiruv, keyin tanlash.
+      await tester.enterText(
+        find.byKey(const Key('jurisdictions.search')),
+        'Uzbek',
+      );
+      await tester.pumpAndSettle();
       await tapKey(tester, 'picker.jurisdiction.UZ');
       expect(c.read(settingsControllerProvider).jurisdictionId, 'UZ');
       expect(find.text('Uzbekistan'), findsOneWidget);
