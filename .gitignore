@@ -27,3 +27,7 @@ GoogleService-Info.plist
 
 # Test natijalari
 **/failures/
+
+# Python
+__pycache__/
+*.pyc
