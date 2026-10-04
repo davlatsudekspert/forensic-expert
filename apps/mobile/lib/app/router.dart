@@ -6,17 +6,23 @@ import '../core/l10n/generated/app_localizations.dart';
 import '../core/perf/navigation_timing.dart';
 import '../core/settings/app_settings.dart';
 import '../core/settings/settings_controller.dart';
+import '../domain/catalog/tools_catalog.dart';
 import '../features/ai/presentation/ai_screen.dart';
 import '../features/home/presentation/home_screen.dart';
 import '../features/home/presentation/search_screen.dart';
+import '../features/learn/presentation/learn_screens.dart';
+import '../features/library/presentation/entry_detail_screen.dart';
 import '../features/library/presentation/library_screen.dart';
 import '../features/onboarding/presentation/disclaimer_screen.dart';
 import '../features/onboarding/presentation/language_screen.dart';
 import '../features/onboarding/presentation/mode_screen.dart';
-import '../features/placeholder/presentation/in_development_view.dart';
+import '../features/profile/presentation/legal_screens.dart';
 import '../features/profile/presentation/profile_screen.dart';
 import '../features/profile/presentation/settings_pickers.dart';
+import '../features/profile/presentation/subscription_screen.dart';
 import '../features/shell/presentation/app_shell.dart';
+import '../features/tools/presentation/module_hub_screen.dart';
+import '../features/tools/presentation/tool_detail_screen.dart';
 import '../features/tools/presentation/tools_screen.dart';
 import 'routes.dart';
 
@@ -86,7 +92,22 @@ final routerProvider = Provider<GoRouter>((ref) {
                   GoRoute(
                     path: 'search',
                     parentNavigatorKey: rootKey,
-                    builder: (c, s) => const SearchScreen(),
+                    builder: (c, s) =>
+                        SearchScreen(initialQuery: s.uri.queryParameters['q']),
+                  ),
+                  GoRoute(
+                    path: 'learn',
+                    builder: (c, s) => const LearnScreen(),
+                    routes: [
+                      GoRoute(
+                        path: 'quiz',
+                        builder: (c, s) => const QuizScreen(),
+                      ),
+                      GoRoute(
+                        path: 'flashcards',
+                        builder: (c, s) => const FlashcardsScreen(),
+                      ),
+                    ],
                   ),
                   GoRoute(
                     path: 'module/:id',
@@ -94,8 +115,15 @@ final routerProvider = Provider<GoRouter>((ref) {
                       final module = HomeModule.values
                           .asNameMap()[s.pathParameters['id']];
                       final l = AppLocalizations.of(c);
-                      return ModulePlaceholderScreen(
+                      return ModuleHubScreen(
                         title: module?.label(l) ?? l.inDevelopmentTitle,
+                        category: switch (module) {
+                          HomeModule.forensicMedicine =>
+                            ToolCategory.forensicMedicine,
+                          HomeModule.toxicology => ToolCategory.toxicology,
+                          HomeModule.laboratory => ToolCategory.laboratory,
+                          _ => null,
+                        },
                       );
                     },
                   ),
@@ -108,6 +136,13 @@ final routerProvider = Provider<GoRouter>((ref) {
               GoRoute(
                 path: Routes.tools,
                 builder: (c, s) => const ToolsScreen(),
+                routes: [
+                  GoRoute(
+                    path: 'tool/:id',
+                    builder: (c, s) =>
+                        ToolDetailScreen(toolId: s.pathParameters['id']!),
+                  ),
+                ],
               ),
             ],
           ),
@@ -116,6 +151,13 @@ final routerProvider = Provider<GoRouter>((ref) {
               GoRoute(
                 path: Routes.library,
                 builder: (c, s) => const LibraryScreen(),
+                routes: [
+                  GoRoute(
+                    path: 'entry/:id',
+                    builder: (c, s) =>
+                        EntryDetailScreen(entryId: s.pathParameters['id']!),
+                  ),
+                ],
               ),
             ],
           ),
@@ -141,9 +183,38 @@ final routerProvider = Provider<GoRouter>((ref) {
                     builder: (c, s) => const ModePickerScreen(),
                   ),
                   GoRoute(
+                    path: 'jurisdiction',
+                    parentNavigatorKey: rootKey,
+                    builder: (c, s) => const JurisdictionPickerScreen(),
+                  ),
+                  GoRoute(
                     path: 'disclaimer',
                     parentNavigatorKey: rootKey,
                     builder: (c, s) => const DisclaimerScreen(readOnly: true),
+                  ),
+                  GoRoute(
+                    path: 'subscription',
+                    parentNavigatorKey: rootKey,
+                    builder: (c, s) => const SubscriptionScreen(),
+                  ),
+                  GoRoute(
+                    path: 'privacy',
+                    parentNavigatorKey: rootKey,
+                    builder: (c, s) => const LegalDocumentScreen(
+                      document: LegalDocument.privacy,
+                    ),
+                  ),
+                  GoRoute(
+                    path: 'terms',
+                    parentNavigatorKey: rootKey,
+                    builder: (c, s) => const LegalDocumentScreen(
+                      document: LegalDocument.terms,
+                    ),
+                  ),
+                  GoRoute(
+                    path: 'about',
+                    parentNavigatorKey: rootKey,
+                    builder: (c, s) => const AboutScreen(),
                   ),
                 ],
               ),

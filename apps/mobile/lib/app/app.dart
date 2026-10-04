@@ -18,7 +18,21 @@ class ForensicExpertApp extends ConsumerWidget {
     final themeMode = ref.watch(
       settingsControllerProvider.select((s) => s.themeMode),
     );
+    final contrast = ref.watch(
+      settingsControllerProvider.select((s) => s.contrast),
+    );
     final router = ref.watch(routerProvider);
+
+    // Kontrast: `system` — MaterialApp OS sozlamasiga ko‘ra highContrast
+    // mavzusini o‘zi tanlaydi; `high`/`standard` — foydalanuvchi majburlaydi.
+    final forceHigh = contrast == ContrastPreference.high;
+    final forceStandard = contrast == ContrastPreference.standard;
+    final light = forceHigh
+        ? FeThemeBuilder.lightHighContrast()
+        : FeThemeBuilder.light();
+    final dark = forceHigh
+        ? FeThemeBuilder.darkHighContrast()
+        : FeThemeBuilder.dark();
 
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
@@ -35,8 +49,14 @@ class ForensicExpertApp extends ConsumerWidget {
         }
         return supported.first;
       },
-      theme: FeThemeBuilder.light(),
-      darkTheme: FeThemeBuilder.dark(),
+      theme: light,
+      darkTheme: dark,
+      highContrastTheme: forceStandard
+          ? light
+          : FeThemeBuilder.lightHighContrast(),
+      highContrastDarkTheme: forceStandard
+          ? dark
+          : FeThemeBuilder.darkHighContrast(),
       themeMode: themeMode,
     );
   }

@@ -8,7 +8,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../core/perf/startup_metrics.dart';
 import '../core/settings/settings_controller.dart';
 import '../core/settings/settings_repository.dart';
+import '../data/local/user_data_repository.dart';
 import 'app.dart';
+import 'user_data.dart';
 
 /// Ilovani ishga tushirish.
 ///
@@ -21,10 +23,15 @@ Future<void> bootstrap() async {
 
   _registerFontLicenses();
 
-  final repo = await metrics.measure(PerfMarks.settingsLoad, () async {
-    return SharedPrefsSettingsRepository(await SharedPreferences.getInstance());
-  });
+  final prefs = await metrics.measure(
+    PerfMarks.settingsLoad,
+    SharedPreferences.getInstance,
+  );
+  final repo = SharedPrefsSettingsRepository(prefs);
   final settings = await repo.load();
+  // Saralanganlar va qidiruv tarixi — faqat lokal.
+  final userDataRepo = SharedPrefsUserDataRepository(prefs);
+  final userData = await userDataRepo.load();
   metrics.mark(PerfMarks.settingsLoaded);
 
   SchedulerBinding.instance.addPostFrameCallback((_) {
@@ -36,6 +43,8 @@ Future<void> bootstrap() async {
       overrides: [
         initialSettingsProvider.overrideWithValue(settings),
         settingsRepositoryProvider.overrideWithValue(repo),
+        userDataRepositoryProvider.overrideWithValue(userDataRepo),
+        initialUserDataProvider.overrideWithValue(userData),
       ],
       child: const ForensicExpertApp(),
     ),
