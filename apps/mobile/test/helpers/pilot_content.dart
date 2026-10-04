@@ -1,5 +1,3 @@
-import 'package:forensic_expert/domain/evidence/provenance_models.dart';
-
 import 'dart:io';
 
 import 'package:drift/native.dart';
@@ -14,6 +12,7 @@ import 'package:forensic_expert/data/content/content_library_repository.dart';
 import 'package:forensic_expert/data/content/content_provenance.dart';
 import 'package:forensic_expert/data/local/content_store.dart';
 import 'package:forensic_expert/domain/evidence/evidence_models.dart';
+import 'package:forensic_expert/domain/evidence/provenance_models.dart';
 import 'package:forensic_expert/domain/knowledge/knowledge_models.dart';
 
 /// Asset’larni diskdan o‘qiydigan bundle (testlarda `rootBundle` o‘rniga).

@@ -48,6 +48,7 @@ void main() {
     // Yil oralig‘i — raqamlar barcha tillarda bir xil; uz: SOP, Marker.
     'researchPeriod2010',
     'tpl_marker',
+    'metKindMarker',
   };
 
   Set<String> placeholders(String s) =>

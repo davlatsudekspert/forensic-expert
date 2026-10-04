@@ -54445,6 +54445,18 @@
       "basis": "MR-DIAZEPAM-NORDIAZEPAM"
     },
     {
+      "from": "scr-immunoassay-drugs",
+      "to": "method-gcms",
+      "relation": "confirmed_by",
+      "basis": "C-SCR-IMMUNOASSAY-DRUGS-PRESUMPTIVE_NATURE"
+    },
+    {
+      "from": "scr-immunoassay-drugs",
+      "to": "method-lcmsms",
+      "relation": "confirmed_by",
+      "basis": "C-SCR-IMMUNOASSAY-DRUGS-PRESUMPTIVE_NATURE"
+    },
+    {
       "from": "cocaine",
       "to": "scr-immunoassay-drugs",
       "relation": "screened_by",

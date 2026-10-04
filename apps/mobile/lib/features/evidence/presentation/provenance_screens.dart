@@ -336,7 +336,7 @@ class KnowledgeChainScreen extends ConsumerWidget {
       final seen = <String>{};
       final unique = [
         for (final e in items)
-          if (seen.add(e.$1)) e,
+          if (e case (final id, _) when seen.add(id)) e,
       ];
       return Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -384,8 +384,10 @@ class KnowledgeChainScreen extends ConsumerWidget {
 
     return _page(
       key: Key('chain.$entityId'),
-      title: '${l.chainTitle}: ${nameOf(entityId)}',
+      title: l.chainTitle,
       children: [
+        Text(nameOf(entityId), style: t.titleMedium),
+        const SizedBox(height: FeSpace.xs),
         FeBanner(icon: Icons.account_tree_outlined, text: l.chainIntro),
         FeSectionHeader(l.chainMetabolites),
         if (mets.isEmpty)

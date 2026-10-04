@@ -100,7 +100,9 @@ void main() {
     (tester) async {
       await open(tester, Routes.forensicMedicine);
       expect(find.text('18 of 25 topics have sourced content'), findsOneWidget);
-      await see(tester, find.byKey(const Key('fm.topic.rigorMortis')));
+      // Rigor mortis endi manbali (PHASE 7) — manbasiz qator yo‘q.
+      expect(find.byKey(const Key('fm.topic.rigorMortis')), findsNothing);
+      await see(tester, find.byKey(const Key('fm.topic.sharpForceInjury')));
     },
   );
 

@@ -12,7 +12,6 @@ import 'package:forensic_expert/data/content/bundled_pack.dart';
 import 'package:forensic_expert/data/content/content_provenance.dart';
 import 'package:forensic_expert/data/fixtures/test_fixtures.dart';
 
-import '../helpers/disk_asset_bundle.dart';
 import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
@@ -40,8 +39,10 @@ void main() {
     sw.stop();
     await db.close();
     // ignore: avoid_print
-    print('PHASE7 PERF provenance load (${p.index.claimsById.length} claims): '
-        '${ms(sw)}');
+    print(
+      'PHASE7 PERF provenance load (${p.index.claimsById.length} claims): '
+      '${ms(sw)}',
+    );
     expect(sw.elapsed, lessThan(const Duration(seconds: 5)));
   });
 
@@ -76,8 +77,9 @@ void main() {
     expect(median, lessThan(500));
   });
 
-  testWidgets('ekranlar: Home, modda, research, tanlovchi, provenance',
-      (tester) async {
+  testWidgets('ekranlar: Home, modda, research, tanlovchi, provenance', (
+    tester,
+  ) async {
     final out = <String>[];
     var sw = Stopwatch()..start();
     final c = await pumpApp(

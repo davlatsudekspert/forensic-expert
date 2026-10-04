@@ -490,6 +490,11 @@ def apply(b):
     b["metabolite_relations"] = rels
 
     # --- Skrining, standartlar ------------------------------------------
+    # Umumiy immunoassay skriningi → tasdiqlovchi metodlar: asos claim aynan shu
+    # testga tegishli («presumptive until confirmed by … GC-MS, LC-MS»).
+    for m in ("method-gcms", "method-lcmsms"):
+        links.append({"from": "scr-immunoassay-drugs", "to": m, "relation": "confirmed_by",
+                      "basis": "C-SCR-IMMUNOASSAY-DRUGS-PRESUMPTIVE_NATURE"})
     for sub, scr, basis in SCREENED:
         assert basis in claims and scr in known and sub in known, (sub, scr)
         links.append({"from": sub, "to": scr, "relation": "screened_by", "basis": basis})

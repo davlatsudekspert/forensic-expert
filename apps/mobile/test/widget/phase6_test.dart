@@ -268,7 +268,8 @@ void main() {
       await tester.tap(find.byKey(const Key('calc.calculate')));
       await tester.pumpAndSettle();
       expect(find.byKey(const Key('calc.result')), findsOneWidget);
-      expect(find.textContaining('ICH Q2(R1)'), findsWidgets);
+      // PHASE 7 (RG-25): havola ICH Q2(R2) ga ko‘chirildi.
+      expect(find.textContaining('ICH Q2(R2)'), findsWidgets);
     });
 
     testWidgets('konvertatsiya: molyar massasiz massa↔molyar — xato', (

@@ -50,6 +50,7 @@ void main() {
     'docKindSop',
     'researchPeriod2010',
     'tpl_marker',
+    'metKindMarker',
   };
   // Allowlist’dagi kalit qiymati (masalan, «Lifetime» brendi) boshqa
   // kalitda ham uchrasa — u ham ruxsat etilgan.
