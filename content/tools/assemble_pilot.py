@@ -26,9 +26,9 @@ _sys.path.insert(0, "tools/p5")
 import assemble_p5  # noqa: E402
 
 FREE_DEMO = ["ethanol", "methanol", "carbon-monoxide"]  # 3 ta yozuv
-PACK_VERSION = "2026.10.3"
+PACK_VERSION = "2026.10.4"
 # Komponent versiyalari (ilova versiyasidan alohida).
-COMPONENT_VERSIONS = {"scientific": "2026.10.3", "jurisdiction": "2026.10.3",
+COMPONENT_VERSIONS = {"scientific": "2026.10.4", "jurisdiction": "2026.10.3",
                       "research": "2026.10.3"}
 
 

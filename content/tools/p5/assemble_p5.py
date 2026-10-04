@@ -452,8 +452,69 @@ def build_research(known_entities):
 IMAGE_ENTITY_REMAP = {"his-sampling": "his-fixation", "his-he-stain": "bio-tryptase", "his-ihc": "his-mi-early"}
 
 
+# Rasm sarlavhalari va alt matnlari RU/UZ — machine_draft (RG-11 review).
+IMAGE_I18N = {
+    "IMG-SCH-gcms-workflow": ("GC-MS — схема работы прибора", "GC-MS — asbob ish sxemasi"),
+    "IMG-SCH-lcmsms-workflow": ("LC-MS/MS — схема работы прибора", "LC-MS/MS — asbob ish sxemasi"),
+    "IMG-SCH-hsgc-workflow": ("Парофазная ГХ — схема работы", "Headspace GC — ish sxemasi"),
+    "IMG-SCH-hplc-workflow": ("ВЭЖХ — схема работы", "HPLC — ish sxemasi"),
+    "IMG-SCH-sample-prep-workflow": ("Пробоподготовка — типичная схема", "Namuna tayyorlash — odatiy sxema"),
+    "IMG-SCH-screen-confirm": ("Скрининг → подтверждение", "Skrining → tasdiqlash"),
+    "IMG-SCH-histology-workflow": ("Гистология — лабораторный процесс", "Gistologiya — laboratoriya jarayoni"),
+    "IMG-SCH-validation-parameters": ("Валидация методики — типичные параметры", "Metod validatsiyasi — odatiy parametrlar"),
+    "IMG-SCH-tlc-plate": ("ТСХ — схема пластинки", "TLC — plastinka sxemasi"),
+    "IMG-SCH-immunoassay-principle": ("Конкурентный иммуноанализ — принцип", "Raqobatli immunoanaliz — prinsip"),
+    "IMG-SCH-postmortem-specimens": ("Посмертные образцы — обзор", "O‘limdan keyingi namunalar — umumiy ko‘rinish"),
+    "IMG-EXT-pmc6445230-ienz_a_1333987_f0003_c": ("Хроматограмма и масс-спектр GC–MS изъятого порошка (5-MAPB)",
+                                                   "Musodara qilingan kukunning GC–MS xromatogrammasi va mass-spektri (5-MAPB)"),
+    "IMG-EXT-pmc11480513-gr2": ("Хроматограмма и масс-спектр GC–MS: THC-COOH в моче",
+                                "GC–MS xromatogrammasi va mass-spektri: siydikda THC-COOH"),
+    "IMG-EXT-pmc6445230-ienz_a_1333987_f0004_b": ("Хроматограмма LC–MS/MS и спектр ионов-продуктов (5-MAPB)",
+                                                   "LC–MS/MS xromatogrammasi va mahsulot-ion spektri (5-MAPB)"),
+    "IMG-EXT-pmc10177871-ijerph-20-05640-g001": ("Окраска гематоксилином и эозином — лёгкое и миокард (серия судебных случаев)",
+                                                  "Gematoksilin va eozin bo‘yog‘i — o‘pka va miokard (sud-tibbiy holatlar seriyasi)"),
+    "IMG-EXT-pmc11277133-ijms-25-07625-g002": ("Иммуногистохимия (C9) — зона некроза миокарда",
+                                               "Immunogistokimyo (C9) — miokard nekroz sohasi"),
+    "IMG-EXT-pmc10085886-414_2022_2848_fig1_html": ("Окраска Oil Red O — жировая эмболия лёгких (замороженный срез)",
+                                                    "Oil Red O bo‘yog‘i — o‘pka yog‘ emboliyasi (muzlatilgan kesma)"),
+    "IMG-EXT-pmc9558087-ac2c01627_0004": ("Пластинки ТСХ — стандарты каннабиноидов на силикагеле и Ag(I)-ТСХ",
+                                          "TLC plastinkalari — silikagel va Ag(I)-TLC’dagi kannabinoid standartlari"),
+    "IMG-EXT-pmc12713473-ao5c07057_0002": ("Цветные капельные тесты — взаимодействие ксилазина с полевыми реагентами",
+                                           "Rangli tomchi testlari — ksilazinning dala reagentlari bilan ta’siri"),
+}
+
+
+def _substance_names():
+    names = {}
+    for sid, n in json.load(open("pilot/names_i18n.json")).items():
+        if isinstance(n, dict):
+            names[sid] = n
+    for s in json.load(open(P + "identity.json")):
+        names[s["id"]] = s
+    return names
+
+
+def _image_i18n(im, names):
+    title, alt = dict(im["title"]), dict(im["alt"])
+    if im["kind"] == "chemical_structure" and im["entity_id"] in names:
+        n = names[im["entity_id"]]
+        title.update(ru=f"Химическая структура: {n['ru']}", uz=f"Kimyoviy tuzilishi: {n['uz']}")
+        alt.update(ru=f"Двумерная структурная формула: {n['ru']}", uz=f"Ikki o‘lchamli struktura formulasi: {n['uz']}")
+    elif im["image_id"] in IMAGE_I18N:
+        ru, uz = IMAGE_I18N[im["image_id"]]
+        title.update(ru=ru, uz=uz)
+        if im["image_id"].startswith("IMG-SCH"):
+            alt.update(ru=f"Схема: {ru}. Иллюстрация, не экспериментальные данные.",
+                       uz=f"Sxema: {uz}. Tasvir, eksperimental ma’lumot emas.")
+        else:
+            alt.update(ru=f"{ru}. Рисунок из рецензируемой статьи открытого доступа.",
+                       uz=f"{uz}. Ochiq kirishli, taqrizdan o‘tgan maqoladan rasm.")
+    return title, alt
+
+
 def build_images(known_entities):
     out = []
+    names = _substance_names()
     for part in ("structures", "schematics", "external"):
         for im in json.load(open(P + f"images_{part}.json")):
             ent = IMAGE_ENTITY_REMAP.get(im["entity_id"], REAGENT(im["entity_id"]))
@@ -464,7 +525,8 @@ def build_images(known_entities):
                 continue
             out.append(dict(image_id=im["image_id"], kind=im["kind"] if part != "schematics" else "schematic",
                             entity_id=ent, file="../phase5/" + im["file"][len("phase5/"):],
-                            sha256=im.get("sha256"), title=im["title"], alt=im["alt"], license=im["license"],
+                            sha256=im.get("sha256"), title=_image_i18n(im, names)[0], alt=_image_i18n(im, names)[1],
+                            license=im["license"],
                             attribution=im["attribution"], is_original_diagram=im["is_original_diagram"],
                             represents_real_data=im["represents_real_data"], creator=im.get("creator"),
                             source_name=im.get("source_name"), source_url=im.get("source_url"), doi=im.get("doi"),

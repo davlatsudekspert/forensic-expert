@@ -254,6 +254,7 @@ abstract final class KnowledgeJson {
       'scope_jurisdiction_id': e.scopeJurisdictionId,
     'status': e.status.code,
     'is_test_data': e.isTestData,
+    if (e.lastCheckedAt != null) 'last_checked': _d(e.lastCheckedAt),
   };
 
   static EmergingIssue emergingFrom(Object? j) {
@@ -271,6 +272,7 @@ abstract final class KnowledgeJson {
       scopeJurisdictionId: m['scope_jurisdiction_id'] as String?,
       status: ScientificStatus.fromCode(_req<String>(m, 'status')),
       isTestData: m['is_test_data'] == true,
+      lastCheckedAt: _date(m['last_checked']),
     );
   }
 

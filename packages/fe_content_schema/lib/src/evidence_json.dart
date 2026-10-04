@@ -1,5 +1,6 @@
 import 'enums.dart';
 import 'evidence_graph.dart';
+import 'taxonomy.dart';
 
 /// Research, bog‘lanish va rasm metadatasining JSON ko‘rinishi
 /// (`fe-bundle/3`). Noma’lum qiymat — [FormatException].
@@ -28,6 +29,10 @@ abstract final class EvidenceJson {
     ),
     status: ScientificStatus.fromCode(_s(m, 'review_status')),
     isTestData: m['is_test_data'] == true,
+    forensicRelevance: ForensicRelevance.fromCode(
+      m['forensic_relevance'] as String?,
+    ),
+    language: m['language'] as String?,
   );
 
   static EntityLink linkFrom(Map<String, Object?> m) => EntityLink(

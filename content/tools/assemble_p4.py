@@ -171,6 +171,8 @@ def build(accessed_fallback):
         source_ids=[src_id(d["pmcid"])],
         # PubMed esummary epubdate (2025 May 13).
         date="2025-05-13", evidence_type="peerReviewed",
+        # Oxirgi tekshiruv = manba jumlasi asl matn bilan solishtirilgan sana.
+        last_checked=d.get("accessed"),
         status="NEEDS_REVIEW", tier_access="free")]
 
     # --- Jurisdiction Layer: Buyuk Britaniya (pilot) -----------------------

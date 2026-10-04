@@ -1,6 +1,7 @@
 import 'package:meta/meta.dart';
 
 import 'enums.dart';
+import 'taxonomy.dart';
 
 /// PHASE 5: Research / Evidence Library, bilim grafigi va ilmiy rasmlar.
 ///
@@ -19,7 +20,10 @@ enum ResearchKind {
   dissertation('dissertation'),
   thesis('thesis'),
   officialReport('official_report'),
-  standard('standard');
+  standard('standard'),
+  guideline('guideline'),
+  validationStudy('validation_study'),
+  caseSeries('case_series');
 
   const ResearchKind(this.code);
 
@@ -36,16 +40,21 @@ enum ResearchKind {
     review ||
     systematicReview ||
     metaAnalysis ||
-    caseReport => true,
+    caseReport ||
+    validationStudy ||
+    caseSeries => true,
     _ => false,
   };
 
   /// Tur uchun yuqori dalil darajasi (bundan kuchli belgilanmaydi).
   EvidenceLevel get maxEvidence => switch (this) {
-    systematicReview || metaAnalysis || standard => EvidenceLevel.a,
-    journalArticle || officialReport => EvidenceLevel.b,
+    systematicReview ||
+    metaAnalysis ||
+    standard ||
+    guideline => EvidenceLevel.a,
+    journalArticle || officialReport || validationStudy => EvidenceLevel.b,
     review => EvidenceLevel.c,
-    caseReport => EvidenceLevel.d,
+    caseReport || caseSeries => EvidenceLevel.d,
     conferenceAbstract ||
     conferencePaper ||
     dissertation ||
@@ -75,10 +84,18 @@ class ResearchRecord {
     this.sourceApi,
     this.accessedDate,
     this.isTestData = false,
+    this.forensicRelevance = ForensicRelevance.unassessed,
+    this.language,
   });
 
   final String id;
   final ResearchKind kind;
+
+  /// Dalil sifatidan alohida: reviewer baholamaguncha `unassessed`.
+  final ForensicRelevance forensicRelevance;
+
+  /// Nashr tili (ISO 639-1), ma’lum bo‘lsa.
+  final String? language;
   final String title;
   final List<String> authors;
 

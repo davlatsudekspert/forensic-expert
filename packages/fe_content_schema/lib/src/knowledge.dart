@@ -76,9 +76,13 @@ enum AnalyticalTechnique {
   gcFid,
   headspaceGc,
   gcMs,
+  gcMsMs,
   hplc,
+  lcMs,
   lcMsMs,
+  hrms,
   uvVis,
+  spectrophotometry,
   immunoassay,
   spectroscopy,
   samplePreparation,
@@ -368,7 +372,10 @@ enum EmergingCategory {
   analyticalChallenges,
   newInterferences,
   postmortemInterpretation,
+  newBiomarkers,
+  emergingMethods,
   newStandards,
+  legalRegulatoryUpdates,
   methodValidation,
   laboratoryQuality,
   scientificAlert,
@@ -389,10 +396,14 @@ class EmergingIssue {
     this.date,
     this.scopeJurisdictionId,
     this.isTestData = false,
+    this.lastCheckedAt,
   });
 
   final String id;
   final EmergingCategory category;
+
+  /// Oxirgi marta manba bilan solishtirilgan sana (yangilik lentasi emas).
+  final DateTime? lastCheckedAt;
   final Map<String, String> titles;
   final List<String> sourceIds;
   final DateTime? date;
