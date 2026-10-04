@@ -1,0 +1,17 @@
+name: fe_content_package
+description: Imzolangan ilmiy kontent paketi — manifest, Ed25519 imzo, SHA-256 yaxlitlik, versiya monotonligi, atomik o‘rnatish va rollback.
+publish_to: none
+version: 0.1.0
+resolution: workspace
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  crypto: ^3.0.7
+  cryptography: ^2.9.0
+  meta: ^1.19.0
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.31.0
