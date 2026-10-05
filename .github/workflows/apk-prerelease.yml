@@ -1,16 +1,16 @@
 # Sinov APK’lari uchun GitHub pre-release (xususiy repo — havola faqat
-# ruxsati bor foydalanuvchiga ochiladi). Faqat qo‘lda (workflow_dispatch);
-# teg GitHub tomonida joriy commit’ga yaratiladi.
+# ruxsati bor foydalanuvchiga ochiladi). `.github/apk-prerelease-tag`
+# fayli o‘zgarganda ishlaydi (fayl ichida — teg nomi); teg GitHub tomonida
+# joriy commit’ga yaratiladi.
 # DEBUG imzoli — store’ga emas; nomida va matnida ochiq yozilgan.
 name: Test APK pre-release
 
 on:
-  workflow_dispatch:
-    inputs:
-      tag:
-        description: "Pre-release tag (e.g. apk-v0.2.0-2)"
-        required: true
-        type: string
+  push:
+    branches:
+      - claude/phase-8-12-final-release
+    paths:
+      - .github/apk-prerelease-tag
 
 permissions:
   contents: write
@@ -46,7 +46,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          TAG="${{ inputs.tag }}"
+          TAG="$(tr -d '[:space:]' < .github/apk-prerelease-tag)"
           case "$TAG" in apk-v*) ;; *) echo "::error::tag must start with apk-v"; exit 1;; esac
           gh release create "$TAG" "$RUNNER_TEMP"/out/* \
             --repo "$GITHUB_REPOSITORY" \
