@@ -76,3 +76,35 @@ Sana: 2026-10-04. Faqat haqiqatan yaratilgan va tekshirilgan artefaktlar. Imzo h
 | Release build | 37239093623 | a937da4 | ✅ success (Android DEBUG-imzo; iOS imzosiz) |
 
 Yakuniy hujjatlar commit’idagi CI natijasi `FINAL_RELEASE_REPORT.md` da.
+
+## Release completion (2026-10-05) — akkaunt va obunalar qo‘shilgandan keyin
+
+Lokal toza build (`flutter clean`, Linux VM), commit `d4e7d6a` asosida:
+
+| | AAB | APK |
+|---|---|---|
+| Yo‘l | `apps/mobile/build/app/outputs/bundle/release/app-release.aab` | `apps/mobile/build/app/outputs/flutter-apk/app-release.apk` |
+| Versiya / versionCode | 0.1.0 / 1 | 0.1.0 / 1 |
+| Hajm | 70 059 979 B | 72 151 457 B |
+| SHA-256 | `cf7a8505cfd854144dc88f13936d922c2c1a536b22ce0b0b2cf53e83ed49e42a` | `5316716ca3db570ac8ff2e5f83ea01de3b0acf6abbdc3d9a0967639693796af9` |
+| Imzo | **DEBUG** (RG-20) | **DEBUG** — `apksigner`: `CN=Android Debug` |
+| Ruxsatlar | — | `INTERNET`, `com.android.vending.BILLING`, `ACCESS_NETWORK_STATE` (plagin), dinamik receiver |
+
+CI artefaktlari va iOS natijasi — pastdagi «Yakuniy CI» bo‘limida.
+
+Testlar: ilova **1159 PASS / 0 FAIL / 1 SKIP**, paketlar **256 PASS** (calc 32, content_package 15, pipeline 23, schema 122, database 26, purchase_verification 17, search 21) → **1415 PASS, 0 FAIL, 1 SKIP**. OSV: 148 paket, zaiflik yo‘q. gitleaks (to‘liq tarix): sir yo‘q.
+
+### Yakuniy CI (commit `d4e7d6a`)
+
+| Workflow | Run | Natija |
+|---|---|---|
+| CI (analyze & test, gitleaks, OSV) | 37248664689 | ✅ success |
+| Release build — Android | 37248664707 | ✅ success; artefakt `android-DEBUG-SIGNED-not-for-store-d4e7d6a…` (ID 11320541095, zip 105 431 674 B, SHA-256 `1d97bd7b11473deaa580ab18c5a5ad06db7f30cf34f9e67082b7d240cb95126a`) — **DEBUG imzo** |
+| Release build — iOS (macos-15) | 37248664707 | ✅ `flutter build ios --release --no-codesign` + imzosiz `Runner.xcarchive` (193.0 MB; zip SHA-256 `703147fe207fcf00f5ba13f3c48e5432af3e10f9c58546de2bbef70f45d601af`); artefakt ID 11320800185 (53 502 676 B). Version 0.1.0, build 1, bundle `uz.forensicexpert.forensicExpert`, iOS 15.0. **IPA yaratilmadi (imzo yo‘q). TESTFLIGHT UPLOAD BLOCKED BY CREDENTIALS.** |
+
+Artefakt havolalari (repo private — faqat ruxsatli foydalanuvchilar; ommaviy URL yo‘q):
+`https://github.com/davlatsudekspert/forensic-expert/actions/runs/37248664707/artifacts/11320541095` (Android),
+`https://github.com/davlatsudekspert/forensic-expert/actions/runs/37248664707/artifacts/11320800185` (iOS).
+
+Flutter ogohlantirishi: iOS launch image — standart placeholder (brend launch rasmi kerak, dizayn).
+

@@ -33,3 +33,22 @@ Ilova 1002 PASS / 0 FAIL / 1 SKIP; paketlar 251 PASS → **1253 PASS, 0 FAIL, 1 
 
 ## Ochiq release blockerlar
 RG-18 (server xarid tekshiruvi — SECURITY), RG-20 (Android upload key), RG-24 (Apple imzo / TestFlight), RG-10 (real qurilma), RG-19/21/23 (domen reviewerlari; 888 element), RG-11 (RU/UZ tarjima review), RG-15 (legal review), RG-25 (lab reviewer), RG-22 (AI backend), RG-16 (store mahsulotlari), RG-08 (privacy — iOS manifest qo‘shildi, store privacy javoblari tasdiqlanmagan), RG-06 (trademark).
+
+## Release completion (2026-10-05): akkaunt, obunalar, release
+
+Batafsil: `AUTH_AND_SUBSCRIPTIONS.md`, `STORE_PRODUCT_SETUP.md`.
+
+| Soha | Holat |
+|---|---|
+| Ro‘yxat / email tasdiqlash / kirish / chiqish / parolni tiklash / sessiya tiklash / akkauntni o‘chirish | Ilova to‘liq (MOCK va HTTP kontrakt testlari). **Production backend va email yetkazish ulanmagan** — release’da «akkaunt xizmati ulanmagan» halol ko‘rsatiladi |
+| Mehmon / oflayn | Akkaunt majburiy emas; ilmiy funksiyalar akkauntsiz |
+| Tariflar | Free / Student Pro / Professional Pro (Institution yashirin); `FeatureGate`; narx/davr faqat store’dan |
+| Apple IAP / Google Play Billing | Mijoz integratsiyasi tayyor (auto-renewable subscriptions, metadata, xarid, pending, restore, acknowledge); **store mahsulotlari yaratilmagan (RG-16)** |
+| Server tekshiruvi (RG-18) | Hayot sikli, replay, idempotentlik, bildirishnomalar, audit — kod va 17 test (mock). **Joylashtirilmagan, OCHIQ** |
+| Restore Purchases | Paywall va Profil’da; testlar: o‘sha akkaunt / yangi qurilma / muddati o‘tgan / bekor-lekin-faol / revoked / tarmoq xatosi |
+| Android | AAB/APK quriladi; INTERNET ruxsati qo‘shildi (release manifestda yo‘q edi); **DEBUG imzo (RG-20)** |
+| iOS | macOS CI: kompilyatsiya ✅, imzosiz arxiv ✅; PrivacyInfo email va xarid tarixini e’lon qiladi; **imzo/IPA/TestFlight — credentials yo‘q** |
+| Ommaviy APK | Qilinmadi: APK debug imzoli (yangilanishlar uzluksizligi va xavfsizlik uchun yaroqsiz); egasining `nfcstore-downloads` naqshi o‘rganilmadi — repo klonlash ruxsat tizimi tomonidan rad etildi |
+| Testlar | 1415 PASS / 0 FAIL / 1 SKIP; CI yashil (`d4e7d6a`) |
+| HUMAN VERIFIED | 0 |
+
