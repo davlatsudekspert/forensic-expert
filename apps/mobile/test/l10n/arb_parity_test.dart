@@ -50,6 +50,11 @@ void main() {
     'tpl_marker',
     'metKindMarker',
     'reagentPh',
+    // Tarif nomlari — mahsulot brendi, har tilda bir xil.
+    'tierStudentPro',
+    'tierProfessionalPro',
+    // Faqat o‘rin belgilari (narx va davr store/lokalizatsiyadan).
+    'offerPriceLine',
   };
 
   Set<String> placeholders(String s) =>

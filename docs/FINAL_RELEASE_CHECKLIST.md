@@ -14,6 +14,17 @@ Holat: ✅ bajarildi · ⚠️ qisman / cheklov bilan · ⛔ bloklangan (inson /
 - ⚠️ Impeccable UI/UX auditi — **NOT AVAILABLE** (asbob o‘rnatilmagan; nomi o‘xshash paketlar o‘rnatilmadi)
 - ⚠️ Brauzer auditi — qo‘llanmaydi (ilovada web target yo‘q)
 
+## Akkaunt va obunalar (release completion)
+- ✅ Ro‘yxatdan o‘tish, email tasdiqlash (kod), kirish, chiqish, parolni tiklash, sessiyani tiklash, akkauntni o‘chirish — mijoz to‘liq; MOCK va HTTP kontrakt testlari
+- ✅ Mehmon/oflayn rejim: akkaunt majburiy emas; ilmiy funksiyalar akkauntsiz
+- ✅ Akkauntni o‘chirish ≠ qurilmadagi ma’lumotni o‘chirish (alohida amallar)
+- ✅ Tariflar Free / Student Pro / Professional Pro; Institution yashirin; markaziy FeatureGate; narx faqat store’dan
+- ✅ Huquq holatlari: active / grace / billing retry / cancelled-until-expiry / expired / revoked / unknown
+- ✅ Restore Purchases — paywall va Profil’da; «Obunani boshqarish»
+- ⛔ Production akkaunt backend’i va email yetkazish — ulanmagan (`docs/AUTH_AND_SUBSCRIPTIONS.md` §7)
+- ⛔ RG-18 — xarid tekshiruvi serveri joylashtirilmagan; haqiqiy Apple/Google API bilan tekshirilmagan
+- ⛔ RG-16 — store mahsulotlari yaratilmagan (`docs/STORE_PRODUCT_SETUP.md`)
+
 ## Xavfsizlik
 - ✅ gitleaks (to‘liq tarix) — leak yo‘q
 - ✅ OSV-scanner (`pubspec.lock`, 132 paket) — zaiflik yo‘q

@@ -37,12 +37,14 @@ void main() {
     expect(find.byType(PaywallScreen), findsOneWidget);
   });
 
-  testWidgets('qidiruv: Lifetime egasi — cheklovsiz', (tester) async {
+  testWidgets('qidiruv: pullik tarif egasi — cheklovsiz', (tester) async {
     await search(tester, owned: true);
     expect(find.byKey(const Key('search.more.substances')), findsNothing);
   });
 
-  testWidgets('Learn: 1 ta kurs bepul, keyingisi Lifetime', (tester) async {
+  testWidgets('Learn: 1 ta kurs bepul, keyingisi pullik tarifda', (
+    tester,
+  ) async {
     await pumpApp(
       tester,
       settings: completedSettings(mode: UserMode.student),
@@ -77,23 +79,24 @@ void main() {
     expect(find.byKey(const Key('calc.calculate')), findsOneWidget);
   });
 
-  testWidgets('xarid → huquq UI’da darhol yangilanadi (Profil «Lifetime»)', (
-    tester,
-  ) async {
-    final store = FakeStore(owned: true);
-    await pumpApp(
-      tester,
-      settings: completedSettings(),
-      initialLocation: Routes.profile,
-      overrides: [entitlementServiceProvider.overrideWithValue(store)],
-    );
-    final row = find.byKey(const Key('profile.purchase'));
-    await tester.ensureVisible(row);
-    expect(
-      find.descendant(of: row, matching: find.text('Lifetime')),
-      findsOneWidget,
-    );
-  });
+  testWidgets(
+    'obuna → huquq UI’da darhol yangilanadi (Profil «Professional Pro»)',
+    (tester) async {
+      final store = FakeStore(owned: true);
+      await pumpApp(
+        tester,
+        settings: completedSettings(),
+        initialLocation: Routes.profile,
+        overrides: [entitlementServiceProvider.overrideWithValue(store)],
+      );
+      final row = find.byKey(const Key('profile.purchase'));
+      await tester.ensureVisible(row);
+      expect(
+        find.descendant(of: row, matching: find.text('Professional Pro')),
+        findsOneWidget,
+      );
+    },
+  );
 }
 
 /// TEST: qidiruv cheklovini sinash uchun 6 ta sun’iy yozuv (ilmiy emas).

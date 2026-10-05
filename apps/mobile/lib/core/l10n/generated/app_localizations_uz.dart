@@ -3496,7 +3496,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get accountSignedOut => 'Akkauntdan chiqildi';
 
   @override
-  String get accountEmail => 'Email';
+  String get accountEmail => 'Elektron pochta';
 
   @override
   String get accountPassword => 'Parol';
