@@ -200,7 +200,7 @@ void main() {
       settings: completedSettings(),
       initialLocation: Routes.knowledgeEntry('TEST-REAGENT-1'),
     );
-    expect(find.text('TEST DATA'), findsWidgets);
+    expect(find.text('SAMPLE'), findsWidgets);
     await see(tester, find.byKey(const Key('reagent.ingredients')));
     expect(find.byKey(const Key('reagent.noRecipe')), findsNothing);
     expect(find.byKey(const Key('reagent.orderNotStated')), findsNothing);

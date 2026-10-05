@@ -1,5 +1,4 @@
 import 'package:fe_calc_engine/fe_calc_engine.dart';
-import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -9,13 +8,13 @@ import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
-import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
 import '../../../domain/ports/billing_ports.dart';
 import '../../common/favorite_button.dart';
 import '../../library/presentation/content_entry_sections.dart';
 import '../tool_strings.dart';
+import 'calculator_status.dart';
 import 'lab_calculators.dart';
 
 /// Vosita sahifasi. Mavjud kalkulyator — to‘liq INPUT · METHOD · FORMULA ·
@@ -336,18 +335,9 @@ class _DilutionCalculatorViewState extends State<_DilutionCalculatorView> {
           ),
         ),
         FeSectionHeader(l.calcMethod),
-        Wrap(
-          spacing: FeSpace.sm,
-          runSpacing: FeSpace.xxs,
-          crossAxisAlignment: WrapCrossAlignment.center,
-          children: [
-            const ReviewStatusBadge(status: ScientificStatus.needsReview),
-            Text(
-              '${d.id} · v${d.engineVersion}',
-              style: FeThemeBuilder.numeric(t.bodySmall!)
-                  .copyWith(color: c.textSecondary),
-            ),
-          ],
+        CalculatorStatusPanel(
+          engineId: d.id,
+          engineVersion: d.engineVersion,
         ),
         FeSectionHeader(l.calcFormula),
         Text(
@@ -561,18 +551,9 @@ class _SolutionCalculatorViewState extends State<_SolutionCalculatorView> {
           ),
         ),
         FeSectionHeader(l.calcMethod),
-        Wrap(
-          spacing: FeSpace.sm,
-          runSpacing: FeSpace.xxs,
-          crossAxisAlignment: WrapCrossAlignment.center,
-          children: [
-            const ReviewStatusBadge(status: ScientificStatus.needsReview),
-            Text(
-              '${d.id} · v${d.engineVersion}',
-              style: FeThemeBuilder.numeric(t.bodySmall!)
-                  .copyWith(color: c.textSecondary),
-            ),
-          ],
+        CalculatorStatusPanel(
+          engineId: d.id,
+          engineVersion: d.engineVersion,
         ),
         FeSectionHeader(l.calcFormula),
         Text(

@@ -128,11 +128,12 @@ class AppLocalizationsUz extends AppLocalizations {
   String get homeModulesHeading => 'Modullar';
 
   @override
-  String get inDevelopmentTitle => 'Ishlab chiqilmoqda';
+  String get inDevelopmentTitle =>
+      'Ko‘rsatish uchun tekshirilgan ma’lumot yo‘q';
 
   @override
   String get inDevelopmentBody =>
-      'Bu bo‘lim keyingi ishlab chiqish bosqichlaridan birida paydo bo‘ladi. Ilmiy kontent ekspert tekshiruvidan o‘tmaguncha ko‘rsatilmaydi.';
+      'Bu yerda ma’lumot faqat tekshiriladigan manbaga ega bo‘lsa va ekspert tekshiruvidan o‘tgandan keyin paydo bo‘ladi. Ekran to‘liq ko‘rinishi uchun ma’lumot to‘qilmaydi.';
 
   @override
   String get unverifiedBanner =>
@@ -151,7 +152,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get statusOutdated => 'Eskirgan';
 
   @override
-  String get aiNotConnectedTitle => 'Forensic AI hali ulanmagan';
+  String get aiNotConnectedTitle => 'Ishchi AI xizmati ulanmagan';
 
   @override
   String get aiNotConnectedBody =>
@@ -252,10 +253,10 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get homePrototypeNotice =>
-      'Prototip: TEST DATA belgili yozuvlar — namunaviy ma’lumot, ilmiy kontent emas.';
+      'Namoyish yig‘masi: NAMUNA belgili yozuvlar faqat tasviriy, ilmiy ma’lumot emas.';
 
   @override
-  String get testDataBadge => 'TEST DATA';
+  String get testDataBadge => 'NAMUNA';
 
   @override
   String get seeAll => 'Barchasi';
@@ -432,7 +433,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get calcNeedsReviewNotice =>
-      'Bu kalkulyator hali laboratoriya reviewer’i tomonidan tekshirilmagan.';
+      'Bu kalkulyator hali laboratoriya taqrizchisi tomonidan tekshirilmagan.';
 
   @override
   String calcResultSemantics(String value) {
@@ -503,7 +504,8 @@ class AppLocalizationsUz extends AppLocalizations {
   String get detailNotReviewed => 'Tekshirilmagan';
 
   @override
-  String get detailPlaceholder => 'Namunaviy joy — ilmiy kontent hali yo‘q.';
+  String get detailPlaceholder =>
+      'Bu yozuv uchun tekshirilgan ilmiy ma’lumot hozircha mavjud emas.';
 
   @override
   String get detailConcentrationsNote =>
@@ -513,7 +515,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get sourcesButton => 'Manbalar';
 
   @override
-  String get sourcesNone => 'Manba yo‘q — bu test ma’lumoti.';
+  String get sourcesNone => 'Bu yozuvga manba biriktirilmagan.';
 
   @override
   String get searchGroupTools => 'Vositalar';
@@ -544,7 +546,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get searchExternalBody =>
-      'PubMed, PubChem va Crossref bo‘yicha qidiruv keyingi versiyalardan birida qo‘shiladi. Tashqi natijalar tekshirilgan ichki ma’lumotlar bilan hech qachon aralashtirilmaydi.';
+      'Tashqi bazalar (PubMed, PubChem, Crossref) bu versiyada ulanmagan. Tashqi natijalar hech qachon tekshirilgan ichki baza bilan aralashtirilmaydi.';
 
   @override
   String get searchTypeToStart => 'Kamida ikki belgi kiriting.';
@@ -588,11 +590,11 @@ class AppLocalizationsUz extends AppLocalizations {
   String get piiKindAddress => 'manzil';
 
   @override
-  String get aiPreviewTitle => 'Javob ko‘rinishi (namuna)';
+  String get aiPreviewTitle => 'Javob tuzilmasi (namoyish)';
 
   @override
   String get aiPreviewNotice =>
-      'Interfeys prototipi. Quyida — to‘ldiruvchi matn: bu AI javobi ham, ilmiy kontent ham emas.';
+      'NAMOYISH — bu AI javobi ham, ilmiy tavsiya ham emas. Faqat ulangan javob qanday tuzilishini ko‘rsatadi.';
 
   @override
   String get aiSectionAvailable => 'Mavjud ma’lumotlar';
@@ -605,15 +607,15 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get aiSampleInternal =>
-      'Tekshirilgan ichki manba bilan tasdiqlangan namunaviy fikr.';
+      'Tekshirilgan ichki manbaga bog‘langan fikr namunasi.';
 
   @override
   String get aiSampleExternal =>
-      'Tekshirilmagan tashqi manbadan olingan namunaviy fikr.';
+      'Tekshirilmagan tashqi manbadan olingan fikr namunasi.';
 
   @override
   String get aiSampleLimitation =>
-      'Namunaviy cheklov — yakuniy talqin uchun holatning to‘liq konteksti kerak.';
+      'Cheklov namunasi — yakuniy talqin uchun holatning to‘liq konteksti kerak.';
 
   @override
   String get aiEvidenceInternalVerified => 'Ichki · tasdiqlangan';
@@ -626,7 +628,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String aiPlaceholderSource(int number) {
-    return 'Namunaviy manba $number';
+    return 'Manba namunasi $number';
   }
 
   @override
@@ -850,7 +852,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get homePilotNotice =>
-      'Pilot ilmiy baza: barcha yozuvlar ekspert tekshiruvini kutmoqda. Ma’lumotlar manbalari bilan ko‘rsatiladi va yakuniy xulosa emas.';
+      'Ilmiy baza ekspert tekshiruvida. Har bir yozuv manbasi va tekshiruv holati bilan ko‘rsatiladi va yakuniy xulosa hisoblanmaydi.';
 
   @override
   String get detailIdentity => 'Identifikatorlar';
@@ -889,15 +891,15 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String get detailReviewerStatus => 'Reviewer holati';
+  String get detailReviewerStatus => 'Taqrizchi holati';
 
   @override
   String get detailReviewsNone =>
-      'Hali ekspert review yo‘q (2 ta talab qilinadi)';
+      'Hali ekspert taqrizi yo‘q (2 ta talab qilinadi)';
 
   @override
   String detailReviewsCount(int count) {
-    return 'Ekspert review’lari: $count';
+    return 'Ekspert taqrizlari: $count';
   }
 
   @override
@@ -905,7 +907,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String detailVersionValue(int claim, String pack) {
-    return 'Claim v$claim · baza $pack';
+    return 'Da’vo v$claim · baza $pack';
   }
 
   @override
@@ -969,7 +971,7 @@ class AppLocalizationsUz extends AppLocalizations {
       'Nomlar, ogohlantirishlar va manbalar ochiq qoladi. Ilmiy tafsilotlar va yurisdiksiya qatlami pullik tarifda ochiladi.';
 
   @override
-  String get freeDemoBadge => 'Bepul demo';
+  String get freeDemoBadge => 'Bepul';
 
   @override
   String get lockedBadge => 'Pro';
@@ -1010,7 +1012,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get diagPurchaseStore =>
-      'Obuna: faqat do‘kon tasdiqlagan — server tekshiruvi ulanmagan (release blocker)';
+      'Obuna: faqat do‘kon tasdiqlagan — server tekshiruvi ulanmagan (reliz to‘sig‘i)';
 
   @override
   String get diagPurchaseServer => 'Obuna: server tomonidan tekshirilgan';
@@ -1056,7 +1058,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String homeDbPack(String version) {
-    return 'Kontent paketi $version';
+    return 'Ilmiy ma’lumotlar paketi $version';
   }
 
   @override
@@ -1074,7 +1076,7 @@ class AppLocalizationsUz extends AppLocalizations {
       'Oflayn ishlaydi. Qidiruv va savollar shu qurilmada qoladi.';
 
   @override
-  String get homeDbNotInstalled => 'Kontent paketi o‘rnatilmagan.';
+  String get homeDbNotInstalled => 'Ilmiy ma’lumotlar paketi o‘rnatilmagan.';
 
   @override
   String get homeDbLoading => 'Oflayn baza ochilmoqda…';
@@ -1486,7 +1488,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get aiExperienceProfessional => 'Mutaxassis';
 
   @override
-  String get aiExperienceTutor => 'Ustoz (Tutor)';
+  String get aiExperienceTutor => 'Ustoz';
 
   @override
   String get aiExperienceProfessionalHint =>
@@ -1701,7 +1703,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get researchNote =>
-      'Faqat metadata va havolalar — to‘liq matn ko‘chirilmaydi. Dissertatsiya, tezis va konferensiya materiallari peer-reviewed maqola bilan teng ko‘rsatilmaydi.';
+      'Faqat metadata va havolalar — to‘liq matn ko‘chirilmaydi. Dissertatsiya, tezis va konferensiya materiallari taqrizdan o‘tgan maqola bilan teng ko‘rsatilmaydi.';
 
   @override
   String get researchAll => 'Barchasi';
@@ -1740,7 +1742,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get researchKindJournalArticle => 'Maqola';
 
   @override
-  String get researchKindReview => 'Sharh (review)';
+  String get researchKindReview => 'Sharh maqola';
 
   @override
   String get researchKindSystematicReview => 'Tizimli sharh';
@@ -2123,7 +2125,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get calcLodReferenceNote =>
-      'Koeffitsientlar rasmiy ICH Q2(R2) PDF bilan solishtirildi; Q2(R1) (almashtirilgan) dagidan o‘zgarmagan. Q2(R2) S/N va aniqlik/pretsizlik bilan bevosita tasdiqlashga ham ruxsat beradi. Laboratoriya reviewer tasdig‘i kutilmoqda (RG-25).';
+      'Koeffitsientlar rasmiy ICH Q2(R2) PDF bilan solishtirildi; Q2(R1) (almashtirilgan) dagidan o‘zgarmagan. Q2(R2) S/N va aniqlik/pretsizlik bilan bevosita tasdiqlashga ham ruxsat beradi. Laboratoriya taqrizchi tasdig‘i kutilmoqda (RG-25).';
 
   @override
   String get calcUseRegression =>
@@ -2275,7 +2277,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get disciplinesIntro =>
-      'Platforma arxitekturasi shu fanlarni qamraydi. Kontent bosqichma-bosqich va faqat manba hamda ekspert tekshiruvi bilan qo‘shiladi — bo‘sh fan «hali manba yo‘q» degani, «bilim yo‘q» degani emas.';
+      'FORENSIC EXPERT shu fanlarni qamrab oladi. Ma’lumotlar bosqichma-bosqich, faqat manba va ekspert tekshiruvi bilan qo‘shiladi — bo‘sh fan «hali manbali ma’lumot yo‘q» degani, «bilim yo‘q» degani emas.';
 
   @override
   String disciplineRecords(int count) {
@@ -2327,7 +2329,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get jurisdictionViewDetails => 'Huquqiy va protsessual qatlam';
 
   @override
-  String get jurisdictionWithContent => 'Pilot kontenti bor yurisdiksiyalar';
+  String get jurisdictionWithContent => 'Huquqiy yozuvlari bor yurisdiksiyalar';
 
   @override
   String get jurisdictionSearchHint => 'Davlat yoki ISO kodini qidirish';
@@ -2337,7 +2339,8 @@ class AppLocalizationsUz extends AppLocalizations {
       'Bu yurisdiksiya uchun kontent hali tekshirilmagan. Boshqa davlat qonunlari hech qachon uning o‘rniga ko‘rsatilmaydi.';
 
   @override
-  String get jurisdictionPilotContent => 'Pilot kontent — tekshiruv kerak';
+  String get jurisdictionPilotContent =>
+      'Huquqiy yozuvlar · yuridik tekshiruvda';
 
   @override
   String get jurisdictionNoContentShort => 'Kontent hali tekshirilmagan';
@@ -2511,7 +2514,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get relevanceUnassessed =>
-      'Reviewer hali baholamagan (dalil darajasidan alohida)';
+      'Taqrizchi hali baholamagan (dalil darajasidan alohida)';
 
   @override
   String get relevanceDirect => 'Bevosita';
@@ -2835,7 +2838,8 @@ class AppLocalizationsUz extends AppLocalizations {
   String get lcRejected => 'Rad etilgan';
 
   @override
-  String get provHumanVerified => 'Malakali reviewerlar tomonidan tasdiqlangan';
+  String get provHumanVerified =>
+      'Malakali taqrizchilar tomonidan tasdiqlangan';
 
   @override
   String get provNotVerified =>
@@ -2843,12 +2847,12 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String provRequiredRole(String role) {
-    return 'Kerakli reviewer: $role';
+    return 'Kerakli taqrizchi: $role';
   }
 
   @override
   String provReviewsRecorded(int n) {
-    return 'Ushbu versiya bo‘yicha reviewer harakatlari: $n';
+    return 'Ushbu versiya bo‘yicha taqrizchi harakatlari: $n';
   }
 
   @override
@@ -2886,7 +2890,7 @@ class AppLocalizationsUz extends AppLocalizations {
       'Ushbu da’voning barcha manbalari almashtirilgan.';
 
   @override
-  String get bannerOutdated => 'Reviewer tomonidan eskirgan deb belgilangan.';
+  String get bannerOutdated => 'Taqrizchi tomonidan eskirgan deb belgilangan.';
 
   @override
   String get bannerConflict =>
@@ -2897,7 +2901,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get conflictsIntro =>
-      'Ziddiyatlar yashirilmaydi. Ularni faqat malakali reviewer hal qiladi; ilova «to‘g‘ri» variantni tanlamaydi.';
+      'Ziddiyatlar yashirilmaydi. Ularni faqat malakali taqrizchi hal qiladi; ilova «to‘g‘ri» variantni tanlamaydi.';
 
   @override
   String get conflictKindDirect => 'To‘g‘ridan-to‘g‘ri qarama-qarshilik';
@@ -2919,10 +2923,10 @@ class AppLocalizationsUz extends AppLocalizations {
   String get conflictStatements => 'Ishtirok etgan da’volar';
 
   @override
-  String get conflictStateOpen => 'Ochiq — reviewer qarori kutilmoqda';
+  String get conflictStateOpen => 'Ochiq — taqrizchi qarori kutilmoqda';
 
   @override
-  String get conflictStateResolved => 'Reviewer tomonidan hal qilingan';
+  String get conflictStateResolved => 'Taqrizchi tomonidan hal qilingan';
 
   @override
   String get conflictNoteLabel => 'Manbalar nima deydi';
@@ -2995,7 +2999,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get ctxAutoMinimal =>
-      'Bu yozuv konteksti hali ko‘rib chiqilmagan; faqat namuna ko‘rsatilgan.';
+      'Ushbu yozuv bo‘yicha tekshirilgan kontekstual ma’lumot hozircha mavjud emas.';
 
   @override
   String get metRelationsTitle => 'Metabolitlar (manbali bog‘lanishlar)';
@@ -3154,20 +3158,20 @@ class AppLocalizationsUz extends AppLocalizations {
   String get reviewRetracted => 'Manbasi retraksiya qilingan da’volar';
 
   @override
-  String get reviewActions => 'Yozilgan reviewer harakatlari';
+  String get reviewActions => 'Yozilgan taqrizchi harakatlari';
 
   @override
-  String get reviewReviewers => 'Ro‘yxatdagi reviewerlar';
+  String get reviewReviewers => 'Ro‘yxatdagi taqrizchilar';
 
   @override
   String get reviewOpenConflicts => 'Ochiq dalillar ziddiyatlari';
 
   @override
   String get reviewExplain =>
-      'Da’vo faqat o‘z sohasidagi ikki mustaqil malakali reviewer joriy versiyani tasdiqlagandan keyin VERIFIED bo‘ladi. Ilova va uning mualliflari hech narsani o‘zlari tasdiqlangan deb belgilay olmaydi.';
+      'Da’vo faqat o‘z sohasidagi ikki mustaqil malakali taqrizchi joriy versiyani tasdiqlagandan keyin VERIFIED bo‘ladi. Ilova va uning mualliflari hech narsani o‘zlari tasdiqlangan deb belgilay olmaydi.';
 
   @override
-  String get reviewRolesTitle => 'Reviewer rollari va huquqlari';
+  String get reviewRolesTitle => 'Taqrizchi rollari va huquqlari';
 
   @override
   String get reviewRoleApprove =>
@@ -3244,7 +3248,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get aiLimNotVerified =>
-      'Dalillar hali malakali reviewerlar tomonidan tasdiqlanmagan.';
+      'Dalillar hali malakali taqrizchilar tomonidan tasdiqlanmagan.';
 
   @override
   String get aiLimConflict =>
@@ -3260,7 +3264,8 @@ class AppLocalizationsUz extends AppLocalizations {
       'Muayyan holatni talqin qilish malakali ekspertni talab qiladi.';
 
   @override
-  String get aiLimMock => 'TEST provayderi yaratgan — ishchi AI xizmati emas.';
+  String get aiLimMock =>
+      'Namoyish provayderi — haqiqiy AI javobi yaratilmadi.';
 
   @override
   String get instrOriginalTitle => 'Asl nomi';
@@ -3696,11 +3701,154 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get aiDisclaimerBody =>
-      'Forensic AI javoblari ilovadagi manbali lokal kontent asosida tuziladi va ekspert xulosasi emas. Ular to‘liq bo‘lmasligi yoki xato bo‘lishi mumkin, malakali reviewer tomonidan tekshirilmagan va sud-ekspert xulosasi, huquqiy qaror yoki davolash uchun yagona asos bo‘lmasligi kerak. Har doim keltirilgan manbalarni tekshiring va malakali ekspert bilan maslahatlashing.';
+      'Forensic AI javoblari ilovadagi manbali lokal kontent asosida tuziladi va ekspert xulosasi emas. Ular to‘liq bo‘lmasligi yoki xato bo‘lishi mumkin, malakali taqrizchi tomonidan tekshirilmagan va sud-ekspert xulosasi, huquqiy qaror yoki davolash uchun yagona asos bo‘lmasligi kerak. Har doim keltirilgan manbalarni tekshiring va malakali ekspert bilan maslahatlashing.';
 
   @override
   String get accountSection => 'Akkaunt';
 
   @override
   String get subscriptionSection => 'Obuna';
+
+  @override
+  String get availNoDataTitle => 'Hozircha yozuvlar yo‘q';
+
+  @override
+  String get availNoDataBody =>
+      'O‘rnatilgan ilmiy bazada bu bo‘lim uchun yozuvlar yo‘q.';
+
+  @override
+  String get availFilterTitle => 'Tanlangan filtr bo‘yicha natija yo‘q';
+
+  @override
+  String get availFilterBody =>
+      'Tanlangan filtr bo‘yicha ko‘rsatish uchun tekshirilgan yozuvlar mavjud emas. Filtrni tozalang yoki butun bazadan qidiring.';
+
+  @override
+  String get availNotConnectedTitle => 'Bu versiyada mavjud emas';
+
+  @override
+  String get availNotConnectedBody =>
+      'Bu funksiya uchun bu versiyada ulanmagan onlayn xizmat kerak. Barcha oflayn funksiyalar ishlashda davom etadi.';
+
+  @override
+  String get availServiceTitle => 'Xizmat vaqtincha ishlamayapti';
+
+  @override
+  String get availServiceBody =>
+      'Aloqani tekshirib, keyinroq qayta urinib ko‘ring. Oflayn funksiyalar ishlashda davom etadi.';
+
+  @override
+  String get availClearFilters => 'Filtrlarni tozalash';
+
+  @override
+  String get availBrowseAll => 'Barcha yozuvlarni ko‘rish';
+
+  @override
+  String get availSearch => 'Qidirish';
+
+  @override
+  String get aiStatusPreview => 'Namoyish · ulanmagan';
+
+  @override
+  String get aiPreviewPoint1 => 'Bu ekran — interfeys namoyishi.';
+
+  @override
+  String get aiPreviewPoint2 =>
+      'Ishchi AI xizmati ulanmagan, shuning uchun AI javobi yaratilmaydi.';
+
+  @override
+  String get aiPreviewPoint3 =>
+      'Quyidagi javob namunasi faqat tuzilma namoyishi.';
+
+  @override
+  String get aiPreviewPoint4 =>
+      '«Manbalarni oflayn topish» lokal bazadan qidiradi va hozir ishlaydi.';
+
+  @override
+  String get aiSendUnavailable =>
+      'AI xizmati ulanmaguncha yuborish o‘chirilgan.';
+
+  @override
+  String get concWarning =>
+      'Bu qiymat alohida holat yoki tadqiqotdan olingan. Universal toksik, o‘limga olib keluvchi, terapevtik yoki huquqiy chegara sifatida talqin qilinmasligi kerak.';
+
+  @override
+  String get concTitle => 'Qayd etilgan konsentratsiya';
+
+  @override
+  String get concSubstance => 'Modda';
+
+  @override
+  String get concValue => 'Qiymat va birlik';
+
+  @override
+  String get concValueInQuote => 'Manbada keltirilganidek (iqtibosga qarang)';
+
+  @override
+  String get concLivingPostmortem => 'Tirik / o‘limdan keyin';
+
+  @override
+  String get concSourceType => 'Manba turi';
+
+  @override
+  String get concSectionCase => 'Holat tavsifi';
+
+  @override
+  String get concSectionAbstract => 'Annotatsiya';
+
+  @override
+  String get concSectionIntro => 'Kirish (umumiy ma’lumot)';
+
+  @override
+  String get concSectionResults => 'Natijalar';
+
+  @override
+  String get concSectionDiscussion => 'Muhokama';
+
+  @override
+  String get concStudyContext => 'Holat / tadqiqot konteksti';
+
+  @override
+  String get concEvidenceLevel => 'Dalil darajasi';
+
+  @override
+  String get concReviewStatus => 'Tekshiruv holati';
+
+  @override
+  String get concSource => 'Manba';
+
+  @override
+  String get concNotAvailable => 'Ma’lumot mavjud emas';
+
+  @override
+  String get concExcerpt => 'Manbadan iqtibos';
+
+  @override
+  String get calcStatusTitle => 'Holat';
+
+  @override
+  String get calcEngineLabel => 'Hisoblash moduli';
+
+  @override
+  String get calcEngineTested =>
+      'Avtomatik dasturiy testlar bilan tekshirilgan — bu ilmiy ekspertiza emas';
+
+  @override
+  String get calcEngineChip => 'Modul sinovdan o‘tgan';
+
+  @override
+  String get calcReferenceLabel => 'Formula manbasi';
+
+  @override
+  String get calcInterpretationLabel => 'Talqin';
+
+  @override
+  String get calcInterpretationValue =>
+      'Kontekstga bog‘liq — professional baho talab qiladi';
+
+  @override
+  String get statusRejected => 'Rad etilgan';
+
+  @override
+  String get homeHeaderSubtitle => 'Sud ekspertizasi ma’lumotnomasi';
 }

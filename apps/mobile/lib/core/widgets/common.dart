@@ -51,10 +51,19 @@ class BrandHeader extends StatelessWidget {
 
 /// Ilmiy review statusi belgisi — rang + ikonka + matn (faqat rangga
 /// tayanmaydi: accessibility).
+/// Ilmiy kontent tekshiruv holati. `compact` — ro‘yxatlar uchun ixcham
+/// (✓ / ○ / ! / ×) belgi va xira matn; to‘liq izoh tafsilot/provenance
+/// sahifasida. Hech qachon inson tasdig‘ini nazarda tutmaydi, agar u
+/// bo‘lmasa.
 class ReviewStatusBadge extends StatelessWidget {
-  const ReviewStatusBadge({super.key, required this.status});
+  const ReviewStatusBadge({
+    super.key,
+    required this.status,
+    this.compact = false,
+  });
 
   final ScientificStatus status;
+  final bool compact;
 
   @override
   Widget build(BuildContext context) {
@@ -81,13 +90,42 @@ class ReviewStatusBadge extends StatelessWidget {
         c.outdated,
         Icons.history,
       ),
-      ScientificStatus.rejected => (l.statusNeedsReview, c.danger, Icons.block),
+      ScientificStatus.rejected => (l.statusRejected, c.danger, Icons.block),
       ScientificStatus.draft => (
         l.statusDraft,
         c.textSecondary,
         Icons.edit_note_outlined,
       ),
     };
+    if (compact) {
+      final glyph = switch (status) {
+        ScientificStatus.verified || ScientificStatus.reviewed => Icons.check,
+        ScientificStatus.needsReview => Icons.radio_button_unchecked,
+        ScientificStatus.outdated => Icons.priority_high,
+        ScientificStatus.rejected => Icons.close,
+        ScientificStatus.draft => Icons.edit_outlined,
+      };
+      return Semantics(
+        label: label,
+        excludeSemantics: true,
+        child: Row(
+          key: Key('status.compact.${status.name}'),
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(glyph, size: 13, color: color),
+            const SizedBox(width: 3),
+            Flexible(
+              child: Text(
+                label,
+                style: Theme.of(
+                  context,
+                ).textTheme.labelSmall?.copyWith(color: c.textSecondary),
+              ),
+            ),
+          ],
+        ),
+      );
+    }
     return Semantics(
       label: label,
       excludeSemantics: true,

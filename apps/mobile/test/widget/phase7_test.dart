@@ -186,7 +186,7 @@ void main() {
         const Key('claim.context.C-MORPHINE-REPORTED_CONCENTRATION-P5'),
       ),
     );
-    expect(find.text('post-mortem'), findsWidgets);
+    expect(find.textContaining('post-mortem'), findsWidgets);
     expect(find.text('not stated in the source'), findsWidgets);
   });
 

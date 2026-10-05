@@ -139,16 +139,37 @@ class HomeScreen extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         titleSpacing: FeBreakpoints.gutter(context),
+        toolbarHeight: 64,
         title: Row(
+          key: const Key('home.header'),
           children: [
-            const BrandMark(size: 28),
-            const SizedBox(width: FeSpace.xs),
+            const BrandMark(size: 32),
+            const SizedBox(width: FeSpace.sm),
             Flexible(
-              child: Text(
-                l.appTitle,
-                overflow: TextOverflow.ellipsis,
-                style: Theme.of(context).textTheme.titleMedium
-                    ?.copyWith(letterSpacing: 1.6, fontWeight: FontWeight.w700),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    l.appTitle,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                      letterSpacing: 1.6,
+                      fontWeight: FontWeight.w700,
+                      height: 1.1,
+                    ),
+                  ),
+                  Text(
+                    l.homeHeaderSubtitle,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: Theme.of(context).textTheme.labelSmall?.copyWith(
+                      color: FeTheme.of(context).textSecondary,
+                      letterSpacing: 0.3,
+                    ),
+                  ),
+                ],
               ),
             ),
           ],
@@ -178,11 +199,9 @@ class HomeScreen extends ConsumerWidget {
                     ),
                   ] else if (FeFlags.contentChannel != 'production') ...[
                     const SizedBox(height: FeSpace.xs),
-                    FeBanner(
+                    _ReviewNotice(
                       key: const Key('home.pilotNotice'),
-                      icon: Icons.science_outlined,
                       text: l.homePilotNotice,
-                      tone: FeBannerTone.review,
                     ),
                   ],
                   if (isStudent) ...[
@@ -574,19 +593,63 @@ class _ModuleGrid extends StatelessWidget {
         // Katta matnda ustunlar kamayadi — overflow o‘rniga qayta joylashuv.
         final columns = w >= 560 ? 3 : (w >= 300 && textScale < 1.6 ? 2 : 1);
         const gap = FeSpace.sm;
-        final itemWidth = (w - gap * (columns - 1)) / columns;
-        return Wrap(
-          spacing: gap,
-          runSpacing: gap,
+        // Har qatordagi kartalar bir xil balandlikda (tartibli to‘r).
+        return Column(
           children: [
-            for (final m in modules)
-              SizedBox(
-                width: itemWidth,
-                child: _ModuleCard(module: m),
+            for (var i = 0; i < modules.length; i += columns)
+              Padding(
+                padding: EdgeInsets.only(
+                  bottom: i + columns < modules.length ? gap : 0,
+                ),
+                child: IntrinsicHeight(
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      for (var j = 0; j < columns; j++) ...[
+                        if (j > 0) const SizedBox(width: gap),
+                        Expanded(
+                          child: i + j < modules.length
+                              ? _ModuleCard(module: modules[i + j])
+                              : const SizedBox.shrink(),
+                        ),
+                      ],
+                    ],
+                  ),
+                ),
               ),
           ],
         );
       },
+    );
+  }
+}
+
+/// Yengil (ramkasiz) tekshiruv eslatmasi — banner shovqinisiz.
+class _ReviewNotice extends StatelessWidget {
+  const _ReviewNotice({super.key, required this.text});
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = FeTheme.of(context);
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(top: 1),
+          child: Icon(Icons.fact_check_outlined, size: 16, color: c.reviewed),
+        ),
+        const SizedBox(width: FeSpace.xs),
+        Expanded(
+          child: Text(
+            text,
+            style: Theme.of(
+              context,
+            ).textTheme.bodySmall?.copyWith(color: c.textSecondary),
+          ),
+        ),
+      ],
     );
   }
 }
@@ -609,22 +672,31 @@ class _ModuleCard extends StatelessWidget {
           key: Key('home.module.${module.name}'),
           onTap: () => context.go(module.route),
           child: ConstrainedBox(
-            constraints: const BoxConstraints(minHeight: 64),
+            constraints: const BoxConstraints(minHeight: 88),
             child: Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: FeSpace.sm,
-                vertical: FeSpace.sm,
-              ),
-              child: Row(
+              padding: const EdgeInsets.all(FeSpace.sm),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Icon(module.icon, color: c.accent, size: 22),
-                  const SizedBox(width: FeSpace.sm),
-                  Expanded(
-                    child: Text(
-                      module.label(l),
-                      style: Theme.of(context).textTheme.titleSmall
-                          ?.copyWith(fontWeight: FontWeight.w600),
+                  DecoratedBox(
+                    decoration: BoxDecoration(
+                      color: c.accentContainer,
+                      borderRadius: BorderRadius.circular(FeRadius.sm),
                     ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(6),
+                      child: Icon(
+                        module.icon,
+                        color: c.onAccentContainer,
+                        size: 20,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: FeSpace.xs),
+                  Text(
+                    module.label(l),
+                    style: Theme.of(context).textTheme.titleSmall
+                        ?.copyWith(fontWeight: FontWeight.w600, height: 1.25),
                   ),
                 ],
               ),

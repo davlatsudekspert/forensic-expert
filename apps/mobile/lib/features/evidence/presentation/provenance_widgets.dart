@@ -10,6 +10,7 @@ import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/date_format.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
+import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/evidence/provenance_models.dart';
 import '../../../domain/library/library_models.dart';
@@ -416,8 +417,12 @@ class _ConflictSummary extends StatelessWidget {
   }
 }
 
-/// Qat’iy konsentratsiya konteksti — faqat manbada aytilgani; aytilmagan
-/// maydon «manbada ko‘rsatilmagan» deb ochiq ko‘rsatiladi.
+/// Konsentratsiya dalili kartasi: modda, qiymat, namuna, tirik/o‘limdan
+/// keyin, manba turi, holat/tadqiqot konteksti, metod, birga ta’sir,
+/// cheklovlar, dalil darajasi, tekshiruv holati va manba. Faqat manbada
+/// aytilgani; kuratsiya qilinmagan maydon «Ma’lumot mavjud emas», manbada
+/// aytilmagani «manbada ko‘rsatilmagan». Har kartada: qiymat universal
+/// chegara EMAS (konsentratsiya ≠ universal chegara).
 class StrictContextTable extends ConsumerWidget {
   const StrictContextTable({super.key, required this.claim});
 
@@ -432,8 +437,13 @@ class StrictContextTable extends ConsumerWidget {
     final t = Theme.of(context).textTheme;
     final lang = Localizations.localeOf(context).languageCode;
     final index = ref.watch(provenanceIndexProvider);
+    final library = ref.watch(libraryRepositoryProvider);
     const ns = StrictConcentrationContext.notStated;
+    final auto = ctx['curation'] == 'auto_minimal';
+    final na = l.concNotAvailable;
+
     String value(String key) {
+      if (auto) return na;
       final v = ctx[key];
       if (v == null || v == ns) return l.ctxNotStated;
       return switch ('$key:$v') {
@@ -449,29 +459,61 @@ class StrictContextTable extends ConsumerWidget {
       };
     }
 
-    final auto = ctx['curation'] == 'auto_minimal';
+    String livingPostmortem() {
+      if (auto) return na;
+      final parts = [
+        for (final k in ['subject_state', 'sampling'])
+          if (ctx[k] != null && ctx[k] != ns) value(k),
+      ];
+      return parts.isEmpty ? l.ctxNotStated : parts.join(' · ');
+    }
+
+    String studyContext() {
+      if (auto) return na;
+      final parts = [
+        for (final k in ['case_type', 'population', 'study_size'])
+          if (ctx[k] != null && ctx[k] != ns) value(k),
+      ];
+      return parts.isEmpty ? l.ctxNotStated : parts.join(' · ');
+    }
+
+    final section = switch (claim.value['section']) {
+      'CASE' => l.concSectionCase,
+      'ABSTRACT' => l.concSectionAbstract,
+      'INTRO' => l.concSectionIntro,
+      'RESULTS' => l.concSectionResults,
+      'DISCUSS' => l.concSectionDiscussion,
+      _ => na,
+    };
     final specimens = [
       for (final s in (ctx['specimen'] as List? ?? const []))
         index.specimen('$s')?.names.resolve(lang) ?? '$s',
     ];
-    final rows = <(String, String, bool)>[
-      (l.ctxSpecimen, specimens.join(', '), false),
-      if (!auto) ...[
-        (l.ctxSampling, value('sampling'), false),
-        (l.ctxSubject, value('subject_state'), false),
-        (l.ctxPopulation, value('population'), true),
-        (l.ctxStudySize, value('study_size'), false),
-        (l.ctxCaseType, value('case_type'), true),
-        (l.ctxCoIntoxicants, value('co_intoxicants'), true),
-        (l.ctxMethod, value('analytical_method'), true),
-        (l.ctxTiming, value('timing'), true),
-        (l.ctxStatistic, value('statistic'), true),
-        (l.ctxReporting, value('reporting'), false),
-      ],
-    ];
+    final substance = claim.entityId == null
+        ? na
+        : library.byId(claim.entityId!)?.name.resolve(lang) ?? na;
+    final source = claim.sources.isEmpty ? na : claim.sources.first.title;
     final limitations = [
       for (final x in (ctx['limitations'] as List? ?? const [])) '$x',
     ];
+
+    // (sarlavha, qiymat, manba matni — asl tilda qoladi)
+    final rows = <(String, String, bool)>[
+      (l.concSubstance, substance, false),
+      (l.concValue, l.concValueInQuote, false),
+      (l.ctxSpecimen, specimens.isEmpty ? na : specimens.join(', '), false),
+      (l.concLivingPostmortem, livingPostmortem(), false),
+      (l.concSourceType, section, false),
+      (l.concStudyContext, studyContext(), true),
+      (l.ctxMethod, value('analytical_method'), true),
+      (l.ctxCoIntoxicants, value('co_intoxicants'), true),
+      if (!auto) (l.ctxTiming, value('timing'), true),
+      if (!auto) (l.ctxReporting, value('reporting'), false),
+      (l.concEvidenceLevel, claim.evidenceLevel, false),
+      (l.concSource, source, true),
+    ];
+    bool missing(String v) => v == na || v == l.ctxNotStated;
+
     return FeCard(
       key: Key('claim.context.${claim.claimId}'),
       padding: const EdgeInsets.all(FeSpace.sm),
@@ -479,42 +521,74 @@ class StrictContextTable extends ConsumerWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         spacing: FeSpace.xxs,
         children: [
-          Text(l.ctxTitle, style: t.labelLarge),
+          Text(l.concTitle, style: t.labelLarge),
+          FeBanner(
+            key: Key('claim.concWarning.${claim.claimId}'),
+            icon: Icons.warning_amber_rounded,
+            text: l.concWarning,
+            tone: FeBannerTone.critical,
+          ),
           if (auto)
             Text(
               l.ctxAutoMinimal,
+              key: Key('claim.contextUnavailable.${claim.claimId}'),
               style: t.bodySmall?.copyWith(color: c.textSecondary),
             ),
           for (final (k, v, sourceText) in rows)
-            Wrap(
-              spacing: FeSpace.xs,
-              children: [
-                Text(k, style: t.bodySmall?.copyWith(color: c.textSecondary)),
-                Text(
-                  v,
-                  // Manbadan olingan matn ingliz tilida qoladi.
-                  locale: sourceText && v != l.ctxNotStated
-                      ? const Locale('en')
-                      : null,
-                  style: t.bodySmall?.copyWith(
-                    color: v == l.ctxNotStated ? c.textSecondary : null,
-                    fontStyle: v == l.ctxNotStated ? FontStyle.italic : null,
+            Padding(
+              padding: const EdgeInsets.only(top: 2),
+              child: Wrap(
+                spacing: FeSpace.xs,
+                children: [
+                  Text(
+                    k,
+                    style: t.bodySmall?.copyWith(color: c.textSecondary),
                   ),
-                ),
-              ],
+                  Text(
+                    v,
+                    // Manbadan olingan matn asl tilda qoladi.
+                    locale: sourceText && !missing(v)
+                        ? const Locale('en')
+                        : null,
+                    style: t.bodySmall?.copyWith(
+                      color: missing(v) ? c.textSecondary : null,
+                      fontStyle: missing(v) ? FontStyle.italic : null,
+                      fontWeight: missing(v) ? null : FontWeight.w600,
+                    ),
+                  ),
+                ],
+              ),
             ),
-          if (limitations.isNotEmpty) ...[
+          Wrap(
+            spacing: FeSpace.xs,
+            crossAxisAlignment: WrapCrossAlignment.center,
+            children: [
+              Text(
+                l.concReviewStatus,
+                style: t.bodySmall?.copyWith(color: c.textSecondary),
+              ),
+              ReviewStatusBadge(status: claim.status, compact: true),
+            ],
+          ),
+          Text(
+            l.ctxLimitations,
+            style: t.bodySmall?.copyWith(color: c.textSecondary),
+          ),
+          if (limitations.isEmpty)
             Text(
-              l.ctxLimitations,
-              style: t.bodySmall?.copyWith(color: c.textSecondary),
-            ),
+              auto ? na : l.ctxNotStated,
+              style: t.bodySmall?.copyWith(
+                color: c.textSecondary,
+                fontStyle: FontStyle.italic,
+              ),
+            )
+          else
             for (final x in limitations)
               Text(
                 '${FeGlyphs.bullet} $x',
                 locale: const Locale('en'),
                 style: t.bodySmall,
               ),
-          ],
         ],
       ),
     );

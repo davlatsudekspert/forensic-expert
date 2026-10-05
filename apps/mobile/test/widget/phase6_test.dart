@@ -383,6 +383,8 @@ void main() {
         find.byKey(const Key('ai.input')),
         'Is fentanyl a controlled substance under the law?',
       );
+      await tester.ensureVisible(find.byKey(const Key('ai.findSources')));
+      await tester.pumpAndSettle();
       await tester.tap(find.byKey(const Key('ai.findSources')));
       await tester.pumpAndSettle();
       expect(find.byKey(const Key('ai.jurisdictionRequired')), findsOneWidget);

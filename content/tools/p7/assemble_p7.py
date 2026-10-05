@@ -421,7 +421,7 @@ def apply(b):
                 lifecycle_basis="Excluded retracted PMIDs at selection (PubMed check).",
                 language="en",
                 notes=f"Litsenziya (PMC BioC): {c['license']}. Iqtibos asl matndan "
-                      f"dasturiy ajratilgan (find_p7_sentences.py). PHASE 7."))
+                      f"dasturiy ajratilgan."))
             src_ids.add(sid)
         cid = c["claim_id"]
         b["claims"].append(dict(
@@ -459,7 +459,7 @@ def apply(b):
                        sampling=NS, subject_state=NS, population=NS, study_size=NS,
                        case_type=NS, co_intoxicants=NS, analytical_method=NS,
                        timing=NS, statistic=NS, reporting="not_assessed",
-                       limitations=["Context not yet curated (PHASE 7 pilot covers 17 substances)."],
+                       limitations=[],
                        curation="auto_minimal")
             if not specimens_of(v.get("specimen")):
                 ctx["specimen"] = []

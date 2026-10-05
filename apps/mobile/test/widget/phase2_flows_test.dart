@@ -161,7 +161,7 @@ void main() {
           initialLocation: Routes.libraryEntry('TEST-SUB-ETOH'),
         );
         expect(find.byType(EntryDetailScreen), findsOneWidget);
-        expect(find.text('TEST DATA'), findsWidgets);
+        expect(find.text('SAMPLE'), findsWidgets);
         final sci = find.byKey(const Key('entry.layer.scientific'));
         final jur = find.byKey(const Key('entry.layer.jurisdiction'));
         await tester.ensureVisible(sci);
@@ -401,7 +401,7 @@ void main() {
       );
       await tapKey(tester, 'home.continueLearning');
       expect(find.byType(LearnScreen), findsOneWidget);
-      expect(find.text('TEST DATA'), findsWidgets);
+      expect(find.text('SAMPLE'), findsWidgets);
       c.read(routerProvider).go(Routes.home);
       await tester.pumpAndSettle();
     });

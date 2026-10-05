@@ -204,7 +204,7 @@ final routerProvider = Provider<GoRouter>((ref) {
                           .asNameMap()[s.pathParameters['id']];
                       final l = AppLocalizations.of(c);
                       return ModuleHubScreen(
-                        title: module?.label(l) ?? l.inDevelopmentTitle,
+                        title: module?.label(l) ?? l.appTitle,
                         category: switch (module) {
                           HomeModule.toxicology => ToolCategory.toxicology,
                           HomeModule.laboratory => ToolCategory.laboratory,

@@ -47,7 +47,8 @@ class ModuleHubScreen extends StatelessWidget {
                       ),
                   ],
                   FeSectionHeader(l.moduleHubReference),
-                  const InDevelopmentView(
+                  const AvailabilityStateView(
+                    kind: AvailabilityKind.noReviewedData,
                     icon: Icons.menu_book_outlined,
                     embedded: true,
                   ),

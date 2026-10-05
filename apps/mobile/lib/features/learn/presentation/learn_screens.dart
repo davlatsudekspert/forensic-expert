@@ -191,7 +191,7 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
                                       label: _levelName(l, course.level),
                                       color: c.textSecondary,
                                     ),
-                                    ReviewStatusBadge(status: course.status),
+                                    ReviewStatusBadge(status: course.status, compact: true),
                                     if (!free)
                                       StatusChip(
                                         key: Key('learn.locked.${course.id}'),
@@ -550,7 +550,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       appBar: AppBar(title: Text(l.learnQuiz)),
       body: SafeArea(
         child: questions.isEmpty
-            ? const InDevelopmentView()
+            ? const AvailabilityStateView(kind: AvailabilityKind.noReviewedData)
             : ListView(
                 children: [
                   FeContentFrame(
@@ -680,7 +680,7 @@ class _FlashcardsScreenState extends ConsumerState<FlashcardsScreen> {
       appBar: AppBar(title: Text(l.learnFlashcards)),
       body: SafeArea(
         child: cards.isEmpty
-            ? const InDevelopmentView()
+            ? const AvailabilityStateView(kind: AvailabilityKind.noReviewedData)
             : FeScrollableFlashcard(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,

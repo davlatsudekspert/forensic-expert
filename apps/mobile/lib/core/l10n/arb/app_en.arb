@@ -152,13 +152,13 @@
   "@homeModulesHeading": {
     "description": "Section heading on Home."
   },
-  "inDevelopmentTitle": "In development",
+  "inDevelopmentTitle": "No reviewed content to show",
   "@inDevelopmentTitle": {
-    "description": "Placeholder title for sections not built yet."
+    "description": "Empty state title."
   },
-  "inDevelopmentBody": "This section will be available in a later development phase. No scientific content is shown until it has passed expert review.",
+  "inDevelopmentBody": "Content appears here only when it has a verifiable source and has passed expert review. Nothing is filled in just to make the screen look complete.",
   "@inDevelopmentBody": {
-    "description": "Placeholder body."
+    "description": "Empty state body."
   },
   "unverifiedBanner": "UNVERIFIED DATA — EXPERT CONFIRMATION REQUIRED",
   "@unverifiedBanner": {
@@ -180,9 +180,9 @@
   "@statusOutdated": {
     "description": "Scientific review status."
   },
-  "aiNotConnectedTitle": "Forensic AI is not connected yet",
+  "aiNotConnectedTitle": "Production AI service is not connected",
   "@aiNotConnectedTitle": {
-    "description": "AI tab title in PHASE 1."
+    "description": "AI state title."
   },
   "aiNotConnectedBody": "Forensic AI will answer only from the reviewed internal knowledge base, always show its sources and never issue expert conclusions. The core library and calculators work without AI.",
   "@aiNotConnectedBody": {
@@ -310,13 +310,13 @@
   "@homeStudyHubBody": {
     "description": "Student home card body."
   },
-  "homePrototypeNotice": "Prototype build: entries marked TEST DATA are placeholders, not scientific content.",
+  "homePrototypeNotice": "Demonstration build: entries marked SAMPLE are illustrative and are not scientific content.",
   "@homePrototypeNotice": {
-    "description": "Honest notice in prototype builds."
+    "description": "Demo-build notice."
   },
-  "testDataBadge": "TEST DATA",
+  "testDataBadge": "SAMPLE",
   "@testDataBadge": {
-    "description": "Badge for fixture data. Kept in English as a technical marker."
+    "description": "Badge for illustrative sample entries."
   },
   "seeAll": "See all",
   "@seeAll": {
@@ -623,9 +623,9 @@
   "@detailNotReviewed": {
     "description": "Card field value."
   },
-  "detailPlaceholder": "Placeholder — no scientific content yet.",
+  "detailPlaceholder": "No reviewed scientific details are available for this entry yet.",
   "@detailPlaceholder": {
-    "description": "Placeholder section body."
+    "description": "Entry without reviewed details."
   },
   "detailConcentrationsNote": "A concentration alone does not establish a cause of death. Values will be shown only with matrix, population and sources.",
   "@detailConcentrationsNote": {
@@ -635,9 +635,9 @@
   "@sourcesButton": {
     "description": "Opens provenance sheet."
   },
-  "sourcesNone": "No sources — this entry is test data.",
+  "sourcesNone": "No sources are linked to this entry.",
   "@sourcesNone": {
-    "description": "Sources sheet empty state."
+    "description": "No sources."
   },
   "searchGroupTools": "Tools",
   "@searchGroupTools": {
@@ -676,9 +676,9 @@
   "@searchExternalTitle": {
     "description": "External search section."
   },
-  "searchExternalBody": "PubMed, PubChem and Crossref search will be added in a later version. External results are never mixed with reviewed internal data.",
+  "searchExternalBody": "External databases (PubMed, PubChem, Crossref) are not connected in this version. External results are never mixed with the reviewed internal database.",
   "@searchExternalBody": {
-    "description": "External search placeholder."
+    "description": "External search note."
   },
   "searchTypeToStart": "Type at least two characters.",
   "@searchTypeToStart": {
@@ -738,13 +738,13 @@
   "@piiKindAddress": {
     "description": "PII kind."
   },
-  "aiPreviewTitle": "Answer layout preview",
+  "aiPreviewTitle": "Answer layout (demonstration)",
   "@aiPreviewTitle": {
-    "description": "Answer layout preview heading."
+    "description": "Section."
   },
-  "aiPreviewNotice": "UI prototype. The sample below is placeholder text — not AI output and not scientific content.",
+  "aiPreviewNotice": "DEMONSTRATION — this is not an AI response and not scientific advice. It only shows how a connected answer will be structured.",
   "@aiPreviewNotice": {
-    "description": "Prototype notice."
+    "description": "Demo notice."
   },
   "aiSectionAvailable": "Available information",
   "@aiSectionAvailable": {
@@ -758,17 +758,17 @@
   "@aiSectionLimitations": {
     "description": "AI answer section."
   },
-  "aiSampleInternal": "Placeholder statement supported by a reviewed internal source.",
+  "aiSampleInternal": "Example statement linked to a reviewed internal source.",
   "@aiSampleInternal": {
-    "description": "Placeholder sentence."
+    "description": "Demo statement."
   },
-  "aiSampleExternal": "Placeholder statement from an external source that has not been reviewed.",
+  "aiSampleExternal": "Example statement from an external source that has not been reviewed.",
   "@aiSampleExternal": {
-    "description": "Placeholder sentence."
+    "description": "Demo statement."
   },
-  "aiSampleLimitation": "Placeholder limitation — a final interpretation requires the full case context.",
+  "aiSampleLimitation": "Example limitation — a final interpretation requires the full case context.",
   "@aiSampleLimitation": {
-    "description": "Placeholder sentence."
+    "description": "Demo statement."
   },
   "aiEvidenceInternalVerified": "Internal · verified",
   "@aiEvidenceInternalVerified": {
@@ -782,9 +782,9 @@
   "@aiEvidenceExternal": {
     "description": "Evidence tier label."
   },
-  "aiPlaceholderSource": "Placeholder source {number}",
+  "aiPlaceholderSource": "Example source {number}",
   "@aiPlaceholderSource": {
-    "description": "Placeholder source title.",
+    "description": "Demo source.",
     "placeholders": {
       "number": {
         "type": "int"
@@ -1062,9 +1062,9 @@
   "@accessFree": {
     "description": "Plan name."
   },
-  "homePilotNotice": "Pilot scientific database: every entry is awaiting expert review. Information is shown with its sources and is not a final conclusion.",
+  "homePilotNotice": "The scientific database is under expert review. Every entry is shown with its sources and review status and is not a final conclusion.",
   "@homePilotNotice": {
-    "description": "Home notice while the content pack is the unreviewed pilot."
+    "description": "Home review notice."
   },
   "detailIdentity": "Identifiers",
   "@detailIdentity": {
@@ -2961,9 +2961,9 @@
   "@disciplinesTitle": {
     "description": "Screen title."
   },
-  "disciplinesIntro": "The platform architecture covers these disciplines. Content is added gradually and only with sources and expert review — an empty discipline means “not yet sourced”, not “no knowledge exists”.",
+  "disciplinesIntro": "FORENSIC EXPERT covers these disciplines. Content is added gradually and only with sources and expert review — an empty discipline means “no sourced content yet”, not “no knowledge exists”.",
   "@disciplinesIntro": {
-    "description": "Screen intro."
+    "description": "Disciplines intro."
   },
   "disciplineRecords": "{count, plural, =0{No sourced records yet} one{1 sourced record} other{{count} sourced records}}",
   "@disciplineRecords": {
@@ -3018,9 +3018,9 @@
   "@jurisdictionViewDetails": {
     "description": "Action."
   },
-  "jurisdictionWithContent": "Jurisdictions with pilot content",
+  "jurisdictionWithContent": "Jurisdictions with legal records",
   "@jurisdictionWithContent": {
-    "description": "Section header."
+    "description": "Section."
   },
   "jurisdictionSearchHint": "Search country or ISO code",
   "@jurisdictionSearchHint": {
@@ -3030,9 +3030,9 @@
   "@jurisdictionNotVerified": {
     "description": "Empty state."
   },
-  "jurisdictionPilotContent": "Pilot content — needs review",
+  "jurisdictionPilotContent": "Legal records · under legal review",
   "@jurisdictionPilotContent": {
-    "description": "Coverage label."
+    "description": "Status."
   },
   "jurisdictionNoContentShort": "Content not yet verified",
   "@jurisdictionNoContentShort": {
@@ -3903,9 +3903,9 @@
   "@ctxNotAssessed": {
     "description": "Value."
   },
-  "ctxAutoMinimal": "Context for this record has not been curated yet; only the specimen is shown.",
+  "ctxAutoMinimal": "Reviewed contextual data for this record is not yet available.",
   "@ctxAutoMinimal": {
-    "description": "Note."
+    "description": "Concentration context not curated."
   },
   "metRelationsTitle": "Metabolites (sourced relations)",
   "@metRelationsTitle": {
@@ -4258,7 +4258,7 @@
   "@aiLimExpert": {
     "description": "Limitation."
   },
-  "aiLimMock": "Generated by a TEST provider — not a production AI service.",
+  "aiLimMock": "Demonstration provider — no real AI answer was generated.",
   "@aiLimMock": {
     "description": "Limitation."
   },
@@ -4839,5 +4839,181 @@
   "subscriptionSection": "Subscription",
   "@subscriptionSection": {
     "description": "Section."
+  },
+  "availNoDataTitle": "No records yet",
+  "@availNoDataTitle": {
+    "description": "Empty state."
+  },
+  "availNoDataBody": "The installed scientific database has no records for this section.",
+  "@availNoDataBody": {
+    "description": "Empty state."
+  },
+  "availFilterTitle": "No results for the selected filter",
+  "@availFilterTitle": {
+    "description": "Empty state."
+  },
+  "availFilterBody": "No reviewed records match the selected filter. Clear the filter or search the whole database.",
+  "@availFilterBody": {
+    "description": "Empty state."
+  },
+  "availNotConnectedTitle": "Not available in this version",
+  "@availNotConnectedTitle": {
+    "description": "Empty state."
+  },
+  "availNotConnectedBody": "This feature needs an online service that is not connected in this version. All offline features keep working.",
+  "@availNotConnectedBody": {
+    "description": "Empty state."
+  },
+  "availServiceTitle": "Service temporarily unavailable",
+  "@availServiceTitle": {
+    "description": "Empty state."
+  },
+  "availServiceBody": "Check the connection and try again later. Offline features keep working.",
+  "@availServiceBody": {
+    "description": "Empty state."
+  },
+  "availClearFilters": "Clear filters",
+  "@availClearFilters": {
+    "description": "Action."
+  },
+  "availBrowseAll": "Browse all records",
+  "@availBrowseAll": {
+    "description": "Action."
+  },
+  "availSearch": "Search",
+  "@availSearch": {
+    "description": "Action."
+  },
+  "aiStatusPreview": "Preview · not connected",
+  "@aiStatusPreview": {
+    "description": "AI status chip."
+  },
+  "aiPreviewPoint1": "This screen is an interface preview.",
+  "@aiPreviewPoint1": {
+    "description": "AI preview bullet."
+  },
+  "aiPreviewPoint2": "The production AI service is not connected, so no AI answer is generated.",
+  "@aiPreviewPoint2": {
+    "description": "AI preview bullet."
+  },
+  "aiPreviewPoint3": "The sample answer below is a demonstration of the layout only.",
+  "@aiPreviewPoint3": {
+    "description": "AI preview bullet."
+  },
+  "aiPreviewPoint4": "“Find sources offline” searches the local database and works now.",
+  "@aiPreviewPoint4": {
+    "description": "AI preview bullet."
+  },
+  "aiSendUnavailable": "Sending is disabled until the AI service is connected.",
+  "@aiSendUnavailable": {
+    "description": "AI send note."
+  },
+  "concWarning": "This value comes from an individual case or study. It must not be interpreted as a universal toxic, lethal, therapeutic or legal threshold.",
+  "@concWarning": {
+    "description": "Critical warning on concentration values."
+  },
+  "concTitle": "Reported concentration",
+  "@concTitle": {
+    "description": "Card title."
+  },
+  "concSubstance": "Substance",
+  "@concSubstance": {
+    "description": "Row."
+  },
+  "concValue": "Value and unit",
+  "@concValue": {
+    "description": "Row."
+  },
+  "concValueInQuote": "As quoted in the source (see excerpt)",
+  "@concValueInQuote": {
+    "description": "Value."
+  },
+  "concLivingPostmortem": "Living / post-mortem",
+  "@concLivingPostmortem": {
+    "description": "Row."
+  },
+  "concSourceType": "Source type",
+  "@concSourceType": {
+    "description": "Row."
+  },
+  "concSectionCase": "Case description",
+  "@concSectionCase": {
+    "description": "Source section."
+  },
+  "concSectionAbstract": "Abstract",
+  "@concSectionAbstract": {
+    "description": "Source section."
+  },
+  "concSectionIntro": "Introduction (background)",
+  "@concSectionIntro": {
+    "description": "Source section."
+  },
+  "concSectionResults": "Results",
+  "@concSectionResults": {
+    "description": "Source section."
+  },
+  "concSectionDiscussion": "Discussion",
+  "@concSectionDiscussion": {
+    "description": "Source section."
+  },
+  "concStudyContext": "Case / study context",
+  "@concStudyContext": {
+    "description": "Row."
+  },
+  "concEvidenceLevel": "Evidence level",
+  "@concEvidenceLevel": {
+    "description": "Row."
+  },
+  "concReviewStatus": "Review status",
+  "@concReviewStatus": {
+    "description": "Row."
+  },
+  "concSource": "Source",
+  "@concSource": {
+    "description": "Row."
+  },
+  "concNotAvailable": "Not available",
+  "@concNotAvailable": {
+    "description": "Missing metadata."
+  },
+  "concExcerpt": "Source excerpt",
+  "@concExcerpt": {
+    "description": "Row."
+  },
+  "calcStatusTitle": "Status",
+  "@calcStatusTitle": {
+    "description": "Section."
+  },
+  "calcEngineLabel": "Calculation engine",
+  "@calcEngineLabel": {
+    "description": "Row."
+  },
+  "calcEngineTested": "Checked by automated software tests — this is not a scientific review",
+  "@calcEngineTested": {
+    "description": "Value."
+  },
+  "calcEngineChip": "Engine tested",
+  "@calcEngineChip": {
+    "description": "Tile chip."
+  },
+  "calcReferenceLabel": "Formula reference",
+  "@calcReferenceLabel": {
+    "description": "Row."
+  },
+  "calcInterpretationLabel": "Interpretation",
+  "@calcInterpretationLabel": {
+    "description": "Row."
+  },
+  "calcInterpretationValue": "Context dependent — requires professional judgement",
+  "@calcInterpretationValue": {
+    "description": "Value."
+  },
+  "statusRejected": "Rejected",
+  "@statusRejected": {
+    "description": "Review status."
+  },
+  "homeHeaderSubtitle": "Forensic science reference",
+  "@homeHeaderSubtitle": {
+    "description": "Home header subtitle."
   }
 }

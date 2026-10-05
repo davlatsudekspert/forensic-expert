@@ -691,9 +691,12 @@ class _ContentJurisdictionLayer extends ConsumerWidget {
 /// «Bepul demo» yoki «Lifetime» belgisi (ikonka + matn, faqat rangga
 /// tayanmaydi).
 class AccessBadge extends ConsumerWidget {
-  const AccessBadge({super.key, required this.access});
+  const AccessBadge({super.key, required this.access, this.compact = false});
 
   final EntryAccess access;
+
+  /// Ro‘yxat uchun ixcham ko‘rinish (kichik belgi va xira matn).
+  final bool compact;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -703,6 +706,38 @@ class AccessBadge extends ConsumerWidget {
       ProductFeature.substanceLibrary,
       ref.watch(accessProvider),
     );
+    if (compact) {
+      final free = access == EntryAccess.free;
+      final label = free ? l.freeDemoBadge : l.lockedBadge;
+      return Semantics(
+        label: label,
+        excludeSemantics: true,
+        child: Row(
+          key: Key(free ? 'badge.freeDemo' : 'badge.lifetime'),
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(
+              free
+                  ? Icons.lock_open_outlined
+                  : unlocked
+                  ? Icons.workspace_premium_outlined
+                  : Icons.lock_outline,
+              size: 13,
+              color: free ? c.accent : c.textSecondary,
+            ),
+            const SizedBox(width: 3),
+            Flexible(
+              child: Text(
+                label,
+                style: Theme.of(
+                  context,
+                ).textTheme.labelSmall?.copyWith(color: c.textSecondary),
+              ),
+            ),
+          ],
+        ),
+      );
+    }
     if (access == EntryAccess.free) {
       return StatusChip(
         key: const Key('badge.freeDemo'),

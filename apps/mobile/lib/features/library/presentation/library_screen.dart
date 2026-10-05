@@ -211,15 +211,42 @@ class _LibrarySectionScreenState extends ConsumerState<LibrarySectionScreen> {
                           icon: Icons.storage_outlined,
                           body: l.libraryNotInstalled,
                         ),
-                      _ => const InDevelopmentView(
-                        icon: Icons.local_library_outlined,
+                      _ => AvailabilityStateView(
+                        kind: AvailabilityKind.noReviewedData,
                         embedded: true,
+                        actions: [
+                          (
+                            label: l.availSearch,
+                            icon: Icons.search,
+                            onTap: () => context.go(Routes.search),
+                          ),
+                          (
+                            label: l.availBrowseAll,
+                            icon: Icons.local_library_outlined,
+                            onTap: () => setState(() {
+                              _section = LibrarySection.substances;
+                              _group = null;
+                            }),
+                          ),
+                        ],
                       ),
                     }
                   else if (entries.isEmpty)
-                    FeEmptyState(
-                      icon: Icons.filter_alt_off_outlined,
-                      body: l.libraryEmptyFiltered,
+                    AvailabilityStateView(
+                      kind: AvailabilityKind.filterEmpty,
+                      embedded: true,
+                      actions: [
+                        (
+                          label: l.availClearFilters,
+                          icon: Icons.filter_alt_off_outlined,
+                          onTap: () => setState(() => _group = null),
+                        ),
+                        (
+                          label: l.availSearch,
+                          icon: Icons.search,
+                          onTap: () => context.go(Routes.search),
+                        ),
+                      ],
                     )
                   else
                     for (final e in entries)
@@ -240,21 +267,42 @@ class _LibrarySectionScreenState extends ConsumerState<LibrarySectionScreen> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
+                                    // 1) nom (uzun nomlar o‘raladi),
+                                    // 2) guruh, 3) ixcham holat va kirish.
                                     Text(
                                       e.name.resolve(lang),
                                       style: Theme.of(context)
                                           .textTheme
                                           .titleSmall,
+                                      softWrap: true,
                                     ),
+                                    if (e.group case final g?) ...[
+                                      const SizedBox(height: 2),
+                                      Text(
+                                        l.substanceGroupName(g),
+                                        style: Theme.of(context)
+                                            .textTheme
+                                            .bodySmall
+                                            ?.copyWith(color: c.textSecondary),
+                                      ),
+                                    ],
                                     const SizedBox(height: FeSpace.xxs),
                                     Wrap(
-                                      spacing: FeSpace.xs,
+                                      spacing: FeSpace.sm,
                                       runSpacing: FeSpace.xxs,
+                                      crossAxisAlignment:
+                                          WrapCrossAlignment.center,
                                       children: [
-                                        ReviewStatusBadge(status: e.status),
+                                        ReviewStatusBadge(
+                                          status: e.status,
+                                          compact: true,
+                                        ),
                                         if (e.isTestData) const TestDataBadge(),
                                         if (e.details != null)
-                                          AccessBadge(access: e.access),
+                                          AccessBadge(
+                                            access: e.access,
+                                            compact: true,
+                                          ),
                                       ],
                                     ),
                                   ],

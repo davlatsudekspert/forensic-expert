@@ -139,25 +139,28 @@ class ProfileScreen extends ConsumerWidget {
                       style: t.bodyMedium?.copyWith(color: c.textSecondary),
                     ),
                     if (!authRepo.isConfigured) ...[
+                      // Akkaunt xizmati ulanmagan: ishlamaydigan kirish
+                      // tugmalari ko‘rsatilmaydi — faqat aniq izoh.
                       const SizedBox(height: FeSpace.xs),
                       FeBanner(
                         key: const Key('profile.accountNotConnected'),
                         icon: Icons.cloud_off_outlined,
                         text: l.accountNotConnected,
                       ),
+                    ] else ...[
+                      _Row(
+                        key: const Key('profile.signIn'),
+                        icon: Icons.login,
+                        title: l.accountSignIn,
+                        onTap: () => context.push(Routes.accountSignIn),
+                      ),
+                      _Row(
+                        key: const Key('profile.register'),
+                        icon: Icons.person_add_alt,
+                        title: l.accountCreate,
+                        onTap: () => context.push(Routes.accountRegister),
+                      ),
                     ],
-                    _Row(
-                      key: const Key('profile.signIn'),
-                      icon: Icons.login,
-                      title: l.accountSignIn,
-                      onTap: () => context.push(Routes.accountSignIn),
-                    ),
-                    _Row(
-                      key: const Key('profile.register'),
-                      icon: Icons.person_add_alt,
-                      title: l.accountCreate,
-                      onTap: () => context.push(Routes.accountRegister),
-                    ),
                   ] else ...[
                     _Row(
                       key: const Key('profile.accountEmail'),

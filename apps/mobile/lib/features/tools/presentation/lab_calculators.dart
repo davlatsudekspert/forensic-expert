@@ -1,12 +1,11 @@
 import 'package:fe_calc_engine/fe_calc_engine.dart';
-import 'package:fe_content_schema/fe_content_schema.dart' show ScientificStatus;
 import 'package:flutter/material.dart';
 
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
-import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
+import 'calculator_status.dart';
 
 /// PHASE 6 laboratoriya kalkulyatorlari. Har biri bir xil tuzilma:
 /// INPUT → FORMULA → RESULT → ASSUMPTIONS → LIMITATIONS → REFERENCES.
@@ -132,18 +131,9 @@ class CalcScaffold extends StatelessWidget {
           ),
         ),
         FeSectionHeader(l.calcMethod),
-        Wrap(
-          spacing: FeSpace.sm,
-          runSpacing: FeSpace.xxs,
-          crossAxisAlignment: WrapCrossAlignment.center,
-          children: [
-            const ReviewStatusBadge(status: ScientificStatus.needsReview),
-            Text(
-              '${descriptor.id} · v${descriptor.engineVersion}',
-              style: FeThemeBuilder.numeric(t.bodySmall!)
-                  .copyWith(color: c.textSecondary),
-            ),
-          ],
+        CalculatorStatusPanel(
+          engineId: descriptor.id,
+          engineVersion: descriptor.engineVersion,
         ),
         FeSectionHeader(l.calcFormula),
         Text(formula, style: FeThemeBuilder.numeric(t.titleMedium!)),

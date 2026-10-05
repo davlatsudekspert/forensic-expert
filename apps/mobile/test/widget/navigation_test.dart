@@ -57,7 +57,7 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.byKey(const Key('home.module.toxicology')));
     await tester.pumpAndSettle();
-    expect(find.byType(InDevelopmentView), findsOneWidget);
+    expect(find.byType(AvailabilityStateView), findsOneWidget);
   });
 
   testWidgets('tab almashganda stack holati saqlanadi', (tester) async {
@@ -66,7 +66,7 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.byKey(const Key('home.module.laboratory')));
     await tester.pumpAndSettle();
-    expect(find.byType(InDevelopmentView), findsOneWidget);
+    expect(find.byType(AvailabilityStateView), findsOneWidget);
     await tester.ensureVisible(find.byKey(const Key('nav.tools')));
     await tester.pumpAndSettle();
     await tester.tap(find.byKey(const Key('nav.tools')));
@@ -77,7 +77,7 @@ void main() {
     await tester.pumpAndSettle();
     // Home tabida laboratoriya sahifasi hali ochiq.
     expect(find.text('Laboratory'), findsWidgets);
-    expect(find.byType(InDevelopmentView), findsOneWidget);
+    expect(find.byType(AvailabilityStateView), findsOneWidget);
   });
 
   testWidgets('Profil: til va tema o‘zgaradi va saqlanadi', (tester) async {
@@ -135,7 +135,7 @@ void main() {
     await tester.tap(find.byKey(const Key('nav.ai')));
     await tester.pumpAndSettle();
     expect(find.byKey(const Key('ai.piiWarning')), findsOneWidget);
-    expect(find.text('Forensic AI is not connected yet'), findsOneWidget);
+    expect(find.text('Production AI service is not connected'), findsOneWidget);
   });
 
   testWidgets('rejimga qarab Home modullari tartibi', (tester) async {

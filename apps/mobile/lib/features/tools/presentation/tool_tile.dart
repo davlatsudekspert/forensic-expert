@@ -80,13 +80,17 @@ class ToolTile extends ConsumerWidget {
                             color: c.textSecondary,
                           ),
                         if (tool.isAvailable) ...[
+                          // Hisoblash moduli dasturiy testlangan; formula
+                          // manbasi alohida ilmiy holatga ega.
                           StatusChip(
-                            icon: Icons.check_circle_outline,
-                            label: l.toolStatusAvailable,
+                            key: Key('tool.engineTested.${tool.id}'),
+                            icon: Icons.memory_outlined,
+                            label: l.calcEngineChip,
                             color: c.accent,
                           ),
                           const ReviewStatusBadge(
                             status: ScientificStatus.needsReview,
+                            compact: true,
                           ),
                         ] else
                           StatusChip(

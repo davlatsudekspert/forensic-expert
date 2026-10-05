@@ -127,11 +127,11 @@ class AppLocalizationsRu extends AppLocalizations {
   String get homeModulesHeading => 'Модули';
 
   @override
-  String get inDevelopmentTitle => 'В разработке';
+  String get inDevelopmentTitle => 'Нет проверенного содержания';
 
   @override
   String get inDevelopmentBody =>
-      'Этот раздел появится на одном из следующих этапов разработки. Научный контент не показывается, пока не пройдёт экспертную проверку.';
+      'Содержание появляется здесь только при наличии проверяемого источника и после экспертной проверки. Экран не заполняется данными ради внешнего вида.';
 
   @override
   String get unverifiedBanner =>
@@ -150,7 +150,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get statusOutdated => 'Устарело';
 
   @override
-  String get aiNotConnectedTitle => 'Forensic AI пока не подключён';
+  String get aiNotConnectedTitle => 'Рабочий ИИ-сервис не подключён';
 
   @override
   String get aiNotConnectedBody =>
@@ -250,10 +250,10 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get homePrototypeNotice =>
-      'Прототип: записи с пометкой TEST DATA — заглушки, а не научный контент.';
+      'Демонстрационная сборка: записи с пометкой ОБРАЗЕЦ носят иллюстративный характер и не являются научным содержанием.';
 
   @override
-  String get testDataBadge => 'TEST DATA';
+  String get testDataBadge => 'ОБРАЗЕЦ';
 
   @override
   String get seeAll => 'Все';
@@ -500,7 +500,8 @@ class AppLocalizationsRu extends AppLocalizations {
   String get detailNotReviewed => 'Не проверено';
 
   @override
-  String get detailPlaceholder => 'Заглушка — научного контента пока нет.';
+  String get detailPlaceholder =>
+      'Проверенные научные сведения для этой записи пока отсутствуют.';
 
   @override
   String get detailConcentrationsNote =>
@@ -510,7 +511,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get sourcesButton => 'Источники';
 
   @override
-  String get sourcesNone => 'Источников нет — это тестовые данные.';
+  String get sourcesNone => 'К этой записи не привязаны источники.';
 
   @override
   String get searchGroupTools => 'Инструменты';
@@ -541,7 +542,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get searchExternalBody =>
-      'Поиск в PubMed, PubChem и Crossref появится в одной из следующих версий. Внешние результаты никогда не смешиваются с проверенными внутренними данными.';
+      'Внешние базы (PubMed, PubChem, Crossref) в этой версии не подключены. Внешние результаты никогда не смешиваются с проверенной внутренней базой.';
 
   @override
   String get searchTypeToStart => 'Введите не менее двух символов.';
@@ -585,11 +586,11 @@ class AppLocalizationsRu extends AppLocalizations {
   String get piiKindAddress => 'адрес';
 
   @override
-  String get aiPreviewTitle => 'Формат ответа (предпросмотр)';
+  String get aiPreviewTitle => 'Структура ответа (демонстрация)';
 
   @override
   String get aiPreviewNotice =>
-      'Прототип интерфейса. Ниже — текст-заглушка: это не ответ ИИ и не научный контент.';
+      'ДЕМОНСТРАЦИЯ — это не ответ ИИ и не научная рекомендация. Показано лишь, как будет устроен ответ после подключения.';
 
   @override
   String get aiSectionAvailable => 'Имеющиеся данные';
@@ -602,15 +603,15 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get aiSampleInternal =>
-      'Утверждение-заглушка, подтверждённое проверенным внутренним источником.';
+      'Пример утверждения со ссылкой на проверенный внутренний источник.';
 
   @override
   String get aiSampleExternal =>
-      'Утверждение-заглушка из внешнего источника, который не проверялся.';
+      'Пример утверждения из внешнего источника, не прошедшего проверку.';
 
   @override
   String get aiSampleLimitation =>
-      'Ограничение-заглушка — окончательная интерпретация требует полного контекста случая.';
+      'Пример ограничения — окончательная интерпретация требует полного контекста случая.';
 
   @override
   String get aiEvidenceInternalVerified => 'Внутренний · подтверждено';
@@ -623,7 +624,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String aiPlaceholderSource(int number) {
-    return 'Источник-заглушка $number';
+    return 'Пример источника $number';
   }
 
   @override
@@ -850,7 +851,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get homePilotNotice =>
-      'Пилотная научная база: все записи ожидают экспертной проверки. Сведения приводятся с источниками и не являются окончательным заключением.';
+      'Научная база проходит экспертную проверку. Каждая запись показана с источниками и статусом проверки и не является окончательным выводом.';
 
   @override
   String get detailIdentity => 'Идентификаторы';
@@ -1057,7 +1058,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String homeDbPack(String version) {
-    return 'Пакет контента $version';
+    return 'Пакет научных данных $version';
   }
 
   @override
@@ -2272,7 +2273,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get disciplinesIntro =>
-      'Архитектура платформы охватывает эти дисциплины. Контент добавляется постепенно и только с источниками и экспертной проверкой — пустая дисциплина означает «ещё нет источников», а не «знаний нет».';
+      'FORENSIC EXPERT охватывает эти дисциплины. Содержание добавляется постепенно и только с источниками и экспертной проверкой — пустая дисциплина означает «пока нет материалов с источниками», а не «знаний нет».';
 
   @override
   String disciplineRecords(int count) {
@@ -2327,7 +2328,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get jurisdictionViewDetails => 'Правовой и процессуальный слой';
 
   @override
-  String get jurisdictionWithContent => 'Юрисдикции с пилотным контентом';
+  String get jurisdictionWithContent => 'Юрисдикции с правовыми записями';
 
   @override
   String get jurisdictionSearchHint => 'Поиск страны или кода ISO';
@@ -2337,7 +2338,8 @@ class AppLocalizationsRu extends AppLocalizations {
       'Контент для этой юрисдикции ещё не проверен. Законы других стран никогда не показываются вместо него.';
 
   @override
-  String get jurisdictionPilotContent => 'Пилотный контент — требует проверки';
+  String get jurisdictionPilotContent =>
+      'Правовые записи · на юридической проверке';
 
   @override
   String get jurisdictionNoContentShort => 'Контент ещё не проверен';
@@ -2997,7 +2999,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get ctxAutoMinimal =>
-      'Контекст этой записи ещё не проверен; показан только образец.';
+      'Проверенные контекстные данные для этой записи пока отсутствуют.';
 
   @override
   String get metRelationsTitle => 'Метаболиты (связи с источниками)';
@@ -3267,7 +3269,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get aiLimMock =>
-      'Сгенерировано ТЕСТОВЫМ провайдером — не рабочий ИИ-сервис.';
+      'Демонстрационный провайдер — реальный ответ ИИ не сформирован.';
 
   @override
   String get instrOriginalTitle => 'Оригинальное название';
@@ -3711,4 +3713,147 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get subscriptionSection => 'Подписка';
+
+  @override
+  String get availNoDataTitle => 'Записей пока нет';
+
+  @override
+  String get availNoDataBody =>
+      'В установленной научной базе для этого раздела записей нет.';
+
+  @override
+  String get availFilterTitle => 'По выбранному фильтру ничего не найдено';
+
+  @override
+  String get availFilterBody =>
+      'Нет проверенных записей, соответствующих фильтру. Сбросьте фильтр или выполните поиск по всей базе.';
+
+  @override
+  String get availNotConnectedTitle => 'Недоступно в этой версии';
+
+  @override
+  String get availNotConnectedBody =>
+      'Для этой функции нужен онлайн-сервис, который в этой версии не подключён. Все офлайн-функции продолжают работать.';
+
+  @override
+  String get availServiceTitle => 'Сервис временно недоступен';
+
+  @override
+  String get availServiceBody =>
+      'Проверьте подключение и повторите позже. Офлайн-функции продолжают работать.';
+
+  @override
+  String get availClearFilters => 'Сбросить фильтры';
+
+  @override
+  String get availBrowseAll => 'Все записи';
+
+  @override
+  String get availSearch => 'Поиск';
+
+  @override
+  String get aiStatusPreview => 'Предпросмотр · не подключён';
+
+  @override
+  String get aiPreviewPoint1 => 'Этот экран — предпросмотр интерфейса.';
+
+  @override
+  String get aiPreviewPoint2 =>
+      'Рабочий ИИ-сервис не подключён, поэтому ответ ИИ не формируется.';
+
+  @override
+  String get aiPreviewPoint3 =>
+      'Пример ответа ниже — только демонстрация структуры.';
+
+  @override
+  String get aiPreviewPoint4 =>
+      '«Найти источники офлайн» ищет в локальной базе и работает уже сейчас.';
+
+  @override
+  String get aiSendUnavailable =>
+      'Отправка недоступна, пока ИИ-сервис не подключён.';
+
+  @override
+  String get concWarning =>
+      'Это значение получено из отдельного случая или исследования. Его нельзя трактовать как универсальный токсический, смертельный, терапевтический или правовой порог.';
+
+  @override
+  String get concTitle => 'Сообщаемая концентрация';
+
+  @override
+  String get concSubstance => 'Вещество';
+
+  @override
+  String get concValue => 'Значение и единица';
+
+  @override
+  String get concValueInQuote => 'Как приведено в источнике (см. цитату)';
+
+  @override
+  String get concLivingPostmortem => 'Прижизненно / посмертно';
+
+  @override
+  String get concSourceType => 'Тип источника';
+
+  @override
+  String get concSectionCase => 'Описание случая';
+
+  @override
+  String get concSectionAbstract => 'Аннотация';
+
+  @override
+  String get concSectionIntro => 'Введение (обзор)';
+
+  @override
+  String get concSectionResults => 'Результаты';
+
+  @override
+  String get concSectionDiscussion => 'Обсуждение';
+
+  @override
+  String get concStudyContext => 'Контекст случая / исследования';
+
+  @override
+  String get concEvidenceLevel => 'Уровень доказательности';
+
+  @override
+  String get concReviewStatus => 'Статус проверки';
+
+  @override
+  String get concSource => 'Источник';
+
+  @override
+  String get concNotAvailable => 'Нет данных';
+
+  @override
+  String get concExcerpt => 'Цитата из источника';
+
+  @override
+  String get calcStatusTitle => 'Статус';
+
+  @override
+  String get calcEngineLabel => 'Расчётный модуль';
+
+  @override
+  String get calcEngineTested =>
+      'Проверен автоматическими программными тестами — это не научная экспертиза';
+
+  @override
+  String get calcEngineChip => 'Модуль протестирован';
+
+  @override
+  String get calcReferenceLabel => 'Источник формулы';
+
+  @override
+  String get calcInterpretationLabel => 'Интерпретация';
+
+  @override
+  String get calcInterpretationValue =>
+      'Зависит от контекста — требует профессиональной оценки';
+
+  @override
+  String get statusRejected => 'Отклонено';
+
+  @override
+  String get homeHeaderSubtitle => 'Справочник судебной экспертизы';
 }

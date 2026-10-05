@@ -45,7 +45,7 @@ class KnowledgeTile extends StatelessWidget {
                     spacing: FeSpace.xs,
                     runSpacing: FeSpace.xxs,
                     children: [
-                      ReviewStatusBadge(status: entry.status),
+                      ReviewStatusBadge(status: entry.status, compact: true),
                       AccessBadge(access: entry.access),
                       if (entry.isTestData) const TestDataBadge(),
                     ],

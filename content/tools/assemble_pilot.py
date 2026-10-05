@@ -30,9 +30,9 @@ _sys.path.insert(0, "tools/p8")
 import assemble_p8  # noqa: E402
 
 FREE_DEMO = ["ethanol", "methanol", "carbon-monoxide"]  # 3 ta yozuv
-PACK_VERSION = "2026.10.6"
+PACK_VERSION = "2026.10.7"
 # Komponent versiyalari (ilova versiyasidan alohida).
-COMPONENT_VERSIONS = {"scientific": "2026.10.6", "jurisdiction": "2026.10.5",
+COMPONENT_VERSIONS = {"scientific": "2026.10.7", "jurisdiction": "2026.10.5",
                       "research": "2026.10.3"}
 
 

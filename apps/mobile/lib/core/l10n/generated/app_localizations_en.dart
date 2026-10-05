@@ -128,11 +128,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get homeModulesHeading => 'Modules';
 
   @override
-  String get inDevelopmentTitle => 'In development';
+  String get inDevelopmentTitle => 'No reviewed content to show';
 
   @override
   String get inDevelopmentBody =>
-      'This section will be available in a later development phase. No scientific content is shown until it has passed expert review.';
+      'Content appears here only when it has a verifiable source and has passed expert review. Nothing is filled in just to make the screen look complete.';
 
   @override
   String get unverifiedBanner =>
@@ -151,7 +151,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get statusOutdated => 'Outdated';
 
   @override
-  String get aiNotConnectedTitle => 'Forensic AI is not connected yet';
+  String get aiNotConnectedTitle => 'Production AI service is not connected';
 
   @override
   String get aiNotConnectedBody =>
@@ -251,10 +251,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get homePrototypeNotice =>
-      'Prototype build: entries marked TEST DATA are placeholders, not scientific content.';
+      'Demonstration build: entries marked SAMPLE are illustrative and are not scientific content.';
 
   @override
-  String get testDataBadge => 'TEST DATA';
+  String get testDataBadge => 'SAMPLE';
 
   @override
   String get seeAll => 'See all';
@@ -501,7 +501,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get detailNotReviewed => 'Not reviewed';
 
   @override
-  String get detailPlaceholder => 'Placeholder — no scientific content yet.';
+  String get detailPlaceholder =>
+      'No reviewed scientific details are available for this entry yet.';
 
   @override
   String get detailConcentrationsNote =>
@@ -511,7 +512,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get sourcesButton => 'Sources';
 
   @override
-  String get sourcesNone => 'No sources — this entry is test data.';
+  String get sourcesNone => 'No sources are linked to this entry.';
 
   @override
   String get searchGroupTools => 'Tools';
@@ -542,7 +543,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get searchExternalBody =>
-      'PubMed, PubChem and Crossref search will be added in a later version. External results are never mixed with reviewed internal data.';
+      'External databases (PubMed, PubChem, Crossref) are not connected in this version. External results are never mixed with the reviewed internal database.';
 
   @override
   String get searchTypeToStart => 'Type at least two characters.';
@@ -586,11 +587,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get piiKindAddress => 'address';
 
   @override
-  String get aiPreviewTitle => 'Answer layout preview';
+  String get aiPreviewTitle => 'Answer layout (demonstration)';
 
   @override
   String get aiPreviewNotice =>
-      'UI prototype. The sample below is placeholder text — not AI output and not scientific content.';
+      'DEMONSTRATION — this is not an AI response and not scientific advice. It only shows how a connected answer will be structured.';
 
   @override
   String get aiSectionAvailable => 'Available information';
@@ -603,15 +604,15 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get aiSampleInternal =>
-      'Placeholder statement supported by a reviewed internal source.';
+      'Example statement linked to a reviewed internal source.';
 
   @override
   String get aiSampleExternal =>
-      'Placeholder statement from an external source that has not been reviewed.';
+      'Example statement from an external source that has not been reviewed.';
 
   @override
   String get aiSampleLimitation =>
-      'Placeholder limitation — a final interpretation requires the full case context.';
+      'Example limitation — a final interpretation requires the full case context.';
 
   @override
   String get aiEvidenceInternalVerified => 'Internal · verified';
@@ -624,7 +625,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String aiPlaceholderSource(int number) {
-    return 'Placeholder source $number';
+    return 'Example source $number';
   }
 
   @override
@@ -850,7 +851,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get homePilotNotice =>
-      'Pilot scientific database: every entry is awaiting expert review. Information is shown with its sources and is not a final conclusion.';
+      'The scientific database is under expert review. Every entry is shown with its sources and review status and is not a final conclusion.';
 
   @override
   String get detailIdentity => 'Identifiers';
@@ -2273,7 +2274,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get disciplinesIntro =>
-      'The platform architecture covers these disciplines. Content is added gradually and only with sources and expert review — an empty discipline means “not yet sourced”, not “no knowledge exists”.';
+      'FORENSIC EXPERT covers these disciplines. Content is added gradually and only with sources and expert review — an empty discipline means “no sourced content yet”, not “no knowledge exists”.';
 
   @override
   String disciplineRecords(int count) {
@@ -2325,7 +2326,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get jurisdictionViewDetails => 'Legal & procedural layer';
 
   @override
-  String get jurisdictionWithContent => 'Jurisdictions with pilot content';
+  String get jurisdictionWithContent => 'Jurisdictions with legal records';
 
   @override
   String get jurisdictionSearchHint => 'Search country or ISO code';
@@ -2335,7 +2336,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Content not yet verified for this jurisdiction. Laws of other countries are never shown as a substitute.';
 
   @override
-  String get jurisdictionPilotContent => 'Pilot content — needs review';
+  String get jurisdictionPilotContent => 'Legal records · under legal review';
 
   @override
   String get jurisdictionNoContentShort => 'Content not yet verified';
@@ -2992,7 +2993,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get ctxAutoMinimal =>
-      'Context for this record has not been curated yet; only the specimen is shown.';
+      'Reviewed contextual data for this record is not yet available.';
 
   @override
   String get metRelationsTitle => 'Metabolites (sourced relations)';
@@ -3259,7 +3260,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get aiLimMock =>
-      'Generated by a TEST provider — not a production AI service.';
+      'Demonstration provider — no real AI answer was generated.';
 
   @override
   String get instrOriginalTitle => 'Original title';
@@ -3706,4 +3707,147 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get subscriptionSection => 'Subscription';
+
+  @override
+  String get availNoDataTitle => 'No records yet';
+
+  @override
+  String get availNoDataBody =>
+      'The installed scientific database has no records for this section.';
+
+  @override
+  String get availFilterTitle => 'No results for the selected filter';
+
+  @override
+  String get availFilterBody =>
+      'No reviewed records match the selected filter. Clear the filter or search the whole database.';
+
+  @override
+  String get availNotConnectedTitle => 'Not available in this version';
+
+  @override
+  String get availNotConnectedBody =>
+      'This feature needs an online service that is not connected in this version. All offline features keep working.';
+
+  @override
+  String get availServiceTitle => 'Service temporarily unavailable';
+
+  @override
+  String get availServiceBody =>
+      'Check the connection and try again later. Offline features keep working.';
+
+  @override
+  String get availClearFilters => 'Clear filters';
+
+  @override
+  String get availBrowseAll => 'Browse all records';
+
+  @override
+  String get availSearch => 'Search';
+
+  @override
+  String get aiStatusPreview => 'Preview · not connected';
+
+  @override
+  String get aiPreviewPoint1 => 'This screen is an interface preview.';
+
+  @override
+  String get aiPreviewPoint2 =>
+      'The production AI service is not connected, so no AI answer is generated.';
+
+  @override
+  String get aiPreviewPoint3 =>
+      'The sample answer below is a demonstration of the layout only.';
+
+  @override
+  String get aiPreviewPoint4 =>
+      '“Find sources offline” searches the local database and works now.';
+
+  @override
+  String get aiSendUnavailable =>
+      'Sending is disabled until the AI service is connected.';
+
+  @override
+  String get concWarning =>
+      'This value comes from an individual case or study. It must not be interpreted as a universal toxic, lethal, therapeutic or legal threshold.';
+
+  @override
+  String get concTitle => 'Reported concentration';
+
+  @override
+  String get concSubstance => 'Substance';
+
+  @override
+  String get concValue => 'Value and unit';
+
+  @override
+  String get concValueInQuote => 'As quoted in the source (see excerpt)';
+
+  @override
+  String get concLivingPostmortem => 'Living / post-mortem';
+
+  @override
+  String get concSourceType => 'Source type';
+
+  @override
+  String get concSectionCase => 'Case description';
+
+  @override
+  String get concSectionAbstract => 'Abstract';
+
+  @override
+  String get concSectionIntro => 'Introduction (background)';
+
+  @override
+  String get concSectionResults => 'Results';
+
+  @override
+  String get concSectionDiscussion => 'Discussion';
+
+  @override
+  String get concStudyContext => 'Case / study context';
+
+  @override
+  String get concEvidenceLevel => 'Evidence level';
+
+  @override
+  String get concReviewStatus => 'Review status';
+
+  @override
+  String get concSource => 'Source';
+
+  @override
+  String get concNotAvailable => 'Not available';
+
+  @override
+  String get concExcerpt => 'Source excerpt';
+
+  @override
+  String get calcStatusTitle => 'Status';
+
+  @override
+  String get calcEngineLabel => 'Calculation engine';
+
+  @override
+  String get calcEngineTested =>
+      'Checked by automated software tests — this is not a scientific review';
+
+  @override
+  String get calcEngineChip => 'Engine tested';
+
+  @override
+  String get calcReferenceLabel => 'Formula reference';
+
+  @override
+  String get calcInterpretationLabel => 'Interpretation';
+
+  @override
+  String get calcInterpretationValue =>
+      'Context dependent — requires professional judgement';
+
+  @override
+  String get statusRejected => 'Rejected';
+
+  @override
+  String get homeHeaderSubtitle => 'Forensic science reference';
 }

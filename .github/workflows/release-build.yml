@@ -69,9 +69,15 @@ jobs:
           if [ "$HAS_ANDROID_SIGNING" = "true" ]; then SIGN=release-signed; else SIGN=DEBUG-SIGNED-not-for-store; fi
           echo "SIGNING_STATUS=$SIGN" >> "$GITHUB_ENV"
           mkdir -p "$RUNNER_TEMP/out"
+          if [ "$HAS_ANDROID_SIGNING" = "true" ]; then
+            APK_NAME="forensic-expert-$SIGN.apk"
+          else
+            # Faqat real qurilmada sinash uchun (debug imzo, store’ga emas).
+            APK_NAME="forensic-expert-REAL-DEVICE-TEST-DEBUG.apk"
+          fi
           cp build/app/outputs/bundle/release/app-release.aab "$RUNNER_TEMP/out/forensic-expert-$SIGN.aab"
-          cp build/app/outputs/flutter-apk/app-release.apk "$RUNNER_TEMP/out/forensic-expert-$SIGN.apk"
-          (cd "$RUNNER_TEMP/out" && sha256sum * | tee SHA256SUMS.txt && ls -l)
+          cp build/app/outputs/flutter-apk/app-release.apk "$RUNNER_TEMP/out/$APK_NAME"
+          (cd "$RUNNER_TEMP/out" && sha256sum *.apk *.aab > SHA256SUMS.txt && cat SHA256SUMS.txt && ls -l)
           keytool -printcert -jarfile build/app/outputs/flutter-apk/app-release.apk | head -5 || true
       - uses: actions/upload-artifact@v4
         with:

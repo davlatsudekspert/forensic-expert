@@ -316,16 +316,16 @@ abstract class AppLocalizations {
   /// **'Modules'**
   String get homeModulesHeading;
 
-  /// Placeholder title for sections not built yet.
+  /// Empty state title.
   ///
   /// In en, this message translates to:
-  /// **'In development'**
+  /// **'No reviewed content to show'**
   String get inDevelopmentTitle;
 
-  /// Placeholder body.
+  /// Empty state body.
   ///
   /// In en, this message translates to:
-  /// **'This section will be available in a later development phase. No scientific content is shown until it has passed expert review.'**
+  /// **'Content appears here only when it has a verifiable source and has passed expert review. Nothing is filled in just to make the screen look complete.'**
   String get inDevelopmentBody;
 
   /// Mandatory banner for content that is not reviewed.
@@ -358,10 +358,10 @@ abstract class AppLocalizations {
   /// **'Outdated'**
   String get statusOutdated;
 
-  /// AI tab title in PHASE 1.
+  /// AI state title.
   ///
   /// In en, this message translates to:
-  /// **'Forensic AI is not connected yet'**
+  /// **'Production AI service is not connected'**
   String get aiNotConnectedTitle;
 
   /// AI tab body.
@@ -538,16 +538,16 @@ abstract class AppLocalizations {
   /// **'Courses, quizzes, flashcards and case studies.'**
   String get homeStudyHubBody;
 
-  /// Honest notice in prototype builds.
+  /// Demo-build notice.
   ///
   /// In en, this message translates to:
-  /// **'Prototype build: entries marked TEST DATA are placeholders, not scientific content.'**
+  /// **'Demonstration build: entries marked SAMPLE are illustrative and are not scientific content.'**
   String get homePrototypeNotice;
 
-  /// Badge for fixture data. Kept in English as a technical marker.
+  /// Badge for illustrative sample entries.
   ///
   /// In en, this message translates to:
-  /// **'TEST DATA'**
+  /// **'SAMPLE'**
   String get testDataBadge;
 
   /// Link to full list.
@@ -1000,10 +1000,10 @@ abstract class AppLocalizations {
   /// **'Not reviewed'**
   String get detailNotReviewed;
 
-  /// Placeholder section body.
+  /// Entry without reviewed details.
   ///
   /// In en, this message translates to:
-  /// **'Placeholder — no scientific content yet.'**
+  /// **'No reviewed scientific details are available for this entry yet.'**
   String get detailPlaceholder;
 
   /// Mandatory interpretation note.
@@ -1018,10 +1018,10 @@ abstract class AppLocalizations {
   /// **'Sources'**
   String get sourcesButton;
 
-  /// Sources sheet empty state.
+  /// No sources.
   ///
   /// In en, this message translates to:
-  /// **'No sources — this entry is test data.'**
+  /// **'No sources are linked to this entry.'**
   String get sourcesNone;
 
   /// Search result group.
@@ -1072,10 +1072,10 @@ abstract class AppLocalizations {
   /// **'Scientific databases (online)'**
   String get searchExternalTitle;
 
-  /// External search placeholder.
+  /// External search note.
   ///
   /// In en, this message translates to:
-  /// **'PubMed, PubChem and Crossref search will be added in a later version. External results are never mixed with reviewed internal data.'**
+  /// **'External databases (PubMed, PubChem, Crossref) are not connected in this version. External results are never mixed with the reviewed internal database.'**
   String get searchExternalBody;
 
   /// Hint before typing.
@@ -1150,16 +1150,16 @@ abstract class AppLocalizations {
   /// **'address'**
   String get piiKindAddress;
 
-  /// Answer layout preview heading.
+  /// Section.
   ///
   /// In en, this message translates to:
-  /// **'Answer layout preview'**
+  /// **'Answer layout (demonstration)'**
   String get aiPreviewTitle;
 
-  /// Prototype notice.
+  /// Demo notice.
   ///
   /// In en, this message translates to:
-  /// **'UI prototype. The sample below is placeholder text — not AI output and not scientific content.'**
+  /// **'DEMONSTRATION — this is not an AI response and not scientific advice. It only shows how a connected answer will be structured.'**
   String get aiPreviewNotice;
 
   /// AI answer section.
@@ -1180,22 +1180,22 @@ abstract class AppLocalizations {
   /// **'Limitations of interpretation'**
   String get aiSectionLimitations;
 
-  /// Placeholder sentence.
+  /// Demo statement.
   ///
   /// In en, this message translates to:
-  /// **'Placeholder statement supported by a reviewed internal source.'**
+  /// **'Example statement linked to a reviewed internal source.'**
   String get aiSampleInternal;
 
-  /// Placeholder sentence.
+  /// Demo statement.
   ///
   /// In en, this message translates to:
-  /// **'Placeholder statement from an external source that has not been reviewed.'**
+  /// **'Example statement from an external source that has not been reviewed.'**
   String get aiSampleExternal;
 
-  /// Placeholder sentence.
+  /// Demo statement.
   ///
   /// In en, this message translates to:
-  /// **'Placeholder limitation — a final interpretation requires the full case context.'**
+  /// **'Example limitation — a final interpretation requires the full case context.'**
   String get aiSampleLimitation;
 
   /// Evidence tier label.
@@ -1216,10 +1216,10 @@ abstract class AppLocalizations {
   /// **'External · not reviewed'**
   String get aiEvidenceExternal;
 
-  /// Placeholder source title.
+  /// Demo source.
   ///
   /// In en, this message translates to:
-  /// **'Placeholder source {number}'**
+  /// **'Example source {number}'**
   String aiPlaceholderSource(int number);
 
   /// Screen reader label for a citation marker.
@@ -1606,10 +1606,10 @@ abstract class AppLocalizations {
   /// **'Free'**
   String get accessFree;
 
-  /// Home notice while the content pack is the unreviewed pilot.
+  /// Home review notice.
   ///
   /// In en, this message translates to:
-  /// **'Pilot scientific database: every entry is awaiting expert review. Information is shown with its sources and is not a final conclusion.'**
+  /// **'The scientific database is under expert review. Every entry is shown with its sources and review status and is not a final conclusion.'**
   String get homePilotNotice;
 
   /// Detail section.
@@ -4192,10 +4192,10 @@ abstract class AppLocalizations {
   /// **'Forensic disciplines'**
   String get disciplinesTitle;
 
-  /// Screen intro.
+  /// Disciplines intro.
   ///
   /// In en, this message translates to:
-  /// **'The platform architecture covers these disciplines. Content is added gradually and only with sources and expert review — an empty discipline means “not yet sourced”, not “no knowledge exists”.'**
+  /// **'FORENSIC EXPERT covers these disciplines. Content is added gradually and only with sources and expert review — an empty discipline means “no sourced content yet”, not “no knowledge exists”.'**
   String get disciplinesIntro;
 
   /// Discipline record count.
@@ -4270,10 +4270,10 @@ abstract class AppLocalizations {
   /// **'Legal & procedural layer'**
   String get jurisdictionViewDetails;
 
-  /// Section header.
+  /// Section.
   ///
   /// In en, this message translates to:
-  /// **'Jurisdictions with pilot content'**
+  /// **'Jurisdictions with legal records'**
   String get jurisdictionWithContent;
 
   /// Search hint.
@@ -4288,10 +4288,10 @@ abstract class AppLocalizations {
   /// **'Content not yet verified for this jurisdiction. Laws of other countries are never shown as a substitute.'**
   String get jurisdictionNotVerified;
 
-  /// Coverage label.
+  /// Status.
   ///
   /// In en, this message translates to:
-  /// **'Pilot content — needs review'**
+  /// **'Legal records · under legal review'**
   String get jurisdictionPilotContent;
 
   /// Coverage label.
@@ -5506,10 +5506,10 @@ abstract class AppLocalizations {
   /// **'Not yet assessed'**
   String get ctxNotAssessed;
 
-  /// Note.
+  /// Concentration context not curated.
   ///
   /// In en, this message translates to:
-  /// **'Context for this record has not been curated yet; only the specimen is shown.'**
+  /// **'Reviewed contextual data for this record is not yet available.'**
   String get ctxAutoMinimal;
 
   /// Section.
@@ -5989,7 +5989,7 @@ abstract class AppLocalizations {
   /// Limitation.
   ///
   /// In en, this message translates to:
-  /// **'Generated by a TEST provider — not a production AI service.'**
+  /// **'Demonstration provider — no real AI answer was generated.'**
   String get aiLimMock;
 
   /// Instrument field.
@@ -6789,6 +6789,270 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Subscription'**
   String get subscriptionSection;
+
+  /// Empty state.
+  ///
+  /// In en, this message translates to:
+  /// **'No records yet'**
+  String get availNoDataTitle;
+
+  /// Empty state.
+  ///
+  /// In en, this message translates to:
+  /// **'The installed scientific database has no records for this section.'**
+  String get availNoDataBody;
+
+  /// Empty state.
+  ///
+  /// In en, this message translates to:
+  /// **'No results for the selected filter'**
+  String get availFilterTitle;
+
+  /// Empty state.
+  ///
+  /// In en, this message translates to:
+  /// **'No reviewed records match the selected filter. Clear the filter or search the whole database.'**
+  String get availFilterBody;
+
+  /// Empty state.
+  ///
+  /// In en, this message translates to:
+  /// **'Not available in this version'**
+  String get availNotConnectedTitle;
+
+  /// Empty state.
+  ///
+  /// In en, this message translates to:
+  /// **'This feature needs an online service that is not connected in this version. All offline features keep working.'**
+  String get availNotConnectedBody;
+
+  /// Empty state.
+  ///
+  /// In en, this message translates to:
+  /// **'Service temporarily unavailable'**
+  String get availServiceTitle;
+
+  /// Empty state.
+  ///
+  /// In en, this message translates to:
+  /// **'Check the connection and try again later. Offline features keep working.'**
+  String get availServiceBody;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear filters'**
+  String get availClearFilters;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Browse all records'**
+  String get availBrowseAll;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Search'**
+  String get availSearch;
+
+  /// AI status chip.
+  ///
+  /// In en, this message translates to:
+  /// **'Preview · not connected'**
+  String get aiStatusPreview;
+
+  /// AI preview bullet.
+  ///
+  /// In en, this message translates to:
+  /// **'This screen is an interface preview.'**
+  String get aiPreviewPoint1;
+
+  /// AI preview bullet.
+  ///
+  /// In en, this message translates to:
+  /// **'The production AI service is not connected, so no AI answer is generated.'**
+  String get aiPreviewPoint2;
+
+  /// AI preview bullet.
+  ///
+  /// In en, this message translates to:
+  /// **'The sample answer below is a demonstration of the layout only.'**
+  String get aiPreviewPoint3;
+
+  /// AI preview bullet.
+  ///
+  /// In en, this message translates to:
+  /// **'“Find sources offline” searches the local database and works now.'**
+  String get aiPreviewPoint4;
+
+  /// AI send note.
+  ///
+  /// In en, this message translates to:
+  /// **'Sending is disabled until the AI service is connected.'**
+  String get aiSendUnavailable;
+
+  /// Critical warning on concentration values.
+  ///
+  /// In en, this message translates to:
+  /// **'This value comes from an individual case or study. It must not be interpreted as a universal toxic, lethal, therapeutic or legal threshold.'**
+  String get concWarning;
+
+  /// Card title.
+  ///
+  /// In en, this message translates to:
+  /// **'Reported concentration'**
+  String get concTitle;
+
+  /// Row.
+  ///
+  /// In en, this message translates to:
+  /// **'Substance'**
+  String get concSubstance;
+
+  /// Row.
+  ///
+  /// In en, this message translates to:
+  /// **'Value and unit'**
+  String get concValue;
+
+  /// Value.
+  ///
+  /// In en, this message translates to:
+  /// **'As quoted in the source (see excerpt)'**
+  String get concValueInQuote;
+
+  /// Row.
+  ///
+  /// In en, this message translates to:
+  /// **'Living / post-mortem'**
+  String get concLivingPostmortem;
+
+  /// Row.
+  ///
+  /// In en, this message translates to:
+  /// **'Source type'**
+  String get concSourceType;
+
+  /// Source section.
+  ///
+  /// In en, this message translates to:
+  /// **'Case description'**
+  String get concSectionCase;
+
+  /// Source section.
+  ///
+  /// In en, this message translates to:
+  /// **'Abstract'**
+  String get concSectionAbstract;
+
+  /// Source section.
+  ///
+  /// In en, this message translates to:
+  /// **'Introduction (background)'**
+  String get concSectionIntro;
+
+  /// Source section.
+  ///
+  /// In en, this message translates to:
+  /// **'Results'**
+  String get concSectionResults;
+
+  /// Source section.
+  ///
+  /// In en, this message translates to:
+  /// **'Discussion'**
+  String get concSectionDiscussion;
+
+  /// Row.
+  ///
+  /// In en, this message translates to:
+  /// **'Case / study context'**
+  String get concStudyContext;
+
+  /// Row.
+  ///
+  /// In en, this message translates to:
+  /// **'Evidence level'**
+  String get concEvidenceLevel;
+
+  /// Row.
+  ///
+  /// In en, this message translates to:
+  /// **'Review status'**
+  String get concReviewStatus;
+
+  /// Row.
+  ///
+  /// In en, this message translates to:
+  /// **'Source'**
+  String get concSource;
+
+  /// Missing metadata.
+  ///
+  /// In en, this message translates to:
+  /// **'Not available'**
+  String get concNotAvailable;
+
+  /// Row.
+  ///
+  /// In en, this message translates to:
+  /// **'Source excerpt'**
+  String get concExcerpt;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Status'**
+  String get calcStatusTitle;
+
+  /// Row.
+  ///
+  /// In en, this message translates to:
+  /// **'Calculation engine'**
+  String get calcEngineLabel;
+
+  /// Value.
+  ///
+  /// In en, this message translates to:
+  /// **'Checked by automated software tests — this is not a scientific review'**
+  String get calcEngineTested;
+
+  /// Tile chip.
+  ///
+  /// In en, this message translates to:
+  /// **'Engine tested'**
+  String get calcEngineChip;
+
+  /// Row.
+  ///
+  /// In en, this message translates to:
+  /// **'Formula reference'**
+  String get calcReferenceLabel;
+
+  /// Row.
+  ///
+  /// In en, this message translates to:
+  /// **'Interpretation'**
+  String get calcInterpretationLabel;
+
+  /// Value.
+  ///
+  /// In en, this message translates to:
+  /// **'Context dependent — requires professional judgement'**
+  String get calcInterpretationValue;
+
+  /// Review status.
+  ///
+  /// In en, this message translates to:
+  /// **'Rejected'**
+  String get statusRejected;
+
+  /// Home header subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic science reference'**
+  String get homeHeaderSubtitle;
 }
 
 class _AppLocalizationsDelegate

@@ -82,7 +82,7 @@ def apply(b):
                 accessed_date=TODAY, tier="tier2", evidence_level="B", license_mode="openReuse",
                 identifier_verified=True, lifecycle="current", lifecycle_checked_at=TODAY,
                 lifecycle_basis="Excluded retracted PMIDs at selection (PubMed check).", language="en",
-                notes=f"Litsenziya (PMC BioC): {c['license']}. Iqtibos asl matndan dasturiy ajratilgan (find_p8_sentences.py). PHASE 8."))
+                notes=f"Litsenziya (PMC BioC): {c['license']}. Iqtibos asl matndan dasturiy ajratilgan."))
             have_src.add(sid)
         cid = f"C-{tid.upper()}-{field.upper()}-P8"
         b["claims"].append(dict(claim_id=cid, entity_type="topic", entity_id=tid, field=field,

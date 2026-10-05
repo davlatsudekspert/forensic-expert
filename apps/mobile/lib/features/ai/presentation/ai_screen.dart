@@ -15,7 +15,10 @@ import '../../../domain/ai/rag_pipeline.dart';
 import '../../../domain/ports/ai_ports.dart';
 import 'rag_sections.dart';
 
-/// Forensic AI — PHASE 2: to‘liq UI/UX prototipi, **real AI ulanmagan**.
+/// Forensic AI. Production AI provayderi ulanmaguncha ekran yuqorisida
+/// «Namoyish · ulanmagan» holati ko‘rsatiladi, «Yuborish» o‘chiq va javob
+/// namunasi NAMOYISH deb belgilanadi. Provayder ulanganda (`available`)
+/// oddiy holat avtomatik ishlaydi.
 ///
 /// Konsumer chatbot emas: savol maydoni, doimiy PII ogohlantirishi,
 /// tuzilgan javob (mavjud ma’lumot · differensial mulohazalar ·
@@ -51,7 +54,7 @@ class _AiScreenState extends ConsumerState<AiScreen> {
           experience: _experience,
           entitlement: await ref.read(aiEntitlementServiceProvider).current(),
         );
-    // PHASE 9: tuzilgan RAG natijasi (provenance, ziddiyat, retraksiya).
+    // Tuzilgan RAG natijasi (provenance, ziddiyat, retraksiya).
     final rag = await ref
         .read(ragPipelineProvider(lang))
         .ask(
@@ -105,6 +108,11 @@ class _AiScreenState extends ConsumerState<AiScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
+                  if (!available) ...[
+                    const SizedBox(height: FeSpace.sm),
+                    const _PreviewStateCard(),
+                    const SizedBox(height: FeSpace.sm),
+                  ],
                   // Doimiy PII ogohlantirishi (18-bo‘lim).
                   FeBanner(
                     key: const Key('ai.piiWarning'),
@@ -186,42 +194,23 @@ class _AiScreenState extends ConsumerState<AiScreen> {
                       ),
                     ],
                   ),
+                  if (!available)
+                    Padding(
+                      padding: const EdgeInsets.only(top: FeSpace.xxs),
+                      child: Text(
+                        l.aiSendUnavailable,
+                        key: const Key('ai.sendUnavailable'),
+                        textAlign: TextAlign.end,
+                        style: t.bodySmall?.copyWith(color: c.textSecondary),
+                      ),
+                    ),
                   if (_result case final r?) _RouteResultView(result: r),
                   if (_rag case final a?)
                     if (a.evidence.isNotEmpty) RagSectionsView(answer: a),
                   if (!available) ...[
-                    const SizedBox(height: FeSpace.md),
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Icon(Icons.cloud_off_outlined, color: c.textSecondary),
-                        const SizedBox(width: FeSpace.sm),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Semantics(
-                                header: true,
-                                child: Text(
-                                  l.aiNotConnectedTitle,
-                                  style: t.titleSmall,
-                                ),
-                              ),
-                              const SizedBox(height: FeSpace.xxs),
-                              Text(
-                                l.aiNotConnectedBody,
-                                style: t.bodySmall?.copyWith(
-                                  color: c.textSecondary,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
+                    FeSectionHeader(l.aiPreviewTitle),
+                    const _AnswerPreview(),
                   ],
-                  FeSectionHeader(l.aiPreviewTitle),
-                  const _AnswerPreview(),
                   const SizedBox(height: FeSpace.xl),
                 ],
               ),
@@ -325,7 +314,7 @@ class _RouteResultView extends StatelessWidget {
   }
 }
 
-/// Javob tuzilmasi namunasi. Matnlar — placeholder (ARB’dan), ilmiy emas.
+/// Javob tuzilmasi namoyishi. Matnlar — namuna (ARB’dan), ilmiy emas.
 class _AnswerPreview extends StatelessWidget {
   const _AnswerPreview();
 
@@ -353,7 +342,12 @@ class _AnswerPreview extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            FeBanner(icon: Icons.science_outlined, text: l.aiPreviewNotice),
+            FeBanner(
+              key: const Key('ai.demoLabel'),
+              icon: Icons.science_outlined,
+              text: l.aiPreviewNotice,
+              tone: FeBannerTone.warning,
+            ),
             _AnswerSection(
               title: l.aiSectionAvailable,
               text: l.aiSampleInternal,
@@ -369,7 +363,7 @@ class _AnswerPreview extends StatelessWidget {
               text: l.aiSampleLimitation,
               citations: const [],
             ),
-            // PHASE 6: javob tuzilmasi — dalil holati, yurisdiksiya va
+            // Javob tuzilmasi — dalil holati, yurisdiksiya va
             // bog‘liq yozuvlar. Citation metama’lumotlariga server/ilova
             // egalik qiladi, model emas.
             _AnswerSection(
@@ -550,6 +544,73 @@ class _SourceRow extends StatelessWidget {
                 ],
               ),
             ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Ekran yuqorisidagi holat: AI ulanmagan, bu interfeys namoyishi.
+class _PreviewStateCard extends StatelessWidget {
+  const _PreviewStateCard();
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    return DecoratedBox(
+      key: const Key('ai.previewState'),
+      decoration: BoxDecoration(
+        color: c.surfaceRaised,
+        borderRadius: BorderRadius.circular(FeRadius.md),
+        border: Border.all(color: c.warning),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(FeSpace.md),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Wrap(
+              spacing: FeSpace.sm,
+              runSpacing: FeSpace.xxs,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              children: [
+                Semantics(
+                  header: true,
+                  child: Text(
+                    l.moduleAi,
+                    style: t.titleMedium?.copyWith(
+                      fontWeight: FontWeight.w700,
+                      letterSpacing: 0.4,
+                    ),
+                  ),
+                ),
+                StatusChip(
+                  key: const Key('ai.statusChip'),
+                  icon: Icons.cloud_off_outlined,
+                  label: l.aiStatusPreview,
+                  color: c.warning,
+                ),
+              ],
+            ),
+            const SizedBox(height: FeSpace.xs),
+            Text(l.aiNotConnectedTitle, style: t.titleSmall),
+            const SizedBox(height: FeSpace.xxs),
+            for (final p in [
+              l.aiPreviewPoint1,
+              l.aiPreviewPoint2,
+              l.aiPreviewPoint3,
+              l.aiPreviewPoint4,
+            ])
+              Padding(
+                padding: const EdgeInsets.only(top: 2),
+                child: Text(
+                  '${FeGlyphs.bullet} $p',
+                  style: t.bodySmall?.copyWith(color: c.textSecondary),
+                ),
+              ),
           ],
         ),
       ),
