@@ -15,6 +15,7 @@ import '../data/auth/mock_auth_repository.dart';
 import '../data/auth/secure_session_store.dart';
 import '../data/billing/in_app_purchase_client.dart';
 import '../data/billing/store_entitlement_service.dart';
+import '../data/local/profile_store.dart';
 import '../data/local/user_data_repository.dart';
 import '../data/offline/offline_backend.dart';
 import '../data/remote/http_auth_repository.dart';
@@ -23,6 +24,7 @@ import '../domain/ports/backend_ports.dart';
 import '../domain/ports/billing_ports.dart';
 import 'app.dart';
 import 'app_info.dart';
+import 'professional.dart';
 import 'providers.dart';
 import 'user_data.dart';
 
@@ -46,6 +48,9 @@ Future<void> bootstrap() async {
   // Saralanganlar va qidiruv tarixi — faqat lokal.
   final userDataRepo = SharedPrefsUserDataRepository(prefs);
   final userData = await userDataRepo.load();
+  // Ixtiyoriy profil — faqat qurilmada.
+  final profileStore = SharedPrefsProfileStore(prefs);
+  final profile = await profileStore.load();
   metrics.mark(PerfMarks.settingsLoaded);
 
   final auth = _authRepository();
@@ -64,6 +69,8 @@ Future<void> bootstrap() async {
         settingsRepositoryProvider.overrideWithValue(repo),
         userDataRepositoryProvider.overrideWithValue(userDataRepo),
         initialUserDataProvider.overrideWithValue(userData),
+        profileStoreProvider.overrideWithValue(profileStore),
+        initialProfileProvider.overrideWithValue(profile),
         authRepositoryProvider.overrideWithValue(auth),
         // Obunalar: faqat mobil store’larda. Boshqa platformada — store yo‘q.
         if (!kIsWeb && (Platform.isAndroid || Platform.isIOS))

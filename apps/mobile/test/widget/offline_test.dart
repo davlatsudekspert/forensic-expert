@@ -36,6 +36,12 @@ void main() {
       await tester.pumpAndSettle();
       await tester.tap(find.byKey(const Key('mode.professional')));
       await tester.pumpAndSettle();
+      await tester.ensureVisible(find.byKey(const Key('mode.continue')));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const Key('mode.continue')));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const Key('account.skip')));
+      await tester.pumpAndSettle();
       expect(find.byType(HomeScreen), findsOneWidget);
 
       for (final route in shellScreens) {

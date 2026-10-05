@@ -73,7 +73,7 @@ jobs:
             APK_NAME="forensic-expert-$SIGN.apk"
           else
             # Faqat real qurilmada sinash uchun (debug imzo, store’ga emas).
-            APK_NAME="forensic-expert-REAL-DEVICE-TEST-DEBUG.apk"
+            APK_NAME="forensic-expert-FINAL-REAL-DEVICE-TEST.apk"
           fi
           cp build/app/outputs/bundle/release/app-release.aab "$RUNNER_TEMP/out/forensic-expert-$SIGN.aab"
           cp build/app/outputs/flutter-apk/app-release.apk "$RUNNER_TEMP/out/$APK_NAME"

@@ -8,6 +8,7 @@ import 'package:forensic_expert/features/home/presentation/search_screen.dart';
 import 'package:forensic_expert/features/library/presentation/library_screen.dart';
 import 'package:forensic_expert/features/placeholder/presentation/in_development_view.dart';
 import 'package:forensic_expert/features/profile/presentation/profile_screen.dart';
+import 'package:forensic_expert/features/tools/presentation/module_hub_screen.dart';
 import 'package:forensic_expert/features/tools/presentation/tools_screen.dart';
 
 import '../helpers/pump_app.dart';
@@ -49,15 +50,17 @@ void main() {
     expect(find.byType(SearchScreen), findsOneWidget);
   });
 
-  testWidgets('modul sahifasi ilmiy kontent ko‘rsatmaydi (placeholder)', (
-    tester,
-  ) async {
+  testWidgets('modul sahifasi mavjud manbali yozuvlarni ko‘rsatadi '
+      '(bo‘sh holat emas)', (tester) async {
     await pumpApp(tester, settings: completedSettings());
     await tester.ensureVisible(find.byKey(const Key('home.module.toxicology')));
     await tester.pumpAndSettle();
     await tester.tap(find.byKey(const Key('home.module.toxicology')));
     await tester.pumpAndSettle();
-    expect(find.byType(AvailabilityStateView), findsOneWidget);
+    expect(find.byKey(const Key('moduleHub.sourcedNote')), findsOneWidget);
+    expect(find.byKey(const Key('moduleHub.substances')), findsOneWidget);
+    expect(find.byType(AvailabilityStateView), findsNothing);
+    expect(find.byType(BackButton), findsOneWidget);
   });
 
   testWidgets('tab almashganda stack holati saqlanadi', (tester) async {
@@ -66,7 +69,7 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.byKey(const Key('home.module.laboratory')));
     await tester.pumpAndSettle();
-    expect(find.byType(AvailabilityStateView), findsOneWidget);
+    expect(find.byType(ModuleHubScreen), findsOneWidget);
     await tester.ensureVisible(find.byKey(const Key('nav.tools')));
     await tester.pumpAndSettle();
     await tester.tap(find.byKey(const Key('nav.tools')));
@@ -77,12 +80,13 @@ void main() {
     await tester.pumpAndSettle();
     // Home tabida laboratoriya sahifasi hali ochiq.
     expect(find.text('Laboratory'), findsWidgets);
-    expect(find.byType(AvailabilityStateView), findsOneWidget);
+    expect(find.byType(ModuleHubScreen), findsOneWidget);
   });
 
   testWidgets('Profil: til va tema o‘zgaradi va saqlanadi', (tester) async {
     final repo = InMemorySettingsRepository(completedSettings());
     await pumpApp(tester, settings: completedSettings(), repository: repo);
+    // Professional → Talaba.
     await tester.ensureVisible(find.byKey(const Key('nav.profile')));
     await tester.pumpAndSettle();
     await tester.tap(find.byKey(const Key('nav.profile')));
@@ -113,6 +117,7 @@ void main() {
   testWidgets('Profil: rejimni keyinchalik o‘zgartirish', (tester) async {
     final repo = InMemorySettingsRepository(completedSettings());
     await pumpApp(tester, settings: completedSettings(), repository: repo);
+    // Professional → Talaba.
     await tester.ensureVisible(find.byKey(const Key('nav.profile')));
     await tester.pumpAndSettle();
     await tester.tap(find.byKey(const Key('nav.profile')));
@@ -121,11 +126,11 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.byKey(const Key('profile.mode')));
     await tester.pumpAndSettle();
-    await tester.ensureVisible(find.text('Research / Education'));
+    await tester.ensureVisible(find.byKey(const Key('picker.mode.student')));
     await tester.pumpAndSettle();
-    await tester.tap(find.text('Research / Education'));
+    await tester.tap(find.byKey(const Key('picker.mode.student')));
     await tester.pumpAndSettle();
-    expect(repo.value.userMode, UserMode.research);
+    expect(repo.value.userMode, UserMode.student);
   });
 
   testWidgets('AI tabida PII ogohlantirishi doim ko‘rinadi', (tester) async {

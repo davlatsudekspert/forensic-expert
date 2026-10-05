@@ -29,6 +29,10 @@ import '../features/library/presentation/library_screen.dart';
 import '../features/onboarding/presentation/disclaimer_screen.dart';
 import '../features/onboarding/presentation/language_screen.dart';
 import '../features/onboarding/presentation/mode_screen.dart';
+import '../features/professional/presentation/account_choice_screen.dart';
+import '../features/professional/presentation/profile_edit_screen.dart';
+import '../features/professional/presentation/review_section.dart';
+import '../features/professional/presentation/verification_screens.dart';
 import '../features/profile/presentation/legal_screens.dart';
 import '../features/profile/presentation/paywall_screen.dart';
 import '../features/profile/presentation/profile_screen.dart';
@@ -93,6 +97,16 @@ final routerProvider = Provider<GoRouter>((ref) {
         builder: (c, s) => const DisclaimerScreen(),
       ),
       GoRoute(path: Routes.mode, builder: (c, s) => const ModeScreen()),
+      GoRoute(
+        path: Routes.welcomeAccount,
+        builder: (c, s) => const AccountChoiceScreen(),
+        routes: [
+          GoRoute(
+            path: 'profile',
+            builder: (c, s) => const ProfileEditScreen(),
+          ),
+        ],
+      ),
       StatefulShellRoute.indexedStack(
         builder: (c, s, shell) => AppShell(shell: shell),
         branches: [
@@ -102,9 +116,10 @@ final routerProvider = Provider<GoRouter>((ref) {
                 path: Routes.home,
                 builder: (c, s) => const HomeScreen(),
                 routes: [
+                  // Qidiruv Home tabida: natijadan ochilgan sahifa ustiga
+                  // qo‘shiladi, «Back» natijalarga qaytaradi.
                   GoRoute(
                     path: 'search',
-                    parentNavigatorKey: rootKey,
                     builder: (c, s) =>
                         SearchScreen(initialQuery: s.uri.queryParameters['q']),
                   ),
@@ -367,6 +382,28 @@ final routerProvider = Provider<GoRouter>((ref) {
                     path: 'account/delete',
                     parentNavigatorKey: rootKey,
                     builder: (c, s) => const DeleteAccountScreen(),
+                  ),
+                  GoRoute(
+                    path: 'edit',
+                    parentNavigatorKey: rootKey,
+                    builder: (c, s) => const ProfileEditScreen(),
+                  ),
+                  GoRoute(
+                    path: 'verification',
+                    parentNavigatorKey: rootKey,
+                    builder: (c, s) => const VerificationScreen(),
+                    routes: [
+                      GoRoute(
+                        path: 'documents',
+                        parentNavigatorKey: rootKey,
+                        builder: (c, s) => const CredentialUploadScreen(),
+                      ),
+                    ],
+                  ),
+                  GoRoute(
+                    path: 'reviews',
+                    parentNavigatorKey: rootKey,
+                    builder: (c, s) => const ReviewDashboardScreen(),
                   ),
                   GoRoute(
                     path: 'privacy',

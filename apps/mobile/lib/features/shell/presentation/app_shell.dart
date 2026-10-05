@@ -21,6 +21,18 @@ class AppShell extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
+    // Android «Back»: boshqa tab ildizida — avval Asosiy tabga qaytadi,
+    // ilovadan faqat Asosiy tabdan chiqiladi (tasodifiy chiqish yo‘q).
+    return PopScope(
+      canPop: shell.currentIndex == 0,
+      onPopInvokedWithResult: (didPop, _) {
+        if (!didPop && shell.currentIndex != 0) shell.goBranch(0);
+      },
+      child: _scaffold(context, l),
+    );
+  }
+
+  Widget _scaffold(BuildContext context, AppLocalizations l) {
     return Scaffold(
       body: shell,
       // Tab yozuvlari platforma konvensiyasiga ko‘ra cheklangan masshtabda

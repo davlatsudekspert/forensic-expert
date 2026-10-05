@@ -36,7 +36,7 @@ class ToolTile extends ConsumerWidget {
       child: InkWell(
         onTap: locked
             ? () => context.push(Routes.purchase)
-            : () => context.go(Routes.tool(tool.id)),
+            : () => context.push(Routes.tool(tool.id)),
         child: Padding(
           padding: const EdgeInsets.fromLTRB(
             FeSpace.md,

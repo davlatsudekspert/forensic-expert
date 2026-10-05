@@ -4,6 +4,11 @@ abstract final class Routes {
   static const disclaimer = '/onboarding/disclaimer';
   static const mode = '/onboarding/mode';
 
+  /// Onboarding’dan keyingi ixtiyoriy qadam: hisobsiz davom etish yoki
+  /// hisob yaratish. Majburiy emas (redirect qadamlari ro‘yxatida yo‘q).
+  static const welcomeAccount = '/welcome/account';
+  static const welcomeProfile = '/welcome/account/profile';
+
   static const home = '/home';
   static const search = '/home/search';
   static String searchWith(String query) =>
@@ -29,7 +34,7 @@ abstract final class Routes {
   static String jurisdiction(String id) => '/home/jurisdictions/$id';
   static String librarySection(String section) => '/library/section/$section';
   static const libraryStandards = '/library/standards';
-  // PHASE 7: provenance qatlami.
+  // Provenance qatlami.
   static const conflicts = '/library/conflicts';
   static String conflict(String id) => '/library/conflicts/$id';
   static const specimens = '/library/specimens';
@@ -56,6 +61,12 @@ abstract final class Routes {
   static const terms = '/profile/terms';
   static const about = '/profile/about';
   static const aiDisclaimer = '/profile/ai-disclaimer';
+
+  // Profil, professional tasdiqlash va taqriz ish joyi.
+  static const profileEdit = '/profile/edit';
+  static const verification = '/profile/verification';
+  static const verificationDocuments = '/profile/verification/documents';
+  static const reviewDashboard = '/profile/reviews';
 
   // Akkaunt (ixtiyoriy). Email marshrut satriga yozilmaydi — `extra`.
   static const accountSignIn = '/profile/account/sign-in';

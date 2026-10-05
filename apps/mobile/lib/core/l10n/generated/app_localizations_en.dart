@@ -57,25 +57,25 @@ class AppLocalizationsEn extends AppLocalizations {
   String get disclaimerAccept => 'I understand';
 
   @override
-  String get modeTitle => 'How will you use Forensic Expert?';
+  String get modeTitle => 'How will you use FORENSIC EXPERT?';
 
   @override
   String get modeSubtitle =>
-      'This adapts your dashboard. You can change it later in Profile.';
+      'The home screen adapts to your choice. You can change it later in Profile.';
 
   @override
   String get modeProfessional => 'Professional';
 
   @override
   String get modeProfessionalDescription =>
-      'Forensic medical and toxicology experts, laboratory specialists';
+      'Forensic experts, physicians, toxicologists, chemists, laboratory and other forensic specialists';
 
   @override
-  String get modeStudent => 'Student / Resident';
+  String get modeStudent => 'Student';
 
   @override
   String get modeStudentDescription =>
-      'Courses, glossary, flashcards and practice';
+      'Students, residents and trainees, researchers and learners';
 
   @override
   String get modeResearch => 'Research / Education';
@@ -743,7 +743,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get privacySummary =>
-      'The core library and calculators work offline. Search history and progress stay on your device. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically.';
+      'The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically.';
 
   @override
   String get aboutBody =>
@@ -3850,4 +3850,734 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get homeHeaderSubtitle => 'Forensic science reference';
+
+  @override
+  String get modeRoleTitle => 'Your role (optional)';
+
+  @override
+  String get modeProfessionalNotVerified =>
+      'Choosing Professional mode does not mean that your professional status is verified.';
+
+  @override
+  String get modeSwitchNote =>
+      'Usage mode only changes how the app is arranged. It does not grant or remove professional verification.';
+
+  @override
+  String get roleStudent => 'Student';
+
+  @override
+  String get roleResident => 'Resident / trainee';
+
+  @override
+  String get roleResearcher => 'Researcher / learner';
+
+  @override
+  String get roleForensicExpert => 'Forensic expert';
+
+  @override
+  String get roleForensicPhysician => 'Forensic physician';
+
+  @override
+  String get roleForensicToxicologist => 'Forensic toxicologist';
+
+  @override
+  String get roleForensicChemist => 'Forensic chemist';
+
+  @override
+  String get roleLaboratorySpecialist => 'Laboratory specialist';
+
+  @override
+  String get rolePathologist => 'Pathologist';
+
+  @override
+  String get roleGeneticist => 'Geneticist / DNA specialist';
+
+  @override
+  String get roleForensicBiochemist => 'Forensic biochemist';
+
+  @override
+  String get roleAnthropologist => 'Forensic anthropologist';
+
+  @override
+  String get roleOdontologist => 'Forensic odontologist';
+
+  @override
+  String get roleOtherProfessional =>
+      'Other forensic / laboratory professional';
+
+  @override
+  String get specForensicMedicine => 'Forensic medicine';
+
+  @override
+  String get specForensicToxicology => 'Forensic toxicology';
+
+  @override
+  String get specForensicChemistry => 'Forensic chemistry';
+
+  @override
+  String get specAnalyticalLaboratory => 'Analytical / laboratory science';
+
+  @override
+  String get specForensicBiochemistry => 'Forensic biochemistry';
+
+  @override
+  String get specPathologyHistology => 'Pathology / histology';
+
+  @override
+  String get specGeneticsDna => 'Genetics / DNA';
+
+  @override
+  String get specForensicAnthropology => 'Forensic anthropology';
+
+  @override
+  String get specForensicOdontology => 'Forensic odontology';
+
+  @override
+  String get specForensicRadiology => 'Forensic radiology';
+
+  @override
+  String get specForensicPsychology => 'Forensic psychology / psychiatry';
+
+  @override
+  String get specForensicBiology => 'Forensic biology';
+
+  @override
+  String get specEntomology => 'Forensic entomology';
+
+  @override
+  String get specOther => 'Other';
+
+  @override
+  String get scopeLegal => 'Law and jurisdiction';
+
+  @override
+  String get scopeTranslation => 'Translation';
+
+  @override
+  String get studyBachelor => 'Bachelor’s';
+
+  @override
+  String get studyMaster => 'Master’s';
+
+  @override
+  String get studyResidency => 'Residency / clinical training';
+
+  @override
+  String get studyDoctoral => 'Doctoral';
+
+  @override
+  String get studyOther => 'Other';
+
+  @override
+  String get accountChoiceTitle => 'Use the app without an account';
+
+  @override
+  String get accountChoiceSubtitle =>
+      'The offline scientific database, search and calculators work without an account. An account is needed only for cloud features.';
+
+  @override
+  String get accountContinueWithout => 'Continue without an account';
+
+  @override
+  String get accountContinueWithoutNote =>
+      'You can create an account later in Profile.';
+
+  @override
+  String get accountCreateOrSignIn => 'Create account / Sign in';
+
+  @override
+  String get accountCloudUnavailable =>
+      'The cloud account service is not connected in this version. Everything offline keeps working.';
+
+  @override
+  String get accountNeededFor => 'An account is needed for';
+
+  @override
+  String get accountNeedVerification => 'Professional verification';
+
+  @override
+  String get accountNeedReviews => 'Professional reviews of scientific content';
+
+  @override
+  String get accountNeedSync => 'Synchronisation between devices';
+
+  @override
+  String get accountNeedSubscriptions => 'Subscriptions across devices';
+
+  @override
+  String get accountNeedCloudAi => 'Cloud AI (when connected)';
+
+  @override
+  String get accountNeedInstitution => 'Institutional features';
+
+  @override
+  String get accountFillProfile => 'Fill in profile now (optional)';
+
+  @override
+  String get profileLocalOnlyNote =>
+      'Profile details are stored only on this device and are not sent anywhere.';
+
+  @override
+  String get profileStudentTitle => 'Student profile';
+
+  @override
+  String get profileProTitle => 'Professional profile';
+
+  @override
+  String get profileSaved => 'Profile saved on this device';
+
+  @override
+  String get profileSectionIdentity => 'Personal details';
+
+  @override
+  String get profileSectionWork => 'Professional details';
+
+  @override
+  String get profileSectionOptional => 'Optional';
+
+  @override
+  String get profileStudentCannotReview =>
+      'Student profiles are for learning: they cannot verify scientific content or perform qualified reviews.';
+
+  @override
+  String get fieldFullName => 'Full name';
+
+  @override
+  String get fieldCountry => 'Country';
+
+  @override
+  String get fieldCountryChoose => 'Choose a country';
+
+  @override
+  String get fieldCountrySearch => 'Search country';
+
+  @override
+  String get fieldCity => 'City / region (optional)';
+
+  @override
+  String get fieldInstitution => 'University / institution (optional)';
+
+  @override
+  String get fieldFaculty => 'Faculty / programme (optional)';
+
+  @override
+  String get fieldStudyLevel => 'Study level (optional)';
+
+  @override
+  String get fieldInterests => 'Areas of interest';
+
+  @override
+  String get fieldOrganization => 'Organisation / institution';
+
+  @override
+  String get fieldPosition => 'Position / job title';
+
+  @override
+  String get fieldPrimarySpecialty => 'Primary specialty';
+
+  @override
+  String get fieldAdditionalSpecialties => 'Additional specialties';
+
+  @override
+  String get fieldYearsExperience => 'Years of professional experience';
+
+  @override
+  String get fieldEducation => 'Education / qualification';
+
+  @override
+  String get fieldWorkEmail => 'Work e-mail (optional)';
+
+  @override
+  String get fieldPrivateHelper =>
+      'Private — never shown on your public profile.';
+
+  @override
+  String get fieldLicense =>
+      'Professional registration / licence number (optional)';
+
+  @override
+  String get fieldLicenseHelper =>
+      'Only if your country issues one. Private — never shown publicly.';
+
+  @override
+  String get fieldBio => 'Short professional biography (optional)';
+
+  @override
+  String get fieldLanguages => 'Languages (comma separated)';
+
+  @override
+  String get fieldProInterests => 'Professional interests (optional)';
+
+  @override
+  String get fieldShowOrganization => 'Show organisation on public profile';
+
+  @override
+  String get fieldShowOrganizationHelper =>
+      'Off by default. Name, specialty and country are public only after verification.';
+
+  @override
+  String get formRequired => 'Required field';
+
+  @override
+  String get formTooLong => 'Too long';
+
+  @override
+  String get formInvalid => 'Invalid value';
+
+  @override
+  String get formHasErrors => 'Please correct the highlighted fields.';
+
+  @override
+  String get actionSave => 'Save';
+
+  @override
+  String get actionRemove => 'Remove';
+
+  @override
+  String get verifTitle => 'Professional verification';
+
+  @override
+  String get verifStatusLabel => 'Current status';
+
+  @override
+  String get verifUnverified => 'Not verified';
+
+  @override
+  String get verifPending => 'Review pending';
+
+  @override
+  String get verifVerified => 'Verified professional';
+
+  @override
+  String get verifChangesRequested => 'More information needed';
+
+  @override
+  String get verifRejected => 'Rejected';
+
+  @override
+  String get verifSuspended => 'Temporarily suspended';
+
+  @override
+  String get verifUnverifiedBody =>
+      'You have not applied for verification. All offline features are available without it.';
+
+  @override
+  String get verifPendingBody =>
+      'Your application is waiting for review by an authorised person.';
+
+  @override
+  String get verifVerifiedBody =>
+      'Your professional status was confirmed by an authorised person. Review rights are granted separately for each specialty.';
+
+  @override
+  String get verifChangesBody =>
+      'Additional information is needed. Update your profile or documents and resubmit.';
+
+  @override
+  String get verifRejectedBody =>
+      'The application was not approved. You can submit a new application.';
+
+  @override
+  String get verifSuspendedBody =>
+      'Verification is temporarily suspended. Review rights are not active.';
+
+  @override
+  String get verifServiceNotConnected =>
+      'The verification service is not connected in this version. Applications cannot be sent and nobody can be verified yet.';
+
+  @override
+  String get verifHowTitle => 'How verification works';
+
+  @override
+  String get verifStep1 => 'Fill in your professional profile.';
+
+  @override
+  String get verifStep2 =>
+      'Optionally attach a qualification document (stored privately).';
+
+  @override
+  String get verifStep3 =>
+      'An authorised administrator or a verified professional of the same specialty reviews the application and the document manually. Self-approval is impossible.';
+
+  @override
+  String get verifStep4 =>
+      'Review rights are granted separately for each specialty.';
+
+  @override
+  String get verifHumanOnly =>
+      'Selecting Professional mode, entering a job title, uploading a certificate or an automated/AI check never grants verified status. A document is evidence only; status is granted only after manual review, and who approved it, when, which document was checked and for which specialty are recorded.';
+
+  @override
+  String get verifApplication => 'Application';
+
+  @override
+  String get verifProfileMissing => 'Professional profile is not filled in';
+
+  @override
+  String get verifSubmit => 'Submit application';
+
+  @override
+  String get verifSubmitted => 'Application sent. Status: review pending.';
+
+  @override
+  String get verifSubmitUnavailable =>
+      'Submitting is unavailable until the verification service is connected.';
+
+  @override
+  String get verifSubmitNote =>
+      'The application and documents are sent over an encrypted connection to private storage.';
+
+  @override
+  String proYearsExperience(int years) {
+    return '$years years of experience';
+  }
+
+  @override
+  String proReviewCount(int count) {
+    return 'Professional reviews: $count';
+  }
+
+  @override
+  String get proServiceNotConnected =>
+      'The cloud service is not connected in this version.';
+
+  @override
+  String get proInvalidInput => 'Check the entered data.';
+
+  @override
+  String get proOffline => 'No internet connection.';
+
+  @override
+  String get proServerError =>
+      'The service is temporarily unavailable. Try again later.';
+
+  @override
+  String get credUploadTitle => 'Upload qualification document';
+
+  @override
+  String get credOptional => 'Optional';
+
+  @override
+  String credSelectedCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count files selected',
+      one: '1 file selected',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get credIntro =>
+      'A document is optional and only helps an authorised person check your application. It never grants verified status by itself.';
+
+  @override
+  String get credPrivacy =>
+      'Documents are private: they are never shown publicly, have no public link and their contents are not logged. Only an authorised verifier can open them.';
+
+  @override
+  String get credNoCaseData =>
+      'Do not upload case materials, evidence, expert reports or any confidential case records. Passport or ID documents are not required.';
+
+  @override
+  String get credKindTitle => 'Document type';
+
+  @override
+  String get credProfessionalCertificate => 'Professional certificate';
+
+  @override
+  String get credQualificationCertificate => 'Qualification certificate';
+
+  @override
+  String get credDiploma => 'Diploma';
+
+  @override
+  String get credEmployment => 'Employment / appointment evidence';
+
+  @override
+  String get credRegistration => 'Professional registration / licence document';
+
+  @override
+  String get credTraining => 'Recognised training certificate';
+
+  @override
+  String get credFormats =>
+      'PDF, JPG or PNG, up to 10 MB per file, up to 5 files.';
+
+  @override
+  String get credChooseFile => 'Choose file';
+
+  @override
+  String get credSelectedTitle => 'Selected documents';
+
+  @override
+  String get credNotUploaded =>
+      'Not uploaded: the verification service is not connected. Files stay only in memory on this device and are discarded when the app closes.';
+
+  @override
+  String get credWillSendOnSubmit =>
+      'Files will be sent privately together with the application.';
+
+  @override
+  String get credPickFailed => 'Could not open the file.';
+
+  @override
+  String get credErrorEmpty => 'The file is empty.';
+
+  @override
+  String get credErrorTooLarge => 'The file is larger than 10 MB.';
+
+  @override
+  String get credErrorType => 'Only PDF, JPG and PNG files are accepted.';
+
+  @override
+  String get credErrorTooMany => 'No more than 5 files.';
+
+  @override
+  String get reviewSectionTitle => 'Professional review';
+
+  @override
+  String get reviewEmpty =>
+      'This material has not yet been reviewed by a qualified professional.';
+
+  @override
+  String get reviewWhoCanReview =>
+      'Only verified professionals with review rights in the relevant specialty can review this material.';
+
+  @override
+  String get reviewScopeNotAssigned =>
+      'A review specialty has not yet been assigned to this record.';
+
+  @override
+  String get reviewWrite => 'Write a professional review';
+
+  @override
+  String get reviewDecision => 'Decision';
+
+  @override
+  String get reviewActApprove => 'Approve';
+
+  @override
+  String get reviewActRequestChange => 'Request correction';
+
+  @override
+  String get reviewActConflict => 'Flag conflicting evidence';
+
+  @override
+  String get reviewActOutdated => 'Flag as outdated';
+
+  @override
+  String get reviewActReject => 'Reject';
+
+  @override
+  String get reviewDecApprove => 'Approved';
+
+  @override
+  String get reviewDecRequestChange => 'Correction required';
+
+  @override
+  String get reviewDecConflict => 'Conflicting evidence';
+
+  @override
+  String get reviewDecOutdated => 'Outdated';
+
+  @override
+  String get reviewDecReject => 'Rejected';
+
+  @override
+  String get reviewStateInProgress => 'Review in progress';
+
+  @override
+  String get reviewStateProfessional => 'Professionally reviewed';
+
+  @override
+  String get reviewStateHumanVerified => 'Scientifically verified by humans';
+
+  @override
+  String get reviewStateReReview => 'Re-review required';
+
+  @override
+  String get reviewNote => 'Review note';
+
+  @override
+  String get reviewNoteHelper =>
+      'Explain the decision with reference to the evidence. At least 20 characters.';
+
+  @override
+  String get reviewNoteTooShort => 'At least 20 characters are required.';
+
+  @override
+  String get reviewSourceRef => 'Supporting source (optional)';
+
+  @override
+  String get reviewSourceHelper => 'DOI, PMID or an https link';
+
+  @override
+  String get reviewSourceInvalid => 'Enter a DOI, PMID or https link.';
+
+  @override
+  String get reviewSubmit => 'Submit review';
+
+  @override
+  String get reviewSubmitted => 'Review submitted';
+
+  @override
+  String get reviewNotVerification =>
+      'A single review does not make content scientifically verified. Verification requires independent qualified reviews under the verification policy.';
+
+  @override
+  String reviewVersionNote(String version) {
+    return 'The review applies to content version $version. If the content changes, a re-review is required.';
+  }
+
+  @override
+  String reviewMeta(String date, String version) {
+    return 'Reviewed $date · content version $version';
+  }
+
+  @override
+  String get reviewStale =>
+      'Written for an earlier content version — kept in the history; a re-review is required.';
+
+  @override
+  String get reviewPermAllowed => 'You can review this material.';
+
+  @override
+  String get reviewPermSignIn => 'Sign in to your account first.';
+
+  @override
+  String get reviewPermNotVerified =>
+      'Reviews can be written only by verified professionals.';
+
+  @override
+  String get reviewPermSuspended =>
+      'Your verification is suspended; reviewing is unavailable.';
+
+  @override
+  String get reviewPermScope =>
+      'You do not have review rights for this specialty.';
+
+  @override
+  String get reviewPermStudentMode =>
+      'Switch to Professional mode to write reviews. Your verification is kept.';
+
+  @override
+  String get layerSource => 'Source attached';
+
+  @override
+  String layerSourceCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sources',
+      one: '1 source',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get noReliableSource => 'No reliable source attached.';
+
+  @override
+  String get layerIdentifier => 'Identifier (DOI/PMID) checked';
+
+  @override
+  String get layerIdentifierOk => 'Checked';
+
+  @override
+  String get layerIdentifierPending => 'Not yet checked';
+
+  @override
+  String get layerNotApplicable => 'Not applicable';
+
+  @override
+  String get layerProfessional => 'Professional reviews';
+
+  @override
+  String get layerHuman => 'Human scientific verification';
+
+  @override
+  String layerHumanCount(int count, int required) {
+    return '$count of $required independent approvals';
+  }
+
+  @override
+  String get dashboardTitle => 'Review workspace';
+
+  @override
+  String get dashboardOnlyVerified =>
+      'Available only to verified professionals with review rights in at least one specialty.';
+
+  @override
+  String get dashboardQueueEmpty => 'No records in this queue.';
+
+  @override
+  String dashboardItemMeta(
+    int claims,
+    int sources,
+    String level,
+    String version,
+  ) {
+    return 'Claims: $claims · sources: $sources · evidence: $level · version $version';
+  }
+
+  @override
+  String get queueNeedsReview => 'Needs review';
+
+  @override
+  String get queueAssigned => 'Assigned to me';
+
+  @override
+  String get queueReviewedByMe => 'Reviewed by me';
+
+  @override
+  String get queueConflicts => 'Conflicts';
+
+  @override
+  String get queueReReview => 'Re-review required';
+
+  @override
+  String get profileSectionVerification => 'Verification';
+
+  @override
+  String get profileSectionData => 'Data and privacy';
+
+  @override
+  String get profileStudentVerificationNote =>
+      'Professional verification applies to Professional mode. Switching mode does not change verification.';
+
+  @override
+  String get profileNotFilled => 'Profile not filled in';
+
+  @override
+  String get profileFillAction => 'Fill in profile';
+
+  @override
+  String get profileEditAction => 'Edit profile';
+
+  @override
+  String get moduleHubSourced => 'Sourced records';
+
+  @override
+  String get moduleHubSourcedNote =>
+      'Shown with their sources and current review status. “Needs review” means available sourced content that is still awaiting expert review — not missing content.';
+
+  @override
+  String get moduleHubOpenAll => 'Open all';
+
+  @override
+  String methodsStandardsLink(int count) {
+    return 'International standards and guidelines ($count)';
+  }
+
+  @override
+  String get sourceOneTap => 'Sources and provenance';
+
+  @override
+  String get researchKeyRelevance => 'Forensic relevance';
+
+  @override
+  String get researchLimitationsNote =>
+      'Only bibliographic data and a short description are shown; the full text is available from the publisher.';
 }

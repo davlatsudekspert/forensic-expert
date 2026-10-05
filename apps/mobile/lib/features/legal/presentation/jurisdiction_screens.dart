@@ -156,13 +156,13 @@ class JurisdictionHubScreen extends ConsumerWidget {
                             FilledButton.tonal(
                               key: const Key('jurisdictions.change'),
                               onPressed: () =>
-                                  context.go(Routes.jurisdictionSelect),
+                                  context.push(Routes.jurisdictionSelect),
                               child: Text(l.homeChange),
                             ),
                             OutlinedButton(
                               key: const Key('jurisdictions.details'),
                               onPressed: () =>
-                                  context.go(Routes.jurisdiction(id)),
+                                  context.push(Routes.jurisdiction(id)),
                               child: Text(l.jurisdictionViewDetails),
                             ),
                           ],
@@ -193,7 +193,7 @@ class JurisdictionHubScreen extends ConsumerWidget {
                     leading: const Icon(Icons.compare_arrows),
                     title: Text(l.compareTitle),
                     trailing: const Icon(Icons.chevron_right),
-                    onTap: () => context.go(Routes.compare),
+                    onTap: () => context.push(Routes.compare),
                   ),
                   FeSectionHeader(l.jurisdictionWithContent),
                   for (final j in withContent)
@@ -207,7 +207,7 @@ class JurisdictionHubScreen extends ConsumerWidget {
                         style: t.bodySmall?.copyWith(color: c.textSecondary),
                       ),
                       trailing: const Icon(Icons.chevron_right),
-                      onTap: () => context.go(Routes.jurisdiction(j.id)),
+                      onTap: () => context.push(Routes.jurisdiction(j.id)),
                     ),
                   const SizedBox(height: FeSpace.xl),
                 ],
@@ -334,16 +334,13 @@ class _JurisdictionSelectState extends ConsumerState<JurisdictionSelectScreen> {
         selected: selected,
         trailing: selected ? const Icon(Icons.check) : null,
         onTap: () async {
-          await ref
-              .read(settingsControllerProvider.notifier)
-              .setJurisdiction(j.id);
-          if (context.mounted) {
-            if (context.canPop()) {
-              context.pop();
-            } else {
-              context.go(Routes.jurisdictions);
-            }
+          final notifier = ref.read(settingsControllerProvider.notifier);
+          if (context.canPop()) {
+            context.pop();
+          } else {
+            context.go(Routes.jurisdictions);
           }
+          await notifier.setJurisdiction(j.id);
         },
       );
     }

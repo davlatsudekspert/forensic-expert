@@ -16,9 +16,13 @@ import '../../../core/widgets/fe_data_components.dart';
 import '../../../domain/evidence/evidence_models.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
 import '../../../domain/library/library_models.dart';
+import '../../../domain/professional/professional_models.dart';
+import '../../../domain/professional/review_models.dart';
 import '../../common/view_recorder.dart';
 import '../../disciplines/discipline_strings.dart';
 import '../../legal/presentation/jurisdiction_screens.dart';
+import '../../professional/presentation/professional_widgets.dart';
+import '../../professional/presentation/review_section.dart';
 import '../evidence_strings.dart';
 
 /// Ro‘yxatdagi research yozuvi.
@@ -458,6 +462,22 @@ class ResearchDetailScreen extends ConsumerWidget {
                       ],
                     ),
                   ],
+                  const SizedBox(height: FeSpace.md),
+                  FeNote(
+                    key: const Key('research.limitations'),
+                    icon: Icons.menu_book_outlined,
+                    text: l.researchLimitationsNote,
+                  ),
+                  ProfessionalReviewSection(
+                    recordId: r.id,
+                    kind: ReviewSubjectKind.research,
+                    scopes: _researchScopes(r, library, knowledge),
+                    sourceCount: 1,
+                    identifiersVerified: r.doi == null && r.pmid == null
+                        ? null
+                        // Metama’lumot identifikator bo‘yicha API’dan olingan.
+                        : r.sourceApi != null,
+                  ),
                   const SizedBox(height: FeSpace.xl),
                 ],
               ),
@@ -468,6 +488,23 @@ class ResearchDetailScreen extends ConsumerWidget {
     );
   }
 }
+
+/// Tadqiqot yozuvining taqriz sohalari — bog‘langan yozuvlardan. Bog‘lanish
+/// bo‘lmasa soha tayinlanmagan (hech kim avtomatik taqriz qila olmaydi).
+Set<ReviewerScope> _researchScopes(
+  ResearchEntry r,
+  LibraryRepository library,
+  KnowledgeRepository knowledge,
+) => {
+  for (final id in r.linkedEntityIds)
+    ...switch ((library.byId(id), knowledge.byId(id))) {
+      (final _?, _) => ReviewScopes.forKind(ReviewSubjectKind.substance),
+      (_, final k?) => ReviewScopes.forKind(
+        reviewKindForKnowledge(k.kind, k.area),
+      ),
+      _ => const <ReviewerScope>{},
+    },
+};
 
 /// Bilim grafigi: yozuvdan bog‘liq professional materiallar (asosi bilan).
 class RelatedSection extends ConsumerWidget {

@@ -15,7 +15,7 @@ void main() {
       const AppSettings(
         locale: Locale('uz'),
         themeMode: ThemeMode.dark,
-        userMode: UserMode.research,
+        userMode: UserMode.student,
         acceptedDisclaimerVersion: currentDisclaimerVersion,
       ),
     );
@@ -25,7 +25,7 @@ void main() {
     final s = await again.load();
     expect(s.locale, const Locale('uz'));
     expect(s.themeMode, ThemeMode.dark);
-    expect(s.userMode, UserMode.research);
+    expect(s.userMode, UserMode.student);
     expect(s.onboardingComplete, isTrue);
   });
 

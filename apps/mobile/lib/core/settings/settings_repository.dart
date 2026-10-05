@@ -22,6 +22,7 @@ class SharedPrefsSettingsRepository implements SettingsRepository {
   static const _kDisclaimer = 'fe.settings.disclaimer_version';
   static const _kContrast = 'fe.settings.contrast';
   static const _kJurisdiction = 'fe.settings.jurisdiction';
+  static const _kRole = 'fe.settings.role';
 
   @override
   Future<AppSettings> load() async => AppSettings(
@@ -29,14 +30,19 @@ class SharedPrefsSettingsRepository implements SettingsRepository {
     themeMode:
         ThemeMode.values.asNameMap()[_prefs.getString(_kTheme)] ??
         ThemeMode.system,
-    userMode: UserMode.values.asNameMap()[_prefs.getString(_kMode)],
+    userMode: _mode(_prefs.getString(_kMode)),
     acceptedDisclaimerVersion: _prefs.getInt(_kDisclaimer),
     contrast:
         ContrastPreference.values.asNameMap()[_prefs.getString(_kContrast)] ??
         ContrastPreference.system,
     jurisdictionId:
         _prefs.getString(_kJurisdiction) ?? internationalJurisdictionId,
+    declaredRole: _prefs.getString(_kRole),
   );
+
+  /// Eski «research» rejimi talaba (tadqiqotchi) rejimiga ko‘chiriladi.
+  static UserMode? _mode(String? raw) =>
+      raw == 'research' ? UserMode.student : UserMode.values.asNameMap()[raw];
 
   @override
   Future<void> save(AppSettings s) async {
@@ -47,6 +53,8 @@ class SharedPrefsSettingsRepository implements SettingsRepository {
     await _prefs.setString(_kJurisdiction, s.jurisdictionId);
     final mode = s.userMode;
     if (mode != null) await _prefs.setString(_kMode, mode.name);
+    final role = s.declaredRole;
+    if (role != null) await _prefs.setString(_kRole, role);
     final d = s.acceptedDisclaimerVersion;
     if (d != null) await _prefs.setInt(_kDisclaimer, d);
   }

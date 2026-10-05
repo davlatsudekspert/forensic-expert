@@ -16,12 +16,14 @@ import '../../../core/widgets/fe_data_components.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
 import '../../../domain/library/library_models.dart';
 import '../../../domain/ports/billing_ports.dart';
+import '../../../domain/professional/review_models.dart';
 import '../../common/favorite_button.dart';
 import '../../common/view_recorder.dart';
 import '../../evidence/evidence_strings.dart';
 import '../../evidence/presentation/research_screens.dart';
 import '../../evidence/presentation/scientific_image.dart';
 import '../../library/presentation/content_entry_sections.dart';
+import '../../professional/presentation/review_section.dart';
 import '../knowledge_strings.dart';
 
 /// Bilim yozuvi sahifasi.
@@ -171,7 +173,7 @@ class KnowledgeDetailScreen extends ConsumerWidget {
                   FeSectionHeader(l.knowledgeSources),
                   if (e.allSources.isEmpty)
                     Text(
-                      l.knowledgeNotInSource,
+                      l.noReliableSource,
                       style: t.bodySmall?.copyWith(color: c.textSecondary),
                     ),
                   for (final s in e.allSources)
@@ -179,6 +181,15 @@ class KnowledgeDetailScreen extends ConsumerWidget {
                       padding: const EdgeInsets.only(bottom: FeSpace.xs),
                       child: SourceTile(source: s),
                     ),
+                  ProfessionalReviewSection(
+                    recordId: e.id,
+                    kind: reviewKindForKnowledge(e.kind, e.area),
+                    risk: e.kind == KnowledgeKind.reagent
+                        ? RiskLevel.high
+                        : RiskLevel.standard,
+                    sourceCount: e.allSources.length,
+                    identifiersVerified: identifiersVerified(e.allSources),
+                  ),
                   const SizedBox(height: FeSpace.xl),
                 ],
               ),

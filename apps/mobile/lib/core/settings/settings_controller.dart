@@ -39,8 +39,9 @@ class SettingsController extends Notifier<AppSettings> {
   Future<void> setJurisdiction(String jurisdictionId) =>
       _update(state.copyWith(jurisdictionId: jurisdictionId));
 
-  Future<void> setUserMode(UserMode mode) =>
-      _update(state.copyWith(userMode: mode));
+  /// Rejimni almashtirish professional maqomga ta’sir qilmaydi.
+  Future<void> setUserMode(UserMode mode, {String? role}) =>
+      _update(state.copyWith(userMode: mode, declaredRole: role));
 
   Future<void> acceptDisclaimer() => _update(
     state.copyWith(acceptedDisclaimerVersion: currentDisclaimerVersion),

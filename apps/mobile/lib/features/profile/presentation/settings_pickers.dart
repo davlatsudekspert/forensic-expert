@@ -7,6 +7,7 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/settings/app_settings.dart';
 import '../../../core/settings/settings_controller.dart';
+import '../../../core/widgets/fe_components.dart';
 import '../../onboarding/presentation/mode_screen.dart';
 
 /// Profil → Til.
@@ -38,10 +39,14 @@ class LanguagePickerScreen extends ConsumerWidget {
                           ? const Icon(Icons.check)
                           : null,
                       onTap: () async {
-                        await ref
-                            .read(settingsControllerProvider.notifier)
-                            .setLocale(locale);
-                        if (context.mounted) context.pop();
+                        // Avval yopiladi, keyin saqlanadi: sozlama o‘zgarishi
+                        // router’ni yangilaydi va yopishdan oldin boshlangan
+                        // yangilanish sahifani qaytarib qo‘ymasligi kerak.
+                        final notifier = ref.read(
+                          settingsControllerProvider.notifier,
+                        );
+                        if (context.canPop()) context.pop();
+                        await notifier.setLocale(locale);
                       },
                     ),
                 ],
@@ -63,8 +68,9 @@ class ModePickerScreen extends ConsumerWidget {
     final l = AppLocalizations.of(context);
     final current = ref.watch(settingsControllerProvider).userMode;
     Future<void> choose(UserMode m) async {
-      await ref.read(settingsControllerProvider.notifier).setUserMode(m);
-      if (context.mounted) context.pop();
+      final notifier = ref.read(settingsControllerProvider.notifier);
+      if (context.canPop()) context.pop();
+      await notifier.setUserMode(m);
     }
 
     final options = [
@@ -80,12 +86,6 @@ class ModePickerScreen extends ConsumerWidget {
         l.modeStudent,
         l.modeStudentDescription,
       ),
-      (
-        UserMode.research,
-        Icons.menu_book_outlined,
-        l.modeResearch,
-        l.modeResearchDescription,
-      ),
     ];
     return Scaffold(
       appBar: AppBar(title: Text(l.settingsMode)),
@@ -94,8 +94,15 @@ class ModePickerScreen extends ConsumerWidget {
           padding: const EdgeInsets.symmetric(vertical: FeSpace.md),
           child: Column(
             children: [
+              FeBanner(
+                key: const Key('picker.mode.note'),
+                icon: Icons.verified_user_outlined,
+                text: l.modeSwitchNote,
+              ),
+              const SizedBox(height: FeSpace.sm),
               for (final (mode, icon, title, desc) in options) ...[
                 ModeOptionCard(
+                  key: Key('picker.mode.${mode.name}'),
                   icon: icon,
                   title: title,
                   description: desc,

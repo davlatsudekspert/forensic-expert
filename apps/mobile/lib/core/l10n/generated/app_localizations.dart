@@ -184,40 +184,40 @@ abstract class AppLocalizations {
   /// **'I understand'**
   String get disclaimerAccept;
 
-  /// Onboarding usage mode question.
+  /// Mode title.
   ///
   /// In en, this message translates to:
-  /// **'How will you use Forensic Expert?'**
+  /// **'How will you use FORENSIC EXPERT?'**
   String get modeTitle;
 
-  /// Explains that mode can be changed.
+  /// Mode subtitle.
   ///
   /// In en, this message translates to:
-  /// **'This adapts your dashboard. You can change it later in Profile.'**
+  /// **'The home screen adapts to your choice. You can change it later in Profile.'**
   String get modeSubtitle;
 
-  /// Usage mode.
+  /// Mode.
   ///
   /// In en, this message translates to:
   /// **'Professional'**
   String get modeProfessional;
 
-  /// Usage mode description.
+  /// Mode description.
   ///
   /// In en, this message translates to:
-  /// **'Forensic medical and toxicology experts, laboratory specialists'**
+  /// **'Forensic experts, physicians, toxicologists, chemists, laboratory and other forensic specialists'**
   String get modeProfessionalDescription;
 
-  /// Usage mode.
+  /// Mode.
   ///
   /// In en, this message translates to:
-  /// **'Student / Resident'**
+  /// **'Student'**
   String get modeStudent;
 
-  /// Usage mode description.
+  /// Mode description.
   ///
   /// In en, this message translates to:
-  /// **'Courses, glossary, flashcards and practice'**
+  /// **'Students, residents and trainees, researchers and learners'**
   String get modeStudentDescription;
 
   /// Usage mode.
@@ -1420,10 +1420,10 @@ abstract class AppLocalizations {
   /// **'Draft. This document will be published after professional legal review.'**
   String get legalDraftNotice;
 
-  /// Privacy draft summary.
+  /// Privacy summary.
   ///
   /// In en, this message translates to:
-  /// **'The core library and calculators work offline. Search history and progress stay on your device. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically.'**
+  /// **'The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically.'**
   String get privacySummary;
 
   /// About text.
@@ -7053,6 +7053,1307 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Forensic science reference'**
   String get homeHeaderSubtitle;
+
+  /// Sub-role title.
+  ///
+  /// In en, this message translates to:
+  /// **'Your role (optional)'**
+  String get modeRoleTitle;
+
+  /// Professional mode notice.
+  ///
+  /// In en, this message translates to:
+  /// **'Choosing Professional mode does not mean that your professional status is verified.'**
+  String get modeProfessionalNotVerified;
+
+  /// Mode picker notice.
+  ///
+  /// In en, this message translates to:
+  /// **'Usage mode only changes how the app is arranged. It does not grant or remove professional verification.'**
+  String get modeSwitchNote;
+
+  /// Role.
+  ///
+  /// In en, this message translates to:
+  /// **'Student'**
+  String get roleStudent;
+
+  /// Role.
+  ///
+  /// In en, this message translates to:
+  /// **'Resident / trainee'**
+  String get roleResident;
+
+  /// Role.
+  ///
+  /// In en, this message translates to:
+  /// **'Researcher / learner'**
+  String get roleResearcher;
+
+  /// Role.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic expert'**
+  String get roleForensicExpert;
+
+  /// Role.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic physician'**
+  String get roleForensicPhysician;
+
+  /// Role.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic toxicologist'**
+  String get roleForensicToxicologist;
+
+  /// Role.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic chemist'**
+  String get roleForensicChemist;
+
+  /// Role.
+  ///
+  /// In en, this message translates to:
+  /// **'Laboratory specialist'**
+  String get roleLaboratorySpecialist;
+
+  /// Role.
+  ///
+  /// In en, this message translates to:
+  /// **'Pathologist'**
+  String get rolePathologist;
+
+  /// Role.
+  ///
+  /// In en, this message translates to:
+  /// **'Geneticist / DNA specialist'**
+  String get roleGeneticist;
+
+  /// Role.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic biochemist'**
+  String get roleForensicBiochemist;
+
+  /// Role.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic anthropologist'**
+  String get roleAnthropologist;
+
+  /// Role.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic odontologist'**
+  String get roleOdontologist;
+
+  /// Role.
+  ///
+  /// In en, this message translates to:
+  /// **'Other forensic / laboratory professional'**
+  String get roleOtherProfessional;
+
+  /// Specialty.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic medicine'**
+  String get specForensicMedicine;
+
+  /// Specialty.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic toxicology'**
+  String get specForensicToxicology;
+
+  /// Specialty.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic chemistry'**
+  String get specForensicChemistry;
+
+  /// Specialty.
+  ///
+  /// In en, this message translates to:
+  /// **'Analytical / laboratory science'**
+  String get specAnalyticalLaboratory;
+
+  /// Specialty.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic biochemistry'**
+  String get specForensicBiochemistry;
+
+  /// Specialty.
+  ///
+  /// In en, this message translates to:
+  /// **'Pathology / histology'**
+  String get specPathologyHistology;
+
+  /// Specialty.
+  ///
+  /// In en, this message translates to:
+  /// **'Genetics / DNA'**
+  String get specGeneticsDna;
+
+  /// Specialty.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic anthropology'**
+  String get specForensicAnthropology;
+
+  /// Specialty.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic odontology'**
+  String get specForensicOdontology;
+
+  /// Specialty.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic radiology'**
+  String get specForensicRadiology;
+
+  /// Specialty.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic psychology / psychiatry'**
+  String get specForensicPsychology;
+
+  /// Specialty.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic biology'**
+  String get specForensicBiology;
+
+  /// Specialty.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic entomology'**
+  String get specEntomology;
+
+  /// Specialty.
+  ///
+  /// In en, this message translates to:
+  /// **'Other'**
+  String get specOther;
+
+  /// Reviewer scope.
+  ///
+  /// In en, this message translates to:
+  /// **'Law and jurisdiction'**
+  String get scopeLegal;
+
+  /// Reviewer scope.
+  ///
+  /// In en, this message translates to:
+  /// **'Translation'**
+  String get scopeTranslation;
+
+  /// Study level.
+  ///
+  /// In en, this message translates to:
+  /// **'Bachelor’s'**
+  String get studyBachelor;
+
+  /// Study level.
+  ///
+  /// In en, this message translates to:
+  /// **'Master’s'**
+  String get studyMaster;
+
+  /// Study level.
+  ///
+  /// In en, this message translates to:
+  /// **'Residency / clinical training'**
+  String get studyResidency;
+
+  /// Study level.
+  ///
+  /// In en, this message translates to:
+  /// **'Doctoral'**
+  String get studyDoctoral;
+
+  /// Study level.
+  ///
+  /// In en, this message translates to:
+  /// **'Other'**
+  String get studyOther;
+
+  /// Account step title.
+  ///
+  /// In en, this message translates to:
+  /// **'Use the app without an account'**
+  String get accountChoiceTitle;
+
+  /// Account step subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'The offline scientific database, search and calculators work without an account. An account is needed only for cloud features.'**
+  String get accountChoiceSubtitle;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue without an account'**
+  String get accountContinueWithout;
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'You can create an account later in Profile.'**
+  String get accountContinueWithoutNote;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Create account / Sign in'**
+  String get accountCreateOrSignIn;
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'The cloud account service is not connected in this version. Everything offline keeps working.'**
+  String get accountCloudUnavailable;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'An account is needed for'**
+  String get accountNeededFor;
+
+  /// Item.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional verification'**
+  String get accountNeedVerification;
+
+  /// Item.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional reviews of scientific content'**
+  String get accountNeedReviews;
+
+  /// Item.
+  ///
+  /// In en, this message translates to:
+  /// **'Synchronisation between devices'**
+  String get accountNeedSync;
+
+  /// Item.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscriptions across devices'**
+  String get accountNeedSubscriptions;
+
+  /// Item.
+  ///
+  /// In en, this message translates to:
+  /// **'Cloud AI (when connected)'**
+  String get accountNeedCloudAi;
+
+  /// Item.
+  ///
+  /// In en, this message translates to:
+  /// **'Institutional features'**
+  String get accountNeedInstitution;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Fill in profile now (optional)'**
+  String get accountFillProfile;
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile details are stored only on this device and are not sent anywhere.'**
+  String get profileLocalOnlyNote;
+
+  /// Screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Student profile'**
+  String get profileStudentTitle;
+
+  /// Screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional profile'**
+  String get profileProTitle;
+
+  /// Snackbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile saved on this device'**
+  String get profileSaved;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Personal details'**
+  String get profileSectionIdentity;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional details'**
+  String get profileSectionWork;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Optional'**
+  String get profileSectionOptional;
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'Student profiles are for learning: they cannot verify scientific content or perform qualified reviews.'**
+  String get profileStudentCannotReview;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Full name'**
+  String get fieldFullName;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Country'**
+  String get fieldCountry;
+
+  /// Field hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a country'**
+  String get fieldCountryChoose;
+
+  /// Search hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search country'**
+  String get fieldCountrySearch;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'City / region (optional)'**
+  String get fieldCity;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'University / institution (optional)'**
+  String get fieldInstitution;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Faculty / programme (optional)'**
+  String get fieldFaculty;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Study level (optional)'**
+  String get fieldStudyLevel;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Areas of interest'**
+  String get fieldInterests;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Organisation / institution'**
+  String get fieldOrganization;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Position / job title'**
+  String get fieldPosition;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Primary specialty'**
+  String get fieldPrimarySpecialty;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Additional specialties'**
+  String get fieldAdditionalSpecialties;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Years of professional experience'**
+  String get fieldYearsExperience;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Education / qualification'**
+  String get fieldEducation;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Work e-mail (optional)'**
+  String get fieldWorkEmail;
+
+  /// Helper.
+  ///
+  /// In en, this message translates to:
+  /// **'Private — never shown on your public profile.'**
+  String get fieldPrivateHelper;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional registration / licence number (optional)'**
+  String get fieldLicense;
+
+  /// Helper.
+  ///
+  /// In en, this message translates to:
+  /// **'Only if your country issues one. Private — never shown publicly.'**
+  String get fieldLicenseHelper;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Short professional biography (optional)'**
+  String get fieldBio;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Languages (comma separated)'**
+  String get fieldLanguages;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional interests (optional)'**
+  String get fieldProInterests;
+
+  /// Switch.
+  ///
+  /// In en, this message translates to:
+  /// **'Show organisation on public profile'**
+  String get fieldShowOrganization;
+
+  /// Helper.
+  ///
+  /// In en, this message translates to:
+  /// **'Off by default. Name, specialty and country are public only after verification.'**
+  String get fieldShowOrganizationHelper;
+
+  /// Form error.
+  ///
+  /// In en, this message translates to:
+  /// **'Required field'**
+  String get formRequired;
+
+  /// Form error.
+  ///
+  /// In en, this message translates to:
+  /// **'Too long'**
+  String get formTooLong;
+
+  /// Form error.
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid value'**
+  String get formInvalid;
+
+  /// Form error summary.
+  ///
+  /// In en, this message translates to:
+  /// **'Please correct the highlighted fields.'**
+  String get formHasErrors;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get actionSave;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove'**
+  String get actionRemove;
+
+  /// Screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional verification'**
+  String get verifTitle;
+
+  /// Label.
+  ///
+  /// In en, this message translates to:
+  /// **'Current status'**
+  String get verifStatusLabel;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Not verified'**
+  String get verifUnverified;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Review pending'**
+  String get verifPending;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Verified professional'**
+  String get verifVerified;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'More information needed'**
+  String get verifChangesRequested;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Rejected'**
+  String get verifRejected;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Temporarily suspended'**
+  String get verifSuspended;
+
+  /// Status body.
+  ///
+  /// In en, this message translates to:
+  /// **'You have not applied for verification. All offline features are available without it.'**
+  String get verifUnverifiedBody;
+
+  /// Status body.
+  ///
+  /// In en, this message translates to:
+  /// **'Your application is waiting for review by an authorised person.'**
+  String get verifPendingBody;
+
+  /// Status body.
+  ///
+  /// In en, this message translates to:
+  /// **'Your professional status was confirmed by an authorised person. Review rights are granted separately for each specialty.'**
+  String get verifVerifiedBody;
+
+  /// Status body.
+  ///
+  /// In en, this message translates to:
+  /// **'Additional information is needed. Update your profile or documents and resubmit.'**
+  String get verifChangesBody;
+
+  /// Status body.
+  ///
+  /// In en, this message translates to:
+  /// **'The application was not approved. You can submit a new application.'**
+  String get verifRejectedBody;
+
+  /// Status body.
+  ///
+  /// In en, this message translates to:
+  /// **'Verification is temporarily suspended. Review rights are not active.'**
+  String get verifSuspendedBody;
+
+  /// Banner.
+  ///
+  /// In en, this message translates to:
+  /// **'The verification service is not connected in this version. Applications cannot be sent and nobody can be verified yet.'**
+  String get verifServiceNotConnected;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'How verification works'**
+  String get verifHowTitle;
+
+  /// Step.
+  ///
+  /// In en, this message translates to:
+  /// **'Fill in your professional profile.'**
+  String get verifStep1;
+
+  /// Step.
+  ///
+  /// In en, this message translates to:
+  /// **'Optionally attach a qualification document (stored privately).'**
+  String get verifStep2;
+
+  /// Step.
+  ///
+  /// In en, this message translates to:
+  /// **'An authorised administrator or a verified professional of the same specialty reviews the application and the document manually. Self-approval is impossible.'**
+  String get verifStep3;
+
+  /// Step.
+  ///
+  /// In en, this message translates to:
+  /// **'Review rights are granted separately for each specialty.'**
+  String get verifStep4;
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'Selecting Professional mode, entering a job title, uploading a certificate or an automated/AI check never grants verified status. A document is evidence only; status is granted only after manual review, and who approved it, when, which document was checked and for which specialty are recorded.'**
+  String get verifHumanOnly;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Application'**
+  String get verifApplication;
+
+  /// Value.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional profile is not filled in'**
+  String get verifProfileMissing;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit application'**
+  String get verifSubmit;
+
+  /// Snackbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Application sent. Status: review pending.'**
+  String get verifSubmitted;
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'Submitting is unavailable until the verification service is connected.'**
+  String get verifSubmitUnavailable;
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'The application and documents are sent over an encrypted connection to private storage.'**
+  String get verifSubmitNote;
+
+  /// Public profile.
+  ///
+  /// In en, this message translates to:
+  /// **'{years} years of experience'**
+  String proYearsExperience(int years);
+
+  /// Public profile.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional reviews: {count}'**
+  String proReviewCount(int count);
+
+  /// Failure.
+  ///
+  /// In en, this message translates to:
+  /// **'The cloud service is not connected in this version.'**
+  String get proServiceNotConnected;
+
+  /// Failure.
+  ///
+  /// In en, this message translates to:
+  /// **'Check the entered data.'**
+  String get proInvalidInput;
+
+  /// Failure.
+  ///
+  /// In en, this message translates to:
+  /// **'No internet connection.'**
+  String get proOffline;
+
+  /// Failure.
+  ///
+  /// In en, this message translates to:
+  /// **'The service is temporarily unavailable. Try again later.'**
+  String get proServerError;
+
+  /// Screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Upload qualification document'**
+  String get credUploadTitle;
+
+  /// Value.
+  ///
+  /// In en, this message translates to:
+  /// **'Optional'**
+  String get credOptional;
+
+  /// Value.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 file selected} other{{count} files selected}}'**
+  String credSelectedCount(int count);
+
+  /// Intro.
+  ///
+  /// In en, this message translates to:
+  /// **'A document is optional and only helps an authorised person check your application. It never grants verified status by itself.'**
+  String get credIntro;
+
+  /// Privacy banner.
+  ///
+  /// In en, this message translates to:
+  /// **'Documents are private: they are never shown publicly, have no public link and their contents are not logged. Only an authorised verifier can open them.'**
+  String get credPrivacy;
+
+  /// Warning.
+  ///
+  /// In en, this message translates to:
+  /// **'Do not upload case materials, evidence, expert reports or any confidential case records. Passport or ID documents are not required.'**
+  String get credNoCaseData;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Document type'**
+  String get credKindTitle;
+
+  /// Document type.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional certificate'**
+  String get credProfessionalCertificate;
+
+  /// Document type.
+  ///
+  /// In en, this message translates to:
+  /// **'Qualification certificate'**
+  String get credQualificationCertificate;
+
+  /// Document type.
+  ///
+  /// In en, this message translates to:
+  /// **'Diploma'**
+  String get credDiploma;
+
+  /// Document type.
+  ///
+  /// In en, this message translates to:
+  /// **'Employment / appointment evidence'**
+  String get credEmployment;
+
+  /// Document type.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional registration / licence document'**
+  String get credRegistration;
+
+  /// Document type.
+  ///
+  /// In en, this message translates to:
+  /// **'Recognised training certificate'**
+  String get credTraining;
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'PDF, JPG or PNG, up to 10 MB per file, up to 5 files.'**
+  String get credFormats;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose file'**
+  String get credChooseFile;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Selected documents'**
+  String get credSelectedTitle;
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'Not uploaded: the verification service is not connected. Files stay only in memory on this device and are discarded when the app closes.'**
+  String get credNotUploaded;
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'Files will be sent privately together with the application.'**
+  String get credWillSendOnSubmit;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open the file.'**
+  String get credPickFailed;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'The file is empty.'**
+  String get credErrorEmpty;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'The file is larger than 10 MB.'**
+  String get credErrorTooLarge;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Only PDF, JPG and PNG files are accepted.'**
+  String get credErrorType;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'No more than 5 files.'**
+  String get credErrorTooMany;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional review'**
+  String get reviewSectionTitle;
+
+  /// Empty state.
+  ///
+  /// In en, this message translates to:
+  /// **'This material has not yet been reviewed by a qualified professional.'**
+  String get reviewEmpty;
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'Only verified professionals with review rights in the relevant specialty can review this material.'**
+  String get reviewWhoCanReview;
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'A review specialty has not yet been assigned to this record.'**
+  String get reviewScopeNotAssigned;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Write a professional review'**
+  String get reviewWrite;
+
+  /// Label.
+  ///
+  /// In en, this message translates to:
+  /// **'Decision'**
+  String get reviewDecision;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Approve'**
+  String get reviewActApprove;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Request correction'**
+  String get reviewActRequestChange;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Flag conflicting evidence'**
+  String get reviewActConflict;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Flag as outdated'**
+  String get reviewActOutdated;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Reject'**
+  String get reviewActReject;
+
+  /// Decision.
+  ///
+  /// In en, this message translates to:
+  /// **'Approved'**
+  String get reviewDecApprove;
+
+  /// Decision.
+  ///
+  /// In en, this message translates to:
+  /// **'Correction required'**
+  String get reviewDecRequestChange;
+
+  /// Decision.
+  ///
+  /// In en, this message translates to:
+  /// **'Conflicting evidence'**
+  String get reviewDecConflict;
+
+  /// Decision.
+  ///
+  /// In en, this message translates to:
+  /// **'Outdated'**
+  String get reviewDecOutdated;
+
+  /// Decision.
+  ///
+  /// In en, this message translates to:
+  /// **'Rejected'**
+  String get reviewDecReject;
+
+  /// Review state.
+  ///
+  /// In en, this message translates to:
+  /// **'Review in progress'**
+  String get reviewStateInProgress;
+
+  /// Review state.
+  ///
+  /// In en, this message translates to:
+  /// **'Professionally reviewed'**
+  String get reviewStateProfessional;
+
+  /// Review state.
+  ///
+  /// In en, this message translates to:
+  /// **'Scientifically verified by humans'**
+  String get reviewStateHumanVerified;
+
+  /// Review state.
+  ///
+  /// In en, this message translates to:
+  /// **'Re-review required'**
+  String get reviewStateReReview;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Review note'**
+  String get reviewNote;
+
+  /// Helper.
+  ///
+  /// In en, this message translates to:
+  /// **'Explain the decision with reference to the evidence. At least 20 characters.'**
+  String get reviewNoteHelper;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'At least 20 characters are required.'**
+  String get reviewNoteTooShort;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Supporting source (optional)'**
+  String get reviewSourceRef;
+
+  /// Helper.
+  ///
+  /// In en, this message translates to:
+  /// **'DOI, PMID or an https link'**
+  String get reviewSourceHelper;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a DOI, PMID or https link.'**
+  String get reviewSourceInvalid;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit review'**
+  String get reviewSubmit;
+
+  /// Snackbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Review submitted'**
+  String get reviewSubmitted;
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'A single review does not make content scientifically verified. Verification requires independent qualified reviews under the verification policy.'**
+  String get reviewNotVerification;
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'The review applies to content version {version}. If the content changes, a re-review is required.'**
+  String reviewVersionNote(String version);
+
+  /// Review footer.
+  ///
+  /// In en, this message translates to:
+  /// **'Reviewed {date} · content version {version}'**
+  String reviewMeta(String date, String version);
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'Written for an earlier content version — kept in the history; a re-review is required.'**
+  String get reviewStale;
+
+  /// Permission.
+  ///
+  /// In en, this message translates to:
+  /// **'You can review this material.'**
+  String get reviewPermAllowed;
+
+  /// Permission.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in to your account first.'**
+  String get reviewPermSignIn;
+
+  /// Permission.
+  ///
+  /// In en, this message translates to:
+  /// **'Reviews can be written only by verified professionals.'**
+  String get reviewPermNotVerified;
+
+  /// Permission.
+  ///
+  /// In en, this message translates to:
+  /// **'Your verification is suspended; reviewing is unavailable.'**
+  String get reviewPermSuspended;
+
+  /// Permission.
+  ///
+  /// In en, this message translates to:
+  /// **'You do not have review rights for this specialty.'**
+  String get reviewPermScope;
+
+  /// Permission.
+  ///
+  /// In en, this message translates to:
+  /// **'Switch to Professional mode to write reviews. Your verification is kept.'**
+  String get reviewPermStudentMode;
+
+  /// Layer.
+  ///
+  /// In en, this message translates to:
+  /// **'Source attached'**
+  String get layerSource;
+
+  /// Layer value.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 source} other{{count} sources}}'**
+  String layerSourceCount(int count);
+
+  /// Missing source.
+  ///
+  /// In en, this message translates to:
+  /// **'No reliable source attached.'**
+  String get noReliableSource;
+
+  /// Layer.
+  ///
+  /// In en, this message translates to:
+  /// **'Identifier (DOI/PMID) checked'**
+  String get layerIdentifier;
+
+  /// Layer value.
+  ///
+  /// In en, this message translates to:
+  /// **'Checked'**
+  String get layerIdentifierOk;
+
+  /// Layer value.
+  ///
+  /// In en, this message translates to:
+  /// **'Not yet checked'**
+  String get layerIdentifierPending;
+
+  /// Layer value.
+  ///
+  /// In en, this message translates to:
+  /// **'Not applicable'**
+  String get layerNotApplicable;
+
+  /// Layer.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional reviews'**
+  String get layerProfessional;
+
+  /// Layer.
+  ///
+  /// In en, this message translates to:
+  /// **'Human scientific verification'**
+  String get layerHuman;
+
+  /// Layer value.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} of {required} independent approvals'**
+  String layerHumanCount(int count, int required);
+
+  /// Screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Review workspace'**
+  String get dashboardTitle;
+
+  /// Empty state.
+  ///
+  /// In en, this message translates to:
+  /// **'Available only to verified professionals with review rights in at least one specialty.'**
+  String get dashboardOnlyVerified;
+
+  /// Empty state.
+  ///
+  /// In en, this message translates to:
+  /// **'No records in this queue.'**
+  String get dashboardQueueEmpty;
+
+  /// Item meta.
+  ///
+  /// In en, this message translates to:
+  /// **'Claims: {claims} · sources: {sources} · evidence: {level} · version {version}'**
+  String dashboardItemMeta(
+    int claims,
+    int sources,
+    String level,
+    String version,
+  );
+
+  /// Queue.
+  ///
+  /// In en, this message translates to:
+  /// **'Needs review'**
+  String get queueNeedsReview;
+
+  /// Queue.
+  ///
+  /// In en, this message translates to:
+  /// **'Assigned to me'**
+  String get queueAssigned;
+
+  /// Queue.
+  ///
+  /// In en, this message translates to:
+  /// **'Reviewed by me'**
+  String get queueReviewedByMe;
+
+  /// Queue.
+  ///
+  /// In en, this message translates to:
+  /// **'Conflicts'**
+  String get queueConflicts;
+
+  /// Queue.
+  ///
+  /// In en, this message translates to:
+  /// **'Re-review required'**
+  String get queueReReview;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Verification'**
+  String get profileSectionVerification;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Data and privacy'**
+  String get profileSectionData;
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional verification applies to Professional mode. Switching mode does not change verification.'**
+  String get profileStudentVerificationNote;
+
+  /// Identity card.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile not filled in'**
+  String get profileNotFilled;
+
+  /// Identity card.
+  ///
+  /// In en, this message translates to:
+  /// **'Fill in profile'**
+  String get profileFillAction;
+
+  /// Identity card.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit profile'**
+  String get profileEditAction;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Sourced records'**
+  String get moduleHubSourced;
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'Shown with their sources and current review status. “Needs review” means available sourced content that is still awaiting expert review — not missing content.'**
+  String get moduleHubSourcedNote;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Open all'**
+  String get moduleHubOpenAll;
+
+  /// Link.
+  ///
+  /// In en, this message translates to:
+  /// **'International standards and guidelines ({count})'**
+  String methodsStandardsLink(int count);
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Sources and provenance'**
+  String get sourceOneTap;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic relevance'**
+  String get researchKeyRelevance;
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'Only bibliographic data and a short description are shown; the full text is available from the publisher.'**
+  String get researchLimitationsNote;
 }
 
 class _AppLocalizationsDelegate

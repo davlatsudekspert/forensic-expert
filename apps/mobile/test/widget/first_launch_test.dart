@@ -61,13 +61,20 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.byType(ModeScreen), findsOneWidget);
     expect(
-      find.text('Forensic Expert’dan qanday foydalanasiz?'),
+      find.text('FORENSIC EXPERT’dan qanday foydalanasiz?'),
       findsOneWidget,
     );
 
     await tester.ensureVisible(find.byKey(const Key('mode.student')));
     await tester.pumpAndSettle();
     await tester.tap(find.byKey(const Key('mode.student')));
+    await tester.pumpAndSettle();
+    await tester.ensureVisible(find.byKey(const Key('mode.continue')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const Key('mode.continue')));
+    await tester.pumpAndSettle();
+    // Hisob ixtiyoriy: hisobsiz davom etish.
+    await tester.tap(find.byKey(const Key('account.skip')));
     await tester.pumpAndSettle();
     expect(find.byType(HomeScreen), findsOneWidget);
     expect(

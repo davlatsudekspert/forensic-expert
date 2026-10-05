@@ -74,20 +74,6 @@ enum HomeModule {
       standardsLaws,
       ai,
     ],
-    UserMode.research => const [
-      research,
-      substances,
-      methods,
-      toxicology,
-      laboratory,
-      screening,
-      reagents,
-      biochemistry,
-      forensicMedicine,
-      standardsLaws,
-      learn,
-      ai,
-    ],
     _ => const [
       forensicMedicine,
       toxicology,
@@ -104,11 +90,14 @@ enum HomeModule {
     ],
   };
 
+  /// Pastki tab (AI) — almashtiriladi; qolganlari ustiga ochiladi (Back).
+  bool get isTab => this == HomeModule.ai;
+
   /// Modul kartochkasi qayerga olib boradi.
   String get route => switch (this) {
     HomeModule.ai => Routes.ai,
     HomeModule.learn => Routes.learn,
-    HomeModule.substances => Routes.library,
+    HomeModule.substances => Routes.librarySection('substances'),
     HomeModule.forensicMedicine => Routes.forensicMedicine,
     HomeModule.biochemistry => Routes.biochemistry,
     HomeModule.reagents => Routes.knowledge(KnowledgeKind.reagent.name),
@@ -161,7 +150,7 @@ class HomeScreen extends ConsumerWidget {
                     ),
                   ),
                   Text(
-                    l.homeHeaderSubtitle,
+                    l.appTagline,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: Theme.of(context).textTheme.labelSmall?.copyWith(
@@ -187,7 +176,7 @@ class HomeScreen extends ConsumerWidget {
                   FeSearchEntry(
                     key: const Key('home.search'),
                     hint: l.searchHint,
-                    onTap: () => context.go(Routes.search),
+                    onTap: () => context.push(Routes.search),
                   ),
                   const SizedBox(height: FeSpace.xs),
                   const _JurisdictionContext(),
@@ -295,7 +284,7 @@ class _ContinueLearningCard extends StatelessWidget {
     final t = Theme.of(context).textTheme;
     return FeCard(
       key: const Key('home.continueLearning'),
-      onTap: () => context.go(Routes.learn),
+      onTap: () => context.push(Routes.learn),
       child: Row(
         children: [
           Icon(Icons.school_outlined, color: c.accent, size: 32),
@@ -354,13 +343,13 @@ class _QuickAccess extends ConsumerWidget {
 
     void openId(String id) {
       if (ToolsCatalog.byId(id) != null) {
-        context.go(Routes.tool(id));
+        context.push(Routes.tool(id));
       } else if (knowledge.byId(id) != null) {
-        context.go(Routes.knowledgeEntry(id));
+        context.push(Routes.knowledgeEntry(id));
       } else if (evidence.researchById(id) != null) {
-        context.go(Routes.researchEntry(id));
+        context.push(Routes.researchEntry(id));
       } else {
-        context.go(Routes.libraryEntry(id));
+        context.push(Routes.libraryEntry(id));
       }
     }
 
@@ -398,7 +387,7 @@ class _QuickAccess extends ConsumerWidget {
           title: l.homeRecentSearches,
           items: [
             for (final q in data.recentSearches)
-              (q, () => context.go(Routes.searchWith(q))),
+              (q, () => context.push(Routes.searchWith(q))),
           ],
         ),
     ];
@@ -443,7 +432,7 @@ class _JurisdictionContext extends ConsumerWidget {
       child: InkWell(
         key: const Key('home.jurisdiction'),
         borderRadius: BorderRadius.circular(FeRadius.sm),
-        onTap: () => context.go(Routes.jurisdictions),
+        onTap: () => context.push(Routes.jurisdictions),
         child: ConstrainedBox(
           constraints: const BoxConstraints(minHeight: 48),
           child: Row(
@@ -489,7 +478,7 @@ class _AllDisciplinesTile extends StatelessWidget {
         horizontal: FeSpace.md,
         vertical: FeSpace.sm,
       ),
-      onTap: () => context.go(Routes.disciplines),
+      onTap: () => context.push(Routes.disciplines),
       child: Row(
         children: [
           Icon(Icons.apps_outlined, color: c.accent),
@@ -669,7 +658,9 @@ class _ModuleCard extends StatelessWidget {
         margin: EdgeInsets.zero,
         child: InkWell(
           key: Key('home.module.${module.name}'),
-          onTap: () => context.go(module.route),
+          onTap: () => module.isTab
+              ? context.go(module.route)
+              : context.push(module.route),
           child: ConstrainedBox(
             constraints: const BoxConstraints(minHeight: 88),
             child: Padding(

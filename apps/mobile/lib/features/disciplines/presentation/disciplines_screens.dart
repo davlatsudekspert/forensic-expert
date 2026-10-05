@@ -117,7 +117,7 @@ class DisciplinesScreen extends ConsumerWidget {
                               ),
                               trailing: const Icon(Icons.chevron_right),
                               onTap: () =>
-                                  context.go(Routes.discipline(d.code)),
+                                  context.push(Routes.discipline(d.code)),
                             );
                           },
                         ),
@@ -198,7 +198,7 @@ class DisciplineScreen extends ConsumerWidget {
                         leading: Icon(m.icon, color: c.accent),
                         title: Text(m.label(l)),
                         trailing: const Icon(Icons.chevron_right),
-                        onTap: () => context.go(m.route),
+                        onTap: () => context.push(m.route),
                       ),
                   ],
                   if (ownTopics.isNotEmpty) ...[

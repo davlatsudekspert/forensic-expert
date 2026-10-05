@@ -218,7 +218,7 @@ class _LibrarySectionScreenState extends ConsumerState<LibrarySectionScreen> {
                           (
                             label: l.availSearch,
                             icon: Icons.search,
-                            onTap: () => context.go(Routes.search),
+                            onTap: () => context.push(Routes.search),
                           ),
                           (
                             label: l.availBrowseAll,
@@ -244,7 +244,7 @@ class _LibrarySectionScreenState extends ConsumerState<LibrarySectionScreen> {
                         (
                           label: l.availSearch,
                           icon: Icons.search,
-                          onTap: () => context.go(Routes.search),
+                          onTap: () => context.push(Routes.search),
                         ),
                       ],
                     )
@@ -258,7 +258,7 @@ class _LibrarySectionScreenState extends ConsumerState<LibrarySectionScreen> {
                             horizontal: FeSpace.md,
                             vertical: FeSpace.sm,
                           ),
-                          onTap: () => context.go(Routes.libraryEntry(e.id)),
+                          onTap: () => context.push(Routes.libraryEntry(e.id)),
                           child: Row(
                             children: [
                               Icon(_section.icon, color: c.accent),
@@ -455,7 +455,7 @@ class LibraryScreen extends ConsumerWidget {
             horizontal: FeSpace.md,
             vertical: FeSpace.sm,
           ),
-          onTap: () => context.go(route(id)),
+          onTap: () => context.push(route(id)),
           child: Row(
             children: [
               Icon(icon, color: c.accent),
@@ -567,7 +567,7 @@ class StandardsScreen extends ConsumerWidget {
                       title: Text(m.name.resolve(lang)),
                       subtitle: kindLine(documentKindOfMethod(m.method!.kind)),
                       trailing: const Icon(Icons.chevron_right),
-                      onTap: () => context.go(Routes.knowledgeEntry(m.id)),
+                      onTap: () => context.push(Routes.knowledgeEntry(m.id)),
                     ),
                   for (final i in instruments)
                     ListTile(
@@ -577,7 +577,7 @@ class StandardsScreen extends ConsumerWidget {
                       subtitle: kindLine(documentKindOfInstrument(i.type)),
                       trailing: const Icon(Icons.chevron_right),
                       onTap: () =>
-                          context.go(Routes.jurisdiction(i.jurisdictionId)),
+                          context.push(Routes.jurisdiction(i.jurisdictionId)),
                     ),
                   const SizedBox(height: FeSpace.lg),
                 ],

@@ -37,6 +37,14 @@ const shellScreens = <String>[
   Routes.compare,
   Routes.exam,
   '/tools/tool/tool.lab.solution',
+  // Ro‘yxatdan o‘tish, professional tasdiqlash, taqriz.
+  Routes.welcomeAccount,
+  Routes.welcomeProfile,
+  Routes.profileEdit,
+  Routes.verification,
+  Routes.verificationDocuments,
+  Routes.reviewDashboard,
+  '/home/module/laboratory',
 ];
 
 const onboardingScreens = <String>[

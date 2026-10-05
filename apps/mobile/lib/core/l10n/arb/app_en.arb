@@ -64,29 +64,29 @@
   "@disclaimerAccept": {
     "description": "Accept disclaimer button."
   },
-  "modeTitle": "How will you use Forensic Expert?",
+  "modeTitle": "How will you use FORENSIC EXPERT?",
   "@modeTitle": {
-    "description": "Onboarding usage mode question."
+    "description": "Mode title."
   },
-  "modeSubtitle": "This adapts your dashboard. You can change it later in Profile.",
+  "modeSubtitle": "The home screen adapts to your choice. You can change it later in Profile.",
   "@modeSubtitle": {
-    "description": "Explains that mode can be changed."
+    "description": "Mode subtitle."
   },
   "modeProfessional": "Professional",
   "@modeProfessional": {
-    "description": "Usage mode."
+    "description": "Mode."
   },
-  "modeProfessionalDescription": "Forensic medical and toxicology experts, laboratory specialists",
+  "modeProfessionalDescription": "Forensic experts, physicians, toxicologists, chemists, laboratory and other forensic specialists",
   "@modeProfessionalDescription": {
-    "description": "Usage mode description."
+    "description": "Mode description."
   },
-  "modeStudent": "Student / Resident",
+  "modeStudent": "Student",
   "@modeStudent": {
-    "description": "Usage mode."
+    "description": "Mode."
   },
-  "modeStudentDescription": "Courses, glossary, flashcards and practice",
+  "modeStudentDescription": "Students, residents and trainees, researchers and learners",
   "@modeStudentDescription": {
-    "description": "Usage mode description."
+    "description": "Mode description."
   },
   "modeResearch": "Research / Education",
   "@modeResearch": {
@@ -933,9 +933,9 @@
   "@legalDraftNotice": {
     "description": "Draft notice on legal documents."
   },
-  "privacySummary": "The core library and calculators work offline. Search history and progress stay on your device. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically.",
+  "privacySummary": "The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically.",
   "@privacySummary": {
-    "description": "Privacy draft summary."
+    "description": "Privacy summary."
   },
   "aboutBody": "Professional forensic reference, education and scientific calculation software.",
   "@aboutBody": {
@@ -5015,5 +5015,929 @@
   "homeHeaderSubtitle": "Forensic science reference",
   "@homeHeaderSubtitle": {
     "description": "Home header subtitle."
+  },
+  "modeRoleTitle": "Your role (optional)",
+  "@modeRoleTitle": {
+    "description": "Sub-role title."
+  },
+  "modeProfessionalNotVerified": "Choosing Professional mode does not mean that your professional status is verified.",
+  "@modeProfessionalNotVerified": {
+    "description": "Professional mode notice."
+  },
+  "modeSwitchNote": "Usage mode only changes how the app is arranged. It does not grant or remove professional verification.",
+  "@modeSwitchNote": {
+    "description": "Mode picker notice."
+  },
+  "roleStudent": "Student",
+  "@roleStudent": {
+    "description": "Role."
+  },
+  "roleResident": "Resident / trainee",
+  "@roleResident": {
+    "description": "Role."
+  },
+  "roleResearcher": "Researcher / learner",
+  "@roleResearcher": {
+    "description": "Role."
+  },
+  "roleForensicExpert": "Forensic expert",
+  "@roleForensicExpert": {
+    "description": "Role."
+  },
+  "roleForensicPhysician": "Forensic physician",
+  "@roleForensicPhysician": {
+    "description": "Role."
+  },
+  "roleForensicToxicologist": "Forensic toxicologist",
+  "@roleForensicToxicologist": {
+    "description": "Role."
+  },
+  "roleForensicChemist": "Forensic chemist",
+  "@roleForensicChemist": {
+    "description": "Role."
+  },
+  "roleLaboratorySpecialist": "Laboratory specialist",
+  "@roleLaboratorySpecialist": {
+    "description": "Role."
+  },
+  "rolePathologist": "Pathologist",
+  "@rolePathologist": {
+    "description": "Role."
+  },
+  "roleGeneticist": "Geneticist / DNA specialist",
+  "@roleGeneticist": {
+    "description": "Role."
+  },
+  "roleForensicBiochemist": "Forensic biochemist",
+  "@roleForensicBiochemist": {
+    "description": "Role."
+  },
+  "roleAnthropologist": "Forensic anthropologist",
+  "@roleAnthropologist": {
+    "description": "Role."
+  },
+  "roleOdontologist": "Forensic odontologist",
+  "@roleOdontologist": {
+    "description": "Role."
+  },
+  "roleOtherProfessional": "Other forensic / laboratory professional",
+  "@roleOtherProfessional": {
+    "description": "Role."
+  },
+  "specForensicMedicine": "Forensic medicine",
+  "@specForensicMedicine": {
+    "description": "Specialty."
+  },
+  "specForensicToxicology": "Forensic toxicology",
+  "@specForensicToxicology": {
+    "description": "Specialty."
+  },
+  "specForensicChemistry": "Forensic chemistry",
+  "@specForensicChemistry": {
+    "description": "Specialty."
+  },
+  "specAnalyticalLaboratory": "Analytical / laboratory science",
+  "@specAnalyticalLaboratory": {
+    "description": "Specialty."
+  },
+  "specForensicBiochemistry": "Forensic biochemistry",
+  "@specForensicBiochemistry": {
+    "description": "Specialty."
+  },
+  "specPathologyHistology": "Pathology / histology",
+  "@specPathologyHistology": {
+    "description": "Specialty."
+  },
+  "specGeneticsDna": "Genetics / DNA",
+  "@specGeneticsDna": {
+    "description": "Specialty."
+  },
+  "specForensicAnthropology": "Forensic anthropology",
+  "@specForensicAnthropology": {
+    "description": "Specialty."
+  },
+  "specForensicOdontology": "Forensic odontology",
+  "@specForensicOdontology": {
+    "description": "Specialty."
+  },
+  "specForensicRadiology": "Forensic radiology",
+  "@specForensicRadiology": {
+    "description": "Specialty."
+  },
+  "specForensicPsychology": "Forensic psychology / psychiatry",
+  "@specForensicPsychology": {
+    "description": "Specialty."
+  },
+  "specForensicBiology": "Forensic biology",
+  "@specForensicBiology": {
+    "description": "Specialty."
+  },
+  "specEntomology": "Forensic entomology",
+  "@specEntomology": {
+    "description": "Specialty."
+  },
+  "specOther": "Other",
+  "@specOther": {
+    "description": "Specialty."
+  },
+  "scopeLegal": "Law and jurisdiction",
+  "@scopeLegal": {
+    "description": "Reviewer scope."
+  },
+  "scopeTranslation": "Translation",
+  "@scopeTranslation": {
+    "description": "Reviewer scope."
+  },
+  "studyBachelor": "Bachelor’s",
+  "@studyBachelor": {
+    "description": "Study level."
+  },
+  "studyMaster": "Master’s",
+  "@studyMaster": {
+    "description": "Study level."
+  },
+  "studyResidency": "Residency / clinical training",
+  "@studyResidency": {
+    "description": "Study level."
+  },
+  "studyDoctoral": "Doctoral",
+  "@studyDoctoral": {
+    "description": "Study level."
+  },
+  "studyOther": "Other",
+  "@studyOther": {
+    "description": "Study level."
+  },
+  "accountChoiceTitle": "Use the app without an account",
+  "@accountChoiceTitle": {
+    "description": "Account step title."
+  },
+  "accountChoiceSubtitle": "The offline scientific database, search and calculators work without an account. An account is needed only for cloud features.",
+  "@accountChoiceSubtitle": {
+    "description": "Account step subtitle."
+  },
+  "accountContinueWithout": "Continue without an account",
+  "@accountContinueWithout": {
+    "description": "Action."
+  },
+  "accountContinueWithoutNote": "You can create an account later in Profile.",
+  "@accountContinueWithoutNote": {
+    "description": "Note."
+  },
+  "accountCreateOrSignIn": "Create account / Sign in",
+  "@accountCreateOrSignIn": {
+    "description": "Action."
+  },
+  "accountCloudUnavailable": "The cloud account service is not connected in this version. Everything offline keeps working.",
+  "@accountCloudUnavailable": {
+    "description": "Note."
+  },
+  "accountNeededFor": "An account is needed for",
+  "@accountNeededFor": {
+    "description": "Section."
+  },
+  "accountNeedVerification": "Professional verification",
+  "@accountNeedVerification": {
+    "description": "Item."
+  },
+  "accountNeedReviews": "Professional reviews of scientific content",
+  "@accountNeedReviews": {
+    "description": "Item."
+  },
+  "accountNeedSync": "Synchronisation between devices",
+  "@accountNeedSync": {
+    "description": "Item."
+  },
+  "accountNeedSubscriptions": "Subscriptions across devices",
+  "@accountNeedSubscriptions": {
+    "description": "Item."
+  },
+  "accountNeedCloudAi": "Cloud AI (when connected)",
+  "@accountNeedCloudAi": {
+    "description": "Item."
+  },
+  "accountNeedInstitution": "Institutional features",
+  "@accountNeedInstitution": {
+    "description": "Item."
+  },
+  "accountFillProfile": "Fill in profile now (optional)",
+  "@accountFillProfile": {
+    "description": "Action."
+  },
+  "profileLocalOnlyNote": "Profile details are stored only on this device and are not sent anywhere.",
+  "@profileLocalOnlyNote": {
+    "description": "Note."
+  },
+  "profileStudentTitle": "Student profile",
+  "@profileStudentTitle": {
+    "description": "Screen."
+  },
+  "profileProTitle": "Professional profile",
+  "@profileProTitle": {
+    "description": "Screen."
+  },
+  "profileSaved": "Profile saved on this device",
+  "@profileSaved": {
+    "description": "Snackbar."
+  },
+  "profileSectionIdentity": "Personal details",
+  "@profileSectionIdentity": {
+    "description": "Section."
+  },
+  "profileSectionWork": "Professional details",
+  "@profileSectionWork": {
+    "description": "Section."
+  },
+  "profileSectionOptional": "Optional",
+  "@profileSectionOptional": {
+    "description": "Section."
+  },
+  "profileStudentCannotReview": "Student profiles are for learning: they cannot verify scientific content or perform qualified reviews.",
+  "@profileStudentCannotReview": {
+    "description": "Note."
+  },
+  "fieldFullName": "Full name",
+  "@fieldFullName": {
+    "description": "Field."
+  },
+  "fieldCountry": "Country",
+  "@fieldCountry": {
+    "description": "Field."
+  },
+  "fieldCountryChoose": "Choose a country",
+  "@fieldCountryChoose": {
+    "description": "Field hint."
+  },
+  "fieldCountrySearch": "Search country",
+  "@fieldCountrySearch": {
+    "description": "Search hint."
+  },
+  "fieldCity": "City / region (optional)",
+  "@fieldCity": {
+    "description": "Field."
+  },
+  "fieldInstitution": "University / institution (optional)",
+  "@fieldInstitution": {
+    "description": "Field."
+  },
+  "fieldFaculty": "Faculty / programme (optional)",
+  "@fieldFaculty": {
+    "description": "Field."
+  },
+  "fieldStudyLevel": "Study level (optional)",
+  "@fieldStudyLevel": {
+    "description": "Field."
+  },
+  "fieldInterests": "Areas of interest",
+  "@fieldInterests": {
+    "description": "Field."
+  },
+  "fieldOrganization": "Organisation / institution",
+  "@fieldOrganization": {
+    "description": "Field."
+  },
+  "fieldPosition": "Position / job title",
+  "@fieldPosition": {
+    "description": "Field."
+  },
+  "fieldPrimarySpecialty": "Primary specialty",
+  "@fieldPrimarySpecialty": {
+    "description": "Field."
+  },
+  "fieldAdditionalSpecialties": "Additional specialties",
+  "@fieldAdditionalSpecialties": {
+    "description": "Field."
+  },
+  "fieldYearsExperience": "Years of professional experience",
+  "@fieldYearsExperience": {
+    "description": "Field."
+  },
+  "fieldEducation": "Education / qualification",
+  "@fieldEducation": {
+    "description": "Field."
+  },
+  "fieldWorkEmail": "Work e-mail (optional)",
+  "@fieldWorkEmail": {
+    "description": "Field."
+  },
+  "fieldPrivateHelper": "Private — never shown on your public profile.",
+  "@fieldPrivateHelper": {
+    "description": "Helper."
+  },
+  "fieldLicense": "Professional registration / licence number (optional)",
+  "@fieldLicense": {
+    "description": "Field."
+  },
+  "fieldLicenseHelper": "Only if your country issues one. Private — never shown publicly.",
+  "@fieldLicenseHelper": {
+    "description": "Helper."
+  },
+  "fieldBio": "Short professional biography (optional)",
+  "@fieldBio": {
+    "description": "Field."
+  },
+  "fieldLanguages": "Languages (comma separated)",
+  "@fieldLanguages": {
+    "description": "Field."
+  },
+  "fieldProInterests": "Professional interests (optional)",
+  "@fieldProInterests": {
+    "description": "Field."
+  },
+  "fieldShowOrganization": "Show organisation on public profile",
+  "@fieldShowOrganization": {
+    "description": "Switch."
+  },
+  "fieldShowOrganizationHelper": "Off by default. Name, specialty and country are public only after verification.",
+  "@fieldShowOrganizationHelper": {
+    "description": "Helper."
+  },
+  "formRequired": "Required field",
+  "@formRequired": {
+    "description": "Form error."
+  },
+  "formTooLong": "Too long",
+  "@formTooLong": {
+    "description": "Form error."
+  },
+  "formInvalid": "Invalid value",
+  "@formInvalid": {
+    "description": "Form error."
+  },
+  "formHasErrors": "Please correct the highlighted fields.",
+  "@formHasErrors": {
+    "description": "Form error summary."
+  },
+  "actionSave": "Save",
+  "@actionSave": {
+    "description": "Action."
+  },
+  "actionRemove": "Remove",
+  "@actionRemove": {
+    "description": "Action."
+  },
+  "verifTitle": "Professional verification",
+  "@verifTitle": {
+    "description": "Screen."
+  },
+  "verifStatusLabel": "Current status",
+  "@verifStatusLabel": {
+    "description": "Label."
+  },
+  "verifUnverified": "Not verified",
+  "@verifUnverified": {
+    "description": "Status."
+  },
+  "verifPending": "Review pending",
+  "@verifPending": {
+    "description": "Status."
+  },
+  "verifVerified": "Verified professional",
+  "@verifVerified": {
+    "description": "Status."
+  },
+  "verifChangesRequested": "More information needed",
+  "@verifChangesRequested": {
+    "description": "Status."
+  },
+  "verifRejected": "Rejected",
+  "@verifRejected": {
+    "description": "Status."
+  },
+  "verifSuspended": "Temporarily suspended",
+  "@verifSuspended": {
+    "description": "Status."
+  },
+  "verifUnverifiedBody": "You have not applied for verification. All offline features are available without it.",
+  "@verifUnverifiedBody": {
+    "description": "Status body."
+  },
+  "verifPendingBody": "Your application is waiting for review by an authorised person.",
+  "@verifPendingBody": {
+    "description": "Status body."
+  },
+  "verifVerifiedBody": "Your professional status was confirmed by an authorised person. Review rights are granted separately for each specialty.",
+  "@verifVerifiedBody": {
+    "description": "Status body."
+  },
+  "verifChangesBody": "Additional information is needed. Update your profile or documents and resubmit.",
+  "@verifChangesBody": {
+    "description": "Status body."
+  },
+  "verifRejectedBody": "The application was not approved. You can submit a new application.",
+  "@verifRejectedBody": {
+    "description": "Status body."
+  },
+  "verifSuspendedBody": "Verification is temporarily suspended. Review rights are not active.",
+  "@verifSuspendedBody": {
+    "description": "Status body."
+  },
+  "verifServiceNotConnected": "The verification service is not connected in this version. Applications cannot be sent and nobody can be verified yet.",
+  "@verifServiceNotConnected": {
+    "description": "Banner."
+  },
+  "verifHowTitle": "How verification works",
+  "@verifHowTitle": {
+    "description": "Section."
+  },
+  "verifStep1": "Fill in your professional profile.",
+  "@verifStep1": {
+    "description": "Step."
+  },
+  "verifStep2": "Optionally attach a qualification document (stored privately).",
+  "@verifStep2": {
+    "description": "Step."
+  },
+  "verifStep3": "An authorised administrator or a verified professional of the same specialty reviews the application and the document manually. Self-approval is impossible.",
+  "@verifStep3": {
+    "description": "Step."
+  },
+  "verifStep4": "Review rights are granted separately for each specialty.",
+  "@verifStep4": {
+    "description": "Step."
+  },
+  "verifHumanOnly": "Selecting Professional mode, entering a job title, uploading a certificate or an automated/AI check never grants verified status. A document is evidence only; status is granted only after manual review, and who approved it, when, which document was checked and for which specialty are recorded.",
+  "@verifHumanOnly": {
+    "description": "Note."
+  },
+  "verifApplication": "Application",
+  "@verifApplication": {
+    "description": "Section."
+  },
+  "verifProfileMissing": "Professional profile is not filled in",
+  "@verifProfileMissing": {
+    "description": "Value."
+  },
+  "verifSubmit": "Submit application",
+  "@verifSubmit": {
+    "description": "Action."
+  },
+  "verifSubmitted": "Application sent. Status: review pending.",
+  "@verifSubmitted": {
+    "description": "Snackbar."
+  },
+  "verifSubmitUnavailable": "Submitting is unavailable until the verification service is connected.",
+  "@verifSubmitUnavailable": {
+    "description": "Note."
+  },
+  "verifSubmitNote": "The application and documents are sent over an encrypted connection to private storage.",
+  "@verifSubmitNote": {
+    "description": "Note."
+  },
+  "proYearsExperience": "{years} years of experience",
+  "@proYearsExperience": {
+    "description": "Public profile.",
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "proReviewCount": "Professional reviews: {count}",
+  "@proReviewCount": {
+    "description": "Public profile.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "proServiceNotConnected": "The cloud service is not connected in this version.",
+  "@proServiceNotConnected": {
+    "description": "Failure."
+  },
+  "proInvalidInput": "Check the entered data.",
+  "@proInvalidInput": {
+    "description": "Failure."
+  },
+  "proOffline": "No internet connection.",
+  "@proOffline": {
+    "description": "Failure."
+  },
+  "proServerError": "The service is temporarily unavailable. Try again later.",
+  "@proServerError": {
+    "description": "Failure."
+  },
+  "credUploadTitle": "Upload qualification document",
+  "@credUploadTitle": {
+    "description": "Screen."
+  },
+  "credOptional": "Optional",
+  "@credOptional": {
+    "description": "Value."
+  },
+  "credSelectedCount": "{count, plural, =1{1 file selected} other{{count} files selected}}",
+  "@credSelectedCount": {
+    "description": "Value.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "credIntro": "A document is optional and only helps an authorised person check your application. It never grants verified status by itself.",
+  "@credIntro": {
+    "description": "Intro."
+  },
+  "credPrivacy": "Documents are private: they are never shown publicly, have no public link and their contents are not logged. Only an authorised verifier can open them.",
+  "@credPrivacy": {
+    "description": "Privacy banner."
+  },
+  "credNoCaseData": "Do not upload case materials, evidence, expert reports or any confidential case records. Passport or ID documents are not required.",
+  "@credNoCaseData": {
+    "description": "Warning."
+  },
+  "credKindTitle": "Document type",
+  "@credKindTitle": {
+    "description": "Section."
+  },
+  "credProfessionalCertificate": "Professional certificate",
+  "@credProfessionalCertificate": {
+    "description": "Document type."
+  },
+  "credQualificationCertificate": "Qualification certificate",
+  "@credQualificationCertificate": {
+    "description": "Document type."
+  },
+  "credDiploma": "Diploma",
+  "@credDiploma": {
+    "description": "Document type."
+  },
+  "credEmployment": "Employment / appointment evidence",
+  "@credEmployment": {
+    "description": "Document type."
+  },
+  "credRegistration": "Professional registration / licence document",
+  "@credRegistration": {
+    "description": "Document type."
+  },
+  "credTraining": "Recognised training certificate",
+  "@credTraining": {
+    "description": "Document type."
+  },
+  "credFormats": "PDF, JPG or PNG, up to 10 MB per file, up to 5 files.",
+  "@credFormats": {
+    "description": "Note."
+  },
+  "credChooseFile": "Choose file",
+  "@credChooseFile": {
+    "description": "Action."
+  },
+  "credSelectedTitle": "Selected documents",
+  "@credSelectedTitle": {
+    "description": "Section."
+  },
+  "credNotUploaded": "Not uploaded: the verification service is not connected. Files stay only in memory on this device and are discarded when the app closes.",
+  "@credNotUploaded": {
+    "description": "Note."
+  },
+  "credWillSendOnSubmit": "Files will be sent privately together with the application.",
+  "@credWillSendOnSubmit": {
+    "description": "Note."
+  },
+  "credPickFailed": "Could not open the file.",
+  "@credPickFailed": {
+    "description": "Error."
+  },
+  "credErrorEmpty": "The file is empty.",
+  "@credErrorEmpty": {
+    "description": "Error."
+  },
+  "credErrorTooLarge": "The file is larger than 10 MB.",
+  "@credErrorTooLarge": {
+    "description": "Error."
+  },
+  "credErrorType": "Only PDF, JPG and PNG files are accepted.",
+  "@credErrorType": {
+    "description": "Error."
+  },
+  "credErrorTooMany": "No more than 5 files.",
+  "@credErrorTooMany": {
+    "description": "Error."
+  },
+  "reviewSectionTitle": "Professional review",
+  "@reviewSectionTitle": {
+    "description": "Section."
+  },
+  "reviewEmpty": "This material has not yet been reviewed by a qualified professional.",
+  "@reviewEmpty": {
+    "description": "Empty state."
+  },
+  "reviewWhoCanReview": "Only verified professionals with review rights in the relevant specialty can review this material.",
+  "@reviewWhoCanReview": {
+    "description": "Note."
+  },
+  "reviewScopeNotAssigned": "A review specialty has not yet been assigned to this record.",
+  "@reviewScopeNotAssigned": {
+    "description": "Note."
+  },
+  "reviewWrite": "Write a professional review",
+  "@reviewWrite": {
+    "description": "Action."
+  },
+  "reviewDecision": "Decision",
+  "@reviewDecision": {
+    "description": "Label."
+  },
+  "reviewActApprove": "Approve",
+  "@reviewActApprove": {
+    "description": "Action."
+  },
+  "reviewActRequestChange": "Request correction",
+  "@reviewActRequestChange": {
+    "description": "Action."
+  },
+  "reviewActConflict": "Flag conflicting evidence",
+  "@reviewActConflict": {
+    "description": "Action."
+  },
+  "reviewActOutdated": "Flag as outdated",
+  "@reviewActOutdated": {
+    "description": "Action."
+  },
+  "reviewActReject": "Reject",
+  "@reviewActReject": {
+    "description": "Action."
+  },
+  "reviewDecApprove": "Approved",
+  "@reviewDecApprove": {
+    "description": "Decision."
+  },
+  "reviewDecRequestChange": "Correction required",
+  "@reviewDecRequestChange": {
+    "description": "Decision."
+  },
+  "reviewDecConflict": "Conflicting evidence",
+  "@reviewDecConflict": {
+    "description": "Decision."
+  },
+  "reviewDecOutdated": "Outdated",
+  "@reviewDecOutdated": {
+    "description": "Decision."
+  },
+  "reviewDecReject": "Rejected",
+  "@reviewDecReject": {
+    "description": "Decision."
+  },
+  "reviewStateInProgress": "Review in progress",
+  "@reviewStateInProgress": {
+    "description": "Review state."
+  },
+  "reviewStateProfessional": "Professionally reviewed",
+  "@reviewStateProfessional": {
+    "description": "Review state."
+  },
+  "reviewStateHumanVerified": "Scientifically verified by humans",
+  "@reviewStateHumanVerified": {
+    "description": "Review state."
+  },
+  "reviewStateReReview": "Re-review required",
+  "@reviewStateReReview": {
+    "description": "Review state."
+  },
+  "reviewNote": "Review note",
+  "@reviewNote": {
+    "description": "Field."
+  },
+  "reviewNoteHelper": "Explain the decision with reference to the evidence. At least 20 characters.",
+  "@reviewNoteHelper": {
+    "description": "Helper."
+  },
+  "reviewNoteTooShort": "At least 20 characters are required.",
+  "@reviewNoteTooShort": {
+    "description": "Error."
+  },
+  "reviewSourceRef": "Supporting source (optional)",
+  "@reviewSourceRef": {
+    "description": "Field."
+  },
+  "reviewSourceHelper": "DOI, PMID or an https link",
+  "@reviewSourceHelper": {
+    "description": "Helper."
+  },
+  "reviewSourceInvalid": "Enter a DOI, PMID or https link.",
+  "@reviewSourceInvalid": {
+    "description": "Error."
+  },
+  "reviewSubmit": "Submit review",
+  "@reviewSubmit": {
+    "description": "Action."
+  },
+  "reviewSubmitted": "Review submitted",
+  "@reviewSubmitted": {
+    "description": "Snackbar."
+  },
+  "reviewNotVerification": "A single review does not make content scientifically verified. Verification requires independent qualified reviews under the verification policy.",
+  "@reviewNotVerification": {
+    "description": "Note."
+  },
+  "reviewVersionNote": "The review applies to content version {version}. If the content changes, a re-review is required.",
+  "@reviewVersionNote": {
+    "description": "Note.",
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "reviewMeta": "Reviewed {date} · content version {version}",
+  "@reviewMeta": {
+    "description": "Review footer.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "reviewStale": "Written for an earlier content version — kept in the history; a re-review is required.",
+  "@reviewStale": {
+    "description": "Note."
+  },
+  "reviewPermAllowed": "You can review this material.",
+  "@reviewPermAllowed": {
+    "description": "Permission."
+  },
+  "reviewPermSignIn": "Sign in to your account first.",
+  "@reviewPermSignIn": {
+    "description": "Permission."
+  },
+  "reviewPermNotVerified": "Reviews can be written only by verified professionals.",
+  "@reviewPermNotVerified": {
+    "description": "Permission."
+  },
+  "reviewPermSuspended": "Your verification is suspended; reviewing is unavailable.",
+  "@reviewPermSuspended": {
+    "description": "Permission."
+  },
+  "reviewPermScope": "You do not have review rights for this specialty.",
+  "@reviewPermScope": {
+    "description": "Permission."
+  },
+  "reviewPermStudentMode": "Switch to Professional mode to write reviews. Your verification is kept.",
+  "@reviewPermStudentMode": {
+    "description": "Permission."
+  },
+  "layerSource": "Source attached",
+  "@layerSource": {
+    "description": "Layer."
+  },
+  "layerSourceCount": "{count, plural, =1{1 source} other{{count} sources}}",
+  "@layerSourceCount": {
+    "description": "Layer value.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "noReliableSource": "No reliable source attached.",
+  "@noReliableSource": {
+    "description": "Missing source."
+  },
+  "layerIdentifier": "Identifier (DOI/PMID) checked",
+  "@layerIdentifier": {
+    "description": "Layer."
+  },
+  "layerIdentifierOk": "Checked",
+  "@layerIdentifierOk": {
+    "description": "Layer value."
+  },
+  "layerIdentifierPending": "Not yet checked",
+  "@layerIdentifierPending": {
+    "description": "Layer value."
+  },
+  "layerNotApplicable": "Not applicable",
+  "@layerNotApplicable": {
+    "description": "Layer value."
+  },
+  "layerProfessional": "Professional reviews",
+  "@layerProfessional": {
+    "description": "Layer."
+  },
+  "layerHuman": "Human scientific verification",
+  "@layerHuman": {
+    "description": "Layer."
+  },
+  "layerHumanCount": "{count} of {required} independent approvals",
+  "@layerHumanCount": {
+    "description": "Layer value.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "required": {
+        "type": "int"
+      }
+    }
+  },
+  "dashboardTitle": "Review workspace",
+  "@dashboardTitle": {
+    "description": "Screen."
+  },
+  "dashboardOnlyVerified": "Available only to verified professionals with review rights in at least one specialty.",
+  "@dashboardOnlyVerified": {
+    "description": "Empty state."
+  },
+  "dashboardQueueEmpty": "No records in this queue.",
+  "@dashboardQueueEmpty": {
+    "description": "Empty state."
+  },
+  "dashboardItemMeta": "Claims: {claims} · sources: {sources} · evidence: {level} · version {version}",
+  "@dashboardItemMeta": {
+    "description": "Item meta.",
+    "placeholders": {
+      "claims": {
+        "type": "int"
+      },
+      "sources": {
+        "type": "int"
+      },
+      "level": {
+        "type": "String"
+      },
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "queueNeedsReview": "Needs review",
+  "@queueNeedsReview": {
+    "description": "Queue."
+  },
+  "queueAssigned": "Assigned to me",
+  "@queueAssigned": {
+    "description": "Queue."
+  },
+  "queueReviewedByMe": "Reviewed by me",
+  "@queueReviewedByMe": {
+    "description": "Queue."
+  },
+  "queueConflicts": "Conflicts",
+  "@queueConflicts": {
+    "description": "Queue."
+  },
+  "queueReReview": "Re-review required",
+  "@queueReReview": {
+    "description": "Queue."
+  },
+  "profileSectionVerification": "Verification",
+  "@profileSectionVerification": {
+    "description": "Section."
+  },
+  "profileSectionData": "Data and privacy",
+  "@profileSectionData": {
+    "description": "Section."
+  },
+  "profileStudentVerificationNote": "Professional verification applies to Professional mode. Switching mode does not change verification.",
+  "@profileStudentVerificationNote": {
+    "description": "Note."
+  },
+  "profileNotFilled": "Profile not filled in",
+  "@profileNotFilled": {
+    "description": "Identity card."
+  },
+  "profileFillAction": "Fill in profile",
+  "@profileFillAction": {
+    "description": "Identity card."
+  },
+  "profileEditAction": "Edit profile",
+  "@profileEditAction": {
+    "description": "Identity card."
+  },
+  "moduleHubSourced": "Sourced records",
+  "@moduleHubSourced": {
+    "description": "Section."
+  },
+  "moduleHubSourcedNote": "Shown with their sources and current review status. “Needs review” means available sourced content that is still awaiting expert review — not missing content.",
+  "@moduleHubSourcedNote": {
+    "description": "Note."
+  },
+  "moduleHubOpenAll": "Open all",
+  "@moduleHubOpenAll": {
+    "description": "Action."
+  },
+  "methodsStandardsLink": "International standards and guidelines ({count})",
+  "@methodsStandardsLink": {
+    "description": "Link.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "sourceOneTap": "Sources and provenance",
+  "@sourceOneTap": {
+    "description": "Action."
+  },
+  "researchKeyRelevance": "Forensic relevance",
+  "@researchKeyRelevance": {
+    "description": "Section."
+  },
+  "researchLimitationsNote": "Only bibliographic data and a short description are shown; the full text is available from the publisher.",
+  "@researchLimitationsNote": {
+    "description": "Note."
   }
 }

@@ -9,21 +9,59 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/settings/app_settings.dart';
 import '../../../core/settings/settings_controller.dart';
+import '../../../core/widgets/fe_components.dart';
+import '../../../domain/professional/professional_models.dart';
+import '../../professional/presentation/professional_widgets.dart';
+import '../../professional/professional_strings.dart';
 
-/// «How will you use Forensic Expert?» — dashboard’ni moslashtiradi.
-class ModeScreen extends ConsumerWidget {
+/// «FORENSIC EXPERT’dan qanday foydalanasiz?» — Talaba yoki Mutaxassis.
+///
+/// Bu faqat **foydalanish rejimi** (UI). Mutaxassis rejimini tanlash
+/// professional maqomni tasdiqlamaydi — bu ekranda ochiq aytiladi.
+class ModeScreen extends ConsumerStatefulWidget {
   const ModeScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<ModeScreen> createState() => _ModeScreenState();
+}
+
+class _ModeScreenState extends ConsumerState<ModeScreen> {
+  UserMode? _mode;
+  String? _role;
+
+  @override
+  void initState() {
+    super.initState();
+    final s = ref.read(settingsControllerProvider);
+    _mode = s.userMode;
+    _role = s.declaredRole;
+  }
+
+  Future<void> _continue() async {
+    final mode = _mode;
+    if (mode == null) return;
+    await ref
+        .read(settingsControllerProvider.notifier)
+        .setUserMode(mode, role: _role);
+    if (mounted) context.go(Routes.welcomeAccount);
+  }
+
+  @override
+  Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
 
-    Future<void> choose(UserMode mode) async {
-      await ref.read(settingsControllerProvider.notifier).setUserMode(mode);
-      if (context.mounted) context.go(Routes.home);
-    }
+    final roles = switch (_mode) {
+      UserMode.student => [
+        for (final r in StudentRole.values) (r.name, l.studentRoleLabel(r)),
+      ],
+      UserMode.professional => [
+        for (final r in ProfessionalRole.values)
+          (r.name, l.professionalRoleLabel(r)),
+      ],
+      null => const <(String, String)>[],
+    };
 
     return Scaffold(
       appBar: AppBar(
@@ -49,28 +87,61 @@ class ModeScreen extends ConsumerWidget {
                 style: t.bodyMedium?.copyWith(color: c.textSecondary),
               ),
               const SizedBox(height: FeSpace.lg),
-              ModeOptionCard(
-                key: const Key('mode.professional'),
-                icon: Icons.biotech_outlined,
-                title: l.modeProfessional,
-                description: l.modeProfessionalDescription,
-                onTap: () => choose(UserMode.professional),
-              ),
-              const SizedBox(height: FeSpace.sm),
-              ModeOptionCard(
+              FeChoiceCard(
                 key: const Key('mode.student'),
                 icon: Icons.school_outlined,
                 title: l.modeStudent,
                 description: l.modeStudentDescription,
-                onTap: () => choose(UserMode.student),
+                selected: _mode == UserMode.student,
+                onTap: () => setState(() {
+                  if (_mode != UserMode.student) _role = null;
+                  _mode = UserMode.student;
+                }),
               ),
               const SizedBox(height: FeSpace.sm),
-              ModeOptionCard(
-                key: const Key('mode.research'),
-                icon: Icons.menu_book_outlined,
-                title: l.modeResearch,
-                description: l.modeResearchDescription,
-                onTap: () => choose(UserMode.research),
+              FeChoiceCard(
+                key: const Key('mode.professional'),
+                icon: Icons.biotech_outlined,
+                title: l.modeProfessional,
+                description: l.modeProfessionalDescription,
+                selected: _mode == UserMode.professional,
+                onTap: () => setState(() {
+                  if (_mode != UserMode.professional) _role = null;
+                  _mode = UserMode.professional;
+                }),
+              ),
+              if (roles.isNotEmpty) ...[
+                const SizedBox(height: FeSpace.lg),
+                Text(l.modeRoleTitle, style: t.titleSmall),
+                const SizedBox(height: FeSpace.xs),
+                Wrap(
+                  spacing: FeSpace.xs,
+                  runSpacing: FeSpace.xs,
+                  children: [
+                    for (final (id, label) in roles)
+                      ChoiceChip(
+                        key: Key('role.$id'),
+                        label: Text(label),
+                        selected: _role == id,
+                        onSelected: (v) =>
+                            setState(() => _role = v ? id : null),
+                      ),
+                  ],
+                ),
+              ],
+              if (_mode == UserMode.professional) ...[
+                const SizedBox(height: FeSpace.md),
+                FeBanner(
+                  key: const Key('mode.proNote'),
+                  icon: Icons.verified_user_outlined,
+                  text: l.modeProfessionalNotVerified,
+                ),
+              ],
+              const SizedBox(height: FeSpace.lg),
+              FilledButton(
+                key: const Key('mode.continue'),
+                onPressed: _mode == null ? null : _continue,
+                child: Text(l.actionContinue),
               ),
             ],
           ),

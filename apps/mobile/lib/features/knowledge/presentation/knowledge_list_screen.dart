@@ -1,8 +1,10 @@
 import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../app/providers.dart';
+import '../../../app/routes.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
@@ -24,6 +26,7 @@ class KnowledgeListScreen extends ConsumerWidget {
     final l = AppLocalizations.of(context);
     final entries = ref.watch(knowledgeRepositoryProvider).byKind(kind);
     final lang = Localizations.localeOf(context).languageCode;
+    final standards = ref.watch(provenanceIndexProvider).standards.length;
 
     List<Widget> body() {
       if (kind == KnowledgeKind.method) {
@@ -41,6 +44,22 @@ class KnowledgeListScreen extends ConsumerWidget {
                 for (final e in entries)
                   if (e.method?.kind == mk) e,
               ];
+              if (group.isEmpty &&
+                  mk == MethodKind.internationalStandard &&
+                  standards > 0) {
+                // Standartlar alohida katalogda — bu yerda «yo‘q» demaymiz.
+                return [
+                  Card(
+                    key: const Key('methods.standardsLink'),
+                    child: ListTile(
+                      leading: const Icon(Icons.gavel_outlined),
+                      title: Text(l.methodsStandardsLink(standards)),
+                      trailing: const Icon(Icons.chevron_right),
+                      onTap: () => context.push(Routes.libraryStandards),
+                    ),
+                  ),
+                ];
+              }
               return group.isEmpty
                   ? [
                       FeEmptyState(

@@ -57,25 +57,25 @@ class AppLocalizationsUz extends AppLocalizations {
   String get disclaimerAccept => 'Tushundim';
 
   @override
-  String get modeTitle => 'Forensic Expert’dan qanday foydalanasiz?';
+  String get modeTitle => 'FORENSIC EXPERT’dan qanday foydalanasiz?';
 
   @override
   String get modeSubtitle =>
-      'Bosh ekran shunga moslashadi. Keyinchalik Profil bo‘limida o‘zgartirish mumkin.';
+      'Bosh ekran tanlovingizga moslashadi. Keyinroq Profil bo‘limida o‘zgartirish mumkin.';
 
   @override
   String get modeProfessional => 'Mutaxassis';
 
   @override
   String get modeProfessionalDescription =>
-      'Sud-tibbiy ekspertlar, sud-kimyo/toksikologiya ekspertlari, laboratoriya mutaxassislari';
+      'Sud ekspertlari, shifokorlar, toksikologlar, kimyogarlar, laboratoriya va boshqa sud-ekspert mutaxassislari';
 
   @override
-  String get modeStudent => 'Talaba / rezident';
+  String get modeStudent => 'Talaba';
 
   @override
   String get modeStudentDescription =>
-      'Kurslar, glossariy, kartochkalar va mashqlar';
+      'Talabalar, rezidentlar va stajyorlar, tadqiqotchilar va o‘rganuvchilar';
 
   @override
   String get modeResearch => 'Tadqiqot / ta’lim';
@@ -745,7 +745,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get privacySummary =>
-      'Asosiy kutubxona va kalkulyatorlar oflayn ishlaydi. Qidiruv tarixi va natijalar qurilmangizda saqlanadi. Ilovada reklama SDK’lari yo‘q. Shaxsiy ma’lumot va ish tafsilotlari AI’ga hech qachon avtomatik yuborilmaydi.';
+      'Asosiy kutubxona va kalkulyatorlar oflayn ishlaydi. Qidiruv tarixi, natijalar va ixtiyoriy profilingiz (ism, tashkilot, mutaxassislik) qurilmangizda saqlanadi. Profil ma’lumotlari va malaka hujjatlari faqat professional tasdiqlash xizmati ulangandan keyin ariza yuborsangiz jo‘natiladi; hujjatlar maxfiy saqlanadi va hech qachon ochiq ko‘rsatilmaydi. Ilovada reklama SDK’lari yo‘q. Shaxsiy ma’lumot va ish tafsilotlari AI’ga hech qachon avtomatik yuborilmaydi.';
 
   @override
   String get aboutBody =>
@@ -3851,4 +3851,719 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get homeHeaderSubtitle => 'Sud ekspertizasi ma’lumotnomasi';
+
+  @override
+  String get modeRoleTitle => 'Rolingiz (ixtiyoriy)';
+
+  @override
+  String get modeProfessionalNotVerified =>
+      'Mutaxassis rejimini tanlash professional maqom tasdiqlanganini anglatmaydi.';
+
+  @override
+  String get modeSwitchNote =>
+      'Foydalanish rejimi faqat ilova tuzilishini o‘zgartiradi. U professional tasdiqni bermaydi va bekor qilmaydi.';
+
+  @override
+  String get roleStudent => 'Talaba';
+
+  @override
+  String get roleResident => 'Rezident / stajyor';
+
+  @override
+  String get roleResearcher => 'Tadqiqotchi / o‘rganuvchi';
+
+  @override
+  String get roleForensicExpert => 'Sud eksperti';
+
+  @override
+  String get roleForensicPhysician => 'Sud-tibbiy ekspert';
+
+  @override
+  String get roleForensicToxicologist => 'Sud toksikologi';
+
+  @override
+  String get roleForensicChemist => 'Sud kimyogari';
+
+  @override
+  String get roleLaboratorySpecialist => 'Laboratoriya mutaxassisi';
+
+  @override
+  String get rolePathologist => 'Patologoanatom';
+
+  @override
+  String get roleGeneticist => 'Genetik / DNK mutaxassisi';
+
+  @override
+  String get roleForensicBiochemist => 'Sud biokimyogari';
+
+  @override
+  String get roleAnthropologist => 'Sud antropologi';
+
+  @override
+  String get roleOdontologist => 'Sud odontologi';
+
+  @override
+  String get roleOtherProfessional =>
+      'Boshqa sud-ekspert / laboratoriya mutaxassisi';
+
+  @override
+  String get specForensicMedicine => 'Sud tibbiyoti';
+
+  @override
+  String get specForensicToxicology => 'Sud toksikologiyasi';
+
+  @override
+  String get specForensicChemistry => 'Sud kimyosi';
+
+  @override
+  String get specAnalyticalLaboratory => 'Analitik / laboratoriya fani';
+
+  @override
+  String get specForensicBiochemistry => 'Sud biokimyosi';
+
+  @override
+  String get specPathologyHistology => 'Patologiya / gistologiya';
+
+  @override
+  String get specGeneticsDna => 'Genetika / DNK';
+
+  @override
+  String get specForensicAnthropology => 'Sud antropologiyasi';
+
+  @override
+  String get specForensicOdontology => 'Sud odontologiyasi';
+
+  @override
+  String get specForensicRadiology => 'Sud radiologiyasi';
+
+  @override
+  String get specForensicPsychology => 'Sud psixologiyasi / psixiatriyasi';
+
+  @override
+  String get specForensicBiology => 'Sud biologiyasi';
+
+  @override
+  String get specEntomology => 'Sud entomologiyasi';
+
+  @override
+  String get specOther => 'Boshqa';
+
+  @override
+  String get scopeLegal => 'Huquq va yurisdiksiya';
+
+  @override
+  String get scopeTranslation => 'Tarjima';
+
+  @override
+  String get studyBachelor => 'Bakalavriat';
+
+  @override
+  String get studyMaster => 'Magistratura';
+
+  @override
+  String get studyResidency => 'Klinik ordinatura';
+
+  @override
+  String get studyDoctoral => 'Doktorantura';
+
+  @override
+  String get studyOther => 'Boshqa';
+
+  @override
+  String get accountChoiceTitle => 'Ilovadan hisobsiz foydalaning';
+
+  @override
+  String get accountChoiceSubtitle =>
+      'Oflayn ilmiy baza, qidiruv va kalkulyatorlar hisobsiz ishlaydi. Hisob faqat bulut funksiyalari uchun kerak.';
+
+  @override
+  String get accountContinueWithout => 'Hisobsiz davom etish';
+
+  @override
+  String get accountContinueWithoutNote =>
+      'Hisobni keyinroq Profil bo‘limida yaratish mumkin.';
+
+  @override
+  String get accountCreateOrSignIn => 'Hisob yaratish / Kirish';
+
+  @override
+  String get accountCloudUnavailable =>
+      'Bulutdagi hisob xizmati bu versiyada ulanmagan. Oflayn funksiyalarning barchasi ishlaydi.';
+
+  @override
+  String get accountNeededFor => 'Hisob kerak bo‘ladigan funksiyalar';
+
+  @override
+  String get accountNeedVerification => 'Professional maqomni tasdiqlash';
+
+  @override
+  String get accountNeedReviews => 'Ilmiy materiallarga mutaxassis taqrizi';
+
+  @override
+  String get accountNeedSync => 'Qurilmalar o‘rtasida sinxronlash';
+
+  @override
+  String get accountNeedSubscriptions => 'Bir nechta qurilmada obuna';
+
+  @override
+  String get accountNeedCloudAi => 'Bulutli AI (ulanganda)';
+
+  @override
+  String get accountNeedInstitution => 'Muassasa funksiyalari';
+
+  @override
+  String get accountFillProfile => 'Profilni hozir to‘ldirish (ixtiyoriy)';
+
+  @override
+  String get profileLocalOnlyNote =>
+      'Profil ma’lumotlari faqat shu qurilmada saqlanadi va hech qayerga yuborilmaydi.';
+
+  @override
+  String get profileStudentTitle => 'Talaba profili';
+
+  @override
+  String get profileProTitle => 'Mutaxassis profili';
+
+  @override
+  String get profileSaved => 'Profil shu qurilmada saqlandi';
+
+  @override
+  String get profileSectionIdentity => 'Shaxsiy ma’lumotlar';
+
+  @override
+  String get profileSectionWork => 'Kasbiy ma’lumotlar';
+
+  @override
+  String get profileSectionOptional => 'Ixtiyoriy';
+
+  @override
+  String get profileStudentCannotReview =>
+      'Talaba profili o‘qish uchun: u ilmiy ma’lumotni tasdiqlay olmaydi va malakali taqriz yoza olmaydi.';
+
+  @override
+  String get fieldFullName => 'F.I.Sh.';
+
+  @override
+  String get fieldCountry => 'Davlat';
+
+  @override
+  String get fieldCountryChoose => 'Davlatni tanlang';
+
+  @override
+  String get fieldCountrySearch => 'Davlatni qidirish';
+
+  @override
+  String get fieldCity => 'Shahar / viloyat (ixtiyoriy)';
+
+  @override
+  String get fieldInstitution => 'Oliy ta’lim muassasasi (ixtiyoriy)';
+
+  @override
+  String get fieldFaculty => 'Fakultet / yo‘nalish (ixtiyoriy)';
+
+  @override
+  String get fieldStudyLevel => 'Ta’lim bosqichi (ixtiyoriy)';
+
+  @override
+  String get fieldInterests => 'Qiziqish sohalari';
+
+  @override
+  String get fieldOrganization => 'Tashkilot / muassasa';
+
+  @override
+  String get fieldPosition => 'Lavozim';
+
+  @override
+  String get fieldPrimarySpecialty => 'Asosiy mutaxassislik';
+
+  @override
+  String get fieldAdditionalSpecialties => 'Qo‘shimcha mutaxassisliklar';
+
+  @override
+  String get fieldYearsExperience => 'Kasbiy tajriba (yil)';
+
+  @override
+  String get fieldEducation => 'Ma’lumoti / malakasi';
+
+  @override
+  String get fieldWorkEmail => 'Ish e-pochtasi (ixtiyoriy)';
+
+  @override
+  String get fieldPrivateHelper =>
+      'Maxfiy — ochiq profilda hech qachon ko‘rsatilmaydi.';
+
+  @override
+  String get fieldLicense =>
+      'Ro‘yxatdan o‘tish / litsenziya raqami (ixtiyoriy)';
+
+  @override
+  String get fieldLicenseHelper =>
+      'Faqat davlatingizda bunday raqam berilsa. Maxfiy — ochiq ko‘rsatilmaydi.';
+
+  @override
+  String get fieldBio => 'Qisqa kasbiy tarjimai hol (ixtiyoriy)';
+
+  @override
+  String get fieldLanguages => 'Tillar (vergul bilan)';
+
+  @override
+  String get fieldProInterests => 'Kasbiy qiziqishlar (ixtiyoriy)';
+
+  @override
+  String get fieldShowOrganization => 'Tashkilotni ochiq profilda ko‘rsatish';
+
+  @override
+  String get fieldShowOrganizationHelper =>
+      'Standart holatda o‘chiq. Ism, mutaxassislik va davlat faqat tasdiqlangandan keyin ochiq bo‘ladi.';
+
+  @override
+  String get formRequired => 'Majburiy maydon';
+
+  @override
+  String get formTooLong => 'Juda uzun';
+
+  @override
+  String get formInvalid => 'Noto‘g‘ri qiymat';
+
+  @override
+  String get formHasErrors => 'Belgilangan maydonlarni to‘g‘rilang.';
+
+  @override
+  String get actionSave => 'Saqlash';
+
+  @override
+  String get actionRemove => 'Olib tashlash';
+
+  @override
+  String get verifTitle => 'Professional maqomni tasdiqlash';
+
+  @override
+  String get verifStatusLabel => 'Joriy holat';
+
+  @override
+  String get verifUnverified => 'Tasdiqlanmagan';
+
+  @override
+  String get verifPending => 'Tekshiruv kutilmoqda';
+
+  @override
+  String get verifVerified => 'Tasdiqlangan mutaxassis';
+
+  @override
+  String get verifChangesRequested => 'Qo‘shimcha ma’lumot kerak';
+
+  @override
+  String get verifRejected => 'Rad etilgan';
+
+  @override
+  String get verifSuspended => 'Vaqtincha to‘xtatilgan';
+
+  @override
+  String get verifUnverifiedBody =>
+      'Siz tasdiqlash uchun ariza bermagansiz. Barcha oflayn funksiyalar usiz ham ishlaydi.';
+
+  @override
+  String get verifPendingBody =>
+      'Arizangiz vakolatli shaxs tomonidan ko‘rib chiqilishini kutmoqda.';
+
+  @override
+  String get verifVerifiedBody =>
+      'Professional maqomingiz vakolatli shaxs tomonidan tasdiqlangan. Taqriz huquqi har bir soha uchun alohida beriladi.';
+
+  @override
+  String get verifChangesBody =>
+      'Qo‘shimcha ma’lumot kerak. Profil yoki hujjatlarni yangilab, arizani qayta yuboring.';
+
+  @override
+  String get verifRejectedBody =>
+      'Ariza tasdiqlanmadi. Yangi ariza yuborishingiz mumkin.';
+
+  @override
+  String get verifSuspendedBody =>
+      'Tasdiq vaqtincha to‘xtatilgan. Taqriz huquqi faol emas.';
+
+  @override
+  String get verifServiceNotConnected =>
+      'Tasdiqlash xizmati bu versiyada ulanmagan. Hozircha ariza yuborib bo‘lmaydi va hech kim tasdiqlanmaydi.';
+
+  @override
+  String get verifHowTitle => 'Tasdiqlash qanday o‘tadi';
+
+  @override
+  String get verifStep1 => 'Mutaxassis profilini to‘ldiring.';
+
+  @override
+  String get verifStep2 =>
+      'Ixtiyoriy ravishda malaka hujjatini biriktiring (maxfiy saqlanadi).';
+
+  @override
+  String get verifStep3 =>
+      'Vakolatli administrator yoki shu sohadagi tasdiqlangan mutaxassis ariza va hujjatni qo‘lda tekshiradi. O‘zini tasdiqlash mumkin emas.';
+
+  @override
+  String get verifStep4 => 'Taqriz huquqi har bir soha uchun alohida beriladi.';
+
+  @override
+  String get verifHumanOnly =>
+      'Mutaxassis rejimini tanlash, lavozimni yozish, sertifikat yuklash yoki avtomatik/AI tekshiruv tasdiqlangan maqom bermaydi. Hujjat faqat dalil; maqom faqat qo‘lda tekshiruvdan keyin beriladi va kim tasdiqlagani, qachon, qaysi hujjat tekshirilgani va qaysi soha bo‘yicha ekani qayd etiladi.';
+
+  @override
+  String get verifApplication => 'Ariza';
+
+  @override
+  String get verifProfileMissing => 'Mutaxassis profili to‘ldirilmagan';
+
+  @override
+  String get verifSubmit => 'Arizani yuborish';
+
+  @override
+  String get verifSubmitted => 'Ariza yuborildi. Holat: tekshiruv kutilmoqda.';
+
+  @override
+  String get verifSubmitUnavailable =>
+      'Tasdiqlash xizmati ulanmaguncha yuborib bo‘lmaydi.';
+
+  @override
+  String get verifSubmitNote =>
+      'Ariza va hujjatlar shifrlangan aloqa orqali maxfiy omborga yuboriladi.';
+
+  @override
+  String proYearsExperience(int years) {
+    return 'Tajriba: $years yil';
+  }
+
+  @override
+  String proReviewCount(int count) {
+    return 'Taqrizlar soni: $count';
+  }
+
+  @override
+  String get proServiceNotConnected => 'Bulut xizmati bu versiyada ulanmagan.';
+
+  @override
+  String get proInvalidInput => 'Kiritilgan ma’lumotni tekshiring.';
+
+  @override
+  String get proOffline => 'Internet aloqasi yo‘q.';
+
+  @override
+  String get proServerError =>
+      'Xizmat vaqtincha ishlamayapti. Keyinroq urinib ko‘ring.';
+
+  @override
+  String get credUploadTitle => 'Malaka hujjatini yuklash';
+
+  @override
+  String get credOptional => 'Ixtiyoriy';
+
+  @override
+  String credSelectedCount(int count) {
+    return '$count ta fayl tanlandi';
+  }
+
+  @override
+  String get credIntro =>
+      'Hujjat ixtiyoriy va faqat vakolatli shaxsga arizani tekshirishda yordam beradi. Uning o‘zi tasdiqlangan maqom bermaydi.';
+
+  @override
+  String get credPrivacy =>
+      'Hujjatlar maxfiy: hech qachon ochiq ko‘rsatilmaydi, ochiq havolasi yo‘q va mazmuni jurnallarga yozilmaydi. Ularni faqat vakolatli tekshiruvchi ochadi.';
+
+  @override
+  String get credNoCaseData =>
+      'Ish materiallari, ashyoviy dalillar, ekspert xulosalari yoki har qanday maxfiy ish hujjatlarini yuklamang. Pasport yoki ID hujjati talab qilinmaydi.';
+
+  @override
+  String get credKindTitle => 'Hujjat turi';
+
+  @override
+  String get credProfessionalCertificate => 'Professional sertifikat';
+
+  @override
+  String get credQualificationCertificate => 'Malaka guvohnomasi';
+
+  @override
+  String get credDiploma => 'Diplom';
+
+  @override
+  String get credEmployment => 'Ish joyi / tayinlov tasdig‘i';
+
+  @override
+  String get credRegistration => 'Ro‘yxatdan o‘tish / litsenziya hujjati';
+
+  @override
+  String get credTraining => 'Tan olingan o‘quv sertifikati';
+
+  @override
+  String get credFormats =>
+      'PDF, JPG yoki PNG, har biri 10 MB gacha, ko‘pi bilan 5 ta fayl.';
+
+  @override
+  String get credChooseFile => 'Faylni tanlash';
+
+  @override
+  String get credSelectedTitle => 'Tanlangan hujjatlar';
+
+  @override
+  String get credNotUploaded =>
+      'Yuklanmadi: tasdiqlash xizmati ulanmagan. Fayllar faqat qurilma xotirasida turadi va ilova yopilganda o‘chadi.';
+
+  @override
+  String get credWillSendOnSubmit =>
+      'Fayllar ariza bilan birga maxfiy yuboriladi.';
+
+  @override
+  String get credPickFailed => 'Faylni ochib bo‘lmadi.';
+
+  @override
+  String get credErrorEmpty => 'Fayl bo‘sh.';
+
+  @override
+  String get credErrorTooLarge => 'Fayl 10 MB dan katta.';
+
+  @override
+  String get credErrorType => 'Faqat PDF, JPG va PNG fayllar qabul qilinadi.';
+
+  @override
+  String get credErrorTooMany => '5 tadan ortiq fayl bo‘lmaydi.';
+
+  @override
+  String get reviewSectionTitle => 'Mutaxassis taqrizi';
+
+  @override
+  String get reviewEmpty =>
+      'Bu material hali malakali mutaxassis tomonidan taqriz qilinmagan.';
+
+  @override
+  String get reviewWhoCanReview =>
+      'Bu materialni faqat tegishli soha bo‘yicha taqriz huquqi berilgan tasdiqlangan mutaxassislar taqriz qila oladi.';
+
+  @override
+  String get reviewScopeNotAssigned =>
+      'Bu yozuv uchun taqriz sohasi hali belgilanmagan.';
+
+  @override
+  String get reviewWrite => 'Taqriz yozish';
+
+  @override
+  String get reviewDecision => 'Qaror';
+
+  @override
+  String get reviewActApprove => 'Ma’qullash';
+
+  @override
+  String get reviewActRequestChange => 'Tuzatish so‘rash';
+
+  @override
+  String get reviewActConflict => 'Dalillar ziddiyatini belgilash';
+
+  @override
+  String get reviewActOutdated => 'Eskirgan deb belgilash';
+
+  @override
+  String get reviewActReject => 'Rad etish';
+
+  @override
+  String get reviewDecApprove => 'Ma’qullangan';
+
+  @override
+  String get reviewDecRequestChange => 'Tuzatish talab qilinadi';
+
+  @override
+  String get reviewDecConflict => 'Dalillar ziddiyati';
+
+  @override
+  String get reviewDecOutdated => 'Eskirgan';
+
+  @override
+  String get reviewDecReject => 'Rad etilgan';
+
+  @override
+  String get reviewStateInProgress => 'Taqriz jarayonida';
+
+  @override
+  String get reviewStateProfessional => 'Mutaxassis taqriz qilgan';
+
+  @override
+  String get reviewStateHumanVerified => 'Inson tomonidan ilmiy tasdiqlangan';
+
+  @override
+  String get reviewStateReReview => 'Qayta taqriz talab qilinadi';
+
+  @override
+  String get reviewNote => 'Taqriz matni';
+
+  @override
+  String get reviewNoteHelper =>
+      'Qarorni dalillarga tayanib asoslang. Kamida 20 belgi.';
+
+  @override
+  String get reviewNoteTooShort => 'Kamida 20 belgi kerak.';
+
+  @override
+  String get reviewSourceRef => 'Tayanch manba (ixtiyoriy)';
+
+  @override
+  String get reviewSourceHelper => 'DOI, PMID yoki https havola';
+
+  @override
+  String get reviewSourceInvalid => 'DOI, PMID yoki https havolani kiriting.';
+
+  @override
+  String get reviewSubmit => 'Taqrizni yuborish';
+
+  @override
+  String get reviewSubmitted => 'Taqriz yuborildi';
+
+  @override
+  String get reviewNotVerification =>
+      'Bitta taqriz materialni ilmiy tasdiqlangan qilmaydi. Tasdiq uchun tekshiruv siyosatiga ko‘ra mustaqil malakali taqrizlar kerak.';
+
+  @override
+  String reviewVersionNote(String version) {
+    return 'Taqriz $version kontent versiyasiga tegishli. Kontent o‘zgarsa, qayta taqriz talab qilinadi.';
+  }
+
+  @override
+  String reviewMeta(String date, String version) {
+    return 'Taqriz sanasi: $date · kontent versiyasi $version';
+  }
+
+  @override
+  String get reviewStale =>
+      'Oldingi kontent versiyasiga yozilgan — tarixda saqlanadi; qayta taqriz talab qilinadi.';
+
+  @override
+  String get reviewPermAllowed => 'Siz bu materialni taqriz qila olasiz.';
+
+  @override
+  String get reviewPermSignIn => 'Avval hisobingizga kiring.';
+
+  @override
+  String get reviewPermNotVerified =>
+      'Taqrizni faqat tasdiqlangan mutaxassislar yoza oladi.';
+
+  @override
+  String get reviewPermSuspended =>
+      'Tasdig‘ingiz to‘xtatilgan; taqriz yozib bo‘lmaydi.';
+
+  @override
+  String get reviewPermScope => 'Sizda bu soha bo‘yicha taqriz huquqi yo‘q.';
+
+  @override
+  String get reviewPermStudentMode =>
+      'Taqriz yozish uchun Mutaxassis rejimiga o‘ting. Tasdig‘ingiz saqlanadi.';
+
+  @override
+  String get layerSource => 'Manba biriktirilgan';
+
+  @override
+  String layerSourceCount(int count) {
+    return '$count ta manba';
+  }
+
+  @override
+  String get noReliableSource => 'Ishonchli manba biriktirilmagan.';
+
+  @override
+  String get layerIdentifier => 'Identifikator (DOI/PMID) tekshirilgan';
+
+  @override
+  String get layerIdentifierOk => 'Tekshirilgan';
+
+  @override
+  String get layerIdentifierPending => 'Hali tekshirilmagan';
+
+  @override
+  String get layerNotApplicable => 'Qo‘llanilmaydi';
+
+  @override
+  String get layerProfessional => 'Mutaxassis taqrizlari';
+
+  @override
+  String get layerHuman => 'Inson tomonidan ilmiy tasdiq';
+
+  @override
+  String layerHumanCount(int count, int required) {
+    return '$required ta mustaqil ma’qullashdan $count tasi';
+  }
+
+  @override
+  String get dashboardTitle => 'Taqrizchi ish joyi';
+
+  @override
+  String get dashboardOnlyVerified =>
+      'Faqat kamida bitta soha bo‘yicha taqriz huquqi berilgan tasdiqlangan mutaxassislar uchun.';
+
+  @override
+  String get dashboardQueueEmpty => 'Bu navbatda yozuvlar yo‘q.';
+
+  @override
+  String dashboardItemMeta(
+    int claims,
+    int sources,
+    String level,
+    String version,
+  ) {
+    return 'Da’volar: $claims · manbalar: $sources · dalil: $level · versiya $version';
+  }
+
+  @override
+  String get queueNeedsReview => 'Taqriz kerak';
+
+  @override
+  String get queueAssigned => 'Menga biriktirilgan';
+
+  @override
+  String get queueReviewedByMe => 'Men taqriz qilganlar';
+
+  @override
+  String get queueConflicts => 'Ziddiyatlar';
+
+  @override
+  String get queueReReview => 'Qayta taqriz kerak';
+
+  @override
+  String get profileSectionVerification => 'Tasdiqlash';
+
+  @override
+  String get profileSectionData => 'Ma’lumotlar va maxfiylik';
+
+  @override
+  String get profileStudentVerificationNote =>
+      'Professional tasdiq Mutaxassis rejimiga tegishli. Rejimni almashtirish tasdiqqa ta’sir qilmaydi.';
+
+  @override
+  String get profileNotFilled => 'Profil to‘ldirilmagan';
+
+  @override
+  String get profileFillAction => 'Profilni to‘ldirish';
+
+  @override
+  String get profileEditAction => 'Profilni tahrirlash';
+
+  @override
+  String get moduleHubSourced => 'Manbali yozuvlar';
+
+  @override
+  String get moduleHubSourcedNote =>
+      'Manbasi va joriy tekshiruv holati bilan ko‘rsatiladi. «Tekshiruv kerak» — mavjud manbali ma’lumot ekspert tekshiruvini kutmoqda degani, ma’lumot yo‘q degani emas.';
+
+  @override
+  String get moduleHubOpenAll => 'Barchasini ochish';
+
+  @override
+  String methodsStandardsLink(int count) {
+    return 'Xalqaro standartlar va qo‘llanmalar ($count)';
+  }
+
+  @override
+  String get sourceOneTap => 'Manbalar va kelib chiqishi';
+
+  @override
+  String get researchKeyRelevance => 'Sud-ekspert ahamiyati';
+
+  @override
+  String get researchLimitationsNote =>
+      'Faqat bibliografik ma’lumot va qisqa tavsif ko‘rsatiladi; to‘liq matn noshirda.';
 }

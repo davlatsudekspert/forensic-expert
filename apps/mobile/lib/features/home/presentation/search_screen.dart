@@ -87,22 +87,22 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
     ref.read(userDataProvider.notifier).recordSearch(_query);
     switch (group) {
       case SearchGroup.tools:
-        context.go(Routes.tool(hit.entityId));
+        context.push(Routes.tool(hit.entityId));
       case SearchGroup.learning:
-        context.go(Routes.learn);
+        context.push(Routes.learn);
       case SearchGroup.standardsLaws
           when ref.read(provenanceIndexProvider).standard(hit.entityId) != null:
-        context.go(Routes.libraryStandards);
+        context.push(Routes.libraryStandards);
       case SearchGroup.standardsLaws:
-        context.go(Routes.compare);
+        context.push(Routes.compare);
       case SearchGroup.methods when hit.category == SearchCategory.specimen:
-        context.go(Routes.specimen(hit.entityId));
+        context.push(Routes.specimen(hit.entityId));
       case SearchGroup.references
           when ref.read(evidenceDataProvider).researchById(hit.entityId) !=
               null:
-        context.go(Routes.researchEntry(hit.entityId));
+        context.push(Routes.researchEntry(hit.entityId));
       default:
-        context.go(
+        context.push(
           ref.read(knowledgeRepositoryProvider).byId(hit.entityId) != null
               ? Routes.knowledgeEntry(hit.entityId)
               : Routes.libraryEntry(hit.entityId),
@@ -295,6 +295,10 @@ class _Results extends ConsumerWidget {
       SearchGroup.references => Icons.menu_book_outlined,
     };
 
+    final seenHits = <String>{};
+    Key hitKey(SearchGroup g, String id) => seenHits.add(id)
+        ? Key('search.hit.$id')
+        : Key('search.hit.${g.name}.$id.${seenHits.length}');
     return Semantics(
       label: l.searchResultsSemantics(result.total),
       container: true,
@@ -320,7 +324,9 @@ class _Results extends ConsumerWidget {
                 unlocked ? result.groups[g]!.length : freeLimit,
               ))
                 _ResultTile(
-                  key: Key('search.hit.${hit.entityId}'),
+                  // Bir yozuv bir nechta guruhda (yoki turli atama bilan)
+                  // chiqishi mumkin — kalit takrorlanmasligi kerak.
+                  key: hitKey(g, hit.entityId),
                   icon: groupIcon(g),
                   title: hit.matchedTerm,
                   meta: metaOf(g, hit),

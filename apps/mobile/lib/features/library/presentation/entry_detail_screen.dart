@@ -16,8 +16,10 @@ import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/library/library_models.dart';
+import '../../../domain/professional/review_models.dart';
 import '../../common/favorite_button.dart';
 import '../../common/view_recorder.dart';
+import '../../professional/presentation/review_section.dart';
 import 'content_entry_sections.dart';
 import 'library_screen.dart';
 
@@ -153,6 +155,21 @@ class EntryDetailScreen extends ConsumerWidget {
                       ),
                     ),
                   ],
+                  if (entry.details case final d?)
+                    ProfessionalReviewSection(
+                      recordId: entry.id,
+                      kind: switch (entry.section) {
+                        LibrarySection.substances =>
+                          ReviewSubjectKind.substance,
+                        LibrarySection.methods => ReviewSubjectKind.method,
+                        LibrarySection.specimens => ReviewSubjectKind.claim,
+                        LibrarySection.references ||
+                        LibrarySection.glossary => ReviewSubjectKind.reference,
+                      },
+                      risk: isSubstance ? RiskLevel.high : RiskLevel.standard,
+                      sourceCount: d.allSources.length,
+                      identifiersVerified: identifiersVerified(d.allSources),
+                    ),
                   const SizedBox(height: FeSpace.xl),
                 ],
               ),

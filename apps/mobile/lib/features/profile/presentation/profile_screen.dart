@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../app/app_info.dart';
+import '../../../app/professional.dart';
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../app/user_data.dart';
@@ -16,6 +17,11 @@ import '../../../core/settings/app_settings.dart';
 import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/ports/billing_ports.dart';
+import '../../../domain/ports/professional_ports.dart';
+import '../../../domain/professional/professional_models.dart';
+import '../../professional/presentation/professional_widgets.dart';
+import '../../professional/presentation/verification_screens.dart';
+import '../../professional/professional_strings.dart';
 import 'subscription_ui.dart';
 
 class ProfileScreen extends ConsumerWidget {
@@ -31,6 +37,12 @@ class ProfileScreen extends ConsumerWidget {
     final authRepo = ref.watch(authRepositoryProvider);
     final authState = ref.watch(authStateProvider);
     final access = ref.watch(accessProvider);
+    final localProfile = ref.watch(localProfileProvider);
+    final verification =
+        ref.watch(professionalSnapshotProvider).value ??
+        ProfessionalSnapshot.empty;
+    final identity = verification.identity;
+    final pendingDocs = ref.watch(pendingCredentialsProvider).length;
     final t = Theme.of(context).textTheme;
     final lang = Localizations.localeOf(context).languageCode;
     final resolver = ref.watch(jurisdictionResolverProvider);
@@ -41,7 +53,6 @@ class ProfileScreen extends ConsumerWidget {
     String modeLabel(UserMode? m) => switch (m) {
       UserMode.professional => l.modeProfessional,
       UserMode.student => l.modeStudent,
-      UserMode.research => l.modeResearch,
       null => '—',
     };
 
@@ -54,30 +65,69 @@ class ProfileScreen extends ConsumerWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  FeSectionHeader(
-                    l.profileSectionPreferences,
-                    padding: const EdgeInsets.only(bottom: FeSpace.xs),
+                  _IdentityCard(
+                    mode: settings.userMode,
+                    declaredRole: settings.declaredRole,
+                    profile: localProfile,
                   ),
+                  FeSectionHeader(l.profileSectionVerification),
+                  if (settings.userMode == UserMode.student)
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: FeSpace.xs),
+                      child: FeNote(
+                        key: const Key('profile.studentNoVerification'),
+                        icon: Icons.school_outlined,
+                        text: l.profileStudentVerificationNote,
+                      ),
+                    ),
+                  _Row(
+                    key: const Key('profile.verification'),
+                    icon: Icons.verified_user_outlined,
+                    title: l.verifTitle,
+                    valueWidget: VerificationStatusChip(
+                      status: verification.status,
+                    ),
+                    onTap: () => context.push(Routes.verification),
+                  ),
+                  _Row(
+                    key: const Key('profile.credentials'),
+                    icon: Icons.upload_file_outlined,
+                    title: l.credUploadTitle,
+                    value: pendingDocs == 0
+                        ? l.credOptional
+                        : l.credSelectedCount(pendingDocs),
+                    onTap: () => context.push(Routes.verificationDocuments),
+                  ),
+                  if (identity != null &&
+                      identity.isVerifiedProfessional &&
+                      identity.scopes.isNotEmpty)
+                    _Row(
+                      key: const Key('profile.reviewDashboard'),
+                      icon: Icons.rate_review_outlined,
+                      title: l.dashboardTitle,
+                      onTap: () => context.push(Routes.reviewDashboard),
+                    ),
+                  FeSectionHeader(l.profileSectionPreferences),
                   _Row(
                     key: const Key('profile.language'),
                     icon: Icons.language,
                     title: l.settingsLanguage,
                     value: l.languageNameNative,
-                    onTap: () => context.go(Routes.profileLanguage),
+                    onTap: () => context.push(Routes.profileLanguage),
                   ),
                   _Row(
                     key: const Key('profile.mode'),
                     icon: Icons.tune,
                     title: l.settingsMode,
                     value: modeLabel(settings.userMode),
-                    onTap: () => context.go(Routes.profileMode),
+                    onTap: () => context.push(Routes.profileMode),
                   ),
                   _Row(
                     key: const Key('profile.jurisdiction'),
                     icon: Icons.public,
                     title: l.settingsJurisdiction,
                     value: jurisdiction.name(lang),
-                    onTap: () => context.go(Routes.profileJurisdiction),
+                    onTap: () => context.push(Routes.profileJurisdiction),
                   ),
                   const SizedBox(height: FeSpace.sm),
                   Text(l.settingsTheme, style: t.titleSmall),
@@ -244,7 +294,7 @@ class ProfileScreen extends ConsumerWidget {
                         productId: access.productId,
                       ),
                     ),
-                  FeSectionHeader(l.profileSectionAccount),
+                  FeSectionHeader(l.profileSectionData),
                   _Row(
                     key: const Key('profile.deleteLocalData'),
                     icon: Icons.delete_sweep_outlined,
@@ -274,6 +324,8 @@ class ProfileScreen extends ConsumerWidget {
                         await ref
                             .read(userDataProvider.notifier)
                             .deleteAllLocalData();
+                        await ref.read(localProfileProvider.notifier).clear();
+                        ref.read(pendingCredentialsProvider.notifier).clear();
                         if (context.mounted) {
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(content: Text(l.deleteLocalDataDone)),
@@ -282,6 +334,13 @@ class ProfileScreen extends ConsumerWidget {
                       }
                     },
                   ),
+                  _Row(
+                    key: const Key('profile.privacy'),
+                    icon: Icons.privacy_tip_outlined,
+                    title: l.privacyPolicy,
+                    onTap: () => context.push(Routes.privacy),
+                  ),
+                  FeSectionHeader(l.profileSectionAbout),
                   _Row(
                     icon: Icons.storage_outlined,
                     title: l.scientificDatabaseLabel,
@@ -292,30 +351,23 @@ class ProfileScreen extends ConsumerWidget {
                       error: (_, _) => l.scientificDatabaseNotInstalled,
                     ),
                   ),
-                  FeSectionHeader(l.profileSectionAbout),
-                  _Row(
-                    key: const Key('profile.privacy'),
-                    icon: Icons.privacy_tip_outlined,
-                    title: l.privacyPolicy,
-                    onTap: () => context.go(Routes.privacy),
-                  ),
                   _Row(
                     key: const Key('profile.terms'),
                     icon: Icons.description_outlined,
                     title: l.termsOfUse,
-                    onTap: () => context.go(Routes.terms),
+                    onTap: () => context.push(Routes.terms),
                   ),
                   _Row(
                     key: const Key('profile.disclaimer'),
                     icon: Icons.gavel_outlined,
                     title: l.scientificDisclaimerLink,
-                    onTap: () => context.go(Routes.profileDisclaimer),
+                    onTap: () => context.push(Routes.profileDisclaimer),
                   ),
                   _Row(
                     key: const Key('profile.aiDisclaimer'),
                     icon: Icons.auto_awesome_outlined,
                     title: l.aiDisclaimerLink,
-                    onTap: () => context.go(Routes.aiDisclaimer),
+                    onTap: () => context.push(Routes.aiDisclaimer),
                   ),
                   _Row(
                     key: const Key('profile.licenses'),
@@ -332,7 +384,7 @@ class ProfileScreen extends ConsumerWidget {
                     icon: Icons.info_outline,
                     title: l.aboutApp,
                     value: '${l.appVersionLabel} ${AppInfo.version}',
-                    onTap: () => context.go(Routes.about),
+                    onTap: () => context.push(Routes.about),
                   ),
                   if (kDebugMode || kProfileMode) ...[
                     FeSectionHeader(l.diagnosticsSection),
@@ -366,12 +418,14 @@ class _Row extends StatelessWidget {
     required this.icon,
     required this.title,
     this.value,
+    this.valueWidget,
     this.onTap,
   });
 
   final IconData icon;
   final String title;
   final String? value;
+  final Widget? valueWidget;
   final VoidCallback? onTap;
 
   @override
@@ -380,9 +434,105 @@ class _Row extends StatelessWidget {
       contentPadding: EdgeInsets.zero,
       leading: Icon(icon),
       title: Text(title),
-      subtitle: value == null ? null : Text(value!),
+      subtitle: switch (valueWidget) {
+        final w? => Padding(
+          padding: const EdgeInsets.only(top: FeSpace.xxs),
+          child: Align(alignment: AlignmentDirectional.centerStart, child: w),
+        ),
+        null => value == null ? null : Text(value!),
+      },
       trailing: onTap == null ? null : const Icon(Icons.chevron_right),
       onTap: onTap,
+    );
+  }
+}
+
+/// Profil kartasi: ism (bo‘lsa), foydalanish rejimi, rol. Professional
+/// rejim — maqom emas; maqom alohida «Tasdiqlash» bo‘limida.
+class _IdentityCard extends StatelessWidget {
+  const _IdentityCard({
+    required this.mode,
+    required this.declaredRole,
+    required this.profile,
+  });
+
+  final UserMode? mode;
+  final String? declaredRole;
+  final LocalUserProfile profile;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final isStudent = mode == UserMode.student;
+    final name = isStudent
+        ? profile.student?.fullName
+        : profile.professional?.fullName;
+    final role = isStudent
+        ? switch (StudentRole.values.asNameMap()[declaredRole] ??
+              profile.student?.role) {
+            final r? => l.studentRoleLabel(r),
+            null => null,
+          }
+        : switch (ProfessionalRole.values.asNameMap()[declaredRole] ??
+              profile.professional?.role) {
+            final r? => l.professionalRoleLabel(r),
+            null => null,
+          };
+    final subtitle = [
+      isStudent ? l.modeStudent : l.modeProfessional,
+      ?role,
+      if (!isStudent)
+        if (profile.professional case final p?)
+          l.specialtyLabel(p.primarySpecialty),
+    ].join(' · ');
+    return Card(
+      key: const Key('profile.identityCard'),
+      margin: const EdgeInsets.only(top: FeSpace.sm),
+      child: InkWell(
+        onTap: () => context.push(Routes.profileEdit),
+        child: Padding(
+          padding: const EdgeInsets.all(FeSpace.md),
+          child: Row(
+            children: [
+              CircleAvatar(
+                radius: 24,
+                backgroundColor: c.accentContainer,
+                child: Icon(
+                  isStudent ? Icons.school_outlined : Icons.biotech_outlined,
+                  color: c.accent,
+                ),
+              ),
+              const SizedBox(width: FeSpace.md),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      (name == null || name.isEmpty)
+                          ? l.profileNotFilled
+                          : name,
+                      style: t.titleMedium,
+                    ),
+                    const SizedBox(height: FeSpace.xxs),
+                    Text(
+                      subtitle,
+                      style: t.bodySmall?.copyWith(color: c.textSecondary),
+                    ),
+                    const SizedBox(height: FeSpace.xxs),
+                    Text(
+                      name == null ? l.profileFillAction : l.profileEditAction,
+                      style: t.labelMedium?.copyWith(color: c.accent),
+                    ),
+                  ],
+                ),
+              ),
+              const Icon(Icons.chevron_right),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

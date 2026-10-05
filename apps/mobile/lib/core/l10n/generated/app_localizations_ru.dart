@@ -57,24 +57,25 @@ class AppLocalizationsRu extends AppLocalizations {
   String get disclaimerAccept => 'Понятно';
 
   @override
-  String get modeTitle => 'Как вы будете использовать Forensic Expert?';
+  String get modeTitle => 'Как вы будете использовать FORENSIC EXPERT?';
 
   @override
   String get modeSubtitle =>
-      'От этого зависит главный экран. Позже это можно изменить в профиле.';
+      'Главный экран подстроится под ваш выбор. Его можно изменить позже в профиле.';
 
   @override
   String get modeProfessional => 'Специалист';
 
   @override
   String get modeProfessionalDescription =>
-      'Судебно-медицинские эксперты, судебные химики-токсикологи, специалисты лабораторий';
+      'Судебные эксперты, врачи, токсикологи, химики, специалисты лабораторий и других судебно-экспертных направлений';
 
   @override
-  String get modeStudent => 'Студент / ординатор';
+  String get modeStudent => 'Студент';
 
   @override
-  String get modeStudentDescription => 'Курсы, глоссарий, карточки и практика';
+  String get modeStudentDescription =>
+      'Студенты, ординаторы и стажёры, исследователи и обучающиеся';
 
   @override
   String get modeResearch => 'Наука / преподавание';
@@ -744,7 +745,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get privacySummary =>
-      'Основная библиотека и калькуляторы работают офлайн. История поиска и прогресс хранятся на вашем устройстве. В приложении нет рекламных SDK. Персональные данные и сведения о делах никогда не передаются ИИ автоматически.';
+      'Основная библиотека и калькуляторы работают офлайн. История поиска, прогресс и необязательный профиль (имя, организация, специальность) хранятся на вашем устройстве. Данные профиля и документы о квалификации передаются только при подаче заявки на профессиональное подтверждение, когда этот сервис будет подключён; документы хранятся конфиденциально и никогда не публикуются. В приложении нет рекламных SDK. Персональные данные и сведения о делах никогда не передаются ИИ автоматически.';
 
   @override
   String get aboutBody =>
@@ -3856,4 +3857,736 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get homeHeaderSubtitle => 'Справочник судебной экспертизы';
+
+  @override
+  String get modeRoleTitle => 'Ваша роль (необязательно)';
+
+  @override
+  String get modeProfessionalNotVerified =>
+      'Выбор режима «Специалист» не означает, что ваш профессиональный статус подтверждён.';
+
+  @override
+  String get modeSwitchNote =>
+      'Режим использования меняет только устройство приложения. Он не даёт и не отменяет профессиональное подтверждение.';
+
+  @override
+  String get roleStudent => 'Студент';
+
+  @override
+  String get roleResident => 'Ординатор / стажёр';
+
+  @override
+  String get roleResearcher => 'Исследователь / обучающийся';
+
+  @override
+  String get roleForensicExpert => 'Судебный эксперт';
+
+  @override
+  String get roleForensicPhysician => 'Судебно-медицинский эксперт';
+
+  @override
+  String get roleForensicToxicologist => 'Судебный токсиколог';
+
+  @override
+  String get roleForensicChemist => 'Судебный химик';
+
+  @override
+  String get roleLaboratorySpecialist => 'Специалист лаборатории';
+
+  @override
+  String get rolePathologist => 'Патологоанатом';
+
+  @override
+  String get roleGeneticist => 'Генетик / специалист по ДНК';
+
+  @override
+  String get roleForensicBiochemist => 'Судебный биохимик';
+
+  @override
+  String get roleAnthropologist => 'Судебный антрополог';
+
+  @override
+  String get roleOdontologist => 'Судебный одонтолог';
+
+  @override
+  String get roleOtherProfessional =>
+      'Другой специалист судебной экспертизы / лаборатории';
+
+  @override
+  String get specForensicMedicine => 'Судебная медицина';
+
+  @override
+  String get specForensicToxicology => 'Судебная токсикология';
+
+  @override
+  String get specForensicChemistry => 'Судебная химия';
+
+  @override
+  String get specAnalyticalLaboratory => 'Аналитическая / лабораторная наука';
+
+  @override
+  String get specForensicBiochemistry => 'Судебная биохимия';
+
+  @override
+  String get specPathologyHistology => 'Патология / гистология';
+
+  @override
+  String get specGeneticsDna => 'Генетика / ДНК';
+
+  @override
+  String get specForensicAnthropology => 'Судебная антропология';
+
+  @override
+  String get specForensicOdontology => 'Судебная одонтология';
+
+  @override
+  String get specForensicRadiology => 'Судебная радиология';
+
+  @override
+  String get specForensicPsychology => 'Судебная психология / психиатрия';
+
+  @override
+  String get specForensicBiology => 'Судебная биология';
+
+  @override
+  String get specEntomology => 'Судебная энтомология';
+
+  @override
+  String get specOther => 'Другое';
+
+  @override
+  String get scopeLegal => 'Право и юрисдикция';
+
+  @override
+  String get scopeTranslation => 'Перевод';
+
+  @override
+  String get studyBachelor => 'Бакалавриат';
+
+  @override
+  String get studyMaster => 'Магистратура';
+
+  @override
+  String get studyResidency => 'Ординатура';
+
+  @override
+  String get studyDoctoral => 'Докторантура';
+
+  @override
+  String get studyOther => 'Другое';
+
+  @override
+  String get accountChoiceTitle => 'Пользуйтесь приложением без учётной записи';
+
+  @override
+  String get accountChoiceSubtitle =>
+      'Офлайн-база, поиск и калькуляторы работают без учётной записи. Она нужна только для облачных функций.';
+
+  @override
+  String get accountContinueWithout => 'Продолжить без учётной записи';
+
+  @override
+  String get accountContinueWithoutNote =>
+      'Учётную запись можно создать позже в профиле.';
+
+  @override
+  String get accountCreateOrSignIn => 'Создать учётную запись / Войти';
+
+  @override
+  String get accountCloudUnavailable =>
+      'Облачный сервис учётных записей в этой версии не подключён. Всё офлайн продолжает работать.';
+
+  @override
+  String get accountNeededFor => 'Учётная запись нужна для';
+
+  @override
+  String get accountNeedVerification => 'Профессионального подтверждения';
+
+  @override
+  String get accountNeedReviews =>
+      'Профессиональных рецензий научных материалов';
+
+  @override
+  String get accountNeedSync => 'Синхронизации между устройствами';
+
+  @override
+  String get accountNeedSubscriptions => 'Подписок на нескольких устройствах';
+
+  @override
+  String get accountNeedCloudAi => 'Облачного ИИ (после подключения)';
+
+  @override
+  String get accountNeedInstitution => 'Функций для организаций';
+
+  @override
+  String get accountFillProfile => 'Заполнить профиль сейчас (необязательно)';
+
+  @override
+  String get profileLocalOnlyNote =>
+      'Данные профиля хранятся только на этом устройстве и никуда не отправляются.';
+
+  @override
+  String get profileStudentTitle => 'Профиль студента';
+
+  @override
+  String get profileProTitle => 'Профиль специалиста';
+
+  @override
+  String get profileSaved => 'Профиль сохранён на этом устройстве';
+
+  @override
+  String get profileSectionIdentity => 'Личные данные';
+
+  @override
+  String get profileSectionWork => 'Профессиональные данные';
+
+  @override
+  String get profileSectionOptional => 'Необязательно';
+
+  @override
+  String get profileStudentCannotReview =>
+      'Профиль студента предназначен для обучения: он не может подтверждать научные материалы или выполнять квалифицированные рецензии.';
+
+  @override
+  String get fieldFullName => 'ФИО';
+
+  @override
+  String get fieldCountry => 'Страна';
+
+  @override
+  String get fieldCountryChoose => 'Выберите страну';
+
+  @override
+  String get fieldCountrySearch => 'Поиск страны';
+
+  @override
+  String get fieldCity => 'Город / регион (необязательно)';
+
+  @override
+  String get fieldInstitution => 'Вуз / учреждение (необязательно)';
+
+  @override
+  String get fieldFaculty => 'Факультет / программа (необязательно)';
+
+  @override
+  String get fieldStudyLevel => 'Уровень обучения (необязательно)';
+
+  @override
+  String get fieldInterests => 'Области интересов';
+
+  @override
+  String get fieldOrganization => 'Организация / учреждение';
+
+  @override
+  String get fieldPosition => 'Должность';
+
+  @override
+  String get fieldPrimarySpecialty => 'Основная специальность';
+
+  @override
+  String get fieldAdditionalSpecialties => 'Дополнительные специальности';
+
+  @override
+  String get fieldYearsExperience => 'Стаж работы (лет)';
+
+  @override
+  String get fieldEducation => 'Образование / квалификация';
+
+  @override
+  String get fieldWorkEmail => 'Рабочий e-mail (необязательно)';
+
+  @override
+  String get fieldPrivateHelper =>
+      'Не публикуется — не отображается в открытом профиле.';
+
+  @override
+  String get fieldLicense => 'Номер регистрации / лицензии (необязательно)';
+
+  @override
+  String get fieldLicenseHelper =>
+      'Только если в вашей стране он выдаётся. Не публикуется.';
+
+  @override
+  String get fieldBio => 'Краткая профессиональная биография (необязательно)';
+
+  @override
+  String get fieldLanguages => 'Языки (через запятую)';
+
+  @override
+  String get fieldProInterests => 'Профессиональные интересы (необязательно)';
+
+  @override
+  String get fieldShowOrganization =>
+      'Показывать организацию в открытом профиле';
+
+  @override
+  String get fieldShowOrganizationHelper =>
+      'По умолчанию выключено. Имя, специальность и страна публикуются только после подтверждения.';
+
+  @override
+  String get formRequired => 'Обязательное поле';
+
+  @override
+  String get formTooLong => 'Слишком длинно';
+
+  @override
+  String get formInvalid => 'Недопустимое значение';
+
+  @override
+  String get formHasErrors => 'Исправьте отмеченные поля.';
+
+  @override
+  String get actionSave => 'Сохранить';
+
+  @override
+  String get actionRemove => 'Удалить';
+
+  @override
+  String get verifTitle => 'Профессиональное подтверждение';
+
+  @override
+  String get verifStatusLabel => 'Текущий статус';
+
+  @override
+  String get verifUnverified => 'Не подтверждён';
+
+  @override
+  String get verifPending => 'Ожидает проверки';
+
+  @override
+  String get verifVerified => 'Подтверждённый специалист';
+
+  @override
+  String get verifChangesRequested => 'Нужны дополнительные сведения';
+
+  @override
+  String get verifRejected => 'Отклонено';
+
+  @override
+  String get verifSuspended => 'Временно приостановлено';
+
+  @override
+  String get verifUnverifiedBody =>
+      'Вы не подавали заявку на подтверждение. Все офлайн-функции доступны и без него.';
+
+  @override
+  String get verifPendingBody =>
+      'Ваша заявка ожидает проверки уполномоченным сотрудником.';
+
+  @override
+  String get verifVerifiedBody =>
+      'Ваш профессиональный статус подтверждён уполномоченным сотрудником. Право рецензирования выдаётся отдельно по каждой специальности.';
+
+  @override
+  String get verifChangesBody =>
+      'Нужны дополнительные сведения. Обновите профиль или документы и отправьте заявку повторно.';
+
+  @override
+  String get verifRejectedBody =>
+      'Заявка не одобрена. Вы можете подать новую заявку.';
+
+  @override
+  String get verifSuspendedBody =>
+      'Подтверждение временно приостановлено. Право рецензирования не действует.';
+
+  @override
+  String get verifServiceNotConnected =>
+      'Сервис подтверждения в этой версии не подключён. Заявки пока нельзя отправить, и никто не может быть подтверждён.';
+
+  @override
+  String get verifHowTitle => 'Как проходит подтверждение';
+
+  @override
+  String get verifStep1 => 'Заполните профиль специалиста.';
+
+  @override
+  String get verifStep2 =>
+      'При желании приложите документ о квалификации (хранится закрыто).';
+
+  @override
+  String get verifStep3 =>
+      'Уполномоченный администратор или подтверждённый специалист той же области вручную проверяет заявку и документ. Самоподтверждение невозможно.';
+
+  @override
+  String get verifStep4 =>
+      'Право рецензирования выдаётся отдельно по каждой специальности.';
+
+  @override
+  String get verifHumanOnly =>
+      'Выбор режима «Специалист», указание должности, загрузка сертификата или автоматическая/ИИ-проверка никогда не дают статус подтверждённого специалиста. Документ — лишь доказательство; статус присваивается только после ручной проверки, при этом фиксируется, кто подтвердил, когда, какой документ проверен и по какой специальности.';
+
+  @override
+  String get verifApplication => 'Заявка';
+
+  @override
+  String get verifProfileMissing => 'Профиль специалиста не заполнен';
+
+  @override
+  String get verifSubmit => 'Отправить заявку';
+
+  @override
+  String get verifSubmitted => 'Заявка отправлена. Статус: ожидает проверки.';
+
+  @override
+  String get verifSubmitUnavailable =>
+      'Отправка недоступна, пока сервис подтверждения не подключён.';
+
+  @override
+  String get verifSubmitNote =>
+      'Заявка и документы передаются по зашифрованному каналу в закрытое хранилище.';
+
+  @override
+  String proYearsExperience(int years) {
+    return 'Стаж: $years лет';
+  }
+
+  @override
+  String proReviewCount(int count) {
+    return 'Рецензий: $count';
+  }
+
+  @override
+  String get proServiceNotConnected =>
+      'Облачный сервис в этой версии не подключён.';
+
+  @override
+  String get proInvalidInput => 'Проверьте введённые данные.';
+
+  @override
+  String get proOffline => 'Нет подключения к интернету.';
+
+  @override
+  String get proServerError => 'Сервис временно недоступен. Повторите позже.';
+
+  @override
+  String get credUploadTitle => 'Загрузить документ о квалификации';
+
+  @override
+  String get credOptional => 'Необязательно';
+
+  @override
+  String credSelectedCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Выбрано $count файлов',
+      few: 'Выбрано $count файла',
+      one: 'Выбран $count файл',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get credIntro =>
+      'Документ необязателен и лишь помогает уполномоченному сотруднику проверить заявку. Сам по себе он не даёт статус подтверждённого специалиста.';
+
+  @override
+  String get credPrivacy =>
+      'Документы конфиденциальны: они никогда не публикуются, не имеют открытой ссылки, их содержимое не записывается в журналы. Открыть их может только уполномоченный проверяющий.';
+
+  @override
+  String get credNoCaseData =>
+      'Не загружайте материалы дел, вещественные доказательства, заключения или любые конфиденциальные документы по делам. Паспорт и удостоверение личности не требуются.';
+
+  @override
+  String get credKindTitle => 'Тип документа';
+
+  @override
+  String get credProfessionalCertificate => 'Профессиональный сертификат';
+
+  @override
+  String get credQualificationCertificate => 'Свидетельство о квалификации';
+
+  @override
+  String get credDiploma => 'Диплом';
+
+  @override
+  String get credEmployment => 'Подтверждение места работы / назначения';
+
+  @override
+  String get credRegistration => 'Документ о регистрации / лицензии';
+
+  @override
+  String get credTraining => 'Сертификат признанного обучения';
+
+  @override
+  String get credFormats =>
+      'PDF, JPG или PNG, до 10 МБ на файл, не более 5 файлов.';
+
+  @override
+  String get credChooseFile => 'Выбрать файл';
+
+  @override
+  String get credSelectedTitle => 'Выбранные документы';
+
+  @override
+  String get credNotUploaded =>
+      'Не загружено: сервис подтверждения не подключён. Файлы остаются только в памяти устройства и удаляются при закрытии приложения.';
+
+  @override
+  String get credWillSendOnSubmit =>
+      'Файлы будут отправлены конфиденциально вместе с заявкой.';
+
+  @override
+  String get credPickFailed => 'Не удалось открыть файл.';
+
+  @override
+  String get credErrorEmpty => 'Файл пуст.';
+
+  @override
+  String get credErrorTooLarge => 'Файл больше 10 МБ.';
+
+  @override
+  String get credErrorType => 'Принимаются только файлы PDF, JPG и PNG.';
+
+  @override
+  String get credErrorTooMany => 'Не более 5 файлов.';
+
+  @override
+  String get reviewSectionTitle => 'Рецензия специалиста';
+
+  @override
+  String get reviewEmpty =>
+      'Этот материал ещё не рецензирован квалифицированным специалистом.';
+
+  @override
+  String get reviewWhoCanReview =>
+      'Рецензировать этот материал могут только подтверждённые специалисты с правом рецензирования в соответствующей области.';
+
+  @override
+  String get reviewScopeNotAssigned =>
+      'Для этой записи ещё не назначена область рецензирования.';
+
+  @override
+  String get reviewWrite => 'Написать рецензию';
+
+  @override
+  String get reviewDecision => 'Решение';
+
+  @override
+  String get reviewActApprove => 'Одобрить';
+
+  @override
+  String get reviewActRequestChange => 'Запросить исправление';
+
+  @override
+  String get reviewActConflict => 'Отметить противоречие данных';
+
+  @override
+  String get reviewActOutdated => 'Отметить как устаревшее';
+
+  @override
+  String get reviewActReject => 'Отклонить';
+
+  @override
+  String get reviewDecApprove => 'Одобрено';
+
+  @override
+  String get reviewDecRequestChange => 'Требуется исправление';
+
+  @override
+  String get reviewDecConflict => 'Противоречие данных';
+
+  @override
+  String get reviewDecOutdated => 'Устарело';
+
+  @override
+  String get reviewDecReject => 'Отклонено';
+
+  @override
+  String get reviewStateInProgress => 'Идёт рецензирование';
+
+  @override
+  String get reviewStateProfessional => 'Рецензировано специалистом';
+
+  @override
+  String get reviewStateHumanVerified => 'Научно подтверждено людьми';
+
+  @override
+  String get reviewStateReReview => 'Требуется повторная рецензия';
+
+  @override
+  String get reviewNote => 'Текст рецензии';
+
+  @override
+  String get reviewNoteHelper =>
+      'Обоснуйте решение со ссылкой на данные. Не менее 20 символов.';
+
+  @override
+  String get reviewNoteTooShort => 'Нужно не менее 20 символов.';
+
+  @override
+  String get reviewSourceRef => 'Подтверждающий источник (необязательно)';
+
+  @override
+  String get reviewSourceHelper => 'DOI, PMID или ссылка https';
+
+  @override
+  String get reviewSourceInvalid => 'Укажите DOI, PMID или ссылку https.';
+
+  @override
+  String get reviewSubmit => 'Отправить рецензию';
+
+  @override
+  String get reviewSubmitted => 'Рецензия отправлена';
+
+  @override
+  String get reviewNotVerification =>
+      'Одна рецензия не делает материал научно подтверждённым. Для подтверждения нужны независимые квалифицированные рецензии согласно политике проверки.';
+
+  @override
+  String reviewVersionNote(String version) {
+    return 'Рецензия относится к версии содержания $version. При изменении содержания нужна повторная рецензия.';
+  }
+
+  @override
+  String reviewMeta(String date, String version) {
+    return 'Рецензия от $date · версия содержания $version';
+  }
+
+  @override
+  String get reviewStale =>
+      'Написана для более ранней версии — сохранена в истории; требуется повторная рецензия.';
+
+  @override
+  String get reviewPermAllowed => 'Вы можете рецензировать этот материал.';
+
+  @override
+  String get reviewPermSignIn => 'Сначала войдите в учётную запись.';
+
+  @override
+  String get reviewPermNotVerified =>
+      'Рецензии могут писать только подтверждённые специалисты.';
+
+  @override
+  String get reviewPermSuspended =>
+      'Ваше подтверждение приостановлено; рецензирование недоступно.';
+
+  @override
+  String get reviewPermScope =>
+      'У вас нет права рецензирования в этой области.';
+
+  @override
+  String get reviewPermStudentMode =>
+      'Переключитесь в режим «Специалист», чтобы писать рецензии. Подтверждение сохраняется.';
+
+  @override
+  String get layerSource => 'Источник прикреплён';
+
+  @override
+  String layerSourceCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count источников',
+      few: '$count источника',
+      one: '$count источник',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get noReliableSource => 'Надёжный источник не прикреплён.';
+
+  @override
+  String get layerIdentifier => 'Идентификатор (DOI/PMID) проверен';
+
+  @override
+  String get layerIdentifierOk => 'Проверен';
+
+  @override
+  String get layerIdentifierPending => 'Ещё не проверен';
+
+  @override
+  String get layerNotApplicable => 'Не применимо';
+
+  @override
+  String get layerProfessional => 'Рецензии специалистов';
+
+  @override
+  String get layerHuman => 'Научное подтверждение людьми';
+
+  @override
+  String layerHumanCount(int count, int required) {
+    return '$count из $required независимых одобрений';
+  }
+
+  @override
+  String get dashboardTitle => 'Рабочее место рецензента';
+
+  @override
+  String get dashboardOnlyVerified =>
+      'Доступно только подтверждённым специалистам с правом рецензирования хотя бы в одной области.';
+
+  @override
+  String get dashboardQueueEmpty => 'В этой очереди нет записей.';
+
+  @override
+  String dashboardItemMeta(
+    int claims,
+    int sources,
+    String level,
+    String version,
+  ) {
+    return 'Утверждений: $claims · источников: $sources · доказательность: $level · версия $version';
+  }
+
+  @override
+  String get queueNeedsReview => 'Требует рецензии';
+
+  @override
+  String get queueAssigned => 'Назначено мне';
+
+  @override
+  String get queueReviewedByMe => 'Рецензировано мной';
+
+  @override
+  String get queueConflicts => 'Противоречия';
+
+  @override
+  String get queueReReview => 'Нужна повторная рецензия';
+
+  @override
+  String get profileSectionVerification => 'Подтверждение';
+
+  @override
+  String get profileSectionData => 'Данные и конфиденциальность';
+
+  @override
+  String get profileStudentVerificationNote =>
+      'Профессиональное подтверждение относится к режиму «Специалист». Смена режима не влияет на подтверждение.';
+
+  @override
+  String get profileNotFilled => 'Профиль не заполнен';
+
+  @override
+  String get profileFillAction => 'Заполнить профиль';
+
+  @override
+  String get profileEditAction => 'Изменить профиль';
+
+  @override
+  String get moduleHubSourced => 'Записи с источниками';
+
+  @override
+  String get moduleHubSourcedNote =>
+      'Показаны с источниками и текущим статусом проверки. «Требует проверки» означает доступные материалы с источниками, ожидающие экспертной проверки, — а не отсутствие материалов.';
+
+  @override
+  String get moduleHubOpenAll => 'Открыть все';
+
+  @override
+  String methodsStandardsLink(int count) {
+    return 'Международные стандарты и руководства ($count)';
+  }
+
+  @override
+  String get sourceOneTap => 'Источники и происхождение';
+
+  @override
+  String get researchKeyRelevance => 'Судебно-экспертное значение';
+
+  @override
+  String get researchLimitationsNote =>
+      'Показаны только библиографические данные и краткое описание; полный текст доступен у издателя.';
 }

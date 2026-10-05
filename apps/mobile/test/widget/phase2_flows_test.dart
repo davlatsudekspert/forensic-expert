@@ -202,6 +202,11 @@ void main() {
       await tester.pumpAndSettle();
       await tapKey(tester, 'picker.jurisdiction.UZ');
       expect(c.read(settingsControllerProvider).jurisdictionId, 'UZ');
+      await tester.scrollUntilVisible(
+        find.text('Uzbekistan'),
+        200,
+        scrollable: find.byType(Scrollable).hitTestable().first,
+      );
       expect(find.text('Uzbekistan'), findsOneWidget);
 
       c.read(routerProvider).go(Routes.libraryEntry('TEST-SUB-ETOH'));

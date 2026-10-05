@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-/// Foydalanuvchi rejimi (19-bo‘lim).
-enum UserMode { professional, student, research }
+/// Foydalanish rejimi — faqat UI tanlovi. Professional rejim professional
+/// maqom tasdiqlanganini **anglatmaydi** (maqom — alohida, server tomonida).
+enum UserMode { professional, student }
 
 /// Kontrast afzalligi. `system` — OS sozlamasini hurmat qiladi
 /// (iOS «Increase Contrast», Android yuqori kontrastli matn).
@@ -35,6 +36,7 @@ class AppSettings {
     this.acceptedDisclaimerVersion,
     this.contrast = ContrastPreference.system,
     this.jurisdictionId = internationalJurisdictionId,
+    this.declaredRole,
   });
 
   /// `null` — foydalanuvchi hali til tanlamagan (birinchi ishga tushirish).
@@ -47,6 +49,10 @@ class AppSettings {
   /// Tanlangan yurisdiksiya (`INT`, `UZ`, `US-CA`…). Faqat huquqiy va
   /// protsedura qatlamiga ta’sir qiladi — ilmiy dalillar hamma uchun bir xil.
   final String jurisdictionId;
+
+  /// Onboarding’da tanlangan kichik rol (`StudentRole` / `ProfessionalRole`
+  /// nomi). Faqat UI’ni moslashtiradi — hech qanday huquq bermaydi.
+  final String? declaredRole;
 
   bool get hasLanguage => locale != null;
 
@@ -63,6 +69,7 @@ class AppSettings {
     int? acceptedDisclaimerVersion,
     ContrastPreference? contrast,
     String? jurisdictionId,
+    String? declaredRole,
   }) => AppSettings(
     locale: locale ?? this.locale,
     themeMode: themeMode ?? this.themeMode,
@@ -71,5 +78,6 @@ class AppSettings {
         acceptedDisclaimerVersion ?? this.acceptedDisclaimerVersion,
     contrast: contrast ?? this.contrast,
     jurisdictionId: jurisdictionId ?? this.jurisdictionId,
+    declaredRole: declaredRole ?? this.declaredRole,
   );
 }
