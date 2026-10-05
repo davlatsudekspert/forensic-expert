@@ -1,12 +1,16 @@
 # Sinov APK’lari uchun GitHub pre-release (xususiy repo — havola faqat
-# ruxsati bor foydalanuvchiga ochiladi). Faqat `apk-v*` tegida ishlaydi.
+# ruxsati bor foydalanuvchiga ochiladi). Faqat qo‘lda (workflow_dispatch);
+# teg GitHub tomonida joriy commit’ga yaratiladi.
 # DEBUG imzoli — store’ga emas; nomida va matnida ochiq yozilgan.
 name: Test APK pre-release
 
 on:
-  push:
-    tags:
-      - "apk-v*"
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Pre-release tag (e.g. apk-v0.2.0-2)"
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -42,8 +46,11 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "$GITHUB_REF_NAME" "$RUNNER_TEMP"/out/* \
+          TAG="${{ inputs.tag }}"
+          case "$TAG" in apk-v*) ;; *) echo "::error::tag must start with apk-v"; exit 1;; esac
+          gh release create "$TAG" "$RUNNER_TEMP"/out/* \
             --repo "$GITHUB_REPOSITORY" \
+            --target "$GITHUB_SHA" \
             --prerelease \
-            --title "Test APK $GITHUB_REF_NAME (DEBUG signed — not for store)" \
+            --title "Test APK $TAG (DEBUG signed — not for store)" \
             --notes "Real-device test builds. DEBUG SIGNED — NOT FOR STORE. TELEFON = arm64 phones, BLUESTACKS = x86_64 emulator, UNIVERSAL = all ABIs. HUMAN VERIFIED = 0."
