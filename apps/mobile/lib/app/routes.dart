@@ -49,6 +49,8 @@ abstract final class Routes {
 
   static const library = '/library';
   static String libraryEntry(String id) => '/library/entry/$id';
+  static String source(String id) =>
+      '/library/source/${Uri.encodeComponent(id)}';
 
   static const ai = '/ai';
   static const profile = '/profile';
@@ -75,6 +77,8 @@ abstract final class Routes {
   static const accountForgot = '/profile/account/forgot';
   static const accountReset = '/profile/account/reset';
   static const accountDelete = '/profile/account/delete';
+  static const accountEmailCode = '/profile/account/email';
+  static const welcomeEmailCode = '/welcome/account/email';
 
   /// Onboarding qadamlari tartibi.
   static const onboardingSteps = [language, disclaimer, mode];

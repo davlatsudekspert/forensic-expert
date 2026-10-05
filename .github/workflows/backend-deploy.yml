@@ -1,0 +1,57 @@
+# FORENSIC EXPERT backend (own Supabase project). Manual only — never runs on
+# push. Requires repository secrets (values are never printed):
+#   SUPABASE_ACCESS_TOKEN, SUPABASE_PROJECT_REF, SUPABASE_DB_PASSWORD,
+#   GEMINI_API_KEY (AI Edge Function), FE_SMTP_HOST, FE_SMTP_USER,
+#   FE_SMTP_PASS, FE_SMTP_SENDER_EMAIL, FE_SITE_URL (branded email OTP).
+name: backend-deploy
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+      SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
+      PROJECT_REF: ${{ secrets.SUPABASE_PROJECT_REF }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      FE_SMTP_HOST: ${{ secrets.FE_SMTP_HOST }}
+      FE_SMTP_USER: ${{ secrets.FE_SMTP_USER }}
+      FE_SMTP_PASS: ${{ secrets.FE_SMTP_PASS }}
+      FE_SMTP_SENDER_EMAIL: ${{ secrets.FE_SMTP_SENDER_EMAIL }}
+      FE_SITE_URL: ${{ secrets.FE_SITE_URL }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check required secrets (presence only)
+        run: |
+          missing=0
+          for v in SUPABASE_ACCESS_TOKEN SUPABASE_DB_PASSWORD PROJECT_REF; do
+            if [ -z "${!v}" ]; then echo "::error::missing secret for $v"; missing=1; fi
+          done
+          exit $missing
+      - uses: supabase/setup-cli@v1
+        with:
+          version: latest
+      - name: Link project
+        run: supabase link --project-ref "$PROJECT_REF" -p "$SUPABASE_DB_PASSWORD"
+      - name: Database migrations
+        run: supabase db push -p "$SUPABASE_DB_PASSWORD"
+      - name: Auth config (OTP, templates, SMTP)
+        run: |
+          if [ -n "$FE_SMTP_HOST" ] && [ -n "$FE_SMTP_PASS" ]; then
+            supabase config push --project-ref "$PROJECT_REF"
+          else
+            echo "::warning::FE_SMTP_* not set — branded email sender NOT configured"
+          fi
+      - name: Edge Function secrets
+        run: |
+          if [ -n "$GEMINI_API_KEY" ]; then
+            printf 'GEMINI_API_KEY=%s\n' "$GEMINI_API_KEY" > /tmp/fe.env
+            supabase secrets set --env-file /tmp/fe.env --project-ref "$PROJECT_REF" >/dev/null
+            rm -f /tmp/fe.env
+          else
+            echo "::warning::GEMINI_API_KEY not set — AI stays in preview"
+          fi
+      - name: Deploy Edge Functions
+        run: supabase functions deploy --project-ref "$PROJECT_REF"

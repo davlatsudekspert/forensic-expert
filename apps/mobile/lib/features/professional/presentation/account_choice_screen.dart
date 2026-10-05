@@ -73,7 +73,14 @@ class AccountChoiceScreen extends ConsumerWidget {
               OutlinedButton.icon(
                 key: const Key('account.create'),
                 onPressed: configured
-                    ? () => context.push(Routes.accountRegister)
+                    ? () async {
+                        final ok = await context.push<bool>(
+                          Routes.welcomeEmailCode,
+                        );
+                        if (ok == true && context.mounted) {
+                          context.go(Routes.home);
+                        }
+                      }
                     : null,
                 icon: const Icon(Icons.person_add_alt),
                 label: Text(l.accountCreateOrSignIn),

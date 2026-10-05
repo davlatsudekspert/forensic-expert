@@ -7,7 +7,6 @@ import '../core/l10n/generated/app_localizations.dart';
 import '../core/perf/navigation_timing.dart';
 import '../core/settings/app_settings.dart';
 import '../core/settings/settings_controller.dart';
-
 import '../domain/catalog/tools_catalog.dart';
 import '../domain/knowledge/knowledge_models.dart';
 import '../domain/library/library_models.dart';
@@ -26,6 +25,7 @@ import '../features/legal/presentation/compare_screen.dart';
 import '../features/legal/presentation/jurisdiction_screens.dart';
 import '../features/library/presentation/entry_detail_screen.dart';
 import '../features/library/presentation/library_screen.dart';
+import '../features/library/presentation/source_detail_screen.dart';
 import '../features/onboarding/presentation/disclaimer_screen.dart';
 import '../features/onboarding/presentation/language_screen.dart';
 import '../features/onboarding/presentation/mode_screen.dart';
@@ -105,6 +105,7 @@ final routerProvider = Provider<GoRouter>((ref) {
             path: 'profile',
             builder: (c, s) => const ProfileEditScreen(),
           ),
+          GoRoute(path: 'email', builder: (c, s) => const EmailCodeScreen()),
         ],
       ),
       StatefulShellRoute.indexedStack(
@@ -296,6 +297,11 @@ final routerProvider = Provider<GoRouter>((ref) {
                     ],
                   ),
                   GoRoute(
+                    path: 'source/:id',
+                    builder: (c, s) =>
+                        SourceDetailScreen(sourceId: s.pathParameters['id']!),
+                  ),
+                  GoRoute(
                     path: 'chain/:id',
                     builder: (c, s) =>
                         KnowledgeChainScreen(entityId: s.pathParameters['id']!),
@@ -377,6 +383,11 @@ final routerProvider = Provider<GoRouter>((ref) {
                     parentNavigatorKey: rootKey,
                     builder: (c, s) =>
                         ResetPasswordScreen(email: s.extra as String? ?? ''),
+                  ),
+                  GoRoute(
+                    path: 'account/email',
+                    parentNavigatorKey: rootKey,
+                    builder: (c, s) => const EmailCodeScreen(),
                   ),
                   GoRoute(
                     path: 'account/delete',

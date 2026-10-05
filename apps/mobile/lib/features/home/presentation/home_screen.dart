@@ -17,6 +17,8 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../core/widgets/fe_data_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
+import '../../../domain/library/library_models.dart';
+import '../../library/presentation/source_detail_screen.dart';
 import '../../tools/tool_strings.dart';
 
 /// Home modullari (professional bo‘limlar). ID’lar marshrut parametri.
@@ -228,6 +230,14 @@ class _DatabaseCard extends ConsumerWidget {
     final status = ref.watch(contentStatusProvider);
     final versions = ref.watch(legalCatalogProvider).componentVersions;
     final secondary = t.bodySmall?.copyWith(color: c.textSecondary);
+    // Haqiqiy sonlar (oflayn bazadan); HUMAN VERIFIED — faqat inson
+    // ko‘rib chiqqan claim’lar (fixture/AI/avtomatik tekshiruv emas).
+    final review = ref.watch(provenanceIndexProvider).review;
+    final substances = ref
+        .watch(libraryRepositoryProvider)
+        .entries(LibrarySection.substances)
+        .length;
+    final sources = ref.watch(sourceIndexProvider).length;
     final lines = status.when(
       data: (s) => s.isInstalled
           ? [
@@ -240,6 +250,19 @@ class _DatabaseCard extends ConsumerWidget {
                 Text(l.homeDbScientific(v), style: secondary),
               if (versions['jurisdiction'] case final v?)
                 Text(l.homeDbJurisdiction(v), style: secondary),
+              if (review.total > 0) ...[
+                const SizedBox(height: FeSpace.xxs),
+                Text(
+                  l.homeDbCounts(substances, sources, review.total),
+                  key: const Key('home.db.counts'),
+                  style: secondary,
+                ),
+                Text(
+                  l.homeDbHumanVerified(review.humanVerified),
+                  key: const Key('home.db.humanVerified'),
+                  style: secondary,
+                ),
+              ],
             ]
           : [Text(l.homeDbNotInstalled, style: secondary)],
       loading: () => [FeSkeleton(lines: 2, semanticLabel: l.homeDbLoading)],

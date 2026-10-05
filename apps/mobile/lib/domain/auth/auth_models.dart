@@ -132,6 +132,9 @@ class AuthAccount {
 abstract final class AuthCodePolicy {
   static const verificationTtl = Duration(hours: 24);
   static const resetTtl = Duration(minutes: 30);
+
+  /// Parolsiz kirish kodi (email OTP) muddati.
+  static const otpTtl = Duration(minutes: 10);
   static const resendCooldown = Duration(seconds: 60);
   static const codeLength = 6;
 

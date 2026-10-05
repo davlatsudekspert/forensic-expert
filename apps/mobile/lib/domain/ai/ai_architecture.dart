@@ -321,9 +321,15 @@ class AiRouter {
     if (!entitlement.canAsk) {
       return AiRouteResult(AiRouteOutcome.quotaUnavailable, chunks: chunks);
     }
-    final draft = await provider.generate(
-      AiPrompt(question: question, experience: experience, chunks: chunks),
-    );
+    final AiDraft draft;
+    try {
+      draft = await provider.generate(
+        AiPrompt(question: question, experience: experience, chunks: chunks),
+      );
+    } on Exception {
+      // Server/tarmoq xatosi — AI javobi o‘ylab topilmaydi; lokal manbalar.
+      return AiRouteResult(AiRouteOutcome.retrievalOnly, chunks: chunks);
+    }
     final check = citations.resolve(draft, chunks);
     if (!check.isValid) {
       return AiRouteResult(

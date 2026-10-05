@@ -24,6 +24,25 @@ void main() {
     }
   });
 
+  test(
+    'Methamphetamine / Метамфетамин / Metamfetamin / metamfetamín',
+    () async {
+      for (final q in [
+        'Methamphetamine',
+        'Метамфетамин',
+        'Metamfetamin',
+        'метамфетамин',
+        'METAMFETAMIN',
+      ]) {
+        expect(
+          ids(await service.search(q), SearchGroup.substances),
+          contains('TEST-SUB-METH'),
+          reason: q,
+        );
+      }
+    },
+  );
+
   test('typo-tolerant: «metamfetamn», «fentanly»', () async {
     expect(
       ids(await service.search('metamfetamn'), SearchGroup.substances),

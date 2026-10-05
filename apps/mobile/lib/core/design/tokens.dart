@@ -79,12 +79,13 @@ class FeColorTokens {
 }
 
 abstract final class FePalette {
+  // Sahifa — sovuq kulrang; kartalar — toza oq (ilmiy, institutsional).
   static const light = FeColorTokens(
-    background: Color(0xFFFFFFFF),
-    surface: Color(0xFFF4F6F9),
+    background: Color(0xFFF5F7FA),
+    surface: Color(0xFFEEF1F5),
     surfaceRaised: Color(0xFFFFFFFF),
-    surfaceSunken: Color(0xFFE9EDF2),
-    border: Color(0xFFD9DFE7),
+    surfaceSunken: Color(0xFFE8ECF1),
+    border: Color(0xFFDCE2EA),
     borderStrong: Color(0xFF8A95A6),
     textPrimary: Color(0xFF0B1220),
     textSecondary: Color(0xFF4A5568),
@@ -105,12 +106,13 @@ abstract final class FePalette {
     focusRing: Color(0xFF0A6F7A),
   );
 
+  // Chuqur navy / grafit qatlamlar (teskari emas — alohida loyihalangan).
   static const dark = FeColorTokens(
-    background: Color(0xFF0A101C),
-    surface: Color(0xFF111A2B),
-    surfaceRaised: Color(0xFF172235),
+    background: Color(0xFF0A111E),
+    surface: Color(0xFF101A2C),
+    surfaceRaised: Color(0xFF142036),
     surfaceSunken: Color(0xFF070C16),
-    border: Color(0xFF26324A),
+    border: Color(0xFF243250),
     borderStrong: Color(0xFF66738A),
     textPrimary: Color(0xFFE8ECF2),
     textSecondary: Color(0xFFA3AEC0),

@@ -5939,5 +5939,152 @@
   "researchLimitationsNote": "Only bibliographic data and a short description are shown; the full text is available from the publisher.",
   "@researchLimitationsNote": {
     "description": "Note."
+  },
+  "emailCodeTitle": "Sign in with email code",
+  "@emailCodeTitle": {
+    "description": "Email code screen title."
+  },
+  "emailCodeRowHint": "A 6-digit code is sent to your email — no password needed",
+  "@emailCodeRowHint": {
+    "description": "Profile row hint."
+  },
+  "emailCodeSubtitle": "Enter your email. We will send a one-time 6-digit FORENSIC EXPERT verification code.",
+  "@emailCodeSubtitle": {
+    "description": "Email code subtitle."
+  },
+  "emailCodeSend": "Send code",
+  "@emailCodeSend": {
+    "description": "Action."
+  },
+  "emailCodeEnterTitle": "Enter the 6-digit code",
+  "@emailCodeEnterTitle": {
+    "description": "Code stage title."
+  },
+  "emailCodeChange": "Change email",
+  "@emailCodeChange": {
+    "description": "Action."
+  },
+  "emailCodeResendIn": "Resend code in {seconds} s",
+  "@emailCodeResendIn": {
+    "description": "Resend countdown.",
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "emailCodeNotProfessional": "Confirming your email signs you in. It does not verify professional status.",
+  "@emailCodeNotProfessional": {
+    "description": "Note."
+  },
+  "emailCodeSignedIn": "Email confirmed. You are signed in.",
+  "@emailCodeSignedIn": {
+    "description": "Snackbar."
+  },
+  "actionNext": "Next",
+  "@actionNext": {
+    "description": "Action."
+  },
+  "profileSectionProfessional": "Professional profile",
+  "@profileSectionProfessional": {
+    "description": "Section."
+  },
+  "profileStepPersonal": "Personal",
+  "@profileStepPersonal": {
+    "description": "Step title."
+  },
+  "profileStepWork": "Professional",
+  "@profileStepWork": {
+    "description": "Step title."
+  },
+  "profileStepProfessional": "Profile and verification",
+  "@profileStepProfessional": {
+    "description": "Step title."
+  },
+  "profileStepOf": "Step {step} of {total}",
+  "@profileStepOf": {
+    "description": "Step counter.",
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "verifReceivedTitle": "Your application has been received.",
+  "@verifReceivedTitle": {
+    "description": "Dialog title."
+  },
+  "verifReceivedBody": "Your professional status is being reviewed.",
+  "@verifReceivedBody": {
+    "description": "Dialog body."
+  },
+  "verifReceivedNote": "Status: application pending. Only an authorised human verifier can grant Verified Professional status — submitting documents does not verify you automatically.",
+  "@verifReceivedNote": {
+    "description": "Dialog note."
+  },
+  "sourceDetailTitle": "Source",
+  "@sourceDetailTitle": {
+    "description": "Screen title."
+  },
+  "sourceLinkedRecords": "Linked records ({count})",
+  "@sourceLinkedRecords": {
+    "description": "Section.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "sourceNoLinkedRecords": "No records in the offline database cite this source.",
+  "@sourceNoLinkedRecords": {
+    "description": "Empty."
+  },
+  "sourceNotAttached": "No reliable source attached.",
+  "@sourceNotAttached": {
+    "description": "No source."
+  },
+  "sourceNotFound": "Source not found in the offline database.",
+  "@sourceNotFound": {
+    "description": "Not found."
+  },
+  "sourceOpenDetails": "Source details and linked records",
+  "@sourceOpenDetails": {
+    "description": "Action."
+  },
+  "homeDbCounts": "{substances} substances · {sources} sources · {claims} sourced claims",
+  "@homeDbCounts": {
+    "description": "Home DB counts.",
+    "placeholders": {
+      "substances": {
+        "type": "int"
+      },
+      "sources": {
+        "type": "int"
+      },
+      "claims": {
+        "type": "int"
+      }
+    }
+  },
+  "homeDbHumanVerified": "Human verified (2 independent experts): {count}",
+  "@homeDbHumanVerified": {
+    "description": "Home DB human-verified count.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "sourcePmid": "PMID {id}",
+  "@sourcePmid": {
+    "description": "Source identifier.",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
   }
 }

@@ -1,0 +1,60 @@
+# FORENSIC EXPERT — Supabase project configuration (own project; shares
+# nothing with any other product). Apply with `supabase link --project-ref
+# <FE project ref>` + `supabase config push`. No secret values here: every
+# credential is read from the environment via env(...).
+project_id = "forensic-expert"
+
+[auth]
+enabled = true
+site_url = "env(FE_SITE_URL)"
+jwt_expiry = 3600
+enable_refresh_token_rotation = true
+refresh_token_reuse_interval = 10
+enable_signup = true
+
+[auth.rate_limit]
+# Emails per hour (project-wide) and OTP verifications per 5 min per IP.
+email_sent = 30
+token_verifications = 30
+
+[auth.email]
+enable_signup = true
+double_confirm_changes = true
+enable_confirmations = true
+# 6-digit code, valid 10 minutes, one resend per 60 s per address.
+otp_length = 6
+otp_expiry = 600
+max_frequency = "60s"
+
+# FORENSIC EXPERT-branded templates (EN/RU/UZ by user_metadata.locale).
+[auth.email.template.confirmation]
+subject = "FORENSIC EXPERT — Verification code / Код подтверждения / Tasdiqlash kodi"
+content_path = "./supabase/templates/otp_confirmation.html"
+
+[auth.email.template.magic_link]
+subject = "FORENSIC EXPERT — Verification code / Код подтверждения / Tasdiqlash kodi"
+content_path = "./supabase/templates/otp_magic_link.html"
+
+# Production sender — FORENSIC EXPERT's OWN domain and SMTP credentials
+# (e.g. Resend: host smtp.resend.com, port 465, user "resend"). The owner
+# must provide a verified domain; nothing here may point at another product.
+[auth.email.smtp]
+enabled = true
+host = "env(FE_SMTP_HOST)"
+port = 465
+user = "env(FE_SMTP_USER)"
+pass = "env(FE_SMTP_PASS)"
+admin_email = "env(FE_SMTP_SENDER_EMAIL)"
+sender_name = "FORENSIC EXPERT"
+
+[storage]
+file_size_limit = "10MiB"
+
+[edge_runtime]
+enabled = true
+
+[functions.ai-answer]
+verify_jwt = true
+
+[functions.delete-account]
+verify_jwt = true

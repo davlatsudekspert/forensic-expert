@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -913,6 +915,197 @@ class _DeleteAccountScreenState extends ConsumerState<DeleteAccountScreen> {
           const SizedBox(height: FeSpace.md),
           const _ErrorText(AuthFailure.notSignedIn),
         ],
+      ],
+    );
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Parolsiz kirish: email → 6 xonali kod → sessiya.
+
+/// Email kodi bilan kirish / ro‘yxatdan o‘tish. Muvaffaqiyatda `true` bilan
+/// yopiladi (chaqiruvchi keyingi qadamni hal qiladi).
+class EmailCodeScreen extends ConsumerStatefulWidget {
+  const EmailCodeScreen({super.key});
+
+  @override
+  ConsumerState<EmailCodeScreen> createState() => _EmailCodeScreenState();
+}
+
+class _EmailCodeScreenState extends ConsumerState<EmailCodeScreen> {
+  final _email = TextEditingController();
+  final _code = TextEditingController();
+  String? _sentTo;
+  AuthFailure? _error;
+  var _busy = false;
+  var _cooldown = 0;
+  Timer? _timer;
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    _email.dispose();
+    _code.dispose();
+    super.dispose();
+  }
+
+  void _startCooldown() {
+    _timer?.cancel();
+    setState(() => _cooldown = AuthCodePolicy.resendCooldown.inSeconds);
+    _timer = Timer.periodic(const Duration(seconds: 1), (t) {
+      if (!mounted) return t.cancel();
+      setState(() => _cooldown = _cooldown > 0 ? _cooldown - 1 : 0);
+      if (_cooldown == 0) t.cancel();
+    });
+  }
+
+  Future<void> _send() async {
+    final email = EmailAddress.normalize(_sentTo ?? _email.text);
+    if (!EmailAddress.isValid(email)) {
+      setState(() => _error = AuthFailure.invalidEmail);
+      return;
+    }
+    setState(() {
+      _busy = true;
+      _error = null;
+    });
+    final r = await ref
+        .read(authRepositoryProvider)
+        .requestEmailCode(
+          email,
+          locale: Localizations.localeOf(context).languageCode,
+        );
+    if (!mounted) return;
+    setState(() {
+      _busy = false;
+      if (r.ok) {
+        _sentTo = email;
+        _code.clear();
+      } else {
+        _error = r.failure;
+      }
+    });
+    if (r.ok) _startCooldown();
+  }
+
+  Future<void> _verify() async {
+    if (!AuthCodePolicy.looksLikeCode(_code.text)) {
+      setState(() => _error = AuthFailure.codeInvalid);
+      return;
+    }
+    setState(() {
+      _busy = true;
+      _error = null;
+    });
+    final r = await ref
+        .read(authRepositoryProvider)
+        .verifyEmailCode(email: _sentTo!, code: _code.text);
+    if (!mounted) return;
+    setState(() => _busy = false);
+    if (r.ok) {
+      final l = AppLocalizations.of(context);
+      ScaffoldMessenger.of(context)
+          .showSnackBar(SnackBar(content: Text(l.emailCodeSignedIn)));
+      if (context.canPop()) {
+        context.pop(true);
+      } else {
+        context.go(Routes.profile);
+      }
+    } else {
+      setState(() => _error = r.failure);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final configured = ref.watch(authRepositoryProvider).isConfigured;
+    final sent = _sentTo;
+    return _AuthScaffold(
+      screenKey: const Key('screen.emailCode'),
+      title: sent == null ? l.emailCodeTitle : l.emailCodeEnterTitle,
+      children: [
+        if (sent == null) ...[
+          Text(l.emailCodeSubtitle, style: t.bodyLarge),
+          const SizedBox(height: FeSpace.md),
+          _EmailField(controller: _email),
+          _ErrorText(_error),
+          _Submit(
+            label: l.emailCodeSend,
+            busy: _busy,
+            buttonKey: const Key('emailCode.send'),
+            onPressed: configured ? _send : null,
+          ),
+        ] else ...[
+          Text(
+            l.verifyBody(AuthCodePolicy.codeLength, sent),
+            key: const Key('emailCode.sentTo'),
+            style: t.bodyLarge,
+          ),
+          const SizedBox(height: FeSpace.md),
+          TextField(
+            key: const Key('emailCode.code'),
+            controller: _code,
+            autofocus: true,
+            keyboardType: TextInputType.number,
+            textAlign: TextAlign.center,
+            autofillHints: const [AutofillHints.oneTimeCode],
+            maxLength: AuthCodePolicy.codeLength,
+            inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+            style: FeThemeBuilder.numeric(
+              t.headlineSmall!.copyWith(letterSpacing: 10),
+            ),
+            decoration: InputDecoration(
+              labelText: l.verifyCode,
+              counterText: '',
+            ),
+            onSubmitted: (_) => _verify(),
+          ),
+          const SizedBox(height: FeSpace.sm),
+          _ErrorText(_error),
+          _Submit(
+            label: l.verifySubmit,
+            busy: _busy,
+            buttonKey: const Key('emailCode.verify'),
+            onPressed: configured ? _verify : null,
+          ),
+          const SizedBox(height: FeSpace.xs),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Flexible(
+                child: TextButton(
+                  key: const Key('emailCode.change'),
+                  onPressed: _busy
+                      ? null
+                      : () => setState(() {
+                          _sentTo = null;
+                          _error = null;
+                        }),
+                  child: Text(l.emailCodeChange),
+                ),
+              ),
+              Flexible(
+                child: TextButton(
+                  key: const Key('emailCode.resend'),
+                  onPressed: _busy || _cooldown > 0 ? null : _send,
+                  child: Text(
+                    _cooldown > 0
+                        ? l.emailCodeResendIn(_cooldown)
+                        : l.verifyResend,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ],
+        const SizedBox(height: FeSpace.md),
+        Text(
+          l.emailCodeNotProfessional,
+          style: t.bodySmall?.copyWith(color: c.textSecondary),
+        ),
       ],
     );
   }

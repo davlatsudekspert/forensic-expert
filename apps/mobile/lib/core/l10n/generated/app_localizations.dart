@@ -8354,6 +8354,168 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Only bibliographic data and a short description are shown; the full text is available from the publisher.'**
   String get researchLimitationsNote;
+
+  /// Email code screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in with email code'**
+  String get emailCodeTitle;
+
+  /// Profile row hint.
+  ///
+  /// In en, this message translates to:
+  /// **'A 6-digit code is sent to your email — no password needed'**
+  String get emailCodeRowHint;
+
+  /// Email code subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your email. We will send a one-time 6-digit FORENSIC EXPERT verification code.'**
+  String get emailCodeSubtitle;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Send code'**
+  String get emailCodeSend;
+
+  /// Code stage title.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the 6-digit code'**
+  String get emailCodeEnterTitle;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Change email'**
+  String get emailCodeChange;
+
+  /// Resend countdown.
+  ///
+  /// In en, this message translates to:
+  /// **'Resend code in {seconds} s'**
+  String emailCodeResendIn(int seconds);
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirming your email signs you in. It does not verify professional status.'**
+  String get emailCodeNotProfessional;
+
+  /// Snackbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Email confirmed. You are signed in.'**
+  String get emailCodeSignedIn;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get actionNext;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional profile'**
+  String get profileSectionProfessional;
+
+  /// Step title.
+  ///
+  /// In en, this message translates to:
+  /// **'Personal'**
+  String get profileStepPersonal;
+
+  /// Step title.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional'**
+  String get profileStepWork;
+
+  /// Step title.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile and verification'**
+  String get profileStepProfessional;
+
+  /// Step counter.
+  ///
+  /// In en, this message translates to:
+  /// **'Step {step} of {total}'**
+  String profileStepOf(int step, int total);
+
+  /// Dialog title.
+  ///
+  /// In en, this message translates to:
+  /// **'Your application has been received.'**
+  String get verifReceivedTitle;
+
+  /// Dialog body.
+  ///
+  /// In en, this message translates to:
+  /// **'Your professional status is being reviewed.'**
+  String get verifReceivedBody;
+
+  /// Dialog note.
+  ///
+  /// In en, this message translates to:
+  /// **'Status: application pending. Only an authorised human verifier can grant Verified Professional status — submitting documents does not verify you automatically.'**
+  String get verifReceivedNote;
+
+  /// Screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Source'**
+  String get sourceDetailTitle;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Linked records ({count})'**
+  String sourceLinkedRecords(int count);
+
+  /// Empty.
+  ///
+  /// In en, this message translates to:
+  /// **'No records in the offline database cite this source.'**
+  String get sourceNoLinkedRecords;
+
+  /// No source.
+  ///
+  /// In en, this message translates to:
+  /// **'No reliable source attached.'**
+  String get sourceNotAttached;
+
+  /// Not found.
+  ///
+  /// In en, this message translates to:
+  /// **'Source not found in the offline database.'**
+  String get sourceNotFound;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Source details and linked records'**
+  String get sourceOpenDetails;
+
+  /// Home DB counts.
+  ///
+  /// In en, this message translates to:
+  /// **'{substances} substances · {sources} sources · {claims} sourced claims'**
+  String homeDbCounts(int substances, int sources, int claims);
+
+  /// Home DB human-verified count.
+  ///
+  /// In en, this message translates to:
+  /// **'Human verified (2 independent experts): {count}'**
+  String homeDbHumanVerified(int count);
+
+  /// Source identifier.
+  ///
+  /// In en, this message translates to:
+  /// **'PMID {id}'**
+  String sourcePmid(String id);
 }
 
 class _AppLocalizationsDelegate

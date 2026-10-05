@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../core/design/theme.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 
 /// Tab yozuvlari uchun maksimal matn masshtabi: tor ekranda (< 360 dp)
@@ -38,45 +39,52 @@ class AppShell extends StatelessWidget {
       // Tab yozuvlari platforma konvensiyasiga ko‘ra cheklangan masshtabda
       // (iOS tab bar ham Dynamic Type bilan cheksiz kattalashmaydi).
       // Har bir tabda tooltip va semantik label to‘liq saqlanadi.
-      bottomNavigationBar: MediaQuery.withClampedTextScaling(
-        maxScaleFactor: navLabelMaxTextScale(MediaQuery.sizeOf(context).width),
-        child: NavigationBar(
-          selectedIndex: shell.currentIndex,
-          labelBehavior: NavigationDestinationLabelBehavior.alwaysShow,
-          onDestinationSelected: (i) =>
-              shell.goBranch(i, initialLocation: i == shell.currentIndex),
-          destinations: [
-            NavigationDestination(
-              key: const Key('nav.home'),
-              icon: const Icon(Icons.home_outlined),
-              selectedIcon: const Icon(Icons.home),
-              label: l.navHome,
-            ),
-            NavigationDestination(
-              key: const Key('nav.tools'),
-              icon: const Icon(Icons.calculate_outlined),
-              selectedIcon: const Icon(Icons.calculate),
-              label: l.navTools,
-            ),
-            NavigationDestination(
-              key: const Key('nav.library'),
-              icon: const Icon(Icons.local_library_outlined),
-              selectedIcon: const Icon(Icons.local_library),
-              label: l.navLibrary,
-            ),
-            NavigationDestination(
-              key: const Key('nav.ai'),
-              icon: const Icon(Icons.auto_awesome_outlined),
-              selectedIcon: const Icon(Icons.auto_awesome),
-              label: l.navAi,
-            ),
-            NavigationDestination(
-              key: const Key('nav.profile'),
-              icon: const Icon(Icons.person_outline),
-              selectedIcon: const Icon(Icons.person),
-              label: l.navProfile,
-            ),
-          ],
+      bottomNavigationBar: DecoratedBox(
+        decoration: BoxDecoration(
+          border: Border(top: BorderSide(color: FeTheme.of(context).border)),
+        ),
+        child: MediaQuery.withClampedTextScaling(
+          maxScaleFactor: navLabelMaxTextScale(
+            MediaQuery.sizeOf(context).width,
+          ),
+          child: NavigationBar(
+            selectedIndex: shell.currentIndex,
+            labelBehavior: NavigationDestinationLabelBehavior.alwaysShow,
+            onDestinationSelected: (i) =>
+                shell.goBranch(i, initialLocation: i == shell.currentIndex),
+            destinations: [
+              NavigationDestination(
+                key: const Key('nav.home'),
+                icon: const Icon(Icons.home_outlined),
+                selectedIcon: const Icon(Icons.home),
+                label: l.navHome,
+              ),
+              NavigationDestination(
+                key: const Key('nav.tools'),
+                icon: const Icon(Icons.calculate_outlined),
+                selectedIcon: const Icon(Icons.calculate),
+                label: l.navTools,
+              ),
+              NavigationDestination(
+                key: const Key('nav.library'),
+                icon: const Icon(Icons.local_library_outlined),
+                selectedIcon: const Icon(Icons.local_library),
+                label: l.navLibrary,
+              ),
+              NavigationDestination(
+                key: const Key('nav.ai'),
+                icon: const Icon(Icons.auto_awesome_outlined),
+                selectedIcon: const Icon(Icons.auto_awesome),
+                label: l.navAi,
+              ),
+              NavigationDestination(
+                key: const Key('nav.profile'),
+                icon: const Icon(Icons.person_outline),
+                selectedIcon: const Icon(Icons.person),
+                label: l.navProfile,
+              ),
+            ],
+          ),
         ),
       ),
     );

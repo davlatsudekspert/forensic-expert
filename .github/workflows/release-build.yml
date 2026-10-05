@@ -43,6 +43,10 @@ jobs:
     env:
       HAS_ANDROID_SIGNING: ${{ secrets.ANDROID_KEYSTORE_BASE64 != '' && secrets.ANDROID_KEYSTORE_PASSWORD != '' && secrets.ANDROID_KEY_ALIAS != '' && secrets.ANDROID_KEY_PASSWORD != '' }}
       HAS_PLAY: ${{ secrets.PLAY_SERVICE_ACCOUNT_JSON != '' }}
+      # FORENSIC EXPERT backend (public URL + anon key only; never service role).
+      FE_SUPABASE_URL: ${{ secrets.FE_SUPABASE_URL }}
+      FE_SUPABASE_ANON_KEY: ${{ secrets.FE_SUPABASE_ANON_KEY }}
+      HAS_GEMINI: ${{ secrets.GEMINI_API_KEY != '' }}
       # Mavjud FORENSIC EXPERT ilovasining o‘zgarmas ID’si. Boshqa ilovalar
       # (NFCSTORE, BugunBor) hech qachon nishon bo‘lmaydi.
       FE_ANDROID_PACKAGE: uz.forensicexpert.forensic_expert
@@ -76,8 +80,16 @@ jobs:
             # Kalitsiz build jim debug imzoga tushmasin — to‘xtasin.
             export ORG_GRADLE_PROJECT_requireReleaseSigning=true
           fi
-          flutter build appbundle --release
-          flutter build apk --release
+          DEFINES=""
+          if [ -n "$FE_SUPABASE_URL" ] && [ -n "$FE_SUPABASE_ANON_KEY" ]; then
+            DEFINES="--dart-define=FE_SUPABASE_URL=$FE_SUPABASE_URL --dart-define=FE_SUPABASE_ANON_KEY=$FE_SUPABASE_ANON_KEY"
+            [ "$HAS_GEMINI" = "true" ] && DEFINES="$DEFINES --dart-define=FE_AI_REMOTE=true"
+            echo "::notice::Backend: FORENSIC EXPERT Supabase configured (AI remote: $HAS_GEMINI)"
+          else
+            echo "::notice::Backend NOT configured (FE_SUPABASE_URL / FE_SUPABASE_ANON_KEY missing) — offline build, account shows 'not connected'"
+          fi
+          flutter build appbundle --release $DEFINES
+          flutter build apk --release $DEFINES
           mkdir -p "$RUNNER_TEMP/out"
           if [ "$HAS_ANDROID_SIGNING" = "true" ]; then
             SIGN=release-signed
@@ -145,6 +157,10 @@ jobs:
     timeout-minutes: 60
     env:
       HAS_ASC: ${{ secrets.ASC_KEY_ID != '' && secrets.ASC_ISSUER_ID != '' && secrets.ASC_PRIVATE_KEY != '' && secrets.APPLE_TEAM_ID != '' }}
+      # FORENSIC EXPERT backend (public URL + anon key only; never service role).
+      FE_SUPABASE_URL: ${{ secrets.FE_SUPABASE_URL }}
+      FE_SUPABASE_ANON_KEY: ${{ secrets.FE_SUPABASE_ANON_KEY }}
+      HAS_GEMINI: ${{ secrets.GEMINI_API_KEY != '' }}
     steps:
       - uses: actions/checkout@v4
       - uses: subosito/flutter-action@v2
@@ -157,11 +173,21 @@ jobs:
       # o‘zi yaratadi va o‘rnatadi (repozitoriyda Podfile yo‘q).
       - name: Compile (no codesign) — proves the iOS build
         working-directory: apps/mobile
-        run: flutter build ios --release --no-codesign
+        run: |
+          DEFINES=""
+          if [ -n "$FE_SUPABASE_URL" ] && [ -n "$FE_SUPABASE_ANON_KEY" ]; then
+            DEFINES="--dart-define=FE_SUPABASE_URL=$FE_SUPABASE_URL --dart-define=FE_SUPABASE_ANON_KEY=$FE_SUPABASE_ANON_KEY"
+            [ "$HAS_GEMINI" = "true" ] && DEFINES="$DEFINES --dart-define=FE_AI_REMOTE=true"
+            echo "::notice::Backend: FORENSIC EXPERT Supabase configured (AI remote: $HAS_GEMINI)"
+          else
+            echo "::notice::Backend NOT configured (FE_SUPABASE_URL / FE_SUPABASE_ANON_KEY missing) — offline build, account shows 'not connected'"
+          fi
+          echo "DEFINES=$DEFINES" >> "$GITHUB_ENV"
+          flutter build ios --release --no-codesign $DEFINES
       - name: Unsigned archive (xcarchive)
         working-directory: apps/mobile
         run: |
-          flutter build ipa --release --no-codesign
+          flutter build ipa --release --no-codesign $DEFINES
           mkdir -p "$RUNNER_TEMP/ios"
           ditto -c -k --keepParent build/ios/archive/Runner.xcarchive "$RUNNER_TEMP/ios/Runner-UNSIGNED.xcarchive.zip"
           (cd "$RUNNER_TEMP/ios" && shasum -a 256 * | tee SHA256SUMS.txt)

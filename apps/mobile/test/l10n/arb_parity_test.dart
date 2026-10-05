@@ -18,6 +18,8 @@ void main() {
   const sameInAllLanguages = {
     'appTitle',
     'appTagline',
+    // Yakuniy: xalqaro identifikator (PubMed ID).
+    'sourcePmid',
     'languageOptionSemantics',
     'moduleAi',
     'navAi',

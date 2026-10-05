@@ -401,6 +401,7 @@ class ProfessionalIdentity {
     required this.status,
     this.isHuman = true,
     this.scopes = const {},
+    this.verifierScopes = const {},
     this.roles = const {AccountRole.user},
     this.specialty,
     this.organization,
@@ -412,7 +413,14 @@ class ProfessionalIdentity {
 
   /// AI agent yoki avtomatik jarayon — hech qachon taqrizchi emas.
   final bool isHuman;
+
+  /// Ilmiy taqriz vakolati (soha bo‘yicha).
   final Set<ReviewerScope> scopes;
+
+  /// `CAN_VERIFY_PROFESSIONALS` — boshqa mutaxassislarni tasdiqlash
+  /// vakolati (soha bo‘yicha, alohida beriladi). Oddiy tasdiqlangan
+  /// mutaxassisda yo‘q.
+  final Set<ReviewerScope> verifierScopes;
   final Set<AccountRole> roles;
   final Specialty? specialty;
   final String? organization;

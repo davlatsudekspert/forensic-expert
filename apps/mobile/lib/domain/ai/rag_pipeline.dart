@@ -361,13 +361,24 @@ class RagPipeline {
         relatedEntityIds: related,
       );
     }
-    final draft = await provider.generate(
-      AiPrompt(
-        question: q,
-        experience: experience,
-        chunks: [for (final c in ranked) c.chunk],
-      ),
-    );
+    final AiDraft draft;
+    try {
+      draft = await provider.generate(
+        AiPrompt(
+          question: q,
+          experience: experience,
+          chunks: [for (final c in ranked) c.chunk],
+        ),
+      );
+    } on Exception {
+      // Server/tarmoq xatosi — javob o‘ylab topilmaydi, faqat manbalar.
+      return RagAnswer(
+        outcome: RagOutcome.retrievalOnly,
+        intent: intent,
+        evidence: ranked,
+        relatedEntityIds: related,
+      );
+    }
     final check = CitationResolver(knownSourceIds: knownSourceIds)
         .resolve(draft, [for (final c in ranked) c.chunk]);
     if (!check.isValid) {

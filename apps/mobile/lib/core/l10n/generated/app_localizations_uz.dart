@@ -4566,4 +4566,102 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get researchLimitationsNote =>
       'Faqat bibliografik ma’lumot va qisqa tavsif ko‘rsatiladi; to‘liq matn noshirda.';
+
+  @override
+  String get emailCodeTitle => 'Email kod orqali kirish';
+
+  @override
+  String get emailCodeRowHint =>
+      'Emailingizga 6 xonali kod yuboriladi — parol shart emas';
+
+  @override
+  String get emailCodeSubtitle =>
+      'Emailingizni kiriting. FORENSIC EXPERT bir martalik 6 xonali tasdiqlash kodini yuboradi.';
+
+  @override
+  String get emailCodeSend => 'Kodni yuborish';
+
+  @override
+  String get emailCodeEnterTitle => '6 xonali kodni kiriting';
+
+  @override
+  String get emailCodeChange => 'Emailni o‘zgartirish';
+
+  @override
+  String emailCodeResendIn(int seconds) {
+    return 'Kodni qayta yuborish: $seconds s';
+  }
+
+  @override
+  String get emailCodeNotProfessional =>
+      'Emailni tasdiqlash hisobga kirishni ta’minlaydi. U mutaxassis maqomini tasdiqlamaydi.';
+
+  @override
+  String get emailCodeSignedIn => 'Email tasdiqlandi. Hisobga kirdingiz.';
+
+  @override
+  String get actionNext => 'Keyingi';
+
+  @override
+  String get profileSectionProfessional => 'Mutaxassis profili';
+
+  @override
+  String get profileStepPersonal => 'Shaxsiy';
+
+  @override
+  String get profileStepWork => 'Kasbiy';
+
+  @override
+  String get profileStepProfessional => 'Profil va tasdiqlash';
+
+  @override
+  String profileStepOf(int step, int total) {
+    return '$step-bosqich / $total';
+  }
+
+  @override
+  String get verifReceivedTitle => 'Arizangiz qabul qilindi.';
+
+  @override
+  String get verifReceivedBody => 'Mutaxassis maqomi tekshirilmoqda.';
+
+  @override
+  String get verifReceivedNote =>
+      'Holat: ariza ko‘rib chiqilmoqda. «Tasdiqlangan mutaxassis» maqomini faqat vakolatli inson-tekshiruvchi beradi — hujjat yuklash avtomatik tasdiq emas.';
+
+  @override
+  String get sourceDetailTitle => 'Manba';
+
+  @override
+  String sourceLinkedRecords(int count) {
+    return 'Bog‘langan yozuvlar ($count)';
+  }
+
+  @override
+  String get sourceNoLinkedRecords =>
+      'Oflayn bazada bu manbaga tayangan yozuv yo‘q.';
+
+  @override
+  String get sourceNotAttached => 'Ishonchli manba biriktirilmagan.';
+
+  @override
+  String get sourceNotFound => 'Manba oflayn bazada topilmadi.';
+
+  @override
+  String get sourceOpenDetails => 'Manba tafsilotlari va bog‘langan yozuvlar';
+
+  @override
+  String homeDbCounts(int substances, int sources, int claims) {
+    return '$substances modda · $sources manba · $claims manbali da’vo';
+  }
+
+  @override
+  String homeDbHumanVerified(int count) {
+    return 'Inson tasdiqlagan (2 mustaqil ekspert): $count';
+  }
+
+  @override
+  String sourcePmid(String id) {
+    return 'PMID $id';
+  }
 }

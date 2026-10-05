@@ -1,33 +1,54 @@
 import 'package:flutter/material.dart';
 
 import '../design/theme.dart';
-import 'brand_mark_r2.g.dart';
 
-/// Brend belgisi — **R2 «Integrated Peak»** (egasi tanlagan yo‘nalish).
+part 'brand_emblem.g.dart';
+
+/// Optik soddalashtirish darajalari (`design/brand/tools/generate_brand.py`).
 ///
-/// Asimmetrik xromatografik cho‘qqi (EMG, «tailing»), integrallangan maydon
-/// va drop-line. Geometriya `design/logo/refined/svg/R2-*.svg` dan dasturiy
-/// olingan (`brand_mark_r2.g.dart`).
+/// * [full] — qalqon, Asklepiy tayog‘i va ilon, tarozi, barmoq izi,
+///   xromatogramma, bo‘lingan tashqi halqa (≥ 96 px);
+/// * [icon] — qalqon + tayoq/ilon + tarozi (41–95 px);
+/// * [small] — qalqon + tayoq/ilon (≤ 40 px).
+enum BrandTier { full, icon, small }
+
+/// Brend belgisi — **«Shield of Evidence»** (original vektor emblema).
 ///
-/// **Yuridik holat:** trademark tekshiruvi tugamaguncha brend «tasdiqlangan»
-/// EMAS (RELEASE GATE RG-06). Belgi dekorativ — ekran o‘quvchisi uchun
-/// yashirilgan, brend nomi alohida matn sifatida o‘qiladi.
+/// Geometriya yagona manbadan generatsiya qilinadi (SVG, PNG, launcher
+/// ikonlari va shu painter bir xil). Oltin faqat emblemada cheklangan
+/// aksent sifatida. Belgi dekorativ — ekran o‘quvchisidan yashirilgan,
+/// brend nomi alohida matn sifatida o‘qiladi.
 class BrandMark extends StatelessWidget {
-  const BrandMark({super.key, this.size = 72});
+  const BrandMark({super.key, this.size = 72, this.onDark = false, this.tier});
 
   final double size;
+
+  /// To‘q fon ustida (splash, navy banner) — to‘q palitra.
+  final bool onDark;
+
+  /// Majburiy daraja; berilmasa o‘lchamdan tanlanadi.
+  final BrandTier? tier;
+
+  static BrandTier tierFor(double size) => size <= 40
+      ? BrandTier.small
+      : size < 96
+      ? BrandTier.icon
+      : BrandTier.full;
 
   @override
   Widget build(BuildContext context) {
     final c = FeTheme.of(context);
+    final dark = onDark || Theme.of(context).brightness == Brightness.dark;
     return ExcludeSemantics(
       child: SizedBox.square(
         dimension: size,
         child: CustomPaint(
-          painter: IntegratedPeakPainter(
-            ink: c.brand,
-            accent: c.accent,
-            small: size <= 40,
+          painter: BrandEmblemPainter(
+            tier: tier ?? tierFor(size),
+            ink: dark ? const Color(0xFFE8EDF4) : c.brand,
+            gold: dark ? const Color(0xFFC9A75E) : const Color(0xFF9C7A33),
+            accent: dark ? const Color(0xFF4CC9D6) : c.accent,
+            fill: dark ? const Color(0xFF15284D) : Colors.white,
           ),
         ),
       ),
@@ -35,100 +56,119 @@ class BrandMark extends StatelessWidget {
   }
 }
 
-/// R2 painter (100×100 grid). `small` — ≤ 40 px uchun optik soddalashtirilgan
-/// variant (qalinroq chiziqlar, injection belgisisiz), SVG `icon-small` bilan bir xil.
-class IntegratedPeakPainter extends CustomPainter {
-  const IntegratedPeakPainter({
-    required this.ink,
-    required this.accent,
-    this.small = false,
+enum _Role { ink, gold, accent, fill }
+
+class _Op {
+  const _Op.m(this.x1, this.y1) : cmd = 'M', x2 = 0, y2 = 0, x3 = 0, y3 = 0;
+  const _Op.l(this.x1, this.y1) : cmd = 'L', x2 = 0, y2 = 0, x3 = 0, y3 = 0;
+  const _Op.c(this.x1, this.y1, this.x2, this.y2, this.x3, this.y3) : cmd = 'C';
+  const _Op.z() : cmd = 'Z', x1 = 0, y1 = 0, x2 = 0, y2 = 0, x3 = 0, y3 = 0;
+
+  final String cmd;
+  final double x1, y1, x2, y2, x3, y3;
+}
+
+class _El {
+  const _El(
+    this.role,
+    this.width, {
+    required this.ops,
+    this.fill = false,
+    this.halo = 0,
   });
 
+  final _Role role;
+  final double width;
+  final bool fill;
+  final double halo;
+  final List<_Op> ops;
+
+  Path toPath() {
+    final p = Path();
+    for (final o in ops) {
+      switch (o.cmd) {
+        case 'M':
+          p.moveTo(o.x1, o.y1);
+        case 'L':
+          p.lineTo(o.x1, o.y1);
+        case 'C':
+          p.cubicTo(o.x1, o.y1, o.x2, o.y2, o.x3, o.y3);
+        default:
+          p.close();
+      }
+    }
+    return p;
+  }
+}
+
+/// 100×100 grid painter (SVG bilan aynan bir xil geometriya).
+class BrandEmblemPainter extends CustomPainter {
+  const BrandEmblemPainter({
+    required this.tier,
+    required this.ink,
+    required this.gold,
+    required this.accent,
+    required this.fill,
+  });
+
+  final BrandTier tier;
   final Color ink;
+  final Color gold;
   final Color accent;
-  final bool small;
+  final Color fill;
+
+  /// Darajadagi elementlar soni (testlar uchun).
+  static int elementCount(BrandTier tier) => _emblemTiers[tier]!.length;
+
+  Color _color(_Role r) => switch (r) {
+    _Role.ink => ink,
+    _Role.gold => gold,
+    _Role.accent => accent,
+    _Role.fill => fill,
+  };
 
   @override
   void paint(Canvas canvas, Size size) {
-    final unit = size.shortestSide / 100;
     canvas
       ..save()
-      ..scale(unit);
-    // Light/dark SVG: markaz atrofida 0.95652 (katta) / 1.0 (small).
-    final k = small ? 1.0 : 0.95652;
-    canvas
-      ..translate(50, 50)
-      ..scale(k)
-      ..translate(-50, -50);
-
-    final peak = small ? r2PeakSmall : r2PeakLarge;
-    final area = small ? r2AreaSmall : r2AreaLarge;
-    final drop = small ? r2DropSmall : r2DropLarge;
-    final baseY = peak.first.dy;
-    final stroke = small ? 9.5 : 6.5;
-    final dropWidth = small ? 7.6 : 5.2;
-
-    // 1) Integrallangan maydon; katta variantda kontur atrofida bo‘shliq
-    //    (SVG mask: 11.7 qalinlikdagi chiziqlar maydondan qirqiladi).
-    final areaPath = Path()..addPolygon(area, true);
-    final fill = Paint()..color = accent;
-    if (small) {
-      canvas.drawPath(areaPath, fill);
-    } else {
-      canvas.saveLayer(const Rect.fromLTWH(-50, -50, 200, 200), Paint());
-      canvas.drawPath(areaPath, fill);
-      final cut = Paint()
-        ..blendMode = BlendMode.clear
+      ..scale(size.shortestSide / 100);
+    for (final e in _emblemTiers[tier]!) {
+      final path = e.toPath();
+      final paint = Paint()
+        ..isAntiAlias = true
+        ..color = _color(e.role);
+      if (e.fill) {
+        canvas.drawPath(path, paint..style = PaintingStyle.fill);
+        continue;
+      }
+      final stroke = Paint()
+        ..isAntiAlias = true
         ..style = PaintingStyle.stroke
-        ..strokeWidth = 11.7
         ..strokeCap = StrokeCap.round
         ..strokeJoin = StrokeJoin.round;
-      canvas
-        ..drawPath(Path()..addPolygon(peak, false), cut)
-        ..drawLine(Offset(8, baseY), Offset(92, baseY), cut)
-        ..drawLine(drop.$1, Offset(drop.$1.dx, 72), cut)
-        ..restore();
-    }
-
-    // 2) Cho‘qqi konturi va bazaviy chiziq.
-    final line = Paint()
-      ..color = ink
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = stroke
-      ..strokeJoin = StrokeJoin.round;
-    canvas
-      ..drawPath(
-        Path()..addPolygon(peak, false),
-        Paint()
-          ..color = ink
-          ..style = PaintingStyle.stroke
-          ..strokeWidth = stroke
-          ..strokeCap = StrokeCap.round
-          ..strokeJoin = StrokeJoin.round,
-      )
-      ..drawLine(Offset(8, baseY), Offset(92, baseY), line);
-
-    // 3) Drop-line (integrallash chegarasi) va injection belgisi.
-    canvas.drawLine(
-      drop.$1,
-      drop.$2,
-      Paint()
-        ..color = accent
-        ..strokeWidth = dropWidth,
-    );
-    if (!small) {
-      canvas.drawLine(
-        Offset(12, baseY),
-        Offset(12, baseY - 8),
-        Paint()
-          ..color = ink
-          ..strokeWidth = 5.2,
+      if (e.halo > 0) {
+        canvas.drawPath(
+          path,
+          stroke
+            ..color = fill
+            ..strokeWidth = e.width + e.halo,
+        );
+      }
+      canvas.drawPath(
+        path,
+        stroke
+          ..color = _color(e.role)
+          ..strokeWidth = e.width,
       );
     }
     canvas.restore();
   }
 
   @override
-  bool shouldRepaint(IntegratedPeakPainter old) =>
-      old.ink != ink || old.accent != accent || old.small != small;
+  bool shouldRepaint(BrandEmblemPainter old) =>
+      old.tier != tier ||
+      old.ink != ink ||
+      old.gold != gold ||
+      old.accent != accent ||
+      old.fill != fill;
 }

@@ -178,6 +178,24 @@ class HttpAuthRepository implements AuthRepository {
   }
 
   @override
+  Future<AuthOutcome> requestEmailCode(String email, {String? locale}) => _call(
+    'POST',
+    'v1/auth/otp/request',
+    body: {'email': EmailAddress.normalize(email), 'locale': ?locale},
+  );
+
+  @override
+  Future<AuthOutcome> verifyEmailCode({
+    required String email,
+    required String code,
+  }) => _call(
+    'POST',
+    'v1/auth/otp/verify',
+    body: {'email': EmailAddress.normalize(email), 'code': code.trim()},
+    opensSession: true,
+  );
+
+  @override
   Future<AuthOutcome> register({
     required String email,
     required String password,

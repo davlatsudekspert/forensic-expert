@@ -69,7 +69,7 @@ class AboutScreen extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: FeSpace.xl),
           child: Column(
             children: [
-              const BrandMark(size: 64),
+              const BrandMark(size: 128),
               const SizedBox(height: FeSpace.md),
               Text(l.appTitle, style: t.titleLarge?.copyWith(letterSpacing: 2)),
               Text(

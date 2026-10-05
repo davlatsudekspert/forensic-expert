@@ -53,10 +53,12 @@ class VerificationScreen extends ConsumerWidget {
     final status = snapshot.status;
     final pro = ref.watch(localProfileProvider).professional;
     final pending = ref.watch(pendingCredentialsProvider);
+    final profileComplete =
+        pro != null && ProfileValidation.professional(pro).isEmpty;
     final canSubmit =
         service.isConfigured &&
         signedIn &&
-        pro != null &&
+        profileComplete &&
         VerificationStateMachine.canSubmit(status);
 
     final steps = [
@@ -191,16 +193,18 @@ class VerificationScreen extends ConsumerWidget {
                                   .read(pendingCredentialsProvider.notifier)
                                   .clear();
                               ref.invalidate(professionalSnapshotProvider);
-                            }
-                            messenger.showSnackBar(
-                              SnackBar(
-                                content: Text(
-                                  r.ok
-                                      ? l.verifSubmitted
-                                      : l.professionalFailureLabel(r.failure!),
+                              if (context.mounted) {
+                                await showApplicationReceived(context);
+                              }
+                            } else {
+                              messenger.showSnackBar(
+                                SnackBar(
+                                  content: Text(
+                                    l.professionalFailureLabel(r.failure!),
+                                  ),
                                 ),
-                              ),
-                            );
+                              );
+                            }
                           }
                         : null,
                     icon: const Icon(Icons.send_outlined),
@@ -212,7 +216,7 @@ class VerificationScreen extends ConsumerWidget {
                         ? l.verifSubmitUnavailable
                         : !signedIn
                         ? l.reviewPermSignIn
-                        : pro == null
+                        : !profileComplete
                         ? l.verifProfileMissing
                         : l.verifSubmitNote,
                     key: const Key('verification.submitNote'),
@@ -391,4 +395,43 @@ class _CredentialUploadScreenState
       ),
     );
   }
+}
+
+/// «Arizangiz qabul qilindi» — server arizani avtomatik qabul qiladi
+/// (APPLICATION_PENDING); maqomni faqat vakolatli shaxs tasdiqlaydi.
+Future<void> showApplicationReceived(BuildContext context) {
+  final l = AppLocalizations.of(context);
+  final c = FeTheme.of(context);
+  final t = Theme.of(context).textTheme;
+  return showDialog<void>(
+    context: context,
+    builder: (ctx) => AlertDialog(
+      key: const Key('verification.received'),
+      icon: Icon(Icons.task_alt, color: c.verified, size: 40),
+      title: Text(l.verifReceivedTitle, textAlign: TextAlign.center),
+      content: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(
+            l.verifReceivedBody,
+            textAlign: TextAlign.center,
+            style: t.bodyLarge,
+          ),
+          const SizedBox(height: FeSpace.sm),
+          Text(
+            l.verifReceivedNote,
+            textAlign: TextAlign.center,
+            style: t.bodySmall?.copyWith(color: c.textSecondary),
+          ),
+        ],
+      ),
+      actions: [
+        FilledButton(
+          key: const Key('verification.receivedOk'),
+          onPressed: () => Navigator.pop(ctx),
+          child: Text(l.actionContinue),
+        ),
+      ],
+    ),
+  );
 }

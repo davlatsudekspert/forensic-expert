@@ -28,6 +28,16 @@ class OfflineAuthRepository implements AuthRepository {
   Future<void> restoreSession() async {}
 
   @override
+  Future<AuthOutcome> requestEmailCode(String email, {String? locale}) async =>
+      _nc;
+
+  @override
+  Future<AuthOutcome> verifyEmailCode({
+    required String email,
+    required String code,
+  }) async => _nc;
+
+  @override
   Future<AuthOutcome> register({
     required String email,
     required String password,

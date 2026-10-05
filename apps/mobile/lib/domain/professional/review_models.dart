@@ -210,7 +210,9 @@ abstract final class ReviewAuthority {
 
   /// Professional maqom bo‘yicha qaror kim chiqara oladi:
   /// * **identity admin** (inson), yoki
-  /// * shu **soha vakolatiga ega, allaqachon tasdiqlangan mutaxassis**.
+  /// * shu soha bo‘yicha alohida **`CAN_VERIFY_PROFESSIONALS`** vakolati
+  ///   berilgan, allaqachon tasdiqlangan mutaxassis (oddiy tasdiqlangan
+  ///   mutaxassis yoki taqrizchi vakolati yetarli emas).
   ///
   /// O‘zini tasdiqlash, talaba, tasdiqlanmagan / to‘xtatilgan mutaxassis,
   /// AI — hech qachon. Bu qaror ilmiy taqriz huquqini **bermaydi**.
@@ -295,7 +297,7 @@ abstract final class IdentityVerification {
     }
     if (scope != null &&
         actor.isVerifiedProfessional &&
-        actor.scopes.contains(scope)) {
+        actor.verifierScopes.contains(scope)) {
       return ApproverKind.verifiedPeer;
     }
     return null;
@@ -317,8 +319,9 @@ abstract final class IdentityVerification {
     if (scope == null) return (null, IdentityDecisionError.scopeRequired);
     final kind = approverKind(actor, application.userId, scope);
     if (kind == null) return (null, IdentityDecisionError.notAuthorized);
-    // To‘xtatish — faqat identity admin.
-    if (decision == IdentityDecision.suspend &&
+    // To‘xtatish va to‘xtatilganni tiklash — faqat identity admin.
+    if ((decision == IdentityDecision.suspend ||
+            application.status == VerificationStatus.suspended) &&
         kind != ApproverKind.identityAdmin) {
       return (null, IdentityDecisionError.notAuthorized);
     }

@@ -4580,4 +4580,102 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get researchLimitationsNote =>
       'Only bibliographic data and a short description are shown; the full text is available from the publisher.';
+
+  @override
+  String get emailCodeTitle => 'Sign in with email code';
+
+  @override
+  String get emailCodeRowHint =>
+      'A 6-digit code is sent to your email — no password needed';
+
+  @override
+  String get emailCodeSubtitle =>
+      'Enter your email. We will send a one-time 6-digit FORENSIC EXPERT verification code.';
+
+  @override
+  String get emailCodeSend => 'Send code';
+
+  @override
+  String get emailCodeEnterTitle => 'Enter the 6-digit code';
+
+  @override
+  String get emailCodeChange => 'Change email';
+
+  @override
+  String emailCodeResendIn(int seconds) {
+    return 'Resend code in $seconds s';
+  }
+
+  @override
+  String get emailCodeNotProfessional =>
+      'Confirming your email signs you in. It does not verify professional status.';
+
+  @override
+  String get emailCodeSignedIn => 'Email confirmed. You are signed in.';
+
+  @override
+  String get actionNext => 'Next';
+
+  @override
+  String get profileSectionProfessional => 'Professional profile';
+
+  @override
+  String get profileStepPersonal => 'Personal';
+
+  @override
+  String get profileStepWork => 'Professional';
+
+  @override
+  String get profileStepProfessional => 'Profile and verification';
+
+  @override
+  String profileStepOf(int step, int total) {
+    return 'Step $step of $total';
+  }
+
+  @override
+  String get verifReceivedTitle => 'Your application has been received.';
+
+  @override
+  String get verifReceivedBody => 'Your professional status is being reviewed.';
+
+  @override
+  String get verifReceivedNote =>
+      'Status: application pending. Only an authorised human verifier can grant Verified Professional status — submitting documents does not verify you automatically.';
+
+  @override
+  String get sourceDetailTitle => 'Source';
+
+  @override
+  String sourceLinkedRecords(int count) {
+    return 'Linked records ($count)';
+  }
+
+  @override
+  String get sourceNoLinkedRecords =>
+      'No records in the offline database cite this source.';
+
+  @override
+  String get sourceNotAttached => 'No reliable source attached.';
+
+  @override
+  String get sourceNotFound => 'Source not found in the offline database.';
+
+  @override
+  String get sourceOpenDetails => 'Source details and linked records';
+
+  @override
+  String homeDbCounts(int substances, int sources, int claims) {
+    return '$substances substances · $sources sources · $claims sourced claims';
+  }
+
+  @override
+  String homeDbHumanVerified(int count) {
+    return 'Human verified (2 independent experts): $count';
+  }
+
+  @override
+  String sourcePmid(String id) {
+    return 'PMID $id';
+  }
 }

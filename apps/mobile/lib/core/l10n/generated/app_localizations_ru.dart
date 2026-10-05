@@ -4589,4 +4589,102 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get researchLimitationsNote =>
       'Показаны только библиографические данные и краткое описание; полный текст доступен у издателя.';
+
+  @override
+  String get emailCodeTitle => 'Вход по коду из письма';
+
+  @override
+  String get emailCodeRowHint =>
+      'На почту придёт 6-значный код — пароль не нужен';
+
+  @override
+  String get emailCodeSubtitle =>
+      'Введите email. Мы отправим одноразовый 6-значный код подтверждения FORENSIC EXPERT.';
+
+  @override
+  String get emailCodeSend => 'Отправить код';
+
+  @override
+  String get emailCodeEnterTitle => 'Введите 6-значный код';
+
+  @override
+  String get emailCodeChange => 'Изменить email';
+
+  @override
+  String emailCodeResendIn(int seconds) {
+    return 'Повторная отправка через $seconds с';
+  }
+
+  @override
+  String get emailCodeNotProfessional =>
+      'Подтверждение email выполняет вход. Оно не подтверждает профессиональный статус.';
+
+  @override
+  String get emailCodeSignedIn => 'Email подтверждён. Вы вошли в аккаунт.';
+
+  @override
+  String get actionNext => 'Далее';
+
+  @override
+  String get profileSectionProfessional => 'Профиль специалиста';
+
+  @override
+  String get profileStepPersonal => 'Личные данные';
+
+  @override
+  String get profileStepWork => 'Профессиональные данные';
+
+  @override
+  String get profileStepProfessional => 'Профиль и подтверждение';
+
+  @override
+  String profileStepOf(int step, int total) {
+    return 'Шаг $step из $total';
+  }
+
+  @override
+  String get verifReceivedTitle => 'Ваша заявка принята.';
+
+  @override
+  String get verifReceivedBody => 'Профессиональный статус проверяется.';
+
+  @override
+  String get verifReceivedNote =>
+      'Статус: заявка на рассмотрении. Статус «Подтверждённый специалист» может присвоить только уполномоченный проверяющий — загрузка документов не подтверждает автоматически.';
+
+  @override
+  String get sourceDetailTitle => 'Источник';
+
+  @override
+  String sourceLinkedRecords(int count) {
+    return 'Связанные записи ($count)';
+  }
+
+  @override
+  String get sourceNoLinkedRecords =>
+      'В офлайн-базе нет записей, ссылающихся на этот источник.';
+
+  @override
+  String get sourceNotAttached => 'Надёжный источник не прикреплён.';
+
+  @override
+  String get sourceNotFound => 'Источник не найден в офлайн-базе.';
+
+  @override
+  String get sourceOpenDetails => 'Подробности источника и связанные записи';
+
+  @override
+  String homeDbCounts(int substances, int sources, int claims) {
+    return 'Веществ: $substances · источников: $sources · утверждений с источниками: $claims';
+  }
+
+  @override
+  String homeDbHumanVerified(int count) {
+    return 'Подтверждено людьми (2 независимых эксперта): $count';
+  }
+
+  @override
+  String sourcePmid(String id) {
+    return 'PMID $id';
+  }
 }

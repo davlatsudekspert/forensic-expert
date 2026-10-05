@@ -229,6 +229,12 @@ class _ContentEntryBodyState extends ConsumerState<ContentEntryBody> {
           child: RelatedSection(entityId: entry.id),
         ),
         _section('sources', l.detailReferences),
+        if (d.allSources.isEmpty)
+          Text(
+            l.noReliableSource,
+            style: Theme.of(context).textTheme.bodySmall
+                ?.copyWith(color: FeTheme.of(context).textSecondary),
+          ),
         for (final s in d.allSources)
           Padding(
             padding: const EdgeInsets.only(bottom: FeSpace.xs),
@@ -514,9 +520,12 @@ class ClaimCard extends StatelessWidget {
 /// Manba kartochkasi — DOI/URL tanlab nusxalanadi (offline; brauzer
 /// plagini yo‘q).
 class SourceTile extends StatelessWidget {
-  const SourceTile({super.key, required this.source});
+  const SourceTile({super.key, required this.source, this.linkToDetail = true});
 
   final SourceView source;
+
+  /// Bosilganda manba sahifasiga (bog‘langan yozuvlar) o‘tadi.
+  final bool linkToDetail;
 
   @override
   Widget build(BuildContext context) {
@@ -530,10 +539,27 @@ class SourceTile extends StatelessWidget {
     return FeCard(
       key: Key('source.${source.sourceId}'),
       padding: const EdgeInsets.all(FeSpace.sm),
+      onTap: linkToDetail
+          ? () => context.push(Routes.source(source.sourceId))
+          : null,
+      semanticLabel: linkToDetail ? l.sourceOpenDetails : null,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(source.title, style: t.bodyMedium, locale: const Locale('en')),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: Text(
+                  source.title,
+                  style: t.bodyMedium,
+                  locale: const Locale('en'),
+                ),
+              ),
+              if (linkToDetail)
+                Icon(Icons.chevron_right, size: 20, color: c.textSecondary),
+            ],
+          ),
           const SizedBox(height: 2),
           Text(
             [
@@ -562,6 +588,12 @@ class SourceTile extends StatelessWidget {
                 ),
             ],
           ),
+          if (source.pmid != null)
+            SelectableText(
+              l.sourcePmid(source.pmid!),
+              style: FeThemeBuilder.numeric(t.bodySmall!)
+                  .copyWith(color: c.textSecondary),
+            ),
           if (source.accessedDate != null)
             Text(
               l.detailSourceAccessed(date(source.accessedDate!)),

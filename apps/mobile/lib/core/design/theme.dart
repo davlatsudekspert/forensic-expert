@@ -152,7 +152,7 @@ abstract final class FeThemeBuilder {
       ),
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
-        fillColor: c.surface,
+        fillColor: c.surfaceRaised,
         hintStyle: TextStyle(color: c.textSecondary),
         prefixIconColor: c.textSecondary,
         contentPadding: const EdgeInsets.symmetric(
@@ -173,7 +173,7 @@ abstract final class FeThemeBuilder {
         ),
       ),
       navigationBarTheme: NavigationBarThemeData(
-        backgroundColor: c.background,
+        backgroundColor: c.surfaceRaised,
         surfaceTintColor: Colors.transparent,
         indicatorColor: c.accentContainer,
         elevation: 0,
@@ -195,6 +195,31 @@ abstract final class FeThemeBuilder {
             fontWeight: states.contains(WidgetState.selected)
                 ? FontWeight.w600
                 : FontWeight.w500,
+          ),
+        ),
+      ),
+      chipTheme: ChipThemeData(
+        backgroundColor: c.surfaceRaised,
+        selectedColor: c.accentContainer,
+        side: BorderSide(color: c.border),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(FeRadius.sm),
+        ),
+        labelStyle: text.labelLarge?.copyWith(
+          color: c.textPrimary,
+          fontWeight: FontWeight.w500,
+        ),
+        checkmarkColor: c.onAccentContainer,
+        padding: const EdgeInsets.symmetric(horizontal: FeSpace.xs),
+      ),
+      segmentedButtonTheme: SegmentedButtonThemeData(
+        style: SegmentedButton.styleFrom(
+          backgroundColor: c.surfaceRaised,
+          selectedBackgroundColor: c.accentContainer,
+          selectedForegroundColor: c.onAccentContainer,
+          side: BorderSide(color: c.border),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(FeRadius.md),
           ),
         ),
       ),

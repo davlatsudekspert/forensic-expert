@@ -24,6 +24,7 @@ void main() {
     VerificationStatus status = VerificationStatus.verifiedProfessional,
     Set<ReviewerScope> scopes = const {ReviewerScope.forensicToxicology},
     Set<AccountRole> roles = const {AccountRole.user},
+    Set<ReviewerScope> verifierScopes = const {},
     bool human = true,
     String? org,
   }) => ProfessionalIdentity(
@@ -31,6 +32,7 @@ void main() {
     displayName: id,
     status: status,
     scopes: scopes,
+    verifierScopes: verifierScopes,
     roles: roles,
     isHuman: human,
     organization: org,
@@ -191,9 +193,19 @@ void main() {
       expect(ReviewAuthority.canDecideIdentity(admin, 'admin'), isFalse);
       // Soha ko‘rsatilmasa oddiy mutaxassis qaror qila olmaydi.
       expect(ReviewAuthority.canDecideIdentity(who('u'), 'x'), isFalse);
+      // Tasdiqlangan va taqrizchi bo‘lish ham yetmaydi — alohida
+      // CAN_VERIFY_PROFESSIONALS kerak.
       expect(
         ReviewAuthority.canDecideIdentity(
           who('u'),
+          'x',
+          scope: ReviewerScope.forensicToxicology,
+        ),
+        isFalse,
+      );
+      expect(
+        ReviewAuthority.canDecideIdentity(
+          who('u', verifierScopes: {ReviewerScope.forensicToxicology}),
           'x',
           scope: ReviewerScope.forensicToxicology,
         ),
@@ -659,9 +671,9 @@ void main() {
       expect(r.at, at);
     });
 
-    test('shu soha vakolatiga ega tasdiqlangan mutaxassis tasdiqlay oladi', () {
+    test('shu soha bo‘yicha CAN_VERIFY_PROFESSIONALS berilgan tasdiqlangan mutaxassis tasdiqlay oladi', () {
       final (r, e) = IdentityVerification.decide(
-        actor: who('peer'),
+        actor: who('peer', verifierScopes: {ReviewerScope.forensicToxicology}),
         application: app(),
         decision: IdentityDecision.verify,
         scope: ReviewerScope.forensicToxicology,
@@ -676,6 +688,10 @@ void main() {
         'AI tasdiqlay olmaydi', () {
       for (final actor in [
         who('dna', scopes: {ReviewerScope.geneticsDna}),
+        // Taqrizchi vakolati bor, lekin CAN_VERIFY_PROFESSIONALS yo‘q.
+        who('reviewer', scopes: {ReviewerScope.forensicToxicology}),
+        // CAN_VERIFY boshqa soha uchun.
+        who('wrong', verifierScopes: {ReviewerScope.geneticsDna}),
         who('student', status: VerificationStatus.unverified, scopes: {}),
         who('pending', status: VerificationStatus.applicationPending),
         who('susp', status: VerificationStatus.suspended),

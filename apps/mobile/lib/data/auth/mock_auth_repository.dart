@@ -58,6 +58,11 @@ class MockAuthRepository implements AuthRepository {
   final _users = <String, _User>{};
   final _verify = <String, _Code>{};
   final _reset = <String, _Code>{};
+  final _otp = <String, _Code>{};
+  final _otpAttempts = <String, int>{};
+
+  /// Bir kod uchun ruxsat etilgan noto‘g‘ri urinishlar (keyin kod bekor).
+  static const maxOtpAttempts = 5;
   final _lastSent = <String, DateTime>{};
   final _refresh = <String, String>{};
   final _changes = StreamController<AuthState>.broadcast();
@@ -134,6 +139,49 @@ class MockAuthRepository implements AuthRepository {
       return;
     }
     _set(AuthState(AuthStatus.signedIn, account: _account(u)));
+  }
+
+  @override
+  Future<AuthOutcome> requestEmailCode(String email, {String? locale}) async {
+    final e = EmailAddress.normalize(email);
+    if (!EmailAddress.isValid(e)) {
+      return const AuthOutcome.fail(AuthFailure.invalidEmail);
+    }
+    if (_cooling(e)) return const AuthOutcome.fail(AuthFailure.tooManyRequests);
+    final c = _code();
+    _otp[e] = _Code(c, _now().add(AuthCodePolicy.otpTtl));
+    _otpAttempts[e] = 0;
+    _lastSent[e] = _now();
+    outbox.add(MockEmail(to: e, kind: 'otp', code: c));
+    return const AuthOutcome.ok();
+  }
+
+  @override
+  Future<AuthOutcome> verifyEmailCode({
+    required String email,
+    required String code,
+  }) async {
+    final e = EmailAddress.normalize(email);
+    final c = _otp[e];
+    if (c == null || c.used) {
+      return const AuthOutcome.fail(AuthFailure.codeInvalid);
+    }
+    if (_now().isAfter(c.expiresAt)) {
+      return const AuthOutcome.fail(AuthFailure.codeExpired);
+    }
+    if (c.code != code.trim()) {
+      final n = (_otpAttempts[e] ?? 0) + 1;
+      _otpAttempts[e] = n;
+      if (n >= maxOtpAttempts) c.used = true;
+      return const AuthOutcome.fail(AuthFailure.codeInvalid);
+    }
+    c.used = true;
+    final u = _users.putIfAbsent(
+      e,
+      () => _User('mock-${_users.length + 1}', e, '', ''),
+    )..verified = true;
+    await _startSession(u);
+    return const AuthOutcome.ok();
   }
 
   @override

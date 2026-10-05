@@ -58,6 +58,18 @@ abstract interface class AuthRepository {
   /// Ilova ishga tushganda saqlangan sessiyani tiklash.
   Future<void> restoreSession();
 
+  /// Parolsiz kirish / ro‘yxatdan o‘tish: emailga 6 xonali kod yuboriladi
+  /// (akkaunt bo‘lmasa server yaratadi). Javob har doim bir xil — email
+  /// bormi-yo‘qmi oshkor qilinmaydi. Kod jurnalga yozilmaydi.
+  Future<AuthOutcome> requestEmailCode(String email, {String? locale});
+
+  /// Kod to‘g‘ri va muddati o‘tmagan bo‘lsa sessiya ochiladi (email
+  /// tasdiqlangan hisoblanadi). Email tasdig‘i professional maqom EMAS.
+  Future<AuthOutcome> verifyEmailCode({
+    required String email,
+    required String code,
+  });
+
   /// Yaroqli kirishda har doim `ok` (email band bo‘lsa ham — server egasiga
   /// xabar xati yuboradi). Sessiya bermaydi: akkaunt email kodi bilan
   /// tasdiqlangach faollashadi ([verifyEmail]).

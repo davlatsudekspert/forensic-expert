@@ -199,6 +199,13 @@ class ProfileScreen extends ConsumerWidget {
                       ),
                     ] else ...[
                       _Row(
+                        key: const Key('profile.emailCode'),
+                        icon: Icons.mark_email_read_outlined,
+                        title: l.emailCodeTitle,
+                        value: l.emailCodeRowHint,
+                        onTap: () => context.push(Routes.accountEmailCode),
+                      ),
+                      _Row(
                         key: const Key('profile.signIn'),
                         icon: Icons.login,
                         title: l.accountSignIn,

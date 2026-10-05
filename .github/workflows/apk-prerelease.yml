@@ -40,7 +40,7 @@ jobs:
           V="$(grep '^version:' pubspec.yaml | cut -d' ' -f2 | cut -d+ -f1)"
           cp build/app/outputs/flutter-apk/app-arm64-v8a-release.apk "$RUNNER_TEMP/out/forensic-expert-$V-TELEFON-arm64-DEBUG.apk"
           cp build/app/outputs/flutter-apk/app-x86_64-release.apk "$RUNNER_TEMP/out/forensic-expert-$V-BLUESTACKS-x86_64-DEBUG.apk"
-          cp build/app/outputs/flutter-apk/app-release.apk "$RUNNER_TEMP/out/forensic-expert-$V-UNIVERSAL-DEBUG.apk"
+          cp build/app/outputs/flutter-apk/app-release.apk "$RUNNER_TEMP/out/forensic-expert-FINAL-REAL-DEVICE-TEST.apk"
           (cd "$RUNNER_TEMP/out" && sha256sum *.apk | tee SHA256SUMS.txt)
       - name: Create pre-release with APK assets
         env:
@@ -53,4 +53,4 @@ jobs:
             --target "$GITHUB_SHA" \
             --prerelease \
             --title "Test APK $TAG (DEBUG signed — not for store)" \
-            --notes "Real-device test builds. DEBUG SIGNED — NOT FOR STORE. TELEFON = arm64 phones, BLUESTACKS = x86_64 emulator, UNIVERSAL = all ABIs. HUMAN VERIFIED = 0."
+            --notes "Real-device test builds. DEBUG SIGNED — NOT FOR STORE. TELEFON = arm64 phones, BLUESTACKS = x86_64 emulator, FINAL-REAL-DEVICE-TEST = universal (all ABIs). New «Shield of Evidence» brand, email OTP, 3-step professional profile. HUMAN VERIFIED = 0."

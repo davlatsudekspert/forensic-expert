@@ -20,6 +20,10 @@ import '../data/local/user_data_repository.dart';
 import '../data/offline/offline_backend.dart';
 import '../data/remote/http_auth_repository.dart';
 import '../data/remote/http_purchase_verifier.dart';
+import '../data/remote/supabase_ai_provider.dart';
+import '../data/remote/supabase_auth_repository.dart';
+import '../data/remote/supabase_professional.dart';
+import '../data/remote/supabase_rest.dart';
 import '../domain/ports/backend_ports.dart';
 import '../domain/ports/billing_ports.dart';
 import 'app.dart';
@@ -54,6 +58,8 @@ Future<void> bootstrap() async {
   metrics.mark(PerfMarks.settingsLoaded);
 
   final auth = _authRepository();
+  // Professional tasdiqlash / taqriz — Supabase sozlangan bo‘lsagina.
+  final supabase = SupabaseConfig.fromEnvironment();
 
   SchedulerBinding.instance.addPostFrameCallback((_) {
     metrics.mark(PerfMarks.firstFrame);
@@ -72,6 +78,17 @@ Future<void> bootstrap() async {
         profileStoreProvider.overrideWithValue(profileStore),
         initialProfileProvider.overrideWithValue(profile),
         authRepositoryProvider.overrideWithValue(auth),
+        // Server AI (Gemini, kalit faqat Edge Function’da) — faqat yoqilganda.
+        if (SupabaseAiProvider.fromEnvironment(auth) case final ai?)
+          aiProviderProvider.overrideWithValue(ai),
+        if (supabase != null) ...[
+          professionalVerificationServiceProvider.overrideWithValue(
+            SupabaseVerificationService(config: supabase, auth: auth),
+          ),
+          professionalReviewServiceProvider.overrideWithValue(
+            SupabaseReviewService(config: supabase, auth: auth),
+          ),
+        ],
         // Obunalar: faqat mobil store’larda. Boshqa platformada — store yo‘q.
         if (!kIsWeb && (Platform.isAndroid || Platform.isIOS))
           entitlementServiceProvider.overrideWithValue(
@@ -92,10 +109,13 @@ Future<void> bootstrap() async {
   );
 }
 
-/// Akkaunt backend’i: `FE_AUTH_BASE_URL` (HTTPS) bo‘lsa — HTTP adapter;
+/// Akkaunt backend’i: `FE_SUPABASE_URL` + `FE_SUPABASE_ANON_KEY` bo‘lsa —
+/// Supabase Auth (email OTP); `FE_AUTH_BASE_URL` (HTTPS) bo‘lsa — HTTP adapter;
 /// release bo‘lmagan yig‘mada `FE_AUTH_MODE=mock` — MOCK (xat
 /// yuborilmaydi, UI belgilaydi); aks holda — ulanmagan (halol holat).
 AuthRepository _authRepository() {
+  final supabase = SupabaseAuthRepository.fromEnvironment(SecureSessionStore());
+  if (supabase != null) return supabase;
   final http = HttpAuthRepository.fromEnvironment(SecureSessionStore());
   if (http != null) return http;
   const mode = String.fromEnvironment('FE_AUTH_MODE');

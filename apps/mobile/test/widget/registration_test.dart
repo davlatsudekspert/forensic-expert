@@ -124,10 +124,12 @@ void main() {
         find.byKey(const Key('profileEdit.notVerifiedNote')),
         findsOneWidget,
       );
-      // Bo‘sh saqlash — xatolar.
-      await tapKey(tester, 'profileEdit.save');
+      // 1 / 3 — bo‘sh «Keyingi»: xatolar, keyingi qadamga o‘tmaydi.
+      expect(find.text('1 / 3'), findsOneWidget);
+      await tapKey(tester, 'profileEdit.next');
       expect(find.byKey(const Key('profileEdit.errors')), findsOneWidget);
       expect(find.text('Required field'), findsWidgets);
+      expect(find.text('1 / 3'), findsOneWidget);
       expect(store.value.isEmpty, isTrue);
 
       await tester.enterText(
@@ -139,6 +141,10 @@ void main() {
       await tester.pumpAndSettle();
       await tester.tap(find.byKey(const Key('country.UZ')));
       await tester.pumpAndSettle();
+      await tapKey(tester, 'profileEdit.next');
+      // 2 / 3 — qoralama qurilmada saqlangan.
+      expect(find.text('2 / 3'), findsOneWidget);
+      expect(store.value.professional?.fullName, 'Test Expert');
       for (final (k, v) in [
         ('organization', 'Forensic laboratory'),
         ('position', 'Forensic chemist'),
@@ -149,6 +155,13 @@ void main() {
         await tester.ensureVisible(f);
         await tester.enterText(f, v);
       }
+      await tapKey(tester, 'profileEdit.next');
+      expect(find.text('3 / 3'), findsOneWidget);
+      // «Orqaga» ma’lumotni yo‘qotmaydi.
+      await tapKey(tester, 'profileEdit.back');
+      expect(find.text('2 / 3'), findsOneWidget);
+      expect(find.text('Forensic laboratory'), findsOneWidget);
+      await tapKey(tester, 'profileEdit.next');
       await tapKey(tester, 'profileEdit.save');
       final saved = store.value.professional!;
       expect(saved.fullName, 'Test Expert');

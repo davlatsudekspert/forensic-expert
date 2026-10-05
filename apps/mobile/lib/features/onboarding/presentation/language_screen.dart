@@ -56,7 +56,7 @@ class _LanguageScreenState extends ConsumerState<LanguageScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              const BrandHeader(),
+              const BrandHeader(markSize: 112),
               const SizedBox(height: FeSpace.xl),
               // «Choose your language» — har bir tilda, o‘z tili belgisi bilan.
               Semantics(

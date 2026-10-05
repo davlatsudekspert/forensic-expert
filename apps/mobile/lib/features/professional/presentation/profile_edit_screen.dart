@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../app/professional.dart';
+import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
@@ -14,6 +15,7 @@ import '../../../domain/jurisdiction/country_directory.dart';
 import '../../../domain/professional/professional_models.dart';
 import '../professional_strings.dart';
 import 'professional_widgets.dart';
+import 'verification_screens.dart';
 
 /// Talaba yoki professional profil formasi (joriy foydalanish rejimiga
 /// ko‘ra). Ma’lumot faqat qurilmada saqlanadi. Professional profilni
@@ -50,6 +52,22 @@ class _ProfileEditScreenState extends ConsumerState<ProfileEditScreen> {
   final Set<Specialty> _studentInterests = {};
   bool _showOrganization = false;
   Map<ProfileField, ProfileFieldError> _errors = const {};
+
+  /// Professional profil — 3 bosqich (0..2).
+  int _step = 0;
+  static const _steps = 3;
+
+  static const _stepFields = [
+    {ProfileField.fullName, ProfileField.country},
+    {
+      ProfileField.organization,
+      ProfileField.position,
+      ProfileField.education,
+      ProfileField.yearsExperience,
+      ProfileField.workEmail,
+    },
+    {ProfileField.bio},
+  ];
 
   @override
   void initState() {
@@ -122,6 +140,49 @@ class _ProfileEditScreenState extends ConsumerState<ProfileEditScreen> {
   String? _opt(TextEditingController c) =>
       c.text.trim().isEmpty ? null : c.text.trim();
 
+  ProfessionalProfile _proProfile() => ProfessionalProfile(
+    fullName: _name.text.trim(),
+    country: _country ?? '',
+    organization: _organization.text.trim(),
+    position: _position.text.trim(),
+    primarySpecialty: _primary,
+    education: _education.text.trim(),
+    role: _proRole,
+    city: _opt(_city),
+    additionalSpecialties: _additional.where((s) => s != _primary).toList(),
+    yearsExperience: int.tryParse(_years.text.trim()),
+    workEmail: _opt(_email),
+    licenseNumber: _opt(_license),
+    bio: _opt(_bio),
+    languages: [
+      for (final x in _languages.text.split(','))
+        if (x.trim().isNotEmpty) x.trim(),
+    ],
+    interests: _opt(_interests),
+    showOrganizationPublicly: _showOrganization,
+  );
+
+  Map<ProfileField, ProfileFieldError> _proErrors(ProfessionalProfile p) => {
+    ...ProfileValidation.professional(p),
+    if (_years.text.trim().isNotEmpty &&
+        int.tryParse(_years.text.trim()) == null)
+      ProfileField.yearsExperience: ProfileFieldError.invalid,
+  };
+
+  /// Keyingi bosqich: faqat joriy bosqich maydonlari tekshiriladi; qoralama
+  /// qurilmada saqlanadi (ma’lumot yo‘qolmaydi).
+  Future<void> _next() async {
+    final p = _proProfile();
+    final e = {
+      for (final x in _proErrors(p).entries)
+        if (_stepFields[_step].contains(x.key)) x.key: x.value,
+    };
+    setState(() => _errors = e);
+    if (e.isNotEmpty) return;
+    await ref.read(localProfileProvider.notifier).saveProfessional(p);
+    if (mounted) setState(() => _step++);
+  }
+
   Future<void> _save() async {
     final l = AppLocalizations.of(context);
     final controller = ref.read(localProfileProvider.notifier);
@@ -140,35 +201,19 @@ class _ProfileEditScreenState extends ConsumerState<ProfileEditScreen> {
       if (e.isNotEmpty) return;
       await controller.saveStudent(p);
     } else {
-      final p = ProfessionalProfile(
-        fullName: _name.text.trim(),
-        country: _country ?? '',
-        organization: _organization.text.trim(),
-        position: _position.text.trim(),
-        primarySpecialty: _primary,
-        education: _education.text.trim(),
-        role: _proRole,
-        city: _opt(_city),
-        additionalSpecialties: _additional.where((s) => s != _primary).toList(),
-        yearsExperience: int.tryParse(_years.text.trim()),
-        workEmail: _opt(_email),
-        licenseNumber: _opt(_license),
-        bio: _opt(_bio),
-        languages: [
-          for (final x in _languages.text.split(','))
-            if (x.trim().isNotEmpty) x.trim(),
-        ],
-        interests: _opt(_interests),
-        showOrganizationPublicly: _showOrganization,
-      );
-      final e = {
-        ...ProfileValidation.professional(p),
-        if (_years.text.trim().isNotEmpty &&
-            int.tryParse(_years.text.trim()) == null)
-          ProfileField.yearsExperience: ProfileFieldError.invalid,
-      };
+      final p = _proProfile();
+      final e = _proErrors(p);
       setState(() => _errors = e);
-      if (e.isNotEmpty) return;
+      if (e.isNotEmpty) {
+        // Xato bor birinchi bosqichga qaytish.
+        for (var i = 0; i < _steps; i++) {
+          if (_stepFields[i].any(e.containsKey)) {
+            setState(() => _step = i);
+            break;
+          }
+        }
+        return;
+      }
       await controller.saveProfessional(p);
     }
     if (!mounted) return;
@@ -220,6 +265,7 @@ class _ProfileEditScreenState extends ConsumerState<ProfileEditScreen> {
     );
 
     final isStudent = _mode == UserMode.student;
+    final pendingDocs = ref.watch(pendingCredentialsProvider).length;
     return Scaffold(
       appBar: AppBar(
         title: Text(isStudent ? l.profileStudentTitle : l.profileProTitle),
@@ -245,21 +291,27 @@ class _ProfileEditScreenState extends ConsumerState<ProfileEditScreen> {
                       text: l.modeProfessionalNotVerified,
                     ),
                   ],
-                  FeSectionHeader(l.profileSectionIdentity),
-                  field(
-                    'fullName',
-                    _name,
-                    l.fieldFullName,
-                    f: ProfileField.fullName,
-                    required: true,
-                  ),
-                  _CountryField(
-                    value: _country,
-                    lang: lang,
-                    error: err(ProfileField.country),
-                    onChanged: (code) => setState(() => _country = code),
-                  ),
-                  const SizedBox(height: FeSpace.sm),
+                  if (!isStudent) ...[
+                    const SizedBox(height: FeSpace.md),
+                    _StepProgress(step: _step, total: _steps),
+                  ],
+                  if (isStudent || _step == 0) ...[
+                    FeSectionHeader(l.profileSectionIdentity),
+                    field(
+                      'fullName',
+                      _name,
+                      l.fieldFullName,
+                      f: ProfileField.fullName,
+                      required: true,
+                    ),
+                    _CountryField(
+                      value: _country,
+                      lang: lang,
+                      error: err(ProfileField.country),
+                      onChanged: (code) => setState(() => _country = code),
+                    ),
+                    const SizedBox(height: FeSpace.sm),
+                  ],
                   if (isStudent) ...[
                     _EnumDropdown<StudentRole>(
                       keyName: 'studentRole',
@@ -294,8 +346,9 @@ class _ProfileEditScreenState extends ConsumerState<ProfileEditScreen> {
                       icon: Icons.info_outline,
                       text: l.profileStudentCannotReview,
                     ),
-                  ] else ...[
+                  ] else if (_step == 0) ...[
                     field('city', _city, l.fieldCity),
+                    field('languages', _languages, l.fieldLanguages),
                     _EnumDropdown<ProfessionalRole>(
                       keyName: 'proRole',
                       label: l.modeRoleTitle,
@@ -304,6 +357,7 @@ class _ProfileEditScreenState extends ConsumerState<ProfileEditScreen> {
                       labelOf: l.professionalRoleLabel,
                       onChanged: (v) => setState(() => _proRole = v!),
                     ),
+                  ] else if (_step == 1) ...[
                     FeSectionHeader(l.profileSectionWork),
                     field(
                       'organization',
@@ -353,7 +407,6 @@ class _ProfileEditScreenState extends ConsumerState<ProfileEditScreen> {
                       f: ProfileField.education,
                       required: true,
                     ),
-                    FeSectionHeader(l.profileSectionOptional),
                     field(
                       'workEmail',
                       _email,
@@ -368,6 +421,8 @@ class _ProfileEditScreenState extends ConsumerState<ProfileEditScreen> {
                       l.fieldLicense,
                       helper: l.fieldLicenseHelper,
                     ),
+                  ] else ...[
+                    FeSectionHeader(l.profileSectionProfessional),
                     field(
                       'bio',
                       _bio,
@@ -376,7 +431,6 @@ class _ProfileEditScreenState extends ConsumerState<ProfileEditScreen> {
                       maxLines: 4,
                       maxLength: ProfileValidation.maxBio,
                     ),
-                    field('languages', _languages, l.fieldLanguages),
                     field('interests', _interests, l.fieldProInterests),
                     SwitchListTile(
                       key: const Key('profileEdit.showOrganization'),
@@ -387,6 +441,20 @@ class _ProfileEditScreenState extends ConsumerState<ProfileEditScreen> {
                       subtitle: Text(
                         l.fieldShowOrganizationHelper,
                         style: t.bodySmall?.copyWith(color: c.textSecondary),
+                      ),
+                    ),
+                    Card(
+                      key: const Key('profileEdit.documents'),
+                      child: ListTile(
+                        leading: const Icon(Icons.upload_file_outlined),
+                        title: Text(l.credUploadTitle),
+                        subtitle: Text(
+                          pendingDocs == 0
+                              ? l.credOptional
+                              : l.credSelectedCount(pendingDocs),
+                        ),
+                        trailing: const Icon(Icons.chevron_right),
+                        onTap: () => context.push(Routes.verificationDocuments),
                       ),
                     ),
                   ],
@@ -402,17 +470,94 @@ class _ProfileEditScreenState extends ConsumerState<ProfileEditScreen> {
                     ),
                   ],
                   const SizedBox(height: FeSpace.md),
-                  FilledButton(
-                    key: const Key('profileEdit.save'),
-                    onPressed: _save,
-                    child: Text(l.actionSave),
-                  ),
+                  if (isStudent || _step == _steps - 1)
+                    FilledButton(
+                      key: const Key('profileEdit.save'),
+                      onPressed: _save,
+                      child: Text(l.actionSave),
+                    )
+                  else
+                    FilledButton(
+                      key: const Key('profileEdit.next'),
+                      onPressed: _next,
+                      child: Text(l.actionNext),
+                    ),
+                  if (!isStudent && _step > 0) ...[
+                    const SizedBox(height: FeSpace.xs),
+                    OutlinedButton(
+                      key: const Key('profileEdit.back'),
+                      onPressed: () => setState(() {
+                        _errors = const {};
+                        _step--;
+                      }),
+                      child: Text(l.actionBack),
+                    ),
+                  ],
                   const SizedBox(height: FeSpace.xl),
                 ],
               ),
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+/// «1 / 3» va progress chizig‘i.
+class _StepProgress extends StatelessWidget {
+  const _StepProgress({required this.step, required this.total});
+
+  final int step;
+  final int total;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final titles = [
+      l.profileStepPersonal,
+      l.profileStepWork,
+      l.profileStepProfessional,
+    ];
+    return Semantics(
+      label: l.profileStepOf(step + 1, total),
+      child: Column(
+        key: const Key('profileEdit.step'),
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              ExcludeSemantics(
+                child: Text(
+                  [step + 1, total].join(' / '),
+                  style: FeThemeBuilder.numeric(
+                    t.labelLarge!.copyWith(color: c.accent),
+                  ),
+                ),
+              ),
+              const SizedBox(width: FeSpace.sm),
+              Expanded(
+                child: Text(
+                  titles[step],
+                  style: t.titleSmall,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: FeSpace.xs),
+          ClipRRect(
+            borderRadius: BorderRadius.circular(FeRadius.sm),
+            child: LinearProgressIndicator(
+              value: (step + 1) / total,
+              minHeight: 6,
+              backgroundColor: c.surfaceSunken,
+              color: c.accent,
+            ),
+          ),
+        ],
       ),
     );
   }
