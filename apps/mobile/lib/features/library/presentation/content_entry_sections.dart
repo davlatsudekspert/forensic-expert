@@ -16,6 +16,7 @@ import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../core/widgets/fe_data_components.dart';
 import '../../../domain/library/library_models.dart';
+import '../../../domain/ports/billing_ports.dart';
 import '../../evidence/presentation/provenance_widgets.dart';
 import '../../evidence/presentation/research_screens.dart';
 import '../../evidence/presentation/scientific_image.dart';
@@ -62,7 +63,10 @@ class _ContentEntryBodyState extends ConsumerState<ContentEntryBody> {
     final d = entry.details!;
     final unlocked =
         entry.access == EntryAccess.free ||
-        ref.watch(accessProvider).hasFullAccess;
+        AccessPolicy.unlocks(
+          ProductFeature.substanceLibrary,
+          ref.watch(accessProvider),
+        );
 
     final scientificFields = [
       ('identity', l.detailIdentity),
@@ -695,7 +699,10 @@ class AccessBadge extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
-    final unlocked = ref.watch(accessProvider).hasFullAccess;
+    final unlocked = AccessPolicy.unlocks(
+      ProductFeature.substanceLibrary,
+      ref.watch(accessProvider),
+    );
     if (access == EntryAccess.free) {
       return StatusChip(
         key: const Key('badge.freeDemo'),

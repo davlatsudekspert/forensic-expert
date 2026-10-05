@@ -12,6 +12,7 @@ environment:
   sdk: ^3.13.0
 
 dependencies:
+  crypto: ^3.0.7
   meta: ^1.19.0
 
 dev_dependencies:

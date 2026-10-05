@@ -47,6 +47,7 @@ class StoreTransaction {
     this.expiresAt,
     this.gracePeriodExpiresAt,
     this.autoRenewing = false,
+    this.inBillingRetry = false,
   });
 
   final StorePlatform platform;
@@ -82,6 +83,10 @@ class StoreTransaction {
   /// Avtomatik yangilanish yoqilganmi (bekor qilingan obuna muddat
   /// oxirigacha amal qiladi).
   final bool autoRenewing;
+
+  /// Apple `isInBillingRetryPeriod` / Google `SUBSCRIPTION_ON_HOLD`
+  /// (account hold) — imtiyozli davrdan keyin to‘lov qayta urinilmoqda.
+  final bool inBillingRetry;
 }
 
 /// Huquq holati — faqat server hisoblaydi; mijoz Pro holatiga ishonilmaydi.
@@ -94,6 +99,9 @@ enum EntitlementState {
 
   /// To‘lov muammosi — store imtiyozli davri.
   gracePeriod,
+
+  /// Imtiyozli davr tugagan, to‘lov qayta urinilmoqda — kirish YO‘Q.
+  billingRetry,
 
   /// Muddati tugagan.
   expired,
@@ -117,6 +125,7 @@ abstract final class EntitlementStateResolver {
     if (grace != null && now.isBefore(grace)) {
       return EntitlementState.gracePeriod;
     }
+    if (t.inBillingRetry) return EntitlementState.billingRetry;
     return EntitlementState.expired;
   }
 
@@ -125,8 +134,57 @@ abstract final class EntitlementStateResolver {
     EntitlementState.active ||
     EntitlementState.cancelledActiveUntilExpiry ||
     EntitlementState.gracePeriod => true,
-    EntitlementState.expired || EntitlementState.revoked => false,
+    EntitlementState.billingRetry ||
+    EntitlementState.expired ||
+    EntitlementState.revoked => false,
   };
+
+  /// Mijoz kontrakti (`entitlement_status`) — ilova shu satrlarni o‘qiydi.
+  static String wireName(EntitlementState s) => switch (s) {
+    EntitlementState.active => 'active',
+    EntitlementState.cancelledActiveUntilExpiry =>
+      'cancelled_active_until_expiry',
+    EntitlementState.gracePeriod => 'grace_period',
+    EntitlementState.billingRetry => 'billing_retry',
+    EntitlementState.expired => 'expired',
+    EntitlementState.revoked => 'revoked',
+  };
+}
+
+/// Ruxsat etilgan holat o‘tishlari. `revoked` — yakuniy (refund qilingan
+/// xarid qayta tiklanmaydi; yangi xarid — yangi tranzaksiya). Boshqa
+/// o‘tishlar store hodisalaridan kelib chiqadi.
+abstract final class EntitlementTransitions {
+  static bool isAllowed(EntitlementState from, EntitlementState to) {
+    if (from == to) return true;
+    if (from == EntitlementState.revoked) return false;
+    return true;
+  }
+}
+
+/// Audit yozuvi — sirsiz: tranzaksiya ID / purchase token o‘rniga uning
+/// SHA-256 barmoq izi; credential, token, JWS yozilmaydi.
+@immutable
+class EntitlementAuditEntry {
+  const EntitlementAuditEntry({
+    required this.at,
+    required this.platform,
+    required this.recordFingerprint,
+    required this.from,
+    required this.to,
+    required this.reason,
+  });
+
+  final DateTime at;
+  final StorePlatform platform;
+
+  /// `sha256(platform:originalTransactionId)` ning boshidagi 16 belgi.
+  final String recordFingerprint;
+  final EntitlementState? from;
+  final EntitlementState to;
+
+  /// Masalan: `VERIFIED`, `DID_RENEW`, `EXPIRED`, `REFUND`, `VOIDED`.
+  final String reason;
 }
 
 enum VerificationOutcome {
@@ -140,6 +198,9 @@ enum VerificationOutcome {
 
   /// Obuna muddati tugagan (imtiyozli davr ham).
   expired,
+
+  /// Imtiyozli davrdan keyin to‘lov qayta urinilmoqda — kirish yo‘q.
+  billingRetry,
 
   /// Bu xarid boshqa akkauntga bog‘langan (replay / ulashish).
   alreadyBoundToAnotherAccount,
@@ -176,6 +237,7 @@ class EntitlementRecord {
     this.revokedAt,
     this.revocationReason,
     this.expiresAt,
+    this.state = EntitlementState.active,
   });
 
   final String accountId;
@@ -188,14 +250,40 @@ class EntitlementRecord {
   final DateTime? revokedAt;
   final String? revocationReason;
 
-  /// Obuna muddati (Lifetime’da `null`).
+  /// Obuna muddati (bir martalik xaridda `null`).
   final DateTime? expiresAt;
+
+  /// Oxirgi normallashtirilgan holat (store hodisalari yangilaydi).
+  final EntitlementState state;
 
   bool get active => revokedAt == null;
 
-  /// Vaqtga bog‘liq faollik (obuna muddati bilan).
+  /// Vaqtga bog‘liq faollik: holat kirish beradi va muddat o‘tmagan
+  /// (grace — muddatdan keyin ham ochiq).
   bool activeAt(DateTime now) =>
-      active && (expiresAt == null || now.isBefore(expiresAt!));
+      active &&
+      EntitlementStateResolver.grantsAccess(state) &&
+      (state == EntitlementState.gracePeriod ||
+          expiresAt == null ||
+          now.isBefore(expiresAt!));
+
+  EntitlementRecord copyWith({
+    EntitlementState? state,
+    DateTime? expiresAt,
+    String? transactionId,
+  }) => EntitlementRecord(
+    accountId: accountId,
+    productId: productId,
+    platform: platform,
+    originalTransactionId: originalTransactionId,
+    transactionId: transactionId ?? this.transactionId,
+    grantedAt: grantedAt,
+    environment: environment,
+    revokedAt: revokedAt,
+    revocationReason: revocationReason,
+    expiresAt: expiresAt ?? this.expiresAt,
+    state: state ?? this.state,
+  );
 
   EntitlementRecord revoke(DateTime at, String reason) => EntitlementRecord(
     accountId: accountId,
@@ -208,6 +296,7 @@ class EntitlementRecord {
     revokedAt: at,
     revocationReason: reason,
     expiresAt: expiresAt,
+    state: EntitlementState.revoked,
   );
 }
 
@@ -220,6 +309,7 @@ class VerificationConfig {
     required this.googlePackageName,
     required this.allowedProductIds,
     this.allowSandbox = false,
+    this.productTiers = const {},
   });
 
   final String appleBundleId;
@@ -228,4 +318,38 @@ class VerificationConfig {
 
   /// Faqat staging/test serverda true.
   final bool allowSandbox;
+
+  /// Mahsulot → tarif (`student_pro`, `professional_pro`, `institution`).
+  /// Ilovadagi `ProductIds` bilan bir xil bo‘lishi shart.
+  final Map<String, String> productTiers;
+}
+
+/// Akkauntning normallashtirilgan huquqi (mijozga yuboriladigan yagona
+/// javob; mijoz Pro holatini o‘zi hisoblamaydi).
+@immutable
+class AccountEntitlement {
+  const AccountEntitlement({
+    required this.tier,
+    required this.state,
+    this.productId,
+    this.expiresAt,
+  });
+
+  static const free = AccountEntitlement(
+    tier: 'free',
+    state: EntitlementState.active,
+  );
+
+  /// `free`, `student_pro`, `professional_pro`, `institution`.
+  final String tier;
+  final EntitlementState state;
+  final String? productId;
+  final DateTime? expiresAt;
+
+  Map<String, Object?> toClientJson() => {
+    'tier': tier,
+    'entitlement_status': EntitlementStateResolver.wireName(state),
+    'product_id': productId,
+    'expires_at': expiresAt?.toUtc().toIso8601String(),
+  };
 }

@@ -2,7 +2,9 @@ import 'dart:io';
 
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:in_app_purchase_android/in_app_purchase_android.dart';
+import 'package:in_app_purchase_storekit/in_app_purchase_storekit.dart';
 import 'package:in_app_purchase_storekit/store_kit_2_wrappers.dart';
+import 'package:in_app_purchase_storekit/store_kit_wrappers.dart';
 
 import 'store_client.dart';
 
@@ -24,22 +26,67 @@ class InAppPurchaseStoreClient implements StoreClient {
   }
 
   @override
-  Future<Map<String, String>> localizedPrices(Set<String> productIds) async {
+  Future<List<StoreProduct>> queryProducts(Set<String> productIds) async {
     final r = await _iap.queryProductDetails(productIds);
+    final out = <String, StoreProduct>{};
     for (final d in r.productDetails) {
-      _details[d.id] = d;
+      // Google Play: har base plan / offer alohida ProductDetails bo‘lib
+      // keladi — birinchi (asosiy) yozuv saqlanadi.
+      _details.putIfAbsent(d.id, () => d);
+      out.putIfAbsent(
+        d.id,
+        () => StoreProduct(
+          id: d.id,
+          price: d.price,
+          currencyCode: d.currencyCode,
+          billingPeriod: _period(d),
+        ),
+      );
     }
-    return {for (final d in r.productDetails) d.id: d.price};
+    return out.values.toList();
+  }
+
+  /// ISO 8601 davr store metadata’sidan.
+  static String? _period(ProductDetails d) {
+    if (d is GooglePlayProductDetails) {
+      final offers = d.productDetails.subscriptionOfferDetails;
+      final i = d.subscriptionIndex;
+      if (offers == null || i == null || i >= offers.length) return null;
+      final phases = offers[i].pricingPhases;
+      return phases.isEmpty ? null : phases.last.billingPeriod;
+    }
+    if (d is AppStoreProduct2Details) {
+      final p = d.sk2Product.subscription?.subscriptionPeriod;
+      if (p == null) return null;
+      return switch (p.unit) {
+        SK2SubscriptionPeriodUnit.day => 'P${p.value}D',
+        SK2SubscriptionPeriodUnit.week => 'P${p.value}W',
+        SK2SubscriptionPeriodUnit.month => 'P${p.value}M',
+        SK2SubscriptionPeriodUnit.year => 'P${p.value}Y',
+      };
+    }
+    if (d is AppStoreProductDetails) {
+      final p = d.skProduct.subscriptionPeriod;
+      if (p == null || p.numberOfUnits == 0) return null;
+      return switch (p.unit) {
+        SKSubscriptionPeriodUnit.day => 'P${p.numberOfUnits}D',
+        SKSubscriptionPeriodUnit.week => 'P${p.numberOfUnits}W',
+        SKSubscriptionPeriodUnit.month => 'P${p.numberOfUnits}M',
+        SKSubscriptionPeriodUnit.year => 'P${p.numberOfUnits}Y',
+      };
+    }
+    return null;
   }
 
   @override
-  Future<bool> buyNonConsumable(String productId) async {
+  Future<bool> buySubscription(String productId) async {
     var d = _details[productId];
     if (d == null) {
-      await localizedPrices({productId});
+      await queryProducts({productId});
       d = _details[productId];
     }
     if (d == null) return false;
+    // in_app_purchase’da obunalar ham buyNonConsumable orqali boshlanadi.
     return _iap.buyNonConsumable(
       purchaseParam: PurchaseParam(productDetails: d),
     );
@@ -65,10 +112,18 @@ class InAppPurchaseStoreClient implements StoreClient {
             status: StoreEventStatus.restored,
             purchaseId: t.id,
             serverVerificationData: t.jsonRepresentation,
+            expiresAt: _epochMs(t.expirationDate),
           ),
       ];
     }
     return const [];
+  }
+
+  static DateTime? _epochMs(String? ms) {
+    final v = ms == null ? null : int.tryParse(ms);
+    return v == null
+        ? null
+        : DateTime.fromMillisecondsSinceEpoch(v, isUtc: true);
   }
 
   @override

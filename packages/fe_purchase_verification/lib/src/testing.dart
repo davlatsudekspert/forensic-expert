@@ -33,6 +33,11 @@ class InMemoryEntitlementStore implements EntitlementStore {
   Future<void> update(EntitlementRecord r) async =>
       _byTx[_k(r.platform, r.originalTransactionId)] = r;
 
+  final audit = <EntitlementAuditEntry>[];
+
+  @override
+  Future<void> appendAudit(EntitlementAuditEntry e) async => audit.add(e);
+
   @override
   Future<VerificationResult?> idempotent(String key) async => _idem[key];
 

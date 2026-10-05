@@ -232,9 +232,9 @@
   "@appVersionLabel": {
     "description": "Settings row."
   },
-  "legalSection": "Legal",
+  "legalSection": "Legal and safety",
   "@legalSection": {
-    "description": "Settings section."
+    "description": "Section."
   },
   "scientificDisclaimerLink": "Scientific disclaimer",
   "@scientificDisclaimerLink": {
@@ -885,9 +885,9 @@
   "@profileSectionPreferences": {
     "description": "Profile section."
   },
-  "profileSectionAccount": "Account and purchases",
+  "profileSectionAccount": "Data on this device",
   "@profileSectionAccount": {
-    "description": "Profile section."
+    "description": "Section."
   },
   "profileSectionAbout": "About and legal",
   "@profileSectionAbout": {
@@ -929,10 +929,6 @@
   "@deleteAccount": {
     "description": "Account deletion."
   },
-  "accountNone": "No account — the app works without signing in.",
-  "@accountNone": {
-    "description": "No account state."
-  },
   "legalDraftNotice": "Draft. This document will be published after professional legal review.",
   "@legalDraftNotice": {
     "description": "Draft notice on legal documents."
@@ -949,17 +945,17 @@
   "@aboutVersions": {
     "description": "About text."
   },
-  "storeNotConnected": "The store is not connected in this build, so purchase is unavailable.",
+  "storeNotConnected": "The App Store / Google Play is not connected in this build. Prices and purchases appear only when the store provides them.",
   "@storeNotConnected": {
-    "description": "Store not connected notice."
+    "description": "Banner."
   },
-  "restorePurchases": "Restore Purchase",
+  "restorePurchases": "Restore purchases",
   "@restorePurchases": {
-    "description": "Restore purchases."
+    "description": "Button."
   },
-  "restoreNothing": "No purchases to restore.",
+  "restoreNothing": "No active subscriptions to restore.",
   "@restoreNothing": {
-    "description": "Restore result."
+    "description": "Snackbar."
   },
   "subscriptionSafetyNote": "Disclaimers, limitations and sources are never behind a paywall.",
   "@subscriptionSafetyNote": {
@@ -1034,86 +1030,37 @@
   "@detailChangeJurisdiction": {
     "description": "Action."
   },
-  "purchaseTitle": "Lifetime Access",
+  "purchaseTitle": "Plans",
   "@purchaseTitle": {
-    "description": "Purchase screen title and profile row."
+    "description": "Paywall title."
   },
-  "purchaseOneTime": "One-time purchase",
-  "@purchaseOneTime": {
-    "description": "Purchase type label."
-  },
-  "purchasePriceLine": "{price} · One-time purchase",
-  "@purchasePriceLine": {
-    "description": "Price line; {price} comes from the store (or reference price).",
-    "placeholders": {
-      "price": {
-        "type": "String"
-      }
-    }
-  },
-  "purchaseReferencePriceNote": "Reference price. The final price in your currency is shown by the App Store or Google Play.",
-  "@purchaseReferencePriceNote": {
-    "description": "Shown when the store price is not available."
-  },
-  "purchaseValueReference": "Professional forensic reference",
-  "@purchaseValueReference": {
-    "description": "Lifetime value."
-  },
-  "purchaseValueTools": "Scientific calculators & laboratory tools",
-  "@purchaseValueTools": {
-    "description": "Lifetime value."
-  },
-  "purchaseValueSources": "Verified sources & evidence status",
-  "@purchaseValueSources": {
-    "description": "Lifetime value."
-  },
-  "purchaseValueOffline": "Offline professional database",
-  "@purchaseValueOffline": {
-    "description": "Lifetime value."
-  },
-  "purchaseValueLearning": "Learning & professional development",
-  "@purchaseValueLearning": {
-    "description": "Lifetime value."
-  },
-  "purchaseValueUpdates": "Future scientific content updates",
-  "@purchaseValueUpdates": {
-    "description": "Lifetime value."
-  },
-  "purchaseCta": "Unlock FORENSIC EXPERT",
+  "purchaseCta": "See plans",
   "@purchaseCta": {
-    "description": "Primary purchase button."
+    "description": "Locked-content button."
   },
-  "purchaseFooter": "One-time purchase · No recurring subscription",
-  "@purchaseFooter": {
-    "description": "Below the purchase button."
-  },
-  "purchaseFreeTitle": "Free version",
+  "purchaseFreeTitle": "Free",
   "@purchaseFreeTitle": {
-    "description": "Free version section."
+    "description": "Tier name."
   },
-  "purchaseFreeBody": "Try before you buy: a search demo, selected reference entries, selected tools and demo lessons.",
+  "purchaseFreeBody": "Core offline reference, search and basic calculators — no account required.",
   "@purchaseFreeBody": {
-    "description": "What the free version includes."
+    "description": "Free tier summary."
   },
-  "purchaseAiNote": "Forensic AI is not included without limits: it has server costs. Any AI allowance will be stated clearly before purchase.",
+  "purchaseAiNote": "Professional AI features become available only when the AI service is connected; limits will be stated before purchase.",
   "@purchaseAiNote": {
-    "description": "AI is not unlimited."
+    "description": "Paywall note."
   },
-  "purchaseOwned": "Lifetime access is active",
+  "purchaseOwned": "Your subscription is active",
   "@purchaseOwned": {
-    "description": "Shown when lifetime is active."
+    "description": "Snackbar after restore."
   },
   "purchaseUnavailableSnack": "Purchases are not available in this build.",
   "@purchaseUnavailableSnack": {
     "description": "Purchase tapped while store unavailable."
   },
-  "accessFree": "Free version",
+  "accessFree": "Free",
   "@accessFree": {
-    "description": "Profile value: free access."
-  },
-  "accessLifetime": "Lifetime",
-  "@accessLifetime": {
-    "description": "Profile value: lifetime."
+    "description": "Plan name."
   },
   "homePilotNotice": "Pilot scientific database: every entry is awaiting expert review. Information is shown with its sources and is not a final conclusion.",
   "@homePilotNotice": {
@@ -1286,25 +1233,25 @@
       }
     }
   },
-  "lockedTitle": "Included in FORENSIC EXPERT Lifetime",
+  "lockedTitle": "Included in Student Pro and Professional Pro",
   "@lockedTitle": {
-    "description": "Paywall card title."
+    "description": "Locked content title."
   },
-  "lockedBody": "Names, warnings and sources stay open. Scientific details and the jurisdiction layer unlock with Lifetime Access.",
+  "lockedBody": "Names, warnings and sources stay open. Scientific details and the jurisdiction layer unlock with a paid plan.",
   "@lockedBody": {
-    "description": "What stays open."
+    "description": "Locked content body."
   },
   "freeDemoBadge": "Free demo",
   "@freeDemoBadge": {
     "description": "Badge on free demo entries."
   },
-  "lockedBadge": "Lifetime",
+  "lockedBadge": "Pro",
   "@lockedBadge": {
-    "description": "Badge on locked entries."
+    "description": "Badge."
   },
-  "searchMoreLocked": "{count} more results with Lifetime",
+  "searchMoreLocked": "{count} more results with a paid plan",
   "@searchMoreLocked": {
-    "description": "Hidden results count.",
+    "description": "Search.",
     "placeholders": {
       "count": {
         "type": "int"
@@ -1335,25 +1282,25 @@
   "@purchaseCancelled": {
     "description": "Purchase cancelled."
   },
-  "purchaseSuccess": "Lifetime access unlocked. Thank you!",
+  "purchaseSuccess": "Subscription activated. Thank you!",
   "@purchaseSuccess": {
-    "description": "Unlocked."
+    "description": "Snackbar."
   },
   "aboutTrademarkPending": "Name and logo: trademark clearance pending.",
   "@aboutTrademarkPending": {
     "description": "Brand status."
   },
-  "diagPurchaseNone": "Purchase: none confirmed by the store",
+  "diagPurchaseNone": "Subscription: none confirmed by the store",
   "@diagPurchaseNone": {
-    "description": "Diagnostics (debug/profile only)."
+    "description": "Diagnostics."
   },
-  "diagPurchaseStore": "Purchase: confirmed by the store only — server verification not connected (release blocker)",
+  "diagPurchaseStore": "Subscription: confirmed by the store only — server verification not connected (release blocker)",
   "@diagPurchaseStore": {
-    "description": "Diagnostics (debug/profile only)."
+    "description": "Diagnostics."
   },
-  "diagPurchaseServer": "Purchase: verified by the server",
+  "diagPurchaseServer": "Subscription: verified by the server",
   "@diagPurchaseServer": {
-    "description": "Diagnostics (debug/profile only)."
+    "description": "Diagnostics."
   },
   "statusDraft": "Draft",
   "@statusDraft": {
@@ -4429,7 +4376,7 @@
   "@deleteLocalData": {
     "description": "Profile action."
   },
-  "deleteLocalDataBody": "Bookmarks, search history, recently viewed records and lesson progress will be deleted from this device. The scientific database and purchases are not affected. There is no account: nothing is stored about you on our servers.",
+  "deleteLocalDataBody": "Bookmarks, search history, recently viewed records and lesson progress will be deleted from this device only. The scientific database, your account and store subscriptions are not affected — use “Delete account” to delete the account.",
   "@deleteLocalDataBody": {
     "description": "Dialog."
   },
@@ -4440,5 +4387,457 @@
   "deleteLocalDataDone": "Local data deleted",
   "@deleteLocalDataDone": {
     "description": "Snackbar."
+  },
+  "tierStudentPro": "Student Pro",
+  "@tierStudentPro": {
+    "description": "Tier name."
+  },
+  "tierProfessionalPro": "Professional Pro",
+  "@tierProfessionalPro": {
+    "description": "Tier name."
+  },
+  "tierInstitution": "Institution",
+  "@tierInstitution": {
+    "description": "Tier name."
+  },
+  "tierCurrent": "Current plan",
+  "@tierCurrent": {
+    "description": "Badge."
+  },
+  "tierFreeF1": "Offline scientific database with safety warnings and sources",
+  "@tierFreeF1": {
+    "description": "Feature."
+  },
+  "tierFreeF2": "Search and selected reference entries",
+  "@tierFreeF2": {
+    "description": "Feature."
+  },
+  "tierFreeF3": "Basic calculators",
+  "@tierFreeF3": {
+    "description": "Feature."
+  },
+  "tierStudentF1": "Full reference: substances, methods, reagents, forensic medicine, standards, jurisdictions",
+  "@tierStudentF1": {
+    "description": "Feature."
+  },
+  "tierStudentF2": "All courses, quizzes, flashcards and exam practice",
+  "@tierStudentF2": {
+    "description": "Feature."
+  },
+  "tierStudentF3": "Unlimited search results",
+  "@tierStudentF3": {
+    "description": "Feature."
+  },
+  "tierProF1": "Everything in Student Pro",
+  "@tierProF1": {
+    "description": "Feature."
+  },
+  "tierProF2": "Professional calculators and laboratory tools",
+  "@tierProF2": {
+    "description": "Feature."
+  },
+  "tierProF3": "Analytical methods, research and evidence tools",
+  "@tierProF3": {
+    "description": "Feature."
+  },
+  "tierProF4": "Professional AI features — when the AI service is connected",
+  "@tierProF4": {
+    "description": "Feature."
+  },
+  "periodMonthly": "Monthly",
+  "@periodMonthly": {
+    "description": "Billing period."
+  },
+  "periodYearly": "Yearly",
+  "@periodYearly": {
+    "description": "Billing period."
+  },
+  "periodUnknown": "Subscription",
+  "@periodUnknown": {
+    "description": "Billing period."
+  },
+  "offerPriceLine": "{price} · {period}",
+  "@offerPriceLine": {
+    "description": "Price line.",
+    "placeholders": {
+      "price": {
+        "type": "String"
+      },
+      "period": {
+        "type": "String"
+      }
+    }
+  },
+  "offerSubscribe": "Subscribe",
+  "@offerSubscribe": {
+    "description": "Button."
+  },
+  "offerPriceFromStore": "Price is shown by the App Store / Google Play",
+  "@offerPriceFromStore": {
+    "description": "Note."
+  },
+  "subscriptionTerms": "Subscriptions renew automatically until cancelled. Payment is charged to your App Store / Google Play account. You can cancel at least 24 hours before the end of the period in your store account settings.",
+  "@subscriptionTerms": {
+    "description": "Apple/Google required disclosure."
+  },
+  "manageSubscription": "Manage subscription",
+  "@manageSubscription": {
+    "description": "Button."
+  },
+  "manageSubscriptionFailed": "Could not open the store subscription settings.",
+  "@manageSubscriptionFailed": {
+    "description": "Snackbar."
+  },
+  "planLabel": "Plan",
+  "@planLabel": {
+    "description": "Profile row."
+  },
+  "subscriptionStateLabel": "Subscription status",
+  "@subscriptionStateLabel": {
+    "description": "Profile row."
+  },
+  "stActive": "Active",
+  "@stActive": {
+    "description": "Status."
+  },
+  "stExpired": "Expired",
+  "@stExpired": {
+    "description": "Status."
+  },
+  "stGrace": "Payment issue — grace period",
+  "@stGrace": {
+    "description": "Status."
+  },
+  "stBillingRetry": "Payment issue — access paused",
+  "@stBillingRetry": {
+    "description": "Status."
+  },
+  "stCancelled": "Cancelled — active until {date}",
+  "@stCancelled": {
+    "description": "Status.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "stCancelledNoDate": "Cancelled — active until the end of the period",
+  "@stCancelledNoDate": {
+    "description": "Status."
+  },
+  "stRevoked": "Revoked by the store",
+  "@stRevoked": {
+    "description": "Status."
+  },
+  "stUnknown": "Status unknown",
+  "@stUnknown": {
+    "description": "Status."
+  },
+  "stNone": "No subscription",
+  "@stNone": {
+    "description": "Status."
+  },
+  "stRenewsOn": "Renews or ends on {date}",
+  "@stRenewsOn": {
+    "description": "Status detail.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "accountOptionalNote": "An account is optional. The offline scientific reference works without signing in; an account is needed only for cloud services.",
+  "@accountOptionalNote": {
+    "description": "Profile note."
+  },
+  "accountNotConnected": "The account service is not yet connected in this build. All offline features remain available.",
+  "@accountNotConnected": {
+    "description": "Banner."
+  },
+  "accountTestBackend": "TEST account backend — no real emails are sent and data is kept only in memory.",
+  "@accountTestBackend": {
+    "description": "Banner."
+  },
+  "accountSignIn": "Sign in",
+  "@accountSignIn": {
+    "description": "Button / title."
+  },
+  "accountCreate": "Create account",
+  "@accountCreate": {
+    "description": "Button / title."
+  },
+  "accountSignOut": "Sign out",
+  "@accountSignOut": {
+    "description": "Button."
+  },
+  "accountSignedOut": "Signed out",
+  "@accountSignedOut": {
+    "description": "Snackbar."
+  },
+  "accountEmail": "Email",
+  "@accountEmail": {
+    "description": "Field."
+  },
+  "accountPassword": "Password",
+  "@accountPassword": {
+    "description": "Field."
+  },
+  "accountConfirmPassword": "Confirm password",
+  "@accountConfirmPassword": {
+    "description": "Field."
+  },
+  "accountShowPassword": "Show password",
+  "@accountShowPassword": {
+    "description": "Semantics."
+  },
+  "accountHidePassword": "Hide password",
+  "@accountHidePassword": {
+    "description": "Semantics."
+  },
+  "accountVerified": "Email verified",
+  "@accountVerified": {
+    "description": "Status."
+  },
+  "accountNotVerified": "Email not verified",
+  "@accountNotVerified": {
+    "description": "Status."
+  },
+  "accountVerifyNow": "Verify email",
+  "@accountVerifyNow": {
+    "description": "Button."
+  },
+  "accountTermsAccept": "I accept the Terms of Use and the Privacy Policy",
+  "@accountTermsAccept": {
+    "description": "Checkbox."
+  },
+  "accountMinimalData": "We only ask for your email. No professional, case or personal details are collected.",
+  "@accountMinimalData": {
+    "description": "Note."
+  },
+  "passwordRulesTitle": "Password requirements",
+  "@passwordRulesTitle": {
+    "description": "Heading."
+  },
+  "pwRuleMinLength": "At least {n} characters",
+  "@pwRuleMinLength": {
+    "description": "Rule.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "pwRuleLetter": "At least one letter",
+  "@pwRuleLetter": {
+    "description": "Rule."
+  },
+  "pwRuleDigit": "At least one digit",
+  "@pwRuleDigit": {
+    "description": "Rule."
+  },
+  "pwRuleNotEmail": "Not the same as your email",
+  "@pwRuleNotEmail": {
+    "description": "Rule."
+  },
+  "accountForgot": "Forgot password?",
+  "@accountForgot": {
+    "description": "Link."
+  },
+  "accountNoAccount": "No account? Create one",
+  "@accountNoAccount": {
+    "description": "Link."
+  },
+  "accountHaveAccount": "Already have an account? Sign in",
+  "@accountHaveAccount": {
+    "description": "Link."
+  },
+  "verifyTitle": "Verify your email",
+  "@verifyTitle": {
+    "description": "Screen title."
+  },
+  "verifyBody": "We sent a {n}-digit code to {email}. Enter it below to activate your account.",
+  "@verifyBody": {
+    "description": "Body.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      },
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "verifyCode": "Verification code",
+  "@verifyCode": {
+    "description": "Field."
+  },
+  "verifySubmit": "Verify",
+  "@verifySubmit": {
+    "description": "Button."
+  },
+  "verifyResend": "Send a new code",
+  "@verifyResend": {
+    "description": "Button."
+  },
+  "verifyResent": "If the account needs verification, a new code has been sent.",
+  "@verifyResent": {
+    "description": "Snackbar."
+  },
+  "verifyDone": "Email verified. Your account is active.",
+  "@verifyDone": {
+    "description": "Snackbar."
+  },
+  "forgotTitle": "Reset password",
+  "@forgotTitle": {
+    "description": "Screen title."
+  },
+  "forgotBody": "Enter your account email. If an account exists, we will send a reset code.",
+  "@forgotBody": {
+    "description": "Body."
+  },
+  "forgotSubmit": "Send reset code",
+  "@forgotSubmit": {
+    "description": "Button."
+  },
+  "forgotSent": "If an account exists for this email, a reset code has been sent. It expires in {minutes} minutes.",
+  "@forgotSent": {
+    "description": "Notice.",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "resetTitle": "Choose a new password",
+  "@resetTitle": {
+    "description": "Screen title."
+  },
+  "resetCode": "Reset code",
+  "@resetCode": {
+    "description": "Field."
+  },
+  "resetNewPassword": "New password",
+  "@resetNewPassword": {
+    "description": "Field."
+  },
+  "resetSubmit": "Set new password",
+  "@resetSubmit": {
+    "description": "Button."
+  },
+  "resetDone": "Password changed. Please sign in with the new password.",
+  "@resetDone": {
+    "description": "Snackbar."
+  },
+  "authErrInvalidEmail": "Enter a valid email address.",
+  "@authErrInvalidEmail": {
+    "description": "Error."
+  },
+  "authErrWeakPassword": "The password does not meet the requirements.",
+  "@authErrWeakPassword": {
+    "description": "Error."
+  },
+  "authErrMismatch": "Passwords do not match.",
+  "@authErrMismatch": {
+    "description": "Error."
+  },
+  "authErrTerms": "Please accept the Terms of Use and the Privacy Policy.",
+  "@authErrTerms": {
+    "description": "Error."
+  },
+  "authErrCredentials": "Email or password is incorrect.",
+  "@authErrCredentials": {
+    "description": "Error."
+  },
+  "authErrNotVerified": "Your email is not verified yet. Enter the code we sent.",
+  "@authErrNotVerified": {
+    "description": "Error."
+  },
+  "authErrCodeInvalid": "The code is incorrect.",
+  "@authErrCodeInvalid": {
+    "description": "Error."
+  },
+  "authErrCodeExpired": "The code has expired. Request a new one.",
+  "@authErrCodeExpired": {
+    "description": "Error."
+  },
+  "authErrAlreadyVerified": "This email is already verified. You can sign in.",
+  "@authErrAlreadyVerified": {
+    "description": "Error."
+  },
+  "authErrTooMany": "Too many attempts. Please wait a minute and try again.",
+  "@authErrTooMany": {
+    "description": "Error."
+  },
+  "authErrOffline": "No internet connection. Offline features keep working.",
+  "@authErrOffline": {
+    "description": "Error."
+  },
+  "authErrServer": "The account service is temporarily unavailable. Please try again later.",
+  "@authErrServer": {
+    "description": "Error."
+  },
+  "authErrNotConfigured": "The account service is not yet connected in this build.",
+  "@authErrNotConfigured": {
+    "description": "Error."
+  },
+  "authErrRecentLogin": "The password is incorrect. Confirm your current password to continue.",
+  "@authErrRecentLogin": {
+    "description": "Error."
+  },
+  "authErrNotSignedIn": "Please sign in first.",
+  "@authErrNotSignedIn": {
+    "description": "Error."
+  },
+  "deleteAccountTitle": "Delete account",
+  "@deleteAccountTitle": {
+    "description": "Screen title."
+  },
+  "deleteAccountBody": "This permanently deletes your account and the data linked to it on our servers (email, sign-in sessions, synced data, cloud entitlement records). This cannot be undone.",
+  "@deleteAccountBody": {
+    "description": "Body."
+  },
+  "deleteAccountStoreNote": "Deleting the account does not cancel an App Store / Google Play subscription. Cancel it in your store account settings to stop future charges.",
+  "@deleteAccountStoreNote": {
+    "description": "Body."
+  },
+  "deleteAccountLocalNote": "Data on this device (bookmarks, history) is a separate action: “Delete data on this device”.",
+  "@deleteAccountLocalNote": {
+    "description": "Body."
+  },
+  "deleteAccountUnderstand": "I understand that this cannot be undone",
+  "@deleteAccountUnderstand": {
+    "description": "Checkbox."
+  },
+  "deleteAccountPassword": "Current password",
+  "@deleteAccountPassword": {
+    "description": "Field."
+  },
+  "deleteAccountConfirm": "Delete account permanently",
+  "@deleteAccountConfirm": {
+    "description": "Button."
+  },
+  "deleteAccountFinalTitle": "Delete your account?",
+  "@deleteAccountFinalTitle": {
+    "description": "Dialog title."
+  },
+  "deleteAccountDone": "Your account has been deleted.",
+  "@deleteAccountDone": {
+    "description": "Snackbar."
+  },
+  "aiDisclaimerLink": "AI disclaimer",
+  "@aiDisclaimerLink": {
+    "description": "Profile row."
+  },
+  "aiDisclaimerBody": "Forensic AI answers are generated from the app’s local, source-linked content and are not expert opinions. They may be incomplete or wrong, are not verified by a qualified human reviewer and must not be used as the sole basis for a forensic conclusion, legal decision or patient care. Always check the cited sources and consult a qualified expert.",
+  "@aiDisclaimerBody": {
+    "description": "Legal text."
+  },
+  "accountSection": "Account",
+  "@accountSection": {
+    "description": "Section."
+  },
+  "subscriptionSection": "Subscription",
+  "@subscriptionSection": {
+    "description": "Section."
   }
 }

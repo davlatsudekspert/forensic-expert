@@ -11,6 +11,7 @@ import '../core/settings/settings_controller.dart';
 import '../domain/catalog/tools_catalog.dart';
 import '../domain/knowledge/knowledge_models.dart';
 import '../domain/library/library_models.dart';
+import '../features/account/presentation/auth_screens.dart';
 import '../features/ai/presentation/ai_screen.dart';
 import '../features/disciplines/presentation/disciplines_screens.dart';
 import '../features/evidence/presentation/provenance_screens.dart';
@@ -29,8 +30,8 @@ import '../features/onboarding/presentation/disclaimer_screen.dart';
 import '../features/onboarding/presentation/language_screen.dart';
 import '../features/onboarding/presentation/mode_screen.dart';
 import '../features/profile/presentation/legal_screens.dart';
+import '../features/profile/presentation/paywall_screen.dart';
 import '../features/profile/presentation/profile_screen.dart';
-import '../features/profile/presentation/purchase_screen.dart';
 import '../features/profile/presentation/settings_pickers.dart';
 import '../features/shell/presentation/app_shell.dart';
 import '../features/tools/presentation/module_hub_screen.dart';
@@ -326,7 +327,46 @@ final routerProvider = Provider<GoRouter>((ref) {
                   GoRoute(
                     path: 'purchase',
                     parentNavigatorKey: rootKey,
-                    builder: (c, s) => const PurchaseScreen(),
+                    builder: (c, s) => const PaywallScreen(),
+                  ),
+                  GoRoute(
+                    path: 'ai-disclaimer',
+                    parentNavigatorKey: rootKey,
+                    builder: (c, s) => const LegalDocumentScreen(
+                      document: LegalDocument.aiDisclaimer,
+                    ),
+                  ),
+                  GoRoute(
+                    path: 'account/sign-in',
+                    parentNavigatorKey: rootKey,
+                    builder: (c, s) => const SignInScreen(),
+                  ),
+                  GoRoute(
+                    path: 'account/register',
+                    parentNavigatorKey: rootKey,
+                    builder: (c, s) => const RegisterScreen(),
+                  ),
+                  GoRoute(
+                    path: 'account/verify',
+                    parentNavigatorKey: rootKey,
+                    builder: (c, s) =>
+                        VerifyEmailScreen(email: s.extra as String? ?? ''),
+                  ),
+                  GoRoute(
+                    path: 'account/forgot',
+                    parentNavigatorKey: rootKey,
+                    builder: (c, s) => const ForgotPasswordScreen(),
+                  ),
+                  GoRoute(
+                    path: 'account/reset',
+                    parentNavigatorKey: rootKey,
+                    builder: (c, s) =>
+                        ResetPasswordScreen(email: s.extra as String? ?? ''),
+                  ),
+                  GoRoute(
+                    path: 'account/delete',
+                    parentNavigatorKey: rootKey,
+                    builder: (c, s) => const DeleteAccountScreen(),
                   ),
                   GoRoute(
                     path: 'privacy',

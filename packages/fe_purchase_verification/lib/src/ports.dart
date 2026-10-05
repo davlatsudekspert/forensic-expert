@@ -56,6 +56,9 @@ abstract interface class EntitlementStore {
 
   Future<void> update(EntitlementRecord r);
 
+  /// Holat o‘tishlari jurnali (sirsiz; [EntitlementAuditEntry]).
+  Future<void> appendAudit(EntitlementAuditEntry e);
+
   /// Idempotentlik: kalit → oldingi natija.
   Future<VerificationResult?> idempotent(String key);
   Future<void> rememberIdempotent(String key, VerificationResult r);

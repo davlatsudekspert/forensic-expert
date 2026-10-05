@@ -2,71 +2,56 @@ import 'package:flutter/foundation.dart';
 
 import 'billing_ports.dart';
 
-/// Mahsulot darajalari arxitekturasi (PHASE 6). **Narx kodda yo‘q** — narx
-/// faqat store’dan keladi; rejalashtirilgan darajalarda store mahsuloti
-/// hali yaratilmagan (RG-16) va xarid faollashtirilmaydi.
-enum ProductTier {
-  free,
-
-  /// Talaba / rezident (kelajak; store mahsuloti yo‘q).
-  studentPro,
-
-  /// Professional — hozirgi bir martalik «FORENSIC EXPERT Lifetime».
-  professionalPro,
-
-  /// Universitet / muassasa litsenziyasi (kelajak; shartnoma asosida).
-  institution,
-}
-
-enum TierAvailability { active, planned }
-
+/// Tariflar katalogi. **Narx kodda yo‘q** — narx, valyuta va davr faqat
+/// store’dan ([Offer]). Institution arxitekturada bor, lekin ommaga
+/// ko‘rsatilmaydi (shartnoma asosida; store mahsuloti yo‘q).
 @immutable
 class TierDefinition {
   const TierDefinition({
     required this.tier,
-    required this.availability,
-    this.storeProductId,
+    required this.publiclyOffered,
+    this.storeProductIds = const [],
   });
 
-  final ProductTier tier;
-  final TierAvailability availability;
+  final PlanTier tier;
 
-  /// Faqat store’da haqiqatan yaratilgan mahsulot uchun.
-  final String? storeProductId;
+  /// Paywall’da ko‘rsatiladimi.
+  final bool publiclyOffered;
+
+  /// Store’da yaratilishi kerak bo‘lgan obuna ID’lari.
+  final List<String> storeProductIds;
 }
 
 abstract final class ProductTiers {
   static const all = [
+    TierDefinition(tier: PlanTier.free, publiclyOffered: true),
     TierDefinition(
-      tier: ProductTier.free,
-      availability: TierAvailability.active,
+      tier: PlanTier.studentPro,
+      publiclyOffered: true,
+      storeProductIds: [ProductIds.studentMonthly, ProductIds.studentYearly],
     ),
     TierDefinition(
-      tier: ProductTier.studentPro,
-      availability: TierAvailability.planned,
+      tier: PlanTier.professionalPro,
+      publiclyOffered: true,
+      storeProductIds: [
+        ProductIds.professionalMonthly,
+        ProductIds.professionalYearly,
+      ],
     ),
-    TierDefinition(
-      tier: ProductTier.professionalPro,
-      availability: TierAvailability.active,
-      storeProductId: ProductIds.lifetime,
-    ),
-    TierDefinition(
-      tier: ProductTier.institution,
-      availability: TierAvailability.planned,
-    ),
+    TierDefinition(tier: PlanTier.institution, publiclyOffered: false),
   ];
 
-  /// Joriy huquqlardan daraja (taxmin yo‘q: noma’lum — free).
-  static ProductTier tierOf(Entitlements e) => switch (e.access) {
-    AccessLevel.institution => ProductTier.institution,
-    AccessLevel.lifetime => ProductTier.professionalPro,
-    AccessLevel.free => ProductTier.free,
-  };
+  static List<TierDefinition> get publicTiers => [
+    for (final t in all)
+      if (t.publiclyOffered) t,
+  ];
 
-  /// Xarid qilinadigan (store’da mavjud) mahsulotlar.
+  /// Joriy huquqlardan amaldagi tarif (taxmin yo‘q).
+  static PlanTier tierOf(Entitlements e) => e.effectiveTier;
+
+  /// Xarid qilinadigan store mahsulotlari.
   static List<String> get purchasableProductIds => [
     for (final t in all)
-      if (t.availability == TierAvailability.active && t.storeProductId != null)
-        t.storeProductId!,
+      if (t.publiclyOffered) ...t.storeProductIds,
   ];
 }

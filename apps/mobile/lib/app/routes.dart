@@ -55,6 +55,15 @@ abstract final class Routes {
   static const privacy = '/profile/privacy';
   static const terms = '/profile/terms';
   static const about = '/profile/about';
+  static const aiDisclaimer = '/profile/ai-disclaimer';
+
+  // Akkaunt (ixtiyoriy). Email marshrut satriga yozilmaydi — `extra`.
+  static const accountSignIn = '/profile/account/sign-in';
+  static const accountRegister = '/profile/account/register';
+  static const accountVerify = '/profile/account/verify';
+  static const accountForgot = '/profile/account/forgot';
+  static const accountReset = '/profile/account/reset';
+  static const accountDelete = '/profile/account/delete';
 
   /// Onboarding qadamlari tartibi.
   static const onboardingSteps = [language, disclaimer, mode];

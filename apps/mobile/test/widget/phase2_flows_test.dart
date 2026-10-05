@@ -13,8 +13,9 @@ import 'package:forensic_expert/features/home/presentation/search_screen.dart';
 import 'package:forensic_expert/features/learn/presentation/learn_screens.dart';
 import 'package:forensic_expert/features/legal/presentation/jurisdiction_screens.dart';
 import 'package:forensic_expert/features/library/presentation/entry_detail_screen.dart';
-import 'package:forensic_expert/features/profile/presentation/purchase_screen.dart';
+import 'package:forensic_expert/features/profile/presentation/paywall_screen.dart';
 
+import '../helpers/fake_store.dart';
 import '../helpers/pump_app.dart';
 
 void main() {
@@ -237,7 +238,7 @@ void main() {
   });
 
   group('Profil, obuna, rejim', () {
-    testWidgets('Lifetime: store yo‘q — reference narx, tugma o‘chiq', (
+    testWidgets('Paywall: store yo‘q — narx yo‘q, tugmalar o‘chiq', (
       tester,
     ) async {
       await pumpApp(
@@ -245,78 +246,86 @@ void main() {
         settings: completedSettings(),
         initialLocation: Routes.purchase,
       );
-      expect(find.byType(PurchaseScreen), findsOneWidget);
-      expect(find.text('Lifetime Access'), findsWidgets);
-      expect(find.text(r'$59.99 · One-time purchase'), findsOneWidget);
-      expect(find.byKey(const Key('purchase.referenceNote')), findsOneWidget);
+      expect(find.byType(PaywallScreen), findsOneWidget);
+      expect(find.text('Plans'), findsWidgets);
       expect(
         find.byKey(const Key('purchase.storeUnavailable')),
         findsOneWidget,
       );
-      final cta = find.byKey(const Key('purchase.cta'));
-      await tester.ensureVisible(cta);
-      expect(tester.widget<FilledButton>(cta).onPressed, isNull);
-      expect(find.text('Unlock FORENSIC EXPERT'), findsOneWidget);
-      expect(
-        find.text('One-time purchase · No recurring subscription'),
-        findsOneWidget,
-      );
-      await tester.ensureVisible(find.byKey(const Key('purchase.restore')));
-      expect(find.text('Restore Purchase'), findsOneWidget);
-      await tester.ensureVisible(find.byKey(const Key('purchase.aiNote')));
-      expect(find.byKey(const Key('purchase.aiNote')), findsOneWidget);
-      // Obuna tier’lari va manipulyativ elementlar yo‘q.
-      for (final banned in [
-        'Student Pro',
-        'Professional Pro',
-        '/month',
-        'per month',
-        'Subscribe',
-      ]) {
+      for (final t in ['free', 'studentPro', 'professionalPro']) {
+        expect(find.byKey(Key('paywall.tier.$t')), findsOneWidget);
+      }
+      expect(find.byKey(const Key('paywall.tier.institution')), findsNothing);
+      for (final t in ['studentPro', 'professionalPro']) {
+        final b = find.byKey(Key('paywall.buyDisabled.$t'));
+        await tester.ensureVisible(b);
+        expect(tester.widget<FilledButton>(b).onPressed, isNull);
+        expect(find.byKey(Key('paywall.noPrice.$t')), findsOneWidget);
+      }
+      // Narx kodda yo‘q: hech qanday valyuta belgisi ko‘rinmaydi.
+      for (final banned in [r'$', '€', '£', 'Lifetime', 'One-time']) {
         expect(find.textContaining(banned), findsNothing, reason: banned);
       }
+      await tester.ensureVisible(find.byKey(const Key('purchase.restore')));
+      expect(find.text('Restore purchases'), findsOneWidget);
+      expect(find.byKey(const Key('purchase.terms')), findsOneWidget);
+      await tester.ensureVisible(find.byKey(const Key('purchase.aiNote')));
+      expect(find.byKey(const Key('purchase.aiNote')), findsOneWidget);
     });
 
-    testWidgets('Lifetime: store narxi reference narx o‘rniga ko‘rsatiladi', (
+    testWidgets('Paywall: narx va davr store’dan; xarid tanlangan mahsulot', (
       tester,
     ) async {
-      final store = _FakeStore(price: 'TEST-PRICE 1.00');
+      final store = FakeStore(price: 'TEST-PRICE 1.00');
       await pumpApp(
         tester,
         settings: completedSettings(),
         initialLocation: Routes.purchase,
         overrides: [entitlementServiceProvider.overrideWithValue(store)],
       );
-      expect(find.text('TEST-PRICE 1.00 · One-time purchase'), findsOneWidget);
-      expect(find.textContaining(r'$59.99'), findsNothing);
-      expect(find.byKey(const Key('purchase.referenceNote')), findsNothing);
       expect(find.byKey(const Key('purchase.storeUnavailable')), findsNothing);
-      final cta = find.byKey(const Key('purchase.cta'));
-      await tester.ensureVisible(cta);
+      expect(find.text('TEST-PRICE 1.00 · Monthly'), findsNWidgets(2));
+      expect(find.text('TEST-PRICE 1.00 · Yearly'), findsNWidgets(2));
+      final buy = find.byKey(
+        const Key('paywall.buy.${ProductIds.studentYearly}'),
+      );
+      await tester.ensureVisible(buy);
       await tester.pumpAndSettle();
-      await tester.tap(cta);
+      await tester.tap(buy);
       await tester.pumpAndSettle();
-      expect(store.purchased, [ProductIds.lifetime]);
+      expect(store.purchased, [ProductIds.studentYearly]);
+      expect(find.text('Purchase cancelled.'), findsOneWidget);
     });
 
-    testWidgets('Lifetime egasi: xarid tugmasi yo‘q, Profil «Lifetime»', (
+    testWidgets('Professional Pro egasi: joriy tarif, boshqarish, Profil', (
       tester,
     ) async {
-      final store = _FakeStore(price: 'TEST-PRICE 1.00', owned: true);
+      final store = FakeStore(owned: true);
       final c = await pumpApp(
         tester,
         settings: completedSettings(),
         initialLocation: Routes.purchase,
         overrides: [entitlementServiceProvider.overrideWithValue(store)],
       );
-      expect(find.byKey(const Key('purchase.owned')), findsOneWidget);
-      expect(find.byKey(const Key('purchase.cta')), findsNothing);
+      expect(
+        find.byKey(const Key('paywall.current.professionalPro')),
+        findsOneWidget,
+      );
+      await tester.ensureVisible(find.byKey(const Key('purchase.manage')));
+      expect(find.byKey(const Key('purchase.manage')), findsOneWidget);
       c.read(routerProvider).go(Routes.profile);
       await tester.pumpAndSettle();
       final row = find.byKey(const Key('profile.purchase'));
       await tester.ensureVisible(row);
       expect(
-        find.descendant(of: row, matching: find.text('Lifetime')),
+        find.descendant(of: row, matching: find.text('Professional Pro')),
+        findsOneWidget,
+      );
+      expect(
+        find.descendant(
+          of: find.byKey(const Key('profile.subscriptionStatus')),
+          matching: find.text('Active'),
+        ),
         findsOneWidget,
       );
     });
@@ -407,39 +416,3 @@ void main() {
 }
 
 /// TEST: store adapteri o‘rnida (narx — ma’nosiz TEST qiymat).
-class _FakeStore implements EntitlementService {
-  _FakeStore({required this.price, this.owned = false});
-
-  final String price;
-  final bool owned;
-  final purchased = <String>[];
-
-  @override
-  Entitlements get current => owned
-      ? const Entitlements(
-          access: AccessLevel.lifetime,
-          source: EntitlementSource.appStore,
-        )
-      : Entitlements.free;
-
-  @override
-  Stream<Entitlements> watch() => Stream.value(current);
-
-  @override
-  Future<List<Offer>> offers() async => [
-    Offer(
-      productId: ProductIds.lifetime,
-      type: StoreProductType.lifetimeUnlock,
-      localizedPrice: price,
-    ),
-  ];
-
-  @override
-  Future<PurchaseOutcome> purchase(String productId) async {
-    purchased.add(productId);
-    return PurchaseOutcome.cancelled;
-  }
-
-  @override
-  Future<Entitlements> restore() async => current;
-}

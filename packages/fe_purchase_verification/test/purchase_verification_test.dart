@@ -75,7 +75,7 @@ void main() {
   test('to‘g‘ri xarid — server tasdiqlaydi va huquq yoziladi', () async {
     final r = await service.verify(_req('ok'));
     expect(r.outcome, VerificationOutcome.verified);
-    expect(await service.hasLifetime('acc-1', _product), isTrue);
+    expect(await service.hasActive('acc-1', _product), isTrue);
   });
 
   test('soxta credential, boshqa ilova, sandbox, refund — rad', () async {
@@ -104,14 +104,14 @@ void main() {
           .outcome,
       VerificationOutcome.productNotAllowed,
     );
-    expect(await service.hasLifetime('acc-1', _product), isFalse);
+    expect(await service.hasActive('acc-1', _product), isFalse);
   });
 
   test('replay: bitta xarid ikkinchi akkauntga bog‘lanmaydi', () async {
     await service.verify(_req('ok'));
     final r = await service.verify(_req('ok', account: 'acc-2', key: 'k2'));
     expect(r.outcome, VerificationOutcome.alreadyBoundToAnotherAccount);
-    expect(await service.hasLifetime('acc-2', _product), isFalse);
+    expect(await service.hasActive('acc-2', _product), isFalse);
     // Xuddi shu akkaunt qayta tiklash (restore) — ruxsat.
     final again = await service.verify(_req('ok', key: 'k3'));
     expect(again.outcome, VerificationOutcome.verified);
@@ -169,10 +169,10 @@ void main() {
       },
       'tx': {'originalTransactionId': 'O-1'},
     });
-    final h = StoreNotificationHandler(store: store, appleJws: jws);
+    final h = StoreNotificationHandler(service: service, appleJws: jws);
     expect(() => h.handleApple('forged'), throwsFormatException);
     expect(await h.handleApple('notif'), isTrue);
-    expect(await service.hasLifetime('acc-1', _product), isFalse);
+    expect(await service.hasActive('acc-1', _product), isFalse);
     // Bekor qilingan xarid qayta tekshiruvda ham tiklanmaydi.
     expect(
       (await service.verify(_req('ok', key: 'after'))).outcome,
@@ -183,11 +183,11 @@ void main() {
   test('Google voided purchase → bekor', () async {
     await service.verify(_req('gtoken', p: StorePlatform.googlePlay));
     final h = StoreNotificationHandler(
-      store: store,
+      service: service,
       appleJws: MockJwsChainVerifier(const {}),
     );
     expect(await h.handleGoogleVoided('O-g1'), isTrue);
-    expect(await service.hasLifetime('acc-1', _product), isFalse);
+    expect(await service.hasActive('acc-1', _product), isFalse);
   });
 
   test('production’da mock taqiqlangan', () {
@@ -289,7 +289,193 @@ void main() {
         'fe.student': 'cur',
       });
       expect(ok.single.outcome, VerificationOutcome.verified);
-      expect(await s.hasLifetime('acc', 'fe.student'), isTrue);
+      expect(await s.hasActive('acc', 'fe.student'), isTrue);
+    });
+  });
+
+  group('RG-18 obuna hayot sikli (tarif, audit, bildirishnomalar)', () {
+    final now = DateTime.utc(2026, 10, 4);
+    late InMemoryEntitlementStore st;
+    late PurchaseVerificationService svc;
+    StoreTransaction t(
+      String id,
+      String product, {
+      DateTime? exp,
+      DateTime? grace,
+      bool retry = false,
+      StorePlatform p = StorePlatform.appStore,
+    }) => StoreTransaction(
+      platform: p,
+      transactionId: 'T-$id',
+      originalTransactionId: 'O-$id',
+      productId: product,
+      appIdentifier: 'com.example.forensic',
+      environment: StoreEnvironment.production,
+      purchasedAt: DateTime.utc(2026, 9, 1),
+      expiresAt: exp,
+      gracePeriodExpiresAt: grace,
+      autoRenewing: true,
+      inBillingRetry: retry,
+    );
+    final future = DateTime.utc(2026, 11, 4);
+    final past = DateTime.utc(2026, 10, 1);
+
+    setUp(() {
+      st = InMemoryEntitlementStore();
+      svc = PurchaseVerificationService(
+        config: const VerificationConfig(
+          appleBundleId: 'com.example.forensic',
+          googlePackageName: 'com.example.forensic',
+          allowedProductIds: {'fe_student_pro_monthly', 'fe_pro_monthly'},
+          productTiers: {
+            'fe_student_pro_monthly': 'student_pro',
+            'fe_pro_monthly': 'professional_pro',
+          },
+        ),
+        store: st,
+        verifiers: [
+          MockStoreVerifier(StorePlatform.appStore, {
+            'stu': t('s', 'fe_student_pro_monthly', exp: future),
+            'pro': t('p', 'fe_pro_monthly', exp: future),
+            'retry': t('r', 'fe_pro_monthly', exp: past, retry: true),
+            'grace': t('g', 'fe_pro_monthly', exp: past, grace: future),
+          }),
+        ],
+        clock: () => now,
+      );
+    });
+
+    VerificationRequest req(String c, {String acc = 'a1', String? key}) =>
+        VerificationRequest(
+          platform: StorePlatform.appStore,
+          accountId: acc,
+          productId: c == 'stu' ? 'fe_student_pro_monthly' : 'fe_pro_monthly',
+          purchaseCredential: c,
+          idempotencyKey: key ?? 'k-$c-$acc',
+        );
+
+    test('normallashtirilgan huquq: eng yuqori faol tarif', () async {
+      expect((await svc.entitlementFor('a1')).tier, 'free');
+      await svc.verify(req('stu'));
+      expect((await svc.entitlementFor('a1')).tier, 'student_pro');
+      await svc.verify(req('pro'));
+      final e = await svc.entitlementFor('a1');
+      expect(e.tier, 'professional_pro');
+      expect(e.toClientJson()['entitlement_status'], 'active');
+      expect(e.toClientJson()['expires_at'], future.toIso8601String());
+    });
+
+    test('billing retry — kirish yo‘q; grace — kirish bor', () async {
+      expect(
+        (await svc.verify(req('retry'))).outcome,
+        VerificationOutcome.billingRetry,
+      );
+      final g = await svc.verify(req('grace'));
+      expect(g.outcome, VerificationOutcome.verified);
+      expect(g.entitlement!.state, EntitlementState.gracePeriod);
+      expect(await svc.hasActive('a1', 'fe_pro_monthly'), isTrue);
+    });
+
+    test('Apple bildirishnomalari: renew, fail-to-renew, expired, refund '
+        '(yakuniy) va sirsiz audit', () async {
+      await svc.verify(req('pro'));
+      final jws = MockJwsChainVerifier({
+        'fail': {
+          'notificationType': 'DID_FAIL_TO_RENEW',
+          'data': {'signedTransactionInfo': 'tx'},
+        },
+        'renew': {
+          'notificationType': 'DID_RENEW',
+          'data': {'signedTransactionInfo': 'tx2'},
+        },
+        'cancel': {
+          'notificationType': 'DID_CHANGE_RENEWAL_STATUS',
+          'data': {'signedTransactionInfo': 'tx2', 'signedRenewalInfo': 'ri'},
+        },
+        'refund': {
+          'notificationType': 'REFUND',
+          'data': {'signedTransactionInfo': 'tx2'},
+        },
+        'tx': {'originalTransactionId': 'O-p'},
+        'tx2': {
+          'originalTransactionId': 'O-p',
+          'expiresDate': DateTime.utc(2026, 12, 4).millisecondsSinceEpoch,
+        },
+        'ri': {'autoRenewStatus': 0},
+      });
+      final h = StoreNotificationHandler(service: svc, appleJws: jws);
+      expect(await h.handleApple('fail'), isTrue);
+      expect(await svc.hasActive('a1', 'fe_pro_monthly'), isFalse);
+      expect(await h.handleApple('renew'), isTrue);
+      expect(await svc.hasActive('a1', 'fe_pro_monthly'), isTrue);
+      expect(
+        (await svc.entitlementFor('a1')).expiresAt,
+        DateTime.utc(2026, 12, 4),
+      );
+      expect(await h.handleApple('cancel'), isTrue);
+      expect(
+        (await svc.entitlementFor('a1')).state,
+        EntitlementState.cancelledActiveUntilExpiry,
+      );
+      expect(await h.handleApple('refund'), isTrue);
+      expect((await svc.entitlementFor('a1')).tier, 'free');
+      // Revoked — yakuniy: keyingi renew uni tiklamaydi.
+      expect(await h.handleApple('renew'), isFalse);
+      expect(await svc.hasActive('a1', 'fe_pro_monthly'), isFalse);
+
+      final reasons = [for (final a in st.audit) a.reason];
+      expect(reasons, [
+        'VERIFIED',
+        'DID_FAIL_TO_RENEW',
+        'DID_RENEW',
+        'DID_CHANGE_RENEWAL_STATUS',
+        'REFUND',
+      ]);
+      for (final a in st.audit) {
+        expect(a.recordFingerprint, hasLength(16));
+        expect(a.recordFingerprint, isNot(contains('O-p')));
+      }
+    });
+
+    test('Google RTDN holatlari', () {
+      expect(
+        StoreNotificationHandler.googleState(6),
+        EntitlementState.gracePeriod,
+      );
+      expect(
+        StoreNotificationHandler.googleState(5),
+        EntitlementState.billingRetry,
+      );
+      expect(
+        StoreNotificationHandler.googleState(3),
+        EntitlementState.cancelledActiveUntilExpiry,
+      );
+      expect(
+        StoreNotificationHandler.googleState(12),
+        EntitlementState.revoked,
+      );
+      expect(
+        StoreNotificationHandler.googleState(13),
+        EntitlementState.expired,
+      );
+      expect(StoreNotificationHandler.googleState(99), isNull);
+    });
+
+    test('restore: yangi qurilma, o‘sha akkaunt — tiklanadi; boshqa akkaunt '
+        '— replay rad', () async {
+      await svc.verify(req('pro'));
+      final again = await svc.restore('a1', StorePlatform.appStore, {
+        'fe_pro_monthly': 'pro',
+      });
+      expect(again.single.outcome, VerificationOutcome.verified);
+      final other = await svc.restore('a2', StorePlatform.appStore, {
+        'fe_pro_monthly': 'pro',
+      });
+      expect(
+        other.single.outcome,
+        VerificationOutcome.alreadyBoundToAnotherAccount,
+      );
+      expect((await svc.entitlementFor('a2')).tier, 'free');
     });
   });
 }

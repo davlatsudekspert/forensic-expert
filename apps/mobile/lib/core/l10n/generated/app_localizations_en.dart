@@ -192,7 +192,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get appVersionLabel => 'App version';
 
   @override
-  String get legalSection => 'Legal';
+  String get legalSection => 'Legal and safety';
 
   @override
   String get scientificDisclaimerLink => 'Scientific disclaimer';
@@ -703,7 +703,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get profileSectionPreferences => 'Preferences';
 
   @override
-  String get profileSectionAccount => 'Account and purchases';
+  String get profileSectionAccount => 'Data on this device';
 
   @override
   String get profileSectionAbout => 'About and legal';
@@ -737,9 +737,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get deleteAccount => 'Delete account';
 
   @override
-  String get accountNone => 'No account — the app works without signing in.';
-
-  @override
   String get legalDraftNotice =>
       'Draft. This document will be published after professional legal review.';
 
@@ -757,13 +754,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get storeNotConnected =>
-      'The store is not connected in this build, so purchase is unavailable.';
+      'The App Store / Google Play is not connected in this build. Prices and purchases appear only when the store provides them.';
 
   @override
-  String get restorePurchases => 'Restore Purchase';
+  String get restorePurchases => 'Restore purchases';
 
   @override
-  String get restoreNothing => 'No purchases to restore.';
+  String get restoreNothing => 'No active subscriptions to restore.';
 
   @override
   String get subscriptionSafetyNote =>
@@ -825,67 +822,31 @@ class AppLocalizationsEn extends AppLocalizations {
   String get detailChangeJurisdiction => 'Change jurisdiction';
 
   @override
-  String get purchaseTitle => 'Lifetime Access';
+  String get purchaseTitle => 'Plans';
 
   @override
-  String get purchaseOneTime => 'One-time purchase';
+  String get purchaseCta => 'See plans';
 
   @override
-  String purchasePriceLine(String price) {
-    return '$price · One-time purchase';
-  }
-
-  @override
-  String get purchaseReferencePriceNote =>
-      'Reference price. The final price in your currency is shown by the App Store or Google Play.';
-
-  @override
-  String get purchaseValueReference => 'Professional forensic reference';
-
-  @override
-  String get purchaseValueTools => 'Scientific calculators & laboratory tools';
-
-  @override
-  String get purchaseValueSources => 'Verified sources & evidence status';
-
-  @override
-  String get purchaseValueOffline => 'Offline professional database';
-
-  @override
-  String get purchaseValueLearning => 'Learning & professional development';
-
-  @override
-  String get purchaseValueUpdates => 'Future scientific content updates';
-
-  @override
-  String get purchaseCta => 'Unlock FORENSIC EXPERT';
-
-  @override
-  String get purchaseFooter => 'One-time purchase · No recurring subscription';
-
-  @override
-  String get purchaseFreeTitle => 'Free version';
+  String get purchaseFreeTitle => 'Free';
 
   @override
   String get purchaseFreeBody =>
-      'Try before you buy: a search demo, selected reference entries, selected tools and demo lessons.';
+      'Core offline reference, search and basic calculators — no account required.';
 
   @override
   String get purchaseAiNote =>
-      'Forensic AI is not included without limits: it has server costs. Any AI allowance will be stated clearly before purchase.';
+      'Professional AI features become available only when the AI service is connected; limits will be stated before purchase.';
 
   @override
-  String get purchaseOwned => 'Lifetime access is active';
+  String get purchaseOwned => 'Your subscription is active';
 
   @override
   String get purchaseUnavailableSnack =>
       'Purchases are not available in this build.';
 
   @override
-  String get accessFree => 'Free version';
-
-  @override
-  String get accessLifetime => 'Lifetime';
+  String get accessFree => 'Free';
 
   @override
   String get homePilotNotice =>
@@ -1000,21 +961,21 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get lockedTitle => 'Included in FORENSIC EXPERT Lifetime';
+  String get lockedTitle => 'Included in Student Pro and Professional Pro';
 
   @override
   String get lockedBody =>
-      'Names, warnings and sources stay open. Scientific details and the jurisdiction layer unlock with Lifetime Access.';
+      'Names, warnings and sources stay open. Scientific details and the jurisdiction layer unlock with a paid plan.';
 
   @override
   String get freeDemoBadge => 'Free demo';
 
   @override
-  String get lockedBadge => 'Lifetime';
+  String get lockedBadge => 'Pro';
 
   @override
   String searchMoreLocked(int count) {
-    return '$count more results with Lifetime';
+    return '$count more results with a paid plan';
   }
 
   @override
@@ -1039,21 +1000,21 @@ class AppLocalizationsEn extends AppLocalizations {
   String get purchaseCancelled => 'Purchase cancelled.';
 
   @override
-  String get purchaseSuccess => 'Lifetime access unlocked. Thank you!';
+  String get purchaseSuccess => 'Subscription activated. Thank you!';
 
   @override
   String get aboutTrademarkPending =>
       'Name and logo: trademark clearance pending.';
 
   @override
-  String get diagPurchaseNone => 'Purchase: none confirmed by the store';
+  String get diagPurchaseNone => 'Subscription: none confirmed by the store';
 
   @override
   String get diagPurchaseStore =>
-      'Purchase: confirmed by the store only — server verification not connected (release blocker)';
+      'Subscription: confirmed by the store only — server verification not connected (release blocker)';
 
   @override
-  String get diagPurchaseServer => 'Purchase: verified by the server';
+  String get diagPurchaseServer => 'Subscription: verified by the server';
 
   @override
   String get statusDraft => 'Draft';
@@ -3384,11 +3345,365 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get deleteLocalDataBody =>
-      'Bookmarks, search history, recently viewed records and lesson progress will be deleted from this device. The scientific database and purchases are not affected. There is no account: nothing is stored about you on our servers.';
+      'Bookmarks, search history, recently viewed records and lesson progress will be deleted from this device only. The scientific database, your account and store subscriptions are not affected — use “Delete account” to delete the account.';
 
   @override
   String get deleteLocalDataConfirm => 'Delete';
 
   @override
   String get deleteLocalDataDone => 'Local data deleted';
+
+  @override
+  String get tierStudentPro => 'Student Pro';
+
+  @override
+  String get tierProfessionalPro => 'Professional Pro';
+
+  @override
+  String get tierInstitution => 'Institution';
+
+  @override
+  String get tierCurrent => 'Current plan';
+
+  @override
+  String get tierFreeF1 =>
+      'Offline scientific database with safety warnings and sources';
+
+  @override
+  String get tierFreeF2 => 'Search and selected reference entries';
+
+  @override
+  String get tierFreeF3 => 'Basic calculators';
+
+  @override
+  String get tierStudentF1 =>
+      'Full reference: substances, methods, reagents, forensic medicine, standards, jurisdictions';
+
+  @override
+  String get tierStudentF2 =>
+      'All courses, quizzes, flashcards and exam practice';
+
+  @override
+  String get tierStudentF3 => 'Unlimited search results';
+
+  @override
+  String get tierProF1 => 'Everything in Student Pro';
+
+  @override
+  String get tierProF2 => 'Professional calculators and laboratory tools';
+
+  @override
+  String get tierProF3 => 'Analytical methods, research and evidence tools';
+
+  @override
+  String get tierProF4 =>
+      'Professional AI features — when the AI service is connected';
+
+  @override
+  String get periodMonthly => 'Monthly';
+
+  @override
+  String get periodYearly => 'Yearly';
+
+  @override
+  String get periodUnknown => 'Subscription';
+
+  @override
+  String offerPriceLine(String price, String period) {
+    return '$price · $period';
+  }
+
+  @override
+  String get offerSubscribe => 'Subscribe';
+
+  @override
+  String get offerPriceFromStore =>
+      'Price is shown by the App Store / Google Play';
+
+  @override
+  String get subscriptionTerms =>
+      'Subscriptions renew automatically until cancelled. Payment is charged to your App Store / Google Play account. You can cancel at least 24 hours before the end of the period in your store account settings.';
+
+  @override
+  String get manageSubscription => 'Manage subscription';
+
+  @override
+  String get manageSubscriptionFailed =>
+      'Could not open the store subscription settings.';
+
+  @override
+  String get planLabel => 'Plan';
+
+  @override
+  String get subscriptionStateLabel => 'Subscription status';
+
+  @override
+  String get stActive => 'Active';
+
+  @override
+  String get stExpired => 'Expired';
+
+  @override
+  String get stGrace => 'Payment issue — grace period';
+
+  @override
+  String get stBillingRetry => 'Payment issue — access paused';
+
+  @override
+  String stCancelled(String date) {
+    return 'Cancelled — active until $date';
+  }
+
+  @override
+  String get stCancelledNoDate =>
+      'Cancelled — active until the end of the period';
+
+  @override
+  String get stRevoked => 'Revoked by the store';
+
+  @override
+  String get stUnknown => 'Status unknown';
+
+  @override
+  String get stNone => 'No subscription';
+
+  @override
+  String stRenewsOn(String date) {
+    return 'Renews or ends on $date';
+  }
+
+  @override
+  String get accountOptionalNote =>
+      'An account is optional. The offline scientific reference works without signing in; an account is needed only for cloud services.';
+
+  @override
+  String get accountNotConnected =>
+      'The account service is not yet connected in this build. All offline features remain available.';
+
+  @override
+  String get accountTestBackend =>
+      'TEST account backend — no real emails are sent and data is kept only in memory.';
+
+  @override
+  String get accountSignIn => 'Sign in';
+
+  @override
+  String get accountCreate => 'Create account';
+
+  @override
+  String get accountSignOut => 'Sign out';
+
+  @override
+  String get accountSignedOut => 'Signed out';
+
+  @override
+  String get accountEmail => 'Email';
+
+  @override
+  String get accountPassword => 'Password';
+
+  @override
+  String get accountConfirmPassword => 'Confirm password';
+
+  @override
+  String get accountShowPassword => 'Show password';
+
+  @override
+  String get accountHidePassword => 'Hide password';
+
+  @override
+  String get accountVerified => 'Email verified';
+
+  @override
+  String get accountNotVerified => 'Email not verified';
+
+  @override
+  String get accountVerifyNow => 'Verify email';
+
+  @override
+  String get accountTermsAccept =>
+      'I accept the Terms of Use and the Privacy Policy';
+
+  @override
+  String get accountMinimalData =>
+      'We only ask for your email. No professional, case or personal details are collected.';
+
+  @override
+  String get passwordRulesTitle => 'Password requirements';
+
+  @override
+  String pwRuleMinLength(int n) {
+    return 'At least $n characters';
+  }
+
+  @override
+  String get pwRuleLetter => 'At least one letter';
+
+  @override
+  String get pwRuleDigit => 'At least one digit';
+
+  @override
+  String get pwRuleNotEmail => 'Not the same as your email';
+
+  @override
+  String get accountForgot => 'Forgot password?';
+
+  @override
+  String get accountNoAccount => 'No account? Create one';
+
+  @override
+  String get accountHaveAccount => 'Already have an account? Sign in';
+
+  @override
+  String get verifyTitle => 'Verify your email';
+
+  @override
+  String verifyBody(int n, String email) {
+    return 'We sent a $n-digit code to $email. Enter it below to activate your account.';
+  }
+
+  @override
+  String get verifyCode => 'Verification code';
+
+  @override
+  String get verifySubmit => 'Verify';
+
+  @override
+  String get verifyResend => 'Send a new code';
+
+  @override
+  String get verifyResent =>
+      'If the account needs verification, a new code has been sent.';
+
+  @override
+  String get verifyDone => 'Email verified. Your account is active.';
+
+  @override
+  String get forgotTitle => 'Reset password';
+
+  @override
+  String get forgotBody =>
+      'Enter your account email. If an account exists, we will send a reset code.';
+
+  @override
+  String get forgotSubmit => 'Send reset code';
+
+  @override
+  String forgotSent(int minutes) {
+    return 'If an account exists for this email, a reset code has been sent. It expires in $minutes minutes.';
+  }
+
+  @override
+  String get resetTitle => 'Choose a new password';
+
+  @override
+  String get resetCode => 'Reset code';
+
+  @override
+  String get resetNewPassword => 'New password';
+
+  @override
+  String get resetSubmit => 'Set new password';
+
+  @override
+  String get resetDone =>
+      'Password changed. Please sign in with the new password.';
+
+  @override
+  String get authErrInvalidEmail => 'Enter a valid email address.';
+
+  @override
+  String get authErrWeakPassword =>
+      'The password does not meet the requirements.';
+
+  @override
+  String get authErrMismatch => 'Passwords do not match.';
+
+  @override
+  String get authErrTerms =>
+      'Please accept the Terms of Use and the Privacy Policy.';
+
+  @override
+  String get authErrCredentials => 'Email or password is incorrect.';
+
+  @override
+  String get authErrNotVerified =>
+      'Your email is not verified yet. Enter the code we sent.';
+
+  @override
+  String get authErrCodeInvalid => 'The code is incorrect.';
+
+  @override
+  String get authErrCodeExpired => 'The code has expired. Request a new one.';
+
+  @override
+  String get authErrAlreadyVerified =>
+      'This email is already verified. You can sign in.';
+
+  @override
+  String get authErrTooMany =>
+      'Too many attempts. Please wait a minute and try again.';
+
+  @override
+  String get authErrOffline =>
+      'No internet connection. Offline features keep working.';
+
+  @override
+  String get authErrServer =>
+      'The account service is temporarily unavailable. Please try again later.';
+
+  @override
+  String get authErrNotConfigured =>
+      'The account service is not yet connected in this build.';
+
+  @override
+  String get authErrRecentLogin =>
+      'The password is incorrect. Confirm your current password to continue.';
+
+  @override
+  String get authErrNotSignedIn => 'Please sign in first.';
+
+  @override
+  String get deleteAccountTitle => 'Delete account';
+
+  @override
+  String get deleteAccountBody =>
+      'This permanently deletes your account and the data linked to it on our servers (email, sign-in sessions, synced data, cloud entitlement records). This cannot be undone.';
+
+  @override
+  String get deleteAccountStoreNote =>
+      'Deleting the account does not cancel an App Store / Google Play subscription. Cancel it in your store account settings to stop future charges.';
+
+  @override
+  String get deleteAccountLocalNote =>
+      'Data on this device (bookmarks, history) is a separate action: “Delete data on this device”.';
+
+  @override
+  String get deleteAccountUnderstand =>
+      'I understand that this cannot be undone';
+
+  @override
+  String get deleteAccountPassword => 'Current password';
+
+  @override
+  String get deleteAccountConfirm => 'Delete account permanently';
+
+  @override
+  String get deleteAccountFinalTitle => 'Delete your account?';
+
+  @override
+  String get deleteAccountDone => 'Your account has been deleted.';
+
+  @override
+  String get aiDisclaimerLink => 'AI disclaimer';
+
+  @override
+  String get aiDisclaimerBody =>
+      'Forensic AI answers are generated from the app’s local, source-linked content and are not expert opinions. They may be incomplete or wrong, are not verified by a qualified human reviewer and must not be used as the sole basis for a forensic conclusion, legal decision or patient care. Always check the cited sources and consult a qualified expert.';
+
+  @override
+  String get accountSection => 'Account';
+
+  @override
+  String get subscriptionSection => 'Subscription';
 }

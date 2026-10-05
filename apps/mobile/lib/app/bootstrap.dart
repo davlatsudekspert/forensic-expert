@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter/foundation.dart';
@@ -10,10 +11,15 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../core/perf/startup_metrics.dart';
 import '../core/settings/settings_controller.dart';
 import '../core/settings/settings_repository.dart';
+import '../data/auth/mock_auth_repository.dart';
+import '../data/auth/secure_session_store.dart';
 import '../data/billing/in_app_purchase_client.dart';
 import '../data/billing/store_entitlement_service.dart';
 import '../data/local/user_data_repository.dart';
+import '../data/offline/offline_backend.dart';
+import '../data/remote/http_auth_repository.dart';
 import '../data/remote/http_purchase_verifier.dart';
+import '../domain/ports/backend_ports.dart';
 import '../domain/ports/billing_ports.dart';
 import 'app.dart';
 import 'app_info.dart';
@@ -42,8 +48,13 @@ Future<void> bootstrap() async {
   final userData = await userDataRepo.load();
   metrics.mark(PerfMarks.settingsLoaded);
 
+  final auth = _authRepository();
+
   SchedulerBinding.instance.addPostFrameCallback((_) {
     metrics.mark(PerfMarks.firstFrame);
+    // Sessiyani tiklash birinchi kadrdan keyin (tarmoq startup’ni
+    // to‘xtatmaydi; oflayn ilmiy funksiyalar bunga bog‘liq emas).
+    unawaited(auth.restoreSession());
   });
 
   runApp(
@@ -53,13 +64,15 @@ Future<void> bootstrap() async {
         settingsRepositoryProvider.overrideWithValue(repo),
         userDataRepositoryProvider.overrideWithValue(userDataRepo),
         initialUserDataProvider.overrideWithValue(userData),
-        // Lifetime: faqat mobil store’larda. Boshqa platformada — store yo‘q.
+        authRepositoryProvider.overrideWithValue(auth),
+        // Obunalar: faqat mobil store’larda. Boshqa platformada — store yo‘q.
         if (!kIsWeb && (Platform.isAndroid || Platform.isIOS))
           entitlementServiceProvider.overrideWithValue(
             StoreEntitlementService(
               client: InAppPurchaseStoreClient(),
               verifier: HttpPurchaseVerifier.fromEnvironment(
                 bundleId: AppInfo.applicationId,
+                accessToken: auth.accessToken,
               ),
               platformSource: Platform.isIOS
                   ? EntitlementSource.appStore
@@ -70,6 +83,17 @@ Future<void> bootstrap() async {
       child: const ForensicExpertApp(),
     ),
   );
+}
+
+/// Akkaunt backend’i: `FE_AUTH_BASE_URL` (HTTPS) bo‘lsa — HTTP adapter;
+/// release bo‘lmagan yig‘mada `FE_AUTH_MODE=mock` — MOCK (xat
+/// yuborilmaydi, UI belgilaydi); aks holda — ulanmagan (halol holat).
+AuthRepository _authRepository() {
+  final http = HttpAuthRepository.fromEnvironment(SecureSessionStore());
+  if (http != null) return http;
+  const mode = String.fromEnvironment('FE_AUTH_MODE');
+  if (!kReleaseMode && mode == 'mock') return MockAuthRepository();
+  return const OfflineAuthRepository();
 }
 
 /// Ilovaga o‘rnatilgan shriftlar litsenziyasi (SIL OFL 1.1) — «Licenses»

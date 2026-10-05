@@ -18,5 +18,5 @@ FORENSIC EXPERT — sud tibbiyoti, toksikologiya, genetika va turdosh yo‘nalis
 Muhim: FORENSIC EXPERT — ta’limiy qo‘llanma. U laboratoriya SOPlari, akkreditatsiyalangan usullar, yuridik maslahat yoki malakali ekspert xulosasini almashtirmaydi.
 
 **Kalit so‘zlar:** sud tibbiyoti, toksikologiya, autopsiya, DNK, dalil
-**Maxfiylik:** ma’lumot yig‘ilmaydi; kuzatuv yo‘q.
-**Narx:** bepul daraja; bir martalik Professional xarid — narx faqat store’dan.
+**Maxfiylik:** kuzatuv yo‘q. Ixtiyoriy akkaunt faqat emailni yig‘adi; xarid tarixi obunani tekshirish uchun ishlatiladi.
+**Narx:** bepul daraja; ixtiyoriy avtomatik yangilanadigan Student Pro va Professional Pro obunalari (oylik / yillik) — narx faqat store’dan. Akkaunt ixtiyoriy.

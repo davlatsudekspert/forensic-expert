@@ -191,7 +191,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get appVersionLabel => 'Версия приложения';
 
   @override
-  String get legalSection => 'Правовая информация';
+  String get legalSection => 'Правовая информация и безопасность';
 
   @override
   String get scientificDisclaimerLink => 'Научный дисклеймер';
@@ -704,7 +704,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get profileSectionPreferences => 'Настройки';
 
   @override
-  String get profileSectionAccount => 'Аккаунт и покупки';
+  String get profileSectionAccount => 'Данные на этом устройстве';
 
   @override
   String get profileSectionAbout => 'О приложении и правовая информация';
@@ -738,9 +738,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get deleteAccount => 'Удалить аккаунт';
 
   @override
-  String get accountNone => 'Без аккаунта — приложение работает без входа.';
-
-  @override
   String get legalDraftNotice =>
       'Черновик. Документ будет опубликован после профессиональной юридической проверки.';
 
@@ -758,13 +755,13 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get storeNotConnected =>
-      'В этой сборке магазин не подключён, поэтому покупка недоступна.';
+      'В этой сборке App Store / Google Play не подключены. Цены и покупки появятся только из магазина.';
 
   @override
-  String get restorePurchases => 'Восстановить покупку';
+  String get restorePurchases => 'Восстановить покупки';
 
   @override
-  String get restoreNothing => 'Нет покупок для восстановления.';
+  String get restoreNothing => 'Нет активных подписок для восстановления.';
 
   @override
   String get subscriptionSafetyNote =>
@@ -826,69 +823,30 @@ class AppLocalizationsRu extends AppLocalizations {
   String get detailChangeJurisdiction => 'Сменить юрисдикцию';
 
   @override
-  String get purchaseTitle => 'Пожизненный доступ';
+  String get purchaseTitle => 'Тарифы';
 
   @override
-  String get purchaseOneTime => 'Разовая покупка';
+  String get purchaseCta => 'Посмотреть тарифы';
 
   @override
-  String purchasePriceLine(String price) {
-    return '$price · Разовая покупка';
-  }
-
-  @override
-  String get purchaseReferencePriceNote =>
-      'Ориентировочная цена. Окончательную цену в вашей валюте покажет App Store или Google Play.';
-
-  @override
-  String get purchaseValueReference =>
-      'Профессиональный судебно-экспертный справочник';
-
-  @override
-  String get purchaseValueTools =>
-      'Научные калькуляторы и лабораторные инструменты';
-
-  @override
-  String get purchaseValueSources =>
-      'Проверенные источники и статус доказательности';
-
-  @override
-  String get purchaseValueOffline => 'Профессиональная офлайн-база';
-
-  @override
-  String get purchaseValueLearning => 'Обучение и профессиональное развитие';
-
-  @override
-  String get purchaseValueUpdates => 'Будущие обновления научного контента';
-
-  @override
-  String get purchaseCta => 'Открыть FORENSIC EXPERT';
-
-  @override
-  String get purchaseFooter => 'Разовая покупка · Без регулярной подписки';
-
-  @override
-  String get purchaseFreeTitle => 'Бесплатная версия';
+  String get purchaseFreeTitle => 'Бесплатно';
 
   @override
   String get purchaseFreeBody =>
-      'Попробуйте до покупки: демо поиска, избранные справочные статьи, отдельные инструменты и демо-уроки.';
+      'Базовый офлайн-справочник, поиск и основные калькуляторы — без аккаунта.';
 
   @override
   String get purchaseAiNote =>
-      'Forensic AI не входит без ограничений: у него есть серверные расходы. Любой объём AI будет чётко указан до покупки.';
+      'Профессиональные функции ИИ станут доступны только после подключения ИИ-сервиса; лимиты будут указаны до покупки.';
 
   @override
-  String get purchaseOwned => 'Пожизненный доступ активен';
+  String get purchaseOwned => 'Ваша подписка активна';
 
   @override
   String get purchaseUnavailableSnack => 'Покупки недоступны в этой сборке.';
 
   @override
-  String get accessFree => 'Бесплатная версия';
-
-  @override
-  String get accessLifetime => 'Пожизненный';
+  String get accessFree => 'Бесплатно';
 
   @override
   String get homePilotNotice =>
@@ -1004,21 +962,21 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get lockedTitle => 'Входит в FORENSIC EXPERT Lifetime';
+  String get lockedTitle => 'Входит в Student Pro и Professional Pro';
 
   @override
   String get lockedBody =>
-      'Названия, предупреждения и источники остаются открытыми. Научные данные и юрисдикционный слой открываются с Lifetime Access.';
+      'Названия, предупреждения и источники остаются открытыми. Научные данные и юрисдикционный слой открываются в платном тарифе.';
 
   @override
   String get freeDemoBadge => 'Бесплатно (демо)';
 
   @override
-  String get lockedBadge => 'Lifetime';
+  String get lockedBadge => 'Pro';
 
   @override
   String searchMoreLocked(int count) {
-    return 'Ещё $count результатов в Lifetime';
+    return 'Ещё $count результатов в платном тарифе';
   }
 
   @override
@@ -1042,21 +1000,21 @@ class AppLocalizationsRu extends AppLocalizations {
   String get purchaseCancelled => 'Покупка отменена.';
 
   @override
-  String get purchaseSuccess => 'Пожизненный доступ открыт. Спасибо!';
+  String get purchaseSuccess => 'Подписка активирована. Спасибо!';
 
   @override
   String get aboutTrademarkPending =>
       'Название и логотип: проверка товарного знака не завершена.';
 
   @override
-  String get diagPurchaseNone => 'Покупка: магазин не подтвердил';
+  String get diagPurchaseNone => 'Подписка: магазин не подтвердил';
 
   @override
   String get diagPurchaseStore =>
-      'Покупка: подтверждена только магазином — серверная проверка не подключена (блокирует релиз)';
+      'Подписка: подтверждена только магазином — серверная проверка не подключена (блокирует релиз)';
 
   @override
-  String get diagPurchaseServer => 'Покупка: проверена сервером';
+  String get diagPurchaseServer => 'Подписка: проверена сервером';
 
   @override
   String get statusDraft => 'Черновик';
@@ -3395,11 +3353,362 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get deleteLocalDataBody =>
-      'Закладки, история поиска, недавно просмотренные записи и прогресс уроков будут удалены с этого устройства. Научная база и покупки не затрагиваются. Аккаунта нет: на наших серверах о вас ничего не хранится.';
+      'Закладки, история поиска, недавно просмотренные записи и прогресс уроков будут удалены только с этого устройства. Научная база, аккаунт и подписки в магазине не затрагиваются — для удаления аккаунта используйте «Удалить аккаунт».';
 
   @override
   String get deleteLocalDataConfirm => 'Удалить';
 
   @override
   String get deleteLocalDataDone => 'Локальные данные удалены';
+
+  @override
+  String get tierStudentPro => 'Student Pro';
+
+  @override
+  String get tierProfessionalPro => 'Professional Pro';
+
+  @override
+  String get tierInstitution => 'Организация';
+
+  @override
+  String get tierCurrent => 'Текущий тариф';
+
+  @override
+  String get tierFreeF1 =>
+      'Офлайн научная база с предупреждениями и источниками';
+
+  @override
+  String get tierFreeF2 => 'Поиск и избранные справочные записи';
+
+  @override
+  String get tierFreeF3 => 'Основные калькуляторы';
+
+  @override
+  String get tierStudentF1 =>
+      'Полный справочник: вещества, методы, реактивы, судебная медицина, стандарты, юрисдикции';
+
+  @override
+  String get tierStudentF2 =>
+      'Все курсы, тесты, карточки и подготовка к экзамену';
+
+  @override
+  String get tierStudentF3 => 'Поиск без ограничения результатов';
+
+  @override
+  String get tierProF1 => 'Всё из Student Pro';
+
+  @override
+  String get tierProF2 =>
+      'Профессиональные калькуляторы и лабораторные инструменты';
+
+  @override
+  String get tierProF3 =>
+      'Аналитические методы, исследования и инструменты доказательств';
+
+  @override
+  String get tierProF4 =>
+      'Профессиональные функции ИИ — после подключения ИИ-сервиса';
+
+  @override
+  String get periodMonthly => 'Ежемесячно';
+
+  @override
+  String get periodYearly => 'Ежегодно';
+
+  @override
+  String get periodUnknown => 'Подписка';
+
+  @override
+  String offerPriceLine(String price, String period) {
+    return '$price · $period';
+  }
+
+  @override
+  String get offerSubscribe => 'Оформить подписку';
+
+  @override
+  String get offerPriceFromStore => 'Цену показывает App Store / Google Play';
+
+  @override
+  String get subscriptionTerms =>
+      'Подписка продлевается автоматически, пока вы её не отмените. Оплата списывается с аккаунта App Store / Google Play. Отменить можно не позднее чем за 24 часа до конца периода в настройках аккаунта магазина.';
+
+  @override
+  String get manageSubscription => 'Управлять подпиской';
+
+  @override
+  String get manageSubscriptionFailed =>
+      'Не удалось открыть настройки подписки в магазине.';
+
+  @override
+  String get planLabel => 'Тариф';
+
+  @override
+  String get subscriptionStateLabel => 'Статус подписки';
+
+  @override
+  String get stActive => 'Активна';
+
+  @override
+  String get stExpired => 'Истекла';
+
+  @override
+  String get stGrace => 'Проблема с оплатой — льготный период';
+
+  @override
+  String get stBillingRetry => 'Проблема с оплатой — доступ приостановлен';
+
+  @override
+  String stCancelled(String date) {
+    return 'Отменена — действует до $date';
+  }
+
+  @override
+  String get stCancelledNoDate => 'Отменена — действует до конца периода';
+
+  @override
+  String get stRevoked => 'Отозвана магазином';
+
+  @override
+  String get stUnknown => 'Статус неизвестен';
+
+  @override
+  String get stNone => 'Нет подписки';
+
+  @override
+  String stRenewsOn(String date) {
+    return 'Продление или окончание: $date';
+  }
+
+  @override
+  String get accountOptionalNote =>
+      'Аккаунт необязателен. Офлайн-справочник работает без входа; аккаунт нужен только для облачных сервисов.';
+
+  @override
+  String get accountNotConnected =>
+      'В этой сборке сервис аккаунтов ещё не подключён. Все офлайн-функции доступны.';
+
+  @override
+  String get accountTestBackend =>
+      'ТЕСТОВЫЙ сервер аккаунтов — реальные письма не отправляются, данные хранятся только в памяти.';
+
+  @override
+  String get accountSignIn => 'Войти';
+
+  @override
+  String get accountCreate => 'Создать аккаунт';
+
+  @override
+  String get accountSignOut => 'Выйти';
+
+  @override
+  String get accountSignedOut => 'Вы вышли из аккаунта';
+
+  @override
+  String get accountEmail => 'Эл. почта';
+
+  @override
+  String get accountPassword => 'Пароль';
+
+  @override
+  String get accountConfirmPassword => 'Повторите пароль';
+
+  @override
+  String get accountShowPassword => 'Показать пароль';
+
+  @override
+  String get accountHidePassword => 'Скрыть пароль';
+
+  @override
+  String get accountVerified => 'Почта подтверждена';
+
+  @override
+  String get accountNotVerified => 'Почта не подтверждена';
+
+  @override
+  String get accountVerifyNow => 'Подтвердить почту';
+
+  @override
+  String get accountTermsAccept =>
+      'Я принимаю Условия использования и Политику конфиденциальности';
+
+  @override
+  String get accountMinimalData =>
+      'Мы запрашиваем только эл. почту. Профессиональные, служебные и личные данные не собираются.';
+
+  @override
+  String get passwordRulesTitle => 'Требования к паролю';
+
+  @override
+  String pwRuleMinLength(int n) {
+    return 'Не менее $n символов';
+  }
+
+  @override
+  String get pwRuleLetter => 'Хотя бы одна буква';
+
+  @override
+  String get pwRuleDigit => 'Хотя бы одна цифра';
+
+  @override
+  String get pwRuleNotEmail => 'Не совпадает с эл. почтой';
+
+  @override
+  String get accountForgot => 'Забыли пароль?';
+
+  @override
+  String get accountNoAccount => 'Нет аккаунта? Создайте';
+
+  @override
+  String get accountHaveAccount => 'Уже есть аккаунт? Войдите';
+
+  @override
+  String get verifyTitle => 'Подтвердите эл. почту';
+
+  @override
+  String verifyBody(int n, String email) {
+    return 'Мы отправили $n-значный код на $email. Введите его ниже, чтобы активировать аккаунт.';
+  }
+
+  @override
+  String get verifyCode => 'Код подтверждения';
+
+  @override
+  String get verifySubmit => 'Подтвердить';
+
+  @override
+  String get verifyResend => 'Отправить новый код';
+
+  @override
+  String get verifyResent =>
+      'Если аккаунт требует подтверждения, новый код отправлен.';
+
+  @override
+  String get verifyDone => 'Почта подтверждена. Аккаунт активен.';
+
+  @override
+  String get forgotTitle => 'Сброс пароля';
+
+  @override
+  String get forgotBody =>
+      'Введите эл. почту аккаунта. Если аккаунт существует, мы отправим код сброса.';
+
+  @override
+  String get forgotSubmit => 'Отправить код сброса';
+
+  @override
+  String forgotSent(int minutes) {
+    return 'Если для этой почты есть аккаунт, код сброса отправлен. Он действует $minutes минут.';
+  }
+
+  @override
+  String get resetTitle => 'Новый пароль';
+
+  @override
+  String get resetCode => 'Код сброса';
+
+  @override
+  String get resetNewPassword => 'Новый пароль';
+
+  @override
+  String get resetSubmit => 'Сохранить новый пароль';
+
+  @override
+  String get resetDone => 'Пароль изменён. Войдите с новым паролем.';
+
+  @override
+  String get authErrInvalidEmail => 'Введите корректный адрес эл. почты.';
+
+  @override
+  String get authErrWeakPassword => 'Пароль не соответствует требованиям.';
+
+  @override
+  String get authErrMismatch => 'Пароли не совпадают.';
+
+  @override
+  String get authErrTerms =>
+      'Примите Условия использования и Политику конфиденциальности.';
+
+  @override
+  String get authErrCredentials => 'Неверная эл. почта или пароль.';
+
+  @override
+  String get authErrNotVerified =>
+      'Почта ещё не подтверждена. Введите отправленный код.';
+
+  @override
+  String get authErrCodeInvalid => 'Неверный код.';
+
+  @override
+  String get authErrCodeExpired => 'Срок действия кода истёк. Запросите новый.';
+
+  @override
+  String get authErrAlreadyVerified =>
+      'Эта почта уже подтверждена. Можно войти.';
+
+  @override
+  String get authErrTooMany =>
+      'Слишком много попыток. Подождите минуту и повторите.';
+
+  @override
+  String get authErrOffline =>
+      'Нет подключения к интернету. Офлайн-функции продолжают работать.';
+
+  @override
+  String get authErrServer =>
+      'Сервис аккаунтов временно недоступен. Повторите позже.';
+
+  @override
+  String get authErrNotConfigured =>
+      'Сервис аккаунтов в этой сборке ещё не подключён.';
+
+  @override
+  String get authErrRecentLogin =>
+      'Неверный пароль. Подтвердите текущий пароль, чтобы продолжить.';
+
+  @override
+  String get authErrNotSignedIn => 'Сначала войдите в аккаунт.';
+
+  @override
+  String get deleteAccountTitle => 'Удаление аккаунта';
+
+  @override
+  String get deleteAccountBody =>
+      'Аккаунт и связанные с ним данные на наших серверах (эл. почта, сессии входа, синхронизированные данные, записи о правах) будут удалены безвозвратно. Это действие нельзя отменить.';
+
+  @override
+  String get deleteAccountStoreNote =>
+      'Удаление аккаунта не отменяет подписку App Store / Google Play. Отмените её в настройках аккаунта магазина, чтобы прекратить списания.';
+
+  @override
+  String get deleteAccountLocalNote =>
+      'Данные на этом устройстве (закладки, история) удаляются отдельно: «Удалить данные на этом устройстве».';
+
+  @override
+  String get deleteAccountUnderstand => 'Я понимаю, что это нельзя отменить';
+
+  @override
+  String get deleteAccountPassword => 'Текущий пароль';
+
+  @override
+  String get deleteAccountConfirm => 'Удалить аккаунт навсегда';
+
+  @override
+  String get deleteAccountFinalTitle => 'Удалить аккаунт?';
+
+  @override
+  String get deleteAccountDone => 'Аккаунт удалён.';
+
+  @override
+  String get aiDisclaimerLink => 'Оговорка об ИИ';
+
+  @override
+  String get aiDisclaimerBody =>
+      'Ответы Forensic AI формируются на основе локального содержимого приложения со ссылками на источники и не являются экспертным заключением. Они могут быть неполными или ошибочными, не проверены квалифицированным рецензентом и не должны быть единственным основанием для экспертного вывода, правового решения или лечения. Всегда проверяйте указанные источники и консультируйтесь с квалифицированным экспертом.';
+
+  @override
+  String get accountSection => 'Аккаунт';
+
+  @override
+  String get subscriptionSection => 'Подписка';
 }

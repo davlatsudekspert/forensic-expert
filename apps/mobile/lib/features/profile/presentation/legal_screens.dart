@@ -8,7 +8,7 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/brand_mark.dart';
 import '../../../core/widgets/fe_components.dart';
 
-enum LegalDocument { privacy, terms }
+enum LegalDocument { privacy, terms, aiDisclaimer }
 
 /// Privacy Policy / Terms of Use — QORALAMA. Yuridik tekshiruvdan keyin
 /// to‘liq matn bilan almashtiriladi (RELEASE GATE RG-05).
@@ -24,6 +24,7 @@ class LegalDocumentScreen extends StatelessWidget {
     final (title, body) = switch (document) {
       LegalDocument.privacy => (l.privacyPolicy, l.privacySummary),
       LegalDocument.terms => (l.termsOfUse, l.disclaimerBody),
+      LegalDocument.aiDisclaimer => (l.aiDisclaimerLink, l.aiDisclaimerBody),
     };
     return Scaffold(
       appBar: AppBar(title: Text(title)),

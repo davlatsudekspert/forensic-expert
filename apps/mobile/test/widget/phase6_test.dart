@@ -392,9 +392,9 @@ void main() {
 
   group('Billing va maxfiylik arxitekturasi', () {
     test('darajalar: faqat store’da mavjud mahsulot xarid qilinadi', () {
-      expect(ProductTiers.purchasableProductIds, [ProductIds.lifetime]);
-      expect(ProductTiers.tierOf(Entitlements.free), ProductTier.free);
-      expect(ProductTier.values.length, 4);
+      expect(ProductTiers.purchasableProductIds, ProductIds.all);
+      expect(ProductTiers.tierOf(Entitlements.free), PlanTier.free);
+      expect(PlanTier.values.length, 4);
     });
 
     test('telemetriya: so‘rov, matn va ID’lar hech qachon o‘tmaydi', () {

@@ -1,24 +1,42 @@
-/// Billing abstraksiyasi — **FORENSIC EXPERT Lifetime** modeli.
+/// Billing abstraksiyasi — **obuna tariflari** (Free / Student Pro /
+/// Professional Pro; Institution — arxitekturada, ommaga ochilmagan).
 ///
-/// Mahsulot qarori (PHASE 2, egasi): asosiy monetizatsiya — bitta
-/// **bir martalik xarid** (lifetime unlock), obuna emas.
-///
-/// * App Store: `Non-Consumable In-App Purchase`.
-/// * Google Play: `one-time product` (in-app product, iste’mol qilinmaydi).
-/// * Haqiqat manbai — Apple StoreKit va Google Play Billing (RevenueCat —
-///   ixtiyoriy adapter, turlari domen qatlamiga chiqmaydi).
-/// * Narx **UI kodida yo‘q**. Production’da [Offer.localizedPrice] —
-///   storefront qaytargan lokal narx. [BillingConfig.referenceLifetimePrice]
-///   faqat mahsulot/dizayn maqsadi (mock / reference) va store ulanmaganda
-///   «reference price» deb aniq belgilangan holda ko‘rsatiladi.
-/// * Forensic AI Lifetime’ga «cheksiz» kirmaydi — AI ruxsati va kvotasi
-///   alohida ([AiEntitlement]); server xarajati bor.
+/// * App Store: auto-renewable subscriptions (bitta subscription group).
+/// * Google Play: subscriptions (har mahsulotda bitta auto-renewing base plan).
+/// * Narx, valyuta va davr **faqat store metadata’sidan** ([Offer]); UI
+///   kodida narx yo‘q.
+/// * Akkaunt (identifikatsiya) va huquq (xarid) — alohida tushunchalar.
+/// * Huquqning yagona manbai — [Entitlements]; mijozning «men Pro» degan
+///   da’vosi yoki lokal `isPro` bayrog‘i hech qachon huquq bermaydi.
+/// * Forensic AI alohida ruxsat va kvotaga ega ([AiEntitlement]).
 library;
 
 import 'package:flutter/foundation.dart';
 
-/// Kirish darajasi. `institution` — kelajak (tashkilot litsenziyasi).
-enum AccessLevel { free, lifetime, institution }
+/// Tarif. Tartib muhim: yuqorirog‘i pastdagilarning imkoniyatlarini o‘z
+/// ichiga oladi (institution — kelajak, shartnoma asosida).
+enum PlanTier { free, studentPro, professionalPro, institution }
+
+/// Obuna holati (server normallashtirgan; App Store / Google Play).
+enum EntitlementStatus {
+  active,
+  expired,
+
+  /// To‘lov muammosi — store imtiyozli davri (kirish saqlanadi).
+  gracePeriod,
+
+  /// Apple billing retry / Google account hold — kirish YO‘Q.
+  billingRetry,
+
+  /// Avtoyangilanish o‘chirilgan, to‘langan muddat oxirigacha amal qiladi.
+  cancelledActiveUntilExpiry,
+
+  /// Refund / bekor qilingan.
+  revoked,
+
+  /// Holat noma’lum (masalan, store javob bermadi) — kirish YO‘Q.
+  unknown,
+}
 
 enum EntitlementSource { none, appStore, playStore, institution, promo }
 
@@ -26,74 +44,127 @@ enum EntitlementSource { none, appStore, playStore, institution, promo }
 ///
 /// * [storeConfirmed] — xaridni qurilmadagi StoreKit / Google Play Billing
 ///   shu Apple ID / Google akkaunti uchun tasdiqladi (ilovaning lokal
-///   yozuvi EMAS). Server tekshiruvi YO‘Q — production uchun yetarli emas.
+///   yozuvi EMAS). Server tekshiruvi YO‘Q — production uchun yetarli emas
+///   (RG-18; [FeFlags.requireServerPurchaseVerification]).
 /// * [serverVerified] — backend App Store Server API / Google Play
 ///   Developer API orqali tekshirdi.
 enum EntitlementVerification { none, storeConfirmed, serverVerified }
 
+/// Store’dagi obuna davri — store metadata’sidan.
+enum BillingPeriod { month, year, unknown }
+
+/// Yagona huquq modeli.
 @immutable
 class Entitlements {
   const Entitlements({
-    required this.access,
+    required this.tier,
+    required this.status,
     required this.source,
-    this.purchasedAt,
     this.verification = EntitlementVerification.none,
+    this.productId,
+    this.purchasedAt,
+    this.expiresAt,
   });
 
   static const free = Entitlements(
-    access: AccessLevel.free,
+    tier: PlanTier.free,
+    status: EntitlementStatus.active,
     source: EntitlementSource.none,
   );
 
-  final AccessLevel access;
+  final PlanTier tier;
+  final EntitlementStatus status;
   final EntitlementSource source;
-  final DateTime? purchasedAt;
   final EntitlementVerification verification;
+  final String? productId;
+  final DateTime? purchasedAt;
+  final DateTime? expiresAt;
 
-  /// Asosiy professional mahsulot ochiqmi (Lifetime yoki tashkilot).
-  bool get hasFullAccess =>
-      access == AccessLevel.lifetime || access == AccessLevel.institution;
+  /// Holat kirish beradimi (grace va «bekor qilingan, muddat oxirigacha»
+  /// — ha; billing retry, muddati tugagan, revoked, noma’lum — yo‘q).
+  static bool statusGrantsAccess(EntitlementStatus s) => switch (s) {
+    EntitlementStatus.active ||
+    EntitlementStatus.gracePeriod ||
+    EntitlementStatus.cancelledActiveUntilExpiry => true,
+    EntitlementStatus.expired ||
+    EntitlementStatus.billingRetry ||
+    EntitlementStatus.revoked ||
+    EntitlementStatus.unknown => false,
+  };
+
+  /// Amaldagi tarif: pullik tarif faqat store/server tasdig‘i va kirish
+  /// beradigan holat bilan; aks holda — Free.
+  PlanTier get effectiveTier {
+    if (tier == PlanTier.free) return PlanTier.free;
+    if (verification == EntitlementVerification.none) return PlanTier.free;
+    return statusGrantsAccess(status) ? tier : PlanTier.free;
+  }
+
+  bool includes(PlanTier required) => effectiveTier.index >= required.index;
+
+  bool get hasStudentAccess => includes(PlanTier.studentPro);
+
+  /// Professional Pro (yoki institution).
+  bool get hasProfessionalAccess => includes(PlanTier.professionalPro);
+
+  /// Eski nom — professional to‘liq kirish.
+  bool get hasFullAccess => hasProfessionalAccess;
 }
 
-/// Store’dagi mahsulot turi (adapter shunga qarab so‘rov yuboradi).
-enum StoreProductType {
-  /// App Store Non-Consumable / Google Play one-time product.
-  lifetimeUnlock,
-
-  /// Kelajak: qo‘shimcha AI paketi (consumable yoki alohida mahsulot).
-  aiPackage,
-}
-
-/// Store’dan kelgan taklif. Narx — store formatlagan lokal satr.
+/// Store’dan kelgan taklif. Narx, valyuta va davr — store metadata’si.
 @immutable
 class Offer {
   const Offer({
     required this.productId,
-    required this.type,
+    required this.tier,
     required this.localizedPrice,
+    required this.period,
+    this.currencyCode,
   });
 
   final String productId;
-  final StoreProductType type;
+  final PlanTier tier;
+
+  /// Store formatlagan lokal narx satri (masalan, «12 000 so‘m»).
   final String localizedPrice;
+  final BillingPeriod period;
+  final String? currencyCode;
 }
 
 enum PurchaseOutcome { purchased, cancelled, pending, failed, unavailable }
 
-/// Store’dagi mahsulot ID’lari (narx emas). Store konsollarida aynan
-/// shu ID’lar yaratiladi — adapterdan mustaqil.
+/// Store mahsulot ID’lari — konfiguratsiya (narx emas). Store
+/// konsollarida aynan shu ID’lar yaratiladi (`docs/STORE_PRODUCT_SETUP.md`).
+/// Loyiha konvensiyasi: `fe_` prefiksi, snake_case.
 abstract final class ProductIds {
-  /// FORENSIC EXPERT Lifetime — Non-Consumable / one-time product.
-  static const lifetime = 'fe_lifetime_unlock';
+  static const studentMonthly = 'fe_student_pro_monthly';
+  static const studentYearly = 'fe_student_pro_yearly';
+  static const professionalMonthly = 'fe_professional_pro_monthly';
+  static const professionalYearly = 'fe_professional_pro_yearly';
 
-  static const all = [lifetime];
-}
+  /// Ommaga taklif qilinadigan obunalar (Institution — yo‘q).
+  static const all = [
+    studentMonthly,
+    studentYearly,
+    professionalMonthly,
+    professionalYearly,
+  ];
 
-/// Mahsulot konfiguratsiyasi (UI’dan tashqarida).
-abstract final class BillingConfig {
-  /// Mahsulot/dizayn maqsadi — **reference narx**, real narx emas.
-  /// Store ulangach har doim storefront qaytargan lokal narx ko‘rsatiladi.
-  static const referenceLifetimePrice = r'$59.99';
+  /// Mahsulot → tarif. Noma’lum mahsulot — `null` (huquq bermaydi).
+  static PlanTier? tierOf(String productId) => switch (productId) {
+    studentMonthly || studentYearly => PlanTier.studentPro,
+    professionalMonthly || professionalYearly => PlanTier.professionalPro,
+    _ => null,
+  };
+
+  /// Konfiguratsiyadagi kutilgan davr (store metadata bo‘lmaganda emas —
+  /// faqat tartiblash uchun; UI davrni store’dan oladi).
+  static BillingPeriod expectedPeriodOf(String productId) =>
+      productId.endsWith('_yearly')
+      ? BillingPeriod.year
+      : productId.endsWith('_monthly')
+      ? BillingPeriod.month
+      : BillingPeriod.unknown;
 }
 
 // ---------------------------------------------------------------------------
@@ -119,7 +190,7 @@ class PurchaseEvidence {
 }
 
 enum VerificationStatus {
-  /// Backend tasdiqladi.
+  /// Backend tasdiqladi (holat va muddat [PurchaseVerification] da).
   verified,
 
   /// Backend rad etdi (soxta, qaytarilgan, boshqa ilova) — huquq YO‘Q.
@@ -132,17 +203,41 @@ enum VerificationStatus {
   networkError,
 }
 
-abstract interface class PurchaseVerifier {
-  Future<VerificationStatus> verify(PurchaseEvidence evidence);
+/// Backend javobi — normallashtirilgan huquq holati bilan.
+@immutable
+class PurchaseVerification {
+  const PurchaseVerification(
+    this.status, {
+    this.entitlementStatus,
+    this.expiresAt,
+  });
+
+  static const notConfigured = PurchaseVerification(
+    VerificationStatus.serverNotConfigured,
+  );
+  static const rejected = PurchaseVerification(VerificationStatus.rejected);
+  static const networkError = PurchaseVerification(
+    VerificationStatus.networkError,
+  );
+
+  final VerificationStatus status;
+
+  /// Faqat [VerificationStatus.verified] da (server hisoblagan holat).
+  final EntitlementStatus? entitlementStatus;
+  final DateTime? expiresAt;
 }
 
-/// PHASE 3 holati: backend yo‘q. Hech qachon «verified» qaytarmaydi.
+abstract interface class PurchaseVerifier {
+  Future<PurchaseVerification> verify(PurchaseEvidence evidence);
+}
+
+/// Backend yo‘q. Hech qachon «verified» qaytarmaydi.
 class UnconfiguredPurchaseVerifier implements PurchaseVerifier {
   const UnconfiguredPurchaseVerifier();
 
   @override
-  Future<VerificationStatus> verify(PurchaseEvidence evidence) async =>
-      VerificationStatus.serverNotConfigured;
+  Future<PurchaseVerification> verify(PurchaseEvidence evidence) async =>
+      PurchaseVerification.notConfigured;
 }
 
 abstract interface class EntitlementService {
@@ -150,7 +245,7 @@ abstract interface class EntitlementService {
 
   Entitlements get current;
 
-  /// Store mavjud bo‘lsa — Lifetime taklifi (lokal narx bilan).
+  /// Store mavjud bo‘lsa — obuna takliflari (narx/davr store’dan).
   Future<List<Offer>> offers();
 
   Future<PurchaseOutcome> purchase(String productId);
@@ -160,7 +255,7 @@ abstract interface class EntitlementService {
 }
 
 // ---------------------------------------------------------------------------
-// Bepul demo va Lifetime chegarasi.
+// Imkoniyatlar va tarif chegarasi (yagona joy — FeatureGate).
 // ---------------------------------------------------------------------------
 
 /// Mahsulot imkoniyatlari (gating birligi).
@@ -176,29 +271,59 @@ enum ProductFeature {
   biochemistry,
   professionalCalculators,
   learn,
+  quizzesAndFlashcards,
+  researchAndEvidence,
+  professionalAi,
   offlineDatabase,
   internationalStandards,
   jurisdictionLayers,
   verifiedReferences,
 
-  /// Hech qachon pullik devor ortida emas: disclaimer, cheklovlar,
-  /// manbalar/provenance tizimi.
+  /// Hech qachon pullik devor ortida emas: disclaimer, ogohlantirishlar,
+  /// cheklovlar, manbalar/provenance tizimi.
   safetyAndProvenance,
 }
 
-/// Bepul foydalanuvchi uchun demo hajmi.
 enum FeatureAccess {
-  /// To‘liq ochiq (Lifetime yoki hamma uchun).
+  /// To‘liq ochiq.
   full,
 
   /// Bepul demo: mahsulot sifatini baholash uchun yetarli qism.
   demo,
 }
 
-/// Qaysi imkoniyat bepul demoda qanday ochiq — bitta joyda.
-///
-/// Bepul versiya foydasiz yoki sun’iy buzilgan emas: har bir asosiy
-/// bo‘limdan haqiqiy demo bor, xavfsizlik va manbalar esa doim to‘liq.
+/// Har imkoniyat uchun to‘liq kirish talab qiladigan eng past tarif.
+/// Bepul foydalanuvchi pastroq tarifda [FeatureAccess.demo] oladi.
+abstract final class FeatureGate {
+  static PlanTier minimumTier(ProductFeature f) => switch (f) {
+    // Xavfsizlik va provenance — hamma uchun to‘liq.
+    ProductFeature.safetyAndProvenance ||
+    ProductFeature.offlineDatabase => PlanTier.free,
+    // Ta’lim va ma’lumotnoma o‘qish — Student Pro.
+    ProductFeature.learn ||
+    ProductFeature.quizzesAndFlashcards ||
+    ProductFeature.globalSearch ||
+    ProductFeature.forensicMedicine ||
+    ProductFeature.forensicToxicology ||
+    ProductFeature.substanceLibrary ||
+    ProductFeature.reagentsAndSolutions ||
+    ProductFeature.expressTests ||
+    ProductFeature.biochemistry ||
+    ProductFeature.internationalStandards ||
+    ProductFeature.jurisdictionLayers ||
+    ProductFeature.verifiedReferences => PlanTier.studentPro,
+    // Professional ish vositalari — Professional Pro.
+    ProductFeature.laboratoryTools ||
+    ProductFeature.professionalCalculators ||
+    ProductFeature.analyticalMethods ||
+    ProductFeature.researchAndEvidence ||
+    ProductFeature.professionalAi => PlanTier.professionalPro,
+  };
+
+  static bool unlocks(ProductFeature f, Entitlements e) =>
+      e.includes(minimumTier(f));
+}
+
 abstract final class AccessPolicy {
   /// Bepul demoda doim ochiq vositalar (katalog ID’lari).
   static const freeToolIds = {
@@ -215,24 +340,26 @@ abstract final class AccessPolicy {
   /// Global search: bepul demoda har guruhda ko‘rsatiladigan natijalar.
   static const freeSearchResultsPerGroup = 3;
 
-  static FeatureAccess accessFor(ProductFeature f, Entitlements e) {
-    if (f == ProductFeature.safetyAndProvenance) return FeatureAccess.full;
-    return e.hasFullAccess ? FeatureAccess.full : FeatureAccess.demo;
-  }
+  static FeatureAccess accessFor(ProductFeature f, Entitlements e) =>
+      FeatureGate.unlocks(f, e) ? FeatureAccess.full : FeatureAccess.demo;
+
+  static bool unlocks(ProductFeature f, Entitlements e) =>
+      FeatureGate.unlocks(f, e);
 
   static bool isToolUnlocked(String toolId, Entitlements e) =>
-      e.hasFullAccess || freeToolIds.contains(toolId);
+      FeatureGate.unlocks(ProductFeature.professionalCalculators, e) ||
+      freeToolIds.contains(toolId);
 }
 
 // ---------------------------------------------------------------------------
-// Forensic AI — alohida ruxsat va kvota (Lifetime’ga «cheksiz» kirmaydi).
+// Forensic AI — alohida ruxsat va kvota (tarifga «cheksiz» kirmaydi).
 // ---------------------------------------------------------------------------
 
 enum AiPlan {
   /// AI ulanmagan (PHASE 2 holati).
   none,
 
-  /// Kelajak: Lifetime egalariga ma’lum bepul kvota.
+  /// Kelajak: Professional Pro egalariga ma’lum kvota.
   includedQuota,
 
   /// Kelajak: qo‘shimcha AI paketi.

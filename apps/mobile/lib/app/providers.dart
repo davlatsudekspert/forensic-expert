@@ -38,6 +38,24 @@ final authRepositoryProvider = Provider<AuthRepository>(
   (ref) => const OfflineAuthRepository(),
 );
 
+/// Akkaunt holati. Akkaunt ixtiyoriy — `signedOut` normal holat.
+///
+/// Notifier repozitoriy oqimini o‘zi tinglaydi: ko‘rinmas (offstage)
+/// ekranlar tufayli provayder pauzaga tushganda ham holat yo‘qolmaydi.
+final authStateProvider = NotifierProvider<AuthStateNotifier, AuthState>(
+  AuthStateNotifier.new,
+);
+
+class AuthStateNotifier extends Notifier<AuthState> {
+  @override
+  AuthState build() {
+    final repo = ref.watch(authRepositoryProvider);
+    final sub = repo.watch().listen((s) => state = s);
+    ref.onDispose(sub.cancel);
+    return repo.current;
+  }
+}
+
 final syncRepositoryProvider = Provider<SyncRepository>(
   (ref) => const DisabledSyncRepository(),
 );
@@ -50,7 +68,7 @@ final entitlementServiceProvider = Provider<EntitlementService>(
   (ref) => const StoreUnavailableEntitlementService(),
 );
 
-/// Forensic AI ruxsati Lifetime’dan alohida (server xarajati bor).
+/// Forensic AI ruxsati tarifdan alohida (server xarajati bor).
 final aiEntitlementServiceProvider = Provider<AiEntitlementService>(
   (ref) => const NoAiEntitlementService(),
 );

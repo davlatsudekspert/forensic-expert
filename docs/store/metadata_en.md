@@ -18,5 +18,5 @@ FORENSIC EXPERT is an offline reference for students and professionals in forens
 Important: FORENSIC EXPERT is an educational reference. It does not replace laboratory SOPs, accredited methods, legal advice or the judgement of a qualified expert.
 
 **Keywords:** forensic, toxicology, autopsy, DNA, pathology, evidence, chain of custody
-**Privacy:** No data collected. No tracking.
-**Pricing:** Free tier; one-time Professional purchase — price shown by the store only.
+**Privacy:** No tracking. Optional account collects only the email address; purchase history is used to verify subscriptions.
+**Pricing:** Free tier; optional auto-renewable subscriptions Student Pro and Professional Pro (monthly / yearly) — prices shown by the store only. Account is optional.

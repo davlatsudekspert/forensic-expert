@@ -436,10 +436,10 @@ abstract class AppLocalizations {
   /// **'App version'**
   String get appVersionLabel;
 
-  /// Settings section.
+  /// Section.
   ///
   /// In en, this message translates to:
-  /// **'Legal'**
+  /// **'Legal and safety'**
   String get legalSection;
 
   /// Settings row.
@@ -1348,10 +1348,10 @@ abstract class AppLocalizations {
   /// **'Preferences'**
   String get profileSectionPreferences;
 
-  /// Profile section.
+  /// Section.
   ///
   /// In en, this message translates to:
-  /// **'Account and purchases'**
+  /// **'Data on this device'**
   String get profileSectionAccount;
 
   /// Profile section.
@@ -1414,12 +1414,6 @@ abstract class AppLocalizations {
   /// **'Delete account'**
   String get deleteAccount;
 
-  /// No account state.
-  ///
-  /// In en, this message translates to:
-  /// **'No account — the app works without signing in.'**
-  String get accountNone;
-
   /// Draft notice on legal documents.
   ///
   /// In en, this message translates to:
@@ -1444,22 +1438,22 @@ abstract class AppLocalizations {
   /// **'The app version and the scientific database version are tracked separately.'**
   String get aboutVersions;
 
-  /// Store not connected notice.
+  /// Banner.
   ///
   /// In en, this message translates to:
-  /// **'The store is not connected in this build, so purchase is unavailable.'**
+  /// **'The App Store / Google Play is not connected in this build. Prices and purchases appear only when the store provides them.'**
   String get storeNotConnected;
 
-  /// Restore purchases.
+  /// Button.
   ///
   /// In en, this message translates to:
-  /// **'Restore Purchase'**
+  /// **'Restore purchases'**
   String get restorePurchases;
 
-  /// Restore result.
+  /// Snackbar.
   ///
   /// In en, this message translates to:
-  /// **'No purchases to restore.'**
+  /// **'No active subscriptions to restore.'**
   String get restoreNothing;
 
   /// Subscription principle.
@@ -1564,100 +1558,40 @@ abstract class AppLocalizations {
   /// **'Change jurisdiction'**
   String get detailChangeJurisdiction;
 
-  /// Purchase screen title and profile row.
+  /// Paywall title.
   ///
   /// In en, this message translates to:
-  /// **'Lifetime Access'**
+  /// **'Plans'**
   String get purchaseTitle;
 
-  /// Purchase type label.
+  /// Locked-content button.
   ///
   /// In en, this message translates to:
-  /// **'One-time purchase'**
-  String get purchaseOneTime;
-
-  /// Price line; {price} comes from the store (or reference price).
-  ///
-  /// In en, this message translates to:
-  /// **'{price} · One-time purchase'**
-  String purchasePriceLine(String price);
-
-  /// Shown when the store price is not available.
-  ///
-  /// In en, this message translates to:
-  /// **'Reference price. The final price in your currency is shown by the App Store or Google Play.'**
-  String get purchaseReferencePriceNote;
-
-  /// Lifetime value.
-  ///
-  /// In en, this message translates to:
-  /// **'Professional forensic reference'**
-  String get purchaseValueReference;
-
-  /// Lifetime value.
-  ///
-  /// In en, this message translates to:
-  /// **'Scientific calculators & laboratory tools'**
-  String get purchaseValueTools;
-
-  /// Lifetime value.
-  ///
-  /// In en, this message translates to:
-  /// **'Verified sources & evidence status'**
-  String get purchaseValueSources;
-
-  /// Lifetime value.
-  ///
-  /// In en, this message translates to:
-  /// **'Offline professional database'**
-  String get purchaseValueOffline;
-
-  /// Lifetime value.
-  ///
-  /// In en, this message translates to:
-  /// **'Learning & professional development'**
-  String get purchaseValueLearning;
-
-  /// Lifetime value.
-  ///
-  /// In en, this message translates to:
-  /// **'Future scientific content updates'**
-  String get purchaseValueUpdates;
-
-  /// Primary purchase button.
-  ///
-  /// In en, this message translates to:
-  /// **'Unlock FORENSIC EXPERT'**
+  /// **'See plans'**
   String get purchaseCta;
 
-  /// Below the purchase button.
+  /// Tier name.
   ///
   /// In en, this message translates to:
-  /// **'One-time purchase · No recurring subscription'**
-  String get purchaseFooter;
-
-  /// Free version section.
-  ///
-  /// In en, this message translates to:
-  /// **'Free version'**
+  /// **'Free'**
   String get purchaseFreeTitle;
 
-  /// What the free version includes.
+  /// Free tier summary.
   ///
   /// In en, this message translates to:
-  /// **'Try before you buy: a search demo, selected reference entries, selected tools and demo lessons.'**
+  /// **'Core offline reference, search and basic calculators — no account required.'**
   String get purchaseFreeBody;
 
-  /// AI is not unlimited.
+  /// Paywall note.
   ///
   /// In en, this message translates to:
-  /// **'Forensic AI is not included without limits: it has server costs. Any AI allowance will be stated clearly before purchase.'**
+  /// **'Professional AI features become available only when the AI service is connected; limits will be stated before purchase.'**
   String get purchaseAiNote;
 
-  /// Shown when lifetime is active.
+  /// Snackbar after restore.
   ///
   /// In en, this message translates to:
-  /// **'Lifetime access is active'**
+  /// **'Your subscription is active'**
   String get purchaseOwned;
 
   /// Purchase tapped while store unavailable.
@@ -1666,17 +1600,11 @@ abstract class AppLocalizations {
   /// **'Purchases are not available in this build.'**
   String get purchaseUnavailableSnack;
 
-  /// Profile value: free access.
+  /// Plan name.
   ///
   /// In en, this message translates to:
-  /// **'Free version'**
+  /// **'Free'**
   String get accessFree;
-
-  /// Profile value: lifetime.
-  ///
-  /// In en, this message translates to:
-  /// **'Lifetime'**
-  String get accessLifetime;
 
   /// Home notice while the content pack is the unreviewed pilot.
   ///
@@ -1858,16 +1786,16 @@ abstract class AppLocalizations {
   /// **'No national legal content has been loaded for {name} yet.'**
   String legalNoNational(String name);
 
-  /// Paywall card title.
+  /// Locked content title.
   ///
   /// In en, this message translates to:
-  /// **'Included in FORENSIC EXPERT Lifetime'**
+  /// **'Included in Student Pro and Professional Pro'**
   String get lockedTitle;
 
-  /// What stays open.
+  /// Locked content body.
   ///
   /// In en, this message translates to:
-  /// **'Names, warnings and sources stay open. Scientific details and the jurisdiction layer unlock with Lifetime Access.'**
+  /// **'Names, warnings and sources stay open. Scientific details and the jurisdiction layer unlock with a paid plan.'**
   String get lockedBody;
 
   /// Badge on free demo entries.
@@ -1876,16 +1804,16 @@ abstract class AppLocalizations {
   /// **'Free demo'**
   String get freeDemoBadge;
 
-  /// Badge on locked entries.
+  /// Badge.
   ///
   /// In en, this message translates to:
-  /// **'Lifetime'**
+  /// **'Pro'**
   String get lockedBadge;
 
-  /// Hidden results count.
+  /// Search.
   ///
   /// In en, this message translates to:
-  /// **'{count} more results with Lifetime'**
+  /// **'{count} more results with a paid plan'**
   String searchMoreLocked(int count);
 
   /// No real courses yet.
@@ -1924,10 +1852,10 @@ abstract class AppLocalizations {
   /// **'Purchase cancelled.'**
   String get purchaseCancelled;
 
-  /// Unlocked.
+  /// Snackbar.
   ///
   /// In en, this message translates to:
-  /// **'Lifetime access unlocked. Thank you!'**
+  /// **'Subscription activated. Thank you!'**
   String get purchaseSuccess;
 
   /// Brand status.
@@ -1936,22 +1864,22 @@ abstract class AppLocalizations {
   /// **'Name and logo: trademark clearance pending.'**
   String get aboutTrademarkPending;
 
-  /// Diagnostics (debug/profile only).
+  /// Diagnostics.
   ///
   /// In en, this message translates to:
-  /// **'Purchase: none confirmed by the store'**
+  /// **'Subscription: none confirmed by the store'**
   String get diagPurchaseNone;
 
-  /// Diagnostics (debug/profile only).
+  /// Diagnostics.
   ///
   /// In en, this message translates to:
-  /// **'Purchase: confirmed by the store only — server verification not connected (release blocker)'**
+  /// **'Subscription: confirmed by the store only — server verification not connected (release blocker)'**
   String get diagPurchaseStore;
 
-  /// Diagnostics (debug/profile only).
+  /// Diagnostics.
   ///
   /// In en, this message translates to:
-  /// **'Purchase: verified by the server'**
+  /// **'Subscription: verified by the server'**
   String get diagPurchaseServer;
 
   /// Scientific status: draft, not yet submitted for review.
@@ -6223,7 +6151,7 @@ abstract class AppLocalizations {
   /// Dialog.
   ///
   /// In en, this message translates to:
-  /// **'Bookmarks, search history, recently viewed records and lesson progress will be deleted from this device. The scientific database and purchases are not affected. There is no account: nothing is stored about you on our servers.'**
+  /// **'Bookmarks, search history, recently viewed records and lesson progress will be deleted from this device only. The scientific database, your account and store subscriptions are not affected — use “Delete account” to delete the account.'**
   String get deleteLocalDataBody;
 
   /// Button.
@@ -6237,6 +6165,630 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Local data deleted'**
   String get deleteLocalDataDone;
+
+  /// Tier name.
+  ///
+  /// In en, this message translates to:
+  /// **'Student Pro'**
+  String get tierStudentPro;
+
+  /// Tier name.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional Pro'**
+  String get tierProfessionalPro;
+
+  /// Tier name.
+  ///
+  /// In en, this message translates to:
+  /// **'Institution'**
+  String get tierInstitution;
+
+  /// Badge.
+  ///
+  /// In en, this message translates to:
+  /// **'Current plan'**
+  String get tierCurrent;
+
+  /// Feature.
+  ///
+  /// In en, this message translates to:
+  /// **'Offline scientific database with safety warnings and sources'**
+  String get tierFreeF1;
+
+  /// Feature.
+  ///
+  /// In en, this message translates to:
+  /// **'Search and selected reference entries'**
+  String get tierFreeF2;
+
+  /// Feature.
+  ///
+  /// In en, this message translates to:
+  /// **'Basic calculators'**
+  String get tierFreeF3;
+
+  /// Feature.
+  ///
+  /// In en, this message translates to:
+  /// **'Full reference: substances, methods, reagents, forensic medicine, standards, jurisdictions'**
+  String get tierStudentF1;
+
+  /// Feature.
+  ///
+  /// In en, this message translates to:
+  /// **'All courses, quizzes, flashcards and exam practice'**
+  String get tierStudentF2;
+
+  /// Feature.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlimited search results'**
+  String get tierStudentF3;
+
+  /// Feature.
+  ///
+  /// In en, this message translates to:
+  /// **'Everything in Student Pro'**
+  String get tierProF1;
+
+  /// Feature.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional calculators and laboratory tools'**
+  String get tierProF2;
+
+  /// Feature.
+  ///
+  /// In en, this message translates to:
+  /// **'Analytical methods, research and evidence tools'**
+  String get tierProF3;
+
+  /// Feature.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional AI features — when the AI service is connected'**
+  String get tierProF4;
+
+  /// Billing period.
+  ///
+  /// In en, this message translates to:
+  /// **'Monthly'**
+  String get periodMonthly;
+
+  /// Billing period.
+  ///
+  /// In en, this message translates to:
+  /// **'Yearly'**
+  String get periodYearly;
+
+  /// Billing period.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscription'**
+  String get periodUnknown;
+
+  /// Price line.
+  ///
+  /// In en, this message translates to:
+  /// **'{price} · {period}'**
+  String offerPriceLine(String price, String period);
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscribe'**
+  String get offerSubscribe;
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'Price is shown by the App Store / Google Play'**
+  String get offerPriceFromStore;
+
+  /// Apple/Google required disclosure.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscriptions renew automatically until cancelled. Payment is charged to your App Store / Google Play account. You can cancel at least 24 hours before the end of the period in your store account settings.'**
+  String get subscriptionTerms;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage subscription'**
+  String get manageSubscription;
+
+  /// Snackbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open the store subscription settings.'**
+  String get manageSubscriptionFailed;
+
+  /// Profile row.
+  ///
+  /// In en, this message translates to:
+  /// **'Plan'**
+  String get planLabel;
+
+  /// Profile row.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscription status'**
+  String get subscriptionStateLabel;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Active'**
+  String get stActive;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Expired'**
+  String get stExpired;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment issue — grace period'**
+  String get stGrace;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment issue — access paused'**
+  String get stBillingRetry;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancelled — active until {date}'**
+  String stCancelled(String date);
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancelled — active until the end of the period'**
+  String get stCancelledNoDate;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Revoked by the store'**
+  String get stRevoked;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Status unknown'**
+  String get stUnknown;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'No subscription'**
+  String get stNone;
+
+  /// Status detail.
+  ///
+  /// In en, this message translates to:
+  /// **'Renews or ends on {date}'**
+  String stRenewsOn(String date);
+
+  /// Profile note.
+  ///
+  /// In en, this message translates to:
+  /// **'An account is optional. The offline scientific reference works without signing in; an account is needed only for cloud services.'**
+  String get accountOptionalNote;
+
+  /// Banner.
+  ///
+  /// In en, this message translates to:
+  /// **'The account service is not yet connected in this build. All offline features remain available.'**
+  String get accountNotConnected;
+
+  /// Banner.
+  ///
+  /// In en, this message translates to:
+  /// **'TEST account backend — no real emails are sent and data is kept only in memory.'**
+  String get accountTestBackend;
+
+  /// Button / title.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in'**
+  String get accountSignIn;
+
+  /// Button / title.
+  ///
+  /// In en, this message translates to:
+  /// **'Create account'**
+  String get accountCreate;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign out'**
+  String get accountSignOut;
+
+  /// Snackbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Signed out'**
+  String get accountSignedOut;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Email'**
+  String get accountEmail;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Password'**
+  String get accountPassword;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm password'**
+  String get accountConfirmPassword;
+
+  /// Semantics.
+  ///
+  /// In en, this message translates to:
+  /// **'Show password'**
+  String get accountShowPassword;
+
+  /// Semantics.
+  ///
+  /// In en, this message translates to:
+  /// **'Hide password'**
+  String get accountHidePassword;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Email verified'**
+  String get accountVerified;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Email not verified'**
+  String get accountNotVerified;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Verify email'**
+  String get accountVerifyNow;
+
+  /// Checkbox.
+  ///
+  /// In en, this message translates to:
+  /// **'I accept the Terms of Use and the Privacy Policy'**
+  String get accountTermsAccept;
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'We only ask for your email. No professional, case or personal details are collected.'**
+  String get accountMinimalData;
+
+  /// Heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Password requirements'**
+  String get passwordRulesTitle;
+
+  /// Rule.
+  ///
+  /// In en, this message translates to:
+  /// **'At least {n} characters'**
+  String pwRuleMinLength(int n);
+
+  /// Rule.
+  ///
+  /// In en, this message translates to:
+  /// **'At least one letter'**
+  String get pwRuleLetter;
+
+  /// Rule.
+  ///
+  /// In en, this message translates to:
+  /// **'At least one digit'**
+  String get pwRuleDigit;
+
+  /// Rule.
+  ///
+  /// In en, this message translates to:
+  /// **'Not the same as your email'**
+  String get pwRuleNotEmail;
+
+  /// Link.
+  ///
+  /// In en, this message translates to:
+  /// **'Forgot password?'**
+  String get accountForgot;
+
+  /// Link.
+  ///
+  /// In en, this message translates to:
+  /// **'No account? Create one'**
+  String get accountNoAccount;
+
+  /// Link.
+  ///
+  /// In en, this message translates to:
+  /// **'Already have an account? Sign in'**
+  String get accountHaveAccount;
+
+  /// Screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Verify your email'**
+  String get verifyTitle;
+
+  /// Body.
+  ///
+  /// In en, this message translates to:
+  /// **'We sent a {n}-digit code to {email}. Enter it below to activate your account.'**
+  String verifyBody(int n, String email);
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Verification code'**
+  String get verifyCode;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Verify'**
+  String get verifySubmit;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Send a new code'**
+  String get verifyResend;
+
+  /// Snackbar.
+  ///
+  /// In en, this message translates to:
+  /// **'If the account needs verification, a new code has been sent.'**
+  String get verifyResent;
+
+  /// Snackbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Email verified. Your account is active.'**
+  String get verifyDone;
+
+  /// Screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset password'**
+  String get forgotTitle;
+
+  /// Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your account email. If an account exists, we will send a reset code.'**
+  String get forgotBody;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Send reset code'**
+  String get forgotSubmit;
+
+  /// Notice.
+  ///
+  /// In en, this message translates to:
+  /// **'If an account exists for this email, a reset code has been sent. It expires in {minutes} minutes.'**
+  String forgotSent(int minutes);
+
+  /// Screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a new password'**
+  String get resetTitle;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset code'**
+  String get resetCode;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'New password'**
+  String get resetNewPassword;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Set new password'**
+  String get resetSubmit;
+
+  /// Snackbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Password changed. Please sign in with the new password.'**
+  String get resetDone;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a valid email address.'**
+  String get authErrInvalidEmail;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'The password does not meet the requirements.'**
+  String get authErrWeakPassword;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Passwords do not match.'**
+  String get authErrMismatch;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Please accept the Terms of Use and the Privacy Policy.'**
+  String get authErrTerms;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Email or password is incorrect.'**
+  String get authErrCredentials;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Your email is not verified yet. Enter the code we sent.'**
+  String get authErrNotVerified;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'The code is incorrect.'**
+  String get authErrCodeInvalid;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'The code has expired. Request a new one.'**
+  String get authErrCodeExpired;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'This email is already verified. You can sign in.'**
+  String get authErrAlreadyVerified;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Too many attempts. Please wait a minute and try again.'**
+  String get authErrTooMany;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'No internet connection. Offline features keep working.'**
+  String get authErrOffline;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'The account service is temporarily unavailable. Please try again later.'**
+  String get authErrServer;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'The account service is not yet connected in this build.'**
+  String get authErrNotConfigured;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'The password is incorrect. Confirm your current password to continue.'**
+  String get authErrRecentLogin;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Please sign in first.'**
+  String get authErrNotSignedIn;
+
+  /// Screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete account'**
+  String get deleteAccountTitle;
+
+  /// Body.
+  ///
+  /// In en, this message translates to:
+  /// **'This permanently deletes your account and the data linked to it on our servers (email, sign-in sessions, synced data, cloud entitlement records). This cannot be undone.'**
+  String get deleteAccountBody;
+
+  /// Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Deleting the account does not cancel an App Store / Google Play subscription. Cancel it in your store account settings to stop future charges.'**
+  String get deleteAccountStoreNote;
+
+  /// Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Data on this device (bookmarks, history) is a separate action: “Delete data on this device”.'**
+  String get deleteAccountLocalNote;
+
+  /// Checkbox.
+  ///
+  /// In en, this message translates to:
+  /// **'I understand that this cannot be undone'**
+  String get deleteAccountUnderstand;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Current password'**
+  String get deleteAccountPassword;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete account permanently'**
+  String get deleteAccountConfirm;
+
+  /// Dialog title.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete your account?'**
+  String get deleteAccountFinalTitle;
+
+  /// Snackbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Your account has been deleted.'**
+  String get deleteAccountDone;
+
+  /// Profile row.
+  ///
+  /// In en, this message translates to:
+  /// **'AI disclaimer'**
+  String get aiDisclaimerLink;
+
+  /// Legal text.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic AI answers are generated from the app’s local, source-linked content and are not expert opinions. They may be incomplete or wrong, are not verified by a qualified human reviewer and must not be used as the sole basis for a forensic conclusion, legal decision or patient care. Always check the cited sources and consult a qualified expert.'**
+  String get aiDisclaimerBody;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Account'**
+  String get accountSection;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscription'**
+  String get subscriptionSection;
 }
 
 class _AppLocalizationsDelegate

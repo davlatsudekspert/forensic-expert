@@ -15,6 +15,7 @@ class StoreEvent {
     this.handle,
     this.purchaseId,
     this.serverVerificationData,
+    this.expiresAt,
   });
 
   final String productId;
@@ -29,16 +30,41 @@ class StoreEvent {
 
   /// Server tekshiruvi uchun dalil (Android purchase token / iOS JWS).
   final String? serverVerificationData;
+
+  /// Store bergan obuna muddati (iOS StoreKit 2 tranzaksiyasi). Android
+  /// mijoz API’si muddatni bermaydi — faqat faol obunalarni qaytaradi.
+  final DateTime? expiresAt;
+}
+
+/// Store metadata’si (narx, valyuta, davr — store’ning o‘zidan).
+class StoreProduct {
+  const StoreProduct({
+    required this.id,
+    required this.price,
+    this.currencyCode,
+    this.billingPeriod,
+  });
+
+  final String id;
+
+  /// Store formatlagan lokal narx satri.
+  final String price;
+  final String? currencyCode;
+
+  /// ISO 8601 davr (`P1M`, `P1Y`) — App Store `subscriptionPeriod` yoki
+  /// Google Play base plan `billingPeriod`. Noma’lum bo‘lsa `null`.
+  final String? billingPeriod;
 }
 
 abstract interface class StoreClient {
   Future<bool> isAvailable();
 
-  /// productId → store formatlagan lokal narx.
-  Future<Map<String, String>> localizedPrices(Set<String> productIds);
+  /// So‘ralgan mahsulotlarning store metadata’si (topilmaganlari yo‘q).
+  Future<List<StoreProduct>> queryProducts(Set<String> productIds);
 
-  /// Non-Consumable (App Store) / one-time product (Google Play).
-  Future<bool> buyNonConsumable(String productId);
+  /// Auto-renewable subscription (App Store) / subscription (Google Play).
+  /// Xarid natijasi [events] orqali keladi.
+  Future<bool> buySubscription(String productId);
 
   Future<void> restore();
 

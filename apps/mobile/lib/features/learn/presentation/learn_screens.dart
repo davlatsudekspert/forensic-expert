@@ -53,7 +53,10 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
         .where((x) => data.completedLessons.contains(x.id))
         .length;
     final lessonById = {for (final x in lessons) x.id: x};
-    final unlockedAll = ref.watch(accessProvider).hasFullAccess;
+    final unlockedAll = AccessPolicy.unlocks(
+      ProductFeature.learn,
+      ref.watch(accessProvider),
+    );
     final bookmarks = [for (final id in data.favorites) ?knowledge.byId(id)];
 
     return Scaffold(

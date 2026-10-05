@@ -1,5 +1,16 @@
+import 'dart:convert';
+
+import 'package:crypto/crypto.dart';
+
 import 'models.dart';
 import 'ports.dart';
+
+/// Audit uchun sirsiz barmoq izi (credential o‘zi yozilmaydi).
+String recordFingerprint(StorePlatform p, String originalTransactionId) =>
+    sha256
+        .convert(utf8.encode('${p.name}:$originalTransactionId'))
+        .toString()
+        .substring(0, 16);
 
 /// RG-18: server tomonida xaridni tekshirish.
 ///
@@ -14,6 +25,9 @@ import 'ports.dart';
 /// 7. Idempotentlik: bir xil kalit — bir xil natija, store’ga qayta
 ///    murojaatsiz.
 /// 8. Store javob bermasa — huquq berilmaydi (`storeUnavailable`).
+/// 9. Obuna holati (active / grace / cancelled-until-expiry / billing retry
+///    / expired / revoked) store ma’lumotidan hisoblanadi; har o‘zgarish
+///    sirsiz audit jurnaliga yoziladi; `revoked` — yakuniy.
 class PurchaseVerificationService {
   PurchaseVerificationService({
     required this.config,
@@ -76,6 +90,9 @@ class PurchaseVerificationService {
     if (state == EntitlementState.expired) {
       return const VerificationResult(VerificationOutcome.expired);
     }
+    if (state == EntitlementState.billingRetry) {
+      return const VerificationResult(VerificationOutcome.billingRetry);
+    }
     if (!t.isPurchased) {
       return const VerificationResult(VerificationOutcome.notPurchased);
     }
@@ -93,9 +110,17 @@ class PurchaseVerificationService {
       if (!existing.active) {
         return const VerificationResult(VerificationOutcome.revoked);
       }
+      // Restore / yangilanish: store’dagi so‘nggi muddat va holat.
+      final refreshed = await _transition(
+        existing,
+        state,
+        'VERIFIED',
+        expiresAt: t.expiresAt,
+        transactionId: t.transactionId,
+      );
       return VerificationResult(
         VerificationOutcome.verified,
-        entitlement: existing,
+        entitlement: refreshed,
       );
     }
     final record = EntitlementRecord(
@@ -107,6 +132,7 @@ class PurchaseVerificationService {
       grantedAt: _clock().toUtc(),
       environment: t.environment,
       expiresAt: t.expiresAt,
+      state: state,
     );
     if (!await store.insertIfAbsent(record)) {
       // Parallel so‘rov boshqa akkauntga bog‘lab ulgurdi.
@@ -123,6 +149,7 @@ class PurchaseVerificationService {
               VerificationOutcome.alreadyBoundToAnotherAccount,
             );
     }
+    await _audit(record, null, state, 'VERIFIED');
     if (t.needsAcknowledgement) {
       // Acknowledge xatosi huquqni bekor qilmaydi — qayta urinish navbati
       // (production: background job). Bu yerda xato yutilmaydi, uzatiladi.
@@ -134,10 +161,89 @@ class PurchaseVerificationService {
     );
   }
 
-  /// Akkaunt huquqlari (mijoz faqat shu javobga tayanadi).
-  Future<bool> hasLifetime(String accountId, String productId) async =>
+  Future<EntitlementRecord> _transition(
+    EntitlementRecord r,
+    EntitlementState to,
+    String reason, {
+    DateTime? expiresAt,
+    String? transactionId,
+  }) async {
+    if (!EntitlementTransitions.isAllowed(r.state, to)) return r;
+    final next = r.copyWith(
+      state: to,
+      expiresAt: expiresAt,
+      transactionId: transactionId,
+    );
+    if (next.state != r.state || next.expiresAt != r.expiresAt) {
+      await store.update(next);
+      await _audit(r, r.state, to, reason);
+    }
+    return next;
+  }
+
+  Future<void> _audit(
+    EntitlementRecord r,
+    EntitlementState? from,
+    EntitlementState to,
+    String reason,
+  ) => store.appendAudit(
+    EntitlementAuditEntry(
+      at: _clock().toUtc(),
+      platform: r.platform,
+      recordFingerprint: recordFingerprint(r.platform, r.originalTransactionId),
+      from: from,
+      to: to,
+      reason: reason,
+    ),
+  );
+
+  /// Mahsulot huquqi faolmi (mijoz faqat server javobiga tayanadi).
+  Future<bool> hasActive(String accountId, String productId) async =>
       (await store.forAccount(accountId))
           .any((r) => r.productId == productId && r.activeAt(_clock()));
+
+  /// Akkauntning normallashtirilgan huquqi — eng yuqori faol tarif.
+  Future<AccountEntitlement> entitlementFor(String accountId) async {
+    const rank = ['free', 'student_pro', 'professional_pro', 'institution'];
+    var best = AccountEntitlement.free;
+    for (final r in await store.forAccount(accountId)) {
+      if (!r.activeAt(_clock())) continue;
+      final tier = config.productTiers[r.productId];
+      if (tier == null) continue;
+      if (rank.indexOf(tier) > rank.indexOf(best.tier)) {
+        best = AccountEntitlement(
+          tier: tier,
+          state: r.state,
+          productId: r.productId,
+          expiresAt: r.expiresAt,
+        );
+      }
+    }
+    return best;
+  }
+
+  /// Store obuna hodisasi (bildirishnoma ishlovchisi chaqiradi).
+  Future<bool> applySubscriptionEvent(
+    StorePlatform platform,
+    String originalTransactionId,
+    EntitlementState to,
+    String reason, {
+    DateTime? expiresAt,
+  }) async {
+    final r = await store.byOriginalTransaction(
+      platform,
+      originalTransactionId,
+    );
+    if (r == null) return false;
+    if (to == EntitlementState.revoked) {
+      if (!r.active) return false;
+      await store.update(r.revoke(_clock().toUtc(), reason));
+      await _audit(r, r.state, to, reason);
+      return true;
+    }
+    final next = await _transition(r, to, reason, expiresAt: expiresAt);
+    return !identical(next, r);
+  }
 
   /// Restore: mijoz qurilmadagi xaridlarni yuboradi; har biri store orqali
   /// qayta tekshiriladi (replay himoyasi saqlanadi).
@@ -159,50 +265,109 @@ class PurchaseVerificationService {
   ];
 }
 
-/// Store bildirishnomalari: refund / revoke / voided purchase.
+/// Store bildirishnomalari (obuna hayot sikli + refund/revoke).
 ///
 /// * Apple App Store Server Notifications V2: `signedPayload` (JWS) —
-///   [JwsChainVerifier] bilan tekshiriladi; `notificationType`
-///   `REFUND` yoki `REVOKE` → huquq bekor qilinadi.
-/// * Google Real-time Developer Notifications (Pub/Sub push) +
-///   Voided Purchases API: push so‘rovi Pub/Sub OIDC tokeni bilan
-///   autentifikatsiya qilinadi (bu yerda port orqali tekshirilgan deb
-///   uzatiladi), `voidedPurchaseNotification` → bekor qilish.
+///   [JwsChainVerifier] bilan tekshiriladi; `notificationType` (+ `subtype`)
+///   normallashtirilgan holatga o‘tkaziladi ([appleState]).
+/// * Google Real-time Developer Notifications (Pub/Sub push, OIDC bilan
+///   autentifikatsiya — port tashqarisida): `subscriptionNotification`
+///   `notificationType` raqami ([googleState]); `voidedPurchaseNotification`
+///   → revoked. Google muddatni bildirishnomada bermaydi — ishlovchi
+///   `purchases.subscriptionsv2.get` dan olib [expiresAt] bilan uzatadi.
 class StoreNotificationHandler {
-  StoreNotificationHandler({
-    required this.store,
-    required this.appleJws,
-    Clock? clock,
-  }) : _clock = clock ?? DateTime.now;
+  StoreNotificationHandler({required this.service, required this.appleJws});
 
-  final EntitlementStore store;
+  final PurchaseVerificationService service;
   final JwsChainVerifier appleJws;
-  final Clock _clock;
 
-  static const _appleRevoking = {'REFUND', 'REVOKE'};
+  /// Apple `notificationType` / `subtype` → holat. `null` — e’tiborsiz.
+  static EntitlementState? appleState(
+    String? type,
+    String? subtype, {
+    bool autoRenew = true,
+  }) => switch (type) {
+    'SUBSCRIBED' || 'DID_RENEW' || 'OFFER_REDEEMED' => EntitlementState.active,
+    'DID_CHANGE_RENEWAL_STATUS' =>
+      autoRenew
+          ? EntitlementState.active
+          : EntitlementState.cancelledActiveUntilExpiry,
+    'DID_FAIL_TO_RENEW' =>
+      subtype == 'GRACE_PERIOD'
+          ? EntitlementState.gracePeriod
+          : EntitlementState.billingRetry,
+    'GRACE_PERIOD_EXPIRED' => EntitlementState.billingRetry,
+    'EXPIRED' => EntitlementState.expired,
+    'REFUND' || 'REVOKE' => EntitlementState.revoked,
+    _ => null,
+  };
+
+  /// Google `subscriptionNotification.notificationType` → holat.
+  static EntitlementState? googleState(int type) => switch (type) {
+    1 ||
+    2 ||
+    4 ||
+    7 => EntitlementState.active, // RECOVERED/RENEWED/PURCHASED/RESTARTED
+    3 => EntitlementState.cancelledActiveUntilExpiry, // CANCELED
+    5 => EntitlementState.billingRetry, // ON_HOLD
+    6 => EntitlementState.gracePeriod, // IN_GRACE_PERIOD
+    12 => EntitlementState.revoked, // REVOKED
+    13 => EntitlementState.expired, // EXPIRED
+    _ => null,
+  };
 
   /// Apple V2 bildirishnomasi. Imzo noto‘g‘ri bo‘lsa — xato (rad).
   Future<bool> handleApple(String signedPayload) async {
     final payload = appleJws.verify(signedPayload);
-    final type = payload['notificationType'];
-    if (!_appleRevoking.contains(type)) return false;
+    final type = payload['notificationType'] as String?;
+    final subtype = payload['subtype'] as String?;
     final data = (payload['data'] as Map?)?.cast<String, Object?>() ?? {};
-    final tx = appleJws.verify(data['signedTransactionInfo']! as String);
-    return _revoke(
+    final txJws = data['signedTransactionInfo'];
+    if (txJws is! String) return false;
+    final tx = appleJws.verify(txJws);
+    final renewalJws = data['signedRenewalInfo'];
+    final renewal = renewalJws is String ? appleJws.verify(renewalJws) : null;
+    final state = appleState(
+      type,
+      subtype,
+      autoRenew: renewal == null || renewal['autoRenewStatus'] != 0,
+    );
+    if (state == null) return false;
+    final exp = tx['expiresDate'];
+    return service.applySubscriptionEvent(
       StorePlatform.appStore,
       tx['originalTransactionId']! as String,
-      '$type',
+      state,
+      type!,
+      expiresAt: exp is int
+          ? DateTime.fromMillisecondsSinceEpoch(exp, isUtc: true)
+          : null,
     );
   }
 
-  /// Google RTDN — autentifikatsiyadan o‘tgan push’dan purchase token.
-  Future<bool> handleGoogleVoided(String purchaseToken) =>
-      _revoke(StorePlatform.googlePlay, purchaseToken, 'VOIDED');
-
-  Future<bool> _revoke(StorePlatform p, String original, String reason) async {
-    final r = await store.byOriginalTransaction(p, original);
-    if (r == null || !r.active) return false;
-    await store.update(r.revoke(_clock().toUtc(), reason));
-    return true;
+  /// Google RTDN obuna bildirishnomasi (autentifikatsiyadan o‘tgan push).
+  Future<bool> handleGoogleSubscription(
+    String purchaseToken,
+    int notificationType, {
+    DateTime? expiresAt,
+  }) async {
+    final state = googleState(notificationType);
+    if (state == null) return false;
+    return service.applySubscriptionEvent(
+      StorePlatform.googlePlay,
+      purchaseToken,
+      state,
+      'RTDN_$notificationType',
+      expiresAt: expiresAt,
+    );
   }
+
+  /// Google Voided Purchases — refund / chargeback.
+  Future<bool> handleGoogleVoided(String purchaseToken) =>
+      service.applySubscriptionEvent(
+        StorePlatform.googlePlay,
+        purchaseToken,
+        EntitlementState.revoked,
+        'VOIDED',
+      );
 }

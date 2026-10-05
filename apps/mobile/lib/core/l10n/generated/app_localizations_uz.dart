@@ -192,7 +192,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get appVersionLabel => 'Ilova versiyasi';
 
   @override
-  String get legalSection => 'Huquqiy ma’lumot';
+  String get legalSection => 'Huquqiy va xavfsizlik';
 
   @override
   String get scientificDisclaimerLink => 'Ilmiy ogohlantirish';
@@ -704,7 +704,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get profileSectionPreferences => 'Sozlamalar';
 
   @override
-  String get profileSectionAccount => 'Akkaunt va xaridlar';
+  String get profileSectionAccount => 'Qurilmadagi ma’lumotlar';
 
   @override
   String get profileSectionAbout => 'Ilova haqida va huquqiy ma’lumot';
@@ -738,9 +738,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String get deleteAccount => 'Akkauntni o‘chirish';
 
   @override
-  String get accountNone => 'Akkauntsiz — ilova tizimga kirmasdan ishlaydi.';
-
-  @override
   String get legalDraftNotice =>
       'Qoralama. Hujjat professional yuridik tekshiruvdan so‘ng e’lon qilinadi.';
 
@@ -758,13 +755,13 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get storeNotConnected =>
-      'Bu yig‘mada do‘kon ulanmagan, shuning uchun xarid qilib bo‘lmaydi.';
+      'Bu yig‘mada App Store / Google Play ulanmagan. Narx va xarid faqat do‘kon bergandagina paydo bo‘ladi.';
 
   @override
-  String get restorePurchases => 'Xaridni tiklash';
+  String get restorePurchases => 'Xaridlarni tiklash';
 
   @override
-  String get restoreNothing => 'Tiklanadigan xarid yo‘q.';
+  String get restoreNothing => 'Tiklanadigan faol obuna yo‘q.';
 
   @override
   String get subscriptionSafetyNote =>
@@ -826,68 +823,30 @@ class AppLocalizationsUz extends AppLocalizations {
   String get detailChangeJurisdiction => 'Yurisdiksiyani o‘zgartirish';
 
   @override
-  String get purchaseTitle => 'Umrbod kirish';
+  String get purchaseTitle => 'Tariflar';
 
   @override
-  String get purchaseOneTime => 'Bir martalik xarid';
+  String get purchaseCta => 'Tariflarni ko‘rish';
 
   @override
-  String purchasePriceLine(String price) {
-    return '$price · Bir martalik xarid';
-  }
-
-  @override
-  String get purchaseReferencePriceNote =>
-      'Taxminiy narx. Yakuniy narxni sizning valyutangizda App Store yoki Google Play ko‘rsatadi.';
-
-  @override
-  String get purchaseValueReference =>
-      'Professional sud-ekspertiza ma’lumotnomasi';
-
-  @override
-  String get purchaseValueTools =>
-      'Ilmiy kalkulyatorlar va laboratoriya vositalari';
-
-  @override
-  String get purchaseValueSources => 'Tekshirilgan manbalar va dalil holati';
-
-  @override
-  String get purchaseValueOffline => 'Oflayn professional baza';
-
-  @override
-  String get purchaseValueLearning => 'Ta’lim va kasbiy rivojlanish';
-
-  @override
-  String get purchaseValueUpdates => 'Kelgusi ilmiy kontent yangilanishlari';
-
-  @override
-  String get purchaseCta => 'FORENSIC EXPERT’ni ochish';
-
-  @override
-  String get purchaseFooter => 'Bir martalik xarid · Takroriy obuna yo‘q';
-
-  @override
-  String get purchaseFreeTitle => 'Bepul versiya';
+  String get purchaseFreeTitle => 'Bepul';
 
   @override
   String get purchaseFreeBody =>
-      'Xariddan oldin sinab ko‘ring: qidiruv demosi, tanlangan ma’lumotnoma yozuvlari, ayrim vositalar va demo darslar.';
+      'Asosiy oflayn ma’lumotnoma, qidiruv va oddiy kalkulyatorlar — akkauntsiz.';
 
   @override
   String get purchaseAiNote =>
-      'Forensic AI cheklovsiz kirmaydi: uning server xarajati bor. AI hajmi xariddan oldin aniq ko‘rsatiladi.';
+      'Professional AI funksiyalari faqat AI xizmati ulanganda ishlaydi; cheklovlar xariddan oldin ko‘rsatiladi.';
 
   @override
-  String get purchaseOwned => 'Umrbod kirish faol';
+  String get purchaseOwned => 'Obunangiz faol';
 
   @override
   String get purchaseUnavailableSnack => 'Bu yig‘mada xarid qilib bo‘lmaydi.';
 
   @override
-  String get accessFree => 'Bepul versiya';
-
-  @override
-  String get accessLifetime => 'Umrbod';
+  String get accessFree => 'Bepul';
 
   @override
   String get homePilotNotice =>
@@ -1003,21 +962,21 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String get lockedTitle => 'FORENSIC EXPERT Lifetime tarkibida';
+  String get lockedTitle => 'Student Pro va Professional Pro tarkibida';
 
   @override
   String get lockedBody =>
-      'Nomlar, ogohlantirishlar va manbalar ochiq qoladi. Ilmiy tafsilotlar va yurisdiksiya qatlami Lifetime Access bilan ochiladi.';
+      'Nomlar, ogohlantirishlar va manbalar ochiq qoladi. Ilmiy tafsilotlar va yurisdiksiya qatlami pullik tarifda ochiladi.';
 
   @override
   String get freeDemoBadge => 'Bepul demo';
 
   @override
-  String get lockedBadge => 'Lifetime';
+  String get lockedBadge => 'Pro';
 
   @override
   String searchMoreLocked(int count) {
-    return 'Lifetime bilan yana $count ta natija';
+    return 'Pullik tarifda yana $count ta natija';
   }
 
   @override
@@ -1040,21 +999,21 @@ class AppLocalizationsUz extends AppLocalizations {
   String get purchaseCancelled => 'Xarid bekor qilindi.';
 
   @override
-  String get purchaseSuccess => 'Umrbod kirish ochildi. Rahmat!';
+  String get purchaseSuccess => 'Obuna faollashtirildi. Rahmat!';
 
   @override
   String get aboutTrademarkPending =>
       'Nom va logo: tovar belgisi tekshiruvi yakunlanmagan.';
 
   @override
-  String get diagPurchaseNone => 'Xarid: do‘kon tasdiqlamagan';
+  String get diagPurchaseNone => 'Obuna: do‘kon tasdiqlamagan';
 
   @override
   String get diagPurchaseStore =>
-      'Xarid: faqat do‘kon tasdiqlagan — server tekshiruvi ulanmagan (release blocker)';
+      'Obuna: faqat do‘kon tasdiqlagan — server tekshiruvi ulanmagan (release blocker)';
 
   @override
-  String get diagPurchaseServer => 'Xarid: server tomonidan tekshirilgan';
+  String get diagPurchaseServer => 'Obuna: server tomonidan tekshirilgan';
 
   @override
   String get statusDraft => 'Qoralama';
@@ -3387,11 +3346,361 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get deleteLocalDataBody =>
-      'Saralanganlar, qidiruv tarixi, yaqinda ko‘rilgan yozuvlar va darslar holati shu qurilmadan o‘chiriladi. Ilmiy baza va xaridlarga ta’sir qilmaydi. Akkaunt yo‘q: serverlarimizda siz haqingizda hech narsa saqlanmaydi.';
+      'Saralanganlar, qidiruv tarixi, yaqinda ko‘rilgan yozuvlar va darslar holati faqat shu qurilmadan o‘chiriladi. Ilmiy baza, akkauntingiz va do‘kondagi obunalarga ta’sir qilmaydi — akkauntni o‘chirish uchun «Akkauntni o‘chirish» dan foydalaning.';
 
   @override
   String get deleteLocalDataConfirm => 'O‘chirish';
 
   @override
   String get deleteLocalDataDone => 'Qurilmadagi ma’lumotlar o‘chirildi';
+
+  @override
+  String get tierStudentPro => 'Student Pro';
+
+  @override
+  String get tierProfessionalPro => 'Professional Pro';
+
+  @override
+  String get tierInstitution => 'Muassasa';
+
+  @override
+  String get tierCurrent => 'Joriy tarif';
+
+  @override
+  String get tierFreeF1 => 'Ogohlantirish va manbalari bilan oflayn ilmiy baza';
+
+  @override
+  String get tierFreeF2 => 'Qidiruv va tanlangan ma’lumotnoma yozuvlari';
+
+  @override
+  String get tierFreeF3 => 'Oddiy kalkulyatorlar';
+
+  @override
+  String get tierStudentF1 =>
+      'To‘liq ma’lumotnoma: moddalar, metodlar, reaktivlar, sud tibbiyoti, standartlar, yurisdiksiyalar';
+
+  @override
+  String get tierStudentF2 =>
+      'Barcha kurslar, testlar, kartochkalar va imtihonga tayyorgarlik';
+
+  @override
+  String get tierStudentF3 => 'Cheklanmagan qidiruv natijalari';
+
+  @override
+  String get tierProF1 => 'Student Pro dagi hammasi';
+
+  @override
+  String get tierProF2 =>
+      'Professional kalkulyatorlar va laboratoriya vositalari';
+
+  @override
+  String get tierProF3 => 'Analitik metodlar, tadqiqot va dalillar vositalari';
+
+  @override
+  String get tierProF4 => 'Professional AI funksiyalari — AI xizmati ulanganda';
+
+  @override
+  String get periodMonthly => 'Oylik';
+
+  @override
+  String get periodYearly => 'Yillik';
+
+  @override
+  String get periodUnknown => 'Obuna';
+
+  @override
+  String offerPriceLine(String price, String period) {
+    return '$price · $period';
+  }
+
+  @override
+  String get offerSubscribe => 'Obuna bo‘lish';
+
+  @override
+  String get offerPriceFromStore => 'Narxni App Store / Google Play ko‘rsatadi';
+
+  @override
+  String get subscriptionTerms =>
+      'Obuna bekor qilinmaguncha avtomatik yangilanadi. To‘lov App Store / Google Play akkauntingizdan olinadi. Davr tugashidan kamida 24 soat oldin do‘kon akkaunti sozlamalarida bekor qilishingiz mumkin.';
+
+  @override
+  String get manageSubscription => 'Obunani boshqarish';
+
+  @override
+  String get manageSubscriptionFailed =>
+      'Do‘kondagi obuna sozlamalarini ochib bo‘lmadi.';
+
+  @override
+  String get planLabel => 'Tarif';
+
+  @override
+  String get subscriptionStateLabel => 'Obuna holati';
+
+  @override
+  String get stActive => 'Faol';
+
+  @override
+  String get stExpired => 'Muddati tugagan';
+
+  @override
+  String get stGrace => 'To‘lov muammosi — imtiyozli davr';
+
+  @override
+  String get stBillingRetry => 'To‘lov muammosi — kirish to‘xtatilgan';
+
+  @override
+  String stCancelled(String date) {
+    return 'Bekor qilingan — $date gacha amal qiladi';
+  }
+
+  @override
+  String get stCancelledNoDate =>
+      'Bekor qilingan — davr oxirigacha amal qiladi';
+
+  @override
+  String get stRevoked => 'Do‘kon tomonidan bekor qilingan';
+
+  @override
+  String get stUnknown => 'Holat noma’lum';
+
+  @override
+  String get stNone => 'Obuna yo‘q';
+
+  @override
+  String stRenewsOn(String date) {
+    return 'Yangilanish yoki tugash sanasi: $date';
+  }
+
+  @override
+  String get accountOptionalNote =>
+      'Akkaunt ixtiyoriy. Oflayn ilmiy ma’lumotnoma tizimga kirmasdan ishlaydi; akkaunt faqat bulut xizmatlari uchun kerak.';
+
+  @override
+  String get accountNotConnected =>
+      'Bu yig‘mada akkaunt xizmati hali ulanmagan. Barcha oflayn funksiyalar ishlaydi.';
+
+  @override
+  String get accountTestBackend =>
+      'TEST akkaunt serveri — haqiqiy xat yuborilmaydi, ma’lumot faqat xotirada.';
+
+  @override
+  String get accountSignIn => 'Kirish';
+
+  @override
+  String get accountCreate => 'Akkaunt yaratish';
+
+  @override
+  String get accountSignOut => 'Chiqish';
+
+  @override
+  String get accountSignedOut => 'Akkauntdan chiqildi';
+
+  @override
+  String get accountEmail => 'Email';
+
+  @override
+  String get accountPassword => 'Parol';
+
+  @override
+  String get accountConfirmPassword => 'Parolni tasdiqlang';
+
+  @override
+  String get accountShowPassword => 'Parolni ko‘rsatish';
+
+  @override
+  String get accountHidePassword => 'Parolni yashirish';
+
+  @override
+  String get accountVerified => 'Email tasdiqlangan';
+
+  @override
+  String get accountNotVerified => 'Email tasdiqlanmagan';
+
+  @override
+  String get accountVerifyNow => 'Emailni tasdiqlash';
+
+  @override
+  String get accountTermsAccept =>
+      'Foydalanish shartlari va Maxfiylik siyosatini qabul qilaman';
+
+  @override
+  String get accountMinimalData =>
+      'Faqat email so‘raladi. Kasbiy, ish bo‘yicha yoki shaxsiy ma’lumot yig‘ilmaydi.';
+
+  @override
+  String get passwordRulesTitle => 'Parol talablari';
+
+  @override
+  String pwRuleMinLength(int n) {
+    return 'Kamida $n ta belgi';
+  }
+
+  @override
+  String get pwRuleLetter => 'Kamida bitta harf';
+
+  @override
+  String get pwRuleDigit => 'Kamida bitta raqam';
+
+  @override
+  String get pwRuleNotEmail => 'Email bilan bir xil emas';
+
+  @override
+  String get accountForgot => 'Parolni unutdingizmi?';
+
+  @override
+  String get accountNoAccount => 'Akkaunt yo‘qmi? Yarating';
+
+  @override
+  String get accountHaveAccount => 'Akkauntingiz bormi? Kiring';
+
+  @override
+  String get verifyTitle => 'Emailni tasdiqlang';
+
+  @override
+  String verifyBody(int n, String email) {
+    return '$email manziliga $n xonali kod yubordik. Akkauntni faollashtirish uchun uni kiriting.';
+  }
+
+  @override
+  String get verifyCode => 'Tasdiqlash kodi';
+
+  @override
+  String get verifySubmit => 'Tasdiqlash';
+
+  @override
+  String get verifyResend => 'Yangi kod yuborish';
+
+  @override
+  String get verifyResent =>
+      'Agar akkaunt tasdiqlanishi kerak bo‘lsa, yangi kod yuborildi.';
+
+  @override
+  String get verifyDone => 'Email tasdiqlandi. Akkauntingiz faol.';
+
+  @override
+  String get forgotTitle => 'Parolni tiklash';
+
+  @override
+  String get forgotBody =>
+      'Akkaunt emailini kiriting. Agar akkaunt mavjud bo‘lsa, tiklash kodini yuboramiz.';
+
+  @override
+  String get forgotSubmit => 'Tiklash kodini yuborish';
+
+  @override
+  String forgotSent(int minutes) {
+    return 'Bu email uchun akkaunt mavjud bo‘lsa, tiklash kodi yuborildi. U $minutes daqiqa amal qiladi.';
+  }
+
+  @override
+  String get resetTitle => 'Yangi parol tanlang';
+
+  @override
+  String get resetCode => 'Tiklash kodi';
+
+  @override
+  String get resetNewPassword => 'Yangi parol';
+
+  @override
+  String get resetSubmit => 'Yangi parolni saqlash';
+
+  @override
+  String get resetDone => 'Parol o‘zgartirildi. Yangi parol bilan kiring.';
+
+  @override
+  String get authErrInvalidEmail => 'To‘g‘ri email manzilini kiriting.';
+
+  @override
+  String get authErrWeakPassword => 'Parol talablarga javob bermaydi.';
+
+  @override
+  String get authErrMismatch => 'Parollar mos emas.';
+
+  @override
+  String get authErrTerms =>
+      'Foydalanish shartlari va Maxfiylik siyosatini qabul qiling.';
+
+  @override
+  String get authErrCredentials => 'Email yoki parol noto‘g‘ri.';
+
+  @override
+  String get authErrNotVerified =>
+      'Email hali tasdiqlanmagan. Yuborilgan kodni kiriting.';
+
+  @override
+  String get authErrCodeInvalid => 'Kod noto‘g‘ri.';
+
+  @override
+  String get authErrCodeExpired => 'Kod muddati tugagan. Yangisini so‘rang.';
+
+  @override
+  String get authErrAlreadyVerified =>
+      'Bu email allaqachon tasdiqlangan. Kirishingiz mumkin.';
+
+  @override
+  String get authErrTooMany =>
+      'Urinishlar juda ko‘p. Bir daqiqa kutib, qayta urinib ko‘ring.';
+
+  @override
+  String get authErrOffline =>
+      'Internet aloqasi yo‘q. Oflayn funksiyalar ishlashda davom etadi.';
+
+  @override
+  String get authErrServer =>
+      'Akkaunt xizmati vaqtincha ishlamayapti. Keyinroq qayta urinib ko‘ring.';
+
+  @override
+  String get authErrNotConfigured =>
+      'Bu yig‘mada akkaunt xizmati hali ulanmagan.';
+
+  @override
+  String get authErrRecentLogin =>
+      'Parol noto‘g‘ri. Davom etish uchun joriy parolni tasdiqlang.';
+
+  @override
+  String get authErrNotSignedIn => 'Avval akkauntga kiring.';
+
+  @override
+  String get deleteAccountTitle => 'Akkauntni o‘chirish';
+
+  @override
+  String get deleteAccountBody =>
+      'Akkauntingiz va serverlarimizdagi unga bog‘liq ma’lumotlar (email, kirish sessiyalari, sinxronlangan ma’lumotlar, bulutdagi huquq yozuvlari) butunlay o‘chiriladi. Buni qaytarib bo‘lmaydi.';
+
+  @override
+  String get deleteAccountStoreNote =>
+      'Akkauntni o‘chirish App Store / Google Play obunasini bekor qilmaydi. Keyingi to‘lovlarni to‘xtatish uchun uni do‘kon akkaunti sozlamalarida bekor qiling.';
+
+  @override
+  String get deleteAccountLocalNote =>
+      'Qurilmadagi ma’lumotlar (saralanganlar, tarix) alohida amal: «Qurilmadagi ma’lumotlarni o‘chirish».';
+
+  @override
+  String get deleteAccountUnderstand =>
+      'Buni qaytarib bo‘lmasligini tushunaman';
+
+  @override
+  String get deleteAccountPassword => 'Joriy parol';
+
+  @override
+  String get deleteAccountConfirm => 'Akkauntni butunlay o‘chirish';
+
+  @override
+  String get deleteAccountFinalTitle => 'Akkaunt o‘chirilsinmi?';
+
+  @override
+  String get deleteAccountDone => 'Akkauntingiz o‘chirildi.';
+
+  @override
+  String get aiDisclaimerLink => 'AI bo‘yicha ogohlantirish';
+
+  @override
+  String get aiDisclaimerBody =>
+      'Forensic AI javoblari ilovadagi manbali lokal kontent asosida tuziladi va ekspert xulosasi emas. Ular to‘liq bo‘lmasligi yoki xato bo‘lishi mumkin, malakali reviewer tomonidan tekshirilmagan va sud-ekspert xulosasi, huquqiy qaror yoki davolash uchun yagona asos bo‘lmasligi kerak. Har doim keltirilgan manbalarni tekshiring va malakali ekspert bilan maslahatlashing.';
+
+  @override
+  String get accountSection => 'Akkaunt';
+
+  @override
+  String get subscriptionSection => 'Obuna';
 }

@@ -4,6 +4,8 @@
 
 ## Tariflar
 
+> **Yangilandi (release completion):** obuna modeli va akkaunt — `AUTH_AND_SUBSCRIPTIONS.md`, `STORE_PRODUCT_SETUP.md`. Quyidagi jadval PHASE 11 holati.
+
 | Daraja | Holat | Store mahsuloti |
 |---|---|---|
 | Free | faol | — |

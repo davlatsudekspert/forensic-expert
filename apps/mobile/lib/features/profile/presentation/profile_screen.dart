@@ -15,8 +15,8 @@ import '../../../core/perf/startup_metrics.dart';
 import '../../../core/settings/app_settings.dart';
 import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/fe_components.dart';
-import '../../../domain/ports/backend_ports.dart';
 import '../../../domain/ports/billing_ports.dart';
+import 'subscription_ui.dart';
 
 class ProfileScreen extends ConsumerWidget {
   const ProfileScreen({super.key});
@@ -28,7 +28,9 @@ class ProfileScreen extends ConsumerWidget {
     final settings = ref.watch(settingsControllerProvider);
     final controller = ref.read(settingsControllerProvider.notifier);
     final content = ref.watch(contentStatusProvider);
-    final auth = ref.watch(authRepositoryProvider).current;
+    final authRepo = ref.watch(authRepositoryProvider);
+    final authState = ref.watch(authStateProvider);
+    final access = ref.watch(accessProvider);
     final t = Theme.of(context).textTheme;
     final lang = Localizations.localeOf(context).languageCode;
     final resolver = ref.watch(jurisdictionResolverProvider);
@@ -129,34 +131,117 @@ class ProfileScreen extends ConsumerWidget {
                     l.contrastSystemHint,
                     style: t.bodySmall?.copyWith(color: c.textSecondary),
                   ),
-                  FeSectionHeader(l.profileSectionAccount),
+                  FeSectionHeader(l.accountSection),
+                  if (!authState.signedIn) ...[
+                    Text(
+                      l.accountOptionalNote,
+                      key: const Key('profile.accountOptional'),
+                      style: t.bodyMedium?.copyWith(color: c.textSecondary),
+                    ),
+                    if (!authRepo.isConfigured) ...[
+                      const SizedBox(height: FeSpace.xs),
+                      FeBanner(
+                        key: const Key('profile.accountNotConnected'),
+                        icon: Icons.cloud_off_outlined,
+                        text: l.accountNotConnected,
+                      ),
+                    ],
+                    _Row(
+                      key: const Key('profile.signIn'),
+                      icon: Icons.login,
+                      title: l.accountSignIn,
+                      onTap: () => context.push(Routes.accountSignIn),
+                    ),
+                    _Row(
+                      key: const Key('profile.register'),
+                      icon: Icons.person_add_alt,
+                      title: l.accountCreate,
+                      onTap: () => context.push(Routes.accountRegister),
+                    ),
+                  ] else ...[
+                    _Row(
+                      key: const Key('profile.accountEmail'),
+                      icon: Icons.person_outline,
+                      title: authState.account!.email,
+                      value: authState.account!.emailVerified
+                          ? l.accountVerified
+                          : l.accountNotVerified,
+                    ),
+                    if (!authState.account!.emailVerified)
+                      _Row(
+                        key: const Key('profile.verify'),
+                        icon: Icons.mark_email_unread_outlined,
+                        title: l.accountVerifyNow,
+                        onTap: () => context.push(
+                          Routes.accountVerify,
+                          extra: authState.account!.email,
+                        ),
+                      ),
+                    _Row(
+                      key: const Key('profile.signOut'),
+                      icon: Icons.logout,
+                      title: l.accountSignOut,
+                      onTap: () async {
+                        final messenger = ScaffoldMessenger.of(context);
+                        await authRepo.signOut();
+                        messenger.showSnackBar(
+                          SnackBar(content: Text(l.accountSignedOut)),
+                        );
+                      },
+                    ),
+                    // Apple 5.1.1(v), Google Play account deletion.
+                    _Row(
+                      key: const Key('profile.deleteAccount'),
+                      icon: Icons.person_remove_outlined,
+                      title: l.deleteAccount,
+                      onTap: () => context.push(Routes.accountDelete),
+                    ),
+                  ],
+                  FeSectionHeader(l.subscriptionSection),
                   _Row(
                     key: const Key('profile.purchase'),
                     icon: Icons.workspace_premium_outlined,
-                    title: l.purchaseTitle,
-                    value:
-                        ref
-                            .watch(entitlementServiceProvider)
-                            .current
-                            .hasFullAccess
-                        ? l.accessLifetime
-                        : l.accessFree,
-                    onTap: () => context.go(Routes.purchase),
+                    title: l.planLabel,
+                    value: tierLabel(l, access.effectiveTier),
+                    onTap: () => context.push(Routes.purchase),
                   ),
                   _Row(
-                    icon: Icons.person_outline,
-                    title: l.profileTitle,
-                    value: l.accountNone,
+                    key: const Key('profile.subscriptionStatus'),
+                    icon: Icons.event_repeat_outlined,
+                    title: l.subscriptionStateLabel,
+                    value: subscriptionStatusLabel(context, access),
                   ),
-                  // Akkaunt tizimi paydo bo‘lganda ko‘rinadi (Apple 5.1.1(v),
-                  // Google Play account deletion).
-                  if (auth.status == AuthStatus.signedIn)
+                  _Row(
+                    key: const Key('profile.restore'),
+                    icon: Icons.restore,
+                    title: l.restorePurchases,
+                    onTap: () async {
+                      final messenger = ScaffoldMessenger.of(context);
+                      final e = await ref
+                          .read(entitlementServiceProvider)
+                          .restore();
+                      messenger.showSnackBar(
+                        SnackBar(
+                          content: Text(
+                            e.effectiveTier == PlanTier.free
+                                ? l.restoreNothing
+                                : l.purchaseOwned,
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                  if (access.effectiveTier != PlanTier.free)
                     _Row(
-                      key: const Key('profile.deleteAccount'),
-                      icon: Icons.delete_outline,
-                      title: l.deleteAccount,
-                      onTap: () {},
+                      key: const Key('profile.manage'),
+                      icon: Icons.open_in_new,
+                      title: l.manageSubscription,
+                      onTap: () => openManageSubscription(
+                        context,
+                        productId: access.productId,
+                      ),
                     ),
+                  FeSectionHeader(l.profileSectionAccount),
                   _Row(
                     key: const Key('profile.deleteLocalData'),
                     icon: Icons.delete_sweep_outlined,
@@ -222,6 +307,12 @@ class ProfileScreen extends ConsumerWidget {
                     icon: Icons.gavel_outlined,
                     title: l.scientificDisclaimerLink,
                     onTap: () => context.go(Routes.profileDisclaimer),
+                  ),
+                  _Row(
+                    key: const Key('profile.aiDisclaimer'),
+                    icon: Icons.auto_awesome_outlined,
+                    title: l.aiDisclaimerLink,
+                    onTap: () => context.go(Routes.aiDisclaimer),
                   ),
                   _Row(
                     key: const Key('profile.licenses'),

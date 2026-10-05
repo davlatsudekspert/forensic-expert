@@ -72,5 +72,27 @@ void main() {
         contains('ITSAppUsesNonExemptEncryption'),
       );
     });
+
+    test('release: INTERNET (faqat HTTPS), email va xarid tarixi e’lon '
+        'qilingan, kuzatuv yo‘q', () {
+      final m = File('android/app/src/main/AndroidManifest.xml')
+          .readAsStringSync();
+      expect(m, contains('android.permission.INTERNET'));
+      expect(m, contains('android:usesCleartextTraffic="false"'));
+      final p = File('ios/Runner/PrivacyInfo.xcprivacy').readAsStringSync();
+      expect(p, contains('NSPrivacyCollectedDataTypeEmailAddress'));
+      expect(p, contains('NSPrivacyCollectedDataTypePurchaseHistory'));
+      expect(
+        p,
+        isNot(
+          contains('NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising'),
+        ),
+      );
+      expect(
+        RegExp(r'<key>NSPrivacyCollectedDataTypeTracking</key>\s*<true/>')
+            .hasMatch(p),
+        isFalse,
+      );
+    });
   });
 }

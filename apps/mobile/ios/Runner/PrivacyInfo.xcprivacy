@@ -2,10 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <!--
   FORENSIC EXPERT privacy manifest (RG-08 draft — owner/legal confirmation required).
-  The app is offline-first: no analytics SDK, no advertising, no tracking, no
-  account system. Purchases are processed by Apple (StoreKit). Local settings are
-  stored with UserDefaults (shared_preferences), declared below with reason CA92.1
-  (app-only access). Third-party plugins ship their own manifests.
+  The app is offline-first: no analytics SDK, no advertising, no tracking.
+  Optional account: only the email address is collected (linked to the user,
+  app functionality only). Subscriptions are processed by Apple (StoreKit); the
+  backend stores purchase history to verify entitlements. Local settings use
+  UserDefaults (CA92.1); the refresh token is stored in the Keychain.
+  Third-party plugins ship their own manifests.
 -->
 <plist version="1.0">
 <dict>
@@ -14,7 +16,32 @@
 	<key>NSPrivacyTrackingDomains</key>
 	<array/>
 	<key>NSPrivacyCollectedDataTypes</key>
-	<array/>
+	<array>
+		<dict>
+			<key>NSPrivacyCollectedDataType</key>
+			<string>NSPrivacyCollectedDataTypeEmailAddress</string>
+			<key>NSPrivacyCollectedDataTypeLinked</key>
+			<true/>
+			<key>NSPrivacyCollectedDataTypeTracking</key>
+			<false/>
+			<key>NSPrivacyCollectedDataTypePurposes</key>
+			<array>
+				<string>NSPrivacyCollectedDataTypePurposeAppFunctionality</string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSPrivacyCollectedDataType</key>
+			<string>NSPrivacyCollectedDataTypePurchaseHistory</string>
+			<key>NSPrivacyCollectedDataTypeLinked</key>
+			<true/>
+			<key>NSPrivacyCollectedDataTypeTracking</key>
+			<false/>
+			<key>NSPrivacyCollectedDataTypePurposes</key>
+			<array>
+				<string>NSPrivacyCollectedDataTypePurposeAppFunctionality</string>
+			</array>
+		</dict>
+	</array>
 	<key>NSPrivacyAccessedAPITypes</key>
 	<array>
 		<dict>

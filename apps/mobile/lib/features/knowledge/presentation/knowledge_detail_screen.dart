@@ -15,6 +15,7 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../core/widgets/fe_data_components.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
 import '../../../domain/library/library_models.dart';
+import '../../../domain/ports/billing_ports.dart';
 import '../../common/favorite_button.dart';
 import '../../common/view_recorder.dart';
 import '../../evidence/evidence_strings.dart';
@@ -48,7 +49,11 @@ class KnowledgeDetailScreen extends ConsumerWidget {
       );
     }
     final unlocked =
-        e.access == EntryAccess.free || ref.watch(accessProvider).hasFullAccess;
+        e.access == EntryAccess.free ||
+        AccessPolicy.unlocks(
+          ProductFeature.verifiedReferences,
+          ref.watch(accessProvider),
+        );
     // Bir xil manba jumlasi sahifada bir marta: claim (status va dalil
     // darajasi bilan) tuzilgan izohdan ustun; retsept qadami esa claim’dan.
     final recipeSteps = {

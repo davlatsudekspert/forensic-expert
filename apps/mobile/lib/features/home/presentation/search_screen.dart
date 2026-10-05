@@ -225,7 +225,10 @@ class _Results extends ConsumerWidget {
     final knowledge = ref.watch(knowledgeRepositoryProvider);
     final evidence = ref.watch(evidenceDataProvider);
     final lang = Localizations.localeOf(context).languageCode;
-    final unlocked = ref.watch(accessProvider).hasFullAccess;
+    final unlocked = AccessPolicy.unlocks(
+      ProductFeature.globalSearch,
+      ref.watch(accessProvider),
+    );
     const freeLimit = AccessPolicy.freeSearchResultsPerGroup;
 
     String groupTitle(SearchGroup g) => switch (g) {

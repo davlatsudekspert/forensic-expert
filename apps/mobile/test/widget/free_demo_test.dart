@@ -5,7 +5,7 @@ import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
 import 'package:forensic_expert/domain/library/library_models.dart';
-import 'package:forensic_expert/features/profile/presentation/purchase_screen.dart';
+import 'package:forensic_expert/features/profile/presentation/paywall_screen.dart';
 
 import '../helpers/fake_store.dart';
 import '../helpers/pump_app.dart';
@@ -34,7 +34,7 @@ void main() {
     expect(find.byKey(const Key('search.more.substances')), findsOneWidget);
     await tester.tap(find.byKey(const Key('search.more.substances')));
     await tester.pumpAndSettle();
-    expect(find.byType(PurchaseScreen), findsOneWidget);
+    expect(find.byType(PaywallScreen), findsOneWidget);
   });
 
   testWidgets('qidiruv: Lifetime egasi — cheklovsiz', (tester) async {
@@ -55,7 +55,7 @@ void main() {
     );
     await tester.tap(find.byKey(const Key('learn.course.TEST-COURSE-FM')));
     await tester.pumpAndSettle();
-    expect(find.byType(PurchaseScreen), findsOneWidget);
+    expect(find.byType(PaywallScreen), findsOneWidget);
   });
 
   testWidgets('Tools: C₁V₁ bepul demoda ochiq', (tester) async {

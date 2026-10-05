@@ -7,9 +7,13 @@ import '../../domain/ports/billing_ports.dart';
 /// Backend orqali xaridni tekshirish (klient tomoni).
 ///
 /// Kontrakt (`docs/12_PURCHASE_VERIFICATION.md`):
-/// `POST {endpoint}` JSON
+/// `POST {endpoint}` JSON (+ `Authorization: Bearer <akkaunt tokeni>`, agar
+/// foydalanuvchi tizimga kirgan bo‘lsa)
 /// `{platform, product_id, purchase_id, verification_data, bundle_id}` →
-/// `200 {"status": "verified" | "rejected"}`.
+/// `200 {"status": "verified" | "rejected", "entitlement_status":
+/// "active" | "grace_period" | "billing_retry" |
+/// "cancelled_active_until_expiry" | "expired" | "revoked",
+/// "expires_at": ISO-8601 | null}`.
 ///
 /// Backend App Store Server API (iOS) yoki Google Play Developer API
 /// `purchases.products.get` (Android) orqali tekshiradi; maxfiy kalitlar
@@ -24,27 +28,43 @@ class HttpPurchaseVerifier implements PurchaseVerifier {
     required this.bundleId,
     HttpClient? client,
     this.timeout = const Duration(seconds: 10),
+    this.accessToken,
   }) : _client = client ?? HttpClient();
+
+  /// Joriy akkaunt tokeni (bo‘lmasa so‘rov anonim; server huquqni akkauntga
+  /// bog‘lay olmaydi va faqat holatni qaytaradi).
+  final Future<String?> Function()? accessToken;
 
   final Uri endpoint;
   final String bundleId;
   final Duration timeout;
   final HttpClient _client;
 
-  static PurchaseVerifier fromEnvironment({required String bundleId}) {
+  static PurchaseVerifier fromEnvironment({
+    required String bundleId,
+    Future<String?> Function()? accessToken,
+  }) {
     const url = String.fromEnvironment('FE_PURCHASE_VERIFY_URL');
     final uri = Uri.tryParse(url);
     if (url.isEmpty || uri == null || uri.scheme != 'https') {
       return const UnconfiguredPurchaseVerifier();
     }
-    return HttpPurchaseVerifier(endpoint: uri, bundleId: bundleId);
+    return HttpPurchaseVerifier(
+      endpoint: uri,
+      bundleId: bundleId,
+      accessToken: accessToken,
+    );
   }
 
   @override
-  Future<VerificationStatus> verify(PurchaseEvidence e) async {
+  Future<PurchaseVerification> verify(PurchaseEvidence e) async {
     try {
       final req = await _client.postUrl(endpoint).timeout(timeout);
       req.headers.contentType = ContentType.json;
+      final token = await accessToken?.call();
+      if (token != null && token.isNotEmpty) {
+        req.headers.set(HttpHeaders.authorizationHeader, 'Bearer $token');
+      }
       req.write(
         jsonEncode({
           'platform': switch (e.platform) {
@@ -63,21 +83,41 @@ class HttpPurchaseVerifier implements PurchaseVerifier {
       if (res.statusCode != 200) {
         // 4xx — rad etilgan so‘rov; 5xx — server muammosi (tarmoq kabi).
         return res.statusCode >= 500
-            ? VerificationStatus.networkError
-            : VerificationStatus.rejected;
+            ? PurchaseVerification.networkError
+            : PurchaseVerification.rejected;
       }
-      final status = (jsonDecode(body) as Map)['status'];
-      return status == 'verified'
-          ? VerificationStatus.verified
-          : VerificationStatus.rejected;
+      return parse(jsonDecode(body));
     } on SocketException {
-      return VerificationStatus.networkError;
+      return PurchaseVerification.networkError;
     } on TimeoutException {
-      return VerificationStatus.networkError;
+      return PurchaseVerification.networkError;
     } on HandshakeException {
-      return VerificationStatus.networkError;
+      return PurchaseVerification.networkError;
     } on FormatException {
-      return VerificationStatus.rejected;
+      return PurchaseVerification.rejected;
     }
+  }
+
+  /// Server javobini qat’iy o‘qish: noma’lum maydon / holat — huquq yo‘q.
+  static PurchaseVerification parse(Object? json) {
+    if (json is! Map || json['status'] != 'verified') {
+      return PurchaseVerification.rejected;
+    }
+    final status = switch (json['entitlement_status']) {
+      'active' => EntitlementStatus.active,
+      'grace_period' => EntitlementStatus.gracePeriod,
+      'billing_retry' => EntitlementStatus.billingRetry,
+      'cancelled_active_until_expiry' =>
+        EntitlementStatus.cancelledActiveUntilExpiry,
+      'expired' => EntitlementStatus.expired,
+      'revoked' => EntitlementStatus.revoked,
+      _ => EntitlementStatus.unknown,
+    };
+    final exp = json['expires_at'];
+    return PurchaseVerification(
+      VerificationStatus.verified,
+      entitlementStatus: status,
+      expiresAt: exp is String ? DateTime.tryParse(exp)?.toUtc() : null,
+    );
   }
 }

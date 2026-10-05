@@ -64,7 +64,6 @@ k("ldQualityAccreditation","Legal domain.","Quality and accreditation","Каче
 
 # --- PHASE 11: data deletion -----------------------------------------------
 k("deleteLocalData","Profile action.","Delete data on this device","Удалить данные на этом устройстве","Qurilmadagi ma’lumotlarni o‘chirish")
-k("deleteLocalDataBody","Dialog.","Bookmarks, search history, recently viewed records and lesson progress will be deleted from this device. The scientific database and purchases are not affected. There is no account: nothing is stored about you on our servers.","Закладки, история поиска, недавно просмотренные записи и прогресс уроков будут удалены с этого устройства. Научная база и покупки не затрагиваются. Аккаунта нет: на наших серверах о вас ничего не хранится.","Saralanganlar, qidiruv tarixi, yaqinda ko‘rilgan yozuvlar va darslar holati shu qurilmadan o‘chiriladi. Ilmiy baza va xaridlarga ta’sir qilmaydi. Akkaunt yo‘q: serverlarimizda siz haqingizda hech narsa saqlanmaydi.")
 k("deleteLocalDataConfirm","Button.","Delete","Удалить","O‘chirish")
 k("deleteLocalDataDone","Snackbar.","Local data deleted","Локальные данные удалены","Qurilmadagi ma’lumotlar o‘chirildi")
 
