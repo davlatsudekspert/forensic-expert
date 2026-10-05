@@ -55,12 +55,46 @@ check("1024×1024 marketing ikon", any(i.get("size") == "1024x1024" for i in con
 check("StoreKit plagini (in_app_purchase_storekit)", "in_app_purchase_storekit" in pub)
 check("Qurilma oilasi", True, "TARGETED_DEVICE_FAMILY = " + ",".join(set(re.findall(r'TARGETED_DEVICE_FAMILY = "([\d,]+)"', pbx)))
       + " (iPad layout real qurilmada tekshirilmagan)")
-check("Privacy manifest (PrivacyInfo.xcprivacy)", False,
-      "yo‘q — ma’lumot yig‘ish va required-reason API deklaratsiyasi egasi/yurist tasdig‘ini talab qiladi", open_item=True)
-check("Export compliance (ITSAppUsesNonExemptEncryption)", False,
-      "deklaratsiya qilinmagan — huquqiy qaror (faqat HTTPS bo‘lsa odatda exempt)", open_item=True)
-check("Real Xcode build / TestFlight / real iPhone", False,
-      "bu muhitda macOS/Xcode yo‘q — iOS build BAJARILMAGAN", open_item=True)
+# Privacy manifest: texnik talablar (fayl, loyiha resurslari, tracking yo‘q,
+# required-reason API). Ma’lumot yig‘ish deklaratsiyasi — egasi tasdig‘i.
+pm_path = "ios/Runner/PrivacyInfo.xcprivacy"
+try:
+    pm = plistlib.load(open(pm_path, "rb"))
+except FileNotFoundError:
+    pm = None
+check("Privacy manifest fayli va Xcode resurslarida", pm is not None
+      and "PrivacyInfo.xcprivacy in Resources" in pbx)
+if pm is not None:
+    check("Privacy manifest: NSPrivacyTracking = false, tracking domenlari yo‘q",
+          pm.get("NSPrivacyTracking") is False and not pm.get("NSPrivacyTrackingDomains"))
+    reasons = {
+        a.get("NSPrivacyAccessedAPIType"): a.get("NSPrivacyAccessedAPITypeReasons", [])
+        for a in pm.get("NSPrivacyAccessedAPITypes", [])
+    }
+    uses_prefs = "shared_preferences" in pub
+    check("Required-reason API: UserDefaults (CA92.1) — shared_preferences",
+          not uses_prefs or "CA92.1" in reasons.get("NSPrivacyAccessedAPICategoryUserDefaults", []))
+    check("Privacy manifest: yig‘iladigan ma’lumot deklaratsiyasi", False,
+          "QORALAMA (email, xarid tarixi) — egasi/yurist tasdig‘i va App Store Connect "
+          "App Privacy javoblari bilan mos bo‘lishi kerak", open_item=True)
+
+# Export compliance: kalit va kodda qo‘llanilgan kriptografiya.
+check("ITSAppUsesNonExemptEncryption = false (Info.plist)",
+      info.get("ITSAppUsesNonExemptEncryption") is False,
+      "asos: faqat HTTPS (TLS), Ed25519 imzo tekshiruvi va SHA-256 yaxlitlik — "
+      "autentifikatsiya/yaxlitlik, maxfiy ma’lumotni shifrlash yo‘q")
+crypto_imports = []
+for f in glob.glob("lib/**/*.dart", recursive=True) + glob.glob("../../packages/*/lib/**/*.dart", recursive=True):
+    t = open(f, encoding="utf-8").read()
+    for m in re.findall(r"import 'package:(cryptography|crypto|pointycastle|encrypt)/", t):
+        crypto_imports.append((m, f))
+non_auth = [f for m, f in crypto_imports if m in ("pointycastle", "encrypt")]
+check("Kodda maxfiylik uchun shifrlash kutubxonasi yo‘q (pointycastle/encrypt)",
+      not non_auth, "; ".join(non_auth))
+check("iOS build (CI macos-15, imzosiz)", True,
+      "flutter build ios/ipa --no-codesign — Release build workflow")
+check("Imzolangan IPA / TestFlight", False,
+      "ASC_KEY_ID, ASC_ISSUER_ID, ASC_PRIVATE_KEY, APPLE_TEAM_ID sirlari yo‘q", open_item=True)
 
 w = max(len(n) for _, n, _ in res)
 for st, n, d in res:

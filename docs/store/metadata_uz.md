@@ -7,7 +7,7 @@
 **Qisqa tavsif:** Manbalar, tekshiruv holati va huquqiy kontekst bilan oflayn sud ekspertizasi qo‘llanmasi.
 
 **To‘liq tavsif:**
-FORENSIC EXPERT — sud tibbiyoti, toksikologiya, genetika va turdosh yo‘nalishlardagi talabalar va mutaxassislar uchun oflayn ma’lumotnoma.
+FORENSIC EXPERT — sud tibbiyoti, toksikologiya, laboratoriya tahlili va turdosh yo‘nalishlardagi talabalar va mutaxassislar uchun oflayn professional sud-ekspert ma’lumotnomasi, ilmiy ta’lim va ilmiy hisob-kitob vositasi.
 
 - Har bir ilmiy da’vo manbasi va tekshiruv holati bilan ko‘rsatiladi. Malakali ekspert hali tekshirmagan material aniq belgilanadi.
 - Usullar dalil turi bo‘yicha belgilangan (xalqaro standart, yo‘riqnoma, nashr etilgan usul, ta’limiy xulosa).
@@ -15,8 +15,8 @@ FORENSIC EXPERT — sud tibbiyoti, toksikologiya, genetika va turdosh yo‘nalis
 - Formulasi va cheklovlari ochiq kalkulyatorlar.
 - To‘liq oflayn; kuzatuv va reklama yo‘q.
 
-Muhim: FORENSIC EXPERT — ta’limiy qo‘llanma. U laboratoriya SOPlari, akkreditatsiyalangan usullar, yuridik maslahat yoki malakali ekspert xulosasini almashtirmaydi.
+Muhim: Forensic Expert professional ma’lumotnoma, ta’lim va ilmiy hisob-kitoblar uchun mo‘ljallangan. U validatsiyadan o‘tgan laboratoriya usullari, muassasa protokollari, amaldagi qonunchilik va malakali mutaxassis xulosasining o‘rnini bosmaydi. Ilmiy ma’lumotlarning ko‘p qismi hali malakali ekspert tekshiruvini kutmoqda va «Tekshiruv kerak» deb belgilangan.
 
-**Kalit so‘zlar:** sud tibbiyoti, toksikologiya, autopsiya, DNK, dalil
-**Maxfiylik:** kuzatuv yo‘q. Ixtiyoriy akkaunt faqat emailni yig‘adi; xarid tarixi obunani tekshirish uchun ishlatiladi.
+**Kalit so‘zlar:** sud ekspertizasi, toksikologiya, sud tibbiyoti, laboratoriya, ma’lumotnoma, ta’lim
+**Maxfiylik:** kuzatuv va reklama yo‘q. Oflayn ma’lumotnoma hisobsiz ishlaydi; profil ma’lumotlari qurilmada qoladi. Ixtiyoriy akkaunt (xizmat ulanganda) emailni yig‘adi; xarid tarixi obunani tekshirish uchun ishlatiladi. Professional tasdiqlash (mavjud bo‘lganda) profil ma’lumotlari va ixtiyoriy malaka hujjatlarini yuborishni talab qiladi; ular maxfiy saqlanadi va ochiq ko‘rsatilmaydi.
 **Narx:** bepul daraja; ixtiyoriy avtomatik yangilanadigan Student Pro va Professional Pro obunalari (oylik / yillik) — narx faqat store’dan. Akkaunt ixtiyoriy.
