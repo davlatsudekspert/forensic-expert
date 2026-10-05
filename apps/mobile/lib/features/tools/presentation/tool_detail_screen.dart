@@ -335,10 +335,7 @@ class _DilutionCalculatorViewState extends State<_DilutionCalculatorView> {
           ),
         ),
         FeSectionHeader(l.calcMethod),
-        CalculatorStatusPanel(
-          engineId: d.id,
-          engineVersion: d.engineVersion,
-        ),
+        CalculatorStatusPanel(engineId: d.id, engineVersion: d.engineVersion),
         FeSectionHeader(l.calcFormula),
         Text(
           'C₁ × V₁ = C₂ × V₂',
@@ -551,10 +548,7 @@ class _SolutionCalculatorViewState extends State<_SolutionCalculatorView> {
           ),
         ),
         FeSectionHeader(l.calcMethod),
-        CalculatorStatusPanel(
-          engineId: d.id,
-          engineVersion: d.engineVersion,
-        ),
+        CalculatorStatusPanel(engineId: d.id, engineVersion: d.engineVersion),
         FeSectionHeader(l.calcFormula),
         Text(
           'm = C · V (· M) / p',

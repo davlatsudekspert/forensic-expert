@@ -540,10 +540,7 @@ class StrictContextTable extends ConsumerWidget {
               child: Wrap(
                 spacing: FeSpace.xs,
                 children: [
-                  Text(
-                    k,
-                    style: t.bodySmall?.copyWith(color: c.textSecondary),
-                  ),
+                  Text(k, style: t.bodySmall?.copyWith(color: c.textSecondary)),
                   Text(
                     v,
                     // Manbadan olingan matn asl tilda qoladi.

@@ -644,9 +644,8 @@ class _ReviewNotice extends StatelessWidget {
         Expanded(
           child: Text(
             text,
-            style: Theme.of(
-              context,
-            ).textTheme.bodySmall?.copyWith(color: c.textSecondary),
+            style: Theme.of(context).textTheme.bodySmall
+                ?.copyWith(color: c.textSecondary),
           ),
         ),
       ],

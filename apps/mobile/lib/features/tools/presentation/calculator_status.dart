@@ -77,9 +77,8 @@ class CalculatorStatusPanel extends StatelessWidget {
           ),
           Text(
             '$engineId · v$engineVersion',
-            style: FeThemeBuilder.numeric(
-              t.labelSmall!,
-            ).copyWith(color: c.textSecondary),
+            style: FeThemeBuilder.numeric(t.labelSmall!)
+                .copyWith(color: c.textSecondary),
           ),
         ],
       ),

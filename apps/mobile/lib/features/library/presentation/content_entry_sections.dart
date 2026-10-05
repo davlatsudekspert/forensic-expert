@@ -729,9 +729,8 @@ class AccessBadge extends ConsumerWidget {
             Flexible(
               child: Text(
                 label,
-                style: Theme.of(
-                  context,
-                ).textTheme.labelSmall?.copyWith(color: c.textSecondary),
+                style: Theme.of(context).textTheme.labelSmall
+                    ?.copyWith(color: c.textSecondary),
               ),
             ),
           ],

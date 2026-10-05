@@ -24,7 +24,11 @@ enum AvailabilityKind {
 }
 
 /// Bo‘sh holat uchun amal (masalan, «Filtrlarni tozalash»).
-typedef AvailabilityAction = ({String label, IconData icon, VoidCallback onTap});
+typedef AvailabilityAction = ({
+  String label,
+  IconData icon,
+  VoidCallback onTap,
+});
 
 /// Tugallangan ko‘rinishdagi bo‘sh holat. Ma’lumot to‘qilmaydi — faqat nima
 /// uchun bo‘shligi va foydali keyingi qadam ko‘rsatiladi.

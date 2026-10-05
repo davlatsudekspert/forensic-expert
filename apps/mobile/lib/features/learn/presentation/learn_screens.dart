@@ -191,7 +191,10 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
                                       label: _levelName(l, course.level),
                                       color: c.textSecondary,
                                     ),
-                                    ReviewStatusBadge(status: course.status, compact: true),
+                                    ReviewStatusBadge(
+                                      status: course.status,
+                                      compact: true,
+                                    ),
                                     if (!free)
                                       StatusChip(
                                         key: Key('learn.locked.${course.id}'),
