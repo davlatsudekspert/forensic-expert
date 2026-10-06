@@ -745,7 +745,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get privacySummary =>
-      'Основная библиотека и калькуляторы работают офлайн. История поиска, прогресс и необязательный профиль (имя, организация, специальность) хранятся на вашем устройстве. Данные профиля и документы о квалификации передаются только при подаче заявки на профессиональное подтверждение, когда этот сервис будет подключён; документы хранятся конфиденциально и никогда не публикуются. В приложении нет рекламных SDK. Персональные данные и сведения о делах никогда не передаются ИИ автоматически.';
+      'Основная библиотека и калькуляторы работают офлайн. История поиска, прогресс и необязательный профиль (имя, организация, специальность) хранятся на вашем устройстве. Данные профиля и документы о квалификации передаются только при подаче заявки на профессиональное подтверждение, когда этот сервис будет подключён; документы хранятся конфиденциально и никогда не публикуются. В приложении нет рекламных SDK. Персональные данные и сведения о делах никогда не передаются ИИ автоматически.\n\nПриглашения: если вы используете код приглашения коллеги, сервер хранит только связь между аккаунтами и солёный хеш вашего email (для защиты от злоупотреблений при повторном создании аккаунта). Пригласивший видит только итоговые числа — никогда ваше имя, email, профиль или документы. Приложение не читает ваши контакты.';
 
   @override
   String get aboutBody =>
@@ -4716,4 +4716,202 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get aiComposerTitle => 'Научный запрос';
+
+  @override
+  String get referralTitle => 'Пригласить коллегу';
+
+  @override
+  String get referralLead =>
+      'Знаете судебного эксперта, специалиста лаборатории или студента, которому пригодится FORENSIC EXPERT? Поделитесь личным приглашением.';
+
+  @override
+  String get referralYourCode => 'Ваш код приглашения';
+
+  @override
+  String get referralYourLink => 'Ваша ссылка-приглашение';
+
+  @override
+  String get referralNoLinkNote =>
+      'Веб-ссылка появится здесь после подключения публичного сайта FORENSIC EXPERT. Пока поделитесь кодом — коллега вводит его в «Профиль → Код приглашения».';
+
+  @override
+  String get referralShare => 'Поделиться приглашением';
+
+  @override
+  String get referralCopy => 'Копировать';
+
+  @override
+  String get referralCopied => 'Скопировано в буфер обмена';
+
+  @override
+  String get referralStatsTitle => 'Ваши приглашения';
+
+  @override
+  String get referralStatJoined => 'Присоединились';
+
+  @override
+  String get referralStatVerified => 'Подтверждены';
+
+  @override
+  String get referralStatPending => 'Ожидают';
+
+  @override
+  String get referralStatCredits => 'Кредиты FORENSIC';
+
+  @override
+  String referralCreditsPending(String amount) {
+    return '$amount кредитов ожидают подтверждения';
+  }
+
+  @override
+  String referralCreditsFuture(String percent) {
+    return 'После запуска платных услуг подходящие покупки приглашённых вами коллег могут приносить вам FORENSIC Credits — $percent% от суммы покупки. Кредиты — внутренний промо-бонус, а не деньги; за регистрацию они не начисляются.';
+  }
+
+  @override
+  String referralCreditsActive(String percent) {
+    return 'Вы получаете FORENSIC Credits в размере $percent% от подходящих покупок приглашённых коллег. Кредиты подтверждаются после периода возврата. Это внутренний промо-бонус, а не деньги.';
+  }
+
+  @override
+  String get referralPrivacyNote =>
+      'Показываются только итоговые числа. Имена, email, профили и документы коллег никогда не передаются — ни вам, ни в приглашении.';
+
+  @override
+  String get referralShareSubject => 'Приглашение в FORENSIC EXPERT';
+
+  @override
+  String referralShareWithLink(String link) {
+    return 'Я пользуюсь FORENSIC EXPERT как научным справочником для судебно-экспертной работы: вещества, методы, источники и ответы ИИ со ссылками на источники. Присоединяйтесь по моему приглашению:\n$link';
+  }
+
+  @override
+  String referralShareWithCode(String code) {
+    return 'Я пользуюсь FORENSIC EXPERT как научным справочником для судебно-экспертной работы: вещества, методы, источники и ответы ИИ со ссылками на источники. Установите приложение и введите мой код в «Профиль → Код приглашения»: $code';
+  }
+
+  @override
+  String get referralSignInTitle => 'Войдите, чтобы получить приглашение';
+
+  @override
+  String get referralSignInBody =>
+      'Личный код создаётся на сервере после входа по email. Весь научный контент доступен и без аккаунта.';
+
+  @override
+  String get referralNotConfigured =>
+      'Приглашения станут доступны после подключения аккаунт-сервиса FORENSIC EXPERT.';
+
+  @override
+  String get referralLoadError =>
+      'Не удалось загрузить приглашение. Проверьте соединение и повторите.';
+
+  @override
+  String get referralRetry => 'Повторить';
+
+  @override
+  String get referralHaveCode => 'Код приглашения';
+
+  @override
+  String get referralHaveCodeHint =>
+      'Получили приглашение от коллеги? Введите 8-значный код. Он действует только для новых аккаунтов.';
+
+  @override
+  String get referralCodeField => 'Код приглашения';
+
+  @override
+  String get referralApply => 'Применить';
+
+  @override
+  String get referralLinkedNote => 'Ваш аккаунт создан по приглашению коллеги.';
+
+  @override
+  String get referralClaimValid =>
+      'Приглашение применено. Добро пожаловать в FORENSIC EXPERT.';
+
+  @override
+  String get referralClaimPending =>
+      'Приглашение сохранено. Оно вступит в силу после подтверждения email.';
+
+  @override
+  String get referralClaimInvalid =>
+      'Код не найден. Проверьте его и попробуйте снова.';
+
+  @override
+  String get referralClaimSelf =>
+      'Нельзя использовать собственный код приглашения.';
+
+  @override
+  String get referralClaimAlready =>
+      'К вашему аккаунту уже привязано приглашение.';
+
+  @override
+  String get referralClaimNotEligible =>
+      'Коды приглашения действуют только для новых аккаунтов.';
+
+  @override
+  String get referralClaimRateLimited =>
+      'Слишком много попыток. Попробуйте позже.';
+
+  @override
+  String get referralClaimSaved =>
+      'Код сохранён. Он будет применён после входа.';
+
+  @override
+  String get referralClaimOffline =>
+      'Нет соединения. Код сохранён и будет применён позже.';
+
+  @override
+  String get referralClaimFormat => 'Введите 8-значный код (буквы и цифры).';
+
+  @override
+  String get referralProfileRowHint => 'Поделитесь FORENSIC EXPERT с коллегами';
+
+  @override
+  String get homeInviteHint => 'Поделитесь надёжным справочником с коллегами';
+
+  @override
+  String get shareAction => 'Поделиться';
+
+  @override
+  String get shareFooter =>
+      'Отправлено из FORENSIC EXPERT — научного справочника для судебных экспертов. Перед использованием сверяйтесь с первоисточником.';
+
+  @override
+  String get shareSourcesLabel => 'Источники';
+
+  @override
+  String get savedAdded => 'Сохранено в вашу библиотеку';
+
+  @override
+  String get savedRemoved => 'Удалено из сохранённого';
+
+  @override
+  String get firstStepsTitle => 'Начните за 5 минут';
+
+  @override
+  String firstStepsProgress(int done, int total) {
+    return 'Выполнено $done из $total';
+  }
+
+  @override
+  String get firstStepsSearch => 'Найдите вещество';
+
+  @override
+  String get firstStepsDiscipline => 'Откройте дисциплину';
+
+  @override
+  String get firstStepsSource => 'Откройте научный источник';
+
+  @override
+  String get firstStepsAi => 'Попробуйте Forensic AI';
+
+  @override
+  String get firstStepsSave => 'Сохраните полезный материал';
+
+  @override
+  String get firstStepsHide => 'Скрыть';
+
+  @override
+  String get firstStepsDone =>
+      'Всё готово. Сохранённые материалы и недавние записи остаются на этом устройстве.';
 }

@@ -20,7 +20,9 @@ import '../../../domain/catalog/tools_catalog.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
 import '../../../domain/library/library_models.dart';
 import '../../library/presentation/source_detail_screen.dart';
+import '../../referral/presentation/invite_card.dart';
 import '../../tools/tool_strings.dart';
+import 'first_steps_card.dart';
 
 /// Home modullari (professional bo‘limlar). ID’lar marshrut parametri.
 enum HomeModule {
@@ -167,6 +169,7 @@ class HomeScreen extends ConsumerWidget {
                       text: l.homePilotNotice,
                     ),
                   ],
+                  const FirstStepsCard(),
                   if (isStudent) ...[
                     const SizedBox(height: FeSpace.md),
                     const _ContinueLearningCard(),
@@ -178,6 +181,11 @@ class HomeScreen extends ConsumerWidget {
                   const SizedBox(height: FeSpace.sm),
                   const _AllDisciplinesTile(),
                   const _QuickAccess(),
+                  const SizedBox(height: FeSpace.md),
+                  const InviteColleagueCard(
+                    key: Key('home.invite'),
+                    compact: true,
+                  ),
                   const SizedBox(height: FeSpace.lg),
                 ],
               ),

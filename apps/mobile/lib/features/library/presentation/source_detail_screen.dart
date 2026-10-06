@@ -12,6 +12,8 @@ import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
 import '../../../domain/library/library_models.dart';
+import '../../../domain/referral/share_text.dart';
+import '../../common/share_button.dart';
 import 'content_entry_sections.dart';
 
 /// Manbaga bog‘langan yozuv (kutubxona yoki bilim bazasi).
@@ -104,7 +106,15 @@ class SourceDetailScreen extends ConsumerWidget {
     final lang = Localizations.localeOf(context).languageCode;
     final entry = ref.watch(sourceIndexProvider)[sourceId];
     return Scaffold(
-      appBar: AppBar(title: Text(l.sourceDetailTitle)),
+      appBar: AppBar(
+        title: Text(l.sourceDetailTitle),
+        actions: [
+          if (entry != null)
+            ShareButton(
+              text: (l) => sourceShareText(entry.source, footer: l.shareFooter),
+            ),
+        ],
+      ),
       body: SafeArea(
         child: entry == null
             ? FeEmptyState(icon: Icons.link_off, body: l.sourceNotFound)

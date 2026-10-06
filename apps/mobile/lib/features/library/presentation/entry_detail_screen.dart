@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../app/providers.dart';
+import '../../../app/referral.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
@@ -17,7 +18,9 @@ import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/library/library_models.dart';
 import '../../../domain/professional/review_models.dart';
+import '../../../domain/referral/share_text.dart';
 import '../../common/favorite_button.dart';
+import '../../common/share_button.dart';
 import '../../common/view_recorder.dart';
 import '../../professional/presentation/review_section.dart';
 import 'content_entry_sections.dart';
@@ -62,7 +65,18 @@ class EntryDetailScreen extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(entry.name.resolve(lang)),
-        actions: [FavoriteButton(id: entry.id)],
+        actions: [
+          ShareButton(
+            text: (l) => recordShareText(
+              title: entry.name.resolve(lang),
+              sources: entry.details?.allSources ?? const [],
+              sourcesLabel: l.shareSourcesLabel,
+              footer: l.shareFooter,
+              appLink: ref.read(referralLinksProvider).recordLink(entry.id),
+            ),
+          ),
+          FavoriteButton(id: entry.id),
+        ],
       ),
       body: SafeArea(
         child: ListView(

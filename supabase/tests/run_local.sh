@@ -14,3 +14,4 @@ $P -c "create database fe"
 $P -d fe -f "$HERE/stubs.sql"
 for m in "$HERE"/../migrations/*.sql; do $P -d fe -f "$m"; done
 $P -d fe -f "$HERE/security_test.sql"
+$P -d fe -f "$HERE/referral_test.sql"

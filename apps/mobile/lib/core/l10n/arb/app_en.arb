@@ -933,7 +933,7 @@
   "@legalDraftNotice": {
     "description": "Draft notice on legal documents."
   },
-  "privacySummary": "The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically.",
+  "privacySummary": "The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically.\n\nInvitations: if you use a colleague’s invitation code, the server stores only the link between the two accounts and a salted hash of your email (to prevent abuse after account re-creation). Inviters see only totals — never your name, email, profile or documents. The app never reads your contacts.",
   "@privacySummary": {
     "description": "Privacy summary."
   },
@@ -6122,5 +6122,262 @@
   "aiComposerTitle": "Scientific query",
   "@aiComposerTitle": {
     "description": "Composer title."
+  },
+  "referralTitle": "Invite a colleague",
+  "@referralTitle": {
+    "description": "Invite screen title."
+  },
+  "referralLead": "Know a forensic scientist, laboratory specialist or student who would find FORENSIC EXPERT useful? Share your personal invitation.",
+  "@referralLead": {
+    "description": "Invite lead."
+  },
+  "referralYourCode": "Your invitation code",
+  "@referralYourCode": {
+    "description": "Label."
+  },
+  "referralYourLink": "Your invitation link",
+  "@referralYourLink": {
+    "description": "Label."
+  },
+  "referralNoLinkNote": "A web link will appear here once the public FORENSIC EXPERT site is connected. For now, share your code — a colleague enters it in Profile → Invitation code.",
+  "@referralNoLinkNote": {
+    "description": "Note when no public link."
+  },
+  "referralShare": "Share invitation",
+  "@referralShare": {
+    "description": "Action."
+  },
+  "referralCopy": "Copy",
+  "@referralCopy": {
+    "description": "Action."
+  },
+  "referralCopied": "Copied to clipboard",
+  "@referralCopied": {
+    "description": "Snackbar."
+  },
+  "referralStatsTitle": "Your invitations",
+  "@referralStatsTitle": {
+    "description": "Section."
+  },
+  "referralStatJoined": "Joined",
+  "@referralStatJoined": {
+    "description": "Stat."
+  },
+  "referralStatVerified": "Verified",
+  "@referralStatVerified": {
+    "description": "Stat."
+  },
+  "referralStatPending": "Pending",
+  "@referralStatPending": {
+    "description": "Stat."
+  },
+  "referralStatCredits": "FORENSIC Credits",
+  "@referralStatCredits": {
+    "description": "Stat."
+  },
+  "referralCreditsPending": "{amount} credits awaiting confirmation",
+  "@referralCreditsPending": {
+    "description": "Pending credits line.",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "referralCreditsFuture": "When paid services launch, eligible purchases by colleagues you invite may earn you FORENSIC Credits — {percent}% of the purchase value. Credits are an internal promotional bonus, not cash, and are not awarded for registration.",
+  "@referralCreditsFuture": {
+    "description": "Credits note (rewards not live).",
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "referralCreditsActive": "You receive FORENSIC Credits worth {percent}% of eligible purchases by colleagues you invite. Credits are confirmed after the refund period. They are an internal promotional bonus, not cash.",
+  "@referralCreditsActive": {
+    "description": "Credits note (rewards live).",
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "referralPrivacyNote": "Only totals are shown. Your colleagues’ names, emails, profiles and documents are never shared — neither with you nor in the invitation.",
+  "@referralPrivacyNote": {
+    "description": "Privacy note."
+  },
+  "referralShareSubject": "Invitation to FORENSIC EXPERT",
+  "@referralShareSubject": {
+    "description": "Share subject."
+  },
+  "referralShareWithLink": "I use FORENSIC EXPERT as a scientific reference for forensic work — substances, methods, sources and source-linked AI answers. You can join with my invitation:\n{link}",
+  "@referralShareWithLink": {
+    "description": "Share text with link.",
+    "placeholders": {
+      "link": {
+        "type": "String"
+      }
+    }
+  },
+  "referralShareWithCode": "I use FORENSIC EXPERT as a scientific reference for forensic work — substances, methods, sources and source-linked AI answers. Install the app and enter my invitation code in Profile → Invitation code: {code}",
+  "@referralShareWithCode": {
+    "description": "Share text with code.",
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "referralSignInTitle": "Sign in to get your invitation",
+  "@referralSignInTitle": {
+    "description": "Signed-out title."
+  },
+  "referralSignInBody": "Your personal code is created on the server after you sign in with your email. All scientific content stays available without an account.",
+  "@referralSignInBody": {
+    "description": "Signed-out body."
+  },
+  "referralNotConfigured": "Invitations will be available once the FORENSIC EXPERT account service is connected.",
+  "@referralNotConfigured": {
+    "description": "Not connected."
+  },
+  "referralLoadError": "Couldn’t load your invitation. Check the connection and try again.",
+  "@referralLoadError": {
+    "description": "Load error."
+  },
+  "referralRetry": "Try again",
+  "@referralRetry": {
+    "description": "Action."
+  },
+  "referralHaveCode": "Invitation code",
+  "@referralHaveCode": {
+    "description": "Section."
+  },
+  "referralHaveCodeHint": "Received an invitation from a colleague? Enter the 8-character code. It applies only to new accounts.",
+  "@referralHaveCodeHint": {
+    "description": "Hint."
+  },
+  "referralCodeField": "Invitation code",
+  "@referralCodeField": {
+    "description": "Field label."
+  },
+  "referralApply": "Apply",
+  "@referralApply": {
+    "description": "Action."
+  },
+  "referralLinkedNote": "Your account was created with a colleague’s invitation.",
+  "@referralLinkedNote": {
+    "description": "Already has referrer."
+  },
+  "referralClaimValid": "Invitation applied. Welcome to FORENSIC EXPERT.",
+  "@referralClaimValid": {
+    "description": "Outcome."
+  },
+  "referralClaimPending": "Invitation saved. It becomes valid once your email is confirmed.",
+  "@referralClaimPending": {
+    "description": "Outcome."
+  },
+  "referralClaimInvalid": "This code was not found. Check it and try again.",
+  "@referralClaimInvalid": {
+    "description": "Outcome."
+  },
+  "referralClaimSelf": "You can’t use your own invitation code.",
+  "@referralClaimSelf": {
+    "description": "Outcome."
+  },
+  "referralClaimAlready": "An invitation is already linked to your account.",
+  "@referralClaimAlready": {
+    "description": "Outcome."
+  },
+  "referralClaimNotEligible": "Invitation codes apply only to new accounts.",
+  "@referralClaimNotEligible": {
+    "description": "Outcome."
+  },
+  "referralClaimRateLimited": "Too many attempts. Please try again later.",
+  "@referralClaimRateLimited": {
+    "description": "Outcome."
+  },
+  "referralClaimSaved": "Code saved. It will be applied after you sign in.",
+  "@referralClaimSaved": {
+    "description": "Outcome."
+  },
+  "referralClaimOffline": "No connection. The code is saved and will be applied later.",
+  "@referralClaimOffline": {
+    "description": "Outcome."
+  },
+  "referralClaimFormat": "Enter the 8-character code (letters and digits).",
+  "@referralClaimFormat": {
+    "description": "Validation."
+  },
+  "referralProfileRowHint": "Share FORENSIC EXPERT with colleagues",
+  "@referralProfileRowHint": {
+    "description": "Profile row hint."
+  },
+  "homeInviteHint": "Share a reference you trust with colleagues",
+  "@homeInviteHint": {
+    "description": "Home action hint."
+  },
+  "shareAction": "Share",
+  "@shareAction": {
+    "description": "Action."
+  },
+  "shareFooter": "Shared from FORENSIC EXPERT — scientific reference for forensic professionals. Verify against the original source before use.",
+  "@shareFooter": {
+    "description": "Footer for shared scientific records."
+  },
+  "shareSourcesLabel": "Sources",
+  "@shareSourcesLabel": {
+    "description": "Label in shared text."
+  },
+  "savedAdded": "Saved to your library",
+  "@savedAdded": {
+    "description": "Snackbar."
+  },
+  "savedRemoved": "Removed from saved",
+  "@savedRemoved": {
+    "description": "Snackbar."
+  },
+  "firstStepsTitle": "Get started in 5 minutes",
+  "@firstStepsTitle": {
+    "description": "Card title."
+  },
+  "firstStepsProgress": "{done} of {total} done",
+  "@firstStepsProgress": {
+    "description": "Progress.",
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "firstStepsSearch": "Search a substance",
+  "@firstStepsSearch": {
+    "description": "Step."
+  },
+  "firstStepsDiscipline": "Explore a discipline",
+  "@firstStepsDiscipline": {
+    "description": "Step."
+  },
+  "firstStepsSource": "Open a scientific source",
+  "@firstStepsSource": {
+    "description": "Step."
+  },
+  "firstStepsAi": "Try Forensic AI",
+  "@firstStepsAi": {
+    "description": "Step."
+  },
+  "firstStepsSave": "Save useful material",
+  "@firstStepsSave": {
+    "description": "Step."
+  },
+  "firstStepsHide": "Hide",
+  "@firstStepsHide": {
+    "description": "Action."
+  },
+  "firstStepsDone": "You’re all set. Your saved materials and recent records stay on this device.",
+  "@firstStepsDone": {
+    "description": "Completed state."
   }
 }

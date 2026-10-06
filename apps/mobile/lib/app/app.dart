@@ -5,6 +5,7 @@ import '../core/design/theme.dart';
 import '../core/l10n/generated/app_localizations.dart';
 import '../core/settings/app_settings.dart';
 import '../core/settings/settings_controller.dart';
+import 'referral.dart';
 import 'router.dart';
 
 class ForensicExpertApp extends ConsumerWidget {
@@ -22,6 +23,9 @@ class ForensicExpertApp extends ConsumerWidget {
       settingsControllerProvider.select((s) => s.contrast),
     );
     final router = ref.watch(routerProvider);
+    // Taklif kodi kuzatuvchisi doim faol: foydalanuvchi kirgach kutilayotgan
+    // kodni serverga bir marta yuboradi (qaror serverda).
+    ref.listen(pendingReferralProvider, (_, _) {});
 
     // Kontrast: `system` — MaterialApp OS sozlamasiga ko‘ra highContrast
     // mavzusini o‘zi tanlaydi; `high`/`standard` — foydalanuvchi majburlaydi.

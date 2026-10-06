@@ -1423,7 +1423,7 @@ abstract class AppLocalizations {
   /// Privacy summary.
   ///
   /// In en, this message translates to:
-  /// **'The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically.'**
+  /// **'The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically.\n\nInvitations: if you use a colleague’s invitation code, the server stores only the link between the two accounts and a salted hash of your email (to prevent abuse after account re-creation). Inviters see only totals — never your name, email, profile or documents. The app never reads your contacts.'**
   String get privacySummary;
 
   /// About text.
@@ -8570,6 +8570,342 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Scientific query'**
   String get aiComposerTitle;
+
+  /// Invite screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Invite a colleague'**
+  String get referralTitle;
+
+  /// Invite lead.
+  ///
+  /// In en, this message translates to:
+  /// **'Know a forensic scientist, laboratory specialist or student who would find FORENSIC EXPERT useful? Share your personal invitation.'**
+  String get referralLead;
+
+  /// Label.
+  ///
+  /// In en, this message translates to:
+  /// **'Your invitation code'**
+  String get referralYourCode;
+
+  /// Label.
+  ///
+  /// In en, this message translates to:
+  /// **'Your invitation link'**
+  String get referralYourLink;
+
+  /// Note when no public link.
+  ///
+  /// In en, this message translates to:
+  /// **'A web link will appear here once the public FORENSIC EXPERT site is connected. For now, share your code — a colleague enters it in Profile → Invitation code.'**
+  String get referralNoLinkNote;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Share invitation'**
+  String get referralShare;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy'**
+  String get referralCopy;
+
+  /// Snackbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Copied to clipboard'**
+  String get referralCopied;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Your invitations'**
+  String get referralStatsTitle;
+
+  /// Stat.
+  ///
+  /// In en, this message translates to:
+  /// **'Joined'**
+  String get referralStatJoined;
+
+  /// Stat.
+  ///
+  /// In en, this message translates to:
+  /// **'Verified'**
+  String get referralStatVerified;
+
+  /// Stat.
+  ///
+  /// In en, this message translates to:
+  /// **'Pending'**
+  String get referralStatPending;
+
+  /// Stat.
+  ///
+  /// In en, this message translates to:
+  /// **'FORENSIC Credits'**
+  String get referralStatCredits;
+
+  /// Pending credits line.
+  ///
+  /// In en, this message translates to:
+  /// **'{amount} credits awaiting confirmation'**
+  String referralCreditsPending(String amount);
+
+  /// Credits note (rewards not live).
+  ///
+  /// In en, this message translates to:
+  /// **'When paid services launch, eligible purchases by colleagues you invite may earn you FORENSIC Credits — {percent}% of the purchase value. Credits are an internal promotional bonus, not cash, and are not awarded for registration.'**
+  String referralCreditsFuture(String percent);
+
+  /// Credits note (rewards live).
+  ///
+  /// In en, this message translates to:
+  /// **'You receive FORENSIC Credits worth {percent}% of eligible purchases by colleagues you invite. Credits are confirmed after the refund period. They are an internal promotional bonus, not cash.'**
+  String referralCreditsActive(String percent);
+
+  /// Privacy note.
+  ///
+  /// In en, this message translates to:
+  /// **'Only totals are shown. Your colleagues’ names, emails, profiles and documents are never shared — neither with you nor in the invitation.'**
+  String get referralPrivacyNote;
+
+  /// Share subject.
+  ///
+  /// In en, this message translates to:
+  /// **'Invitation to FORENSIC EXPERT'**
+  String get referralShareSubject;
+
+  /// Share text with link.
+  ///
+  /// In en, this message translates to:
+  /// **'I use FORENSIC EXPERT as a scientific reference for forensic work — substances, methods, sources and source-linked AI answers. You can join with my invitation:\n{link}'**
+  String referralShareWithLink(String link);
+
+  /// Share text with code.
+  ///
+  /// In en, this message translates to:
+  /// **'I use FORENSIC EXPERT as a scientific reference for forensic work — substances, methods, sources and source-linked AI answers. Install the app and enter my invitation code in Profile → Invitation code: {code}'**
+  String referralShareWithCode(String code);
+
+  /// Signed-out title.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in to get your invitation'**
+  String get referralSignInTitle;
+
+  /// Signed-out body.
+  ///
+  /// In en, this message translates to:
+  /// **'Your personal code is created on the server after you sign in with your email. All scientific content stays available without an account.'**
+  String get referralSignInBody;
+
+  /// Not connected.
+  ///
+  /// In en, this message translates to:
+  /// **'Invitations will be available once the FORENSIC EXPERT account service is connected.'**
+  String get referralNotConfigured;
+
+  /// Load error.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn’t load your invitation. Check the connection and try again.'**
+  String get referralLoadError;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Try again'**
+  String get referralRetry;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Invitation code'**
+  String get referralHaveCode;
+
+  /// Hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Received an invitation from a colleague? Enter the 8-character code. It applies only to new accounts.'**
+  String get referralHaveCodeHint;
+
+  /// Field label.
+  ///
+  /// In en, this message translates to:
+  /// **'Invitation code'**
+  String get referralCodeField;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Apply'**
+  String get referralApply;
+
+  /// Already has referrer.
+  ///
+  /// In en, this message translates to:
+  /// **'Your account was created with a colleague’s invitation.'**
+  String get referralLinkedNote;
+
+  /// Outcome.
+  ///
+  /// In en, this message translates to:
+  /// **'Invitation applied. Welcome to FORENSIC EXPERT.'**
+  String get referralClaimValid;
+
+  /// Outcome.
+  ///
+  /// In en, this message translates to:
+  /// **'Invitation saved. It becomes valid once your email is confirmed.'**
+  String get referralClaimPending;
+
+  /// Outcome.
+  ///
+  /// In en, this message translates to:
+  /// **'This code was not found. Check it and try again.'**
+  String get referralClaimInvalid;
+
+  /// Outcome.
+  ///
+  /// In en, this message translates to:
+  /// **'You can’t use your own invitation code.'**
+  String get referralClaimSelf;
+
+  /// Outcome.
+  ///
+  /// In en, this message translates to:
+  /// **'An invitation is already linked to your account.'**
+  String get referralClaimAlready;
+
+  /// Outcome.
+  ///
+  /// In en, this message translates to:
+  /// **'Invitation codes apply only to new accounts.'**
+  String get referralClaimNotEligible;
+
+  /// Outcome.
+  ///
+  /// In en, this message translates to:
+  /// **'Too many attempts. Please try again later.'**
+  String get referralClaimRateLimited;
+
+  /// Outcome.
+  ///
+  /// In en, this message translates to:
+  /// **'Code saved. It will be applied after you sign in.'**
+  String get referralClaimSaved;
+
+  /// Outcome.
+  ///
+  /// In en, this message translates to:
+  /// **'No connection. The code is saved and will be applied later.'**
+  String get referralClaimOffline;
+
+  /// Validation.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the 8-character code (letters and digits).'**
+  String get referralClaimFormat;
+
+  /// Profile row hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Share FORENSIC EXPERT with colleagues'**
+  String get referralProfileRowHint;
+
+  /// Home action hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Share a reference you trust with colleagues'**
+  String get homeInviteHint;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Share'**
+  String get shareAction;
+
+  /// Footer for shared scientific records.
+  ///
+  /// In en, this message translates to:
+  /// **'Shared from FORENSIC EXPERT — scientific reference for forensic professionals. Verify against the original source before use.'**
+  String get shareFooter;
+
+  /// Label in shared text.
+  ///
+  /// In en, this message translates to:
+  /// **'Sources'**
+  String get shareSourcesLabel;
+
+  /// Snackbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved to your library'**
+  String get savedAdded;
+
+  /// Snackbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Removed from saved'**
+  String get savedRemoved;
+
+  /// Card title.
+  ///
+  /// In en, this message translates to:
+  /// **'Get started in 5 minutes'**
+  String get firstStepsTitle;
+
+  /// Progress.
+  ///
+  /// In en, this message translates to:
+  /// **'{done} of {total} done'**
+  String firstStepsProgress(int done, int total);
+
+  /// Step.
+  ///
+  /// In en, this message translates to:
+  /// **'Search a substance'**
+  String get firstStepsSearch;
+
+  /// Step.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore a discipline'**
+  String get firstStepsDiscipline;
+
+  /// Step.
+  ///
+  /// In en, this message translates to:
+  /// **'Open a scientific source'**
+  String get firstStepsSource;
+
+  /// Step.
+  ///
+  /// In en, this message translates to:
+  /// **'Try Forensic AI'**
+  String get firstStepsAi;
+
+  /// Step.
+  ///
+  /// In en, this message translates to:
+  /// **'Save useful material'**
+  String get firstStepsSave;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Hide'**
+  String get firstStepsHide;
+
+  /// Completed state.
+  ///
+  /// In en, this message translates to:
+  /// **'You’re all set. Your saved materials and recent records stay on this device.'**
+  String get firstStepsDone;
 }
 
 class _AppLocalizationsDelegate

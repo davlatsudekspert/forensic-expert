@@ -103,6 +103,12 @@ class UserDataController extends Notifier<UserDataSnapshot> {
     ),
   );
 
+  /// Birinchi qadam bajarildi (idempotent, faqat lokal).
+  Future<void> recordMilestone(String id) async {
+    if (state.milestones.contains(id)) return;
+    await _set(state.copyWith(milestones: [...state.milestones, id]));
+  }
+
   Future<void> clearSearchHistory() =>
       _set(state.copyWith(recentSearches: const []));
 

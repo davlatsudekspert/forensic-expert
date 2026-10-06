@@ -81,6 +81,7 @@ void main() {
         'fe.user.completed_lessons',
         'fe.user.recent_lessons',
         'fe.user.recently_viewed',
+        'fe.user.milestones',
       });
     },
   );

@@ -22,6 +22,7 @@ import '../../../domain/professional/professional_models.dart';
 import '../../professional/presentation/professional_widgets.dart';
 import '../../professional/presentation/verification_screens.dart';
 import '../../professional/professional_strings.dart';
+import '../../referral/presentation/invite_card.dart';
 import 'subscription_ui.dart';
 
 class ProfileScreen extends ConsumerWidget {
@@ -70,6 +71,8 @@ class ProfileScreen extends ConsumerWidget {
                     declaredRole: settings.declaredRole,
                     profile: localProfile,
                   ),
+                  const SizedBox(height: FeSpace.sm),
+                  const InviteColleagueCard(key: Key('profile.invite')),
                   FeSectionHeader(l.profileSectionVerification),
                   if (settings.userMode == UserMode.student)
                     Padding(

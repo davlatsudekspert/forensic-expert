@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../app/providers.dart';
+import '../../../app/referral.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
@@ -17,7 +18,9 @@ import '../../../domain/knowledge/knowledge_models.dart';
 import '../../../domain/library/library_models.dart';
 import '../../../domain/ports/billing_ports.dart';
 import '../../../domain/professional/review_models.dart';
+import '../../../domain/referral/share_text.dart';
 import '../../common/favorite_button.dart';
+import '../../common/share_button.dart';
 import '../../common/view_recorder.dart';
 import '../../evidence/evidence_strings.dart';
 import '../../evidence/presentation/research_screens.dart';
@@ -96,7 +99,18 @@ class KnowledgeDetailScreen extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(e.name.resolve(lang)),
-        actions: [FavoriteButton(id: e.id)],
+        actions: [
+          ShareButton(
+            text: (l) => recordShareText(
+              title: e.name.resolve(lang),
+              sources: e.allSources,
+              sourcesLabel: l.shareSourcesLabel,
+              footer: l.shareFooter,
+              appLink: ref.read(referralLinksProvider).recordLink(e.id),
+            ),
+          ),
+          FavoriteButton(id: e.id),
+        ],
       ),
       body: SafeArea(
         child: ListView(

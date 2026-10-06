@@ -745,7 +745,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get privacySummary =>
-      'Asosiy kutubxona va kalkulyatorlar oflayn ishlaydi. Qidiruv tarixi, natijalar va ixtiyoriy profilingiz (ism, tashkilot, mutaxassislik) qurilmangizda saqlanadi. Profil ma’lumotlari va malaka hujjatlari faqat professional tasdiqlash xizmati ulangandan keyin ariza yuborsangiz jo‘natiladi; hujjatlar maxfiy saqlanadi va hech qachon ochiq ko‘rsatilmaydi. Ilovada reklama SDK’lari yo‘q. Shaxsiy ma’lumot va ish tafsilotlari AI’ga hech qachon avtomatik yuborilmaydi.';
+      'Asosiy kutubxona va kalkulyatorlar oflayn ishlaydi. Qidiruv tarixi, natijalar va ixtiyoriy profilingiz (ism, tashkilot, mutaxassislik) qurilmangizda saqlanadi. Profil ma’lumotlari va malaka hujjatlari faqat professional tasdiqlash xizmati ulangandan keyin ariza yuborsangiz jo‘natiladi; hujjatlar maxfiy saqlanadi va hech qachon ochiq ko‘rsatilmaydi. Ilovada reklama SDK’lari yo‘q. Shaxsiy ma’lumot va ish tafsilotlari AI’ga hech qachon avtomatik yuborilmaydi.\n\nTakliflar: hamkasbingiz taklif kodidan foydalansangiz, server faqat ikki akkaunt orasidagi bog‘lanishni va emailingizning tuzli xeshini saqlaydi (akkauntni qayta ochish orqali suiiste’molning oldini olish uchun). Taklif qilgan kishi faqat umumiy sonlarni ko‘radi — ismingiz, emailingiz, profilingiz yoki hujjatlaringizni hech qachon ko‘rmaydi. Ilova kontaktlaringizni o‘qimaydi.';
 
   @override
   String get aboutBody =>
@@ -4693,4 +4693,205 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get aiComposerTitle => 'Ilmiy so‘rov';
+
+  @override
+  String get referralTitle => 'Hamkasbingizni taklif qiling';
+
+  @override
+  String get referralLead =>
+      'FORENSIC EXPERT foydali bo‘ladigan sud eksperti, laboratoriya mutaxassisi yoki talabani bilasizmi? Shaxsiy taklifingizni ulashing.';
+
+  @override
+  String get referralYourCode => 'Taklif kodingiz';
+
+  @override
+  String get referralYourLink => 'Taklif havolangiz';
+
+  @override
+  String get referralNoLinkNote =>
+      'Ommaviy FORENSIC EXPERT sayti ulangach, bu yerda veb-havola paydo bo‘ladi. Hozircha kodni ulashing — hamkasbingiz uni «Profil → Taklif kodi» bo‘limida kiritadi.';
+
+  @override
+  String get referralShare => 'Taklifni ulashish';
+
+  @override
+  String get referralCopy => 'Nusxa olish';
+
+  @override
+  String get referralCopied => 'Buferga nusxa olindi';
+
+  @override
+  String get referralStatsTitle => 'Takliflaringiz';
+
+  @override
+  String get referralStatJoined => 'Qo‘shildi';
+
+  @override
+  String get referralStatVerified => 'Tasdiqlangan';
+
+  @override
+  String get referralStatPending => 'Kutilmoqda';
+
+  @override
+  String get referralStatCredits => 'FORENSIC kreditlari';
+
+  @override
+  String referralCreditsPending(String amount) {
+    return '$amount kredit tasdiqlanishini kutmoqda';
+  }
+
+  @override
+  String referralCreditsFuture(String percent) {
+    return 'Pullik xizmatlar ishga tushgach, taklif qilgan hamkasblaringizning mos xaridlaridan sizga FORENSIC Credits hisoblanishi mumkin — xarid qiymatining $percent%. Kreditlar pul emas, ichki promo-bonus; ro‘yxatdan o‘tish uchun berilmaydi.';
+  }
+
+  @override
+  String referralCreditsActive(String percent) {
+    return 'Taklif qilgan hamkasblaringizning mos xaridlaridan $percent% miqdorida FORENSIC Credits olasiz. Kreditlar qaytarish muddatidan keyin tasdiqlanadi. Ular pul emas, ichki promo-bonus.';
+  }
+
+  @override
+  String get referralPrivacyNote =>
+      'Faqat umumiy sonlar ko‘rsatiladi. Hamkasblaringizning ismi, emaili, profili va hujjatlari hech qachon ulashilmaydi — na sizga, na taklifda.';
+
+  @override
+  String get referralShareSubject => 'FORENSIC EXPERT’ga taklif';
+
+  @override
+  String referralShareWithLink(String link) {
+    return 'Men FORENSIC EXPERT’dan sud-ekspert ishida ilmiy ma’lumotnoma sifatida foydalanaman: moddalar, usullar, manbalar va manbaga tayangan AI javoblari. Mening taklifim orqali qo‘shiling:\n$link';
+  }
+
+  @override
+  String referralShareWithCode(String code) {
+    return 'Men FORENSIC EXPERT’dan sud-ekspert ishida ilmiy ma’lumotnoma sifatida foydalanaman: moddalar, usullar, manbalar va manbaga tayangan AI javoblari. Ilovani o‘rnating va «Profil → Taklif kodi» bo‘limida kodimni kiriting: $code';
+  }
+
+  @override
+  String get referralSignInTitle => 'Taklif olish uchun hisobga kiring';
+
+  @override
+  String get referralSignInBody =>
+      'Shaxsiy kod email orqali kirganingizdan so‘ng serverda yaratiladi. Barcha ilmiy ma’lumotlar akkauntsiz ham ochiq.';
+
+  @override
+  String get referralNotConfigured =>
+      'FORENSIC EXPERT akkaunt xizmati ulangach, takliflar ishlaydi.';
+
+  @override
+  String get referralLoadError =>
+      'Taklif yuklanmadi. Aloqani tekshirib, qayta urinib ko‘ring.';
+
+  @override
+  String get referralRetry => 'Qayta urinish';
+
+  @override
+  String get referralHaveCode => 'Taklif kodi';
+
+  @override
+  String get referralHaveCodeHint =>
+      'Hamkasbingizdan taklif oldingizmi? 8 belgili kodni kiriting. U faqat yangi akkauntlar uchun amal qiladi.';
+
+  @override
+  String get referralCodeField => 'Taklif kodi';
+
+  @override
+  String get referralApply => 'Qo‘llash';
+
+  @override
+  String get referralLinkedNote =>
+      'Akkauntingiz hamkasbingiz taklifi bilan ochilgan.';
+
+  @override
+  String get referralClaimValid =>
+      'Taklif qo‘llandi. FORENSIC EXPERT’ga xush kelibsiz.';
+
+  @override
+  String get referralClaimPending =>
+      'Taklif saqlandi. Email tasdiqlangach kuchga kiradi.';
+
+  @override
+  String get referralClaimInvalid =>
+      'Bu kod topilmadi. Tekshirib, qayta urinib ko‘ring.';
+
+  @override
+  String get referralClaimSelf => 'O‘z taklif kodingizdan foydalana olmaysiz.';
+
+  @override
+  String get referralClaimAlready =>
+      'Akkauntingizga taklif allaqachon bog‘langan.';
+
+  @override
+  String get referralClaimNotEligible =>
+      'Taklif kodlari faqat yangi akkauntlar uchun amal qiladi.';
+
+  @override
+  String get referralClaimRateLimited =>
+      'Urinishlar juda ko‘p. Keyinroq qayta urinib ko‘ring.';
+
+  @override
+  String get referralClaimSaved =>
+      'Kod saqlandi. Hisobga kirganingizdan so‘ng qo‘llanadi.';
+
+  @override
+  String get referralClaimOffline =>
+      'Aloqa yo‘q. Kod saqlandi va keyinroq qo‘llanadi.';
+
+  @override
+  String get referralClaimFormat =>
+      '8 belgili kodni kiriting (harf va raqamlar).';
+
+  @override
+  String get referralProfileRowHint =>
+      'FORENSIC EXPERT’ni hamkasblaringiz bilan ulashing';
+
+  @override
+  String get homeInviteHint =>
+      'Ishonchli ma’lumotnomani hamkasblaringiz bilan ulashing';
+
+  @override
+  String get shareAction => 'Ulashish';
+
+  @override
+  String get shareFooter =>
+      'FORENSIC EXPERT’dan ulashildi — sud-ekspertlar uchun ilmiy ma’lumotnoma. Foydalanishdan oldin asl manba bilan solishtiring.';
+
+  @override
+  String get shareSourcesLabel => 'Manbalar';
+
+  @override
+  String get savedAdded => 'Saqlanganlarga qo‘shildi';
+
+  @override
+  String get savedRemoved => 'Saqlanganlardan olib tashlandi';
+
+  @override
+  String get firstStepsTitle => '5 daqiqada boshlang';
+
+  @override
+  String firstStepsProgress(int done, int total) {
+    return '$total tadan $done tasi bajarildi';
+  }
+
+  @override
+  String get firstStepsSearch => 'Moddani qidiring';
+
+  @override
+  String get firstStepsDiscipline => 'Fan bo‘limini oching';
+
+  @override
+  String get firstStepsSource => 'Ilmiy manbani oching';
+
+  @override
+  String get firstStepsAi => 'Forensic AI’ni sinab ko‘ring';
+
+  @override
+  String get firstStepsSave => 'Foydali materialni saqlang';
+
+  @override
+  String get firstStepsHide => 'Yashirish';
+
+  @override
+  String get firstStepsDone =>
+      'Hammasi tayyor. Saqlangan materiallar va so‘nggi yozuvlar shu qurilmada qoladi.';
 }

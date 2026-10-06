@@ -70,6 +70,12 @@ abstract final class Routes {
   static const verificationDocuments = '/profile/verification/documents';
   static const reviewDashboard = '/profile/reviews';
 
+  /// «Hamkasbingizni taklif qiling».
+  static const referral = '/profile/invite';
+
+  /// Kiruvchi taklif havolasi: `/invite/<CODE>` (deep link).
+  static const invitePrefix = '/invite/';
+
   // Akkaunt (ixtiyoriy). Email marshrut satriga yozilmaydi — `extra`.
   static const accountSignIn = '/profile/account/sign-in';
   static const accountRegister = '/profile/account/register';

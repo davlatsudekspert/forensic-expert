@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:fe_content_schema/fe_content_schema.dart' show KnowledgeArea;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -10,6 +12,7 @@ import '../core/settings/settings_controller.dart';
 import '../domain/catalog/tools_catalog.dart';
 import '../domain/knowledge/knowledge_models.dart';
 import '../domain/library/library_models.dart';
+import '../domain/referral/referral_models.dart';
 import '../features/account/presentation/auth_screens.dart';
 import '../features/ai/presentation/ai_screen.dart';
 import '../features/disciplines/presentation/disciplines_screens.dart';
@@ -37,11 +40,14 @@ import '../features/profile/presentation/legal_screens.dart';
 import '../features/profile/presentation/paywall_screen.dart';
 import '../features/profile/presentation/profile_screen.dart';
 import '../features/profile/presentation/settings_pickers.dart';
+import '../features/referral/presentation/referral_screen.dart';
 import '../features/shell/presentation/app_shell.dart';
 import '../features/tools/presentation/module_hub_screen.dart';
 import '../features/tools/presentation/tool_detail_screen.dart';
 import '../features/tools/presentation/tools_screen.dart';
+import 'referral.dart';
 import 'routes.dart';
+import 'user_data.dart';
 
 /// Onboarding holatiga qarab kerakli qadam (yoki `null` — tugagan).
 String? requiredOnboardingStep(AppSettings s) {
@@ -71,6 +77,31 @@ class _SettingsListenable extends ChangeNotifier {
   }
 }
 
+/// «Birinchi qadamlar»: qaysi bo‘lim ochilganini faqat lokal belgilaydi.
+String? firstStepFor(String location) {
+  if (location.startsWith('/home/disciplines/') ||
+      location.startsWith('/home/area/')) {
+    return 'discipline';
+  }
+  if (location.startsWith('/library/source/') ||
+      location.startsWith('${Routes.research}/')) {
+    return 'source';
+  }
+  if (location == Routes.ai) return 'ai';
+  return null;
+}
+
+void _recordFirstStep(Ref ref, String location) {
+  final step = firstStepFor(location);
+  if (step == null || ref.read(userDataProvider).milestones.contains(step)) {
+    return;
+  }
+  // Navigatsiyadan keyin (build vaqtida provayder o‘zgartirilmaydi).
+  scheduleMicrotask(
+    () => ref.read(userDataProvider.notifier).recordMilestone(step),
+  );
+}
+
 final routerProvider = Provider<GoRouter>((ref) {
   final rootKey = GlobalKey<NavigatorState>(debugLabel: 'root');
   final refresh = _SettingsListenable(ref);
@@ -83,10 +114,20 @@ final routerProvider = Provider<GoRouter>((ref) {
         Routes.home,
     refreshListenable: refresh,
     observers: [NavigationTimingObserver()],
-    redirect: (context, state) => onboardingRedirect(
-      ref.read(settingsControllerProvider),
-      state.matchedLocation,
-    ),
+    redirect: (context, state) {
+      final settings = ref.read(settingsControllerProvider);
+      // Taklif havolasi: kod lokal saqlanadi (attribution — serverda,
+      // akkaunt ochilgach), so‘ng onboarding yoki taklif sahifasi.
+      if (state.uri.path.startsWith(Routes.invitePrefix)) {
+        final code = ReferralLinks.extractCode(state.uri);
+        if (code != null) {
+          unawaited(ref.read(pendingReferralProvider.notifier).remember(code));
+        }
+        return onboardingRedirect(settings, Routes.referral) ?? Routes.referral;
+      }
+      _recordFirstStep(ref, state.matchedLocation);
+      return onboardingRedirect(settings, state.matchedLocation);
+    },
     routes: [
       GoRoute(
         path: Routes.language,
@@ -97,6 +138,11 @@ final routerProvider = Provider<GoRouter>((ref) {
         builder: (c, s) => const DisclaimerScreen(),
       ),
       GoRoute(path: Routes.mode, builder: (c, s) => const ModeScreen()),
+      // Faqat moslik uchun: redirect har doim taklif sahifasiga yo‘naltiradi.
+      GoRoute(
+        path: '${Routes.invitePrefix}:code',
+        builder: (c, s) => const SizedBox.shrink(),
+      ),
       GoRoute(
         path: Routes.welcomeAccount,
         builder: (c, s) => const AccountChoiceScreen(),
@@ -415,6 +461,11 @@ final routerProvider = Provider<GoRouter>((ref) {
                     path: 'reviews',
                     parentNavigatorKey: rootKey,
                     builder: (c, s) => const ReviewDashboardScreen(),
+                  ),
+                  GoRoute(
+                    path: 'invite',
+                    parentNavigatorKey: rootKey,
+                    builder: (c, s) => const ReferralScreen(),
                   ),
                   GoRoute(
                     path: 'privacy',

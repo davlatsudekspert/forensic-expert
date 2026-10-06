@@ -743,7 +743,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get privacySummary =>
-      'The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically.';
+      'The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically.\n\nInvitations: if you use a colleague’s invitation code, the server stores only the link between the two accounts and a salted hash of your email (to prevent abuse after account re-creation). Inviters see only totals — never your name, email, profile or documents. The app never reads your contacts.';
 
   @override
   String get aboutBody =>
@@ -4707,4 +4707,203 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get aiComposerTitle => 'Scientific query';
+
+  @override
+  String get referralTitle => 'Invite a colleague';
+
+  @override
+  String get referralLead =>
+      'Know a forensic scientist, laboratory specialist or student who would find FORENSIC EXPERT useful? Share your personal invitation.';
+
+  @override
+  String get referralYourCode => 'Your invitation code';
+
+  @override
+  String get referralYourLink => 'Your invitation link';
+
+  @override
+  String get referralNoLinkNote =>
+      'A web link will appear here once the public FORENSIC EXPERT site is connected. For now, share your code — a colleague enters it in Profile → Invitation code.';
+
+  @override
+  String get referralShare => 'Share invitation';
+
+  @override
+  String get referralCopy => 'Copy';
+
+  @override
+  String get referralCopied => 'Copied to clipboard';
+
+  @override
+  String get referralStatsTitle => 'Your invitations';
+
+  @override
+  String get referralStatJoined => 'Joined';
+
+  @override
+  String get referralStatVerified => 'Verified';
+
+  @override
+  String get referralStatPending => 'Pending';
+
+  @override
+  String get referralStatCredits => 'FORENSIC Credits';
+
+  @override
+  String referralCreditsPending(String amount) {
+    return '$amount credits awaiting confirmation';
+  }
+
+  @override
+  String referralCreditsFuture(String percent) {
+    return 'When paid services launch, eligible purchases by colleagues you invite may earn you FORENSIC Credits — $percent% of the purchase value. Credits are an internal promotional bonus, not cash, and are not awarded for registration.';
+  }
+
+  @override
+  String referralCreditsActive(String percent) {
+    return 'You receive FORENSIC Credits worth $percent% of eligible purchases by colleagues you invite. Credits are confirmed after the refund period. They are an internal promotional bonus, not cash.';
+  }
+
+  @override
+  String get referralPrivacyNote =>
+      'Only totals are shown. Your colleagues’ names, emails, profiles and documents are never shared — neither with you nor in the invitation.';
+
+  @override
+  String get referralShareSubject => 'Invitation to FORENSIC EXPERT';
+
+  @override
+  String referralShareWithLink(String link) {
+    return 'I use FORENSIC EXPERT as a scientific reference for forensic work — substances, methods, sources and source-linked AI answers. You can join with my invitation:\n$link';
+  }
+
+  @override
+  String referralShareWithCode(String code) {
+    return 'I use FORENSIC EXPERT as a scientific reference for forensic work — substances, methods, sources and source-linked AI answers. Install the app and enter my invitation code in Profile → Invitation code: $code';
+  }
+
+  @override
+  String get referralSignInTitle => 'Sign in to get your invitation';
+
+  @override
+  String get referralSignInBody =>
+      'Your personal code is created on the server after you sign in with your email. All scientific content stays available without an account.';
+
+  @override
+  String get referralNotConfigured =>
+      'Invitations will be available once the FORENSIC EXPERT account service is connected.';
+
+  @override
+  String get referralLoadError =>
+      'Couldn’t load your invitation. Check the connection and try again.';
+
+  @override
+  String get referralRetry => 'Try again';
+
+  @override
+  String get referralHaveCode => 'Invitation code';
+
+  @override
+  String get referralHaveCodeHint =>
+      'Received an invitation from a colleague? Enter the 8-character code. It applies only to new accounts.';
+
+  @override
+  String get referralCodeField => 'Invitation code';
+
+  @override
+  String get referralApply => 'Apply';
+
+  @override
+  String get referralLinkedNote =>
+      'Your account was created with a colleague’s invitation.';
+
+  @override
+  String get referralClaimValid =>
+      'Invitation applied. Welcome to FORENSIC EXPERT.';
+
+  @override
+  String get referralClaimPending =>
+      'Invitation saved. It becomes valid once your email is confirmed.';
+
+  @override
+  String get referralClaimInvalid =>
+      'This code was not found. Check it and try again.';
+
+  @override
+  String get referralClaimSelf => 'You can’t use your own invitation code.';
+
+  @override
+  String get referralClaimAlready =>
+      'An invitation is already linked to your account.';
+
+  @override
+  String get referralClaimNotEligible =>
+      'Invitation codes apply only to new accounts.';
+
+  @override
+  String get referralClaimRateLimited =>
+      'Too many attempts. Please try again later.';
+
+  @override
+  String get referralClaimSaved =>
+      'Code saved. It will be applied after you sign in.';
+
+  @override
+  String get referralClaimOffline =>
+      'No connection. The code is saved and will be applied later.';
+
+  @override
+  String get referralClaimFormat =>
+      'Enter the 8-character code (letters and digits).';
+
+  @override
+  String get referralProfileRowHint => 'Share FORENSIC EXPERT with colleagues';
+
+  @override
+  String get homeInviteHint => 'Share a reference you trust with colleagues';
+
+  @override
+  String get shareAction => 'Share';
+
+  @override
+  String get shareFooter =>
+      'Shared from FORENSIC EXPERT — scientific reference for forensic professionals. Verify against the original source before use.';
+
+  @override
+  String get shareSourcesLabel => 'Sources';
+
+  @override
+  String get savedAdded => 'Saved to your library';
+
+  @override
+  String get savedRemoved => 'Removed from saved';
+
+  @override
+  String get firstStepsTitle => 'Get started in 5 minutes';
+
+  @override
+  String firstStepsProgress(int done, int total) {
+    return '$done of $total done';
+  }
+
+  @override
+  String get firstStepsSearch => 'Search a substance';
+
+  @override
+  String get firstStepsDiscipline => 'Explore a discipline';
+
+  @override
+  String get firstStepsSource => 'Open a scientific source';
+
+  @override
+  String get firstStepsAi => 'Try Forensic AI';
+
+  @override
+  String get firstStepsSave => 'Save useful material';
+
+  @override
+  String get firstStepsHide => 'Hide';
+
+  @override
+  String get firstStepsDone =>
+      'You’re all set. Your saved materials and recent records stay on this device.';
 }

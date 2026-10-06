@@ -17,6 +17,7 @@ class UserDataSnapshot {
     this.completedLessons = const [],
     this.recentLessons = const [],
     this.recentlyViewed = const [],
+    this.milestones = const [],
   });
 
   final List<String> favorites;
@@ -30,6 +31,10 @@ class UserDataSnapshot {
   /// So‘nggi ochilgan yozuvlar (modda, metod, research) — faqat lokal.
   final List<String> recentlyViewed;
 
+  /// «Birinchi qadamlar» (masalan `discipline`, `source`, `ai`, `hidden`) —
+  /// faqat lokal; hech qanday faollik lentasi yoki telemetriya emas.
+  final List<String> milestones;
+
   UserDataSnapshot copyWith({
     List<String>? favorites,
     List<String>? recentTools,
@@ -37,6 +42,7 @@ class UserDataSnapshot {
     List<String>? completedLessons,
     List<String>? recentLessons,
     List<String>? recentlyViewed,
+    List<String>? milestones,
   }) => UserDataSnapshot(
     favorites: favorites ?? this.favorites,
     recentTools: recentTools ?? this.recentTools,
@@ -44,6 +50,7 @@ class UserDataSnapshot {
     completedLessons: completedLessons ?? this.completedLessons,
     recentLessons: recentLessons ?? this.recentLessons,
     recentlyViewed: recentlyViewed ?? this.recentlyViewed,
+    milestones: milestones ?? this.milestones,
   );
 }
 
@@ -58,6 +65,7 @@ class SharedPrefsUserDataRepository implements UserDataRepository {
   static const _kCompleted = 'fe.user.completed_lessons';
   static const _kLessons = 'fe.user.recent_lessons';
   static const _kViewed = 'fe.user.recently_viewed';
+  static const _kMilestones = 'fe.user.milestones';
 
   @override
   Future<UserDataSnapshot> load() async => UserDataSnapshot(
@@ -67,6 +75,7 @@ class SharedPrefsUserDataRepository implements UserDataRepository {
     completedLessons: _prefs.getStringList(_kCompleted) ?? const [],
     recentLessons: _prefs.getStringList(_kLessons) ?? const [],
     recentlyViewed: _prefs.getStringList(_kViewed) ?? const [],
+    milestones: _prefs.getStringList(_kMilestones) ?? const [],
   );
 
   @override
@@ -77,6 +86,7 @@ class SharedPrefsUserDataRepository implements UserDataRepository {
     await _prefs.setStringList(_kCompleted, d.completedLessons);
     await _prefs.setStringList(_kLessons, d.recentLessons);
     await _prefs.setStringList(_kViewed, d.recentlyViewed);
+    await _prefs.setStringList(_kMilestones, d.milestones);
   }
 }
 

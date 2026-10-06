@@ -107,3 +107,9 @@ da’vo qilinmaydi.
   emas, «yuborib bo‘lmadi» qaytariladi.
 * To‘siqlar (egasi): Supabase ulagichini qayta ulash (OAuth), ilovada OTP
   bilan bir marta kirish, keyin admin roli va Gemini real E2E sinovi.
+
+## 7. Hamkasb taklifi (referral) — DEPLOY KUTILMOQDA
+
+Migratsiya `20261006030000_referrals.sql` va testlar tayyor, lekin Supabase
+connector «Unauthorized» bo‘lgani uchun **hali qo‘llanmagan**. Tafsilot,
+tahdid modeli va deploy qadamlari: [`docs/REFERRALS.md`](REFERRALS.md).
