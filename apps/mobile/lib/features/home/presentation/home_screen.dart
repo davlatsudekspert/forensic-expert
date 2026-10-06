@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
@@ -41,6 +42,20 @@ enum HomeModule {
   const HomeModule(this.icon);
 
   final IconData icon;
+
+  /// Fan rangi — vazmin, bitta tizim ichida farqlanadigan.
+  FeHue get hue => switch (this) {
+    HomeModule.forensicMedicine || HomeModule.standardsLaws => FeHues.indigo,
+    HomeModule.toxicology || HomeModule.screening => FeHues.plum,
+    HomeModule.biochemistry || HomeModule.histology => FeHues.sage,
+    HomeModule.laboratory || HomeModule.methods => FeHues.slate,
+    HomeModule.emerging ||
+    HomeModule.research ||
+    HomeModule.learn => FeHues.ochre,
+    HomeModule.reagents ||
+    HomeModule.substances ||
+    HomeModule.ai => FeHues.teal,
+  };
 
   String label(AppLocalizations l) => switch (this) {
     HomeModule.forensicMedicine => l.moduleForensicMedicine,
@@ -128,60 +143,17 @@ class HomeScreen extends ConsumerWidget {
     final isStudent = mode == UserMode.student;
 
     return Scaffold(
-      appBar: AppBar(
-        titleSpacing: FeBreakpoints.gutter(context),
-        toolbarHeight: 64,
-        title: Row(
-          key: const Key('home.header'),
-          children: [
-            const BrandMark(size: 32),
-            const SizedBox(width: FeSpace.sm),
-            Flexible(
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    l.appTitle,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                      letterSpacing: 1.6,
-                      fontWeight: FontWeight.w700,
-                      height: 1.1,
-                    ),
-                  ),
-                  Text(
-                    l.appTagline,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: Theme.of(context).textTheme.labelSmall?.copyWith(
-                      color: FeTheme.of(context).textSecondary,
-                      letterSpacing: 0.3,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ),
       body: SafeArea(
         top: false,
         child: ListView(
-          padding: const EdgeInsets.symmetric(vertical: FeSpace.xs),
+          padding: const EdgeInsets.only(bottom: FeSpace.xs),
           children: [
+            const _HomeHero(),
             FeContentFrame(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  FeSearchEntry(
-                    key: const Key('home.search'),
-                    hint: l.searchHint,
-                    onTap: () => context.push(Routes.search),
-                  ),
-                  const SizedBox(height: FeSpace.xs),
-                  const _JurisdictionContext(),
+                  const SizedBox(height: FeSpace.sm),
                   if (FeFlags.showTestFixtures) ...[
                     const SizedBox(height: FeSpace.xs),
                     FeBanner(
@@ -199,13 +171,13 @@ class HomeScreen extends ConsumerWidget {
                     const SizedBox(height: FeSpace.md),
                     const _ContinueLearningCard(),
                   ],
+                  const SizedBox(height: FeSpace.sm),
+                  const _DatabaseCard(),
                   FeSectionHeader(l.homeAreasHeading),
                   _ModuleGrid(modules: modules),
                   const SizedBox(height: FeSpace.sm),
                   const _AllDisciplinesTile(),
                   const _QuickAccess(),
-                  const SizedBox(height: FeSpace.md),
-                  const _DatabaseCard(),
                   const SizedBox(height: FeSpace.lg),
                 ],
               ),
@@ -244,21 +216,27 @@ class _DatabaseCard extends ConsumerWidget {
               Text(
                 l.homeDbPack(s.packVersion!),
                 key: const Key('home.db.pack'),
-                style: FeThemeBuilder.numeric(t.bodyMedium!),
+                style: FeThemeBuilder.numeric(t.bodySmall!)
+                    .copyWith(color: c.textPrimary),
               ),
               if (versions['scientific'] case final v?)
                 Text(l.homeDbScientific(v), style: secondary),
               if (versions['jurisdiction'] case final v?)
                 Text(l.homeDbJurisdiction(v), style: secondary),
               if (review.total > 0) ...[
-                const SizedBox(height: FeSpace.xxs),
-                Text(
-                  l.homeDbCounts(substances, sources, review.total),
+                const SizedBox(height: FeSpace.sm),
+                _StatGrid(
                   key: const Key('home.db.counts'),
-                  style: secondary,
+                  stats: [
+                    (substances, l.homeStatSubstances, false),
+                    (sources, l.homeStatSources, false),
+                    (review.total, l.homeStatClaims, false),
+                    (review.humanVerified, l.homeStatHumanVerified, true),
+                  ],
                 ),
+                const SizedBox(height: FeSpace.xs),
                 Text(
-                  l.homeDbHumanVerified(review.humanVerified),
+                  l.homeStatPolicy,
                   key: const Key('home.db.humanVerified'),
                   style: secondary,
                 ),
@@ -270,29 +248,103 @@ class _DatabaseCard extends ConsumerWidget {
     );
     return FeCard(
       key: const Key('home.database'),
-      padding: const EdgeInsets.all(FeSpace.sm),
-      child: Row(
+      padding: const EdgeInsets.all(FeSpace.md),
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Icon(Icons.offline_pin_outlined, color: c.accent),
-          const SizedBox(width: FeSpace.sm),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Semantics(
+          Row(
+            children: [
+              Icon(Icons.dataset_outlined, color: c.accent, size: 22),
+              const SizedBox(width: FeSpace.xs),
+              Expanded(
+                child: Semantics(
                   header: true,
                   child: Text(l.homeDbTitle, style: t.titleSmall),
                 ),
-                const SizedBox(height: 2),
-                ...lines,
-                const SizedBox(height: FeSpace.xxs),
-                Text(l.homeDbOffline, style: secondary),
-              ],
-            ),
+              ),
+              Icon(Icons.offline_pin_outlined, size: 18, color: c.verified),
+            ],
           ),
+          const SizedBox(height: FeSpace.xs),
+          ...lines,
+          const SizedBox(height: FeSpace.xs),
+          Text(l.homeDbOffline, style: secondary),
         ],
       ),
+    );
+  }
+}
+
+/// Ilmiy baza raqamlari — katta tabular raqam + kichik yorliq.
+class _StatGrid extends StatelessWidget {
+  const _StatGrid({super.key, required this.stats});
+
+  /// (qiymat, yorliq, alohida ta’kid — «inson tasdiqlagan»).
+  final List<(int, String, bool)> stats;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    return LayoutBuilder(
+      builder: (context, box) {
+        final cols =
+            box.maxWidth >= 340 &&
+                MediaQuery.textScalerOf(context).scale(1) < 1.6
+            ? 4
+            : 2;
+        final w = (box.maxWidth - FeSpace.xs * (cols - 1)) / cols;
+        return Wrap(
+          spacing: FeSpace.xs,
+          runSpacing: FeSpace.xs,
+          children: [
+            for (final (value, label, emphasis) in stats)
+              SizedBox(
+                width: w,
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    color: emphasis ? c.accentContainer : c.surface,
+                    borderRadius: BorderRadius.circular(FeRadius.md),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: FeSpace.xs,
+                      vertical: FeSpace.sm,
+                    ),
+                    child: Semantics(
+                      label: [label, '$value'].join(': '),
+                      excludeSemantics: true,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            '$value',
+                            style: FeThemeBuilder.numeric(t.titleLarge!)
+                                .copyWith(
+                                  fontWeight: FontWeight.w700,
+                                  color: emphasis
+                                      ? c.onAccentContainer
+                                      : c.textPrimary,
+                                ),
+                          ),
+                          Text(
+                            label,
+                            maxLines: 2,
+                            style: t.labelSmall?.copyWith(
+                              color: emphasis
+                                  ? c.onAccentContainer
+                                  : c.textSecondary,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+          ],
+        );
+      },
     );
   }
 }
@@ -435,7 +487,10 @@ class _QuickAccess extends ConsumerWidget {
 /// Joriy yurisdiksiya — ilmiy kontent yurisdiksiyasiz ishlaydi; bu faqat
 /// huquqiy/protsessual qatlam uchun. Bayroq ishlatilmaydi (ISO kod + nom).
 class _JurisdictionContext extends ConsumerWidget {
-  const _JurisdictionContext();
+  const _JurisdictionContext({this.onDark = false});
+
+  /// Navy hero ustida — oq matn.
+  final bool onDark;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -460,7 +515,11 @@ class _JurisdictionContext extends ConsumerWidget {
           constraints: const BoxConstraints(minHeight: 48),
           child: Row(
             children: [
-              Icon(Icons.public, size: 18, color: c.textSecondary),
+              Icon(
+                Icons.public,
+                size: 18,
+                color: onDark ? const Color(0xFFB8C2D6) : c.textSecondary,
+              ),
               const SizedBox(width: FeSpace.xs),
               // Bitta o‘raladigan matn — 320 dp va ×2 shriftda ham sig‘adi.
               Expanded(
@@ -469,11 +528,17 @@ class _JurisdictionContext extends ConsumerWidget {
                     children: [
                       TextSpan(
                         text: '${l.homeJurisdictionChip(name)} · ',
-                        style: t.bodySmall?.copyWith(color: c.textSecondary),
+                        style: t.bodySmall?.copyWith(
+                          color: onDark
+                              ? const Color(0xFFD5DCE8)
+                              : c.textSecondary,
+                        ),
                       ),
                       TextSpan(
                         text: l.homeChange,
-                        style: t.labelMedium?.copyWith(color: c.accent),
+                        style: t.labelMedium?.copyWith(
+                          color: onDark ? const Color(0xFF7FDDE6) : c.accent,
+                        ),
                       ),
                     ],
                   ),
@@ -673,45 +738,157 @@ class _ModuleCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
-    final c = FeTheme.of(context);
-    return Semantics(
-      button: true,
-      child: Card(
-        clipBehavior: Clip.antiAlias,
-        margin: EdgeInsets.zero,
-        child: InkWell(
-          key: Key('home.module.${module.name}'),
-          onTap: () => module.isTab
-              ? context.go(module.route)
-              : context.push(module.route),
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(minHeight: 88),
+    final b = Theme.of(context).brightness;
+    final hue = module.hue;
+    return FeCard(
+      key: Key('home.module.${module.name}'),
+      padding: const EdgeInsets.fromLTRB(
+        FeSpace.sm,
+        FeSpace.sm,
+        FeSpace.sm,
+        FeSpace.sm,
+      ),
+      onTap: () =>
+          module.isTab ? context.go(module.route) : context.push(module.route),
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(minHeight: 84),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                DecoratedBox(
+                  decoration: BoxDecoration(
+                    color: hue.bg(b),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: SizedBox.square(
+                    dimension: 38,
+                    child: Icon(module.icon, color: hue.fg(b), size: 21),
+                  ),
+                ),
+                const Spacer(),
+                Icon(
+                  Icons.arrow_outward_rounded,
+                  size: 16,
+                  color: FeTheme.of(context).textSecondary,
+                ),
+              ],
+            ),
+            const SizedBox(height: FeSpace.sm),
+            Text(
+              module.label(l),
+              style: Theme.of(context).textTheme.titleSmall
+                  ?.copyWith(fontWeight: FontWeight.w600, height: 1.25),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Brend «hero»: navy panel, emblema, nom va shior, qidiruv, yurisdiksiya.
+/// Fon naqshi — juda xira xromatogramma va o‘lchov halqalari (bezak emas,
+/// ilmiy kontekst). Ikkala mavzuda ham navy — brend langari.
+class _HomeHero extends StatelessWidget {
+  const _HomeHero();
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final t = Theme.of(context).textTheme;
+    final dark = Theme.of(context).brightness == Brightness.dark;
+    final top = MediaQuery.paddingOf(context).top;
+    return AnnotatedRegion<SystemUiOverlayStyle>(
+      value: SystemUiOverlayStyle.light,
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: dark
+                ? const [Color(0xFF0C1830), Color(0xFF13233F)]
+                : const [Color(0xFF0F1E3D), Color(0xFF17305A)],
+          ),
+          borderRadius: const BorderRadius.vertical(
+            bottom: Radius.circular(FeRadius.hero),
+          ),
+        ),
+        child: ClipRRect(
+          borderRadius: const BorderRadius.vertical(
+            bottom: Radius.circular(FeRadius.hero),
+          ),
+          child: CustomPaint(
+            painter: const _HeroPatternPainter(),
             child: Padding(
-              padding: const EdgeInsets.all(FeSpace.sm),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  DecoratedBox(
-                    decoration: BoxDecoration(
-                      color: c.accentContainer,
-                      borderRadius: BorderRadius.circular(FeRadius.sm),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(6),
-                      child: Icon(
-                        module.icon,
-                        color: c.onAccentContainer,
-                        size: 20,
+              padding: EdgeInsets.only(top: top),
+              child: FeContentFrame(
+                child: Padding(
+                  padding: const EdgeInsets.only(
+                    top: FeSpace.md,
+                    bottom: FeSpace.md,
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Row(
+                        key: const Key('home.header'),
+                        children: [
+                          const BrandMark(
+                            size: 52,
+                            onDark: true,
+                            tier: BrandTier.icon,
+                          ),
+                          const SizedBox(width: FeSpace.sm),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                FittedBox(
+                                  fit: BoxFit.scaleDown,
+                                  alignment: AlignmentDirectional.centerStart,
+                                  child: Text(
+                                    l.appTitle,
+                                    maxLines: 1,
+                                    style: t.titleLarge?.copyWith(
+                                      color: Colors.white,
+                                      letterSpacing: 2,
+                                      fontWeight: FontWeight.w700,
+                                      height: 1.1,
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(height: 2),
+                                FittedBox(
+                                  fit: BoxFit.scaleDown,
+                                  alignment: AlignmentDirectional.centerStart,
+                                  child: Text(
+                                    l.appTagline,
+                                    maxLines: 1,
+                                    style: t.labelMedium?.copyWith(
+                                      color: const Color(0xFFC9A75E),
+                                      letterSpacing: 0.8,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
-                    ),
+                      const SizedBox(height: FeSpace.md),
+                      FeSearchEntry(
+                        key: const Key('home.search'),
+                        hint: l.searchHint,
+                        onDark: true,
+                        onTap: () => context.push(Routes.search),
+                      ),
+                      const SizedBox(height: FeSpace.xxs),
+                      const _JurisdictionContext(onDark: true),
+                    ],
                   ),
-                  const SizedBox(height: FeSpace.xs),
-                  Text(
-                    module.label(l),
-                    style: Theme.of(context).textTheme.titleSmall
-                        ?.copyWith(fontWeight: FontWeight.w600, height: 1.25),
-                  ),
-                ],
+                ),
               ),
             ),
           ),
@@ -719,4 +896,42 @@ class _ModuleCard extends StatelessWidget {
       ),
     );
   }
+}
+
+class _HeroPatternPainter extends CustomPainter {
+  const _HeroPatternPainter();
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final ring = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 1
+      ..color = const Color(0x14FFFFFF);
+    final center = Offset(size.width - 24, 40);
+    for (final r in [56.0, 88.0, 120.0, 152.0]) {
+      canvas.drawCircle(center, r, ring);
+    }
+    // Shartli xromatogramma chizig‘i (real ma’lumot emas — bezak).
+    final line = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 1.2
+      ..color = const Color(0x1F4CC9D6);
+    final y = size.height - 18;
+    final w = size.width;
+    final path = Path()..moveTo(0, y);
+    const peaks = [0.18, 0.31, 0.47, 0.62, 0.78, 0.9];
+    const heights = [10.0, 26.0, 14.0, 34.0, 12.0, 20.0];
+    for (var i = 0; i < peaks.length; i++) {
+      final x = w * peaks[i];
+      path
+        ..lineTo(x - 6, y)
+        ..lineTo(x, y - heights[i])
+        ..lineTo(x + 6, y);
+    }
+    path.lineTo(w, y);
+    canvas.drawPath(path, line);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }

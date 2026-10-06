@@ -6086,5 +6086,41 @@
         "type": "String"
       }
     }
+  },
+  "homeStatSubstances": "Substances",
+  "@homeStatSubstances": {
+    "description": "Stat label."
+  },
+  "homeStatSources": "Sources",
+  "@homeStatSources": {
+    "description": "Stat label."
+  },
+  "homeStatClaims": "Sourced claims",
+  "@homeStatClaims": {
+    "description": "Stat label."
+  },
+  "homeStatHumanVerified": "Human verified",
+  "@homeStatHumanVerified": {
+    "description": "Stat label."
+  },
+  "homeStatPolicy": "Human verified = two independent qualified experts. Automated checks and AI are never counted.",
+  "@homeStatPolicy": {
+    "description": "Stat footnote."
+  },
+  "aiHeroSubtitle": "Answers only from FORENSIC EXPERT’s sourced scientific database — every statement cites a record and shows its review status.",
+  "@aiHeroSubtitle": {
+    "description": "AI header subtitle."
+  },
+  "aiStatusConnected": "Connected · beta",
+  "@aiStatusConnected": {
+    "description": "AI status."
+  },
+  "aiContextSources": "Source: offline database",
+  "@aiContextSources": {
+    "description": "AI context chip."
+  },
+  "aiComposerTitle": "Scientific query",
+  "@aiComposerTitle": {
+    "description": "Composer title."
   }
 }

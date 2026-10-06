@@ -102,7 +102,14 @@ abstract final class FeThemeBuilder {
           fontWeight: FontWeight.w600,
           letterSpacing: -0.2,
         ),
-        titleLarge: text.titleLarge?.copyWith(fontWeight: FontWeight.w600),
+        headlineSmall: text.headlineSmall?.copyWith(
+          fontWeight: FontWeight.w700,
+          letterSpacing: -0.2,
+        ),
+        titleLarge: text.titleLarge?.copyWith(
+          fontWeight: FontWeight.w600,
+          letterSpacing: -0.1,
+        ),
         titleMedium: text.titleMedium?.copyWith(fontWeight: FontWeight.w600),
         labelLarge: text.labelLarge?.copyWith(fontWeight: FontWeight.w600),
       ),
@@ -124,7 +131,7 @@ abstract final class FeThemeBuilder {
         elevation: 0,
         margin: EdgeInsets.zero,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(FeRadius.md),
+          borderRadius: BorderRadius.circular(FeRadius.card),
           side: BorderSide(color: c.border, width: borderWidth),
         ),
       ),

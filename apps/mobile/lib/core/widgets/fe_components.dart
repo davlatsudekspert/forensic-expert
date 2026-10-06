@@ -23,15 +23,35 @@ class FeSectionHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     final t = Theme.of(context).textTheme;
     final c = FeTheme.of(context);
+    // Jurnal uslubidagi bo‘lim belgisi: ingichka teal chiziq + kichik
+    // bosh harfli sarlavha.
     final heading = Semantics(
       header: true,
-      child: Text(
-        title.toUpperCase(),
-        style: t.labelMedium?.copyWith(
-          color: c.textSecondary,
-          letterSpacing: 1.1,
-          fontWeight: FontWeight.w700,
-        ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          ExcludeSemantics(
+            child: Container(
+              width: 3,
+              height: 14,
+              decoration: BoxDecoration(
+                color: c.accent,
+                borderRadius: BorderRadius.circular(2),
+              ),
+            ),
+          ),
+          const SizedBox(width: FeSpace.xs),
+          Flexible(
+            child: Text(
+              title.toUpperCase(),
+              style: t.labelMedium?.copyWith(
+                color: c.textPrimary,
+                letterSpacing: 1.2,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+          ),
+        ],
       ),
     );
     if (actionLabel == null || onAction == null) {
@@ -125,11 +145,12 @@ class StatusChip extends StatelessWidget {
       excludeSemantics: true,
       child: DecoratedBox(
         decoration: BoxDecoration(
-          border: Border.all(color: color.withValues(alpha: 0.6)),
+          color: color.withValues(alpha: 0.10),
+          border: Border.all(color: color.withValues(alpha: 0.28)),
           borderRadius: BorderRadius.circular(999),
         ),
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -201,40 +222,74 @@ class FeBanner extends StatelessWidget {
       FeBannerTone.info => l.severityInfo,
       FeBannerTone.review => l.severityReview,
     };
+    final stripe = switch (tone) {
+      FeBannerTone.critical => c.danger,
+      FeBannerTone.warning => c.warning,
+      FeBannerTone.info => c.borderStrong,
+      FeBannerTone.review => c.accent,
+    };
+    final hc = FeTheme.isHighContrast(context);
     return Semantics(
       container: true,
       label: level,
       child: DecoratedBox(
         decoration: BoxDecoration(
-          color: bg,
-          borderRadius: BorderRadius.circular(FeRadius.sm),
-          // Bir xil kenglik: borderRadius bilan notekis chegara ruxsat etilmaydi.
-          border: Border.all(color: border, width: width),
+          color: tone == FeBannerTone.review ? c.accentContainer : bg,
+          borderRadius: BorderRadius.circular(FeRadius.md),
+          // Yuqori kontrastda to‘liq chegara; aks holda faqat chap chiziq.
+          border: hc || tone == FeBannerTone.critical
+              ? Border.all(color: border, width: width)
+              : null,
         ),
-        child: Padding(
-          padding: const EdgeInsets.all(FeSpace.sm),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Icon(
-                icon,
-                size: 20,
-                color: tone == FeBannerTone.critical ? c.danger : fg,
-              ),
-              const SizedBox(width: FeSpace.xs),
-              Expanded(
-                child: Text(
-                  text,
-                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                    color: fg,
-                    height: 1.4,
-                    fontWeight: tone == FeBannerTone.critical
-                        ? FontWeight.w600
-                        : null,
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(FeRadius.md),
+          child: IntrinsicHeight(
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Container(width: 3, color: stripe),
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(
+                      FeSpace.sm,
+                      FeSpace.sm,
+                      FeSpace.sm,
+                      FeSpace.sm,
+                    ),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Icon(
+                          icon,
+                          size: 20,
+                          color: switch (tone) {
+                            FeBannerTone.critical => c.danger,
+                            FeBannerTone.review => c.onAccentContainer,
+                            _ => fg,
+                          },
+                        ),
+                        const SizedBox(width: FeSpace.xs),
+                        Expanded(
+                          child: Text(
+                            text,
+                            style: Theme.of(context).textTheme.bodySmall
+                                ?.copyWith(
+                                  color: tone == FeBannerTone.review
+                                      ? c.onAccentContainer
+                                      : fg,
+                                  height: 1.45,
+                                  fontWeight: tone == FeBannerTone.critical
+                                      ? FontWeight.w600
+                                      : null,
+                                ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
@@ -262,7 +317,20 @@ class FeEmptyState extends StatelessWidget {
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
     final children = [
-      Icon(icon, size: compact ? 20 : 36, color: c.textSecondary),
+      if (compact)
+        Icon(icon, size: 20, color: c.textSecondary)
+      else
+        DecoratedBox(
+          decoration: BoxDecoration(
+            color: c.surface,
+            shape: BoxShape.circle,
+            border: Border.all(color: c.border),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(FeSpace.md),
+            child: Icon(icon, size: 28, color: c.accent),
+          ),
+        ),
       SizedBox(height: compact ? 0 : FeSpace.sm, width: FeSpace.sm),
       if (title != null)
         Semantics(
@@ -288,14 +356,16 @@ class FeEmptyState extends StatelessWidget {
   }
 }
 
-/// Chegarali, bosiladigan kartochka.
-class FeCard extends StatelessWidget {
+/// Kartochka: oq/tonal sirt, nozik chegara, yorug‘ mavzuda yengil soya,
+/// bosilganda sezilar-sezilmas kichrayish (reduced motion’da yo‘q).
+class FeCard extends StatefulWidget {
   const FeCard({
     super.key,
     required this.child,
     this.onTap,
     this.padding = const EdgeInsets.all(FeSpace.md),
     this.semanticLabel,
+    this.color,
   });
 
   final Widget child;
@@ -303,16 +373,55 @@ class FeCard extends StatelessWidget {
   final EdgeInsetsGeometry padding;
   final String? semanticLabel;
 
+  /// Maxsus fon (masalan, tonal holat kartasi).
+  final Color? color;
+
+  @override
+  State<FeCard> createState() => _FeCardState();
+}
+
+class _FeCardState extends State<FeCard> {
+  bool _pressed = false;
+
   @override
   Widget build(BuildContext context) {
+    final c = FeTheme.of(context);
+    final brightness = Theme.of(context).brightness;
+    final hc = FeTheme.isHighContrast(context);
+    final radius = BorderRadius.circular(FeRadius.card);
     return Semantics(
-      button: onTap != null,
-      label: semanticLabel,
-      child: Card(
-        clipBehavior: Clip.antiAlias,
-        child: InkWell(
-          onTap: onTap,
-          child: Padding(padding: padding, child: child),
+      button: widget.onTap != null,
+      label: widget.semanticLabel,
+      child: AnimatedScale(
+        scale: _pressed ? 0.985 : 1,
+        duration: FeMotion.of(context, FeMotion.fast),
+        curve: Curves.easeOut,
+        child: DecoratedBox(
+          decoration: BoxDecoration(
+            borderRadius: radius,
+            boxShadow: hc ? const [] : FeShadow.card(brightness),
+          ),
+          child: Material(
+            color: widget.color ?? c.surfaceRaised,
+            shape: RoundedRectangleBorder(
+              borderRadius: radius,
+              side: BorderSide(
+                color: hc
+                    ? c.borderStrong
+                    : c.border.withValues(
+                        alpha: brightness == Brightness.dark ? 1 : 0.7,
+                      ),
+              ),
+            ),
+            clipBehavior: Clip.antiAlias,
+            child: InkWell(
+              onTap: widget.onTap,
+              onHighlightChanged: widget.onTap == null
+                  ? null
+                  : (v) => setState(() => _pressed = v),
+              child: Padding(padding: widget.padding, child: widget.child),
+            ),
+          ),
         ),
       ),
     );
@@ -321,10 +430,18 @@ class FeCard extends StatelessWidget {
 
 /// Qidiruv maydoni ko‘rinishidagi tugma (Home, Library).
 class FeSearchEntry extends StatelessWidget {
-  const FeSearchEntry({super.key, required this.hint, required this.onTap});
+  const FeSearchEntry({
+    super.key,
+    required this.hint,
+    required this.onTap,
+    this.onDark = false,
+  });
 
   final String hint;
   final VoidCallback onTap;
+
+  /// Navy brend paneli ustida (Home hero).
+  final bool onDark;
 
   @override
   Widget build(BuildContext context) {
@@ -334,11 +451,15 @@ class FeSearchEntry extends StatelessWidget {
       label: hint,
       excludeSemantics: true,
       child: Material(
-        color: c.surface,
+        color: onDark ? Colors.white : c.surfaceRaised,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(FeRadius.md),
           side: BorderSide(
-            color: FeTheme.isHighContrast(context) ? c.borderStrong : c.border,
+            color: onDark
+                ? Colors.transparent
+                : FeTheme.isHighContrast(context)
+                ? c.borderStrong
+                : c.border,
           ),
         ),
         child: InkWell(
@@ -353,13 +474,19 @@ class FeSearchEntry extends StatelessWidget {
               ),
               child: Row(
                 children: [
-                  Icon(Icons.search, color: c.accent),
+                  Icon(
+                    Icons.search,
+                    color: onDark ? const Color(0xFF0A6F7A) : c.accent,
+                  ),
                   const SizedBox(width: FeSpace.sm),
                   Expanded(
                     child: Text(
                       hint,
-                      style: Theme.of(context).textTheme.bodyMedium
-                          ?.copyWith(color: c.textSecondary),
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                        color: onDark
+                            ? const Color(0xFF4A5568)
+                            : c.textSecondary,
+                      ),
                     ),
                   ),
                 ],

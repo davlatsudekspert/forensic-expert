@@ -4664,4 +4664,33 @@ class AppLocalizationsUz extends AppLocalizations {
   String sourcePmid(String id) {
     return 'PMID $id';
   }
+
+  @override
+  String get homeStatSubstances => 'Moddalar';
+
+  @override
+  String get homeStatSources => 'Manbalar';
+
+  @override
+  String get homeStatClaims => 'Manbali da’volar';
+
+  @override
+  String get homeStatHumanVerified => 'Inson tasdiqlagan';
+
+  @override
+  String get homeStatPolicy =>
+      '«Inson tasdiqlagan» = ikki mustaqil malakali ekspert. Avtomatik tekshiruv va AI hisoblanmaydi.';
+
+  @override
+  String get aiHeroSubtitle =>
+      'Faqat FORENSIC EXPERT’ning manbali ilmiy bazasidan javob — har bir fikr yozuvga iqtibos va tekshiruv holati bilan.';
+
+  @override
+  String get aiStatusConnected => 'Ulangan · beta';
+
+  @override
+  String get aiContextSources => 'Manba: oflayn baza';
+
+  @override
+  String get aiComposerTitle => 'Ilmiy so‘rov';
 }

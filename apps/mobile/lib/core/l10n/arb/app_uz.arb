@@ -1401,5 +1401,14 @@
   "sourceOpenDetails": "Manba tafsilotlari va bog‘langan yozuvlar",
   "homeDbCounts": "{substances} modda · {sources} manba · {claims} manbali da’vo",
   "homeDbHumanVerified": "Inson tasdiqlagan (2 mustaqil ekspert): {count}",
-  "sourcePmid": "PMID {id}"
+  "sourcePmid": "PMID {id}",
+  "homeStatSubstances": "Moddalar",
+  "homeStatSources": "Manbalar",
+  "homeStatClaims": "Manbali da’volar",
+  "homeStatHumanVerified": "Inson tasdiqlagan",
+  "homeStatPolicy": "«Inson tasdiqlagan» = ikki mustaqil malakali ekspert. Avtomatik tekshiruv va AI hisoblanmaydi.",
+  "aiHeroSubtitle": "Faqat FORENSIC EXPERT’ning manbali ilmiy bazasidan javob — har bir fikr yozuvga iqtibos va tekshiruv holati bilan.",
+  "aiStatusConnected": "Ulangan · beta",
+  "aiContextSources": "Manba: oflayn baza",
+  "aiComposerTitle": "Ilmiy so‘rov"
 }

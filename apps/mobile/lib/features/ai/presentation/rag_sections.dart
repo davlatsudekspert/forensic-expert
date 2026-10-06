@@ -64,7 +64,7 @@ class RagSectionsView extends ConsumerWidget {
                 StatusChip(
                   icon: Icons.pending_outlined,
                   label: l.lifecycleLabel(ClaimLifecycle.fromCode(e.lifecycle)),
-                  color: c.warning,
+                  color: c.accent,
                 ),
                 if (e.hasConflict)
                   StatusChip(

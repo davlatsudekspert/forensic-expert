@@ -203,7 +203,96 @@ abstract final class FeSpace {
 abstract final class FeRadius {
   static const double sm = 8;
   static const double md = 12;
+
+  /// Kartalar — bitta radius butun ilovada.
+  static const double card = 14;
   static const double lg = 16;
+
+  /// Brend «hero» panellari (Home, AI, Profil sarlavhasi).
+  static const double hero = 24;
+}
+
+/// Yengil soya — faqat yorug‘ mavzuda (qorong‘ida tonal sirtlar).
+abstract final class FeShadow {
+  static List<BoxShadow> card(Brightness b) => b == Brightness.dark
+      ? const []
+      : const [
+          BoxShadow(
+            color: Color(0x0F0F1E3D),
+            blurRadius: 2,
+            offset: Offset(0, 1),
+          ),
+          BoxShadow(
+            color: Color(0x0D0F1E3D),
+            blurRadius: 16,
+            offset: Offset(0, 6),
+          ),
+        ];
+}
+
+/// Fanlar uchun vazmin, ammo farqlanadigan ranglar (bitta tizim ichida).
+/// Har biri (ikonka, fon) juftligi; qorong‘i mavzu uchun alohida.
+@immutable
+class FeHue {
+  const FeHue(this.lightFg, this.lightBg, this.darkFg, this.darkBg);
+
+  final Color lightFg;
+  final Color lightBg;
+  final Color darkFg;
+  final Color darkBg;
+
+  Color fg(Brightness b) => b == Brightness.dark ? darkFg : lightFg;
+  Color bg(Brightness b) => b == Brightness.dark ? darkBg : lightBg;
+}
+
+abstract final class FeHues {
+  /// Ilmiy teal — asosiy.
+  static const teal = FeHue(
+    Color(0xFF0A6F7A),
+    Color(0xFFE0F2F4),
+    Color(0xFF7FDDE6),
+    Color(0xFF0E3A40),
+  );
+
+  /// Institutsional indigo — sud tibbiyoti, huquq.
+  static const indigo = FeHue(
+    Color(0xFF2F4A8A),
+    Color(0xFFE6EBF7),
+    Color(0xFFA9BCF0),
+    Color(0xFF1C2A4D),
+  );
+
+  /// Vazmin plum — toksikologiya.
+  static const plum = FeHue(
+    Color(0xFF6B3E78),
+    Color(0xFFF2E9F5),
+    Color(0xFFD6B3E2),
+    Color(0xFF33223D),
+  );
+
+  /// Grafit-moviy — laboratoriya, metodlar.
+  static const slate = FeHue(
+    Color(0xFF3E5873),
+    Color(0xFFE8EEF4),
+    Color(0xFFB4C6D9),
+    Color(0xFF1E2C3B),
+  );
+
+  /// Mo‘tadil yashil — biokimyo, gistologiya.
+  static const sage = FeHue(
+    Color(0xFF2F6B4F),
+    Color(0xFFE5F1EA),
+    Color(0xFF9FD8B9),
+    Color(0xFF173528),
+  );
+
+  /// Vazmin oltin — ta’lim, tadqiqot (juda kam ishlatiladi).
+  static const ochre = FeHue(
+    Color(0xFF7A5A12),
+    Color(0xFFF6EFDD),
+    Color(0xFFE5C77A),
+    Color(0xFF382A0B),
+  );
 }
 
 /// Harakat davomiyliklari. Reduced motion yoqilganda nolga tushiriladi.

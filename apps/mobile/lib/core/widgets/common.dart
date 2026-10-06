@@ -80,9 +80,10 @@ class ReviewStatusBadge extends StatelessWidget {
         c.reviewed,
         Icons.fact_check_outlined,
       ),
+      // «Manbali · tekshiruvda» — xato emas, holat: vazmin teal.
       ScientificStatus.needsReview => (
         l.statusNeedsReview,
-        c.warning,
+        c.accent,
         Icons.pending_outlined,
       ),
       ScientificStatus.outdated => (
@@ -146,39 +147,61 @@ class ReviewStatusBadge extends StatelessWidget {
   }
 }
 
-/// «MA’LUMOT TEKSHIRILMAGAN — EKSPERT TASDIG‘I KERAK» banneri.
+/// «Ekspert tasdig‘i kerak» eslatmasi — xato emas, ilmiy holat:
+/// tonal teal panel, chap chiziq, aniq matn (ogohlantirish qizil emas).
 class UnverifiedBanner extends StatelessWidget {
   const UnverifiedBanner({super.key});
 
   @override
   Widget build(BuildContext context) {
     final c = FeTheme.of(context);
+    final hc = FeTheme.isHighContrast(context);
     return Semantics(
       container: true,
       liveRegion: true,
       child: DecoratedBox(
         decoration: BoxDecoration(
-          color: c.warningContainer,
-          borderRadius: BorderRadius.circular(FeRadius.sm),
-          border: Border.all(color: c.warning),
+          color: c.accentContainer,
+          borderRadius: BorderRadius.circular(FeRadius.md),
+          border: hc ? Border.all(color: c.accent, width: 1.5) : null,
         ),
-        child: Padding(
-          padding: const EdgeInsets.all(FeSpace.sm),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Icon(Icons.warning_amber_rounded, color: c.onWarningContainer),
-              const SizedBox(width: FeSpace.xs),
-              Expanded(
-                child: Text(
-                  AppLocalizations.of(context).unverifiedBanner,
-                  style: Theme.of(context).textTheme.labelLarge?.copyWith(
-                    color: c.onWarningContainer,
-                    fontWeight: FontWeight.w700,
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(FeRadius.md),
+          child: IntrinsicHeight(
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Container(width: 3, color: c.accent),
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(FeSpace.sm),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Icon(
+                          Icons.pending_actions_outlined,
+                          color: c.onAccentContainer,
+                          size: 20,
+                        ),
+                        const SizedBox(width: FeSpace.xs),
+                        Expanded(
+                          child: Text(
+                            AppLocalizations.of(context).unverifiedBanner,
+                            style: Theme.of(context).textTheme.labelLarge
+                                ?.copyWith(
+                                  color: c.onAccentContainer,
+                                  fontWeight: FontWeight.w600,
+                                  letterSpacing: 0.2,
+                                  height: 1.35,
+                                ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

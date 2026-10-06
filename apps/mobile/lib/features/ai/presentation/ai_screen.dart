@@ -110,8 +110,10 @@ class _AiScreenState extends ConsumerState<AiScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
+                  const SizedBox(height: FeSpace.xs),
+                  _AiHeader(available: available),
+                  const SizedBox(height: FeSpace.sm),
                   if (!available) ...[
-                    const SizedBox(height: FeSpace.sm),
                     const _PreviewStateCard(),
                     const SizedBox(height: FeSpace.sm),
                   ],
@@ -559,6 +561,143 @@ class _SourceRow extends StatelessWidget {
 }
 
 /// Ekran yuqorisidagi holat: AI ulanmagan, bu interfeys namoyishi.
+/// Forensic AI sarlavhasi: navy panel, holat, ilmiy kontekst.
+class _AiHeader extends ConsumerWidget {
+  const _AiHeader({required this.available});
+
+  final bool available;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    final t = Theme.of(context).textTheme;
+    final lang = Localizations.localeOf(context).languageCode;
+    final jid = ref.watch(
+      settingsControllerProvider.select((s) => s.jurisdictionId),
+    );
+    final jname =
+        ref.watch(jurisdictionResolverProvider).byId(jid)?.name(lang) ?? jid;
+    const muted = Color(0xFFC9D2E0);
+    Widget chip(IconData icon, String text) => DecoratedBox(
+      decoration: BoxDecoration(
+        color: const Color(0x1AFFFFFF),
+        borderRadius: BorderRadius.circular(999),
+        border: Border.all(color: const Color(0x33FFFFFF)),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(icon, size: 14, color: muted),
+            const SizedBox(width: 6),
+            Flexible(
+              child: Text(
+                text,
+                style: t.labelSmall?.copyWith(color: Colors.white),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+    return DecoratedBox(
+      key: const Key('ai.header'),
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [Color(0xFF0F1E3D), Color(0xFF123A4A)],
+        ),
+        borderRadius: BorderRadius.circular(FeRadius.lg),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(FeSpace.md),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                const DecoratedBox(
+                  decoration: BoxDecoration(
+                    color: Color(0x264CC9D6),
+                    shape: BoxShape.circle,
+                  ),
+                  child: Padding(
+                    padding: EdgeInsets.all(10),
+                    child: Icon(
+                      Icons.auto_awesome_outlined,
+                      color: Color(0xFF7FDDE6),
+                      size: 22,
+                    ),
+                  ),
+                ),
+                const SizedBox(width: FeSpace.sm),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Semantics(
+                        header: true,
+                        child: Text(
+                          l.moduleAi,
+                          style: t.titleLarge?.copyWith(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      DecoratedBox(
+                        decoration: BoxDecoration(
+                          color: available
+                              ? const Color(0x336ED3A0)
+                              : const Color(0x33F2C14E),
+                          borderRadius: BorderRadius.circular(999),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 10,
+                            vertical: 3,
+                          ),
+                          child: Text(
+                            available ? l.aiStatusConnected : l.aiStatusPreview,
+                            key: const Key('ai.headerStatus'),
+                            style: t.labelSmall?.copyWith(
+                              color: available
+                                  ? const Color(0xFF9FE6C1)
+                                  : const Color(0xFFFFE3A3),
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: FeSpace.sm),
+            Text(
+              l.aiHeroSubtitle,
+              style: t.bodySmall?.copyWith(color: muted, height: 1.45),
+            ),
+            const SizedBox(height: FeSpace.sm),
+            Wrap(
+              spacing: FeSpace.xs,
+              runSpacing: FeSpace.xs,
+              children: [
+                chip(Icons.public, l.homeJurisdictionChip(jname)),
+                chip(Icons.dataset_outlined, l.aiContextSources),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
 class _PreviewStateCard extends StatelessWidget {
   const _PreviewStateCard();
 
@@ -567,42 +706,13 @@ class _PreviewStateCard extends StatelessWidget {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
-    return DecoratedBox(
+    return FeCard(
       key: const Key('ai.previewState'),
-      decoration: BoxDecoration(
-        color: c.surfaceRaised,
-        borderRadius: BorderRadius.circular(FeRadius.md),
-        border: Border.all(color: c.warning),
-      ),
       child: Padding(
-        padding: const EdgeInsets.all(FeSpace.md),
+        padding: EdgeInsets.zero,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Wrap(
-              spacing: FeSpace.sm,
-              runSpacing: FeSpace.xxs,
-              crossAxisAlignment: WrapCrossAlignment.center,
-              children: [
-                Semantics(
-                  header: true,
-                  child: Text(
-                    l.moduleAi,
-                    style: t.titleMedium?.copyWith(
-                      fontWeight: FontWeight.w700,
-                      letterSpacing: 0.4,
-                    ),
-                  ),
-                ),
-                StatusChip(
-                  key: const Key('ai.statusChip'),
-                  icon: Icons.cloud_off_outlined,
-                  label: l.aiStatusPreview,
-                  color: c.warning,
-                ),
-              ],
-            ),
-            const SizedBox(height: FeSpace.xs),
             Text(l.aiNotConnectedTitle, style: t.titleSmall),
             const SizedBox(height: FeSpace.xxs),
             for (final p in [

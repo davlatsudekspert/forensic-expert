@@ -8516,6 +8516,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'PMID {id}'**
   String sourcePmid(String id);
+
+  /// Stat label.
+  ///
+  /// In en, this message translates to:
+  /// **'Substances'**
+  String get homeStatSubstances;
+
+  /// Stat label.
+  ///
+  /// In en, this message translates to:
+  /// **'Sources'**
+  String get homeStatSources;
+
+  /// Stat label.
+  ///
+  /// In en, this message translates to:
+  /// **'Sourced claims'**
+  String get homeStatClaims;
+
+  /// Stat label.
+  ///
+  /// In en, this message translates to:
+  /// **'Human verified'**
+  String get homeStatHumanVerified;
+
+  /// Stat footnote.
+  ///
+  /// In en, this message translates to:
+  /// **'Human verified = two independent qualified experts. Automated checks and AI are never counted.'**
+  String get homeStatPolicy;
+
+  /// AI header subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Answers only from FORENSIC EXPERT’s sourced scientific database — every statement cites a record and shows its review status.'**
+  String get aiHeroSubtitle;
+
+  /// AI status.
+  ///
+  /// In en, this message translates to:
+  /// **'Connected · beta'**
+  String get aiStatusConnected;
+
+  /// AI context chip.
+  ///
+  /// In en, this message translates to:
+  /// **'Source: offline database'**
+  String get aiContextSources;
+
+  /// Composer title.
+  ///
+  /// In en, this message translates to:
+  /// **'Scientific query'**
+  String get aiComposerTitle;
 }
 
 class _AppLocalizationsDelegate

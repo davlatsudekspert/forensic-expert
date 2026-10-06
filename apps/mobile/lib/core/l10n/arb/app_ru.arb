@@ -1401,5 +1401,14 @@
   "sourceOpenDetails": "Подробности источника и связанные записи",
   "homeDbCounts": "Веществ: {substances} · источников: {sources} · утверждений с источниками: {claims}",
   "homeDbHumanVerified": "Подтверждено людьми (2 независимых эксперта): {count}",
-  "sourcePmid": "PMID {id}"
+  "sourcePmid": "PMID {id}",
+  "homeStatSubstances": "Вещества",
+  "homeStatSources": "Источники",
+  "homeStatClaims": "Утверждения",
+  "homeStatHumanVerified": "Подтверждено экспертами",
+  "homeStatPolicy": "«Подтверждено» = два независимых квалифицированных эксперта. Автоматические проверки и ИИ не учитываются.",
+  "aiHeroSubtitle": "Ответы только из научной базы FORENSIC EXPERT с источниками — каждое утверждение ссылается на запись и показывает статус проверки.",
+  "aiStatusConnected": "Подключено · бета",
+  "aiContextSources": "Источник: офлайн-база",
+  "aiComposerTitle": "Научный запрос"
 }

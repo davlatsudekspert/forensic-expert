@@ -35,6 +35,15 @@ k("sourceOpenDetails","Action.","Source details and linked records","Подро�
 k("homeDbCounts","Home DB counts.","{substances} substances · {sources} sources · {claims} sourced claims","Веществ: {substances} · источников: {sources} · утверждений с источниками: {claims}","{substances} modda · {sources} manba · {claims} manbali da’vo",{"substances":I,"sources":I,"claims":I})
 k("homeDbHumanVerified","Home DB human-verified count.","Human verified (2 independent experts): {count}","Подтверждено людьми (2 независимых эксперта): {count}","Inson tasdiqlagan (2 mustaqil ekspert): {count}",{"count":I})
 k("sourcePmid","Source identifier.","PMID {id}","PMID {id}","PMID {id}",{"id":S})
+k("homeStatSubstances","Stat label.","Substances","Вещества","Moddalar")
+k("homeStatSources","Stat label.","Sources","Источники","Manbalar")
+k("homeStatClaims","Stat label.","Sourced claims","Утверждения","Manbali da’volar")
+k("homeStatHumanVerified","Stat label.","Human verified","Подтверждено экспертами","Inson tasdiqlagan")
+k("homeStatPolicy","Stat footnote.","Human verified = two independent qualified experts. Automated checks and AI are never counted.","«Подтверждено» = два независимых квалифицированных эксперта. Автоматические проверки и ИИ не учитываются.","«Inson tasdiqlagan» = ikki mustaqil malakali ekspert. Avtomatik tekshiruv va AI hisoblanmaydi.")
+k("aiHeroSubtitle","AI header subtitle.","Answers only from FORENSIC EXPERT’s sourced scientific database — every statement cites a record and shows its review status.","Ответы только из научной базы FORENSIC EXPERT с источниками — каждое утверждение ссылается на запись и показывает статус проверки.","Faqat FORENSIC EXPERT’ning manbali ilmiy bazasidan javob — har bir fikr yozuvga iqtibos va tekshiruv holati bilan.")
+k("aiStatusConnected","AI status.","Connected · beta","Подключено · бета","Ulangan · beta")
+k("aiContextSources","AI context chip.","Source: offline database","Источник: офлайн-база","Manba: oflayn baza")
+k("aiComposerTitle","Composer title.","Scientific query","Научный запрос","Ilmiy so‘rov")
 
 for idx, code in enumerate(["en","ru","uz"]):
     p = f"{D}/app_{code}.arb"

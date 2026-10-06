@@ -4678,4 +4678,33 @@ class AppLocalizationsEn extends AppLocalizations {
   String sourcePmid(String id) {
     return 'PMID $id';
   }
+
+  @override
+  String get homeStatSubstances => 'Substances';
+
+  @override
+  String get homeStatSources => 'Sources';
+
+  @override
+  String get homeStatClaims => 'Sourced claims';
+
+  @override
+  String get homeStatHumanVerified => 'Human verified';
+
+  @override
+  String get homeStatPolicy =>
+      'Human verified = two independent qualified experts. Automated checks and AI are never counted.';
+
+  @override
+  String get aiHeroSubtitle =>
+      'Answers only from FORENSIC EXPERT’s sourced scientific database — every statement cites a record and shows its review status.';
+
+  @override
+  String get aiStatusConnected => 'Connected · beta';
+
+  @override
+  String get aiContextSources => 'Source: offline database';
+
+  @override
+  String get aiComposerTitle => 'Scientific query';
 }

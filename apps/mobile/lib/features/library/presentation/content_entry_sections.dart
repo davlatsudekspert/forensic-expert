@@ -552,7 +552,10 @@ class SourceTile extends StatelessWidget {
               Expanded(
                 child: Text(
                   source.title,
-                  style: t.bodyMedium,
+                  style: t.bodyMedium?.copyWith(
+                    fontWeight: FontWeight.w600,
+                    height: 1.35,
+                  ),
                   locale: const Locale('en'),
                 ),
               ),
@@ -568,7 +571,10 @@ class SourceTile extends StatelessWidget {
               if (source.year != null) '${source.year}',
               if (source.edition != null) source.edition!,
             ].join(' · '),
-            style: t.bodySmall?.copyWith(color: c.textSecondary),
+            style: t.bodySmall?.copyWith(
+              color: c.textSecondary,
+              fontStyle: FontStyle.italic,
+            ),
           ),
           const SizedBox(height: FeSpace.xxs),
           Wrap(
@@ -814,7 +820,7 @@ class ClaimMeta extends StatelessWidget {
         Icons.history,
       ),
       ScientificStatus.rejected => (l.statusNeedsReview, c.danger, Icons.block),
-      _ => (l.statusNeedsReview, c.warning, Icons.pending_outlined),
+      _ => (l.statusNeedsReview, c.accent, Icons.pending_outlined),
     };
     return EvidenceMetaLine(
       statusLabel: label,

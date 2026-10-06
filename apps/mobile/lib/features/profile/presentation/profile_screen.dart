@@ -470,7 +470,6 @@ class _IdentityCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
-    final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
     final isStudent = mode == UserMode.student;
     final name = isStudent
@@ -494,49 +493,92 @@ class _IdentityCard extends StatelessWidget {
         if (profile.professional case final p?)
           l.specialtyLabel(p.primarySpecialty),
     ].join(' · ');
-    return Card(
-      key: const Key('profile.identityCard'),
-      margin: const EdgeInsets.only(top: FeSpace.sm),
-      child: InkWell(
-        onTap: () => context.push(Routes.profileEdit),
-        child: Padding(
-          padding: const EdgeInsets.all(FeSpace.md),
-          child: Row(
-            children: [
-              CircleAvatar(
-                radius: 24,
-                backgroundColor: c.accentContainer,
-                child: Icon(
-                  isStudent ? Icons.school_outlined : Icons.biotech_outlined,
-                  color: c.accent,
-                ),
+    final display = (name == null || name.isEmpty) ? null : name;
+    final initials = display
+        ?.trim()
+        .split(RegExp(r'\s+'))
+        .take(2)
+        .map((w) => w.characters.first.toUpperCase())
+        .join();
+    const muted = Color(0xFFC9D2E0);
+    return Padding(
+      padding: const EdgeInsets.only(top: FeSpace.sm),
+      child: Material(
+        key: const Key('profile.identityCard'),
+        borderRadius: BorderRadius.circular(FeRadius.lg),
+        clipBehavior: Clip.antiAlias,
+        child: Ink(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [Color(0xFF0F1E3D), Color(0xFF17305A)],
+            ),
+          ),
+          child: InkWell(
+            onTap: () => context.push(Routes.profileEdit),
+            child: Padding(
+              padding: const EdgeInsets.all(FeSpace.md),
+              child: Row(
+                children: [
+                  Container(
+                    width: 56,
+                    height: 56,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: const Color(0x1AFFFFFF),
+                      border: Border.all(
+                        color: const Color(0xFFC9A75E),
+                        width: 1.5,
+                      ),
+                    ),
+                    child: initials != null
+                        ? Text(
+                            initials,
+                            style: t.titleMedium?.copyWith(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w700,
+                              letterSpacing: 1,
+                            ),
+                          )
+                        : Icon(
+                            isStudent
+                                ? Icons.school_outlined
+                                : Icons.biotech_outlined,
+                            color: muted,
+                          ),
+                  ),
+                  const SizedBox(width: FeSpace.md),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          display ?? l.profileNotFilled,
+                          style: t.titleMedium?.copyWith(color: Colors.white),
+                        ),
+                        const SizedBox(height: FeSpace.xxs),
+                        Text(
+                          subtitle,
+                          style: t.bodySmall?.copyWith(color: muted),
+                        ),
+                        const SizedBox(height: FeSpace.xs),
+                        Text(
+                          name == null
+                              ? l.profileFillAction
+                              : l.profileEditAction,
+                          style: t.labelMedium?.copyWith(
+                            color: const Color(0xFF7FDDE6),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const Icon(Icons.chevron_right, color: muted),
+                ],
               ),
-              const SizedBox(width: FeSpace.md),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      (name == null || name.isEmpty)
-                          ? l.profileNotFilled
-                          : name,
-                      style: t.titleMedium,
-                    ),
-                    const SizedBox(height: FeSpace.xxs),
-                    Text(
-                      subtitle,
-                      style: t.bodySmall?.copyWith(color: c.textSecondary),
-                    ),
-                    const SizedBox(height: FeSpace.xxs),
-                    Text(
-                      name == null ? l.profileFillAction : l.profileEditAction,
-                      style: t.labelMedium?.copyWith(color: c.accent),
-                    ),
-                  ],
-                ),
-              ),
-              const Icon(Icons.chevron_right),
-            ],
+            ),
           ),
         ),
       ),

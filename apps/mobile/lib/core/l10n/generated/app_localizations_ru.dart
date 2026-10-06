@@ -4687,4 +4687,33 @@ class AppLocalizationsRu extends AppLocalizations {
   String sourcePmid(String id) {
     return 'PMID $id';
   }
+
+  @override
+  String get homeStatSubstances => 'Вещества';
+
+  @override
+  String get homeStatSources => 'Источники';
+
+  @override
+  String get homeStatClaims => 'Утверждения';
+
+  @override
+  String get homeStatHumanVerified => 'Подтверждено экспертами';
+
+  @override
+  String get homeStatPolicy =>
+      '«Подтверждено» = два независимых квалифицированных эксперта. Автоматические проверки и ИИ не учитываются.';
+
+  @override
+  String get aiHeroSubtitle =>
+      'Ответы только из научной базы FORENSIC EXPERT с источниками — каждое утверждение ссылается на запись и показывает статус проверки.';
+
+  @override
+  String get aiStatusConnected => 'Подключено · бета';
+
+  @override
+  String get aiContextSources => 'Источник: офлайн-база';
+
+  @override
+  String get aiComposerTitle => 'Научный запрос';
 }
