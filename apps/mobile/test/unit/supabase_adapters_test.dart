@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
@@ -190,6 +191,33 @@ void main() {
       expect(repo.current.signedIn, isFalse);
       expect(await store.read(), isNull);
       expect(t.calls.last.$3['Authorization'], 'Bearer access-1');
+    });
+
+    test('access token muddati tugaganda refresh bilan yangilanadi', () async {
+      String jwt(DateTime exp) =>
+          'h.${base64Url.encode(utf8.encode(jsonEncode({'exp': exp.millisecondsSinceEpoch ~/ 1000}))).replaceAll('=', '')}.s';
+      var now = DateTime.utc(2026, 10, 6, 10, 53);
+      final first = jwt(now.add(const Duration(hours: 1)));
+      final second = jwt(now.add(const Duration(hours: 2)));
+      final t = FakeTransport((m, u, b) {
+        final s = _session('e@x.org');
+        s['access_token'] = u.query.contains('refresh_token') ? second : first;
+        return RestResponse(200, s);
+      });
+      final repo = SupabaseAuthRepository(
+        config: _cfg,
+        sessionStore: InMemorySessionStore(),
+        transport: t,
+        clock: () => now,
+      );
+      await repo.verifyEmailCode(email: 'e@x.org', code: '123456');
+      expect(await repo.accessToken(), first);
+      expect(t.calls, hasLength(1));
+      // 59 daqiqadan keyin (muddatga < 60 s) — refresh.
+      now = now.add(const Duration(minutes: 59, seconds: 30));
+      expect(await repo.accessToken(), second);
+      expect(t.calls.last.$2.query, 'grant_type=refresh_token');
+      expect(repo.current.signedIn, isTrue);
     });
 
     test('bekor qilingan refresh token — lokal sessiya tozalanadi', () async {

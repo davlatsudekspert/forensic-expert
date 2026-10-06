@@ -27,16 +27,29 @@ cat > "$KEY_DIR/ExportOptions.plist" <<PLIST
 </dict></plist>
 PLIST
 
-# Avtomatik imzo: Xcode App Store Connect API kaliti bilan sertifikat va
-# provisioning profilini oladi.
-flutter build ipa --release \
-  --export-options-plist="$KEY_DIR/ExportOptions.plist" \
-  --build-number="${GITHUB_RUN_NUMBER:-1}" \
-  -- -allowProvisioningUpdates \
-  -authenticationKeyPath "$KEY_PATH" \
-  -authenticationKeyID "$ASC_KEY_ID" \
-  -authenticationKeyIssuerID "$ASC_ISSUER_ID" || {
-    echo "::error::Signed IPA build failed (check team, bundle id, app record)"; exit 1; }
+# 1) Flutter: release build + backend sozlamasi ($DEFINES), imzosiz.
+# 2) xcodebuild: avtomatik imzo bilan archive va App Store eksport. Xcode
+#    App Store Connect API kaliti bilan sertifikat/profilni o‘zi oladi.
+AUTH=(-allowProvisioningUpdates
+  -authenticationKeyPath "$KEY_PATH"
+  -authenticationKeyID "$ASC_KEY_ID"
+  -authenticationKeyIssuerID "$ASC_ISSUER_ID")
+# shellcheck disable=SC2086
+flutter build ios --release --no-codesign ${DEFINES:-} \
+  --build-number="${GITHUB_RUN_NUMBER:-1}"
+ARCHIVE="build/ios/archive/Runner.xcarchive"
+xcodebuild -workspace ios/Runner.xcworkspace -scheme Runner \
+  -configuration Release -destination "generic/platform=iOS" \
+  -archivePath "$ARCHIVE" archive \
+  DEVELOPMENT_TEAM="$APPLE_TEAM_ID" CODE_SIGN_STYLE=Automatic \
+  "${AUTH[@]}" -quiet || {
+    echo "::error::Signed archive failed (check team, bundle id, API key role)"; exit 1; }
+rm -rf build/ios/ipa
+xcodebuild -exportArchive -archivePath "$ARCHIVE" \
+  -exportPath build/ios/ipa \
+  -exportOptionsPlist "$KEY_DIR/ExportOptions.plist" \
+  "${AUTH[@]}" || {
+    echo "::error::IPA export failed (distribution certificate / profile)"; exit 1; }
 
 IPA="$(ls build/ios/ipa/*.ipa | head -1)"
 FINAL_IPA="build/ios/ipa/forensic-expert-testflight.ipa"

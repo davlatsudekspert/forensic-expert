@@ -23,7 +23,10 @@ class SupabaseAiProvider implements AiProvider {
     RestTransport? transport,
   }) : _cfg = config,
        _authRepo = auth,
-       _http = transport ?? HttpClientTransport();
+       // Server Gemini’ni har model uchun 25 s gacha kutadi (2 model).
+       _http =
+           transport ??
+           HttpClientTransport(timeout: const Duration(seconds: 60));
 
   final SupabaseConfig _cfg;
   final AuthRepository _authRepo;

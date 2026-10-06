@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:convert';
 import 'dart:io';
 
 import '../../domain/auth/auth_models.dart';
@@ -20,9 +21,11 @@ class SupabaseAuthRepository implements AuthRepository {
     required SupabaseConfig config,
     required SessionStore sessionStore,
     RestTransport? transport,
+    DateTime Function()? clock,
   }) : _cfg = config,
        _session = sessionStore,
-       _http = transport ?? HttpClientTransport();
+       _http = transport ?? HttpClientTransport(),
+       _now = clock ?? DateTime.now;
 
   final SupabaseConfig _cfg;
   final SessionStore _session;
@@ -31,6 +34,8 @@ class SupabaseAuthRepository implements AuthRepository {
 
   AuthState _state = AuthState.signedOut;
   String? _access;
+  final DateTime Function() _now;
+  Future<void>? _refreshing;
 
   static AuthRepository? fromEnvironment(SessionStore store) {
     final cfg = SupabaseConfig.fromEnvironment();
@@ -335,6 +340,37 @@ class SupabaseAuthRepository implements AuthRepository {
     }
   }
 
+  /// Access token (JWT, odatda 1 soat). Muddati tugashiga 60 s qolganda
+  /// refresh token orqali yangilanadi — aks holda server 401 qaytaradi.
   @override
-  Future<String?> accessToken() async => _access;
+  Future<String?> accessToken() async {
+    final token = _access;
+    if (token == null) return null;
+    final exp = _expiry(token);
+    if (exp != null && !_now().isBefore(exp.subtract(_refreshMargin))) {
+      await (_refreshing ??= restoreSession().whenComplete(
+        () => _refreshing = null,
+      ));
+    }
+    return _access;
+  }
+
+  static const _refreshMargin = Duration(seconds: 60);
+
+  /// JWT `exp` (imzo tekshirilmaydi — faqat yangilash vaqtini bilish uchun).
+  static DateTime? _expiry(String jwt) {
+    final parts = jwt.split('.');
+    if (parts.length != 3) return null;
+    try {
+      final payload = jsonDecode(
+        utf8.decode(base64Url.decode(base64Url.normalize(parts[1]))),
+      );
+      final exp = payload is Map ? payload['exp'] : null;
+      return exp is num
+          ? DateTime.fromMillisecondsSinceEpoch(exp.toInt() * 1000, isUtc: true)
+          : null;
+    } on FormatException {
+      return null;
+    }
+  }
 }
