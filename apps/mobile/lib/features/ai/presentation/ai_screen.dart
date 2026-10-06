@@ -295,26 +295,70 @@ class _RouteResultView extends StatelessWidget {
           for (final ch in result.chunks)
             Padding(
               padding: const EdgeInsets.only(bottom: FeSpace.xs),
-              child: FeCard(
-                key: Key('ai.chunk.${ch.chunkId}'),
-                padding: const EdgeInsets.all(FeSpace.sm),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    if (ch.title != null) Text(ch.title!, style: t.titleSmall),
-                    const SizedBox(height: 2),
-                    Text(
-                      ch.text,
-                      locale: const Locale('en'),
-                      style: t.bodySmall?.copyWith(fontStyle: FontStyle.italic),
+              child: Consumer(
+                builder: (context, ref, _) {
+                  // Kartani bosish — to‘liq yozuv; SRC — manba sahifasi.
+                  final isLibrary =
+                      ref.watch(libraryRepositoryProvider).byId(ch.entityId) !=
+                      null;
+                  return FeCard(
+                    key: Key('ai.chunk.${ch.chunkId}'),
+                    padding: const EdgeInsets.all(FeSpace.sm),
+                    onTap: () => context.push(
+                      isLibrary
+                          ? Routes.libraryEntry(ch.entityId)
+                          : Routes.knowledgeEntry(ch.entityId),
                     ),
-                    const SizedBox(height: 2),
-                    Text(
-                      ch.sourceIds.join(', '),
-                      style: t.bodySmall?.copyWith(color: c.textSecondary),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              if (ch.title != null)
+                                Text(ch.title!, style: t.titleSmall),
+                              const SizedBox(height: 2),
+                              Text(
+                                ch.text,
+                                locale: const Locale('en'),
+                                style: t.bodySmall?.copyWith(
+                                  fontStyle: FontStyle.italic,
+                                ),
+                              ),
+                              const SizedBox(height: 2),
+                              Wrap(
+                                spacing: FeSpace.xs,
+                                children: [
+                                  for (final id in ch.sourceIds)
+                                    InkWell(
+                                      key: Key('ai.chunk.source.$id'),
+                                      onTap: () =>
+                                          context.push(Routes.source(id)),
+                                      child: Padding(
+                                        padding: const EdgeInsets.symmetric(
+                                          vertical: 4,
+                                        ),
+                                        child: Text(
+                                          id,
+                                          style: t.bodySmall?.copyWith(
+                                            color: c.accent,
+                                            decoration:
+                                                TextDecoration.underline,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        Icon(Icons.chevron_right, color: c.textSecondary),
+                      ],
                     ),
-                  ],
-                ),
+                  );
+                },
               ),
             ),
         ],

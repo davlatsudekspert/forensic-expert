@@ -4906,4 +4906,19 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get firstStepsDone =>
       'You’re all set. Your saved materials and recent records stay on this device.';
+
+  @override
+  String get fullTextPdf => 'Full text (PDF)';
+
+  @override
+  String get fullTextPdfNote =>
+      'Open-access article (PubMed Central via Europe PMC). Opens in your device’s PDF viewer or browser.';
+
+  @override
+  String get fullTextPdfPro =>
+      'Downloading full-text PDFs is available with Pro.';
+
+  @override
+  String get fullTextOpenFailed =>
+      'Couldn’t open the PDF. Check your connection.';
 }

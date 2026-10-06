@@ -8906,6 +8906,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'You’re all set. Your saved materials and recent records stay on this device.'**
   String get firstStepsDone;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Full text (PDF)'**
+  String get fullTextPdf;
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'Open-access article (PubMed Central via Europe PMC). Opens in your device’s PDF viewer or browser.'**
+  String get fullTextPdfNote;
+
+  /// Locked note.
+  ///
+  /// In en, this message translates to:
+  /// **'Downloading full-text PDFs is available with Pro.'**
+  String get fullTextPdfPro;
+
+  /// Snackbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn’t open the PDF. Check your connection.'**
+  String get fullTextOpenFailed;
 }
 
 class _AppLocalizationsDelegate

@@ -6379,5 +6379,21 @@
   "firstStepsDone": "You’re all set. Your saved materials and recent records stay on this device.",
   "@firstStepsDone": {
     "description": "Completed state."
+  },
+  "fullTextPdf": "Full text (PDF)",
+  "@fullTextPdf": {
+    "description": "Action."
+  },
+  "fullTextPdfNote": "Open-access article (PubMed Central via Europe PMC). Opens in your device’s PDF viewer or browser.",
+  "@fullTextPdfNote": {
+    "description": "Note."
+  },
+  "fullTextPdfPro": "Downloading full-text PDFs is available with Pro.",
+  "@fullTextPdfPro": {
+    "description": "Locked note."
+  },
+  "fullTextOpenFailed": "Couldn’t open the PDF. Check your connection.",
+  "@fullTextOpenFailed": {
+    "description": "Snackbar."
   }
 }

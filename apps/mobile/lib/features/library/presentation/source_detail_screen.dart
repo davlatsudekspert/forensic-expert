@@ -2,6 +2,7 @@ import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
@@ -11,7 +12,9 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
+import '../../../domain/library/full_text.dart';
 import '../../../domain/library/library_models.dart';
+import '../../../domain/ports/billing_ports.dart';
 import '../../../domain/referral/share_text.dart';
 import '../../common/share_button.dart';
 import 'content_entry_sections.dart';
@@ -122,6 +125,8 @@ class SourceDetailScreen extends ConsumerWidget {
                 padding: const EdgeInsets.all(FeSpace.md),
                 children: [
                   SourceTile(source: entry.source, linkToDetail: false),
+                  if (openAccessPdfUrl(entry.source) case final pdf?)
+                    _FullTextButton(pdf: pdf),
                   FeSectionHeader(l.sourceLinkedRecords(entry.links.length)),
                   if (entry.links.isEmpty)
                     Text(
@@ -164,6 +169,62 @@ class SourceDetailScreen extends ConsumerWidget {
                     ),
                 ],
               ),
+      ),
+    );
+  }
+}
+
+/// «To‘liq matn (PDF)» — faqat ochiq kirishdagi (PubMed Central) maqolalar,
+/// Pro foydalanuvchilar uchun. PDF qurilmaning ko‘ruvchisida ochiladi.
+class _FullTextButton extends ConsumerWidget {
+  const _FullTextButton({required this.pdf});
+
+  final Uri pdf;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    final t = Theme.of(context).textTheme;
+    final c = FeTheme.of(context);
+    final pro = AccessPolicy.unlocks(
+      ProductFeature.verifiedReferences,
+      ref.watch(accessProvider),
+    );
+    return Padding(
+      padding: const EdgeInsets.only(top: FeSpace.sm),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          FilledButton.tonalIcon(
+            key: const Key('source.fullTextPdf'),
+            icon: Icon(
+              pro ? Icons.picture_as_pdf_outlined : Icons.lock_outline,
+            ),
+            label: Text(l.fullTextPdf),
+            onPressed: () async {
+              if (!pro) {
+                await context.push(Routes.purchase);
+                return;
+              }
+              final messenger = ScaffoldMessenger.of(context);
+              final ok = await launchUrl(
+                pdf,
+                mode: LaunchMode.externalApplication,
+              );
+              if (!ok) {
+                messenger.showSnackBar(
+                  SnackBar(content: Text(l.fullTextOpenFailed)),
+                );
+              }
+            },
+          ),
+          const SizedBox(height: FeSpace.xxs),
+          Text(
+            pro ? l.fullTextPdfNote : l.fullTextPdfPro,
+            key: const Key('source.fullTextNote'),
+            style: t.bodySmall?.copyWith(color: c.textSecondary),
+          ),
+        ],
       ),
     );
   }

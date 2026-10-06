@@ -4894,4 +4894,18 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get firstStepsDone =>
       'Hammasi tayyor. Saqlangan materiallar va so‘nggi yozuvlar shu qurilmada qoladi.';
+
+  @override
+  String get fullTextPdf => 'To‘liq matn (PDF)';
+
+  @override
+  String get fullTextPdfNote =>
+      'Ochiq kirishdagi maqola (PubMed Central, Europe PMC orqali). Qurilmangizdagi PDF ko‘ruvchi yoki brauzerda ochiladi.';
+
+  @override
+  String get fullTextPdfPro =>
+      'To‘liq matnni (PDF) yuklab olish Pro versiyada mavjud.';
+
+  @override
+  String get fullTextOpenFailed => 'PDF ochilmadi. Aloqani tekshiring.';
 }

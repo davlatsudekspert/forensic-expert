@@ -4914,4 +4914,18 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get firstStepsDone =>
       'Всё готово. Сохранённые материалы и недавние записи остаются на этом устройстве.';
+
+  @override
+  String get fullTextPdf => 'Полный текст (PDF)';
+
+  @override
+  String get fullTextPdfNote =>
+      'Статья открытого доступа (PubMed Central через Europe PMC). Открывается в программе просмотра PDF или браузере устройства.';
+
+  @override
+  String get fullTextPdfPro => 'Загрузка полного текста (PDF) доступна в Pro.';
+
+  @override
+  String get fullTextOpenFailed =>
+      'Не удалось открыть PDF. Проверьте соединение.';
 }
