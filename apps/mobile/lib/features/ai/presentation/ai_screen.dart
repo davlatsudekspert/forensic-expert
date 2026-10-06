@@ -94,6 +94,8 @@ class _AiScreenState extends ConsumerState<AiScreen> {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
+    // Kirish holati o‘zgarsa, server AI mavjudligi qayta hisoblanadi.
+    ref.watch(authStateProvider);
     final ai = ref.watch(aiAssistantProvider);
     final scanner = ref.watch(piiScannerProvider);
     final available = ai.availability == AiAvailability.available;
@@ -189,8 +191,13 @@ class _AiScreenState extends ConsumerState<AiScreen> {
                         key: const Key('ai.send'),
                         icon: const Icon(Icons.send_outlined),
                         label: Text(l.aiSend),
-                        // Real AI ulanmagan; PII topilsa ham yuborilmaydi.
-                        onPressed: available && kinds.isEmpty ? () {} : null,
+                        // Server AI (Gemini) — faqat ulanganda; PII topilsa
+                        // yuborilmaydi. Javob manbalar bilan tekshiriladi.
+                        onPressed: available && kinds.isEmpty && !_searching
+                            ? () => _findSources(
+                                Localizations.localeOf(context).languageCode,
+                              )
+                            : null,
                       ),
                     ],
                   ),

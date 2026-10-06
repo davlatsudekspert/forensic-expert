@@ -7,9 +7,9 @@ import 'supabase_rest.dart';
 
 /// Supabase Auth (GoTrue REST) adapteri.
 ///
-/// * Parolsiz: `POST /auth/v1/otp` (6 xonali kod emailga; Supabase email
-///   shablonida `{{ .Token }}` bo‘lishi kerak) → `POST /auth/v1/verify`
-///   (`type: email`) → sessiya.
+/// * Parolsiz: `functions/v1/email-otp` — FORENSIC EXPERT’ning o‘z 6 xonali
+///   kodi (Resend orqali, o‘z jo‘natuvchisi), tasdiqlangach server sessiya
+///   qaytaradi.
 /// * Parolli oqim ham qo‘llab-quvvatlanadi (signup / password / recover).
 /// * Refresh token — [SessionStore] (Keychain / Keystore); access token faqat
 ///   xotirada. Kod, token va server xabar matni jurnalga yozilmaydi.
@@ -69,10 +69,12 @@ class SupabaseAuthRepository implements AuthRepository {
   /// GoTrue xato kodlari → [AuthFailure]. Server matni ko‘rsatilmaydi.
   static AuthFailure? failureFor(RestResponse r) {
     if (r.ok) return null;
-    if (r.status == 429) return AuthFailure.tooManyRequests;
-    if (r.status >= 500) return AuthFailure.server;
     final code =
         '${r.map['error_code'] ?? r.map['code'] ?? r.map['error'] ?? ''}';
+    // Email jo‘natuvchisi (Resend) hali sozlanmagan — halol «ulanmagan».
+    if (code == 'email_not_configured') return AuthFailure.backendNotConfigured;
+    if (r.status == 429) return AuthFailure.tooManyRequests;
+    if (r.status >= 500) return AuthFailure.server;
     return switch (code) {
       'otp_expired' => AuthFailure.codeExpired,
       'otp_disabled' ||
@@ -167,22 +169,43 @@ class SupabaseAuthRepository implements AuthRepository {
     if (!r.ok && r.failure != AuthFailure.offline) await _dropSession();
   }
 
+  /// FORENSIC EXPERT’ning o‘z email kodi: `functions/v1/email-otp`
+  /// (6 xonali kod, 10 daqiqa, FORENSIC EXPERT jo‘natuvchisi). Kod faqat
+  /// serverda xesh ko‘rinishida saqlanadi; tasdiqlangach server sessiya
+  /// qaytaradi.
+  Future<AuthOutcome> _emailOtp(
+    Map<String, Object?> body, {
+    bool opensSession = false,
+  }) async {
+    try {
+      final r = await _http.send(
+        'POST',
+        _cfg.url.resolve('functions/v1/email-otp'),
+        headers: _headers(),
+        jsonBody: body,
+      );
+      final f = failureFor(r);
+      if (f != null) return AuthOutcome.fail(f);
+      if (opensSession && !await _applySession(r.map)) {
+        return const AuthOutcome.fail(AuthFailure.server);
+      }
+      return const AuthOutcome.ok();
+    } on SocketException {
+      return const AuthOutcome.fail(AuthFailure.offline);
+    } on TimeoutException {
+      return const AuthOutcome.fail(AuthFailure.offline);
+    } on HandshakeException {
+      return const AuthOutcome.fail(AuthFailure.offline);
+    }
+  }
+
   @override
   Future<AuthOutcome> requestEmailCode(String email, {String? locale}) {
     final e = EmailAddress.normalize(email);
     if (!EmailAddress.isValid(e)) {
       return Future.value(const AuthOutcome.fail(AuthFailure.invalidEmail));
     }
-    return _call(
-      'POST',
-      'otp',
-      body: {
-        'email': e,
-        'create_user': true,
-        // Email shabloni tili (supabase/templates); faqat til kodi.
-        if (locale != null) 'data': {'locale': locale},
-      },
-    );
+    return _emailOtp({'action': 'request', 'email': e, 'locale': ?locale});
   }
 
   @override
@@ -193,16 +216,11 @@ class SupabaseAuthRepository implements AuthRepository {
     if (!AuthCodePolicy.looksLikeCode(code)) {
       return Future.value(const AuthOutcome.fail(AuthFailure.codeInvalid));
     }
-    return _call(
-      'POST',
-      'verify',
-      body: {
-        'type': 'email',
-        'email': EmailAddress.normalize(email),
-        'token': code.trim(),
-      },
-      opensSession: true,
-    );
+    return _emailOtp({
+      'action': 'verify',
+      'email': EmailAddress.normalize(email),
+      'code': code.trim(),
+    }, opensSession: true);
   }
 
   @override

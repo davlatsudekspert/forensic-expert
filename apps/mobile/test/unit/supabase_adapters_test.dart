@@ -44,33 +44,30 @@ Map<String, Object?> _session(String email) => {
 
 void main() {
   group('Supabase email OTP', () {
-    test(
-      'kod so‘rash: /auth/v1/otp, create_user, til, normalizatsiya',
-      () async {
-        final t = FakeTransport((m, u, b) => const RestResponse(200, {}));
-        final repo = SupabaseAuthRepository(
-          config: _cfg,
-          sessionStore: InMemorySessionStore(),
-          transport: t,
-        );
-        final r = await repo.requestEmailCode(
-          ' Expert@Example.ORG ',
-          locale: 'uz',
-        );
-        expect(r.ok, isTrue);
-        final (method, uri, headers, body) = t.calls.single;
-        expect(method, 'POST');
-        expect(uri.path, '/auth/v1/otp');
-        expect(headers['apikey'], 'anon-public-test-key');
-        expect(body, {
-          'email': 'expert@example.org',
-          'create_user': true,
-          'data': {'locale': 'uz'},
-        });
-        // Kod/parol hech qachon so‘rashda yo‘q.
-        expect('$body', isNot(contains('token')));
-      },
-    );
+    test('kod so‘rash: functions/v1/email-otp, til, normalizatsiya', () async {
+      final t = FakeTransport((m, u, b) => const RestResponse(200, {}));
+      final repo = SupabaseAuthRepository(
+        config: _cfg,
+        sessionStore: InMemorySessionStore(),
+        transport: t,
+      );
+      final r = await repo.requestEmailCode(
+        ' Expert@Example.ORG ',
+        locale: 'uz',
+      );
+      expect(r.ok, isTrue);
+      final (method, uri, headers, body) = t.calls.single;
+      expect(method, 'POST');
+      expect(uri.path, '/functions/v1/email-otp');
+      expect(headers['apikey'], 'anon-public-test-key');
+      expect(body, {
+        'action': 'request',
+        'email': 'expert@example.org',
+        'locale': 'uz',
+      });
+      // Kod/parol hech qachon so‘rashda yo‘q.
+      expect('$body', isNot(contains('token')));
+    });
 
     test('noto‘g‘ri email — tarmoqqa chiqmaydi', () async {
       final t = FakeTransport((m, u, b) => const RestResponse(200, {}));
@@ -99,8 +96,8 @@ void main() {
         code: '123456',
       );
       expect(r.ok, isTrue);
-      expect(t.calls.single.$2.path, '/auth/v1/verify');
-      expect((t.calls.single.$4! as Map)['type'], 'email');
+      expect(t.calls.single.$2.path, '/functions/v1/email-otp');
+      expect((t.calls.single.$4! as Map)['action'], 'verify');
       expect(repo.current.signedIn, isTrue);
       expect(await store.read(), 'refresh-1');
       expect(await repo.accessToken(), 'access-1');
@@ -135,6 +132,19 @@ void main() {
         expect(r.failure, failure, reason: '${resp.status} ${resp.json}');
         expect(repo.current.signedIn, isFalse);
       }
+    });
+
+    test('jo‘natuvchi sozlanmagan (503) — «ulanmagan», xato emas', () async {
+      final repo = SupabaseAuthRepository(
+        config: _cfg,
+        sessionStore: InMemorySessionStore(),
+        transport: FakeTransport(
+          (m, u, b) =>
+              const RestResponse(503, {'error_code': 'email_not_configured'}),
+        ),
+      );
+      final r = await repo.requestEmailCode('expert@example.org');
+      expect(r.failure, AuthFailure.backendNotConfigured);
     });
 
     test('6 xonali bo‘lmagan kod — serverga yuborilmaydi', () async {
@@ -252,6 +262,34 @@ void main() {
         ]);
       },
     );
+
+    test('bir savol — server bir marta (router + RAG umumiy)', () async {
+      final t = FakeTransport((m, u, b) {
+        if (u.path.contains('/functions/v1/ai-answer')) {
+          return const RestResponse(200, {
+            'text': 'A',
+            'cited': ['c1'],
+          });
+        }
+        return RestResponse(200, _session('e@x.org'));
+      });
+      final auth = await signedIn(t);
+      final ai = SupabaseAiProvider(config: _cfg, auth: auth, transport: t);
+      await ai.generate(prompt);
+      await ai.generate(prompt);
+      expect(t.calls.where((c) => c.$2.path.contains('ai-answer')).length, 1);
+      // Beta: kirgan foydalanuvchiga AI ochiq, kirmaganga yo‘q.
+      expect(
+        (await SignedInBetaAiEntitlementService(auth).current()).canAsk,
+        isTrue,
+      );
+      expect(RemoteAiAssistant(auth).availability, AiAvailability.available);
+      await auth.signOut();
+      expect(
+        (await SignedInBetaAiEntitlementService(auth).current()).canAsk,
+        isFalse,
+      );
+    });
 
     test('kirmagan foydalanuvchi / server xatosi — AiUnavailable', () async {
       final t = FakeTransport((m, u, b) => const RestResponse(429, {}));

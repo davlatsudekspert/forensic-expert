@@ -2,7 +2,9 @@ import 'dart:async';
 import 'dart:io';
 
 import '../../domain/ai/ai_architecture.dart';
+import '../../domain/ports/ai_ports.dart';
 import '../../domain/ports/backend_ports.dart';
+import '../../domain/ports/billing_ports.dart';
 import 'supabase_rest.dart';
 
 /// Gemini — faqat server orqali (`supabase/functions/ai-answer`).
@@ -38,8 +40,26 @@ class SupabaseAiProvider implements AiProvider {
   @override
   bool get isConfigured => true;
 
+  // Bir savol uchun ikki quvur (router + RAG) — server bir marta chaqiriladi.
+  String? _lastKey;
+  AiDraft? _lastDraft;
+
   @override
   Future<AiDraft> generate(AiPrompt prompt) async {
+    final cacheKey = [
+      prompt.question.text,
+      prompt.question.languageCode,
+      prompt.experience.name,
+      for (final c in prompt.chunks) c.chunkId,
+    ].join('|');
+    if (cacheKey == _lastKey && _lastDraft != null) return _lastDraft!;
+    final draft = await _generate(prompt);
+    _lastKey = cacheKey;
+    _lastDraft = draft;
+    return draft;
+  }
+
+  Future<AiDraft> _generate(AiPrompt prompt) async {
     final token = await _authRepo.accessToken();
     if (token == null) throw const AiUnavailable('not_signed_in');
     try {
@@ -83,4 +103,40 @@ class AiUnavailable implements Exception {
 
   @override
   String toString() => 'AiUnavailable($code)';
+}
+
+/// Server AI holati: kirgan foydalanuvchi uchun «mavjud»; aks holda
+/// «ulanmagan» (UI «Namoyish · ulanmagan» va kirish taklifini ko‘rsatadi).
+class RemoteAiAssistant implements AiAssistant {
+  const RemoteAiAssistant(this._auth);
+
+  final AuthRepository _auth;
+
+  @override
+  AiAvailability get availability => _auth.current.signedIn
+      ? AiAvailability.available
+      : AiAvailability.notConfigured;
+
+  /// Javob [AiRouter]/[RagPipeline] orqali olinadi (manba tekshiruvi bilan).
+  @override
+  Future<AiAnswer> ask(AiQuestion question) async =>
+      const AiAnswer(text: '', citations: [], noReliableAnswer: true);
+}
+
+/// Beta: kirgan foydalanuvchiga AI ochiq; haqiqiy chegara — serverda
+/// (`ai_usage`, soatiga 30 savol). Kirmagan foydalanuvchi — AI yo‘q.
+class SignedInBetaAiEntitlementService implements AiEntitlementService {
+  const SignedInBetaAiEntitlementService(this._auth);
+
+  final AuthRepository _auth;
+
+  static const betaMonthlyLimit = 900;
+
+  @override
+  Future<AiEntitlement> current() async => _auth.current.signedIn
+      ? const AiEntitlement(
+          plan: AiPlan.includedQuota,
+          monthlyQuestionLimit: betaMonthlyLimit,
+        )
+      : AiEntitlement.none;
 }

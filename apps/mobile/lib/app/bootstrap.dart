@@ -79,8 +79,13 @@ Future<void> bootstrap() async {
         initialProfileProvider.overrideWithValue(profile),
         authRepositoryProvider.overrideWithValue(auth),
         // Server AI (Gemini, kalit faqat Edge Function’da) — faqat yoqilganda.
-        if (SupabaseAiProvider.fromEnvironment(auth) case final ai?)
+        if (SupabaseAiProvider.fromEnvironment(auth) case final ai?) ...[
           aiProviderProvider.overrideWithValue(ai),
+          aiAssistantProvider.overrideWithValue(RemoteAiAssistant(auth)),
+          aiEntitlementServiceProvider.overrideWithValue(
+            SignedInBetaAiEntitlementService(auth),
+          ),
+        ],
         if (supabase != null) ...[
           professionalVerificationServiceProvider.overrideWithValue(
             SupabaseVerificationService(config: supabase, auth: auth),

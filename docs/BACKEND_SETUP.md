@@ -33,9 +33,15 @@ ko‘chirilmagan.
 * Ilova konfiguratsiyasi: `apps/mobile/config/backend.json` (URL + publishable
   kalit — ochiq qiymatlar). Jonli tekshiruv: anon RPC → 42501 permission denied,
   hujjatlar jadvali anon uchun bo‘sh, `ai-answer` kirishsiz → 401.
-* Email OTP: Supabase’ning standart jo‘natuvchisi ishlatiladi (soatiga ~2 xat,
-  faqat tashkilot a’zolari manziliga; xat «Supabase» nomidan, kod emas havola).
-  **Production uchun 3-bo‘limdagi SMTP va shablon qadamlari shart.**
+* Email OTP: FORENSIC EXPERT’ning o‘z `email-otp` Edge Function’i (6 xonali
+  kod, HMAC-xesh, 10 daqiqa, 5 urinish, 3 kod/email/10 daq, 10/IP/10 daq,
+  60 s qayta yuborish oralig‘i) → Resend orqali FORENSIC EXPERT jo‘natuvchisi
+  → tasdiqlangach server Supabase sessiyasini qaytaradi. Supabase’ning
+  SMTP/shablon sozlamalari KERAK EMAS.
+  Kerakli Edge Function secrets: `RESEND_API_KEY`, `FE_EMAIL_FROM`
+  (masalan `FORENSIC EXPERT <no-reply@sizning-domeningiz>`), `GEMINI_API_KEY`.
+  Sozlanmaguncha funksiya halol `email_not_configured` qaytaradi.
+* AI (beta): kirgan foydalanuvchi uchun ochiq, server limiti 30 savol/soat.
 
 ## 2b. Egasi bajaradigan qadamlar
 
