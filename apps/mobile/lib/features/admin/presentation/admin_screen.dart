@@ -131,7 +131,7 @@ class _Body extends StatelessWidget {
                     style: FeThemeBuilder.numeric(t.titleSmall!),
                   ),
                   title: Text(region == '??' ? l.adminUnknownRegion : region),
-                  trailing: Text('$users', style: t.titleSmall),
+                  trailing: Text(users.toString(), style: t.titleSmall),
                 ),
               FeSectionHeader(l.adminDaily),
               for (final (day, n) in d.daily)
@@ -160,7 +160,7 @@ class _Body extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(width: FeSpace.xs),
-                      Text('$n', style: t.bodySmall),
+                      Text(n.toString(), style: t.bodySmall),
                     ],
                   ),
                 ),
