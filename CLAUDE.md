@@ -7,5 +7,5 @@
   refactor qilinmaydi. Faqat production E2E closeout:
   Supabase → OTP login → identity_admin → Gemini real javob + iqtiboslar →
   referral real E2E → imzolangan store build’lar.
-  Holat: `docs/PRODUCTION_CLOSEOUT.md`.
+  Holat: `docs/PRODUCTION_CLOSEOUT.md`. Keyingi ishlar: `docs/BACKLOG.md`.
 - NFCSTORE va BugunBor repolarini o‘zgartirmang; maxfiy kalitlarni chiqarmang.
