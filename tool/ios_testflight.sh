@@ -42,6 +42,8 @@ xcodebuild -workspace ios/Runner.xcworkspace -scheme Runner \
   -configuration Release -destination "generic/platform=iOS" \
   -archivePath "$ARCHIVE" archive \
   DEVELOPMENT_TEAM="$APPLE_TEAM_ID" CODE_SIGN_STYLE=Automatic \
+  CODE_SIGN_IDENTITY="Apple Distribution" \
+  "CODE_SIGN_IDENTITY[sdk=iphoneos*]=Apple Distribution" \
   "${AUTH[@]}" -quiet || {
     echo "::error::Signed archive failed (check team, bundle id, API key role)"; exit 1; }
 rm -rf build/ios/ipa
