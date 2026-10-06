@@ -86,7 +86,10 @@ jobs:
             [ "$HAS_GEMINI" = "true" ] && DEFINES="$DEFINES --dart-define=FE_AI_REMOTE=true"
             echo "::notice::Backend: FORENSIC EXPERT Supabase configured (AI remote: $HAS_GEMINI)"
           else
-            echo "::notice::Backend NOT configured (FE_SUPABASE_URL / FE_SUPABASE_ANON_KEY missing) — offline build, account shows 'not connected'"
+            # FORENSIC EXPERT's own Supabase project — public URL + publishable key only.
+            DEFINES="--dart-define-from-file=config/backend.json"
+            [ "$HAS_GEMINI" = "true" ] && DEFINES="$DEFINES --dart-define=FE_AI_REMOTE=true"
+            echo "::notice::Backend: config/backend.json (FORENSIC EXPERT Supabase, AI remote: $HAS_GEMINI)"
           fi
           flutter build appbundle --release $DEFINES
           flutter build apk --release $DEFINES
@@ -180,7 +183,10 @@ jobs:
             [ "$HAS_GEMINI" = "true" ] && DEFINES="$DEFINES --dart-define=FE_AI_REMOTE=true"
             echo "::notice::Backend: FORENSIC EXPERT Supabase configured (AI remote: $HAS_GEMINI)"
           else
-            echo "::notice::Backend NOT configured (FE_SUPABASE_URL / FE_SUPABASE_ANON_KEY missing) — offline build, account shows 'not connected'"
+            # FORENSIC EXPERT's own Supabase project — public URL + publishable key only.
+            DEFINES="--dart-define-from-file=config/backend.json"
+            [ "$HAS_GEMINI" = "true" ] && DEFINES="$DEFINES --dart-define=FE_AI_REMOTE=true"
+            echo "::notice::Backend: config/backend.json (FORENSIC EXPERT Supabase, AI remote: $HAS_GEMINI)"
           fi
           echo "DEFINES=$DEFINES" >> "$GITHUB_ENV"
           flutter build ios --release --no-codesign $DEFINES

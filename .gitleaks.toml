@@ -1,0 +1,8 @@
+# gitleaks configuration: default rules + one narrow allowlist.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Supabase PUBLISHABLE key is public by design (ships in every app build; access is enforced by RLS). Only sb_publishable_ keys in the public backend config are allowed — never service-role / secret keys."
+paths = ['''apps/mobile/config/backend\.json''']
+regexes = ['''sb_publishable_[A-Za-z0-9_\-]+''']

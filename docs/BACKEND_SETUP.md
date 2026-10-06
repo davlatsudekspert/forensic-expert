@@ -22,10 +22,24 @@ limitlari, Resend provayderi, server tomonda AI kaliti, ishonchsiz kontekstni
 «data, not instruction» deb o‘rash. Kod, brend, shablon, domen, sirlar
 ko‘chirilmagan.
 
-## 2. Egasi bajaradigan qadamlar
+## 2. Holat (2026-10-06)
 
-1. supabase.com da **yangi** loyiha: nomi `forensic-expert` (mavjud «news»
-   loyihasi ishlatilmaydi).
+* Supabase loyihasi **yaratildi**: `forensic-expert` (eu-central-1, bepul reja,
+  egasining tashkiloti; «news» loyihasiga tegilmagan).
+* Migratsiyalar qo‘llandi: core, ai_usage, function_grants, advisor_hardening.
+  Security advisor: ERROR yo‘q; qolgan WARN — kirgan foydalanuvchi chaqiradigan
+  RPC’lar (ichida rol/scope tekshiruvi bor, ataylab).
+* Edge Functions: `delete-account`, `ai-answer` (JWT talab qilinadi) — ACTIVE.
+* Ilova konfiguratsiyasi: `apps/mobile/config/backend.json` (URL + publishable
+  kalit — ochiq qiymatlar). Jonli tekshiruv: anon RPC → 42501 permission denied,
+  hujjatlar jadvali anon uchun bo‘sh, `ai-answer` kirishsiz → 401.
+* Email OTP: Supabase’ning standart jo‘natuvchisi ishlatiladi (soatiga ~2 xat,
+  faqat tashkilot a’zolari manziliga; xat «Supabase» nomidan, kod emas havola).
+  **Production uchun 3-bo‘limdagi SMTP va shablon qadamlari shart.**
+
+## 2b. Egasi bajaradigan qadamlar
+
+1. ✅ Loyiha yaratilgan (`forensic-expert`).
 2. Email domeni: FORENSIC EXPERT uchun o‘z domeningiz (masalan
    `no-reply@<sizning-domeningiz>`). Resend (yoki boshqa SMTP) da domenni
    tasdiqlang (SPF/DKIM). **Domen o‘ylab topilmagan — egasi beradi.**
