@@ -19,10 +19,40 @@ const MAX_CHUNKS = 8;
 const MAX_CHUNK_CHARS = 1800;
 const MAX_QUESTION_CHARS = 1200;
 const HOURLY_LIMIT = Number(Deno.env.get("FE_AI_HOURLY_LIMIT") ?? "30");
-const MODELS = [
-  Deno.env.get("FE_AI_MODEL") ?? "gemini-2.5-flash",
-  "gemini-flash-latest",
-];
+const API = "https://generativelanguage.googleapis.com/v1beta";
+const PREFERRED = [Deno.env.get("FE_AI_MODEL"), "gemini-flash-latest"]
+  .filter((m): m is string => !!m);
+const DEADLINE_MS = 50_000; // the app waits up to 60 s
+let discovered: string[] | null = null;
+
+// Models change over time (old names return 404): ask the API which "flash"
+// models this key can use for generateContent. Cached per instance.
+async function candidateModels(key: string): Promise<string[]> {
+  if (discovered === null) {
+    discovered = [];
+    try {
+      const r = await fetch(`${API}/models?pageSize=200`, {
+        headers: { "x-goog-api-key": key },
+      });
+      if (r.ok) {
+        const out = await r.json();
+        discovered = (out?.models ?? [])
+          .filter((m: { name?: string; supportedGenerationMethods?: string[] }) =>
+            /flash/i.test(m.name ?? "") && !/(image|tts|audio|live|embedding)/i.test(m.name ?? "") &&
+            (m.supportedGenerationMethods ?? []).includes("generateContent"))
+          .map((m: { name: string }) => m.name.replace(/^models\//, ""))
+          .sort((a: string, b: string) => b.localeCompare(a)); // newest first
+      } else {
+        console.error("gemini_models_status", r.status);
+      }
+    } catch (e) {
+      console.error("gemini_models_failed", e instanceof Error ? e.name : "error");
+    }
+  }
+  return [...new Set([...PREFERRED, ...discovered])].slice(0, 5);
+}
+
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 const SYSTEM = `You are FORENSIC EXPERT's scientific reference assistant for
 forensic science professionals and students.
@@ -93,57 +123,66 @@ Deno.serve(async (req) => {
 
   await db.from("ai_usage").insert({ user_id: u.user.id });
 
-  for (const model of MODELS) {
-    const ctl = new AbortController();
-    const timer = setTimeout(() => ctl.abort(), 25_000);
-    try {
-      const r = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
-        {
+  const started = Date.now();
+  for (const model of await candidateModels(key)) {
+    // Thinking off where supported; retry without it if the model rejects it.
+    for (const attempt of [0, 1, 2]) {
+      if (Date.now() - started > DEADLINE_MS) {
+        return json({ error: "upstream" }, 504);
+      }
+      const ctl = new AbortController();
+      const timer = setTimeout(() => ctl.abort(), 20_000);
+      try {
+        const generationConfig: Record<string, unknown> = {
+          temperature: 0.1,
+          maxOutputTokens: 2048,
+          responseMimeType: "application/json",
+        };
+        if (attempt === 0) generationConfig.thinkingConfig = { thinkingBudget: 0 };
+        const r = await fetch(`${API}/models/${model}:generateContent`, {
           method: "POST",
           signal: ctl.signal,
           headers: { "Content-Type": "application/json", "x-goog-api-key": key },
           body: JSON.stringify({
             systemInstruction: { parts: [{ text: SYSTEM }] },
             contents: [{ role: "user", parts: [{ text: prompt }] }],
-            generationConfig: {
-              temperature: 0.1,
-              // 2.5 models count "thinking" tokens against this budget; a
-              // short source-grounded answer needs no thinking.
-              maxOutputTokens: 2048,
-              thinkingConfig: { thinkingBudget: 0 },
-              responseMimeType: "application/json",
-            },
+            generationConfig,
           }),
-        },
-      );
-      if (!r.ok) {
-        // Only the status code is logged (never key, question or answer).
-        console.error("gemini_status", model, r.status);
+        });
+        if (!r.ok) {
+          // Only the status code is logged (never key, question or answer).
+          console.error("gemini_status", model, r.status, attempt);
+          if (r.status === 400 && attempt === 0) continue; // retry without thinking
+          if ((r.status === 503 || r.status === 429 || r.status === 500) && attempt < 2) {
+            await sleep(1200);
+            continue;
+          }
+          break; // next model
+        }
+        const out = await r.json();
+        if (out?.promptFeedback?.blockReason) {
+          console.error("gemini_blocked", model);
+          return json({ error: "blocked" }, 422);
+        }
+        const raw = out?.candidates?.[0]?.content?.parts
+          ?.map((p: { text?: string; thought?: boolean }) => (p.thought ? "" : p.text ?? ""))
+          .join("") ?? "";
+        let parsed: { text?: string; cited?: string[] };
+        try {
+          parsed = JSON.parse(raw);
+        } catch {
+          console.error("gemini_unparsable", model, out?.candidates?.[0]?.finishReason ?? "none");
+          break;
+        }
+        const known = new Set(chunks.map((c) => c.id));
+        const cited = (parsed.cited ?? []).filter((id) => known.has(id));
+        return json({ text: String(parsed.text ?? ""), cited });
+      } catch (e) {
+        console.error("gemini_fetch_failed", model, e instanceof Error ? e.name : "error");
+        break;
+      } finally {
+        clearTimeout(timer);
       }
-      if (r.status === 404 || r.status === 400) continue; // model fallback
-      if (!r.ok) return json({ error: "upstream" }, 502);
-      const out = await r.json();
-      if (out?.promptFeedback?.blockReason) {
-        console.error("gemini_blocked", model);
-        return json({ error: "blocked" }, 422);
-      }
-      const raw = out?.candidates?.[0]?.content?.parts?.[0]?.text ?? "";
-      let parsed: { text?: string; cited?: string[] };
-      try {
-        parsed = JSON.parse(raw);
-      } catch {
-        console.error("gemini_unparsable", model, out?.candidates?.[0]?.finishReason ?? "none");
-        return json({ error: "upstream" }, 502);
-      }
-      const known = new Set(chunks.map((c) => c.id));
-      const cited = (parsed.cited ?? []).filter((id) => known.has(id));
-      return json({ text: String(parsed.text ?? ""), cited });
-    } catch (e) {
-      console.error("gemini_fetch_failed", model, e instanceof Error ? e.name : "error");
-      return json({ error: "upstream" }, 502);
-    } finally {
-      clearTimeout(timer);
     }
   }
   return json({ error: "upstream" }, 502);
