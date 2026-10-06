@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../app/account.dart';
 import '../../../app/app_info.dart';
 import '../../../app/professional.dart';
 import '../../../app/providers.dart';
@@ -73,6 +74,14 @@ class ProfileScreen extends ConsumerWidget {
                   ),
                   const SizedBox(height: FeSpace.sm),
                   const InviteColleagueCard(key: Key('profile.invite')),
+                  if (ref.watch(serverAccessProvider).value?.isAdmin ?? false)
+                    _Row(
+                      key: const Key('profile.admin'),
+                      icon: Icons.admin_panel_settings_outlined,
+                      title: l.adminTitle,
+                      value: l.adminProfileHint,
+                      onTap: () => context.push(Routes.admin),
+                    ),
                   FeSectionHeader(l.profileSectionVerification),
                   if (settings.userMode == UserMode.student)
                     Padding(

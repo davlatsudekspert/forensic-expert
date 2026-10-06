@@ -6395,5 +6395,122 @@
   "fullTextOpenFailed": "Couldn’t open the PDF. Check your connection.",
   "@fullTextOpenFailed": {
     "description": "Snackbar."
+  },
+  "adminTitle": "Admin panel",
+  "@adminTitle": {
+    "description": "Screen title."
+  },
+  "adminProfileHint": "Users, platforms, countries, access",
+  "@adminProfileHint": {
+    "description": "Profile row hint."
+  },
+  "adminUsers": "Users",
+  "@adminUsers": {
+    "description": "Stat."
+  },
+  "adminConfirmed": "Email confirmed",
+  "@adminConfirmed": {
+    "description": "Stat."
+  },
+  "adminSignups7d": "New (7 days)",
+  "@adminSignups7d": {
+    "description": "Stat."
+  },
+  "adminActive7d": "Active (7 days)",
+  "@adminActive7d": {
+    "description": "Stat."
+  },
+  "adminAndroid": "Android",
+  "@adminAndroid": {
+    "description": "Stat."
+  },
+  "adminIos": "iOS",
+  "@adminIos": {
+    "description": "Stat."
+  },
+  "adminAiRequests": "AI requests",
+  "@adminAiRequests": {
+    "description": "Stat."
+  },
+  "adminReferrals": "Referrals",
+  "@adminReferrals": {
+    "description": "Stat."
+  },
+  "adminProGrants": "Pro granted",
+  "@adminProGrants": {
+    "description": "Stat."
+  },
+  "adminRegions": "Countries (device region)",
+  "@adminRegions": {
+    "description": "Section."
+  },
+  "adminDaily": "Sign-ups, last 30 days",
+  "@adminDaily": {
+    "description": "Section."
+  },
+  "adminUserList": "Users ({count})",
+  "@adminUserList": {
+    "description": "Section.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "adminStoreNote": "Only registered users are counted here. Installs without sign-up are shown in App Store Connect and Google Play Console.",
+  "@adminStoreNote": {
+    "description": "Note."
+  },
+  "adminPrivacyNote": "Contains personal data (emails). Do not share screenshots.",
+  "@adminPrivacyNote": {
+    "description": "Note."
+  },
+  "adminGrantTitle": "Give or remove Pro",
+  "@adminGrantTitle": {
+    "description": "Section."
+  },
+  "adminEmail": "User email",
+  "@adminEmail": {
+    "description": "Field."
+  },
+  "adminGrantPro": "Give Professional Pro",
+  "@adminGrantPro": {
+    "description": "Action."
+  },
+  "adminRevoke": "Remove",
+  "@adminRevoke": {
+    "description": "Action."
+  },
+  "adminGranted": "Pro granted.",
+  "@adminGranted": {
+    "description": "Result."
+  },
+  "adminRevoked": "Access removed.",
+  "@adminRevoked": {
+    "description": "Result."
+  },
+  "adminNotFound": "No user with this email.",
+  "@adminNotFound": {
+    "description": "Result."
+  },
+  "adminFailed": "Action failed. Check the connection.",
+  "@adminFailed": {
+    "description": "Result."
+  },
+  "adminForbidden": "This section is for administrators only.",
+  "@adminForbidden": {
+    "description": "Empty."
+  },
+  "adminRefresh": "Refresh",
+  "@adminRefresh": {
+    "description": "Action."
+  },
+  "adminUnknownRegion": "Unknown",
+  "@adminUnknownRegion": {
+    "description": "Label."
+  },
+  "adminAdminBadge": "Admin",
+  "@adminAdminBadge": {
+    "description": "Badge."
   }
 }

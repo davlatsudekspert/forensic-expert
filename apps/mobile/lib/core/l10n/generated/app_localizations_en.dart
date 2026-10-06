@@ -4921,4 +4921,92 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get fullTextOpenFailed =>
       'Couldn’t open the PDF. Check your connection.';
+
+  @override
+  String get adminTitle => 'Admin panel';
+
+  @override
+  String get adminProfileHint => 'Users, platforms, countries, access';
+
+  @override
+  String get adminUsers => 'Users';
+
+  @override
+  String get adminConfirmed => 'Email confirmed';
+
+  @override
+  String get adminSignups7d => 'New (7 days)';
+
+  @override
+  String get adminActive7d => 'Active (7 days)';
+
+  @override
+  String get adminAndroid => 'Android';
+
+  @override
+  String get adminIos => 'iOS';
+
+  @override
+  String get adminAiRequests => 'AI requests';
+
+  @override
+  String get adminReferrals => 'Referrals';
+
+  @override
+  String get adminProGrants => 'Pro granted';
+
+  @override
+  String get adminRegions => 'Countries (device region)';
+
+  @override
+  String get adminDaily => 'Sign-ups, last 30 days';
+
+  @override
+  String adminUserList(int count) {
+    return 'Users ($count)';
+  }
+
+  @override
+  String get adminStoreNote =>
+      'Only registered users are counted here. Installs without sign-up are shown in App Store Connect and Google Play Console.';
+
+  @override
+  String get adminPrivacyNote =>
+      'Contains personal data (emails). Do not share screenshots.';
+
+  @override
+  String get adminGrantTitle => 'Give or remove Pro';
+
+  @override
+  String get adminEmail => 'User email';
+
+  @override
+  String get adminGrantPro => 'Give Professional Pro';
+
+  @override
+  String get adminRevoke => 'Remove';
+
+  @override
+  String get adminGranted => 'Pro granted.';
+
+  @override
+  String get adminRevoked => 'Access removed.';
+
+  @override
+  String get adminNotFound => 'No user with this email.';
+
+  @override
+  String get adminFailed => 'Action failed. Check the connection.';
+
+  @override
+  String get adminForbidden => 'This section is for administrators only.';
+
+  @override
+  String get adminRefresh => 'Refresh';
+
+  @override
+  String get adminUnknownRegion => 'Unknown';
+
+  @override
+  String get adminAdminBadge => 'Admin';
 }

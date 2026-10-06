@@ -4908,4 +4908,93 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get fullTextOpenFailed => 'PDF ochilmadi. Aloqani tekshiring.';
+
+  @override
+  String get adminTitle => 'Admin panel';
+
+  @override
+  String get adminProfileHint =>
+      'Foydalanuvchilar, platformalar, davlatlar, kirish';
+
+  @override
+  String get adminUsers => 'Foydalanuvchilar';
+
+  @override
+  String get adminConfirmed => 'Email tasdiqlangan';
+
+  @override
+  String get adminSignups7d => 'Yangi (7 kun)';
+
+  @override
+  String get adminActive7d => 'Faol (7 kun)';
+
+  @override
+  String get adminAndroid => 'Android';
+
+  @override
+  String get adminIos => 'iOS';
+
+  @override
+  String get adminAiRequests => 'AI so‘rovlar';
+
+  @override
+  String get adminReferrals => 'Takliflar';
+
+  @override
+  String get adminProGrants => 'Berilgan Pro';
+
+  @override
+  String get adminRegions => 'Davlatlar (qurilma hududi)';
+
+  @override
+  String get adminDaily => 'Ro‘yxatdan o‘tish, 30 kun';
+
+  @override
+  String adminUserList(int count) {
+    return 'Foydalanuvchilar ($count)';
+  }
+
+  @override
+  String get adminStoreNote =>
+      'Bu yerda faqat ro‘yxatdan o‘tganlar sanaladi. Ro‘yxatdan o‘tmagan yuklab olishlar App Store Connect va Google Play Console’da ko‘rinadi.';
+
+  @override
+  String get adminPrivacyNote =>
+      'Shaxsiy ma’lumot (email) bor. Skrinshotlarni tarqatmang.';
+
+  @override
+  String get adminGrantTitle => 'Pro berish yoki olib tashlash';
+
+  @override
+  String get adminEmail => 'Foydalanuvchi emaili';
+
+  @override
+  String get adminGrantPro => 'Professional Pro berish';
+
+  @override
+  String get adminRevoke => 'Olib tashlash';
+
+  @override
+  String get adminGranted => 'Pro berildi.';
+
+  @override
+  String get adminRevoked => 'Kirish olib tashlandi.';
+
+  @override
+  String get adminNotFound => 'Bunday emailli foydalanuvchi yo‘q.';
+
+  @override
+  String get adminFailed => 'Bajarilmadi. Aloqani tekshiring.';
+
+  @override
+  String get adminForbidden => 'Bu bo‘lim faqat administratorlar uchun.';
+
+  @override
+  String get adminRefresh => 'Yangilash';
+
+  @override
+  String get adminUnknownRegion => 'Noma’lum';
+
+  @override
+  String get adminAdminBadge => 'Admin';
 }

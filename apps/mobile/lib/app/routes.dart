@@ -73,6 +73,9 @@ abstract final class Routes {
   /// «Hamkasbingizni taklif qiling».
   static const referral = '/profile/invite';
 
+  /// Egasi uchun admin panel (faqat identity_admin).
+  static const admin = '/profile/admin';
+
   /// Kiruvchi taklif havolasi: `/invite/<CODE>` (deep link).
   static const invitePrefix = '/invite/';
 

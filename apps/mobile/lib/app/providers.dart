@@ -15,6 +15,7 @@ import '../data/local/content_store.dart';
 import '../data/offline/offline_ai.dart';
 import '../data/offline/offline_backend.dart';
 import '../data/offline/offline_billing.dart';
+import '../domain/admin/admin_models.dart';
 import '../domain/ai/ai_architecture.dart';
 import '../domain/ai/local_retrieval.dart';
 import '../domain/ai/provenance_retrieval.dart';
@@ -28,6 +29,7 @@ import '../domain/library/library_models.dart';
 import '../domain/ports/ai_ports.dart';
 import '../domain/ports/backend_ports.dart';
 import '../domain/ports/billing_ports.dart';
+import 'account.dart';
 
 /// Dependency injection nuqtasi. Feature’lar `lib/data` ni to‘g‘ridan-to‘g‘ri
 /// import qilmaydi — faqat shu provayderlar orqali (architecture testi).
@@ -313,8 +315,11 @@ final entitlementsProvider = StreamProvider<Entitlements>(
 );
 
 /// UI uchun sinxron qiymat: oqim hali kelmagan bo‘lsa — servisning joriy holati.
+/// Store huquqi va server grant (`access_grants`, masalan egasi) — yuqorisi.
 final accessProvider = Provider<Entitlements>(
-  (ref) =>
-      ref.watch(entitlementsProvider).value ??
-      ref.watch(entitlementServiceProvider).current,
+  (ref) => mergeServerGrant(
+    ref.watch(entitlementsProvider).value ??
+        ref.watch(entitlementServiceProvider).current,
+    ref.watch(serverAccessProvider).value ?? ServerAccess.none,
+  ),
 );

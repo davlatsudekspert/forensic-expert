@@ -21,6 +21,7 @@ import '../data/local/user_data_repository.dart';
 import '../data/offline/offline_backend.dart';
 import '../data/remote/http_auth_repository.dart';
 import '../data/remote/http_purchase_verifier.dart';
+import '../data/remote/supabase_account.dart';
 import '../data/remote/supabase_ai_provider.dart';
 import '../data/remote/supabase_auth_repository.dart';
 import '../data/remote/supabase_professional.dart';
@@ -28,6 +29,7 @@ import '../data/remote/supabase_referral.dart';
 import '../data/remote/supabase_rest.dart';
 import '../domain/ports/backend_ports.dart';
 import '../domain/ports/billing_ports.dart';
+import 'account.dart';
 import 'app.dart';
 import 'app_info.dart';
 import 'professional.dart';
@@ -102,6 +104,9 @@ Future<void> bootstrap() async {
           ),
           referralServiceProvider.overrideWithValue(
             SupabaseReferralService(config: supabase, auth: auth),
+          ),
+          accountServiceProvider.overrideWithValue(
+            SupabaseAccountService(config: supabase, auth: auth),
           ),
         ],
         // Obunalar: faqat mobil store’larda. Boshqa platformada — store yo‘q.

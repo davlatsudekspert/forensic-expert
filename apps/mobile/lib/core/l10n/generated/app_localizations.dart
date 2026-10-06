@@ -8930,6 +8930,174 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Couldn’t open the PDF. Check your connection.'**
   String get fullTextOpenFailed;
+
+  /// Screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Admin panel'**
+  String get adminTitle;
+
+  /// Profile row hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Users, platforms, countries, access'**
+  String get adminProfileHint;
+
+  /// Stat.
+  ///
+  /// In en, this message translates to:
+  /// **'Users'**
+  String get adminUsers;
+
+  /// Stat.
+  ///
+  /// In en, this message translates to:
+  /// **'Email confirmed'**
+  String get adminConfirmed;
+
+  /// Stat.
+  ///
+  /// In en, this message translates to:
+  /// **'New (7 days)'**
+  String get adminSignups7d;
+
+  /// Stat.
+  ///
+  /// In en, this message translates to:
+  /// **'Active (7 days)'**
+  String get adminActive7d;
+
+  /// Stat.
+  ///
+  /// In en, this message translates to:
+  /// **'Android'**
+  String get adminAndroid;
+
+  /// Stat.
+  ///
+  /// In en, this message translates to:
+  /// **'iOS'**
+  String get adminIos;
+
+  /// Stat.
+  ///
+  /// In en, this message translates to:
+  /// **'AI requests'**
+  String get adminAiRequests;
+
+  /// Stat.
+  ///
+  /// In en, this message translates to:
+  /// **'Referrals'**
+  String get adminReferrals;
+
+  /// Stat.
+  ///
+  /// In en, this message translates to:
+  /// **'Pro granted'**
+  String get adminProGrants;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Countries (device region)'**
+  String get adminRegions;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign-ups, last 30 days'**
+  String get adminDaily;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Users ({count})'**
+  String adminUserList(int count);
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'Only registered users are counted here. Installs without sign-up are shown in App Store Connect and Google Play Console.'**
+  String get adminStoreNote;
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'Contains personal data (emails). Do not share screenshots.'**
+  String get adminPrivacyNote;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Give or remove Pro'**
+  String get adminGrantTitle;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'User email'**
+  String get adminEmail;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Give Professional Pro'**
+  String get adminGrantPro;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove'**
+  String get adminRevoke;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Pro granted.'**
+  String get adminGranted;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Access removed.'**
+  String get adminRevoked;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'No user with this email.'**
+  String get adminNotFound;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Action failed. Check the connection.'**
+  String get adminFailed;
+
+  /// Empty.
+  ///
+  /// In en, this message translates to:
+  /// **'This section is for administrators only.'**
+  String get adminForbidden;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Refresh'**
+  String get adminRefresh;
+
+  /// Label.
+  ///
+  /// In en, this message translates to:
+  /// **'Unknown'**
+  String get adminUnknownRegion;
+
+  /// Badge.
+  ///
+  /// In en, this message translates to:
+  /// **'Admin'**
+  String get adminAdminBadge;
 }
 
 class _AppLocalizationsDelegate

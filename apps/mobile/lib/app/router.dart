@@ -14,6 +14,7 @@ import '../domain/knowledge/knowledge_models.dart';
 import '../domain/library/library_models.dart';
 import '../domain/referral/referral_models.dart';
 import '../features/account/presentation/auth_screens.dart';
+import '../features/admin/presentation/admin_screen.dart';
 import '../features/ai/presentation/ai_screen.dart';
 import '../features/disciplines/presentation/disciplines_screens.dart';
 import '../features/evidence/presentation/provenance_screens.dart';
@@ -461,6 +462,11 @@ final routerProvider = Provider<GoRouter>((ref) {
                     path: 'reviews',
                     parentNavigatorKey: rootKey,
                     builder: (c, s) => const ReviewDashboardScreen(),
+                  ),
+                  GoRoute(
+                    path: 'admin',
+                    parentNavigatorKey: rootKey,
+                    builder: (c, s) => const AdminScreen(),
                   ),
                   GoRoute(
                     path: 'invite',

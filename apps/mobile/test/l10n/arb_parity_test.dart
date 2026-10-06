@@ -38,6 +38,11 @@ void main() {
     'tech_hplc',
     'tech_lcMsMs',
     'tech_headspaceGc',
+    // Admin panel: platforma nomlari va o‘zbekchada ham «Admin panel».
+    'adminAndroid',
+    'adminIos',
+    'adminTitle',
+    'adminAdminBadge',
     // PHASE 6: statistik belgilar va xalqaro qisqartmalar; ICH hujjat nomi
     // rasmiy inglizcha sarlavha (tarjima qilinmaydi).
     'calcStatsN',

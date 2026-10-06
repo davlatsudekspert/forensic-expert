@@ -4928,4 +4928,92 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get fullTextOpenFailed =>
       'Не удалось открыть PDF. Проверьте соединение.';
+
+  @override
+  String get adminTitle => 'Админ-панель';
+
+  @override
+  String get adminProfileHint => 'Пользователи, платформы, страны, доступ';
+
+  @override
+  String get adminUsers => 'Пользователи';
+
+  @override
+  String get adminConfirmed => 'Email подтверждён';
+
+  @override
+  String get adminSignups7d => 'Новые (7 дней)';
+
+  @override
+  String get adminActive7d => 'Активные (7 дней)';
+
+  @override
+  String get adminAndroid => 'Android';
+
+  @override
+  String get adminIos => 'iOS';
+
+  @override
+  String get adminAiRequests => 'Запросы к ИИ';
+
+  @override
+  String get adminReferrals => 'Приглашения';
+
+  @override
+  String get adminProGrants => 'Выдано Pro';
+
+  @override
+  String get adminRegions => 'Страны (регион устройства)';
+
+  @override
+  String get adminDaily => 'Регистрации за 30 дней';
+
+  @override
+  String adminUserList(int count) {
+    return 'Пользователи ($count)';
+  }
+
+  @override
+  String get adminStoreNote =>
+      'Здесь учитываются только зарегистрированные пользователи. Установки без регистрации видны в App Store Connect и Google Play Console.';
+
+  @override
+  String get adminPrivacyNote =>
+      'Содержит персональные данные (email). Не пересылайте скриншоты.';
+
+  @override
+  String get adminGrantTitle => 'Выдать или снять Pro';
+
+  @override
+  String get adminEmail => 'Email пользователя';
+
+  @override
+  String get adminGrantPro => 'Выдать Professional Pro';
+
+  @override
+  String get adminRevoke => 'Снять';
+
+  @override
+  String get adminGranted => 'Pro выдан.';
+
+  @override
+  String get adminRevoked => 'Доступ снят.';
+
+  @override
+  String get adminNotFound => 'Пользователь с таким email не найден.';
+
+  @override
+  String get adminFailed => 'Не удалось. Проверьте соединение.';
+
+  @override
+  String get adminForbidden => 'Раздел только для администраторов.';
+
+  @override
+  String get adminRefresh => 'Обновить';
+
+  @override
+  String get adminUnknownRegion => 'Неизвестно';
+
+  @override
+  String get adminAdminBadge => 'Админ';
 }
