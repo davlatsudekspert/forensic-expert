@@ -108,8 +108,8 @@ da’vo qilinmaydi.
 * To‘siqlar (egasi): Supabase ulagichini qayta ulash (OAuth), ilovada OTP
   bilan bir marta kirish, keyin admin roli va Gemini real E2E sinovi.
 
-## 7. Hamkasb taklifi (referral) — DEPLOY KUTILMOQDA
+## 7. Hamkasb taklifi (referral) — DEPLOY QILINDI (2026-10-06)
 
-Migratsiya `20261006030000_referrals.sql` va testlar tayyor, lekin Supabase
-connector «Unauthorized» bo‘lgani uchun **hali qo‘llanmagan**. Tafsilot,
+Migratsiya `20261006030000_referrals.sql` va `email-otp` tuzatishi (bd3984e)
+production’da. Closeout holati: [`docs/PRODUCTION_CLOSEOUT.md`](PRODUCTION_CLOSEOUT.md). Tafsilot,
 tahdid modeli va deploy qadamlari: [`docs/REFERRALS.md`](REFERRALS.md).

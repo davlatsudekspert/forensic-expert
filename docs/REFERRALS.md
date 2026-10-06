@@ -1,8 +1,7 @@
 # FORENSIC EXPERT — hamkasb taklifi (referral) va FORENSIC Credits
 
-Holat: **kod, migratsiya va testlar repozitoriyda tayyor. Supabase’ga
-DEPLOY QILINMAGAN** (Supabase connector «Unauthorized»). Pastdagi
-«Deploy» bo‘limi connector tiklanishi bilan darhol bajariladi.
+Holat: **production’ga DEPLOY QILINDI** (2026-10-06, loyiha
+`igvzlmpgwybjdgkyowrl`). Real E2E (2 ta akkaunt) — `docs/PRODUCTION_CLOSEOUT.md`.
 
 ## 1. Oqim
 
