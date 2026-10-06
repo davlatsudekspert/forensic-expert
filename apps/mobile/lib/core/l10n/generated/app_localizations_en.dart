@@ -298,7 +298,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get toolPmiDesc =>
-      'Planned for V1.1 after scientific and licensing review.';
+      'Rectal temperature nomogram (Henssge): estimate with 95 % limits.';
 
   @override
   String get toolMolarityName => 'Molarity and mass concentration';
@@ -5009,4 +5009,238 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get adminAdminBadge => 'Admin';
+
+  @override
+  String get calcSex => 'Sex';
+
+  @override
+  String get calcSexMale => 'Male';
+
+  @override
+  String get calcSexFemale => 'Female';
+
+  @override
+  String get calcBodyWeight => 'Body weight, kg';
+
+  @override
+  String get calcHeightOptional => 'Height, cm (optional — Seidl r)';
+
+  @override
+  String get calcDrinkVolume => 'Drink volume, mL';
+
+  @override
+  String get calcDrinkAbv => 'Alcohol, % vol';
+
+  @override
+  String get calcHoursSinceStart => 'Hours since drinking started';
+
+  @override
+  String get calcAddDrink => 'Add drink';
+
+  @override
+  String get calcRemoveDrink => 'Remove drink';
+
+  @override
+  String calcDrinkN(String n) {
+    return 'Drink $n';
+  }
+
+  @override
+  String get calcWidmarkEthanol => 'Pure ethanol consumed';
+
+  @override
+  String get calcWidmarkR => 'Distribution factor r';
+
+  @override
+  String get calcWidmarkPeak =>
+      'Theoretical maximum (no deficit, no elimination)';
+
+  @override
+  String get calcWidmarkMin => 'Minimum estimate';
+
+  @override
+  String get calcWidmarkMax => 'Maximum estimate';
+
+  @override
+  String get calcWidmarkAssumptionDeficit =>
+      'Resorption deficit 10 % (maximum) and 30 % (minimum).';
+
+  @override
+  String get calcWidmarkAssumptionBeta =>
+      'Elimination 0.10 ‰/h (maximum) and 0.20 ‰/h (minimum), from the start of drinking.';
+
+  @override
+  String get calcWidmarkAssumptionR =>
+      'r: Widmark mean (male 0.7, female 0.6), or Seidl et al. (2000) from height and weight.';
+
+  @override
+  String get calcWidmarkLimitation =>
+      'An estimate, not a measurement. Food, liver function, drinking pattern and medications change the result. Does not replace a measured blood alcohol concentration or an expert opinion.';
+
+  @override
+  String get calcBacMeasured => 'Measured blood alcohol, ‰';
+
+  @override
+  String get calcHoursEventToSample => 'Hours from event to blood sampling';
+
+  @override
+  String get calcHoursDrinkEndOptional =>
+      'Hours from end of drinking to event (optional)';
+
+  @override
+  String get calcBackMin => 'At the event, minimum';
+
+  @override
+  String get calcBackMax => 'At the event, maximum';
+
+  @override
+  String get calcBackAssumptionLinear =>
+      'Elimination is linear (zero order) and absorption was complete at the event.';
+
+  @override
+  String get calcBackAssumptionBeta =>
+      'β = 0.10–0.25 g/L/h covers most people (Jones 2010).';
+
+  @override
+  String get calcBackLimitation =>
+      'Within about 2 hours after the end of drinking the person may still be absorbing alcohol; then back-calculation may overestimate. Drinking after the event makes it invalid.';
+
+  @override
+  String get calcWarnAbsorption =>
+      'The event was less than 2 hours after drinking ended: absorption may not be complete. Minimum is shown without back-extrapolation.';
+
+  @override
+  String get calcWarnEliminated =>
+      'By this time alcohol is likely fully eliminated.';
+
+  @override
+  String get calcWarnRUnusual =>
+      'Calculated r is outside the usual 0.45–0.85 range — check height and weight.';
+
+  @override
+  String get calcEthanolMatrix => 'Sample';
+
+  @override
+  String get calcMatrixBlood => 'Whole blood';
+
+  @override
+  String get calcMatrixSerum => 'Serum / plasma';
+
+  @override
+  String get calcSerumRatio => 'Serum / blood ratio';
+
+  @override
+  String get calcEthanolBloodHeader => 'Whole blood equivalent';
+
+  @override
+  String get calcEthanolAssumptionDensity =>
+      '‰ means g/kg; blood density 1.055 g/mL is used for g/L.';
+
+  @override
+  String get calcEthanolAssumptionRatio =>
+      'Serum contains more water than blood, so serum ethanol is higher; default ratio 1.2.';
+
+  @override
+  String get calcEthanolLimitation =>
+      'The serum/blood ratio varies between people (about 1.1–1.3; Rainey 1993). Use the value required by your laboratory or jurisdiction.';
+
+  @override
+  String get calcRectalTemp => 'Rectal temperature, °C';
+
+  @override
+  String get calcAmbientTemp => 'Ambient temperature, °C';
+
+  @override
+  String get calcCorrectiveFactor =>
+      'Clothing / environment (corrective factor)';
+
+  @override
+  String get calcFactorNakedDry => 'Naked, dry, still air — 1.0';
+
+  @override
+  String get calcFactorNakedMovingAir => 'Naked, moving air — 0.75';
+
+  @override
+  String get calcFactorWetStill => 'Naked, in still water — 0.5';
+
+  @override
+  String get calcFactorWetFlowing => 'Naked, in flowing water — 0.35';
+
+  @override
+  String get calcFactorThin => '1–2 thin layers of clothing — 1.1';
+
+  @override
+  String get calcFactorLayers => '2–3 layers of clothing — 1.2';
+
+  @override
+  String get calcFactorThick => '3–4 layers / thick clothing — 1.3';
+
+  @override
+  String get calcFactorBedding => 'Under a thick blanket — 2.0';
+
+  @override
+  String get calcHenssgeTime => 'Estimated time since death';
+
+  @override
+  String get calcHenssgeRange => '95 % limits';
+
+  @override
+  String calcHoursValue(String h) {
+    return '$h h';
+  }
+
+  @override
+  String calcHoursRange(String from, String to) {
+    return '$from–$to h';
+  }
+
+  @override
+  String get calcHenssgeAssumptionNormal =>
+      'Body temperature at death 37.2 °C.';
+
+  @override
+  String get calcHenssgeAssumptionAmbient =>
+      'Ambient temperature was roughly constant; formula for ≤ 23 °C and > 23 °C differs.';
+
+  @override
+  String get calcHenssgeAssumptionCi =>
+      '95 % limits: ±2.8 h (≤ 23 °C), ±3.2 h (> 23 °C), ±4.5 h when a corrective factor is used.';
+
+  @override
+  String get calcHenssgeLimitation =>
+      'Not valid with fever, hypothermia, strong heat sources, sun, body moved between environments, or major changes in ambient temperature. Combine with other signs (lividity, rigor, supravital reactions).';
+
+  @override
+  String get calcWarnNoCooling =>
+      'Rectal temperature is at or above 37.2 °C — the body has not started cooling, or there was fever.';
+
+  @override
+  String get calcWarnLatePhase =>
+      'Body is close to ambient temperature — accuracy is low.';
+
+  @override
+  String get calcErrorWeight => 'Enter a realistic body weight.';
+
+  @override
+  String get calcErrorTime => 'Enter a valid time in hours.';
+
+  @override
+  String get calcErrorAbv => 'Alcohol content must be between 0 and 100 %.';
+
+  @override
+  String get calcErrorHeight => 'Height must be 120–230 cm, or leave it empty.';
+
+  @override
+  String get calcErrorBac => 'Enter a blood alcohol between 0 and 8 ‰.';
+
+  @override
+  String get calcErrorRatio => 'Ratio must be between 1.0 and 1.5.';
+
+  @override
+  String get calcErrorRectal =>
+      'Rectal temperature must be higher than ambient and at most 42 °C.';
+
+  @override
+  String get calcErrorAmbient =>
+      'Ambient temperature must be between −20 and 35 °C.';
 }

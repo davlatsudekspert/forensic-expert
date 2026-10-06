@@ -7,6 +7,8 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/fe_components.dart';
 import 'calculator_status.dart';
 
+part 'forensic_calculators.dart';
+
 /// PHASE 6 laboratoriya kalkulyatorlari. Har biri bir xil tuzilma:
 /// INPUT → FORMULA → RESULT → ASSUMPTIONS → LIMITATIONS → REFERENCES.
 /// Hisob `fe_calc_engine` da (UI’dan mustaqil, sof va test qilingan).

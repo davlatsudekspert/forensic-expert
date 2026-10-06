@@ -1,4 +1,5 @@
 import 'calculator.dart';
+import 'fm/henssge.dart';
 import 'lab/concentration_conversion.dart';
 import 'lab/dilution.dart';
 import 'lab/molarity.dart';
@@ -7,6 +8,9 @@ import 'lab/solution_preparation.dart';
 import 'stats/descriptive.dart';
 import 'stats/linear_regression.dart';
 import 'stats/lod_loq.dart';
+import 'tox/back_calculation.dart';
+import 'tox/ethanol_units.dart';
+import 'tox/widmark.dart';
 
 /// Barcha kalkulyatorlar reyestri. UI va kontent bazasi kalkulyatorni
 /// `descriptor.id` orqali topadi.
@@ -20,6 +24,10 @@ abstract final class CalculatorRegistry {
     DescriptiveStatsCalculator(),
     LinearRegressionCalculator(),
     LodLoqCalculator(),
+    WidmarkCalculator(),
+    BackCalculationCalculator(),
+    EthanolUnitsCalculator(),
+    HenssgeCalculator(),
   ];
 
   static List<CalculatorDescriptor> get descriptors => [

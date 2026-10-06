@@ -298,7 +298,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get toolPmiDesc =>
-      'Запланировано на V1.1 после научной и лицензионной проверки.';
+      'Номограмма ректальной температуры (Henssge): оценка с 95 % границами.';
 
   @override
   String get toolMolarityName => 'Молярность и массовая концентрация';
@@ -5016,4 +5016,238 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get adminAdminBadge => 'Админ';
+
+  @override
+  String get calcSex => 'Пол';
+
+  @override
+  String get calcSexMale => 'Мужской';
+
+  @override
+  String get calcSexFemale => 'Женский';
+
+  @override
+  String get calcBodyWeight => 'Масса тела, кг';
+
+  @override
+  String get calcHeightOptional => 'Рост, см (необязательно — r по Seidl)';
+
+  @override
+  String get calcDrinkVolume => 'Объём напитка, мл';
+
+  @override
+  String get calcDrinkAbv => 'Крепость, % об.';
+
+  @override
+  String get calcHoursSinceStart => 'Часов с начала употребления';
+
+  @override
+  String get calcAddDrink => 'Добавить напиток';
+
+  @override
+  String get calcRemoveDrink => 'Удалить напиток';
+
+  @override
+  String calcDrinkN(String n) {
+    return 'Напиток $n';
+  }
+
+  @override
+  String get calcWidmarkEthanol => 'Выпито чистого этанола';
+
+  @override
+  String get calcWidmarkR => 'Коэффициент распределения r';
+
+  @override
+  String get calcWidmarkPeak =>
+      'Теоретический максимум (без дефицита и элиминации)';
+
+  @override
+  String get calcWidmarkMin => 'Минимальная оценка';
+
+  @override
+  String get calcWidmarkMax => 'Максимальная оценка';
+
+  @override
+  String get calcWidmarkAssumptionDeficit =>
+      'Резорбционный дефицит 10 % (максимум) и 30 % (минимум).';
+
+  @override
+  String get calcWidmarkAssumptionBeta =>
+      'Элиминация 0,10 ‰/ч (максимум) и 0,20 ‰/ч (минимум) с начала употребления.';
+
+  @override
+  String get calcWidmarkAssumptionR =>
+      'r: среднее по Widmark (муж. 0,7, жен. 0,6) или по Seidl и соавт. (2000) из роста и массы.';
+
+  @override
+  String get calcWidmarkLimitation =>
+      'Это оценка, а не измерение. Пища, функция печени, характер употребления и лекарства меняют результат. Не заменяет измеренную концентрацию и экспертное заключение.';
+
+  @override
+  String get calcBacMeasured => 'Измеренная концентрация в крови, ‰';
+
+  @override
+  String get calcHoursEventToSample => 'Часов от события до взятия крови';
+
+  @override
+  String get calcHoursDrinkEndOptional =>
+      'Часов от окончания употребления до события (необязательно)';
+
+  @override
+  String get calcBackMin => 'На момент события, минимум';
+
+  @override
+  String get calcBackMax => 'На момент события, максимум';
+
+  @override
+  String get calcBackAssumptionLinear =>
+      'Элиминация линейная (нулевой порядок), к моменту события всасывание завершено.';
+
+  @override
+  String get calcBackAssumptionBeta =>
+      'β = 0,10–0,25 г/л/ч охватывает большинство людей (Jones 2010).';
+
+  @override
+  String get calcBackLimitation =>
+      'В течение ~2 часов после окончания употребления всасывание может продолжаться — обратный расчёт может завысить результат. Употребление после события делает расчёт недействительным.';
+
+  @override
+  String get calcWarnAbsorption =>
+      'Событие было менее чем через 2 часа после окончания употребления: всасывание могло не завершиться. Минимум показан без обратной экстраполяции.';
+
+  @override
+  String get calcWarnEliminated =>
+      'К этому времени алкоголь, вероятно, полностью выведен.';
+
+  @override
+  String get calcWarnRUnusual =>
+      'Рассчитанный r вне обычного диапазона 0,45–0,85 — проверьте рост и массу.';
+
+  @override
+  String get calcEthanolMatrix => 'Образец';
+
+  @override
+  String get calcMatrixBlood => 'Цельная кровь';
+
+  @override
+  String get calcMatrixSerum => 'Сыворотка / плазма';
+
+  @override
+  String get calcSerumRatio => 'Отношение сыворотка / кровь';
+
+  @override
+  String get calcEthanolBloodHeader => 'Эквивалент для цельной крови';
+
+  @override
+  String get calcEthanolAssumptionDensity =>
+      '‰ — это г/кг; для г/л используется плотность крови 1,055 г/мл.';
+
+  @override
+  String get calcEthanolAssumptionRatio =>
+      'В сыворотке больше воды, чем в крови, поэтому этанола в ней больше; по умолчанию отношение 1,2.';
+
+  @override
+  String get calcEthanolLimitation =>
+      'Отношение сыворотка/кровь индивидуально (около 1,1–1,3; Rainey 1993). Используйте значение, принятое в вашей лаборатории или юрисдикции.';
+
+  @override
+  String get calcRectalTemp => 'Ректальная температура, °C';
+
+  @override
+  String get calcAmbientTemp => 'Температура среды, °C';
+
+  @override
+  String get calcCorrectiveFactor => 'Одежда / среда (поправочный коэффициент)';
+
+  @override
+  String get calcFactorNakedDry => 'Обнажён, сухо, неподвижный воздух — 1,0';
+
+  @override
+  String get calcFactorNakedMovingAir => 'Обнажён, движение воздуха — 0,75';
+
+  @override
+  String get calcFactorWetStill => 'Обнажён, в стоячей воде — 0,5';
+
+  @override
+  String get calcFactorWetFlowing => 'Обнажён, в проточной воде — 0,35';
+
+  @override
+  String get calcFactorThin => '1–2 тонких слоя одежды — 1,1';
+
+  @override
+  String get calcFactorLayers => '2–3 слоя одежды — 1,2';
+
+  @override
+  String get calcFactorThick => '3–4 слоя / тёплая одежда — 1,3';
+
+  @override
+  String get calcFactorBedding => 'Под толстым одеялом — 2,0';
+
+  @override
+  String get calcHenssgeTime => 'Расчётная давность смерти';
+
+  @override
+  String get calcHenssgeRange => '95 % границы';
+
+  @override
+  String calcHoursValue(String h) {
+    return '$h ч';
+  }
+
+  @override
+  String calcHoursRange(String from, String to) {
+    return '$from–$to ч';
+  }
+
+  @override
+  String get calcHenssgeAssumptionNormal =>
+      'Температура тела в момент смерти 37,2 °C.';
+
+  @override
+  String get calcHenssgeAssumptionAmbient =>
+      'Температура среды была примерно постоянной; формулы для ≤ 23 °C и > 23 °C различаются.';
+
+  @override
+  String get calcHenssgeAssumptionCi =>
+      '95 % границы: ±2,8 ч (≤ 23 °C), ±3,2 ч (> 23 °C), ±4,5 ч при поправочном коэффициенте.';
+
+  @override
+  String get calcHenssgeLimitation =>
+      'Неприменимо при лихорадке, переохлаждении, источниках тепла, солнце, перемещении тела или больших изменениях температуры среды. Сочетайте с другими признаками (трупные пятна, окоченение, суправитальные реакции).';
+
+  @override
+  String get calcWarnNoCooling =>
+      'Ректальная температура ≥ 37,2 °C — охлаждение не началось или была лихорадка.';
+
+  @override
+  String get calcWarnLatePhase =>
+      'Тело близко к температуре среды — точность низкая.';
+
+  @override
+  String get calcErrorWeight => 'Введите реальную массу тела.';
+
+  @override
+  String get calcErrorTime => 'Введите корректное время в часах.';
+
+  @override
+  String get calcErrorAbv => 'Крепость должна быть от 0 до 100 %.';
+
+  @override
+  String get calcErrorHeight =>
+      'Рост должен быть 120–230 см, или оставьте поле пустым.';
+
+  @override
+  String get calcErrorBac => 'Введите концентрацию от 0 до 8 ‰.';
+
+  @override
+  String get calcErrorRatio => 'Отношение должно быть от 1,0 до 1,5.';
+
+  @override
+  String get calcErrorRectal =>
+      'Ректальная температура должна быть выше температуры среды и не более 42 °C.';
+
+  @override
+  String get calcErrorAmbient =>
+      'Температура среды должна быть от −20 до 35 °C.';
 }

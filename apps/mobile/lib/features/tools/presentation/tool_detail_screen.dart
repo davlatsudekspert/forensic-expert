@@ -80,6 +80,11 @@ class _ToolDetailScreenState extends ConsumerState<ToolDetailScreen> {
                       'stats.lod_loq.ich' => const CalibrationView(
                         withLimits: true,
                       ),
+                      'tox.ethanol.widmark' => const WidmarkView(),
+                      'tox.ethanol.back_calculation' =>
+                        const BackCalculationView(),
+                      'tox.ethanol.units' => const EthanolUnitsView(),
+                      'fm.pmi.henssge' => const HenssgeView(),
                       _ => _PlannedToolView(tool: tool),
                     },
             ),

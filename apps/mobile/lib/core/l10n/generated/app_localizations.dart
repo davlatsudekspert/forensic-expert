@@ -625,7 +625,7 @@ abstract class AppLocalizations {
   /// Tool description.
   ///
   /// In en, this message translates to:
-  /// **'Planned for V1.1 after scientific and licensing review.'**
+  /// **'Rectal temperature nomogram (Henssge): estimate with 95 % limits.'**
   String get toolPmiDesc;
 
   /// Tool name.
@@ -9098,6 +9098,414 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Admin'**
   String get adminAdminBadge;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Sex'**
+  String get calcSex;
+
+  /// Option.
+  ///
+  /// In en, this message translates to:
+  /// **'Male'**
+  String get calcSexMale;
+
+  /// Option.
+  ///
+  /// In en, this message translates to:
+  /// **'Female'**
+  String get calcSexFemale;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Body weight, kg'**
+  String get calcBodyWeight;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Height, cm (optional — Seidl r)'**
+  String get calcHeightOptional;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Drink volume, mL'**
+  String get calcDrinkVolume;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Alcohol, % vol'**
+  String get calcDrinkAbv;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Hours since drinking started'**
+  String get calcHoursSinceStart;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Add drink'**
+  String get calcAddDrink;
+
+  /// Tooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove drink'**
+  String get calcRemoveDrink;
+
+  /// Label.
+  ///
+  /// In en, this message translates to:
+  /// **'Drink {n}'**
+  String calcDrinkN(String n);
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Pure ethanol consumed'**
+  String get calcWidmarkEthanol;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Distribution factor r'**
+  String get calcWidmarkR;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Theoretical maximum (no deficit, no elimination)'**
+  String get calcWidmarkPeak;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Minimum estimate'**
+  String get calcWidmarkMin;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Maximum estimate'**
+  String get calcWidmarkMax;
+
+  /// Assumption.
+  ///
+  /// In en, this message translates to:
+  /// **'Resorption deficit 10 % (maximum) and 30 % (minimum).'**
+  String get calcWidmarkAssumptionDeficit;
+
+  /// Assumption.
+  ///
+  /// In en, this message translates to:
+  /// **'Elimination 0.10 ‰/h (maximum) and 0.20 ‰/h (minimum), from the start of drinking.'**
+  String get calcWidmarkAssumptionBeta;
+
+  /// Assumption.
+  ///
+  /// In en, this message translates to:
+  /// **'r: Widmark mean (male 0.7, female 0.6), or Seidl et al. (2000) from height and weight.'**
+  String get calcWidmarkAssumptionR;
+
+  /// Limitation.
+  ///
+  /// In en, this message translates to:
+  /// **'An estimate, not a measurement. Food, liver function, drinking pattern and medications change the result. Does not replace a measured blood alcohol concentration or an expert opinion.'**
+  String get calcWidmarkLimitation;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Measured blood alcohol, ‰'**
+  String get calcBacMeasured;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Hours from event to blood sampling'**
+  String get calcHoursEventToSample;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Hours from end of drinking to event (optional)'**
+  String get calcHoursDrinkEndOptional;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'At the event, minimum'**
+  String get calcBackMin;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'At the event, maximum'**
+  String get calcBackMax;
+
+  /// Assumption.
+  ///
+  /// In en, this message translates to:
+  /// **'Elimination is linear (zero order) and absorption was complete at the event.'**
+  String get calcBackAssumptionLinear;
+
+  /// Assumption.
+  ///
+  /// In en, this message translates to:
+  /// **'β = 0.10–0.25 g/L/h covers most people (Jones 2010).'**
+  String get calcBackAssumptionBeta;
+
+  /// Limitation.
+  ///
+  /// In en, this message translates to:
+  /// **'Within about 2 hours after the end of drinking the person may still be absorbing alcohol; then back-calculation may overestimate. Drinking after the event makes it invalid.'**
+  String get calcBackLimitation;
+
+  /// Warning.
+  ///
+  /// In en, this message translates to:
+  /// **'The event was less than 2 hours after drinking ended: absorption may not be complete. Minimum is shown without back-extrapolation.'**
+  String get calcWarnAbsorption;
+
+  /// Warning.
+  ///
+  /// In en, this message translates to:
+  /// **'By this time alcohol is likely fully eliminated.'**
+  String get calcWarnEliminated;
+
+  /// Warning.
+  ///
+  /// In en, this message translates to:
+  /// **'Calculated r is outside the usual 0.45–0.85 range — check height and weight.'**
+  String get calcWarnRUnusual;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Sample'**
+  String get calcEthanolMatrix;
+
+  /// Option.
+  ///
+  /// In en, this message translates to:
+  /// **'Whole blood'**
+  String get calcMatrixBlood;
+
+  /// Option.
+  ///
+  /// In en, this message translates to:
+  /// **'Serum / plasma'**
+  String get calcMatrixSerum;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Serum / blood ratio'**
+  String get calcSerumRatio;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Whole blood equivalent'**
+  String get calcEthanolBloodHeader;
+
+  /// Assumption.
+  ///
+  /// In en, this message translates to:
+  /// **'‰ means g/kg; blood density 1.055 g/mL is used for g/L.'**
+  String get calcEthanolAssumptionDensity;
+
+  /// Assumption.
+  ///
+  /// In en, this message translates to:
+  /// **'Serum contains more water than blood, so serum ethanol is higher; default ratio 1.2.'**
+  String get calcEthanolAssumptionRatio;
+
+  /// Limitation.
+  ///
+  /// In en, this message translates to:
+  /// **'The serum/blood ratio varies between people (about 1.1–1.3; Rainey 1993). Use the value required by your laboratory or jurisdiction.'**
+  String get calcEthanolLimitation;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Rectal temperature, °C'**
+  String get calcRectalTemp;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Ambient temperature, °C'**
+  String get calcAmbientTemp;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Clothing / environment (corrective factor)'**
+  String get calcCorrectiveFactor;
+
+  /// Option.
+  ///
+  /// In en, this message translates to:
+  /// **'Naked, dry, still air — 1.0'**
+  String get calcFactorNakedDry;
+
+  /// Option.
+  ///
+  /// In en, this message translates to:
+  /// **'Naked, moving air — 0.75'**
+  String get calcFactorNakedMovingAir;
+
+  /// Option.
+  ///
+  /// In en, this message translates to:
+  /// **'Naked, in still water — 0.5'**
+  String get calcFactorWetStill;
+
+  /// Option.
+  ///
+  /// In en, this message translates to:
+  /// **'Naked, in flowing water — 0.35'**
+  String get calcFactorWetFlowing;
+
+  /// Option.
+  ///
+  /// In en, this message translates to:
+  /// **'1–2 thin layers of clothing — 1.1'**
+  String get calcFactorThin;
+
+  /// Option.
+  ///
+  /// In en, this message translates to:
+  /// **'2–3 layers of clothing — 1.2'**
+  String get calcFactorLayers;
+
+  /// Option.
+  ///
+  /// In en, this message translates to:
+  /// **'3–4 layers / thick clothing — 1.3'**
+  String get calcFactorThick;
+
+  /// Option.
+  ///
+  /// In en, this message translates to:
+  /// **'Under a thick blanket — 2.0'**
+  String get calcFactorBedding;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Estimated time since death'**
+  String get calcHenssgeTime;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'95 % limits'**
+  String get calcHenssgeRange;
+
+  /// Value.
+  ///
+  /// In en, this message translates to:
+  /// **'{h} h'**
+  String calcHoursValue(String h);
+
+  /// Value.
+  ///
+  /// In en, this message translates to:
+  /// **'{from}–{to} h'**
+  String calcHoursRange(String from, String to);
+
+  /// Assumption.
+  ///
+  /// In en, this message translates to:
+  /// **'Body temperature at death 37.2 °C.'**
+  String get calcHenssgeAssumptionNormal;
+
+  /// Assumption.
+  ///
+  /// In en, this message translates to:
+  /// **'Ambient temperature was roughly constant; formula for ≤ 23 °C and > 23 °C differs.'**
+  String get calcHenssgeAssumptionAmbient;
+
+  /// Assumption.
+  ///
+  /// In en, this message translates to:
+  /// **'95 % limits: ±2.8 h (≤ 23 °C), ±3.2 h (> 23 °C), ±4.5 h when a corrective factor is used.'**
+  String get calcHenssgeAssumptionCi;
+
+  /// Limitation.
+  ///
+  /// In en, this message translates to:
+  /// **'Not valid with fever, hypothermia, strong heat sources, sun, body moved between environments, or major changes in ambient temperature. Combine with other signs (lividity, rigor, supravital reactions).'**
+  String get calcHenssgeLimitation;
+
+  /// Warning.
+  ///
+  /// In en, this message translates to:
+  /// **'Rectal temperature is at or above 37.2 °C — the body has not started cooling, or there was fever.'**
+  String get calcWarnNoCooling;
+
+  /// Warning.
+  ///
+  /// In en, this message translates to:
+  /// **'Body is close to ambient temperature — accuracy is low.'**
+  String get calcWarnLatePhase;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a realistic body weight.'**
+  String get calcErrorWeight;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a valid time in hours.'**
+  String get calcErrorTime;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Alcohol content must be between 0 and 100 %.'**
+  String get calcErrorAbv;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Height must be 120–230 cm, or leave it empty.'**
+  String get calcErrorHeight;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a blood alcohol between 0 and 8 ‰.'**
+  String get calcErrorBac;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Ratio must be between 1.0 and 1.5.'**
+  String get calcErrorRatio;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Rectal temperature must be higher than ambient and at most 42 °C.'**
+  String get calcErrorRectal;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Ambient temperature must be between −20 and 35 °C.'**
+  String get calcErrorAmbient;
 }
 
 class _AppLocalizationsDelegate

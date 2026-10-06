@@ -99,18 +99,20 @@ abstract final class ToolsCatalog {
     ToolEntry(
       id: 'tool.fm.pmi_henssge',
       category: ToolCategory.forensicMedicine,
-      availability: ToolAvailability.planned,
-      plannedRelease: 'V1.1',
+      availability: ToolAvailability.available,
+      engineId: 'fm.pmi.henssge',
     ),
     ToolEntry(
       id: 'tool.tox.widmark',
       category: ToolCategory.toxicology,
-      availability: ToolAvailability.planned,
+      availability: ToolAvailability.available,
+      engineId: 'tox.ethanol.widmark',
     ),
     ToolEntry(
       id: 'tool.tox.back_calculation',
       category: ToolCategory.toxicology,
-      availability: ToolAvailability.planned,
+      availability: ToolAvailability.available,
+      engineId: 'tox.ethanol.back_calculation',
     ),
     dilution,
     solution,
@@ -123,7 +125,8 @@ abstract final class ToolsCatalog {
     ToolEntry(
       id: 'tool.conv.ethanol_units',
       category: ToolCategory.conversions,
-      availability: ToolAvailability.planned,
+      availability: ToolAvailability.available,
+      engineId: 'tox.ethanol.units',
     ),
   ];
 

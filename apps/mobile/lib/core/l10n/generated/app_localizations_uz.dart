@@ -300,7 +300,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get toolPmiDesc =>
-      'Ilmiy va litsenziya tekshiruvidan so‘ng V1.1 da rejalashtirilgan.';
+      'Rektal harorat nomogrammasi (Henssge): 95 % chegarali baho.';
 
   @override
   String get toolMolarityName => 'Molyarlik va massa konsentratsiyasi';
@@ -4997,4 +4997,238 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get adminAdminBadge => 'Admin';
+
+  @override
+  String get calcSex => 'Jinsi';
+
+  @override
+  String get calcSexMale => 'Erkak';
+
+  @override
+  String get calcSexFemale => 'Ayol';
+
+  @override
+  String get calcBodyWeight => 'Tana vazni, kg';
+
+  @override
+  String get calcHeightOptional => 'Bo‘yi, sm (ixtiyoriy — Seidl r)';
+
+  @override
+  String get calcDrinkVolume => 'Ichimlik hajmi, mL';
+
+  @override
+  String get calcDrinkAbv => 'Spirt ulushi, % hajm';
+
+  @override
+  String get calcHoursSinceStart => 'Ichish boshlanganidan beri, soat';
+
+  @override
+  String get calcAddDrink => 'Ichimlik qo‘shish';
+
+  @override
+  String get calcRemoveDrink => 'Ichimlikni olib tashlash';
+
+  @override
+  String calcDrinkN(String n) {
+    return '$n-ichimlik';
+  }
+
+  @override
+  String get calcWidmarkEthanol => 'Ichilgan sof etanol';
+
+  @override
+  String get calcWidmarkR => 'Taqsimlanish koeffitsienti r';
+
+  @override
+  String get calcWidmarkPeak =>
+      'Nazariy maksimum (defitsit va eliminatsiyasiz)';
+
+  @override
+  String get calcWidmarkMin => 'Minimal baho';
+
+  @override
+  String get calcWidmarkMax => 'Maksimal baho';
+
+  @override
+  String get calcWidmarkAssumptionDeficit =>
+      'Rezorbsiya defitsiti: maksimum uchun 10 %, minimum uchun 30 %.';
+
+  @override
+  String get calcWidmarkAssumptionBeta =>
+      'Eliminatsiya: maksimum uchun 0,10 ‰/soat, minimum uchun 0,20 ‰/soat, ichish boshlanganidan.';
+
+  @override
+  String get calcWidmarkAssumptionR =>
+      'r: Widmark o‘rtachasi (erkak 0,7, ayol 0,6) yoki bo‘y va vazndan Seidl va boshq. (2000).';
+
+  @override
+  String get calcWidmarkLimitation =>
+      'Bu o‘lchov emas, taxminiy baho. Ovqat, jigar faoliyati, ichish tarzi va dorilar natijani o‘zgartiradi. O‘lchangan konsentratsiya va ekspert xulosasi o‘rnini bosmaydi.';
+
+  @override
+  String get calcBacMeasured => 'O‘lchangan qondagi alkogol, ‰';
+
+  @override
+  String get calcHoursEventToSample => 'Hodisadan qon olishgacha, soat';
+
+  @override
+  String get calcHoursDrinkEndOptional =>
+      'Ichish tugaganidan hodisagacha, soat (ixtiyoriy)';
+
+  @override
+  String get calcBackMin => 'Hodisa vaqtida, minimum';
+
+  @override
+  String get calcBackMax => 'Hodisa vaqtida, maksimum';
+
+  @override
+  String get calcBackAssumptionLinear =>
+      'Eliminatsiya chiziqli (nol tartib), hodisa paytida so‘rilish tugagan.';
+
+  @override
+  String get calcBackAssumptionBeta =>
+      'β = 0,10–0,25 g/L/soat ko‘pchilik odamlarni qamraydi (Jones 2010).';
+
+  @override
+  String get calcBackLimitation =>
+      'Ichish tugaganidan keyin ~2 soat davomida so‘rilish davom etishi mumkin — teskari hisob natijani oshirib ko‘rsatishi mumkin. Hodisadan keyin ichilgan bo‘lsa, hisob yaroqsiz.';
+
+  @override
+  String get calcWarnAbsorption =>
+      'Hodisa ichish tugaganidan 2 soatdan kam vaqt o‘tib bo‘lgan: so‘rilish tugamagan bo‘lishi mumkin. Minimum qo‘shimchasiz ko‘rsatildi.';
+
+  @override
+  String get calcWarnEliminated =>
+      'Bu vaqtga kelib alkogol to‘liq chiqib ketgan bo‘lishi mumkin.';
+
+  @override
+  String get calcWarnRUnusual =>
+      'Hisoblangan r odatiy 0,45–0,85 oralig‘idan tashqarida — bo‘y va vaznni tekshiring.';
+
+  @override
+  String get calcEthanolMatrix => 'Namuna';
+
+  @override
+  String get calcMatrixBlood => 'To‘liq qon';
+
+  @override
+  String get calcMatrixSerum => 'Zardob / plazma';
+
+  @override
+  String get calcSerumRatio => 'Zardob / qon nisbati';
+
+  @override
+  String get calcEthanolBloodHeader => 'To‘liq qon ekvivalenti';
+
+  @override
+  String get calcEthanolAssumptionDensity =>
+      '‰ — bu g/kg; g/L uchun qon zichligi 1,055 g/mL olinadi.';
+
+  @override
+  String get calcEthanolAssumptionRatio =>
+      'Zardobda suv qondan ko‘p, shuning uchun etanol ham ko‘proq; standart nisbat 1,2.';
+
+  @override
+  String get calcEthanolLimitation =>
+      'Zardob/qon nisbati odamga qarab farq qiladi (taxminan 1,1–1,3; Rainey 1993). Laboratoriyangiz yoki yurisdiksiyangiz talab qilgan qiymatdan foydalaning.';
+
+  @override
+  String get calcRectalTemp => 'Rektal harorat, °C';
+
+  @override
+  String get calcAmbientTemp => 'Muhit harorati, °C';
+
+  @override
+  String get calcCorrectiveFactor => 'Kiyim / muhit (tuzatish koeffitsienti)';
+
+  @override
+  String get calcFactorNakedDry => 'Yalang‘och, quruq, havo harakatsiz — 1,0';
+
+  @override
+  String get calcFactorNakedMovingAir => 'Yalang‘och, havo harakatda — 0,75';
+
+  @override
+  String get calcFactorWetStill => 'Yalang‘och, turg‘un suvda — 0,5';
+
+  @override
+  String get calcFactorWetFlowing => 'Yalang‘och, oqar suvda — 0,35';
+
+  @override
+  String get calcFactorThin => '1–2 qavat yupqa kiyim — 1,1';
+
+  @override
+  String get calcFactorLayers => '2–3 qavat kiyim — 1,2';
+
+  @override
+  String get calcFactorThick => '3–4 qavat / qalin kiyim — 1,3';
+
+  @override
+  String get calcFactorBedding => 'Qalin ko‘rpa ostida — 2,0';
+
+  @override
+  String get calcHenssgeTime => 'Taxminiy o‘lim vaqti (o‘tgan vaqt)';
+
+  @override
+  String get calcHenssgeRange => '95 % chegara';
+
+  @override
+  String calcHoursValue(String h) {
+    return '$h soat';
+  }
+
+  @override
+  String calcHoursRange(String from, String to) {
+    return '$from–$to soat';
+  }
+
+  @override
+  String get calcHenssgeAssumptionNormal =>
+      'O‘lim paytida tana harorati 37,2 °C.';
+
+  @override
+  String get calcHenssgeAssumptionAmbient =>
+      'Muhit harorati taxminan o‘zgarmagan; ≤ 23 °C va > 23 °C uchun formula farq qiladi.';
+
+  @override
+  String get calcHenssgeAssumptionCi =>
+      '95 % chegara: ±2,8 soat (≤ 23 °C), ±3,2 soat (> 23 °C), tuzatish koeffitsienti bilan ±4,5 soat.';
+
+  @override
+  String get calcHenssgeLimitation =>
+      'Isitma, gipotermiya, kuchli issiqlik manbai, quyosh, jasad boshqa joyga ko‘chirilgan yoki muhit harorati keskin o‘zgargan holatlarda yaroqsiz. Boshqa belgilar (murda dog‘lari, qotish, supravital reaksiyalar) bilan birga baholang.';
+
+  @override
+  String get calcWarnNoCooling =>
+      'Rektal harorat ≥ 37,2 °C — sovish boshlanmagan yoki isitma bo‘lgan.';
+
+  @override
+  String get calcWarnLatePhase =>
+      'Jasad harorati muhitga yaqin — aniqlik past.';
+
+  @override
+  String get calcErrorWeight => 'Haqiqiy tana vaznini kiriting.';
+
+  @override
+  String get calcErrorTime => 'To‘g‘ri vaqtni soatda kiriting.';
+
+  @override
+  String get calcErrorAbv => 'Spirt ulushi 0 dan 100 % gacha bo‘lishi kerak.';
+
+  @override
+  String get calcErrorHeight =>
+      'Bo‘y 120–230 sm bo‘lishi kerak yoki bo‘sh qoldiring.';
+
+  @override
+  String get calcErrorBac => '0 dan 8 ‰ gacha qiymat kiriting.';
+
+  @override
+  String get calcErrorRatio => 'Nisbat 1,0 dan 1,5 gacha bo‘lishi kerak.';
+
+  @override
+  String get calcErrorRectal =>
+      'Rektal harorat muhitdan yuqori va 42 °C dan oshmasligi kerak.';
+
+  @override
+  String get calcErrorAmbient =>
+      'Muhit harorati −20 dan 35 °C gacha bo‘lishi kerak.';
 }
