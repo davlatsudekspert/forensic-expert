@@ -90,3 +90,20 @@ Kod 10 daqiqa amal qiladi (`otp_expiry = 600`), qayta yuborish ≥ 60 s.
 testi (CI: `db-security`). Real loyiha bo‘yicha end-to-end OTP sinovi faqat
 yuqoridagi sirlar berilgandan keyin mumkin — ungacha «email yuborildi» deb
 da’vo qilinmaydi.
+
+## 6. Final closeout holati (2026-10-06)
+
+* Email jo‘natish: FORENSIC EXPERT nomidagi OTP xat egasining pochtasiga
+  yetib keldi (Resend, `onboarding@resend.dev` test jo‘natuvchisi — faqat
+  Resend hisobi egasiga yuboradi; ommaviy foydalanish uchun o‘z domen kerak).
+* Jonli tekshiruvlar (anon kalit bilan): noto‘g‘ri/eskirgan kod → 403
+  `otp_expired`/`bad_code`; noto‘g‘ri email → 400; anon `account_roles`
+  insert → RLS rad etdi; anon `email_otp_codes` o‘qish → permission denied;
+  anon `decide_identity` / `submit_application` / `publish_record_version` →
+  permission denied; `credentials` bucket anon uchun bo‘sh, public URL yo‘q;
+  `ai-answer` kirishsiz/soxta JWT → 401.
+* `email-otp` tuzatish (kodda, deploy Supabase ulagichi qayta ulangach):
+  Resend test-rejimi/domen rad etganda foydalanuvchiga «email noto‘g‘ri»
+  emas, «yuborib bo‘lmadi» qaytariladi.
+* To‘siqlar (egasi): Supabase ulagichini qayta ulash (OAuth), ilovada OTP
+  bilan bir marta kirish, keyin admin roli va Gemini real E2E sinovi.

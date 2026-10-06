@@ -119,9 +119,14 @@ async function request(email: string, lang: string, ipHash: string): Promise<Res
   });
   if (!r.ok) {
     await admin.from("email_otp_codes").delete().eq("id", row.id);
-    console.error("email_send_failed status", r.status); // status only, no content
-    return json({ error_code: r.status === 422 ? "email_address_invalid" : "email_send_failed" },
-      r.status === 422 ? 400 : 503);
+    // Provider message is inspected, never logged. Sender/domain problems
+    // (unverified domain, test-mode sender) are OUR configuration issue,
+    // not the user's address.
+    const detail = (await r.text()).toLowerCase();
+    const senderIssue = r.status === 403 || /domain|testing emails|own email|from/.test(detail);
+    console.error("email_send_failed status", r.status, senderIssue ? "sender" : "recipient");
+    if (r.status === 422 && !senderIssue) return json({ error_code: "email_address_invalid" }, 400);
+    return json({ error_code: "email_send_failed" }, 503);
   }
   return json({ ok: true, ttl_seconds: TTL_MS / 1000 });
 }
