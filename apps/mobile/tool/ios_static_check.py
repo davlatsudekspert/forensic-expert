@@ -22,7 +22,7 @@ pbx = open("ios/Runner.xcodeproj/project.pbxproj").read()
 pub = open("pubspec.yaml").read()
 
 check("Info.plist o‘qiladi (plist sintaksisi)", True)
-check("CFBundleDisplayName", info.get("CFBundleDisplayName") == "FORENSIC EXPERT", info.get("CFBundleDisplayName", ""))
+check("CFBundleDisplayName", info.get("CFBundleDisplayName") == "Forensic", info.get("CFBundleDisplayName", ""))
 ids = set(re.findall(r"PRODUCT_BUNDLE_IDENTIFIER = ([\w.]+);", pbx))
 app_ids = {i for i in ids if not i.endswith("RunnerTests")}
 check("Bundle ID barcha konfiguratsiyada bir xil", len(app_ids) == 1, ", ".join(sorted(app_ids)))
