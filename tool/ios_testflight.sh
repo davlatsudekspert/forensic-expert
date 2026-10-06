@@ -27,25 +27,18 @@ cat > "$KEY_DIR/ExportOptions.plist" <<PLIST
 </dict></plist>
 PLIST
 
-# 1) Flutter: release build + backend sozlamasi ($DEFINES), imzosiz.
-# 2) xcodebuild: avtomatik imzo bilan archive va App Store eksport. Xcode
-#    App Store Connect API kaliti bilan sertifikat/profilni o‘zi oladi.
+# 1) Flutter: imzosiz release archive + backend sozlamasi ($DEFINES).
+# 2) xcodebuild -exportArchive: App Store Connect API kaliti bilan avtomatik
+#    App Store Distribution imzosi (qurilma ro‘yxati shart emas).
 AUTH=(-allowProvisioningUpdates
   -authenticationKeyPath "$KEY_PATH"
   -authenticationKeyID "$ASC_KEY_ID"
   -authenticationKeyIssuerID "$ASC_ISSUER_ID")
 # shellcheck disable=SC2086
-flutter build ios --release --no-codesign ${DEFINES:-} \
+flutter build ipa --release --no-codesign ${DEFINES:-} \
   --build-number="${GITHUB_RUN_NUMBER:-1}"
 ARCHIVE="build/ios/archive/Runner.xcarchive"
-xcodebuild -workspace ios/Runner.xcworkspace -scheme Runner \
-  -configuration Release -destination "generic/platform=iOS" \
-  -archivePath "$ARCHIVE" archive \
-  DEVELOPMENT_TEAM="$APPLE_TEAM_ID" CODE_SIGN_STYLE=Automatic \
-  CODE_SIGN_IDENTITY="Apple Distribution" \
-  "CODE_SIGN_IDENTITY[sdk=iphoneos*]=Apple Distribution" \
-  "${AUTH[@]}" -quiet || {
-    echo "::error::Signed archive failed (check team, bundle id, API key role)"; exit 1; }
+[ -d "$ARCHIVE" ] || { echo "::error::archive not found"; exit 1; }
 rm -rf build/ios/ipa
 xcodebuild -exportArchive -archivePath "$ARCHIVE" \
   -exportPath build/ios/ipa \

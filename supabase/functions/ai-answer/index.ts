@@ -108,27 +108,39 @@ Deno.serve(async (req) => {
             contents: [{ role: "user", parts: [{ text: prompt }] }],
             generationConfig: {
               temperature: 0.1,
-              maxOutputTokens: 900,
+              // 2.5 models count "thinking" tokens against this budget; a
+              // short source-grounded answer needs no thinking.
+              maxOutputTokens: 2048,
+              thinkingConfig: { thinkingBudget: 0 },
               responseMimeType: "application/json",
             },
           }),
         },
       );
+      if (!r.ok) {
+        // Only the status code is logged (never key, question or answer).
+        console.error("gemini_status", model, r.status);
+      }
       if (r.status === 404 || r.status === 400) continue; // model fallback
       if (!r.ok) return json({ error: "upstream" }, 502);
       const out = await r.json();
-      if (out?.promptFeedback?.blockReason) return json({ error: "blocked" }, 422);
+      if (out?.promptFeedback?.blockReason) {
+        console.error("gemini_blocked", model);
+        return json({ error: "blocked" }, 422);
+      }
       const raw = out?.candidates?.[0]?.content?.parts?.[0]?.text ?? "";
       let parsed: { text?: string; cited?: string[] };
       try {
         parsed = JSON.parse(raw);
       } catch {
+        console.error("gemini_unparsable", model, out?.candidates?.[0]?.finishReason ?? "none");
         return json({ error: "upstream" }, 502);
       }
       const known = new Set(chunks.map((c) => c.id));
       const cited = (parsed.cited ?? []).filter((id) => known.has(id));
       return json({ text: String(parsed.text ?? ""), cited });
-    } catch {
+    } catch (e) {
+      console.error("gemini_fetch_failed", model, e instanceof Error ? e.name : "error");
       return json({ error: "upstream" }, 502);
     } finally {
       clearTimeout(timer);
