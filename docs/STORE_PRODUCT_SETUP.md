@@ -4,7 +4,7 @@
 
 ## Identifikatorlar (loyiha konvensiyasi)
 
-* iOS bundle ID: `uz.forensicexpert.forensicExpert`
+* iOS bundle ID: `uz.forensicexpert.app`
 * Android applicationId: `uz.forensicexpert.forensic_expert`
 * Mahsulot ID konvensiyasi: `fe_` prefiksi + snake_case (avvalgi `fe_lifetime_unlock` bilan bir xil uslub). Kodda: `ProductIds` (`apps/mobile/lib/domain/ports/billing_ports.dart`) — **store’dagi ID’lar aynan shunday bo‘lishi shart**.
 
@@ -21,7 +21,7 @@ Institution — store mahsuloti yo‘q (shartnoma asosida, server huquqi `instit
 
 ## App Store Connect
 
-1. **Apps → + New App**: platforma iOS, bundle ID `uz.forensicexpert.forensicExpert` (avval Certificates, Identifiers & Profiles’da App ID yaratiladi; In-App Purchase capability App ID’da standart yoqilgan).
+1. **Apps → + New App**: platforma iOS, bundle ID `uz.forensicexpert.app` (avval Certificates, Identifiers & Profiles’da App ID yaratiladi; In-App Purchase capability App ID’da standart yoqilgan).
 2. **Agreements, Tax, and Banking**: Paid Apps Agreement faol bo‘lishi shart (busiz mahsulotlar store’da chiqmaydi).
 3. **Subscriptions → Subscription Groups → +**: bitta guruh, masalan «FORENSIC EXPERT». Bitta guruhda bo‘lishi upgrade/downgrade’ni to‘g‘ri ishlatadi.
 4. Guruhda 4 ta auto-renewable subscription — yuqoridagi ID’lar bilan. Darajalar (Subscription Levels): Professional Pro (yillik, oylik) — yuqori daraja; Student Pro (yillik, oylik) — pastroq.

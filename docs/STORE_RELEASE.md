@@ -6,7 +6,7 @@
 
 | | Android | iOS |
 |---|---|---|
-| ID | `uz.forensicexpert.forensic_expert` | `uz.forensicexpert.forensicExpert` |
+| ID | `uz.forensicexpert.forensic_expert` | `uz.forensicexpert.app` |
 | Versiya | 0.2.0 | 0.2.0 |
 | Build | versionCode **2** (`pubspec.yaml`) | CI’da `GITHUB_RUN_NUMBER` (har doim o‘sadi) |
 
@@ -18,7 +18,7 @@
 
 **Google Play API:** `PLAY_SERVICE_ACCOUNT_JSON` — Play Console → Users and permissions’da **faqat FORENSIC EXPERT ilovasiga** release huquqi berilgan service account (NFCSTORE / BugunBor’ga huquq bermang).
 
-**App Store Connect:** `ASC_KEY_ID`, `ASC_ISSUER_ID`, `ASC_PRIVATE_KEY` (.p8 matni, App Manager roli), `APPLE_TEAM_ID`. App Store Connect’da `uz.forensicexpert.forensicExpert` uchun ilova yozuvi bo‘lishi shart.
+**App Store Connect:** `ASC_KEY_ID`, `ASC_ISSUER_ID`, `ASC_PRIVATE_KEY` (.p8 matni, Admin roli — avtomatik imzo sertifikat/profil yaratishi uchun), `APPLE_TEAM_ID`. App Store Connect’da `uz.forensicexpert.app` uchun ilova yozuvi bo‘lishi shart.
 
 ## Ishga tushirish
 

@@ -5,7 +5,7 @@
 #
 # Kerakli muhit o‘zgaruvchilari: ASC_KEY_ID, ASC_ISSUER_ID, ASC_PRIVATE_KEY
 # (.p8 matni), APPLE_TEAM_ID. Shuningdek App Store Connect’da bundle ID
-# `uz.forensicexpert.forensicExpert` uchun ilova yozuvi mavjud bo‘lishi shart.
+# `uz.forensicexpert.app` uchun ilova yozuvi mavjud bo‘lishi shart.
 set -euo pipefail
 : "${ASC_KEY_ID:?missing}" "${ASC_ISSUER_ID:?missing}" "${ASC_PRIVATE_KEY:?missing}" "${APPLE_TEAM_ID:?missing}"
 
@@ -56,7 +56,7 @@ BID="$(/usr/libexec/PlistBuddy -c 'Print :CFBundleIdentifier' "$APP/Info.plist")
 VER="$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$APP/Info.plist")"
 BUILD="$(/usr/libexec/PlistBuddy -c 'Print :CFBundleVersion' "$APP/Info.plist")"
 echo "bundle=$BID version=$VER build=$BUILD"
-[ "$BID" = "uz.forensicexpert.forensicExpert" ] || { echo "::error::unexpected bundle id $BID"; exit 1; }
+[ "$BID" = "uz.forensicexpert.app" ] || { echo "::error::unexpected bundle id $BID"; exit 1; }
 codesign --verify --deep --strict "$APP"
 codesign -dv --verbose=2 "$APP" 2>&1 | grep -E "Authority=Apple Distribution|TeamIdentifier" \
   || { echo "::error::IPA is not signed with an Apple Distribution certificate"; exit 1; }
