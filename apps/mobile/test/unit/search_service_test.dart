@@ -85,6 +85,7 @@ void main() {
   test('guruh xaritasi: har bir qidiruv toifasi aniq guruhga tushadi', () {
     expect(SearchGroup.values.map((g) => g.name), [
       'substances',
+      'guidelines',
       'topics',
       'methods',
       'reagents',
