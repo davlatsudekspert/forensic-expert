@@ -8,4 +8,5 @@
   Supabase → OTP login → identity_admin → Gemini real javob + iqtiboslar →
   referral real E2E → imzolangan store build’lar.
   Holat: `docs/PRODUCTION_CLOSEOUT.md`. Keyingi ishlar: `docs/BACKLOG.md`.
+- **Keyingi katta topshiriq (2026-10-08):** `docs/35_MASTER_PROMPT_GLOBAL_PLATFORM.md` — Phase A (read-only audit) dan boshlanadi.
 - NFCSTORE va BugunBor repolarini o‘zgartirmang; maxfiy kalitlarni chiqarmang.
