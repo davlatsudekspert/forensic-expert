@@ -11,3 +11,10 @@
 - **Keyingi katta topshiriq (2026-10-08):** `docs/35_MASTER_PROMPT_GLOBAL_PLATFORM.md` — Phase A (read-only audit) dan boshlanadi.
 - **ABY 2025:** yopiq/admin integratsiyaga tayyorlanadi (qoidalar: `docs/35_…` “YANGI QAROR”). Fayl va undan olingan katalog repoga, Supabase’ga, boshqa AI’ga yoki ommaviy kanalga chiqmaydi — egasining alohida roziligisiz.
 - NFCSTORE va BugunBor repolarini o‘zgartirmang; maxfiy kalitlarni chiqarmang.
+
+## Keyingi sessiya uchun (davom ettirish)
+1. `docs/PROJECT_STATUS.md`, `docs/ACTIVE_TASKS.md`, `docs/DECISIONS.md`, `docs/TEST_REPORT.md` ni o‘qing — haqiqiy holat shu yerda.
+2. `git log --oneline -15` va worktree branchlar (`git branch -a | grep worktree`) — birlashtirilmagan agent ishlari bo‘lishi mumkin.
+3. Ish tartibi: audit → ustuvor vazifa → kod → test → tuzatish → qayta test → commit → hujjat yangilash. Mayda texnik qarorlarni o‘zingiz hal qiling.
+4. Ruxsat kerak: production DB qaytarib bo‘lmas o‘zgarish, foydalanuvchi ma’lumotlari, pullik billing/infra, ABY yoki cheklangan materialni ommaviy tarqatish, public store release, kalit/credential o‘zgarishi, edge function deploy.
+5. Flutter: `export PATH=/opt/flutter/bin:$PATH`; to‘liq suite ~7–10 daqiqa (bir marta ishga tushiring).

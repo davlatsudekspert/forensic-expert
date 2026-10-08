@@ -1,0 +1,15 @@
+# TEST REPORT
+
+Oxirgi yangilanish: 2026-10-08 (lokal, Linux konteyner; real qurilma emas).
+
+| Sana | Commit | Nima | Natija |
+|---|---|---|---|
+| 2026-10-08 | c7e4a2c | `test/widget/guidelines_test.dart` + architecture | 11/11 PASS |
+| 2026-10-08 | f50246a | retrieval_relevance + rag_pipeline + ai_architecture | 38/38 PASS |
+| 2026-10-08 | f50246a | guidelines_content + guidelines widget | 9/9 PASS |
+| 2026-10-08 | 6b898a7 | rag_pipeline + phase9_ai widget | 28 PASS; phase9 4/4 PASS |
+| 2026-10-08 | 6b898a7 | flutter analyze | No issues |
+| 2026-10-06 | bf342be | to‘liq suite (oldingi bosqich) | 2152 PASS (goldenlar yangilangach) |
+
+To‘liq suite va goldenlar agentlar birlashtirilgandan keyin qayta ishga tushiriladi (shu jadvalga yoziladi).
+Edge function (`ai-answer`) uchun Deno type-check bu muhitda yo‘q — deploydan oldin tekshirilishi kerak.
