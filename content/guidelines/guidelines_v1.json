@@ -1153,6 +1153,992 @@
         "maurer2004",
         "maurer2010"
       ]
+    },
+    {
+      "id": "guideline.tox.postmortem_interpretation",
+      "discipline_codes": [
+        "forensic_toxicology",
+        "forensic_pathology"
+      ],
+      "status": "NEEDS_REVIEW",
+      "updated": "2026-10-08",
+      "translation_status": {
+        "uz": "AUTHORED",
+        "ru": "DRAFT",
+        "en": "DRAFT"
+      },
+      "related_tool_ids": [],
+      "title": {
+        "uz": "O‘limdan keyingi toksikologik natijalarni talqin qilish: qayta taqsimlanish va boshqa xatolik manbalari",
+        "ru": "Интерпретация посмертных токсикологических результатов: перераспределение и другие источники ошибок",
+        "en": "Interpreting postmortem toxicology results: redistribution and other pitfalls"
+      },
+      "summary": {
+        "uz": "Murdadan olingan namunadagi dori konsentratsiyasi o‘lim paytidagi holatni aniq aks ettirmasligi mumkin: u namuna olingan joyga, vaqtga, me’dadan diffuziyaga, moddaning o‘limdan keyin hosil bo‘lishi yoki parchalanishiga, ifloslanish va tolerantlikka bog‘liq. Ishonchli postmortem «me’yoriy diapazonlar» yo‘q, shuning uchun bitta konsentratsiya alohida talqin qilinmaydi: periferik (son venasi) qon, qo‘shimcha namunalar, yorib ko‘rish va holat ma’lumotlari birgalikda baholanadi.",
+        "ru": "Концентрация препарата в посмертном образце может не отражать состояние на момент смерти: она зависит от места и времени взятия, диффузии из желудка, посмертного образования или разрушения вещества, загрязнения и толерантности. Надёжных посмертных «референсных интервалов» нет, поэтому одна концентрация не интерпретируется изолированно: совместно оцениваются периферическая (бедренная) кровь, дополнительные образцы, данные вскрытия и обстоятельства.",
+        "en": "A drug concentration in a postmortem specimen may not reflect the situation at death: it depends on sampling site and time, diffusion from the stomach, postmortem formation or degradation, contamination and tolerance. There are no valid postmortem 'reference ranges', so a single concentration is never interpreted in isolation: peripheral (femoral) blood, additional specimens, autopsy findings and circumstances are assessed together."
+      },
+      "sections": [
+        {
+          "key": "basis",
+          "title": {
+            "uz": "Ilmiy asos",
+            "ru": "Научная основа",
+            "en": "Scientific basis"
+          },
+          "citations": [
+            "ferner2008",
+            "pelissier2003",
+            "prouty1990",
+            "pounder1990",
+            "yarema2005"
+          ],
+          "body": {
+            "uz": "Klinik farmakologiya qondagi konsentratsiyadan organizmdagi dori miqdori va uning ta’siri haqida xulosa chiqarish mumkin, degan farazga tayanadi. O‘limdan keyin bu farazlar asosan o‘z kuchini yo‘qotadi: murdadan olingan namunadagi konsentratsiya o‘lim paytidagi holatni aniq aks ettirmasligi mumkin, shuning uchun uni tirik bemor uchun ishlab chiqilgan mezonlar bilan to‘g‘ridan-to‘g‘ri taqqoslash noto‘g‘ri [ferner2008].\n\nO‘limdan keyingi qayta taqsimlanish (postmortem redistribution, PMR) — dori konsentratsiyasining namuna olingan joyga va o‘limdan namuna olishgacha o‘tgan vaqtga bog‘liq ravishda o‘zgarishi [pelissier2003]. Bir murdaning turli tomirlaridan bir vaqtda olingan qonda konsentratsiya sezilarli farq qilishi, markaziy (yurak) qonda u odatda periferik qondagidan yuqori bo‘lishi, shuningdek bir joydan ketma-ket olingan namunalarda vaqt o‘tishi bilan o‘zgarishi kuzatilgan [prouty1990, pounder1990].\n\nMexanizmlar bir necha xil. O‘limdan so‘ng darhol dori yuqori konsentratsiyada to‘plangan «omborlar» — oshqozon-ichak yo‘li, jigar, o‘pka va miokarddan atrofdagi qonga passiv ravishda chiqishi mumkin; keyinroq hujayralar autolizi va chirish jarayoni ham qo‘shiladi [pelissier2003]. Qattiq a’zolardan qonga konsentratsiya gradiyenti bo‘ylab diffuziya markaziy tomirlardagi qonda sun’iy ravishda yuqori qiymatlarga olib keladi [pounder1990]. O‘limdan keyin ham ma’lum muddat metabolizm davom etishi mumkinligi ham hisobga olinadi [pelissier2003].\n\nDori xossalari ham ahamiyatga ega. Ishqoriy xossali, lipofil va tarqalish hajmi katta bo‘lgan moddalar PMR ga ayniqsa moyil; tarqalish hajmi, lipofillik va pKa asosiy omillar sifatida ko‘rsatiladi [pelissier2003, yarema2005]. Biroq bu qoida mutlaq emas: ba’zi ishqoriy bo‘lmagan, lipofil bo‘lmagan dorilarning qayta taqsimlanishi ham qayd etilgan, demak xossalarga qarab PMR yo‘qligini oldindan kafolatlab bo‘lmaydi [pelissier2003].",
+            "ru": "Клиническая фармакология исходит из того, что по концентрации в крови можно судить о количестве препарата в организме и о его действии. После смерти эти допущения во многом теряют силу: концентрация в посмертном образце может не отражать состояние на момент смерти, поэтому прямое сравнение с критериями, разработанными для живых пациентов, некорректно [ferner2008].\n\nПосмертное перераспределение (postmortem redistribution, PMR) — изменение концентрации препарата в зависимости от места взятия образца и времени, прошедшего от смерти до его взятия [pelissier2003]. Описаны существенные различия концентраций в крови, одновременно взятой из разных сосудов одного трупа, как правило более высокие значения в центральной (сердечной) крови по сравнению с периферической, а также изменения во времени при последовательном отборе из одного места [prouty1990, pounder1990].\n\nМеханизмы разнообразны. Сразу после смерти возможен пассивный выход препарата из «депо» с высокой концентрацией — желудочно-кишечного тракта, печени, лёгких и миокарда; позднее присоединяются аутолиз клеток и гниение [pelissier2003]. Диффузия из паренхиматозных органов в кровь по градиенту концентрации приводит к артефактно высоким значениям в крови центральных сосудов [pounder1990]. Учитывается и то, что метаболизм может продолжаться некоторое время после смерти [pelissier2003].\n\nЗначение имеют и свойства препарата. Особенно склонны к PMR основные (щелочные) липофильные вещества с большим объёмом распределения; ключевыми факторами называют объём распределения, липофильность и pKa [pelissier2003, yarema2005]. Однако правило не абсолютно: описано перераспределение и некоторых неосновных, нелипофильных препаратов, поэтому по свойствам вещества нельзя заранее гарантировать отсутствие PMR [pelissier2003].",
+            "en": "Clinical pharmacology assumes that a blood concentration allows inferences about the amount of drug in the body and its effect. After death these assumptions largely fail: the concentration in a postmortem sample may not reflect the situation at the time of death, so comparing it directly with criteria developed for living patients is not valid [ferner2008].\n\nPostmortem redistribution (PMR) is the change in drug concentration that depends on the sampling site and on the interval between death and specimen collection [pelissier2003]. Marked differences have been described between blood samples taken at the same time from different vessels of the same body, with central (heart) blood generally higher than peripheral blood, as well as changes over time in sequential samples from one site [prouty1990, pounder1990].\n\nThe mechanisms are varied. Immediately after death a drug may be released passively from reservoirs of high concentration — the gastrointestinal tract, liver, lungs and myocardium; later, cell autolysis and putrefaction contribute [pelissier2003]. Diffusion from solid organs into blood along a concentration gradient produces artefactually elevated values in blood from central vessels [pounder1990]. The possibility that metabolism continues for some time after death is also considered [pelissier2003].\n\nDrug properties matter as well. Basic, lipophilic substances with a large volume of distribution are particularly susceptible to PMR; volume of distribution, lipophilicity and pKa are named as key factors [pelissier2003, yarema2005]. The rule is not absolute, however: redistribution of some non-basic, non-lipophilic drugs has also been reported, so the absence of PMR cannot be guaranteed in advance from a substance's properties [pelissier2003]."
+          }
+        },
+        {
+          "key": "scope",
+          "title": {
+            "uz": "Qo‘llanish sohasi",
+            "ru": "Область применения",
+            "en": "Scope"
+          },
+          "citations": [
+            "skopp2010",
+            "asb_bpr037_2019"
+          ],
+          "body": {
+            "uz": "Ushbu kartochka o‘limdan keyingi (postmortem) toksikologik natijalarni talqin qilishdagi asosiy xatoliklar manbalarini bayon qiladi. U sud-tibbiy ekspert (patolog) va sud-toksikolog uchun mo‘ljallangan: dori yoki zahar o‘limga sabab bo‘lganmi, unga hissa qo‘shganmi yoki faqat ishlatilganligini ko‘rsatadimi, degan savollarga javob berishda konsentratsiyani qanday baholash kerakligi haqida [skopp2010].\n\nQamrab olinadigan masalalar:\n• o‘limdan keyingi qayta taqsimlanish va namuna olingan joyga bog‘liqlik;\n• me’da tarkibidan va qattiq a’zolardan diffuziya;\n• moddalarning o‘limdan keyin hosil bo‘lishi (neoformatsiya) va parchalanishi;\n• namunaning ifloslanishi (kontaminatsiyasi);\n• tolerantlik va o‘lim oldidan bo‘lgan klinik holat;\n• muqobil matritsalar (shishasimon tana suyuqligi, jigar, soch va boshqalar) roli — sifat jihatidan.\n\nKartochkada aniq dorilar uchun «terapevtik», «toksik» yoki «letal» konsentratsiya qiymatlari keltirilmaydi — buning sababi «Cheklovlar» bo‘limida tushuntiriladi. Namunalarni tanlash va saqlash tartibi «Sud-toksikologik namunalarni tanlash va preanalitika» kartochkasida, etanolni aniqlash esa alohida kartochkada batafsil yoritilgan.\n\nToksikologik xulosa va sudda ko‘rsatma berish bo‘yicha toksikologiya konsensus organi tomonidan alohida eng yaxshi amaliyot tavsiyalari nashr etilgan [asb_bpr037_2019]. Ekspertiza tayinlash, rasmiylashtirish va xulosaga qo‘yiladigan huquqiy talablar esa amaldagi mahalliy me’yoriy hujjatlar bilan belgilanadi.",
+            "ru": "Карточка описывает основные источники ошибок при интерпретации посмертных токсикологических результатов. Она предназначена для судебно-медицинского эксперта (патолога) и судебного токсиколога: как оценивать концентрацию, отвечая на вопросы, вызвал ли препарат или яд смерть, способствовал ли ей или лишь указывает на употребление [skopp2010].\n\nРассматриваемые вопросы:\n• посмертное перераспределение и зависимость от места взятия образца;\n• диффузия из содержимого желудка и паренхиматозных органов;\n• посмертное образование (неообразование) и разрушение веществ;\n• загрязнение (контаминация) образца;\n• толерантность и предсмертное клиническое состояние;\n• роль альтернативных матриц (стекловидное тело, печень, волосы и др.) — на качественном уровне.\n\nВ карточке не приводятся «терапевтические», «токсические» или «летальные» концентрации отдельных препаратов — причина объясняется в разделе «Ограничения». Порядок выбора и хранения образцов изложен в карточке «Выбор образцов и преаналитический этап в судебной токсикологии», определение этанола — в отдельной карточке.\n\nКонсенсусным органом по токсикологии опубликованы отдельные рекомендации по наилучшей практике для заключений и показаний в суде [asb_bpr037_2019]. Порядок назначения и оформления экспертизы и правовые требования к заключению определяются действующими местными нормативными актами.",
+            "en": "This card sets out the main sources of error when interpreting postmortem toxicology results. It is intended for the forensic pathologist and the forensic toxicologist: how to assess a concentration when answering whether a drug or poison caused death, contributed to it, or merely indicates use [skopp2010].\n\nTopics covered:\n• postmortem redistribution and dependence on the sampling site;\n• diffusion from gastric contents and solid organs;\n• postmortem formation (neoformation) and degradation of substances;\n• contamination of the specimen;\n• tolerance and the pre-terminal clinical situation;\n• the role of alternative matrices (vitreous humour, liver, hair and others) — at a qualitative level.\n\nThe card gives no 'therapeutic', 'toxic' or 'lethal' concentrations for individual drugs; the reason is explained under Limitations. Specimen selection and storage are covered in the card on specimen selection and preanalytics in forensic toxicology, and ethanol determination in a separate card.\n\nThe toxicology consensus body has published separate best-practice recommendations on opinions and testimony [asb_bpr037_2019]. The procedure for ordering and documenting an examination and the legal requirements for the report are governed by the applicable local regulations."
+          }
+        },
+        {
+          "key": "methods",
+          "title": {
+            "uz": "Talqin yondashuvi (konseptual darajada)",
+            "ru": "Подход к интерпретации (на концептуальном уровне)",
+            "en": "Interpretive approach (conceptual level)"
+          },
+          "citations": [
+            "skopp2010",
+            "yarema2005",
+            "drummer2007",
+            "pelissier2003",
+            "prouty1990",
+            "drummer2004"
+          ],
+          "body": {
+            "uz": "Postmortem natijani talqin qilish bitta raqamni jadval bilan solishtirish emas, balki bosqichma-bosqich dalillarni birlashtirishdir. Quyidagi ketma-ketlik konseptual sxema sifatida keltiriladi.\n\n• 1-bosqich — holat haqida ma’lumot. Anamnez, buyurilgan dorilar, o‘lim oldidan reanimatsiya yoki intensiv terapiya, o‘lim va yorib ko‘rish orasidagi vaqt, chirish belgilari aniqlanadi. Bunday ma’lumot yetarli bo‘lmasa, talqin imkoniyati keskin cheklanadi [skopp2010].\n• 2-bosqich — namunalar to‘plami. Periferik qon (afzalroq — bog‘langan yoki qisib qo‘yilgan son venasidan) asosiy namuna hisoblanadi [yarema2005]. Imkon bo‘lsa, unga qo‘shimcha ravishda kamida yana bitta boshqa namuna (masalan, siydik yoki shishasimon tana suyuqligi) olinadi [drummer2007]. Namuna olingan joy aniq qayd etiladi.\n• 3-bosqich — taqqoslash. Markaziy va periferik qon, qon va qattiq to‘qimalar natijalarini solishtirish PMR ehtimolini aniqlashga yordam beradi; bir nechta joydan olingan namunalarni tahlil qilish noto‘g‘ri talqinning oldini olish uchun muhim [pelissier2003, prouty1990].\n• 4-bosqich — artefaktlarni istisno qilish. Modda o‘limdan keyin hosil bo‘lgan bo‘lishi, parchalangan bo‘lishi yoki namunaga tashqaridan tushgan bo‘lishi mumkinligi tekshiriladi (qarang: «Natijaga ta’sir qiluvchi omillar»).\n• 5-bosqich — integratsiya. Toksikologik natija yorib ko‘rish topilmalari, gistologiya va holat ma’lumotlari bilan birga baholanadi. Hech bir giyohvand modda konsentratsiyasi holatlarni sinchiklab o‘rganmasdan va yorib ko‘rish natijalarisiz alohida talqin qilinmaydi [drummer2004].\n• 6-bosqich — xulosa. Noaniqlik darajasi va muqobil izohlar ochiq ko‘rsatiladi; antemortem va perimortem klinik ma’lumotlar bilan solishtirish xulosaning ajralmas qismi hisoblanadi [yarema2005].\n\nTahliliy usullar aynan shu postmortem namuna turi uchun validatsiya qilingan bo‘lishi kerak, chunki chirigan va turli xil namunalar tahlilni murakkablashtiradi [drummer2007].",
+            "ru": "Интерпретация посмертного результата — это не сравнение одного числа с таблицей, а поэтапное объединение доказательств. Ниже приведена концептуальная схема.\n\n• Этап 1 — сведения об обстоятельствах. Выясняются анамнез, назначенные препараты, предсмертная реанимация или интенсивная терапия, интервал между смертью и вскрытием, признаки гниения. При недостатке таких сведений возможности интерпретации резко ограничены [skopp2010].\n• Этап 2 — набор образцов. Основной образец — периферическая кровь (предпочтительно из перевязанной или пережатой бедренной вены) [yarema2005]. По возможности дополнительно берётся хотя бы один другой образец (например, моча или стекловидное тело) [drummer2007]. Место взятия точно документируется.\n• Этап 3 — сопоставление. Сравнение центральной и периферической крови, крови и тканей помогает выявить вероятность PMR; анализ образцов из нескольких мест важен для предотвращения ошибочной интерпретации [pelissier2003, prouty1990].\n• Этап 4 — исключение артефактов. Проверяется, не образовалось ли вещество после смерти, не разрушилось ли оно и не попало ли в образец извне (см. «Факторы, влияющие на результат»).\n• Этап 5 — интеграция. Токсикологический результат оценивается вместе с данными вскрытия, гистологии и обстоятельствами. Ни одна концентрация наркотического вещества не интерпретируется изолированно, без тщательного изучения обстоятельств и без результатов вскрытия [drummer2004].\n• Этап 6 — вывод. Степень неопределённости и альтернативные объяснения указываются открыто; сопоставление с прижизненными и околосмертными клиническими данными — неотъемлемая часть вывода [yarema2005].\n\nАналитические методики должны быть валидированы именно для данного вида посмертного образца, поскольку гнилостно изменённые и разнородные образцы осложняют анализ [drummer2007].",
+            "en": "Interpreting a postmortem result is not a comparison of one number with a table but a stepwise integration of evidence. The sequence below is a conceptual scheme.\n\n• Step 1 — case information. History, prescribed medicines, pre-terminal resuscitation or intensive care, the interval between death and autopsy, and signs of putrefaction are established. When such information is inadequate, interpretation is severely limited [skopp2010].\n• Step 2 — the specimen set. Peripheral blood (preferably from a ligated or clamped femoral vein) is the primary specimen [yarema2005]. Where possible, at least one other specimen (for example urine or vitreous humour) is added [drummer2007]. The exact sampling site is recorded.\n• Step 3 — comparison. Comparing central with peripheral blood, and blood with solid tissues, helps reveal the likelihood of PMR; analysing specimens from several sites is important to avoid misinterpretation [pelissier2003, prouty1990].\n• Step 4 — excluding artefacts. Whether the substance may have formed after death, degraded, or entered the specimen from outside is checked (see Factors affecting the result).\n• Step 5 — integration. The toxicology result is assessed together with autopsy findings, histology and circumstances. No concentration of a drug of abuse is interpreted in isolation without a thorough examination of the circumstances and the autopsy [drummer2004].\n• Step 6 — conclusion. The degree of uncertainty and alternative explanations are stated openly; correlation with antemortem and perimortem clinical information is an integral part of the opinion [yarema2005].\n\nAnalytical methods must be validated for the particular postmortem specimen type, because decomposed and diverse specimens complicate analysis [drummer2007]."
+          }
+        },
+        {
+          "key": "advantages",
+          "title": {
+            "uz": "Tizimli yondashuvning afzalliklari",
+            "ru": "Преимущества системного подхода",
+            "en": "Advantages of a systematic approach"
+          },
+          "citations": [
+            "pelissier2003",
+            "prouty1990",
+            "pigaiani2020",
+            "drummer2007",
+            "kintz2017",
+            "flanagan2005",
+            "kennedy2010"
+          ],
+          "body": {
+            "uz": "• Bir nechta joydan olingan namunalar PMR ni aniqlash va natijani noto‘g‘ri talqin qilmaslik imkonini beradi [pelissier2003].\n• Periferik qon va qattiq to‘qimalar tahlili markaziy qonning o‘zidan ko‘ra ishonchliroq yakuniy talqinga olib keladi [prouty1990].\n• Shishasimon tana suyuqligi nisbatan yopiq bo‘shliqda joylashgan va bakterial ifloslanish, chirish hamda autolizdan ko‘proq himoyalangan; shu sababli u toksikologiyada qonni to‘ldiruvchi namuna sifatida qadrlanadi [pigaiani2020, drummer2007].\n• Soch uzoq muddatli (sochning uzunligiga qarab haftalardan oylargacha va undan ortiq) iste’mol tarixini ko‘rsatishi mumkin — bu tolerantlik masalasini muhokama qilishda foydali [kintz2017].\n• Kasalxonada qolgan antemortem namunalar o‘lim oldidagi holatni o‘limdan keyingi o‘zgarishlarsiz aks ettiradi, shuning uchun ular zudlik bilan izlanadi [flanagan2005].\n• Antemortem ma’lumotlarni postmortem konsentratsiya bilan birlashtirish, PMR mavjud bo‘lsa ham, ko‘p foydali ma’lumot olish imkonini beradi [kennedy2010].",
+            "ru": "• Образцы из нескольких мест позволяют выявить PMR и избежать ошибочной интерпретации [pelissier2003].\n• Анализ периферической крови и тканей даёт более надёжную окончательную интерпретацию, чем одна центральная кровь [prouty1990].\n• Стекловидное тело находится в относительно изолированной полости и в большей мере защищено от бактериального загрязнения, гниения и аутолиза; поэтому оно ценится в токсикологии как образец, дополняющий кровь [pigaiani2020, drummer2007].\n• Волосы могут отражать длительную историю употребления (от недель до месяцев и более в зависимости от длины) — это полезно при обсуждении толерантности [kintz2017].\n• Сохранившиеся в больнице прижизненные образцы отражают предсмертное состояние без посмертных изменений, поэтому их разыскивают безотлагательно [flanagan2005].\n• Объединение прижизненных сведений с посмертной концентрацией позволяет получить много полезной информации даже при наличии PMR [kennedy2010].",
+            "en": "• Specimens from several sites make it possible to detect PMR and avoid misinterpretation [pelissier2003].\n• Analysis of peripheral blood and solid tissues supports a more reliable final interpretation than central blood alone [prouty1990].\n• Vitreous humour lies in a relatively isolated compartment that is better protected from bacterial contamination, putrefaction and autolysis; it is therefore valued in toxicology as a specimen complementing blood [pigaiani2020, drummer2007].\n• Hair can reflect a long-term history of use (from weeks to months or longer depending on length), which is helpful when tolerance is discussed [kintz2017].\n• Residual antemortem hospital samples reflect the pre-terminal state without postmortem change, so they are sought urgently [flanagan2005].\n• Integrating antemortem information with the postmortem concentration still yields much useful information even when PMR is present [kennedy2010]."
+          }
+        },
+        {
+          "key": "limitations",
+          "title": {
+            "uz": "Cheklovlar",
+            "ru": "Ограничения",
+            "en": "Limitations"
+          },
+          "citations": [
+            "kennedy2010",
+            "ferner2008",
+            "pounder1990",
+            "drummer2004",
+            "skopp2010",
+            "kintz2017"
+          ],
+          "body": {
+            "uz": "Postmortem «me’yoriy diapazonlar» yo‘q. Ko‘plab nashr etilgan jadvallarda dorilarning terapevtik, toksik va letal konsentratsiyalari keltiriladi, ammo ular postmortem holatda chalg‘ituvchi hisoblanadi [kennedy2010, ferner2008]. O‘lim hodisasi bilan keyinchalik o‘lchanadigan konsentratsiya o‘rtasidagi haqiqiy bog‘liqlikni o‘rgangan yetarli tadqiqotlar yo‘q [ferner2008]. Qon namunasi qayerdan olinganligi noma’lum bo‘lgan ma’lumotlar bazalarining solishtirish uchun qiymati ham PMR tufayli pasayadi [pounder1990].\n\nO‘zgarishlar oldindan aytib bo‘lmaydi. O‘limdan keyin ba’zi dorilarning konsentratsiyasi oshadi, ba’zilariniki pasayadi, ba’zilariniki deyarli o‘zgarmaydi [kennedy2010]; o‘zgarish namuna joyi va vaqtiga qarab ko‘p hollarda oldindan aytib bo‘lmaydigan tarzda yuz beradi [ferner2008]. Periferik qon markaziy qonga nisbatan kamroq ta’sirlanadi [pounder1990], lekin bu muammoni to‘liq bartaraf etadi, degan ma’noni anglatmaydi.\n\nSifat natijalari ham xato bo‘lishi mumkin. Postmortem sifat testlari tirikligida bo‘lmagan moddalarni ko‘rsatishi va aksincha, o‘limga sabab bo‘lgan moddani aniqlamasligi mumkin [ferner2008].\n\nTolerantlik. Muntazam iste’mol qiluvchilarda boshqa shaxs uchun xavfli bo‘lgan konsentratsiya ham o‘limga olib kelmasligi mumkin; tolerantlik va konsentratsiyaning o‘lim oldidagi o‘zgarishlari bir xil raqamning turli holatlarda turlicha ma’no anglatishiga sabab bo‘ladi [drummer2004, skopp2010]. Postmortem namunada tolerantlik darajasini bevosita o‘lchab bo‘lmaydi; soch tahlili faqat oldingi iste’mol haqida bilvosita ma’lumot beradi [kintz2017].\n\nMa’lumot yetishmasligi. Ko‘p holatlarda talqinni tahlil emas, balki holat haqidagi ma’lumotning yetarli emasligi cheklaydi [skopp2010].",
+            "ru": "Посмертных «референсных интервалов» не существует. Во многих опубликованных таблицах приводятся терапевтические, токсические и летальные концентрации, однако в посмертной ситуации они вводят в заблуждение [kennedy2010, ferner2008]. Достаточных исследований истинной связи между смертельным событием и концентрацией, измеряемой впоследствии, нет [ferner2008]. Ценность баз данных, в которых неизвестно место взятия крови, для сравнения также снижается из-за PMR [pounder1990].\n\nИзменения непредсказуемы. После смерти концентрации одних препаратов растут, других снижаются, третьих почти не меняются [kennedy2010]; изменения в зависимости от места и времени взятия во многом непредсказуемы [ferner2008]. Периферическая кровь затрагивается меньше центральной [pounder1990], но это не означает, что проблема полностью устранена.\n\nКачественные результаты тоже могут быть ошибочными. Посмертные качественные тесты могут выявить вещества, отсутствовавшие при жизни, и, наоборот, не обнаружить вещество, вызвавшее смерть [ferner2008].\n\nТолерантность. У лиц с регулярным употреблением концентрация, опасная для другого человека, может не приводить к смерти; толерантность и предсмертные изменения концентрации приводят к тому, что одно и то же число имеет разный смысл в разных случаях [drummer2004, skopp2010]. Уровень толерантности в посмертном образце напрямую измерить нельзя; анализ волос даёт лишь косвенные сведения о предшествующем употреблении [kintz2017].\n\nНедостаток сведений. Во многих случаях интерпретацию ограничивает не анализ, а недостаточность информации об обстоятельствах [skopp2010].",
+            "en": "There are no valid postmortem 'reference ranges'. Many published tables list therapeutic, toxic and lethal concentrations, but in the postmortem setting they are misleading [kennedy2010, ferner2008]. Adequate studies of the true relationship between a fatal event and the concentration measured afterwards are lacking [ferner2008]. Databases in which the blood sampling site is unknown also lose comparative value because of PMR [pounder1990].\n\nChanges are unpredictable. After death some concentrations rise, others fall and some barely change [kennedy2010]; variation with sampling site and time is largely unpredictable [ferner2008]. Peripheral blood is less affected than central blood [pounder1990], but this does not mean the problem is eliminated.\n\nQualitative results can also mislead. Postmortem qualitative tests can show substances that were not present in life and, conversely, can fail to detect the substance that caused death [ferner2008].\n\nTolerance. In regular users a concentration that would be dangerous for another person may not be fatal; tolerance and pre-terminal changes in concentration mean that the same number can carry different meanings in different cases [drummer2004, skopp2010]. Tolerance cannot be measured directly in a postmortem specimen; hair analysis gives only indirect information about prior use [kintz2017].\n\nLack of information. In many cases it is not the analysis but inadequate information about the circumstances that limits interpretation [skopp2010]."
+          }
+        },
+        {
+          "key": "factors",
+          "title": {
+            "uz": "Natijaga ta’sir qiluvchi omillar",
+            "ru": "Факторы, влияющие на результат",
+            "en": "Factors affecting the result"
+          },
+          "citations": [
+            "pounder1990",
+            "prouty1990",
+            "flanagan2005",
+            "pelissier2003",
+            "skopp2010",
+            "pounder1996",
+            "kugelberg2007",
+            "boumba2008",
+            "lin2020",
+            "moriya2004",
+            "kennedy2010",
+            "drummer2004",
+            "mcallister2008",
+            "peters2007stab",
+            "skopp2004",
+            "kintz2017"
+          ],
+          "body": {
+            "uz": "• Namuna olingan joy. Markaziy tomirlar (yurak, o‘pka tomirlari) qoni odatda periferik qondan yuqori qiymat beradi [pounder1990, prouty1990]. Son venasidan namuna olishda markaziy tomirlardan qon tortib olinmasligiga e’tibor beriladi [flanagan2005].\n• O‘limdan keyingi vaqt va chirish. Vaqt o‘tishi bilan konsentratsiya bir joyning o‘zida ham o‘zgarishi mumkin [prouty1990]; autoliz va chirish redistribution va matritsa o‘zgarishlarini kuchaytiradi [pelissier2003, skopp2010].\n• Me’da tarkibidan diffuziya. Me’dada qolgan dori o‘limdan keyin qo‘shni to‘qimalarga — o‘pkaning chap pastki qismi, jigarning chap bo‘lagi, taloq, perikard suyuqligiga — hamda tana bo‘shlig‘idagi qonga tarqalishi eksperimental tarzda ko‘rsatilgan; bu jigar va qon konsentratsiyalari nisbatini ham o‘zgartiradi [pounder1996].\n• O‘limdan keyin hosil bo‘lish (neoformatsiya). Etanol o‘limdan keyin mikroorganizmlar ta’sirida hosil bo‘lishi mumkin; uni iste’mol qilingan etanoldan farqlash uchun muqobil namunalar va qo‘shimcha markerlar ishlatiladi [kugelberg2007, boumba2008, lin2020]. Gamma-gidroksibutirat (GHB) iste’mol qilmagan shaxslarning postmortem qonida ham aniqlanadi va uning asosiy qismi o‘lim va yorib ko‘rish oralig‘ida hosil bo‘lishi mumkin [moriya2004, kennedy2010].\n• Parchalanish. Geroin, morfin glyukuronidlari, kokain va benzodiazepinlar postmortem muhitda ayniqsa beqaror [drummer2004]. Sianid murdada va saqlanayotgan namunalarda beqaror; o‘zgarish boshlang‘ich konsentratsiya, murdada va saqlashda o‘tgan vaqt, konservant va harorat bilan bog‘liq [mcallister2008]. Saqlash sharoiti umuman barqarorlikka ta’sir qiladi [peters2007stab].\n• Fiksatsiya va balzamlash. Formalin fiksatsiyasi va balzamlash dastlabki konsentratsiyani sezilarli o‘zgartirishi mumkin; desmetil metabolitlarning ona moddaga aylanishi ham tasvirlangan [skopp2004].\n• O‘lim oldidagi davolash. Reanimatsiya yoki intensiv terapiya vaqtida kiritilgan dorilar, o‘lim oldidagi farmakokinetik o‘zgarishlar va yondosh kasalliklar natijani o‘zgartiradi [skopp2010].\n• Kontaminatsiya. Uchuvchan zaharlar ehtimoli bo‘lsa, namunalar o‘rtasida o‘zaro ifloslanishning oldini olish choralari ko‘riladi [flanagan2005]; soch tashqi muhitdan ifloslanishi mumkin [kintz2017]; tana bo‘shlig‘idan olingan qon me’da tarkibi bilan ifloslanishi mumkin [pounder1996].",
+            "ru": "• Место взятия. Кровь центральных сосудов (сердце, лёгочные сосуды) обычно даёт более высокие значения, чем периферическая [pounder1990, prouty1990]. При взятии из бедренной вены следят за тем, чтобы не аспирировать кровь из центральных сосудов [flanagan2005].\n• Посмертный интервал и гниение. С течением времени концентрация может меняться даже в одном месте [prouty1990]; аутолиз и гниение усиливают перераспределение и изменения матрицы [pelissier2003, skopp2010].\n• Диффузия из содержимого желудка. Экспериментально показано, что оставшийся в желудке препарат после смерти распространяется в соседние ткани — основание левого лёгкого, левую долю печени, селезёнку, перикардиальную жидкость — и в кровь полостей тела; это изменяет и соотношение концентраций в печени и крови [pounder1996].\n• Посмертное образование (неообразование). Этанол может образовываться после смерти под действием микроорганизмов; для отличия от употреблённого этанола используют альтернативные образцы и дополнительные маркеры [kugelberg2007, boumba2008, lin2020]. Гамма-гидроксибутират (GHB) обнаруживается и в посмертной крови лиц, не употреблявших его, и значительная его часть может образовываться в интервале между смертью и вскрытием [moriya2004, kennedy2010].\n• Разрушение. Героин, глюкурониды морфина, кокаин и бензодиазепины особенно нестабильны в посмертных условиях [drummer2004]. Цианид нестабилен в трупе и в хранящихся образцах; изменения зависят от исходной концентрации, времени нахождения в трупе и хранения, консерванта и температуры [mcallister2008]. Условия хранения в целом влияют на стабильность [peters2007stab].\n• Фиксация и бальзамирование. Фиксация формалином и бальзамирование могут существенно изменить исходную концентрацию; описано и превращение десметилметаболитов в исходное вещество [skopp2004].\n• Предсмертное лечение. Препараты, введённые при реанимации или интенсивной терапии, предсмертные фармакокинетические изменения и сопутствующие заболевания изменяют результат [skopp2010].\n• Контаминация. При возможном участии летучих ядов принимаются меры против перекрёстного загрязнения образцов [flanagan2005]; волосы могут загрязняться из внешней среды [kintz2017]; кровь из полостей тела может загрязняться содержимым желудка [pounder1996].",
+            "en": "• Sampling site. Blood from central vessels (heart, pulmonary vessels) usually gives higher values than peripheral blood [pounder1990, prouty1990]. When sampling the femoral vein, care is taken not to draw blood from central vessels [flanagan2005].\n• Postmortem interval and putrefaction. Concentration may change over time even at one site [prouty1990]; autolysis and putrefaction amplify redistribution and matrix changes [pelissier2003, skopp2010].\n• Diffusion from gastric contents. Drug remaining in the stomach has been shown experimentally to spread after death into adjacent tissues — the left lung base, the left lobe of the liver, the spleen, pericardial fluid — and into blood in the body cavities; this also alters liver-to-blood concentration relationships [pounder1996].\n• Postmortem formation (neoformation). Ethanol can be produced after death by microorganisms; alternative specimens and additional markers are used to distinguish it from ingested ethanol [kugelberg2007, boumba2008, lin2020]. Gamma-hydroxybutyrate (GHB) is found in postmortem blood of non-users too, and much of it may be formed between death and autopsy [moriya2004, kennedy2010].\n• Degradation. Heroin, morphine glucuronides, cocaine and benzodiazepines are particularly unstable postmortem [drummer2004]. Cyanide is unstable in the body and in stored specimens; the change depends on the initial concentration, time in the body and in storage, preservative and temperature [mcallister2008]. Storage conditions affect stability in general [peters2007stab].\n• Fixation and embalming. Formalin fixation and embalming can change the initial concentration considerably; conversion of desmethyl metabolites to the parent drug has also been described [skopp2004].\n• Pre-terminal treatment. Drugs given during resuscitation or intensive care, pre-terminal pharmacokinetic changes and concomitant illness alter the result [skopp2010].\n• Contamination. Where volatile poisons may be involved, precautions against cross-contamination of specimens are taken [flanagan2005]; hair can be contaminated from the environment [kintz2017]; blood from body cavities can be contaminated by gastric contents [pounder1996]."
+          }
+        },
+        {
+          "key": "cautions",
+          "title": {
+            "uz": "Talqin qilishda ehtiyot choralari",
+            "ru": "Предостережения при интерпретации",
+            "en": "Interpretation cautions"
+          },
+          "citations": [
+            "drummer2004",
+            "pounder1990",
+            "prouty1990",
+            "yarema2005",
+            "ferner2008",
+            "kennedy2010",
+            "kugelberg2007",
+            "moriya2004",
+            "mcallister2008",
+            "asb_bpr037_2019"
+          ],
+          "body": {
+            "uz": "• Bitta konsentratsiya alohida talqin qilinmaydi: u namuna joyi, vaqt, holat ma’lumotlari va yorib ko‘rish topilmalari bilan birga baholanadi [drummer2004].\n• Hisobotda har bir qon namunasining aniq olingan joyi (masalan, «o‘ng son venasi», «yurak») ko‘rsatiladi; joyi noma’lum «qon» natijasi ehtiyotkorlik bilan talqin qilinadi [pounder1990].\n• Faqat markaziy qon mavjud bo‘lsa, natija PMR ehtimoli hisobga olingan holda, ehtiyotkor iboralar bilan bayon etiladi; mumkin bo‘lsa, periferik qon va to‘qimalar qo‘shimcha tahlil qilinadi [prouty1990, yarema2005].\n• «Letal konsentratsiya» jadvallari yakka mezon sifatida ishlatilmaydi [ferner2008, kennedy2010].\n• Etanol yoki GHB topilganda, ular o‘limdan keyin hosil bo‘lgan bo‘lishi ehtimoli muhokama qilinmaguncha iste’mol haqida xulosa chiqarilmaydi [kugelberg2007, moriya2004].\n• Beqaror moddalar (masalan, geroin metaboliti, kokain, sianid) uchun manfiy yoki past natija ularning yo‘qligi yoki kam bo‘lganini isbotlamaydi [drummer2004, mcallister2008].\n• Tolerantlik ehtimoli bo‘lgan shaxslarda konsentratsiyaning ma’nosi alohida muhokama qilinadi [drummer2004].\n• Xulosa noaniqlikni va muqobil izohlarni ochiq ko‘rsatadi; toksikologik fikr va ko‘rsatma berishda tegishli eng yaxshi amaliyot tavsiyalariga amal qilinadi [asb_bpr037_2019].\n• Ushbu kartochka ilmiy tavsiyalarni bayon etadi; o‘lim sababini belgilash va ekspertizani rasmiylashtirish tartibi amaldagi me’yoriy hujjatlar bilan belgilanadi.",
+            "ru": "• Одна концентрация не интерпретируется изолированно: она оценивается вместе с местом взятия, временем, обстоятельствами и данными вскрытия [drummer2004].\n• В заключении указывается точное место взятия каждого образца крови (например, «правая бедренная вена», «сердце»); результат «кровь» без указания места интерпретируется с осторожностью [pounder1990].\n• Если доступна только центральная кровь, результат излагается осторожно, с учётом вероятности PMR; по возможности дополнительно исследуются периферическая кровь и ткани [prouty1990, yarema2005].\n• Таблицы «летальных концентраций» не используются как единственный критерий [ferner2008, kennedy2010].\n• При обнаружении этанола или GHB вывод об употреблении не делается, пока не обсуждена возможность их посмертного образования [kugelberg2007, moriya2004].\n• Для нестабильных веществ (например, метаболита героина, кокаина, цианида) отрицательный или низкий результат не доказывает их отсутствия или малого количества [drummer2004, mcallister2008].\n• У лиц с вероятной толерантностью значение концентрации обсуждается отдельно [drummer2004].\n• Заключение открыто указывает неопределённость и альтернативные объяснения; при формулировании токсикологического мнения и даче показаний следуют соответствующим рекомендациям по наилучшей практике [asb_bpr037_2019].\n• Карточка излагает научные рекомендации; установление причины смерти и оформление экспертизы регулируются действующими нормативными актами.",
+            "en": "• A single concentration is not interpreted in isolation: it is assessed together with the sampling site, timing, circumstances and autopsy findings [drummer2004].\n• The report states the exact site of every blood sample (for example 'right femoral vein', 'heart'); a result labelled simply 'blood' with no site is interpreted with caution [pounder1990].\n• If only central blood is available, the result is worded cautiously with the likelihood of PMR in mind; where possible, peripheral blood and tissues are also analysed [prouty1990, yarema2005].\n• Tables of 'lethal concentrations' are not used as a sole criterion [ferner2008, kennedy2010].\n• When ethanol or GHB is found, no conclusion about intake is drawn until the possibility of postmortem formation has been addressed [kugelberg2007, moriya2004].\n• For unstable substances (for example a heroin metabolite, cocaine, cyanide), a negative or low result does not prove absence or a small amount [drummer2004, mcallister2008].\n• In persons with possible tolerance, the meaning of a concentration is discussed specifically [drummer2004].\n• The opinion states uncertainty and alternative explanations openly; relevant best-practice recommendations are followed when giving toxicological opinions and testimony [asb_bpr037_2019].\n• This card sets out scientific recommendations; determining the cause of death and documenting the examination are governed by the applicable regulations."
+          }
+        },
+        {
+          "key": "alternatives",
+          "title": {
+            "uz": "Muqobil matritsalar va qo‘shimcha ma’lumot manbalari",
+            "ru": "Альтернативные матрицы и дополнительные источники информации",
+            "en": "Alternative matrices and complementary sources"
+          },
+          "citations": [
+            "drummer2007",
+            "pigaiani2020",
+            "kugelberg2007",
+            "pounder1996",
+            "kintz2017",
+            "flanagan2005",
+            "kennedy2010",
+            "yarema2005"
+          ],
+          "body": {
+            "uz": "Muqobil matritsalar qonni almashtirmaydi, balki uni to‘ldiradi; har birining o‘z cheklovlari bor. Quyida ularning roli faqat sifat jihatidan bayon qilinadi.\n\n• Shishasimon tana suyuqligi — nisbatan himoyalangan bo‘shliq; qon bilan birga yaxshi qo‘shimcha namuna [drummer2007, pigaiani2020]. Etanolni talqin qilishda ayniqsa foydali [kugelberg2007].\n• Siydik — yaqin o‘tmishdagi iste’molni ko‘rsatadi va skrining uchun qulay; qonni to‘ldiradi [drummer2007].\n• Jigar — ba’zi holatlarda tavsiya etiladi [drummer2007]; me’dadan diffuziya ta’sirini kamaytirish uchun o‘ng bo‘lakning chuqur qismidan olinadi [pounder1996].\n• Me’da tarkibi — ichilgan modda haqida ma’lumot beradi [drummer2007], lekin o‘zi diffuziya manbai bo‘lishi mumkin [pounder1996].\n• Skelet mushagi (qo‘l-oyoqdan) va o‘pka cho‘qqisi — me’da diffuziyasidan kamroq ta’sirlanadigan joylar sifatida ko‘rsatilgan [pounder1996].\n• Soch (va tirnoq) — surunkali iste’mol yoki uzoq muddatli ekspozitsiya gumon qilinganda; tashqi ifloslanish ehtimolini istisno qilish talab etiladi [kintz2017, flanagan2005].\n• Kasalxonada qolgan antemortem namunalar — o‘lim oldidagi holatning eng ishonchli ko‘rsatkichi bo‘lishi mumkin [flanagan2005].\n• Klinik va holat ma’lumotlari — PMR bo‘lsa ham talqinni mustahkamlaydi [kennedy2010, yarema2005].\n\nNamunalarni tanlash, olish va saqlash tafsilotlari alohida «preanalitika» kartochkasida keltirilgan.",
+            "ru": "Альтернативные матрицы не заменяют кровь, а дополняют её; у каждой свои ограничения. Ниже их роль описана только качественно.\n\n• Стекловидное тело — относительно защищённая полость; хороший дополнительный к крови образец [drummer2007, pigaiani2020]. Особенно полезно при интерпретации этанола [kugelberg2007].\n• Моча — отражает недавнее употребление, удобна для скрининга; дополняет кровь [drummer2007].\n• Печень — рекомендуется в ряде случаев [drummer2007]; для уменьшения влияния диффузии из желудка берётся из глубины правой доли [pounder1996].\n• Содержимое желудка — даёт сведения о принятом веществе [drummer2007], но само может быть источником диффузии [pounder1996].\n• Скелетная мышца конечности и верхушка лёгкого — указаны как места, в меньшей мере затрагиваемые желудочной диффузией [pounder1996].\n• Волосы (и ногти) — при подозрении на хроническое употребление или длительное воздействие; требуется исключить внешнее загрязнение [kintz2017, flanagan2005].\n• Сохранившиеся в больнице прижизненные образцы — могут быть наиболее надёжным отражением предсмертного состояния [flanagan2005].\n• Клинические сведения и обстоятельства — укрепляют интерпретацию даже при наличии PMR [kennedy2010, yarema2005].\n\nПодробности выбора, взятия и хранения образцов приведены в отдельной карточке о преаналитическом этапе.",
+            "en": "Alternative matrices complement blood rather than replace it, and each has its own limitations. Their role is described qualitatively only.\n\n• Vitreous humour — a relatively protected compartment and a good complement to blood [drummer2007, pigaiani2020]; particularly useful in interpreting ethanol [kugelberg2007].\n• Urine — reflects recent use and is convenient for screening; complements blood [drummer2007].\n• Liver — recommended in some circumstances [drummer2007]; sampled deep in the right lobe to reduce the influence of gastric diffusion [pounder1996].\n• Gastric contents — inform about the ingested substance [drummer2007] but can themselves be a source of diffusion [pounder1996].\n• Limb skeletal muscle and the lung apex — named as sites less affected by gastric diffusion [pounder1996].\n• Hair (and nails) — when chronic use or long-term exposure is suspected; external contamination must be excluded [kintz2017, flanagan2005].\n• Residual antemortem hospital samples — may be the most reliable reflection of the pre-terminal state [flanagan2005].\n• Clinical and circumstantial information — strengthens interpretation even when PMR is present [kennedy2010, yarema2005].\n\nDetails of specimen selection, collection and storage are given in the separate preanalytics card."
+          }
+        }
+      ],
+      "keywords": {
+        "uz": [
+          "o‘limdan keyingi qayta taqsimlanish",
+          "postmortem redistribution",
+          "PMR",
+          "postmortem toksikologiya",
+          "son venasi qoni",
+          "periferik qon",
+          "markaziy qon",
+          "yurak qoni",
+          "diffuziya",
+          "me’da tarkibi",
+          "neoformatsiya",
+          "o‘limdan keyin hosil bo‘lish",
+          "parchalanish",
+          "barqarorlik",
+          "kontaminatsiya",
+          "tolerantlik",
+          "letal konsentratsiya",
+          "me’yoriy diapazon",
+          "shishasimon tana suyuqligi",
+          "jigar",
+          "soch tahlili",
+          "etanol",
+          "GHB",
+          "sianid",
+          "chirish",
+          "sud-toksikologiya",
+          "sud-tibbiy ekspertiza"
+        ],
+        "ru": [
+          "посмертное перераспределение",
+          "postmortem redistribution",
+          "PMR",
+          "посмертная токсикология",
+          "бедренная кровь",
+          "периферическая кровь",
+          "центральная кровь",
+          "сердечная кровь",
+          "диффузия",
+          "содержимое желудка",
+          "посмертное образование",
+          "разрушение",
+          "стабильность",
+          "контаминация",
+          "толерантность",
+          "летальная концентрация",
+          "референсный интервал",
+          "стекловидное тело",
+          "печень",
+          "анализ волос",
+          "этанол",
+          "ГОМК",
+          "GHB",
+          "цианид",
+          "гниение",
+          "судебная токсикология",
+          "судебно-медицинская экспертиза"
+        ],
+        "en": [
+          "postmortem redistribution",
+          "PMR",
+          "postmortem toxicology",
+          "femoral blood",
+          "peripheral blood",
+          "central blood",
+          "heart blood",
+          "site dependence",
+          "postmortem diffusion",
+          "gastric contents",
+          "neoformation",
+          "postmortem formation",
+          "degradation",
+          "stability",
+          "contamination",
+          "tolerance",
+          "lethal concentration",
+          "reference range",
+          "vitreous humour",
+          "vitreous humor",
+          "liver",
+          "hair analysis",
+          "ethanol",
+          "GHB",
+          "cyanide",
+          "putrefaction",
+          "forensic toxicology",
+          "forensic pathology"
+        ]
+      },
+      "omitted_unverified": [
+        "Numeric thresholds for PMR-prone drugs (e.g., volume of distribution cut-off reported by yarema2005): omitted per card policy; drug properties described qualitatively.",
+        "Central-to-peripheral (C/P) and liver-to-blood (L/P) concentration ratios and their proposed cut-offs: not verified in this session; ratios mentioned only qualitatively.",
+        "Case concentrations reported by pounder1990 and tissue concentrations from pounder1996: omitted (illustrative numbers, not interpretive values).",
+        "Endogenous/postmortem GHB concentration ranges and cut-offs (moriya2004 and others): omitted; formation described qualitatively.",
+        "Lists of specific drugs known to undergo marked PMR beyond those named in drummer2004 and yarema2005 abstracts (e.g., digoxin, specific opioids): only abstract-level examples considered; not enumerated in the card text.",
+        "Time course of PMR (how many hours after death changes become significant): not verified; omitted.",
+        "Cyanide postmortem formation (as opposed to instability) and thiocyanate interpretation: not verified from a source read in this session; only instability (mcallister2008) stated.",
+        "Compendia of therapeutic/toxic/lethal concentrations (e.g., Schulz et al., Baselt): not cited, edition details not verified; the card cites only sources that caution against their uncritical use.",
+        "Society of Forensic Toxicologists (SOFT)/AAFS Forensic Toxicology Laboratory Guidelines: edition/year not verified in this session; not cited."
+      ],
+      "reference_keys": [
+        "ferner2008",
+        "pelissier2003",
+        "prouty1990",
+        "pounder1990",
+        "yarema2005",
+        "skopp2010",
+        "asb_bpr037_2019",
+        "drummer2007",
+        "drummer2004",
+        "pigaiani2020",
+        "kintz2017",
+        "flanagan2005",
+        "kennedy2010",
+        "pounder1996",
+        "kugelberg2007",
+        "boumba2008",
+        "lin2020",
+        "moriya2004",
+        "mcallister2008",
+        "peters2007stab",
+        "skopp2004"
+      ]
+    },
+    {
+      "id": "guideline.tox.specimen_preanalytics",
+      "discipline_codes": [
+        "forensic_toxicology",
+        "evidence_handling"
+      ],
+      "status": "NEEDS_REVIEW",
+      "updated": "2026-10-08",
+      "translation_status": {
+        "uz": "AUTHORED",
+        "ru": "DRAFT",
+        "en": "DRAFT"
+      },
+      "related_tool_ids": [],
+      "title": {
+        "uz": "Sud-toksikologik namunalarni tanlash, olish, belgilash, konservatsiya qilish va saqlash (preanalitika)",
+        "ru": "Выбор, взятие, маркировка, консервация и хранение образцов в судебной токсикологии (преаналитика)",
+        "en": "Specimen selection, collection, labelling, preservation and storage in forensic toxicology (preanalytics)"
+      },
+      "summary": {
+        "uz": "Toksikologik natijaning ishonchliligi birinchi navbatda namunaning turi va butunligiga bog‘liq. Postmortem holatda qon ikki periferik joydan (afzalroq son venalaridan) olinadi, markaziy qon alohida belgilanadi; siydik, shishasimon tana suyuqligi, me’da tarkibi, jigar va zarur bo‘lsa soch qo‘shimcha olinadi. Konservant (masalan, natriy ftorid), harorat, ifloslanishning oldini olish, aniq belgilash va dalillarni saqlash zanjiri natijaning yaroqliligini ta’minlaydi; huquqiy talablar mahalliy qoidalar bilan belgilanadi.",
+        "ru": "Надёжность токсикологического результата прежде всего зависит от вида и сохранности образца. Посмертно кровь берут из двух периферических мест (предпочтительно бедренных вен), центральная кровь маркируется отдельно; дополнительно берут мочу, стекловидное тело, содержимое желудка, печень и при необходимости волосы. Консервант (например, фторид натрия), температура, предотвращение загрязнения, точная маркировка и цепочка хранения обеспечивают пригодность результата; правовые требования определяются местными правилами.",
+        "en": "The reliability of a toxicology result depends first on the nature and integrity of the specimen. Postmortem blood is taken from two peripheral sites (preferably the femoral veins) and central blood is labelled separately; urine, vitreous humour, gastric contents, liver and, where needed, hair are added. Preservative (for example sodium fluoride), temperature, prevention of contamination, precise labelling and chain of custody keep the result valid; legal requirements are set by local rules."
+      },
+      "sections": [
+        {
+          "key": "basis",
+          "title": {
+            "uz": "Ilmiy asos",
+            "ru": "Научная основа",
+            "en": "Scientific basis"
+          },
+          "citations": [
+            "flanagan2005",
+            "dinis2010",
+            "skopp2004",
+            "peters2007stab",
+            "asb_bpr156_2023"
+          ],
+          "body": {
+            "uz": "Har qanday toksikologik natijaning ishonchliligi va ahamiyati, avvalo, tahlilga yuborilgan namunaning turi va butunligi bilan belgilanadi [flanagan2005, dinis2010]. Laboratoriyadagi eng zamonaviy usul ham noto‘g‘ri joydan olingan, noto‘g‘ri saqlangan yoki ifloslangan namunadagi xatoni tuzata olmaydi. Shuning uchun preanalitik bosqich — namunani tanlash, olish, belgilash, konservatsiya qilish, tashish va saqlash — natija sifatiga sezilarli ta’sir ko‘rsatadigan bosqich sifatida tan olingan [skopp2004].\n\nPostmortem namunalar ko‘p turli va sifati juda o‘zgaruvchan bo‘lishi mumkin; autoliz va chirish ularni tanlash va ishlatish imkoniyatlarini cheklaydi [skopp2004, dinis2010]. Namunadagi modda saqlash davomida fizik, kimyoviy yoki metabolik jarayonlar tufayli o‘zgarishi mumkin, shuning uchun saqlash barqarorligi preanalitikaning alohida masalasidir [skopp2004, peters2007stab].\n\nGumon qilingan zaharlanish yoki dori bilan bog‘liq o‘limda namuna olishning yagona uyg‘unlashtirilgan protokoli adabiyotda mavjud emasligi qayd etilgan [skopp2004, dinis2010]. Keyinchalik toksikologiya konsensus organi sud-toksikologik namunalarni olish, ularning miqdori, konservantlar va saqlash sharoitlari bo‘yicha eng yaxshi amaliyot tavsiyalarini nashr etdi [asb_bpr156_2023]. Ushbu kartochka bu manbalardagi umumiy tamoyillarni mustaqil ravishda, sifat jihatidan bayon qiladi.",
+            "ru": "Надёжность и значимость любого токсикологического результата определяются прежде всего видом и сохранностью направленного на анализ образца [flanagan2005, dinis2010]. Даже самый современный лабораторный метод не исправит ошибку в образце, взятом не из того места, неправильно хранившемся или загрязнённом. Поэтому преаналитический этап — выбор, взятие, маркировка, консервация, транспортировка и хранение образца — признан этапом, существенно влияющим на качество результата [skopp2004].\n\nПосмертные образцы могут быть многочисленными и очень различаться по качеству; аутолиз и гниение ограничивают возможности их выбора и использования [skopp2004, dinis2010]. Вещество в образце может изменяться при хранении вследствие физических, химических или метаболических процессов, поэтому стабильность при хранении — отдельный вопрос преаналитики [skopp2004, peters2007stab].\n\nВ литературе отмечалось отсутствие единого гармонизированного протокола отбора образцов при подозрении на отравление или смерть, связанную с препаратами [skopp2004, dinis2010]. Впоследствии консенсусный орган по токсикологии опубликовал рекомендации по наилучшей практике в отношении взятия судебно-токсикологических образцов, их количества, консервантов и условий хранения [asb_bpr156_2023]. Карточка самостоятельно и на качественном уровне излагает общие принципы этих источников.",
+            "en": "The reliability and relevance of any toxicology result are determined in the first instance by the nature and integrity of the specimen submitted for analysis [flanagan2005, dinis2010]. Even the most advanced laboratory method cannot correct an error in a specimen taken from the wrong site, stored incorrectly or contaminated. The preanalytical phase — selection, collection, labelling, preservation, transport and storage — is therefore recognised as having a substantial influence on the quality of the result [skopp2004].\n\nPostmortem specimens may be numerous and their quality highly variable; autolysis and putrefaction limit their selection and usefulness [skopp2004, dinis2010]. A substance in a specimen may change during storage through physical, chemical or metabolic processes, so storage stability is a distinct preanalytical issue [skopp2004, peters2007stab].\n\nThe literature noted the absence of a single harmonised sampling protocol for suspected poisonings or drug-related deaths [skopp2004, dinis2010]. The toxicology consensus body has since published best-practice recommendations on the collection of forensic toxicology specimens, their amounts, preservatives and storage conditions [asb_bpr156_2023]. This card restates the common principles of these sources independently and qualitatively."
+          }
+        },
+        {
+          "key": "scope",
+          "title": {
+            "uz": "Qo‘llanish sohasi va namunalar",
+            "ru": "Область применения и объекты исследования",
+            "en": "Scope and specimens"
+          },
+          "citations": [
+            "asb_bpr156_2023",
+            "dinis2010",
+            "flanagan2005",
+            "skopp2004"
+          ],
+          "body": {
+            "uz": "Kartochka quyidagi holatlarda olinadigan biologik namunalarga taalluqli:\n• postmortem toksikologiya (o‘lim sababini aniqlashda);\n• tirik shaxslar bo‘yicha toksikologiya — masalan, transport vositasini mast holda boshqarish, dori yordamida sodir etilgan jinoyatlar, boshqa sud-toksikologik tekshiruvlar [asb_bpr156_2023, dinis2010].\n\nNamunalarning asosiy turlari: qon (periferik va markaziy), siydik, shishasimon tana suyuqligi, me’da tarkibi, jigar, soch va tirnoq, shuningdek holatga qarab boshqa to‘qimalar [flanagan2005, dinis2010, skopp2004]. Kasalxonada qolgan antemortem namunalar ham alohida ahamiyatga ega [flanagan2005].\n\nKartochka nafas havosidagi alkogolni o‘lchashni qamrab olmaydi [asb_bpr156_2023]. Musodara qilingan moddalarni (kukun, tabletka) olish va saqlash bu yerda ko‘rib chiqilmaydi.\n\nKartochkada aniq hajm, massa yoki konservant konsentratsiyasi qiymatlari ataylab keltirilmaydi: ular laboratoriya, tahlil turi va amaldagi qoidalarga bog‘liq. Namunalarni olish, saqlash muddati, ashyoviy dalillarni rasmiylashtirish va topshirish bo‘yicha huquqiy talablar yurisdiksiyaga xos bo‘lib, mahalliy me’yoriy hujjatlar bilan belgilanadi.",
+            "ru": "Карточка относится к биологическим образцам, взятым:\n• в посмертной токсикологии (при установлении причины смерти);\n• в токсикологии живых лиц — например, при управлении транспортом в состоянии опьянения, преступлениях с применением препаратов, других судебно-токсикологических исследованиях [asb_bpr156_2023, dinis2010].\n\nОсновные виды образцов: кровь (периферическая и центральная), моча, стекловидное тело, содержимое желудка, печень, волосы и ногти, а также другие ткани в зависимости от обстоятельств [flanagan2005, dinis2010, skopp2004]. Особое значение имеют сохранившиеся в больнице прижизненные образцы [flanagan2005].\n\nКарточка не охватывает измерение алкоголя в выдыхаемом воздухе [asb_bpr156_2023]. Взятие и хранение изъятых веществ (порошков, таблеток) здесь не рассматриваются.\n\nКонкретные объёмы, массы и концентрации консервантов намеренно не приводятся: они зависят от лаборатории, вида анализа и действующих правил. Правовые требования к взятию образцов, срокам хранения, оформлению и передаче вещественных доказательств зависят от юрисдикции и определяются местными нормативными актами.",
+            "en": "The card applies to biological specimens collected in:\n• postmortem toxicology (when establishing the cause of death);\n• toxicology of living persons — for example driving under the influence, drug-facilitated crimes and other forensic toxicology testing [asb_bpr156_2023, dinis2010].\n\nThe main specimen types are blood (peripheral and central), urine, vitreous humour, gastric contents, liver, hair and nails, and other tissues depending on the case [flanagan2005, dinis2010, skopp2004]. Residual antemortem hospital samples are of particular value [flanagan2005].\n\nThe card does not cover breath alcohol measurement [asb_bpr156_2023]. Collection and storage of seized materials (powders, tablets) are not addressed here.\n\nSpecific volumes, masses and preservative concentrations are deliberately not given: they depend on the laboratory, the type of analysis and applicable rules. Legal requirements for collection, retention periods, documentation and transfer of evidence are jurisdiction-specific and governed by local regulations."
+          }
+        },
+        {
+          "key": "methods",
+          "title": {
+            "uz": "Namunalarni tanlash va olish (konseptual darajada)",
+            "ru": "Выбор и взятие образцов (на концептуальном уровне)",
+            "en": "Specimen selection and collection (conceptual level)"
+          },
+          "citations": [
+            "skopp2010",
+            "flanagan2005",
+            "yarema2005",
+            "drummer2007",
+            "prouty1990",
+            "pigaiani2020",
+            "pounder1996",
+            "kintz2017",
+            "kugelberg2007"
+          ],
+          "body": {
+            "uz": "Namunalar holat tafsilotlari va ularning mavjudligiga qarab tanlanadi [skopp2010]. Quyida asosiy namunalar bo‘yicha umumiy tamoyillar keltiriladi.\n\n• Periferik qon. Postmortem holatda qon ikki alohida periferik joydan, afzalroq chap va o‘ng son venalaridan olinadi; bunda markaziy tomirlardan qon tortib olinmasligiga e’tibor beriladi [flanagan2005]. Bog‘langan yoki qisib qo‘yilgan son venasi ideal joy sifatida ko‘rsatiladi [yarema2005]. Namuna olish joylari o‘rtasidagi farqni kamaytirish uchun olish tartibi standartlashtiriladi [drummer2007].\n• Markaziy (yurak) qon. Alohida idishda va alohida belgi bilan olinadi; u periferik qonni almashtirmaydi, balki taqqoslash uchun xizmat qiladi, chunki markaziy qonda konsentratsiyalar odatda yuqoriroq bo‘ladi [prouty1990].\n• Siydik. Mavjud bo‘lsa olinadi; qonni yaxshi to‘ldiradi va skrining uchun qulay [flanagan2005, drummer2007].\n• Shishasimon tana suyuqligi. Har bir ko‘zdan alohida namuna olinadi [flanagan2005]; nisbatan himoyalangan bo‘shliqdan olingani uchun chirishga moyil holatlarda ham foydali bo‘lishi mumkin [pigaiani2020].\n• Me’da tarkibi. Vakillik qiladigan (reprezentativ) qismi olinadi [flanagan2005].\n• Jigar. O‘ng bo‘lakdan olinadi [flanagan2005]; me’dadan diffuziyaning ta’sirini kamaytirish uchun bo‘lakning chuqur qismidan olish tavsiya etilgan [pounder1996].\n• Soch va tirnoq. Surunkali ekspozitsiya gumon qilinganda olinadi; soch tutami ildiz tomoni belgilangan holda bog‘lanadi, shunda segmentlarga ajratib tahlil qilish mumkin bo‘ladi [flanagan2005, kintz2017].\n• Boshqa to‘qimalar. Holatga qarab qo‘l-oyoq skelet mushagi yoki o‘pka cho‘qqisi kabi me’da diffuziyasidan kamroq ta’sirlanadigan joylar tanlanadi [pounder1996]; etanol talqini uchun boshqa muqobil namunalar ham ishlatiladi [kugelberg2007].\n• Antemortem namunalar. O‘lim kasalxonada sodir bo‘lgan bo‘lsa, qolgan namunalar zudlik bilan izlanadi [flanagan2005].\n\nBelgilash va hujjatlashtirish. Har bir idish alohida belgilanadi: kimdan, qaysi anatomik joydan, qachon va kim tomonidan olingani aniq bo‘lishi kerak. Namuna bilan birga anamnez, klinik, kasbiy va holat ma’lumotlari hamda yorib ko‘rish bayonnomasining nusxasi (mavjud bo‘lsa) yuboriladi; namunalarni topshirishda dalillarni saqlash zanjiri (chain of custody) tartiblari qo‘llanadi [flanagan2005].",
+            "ru": "Образцы выбираются с учётом обстоятельств случая и их доступности [skopp2010]. Ниже приведены общие принципы по основным образцам.\n\n• Периферическая кровь. Посмертно кровь берут из двух отдельных периферических мест, предпочтительно из левой и правой бедренных вен, следя за тем, чтобы не аспирировать кровь из центральных сосудов [flanagan2005]. Идеальным местом названа перевязанная или пережатая бедренная вена [yarema2005]. Порядок взятия стандартизируется, чтобы уменьшить различия между местами отбора [drummer2007].\n• Центральная (сердечная) кровь. Берётся в отдельную ёмкость с отдельной маркировкой; она не заменяет периферическую кровь, а служит для сравнения, так как концентрации в центральной крови обычно выше [prouty1990].\n• Моча. Берётся при наличии; хорошо дополняет кровь и удобна для скрининга [flanagan2005, drummer2007].\n• Стекловидное тело. Образцы из каждого глаза берутся раздельно [flanagan2005]; поскольку оно находится в относительно защищённой полости, оно может быть полезно и при выраженных гнилостных изменениях [pigaiani2020].\n• Содержимое желудка. Берётся представительная часть [flanagan2005].\n• Печень. Берётся из правой доли [flanagan2005]; для уменьшения влияния диффузии из желудка рекомендовано брать из глубины доли [pounder1996].\n• Волосы и ногти. Берутся при подозрении на хроническое воздействие; прядь волос связывают с обозначением корневого конца, что позволяет сегментный анализ [flanagan2005, kintz2017].\n• Другие ткани. В зависимости от случая выбирают места, меньше затрагиваемые желудочной диффузией, — скелетную мышцу конечности или верхушку лёгкого [pounder1996]; для интерпретации этанола используются и другие альтернативные образцы [kugelberg2007].\n• Прижизненные образцы. Если смерть наступила в больнице, сохранившиеся образцы разыскиваются безотлагательно [flanagan2005].\n\nМаркировка и документирование. Каждая ёмкость маркируется отдельно: должно быть ясно, от кого, из какого анатомического места, когда и кем взят образец. Вместе с образцом направляются анамнез, клинические, профессиональные сведения и обстоятельства, а также копия протокола вскрытия (при наличии); при передаче образцов применяется процедура цепочки хранения (chain of custody) [flanagan2005].",
+            "en": "Specimens are selected according to the case history and their availability [skopp2010]. General principles for the main specimens follow.\n\n• Peripheral blood. Postmortem blood is taken from two distinct peripheral sites, preferably the left and right femoral veins, taking care not to draw blood from central vessels [flanagan2005]. A ligated or clamped femoral vein is named as the ideal site [yarema2005]. Collection is standardised to minimise site-to-site variability [drummer2007].\n• Central (heart) blood. Collected in a separate, separately labelled container; it does not replace peripheral blood but serves for comparison, because central blood concentrations are generally higher [prouty1990].\n• Urine. Collected if available; it complements blood well and is convenient for screening [flanagan2005, drummer2007].\n• Vitreous humour. Samples from each eye are taken separately [flanagan2005]; because it comes from a relatively protected compartment, it can be useful even when putrefaction is present [pigaiani2020].\n• Gastric contents. A representative portion is taken [flanagan2005].\n• Liver. Taken from the right lobe [flanagan2005]; sampling deep within the lobe is recommended to reduce the influence of gastric diffusion [pounder1996].\n• Hair and nails. Collected when chronic exposure is suspected; a hair lock is tied with the root end marked so that segmental analysis is possible [flanagan2005, kintz2017].\n• Other tissues. Depending on the case, sites less affected by gastric diffusion, such as limb skeletal muscle or the lung apex, are chosen [pounder1996]; other alternative specimens are also used for ethanol interpretation [kugelberg2007].\n• Antemortem samples. If death occurred in hospital, residual samples are sought urgently [flanagan2005].\n\nLabelling and documentation. Each container is labelled individually: it must be clear from whom, from which anatomical site, when and by whom the specimen was taken. The specimen is accompanied by clinical, occupational and circumstantial history and a copy of the autopsy report (when available); chain-of-custody procedures are applied when specimens are submitted [flanagan2005]."
+          }
+        },
+        {
+          "key": "advantages",
+          "title": {
+            "uz": "To‘g‘ri preanalitikaning afzalliklari",
+            "ru": "Преимущества правильной преаналитики",
+            "en": "Advantages of sound preanalytics"
+          },
+          "citations": [
+            "prouty1990",
+            "flanagan2005",
+            "peters2007stab",
+            "dinis2010",
+            "skopp2004",
+            "kintz2017",
+            "drummer2007"
+          ],
+          "body": {
+            "uz": "• Bir nechta joydan alohida belgilangan namunalar o‘limdan keyingi qayta taqsimlanishni aniqlash va talqinni mustahkamlash imkonini beradi [prouty1990, flanagan2005].\n• Konservant va mos harorat tanlangan namunada modda barqarorligi yaxshi saqlanadi, shuning uchun natija o‘lim yoki namuna olish paytidagi holatga yaqinroq bo‘ladi [peters2007stab, dinis2010].\n• Muqobil namunalar ekspozitsiyaning yo‘li va vaqti haqida qo‘shimcha ma’lumot berishi mumkin [dinis2010, skopp2004]; soch esa uzoq muddatli tarixni ko‘rsatadi [kintz2017].\n• Sinchkov belgilash va dalillarni saqlash zanjiri namunaning kelib chiqishi va yaxlitligini sud jarayonida tasdiqlash imkonini beradi [flanagan2005].\n• Namuna turini aniq bilish laboratoriyaga aynan shu namuna uchun validatsiya qilingan usulni tanlash imkonini beradi [drummer2007].",
+            "ru": "• Раздельно маркированные образцы из нескольких мест позволяют выявить посмертное перераспределение и укрепить интерпретацию [prouty1990, flanagan2005].\n• В образце с подобранным консервантом и надлежащей температурой стабильность вещества сохраняется лучше, и результат ближе к состоянию на момент смерти или взятия [peters2007stab, dinis2010].\n• Альтернативные образцы могут дать дополнительные сведения о пути и времени воздействия [dinis2010, skopp2004]; волосы отражают длительную историю [kintz2017].\n• Тщательная маркировка и цепочка хранения позволяют подтвердить происхождение и целостность образца в судебном процессе [flanagan2005].\n• Точное знание вида образца позволяет лаборатории выбрать методику, валидированную именно для этого образца [drummer2007].",
+            "en": "• Separately labelled specimens from several sites make it possible to detect postmortem redistribution and strengthen interpretation [prouty1990, flanagan2005].\n• In a specimen with a suitable preservative and appropriate temperature, analyte stability is better maintained, so the result is closer to the situation at death or collection [peters2007stab, dinis2010].\n• Alternative specimens may provide additional information on the route and timing of exposure [dinis2010, skopp2004]; hair reflects a long-term history [kintz2017].\n• Careful labelling and chain of custody allow the origin and integrity of a specimen to be demonstrated in legal proceedings [flanagan2005].\n• Knowing the exact specimen type lets the laboratory choose a method validated for that specimen [drummer2007]."
+          }
+        },
+        {
+          "key": "limitations",
+          "title": {
+            "uz": "Cheklovlar",
+            "ru": "Ограничения",
+            "en": "Limitations"
+          },
+          "citations": [
+            "skopp2004",
+            "dinis2010",
+            "flanagan2005",
+            "pelissier2003",
+            "asb_bpr156_2023"
+          ],
+          "body": {
+            "uz": "• Postmortem namunalar sifati o‘zgaruvchan: autoliz va chirish ba’zi namunalarni olishni imkonsiz qiladi yoki ularning yaroqliligini pasaytiradi [skopp2004, dinis2010].\n• Har bir holatda barcha namunalar mavjud bo‘lavermaydi (masalan, siydik yo‘q bo‘lishi yoki shishasimon tana suyuqligi kam bo‘lishi mumkin); bunda talqin cheklanganligi hujjatlashtiriladi.\n• Formalin fiksatsiyasi yoki murdani balzamlash dastlabki konsentratsiyani sezilarli o‘zgartirishi mumkin, chunki matritsa o‘zgaradi, namuna suyultiriladi, modda ajralib chiqadi yoki parchalanadi [skopp2004].\n• Konservantlar har doim ham bir xil foyda bermaydi: ularning afzalliklari bilan birga kamchiliklari ham bor, shuning uchun konservantsiz qism ham kerak bo‘lishi mumkin [skopp2004, dinis2010, flanagan2005].\n• Eng yaxshi preanalitika ham o‘limdan keyingi qayta taqsimlanishni to‘liq bartaraf etmaydi; u faqat uni aniqlash va hisobga olish imkonini beradi [pelissier2003].\n• Yagona xalqaro uyg‘unlashtirilgan protokol uzoq vaqt bo‘lmagan [skopp2004]; mavjud tavsiyalar laboratoriya va yurisdiksiya talablariga moslashtiriladi [asb_bpr156_2023].",
+            "ru": "• Качество посмертных образцов вариабельно: аутолиз и гниение делают взятие некоторых образцов невозможным или снижают их пригодность [skopp2004, dinis2010].\n• Не в каждом случае доступны все образцы (например, мочи может не быть, стекловидного тела может быть мало); ограниченность интерпретации в таком случае документируется.\n• Фиксация формалином или бальзамирование могут существенно изменить исходную концентрацию вследствие изменения матрицы, разбавления, высвобождения или разрушения вещества [skopp2004].\n• Консерванты не всегда дают одинаковую пользу: наряду с преимуществами у них есть недостатки, поэтому может понадобиться и порция без консерванта [skopp2004, dinis2010, flanagan2005].\n• Даже лучшая преаналитика не устраняет посмертное перераспределение полностью; она лишь позволяет его выявить и учесть [pelissier2003].\n• Единого международного гармонизированного протокола долго не было [skopp2004]; существующие рекомендации адаптируются к требованиям лаборатории и юрисдикции [asb_bpr156_2023].",
+            "en": "• Postmortem specimen quality is variable: autolysis and putrefaction make some specimens impossible to obtain or reduce their usefulness [skopp2004, dinis2010].\n• Not every specimen is available in every case (for example, there may be no urine or little vitreous humour); the resulting limits on interpretation are documented.\n• Formalin fixation or embalming may change the initial concentration considerably through alteration of the matrix, dilution, release or degradation of the substance [skopp2004].\n• Preservatives do not always help equally: they have disadvantages as well as advantages, so an unpreserved portion may also be needed [skopp2004, dinis2010, flanagan2005].\n• Even the best preanalytics do not eliminate postmortem redistribution; they only make it possible to detect and account for it [pelissier2003].\n• A single international harmonised protocol was long lacking [skopp2004]; existing recommendations are adapted to laboratory and jurisdictional requirements [asb_bpr156_2023]."
+          }
+        },
+        {
+          "key": "factors",
+          "title": {
+            "uz": "Natijaga ta’sir qiluvchi omillar",
+            "ru": "Факторы, влияющие на результат",
+            "en": "Factors affecting the result"
+          },
+          "citations": [
+            "flanagan2005",
+            "olds2023",
+            "mcallister2008",
+            "peters2007stab",
+            "drummer2004",
+            "pounder1996",
+            "kintz2017",
+            "skopp2004"
+          ],
+          "body": {
+            "uz": "Konservatsiya va idish.\n• Natriy ftorid qonning bir qismiga (yoki bir venadan olingan namunaga) va siydikka konservant sifatida qo‘shiladi [flanagan2005]. Etanol uchun bu ayniqsa muhim: konservantsiz siydikda, masalan, glyukozuriya yoki infeksiya bo‘lganda, etanol in vitro hosil bo‘lishi mumkin [olds2023].\n• Muzlatiladigan suyuq namunalar uchun idishda biroz bo‘sh joy (headspace) qoldiriladi [flanagan2005].\n• Sianid kabi beqaror moddalar uchun konservant va saqlash sharoiti natijaga bevosita ta’sir qiladi [mcallister2008].\n\nHarorat va vaqt.\n• Ko‘pchilik dorilar laboratoriyadagi odatiy sharoitda barqaror; beqarorlik asosan murakkab efir guruhlari, oltingugurt atomlari yoki oson oksidlanadigan/qaytariladigan tuzilmalari bo‘lgan moddalarda kuzatiladi [peters2007stab].\n• Namunalar kamida sovutgichda, afzalroq muzlatilgan holda saqlanishi tavsiya etiladi; xona haroratida uzoq turgan namunalar natijasi juda ehtiyotkorlik bilan talqin qilinadi [peters2007stab].\n• Saqlash davomida qondagi etanol konsentratsiyasi pasayishga moyil [olds2023]. Geroin, morfin glyukuronidlari, kokain va benzodiazepinlar ham parchalanishga moyil [drummer2004].\n• Sianidning o‘zgarishi boshlang‘ich konsentratsiya, namunaning murdada qolgan va saqlangan vaqti hamda haroratga bog‘liq [mcallister2008].\n\nIfloslanish (kontaminatsiya).\n• Uchuvchan zaharlar ehtimoli bo‘lsa, namunalar o‘rtasidagi o‘zaro ifloslanishning oldini olish uchun alohida choralar ko‘riladi [flanagan2005].\n• Tana bo‘shlig‘idan olingan qon va jigarning chap bo‘lagi me’da tarkibidan diffuziya tufayli «ifloslangan» bo‘lishi mumkin [pounder1996].\n• Soch tashqi muhitdan ifloslanishi mumkin; bu tahlilning asosiy tuzoqlaridan biri [kintz2017].\n\nOlish texnikasi.\n• Son venasidan olishda markaziy tomirlardan qon tortib olinishi periferik namuna afzalligini yo‘qqa chiqaradi [flanagan2005].\n• Fiksatsiyalangan yoki balzamlangan to‘qimalar dastlabki holatni aks ettirmasligi mumkin [skopp2004].",
+            "ru": "Консервация и ёмкость.\n• Фторид натрия добавляют как консервант к части крови (или к образцу из одной вены) и к моче [flanagan2005]. Для этанола это особенно важно: в моче без консерванта, например при глюкозурии или инфекции, этанол может образоваться in vitro [olds2023].\n• В ёмкостях с жидкими образцами, которые будут замораживаться, оставляют небольшое свободное пространство (headspace) [flanagan2005].\n• Для нестабильных веществ, таких как цианид, консервант и условия хранения прямо влияют на результат [mcallister2008].\n\nТемпература и время.\n• Большинство препаратов стабильны в обычных лабораторных условиях; нестабильность наблюдается в основном у веществ со сложноэфирными группами, атомами серы или легко окисляемыми/восстанавливаемыми структурами [peters2007stab].\n• Рекомендуется хранить образцы как минимум в холодильнике, предпочтительно в замороженном виде; результаты образцов, долго находившихся при комнатной температуре, интерпретируются с большой осторожностью [peters2007stab].\n• При хранении концентрация этанола в крови имеет тенденцию к снижению [olds2023]. Героин, глюкурониды морфина, кокаин и бензодиазепины также склонны к разрушению [drummer2004].\n• Изменение цианида зависит от исходной концентрации, времени нахождения образца в трупе и при хранении, а также от температуры [mcallister2008].\n\nЗагрязнение (контаминация).\n• При возможном участии летучих ядов принимаются особые меры против перекрёстного загрязнения образцов [flanagan2005].\n• Кровь из полостей тела и левая доля печени могут быть «загрязнены» диффузией из содержимого желудка [pounder1996].\n• Волосы могут загрязняться из внешней среды; это одна из главных ловушек анализа [kintz2017].\n\nТехника взятия.\n• Аспирация крови из центральных сосудов при взятии из бедренной вены лишает периферический образец его преимущества [flanagan2005].\n• Фиксированные или бальзамированные ткани могут не отражать исходное состояние [skopp2004].",
+            "en": "Preservation and containers.\n• Sodium fluoride is added as a preservative to a portion of the blood (or to the sample from one vein) and to urine [flanagan2005]. This matters especially for ethanol: in unpreserved urine, for example with glycosuria or infection, ethanol can be formed in vitro [olds2023].\n• A small headspace is left in containers of liquid specimens that are likely to be frozen [flanagan2005].\n• For unstable substances such as cyanide, preservative and storage conditions directly affect the result [mcallister2008].\n\nTemperature and time.\n• Most drugs are stable under usual laboratory conditions; instability is seen mainly with substances carrying ester groups, sulfur atoms or easily oxidised or reduced structures [peters2007stab].\n• Specimens should be stored at least refrigerated and preferably frozen; results from specimens kept at room temperature for long periods are interpreted with great care [peters2007stab].\n• Blood ethanol tends to decrease during storage [olds2023]. Heroin, morphine glucuronides, cocaine and benzodiazepines are also prone to degradation [drummer2004].\n• The change in cyanide depends on the initial concentration, the time the specimen stays in the body and in storage, and temperature [mcallister2008].\n\nContamination.\n• Where volatile poisons may be involved, specific precautions are taken against cross-contamination between specimens [flanagan2005].\n• Blood from body cavities and the left lobe of the liver may be 'contaminated' by diffusion from gastric contents [pounder1996].\n• Hair can be contaminated from the environment, one of the main pitfalls of hair analysis [kintz2017].\n\nCollection technique.\n• Drawing central blood while sampling the femoral vein defeats the purpose of a peripheral specimen [flanagan2005].\n• Fixed or embalmed tissues may not reflect the original state [skopp2004]."
+          }
+        },
+        {
+          "key": "cautions",
+          "title": {
+            "uz": "Ehtiyot choralari",
+            "ru": "Предостережения",
+            "en": "Cautions"
+          },
+          "citations": [
+            "flanagan2005",
+            "skopp2004",
+            "peters2007stab",
+            "drummer2007",
+            "skopp2010"
+          ],
+          "body": {
+            "uz": "• Turli joylardan olingan qon hech qachon bitta idishda aralashtirilmaydi; har bir namuna alohida belgilanadi va olingan joyi aniq yoziladi [flanagan2005].\n• Konservantli va konservantsiz qismlar alohida belgilanadi; konservant qo‘shilgani hujjatda ko‘rsatiladi [flanagan2005].\n• Namunani olish, tashish va saqlash shartlari (harorat, vaqt) hujjatlashtiriladi, chunki ular barqarorlikni baholashga zarur [skopp2004, peters2007stab].\n• Laboratoriya natijani faqat ushbu namuna turi uchun validatsiya qilingan usul bilan beradi; validatsiya qilinmagan matritsa uchun natija ehtiyotkorlik bilan izohlanadi [drummer2007].\n• Namuna bilan birga yetarli anamnez va holat ma’lumoti yuboriladi; ularsiz talqin cheklanadi [flanagan2005, skopp2010].\n• Dalillarni saqlash zanjiri namuna olingan paytdan boshlab uzluksiz yuritiladi [flanagan2005].\n• Ushbu kartochka ilmiy tavsiyalarni bayon etadi. Namuna olishga vakolatli shaxslar, rozilik, saqlash muddatlari, ashyoviy dalillarni rasmiylashtirish va topshirish tartibi amaldagi mahalliy me’yoriy hujjatlar bilan belgilanadi.",
+            "ru": "• Кровь из разных мест никогда не смешивается в одной ёмкости; каждый образец маркируется отдельно с точным указанием места взятия [flanagan2005].\n• Порции с консервантом и без него маркируются раздельно; добавление консерванта отражается в документах [flanagan2005].\n• Условия взятия, транспортировки и хранения (температура, время) документируются, так как они необходимы для оценки стабильности [skopp2004, peters2007stab].\n• Лаборатория выдаёт результат методикой, валидированной для данного вида образца; результат для невалидированной матрицы комментируется с осторожностью [drummer2007].\n• Вместе с образцом направляются достаточные анамнестические сведения и обстоятельства; без них интерпретация ограничена [flanagan2005, skopp2010].\n• Цепочка хранения ведётся непрерывно с момента взятия образца [flanagan2005].\n• Карточка излагает научные рекомендации. Лица, уполномоченные на взятие образцов, согласие, сроки хранения, порядок оформления и передачи вещественных доказательств определяются действующими местными нормативными актами.",
+            "en": "• Blood from different sites is never pooled in one container; each specimen is labelled separately with its exact site [flanagan2005].\n• Preserved and unpreserved portions are labelled separately, and the addition of a preservative is documented [flanagan2005].\n• Conditions of collection, transport and storage (temperature, time) are documented, because they are needed to assess stability [skopp2004, peters2007stab].\n• The laboratory reports results using a method validated for that specimen type; a result in an unvalidated matrix is qualified with caution [drummer2007].\n• Adequate history and circumstantial information accompany the specimen; without it interpretation is limited [flanagan2005, skopp2010].\n• The chain of custody is maintained without interruption from the moment of collection [flanagan2005].\n• This card sets out scientific recommendations. Who may collect specimens, consent, retention periods and the procedure for documenting and transferring evidence are governed by applicable local regulations."
+          }
+        },
+        {
+          "key": "alternatives",
+          "title": {
+            "uz": "Muqobil va qo‘shimcha namunalar",
+            "ru": "Альтернативные и дополнительные образцы",
+            "en": "Alternative and complementary specimens"
+          },
+          "citations": [
+            "dinis2010",
+            "skopp2004",
+            "drummer2007",
+            "pigaiani2020",
+            "kintz2017",
+            "flanagan2005",
+            "pounder1996",
+            "kugelberg2007",
+            "drummer2004"
+          ],
+          "body": {
+            "uz": "Odatiy namunalar mavjud bo‘lmaganda yoki qo‘shimcha savollarga javob kerak bo‘lganda muqobil namunalar ko‘rib chiqiladi; ular ekspozitsiya yo‘li va vaqti haqida qo‘shimcha ma’lumot berishi mumkin [dinis2010, skopp2004].\n\n• Shishasimon tana suyuqligi — qonni to‘ldiruvchi asosiy namunalardan biri [drummer2007, pigaiani2020].\n• Soch va tirnoq — surunkali yoki takroriy ekspozitsiya uchun; segmentar tahlil vaqt bo‘yicha tarixni ko‘rsatishi mumkin [kintz2017, flanagan2005].\n• Jigar va me’da tarkibi — ayrim holatlarda tavsiya etiladi [drummer2007].\n• Skelet mushagi, o‘pka cho‘qqisi — me’da diffuziyasidan kamroq ta’sirlanadigan to‘qimalar [pounder1996].\n• Etanol talqini uchun boshqa postmortem namunalar (masalan, siydik, o‘t, suyak iligi, kalla ichidagi qon laxtasi) [kugelberg2007].\n• Kuchli chirigan murdalarda boshqa matritsalar, jumladan murdada oziqlanayotgan hasharot lichinkalari ham tahlil qilingan; ular maxsus usullarni talab qiladi [drummer2004].\n\nMuqobil namunalar uchun talqin ma’lumotlari qonga qaraganda kamroq; ular uchun ham usul aynan shu matritsa uchun validatsiya qilingan bo‘lishi kerak [drummer2007].",
+            "ru": "Альтернативные образцы рассматриваются, когда обычные недоступны или нужны ответы на дополнительные вопросы; они могут дать дополнительные сведения о пути и времени воздействия [dinis2010, skopp2004].\n\n• Стекловидное тело — один из основных образцов, дополняющих кровь [drummer2007, pigaiani2020].\n• Волосы и ногти — при хроническом или повторном воздействии; сегментный анализ может отразить историю во времени [kintz2017, flanagan2005].\n• Печень и содержимое желудка — рекомендуются в ряде случаев [drummer2007].\n• Скелетная мышца, верхушка лёгкого — ткани, меньше затрагиваемые желудочной диффузией [pounder1996].\n• Для интерпретации этанола — другие посмертные образцы (например, моча, желчь, костный мозг, внутричерепной сгусток крови) [kugelberg2007].\n• При выраженном гниении исследовались и другие матрицы, включая личинок насекомых, питающихся на трупе; они требуют специальных методик [drummer2004].\n\nДанных для интерпретации по альтернативным образцам меньше, чем по крови; методика и для них должна быть валидирована именно для этой матрицы [drummer2007].",
+            "en": "Alternative specimens are considered when the usual ones are unavailable or additional questions must be answered; they may provide additional information on the route and timing of exposure [dinis2010, skopp2004].\n\n• Vitreous humour — one of the main specimens complementing blood [drummer2007, pigaiani2020].\n• Hair and nails — for chronic or repeated exposure; segmental analysis may reflect a history over time [kintz2017, flanagan2005].\n• Liver and gastric contents — recommended in some circumstances [drummer2007].\n• Skeletal muscle, lung apex — tissues less affected by gastric diffusion [pounder1996].\n• For ethanol interpretation, other postmortem specimens (for example urine, bile, bone marrow, intracranial blood clot) [kugelberg2007].\n• In badly decomposed bodies other matrices, including insect larvae feeding on the body, have been analysed; they require special techniques [drummer2004].\n\nInterpretive data for alternative specimens are scarcer than for blood, and the method must likewise be validated for that particular matrix [drummer2007]."
+          }
+        }
+      ],
+      "keywords": {
+        "uz": [
+          "preanalitika",
+          "preanalitik bosqich",
+          "namuna olish",
+          "namunalarni tanlash",
+          "belgilash",
+          "markirovka",
+          "konservatsiya",
+          "konservant",
+          "natriy ftorid",
+          "saqlash",
+          "barqarorlik",
+          "muzlatish",
+          "son venasi qoni",
+          "periferik qon",
+          "yurak qoni",
+          "siydik",
+          "shishasimon tana suyuqligi",
+          "me’da tarkibi",
+          "jigar",
+          "soch",
+          "tirnoq",
+          "antemortem namuna",
+          "dalillarni saqlash zanjiri",
+          "chain of custody",
+          "kontaminatsiya",
+          "ashyoviy dalil",
+          "sud-toksikologiya"
+        ],
+        "ru": [
+          "преаналитика",
+          "преаналитический этап",
+          "взятие образцов",
+          "выбор образцов",
+          "маркировка",
+          "консервация",
+          "консервант",
+          "фторид натрия",
+          "хранение",
+          "стабильность",
+          "замораживание",
+          "бедренная кровь",
+          "периферическая кровь",
+          "сердечная кровь",
+          "моча",
+          "стекловидное тело",
+          "содержимое желудка",
+          "печень",
+          "волосы",
+          "ногти",
+          "прижизненный образец",
+          "цепочка хранения",
+          "chain of custody",
+          "контаминация",
+          "вещественное доказательство",
+          "судебная токсикология"
+        ],
+        "en": [
+          "preanalytics",
+          "preanalytical phase",
+          "specimen collection",
+          "specimen selection",
+          "sample collection",
+          "labelling",
+          "labeling",
+          "preservation",
+          "preservative",
+          "sodium fluoride",
+          "storage",
+          "stability",
+          "freezing",
+          "femoral blood",
+          "peripheral blood",
+          "heart blood",
+          "urine",
+          "vitreous humour",
+          "vitreous humor",
+          "gastric contents",
+          "liver",
+          "hair",
+          "nails",
+          "antemortem sample",
+          "chain of custody",
+          "contamination",
+          "evidence handling",
+          "forensic toxicology",
+          "ASB 156"
+        ]
+      },
+      "omitted_unverified": [
+        "Specimen volumes/masses (e.g., blood volume, liver mass) and sodium fluoride concentration range given in the flanagan2005 abstract: omitted per card policy (numbers not needed at concept level; laboratory-specific).",
+        "Headspace percentage for frozen tubes and hair lock size given in flanagan2005: omitted; described qualitatively.",
+        "Content of ANSI/ASB Best Practice Recommendation 156 beyond its official scope statement (specific specimen tables, amounts, container types, temperatures): the full document was not read in this session; only scope cited.",
+        "Specific storage temperatures and maximum storage durations per analyte: not verified per analyte; only the general recommendation of peters2007stab (refrigerated at least, preferably frozen) is stated.",
+        "Container material recommendations (glass vs plastic, tube additives such as EDTA/oxalate, gel separators): not verified in this session; omitted.",
+        "Oral fluid, dried blood spots and breath specimens: not covered by sources read in this session (breath excluded by ASB 156 scope); omitted.",
+        "Antemortem venipuncture procedures (skin disinfection with non-alcoholic swabs etc.): not verified from a source read in this session; omitted.",
+        "SOFT/AAFS Forensic Toxicology Laboratory Guidelines and national standards on specimen collection: edition/year not verified; not cited.",
+        "Jurisdiction-specific legal requirements (who may collect, consent, retention periods, evidence forms): intentionally excluded."
+      ],
+      "reference_keys": [
+        "flanagan2005",
+        "dinis2010",
+        "skopp2004",
+        "peters2007stab",
+        "asb_bpr156_2023",
+        "skopp2010",
+        "yarema2005",
+        "drummer2007",
+        "prouty1990",
+        "pigaiani2020",
+        "pounder1996",
+        "kintz2017",
+        "kugelberg2007",
+        "pelissier2003",
+        "olds2023",
+        "mcallister2008",
+        "drummer2004"
+      ]
+    },
+    {
+      "id": "guideline.chem.method_comparison",
+      "discipline_codes": [
+        "forensic_chemistry",
+        "forensic_toxicology",
+        "analytical_science"
+      ],
+      "status": "NEEDS_REVIEW",
+      "updated": "2026-10-08",
+      "translation_status": {
+        "uz": "AUTHORED",
+        "ru": "DRAFT",
+        "en": "DRAFT"
+      },
+      "related_tool_ids": [],
+      "title": {
+        "uz": "Sud-toksikologiya va giyohvand moddalar tahlilida skrining va tasdiqlovchi usullar: taqqoslash",
+        "ru": "Скрининговые и подтверждающие методы в судебной токсикологии и анализе наркотических средств: сравнение",
+        "en": "Screening versus confirmatory methods in forensic toxicology and drug analysis: a comparison"
+      },
+      "summary": {
+        "uz": "Rangli testlar, immunoanaliz va YuQX — tez va arzon skrining usullari, lekin ularning natijasi taxminiy. GX-AID va YuSSX-DMD moddani xossalari bo‘yicha ajratadi, ammo tuzilma haqida ma’lumot bermaydi; GX-MS, SX-MS/MS va YuAMS tuzilma haqida ma’lumot beradi va tasdiqlash hamda miqdoriy aniqlashda asosiy hisoblanadi. Har bir usulning o‘z xatolik manbalari (o‘zaro reaksiya, matritsa ta’siri) bo‘lgani uchun identifikatsiya boshqa tamoyilga asoslangan ikkinchi mustaqil usul bilan tasdiqlanadi. SWGDRUG toifalari musodara qilingan moddalarga taalluqli.",
+        "ru": "Цветные тесты, иммуноанализ и ТСХ — быстрые и недорогие методы скрининга, но их результат предварительный. ГХ-ПИД и ВЭЖХ-ДМД разделяют вещества по свойствам, но не дают структурной информации; ГХ-МС, ЖХ-МС/МС и МСВР дают структурную информацию и являются основными для подтверждения и количественного определения. Поскольку у каждого метода свои источники ошибок (перекрёстная реактивность, матричный эффект), идентификация подтверждается вторым независимым методом, основанным на ином принципе. Категории SWGDRUG относятся к изъятым веществам.",
+        "en": "Colour tests, immunoassay and TLC are fast, inexpensive screening methods, but their results are presumptive. GC-FID and HPLC-DAD separate substances by their properties but give no structural information; GC-MS, LC-MS/MS and HRMS provide structural information and are central to confirmation and quantitation. Because every technique has its own sources of error (cross-reactivity, matrix effects), identification is confirmed by a second, independent technique based on a different principle. The SWGDRUG categories apply to seized drugs."
+      },
+      "sections": [
+        {
+          "key": "basis",
+          "title": {
+            "uz": "Ilmiy asos",
+            "ru": "Научная основа",
+            "en": "Scientific basis"
+          },
+          "citations": [
+            "saitman2014",
+            "swgdrug2024",
+            "asb113_2023"
+          ],
+          "body": {
+            "uz": "Sud-toksikologik va sud-kimyoviy tahlil odatda ikki bosqichdan iborat. Skrining (dastlabki tekshiruv) ko‘p namunani tez va arzon saralaydi va qaysi moddalar bo‘lishi mumkinligini ko‘rsatadi. Tasdiqlovchi tahlil esa moddani yuqori selektivlik bilan identifikatsiya qiladi va kerak bo‘lsa uning miqdorini aniqlaydi. Skrining natijasi taxminiy (presumptive) hisoblanadi: immunokimyoviy skrining musbat natijasi ikkinchi, mustaqil kimyoviy usul bilan tasdiqlanmaguncha shunday qoladi, degan amaliyot keng qabul qilingan [saitman2014].\n\nUsullarning selektivligi bir xil emas. Musodara qilingan giyohvand moddalar bo‘yicha SWGDRUG tavsiyalari (8.2-versiya) usullarni eng yuqori mumkin bo‘lgan selektivligiga ko‘ra uch toifaga ajratadi [swgdrug2024]:\n• A toifa — tuzilma haqida ma’lumot beruvchi usullar (masalan, infraqizil spektroskopiya, mass-spektrometriya, YaMR, Raman spektroskopiyasi);\n• B toifa — tuzilma haqida ma’lumot bermasdan, kimyoviy va fizik xossalar orqali selektivlik beruvchi usullar (masalan, gaz va suyuqlik xromatografiyasi, kapillyar elektroforez, YuQX, to‘lqin uzunligi diapazonida qo‘llanadigan UB/ko‘rinadigan spektroskopiya);\n• C toifa — umumiy yoki sinf darajasidagi ma’lumot beruvchi usullar (masalan, rangli testlar, immunoanaliz, fluoressensiya spektroskopiyasi, erish harorati).\n\nIkkinchi, mustaqil usul zarurligining sababi oddiy: har bir usulning o‘z xatolik manbalari bor (o‘zaro reaksiya, bir xil ushlanish vaqti, matritsa ta’siri). Boshqa fizik-kimyoviy tamoyilga asoslangan ikkinchi usul birinchisining xatosini takrorlash ehtimoli past. SWGDRUG sxemasida A toifasidagi usul qo‘llanganda ham boshqa xossadan foydalanuvchi kamida yana bitta usul talab qilinadi [swgdrug2024]. Biologik namunalar bo‘yicha sud-toksikologiyada esa identifikatsiya uchun ballarga asoslangan minimal mezonlarni belgilovchi alohida standart nashr etilgan [asb113_2023].",
+            "ru": "Судебно-токсикологический и судебно-химический анализ обычно состоит из двух этапов. Скрининг (предварительное исследование) быстро и недорого сортирует множество образцов и указывает, какие вещества могут присутствовать. Подтверждающий анализ идентифицирует вещество с высокой селективностью и при необходимости определяет его количество. Результат скрининга считается предварительным (presumptive): общепринята практика, согласно которой положительный результат иммунохимического скрининга остаётся таковым до подтверждения вторым, независимым химическим методом [saitman2014].\n\nСелективность методов неодинакова. Рекомендации SWGDRUG (версия 8.2) по изъятым наркотическим средствам делят методы на три категории по наивысшей достижимой селективности [swgdrug2024]:\n• категория A — методы, дающие структурную информацию (например, ИК-спектроскопия, масс-спектрометрия, ЯМР, спектроскопия комбинационного рассеяния);\n• категория B — методы, обеспечивающие селективность за счёт химических и физических свойств без структурной информации (например, газовая и жидкостная хроматография, капиллярный электрофорез, ТСХ, УФ/видимая спектроскопия в диапазоне длин волн);\n• категория C — методы, дающие общую или групповую информацию (например, цветные тесты, иммуноанализ, флуоресцентная спектроскопия, температура плавления).\n\nПричина необходимости второго, независимого метода проста: у каждого метода свои источники ошибок (перекрёстная реактивность, совпадение времени удерживания, матричные эффекты). Второй метод, основанный на ином физико-химическом принципе, с малой вероятностью повторит ошибку первого. В схеме SWGDRUG даже при использовании метода категории A требуется по меньшей мере ещё один метод, использующий иное свойство [swgdrug2024]. Для судебной токсикологии биологических образцов опубликован отдельный стандарт, устанавливающий минимальные балльные критерии идентификации [asb113_2023].",
+            "en": "Forensic toxicology and forensic drug analysis usually proceed in two stages. Screening sorts many samples quickly and cheaply and indicates which substances may be present. Confirmatory analysis identifies the substance with high selectivity and, where required, quantifies it. A screening result is presumptive: it is generally accepted practice that a positive immunoassay screen remains presumptive until confirmed by a second, independent chemical technique [saitman2014].\n\nTechniques differ in selectivity. For seized drugs, the SWGDRUG Recommendations (Version 8.2) group techniques into three categories according to their highest potential selectivity [swgdrug2024]:\n• Category A — techniques providing structural information (for example infrared spectroscopy, mass spectrometry, NMR, Raman spectroscopy);\n• Category B — techniques providing selectivity through chemical and physical characteristics without structural information (for example gas and liquid chromatography, capillary electrophoresis, TLC, UV/visible spectroscopy used with a wavelength range);\n• Category C — techniques providing general or class information (for example colour tests, immunoassay, fluorescence spectroscopy, melting point).\n\nThe reason a second, independent technique is needed is simple: each technique has its own sources of error (cross-reactivity, coinciding retention times, matrix effects). A second technique based on a different physicochemical principle is unlikely to repeat the error of the first. In the SWGDRUG scheme, even when a Category A technique is used, at least one further technique exploiting a different property is required [swgdrug2024]. For forensic toxicology of biological specimens, a separate standard setting minimum point-based identification criteria has been published [asb113_2023]."
+          }
+        },
+        {
+          "key": "scope",
+          "title": {
+            "uz": "Qo‘llanish sohasi",
+            "ru": "Область применения",
+            "en": "Scope"
+          },
+          "citations": [
+            "swgdrug2024",
+            "asb113_2023"
+          ],
+          "body": {
+            "uz": "Kartochka ikki yaqin, lekin alohida sohani qamrab oladi:\n• sud-toksikologiya — biologik namunalarda (qon, siydik, to‘qimalar) dori, giyohvand modda va zaharlarni aniqlash;\n• musodara qilingan moddalar tahlili — kukun, tabletka, o‘simlik materiali va boshqa ashyolarda giyohvand moddalarni identifikatsiya qilish.\n\nSWGDRUG tavsiyalari faqat musodara qilingan moddalarga taalluqli; biologik namunalar uchun toksikologik standartlar va laboratoriyaning validatsiya qilingan tartiblari qo‘llanadi [swgdrug2024, asb113_2023]. Bu farq muhim: musodara qilingan kukunda modda odatda ko‘p miqdorda va nisbatan toza bo‘ladi, biologik namunada esa past konsentratsiyada va murakkab matritsa ichida bo‘ladi.\n\nKo‘rib chiqiladigan usullar: rangli testlar, immunoanaliz, yupqa qatlamli xromatografiya (YuQX/YuSYuQX), alanga-ionizatsion detektorli gaz xromatografiyasi (GX-AID, GC-FID), gaz xromatografiyasi–mass-spektrometriya (GX-MS), diod-matritsali detektorli yuqori samarali suyuqlik xromatografiyasi (YuSSX-DMD, HPLC-DAD), suyuqlik xromatografiyasi–tandem mass-spektrometriya (SX-MS/MS) va yuqori aniqlikdagi mass-spektrometriya (YuAMS, HRMS).\n\nKartochkada aniqlash chegaralari va boshqa raqamli ishlash ko‘rsatkichlari keltirilmaydi: ular modda, matritsa, asbob va usulga bog‘liq bo‘lib, har bir laboratoriyada validatsiya orqali aniqlanadi. Etanolni bug‘ fazali GX bilan aniqlash va YuQX alohida kartochkalarda batafsil yoritilgan.",
+            "ru": "Карточка охватывает две близкие, но разные области:\n• судебная токсикология — обнаружение лекарственных, наркотических веществ и ядов в биологических образцах (кровь, моча, ткани);\n• анализ изъятых веществ — идентификация наркотических средств в порошках, таблетках, растительном материале и других объектах.\n\nРекомендации SWGDRUG относятся только к изъятым веществам; для биологических образцов применяются токсикологические стандарты и валидированные процедуры лаборатории [swgdrug2024, asb113_2023]. Это различие важно: в изъятом порошке вещество обычно присутствует в большом количестве и относительно чистом виде, а в биологическом образце — в низкой концентрации и в сложной матрице.\n\nРассматриваемые методы: цветные тесты, иммуноанализ, тонкослойная хроматография (ТСХ/ВЭТСХ), газовая хроматография с пламенно-ионизационным детектором (ГХ-ПИД, GC-FID), газовая хроматография–масс-спектрометрия (ГХ-МС), высокоэффективная жидкостная хроматография с диодно-матричным детектором (ВЭЖХ-ДМД, HPLC-DAD), жидкостная хроматография–тандемная масс-спектрометрия (ЖХ-МС/МС) и масс-спектрометрия высокого разрешения (МСВР, HRMS).\n\nПределы обнаружения и другие числовые характеристики не приводятся: они зависят от вещества, матрицы, прибора и методики и устанавливаются валидацией в каждой лаборатории. Определение этанола парофазной ГХ и ТСХ подробно рассмотрены в отдельных карточках.",
+            "en": "The card covers two related but distinct areas:\n• forensic toxicology — detection of medicines, drugs of abuse and poisons in biological specimens (blood, urine, tissues);\n• seized-drug analysis — identification of controlled substances in powders, tablets, plant material and other items.\n\nThe SWGDRUG Recommendations apply to seized drugs only; for biological specimens, toxicology standards and the laboratory's validated procedures apply [swgdrug2024, asb113_2023]. The distinction matters: in a seized powder the substance is usually abundant and relatively pure, whereas in a biological specimen it is at low concentration within a complex matrix.\n\nTechniques considered: colour tests, immunoassay, thin-layer chromatography (TLC/HPTLC), gas chromatography with flame-ionisation detection (GC-FID), gas chromatography–mass spectrometry (GC-MS), high-performance liquid chromatography with diode-array detection (HPLC-DAD), liquid chromatography–tandem mass spectrometry (LC-MS/MS) and high-resolution mass spectrometry (HRMS).\n\nDetection limits and other numerical performance figures are not given: they depend on the substance, matrix, instrument and method and are established by validation in each laboratory. Headspace GC for ethanol and TLC are covered in detail in separate cards."
+          }
+        },
+        {
+          "key": "methods",
+          "title": {
+            "uz": "Usullarni taqqoslash (konseptual darajada)",
+            "ru": "Сравнение методов (на концептуальном уровне)",
+            "en": "Method comparison (conceptual level)"
+          },
+          "citations": [
+            "philp2018",
+            "swgdrug2024",
+            "drummer2007",
+            "saitman2014",
+            "singh1992",
+            "dezeeuw1997",
+            "tiscione2011",
+            "maurer2004",
+            "maurer2010",
+            "remane2016",
+            "matuszewski2003",
+            "ojanpera2012"
+          ],
+          "body": {
+            "uz": "Har bir usul uchun: tamoyil — odatiy roli — kuchli tomonlari — cheklovlari.\n\n• Rangli (tomchi) testlar. Tamoyil: modda yoki modda sinfi reaktiv bilan rangli mahsulot hosil qiladi. Roli: musodara qilingan moddalarni taxminiy (presumptive) skrining. Kuchli tomoni: sodda, arzon, tez. Cheklovi: ko‘p reaksiyalarning kimyosi yetarli o‘rganilmagan yoki noma’lum; selektivlik, sezgirlik va xavfsizlik bilan bog‘liq muammolar, yangi psixoaktiv moddalar bilan qiyinchiliklar [philp2018]. SWGDRUG bo‘yicha C toifasi [swgdrug2024].\n• Immunoanaliz. Tamoyil: antitelo maqsadli modda yoki sinf bilan bog‘lanadi. Roli: biologik namunalarda, ayniqsa siydikda, keng tarqalgan giyohvand moddalar sinflarini skrining qilish [drummer2007]. Kuchli tomoni: tez va arzon, avtomatlashtirish oson. Cheklovi: boshqa moddalar bilan o‘zaro reaksiya soxta musbat natijaga olib keladi [saitman2014]; masalan, pivo tarkibidagi hordenin ba’zi immunoanalizlarga ta’sir qilgani tasvirlangan [singh1992]; faqat panelga kiritilgan sinflarni qamraydi. C toifasi [swgdrug2024].\n• YuQX / YuSYuQX. Tamoyil: plastinkadagi sorbent qatlamida ajratish, Rf va rangli reaktivlar bo‘yicha aniqlash. Roli: keng qamrovli skrining, identifikatsiyani qo‘llab-quvvatlash. Kuchli tomoni: arzon, ko‘p namunani parallel tahlil qilish. Cheklovi: tuzilma haqida ma’lumot bermaydi; sharoitga sezgir [dezeeuw1997]. B toifasi [swgdrug2024]; batafsil — alohida YuQX kartochkasida.\n• GX-AID (GC-FID). Tamoyil: uchuvchan moddalarni kapillyar kolonkada ajratish va organik moddalarni alangada ionlash orqali aniqlash. Roli: asosan uchuvchan moddalarni, xususan etanolni miqdoriy aniqlash; bug‘ fazali GX-AID bilan bir vaqtda MS detektori tasdiqlash uchun ishlatilishi mumkin [tiscione2011]. Kuchli tomoni: barqaror va keng chiziqli signal, miqdoriy aniqlash uchun qulay. Cheklovi: identifikatsiya faqat ushlanish vaqtiga asoslanadi, tuzilma haqida ma’lumot yo‘q — GX B toifasida [swgdrug2024]. Umumiy noma’lum moddalar skriningida GX azot-fosfor detektori va/yoki MS bilan qo‘llanadi [drummer2007].\n• GX-MS. Tamoyil: GX ajratishi va mass-spektr (odatda elektron ionlash) orqali tuzilma haqida ma’lumot. Roli: keng qamrovli skrining va tasdiqlash; elektron ionlashdagi to‘liq skanerlash rejimi kutubxonalar bilan solishtirishga imkon beradi va keng qamrovli skriningda tanlov usuli sifatida ko‘rsatilgan [maurer2004, maurer2010]. Kuchli tomoni: MS — A toifasi; gibrid usul ikkala qismining mezonlari bajarilsa ikkita alohida usul sifatida hisoblanishi mumkin [swgdrug2024]. Cheklovi: qutbli, termolabil moddalar uchun derivatizatsiya kerak bo‘lishi mumkin; bunday moddalar uchun SX-MS ko‘p hollarda o‘rnini egallagan [drummer2007].\n• YuSSX-DMD (HPLC-DAD). Tamoyil: suyuqlik xromatografiyasida ajratish va to‘liq UB spektrini qayd etish. Roli: GX bilan yaxshi qamralmaydigan kislotali va boshqa moddalar uchun ikkinchi xromatografik skrining usuli [drummer2007]. Kuchli tomoni: termolabil va qutbli moddalarga mos, spektr qo‘shimcha ma’lumot beradi. Cheklovi: ajratish qobiliyati va spetsifikligi GX-MS dan past [maurer2004]; SX ham, to‘lqin uzunligi diapazonida qo‘llanadigan UB spektroskopiyasi ham B toifasida — tuzilma haqida ma’lumot bermaydi [swgdrug2024].\n• SX-MS/MS. Tamoyil: SX ajratishi, yumshoq ionlash va tanlangan ion o‘tishlarini qayd etish. Roli: maqsadli tasdiqlash va ayniqsa miqdoriy aniqlash; ko‘p moddali (multi-target) skrining, yangi psixoaktiv moddalar [remane2016]. Kuchli tomoni: qutbli, termolabil va past dozali moddalar uchun GX-MS ni to‘ldiradi [maurer2004]. Cheklovi: matritsa ta’siri — ionlanishning bosilishi yoki kuchayishi — selektivlik va miqdoriy natijaga ta’sir qiladi va validatsiyada baholanishi kerak [matuszewski2003]; toza ekstraktlar talab qilinadi [drummer2007].\n• YuAMS (HRMS: uchish vaqti, Orbitrap). Tamoyil: ion massasini yuqori aniqlik va ajratish qobiliyati bilan o‘lchash. Roli: keng qamrovli skrining, jumladan avvaldan tanlanmagan («general unknown») moddalarni izlash [ojanpera2012, remane2016]. Kuchli tomoni: aniq massa va izotop tasviri elementar tarkibni aniqlash va identifikatsiyani tasdiqlash uchun filtr vazifasini bajaradi [ojanpera2012]. Cheklovi: murakkab biologik namunalarda yuqori ajratish qobiliyati zarur [ojanpera2012]; elementar tarkib bir xil bo‘lgan izomerlarni faqat massa bo‘yicha farqlab bo‘lmaydi — xromatografik ajratish va mos yozuvlar kerak.",
+            "ru": "Для каждого метода: принцип — типичная роль — сильные стороны — ограничения.\n\n• Цветные (капельные) тесты. Принцип: вещество или класс веществ образует с реактивом окрашенный продукт. Роль: предварительный (presumptive) скрининг изъятых веществ. Сильные стороны: просто, дёшево, быстро. Ограничения: химия многих реакций недостаточно изучена или неизвестна; проблемы селективности, чувствительности и безопасности, трудности с новыми психоактивными веществами [philp2018]. По SWGDRUG — категория C [swgdrug2024].\n• Иммуноанализ. Принцип: антитело связывается с целевым веществом или классом. Роль: скрининг распространённых классов наркотических средств в биологических образцах, особенно в моче [drummer2007]. Сильные стороны: быстро, недорого, легко автоматизируется. Ограничения: перекрёстная реактивность с другими веществами ведёт к ложноположительным результатам [saitman2014]; например, описано влияние гордеина из пива на некоторые иммуноанализы [singh1992]; охватываются только классы, включённые в панель. Категория C [swgdrug2024].\n• ТСХ / ВЭТСХ. Принцип: разделение в слое сорбента на пластинке, обнаружение по Rf и цветным реактивам. Роль: широкий скрининг, поддержка идентификации. Сильные стороны: дёшево, параллельный анализ многих образцов. Ограничения: не даёт структурной информации; чувствительна к условиям [dezeeuw1997]. Категория B [swgdrug2024]; подробно — в отдельной карточке по ТСХ.\n• ГХ-ПИД (GC-FID). Принцип: разделение летучих веществ на капиллярной колонке и детектирование органических веществ ионизацией в пламени. Роль: главным образом количественное определение летучих веществ, в частности этанола; при парофазной ГХ-ПИД одновременно может использоваться МС-детектор для подтверждения [tiscione2011]. Сильные стороны: стабильный, широкий линейный отклик, удобен для количественного анализа. Ограничения: идентификация только по времени удерживания, без структурной информации — ГХ в категории B [swgdrug2024]. При скрининге на общий неизвестный ГХ применяется с азотно-фосфорным детектором и/или МС [drummer2007].\n• ГХ-МС. Принцип: разделение ГХ и масс-спектр (обычно электронная ионизация), дающий структурную информацию. Роль: широкий скрининг и подтверждение; режим полного сканирования при электронной ионизации позволяет сравнение с библиотеками и назван методом выбора для широкого скрининга [maurer2004, maurer2010]. Сильные стороны: МС — категория A; гибридный метод может засчитываться как два отдельных метода при выполнении критериев для обеих частей [swgdrug2024]. Ограничения: для полярных, термолабильных веществ может требоваться дериватизация; для таких веществ во многих случаях её место заняла ЖХ-МС [drummer2007].\n• ВЭЖХ-ДМД (HPLC-DAD). Принцип: разделение жидкостной хроматографией и запись полного УФ-спектра. Роль: второй хроматографический метод скрининга для кислых и других веществ, плохо охватываемых ГХ [drummer2007]. Сильные стороны: подходит для термолабильных и полярных веществ, спектр даёт дополнительную информацию. Ограничения: разделяющая способность и специфичность ниже, чем у ГХ-МС [maurer2004]; и ЖХ, и УФ-спектроскопия в диапазоне длин волн относятся к категории B — структурной информации не дают [swgdrug2024].\n• ЖХ-МС/МС. Принцип: разделение ЖХ, мягкая ионизация и регистрация выбранных ионных переходов. Роль: целевое подтверждение и особенно количественное определение; многокомпонентный (multi-target) скрининг, новые психоактивные вещества [remane2016]. Сильные стороны: дополняет ГХ-МС для полярных, термолабильных и низкодозируемых веществ [maurer2004]. Ограничения: матричный эффект — подавление или усиление ионизации — влияет на селективность и количественный результат и должен оцениваться при валидации [matuszewski2003]; требуются чистые экстракты [drummer2007].\n• МСВР (HRMS: времяпролётная, Orbitrap). Принцип: измерение массы иона с высокой точностью и разрешением. Роль: широкий скрининг, включая поиск заранее не выбранных веществ («general unknown») [ojanpera2012, remane2016]. Сильные стороны: точная масса и изотопный профиль служат фильтром для установления элементного состава и подтверждения идентичности [ojanpera2012]. Ограничения: в сложных биологических образцах необходимо высокое разрешение [ojanpera2012]; изомеры с одинаковым элементным составом нельзя различить только по массе — нужны хроматографическое разделение и стандарты сравнения.",
+            "en": "For each technique: principle — typical role — strengths — limitations.\n\n• Colour (spot) tests. Principle: a substance or class forms a coloured product with a reagent. Role: presumptive screening of seized materials. Strengths: simple, cheap, rapid. Limitations: the chemistry of many reactions is poorly studied or unknown; issues of selectivity, sensitivity and safety, and difficulties with new psychoactive substances [philp2018]. SWGDRUG Category C [swgdrug2024].\n• Immunoassay. Principle: an antibody binds the target substance or class. Role: screening for common drug classes in biological specimens, especially urine [drummer2007]. Strengths: fast, inexpensive, easily automated. Limitations: cross-reactivity with other substances causes false positives [saitman2014]; for example, interference of hordenine from beer with some immunoassays has been described [singh1992]; only the classes in the panel are covered. Category C [swgdrug2024].\n• TLC / HPTLC. Principle: separation in a sorbent layer on a plate, detection by Rf and colour reagents. Role: broad screening, support of identification. Strengths: cheap, many samples in parallel. Limitations: no structural information; sensitive to conditions [dezeeuw1997]. Category B [swgdrug2024]; details in the separate TLC card.\n• GC-FID. Principle: separation of volatile compounds on a capillary column and detection of organic compounds by ionisation in a flame. Role: mainly quantitation of volatiles, notably ethanol; with headspace GC-FID an MS detector can be used simultaneously for confirmation [tiscione2011]. Strengths: stable, wide linear response, convenient for quantitation. Limitations: identification rests on retention time alone, with no structural information — GC is Category B [swgdrug2024]. In general-unknown screening, GC is used with nitrogen-phosphorus and/or MS detection [drummer2007].\n• GC-MS. Principle: GC separation plus a mass spectrum (usually electron ionisation) giving structural information. Role: broad screening and confirmation; full-scan electron-ionisation spectra allow library comparison, and GC-MS is described as the method of choice for comprehensive screening [maurer2004, maurer2010]. Strengths: MS is Category A; a hyphenated technique may count as two separate techniques if the criteria are met for both parts [swgdrug2024]. Limitations: polar, thermolabile compounds may require derivatisation; for such compounds LC-MS has largely taken over [drummer2007].\n• HPLC-DAD. Principle: liquid chromatographic separation with recording of the full UV spectrum. Role: a second chromatographic screening method for acidic and other compounds poorly covered by GC [drummer2007]. Strengths: suits thermolabile and polar compounds; the spectrum adds information. Limitations: lower separation power and specificity than GC-MS [maurer2004]; both LC and UV spectroscopy over a wavelength range are Category B — no structural information [swgdrug2024].\n• LC-MS/MS. Principle: LC separation, soft ionisation and recording of selected ion transitions. Role: targeted confirmation and especially quantitation; multi-target screening, new psychoactive substances [remane2016]. Strengths: complements GC-MS for polar, thermolabile and low-dose compounds [maurer2004]. Limitations: matrix effects — ion suppression or enhancement — affect selectivity and quantitative results and must be assessed during validation [matuszewski2003]; clean extracts are required [drummer2007].\n• HRMS (time-of-flight, Orbitrap). Principle: measurement of ion mass with high accuracy and resolving power. Role: broad screening, including searching for substances not preselected ('general unknown') [ojanpera2012, remane2016]. Strengths: accurate mass and isotope pattern act as a filter to establish elemental composition and confirm identity [ojanpera2012]. Limitations: high resolution is essential in complex biological samples [ojanpera2012]; isomers with the same elemental composition cannot be distinguished by mass alone — chromatographic separation and reference standards are needed."
+          }
+        },
+        {
+          "key": "advantages",
+          "title": {
+            "uz": "Kuchli tomonlarning umumiy taqqoslanishi",
+            "ru": "Сводное сравнение сильных сторон",
+            "en": "Strengths compared"
+          },
+          "citations": [
+            "philp2018",
+            "saitman2014",
+            "maurer2004",
+            "ojanpera2012",
+            "remane2016",
+            "swgdrug2024",
+            "tiscione2011",
+            "drummer2007"
+          ],
+          "body": {
+            "uz": "• Tezlik va narx: rangli testlar va immunoanaliz eng tez va arzon, shuning uchun skrining uchun qulay [philp2018, saitman2014].\n• Keng qamrov: GX-MS spektr kutubxonalari bilan keng qamrovli skrining uchun mos [maurer2004]; YuAMS avvaldan tanlanmagan moddalarni ham izlash imkonini beradi [ojanpera2012]; SX-MS/MS ko‘p moddali maqsadli skrining uchun qulay [remane2016].\n• Tuzilma haqida ma’lumot: mass-spektrometriya (GX-MS, SX-MS/MS, YuAMS) A toifasidagi usul sifatida eng yuqori selektivlikni beradi [swgdrug2024].\n• Miqdoriy aniqlash: SX-MS/MS ko‘p moddalar uchun miqdoriy tahlilning asosiy usuli [remane2016]; uchuvchan moddalar, xususan etanol uchun bug‘ fazali GX-AID [tiscione2011].\n• Bir-birini to‘ldirish: GX va SX turli fizik-kimyoviy xossalarga asoslangan, shuning uchun ularning birikmasi yuqori selektivlik beradi [swgdrug2024, drummer2007]; SX-MS GX-MS bilan qamralishi qiyin bo‘lgan qutbli va termolabil moddalarni qoplaydi [maurer2004].",
+            "ru": "• Скорость и стоимость: цветные тесты и иммуноанализ самые быстрые и дешёвые, поэтому удобны для скрининга [philp2018, saitman2014].\n• Широта охвата: ГХ-МС с библиотеками спектров подходит для широкого скрининга [maurer2004]; МСВР позволяет искать и заранее не выбранные вещества [ojanpera2012]; ЖХ-МС/МС удобна для многокомпонентного целевого скрининга [remane2016].\n• Структурная информация: масс-спектрометрия (ГХ-МС, ЖХ-МС/МС, МСВР) как метод категории A даёт наивысшую селективность [swgdrug2024].\n• Количественное определение: ЖХ-МС/МС — основной метод количественного анализа многих веществ [remane2016]; для летучих веществ, в частности этанола, — парофазная ГХ-ПИД [tiscione2011].\n• Взаимодополняемость: ГХ и ЖХ основаны на разных физико-химических свойствах, поэтому их сочетание даёт высокую селективность [swgdrug2024, drummer2007]; ЖХ-МС охватывает полярные и термолабильные вещества, трудные для ГХ-МС [maurer2004].",
+            "en": "• Speed and cost: colour tests and immunoassay are the fastest and cheapest, hence convenient for screening [philp2018, saitman2014].\n• Breadth: GC-MS with spectral libraries suits comprehensive screening [maurer2004]; HRMS allows searching for substances not preselected [ojanpera2012]; LC-MS/MS is convenient for multi-target screening [remane2016].\n• Structural information: mass spectrometry (GC-MS, LC-MS/MS, HRMS), as a Category A technique, gives the highest selectivity [swgdrug2024].\n• Quantitation: LC-MS/MS is the main quantitative technique for many substances [remane2016]; for volatiles, notably ethanol, headspace GC-FID [tiscione2011].\n• Complementarity: GC and LC rely on different physicochemical properties, so their combination gives high selectivity [swgdrug2024, drummer2007]; LC-MS covers polar and thermolabile compounds that are difficult for GC-MS [maurer2004]."
+          }
+        },
+        {
+          "key": "limitations",
+          "title": {
+            "uz": "Cheklovlarning umumiy taqqoslanishi",
+            "ru": "Сводное сравнение ограничений",
+            "en": "Limitations compared"
+          },
+          "citations": [
+            "saitman2014",
+            "philp2018",
+            "singh1992",
+            "swgdrug2024",
+            "maurer2004",
+            "matuszewski2003",
+            "drummer2007",
+            "asb098_2023",
+            "asb113_2023"
+          ],
+          "body": {
+            "uz": "• O‘zaro reaksiya: immunoanaliz va rangli testlar tuzilishi o‘xshash yoki butunlay boshqa moddalarga ham javob berishi mumkin; musbat natija faqat taxminiydir [saitman2014, philp2018, singh1992].\n• Tuzilma haqida ma’lumot yo‘qligi: GX-AID, YuSSX-DMD va YuQX faqat ushlanish xossalari yoki spektr/rang bo‘yicha ma’lumot beradi (B toifa) [swgdrug2024]; YuSSX-DMD ning ajratish qobiliyati va spetsifikligi GX-MS dan past [maurer2004].\n• A toifasidagi usul ham har doim yetarli emas: ish rejimi yoki ajratish qobiliyati tuzilishi o‘xshash moddalarni farqlashga imkon bermasa, namuna murakkab bo‘lsa yoki modda miqdori kam bo‘lsa, MS ning selektivligi yetarli bo‘lmasligi mumkin [swgdrug2024].\n• Matritsa ta’siri: SX-MS/MS da ionlanishning bosilishi yoki kuchayishi soxta past yoki yuqori natija berishi mumkin; SX-MS/MS selektivlikni avtomatik kafolatlamaydi [matuszewski2003].\n• Qamrov chegarasi: maqsadli usullar (immunoanaliz paneli, SX-MS/MS maqsadli ro‘yxati) ro‘yxatda yo‘q moddani topmaydi; umumiy noma’lum moddalar uchun xromatografik skrining kerak [drummer2007].\n• MS ma’lumotlarini qabul qilish mezonlari va identifikatsiya mezonlari turli masalalar: mass-spektral tahlil bo‘yicha standart o‘zi identifikatsiya mezonlarini belgilamaydi [asb098_2023, asb113_2023].",
+            "ru": "• Перекрёстная реактивность: иммуноанализ и цветные тесты могут реагировать на структурно сходные или совсем иные вещества; положительный результат лишь предварительный [saitman2014, philp2018, singh1992].\n• Отсутствие структурной информации: ГХ-ПИД, ВЭЖХ-ДМД и ТСХ дают сведения только о свойствах удерживания или спектре/окраске (категория B) [swgdrug2024]; разделяющая способность и специфичность ВЭЖХ-ДМД ниже, чем у ГХ-МС [maurer2004].\n• Метод категории A тоже не всегда достаточен: если режим работы или разрешение не позволяют отличить структурно близкие соединения, если образец сложен или вещества мало, селективность МС может оказаться недостаточной [swgdrug2024].\n• Матричный эффект: подавление или усиление ионизации в ЖХ-МС/МС может давать ложно низкие или высокие результаты; ЖХ-МС/МС не гарантирует селективность автоматически [matuszewski2003].\n• Ограниченность охвата: целевые методы (панель иммуноанализа, целевой список ЖХ-МС/МС) не обнаружат вещество вне списка; для общего неизвестного нужен хроматографический скрининг [drummer2007].\n• Критерии приемлемости масс-спектральных данных и критерии идентификации — разные вопросы: стандарт по масс-спектральному анализу сам не устанавливает критериев идентификации [asb098_2023, asb113_2023].",
+            "en": "• Cross-reactivity: immunoassays and colour tests may respond to structurally similar or entirely different substances; a positive result is only presumptive [saitman2014, philp2018, singh1992].\n• No structural information: GC-FID, HPLC-DAD and TLC provide only retention behaviour or spectrum/colour information (Category B) [swgdrug2024]; HPLC-DAD has lower separation power and specificity than GC-MS [maurer2004].\n• A Category A technique is not always sufficient either: when the mode of operation or resolution cannot distinguish structurally related compounds, when the sample is complex, or when little analyte is present, MS selectivity may be inadequate [swgdrug2024].\n• Matrix effects: ion suppression or enhancement in LC-MS/MS can give falsely low or high results; LC-MS/MS does not automatically guarantee selectivity [matuszewski2003].\n• Limited coverage: targeted methods (an immunoassay panel, an LC-MS/MS target list) will not find a substance outside the list; general-unknown work needs chromatographic screening [drummer2007].\n• Acceptance criteria for mass spectral data and identification criteria are separate matters: the standard on mass spectral analysis does not itself set identification criteria [asb098_2023, asb113_2023]."
+          }
+        },
+        {
+          "key": "factors",
+          "title": {
+            "uz": "Natijaga ta’sir qiluvchi omillar",
+            "ru": "Факторы, влияющие на результат",
+            "en": "Factors affecting the result"
+          },
+          "citations": [
+            "drummer2007",
+            "peters2007",
+            "asb036_2019",
+            "swgdrug2024",
+            "matuszewski2003",
+            "maurer2004"
+          ],
+          "body": {
+            "uz": "• Matritsa va namuna turi. Postmortem va chirigan namunalar tahlilni murakkablashtiradi; usul aynan ishlatilayotgan namuna turi uchun validatsiya qilingan bo‘lishi kerak [drummer2007].\n• Validatsiya. Ishonchli tahliliy ma’lumotlar to‘g‘ri talqinning shartidir; yangi usullar puxta ishlab chiqilishi va validatsiya qilinishi kerak [peters2007]. Sud-toksikologiyada usul validatsiyasi bo‘yicha standart usulning mo‘ljallangan maqsadga yaroqliligini ko‘rsatishni talab qiladi [asb036_2019].\n• Mos yozuvlar va kutubxonalar. Musbat natija mos yozuv materiali, tashqi ma’lumotnoma ma’lumotlari bilan solishtirishni yoki tuzilmani aniqlashni o‘z ichiga olishi kerak; natija barcha sifat nazorati talablariga javob berishi lozim [swgdrug2024].\n• Ekstraksiya va tozalash. SX-MS da toza ekstrakt signalning bosilishini kamaytiradi [drummer2007]; matritsa ta’siri ionlash interfeysiga ham bog‘liq bo‘lishi mumkin [matuszewski2003].\n• Moddaning xossalari. Uchuvchanlik va termik barqarorlik GX ga yaroqlilikni, qutblilik esa derivatizatsiya zarurati yoki SX ni tanlashni belgilaydi [drummer2007, maurer2004].\n• Izomerlar va o‘xshash tuzilmalar. Tuzilishi yaqin moddalarni farqlash uchun xromatografik ajratish va MS rejimi yetarli bo‘lishi kerak [swgdrug2024].",
+            "ru": "• Матрица и вид образца. Посмертные и гнилостно изменённые образцы осложняют анализ; методика должна быть валидирована именно для используемого вида образца [drummer2007].\n• Валидация. Надёжные аналитические данные — условие правильной интерпретации; новые методики требуют тщательной разработки и валидации [peters2007]. Стандарт по валидации методик в судебной токсикологии требует показать пригодность методики для предполагаемого применения [asb036_2019].\n• Стандарты сравнения и библиотеки. Положительный результат должен включать сравнение со стандартным образцом, внешними справочными данными или установление структуры; результат должен соответствовать всем требованиям контроля качества [swgdrug2024].\n• Экстракция и очистка. В ЖХ-МС чистый экстракт уменьшает подавление сигнала [drummer2007]; матричный эффект может зависеть и от интерфейса ионизации [matuszewski2003].\n• Свойства вещества. Летучесть и термостабильность определяют пригодность ГХ, полярность — необходимость дериватизации или выбор ЖХ [drummer2007, maurer2004].\n• Изомеры и сходные структуры. Для различения близких по структуре веществ хроматографическое разделение и режим МС должны быть достаточными [swgdrug2024].",
+            "en": "• Matrix and specimen type. Postmortem and decomposed specimens complicate analysis; the method must be validated for the specimen type actually used [drummer2007].\n• Validation. Reliable analytical data are a prerequisite for correct interpretation; new methods require careful development and thorough validation [peters2007]. The forensic toxicology method-validation standard requires demonstrating that a method is fit for its intended use [asb036_2019].\n• Reference materials and libraries. A positive result must involve comparison with a reference material or external reference data, or structural elucidation, and must meet all quality-control requirements [swgdrug2024].\n• Extraction and clean-up. In LC-MS a clean extract reduces signal suppression [drummer2007]; the matrix effect may also depend on the ionisation interface [matuszewski2003].\n• Analyte properties. Volatility and thermal stability determine suitability for GC; polarity determines the need for derivatisation or the choice of LC [drummer2007, maurer2004].\n• Isomers and similar structures. Chromatographic separation and the MS mode must be adequate to distinguish closely related compounds [swgdrug2024]."
+          }
+        },
+        {
+          "key": "cautions",
+          "title": {
+            "uz": "Talqin qilishda ehtiyot choralari",
+            "ru": "Предостережения при интерпретации",
+            "en": "Interpretation cautions"
+          },
+          "citations": [
+            "saitman2014",
+            "swgdrug2024",
+            "asb113_2023",
+            "asb098_2023",
+            "asb036_2019",
+            "drummer2007"
+          ],
+          "body": {
+            "uz": "• Skrining natijasi (rangli test, immunoanaliz, YuQX) hech qachon yakuniy identifikatsiya sifatida keltirilmaydi; u boshqa tamoyilga asoslangan mustaqil usul bilan tasdiqlanadi [saitman2014, swgdrug2024].\n• Musodara qilingan moddalar uchun SWGDRUG sxemasi: A toifasidagi usul bilan birga kamida yana bitta boshqa xossadan foydalanuvchi usul; A toifasi bo‘lmasa, kamida uchta usul, ulardan ikkitasi turli xossalarga asoslangan B toifasidagi usullar (masalan, GX va SX) [swgdrug2024].\n• GX-MS yoki SX-UB kabi gibrid usul ikkala qismi uchun musbat natija mezonlari bajarilgandagina ikkita usul sifatida hisoblanishi mumkin [swgdrug2024].\n• Manfiy yoki noaniq natijalar foydali ma’lumot berishi mumkin, lekin identifikatsiyaga hissa qo‘shmaydi [swgdrug2024]; manfiy natija faqat qo‘llangan usulning qamrovi va sezgirligi doirasida talqin qilinadi.\n• SWGDRUG tavsiyalarini biologik namunalarga to‘g‘ridan-to‘g‘ri ko‘chirib bo‘lmaydi; sud-toksikologiyada identifikatsiya mezonlari va mass-spektral ma’lumotlarni qabul qilish bo‘yicha alohida standartlar mavjud [asb113_2023, asb098_2023].\n• Miqdoriy natija faqat aynan shu matritsa uchun validatsiya qilingan usul bilan beriladi [asb036_2019, drummer2007].\n• Sxemaning tegishli cheklovlari hujjatlashtiriladi va talab qilinganda hisobotda ko‘rsatiladi [swgdrug2024].\n• Ushbu kartochka ilmiy tavsiyalarni bayon etadi; qaysi usullar majburiy ekanligi va ekspertiza xulosasining shakli amaldagi mahalliy me’yoriy hujjatlar bilan belgilanadi.",
+            "ru": "• Результат скрининга (цветной тест, иммуноанализ, ТСХ) никогда не приводится как окончательная идентификация; он подтверждается независимым методом, основанным на ином принципе [saitman2014, swgdrug2024].\n• Схема SWGDRUG для изъятых веществ: при методе категории A — по меньшей мере ещё один метод, использующий иное свойство; без категории A — не менее трёх методов, два из которых — методы категории B, основанные на разных свойствах (например, ГХ и ЖХ) [swgdrug2024].\n• Гибридный метод, такой как ГХ-МС или ЖХ-УФ, может засчитываться как два метода только при выполнении критериев положительного результата для обеих частей [swgdrug2024].\n• Отрицательные или неопределённые результаты могут быть информативны, но не вносят вклад в идентификацию [swgdrug2024]; отрицательный результат интерпретируется только в пределах охвата и чувствительности использованного метода.\n• Рекомендации SWGDRUG нельзя напрямую переносить на биологические образцы; в судебной токсикологии существуют отдельные стандарты по критериям идентификации и приемлемости масс-спектральных данных [asb113_2023, asb098_2023].\n• Количественный результат выдаётся только методикой, валидированной для данной матрицы [asb036_2019, drummer2007].\n• Соответствующие ограничения схемы документируются и при необходимости указываются в заключении [swgdrug2024].\n• Карточка излагает научные рекомендации; обязательность тех или иных методов и форма заключения определяются действующими местными нормативными актами.",
+            "en": "• A screening result (colour test, immunoassay, TLC) is never reported as a definitive identification; it is confirmed by an independent technique based on a different principle [saitman2014, swgdrug2024].\n• The SWGDRUG scheme for seized drugs: with a Category A technique, at least one further technique exploiting a different property; without Category A, at least three techniques, two of them Category B techniques based on different properties (for example GC and LC) [swgdrug2024].\n• A hyphenated technique such as GC-MS or LC-UV may count as two techniques only when positive-result criteria are met for both parts [swgdrug2024].\n• Negative or inconclusive results may be informative but do not contribute to identification [swgdrug2024]; a negative result is interpreted only within the coverage and sensitivity of the method used.\n• The SWGDRUG Recommendations cannot be transferred directly to biological specimens; forensic toxicology has separate standards on identification criteria and on acceptance of mass spectral data [asb113_2023, asb098_2023].\n• A quantitative result is reported only from a method validated for that matrix [asb036_2019, drummer2007].\n• Relevant limitations of the scheme are documented and reported where required [swgdrug2024].\n• This card sets out scientific recommendations; which techniques are mandatory and the form of the expert report are governed by applicable local regulations."
+          }
+        },
+        {
+          "key": "alternatives",
+          "title": {
+            "uz": "Usullarni birlashtirish va boshqa usullar",
+            "ru": "Сочетание методов и другие методы",
+            "en": "Combining techniques and other methods"
+          },
+          "citations": [
+            "swgdrug2024",
+            "philp2018",
+            "saitman2014",
+            "drummer2007",
+            "ojanpera2012",
+            "remane2016",
+            "tiscione2011",
+            "flanagan1988",
+            "maurer2010"
+          ],
+          "body": {
+            "uz": "Usul tanlash savolga, namuna turiga va laboratoriya imkoniyatlariga bog‘liq. Quyidagi birikmalar faqat konseptual misol sifatida keltiriladi.\n\n• Musodara qilingan kukun: rangli test (taxminiy) → GX-MS (A toifa) va boshqa xossaga asoslangan qo‘shimcha usul, masalan infraqizil spektroskopiya yoki SX [swgdrug2024, philp2018].\n• Siydikda giyohvand moddalar skriningi: immunoanaliz → musbat natijani GX-MS yoki SX-MS/MS bilan tasdiqlash [saitman2014, drummer2007].\n• Postmortem «umumiy noma’lum» skrining: GX asosidagi skrining (MS va/yoki azot-fosfor detektori) bilan birga kislotali va qutbli moddalar uchun ikkinchi xromatografik usul — YuSSX-DMD yoki, afzalroq, SX-MS(MS) [drummer2007]; zamonaviy laboratoriyalarda YuAMS asosidagi skrining ham qo‘llanadi [ojanpera2012, remane2016].\n• Etanol va boshqa uchuvchan moddalar: bug‘ fazali GX-AID bilan miqdoriy aniqlash va MS bilan tasdiqlash [tiscione2011].\n\nSWGDRUG ro‘yxatidagi boshqa usullar: A toifasida YaMR, Raman spektroskopiyasi, rentgen difraktometriyasi; B toifasida kapillyar elektroforez, ion harakatchanligi spektrometriyasi, mikrokristall testlar, superkritik suyuqlik xromatografiyasi; C toifasida fluoressensiya spektroskopiyasi, erish harorati va farmatsevtik identifikatorlar [swgdrug2024].\n\nTarixiy nuqtai nazardan YuQX, GX, YuSSX va immunoanalizlar uzoq vaqt birga ishlatilgan [flanagan1988]; bugungi kunda analitik toksikologiyada asosan GX-MS va SX-MS ishlatiladi [maurer2010].",
+            "ru": "Выбор метода зависит от вопроса, вида образца и возможностей лаборатории. Приведённые сочетания — лишь концептуальные примеры.\n\n• Изъятый порошок: цветной тест (предварительно) → ГХ-МС (категория A) и дополнительный метод, основанный на ином свойстве, например ИК-спектроскопия или ЖХ [swgdrug2024, philp2018].\n• Скрининг наркотических веществ в моче: иммуноанализ → подтверждение положительного результата ГХ-МС или ЖХ-МС/МС [saitman2014, drummer2007].\n• Посмертный скрининг на «общий неизвестный»: скрининг на основе ГХ (МС и/или азотно-фосфорный детектор) вместе со вторым хроматографическим методом для кислых и полярных веществ — ВЭЖХ-ДМД или, предпочтительнее, ЖХ-МС(МС) [drummer2007]; в современных лабораториях применяется и скрининг на основе МСВР [ojanpera2012, remane2016].\n• Этанол и другие летучие вещества: количественное определение парофазной ГХ-ПИД с подтверждением МС [tiscione2011].\n\nДругие методы из списка SWGDRUG: в категории A — ЯМР, спектроскопия комбинационного рассеяния, рентгеновская дифрактометрия; в категории B — капиллярный электрофорез, спектрометрия ионной подвижности, микрокристаллические тесты, сверхкритическая флюидная хроматография; в категории C — флуоресцентная спектроскопия, температура плавления и фармацевтические идентификаторы [swgdrug2024].\n\nИсторически ТСХ, ГХ, ВЭЖХ и иммуноанализ долго применялись совместно [flanagan1988]; сегодня в аналитической токсикологии в основном используются ГХ-МС и ЖХ-МС [maurer2010].",
+            "en": "The choice of technique depends on the question, the specimen type and the laboratory's capabilities. The combinations below are conceptual examples only.\n\n• Seized powder: colour test (presumptive) → GC-MS (Category A) plus a technique based on a different property, for example infrared spectroscopy or LC [swgdrug2024, philp2018].\n• Urine drug screening: immunoassay → confirmation of a positive result by GC-MS or LC-MS/MS [saitman2014, drummer2007].\n• Postmortem 'general unknown' screening: a GC-based screen (MS and/or nitrogen-phosphorus detection) together with a second chromatographic method for acidic and polar compounds — HPLC-DAD or, preferably, LC-MS(MS) [drummer2007]; HRMS-based screening is also used in modern laboratories [ojanpera2012, remane2016].\n• Ethanol and other volatiles: quantitation by headspace GC-FID with MS confirmation [tiscione2011].\n\nOther techniques in the SWGDRUG list: in Category A, NMR, Raman spectroscopy, X-ray diffractometry; in Category B, capillary electrophoresis, ion mobility spectrometry, microcrystalline tests, supercritical fluid chromatography; in Category C, fluorescence spectroscopy, melting point and pharmaceutical identifiers [swgdrug2024].\n\nHistorically, TLC, GC, HPLC and immunoassays were long used side by side [flanagan1988]; today GC-MS and LC-MS are the techniques mostly used in analytical toxicology [maurer2010]."
+          }
+        }
+      ],
+      "keywords": {
+        "uz": [
+          "skrining",
+          "tasdiqlovchi tahlil",
+          "taxminiy natija",
+          "identifikatsiya",
+          "miqdoriy aniqlash",
+          "rangli test",
+          "tomchi test",
+          "immunoanaliz",
+          "o‘zaro reaksiya",
+          "soxta musbat natija",
+          "YuQX",
+          "YuSYuQX",
+          "GX-AID",
+          "GC-FID",
+          "GX-MS",
+          "GC-MS",
+          "YuSSX-DMD",
+          "HPLC-DAD",
+          "SX-MS/MS",
+          "LC-MS/MS",
+          "YuAMS",
+          "HRMS",
+          "mass-spektrometriya",
+          "matritsa ta’siri",
+          "ionlanishning bosilishi",
+          "validatsiya",
+          "SWGDRUG",
+          "A toifa",
+          "B toifa",
+          "C toifa",
+          "sud-kimyo",
+          "sud-toksikologiya"
+        ],
+        "ru": [
+          "скрининг",
+          "подтверждающий анализ",
+          "предварительный результат",
+          "идентификация",
+          "количественное определение",
+          "цветной тест",
+          "капельный тест",
+          "иммуноанализ",
+          "перекрёстная реактивность",
+          "ложноположительный результат",
+          "ТСХ",
+          "ВЭТСХ",
+          "ГХ-ПИД",
+          "GC-FID",
+          "ГХ-МС",
+          "GC-MS",
+          "ВЭЖХ-ДМД",
+          "HPLC-DAD",
+          "ЖХ-МС/МС",
+          "LC-MS/MS",
+          "МСВР",
+          "HRMS",
+          "масс-спектрометрия",
+          "матричный эффект",
+          "подавление ионизации",
+          "валидация",
+          "SWGDRUG",
+          "категория A",
+          "категория B",
+          "категория C",
+          "судебная химия",
+          "судебная токсикология"
+        ],
+        "en": [
+          "screening",
+          "confirmatory analysis",
+          "confirmation",
+          "presumptive test",
+          "identification",
+          "quantitation",
+          "colour test",
+          "color test",
+          "spot test",
+          "immunoassay",
+          "cross-reactivity",
+          "false positive",
+          "TLC",
+          "HPTLC",
+          "GC-FID",
+          "GC-MS",
+          "HPLC-DAD",
+          "LC-MS/MS",
+          "HRMS",
+          "high-resolution mass spectrometry",
+          "mass spectrometry",
+          "matrix effect",
+          "ion suppression",
+          "method validation",
+          "SWGDRUG",
+          "Category A",
+          "Category B",
+          "Category C",
+          "ASB 113",
+          "forensic chemistry",
+          "forensic toxicology",
+          "analytical science"
+        ]
+      },
+      "omitted_unverified": [
+        "Limits of detection/quantitation, cut-off concentrations for immunoassays and mass accuracy (ppm) or resolving-power figures: omitted per card policy (method- and laboratory-specific; not verified).",
+        "Content of ANSI/ASB Standard 113 point system (points per technique, minimum total) and of ANSI/ASB 098 ion-ratio/retention-time tolerances: full documents not read in this session; only scope statements cited.",
+        "ANSI/ASB 036 specific validation parameters and acceptance limits: not read in this session; only scope cited.",
+        "Lists of specific cross-reacting compounds for each immunoassay class (saitman2014 tables): not reproduced; only the general finding and the hordenine example (singh1992) are used.",
+        "Specific colour reagents and their expected colours (Marquis, Mandelin, Simon, Scott etc.): not verified for this card; omitted.",
+        "Statements on GC-NPD selectivity and FID response mechanism beyond general principles: no dedicated source read in this session; described only at textbook-principle level without numbers.",
+        "UNODC recommended methods manuals and EU/other national drug-analysis guidelines: edition/year not verified in this session; not cited.",
+        "Claims about relative costs, throughput or market prevalence of individual instruments: not verified; only qualitative statements supported by cited reviews."
+      ],
+      "reference_keys": [
+        "saitman2014",
+        "swgdrug2024",
+        "asb113_2023",
+        "philp2018",
+        "drummer2007",
+        "singh1992",
+        "dezeeuw1997",
+        "tiscione2011",
+        "maurer2004",
+        "maurer2010",
+        "remane2016",
+        "matuszewski2003",
+        "ojanpera2012",
+        "asb098_2023",
+        "peters2007",
+        "asb036_2019",
+        "flanagan1988"
+      ]
     }
   ],
   "references": [
@@ -1784,8 +2770,8 @@
       "pmid": null,
       "url": "https://swgdrug.org/approved.htm",
       "note": "Version 8.2 dated 2024-06-27; PDF 'SWGDRUG Recommendations Version 8.2 Final for posting.pdf' linked from the official Approved Recommendations page. Scope: seized drugs (not biological specimens).",
-      "used_for": "Part IIIB Table 1: Thin Layer Chromatography listed in Category B (selectivity through chemical and physical characteristics, without structural information); Immunoassay and Color Tests in Category C; IIIB.3.1/IIIB.3.2 minimum requirements of an analytical scheme (with a Category A technique at least one further technique; without Category A at least three techniques, two of them Category B exploiting different properties); IIIB.2.5 limitations documented and reported.",
-      "verified_via": "Official site swgdrug.org (approved.htm): PDF downloaded and text of Part IIIB read",
+      "used_for": "Part IIIB Table 1: Thin Layer Chromatography listed in Category B (selectivity through chemical and physical characteristics, without structural information); Immunoassay and Color Tests in Category C; IIIB.3.1/IIIB.3.2 minimum requirements of an analytical scheme (with a Category A technique at least one further technique; without Category A at least three techniques, two of them Category B exploiting different properties); IIIB.2.5 limitations documented and reported. Added for guideline.chem.method_comparison: full Table 1 - Category A: IR, MS, NMR, Raman, X-ray diffractometry; Category B: CE, GC, ion mobility spectrometry, LC, microcrystalline tests, SFC, TLC, UV/Vis with wavelength range, macroscopic/microscopic examination (cannabis only); Category C: colour tests, fluorescence spectroscopy, immunoassay, melting point, pharmaceutical identifiers. IIIB.3.2.1 two Category B techniques exploiting different properties (e.g., GC and LC); IIIB.3.3.4 negative or inconclusive results do not contribute to identification; IIIB.3.4 a hyphenated technique (e.g., GC-MS, LC-UV/Vis) may be considered two techniques if positive-result criteria are fulfilled for both.",
+      "verified_via": "Official site swgdrug.org (approved.htm): PDF downloaded and text of Part IIIB read; Table 1 and IIIB.3.1-IIIB.3.4 re-read from the same official PDF",
       "verified_on": "2026-10-08"
     },
     {
@@ -2121,6 +3107,563 @@
       "pmid": "36235143",
       "used_for": "TLC and HPTLC (hyphenated or not) in screening of botanicals, including tracing psychoactive plants under forensic surveillance.",
       "verified_via": "PubMed MCP get_article_metadata; NCBI E-utilities esummary/efetch",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "pelissier2003",
+      "type": "journal_article",
+      "authors": [
+        "Pélissier-Alicot AL",
+        "Gaulier JM",
+        "Champsaur P",
+        "Marquet P"
+      ],
+      "title": "Mechanisms underlying postmortem redistribution of drugs: a review",
+      "journal": "Journal of Analytical Toxicology",
+      "year": 2003,
+      "volume": "27",
+      "issue": "8",
+      "pages": "533-544",
+      "doi": "10.1093/jat/27.8.533",
+      "pmid": "14670131",
+      "used_for": "Definition of postmortem redistribution (site- and time-dependent variation); release from reservoirs (GI tract, liver, lungs, myocardium); later autolysis/putrefaction; basic lipophilic drugs with large distribution volume particularly susceptible, but not the only ones; persistence of metabolism after death; sampling from different sites.",
+      "verified_via": "PubMed MCP lookup_article_by_citation + get_article_metadata",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "yarema2005",
+      "type": "journal_article",
+      "authors": [
+        "Yarema MC",
+        "Becker CE"
+      ],
+      "title": "Key concepts in postmortem drug redistribution",
+      "journal": "Clinical Toxicology (Philadelphia)",
+      "year": 2005,
+      "volume": "43",
+      "issue": "4",
+      "pages": "235-241",
+      "doi": "10.1081/clt-58950",
+      "pmid": "16035199",
+      "used_for": "Redistribution from lungs, liver, myocardium; volume of distribution, lipophilicity and pKa as factors; ideal site a ligated or clamped femoral vein; correlation with antemortem/clinical information.",
+      "verified_via": "PubMed MCP get_article_metadata (no DOI in PubMed record); DOI from Crossref API works query (title, journal, volume, pages matched)",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "pounder1990",
+      "type": "journal_article",
+      "authors": [
+        "Pounder DJ",
+        "Jones GR"
+      ],
+      "title": "Post-mortem drug redistribution--a toxicological nightmare",
+      "journal": "Forensic Science International",
+      "year": 1990,
+      "volume": "45",
+      "issue": "3",
+      "pages": "253-263",
+      "doi": "10.1016/0379-0738(90)90182-x",
+      "pmid": "2361648",
+      "used_for": "Diffusion from solid organs into blood; highest levels in central vessels, lowest in peripheral (subclavian, femoral) veins; reference value of databases undermined when blood sampling site is unknown.",
+      "verified_via": "PubMed MCP lookup_article_by_citation + get_article_metadata",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "prouty1990",
+      "type": "journal_article",
+      "authors": [
+        "Prouty RW",
+        "Anderson WH"
+      ],
+      "title": "The forensic science implications of site and temporal influences on postmortem blood-drug concentrations",
+      "journal": "Journal of Forensic Sciences",
+      "year": 1990,
+      "volume": "35",
+      "issue": "2",
+      "pages": "243-270",
+      "doi": "10.1520/jfs12828j",
+      "pmid": "2329329",
+      "used_for": "Site and time dependence of postmortem blood-drug concentrations; heart blood generally higher than peripheral; peripheral blood and solid tissues often needed before definitive interpretation.",
+      "verified_via": "PubMed MCP get_article_metadata (no DOI in PubMed record); DOI from Crossref API works query (title, journal, volume, pages matched)",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "pounder1996",
+      "type": "journal_article",
+      "authors": [
+        "Pounder DJ",
+        "Fuke C",
+        "Cox DE",
+        "Smith D",
+        "Kuroda N"
+      ],
+      "title": "Postmortem diffusion of drugs from gastric residue: an experimental study",
+      "journal": "American Journal of Forensic Medicine and Pathology",
+      "year": 1996,
+      "volume": "17",
+      "issue": "1",
+      "pages": "1-7",
+      "doi": "10.1097/00000433-199603000-00001",
+      "pmid": "8838463",
+      "used_for": "Postmortem diffusion from gastric residue into adjacent tissues (left lung base, left liver lobe, spleen, pericardial fluid) and torso blood; recommendation: peripheral blood, limb muscle, liver deep in right lobe, lung apex.",
+      "verified_via": "PubMed MCP lookup_article_by_citation + get_article_metadata",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "skopp2010",
+      "type": "journal_article",
+      "authors": [
+        "Skopp G"
+      ],
+      "title": "Postmortem toxicology",
+      "journal": "Forensic Science, Medicine, and Pathology",
+      "year": 2010,
+      "volume": "6",
+      "issue": "4",
+      "pages": "314-325",
+      "doi": "10.1007/s12024-010-9150-4",
+      "pmid": "20204545",
+      "used_for": "Pre-terminal pharmacokinetic changes, resuscitation/ICU treatment, illness and tolerance; postmortem formation and degradation especially in putrefied bodies; specimen selection by case history; quality assurance; interpretation limited by inadequate case information.",
+      "verified_via": "PubMed MCP lookup_article_by_citation + get_article_metadata",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "skopp2004",
+      "type": "journal_article",
+      "authors": [
+        "Skopp G"
+      ],
+      "title": "Preanalytic aspects in postmortem toxicology",
+      "journal": "Forensic Science International",
+      "year": 2004,
+      "volume": "142",
+      "issue": "2-3",
+      "pages": "75-100",
+      "doi": "10.1016/j.forsciint.2004.02.012",
+      "pmid": "15172073",
+      "used_for": "Preanalytic phase and specimen quality; routine and alternative specimens; autolysis/putrefaction; degradation/formation; ethanol diffusion and formation; formalin fixation and embalming effects; no harmonized sampling protocol; preservation pros/cons; storage stability.",
+      "verified_via": "PubMed MCP lookup_article_by_citation + get_article_metadata",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "drummer2004",
+      "type": "journal_article",
+      "authors": [
+        "Drummer OH"
+      ],
+      "title": "Postmortem toxicology of drugs of abuse",
+      "journal": "Forensic Science International",
+      "year": 2004,
+      "volume": "142",
+      "issue": "2-3",
+      "pages": "101-113",
+      "doi": "10.1016/j.forsciint.2004.02.013",
+      "pmid": "15172074",
+      "used_for": "Instability of heroin, morphine glucuronides, cocaine and benzodiazepines postmortem; redistribution for drugs with higher tissue than blood concentration (designer amphetamines, methadone, potent opioids); tolerance; no concentration interpreted in isolation.",
+      "verified_via": "PubMed MCP lookup_article_by_citation + get_article_metadata",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "drummer2007",
+      "type": "journal_article",
+      "authors": [
+        "Drummer OH"
+      ],
+      "title": "Requirements for bioanalytical procedures in postmortem toxicology",
+      "journal": "Analytical and Bioanalytical Chemistry",
+      "year": 2007,
+      "volume": "388",
+      "issue": "7",
+      "pages": "1495-1503",
+      "doi": "10.1007/s00216-007-1238-7",
+      "pmid": "17377776",
+      "used_for": "Methods validated for the specific postmortem specimen; standardized collection; peripheral blood plus at least one other specimen; urine and vitreous complement blood; liver and gastric contents in some cases; immunoassay vs chromatographic general-unknown screening (GC-NPD/MS, TOF-MS, LC-MS(MS)); second chromatographic method (HPLC-DAD or LC-MS(MS)); confirmation by GC-MS(MS)/LC-MS(MS); background signal suppression in LC-MS.",
+      "verified_via": "PubMed MCP lookup_article_by_citation + get_article_metadata",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "ferner2008",
+      "type": "journal_article",
+      "authors": [
+        "Ferner RE"
+      ],
+      "title": "Post-mortem clinical pharmacology",
+      "journal": "British Journal of Clinical Pharmacology",
+      "year": 2008,
+      "volume": "66",
+      "issue": "4",
+      "pages": "430-443",
+      "doi": "10.1111/j.1365-2125.2008.03231.x",
+      "pmid": "18637886",
+      "used_for": "Postmortem changes invalidate clinical pharmacokinetic assumptions; qualitative tests may show substances not present in life or miss causative ones; site/time variation; compilations of 'lethal concentrations' misleading.",
+      "verified_via": "PubMed MCP lookup_article_by_citation + get_article_metadata",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "kennedy2010",
+      "type": "journal_article",
+      "authors": [
+        "Kennedy MC"
+      ],
+      "title": "Post-mortem drug concentrations",
+      "journal": "Internal Medicine Journal",
+      "year": 2010,
+      "volume": "40",
+      "issue": "3",
+      "pages": "183-187",
+      "doi": "10.1111/j.1445-5994.2009.02111.x",
+      "pmid": "19849743",
+      "note": "Epub 2009-10-22; print 2010.",
+      "used_for": "Concentrations may rise, fall or stay unchanged after death; GHB and alcohol may be synthesized in the body after death; tables of therapeutic/toxic/lethal concentrations misleading; integration with antemortem history.",
+      "verified_via": "PubMed MCP lookup_article_by_citation + get_article_metadata",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "moriya2004",
+      "type": "journal_article",
+      "authors": [
+        "Moriya F",
+        "Hashimoto Y"
+      ],
+      "title": "Endogenous gamma-hydroxybutyric acid levels in postmortem blood",
+      "journal": "Legal Medicine (Tokyo)",
+      "year": 2004,
+      "volume": "6",
+      "issue": "1",
+      "pages": "47-51",
+      "doi": "10.1016/j.legalmed.2003.09.004",
+      "pmid": "15177073",
+      "used_for": "Endogenous GHB in postmortem blood of non-users; association with postmortem interval; production mainly between death and autopsy rather than during refrigerated storage.",
+      "verified_via": "PubMed MCP lookup_article_by_citation + get_article_metadata",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "mcallister2008",
+      "type": "journal_article",
+      "authors": [
+        "McAllister JL",
+        "Roby RJ",
+        "Levine B",
+        "Purser D"
+      ],
+      "title": "Stability of cyanide in cadavers and in postmortem stored tissue specimens: a review",
+      "journal": "Journal of Analytical Toxicology",
+      "year": 2008,
+      "volume": "32",
+      "issue": "8",
+      "pages": "612-620",
+      "doi": "10.1093/jat/32.8.612",
+      "pmid": "19007511",
+      "used_for": "Cyanide unstable in cadavers and stored specimens; change depends on initial concentration, time in cadaver, storage time, preservation (e.g., sodium fluoride) and storage conditions (temperature).",
+      "verified_via": "PubMed MCP lookup_article_by_citation + get_article_metadata",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "dinis2010",
+      "type": "journal_article",
+      "authors": [
+        "Dinis-Oliveira RJ",
+        "Carvalho F",
+        "Duarte JA",
+        "Remião F",
+        "Marques A",
+        "Santos A",
+        "Magalhães T"
+      ],
+      "title": "Collection of biological samples in forensic toxicology",
+      "journal": "Toxicology Mechanisms and Methods",
+      "year": 2010,
+      "volume": "20",
+      "issue": "7",
+      "pages": "363-414",
+      "doi": "10.3109/15376516.2010.497976",
+      "pmid": "20615091",
+      "used_for": "Specimen selection and collection antemortem and postmortem; autolysis/putrefaction; storage stability and preservation advantages/limitations; need for harmonized protocols; alternative specimens for route and timing of exposure; bias in interpretation.",
+      "verified_via": "PubMed MCP lookup_article_by_citation + get_article_metadata",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "flanagan2005",
+      "type": "journal_article",
+      "authors": [
+        "Flanagan RJ",
+        "Connally G",
+        "Evans JM"
+      ],
+      "title": "Analytical toxicology: guidelines for sample collection postmortem",
+      "journal": "Toxicological Reviews",
+      "year": 2005,
+      "volume": "24",
+      "issue": "1",
+      "pages": "63-71",
+      "doi": "10.2165/00139709-200524010-00005",
+      "pmid": "16042505",
+      "used_for": "Collection, labelling, transport and storage; blood from two distinct peripheral sites (preferably femoral veins) avoiding central vessels; urine, vitreous (each eye separately), stomach contents, liver; sodium fluoride preservative to a portion of blood and to urine; headspace in tubes to be frozen; cross-contamination precautions (volatiles); seek residual antemortem hospital samples; hair/nail for chronic exposure; case history and chain of custody.",
+      "verified_via": "PubMed MCP lookup_article_by_citation + get_article_metadata",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "peters2007stab",
+      "type": "journal_article",
+      "authors": [
+        "Peters FT"
+      ],
+      "title": "Stability of analytes in biosamples - an important issue in clinical and forensic toxicology?",
+      "journal": "Analytical and Bioanalytical Chemistry",
+      "year": 2007,
+      "volume": "388",
+      "issue": "7",
+      "pages": "1505-1519",
+      "doi": "10.1007/s00216-007-1267-2",
+      "pmid": "17429615",
+      "used_for": "Most drugs stable under usual laboratory conditions; instability mainly for ester moieties, sulfur atoms, easily oxidized/reduced structures; store at least refrigerated, preferably frozen; results from samples kept long at room temperature interpreted with great care.",
+      "verified_via": "PubMed MCP lookup_article_by_citation + get_article_metadata",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "kintz2017",
+      "type": "journal_article",
+      "authors": [
+        "Kintz P"
+      ],
+      "title": "Hair analysis in forensic toxicology: an updated review with a special focus on pitfalls",
+      "journal": "Current Pharmaceutical Design",
+      "year": 2017,
+      "volume": "23",
+      "issue": "36",
+      "pages": "5480-5486",
+      "doi": "10.2174/1381612823666170929155628",
+      "pmid": "28969544",
+      "used_for": "Hair: non-invasive collection, long retrospective window depending on hair length, segmental history; collection, preparation, analysis; pitfalls including external contamination.",
+      "verified_via": "PubMed MCP lookup_article_by_citation + get_article_metadata",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "pigaiani2020",
+      "type": "journal_article",
+      "authors": [
+        "Pigaiani N",
+        "Bertaso A",
+        "De Palo EF",
+        "Bortolotti F",
+        "Tagliaro F"
+      ],
+      "title": "Vitreous humor endogenous compounds analysis for post-mortem forensic investigation",
+      "journal": "Forensic Science International",
+      "year": 2020,
+      "volume": "310",
+      "pages": "110235",
+      "doi": "10.1016/j.forsciint.2020.110235",
+      "pmid": "32169668",
+      "note": "Article number 110235 (no page range).",
+      "used_for": "Vitreous humor as a relatively isolated compartment, protected from bacterial contamination, decomposition and autolysis; established relevance in toxicology; endogenous compounds and postmortem interval.",
+      "verified_via": "PubMed MCP search_articles + get_article_metadata",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "saitman2014",
+      "type": "journal_article",
+      "authors": [
+        "Saitman A",
+        "Park HD",
+        "Fitzgerald RL"
+      ],
+      "title": "False-positive interferences of common urine drug screen immunoassays: a review",
+      "journal": "Journal of Analytical Toxicology",
+      "year": 2014,
+      "volume": "38",
+      "issue": "7",
+      "pages": "387-396",
+      "doi": "10.1093/jat/bku075",
+      "pmid": "24986836",
+      "used_for": "Many cross-reactivities with urine drug screen immunoassays (amphetamines, opiates, benzodiazepines, cannabinoids, TCAs, PCP, LSD, barbiturates); immunoassay positives presumptive until confirmed by a second independent chemical technique.",
+      "verified_via": "PubMed MCP lookup_article_by_citation + get_article_metadata",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "philp2018",
+      "type": "journal_article",
+      "authors": [
+        "Philp M",
+        "Fu S"
+      ],
+      "title": "A review of chemical 'spot' tests: a presumptive illicit drug identification technique",
+      "journal": "Drug Testing and Analysis",
+      "year": 2018,
+      "volume": "10",
+      "issue": "1",
+      "pages": "95-108",
+      "doi": "10.1002/dta.2300",
+      "pmid": "28915346",
+      "note": "Epub 2017-11-10; print 2018.",
+      "used_for": "Colour (spot) tests: presumptive, simple, cheap, rapid; reaction chemistry often not investigated/unknown; challenges with new psychoactive substances, selectivity, sensitivity and safety.",
+      "verified_via": "PubMed MCP lookup_article_by_citation + get_article_metadata",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "peters2007",
+      "type": "journal_article",
+      "authors": [
+        "Peters FT",
+        "Drummer OH",
+        "Musshoff F"
+      ],
+      "title": "Validation of new methods",
+      "journal": "Forensic Science International",
+      "year": 2007,
+      "volume": "165",
+      "issue": "2-3",
+      "pages": "216-224",
+      "doi": "10.1016/j.forsciint.2006.05.021",
+      "pmid": "16781833",
+      "note": "Epub 2006-06-16; print 2007.",
+      "used_for": "Reliable analytical data prerequisite for interpretation; careful method development and thorough validation; relevance for quality management and accreditation.",
+      "verified_via": "PubMed MCP lookup_article_by_citation + get_article_metadata",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "matuszewski2003",
+      "type": "journal_article",
+      "authors": [
+        "Matuszewski BK",
+        "Constanzer ML",
+        "Chavez-Eng CM"
+      ],
+      "title": "Strategies for the assessment of matrix effect in quantitative bioanalytical methods based on HPLC-MS/MS",
+      "journal": "Analytical Chemistry",
+      "year": 2003,
+      "volume": "75",
+      "issue": "13",
+      "pages": "3019-3030",
+      "doi": "10.1021/ac020361s",
+      "pmid": "12964746",
+      "used_for": "HPLC-MS/MS does not guarantee selectivity: ion suppression/enhancement by matrix and metabolite interferences; assessment of absolute vs relative matrix effect and true recovery; effect depends on ionization interface.",
+      "verified_via": "PubMed MCP lookup_article_by_citation + get_article_metadata",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "ojanpera2012",
+      "type": "journal_article",
+      "authors": [
+        "Ojanperä I",
+        "Kolmonen M",
+        "Pelander A"
+      ],
+      "title": "Current use of high-resolution mass spectrometry in drug screening relevant to clinical and forensic toxicology and doping control",
+      "journal": "Analytical and Bioanalytical Chemistry",
+      "year": 2012,
+      "volume": "403",
+      "issue": "5",
+      "pages": "1203-1220",
+      "doi": "10.1007/s00216-012-5726-z",
+      "pmid": "22302167",
+      "used_for": "Shift from GC-MS to LC-MS; HRMS (TOF, Orbitrap) accurate mass and isotopic pattern to derive elemental composition; screening strategies; high resolution important in complex biological samples.",
+      "verified_via": "PubMed MCP lookup_article_by_citation + get_article_metadata",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "remane2016",
+      "type": "journal_article",
+      "authors": [
+        "Remane D",
+        "Wissenbach DK",
+        "Peters FT"
+      ],
+      "title": "Recent advances of liquid chromatography-(tandem) mass spectrometry in clinical and forensic toxicology - an update",
+      "journal": "Clinical Biochemistry",
+      "year": 2016,
+      "volume": "49",
+      "issue": "13-14",
+      "pages": "1051-1071",
+      "doi": "10.1016/j.clinbiochem.2016.07.010",
+      "pmid": "27452180",
+      "used_for": "LC-MS(/MS) well established especially for quantitation; multi-target screening; new psychoactive substances; HRMS and data-independent acquisition for general-unknown screening.",
+      "verified_via": "PubMed MCP lookup_article_by_citation + get_article_metadata",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "asb_bpr156_2023",
+      "type": "standard",
+      "authors": [
+        "AAFS Standards Board (ASB), Toxicology Consensus Body"
+      ],
+      "title": "ANSI/ASB Best Practice Recommendation 156: Best Practices for Specimen Collection and Preservation for Forensic Toxicology",
+      "publisher": "AAFS Standards Board (American Academy of Forensic Sciences)",
+      "year": 2023,
+      "doi": null,
+      "pmid": null,
+      "url": "https://www.aafs.org/asb-standard/best-practices-specimen-collection-and-preservation-forensic-toxicology",
+      "note": "First Edition, 2023; status 'Published' on the official ASB page. Only the scope statement on the official page was read; normative content not reproduced.",
+      "used_for": "Existence and scope: guidelines on collection of forensic toxicology specimens, their amounts, preservatives and storage conditions for postmortem, human performance and other forensic testing; not for breath alcohol.",
+      "verified_via": "Official site aafs.org (ASB standard page: number, title, edition and scope read)",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "asb_bpr037_2019",
+      "type": "standard",
+      "authors": [
+        "AAFS Standards Board (ASB), Toxicology Consensus Body"
+      ],
+      "title": "ANSI/ASB Best Practice Recommendation 037: Guidelines for Opinions and Testimony in Forensic Toxicology",
+      "publisher": "AAFS Standards Board (American Academy of Forensic Sciences)",
+      "year": 2019,
+      "doi": null,
+      "pmid": null,
+      "url": "https://www.aafs.org/asb-standard/guidelines-opinions-and-testimony-forensic-toxicology",
+      "note": "First Edition, 2019; status 'Published' on the official ASB page. Only the scope statement on the official page was read; normative content not reproduced.",
+      "used_for": "Existence and scope: best-practice guidelines for opinions and testimony in postmortem, human performance and other forensic toxicology subdisciplines.",
+      "verified_via": "Official site aafs.org (ASB standard page: number, title, edition and scope read)",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "asb036_2019",
+      "type": "standard",
+      "authors": [
+        "AAFS Standards Board (ASB), Toxicology Consensus Body"
+      ],
+      "title": "ANSI/ASB Standard 036: Standard Practices for Method Validation in Forensic Toxicology",
+      "publisher": "AAFS Standards Board (American Academy of Forensic Sciences)",
+      "year": 2019,
+      "doi": null,
+      "pmid": null,
+      "url": "https://www.aafs.org/asb-standard/standard-practices-method-validation-forensic-toxicology",
+      "note": "First Edition, 2019; status 'Published' on the official ASB page. Only the scope statement on the official page was read; normative content not reproduced.",
+      "used_for": "Existence and scope: minimum practices for validating analytical methods in forensic toxicology; purpose to demonstrate the method is fit for its intended use; not for breath alcohol.",
+      "verified_via": "Official site aafs.org (ASB standard page: number, title, edition and scope read)",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "asb098_2023",
+      "type": "standard",
+      "authors": [
+        "AAFS Standards Board (ASB), Toxicology Consensus Body"
+      ],
+      "title": "ANSI/ASB Standard 098: Standard for Mass Spectral Analysis in Forensic Toxicology",
+      "publisher": "AAFS Standards Board (American Academy of Forensic Sciences)",
+      "year": 2023,
+      "doi": null,
+      "pmid": null,
+      "url": "https://www.aafs.org/asb-standard/standard-mass-spectral-analysis-forensic-toxicology",
+      "note": "First Edition, 2023; status 'Published' on the official ASB page. Only the scope statement on the official page was read; normative content not reproduced.",
+      "used_for": "Existence and scope: acceptance criteria for mass spectral analyses of small molecules (single/multi-stage, low/high resolution; full scan, SIM, multi-stage); explicitly not analyte identification criteria.",
+      "verified_via": "Official site aafs.org (ASB standard page: number, title, edition and scope read)",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "key": "asb113_2023",
+      "type": "standard",
+      "authors": [
+        "AAFS Standards Board (ASB), Toxicology Consensus Body"
+      ],
+      "title": "ANSI/ASB Standard 113: Standard for Identification Criteria in Forensic Toxicology",
+      "publisher": "AAFS Standards Board (American Academy of Forensic Sciences)",
+      "year": 2023,
+      "doi": null,
+      "pmid": null,
+      "url": "https://www.aafs.org/asb-standard/standard-identification-criteria-forensic-toxicology",
+      "note": "First Edition, 2023; status 'Published' on the official ASB page. Only the scope statement on the official page was read; normative content not reproduced.",
+      "used_for": "Existence and scope: minimum point-based criteria for analyte identification in forensic toxicology, letting laboratories evaluate whether their combination of techniques suffices; excludes alcohols/routine volatiles, carbon monoxide, cyanide, metals.",
+      "verified_via": "Official site aafs.org (ASB standard page: number, title, edition and scope read)",
       "verified_on": "2026-10-08"
     }
   ]
