@@ -38,10 +38,9 @@ void main() {
     'tech_hplc',
     'tech_lcMsMs',
     'tech_headspaceGc',
-    // Admin panel: platforma nomlari va o‘zbekchada ham «Admin panel».
+    // Admin panel: platforma nomlari va o‘zbekchada ham «Admin» belgisi.
     'adminAndroid',
     'adminIos',
-    'adminTitle',
     'adminAdminBadge',
     // PHASE 6: statistik belgilar va xalqaro qisqartmalar; ICH hujjat nomi
     // rasmiy inglizcha sarlavha (tarjima qilinmaydi).
@@ -62,6 +61,8 @@ void main() {
     'tierProfessionalPro',
     // Faqat o‘rin belgilari (narx va davr store/lokalizatsiyadan).
     'offerPriceLine',
+    // Fayl hajmi: «KB» — o‘zbekchada ham xalqaro birlik belgisi (ru: «КБ»).
+    'fileSizeKb',
   };
 
   Set<String> placeholders(String s) =>

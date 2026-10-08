@@ -1,7 +1,7 @@
 {
   "@@locale": "ru",
   "appTitle": "FORENSIC EXPERT",
-  "appTagline": "Evidence · Science · Precision",
+  "appTagline": "Доказательность · Наука · Точность",
   "languageNameNative": "Русский",
   "chooseLanguageTitle": "Выберите язык",
   "languageOptionSemantics": "{language}. {state}",
@@ -1619,5 +1619,8 @@
   "aiQuotaUsed": "Ваш лимит вопросов к ИИ пока исчерпан.",
   "aiOfflineSourcesTitle": "Источники из офлайн-базы",
   "aiOfflineSourcesCount": "Использованные источники ({count})",
-  "aiRetry": "Повторить"
+  "aiRetry": "Повторить",
+  "relationBasisSourceExcerpt": "фрагмент источника",
+  "metaHandle": "Идентификатор Handle",
+  "fileSizeKb": "{size} КБ"
 }

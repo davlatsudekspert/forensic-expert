@@ -5445,4 +5445,15 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get aiRetry => 'Try again';
+
+  @override
+  String get relationBasisSourceExcerpt => 'source excerpt';
+
+  @override
+  String get metaHandle => 'Handle';
+
+  @override
+  String fileSizeKb(String size) {
+    return '$size KB';
+  }
 }

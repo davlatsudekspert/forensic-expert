@@ -7067,5 +7067,22 @@
   "aiRetry": "Try again",
   "@aiRetry": {
     "description": "Action."
+  },
+  "relationBasisSourceExcerpt": "source excerpt",
+  "@relationBasisSourceExcerpt": {
+    "description": "Basis of a metabolism co-mention link (inserted into relationBasis)."
+  },
+  "metaHandle": "Handle",
+  "@metaHandle": {
+    "description": "Metadata row label: Handle System persistent identifier (hdl.handle.net)."
+  },
+  "fileSizeKb": "{size} KB",
+  "@fileSizeKb": {
+    "description": "Attached file size in kilobytes.",
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
   }
 }

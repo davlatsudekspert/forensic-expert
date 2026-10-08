@@ -13,7 +13,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get appTitle => 'FORENSIC EXPERT';
 
   @override
-  String get appTagline => 'Evidence · Science · Precision';
+  String get appTagline => 'Доказательность · Наука · Точность';
 
   @override
   String get languageNameNative => 'Русский';
@@ -5456,4 +5456,15 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get aiRetry => 'Повторить';
+
+  @override
+  String get relationBasisSourceExcerpt => 'фрагмент источника';
+
+  @override
+  String get metaHandle => 'Идентификатор Handle';
+
+  @override
+  String fileSizeKb(String size) {
+    return '$size КБ';
+  }
 }

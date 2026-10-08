@@ -13,7 +13,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get appTitle => 'FORENSIC EXPERT';
 
   @override
-  String get appTagline => 'Evidence · Science · Precision';
+  String get appTagline => 'Dalil · Fan · Aniqlik';
 
   @override
   String get languageNameNative => 'O‘zbekcha';
@@ -480,7 +480,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get detailMethods => 'Analitik usullar';
 
   @override
-  String get detailConcentrations => 'Reference konsentratsiyalar';
+  String get detailConcentrations => 'Referens konsentratsiyalar';
 
   @override
   String get detailInterpretation => 'Talqin';
@@ -883,7 +883,7 @@ class AppLocalizationsUz extends AppLocalizations {
       'Manba litsenziyasi qayta foydalanishga ruxsat bermagani uchun iqtibos ko‘rsatilmaydi. Manbani ochib o‘qing.';
 
   @override
-  String get detailProvenance => 'Kelib chiqishi (provenance)';
+  String get detailProvenance => 'Ma’lumotlar kelib chiqishi';
 
   @override
   String detailEvidenceLevel(String level) {
@@ -1453,7 +1453,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get calcSolutionLimitationRecipe =>
-      'Bu reagent retsepti emas: modda tanlovi, tartib, saqlash va barqarorlik faqat tasdiqlangan manba yoki SOP’dan.';
+      'Bu reaktiv retsepti emas: modda tanlovi, tartib, saqlash va barqarorlik faqat tasdiqlangan manba yoki SOP’dan.';
 
   @override
   String get calcSolutionLimitationVolume =>
@@ -1584,8 +1584,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get learnExamRetry => 'Qayta urinish';
 
   @override
-  String get learnSimulatedCase =>
-      'SIMULYATSIYA QILINGAN HOLAT — real ish emas';
+  String get learnSimulatedCase => 'MODELLASHTIRILGAN HOLAT — haqiqiy ish emas';
 
   @override
   String get moduleHistology => 'Sud gistologiyasi';
@@ -1703,7 +1702,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get researchNote =>
-      'Faqat metadata va havolalar — to‘liq matn ko‘chirilmaydi. Dissertatsiya, tezis va konferensiya materiallari taqrizdan o‘tgan maqola bilan teng ko‘rsatilmaydi.';
+      'Faqat metama’lumotlar va havolalar — to‘liq matn ko‘chirilmaydi. Dissertatsiya, tezis va konferensiya materiallari taqrizdan o‘tgan maqola bilan teng ko‘rsatilmaydi.';
 
   @override
   String get researchAll => 'Barchasi';
@@ -1803,10 +1802,10 @@ class AppLocalizationsUz extends AppLocalizations {
   String get imagesHeading => 'Ilmiy tasvirlar';
 
   @override
-  String get licenseOriginalWork => 'Original ish (FORENSIC EXPERT)';
+  String get licenseOriginalWork => 'Asl asar (FORENSIC EXPERT)';
 
   @override
-  String get licenseFactualDepiction => 'Faktik ma’lumotning original tasviri';
+  String get licenseFactualDepiction => 'Faktik ma’lumotning asl tasviri';
 
   @override
   String get histologyNote =>
@@ -1855,7 +1854,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tech_gcFid => 'GC-FID';
 
   @override
-  String get tech_headspaceGc => 'Headspace GC';
+  String get tech_headspaceGc => 'Bug‘ fazali GC';
 
   @override
   String get tech_gcMs => 'GC-MS';
@@ -2135,7 +2134,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get calcErrorSigma => 'σ > 0 va noldan farqli qiyalik kiriting.';
 
   @override
-  String get researchKindGuideline => 'Qo‘llanma (guideline)';
+  String get researchKindGuideline => 'Uslubiy tavsiyanoma';
 
   @override
   String get researchKindValidationStudy => 'Validatsiya tadqiqoti';
@@ -2698,7 +2697,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tpl_targetSpecimen => 'Nishon va namuna';
 
   @override
-  String get tpl_cutoff => 'Cutoff qiymati';
+  String get tpl_cutoff => 'Chegara qiymati (cut-off)';
 
   @override
   String get tpl_performance => 'Sezgirlik va o‘ziga xoslik';
@@ -2879,7 +2878,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get roleTranslation => 'Tarjima';
 
   @override
-  String get roleEditor => 'Ilmiy muharrir / admin';
+  String get roleEditor => 'Ilmiy muharrir / administrator';
 
   @override
   String get bannerRetracted =>
@@ -3115,7 +3114,7 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String get stdCatalogue => 'Standartlar katalogi (faqat metadata)';
+  String get stdCatalogue => 'Standartlar katalogi (faqat metama’lumotlar)';
 
   @override
   String get stdStatusCurrent => 'Amaldagi';
@@ -3136,7 +3135,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String stdVerifiedFrom(String date) {
-    return 'Metadata $date da nashriyot yoki registrda tekshirilgan';
+    return 'Metama’lumotlar $date da nashriyot yoki registrda tekshirilgan';
   }
 
   @override
@@ -3392,7 +3391,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tierStudentF3 => 'Cheklanmagan qidiruv natijalari';
 
   @override
-  String get tierProF1 => 'Student Pro dagi hammasi';
+  String get tierProF1 => 'Student Pro’dagi barcha imkoniyatlar';
 
   @override
   String get tierProF2 =>
@@ -3486,7 +3485,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get accountTestBackend =>
-      'TEST akkaunt serveri — haqiqiy xat yuborilmaydi, ma’lumot faqat xotirada.';
+      'SINOV akkaunt serveri — haqiqiy xat yuborilmaydi, ma’lumot faqat xotirada.';
 
   @override
   String get accountSignIn => 'Kirish';
@@ -4910,7 +4909,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get fullTextOpenFailed => 'PDF ochilmadi. Aloqani tekshiring.';
 
   @override
-  String get adminTitle => 'Admin panel';
+  String get adminTitle => 'Boshqaruv paneli';
 
   @override
   String get adminProfileHint =>
@@ -4941,7 +4940,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get adminReferrals => 'Takliflar';
 
   @override
-  String get adminProGrants => 'Berilgan Pro';
+  String get adminProGrants => 'Pro berilganlar';
 
   @override
   String get adminRegions => 'Davlatlar (qurilma hududi)';
@@ -5433,4 +5432,15 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get aiRetry => 'Qayta urinish';
+
+  @override
+  String get relationBasisSourceExcerpt => 'manba parchasi';
+
+  @override
+  String get metaHandle => 'Handle identifikatori';
+
+  @override
+  String fileSizeKb(String size) {
+    return '$size KB';
+  }
 }
