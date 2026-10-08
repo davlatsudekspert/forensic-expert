@@ -5231,4 +5231,154 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get calcErrorAmbient =>
       'Muhit harorati −20 dan 35 °C gacha bo‘lishi kerak.';
+
+  @override
+  String get guidelinesTitle => 'Yo‘riqnomalar';
+
+  @override
+  String get guidelinesSubtitle =>
+      'Fanlar bo‘yicha mustaqil ilmiy-amaliy yo‘riqnomalar';
+
+  @override
+  String get guidelinesIntro =>
+      'Har bir yo‘riqnoma ko‘rsatilgan va tekshirilgan adabiyot asosida yozilgan mustaqil ilmiy sintezdir. U rasmiy metodika emas, akkreditatsiyadan o‘tgan laboratoriya tartiblari va mamlakatingiz qonunchiligi o‘rnini bosmaydi. Har bir karta mutaxassis tasdiqlaguncha ko‘rik holatida qoladi.';
+
+  @override
+  String get guidelinesSearchHint => 'Yo‘riqnomalardan qidirish';
+
+  @override
+  String get guidelinesEmptyArea => 'Bu yo‘nalishda hozircha yo‘riqnoma yo‘q.';
+
+  @override
+  String get guidelinesNoResults => 'Natija topilmadi';
+
+  @override
+  String guidelinesCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta yo‘riqnoma',
+      zero: 'Yo‘riqnoma yo‘q',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get guidelineAreaForensicMedicine => 'Sud-tibbiyot';
+
+  @override
+  String get guidelineAreaForensicChemistry => 'Sud-kimyo va toksikologiya';
+
+  @override
+  String get guidelineAreaForensicHistology => 'Sud-gistologiya';
+
+  @override
+  String get guidelineAreaForensicBiology => 'Sud-biologiya va genetika';
+
+  @override
+  String get guidelineAreaMedicalCriminalistics =>
+      'Tibbiy-kriminalistika va antropologiya';
+
+  @override
+  String get guidelineAreaOther => 'Boshqa fanlar';
+
+  @override
+  String get guidelineIndependentNote =>
+      'Quyidagi adabiyotlar asosidagi mustaqil ilmiy sintez. Rasmiy metodika emas; laboratoriyangiz va yurisdiksiyangiz talablarini tekshiring.';
+
+  @override
+  String get guidelineTranslationDraft =>
+      'Bu tarjima qoralama, hali mutaxassis tomonidan tekshirilmagan.';
+
+  @override
+  String guidelineFallbackLanguage(String language) {
+    return 'Hozircha sizning tilingizda yo‘q — asl tilda ($language) ko‘rsatilmoqda.';
+  }
+
+  @override
+  String get guidelineReferences => 'Manbalar';
+
+  @override
+  String guidelineUpdated(String date) {
+    return 'Yangilangan: $date';
+  }
+
+  @override
+  String get guidelineRelatedTools => 'Bog‘liq vositalar';
+
+  @override
+  String get guidelineOpenReference => 'Manbani ochish';
+
+  @override
+  String get languageNameUz => 'o‘zbekcha';
+
+  @override
+  String get languageNameRu => 'ruscha';
+
+  @override
+  String get languageNameEn => 'inglizcha';
+
+  @override
+  String get restrictedCatalogTitle => 'O‘zbekiston amaliyot kodlari (yopiq)';
+
+  @override
+  String get restrictedCatalogNote =>
+      'Faqat administratorlarga ko‘rinadi. Cheklangan manba katalogining metama’lumotlari: to‘liq matn ilovada saqlanmaydi, AI’ga berilmaydi va tarqatilmaydi.';
+
+  @override
+  String get restrictedCatalogImport => 'Katalog faylini import qilish';
+
+  @override
+  String get restrictedCatalogRemove => 'Qurilmadan o‘chirish';
+
+  @override
+  String get restrictedCatalogEmpty =>
+      'Bu qurilmada katalog yo‘q. Yopiq yo‘l bilan olingan faylni import qiling.';
+
+  @override
+  String restrictedCatalogImported(int count) {
+    return 'Katalog import qilindi: $count ta yozuv.';
+  }
+
+  @override
+  String get restrictedCatalogInvalid => 'Bu fayl yaroqli katalog emas.';
+
+  @override
+  String restrictedCatalogRecords(int count) {
+    return '$count ta yozuv';
+  }
+
+  @override
+  String restrictedCatalogPages(String from, String to) {
+    return '$from–$to-betlar';
+  }
+
+  @override
+  String restrictedCatalogPage(String page) {
+    return '$page-bet';
+  }
+
+  @override
+  String restrictedCatalogCodeOriginal(String code) {
+    return 'Manbadagi asl kod: $code';
+  }
+
+  @override
+  String get restrictedCatalogSearchHint =>
+      'Kod, nom yoki atama bo‘yicha qidirish';
+
+  @override
+  String get restrictedCatalogLinkedCards =>
+      'Bog‘langan mustaqil yo‘riqnomalar';
+
+  @override
+  String get restrictedCatalogNormative => 'Bog‘liq rasmiy hujjatlar';
+
+  @override
+  String restrictedCatalogSection(String section) {
+    return '$section-bo‘lim';
+  }
+
+  @override
+  String get restrictedCatalogTitleDraft => 'Sarlavha tarjimasi qoralama';
 }

@@ -20,6 +20,8 @@ import '../features/disciplines/presentation/disciplines_screens.dart';
 import '../features/evidence/presentation/provenance_screens.dart';
 import '../features/evidence/presentation/research_screens.dart';
 import '../features/evidence/presentation/scientific_image.dart';
+import '../features/guidelines/presentation/guidelines_screens.dart';
+import '../features/guidelines/presentation/practice_catalog_screen.dart';
 import '../features/home/presentation/home_screen.dart';
 import '../features/home/presentation/search_screen.dart';
 import '../features/knowledge/presentation/knowledge_detail_screen.dart';
@@ -318,6 +320,22 @@ final routerProvider = Provider<GoRouter>((ref) {
                   GoRoute(
                     path: 'standards',
                     builder: (c, s) => const StandardsScreen(),
+                  ),
+                  GoRoute(
+                    path: 'guidelines',
+                    builder: (c, s) => const GuidelinesScreen(),
+                    routes: [
+                      GoRoute(
+                        path: 'card/:id',
+                        builder: (c, s) => GuidelineDetailScreen(
+                          cardId: s.pathParameters['id']!,
+                        ),
+                      ),
+                      GoRoute(
+                        path: 'practice',
+                        builder: (c, s) => const PracticeCatalogScreen(),
+                      ),
+                    ],
                   ),
                   GoRoute(
                     path: 'conflicts',

@@ -5250,4 +5250,158 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get calcErrorAmbient =>
       'Температура среды должна быть от −20 до 35 °C.';
+
+  @override
+  String get guidelinesTitle => 'Методические руководства';
+
+  @override
+  String get guidelinesSubtitle =>
+      'Независимые научно-практические руководства по дисциплинам';
+
+  @override
+  String get guidelinesIntro =>
+      'Каждое руководство — независимый научный обзор, написанный по указанной проверенной литературе. Это не официальная методика и не заменяет аккредитованные лабораторные процедуры и законодательство вашей страны. Каждая карточка остаётся на проверке, пока её не подтвердит специалист.';
+
+  @override
+  String get guidelinesSearchHint => 'Поиск по руководствам';
+
+  @override
+  String get guidelinesEmptyArea => 'В этом разделе пока нет руководств.';
+
+  @override
+  String get guidelinesNoResults => 'Ничего не найдено';
+
+  @override
+  String guidelinesCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count руководства',
+      many: '$count руководств',
+      few: '$count руководства',
+      one: '$count руководство',
+      zero: 'Нет руководств',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get guidelineAreaForensicMedicine => 'Судебная медицина';
+
+  @override
+  String get guidelineAreaForensicChemistry => 'Судебная химия и токсикология';
+
+  @override
+  String get guidelineAreaForensicHistology => 'Судебная гистология';
+
+  @override
+  String get guidelineAreaForensicBiology => 'Судебная биология и генетика';
+
+  @override
+  String get guidelineAreaMedicalCriminalistics =>
+      'Медицинская криминалистика и антропология';
+
+  @override
+  String get guidelineAreaOther => 'Другие дисциплины';
+
+  @override
+  String get guidelineIndependentNote =>
+      'Независимый научный обзор на основе приведённой литературы. Не является официальной методикой; сверяйтесь с требованиями вашей лаборатории и юрисдикции.';
+
+  @override
+  String get guidelineTranslationDraft =>
+      'Этот перевод — черновик и ещё не проверен специалистом.';
+
+  @override
+  String guidelineFallbackLanguage(String language) {
+    return 'Пока недоступно на вашем языке — показано на языке оригинала ($language).';
+  }
+
+  @override
+  String get guidelineReferences => 'Литература';
+
+  @override
+  String guidelineUpdated(String date) {
+    return 'Обновлено $date';
+  }
+
+  @override
+  String get guidelineRelatedTools => 'Связанные инструменты';
+
+  @override
+  String get guidelineOpenReference => 'Открыть источник';
+
+  @override
+  String get languageNameUz => 'узбекский';
+
+  @override
+  String get languageNameRu => 'русский';
+
+  @override
+  String get languageNameEn => 'английский';
+
+  @override
+  String get restrictedCatalogTitle => 'Коды практик Узбекистана (закрыто)';
+
+  @override
+  String get restrictedCatalogNote =>
+      'Видно только администраторам. Метаданные каталога закрытого источника: полный текст не хранится в приложении, не передаётся ИИ и не подлежит распространению.';
+
+  @override
+  String get restrictedCatalogImport => 'Импортировать файл каталога';
+
+  @override
+  String get restrictedCatalogRemove => 'Удалить с устройства';
+
+  @override
+  String get restrictedCatalogEmpty =>
+      'На устройстве нет каталога. Импортируйте файл, полученный закрытым способом.';
+
+  @override
+  String restrictedCatalogImported(int count) {
+    return 'Каталог импортирован: $count записей.';
+  }
+
+  @override
+  String get restrictedCatalogInvalid =>
+      'Файл не является корректным каталогом.';
+
+  @override
+  String restrictedCatalogRecords(int count) {
+    return '$count записей';
+  }
+
+  @override
+  String restrictedCatalogPages(String from, String to) {
+    return 'с. $from–$to';
+  }
+
+  @override
+  String restrictedCatalogPage(String page) {
+    return 'с. $page';
+  }
+
+  @override
+  String restrictedCatalogCodeOriginal(String code) {
+    return 'Код в источнике: $code';
+  }
+
+  @override
+  String get restrictedCatalogSearchHint =>
+      'Поиск по коду, названию или термину';
+
+  @override
+  String get restrictedCatalogLinkedCards =>
+      'Связанные независимые руководства';
+
+  @override
+  String get restrictedCatalogNormative => 'Связанные официальные документы';
+
+  @override
+  String restrictedCatalogSection(String section) {
+    return 'Раздел $section';
+  }
+
+  @override
+  String get restrictedCatalogTitleDraft => 'Перевод названия — черновик';
 }

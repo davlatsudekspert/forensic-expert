@@ -34,6 +34,10 @@ abstract final class Routes {
   static String jurisdiction(String id) => '/home/jurisdictions/$id';
   static String librarySection(String section) => '/library/section/$section';
   static const libraryStandards = '/library/standards';
+  static const guidelines = '/library/guidelines';
+  static const practiceCatalog = '/library/guidelines/practice';
+  static String guideline(String id) =>
+      '/library/guidelines/card/${Uri.encodeComponent(id)}';
   // Provenance qatlami.
   static const conflicts = '/library/conflicts';
   static String conflict(String id) => '/library/conflicts/$id';

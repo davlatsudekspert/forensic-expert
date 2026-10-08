@@ -9506,6 +9506,240 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Ambient temperature must be between −20 and 35 °C.'**
   String get calcErrorAmbient;
+
+  /// Section title.
+  ///
+  /// In en, this message translates to:
+  /// **'Guidelines'**
+  String get guidelinesTitle;
+
+  /// Hub subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Independent scientific-practical guidance by discipline'**
+  String get guidelinesSubtitle;
+
+  /// Intro banner.
+  ///
+  /// In en, this message translates to:
+  /// **'Each guideline is an independent scientific synthesis written from the cited, verified literature. It is not an official methodology and does not replace accredited laboratory procedures or the law of your country. Every card stays under review until a specialist confirms it.'**
+  String get guidelinesIntro;
+
+  /// Search field.
+  ///
+  /// In en, this message translates to:
+  /// **'Search guidelines'**
+  String get guidelinesSearchHint;
+
+  /// Empty state.
+  ///
+  /// In en, this message translates to:
+  /// **'No guidelines in this area yet.'**
+  String get guidelinesEmptyArea;
+
+  /// Empty search.
+  ///
+  /// In en, this message translates to:
+  /// **'No results found'**
+  String get guidelinesNoResults;
+
+  /// Count.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No guidelines} =1{1 guideline} other{{count} guidelines}}'**
+  String guidelinesCount(int count);
+
+  /// Area.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic medicine'**
+  String get guidelineAreaForensicMedicine;
+
+  /// Area.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic chemistry and toxicology'**
+  String get guidelineAreaForensicChemistry;
+
+  /// Area.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic histology'**
+  String get guidelineAreaForensicHistology;
+
+  /// Area.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic biology and genetics'**
+  String get guidelineAreaForensicBiology;
+
+  /// Area.
+  ///
+  /// In en, this message translates to:
+  /// **'Medical criminalistics and anthropology'**
+  String get guidelineAreaMedicalCriminalistics;
+
+  /// Area.
+  ///
+  /// In en, this message translates to:
+  /// **'Other disciplines'**
+  String get guidelineAreaOther;
+
+  /// Detail banner.
+  ///
+  /// In en, this message translates to:
+  /// **'Independent scientific synthesis based on the references below. Not an official methodology; check the requirements of your laboratory and jurisdiction.'**
+  String get guidelineIndependentNote;
+
+  /// Banner.
+  ///
+  /// In en, this message translates to:
+  /// **'This translation is a draft and has not been reviewed by a specialist yet.'**
+  String get guidelineTranslationDraft;
+
+  /// Banner.
+  ///
+  /// In en, this message translates to:
+  /// **'Not yet available in your language — shown in the original language ({language}).'**
+  String guidelineFallbackLanguage(String language);
+
+  /// Header.
+  ///
+  /// In en, this message translates to:
+  /// **'References'**
+  String get guidelineReferences;
+
+  /// Meta.
+  ///
+  /// In en, this message translates to:
+  /// **'Updated {date}'**
+  String guidelineUpdated(String date);
+
+  /// Header.
+  ///
+  /// In en, this message translates to:
+  /// **'Related tools'**
+  String get guidelineRelatedTools;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Open source'**
+  String get guidelineOpenReference;
+
+  /// Language name.
+  ///
+  /// In en, this message translates to:
+  /// **'Uzbek'**
+  String get languageNameUz;
+
+  /// Language name.
+  ///
+  /// In en, this message translates to:
+  /// **'Russian'**
+  String get languageNameRu;
+
+  /// Language name.
+  ///
+  /// In en, this message translates to:
+  /// **'English'**
+  String get languageNameEn;
+
+  /// Admin section.
+  ///
+  /// In en, this message translates to:
+  /// **'Uzbekistan practice codes (restricted)'**
+  String get restrictedCatalogTitle;
+
+  /// Admin banner.
+  ///
+  /// In en, this message translates to:
+  /// **'Visible to administrators only. Catalogue metadata of a restricted source: the full text is not stored in the app, is not sent to AI and must not be distributed.'**
+  String get restrictedCatalogNote;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Import catalogue file'**
+  String get restrictedCatalogImport;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove from this device'**
+  String get restrictedCatalogRemove;
+
+  /// Empty.
+  ///
+  /// In en, this message translates to:
+  /// **'No catalogue on this device. Import the file you received privately.'**
+  String get restrictedCatalogEmpty;
+
+  /// Snack.
+  ///
+  /// In en, this message translates to:
+  /// **'Catalogue imported: {count} records.'**
+  String restrictedCatalogImported(int count);
+
+  /// Snack.
+  ///
+  /// In en, this message translates to:
+  /// **'This file is not a valid catalogue.'**
+  String get restrictedCatalogInvalid;
+
+  /// Count.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} records'**
+  String restrictedCatalogRecords(int count);
+
+  /// Meta.
+  ///
+  /// In en, this message translates to:
+  /// **'pp. {from}–{to}'**
+  String restrictedCatalogPages(String from, String to);
+
+  /// Meta.
+  ///
+  /// In en, this message translates to:
+  /// **'p. {page}'**
+  String restrictedCatalogPage(String page);
+
+  /// Meta.
+  ///
+  /// In en, this message translates to:
+  /// **'Code as written in the source: {code}'**
+  String restrictedCatalogCodeOriginal(String code);
+
+  /// Search.
+  ///
+  /// In en, this message translates to:
+  /// **'Search by code, title or term'**
+  String get restrictedCatalogSearchHint;
+
+  /// Header.
+  ///
+  /// In en, this message translates to:
+  /// **'Linked independent guidelines'**
+  String get restrictedCatalogLinkedCards;
+
+  /// Header.
+  ///
+  /// In en, this message translates to:
+  /// **'Related official documents'**
+  String get restrictedCatalogNormative;
+
+  /// Label.
+  ///
+  /// In en, this message translates to:
+  /// **'Section {section}'**
+  String restrictedCatalogSection(String section);
+
+  /// Meta.
+  ///
+  /// In en, this message translates to:
+  /// **'Title translation is a draft'**
+  String get restrictedCatalogTitleDraft;
 }
 
 class _AppLocalizationsDelegate

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../app/guidelines.dart';
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
@@ -395,7 +396,15 @@ class LibraryScreen extends ConsumerWidget {
         lib(LibrarySection.glossary),
       ),
     ];
+    final guidelineCount =
+        ref.watch(guidelinesProvider).value?.cards.length ?? 0;
     final docs = <(String, IconData, String, int)>[
+      (
+        'guidelines',
+        Icons.assignment_outlined,
+        l.guidelinesTitle,
+        guidelineCount,
+      ),
       ('standards', Icons.rule_folder_outlined, l.libraryStandards, standards),
       (
         'research',
@@ -440,6 +449,7 @@ class LibraryScreen extends ConsumerWidget {
       'reagents' => Routes.knowledge(KnowledgeKind.reagent.name),
       'rapid' => Routes.knowledge(KnowledgeKind.screeningTest.name),
       'standards' => Routes.libraryStandards,
+      'guidelines' => Routes.guidelines,
       'research' => Routes.research,
       _ => Routes.jurisdictions,
     };

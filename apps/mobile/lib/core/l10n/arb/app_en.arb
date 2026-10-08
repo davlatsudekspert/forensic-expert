@@ -6802,5 +6802,209 @@
   "calcErrorAmbient": "Ambient temperature must be between −20 and 35 °C.",
   "@calcErrorAmbient": {
     "description": "Error."
+  },
+  "guidelinesTitle": "Guidelines",
+  "@guidelinesTitle": {
+    "description": "Section title."
+  },
+  "guidelinesSubtitle": "Independent scientific-practical guidance by discipline",
+  "@guidelinesSubtitle": {
+    "description": "Hub subtitle."
+  },
+  "guidelinesIntro": "Each guideline is an independent scientific synthesis written from the cited, verified literature. It is not an official methodology and does not replace accredited laboratory procedures or the law of your country. Every card stays under review until a specialist confirms it.",
+  "@guidelinesIntro": {
+    "description": "Intro banner."
+  },
+  "guidelinesSearchHint": "Search guidelines",
+  "@guidelinesSearchHint": {
+    "description": "Search field."
+  },
+  "guidelinesEmptyArea": "No guidelines in this area yet.",
+  "@guidelinesEmptyArea": {
+    "description": "Empty state."
+  },
+  "guidelinesNoResults": "No results found",
+  "@guidelinesNoResults": {
+    "description": "Empty search."
+  },
+  "guidelinesCount": "{count, plural, =0{No guidelines} =1{1 guideline} other{{count} guidelines}}",
+  "@guidelinesCount": {
+    "description": "Count.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "guidelineAreaForensicMedicine": "Forensic medicine",
+  "@guidelineAreaForensicMedicine": {
+    "description": "Area."
+  },
+  "guidelineAreaForensicChemistry": "Forensic chemistry and toxicology",
+  "@guidelineAreaForensicChemistry": {
+    "description": "Area."
+  },
+  "guidelineAreaForensicHistology": "Forensic histology",
+  "@guidelineAreaForensicHistology": {
+    "description": "Area."
+  },
+  "guidelineAreaForensicBiology": "Forensic biology and genetics",
+  "@guidelineAreaForensicBiology": {
+    "description": "Area."
+  },
+  "guidelineAreaMedicalCriminalistics": "Medical criminalistics and anthropology",
+  "@guidelineAreaMedicalCriminalistics": {
+    "description": "Area."
+  },
+  "guidelineAreaOther": "Other disciplines",
+  "@guidelineAreaOther": {
+    "description": "Area."
+  },
+  "guidelineIndependentNote": "Independent scientific synthesis based on the references below. Not an official methodology; check the requirements of your laboratory and jurisdiction.",
+  "@guidelineIndependentNote": {
+    "description": "Detail banner."
+  },
+  "guidelineTranslationDraft": "This translation is a draft and has not been reviewed by a specialist yet.",
+  "@guidelineTranslationDraft": {
+    "description": "Banner."
+  },
+  "guidelineFallbackLanguage": "Not yet available in your language — shown in the original language ({language}).",
+  "@guidelineFallbackLanguage": {
+    "description": "Banner.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "guidelineReferences": "References",
+  "@guidelineReferences": {
+    "description": "Header."
+  },
+  "guidelineUpdated": "Updated {date}",
+  "@guidelineUpdated": {
+    "description": "Meta.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "guidelineRelatedTools": "Related tools",
+  "@guidelineRelatedTools": {
+    "description": "Header."
+  },
+  "guidelineOpenReference": "Open source",
+  "@guidelineOpenReference": {
+    "description": "Action."
+  },
+  "languageNameUz": "Uzbek",
+  "@languageNameUz": {
+    "description": "Language name."
+  },
+  "languageNameRu": "Russian",
+  "@languageNameRu": {
+    "description": "Language name."
+  },
+  "languageNameEn": "English",
+  "@languageNameEn": {
+    "description": "Language name."
+  },
+  "restrictedCatalogTitle": "Uzbekistan practice codes (restricted)",
+  "@restrictedCatalogTitle": {
+    "description": "Admin section."
+  },
+  "restrictedCatalogNote": "Visible to administrators only. Catalogue metadata of a restricted source: the full text is not stored in the app, is not sent to AI and must not be distributed.",
+  "@restrictedCatalogNote": {
+    "description": "Admin banner."
+  },
+  "restrictedCatalogImport": "Import catalogue file",
+  "@restrictedCatalogImport": {
+    "description": "Action."
+  },
+  "restrictedCatalogRemove": "Remove from this device",
+  "@restrictedCatalogRemove": {
+    "description": "Action."
+  },
+  "restrictedCatalogEmpty": "No catalogue on this device. Import the file you received privately.",
+  "@restrictedCatalogEmpty": {
+    "description": "Empty."
+  },
+  "restrictedCatalogImported": "Catalogue imported: {count} records.",
+  "@restrictedCatalogImported": {
+    "description": "Snack.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "restrictedCatalogInvalid": "This file is not a valid catalogue.",
+  "@restrictedCatalogInvalid": {
+    "description": "Snack."
+  },
+  "restrictedCatalogRecords": "{count} records",
+  "@restrictedCatalogRecords": {
+    "description": "Count.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "restrictedCatalogPages": "pp. {from}–{to}",
+  "@restrictedCatalogPages": {
+    "description": "Meta.",
+    "placeholders": {
+      "from": {
+        "type": "String"
+      },
+      "to": {
+        "type": "String"
+      }
+    }
+  },
+  "restrictedCatalogPage": "p. {page}",
+  "@restrictedCatalogPage": {
+    "description": "Meta.",
+    "placeholders": {
+      "page": {
+        "type": "String"
+      }
+    }
+  },
+  "restrictedCatalogCodeOriginal": "Code as written in the source: {code}",
+  "@restrictedCatalogCodeOriginal": {
+    "description": "Meta.",
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "restrictedCatalogSearchHint": "Search by code, title or term",
+  "@restrictedCatalogSearchHint": {
+    "description": "Search."
+  },
+  "restrictedCatalogLinkedCards": "Linked independent guidelines",
+  "@restrictedCatalogLinkedCards": {
+    "description": "Header."
+  },
+  "restrictedCatalogNormative": "Related official documents",
+  "@restrictedCatalogNormative": {
+    "description": "Header."
+  },
+  "restrictedCatalogSection": "Section {section}",
+  "@restrictedCatalogSection": {
+    "description": "Label.",
+    "placeholders": {
+      "section": {
+        "type": "String"
+      }
+    }
+  },
+  "restrictedCatalogTitleDraft": "Title translation is a draft",
+  "@restrictedCatalogTitleDraft": {
+    "description": "Meta."
   }
 }

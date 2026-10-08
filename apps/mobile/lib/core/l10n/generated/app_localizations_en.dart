@@ -5243,4 +5243,154 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get calcErrorAmbient =>
       'Ambient temperature must be between −20 and 35 °C.';
+
+  @override
+  String get guidelinesTitle => 'Guidelines';
+
+  @override
+  String get guidelinesSubtitle =>
+      'Independent scientific-practical guidance by discipline';
+
+  @override
+  String get guidelinesIntro =>
+      'Each guideline is an independent scientific synthesis written from the cited, verified literature. It is not an official methodology and does not replace accredited laboratory procedures or the law of your country. Every card stays under review until a specialist confirms it.';
+
+  @override
+  String get guidelinesSearchHint => 'Search guidelines';
+
+  @override
+  String get guidelinesEmptyArea => 'No guidelines in this area yet.';
+
+  @override
+  String get guidelinesNoResults => 'No results found';
+
+  @override
+  String guidelinesCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count guidelines',
+      one: '1 guideline',
+      zero: 'No guidelines',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get guidelineAreaForensicMedicine => 'Forensic medicine';
+
+  @override
+  String get guidelineAreaForensicChemistry =>
+      'Forensic chemistry and toxicology';
+
+  @override
+  String get guidelineAreaForensicHistology => 'Forensic histology';
+
+  @override
+  String get guidelineAreaForensicBiology => 'Forensic biology and genetics';
+
+  @override
+  String get guidelineAreaMedicalCriminalistics =>
+      'Medical criminalistics and anthropology';
+
+  @override
+  String get guidelineAreaOther => 'Other disciplines';
+
+  @override
+  String get guidelineIndependentNote =>
+      'Independent scientific synthesis based on the references below. Not an official methodology; check the requirements of your laboratory and jurisdiction.';
+
+  @override
+  String get guidelineTranslationDraft =>
+      'This translation is a draft and has not been reviewed by a specialist yet.';
+
+  @override
+  String guidelineFallbackLanguage(String language) {
+    return 'Not yet available in your language — shown in the original language ($language).';
+  }
+
+  @override
+  String get guidelineReferences => 'References';
+
+  @override
+  String guidelineUpdated(String date) {
+    return 'Updated $date';
+  }
+
+  @override
+  String get guidelineRelatedTools => 'Related tools';
+
+  @override
+  String get guidelineOpenReference => 'Open source';
+
+  @override
+  String get languageNameUz => 'Uzbek';
+
+  @override
+  String get languageNameRu => 'Russian';
+
+  @override
+  String get languageNameEn => 'English';
+
+  @override
+  String get restrictedCatalogTitle => 'Uzbekistan practice codes (restricted)';
+
+  @override
+  String get restrictedCatalogNote =>
+      'Visible to administrators only. Catalogue metadata of a restricted source: the full text is not stored in the app, is not sent to AI and must not be distributed.';
+
+  @override
+  String get restrictedCatalogImport => 'Import catalogue file';
+
+  @override
+  String get restrictedCatalogRemove => 'Remove from this device';
+
+  @override
+  String get restrictedCatalogEmpty =>
+      'No catalogue on this device. Import the file you received privately.';
+
+  @override
+  String restrictedCatalogImported(int count) {
+    return 'Catalogue imported: $count records.';
+  }
+
+  @override
+  String get restrictedCatalogInvalid => 'This file is not a valid catalogue.';
+
+  @override
+  String restrictedCatalogRecords(int count) {
+    return '$count records';
+  }
+
+  @override
+  String restrictedCatalogPages(String from, String to) {
+    return 'pp. $from–$to';
+  }
+
+  @override
+  String restrictedCatalogPage(String page) {
+    return 'p. $page';
+  }
+
+  @override
+  String restrictedCatalogCodeOriginal(String code) {
+    return 'Code as written in the source: $code';
+  }
+
+  @override
+  String get restrictedCatalogSearchHint => 'Search by code, title or term';
+
+  @override
+  String get restrictedCatalogLinkedCards => 'Linked independent guidelines';
+
+  @override
+  String get restrictedCatalogNormative => 'Related official documents';
+
+  @override
+  String restrictedCatalogSection(String section) {
+    return 'Section $section';
+  }
+
+  @override
+  String get restrictedCatalogTitleDraft => 'Title translation is a draft';
 }
