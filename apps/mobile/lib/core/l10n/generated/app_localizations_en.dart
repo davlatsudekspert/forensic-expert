@@ -5477,4 +5477,280 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get discGroupCriminalistics => 'Criminalistics';
+
+  @override
+  String get pubTitle => 'Expert publications';
+
+  @override
+  String get pubIntro =>
+      'Articles by experts, published after moderation. Moderation checks format, rules and personal data — not scientific correctness.';
+
+  @override
+  String get pubNotVerifiedNotice =>
+      'Submitting an article does not mean it has been scientifically verified.';
+
+  @override
+  String get pubSearchHint => 'Title, abstract or keyword';
+
+  @override
+  String get pubAllDisciplines => 'All disciplines';
+
+  @override
+  String get pubEmpty => 'No published articles yet.';
+
+  @override
+  String get pubFilterEmpty => 'No articles match your query.';
+
+  @override
+  String get pubLoadFailed => 'Could not load articles. Check the connection.';
+
+  @override
+  String get pubReload => 'Try again';
+
+  @override
+  String get pubUnavailable => 'This section is not available yet.';
+
+  @override
+  String get pubSubmit => 'Submit an article';
+
+  @override
+  String get pubMine => 'My articles';
+
+  @override
+  String get pubModeration => 'Moderation';
+
+  @override
+  String get pubSignInRequired => 'Sign in to submit articles or report them.';
+
+  @override
+  String get pubSignIn => 'Sign in';
+
+  @override
+  String get pubStatusDraft => 'Draft';
+
+  @override
+  String get pubStatusSubmitted => 'Submitted';
+
+  @override
+  String get pubStatusScreening => 'Initial check';
+
+  @override
+  String get pubStatusInReview => 'Under review';
+
+  @override
+  String get pubStatusApproved => 'Approved for publication';
+
+  @override
+  String get pubStatusRejected => 'Returned to the author';
+
+  @override
+  String get pubStatusPublished => 'Published';
+
+  @override
+  String get pubStatusRetracted => 'Retracted';
+
+  @override
+  String get pubStatusSuperseded => 'Replaced by a new version';
+
+  @override
+  String get pubAbstract => 'Abstract';
+
+  @override
+  String get pubKeywords => 'Keywords';
+
+  @override
+  String get pubAuthors => 'Authors';
+
+  @override
+  String get pubAffiliation => 'Affiliation';
+
+  @override
+  String get pubDoi => 'DOI identifier';
+
+  @override
+  String get pubReferences => 'References';
+
+  @override
+  String get pubExternalUrl => 'Full text link';
+
+  @override
+  String get pubLanguage => 'Article language';
+
+  @override
+  String get pubDiscipline => 'Discipline';
+
+  @override
+  String pubVersion(int version) {
+    return 'Version $version';
+  }
+
+  @override
+  String pubPublishedOn(String date) {
+    return 'Published $date';
+  }
+
+  @override
+  String get pubNotFound => 'Article not found.';
+
+  @override
+  String get pubLangUz => 'Uzbek';
+
+  @override
+  String get pubLangRu => 'Russian';
+
+  @override
+  String get pubLangEn => 'English';
+
+  @override
+  String get pubReport => 'Report';
+
+  @override
+  String get pubReportTitle => 'Report this article';
+
+  @override
+  String get pubReportDetails => 'Details (optional)';
+
+  @override
+  String get pubReportSend => 'Send';
+
+  @override
+  String get pubCancel => 'Cancel';
+
+  @override
+  String get pubReasonPlagiarism => 'Plagiarism';
+
+  @override
+  String get pubReasonPersonalData => 'Personal data';
+
+  @override
+  String get pubReasonCopyright => 'Copyright violation';
+
+  @override
+  String get pubReasonMisinformation => 'Misleading content';
+
+  @override
+  String get pubReasonAbuse => 'Offensive content';
+
+  @override
+  String get pubReasonOther => 'Other';
+
+  @override
+  String get pubReported => 'Thank you. The report was sent to moderators.';
+
+  @override
+  String get pubAlreadyReported => 'You have already reported this article.';
+
+  @override
+  String get pubActionFailed => 'Action failed. Check the connection.';
+
+  @override
+  String get pubFormTitle => 'Article title';
+
+  @override
+  String get pubFormKeywords => 'Keywords (comma-separated)';
+
+  @override
+  String get pubFormAuthors => 'Authors (one per line)';
+
+  @override
+  String get pubFormDoi => 'DOI (if any)';
+
+  @override
+  String get pubFormUrl => 'Full text link (https://…)';
+
+  @override
+  String get pubPiiWarning =>
+      'Do not include personal data: names of victims or suspects, case numbers, addresses, photos of identifiable people, medical records.';
+
+  @override
+  String get pubConfirmationsTitle => 'Required confirmations';
+
+  @override
+  String get pubConfirmRights =>
+      'I am the author or have the right to publish this text.';
+
+  @override
+  String get pubConfirmConsent =>
+      'I agree that after moderation the article will be publicly available in FORENSIC EXPERT.';
+
+  @override
+  String get pubConfirmNoPii =>
+      'The article contains no personal data of victims, suspects or other people.';
+
+  @override
+  String get pubSaveDraft => 'Save draft';
+
+  @override
+  String get pubSubmitForModeration => 'Submit for moderation';
+
+  @override
+  String get pubSubmitHint =>
+      'To submit, fill in the title, abstract and discipline and tick all three confirmations.';
+
+  @override
+  String get pubDraftSaved => 'Draft saved.';
+
+  @override
+  String get pubSubmitted => 'The article was sent for moderation.';
+
+  @override
+  String get pubSubmitRejected =>
+      'Not sent: fill in the required fields and confirmations.';
+
+  @override
+  String get pubEditTitle => 'Edit draft';
+
+  @override
+  String get pubPaidNote => 'A paid subscription does not affect moderation.';
+
+  @override
+  String get pubRequired => 'Required';
+
+  @override
+  String get pubMineEmpty => 'You have no articles yet.';
+
+  @override
+  String get pubTimeline => 'History';
+
+  @override
+  String get pubModeratorComment => 'Moderator comment';
+
+  @override
+  String get pubEdit => 'Edit';
+
+  @override
+  String get pubQueueEmpty => 'No articles awaiting moderation.';
+
+  @override
+  String pubReports(int count) {
+    return 'Reports ($count)';
+  }
+
+  @override
+  String pubMoveTo(String status) {
+    return 'Move to: $status';
+  }
+
+  @override
+  String get pubCommentLabel => 'Comment for the author';
+
+  @override
+  String get pubCommentRequired => 'A comment is required for this decision.';
+
+  @override
+  String get pubOwnArticle =>
+      'Your own article: another moderator must review it.';
+
+  @override
+  String get pubModerationDone => 'Updated.';
+
+  @override
+  String get pubInvalidTransition =>
+      'This step is not allowed from the current state.';
+
+  @override
+  String get pubForbidden => 'This section is for moderators only.';
+
+  @override
+  String get pubConfirm => 'Confirm';
 }

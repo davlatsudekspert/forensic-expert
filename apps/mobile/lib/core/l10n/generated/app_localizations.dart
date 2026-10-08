@@ -9884,6 +9884,522 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Criminalistics'**
   String get discGroupCriminalistics;
+
+  /// Section title.
+  ///
+  /// In en, this message translates to:
+  /// **'Expert publications'**
+  String get pubTitle;
+
+  /// Intro.
+  ///
+  /// In en, this message translates to:
+  /// **'Articles by experts, published after moderation. Moderation checks format, rules and personal data — not scientific correctness.'**
+  String get pubIntro;
+
+  /// Notice on every article.
+  ///
+  /// In en, this message translates to:
+  /// **'Submitting an article does not mean it has been scientifically verified.'**
+  String get pubNotVerifiedNotice;
+
+  /// Search field.
+  ///
+  /// In en, this message translates to:
+  /// **'Title, abstract or keyword'**
+  String get pubSearchHint;
+
+  /// Filter chip.
+  ///
+  /// In en, this message translates to:
+  /// **'All disciplines'**
+  String get pubAllDisciplines;
+
+  /// Empty list.
+  ///
+  /// In en, this message translates to:
+  /// **'No published articles yet.'**
+  String get pubEmpty;
+
+  /// Empty filter result.
+  ///
+  /// In en, this message translates to:
+  /// **'No articles match your query.'**
+  String get pubFilterEmpty;
+
+  /// Load error.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not load articles. Check the connection.'**
+  String get pubLoadFailed;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Try again'**
+  String get pubReload;
+
+  /// Gated section.
+  ///
+  /// In en, this message translates to:
+  /// **'This section is not available yet.'**
+  String get pubUnavailable;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit an article'**
+  String get pubSubmit;
+
+  /// Action / screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'My articles'**
+  String get pubMine;
+
+  /// Action / screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Moderation'**
+  String get pubModeration;
+
+  /// Signed-out note.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in to submit articles or report them.'**
+  String get pubSignInRequired;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in'**
+  String get pubSignIn;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Draft'**
+  String get pubStatusDraft;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Submitted'**
+  String get pubStatusSubmitted;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Initial check'**
+  String get pubStatusScreening;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Under review'**
+  String get pubStatusInReview;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Approved for publication'**
+  String get pubStatusApproved;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Returned to the author'**
+  String get pubStatusRejected;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Published'**
+  String get pubStatusPublished;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Retracted'**
+  String get pubStatusRetracted;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Replaced by a new version'**
+  String get pubStatusSuperseded;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Abstract'**
+  String get pubAbstract;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Keywords'**
+  String get pubKeywords;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Authors'**
+  String get pubAuthors;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Affiliation'**
+  String get pubAffiliation;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'DOI identifier'**
+  String get pubDoi;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'References'**
+  String get pubReferences;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Full text link'**
+  String get pubExternalUrl;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Article language'**
+  String get pubLanguage;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Discipline'**
+  String get pubDiscipline;
+
+  /// Meta.
+  ///
+  /// In en, this message translates to:
+  /// **'Version {version}'**
+  String pubVersion(int version);
+
+  /// Meta.
+  ///
+  /// In en, this message translates to:
+  /// **'Published {date}'**
+  String pubPublishedOn(String date);
+
+  /// Detail empty.
+  ///
+  /// In en, this message translates to:
+  /// **'Article not found.'**
+  String get pubNotFound;
+
+  /// Language.
+  ///
+  /// In en, this message translates to:
+  /// **'Uzbek'**
+  String get pubLangUz;
+
+  /// Language.
+  ///
+  /// In en, this message translates to:
+  /// **'Russian'**
+  String get pubLangRu;
+
+  /// Language.
+  ///
+  /// In en, this message translates to:
+  /// **'English'**
+  String get pubLangEn;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Report'**
+  String get pubReport;
+
+  /// Dialog title.
+  ///
+  /// In en, this message translates to:
+  /// **'Report this article'**
+  String get pubReportTitle;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Details (optional)'**
+  String get pubReportDetails;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Send'**
+  String get pubReportSend;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get pubCancel;
+
+  /// Reason.
+  ///
+  /// In en, this message translates to:
+  /// **'Plagiarism'**
+  String get pubReasonPlagiarism;
+
+  /// Reason.
+  ///
+  /// In en, this message translates to:
+  /// **'Personal data'**
+  String get pubReasonPersonalData;
+
+  /// Reason.
+  ///
+  /// In en, this message translates to:
+  /// **'Copyright violation'**
+  String get pubReasonCopyright;
+
+  /// Reason.
+  ///
+  /// In en, this message translates to:
+  /// **'Misleading content'**
+  String get pubReasonMisinformation;
+
+  /// Reason.
+  ///
+  /// In en, this message translates to:
+  /// **'Offensive content'**
+  String get pubReasonAbuse;
+
+  /// Reason.
+  ///
+  /// In en, this message translates to:
+  /// **'Other'**
+  String get pubReasonOther;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Thank you. The report was sent to moderators.'**
+  String get pubReported;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'You have already reported this article.'**
+  String get pubAlreadyReported;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Action failed. Check the connection.'**
+  String get pubActionFailed;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Article title'**
+  String get pubFormTitle;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Keywords (comma-separated)'**
+  String get pubFormKeywords;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Authors (one per line)'**
+  String get pubFormAuthors;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'DOI (if any)'**
+  String get pubFormDoi;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Full text link (https://…)'**
+  String get pubFormUrl;
+
+  /// Warning.
+  ///
+  /// In en, this message translates to:
+  /// **'Do not include personal data: names of victims or suspects, case numbers, addresses, photos of identifiable people, medical records.'**
+  String get pubPiiWarning;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Required confirmations'**
+  String get pubConfirmationsTitle;
+
+  /// Checkbox.
+  ///
+  /// In en, this message translates to:
+  /// **'I am the author or have the right to publish this text.'**
+  String get pubConfirmRights;
+
+  /// Checkbox.
+  ///
+  /// In en, this message translates to:
+  /// **'I agree that after moderation the article will be publicly available in FORENSIC EXPERT.'**
+  String get pubConfirmConsent;
+
+  /// Checkbox.
+  ///
+  /// In en, this message translates to:
+  /// **'The article contains no personal data of victims, suspects or other people.'**
+  String get pubConfirmNoPii;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Save draft'**
+  String get pubSaveDraft;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit for moderation'**
+  String get pubSubmitForModeration;
+
+  /// Hint.
+  ///
+  /// In en, this message translates to:
+  /// **'To submit, fill in the title, abstract and discipline and tick all three confirmations.'**
+  String get pubSubmitHint;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Draft saved.'**
+  String get pubDraftSaved;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'The article was sent for moderation.'**
+  String get pubSubmitted;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Not sent: fill in the required fields and confirmations.'**
+  String get pubSubmitRejected;
+
+  /// Screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit draft'**
+  String get pubEditTitle;
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'A paid subscription does not affect moderation.'**
+  String get pubPaidNote;
+
+  /// Field error.
+  ///
+  /// In en, this message translates to:
+  /// **'Required'**
+  String get pubRequired;
+
+  /// Empty list.
+  ///
+  /// In en, this message translates to:
+  /// **'You have no articles yet.'**
+  String get pubMineEmpty;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'History'**
+  String get pubTimeline;
+
+  /// Label.
+  ///
+  /// In en, this message translates to:
+  /// **'Moderator comment'**
+  String get pubModeratorComment;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit'**
+  String get pubEdit;
+
+  /// Empty queue.
+  ///
+  /// In en, this message translates to:
+  /// **'No articles awaiting moderation.'**
+  String get pubQueueEmpty;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Reports ({count})'**
+  String pubReports(int count);
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Move to: {status}'**
+  String pubMoveTo(String status);
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Comment for the author'**
+  String get pubCommentLabel;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'A comment is required for this decision.'**
+  String get pubCommentRequired;
+
+  /// Note.
+  ///
+  /// In en, this message translates to:
+  /// **'Your own article: another moderator must review it.'**
+  String get pubOwnArticle;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Updated.'**
+  String get pubModerationDone;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'This step is not allowed from the current state.'**
+  String get pubInvalidTransition;
+
+  /// Empty.
+  ///
+  /// In en, this message translates to:
+  /// **'This section is for moderators only.'**
+  String get pubForbidden;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm'**
+  String get pubConfirm;
 }
 
 class _AppLocalizationsDelegate

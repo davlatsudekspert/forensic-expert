@@ -5488,4 +5488,282 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get discGroupCriminalistics => 'Криминалистика';
+
+  @override
+  String get pubTitle => 'Публикации экспертов';
+
+  @override
+  String get pubIntro =>
+      'Статьи экспертов, опубликованные после модерации. Модерация проверяет оформление, правила и персональные данные — не научную достоверность.';
+
+  @override
+  String get pubNotVerifiedNotice =>
+      'Отправка статьи не означает, что она научно подтверждена.';
+
+  @override
+  String get pubSearchHint => 'Название, аннотация или ключевое слово';
+
+  @override
+  String get pubAllDisciplines => 'Все дисциплины';
+
+  @override
+  String get pubEmpty => 'Опубликованных статей пока нет.';
+
+  @override
+  String get pubFilterEmpty => 'По вашему запросу статей не найдено.';
+
+  @override
+  String get pubLoadFailed =>
+      'Не удалось загрузить статьи. Проверьте соединение.';
+
+  @override
+  String get pubReload => 'Повторить';
+
+  @override
+  String get pubUnavailable => 'Этот раздел пока недоступен.';
+
+  @override
+  String get pubSubmit => 'Отправить статью';
+
+  @override
+  String get pubMine => 'Мои статьи';
+
+  @override
+  String get pubModeration => 'Модерация';
+
+  @override
+  String get pubSignInRequired =>
+      'Войдите, чтобы отправлять статьи или жаловаться на них.';
+
+  @override
+  String get pubSignIn => 'Войти';
+
+  @override
+  String get pubStatusDraft => 'Черновик';
+
+  @override
+  String get pubStatusSubmitted => 'Отправлена';
+
+  @override
+  String get pubStatusScreening => 'Первичная проверка';
+
+  @override
+  String get pubStatusInReview => 'На рассмотрении';
+
+  @override
+  String get pubStatusApproved => 'Одобрена к публикации';
+
+  @override
+  String get pubStatusRejected => 'Возвращена автору';
+
+  @override
+  String get pubStatusPublished => 'Опубликована';
+
+  @override
+  String get pubStatusRetracted => 'Отозвана';
+
+  @override
+  String get pubStatusSuperseded => 'Заменена новой версией';
+
+  @override
+  String get pubAbstract => 'Аннотация';
+
+  @override
+  String get pubKeywords => 'Ключевые слова';
+
+  @override
+  String get pubAuthors => 'Авторы';
+
+  @override
+  String get pubAffiliation => 'Организация';
+
+  @override
+  String get pubDoi => 'Идентификатор DOI';
+
+  @override
+  String get pubReferences => 'Список литературы';
+
+  @override
+  String get pubExternalUrl => 'Ссылка на полный текст';
+
+  @override
+  String get pubLanguage => 'Язык статьи';
+
+  @override
+  String get pubDiscipline => 'Дисциплина';
+
+  @override
+  String pubVersion(int version) {
+    return 'Версия $version';
+  }
+
+  @override
+  String pubPublishedOn(String date) {
+    return 'Опубликовано $date';
+  }
+
+  @override
+  String get pubNotFound => 'Статья не найдена.';
+
+  @override
+  String get pubLangUz => 'Узбекский';
+
+  @override
+  String get pubLangRu => 'Русский';
+
+  @override
+  String get pubLangEn => 'Английский';
+
+  @override
+  String get pubReport => 'Пожаловаться';
+
+  @override
+  String get pubReportTitle => 'Жалоба на статью';
+
+  @override
+  String get pubReportDetails => 'Подробности (необязательно)';
+
+  @override
+  String get pubReportSend => 'Отправить';
+
+  @override
+  String get pubCancel => 'Отмена';
+
+  @override
+  String get pubReasonPlagiarism => 'Плагиат';
+
+  @override
+  String get pubReasonPersonalData => 'Персональные данные';
+
+  @override
+  String get pubReasonCopyright => 'Нарушение авторских прав';
+
+  @override
+  String get pubReasonMisinformation => 'Недостоверная информация';
+
+  @override
+  String get pubReasonAbuse => 'Оскорбительное содержание';
+
+  @override
+  String get pubReasonOther => 'Другое';
+
+  @override
+  String get pubReported => 'Спасибо. Жалоба отправлена модераторам.';
+
+  @override
+  String get pubAlreadyReported => 'Вы уже жаловались на эту статью.';
+
+  @override
+  String get pubActionFailed => 'Не удалось. Проверьте соединение.';
+
+  @override
+  String get pubFormTitle => 'Название статьи';
+
+  @override
+  String get pubFormKeywords => 'Ключевые слова (через запятую)';
+
+  @override
+  String get pubFormAuthors => 'Авторы (по одному в строке)';
+
+  @override
+  String get pubFormDoi => 'DOI (если есть)';
+
+  @override
+  String get pubFormUrl => 'Ссылка на полный текст (https://…)';
+
+  @override
+  String get pubPiiWarning =>
+      'Не указывайте персональные данные: имена потерпевших или подозреваемых, номера дел, адреса, фото узнаваемых людей, медицинские документы.';
+
+  @override
+  String get pubConfirmationsTitle => 'Обязательные подтверждения';
+
+  @override
+  String get pubConfirmRights =>
+      'Я автор или имею право публиковать этот текст.';
+
+  @override
+  String get pubConfirmConsent =>
+      'Я согласен(на), что после модерации статья будет публично доступна в FORENSIC EXPERT.';
+
+  @override
+  String get pubConfirmNoPii =>
+      'Статья не содержит персональных данных потерпевших, подозреваемых или других лиц.';
+
+  @override
+  String get pubSaveDraft => 'Сохранить черновик';
+
+  @override
+  String get pubSubmitForModeration => 'Отправить на модерацию';
+
+  @override
+  String get pubSubmitHint =>
+      'Чтобы отправить, заполните название, аннотацию и дисциплину и отметьте все три подтверждения.';
+
+  @override
+  String get pubDraftSaved => 'Черновик сохранён.';
+
+  @override
+  String get pubSubmitted => 'Статья отправлена на модерацию.';
+
+  @override
+  String get pubSubmitRejected =>
+      'Не отправлено: заполните обязательные поля и подтверждения.';
+
+  @override
+  String get pubEditTitle => 'Редактировать черновик';
+
+  @override
+  String get pubPaidNote => 'Платная подписка не влияет на модерацию.';
+
+  @override
+  String get pubRequired => 'Обязательно';
+
+  @override
+  String get pubMineEmpty => 'У вас пока нет статей.';
+
+  @override
+  String get pubTimeline => 'История';
+
+  @override
+  String get pubModeratorComment => 'Комментарий модератора';
+
+  @override
+  String get pubEdit => 'Изменить';
+
+  @override
+  String get pubQueueEmpty => 'Нет статей, ожидающих модерации.';
+
+  @override
+  String pubReports(int count) {
+    return 'Жалобы ($count)';
+  }
+
+  @override
+  String pubMoveTo(String status) {
+    return 'Перевести: $status';
+  }
+
+  @override
+  String get pubCommentLabel => 'Комментарий для автора';
+
+  @override
+  String get pubCommentRequired => 'Для этого решения нужен комментарий.';
+
+  @override
+  String get pubOwnArticle =>
+      'Это ваша статья: её должен рассмотреть другой модератор.';
+
+  @override
+  String get pubModerationDone => 'Обновлено.';
+
+  @override
+  String get pubInvalidTransition =>
+      'Этот шаг недоступен из текущего состояния.';
+
+  @override
+  String get pubForbidden => 'Раздел только для модераторов.';
+
+  @override
+  String get pubConfirm => 'Подтвердить';
 }

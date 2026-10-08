@@ -16,3 +16,4 @@ for m in "$HERE"/../migrations/*.sql; do $P -d fe -f "$m"; done
 $P -d fe -f "$HERE/security_test.sql"
 $P -d fe -f "$HERE/referral_test.sql"
 $P -d fe -f "$HERE/admin_test.sql"
+$P -d fe -f "$HERE/publications_test.sql"

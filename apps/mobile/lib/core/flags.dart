@@ -28,4 +28,9 @@ abstract final class FeFlags {
   static const requireServerPurchaseVerification = bool.fromEnvironment(
     'FE_REQUIRE_SERVER_PURCHASE_VERIFICATION',
   );
+
+  /// «Ekspert maqolalari» bo‘limi (hub plitkasi, yuborish). Standart o‘chiq;
+  /// admin uchun bayroqsiz ham ko‘rinadi (egasi sinovi). O‘qish bepul.
+  /// `--dart-define=FE_PUBLICATIONS=true`.
+  static const publications = bool.fromEnvironment('FE_PUBLICATIONS');
 }

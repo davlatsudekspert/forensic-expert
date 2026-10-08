@@ -5464,4 +5464,284 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get discGroupCriminalistics => 'Kriminalistika';
+
+  @override
+  String get pubTitle => 'Ekspert maqolalari';
+
+  @override
+  String get pubIntro =>
+      'Ekspertlar maqolalari moderatsiyadan so‘ng nashr etiladi. Moderatsiya rasmiylashtirish, qoidalar va shaxsiy ma’lumotlarni tekshiradi — ilmiy to‘g‘rilikni emas.';
+
+  @override
+  String get pubNotVerifiedNotice =>
+      'Maqola yuborilgani uning ilmiy tasdiqlanganini bildirmaydi.';
+
+  @override
+  String get pubSearchHint => 'Sarlavha, annotatsiya yoki kalit so‘z';
+
+  @override
+  String get pubAllDisciplines => 'Barcha fanlar';
+
+  @override
+  String get pubEmpty => 'Hozircha nashr etilgan maqolalar yo‘q.';
+
+  @override
+  String get pubFilterEmpty => 'So‘rovingizga mos maqola topilmadi.';
+
+  @override
+  String get pubLoadFailed =>
+      'Maqolalarni yuklab bo‘lmadi. Aloqani tekshiring.';
+
+  @override
+  String get pubReload => 'Qayta urinish';
+
+  @override
+  String get pubUnavailable => 'Bu bo‘lim hozircha mavjud emas.';
+
+  @override
+  String get pubSubmit => 'Maqola yuborish';
+
+  @override
+  String get pubMine => 'Mening maqolalarim';
+
+  @override
+  String get pubModeration => 'Moderatsiya';
+
+  @override
+  String get pubSignInRequired =>
+      'Maqola yuborish yoki shikoyat qilish uchun hisobingizga kiring.';
+
+  @override
+  String get pubSignIn => 'Kirish';
+
+  @override
+  String get pubStatusDraft => 'Qoralama';
+
+  @override
+  String get pubStatusSubmitted => 'Yuborilgan';
+
+  @override
+  String get pubStatusScreening => 'Dastlabki tekshiruv';
+
+  @override
+  String get pubStatusInReview => 'Ko‘rib chiqilmoqda';
+
+  @override
+  String get pubStatusApproved => 'Nashrga ma’qullangan';
+
+  @override
+  String get pubStatusRejected => 'Muallifga qaytarilgan';
+
+  @override
+  String get pubStatusPublished => 'Nashr etilgan';
+
+  @override
+  String get pubStatusRetracted => 'Qaytarib olingan';
+
+  @override
+  String get pubStatusSuperseded => 'Yangi versiya bilan almashtirilgan';
+
+  @override
+  String get pubAbstract => 'Annotatsiya';
+
+  @override
+  String get pubKeywords => 'Kalit so‘zlar';
+
+  @override
+  String get pubAuthors => 'Mualliflar';
+
+  @override
+  String get pubAffiliation => 'Tashkilot';
+
+  @override
+  String get pubDoi => 'DOI identifikatori';
+
+  @override
+  String get pubReferences => 'Adabiyotlar ro‘yxati';
+
+  @override
+  String get pubExternalUrl => 'To‘liq matn havolasi';
+
+  @override
+  String get pubLanguage => 'Maqola tili';
+
+  @override
+  String get pubDiscipline => 'Fan sohasi';
+
+  @override
+  String pubVersion(int version) {
+    return '$version-versiya';
+  }
+
+  @override
+  String pubPublishedOn(String date) {
+    return 'Nashr sanasi: $date';
+  }
+
+  @override
+  String get pubNotFound => 'Maqola topilmadi.';
+
+  @override
+  String get pubLangUz => 'O‘zbekcha';
+
+  @override
+  String get pubLangRu => 'Ruscha';
+
+  @override
+  String get pubLangEn => 'Inglizcha';
+
+  @override
+  String get pubReport => 'Shikoyat qilish';
+
+  @override
+  String get pubReportTitle => 'Maqola ustidan shikoyat';
+
+  @override
+  String get pubReportDetails => 'Tafsilotlar (ixtiyoriy)';
+
+  @override
+  String get pubReportSend => 'Yuborish';
+
+  @override
+  String get pubCancel => 'Bekor qilish';
+
+  @override
+  String get pubReasonPlagiarism => 'Plagiat';
+
+  @override
+  String get pubReasonPersonalData => 'Shaxsiy ma’lumotlar';
+
+  @override
+  String get pubReasonCopyright => 'Mualliflik huquqi buzilgan';
+
+  @override
+  String get pubReasonMisinformation => 'Noto‘g‘ri ma’lumot';
+
+  @override
+  String get pubReasonAbuse => 'Haqoratli mazmun';
+
+  @override
+  String get pubReasonOther => 'Boshqa';
+
+  @override
+  String get pubReported => 'Rahmat. Shikoyat moderatorlarga yuborildi.';
+
+  @override
+  String get pubAlreadyReported =>
+      'Siz bu maqola ustidan avval shikoyat qilgansiz.';
+
+  @override
+  String get pubActionFailed => 'Bajarilmadi. Aloqani tekshiring.';
+
+  @override
+  String get pubFormTitle => 'Maqola sarlavhasi';
+
+  @override
+  String get pubFormKeywords => 'Kalit so‘zlar (vergul bilan)';
+
+  @override
+  String get pubFormAuthors => 'Mualliflar (har biri yangi qatorda)';
+
+  @override
+  String get pubFormDoi => 'DOI (bo‘lsa)';
+
+  @override
+  String get pubFormUrl => 'To‘liq matn havolasi (https://…)';
+
+  @override
+  String get pubPiiWarning =>
+      'Shaxsiy ma’lumot kiritmang: jabrlanuvchi yoki gumonlanuvchi ismlari, ish raqamlari, manzillar, tanib bo‘ladigan odamlar suratlari, tibbiy hujjatlar.';
+
+  @override
+  String get pubConfirmationsTitle => 'Majburiy tasdiqlar';
+
+  @override
+  String get pubConfirmRights =>
+      'Men muallifman yoki bu matnni nashr etishga huquqim bor.';
+
+  @override
+  String get pubConfirmConsent =>
+      'Moderatsiyadan so‘ng maqola FORENSIC EXPERT’da ommaga ochiq bo‘lishiga roziman.';
+
+  @override
+  String get pubConfirmNoPii =>
+      'Maqolada jabrlanuvchilar, gumonlanuvchilar yoki boshqa shaxslarning shaxsiy ma’lumotlari yo‘q.';
+
+  @override
+  String get pubSaveDraft => 'Qoralamani saqlash';
+
+  @override
+  String get pubSubmitForModeration => 'Moderatsiyaga yuborish';
+
+  @override
+  String get pubSubmitHint =>
+      'Yuborish uchun sarlavha, annotatsiya va fan sohasini to‘ldiring hamda uchala tasdiqni belgilang.';
+
+  @override
+  String get pubDraftSaved => 'Qoralama saqlandi.';
+
+  @override
+  String get pubSubmitted => 'Maqola moderatsiyaga yuborildi.';
+
+  @override
+  String get pubSubmitRejected =>
+      'Yuborilmadi: majburiy maydonlar va tasdiqlarni to‘ldiring.';
+
+  @override
+  String get pubEditTitle => 'Qoralamani tahrirlash';
+
+  @override
+  String get pubPaidNote =>
+      'Pullik obuna moderatsiya natijasiga ta’sir qilmaydi.';
+
+  @override
+  String get pubRequired => 'Majburiy';
+
+  @override
+  String get pubMineEmpty => 'Sizda hozircha maqola yo‘q.';
+
+  @override
+  String get pubTimeline => 'Holat tarixi';
+
+  @override
+  String get pubModeratorComment => 'Moderator izohi';
+
+  @override
+  String get pubEdit => 'Tahrirlash';
+
+  @override
+  String get pubQueueEmpty => 'Moderatsiyani kutayotgan maqola yo‘q.';
+
+  @override
+  String pubReports(int count) {
+    return 'Shikoyatlar ($count)';
+  }
+
+  @override
+  String pubMoveTo(String status) {
+    return 'O‘tkazish: $status';
+  }
+
+  @override
+  String get pubCommentLabel => 'Muallif uchun izoh';
+
+  @override
+  String get pubCommentRequired => 'Bu qaror uchun izoh majburiy.';
+
+  @override
+  String get pubOwnArticle =>
+      'Bu sizning maqolangiz: uni boshqa moderator ko‘rib chiqishi kerak.';
+
+  @override
+  String get pubModerationDone => 'Yangilandi.';
+
+  @override
+  String get pubInvalidTransition =>
+      'Joriy holatdan bu qadamga o‘tib bo‘lmaydi.';
+
+  @override
+  String get pubForbidden => 'Bu bo‘lim faqat moderatorlar uchun.';
+
+  @override
+  String get pubConfirm => 'Tasdiqlash';
 }
