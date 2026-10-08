@@ -21,4 +21,4 @@ TestFlight closeout’dan KEYIN, limit tiklanganda boshlanadi.
 - Har iqtibos ostida «Tarjima (avtomatik, tekshirilmagan)»; asl matn asosiy.
 
 ## 4. Kichik UX
-- AI ekranida hisobdan chiqilganda «ulanmagan» emas, «hisobga kiring» deyish.
+- ~~AI ekranida hisobdan chiqilganda «ulanmagan» emas, «hisobga kiring» deyish.~~ Bajarildi (`f43a00a`).
