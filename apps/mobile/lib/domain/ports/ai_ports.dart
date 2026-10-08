@@ -10,7 +10,15 @@ library;
 
 import 'package:flutter/foundation.dart';
 
-enum AiAvailability { notConfigured, offline, quotaExceeded, available }
+enum AiAvailability {
+  notConfigured,
+
+  /// Server AI ulangan, lekin foydalanuvchi hisobga kirmagan.
+  signInRequired,
+  offline,
+  quotaExceeded,
+  available,
+}
 
 @immutable
 class AiQuestion {

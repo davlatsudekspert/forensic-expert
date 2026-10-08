@@ -10442,6 +10442,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Confirm'**
   String get pubConfirm;
+
+  /// Card title.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in to ask the AI'**
+  String get aiSignInTitle;
+
+  /// Card body.
+  ///
+  /// In en, this message translates to:
+  /// **'The AI service is connected and answers only from the app\'s sources, with citations. Asking questions requires a signed-in account; offline source search works without it.'**
+  String get aiSignInBody;
+
+  /// Hint under the send button.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in to send questions to the AI.'**
+  String get aiSendSignIn;
+
+  /// Header status chip.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign-in required'**
+  String get aiStatusSignIn;
 }
 
 class _AppLocalizationsDelegate

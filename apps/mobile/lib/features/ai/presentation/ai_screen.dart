@@ -97,6 +97,7 @@ class _AiScreenState extends ConsumerState<AiScreen> {
     final ai = ref.watch(aiAssistantProvider);
     final scanner = ref.watch(piiScannerProvider);
     final available = ai.availability == AiAvailability.available;
+    final needsSignIn = ai.availability == AiAvailability.signInRequired;
     final kinds = {for (final f in _pii) f.kind}.toList();
 
     return Scaffold(
@@ -109,9 +110,12 @@ class _AiScreenState extends ConsumerState<AiScreen> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   const SizedBox(height: FeSpace.xs),
-                  _AiHeader(available: available),
+                  _AiHeader(available: available, needsSignIn: needsSignIn),
                   const SizedBox(height: FeSpace.sm),
-                  if (!available) ...[
+                  if (ai.availability == AiAvailability.signInRequired) ...[
+                    const _SignInRequiredCard(),
+                    const SizedBox(height: FeSpace.sm),
+                  ] else if (!available) ...[
                     const _PreviewStateCard(),
                     const SizedBox(height: FeSpace.sm),
                   ],
@@ -207,7 +211,7 @@ class _AiScreenState extends ConsumerState<AiScreen> {
                     Padding(
                       padding: const EdgeInsets.only(top: FeSpace.xxs),
                       child: Text(
-                        l.aiSendUnavailable,
+                        needsSignIn ? l.aiSendSignIn : l.aiSendUnavailable,
                         key: const Key('ai.sendUnavailable'),
                         textAlign: TextAlign.end,
                         style: t.bodySmall?.copyWith(color: c.textSecondary),
@@ -235,7 +239,7 @@ class _AiScreenState extends ConsumerState<AiScreen> {
                     _AiResultView(answer: a),
                     if (a.evidence.isNotEmpty) RagSectionsView(answer: a),
                   ],
-                  if (!available) ...[
+                  if (!available && !needsSignIn) ...[
                     FeSectionHeader(l.aiPreviewTitle),
                     const _AnswerPreview(),
                   ],
@@ -720,9 +724,10 @@ class _SourceRow extends StatelessWidget {
 /// Ekran yuqorisidagi holat: AI ulanmagan, bu interfeys namoyishi.
 /// Forensic AI sarlavhasi: navy panel, holat, ilmiy kontekst.
 class _AiHeader extends ConsumerWidget {
-  const _AiHeader({required this.available});
+  const _AiHeader({required this.available, this.needsSignIn = false});
 
   final bool available;
+  final bool needsSignIn;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -818,7 +823,11 @@ class _AiHeader extends ConsumerWidget {
                             vertical: 3,
                           ),
                           child: Text(
-                            available ? l.aiStatusConnected : l.aiStatusPreview,
+                            available
+                                ? l.aiStatusConnected
+                                : needsSignIn
+                                ? l.aiStatusSignIn
+                                : l.aiStatusPreview,
                             key: const Key('ai.headerStatus'),
                             style: t.labelSmall?.copyWith(
                               color: available
@@ -850,6 +859,43 @@ class _AiHeader extends ConsumerWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+/// Server AI ulangan, foydalanuvchi esa hisobga kirmagan: «ulanmagan» emas,
+/// «hisobga kiring» deyiladi (BACKLOG 4).
+class _SignInRequiredCard extends StatelessWidget {
+  const _SignInRequiredCard();
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    return FeCard(
+      key: const Key('ai.signInRequired'),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(l.aiSignInTitle, style: t.titleSmall),
+          const SizedBox(height: FeSpace.xxs),
+          Text(
+            l.aiSignInBody,
+            style: t.bodySmall?.copyWith(color: c.textSecondary),
+          ),
+          const SizedBox(height: FeSpace.xs),
+          Align(
+            alignment: AlignmentDirectional.centerStart,
+            child: FilledButton.icon(
+              key: const Key('ai.signIn'),
+              onPressed: () => context.push(Routes.accountSignIn),
+              icon: const Icon(Icons.login),
+              label: Text(l.accountSignIn),
+            ),
+          ),
+        ],
       ),
     );
   }

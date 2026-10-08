@@ -7,6 +7,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/widgets/common.dart';
+import 'package:forensic_expert/domain/ports/ai_ports.dart';
 import 'package:forensic_expert/features/placeholder/presentation/in_development_view.dart';
 
 import '../helpers/fake_store.dart';
@@ -200,6 +201,29 @@ void main() {
       expect(tester.widget<ButtonStyleButton>(find0).onPressed, isNotNull);
     });
 
+    testWidgets('AI: server ulangan, hisobga kirilmagan — «hisobga kiring», '
+        '«ulanmagan» emas', (tester) async {
+      await pumpApp(
+        tester,
+        settings: completedSettings(),
+        initialLocation: Routes.ai,
+        testFixtures: false,
+        overrides: [
+          ...pilot.overrides,
+          entitlementServiceProvider.overrideWithValue(FakeStore(owned: true)),
+          aiAssistantProvider.overrideWithValue(const _SignedOutAi()),
+        ],
+      );
+      expect(find.byKey(const Key('ai.signInRequired')), findsOneWidget);
+      expect(find.byKey(const Key('ai.previewState')), findsNothing);
+      expect(find.text('Sign-in required'), findsOneWidget);
+      expect(find.text('Preview · not connected'), findsNothing);
+      expect(find.byKey(const Key('ai.demoLabel')), findsNothing);
+      await tester.tap(find.byKey(const Key('ai.signIn')));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const Key('ai.signInRequired')), findsNothing);
+    });
+
     testWidgets('kutubxona: ixcham holat belgisi, nom → guruh → holat', (
       tester,
     ) async {
@@ -268,4 +292,15 @@ void main() {
     expect(find.byKey(const Key('profile.signIn')), findsNothing);
     expect(find.byKey(const Key('profile.register')), findsNothing);
   });
+}
+
+class _SignedOutAi implements AiAssistant {
+  const _SignedOutAi();
+
+  @override
+  AiAvailability get availability => AiAvailability.signInRequired;
+
+  @override
+  Future<AiAnswer> ask(AiQuestion question) async =>
+      const AiAnswer(text: '', citations: [], noReliableAnswer: true);
 }

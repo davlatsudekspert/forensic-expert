@@ -5770,4 +5770,17 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get pubConfirm => 'Tasdiqlash';
+
+  @override
+  String get aiSignInTitle => 'AI’ga savol berish uchun hisobga kiring';
+
+  @override
+  String get aiSignInBody =>
+      'AI xizmati ulangan va faqat ilovadagi manbalar asosida, iqtiboslar bilan javob beradi. Savol berish uchun hisobga kirish kerak; manbalarni oflayn qidirish kirmasdan ham ishlaydi.';
+
+  @override
+  String get aiSendSignIn => 'Savol yuborish uchun hisobga kiring.';
+
+  @override
+  String get aiStatusSignIn => 'Hisobga kirish kerak';
 }

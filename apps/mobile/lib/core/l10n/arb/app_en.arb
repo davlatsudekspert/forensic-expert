@@ -7514,5 +7514,21 @@
   "pubConfirm": "Confirm",
   "@pubConfirm": {
     "description": "Action."
+  },
+  "aiSignInTitle": "Sign in to ask the AI",
+  "@aiSignInTitle": {
+    "description": "Card title."
+  },
+  "aiSignInBody": "The AI service is connected and answers only from the app's sources, with citations. Asking questions requires a signed-in account; offline source search works without it.",
+  "@aiSignInBody": {
+    "description": "Card body."
+  },
+  "aiSendSignIn": "Sign in to send questions to the AI.",
+  "@aiSendSignIn": {
+    "description": "Hint under the send button."
+  },
+  "aiStatusSignIn": "Sign-in required",
+  "@aiStatusSignIn": {
+    "description": "Header status chip."
   }
 }

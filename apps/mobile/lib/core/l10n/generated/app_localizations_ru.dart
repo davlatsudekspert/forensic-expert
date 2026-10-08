@@ -5791,4 +5791,17 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get pubConfirm => 'Подтвердить';
+
+  @override
+  String get aiSignInTitle => 'Войдите, чтобы задать вопрос ИИ';
+
+  @override
+  String get aiSignInBody =>
+      'Сервис ИИ подключён и отвечает только по источникам приложения со ссылками. Для вопросов нужен вход в аккаунт; офлайн-поиск источников работает и без него.';
+
+  @override
+  String get aiSendSignIn => 'Войдите, чтобы отправлять вопросы ИИ.';
+
+  @override
+  String get aiStatusSignIn => 'Нужен вход';
 }

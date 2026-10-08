@@ -5778,4 +5778,17 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get pubConfirm => 'Confirm';
+
+  @override
+  String get aiSignInTitle => 'Sign in to ask the AI';
+
+  @override
+  String get aiSignInBody =>
+      'The AI service is connected and answers only from the app\'s sources, with citations. Asking questions requires a signed-in account; offline source search works without it.';
+
+  @override
+  String get aiSendSignIn => 'Sign in to send questions to the AI.';
+
+  @override
+  String get aiStatusSignIn => 'Sign-in required';
 }

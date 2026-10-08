@@ -118,7 +118,7 @@ class RemoteAiAssistant implements AiAssistant {
   @override
   AiAvailability get availability => _auth.current.signedIn
       ? AiAvailability.available
-      : AiAvailability.notConfigured;
+      : AiAvailability.signInRequired;
 
   /// Javob [AiRouter]/[RagPipeline] orqali olinadi (manba tekshiruvi bilan).
   @override

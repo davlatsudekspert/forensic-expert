@@ -317,6 +317,10 @@ void main() {
         (await SignedInBetaAiEntitlementService(auth).current()).canAsk,
         isFalse,
       );
+      expect(
+        RemoteAiAssistant(auth).availability,
+        AiAvailability.signInRequired,
+      );
     });
 
     test('kirmagan foydalanuvchi / server xatosi — AiUnavailable', () async {
