@@ -2,7 +2,14 @@
 
 Holat: QABUL QILINDI, limit tiklangach (shanba) boshlanadi. Hali hech bir faza bajarilmagan.
 
-## ⚠️ TUZATISH (2026-10-08) — oldingi ABY 2025 ko‘rsatmalaridan ustun
+## ✅ YANGI QAROR (2026-10-08, kechroq) — quyidagi “TUZATISH”dan USTUN
+Egasi: ABY 2025 egasi ma’lumotiga ko‘ra ma’qullangan, hali sotuvga chiqmagan; ilmiy kutubxonaga integratsiyaga tayyorlanadi.
+- Ruxsat: lokal ochish va to‘liq tahlil (mundarija, fanlar, metodlar); fanlarga bog‘lash; qidiriladigan katalog; manba/sahifa/versiya/holat; barcha yozuvlar NEEDS_REVIEW.
+- Faqat yopiq test / admin ko‘rinishi. Taqiqlangan: ommaviy API, public GitHub, ochiq PDF havolasi, boshqa AI xizmatiga yuborish, ommaviy ilovada to‘liq chop etish, to‘liq tarjimani tarqatish — huquq tekshiruvi va alohida rozilikkacha.
+- Uch qatlam alohida: ORIGINAL_DOCUMENT (ABY), INDEPENDENT_CARD (mustaqil manbali kartalar), OFFICIAL_NORMATIVE (qonun/qaror/protokol).
+- ABY fayli va undan olingan katalog repoga commit qilinmaydi (lokal/admin artefakt). Production’ga faqat egasi natijani ko‘rib tasdiqlagach.
+
+## ⚠️ TUZATISH (2026-10-08) — (ESKIRGAN: yuqoridagi yangi qaror bilan almashtirildi)
 - "ABY 2025" (sud-tibbiy ekspertiza amaliyotlari yo‘riqnomasi) hali rasman tasdiqlanmagan/e’lon qilinmagan bo‘lishi mumkin: rasmiy, amaldagi yoki ommaviy metodika sifatida qabul qilinmaydi, "qo‘llanma" deb qayta nomlanmaydi.
 - Fayl GitHub, Supabase, AI/RAG, kutubxona yoki boshqa tashqi xizmatga yuklanmaydi; matn, jadval, rasm, metodlari ko‘chirilmaydi, tarjima/e’lon qilinmaydi.
 - Egasi, tasdiq maqomi va ruxsat aniqlanmaguncha ilmiy kontent importidan CHIQARILGAN.
