@@ -38,6 +38,13 @@ abstract final class Routes {
   static const practiceCatalog = '/library/guidelines/practice';
   static String guideline(String id) =>
       '/library/guidelines/card/${Uri.encodeComponent(id)}';
+  // «Ekspert maqolalari» (FE_PUBLICATIONS yoki admin).
+  static const publications = '/library/publications';
+  static String publication(String id) =>
+      '/library/publications/item/${Uri.encodeComponent(id)}';
+  static const publicationSubmit = '/library/publications/submit';
+  static const publicationsMine = '/library/publications/mine';
+  static const publicationsModeration = '/library/publications/moderation';
   // Provenance qatlami.
   static const conflicts = '/library/conflicts';
   static String conflict(String id) => '/library/conflicts/$id';

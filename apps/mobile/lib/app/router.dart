@@ -12,6 +12,7 @@ import '../core/settings/settings_controller.dart';
 import '../domain/catalog/tools_catalog.dart';
 import '../domain/knowledge/knowledge_models.dart';
 import '../domain/library/library_models.dart';
+import '../domain/publications/publication_models.dart';
 import '../domain/referral/referral_models.dart';
 import '../features/account/presentation/auth_screens.dart';
 import '../features/admin/presentation/admin_screen.dart';
@@ -43,6 +44,10 @@ import '../features/profile/presentation/legal_screens.dart';
 import '../features/profile/presentation/paywall_screen.dart';
 import '../features/profile/presentation/profile_screen.dart';
 import '../features/profile/presentation/settings_pickers.dart';
+import '../features/publications/presentation/moderation_queue_screen.dart';
+import '../features/publications/presentation/my_publications_screen.dart';
+import '../features/publications/presentation/publications_screen.dart';
+import '../features/publications/presentation/submit_publication_screen.dart';
 import '../features/referral/presentation/referral_screen.dart';
 import '../features/shell/presentation/app_shell.dart';
 import '../features/tools/presentation/module_hub_screen.dart';
@@ -334,6 +339,34 @@ final routerProvider = Provider<GoRouter>((ref) {
                       GoRoute(
                         path: 'practice',
                         builder: (c, s) => const PracticeCatalogScreen(),
+                      ),
+                    ],
+                  ),
+                  GoRoute(
+                    path: 'publications',
+                    builder: (c, s) => const PublicationsScreen(),
+                    routes: [
+                      GoRoute(
+                        path: 'item/:id',
+                        builder: (c, s) => PublicationDetailScreen(
+                          publicationId: s.pathParameters['id']!,
+                        ),
+                      ),
+                      GoRoute(
+                        path: 'submit',
+                        builder: (c, s) => SubmitPublicationScreen(
+                          initial: s.extra is Publication
+                              ? s.extra! as Publication
+                              : null,
+                        ),
+                      ),
+                      GoRoute(
+                        path: 'mine',
+                        builder: (c, s) => const MyPublicationsScreen(),
+                      ),
+                      GoRoute(
+                        path: 'moderation',
+                        builder: (c, s) => const ModerationQueueScreen(),
                       ),
                     ],
                   ),

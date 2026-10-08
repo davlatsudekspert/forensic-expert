@@ -6,6 +6,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../app/guidelines.dart';
 import '../../../app/providers.dart';
+import '../../../app/publications.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
@@ -405,6 +406,14 @@ class LibraryScreen extends ConsumerWidget {
         l.guidelinesTitle,
         guidelineCount,
       ),
+      // «Ekspert maqolalari»: FE_PUBLICATIONS yoki admin uchun.
+      if (ref.watch(publicationsVisibleProvider))
+        (
+          'publications',
+          Icons.article_outlined,
+          l.pubTitle,
+          ref.watch(publishedPublicationsProvider).value?.length ?? 0,
+        ),
       ('standards', Icons.rule_folder_outlined, l.libraryStandards, standards),
       (
         'research',
@@ -450,6 +459,7 @@ class LibraryScreen extends ConsumerWidget {
       'rapid' => Routes.knowledge(KnowledgeKind.screeningTest.name),
       'standards' => Routes.libraryStandards,
       'guidelines' => Routes.guidelines,
+      'publications' => Routes.publications,
       'research' => Routes.research,
       _ => Routes.jurisdictions,
     };

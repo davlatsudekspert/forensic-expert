@@ -7150,5 +7150,369 @@
   "loadingContent": "Loading…",
   "@loadingContent": {
     "description": "Screen reader label for a loading skeleton."
+  },
+  "pubTitle": "Expert publications",
+  "@pubTitle": {
+    "description": "Section title."
+  },
+  "pubIntro": "Articles by experts, published after moderation. Moderation checks format, rules and personal data — not scientific correctness.",
+  "@pubIntro": {
+    "description": "Intro."
+  },
+  "pubNotVerifiedNotice": "Submitting an article does not mean it has been scientifically verified.",
+  "@pubNotVerifiedNotice": {
+    "description": "Notice on every article."
+  },
+  "pubSearchHint": "Title, abstract or keyword",
+  "@pubSearchHint": {
+    "description": "Search field."
+  },
+  "pubAllDisciplines": "All disciplines",
+  "@pubAllDisciplines": {
+    "description": "Filter chip."
+  },
+  "pubEmpty": "No published articles yet.",
+  "@pubEmpty": {
+    "description": "Empty list."
+  },
+  "pubFilterEmpty": "No articles match your query.",
+  "@pubFilterEmpty": {
+    "description": "Empty filter result."
+  },
+  "pubLoadFailed": "Could not load articles. Check the connection.",
+  "@pubLoadFailed": {
+    "description": "Load error."
+  },
+  "pubReload": "Try again",
+  "@pubReload": {
+    "description": "Action."
+  },
+  "pubUnavailable": "This section is not available yet.",
+  "@pubUnavailable": {
+    "description": "Gated section."
+  },
+  "pubSubmit": "Submit an article",
+  "@pubSubmit": {
+    "description": "Action."
+  },
+  "pubMine": "My articles",
+  "@pubMine": {
+    "description": "Action / screen title."
+  },
+  "pubModeration": "Moderation",
+  "@pubModeration": {
+    "description": "Action / screen title."
+  },
+  "pubSignInRequired": "Sign in to submit articles or report them.",
+  "@pubSignInRequired": {
+    "description": "Signed-out note."
+  },
+  "pubSignIn": "Sign in",
+  "@pubSignIn": {
+    "description": "Action."
+  },
+  "pubStatusDraft": "Draft",
+  "@pubStatusDraft": {
+    "description": "Status."
+  },
+  "pubStatusSubmitted": "Submitted",
+  "@pubStatusSubmitted": {
+    "description": "Status."
+  },
+  "pubStatusScreening": "Initial check",
+  "@pubStatusScreening": {
+    "description": "Status."
+  },
+  "pubStatusInReview": "Under review",
+  "@pubStatusInReview": {
+    "description": "Status."
+  },
+  "pubStatusApproved": "Approved for publication",
+  "@pubStatusApproved": {
+    "description": "Status."
+  },
+  "pubStatusRejected": "Returned to the author",
+  "@pubStatusRejected": {
+    "description": "Status."
+  },
+  "pubStatusPublished": "Published",
+  "@pubStatusPublished": {
+    "description": "Status."
+  },
+  "pubStatusRetracted": "Retracted",
+  "@pubStatusRetracted": {
+    "description": "Status."
+  },
+  "pubStatusSuperseded": "Replaced by a new version",
+  "@pubStatusSuperseded": {
+    "description": "Status."
+  },
+  "pubAbstract": "Abstract",
+  "@pubAbstract": {
+    "description": "Field."
+  },
+  "pubKeywords": "Keywords",
+  "@pubKeywords": {
+    "description": "Field."
+  },
+  "pubAuthors": "Authors",
+  "@pubAuthors": {
+    "description": "Field."
+  },
+  "pubAffiliation": "Affiliation",
+  "@pubAffiliation": {
+    "description": "Field."
+  },
+  "pubDoi": "DOI identifier",
+  "@pubDoi": {
+    "description": "Field."
+  },
+  "pubReferences": "References",
+  "@pubReferences": {
+    "description": "Field."
+  },
+  "pubExternalUrl": "Full text link",
+  "@pubExternalUrl": {
+    "description": "Field."
+  },
+  "pubLanguage": "Article language",
+  "@pubLanguage": {
+    "description": "Field."
+  },
+  "pubDiscipline": "Discipline",
+  "@pubDiscipline": {
+    "description": "Field."
+  },
+  "pubVersion": "Version {version}",
+  "@pubVersion": {
+    "description": "Meta.",
+    "placeholders": {
+      "version": {
+        "type": "int"
+      }
+    }
+  },
+  "pubPublishedOn": "Published {date}",
+  "@pubPublishedOn": {
+    "description": "Meta.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "pubNotFound": "Article not found.",
+  "@pubNotFound": {
+    "description": "Detail empty."
+  },
+  "pubLangUz": "Uzbek",
+  "@pubLangUz": {
+    "description": "Language."
+  },
+  "pubLangRu": "Russian",
+  "@pubLangRu": {
+    "description": "Language."
+  },
+  "pubLangEn": "English",
+  "@pubLangEn": {
+    "description": "Language."
+  },
+  "pubReport": "Report",
+  "@pubReport": {
+    "description": "Action."
+  },
+  "pubReportTitle": "Report this article",
+  "@pubReportTitle": {
+    "description": "Dialog title."
+  },
+  "pubReportDetails": "Details (optional)",
+  "@pubReportDetails": {
+    "description": "Field."
+  },
+  "pubReportSend": "Send",
+  "@pubReportSend": {
+    "description": "Action."
+  },
+  "pubCancel": "Cancel",
+  "@pubCancel": {
+    "description": "Action."
+  },
+  "pubReasonPlagiarism": "Plagiarism",
+  "@pubReasonPlagiarism": {
+    "description": "Reason."
+  },
+  "pubReasonPersonalData": "Personal data",
+  "@pubReasonPersonalData": {
+    "description": "Reason."
+  },
+  "pubReasonCopyright": "Copyright violation",
+  "@pubReasonCopyright": {
+    "description": "Reason."
+  },
+  "pubReasonMisinformation": "Misleading content",
+  "@pubReasonMisinformation": {
+    "description": "Reason."
+  },
+  "pubReasonAbuse": "Offensive content",
+  "@pubReasonAbuse": {
+    "description": "Reason."
+  },
+  "pubReasonOther": "Other",
+  "@pubReasonOther": {
+    "description": "Reason."
+  },
+  "pubReported": "Thank you. The report was sent to moderators.",
+  "@pubReported": {
+    "description": "Result."
+  },
+  "pubAlreadyReported": "You have already reported this article.",
+  "@pubAlreadyReported": {
+    "description": "Result."
+  },
+  "pubActionFailed": "Action failed. Check the connection.",
+  "@pubActionFailed": {
+    "description": "Result."
+  },
+  "pubFormTitle": "Article title",
+  "@pubFormTitle": {
+    "description": "Field."
+  },
+  "pubFormKeywords": "Keywords (comma-separated)",
+  "@pubFormKeywords": {
+    "description": "Field."
+  },
+  "pubFormAuthors": "Authors (one per line)",
+  "@pubFormAuthors": {
+    "description": "Field."
+  },
+  "pubFormDoi": "DOI (if any)",
+  "@pubFormDoi": {
+    "description": "Field."
+  },
+  "pubFormUrl": "Full text link (https://…)",
+  "@pubFormUrl": {
+    "description": "Field."
+  },
+  "pubPiiWarning": "Do not include personal data: names of victims or suspects, case numbers, addresses, photos of identifiable people, medical records.",
+  "@pubPiiWarning": {
+    "description": "Warning."
+  },
+  "pubConfirmationsTitle": "Required confirmations",
+  "@pubConfirmationsTitle": {
+    "description": "Section."
+  },
+  "pubConfirmRights": "I am the author or have the right to publish this text.",
+  "@pubConfirmRights": {
+    "description": "Checkbox."
+  },
+  "pubConfirmConsent": "I agree that after moderation the article will be publicly available in FORENSIC EXPERT.",
+  "@pubConfirmConsent": {
+    "description": "Checkbox."
+  },
+  "pubConfirmNoPii": "The article contains no personal data of victims, suspects or other people.",
+  "@pubConfirmNoPii": {
+    "description": "Checkbox."
+  },
+  "pubSaveDraft": "Save draft",
+  "@pubSaveDraft": {
+    "description": "Action."
+  },
+  "pubSubmitForModeration": "Submit for moderation",
+  "@pubSubmitForModeration": {
+    "description": "Action."
+  },
+  "pubSubmitHint": "To submit, fill in the title, abstract and discipline and tick all three confirmations.",
+  "@pubSubmitHint": {
+    "description": "Hint."
+  },
+  "pubDraftSaved": "Draft saved.",
+  "@pubDraftSaved": {
+    "description": "Result."
+  },
+  "pubSubmitted": "The article was sent for moderation.",
+  "@pubSubmitted": {
+    "description": "Result."
+  },
+  "pubSubmitRejected": "Not sent: fill in the required fields and confirmations.",
+  "@pubSubmitRejected": {
+    "description": "Result."
+  },
+  "pubEditTitle": "Edit draft",
+  "@pubEditTitle": {
+    "description": "Screen title."
+  },
+  "pubPaidNote": "A paid subscription does not affect moderation.",
+  "@pubPaidNote": {
+    "description": "Note."
+  },
+  "pubRequired": "Required",
+  "@pubRequired": {
+    "description": "Field error."
+  },
+  "pubMineEmpty": "You have no articles yet.",
+  "@pubMineEmpty": {
+    "description": "Empty list."
+  },
+  "pubTimeline": "History",
+  "@pubTimeline": {
+    "description": "Section."
+  },
+  "pubModeratorComment": "Moderator comment",
+  "@pubModeratorComment": {
+    "description": "Label."
+  },
+  "pubEdit": "Edit",
+  "@pubEdit": {
+    "description": "Action."
+  },
+  "pubQueueEmpty": "No articles awaiting moderation.",
+  "@pubQueueEmpty": {
+    "description": "Empty queue."
+  },
+  "pubReports": "Reports ({count})",
+  "@pubReports": {
+    "description": "Section.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pubMoveTo": "Move to: {status}",
+  "@pubMoveTo": {
+    "description": "Action.",
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "pubCommentLabel": "Comment for the author",
+  "@pubCommentLabel": {
+    "description": "Field."
+  },
+  "pubCommentRequired": "A comment is required for this decision.",
+  "@pubCommentRequired": {
+    "description": "Result."
+  },
+  "pubOwnArticle": "Your own article: another moderator must review it.",
+  "@pubOwnArticle": {
+    "description": "Note."
+  },
+  "pubModerationDone": "Updated.",
+  "@pubModerationDone": {
+    "description": "Result."
+  },
+  "pubInvalidTransition": "This step is not allowed from the current state.",
+  "@pubInvalidTransition": {
+    "description": "Result."
+  },
+  "pubForbidden": "This section is for moderators only.",
+  "@pubForbidden": {
+    "description": "Empty."
+  },
+  "pubConfirm": "Confirm",
+  "@pubConfirm": {
+    "description": "Action."
   }
 }
