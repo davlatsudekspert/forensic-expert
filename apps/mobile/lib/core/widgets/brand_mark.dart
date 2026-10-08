@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../design/theme.dart';
-
 part 'brand_emblem.g.dart';
 
 /// Optik soddalashtirish darajalari (`design/brand/tools/generate_brand.py`).
@@ -37,17 +35,18 @@ class BrandMark extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final c = FeTheme.of(context);
     final dark = onDark || Theme.of(context).brightness == Brightness.dark;
+    // Emblema ranglari brend kitobidan (docs/BRAND.md) — UI palitrasidan
+    // mustaqil, logotip barcha mavzularda bir xil qoladi.
     return ExcludeSemantics(
       child: SizedBox.square(
         dimension: size,
         child: CustomPaint(
           painter: BrandEmblemPainter(
             tier: tier ?? tierFor(size),
-            ink: dark ? const Color(0xFFE8EDF4) : c.brand,
+            ink: dark ? const Color(0xFFE8EDF4) : const Color(0xFF0F1E3D),
             gold: dark ? const Color(0xFFC9A75E) : const Color(0xFF9C7A33),
-            accent: dark ? const Color(0xFF4CC9D6) : c.accent,
+            accent: dark ? const Color(0xFF4CC9D6) : const Color(0xFF0A6F7A),
             fill: dark ? const Color(0xFF15284D) : Colors.white,
           ),
         ),

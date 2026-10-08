@@ -6802,5 +6802,38 @@
   "calcErrorAmbient": "Ambient temperature must be between −20 and 35 °C.",
   "@calcErrorAmbient": {
     "description": "Error."
+  },
+  "homeGreeting": "Welcome",
+  "@homeGreeting": {
+    "description": "Home header greeting above the role chip."
+  },
+  "homeRoleChip": "Mode: {mode}",
+  "@homeRoleChip": {
+    "description": "Home header: current usage mode (Professional / Student). Opens mode settings.",
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "homeAiEntryBody": "Ask a scientific question. Answers cite their sources.",
+  "@homeAiEntryBody": {
+    "description": "Home: subtitle of the AI entry card."
+  },
+  "homeResourcesHeading": "Library & tools",
+  "@homeResourcesHeading": {
+    "description": "Home section: scientific library and professional tools."
+  },
+  "homeLibraryBody": "Substances, methods, standards and references",
+  "@homeLibraryBody": {
+    "description": "Home: subtitle of the scientific library entry."
+  },
+  "homeContinueSaved": "Continue & saved",
+  "@homeContinueSaved": {
+    "description": "Home section: recently viewed, recent tools, favourites, recent searches."
+  },
+  "loadingContent": "Loading…",
+  "@loadingContent": {
+    "description": "Screen reader label for a loading skeleton."
   }
 }

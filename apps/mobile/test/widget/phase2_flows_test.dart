@@ -174,7 +174,7 @@ void main() {
         expect(
           find.descendant(
             of: jur,
-            matching: find.textContaining('JURISDICTION LAYER: INTERNATIONAL'),
+            matching: find.textContaining('Jurisdiction layer: International'),
           ),
           findsOneWidget,
         );
@@ -216,7 +216,7 @@ void main() {
       expect(
         find.descendant(
           of: jur,
-          matching: find.textContaining('JURISDICTION LAYER: UZBEKISTAN'),
+          matching: find.textContaining('Jurisdiction layer: Uzbekistan'),
         ),
         findsOneWidget,
       );

@@ -30,9 +30,18 @@ class FeTheme extends ThemeExtension<FeTheme> {
       t < 0.5 ? this : (other ?? this);
 }
 
+/// Ilovaga qo‘shilgan (offline) shriftlar — hammasi SIL OFL 1.1.
+///
+/// * [serif] — Source Serif 4: display/headline/title (jurnal uslubi).
+/// * [sans] — Inter: asosiy matn, interfeys yorliqlari.
+/// * [mono] — JetBrains Mono: formulalar, kodlar, aniq raqamlar.
 abstract final class FeFonts {
+  static const serif = 'SourceSerif4';
   static const sans = 'Inter';
   static const mono = 'JetBrainsMono';
+
+  /// JetBrains Mono’da yo‘q belgilar (masalan, «ʻ», «Ҳ») Inter’dan olinadi.
+  static const monoFallback = [sans];
 }
 
 /// Light / Dark mavzularini tokenlardan quradi.
@@ -90,29 +99,36 @@ abstract final class FeThemeBuilder {
       extensions: [FeTheme(c, highContrast: highContrast)],
     );
 
-    final text = base.textTheme.apply(
+    final sansText = base.textTheme.apply(
       bodyColor: c.textPrimary,
       displayColor: c.textPrimary,
       fontFamily: FeFonts.sans,
     );
+    // Jurnal uslubidagi serif — faqat display / headline / katta title.
+    TextStyle? serif(TextStyle? s, {double tracking = -0.2, double? h}) =>
+        s?.copyWith(
+          fontFamily: FeFonts.serif,
+          fontWeight: FontWeight.w600,
+          letterSpacing: tracking,
+          height: h,
+        );
+    final text = sansText.copyWith(
+      displayLarge: serif(sansText.displayLarge, tracking: -0.8, h: 1.12),
+      displayMedium: serif(sansText.displayMedium, tracking: -0.6, h: 1.14),
+      displaySmall: serif(sansText.displaySmall, tracking: -0.4, h: 1.18),
+      headlineLarge: serif(sansText.headlineLarge, tracking: -0.4, h: 1.2),
+      headlineMedium: serif(sansText.headlineMedium, tracking: -0.3, h: 1.22),
+      headlineSmall: serif(sansText.headlineSmall, tracking: -0.2, h: 1.25),
+      titleLarge: serif(sansText.titleLarge, tracking: -0.1, h: 1.27),
+      titleMedium: serif(sansText.titleMedium, tracking: 0, h: 1.3),
+      titleSmall: sansText.titleSmall?.copyWith(fontWeight: FontWeight.w600),
+      bodyLarge: sansText.bodyLarge?.copyWith(height: 1.5),
+      bodyMedium: sansText.bodyMedium?.copyWith(height: 1.45),
+      labelLarge: sansText.labelLarge?.copyWith(fontWeight: FontWeight.w600),
+    );
 
     return base.copyWith(
-      textTheme: text.copyWith(
-        headlineMedium: text.headlineMedium?.copyWith(
-          fontWeight: FontWeight.w600,
-          letterSpacing: -0.2,
-        ),
-        headlineSmall: text.headlineSmall?.copyWith(
-          fontWeight: FontWeight.w700,
-          letterSpacing: -0.2,
-        ),
-        titleLarge: text.titleLarge?.copyWith(
-          fontWeight: FontWeight.w600,
-          letterSpacing: -0.1,
-        ),
-        titleMedium: text.titleMedium?.copyWith(fontWeight: FontWeight.w600),
-        labelLarge: text.labelLarge?.copyWith(fontWeight: FontWeight.w600),
-      ),
+      textTheme: text,
       appBarTheme: AppBarTheme(
         backgroundColor: c.background,
         foregroundColor: c.textPrimary,
@@ -238,7 +254,7 @@ abstract final class FeThemeBuilder {
       ),
       pageTransitionsTheme: const PageTransitionsTheme(
         builders: {
-          TargetPlatform.android: FadeForwardsPageTransitionsBuilder(),
+          TargetPlatform.android: FePageTransitionsBuilder(),
           TargetPlatform.iOS: CupertinoPageTransitionsBuilder(),
         },
       ),
@@ -246,8 +262,58 @@ abstract final class FeThemeBuilder {
   }
 
   /// Raqamlar uchun uslub — tabular figures (natijalar ustunlarda tekis).
+  /// Formulalar va kodlar uchun monoshirift; yo‘q belgilar Inter’dan.
   static TextStyle numeric(TextStyle base) => base.copyWith(
     fontFamily: FeFonts.mono,
+    fontFamilyFallback: FeFonts.monoFallback,
     fontFeatures: const [FontFeature.tabularFigures()],
   );
+
+  /// Statistik raqamlar (sanoq, foiz) — Inter tabular figures — matn
+  /// bilan bir oilada, ustunlarda tekis turadi.
+  static TextStyle figures(TextStyle base) => base.copyWith(
+    fontFamily: FeFonts.sans,
+    fontFeatures: const [
+      FontFeature.tabularFigures(),
+      FontFeature.liningFigures(),
+    ],
+  );
+}
+
+/// Tez va sokin sahifa o‘tishi: yengil fade + 2 % ko‘tarilish.
+/// Reduced motion (OS «Remove animations») yoqilganda — animatsiyasiz.
+class FePageTransitionsBuilder extends PageTransitionsBuilder {
+  const FePageTransitionsBuilder();
+
+  @override
+  Duration get transitionDuration => const Duration(milliseconds: 240);
+
+  @override
+  Duration get reverseTransitionDuration => const Duration(milliseconds: 200);
+
+  @override
+  Widget buildTransitions<T>(
+    PageRoute<T> route,
+    BuildContext context,
+    Animation<double> animation,
+    Animation<double> secondaryAnimation,
+    Widget child,
+  ) {
+    if (MediaQuery.maybeDisableAnimationsOf(context) ?? false) return child;
+    final curved = CurvedAnimation(
+      parent: animation,
+      curve: Curves.easeOutCubic,
+      reverseCurve: Curves.easeInCubic,
+    );
+    return FadeTransition(
+      opacity: curved,
+      child: SlideTransition(
+        position: Tween<Offset>(
+          begin: const Offset(0, 0.02),
+          end: Offset.zero,
+        ).animate(curved),
+        child: child,
+      ),
+    );
+  }
 }

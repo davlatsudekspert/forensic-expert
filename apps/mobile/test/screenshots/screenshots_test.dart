@@ -26,6 +26,11 @@ Future<void> _loadFonts() async {
     await loader.load();
   }
 
+  await load('SourceSerif4', [
+    'assets/fonts/source_serif_4/SourceSerif4-Regular.ttf',
+    'assets/fonts/source_serif_4/SourceSerif4-SemiBold.ttf',
+    'assets/fonts/source_serif_4/SourceSerif4-Bold.ttf',
+  ]);
   await load('Inter', [
     'assets/fonts/inter/Inter-Regular.ttf',
     'assets/fonts/inter/Inter-Medium.ttf',

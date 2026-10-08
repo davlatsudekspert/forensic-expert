@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
-/// FORENSIC EXPERT dizayn tokenlari.
+/// FORENSIC EXPERT dizayn tokenlari — «Scientific Luxury».
 ///
-/// Palitra: Deep Navy · Graphite · White · Cool Gray + bitta vazmin ilmiy
-/// accent (Spectral Teal). Barcha matn/fon juftliklari WCAG 2.2 AA
-/// (≥ 4.5:1) talabiga avtomatik test bilan tekshiriladi
-/// (`test/unit/contrast_test.dart`).
+/// Palitra: grafit / deyarli qora qatlamlar (qorong‘i), fil suyagi (yorug‘),
+/// iliq fil suyagi matn va **bitta** vazmin aksent — xira shampan oltini.
+/// Oltin faqat tanlangan holat, asosiy ta’kid va premium detallarda
+/// ishlatiladi (hamma joyda emas). Barcha matn/fon juftliklari WCAG 2.2 AA
+/// (≥ 4.5:1), ikonka/chegara juftliklari ≥ 3:1 — avtomatik test bilan
+/// tekshiriladi (`test/unit/contrast_test.dart`).
 @immutable
 class FeColorTokens {
   const FeColorTokens({
@@ -24,6 +26,7 @@ class FeColorTokens {
     required this.onAccent,
     required this.accentContainer,
     required this.onAccentContainer,
+    required this.accentBorder,
     required this.verified,
     required this.reviewed,
     required this.warning,
@@ -34,21 +37,36 @@ class FeColorTokens {
     required this.focusRing,
   });
 
+  /// Sahifa foni (qorong‘ida grafit, yorug‘da fil suyagi).
   final Color background;
+
+  /// Ikkilamchi fon — bo‘limlar, sarlavha paneli, tonal bloklar.
   final Color surface;
+
+  /// Karta sirti.
   final Color surfaceRaised;
   final Color surfaceSunken;
+
+  /// Juda nozik, past kontrastli ajratuvchi chegara (bezak).
   final Color border;
+
+  /// Ma’noli chegara (input, tugma) — fonga nisbatan ≥ 3:1.
   final Color borderStrong;
   final Color textPrimary;
   final Color textSecondary;
   final Color textOnBrand;
   final Color brand;
   final Color brandContainer;
+
+  /// Shampan oltini (qorong‘i) / iliq bronza (yorug‘). Matn sifatida ham
+  /// ≥ 4.5:1.
   final Color accent;
   final Color onAccent;
   final Color accentContainer;
   final Color onAccentContainer;
+
+  /// Premium detallar uchun ingichka oltin chiziq (bezak, ma’no tashimaydi).
+  final Color accentBorder;
   final Color verified;
   final Color reviewed;
   final Color warning;
@@ -58,44 +76,57 @@ class FeColorTokens {
   final Color danger;
   final Color focusRing;
 
-  /// Kontrast testi uchun: (oldingi rang, fon, tavsif).
+  /// Kontrast testi uchun: (oldingi rang, fon, tavsif) — matn, ≥ 4.5:1.
   List<(Color, Color, String)> get textPairs => [
     (textPrimary, background, 'textPrimary/background'),
     (textPrimary, surface, 'textPrimary/surface'),
     (textPrimary, surfaceRaised, 'textPrimary/surfaceRaised'),
     (textSecondary, background, 'textSecondary/background'),
     (textSecondary, surface, 'textSecondary/surface'),
+    (textSecondary, surfaceRaised, 'textSecondary/surfaceRaised'),
     (textOnBrand, brand, 'textOnBrand/brand'),
     (accent, background, 'accent/background'),
     (accent, surface, 'accent/surface'),
+    (accent, surfaceRaised, 'accent/surfaceRaised'),
     (onAccent, accent, 'onAccent/accent'),
     (onAccentContainer, accentContainer, 'onAccentContainer/accentContainer'),
+    (textPrimary, accentContainer, 'textPrimary/accentContainer'),
     (verified, background, 'verified/background'),
     (reviewed, background, 'reviewed/background'),
     (onWarningContainer, warningContainer, 'onWarning/warningContainer'),
     (outdated, background, 'outdated/background'),
     (danger, background, 'danger/background'),
   ];
+
+  /// Ikonka va ma’noli chegaralar (WCAG 1.4.11, ≥ 3:1).
+  List<(Color, Color, String)> get uiPairs => [
+    (borderStrong, background, 'borderStrong/background'),
+    (borderStrong, surfaceRaised, 'borderStrong/surfaceRaised'),
+    (accent, surfaceRaised, 'accent icon/surfaceRaised'),
+    (focusRing, background, 'focusRing/background'),
+    (focusRing, surfaceRaised, 'focusRing/surfaceRaised'),
+  ];
 }
 
 abstract final class FePalette {
-  // Sahifa — sovuq kulrang; kartalar — toza oq (ilmiy, institutsional).
+  // Fil suyagi sahifa, oq kartalar, grafit matn, iliq bronza aksent.
   static const light = FeColorTokens(
-    background: Color(0xFFF5F7FA),
-    surface: Color(0xFFEEF1F5),
+    background: Color(0xFFF7F5EF),
+    surface: Color(0xFFEFECE4),
     surfaceRaised: Color(0xFFFFFFFF),
-    surfaceSunken: Color(0xFFE8ECF1),
-    border: Color(0xFFDCE2EA),
-    borderStrong: Color(0xFF8A95A6),
-    textPrimary: Color(0xFF0B1220),
-    textSecondary: Color(0xFF4A5568),
+    surfaceSunken: Color(0xFFE8E4DA),
+    border: Color(0xFFE3DED3),
+    borderStrong: Color(0xFF85807A),
+    textPrimary: Color(0xFF161B22),
+    textSecondary: Color(0xFF525A66),
     textOnBrand: Color(0xFFFFFFFF),
-    brand: Color(0xFF0F1E3D),
-    brandContainer: Color(0xFFE3E8F1),
-    accent: Color(0xFF0A6F7A),
+    brand: Color(0xFF1A212C),
+    brandContainer: Color(0xFFE9E6DE),
+    accent: Color(0xFF7D5F27),
     onAccent: Color(0xFFFFFFFF),
-    accentContainer: Color(0xFFE0F2F4),
-    onAccentContainer: Color(0xFF053E45),
+    accentContainer: Color(0xFFF3EBD8),
+    onAccentContainer: Color(0xFF4A3810),
+    accentBorder: Color(0xFFD9C9A3),
     verified: Color(0xFF1B6E47),
     reviewed: Color(0xFF2350A0),
     warning: Color(0xFF8A5A00),
@@ -103,34 +134,35 @@ abstract final class FePalette {
     onWarningContainer: Color(0xFF5C3B00),
     outdated: Color(0xFF5B6575),
     danger: Color(0xFFB42318),
-    focusRing: Color(0xFF0A6F7A),
+    focusRing: Color(0xFF7D5F27),
   );
 
-  // Chuqur navy / grafit qatlamlar (teskari emas — alohida loyihalangan).
+  // Grafit / deyarli qora qatlamlar, iliq fil suyagi matn, shampan oltini.
   static const dark = FeColorTokens(
-    background: Color(0xFF0A111E),
-    surface: Color(0xFF101A2C),
-    surfaceRaised: Color(0xFF142036),
-    surfaceSunken: Color(0xFF070C16),
-    border: Color(0xFF243250),
-    borderStrong: Color(0xFF66738A),
-    textPrimary: Color(0xFFE8ECF2),
-    textSecondary: Color(0xFFA3AEC0),
-    textOnBrand: Color(0xFF0B1220),
-    brand: Color(0xFFDCE3EE),
-    brandContainer: Color(0xFF1C2A44),
-    accent: Color(0xFF4CC9D6),
-    onAccent: Color(0xFF04262B),
-    accentContainer: Color(0xFF0E3A40),
-    onAccentContainer: Color(0xFFBDEFF4),
+    background: Color(0xFF0B1017),
+    surface: Color(0xFF121A25),
+    surfaceRaised: Color(0xFF192332),
+    surfaceSunken: Color(0xFF080C12),
+    border: Color(0xFF253042),
+    borderStrong: Color(0xFF6B7789),
+    textPrimary: Color(0xFFF4F4F1),
+    textSecondary: Color(0xFF9AA4B2),
+    textOnBrand: Color(0xFF0B1017),
+    brand: Color(0xFFE8E4DA),
+    brandContainer: Color(0xFF1E2A3B),
+    accent: Color(0xFFC8A86B),
+    onAccent: Color(0xFF0B1017),
+    accentContainer: Color(0xFF2A2417),
+    onAccentContainer: Color(0xFFE9D3A6),
+    accentBorder: Color(0xFF4A3F2B),
     verified: Color(0xFF6ED3A0),
     reviewed: Color(0xFF8AB4F8),
     warning: Color(0xFFF2C14E),
     warningContainer: Color(0xFF3A2B05),
     onWarningContainer: Color(0xFFFFE3A3),
-    outdated: Color(0xFFA3AEC0),
+    outdated: Color(0xFF9AA4B2),
     danger: Color(0xFFF97066),
-    focusRing: Color(0xFF4CC9D6),
+    focusRing: Color(0xFFC8A86B),
   );
 
   /// Yuqori kontrast (light) — barcha matn juftliklari ≥ 7:1 (WCAG AAA),
@@ -139,18 +171,19 @@ abstract final class FePalette {
     background: Color(0xFFFFFFFF),
     surface: Color(0xFFFFFFFF),
     surfaceRaised: Color(0xFFFFFFFF),
-    surfaceSunken: Color(0xFFF0F2F5),
-    border: Color(0xFF3D4757),
-    borderStrong: Color(0xFF0B1220),
+    surfaceSunken: Color(0xFFF2F0EA),
+    border: Color(0xFF3D4450),
+    borderStrong: Color(0xFF0B1017),
     textPrimary: Color(0xFF000000),
-    textSecondary: Color(0xFF1F2937),
+    textSecondary: Color(0xFF1F252E),
     textOnBrand: Color(0xFFFFFFFF),
-    brand: Color(0xFF071230),
-    brandContainer: Color(0xFFD5DCEA),
-    accent: Color(0xFF00474F),
+    brand: Color(0xFF0B1017),
+    brandContainer: Color(0xFFE2DFD6),
+    accent: Color(0xFF5A4314),
     onAccent: Color(0xFFFFFFFF),
-    accentContainer: Color(0xFFCDEBEE),
-    onAccentContainer: Color(0xFF00262B),
+    accentContainer: Color(0xFFF2E6CC),
+    onAccentContainer: Color(0xFF2B1F05),
+    accentBorder: Color(0xFF5A4314),
     verified: Color(0xFF0B4A2E),
     reviewed: Color(0xFF12336E),
     warning: Color(0xFF573700),
@@ -158,34 +191,35 @@ abstract final class FePalette {
     onWarningContainer: Color(0xFF331F00),
     outdated: Color(0xFF2E3542),
     danger: Color(0xFF7A140D),
-    focusRing: Color(0xFF00474F),
+    focusRing: Color(0xFF5A4314),
   );
 
   /// Yuqori kontrast (dark) — barcha matn juftliklari ≥ 7:1 (WCAG AAA).
   static const darkHighContrast = FeColorTokens(
     background: Color(0xFF000000),
-    surface: Color(0xFF05080F),
-    surfaceRaised: Color(0xFF0B111D),
+    surface: Color(0xFF06090D),
+    surfaceRaised: Color(0xFF0D131B),
     surfaceSunken: Color(0xFF000000),
-    border: Color(0xFFB8C2D3),
+    border: Color(0xFFBFC6D0),
     borderStrong: Color(0xFFFFFFFF),
     textPrimary: Color(0xFFFFFFFF),
-    textSecondary: Color(0xFFDDE3EC),
+    textSecondary: Color(0xFFE0E4EA),
     textOnBrand: Color(0xFF000000),
-    brand: Color(0xFFF2F5FA),
-    brandContainer: Color(0xFF1A2640),
-    accent: Color(0xFF8FE6EE),
+    brand: Color(0xFFF7F5EF),
+    brandContainer: Color(0xFF1E2733),
+    accent: Color(0xFFE6CF9C),
     onAccent: Color(0xFF000000),
-    accentContainer: Color(0xFF003A40),
-    onAccentContainer: Color(0xFFE6FBFD),
+    accentContainer: Color(0xFF2E2410),
+    onAccentContainer: Color(0xFFFFF3DA),
+    accentBorder: Color(0xFFE6CF9C),
     verified: Color(0xFFA6F0C9),
     reviewed: Color(0xFFC2D8FF),
     warning: Color(0xFFFFDA85),
     warningContainer: Color(0xFF2B1F00),
     onWarningContainer: Color(0xFFFFF0CC),
-    outdated: Color(0xFFDDE3EC),
+    outdated: Color(0xFFE0E4EA),
     danger: Color(0xFFFFB4AB),
-    focusRing: Color(0xFF8FE6EE),
+    focusRing: Color(0xFFE6CF9C),
   );
 }
 
@@ -218,14 +252,14 @@ abstract final class FeShadow {
       ? const []
       : const [
           BoxShadow(
-            color: Color(0x0F0F1E3D),
+            color: Color(0x0F161B22),
             blurRadius: 2,
             offset: Offset(0, 1),
           ),
           BoxShadow(
-            color: Color(0x0D0F1E3D),
-            blurRadius: 16,
-            offset: Offset(0, 6),
+            color: Color(0x08161B22),
+            blurRadius: 14,
+            offset: Offset(0, 3),
           ),
         ];
 }

@@ -106,10 +106,7 @@ class ProfessionalReviewSection extends ConsumerWidget {
         ),
         const SizedBox(height: FeSpace.sm),
         if (result.isLoading)
-          const Padding(
-            padding: EdgeInsets.all(FeSpace.sm),
-            child: Center(child: CircularProgressIndicator()),
-          )
+          FeListSkeleton(rows: 2, semanticLabel: l.loadingContent)
         else if (reviews.isEmpty)
           Padding(
             padding: const EdgeInsets.symmetric(vertical: FeSpace.xs),

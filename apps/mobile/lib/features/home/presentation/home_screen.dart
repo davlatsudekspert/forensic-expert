@@ -141,9 +141,16 @@ class HomeScreen extends ConsumerWidget {
     final mode = ref.watch(
       settingsControllerProvider.select((s) => s.userMode),
     );
-    final modules = HomeModule.orderFor(mode);
+    // AI alohida markaziy kartada — to‘rda takrorlanmaydi.
+    final modules = [
+      for (final m in HomeModule.orderFor(mode))
+        if (m != HomeModule.ai) m,
+    ];
     final isStudent = mode == UserMode.student;
 
+    // Ierarxiya (egasi belgilagan tartib): sarlavha → salomlashish/rol →
+    // markaziy ilmiy qidiruv → Expert AI → fan yo‘nalishlari →
+    // (Yo‘riqnomalar) → kutubxona → vositalar → davom ettirish/saqlangan.
     return Scaffold(
       body: SafeArea(
         top: false,
@@ -155,15 +162,16 @@ class HomeScreen extends ConsumerWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  const SizedBox(height: FeSpace.sm),
+                  const SizedBox(height: FeSpace.md),
+                  const _AiEntryCard(),
                   if (FeFlags.showTestFixtures) ...[
-                    const SizedBox(height: FeSpace.xs),
+                    const SizedBox(height: FeSpace.md),
                     FeBanner(
                       icon: Icons.info_outline,
                       text: l.homePrototypeNotice,
                     ),
                   ] else if (FeFlags.contentChannel != 'production') ...[
-                    const SizedBox(height: FeSpace.xs),
+                    const SizedBox(height: FeSpace.md),
                     _ReviewNotice(
                       key: const Key('home.pilotNotice'),
                       text: l.homePilotNotice,
@@ -171,15 +179,34 @@ class HomeScreen extends ConsumerWidget {
                   ],
                   const FirstStepsCard(),
                   if (isStudent) ...[
-                    const SizedBox(height: FeSpace.md),
+                    const SizedBox(height: FeSpace.sm),
                     const _ContinueLearningCard(),
                   ],
-                  const SizedBox(height: FeSpace.sm),
-                  const _DatabaseCard(),
                   FeSectionHeader(l.homeAreasHeading),
                   _ModuleGrid(modules: modules),
                   const SizedBox(height: FeSpace.sm),
                   const _AllDisciplinesTile(),
+                  // TODO(guidelines): «Yo‘riqnomalar» kartasi shu yerga
+                  // (kutubxonadan oldin) — `Routes.guidelines` ('/guidelines')
+                  // qo‘shilgach. Marshrut hozircha yo‘q: karta ko‘rsatilmaydi.
+                  FeSectionHeader(l.homeResourcesHeading),
+                  _ResourceTile(
+                    key: const Key('home.library'),
+                    icon: Icons.local_library_outlined,
+                    title: l.libraryTitle,
+                    body: l.homeLibraryBody,
+                    onTap: () => context.go(Routes.library),
+                  ),
+                  const SizedBox(height: FeSpace.sm),
+                  _ResourceTile(
+                    key: const Key('home.tools'),
+                    icon: Icons.calculate_outlined,
+                    title: l.toolsTitle,
+                    body: l.toolsSubtitle,
+                    onTap: () => context.go(Routes.tools),
+                  ),
+                  const SizedBox(height: FeSpace.sm),
+                  const _DatabaseCard(),
                   const _QuickAccess(),
                   const SizedBox(height: FeSpace.md),
                   const InviteColleagueCard(
@@ -193,6 +220,135 @@ class HomeScreen extends ConsumerWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+/// Markaziy «Expert AI» kirishi — bitta aniq amal, oltin ikonka.
+class _AiEntryCard extends StatelessWidget {
+  const _AiEntryCard();
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    return FeCard(
+      key: const Key('home.module.ai'),
+      onTap: () => context.go(HomeModule.ai.route),
+      child: _EntryLayout(
+        leading: DecoratedBox(
+          decoration: BoxDecoration(
+            color: c.accentContainer,
+            borderRadius: BorderRadius.circular(FeRadius.md),
+            border: Border.all(color: c.accentBorder),
+          ),
+          child: SizedBox.square(
+            dimension: 44,
+            child: Icon(HomeModule.ai.icon, color: c.accent, size: 22),
+          ),
+        ),
+        title: Text(HomeModule.ai.label(l), style: t.titleMedium),
+        body: l.homeAiEntryBody,
+        trailing: Icon(Icons.arrow_forward, color: c.accent, size: 20),
+      ),
+    );
+  }
+}
+
+/// Kutubxona / vositalar kirishi — ikonka, sarlavha, qisqa tavsif.
+class _ResourceTile extends StatelessWidget {
+  const _ResourceTile({
+    super.key,
+    required this.icon,
+    required this.title,
+    required this.body,
+    required this.onTap,
+  });
+
+  final IconData icon;
+  final String title;
+  final String body;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    return FeCard(
+      onTap: onTap,
+      child: _EntryLayout(
+        leading: DecoratedBox(
+          decoration: BoxDecoration(
+            color: c.surface,
+            borderRadius: BorderRadius.circular(FeRadius.md),
+          ),
+          child: SizedBox.square(
+            dimension: 40,
+            child: Icon(icon, color: c.textPrimary, size: 21),
+          ),
+        ),
+        title: Text(title, style: t.titleSmall),
+        body: body,
+        trailing: Icon(Icons.chevron_right, color: c.textSecondary),
+      ),
+    );
+  }
+}
+
+/// Kirish kartasi tarkibi: odatda ikonka | matn | strelka bir qatorda.
+/// Tor ekran yoki katta shriftda (×1.6+) ikonka va strelka yuqori qatorga
+/// chiqadi, matn butun kenglikni oladi — so‘z o‘rtasidan bo‘linmaydi.
+class _EntryLayout extends StatelessWidget {
+  const _EntryLayout({
+    required this.leading,
+    required this.title,
+    required this.body,
+    required this.trailing,
+  });
+
+  final Widget leading;
+  final Widget title;
+  final String body;
+  final Widget trailing;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final text = Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        title,
+        const SizedBox(height: 2),
+        Text(body, style: t.bodySmall?.copyWith(color: c.textSecondary)),
+      ],
+    );
+    final stacked = MediaQuery.textScalerOf(context).scale(1) >= 1.6;
+    if (stacked) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            children: [
+              leading,
+              const Spacer(),
+              ExcludeSemantics(child: trailing),
+            ],
+          ),
+          const SizedBox(height: FeSpace.sm),
+          text,
+        ],
+      );
+    }
+    return Row(
+      children: [
+        leading,
+        const SizedBox(width: FeSpace.md),
+        Expanded(child: text),
+        const SizedBox(width: FeSpace.xs),
+        ExcludeSemantics(child: trailing),
+      ],
     );
   }
 }
@@ -327,9 +483,9 @@ class _StatGrid extends StatelessWidget {
                         children: [
                           Text(
                             '$value',
-                            style: FeThemeBuilder.numeric(t.titleLarge!)
+                            style: FeThemeBuilder.figures(t.titleLarge!)
                                 .copyWith(
-                                  fontWeight: FontWeight.w700,
+                                  fontWeight: FontWeight.w600,
                                   color: emphasis
                                       ? c.onAccentContainer
                                       : c.textPrimary,
@@ -477,7 +633,7 @@ class _QuickAccess extends ConsumerWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        FeSectionHeader(l.homeQuickAccess),
+        FeSectionHeader(l.homeContinueSaved),
         if (blocks.isEmpty)
           Text(
             l.homeQuickEmpty,
@@ -495,10 +651,7 @@ class _QuickAccess extends ConsumerWidget {
 /// Joriy yurisdiksiya — ilmiy kontent yurisdiksiyasiz ishlaydi; bu faqat
 /// huquqiy/protsessual qatlam uchun. Bayroq ishlatilmaydi (ISO kod + nom).
 class _JurisdictionContext extends ConsumerWidget {
-  const _JurisdictionContext({this.onDark = false});
-
-  /// Navy hero ustida — oq matn.
-  final bool onDark;
+  const _JurisdictionContext();
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -523,11 +676,7 @@ class _JurisdictionContext extends ConsumerWidget {
           constraints: const BoxConstraints(minHeight: 48),
           child: Row(
             children: [
-              Icon(
-                Icons.public,
-                size: 18,
-                color: onDark ? const Color(0xFFB8C2D6) : c.textSecondary,
-              ),
+              Icon(Icons.public, size: 18, color: c.textSecondary),
               const SizedBox(width: FeSpace.xs),
               // Bitta o‘raladigan matn — 320 dp va ×2 shriftda ham sig‘adi.
               Expanded(
@@ -536,17 +685,11 @@ class _JurisdictionContext extends ConsumerWidget {
                     children: [
                       TextSpan(
                         text: '${l.homeJurisdictionChip(name)} · ',
-                        style: t.bodySmall?.copyWith(
-                          color: onDark
-                              ? const Color(0xFFD5DCE8)
-                              : c.textSecondary,
-                        ),
+                        style: t.bodySmall?.copyWith(color: c.textSecondary),
                       ),
                       TextSpan(
                         text: l.homeChange,
-                        style: t.labelMedium?.copyWith(
-                          color: onDark ? const Color(0xFF7FDDE6) : c.accent,
-                        ),
+                        style: t.labelMedium?.copyWith(color: c.accent),
                       ),
                     ],
                   ),
@@ -796,46 +939,43 @@ class _ModuleCard extends StatelessWidget {
   }
 }
 
-/// Brend «hero»: navy panel, emblema, nom va shior, qidiruv, yurisdiksiya.
-/// Fon naqshi — juda xira xromatogramma va o‘lchov halqalari (bezak emas,
-/// ilmiy kontekst). Ikkala mavzuda ham navy — brend langari.
-class _HomeHero extends StatelessWidget {
+/// Premium sarlavha: ikkilamchi fon paneli, emblema, serif nom, oltin
+/// shior; salomlashish va rol; markaziy ilmiy qidiruv; yurisdiksiya.
+/// Fon naqshi — juda xira o‘lchov halqalari va shartli xromatogramma
+/// (bezak, real ma’lumot emas). Ranglar faqat mavzu tokenlaridan.
+class _HomeHero extends ConsumerWidget {
   const _HomeHero();
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
     final dark = Theme.of(context).brightness == Brightness.dark;
     final top = MediaQuery.paddingOf(context).top;
+    final mode = ref.watch(
+      settingsControllerProvider.select((s) => s.userMode),
+    );
+    final student = mode == UserMode.student;
+    final modeLabel = student ? l.modeStudent : l.modeProfessional;
+    const radius = BorderRadius.vertical(
+      bottom: Radius.circular(FeRadius.hero),
+    );
     return AnnotatedRegion<SystemUiOverlayStyle>(
-      value: SystemUiOverlayStyle.light,
+      value: dark ? SystemUiOverlayStyle.light : SystemUiOverlayStyle.dark,
       child: DecoratedBox(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: dark
-                ? const [Color(0xFF0C1830), Color(0xFF13233F)]
-                : const [Color(0xFF0F1E3D), Color(0xFF17305A)],
-          ),
-          borderRadius: const BorderRadius.vertical(
-            bottom: Radius.circular(FeRadius.hero),
-          ),
-        ),
+        decoration: BoxDecoration(color: c.surface, borderRadius: radius),
         child: ClipRRect(
-          borderRadius: const BorderRadius.vertical(
-            bottom: Radius.circular(FeRadius.hero),
-          ),
+          borderRadius: radius,
           child: CustomPaint(
-            painter: const _HeroPatternPainter(),
+            painter: _HeroPatternPainter(c.accent),
             child: Padding(
               padding: EdgeInsets.only(top: top),
               child: FeContentFrame(
                 child: Padding(
                   padding: const EdgeInsets.only(
                     top: FeSpace.md,
-                    bottom: FeSpace.md,
+                    bottom: FeSpace.lg,
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -843,9 +983,9 @@ class _HomeHero extends StatelessWidget {
                       Row(
                         key: const Key('home.header'),
                         children: [
-                          const BrandMark(
-                            size: 52,
-                            onDark: true,
+                          BrandMark(
+                            size: 44,
+                            onDark: dark,
                             tier: BrandTier.icon,
                           ),
                           const SizedBox(width: FeSpace.sm),
@@ -859,10 +999,9 @@ class _HomeHero extends StatelessWidget {
                                   child: Text(
                                     l.appTitle,
                                     maxLines: 1,
-                                    style: t.titleLarge?.copyWith(
-                                      color: Colors.white,
-                                      letterSpacing: 2,
-                                      fontWeight: FontWeight.w700,
+                                    style: t.titleMedium?.copyWith(
+                                      color: c.textPrimary,
+                                      letterSpacing: 1.6,
                                       height: 1.1,
                                     ),
                                   ),
@@ -875,7 +1014,7 @@ class _HomeHero extends StatelessWidget {
                                     l.appTagline,
                                     maxLines: 1,
                                     style: t.labelMedium?.copyWith(
-                                      color: const Color(0xFFC9A75E),
+                                      color: c.accent,
                                       letterSpacing: 0.8,
                                     ),
                                   ),
@@ -885,15 +1024,36 @@ class _HomeHero extends StatelessWidget {
                           ),
                         ],
                       ),
-                      const SizedBox(height: FeSpace.md),
+                      const SizedBox(height: FeSpace.lg),
+                      // Katta sarlavha ×2 shriftda ekranni egallamasligi
+                      // uchun masshtab 1.4 bilan cheklanadi (baribir yirik).
+                      Semantics(
+                        header: true,
+                        child: Text(
+                          l.homeGreeting,
+                          textScaler: MediaQuery.textScalerOf(context)
+                              .clamp(maxScaleFactor: 1.4),
+                          key: const Key('home.greeting'),
+                          style: t.headlineSmall?.copyWith(
+                            color: c.textPrimary,
+                          ),
+                        ),
+                      ),
+                      _RoleChip(
+                        icon: student
+                            ? Icons.school_outlined
+                            : Icons.workspace_premium_outlined,
+                        label: l.homeRoleChip(modeLabel),
+                      ),
+                      const SizedBox(height: FeSpace.sm),
                       FeSearchEntry(
                         key: const Key('home.search'),
                         hint: l.searchHint,
-                        onDark: true,
+                        prominent: true,
                         onTap: () => context.push(Routes.search),
                       ),
                       const SizedBox(height: FeSpace.xxs),
-                      const _JurisdictionContext(onDark: true),
+                      const _JurisdictionContext(),
                     ],
                   ),
                 ),
@@ -906,15 +1066,63 @@ class _HomeHero extends StatelessWidget {
   }
 }
 
+/// Joriy foydalanish rejimi — bosilsa rejim sozlamasi ochiladi.
+class _RoleChip extends StatelessWidget {
+  const _RoleChip({required this.icon, required this.label});
+
+  final IconData icon;
+  final String label;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    return Align(
+      alignment: AlignmentDirectional.centerStart,
+      child: Semantics(
+        button: true,
+        label: label,
+        excludeSemantics: true,
+        child: InkWell(
+          key: const Key('home.role'),
+          borderRadius: BorderRadius.circular(FeRadius.sm),
+          onTap: () => context.push(Routes.profileMode),
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(minHeight: FeTouch.minTarget),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(icon, size: 18, color: c.accent),
+                const SizedBox(width: FeSpace.xs),
+                Flexible(
+                  child: Text(
+                    label,
+                    style: t.labelLarge?.copyWith(
+                      color: c.textSecondary,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 class _HeroPatternPainter extends CustomPainter {
-  const _HeroPatternPainter();
+  const _HeroPatternPainter(this.accent);
+
+  final Color accent;
 
   @override
   void paint(Canvas canvas, Size size) {
     final ring = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = 1
-      ..color = const Color(0x14FFFFFF);
+      ..color = accent.withValues(alpha: 0.10);
     final center = Offset(size.width - 24, 40);
     for (final r in [56.0, 88.0, 120.0, 152.0]) {
       canvas.drawCircle(center, r, ring);
@@ -922,24 +1130,25 @@ class _HeroPatternPainter extends CustomPainter {
     // Shartli xromatogramma chizig‘i (real ma’lumot emas — bezak).
     final line = Paint()
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 1.2
-      ..color = const Color(0x1F4CC9D6);
-    final y = size.height - 18;
+      ..strokeWidth = 1
+      ..color = accent.withValues(alpha: 0.16);
+    final y = size.height - 10;
     final w = size.width;
     final path = Path()..moveTo(0, y);
     const peaks = [0.18, 0.31, 0.47, 0.62, 0.78, 0.9];
-    const heights = [10.0, 26.0, 14.0, 34.0, 12.0, 20.0];
+    const heights = [6.0, 16.0, 9.0, 22.0, 8.0, 13.0];
     for (var i = 0; i < peaks.length; i++) {
       final x = w * peaks[i];
       path
-        ..lineTo(x - 6, y)
+        ..lineTo(x - 5, y)
         ..lineTo(x, y - heights[i])
-        ..lineTo(x + 6, y);
+        ..lineTo(x + 5, y);
     }
     path.lineTo(w, y);
     canvas.drawPath(path, line);
   }
 
   @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
+  bool shouldRepaint(covariant _HeroPatternPainter oldDelegate) =>
+      oldDelegate.accent != accent;
 }

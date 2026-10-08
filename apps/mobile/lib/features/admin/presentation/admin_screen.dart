@@ -39,7 +39,10 @@ class AdminScreen extends ConsumerWidget {
             icon: Icons.admin_panel_settings_outlined,
             body: l.adminForbidden,
           ),
-          _ => const Center(child: CircularProgressIndicator()),
+          _ => Padding(
+            padding: const EdgeInsets.all(FeSpace.md),
+            child: FeListSkeleton(rows: 4, semanticLabel: l.loadingContent),
+          ),
         },
       ),
     );

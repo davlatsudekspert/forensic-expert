@@ -32,7 +32,7 @@ void main() {
     // Manba sahifasi: to‘liq bibliografiya + shu manbaga tayangan yozuvlar.
     expect(find.text('Source'), findsWidgets);
     expect(find.byKey(const Key('sourceLink.morphine')), findsOneWidget);
-    expect(find.textContaining('LINKED RECORDS'), findsOneWidget);
+    expect(find.textContaining('Linked records'), findsOneWidget);
     // Back — yozuvga qaytadi (dead end yo‘q).
     await tester.tap(find.byType(BackButton));
     await tester.pumpAndSettle();

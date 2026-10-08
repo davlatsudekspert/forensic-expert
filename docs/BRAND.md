@@ -25,8 +25,25 @@ Trademark tekshiruvi — RG-06 (egasi).
 
 ## Ranglar
 
-Navy `#0F1E3D`, kumush `#E8EDF4`, teal `#0A6F7A` / `#4CC9D6`, oltin faqat
-emblemada (`#9C7A33` oq fonda, `#C9A75E` to‘q fonda). UI butunlay oltinsiz.
+**Emblema** (o‘zgarmagan): navy `#0F1E3D`, kumush `#E8EDF4`, teal
+`#0A6F7A` / `#4CC9D6`, oltin `#9C7A33` (oq fonda) / `#C9A75E` (to‘q fonda).
+
+**UI — «Scientific Luxury»** (`lib/core/design/tokens.dart`):
+
+| Token | Qorong‘i | Yorug‘ |
+|---|---|---|
+| background | `#0B1017` grafit | `#F7F5EF` fil suyagi |
+| surface (ikkilamchi fon) | `#121A25` | `#EFECE4` |
+| surfaceRaised (karta) | `#192332` | `#FFFFFF` |
+| textPrimary | `#F4F4F1` | `#161B22` |
+| textSecondary | `#9AA4B2` | `#525A66` |
+| accent (shampan oltini / bronza) | `#C8A86B` | `#7D5F27` |
+
+Oltin aksent kam ishlatiladi: tanlangan holat, asosiy ta’kid, premium
+detallar. Kontrast `test/unit/contrast_test.dart` da tekshiriladi.
+
+**Shriftlar** (ilovaga o‘rnatilgan, SIL OFL 1.1): Source Serif 4 —
+sarlavhalar; Inter — matn; JetBrains Mono — formulalar (yo‘q glif Inter’dan).
 
 ## Fayllar
 

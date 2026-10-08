@@ -181,12 +181,12 @@ void main() {
       expect(find.byKey(const Key('verif.chip.unverified')), findsOneWidget);
       expect(find.byKey(const Key('profile.reviewDashboard')), findsNothing);
       for (final h in [
-        'VERIFICATION',
-        'PREFERENCES',
-        'ACCOUNT',
-        'SUBSCRIPTION',
-        'DATA AND PRIVACY',
-        'ABOUT AND LEGAL',
+        'Verification',
+        'Preferences',
+        'Account',
+        'Subscription',
+        'Data and privacy',
+        'About and legal',
       ]) {
         await tester.scrollUntilVisible(
           find.text(h),
