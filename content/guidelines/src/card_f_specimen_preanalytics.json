@@ -1,0 +1,300 @@
+{
+  "id": "guideline.tox.specimen_preanalytics",
+  "discipline_codes": [
+    "forensic_toxicology",
+    "evidence_handling"
+  ],
+  "status": "NEEDS_REVIEW",
+  "updated": "2026-10-08",
+  "translation_status": {
+    "uz": "AUTHORED",
+    "ru": "DRAFT",
+    "en": "DRAFT"
+  },
+  "related_tool_ids": [],
+  "title": {
+    "uz": "Sud-toksikologik namunalarni tanlash, olish, belgilash, konservatsiya qilish va saqlash (preanalitika)",
+    "ru": "Выбор, взятие, маркировка, консервация и хранение образцов в судебной токсикологии (преаналитика)",
+    "en": "Specimen selection, collection, labelling, preservation and storage in forensic toxicology (preanalytics)"
+  },
+  "summary": {
+    "uz": "Toksikologik natijaning ishonchliligi birinchi navbatda namunaning turi va butunligiga bog‘liq. Postmortem holatda qon ikki periferik joydan (afzalroq son venalaridan) olinadi, markaziy qon alohida belgilanadi; siydik, shishasimon tana suyuqligi, me’da tarkibi, jigar va zarur bo‘lsa soch qo‘shimcha olinadi. Konservant (masalan, natriy ftorid), harorat, ifloslanishning oldini olish, aniq belgilash va dalillarni saqlash zanjiri natijaning yaroqliligini ta’minlaydi; huquqiy talablar mahalliy qoidalar bilan belgilanadi.",
+    "ru": "Надёжность токсикологического результата прежде всего зависит от вида и сохранности образца. Посмертно кровь берут из двух периферических мест (предпочтительно бедренных вен), центральная кровь маркируется отдельно; дополнительно берут мочу, стекловидное тело, содержимое желудка, печень и при необходимости волосы. Консервант (например, фторид натрия), температура, предотвращение загрязнения, точная маркировка и цепочка хранения обеспечивают пригодность результата; правовые требования определяются местными правилами.",
+    "en": "The reliability of a toxicology result depends first on the nature and integrity of the specimen. Postmortem blood is taken from two peripheral sites (preferably the femoral veins) and central blood is labelled separately; urine, vitreous humour, gastric contents, liver and, where needed, hair are added. Preservative (for example sodium fluoride), temperature, prevention of contamination, precise labelling and chain of custody keep the result valid; legal requirements are set by local rules."
+  },
+  "sections": [
+    {
+      "key": "basis",
+      "title": {
+        "uz": "Ilmiy asos",
+        "ru": "Научная основа",
+        "en": "Scientific basis"
+      },
+      "citations": [
+        "flanagan2005",
+        "dinis2010",
+        "skopp2004",
+        "peters2007stab",
+        "asb_bpr156_2023"
+      ],
+      "body": {
+        "uz": "Har qanday toksikologik natijaning ishonchliligi va ahamiyati, avvalo, tahlilga yuborilgan namunaning turi va butunligi bilan belgilanadi [flanagan2005, dinis2010]. Laboratoriyadagi eng zamonaviy usul ham noto‘g‘ri joydan olingan, noto‘g‘ri saqlangan yoki ifloslangan namunadagi xatoni tuzata olmaydi. Shuning uchun preanalitik bosqich — namunani tanlash, olish, belgilash, konservatsiya qilish, tashish va saqlash — natija sifatiga sezilarli ta’sir ko‘rsatadigan bosqich sifatida tan olingan [skopp2004].\n\nPostmortem namunalar ko‘p turli va sifati juda o‘zgaruvchan bo‘lishi mumkin; autoliz va chirish ularni tanlash va ishlatish imkoniyatlarini cheklaydi [skopp2004, dinis2010]. Namunadagi modda saqlash davomida fizik, kimyoviy yoki metabolik jarayonlar tufayli o‘zgarishi mumkin, shuning uchun saqlash barqarorligi preanalitikaning alohida masalasidir [skopp2004, peters2007stab].\n\nGumon qilingan zaharlanish yoki dori bilan bog‘liq o‘limda namuna olishning yagona uyg‘unlashtirilgan protokoli adabiyotda mavjud emasligi qayd etilgan [skopp2004, dinis2010]. Keyinchalik toksikologiya konsensus organi sud-toksikologik namunalarni olish, ularning miqdori, konservantlar va saqlash sharoitlari bo‘yicha eng yaxshi amaliyot tavsiyalarini nashr etdi [asb_bpr156_2023]. Ushbu kartochka bu manbalardagi umumiy tamoyillarni mustaqil ravishda, sifat jihatidan bayon qiladi.",
+        "ru": "Надёжность и значимость любого токсикологического результата определяются прежде всего видом и сохранностью направленного на анализ образца [flanagan2005, dinis2010]. Даже самый современный лабораторный метод не исправит ошибку в образце, взятом не из того места, неправильно хранившемся или загрязнённом. Поэтому преаналитический этап — выбор, взятие, маркировка, консервация, транспортировка и хранение образца — признан этапом, существенно влияющим на качество результата [skopp2004].\n\nПосмертные образцы могут быть многочисленными и очень различаться по качеству; аутолиз и гниение ограничивают возможности их выбора и использования [skopp2004, dinis2010]. Вещество в образце может изменяться при хранении вследствие физических, химических или метаболических процессов, поэтому стабильность при хранении — отдельный вопрос преаналитики [skopp2004, peters2007stab].\n\nВ литературе отмечалось отсутствие единого гармонизированного протокола отбора образцов при подозрении на отравление или смерть, связанную с препаратами [skopp2004, dinis2010]. Впоследствии консенсусный орган по токсикологии опубликовал рекомендации по наилучшей практике в отношении взятия судебно-токсикологических образцов, их количества, консервантов и условий хранения [asb_bpr156_2023]. Карточка самостоятельно и на качественном уровне излагает общие принципы этих источников.",
+        "en": "The reliability and relevance of any toxicology result are determined in the first instance by the nature and integrity of the specimen submitted for analysis [flanagan2005, dinis2010]. Even the most advanced laboratory method cannot correct an error in a specimen taken from the wrong site, stored incorrectly or contaminated. The preanalytical phase — selection, collection, labelling, preservation, transport and storage — is therefore recognised as having a substantial influence on the quality of the result [skopp2004].\n\nPostmortem specimens may be numerous and their quality highly variable; autolysis and putrefaction limit their selection and usefulness [skopp2004, dinis2010]. A substance in a specimen may change during storage through physical, chemical or metabolic processes, so storage stability is a distinct preanalytical issue [skopp2004, peters2007stab].\n\nThe literature noted the absence of a single harmonised sampling protocol for suspected poisonings or drug-related deaths [skopp2004, dinis2010]. The toxicology consensus body has since published best-practice recommendations on the collection of forensic toxicology specimens, their amounts, preservatives and storage conditions [asb_bpr156_2023]. This card restates the common principles of these sources independently and qualitatively."
+      }
+    },
+    {
+      "key": "scope",
+      "title": {
+        "uz": "Qo‘llanish sohasi va namunalar",
+        "ru": "Область применения и объекты исследования",
+        "en": "Scope and specimens"
+      },
+      "citations": [
+        "asb_bpr156_2023",
+        "dinis2010",
+        "flanagan2005",
+        "skopp2004"
+      ],
+      "body": {
+        "uz": "Kartochka quyidagi holatlarda olinadigan biologik namunalarga taalluqli:\n• postmortem toksikologiya (o‘lim sababini aniqlashda);\n• tirik shaxslar bo‘yicha toksikologiya — masalan, transport vositasini mast holda boshqarish, dori yordamida sodir etilgan jinoyatlar, boshqa sud-toksikologik tekshiruvlar [asb_bpr156_2023, dinis2010].\n\nNamunalarning asosiy turlari: qon (periferik va markaziy), siydik, shishasimon tana suyuqligi, me’da tarkibi, jigar, soch va tirnoq, shuningdek holatga qarab boshqa to‘qimalar [flanagan2005, dinis2010, skopp2004]. Kasalxonada qolgan antemortem namunalar ham alohida ahamiyatga ega [flanagan2005].\n\nKartochka nafas havosidagi alkogolni o‘lchashni qamrab olmaydi [asb_bpr156_2023]. Musodara qilingan moddalarni (kukun, tabletka) olish va saqlash bu yerda ko‘rib chiqilmaydi.\n\nKartochkada aniq hajm, massa yoki konservant konsentratsiyasi qiymatlari ataylab keltirilmaydi: ular laboratoriya, tahlil turi va amaldagi qoidalarga bog‘liq. Namunalarni olish, saqlash muddati, ashyoviy dalillarni rasmiylashtirish va topshirish bo‘yicha huquqiy talablar yurisdiksiyaga xos bo‘lib, mahalliy me’yoriy hujjatlar bilan belgilanadi.",
+        "ru": "Карточка относится к биологическим образцам, взятым:\n• в посмертной токсикологии (при установлении причины смерти);\n• в токсикологии живых лиц — например, при управлении транспортом в состоянии опьянения, преступлениях с применением препаратов, других судебно-токсикологических исследованиях [asb_bpr156_2023, dinis2010].\n\nОсновные виды образцов: кровь (периферическая и центральная), моча, стекловидное тело, содержимое желудка, печень, волосы и ногти, а также другие ткани в зависимости от обстоятельств [flanagan2005, dinis2010, skopp2004]. Особое значение имеют сохранившиеся в больнице прижизненные образцы [flanagan2005].\n\nКарточка не охватывает измерение алкоголя в выдыхаемом воздухе [asb_bpr156_2023]. Взятие и хранение изъятых веществ (порошков, таблеток) здесь не рассматриваются.\n\nКонкретные объёмы, массы и концентрации консервантов намеренно не приводятся: они зависят от лаборатории, вида анализа и действующих правил. Правовые требования к взятию образцов, срокам хранения, оформлению и передаче вещественных доказательств зависят от юрисдикции и определяются местными нормативными актами.",
+        "en": "The card applies to biological specimens collected in:\n• postmortem toxicology (when establishing the cause of death);\n• toxicology of living persons — for example driving under the influence, drug-facilitated crimes and other forensic toxicology testing [asb_bpr156_2023, dinis2010].\n\nThe main specimen types are blood (peripheral and central), urine, vitreous humour, gastric contents, liver, hair and nails, and other tissues depending on the case [flanagan2005, dinis2010, skopp2004]. Residual antemortem hospital samples are of particular value [flanagan2005].\n\nThe card does not cover breath alcohol measurement [asb_bpr156_2023]. Collection and storage of seized materials (powders, tablets) are not addressed here.\n\nSpecific volumes, masses and preservative concentrations are deliberately not given: they depend on the laboratory, the type of analysis and applicable rules. Legal requirements for collection, retention periods, documentation and transfer of evidence are jurisdiction-specific and governed by local regulations."
+      }
+    },
+    {
+      "key": "methods",
+      "title": {
+        "uz": "Namunalarni tanlash va olish (konseptual darajada)",
+        "ru": "Выбор и взятие образцов (на концептуальном уровне)",
+        "en": "Specimen selection and collection (conceptual level)"
+      },
+      "citations": [
+        "skopp2010",
+        "flanagan2005",
+        "yarema2005",
+        "drummer2007",
+        "prouty1990",
+        "pigaiani2020",
+        "pounder1996",
+        "kintz2017",
+        "kugelberg2007"
+      ],
+      "body": {
+        "uz": "Namunalar holat tafsilotlari va ularning mavjudligiga qarab tanlanadi [skopp2010]. Quyida asosiy namunalar bo‘yicha umumiy tamoyillar keltiriladi.\n\n• Periferik qon. Postmortem holatda qon ikki alohida periferik joydan, afzalroq chap va o‘ng son venalaridan olinadi; bunda markaziy tomirlardan qon tortib olinmasligiga e’tibor beriladi [flanagan2005]. Bog‘langan yoki qisib qo‘yilgan son venasi ideal joy sifatida ko‘rsatiladi [yarema2005]. Namuna olish joylari o‘rtasidagi farqni kamaytirish uchun olish tartibi standartlashtiriladi [drummer2007].\n• Markaziy (yurak) qon. Alohida idishda va alohida belgi bilan olinadi; u periferik qonni almashtirmaydi, balki taqqoslash uchun xizmat qiladi, chunki markaziy qonda konsentratsiyalar odatda yuqoriroq bo‘ladi [prouty1990].\n• Siydik. Mavjud bo‘lsa olinadi; qonni yaxshi to‘ldiradi va skrining uchun qulay [flanagan2005, drummer2007].\n• Shishasimon tana suyuqligi. Har bir ko‘zdan alohida namuna olinadi [flanagan2005]; nisbatan himoyalangan bo‘shliqdan olingani uchun chirishga moyil holatlarda ham foydali bo‘lishi mumkin [pigaiani2020].\n• Me’da tarkibi. Vakillik qiladigan (reprezentativ) qismi olinadi [flanagan2005].\n• Jigar. O‘ng bo‘lakdan olinadi [flanagan2005]; me’dadan diffuziyaning ta’sirini kamaytirish uchun bo‘lakning chuqur qismidan olish tavsiya etilgan [pounder1996].\n• Soch va tirnoq. Surunkali ekspozitsiya gumon qilinganda olinadi; soch tutami ildiz tomoni belgilangan holda bog‘lanadi, shunda segmentlarga ajratib tahlil qilish mumkin bo‘ladi [flanagan2005, kintz2017].\n• Boshqa to‘qimalar. Holatga qarab qo‘l-oyoq skelet mushagi yoki o‘pka cho‘qqisi kabi me’da diffuziyasidan kamroq ta’sirlanadigan joylar tanlanadi [pounder1996]; etanol talqini uchun boshqa muqobil namunalar ham ishlatiladi [kugelberg2007].\n• Antemortem namunalar. O‘lim kasalxonada sodir bo‘lgan bo‘lsa, qolgan namunalar zudlik bilan izlanadi [flanagan2005].\n\nBelgilash va hujjatlashtirish. Har bir idish alohida belgilanadi: kimdan, qaysi anatomik joydan, qachon va kim tomonidan olingani aniq bo‘lishi kerak. Namuna bilan birga anamnez, klinik, kasbiy va holat ma’lumotlari hamda yorib ko‘rish bayonnomasining nusxasi (mavjud bo‘lsa) yuboriladi; namunalarni topshirishda dalillarni saqlash zanjiri (chain of custody) tartiblari qo‘llanadi [flanagan2005].",
+        "ru": "Образцы выбираются с учётом обстоятельств случая и их доступности [skopp2010]. Ниже приведены общие принципы по основным образцам.\n\n• Периферическая кровь. Посмертно кровь берут из двух отдельных периферических мест, предпочтительно из левой и правой бедренных вен, следя за тем, чтобы не аспирировать кровь из центральных сосудов [flanagan2005]. Идеальным местом названа перевязанная или пережатая бедренная вена [yarema2005]. Порядок взятия стандартизируется, чтобы уменьшить различия между местами отбора [drummer2007].\n• Центральная (сердечная) кровь. Берётся в отдельную ёмкость с отдельной маркировкой; она не заменяет периферическую кровь, а служит для сравнения, так как концентрации в центральной крови обычно выше [prouty1990].\n• Моча. Берётся при наличии; хорошо дополняет кровь и удобна для скрининга [flanagan2005, drummer2007].\n• Стекловидное тело. Образцы из каждого глаза берутся раздельно [flanagan2005]; поскольку оно находится в относительно защищённой полости, оно может быть полезно и при выраженных гнилостных изменениях [pigaiani2020].\n• Содержимое желудка. Берётся представительная часть [flanagan2005].\n• Печень. Берётся из правой доли [flanagan2005]; для уменьшения влияния диффузии из желудка рекомендовано брать из глубины доли [pounder1996].\n• Волосы и ногти. Берутся при подозрении на хроническое воздействие; прядь волос связывают с обозначением корневого конца, что позволяет сегментный анализ [flanagan2005, kintz2017].\n• Другие ткани. В зависимости от случая выбирают места, меньше затрагиваемые желудочной диффузией, — скелетную мышцу конечности или верхушку лёгкого [pounder1996]; для интерпретации этанола используются и другие альтернативные образцы [kugelberg2007].\n• Прижизненные образцы. Если смерть наступила в больнице, сохранившиеся образцы разыскиваются безотлагательно [flanagan2005].\n\nМаркировка и документирование. Каждая ёмкость маркируется отдельно: должно быть ясно, от кого, из какого анатомического места, когда и кем взят образец. Вместе с образцом направляются анамнез, клинические, профессиональные сведения и обстоятельства, а также копия протокола вскрытия (при наличии); при передаче образцов применяется процедура цепочки хранения (chain of custody) [flanagan2005].",
+        "en": "Specimens are selected according to the case history and their availability [skopp2010]. General principles for the main specimens follow.\n\n• Peripheral blood. Postmortem blood is taken from two distinct peripheral sites, preferably the left and right femoral veins, taking care not to draw blood from central vessels [flanagan2005]. A ligated or clamped femoral vein is named as the ideal site [yarema2005]. Collection is standardised to minimise site-to-site variability [drummer2007].\n• Central (heart) blood. Collected in a separate, separately labelled container; it does not replace peripheral blood but serves for comparison, because central blood concentrations are generally higher [prouty1990].\n• Urine. Collected if available; it complements blood well and is convenient for screening [flanagan2005, drummer2007].\n• Vitreous humour. Samples from each eye are taken separately [flanagan2005]; because it comes from a relatively protected compartment, it can be useful even when putrefaction is present [pigaiani2020].\n• Gastric contents. A representative portion is taken [flanagan2005].\n• Liver. Taken from the right lobe [flanagan2005]; sampling deep within the lobe is recommended to reduce the influence of gastric diffusion [pounder1996].\n• Hair and nails. Collected when chronic exposure is suspected; a hair lock is tied with the root end marked so that segmental analysis is possible [flanagan2005, kintz2017].\n• Other tissues. Depending on the case, sites less affected by gastric diffusion, such as limb skeletal muscle or the lung apex, are chosen [pounder1996]; other alternative specimens are also used for ethanol interpretation [kugelberg2007].\n• Antemortem samples. If death occurred in hospital, residual samples are sought urgently [flanagan2005].\n\nLabelling and documentation. Each container is labelled individually: it must be clear from whom, from which anatomical site, when and by whom the specimen was taken. The specimen is accompanied by clinical, occupational and circumstantial history and a copy of the autopsy report (when available); chain-of-custody procedures are applied when specimens are submitted [flanagan2005]."
+      }
+    },
+    {
+      "key": "advantages",
+      "title": {
+        "uz": "To‘g‘ri preanalitikaning afzalliklari",
+        "ru": "Преимущества правильной преаналитики",
+        "en": "Advantages of sound preanalytics"
+      },
+      "citations": [
+        "prouty1990",
+        "flanagan2005",
+        "peters2007stab",
+        "dinis2010",
+        "skopp2004",
+        "kintz2017",
+        "drummer2007"
+      ],
+      "body": {
+        "uz": "• Bir nechta joydan alohida belgilangan namunalar o‘limdan keyingi qayta taqsimlanishni aniqlash va talqinni mustahkamlash imkonini beradi [prouty1990, flanagan2005].\n• Konservant va mos harorat tanlangan namunada modda barqarorligi yaxshi saqlanadi, shuning uchun natija o‘lim yoki namuna olish paytidagi holatga yaqinroq bo‘ladi [peters2007stab, dinis2010].\n• Muqobil namunalar ekspozitsiyaning yo‘li va vaqti haqida qo‘shimcha ma’lumot berishi mumkin [dinis2010, skopp2004]; soch esa uzoq muddatli tarixni ko‘rsatadi [kintz2017].\n• Sinchkov belgilash va dalillarni saqlash zanjiri namunaning kelib chiqishi va yaxlitligini sud jarayonida tasdiqlash imkonini beradi [flanagan2005].\n• Namuna turini aniq bilish laboratoriyaga aynan shu namuna uchun validatsiya qilingan usulni tanlash imkonini beradi [drummer2007].",
+        "ru": "• Раздельно маркированные образцы из нескольких мест позволяют выявить посмертное перераспределение и укрепить интерпретацию [prouty1990, flanagan2005].\n• В образце с подобранным консервантом и надлежащей температурой стабильность вещества сохраняется лучше, и результат ближе к состоянию на момент смерти или взятия [peters2007stab, dinis2010].\n• Альтернативные образцы могут дать дополнительные сведения о пути и времени воздействия [dinis2010, skopp2004]; волосы отражают длительную историю [kintz2017].\n• Тщательная маркировка и цепочка хранения позволяют подтвердить происхождение и целостность образца в судебном процессе [flanagan2005].\n• Точное знание вида образца позволяет лаборатории выбрать методику, валидированную именно для этого образца [drummer2007].",
+        "en": "• Separately labelled specimens from several sites make it possible to detect postmortem redistribution and strengthen interpretation [prouty1990, flanagan2005].\n• In a specimen with a suitable preservative and appropriate temperature, analyte stability is better maintained, so the result is closer to the situation at death or collection [peters2007stab, dinis2010].\n• Alternative specimens may provide additional information on the route and timing of exposure [dinis2010, skopp2004]; hair reflects a long-term history [kintz2017].\n• Careful labelling and chain of custody allow the origin and integrity of a specimen to be demonstrated in legal proceedings [flanagan2005].\n• Knowing the exact specimen type lets the laboratory choose a method validated for that specimen [drummer2007]."
+      }
+    },
+    {
+      "key": "limitations",
+      "title": {
+        "uz": "Cheklovlar",
+        "ru": "Ограничения",
+        "en": "Limitations"
+      },
+      "citations": [
+        "skopp2004",
+        "dinis2010",
+        "flanagan2005",
+        "pelissier2003",
+        "asb_bpr156_2023"
+      ],
+      "body": {
+        "uz": "• Postmortem namunalar sifati o‘zgaruvchan: autoliz va chirish ba’zi namunalarni olishni imkonsiz qiladi yoki ularning yaroqliligini pasaytiradi [skopp2004, dinis2010].\n• Har bir holatda barcha namunalar mavjud bo‘lavermaydi (masalan, siydik yo‘q bo‘lishi yoki shishasimon tana suyuqligi kam bo‘lishi mumkin); bunda talqin cheklanganligi hujjatlashtiriladi.\n• Formalin fiksatsiyasi yoki murdani balzamlash dastlabki konsentratsiyani sezilarli o‘zgartirishi mumkin, chunki matritsa o‘zgaradi, namuna suyultiriladi, modda ajralib chiqadi yoki parchalanadi [skopp2004].\n• Konservantlar har doim ham bir xil foyda bermaydi: ularning afzalliklari bilan birga kamchiliklari ham bor, shuning uchun konservantsiz qism ham kerak bo‘lishi mumkin [skopp2004, dinis2010, flanagan2005].\n• Eng yaxshi preanalitika ham o‘limdan keyingi qayta taqsimlanishni to‘liq bartaraf etmaydi; u faqat uni aniqlash va hisobga olish imkonini beradi [pelissier2003].\n• Yagona xalqaro uyg‘unlashtirilgan protokol uzoq vaqt bo‘lmagan [skopp2004]; mavjud tavsiyalar laboratoriya va yurisdiksiya talablariga moslashtiriladi [asb_bpr156_2023].",
+        "ru": "• Качество посмертных образцов вариабельно: аутолиз и гниение делают взятие некоторых образцов невозможным или снижают их пригодность [skopp2004, dinis2010].\n• Не в каждом случае доступны все образцы (например, мочи может не быть, стекловидного тела может быть мало); ограниченность интерпретации в таком случае документируется.\n• Фиксация формалином или бальзамирование могут существенно изменить исходную концентрацию вследствие изменения матрицы, разбавления, высвобождения или разрушения вещества [skopp2004].\n• Консерванты не всегда дают одинаковую пользу: наряду с преимуществами у них есть недостатки, поэтому может понадобиться и порция без консерванта [skopp2004, dinis2010, flanagan2005].\n• Даже лучшая преаналитика не устраняет посмертное перераспределение полностью; она лишь позволяет его выявить и учесть [pelissier2003].\n• Единого международного гармонизированного протокола долго не было [skopp2004]; существующие рекомендации адаптируются к требованиям лаборатории и юрисдикции [asb_bpr156_2023].",
+        "en": "• Postmortem specimen quality is variable: autolysis and putrefaction make some specimens impossible to obtain or reduce their usefulness [skopp2004, dinis2010].\n• Not every specimen is available in every case (for example, there may be no urine or little vitreous humour); the resulting limits on interpretation are documented.\n• Formalin fixation or embalming may change the initial concentration considerably through alteration of the matrix, dilution, release or degradation of the substance [skopp2004].\n• Preservatives do not always help equally: they have disadvantages as well as advantages, so an unpreserved portion may also be needed [skopp2004, dinis2010, flanagan2005].\n• Even the best preanalytics do not eliminate postmortem redistribution; they only make it possible to detect and account for it [pelissier2003].\n• A single international harmonised protocol was long lacking [skopp2004]; existing recommendations are adapted to laboratory and jurisdictional requirements [asb_bpr156_2023]."
+      }
+    },
+    {
+      "key": "factors",
+      "title": {
+        "uz": "Natijaga ta’sir qiluvchi omillar",
+        "ru": "Факторы, влияющие на результат",
+        "en": "Factors affecting the result"
+      },
+      "citations": [
+        "flanagan2005",
+        "olds2023",
+        "mcallister2008",
+        "peters2007stab",
+        "drummer2004",
+        "pounder1996",
+        "kintz2017",
+        "skopp2004"
+      ],
+      "body": {
+        "uz": "Konservatsiya va idish.\n• Natriy ftorid qonning bir qismiga (yoki bir venadan olingan namunaga) va siydikka konservant sifatida qo‘shiladi [flanagan2005]. Etanol uchun bu ayniqsa muhim: konservantsiz siydikda, masalan, glyukozuriya yoki infeksiya bo‘lganda, etanol in vitro hosil bo‘lishi mumkin [olds2023].\n• Muzlatiladigan suyuq namunalar uchun idishda biroz bo‘sh joy (headspace) qoldiriladi [flanagan2005].\n• Sianid kabi beqaror moddalar uchun konservant va saqlash sharoiti natijaga bevosita ta’sir qiladi [mcallister2008].\n\nHarorat va vaqt.\n• Ko‘pchilik dorilar laboratoriyadagi odatiy sharoitda barqaror; beqarorlik asosan murakkab efir guruhlari, oltingugurt atomlari yoki oson oksidlanadigan/qaytariladigan tuzilmalari bo‘lgan moddalarda kuzatiladi [peters2007stab].\n• Namunalar kamida sovutgichda, afzalroq muzlatilgan holda saqlanishi tavsiya etiladi; xona haroratida uzoq turgan namunalar natijasi juda ehtiyotkorlik bilan talqin qilinadi [peters2007stab].\n• Saqlash davomida qondagi etanol konsentratsiyasi pasayishga moyil [olds2023]. Geroin, morfin glyukuronidlari, kokain va benzodiazepinlar ham parchalanishga moyil [drummer2004].\n• Sianidning o‘zgarishi boshlang‘ich konsentratsiya, namunaning murdada qolgan va saqlangan vaqti hamda haroratga bog‘liq [mcallister2008].\n\nIfloslanish (kontaminatsiya).\n• Uchuvchan zaharlar ehtimoli bo‘lsa, namunalar o‘rtasidagi o‘zaro ifloslanishning oldini olish uchun alohida choralar ko‘riladi [flanagan2005].\n• Tana bo‘shlig‘idan olingan qon va jigarning chap bo‘lagi me’da tarkibidan diffuziya tufayli «ifloslangan» bo‘lishi mumkin [pounder1996].\n• Soch tashqi muhitdan ifloslanishi mumkin; bu tahlilning asosiy tuzoqlaridan biri [kintz2017].\n\nOlish texnikasi.\n• Son venasidan olishda markaziy tomirlardan qon tortib olinishi periferik namuna afzalligini yo‘qqa chiqaradi [flanagan2005].\n• Fiksatsiyalangan yoki balzamlangan to‘qimalar dastlabki holatni aks ettirmasligi mumkin [skopp2004].",
+        "ru": "Консервация и ёмкость.\n• Фторид натрия добавляют как консервант к части крови (или к образцу из одной вены) и к моче [flanagan2005]. Для этанола это особенно важно: в моче без консерванта, например при глюкозурии или инфекции, этанол может образоваться in vitro [olds2023].\n• В ёмкостях с жидкими образцами, которые будут замораживаться, оставляют небольшое свободное пространство (headspace) [flanagan2005].\n• Для нестабильных веществ, таких как цианид, консервант и условия хранения прямо влияют на результат [mcallister2008].\n\nТемпература и время.\n• Большинство препаратов стабильны в обычных лабораторных условиях; нестабильность наблюдается в основном у веществ со сложноэфирными группами, атомами серы или легко окисляемыми/восстанавливаемыми структурами [peters2007stab].\n• Рекомендуется хранить образцы как минимум в холодильнике, предпочтительно в замороженном виде; результаты образцов, долго находившихся при комнатной температуре, интерпретируются с большой осторожностью [peters2007stab].\n• При хранении концентрация этанола в крови имеет тенденцию к снижению [olds2023]. Героин, глюкурониды морфина, кокаин и бензодиазепины также склонны к разрушению [drummer2004].\n• Изменение цианида зависит от исходной концентрации, времени нахождения образца в трупе и при хранении, а также от температуры [mcallister2008].\n\nЗагрязнение (контаминация).\n• При возможном участии летучих ядов принимаются особые меры против перекрёстного загрязнения образцов [flanagan2005].\n• Кровь из полостей тела и левая доля печени могут быть «загрязнены» диффузией из содержимого желудка [pounder1996].\n• Волосы могут загрязняться из внешней среды; это одна из главных ловушек анализа [kintz2017].\n\nТехника взятия.\n• Аспирация крови из центральных сосудов при взятии из бедренной вены лишает периферический образец его преимущества [flanagan2005].\n• Фиксированные или бальзамированные ткани могут не отражать исходное состояние [skopp2004].",
+        "en": "Preservation and containers.\n• Sodium fluoride is added as a preservative to a portion of the blood (or to the sample from one vein) and to urine [flanagan2005]. This matters especially for ethanol: in unpreserved urine, for example with glycosuria or infection, ethanol can be formed in vitro [olds2023].\n• A small headspace is left in containers of liquid specimens that are likely to be frozen [flanagan2005].\n• For unstable substances such as cyanide, preservative and storage conditions directly affect the result [mcallister2008].\n\nTemperature and time.\n• Most drugs are stable under usual laboratory conditions; instability is seen mainly with substances carrying ester groups, sulfur atoms or easily oxidised or reduced structures [peters2007stab].\n• Specimens should be stored at least refrigerated and preferably frozen; results from specimens kept at room temperature for long periods are interpreted with great care [peters2007stab].\n• Blood ethanol tends to decrease during storage [olds2023]. Heroin, morphine glucuronides, cocaine and benzodiazepines are also prone to degradation [drummer2004].\n• The change in cyanide depends on the initial concentration, the time the specimen stays in the body and in storage, and temperature [mcallister2008].\n\nContamination.\n• Where volatile poisons may be involved, specific precautions are taken against cross-contamination between specimens [flanagan2005].\n• Blood from body cavities and the left lobe of the liver may be 'contaminated' by diffusion from gastric contents [pounder1996].\n• Hair can be contaminated from the environment, one of the main pitfalls of hair analysis [kintz2017].\n\nCollection technique.\n• Drawing central blood while sampling the femoral vein defeats the purpose of a peripheral specimen [flanagan2005].\n• Fixed or embalmed tissues may not reflect the original state [skopp2004]."
+      }
+    },
+    {
+      "key": "cautions",
+      "title": {
+        "uz": "Ehtiyot choralari",
+        "ru": "Предостережения",
+        "en": "Cautions"
+      },
+      "citations": [
+        "flanagan2005",
+        "skopp2004",
+        "peters2007stab",
+        "drummer2007",
+        "skopp2010"
+      ],
+      "body": {
+        "uz": "• Turli joylardan olingan qon hech qachon bitta idishda aralashtirilmaydi; har bir namuna alohida belgilanadi va olingan joyi aniq yoziladi [flanagan2005].\n• Konservantli va konservantsiz qismlar alohida belgilanadi; konservant qo‘shilgani hujjatda ko‘rsatiladi [flanagan2005].\n• Namunani olish, tashish va saqlash shartlari (harorat, vaqt) hujjatlashtiriladi, chunki ular barqarorlikni baholashga zarur [skopp2004, peters2007stab].\n• Laboratoriya natijani faqat ushbu namuna turi uchun validatsiya qilingan usul bilan beradi; validatsiya qilinmagan matritsa uchun natija ehtiyotkorlik bilan izohlanadi [drummer2007].\n• Namuna bilan birga yetarli anamnez va holat ma’lumoti yuboriladi; ularsiz talqin cheklanadi [flanagan2005, skopp2010].\n• Dalillarni saqlash zanjiri namuna olingan paytdan boshlab uzluksiz yuritiladi [flanagan2005].\n• Ushbu kartochka ilmiy tavsiyalarni bayon etadi. Namuna olishga vakolatli shaxslar, rozilik, saqlash muddatlari, ashyoviy dalillarni rasmiylashtirish va topshirish tartibi amaldagi mahalliy me’yoriy hujjatlar bilan belgilanadi.",
+        "ru": "• Кровь из разных мест никогда не смешивается в одной ёмкости; каждый образец маркируется отдельно с точным указанием места взятия [flanagan2005].\n• Порции с консервантом и без него маркируются раздельно; добавление консерванта отражается в документах [flanagan2005].\n• Условия взятия, транспортировки и хранения (температура, время) документируются, так как они необходимы для оценки стабильности [skopp2004, peters2007stab].\n• Лаборатория выдаёт результат методикой, валидированной для данного вида образца; результат для невалидированной матрицы комментируется с осторожностью [drummer2007].\n• Вместе с образцом направляются достаточные анамнестические сведения и обстоятельства; без них интерпретация ограничена [flanagan2005, skopp2010].\n• Цепочка хранения ведётся непрерывно с момента взятия образца [flanagan2005].\n• Карточка излагает научные рекомендации. Лица, уполномоченные на взятие образцов, согласие, сроки хранения, порядок оформления и передачи вещественных доказательств определяются действующими местными нормативными актами.",
+        "en": "• Blood from different sites is never pooled in one container; each specimen is labelled separately with its exact site [flanagan2005].\n• Preserved and unpreserved portions are labelled separately, and the addition of a preservative is documented [flanagan2005].\n• Conditions of collection, transport and storage (temperature, time) are documented, because they are needed to assess stability [skopp2004, peters2007stab].\n• The laboratory reports results using a method validated for that specimen type; a result in an unvalidated matrix is qualified with caution [drummer2007].\n• Adequate history and circumstantial information accompany the specimen; without it interpretation is limited [flanagan2005, skopp2010].\n• The chain of custody is maintained without interruption from the moment of collection [flanagan2005].\n• This card sets out scientific recommendations. Who may collect specimens, consent, retention periods and the procedure for documenting and transferring evidence are governed by applicable local regulations."
+      }
+    },
+    {
+      "key": "alternatives",
+      "title": {
+        "uz": "Muqobil va qo‘shimcha namunalar",
+        "ru": "Альтернативные и дополнительные образцы",
+        "en": "Alternative and complementary specimens"
+      },
+      "citations": [
+        "dinis2010",
+        "skopp2004",
+        "drummer2007",
+        "pigaiani2020",
+        "kintz2017",
+        "flanagan2005",
+        "pounder1996",
+        "kugelberg2007",
+        "drummer2004"
+      ],
+      "body": {
+        "uz": "Odatiy namunalar mavjud bo‘lmaganda yoki qo‘shimcha savollarga javob kerak bo‘lganda muqobil namunalar ko‘rib chiqiladi; ular ekspozitsiya yo‘li va vaqti haqida qo‘shimcha ma’lumot berishi mumkin [dinis2010, skopp2004].\n\n• Shishasimon tana suyuqligi — qonni to‘ldiruvchi asosiy namunalardan biri [drummer2007, pigaiani2020].\n• Soch va tirnoq — surunkali yoki takroriy ekspozitsiya uchun; segmentar tahlil vaqt bo‘yicha tarixni ko‘rsatishi mumkin [kintz2017, flanagan2005].\n• Jigar va me’da tarkibi — ayrim holatlarda tavsiya etiladi [drummer2007].\n• Skelet mushagi, o‘pka cho‘qqisi — me’da diffuziyasidan kamroq ta’sirlanadigan to‘qimalar [pounder1996].\n• Etanol talqini uchun boshqa postmortem namunalar (masalan, siydik, o‘t, suyak iligi, kalla ichidagi qon laxtasi) [kugelberg2007].\n• Kuchli chirigan murdalarda boshqa matritsalar, jumladan murdada oziqlanayotgan hasharot lichinkalari ham tahlil qilingan; ular maxsus usullarni talab qiladi [drummer2004].\n\nMuqobil namunalar uchun talqin ma’lumotlari qonga qaraganda kamroq; ular uchun ham usul aynan shu matritsa uchun validatsiya qilingan bo‘lishi kerak [drummer2007].",
+        "ru": "Альтернативные образцы рассматриваются, когда обычные недоступны или нужны ответы на дополнительные вопросы; они могут дать дополнительные сведения о пути и времени воздействия [dinis2010, skopp2004].\n\n• Стекловидное тело — один из основных образцов, дополняющих кровь [drummer2007, pigaiani2020].\n• Волосы и ногти — при хроническом или повторном воздействии; сегментный анализ может отразить историю во времени [kintz2017, flanagan2005].\n• Печень и содержимое желудка — рекомендуются в ряде случаев [drummer2007].\n• Скелетная мышца, верхушка лёгкого — ткани, меньше затрагиваемые желудочной диффузией [pounder1996].\n• Для интерпретации этанола — другие посмертные образцы (например, моча, желчь, костный мозг, внутричерепной сгусток крови) [kugelberg2007].\n• При выраженном гниении исследовались и другие матрицы, включая личинок насекомых, питающихся на трупе; они требуют специальных методик [drummer2004].\n\nДанных для интерпретации по альтернативным образцам меньше, чем по крови; методика и для них должна быть валидирована именно для этой матрицы [drummer2007].",
+        "en": "Alternative specimens are considered when the usual ones are unavailable or additional questions must be answered; they may provide additional information on the route and timing of exposure [dinis2010, skopp2004].\n\n• Vitreous humour — one of the main specimens complementing blood [drummer2007, pigaiani2020].\n• Hair and nails — for chronic or repeated exposure; segmental analysis may reflect a history over time [kintz2017, flanagan2005].\n• Liver and gastric contents — recommended in some circumstances [drummer2007].\n• Skeletal muscle, lung apex — tissues less affected by gastric diffusion [pounder1996].\n• For ethanol interpretation, other postmortem specimens (for example urine, bile, bone marrow, intracranial blood clot) [kugelberg2007].\n• In badly decomposed bodies other matrices, including insect larvae feeding on the body, have been analysed; they require special techniques [drummer2004].\n\nInterpretive data for alternative specimens are scarcer than for blood, and the method must likewise be validated for that particular matrix [drummer2007]."
+      }
+    }
+  ],
+  "keywords": {
+    "uz": [
+      "preanalitika",
+      "preanalitik bosqich",
+      "namuna olish",
+      "namunalarni tanlash",
+      "belgilash",
+      "markirovka",
+      "konservatsiya",
+      "konservant",
+      "natriy ftorid",
+      "saqlash",
+      "barqarorlik",
+      "muzlatish",
+      "son venasi qoni",
+      "periferik qon",
+      "yurak qoni",
+      "siydik",
+      "shishasimon tana suyuqligi",
+      "me’da tarkibi",
+      "jigar",
+      "soch",
+      "tirnoq",
+      "antemortem namuna",
+      "dalillarni saqlash zanjiri",
+      "chain of custody",
+      "kontaminatsiya",
+      "ashyoviy dalil",
+      "sud-toksikologiya"
+    ],
+    "ru": [
+      "преаналитика",
+      "преаналитический этап",
+      "взятие образцов",
+      "выбор образцов",
+      "маркировка",
+      "консервация",
+      "консервант",
+      "фторид натрия",
+      "хранение",
+      "стабильность",
+      "замораживание",
+      "бедренная кровь",
+      "периферическая кровь",
+      "сердечная кровь",
+      "моча",
+      "стекловидное тело",
+      "содержимое желудка",
+      "печень",
+      "волосы",
+      "ногти",
+      "прижизненный образец",
+      "цепочка хранения",
+      "chain of custody",
+      "контаминация",
+      "вещественное доказательство",
+      "судебная токсикология"
+    ],
+    "en": [
+      "preanalytics",
+      "preanalytical phase",
+      "specimen collection",
+      "specimen selection",
+      "sample collection",
+      "labelling",
+      "labeling",
+      "preservation",
+      "preservative",
+      "sodium fluoride",
+      "storage",
+      "stability",
+      "freezing",
+      "femoral blood",
+      "peripheral blood",
+      "heart blood",
+      "urine",
+      "vitreous humour",
+      "vitreous humor",
+      "gastric contents",
+      "liver",
+      "hair",
+      "nails",
+      "antemortem sample",
+      "chain of custody",
+      "contamination",
+      "evidence handling",
+      "forensic toxicology",
+      "ASB 156"
+    ]
+  },
+  "omitted_unverified": [
+    "Specimen volumes/masses (e.g., blood volume, liver mass) and sodium fluoride concentration range given in the flanagan2005 abstract: omitted per card policy (numbers not needed at concept level; laboratory-specific).",
+    "Headspace percentage for frozen tubes and hair lock size given in flanagan2005: omitted; described qualitatively.",
+    "Content of ANSI/ASB Best Practice Recommendation 156 beyond its official scope statement (specific specimen tables, amounts, container types, temperatures): the full document was not read in this session; only scope cited.",
+    "Specific storage temperatures and maximum storage durations per analyte: not verified per analyte; only the general recommendation of peters2007stab (refrigerated at least, preferably frozen) is stated.",
+    "Container material recommendations (glass vs plastic, tube additives such as EDTA/oxalate, gel separators): not verified in this session; omitted.",
+    "Oral fluid, dried blood spots and breath specimens: not covered by sources read in this session (breath excluded by ASB 156 scope); omitted.",
+    "Antemortem venipuncture procedures (skin disinfection with non-alcoholic swabs etc.): not verified from a source read in this session; omitted.",
+    "SOFT/AAFS Forensic Toxicology Laboratory Guidelines and national standards on specimen collection: edition/year not verified; not cited.",
+    "Jurisdiction-specific legal requirements (who may collect, consent, retention periods, evidence forms): intentionally excluded."
+  ]
+}
