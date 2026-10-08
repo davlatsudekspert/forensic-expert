@@ -5794,4 +5794,187 @@ class AppLocalizationsUz extends AppLocalizations {
   String searchLinkedVia(String name) {
     return '$name bilan bog‘liq (manbada tilga olingan)';
   }
+
+  @override
+  String get studyTitle => 'O‘quv rejimi';
+
+  @override
+  String get studyEntrySubtitle =>
+      'Faqat ilovadagi manbali yozuvlardan tuzilgan kartochkalar va o‘z-o‘zini tekshirish testi';
+
+  @override
+  String get studyIntro =>
+      'Har bir kartochka va savol ilovada mavjud yozuvdan, uning manbasi bilan birga tuziladi. Yangi matn yozilmaydi. Hali ekspert tekshiruvidan o‘tmagan material belgilab qo‘yilgan.';
+
+  @override
+  String get studySectionTopics => 'Fanlar bo‘yicha mavzular';
+
+  @override
+  String get studySectionSubstances => 'Moddalar: molekulyar formulalar';
+
+  @override
+  String get studySectionGuidelines => 'Yo‘riqnomalar';
+
+  @override
+  String studyDeckCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta kartochka',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String studyDueCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Takrorlash: $count ta',
+      zero: 'Takrorlash yo‘q',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get studyEmpty => 'Hozircha o‘qish uchun manbali material yo‘q.';
+
+  @override
+  String get studyLoading => 'O‘quv materiali yuklanmoqda';
+
+  @override
+  String get studyQuizUnavailable =>
+      'Test uchun bu turdagi yozuvlar yetarli emas';
+
+  @override
+  String get studyFrontTopic => 'Keltirilgan manba bu mavzu haqida nima deydi?';
+
+  @override
+  String get studyFrontSubstance => 'Molekulyar formulasi qanday?';
+
+  @override
+  String get studyFrontGuideline => 'Bu yo‘riqnomaning qisqa mazmuni qanday?';
+
+  @override
+  String get studyTapToFlip => 'Aylantirish uchun kartochkaga bosing';
+
+  @override
+  String get studyHideAnswer => 'Javobni yashirish';
+
+  @override
+  String get studyDidntKnow => 'Bilmadim';
+
+  @override
+  String studyCardProgress(int current, int total) {
+    return '$total tadan $current-kartochka';
+  }
+
+  @override
+  String studyBox(int box, int total) {
+    return '$total ta qutidan $box-quti';
+  }
+
+  @override
+  String get studyBoxNew => 'Yangi kartochka';
+
+  @override
+  String get studyQuoteLabel => 'Manbadan aynan iqtibos (asl tilda)';
+
+  @override
+  String studyGroupLabel(String group) {
+    return 'Guruh (tahririy): $group';
+  }
+
+  @override
+  String get studySourcesHeader => 'Manbalar';
+
+  @override
+  String get studyOpenEntry => 'Asl yozuvni ochish';
+
+  @override
+  String get studyOpenSourceDetails => 'Manba tafsilotlarini ochish';
+
+  @override
+  String studyMoreSources(int count) {
+    return 'yana $count ta';
+  }
+
+  @override
+  String get studySessionDone => 'Mashg‘ulot tugadi';
+
+  @override
+  String studySessionSummary(int known, int total) {
+    return '$total tadan $known tasini bildingiz';
+  }
+
+  @override
+  String get studyAllCaughtUp =>
+      'Hozir bu to‘plamda takrorlanadigan kartochka yo‘q. Keyinroq qayting yoki barcha kartochkalarni takrorlang.';
+
+  @override
+  String get studyReviewAll => 'Barcha kartochkalarni takrorlash';
+
+  @override
+  String get studyResetProgress => 'To‘plam natijalarini tozalash';
+
+  @override
+  String get studyResetDone => 'To‘plam natijalari tozalandi';
+
+  @override
+  String get studyBackToDecks => 'To‘plamlar ro‘yxatiga qaytish';
+
+  @override
+  String get studyQuizStemTopic =>
+      'Manbadagi bu iqtibos qaysi mavzuga keltirilgan?';
+
+  @override
+  String studyQuizStemSubstance(String name) {
+    return '$name moddasining molekulyar formulasi qanday?';
+  }
+
+  @override
+  String get studyQuizStemGuideline =>
+      'Bu qisqa mazmun qaysi yo‘riqnomaga tegishli?';
+
+  @override
+  String get studyQuizNote =>
+      'Noto‘g‘ri variantlar — ilovadagi shu turdagi boshqa yozuvlar; hech narsa to‘qib chiqarilmagan.';
+
+  @override
+  String studyQuizQuestionOf(int current, int total) {
+    return '$total tadan $current-savol';
+  }
+
+  @override
+  String get studyQuizNext => 'Keyingi savol';
+
+  @override
+  String get studyQuizFinish => 'Natijani ko‘rish';
+
+  @override
+  String studyQuizScore(int correct, int total) {
+    return 'Natija: $total tadan $correct ta';
+  }
+
+  @override
+  String get studyQuizMistakes => 'Xatolar tahlili';
+
+  @override
+  String get studyQuizNoMistakes => 'Xato yo‘q — barcha javoblar to‘g‘ri.';
+
+  @override
+  String studyQuizYourAnswer(String answer) {
+    return 'Sizning javobingiz: $answer';
+  }
+
+  @override
+  String studyQuizCorrectAnswer(String answer) {
+    return 'To‘g‘ri javob: $answer';
+  }
+
+  @override
+  String get studyQuizRetry => 'Yangi test';
+
+  @override
+  String get studyDeckNotFound => 'Bu to‘plam mavjud emas.';
 }

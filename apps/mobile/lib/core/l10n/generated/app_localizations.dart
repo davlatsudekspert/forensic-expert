@@ -10484,6 +10484,288 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Linked to {name} (mentioned in source)'**
   String searchLinkedVia(String name);
+
+  /// Study mode title.
+  ///
+  /// In en, this message translates to:
+  /// **'Study mode'**
+  String get studyTitle;
+
+  /// Learn screen entry.
+  ///
+  /// In en, this message translates to:
+  /// **'Flashcards and a self-check quiz built only from sourced records in the app'**
+  String get studyEntrySubtitle;
+
+  /// Hub banner.
+  ///
+  /// In en, this message translates to:
+  /// **'Every card and question is built from a record that already exists in the app, together with its source. Nothing new is written. Material that is still under expert review is labelled.'**
+  String get studyIntro;
+
+  /// Hub section.
+  ///
+  /// In en, this message translates to:
+  /// **'Topics by discipline'**
+  String get studySectionTopics;
+
+  /// Hub section.
+  ///
+  /// In en, this message translates to:
+  /// **'Substances: molecular formulas'**
+  String get studySectionSubstances;
+
+  /// Hub section.
+  ///
+  /// In en, this message translates to:
+  /// **'Guidelines'**
+  String get studySectionGuidelines;
+
+  /// Deck size.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 card} other{{count} cards}}'**
+  String studyDeckCount(int count);
+
+  /// Cards due now.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{Nothing due} other{{count} due now}}'**
+  String studyDueCount(int count);
+
+  /// Empty state.
+  ///
+  /// In en, this message translates to:
+  /// **'No sourced material is available for study yet.'**
+  String get studyEmpty;
+
+  /// Skeleton semantics.
+  ///
+  /// In en, this message translates to:
+  /// **'Loading study material'**
+  String get studyLoading;
+
+  /// Deck note.
+  ///
+  /// In en, this message translates to:
+  /// **'Not enough records of this type for a quiz'**
+  String get studyQuizUnavailable;
+
+  /// Flashcard front hint.
+  ///
+  /// In en, this message translates to:
+  /// **'What does the cited source say about this topic?'**
+  String get studyFrontTopic;
+
+  /// Flashcard front hint.
+  ///
+  /// In en, this message translates to:
+  /// **'What is the molecular formula?'**
+  String get studyFrontSubstance;
+
+  /// Flashcard front hint.
+  ///
+  /// In en, this message translates to:
+  /// **'What is the summary of this guideline?'**
+  String get studyFrontGuideline;
+
+  /// Flashcard hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap the card to flip it'**
+  String get studyTapToFlip;
+
+  /// Flashcard action.
+  ///
+  /// In en, this message translates to:
+  /// **'Hide answer'**
+  String get studyHideAnswer;
+
+  /// Flashcard grade.
+  ///
+  /// In en, this message translates to:
+  /// **'Didn’t know'**
+  String get studyDidntKnow;
+
+  /// Flashcard progress.
+  ///
+  /// In en, this message translates to:
+  /// **'Card {current} of {total}'**
+  String studyCardProgress(int current, int total);
+
+  /// Leitner box.
+  ///
+  /// In en, this message translates to:
+  /// **'Box {box} of {total}'**
+  String studyBox(int box, int total);
+
+  /// Leitner box.
+  ///
+  /// In en, this message translates to:
+  /// **'New card'**
+  String get studyBoxNew;
+
+  /// Answer label.
+  ///
+  /// In en, this message translates to:
+  /// **'Verbatim quote from the source (original language)'**
+  String get studyQuoteLabel;
+
+  /// Answer meta.
+  ///
+  /// In en, this message translates to:
+  /// **'Group (editorial): {group}'**
+  String studyGroupLabel(String group);
+
+  /// Header.
+  ///
+  /// In en, this message translates to:
+  /// **'Sources'**
+  String get studySourcesHeader;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Open the original entry'**
+  String get studyOpenEntry;
+
+  /// Semantics.
+  ///
+  /// In en, this message translates to:
+  /// **'Open source details'**
+  String get studyOpenSourceDetails;
+
+  /// Overflow.
+  ///
+  /// In en, this message translates to:
+  /// **'+{count} more'**
+  String studyMoreSources(int count);
+
+  /// Session end.
+  ///
+  /// In en, this message translates to:
+  /// **'Session complete'**
+  String get studySessionDone;
+
+  /// Session end.
+  ///
+  /// In en, this message translates to:
+  /// **'Knew {known} of {total}'**
+  String studySessionSummary(int known, int total);
+
+  /// Nothing due.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing is due in this deck right now. Come back later or review all cards.'**
+  String get studyAllCaughtUp;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Review all cards'**
+  String get studyReviewAll;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset deck progress'**
+  String get studyResetProgress;
+
+  /// Snack.
+  ///
+  /// In en, this message translates to:
+  /// **'Deck progress reset'**
+  String get studyResetDone;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Back to decks'**
+  String get studyBackToDecks;
+
+  /// Quiz stem.
+  ///
+  /// In en, this message translates to:
+  /// **'Which topic is this source quote cited for?'**
+  String get studyQuizStemTopic;
+
+  /// Quiz stem.
+  ///
+  /// In en, this message translates to:
+  /// **'What is the molecular formula of {name}?'**
+  String studyQuizStemSubstance(String name);
+
+  /// Quiz stem.
+  ///
+  /// In en, this message translates to:
+  /// **'Which guideline does this summary describe?'**
+  String get studyQuizStemGuideline;
+
+  /// Quiz banner.
+  ///
+  /// In en, this message translates to:
+  /// **'Wrong options are other records of the same type from the app; nothing is invented.'**
+  String get studyQuizNote;
+
+  /// Quiz progress.
+  ///
+  /// In en, this message translates to:
+  /// **'Question {current} of {total}'**
+  String studyQuizQuestionOf(int current, int total);
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Next question'**
+  String get studyQuizNext;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'See results'**
+  String get studyQuizFinish;
+
+  /// Quiz result.
+  ///
+  /// In en, this message translates to:
+  /// **'Score: {correct} of {total}'**
+  String studyQuizScore(int correct, int total);
+
+  /// Header.
+  ///
+  /// In en, this message translates to:
+  /// **'Review your mistakes'**
+  String get studyQuizMistakes;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'No mistakes — every answer was correct.'**
+  String get studyQuizNoMistakes;
+
+  /// Mistake review.
+  ///
+  /// In en, this message translates to:
+  /// **'Your answer: {answer}'**
+  String studyQuizYourAnswer(String answer);
+
+  /// Mistake review.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct answer: {answer}'**
+  String studyQuizCorrectAnswer(String answer);
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'New quiz'**
+  String get studyQuizRetry;
+
+  /// Empty state.
+  ///
+  /// In en, this message translates to:
+  /// **'This deck is not available.'**
+  String get studyDeckNotFound;
 }
 
 class _AppLocalizationsDelegate

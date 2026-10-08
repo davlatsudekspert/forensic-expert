@@ -17,6 +17,7 @@ const shellScreens = <String>[
   Routes.learn,
   Routes.quiz,
   Routes.flashcards,
+  Routes.study,
   '/tools/tool/tool.lab.dilution',
   Routes.forensicMedicine,
   '/library/entry/TEST-SUB-ETOH',

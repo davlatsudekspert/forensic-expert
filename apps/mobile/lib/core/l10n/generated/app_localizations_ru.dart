@@ -5815,4 +5815,192 @@ class AppLocalizationsRu extends AppLocalizations {
   String searchLinkedVia(String name) {
     return 'Связано с: $name (упомянуто в источнике)';
   }
+
+  @override
+  String get studyTitle => 'Режим обучения';
+
+  @override
+  String get studyEntrySubtitle =>
+      'Карточки и самопроверка только на основе записей приложения с источниками';
+
+  @override
+  String get studyIntro =>
+      'Каждая карточка и вопрос построены из записи, уже имеющейся в приложении, вместе с её источником. Новый текст не создаётся. Материал, ещё не прошедший экспертную проверку, отмечен.';
+
+  @override
+  String get studySectionTopics => 'Темы по дисциплинам';
+
+  @override
+  String get studySectionSubstances => 'Вещества: молекулярные формулы';
+
+  @override
+  String get studySectionGuidelines => 'Методические руководства';
+
+  @override
+  String studyDeckCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count карточки',
+      many: '$count карточек',
+      few: '$count карточки',
+      one: '$count карточка',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String studyDueCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'К повторению: $count',
+      zero: 'Нечего повторять',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get studyEmpty => 'Пока нет материала с источниками для обучения.';
+
+  @override
+  String get studyLoading => 'Загрузка учебного материала';
+
+  @override
+  String get studyQuizUnavailable =>
+      'Недостаточно записей этого типа для теста';
+
+  @override
+  String get studyFrontTopic => 'Что говорит цитируемый источник об этой теме?';
+
+  @override
+  String get studyFrontSubstance => 'Какова молекулярная формула?';
+
+  @override
+  String get studyFrontGuideline =>
+      'Каково краткое содержание этого руководства?';
+
+  @override
+  String get studyTapToFlip => 'Нажмите на карточку, чтобы перевернуть её';
+
+  @override
+  String get studyHideAnswer => 'Скрыть ответ';
+
+  @override
+  String get studyDidntKnow => 'Не знал(а)';
+
+  @override
+  String studyCardProgress(int current, int total) {
+    return 'Карточка $current из $total';
+  }
+
+  @override
+  String studyBox(int box, int total) {
+    return 'Ячейка $box из $total';
+  }
+
+  @override
+  String get studyBoxNew => 'Новая карточка';
+
+  @override
+  String get studyQuoteLabel =>
+      'Дословная цитата из источника (на языке оригинала)';
+
+  @override
+  String studyGroupLabel(String group) {
+    return 'Группа (редакционная): $group';
+  }
+
+  @override
+  String get studySourcesHeader => 'Источники';
+
+  @override
+  String get studyOpenEntry => 'Открыть исходную запись';
+
+  @override
+  String get studyOpenSourceDetails => 'Открыть сведения об источнике';
+
+  @override
+  String studyMoreSources(int count) {
+    return 'ещё $count';
+  }
+
+  @override
+  String get studySessionDone => 'Сеанс завершён';
+
+  @override
+  String studySessionSummary(int known, int total) {
+    return 'Знал(а): $known из $total';
+  }
+
+  @override
+  String get studyAllCaughtUp =>
+      'Сейчас в этой колоде нечего повторять. Вернитесь позже или повторите все карточки.';
+
+  @override
+  String get studyReviewAll => 'Повторить все карточки';
+
+  @override
+  String get studyResetProgress => 'Сбросить прогресс колоды';
+
+  @override
+  String get studyResetDone => 'Прогресс колоды сброшен';
+
+  @override
+  String get studyBackToDecks => 'К списку колод';
+
+  @override
+  String get studyQuizStemTopic =>
+      'К какой теме относится эта цитата из источника?';
+
+  @override
+  String studyQuizStemSubstance(String name) {
+    return 'Какова молекулярная формула вещества «$name»?';
+  }
+
+  @override
+  String get studyQuizStemGuideline =>
+      'Какое руководство описывает это краткое содержание?';
+
+  @override
+  String get studyQuizNote =>
+      'Неверные варианты — другие записи того же типа из приложения; ничего не придумано.';
+
+  @override
+  String studyQuizQuestionOf(int current, int total) {
+    return 'Вопрос $current из $total';
+  }
+
+  @override
+  String get studyQuizNext => 'Следующий вопрос';
+
+  @override
+  String get studyQuizFinish => 'Показать результаты';
+
+  @override
+  String studyQuizScore(int correct, int total) {
+    return 'Результат: $correct из $total';
+  }
+
+  @override
+  String get studyQuizMistakes => 'Разбор ошибок';
+
+  @override
+  String get studyQuizNoMistakes => 'Ошибок нет — все ответы верны.';
+
+  @override
+  String studyQuizYourAnswer(String answer) {
+    return 'Ваш ответ: $answer';
+  }
+
+  @override
+  String studyQuizCorrectAnswer(String answer) {
+    return 'Правильный ответ: $answer';
+  }
+
+  @override
+  String get studyQuizRetry => 'Новый тест';
+
+  @override
+  String get studyDeckNotFound => 'Эта колода недоступна.';
 }

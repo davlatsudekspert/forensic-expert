@@ -7547,5 +7547,268 @@
         "type": "String"
       }
     }
+  },
+  "studyTitle": "Study mode",
+  "@studyTitle": {
+    "description": "Study mode title."
+  },
+  "studyEntrySubtitle": "Flashcards and a self-check quiz built only from sourced records in the app",
+  "@studyEntrySubtitle": {
+    "description": "Learn screen entry."
+  },
+  "studyIntro": "Every card and question is built from a record that already exists in the app, together with its source. Nothing new is written. Material that is still under expert review is labelled.",
+  "@studyIntro": {
+    "description": "Hub banner."
+  },
+  "studySectionTopics": "Topics by discipline",
+  "@studySectionTopics": {
+    "description": "Hub section."
+  },
+  "studySectionSubstances": "Substances: molecular formulas",
+  "@studySectionSubstances": {
+    "description": "Hub section."
+  },
+  "studySectionGuidelines": "Guidelines",
+  "@studySectionGuidelines": {
+    "description": "Hub section."
+  },
+  "studyDeckCount": "{count, plural, =1{1 card} other{{count} cards}}",
+  "@studyDeckCount": {
+    "description": "Deck size.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "studyDueCount": "{count, plural, =0{Nothing due} other{{count} due now}}",
+  "@studyDueCount": {
+    "description": "Cards due now.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "studyEmpty": "No sourced material is available for study yet.",
+  "@studyEmpty": {
+    "description": "Empty state."
+  },
+  "studyLoading": "Loading study material",
+  "@studyLoading": {
+    "description": "Skeleton semantics."
+  },
+  "studyQuizUnavailable": "Not enough records of this type for a quiz",
+  "@studyQuizUnavailable": {
+    "description": "Deck note."
+  },
+  "studyFrontTopic": "What does the cited source say about this topic?",
+  "@studyFrontTopic": {
+    "description": "Flashcard front hint."
+  },
+  "studyFrontSubstance": "What is the molecular formula?",
+  "@studyFrontSubstance": {
+    "description": "Flashcard front hint."
+  },
+  "studyFrontGuideline": "What is the summary of this guideline?",
+  "@studyFrontGuideline": {
+    "description": "Flashcard front hint."
+  },
+  "studyTapToFlip": "Tap the card to flip it",
+  "@studyTapToFlip": {
+    "description": "Flashcard hint."
+  },
+  "studyHideAnswer": "Hide answer",
+  "@studyHideAnswer": {
+    "description": "Flashcard action."
+  },
+  "studyDidntKnow": "Didn’t know",
+  "@studyDidntKnow": {
+    "description": "Flashcard grade."
+  },
+  "studyCardProgress": "Card {current} of {total}",
+  "@studyCardProgress": {
+    "description": "Flashcard progress.",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "studyBox": "Box {box} of {total}",
+  "@studyBox": {
+    "description": "Leitner box.",
+    "placeholders": {
+      "box": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "studyBoxNew": "New card",
+  "@studyBoxNew": {
+    "description": "Leitner box."
+  },
+  "studyQuoteLabel": "Verbatim quote from the source (original language)",
+  "@studyQuoteLabel": {
+    "description": "Answer label."
+  },
+  "studyGroupLabel": "Group (editorial): {group}",
+  "@studyGroupLabel": {
+    "description": "Answer meta.",
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "studySourcesHeader": "Sources",
+  "@studySourcesHeader": {
+    "description": "Header."
+  },
+  "studyOpenEntry": "Open the original entry",
+  "@studyOpenEntry": {
+    "description": "Action."
+  },
+  "studyOpenSourceDetails": "Open source details",
+  "@studyOpenSourceDetails": {
+    "description": "Semantics."
+  },
+  "studyMoreSources": "+{count} more",
+  "@studyMoreSources": {
+    "description": "Overflow.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "studySessionDone": "Session complete",
+  "@studySessionDone": {
+    "description": "Session end."
+  },
+  "studySessionSummary": "Knew {known} of {total}",
+  "@studySessionSummary": {
+    "description": "Session end.",
+    "placeholders": {
+      "known": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "studyAllCaughtUp": "Nothing is due in this deck right now. Come back later or review all cards.",
+  "@studyAllCaughtUp": {
+    "description": "Nothing due."
+  },
+  "studyReviewAll": "Review all cards",
+  "@studyReviewAll": {
+    "description": "Action."
+  },
+  "studyResetProgress": "Reset deck progress",
+  "@studyResetProgress": {
+    "description": "Action."
+  },
+  "studyResetDone": "Deck progress reset",
+  "@studyResetDone": {
+    "description": "Snack."
+  },
+  "studyBackToDecks": "Back to decks",
+  "@studyBackToDecks": {
+    "description": "Action."
+  },
+  "studyQuizStemTopic": "Which topic is this source quote cited for?",
+  "@studyQuizStemTopic": {
+    "description": "Quiz stem."
+  },
+  "studyQuizStemSubstance": "What is the molecular formula of {name}?",
+  "@studyQuizStemSubstance": {
+    "description": "Quiz stem.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "studyQuizStemGuideline": "Which guideline does this summary describe?",
+  "@studyQuizStemGuideline": {
+    "description": "Quiz stem."
+  },
+  "studyQuizNote": "Wrong options are other records of the same type from the app; nothing is invented.",
+  "@studyQuizNote": {
+    "description": "Quiz banner."
+  },
+  "studyQuizQuestionOf": "Question {current} of {total}",
+  "@studyQuizQuestionOf": {
+    "description": "Quiz progress.",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "studyQuizNext": "Next question",
+  "@studyQuizNext": {
+    "description": "Action."
+  },
+  "studyQuizFinish": "See results",
+  "@studyQuizFinish": {
+    "description": "Action."
+  },
+  "studyQuizScore": "Score: {correct} of {total}",
+  "@studyQuizScore": {
+    "description": "Quiz result.",
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "studyQuizMistakes": "Review your mistakes",
+  "@studyQuizMistakes": {
+    "description": "Header."
+  },
+  "studyQuizNoMistakes": "No mistakes — every answer was correct.",
+  "@studyQuizNoMistakes": {
+    "description": "Result."
+  },
+  "studyQuizYourAnswer": "Your answer: {answer}",
+  "@studyQuizYourAnswer": {
+    "description": "Mistake review.",
+    "placeholders": {
+      "answer": {
+        "type": "String"
+      }
+    }
+  },
+  "studyQuizCorrectAnswer": "Correct answer: {answer}",
+  "@studyQuizCorrectAnswer": {
+    "description": "Mistake review.",
+    "placeholders": {
+      "answer": {
+        "type": "String"
+      }
+    }
+  },
+  "studyQuizRetry": "New quiz",
+  "@studyQuizRetry": {
+    "description": "Action."
+  },
+  "studyDeckNotFound": "This deck is not available.",
+  "@studyDeckNotFound": {
+    "description": "Empty state."
   }
 }
