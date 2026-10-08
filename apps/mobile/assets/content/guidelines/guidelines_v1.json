@@ -812,6 +812,318 @@
     "jantz_jantz1999",
     "jantz2016"
    ]
+  },
+  {
+   "id": "guideline.chem.tlc_screening",
+   "discipline_codes": [
+    "forensic_chemistry",
+    "forensic_toxicology"
+   ],
+   "status": "NEEDS_REVIEW",
+   "updated": "2026-10-08",
+   "translation_status": {
+    "uz": "AUTHORED",
+    "ru": "DRAFT",
+    "en": "DRAFT"
+   },
+   "related_tool_ids": [],
+   "title": {
+    "uz": "Sud-kimyo va toksikologiyada yupqa qatlamli xromatografiya (YuQX)",
+    "ru": "Тонкослойная хроматография (ТСХ) в судебной химии и токсикологии",
+    "en": "Thin-layer chromatography (TLC) in forensic chemistry and toxicology"
+   },
+   "summary": {
+    "uz": "Yupqa qatlamli xromatografiya — moddalarni plastinkadagi yupqa sorbent qatlamida ajratib, UB nur va rangli reaktivlar bilan aniqlaydigan arzon va sodda usul. U dori va giyohvand moddalarni skrining qilish hamda identifikatsiyani qo‘llab-quvvatlash uchun ishlatiladi, lekin tuzilma haqida ma’lumot bermaydi: faqat Rf qiymatiga asoslanib modda identifikatsiya qilinmaydi va natija boshqa tamoyilga asoslangan usul (odatda GX-MS yoki SX-MS) bilan tasdiqlanadi.",
+    "ru": "Тонкослойная хроматография — недорогой и простой метод, при котором вещества разделяются в тонком слое сорбента на пластинке и выявляются УФ-светом и цветными реактивами. Применяется для скрининга лекарственных и наркотических веществ и как вспомогательный метод идентификации, но не даёт структурной информации: идентификация только по величине Rf недопустима, результат подтверждается методом, основанным на ином принципе (обычно ГХ-МС или ЖХ-МС).",
+    "en": "Thin-layer chromatography is an inexpensive, simple technique in which substances are separated in a thin sorbent layer on a plate and detected with UV light and colour reagents. It is used to screen for medicinal and illicit drugs and to support identification, but it provides no structural information: a substance is never identified from its Rf value alone, and the result is confirmed by a technique based on a different principle (usually GC-MS or LC-MS)."
+   },
+   "sections": [
+    {
+     "key": "basis",
+     "title": {
+      "uz": "Ilmiy asos",
+      "ru": "Научная основа",
+      "en": "Scientific basis"
+     },
+     "citations": [
+      "cheng2011",
+      "dezeeuw1997",
+      "dezeeuw1992",
+      "dezeeuw1994"
+     ],
+     "body": {
+      "uz": "Yupqa qatlamli xromatografiya (YuQX; inglizcha TLC) — planar (tekis) xromatografiya turi. Shisha, alyuminiy yoki plastik asosga surtilgan yupqa sorbent qatlami (ko‘pincha silikagel) qo‘zg‘almas (statsionar) faza vazifasini bajaradi. Namuna plastinkaning pastki qismiga kichik dog‘ yoki chiziq ko‘rinishida tomiziladi, so‘ng plastinka yopiq kamerada erituvchilar aralashmasiga (harakatlanuvchi yoki mobil faza, elyuent) botiriladi. Elyuent kapillyar kuchlar ta’sirida qatlam bo‘ylab yuqoriga ko‘tariladi.\n\nAjralish moddalarning ikki faza o‘rtasida turlicha taqsimlanishiga asoslanadi: sorbent bilan kuchliroq bog‘lanadigan modda sekinroq, elyuentda yaxshiroq eriydigan modda esa tezroq siljiydi. Natijada aralashma komponentlari plastinkada alohida dog‘larga ajraladi.\n\nDog‘ning holati Rf (retention factor) bilan ifodalanadi — bu dog‘ bosib o‘tgan masofaning elyuent fronti bosib o‘tgan masofaga nisbati. Rf moddaning o‘ziga xos doimiysi emas: u plastinka, elyuent va tajriba sharoitlariga bog‘liq. Shu sababli toksikologik tahlilda standart tizimlar, ma’lumotlar bazalari va har bir plastinkada birga yuritiladigan ma’lum moddalar aralashmasi yordamida tuzatilgan (korreksiyalangan) Rf qiymatlaridan foydalanish taklif etilgan [dezeeuw1997, dezeeuw1992, dezeeuw1994].\n\nYuQX dog‘larini kimyoviy va optik usullar bilan ko‘rinadigan qiladi, ammo bu usullar plastinkadagi moddaning tuzilishini bevosita aniqlashga imkon bermaydi [cheng2011]. Shuning uchun YuQX natijasi o‘z-o‘zidan strukturaviy identifikatsiya hisoblanmaydi.",
+      "ru": "Тонкослойная хроматография (ТСХ; англ. TLC) — вид планарной хроматографии. Неподвижной (стационарной) фазой служит тонкий слой сорбента (чаще силикагеля), нанесённый на стеклянную, алюминиевую или пластиковую подложку. Пробу наносят в нижней части пластинки в виде небольшого пятна или полосы, затем пластинку помещают в закрытую камеру со смесью растворителей (подвижная фаза, элюент). Элюент поднимается по слою под действием капиллярных сил.\n\nРазделение основано на различном распределении веществ между двумя фазами: вещество, сильнее удерживаемое сорбентом, движется медленнее, а лучше растворимое в элюенте — быстрее. В результате компоненты смеси образуют на пластинке отдельные пятна.\n\nПоложение пятна выражают величиной Rf (retention factor) — отношением пути, пройденного пятном, к пути, пройденному фронтом элюента. Rf не является константой вещества: он зависит от пластинки, элюента и условий опыта. Поэтому в токсикологическом анализе предложено использовать стандартизованные системы, базы данных и скорректированные значения Rf, получаемые с помощью смеси известных веществ, хроматографируемой на каждой пластинке [dezeeuw1997, dezeeuw1992, dezeeuw1994].\n\nПятна на ТСХ выявляют химическими и оптическими способами, однако они не позволяют непосредственно установить структуру вещества на пластинке [cheng2011]. Поэтому результат ТСХ сам по себе не является структурной идентификацией.",
+      "en": "Thin-layer chromatography (TLC) is a form of planar chromatography. A thin layer of sorbent (most often silica gel) coated on a glass, aluminium or plastic backing serves as the stationary phase. The sample is applied near the bottom of the plate as a small spot or band, and the plate is then placed in a closed chamber containing a solvent mixture (the mobile phase, or eluent). The eluent rises through the layer by capillary action.\n\nSeparation relies on the different distribution of substances between the two phases: a compound retained more strongly by the sorbent moves more slowly, while one more soluble in the eluent moves faster. The components of a mixture therefore form separate spots on the plate.\n\nThe position of a spot is expressed as the Rf (retention factor): the distance travelled by the spot divided by the distance travelled by the solvent front. Rf is not a constant of the substance; it depends on the plate, the eluent and the experimental conditions. For this reason, toxicological analysis has proposed standardised systems, databases and corrected Rf values obtained with a mixture of known compounds run on every plate [dezeeuw1997, dezeeuw1992, dezeeuw1994].\n\nSpots are made visible by chemical and optical means, but these do not allow the structure of the compound on the plate to be determined directly [cheng2011]. A TLC result is therefore not, by itself, a structural identification."
+     }
+    },
+    {
+     "key": "scope",
+     "title": {
+      "uz": "Qo‘llanish sohasi va namunalar",
+      "ru": "Область применения и объекты исследования",
+      "en": "Scope and samples"
+     },
+     "citations": [
+      "siek1997",
+      "bogusz1984",
+      "franke1988",
+      "dezeeuw1997",
+      "simpson1993",
+      "uchiyama2008",
+      "tsujikawa2022",
+      "kowalska2022"
+     ],
+     "body": {
+      "uz": "Sud-kimyo (musodara qilingan moddalar):\n• kukunlar, tabletkalar, suyuqliklar va o‘simlik materiallarida giyohvand va psixotrop moddalarni dastlabki aniqlash; rangli testlar bilan birga yangi psixoaktiv moddalarni dastlabki identifikatsiya qilish [uchiyama2008];\n• kannabinoidlar aralashmalarini tahlil qilish — maxsus sorbentlar yordamida izomerlarni ajratish [tsujikawa2022];\n• psixoaktiv o‘simliklar va botanik mahsulotlarni skrining qilish (YuQX va YuSYuQX) [kowalska2022].\n\nSud-toksikologiya (biologik ob’ektlar):\n• siydik, qon zardobi va boshqa ob’ektlarda dori va ularning metabolitlarini keng spektrli skrining qilish [siek1997];\n• qon, plazma va jigar to‘qimasidan ajratib olingan ekstraktlar [bogusz1984];\n• tarixan siydikni immunokimyoviy skriningdan keyin qo‘shimcha identifikatsiya qilish uchun ishlatilgan [simpson1993].\n\nNamuna tayyorlash. Biologik ob’ektlar plastinkaga to‘g‘ridan-to‘g‘ri tomizilmaydi: avval moddalar ajratib olinadi va konsentrlanadi — suyuqlik-suyuqlik ekstraksiyasi yoki qattiq fazali ekstraksiya qo‘llanadi [dezeeuw1997, franke1988]. Ekstraksiya usuli kislotali, neytral va asosli moddalarning qaysi biri ajratib olinishini va keyingi Rf qiymatlarini ham belgilaydi [franke1988, bogusz1984].",
+      "ru": "Судебная химия (изъятые объекты):\n• предварительное выявление наркотических и психотропных веществ в порошках, таблетках, жидкостях и растительном материале; вместе с цветными тестами — предварительная идентификация новых психоактивных веществ [uchiyama2008];\n• анализ смесей каннабиноидов — разделение изомеров с помощью специальных сорбентов [tsujikawa2022];\n• скрининг психоактивных растений и растительной продукции (ТСХ и ВЭТСХ) [kowalska2022].\n\nСудебная токсикология (биологические объекты):\n• широкий скрининг лекарственных веществ и их метаболитов в моче, сыворотке крови и других объектах [siek1997];\n• экстракты из крови, плазмы и ткани печени [bogusz1984];\n• исторически применялась для дополнительной идентификации после иммунохимического скрининга мочи [simpson1993].\n\nПробоподготовка. Биологические объекты не наносят на пластинку непосредственно: сначала вещества выделяют и концентрируют — жидкость-жидкостной или твердофазной экстракцией [dezeeuw1997, franke1988]. Способ экстракции определяет, какие вещества (кислые, нейтральные, основные) будут выделены, и влияет на последующие значения Rf [franke1988, bogusz1984].",
+      "en": "Forensic chemistry (seized materials):\n• preliminary detection of narcotic and psychotropic substances in powders, tablets, liquids and plant material; together with colour tests, preliminary identification of new psychoactive substances [uchiyama2008];\n• analysis of cannabinoid mixtures, including separation of isomers on special sorbents [tsujikawa2022];\n• screening of psychoactive plants and botanical products (TLC and HPTLC) [kowalska2022].\n\nForensic toxicology (biological specimens):\n• broad-spectrum screening for drugs and metabolites in urine, serum and other specimens [siek1997];\n• extracts of blood, plasma and liver tissue [bogusz1984];\n• historically used for further identification after immunoassay screening of urine [simpson1993].\n\nSample preparation. Biological specimens are not applied to the plate directly: analytes are first isolated and concentrated by liquid-liquid or solid-phase extraction [dezeeuw1997, franke1988]. The extraction procedure determines which compounds (acidic, neutral, basic) are recovered and also influences the resulting Rf values [franke1988, bogusz1984]."
+     }
+    },
+    {
+     "key": "methods",
+     "title": {
+      "uz": "Usul (konseptual darajada)",
+      "ru": "Методика (на концептуальном уровне)",
+      "en": "Method (conceptual level)"
+     },
+     "citations": [
+      "dezeeuw1997",
+      "franke1988",
+      "dezeeuw1994",
+      "siek1997",
+      "uchiyama2008",
+      "kato2001"
+     ],
+     "body": {
+      "uz": "1. Ajratib olish va konsentrlash. Ob’ekt turiga mos ekstraksiya tanlanadi; ekstrakt bug‘latiladi va oz hajmdagi erituvchida qayta eritiladi [dezeeuw1997, franke1988].\n\n2. Plastinkaga tomizish. Ekstrakt bilan bir qatorda o‘sha plastinkaga ma’lum moddalarning standart eritmalari, Rf ni tuzatish uchun ma’lum moddalar aralashmasi, shuningdek salbiy (bo‘sh) va ijobiy nazorat namunalari tomiziladi [dezeeuw1994].\n\n3. Xromatografiya (ishlab chiqish). Plastinka elyuent bug‘lari bilan to‘yintirilgan yopiq kamerada ishlab chiqiladi; elyuent fronti belgilangan chiziqqa yetganda plastinka olinadi, front belgilanadi va plastinka quritiladi. Selektivlikni oshirish uchun ikki xil erituvchilar tizimidan foydalanish mumkin [uchiyama2008].\n\n4. Ko‘rinadigan qilish (vizualizatsiya). Fluoressent indikatorli plastinkalarda dog‘lar avval qisqa to‘lqinli UB nurda ko‘riladi, so‘ng xromogen reaktivlar ketma-ket purkaladi. Toksikologik skrining tizimlarida tasvirlangan reaktivlar orasida Dragendorff reaktivi, yodoplatinat, Markis va Mandelin reaktivlari, fluoreskamin, temir(III) xloridli reaktivlar bor [siek1997, uchiyama2008]. Ayrim reaktivlar faqat ma’lum kimyoviy sinf (masalan, uchlamchi aminlar) uchun tanlab ta’sir qiladi va boshqa reaktivlarga nisbatan sezgirroq bo‘lishi mumkin [kato2001].\n\n5. Qayd etish va solishtirish. Har bir dog‘ uchun Rf (yoki tuzatilgan Rf), UB nurdagi xatti-harakati va har bir reaktiv bilan bergan rangi yoziladi; natija bir xil sharoitda yuritilgan standartlar va ma’lumotlar bazasi bilan solishtiriladi. Mos keladigan moddalar ro‘yxatini tuzishda kompyuter dasturlari yordam berishi mumkin [siek1997, dezeeuw1997].\n\n6. Hujjatlashtirish. Ranglar vaqt o‘tishi bilan o‘zgarishi mumkinligi sababli plastinka darhol suratga olinadi yoki tavsiflanadi; plastinka turi, elyuent tarkibi, kamera, sharoit va reaktivlar qayd etiladi.\n\n7. Tasdiqlash. YuQX bo‘yicha gumon qilingan modda boshqa tamoyilga asoslangan, afzalroq strukturaviy ma’lumot beradigan usul bilan tasdiqlanadi (pastdagi «Ehtiyot choralari» bo‘limiga qarang).",
+      "ru": "1. Выделение и концентрирование. Подбирают экстракцию, соответствующую объекту; экстракт упаривают и растворяют в малом объёме растворителя [dezeeuw1997, franke1988].\n\n2. Нанесение на пластинку. Рядом с экстрактом на ту же пластинку наносят растворы стандартов известных веществ, смесь известных веществ для коррекции Rf, а также отрицательный (холостой) и положительный контроли [dezeeuw1994].\n\n3. Хроматографирование (проявление). Пластинку проявляют в закрытой камере, насыщенной парами элюента; когда фронт элюента достигает отмеченной линии, пластинку извлекают, отмечают фронт и высушивают. Для повышения селективности можно использовать две различные системы растворителей [uchiyama2008].\n\n4. Детектирование (визуализация). На пластинках с флуоресцентным индикатором пятна сначала просматривают в коротковолновом УФ-свете, затем последовательно опрыскивают хромогенными реактивами. Среди реактивов, описанных для систем токсикологического скрининга, — реактив Драгендорфа, иодоплатинат, реактивы Марки и Манделина, флуорескамин, реактивы на основе хлорида железа(III) [siek1997, uchiyama2008]. Некоторые реактивы избирательно реагируют с определённым химическим классом (например, третичными аминами) и могут быть чувствительнее других [kato2001].\n\n5. Регистрация и сравнение. Для каждого пятна записывают Rf (или скорректированный Rf), поведение в УФ-свете и окраску с каждым реактивом; результат сравнивают со стандартами, хроматографированными в тех же условиях, и с базой данных. Составлению списка подходящих веществ могут помогать компьютерные программы [siek1997, dezeeuw1997].\n\n6. Документирование. Поскольку окраска со временем может изменяться, пластинку сразу фотографируют или описывают; фиксируют тип пластинки, состав элюента, камеру, условия и реактивы.\n\n7. Подтверждение. Предполагаемое по ТСХ вещество подтверждают методом, основанным на ином принципе, предпочтительно дающим структурную информацию (см. раздел «Предостережения»).",
+      "en": "1. Isolation and concentration. An extraction suited to the specimen is chosen; the extract is evaporated and redissolved in a small volume of solvent [dezeeuw1997, franke1988].\n\n2. Application to the plate. Alongside the extract, the same plate carries reference standards of known compounds, a mixture of known compounds for Rf correction, and negative (blank) and positive controls [dezeeuw1994].\n\n3. Development. The plate is developed in a closed chamber saturated with eluent vapour; when the solvent front reaches a marked line, the plate is removed, the front is marked and the plate is dried. Two different solvent systems can be used to increase selectivity [uchiyama2008].\n\n4. Visualization. On plates with a fluorescent indicator, spots are first inspected under short-wave UV light, after which chromogenic reagents are sprayed in sequence. Reagents described for toxicological screening systems include Dragendorff reagent, iodoplatinate, Marquis and Mandelin reagents, fluorescamine and ferric chloride-based reagents [siek1997, uchiyama2008]. Some reagents react selectively with a particular chemical class (for example tertiary amines) and may be more sensitive than others [kato2001].\n\n5. Recording and comparison. For each spot the Rf (or corrected Rf), its behaviour under UV light and the colour given with each reagent are recorded, and the result is compared with standards run under the same conditions and with a database. Computer programs can assist in generating a list of candidate substances [siek1997, dezeeuw1997].\n\n6. Documentation. Because colours can change over time, the plate is photographed or described immediately; the plate type, eluent composition, chamber, conditions and reagents are recorded.\n\n7. Confirmation. A substance suspected on TLC is confirmed by a technique based on a different principle, preferably one that provides structural information (see 'Interpretation cautions')."
+     }
+    },
+    {
+     "key": "advantages",
+     "title": {
+      "uz": "Afzalliklari",
+      "ru": "Преимущества",
+      "en": "Advantages"
+     },
+     "citations": [
+      "cheng2011",
+      "flanagan1988",
+      "siek1997",
+      "simpson1993",
+      "tsujikawa2022",
+      "kowalska2022"
+     ],
+     "body": {
+      "uz": "• Arzon, sodda va qimmat asbob-uskunani talab qilmaydi [cheng2011]; kichik laboratoriyalar uchun ham erishiladigan [flanagan1988].\n• Bir plastinkada bir nechta namuna, standartlar va nazoratlar parallel ravishda, bir xil sharoitda tahlil qilinadi — bu bevosita vizual solishtirishga imkon beradi.\n• Bitta plastinkani bir necha reaktiv bilan ketma-ket ishlash har bir dog‘ haqida qo‘shimcha (Rf dan tashqari) kimyoviy ma’lumot beradi [siek1997].\n• Keng spektrli skrining: natija faqat oldindan tanlangan antitelolar to‘plami bilan cheklanmaydi, shuning uchun kutilmagan yoki yangi moddalarni sezishga yordam berishi mumkin [siek1997, simpson1993].\n• Selektivlikni plastinka turi va elyuentni o‘zgartirish orqali moslashuvchan sozlash mumkin [tsujikawa2022].\n• Instrumental variant (YuSYuQX) va mass-spektrometriya bilan birlashtirish usul imkoniyatlarini kengaytiradi [cheng2011, kowalska2022].",
+      "ru": "• Дешёвый и простой метод, не требующий дорогостоящего оборудования [cheng2011]; доступен и небольшим лабораториям [flanagan1988].\n• На одной пластинке параллельно и в одинаковых условиях анализируют несколько проб, стандарты и контроли, что позволяет непосредственное визуальное сравнение.\n• Последовательная обработка одной пластинки несколькими реактивами даёт о каждом пятне дополнительную (помимо Rf) химическую информацию [siek1997].\n• Широкий скрининг: результат не ограничен заранее выбранным набором антител, поэтому метод может помочь заметить неожиданные или новые вещества [siek1997, simpson1993].\n• Селективность можно гибко менять, подбирая тип пластинки и элюент [tsujikawa2022].\n• Инструментальный вариант (ВЭТСХ) и сочетание с масс-спектрометрией расширяют возможности метода [cheng2011, kowalska2022].",
+      "en": "• Inexpensive, simple and does not require costly instrumentation [cheng2011]; accessible to small laboratories [flanagan1988].\n• Several samples, standards and controls are analysed in parallel on one plate under identical conditions, allowing direct visual comparison.\n• Sequential treatment of one plate with several reagents provides additional chemical information about each spot beyond its Rf [siek1997].\n• Broad-spectrum screening: the result is not restricted to a pre-selected panel of antibodies, so the technique can help to detect unexpected or new substances [siek1997, simpson1993].\n• Selectivity can be adjusted flexibly by changing the plate type and eluent [tsujikawa2022].\n• The instrumental variant (HPTLC) and coupling with mass spectrometry extend the capabilities of the technique [cheng2011, kowalska2022]."
+     }
+    },
+    {
+     "key": "limitations",
+     "title": {
+      "uz": "Cheklovlar",
+      "ru": "Ограничения",
+      "en": "Limitations"
+     },
+     "citations": [
+      "cheng2011",
+      "swgdrug2024",
+      "singh1992",
+      "tsujikawa2022",
+      "bogusz1984",
+      "franke1988",
+      "dezeeuw1992",
+      "dezeeuw1994",
+      "siek1997",
+      "kato2001",
+      "flanagan1988",
+      "maurer2004",
+      "maurer2010"
+     ],
+     "body": {
+      "uz": "• Tuzilma haqida ma’lumot yo‘q: dog‘ning o‘rni va rangi moddaning tuzilishini aniqlamaydi [cheng2011]. SWGDRUG tavsiyalarida YuQX tuzilma ma’lumotisiz, kimyoviy va fizik xossalar orqali selektivlik beradigan usullar qatorida keltirilgan [swgdrug2024].\n• Cheklangan selektivlik: turli moddalar bir xil yoki yaqin Rf ga ega bo‘lishi va bir xil rang berishi mumkin. Masalan, pivodan tushishi mumkin bo‘lgan hordenin ayrim opioidlarning YuQX tahliliga xalaqit berib, soxta musbat natijaga olib kelishi ko‘rsatilgan [singh1992]. Oddiy silikagelda ayrim izomerlar ajralmaydi [tsujikawa2022].\n• Rf ning sharoitga bog‘liqligi: biologik matritsa va ekstraksiya Rf aniqligi va takroriyligini pasaytiradi [bogusz1984, franke1988]; harorat va namlik Rf ni sezilarli siljitadi [dezeeuw1992, dezeeuw1994]. Shu sababli adabiyotdagi Rf qiymatlarini boshqa laboratoriya sharoitiga to‘g‘ridan-to‘g‘ri ko‘chirib bo‘lmaydi.\n• Cheklangan sezgirlik: aniqlash chegarasi modda va reaktivga bog‘liq [siek1997, kato2001]; past dozali yoki past konsentratsiyali moddalar aniqlanmay qolishi mumkin, shuning uchun manfiy natija moddaning yo‘qligini isbotlamaydi.\n• Vizual talqinning sub’ektivligi: ranglar va dog‘lar ko‘z bilan baholanadi, rang vaqt o‘tishi bilan o‘zgaradi; natija tahlilchining tajribasiga bog‘liq. Kompyuter yordamida solishtirish shu muammoni kamaytirish uchun ishlab chiqilgan [siek1997].\n• Miqdoriy imkoniyat cheklangan: oddiy YuQX asosan sifat tahlili; miqdoriy baholash uchun instrumental usullar zarur.\n• Kundalik amaliyotdagi o‘rni qisqargan: allaqachon 1980-yillarda GX, YuSSX va immunokimyoviy usullar keng qo‘llanila boshlangan [flanagan1988]; bugungi kunda analitik toksikologiyada asosan GX-MS va SX-MS ishlatiladi [maurer2010, maurer2004].",
+      "ru": "• Нет структурной информации: положение и окраска пятна не устанавливают строение вещества [cheng2011]. В рекомендациях SWGDRUG ТСХ отнесена к методам, обеспечивающим селективность через химические и физические свойства без структурной информации [swgdrug2024].\n• Ограниченная селективность: разные вещества могут иметь одинаковые или близкие Rf и давать одинаковую окраску. Например, показано, что гордеин, который может поступать с пивом, мешает ТСХ-анализу некоторых опиоидов и может давать ложноположительный результат [singh1992]. На обычном силикагеле некоторые изомеры не разделяются [tsujikawa2022].\n• Зависимость Rf от условий: биологическая матрица и экстракция снижают точность и воспроизводимость Rf [bogusz1984, franke1988]; температура и влажность заметно смещают Rf [dezeeuw1992, dezeeuw1994]. Поэтому литературные значения Rf нельзя напрямую переносить на условия другой лаборатории.\n• Ограниченная чувствительность: предел обнаружения зависит от вещества и реактива [siek1997, kato2001]; низкодозированные вещества или вещества в низких концентрациях могут не выявляться, поэтому отрицательный результат не доказывает отсутствия вещества.\n• Субъективность визуальной оценки: окраска и пятна оцениваются на глаз, окраска со временем меняется; результат зависит от опыта аналитика. Для уменьшения этой проблемы разработано компьютерное сопоставление [siek1997].\n• Ограниченные количественные возможности: обычная ТСХ — преимущественно качественный метод; для количественной оценки нужны инструментальные методы.\n• Сокращение роли в рутинной практике: уже в 1980-е годы широко применялись ГХ, ВЭЖХ и иммунохимические методы [flanagan1988]; сегодня в аналитической токсикологии используются в основном ГХ-МС и ЖХ-МС [maurer2010, maurer2004].",
+      "en": "• No structural information: the position and colour of a spot do not establish a compound's structure [cheng2011]. The SWGDRUG Recommendations list TLC among techniques that provide selectivity through chemical and physical characteristics without structural information [swgdrug2024].\n• Limited selectivity: different substances can share the same or similar Rf and give the same colour. For example, hordenine, which can be ingested with beer, has been shown to interfere with TLC of some opioids and may cause a false positive [singh1992]. Some isomers are not separated on conventional silica gel [tsujikawa2022].\n• Dependence of Rf on conditions: biological matrix and extraction reduce the accuracy and reproducibility of Rf [bogusz1984, franke1988]; temperature and humidity shift Rf markedly [dezeeuw1992, dezeeuw1994]. Literature Rf values therefore cannot be transferred directly to another laboratory's conditions.\n• Limited sensitivity: the detection limit depends on the compound and the reagent [siek1997, kato2001]; low-dose substances or low concentrations may be missed, so a negative result does not prove absence.\n• Subjectivity of visual interpretation: colours and spots are judged by eye, and colours change over time; the result depends on the analyst's experience. Computer-assisted matching was developed to reduce this problem [siek1997].\n• Limited quantitative capability: conventional TLC is mainly qualitative; instrumental methods are needed for quantitative work.\n• Declining routine role: GC, HPLC and immunoassays were already widely used in the 1980s [flanagan1988]; today analytical toxicology relies mainly on GC-MS and LC-MS [maurer2010, maurer2004]."
+     }
+    },
+    {
+     "key": "factors",
+     "title": {
+      "uz": "Natijaga ta’sir qiluvchi omillar",
+      "ru": "Факторы, влияющие на результат",
+      "en": "Factors affecting the result"
+     },
+     "citations": [
+      "tsujikawa2022",
+      "bogusz1984",
+      "franke1988",
+      "dezeeuw1992",
+      "dezeeuw1994",
+      "kato2001",
+      "siek1997"
+     ],
+     "body": {
+      "uz": "• Plastinka: sorbent turi, impregnatsiya, partiya va saqlash sharoiti. Sorbentni o‘zgartirish ajralish selektivligini tubdan o‘zgartirishi mumkin [tsujikawa2022].\n• Erituvchilar tizimi: elyuent tarkibi va yangiligi; turli tizimlarda Rf ning aniqligi va laboratoriyalararo takroriyligi turlicha [bogusz1984, franke1988].\n• Kameraning to‘yinishi: kamera elyuent bug‘lari bilan yetarli to‘yinmasa, front notekis ko‘tariladi va Rf o‘zgaradi; to‘yintirish tartibi har safar bir xil bo‘lishi kerak.\n• Harorat va namlik: Rf qiymatlari va takroriylikka sezilarli ta’sir qiladi; har bir plastinkada ma’lum moddalar aralashmasi bilan Rf ni tuzatish bu ta’sirni kamaytiradi [dezeeuw1992, dezeeuw1994].\n• Namuna miqdori va tomizish sifati: haddan tashqari ko‘p namuna dog‘larning cho‘zilishi va qo‘shilib ketishiga, juda oz namuna esa aniqlanmay qolishga olib keladi; dog‘ o‘lchami kichik va bir xil bo‘lishi kerak.\n• Matritsa va ekstraksiya: biologik ob’ekt komponentlari va ekstraksiya usuli Rf ni siljitadi va dog‘lar shaklini buzadi; ekstrakt uchun qidiruv oralig‘i toza standartlarga nisbatan kengroq bo‘lishi kerak [bogusz1984, franke1988].\n• Vizualizatsiya reaktivlari: reaktiv tanlovi, tayyorlanishi, yangiligi va qo‘llash tartibi sezgirlik va rangga ta’sir qiladi [kato2001, siek1997].\n• Tahlilchi: rangni farqlash tajribasi, yoritish sharoiti va hujjatlashtirish sifati.",
+      "ru": "• Пластинка: тип сорбента, импрегнирование, партия и условия хранения. Смена сорбента может коренным образом изменить селективность разделения [tsujikawa2022].\n• Система растворителей: состав и свежесть элюента; точность Rf и межлабораторная воспроизводимость различаются в разных системах [bogusz1984, franke1988].\n• Насыщение камеры: при недостаточном насыщении камеры парами элюента фронт поднимается неравномерно и Rf изменяется; порядок насыщения должен быть постоянным.\n• Температура и влажность: заметно влияют на значения Rf и воспроизводимость; коррекция Rf по смеси известных веществ на каждой пластинке уменьшает это влияние [dezeeuw1992, dezeeuw1994].\n• Количество пробы и качество нанесения: перегрузка приводит к растягиванию и слиянию пятен, слишком малое количество — к невыявлению; пятна должны быть небольшими и одинаковыми.\n• Матрица и экстракция: компоненты биологического объекта и способ экстракции смещают Rf и искажают форму пятен; для экстрактов окно поиска должно быть шире, чем для чистых стандартов [bogusz1984, franke1988].\n• Реактивы для детектирования: выбор, приготовление, свежесть и порядок нанесения реактива влияют на чувствительность и окраску [kato2001, siek1997].\n• Аналитик: опыт различения окраски, условия освещения и качество документирования.",
+      "en": "• Plate: sorbent type, impregnation, batch and storage conditions. Changing the sorbent can fundamentally alter separation selectivity [tsujikawa2022].\n• Solvent system: eluent composition and freshness; the accuracy of Rf and interlaboratory reproducibility differ between systems [bogusz1984, franke1988].\n• Chamber saturation: if the chamber is not sufficiently saturated with eluent vapour, the front rises unevenly and Rf changes; the saturation procedure should be kept constant.\n• Temperature and humidity: these markedly affect Rf values and reproducibility; correcting Rf with a mixture of known compounds on every plate reduces the effect [dezeeuw1992, dezeeuw1994].\n• Sample load and application: overloading causes spot tailing and merging, while too little sample may go undetected; spots should be small and uniform.\n• Matrix and extraction: components of the biological specimen and the extraction procedure shift Rf and distort spot shape; the search window for extracts should be wider than for pure standards [bogusz1984, franke1988].\n• Visualization reagents: reagent choice, preparation, freshness and order of application affect sensitivity and colour [kato2001, siek1997].\n• Analyst: experience in colour discrimination, lighting conditions and quality of documentation."
+     }
+    },
+    {
+     "key": "cautions",
+     "title": {
+      "uz": "Talqin qilishda ehtiyot choralari",
+      "ru": "Предостережения при интерпретации",
+      "en": "Interpretation cautions"
+     },
+     "citations": [
+      "swgdrug2024",
+      "singh1992",
+      "uchiyama2008",
+      "maurer2004",
+      "dezeeuw1994",
+      "dezeeuw1997"
+     ],
+     "body": {
+      "uz": "• Faqat Rf qiymatiga (yoki faqat rangga) asoslanib modda identifikatsiya qilinmaydi. YuQX natijasi qo‘llangan sxemaga qarab dastlabki (taxminiy) natija yoki identifikatsiyani qo‘llab-quvvatlovchi dalil hisoblanadi.\n• Musbat YuQX natijasi boshqa fizik-kimyoviy tamoyilga asoslangan, afzalroq strukturaviy ma’lumot beradigan usul (GX-MS, SX-MS) bilan tasdiqlanishi kerak [singh1992, uchiyama2008, maurer2004].\n• Musodara qilingan moddalar uchun SWGDRUG tavsiyalari (8.2-versiya) usullarni selektivlik darajasiga ko‘ra A, B va C toifalarga ajratadi; YuQX B toifasiga, immunokimyoviy usullar va rangli testlar C toifasiga kiritilgan. A toifasidagi usul (masalan, mass-spektrometriya) qo‘llanganda identifikatsiyani qo‘llab-quvvatlash uchun kamida yana bitta boshqa usul kerak; A toifasidagi usulsiz kamida uchta usul talab qilinadi, ulardan ikkitasi turli xossalarga asoslangan B toifasidagi usullar bo‘lishi kerak [swgdrug2024]. Demak, YuQX yolg‘iz o‘zi identifikatsiya uchun yetarli emas.\n• SWGDRUG tavsiyalari musodara qilingan moddalarga taalluqli; biologik ob’ektlar bo‘yicha toksikologik tahlilda laboratoriya amaldagi toksikologik standartlar va o‘z validatsiya qilingan tartiblariga amal qiladi.\n• Har bir plastinkada standartlar, Rf ni tuzatish aralashmasi, salbiy va ijobiy nazoratlar bo‘lishi kerak; ularsiz natija talqin qilinmaydi [dezeeuw1994].\n• Usullar detektsiya va identifikatsiya xossalari bo‘yicha validatsiya qilinishi kerak [dezeeuw1997]; sxemaning cheklovlari hujjatlashtiriladi va kerak bo‘lsa hisobotda ko‘rsatiladi [swgdrug2024].\n• Manfiy natija moddaning yo‘qligini isbotlamaydi — u faqat qo‘llangan usulning aniqlash imkoniyati doirasida baholanadi.\n• Hisobotda «YuQX natijasi X moddasi bilan mos keladi» kabi ehtiyotkor iboralar ishlatiladi; tasdiqlanmagan natija yakuniy identifikatsiya sifatida keltirilmaydi.\n• Ushbu kartochka ilmiy tavsiyalarni bayon etadi; ekspertiza tayinlash va rasmiylashtirish tartibi amaldagi me’yoriy hujjatlar bilan belgilanadi.",
+      "ru": "• Идентификация вещества только по Rf (или только по окраске) недопустима. В зависимости от аналитической схемы результат ТСХ является предварительным (ориентировочным) или подтверждающим идентификацию доказательством.\n• Положительный результат ТСХ должен быть подтверждён методом, основанным на ином физико-химическом принципе и предпочтительно дающим структурную информацию (ГХ-МС, ЖХ-МС) [singh1992, uchiyama2008, maurer2004].\n• Для изъятых наркотических средств рекомендации SWGDRUG (версия 8.2) делят методы по уровню селективности на категории A, B и C; ТСХ отнесена к категории B, иммунохимические методы и цветные тесты — к категории C. При использовании метода категории A (например, масс-спектрометрии) требуется ещё как минимум один иной метод для подтверждения идентификации; без метода категории A требуется не менее трёх методов, два из которых — методы категории B, основанные на разных свойствах [swgdrug2024]. Следовательно, одной ТСХ для идентификации недостаточно.\n• Рекомендации SWGDRUG относятся к изъятым веществам; при токсикологическом анализе биологических объектов лаборатория следует действующим токсикологическим стандартам и собственным валидированным методикам.\n• На каждой пластинке должны быть стандарты, смесь для коррекции Rf, отрицательный и положительный контроли; без них результат не интерпретируется [dezeeuw1994].\n• Методы должны быть валидированы по свойствам обнаружения и идентификации [dezeeuw1997]; ограничения схемы документируются и при необходимости указываются в отчёте [swgdrug2024].\n• Отрицательный результат не доказывает отсутствия вещества — он оценивается только в пределах возможностей обнаружения применённого метода.\n• В отчёте используют осторожные формулировки, например «результат ТСХ согласуется с веществом X»; неподтверждённый результат не приводится как окончательная идентификация.\n• Карточка излагает научные рекомендации; порядок назначения и оформления экспертизы определяется действующими нормативными актами.",
+      "en": "• A substance is never identified from its Rf alone (or from colour alone). Depending on the analytical scheme, a TLC result is either a preliminary (presumptive) finding or evidence that supports an identification.\n• A positive TLC result should be confirmed by a technique based on a different physicochemical principle, preferably one that provides structural information (GC-MS, LC-MS) [singh1992, uchiyama2008, maurer2004].\n• For seized drugs, the SWGDRUG Recommendations (Version 8.2) group techniques into Categories A, B and C according to their selectivity; TLC is in Category B, while immunoassay and colour tests are in Category C. When a Category A technique (for example mass spectrometry) is used, at least one other technique is required to support the identification; without a Category A technique, at least three techniques are required, two of which must be Category B techniques exploiting different properties [swgdrug2024]. TLC alone is therefore insufficient for identification.\n• The SWGDRUG Recommendations apply to seized drugs; for toxicological analysis of biological specimens, the laboratory follows applicable toxicology standards and its own validated procedures.\n• Every plate should carry standards, the Rf-correction mixture and negative and positive controls; without them the result is not interpreted [dezeeuw1994].\n• Methods should be validated for their detection and identification properties [dezeeuw1997]; limitations of the scheme are documented and, where required, reported [swgdrug2024].\n• A negative result does not prove absence; it is assessed only within the detection capability of the method used.\n• Reports use cautious wording such as 'the TLC result is consistent with substance X'; an unconfirmed result is not presented as a definitive identification.\n• This card sets out scientific recommendations; the procedure for ordering and documenting an examination is governed by the applicable regulations."
+     }
+    },
+    {
+     "key": "alternatives",
+     "title": {
+      "uz": "Muqobil va qo‘shimcha usullar",
+      "ru": "Альтернативные и дополнительные методы",
+      "en": "Alternative and complementary methods"
+     },
+     "citations": [
+      "swgdrug2024",
+      "singh1992",
+      "simpson1993",
+      "kowalska2022",
+      "cheng2011",
+      "maurer2004",
+      "maurer2010",
+      "flanagan1988"
+     ],
+     "body": {
+      "uz": "• Immunokimyoviy skrining — siydikdagi dori guruhlarini tez aniqlash uchun keng qo‘llanadi; u guruh darajasidagi ma’lumot beradi va o‘zaro reaksiya (kross-reaktivlik) tufayli soxta musbat natija berishi mumkin, shuning uchun u ham tasdiqlashni talab qiladi [singh1992, swgdrug2024]. Ayrim sxemalarda immunokimyoviy skrining va YuQX ketma-ket qo‘llangan [simpson1993].\n• Yuqori samarali YuQX (YuSYuQX; inglizcha HPTLC) — standartlashtirilgan plastinkalar va instrumental tomizish, ishlab chiqish va qayd etish bilan YuQXning takroriyligi va hujjatlashtirilishini yaxshilaydi [kowalska2022].\n• YuQX-mass-spektrometriya — dog‘dan moddani qirib olib yoki bevosita plastinkadan MS tahlili; YuQXga strukturaviy ma’lumot qo‘shadi [cheng2011].\n• Gaz xromatografiyasi–mass-spektrometriya (GX-MS) — keng qamrovli skrining va tasdiqlash uchun asosiy usullardan biri [maurer2004, maurer2010].\n• Suyuqlik xromatografiyasi–(tandem) mass-spektrometriya (SX-MS, SX-MS/MS) — ayniqsa qutbli, termolabil va past dozali moddalar uchun [maurer2004, maurer2010].\n• Gaz va yuqori samarali suyuqlik xromatografiyasi (boshqa detektorlar bilan) — YuQXdan farqli tamoyilga asoslangan qo‘shimcha ajratish usullari [flanagan1988, maurer2004].",
+      "ru": "• Иммунохимический скрининг — широко применяется для быстрого выявления групп лекарственных веществ в моче; даёт информацию на уровне группы и из-за перекрёстной реактивности может давать ложноположительные результаты, поэтому также требует подтверждения [singh1992, swgdrug2024]. В ряде схем иммунохимический скрининг и ТСХ применялись последовательно [simpson1993].\n• Высокоэффективная ТСХ (ВЭТСХ; англ. HPTLC) — стандартизированные пластинки и инструментальное нанесение, проявление и регистрация улучшают воспроизводимость и документирование ТСХ [kowalska2022].\n• ТСХ–масс-спектрометрия — МС-анализ вещества, соскобленного с пятна или непосредственно с пластинки; добавляет к ТСХ структурную информацию [cheng2011].\n• Газовая хроматография–масс-спектрометрия (ГХ-МС) — один из основных методов широкого скрининга и подтверждения [maurer2004, maurer2010].\n• Жидкостная хроматография–(тандемная) масс-спектрометрия (ЖХ-МС, ЖХ-МС/МС) — особенно для полярных, термолабильных и низкодозированных веществ [maurer2004, maurer2010].\n• Газовая и высокоэффективная жидкостная хроматография (с другими детекторами) — дополнительные методы разделения, основанные на ином принципе, чем ТСХ [flanagan1988, maurer2004].",
+      "en": "• Immunoassay screening is widely used for rapid detection of drug classes in urine; it gives class-level information and can give false positives through cross-reactivity, so it also requires confirmation [singh1992, swgdrug2024]. Some schemes have used immunoassay screening and TLC in sequence [simpson1993].\n• High-performance TLC (HPTLC): standardised plates and instrumental application, development and recording improve the reproducibility and documentation of TLC [kowalska2022].\n• TLC-mass spectrometry: MS analysis of material scraped from a spot or taken directly from the plate adds structural information to TLC [cheng2011].\n• Gas chromatography-mass spectrometry (GC-MS) is one of the main techniques for comprehensive screening and confirmation [maurer2004, maurer2010].\n• Liquid chromatography-(tandem) mass spectrometry (LC-MS, LC-MS/MS) is particularly suited to polar, thermolabile and low-dose compounds [maurer2004, maurer2010].\n• Gas chromatography and high-performance liquid chromatography with other detectors are additional separation techniques based on a principle different from TLC [flanagan1988, maurer2004]."
+     }
+    }
+   ],
+   "keywords": {
+    "uz": [
+     "yupqa qatlamli xromatografiya",
+     "YuQX",
+     "TLC",
+     "YuSYuQX",
+     "HPTLC",
+     "planar xromatografiya",
+     "Rf qiymati",
+     "tuzatilgan Rf",
+     "silikagel",
+     "plastinka",
+     "elyuent",
+     "erituvchilar tizimi",
+     "Dragendorff reaktivi",
+     "yodoplatinat",
+     "Markis reaktivi",
+     "UB nur",
+     "skrining",
+     "giyohvand moddalar",
+     "dori moddalari",
+     "siydik tahlili",
+     "ekstraksiya",
+     "tasdiqlovchi tahlil",
+     "GX-MS",
+     "SX-MS",
+     "SWGDRUG",
+     "sud-kimyo",
+     "sud-toksikologiya"
+    ],
+    "ru": [
+     "тонкослойная хроматография",
+     "ТСХ",
+     "TLC",
+     "ВЭТСХ",
+     "HPTLC",
+     "планарная хроматография",
+     "величина Rf",
+     "скорректированный Rf",
+     "силикагель",
+     "пластинка",
+     "элюент",
+     "система растворителей",
+     "реактив Драгендорфа",
+     "иодоплатинат",
+     "реактив Марки",
+     "УФ-свет",
+     "скрининг",
+     "наркотические средства",
+     "лекарственные вещества",
+     "анализ мочи",
+     "экстракция",
+     "подтверждающий анализ",
+     "ГХ-МС",
+     "ЖХ-МС",
+     "SWGDRUG",
+     "судебная химия",
+     "судебная токсикология"
+    ],
+    "en": [
+     "thin-layer chromatography",
+     "TLC",
+     "HPTLC",
+     "planar chromatography",
+     "Rf value",
+     "retention factor",
+     "corrected Rf",
+     "silica gel",
+     "plate",
+     "eluent",
+     "mobile phase",
+     "solvent system",
+     "Dragendorff reagent",
+     "iodoplatinate",
+     "Marquis reagent",
+     "UV visualization",
+     "drug screening",
+     "seized drugs",
+     "urine drug screening",
+     "extraction",
+     "confirmatory analysis",
+     "GC-MS",
+     "LC-MS",
+     "SWGDRUG",
+     "forensic chemistry",
+     "forensic toxicology"
+    ]
+   },
+   "reference_keys": [
+    "cheng2011",
+    "dezeeuw1997",
+    "dezeeuw1992",
+    "dezeeuw1994",
+    "siek1997",
+    "bogusz1984",
+    "franke1988",
+    "simpson1993",
+    "uchiyama2008",
+    "tsujikawa2022",
+    "kowalska2022",
+    "kato2001",
+    "flanagan1988",
+    "swgdrug2024",
+    "singh1992",
+    "maurer2004",
+    "maurer2010"
+   ]
   }
  ],
  "references": [
@@ -1428,6 +1740,358 @@
    "pmid": "39053225",
    "used_for": "Example of population-specific equations from postmortem CT data; sex-specific models performed better than pooled ones.",
    "verified_via": "PubMed MCP get_article_metadata",
+   "verified_on": "2026-10-08"
+  },
+  {
+   "key": "swgdrug2024",
+   "type": "guideline",
+   "authors": [
+    "Scientific Working Group for the Analysis of Seized Drugs (SWGDRUG)"
+   ],
+   "title": "SWGDRUG Recommendations, Version 8.2",
+   "publisher": "SWGDRUG (US Drug Enforcement Administration / Office of National Drug Control Policy)",
+   "year": 2024,
+   "doi": null,
+   "pmid": null,
+   "url": "https://swgdrug.org/approved.htm",
+   "note": "Version 8.2 dated 2024-06-27; PDF 'SWGDRUG Recommendations Version 8.2 Final for posting.pdf' linked from the official Approved Recommendations page. Scope: seized drugs (not biological specimens).",
+   "used_for": "Part IIIB Table 1: Thin Layer Chromatography listed in Category B (selectivity through chemical and physical characteristics, without structural information); Immunoassay and Color Tests in Category C; IIIB.3.1/IIIB.3.2 minimum requirements of an analytical scheme (with a Category A technique at least one further technique; without Category A at least three techniques, two of them Category B exploiting different properties); IIIB.2.5 limitations documented and reported.",
+   "verified_via": "Official site swgdrug.org (approved.htm): PDF downloaded and text of Part IIIB read",
+   "verified_on": "2026-10-08"
+  },
+  {
+   "key": "dezeeuw1997",
+   "type": "journal_article",
+   "authors": [
+    "de Zeeuw RA"
+   ],
+   "title": "Drug screening in biological fluids. The need for a systematic approach",
+   "journal": "Journal of Chromatography B: Biomedical Sciences and Applications",
+   "year": 1997,
+   "volume": "689",
+   "issue": "1",
+   "pages": "71-79",
+   "doi": "10.1016/s0378-4347(96)00332-5",
+   "pmid": "9061483",
+   "used_for": "Key steps of drug screening (work-up/isolation, differentiation/detection, identification); TLC, GC and HPLC each with advantages and disadvantages; need for computerized databases and validation of detection and identification properties.",
+   "verified_via": "NCBI E-utilities esummary + efetch (PubMed record)",
+   "verified_on": "2026-10-08"
+  },
+  {
+   "key": "maurer2004",
+   "type": "journal_article",
+   "authors": [
+    "Maurer HH"
+   ],
+   "title": "Position of chromatographic techniques in screening for detection of drugs or poisons in clinical and forensic toxicology and/or doping control",
+   "journal": "Clinical Chemistry and Laboratory Medicine",
+   "year": 2004,
+   "volume": "42",
+   "issue": "11",
+   "pages": "1310-1324",
+   "doi": "10.1515/CCLM.2004.250",
+   "pmid": "15576292",
+   "used_for": "GC-MS (EI full scan) as method of choice for comprehensive screening; LC-DAD inferior in separation power/specificity; LC-MS as supplement for polar, thermolabile and low-dose drugs.",
+   "verified_via": "NCBI E-utilities esummary + efetch (PubMed record)",
+   "verified_on": "2026-10-08"
+  },
+  {
+   "key": "maurer2010",
+   "type": "book_chapter",
+   "authors": [
+    "Maurer HH"
+   ],
+   "title": "Analytical toxicology",
+   "journal": "EXS (Molecular, Clinical and Environmental Toxicology)",
+   "year": 2010,
+   "volume": "100",
+   "pages": "317-337",
+   "doi": "10.1007/978-3-7643-8338-1_9",
+   "pmid": "20358688",
+   "used_for": "GC-MS and LC-MS are mostly used today in analytical toxicology; choice of biosample; importance of quality control and limits of interpretation.",
+   "verified_via": "NCBI E-utilities esummary + efetch (PubMed record)",
+   "verified_on": "2026-10-08"
+  },
+  {
+   "key": "flanagan1988",
+   "type": "journal_article",
+   "authors": [
+    "Flanagan RJ",
+    "Widdop B",
+    "Ramsey JD",
+    "Loveland M"
+   ],
+   "title": "Analytical toxicology",
+   "journal": "Human Toxicology",
+   "year": 1988,
+   "volume": "7",
+   "issue": "5",
+   "pages": "489-502",
+   "doi": "10.1177/096032718800700517",
+   "pmid": "3056846",
+   "used_for": "Historical position: TLC remained important, while GC, HPLC and immunoassays had become widely used; continuing need for reliable simple tests in smaller laboratories.",
+   "verified_via": "PubMed MCP get_article_metadata; NCBI E-utilities esummary/efetch",
+   "verified_on": "2026-10-08"
+  },
+  {
+   "key": "siek1997",
+   "type": "journal_article",
+   "authors": [
+    "Siek TJ",
+    "Stradling CW",
+    "McCain MW",
+    "Mehary TC"
+   ],
+   "title": "Computer-aided identifications of thin-layer chromatographic patterns in broad-spectrum drug screening",
+   "journal": "Clinical Chemistry",
+   "year": 1997,
+   "volume": "43",
+   "issue": "4",
+   "pages": "619-626",
+   "doi": "10.1093/clinchem/43.4.619",
+   "pmid": "9105263",
+   "note": "PubMed record has no DOI; DOI confirmed via Crossref.",
+   "used_for": "Systematic TLC for drugs/metabolites from serum, urine and other specimens; silica plates with fluorescent indicator; single mobile phase; sequential visualization (UV 254 nm, fluorescamine, ferric chloride/perchloric/nitric acid, Dragendorff, Marquis, Mandelin, iodinated Dragendorff, chlorine/HCl vapour); computer-assisted matching of zone location and reaction responses.",
+   "verified_via": "NCBI E-utilities esummary + efetch; Crossref API (DOI)",
+   "verified_on": "2026-10-08"
+  },
+  {
+   "key": "uchiyama2008",
+   "type": "journal_article",
+   "authors": [
+    "Uchiyama N",
+    "Kawamura M",
+    "Kamakura H",
+    "Kikura-Hanajiri R",
+    "Goda Y"
+   ],
+   "title": "Analytical data of designated substances (Shitei-Yakubutsu) controlled by the Pharmaceutical Affairs Law in Japan, part II: Color test and TLC",
+   "journal": "Yakugaku Zasshi",
+   "year": 2008,
+   "volume": "128",
+   "issue": "6",
+   "pages": "981-987",
+   "doi": "10.1248/yakushi.128.981",
+   "pmid": "18520145",
+   "note": "Article in Japanese; English abstract used.",
+   "used_for": "Colour tests (Marquis, Ehrlich, Simon's, Liebermann, Mandelin) and TLC in two solvent systems with UV 254 nm and iodoplatinate detection for new psychoactive substances; colour tests and TLC as preliminary identification followed by GC-MS and LC-MS.",
+   "verified_via": "NCBI E-utilities esummary + efetch (PubMed record)",
+   "verified_on": "2026-10-08"
+  },
+  {
+   "key": "dezeeuw1992",
+   "type": "journal_article",
+   "authors": [
+    "de Zeeuw RA",
+    "Franke JP",
+    "Dik E",
+    "ten Dolle W",
+    "Kam BL"
+   ],
+   "title": "Impact of tropical conditions on thin layer chromatography in analytical toxicology: high temperatures and moderate humidities",
+   "journal": "Journal of Forensic Sciences",
+   "year": 1992,
+   "volume": "37",
+   "issue": "4",
+   "pages": "984-990",
+   "doi": "10.1520/JFS13283J",
+   "pmid": "1506839",
+   "note": "PubMed record has no DOI; DOI confirmed via Crossref.",
+   "used_for": "Temperature and humidity substantially shift Rf values and worsen reproducibility; Rf correction with a reference mixture of known drugs on each plate restores accuracy/reproducibility and compatibility with databases.",
+   "verified_via": "NCBI E-utilities esummary + efetch; Crossref API (DOI)",
+   "verified_on": "2026-10-08"
+  },
+  {
+   "key": "dezeeuw1994",
+   "type": "journal_article",
+   "authors": [
+    "de Zeeuw RA",
+    "Franke JP",
+    "van Halem M",
+    "Schaapman S",
+    "Logawa E",
+    "Siregar CJ"
+   ],
+   "title": "Impact of hot and humid tropical conditions on Toxi-Lab thin-layer chromatographic systems for the screening of basic and neutral drugs",
+   "journal": "Journal of Analytical Toxicology",
+   "year": 1994,
+   "volume": "18",
+   "issue": "7",
+   "pages": "402-406",
+   "doi": "10.1093/jat/18.7.402",
+   "pmid": "7861754",
+   "used_for": "High humidity shifted observed Rf values relative to literature; correction with a reference mixture run on each plate gave corrected values compatible with existing databases.",
+   "verified_via": "NCBI E-utilities esummary + efetch (PubMed record)",
+   "verified_on": "2026-10-08"
+  },
+  {
+   "key": "bogusz1984",
+   "type": "journal_article",
+   "authors": [
+    "Bogusz M",
+    "Klys M",
+    "Wijsbeek J",
+    "Franke JP",
+    "de Zeeuw RA"
+   ],
+   "title": "Impact of biological matrix and isolation methods on detectability and interlaboratory variations of TLC Rf-values in systematic toxicological analysis",
+   "journal": "Journal of Analytical Toxicology",
+   "year": 1984,
+   "volume": "8",
+   "issue": "4",
+   "pages": "149-154",
+   "doi": "10.1093/jat/8.4.149",
+   "pmid": "6471812",
+   "used_for": "Drugs extracted from plasma, blood and liver: biological matrix/extraction lowered precision (and to a lesser extent accuracy) of corrected Rf values versus pure-drug data; intra- and interlaboratory variation depended on the TLC system.",
+   "verified_via": "NCBI E-utilities esummary + efetch (PubMed record)",
+   "verified_on": "2026-10-08"
+  },
+  {
+   "key": "franke1988",
+   "type": "journal_article",
+   "authors": [
+    "Franke JP",
+    "de Zeeuw RA",
+    "Wijsbeek J"
+   ],
+   "title": "Impact of urine matrix and isolation procedure on retention behaviour of basic drugs in thin-layer chromatography",
+   "journal": "Journal of Pharmaceutical and Biomedical Analysis",
+   "year": 1988,
+   "volume": "6",
+   "issue": "4",
+   "pages": "415-420",
+   "doi": "10.1016/0731-7085(88)80007-4",
+   "pmid": "16867408",
+   "used_for": "Isolation procedure (liquid-liquid, Extrelut, XAD-2) and urine matrix can shift standardised Rf values depending on the TLC system; search windows should be wider for extracted drugs than for pure standards.",
+   "verified_via": "NCBI E-utilities esummary + efetch (PubMed record)",
+   "verified_on": "2026-10-08"
+  },
+  {
+   "key": "tsujikawa2022",
+   "type": "journal_article",
+   "authors": [
+    "Tsujikawa K",
+    "Okada Y",
+    "Segawa H",
+    "Yamamuro T",
+    "Kuwayama K",
+    "Kanamori T",
+    "Iwata YT"
+   ],
+   "title": "Thin-layer chromatography on silver nitrate-impregnated silica gel for analysis of homemade tetrahydrocannabinol mixtures",
+   "journal": "Forensic Toxicology",
+   "year": 2022,
+   "volume": "40",
+   "issue": "1",
+   "pages": "125-131",
+   "doi": "10.1007/s11419-021-00592-9",
+   "pmid": "36454483",
+   "note": "Print issue 2022-01; epub 2021-07-26.",
+   "used_for": "Conventional silica gel failed to separate some THC isomers and CBD, whereas silver nitrate-impregnated silica gel separated them: the stationary phase determines selectivity.",
+   "verified_via": "PubMed MCP get_article_metadata; NCBI E-utilities esummary/efetch",
+   "verified_on": "2026-10-08"
+  },
+  {
+   "key": "singh1992",
+   "type": "journal_article",
+   "authors": [
+    "Singh AK",
+    "Granley K",
+    "Misrha U",
+    "Naeem K",
+    "White T",
+    "Jiang Y"
+   ],
+   "title": "Screening and confirmation of drugs in urine: interference of hordenine with the immunoassays and thin layer chromatography methods",
+   "journal": "Forensic Science International",
+   "year": 1992,
+   "volume": "54",
+   "issue": "1",
+   "pages": "9-22",
+   "doi": "10.1016/0379-0738(92)90076-9",
+   "pmid": "1618458",
+   "used_for": "Hordenine (e.g. from beer) cross-reacted with immunoassays and interfered with TLC of oxymorphone, hydromorphone and apomorphine, giving potential false positives; GC/MS and HPLC used to distinguish.",
+   "verified_via": "PubMed MCP get_article_metadata; NCBI E-utilities esummary/efetch",
+   "verified_on": "2026-10-08"
+  },
+  {
+   "key": "simpson1993",
+   "type": "journal_article",
+   "authors": [
+    "Simpson D",
+    "Greenwood J",
+    "Jarvie DR",
+    "Moore FM"
+   ],
+   "title": "Experience of a laboratory service for drug screening in urine",
+   "journal": "Scottish Medical Journal",
+   "year": 1993,
+   "volume": "38",
+   "issue": "1",
+   "pages": "20-26",
+   "doi": "10.1177/003693309303800108",
+   "pmid": "8451622",
+   "used_for": "Example scheme: preliminary urine screening by EMIT immunoassay, further identification/confirmation by Toxi-Lab TLC and capillary GC; useful for identifying new substances.",
+   "verified_via": "PubMed MCP get_article_metadata; NCBI E-utilities esummary/efetch",
+   "verified_on": "2026-10-08"
+  },
+  {
+   "key": "cheng2011",
+   "type": "journal_article",
+   "authors": [
+    "Cheng SC",
+    "Huang MZ",
+    "Shiea J"
+   ],
+   "title": "Thin layer chromatography/mass spectrometry",
+   "journal": "Journal of Chromatography A",
+   "year": 2011,
+   "volume": "1218",
+   "issue": "19",
+   "pages": "2700-2711",
+   "doi": "10.1016/j.chroma.2011.01.077",
+   "pmid": "21334632",
+   "note": "Print issue 2011-05-13; epub 2011-02-02.",
+   "used_for": "TLC as simple, cost-effective planar technique; chemical/optical visualization does not allow direct identification or structural characterization; indirect (scrape-extract) and direct/ambient TLC-MS interfaces.",
+   "verified_via": "NCBI E-utilities esummary + efetch (PubMed record)",
+   "verified_on": "2026-10-08"
+  },
+  {
+   "key": "kato2001",
+   "type": "journal_article",
+   "authors": [
+    "Kato N",
+    "Ogamo A"
+   ],
+   "title": "A TLC visualisation reagent for dimethylamphetamine and other abused tertiary amines",
+   "journal": "Science & Justice",
+   "year": 2001,
+   "volume": "41",
+   "issue": "4",
+   "pages": "239-244",
+   "doi": "10.1016/S1355-0306(01)71907-7",
+   "pmid": "11793881",
+   "used_for": "Class-selective visualization reagent (citric acid/acetic anhydride) for tertiary amines compared with Dragendorff reagent: detectability depends on the reagent chosen.",
+   "verified_via": "NCBI E-utilities esummary + efetch (PubMed record)",
+   "verified_on": "2026-10-08"
+  },
+  {
+   "key": "kowalska2022",
+   "type": "journal_article",
+   "authors": [
+    "Kowalska T",
+    "Sajewicz M"
+   ],
+   "title": "Thin-layer chromatography (TLC) in the screening of botanicals: its versatile potential and selected applications",
+   "journal": "Molecules",
+   "year": 2022,
+   "volume": "27",
+   "issue": "19",
+   "pages": "6607",
+   "doi": "10.3390/molecules27196607",
+   "pmid": "36235143",
+   "used_for": "TLC and HPTLC (hyphenated or not) in screening of botanicals, including tracing psychoactive plants under forensic surveillance.",
+   "verified_via": "PubMed MCP get_article_metadata; NCBI E-utilities esummary/efetch",
    "verified_on": "2026-10-08"
   }
  ]
