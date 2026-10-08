@@ -8,7 +8,7 @@ Statuslar: WORKING (avtomatik test yoki real sinov dalili bor) · IMPLEMENTED-UN
 |---|---|---|
 | Home | WORKING (avtomatik) | widget + golden testlar; real qurilma chek-listi to‘ldirilmagan |
 | Ilmiy kutubxona | WORKING (kod), kontent ko‘rilmagan | 137 modda, 75 bilim yozuvi, 497 claim, 457 manba — hammasi NEEDS_REVIEW |
-| Fanlar taksonomiyasi | PARTIAL | 20 fan; yo‘q: tibbiy-kriminalistika (alohida), trasologiya, ballistika, hujjatlar ekspertizasi, raqamli kriminalistika; entomologiya/odontologiya/antropologiya — 1–2 claim |
+| Fanlar taksonomiyasi | PARTIAL (tuzilma to‘liq, kontent kam) | 26 fan, kriminalistika guruhi; yangi fanlarda kontent hali yo‘q (soxta kontent qo‘shilmaydi) |
 | Qidiruv (asosiy) | PARTIAL | InMemorySearchIndex; FTS5 jadvali runtime’da ishlatilmaydi; fan filtri yo‘q |
 | AI offline qidiruvi (RAG retrieval) | WORKING (2026-10-08 tuzatildi) | IDF + bo‘sag‘a, umumiy so‘zlar filtri, apostrof, UZ/RU→EN kengaytma; regressiya testi `test/unit/retrieval_relevance_test.dart` |
 | AI ekrani | WORKING (avtomatik) | 1 savol = 1 server so‘rovi; xato sababi ko‘rsatiladi; manbasiz model matni ko‘rsatilmaydi; oflayn tugma serverga chiqmaydi |
@@ -17,13 +17,13 @@ Statuslar: WORKING (avtomatik test yoki real sinov dalili bor) · IMPLEMENTED-UN
 | Supabase migratsiyalar + RLS | WORKING | CI `db-security` SQL testlari; `advisor_hardening` migratsiya tarixida yo‘q |
 | Billing | BLOCKED | server xarid tekshiruvi yo‘q (RG-18); 4 obuna mahsuloti kodda, lifetime yo‘q; do‘konlarda mahsulot yaratilmagan |
 | Admin panel + server grant | WORKING (egasi sinagan) | Pro egasiga berilgan |
-| Yo‘riqnomalar | WORKING (avtomatik), kontent NEEDS_REVIEW | 3 karta (etanol GX, diatom, bo‘y uzunligi), 30 tekshirilgan manba; admin yopiq katalogi qurilmadan import |
+| Yo‘riqnomalar | WORKING (avtomatik), kontent NEEDS_REVIEW | 7 karta (etanol GX, diatom, bo‘y uzunligi, YuQX, postmortem talqin, namuna preanalitikasi, metodlar solishtiruvi), 76 tekshirilgan manba; Home va global qidiruvda; admin yopiq katalogi qurilmadan import |
 | Kalkulyatorlar | WORKING | 12 vosita (Widmark, teskari hisob, etanol birliklari, Henssge 2026-10-06 qo‘shilgan) |
 | O‘quv rejimi | PARTIAL / MOCK | quiz va flashcards production’da bo‘sh |
 | Research workspace | PARTIAL | faqat lokal sevimlilar/tarix; izoh, to‘plam, sinxron yo‘q |
-| Expert Publications | MISSING | |
-| Lokalizatsiya | WORKING | 3 til teng kalitlar; o‘zbekcha to‘liqlik ishi davom etmoqda (agent) |
-| Dizayn tizimi | PARTIAL | serif shrift yo‘q; premium graphite/gold ishi davom etmoqda (agent) |
+| Expert Publications | IMPLEMENTED-UNVERIFIED (migratsiya production’ga qo‘llanmagan) | RPC + RLS, moderatsiya holat mashinasi, audit; lokal SQL 62 PASS; UI faqat admin yoki `FE_PUBLICATIONS` bayrog‘i bilan |
+| Lokalizatsiya | WORKING | 3 til teng kalitlar; `uz_completeness_test` (inglizcha UI so‘zlari yo‘q) |
+| Dizayn tizimi | WORKING (avtomatik) | Scientific Luxury: graphite/navy/noir + champagne gold, ivory; Source Serif 4 (OFL); kontrast testi 93/93 |
 | Offline paket + Ed25519 | WORKING (development kalit) | production imzo kaliti/kanal yo‘q |
 | CI | WORKING | format, analyze, test, db-security, gitleaks |
 | HUMAN VERIFIED kontent | MISSING (0) | reviews=0 |
