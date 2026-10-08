@@ -2,6 +2,7 @@ import '../knowledge/knowledge_models.dart';
 import '../library/library_models.dart';
 import '../ports/ai_ports.dart';
 import 'ai_architecture.dart';
+import 'retrieval_scoring.dart';
 
 /// Qurilmadagi (offline) qidiruv: kontent paketidagi manbali claim’lar.
 ///
@@ -45,26 +46,22 @@ class LocalRetrievalProvider implements RetrievalProvider {
     );
   }
 
-  static final _split = RegExp(r'[^\p{L}\p{N}]+', unicode: true);
+  static Set<String> _tokens(String s) => RetrievalText.docTokens(s);
 
-  static Set<String> _tokens(String s) => {
-    for (final t in s.toLowerCase().split(_split))
-      if (t.length >= 3) t,
-  };
+  late final RetrievalScorer _scorer = RetrievalScorer([
+    for (final c in _chunks) c.tokens,
+  ]);
 
   @override
   Future<List<RetrievedChunk>> retrieve(String query, {int limit = 5}) async {
-    final q = _tokens(query);
+    final q = RetrievalText.queryTokens(query);
     if (q.isEmpty) return const [];
+    final scores = _scorer.scores(q);
     final scored = <(double, RetrievedChunk)>[];
-    for (final c in _chunks) {
-      var hits = 0;
-      for (final t in q) {
-        if (c.tokens.any((x) => x.startsWith(t) || t.startsWith(x))) hits++;
-      }
-      if (hits == 0) continue;
-      final score = hits / q.length;
-      final r = c.chunk;
+    for (var i = 0; i < _chunks.length; i++) {
+      final score = scores[i];
+      if (score == null) continue;
+      final r = _chunks[i].chunk;
       scored.add((
         score,
         RetrievedChunk(

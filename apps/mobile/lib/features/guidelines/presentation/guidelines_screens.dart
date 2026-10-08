@@ -267,11 +267,7 @@ class GuidelineDetailScreen extends ConsumerWidget {
                   for (final s in card.sections) ...[
                     FeSectionHeader(s.title.of(lang)),
                     SelectableText(
-                      s.body.of(lang) +
-                          (s.citations.isEmpty
-                              ? ''
-                              : ' ${[for (final k in s.citations)
-                                  if (index[k] != null) '[${index[k]}]'].join('')}'),
+                      numberCitations(s.body.of(lang), s.citations, index),
                       style: t.bodyMedium?.copyWith(height: 1.5),
                     ),
                   ],
@@ -307,6 +303,31 @@ class GuidelineDetailScreen extends ConsumerWidget {
 }
 
 String _bracket(int n) => '[$n]';
+
+final _inlineCitation = RegExp(r'\[([A-Za-z0-9_.,\s-]+)\]');
+
+/// Matn ichidagi `[kalit]` / `[k1, k2]` iqtiboslarini manbalar ro‘yxatidagi
+/// raqamlarga almashtiradi. Matnda iqtibos bo‘lmasa — bo‘lim oxiriga
+/// qo‘shadi. Noma’lum kalitlar o‘zgarishsiz qoladi (yashirilmaydi).
+String numberCitations(
+  String body,
+  List<String> citations,
+  Map<String, int> index,
+) {
+  var inline = false;
+  final out = body.replaceAllMapped(_inlineCitation, (m) {
+    final keys = m[1]!.split(',').map((e) => e.trim()).toList();
+    if (keys.any((k) => index[k] == null)) return m[0]!;
+    inline = true;
+    return keys.map((k) => _bracket(index[k]!)).join();
+  });
+  if (inline || citations.isEmpty) return out;
+  final tail = [
+    for (final k in citations)
+      if (index[k] != null) _bracket(index[k]!),
+  ].join();
+  return tail.isEmpty ? out : '$out $tail';
+}
 
 class _ReferenceTile extends StatelessWidget {
   const _ReferenceTile({required this.number, required this.reference});

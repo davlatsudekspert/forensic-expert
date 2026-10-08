@@ -5,6 +5,7 @@ import '../library/library_models.dart' show ClaimView;
 import '../ports/ai_ports.dart';
 import 'ai_architecture.dart';
 import 'rag_pipeline.dart';
+import 'retrieval_scoring.dart';
 
 /// Qurilmadagi (offline) RAG qidiruvi: manbali claim’lar (hayot sikli va
 /// ziddiyat bilan), standartlar katalogi va rasmiy yurisdiksion qoidalar.
@@ -88,28 +89,11 @@ class ProvenanceRetrieval {
     _tokens('$title ${c.excerpt} ${c.items.join(' ')} ${c.entityId}'),
   );
 
-  static final _split = RegExp(r'[^\p{L}\p{N}]+', unicode: true);
-  static const _stop = {
-    'the',
-    'and',
-    'what',
-    'which',
-    'with',
-    'for',
-    'are',
-    'how',
-    'что',
-    'как',
-    'для',
-    'nima',
-    'qanday',
-    'uchun',
-  };
+  static Set<String> _tokens(String s) => RetrievalText.docTokens(s);
 
-  static Set<String> _tokens(String s) => {
-    for (final t in s.toLowerCase().split(_split))
-      if (t.length >= 3 && !_stop.contains(t)) t,
-  };
+  late final RetrievalScorer _scorer = RetrievalScorer([
+    for (final it in _items) it.tokens,
+  ]);
 
   Future<List<RankedChunk>> retrieve(
     String query,
@@ -117,21 +101,19 @@ class ProvenanceRetrieval {
     String? jurisdictionId,
     int limit = 12,
   }) async {
-    final q = _tokens(query);
+    final q = RetrievalText.queryTokens(query);
     if (q.isEmpty) return const [];
+    final scores = _scorer.scores(q);
     final scored = <(double, RankedChunk)>[];
-    for (final it in _items) {
+    for (var i = 0; i < _items.length; i++) {
+      final it = _items[i];
+      final score = scores[i];
+      if (score == null) continue;
       if (it.jurisdictionId != null &&
           it.jurisdictionId != jurisdictionId &&
           it.jurisdictionId != 'INT') {
         continue;
       }
-      var hits = 0;
-      for (final t in q) {
-        if (it.tokens.any((x) => x.startsWith(t) || t.startsWith(x))) hits++;
-      }
-      if (hits == 0) continue;
-      final score = hits / q.length;
       final r = it.ranked;
       scored.add((
         score,
