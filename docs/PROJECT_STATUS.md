@@ -12,7 +12,7 @@ Statuslar: WORKING (avtomatik test yoki real sinov dalili bor) · IMPLEMENTED-UN
 | Qidiruv (asosiy) | PARTIAL | InMemorySearchIndex; FTS5 jadvali runtime’da ishlatilmaydi; fan filtri yo‘q |
 | AI offline qidiruvi (RAG retrieval) | WORKING (2026-10-08 tuzatildi) | IDF + bo‘sag‘a, umumiy so‘zlar filtri, apostrof, UZ/RU→EN kengaytma; regressiya testi `test/unit/retrieval_relevance_test.dart` |
 | AI ekrani | WORKING (avtomatik) | 1 savol = 1 server so‘rovi; xato sababi ko‘rsatiladi; manbasiz model matni ko‘rsatilmaydi; oflayn tugma serverga chiqmaydi |
-| Gemini (`ai-answer`) | IMPLEMENTED-UNVERIFIED | ishlab chiqarishda real E2E qayd yo‘q; yangi vaqt byudjeti kodi **deploy qilinmagan** (egasi ruxsati kerak) |
+| Gemini (`ai-answer`) | IMPLEMENTED-UNVERIFIED (v5 deploy qilingan 2026-10-08) | egasi ruxsati bilan v5: 45 s muddat, urinish byudjeti, discovery timeout; JWT himoyasi tekshirildi (401); real savol-javob E2E qaydi hali yo‘q |
 | Email OTP | IMPLEMENTED-UNVERIFIED (egasi BlueStacks’da kirgan) | Resend domeni tasdiqlanmagan → xatlar spamga; `config.toml` endi `verify_jwt=false` bilan mos |
 | Supabase migratsiyalar + RLS | WORKING | CI `db-security` SQL testlari; `advisor_hardening` migratsiya tarixida yo‘q |
 | Billing | BLOCKED | server xarid tekshiruvi yo‘q (RG-18); 4 obuna mahsuloti kodda, lifetime yo‘q; do‘konlarda mahsulot yaratilmagan |
@@ -34,5 +34,5 @@ Statuslar: WORKING (avtomatik test yoki real sinov dalili bor) · IMPLEMENTED-UN
 2. Android release keystore / Play yuklash — egasi.
 3. Production kontent imzo kaliti va kanal.
 4. Human review: 0 ta tasdiqlangan yozuv.
-5. Gemini real E2E qaydi + yangi edge function deploy — egasi ruxsati.
+5. Gemini real E2E qaydi (v5 deploy qilingan; telefonda savol bilan sinov kerak).
 6. Resend domen tasdig‘i (OTP xatlari spam).

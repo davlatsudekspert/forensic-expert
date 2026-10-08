@@ -11,3 +11,4 @@
 | 2026-10-08 | Offline retrieval: IDF + bo‘sag‘a + umumiy so‘zlar filtri | Muhandis | BlueStacks YuQX hodisasi |
 | 2026-10-08 | Iqtibos kalitlari (muallif+yil) gitleaks allowlist’ida | Muhandis | soxta signal |
 | 2026-10-08 | Kartalar holati faylda nima yozilsa ham ekspert ko‘rigisiz NEEDS_REVIEW | Muhandis | kod `GuidelineCard._status` |
+| 2026-10-08 | `ai-answer` v5 production’ga deploy | Egasi ruxsat berdi | vaqt byudjeti tuzatishlari |

@@ -17,7 +17,6 @@ Yangilangan: 2026-10-08. Format: [holat] vazifa — egasi/keyingi qadam.
 8. ABY: 203 sarlavha RU/EN qoralama, admin katalogi qayta qurish (ZIP qayta yuklangach).
 
 ## Egasining ruxsati/harakati kerak
-- `ai-answer` edge function yangi versiyasini deploy qilish (vaqt byudjeti).
 - ABY nuqsonlari bo‘yicha mualliflarga xat (loyiha tayyor, yuborilmagan).
 - Do‘kon mahsulotlari, narxlar ($4.99 / $39.99 sinov), server tekshiruvi.
 - Resend domeni, Android keystore, Play Console.
