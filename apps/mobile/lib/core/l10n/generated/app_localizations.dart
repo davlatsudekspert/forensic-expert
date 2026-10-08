@@ -9740,6 +9740,90 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Title translation is a draft'**
   String get restrictedCatalogTitleDraft;
+
+  /// Progress.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparing an answer from sources… This can take up to a minute.'**
+  String get aiWorking;
+
+  /// Progress.
+  ///
+  /// In en, this message translates to:
+  /// **'Searching the offline database…'**
+  String get aiSearchingOffline;
+
+  /// Banner.
+  ///
+  /// In en, this message translates to:
+  /// **'The sources in the app do not cover this question well enough, so no sourced answer was produced.'**
+  String get aiNotCovered;
+
+  /// Header.
+  ///
+  /// In en, this message translates to:
+  /// **'AI note (no sources — do not rely on it)'**
+  String get aiModelNoteTitle;
+
+  /// Banner.
+  ///
+  /// In en, this message translates to:
+  /// **'The AI answer was not shown because it could not be verified against the app\'s sources.'**
+  String get aiAnswerRejected;
+
+  /// Banner.
+  ///
+  /// In en, this message translates to:
+  /// **'The hourly limit of AI questions has been reached. Please try again later.'**
+  String get aiErrRateLimited;
+
+  /// Banner.
+  ///
+  /// In en, this message translates to:
+  /// **'Your session has expired. Please sign in again to use AI.'**
+  String get aiErrSignIn;
+
+  /// Banner.
+  ///
+  /// In en, this message translates to:
+  /// **'No connection to the AI service. Check the internet connection.'**
+  String get aiErrOffline;
+
+  /// Banner.
+  ///
+  /// In en, this message translates to:
+  /// **'The AI service is temporarily unavailable. Please try again later.'**
+  String get aiErrServer;
+
+  /// Banner.
+  ///
+  /// In en, this message translates to:
+  /// **'The AI service is not configured on the server yet.'**
+  String get aiErrNotConfigured;
+
+  /// Banner.
+  ///
+  /// In en, this message translates to:
+  /// **'Your AI question allowance is used up for now.'**
+  String get aiQuotaUsed;
+
+  /// Header.
+  ///
+  /// In en, this message translates to:
+  /// **'Sources found in the offline database'**
+  String get aiOfflineSourcesTitle;
+
+  /// Expander.
+  ///
+  /// In en, this message translates to:
+  /// **'Sources used ({count})'**
+  String aiOfflineSourcesCount(int count);
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Try again'**
+  String get aiRetry;
 }
 
 class _AppLocalizationsDelegate

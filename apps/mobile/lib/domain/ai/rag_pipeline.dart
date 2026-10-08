@@ -238,6 +238,10 @@ enum RagOutcome {
   rejectedCitation,
   rejectedIdentifier,
   rejectedSafety,
+
+  /// Model hech bir bo‘lakka tayanmadi ("manbalar bu savolni
+  /// qamramaydi"). Model matni ko‘rsatilmaydi — faqat sabab.
+  notCovered,
   answered,
 }
 
@@ -257,9 +261,14 @@ class RagAnswer {
     this.safety,
     this.excludedRetracted = 0,
     this.providerMode = AiProviderMode.none,
+    this.failureCode,
   });
 
   final RagOutcome outcome;
+
+  /// Server/tarmoq xatosi kodi (`too_many_requests`, `unauthorized`,
+  /// `offline`, `upstream`, `not_configured`…) — UI tushunarli xabar beradi.
+  final String? failureCode;
   final AiIntentResult intent;
   final String? text;
   final List<AiCitation> sources;
@@ -275,6 +284,12 @@ class RagAnswer {
   final SafetyDecision? safety;
   final int excludedRetracted;
   final AiProviderMode providerMode;
+}
+
+/// Provayder istisnosidan barqaror kod (`AiUnavailable.code` va b.).
+String failureCodeOf(Object e) {
+  final m = RegExp(r'^\w+\((.+)\)$').firstMatch(e.toString());
+  return m?.group(1) ?? 'error';
 }
 
 /// To‘liq RAG quvuri. Qidiruv natijasi `RankedChunk` sifatida beriladi
@@ -370,13 +385,28 @@ class RagPipeline {
           chunks: [for (final c in ranked) c.chunk],
         ),
       );
-    } on Exception {
-      // Server/tarmoq xatosi — javob o‘ylab topilmaydi, faqat manbalar.
+    } on Exception catch (e) {
+      // Server/tarmoq xatosi — javob o‘ylab topilmaydi, faqat manbalar;
+      // sabab kodi UI’ga uzatiladi (jim yutilmaydi).
       return RagAnswer(
         outcome: RagOutcome.retrievalOnly,
         intent: intent,
         evidence: ranked,
+        limitations: limitations,
         relatedEntityIds: related,
+        failureCode: failureCodeOf(e),
+      );
+    }
+    if (draft.citedChunkIds.isEmpty) {
+      // Model hech bir bo‘lakka tayanmadi. Manbasiz matn foydalanuvchiga
+      // ko‘rsatilmaydi (ilmiy ishonchlilik) — faqat aniq sabab.
+      return RagAnswer(
+        outcome: RagOutcome.notCovered,
+        intent: intent,
+        evidence: ranked,
+        limitations: limitations,
+        relatedEntityIds: related,
+        providerMode: providerMode,
       );
     }
     final check = CitationResolver(knownSourceIds: knownSourceIds)

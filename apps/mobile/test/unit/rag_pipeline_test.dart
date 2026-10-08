@@ -172,14 +172,32 @@ void main() {
       expect(r.outcome, RagOutcome.rejectedCitation);
     });
 
-    test('havolasiz javob — rad', () async {
+    test(
+      'havolasiz javob — "manbalar qamramaydi", matn ko‘rsatilmaydi',
+      () async {
+        final r = await ask(
+          'morphine glucuronide metabolites',
+          provider: MockAiProvider(
+            respond: (p) =>
+                const AiDraft(text: 'Uncited claim.', citedChunkIds: []),
+          ),
+        );
+        expect(r.outcome, RagOutcome.notCovered);
+        expect(r.text, isNull);
+        expect(r.sources, isEmpty);
+      },
+    );
+
+    test('server xatosi kodi UI’ga uzatiladi (jim yutilmaydi)', () async {
       final r = await ask(
         'morphine glucuronide metabolites',
         provider: MockAiProvider(
-          respond: (p) => const AiDraft(text: 'x', citedChunkIds: []),
+          respond: (p) => throw const _Unavailable('too_many_requests'),
         ),
       );
-      expect(r.outcome, RagOutcome.rejectedCitation);
+      expect(r.outcome, RagOutcome.retrievalOnly);
+      expect(r.failureCode, 'too_many_requests');
+      expect(r.evidence, isNotEmpty);
     });
 
     test('matnda to‘qilgan DOI/PMID — rad', () async {
@@ -275,4 +293,13 @@ void main() {
       ['rev', 'cat', 'std', 'law'],
     );
   });
+}
+
+class _Unavailable implements Exception {
+  const _Unavailable(this.code);
+
+  final String code;
+
+  @override
+  String toString() => 'AiUnavailable($code)';
 }

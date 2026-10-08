@@ -5404,4 +5404,56 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get restrictedCatalogTitleDraft => 'Перевод названия — черновик';
+
+  @override
+  String get aiWorking =>
+      'Готовим ответ по источникам… Это может занять до минуты.';
+
+  @override
+  String get aiSearchingOffline => 'Поиск в офлайн-базе…';
+
+  @override
+  String get aiNotCovered =>
+      'Источники в приложении недостаточно освещают этот вопрос, поэтому ответ со ссылками не сформирован.';
+
+  @override
+  String get aiModelNoteTitle =>
+      'Комментарий ИИ (без источников — не опирайтесь на него)';
+
+  @override
+  String get aiAnswerRejected =>
+      'Ответ ИИ не показан: его не удалось проверить по источникам приложения.';
+
+  @override
+  String get aiErrRateLimited =>
+      'Достигнут часовой лимит вопросов к ИИ. Повторите попытку позже.';
+
+  @override
+  String get aiErrSignIn =>
+      'Сессия истекла. Войдите снова, чтобы пользоваться ИИ.';
+
+  @override
+  String get aiErrOffline =>
+      'Нет связи с сервисом ИИ. Проверьте подключение к интернету.';
+
+  @override
+  String get aiErrServer =>
+      'Сервис ИИ временно недоступен. Повторите попытку позже.';
+
+  @override
+  String get aiErrNotConfigured => 'Сервис ИИ на сервере ещё не настроен.';
+
+  @override
+  String get aiQuotaUsed => 'Ваш лимит вопросов к ИИ пока исчерпан.';
+
+  @override
+  String get aiOfflineSourcesTitle => 'Источники из офлайн-базы';
+
+  @override
+  String aiOfflineSourcesCount(int count) {
+    return 'Использованные источники ($count)';
+  }
+
+  @override
+  String get aiRetry => 'Повторить';
 }

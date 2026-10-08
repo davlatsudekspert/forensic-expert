@@ -56,5 +56,10 @@ enabled = true
 [functions.ai-answer]
 verify_jwt = true
 
+# The app calls email-otp before sign-in with the publishable key (not a JWT);
+# deployed with verify_jwt=false. Keep in sync so a redeploy does not break OTP.
+[functions.email-otp]
+verify_jwt = false
+
 [functions.delete-account]
 verify_jwt = true

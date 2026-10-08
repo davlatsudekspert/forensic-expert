@@ -46,10 +46,6 @@ class RagSectionsView extends ConsumerWidget {
       key: Key('ai.rag.${answer.outcome.name}'),
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        if (answer.text != null) ...[
-          FeSectionHeader(l.aiRagAnswer),
-          Text(answer.text!, style: t.bodyMedium),
-        ],
         FeSectionHeader(l.aiSectionEvidenceStatus),
         for (final e in answer.evidence)
           Padding(

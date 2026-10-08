@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
+import 'package:forensic_expert/domain/ai/ai_architecture.dart';
 
 import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
@@ -79,4 +80,49 @@ void main() {
     expect(find.byKey(const Key('ai.blocked.officialOpinion')), findsOneWidget);
     expect(find.byKey(const Key('ai.rag.blocked')), findsNothing);
   });
+
+  testWidgets('«oflayn topish» serverga chiqmaydi; manbalar alohida blokda', (
+    tester,
+  ) async {
+    final spy = _SpyProvider();
+    await pumpApp(
+      tester,
+      settings: completedSettings(lang: 'uz'),
+      initialLocation: Routes.ai,
+      testFixtures: false,
+      overrides: [
+        ...pilot.overrides,
+        entitlementServiceProvider.overrideWithValue(FakeStore(owned: true)),
+        aiProviderProvider.overrideWithValue(spy),
+      ],
+    );
+    await tester.enterText(
+      find.byKey(const Key('ai.input')),
+      'yupqa qatlam xromatografiyasi',
+    );
+    await tester.ensureVisible(find.byKey(const Key('ai.findSources')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const Key('ai.findSources')));
+    await tester.pumpAndSettle();
+    expect(spy.calls, 0);
+    expect(find.byKey(const Key('ai.answer')), findsNothing);
+    await see(tester, find.byKey(const Key('ai.sources.offline')));
+    expect(
+      find.byKey(const Key('ai.chunk.C-METHOD-TLC-APPLICATION-P5')),
+      findsOneWidget,
+    );
+  });
+}
+
+class _SpyProvider implements AiProvider {
+  int calls = 0;
+
+  @override
+  bool get isConfigured => true;
+
+  @override
+  Future<AiDraft> generate(AiPrompt prompt) async {
+    calls++;
+    throw UnimplementedError();
+  }
 }

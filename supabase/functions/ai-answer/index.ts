@@ -22,7 +22,9 @@ const HOURLY_LIMIT = Number(Deno.env.get("FE_AI_HOURLY_LIMIT") ?? "30");
 const API = "https://generativelanguage.googleapis.com/v1beta";
 const PREFERRED = [Deno.env.get("FE_AI_MODEL"), "gemini-flash-latest"]
   .filter((m): m is string => !!m);
-const DEADLINE_MS = 50_000; // the app waits up to 60 s
+const DEADLINE_MS = 45_000; // the app waits up to 60 s; every attempt must finish before this
+const ATTEMPT_MS = 20_000;
+const DISCOVERY_MS = 5_000;
 let discovered: string[] | null = null;
 
 // Models change over time (old names return 404): ask the API which "flash"
@@ -33,6 +35,7 @@ async function candidateModels(key: string): Promise<string[]> {
     try {
       const r = await fetch(`${API}/models?pageSize=200`, {
         headers: { "x-goog-api-key": key },
+        signal: AbortSignal.timeout(DISCOVERY_MS),
       });
       if (r.ok) {
         const out = await r.json();
@@ -127,15 +130,17 @@ Deno.serve(async (req) => {
   for (const model of await candidateModels(key)) {
     // Thinking off where supported; retry without it if the model rejects it.
     for (const attempt of [0, 1, 2]) {
-      if (Date.now() - started > DEADLINE_MS) {
+      // Budget per attempt so the whole request ends before the client gives up.
+      const remaining = DEADLINE_MS - (Date.now() - started);
+      if (remaining < 3_000) {
         return json({ error: "upstream" }, 504);
       }
       const ctl = new AbortController();
-      const timer = setTimeout(() => ctl.abort(), 20_000);
+      const timer = setTimeout(() => ctl.abort(), Math.min(ATTEMPT_MS, remaining));
       try {
         const generationConfig: Record<string, unknown> = {
           temperature: 0.1,
-          maxOutputTokens: 2048,
+          maxOutputTokens: 4096, // JSON mode: a truncated object is unparsable
           responseMimeType: "application/json",
         };
         if (attempt === 0) generationConfig.thinkingConfig = { thinkingBudget: 0 };

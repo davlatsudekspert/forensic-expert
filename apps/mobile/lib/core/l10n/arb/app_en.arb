@@ -7006,5 +7006,66 @@
   "restrictedCatalogTitleDraft": "Title translation is a draft",
   "@restrictedCatalogTitleDraft": {
     "description": "Meta."
+  },
+  "aiWorking": "Preparing an answer from sources… This can take up to a minute.",
+  "@aiWorking": {
+    "description": "Progress."
+  },
+  "aiSearchingOffline": "Searching the offline database…",
+  "@aiSearchingOffline": {
+    "description": "Progress."
+  },
+  "aiNotCovered": "The sources in the app do not cover this question well enough, so no sourced answer was produced.",
+  "@aiNotCovered": {
+    "description": "Banner."
+  },
+  "aiModelNoteTitle": "AI note (no sources — do not rely on it)",
+  "@aiModelNoteTitle": {
+    "description": "Header."
+  },
+  "aiAnswerRejected": "The AI answer was not shown because it could not be verified against the app's sources.",
+  "@aiAnswerRejected": {
+    "description": "Banner."
+  },
+  "aiErrRateLimited": "The hourly limit of AI questions has been reached. Please try again later.",
+  "@aiErrRateLimited": {
+    "description": "Banner."
+  },
+  "aiErrSignIn": "Your session has expired. Please sign in again to use AI.",
+  "@aiErrSignIn": {
+    "description": "Banner."
+  },
+  "aiErrOffline": "No connection to the AI service. Check the internet connection.",
+  "@aiErrOffline": {
+    "description": "Banner."
+  },
+  "aiErrServer": "The AI service is temporarily unavailable. Please try again later.",
+  "@aiErrServer": {
+    "description": "Banner."
+  },
+  "aiErrNotConfigured": "The AI service is not configured on the server yet.",
+  "@aiErrNotConfigured": {
+    "description": "Banner."
+  },
+  "aiQuotaUsed": "Your AI question allowance is used up for now.",
+  "@aiQuotaUsed": {
+    "description": "Banner."
+  },
+  "aiOfflineSourcesTitle": "Sources found in the offline database",
+  "@aiOfflineSourcesTitle": {
+    "description": "Header."
+  },
+  "aiOfflineSourcesCount": "Sources used ({count})",
+  "@aiOfflineSourcesCount": {
+    "description": "Expander.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "aiRetry": "Try again",
+  "@aiRetry": {
+    "description": "Action."
   }
 }

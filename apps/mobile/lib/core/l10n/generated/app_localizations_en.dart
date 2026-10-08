@@ -5393,4 +5393,56 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get restrictedCatalogTitleDraft => 'Title translation is a draft';
+
+  @override
+  String get aiWorking =>
+      'Preparing an answer from sources… This can take up to a minute.';
+
+  @override
+  String get aiSearchingOffline => 'Searching the offline database…';
+
+  @override
+  String get aiNotCovered =>
+      'The sources in the app do not cover this question well enough, so no sourced answer was produced.';
+
+  @override
+  String get aiModelNoteTitle => 'AI note (no sources — do not rely on it)';
+
+  @override
+  String get aiAnswerRejected =>
+      'The AI answer was not shown because it could not be verified against the app\'s sources.';
+
+  @override
+  String get aiErrRateLimited =>
+      'The hourly limit of AI questions has been reached. Please try again later.';
+
+  @override
+  String get aiErrSignIn =>
+      'Your session has expired. Please sign in again to use AI.';
+
+  @override
+  String get aiErrOffline =>
+      'No connection to the AI service. Check the internet connection.';
+
+  @override
+  String get aiErrServer =>
+      'The AI service is temporarily unavailable. Please try again later.';
+
+  @override
+  String get aiErrNotConfigured =>
+      'The AI service is not configured on the server yet.';
+
+  @override
+  String get aiQuotaUsed => 'Your AI question allowance is used up for now.';
+
+  @override
+  String get aiOfflineSourcesTitle => 'Sources found in the offline database';
+
+  @override
+  String aiOfflineSourcesCount(int count) {
+    return 'Sources used ($count)';
+  }
+
+  @override
+  String get aiRetry => 'Try again';
 }

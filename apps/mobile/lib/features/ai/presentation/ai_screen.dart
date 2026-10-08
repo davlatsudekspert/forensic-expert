@@ -35,43 +35,41 @@ class _AiScreenState extends ConsumerState<AiScreen> {
   final _controller = TextEditingController();
   List<PiiFinding> _pii = const [];
   AiExperience _experience = AiExperience.professional;
-  AiRouteResult? _result;
   RagAnswer? _rag;
   bool _searching = false;
 
-  Future<void> _findSources(String lang) async {
+  /// Bitta savol — bitta quvur, ko‘pi bilan bitta server so‘rovi.
+  /// [offlineOnly] — tarmoqqa umuman chiqmaydi (faqat qurilmadagi qidiruv).
+  Future<void> _submit(String lang, {required bool offlineOnly}) async {
     final text = _controller.text.trim();
-    if (text.isEmpty) return;
-    setState(() => _searching = true);
-    final r = await ref
-        .read(aiRouterProvider(lang))
-        .route(
-          AiQuestion(
-            text: text,
-            languageCode: lang,
-            jurisdictionId: ref.read(settingsControllerProvider).jurisdictionId,
-          ),
-          experience: _experience,
-          entitlement: await ref.read(aiEntitlementServiceProvider).current(),
-        );
-    // Tuzilgan RAG natijasi (provenance, ziddiyat, retraksiya).
-    final rag = await ref
-        .read(ragPipelineProvider(lang))
-        .ask(
-          AiQuestion(
-            text: text,
-            languageCode: lang,
-            jurisdictionId: ref.read(settingsControllerProvider).jurisdictionId,
-          ),
-          experience: _experience,
-          entitlement: await ref.read(aiEntitlementServiceProvider).current(),
-        );
-    if (!mounted) return;
+    if (text.isEmpty || _searching) return;
     setState(() {
-      _result = r;
-      _rag = rag;
-      _searching = false;
+      _searching = true;
+      _rag = null;
     });
+    try {
+      final base = ref.read(ragPipelineProvider(lang));
+      final pipeline = offlineOnly
+          ? RagPipeline(
+              safety: base.safety,
+              retrieve: base.retrieve,
+              provider: const UnconfiguredAiProvider(),
+              knownSourceIds: base.knownSourceIds,
+            )
+          : base;
+      final rag = await pipeline.ask(
+        AiQuestion(
+          text: text,
+          languageCode: lang,
+          jurisdictionId: ref.read(settingsControllerProvider).jurisdictionId,
+        ),
+        experience: _experience,
+        entitlement: await ref.read(aiEntitlementServiceProvider).current(),
+      );
+      if (mounted) setState(() => _rag = rag);
+    } finally {
+      if (mounted) setState(() => _searching = false);
+    }
   }
 
   @override
@@ -185,8 +183,9 @@ class _AiScreenState extends ConsumerState<AiScreen> {
                         label: Text(l.aiFindSources),
                         onPressed: _searching || kinds.isNotEmpty
                             ? null
-                            : () => _findSources(
+                            : () => _submit(
                                 Localizations.localeOf(context).languageCode,
+                                offlineOnly: true,
                               ),
                       ),
                       FilledButton.icon(
@@ -196,8 +195,9 @@ class _AiScreenState extends ConsumerState<AiScreen> {
                         // Server AI (Gemini) — faqat ulanganda; PII topilsa
                         // yuborilmaydi. Javob manbalar bilan tekshiriladi.
                         onPressed: available && kinds.isEmpty && !_searching
-                            ? () => _findSources(
+                            ? () => _submit(
                                 Localizations.localeOf(context).languageCode,
+                                offlineOnly: false,
                               )
                             : null,
                       ),
@@ -213,9 +213,28 @@ class _AiScreenState extends ConsumerState<AiScreen> {
                         style: t.bodySmall?.copyWith(color: c.textSecondary),
                       ),
                     ),
-                  if (_result case final r?) _RouteResultView(result: r),
-                  if (_rag case final a?)
+                  if (_searching)
+                    Padding(
+                      key: const Key('ai.progress'),
+                      padding: const EdgeInsets.only(top: FeSpace.sm),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          const LinearProgressIndicator(),
+                          const SizedBox(height: FeSpace.xs),
+                          Text(
+                            available ? l.aiWorking : l.aiSearchingOffline,
+                            style: t.bodySmall?.copyWith(
+                              color: c.textSecondary,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  if (_rag case final a?) ...[
+                    _AiResultView(answer: a),
                     if (a.evidence.isNotEmpty) RagSectionsView(answer: a),
+                  ],
                   if (!available) ...[
                     FeSectionHeader(l.aiPreviewTitle),
                     const _AnswerPreview(),
@@ -231,138 +250,232 @@ class _AiScreenState extends ConsumerState<AiScreen> {
   }
 }
 
-/// Lokal qidiruv natijasi yoki xavfsizlik blokining sababi.
-class _RouteResultView extends StatelessWidget {
-  const _RouteResultView({required this.result});
+/// Natija: avval AI javobi yoki uning yo‘qligi sababi, keyin alohida —
+/// oflayn bazadan topilgan manbalar. Oflayn natija hech qachon AI javobi
+/// sifatida ko‘rsatilmaydi.
+class _AiResultView extends StatelessWidget {
+  const _AiResultView({required this.answer});
 
-  final AiRouteResult result;
+  final RagAnswer answer;
+
+  String? _failure(AppLocalizations l) => switch (answer.failureCode) {
+    null => null,
+    'too_many_requests' || '429' => l.aiErrRateLimited,
+    'unauthorized' || 'not_signed_in' || '401' => l.aiErrSignIn,
+    'offline' => l.aiErrOffline,
+    'not_configured' || '503' => l.aiErrNotConfigured,
+    _ => l.aiErrServer,
+  };
 
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
-    final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
-    final blocks = result.safety?.blocks ?? const <SafetyBlock>{};
+    final blocks = answer.safety?.blocks ?? const <SafetyBlock>{};
+    final chunks = [for (final e in answer.evidence) e.chunk];
+    final failure = _failure(l);
+    final answered = answer.outcome == RagOutcome.answered;
+
+    Widget sources({required bool collapsed}) {
+      final list = [
+        for (final ch in chunks)
+          Padding(
+            padding: const EdgeInsets.only(bottom: FeSpace.xs),
+            child: _ChunkCard(chunk: ch),
+          ),
+      ];
+      if (collapsed) {
+        return ExpansionTile(
+          key: const Key('ai.sources.collapsed'),
+          tilePadding: EdgeInsets.zero,
+          childrenPadding: EdgeInsets.zero,
+          title: Text(l.aiOfflineSourcesCount(chunks.length)),
+          children: list,
+        );
+      }
+      return Column(
+        key: const Key('ai.sources.offline'),
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          FeSectionHeader(l.aiOfflineSourcesTitle),
+          FeBanner(icon: Icons.info_outline, text: l.aiRetrievalNote),
+          const SizedBox(height: FeSpace.xs),
+          ...list,
+        ],
+      );
+    }
+
     return Column(
-      key: Key('ai.result.${result.outcome.name}'),
+      key: Key('ai.result.${answer.outcome.name}'),
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         const SizedBox(height: FeSpace.sm),
-        if (result.outcome == AiRouteOutcome.blocked)
-          for (final b in blocks)
-            Padding(
-              padding: const EdgeInsets.only(bottom: FeSpace.xs),
-              child: FeBanner(
-                key: Key('ai.blocked.${b.name}'),
-                icon: Icons.block,
+        switch (answer.outcome) {
+          RagOutcome.blocked => Column(
+            children: [
+              for (final b in blocks)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: FeSpace.xs),
+                  child: FeBanner(
+                    key: Key('ai.blocked.${b.name}'),
+                    icon: Icons.block,
+                    tone: FeBannerTone.warning,
+                    text: switch (b) {
+                      SafetyBlock.personalData => l.aiBlockedPii,
+                      SafetyBlock.finalCauseOrManner => l.aiBlockedConclusion,
+                      SafetyBlock.legalConclusion => l.aiBlockedLegal,
+                      SafetyBlock.officialOpinion => l.aiBlockedOfficial,
+                    },
+                  ),
+                ),
+            ],
+          ),
+          RagOutcome.jurisdictionRequired => Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              FeBanner(
+                key: const Key('ai.jurisdictionRequired'),
+                icon: Icons.public,
                 tone: FeBannerTone.warning,
-                text: switch (b) {
-                  SafetyBlock.personalData => l.aiBlockedPii,
-                  SafetyBlock.finalCauseOrManner => l.aiBlockedConclusion,
-                  SafetyBlock.legalConclusion => l.aiBlockedLegal,
-                  SafetyBlock.officialOpinion => l.aiBlockedOfficial,
-                },
+                text: l.aiJurisdictionRequired,
               ),
-            )
-        else if (result.outcome == AiRouteOutcome.jurisdictionRequired) ...[
-          FeBanner(
-            key: const Key('ai.jurisdictionRequired'),
-            icon: Icons.public,
-            tone: FeBannerTone.warning,
-            text: l.aiJurisdictionRequired,
+              const SizedBox(height: FeSpace.xs),
+              Align(
+                alignment: AlignmentDirectional.centerStart,
+                child: OutlinedButton.icon(
+                  key: const Key('ai.selectJurisdiction'),
+                  icon: const Icon(Icons.public),
+                  label: Text(l.aiSelectJurisdiction),
+                  onPressed: () => context.push(Routes.jurisdictionSelect),
+                ),
+              ),
+            ],
           ),
-          const SizedBox(height: FeSpace.xs),
-          Align(
-            alignment: AlignmentDirectional.centerStart,
-            child: OutlinedButton.icon(
-              key: const Key('ai.selectJurisdiction'),
-              icon: const Icon(Icons.public),
-              label: Text(l.aiSelectJurisdiction),
-              onPressed: () => context.push(Routes.jurisdictionSelect),
-            ),
-          ),
-        ] else if (result.chunks.isEmpty)
-          FeEmptyState(
+          RagOutcome.noReliableContext => FeEmptyState(
             key: const Key('ai.noContext'),
             icon: Icons.search_off,
             body: l.aiNoContext,
             compact: true,
-          )
-        else ...[
-          FeSectionHeader(l.aiRetrievalTitle),
-          FeBanner(icon: Icons.info_outline, text: l.aiRetrievalNote),
-          const SizedBox(height: FeSpace.xs),
-          for (final ch in result.chunks)
-            Padding(
-              padding: const EdgeInsets.only(bottom: FeSpace.xs),
-              child: Consumer(
-                builder: (context, ref, _) {
-                  // Kartani bosish — to‘liq yozuv; SRC — manba sahifasi.
-                  final isLibrary =
-                      ref.watch(libraryRepositoryProvider).byId(ch.entityId) !=
-                      null;
-                  return FeCard(
-                    key: Key('ai.chunk.${ch.chunkId}'),
-                    padding: const EdgeInsets.all(FeSpace.sm),
-                    onTap: () => context.push(
-                      isLibrary
-                          ? Routes.libraryEntry(ch.entityId)
-                          : Routes.knowledgeEntry(ch.entityId),
+          ),
+          RagOutcome.answered => Column(
+            key: const Key('ai.answer'),
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              FeSectionHeader(l.aiRagAnswer),
+              SelectableText(
+                answer.text ?? '',
+                style: t.bodyMedium?.copyWith(height: 1.5),
+              ),
+            ],
+          ),
+          RagOutcome.notCovered => Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              FeBanner(
+                key: const Key('ai.notCovered'),
+                icon: Icons.help_outline,
+                tone: FeBannerTone.warning,
+                text: l.aiNotCovered,
+              ),
+            ],
+          ),
+          RagOutcome.quotaUnavailable => FeBanner(
+            key: const Key('ai.quota'),
+            icon: Icons.hourglass_empty,
+            tone: FeBannerTone.warning,
+            text: l.aiQuotaUsed,
+          ),
+          RagOutcome.rejectedCitation ||
+          RagOutcome.rejectedIdentifier ||
+          RagOutcome.rejectedSafety => FeBanner(
+            key: const Key('ai.rejected'),
+            icon: Icons.gpp_maybe_outlined,
+            tone: FeBannerTone.warning,
+            text: l.aiAnswerRejected,
+          ),
+          RagOutcome.retrievalOnly =>
+            failure == null
+                ? const SizedBox.shrink()
+                : FeBanner(
+                    key: Key('ai.failure.${answer.failureCode}'),
+                    icon: Icons.cloud_off_outlined,
+                    tone: FeBannerTone.warning,
+                    text: failure,
+                  ),
+        },
+        if (chunks.isNotEmpty) sources(collapsed: answered),
+      ],
+    );
+  }
+}
+
+/// Oflayn bazadagi bitta bo‘lak: sarlavha, asl iqtibos va manbalar.
+class _ChunkCard extends StatelessWidget {
+  const _ChunkCard({required this.chunk});
+
+  final RetrievedChunk chunk;
+
+  @override
+  Widget build(BuildContext context) {
+    final ch = chunk;
+    final t = Theme.of(context).textTheme;
+    final c = FeTheme.of(context);
+    return Consumer(
+      builder: (context, ref, _) {
+        // Kartani bosish — to‘liq yozuv; SRC — manba sahifasi.
+        final isLibrary =
+            ref.watch(libraryRepositoryProvider).byId(ch.entityId) != null;
+        return FeCard(
+          key: Key('ai.chunk.${ch.chunkId}'),
+          padding: const EdgeInsets.all(FeSpace.sm),
+          onTap: () => context.push(
+            isLibrary
+                ? Routes.libraryEntry(ch.entityId)
+                : Routes.knowledgeEntry(ch.entityId),
+          ),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    if (ch.title != null) Text(ch.title!, style: t.titleSmall),
+                    const SizedBox(height: 2),
+                    Text(
+                      ch.text,
+                      locale: const Locale('en'),
+                      style: t.bodySmall?.copyWith(fontStyle: FontStyle.italic),
                     ),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                    const SizedBox(height: 2),
+                    Wrap(
+                      spacing: FeSpace.xs,
                       children: [
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              if (ch.title != null)
-                                Text(ch.title!, style: t.titleSmall),
-                              const SizedBox(height: 2),
-                              Text(
-                                ch.text,
-                                locale: const Locale('en'),
+                        for (final id in ch.sourceIds)
+                          InkWell(
+                            key: Key('ai.chunk.source.$id'),
+                            onTap: () => context.push(Routes.source(id)),
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 4),
+                              child: Text(
+                                id,
                                 style: t.bodySmall?.copyWith(
-                                  fontStyle: FontStyle.italic,
+                                  color: c.accent,
+                                  decoration: TextDecoration.underline,
                                 ),
                               ),
-                              const SizedBox(height: 2),
-                              Wrap(
-                                spacing: FeSpace.xs,
-                                children: [
-                                  for (final id in ch.sourceIds)
-                                    InkWell(
-                                      key: Key('ai.chunk.source.$id'),
-                                      onTap: () =>
-                                          context.push(Routes.source(id)),
-                                      child: Padding(
-                                        padding: const EdgeInsets.symmetric(
-                                          vertical: 4,
-                                        ),
-                                        child: Text(
-                                          id,
-                                          style: t.bodySmall?.copyWith(
-                                            color: c.accent,
-                                            decoration:
-                                                TextDecoration.underline,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                ],
-                              ),
-                            ],
+                            ),
                           ),
-                        ),
-                        Icon(Icons.chevron_right, color: c.textSecondary),
                       ],
                     ),
-                  );
-                },
+                  ],
+                ),
               ),
-            ),
-        ],
-      ],
+              Icon(Icons.chevron_right, color: c.textSecondary),
+            ],
+          ),
+        );
+      },
     );
   }
 }

@@ -5381,4 +5381,56 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get restrictedCatalogTitleDraft => 'Sarlavha tarjimasi qoralama';
+
+  @override
+  String get aiWorking =>
+      'Manbalar asosida javob tayyorlanmoqda… Bu bir daqiqagacha cho‘zilishi mumkin.';
+
+  @override
+  String get aiSearchingOffline => 'Oflayn bazadan qidirilmoqda…';
+
+  @override
+  String get aiNotCovered =>
+      'Ilovadagi manbalar bu savolni yetarli darajada qamrab olmaydi, shuning uchun manbali javob tuzilmadi.';
+
+  @override
+  String get aiModelNoteTitle => 'AI izohi (manbasiz — unga tayanmang)';
+
+  @override
+  String get aiAnswerRejected =>
+      'AI javobi ko‘rsatilmadi: uni ilovadagi manbalar bilan tasdiqlab bo‘lmadi.';
+
+  @override
+  String get aiErrRateLimited =>
+      'AI savollarining soatlik limiti tugadi. Birozdan keyin qayta urinib ko‘ring.';
+
+  @override
+  String get aiErrSignIn =>
+      'Sessiya muddati tugadi. AI’dan foydalanish uchun qayta kiring.';
+
+  @override
+  String get aiErrOffline =>
+      'AI xizmati bilan aloqa yo‘q. Internet aloqasini tekshiring.';
+
+  @override
+  String get aiErrServer =>
+      'AI xizmati vaqtincha ishlamayapti. Birozdan keyin qayta urinib ko‘ring.';
+
+  @override
+  String get aiErrNotConfigured => 'AI xizmati serverda hali sozlanmagan.';
+
+  @override
+  String get aiQuotaUsed =>
+      'AI savollari bo‘yicha limitingiz hozircha tugagan.';
+
+  @override
+  String get aiOfflineSourcesTitle => 'Oflayn bazadan topilgan manbalar';
+
+  @override
+  String aiOfflineSourcesCount(int count) {
+    return 'Foydalanilgan manbalar ($count)';
+  }
+
+  @override
+  String get aiRetry => 'Qayta urinish';
 }
