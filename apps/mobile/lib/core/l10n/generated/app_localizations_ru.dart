@@ -5467,4 +5467,25 @@ class AppLocalizationsRu extends AppLocalizations {
   String fileSizeKb(String size) {
     return '$size КБ';
   }
+
+  @override
+  String get disc_forensicSerology => 'Судебная серология';
+
+  @override
+  String get disc_medicalCriminalistics => 'Медицинская криминалистика';
+
+  @override
+  String get disc_traceEvidence => 'Трасология и микроследы';
+
+  @override
+  String get disc_firearmsBallistics => 'Баллистика и огнестрельное оружие';
+
+  @override
+  String get disc_questionedDocuments => 'Техническая экспертиза документов';
+
+  @override
+  String get disc_digitalForensics => 'Цифровая криминалистика';
+
+  @override
+  String get discGroupCriminalistics => 'Криминалистика';
 }

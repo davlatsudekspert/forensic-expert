@@ -5443,4 +5443,25 @@ class AppLocalizationsUz extends AppLocalizations {
   String fileSizeKb(String size) {
     return '$size KB';
   }
+
+  @override
+  String get disc_forensicSerology => 'Sud serologiyasi';
+
+  @override
+  String get disc_medicalCriminalistics => 'Tibbiy-kriminalistika';
+
+  @override
+  String get disc_traceEvidence => 'Trasologiya va mikroizlar';
+
+  @override
+  String get disc_firearmsBallistics => 'Ballistika va o‘qotar qurollar';
+
+  @override
+  String get disc_questionedDocuments => 'Hujjatlar ekspertizasi';
+
+  @override
+  String get disc_digitalForensics => 'Raqamli kriminalistika';
+
+  @override
+  String get discGroupCriminalistics => 'Kriminalistika';
 }

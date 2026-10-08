@@ -7084,5 +7084,33 @@
         "type": "String"
       }
     }
+  },
+  "disc_forensicSerology": "Forensic serology",
+  "@disc_forensicSerology": {
+    "description": "Discipline."
+  },
+  "disc_medicalCriminalistics": "Medical criminalistics",
+  "@disc_medicalCriminalistics": {
+    "description": "Discipline."
+  },
+  "disc_traceEvidence": "Trace evidence and traceology",
+  "@disc_traceEvidence": {
+    "description": "Discipline."
+  },
+  "disc_firearmsBallistics": "Firearms and ballistics",
+  "@disc_firearmsBallistics": {
+    "description": "Discipline."
+  },
+  "disc_questionedDocuments": "Questioned documents",
+  "@disc_questionedDocuments": {
+    "description": "Discipline."
+  },
+  "disc_digitalForensics": "Digital forensics",
+  "@disc_digitalForensics": {
+    "description": "Discipline."
+  },
+  "discGroupCriminalistics": "Criminalistics",
+  "@discGroupCriminalistics": {
+    "description": "Discipline group."
   }
 }

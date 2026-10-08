@@ -9842,6 +9842,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{size} KB'**
   String fileSizeKb(String size);
+
+  /// Discipline.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic serology'**
+  String get disc_forensicSerology;
+
+  /// Discipline.
+  ///
+  /// In en, this message translates to:
+  /// **'Medical criminalistics'**
+  String get disc_medicalCriminalistics;
+
+  /// Discipline.
+  ///
+  /// In en, this message translates to:
+  /// **'Trace evidence and traceology'**
+  String get disc_traceEvidence;
+
+  /// Discipline.
+  ///
+  /// In en, this message translates to:
+  /// **'Firearms and ballistics'**
+  String get disc_firearmsBallistics;
+
+  /// Discipline.
+  ///
+  /// In en, this message translates to:
+  /// **'Questioned documents'**
+  String get disc_questionedDocuments;
+
+  /// Discipline.
+  ///
+  /// In en, this message translates to:
+  /// **'Digital forensics'**
+  String get disc_digitalForensics;
+
+  /// Discipline group.
+  ///
+  /// In en, this message translates to:
+  /// **'Criminalistics'**
+  String get discGroupCriminalistics;
 }
 
 class _AppLocalizationsDelegate

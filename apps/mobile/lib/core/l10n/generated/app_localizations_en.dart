@@ -5456,4 +5456,25 @@ class AppLocalizationsEn extends AppLocalizations {
   String fileSizeKb(String size) {
     return '$size KB';
   }
+
+  @override
+  String get disc_forensicSerology => 'Forensic serology';
+
+  @override
+  String get disc_medicalCriminalistics => 'Medical criminalistics';
+
+  @override
+  String get disc_traceEvidence => 'Trace evidence and traceology';
+
+  @override
+  String get disc_firearmsBallistics => 'Firearms and ballistics';
+
+  @override
+  String get disc_questionedDocuments => 'Questioned documents';
+
+  @override
+  String get disc_digitalForensics => 'Digital forensics';
+
+  @override
+  String get discGroupCriminalistics => 'Criminalistics';
 }

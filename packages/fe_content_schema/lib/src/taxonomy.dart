@@ -16,10 +16,15 @@ enum DisciplineGroup {
   toxicologyChemistry,
   biologyIdentification,
   laboratory,
+
+  /// Kriminalistika: tibbiy-kriminalistika, izshunoslik, ballistika,
+  /// hujjatlar va raqamli kriminalistika.
+  criminalistics,
   education,
 }
 
-/// Forensic fanlar (kamida 20 ta). Kod barqaror (bookmark, qidiruv, URL).
+/// Forensic fanlar (26 ta; kontenti yo‘q fanlar bo‘sh holatda ko‘rsatiladi,
+/// soxta kontent qo‘shilmaydi). Kod barqaror (bookmark, qidiruv, URL).
 enum ForensicDiscipline {
   forensicMedicine('forensic_medicine', DisciplineGroup.medicine),
   forensicPathology('forensic_pathology', DisciplineGroup.medicine),
@@ -47,6 +52,9 @@ enum ForensicDiscipline {
   analyticalScience('analytical_science', DisciplineGroup.toxicologyChemistry),
   forensicBiology('forensic_biology', DisciplineGroup.biologyIdentification),
   forensicGenetics('forensic_genetics', DisciplineGroup.biologyIdentification),
+
+  /// Sud serologiyasi (biologik iz va suyuqliklar, guruh mansubligi).
+  forensicSerology('forensic_serology', DisciplineGroup.biologyIdentification),
   forensicHistology(
     'forensic_histology',
     DisciplineGroup.biologyIdentification,
@@ -71,6 +79,16 @@ enum ForensicDiscipline {
     'human_identification',
     DisciplineGroup.biologyIdentification,
   ),
+  medicalCriminalistics(
+    'medical_criminalistics',
+    DisciplineGroup.criminalistics,
+  ),
+
+  /// Trasologiya: izlar (oyoq, asbob, transport vositasi, mikroizlar).
+  traceEvidence('trace_evidence', DisciplineGroup.criminalistics),
+  firearmsBallistics('firearms_ballistics', DisciplineGroup.criminalistics),
+  questionedDocuments('questioned_documents', DisciplineGroup.criminalistics),
+  digitalForensics('digital_forensics', DisciplineGroup.criminalistics),
   laboratoryQuality('laboratory_quality', DisciplineGroup.laboratory),
   evidenceHandling('evidence_handling', DisciplineGroup.laboratory),
   educationResearch('education_research', DisciplineGroup.education);
