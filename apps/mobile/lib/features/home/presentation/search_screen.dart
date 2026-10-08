@@ -86,6 +86,8 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
   void _open(SearchGroup group, SearchHit hit) {
     ref.read(userDataProvider.notifier).recordSearch(_query);
     switch (group) {
+      case SearchGroup.guidelines:
+        context.push(Routes.guideline(hit.entityId));
       case SearchGroup.tools:
         context.push(Routes.tool(hit.entityId));
       case SearchGroup.learning:
@@ -233,6 +235,7 @@ class _Results extends ConsumerWidget {
 
     String groupTitle(SearchGroup g) => switch (g) {
       SearchGroup.substances => l.librarySubstances,
+      SearchGroup.guidelines => l.guidelinesTitle,
       SearchGroup.topics => l.searchGroupTopics,
       SearchGroup.reagents => l.searchGroupReagents,
       SearchGroup.screening => l.searchGroupScreening,
@@ -278,13 +281,16 @@ class _Results extends ConsumerWidget {
           ..add(statusLabel(k.status));
       } else {
         parts.add(groupTitle(g));
-        if (g == SearchGroup.tools) parts.add(l.statusNeedsReview);
+        if (g == SearchGroup.tools || g == SearchGroup.guidelines) {
+          parts.add(l.statusNeedsReview);
+        }
       }
       return parts.join(FeGlyphs.middleDot);
     }
 
     IconData groupIcon(SearchGroup g) => switch (g) {
       SearchGroup.substances => Icons.hub_outlined,
+      SearchGroup.guidelines => Icons.assignment_outlined,
       SearchGroup.topics => Icons.personal_injury_outlined,
       SearchGroup.reagents => Icons.science_outlined,
       SearchGroup.screening => Icons.fact_check_outlined,

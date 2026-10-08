@@ -9,10 +9,12 @@ import '../core/settings/app_settings.dart';
 import '../domain/catalog/tools_catalog.dart';
 import '../domain/evidence/evidence_models.dart';
 import '../domain/evidence/provenance_models.dart';
+import '../domain/guidelines/guideline_models.dart';
 import '../domain/knowledge/knowledge_models.dart';
 import '../domain/learn/learn_models.dart';
 import '../domain/library/library_models.dart';
 import '../features/tools/tool_strings.dart';
+import 'guidelines.dart';
 import 'providers.dart';
 
 /// Standart belgilanishining qidiriladigan qismlari: `ANSI/ASTM E2329-25`
@@ -37,6 +39,7 @@ List<String> designationAliases(String designation) {
 /// tashqi ilmiy qidiruvdan vizual ajratilgan.
 enum SearchGroup {
   substances,
+  guidelines,
   topics,
   methods,
   reagents,
@@ -72,8 +75,36 @@ class AppSearchService {
     Iterable<JurisdictionalInstrument> instruments = const [],
     Iterable<ResearchEntry> research = const [],
     ProvenanceIndex? provenance,
+    GuidelineBundle guidelines = GuidelineBundle.empty,
   }) {
     final terms = <SearchTerm>[];
+    // Yo‘riqnomalar: sarlavha (3 til) va kalit so‘zlar (sinonimlar).
+    for (final g in guidelines.cards) {
+      for (final entry in g.title.values.entries) {
+        terms.add(
+          SearchTerm(
+            entityId: g.id,
+            category: SearchCategory.guideline,
+            term: entry.value,
+            kind: TermKind.localized,
+            lang: entry.key,
+          ),
+        );
+      }
+      for (final entry in g.keywords.entries) {
+        for (final k in entry.value) {
+          terms.add(
+            SearchTerm(
+              entityId: g.id,
+              category: SearchCategory.guideline,
+              term: k,
+              kind: TermKind.synonym,
+              lang: entry.key,
+            ),
+          );
+        }
+      }
+    }
     // PHASE 7: namunalar (EN/RU/UZ + manbadagi variantlar) va standartlar
     // katalogi (belgilanishi va sarlavhasi).
     for (final s in provenance?.specimens ?? const <SpecimenView>[]) {
@@ -281,6 +312,7 @@ class AppSearchService {
     SearchCategory.caseStudy ||
     SearchCategory.lesson => SearchGroup.learning,
     SearchCategory.reference => SearchGroup.references,
+    SearchCategory.guideline => SearchGroup.guidelines,
   };
 
   Future<AppSearchResult> search(String query, {String? lang}) async {
@@ -310,5 +342,6 @@ final searchServiceProvider = Provider<AppSearchService>(
     instruments: ref.watch(jurisdictionResolverProvider).instruments,
     research: ref.watch(evidenceDataProvider).research,
     provenance: ref.watch(provenanceIndexProvider),
+    guidelines: ref.watch(guidelinesProvider).value ?? GuidelineBundle.empty,
   ),
 );

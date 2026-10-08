@@ -25,6 +25,9 @@ enum SearchCategory {
 
   /// PHASE 7: namuna turi (qon, siydik, vitreous…).
   specimen,
+
+  /// Mustaqil ilmiy-amaliy yo‘riqnoma kartasi («Yo‘riqnomalar»).
+  guideline,
 }
 
 /// Indeksdagi termin turi — reytingga ta’sir qiladi.

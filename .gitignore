@@ -32,3 +32,6 @@ GoogleService-Info.plist
 __pycache__/
 *.pyc
 content/phase5/cache/
+
+# Claude Code agent worktrees (local only)
+/.claude/
