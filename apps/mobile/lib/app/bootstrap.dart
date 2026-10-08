@@ -17,6 +17,7 @@ import '../data/billing/in_app_purchase_client.dart';
 import '../data/billing/store_entitlement_service.dart';
 import '../data/local/profile_store.dart';
 import '../data/local/referral_store.dart';
+import '../data/local/study_progress_store.dart';
 import '../data/local/user_data_repository.dart';
 import '../data/offline/offline_backend.dart';
 import '../data/remote/http_auth_repository.dart';
@@ -37,6 +38,7 @@ import 'professional.dart';
 import 'providers.dart';
 import 'publications.dart';
 import 'referral.dart';
+import 'study.dart';
 import 'user_data.dart';
 
 /// Ilovani ishga tushirish.
@@ -88,6 +90,10 @@ Future<void> bootstrap() async {
         // Kutilayotgan taklif kodi (deep link) — faqat lokal.
         pendingReferralStoreProvider.overrideWithValue(
           SharedPrefsPendingReferralStore(prefs),
+        ),
+        // O‘quv rejimi (Leitner qutilari) — faqat lokal.
+        studyProgressStoreProvider.overrideWithValue(
+          SharedPrefsStudyProgressStore(prefs),
         ),
         // Server AI (Gemini, kalit faqat Edge Function’da) — faqat yoqilganda.
         if (SupabaseAiProvider.fromEnvironment(auth) case final ai?) ...[

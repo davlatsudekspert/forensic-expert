@@ -270,6 +270,33 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
                       ),
                     ],
                   ),
+                  FeSectionHeader(l.studyTitle),
+                  FeCard(
+                    key: const Key('learn.study'),
+                    onTap: () => context.push(Routes.study),
+                    child: Row(
+                      children: [
+                        Icon(Icons.psychology_alt_outlined, color: c.accent),
+                        const SizedBox(width: FeSpace.sm),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(l.studyTitle, style: t.titleSmall),
+                              const SizedBox(height: FeSpace.xxs),
+                              Text(
+                                l.studyEntrySubtitle,
+                                style: t.bodySmall?.copyWith(
+                                  color: c.textSecondary,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Icon(Icons.chevron_right, color: c.textSecondary),
+                      ],
+                    ),
+                  ),
                   FeSectionHeader(l.learnCases),
                   for (final cs in repo.cases())
                     FeCard(

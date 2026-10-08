@@ -187,6 +187,7 @@ class GuidelineCard {
     required this.disciplineCodes,
     required this.status,
     required this.sections,
+    this.summary = const Tri({}),
     this.updated,
     this.keywords = const {},
     this.translationStatus = const {},
@@ -218,6 +219,7 @@ class GuidelineCard {
         for (final s in (j['sections'] as List? ?? const []))
           if (s is Map<String, Object?>) GuidelineSection.fromJson(s),
       ],
+      summary: Tri.fromJson(j['summary']),
       updated: DateTime.tryParse('${j['updated'] ?? ''}'),
       keywords: kw,
       translationStatus: ts,
@@ -241,6 +243,9 @@ class GuidelineCard {
   final List<String> disciplineCodes;
   final ScientificStatus status;
   final List<GuidelineSection> sections;
+
+  /// Kartaning qisqa mazmuni (bo‘limlardagi manbalarga tayanadi).
+  final Tri summary;
   final DateTime? updated;
   final Map<String, List<String>> keywords;
   final Map<String, GuidelineTranslationStatus> translationStatus;

@@ -5778,4 +5778,190 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get pubConfirm => 'Confirm';
+
+  @override
+  String get studyTitle => 'Study mode';
+
+  @override
+  String get studyEntrySubtitle =>
+      'Flashcards and a self-check quiz built only from sourced records in the app';
+
+  @override
+  String get studyIntro =>
+      'Every card and question is built from a record that already exists in the app, together with its source. Nothing new is written. Material that is still under expert review is labelled.';
+
+  @override
+  String get studySectionTopics => 'Topics by discipline';
+
+  @override
+  String get studySectionSubstances => 'Substances: molecular formulas';
+
+  @override
+  String get studySectionGuidelines => 'Guidelines';
+
+  @override
+  String studyDeckCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count cards',
+      one: '1 card',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String studyDueCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count due now',
+      zero: 'Nothing due',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get studyEmpty => 'No sourced material is available for study yet.';
+
+  @override
+  String get studyLoading => 'Loading study material';
+
+  @override
+  String get studyQuizUnavailable =>
+      'Not enough records of this type for a quiz';
+
+  @override
+  String get studyFrontTopic =>
+      'What does the cited source say about this topic?';
+
+  @override
+  String get studyFrontSubstance => 'What is the molecular formula?';
+
+  @override
+  String get studyFrontGuideline => 'What is the summary of this guideline?';
+
+  @override
+  String get studyTapToFlip => 'Tap the card to flip it';
+
+  @override
+  String get studyHideAnswer => 'Hide answer';
+
+  @override
+  String get studyDidntKnow => 'Didn’t know';
+
+  @override
+  String studyCardProgress(int current, int total) {
+    return 'Card $current of $total';
+  }
+
+  @override
+  String studyBox(int box, int total) {
+    return 'Box $box of $total';
+  }
+
+  @override
+  String get studyBoxNew => 'New card';
+
+  @override
+  String get studyQuoteLabel =>
+      'Verbatim quote from the source (original language)';
+
+  @override
+  String studyGroupLabel(String group) {
+    return 'Group (editorial): $group';
+  }
+
+  @override
+  String get studySourcesHeader => 'Sources';
+
+  @override
+  String get studyOpenEntry => 'Open the original entry';
+
+  @override
+  String get studyOpenSourceDetails => 'Open source details';
+
+  @override
+  String studyMoreSources(int count) {
+    return '+$count more';
+  }
+
+  @override
+  String get studySessionDone => 'Session complete';
+
+  @override
+  String studySessionSummary(int known, int total) {
+    return 'Knew $known of $total';
+  }
+
+  @override
+  String get studyAllCaughtUp =>
+      'Nothing is due in this deck right now. Come back later or review all cards.';
+
+  @override
+  String get studyReviewAll => 'Review all cards';
+
+  @override
+  String get studyResetProgress => 'Reset deck progress';
+
+  @override
+  String get studyResetDone => 'Deck progress reset';
+
+  @override
+  String get studyBackToDecks => 'Back to decks';
+
+  @override
+  String get studyQuizStemTopic =>
+      'Which topic is this source quote cited for?';
+
+  @override
+  String studyQuizStemSubstance(String name) {
+    return 'What is the molecular formula of $name?';
+  }
+
+  @override
+  String get studyQuizStemGuideline =>
+      'Which guideline does this summary describe?';
+
+  @override
+  String get studyQuizNote =>
+      'Wrong options are other records of the same type from the app; nothing is invented.';
+
+  @override
+  String studyQuizQuestionOf(int current, int total) {
+    return 'Question $current of $total';
+  }
+
+  @override
+  String get studyQuizNext => 'Next question';
+
+  @override
+  String get studyQuizFinish => 'See results';
+
+  @override
+  String studyQuizScore(int correct, int total) {
+    return 'Score: $correct of $total';
+  }
+
+  @override
+  String get studyQuizMistakes => 'Review your mistakes';
+
+  @override
+  String get studyQuizNoMistakes => 'No mistakes — every answer was correct.';
+
+  @override
+  String studyQuizYourAnswer(String answer) {
+    return 'Your answer: $answer';
+  }
+
+  @override
+  String studyQuizCorrectAnswer(String answer) {
+    return 'Correct answer: $answer';
+  }
+
+  @override
+  String get studyQuizRetry => 'New quiz';
+
+  @override
+  String get studyDeckNotFound => 'This deck is not available.';
 }

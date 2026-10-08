@@ -28,6 +28,7 @@ import '../features/home/presentation/search_screen.dart';
 import '../features/knowledge/presentation/knowledge_detail_screen.dart';
 import '../features/knowledge/presentation/knowledge_list_screen.dart';
 import '../features/learn/presentation/learn_screens.dart';
+import '../features/learn/presentation/study_screens.dart';
 import '../features/legal/presentation/compare_screen.dart';
 import '../features/legal/presentation/jurisdiction_screens.dart';
 import '../features/library/presentation/entry_detail_screen.dart';
@@ -193,6 +194,24 @@ final routerProvider = Provider<GoRouter>((ref) {
                       GoRoute(
                         path: 'exam',
                         builder: (c, s) => const ExamScreen(),
+                      ),
+                      GoRoute(
+                        path: 'study',
+                        builder: (c, s) => const StudyHubScreen(),
+                        routes: [
+                          GoRoute(
+                            path: ':deck/cards',
+                            builder: (c, s) => StudyFlashcardsScreen(
+                              deckId: s.pathParameters['deck']!,
+                            ),
+                          ),
+                          GoRoute(
+                            path: ':deck/quiz',
+                            builder: (c, s) => StudyQuizScreen(
+                              deckId: s.pathParameters['deck']!,
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),

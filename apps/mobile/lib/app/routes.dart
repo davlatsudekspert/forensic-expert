@@ -55,6 +55,13 @@ abstract final class Routes {
   static const quiz = '/home/learn/quiz';
   static const flashcards = '/home/learn/flashcards';
 
+  /// O‘quv rejimi: manbali kartochkalar (Leitner) va test.
+  static const study = '/home/learn/study';
+  static String studyCards(String deckId) =>
+      '$study/${Uri.encodeComponent(deckId)}/cards';
+  static String studyQuiz(String deckId) =>
+      '$study/${Uri.encodeComponent(deckId)}/quiz';
+
   static const tools = '/tools';
   static String tool(String id) => '/tools/tool/$id';
 
