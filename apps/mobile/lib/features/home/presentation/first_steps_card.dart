@@ -117,7 +117,7 @@ class FirstStepsCard extends ConsumerWidget {
                           value: v,
                           minHeight: 4,
                           color: c.accent,
-                          backgroundColor: c.surfaceSunken,
+                          backgroundColor: c.border,
                         ),
                       ),
                     ),

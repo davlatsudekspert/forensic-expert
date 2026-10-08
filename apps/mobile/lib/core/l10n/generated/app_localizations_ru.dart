@@ -5488,4 +5488,28 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get discGroupCriminalistics => 'Криминалистика';
+
+  @override
+  String get homeGreeting => 'Добро пожаловать';
+
+  @override
+  String homeRoleChip(String mode) {
+    return 'Режим: $mode';
+  }
+
+  @override
+  String get homeAiEntryBody =>
+      'Задайте научный вопрос. Ответы ссылаются на источники.';
+
+  @override
+  String get homeResourcesHeading => 'Библиотека и инструменты';
+
+  @override
+  String get homeLibraryBody => 'Вещества, методы, стандарты и источники';
+
+  @override
+  String get homeContinueSaved => 'Продолжить и сохранённое';
+
+  @override
+  String get loadingContent => 'Загрузка…';
 }

@@ -5464,4 +5464,28 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get discGroupCriminalistics => 'Kriminalistika';
+
+  @override
+  String get homeGreeting => 'Xush kelibsiz';
+
+  @override
+  String homeRoleChip(String mode) {
+    return 'Rejim: $mode';
+  }
+
+  @override
+  String get homeAiEntryBody =>
+      'Ilmiy savol bering. Javoblar manbalarga iqtibos keltiradi.';
+
+  @override
+  String get homeResourcesHeading => 'Kutubxona va vositalar';
+
+  @override
+  String get homeLibraryBody => 'Moddalar, usullar, standartlar va manbalar';
+
+  @override
+  String get homeContinueSaved => 'Davom ettirish va saqlanganlar';
+
+  @override
+  String get loadingContent => 'Yuklanmoqda…';
 }

@@ -9884,6 +9884,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Criminalistics'**
   String get discGroupCriminalistics;
+
+  /// Home header greeting above the role chip.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome'**
+  String get homeGreeting;
+
+  /// Home header: current usage mode (Professional / Student). Opens mode settings.
+  ///
+  /// In en, this message translates to:
+  /// **'Mode: {mode}'**
+  String homeRoleChip(String mode);
+
+  /// Home: subtitle of the AI entry card.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask a scientific question. Answers cite their sources.'**
+  String get homeAiEntryBody;
+
+  /// Home section: scientific library and professional tools.
+  ///
+  /// In en, this message translates to:
+  /// **'Library & tools'**
+  String get homeResourcesHeading;
+
+  /// Home: subtitle of the scientific library entry.
+  ///
+  /// In en, this message translates to:
+  /// **'Substances, methods, standards and references'**
+  String get homeLibraryBody;
+
+  /// Home section: recently viewed, recent tools, favourites, recent searches.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue & saved'**
+  String get homeContinueSaved;
+
+  /// Screen reader label for a loading skeleton.
+  ///
+  /// In en, this message translates to:
+  /// **'Loading…'**
+  String get loadingContent;
 }
 
 class _AppLocalizationsDelegate

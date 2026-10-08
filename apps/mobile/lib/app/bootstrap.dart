@@ -150,6 +150,7 @@ void _registerFontLicenses() {
     for (final (pkg, path) in const [
       ('Inter', 'assets/fonts/inter/OFL.txt'),
       ('JetBrains Mono', 'assets/fonts/jetbrains_mono/OFL.txt'),
+      ('Source Serif 4', 'assets/fonts/source_serif_4/OFL.txt'),
     ]) {
       final text = await rootBundle.loadString(path);
       yield LicenseEntryWithLineBreaks([pkg], text);

@@ -5477,4 +5477,28 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get discGroupCriminalistics => 'Criminalistics';
+
+  @override
+  String get homeGreeting => 'Welcome';
+
+  @override
+  String homeRoleChip(String mode) {
+    return 'Mode: $mode';
+  }
+
+  @override
+  String get homeAiEntryBody =>
+      'Ask a scientific question. Answers cite their sources.';
+
+  @override
+  String get homeResourcesHeading => 'Library & tools';
+
+  @override
+  String get homeLibraryBody => 'Substances, methods, standards and references';
+
+  @override
+  String get homeContinueSaved => 'Continue & saved';
+
+  @override
+  String get loadingContent => 'Loading…';
 }

@@ -55,11 +55,21 @@ flutter:
   assets:
     - assets/fonts/inter/OFL.txt
     - assets/fonts/jetbrains_mono/OFL.txt
+    - assets/fonts/source_serif_4/OFL.txt
     - assets/content/pilot/
     - assets/content/guidelines/
 
   # Shriftlar ilovaga o‘rnatilgan (offline; runtime’da yuklanmaydi). SIL OFL 1.1.
   fonts:
+    # Source Serif 4 (Adobe, SIL OFL 1.1) — sarlavhalar. Litsenziya:
+    # assets/fonts/source_serif_4/OFL.txt
+    - family: SourceSerif4
+      fonts:
+        - asset: assets/fonts/source_serif_4/SourceSerif4-Regular.ttf
+        - asset: assets/fonts/source_serif_4/SourceSerif4-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/source_serif_4/SourceSerif4-Bold.ttf
+          weight: 700
     - family: Inter
       fonts:
         - asset: assets/fonts/inter/Inter-Regular.ttf
