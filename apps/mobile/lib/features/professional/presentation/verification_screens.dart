@@ -365,7 +365,7 @@ class _CredentialUploadScreenState
                         ),
                         subtitle: Text(
                           '${l.credentialKindLabel(f.kind)} · '
-                          '${(f.sizeBytes / 1024).ceil()} KB',
+                          '${l.fileSizeKb((f.sizeBytes / 1024).ceil().toString())}',
                         ),
                         trailing: IconButton(
                           tooltip: l.actionRemove,

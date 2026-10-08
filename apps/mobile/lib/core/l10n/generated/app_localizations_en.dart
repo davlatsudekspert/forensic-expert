@@ -5243,4 +5243,15 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get calcErrorAmbient =>
       'Ambient temperature must be between −20 and 35 °C.';
+
+  @override
+  String get relationBasisSourceExcerpt => 'source excerpt';
+
+  @override
+  String get metaHandle => 'Handle';
+
+  @override
+  String fileSizeKb(String size) {
+    return '$size KB';
+  }
 }

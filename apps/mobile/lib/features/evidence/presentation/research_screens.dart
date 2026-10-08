@@ -360,7 +360,7 @@ class ResearchDetailScreen extends ConsumerWidget {
       if (r.doi != null) ('DOI', r.doi!),
       if (r.pmid != null) ('PMID', r.pmid!),
       if (r.pmcid != null) ('PMCID', r.pmcid!),
-      if (r.handle != null) ('Handle', r.handle!),
+      if (r.handle != null) (l.metaHandle, r.handle!),
       (l.researchDocKind, l.documentKindLabel(documentKindOfResearch(r.kind))),
       (
         l.researchOpenAccess,
@@ -607,7 +607,7 @@ class RelatedSection extends ConsumerWidget {
             chips(ids),
             if (rel == LinkRelation.metabolismCoMention)
               Text(
-                l.relationBasis('source excerpt'),
+                l.relationBasis(l.relationBasisSourceExcerpt),
                 style: t.bodySmall?.copyWith(color: c.textSecondary),
               ),
             const SizedBox(height: FeSpace.sm),

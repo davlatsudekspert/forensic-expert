@@ -9506,6 +9506,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Ambient temperature must be between −20 and 35 °C.'**
   String get calcErrorAmbient;
+
+  /// Basis of a metabolism co-mention link (inserted into relationBasis).
+  ///
+  /// In en, this message translates to:
+  /// **'source excerpt'**
+  String get relationBasisSourceExcerpt;
+
+  /// Metadata row label: Handle System persistent identifier (hdl.handle.net).
+  ///
+  /// In en, this message translates to:
+  /// **'Handle'**
+  String get metaHandle;
+
+  /// Attached file size in kilobytes.
+  ///
+  /// In en, this message translates to:
+  /// **'{size} KB'**
+  String fileSizeKb(String size);
 }
 
 class _AppLocalizationsDelegate

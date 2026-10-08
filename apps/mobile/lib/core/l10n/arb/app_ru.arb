@@ -1,7 +1,7 @@
 {
   "@@locale": "ru",
   "appTitle": "FORENSIC EXPERT",
-  "appTagline": "Evidence · Science · Precision",
+  "appTagline": "Доказательность · Наука · Точность",
   "languageNameNative": "Русский",
   "chooseLanguageTitle": "Выберите язык",
   "languageOptionSemantics": "{language}. {state}",
@@ -1566,5 +1566,8 @@
   "calcErrorBac": "Введите концентрацию от 0 до 8 ‰.",
   "calcErrorRatio": "Отношение должно быть от 1,0 до 1,5.",
   "calcErrorRectal": "Ректальная температура должна быть выше температуры среды и не более 42 °C.",
-  "calcErrorAmbient": "Температура среды должна быть от −20 до 35 °C."
+  "calcErrorAmbient": "Температура среды должна быть от −20 до 35 °C.",
+  "relationBasisSourceExcerpt": "фрагмент источника",
+  "metaHandle": "Идентификатор Handle",
+  "fileSizeKb": "{size} КБ"
 }
