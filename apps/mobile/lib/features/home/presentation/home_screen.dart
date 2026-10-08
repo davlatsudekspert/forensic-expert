@@ -1,3 +1,5 @@
+import 'package:fe_content_schema/fe_content_schema.dart'
+    show ForensicDiscipline;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -733,7 +735,7 @@ class _AllDisciplinesTile extends StatelessWidget {
               children: [
                 Text(l.homeAllDisciplines, style: t.titleSmall),
                 Text(
-                  l.homeAllDisciplinesBody,
+                  l.homeAllDisciplinesBody(ForensicDiscipline.values.length),
                   style: t.bodySmall?.copyWith(color: c.textSecondary),
                 ),
               ],

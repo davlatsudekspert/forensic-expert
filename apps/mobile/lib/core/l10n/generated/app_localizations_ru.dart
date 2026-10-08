@@ -2190,8 +2190,9 @@ class AppLocalizationsRu extends AppLocalizations {
   String get homeAllDisciplines => 'Все судебные дисциплины';
 
   @override
-  String get homeAllDisciplinesBody =>
-      '20 дисциплин — охват и доступный контент';
+  String homeAllDisciplinesBody(int count) {
+    return 'Дисциплин: $count — охват и доступный контент';
+  }
 
   @override
   String get disc_forensicMedicine => 'Судебная медицина';

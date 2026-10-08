@@ -2191,8 +2191,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get homeAllDisciplines => 'All forensic disciplines';
 
   @override
-  String get homeAllDisciplinesBody =>
-      '20 disciplines — scope and currently available content';
+  String homeAllDisciplinesBody(int count) {
+    return '$count disciplines — scope and currently available content';
+  }
 
   @override
   String get disc_forensicMedicine => 'Forensic medicine';

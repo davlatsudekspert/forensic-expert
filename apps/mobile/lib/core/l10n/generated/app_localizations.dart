@@ -4033,8 +4033,8 @@ abstract class AppLocalizations {
   /// Home tile body.
   ///
   /// In en, this message translates to:
-  /// **'20 disciplines — scope and currently available content'**
-  String get homeAllDisciplinesBody;
+  /// **'{count} disciplines — scope and currently available content'**
+  String homeAllDisciplinesBody(int count);
 
   /// Forensic discipline name.
   ///

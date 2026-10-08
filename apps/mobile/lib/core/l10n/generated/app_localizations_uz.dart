@@ -2194,7 +2194,9 @@ class AppLocalizationsUz extends AppLocalizations {
   String get homeAllDisciplines => 'Barcha sud-ekspert fanlari';
 
   @override
-  String get homeAllDisciplinesBody => '20 ta fan — qamrov va mavjud kontent';
+  String homeAllDisciplinesBody(int count) {
+    return '$count ta fan — qamrov va mavjud kontent';
+  }
 
   @override
   String get disc_forensicMedicine => 'Sud tibbiyoti';

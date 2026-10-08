@@ -2853,9 +2853,14 @@
   "@homeAllDisciplines": {
     "description": "Home tile."
   },
-  "homeAllDisciplinesBody": "20 disciplines — scope and currently available content",
+  "homeAllDisciplinesBody": "{count} disciplines — scope and currently available content",
   "@homeAllDisciplinesBody": {
-    "description": "Home tile body."
+    "description": "Home tile body.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   },
   "disc_forensicMedicine": "Forensic medicine",
   "@disc_forensicMedicine": {
