@@ -5778,4 +5778,15 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get pubConfirm => 'Confirm';
+
+  @override
+  String get searchDisciplineFilter => 'Filter results by discipline';
+
+  @override
+  String get searchDisciplineAll => 'All disciplines';
+
+  @override
+  String searchLinkedVia(String name) {
+    return 'Linked to $name (mentioned in source)';
+  }
 }

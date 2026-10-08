@@ -1,6 +1,7 @@
 import 'dart:async';
 
-import 'package:fe_content_schema/fe_content_schema.dart' show ScientificStatus;
+import 'package:fe_content_schema/fe_content_schema.dart'
+    show ForensicDiscipline, ScientificStatus;
 import 'package:fe_search_core/fe_search_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -17,6 +18,7 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
 import '../../../domain/ports/billing_ports.dart';
+import '../../disciplines/discipline_strings.dart';
 import '../../evidence/evidence_strings.dart';
 
 /// Global Search.
@@ -40,6 +42,9 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
   Timer? _debounce;
   AppSearchResult? _result;
   String _query = '';
+
+  /// Tanlangan fan filtri (`null` — barcha fanlar).
+  ForensicDiscipline? _discipline;
 
   static const _debounceDuration = Duration(milliseconds: 150);
 
@@ -72,9 +77,20 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
       return;
     }
     final lang = Localizations.localeOf(context).languageCode;
-    final r = await ref.read(searchServiceProvider).search(q, lang: lang);
+    final r = await ref
+        .read(searchServiceProvider)
+        .search(q, lang: lang, discipline: _discipline);
     if (!mounted || q != _query) return;
-    setState(() => _result = r);
+    setState(() {
+      _result = r;
+      // Yangi so‘rovda bu fan natijasi bo‘lmasa, filtr o‘z-o‘zidan bekor.
+      _discipline = r.discipline;
+    });
+  }
+
+  void _selectDiscipline(ForensicDiscipline? d) {
+    setState(() => _discipline = d);
+    unawaited(_run(_query));
   }
 
   void _submit(String q) {
@@ -199,7 +215,11 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                   ] else if (result != null && result.isEmpty)
                     _NoResults(query: _query.trim())
                   else if (result != null)
-                    _Results(result: result, onOpen: _open),
+                    _Results(
+                      result: result,
+                      onOpen: _open,
+                      onDiscipline: _selectDiscipline,
+                    ),
                   const SizedBox(height: FeSpace.lg),
                   const _ExternalSearchBlock(),
                   const SizedBox(height: FeSpace.lg),
@@ -214,10 +234,15 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
 }
 
 class _Results extends ConsumerWidget {
-  const _Results({required this.result, required this.onOpen});
+  const _Results({
+    required this.result,
+    required this.onOpen,
+    required this.onDiscipline,
+  });
 
   final AppSearchResult result;
   final void Function(SearchGroup, SearchHit) onOpen;
+  final ValueChanged<ForensicDiscipline?> onDiscipline;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -256,6 +281,12 @@ class _Results extends ConsumerWidget {
     /// manba turi / dalil darajasi · review holati.
     String metaOf(SearchGroup g, SearchHit hit) {
       final parts = <String>[];
+      // Modda orqali bog‘langan metod (manbadagi «analysed_by»).
+      if (result.linkedVia[hit.entityId] case final src?) {
+        parts.add(
+          l.searchLinkedVia(library.byId(src)?.name.resolve(lang) ?? src),
+        );
+      }
       if (evidence.researchById(hit.entityId) case final r?) {
         parts
           ..add(l.researchKindName(r.kind))
@@ -323,6 +354,12 @@ class _Results extends ConsumerWidget {
               ),
             ],
           ),
+          if (result.disciplines.isNotEmpty)
+            _DisciplineFilter(
+              disciplines: result.disciplines,
+              selected: result.discipline,
+              onSelected: onDiscipline,
+            ),
           for (final g in SearchGroup.values)
             if (result.groups[g]!.isNotEmpty) ...[
               FeSectionHeader(groupTitle(g)),
@@ -359,6 +396,51 @@ class _Results extends ConsumerWidget {
                 ),
             ],
         ],
+      ),
+    );
+  }
+}
+
+/// Fan bo‘yicha filtr: faqat so‘rov natijasi bor fanlar.
+class _DisciplineFilter extends StatelessWidget {
+  const _DisciplineFilter({
+    required this.disciplines,
+    required this.selected,
+    required this.onSelected,
+  });
+
+  final List<ForensicDiscipline> disciplines;
+  final ForensicDiscipline? selected;
+  final ValueChanged<ForensicDiscipline?> onSelected;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    return Semantics(
+      label: l.searchDisciplineFilter,
+      container: true,
+      child: Padding(
+        padding: const EdgeInsets.only(top: FeSpace.xs),
+        child: SingleChildScrollView(
+          key: const Key('search.disciplines'),
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: [
+              for (final d in <ForensicDiscipline?>[null, ...disciplines])
+                Padding(
+                  padding: const EdgeInsets.only(right: FeSpace.xs),
+                  child: ChoiceChip(
+                    key: Key('search.discipline.${d?.code ?? 'all'}'),
+                    label: Text(
+                      d == null ? l.searchDisciplineAll : l.disciplineName(d),
+                    ),
+                    selected: selected == d,
+                    onSelected: (_) => onSelected(d),
+                  ),
+                ),
+            ],
+          ),
+        ),
       ),
     );
   }

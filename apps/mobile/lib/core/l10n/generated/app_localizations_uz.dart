@@ -5770,4 +5770,15 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get pubConfirm => 'Tasdiqlash';
+
+  @override
+  String get searchDisciplineFilter => 'Natijalarni fan bo‘yicha saralash';
+
+  @override
+  String get searchDisciplineAll => 'Barcha fanlar';
+
+  @override
+  String searchLinkedVia(String name) {
+    return '$name bilan bog‘liq (manbada tilga olingan)';
+  }
 }
