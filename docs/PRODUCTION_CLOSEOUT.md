@@ -49,3 +49,10 @@ o‘chiq (`rewards_enabled=false`) — kredit berilmaydi.
 
 Android upload keystore, Apple sertifikat/profil, store ID tasdig‘i.
 DEBUG build’lar store’ga yuklanmaydi.
+
+## 2026-10-08 — Expert Publications migratsiyasi (egasi ruxsati bilan)
+- Oldingi holat qaydi: 6 migratsiya, 18 public jadval (account_roles 1, ai_usage 21, access_grants 1), `account_role` = identity_admin, scope_grantor.
+- Qo‘llandi: `publications` (repo fayli `20261008000000_publications.sql`). Faqat yangi obyektlar: 4 jadval (RLS, to‘g‘ridan-to‘g‘ri huquq yo‘q), 12 funksiya, `account_role` ga `publication_moderator` qiymati.
+- Keyingi holat: mavjud jadvallar va yozuvlar o‘zgarmagan; anon faqat `list_published` ni chaqira oladi.
+- Smoke (tranzaksiya qaytarilgan, ma’lumot qolmagan): SUBMITTED, can_moderate=true (identity_admin), o‘z maqolasini moderatsiya — FORBIDDEN_OWN.
+- Rollback: migratsiya fayli boshidagi izohda.
