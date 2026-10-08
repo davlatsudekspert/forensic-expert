@@ -58,6 +58,10 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
       ref.watch(accessProvider),
     );
     final bookmarks = [for (final id in data.favorites) ?knowledge.byId(id)];
+    // Eski namuna to‘plamlari production’da bo‘sh: plitkalar manbali
+    // o‘quv rejimiga olib boradi.
+    final noQuiz = repo.quiz().isEmpty;
+    final noCards = repo.flashcards().isEmpty;
 
     return Scaffold(
       appBar: AppBar(title: Text(l.moduleLearn)),
@@ -254,19 +258,21 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
                         const Key('learn.quiz'),
                         Icons.quiz_outlined,
                         l.learnQuiz,
-                        () => context.push(Routes.quiz),
+                        () => context.push(noQuiz ? Routes.study : Routes.quiz),
                       ),
                       (
                         const Key('learn.flashcards'),
                         Icons.style_outlined,
                         l.learnFlashcards,
-                        () => context.push(Routes.flashcards),
+                        () => context.push(
+                          noCards ? Routes.study : Routes.flashcards,
+                        ),
                       ),
                       (
                         const Key('learn.exam'),
                         Icons.timer_outlined,
                         l.learnExam,
-                        () => context.push(Routes.exam),
+                        () => context.push(noQuiz ? Routes.study : Routes.exam),
                       ),
                     ],
                   ),

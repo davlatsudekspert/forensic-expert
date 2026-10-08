@@ -19,6 +19,7 @@ void main() {
     Map<String, LeitnerCard>? progress,
     ThemeMode theme = ThemeMode.light,
     String lang = 'en',
+    bool fixtures = true,
   }) async {
     final store = InMemoryStudyProgressStore(progress);
     await pumpApp(
@@ -29,6 +30,7 @@ void main() {
         mode: UserMode.student,
       ),
       initialLocation: route,
+      testFixtures: fixtures,
       overrides: [
         studyCatalogProvider.overrideWithValue(testStudyCatalog()),
         studyProgressStoreProvider.overrideWithValue(store),
@@ -58,6 +60,16 @@ void main() {
     );
     expect(find.text('4 cards'), findsOneWidget);
     expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('namuna to‘plamlari bo‘sh: Test/Kartochkalar/Imtihon '
+      'o‘quv rejimini ochadi', (tester) async {
+    for (final key in ['learn.quiz', 'learn.flashcards', 'learn.exam']) {
+      // Production: namuna (fixture) to‘plamlari yo‘q.
+      await open(tester, Routes.learn, fixtures: false);
+      await tap(tester, key);
+      expect(find.byKey(const Key('study.deck.$topicDeck')), findsOneWidget);
+    }
   });
 
   testWidgets('kartochka aylanadi, manba ko‘rinadi, Leitner saqlanadi', (
