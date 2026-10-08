@@ -10,13 +10,8 @@ SearchTerm _t(
   String term, [
   TermKind kind = TermKind.localized,
   String? lang,
-]) => SearchTerm(
-  entityId: id,
-  category: cat,
-  term: term,
-  kind: kind,
-  lang: lang,
-);
+]) =>
+    SearchTerm(entityId: id, category: cat, term: term, kind: kind, lang: lang);
 
 void main() {
   group('QuerySynonyms', () {
@@ -79,10 +74,10 @@ void main() {
     final index = MultiTokenSearchIndex(const []);
 
     test('so‘zlarga bo‘linadi, yordamchi so‘zlar tashlanadi', () {
-      expect(
-        index.plan('methanol in blood').map((s) => s.text),
-        ['methanol', 'blood'],
-      );
+      expect(index.plan('methanol in blood').map((s) => s.text), [
+        'methanol',
+        'blood',
+      ]);
       expect(index.plan('of').map((s) => s.text), ['of']);
     });
 
@@ -96,22 +91,51 @@ void main() {
   group('MultiTokenSearchIndex', () {
     final index = MultiTokenSearchIndex([
       ...terminologyTestData,
-      _t('G-ETOH', SearchCategory.guideline, 'Ethanol in blood by GC', //
-          TermKind.localized, 'en'),
-      _t('G-ETOH', SearchCategory.guideline, 'qondagi alkogol', //
-          TermKind.synonym, 'uz'),
-      _t('G-ETOH', SearchCategory.guideline, 'HS-GC-FID', //
-          TermKind.synonym),
+      _t(
+        'G-ETOH',
+        SearchCategory.guideline,
+        'Ethanol in blood by GC', //
+        TermKind.localized,
+        'en',
+      ),
+      _t(
+        'G-ETOH',
+        SearchCategory.guideline,
+        'qondagi alkogol', //
+        TermKind.synonym,
+        'uz',
+      ),
+      _t(
+        'G-ETOH',
+        SearchCategory.guideline,
+        'HS-GC-FID', //
+        TermKind.synonym,
+      ),
       _t('M-HS', SearchCategory.method, 'Headspace gas chromatography'),
       _t('M-TLC', SearchCategory.method, 'Thin-layer chromatography'),
       _t('M-TLC', SearchCategory.method, 'ТСХ', TermKind.abbreviation, 'ru'),
       _t('M-LC', SearchCategory.method, 'SX-MS', TermKind.abbreviation, 'uz'),
-      _t('S-METH', SearchCategory.substance, 'Methanol', //
-          TermKind.canonical, 'en'),
-      _t('SP-BLOOD', SearchCategory.specimen, 'Blood', //
-          TermKind.localized, 'en'),
-      _t('SP-URINE', SearchCategory.specimen, 'Urine', //
-          TermKind.localized, 'en'),
+      _t(
+        'S-METH',
+        SearchCategory.substance,
+        'Methanol', //
+        TermKind.canonical,
+        'en',
+      ),
+      _t(
+        'SP-BLOOD',
+        SearchCategory.specimen,
+        'Blood', //
+        TermKind.localized,
+        'en',
+      ),
+      _t(
+        'SP-URINE',
+        SearchCategory.specimen,
+        'Urine', //
+        TermKind.localized,
+        'en',
+      ),
     ]);
 
     Future<List<SearchHit>> all(String q, {String? lang}) async {
@@ -119,8 +143,9 @@ void main() {
       return r.all..sort((a, b) => b.score.compareTo(a.score));
     }
 
-    Future<List<String>> ids(String q) async =>
-        [for (final h in await all(q)) h.entityId];
+    Future<List<String>> ids(String q) async => [
+      for (final h in await all(q)) h.entityId,
+    ];
 
     test('kundalik «alkogol» / «spirt» etanolni topadi (3 tilda)', () async {
       for (final q in ['alkogol', 'spirt', 'алкоголь', 'спирт', 'alcohol']) {
@@ -164,11 +189,14 @@ void main() {
       }
     });
 
-    test('«methanol GC»: ikkala so‘z ham mos bo‘lmasa ham natija bor', () async {
-      final found = await ids('methanol GC');
-      expect(found, contains('S-METH'));
-      expect(found, contains('G-ETOH'));
-    });
+    test(
+      '«methanol GC»: ikkala so‘z ham mos bo‘lmasa ham natija bor',
+      () async {
+        final found = await ids('methanol GC');
+        expect(found, contains('S-METH'));
+        expect(found, contains('G-ETOH'));
+      },
+    );
 
     test('to‘liq ibora uchramasa ham bo‘sh emas', () async {
       expect(await ids('urine zzzzqqq'), contains('SP-URINE'));

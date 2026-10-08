@@ -35,18 +35,16 @@ void main() {
     );
   });
 
-  List<String> ids(AppSearchResult r, SearchGroup g) =>
-      [for (final h in r.groups[g]!) h.entityId];
+  List<String> ids(AppSearchResult r, SearchGroup g) => [
+    for (final h in r.groups[g]!) h.entityId,
+  ];
 
   group('sinonimlar (UZ/RU/EN)', () {
     for (final q in ['alkogol', 'spirt', 'алкоголь', 'спирт', 'alcohol']) {
       test('«$q» → etanol moddasi, GX metodi va yo‘riqnoma', () async {
         final r = await service.search(q);
         expect(ids(r, SearchGroup.substances), contains('ethanol'));
-        expect(
-          ids(r, SearchGroup.methods),
-          contains('method-headspace-gc'),
-        );
+        expect(ids(r, SearchGroup.methods), contains('method-headspace-gc'));
         expect(
           ids(r, SearchGroup.guidelines),
           contains('guideline.chem.ethanol_gc'),

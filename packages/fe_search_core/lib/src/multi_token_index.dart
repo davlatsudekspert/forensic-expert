@@ -41,9 +41,7 @@ class MultiTokenSearchIndex implements SearchIndex {
     this.ranker = const SearchRanker(),
     QuerySynonyms? synonyms,
   }) : synonyms = synonyms ?? QuerySynonyms.standard,
-       _terms = [
-         for (final t in terms) _PreparedTerm.of(t, ranker.normalizer),
-       ];
+       _terms = [for (final t in terms) _PreparedTerm.of(t, ranker.normalizer)];
 
   final SearchRanker ranker;
   final QuerySynonyms synonyms;
@@ -128,11 +126,7 @@ class MultiTokenSearchIndex implements SearchIndex {
   }
 
   /// Bitta so‘rov qismi va bitta termin orasidagi eng yaxshi moslik.
-  _SlotMatch? _matchAlt(
-    _Alt alt,
-    _PreparedTerm p,
-    String? preferredLang,
-  ) {
+  _SlotMatch? _matchAlt(_Alt alt, _PreparedTerm p, String? preferredLang) {
     _SlotMatch? best;
     void offer(MatchType type, double quality, double factor) {
       final s =
@@ -189,9 +183,7 @@ class MultiTokenSearchIndex implements SearchIndex {
       var ok = true;
       for (var k = 0; k < needle.length && ok; k++) {
         final last = k == needle.length - 1;
-        ok = last
-            ? hay[s + k].startsWith(needle[k])
-            : hay[s + k] == needle[k];
+        ok = last ? hay[s + k].startsWith(needle[k]) : hay[s + k] == needle[k];
       }
       if (ok) return s;
     }

@@ -355,10 +355,9 @@ class AppSearchService {
     final methodNames = <String, Map<String, String>>{};
     for (final t in terms) {
       if (t.category != SearchCategory.method || t.lang == null) continue;
-      methodNames.putIfAbsent(t.entityId, () => {}).putIfAbsent(
-        t.lang!,
-        () => t.term,
-      );
+      methodNames
+          .putIfAbsent(t.entityId, () => {})
+          .putIfAbsent(t.lang!, () => t.term);
     }
     final linked = <String, List<LinkedSearchTarget>>{};
     for (final link in links) {
@@ -367,9 +366,7 @@ class AppSearchService {
       if (names == null) continue;
       linked
           .putIfAbsent(link.fromId, () => [])
-          .add(
-            LinkedSearchTarget(link.toId, SearchCategory.method, names),
-          );
+          .add(LinkedSearchTarget(link.toId, SearchCategory.method, names));
     }
     return AppSearchService(
       MultiTokenSearchIndex(terms),
@@ -463,9 +460,7 @@ class AppSearchService {
     final applied = available.contains(discipline) ? discipline : null;
     final shown = applied == null
         ? hits.values
-        : hits.values.where(
-            (h) => disciplinesOf(h.entityId).contains(applied),
-          );
+        : hits.values.where((h) => disciplinesOf(h.entityId).contains(applied));
     final capped = const SearchRanker().group(shown, limitPerCategory);
     final groups = <SearchGroup, List<SearchHit>>{
       for (final g in SearchGroup.values) g: <SearchHit>[],
