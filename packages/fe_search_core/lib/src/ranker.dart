@@ -31,49 +31,70 @@ class SearchRanker {
     if (queryKey.isEmpty) return null;
     final termKey = normalizer.searchKey(term.term);
     if (termKey.isEmpty) return null;
+    final m = match(termKey, queryKey);
+    if (m == null) return null;
+    return SearchHit(
+      entityId: term.entityId,
+      category: term.category,
+      matchedTerm: term.term,
+      matchType: m.type,
+      score: weigh(m.type, m.quality, term, preferredLang: preferredLang),
+    );
+  }
 
-    MatchType? type;
-    var quality = 1.0;
-    if (termKey == queryKey) {
-      type = MatchType.exact;
-    } else if (queryKey.length >= 2 && termKey.startsWith(queryKey)) {
-      type = MatchType.prefix;
-      quality = queryKey.length / termKey.length;
-    } else {
-      final allowed = Similarity.allowedEdits(queryKey.length);
-      if (allowed > 0) {
-        // So‘rov termin boshiga o‘xshashmi (yozilayotgan so‘z) yoki butun terminga.
-        final head = termKey.length > queryKey.length + allowed
-            ? termKey.substring(0, queryKey.length)
-            : termKey;
-        final distance = Similarity.editDistance(queryKey, head);
-        if (distance <= allowed) {
-          type = MatchType.fuzzy;
-          quality = 1 - distance / (queryKey.length + 1);
-          // Faqat boshi o‘xshash uzunroq termin to‘liq o‘xshash qisqa
-          // termindan past turadi (masalan «fentanly» → «Fentanyl» >
-          // «Fentanyl immunoassay»).
-          if (head.length < termKey.length) {
-            quality *= head.length / termKey.length;
-          }
-        }
-      }
+  /// Ikki kalit (termin va so‘rov) orasidagi moslik turi va sifati (0..1).
+  ///
+  /// * [fuzzy] — typo-tolerantlikka ruxsat (sinonim kengaytmalarida
+  ///   o‘chiriladi: ular to‘g‘ri yozilgan).
+  /// * [minPrefix] — prefiks moslik uchun so‘rov kalitining minimal
+  ///   uzunligi; undan qisqa so‘rov faqat aniq mos keladi.
+  ({MatchType type, double quality})? match(
+    String termKey,
+    String queryKey, {
+    bool fuzzy = true,
+    int minPrefix = 2,
+  }) {
+    if (termKey.isEmpty || queryKey.isEmpty) return null;
+    if (termKey == queryKey) return (type: MatchType.exact, quality: 1.0);
+    if (queryKey.length >= minPrefix && termKey.startsWith(queryKey)) {
+      return (
+        type: MatchType.prefix,
+        quality: queryKey.length / termKey.length,
+      );
     }
-    if (type == null) return null;
+    if (!fuzzy) return null;
+    final allowed = Similarity.allowedEdits(queryKey.length);
+    if (allowed == 0) return null;
+    // So‘rov termin boshiga o‘xshashmi (yozilayotgan so‘z) yoki butun terminga.
+    final head = termKey.length > queryKey.length + allowed
+        ? termKey.substring(0, queryKey.length)
+        : termKey;
+    final distance = Similarity.editDistance(queryKey, head);
+    if (distance > allowed) return null;
+    var quality = 1 - distance / (queryKey.length + 1);
+    // Faqat boshi o‘xshash uzunroq termin to‘liq o‘xshash qisqa
+    // termindan past turadi (masalan «fentanly» → «Fentanyl» >
+    // «Fentanyl immunoassay»).
+    if (head.length < termKey.length) {
+      quality *= head.length / termKey.length;
+    }
+    return (type: MatchType.fuzzy, quality: quality);
+  }
 
+  /// Moslik turi, sifati, termin turi/og‘irligi va til afzalligidan ball.
+  double weigh(
+    MatchType type,
+    double quality,
+    SearchTerm term, {
+    String? preferredLang,
+  }) {
     var s =
         _matchBase[type]! *
         (0.6 + 0.4 * quality) *
         _kindWeight[term.kind]! *
         term.weight;
     if (preferredLang != null && term.lang == preferredLang) s *= 1.05;
-    return SearchHit(
-      entityId: term.entityId,
-      category: term.category,
-      matchedTerm: term.term,
-      matchType: type,
-      score: s,
-    );
+    return s;
   }
 
   /// Bir yozuvning eng yaxshi mosligini qoldiradi va kategoriyalarga ajratadi.

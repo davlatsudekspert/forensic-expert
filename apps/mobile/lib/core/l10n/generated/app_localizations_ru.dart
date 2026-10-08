@@ -5804,4 +5804,15 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get aiStatusSignIn => 'Нужен вход';
+
+  @override
+  String get searchDisciplineFilter => 'Фильтр результатов по дисциплине';
+
+  @override
+  String get searchDisciplineAll => 'Все дисциплины';
+
+  @override
+  String searchLinkedVia(String name) {
+    return 'Связано с: $name (упомянуто в источнике)';
+  }
 }

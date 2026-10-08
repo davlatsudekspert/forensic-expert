@@ -7530,5 +7530,22 @@
   "aiStatusSignIn": "Sign-in required",
   "@aiStatusSignIn": {
     "description": "Header status chip."
+  },
+  "searchDisciplineFilter": "Filter results by discipline",
+  "@searchDisciplineFilter": {
+    "description": "Semantics label of the discipline filter chip row on the search screen."
+  },
+  "searchDisciplineAll": "All disciplines",
+  "@searchDisciplineAll": {
+    "description": "Chip: no discipline filter."
+  },
+  "searchLinkedVia": "Linked to {name} (mentioned in source)",
+  "@searchLinkedVia": {
+    "description": "Result meta: a method shown because a matching substance is linked to it in the sources.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
   }
 }

@@ -10466,6 +10466,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Sign-in required'**
   String get aiStatusSignIn;
+
+  /// Semantics label of the discipline filter chip row on the search screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Filter results by discipline'**
+  String get searchDisciplineFilter;
+
+  /// Chip: no discipline filter.
+  ///
+  /// In en, this message translates to:
+  /// **'All disciplines'**
+  String get searchDisciplineAll;
+
+  /// Result meta: a method shown because a matching substance is linked to it in the sources.
+  ///
+  /// In en, this message translates to:
+  /// **'Linked to {name} (mentioned in source)'**
+  String searchLinkedVia(String name);
 }
 
 class _AppLocalizationsDelegate

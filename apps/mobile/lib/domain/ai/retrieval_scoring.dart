@@ -10,14 +10,20 @@
 ///   so‘rovdagi qo‘shimchali so‘z hujjatdagi uzun o‘zakdan boshlanadi;
 /// * kam uchraydigan so‘zlar og‘irroq (IDF), minimal bo‘sag‘a bor;
 /// * asosiy ilmiy atamalar uchun UZ/RU → EN kengaytma (manbalar ko‘pincha
-///   inglizcha).
+///   inglizcha). Butun so‘z ekvivalentlari (`alkogol` → `ethanol`,
+///   `metanol` → `methanol`) Global Search bilan umumiy
+///   `fe_search_core` `QuerySynonyms` ro‘yxatidan olinadi; bu yerdagi
+///   o‘zak (prefiks) xaritasi qo‘shimchali shakllar uchun qoladi.
 library;
 
 import 'dart:math' as math;
 
+import 'package:fe_search_core/fe_search_core.dart' show QuerySynonyms;
+
 abstract final class RetrievalText {
   static final _split = RegExp(r'[^\p{L}\p{N}]+', unicode: true);
   static final _apostrophes = RegExp('[\'‘’ʻʼ`´]');
+  static final _latinWord = RegExp(r'^[a-z]{3,}$');
 
   /// Savol va umumiy soha so‘zlari — o‘zak prefikslari (≥3 belgi).
   static const _stopStems = [
@@ -107,6 +113,12 @@ abstract final class RetrievalText {
         in s.toLowerCase().replaceAll(_apostrophes, '').split(_split)) {
       if (t.length < 3 || _isStop(t)) continue;
       out.add(t);
+      // Global Search bilan umumiy lingvistik ekvivalentlar (fe_search_core):
+      // faqat bitta so‘zli lotin shakllar (hujjat tokenlari bilan mos).
+      for (final e in QuerySynonyms.standard.equivalentsOf(t)) {
+        final w = e.toLowerCase();
+        if (_latinWord.hasMatch(w)) out.add(w);
+      }
       for (final e in _expansions.entries) {
         final stem = e.key.replaceAll(_apostrophes, '');
         if (t.startsWith(stem)) out.addAll(e.value);

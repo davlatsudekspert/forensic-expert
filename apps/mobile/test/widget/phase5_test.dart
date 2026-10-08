@@ -317,6 +317,10 @@ void main() {
     await tester.pump(const Duration(milliseconds: 400));
     await tester.pumpAndSettle();
     final hit = find.byIcon(Icons.menu_book_outlined).first;
+    // Ko‘p so‘zli so‘rov bitta so‘zga mos yozuvlarni ham ko‘rsatadi —
+    // manbalar guruhi ekrandan pastda bo‘lishi mumkin.
+    await tester.ensureVisible(hit);
+    await tester.pumpAndSettle();
     await tester.tap(hit);
     await tester.pumpAndSettle();
     expect(
