@@ -26,8 +26,6 @@ const _rainey =
     'Rainey P.M. (1993). Relation between serum and whole-blood ethanol '
     'concentrations. Clin Chem 39:2288–2292.';
 
-String _p(double v) => v.toStringAsFixed(2);
-
 String _errorFor(AppLocalizations l, CalcInputException e) => switch (e.code) {
   'weight_out_of_range' => l.calcErrorWeight,
   'time_out_of_range' => l.calcErrorTime,
@@ -58,18 +56,36 @@ class WidmarkView extends StatefulWidget {
   State<WidmarkView> createState() => _WidmarkState();
 }
 
-class _WidmarkState extends State<WidmarkView> {
+class _WidmarkState extends State<WidmarkView> with CalcInputsMixin {
   final _calc = const WidmarkCalculator();
   final _weight = TextEditingController();
   final _height = TextEditingController();
   final _hours = TextEditingController();
-  final _drinks = <(TextEditingController, TextEditingController)>[
-    (TextEditingController(), TextEditingController()),
-  ];
+  final _drinks = <(TextEditingController, TextEditingController)>[];
   BiologicalSex _sex = BiologicalSex.male;
   List<(String, String)>? _result;
   List<String> _warnings = const [];
   String? _error;
+
+  @override
+  void initState() {
+    super.initState();
+    watchInputs([_weight, _height, _hours]);
+    _addDrink();
+  }
+
+  void _addDrink() {
+    final d = (TextEditingController(), TextEditingController());
+    watchInputs([d.$1, d.$2]);
+    _drinks.add(d);
+  }
+
+  @override
+  void clearOutput() {
+    _result = null;
+    _warnings = const [];
+    _error = null;
+  }
 
   @override
   void dispose() {
@@ -84,14 +100,20 @@ class _WidmarkState extends State<WidmarkView> {
   }
 
   void _run(AppLocalizations l) => setState(() {
-    _result = null;
-    _warnings = const [];
-    _error = null;
-    final w = _num(_weight), t = _num(_hours);
-    final h = _height.text.trim().isEmpty ? null : _num(_height);
+    clearOutput();
+    if (calcAnyEmpty([
+      _weight,
+      _hours,
+      for (final (v, a) in _drinks) ...[v, a],
+    ])) {
+      _error = l.calcErrorRequired;
+      return;
+    }
+    final w = calcParse(_weight), t = calcParse(_hours);
+    final h = _height.text.trim().isEmpty ? null : calcParse(_height);
     final drinks = <Drink>[];
     for (final (v, a) in _drinks) {
-      final vol = _num(v), abv = _num(a);
+      final vol = calcParse(v), abv = calcParse(a);
       if (vol == null || abv == null) {
         _error = l.calcErrorPositive;
         return;
@@ -116,11 +138,15 @@ class _WidmarkState extends State<WidmarkView> {
       );
       final v = r.value;
       _result = [
-        (l.calcWidmarkEthanol, '${v.ethanolGrams.toStringAsFixed(1)} g'),
-        (l.calcWidmarkR, v.r.toStringAsFixed(3)),
-        (l.calcWidmarkPeak, '${_p(v.peakPromille)} ‰'),
-        (l.calcWidmarkMin, '${_p(v.minPromille)} ‰'),
-        (l.calcWidmarkMax, '${_p(v.maxPromille)} ‰'),
+        (
+          l.calcEstimatedRange,
+          '${l.fmtFixed(v.minPromille, 2)}–${l.fmtFixed(v.maxPromille, 2)} ‰',
+        ),
+        (l.calcWidmarkMin, '${l.fmtFixed(v.minPromille, 2)} ‰'),
+        (l.calcWidmarkMax, '${l.fmtFixed(v.maxPromille, 2)} ‰'),
+        (l.calcWidmarkPeak, '${l.fmtFixed(v.peakPromille, 2)} ‰'),
+        (l.calcWidmarkEthanol, '${l.fmtFixed(v.ethanolGrams, 1)} g'),
+        (l.calcWidmarkR, l.fmtFixed(v.r, 3)),
       ];
       _warnings = [for (final w in r.warnings) _warningFor(l, w)];
     } on CalcInputException catch (e) {
@@ -131,6 +157,9 @@ class _WidmarkState extends State<WidmarkView> {
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
+    final sexLabel = _sex == BiologicalSex.male
+        ? l.calcSexMale
+        : l.calcSexFemale;
     return CalcScaffold(
       descriptor: _calc.descriptor,
       inputs: [
@@ -150,7 +179,7 @@ class _WidmarkState extends State<WidmarkView> {
             ),
           ],
           onChanged: (s) {
-            if (s != null) setState(() => _sex = s);
+            if (s != null) changed(() => _sex = s);
           },
         ),
         _NumberField(
@@ -176,7 +205,7 @@ class _WidmarkState extends State<WidmarkView> {
                 IconButton(
                   tooltip: l.calcRemoveDrink,
                   icon: const Icon(Icons.close),
-                  onPressed: () => setState(() {
+                  onPressed: () => changed(() {
                     final (v, a) = _drinks.removeAt(i);
                     v.dispose();
                     a.dispose();
@@ -184,26 +213,31 @@ class _WidmarkState extends State<WidmarkView> {
                 ),
             ],
           ),
-          _NumberField(
-            label: l.calcDrinkVolume,
-            controller: _drinks[i].$1,
-            k: 'calc.drink.$i.volume',
-          ),
-          _NumberField(
-            label: l.calcDrinkAbv,
-            controller: _drinks[i].$2,
-            k: 'calc.drink.$i.abv',
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: _NumberField(
+                  label: l.calcDrinkVolume,
+                  controller: _drinks[i].$1,
+                  k: 'calc.drink.$i.volume',
+                ),
+              ),
+              const SizedBox(width: FeSpace.xs),
+              Expanded(
+                child: _NumberField(
+                  label: l.calcDrinkAbv,
+                  controller: _drinks[i].$2,
+                  k: 'calc.drink.$i.abv',
+                ),
+              ),
+            ],
           ),
         ],
         if (_drinks.length < 6)
           OutlinedButton.icon(
             key: const Key('calc.addDrink'),
-            onPressed: () => setState(
-              () => _drinks.add((
-                TextEditingController(),
-                TextEditingController(),
-              )),
-            ),
+            onPressed: () => changed(_addDrink),
             icon: const Icon(Icons.add),
             label: Text(l.calcAddDrink),
           ),
@@ -218,6 +252,17 @@ class _WidmarkState extends State<WidmarkView> {
       result: _result,
       warnings: _warnings,
       error: _error,
+      copyInputs: [
+        (l.calcSex, sexLabel),
+        (l.calcBodyWeight, _weight.text),
+        (l.calcHeightOptional, _height.text),
+        for (var i = 0; i < _drinks.length; i++)
+          (
+            l.calcDrinkN('${i + 1}'),
+            '${_drinks[i].$1.text} mL × ${_drinks[i].$2.text} %',
+          ),
+        (l.calcHoursSinceStart, _hours.text),
+      ],
       assumptions: [
         l.calcWidmarkAssumptionR,
         l.calcWidmarkAssumptionDeficit,
@@ -238,14 +283,28 @@ class BackCalculationView extends StatefulWidget {
   State<BackCalculationView> createState() => _BackCalcState();
 }
 
-class _BackCalcState extends State<BackCalculationView> {
+class _BackCalcState extends State<BackCalculationView> with CalcInputsMixin {
   final _calc = const BackCalculationCalculator();
   final _bac = TextEditingController();
   final _dt = TextEditingController();
   final _end = TextEditingController();
+  EthanolUnit _unit = EthanolUnit.promille;
   List<(String, String)>? _result;
   List<String> _warnings = const [];
   String? _error;
+
+  @override
+  void initState() {
+    super.initState();
+    watchInputs([_bac, _dt, _end]);
+  }
+
+  @override
+  void clearOutput() {
+    _result = null;
+    _warnings = const [];
+    _error = null;
+  }
 
   @override
   void dispose() {
@@ -256,11 +315,13 @@ class _BackCalcState extends State<BackCalculationView> {
   }
 
   void _run(AppLocalizations l) => setState(() {
-    _result = null;
-    _warnings = const [];
-    _error = null;
-    final c = _num(_bac), dt = _num(_dt);
-    final end = _end.text.trim().isEmpty ? null : _num(_end);
+    clearOutput();
+    if (calcAnyEmpty([_bac, _dt])) {
+      _error = l.calcErrorRequired;
+      return;
+    }
+    final c = calcParse(_bac), dt = calcParse(_dt);
+    final end = _end.text.trim().isEmpty ? null : calcParse(_end);
     if (c == null ||
         dt == null ||
         (_end.text.trim().isNotEmpty && end == null)) {
@@ -270,14 +331,20 @@ class _BackCalcState extends State<BackCalculationView> {
     try {
       final r = _calc.calculate(
         BackCalculationInput(
-          measuredPromille: c,
+          measured: c,
+          unit: _unit,
           hoursBetweenEventAndSampling: dt,
           hoursFromDrinkingEndToEvent: end,
         ),
       );
+      final u = r.value.unit.symbol;
       _result = [
-        (l.calcBackMin, '${_p(r.value.minPromille)} ‰'),
-        (l.calcBackMax, '${_p(r.value.maxPromille)} ‰'),
+        (
+          l.calcEstimatedRange,
+          '${l.fmtFixed(r.value.min, 2)}–${l.fmtFixed(r.value.max, 2)} $u',
+        ),
+        (l.calcBackMin, '${l.fmtFixed(r.value.min, 2)} $u'),
+        (l.calcBackMax, '${l.fmtFixed(r.value.max, 2)} $u'),
       ];
       _warnings = [for (final w in r.warnings) _warningFor(l, w)];
     } on CalcInputException catch (e) {
@@ -288,10 +355,43 @@ class _BackCalcState extends State<BackCalculationView> {
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
+    const formula = 'c₀ = cₜ + β·Δt;  β = 0.10…0.25 g/L/h;  ‰: β ÷ 1.055';
     return CalcScaffold(
       descriptor: _calc.descriptor,
       inputs: [
-        _NumberField(label: l.calcBacMeasured, controller: _bac, k: 'calc.bac'),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+              flex: 3,
+              child: _NumberField(
+                label: l.calcBacMeasured,
+                controller: _bac,
+                k: 'calc.bac',
+              ),
+            ),
+            const SizedBox(width: FeSpace.xs),
+            Expanded(
+              flex: 2,
+              child: DropdownButtonFormField<EthanolUnit>(
+                key: const Key('calc.bacUnit'),
+                initialValue: _unit,
+                isExpanded: true,
+                decoration: InputDecoration(labelText: l.calcUnit),
+                items: [
+                  for (final u in const [
+                    EthanolUnit.promille,
+                    EthanolUnit.gramPerLiter,
+                  ])
+                    DropdownMenuItem(value: u, child: Text(u.symbol)),
+                ],
+                onChanged: (u) {
+                  if (u != null) changed(() => _unit = u);
+                },
+              ),
+            ),
+          ],
+        ),
         _NumberField(
           label: l.calcHoursEventToSample,
           controller: _dt,
@@ -304,10 +404,15 @@ class _BackCalcState extends State<BackCalculationView> {
         ),
       ],
       onCalculate: () => _run(l),
-      formula: 'c₀ = cₜ + β·Δt,  β = 0.10…0.25',
+      formula: formula,
       result: _result,
       warnings: _warnings,
       error: _error,
+      copyInputs: [
+        (l.calcBacMeasured, '${_bac.text} ${_unit.symbol}'),
+        (l.calcHoursEventToSample, _dt.text),
+        (l.calcHoursDrinkEndOptional, _end.text),
+      ],
       assumptions: [l.calcBackAssumptionLinear, l.calcBackAssumptionBeta],
       limitations: [l.calcBackLimitation],
       references: _widmarkRefs.sublist(2),
@@ -324,16 +429,35 @@ class EthanolUnitsView extends StatefulWidget {
   State<EthanolUnitsView> createState() => _EthanolUnitsState();
 }
 
-class _EthanolUnitsState extends State<EthanolUnitsView> {
+class _EthanolUnitsState extends State<EthanolUnitsView> with CalcInputsMixin {
   final _calc = const EthanolUnitsCalculator();
   final _value = TextEditingController();
-  final _ratio = TextEditingController(
-    text: EthanolUnitsCalculator.defaultSerumBloodRatio.toString(),
-  );
+  late final _ratio = TextEditingController();
   EthanolUnit _unit = EthanolUnit.promille;
   EthanolMatrix _matrix = EthanolMatrix.wholeBlood;
   List<(String, String)>? _result;
   String? _error;
+
+  @override
+  void initState() {
+    super.initState();
+    watchInputs([_value, _ratio]);
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (_ratio.text.isEmpty) {
+      _ratio.text = AppLocalizations.of(context)
+          .fmtNum(EthanolUnitsCalculator.defaultSerumBloodRatio);
+    }
+  }
+
+  @override
+  void clearOutput() {
+    _result = null;
+    _error = null;
+  }
 
   @override
   void dispose() {
@@ -343,9 +467,12 @@ class _EthanolUnitsState extends State<EthanolUnitsView> {
   }
 
   void _run(AppLocalizations l) => setState(() {
-    _result = null;
-    _error = null;
-    final v = _num(_value), q = _num(_ratio);
+    clearOutput();
+    if (calcAnyEmpty([_value, if (_matrix == EthanolMatrix.serum) _ratio])) {
+      _error = l.calcErrorRequired;
+      return;
+    }
+    final v = calcParse(_value), q = calcParse(_ratio);
     if (v == null || q == null) {
       _error = l.calcErrorPositive;
       return;
@@ -362,7 +489,7 @@ class _EthanolUnitsState extends State<EthanolUnitsView> {
       _result = [
         if (_matrix == EthanolMatrix.serum) (l.calcEthanolBloodHeader, ''),
         for (final u in EthanolUnit.values)
-          (u.symbol, formatNumber(r.value.wholeBlood[u]!)),
+          (u.symbol, l.fmtNum(r.value.wholeBlood[u]!)),
       ];
     } on CalcInputException catch (e) {
       _error = _errorFor(l, e);
@@ -372,22 +499,31 @@ class _EthanolUnitsState extends State<EthanolUnitsView> {
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
+    const formula =
+        'g/L = ‰ · 1.055;  mmol/L = g/L ÷ 46.07 · 1000;  '
+        'c(blood) = c(serum) ÷ Q';
     return CalcScaffold(
       descriptor: _calc.descriptor,
       inputs: [
-        _NumberField(label: l.calcValue, controller: _value, k: 'calc.value'),
-        DropdownButtonFormField<EthanolUnit>(
-          key: const Key('calc.ethanolUnit'),
-          initialValue: _unit,
-          isExpanded: true,
-          decoration: InputDecoration(labelText: l.calcUnit),
-          items: [
-            for (final u in EthanolUnit.values)
-              DropdownMenuItem(value: u, child: Text(u.symbol)),
-          ],
-          onChanged: (u) {
-            if (u != null) setState(() => _unit = u);
-          },
+        _ValueWithUnit(
+          field: _NumberField(
+            label: l.calcValue,
+            controller: _value,
+            k: 'calc.value',
+          ),
+          unit: DropdownButtonFormField<EthanolUnit>(
+            key: const Key('calc.ethanolUnit'),
+            initialValue: _unit,
+            isExpanded: true,
+            decoration: InputDecoration(labelText: l.calcUnit),
+            items: [
+              for (final u in EthanolUnit.values)
+                DropdownMenuItem(value: u, child: Text(u.symbol)),
+            ],
+            onChanged: (u) {
+              if (u != null) changed(() => _unit = u);
+            },
+          ),
         ),
         DropdownButtonFormField<EthanolMatrix>(
           key: const Key('calc.matrix'),
@@ -405,7 +541,7 @@ class _EthanolUnitsState extends State<EthanolUnitsView> {
             ),
           ],
           onChanged: (m) {
-            if (m != null) setState(() => _matrix = m);
+            if (m != null) changed(() => _matrix = m);
           },
         ),
         if (_matrix == EthanolMatrix.serum)
@@ -416,11 +552,20 @@ class _EthanolUnitsState extends State<EthanolUnitsView> {
           ),
       ],
       onCalculate: () => _run(l),
-      formula:
-          'g/L = ‰ · 1.055;  mmol/L = g/L ÷ 46.07 · 1000;  '
-          'c(blood) = c(serum) ÷ Q',
+      formula: formula,
       result: _result,
       error: _error,
+      emphasizeFirst: false,
+      copyInputs: [
+        (l.calcValue, '${_value.text} ${_unit.symbol}'),
+        (
+          l.calcEthanolMatrix,
+          _matrix == EthanolMatrix.serum
+              ? l.calcMatrixSerum
+              : l.calcMatrixBlood,
+        ),
+        if (_matrix == EthanolMatrix.serum) (l.calcSerumRatio, _ratio.text),
+      ],
       assumptions: [
         l.calcEthanolAssumptionDensity,
         l.calcEthanolAssumptionRatio,
@@ -440,7 +585,7 @@ class HenssgeView extends StatefulWidget {
   State<HenssgeView> createState() => _HenssgeState();
 }
 
-class _HenssgeState extends State<HenssgeView> {
+class _HenssgeState extends State<HenssgeView> with CalcInputsMixin {
   final _calc = const HenssgeCalculator();
   final _rectal = TextEditingController();
   final _ambient = TextEditingController();
@@ -451,6 +596,23 @@ class _HenssgeState extends State<HenssgeView> {
   String? _error;
 
   @override
+  void initState() {
+    super.initState();
+    watchInputs([_rectal, _ambient, _weight]);
+    // Formula varianti muhit harorati kiritilishi bilan yangilanadi.
+    _ambient.addListener(() {
+      if (mounted) setState(() {});
+    });
+  }
+
+  @override
+  void clearOutput() {
+    _result = null;
+    _warnings = const [];
+    _error = null;
+  }
+
+  @override
   void dispose() {
     for (final c in [_rectal, _ambient, _weight]) {
       c.dispose();
@@ -459,10 +621,14 @@ class _HenssgeState extends State<HenssgeView> {
   }
 
   void _run(AppLocalizations l) => setState(() {
-    _result = null;
-    _warnings = const [];
-    _error = null;
-    final tr = _num(_rectal), ta = _num(_ambient), m = _num(_weight);
+    clearOutput();
+    if (calcAnyEmpty([_rectal, _ambient, _weight])) {
+      _error = l.calcErrorRequired;
+      return;
+    }
+    final tr = calcParse(_rectal),
+        ta = calcParse(_ambient),
+        m = calcParse(_weight);
     if (tr == null || ta == null || m == null) {
       _error = l.calcErrorPositive;
       return;
@@ -477,17 +643,18 @@ class _HenssgeState extends State<HenssgeView> {
         ),
       );
       final v = r.value;
-      final lo = (v.hours - v.ci95Hours).clamp(0, double.infinity);
+      final lo = math.max(0.0, v.hours - v.ci95Hours);
       _result = [
-        (l.calcHenssgeTime, l.calcHoursValue(v.hours.toStringAsFixed(1))),
+        (l.calcHenssgeTime, l.calcHoursValue(l.fmtFixed(v.hours, 1))),
         (
           l.calcHenssgeRange,
           l.calcHoursRange(
-            lo.toStringAsFixed(1),
-            (v.hours + v.ci95Hours).toStringAsFixed(1),
+            l.fmtFixed(lo, 1),
+            l.fmtFixed(v.hours + v.ci95Hours, 1),
           ),
         ),
-        ('Q', v.q.toStringAsFixed(3)),
+        ('Q', l.fmtFixed(v.q, 3)),
+        ('B', l.fmtFixed(v.b, 4)),
       ];
       _warnings = [for (final w in r.warnings) _warningFor(l, w)];
     } on CalcInputException catch (e) {
@@ -508,6 +675,13 @@ class _HenssgeState extends State<HenssgeView> {
       (1.3, l.calcFactorThick),
       (2.0, l.calcFactorBedding),
     ];
+    final ta = calcParse(_ambient);
+    final high = ta != null && HenssgeCalculator.usesHighAmbientFormula(ta);
+    final formula = high
+        ? '(Tr − Ta)/(37.2 − Ta) = 1.11·e^(Bt) − 0.11·e^(10Bt)\n'
+              'B = −1.2815·(c·m)^(−0.625) + 0.0284'
+        : '(Tr − Ta)/(37.2 − Ta) = 1.25·e^(Bt) − 0.25·e^(5Bt)\n'
+              'B = −1.2815·(c·m)^(−0.625) + 0.0284';
     return CalcScaffold(
       descriptor: _calc.descriptor,
       inputs: [
@@ -520,6 +694,7 @@ class _HenssgeState extends State<HenssgeView> {
           label: l.calcAmbientTemp,
           controller: _ambient,
           k: 'calc.ambient',
+          signed: true,
         ),
         _NumberField(
           label: l.calcBodyWeight,
@@ -539,17 +714,22 @@ class _HenssgeState extends State<HenssgeView> {
               ),
           ],
           onChanged: (f) {
-            if (f != null) setState(() => _factor = f);
+            if (f != null) changed(() => _factor = f);
           },
         ),
       ],
       onCalculate: () => _run(l),
-      formula:
-          '(Tr − Ta)/(37.2 − Ta) = 1.25·e^(Bt) − 0.25·e^(5Bt)\n'
-          'B = −1.2815·(c·m)^(−0.625) + 0.0284',
+      formula: formula,
+      formulaNote: high ? l.calcHenssgeFormulaHigh : l.calcHenssgeFormulaLow,
       result: _result,
       warnings: _warnings,
       error: _error,
+      copyInputs: [
+        (l.calcRectalTemp, _rectal.text),
+        (l.calcAmbientTemp, _ambient.text),
+        (l.calcBodyWeight, _weight.text),
+        (l.calcCorrectiveFactor, factors.firstWhere((f) => f.$1 == _factor).$2),
+      ],
       assumptions: [
         l.calcHenssgeAssumptionNormal,
         l.calcHenssgeAssumptionAmbient,

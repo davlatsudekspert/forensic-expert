@@ -63,26 +63,26 @@ void main() {
 
   group('teskari hisob', () {
     const b = BackCalculationCalculator();
-    test('1,0 ‰, 3 soat → 1,30…1,75 ‰', () {
+    test('1,0 ‰, 3 soat → 1,28…1,71 ‰ (β g/L/soat → ‰/soat)', () {
       final r = b.calculate(
         const BackCalculationInput(
-          measuredPromille: 1.0,
+          measured: 1.0,
           hoursBetweenEventAndSampling: 3,
         ),
       );
-      expect(r.value.minPromille, closeTo(1.30, 1e-9));
-      expect(r.value.maxPromille, closeTo(1.75, 1e-9));
+      expect(r.value.min, closeTo(1 + 0.30 / 1.055, 1e-9));
+      expect(r.value.max, closeTo(1 + 0.75 / 1.055, 1e-9));
       expect(r.value.absorptionPhaseRisk, isFalse);
     });
     test('rezorbsiya fazasi: minimum qo‘shimchasiz', () {
       final r = b.calculate(
         const BackCalculationInput(
-          measuredPromille: 0.8,
+          measured: 0.8,
           hoursBetweenEventAndSampling: 2,
           hoursFromDrinkingEndToEvent: 1,
         ),
       );
-      expect(r.value.minPromille, 0.8);
+      expect(r.value.min, 0.8);
       expect(r.warnings.map((e) => e.code), contains('absorption_phase'));
     });
   });

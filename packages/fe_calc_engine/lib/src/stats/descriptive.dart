@@ -84,14 +84,47 @@ class DescriptiveStatsCalculator
   }
 }
 
-/// Matndan qiymatlar ro‘yxati (vergul, nuqta-vergul, bo‘shliq yoki qator).
-/// O‘nlik vergul (`1,5`) faqat ajratuvchi `;` yoki qator bo‘lsa.
+/// Matndan qiymatlar ro‘yxati (vergul, nuqta-vergul, bo‘shliq, tab yoki
+/// qator bilan ajratilgan).
+///
+/// Vergul qachon o‘nlik belgi (`0,5`) hisoblanadi:
+/// * matnda `;` yoki qator bo‘lsa — vergul doim o‘nlik;
+/// * aks holda «vergul + bo‘shliq» (`1, 2, 3`) bo‘lsa — ajratuvchi;
+/// * aks holda bo‘shliq/tab bilan ajratilgan bo‘lsa (`0,5 0,7`) — o‘nlik;
+/// * bo‘shliqsiz (`1,2,3`) — ajratuvchi.
 List<double> parseValues(String text) {
-  final normalized = text.contains(';') || text.contains('\n')
-      ? text.replaceAll(',', '.')
-      : text;
+  final t = text.trim();
+  final commaIsDecimal =
+      t.contains(';') ||
+      t.contains('\n') ||
+      (!RegExp(r',\s').hasMatch(t) && RegExp(r'\s').hasMatch(t));
+  final normalized = commaIsDecimal ? t.replaceAll(',', '.') : t;
   return [
     for (final p in normalized.split(RegExp(r'[;\s,]+')))
       if (p.trim().isNotEmpty) double.parse(p.trim()),
   ];
 }
+
+/// Kalibrlash juftliklari: har qatorda bitta `x y` (bo‘shliq, tab, `;` yoki
+/// «vergul + bo‘shliq» bilan). O‘nlik belgi — nuqta yoki vergul. Bo‘sh
+/// qatorlar o‘tkaziladi; ikkitadan farqli qiymatli qator —
+/// [FormatException].
+List<(double, double)> parsePoints(String text) => [
+  for (final line in text.split('\n'))
+    if (line.trim().isNotEmpty)
+      () {
+        final l = line.trim();
+        final parts = l.contains(';') || l.contains('\t')
+            ? l.split(RegExp(r'[;\t]+'))
+            : RegExp(r',\s').hasMatch(l)
+            ? l.split(RegExp(r',\s+'))
+            : l.split(RegExp(r'\s+'));
+        final v = [
+          for (final p in parts)
+            if (p.trim().isNotEmpty)
+              double.parse(p.trim().replaceAll(',', '.')),
+        ];
+        if (v.length != 2) throw const FormatException('x y pair required');
+        return (v[0], v[1]);
+      }(),
+];

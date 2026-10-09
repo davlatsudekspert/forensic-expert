@@ -2011,7 +2011,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get calcStatsValues =>
-      'Qiymatlar (bo‘sh joy, vergul yoki yangi qator bilan)';
+      'Qiymatlar (bo‘shliq, «;» yoki yangi qator bilan; o‘nlik 0,5 yoki 0.5)';
 
   @override
   String get calcStatsN => 'n';
@@ -2050,7 +2050,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get calcRegPoints =>
-      'Kalibrlash nuqtalari (har qatorda bitta «x y» juftligi)';
+      'Kalibrlash nuqtalari: har qatorda bitta «x y» yoki «x; y» juftligi';
 
   @override
   String get calcRegSlope => 'Qiyalik (b)';
@@ -5070,7 +5070,7 @@ class AppLocalizationsUz extends AppLocalizations {
       'Bu o‘lchov emas, taxminiy baho. Ovqat, jigar faoliyati, ichish tarzi va dorilar natijani o‘zgartiradi. O‘lchangan konsentratsiya va ekspert xulosasi o‘rnini bosmaydi.';
 
   @override
-  String get calcBacMeasured => 'O‘lchangan qondagi alkogol, ‰';
+  String get calcBacMeasured => 'O‘lchangan qondagi alkogol';
 
   @override
   String get calcHoursEventToSample => 'Hodisadan qon olishgacha, soat';
@@ -5091,7 +5091,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get calcBackAssumptionBeta =>
-      'β = 0,10–0,25 g/L/soat ko‘pchilik odamlarni qamraydi (Jones 2010).';
+      'β = 0,10–0,25 g/L/soat (10–25 mg/100 mL/soat) ko‘pchilik odamlarni qamraydi (Jones 2010). ‰ (g/kg) uchun β qon zichligi 1,055 g/mL bilan qayta hisoblanadi.';
 
   @override
   String get calcBackLimitation =>
@@ -6726,4 +6726,37 @@ class AppLocalizationsUz extends AppLocalizations {
   String homeAllDisciplinesCount(int count) {
     return '$count ta fan';
   }
+
+  @override
+  String get calcCopyResult => 'Natijani nusxalash';
+
+  @override
+  String get calcCopied =>
+      'Natija kiritilgan qiymatlar, formula va usul versiyasi bilan nusxalandi.';
+
+  @override
+  String get calcCopyInputs => 'Kiritilgan qiymatlar';
+
+  @override
+  String get calcErrorRequired => 'Barcha majburiy maydonlarni to‘ldiring.';
+
+  @override
+  String get calcEstimatedRange => 'Baholangan oraliq';
+
+  @override
+  String get calcLockedTitle => 'Mutaxassis Pro tarkibida';
+
+  @override
+  String get calcLockedBody =>
+      'Bu kalkulyator Mutaxassis Pro tarifida ochiladi. Suyultirish va konsentratsiya birliklari konvertori — bepul.';
+
+  @override
+  String get calcLodUnitNote =>
+      'DL va QL kalibrlash x o‘qidagi konsentratsiya birligida.';
+
+  @override
+  String get calcHenssgeFormulaLow => 'Qo‘llangan: muhit ≤ 23 °C';
+
+  @override
+  String get calcHenssgeFormulaHigh => 'Qo‘llangan: muhit > 23 °C';
 }

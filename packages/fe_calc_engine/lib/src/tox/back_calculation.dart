@@ -1,17 +1,27 @@
 import 'package:meta/meta.dart';
 
 import '../calculator.dart';
+import 'ethanol_units.dart';
 
 @immutable
 class BackCalculationInput {
   const BackCalculationInput({
-    required this.measuredPromille,
+    required this.measured,
     required this.hoursBetweenEventAndSampling,
     this.hoursFromDrinkingEndToEvent,
+    this.unit = EthanolUnit.promille,
+    this.bloodDensity = EthanolUnitsCalculator.defaultBloodDensity,
   });
 
-  /// Qonda o‘lchangan konsentratsiya, ‰ (g/kg).
-  final double measuredPromille;
+  /// Qonda o‘lchangan konsentratsiya, [unit] birligida.
+  final double measured;
+
+  /// Faqat [EthanolUnit.promille] (g/kg) yoki [EthanolUnit.gramPerLiter].
+  final EthanolUnit unit;
+
+  /// ‰ ↔ g/L o‘tishi uchun qon zichligi, g/mL (etanol birliklari
+  /// kalkulyatori bilan bir xil standart).
+  final double bloodDensity;
 
   /// Hodisa → qon olish orasidagi vaqt, soat.
   final double hoursBetweenEventAndSampling;
@@ -23,20 +33,28 @@ class BackCalculationInput {
 @immutable
 class BackCalculationResult {
   const BackCalculationResult({
-    required this.minPromille,
-    required this.maxPromille,
+    required this.min,
+    required this.max,
+    required this.unit,
     required this.absorptionPhaseRisk,
   });
 
-  final double minPromille;
-  final double maxPromille;
+  /// Kirish bilan bir xil birlikda.
+  final double min;
+  final double max;
+  final EthanolUnit unit;
 
   /// Hodisa ichish tugaganidan 2 soat ichida — rezorbsiya tugamagan
   /// bo‘lishi mumkin, minimum qo‘shimchasiz olinadi.
   final bool absorptionPhaseRisk;
 }
 
-/// Teskari hisob: c₀ = c + β · Δt, β = 0,10…0,25 g/L/soat (Jones 2010).
+/// Teskari hisob: c₀ = c + β · Δt, β = 0,10…0,25 g/L/soat (Jones 2010:
+/// 10–25 mg/100 mL/soat — massa/**hajm** birligi).
+///
+/// v1.1.0: kirish ‰ (g/kg) bo‘lsa, β qon zichligi ρ bilan ‰/soat ga
+/// o‘tkaziladi (β‰ = β / ρ). v1.0.0 β ni ‰ ga to‘g‘ridan-to‘g‘ri qo‘shardi
+/// (birlik aralashuvi, ~5 % ortiqcha).
 class BackCalculationCalculator
     implements Calculator<BackCalculationInput, BackCalculationResult> {
   const BackCalculationCalculator();
@@ -47,8 +65,9 @@ class BackCalculationCalculator
 
   static const _descriptor = CalculatorDescriptor(
     id: 'tox.ethanol.back_calculation',
-    engineVersion: '1.0.0',
-    formulaLatex: r'c_0 = c_t + \beta \cdot \Delta t',
+    engineVersion: '1.1.0',
+    formulaLatex:
+        r'c_0 = c_t + \beta \cdot \Delta t\ (\beta_{‰} = \beta / \rho)',
     nameKey: 'calc.backcalc.name',
     assumptionKeys: [
       'calc.backcalc.assumption.linear',
@@ -64,8 +83,17 @@ class BackCalculationCalculator
 
   @override
   CalcResult<BackCalculationResult> calculate(BackCalculationInput input) {
-    final c = input.measuredPromille;
-    if (!c.isFinite || c < 0 || c > 8) {
+    final u = input.unit;
+    if (u != EthanolUnit.promille && u != EthanolUnit.gramPerLiter) {
+      throw CalcInputException('unit_not_supported', 'unit');
+    }
+    final rho = input.bloodDensity;
+    if (!rho.isFinite || rho < 1.0 || rho > 1.1) {
+      throw CalcInputException('density_out_of_range', 'density');
+    }
+    final c = input.measured;
+    final promille = u == EthanolUnit.promille ? c : c / rho;
+    if (!c.isFinite || c < 0 || promille > 8) {
       throw CalcInputException('bac_out_of_range', 'bac');
     }
     final dt = input.hoursBetweenEventAndSampling;
@@ -77,12 +105,15 @@ class BackCalculationCalculator
       throw CalcInputException('time_out_of_range', 'drinking_end');
     }
     final risk = de != null && de < absorptionHours;
-    final minC = risk ? c : c + betaMin * dt;
-    final maxC = c + betaMax * dt;
+    // β (g/L/soat) → kirish birligi.
+    final k = u == EthanolUnit.promille ? 1 / rho : 1.0;
+    final minC = risk ? c : c + betaMin * k * dt;
+    final maxC = c + betaMax * k * dt;
     return CalcResult(
       BackCalculationResult(
-        minPromille: minC,
-        maxPromille: maxC,
+        min: minC,
+        max: maxC,
+        unit: u,
         absorptionPhaseRisk: risk,
       ),
       warnings: [

@@ -3694,10 +3694,10 @@ abstract class AppLocalizations {
   /// **'Enter a percentage greater than 0 and at most 100.'**
   String get calcErrorPercent;
 
-  /// Calculator input.
+  /// Field label: list of values.
   ///
   /// In en, this message translates to:
-  /// **'Values (separated by spaces, commas or new lines)'**
+  /// **'Values (separate with spaces, “;” or new lines; decimal 0.5 or 0,5)'**
   String get calcStatsValues;
 
   /// Statistic.
@@ -3766,10 +3766,10 @@ abstract class AppLocalizations {
   /// **'Enter numeric values only.'**
   String get calcErrorValues;
 
-  /// Calculator input.
+  /// Field label: calibration points.
   ///
   /// In en, this message translates to:
-  /// **'Calibration points (one “x y” pair per line)'**
+  /// **'Calibration points: one “x y” or “x; y” pair per line'**
   String get calcRegPoints;
 
   /// Statistic.
@@ -9219,10 +9219,10 @@ abstract class AppLocalizations {
   /// **'An estimate, not a measurement. Food, liver function, drinking pattern and medications change the result. Does not replace a measured blood alcohol concentration or an expert opinion.'**
   String get calcWidmarkLimitation;
 
-  /// Field.
+  /// Field label: measured blood alcohol.
   ///
   /// In en, this message translates to:
-  /// **'Measured blood alcohol, ‰'**
+  /// **'Measured blood alcohol'**
   String get calcBacMeasured;
 
   /// Field.
@@ -9255,10 +9255,10 @@ abstract class AppLocalizations {
   /// **'Elimination is linear (zero order) and absorption was complete at the event.'**
   String get calcBackAssumptionLinear;
 
-  /// Assumption.
+  /// Assumption bullet.
   ///
   /// In en, this message translates to:
-  /// **'β = 0.10–0.25 g/L/h covers most people (Jones 2010).'**
+  /// **'β = 0.10–0.25 g/L/h (10–25 mg/100 mL/h) covers most people (Jones 2010). For ‰ (g/kg) β is converted with blood density 1.055 g/mL.'**
   String get calcBackAssumptionBeta;
 
   /// Limitation.
@@ -12014,6 +12014,66 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count, plural, one{{count} discipline} other{{count} disciplines}}'**
   String homeAllDisciplinesCount(int count);
+
+  /// Button: copy the calculation result as text.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy result'**
+  String get calcCopyResult;
+
+  /// Snackbar after copying a result.
+  ///
+  /// In en, this message translates to:
+  /// **'Result copied with inputs, formula and method version.'**
+  String get calcCopied;
+
+  /// Heading inside the copied text.
+  ///
+  /// In en, this message translates to:
+  /// **'Inputs'**
+  String get calcCopyInputs;
+
+  /// Validation: a required field is empty.
+  ///
+  /// In en, this message translates to:
+  /// **'Fill in all required fields.'**
+  String get calcErrorRequired;
+
+  /// Headline row: estimated min–max range.
+  ///
+  /// In en, this message translates to:
+  /// **'Estimated range'**
+  String get calcEstimatedRange;
+
+  /// Locked calculator card title.
+  ///
+  /// In en, this message translates to:
+  /// **'Included in Expert Pro'**
+  String get calcLockedTitle;
+
+  /// Locked calculator card body.
+  ///
+  /// In en, this message translates to:
+  /// **'This calculator opens with the Expert Pro plan. Dilution and the concentration unit converter are free.'**
+  String get calcLockedBody;
+
+  /// Note under LOD/LOQ result.
+  ///
+  /// In en, this message translates to:
+  /// **'DL and QL are in the concentration units of the calibration x axis.'**
+  String get calcLodUnitNote;
+
+  /// Caption: which Henssge equation is applied.
+  ///
+  /// In en, this message translates to:
+  /// **'Applied: ambient ≤ 23 °C'**
+  String get calcHenssgeFormulaLow;
+
+  /// Caption: which Henssge equation is applied.
+  ///
+  /// In en, this message translates to:
+  /// **'Applied: ambient > 23 °C'**
+  String get calcHenssgeFormulaHigh;
 }
 
 class _AppLocalizationsDelegate

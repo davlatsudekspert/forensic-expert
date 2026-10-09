@@ -2009,7 +2009,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get calcStatsValues =>
-      'Значения (через пробел, запятую или с новой строки)';
+      'Значения (через пробел, «;» или с новой строки; десятичные 0,5 или 0.5)';
 
   @override
   String get calcStatsN => 'n';
@@ -2047,7 +2047,8 @@ class AppLocalizationsRu extends AppLocalizations {
   String get calcErrorValues => 'Введите только числовые значения.';
 
   @override
-  String get calcRegPoints => 'Точки калибровки (по одной паре «x y» в строке)';
+  String get calcRegPoints =>
+      'Точки калибровки: по одной паре «x y» или «x; y» в строке';
 
   @override
   String get calcRegSlope => 'Наклон (b)';
@@ -5085,7 +5086,7 @@ class AppLocalizationsRu extends AppLocalizations {
       'Это оценка, а не измерение. Пища, функция печени, характер употребления и лекарства меняют результат. Не заменяет измеренную концентрацию и экспертное заключение.';
 
   @override
-  String get calcBacMeasured => 'Измеренная концентрация в крови, ‰';
+  String get calcBacMeasured => 'Измеренная концентрация в крови';
 
   @override
   String get calcHoursEventToSample => 'Часов от события до взятия крови';
@@ -5106,7 +5107,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get calcBackAssumptionBeta =>
-      'β = 0,10–0,25 г/л/ч охватывает большинство людей (Jones 2010).';
+      'β = 0,10–0,25 г/л/ч (10–25 мг/100 мл/ч) охватывает большинство людей (Jones 2010). Для ‰ (г/кг) β пересчитывается через плотность крови 1,055 г/мл.';
 
   @override
   String get calcBackLimitation =>
@@ -6768,4 +6769,37 @@ class AppLocalizationsRu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get calcCopyResult => 'Скопировать результат';
+
+  @override
+  String get calcCopied =>
+      'Результат скопирован вместе с исходными данными, формулой и версией метода.';
+
+  @override
+  String get calcCopyInputs => 'Исходные данные';
+
+  @override
+  String get calcErrorRequired => 'Заполните все обязательные поля.';
+
+  @override
+  String get calcEstimatedRange => 'Оценочный диапазон';
+
+  @override
+  String get calcLockedTitle => 'Входит в Эксперт Pro';
+
+  @override
+  String get calcLockedBody =>
+      'Этот калькулятор доступен в тарифе Эксперт Pro. Разведение и конвертер единиц концентрации — бесплатны.';
+
+  @override
+  String get calcLodUnitNote =>
+      'DL и QL — в единицах концентрации оси x калибровки.';
+
+  @override
+  String get calcHenssgeFormulaLow => 'Применена: среда ≤ 23 °C';
+
+  @override
+  String get calcHenssgeFormulaHigh => 'Применена: среда > 23 °C';
 }

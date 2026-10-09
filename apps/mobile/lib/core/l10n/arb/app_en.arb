@@ -2624,9 +2624,9 @@
   "@calcErrorPercent": {
     "description": "Error."
   },
-  "calcStatsValues": "Values (separated by spaces, commas or new lines)",
+  "calcStatsValues": "Values (separate with spaces, “;” or new lines; decimal 0.5 or 0,5)",
   "@calcStatsValues": {
-    "description": "Calculator input."
+    "description": "Field label: list of values."
   },
   "calcStatsN": "n",
   "@calcStatsN": {
@@ -2672,9 +2672,9 @@
   "@calcErrorValues": {
     "description": "Error."
   },
-  "calcRegPoints": "Calibration points (one “x y” pair per line)",
+  "calcRegPoints": "Calibration points: one “x y” or “x; y” pair per line",
   "@calcRegPoints": {
-    "description": "Calculator input."
+    "description": "Field label: calibration points."
   },
   "calcRegSlope": "Slope (b)",
   "@calcRegSlope": {
@@ -6603,9 +6603,9 @@
   "@calcWidmarkLimitation": {
     "description": "Limitation."
   },
-  "calcBacMeasured": "Measured blood alcohol, ‰",
+  "calcBacMeasured": "Measured blood alcohol",
   "@calcBacMeasured": {
-    "description": "Field."
+    "description": "Field label: measured blood alcohol."
   },
   "calcHoursEventToSample": "Hours from event to blood sampling",
   "@calcHoursEventToSample": {
@@ -6627,9 +6627,9 @@
   "@calcBackAssumptionLinear": {
     "description": "Assumption."
   },
-  "calcBackAssumptionBeta": "β = 0.10–0.25 g/L/h covers most people (Jones 2010).",
+  "calcBackAssumptionBeta": "β = 0.10–0.25 g/L/h (10–25 mg/100 mL/h) covers most people (Jones 2010). For ‰ (g/kg) β is converted with blood density 1.055 g/mL.",
   "@calcBackAssumptionBeta": {
-    "description": "Assumption."
+    "description": "Assumption bullet."
   },
   "calcBackLimitation": "Within about 2 hours after the end of drinking the person may still be absorbing alcohol; then back-calculation may overestimate. Drinking after the event makes it invalid.",
   "@calcBackLimitation": {
@@ -8773,5 +8773,45 @@
         "type": "int"
       }
     }
+  },
+  "calcCopyResult": "Copy result",
+  "@calcCopyResult": {
+    "description": "Button: copy the calculation result as text."
+  },
+  "calcCopied": "Result copied with inputs, formula and method version.",
+  "@calcCopied": {
+    "description": "Snackbar after copying a result."
+  },
+  "calcCopyInputs": "Inputs",
+  "@calcCopyInputs": {
+    "description": "Heading inside the copied text."
+  },
+  "calcErrorRequired": "Fill in all required fields.",
+  "@calcErrorRequired": {
+    "description": "Validation: a required field is empty."
+  },
+  "calcEstimatedRange": "Estimated range",
+  "@calcEstimatedRange": {
+    "description": "Headline row: estimated min–max range."
+  },
+  "calcLockedTitle": "Included in Expert Pro",
+  "@calcLockedTitle": {
+    "description": "Locked calculator card title."
+  },
+  "calcLockedBody": "This calculator opens with the Expert Pro plan. Dilution and the concentration unit converter are free.",
+  "@calcLockedBody": {
+    "description": "Locked calculator card body."
+  },
+  "calcLodUnitNote": "DL and QL are in the concentration units of the calibration x axis.",
+  "@calcLodUnitNote": {
+    "description": "Note under LOD/LOQ result."
+  },
+  "calcHenssgeFormulaLow": "Applied: ambient ≤ 23 °C",
+  "@calcHenssgeFormulaLow": {
+    "description": "Caption: which Henssge equation is applied."
+  },
+  "calcHenssgeFormulaHigh": "Applied: ambient > 23 °C",
+  "@calcHenssgeFormulaHigh": {
+    "description": "Caption: which Henssge equation is applied."
   }
 }
