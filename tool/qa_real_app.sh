@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # Real-ilova QA: ilovani Linux desktop’da (haqiqiy Flutter dvigateli, Xvfb)
-# ishga tushirib, TALABA va MUTAXASSIS yo‘llarini foydalanuvchi kabi bosib
+# ishga tushirib, TALABA, MUTAXASSIS va ADMIN yo‘llarini foydalanuvchi kabi bosib
 # chiqadi va har qadam skrinshotini saqlaydi.
 #
-#   ./tool/qa_real_app.sh                 # ikkala rol
+#   ./tool/qa_real_app.sh                 # uchala rol (talaba, mutaxassis, admin)
 #   ./tool/qa_real_app.sh student         # faqat talaba
 #   QA_OUT=/tmp/qa ./tool/qa_real_app.sh  # boshqa natija katalogi
 #
@@ -18,7 +18,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 APP="$ROOT/apps/mobile"
 OUT="${QA_OUT:-$ROOT/docs/qa/real_app_$(date +%Y%m%d)}"
-ROLES=("${@:-student expert}")
+ROLES=("${@:-student expert admin}")
 read -r -a ROLES <<<"${ROLES[*]}"
 
 for bin in flutter xvfb-run pkg-config; do

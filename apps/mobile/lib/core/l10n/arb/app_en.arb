@@ -8656,5 +8656,9 @@
   "supRelatedUnknown": "record in the content pack",
   "@supRelatedUnknown": {
     "description": "Fallback when the related record is not in this content pack."
+  },
+  "admRolePublicationModerator": "Publication moderator",
+  "@admRolePublicationModerator": {
+    "description": "Role name of a publication moderator (admin users list, audit log)."
   }
 }

@@ -6671,4 +6671,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get supRelatedUnknown => 'запись в контент-пакете';
+
+  @override
+  String get admRolePublicationModerator => 'Модератор публикаций';
 }

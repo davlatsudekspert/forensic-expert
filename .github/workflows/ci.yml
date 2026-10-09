@@ -73,6 +73,7 @@ jobs:
           PGBIN="$(ls -d /usr/lib/postgresql/*/bin | sort -V | tail -1)"
           PGBIN="$PGBIN" bash supabase/tests/run_local.sh 2>&1 | tee db.log
           grep -q "ALL SECURITY TESTS PASSED" db.log
+          grep -q "ALL RLS ROLE MATRIX TESTS PASSED" db.log
           ! grep -q "FAIL" db.log
 
   secrets-inventory:

@@ -54,6 +54,10 @@ void main() {
         find.byKey(const Key('supportNew.body')),
         'Please add a darker theme for the lab.',
       );
+      await tester.pumpAndSettle();
+      // To‘ldirilgan maydonlar ostida eski xato qolmaydi.
+      expect(find.text('Enter a subject.'), findsNothing);
+      expect(find.text('Enter a message.'), findsNothing);
       await _tap(tester, find.byKey(const Key('supportNew.attach')));
       expect(find.byKey(const Key('supportNew.attachment')), findsOneWidget);
       expect(find.byKey(const Key('supportNew.privacy')), findsOneWidget);
@@ -74,7 +78,17 @@ void main() {
 
       // Admin javobi (server taqlidi) → belgi va banner.
       svc.simulateAdminReply(svc.threadIds.single, 'Thanks! Planned for 0.5.');
-      c.invalidate(supportUnreadProvider);
+      // Push yo‘q: ilova fondan qaytganda o‘qilmaganlar qayta so‘raladi.
+      for (final st in const [
+        AppLifecycleState.inactive,
+        AppLifecycleState.hidden,
+        AppLifecycleState.paused,
+        AppLifecycleState.hidden,
+        AppLifecycleState.inactive,
+        AppLifecycleState.resumed,
+      ]) {
+        tester.binding.handleAppLifecycleStateChanged(st);
+      }
       c.read(routerProvider).go(Routes.profile);
       await tester.pumpAndSettle();
       expect(find.byKey(const Key('nav.profile.badge')), findsOneWidget);
@@ -252,6 +266,10 @@ void main() {
       find.byKey(const Key('adminUsers.user.owner@forensic.test')),
       findsOneWidget,
     );
+    // Xom kodlar (tarif, platforma, ixtisoslik) ko‘rsatilmaydi.
+    expect(find.textContaining('professionalPro'), findsNothing);
+    expect(find.textContaining('forensicToxicology'), findsNothing);
+    expect(find.textContaining('android'), findsNothing);
     await _tap(tester, find.byKey(const Key('adminUsers.tier.pro')));
     expect(
       find.byKey(const Key('adminUsers.user.student@univ.test')),
@@ -266,6 +284,12 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Replied to a request'), findsOneWidget);
     expect(find.text('Request status changed'), findsOneWidget);
+    expect(
+      find.textContaining('CLOSED'),
+      findsNothing,
+      reason: 'xom holat kodi',
+    );
+    expect(find.textContaining('→ Closed'), findsOneWidget);
   });
 
   testWidgets('oddiy foydalanuvchi: admin marshrutlari — ruxsat yo‘q', (

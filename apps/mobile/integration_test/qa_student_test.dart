@@ -8,7 +8,11 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/routes.dart';
+import 'package:forensic_expert/app/support.dart';
 import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
+import 'package:forensic_expert/data/support/in_memory_support_service.dart';
+import 'package:forensic_expert/domain/support/support_models.dart';
+import 'package:forensic_expert/features/support/support_image_picker.dart';
 import 'package:integration_test/integration_test.dart';
 
 import 'qa/harness.dart';
@@ -23,7 +27,18 @@ void main() {
     final net = NoNetworkOverrides();
     HttpOverrides.global = net;
     final l = lookupAppLocalizations(const Locale('uz'));
-    final qa = await launchRealApp(tester, role: 'student');
+    // «Taklif va murojaatlar» serveri — xotiradagi soxta servis (tarmoqsiz);
+    // admin javobi shu yerdan simulyatsiya qilinadi.
+    final support = InMemorySupportService();
+    final picker = QaImagePicker();
+    final qa = await launchRealApp(
+      tester,
+      role: 'student',
+      overrides: [
+        supportServiceProvider.overrideWithValue(support),
+        supportImagePickerProvider.overrideWithValue(picker),
+      ],
+    );
 
     // ------------------------------------------------------------ onboarding
     await qa.step('Onboarding: til tanlash ekrani', (s) async {
@@ -321,6 +336,193 @@ void main() {
         await qa.scrollToTop();
       });
     }
+
+    // ------------------------------------- «Taklif va murojaatlar» (support)
+    await qa.setSize(const Size(390, 844));
+    await qa.step('Profil → «Taklif va murojaatlar» (bo‘sh ro‘yxat)', (
+      s,
+    ) async {
+      goTo(tester, Routes.profile);
+      await qa.settle();
+      await qa.scrollToTop();
+      await qa.tapFinder(find.byKey(const Key('profile.support')));
+      qa.expectText(l.supTitle, s);
+      if (find.byKey(const Key('support.empty')).evaluate().isEmpty) {
+        s.passed = false;
+        s.notes.add('Bo‘sh holat ko‘rinmadi');
+      }
+    });
+
+    await qa.step('Yangi murojaat: bo‘sh forma → validatsiya', (s) async {
+      await qa.tapFinder(find.byKey(const Key('support.new')));
+      await qa.tapFinder(find.byKey(const Key('supportNew.send')));
+      qa.expectText(l.supSubjectRequired, s);
+      qa.expectText(l.supMessageRequired, s);
+      if (support.threadIds.isNotEmpty) {
+        s.passed = false;
+        s.notes.add('Bo‘sh forma yuborildi');
+      }
+    }, shot: false);
+
+    await qa.step('TAKLIF: mavzu, xabar, skrinshot biriktirish', (s) async {
+      await qa.scrollToTop();
+      qa.expectText(l.supCatSuggestion, s, why: 'standart turkum');
+      await qa.enterText(
+        find.byKey(const Key('supportNew.subject')),
+        'Tungi navbat uchun qorong‘i mavzu',
+      );
+      await qa.enterText(
+        find.byKey(const Key('supportNew.body')),
+        'Laboratoriyada kechasi ishlaganda qorong‘iroq mavzu kerak.',
+      );
+      qa.expectNoText(l.supSubjectRequired, s, why: 'to‘ldirilgandan keyin');
+      qa.expectNoText(l.supMessageRequired, s, why: 'to‘ldirilgandan keyin');
+      await qa.tapFinder(find.byKey(const Key('supportNew.attach')));
+      if (picker.calls != 1 ||
+          find.byKey(const Key('supportNew.attachment')).evaluate().isEmpty) {
+        s.passed = false;
+        s.notes.add('Skrinshot biriktirilmadi');
+      }
+      s.notes.add(
+        'Tizim fayl dialogi (GTK/SAF) boshqarilmaydi — QaImagePicker '
+        'haqiqiy PNG qaytaradi',
+      );
+      qa.expectText(l.supPrivacyNote, s);
+    });
+
+    await qa.step('Rozilik + Yuborish → chat ochiladi', (s) async {
+      await qa.tapFinder(find.byKey(const Key('supportNew.send')));
+      if (support.threadIds.isNotEmpty) {
+        s.passed = false;
+        s.notes.add('Roziliksiz yuborildi');
+      }
+      qa.expectText(l.supConsentRequired, s);
+      await qa.tapFinder(find.byKey(const Key('supportNew.consent')));
+      await qa.tapFinder(find.byKey(const Key('supportNew.send')));
+      await qa.settle();
+      if (support.threadIds.length != 1) {
+        s.passed = false;
+        s.notes.add('Murojaat yaratilmadi');
+      }
+      qa.expectText('Tungi navbat uchun qorong‘i mavzu', s);
+      qa.expectText(l.supStatusNew, s);
+      if (find.byKey(const Key('support.attachment')).evaluate().isEmpty) {
+        s.passed = false;
+        s.notes.add('Chatda skrinshot belgisi yo‘q');
+      }
+    });
+
+    await qa.step('Ro‘yxatda: holat «${l.supStatusNew}»', (s) async {
+      clearSnackBars(tester);
+      await qa.back();
+      await qa.settle();
+      final id = support.threadIds.single;
+      if (find.byKey(Key('support.thread.$id')).evaluate().isEmpty) {
+        s.passed = false;
+        s.notes.add('Murojaat ro‘yxatda yo‘q');
+      }
+      qa.expectText(l.supStatusNew, s);
+      qa.expectText(l.supCatSuggestion, s);
+    }, shot: false);
+
+    await qa.step('Admin javobi (simulyatsiya) → Profil belgisi + banner', (
+      s,
+    ) async {
+      support.simulateAdminReply(
+        support.threadIds.single,
+        'Rahmat! Qorong‘i mavzu keyingi versiyada.',
+      );
+      // Push yo‘q: ilova fondan qaytganda yangilanadi (haqiqiy hayot sikli).
+      await resumeApp(tester);
+      goTo(tester, Routes.profile);
+      await qa.settle();
+      await qa.scrollToTop();
+      for (final k in ['nav.profile.badge', 'profile.supportBanner']) {
+        if (find.byKey(Key(k)).evaluate().isEmpty) {
+          s.passed = false;
+          s.notes.add('$k ko‘rinmadi');
+        }
+      }
+    });
+
+    await qa.step('Boshqa tabda pastki banner', (s) async {
+      goTo(tester, Routes.home);
+      await qa.settle();
+      if (find.byKey(const Key('support.replyBanner')).evaluate().isEmpty) {
+        s.passed = false;
+        s.notes.add('Pastki banner ko‘rinmadi');
+      }
+      qa.expectText(l.supBannerText, s);
+    });
+
+    await qa.step('Banner → murojaat: javob chatda, holat yangilandi', (
+      s,
+    ) async {
+      await qa.tapFinder(find.byKey(const Key('support.replyBanner.open')));
+      qa.expectText(l.supStatusAnswered, s, why: 'ro‘yxatda');
+      await qa.tapFinder(
+        find.byKey(Key('support.thread.${support.threadIds.single}')),
+      );
+      qa.expectText('Rahmat! Qorong‘i mavzu keyingi versiyada.', s);
+      qa.expectText(l.supTeam, s);
+      qa.expectText(l.supStatusAnswered, s);
+      if (await support.unreadCount() != 0) {
+        s.passed = false;
+        s.notes.add('Ochilganda o‘qilgan deb belgilanmadi');
+      }
+      // Belgi/banner manbai (pastki panel bu sahifada yo‘q).
+      final unread = await tester.runAsync(
+        () => containerOf(tester).read(supportUnreadProvider.future),
+      );
+      if (unread != 0) {
+        s.passed = false;
+        s.notes.add('O‘qilgandan keyin ham belgi bor');
+      }
+    });
+
+    await qa.step('Foydalanuvchi yana yozadi → holat «${l.supStatusNew}»', (
+      s,
+    ) async {
+      clearSnackBars(tester);
+      await qa.enterText(
+        find.byKey(const Key('support.reply')),
+        'Ajoyib, rahmat!',
+      );
+      await qa.tapFinder(find.byKey(const Key('support.send')));
+      await qa.settle();
+      qa.expectText('Ajoyib, rahmat!', s);
+      final th = (await support.thread(support.threadIds.single))!;
+      if (th.messages.length != 3 || th.status != SupportStatus.newRequest) {
+        s.passed = false;
+        s.notes.add('Server holati: ${th.status}, ${th.messages.length} xabar');
+      }
+      qa.expectText(l.supStatusNew, s);
+    }, shot: false);
+
+    await qa.step('Talaba /admin marshrutlarini ocha olmaydi', (s) async {
+      if (find.byKey(const Key('profile.admin')).evaluate().isNotEmpty) {
+        s.passed = false;
+        s.notes.add('Profil’da admin qatori ko‘rindi');
+      }
+      for (final r in [
+        Routes.adminAudit,
+        Routes.adminUsers,
+        Routes.adminThread(support.threadIds.single),
+        Routes.adminInbox,
+        Routes.admin,
+      ]) {
+        goTo(tester, r);
+        await qa.settle();
+        if (find.byKey(const Key('admin.forbidden')).evaluate().isEmpty ||
+            find.byKey(const Key('admin.overview')).evaluate().isNotEmpty ||
+            find.byKey(const Key('adminInbox.list')).evaluate().isNotEmpty ||
+            find.byKey(const Key('adminUsers.list')).evaluate().isNotEmpty) {
+          s.passed = false;
+          s.notes.add('$r: ruxsat yo‘q sahifasi emas');
+        }
+      }
+      qa.expectText(l.admNotAuthorizedTitle, s);
+    });
 
     await qa.step('Tarmoq o‘chiq: hech bir HTTP so‘rov muvaffaqiyatli emas', (
       s,

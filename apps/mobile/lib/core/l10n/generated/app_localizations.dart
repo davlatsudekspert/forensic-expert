@@ -11858,6 +11858,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'record in the content pack'**
   String get supRelatedUnknown;
+
+  /// Role name of a publication moderator (admin users list, audit log).
+  ///
+  /// In en, this message translates to:
+  /// **'Publication moderator'**
+  String get admRolePublicationModerator;
 }
 
 class _AppLocalizationsDelegate

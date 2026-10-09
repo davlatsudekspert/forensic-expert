@@ -9,8 +9,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/publications.dart';
 import 'package:forensic_expert/app/routes.dart';
+import 'package:forensic_expert/app/support.dart';
 import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
+import 'package:forensic_expert/data/support/in_memory_support_service.dart';
 import 'package:forensic_expert/domain/professional/professional_models.dart';
+import 'package:forensic_expert/domain/support/support_models.dart';
 import 'package:forensic_expert/features/professional/professional_strings.dart';
 import 'package:integration_test/integration_test.dart';
 
@@ -25,10 +28,14 @@ void main() {
     HttpOverrides.global = net;
     final l = lookupAppLocalizations(const Locale('uz'));
     final pubs = QaPublicationService();
+    final support = InMemorySupportService();
     final qa = await launchRealApp(
       tester,
       role: 'expert',
-      overrides: [publicationServiceProvider.overrideWithValue(pubs)],
+      overrides: [
+        publicationServiceProvider.overrideWithValue(pubs),
+        supportServiceProvider.overrideWithValue(support),
+      ],
     );
 
     // ------------------------------------------------------------ onboarding
@@ -349,6 +356,75 @@ void main() {
         await qa.scrollToTop();
       });
     }
+
+    // --------------------------- «Xato haqida xabar berish» (ilmiy xato)
+    await qa.setSize(const Size(390, 844));
+    await qa.step('Etanol sahifasi → ⋮ → «${l.supReportError}»', (s) async {
+      goTo(tester, Routes.libraryEntry('ethanol'));
+      await qa.settle();
+      await qa.tapFinder(find.byKey(const Key('support.reportMenu')));
+      qa.expectText(l.supReportError, s);
+      await qa.tapFinder(find.byKey(const Key('support.reportError')));
+      qa.expectText(l.supCatScientificError, s);
+      qa.expectText(l.supReportErrorSubject('Etanol'), s, why: 'mavzu');
+      qa.expectText(l.supRelated('Etanol'), s, why: 'yozuv nomi');
+      final raw = qa
+          .visibleTexts()
+          .where((t) => t.contains('substance:') || t.contains('ethanol'))
+          .toList();
+      if (raw.isNotEmpty) {
+        s.passed = false;
+        s.notes.add('Xom identifikator ko‘rindi: $raw');
+      }
+    });
+
+    await qa.step('SCIENTIFIC_ERROR: xabar + rozilik → yuborish', (s) async {
+      await qa.enterText(
+        find.byKey(const Key('supportNew.body')),
+        'Metabolitlar bo‘limidagi yarim chiqarilish davri manbadagidan farq '
+        'qiladi.',
+      );
+      await qa.tapFinder(find.byKey(const Key('supportNew.consent')));
+      await qa.tapFinder(find.byKey(const Key('supportNew.send')));
+      await qa.settle();
+      final mine = (await support.myThreads()) ?? const [];
+      if (mine.length != 1 ||
+          mine.single.category != SupportCategory.scientificError ||
+          mine.single.relatedEntity != 'substance:ethanol') {
+        s.passed = false;
+        s.notes.add(
+          'Server yozuvi: ${mine.map((t) => '${t.category} ${t.relatedEntity}')}',
+        );
+      }
+      qa.expectText(l.supReportErrorSubject('Etanol'), s);
+      qa.expectText(l.supRelated('Etanol'), s);
+      qa.expectText(l.supStatusNew, s);
+      qa.expectNoText('substance:ethanol', s, why: 'xom identifikator');
+    });
+
+    await qa.step('Admin javobi (simulyatsiya) → chatda ko‘rinadi', (s) async {
+      final id = support.threadIds.single;
+      support.simulateAdminReply(
+        id,
+        'Rahmat, manba qayta tekshirildi va yozuv tuzatiladi.',
+      );
+      clearSnackBars(tester);
+      await resumeApp(tester);
+      // Murojaat sahifalari to‘liq ekran (pastki panelsiz): belgi Profil’da.
+      goTo(tester, Routes.profile);
+      await qa.settle();
+      if (find.byKey(const Key('nav.profile.badge')).evaluate().isEmpty) {
+        s.passed = false;
+        s.notes.add('Profil tab belgisi yo‘q');
+      }
+      goTo(tester, Routes.support);
+      await qa.settle();
+      qa.expectText(l.supStatusAnswered, s, why: 'ro‘yxatda');
+      await qa.tapFinder(find.byKey(Key('support.thread.$id')));
+      qa.expectText('Rahmat, manba qayta tekshirildi', s);
+      qa.expectText(l.supTeam, s);
+      qa.expectText(l.supStatusAnswered, s);
+    });
 
     await qa.step('Tarmoq o‘chiq: oflayn ishladi', (s) async {
       s.notes.add('Bloklangan HTTP urinishlari: ${net.attempts}');

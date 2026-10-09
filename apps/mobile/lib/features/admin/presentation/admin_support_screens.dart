@@ -10,7 +10,9 @@ import '../../../core/l10n/date_format.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../../domain/professional/professional_models.dart';
 import '../../../domain/support/support_models.dart';
+import '../../professional/professional_strings.dart';
 import '../../support/presentation/support_screens.dart';
 import '../../support/presentation/support_widgets.dart';
 import '../../support/support_strings.dart';
@@ -573,9 +575,18 @@ class _UserCard extends StatelessWidget {
                 ),
                 StatusChip(
                   icon: Icons.workspace_premium_outlined,
-                  label: u.tier ?? l.admTierFree,
+                  label: l.admTierLabel(u.tier),
                   color: u.tier == null ? c.textSecondary : c.accent,
                 ),
+                // Admin’dan boshqa rollar (masalan, maqolalar moderatori —
+                // admin huquqi YO‘Q).
+                for (final r in u.roles)
+                  if (r != 'identity_admin')
+                    StatusChip(
+                      icon: Icons.verified_user_outlined,
+                      label: l.admRoleLabel(r),
+                      color: c.textSecondary,
+                    ),
               ],
             ),
             const SizedBox(height: FeSpace.xxs),
@@ -589,9 +600,14 @@ class _UserCard extends StatelessWidget {
                   )
                 else
                   l.admUserNoActivity,
-                if (u.specialty != null) u.specialty!,
+                if (Specialty.values
+                        .where((s) => s.name == u.specialty)
+                        .firstOrNull
+                    case final s?)
+                  l.specialtyLabel(s),
                 if (u.locale != null) u.locale!.toUpperCase(),
-                if (u.platforms.isNotEmpty) u.platforms.join(' + '),
+                if (u.platforms.isNotEmpty)
+                  u.platforms.map(l.admPlatformLabel).join(' + '),
               ].join(FeGlyphs.middleDot),
               style: t.bodySmall?.copyWith(color: c.textSecondary),
             ),
@@ -655,18 +671,17 @@ class AdminAuditScreen extends ConsumerWidget {
                                 const SizedBox(height: 2),
                                 Text(
                                   [
-                                        e.actorEmail ?? l.admAuditSystem,
-                                        supportTime(context, e.createdAt),
-                                        if (e.detail['from'] != null &&
-                                            e.detail['to'] != null)
-                                          '${e.detail['from']} → ${e.detail['to']}',
-                                        if (e.detail['tier'] != null)
-                                          '${e.detail['tier']}',
-                                        if (e.detail['role'] != null)
-                                          '${e.detail['role']}',
-                                      ]
-                                      .where((x) => x.isNotEmpty)
-                                      .join(FeGlyphs.middleDot),
+                                    e.actorEmail ?? l.admAuditSystem,
+                                    supportTime(context, e.createdAt),
+                                    if (e.detail['from'] != null &&
+                                        e.detail['to'] != null)
+                                      '${l.admAuditValue('${e.detail['from']}')} → '
+                                          '${l.admAuditValue('${e.detail['to']}')}',
+                                    if (e.detail['tier'] != null)
+                                      l.admAuditValue('${e.detail['tier']}'),
+                                    if (e.detail['role'] != null)
+                                      l.admAuditValue('${e.detail['role']}'),
+                                  ].where((x) => x.isNotEmpty).join(FeGlyphs.middleDot),
                                   style: t.bodySmall?.copyWith(
                                     color: c.textSecondary,
                                   ),

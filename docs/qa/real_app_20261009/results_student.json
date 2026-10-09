@@ -119,7 +119,7 @@
       "title": "Moddalar → Etanol (Tahlil bo‘limi)",
       "result": "PASS",
       "notes": [
-        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\""
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | RAW:\"legislation.gov.uk\""
       ],
       "screenshot": "s17_moddalar_etanol_tahlil_bo_limi.png"
     },
@@ -128,7 +128,7 @@
       "title": "Manba iqtibosi + o‘zbekcha tarjima",
       "result": "PASS",
       "notes": [
-        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\""
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | RAW:\"legislation.gov.uk\""
       ],
       "screenshot": "s18_manba_iqtibosi_o_zbekcha_tarjima.png"
     },
@@ -137,7 +137,7 @@
       "title": "Saralanganlarga qo‘shish (yulduzcha)",
       "result": "PASS",
       "notes": [
-        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\""
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | RAW:\"legislation.gov.uk\""
       ],
       "screenshot": "s19_saralanganlarga_qo_shish_yulduzcha.png"
     },
@@ -146,7 +146,7 @@
       "title": "«Bu ma’lumot qayerdan?» — kelib chiqish oynasi",
       "result": "PASS",
       "notes": [
-        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\""
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | RAW:\"legislation.gov.uk\""
       ],
       "screenshot": "s20_bu_ma_lumot_qayerdan_kelib_chiqish_oynas.png"
     },
@@ -189,7 +189,9 @@
       "id": "s26",
       "title": "Pro modda (Alprazolam) — qulf kartasi",
       "result": "PASS",
-      "notes": [],
+      "notes": [
+        "LANG? RAW:\"pubchem.ncbi.nlm.nih.gov\" | RAW:\"legislation.gov.uk\" | RAW:\"incb.org\" | RAW:\"ecfr.gov\""
+      ],
       "screenshot": "s26_pro_modda_alprazolam_qulf_kartasi.png"
     },
     {
@@ -253,7 +255,7 @@
       "title": "320×640: Etanol yozuvi",
       "result": "PASS",
       "notes": [
-        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\""
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | RAW:\"legislation.gov.uk\""
       ],
       "screenshot": "s35_320_640_etanol_yozuvi.png"
     },
@@ -280,6 +282,78 @@
     },
     {
       "id": "s39",
+      "title": "Profil → «Taklif va murojaatlar» (bo‘sh ro‘yxat)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s39_profil_taklif_va_murojaatlar_bo_sh_ro_yx.png"
+    },
+    {
+      "id": "s40",
+      "title": "Yangi murojaat: bo‘sh forma → validatsiya",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "s41",
+      "title": "TAKLIF: mavzu, xabar, skrinshot biriktirish",
+      "result": "PASS",
+      "notes": [
+        "Tizim fayl dialogi (GTK/SAF) boshqarilmaydi — QaImagePicker haqiqiy PNG qaytaradi"
+      ],
+      "screenshot": "s41_taklif_mavzu_xabar_skrinshot_biriktirish.png"
+    },
+    {
+      "id": "s42",
+      "title": "Rozilik + Yuborish → chat ochiladi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s42_rozilik_yuborish_chat_ochiladi.png"
+    },
+    {
+      "id": "s43",
+      "title": "Ro‘yxatda: holat «Yangi»",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "s44",
+      "title": "Admin javobi (simulyatsiya) → Profil belgisi + banner",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s44_admin_javobi_simulyatsiya_profil_belgisi.png"
+    },
+    {
+      "id": "s45",
+      "title": "Boshqa tabda pastki banner",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s45_boshqa_tabda_pastki_banner.png"
+    },
+    {
+      "id": "s46",
+      "title": "Banner → murojaat: javob chatda, holat yangilandi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s46_banner_murojaat_javob_chatda_holat_yangi.png"
+    },
+    {
+      "id": "s47",
+      "title": "Foydalanuvchi yana yozadi → holat «Yangi»",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "s48",
+      "title": "Talaba /admin marshrutlarini ocha olmaydi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s48_talaba_admin_marshrutlarini_ocha_olmaydi.png"
+    },
+    {
+      "id": "s49",
       "title": "Tarmoq o‘chiq: hech bir HTTP so‘rov muvaffaqiyatli emas",
       "result": "PASS",
       "notes": [
@@ -288,6 +362,6 @@
       "screenshot": null
     }
   ],
-  "pass": 39,
+  "pass": 49,
   "fail": 0
 }

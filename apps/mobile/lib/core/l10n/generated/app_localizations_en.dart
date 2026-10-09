@@ -6647,4 +6647,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get supRelatedUnknown => 'record in the content pack';
+
+  @override
+  String get admRolePublicationModerator => 'Publication moderator';
 }

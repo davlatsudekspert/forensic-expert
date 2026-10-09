@@ -91,7 +91,7 @@
       "title": "Etanol → «Bu ma’lumot qayerdan?»",
       "result": "PASS",
       "notes": [
-        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\""
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | RAW:\"legislation.gov.uk\""
       ],
       "screenshot": "e13_etanol_bu_ma_lumot_qayerdan.png"
     },
@@ -237,6 +237,27 @@
     },
     {
       "id": "e34",
+      "title": "Etanol sahifasi → ⋮ → «Xato haqida xabar berish»",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e34_etanol_sahifasi_xato_haqida_xabar_berish.png"
+    },
+    {
+      "id": "e35",
+      "title": "SCIENTIFIC_ERROR: xabar + rozilik → yuborish",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e35_scientific_error_xabar_rozilik_yuborish.png"
+    },
+    {
+      "id": "e36",
+      "title": "Admin javobi (simulyatsiya) → chatda ko‘rinadi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e36_admin_javobi_simulyatsiya_chatda_ko_rina.png"
+    },
+    {
+      "id": "e37",
       "title": "Tarmoq o‘chiq: oflayn ishladi",
       "result": "PASS",
       "notes": [
@@ -245,6 +266,6 @@
       "screenshot": null
     }
   ],
-  "pass": 34,
+  "pass": 37,
   "fail": 0
 }
