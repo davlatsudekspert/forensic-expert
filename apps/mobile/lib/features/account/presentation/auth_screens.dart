@@ -11,6 +11,7 @@ import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
+import '../../../core/widgets/brand_mark.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/auth/auth_models.dart';
 
@@ -43,11 +44,15 @@ class _AuthScaffold extends ConsumerWidget {
     required this.title,
     required this.children,
     this.screenKey,
+    this.brand = false,
   });
 
   final String title;
   final List<Widget> children;
   final Key? screenKey;
+
+  /// Kirish ekranlari: tepada emblema + wordmark lockup (taglinesiz).
+  final bool brand;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -65,6 +70,13 @@ class _AuthScaffold extends ConsumerWidget {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     const SizedBox(height: FeSpace.sm),
+                    if (brand) ...[
+                      const Center(
+                        key: Key('auth.brand'),
+                        child: BrandLockup(markSize: 72, showTagline: false),
+                      ),
+                      const SizedBox(height: FeSpace.lg),
+                    ],
                     if (!auth.isConfigured) ...[
                       FeBanner(
                         key: const Key('auth.notConfigured'),
@@ -333,6 +345,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
     final configured = ref.watch(authRepositoryProvider).isConfigured;
     return _AuthScaffold(
       screenKey: const Key('screen.signIn'),
+      brand: true,
       title: l.accountSignIn,
       children: [
         _EmailField(controller: _email),
@@ -1025,6 +1038,7 @@ class _EmailCodeScreenState extends ConsumerState<EmailCodeScreen> {
     final sent = _sentTo;
     return _AuthScaffold(
       screenKey: const Key('screen.emailCode'),
+      brand: true,
       title: sent == null ? l.emailCodeTitle : l.emailCodeEnterTitle,
       children: [
         if (sent == null) ...[

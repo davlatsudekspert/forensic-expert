@@ -9,6 +9,7 @@ import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
+import '../../../core/widgets/brand_mark.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/admin/admin_models.dart';
 import 'admin_gate.dart';
@@ -35,7 +36,14 @@ class _AdminDashboard extends ConsumerWidget {
     final data = ref.watch(adminDashboardProvider);
     return Scaffold(
       appBar: AppBar(
-        title: Text(l.adminTitle),
+        title: Row(
+          key: const Key('admin.brand'),
+          children: [
+            const BrandMark(size: 28),
+            const SizedBox(width: FeSpace.sm),
+            Flexible(child: Text(l.adminTitle)),
+          ],
+        ),
         actions: [
           IconButton(
             key: const Key('admin.refresh'),

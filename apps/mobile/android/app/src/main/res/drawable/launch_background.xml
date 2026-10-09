@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Splash: navy fon va «Shield of Evidence» emblemasi (design/brand). -->
+<!-- Splash: fon (values / values-night) va emblema + wordmark lockup
+     (drawable-*/launch_mark, drawable-night-*/launch_mark; kengligi 200dp). -->
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@color/splash_background" />
     <item>

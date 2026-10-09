@@ -939,11 +939,7 @@ class _HomeHero extends ConsumerWidget {
                       Row(
                         key: const Key('home.header'),
                         children: [
-                          BrandMark(
-                            size: 44,
-                            onDark: dark,
-                            tier: BrandTier.icon,
-                          ),
+                          const BrandMark(size: 44),
                           const SizedBox(width: FeSpace.sm),
                           Expanded(
                             child: Column(

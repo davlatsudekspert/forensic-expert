@@ -79,7 +79,25 @@ Future<ProviderContainer> pumpApp(
     container.read(routerProvider).go(initialLocation);
     await tester.pumpAndSettle();
   }
+  await settleBrandImages(tester);
   return container;
+}
+
+/// Brend emblemasi (`Image.asset`, assets/brand/) fake-async zonada
+/// dekodlanmaydi: golden’da belgi ko‘rinishi uchun real async’da oldindan
+/// yuklanadi. Boshqa rasmlarga tegmaydi.
+Future<void> settleBrandImages(WidgetTester tester) async {
+  final brand = find.byType(Image).evaluate().where((e) {
+    final p = (e.widget as Image).image;
+    return p is AssetImage && p.assetName.startsWith('assets/brand/');
+  }).toList();
+  if (brand.isEmpty) return;
+  await tester.runAsync(() async {
+    for (final e in brand) {
+      await precacheImage((e.widget as Image).image, e);
+    }
+  });
+  await tester.pump();
 }
 
 /// `Image.memory` fake-async zonada dekodlanmaydi: ekrandagi rasmlarni real
