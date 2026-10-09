@@ -77,11 +77,13 @@ def main():
     # Explanatory card text derived ONLY from the card's sourced claims
     # (derived=true: QA checks that every number/unit comes from those claims).
     claims = {c["claim_id"]: c for c in b["claims"]}
-    for tid, body in json.loads(SRC.read_text(encoding="utf-8")).get("topic_bodies", {}).items():
-        src_text = " ".join(claims[c]["value"]["excerpt"] for c in body["claims"])
-        records.append({"target_type": "topic_body", "target_id": tid, "source_lang": "en", "derived": True,
-                        "source_claims": body["claims"], "source_text": src_text, "source_sha256": sha(src_text),
-                        "text": body["text"], "status": "machine_draft"})
+    src_data = json.loads(SRC.read_text(encoding="utf-8"))
+    for kind, key in (("topic_body", "topic_bodies"), ("method_body", "method_bodies")):
+        for tid, body in src_data.get(key, {}).items():
+            src_text = " ".join(claims[c]["value"]["excerpt"] for c in body["claims"])
+            records.append({"target_type": kind, "target_id": tid, "source_lang": "en", "derived": True,
+                            "source_claims": body["claims"], "source_text": src_text, "source_sha256": sha(src_text),
+                            "text": body["text"], "status": "machine_draft"})
     for s in b["sources"]:
         if s["source_id"] == "SRC-FE-EDITORIAL":
             records.append({"target_type": "source_title", "target_id": s["source_id"], "source_lang": "uz",
