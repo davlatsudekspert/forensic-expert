@@ -39583,30 +39583,6 @@
       "review_status": "NEEDS_REVIEW"
     },
     {
-      "research_id": "RS-f4a36aa65925",
-      "kind": "journal_article",
-      "title": "Engineering Bacteria to Catabolize the Carbonaceous Component of Sarin: Teaching E. coli to Eat Isopropanol",
-      "authors": [
-        "Brown ME",
-        "Mukhopadhyay A",
-        "Keasling JD"
-      ],
-      "organization": null,
-      "container": "ACS synthetic biology",
-      "year": "2016",
-      "doi": "10.1021/acssynbio.6b00115",
-      "pmid": "27403844",
-      "pmcid": null,
-      "handle": null,
-      "url": "https://pubmed.ncbi.nlm.nih.gov/27403844/",
-      "degree": null,
-      "open_access": "unknown",
-      "source_api": "pubmed",
-      "accessed": "2026-10-04",
-      "evidence_level": "B",
-      "review_status": "NEEDS_REVIEW"
-    },
-    {
       "research_id": "RS-b71ee8071b2f",
       "kind": "journal_article",
       "title": "Breath Acetone Sensing Based on Single-Walled Carbon Nanotube-Titanium Dioxide Hybrids Enabled by a Custom-Built Dehumidifier",
@@ -62160,12 +62136,6 @@
       "to": "RS-c9776978d897",
       "relation": "research",
       "basis": "RS-c9776978d897"
-    },
-    {
-      "from": "isopropanol",
-      "to": "RS-f4a36aa65925",
-      "relation": "research",
-      "basis": "RS-f4a36aa65925"
     },
     {
       "from": "acetone",
