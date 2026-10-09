@@ -168,6 +168,67 @@ void main() {
       }
     });
 
+    // Manba auditi (docs/qa/TOKS_SOURCE_AUDIT.md): har bir majmua iqtibosi
+    // aniq sahifa raqami bilan va kitob chegarasida; savollarda ham shunday.
+    // Bosma sahifa raqami = PDF sahifa indeksi (toks 355 b., dvssm 350 b.).
+    test('manba auditi: har bir iqtibos sahifasi kitob chegarasida', () {
+      const maxPage = {'toks_majmua2025': 355, 'dvssm_majmua2025': 350};
+      final cite = RegExp(
+        r'\[(toks_majmua2025|dvssm_majmua2025)\]'
+        r'( \((?:с\. |pp?\. )?([0-9][0-9–, ]*)(?:-b\.)?\))?',
+      );
+      List<int> pagesOf(String spec) => [
+        for (final m in RegExp(r'\d+').allMatches(spec)) int.parse(m.group(0)!),
+      ];
+      var checked = 0;
+      for (final c in cards.nonNulls) {
+        for (final s in c.sections) {
+          for (final lang in ['uz', 'ru', 'en']) {
+            for (final m in cite.allMatches(s.body.of(lang))) {
+              final where = '${c.id}/${s.key}/$lang@${m.start}';
+              expect(m.group(2), isNotNull, reason: 'page missing: $where');
+              final pages = pagesOf(m.group(3)!);
+              expect(pages, isNotEmpty, reason: where);
+              for (final p in pages) {
+                expect(
+                  p,
+                  inInclusiveRange(1, maxPage[m.group(1)]!),
+                  reason: where,
+                );
+              }
+              checked++;
+            }
+          }
+        }
+        for (final q in c.quiz) {
+          final pages = pagesOf(q.pages ?? '');
+          expect(pages, isNotEmpty, reason: q.id);
+          for (final p in pages) {
+            expect(p, inInclusiveRange(1, 355), reason: q.id);
+          }
+        }
+      }
+      expect(checked, greaterThan(400));
+    });
+
+    test('manba auditi: hech bir karta HUMAN_VERIFIED emas', () {
+      expect(raw.contains('HUMAN_VERIFIED'), isFalse);
+      for (final c in bundle.cards) {
+        expect(c.status, ScientificStatus.needsReview, reason: c.id);
+      }
+      for (final f in Directory(
+        '../../content/guidelines/src',
+      ).listSync().whereType<File>().where((f) => f.path.contains('toks'))) {
+        final src = f.readAsStringSync();
+        expect(src.contains('HUMAN_VERIFIED'), isFalse, reason: f.path);
+        expect(
+          src.contains('"status": "NEEDS_REVIEW"'),
+          isTrue,
+          reason: f.path,
+        );
+      }
+    });
+
     test('o‘ldiruvchi yoki «mastlik» chegaralari qoida sifatida yo‘q', () {
       for (final c in cards.nonNulls) {
         for (final s in c.sections) {
