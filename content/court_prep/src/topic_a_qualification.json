@@ -1,0 +1,226 @@
+{
+  "topic": {
+    "id": "court.topic.qualification",
+    "order": 2,
+    "icon": "badge",
+    "title": {
+      "uz": "Ekspert mustaqilligi va malakasi",
+      "ru": "Независимость и квалификация эксперта",
+      "en": "Expert independence and qualification"
+    },
+    "summary": {
+      "uz": "Kompetensiya chegarasi, xolislik, kontekst ta’siri va hamkasb ko‘rigi.",
+      "ru": "Пределы компетенции, беспристрастность, влияние контекста и коллегиальная проверка.",
+      "en": "Limits of competence, impartiality, contextual influence and peer review."
+    }
+  },
+  "questions": [
+    {
+      "id": "court.q.qual_competence",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Bu ekspertizani o‘tkazish uchun malakangiz va tajribangiz yetarli ekanini nima bilan isbotlaysiz?",
+        "ru": "Чем вы подтверждаете, что ваша квалификация и опыт достаточны для этой экспертизы?",
+        "en": "How do you demonstrate that your qualifications and experience are sufficient for this examination?"
+      },
+      "tests": {
+        "uz": "Ekspert sifatida qatnashish asosi va kompetensiya chegarasi: ma’lumot, ixtisoslik, staj va aynan shu turdagi tadqiqotdagi amaliy malaka. Kasbiy nokompetentlik aniqlansa, ekspert rad etilishi mumkin (O‘zbekiston JPK) [court_uz_cpc].",
+        "ru": "Основание участия в качестве эксперта и пределы компетенции: образование, специальность, стаж и практическая подготовка именно в таком виде исследований. При выявлении профессиональной некомпетентности эксперт подлежит отводу (УПК Узбекистана) [court_uz_cpc].",
+        "en": "The basis for acting as an expert and the limits of your competence: education, specialty, experience and practical proficiency in this specific type of examination. An expert is subject to removal if professional incompetence is revealed (Uzbekistan CPC) [court_uz_cpc]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Diplom, ixtisoslik va malaka oshirish hujjatlari — xulosada ko‘rsatilgan ma’lumot, ixtisoslik va staj bilan bir xil bo‘lsin (O‘zbekiston JPK) [court_uz_cpc].",
+            "ru": "Диплом, документы о специальности и повышении квалификации — они должны совпадать со сведениями об образовании, специальности и стаже в заключении (УПК Узбекистана) [court_uz_cpc].",
+            "en": "Diploma, specialty and continuing-education records — they should match the education, specialty and experience stated in the conclusion (Uzbekistan CPC) [court_uz_cpc]."
+          },
+          {
+            "uz": "Aynan shu usul bo‘yicha o‘qitilganlik va kompetensiya baholangani haqidagi yozuvlar; malaka sinovlari natijalari [court_ilac_g19_2022].",
+            "ru": "Записи об обучении именно этому методу и об оценке компетентности; результаты проверок квалификации [court_ilac_g19_2022].",
+            "en": "Records of training in this specific method and of competence assessment; proficiency-test results [court_ilac_g19_2022]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Diplom va staj o‘z-o‘zidan amaliy kompetensiyani kafolatlamaydi; kompetensiya belgilangan mezonlar bo‘yicha obyektiv baholash bilan ko‘rsatiladi [court_ilac_g19_2022].",
+            "ru": "Диплом и стаж сами по себе не гарантируют практическую компетентность; она подтверждается объективной оценкой по установленным критериям [court_ilac_g19_2022].",
+            "en": "Qualifications and years of service do not by themselves guarantee practical competence; competence is shown by objective assessment against defined criteria [court_ilac_g19_2022]."
+          },
+          {
+            "uz": "Har bir lavozim uchun vakolat chegarasi belgilanadi: qaysi savollar sizning ixtisosligingizga, qaysilari boshqa mutaxassisga tegishli ekanini oldindan ajrating [court_ilac_g19_2022].",
+            "ru": "Для каждой роли определены пределы полномочий: заранее разграничьте, какие вопросы относятся к вашей специальности, а какие — к другому специалисту [court_ilac_g19_2022].",
+            "en": "Each role has defined limits: decide in advance which questions belong to your specialty and which to another specialist [court_ilac_g19_2022]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Aniq dalil o‘rniga unvon yoki ish yillarini keltirish; ixtisoslikdan tashqaridagi savolga «tajribam bor» deb javob berish.",
+            "ru": "Ссылаться на звания и стаж вместо конкретных подтверждений; отвечать на вопрос вне своей специальности со ссылкой на «опыт».",
+            "en": "Citing titles or years instead of specific evidence; answering a question outside your specialty on the strength of 'experience'."
+          }
+        ]
+      },
+      "links": [
+        "page:sources"
+      ],
+      "citations": [
+        "court_uz_cpc",
+        "court_ilac_g19_2022"
+      ]
+    },
+    {
+      "id": "court.q.qual_independence",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Siz ish bo‘yicha tomonlardan yoki tergov organidan mustaqilmisiz?",
+        "ru": "Независимы ли вы от сторон по делу или от органа расследования?",
+        "en": "Are you independent of the parties or of the investigating authority?"
+      },
+      "tests": {
+        "uz": "Rad etish asoslari bor-yo‘qligi: ishtirokchilardan xizmat yoki boshqa jihatdan qaramlik ekspertni ishdan chetlashtiradi; bunday asos bo‘lsa, ekspert o‘zi rad etishi shart (O‘zbekiston JPK) [court_uz_cpc].",
+        "ru": "Наличие оснований для отвода: служебная или иная зависимость от участников исключает участие эксперта; при таких основаниях эксперт обязан заявить самоотвод (УПК Узбекистана) [court_uz_cpc].",
+        "en": "Whether grounds for recusal exist: service or other dependence on a participant excludes the expert; where such grounds exist the expert must recuse himself (Uzbekistan CPC) [court_uz_cpc]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Ishtirokchilar bilan qarindoshlik, xizmat yoki boshqa bog‘liqlik yo‘qligini o‘zingiz tekshirgan qayd; agar bog‘liqlik bo‘lsa — o‘z vaqtida rad etish arizasi (O‘zbekiston JPK) [court_uz_cpc].",
+            "ru": "Собственная проверка отсутствия родства, служебной или иной связи с участниками; при наличии связи — своевременный самоотвод (УПК Узбекистана) [court_uz_cpc].",
+            "en": "Your own check that you have no family, service or other ties with the participants; if a tie exists — a timely self-recusal (Uzbekistan CPC) [court_uz_cpc]."
+          },
+          {
+            "uz": "Laboratoriyaning xolislik tartibi: xolislikka xavflar qanday aniqlanadi va boshqariladi [court_ilac_g19_2022].",
+            "ru": "Порядок обеспечения беспристрастности лаборатории: как выявляются и контролируются риски для беспристрастности [court_ilac_g19_2022].",
+            "en": "The laboratory's impartiality procedure: how risks to impartiality are identified and managed [court_ilac_g19_2022]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Xolislik — obyektivlikning haqiqatda ham, tashqaridan qaraganda ham mavjudligi; u muqobil farazlarni ko‘rib chiqish va muvozanatli xulosa shkalasi bilan namoyon bo‘ladi [court_ilac_g19_2022].",
+            "ru": "Беспристрастность — фактическое и видимое наличие объективности; она проявляется в рассмотрении альтернативных гипотез и сбалансированной шкале выводов [court_ilac_g19_2022].",
+            "en": "Impartiality is the actual and perceived presence of objectivity; it is shown by considering alternative hypotheses and using balanced opinion scales [court_ilac_g19_2022]."
+          },
+          {
+            "uz": "Xalqaro sharhlarda ekspert muassasasining huquqni muhofaza qilish organlaridan ma’muriy mustaqilligi ilmiy asosni mustahkamlash omili sifatida tavsiya etilgan [court_nas2009].",
+            "ru": "В международных обзорах административная независимость экспертного учреждения от правоохранительных органов рекомендована как фактор укрепления научной основы [court_nas2009].",
+            "en": "International reviews have recommended administrative independence of forensic laboratories from law-enforcement agencies as a way to strengthen the scientific basis [court_nas2009]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Idoraviy bo‘ysunuvni inkor etish yoki yashirish. U haqda to‘g‘ridan-to‘g‘ri ayting va xolislik qanday ta’minlanganini tushuntiring — bu shaffoflik talabi [court_ilac_g19_2022].",
+            "ru": "Отрицать или скрывать ведомственную подчинённость. Скажите о ней прямо и объясните, как обеспечена беспристрастность, — это требование прозрачности [court_ilac_g19_2022].",
+            "en": "Denying or concealing your organisational reporting line. State it plainly and explain how impartiality was ensured — transparency requires it [court_ilac_g19_2022]."
+          }
+        ]
+      },
+      "links": [],
+      "citations": [
+        "court_uz_cpc",
+        "court_ilac_g19_2022",
+        "court_nas2009"
+      ]
+    },
+    {
+      "id": "court.q.qual_context_bias",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Tergovchi sizga ish holatlari haqida nima aytgan va bu xulosangizga ta’sir qilmadimi?",
+        "ru": "Что следователь сообщил вам об обстоятельствах дела и не повлияло ли это на ваш вывод?",
+        "en": "What did the investigator tell you about the case, and did it influence your conclusion?"
+      },
+      "tests": {
+        "uz": "Kontekstual (kognitiv) moyillik: ish haqidagi qo‘shimcha ma’lumot ma’lumotlarni yig‘ish, tahlil va talqinga sezdirmay ta’sir qilishi mumkin [court_dror2020].",
+        "ru": "Контекстуальная (когнитивная) предвзятость: сведения о деле могут незаметно влиять на сбор данных, анализ и интерпретацию [court_dror2020].",
+        "en": "Contextual (cognitive) bias: case information can subtly influence how data are collected, analysed and interpreted [court_dror2020]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Qaror (ta’yinlash hujjati) va sizga berilgan barcha qo‘shimcha ma’lumotlar ro‘yxati — nima, qachon va kimdan olingan.",
+            "ru": "Постановление о назначении и перечень всех дополнительных сведений, которые вы получили, — что, когда и от кого.",
+            "en": "The order appointing the examination and a list of all additional information you received — what, when and from whom."
+          },
+          {
+            "uz": "Laboratoriyada kontekst ta’sirini kamaytirish tartibi (masalan, tahlil va talqin bosqichlarini ajratish, ko‘r tekshiruv) bo‘lsa — uning tavsifi [court_dror2020, court_nas2009].",
+            "ru": "Если в лаборатории есть порядок снижения влияния контекста (например, разделение этапов анализа и интерпретации, слепая проверка) — его описание [court_dror2020, court_nas2009].",
+            "en": "If the laboratory has a procedure to limit contextual influence (for example, separating analysis from interpretation, blind checks) — its description [court_dror2020, court_nas2009]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Fon ma’lumot berilishi ekspert xolisligiga putur yetkazmasligi kerak; ish qanday ma’lumot bilan bajarilgani hujjatlashtiriladi [court_ilac_g19_2022].",
+            "ru": "Предоставление фоновой информации не должно нарушать беспристрастность эксперта; с какой информацией выполнялась работа, документируется [court_ilac_g19_2022].",
+            "en": "Background information should not compromise the examiner's impartiality; what information the work was done with is documented [court_ilac_g19_2022]."
+          },
+          {
+            "uz": "«Tajribali ekspert moyillikka berilmaydi» degan fikr ilmiy adabiyotda xato deb ko‘rsatilgan; moyillik axloqiy emas, kognitiv hodisa [court_dror2020].",
+            "ru": "Мнение «опытный эксперт не подвержен предвзятости» в научной литературе названо заблуждением; предвзятость — когнитивное, а не этическое явление [court_dror2020].",
+            "en": "The belief that 'experienced experts are immune to bias' is described in the literature as a fallacy; bias is a cognitive, not an ethical, phenomenon [court_dror2020]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "«Menga hech narsa ta’sir qilmaydi» deb mutlaq javob berish — bu ilmiy jihatdan noto‘g‘ri; qanday choralar ko‘rilganini va qaysi ma’lumot berilganini rostini ayting [court_dror2020].",
+            "ru": "Абсолютный ответ «на меня ничто не влияет» научно неверен; честно скажите, какие меры приняты и какие сведения вы получили [court_dror2020].",
+            "en": "An absolute 'nothing influences me' is scientifically inaccurate; state truthfully what safeguards were used and what information you received [court_dror2020]."
+          }
+        ]
+      },
+      "links": [],
+      "citations": [
+        "court_dror2020",
+        "court_nas2009",
+        "court_ilac_g19_2022"
+      ]
+    },
+    {
+      "id": "court.q.qual_peer_review",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Xulosangizni boshqa mutaxassis tekshirganmi?",
+        "ru": "Проверял ли ваше заключение другой специалист?",
+        "en": "Was your conclusion checked by another specialist?"
+      },
+      "tests": {
+        "uz": "Natija va xulosaning mustaqil tekshiruvdan o‘tganligi: hal qiluvchi topilmalar va talqin kompetent hamkasb tomonidan ko‘rib chiqilishi tavsiya etiladi [court_ilac_g19_2022].",
+        "ru": "Проходили ли результаты и вывод независимую проверку: критические находки и интерпретацию рекомендуется проверять компетентным коллегой [court_ilac_g19_2022].",
+        "en": "Whether results and conclusions were independently checked: critical findings and interpretations should be reviewed by a competent colleague [court_ilac_g19_2022]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Hamkasb ko‘rigi yozuvi: kim, qachon, nimani tekshirgan va qanday izoh bergan [court_ilac_g19_2022].",
+            "ru": "Запись о коллегиальной проверке: кто, когда, что проверил и какие замечания сделал [court_ilac_g19_2022].",
+            "en": "The peer-review record: who checked what, when, and with what comments [court_ilac_g19_2022]."
+          },
+          {
+            "uz": "Komissiyaviy ekspertiza bo‘lsa — xulosani har bir ekspert imzolagani (O‘zbekiston JPK) [court_uz_cpc].",
+            "ru": "При комиссионной экспертизе — заключение подписано каждым экспертом (УПК Узбекистана) [court_uz_cpc].",
+            "en": "For a commission examination — the conclusion is signed by each expert (Uzbekistan CPC) [court_uz_cpc]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Hamkasb ko‘rigi natijalar to‘g‘riligini va xulosa uchun asos yetarliligini tasdiqlash uchun xizmat qiladi; u ekspertning shaxsiy javobgarligini almashtirmaydi [court_ilac_g19_2022, court_uz_cpc].",
+            "ru": "Коллегиальная проверка подтверждает правильность результатов и достаточность основания для вывода; она не заменяет личной ответственности эксперта [court_ilac_g19_2022, court_uz_cpc].",
+            "en": "Peer review confirms the validity of results and that there is a sufficient basis for the conclusion; it does not replace the expert's personal responsibility [court_ilac_g19_2022, court_uz_cpc]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Hujjatda qayd etilmagan og‘zaki maslahatni «tekshiruv» deb ko‘rsatish.",
+            "ru": "Выдавать за «проверку» устную консультацию, не зафиксированную в документах.",
+            "en": "Presenting an undocumented verbal consultation as a 'review'."
+          }
+        ]
+      },
+      "links": [],
+      "citations": [
+        "court_ilac_g19_2022",
+        "court_uz_cpc"
+      ]
+    }
+  ]
+}

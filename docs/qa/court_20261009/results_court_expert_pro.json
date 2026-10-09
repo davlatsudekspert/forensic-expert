@@ -1,0 +1,115 @@
+{
+  "role": "court",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "c01",
+      "title": "[professional] Asosiy: «Sudda so‘roq» kirish nuqtasi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c01_professional_asosiy_sudda_so_roq_kirish_.png"
+    },
+    {
+      "id": "c02",
+      "title": "[professional] Kutubxona → bo‘lim: tamoyillar, mashq, simulyator, Pro imkoniyatlari",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c02_professional_kutubxona_bo_lim_tamoyillar.png"
+    },
+    {
+      "id": "c03",
+      "title": "[professional] Karta: A savol, holat, B qisqa javob",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c03_professional_karta_a_savol_holat_b_qisqa.png"
+    },
+    {
+      "id": "c04",
+      "title": "[professional] Karta: C asos va D «Qaysi manbada yozilgan?»",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c04_professional_karta_c_asos_va_d_qaysi_man.png"
+    },
+    {
+      "id": "c05",
+      "title": "[professional] Karta: E/F qo‘shimcha savol, G cheklov, H eksport",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "c06",
+      "title": "[professional] «Manba tekshirilmagan» belgisi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c06_professional_manba_tekshirilmagan_belgis.png"
+    },
+    {
+      "id": "c07",
+      "title": "[professional] Yurisdiksiya O‘zbekiston: huquq va majburiyatlar (lex.uz)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c07_professional_yurisdiksiya_o_zbekiston_hu.png"
+    },
+    {
+      "id": "c08",
+      "title": "[professional] Simulyator: asosiy ssenariy, baho 4 mezon",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c08_professional_simulyator_asosiy_ssenariy_.png"
+    },
+    {
+      "id": "c09",
+      "title": "[professional] AI tahlili: halol «tez orada»",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "c10",
+      "title": "[professional] Rol mashqi: ketma-ket 4 rol",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "c11",
+      "title": "[professional] Statistika va tarix (faqat qurilmada)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c11_professional_statistika_va_tarix_faqat_q.png"
+    },
+    {
+      "id": "c12",
+      "title": "[professional] Qidiruv: «LOQ» va bo‘sh natija",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "c13",
+      "title": "[professional] 320 dp: karta va manbalar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c13_professional_320_dp_karta_va_manbalar.png"
+    },
+    {
+      "id": "c14",
+      "title": "[professional] 320 dp: simulyator",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "c15",
+      "title": "Tarmoq o‘chiq (barcha HTTP bloklangan)",
+      "result": "PASS",
+      "notes": [
+        "Bloklangan HTTP urinishlari: 0"
+      ],
+      "screenshot": null
+    }
+  ],
+  "pass": 15,
+  "fail": 0
+}

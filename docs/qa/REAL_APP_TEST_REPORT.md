@@ -256,6 +256,34 @@ ko‘chirildi; uz yorlig‘ida ikki qavs («Optik zichlik (absorbsiya) (A)») �
 «Optik zichlik (A)». Bloklangan HTTP urinishlari: 0. ADMIN roli bu ishga
 taalluqli emas (yangi admin funksiyasi yo‘q).
 
+### 2.y «Sudda so‘roq: tayyorgarlik» (2026-10-09) — REAL ILOVA
+
+`integration_test/qa_court_test.dart`, skrinshotlar (10 ta) va JSON:
+`docs/qa/court_20261009/`.
+
+| Rejim | Ishga tushirish | Natija |
+|---|---|---|
+| TALABA (bepul) | `QA_MODE=student ./tool/qa_real_app.sh court` | 15/15 PASS |
+| MUTAXASSIS (Pro — test override, xarid emas) | `QA_MODE=professional QA_PRO=1 ./tool/qa_real_app.sh court` | 15/15 PASS |
+
+Tekshirildi (390 va 320 dp, uz): Asosiy sahifada kirish (mutaxassisda bor,
+talabada yo‘q — Kutubxonada bor); ogohlantirish; bepul foydalanuvchiga
+savol-javob kartasining barcha qismlari (A savol, I holat NEEDS_REVIEW,
+«Sud nimani tekshiradi», B qisqa javob, C asos, D manba joylari —
+masalan «78-modda, 2-qism», E/F qo‘shimcha savollar, G cheklovlar, H BibTeX/
+matn eksporti); «Manba tekshirilmagan» belgisi (ISO/IEC 17025 matni
+o‘qilmagan); yurisdiksiya O‘zbekiston → JPK va «Sud ekspertizasi
+to‘g‘risida»gi qonun moddalari (lex.uz); asosiy simulyator ssenariysi
+(4 mezon, NEEDS_REVIEW izohi); Pro: AI tahlili — halol «tez orada» (AI
+chaqirilmaydi), ketma-ket 4 rolli mashq, shaxsiy statistika va tarix
+(faqat qurilmada); bepulda Pro imkoniyatlari → tariflar sahifasi; qidiruv.
+Topilgan va tuzatilgan: simulyator bahosi qatorida `semanticsValue` son
+bo‘lmagani uchun semantika xatosi (widget testida ushlandi); «IIIB Table 1
+bo‘lim» kabi noqulay joy yozuvi → «§ IIIB Table 1 (bo‘lim)». Bloklangan HTTP
+urinishlari: 0. ADMIN roli taalluqli emas. Tekshirilmagan: haqiqiy xarid,
+real iOS/Android qurilma, qorong‘i mavzu, ru/en real-ilova yugurishi
+(ru/en faqat widget testlarida).
+
 ## 3. Til tekshiruvi (uz rejimi)
 
 Avtomatik tekshiruv har ekranda inglizcha UI so‘zlari va xom kodlarni

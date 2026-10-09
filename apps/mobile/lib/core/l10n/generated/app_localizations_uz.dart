@@ -6896,4 +6896,379 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get calcBeerRelatedTools =>
       'Bog‘liq vositalar: kalibrlash va chegaralar';
+
+  @override
+  String get courtTitle => 'Sudda so‘roq: tayyorgarlik';
+
+  @override
+  String get courtSubtitle =>
+      'Ekspertga xulosasi bo‘yicha beriladigan savollar va ilmiy asosli javobga tayyorgarlik';
+
+  @override
+  String get courtDisclaimer =>
+      'Tayyorgarlik materiali; yuridik maslahat emas; xulosa faqat ekspertning o‘z tadqiqotiga asoslanadi.';
+
+  @override
+  String get courtSearchHint => 'Savollar bo‘yicha qidirish';
+
+  @override
+  String get courtNoResults =>
+      'Hech narsa topilmadi. Boshqa so‘z bilan urinib ko‘ring.';
+
+  @override
+  String get courtEmpty => 'Bo‘lim ma’lumotlari yuklanmadi.';
+
+  @override
+  String get courtTopics => 'Mavzular';
+
+  @override
+  String courtQuestionCount(int count) {
+    return '$count ta savol';
+  }
+
+  @override
+  String get courtTests => 'Sud nimani tekshiradi';
+
+  @override
+  String get courtPrepare => 'Javobga tayyorgarlik';
+
+  @override
+  String get courtBlockDocuments => 'Tayyor turing: hujjatlar va ma’lumotlar';
+
+  @override
+  String get courtBlockExplain => 'Tushuntiriladigan tamoyillar';
+
+  @override
+  String get courtBlockPitfalls => 'Odatiy xatolar';
+
+  @override
+  String get courtRelated => 'Ilovadagi bog‘liq materiallar';
+
+  @override
+  String get courtCopyCitation => 'Iqtibosni nusxalash';
+
+  @override
+  String get courtCitationCopied => 'Iqtibos nusxalandi';
+
+  @override
+  String get courtPractice => 'Mashq rejimi';
+
+  @override
+  String get courtPracticeBody =>
+      'Tasodifiy savol: javobingizni o‘ylab ko‘ring, so‘ng ro‘yxatni oching.';
+
+  @override
+  String get courtPracticeThink =>
+      'Avval o‘z javobingizni tayyorlang: qaysi hujjat va tamoyillarga tayanasiz?';
+
+  @override
+  String get courtPracticeReveal => 'Ro‘yxatni ko‘rsatish';
+
+  @override
+  String get courtPracticeHint =>
+      'Sud nimani tekshirishini ko‘rish uchun bosing';
+
+  @override
+  String get courtPracticeNext => 'Keyingi savol';
+
+  @override
+  String get courtPracticeOpen => 'Savolni to‘liq ochish';
+
+  @override
+  String courtPracticeProgress(int count) {
+    return 'Mashq qilingan savollar: $count';
+  }
+
+  @override
+  String courtQuestionOf(int index, int count) {
+    return '$count tadan $index-savol';
+  }
+
+  @override
+  String get courtShortAnswer => 'Qisqa javob';
+
+  @override
+  String get courtBasisHeader => 'Javobning ilmiy va huquqiy asoslari';
+
+  @override
+  String get courtBasis => 'Ilmiy / huquqiy asos';
+
+  @override
+  String get courtWhereWritten => 'Qaysi manbada yozilgan?';
+
+  @override
+  String get courtSourceUnverified => 'Manba tekshirilmagan';
+
+  @override
+  String get courtSourceUnverifiedNote =>
+      'Bu manbadagi aniq joy asl matndan tasdiqlanmagan.';
+
+  @override
+  String get courtFollowups => 'Qo‘shimcha savollar';
+
+  @override
+  String get courtLimitations => 'Cheklovlar, istisnolar va noaniqliklar';
+
+  @override
+  String get courtExport => 'Manbalarni nusxalash';
+
+  @override
+  String get courtExportText => 'Matn ko‘rinishida';
+
+  @override
+  String get courtExportBibtex => 'BibTeX formatida';
+
+  @override
+  String get courtExportCopied => 'Manbalar nusxalandi';
+
+  @override
+  String courtLawNote(String date) {
+    return 'O‘zbekiston · lex.uz · $date holatidagi matn';
+  }
+
+  @override
+  String get courtBookNote => 'Muallif ruxsati bilan, barcha uchun bepul';
+
+  @override
+  String courtLocArticle(String article) {
+    return '$article-modda';
+  }
+
+  @override
+  String courtLocArticlePart(String article, String part) {
+    return '$article-modda, $part-qism';
+  }
+
+  @override
+  String courtLocSection(String section) {
+    return '§ $section (bo‘lim)';
+  }
+
+  @override
+  String courtLocPdfPage(String page) {
+    return 'PDF, $page-bet';
+  }
+
+  @override
+  String courtLocPages(String pages) {
+    return '$pages-betlar';
+  }
+
+  @override
+  String courtLocRecommendation(String n) {
+    return '$n-tavsiya';
+  }
+
+  @override
+  String courtLocGuidanceNote(String n) {
+    return '$n-yo‘riq izohi';
+  }
+
+  @override
+  String get courtLocAbstract => 'Annotatsiya';
+
+  @override
+  String get courtLocScope => 'Qamrov (rasmiy sahifa)';
+
+  @override
+  String get courtLocTitle => 'Sarlavha va bibliografik yozuv';
+
+  @override
+  String get courtLocGlossary => 'Atamalar lug‘ati';
+
+  @override
+  String get courtPrinciples => 'Halollik tamoyillari';
+
+  @override
+  String get courtPrinciplesBody =>
+      'Hammasini ayting, «bilmayman» deng, xatoni tuzating, mustaqil bo‘ling';
+
+  @override
+  String get courtPrinciplesIntro =>
+      'Bu bo‘lim hech qachon haqiqiy natijalarni yashirish, yumshatish yoki buzib ko‘rsatishni o‘rgatmaydi.';
+
+  @override
+  String get courtJurisdictionUz =>
+      'Huquqiy savollar: O‘zbekiston qonunchiligi bo‘yicha';
+
+  @override
+  String get courtJurisdictionIntl =>
+      'Huquqiy savollar: umumiy xalqaro tamoyillar. O‘zbekiston qonunlari uchun yurisdiksiyani tanlang.';
+
+  @override
+  String get courtJurisdictionChange => 'Yurisdiksiyani tanlash';
+
+  @override
+  String get courtPendingTopic => 'Tayyorlanmoqda — manbalar tekshirilmoqda';
+
+  @override
+  String get courtSimulator => 'Sud so‘rog‘i simulyatori';
+
+  @override
+  String get courtSimulatorBody =>
+      'Sudya, prokuror, advokat yoki boshqa ekspert savoliga javob bering — baho: aniqlik, manba, cheklov, xolislik.';
+
+  @override
+  String get courtSimulatorNote =>
+      'Simulyator ish natijasini oldindan belgilamaydi va soxta ko‘rsatma, qochish yoki natijani yashirishni o‘rgatmaydi.';
+
+  @override
+  String get courtRoleJudge => 'Sudya';
+
+  @override
+  String get courtRoleProsecutor => 'Prokuror';
+
+  @override
+  String get courtRoleDefense => 'Advokat (himoyachi)';
+
+  @override
+  String get courtRoleExpert => 'Boshqa ekspert';
+
+  @override
+  String get courtSimContext => 'Vaziyat';
+
+  @override
+  String get courtSimYourAnswer => 'O‘z javobingiz (ixtiyoriy)';
+
+  @override
+  String get courtSimYourAnswerHint => 'Javobingizni yozing…';
+
+  @override
+  String get courtSimEvaluateText => 'Matnni baholash';
+
+  @override
+  String get courtSimChoose => 'Eng to‘g‘ri javobni tanlang';
+
+  @override
+  String get courtSimCheck => 'Javobni tekshirish';
+
+  @override
+  String get courtSimResult => 'Baho';
+
+  @override
+  String courtSimTotal(int score, int max) {
+    return 'Jami: $score/$max';
+  }
+
+  @override
+  String get courtSimBest => 'Namunaviy javob';
+
+  @override
+  String get courtSimNext => 'Keyingi ssenariy';
+
+  @override
+  String get courtSimOpenQuestion => 'Bog‘liq kartani ochish';
+
+  @override
+  String get courtSimFreeTextNote =>
+      'Avtomatik baho kalit so‘zlarga asoslangan va taxminiy. Ilmiy aniqlikni namunaviy javob bilan o‘zingiz solishtiring.';
+
+  @override
+  String get courtSimFlagOverstatement =>
+      'Mutlaq ibora topildi («100 %», «albatta»…) — ishonch oshirib ko‘rsatilgan bo‘lishi mumkin.';
+
+  @override
+  String get courtSimFlagEvasion =>
+      'Javobdan qochish iborasi topildi — sababini va o‘z sohangizdagi ma’lumotni ayting.';
+
+  @override
+  String get courtSimTooShort => 'Javob juda qisqa.';
+
+  @override
+  String get courtCritAccuracy => 'Ilmiy aniqlik';
+
+  @override
+  String get courtCritSources => 'Manbaga tayanish';
+
+  @override
+  String get courtCritLimitations => 'Cheklovlarni tushuntirish';
+
+  @override
+  String get courtCritImpartiality => 'Xolislik';
+
+  @override
+  String courtScenarioCount(int count) {
+    return '$count ta ssenariy';
+  }
+
+  @override
+  String courtProTitle(String tier) {
+    return 'Kengaytirilgan tayyorgarlik — $tier tarifida';
+  }
+
+  @override
+  String get courtProBody =>
+      'To‘liq simulyator (barcha ssenariylar), ketma-ket rol mashqlari, AI tahlili (tez orada), shaxsiy statistika va tarix. Manbali savol-javob kartalari hamma uchun bepul.';
+
+  @override
+  String get courtProBadge => 'Pro’da';
+
+  @override
+  String get courtSimFreeNote =>
+      'Bepul: asosiy ssenariylar. Qolgan ssenariylar, rol mashqlari va statistika — Pro’da.';
+
+  @override
+  String get courtDrill => 'Rol mashqi';
+
+  @override
+  String get courtDrillBody =>
+      'Sudya → prokuror → advokat → boshqa ekspert, ketma-ket';
+
+  @override
+  String courtDrillStep(int index, int count) {
+    return '$count tadan $index-qadam';
+  }
+
+  @override
+  String get courtDrillNext => 'Keyingi rol';
+
+  @override
+  String get courtDrillDone => 'Rol mashqi yakunlandi';
+
+  @override
+  String get courtStats => 'Statistika va tarix';
+
+  @override
+  String get courtStatsBody =>
+      'Shaxsiy baholar va urinishlar tarixi — faqat shu qurilmada';
+
+  @override
+  String courtStatsAttempts(int count) {
+    return 'Urinishlar: $count';
+  }
+
+  @override
+  String get courtStatsAverage => 'Mezonlar bo‘yicha o‘rtacha baho';
+
+  @override
+  String get courtStatsHistory => 'Tarix';
+
+  @override
+  String get courtStatsEmpty => 'Hali urinish yo‘q.';
+
+  @override
+  String get courtStatsClear => 'Tarixni tozalash';
+
+  @override
+  String get courtAi => 'AI tahlili';
+
+  @override
+  String get courtAiUnavailable =>
+      'AI tahlili hozircha ulanmagan — tez orada. Javobingiz hech qayerga yuborilmadi.';
+
+  @override
+  String get courtSimPartialUnverified =>
+      'Qisman — tekshirilmagan manba: bu javob joyi tasdiqlanmagan manbaga tayanadi.';
+
+  @override
+  String get courtSimReviewNote =>
+      'Baho ekspert ko‘rigini kutayotgan (NEEDS_REVIEW) materialga asoslangan; namunaviy javob ham tasdiqlangan haqiqat emas.';
+
+  @override
+  String get courtAiPro => 'AI tahlili (Pro)';
+
+  @override
+  String courtScoreSemantics(String criterion, int score) {
+    return '$criterion: 2 dan $score';
+  }
 }

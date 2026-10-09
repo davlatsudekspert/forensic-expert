@@ -1,0 +1,219 @@
+{
+  "topic": {
+    "id": "court.topic.quality",
+    "order": 15,
+    "icon": "verified",
+    "title": {
+      "uz": "Sifat kafolati",
+      "ru": "Обеспечение качества",
+      "en": "Quality assurance"
+    },
+    "summary": {
+      "uz": "Akkreditatsiya, malaka sinovlari, nazorat namunalari, asboblar va xom ma’lumotlar.",
+      "ru": "Аккредитация, проверки квалификации, контрольные образцы, оборудование и первичные данные.",
+      "en": "Accreditation, proficiency tests, controls, instruments and raw data."
+    }
+  },
+  "questions": [
+    {
+      "id": "court.q.qa_accreditation",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Laboratoriyangiz akkreditatsiyadan o‘tganmi? O‘tmagan bo‘lsa, natijangizga qanday ishonish mumkin?",
+        "ru": "Аккредитована ли ваша лаборатория? Если нет, почему можно доверять вашему результату?",
+        "en": "Is your laboratory accredited? If not, why should your result be trusted?"
+      },
+      "tests": {
+        "uz": "Laboratoriya kompetensiyasini tashqi tomondan baholash mavjudligi; xalqaro amaliyotda bu ISO/IEC 17025 asosidagi akkreditatsiya [court_iso17025_2017, court_ilac_g19_2022].",
+        "ru": "Есть ли внешняя оценка компетентности лаборатории; в международной практике это аккредитация по ISO/IEC 17025 [court_iso17025_2017, court_ilac_g19_2022].",
+        "en": "Whether laboratory competence has been externally assessed; internationally this is accreditation to ISO/IEC 17025 [court_iso17025_2017, court_ilac_g19_2022]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Akkreditatsiya guvohnomasi va uning qamrovi — aynan shu usul qamrovga kiradimi; akkreditatsiya bo‘lmasa, ichki sifat tizimi hujjatlari [court_ilac_g19_2022].",
+            "ru": "Аттестат аккредитации и область — входит ли в неё именно этот метод; при отсутствии аккредитации — документы внутренней системы качества [court_ilac_g19_2022].",
+            "en": "The accreditation certificate and scope — is this specific method covered; without accreditation, your internal quality-system records [court_ilac_g19_2022]."
+          },
+          {
+            "uz": "Oxirgi ichki audit va tuzatuvchi choralar haqidagi qisqa ma’lumot [court_ilac_g19_2022].",
+            "ru": "Краткие сведения о последнем внутреннем аудите и корректирующих действиях [court_ilac_g19_2022].",
+            "en": "A brief summary of the last internal audit and corrective actions [court_ilac_g19_2022]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Akkreditatsiya tizimli kompetensiyani ko‘rsatadi, lekin aniq ishdagi natijani avtomatik to‘g‘ri qilmaydi; ishdagi nazoratlar alohida ko‘rsatiladi [court_ilac_g19_2022].",
+            "ru": "Аккредитация показывает системную компетентность, но не делает автоматически верным результат по конкретному делу; контроли по делу показываются отдельно [court_ilac_g19_2022].",
+            "en": "Accreditation shows systemic competence but does not automatically make a case result correct; case-specific controls are shown separately [court_ilac_g19_2022]."
+          },
+          {
+            "uz": "Xalqaro sharhlarda sud-ekspert laboratoriyalari akkreditatsiyasi va mutaxassislar sertifikatsiyasi majburiy bo‘lishi tavsiya etilgan (bu AQSh uchun yozilgan tavsiya) [court_nas2009].",
+            "ru": "В международных обзорах рекомендована обязательная аккредитация лабораторий и сертификация специалистов (рекомендация написана для США) [court_nas2009].",
+            "en": "International reviews have recommended mandatory laboratory accreditation and practitioner certification (a recommendation written for the USA) [court_nas2009]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Akkreditatsiya qamroviga kirmagan usulni «akkreditatsiyalangan» deb aytish.",
+            "ru": "Называть «аккредитованным» метод, не входящий в область аккредитации.",
+            "en": "Calling a method 'accredited' when it is outside the accreditation scope."
+          }
+        ]
+      },
+      "links": [
+        "page:standards"
+      ],
+      "citations": [
+        "court_iso17025_2017",
+        "court_ilac_g19_2022",
+        "court_nas2009"
+      ]
+    },
+    {
+      "id": "court.q.qa_proficiency",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Malaka sinovlarida (proficiency testing) qanday natija ko‘rsatgansiz?",
+        "ru": "Какие результаты вы показали в проверках квалификации (proficiency testing)?",
+        "en": "How did you perform in proficiency tests?"
+      },
+      "tests": {
+        "uz": "Laboratoriya o‘z natijalarini hamkasblar bilan tashqi solishtirishda tekshiradimi va muvaffaqiyatsiz natijalarga qanday munosabatda bo‘ladi [court_ilac_g19_2022].",
+        "ru": "Проверяет ли лаборатория свои результаты во внешних межлабораторных сличениях и как реагирует на неудовлетворительные результаты [court_ilac_g19_2022].",
+        "en": "Whether the laboratory checks itself in external comparisons with peers and how it responds to unsatisfactory results [court_ilac_g19_2022]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Malaka sinovlari yozuvlari: bajarilgan tahlillar, natija va xulosalar, natija ko‘rib chiqilgani, zarur bo‘lsa tuzatuvchi choralar [court_ilac_g19_2022].",
+            "ru": "Записи о проверках квалификации: выполненные анализы, результаты и выводы, отметка о рассмотрении, при необходимости корректирующие действия [court_ilac_g19_2022].",
+            "en": "Proficiency-test records: analyses performed, results and conclusions, evidence of review, corrective action where needed [court_ilac_g19_2022]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Malaka sinovida laboratoriyaning odatiy, hujjatlashtirilgan tartibi qo‘llanadi — shunda u real ish sifatini aks ettiradi [court_ilac_g19_2022].",
+            "ru": "В проверке квалификации применяется обычная документированная процедура лаборатории — тогда она отражает реальное качество работы [court_ilac_g19_2022].",
+            "en": "Proficiency tests use the laboratory's normal documented procedure, so they reflect real casework quality [court_ilac_g19_2022]."
+          },
+          {
+            "uz": "Malaka sinovi sertifikatsiya talablaridan biri sifatida ham tavsiya etilgan [court_nas2009].",
+            "ru": "Проверка квалификации рекомендована и как одно из требований сертификации [court_nas2009].",
+            "en": "Proficiency testing is also recommended as one of the certification requirements [court_nas2009]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "O‘tmishdagi muvaffaqiyatsiz natijani yashirish — bu mumkin emas. Uni ayting, tuzatuvchi chora va keyingi natijalarni ko‘rsating [court_ilac_g19_2022].",
+            "ru": "Скрывать прошлый неудовлетворительный результат недопустимо. Назовите его, корректирующее действие и последующие результаты [court_ilac_g19_2022].",
+            "en": "Hiding a past unsatisfactory result is not acceptable. Disclose it, with the corrective action and later results [court_ilac_g19_2022]."
+          }
+        ]
+      },
+      "links": [],
+      "citations": [
+        "court_ilac_g19_2022",
+        "court_nas2009"
+      ]
+    },
+    {
+      "id": "court.q.qa_controls",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Aynan shu seriyada nazorat namunalari va blanklar qanday natija bergan?",
+        "ru": "Какие результаты дали контрольные образцы и холостые пробы именно в этой серии?",
+        "en": "What did the control samples and blanks show in this particular batch?"
+      },
+      "tests": {
+        "uz": "Ishdagi natija o‘sha kuni ishlagan tizimda olinganmi: musbat va manfiy nazoratlar, nazorat kartalari, takroriy tahlillar [court_ilac_g19_2022].",
+        "ru": "Получен ли результат на системе, которая в тот день работала исправно: положительные и отрицательные контроли, контрольные карты, повторные анализы [court_ilac_g19_2022].",
+        "en": "Whether the case result came from a system that was working that day: positive and negative controls, control charts, replicates [court_ilac_g19_2022]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Seriya ro‘yxati, nazorat namunalari qiymatlari va qabul mezonlari; nazorat kartasi [court_ilac_g19_2022].",
+            "ru": "Список серии, значения контрольных образцов и критерии приемлемости; контрольная карта [court_ilac_g19_2022].",
+            "en": "The batch list, control values and acceptance criteria; the control chart [court_ilac_g19_2022]."
+          },
+          {
+            "uz": "Nazorat mezondan chiqqan bo‘lsa — qanday chora ko‘rilgani va seriya qayta tahlil qilinganmi [court_ilac_g19_2022].",
+            "ru": "Если контроль вышел за критерии — какие меры приняты и переанализирована ли серия [court_ilac_g19_2022].",
+            "en": "If a control failed — what was done and whether the batch was re-analysed [court_ilac_g19_2022]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Muntazam sifat nazorati xatolar, soxtalashtirish va moyillikni aniqlash hamda tartiblarning yaroqliligini tasdiqlash uchun tavsiya etiladi [court_nas2009].",
+            "ru": "Регулярный контроль качества рекомендован для выявления ошибок, фальсификаций и предвзятости и подтверждения пригодности процедур [court_nas2009].",
+            "en": "Routine quality control is recommended to detect mistakes, fraud and bias and confirm that procedures remain valid [court_nas2009]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Nazorat natijalarini xotiradan aytish; yozuvni ko‘rib, aniq qiymatlarni keltiring.",
+            "ru": "Называть результаты контролей по памяти; приведите точные значения из записей.",
+            "en": "Quoting control results from memory; give exact values from the records."
+          }
+        ]
+      },
+      "links": [
+        "tool:tool.lab.descriptive_stats"
+      ],
+      "citations": [
+        "court_ilac_g19_2022",
+        "court_nas2009"
+      ]
+    },
+    {
+      "id": "court.q.qa_raw_data",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Xom ma’lumotlar (xromatogramma, spektr) saqlanganmi va ularni taqdim eta olasizmi?",
+        "ru": "Сохранены ли первичные данные (хроматограммы, спектры) и можете ли вы их представить?",
+        "en": "Have the raw data (chromatograms, spectra) been kept, and can you produce them?"
+      },
+      "tests": {
+        "uz": "Natijaning izlanuvchanligi va mustaqil qayta ko‘rib chiqish imkoniyati: tadqiqot jarayoni va natijalarini hujjatlashtiruvchi materiallar muassasada saqlanadi va talab bo‘yicha taqdim etiladi (O‘zbekiston JPK) [court_uz_cpc].",
+        "ru": "Прослеживаемость результата и возможность независимой перепроверки: материалы, документирующие ход и результаты исследования, хранятся в учреждении и представляются по требованию (УПК Узбекистана) [court_uz_cpc].",
+        "en": "Traceability and the possibility of independent re-examination: materials documenting the course and results of the examination are retained by the institution and produced on request (Uzbekistan CPC) [court_uz_cpc]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Xom ma’lumotlar fayllari, integratsiya parametrlari va qo‘lda tuzatishlar tarixi (audit trail).",
+            "ru": "Файлы первичных данных, параметры интегрирования и история ручных правок (audit trail).",
+            "en": "Raw data files, integration parameters and the history of manual edits (audit trail)."
+          },
+          {
+            "uz": "Asbob kalibrlash va texnik xizmat yozuvlari, shu kungi tizim tekshiruvi [court_ilac_g19_2022].",
+            "ru": "Записи о калибровке и обслуживании прибора, проверка системы в тот день [court_ilac_g19_2022].",
+            "en": "Instrument calibration and maintenance records, the system check on that day [court_ilac_g19_2022]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Hisobot to‘liq bo‘lishi va talqin asoslangan ma’lumotni o‘z ichiga olishi kerak; soddalashtirilgan hisobot bo‘lsa ham, keyin to‘liq hisobot tuzish imkonini beradigan yozuvlar saqlanadi [court_ilac_g19_2022].",
+            "ru": "Отчёт должен быть полным и содержать информацию, на которой основана интерпретация; даже при упрощённом отчёте хранятся записи, позволяющие позже составить полный [court_ilac_g19_2022].",
+            "en": "A report should be complete and contain the information on which interpretation rests; even with a simplified report, records are kept so a full report can be produced later [court_ilac_g19_2022]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Qo‘lda integratsiya qilinganini aytmaslik; qo‘lda tuzatish bo‘lsa, sababi va tartibini tushuntiring.",
+            "ru": "Умалчивать о ручном интегрировании; если правки были, объясните причину и порядок.",
+            "en": "Not mentioning manual integration; if edits were made, explain why and under what rule."
+          }
+        ]
+      },
+      "links": [
+        "page:sources"
+      ],
+      "citations": [
+        "court_uz_cpc",
+        "court_ilac_g19_2022"
+      ]
+    }
+  ]
+}

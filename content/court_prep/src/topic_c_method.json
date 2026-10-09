@@ -1,0 +1,345 @@
+{
+  "topic": {
+    "id": "court.topic.method",
+    "order": 14,
+    "icon": "science",
+    "title": {
+      "uz": "Usul xatolari, validatsiya va noaniqlik",
+      "ru": "Ошибки метода, валидация и неопределённость",
+      "en": "Method errors, validation and uncertainty"
+    },
+    "summary": {
+      "uz": "Nega shu usul, validatsiya ko‘rsatkichlari, LOD/LOQ, kalibrlash, o‘lchash noaniqligi va matritsa ta’siri.",
+      "ru": "Почему этот метод, показатели валидации, LOD/LOQ, калибровка, неопределённость измерения и матричные эффекты.",
+      "en": "Why this method, validation parameters, LOD/LOQ, calibration, measurement uncertainty and matrix effects."
+    }
+  },
+  "questions": [
+    {
+      "id": "court.q.method_choice",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Nega aynan shu usulni tanladingiz, boshqasini emas?",
+        "ru": "Почему вы выбрали именно этот метод, а не другой?",
+        "en": "Why did you choose this particular method and not another?"
+      },
+      "tests": {
+        "uz": "Usul qo‘yilgan savolga yaroqli ekanligi: usulning maqsadi, qo‘llanish sohasi va cheklovlari ma’lummi [court_ilac_g19_2022].",
+        "ru": "Пригоден ли метод для поставленного вопроса: известны ли назначение, область применения и ограничения метода [court_ilac_g19_2022].",
+        "en": "Whether the method is fit for the question asked: are its purpose, scope and limitations known [court_ilac_g19_2022]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Usulning standart operatsion tartibi (SOP) va uning qo‘llanish sohasi, cheklovlari [court_ilac_g19_2022].",
+            "ru": "Стандартная операционная процедура (СОП) метода, её область применения и ограничения [court_ilac_g19_2022].",
+            "en": "The method's standard operating procedure (SOP), its scope and limitations [court_ilac_g19_2022]."
+          },
+          {
+            "uz": "Usul tanlashga asos bo‘lgan validatsiya hisoboti [asb036_2019, peters2007].",
+            "ru": "Отчёт о валидации, на котором основан выбор метода [asb036_2019, peters2007].",
+            "en": "The validation report on which the choice of method rests [asb036_2019, peters2007]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Validatsiyaning maqsadi — usul mo‘ljallangan foydalanishga yaroqli ekanini ko‘rsatish [asb036_2019]; ishonchli analitik ma’lumot talqin uchun zaruriy shart [peters2007].",
+            "ru": "Цель валидации — показать пригодность метода для предполагаемого применения [asb036_2019]; надёжные аналитические данные — необходимое условие интерпретации [peters2007].",
+            "en": "Validation shows that a method is fit for its intended use [asb036_2019]; reliable analytical data are a prerequisite for interpretation [peters2007]."
+          },
+          {
+            "uz": "Tekshiruv strategiyasi savolga eng ko‘p ma’lumot beradigan va namunani keyingi tadqiqotlar uchun saqlaydigan tartibda tanlanadi [court_ilac_g19_2022].",
+            "ru": "Стратегия исследования выбирается так, чтобы дать наибольшую информацию по вопросу и сохранить материал для последующих исследований [court_ilac_g19_2022].",
+            "en": "The testing strategy is chosen to give the most information on the question while preserving material for later examinations [court_ilac_g19_2022]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "«Doim shunday qilamiz» deb javob berish — bu odat, ilmiy asos emas; validatsiya va savolga moslik bilan tushuntiring [asb036_2019].",
+            "ru": "Ответ «мы всегда так делаем» — это привычка, а не научное обоснование; объясняйте через валидацию и соответствие вопросу [asb036_2019].",
+            "en": "'We always do it this way' is habit, not justification; explain via validation and fitness for the question [asb036_2019]."
+          }
+        ]
+      },
+      "links": [
+        "guideline:guideline.chem.method_comparison"
+      ],
+      "citations": [
+        "court_ilac_g19_2022",
+        "asb036_2019",
+        "peters2007"
+      ]
+    },
+    {
+      "id": "court.q.method_validation",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Usulingiz validatsiyadan o‘tganmi? Qaysi ko‘rsatkichlar tekshirilgan?",
+        "ru": "Валидирован ли ваш метод? Какие показатели проверялись?",
+        "en": "Is your method validated? Which parameters were checked?"
+      },
+      "tests": {
+        "uz": "Natijaning ishonchliligi tekshirilgan ko‘rsatkichlarga tayanadimi: aniqlik, pretsiziya, selektivlik, chiziqlilik, LOD/LOQ, matritsa ta’siri, barqarorlik, o‘lchash noaniqligi [court_ilac_g19_2022].",
+        "ru": "Опирается ли надёжность результата на проверенные показатели: правильность, прецизионность, селективность, линейность, LOD/LOQ, матричные эффекты, стабильность, неопределённость [court_ilac_g19_2022].",
+        "en": "Whether reliability rests on checked parameters: accuracy, precision, selectivity, linearity, LOD/LOQ, matrix effects, stability, measurement uncertainty [court_ilac_g19_2022]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Validatsiya hisoboti: har bir ko‘rsatkich, qabul mezoni va olingan natija; tasdiqlangan sana va kim tasdiqlagan [asb036_2019].",
+            "ru": "Отчёт о валидации: каждый показатель, критерий приемлемости и результат; дата и кто утвердил [asb036_2019].",
+            "en": "Validation report: each parameter, its acceptance criterion and the result; date and approver [asb036_2019]."
+          },
+          {
+            "uz": "Usul boshqa matritsaga (masalan, murda qonidan to‘qimaga) qo‘llangan bo‘lsa — shu matritsa uchun tekshiruv [drummer2007].",
+            "ru": "Если метод применён к другой матрице (например, ткань вместо посмертной крови) — проверка для этой матрицы [drummer2007].",
+            "en": "If the method was applied to a different matrix (for example, tissue instead of postmortem blood) — verification for that matrix [drummer2007]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "ICH Q2(R2) farmatsevtika uchun yozilgan; uni sud tahliliga qo‘llash laboratoriya qarori — buni ochiq ayting [ich_q2r2_2023].",
+            "ru": "ICH Q2(R2) написан для фармацевтики; применение его к судебному анализу — решение лаборатории, скажите об этом открыто [ich_q2r2_2023].",
+            "en": "ICH Q2(R2) was written for pharmaceuticals; applying it to forensic analysis is a laboratory decision — say so openly [ich_q2r2_2023]."
+          },
+          {
+            "uz": "Usullar aynan murda namunasi turi uchun validatsiya qilinishi kerak [drummer2007].",
+            "ru": "Методы должны валидироваться именно для данного типа посмертного образца [drummer2007].",
+            "en": "Methods should be validated for the specific postmortem specimen type [drummer2007]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Ishlab chiqaruvchi yoki maqoladagi ko‘rsatkichlarni o‘z laboratoriyangiz tekshiruvisiz o‘zingiznikidek keltirish.",
+            "ru": "Приводить показатели производителя или статьи как собственные без проверки в своей лаборатории.",
+            "en": "Quoting a manufacturer's or paper's performance figures as your own without verification in your laboratory."
+          }
+        ]
+      },
+      "links": [
+        "tool:tool.lab.calibration",
+        "tool:tool.lab.lod_loq",
+        "guideline:guideline.chem.method_comparison"
+      ],
+      "citations": [
+        "court_ilac_g19_2022",
+        "asb036_2019",
+        "drummer2007",
+        "ich_q2r2_2023"
+      ]
+    },
+    {
+      "id": "court.q.method_lod",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "«Aniqlanmadi» degani modda umuman bo‘lmagan degani emasmi?",
+        "ru": "Разве «не обнаружено» не означает, что вещества вообще не было?",
+        "en": "Doesn't 'not detected' mean the substance was not there at all?"
+      },
+      "tests": {
+        "uz": "Aniqlash chegarasi (LOD) va miqdoriy aniqlash chegarasi (LOQ) ma’nosini tushunish: LOQ — oldindan belgilangan xatolik va pretsiziya maqsadlari bajariladigan eng past konsentratsiya va u LOD dan ancha yuqori bo‘lishi mumkin [court_armbruster2008].",
+        "ru": "Понимание предела обнаружения (LOD) и предела количественного определения (LOQ): LOQ — наименьшая концентрация, при которой выполняются заданные цели по смещению и прецизионности, и он может быть значительно выше LOD [court_armbruster2008].",
+        "en": "Understanding LOD and LOQ: the LOQ is the lowest concentration at which predefined bias and imprecision goals are met, and it may be much higher than the LOD [court_armbruster2008]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Shu modda va shu matritsa uchun LOD va LOQ qiymatlari hamda ular qanday aniqlangani [ich_q2r2_2023, court_armbruster2008].",
+            "ru": "Значения LOD и LOQ для данного вещества и матрицы и способ их определения [ich_q2r2_2023, court_armbruster2008].",
+            "en": "LOD and LOQ values for this analyte and matrix, and how they were determined [ich_q2r2_2023, court_armbruster2008]."
+          },
+          {
+            "uz": "Namunani olish vaqti va moddaning organizmdan chiqib ketishi yoki parchalanishi haqidagi ma’lumot [peters2007stab].",
+            "ru": "Сведения о времени отбора и о выведении или разложении вещества [peters2007stab].",
+            "en": "Information on sampling time and on elimination or degradation of the analyte [peters2007stab]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Manfiy natija «usulning aniqlash chegarasidan past» degani; u moddaning hech qachon bo‘lmaganini isbotlamaydi. Manfiy yoki noaniq natijalar identifikatsiyaga hissa qo‘shmaydi [swgdrug2024].",
+            "ru": "Отрицательный результат означает «ниже предела обнаружения метода»; он не доказывает, что вещества никогда не было. Отрицательные или неопределённые результаты не вносят вклада в идентификацию [swgdrug2024].",
+            "en": "A negative result means 'below the method's detection limit'; it does not prove the substance was never present. Negative or inconclusive results do not contribute to identification [swgdrug2024]."
+          },
+          {
+            "uz": "LOD va LOQ orasidagi natija sifat jihatdan aniqlangan, lekin ishonchli miqdor sifatida berilmaydi [court_armbruster2008].",
+            "ru": "Результат между LOD и LOQ означает качественное обнаружение, но не сообщается как надёжное количественное значение [court_armbruster2008].",
+            "en": "A result between LOD and LOQ is a qualitative detection, not a reliable quantitative value [court_armbruster2008]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "«Topilmadi» ni «iste’mol qilmagan» deb talqin qilish — bu ekspert natijasidan tashqaridagi xulosa.",
+            "ru": "Толковать «не обнаружено» как «не употреблял» — это вывод за пределами экспертного результата.",
+            "en": "Reading 'not detected' as 'did not use' — a conclusion beyond the analytical result."
+          }
+        ]
+      },
+      "links": [
+        "tool:tool.lab.lod_loq"
+      ],
+      "citations": [
+        "court_armbruster2008",
+        "ich_q2r2_2023",
+        "peters2007stab",
+        "swgdrug2024"
+      ]
+    },
+    {
+      "id": "court.q.method_uncertainty",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Natijangizning o‘lchash noaniqligi qancha? Haqiqiy qiymat chegaradan pastroq bo‘lishi mumkinmi?",
+        "ru": "Какова неопределённость измерения вашего результата? Может ли истинное значение быть ниже порога?",
+        "en": "What is the measurement uncertainty of your result? Could the true value be below the threshold?"
+      },
+      "tests": {
+        "uz": "Natija bitta son emas, balki noaniqlik oralig‘i bilan berilgan qiymat ekanini tushunish va noaniqlik qanday baholangani [court_jcgm100_2008, court_gullberg2012].",
+        "ru": "Понимание того, что результат — не одно число, а значение с интервалом неопределённости, и как неопределённость оценена [court_jcgm100_2008, court_gullberg2012].",
+        "en": "That a result is not a single number but a value with an uncertainty interval, and how that uncertainty was estimated [court_jcgm100_2008, court_gullberg2012]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Noaniqlik byudjeti: o‘lchanadigan kattalik, asosiy komponentlar, ularning miqdori va birlashtirish usuli [court_gullberg2012].",
+            "ru": "Бюджет неопределённости: измеряемая величина, основные составляющие, их оценка и способ объединения [court_gullberg2012].",
+            "en": "The uncertainty budget: the measurand, main components, their estimates and how they were combined [court_gullberg2012]."
+          },
+          {
+            "uz": "Noaniqlikni baholashda foydalanilgan validatsiya va ichki nazorat ma’lumotlari [court_quam2012].",
+            "ru": "Данные валидации и внутреннего контроля, использованные при оценке неопределённости [court_quam2012].",
+            "en": "Validation and internal QC data used to estimate the uncertainty [court_quam2012]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Noaniqlikni baholash va ifodalashning umumiy qoidalari GUM da [court_jcgm100_2008], analitik kimyoga tatbiqi Eurachem/CITAC qo‘llanmasida berilgan [court_quam2012].",
+            "ru": "Общие правила оценки и выражения неопределённости даны в GUM [court_jcgm100_2008], их применение в аналитической химии — в руководстве Eurachem/CITAC [court_quam2012].",
+            "en": "General rules for evaluating and expressing uncertainty are in the GUM [court_jcgm100_2008]; their application to analytical chemistry is in the Eurachem/CITAC guide [court_quam2012]."
+          },
+          {
+            "uz": "Natija qonuniy chegaraga yaqin bo‘lsa, noaniqlik oralig‘i chegarani qamrab oladimi — buni ochiq ko‘rsating; huquqiy oqibatni sud baholaydi (O‘zbekiston JPK) [court_uz_cpc].",
+            "ru": "Если результат близок к правовому порогу, прямо покажите, захватывает ли интервал неопределённости порог; правовые последствия оценивает суд (УПК Узбекистана) [court_uz_cpc].",
+            "en": "If a result is close to a legal threshold, show plainly whether the uncertainty interval includes it; the legal consequence is for the court to assess (Uzbekistan CPC) [court_uz_cpc]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Noaniqlikni «arzimas» deb aytish yoki natijani ortiqcha raqamlar bilan berish — bu aniqlikni haddan oshirib ko‘rsatadi [court_pcast2016].",
+            "ru": "Называть неопределённость «пренебрежимой» или давать результат с лишними знаками — это завышает точность [court_pcast2016].",
+            "en": "Calling uncertainty 'negligible' or quoting excess digits overstates precision [court_pcast2016]."
+          }
+        ]
+      },
+      "links": [
+        "tool:tool.lab.descriptive_stats",
+        "tool:tool.lab.calibration"
+      ],
+      "citations": [
+        "court_jcgm100_2008",
+        "court_gullberg2012",
+        "court_quam2012",
+        "court_uz_cpc",
+        "court_pcast2016"
+      ]
+    },
+    {
+      "id": "court.q.method_calibration",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Kalibrlash qanday qilingan va namuna natijasi kalibrlash oralig‘ida edimi?",
+        "ru": "Как выполнялась калибровка и попал ли результат образца в калибровочный диапазон?",
+        "en": "How was calibration done, and was the sample result within the calibration range?"
+      },
+      "tests": {
+        "uz": "Miqdoriy natija tasdiqlangan ishchi oraliq ichida olinganmi: chiziqlilik regressiya va qoldiqlar bilan baholanadi, oraliq bo‘ylab kamida beshta konsentratsiya tavsiya etiladi [ich_q2r2_2023].",
+        "ru": "Получен ли количественный результат в подтверждённом рабочем диапазоне: линейность оценивается регрессией и остатками, рекомендуется не менее пяти концентраций по диапазону [ich_q2r2_2023].",
+        "en": "Whether the quantitative result lies within the verified working range: linearity is assessed by regression and residuals, with at least five concentrations across the range recommended [ich_q2r2_2023]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Shu seriyaning kalibrlash grafigi, tenglama, qoldiqlar va kalibratorlar sertifikatlari [ich_q2r2_2023].",
+            "ru": "Калибровочный график серии, уравнение, остатки и сертификаты калибраторов [ich_q2r2_2023].",
+            "en": "The batch calibration curve, equation, residuals and calibrator certificates [ich_q2r2_2023]."
+          },
+          {
+            "uz": "Namuna suyultirilgan bo‘lsa — suyultirish koeffitsienti va uning hisob-kitobi.",
+            "ru": "Если образец разбавлялся — коэффициент разбавления и расчёт.",
+            "en": "If the sample was diluted — the dilution factor and the calculation."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Oraliqdan tashqaridagi natija ekstrapolyatsiya hisoblanadi; bunday holda namuna suyultiriladi yoki qayta tahlil qilinadi [ich_q2r2_2023].",
+            "ru": "Результат вне диапазона — экстраполяция; в таком случае образец разбавляют или анализируют повторно [ich_q2r2_2023].",
+            "en": "A result outside the range is an extrapolation; the sample is then diluted or re-analysed [ich_q2r2_2023]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Faqat korrelyatsiya koeffitsientini chiziqlilik isboti sifatida keltirish; qoldiqlar grafigini ham ko‘rsating [ich_q2r2_2023].",
+            "ru": "Приводить только коэффициент корреляции как доказательство линейности; покажите и график остатков [ich_q2r2_2023].",
+            "en": "Offering only a correlation coefficient as proof of linearity; show the residual plot too [ich_q2r2_2023]."
+          }
+        ]
+      },
+      "links": [
+        "tool:tool.lab.calibration",
+        "tool:tool.lab.dilution"
+      ],
+      "citations": [
+        "ich_q2r2_2023"
+      ]
+    },
+    {
+      "id": "court.q.method_matrix",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Namunadagi boshqa moddalar (matritsa) natijani buzmaganmi?",
+        "ru": "Не исказили ли результат другие компоненты образца (матрица)?",
+        "en": "Could other components of the sample (the matrix) have distorted the result?"
+      },
+      "tests": {
+        "uz": "Selektivlik va matritsa ta’siri: LC-MS/MS ham selektivlikni kafolatlamaydi — matritsa va metabolitlar ionlanishni susaytirishi yoki kuchaytirishi mumkin [matuszewski2003].",
+        "ru": "Селективность и матричные эффекты: даже ВЭЖХ-МС/МС не гарантирует селективности — матрица и метаболиты могут подавлять или усиливать ионизацию [matuszewski2003].",
+        "en": "Selectivity and matrix effects: even LC-MS/MS does not guarantee selectivity — matrix and metabolites can suppress or enhance ionisation [matuszewski2003]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Validatsiyadagi matritsa ta’siri va qaytarilish (recovery) tajribalari natijalari [matuszewski2003].",
+            "ru": "Результаты экспериментов по матричному эффекту и извлечению в валидации [matuszewski2003].",
+            "en": "Matrix-effect and recovery experiments from validation [matuszewski2003]."
+          },
+          {
+            "uz": "Ichki standart tanlovi va uning shu namunadagi javobi.",
+            "ru": "Выбор внутреннего стандарта и его отклик в данном образце.",
+            "en": "Choice of internal standard and its response in this sample."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Spetsifiklik interferensiya yo‘qligi yoki boshqa o‘lchash tamoyilidagi ortogonal usul bilan solishtirish orqali ko‘rsatiladi [ich_q2r2_2023].",
+            "ru": "Специфичность показывается отсутствием помех или сравнением с ортогональной методикой на другом принципе измерения [ich_q2r2_2023].",
+            "en": "Specificity is shown by the absence of interference or by comparison with an orthogonal procedure based on a different measurement principle [ich_q2r2_2023]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Chirigan yoki g‘ayrioddiy namunada validatsiya oddiy namunada o‘tkazilganini aytmaslik [skopp2004].",
+            "ru": "Умалчивать, что валидация проводилась на обычной матрице, а образец гнилостно изменён или нетипичен [skopp2004].",
+            "en": "Not mentioning that validation used ordinary matrix while the sample was putrefied or atypical [skopp2004]."
+          }
+        ]
+      },
+      "links": [
+        "guideline:guideline.chem.method_comparison"
+      ],
+      "citations": [
+        "matuszewski2003",
+        "ich_q2r2_2023",
+        "skopp2004"
+      ]
+    }
+  ]
+}

@@ -21,3 +21,9 @@
   topilgan xatolar (etanol letal dozasi, morfin pH, petidin formulasi, TGK foizlari, muvozanatsiz tenglamalar) tuzatiladi;
   holat NEEDS_REVIEW; muallifga ilmiy taqrizchi bo‘lish taklif qilingan.
 - Egasining reaktivlar to‘plami (o‘zi jamlagan) — egasi ruxsati bilan (2026-10-09).
+
+## 2026-10-09 — «Sudda so‘roq: tayyorgarlik» (bepul/Pro va halollik)
+- Egasi qarori: savol-javob kartalari (A–I: qisqa javob, ilmiy/huquqiy asos, aniq joyli manbalar, qo‘shimcha savollar, cheklovlar, eksport), mashq rejimi, halollik tamoyillari va asosiy simulyator ssenariylari — hamma uchun bepul.
+- Mutaxassis Pro (mavjud `FeatureGate`, `ProductFeature.courtTestimonyPrep`; billing konfiguratsiyasi o‘zgartirilmadi): barcha ssenariylar, ketma-ket rol mashqi, AI tahlili (ulanmagan — halol «tez orada», AI chaqirilmaydi), shaxsiy statistika va tarix (faqat qurilmada, `fe.court.history.v1`).
+- Bo‘lim natijani yashirish/yumshatish/buzishni o‘rgatmaydi; joyi asl matndan tasdiqlanmagan manba «Manba tekshirilmagan» deb ko‘rsatiladi va simulyatorda to‘liq ball olmaydi; holat doim NEEDS_REVIEW.
+- Huquqiy savollar yurisdiksiyaga qarab: O‘zbekiston — JPK (lex.uz/docs/111460, 111463) va «Sud ekspertizasi to‘g‘risida»gi qonun (lex.uz/docs/1633100), 2026-10-09 holatiga; boshqa — umumiy xalqaro tamoyillar. FPK tekshirilmagan — «qonun matni lex.uz da tekshirilishi kerak».

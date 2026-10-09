@@ -12284,6 +12284,642 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Related tools: calibration and limits'**
   String get calcBeerRelatedTools;
+
+  /// Section title: preparing for questioning in court.
+  ///
+  /// In en, this message translates to:
+  /// **'Court testimony: preparation'**
+  String get courtTitle;
+
+  /// Short description of the court-preparation section (Home/Library tile).
+  ///
+  /// In en, this message translates to:
+  /// **'Questions experts are asked about their conclusions, and how to prepare a scientifically sound answer'**
+  String get courtSubtitle;
+
+  /// Calm disclaimer at the top of every court-preparation screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparation material; not legal advice; a conclusion rests only on the expert\'s own examination.'**
+  String get courtDisclaimer;
+
+  /// Search field hint in the court-preparation section.
+  ///
+  /// In en, this message translates to:
+  /// **'Search questions'**
+  String get courtSearchHint;
+
+  /// Empty search result in the court-preparation section.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing found. Try another word.'**
+  String get courtNoResults;
+
+  /// Shown when the court-preparation content could not be loaded.
+  ///
+  /// In en, this message translates to:
+  /// **'The section content could not be loaded.'**
+  String get courtEmpty;
+
+  /// Header above the list of topics.
+  ///
+  /// In en, this message translates to:
+  /// **'Topics'**
+  String get courtTopics;
+
+  /// Number of questions in a topic.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 question} other{{count} questions}}'**
+  String courtQuestionCount(int count);
+
+  /// Block title: what the court or investigator is testing with the question.
+  ///
+  /// In en, this message translates to:
+  /// **'What the court is testing'**
+  String get courtTests;
+
+  /// Block title: preparing your answer (checklist).
+  ///
+  /// In en, this message translates to:
+  /// **'Preparing your answer'**
+  String get courtPrepare;
+
+  /// Checklist group: documents and data to have ready.
+  ///
+  /// In en, this message translates to:
+  /// **'Have ready: documents and data'**
+  String get courtBlockDocuments;
+
+  /// Checklist group: principles to explain.
+  ///
+  /// In en, this message translates to:
+  /// **'Principles to explain'**
+  String get courtBlockExplain;
+
+  /// Checklist group: typical pitfalls.
+  ///
+  /// In en, this message translates to:
+  /// **'Typical pitfalls'**
+  String get courtBlockPitfalls;
+
+  /// Header: related content inside the app.
+  ///
+  /// In en, this message translates to:
+  /// **'Related in the app'**
+  String get courtRelated;
+
+  /// Tooltip: copy a reference citation.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy citation'**
+  String get courtCopyCitation;
+
+  /// Snackbar after copying a citation.
+  ///
+  /// In en, this message translates to:
+  /// **'Citation copied'**
+  String get courtCitationCopied;
+
+  /// Practice mode title / button.
+  ///
+  /// In en, this message translates to:
+  /// **'Practice mode'**
+  String get courtPractice;
+
+  /// Practice mode description (button subtitle).
+  ///
+  /// In en, this message translates to:
+  /// **'A random question: think through your answer, then open the checklist.'**
+  String get courtPracticeBody;
+
+  /// Prompt under the practice question before reveal.
+  ///
+  /// In en, this message translates to:
+  /// **'First prepare your own answer: which documents and which principles would you rely on?'**
+  String get courtPracticeThink;
+
+  /// Button: reveal the preparation checklist.
+  ///
+  /// In en, this message translates to:
+  /// **'Show the checklist'**
+  String get courtPracticeReveal;
+
+  /// Accessibility hint on the practice card.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to show what the court is testing'**
+  String get courtPracticeHint;
+
+  /// Button: next random question.
+  ///
+  /// In en, this message translates to:
+  /// **'Next question'**
+  String get courtPracticeNext;
+
+  /// Button: open the full question page.
+  ///
+  /// In en, this message translates to:
+  /// **'Open full question'**
+  String get courtPracticeOpen;
+
+  /// Practice counter.
+  ///
+  /// In en, this message translates to:
+  /// **'Questions practised: {count}'**
+  String courtPracticeProgress(int count);
+
+  /// Question position inside its topic.
+  ///
+  /// In en, this message translates to:
+  /// **'Question {index} of {count}'**
+  String courtQuestionOf(int index, int count);
+
+  /// Card block B: short answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Short answer'**
+  String get courtShortAnswer;
+
+  /// Card section header: scientific and legal basis of the answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Scientific and legal basis of the answer'**
+  String get courtBasisHeader;
+
+  /// Card block C.
+  ///
+  /// In en, this message translates to:
+  /// **'Scientific / legal basis'**
+  String get courtBasis;
+
+  /// Card block D: where exactly it is written.
+  ///
+  /// In en, this message translates to:
+  /// **'Where is it written?'**
+  String get courtWhereWritten;
+
+  /// Shown instead of a bibliography line when the exact location was not verified.
+  ///
+  /// In en, this message translates to:
+  /// **'Source not verified'**
+  String get courtSourceUnverified;
+
+  /// Explains the unverified-source line.
+  ///
+  /// In en, this message translates to:
+  /// **'The exact location in this source has not been confirmed from the original text.'**
+  String get courtSourceUnverifiedNote;
+
+  /// Card blocks E/F: follow-up questions with answers.
+  ///
+  /// In en, this message translates to:
+  /// **'Follow-up questions'**
+  String get courtFollowups;
+
+  /// Card block G.
+  ///
+  /// In en, this message translates to:
+  /// **'Limitations, exceptions and uncertainties'**
+  String get courtLimitations;
+
+  /// Card block H: copy / export sources.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy sources'**
+  String get courtExport;
+
+  /// Export as plain text.
+  ///
+  /// In en, this message translates to:
+  /// **'As text'**
+  String get courtExportText;
+
+  /// Export as BibTeX.
+  ///
+  /// In en, this message translates to:
+  /// **'BibTeX'**
+  String get courtExportBibtex;
+
+  /// Snackbar after copying the list of sources.
+  ///
+  /// In en, this message translates to:
+  /// **'Sources copied'**
+  String get courtExportCopied;
+
+  /// Law source note: jurisdiction, site, date of the text.
+  ///
+  /// In en, this message translates to:
+  /// **'Uzbekistan · lex.uz · text as of {date}'**
+  String courtLawNote(String date);
+
+  /// Attribution note for teacher books.
+  ///
+  /// In en, this message translates to:
+  /// **'Used with the author\'s permission; free for everyone'**
+  String get courtBookNote;
+
+  /// Locator: article of a law.
+  ///
+  /// In en, this message translates to:
+  /// **'Art. {article}'**
+  String courtLocArticle(String article);
+
+  /// Locator: article and part.
+  ///
+  /// In en, this message translates to:
+  /// **'Art. {article}, part {part}'**
+  String courtLocArticlePart(String article, String part);
+
+  /// Locator: section of a document.
+  ///
+  /// In en, this message translates to:
+  /// **'§ {section}'**
+  String courtLocSection(String section);
+
+  /// Locator: PDF page.
+  ///
+  /// In en, this message translates to:
+  /// **'PDF p. {page}'**
+  String courtLocPdfPage(String page);
+
+  /// Locator: page range.
+  ///
+  /// In en, this message translates to:
+  /// **'pp. {pages}'**
+  String courtLocPages(String pages);
+
+  /// Locator: numbered recommendation.
+  ///
+  /// In en, this message translates to:
+  /// **'Recommendation {n}'**
+  String courtLocRecommendation(String n);
+
+  /// Locator: guidance note.
+  ///
+  /// In en, this message translates to:
+  /// **'Guidance Note {n}'**
+  String courtLocGuidanceNote(String n);
+
+  /// Locator: abstract.
+  ///
+  /// In en, this message translates to:
+  /// **'Abstract'**
+  String get courtLocAbstract;
+
+  /// Locator: scope statement on the official page.
+  ///
+  /// In en, this message translates to:
+  /// **'Scope (official page)'**
+  String get courtLocScope;
+
+  /// Locator: title and bibliographic record.
+  ///
+  /// In en, this message translates to:
+  /// **'Title and bibliographic record'**
+  String get courtLocTitle;
+
+  /// Locator: glossary.
+  ///
+  /// In en, this message translates to:
+  /// **'Glossary'**
+  String get courtLocGlossary;
+
+  /// Integrity principles card / screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Integrity principles'**
+  String get courtPrinciples;
+
+  /// Integrity principles card subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Report everything, say “I don\'t know”, correct your errors, stay independent'**
+  String get courtPrinciplesBody;
+
+  /// Intro on the integrity principles screen.
+  ///
+  /// In en, this message translates to:
+  /// **'This section never teaches hiding, softening or misrepresenting real results.'**
+  String get courtPrinciplesIntro;
+
+  /// Hub note when Uzbekistan is the selected jurisdiction.
+  ///
+  /// In en, this message translates to:
+  /// **'Legal questions: under the law of Uzbekistan'**
+  String get courtJurisdictionUz;
+
+  /// Hub note when another jurisdiction is selected.
+  ///
+  /// In en, this message translates to:
+  /// **'Legal questions: general international principles. Select Uzbekistan to see its laws.'**
+  String get courtJurisdictionIntl;
+
+  /// Button: choose jurisdiction.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose jurisdiction'**
+  String get courtJurisdictionChange;
+
+  /// Badge on a topic without verified sources yet.
+  ///
+  /// In en, this message translates to:
+  /// **'In preparation — sources being verified'**
+  String get courtPendingTopic;
+
+  /// Simulator title.
+  ///
+  /// In en, this message translates to:
+  /// **'Court questioning simulator'**
+  String get courtSimulator;
+
+  /// Simulator entry subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Answer a judge, prosecutor, defence lawyer or another expert — scored on accuracy, sources, limitations and impartiality.'**
+  String get courtSimulatorBody;
+
+  /// Simulator honesty note.
+  ///
+  /// In en, this message translates to:
+  /// **'The simulator never predetermines a case outcome and never teaches false testimony, evasion or hiding results.'**
+  String get courtSimulatorNote;
+
+  /// Simulator role.
+  ///
+  /// In en, this message translates to:
+  /// **'Judge'**
+  String get courtRoleJudge;
+
+  /// Simulator role.
+  ///
+  /// In en, this message translates to:
+  /// **'Prosecutor'**
+  String get courtRoleProsecutor;
+
+  /// Simulator role.
+  ///
+  /// In en, this message translates to:
+  /// **'Defence lawyer'**
+  String get courtRoleDefense;
+
+  /// Simulator role: another expert.
+  ///
+  /// In en, this message translates to:
+  /// **'Another expert'**
+  String get courtRoleExpert;
+
+  /// Scenario context label.
+  ///
+  /// In en, this message translates to:
+  /// **'Situation'**
+  String get courtSimContext;
+
+  /// Free-text answer label.
+  ///
+  /// In en, this message translates to:
+  /// **'Your own answer (optional)'**
+  String get courtSimYourAnswer;
+
+  /// Free-text hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Type your answer…'**
+  String get courtSimYourAnswerHint;
+
+  /// Button: evaluate the typed answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Check my wording'**
+  String get courtSimEvaluateText;
+
+  /// Header above answer options.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose the best answer'**
+  String get courtSimChoose;
+
+  /// Button: check the chosen option.
+  ///
+  /// In en, this message translates to:
+  /// **'Check answer'**
+  String get courtSimCheck;
+
+  /// Header: evaluation.
+  ///
+  /// In en, this message translates to:
+  /// **'Evaluation'**
+  String get courtSimResult;
+
+  /// Total score.
+  ///
+  /// In en, this message translates to:
+  /// **'Total: {score}/{max}'**
+  String courtSimTotal(int score, int max);
+
+  /// Header: model answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Model answer'**
+  String get courtSimBest;
+
+  /// Button: next scenario.
+  ///
+  /// In en, this message translates to:
+  /// **'Next scenario'**
+  String get courtSimNext;
+
+  /// Button: open related card.
+  ///
+  /// In en, this message translates to:
+  /// **'Open the related card'**
+  String get courtSimOpenQuestion;
+
+  /// Note under the automatic free-text evaluation.
+  ///
+  /// In en, this message translates to:
+  /// **'Automatic, keyword-based and approximate. Compare scientific accuracy with the model answer yourself.'**
+  String get courtSimFreeTextNote;
+
+  /// Warning: absolute wording detected.
+  ///
+  /// In en, this message translates to:
+  /// **'Absolute wording found (“100%”, “definitely”…) — certainty may be overstated.'**
+  String get courtSimFlagOverstatement;
+
+  /// Warning: evasive wording detected.
+  ///
+  /// In en, this message translates to:
+  /// **'Evasive wording found — give the reason and what lies within your field.'**
+  String get courtSimFlagEvasion;
+
+  /// Warning: answer too short.
+  ///
+  /// In en, this message translates to:
+  /// **'The answer is too short.'**
+  String get courtSimTooShort;
+
+  /// Criterion.
+  ///
+  /// In en, this message translates to:
+  /// **'Scientific accuracy'**
+  String get courtCritAccuracy;
+
+  /// Criterion.
+  ///
+  /// In en, this message translates to:
+  /// **'Reliance on sources'**
+  String get courtCritSources;
+
+  /// Criterion.
+  ///
+  /// In en, this message translates to:
+  /// **'Explaining limitations'**
+  String get courtCritLimitations;
+
+  /// Criterion.
+  ///
+  /// In en, this message translates to:
+  /// **'Impartiality'**
+  String get courtCritImpartiality;
+
+  /// Number of scenarios.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 scenario} other{{count} scenarios}}'**
+  String courtScenarioCount(int count);
+
+  /// Pro features card title.
+  ///
+  /// In en, this message translates to:
+  /// **'Advanced preparation in {tier}'**
+  String courtProTitle(String tier);
+
+  /// Pro features card body.
+  ///
+  /// In en, this message translates to:
+  /// **'Full simulator (all scenarios), sequential role drills, AI analysis (coming soon), personal statistics and history. Q&A cards with sources are free for everyone.'**
+  String get courtProBody;
+
+  /// Small badge on Pro-only entries.
+  ///
+  /// In en, this message translates to:
+  /// **'Pro'**
+  String get courtProBadge;
+
+  /// Simulator list note for free users.
+  ///
+  /// In en, this message translates to:
+  /// **'Free: basic scenarios. The other scenarios, role drills and statistics are in Pro.'**
+  String get courtSimFreeNote;
+
+  /// Pro: sequential role drill.
+  ///
+  /// In en, this message translates to:
+  /// **'Role drill'**
+  String get courtDrill;
+
+  /// Role drill subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Judge → prosecutor → defence → another expert, one after another'**
+  String get courtDrillBody;
+
+  /// Role drill progress.
+  ///
+  /// In en, this message translates to:
+  /// **'Step {index} of {count}'**
+  String courtDrillStep(int index, int count);
+
+  /// Button: next role in the drill.
+  ///
+  /// In en, this message translates to:
+  /// **'Next role'**
+  String get courtDrillNext;
+
+  /// Role drill finished.
+  ///
+  /// In en, this message translates to:
+  /// **'Role drill complete'**
+  String get courtDrillDone;
+
+  /// Pro: statistics and history.
+  ///
+  /// In en, this message translates to:
+  /// **'Statistics and history'**
+  String get courtStats;
+
+  /// Statistics subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your scores and attempt history — stored on this device only'**
+  String get courtStatsBody;
+
+  /// Number of attempts.
+  ///
+  /// In en, this message translates to:
+  /// **'Attempts: {count}'**
+  String courtStatsAttempts(int count);
+
+  /// Average by criterion header.
+  ///
+  /// In en, this message translates to:
+  /// **'Average score by criterion'**
+  String get courtStatsAverage;
+
+  /// History header.
+  ///
+  /// In en, this message translates to:
+  /// **'History'**
+  String get courtStatsHistory;
+
+  /// No attempts yet.
+  ///
+  /// In en, this message translates to:
+  /// **'No attempts yet.'**
+  String get courtStatsEmpty;
+
+  /// Button: clear history.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear history'**
+  String get courtStatsClear;
+
+  /// Pro: AI analysis of the answer.
+  ///
+  /// In en, this message translates to:
+  /// **'AI analysis'**
+  String get courtAi;
+
+  /// Honest unavailable state for AI analysis.
+  ///
+  /// In en, this message translates to:
+  /// **'AI analysis is not connected yet — coming soon. Your answer was not sent anywhere.'**
+  String get courtAiUnavailable;
+
+  /// Cap note: answer relies on an unverified source.
+  ///
+  /// In en, this message translates to:
+  /// **'Partial — unverified source: this answer relies on a source whose location is not verified.'**
+  String get courtSimPartialUnverified;
+
+  /// Note under every simulator evaluation.
+  ///
+  /// In en, this message translates to:
+  /// **'Scores are based on material awaiting expert review (NEEDS_REVIEW); the model answer is not a verified truth either.'**
+  String get courtSimReviewNote;
+
+  /// AI analysis button label for free users.
+  ///
+  /// In en, this message translates to:
+  /// **'AI analysis (Pro)'**
+  String get courtAiPro;
+
+  /// Screen-reader label of a score bar.
+  ///
+  /// In en, this message translates to:
+  /// **'{criterion}: {score} of 2'**
+  String courtScoreSemantics(String criterion, int score);
 }
 
 class _AppLocalizationsDelegate

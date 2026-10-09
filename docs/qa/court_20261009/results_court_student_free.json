@@ -1,0 +1,115 @@
+{
+  "role": "court",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "c01",
+      "title": "[student] Asosiy: «Sudda so‘roq» kirish nuqtasi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "c02",
+      "title": "[student] Kutubxona → bo‘lim: tamoyillar, mashq, simulyator, Pro imkoniyatlari",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c02_student_kutubxona_bo_lim_tamoyillar_mash.png"
+    },
+    {
+      "id": "c03",
+      "title": "[student] Karta: A savol, holat, B qisqa javob",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "c04",
+      "title": "[student] Karta: C asos va D «Qaysi manbada yozilgan?»",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "c05",
+      "title": "[student] Karta: E/F qo‘shimcha savol, G cheklov, H eksport",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "c06",
+      "title": "[student] «Manba tekshirilmagan» belgisi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "c07",
+      "title": "[student] Yurisdiksiya O‘zbekiston: huquq va majburiyatlar (lex.uz)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "c08",
+      "title": "[student] Simulyator: asosiy ssenariy, baho 4 mezon",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "c09",
+      "title": "[student] AI tahlili: Pro → tariflar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "c10",
+      "title": "[student] Rol mashqi: Pro → tariflar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "c11",
+      "title": "[student] Statistika va tarix (faqat qurilmada)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "c12",
+      "title": "[student] Qidiruv: «LOQ» va bo‘sh natija",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "c13",
+      "title": "[student] 320 dp: karta va manbalar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "c14",
+      "title": "[student] 320 dp: simulyator",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "c15",
+      "title": "Tarmoq o‘chiq (barcha HTTP bloklangan)",
+      "result": "PASS",
+      "notes": [
+        "Bloklangan HTTP urinishlari: 0"
+      ],
+      "screenshot": null
+    }
+  ],
+  "pass": 15,
+  "fail": 0
+}

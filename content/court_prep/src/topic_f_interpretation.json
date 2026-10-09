@@ -1,0 +1,275 @@
+{
+  "topic": {
+    "id": "court.topic.interpretation",
+    "order": 9,
+    "icon": "insights",
+    "title": {
+      "uz": "Interpretatsiya chegaralari",
+      "ru": "Пределы интерпретации",
+      "en": "Limits of interpretation"
+    },
+    "summary": {
+      "uz": "Konsentratsiya va o‘lim sababi, o‘limdan keyingi qayta taqsimlanish, etanol hosil bo‘lishi, orqaga hisoblash, parchalanish.",
+      "ru": "Концентрация и причина смерти, посмертное перераспределение, образование этанола, обратный расчёт, разложение.",
+      "en": "Concentration and cause of death, postmortem redistribution, ethanol formation, back-calculation, degradation."
+    }
+  },
+  "questions": [
+    {
+      "id": "court.q.interp_cause_of_death",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Topilgan konsentratsiya o‘limga sabab bo‘lganmi?",
+        "ru": "Стала ли обнаруженная концентрация причиной смерти?",
+        "en": "Did the concentration found cause the death?"
+      },
+      "tests": {
+        "uz": "Kimyoviy natija va o‘lim sababi haqidagi xulosa o‘rtasidagi chegarani bilish: o‘limdan keyingi konsentratsiyalar bir xil qiymatda ham turli oqibatlarga mos kelishi mumkin [court_ketola2019, court_druid1997].",
+        "ru": "Понимание границы между химическим результатом и выводом о причине смерти: одни и те же посмертные концентрации встречаются при разных исходах [court_ketola2019, court_druid1997].",
+        "en": "Knowing the boundary between a chemical result and a cause-of-death opinion: the same postmortem concentrations occur with different outcomes [court_ketola2019, court_druid1997]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Namuna turi va olish joyi, boshqa topilgan moddalar, ish holatlari va tibbiy tarix haqidagi mavjud ma’lumot [skopp2010].",
+            "ru": "Тип образца и место отбора, другие обнаруженные вещества, имеющиеся сведения об обстоятельствах и анамнезе [skopp2010].",
+            "en": "Specimen type and site, other substances found, available information on circumstances and medical history [skopp2010]."
+          },
+          {
+            "uz": "Taqqoslash uchun tekshirilgan ma’lumotnoma: barcha o‘lim sabablari bo‘yicha taqsimot va nazorat guruhlari bilan to‘plamlar [court_ketola2019, court_druid1997].",
+            "ru": "Проверенные справочные данные для сравнения: распределения по всем причинам смерти и сводки с контрольными группами [court_ketola2019, court_druid1997].",
+            "en": "Verified reference data for comparison: distributions across all causes of death and compilations with control groups [court_ketola2019, court_druid1997]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Ma’lumotnoma qiymatlari bitta chegara emas, taqsimot: median «odatiy» darajani, yuqori persentillar mumkin bo‘lgan zaharlanish darajasini ko‘rsatadi [court_ketola2019]; «o‘ldiradigan konsentratsiya» jadvallari chalg‘itishi mumkin [ferner2008, kennedy2010].",
+            "ru": "Справочные значения — это распределения, а не один порог: медиана показывает «обычный» уровень, верхние перцентили — возможный уровень отравления [court_ketola2019]; таблицы «летальных концентраций» могут вводить в заблуждение [ferner2008, kennedy2010].",
+            "en": "Reference values are distributions, not a single cut-off: the median shows the 'usual' level and upper percentiles a possible overdose level [court_ketola2019]; tables of 'lethal concentrations' can mislead [ferner2008, kennedy2010]."
+          },
+          {
+            "uz": "Hech bir konsentratsiya alohida talqin qilinmaydi: tolerantlik, boshqa moddalar va o‘limdan keyingi o‘zgarishlar hisobga olinadi [drummer2004]. O‘lim sababi haqidagi yakuniy xulosa sud-tibbiyot ekspertizasi bilan birga shakllanadi [skopp2010].",
+            "ru": "Ни одна концентрация не интерпретируется изолированно: учитываются толерантность, другие вещества и посмертные изменения [drummer2004]. Итоговый вывод о причине смерти формируется вместе с судебно-медицинской экспертизой [skopp2010].",
+            "en": "No concentration is interpreted in isolation: tolerance, other substances and postmortem changes are considered [drummer2004]. The final cause-of-death opinion is formed together with the forensic pathology findings [skopp2010]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Bitta jadval qiymatiga tayanib «o‘ldiradigan doza» deb aytish yoki sud-tibbiyot eksperti vakolatidagi xulosani o‘z zimmangizga olish [ferner2008].",
+            "ru": "Говорить «смертельная доза» по одному табличному значению или брать на себя вывод из компетенции судебно-медицинского эксперта [ferner2008].",
+            "en": "Declaring a 'lethal dose' from one table value, or taking on an opinion that belongs to the forensic pathologist [ferner2008]."
+          }
+        ]
+      },
+      "links": [
+        "guideline:guideline.tox.postmortem_interpretation"
+      ],
+      "citations": [
+        "court_ketola2019",
+        "skopp2010",
+        "court_druid1997",
+        "ferner2008",
+        "kennedy2010",
+        "drummer2004"
+      ]
+    },
+    {
+      "id": "court.q.interp_redistribution",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "O‘limdan keyin modda qonda qayta taqsimlanib, konsentratsiya oshib ketgan bo‘lishi mumkinmi?",
+        "ru": "Не могла ли концентрация повыситься из-за посмертного перераспределения вещества?",
+        "en": "Could the concentration have risen through postmortem redistribution?"
+      },
+      "tests": {
+        "uz": "O‘limdan keyingi qayta taqsimlanish — joyga va vaqtga bog‘liq o‘zgarish; zahira a’zolardan (oshqozon-ichak, jigar, o‘pka, miokard) chiqish bilan bog‘liq [pelissier2003].",
+        "ru": "Посмертное перераспределение — изменения, зависящие от места и времени; связаны с выходом вещества из депо (ЖКТ, печень, лёгкие, миокард) [pelissier2003].",
+        "en": "Postmortem redistribution is site- and time-dependent change, linked to release from reservoirs (GI tract, liver, lungs, myocardium) [pelissier2003]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Namuna olish joyi va vaqti, o‘lim va yorib ko‘rish orasidagi vaqt, tananing holati (chirish belgilari) [pelissier2003].",
+            "ru": "Место и время отбора, интервал между смертью и вскрытием, состояние тела (признаки гниения) [pelissier2003].",
+            "en": "Sampling site and time, interval between death and autopsy, state of the body (signs of decomposition) [pelissier2003]."
+          },
+          {
+            "uz": "Moddaning taqsimlanish hajmi, lipofilligi va pKa qiymati haqidagi ma’lumot [yarema2005].",
+            "ru": "Сведения об объёме распределения, липофильности и pKa вещества [yarema2005].",
+            "en": "The drug's volume of distribution, lipophilicity and pKa [yarema2005]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Taqsimlanish hajmi katta bo‘lgan asosli lipofil moddalar ayniqsa sezgir, lekin yagona emas [pelissier2003]; periferik qon va bir nechta namunani solishtirish bu ta’sirni baholashga yordam beradi [yarema2005].",
+            "ru": "Особенно подвержены основные липофильные вещества с большим объёмом распределения, но не только они [pelissier2003]; сравнение периферической крови и нескольких образцов помогает оценить эффект [yarema2005].",
+            "en": "Basic lipophilic drugs with a large volume of distribution are especially susceptible, but not the only ones [pelissier2003]; comparing peripheral blood with several specimens helps assess the effect [yarema2005]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Qayta taqsimlanish miqdorini aniq foiz bilan aytish — bu umumlashtirib bo‘lmaydigan, holatga bog‘liq hodisa [pelissier2003].",
+            "ru": "Называть величину перераспределения точным процентом — это зависящее от случая явление, не поддающееся обобщению [pelissier2003].",
+            "en": "Putting an exact percentage on redistribution — it is case-dependent and cannot be generalised [pelissier2003]."
+          }
+        ]
+      },
+      "links": [
+        "guideline:guideline.tox.postmortem_interpretation"
+      ],
+      "citations": [
+        "pelissier2003",
+        "yarema2005"
+      ]
+    },
+    {
+      "id": "court.q.interp_ethanol_neoformation",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Murdadagi alkogol o‘limdan keyin hosil bo‘lgan bo‘lishi mumkin emasmi?",
+        "ru": "Не мог ли алкоголь в трупе образоваться после смерти?",
+        "en": "Couldn't the alcohol in the body have formed after death?"
+      },
+      "tests": {
+        "uz": "O‘limdan keyin mikroblar ta’sirida etanol hosil bo‘lishi va uni tirikligida iste’mol qilinganidan ajratish usullarini bilish [boumba2008, lin2020].",
+        "ru": "Знание посмертного микробного образования этанола и способов отличить его от прижизненного употребления [boumba2008, lin2020].",
+        "en": "Knowledge of postmortem microbial ethanol formation and how to distinguish it from ingestion [boumba2008, lin2020]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Muqobil namunalar natijalari: ko‘z shishasimon suyuqligi, siydik [kugelberg2007]; EtG/EtS va chirish belgilari (n-propanol, n-butanol) bo‘yicha ma’lumot [lin2020].",
+            "ru": "Результаты по альтернативным образцам: стекловидное тело, моча [kugelberg2007]; данные по EtG/EtS и маркерам гниения (н-пропанол, н-бутанол) [lin2020].",
+            "en": "Results from alternative specimens: vitreous humour, urine [kugelberg2007]; EtG/EtS and putrefaction markers (n-propanol, n-butanol) [lin2020]."
+          },
+          {
+            "uz": "Jasadning holati, suvdan chiqarilganmi, o‘limdan keyingi vaqt [kugelberg2007].",
+            "ru": "Состояние тела, извлечено ли из воды, посмертный интервал [kugelberg2007].",
+            "en": "State of the body, recovery from water, postmortem interval [kugelberg2007]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "O‘limdan keyin uglevodlar, aminokislotalar va glitserin mikroblar tomonidan bijg‘itiladi; etanol bilan birga boshqa uchuvchi moddalar ham hosil bo‘ladi [boumba2008].",
+            "ru": "После смерти микробы сбраживают углеводы, аминокислоты и глицерин; вместе с этанолом образуются и другие летучие вещества [boumba2008].",
+            "en": "After death microbes ferment carbohydrates, amino acids and glycerol; other volatiles are formed alongside ethanol [boumba2008]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Faqat bitta qon namunasiga tayanib, iste’mol yoki o‘limdan keyingi hosil bo‘lishni qat’iy tasdiqlash yoki rad etish [kugelberg2007, lin2020].",
+            "ru": "Категорически утверждать или отрицать употребление либо посмертное образование по одному образцу крови [kugelberg2007, lin2020].",
+            "en": "Firmly asserting or excluding ingestion or postmortem formation from a single blood sample [kugelberg2007, lin2020]."
+          }
+        ]
+      },
+      "links": [
+        "guideline:guideline.chem.ethanol_gc",
+        "guideline:guideline.tox.postmortem_interpretation"
+      ],
+      "citations": [
+        "boumba2008",
+        "lin2020",
+        "kugelberg2007"
+      ]
+    },
+    {
+      "id": "court.q.interp_back_calculation",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Hodisa vaqtidagi qondagi alkogol miqdorini aniq hisoblab bera olasizmi?",
+        "ru": "Можете ли вы точно рассчитать концентрацию алкоголя в крови на момент происшествия?",
+        "en": "Can you calculate exactly what the blood alcohol was at the time of the incident?"
+      },
+      "tests": {
+        "uz": "Orqaga hisoblashning taxminlarga bog‘liqligini tushunish: etanol chiqarilish tezligi odamdan odamga sezilarli farq qiladi [jones2010].",
+        "ru": "Понимание того, что обратный расчёт зависит от допущений: скорость элиминации этанола заметно различается у разных людей [jones2010].",
+        "en": "Understanding that back-calculation rests on assumptions: ethanol elimination rates vary considerably between individuals [jones2010]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Namuna olingan va hodisa vaqtlari, ichimlik ichish vaqti haqida ishdagi ma’lumot; o‘lchash natijasi va uning noaniqligi [court_gullberg2012].",
+            "ru": "Время отбора и происшествия, сведения о времени употребления из дела; результат и его неопределённость [court_gullberg2012].",
+            "en": "Times of sampling and of the incident, information on drinking times in the file; the result and its uncertainty [court_gullberg2012]."
+          },
+          {
+            "uz": "Hisoblashda ishlatilgan har bir taxmin (chiqarilish tezligi oralig‘i, so‘rilish tugaganmi) va manbasi [jones2010].",
+            "ru": "Каждое допущение расчёта (диапазон скорости элиминации, завершилось ли всасывание) и его источник [jones2010].",
+            "en": "Every assumption used (elimination-rate range, whether absorption was complete) and its source [jones2010]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Natija bitta son emas, taxminlar oralig‘i bilan berilgan baho; taxminlar o‘zgarsa, natija ham o‘zgaradi [jones2010].",
+            "ru": "Результат — не одно число, а оценка в диапазоне допущений; при иных допущениях результат меняется [jones2010].",
+            "en": "The answer is an estimate across a range of assumptions, not a single number; different assumptions change it [jones2010]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Bitta «o‘rtacha» chiqarilish tezligi bilan aniq son berish va noaniqlikni ko‘rsatmaslik [jones2010, court_pcast2016].",
+            "ru": "Давать точное число по одной «средней» скорости элиминации без указания неопределённости [jones2010, court_pcast2016].",
+            "en": "Giving an exact figure from one 'average' elimination rate without stating the uncertainty [jones2010, court_pcast2016]."
+          }
+        ]
+      },
+      "links": [
+        "tool:tool.tox.back_calculation",
+        "tool:tool.tox.widmark",
+        "guideline:guideline.chem.ethanol_gc"
+      ],
+      "citations": [
+        "jones2010",
+        "court_gullberg2012",
+        "court_pcast2016"
+      ]
+    },
+    {
+      "id": "court.q.interp_degradation",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Modda o‘limdan keyin yoki saqlashda parchalanib ketgan bo‘lsa, natija qanday talqin qilinadi?",
+        "ru": "Как интерпретировать результат, если вещество могло разложиться после смерти или при хранении?",
+        "en": "How should the result be read if the substance may have degraded after death or in storage?"
+      },
+      "tests": {
+        "uz": "Ayrim moddalarning (masalan, geroin, kokain, benzodiazepinlar) o‘limdan keyin beqarorligini va bu manfiy yoki past natijaga ta’sirini bilish [drummer2004].",
+        "ru": "Знание посмертной нестабильности ряда веществ (например, героина, кокаина, бензодиазепинов) и её влияния на отрицательный или низкий результат [drummer2004].",
+        "en": "Awareness that some drugs (for example, heroin, cocaine, benzodiazepines) are unstable after death and how this affects a negative or low result [drummer2004]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Metabolitlar natijalari (masalan, ona modda o‘rniga barqarorroq metabolit) va saqlash sharoiti [drummer2004, peters2007stab].",
+            "ru": "Результаты по метаболитам (например, более стабильный метаболит вместо исходного вещества) и условия хранения [drummer2004, peters2007stab].",
+            "en": "Metabolite results (for example, a more stable metabolite instead of the parent drug) and storage conditions [drummer2004, peters2007stab]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Chirigan jasadlarda moddalar ham hosil bo‘lishi, ham parchalanishi mumkin; talqin ish ma’lumotlari yetarli bo‘lmasa cheklanadi [skopp2010].",
+            "ru": "В гнилостно изменённых телах вещества могут как образовываться, так и разрушаться; при недостатке сведений по делу интерпретация ограничена [skopp2010].",
+            "en": "In decomposed bodies substances can be both formed and degraded; interpretation is limited when case information is inadequate [skopp2010]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Parchalanish ehtimolini aytmasdan past natijani «terapevtik daraja» deb baholash [drummer2004].",
+            "ru": "Оценивать низкий результат как «терапевтический уровень», не упомянув возможное разложение [drummer2004].",
+            "en": "Calling a low result 'therapeutic' without mentioning possible degradation [drummer2004]."
+          }
+        ]
+      },
+      "links": [
+        "guideline:guideline.tox.postmortem_interpretation",
+        "guideline:guideline.tox.specimen_preanalytics"
+      ],
+      "citations": [
+        "drummer2004",
+        "peters2007stab",
+        "skopp2010"
+      ]
+    }
+  ]
+}
