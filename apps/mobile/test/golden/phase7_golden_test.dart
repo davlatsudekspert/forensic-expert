@@ -249,7 +249,7 @@ void main() {
           route: Routes.library,
           size: small,
           scale: 1.3,
-          scrollTo: const Key('library.hub.review'),
+          scrollTo: const Key('library.hub.conflicts'),
           tap: null,
         ),
       ];

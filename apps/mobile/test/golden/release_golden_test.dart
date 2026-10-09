@@ -117,7 +117,7 @@ void main() {
           route: Routes.profile,
           auth: false,
           store: FakeStore(),
-          scrollTo: const Key('profile.register'),
+          scrollTo: const Key('profile.emailCode'),
         ),
       ];
 

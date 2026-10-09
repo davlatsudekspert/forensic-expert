@@ -38,8 +38,8 @@ void main() {
       await tester.pump(const Duration(milliseconds: 300));
       await tester.pumpAndSettle();
       expect(find.byKey(const Key('search.hit.TEST-SUB-ETOH')), findsOneWidget);
-      // Offline va tashqi qidiruv vizual ajratilgan.
-      expect(find.byKey(const Key('search.external')), findsOneWidget);
+      // «Rejalashtirilgan» tashqi qidiruv bloki ko‘rsatilmaydi.
+      expect(find.byKey(const Key('search.external')), findsNothing);
       await tester.testTextInput.receiveAction(TextInputAction.search);
       await tester.pumpAndSettle();
       expect(c.read(userDataProvider).recentSearches, ['Etanol']);
@@ -404,7 +404,9 @@ void main() {
         tester,
         settings: completedSettings(mode: UserMode.student),
       );
-      await tapKey(tester, 'home.continueLearning');
+      // Ta’lim — modullar to‘ridagi bitta kirish (takroriy karta yo‘q).
+      expect(find.byKey(const Key('home.continueLearning')), findsNothing);
+      await tapKey(tester, 'home.module.learn');
       expect(find.byType(LearnScreen), findsOneWidget);
       expect(find.text('SAMPLE'), findsWidgets);
       c.read(routerProvider).go(Routes.home);

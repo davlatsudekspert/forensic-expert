@@ -8,6 +8,7 @@ import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/widgets/common.dart';
 import 'package:forensic_expert/domain/ports/ai_ports.dart';
+import 'package:forensic_expert/features/account/presentation/auth_screens.dart';
 import 'package:forensic_expert/features/placeholder/presentation/in_development_view.dart';
 
 import '../helpers/fake_store.dart';
@@ -189,7 +190,7 @@ void main() {
         'NAMOYISH deb belgilangan; oflayn qidiruv ishlaydi', (tester) async {
       await open(tester, Routes.ai);
       expect(find.byKey(const Key('ai.previewState')), findsOneWidget);
-      expect(find.text('Preview · not connected'), findsOneWidget);
+      expect(find.text('Not available yet'), findsOneWidget);
       final send = find.byKey(const Key('ai.send'));
       expect(tester.widget<ButtonStyleButton>(send).onPressed, isNull);
       expect(find.byKey(const Key('ai.sendUnavailable')), findsOneWidget);
@@ -217,11 +218,15 @@ void main() {
       expect(find.byKey(const Key('ai.signInRequired')), findsOneWidget);
       expect(find.byKey(const Key('ai.previewState')), findsNothing);
       expect(find.text('Sign-in required'), findsOneWidget);
-      expect(find.text('Preview · not connected'), findsNothing);
+      expect(find.text('Not available yet'), findsNothing);
       expect(find.byKey(const Key('ai.demoLabel')), findsNothing);
+      await tester.ensureVisible(find.byKey(const Key('ai.signIn')));
+      await tester.pumpAndSettle();
       await tester.tap(find.byKey(const Key('ai.signIn')));
       await tester.pumpAndSettle();
       expect(find.byKey(const Key('ai.signInRequired')), findsNothing);
+      // Kirish — email kod ekrani (parol bilan kirish emas).
+      expect(find.byType(EmailCodeScreen), findsOneWidget);
     });
 
     testWidgets('kutubxona: ixcham holat belgisi, nom → guruh → holat', (
@@ -257,12 +262,17 @@ void main() {
       expect(ref.status, ScientificStatus.needsReview);
     });
 
-    testWidgets('kalkulyator plitkasi: «modul sinovdan o‘tgan» va formula '
-        'holati alohida', (tester) async {
+    testWidgets('vositalar: holat har plitkada emas — ro‘yxat ustida bitta '
+        'eslatma', (tester) async {
       await open(tester, Routes.tools);
+      expect(find.byKey(const Key('tools.reviewNote')), findsOneWidget);
+      expect(
+        find.textContaining('not yet been confirmed by an expert'),
+        findsOneWidget,
+      );
       expect(
         find.byKey(const Key('tool.engineTested.tool.lab.dilution')),
-        findsOneWidget,
+        findsNothing,
       );
     });
 

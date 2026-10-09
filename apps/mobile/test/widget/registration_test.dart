@@ -59,6 +59,7 @@ void main() {
         ),
         findsOneWidget,
       );
+      await tapKey(tester, 'mode.roles');
       await tapKey(tester, 'role.forensicToxicologist');
       await tapKey(tester, 'mode.continue');
       expect(repo.value.userMode, UserMode.professional);
@@ -88,6 +89,7 @@ void main() {
       );
       await tapKey(tester, 'mode.student');
       expect(find.byKey(const Key('mode.proNote')), findsNothing);
+      await tapKey(tester, 'mode.roles');
       await tapKey(tester, 'role.residentTrainee');
       await tapKey(tester, 'mode.continue');
       expect(repo.value.userMode, UserMode.student);

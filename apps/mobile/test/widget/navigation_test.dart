@@ -140,7 +140,7 @@ void main() {
     await tester.tap(find.byKey(const Key('nav.ai')));
     await tester.pumpAndSettle();
     expect(find.byKey(const Key('ai.piiWarning')), findsOneWidget);
-    expect(find.text('Production AI service is not connected'), findsOneWidget);
+    expect(find.text('AI is temporarily unavailable'), findsOneWidget);
   });
 
   testWidgets('rejimga qarab Home modullari tartibi', (tester) async {
