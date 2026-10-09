@@ -82,7 +82,7 @@ void main() {
       await qa.tapText(l.disclaimerAccept);
       await qa.tapText(l.modeStudent);
       await qa.tapText(l.actionContinue);
-      await qa.tapText('Hisobsiz davom etish');
+      await qa.tapFinder(find.byKey(const Key('account.skip')));
       goTo(tester, Routes.accountEmailCode);
       await qa.settle();
       await mockSignIn(qa, tester, 'qa.admin@example.test');

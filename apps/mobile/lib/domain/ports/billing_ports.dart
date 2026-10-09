@@ -279,6 +279,10 @@ enum ProductFeature {
   jurisdictionLayers,
   verifiedReferences,
 
+  /// «Sudda so‘roq: tayyorgarlik» — ekspert uchun tayyorgarlik materiali
+  /// (bepul demoda faqat namunaviy savollar).
+  courtTestimonyPrep,
+
   /// Hech qachon pullik devor ortida emas: disclaimer, ogohlantirishlar,
   /// cheklovlar, manbalar/provenance tizimi.
   safetyAndProvenance,
@@ -317,6 +321,7 @@ abstract final class FeatureGate {
     ProductFeature.professionalCalculators ||
     ProductFeature.analyticalMethods ||
     ProductFeature.researchAndEvidence ||
+    ProductFeature.courtTestimonyPrep ||
     ProductFeature.professionalAi => PlanTier.professionalPro,
   };
 

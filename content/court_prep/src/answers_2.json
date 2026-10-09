@@ -1,0 +1,384 @@
+{
+  "court.q.qa_accreditation": {
+    "short_answer": {
+      "uz": "Akkreditatsiya bo‘lsa — guvohnoma va uning qamrovi aynan shu usulni o‘z ichiga olishini ko‘rsataman; bo‘lmasa, buni ochiq aytaman va ichki sifat tizimi, nazoratlar va malaka sinovlari yozuvlarini taqdim etaman [court_ilac_g19_2022]. Akkreditatsiya tizimli kompetensiyani ko‘rsatadi, aniq natijani avtomatik to‘g‘ri qilmaydi [court_ilac_g19_2022].",
+      "ru": "Если аккредитация есть — показываю аттестат и что его область включает этот метод; если нет — говорю об этом открыто и представляю записи системы качества, контролей и проверок квалификации [court_ilac_g19_2022]. Аккредитация показывает системную компетентность, но не делает результат автоматически верным [court_ilac_g19_2022].",
+      "en": "If accredited, I show the certificate and that its scope covers this method; if not, I say so openly and present quality-system, control and proficiency-test records [court_ilac_g19_2022]. Accreditation shows systemic competence; it does not make a case result automatically correct [court_ilac_g19_2022]."
+    },
+    "followups": [
+      {
+        "q": {"uz": "ISO/IEC 17025 nima?", "ru": "Что такое ISO/IEC 17025?", "en": "What is ISO/IEC 17025?"},
+        "a": {"uz": "Sinov va kalibrlash laboratoriyalari kompetensiyasiga umumiy talablar standarti; ILAC-G19 uni sud-ekspert jarayoniga qo‘llash bo‘yicha yo‘l-yo‘riq beradi [court_iso17025_2017, court_ilac_g19_2022].", "ru": "Стандарт общих требований к компетентности испытательных и калибровочных лабораторий; ILAC-G19 даёт руководство по его применению в судебно-экспертном процессе [court_iso17025_2017, court_ilac_g19_2022].", "en": "The standard of general requirements for the competence of testing and calibration laboratories; ILAC-G19 guides its application to the forensic process [court_iso17025_2017, court_ilac_g19_2022]."}
+      },
+      {
+        "q": {"uz": "Akkreditatsiya majburiymi?", "ru": "Обязательна ли аккредитация?", "en": "Is accreditation mandatory?"},
+        "a": {"uz": "Bu mamlakat qonuniga bog‘liq; xalqaro sharhlarda majburiy akkreditatsiya tavsiya etilgan (AQSh uchun yozilgan tavsiya) [court_nas2009].", "ru": "Это зависит от закона страны; в международных обзорах рекомендована обязательная аккредитация (рекомендация для США) [court_nas2009].", "en": "It depends on national law; international reviews have recommended mandatory accreditation (a US recommendation) [court_nas2009]."}
+      }
+    ],
+    "limitations": [
+      {"uz": "ISO/IEC 17025 matni bu yerda o‘qilmagan (iso.org avtomatik kirishni rad etdi); standart faqat nomi va nashri bo‘yicha keltirildi.", "ru": "Текст ISO/IEC 17025 здесь не читался (iso.org отказал в автоматическом доступе); стандарт приведён только по названию и изданию.", "en": "The ISO/IEC 17025 text was not read here (iso.org refused automated access); the standard is cited by title and edition only."}
+    ],
+    "locators": {"court_iso17025_2017": null, "court_ilac_g19_2022": ["sec:3.7", "sec:Annex C"], "court_nas2009": ["rec:7"]}
+  },
+  "court.q.qa_proficiency": {
+    "short_answer": {
+      "uz": "Malaka sinovlari yozuvlarini — bajarilgan tahlillar, natijalar, ko‘rib chiqish va tuzatuvchi choralarni — ko‘rsataman [court_ilac_g19_2022]. Muvaffaqiyatsiz natija bo‘lgan bo‘lsa, uni va keyingi tuzatishni aytaman.",
+      "ru": "Показываю записи проверок квалификации — анализы, результаты, рассмотрение и корректирующие действия [court_ilac_g19_2022]. Если был неудовлетворительный результат, называю его и последующее исправление.",
+      "en": "I show the proficiency-test records — analyses, results, review and corrective actions [court_ilac_g19_2022]. If there was an unsatisfactory result, I state it and the subsequent correction."
+    },
+    "followups": [
+      {
+        "q": {"uz": "Malaka sinovida maxsus ehtiyotkorlik bilan ishlagansiz-ku?", "ru": "Но в проверке квалификации вы работали особенно тщательно?", "en": "But surely you took special care in the proficiency test?"},
+        "a": {"uz": "Malaka sinovida laboratoriyaning odatiy hujjatlashtirilgan tartibi qo‘llanishi kerak — shunda u real ishni aks ettiradi [court_ilac_g19_2022].", "ru": "В проверке квалификации должна применяться обычная документированная процедура — тогда она отражает реальную работу [court_ilac_g19_2022].", "en": "Proficiency tests should use the normal documented procedure, so they reflect real casework [court_ilac_g19_2022]."}
+      },
+      {
+        "q": {"uz": "Siz shaxsan sertifikatlanganmisiz?", "ru": "Вы лично сертифицированы?", "en": "Are you personally certified?"},
+        "a": {"uz": "Rostini ayting; xalqaro tavsiyalarda shaxsiy sertifikatsiya malaka sinovi va uzluksiz ta’limni o‘z ichiga oladi [court_nas2009].", "ru": "Скажите правду; в международных рекомендациях персональная сертификация включает проверки квалификации и непрерывное обучение [court_nas2009].", "en": "Answer truthfully; international recommendations describe personal certification as including proficiency testing and continuing education [court_nas2009]."}
+      }
+    ],
+    "limitations": [
+      {"uz": "Malaka sinovlari hamma tahlil turlari uchun mavjud emas; bunday holda laboratoriyalararo solishtirish yoki boshqa usul ko‘rsatiladi.", "ru": "Проверки квалификации существуют не для всех видов анализа; тогда показывают межлабораторные сличения или иной способ.", "en": "Proficiency schemes do not exist for every test; inter-laboratory comparisons or other means are shown instead."}
+    ],
+    "locators": {"court_ilac_g19_2022": ["sec:4.7.7.2"], "court_nas2009": ["rec:7"]}
+  },
+  "court.q.qa_controls": {
+    "short_answer": {
+      "uz": "Seriya ro‘yxati, nazorat namunalari qiymatlari va qabul mezonlarini yozuvdan aniq aytaman; nazorat mezondan chiqqan bo‘lsa, ko‘rilgan chorani ham aytaman [court_ilac_g19_2022].",
+      "ru": "По записям точно называю список серии, значения контролей и критерии приемлемости; если контроль вышел за критерии — и принятые меры [court_ilac_g19_2022].",
+      "en": "From the records I give the batch list, control values and acceptance criteria exactly; if a control failed, I also give the action taken [court_ilac_g19_2022]."
+    },
+    "followups": [
+      {
+        "q": {"uz": "Nazorat kartasi nima ko‘rsatadi?", "ru": "Что показывает контрольная карта?", "en": "What does a control chart show?"},
+        "a": {"uz": "Usul ishlashining vaqt bo‘yicha barqarorligini; u natija yaroqliligini ko‘rsatish vositalaridan biri [court_ilac_g19_2022].", "ru": "Стабильность работы метода во времени; это одно из средств подтверждения достоверности результата [court_ilac_g19_2022].", "en": "The stability of method performance over time; it is one of the means of showing a result is valid [court_ilac_g19_2022]."}
+      },
+      {
+        "q": {"uz": "Nazoratlar xatoni to‘liq istisno qiladimi?", "ru": "Исключают ли контроли ошибку полностью?", "en": "Do controls exclude error completely?"},
+        "a": {"uz": "Yo‘q; ular xatolar va moyillikni aniqlashga yordam beradi, lekin xatolik ehtimolini nolga tushirmaydi [court_nas2009, court_pcast2016].", "ru": "Нет; они помогают выявлять ошибки и предвзятость, но не сводят вероятность ошибки к нулю [court_nas2009, court_pcast2016].", "en": "No; they help detect mistakes and bias but do not reduce the chance of error to zero [court_nas2009, court_pcast2016]."}
+      }
+    ],
+    "limitations": [
+      {"uz": "Qaysi nazoratlar zarurligini laboratoriya o‘z ish turiga qarab belgilaydi; yagona ro‘yxat yo‘q.", "ru": "Какие контроли нужны, лаборатория определяет по виду работы; единого списка нет.", "en": "The laboratory decides which controls a given type of work needs; there is no single list."}
+    ],
+    "locators": {"court_ilac_g19_2022": ["sec:4.7.7.2"], "court_nas2009": ["rec:8"], "court_pcast2016": ["pp:29-30"]}
+  },
+  "court.q.qa_raw_data": {
+    "short_answer": {
+      "uz": "Ha: tadqiqot jarayoni va natijalarini hujjatlashtiruvchi materiallar muassasada saqlanadi va talab bo‘yicha taqdim etiladi (O‘zbekiston JPK) [court_uz_cpc]. Qo‘lda integratsiya yoki tuzatish bo‘lgan bo‘lsa, sababi va tartibini aytaman; yozuvlar to‘liq hisobot tuzish imkonini beradi [court_ilac_g19_2022].",
+      "ru": "Да: материалы, документирующие ход и результаты исследования, хранятся в учреждении и представляются по требованию (УПК Узбекистана) [court_uz_cpc]. Если было ручное интегрирование или правки, называю причину и порядок; записи позволяют составить полный отчёт [court_ilac_g19_2022].",
+      "en": "Yes: materials documenting the course and results are retained by the institution and produced on request (Uzbekistan CPC) [court_uz_cpc]. If there was manual integration or editing, I state why and under what rule; the records allow a full report to be produced [court_ilac_g19_2022]."
+    },
+    "followups": [
+      {
+        "q": {"uz": "Mustaqil ekspert xom ma’lumotni qayta ko‘ra oladimi?", "ru": "Может ли независимый эксперт пересмотреть первичные данные?", "en": "Can an independent expert re-examine the raw data?"},
+        "a": {"uz": "Materiallar tayinlagan organ talabi bilan ishga qo‘shiladi; bu mustaqil tekshiruvga imkon beradi (O‘zbekiston JPK) [court_uz_cpc].", "ru": "Материалы приобщаются к делу по требованию назначившего органа; это делает возможной независимую проверку (УПК Узбекистана) [court_uz_cpc].", "en": "Materials are added to the case file at the appointing body's request, enabling independent review (Uzbekistan CPC) [court_uz_cpc]."}
+      },
+      {
+        "q": {"uz": "Asbob o‘sha kuni to‘g‘ri ishlaganini qanday bilasiz?", "ru": "Откуда вы знаете, что прибор в тот день работал правильно?", "en": "How do you know the instrument worked properly that day?"},
+        "a": {"uz": "Kalibrlash, texnik xizmat va tizim tekshiruvi yozuvlari va shu seriyadagi nazoratlar bilan [court_ilac_g19_2022].", "ru": "По записям калибровки, обслуживания и проверки системы и по контролям этой серии [court_ilac_g19_2022].", "en": "From calibration, maintenance and system-check records and the batch controls [court_ilac_g19_2022]."}
+      }
+    ],
+    "limitations": [
+      {"uz": "Xom ma’lumotlarni saqlash muddati qonun va muassasa tartibiga bog‘liq.", "ru": "Срок хранения первичных данных зависит от закона и порядка учреждения.", "en": "Retention periods for raw data depend on law and institutional rules."}
+    ],
+    "locators": {"court_uz_cpc": ["art:184:4"], "court_ilac_g19_2022": ["sec:3.12.3", "sec:4.9"]}
+  },
+  "court.q.interp_cause_of_death": {
+    "short_answer": {
+      "uz": "Kimyoviy natija o‘zi o‘lim sababini isbotlamaydi: o‘limdan keyingi konsentratsiyalar turli o‘lim sabablarida bir xil oraliqda uchrashi mumkin [court_ketola2019, court_druid1997]. Hech bir konsentratsiya alohida talqin qilinmaydi [drummer2004]; o‘lim sababi haqidagi yakuniy xulosa sud-tibbiyot ekspertizasi bilan birga shakllanadi [skopp2010].",
+      "ru": "Химический результат сам по себе не доказывает причину смерти: одинаковые посмертные концентрации встречаются при разных причинах смерти [court_ketola2019, court_druid1997]. Ни одна концентрация не интерпретируется изолированно [drummer2004]; итоговый вывод о причине смерти формируется вместе с судебно-медицинской экспертизой [skopp2010].",
+      "en": "A chemical result alone does not prove cause of death: the same postmortem concentrations occur across different causes of death [court_ketola2019, court_druid1997]. No concentration is interpreted in isolation [drummer2004]; the final cause-of-death opinion is formed with the forensic pathology findings [skopp2010]."
+    },
+    "followups": [
+      {
+        "q": {"uz": "Jadvalda bu daraja «o‘ldiradigan» deb yozilgan-ku?", "ru": "Но в таблице этот уровень указан как «смертельный»?", "en": "But the table lists this level as 'lethal'?"},
+        "a": {"uz": "«O‘ldiradigan konsentratsiya» jadvallari chalg‘itishi mumkin; o‘limdan keyingi o‘zgarishlar klinik farmakokinetika taxminlarini buzadi [ferner2008, kennedy2010].", "ru": "Таблицы «летальных концентраций» могут вводить в заблуждение; посмертные изменения нарушают допущения клинической фармакокинетики [ferner2008, kennedy2010].", "en": "Tables of 'lethal concentrations' can mislead; postmortem changes invalidate clinical pharmacokinetic assumptions [ferner2008, kennedy2010]."}
+      },
+      {
+        "q": {"uz": "Tolerantlik qanday ta’sir qiladi?", "ru": "Как влияет толерантность?", "en": "How does tolerance matter?"},
+        "a": {"uz": "Tolerantlik bir xil konsentratsiyaning turli odamlarda turli oqibatga ega bo‘lishiga sabab bo‘ladi; shuning uchun konsentratsiya alohida talqin qilinmaydi [drummer2004].", "ru": "Из-за толерантности одна и та же концентрация имеет разные последствия у разных людей; поэтому концентрацию не интерпретируют изолированно [drummer2004].", "en": "Tolerance means the same concentration has different effects in different people, which is why concentrations are not interpreted in isolation [drummer2004]."}
+      },
+      {
+        "q": {"uz": "Unda nimani aniq ayta olasiz?", "ru": "Что же вы можете сказать определённо?", "en": "Then what can you say definitely?"},
+        "a": {"uz": "Qaysi modda, qaysi namunada, qanday usulda, qanday miqdorda va noaniqlik bilan aniqlanganini; uni ma’lumotnoma taqsimotlari bilan solishtirish va cheklovlarni [court_ketola2019].", "ru": "Какое вещество, в каком образце, каким методом, в каком количестве и с какой неопределённостью обнаружено; сравнение со справочными распределениями и ограничения [court_ketola2019].", "en": "Which substance, in which specimen, by which method, in what amount and with what uncertainty; its comparison with reference distributions; and the limitations [court_ketola2019]."}
+      }
+    ],
+    "limitations": [
+      {"uz": "Ma’lumotnoma taqsimotlari ma’lum populyatsiya va laboratoriyadan olingan (Shvetsiya, Finlyandiya); boshqa sharoitga ko‘chirishda ehtiyot bo‘ling.", "ru": "Справочные распределения получены в определённых популяциях и лабораториях (Швеция, Финляндия); переносить их нужно осторожно.", "en": "Reference distributions come from specific populations and laboratories (Sweden, Finland); transfer them with care."}
+    ],
+    "locators": {"court_ketola2019": ["abstract"], "skopp2010": ["abstract"], "court_druid1997": ["abstract"], "ferner2008": ["abstract"], "kennedy2010": ["abstract"], "drummer2004": ["abstract"]}
+  },
+  "court.q.interp_redistribution": {
+    "short_answer": {
+      "uz": "Bu mumkin: o‘limdan keyingi qayta taqsimlanish joyga va vaqtga bog‘liq bo‘lib, zahira a’zolardan modda chiqishi bilan bog‘liq [pelissier2003]. Ta’sirni periferik qon va bir nechta namunani solishtirib baholayman; aniq foizni ayta olmayman [yarema2005].",
+      "ru": "Это возможно: посмертное перераспределение зависит от места и времени и связано с выходом вещества из депо [pelissier2003]. Оцениваю эффект, сравнивая периферическую кровь и несколько образцов; точный процент назвать не могу [yarema2005].",
+      "en": "It is possible: postmortem redistribution is site- and time-dependent and linked to release from reservoirs [pelissier2003]. I assess it by comparing peripheral blood with other specimens; I cannot give an exact percentage [yarema2005]."
+    },
+    "followups": [
+      {
+        "q": {"uz": "Qaysi moddalar ko‘proq ta’sirlanadi?", "ru": "Какие вещества подвержены больше?", "en": "Which drugs are most affected?"},
+        "a": {"uz": "Taqsimlanish hajmi katta bo‘lgan asosli lipofil moddalar, lekin faqat ular emas [pelissier2003].", "ru": "Основные липофильные вещества с большим объёмом распределения, но не только они [pelissier2003].", "en": "Basic lipophilic drugs with a large volume of distribution, but not only these [pelissier2003]."}
+      },
+      {
+        "q": {"uz": "O‘limdan keyin metabolizm davom etadimi?", "ru": "Продолжается ли метаболизм после смерти?", "en": "Does metabolism continue after death?"},
+        "a": {"uz": "Ha, o‘limdan keyin ham metabolizm davom etishi mumkinligi qayd etilgan [pelissier2003].", "ru": "Да, отмечено, что метаболизм может продолжаться и после смерти [pelissier2003].", "en": "Yes, persistence of metabolism after death has been described [pelissier2003]."}
+      }
+    ],
+    "limitations": [
+      {"uz": "Qayta taqsimlanish darajasi har bir holatda turlicha; umumiy koeffitsient bilan tuzatish ilmiy asoslanmagan.", "ru": "Степень перераспределения в каждом случае своя; поправка общим коэффициентом научно не обоснована.", "en": "The extent of redistribution varies case by case; correcting with a general factor is not scientifically supported."}
+    ],
+    "locators": {"pelissier2003": ["abstract"], "yarema2005": ["abstract"]}
+  },
+  "court.q.interp_ethanol_neoformation": {
+    "short_answer": {
+      "uz": "Bu ehtimolni istisno qilmayman: o‘limdan keyin mikroblar bijg‘itish yo‘li bilan etanol hosil qilishi mumkin [boumba2008]. Ajratish uchun muqobil namunalar (ko‘z shishasimon suyuqligi, siydik) [kugelberg2007] va EtG/EtS hamda chirish belgilari ishlatiladi [lin2020]; ular bo‘lmasa, xulosa cheklanadi.",
+      "ru": "Не исключаю: после смерти микробы могут образовывать этанол путём брожения [boumba2008]. Для разграничения используют альтернативные образцы (стекловидное тело, моча) [kugelberg2007], EtG/EtS и маркеры гниения [lin2020]; без них вывод ограничен.",
+      "en": "I do not exclude it: microbes can form ethanol by fermentation after death [boumba2008]. Alternative specimens (vitreous, urine) [kugelberg2007] and EtG/EtS plus putrefaction markers [lin2020] help distinguish; without them the conclusion is limited."
+    },
+    "followups": [
+      {
+        "q": {"uz": "EtG manfiy bo‘lsa, bu nimani anglatadi?", "ru": "Что означает отрицательный EtG?", "en": "What does a negative EtG mean?"},
+        "a": {"uz": "EtG/EtS iste’mol qilingan va o‘limdan keyin hosil bo‘lgan etanolni farqlash usullaridan biri sifatida ko‘rib chiqilgan; natija boshqa ma’lumotlar bilan birga talqin qilinadi [lin2020].", "ru": "EtG/EtS рассматриваются как один из способов отличить употреблённый этанол от посмертного; результат интерпретируют вместе с другими данными [lin2020].", "en": "EtG/EtS are reviewed as one way to distinguish ingested from postmortem ethanol; the result is interpreted together with other data [lin2020]."}
+      },
+      {
+        "q": {"uz": "Suvdan chiqarilgan jasadda nima o‘zgaradi?", "ru": "Что меняется у тела, извлечённого из воды?", "en": "What changes for a body recovered from water?"},
+        "a": {"uz": "Suvdan chiqarilgan jasadlar alohida qiyinchilik sifatida ko‘rib chiqilgan; talqin ehtiyotkorlik bilan qilinadi [kugelberg2007].", "ru": "Тела, извлечённые из воды, рассматриваются как особая сложность; интерпретация проводится осторожно [kugelberg2007].", "en": "Bodies recovered from water are treated as a particular difficulty; interpretation is cautious [kugelberg2007]."}
+      }
+    ],
+    "limitations": [
+      {"uz": "Biror bitta marker iste’mol yoki o‘limdan keyingi hosil bo‘lishni mutlaq isbotlamaydi; dalillar majmuasi kerak.", "ru": "Ни один маркер в отдельности не доказывает абсолютно употребление или посмертное образование; нужна совокупность данных.", "en": "No single marker absolutely proves ingestion or postmortem formation; a body of evidence is needed."}
+    ],
+    "locators": {"boumba2008": ["abstract"], "lin2020": ["abstract"], "kugelberg2007": ["abstract"]}
+  },
+  "court.q.interp_back_calculation": {
+    "short_answer": {
+      "uz": "Aniq bitta son bera olmayman: etanol chiqarilish tezligi odamdan odamga sezilarli farq qiladi [jones2010]. Hisob faqat aniq taxminlar ostida va oraliq ko‘rinishida beriladi, o‘lchash noaniqligi ham hisobga olinadi [court_gullberg2012].",
+      "ru": "Одно точное число дать не могу: скорость элиминации этанола заметно различается у людей [jones2010]. Расчёт даётся только при явных допущениях и в виде диапазона, с учётом неопределённости измерения [court_gullberg2012].",
+      "en": "I cannot give one exact figure: ethanol elimination rates vary considerably between people [jones2010]. An estimate is given only under explicit assumptions and as a range, including measurement uncertainty [court_gullberg2012]."
+    },
+    "followups": [
+      {
+        "q": {"uz": "O‘rtacha tezlikni olsangiz-chi?", "ru": "А если взять среднюю скорость?", "en": "What if you use an average rate?"},
+        "a": {"uz": "O‘rtacha qiymat aniq shaxsni aks ettirmaydi; shuning uchun orqaga hisoblashda ehtiyotkorlik tavsiya etiladi [jones2010].", "ru": "Среднее не отражает конкретного человека; поэтому при обратном расчёте рекомендуется осторожность [jones2010].", "en": "An average does not describe the individual; this is why caution is advised in back-calculation [jones2010]."}
+      },
+      {
+        "q": {"uz": "So‘rilish tugaganmi, buni qanday bilasiz?", "ru": "Откуда вы знаете, что всасывание завершилось?", "en": "How do you know absorption was complete?"},
+        "a": {"uz": "Ko‘pincha bilmaymiz; bu taxmin ekanini va u natijaga qanday ta’sir qilishini ochiq ayting [jones2010].", "ru": "Часто мы этого не знаем; прямо скажите, что это допущение и как оно влияет на результат [jones2010].", "en": "Often we do not know; say plainly that it is an assumption and how it affects the estimate [jones2010]."}
+      }
+    ],
+    "limitations": [
+      {"uz": "Ilovadagi hisob vositalari taxminlar asosida ishlaydi va ekspert xulosasi o‘rnini bosmaydi.", "ru": "Расчётные инструменты приложения работают на допущениях и не заменяют экспертного заключения.", "en": "The app's calculators work on assumptions and do not replace an expert opinion."}
+    ],
+    "locators": {"jones2010": ["abstract"], "court_gullberg2012": ["abstract"], "court_pcast2016": ["pp:29-30"]}
+  },
+  "court.q.interp_degradation": {
+    "short_answer": {
+      "uz": "Ayrim moddalar (masalan, geroin, kokain, benzodiazepinlar) o‘limdan keyin beqaror [drummer2004]; shuning uchun past yoki manfiy natijani parchalanish ehtimolini aytmasdan talqin qilmayman. Chirigan jasadda moddalar ham hosil bo‘lishi, ham parchalanishi mumkin [skopp2010].",
+      "ru": "Ряд веществ (например, героин, кокаин, бензодиазепины) нестабильны после смерти [drummer2004]; поэтому низкий или отрицательный результат не интерпретирую, не упомянув возможное разложение. В гнилостно изменённом теле вещества могут как образовываться, так и разрушаться [skopp2010].",
+      "en": "Some drugs (for example, heroin, cocaine, benzodiazepines) are unstable after death [drummer2004]; I do not interpret a low or negative result without mentioning possible degradation. In decomposed bodies substances can be both formed and degraded [skopp2010]."
+    },
+    "followups": [
+      {
+        "q": {"uz": "Metabolit natijasi yordam beradimi?", "ru": "Помогает ли результат по метаболиту?", "en": "Does a metabolite result help?"},
+        "a": {"uz": "Ko‘pincha ha: barqarorroq metabolit ona modda yo‘qolganda ham ma’lumot beradi; saqlash sharoiti ham hisobga olinadi [peters2007stab].", "ru": "Часто да: более стабильный метаболит информативен, даже когда исходное вещество исчезло; учитываются и условия хранения [peters2007stab].", "en": "Often yes: a more stable metabolite can inform when the parent is gone; storage conditions are also considered [peters2007stab]."}
+      },
+      {
+        "q": {"uz": "Unda manfiy natija hech narsa anglatmaydimi?", "ru": "Значит, отрицательный результат ничего не значит?", "en": "So a negative result means nothing?"},
+        "a": {"uz": "U «shu usulda aniqlanmadi» degani; ish ma’lumotlari yetarli bo‘lmasa, talqin cheklanganini aytish kerak [skopp2010].", "ru": "Он означает «не обнаружено этим методом»; при недостатке сведений по делу нужно сказать об ограниченности интерпретации [skopp2010].", "en": "It means 'not detected by this method'; with inadequate case information, say the interpretation is limited [skopp2010]."}
+      }
+    ],
+    "limitations": [
+      {"uz": "Parchalanish tezligi harorat, vaqt va matritsaga bog‘liq; aniq holat uchun tekshirilgan ma’lumot kerak.", "ru": "Скорость разложения зависит от температуры, времени и матрицы; для конкретного случая нужны проверенные данные.", "en": "Degradation rate depends on temperature, time and matrix; the specific case needs verified data."}
+    ],
+    "locators": {"drummer2004": ["abstract"], "peters2007stab": ["abstract"], "skopp2010": ["abstract"]}
+  },
+  "court.q.report_certainty": {
+    "short_answer": {
+      "uz": "Yo‘q, «100 % aniq» deb aytmayman: har qanday laboratoriya testining xatolik darajasi noldan katta [court_pcast2016]. Xulosa qanday dalilga tayanganini, usulning tasdiqlangan ko‘rsatkichlari va cheklovlarini tushuntiraman [court_gill_ely2024, court_ilac_g19_2022].",
+      "ru": "Нет, «на 100 %» не скажу: у любого лабораторного теста частота ошибок больше нуля [court_pcast2016]. Объясняю, на чём основан вывод, подтверждённые характеристики метода и ограничения [court_gill_ely2024, court_ilac_g19_2022].",
+      "en": "No, I will not say '100% certain': every laboratory test has a non-zero error rate [court_pcast2016]. I explain what the conclusion rests on, the method's verified performance and its limits [court_gill_ely2024, court_ilac_g19_2022]."
+    },
+    "followups": [
+      {
+        "q": {"uz": "Unda xulosangizga ishonish mumkin emasmi?", "ru": "Значит, вашему выводу нельзя доверять?", "en": "So your conclusion cannot be trusted?"},
+        "a": {"uz": "Xulosa ishonchliligi uning ilmiy asosi va nazoratlarga bog‘liq; hisobot tekshiruv va savollarga dosh bera oladigan bo‘lishi kerak [court_enfsi2015].", "ru": "Надёжность вывода определяется его научной основой и контролями; отчёт должен выдерживать проверку и перекрёстный допрос [court_enfsi2015].", "en": "Reliability rests on the scientific basis and controls; a report should withstand scrutiny and cross-examination [court_enfsi2015]."}
+      },
+      {
+        "q": {"uz": "«Ilmiy ishonchning oqilona darajasi» bilan ayting.", "ru": "Скажите «с разумной степенью научной уверенности».", "en": "Say it 'to a reasonable degree of scientific certainty'."},
+        "a": {"uz": "Bu ibora ilmda umumqabul qilingan ma’noga ega emas va ishonchni oshirib ko‘rsatishi mumkin; uning o‘rniga natija, noaniqlik va cheklovni ayting [court_pcast2016].", "ru": "У этого выражения нет общепринятого научного смысла, и оно может преувеличивать уверенность; вместо него назовите результат, неопределённость и ограничения [court_pcast2016].", "en": "The phrase has no generally accepted scientific meaning and can overstate certainty; give the result, uncertainty and limits instead [court_pcast2016]."}
+      }
+    ],
+    "limitations": [
+      {"uz": "Sud amaliyotida ishonch darajasini ifodalash talablari mamlakatlarga qarab farq qiladi.", "ru": "Требования к выражению степени уверенности в судебной практике различаются по странам.", "en": "How certainty must be expressed differs between jurisdictions."}
+    ],
+    "locators": {"court_pcast2016": ["pp:29-30"], "court_ilac_g19_2022": ["sec:4.9"], "court_gill_ely2024": ["abstract"], "court_enfsi2015": ["gn:1"]}
+  },
+  "court.q.report_legal_question": {
+    "short_answer": {
+      "uz": "Bu huquqiy savol, u mening vakolatimga kirmaydi. Men o‘z ixtisosligim doirasidagi ilmiy natija va talqinni bera olaman [court_enfsi2015]; xulosani boshqa dalillar bilan birga baholash sud vakolatida (O‘zbekiston JPK) [court_uz_cpc].",
+      "ru": "Это правовой вопрос, он вне моей компетенции. Я могу дать научный результат и интерпретацию в пределах своей специальности [court_enfsi2015]; оценка заключения вместе с другими доказательствами — компетенция суда (УПК Узбекистана) [court_uz_cpc].",
+      "en": "That is a legal question outside my competence. I can give the scientific result and interpretation within my specialty [court_enfsi2015]; weighing the conclusion with other evidence is for the court (Uzbekistan CPC) [court_uz_cpc]."
+    },
+    "followups": [
+      {
+        "q": {"uz": "Hech bo‘lmasa shaxsiy fikringizni ayting.", "ru": "Скажите хотя бы своё личное мнение.", "en": "At least give your personal opinion."},
+        "a": {"uz": "Ekspert o‘z sohasidan tashqaridagi masalalar bo‘yicha xulosa bermaydi; agar so‘ralsa, bu ekspert baholash emasligini aniq aytadi [court_enfsi2015].", "ru": "Эксперт не даёт выводов вне своей области; если спрашивают, он ясно говорит, что это не экспертная оценка [court_enfsi2015].", "en": "Experts do not report outside their area of expertise; if pressed, they make clear it is not part of an expert evaluation [court_enfsi2015]."}
+      },
+      {
+        "q": {"uz": "Unda natijangiz nimani ko‘rsatadi?", "ru": "Тогда что показывает ваш результат?", "en": "Then what does your result show?"},
+        "a": {"uz": "Topilmaning ilmiy ma’nosini, kerak bo‘lsa, raqobatdosh taxminlar bo‘yicha va cheklovlari bilan tushuntiring [court_enfsi2015].", "ru": "Объясните научный смысл находки, при необходимости — относительно конкурирующих предположений и с ограничениями [court_enfsi2015].", "en": "Explain the scientific meaning of the finding, where relevant against competing propositions, with its limitations [court_enfsi2015]."}
+      }
+    ],
+    "limitations": [
+      {"uz": "Ekspertga qanday savol berish mumkinligi protsessual qonunga bog‘liq; bu yerda faqat O‘zbekiston JPK tekshirilgan.", "ru": "Какие вопросы можно задавать эксперту, зависит от процессуального закона; здесь проверен только УПК Узбекистана.", "en": "Which questions may be put to an expert depends on procedural law; only Uzbekistan's CPC was checked here."}
+    ],
+    "locators": {"court_uz_cpc": ["art:184:2", "art:186:2", "art:187:1"], "court_enfsi2015": ["sec:1.3", "glossary"]}
+  },
+  "court.q.report_refusal": {
+    "short_answer": {
+      "uz": "Javob bermaganim asosli: obyekt, material yoki maxsus bilim yetarli emasligi tadqiqotda aniqlandi va buning sababi xulosada yozilgan (O‘zbekiston JPK) [court_uz_cpc]. Qonun bunday holda asoslangan «xulosa berish mumkin emasligi» dalolatnomasini nazarda tutadi [court_uz_expertise_law].",
+      "ru": "Отказ обоснован: в ходе исследования выявлена недостаточность объектов, материалов или специальных знаний, причина указана в заключении (УПК Узбекистана) [court_uz_cpc]. Закон предусматривает в таком случае мотивированный акт о невозможности дачи заключения [court_uz_expertise_law].",
+      "en": "Declining was justified: insufficiency of objects, materials or special knowledge emerged during the examination and the reason is stated in the report (Uzbekistan CPC) [court_uz_cpc]. The law provides for a reasoned act on the impossibility of giving a conclusion [court_uz_expertise_law]."
+    },
+    "followups": [
+      {
+        "q": {"uz": "Hozir sudda taxminan javob bering.", "ru": "Ответьте сейчас в суде хотя бы примерно.", "en": "Give an approximate answer now in court."},
+        "a": {"uz": "Ekspert o‘z xulosasi va shaxsan o‘tkazgan tadqiqoti bo‘yicha so‘roq qilinadi; asossiz taxmin ilmiy xulosa sifatida berilmaydi (O‘zbekiston JPK) [court_uz_cpc].", "ru": "Эксперт допрашивается по своему заключению и лично проведённым исследованиям; необоснованное предположение не выдаётся за научный вывод (УПК Узбекистана) [court_uz_cpc].", "en": "The expert is questioned on his own conclusion and personal research; an unsupported guess is not offered as a scientific conclusion (Uzbekistan CPC) [court_uz_cpc]."}
+      },
+      {
+        "q": {"uz": "Fan bu savolga javob bera olmaydimi?", "ru": "Наука не может ответить на этот вопрос?", "en": "Can science not answer this question?"},
+        "a": {"uz": "Agar fan va ekspert amaliyotining holati javob berishga imkon bermasa, bu ham asoslangan rad etish sababi [court_uz_expertise_law].", "ru": "Если состояние науки и экспертной практики не позволяет ответить, это тоже основание для мотивированного отказа [court_uz_expertise_law].", "en": "If the state of science and expert practice does not allow an answer, that too is a reason for a reasoned refusal [court_uz_expertise_law]."}
+      }
+    ],
+    "limitations": [
+      {"uz": "Fuqarolik ishlarida tartib alohida kodeks bilan belgilanadi; qonun matni lex.uz da tekshirilishi kerak.", "ru": "В гражданских делах порядок определяется отдельным кодексом; текст закона нужно проверить на lex.uz.", "en": "Civil cases follow a separate code; the legal text must be checked on lex.uz."}
+    ],
+    "locators": {"court_uz_cpc": ["art:184:5", "art:186:2"], "court_uz_expertise_law": ["art:24"], "court_ilac_g19_2022": ["sec:4.8.1"]}
+  },
+  "court.q.report_structure": {
+    "short_answer": {
+      "uz": "Xulosada qo‘llangan usullar, natijalar, natijalarni baholash va savollarga javoblar alohida (O‘zbekiston JPK) [court_uz_cpc]; fon ma’lumot, natija va talqin aniq ajratilgan bo‘lishi kerak [court_ilac_g19_2022]. Har bir talqin qaysi natijaga tayanganini ko‘rsataman.",
+      "ru": "В заключении отдельно применённые методы, результаты, их оценка и ответы на вопросы (УПК Узбекистана) [court_uz_cpc]; фоновая информация, результаты и интерпретация должны быть чётко разделены [court_ilac_g19_2022]. Показываю, на какой результат опирается каждая интерпретация.",
+      "en": "The report separates methods, results, evaluation of results and answers (Uzbekistan CPC) [court_uz_cpc]; background, results and interpretation must be clearly distinguished [court_ilac_g19_2022]. I show which result each interpretation rests on."
+    },
+    "followups": [
+      {
+        "q": {"uz": "Hisobotni oddiy odam tushuna oladimi?", "ru": "Поймёт ли отчёт неспециалист?", "en": "Can a lay person understand the report?"},
+        "a": {"uz": "Hisobot keng auditoriyaga mos tarzda yozilishi va kerak bo‘lsa texnik izohlar bilan to‘ldirilishi tavsiya etiladi [court_enfsi2015].", "ru": "Отчёт рекомендуется писать понятно для широкой аудитории, при необходимости с техническими пояснениями [court_enfsi2015].", "en": "Reports should be suitable for a wide audience, with technical supplements where needed [court_enfsi2015]."}
+      },
+      {
+        "q": {"uz": "Soddalashtirilgan hisobot to‘liqmi?", "ru": "Полон ли упрощённый отчёт?", "en": "Is a simplified report complete?"},
+        "a": {"uz": "Soddalashtirish noaniqlikka olib kelmasligi kerak; to‘liq hisobot tuzish uchun yozuvlar saqlanadi [court_ilac_g19_2022].", "ru": "Упрощение не должно порождать двусмысленность; записи хранятся для составления полного отчёта [court_ilac_g19_2022].", "en": "Simplification must not create ambiguity; records are kept so a full report can be produced [court_ilac_g19_2022]."}
+      }
+    ],
+    "limitations": [
+      {"uz": "Xulosa shakli qonun bilan belgilangan bo‘lsa, qo‘shimcha ma’lumot ilova yoki ish yozuvida berilishi mumkin.", "ru": "Если форма заключения задана законом, дополнительные сведения можно дать в приложении или записях по делу.", "en": "Where law prescribes the report format, additional information may go in an annex or the case record."}
+    ],
+    "locators": {"court_uz_cpc": ["art:184:2"], "court_ilac_g19_2022": ["sec:4.9"], "court_gill_ely2024": ["abstract"], "court_enfsi2015": ["gn:1"]}
+  },
+  "court.q.report_probability": {
+    "short_answer": {
+      "uz": "«Mos keladi» — topilma ma’lum taxmin bilan muvofiq degani, lekin boshqa taxminlarni avtomatik istisno qilmaydi. Baholash topilmaning taxminlar ostidagi ehtimoliga qaratiladi, taxminning topilma ostidagi ehtimoliga emas [court_enfsi2015]; buni almashtirish ma’lum xatodir [court_thompson1987].",
+      "ru": "«Соответствует» означает согласие находки с предположением, но не исключает автоматически другие. Оценивается вероятность находки при предположениях, а не вероятность предположения при находке [court_enfsi2015]; их перестановка — известная ошибка [court_thompson1987].",
+      "en": "'Consistent with' means the finding agrees with a proposition but does not automatically exclude others. Evaluation addresses the probability of the findings given the propositions, not of the propositions given the findings [court_enfsi2015]; swapping them is a known fallacy [court_thompson1987]."
+    },
+    "followups": [
+      {
+        "q": {"uz": "Muqobil taxminni kim belgilaydi?", "ru": "Кто формулирует альтернативное предположение?", "en": "Who sets the alternative proposition?"},
+        "a": {"uz": "Ko‘pincha tomonlarning bayonlari asosida; muqobil taxmin tuzib bo‘lmasa, topilma qiymatini baholab bo‘lmaydi va buni aytish kerak [court_enfsi2015].", "ru": "Часто на основе версий сторон; если альтернативу сформулировать нельзя, ценность находки оценить невозможно, и это нужно сказать [court_enfsi2015].", "en": "Often from the parties' accounts; if no alternative can be formulated, the value of the findings cannot be assessed, and this must be said [court_enfsi2015]."}
+      },
+      {
+        "q": {"uz": "Xulosa shkalangiz muvozanatlimi?", "ru": "Сбалансирована ли ваша шкала выводов?", "en": "Is your conclusion scale balanced?"},
+        "a": {"uz": "Xulosa shkalasi xolislikni ko‘rsatadigan darajada muvozanatli bo‘lishi va mijozga ma’lum qilinishi kerak [court_ilac_g19_2022].", "ru": "Шкала выводов должна быть сбалансированной, демонстрировать беспристрастность и быть доступной заказчику [court_ilac_g19_2022].", "en": "Opinion scales should be balanced so as to demonstrate impartiality and be available to the customer [court_ilac_g19_2022]."}
+      }
+    ],
+    "limitations": [
+      {"uz": "Ehtimollik nisbati yondashuvi har bir tahlil turi uchun ma’lumotlar bazasini talab qiladi; ma’lumot yetarli bo‘lmasa, sifat jihatdan bayon qilinadi.", "ru": "Подход отношения правдоподобия требует данных для каждого вида анализа; при их недостатке выводы излагают качественно.", "en": "The likelihood-ratio approach needs data for each type of analysis; when data are insufficient, findings are described qualitatively."}
+    ],
+    "locators": {"court_enfsi2015": ["gn:1"], "court_thompson1987": ["title"], "court_ilac_g19_2022": ["sec:4.9"]}
+  },
+  "court.q.hypo_suppose": {
+    "short_answer": {
+      "uz": "Faraziy savolga uning shartlari aniq bo‘lgandagina javob beraman: shartlarni qayta aytaman, ular to‘g‘ri bo‘lsa natija qanday bo‘lishi mumkinligini va qaysi ma’lumot yetishmasligini tushuntiraman [court_ely_gill2024]. Muqobil farazni ko‘rib chiqish xolislikning bir qismi [court_ilac_g19_2022, court_enfsi2015].",
+      "ru": "На гипотетический вопрос отвечаю, только когда ясны его условия: повторяю их, объясняю, каким мог бы быть результат при их истинности и каких данных не хватает [court_ely_gill2024]. Рассмотрение альтернатив — часть беспристрастности [court_ilac_g19_2022, court_enfsi2015].",
+      "en": "I answer a hypothetical only once its premises are clear: I restate them, explain what the result could be if they were true, and what data are missing [court_ely_gill2024]. Considering alternatives is part of impartiality [court_ilac_g19_2022, court_enfsi2015]."
+    },
+    "followups": [
+      {
+        "q": {"uz": "Widmark formulasi bilan hisoblab bering.", "ru": "Посчитайте по формуле Видмарка.", "en": "Calculate it with the Widmark formula."},
+        "a": {"uz": "Hisob taxminlarga (tana vazni, chiqarilish tezligi, so‘rilish) bog‘liq va shaxslar orasidagi farq katta; natijani oraliq va taxminlar bilan bering [jones2010].", "ru": "Расчёт зависит от допущений (масса тела, скорость элиминации, всасывание), межиндивидуальные различия велики; давайте диапазон и допущения [jones2010].", "en": "The calculation depends on assumptions (body weight, elimination, absorption) and individual variation is large; give a range with the assumptions [jones2010]."}
+      },
+      {
+        "q": {"uz": "«Mumkin» va «ehtimoliy» farqi nima?", "ru": "Чем «возможно» отличается от «вероятно»?", "en": "What is the difference between 'possible' and 'probable'?"},
+        "a": {"uz": "Bular turli ishonch darajalari; ekspert ularni aniq farqlashi va qaysi birini aytayotganini tushuntirishi kerak [court_ely_gill2024].", "ru": "Это разные степени уверенности; эксперт должен чётко их различать и объяснять, что именно он утверждает [court_ely_gill2024].", "en": "They are different degrees of certainty; the expert must distinguish them clearly and explain which one is meant [court_ely_gill2024]."}
+      }
+    ],
+    "limitations": [
+      {"uz": "Faraz ish materiallarida tasdiqlanmagan bo‘lsa, javob faqat shartli bo‘ladi va xulosa o‘rnini bosmaydi.", "ru": "Если гипотеза не подтверждена материалами дела, ответ лишь условный и не заменяет заключения.", "en": "If the premise is not supported by the case file, the answer is only conditional and does not replace the report."}
+    ],
+    "locators": {"court_enfsi2015": ["gn:1"], "court_ilac_g19_2022": ["sec:2.12", "sec:4.8.1"], "jones2010": ["abstract"], "court_ely_gill2024": ["abstract"]}
+  },
+  "court.q.hypo_yes_no": {
+    "short_answer": {
+      "uz": "Agar «ha/yo‘q» natijani noto‘g‘ri aks ettirsa, buni xotirjam aytaman va bir jumla bilan aniqlashtirishga ruxsat so‘rayman [court_gill_ely2024]: masalan, «skrining musbat, tasdiqlanmagan». Natija chalg‘ituvchi bo‘lmasligi kerak [court_ilac_g19_2022]; noto‘g‘ri talqin haqida arz qilish huquqim bor (O‘zbekiston JPK) [court_uz_cpc].",
+      "ru": "Если «да/нет» неверно отражает результат, спокойно говорю об этом и прошу разрешения уточнить одной фразой [court_gill_ely2024]: например, «скрининг положительный, не подтверждён». Результат не должен вводить в заблуждение [court_ilac_g19_2022]; я вправе заявить о неправильном истолковании (УПК Узбекистана) [court_uz_cpc].",
+      "en": "If 'yes/no' would misstate the result, I say so calmly and ask to clarify in one sentence [court_gill_ely2024] — for example, 'screen positive, not confirmed'. Output must not mislead [court_ilac_g19_2022]; I have the right to object to a misinterpretation (Uzbekistan CPC) [court_uz_cpc]."
+    },
+    "followups": [
+      {
+        "q": {"uz": "Sud sizga faqat «ha» yoki «yo‘q» deyishni buyurdi.", "ru": "Суд велел отвечать только «да» или «нет».", "en": "The court has ordered you to answer only 'yes' or 'no'."},
+        "a": {"uz": "Sud tartibiga rioya qilinadi; javob to‘liq bo‘lmasa, bu haqda bayonnomaga kiritiladigan arz qilish huquqidan foydalanish mumkin (O‘zbekiston JPK) [court_uz_cpc].", "ru": "Порядок суда соблюдается; если ответ неполон, можно воспользоваться правом сделать заявление, заносимое в протокол (УПК Узбекистана) [court_uz_cpc].", "en": "Court procedure is followed; if the answer is incomplete, you may use the right to a statement entered in the record (Uzbekistan CPC) [court_uz_cpc]."}
+      },
+      {
+        "q": {"uz": "Siz aniq javobdan qochyapsiz.", "ru": "Вы уходите от прямого ответа.", "en": "You are avoiding a direct answer."},
+        "a": {"uz": "Aniqlik — natija, usul va cheklovni birga aytish; qisqa javob shu ma’noni saqlasa, uni berish kerak [court_ilac_g19_2022].", "ru": "Точность — это результат, метод и ограничение вместе; если краткий ответ сохраняет смысл, его нужно дать [court_ilac_g19_2022].", "en": "Precision means stating result, method and limitation together; if a short answer keeps that meaning, give it [court_ilac_g19_2022]."}
+      }
+    ],
+    "limitations": [
+      {"uz": "So‘roq tartibi va ekspertning arz qilish huquqi mamlakat protsessual qonuniga bog‘liq.", "ru": "Порядок допроса и право эксперта на заявления зависят от процессуального закона страны.", "en": "Questioning procedure and the expert's right to make statements depend on national procedural law."}
+    ],
+    "locators": {"court_ilac_g19_2022": ["sec:4.9"], "court_uz_cpc": ["art:68:1"], "court_gill_ely2024": ["abstract"]}
+  },
+  "court.q.hypo_other_expert": {
+    "short_answer": {
+      "uz": "Fikrlar farqi o‘zi xato degani emas: ikki xulosani obyekt, usul, natija, noaniqlik va talqin asoslari bo‘yicha ilmiy solishtiraman [court_ilac_g19_2022]. Yangi ma’lumot bo‘lsa, xolis ko‘rib chiqaman [court_dror2020]; qaysi xulosaga qo‘shilishni sud asoslab beradi (O‘zbekiston JPK) [court_uz_cpc].",
+      "ru": "Расхождение само по себе не означает ошибку: научно сравниваю два заключения по объектам, методам, результатам, неопределённости и основам интерпретации [court_ilac_g19_2022]. Новую информацию рассматриваю беспристрастно [court_dror2020]; с каким выводом согласиться, обосновывает суд (УПК Узбекистана) [court_uz_cpc].",
+      "en": "Disagreement is not itself an error: I compare the two reports scientifically — objects, methods, results, uncertainty and interpretive basis [court_ilac_g19_2022]. I consider new information impartially [court_dror2020]; the court justifies which conclusion it accepts (Uzbekistan CPC) [court_uz_cpc]."
+    },
+    "followups": [
+      {
+        "q": {"uz": "Boshqa ekspert to‘g‘ri bo‘lsa-chi?", "ru": "А если прав другой эксперт?", "en": "What if the other expert is right?"},
+        "a": {"uz": "Unda buni tan olish va o‘z xatoingizni tuzatish kerak; nomuvofiq ish, jumladan ekspert ko‘rsatmasi, laboratoriyaning tuzatish jarayonida ko‘rib chiqiladi [court_ilac_g19_2022].", "ru": "Тогда нужно признать это и исправить свою ошибку; несоответствующая работа, включая показания эксперта, рассматривается в процессе корректирующих действий лаборатории [court_ilac_g19_2022].", "en": "Then acknowledge it and correct your error; non-conforming work, including expert testimony, is handled through the laboratory's corrective process [court_ilac_g19_2022]."}
+      },
+      {
+        "q": {"uz": "Takroriy ekspertiza kerakmi?", "ru": "Нужна ли повторная экспертиза?", "en": "Is a repeat examination needed?"},
+        "a": {"uz": "Bu masalani tayinlovchi organ hal qiladi; ekspert faqat ilmiy sabablarni (masalan, namuna qolganmi, qaysi usul farqni hal qilishi mumkin) tushuntiradi (O‘zbekiston JPK) [court_uz_cpc].", "ru": "Это решает назначающий орган; эксперт лишь объясняет научные причины (например, остался ли образец, какой метод может разрешить расхождение) (УПК Узбекистана) [court_uz_cpc].", "en": "The appointing authority decides; the expert explains only the scientific reasons (for example, whether material remains, which method could resolve the difference) (Uzbekistan CPC) [court_uz_cpc]."}
+      }
+    ],
+    "limitations": [
+      {"uz": "Ekspertlar fikri farqini hal qilish tartibi protsessual qonunga bog‘liq.", "ru": "Порядок разрешения расхождений экспертов зависит от процессуального закона.", "en": "How expert disagreement is resolved depends on procedural law."}
+    ],
+    "locators": {"court_uz_cpc": ["art:187:3"], "court_ilac_g19_2022": ["sec:2.14", "sec:4.8.1"], "court_dror2020": ["abstract"]}
+  },
+  "court.q.hypo_literature": {
+    "short_answer": {
+      "uz": "O‘qimagan maqolaga baho bermayman; uni o‘qib chiqishga vaqt so‘rayman va namuna turi, usuli va populyatsiyasi ishimga mosligini solishtiraman [court_ely_gill2024]. Talqinim qaysi ishonchli manbalarga tayanganini ko‘rsataman [court_ilac_g19_2022].",
+      "ru": "Не оцениваю непрочитанную статью; прошу время на прочтение и сравниваю тип образца, метод и популяцию с моим делом [court_ely_gill2024]. Показываю, на какие надёжные источники опирается моя интерпретация [court_ilac_g19_2022].",
+      "en": "I do not judge an article I have not read; I ask for time to read it and compare its specimen type, method and population with my case [court_ely_gill2024]. I show which reliable sources my interpretation rests on [court_ilac_g19_2022]."
+    },
+    "followups": [
+      {
+        "q": {"uz": "Maqola sizning xulosangizga zid bo‘lsa-chi?", "ru": "А если статья противоречит вашему выводу?", "en": "What if the article contradicts your conclusion?"},
+        "a": {"uz": "Agar u sizning holatingizga taalluqli va ishonchli bo‘lsa, xulosani qayta ko‘rib chiqish va buni ochiq aytish kerak; manbalar zid bo‘lsa, ziddiyatni ko‘rsating [court_ilac_g19_2022].", "ru": "Если она применима к вашему случаю и надёжна, вывод нужно пересмотреть и сказать об этом открыто; при противоречии источников покажите его [court_ilac_g19_2022].", "en": "If it applies to your case and is reliable, reconsider the conclusion and say so openly; where sources conflict, show the conflict [court_ilac_g19_2022]."}
+      },
+      {
+        "q": {"uz": "Darslikda boshqacha yozilgan-ku?", "ru": "Но в учебнике написано иначе?", "en": "But the textbook says otherwise?"},
+        "a": {"uz": "Darslik ma’lumotini zamonaviy tekshirilgan adabiyot bilan solishtiring: masalan, eski qo‘llanmada namunani etil spirti bilan konservlash tasvirlangan (etanol tahlili uchun taqiqlangan holda) [court_yuldashev_toks2025], hozirgi tavsiya esa natriy ftorid [flanagan2005].", "ru": "Сверяйте учебник с современной проверенной литературой: например, в пособии описано консервирование этиловым спиртом (запрещённое при анализе на этанол) [court_yuldashev_toks2025], а современная рекомендация — фторид натрия [flanagan2005].", "en": "Cross-check textbooks with current verified literature: for example, a teaching manual describes preserving samples with ethanol (forbidden when testing for ethanol) [court_yuldashev_toks2025], whereas current guidance uses sodium fluoride [flanagan2005]."}
+      }
+    ],
+    "limitations": [
+      {"uz": "Bitta maqola butun dalillar majmuasini almashtirmaydi; tadqiqot dizayni va sifati baholanadi.", "ru": "Одна статья не заменяет всей совокупности данных; оцениваются дизайн и качество исследования.", "en": "A single paper does not replace the body of evidence; study design and quality are appraised."}
+    ],
+    "locators": {"court_ilac_g19_2022": ["sec:4.8.1"], "court_ely_gill2024": ["abstract"], "court_yuldashev_toks2025": ["pdfp:10"], "flanagan2005": ["abstract"]}
+  }
+}

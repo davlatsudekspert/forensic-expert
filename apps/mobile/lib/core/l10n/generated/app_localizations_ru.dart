@@ -970,7 +970,7 @@ class AppLocalizationsRu extends AppLocalizations {
       'Названия, предупреждения и источники остаются открытыми. Научные данные и юрисдикционный слой открываются в платном тарифе.';
 
   @override
-  String get freeDemoBadge => 'Бесплатно (демо)';
+  String get freeDemoBadge => 'Бесплатно';
 
   @override
   String get lockedBadge => 'Pro';
@@ -7095,4 +7095,450 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get studyDeckGmt => 'Анализ наркотических веществ (Юлдашев З.А.)';
+
+  @override
+  String get courtTitle => 'Допрос в суде: подготовка';
+
+  @override
+  String get courtSubtitle =>
+      'Вопросы, которые задают эксперту о его заключении, и подготовка научно обоснованного ответа';
+
+  @override
+  String get courtDisclaimer =>
+      'Материал для подготовки; не юридическая консультация; заключение основывается только на собственном исследовании эксперта.';
+
+  @override
+  String get courtSearchHint => 'Поиск по вопросам';
+
+  @override
+  String get courtNoResults => 'Ничего не найдено. Попробуйте другое слово.';
+
+  @override
+  String get courtEmpty => 'Не удалось загрузить содержимое раздела.';
+
+  @override
+  String get courtTopics => 'Темы';
+
+  @override
+  String courtQuestionCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count вопросов',
+      few: '$count вопроса',
+      one: '$count вопрос',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get courtTests => 'Что проверяет суд';
+
+  @override
+  String get courtPrepare => 'Подготовка к ответу';
+
+  @override
+  String get courtBlockDocuments => 'Иметь под рукой: документы и данные';
+
+  @override
+  String get courtBlockExplain => 'Какие принципы объяснить';
+
+  @override
+  String get courtBlockPitfalls => 'Типичные ошибки';
+
+  @override
+  String get courtRelated => 'Связанное в приложении';
+
+  @override
+  String get courtCopyCitation => 'Скопировать ссылку на источник';
+
+  @override
+  String get courtCitationCopied => 'Ссылка скопирована';
+
+  @override
+  String get courtPractice => 'Режим тренировки';
+
+  @override
+  String get courtPracticeBody =>
+      'Случайный вопрос: продумайте ответ, затем откройте чек-лист.';
+
+  @override
+  String get courtPracticeThink =>
+      'Сначала подготовьте свой ответ: на какие документы и принципы вы опираетесь?';
+
+  @override
+  String get courtPracticeReveal => 'Показать чек-лист';
+
+  @override
+  String get courtPracticeHint => 'Нажмите, чтобы увидеть, что проверяет суд';
+
+  @override
+  String get courtPracticeNext => 'Следующий вопрос';
+
+  @override
+  String get courtPracticeOpen => 'Открыть вопрос полностью';
+
+  @override
+  String courtPracticeProgress(int count) {
+    return 'Отработано вопросов: $count';
+  }
+
+  @override
+  String courtQuestionOf(int index, int count) {
+    return 'Вопрос $index из $count';
+  }
+
+  @override
+  String get courtShortAnswer => 'Краткий ответ';
+
+  @override
+  String get courtBasisHeader => 'Научные и правовые основания ответа';
+
+  @override
+  String get courtBasis => 'Научное / правовое основание';
+
+  @override
+  String get courtWhereWritten => 'Где это написано?';
+
+  @override
+  String get courtSourceUnverified => 'Источник не проверен';
+
+  @override
+  String get courtSourceUnverifiedNote =>
+      'Точное место в этом источнике не подтверждено по оригинальному тексту.';
+
+  @override
+  String get courtFollowups => 'Дополнительные вопросы';
+
+  @override
+  String get courtLimitations => 'Ограничения, исключения и неопределённости';
+
+  @override
+  String get courtExport => 'Скопировать источники';
+
+  @override
+  String get courtExportText => 'Текстом';
+
+  @override
+  String get courtExportBibtex => 'В формате BibTeX';
+
+  @override
+  String get courtExportCopied => 'Источники скопированы';
+
+  @override
+  String courtLawNote(String date) {
+    return 'Узбекистан · lex.uz · редакция на $date';
+  }
+
+  @override
+  String get courtBookNote => 'С разрешения автора; бесплатно для всех';
+
+  @override
+  String courtLocArticle(String article) {
+    return 'ст. $article';
+  }
+
+  @override
+  String courtLocArticlePart(String article, String part) {
+    return 'ст. $article, ч. $part';
+  }
+
+  @override
+  String courtLocSection(String section) {
+    return '§ $section (раздел)';
+  }
+
+  @override
+  String courtLocPdfPage(String page) {
+    return 'PDF, с. $page';
+  }
+
+  @override
+  String courtLocPages(String pages) {
+    return 'с. $pages';
+  }
+
+  @override
+  String courtLocRecommendation(String n) {
+    return 'Рекомендация $n';
+  }
+
+  @override
+  String courtLocGuidanceNote(String n) {
+    return 'Руководящее примечание $n';
+  }
+
+  @override
+  String get courtLocAbstract => 'Аннотация';
+
+  @override
+  String get courtLocScope => 'Область применения (официальная страница)';
+
+  @override
+  String get courtLocTitle => 'Название и библиографическая запись';
+
+  @override
+  String get courtLocGlossary => 'Глоссарий';
+
+  @override
+  String get courtPrinciples => 'Принципы честности';
+
+  @override
+  String get courtPrinciplesBody =>
+      'Сообщать всё, говорить «не знаю», исправлять ошибки, быть независимым';
+
+  @override
+  String get courtPrinciplesIntro =>
+      'Этот раздел никогда не учит скрывать, смягчать или искажать реальные результаты.';
+
+  @override
+  String get courtJurisdictionUz =>
+      'Правовые вопросы: по законодательству Узбекистана';
+
+  @override
+  String get courtJurisdictionIntl =>
+      'Правовые вопросы: общие международные принципы. Выберите Узбекистан, чтобы видеть его законы.';
+
+  @override
+  String get courtJurisdictionChange => 'Выбрать юрисдикцию';
+
+  @override
+  String get courtPendingTopic => 'Готовится — источники проверяются';
+
+  @override
+  String get courtSimulator => 'Симулятор допроса в суде';
+
+  @override
+  String get courtSimulatorBody =>
+      'Ответьте судье, прокурору, адвокату или другому эксперту — оценка: точность, источники, ограничения, беспристрастность.';
+
+  @override
+  String get courtSimulatorNote =>
+      'Симулятор не предрешает исход дела и не учит ложным показаниям, уклонению или сокрытию результатов.';
+
+  @override
+  String get courtRoleJudge => 'Судья';
+
+  @override
+  String get courtRoleProsecutor => 'Прокурор';
+
+  @override
+  String get courtRoleDefense => 'Адвокат (защитник)';
+
+  @override
+  String get courtRoleExpert => 'Другой эксперт';
+
+  @override
+  String get courtSimContext => 'Ситуация';
+
+  @override
+  String get courtSimYourAnswer => 'Ваш собственный ответ (необязательно)';
+
+  @override
+  String get courtSimYourAnswerHint => 'Введите ответ…';
+
+  @override
+  String get courtSimEvaluateText => 'Проверить формулировку';
+
+  @override
+  String get courtSimChoose => 'Выберите лучший ответ';
+
+  @override
+  String get courtSimCheck => 'Проверить ответ';
+
+  @override
+  String get courtSimResult => 'Оценка';
+
+  @override
+  String courtSimTotal(int score, int max) {
+    return 'Итого: $score/$max';
+  }
+
+  @override
+  String get courtSimBest => 'Образцовый ответ';
+
+  @override
+  String get courtSimNext => 'Следующий сценарий';
+
+  @override
+  String get courtSimOpenQuestion => 'Открыть связанную карточку';
+
+  @override
+  String get courtSimFreeTextNote =>
+      'Автоматическая оценка по ключевым словам, приблизительная. Научную точность сравните с образцовым ответом сами.';
+
+  @override
+  String get courtSimFlagOverstatement =>
+      'Найдены абсолютные формулировки («100 %», «наверняка»…) — уверенность может быть завышена.';
+
+  @override
+  String get courtSimFlagEvasion =>
+      'Найдены уклончивые формулировки — назовите причину и то, что в вашей области.';
+
+  @override
+  String get courtSimTooShort => 'Ответ слишком короткий.';
+
+  @override
+  String get courtCritAccuracy => 'Научная точность';
+
+  @override
+  String get courtCritSources => 'Опора на источники';
+
+  @override
+  String get courtCritLimitations => 'Объяснение ограничений';
+
+  @override
+  String get courtCritImpartiality => 'Беспристрастность';
+
+  @override
+  String courtScenarioCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count сценариев',
+      few: '$count сценария',
+      one: '$count сценарий',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String courtProTitle(String tier) {
+    return 'Расширенная подготовка — в тарифе $tier';
+  }
+
+  @override
+  String get courtProBody =>
+      'Полный симулятор (все сценарии), последовательные ролевые тренировки, ИИ-анализ (скоро), личная статистика и история. Карточки вопросов с источниками бесплатны для всех.';
+
+  @override
+  String get courtProBadge => 'В Pro';
+
+  @override
+  String get courtAiPro => 'ИИ-анализ (Pro)';
+
+  @override
+  String courtScoreSemantics(String criterion, int score) {
+    return '$criterion: $score из 2';
+  }
+
+  @override
+  String get courtSimFreeNote =>
+      'Бесплатно: базовые сценарии. Остальные сценарии, ролевые тренировки и статистика — в Pro.';
+
+  @override
+  String get courtDrill => 'Ролевая тренировка';
+
+  @override
+  String get courtDrillBody =>
+      'Судья → прокурор → защитник → другой эксперт, по очереди';
+
+  @override
+  String courtDrillStep(int index, int count) {
+    return 'Шаг $index из $count';
+  }
+
+  @override
+  String get courtDrillNext => 'Следующая роль';
+
+  @override
+  String get courtDrillDone => 'Ролевая тренировка завершена';
+
+  @override
+  String get courtStats => 'Статистика и история';
+
+  @override
+  String get courtStatsBody =>
+      'Ваши оценки и история попыток — только на этом устройстве';
+
+  @override
+  String courtStatsAttempts(int count) {
+    return 'Попыток: $count';
+  }
+
+  @override
+  String get courtStatsAverage => 'Средняя оценка по критериям';
+
+  @override
+  String get courtStatsHistory => 'История';
+
+  @override
+  String get courtStatsEmpty => 'Попыток пока нет.';
+
+  @override
+  String get courtStatsClear => 'Очистить историю';
+
+  @override
+  String get courtAi => 'ИИ-анализ';
+
+  @override
+  String get courtAiUnavailable =>
+      'ИИ-анализ пока не подключён — скоро. Ваш ответ никуда не отправлен.';
+
+  @override
+  String get courtSimPartialUnverified =>
+      'Частично — источник не проверен: ответ опирается на источник с неподтверждённым местом.';
+
+  @override
+  String get courtSimReviewNote =>
+      'Оценка основана на материале, ожидающем экспертной проверки (NEEDS_REVIEW); образцовый ответ — тоже не проверенная истина.';
+
+  @override
+  String get glossaryTitle => 'Научный словарь';
+
+  @override
+  String get glossaryIntro =>
+      'Термины на узбекском, русском и английском языках. Переводы остаются машинными черновиками, пока их не проверит терминолог.';
+
+  @override
+  String get glossaryFilterHint => 'Фильтр терминов (uz, ru, en)';
+
+  @override
+  String get glossaryEmpty => 'Нет терминов, подходящих под фильтр.';
+
+  @override
+  String get glossaryMachineDraft => 'Машинный перевод — не проверен';
+
+  @override
+  String get glossaryMachineDraftNote =>
+      'Эти переводы получены автоматически и не проверены терминологом. Используйте их для ориентира; для заключений сверяйте термин с авторитетным источником.';
+
+  @override
+  String get glossaryStatusTranslated => 'Переведено — не проверено';
+
+  @override
+  String get glossaryStatusReviewed => 'Проверенный перевод';
+
+  @override
+  String glossaryOriginal(String language, String term) {
+    return 'В источнике ($language): $term';
+  }
+
+  @override
+  String get glossaryKindTerm => 'Термин';
+
+  @override
+  String get glossaryKindAbbreviation => 'Аббревиатура';
+
+  @override
+  String get glossaryKindIdentifier => 'Идентификатор';
+
+  @override
+  String get glossaryKindFormula => 'Формула';
+
+  @override
+  String get glossaryUsedIn => 'Встречается в карточках руководств';
+
+  @override
+  String get glossaryNoCards => 'Пока не связан с карточками руководств.';
+
+  @override
+  String get glossaryOpenInGlossary => 'Открыть в словаре';
+
+  @override
+  String get guidelineTerms => 'Термины';
+
+  @override
+  String get guidelineTermsHint =>
+      'Нажмите на термин, чтобы увидеть его на узбекском, русском и английском.';
 }

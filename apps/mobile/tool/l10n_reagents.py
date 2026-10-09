@@ -64,6 +64,9 @@ k("reagentOriginalHint", "Reagent page: hint under the original text heading.",
 k("reusePermissionGranted", "Reuse status chip: content-rights permission from the owner/author is on record (copyright only; NOT a legal permit for handling hazardous substances).",
   "RIGHTS HOLDER'S PERMISSION", "С РАЗРЕШЕНИЯ ПРАВООБЛАДАТЕЛЯ", "MUALLIF/EGASI RUXSATI BILAN")
 
+k("freeDemoBadge", "Access chip on a free entry (permanently free, not a time-limited demo).",
+  "Free", "Бесплатно", "Bepul")
+
 # Eski kalitlar (idempotent tozalash).
 OLD = ["reagentUnitDrop"]
 

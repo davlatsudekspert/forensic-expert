@@ -1,0 +1,242 @@
+{
+  "topic": {
+    "id": "court.topic.custody",
+    "order": 4,
+    "icon": "inventory",
+    "title": {
+      "uz": "Biologik namuna olish, saqlash va tashish",
+      "ru": "Отбор, хранение и транспортировка биологических образцов",
+      "en": "Collection, storage and transport of biological samples"
+    },
+    "summary": {
+      "uz": "Namuna kimdan kimga o‘tgani, qanday saqlangani, olingan joyi va ifloslanish xavfi.",
+      "ru": "Через чьи руки прошёл образец, как он хранился, место отбора и риск загрязнения.",
+      "en": "Who handled the sample, how it was stored, where it was taken and the risk of contamination."
+    }
+  },
+  "questions": [
+    {
+      "id": "court.q.custody_chain",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Namuna sizga qanday holatda keldi va u kimlar orqali o‘tgan?",
+        "ru": "В каком состоянии к вам поступил образец и через чьи руки он прошёл?",
+        "en": "In what condition did the sample reach you, and who handled it along the way?"
+      },
+      "tests": {
+        "uz": "Tekshirilgan obyekt aynan ishdagi obyekt ekanligi va u almashtirilmagan, yo‘qotilmagan yoki ifloslanmaganligi; saqlash zanjiri yozuvi har bir egalik qiluvchini yoki saqlash joyini ko‘rsatadi [court_ilac_g19_2022].",
+        "ru": "Тот ли это объект, что изъят по делу, не был ли он подменён, утрачен или загрязнён; запись цепочки хранения указывает каждого владельца или место хранения [court_ilac_g19_2022].",
+        "en": "That the examined item is the item from the case and was not substituted, lost or contaminated; the chain-of-custody record names every holder or storage location [court_ilac_g19_2022]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Qabul dalolatnomasi: o‘ram, muhr va yorliq holati, qabul sanasi va vaqti, qabul qilgan shaxs; nomuvofiqliklar qayd etilganmi [court_ilac_g19_2022].",
+            "ru": "Акт приёма: состояние упаковки, печатей и этикеток, дата и время, кто принял; зафиксированы ли несоответствия [court_ilac_g19_2022].",
+            "en": "The receipt record: state of packaging, seals and labels, date and time, who received it; whether any discrepancies were recorded [court_ilac_g19_2022]."
+          },
+          {
+            "uz": "Laboratoriya ichidagi harakat yozuvlari: saqlash joyi, kimga berilgan; laboratoriyada hosil qilingan alikvotlar ham zanjirga kiritilgan [court_ilac_g19_2022].",
+            "ru": "Записи о перемещении внутри лаборатории: место хранения, кому передавался; полученные в лаборатории аликвоты также включены в цепочку [court_ilac_g19_2022].",
+            "en": "Internal movement records: storage location, to whom it was issued; aliquots created in the laboratory are also part of the chain [court_ilac_g19_2022]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Saqlash zanjiri tartibi har bir davlat qonunchiligiga moslashtiriladi; laboratoriya obyekt o‘z nazoratida bo‘lgan davr uchun javob beradi [court_ilac_g19_2022].",
+            "ru": "Порядок цепочки хранения адаптируется к законодательству каждой страны; лаборатория отвечает за период, когда объект под её контролем [court_ilac_g19_2022].",
+            "en": "The chain-of-custody procedure is adapted to each country's law; the laboratory answers for the period the item is under its control [court_ilac_g19_2022]."
+          },
+          {
+            "uz": "Obyektlarning saqlanishini ta’minlash ekspertning protsessual majburiyatlaridan biri (O‘zbekiston JPK) [court_uz_cpc].",
+            "ru": "Обеспечение сохранности объектов — одна из процессуальных обязанностей эксперта (УПК Узбекистана) [court_uz_cpc].",
+            "en": "Preserving the objects is one of the expert's procedural duties (Uzbekistan CPC) [court_uz_cpc]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Laboratoriyaga kelgunga qadar bo‘lgan bosqichni (olish, yorliqlash, tashish) taxmin bilan tasdiqlash; bu bosqich hujjatlariga havola qilish kerak [flanagan2005].",
+            "ru": "Подтверждать по догадке этап до поступления в лабораторию (отбор, маркировка, транспортировка); следует ссылаться на документы этого этапа [flanagan2005].",
+            "en": "Vouching by guesswork for the stage before the laboratory (collection, labelling, transport); refer to the records of that stage instead [flanagan2005]."
+          }
+        ]
+      },
+      "links": [
+        "guideline:guideline.tox.specimen_preanalytics",
+        "page:specimens"
+      ],
+      "citations": [
+        "court_ilac_g19_2022",
+        "court_uz_cpc",
+        "flanagan2005"
+      ]
+    },
+    {
+      "id": "court.q.custody_storage",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Namuna noto‘g‘ri saqlangan bo‘lsa, natija o‘zgarishi mumkinmi?",
+        "ru": "Мог ли результат измениться, если образец хранился неправильно?",
+        "en": "Could the result have changed if the sample was stored incorrectly?"
+      },
+      "tests": {
+        "uz": "Saqlash sharoiti (harorat, muddat, konservant) moddaning barqarorligiga ta’siri va natija namunani olish paytidagi holatni aks ettiradimi [peters2007stab].",
+        "ru": "Влияние условий хранения (температура, срок, консервант) на стабильность вещества и отражает ли результат состояние на момент отбора [peters2007stab].",
+        "en": "How storage conditions (temperature, time, preservative) affect analyte stability and whether the result reflects the state at the time of collection [peters2007stab]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Saqlash harorati jurnali, namuna olingan, qabul qilingan va tahlil qilingan sanalar; konservant (masalan, natriy ftorid) qo‘shilgani haqidagi ma’lumot [olds2023].",
+            "ru": "Журнал температуры хранения, даты отбора, приёма и анализа; сведения о добавлении консерванта (например, фторида натрия) [olds2023].",
+            "en": "Storage temperature log, dates of collection, receipt and analysis; information on whether a preservative (for example, sodium fluoride) was added [olds2023]."
+          },
+          {
+            "uz": "Shu modda uchun barqarorlik bo‘yicha validatsiya ma’lumoti yoki tekshirilgan adabiyot [peters2007stab].",
+            "ru": "Данные валидации по стабильности для этого вещества или проверенная литература [peters2007stab].",
+            "en": "Stability data from validation for this analyte, or verified literature [peters2007stab]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Ko‘p moddalar odatiy laboratoriya sharoitida barqaror; beqarorlik asosan murakkab efir guruhli, oson oksidlanadigan yoki qaytariladigan tuzilmalarda kuzatiladi; xona haroratida uzoq saqlangan namunalar natijasi ehtiyotkorlik bilan talqin qilinadi [peters2007stab].",
+            "ru": "Большинство веществ стабильны в обычных лабораторных условиях; нестабильность характерна в основном для сложноэфирных, легко окисляемых или восстанавливаемых структур; результаты образцов, долго хранившихся при комнатной температуре, интерпретируются с большой осторожностью [peters2007stab].",
+            "en": "Most drugs are stable under usual laboratory conditions; instability mainly affects ester, easily oxidised or reduced structures; results from samples kept long at room temperature are interpreted with great care [peters2007stab]."
+          },
+          {
+            "uz": "Etanol saqlashda kamayishga moyil; konservantsiz siydikda glyukozuriya yoki infeksiya bo‘lsa, in vitro hosil bo‘lishi mumkin [olds2023].",
+            "ru": "Этанол при хранении склонен к снижению; в моче без консерванта при глюкозурии или инфекции возможно его образование in vitro [olds2023].",
+            "en": "Ethanol tends to decrease during storage; in unpreserved urine with glycosuria or infection it can be formed in vitro [olds2023]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "O‘zgarish yo‘nalishi va kattaligini adabiyot yoki validatsiya ma’lumotisiz aniq son bilan aytish.",
+            "ru": "Называть точное направление и величину изменения без данных литературы или валидации.",
+            "en": "Stating a precise direction or size of change without literature or validation data."
+          }
+        ]
+      },
+      "links": [
+        "guideline:guideline.tox.specimen_preanalytics",
+        "guideline:guideline.chem.ethanol_gc"
+      ],
+      "citations": [
+        "peters2007stab",
+        "olds2023"
+      ]
+    },
+    {
+      "id": "court.q.custody_site",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Qon qaysi joydan olingan va bu natija uchun muhimmi?",
+        "ru": "Из какого места взята кровь и важно ли это для результата?",
+        "en": "Where was the blood taken from, and does it matter for the result?"
+      },
+      "tests": {
+        "uz": "Murdadan olingan namunada olish joyi konsentratsiyaga ta’sir qilishi: markaziy tomirlarda daraja odatda yuqori, periferik (son) venalarida pastroq bo‘ladi [pounder1990].",
+        "ru": "Влияние места отбора на концентрацию в посмертном образце: в центральных сосудах уровни обычно выше, в периферических (бедренных) венах — ниже [pounder1990].",
+        "en": "Whether the sampling site affects the postmortem concentration: levels are usually highest in central vessels and lowest in peripheral (femoral) veins [pounder1990]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Namuna yorlig‘i va olish dalolatnomasi: olish joyi aniq yozilganmi (masalan, «son venasi», «yurak»), «qon» deb umumiy yozilmaganmi [flanagan2005].",
+            "ru": "Этикетка и акт отбора: точно ли указано место (например, «бедренная вена», «сердце»), а не просто «кровь» [flanagan2005].",
+            "en": "Sample label and collection record: is the site stated precisely (for example, 'femoral vein', 'heart') rather than just 'blood' [flanagan2005]."
+          },
+          {
+            "uz": "Boshqa namunalar (siydik, ko‘z shishasimon suyuqligi) bo‘lsa — ularning natijalari taqqoslash uchun [drummer2007].",
+            "ru": "Если есть другие образцы (моча, стекловидное тело) — их результаты для сопоставления [drummer2007].",
+            "en": "Results of any other specimens (urine, vitreous humour) for comparison [drummer2007]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Tavsiya: periferik qon ikki alohida joydan (afzali son venalaridan), markaziy tomirlardan qochib olinadi [flanagan2005]; ideal joy — bog‘langan yoki qisilgan son venasi [yarema2005].",
+            "ru": "Рекомендуется брать периферическую кровь из двух разных мест (предпочтительно бедренных вен), избегая центральных сосудов [flanagan2005]; идеальное место — перевязанная или пережатая бедренная вена [yarema2005].",
+            "en": "Peripheral blood is recommended from two distinct sites (preferably femoral veins), avoiding central vessels [flanagan2005]; the ideal site is a ligated or clamped femoral vein [yarema2005]."
+          },
+          {
+            "uz": "Olish joyi noma’lum bo‘lsa, ma’lumotnoma bazalari bilan taqqoslash qiymati pasayadi [pounder1990].",
+            "ru": "Если место отбора неизвестно, ценность сравнения со справочными базами снижается [pounder1990].",
+            "en": "When the sampling site is unknown, comparison with reference databases loses value [pounder1990]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Yurak qonidagi natijani son venasi uchun to‘plangan ma’lumotnoma qiymatlari bilan to‘g‘ridan-to‘g‘ri solishtirish [pounder1990].",
+            "ru": "Напрямую сравнивать результат из крови сердца со справочными значениями, собранными для бедренной крови [pounder1990].",
+            "en": "Comparing a heart-blood result directly with reference values compiled for femoral blood [pounder1990]."
+          }
+        ]
+      },
+      "links": [
+        "guideline:guideline.tox.postmortem_interpretation",
+        "guideline:guideline.tox.specimen_preanalytics"
+      ],
+      "citations": [
+        "pounder1990",
+        "flanagan2005",
+        "drummer2007",
+        "yarema2005"
+      ]
+    },
+    {
+      "id": "court.q.custody_contamination",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Namuna laboratoriyada ifloslangan bo‘lishi mumkin emasmi?",
+        "ru": "Не мог ли образец быть загрязнён в лаборатории?",
+        "en": "Could the sample have been contaminated in the laboratory?"
+      },
+      "tests": {
+        "uz": "Ifloslanish — istalmagan modda yoki iz materialining jarayonning istalgan bosqichida kirib qolishi; uni istisno qilish uchun qanday nazoratlar bo‘lgani [court_ilac_g19_2022].",
+        "ru": "Загрязнение — нежелательное привнесение веществ или следов на любом этапе процесса; какие контроли позволяют его исключить [court_ilac_g19_2022].",
+        "en": "Contamination is the undesired introduction of substances or trace material at any stage of the process; which controls allow it to be ruled out [court_ilac_g19_2022]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Shu seriyadagi blank (bo‘sh) va manfiy nazorat namunalari natijalari [court_ilac_g19_2022].",
+            "ru": "Результаты холостых и отрицательных контрольных проб в той же серии [court_ilac_g19_2022].",
+            "en": "Results of blank and negative control samples in the same batch [court_ilac_g19_2022]."
+          },
+          {
+            "uz": "Tahlil ketma-ketligi: yuqori konsentratsiyali namunadan keyin blank qo‘yilganmi (o‘tib qolish nazorati).",
+            "ru": "Последовательность анализа: ставился ли холостой образец после образца с высокой концентрацией (контроль переноса).",
+            "en": "The run sequence: was a blank run after a high-concentration sample (carry-over check)."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Uchuvchi moddalar uchun o‘zaro ifloslanishdan saqlanish choralari namunani olish va saqlash bosqichida ham talab qilinadi [flanagan2005].",
+            "ru": "Меры против перекрёстного загрязнения летучими веществами требуются уже на этапе отбора и хранения [flanagan2005].",
+            "en": "Precautions against cross-contamination with volatiles are needed already at collection and storage [flanagan2005]."
+          },
+          {
+            "uz": "Musbat va manfiy nazoratlar, takroriy tahlil va mustaqil tekshiruv natija yaroqliligini ko‘rsatish vositalaridir [court_ilac_g19_2022].",
+            "ru": "Положительные и отрицательные контроли, повторный анализ и независимая проверка — средства подтверждения достоверности результата [court_ilac_g19_2022].",
+            "en": "Positive and negative controls, replicate analysis and independent checks are the means to show that a result is valid [court_ilac_g19_2022]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Ifloslanish ehtimolini «mutlaqo mumkin emas» deb rad etish; nazoratlar nimani ko‘rsatganini aytish to‘g‘riroq [court_pcast2016].",
+            "ru": "Отвергать возможность загрязнения как «абсолютно невозможную»; правильнее сказать, что показали контроли [court_pcast2016].",
+            "en": "Dismissing contamination as 'absolutely impossible'; it is better to state what the controls showed [court_pcast2016]."
+          }
+        ]
+      },
+      "links": [
+        "guideline:guideline.tox.specimen_preanalytics"
+      ],
+      "citations": [
+        "court_ilac_g19_2022",
+        "flanagan2005",
+        "court_pcast2016"
+      ]
+    }
+  ]
+}

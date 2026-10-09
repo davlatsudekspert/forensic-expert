@@ -10,4 +10,7 @@ regexes = [
   # Bibliografik iqtibos kalitlari (muallif+yil: konigsberg1998,
   # asb_bpr156_2023) — sir emas. Faqat kichik harf, oxiri yil bilan.
   '''^[a-z]+(_[a-z0-9]+)*_?(19|20)[0-9]{2}[a-z]?$''',
+  # Manba kalitlari yilsiz ham bo‘lishi mumkin (gmt_lex_law813,
+  # court_uz_cpc): faqat kichik harfli snake_case identifikator.
+  '''^(gmt|toks|dvssm|court|ilac|iso|iupac)_[a-z0-9_]+$''',
 ]

@@ -19,10 +19,12 @@ import '../features/account/presentation/auth_screens.dart';
 import '../features/admin/presentation/admin_screen.dart';
 import '../features/admin/presentation/admin_support_screens.dart';
 import '../features/ai/presentation/ai_screen.dart';
+import '../features/court_prep/presentation/court_prep_screens.dart';
 import '../features/disciplines/presentation/disciplines_screens.dart';
 import '../features/evidence/presentation/provenance_screens.dart';
 import '../features/evidence/presentation/research_screens.dart';
 import '../features/evidence/presentation/scientific_image.dart';
+import '../features/glossary/presentation/glossary_screens.dart';
 import '../features/guidelines/presentation/guidelines_screens.dart';
 import '../features/guidelines/presentation/practice_catalog_screen.dart';
 import '../features/home/presentation/home_screen.dart';
@@ -320,6 +322,13 @@ final routerProvider = Provider<GoRouter>((ref) {
                     ),
                   ),
                   GoRoute(
+                    path: 'glossary/:id',
+                    builder: (c, s) => GlossaryTermScreen(
+                      termId: s.pathParameters['id']!,
+                      inHome: true,
+                    ),
+                  ),
+                  GoRoute(
                     path: 'standards',
                     builder: (c, s) => const StandardsScreen(),
                   ),
@@ -386,6 +395,17 @@ final routerProvider = Provider<GoRouter>((ref) {
                     builder: (c, s) => const StandardsScreen(),
                   ),
                   GoRoute(
+                    path: 'glossary',
+                    builder: (c, s) => const GlossaryScreen(),
+                    routes: [
+                      GoRoute(
+                        path: 'term/:id',
+                        builder: (c, s) =>
+                            GlossaryTermScreen(termId: s.pathParameters['id']!),
+                      ),
+                    ],
+                  ),
+                  GoRoute(
                     path: 'guidelines',
                     builder: (c, s) => const GuidelinesScreen(),
                     routes: [
@@ -398,6 +418,51 @@ final routerProvider = Provider<GoRouter>((ref) {
                       GoRoute(
                         path: 'practice',
                         builder: (c, s) => const PracticeCatalogScreen(),
+                      ),
+                    ],
+                  ),
+                  GoRoute(
+                    path: 'court-prep',
+                    builder: (c, s) => const CourtPrepScreen(),
+                    routes: [
+                      GoRoute(
+                        path: 'practice',
+                        builder: (c, s) => const CourtPracticeScreen(),
+                      ),
+                      GoRoute(
+                        path: 'principles',
+                        builder: (c, s) => const CourtPrinciplesScreen(),
+                      ),
+                      GoRoute(
+                        path: 'drill',
+                        builder: (c, s) => const CourtDrillScreen(),
+                      ),
+                      GoRoute(
+                        path: 'stats',
+                        builder: (c, s) => const CourtStatsScreen(),
+                      ),
+                      GoRoute(
+                        path: 'simulator',
+                        builder: (c, s) => const CourtSimulatorScreen(),
+                        routes: [
+                          GoRoute(
+                            path: ':id',
+                            builder: (c, s) => CourtScenarioScreen(
+                              scenarioId: s.pathParameters['id']!,
+                            ),
+                          ),
+                        ],
+                      ),
+                      GoRoute(
+                        path: 'topic/:id',
+                        builder: (c, s) =>
+                            CourtTopicScreen(topicId: s.pathParameters['id']!),
+                      ),
+                      GoRoute(
+                        path: 'q/:id',
+                        builder: (c, s) => CourtQuestionScreen(
+                          questionId: s.pathParameters['id']!,
+                        ),
                       ),
                     ],
                   ),

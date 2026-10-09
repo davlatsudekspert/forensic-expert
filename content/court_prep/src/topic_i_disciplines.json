@@ -1,0 +1,242 @@
+{
+  "topics": [
+    {
+      "id": "court.topic.chem_analysis",
+      "order": 5,
+      "icon": "science",
+      "title": {"uz": "Sud-kimyoviy tahlillar", "ru": "Судебно-химические анализы", "en": "Forensic chemical analysis"},
+      "summary": {"uz": "Tahlil rejasi, dastlabki tekshiruv va namunani tejash.", "ru": "План анализа, предварительное исследование и экономия образца.", "en": "Analysis plan, preliminary testing and conserving the sample."}
+    },
+    {
+      "id": "court.topic.instrumental",
+      "order": 6,
+      "icon": "insights",
+      "title": {"uz": "YuQX, GX va GX-MS imkoniyatlari", "ru": "Возможности ТСХ, ГХ и ГХ-МС", "en": "What TLC, GC and GC-MS can show"},
+      "summary": {"uz": "Har bir usul nimani ko‘rsatadi va nimani ko‘rsata olmaydi.", "ru": "Что показывает каждый метод и чего не может показать.", "en": "What each technique shows — and what it cannot."}
+    },
+    {
+      "id": "court.topic.ethanol",
+      "order": 8,
+      "icon": "science",
+      "title": {"uz": "Etanol tahlili", "ru": "Анализ этанола", "en": "Ethanol analysis"},
+      "summary": {"uz": "Usul tanlash, konservant va namuna turi.", "ru": "Выбор метода, консервант и вид образца.", "en": "Choice of method, preservative and specimen type."}
+    },
+    {
+      "id": "court.topic.thanatology",
+      "order": 10,
+      "icon": "description",
+      "title": {"uz": "Tanatologiya va o‘limdan keyingi o‘zgarishlar", "ru": "Танатология и посмертные изменения", "en": "Thanatology and postmortem change"},
+      "summary": {"uz": "Chirish va o‘limdan keyingi jarayonlarning kimyoviy natijalarga ta’siri.", "ru": "Влияние гниения и посмертных процессов на химические результаты.", "en": "How decomposition and postmortem processes affect chemical results."}
+    },
+    {
+      "id": "court.topic.histology",
+      "order": 11,
+      "icon": "biotech",
+      "pending": true,
+      "title": {"uz": "Sud-gistologiya", "ru": "Судебная гистология", "en": "Forensic histology"},
+      "summary": {"uz": "Tayyorlanmoqda: tekshirilgan manbalar qo‘shilgach savollar paydo bo‘ladi.", "ru": "Готовится: вопросы появятся после добавления проверенных источников.", "en": "In preparation: questions will appear once verified sources are added."}
+    },
+    {
+      "id": "court.topic.biology",
+      "order": 12,
+      "icon": "biotech",
+      "title": {"uz": "Sud-biologiya va genetika", "ru": "Судебная биология и генетика", "en": "Forensic biology and genetics"},
+      "summary": {"uz": "Diatom tahlili; genetika bo‘yicha savollar tekshirilgan manbalar bilan keyinroq qo‘shiladi.", "ru": "Анализ диатомей; вопросы по генетике будут добавлены позже с проверенными источниками.", "en": "Diatom analysis; genetics questions will be added later with verified sources."}
+    },
+    {
+      "id": "court.topic.criminalistics",
+      "order": 13,
+      "icon": "fingerprint",
+      "title": {"uz": "Tibbiy kriminalistika", "ru": "Медицинская криминалистика", "en": "Medical criminalistics"},
+      "summary": {"uz": "Suyaklar bo‘yicha bo‘y uzunligini baholash va uning chegaralari.", "ru": "Оценка роста по костям и её пределы.", "en": "Stature estimation from bones and its limits."}
+    }
+  ],
+  "questions": [
+    {
+      "id": "court.q.chem_plan",
+      "topic": "court.topic.chem_analysis",
+      "status": "NEEDS_REVIEW",
+      "question": {"uz": "Tahlil rejasini qanday tuzdingiz va nega ba’zi moddalarni tekshirmadingiz?", "ru": "Как вы составили план анализа и почему не проверили некоторые вещества?", "en": "How did you plan the analysis, and why were some substances not tested?"},
+      "tests": {"uz": "Tahlil strategiyasi savolga va mavjud namunaga mos bo‘lganmi; tekshirilmagan moddalar xulosada ochiq ko‘rsatilganmi [court_ilac_g19_2022].", "ru": "Соответствовала ли стратегия вопросу и имеющемуся образцу; указаны ли непроверенные вещества открыто [court_ilac_g19_2022].", "en": "Whether the strategy fitted the question and available material, and whether untested substances are disclosed [court_ilac_g19_2022]."},
+      "short_answer": {"uz": "Reja namunani tejash va vaqtni hisobga olib tuziladi; dastlabki tekshiruv ko‘p moddalarni inkor qilish yoki taxmin qilishga yordam beradi [court_yuldashev_toks2025]. Strategiya savolga eng ko‘p ma’lumot beradigan tekshiruvlarni tanlaydi [court_ilac_g19_2022]; nima tekshirilmaganini va sababini xulosada aytaman.", "ru": "План составляется с учётом экономии образца и времени; предварительное исследование помогает исключить или предположить многие вещества [court_yuldashev_toks2025]. Стратегия выбирает наиболее информативные исследования [court_ilac_g19_2022]; что не проверялось и почему — указываю в заключении.", "en": "The plan conserves material and time; a preliminary examination helps exclude or suggest many substances [court_yuldashev_toks2025]. The strategy picks the most informative tests [court_ilac_g19_2022]; I state in the report what was not tested and why."},
+      "prepare": {
+        "documents": [{"uz": "Tahlil rejasi, sarflangan va qolgan namuna miqdori [court_ilac_g19_2022].", "ru": "План анализа, израсходованное и оставшееся количество образца [court_ilac_g19_2022].", "en": "The analysis plan; amount of sample used and remaining [court_ilac_g19_2022]."}],
+        "explain": [{"uz": "Dastlabki tekshiruv natijasi asosida xulosa qilinmaydi; musbat natijadan keyin asosiy tekshiruv shart [court_yuldashev_toks2025].", "ru": "По результату предварительного исследования вывод не делается; после положительного результата обязательно основное исследование [court_yuldashev_toks2025].", "en": "No conclusion is drawn from a preliminary examination; a positive result requires the main examination [court_yuldashev_toks2025]."}],
+        "pitfalls": [{"uz": "«Hamma zaharlar tekshirildi» deb aytish — tahlil faqat tanlangan moddalar va usullar doirasida.", "ru": "Говорить «проверены все яды» — анализ охватывает только выбранные вещества и методы.", "en": "Saying 'all poisons were tested' — analysis covers only the chosen substances and methods."}]
+      },
+      "followups": [
+        {"q": {"uz": "Namunaning hammasini sarflab qo‘ydingizmi?", "ru": "Вы израсходовали весь образец?", "en": "Did you use up the whole sample?"},
+         "a": {"uz": "Strategiya namunani boshqa tekshiruvlar uchun saqlash zaruratini hisobga oladi; qolgan miqdorni ayting [court_ilac_g19_2022].", "ru": "Стратегия учитывает необходимость сохранить материал для других исследований; назовите остаток [court_ilac_g19_2022].", "en": "The strategy accounts for preserving material for other tests; state what remains [court_ilac_g19_2022]."}},
+        {"q": {"uz": "Nega «umumiy noma’lum» skrining qilinmadi?", "ru": "Почему не проведён скрининг «общего неизвестного»?", "en": "Why was no general-unknown screen run?"},
+         "a": {"uz": "Mavjud usullar va savolni rostini ayting; tekshiruv strategiyasida mavjud xizmatlar va cheklovlar ham hisobga olinadi [court_ilac_g19_2022].", "ru": "Честно назовите имеющиеся методы и вопрос; стратегия учитывает доступные услуги и ограничения [court_ilac_g19_2022].", "en": "State truthfully the available methods and the question asked; strategy also reflects available services and constraints [court_ilac_g19_2022]."}}
+      ],
+      "limitations": [{"uz": "O‘quv qo‘llanmadagi umumiy reja tavsifi muayyan laboratoriya SOPini almashtirmaydi.", "ru": "Общее описание плана в учебном пособии не заменяет СОП конкретной лаборатории.", "en": "The textbook's general description of planning does not replace a laboratory's SOP."}],
+      "links": ["guideline:guideline.chem.tlc_screening"],
+      "citations": ["court_ilac_g19_2022", "court_yuldashev_toks2025"],
+      "locators": {"court_ilac_g19_2022": ["sec:4.7.2"], "court_yuldashev_toks2025": ["pdfp:12"]}
+    },
+    {
+      "id": "court.q.instr_tlc",
+      "topic": "court.topic.instrumental",
+      "status": "NEEDS_REVIEW",
+      "question": {"uz": "Yupqa qatlam xromatografiyasi (YuQX) moddani aniqlashga yetarli emasmi?", "ru": "Разве тонкослойной хроматографии (ТСХ) недостаточно для установления вещества?", "en": "Isn't thin-layer chromatography (TLC) enough to identify a substance?"},
+      "tests": {"uz": "YuQX ning tuzilma haqida ma’lumot bermasligini va B toifasiga kirishini bilish [swgdrug2024, cheng2011].", "ru": "Знание того, что ТСХ не даёт структурной информации и относится к категории B [swgdrug2024, cheng2011].", "en": "Knowing that TLC gives no structural information and is a Category B technique [swgdrug2024, cheng2011]."},
+      "short_answer": {"uz": "YuQX oddiy va arzon ajratish usuli, lekin ko‘rinishga keltirish moddani bevosita identifikatsiya qilmaydi va tuzilma haqida ma’lumot bermaydi [cheng2011]. SWGDRUG uni B toifasiga kiritadi; identifikatsiya uchun A toifasidagi usul yoki usullar majmuasi kerak [swgdrug2024].", "ru": "ТСХ — простой и недорогой метод разделения, но визуализация не идентифицирует вещество напрямую и не даёт структурной информации [cheng2011]. SWGDRUG относит её к категории B; для идентификации нужен метод категории A или их совокупность [swgdrug2024].", "en": "TLC is a simple, low-cost separation, but visualisation does not identify a substance directly or characterise its structure [cheng2011]. SWGDRUG lists it as Category B; identification needs a Category A technique or a combination [swgdrug2024]."},
+      "prepare": {
+        "documents": [{"uz": "Plastinka fotosurati, Rf qiymatlari va har bir plastinkadagi ma’lumotnoma aralashmasi [dezeeuw1992].", "ru": "Фото пластинки, значения Rf и эталонная смесь на каждой пластинке [dezeeuw1992].", "en": "Plate photograph, Rf values and the reference mixture on each plate [dezeeuw1992]."}],
+        "explain": [{"uz": "Harorat va namlik Rf qiymatlarini sezilarli siljitadi; har plastinkada ma’lum moddalar aralashmasi bilan tuzatish takrorlanuvchanlikni tiklaydi [dezeeuw1992].", "ru": "Температура и влажность заметно сдвигают Rf; поправка по смеси известных веществ на каждой пластинке восстанавливает воспроизводимость [dezeeuw1992].", "en": "Temperature and humidity shift Rf values substantially; correction with a known reference mixture on each plate restores reproducibility [dezeeuw1992]."}],
+        "pitfalls": [{"uz": "Rf mosligini «identifikatsiya» deb atash [cheng2011].", "ru": "Называть совпадение Rf «идентификацией» [cheng2011].", "en": "Calling an Rf match an 'identification' [cheng2011]."}]
+      },
+      "followups": [
+        {"q": {"uz": "YuQX ni mass-spektrometriya bilan birlashtirish mumkinmi?", "ru": "Можно ли сочетать ТСХ с масс-спектрометрией?", "en": "Can TLC be coupled with mass spectrometry?"},
+         "a": {"uz": "Ha, bilvosita (dog‘ni qirib ekstraksiya qilish) va to‘g‘ridan-to‘g‘ri TLC-MS interfeyslari mavjud [cheng2011].", "ru": "Да, существуют косвенные (соскоб и экстракция) и прямые интерфейсы ТСХ-МС [cheng2011].", "en": "Yes, indirect (scrape-and-extract) and direct TLC-MS interfaces exist [cheng2011]."}},
+        {"q": {"uz": "Unda YuQX nimaga kerak?", "ru": "Зачем тогда нужна ТСХ?", "en": "Then why use TLC at all?"},
+         "a": {"uz": "Skrining va ajratish uchun; u boshqa usul bilan birga identifikatsiya sxemasining bir qismi bo‘lishi mumkin [swgdrug2024].", "ru": "Для скрининга и разделения; вместе с другим методом она может входить в схему идентификации [swgdrug2024].", "en": "For screening and separation; combined with another technique it can be part of an identification scheme [swgdrug2024]."}}
+      ],
+      "limitations": [{"uz": "SWGDRUG toifalari musodara qilingan moddalar uchun; biologik namunalarda boshqa mezonlar.", "ru": "Категории SWGDRUG — для изъятых веществ; для биологических образцов иные критерии.", "en": "SWGDRUG categories apply to seized drugs; biological specimens use other criteria."}],
+      "links": ["guideline:guideline.chem.tlc_screening", "guideline:guideline.chem.method_comparison"],
+      "citations": ["swgdrug2024", "cheng2011", "dezeeuw1992"],
+      "locators": {"swgdrug2024": ["sec:IIIB Table 1", "sec:IIIB.3.2"], "cheng2011": ["abstract"], "dezeeuw1992": ["abstract"]}
+    },
+    {
+      "id": "court.q.instr_gcms",
+      "topic": "court.topic.instrumental",
+      "status": "NEEDS_REVIEW",
+      "question": {"uz": "GX-MS natijasi moddaning aynan shu ekanini qanchalik ko‘rsatadi?", "ru": "Насколько результат ГХ-МС доказывает, что это именно данное вещество?", "en": "How strongly does a GC-MS result show it is this substance?"},
+      "tests": {"uz": "Mass-spektrometriyaning A toifasidagi usul ekanini, lekin identifikatsiya oldindan belgilangan mezonlar bajarilishiga bog‘liqligini tushunish [swgdrug2024, asb113_2023].", "ru": "Понимание того, что масс-спектрометрия — метод категории A, но идентификация зависит от выполнения заранее заданных критериев [swgdrug2024, asb113_2023].", "en": "That mass spectrometry is a Category A technique, yet identification depends on meeting predefined criteria [swgdrug2024, asb113_2023]."},
+      "short_answer": {"uz": "Mass-spektrometriya tuzilma haqida ma’lumot beradigan A toifasiga kiradi; GX-MS kabi tutash usul ikkala qismning mezonlari bajarilsa, ikki usul sifatida qaralishi mumkin [swgdrug2024]. Biologik namunada identifikatsiya laboratoriya mezonlari bo‘yicha baholanadi [asb113_2023]; natija nazoratlar va noaniqlik bilan beriladi.", "ru": "Масс-спектрометрия относится к категории A со структурной информацией; сопряжённый метод, как ГХ-МС, может считаться двумя методами, если выполнены критерии обоих [swgdrug2024]. В биологическом образце идентификация оценивается по критериям лаборатории [asb113_2023]; результат даётся с контролями и неопределённостью.", "en": "Mass spectrometry is a structurally informative Category A technique; a hyphenated technique such as GC-MS may count as two techniques if criteria for both are met [swgdrug2024]. In biological specimens identification is judged against the laboratory's criteria [asb113_2023]; the result comes with controls and uncertainty."},
+      "prepare": {
+        "documents": [{"uz": "Xromatogramma, spektr, ushlanish vaqti va ma’lumotnoma standart bilan solishtirish [asb098_2023].", "ru": "Хроматограмма, спектр, время удерживания и сравнение со стандартом [asb098_2023].", "en": "Chromatogram, spectrum, retention time and comparison with the reference standard [asb098_2023]."}],
+        "explain": [{"uz": "Darslikda ham geroin hozirgi davrda GSX, GX-MS va immunologik usullar bilan aniqlanishi ko‘rsatilgan; ular turli darajadagi ma’lumot beradi [court_yuldashev_gmt2024, swgdrug2024].", "ru": "В учебнике также указано, что героин сейчас определяют ГЖХ, ГХ-МС и иммунологическими методами; они дают информацию разного уровня [court_yuldashev_gmt2024, swgdrug2024].", "en": "The textbook also notes heroin is now determined by GLC, GC-MS and immunological methods; these give different levels of information [court_yuldashev_gmt2024, swgdrug2024]."}],
+        "pitfalls": [{"uz": "Kutubxona bo‘yicha moslikni yagona dalil sifatida keltirish [asb098_2023].", "ru": "Приводить совпадение с библиотекой как единственное доказательство [asb098_2023].", "en": "Offering a library match as the sole evidence [asb098_2023]."}]
+      },
+      "followups": [
+        {"q": {"uz": "LC-MS GX-MS dan yaxshiroqmi?", "ru": "ВЭЖХ-МС лучше ГХ-МС?", "en": "Is LC-MS better than GC-MS?"},
+         "a": {"uz": "Amaliyotda GX-MS dan LC-MS ga o‘tish kuzatilmoqda, yuqori aniqlikdagi MS murakkab biologik namunalarda muhim [ojanpera2012]; tanlov savol va validatsiyaga bog‘liq.", "ru": "В практике наблюдается переход от ГХ-МС к ВЭЖХ-МС, МС высокого разрешения важна в сложных биологических образцах [ojanpera2012]; выбор зависит от вопроса и валидации.", "en": "Practice is shifting from GC-MS to LC-MS, and high-resolution MS matters in complex biological samples [ojanpera2012]; the choice depends on the question and validation."}},
+        {"q": {"uz": "Izomerlarni farqlay olasizmi?", "ru": "Можете ли вы различить изомеры?", "en": "Can you distinguish isomers?"},
+         "a": {"uz": "Har doim ham emas; buni usulning selektivlik tekshiruvi ko‘rsatadi va cheklov sifatida aytiladi [ich_q2r2_2023].", "ru": "Не всегда; это показывает проверка селективности метода и называется как ограничение [ich_q2r2_2023].", "en": "Not always; the method's selectivity check shows this, and it is stated as a limitation [ich_q2r2_2023]."}}
+      ],
+      "limitations": [{"uz": "O‘quv qo‘llanmadagi usullar ro‘yxati zamonaviy adabiyot bilan solishtirildi; u identifikatsiya mezonlarini belgilamaydi.", "ru": "Перечень методов из пособия сверен с современной литературой; критериев идентификации он не задаёт.", "en": "The textbook's list of methods was cross-checked with current literature; it does not set identification criteria."}],
+      "links": ["guideline:guideline.chem.method_comparison"],
+      "citations": ["swgdrug2024", "asb113_2023", "asb098_2023", "court_yuldashev_gmt2024", "ojanpera2012", "ich_q2r2_2023"],
+      "locators": {"swgdrug2024": ["sec:IIIB Table 1", "sec:IIIB.3.4"], "asb113_2023": ["scope"], "asb098_2023": ["scope"], "court_yuldashev_gmt2024": ["pdfp:37"], "ojanpera2012": ["abstract"], "ich_q2r2_2023": ["sec:3.1.1"]}
+    },
+    {
+      "id": "court.q.ethanol_method",
+      "topic": "court.topic.ethanol",
+      "status": "NEEDS_REVIEW",
+      "question": {"uz": "Qondagi etanol qaysi usulda aniqlangan va nega aynan shu usul?", "ru": "Каким методом определён этанол в крови и почему именно им?", "en": "Which method measured blood ethanol, and why that one?"},
+      "tests": {"uz": "Usul turi (bug‘ fazali GX yoki fermentativ) va namuna turiga mosligini tushunish [xuan2024, tiscione2011].", "ru": "Понимание вида метода (парофазная ГХ или ферментативный) и его соответствия типу образца [xuan2024, tiscione2011].", "en": "Understanding the method type (headspace GC or enzymatic) and its fit to the specimen [xuan2024, tiscione2011]."},
+      "short_answer": {"uz": "Bug‘ fazali gaz xromatografiyasida FID bilan miqdor va MS bilan tasdiqlash bir vaqtda bajarilishi mumkin [tiscione2011]. Murda qonida fermentativ usulga laktat va LDG xalaqit berib, natijani oshirishi mumkin, shuning uchun HS-GC-FID tavsiya etiladi [xuan2024].", "ru": "Парофазная ГХ позволяет одновременно количественно определять с ПИД и подтверждать с МС [tiscione2011]. В посмертной крови лактат и ЛДГ мешают ферментативному методу и завышают результат, поэтому рекомендуется ПФ-ГХ-ПИД [xuan2024].", "en": "Headspace GC can quantify with FID while confirming with MS [tiscione2011]. In postmortem blood, lactate and LDH interfere with the enzymatic method and bias results upward, so HS-GC-FID is recommended [xuan2024]."},
+      "prepare": {
+        "documents": [{"uz": "Kalibrlash, ichki standart, nazorat va noaniqlik ma’lumotlari [tiscione2011, court_gullberg2012].", "ru": "Данные калибровки, внутреннего стандарта, контролей и неопределённости [tiscione2011, court_gullberg2012].", "en": "Calibration, internal standard, controls and uncertainty data [tiscione2011, court_gullberg2012]."}],
+        "explain": [{"uz": "Zardob (fermentativ) va butun qon (HS-GC) natijalari nisbati konsentratsiyaga bog‘liq; yagona o‘tkazish koeffitsienti yo‘q [barnhill2007].", "ru": "Соотношение результатов по сыворотке (ферментативно) и цельной крови (ПФ-ГХ) зависит от концентрации; единого коэффициента нет [barnhill2007].", "en": "The serum (enzymatic) to whole-blood (HS-GC) ratio is concentration-dependent; no single conversion factor applies [barnhill2007]."}],
+        "pitfalls": [{"uz": "Kasalxona zardob natijasini sud qon natijasi bilan to‘g‘ridan-to‘g‘ri tenglashtirish [barnhill2007].", "ru": "Напрямую приравнивать больничный результат по сыворотке к судебному результату по крови [barnhill2007].", "en": "Equating a hospital serum result directly with a forensic whole-blood result [barnhill2007]."}]
+      },
+      "followups": [
+        {"q": {"uz": "Boshqa uchuvchi moddalar xalaqit bermaydimi?", "ru": "Не мешают ли другие летучие вещества?", "en": "Don't other volatiles interfere?"},
+         "a": {"uz": "Chirish paytida 1-propanol, atsetaldegid kabi uchuvchi moddalar hosil bo‘ladi; bu ichki standart tanloviga ham ta’sir qiladi [boumba2008].", "ru": "При гниении образуются летучие вещества, например 1-пропанол и ацетальдегид; это влияет и на выбор внутреннего стандарта [boumba2008].", "en": "Putrefaction produces volatiles such as 1-propanol and acetaldehyde, which also affects internal-standard choice [boumba2008]."}},
+        {"q": {"uz": "Darslikda GSX usuli tasvirlanganmi?", "ru": "Описан ли метод ГЖХ в учебнике?", "en": "Does the textbook describe GLC?"},
+         "a": {"uz": "Ha, spirtlarni GSX bilan sifat va miqdoriy tahlil qilish o‘quv qo‘llanmada berilgan [court_yuldashev_toks2025]; laboratoriya amaliyoti esa validatsiyalangan SOPga tayanadi [tiscione2011].", "ru": "Да, качественный и количественный анализ спиртов методом ГЖХ описан в пособии [court_yuldashev_toks2025]; практика лаборатории опирается на валидированную СОП [tiscione2011].", "en": "Yes, qualitative and quantitative GLC of alcohols is described in the manual [court_yuldashev_toks2025]; laboratory practice relies on a validated SOP [tiscione2011]."}}
+      ],
+      "limitations": [{"uz": "Natijani qonuniy birliklarda ifodalash mamlakat qoidasiga bog‘liq; ilovadagi birlik konvertoridan foydalanganda manbani tekshiring.", "ru": "Выражение результата в правовых единицах зависит от правил страны; при использовании конвертера единиц проверьте источник.", "en": "Expressing results in legal units depends on national rules; check the source when using the unit converter."}],
+      "links": ["guideline:guideline.chem.ethanol_gc", "tool:tool.conv.ethanol_units"],
+      "citations": ["xuan2024", "tiscione2011", "court_gullberg2012", "barnhill2007", "boumba2008", "court_yuldashev_toks2025"],
+      "locators": {"xuan2024": ["abstract"], "tiscione2011": ["abstract"], "court_gullberg2012": ["abstract"], "barnhill2007": ["abstract"], "boumba2008": ["abstract"], "court_yuldashev_toks2025": ["pdfp:47"]}
+    },
+    {
+      "id": "court.q.ethanol_preservative",
+      "topic": "court.topic.ethanol",
+      "status": "NEEDS_REVIEW",
+      "question": {"uz": "Namunada konservant bo‘lmagan bo‘lsa yoki noto‘g‘ri konservant qo‘shilgan bo‘lsa-chi?", "ru": "А если в образце не было консерванта или добавлен неподходящий?", "en": "What if the sample had no preservative, or the wrong one?"},
+      "tests": {"uz": "Konservantning etanol natijasiga ta’sirini va eski hamda zamonaviy tavsiyalar farqini bilish [olds2023, court_yuldashev_toks2025].", "ru": "Знание влияния консерванта на результат по этанолу и различия старых и современных рекомендаций [olds2023, court_yuldashev_toks2025].", "en": "Knowing how preservatives affect ethanol results and how older and current recommendations differ [olds2023, court_yuldashev_toks2025]."},
+      "short_answer": {"uz": "Konservantsiz namunada etanol saqlashda kamayishi, siydikda esa glyukozuriya yoki infeksiyada in vitro hosil bo‘lishi mumkin; natriy ftorid bu xavfni kamaytiradi [olds2023]. Eski o‘quv qo‘llanmada namunani etil spirti bilan konservlash tasvirlangan, lekin etanolga tekshiriladigan obyekt uchun bu taqiqlangan [court_yuldashev_toks2025]; zamonaviy tavsiya — natriy ftorid [flanagan2005].", "ru": "В образце без консерванта этанол при хранении может снижаться, а в моче при глюкозурии или инфекции — образовываться in vitro; фторид натрия снижает риск [olds2023]. В старом пособии описано консервирование этиловым спиртом, но для объекта, исследуемого на этанол, это запрещено [court_yuldashev_toks2025]; современная рекомендация — фторид натрия [flanagan2005].", "en": "Without preservative, ethanol may fall during storage, and in urine with glycosuria or infection it may form in vitro; sodium fluoride reduces the risk [olds2023]. An older manual describes preserving with ethanol, but forbids it for objects to be tested for ethanol [court_yuldashev_toks2025]; current guidance uses sodium fluoride [flanagan2005]."},
+      "prepare": {
+        "documents": [{"uz": "Namuna olish dalolatnomasi: konservant turi va miqdori, idish, sana [flanagan2005].", "ru": "Акт отбора: вид и количество консерванта, ёмкость, дата [flanagan2005].", "en": "Collection record: preservative type and amount, container, date [flanagan2005]."}],
+        "explain": [{"uz": "Natija o‘zgargan bo‘lishi mumkin bo‘lsa, yo‘nalishi va noaniqligini ochiq ayting; o‘zgarish miqdorini taxmin qilib bermang [olds2023].", "ru": "Если результат мог измениться, открыто назовите направление и неопределённость; не придумывайте величину изменения [olds2023].", "en": "If the result may have changed, state the direction and uncertainty openly; do not invent the size of the change [olds2023]."}],
+        "pitfalls": [{"uz": "Darslikdagi eski amaliyotni zamonaviy adabiyot bilan solishtirmasdan qo‘llash.", "ru": "Применять старую практику из учебника без сверки с современной литературой.", "en": "Applying an older textbook practice without cross-checking current literature."}]
+      },
+      "followups": [
+        {"q": {"uz": "Bu holatda natijani butunlay rad etasizmi?", "ru": "Вы полностью отвергнете результат в таком случае?", "en": "Would you reject the result entirely?"},
+         "a": {"uz": "Natija beriladi, lekin konservant holati va mumkin bo‘lgan ta’siri cheklov sifatida ko‘rsatiladi [olds2023].", "ru": "Результат сообщается, но состояние консерванта и возможное влияние указываются как ограничение [olds2023].", "en": "The result is reported, with the preservative situation and its possible effect stated as a limitation [olds2023]."}},
+        {"q": {"uz": "Muzlatish yordam beradimi?", "ru": "Помогает ли заморозка?", "en": "Does freezing help?"},
+         "a": {"uz": "Muzlatiladigan probirkalarda bo‘sh joy qoldirish va natriy ftorid qo‘shish tavsiya etiladi [flanagan2005].", "ru": "Для замораживаемых пробирок рекомендуют оставлять свободный объём и добавлять фторид натрия [flanagan2005].", "en": "Leaving headspace in tubes to be frozen and adding sodium fluoride are recommended [flanagan2005]."}}
+      ],
+      "limitations": [
+        {"uz": "Manbalar o‘rtasida farq: o‘quv qo‘llanma etil spirtini konservant sifatida tasvirlaydi (etanol tahlilidan tashqari), zamonaviy sharhlar natriy ftoridni tavsiya qiladi.", "ru": "Источники расходятся: пособие описывает этиловый спирт как консервант (кроме анализа на этанол), современные обзоры рекомендуют фторид натрия.", "en": "Sources differ: the manual describes ethanol as a preservative (except for ethanol testing), current reviews recommend sodium fluoride."}
+      ],
+      "links": ["guideline:guideline.tox.specimen_preanalytics", "guideline:guideline.chem.ethanol_gc"],
+      "citations": ["olds2023", "court_yuldashev_toks2025", "flanagan2005"],
+      "locators": {"olds2023": ["abstract"], "court_yuldashev_toks2025": ["pdfp:10"], "flanagan2005": ["abstract"]}
+    },
+    {
+      "id": "court.q.thanato_decomposition",
+      "topic": "court.topic.thanatology",
+      "status": "NEEDS_REVIEW",
+      "question": {"uz": "Jasad chirigan bo‘lsa, kimyoviy natijalarga ishonish mumkinmi?", "ru": "Можно ли доверять химическим результатам, если тело гнилостно изменено?", "en": "Can chemical results be trusted if the body is decomposed?"},
+      "tests": {"uz": "Chirish jarayonida moddalar hosil bo‘lishi va parchalanishi talqinga qanday ta’sir qilishini tushunish [skopp2010, boumba2008].", "ru": "Понимание того, как образование и разрушение веществ при гниении влияют на интерпретацию [skopp2010, boumba2008].", "en": "Understanding how formation and degradation during decomposition affect interpretation [skopp2010, boumba2008]."},
+      "short_answer": {"uz": "Natija o‘lchangan qiymat sifatida to‘g‘ri bo‘lishi mumkin, lekin talqin cheklanadi: chirigan jasadlarda moddalar hosil bo‘lishi ham, parchalanishi ham mumkin [skopp2010]; mikrobial bijg‘ish etanol va boshqa uchuvchi moddalarni hosil qiladi [boumba2008]. Muqobil namunalar talqinga yordam beradi [kugelberg2007].", "ru": "Измеренное значение может быть верным, но интерпретация ограничена: в гнилостно изменённых телах вещества могут и образовываться, и разрушаться [skopp2010]; микробное брожение даёт этанол и другие летучие вещества [boumba2008]. Альтернативные образцы помогают интерпретации [kugelberg2007].", "en": "The measured value may be correct, but interpretation is limited: in decomposed bodies substances can be formed as well as degraded [skopp2010]; microbial fermentation produces ethanol and other volatiles [boumba2008]. Alternative specimens help interpretation [kugelberg2007]."},
+      "prepare": {
+        "documents": [{"uz": "Jasad holati, o‘limdan keyingi taxminiy vaqt va olingan namunalar ro‘yxati [skopp2004].", "ru": "Состояние тела, ориентировочный посмертный интервал и перечень образцов [skopp2004].", "en": "State of the body, approximate postmortem interval and list of specimens [skopp2004]."}],
+        "explain": [{"uz": "Chirish va autoliz namuna sifatiga ta’sir qiladi; yagona uyg‘unlashgan namuna olish protokoli yo‘q [skopp2004].", "ru": "Гниение и аутолиз влияют на качество образца; единого гармонизированного протокола отбора нет [skopp2004].", "en": "Putrefaction and autolysis affect specimen quality; there is no single harmonised sampling protocol [skopp2004]."}],
+        "pitfalls": [{"uz": "Chirigan jasaddagi natijani tirik odam uchun ma’lumotnoma qiymatlari bilan to‘g‘ridan-to‘g‘ri solishtirish [ferner2008].", "ru": "Напрямую сравнивать результат из гнилостно изменённого тела со справочными значениями для живых [ferner2008].", "en": "Comparing a result from a decomposed body directly with reference values for living people [ferner2008]."}]
+      },
+      "followups": [
+        {"q": {"uz": "Qaysi namunalar ko‘proq foydali?", "ru": "Какие образцы полезнее?", "en": "Which specimens are more useful?"},
+         "a": {"uz": "Ko‘z shishasimon suyuqligi, siydik va boshqa muqobil namunalar ko‘rib chiqiladi; tanlov holatga bog‘liq [kugelberg2007, skopp2004].", "ru": "Рассматривают стекловидное тело, мочу и другие альтернативные образцы; выбор зависит от случая [kugelberg2007, skopp2004].", "en": "Vitreous humour, urine and other alternative specimens are considered; the choice depends on the case [kugelberg2007, skopp2004]."}},
+        {"q": {"uz": "O‘lim vaqtini kimyoviy aniqlay olasizmi?", "ru": "Можете ли вы химически определить время смерти?", "en": "Can you determine time of death chemically?"},
+         "a": {"uz": "Agar bu ixtisosligingizdan tashqarida bo‘lsa, shuni ayting: ekspert o‘z sohasidan tashqarida xulosa bermaydi [court_enfsi2015]. Ilovadagi Henssge vositasi faqat yordamchi hisob.", "ru": "Если это вне вашей специальности, так и скажите: эксперт не даёт выводов вне своей области [court_enfsi2015]. Инструмент Хенссге в приложении — лишь вспомогательный расчёт.", "en": "If it is outside your specialty, say so: experts do not report outside their area [court_enfsi2015]. The app's Henssge tool is only an auxiliary calculation."}}
+      ],
+      "limitations": [{"uz": "Tanatologiya bo‘yicha qo‘shimcha savollar tekshirilgan manbalar qo‘shilgach kengaytiriladi.", "ru": "Вопросы по танатологии будут расширены после добавления проверенных источников.", "en": "Thanatology questions will be expanded once more verified sources are added."}],
+      "links": ["guideline:guideline.tox.postmortem_interpretation", "tool:tool.fm.pmi_henssge"],
+      "citations": ["skopp2010", "boumba2008", "kugelberg2007", "skopp2004", "ferner2008", "court_enfsi2015"],
+      "locators": {"skopp2010": ["abstract"], "boumba2008": ["abstract"], "kugelberg2007": ["abstract"], "skopp2004": ["abstract"], "ferner2008": ["abstract"], "court_enfsi2015": ["sec:1.3"]}
+    },
+    {
+      "id": "court.q.bio_diatom",
+      "topic": "court.topic.biology",
+      "status": "NEEDS_REVIEW",
+      "question": {"uz": "Diatom testi suvga cho‘kishni isbotlaydimi?", "ru": "Доказывает ли диатомовый тест утопление?", "en": "Does the diatom test prove drowning?"},
+      "tests": {"uz": "Diatom testining dalil qiymati cheklangan va ifloslanishga sezgir ekanini bilish [tyr2025, alnajjar2026].", "ru": "Знание ограниченной доказательной ценности диатомового теста и его чувствительности к загрязнению [tyr2025, alnajjar2026].", "en": "Knowing the diatom test's limited evidential value and sensitivity to contamination [tyr2025, alnajjar2026]."},
+      "short_answer": {"uz": "Yo‘q, o‘zi isbotlamaydi: cho‘kish uchun yagona qat’iy test yo‘q, diatom testi yorib ko‘rish topilmalari bilan birga baholanadi [piette2006]. Tizimli sharhda dalil qiymati noaniq, tadqiqotlar solishtirilishi past va ifloslanish muammosi ko‘rsatilgan [tyr2025].", "ru": "Нет, сам по себе не доказывает: единственного окончательного теста на утопление нет, диатомовый тест оценивается вместе с данными вскрытия [piette2006]. Систематический обзор показал неопределённую доказательную ценность, низкую сопоставимость исследований и проблему загрязнения [tyr2025].", "en": "No, not on its own: there is no single definitive test for drowning, and the diatom test is weighed with autopsy findings [piette2006]. A systematic review found uncertain evidential value, poor comparability between studies and contamination problems [tyr2025]."},
+      "prepare": {
+        "documents": [{"uz": "Ifloslanishsiz namuna olish tartibi va hodisa joyidan olingan suv namunalari [hurlimann2000].", "ru": "Порядок отбора без загрязнения и пробы воды с места происшествия [hurlimann2000].", "en": "The contamination-free sampling procedure and water samples from the scene [hurlimann2000]."}],
+        "explain": [{"uz": "Yopiq a’zolarda kam sonli diatom topilmasi ifloslanishga ayniqsa zaif; taklifga asoslangan talqin tavsiya etiladi [alnajjar2026].", "ru": "Малочисленные находки в закрытых органах особенно уязвимы к загрязнению; рекомендуется интерпретация на основе предположений [alnajjar2026].", "en": "Low-count findings in closed organs are particularly vulnerable to contamination; proposition-based interpretation is recommended [alnajjar2026]."}],
+        "pitfalls": [{"uz": "Diatom topilganini «cho‘kish isbotlandi» deb yozish [piette2006].", "ru": "Писать «утопление доказано» по факту обнаружения диатомей [piette2006].", "en": "Writing 'drowning proven' because diatoms were found [piette2006]."}]
+      },
+      "followups": [
+        {"q": {"uz": "Diatom topilmasa-chi?", "ru": "А если диатомеи не найдены?", "en": "And if no diatoms are found?"},
+         "a": {"uz": "Soxta manfiy natijalarning ahamiyati noaniq; manfiy natija ham cho‘kishni istisno qilmaydi [tyr2025].", "ru": "Значение ложноотрицательных результатов неясно; отрицательный результат тоже не исключает утопления [tyr2025].", "en": "The significance of false negatives is unclear; a negative result does not exclude drowning either [tyr2025]."}},
+        {"q": {"uz": "Genetik usullar yordam beradimi?", "ru": "Помогают ли генетические методы?", "en": "Do DNA-based methods help?"},
+         "a": {"uz": "DNK va metagenomik yondashuvlar ko‘rib chiqilmoqda [alnajjar2026]; ularning sud amaliyotidagi o‘rni hali tekshirilishi kerak.", "ru": "ДНК- и метагеномные подходы изучаются [alnajjar2026]; их место в судебной практике ещё предстоит проверить.", "en": "DNA-based and metagenomic approaches are being explored [alnajjar2026]; their place in casework is still to be verified."}}
+      ],
+      "limitations": [{"uz": "Sud-genetika bo‘yicha savollar hali qo‘shilmagan — tekshirilgan manbalar kutilmoqda.", "ru": "Вопросы по судебной генетике ещё не добавлены — ожидаются проверенные источники.", "en": "Forensic genetics questions are not yet included — verified sources are pending."}],
+      "links": ["guideline:guideline.path.diatom_test"],
+      "citations": ["tyr2025", "alnajjar2026", "piette2006", "hurlimann2000"],
+      "locators": {"tyr2025": ["abstract"], "alnajjar2026": ["abstract"], "piette2006": ["abstract"], "hurlimann2000": ["abstract"]}
+    },
+    {
+      "id": "court.q.crim_stature",
+      "topic": "court.topic.criminalistics",
+      "status": "NEEDS_REVIEW",
+      "question": {"uz": "Suyak bo‘yicha aniqlangan bo‘y uzunligi qanchalik aniq?", "ru": "Насколько точен рост, установленный по костям?", "en": "How accurate is stature estimated from bones?"},
+      "tests": {"uz": "Formulalarning populyatsiya va o‘lchash usuliga bog‘liqligini va natija oraliq ekanini tushunish [wilson2010, jantz1995].", "ru": "Понимание зависимости формул от популяции и способа измерения и того, что результат — интервал [wilson2010, jantz1995].", "en": "Understanding that formulae depend on population and measurement method, and that the result is an interval [wilson2010, jantz1995]."},
+      "short_answer": {"uz": "Natija oraliq bilan beriladi va formula tanloviga bog‘liq: klassik Trotter–Gleser tenglamalari zamonaviy sud kontekstiga mos emasligi ko‘rsatilgan [wilson2010]; Trotter katta boldir suyagini o‘lchashda to‘piqni hisobga olmagani uchun formulalar bo‘yni o‘rtacha 2,5–3,0 sm oshirib ko‘rsatishi mumkin [jantz1995].", "ru": "Результат даётся интервалом и зависит от выбора формулы: показано, что классические уравнения Троттер–Глезера не подходят для современного судебного контекста [wilson2010]; из-за того что Троттер не учитывала лодыжку при измерении большеберцовой кости, формулы могут завышать рост в среднем на 2,5–3,0 см [jantz1995].", "en": "The result is an interval and depends on the formula: classical Trotter–Gleser equations have been shown unsuitable for the modern forensic context [wilson2010]; because Trotter omitted the malleolus when measuring the tibia, her formulae can overestimate stature by 2.5–3.0 cm on average [jantz1995]."},
+      "prepare": {
+        "documents": [{"uz": "Qo‘llangan formula, uning populyatsiyasi, o‘lchash usuli va bashorat oralig‘i [konigsberg1998].", "ru": "Применённая формула, её популяция, способ измерения и интервал прогноза [konigsberg1998].", "en": "The formula used, its reference population, measurement method and prediction interval [konigsberg1998]."}],
+        "explain": [{"uz": "Teskari va klassik kalibrlash tanlovi ma’lumotnoma namunasi va ekstrapolyatsiyaga bog‘liq [konigsberg1998].", "ru": "Выбор обратной или классической калибровки зависит от референтной выборки и экстраполяции [konigsberg1998].", "en": "The choice of inverse or classical calibration depends on the reference sample and on extrapolation [konigsberg1998]."}],
+        "pitfalls": [{"uz": "Bitta sonni «aniq bo‘y» deb aytish va formulaning populyatsiyasini aytmaslik [wilson2010].", "ru": "Называть одно число «точным ростом» и умалчивать о популяции формулы [wilson2010].", "en": "Giving one number as 'the exact height' without stating the formula's population [wilson2010]."}]
+      },
+      "followups": [
+        {"q": {"uz": "Formulani qaysi populyatsiya uchun tanladingiz?", "ru": "Для какой популяции выбрана формула?", "en": "Which population was the formula built on?"},
+         "a": {"uz": "Formulaning manbasi va populyatsiyasini aniq ayting; mahalliy populyatsiya uchun formula bo‘lmasa, buni cheklov sifatida ko‘rsating [wilson2010].", "ru": "Точно назовите источник и популяцию формулы; если для местной популяции формулы нет, укажите это как ограничение [wilson2010].", "en": "State the formula's source and population; if none exists for the local population, state it as a limitation [wilson2010]."}},
+        {"q": {"uz": "Tirikligidagi bo‘y bilan farq qilsa-chi?", "ru": "А если рост при жизни отличается?", "en": "What if it differs from stature in life?"},
+         "a": {"uz": "Hujjatdagi (aytilgan) bo‘y va o‘lchangan bo‘y farq qilishi mumkin; zamonaviy tenglamalar sud kontekstidagi bo‘y ma’lumotlariga asoslangan [wilson2010].", "ru": "Указанный в документах и измеренный рост могут различаться; современные уравнения основаны на данных о росте в судебном контексте [wilson2010].", "en": "Reported and measured stature can differ; modern equations are based on forensic (reported) stature data [wilson2010]."}}
+      ],
+      "limitations": [{"uz": "O‘zbekiston populyatsiyasi uchun tekshirilgan formulalar bu yerda keltirilmagan.", "ru": "Проверенные формулы для населения Узбекистана здесь не приведены.", "en": "Verified formulae for the population of Uzbekistan are not given here."}],
+      "links": ["guideline:guideline.anthro.stature_long_bones"],
+      "citations": ["wilson2010", "jantz1995", "konigsberg1998"],
+      "locators": {"wilson2010": ["abstract"], "jantz1995": ["abstract"], "konigsberg1998": ["abstract"]}
+    }
+  ]
+}

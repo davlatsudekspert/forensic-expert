@@ -271,6 +271,18 @@ class HomeScreen extends ConsumerWidget {
                       onTap: () => context.push(Routes.guidelines),
                     ),
                   ],
+                  // Mutaxassis rejimi: sudda so‘roqqa tayyorgarlik (Pro;
+                  // bepul — namunaviy savollar). Talabada — Kutubxonada.
+                  if (mode != UserMode.student) ...[
+                    const SizedBox(height: FeSpace.sm),
+                    _ResourceTile(
+                      key: const Key('home.courtPrep'),
+                      icon: Icons.gavel_outlined,
+                      title: l.courtTitle,
+                      body: l.courtSubtitle,
+                      onTap: () => context.push(Routes.courtPrep),
+                    ),
+                  ],
                   // Kutubxona va Vositalar — pastki tablarda; baza holati —
                   // Profil → Ilova haqida.
                   const _QuickAccess(),

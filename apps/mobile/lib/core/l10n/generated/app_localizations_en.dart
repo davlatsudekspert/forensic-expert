@@ -968,7 +968,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Names, warnings and sources stay open. Scientific details and the jurisdiction layer unlock with a paid plan.';
 
   @override
-  String get freeDemoBadge => 'Free demo';
+  String get freeDemoBadge => 'Free';
 
   @override
   String get lockedBadge => 'Pro';
@@ -7061,4 +7061,449 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get studyDeckGmt => 'Drug analysis (Yuldashev Z.A.)';
+
+  @override
+  String get courtTitle => 'Court testimony: preparation';
+
+  @override
+  String get courtSubtitle =>
+      'Questions experts are asked about their conclusions, and how to prepare a scientifically sound answer';
+
+  @override
+  String get courtDisclaimer =>
+      'Preparation material; not legal advice; a conclusion rests only on the expert\'s own examination.';
+
+  @override
+  String get courtSearchHint => 'Search questions';
+
+  @override
+  String get courtNoResults => 'Nothing found. Try another word.';
+
+  @override
+  String get courtEmpty => 'The section content could not be loaded.';
+
+  @override
+  String get courtTopics => 'Topics';
+
+  @override
+  String courtQuestionCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count questions',
+      one: '1 question',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get courtTests => 'What the court is testing';
+
+  @override
+  String get courtPrepare => 'Preparing your answer';
+
+  @override
+  String get courtBlockDocuments => 'Have ready: documents and data';
+
+  @override
+  String get courtBlockExplain => 'Principles to explain';
+
+  @override
+  String get courtBlockPitfalls => 'Typical pitfalls';
+
+  @override
+  String get courtRelated => 'Related in the app';
+
+  @override
+  String get courtCopyCitation => 'Copy citation';
+
+  @override
+  String get courtCitationCopied => 'Citation copied';
+
+  @override
+  String get courtPractice => 'Practice mode';
+
+  @override
+  String get courtPracticeBody =>
+      'A random question: think through your answer, then open the checklist.';
+
+  @override
+  String get courtPracticeThink =>
+      'First prepare your own answer: which documents and which principles would you rely on?';
+
+  @override
+  String get courtPracticeReveal => 'Show the checklist';
+
+  @override
+  String get courtPracticeHint => 'Tap to show what the court is testing';
+
+  @override
+  String get courtPracticeNext => 'Next question';
+
+  @override
+  String get courtPracticeOpen => 'Open full question';
+
+  @override
+  String courtPracticeProgress(int count) {
+    return 'Questions practised: $count';
+  }
+
+  @override
+  String courtQuestionOf(int index, int count) {
+    return 'Question $index of $count';
+  }
+
+  @override
+  String get courtShortAnswer => 'Short answer';
+
+  @override
+  String get courtBasisHeader => 'Scientific and legal basis of the answer';
+
+  @override
+  String get courtBasis => 'Scientific / legal basis';
+
+  @override
+  String get courtWhereWritten => 'Where is it written?';
+
+  @override
+  String get courtSourceUnverified => 'Source not verified';
+
+  @override
+  String get courtSourceUnverifiedNote =>
+      'The exact location in this source has not been confirmed from the original text.';
+
+  @override
+  String get courtFollowups => 'Follow-up questions';
+
+  @override
+  String get courtLimitations => 'Limitations, exceptions and uncertainties';
+
+  @override
+  String get courtExport => 'Copy sources';
+
+  @override
+  String get courtExportText => 'As text';
+
+  @override
+  String get courtExportBibtex => 'BibTeX';
+
+  @override
+  String get courtExportCopied => 'Sources copied';
+
+  @override
+  String courtLawNote(String date) {
+    return 'Uzbekistan · lex.uz · text as of $date';
+  }
+
+  @override
+  String get courtBookNote =>
+      'Used with the author\'s permission; free for everyone';
+
+  @override
+  String courtLocArticle(String article) {
+    return 'Art. $article';
+  }
+
+  @override
+  String courtLocArticlePart(String article, String part) {
+    return 'Art. $article, part $part';
+  }
+
+  @override
+  String courtLocSection(String section) {
+    return '§ $section';
+  }
+
+  @override
+  String courtLocPdfPage(String page) {
+    return 'PDF p. $page';
+  }
+
+  @override
+  String courtLocPages(String pages) {
+    return 'pp. $pages';
+  }
+
+  @override
+  String courtLocRecommendation(String n) {
+    return 'Recommendation $n';
+  }
+
+  @override
+  String courtLocGuidanceNote(String n) {
+    return 'Guidance Note $n';
+  }
+
+  @override
+  String get courtLocAbstract => 'Abstract';
+
+  @override
+  String get courtLocScope => 'Scope (official page)';
+
+  @override
+  String get courtLocTitle => 'Title and bibliographic record';
+
+  @override
+  String get courtLocGlossary => 'Glossary';
+
+  @override
+  String get courtPrinciples => 'Integrity principles';
+
+  @override
+  String get courtPrinciplesBody =>
+      'Report everything, say “I don\'t know”, correct your errors, stay independent';
+
+  @override
+  String get courtPrinciplesIntro =>
+      'This section never teaches hiding, softening or misrepresenting real results.';
+
+  @override
+  String get courtJurisdictionUz =>
+      'Legal questions: under the law of Uzbekistan';
+
+  @override
+  String get courtJurisdictionIntl =>
+      'Legal questions: general international principles. Select Uzbekistan to see its laws.';
+
+  @override
+  String get courtJurisdictionChange => 'Choose jurisdiction';
+
+  @override
+  String get courtPendingTopic => 'In preparation — sources being verified';
+
+  @override
+  String get courtSimulator => 'Court questioning simulator';
+
+  @override
+  String get courtSimulatorBody =>
+      'Answer a judge, prosecutor, defence lawyer or another expert — scored on accuracy, sources, limitations and impartiality.';
+
+  @override
+  String get courtSimulatorNote =>
+      'The simulator never predetermines a case outcome and never teaches false testimony, evasion or hiding results.';
+
+  @override
+  String get courtRoleJudge => 'Judge';
+
+  @override
+  String get courtRoleProsecutor => 'Prosecutor';
+
+  @override
+  String get courtRoleDefense => 'Defence lawyer';
+
+  @override
+  String get courtRoleExpert => 'Another expert';
+
+  @override
+  String get courtSimContext => 'Situation';
+
+  @override
+  String get courtSimYourAnswer => 'Your own answer (optional)';
+
+  @override
+  String get courtSimYourAnswerHint => 'Type your answer…';
+
+  @override
+  String get courtSimEvaluateText => 'Check my wording';
+
+  @override
+  String get courtSimChoose => 'Choose the best answer';
+
+  @override
+  String get courtSimCheck => 'Check answer';
+
+  @override
+  String get courtSimResult => 'Evaluation';
+
+  @override
+  String courtSimTotal(int score, int max) {
+    return 'Total: $score/$max';
+  }
+
+  @override
+  String get courtSimBest => 'Model answer';
+
+  @override
+  String get courtSimNext => 'Next scenario';
+
+  @override
+  String get courtSimOpenQuestion => 'Open the related card';
+
+  @override
+  String get courtSimFreeTextNote =>
+      'Automatic, keyword-based and approximate. Compare scientific accuracy with the model answer yourself.';
+
+  @override
+  String get courtSimFlagOverstatement =>
+      'Absolute wording found (“100%”, “definitely”…) — certainty may be overstated.';
+
+  @override
+  String get courtSimFlagEvasion =>
+      'Evasive wording found — give the reason and what lies within your field.';
+
+  @override
+  String get courtSimTooShort => 'The answer is too short.';
+
+  @override
+  String get courtCritAccuracy => 'Scientific accuracy';
+
+  @override
+  String get courtCritSources => 'Reliance on sources';
+
+  @override
+  String get courtCritLimitations => 'Explaining limitations';
+
+  @override
+  String get courtCritImpartiality => 'Impartiality';
+
+  @override
+  String courtScenarioCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count scenarios',
+      one: '1 scenario',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String courtProTitle(String tier) {
+    return 'Advanced preparation in $tier';
+  }
+
+  @override
+  String get courtProBody =>
+      'Full simulator (all scenarios), sequential role drills, AI analysis (coming soon), personal statistics and history. Q&A cards with sources are free for everyone.';
+
+  @override
+  String get courtProBadge => 'Pro';
+
+  @override
+  String get courtAiPro => 'AI analysis (Pro)';
+
+  @override
+  String courtScoreSemantics(String criterion, int score) {
+    return '$criterion: $score of 2';
+  }
+
+  @override
+  String get courtSimFreeNote =>
+      'Free: basic scenarios. The other scenarios, role drills and statistics are in Pro.';
+
+  @override
+  String get courtDrill => 'Role drill';
+
+  @override
+  String get courtDrillBody =>
+      'Judge → prosecutor → defence → another expert, one after another';
+
+  @override
+  String courtDrillStep(int index, int count) {
+    return 'Step $index of $count';
+  }
+
+  @override
+  String get courtDrillNext => 'Next role';
+
+  @override
+  String get courtDrillDone => 'Role drill complete';
+
+  @override
+  String get courtStats => 'Statistics and history';
+
+  @override
+  String get courtStatsBody =>
+      'Your scores and attempt history — stored on this device only';
+
+  @override
+  String courtStatsAttempts(int count) {
+    return 'Attempts: $count';
+  }
+
+  @override
+  String get courtStatsAverage => 'Average score by criterion';
+
+  @override
+  String get courtStatsHistory => 'History';
+
+  @override
+  String get courtStatsEmpty => 'No attempts yet.';
+
+  @override
+  String get courtStatsClear => 'Clear history';
+
+  @override
+  String get courtAi => 'AI analysis';
+
+  @override
+  String get courtAiUnavailable =>
+      'AI analysis is not connected yet — coming soon. Your answer was not sent anywhere.';
+
+  @override
+  String get courtSimPartialUnverified =>
+      'Partial — unverified source: this answer relies on a source whose location is not verified.';
+
+  @override
+  String get courtSimReviewNote =>
+      'Scores are based on material awaiting expert review (NEEDS_REVIEW); the model answer is not a verified truth either.';
+
+  @override
+  String get glossaryTitle => 'Scientific glossary';
+
+  @override
+  String get glossaryIntro =>
+      'Terms in Uzbek, Russian and English. Translations remain machine drafts until a terminologist reviews them.';
+
+  @override
+  String get glossaryFilterHint => 'Filter terms (uz, ru, en)';
+
+  @override
+  String get glossaryEmpty => 'No terms match the filter.';
+
+  @override
+  String get glossaryMachineDraft => 'Machine translation — not verified';
+
+  @override
+  String get glossaryMachineDraftNote =>
+      'These translations were produced automatically and have not been checked by a terminologist. Use them for orientation; for reports, check the term in an authoritative source.';
+
+  @override
+  String get glossaryStatusTranslated => 'Translated — not reviewed';
+
+  @override
+  String get glossaryStatusReviewed => 'Reviewed translation';
+
+  @override
+  String glossaryOriginal(String language, String term) {
+    return 'In the source ($language): $term';
+  }
+
+  @override
+  String get glossaryKindTerm => 'Term';
+
+  @override
+  String get glossaryKindAbbreviation => 'Abbreviation';
+
+  @override
+  String get glossaryKindIdentifier => 'Identifier';
+
+  @override
+  String get glossaryKindFormula => 'Formula';
+
+  @override
+  String get glossaryUsedIn => 'Used in guideline cards';
+
+  @override
+  String get glossaryNoCards => 'Not linked to a guideline card yet.';
+
+  @override
+  String get glossaryOpenInGlossary => 'Open in glossary';
+
+  @override
+  String get guidelineTerms => 'Terms';
+
+  @override
+  String get guidelineTermsHint =>
+      'Tap a term to see it in Uzbek, Russian and English.';
 }

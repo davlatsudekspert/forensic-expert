@@ -1,0 +1,232 @@
+{
+  "topic": {
+    "id": "court.topic.identification",
+    "order": 7,
+    "icon": "fingerprint",
+    "title": {
+      "uz": "Skrining va tasdiqlash",
+      "ru": "Скрининг и подтверждение",
+      "en": "Screening and confirmation"
+    },
+    "summary": {
+      "uz": "Skrining va tasdiqlash farqi, rangli test va immunotahlil chegarasi, soxta musbat natijalar.",
+      "ru": "Скрининг и подтверждение, ограничения цветных тестов и иммуноанализа, ложноположительные результаты.",
+      "en": "Screening versus confirmation, limits of colour tests and immunoassay, false positives."
+    }
+  },
+  "questions": [
+    {
+      "id": "court.q.ident_colour_test",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Rangli test musbat chiqdi. Bu modda borligini isbotlamaydimi?",
+        "ru": "Цветной тест дал положительный результат. Разве это не доказывает наличие вещества?",
+        "en": "The colour test was positive. Doesn't that prove the substance is present?"
+      },
+      "tests": {
+        "uz": "Skrining (taxminiy) va tasdiqlovchi tahlil farqini bilish: rangli testlar taxminiy, ko‘p hollarda reaksiya kimyosi to‘liq o‘rganilmagan [philp2018].",
+        "ru": "Знание разницы между скринингом (предварительным) и подтверждением: цветные тесты предварительные, химия реакции часто изучена не полностью [philp2018].",
+        "en": "Whether you know the difference between presumptive screening and confirmation: colour tests are presumptive and their reaction chemistry is often not fully understood [philp2018]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Rangli test natijasi, reagent partiyasi, musbat va manfiy nazorat natijalari; keyingi tasdiqlovchi tahlil hujjatlari [court_ilac_g19_2022].",
+            "ru": "Результат цветного теста, партия реагента, положительный и отрицательный контроль; документы последующего подтверждающего анализа [court_ilac_g19_2022].",
+            "en": "The colour-test result, reagent lot, positive and negative controls; records of the subsequent confirmatory analysis [court_ilac_g19_2022]."
+          },
+          {
+            "uz": "SWGDRUG toifalari bo‘yicha qo‘llangan usullar ro‘yxati: rangli test — C toifasi [swgdrug2024].",
+            "ru": "Перечень применённых методов по категориям SWGDRUG: цветной тест — категория C [swgdrug2024].",
+            "en": "The techniques used, by SWGDRUG category: a colour test is Category C [swgdrug2024]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Taxminiy testdan qat’iy xulosa chiqarilmaydi [court_ilac_g19_2022]; identifikatsiya tuzilma haqida ma’lumot beradigan usul (A toifasi) bilan yoki bir nechta mustaqil usullar majmuasi bilan qilinadi [swgdrug2024].",
+            "ru": "Из предварительного теста не делают окончательного вывода [court_ilac_g19_2022]; идентификация выполняется методом, дающим структурную информацию (категория A), или совокупностью нескольких независимых методов [swgdrug2024].",
+            "en": "Definitive conclusions are not drawn from presumptive tests [court_ilac_g19_2022]; identification relies on a structurally informative technique (Category A) or a combination of independent techniques [swgdrug2024]."
+          },
+          {
+            "uz": "SWGDRUG tavsiyalari musodara qilingan dori vositalari uchun; biologik namunalar uchun alohida mezonlar bor [swgdrug2024, asb113_2023].",
+            "ru": "Рекомендации SWGDRUG относятся к изъятым наркотикам; для биологических образцов действуют отдельные критерии [swgdrug2024, asb113_2023].",
+            "en": "SWGDRUG recommendations cover seized drugs; biological specimens have separate criteria [swgdrug2024, asb113_2023]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Rang o‘zgarishini «modda aniqlandi» deb yozish yoki aytish; to‘g‘risi — «taxminiy musbat natija, tasdiqlash talab etiladi» [philp2018].",
+            "ru": "Писать или говорить «вещество обнаружено» по изменению окраски; корректно — «предварительный положительный результат, требуется подтверждение» [philp2018].",
+            "en": "Writing or saying 'substance identified' on a colour change; the correct wording is 'presumptive positive, confirmation required' [philp2018]."
+          }
+        ]
+      },
+      "links": [
+        "guideline:guideline.chem.method_comparison",
+        "guideline:guideline.chem.tlc_screening"
+      ],
+      "citations": [
+        "philp2018",
+        "court_ilac_g19_2022",
+        "swgdrug2024",
+        "asb113_2023"
+      ]
+    },
+    {
+      "id": "court.q.ident_immunoassay",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Immunoferment test musbat edi. Nega yana xromatografik tasdiq kerak bo‘ldi?",
+        "ru": "Иммуноанализ был положительным. Зачем понадобилось ещё хроматографическое подтверждение?",
+        "en": "The immunoassay was positive. Why was chromatographic confirmation still needed?"
+      },
+      "tests": {
+        "uz": "Immunotahlil kesishgan reaktivlik tufayli soxta musbat bo‘lishi mumkinligini va musbat natija tasdiqlanmaguncha taxminiy ekanini bilish [saitman2014].",
+        "ru": "Знание того, что иммуноанализ может давать ложноположительные результаты из-за перекрёстной реактивности и положительный результат остаётся предварительным до подтверждения [saitman2014].",
+        "en": "That immunoassays can give false positives through cross-reactivity, and a positive stays presumptive until confirmed [saitman2014]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Immunotahlil to‘plami, uning kesishgan reaktivlik ro‘yxati, ajratish nuqtasi (cut-off) va nazorat natijalari.",
+            "ru": "Набор для иммуноанализа, перечень перекрёстных реакций, пороговое значение (cut-off) и результаты контролей.",
+            "en": "The immunoassay kit, its cross-reactivity list, cut-off and control results."
+          },
+          {
+            "uz": "Tasdiqlovchi tahlil (GC-MS yoki LC-MS/MS) xromatogramma va spektrlari [drummer2007].",
+            "ru": "Хроматограммы и спектры подтверждающего анализа (ГХ-МС или ВЭЖХ-МС/МС) [drummer2007].",
+            "en": "Chromatograms and spectra of the confirmatory analysis (GC-MS or LC-MS/MS) [drummer2007]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Immunotahlil musbat natijasi ikkinchi, mustaqil kimyoviy usul bilan tasdiqlanadi [saitman2014]; tasdiqlash GC-MS(MS) yoki LC-MS(MS) bilan bajariladi [drummer2007].",
+            "ru": "Положительный результат иммуноанализа подтверждается вторым, независимым химическим методом [saitman2014]; подтверждение выполняется ГХ-МС(МС) или ВЭЖХ-МС(МС) [drummer2007].",
+            "en": "A positive immunoassay is confirmed by a second, independent chemical technique [saitman2014], such as GC-MS(MS) or LC-MS(MS) [drummer2007]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Immunotahlil sinf (masalan, «opiatlar») bo‘yicha javob berishini unutib, aniq moddani nomlash [saitman2014].",
+            "ru": "Называть конкретное вещество, забывая, что иммуноанализ отвечает на класс (например, «опиаты») [saitman2014].",
+            "en": "Naming a specific drug while forgetting that an immunoassay responds to a class (for example, 'opiates') [saitman2014]."
+          }
+        ]
+      },
+      "links": [
+        "guideline:guideline.chem.method_comparison"
+      ],
+      "citations": [
+        "saitman2014",
+        "drummer2007"
+      ]
+    },
+    {
+      "id": "court.q.ident_criteria",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Moddani qaysi mezonlar bo‘yicha identifikatsiya qildingiz?",
+        "ru": "По каким критериям вы идентифицировали вещество?",
+        "en": "By what criteria did you identify the substance?"
+      },
+      "tests": {
+        "uz": "Identifikatsiya oldindan belgilangan, hujjatlashtirilgan mezonlarga (ushlanish vaqti, mass-spektr, ion nisbatlari va h.k.) tayanganmi [asb113_2023, asb098_2023].",
+        "ru": "Основана ли идентификация на заранее установленных документированных критериях (время удерживания, масс-спектр, соотношения ионов и т. п.) [asb113_2023, asb098_2023].",
+        "en": "Whether identification rested on predefined, documented criteria (retention time, mass spectrum, ion ratios, etc.) [asb113_2023, asb098_2023]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Laboratoriyaning identifikatsiya mezonlari (SOP) va shu namuna bo‘yicha ularning bajarilganini ko‘rsatuvchi ma’lumot [asb113_2023].",
+            "ru": "Критерии идентификации лаборатории (СОП) и данные, показывающие их выполнение для этого образца [asb113_2023].",
+            "en": "The laboratory's identification criteria (SOP) and data showing they were met for this sample [asb113_2023]."
+          },
+          {
+            "uz": "Ma’lumotnoma standarti yoki spektr kutubxonasi manbai va versiyasi.",
+            "ru": "Источник и версия стандартного образца или библиотеки спектров.",
+            "en": "The source and version of the reference standard or spectral library."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "ASB 113 sud toksikologiyasida identifikatsiyaning ballarga asoslangan minimal mezonlarini belgilaydi; ASB 098 mass-spektral tahlilning qabul mezonlarini beradi va o‘zi identifikatsiya mezoni emas [asb113_2023, asb098_2023].",
+            "ru": "ASB 113 устанавливает минимальные балльные критерии идентификации в судебной токсикологии; ASB 098 задаёт критерии приемлемости масс-спектрального анализа и сам по себе не является критерием идентификации [asb113_2023, asb098_2023].",
+            "en": "ASB 113 sets minimum point-based identification criteria in forensic toxicology; ASB 098 gives acceptance criteria for mass-spectral analysis and is not itself an identification criterion [asb113_2023, asb098_2023]."
+          },
+          {
+            "uz": "Bitta usul yetarli darajada farqlay olmasa, ikki yoki undan ortiq usul birgalikda qo‘llanadi [ich_q2r2_2023].",
+            "ru": "Если одна методика недостаточно различает вещества, применяют комбинацию двух и более [ich_q2r2_2023].",
+            "en": "Where one procedure lacks discrimination, a combination of two or more is used [ich_q2r2_2023]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Kutubxona bo‘yicha «moslik foizini» identifikatsiya isboti deb ko‘rsatish.",
+            "ru": "Выдавать «процент совпадения» с библиотекой за доказательство идентификации.",
+            "en": "Presenting a library 'match score' as proof of identity."
+          }
+        ]
+      },
+      "links": [
+        "guideline:guideline.chem.method_comparison",
+        "guideline:guideline.chem.uvvis_drug_analysis"
+      ],
+      "citations": [
+        "asb113_2023",
+        "asb098_2023",
+        "ich_q2r2_2023"
+      ]
+    },
+    {
+      "id": "court.q.ident_false_positive",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Boshqa modda (masalan, dori) xuddi shunday natija bera olmaydimi?",
+        "ru": "Не может ли другое вещество (например, лекарство) дать такой же результат?",
+        "en": "Couldn't another substance (for example, a medicine) give the same result?"
+      },
+      "tests": {
+        "uz": "Soxta musbat natija ehtimoli va uni istisno qilish uchun nima qilinganini tushunish [saitman2014].",
+        "ru": "Понимание вероятности ложноположительного результата и того, что сделано для его исключения [saitman2014].",
+        "en": "Understanding the chance of a false positive and what was done to exclude it [saitman2014]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Shaxs qabul qilgan dorilar yoki tibbiy muolajalar haqidagi ma’lumot (agar ish materiallarida bo‘lsa) [skopp2010].",
+            "ru": "Сведения о принимаемых лекарствах или медицинских вмешательствах (если есть в материалах дела) [skopp2010].",
+            "en": "Information on medicines taken or medical treatment (if in the case file) [skopp2010]."
+          },
+          {
+            "uz": "Tasdiqlovchi usulning selektivlik tekshiruvi: qaysi o‘xshash moddalar sinovdan o‘tkazilgan [ich_q2r2_2023].",
+            "ru": "Проверка селективности подтверждающего метода: какие сходные вещества испытывались [ich_q2r2_2023].",
+            "en": "The selectivity check of the confirmatory method: which similar compounds were tested [ich_q2r2_2023]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Ko‘plab dori va moddalar skrining immunotahlillari bilan kesishgan reaksiya beradi; shuning uchun tasdiqlovchi usul alohida tamoyilga asoslanadi [saitman2014].",
+            "ru": "Многие лекарства и вещества дают перекрёстные реакции в скрининговых иммуноанализах; поэтому подтверждающий метод основан на другом принципе [saitman2014].",
+            "en": "Many medicines and substances cross-react in screening immunoassays; this is why confirmation uses a different principle [saitman2014]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Soxta musbat natija ehtimolini «nol» deb aytish — hech bir laboratoriya testining xatolik darajasi nolga teng emas [court_pcast2016].",
+            "ru": "Называть вероятность ложноположительного результата «нулевой» — ни один лабораторный тест не имеет нулевой частоты ошибок [court_pcast2016].",
+            "en": "Calling the false-positive risk 'zero' — no laboratory test has a zero error rate [court_pcast2016]."
+          }
+        ]
+      },
+      "links": [
+        "guideline:guideline.chem.method_comparison"
+      ],
+      "citations": [
+        "saitman2014",
+        "skopp2010",
+        "ich_q2r2_2023",
+        "court_pcast2016"
+      ]
+    }
+  ]
+}

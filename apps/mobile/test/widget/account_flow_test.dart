@@ -37,6 +37,40 @@ void main() {
     await tester.pumpAndSettle();
   }
 
+  testWidgets('kirish sahifasida til tugmasi: en → ru → uz, darhol '
+      'almashadi', (tester) async {
+    final c = await pumpApp(
+      tester,
+      settings: completedSettings(lang: 'en'),
+      initialLocation: Routes.profile,
+    );
+    c.read(routerProvider).go(Routes.accountSignIn);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const Key('auth.language')));
+    await tester.pumpAndSettle();
+    final codes = [
+      for (final e in tester.widgetList<ListTile>(
+        find.byWidgetPredicate(
+          (w) =>
+              w is ListTile &&
+              (w.key is ValueKey<String>) &&
+              (w.key! as ValueKey<String>).value.startsWith('auth.language.'),
+        ),
+      ))
+        (e.key! as ValueKey<String>).value.split('.').last,
+    ];
+    expect(codes, ['en', 'ru', 'uz']);
+    await tester.tap(find.byKey(const Key('auth.language.ru')));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('auth.language')), findsOneWidget);
+    expect(
+      Localizations.localeOf(
+        tester.element(find.byKey(const Key('auth.language'))),
+      ),
+      const Locale('ru'),
+    );
+  });
+
   testWidgets('mehmon rejimi: akkaunt ixtiyoriy, backend ulanmagani ochiq '
       'aytiladi, kirish tugmasi o‘chiq', (tester) async {
     final c = await pumpApp(

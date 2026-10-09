@@ -6,12 +6,22 @@ Umarova G.Q., TFI 2025; muallif ruxsati bilan, barcha uchun bepul) —
 ma’ruzalar va glossariy (276–283-b.). Faqat terminlar (ta’riflar ko‘chirilmaydi).
 Barcha tarjimalar `machine_draft` (FE040; tekshiruvdan o‘tmagan).
 
-Idempotent: `T-TOKS-*` yozuvlarini qayta yozadi, boshqalariga tegmaydi.
+Atama → yo‘riqnoma kartasi bog‘lanishi ANIQ ([CARD_TERMS], matndan taxmin
+qilinmaydi): har bir toks kartasining `src/card_*.json` fayliga `term_ids`
+qatori yoziladi (ilovadagi «Atamalar» bo‘limi va «Ilmiy lug‘at» shu
+ro‘yxatdan foydalanadi).
+
+Idempotent: `T-TOKS-*` yozuvlarini va kartalardagi `term_ids` qatorini qayta
+yozadi, boshqalariga tegmaydi.
 Ishga tushirish (repo ildizida):
     python3 content/tools/toks_terms.py && tool/update_bundled_pack.sh
+    python3 content/guidelines/build.py && python3 content/guidelines/validate.py
+    python3 content/guidelines/sync_app_asset.py
 """
 import json
 import pathlib
+
+import card_terms
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 BUNDLE = ROOT / "content/pilot/bundle.json"
@@ -58,6 +68,51 @@ TERMS = [
     ("physical-evidence", "ashyoviy dalil", "вещественное доказательство", "physical evidence (exhibit)"),
 ]
 
+# Karta (guideline.chem.toks_*) → unda ishlatilgan atamalar (TERMS dagi id).
+# Umumiy atamalar (ksenobiotik, kumulyatsiya, potensiyalanish) hech qaysi
+# kartaga bog‘lanmagan — ular faqat lug‘atda.
+CARD_TERMS = {
+    "guideline.chem.toks_isolation": [
+        "steam-distillation", "distillate", "mineralization", "dialysis",
+        "extraction", "extractant", "back-extraction", "partition-coefficient",
+        "salting-out", "azeotrope", "acidified-water-method", "stas-otto-method",
+        "volatile-poisons",
+    ],
+    "guideline.chem.toks_mineralization": [
+        "mineralization", "mineralizate", "denitration", "destruction",
+        "fractional-method", "masking", "back-extraction", "dithizone",
+        "diethyldithiocarbamate", "metal-poisons",
+    ],
+    "guideline.chem.toks_metal_poisons": [
+        "metal-poisons", "mineralization", "mineralizate", "destruction",
+        "fractional-method", "masking", "marsh-test", "sanger-black-test",
+        "dithizone", "diethyldithiocarbamate", "negative-value-reaction",
+        "microcrystal-test",
+    ],
+    "guideline.chem.toks_volatile_poisons": [
+        "volatile-poisons", "steam-distillation", "distillate", "azeotrope",
+        "prussian-blue", "isocyanide-test", "fujiwara-reaction",
+        "fuchsin-sulfurous-acid", "negative-value-reaction",
+    ],
+    "guideline.chem.toks_pesticides": [
+        "organophosphorus", "organochlorine", "synthetic-pyrethroids",
+        "cholinesterase", "molybdenum-blue", "extraction", "salting-out",
+        "microcrystal-test", "negative-value-reaction", "physical-evidence",
+    ],
+}
+
+def term_id(short: str) -> str:
+    return f"T-TOKS-{short.upper()}"
+
+
+def write_card_terms() -> int:
+    """`term_ids` qatorini toks kartalarining src fayllariga yozadi."""
+    known = {term_id(tid) for tid, *_ in TERMS}
+    return card_terms.write_card_terms(
+        {cid: [term_id(t) for t in shorts] for cid, shorts in CARD_TERMS.items()},
+        known,
+    )
+
 
 def main() -> None:
     raw = BUNDLE.read_text(encoding="utf-8")
@@ -65,7 +120,7 @@ def main() -> None:
     keep = [t for t in bundle.get("term_translations", []) if not t["term_id"].startswith("T-TOKS-")]
     new = [
         {
-            "term_id": f"T-TOKS-{tid.upper()}",
+            "term_id": term_id(tid),
             "kind": "term",
             "original": uz,
             "original_lang": "uz",
@@ -79,10 +134,16 @@ def main() -> None:
     for t in new:
         for bad in ("o'", "g'", "oʻ", "gʻ"):
             assert bad not in t["original"], t["term_id"]
-    bundle["term_translations"] = keep + new
+    # Joyini saqlaydi (boshqa atamalar keyin qo‘shilgan bo‘lsa, tartib buzilmaydi).
+    old = bundle.get("term_translations", [])
+    first = next((i for i, t in enumerate(old) if t["term_id"].startswith("T-TOKS-")), len(old))
+    before = [t for t in old[:first] if not t["term_id"].startswith("T-TOKS-")]
+    after = [t for t in old[first:] if not t["term_id"].startswith("T-TOKS-")]
+    bundle["term_translations"] = before + new + after
     tail = "\n" if raw.endswith("\n") else ""
     BUNDLE.write_text(json.dumps(bundle, ensure_ascii=False, indent=2) + tail, encoding="utf-8")
     print(f"term_translations: {len(keep)} kept + {len(new)} T-TOKS-*")
+    print(f"guideline cards: term_ids written to {write_card_terms()} cards")
 
 
 if __name__ == "__main__":

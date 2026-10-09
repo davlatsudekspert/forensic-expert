@@ -1,0 +1,258 @@
+{
+  "topic": {
+    "id": "court.topic.reporting",
+    "order": 3,
+    "icon": "description",
+    "title": {
+      "uz": "Xulosaning ilmiy asosi va tili",
+      "ru": "Научная основа и язык заключения",
+      "en": "Scientific basis and wording of the report"
+    },
+    "summary": {
+      "uz": "Ishonch darajasi, huquqiy savollar, javob berishdan asosli voz kechish, natija va talqinni ajratish, ehtimollik tili.",
+      "ru": "Степень уверенности, правовые вопросы, обоснованный отказ от ответа, разделение результата и интерпретации, язык вероятностей.",
+      "en": "Degree of certainty, legal questions, reasoned refusal to answer, separating results from interpretation, probability language."
+    }
+  },
+  "questions": [
+    {
+      "id": "court.q.report_certainty",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Xulosangiz 100 % aniqmi? Xato bo‘lishi mumkin emasmi?",
+        "ru": "Ваш вывод верен на 100 %? Ошибка исключена?",
+        "en": "Is your conclusion 100% certain? Is error impossible?"
+      },
+      "tests": {
+        "uz": "Ekspert natijaning ishonchliligini ortiqcha bo‘rttirmasligini: empirik dalil ko‘rsatganidan katta ishonchni nazarda tutuvchi bayonotlar ilmiy jihatdan asossiz [court_pcast2016].",
+        "ru": "Не преувеличивает ли эксперт надёжность: заявления, подразумевающие большую уверенность, чем показали эмпирические данные, научно несостоятельны [court_pcast2016].",
+        "en": "Whether the expert overstates reliability: statements implying more certainty than the empirical evidence shows are scientifically invalid [court_pcast2016]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Usulning tasdiqlangan ishlash ko‘rsatkichlari (pretsiziya, noaniqlik, selektivlik) va shu ishdagi nazorat natijalari [court_ilac_g19_2022].",
+            "ru": "Подтверждённые характеристики метода (прецизионность, неопределённость, селективность) и результаты контролей по делу [court_ilac_g19_2022].",
+            "en": "The method's verified performance (precision, uncertainty, selectivity) and the case controls [court_ilac_g19_2022]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Har qanday laboratoriya testining xatolik darajasi noldan katta; «mutlaqo aniq» yoki «xato ehtimoli nol» kabi iboralar ilmiy himoyalanmaydi [court_pcast2016].",
+            "ru": "У любого лабораторного теста частота ошибок больше нуля; выражения «абсолютно точно» или «нулевая вероятность ошибки» научно не защитимы [court_pcast2016].",
+            "en": "Every laboratory test has a non-zero error rate; phrases like '100 percent certain' or 'zero error' are not scientifically defensible [court_pcast2016]."
+          },
+          {
+            "uz": "«Ilmiy ishonchning oqilona darajasi» iborasi ilmda umumqabul qilingan ma’noga ega emas [court_pcast2016]; xulosa qanday dalilga tayanganini va cheklovlarini tushuntirish afzal [court_gill_ely2024].",
+            "ru": "Выражение «разумная степень научной уверенности» не имеет общепринятого научного смысла [court_pcast2016]; лучше объяснить, на чём основан вывод и каковы его ограничения [court_gill_ely2024].",
+            "en": "'Reasonable degree of scientific certainty' has no generally accepted scientific meaning [court_pcast2016]; it is better to explain what the conclusion rests on and its limits [court_gill_ely2024]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Bosim ostida ishonch darajasini oshirib yuborish yoki aksincha, asossiz ravishda xulosadan voz kechish; xulosa ilmiy asos qanchalik kuchli bo‘lsa, shunchalik kuchli bo‘ladi [court_enfsi2015].",
+            "ru": "Под давлением завышать уверенность или, наоборот, без оснований отказываться от вывода; вывод настолько силён, насколько сильна его научная основа [court_enfsi2015].",
+            "en": "Under pressure, inflating certainty or, conversely, abandoning the conclusion without reason; a conclusion is as strong as its scientific basis [court_enfsi2015]."
+          }
+        ]
+      },
+      "links": [],
+      "citations": [
+        "court_pcast2016",
+        "court_ilac_g19_2022",
+        "court_gill_ely2024",
+        "court_enfsi2015"
+      ]
+    },
+    {
+      "id": "court.q.report_legal_question",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Sizningcha, ayblanuvchi aybdormi? Bu qasddan qilinganmi?",
+        "ru": "По-вашему, обвиняемый виновен? Это было сделано умышленно?",
+        "en": "In your opinion, is the defendant guilty? Was it intentional?"
+      },
+      "tests": {
+        "uz": "Ekspert o‘z vakolat doirasida qolishini: ekspert faqat o‘z xulosasi va shaxsan o‘tkazgan tadqiqoti bo‘yicha so‘roq qilinadi; xulosani boshqa dalillar bilan birga baholash surishtiruvchi, tergovchi yoki sud vakolatida (O‘zbekiston JPK) [court_uz_cpc].",
+        "ru": "Остаётся ли эксперт в пределах компетенции: эксперт допрашивается только по своему заключению и лично проведённым исследованиям; оценка заключения в совокупности с другими доказательствами — компетенция дознавателя, следователя или суда (УПК Узбекистана) [court_uz_cpc].",
+        "en": "Whether the expert stays within scope: the expert is questioned only on his own conclusion and personally performed research; weighing the conclusion together with other evidence is for the investigator or the court (Uzbekistan CPC) [court_uz_cpc]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Qarordagi savollar matni — sizga aynan nima so‘ralganini ko‘rsatish uchun (O‘zbekiston JPK) [court_uz_cpc].",
+            "ru": "Текст вопросов из постановления — чтобы показать, о чём именно вас спрашивали (УПК Узбекистана) [court_uz_cpc].",
+            "en": "The wording of the questions in the order — to show exactly what you were asked (Uzbekistan CPC) [court_uz_cpc]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Aybdorlik va qasd — huquqiy masalalar; ekspert o‘z ixtisosligi doirasidagi ilmiy natija va talqinni beradi [court_enfsi2015], xulosani boshqa dalillar bilan birga baholash esa sud vakolatida (O‘zbekiston JPK) [court_uz_cpc].",
+            "ru": "Виновность и умысел — правовые вопросы; эксперт даёт научный результат и интерпретацию в пределах своей специальности [court_enfsi2015], а оценка заключения в совокупности с другими доказательствами — компетенция суда (УПК Узбекистана) [court_uz_cpc].",
+            "en": "Guilt and intent are legal issues; the expert gives a scientific result and interpretation within his specialty [court_enfsi2015], while weighing the conclusion with other evidence belongs to the court (Uzbekistan CPC) [court_uz_cpc]."
+          },
+          {
+            "uz": "Taxminlar ierarxiyasi (manba, harakat, jinoyat darajalari) ekspert qaysi darajadagi savolga ilmiy asos bilan javob bera olishini ajratishga yordam beradi [court_enfsi2015].",
+            "ru": "Иерархия предположений (уровни источника, действия, преступления) помогает определить, на какой уровень вопроса эксперт может ответить научно [court_enfsi2015].",
+            "en": "The hierarchy of propositions (source, activity and crime levels) helps decide which level the expert can address scientifically [court_enfsi2015]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Huquqiy atamalarni («aybdor», «qasddan») ilmiy javob ichida ishlatish.",
+            "ru": "Использовать правовые термины («виновен», «умышленно») внутри научного ответа.",
+            "en": "Using legal terms ('guilty', 'intentional') inside a scientific answer."
+          }
+        ]
+      },
+      "links": [],
+      "citations": [
+        "court_uz_cpc",
+        "court_enfsi2015"
+      ]
+    },
+    {
+      "id": "court.q.report_refusal",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Nega ba’zi savollarga javob bermadingiz?",
+        "ru": "Почему вы не ответили на некоторые вопросы?",
+        "en": "Why did you not answer some of the questions?"
+      },
+      "tests": {
+        "uz": "Javob bermaslik asosli bo‘lganmi: obyekt, material yoki maxsus bilim yetarli emasligi tadqiqot jarayonida aniqlansa, xulosada buning asoslanishi bo‘lishi shart (O‘zbekiston JPK) [court_uz_cpc].",
+        "ru": "Был ли отказ обоснован: если в ходе исследования выявлена недостаточность объектов, материалов или специальных знаний, заключение должно содержать обоснование отказа (УПК Узбекистана) [court_uz_cpc].",
+        "en": "Whether declining was justified: if insufficiency of objects, materials or special knowledge emerged during the examination, the conclusion must give the reasons (Uzbekistan CPC) [court_uz_cpc]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Xulosadagi voz kechish asoslanishi va uni tasdiqlovchi ma’lumot (masalan, namuna miqdori, usul chegarasi) (O‘zbekiston JPK) [court_uz_cpc].",
+            "ru": "Обоснование отказа в заключении и подтверждающие данные (например, количество образца, предел метода) (УПК Узбекистана) [court_uz_cpc].",
+            "en": "The stated reasons in the conclusion and supporting data (for example, sample amount, method limit) (Uzbekistan CPC) [court_uz_cpc]."
+          },
+          {
+            "uz": "Qo‘shimcha material so‘ragan bo‘lsangiz — iltimosnoma va unga javob (O‘zbekiston JPK) [court_uz_cpc].",
+            "ru": "Если вы ходатайствовали о дополнительных материалах — ходатайство и ответ на него (УПК Узбекистана) [court_uz_cpc].",
+            "en": "If you requested additional materials — the request and the response (Uzbekistan CPC) [court_uz_cpc]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Asoslangan «javob berib bo‘lmaydi» — ilmiy halollik; dalil yetarli bo‘lmasa, taxmin ilmiy xulosa sifatida berilmaydi [court_ilac_g19_2022].",
+            "ru": "Обоснованное «ответить невозможно» — научная честность; при недостатке данных предположение не выдаётся за научный вывод [court_ilac_g19_2022].",
+            "en": "A reasoned 'this cannot be answered' is scientific integrity; without enough data a guess is not offered as a scientific conclusion [court_ilac_g19_2022]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Sudda bosim ostida xulosada berilmagan yangi xulosani og‘zaki aytish; yangi tadqiqot kerak bo‘lsa, buni aytish to‘g‘ri (O‘zbekiston JPK) [court_uz_cpc].",
+            "ru": "Под давлением устно давать новый вывод, которого нет в заключении; если нужно новое исследование, правильно так и сказать (УПК Узбекистана) [court_uz_cpc].",
+            "en": "Giving a new conclusion orally under pressure that is not in the written report; if new research is needed, say so (Uzbekistan CPC) [court_uz_cpc]."
+          }
+        ]
+      },
+      "links": [],
+      "citations": [
+        "court_uz_cpc",
+        "court_ilac_g19_2022"
+      ]
+    },
+    {
+      "id": "court.q.report_structure",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Xulosangizda qaysi qism o‘lchash natijasi, qaysi qism sizning fikringiz?",
+        "ru": "Какая часть вашего заключения — результат измерения, а какая — ваше мнение?",
+        "en": "Which part of your report is a measured result and which is your opinion?"
+      },
+      "tests": {
+        "uz": "Xulosa shaffofligi: fon ma’lumot, natija yoki kuzatuv va talqin yoki fikr aniq ajratilganmi [court_ilac_g19_2022].",
+        "ru": "Прозрачность заключения: чётко ли разделены фоновая информация, результаты или наблюдения и интерпретация или мнение [court_ilac_g19_2022].",
+        "en": "Transparency: are background information, results or observations, and interpretation or opinion clearly separated [court_ilac_g19_2022]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Xulosaning tuzilishi: qo‘llangan usullar, tadqiqot natijalari, natijalarni baholash va savollarga asoslangan javoblar alohida bo‘limlarda (O‘zbekiston JPK) [court_uz_cpc].",
+            "ru": "Структура заключения: применённые методы, результаты исследования, оценка результатов и обоснованные ответы на вопросы в отдельных разделах (УПК Узбекистана) [court_uz_cpc].",
+            "en": "The report structure: methods applied, research results, evaluation of results and reasoned answers in separate sections (Uzbekistan CPC) [court_uz_cpc]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Talqin yoki fikr nimaga — qaysi natija va qaysi ma’lumotga tayanganini ko‘rsatish kerak; xulosalar tegishli cheklovlar bilan beriladi [court_ilac_g19_2022].",
+            "ru": "Нужно показать, на чём основана интерпретация или мнение — какие результаты и сведения; выводы даются с надлежащими оговорками [court_ilac_g19_2022].",
+            "en": "Show what an interpretation or opinion is based on — which results and information; conclusions are properly qualified [court_ilac_g19_2022]."
+          },
+          {
+            "uz": "Ekspert tushunchalarni aniq, izchil va xolis, oddiy tilda bayon qiladi va dalil xulosani qanday qo‘llab-quvvatlashi yoki cheklashini tushuntiradi [court_gill_ely2024].",
+            "ru": "Эксперт излагает понятия ясно, последовательно и объективно, простым языком, и объясняет, как данные поддерживают вывод или ограничивают его [court_gill_ely2024].",
+            "en": "The expert sets out concepts clearly, methodically and objectively in plain language and explains how the evidence supports or limits the conclusion [court_gill_ely2024]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Talqinni o‘lchash natijasidek ko‘rsatish (masalan, «o‘tkir zaharlanish aniqlandi» deb laboratoriya natijasi bo‘limida yozish).",
+            "ru": "Подавать интерпретацию как результат измерения (например, писать «выявлено острое отравление» в разделе лабораторных результатов).",
+            "en": "Presenting interpretation as a measurement (for example, writing 'acute poisoning detected' in the results section)."
+          }
+        ]
+      },
+      "links": [],
+      "citations": [
+        "court_ilac_g19_2022",
+        "court_uz_cpc",
+        "court_gill_ely2024"
+      ]
+    },
+    {
+      "id": "court.q.report_probability",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "«Mos keladi» degani «aynan shu» degani emasmi? Ehtimollik qancha?",
+        "ru": "Разве «соответствует» не означает «именно это»? Какова вероятность?",
+        "en": "Doesn't 'consistent with' mean 'it is this'? What is the probability?"
+      },
+      "tests": {
+        "uz": "Ehtimollik mantiqini to‘g‘ri tushuntira olish: baholash topilmaning taxminlar ostidagi ehtimoliga qaratiladi, taxminning topilma ostidagi ehtimoliga emas — shartni almashtirish xatosi [court_enfsi2015, court_thompson1987].",
+        "ru": "Умение правильно объяснить логику вероятностей: оценивается вероятность находки при предположениях, а не вероятность предположения при находке — ошибка перестановки условия [court_enfsi2015, court_thompson1987].",
+        "en": "Explaining probability correctly: evaluation addresses the probability of the findings given the propositions, not of the propositions given the findings — the transposed conditional [court_enfsi2015, court_thompson1987]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Laboratoriyada qabul qilingan xulosa shkalasi va uning ta’riflari; shkala muvozanatli bo‘lishi kerak [court_ilac_g19_2022].",
+            "ru": "Принятая в лаборатории шкала выводов и её определения; шкала должна быть сбалансированной [court_ilac_g19_2022].",
+            "en": "The laboratory's conclusion scale and its definitions; the scale should be balanced [court_ilac_g19_2022]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Baholovchi xulosa muvozanat, mantiq, mustahkamlik va shaffoflik talablariga javob berishi kerak; kamida bir juft raqobatdosh taxmin ko‘rib chiqiladi [court_enfsi2015].",
+            "ru": "Оценочный вывод должен отвечать требованиям сбалансированности, логичности, устойчивости и прозрачности; рассматривается минимум пара конкурирующих предположений [court_enfsi2015].",
+            "en": "An evaluative opinion should meet the requirements of balance, logic, robustness and transparency; at least one pair of competing propositions is considered [court_enfsi2015]."
+          },
+          {
+            "uz": "«Prokuror xatosi» va «himoyachi xatosi» — statistik dalilni noto‘g‘ri talqin qilishning ma’lum ko‘rinishlari [court_thompson1987].",
+            "ru": "«Ошибка обвинителя» и «ошибка защитника» — известные формы неверного толкования статистических данных [court_thompson1987].",
+            "en": "The 'prosecutor's fallacy' and the 'defense attorney's fallacy' are known misreadings of statistical evidence [court_thompson1987]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "«Bu natija tasodifan chiqish ehtimoli juda kichik, demak u aynan shu» deb aytish — bu shartni almashtirish [court_enfsi2015].",
+            "ru": "Говорить «вероятность случайного результата очень мала, значит, это именно оно» — это перестановка условия [court_enfsi2015].",
+            "en": "Saying 'the chance of this result by coincidence is tiny, so it must be this' — a transposed conditional [court_enfsi2015]."
+          }
+        ]
+      },
+      "links": [],
+      "citations": [
+        "court_enfsi2015",
+        "court_thompson1987",
+        "court_ilac_g19_2022"
+      ]
+    }
+  ]
+}

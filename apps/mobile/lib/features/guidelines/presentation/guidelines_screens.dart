@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../app/account.dart';
+import '../../../app/glossary.dart';
 import '../../../app/guidelines.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
@@ -18,6 +19,7 @@ import '../../../domain/catalog/tools_catalog.dart';
 import '../../../domain/evidence/citation_format.dart';
 import '../../../domain/guidelines/guideline_models.dart';
 import '../../evidence/presentation/citation_sheet.dart';
+import '../../glossary/presentation/glossary_screens.dart';
 import '../../support/presentation/support_widgets.dart' show ReportErrorMenu;
 import '../../tools/tool_strings.dart';
 import 'practice_catalog_screen.dart';
@@ -246,6 +248,7 @@ class _GuidelineDetailScreenState extends ConsumerState<GuidelineDetailScreen> {
     final c = FeTheme.of(context);
     final title = card.title.pick(lang);
     final translation = card.translationFor(lang);
+    final terms = ref.watch(glossaryProvider).termsOfCard(card.id);
 
     return Scaffold(
       appBar: AppBar(
@@ -330,7 +333,9 @@ class _GuidelineDetailScreenState extends ConsumerState<GuidelineDetailScreen> {
                       text: l.guidelineTranslationDraft,
                     ),
                   ],
-                  if (card.sections.length > 1 || refs.isNotEmpty) ...[
+                  if (card.sections.length > 1 ||
+                      refs.isNotEmpty ||
+                      terms.isNotEmpty) ...[
                     Padding(
                       padding: const EdgeInsets.only(
                         top: FeSpace.md,
@@ -365,6 +370,16 @@ class _GuidelineDetailScreenState extends ConsumerState<GuidelineDetailScreen> {
                               tooltip: l.rdJumpTo,
                               onPressed: () => _jump('refs'),
                             ),
+                          if (terms.isNotEmpty)
+                            ActionChip(
+                              key: const Key('guideline.index.terms'),
+                              avatar: const Icon(Icons.translate, size: 16),
+                              label: Text(
+                                '${l.guidelineTerms} · ${terms.length}',
+                              ),
+                              tooltip: l.rdJumpTo,
+                              onPressed: () => _jump('terms'),
+                            ),
                           for (final (i, s) in card.sections.indexed)
                             ActionChip(
                               key: Key('guideline.index.$i'),
@@ -394,6 +409,13 @@ class _GuidelineDetailScreenState extends ConsumerState<GuidelineDetailScreen> {
                       numberCitations(s.body.of(lang), s.citations, index),
                       style: t.bodyMedium?.copyWith(height: 1.5),
                     ),
+                  ],
+                  if (terms.isNotEmpty) ...[
+                    KeyedSubtree(
+                      key: _anchor('terms'),
+                      child: FeSectionHeader(l.guidelineTerms),
+                    ),
+                    GuidelineTermsSection(terms: terms),
                   ],
                   if (card.relatedToolIds.isNotEmpty) ...[
                     FeSectionHeader(l.guidelineRelatedTools),

@@ -1,0 +1,278 @@
+{
+  "role": "tools",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "t01",
+      "title": "Vositalar ro‘yxati (Pro)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t01_vositalar_ro_yxati_pro.png"
+    },
+    {
+      "id": "t02",
+      "title": "Suyultirish: o‘nlik vergul «0,5» → V₁ = 5 mL",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t02_suyultirish_o_nlik_vergul_0_5_v_5_ml.png"
+    },
+    {
+      "id": "t03",
+      "title": "Suyultirish: birlik almashtirildi → eski natija yo‘q",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t03_suyultirish_birlik_almashtirildi_eski_na.png"
+    },
+    {
+      "id": "t04",
+      "title": "Suyultirish: natijani nusxalash",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t04_suyultirish_natijani_nusxalash.png"
+    },
+    {
+      "id": "t05",
+      "title": "Suyultirish: manfiy qiymat → xato",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t05_suyultirish_manfiy_qiymat_xato.png"
+    },
+    {
+      "id": "t06",
+      "title": "Konvertor: 0,25 mg/L → 250 ng/mL",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t06_konvertor_0_25_mg_l_250_ng_ml.png"
+    },
+    {
+      "id": "t07",
+      "title": "Molyarlik: NaCl 584,4 mg, 100 mL → 0,1 mol/L",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t07_molyarlik_nacl_584_4_mg_100_ml_0_1_mol_l.png"
+    },
+    {
+      "id": "t08",
+      "title": "Foizli eritma: 0,9 % w/v, 500 mL → 4,5 g",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t08_foizli_eritma_0_9_w_v_500_ml_4_5_g.png"
+    },
+    {
+      "id": "t09",
+      "title": "Statistika: «0,5 0,7 0,9» → n = 3, o‘rtacha 0,7",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t09_statistika_0_5_0_7_0_9_n_3_o_rtacha_0_7.png"
+    },
+    {
+      "id": "t10",
+      "title": "Statistika: matn kiritildi → xato",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "t11",
+      "title": "Kalibrlash: o‘nlik vergulli «x y» juftliklari",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t11_kalibrlash_o_nlik_vergulli_x_y_juftlikla.png"
+    },
+    {
+      "id": "t12",
+      "title": "LOD/LOQ: regressiyadan σ va S → DL, QL",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t12_lod_loq_regressiyadan_va_s_dl_ql.png"
+    },
+    {
+      "id": "t13",
+      "title": "Widmark: 80 kg, 500 mL 40 %, 2 soat → 1,57–2,34 ‰",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t13_widmark_80_kg_500_ml_40_2_soat_1_57_2_34.png"
+    },
+    {
+      "id": "t14",
+      "title": "Widmark: vazn 5 kg → tushunarli xato",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t14_widmark_vazn_5_kg_tushunarli_xato.png"
+    },
+    {
+      "id": "t15",
+      "title": "Teskari hisob: 0,8 ‰, 2 soat",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t15_teskari_hisob_0_8_2_soat.png"
+    },
+    {
+      "id": "t16",
+      "title": "Etanol birliklari: 0,5 ‰ → 0,5275 g/L",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t16_etanol_birliklari_0_5_0_5275_g_l.png"
+    },
+    {
+      "id": "t17",
+      "title": "Henssge (PMI): Tr 30, Ta 15, 70 kg → ≈ 9,7 soat",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t17_henssge_pmi_tr_30_ta_15_70_kg_9_7_soat.png"
+    },
+    {
+      "id": "t18",
+      "title": "Henssge: Ta 25 °C → > 23 °C formulasi ko‘rsatiladi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t18_henssge_ta_25_c_23_c_formulasi_ko_rsatil.png"
+    },
+    {
+      "id": "t19",
+      "title": "Henssge: Tr < Ta → xato",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "t20",
+      "title": "Ta’lim markazi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t20_ta_lim_markazi.png"
+    },
+    {
+      "id": "t21",
+      "title": "O‘quv rejimi: to‘plamlar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t21_o_quv_rejimi_to_plamlar.png"
+    },
+    {
+      "id": "t22",
+      "title": "Kartochka: old tomoni",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t22_kartochka_old_tomoni.png"
+    },
+    {
+      "id": "t23",
+      "title": "Kartochka: aylantirish (javob)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t23_kartochka_aylantirish_javob.png"
+    },
+    {
+      "id": "t24",
+      "title": "Kartochka: Bildim / Bilmadim (Leitner)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t24_kartochka_bildim_bilmadim_leitner.png"
+    },
+    {
+      "id": "t25",
+      "title": "O‘quv rejimi: muddati kelganlar soni yangilandi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "t26",
+      "title": "Test: 1-savol",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t26_test_1_savol.png"
+    },
+    {
+      "id": "t27",
+      "title": "Test: javob → tekshirish → manba",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t27_test_javob_tekshirish_manba.png"
+    },
+    {
+      "id": "t28",
+      "title": "Test: oxirigacha → natija va xatolar",
+      "result": "PASS",
+      "notes": [
+        "javoblar: 10"
+      ],
+      "screenshot": "t28_test_oxirigacha_natija_va_xatolar.png"
+    },
+    {
+      "id": "t29",
+      "title": "Test: xatolar ro‘yxati",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t29_test_xatolar_ro_yxati.png"
+    },
+    {
+      "id": "t30",
+      "title": "Xato → manbani ochish",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t30_xato_manbani_ochish.png"
+    },
+    {
+      "id": "t31",
+      "title": "RU: Henssge (Посмертный интервал)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t31_ru_henssge.png"
+    },
+    {
+      "id": "t32",
+      "title": "EN: Widmark",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t32_en_widmark.png"
+    },
+    {
+      "id": "t33",
+      "title": "320 dp: Widmark natijasi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t33_320_dp_widmark_natijasi.png"
+    },
+    {
+      "id": "t34",
+      "title": "320 dp + 2× matn: Suyultirish",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t34_320_dp_2_matn_suyultirish.png"
+    },
+    {
+      "id": "t35",
+      "title": "320 dp + 2× matn: kartochka",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t35_320_dp_2_matn_kartochka.png"
+    },
+    {
+      "id": "t36",
+      "title": "Tungi rejim: Henssge natijasi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t36_tungi_rejim_henssge_natijasi.png"
+    },
+    {
+      "id": "t37",
+      "title": "Tungi rejim: test savoli",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t37_tungi_rejim_test_savoli.png"
+    },
+    {
+      "id": "t38",
+      "title": "Tarmoq o‘chiq",
+      "result": "PASS",
+      "notes": [
+        "Bloklangan HTTP urinishlari: 0"
+      ],
+      "screenshot": null
+    }
+  ],
+  "pass": 38,
+  "fail": 0
+}

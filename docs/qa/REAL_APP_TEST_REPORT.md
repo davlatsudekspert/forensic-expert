@@ -279,6 +279,34 @@ eski o‘rnatilgan nusxani almashtirmaydi — QA oldidan
 TEKSHIRILMAGAN: haqiqiy iOS/Android qurilma, ru/en rejimlari real ilovada
 (widget testlarida ru/en/320 dp tekshirilgan).
 
+### 2.y «Sudda so‘roq: tayyorgarlik» (2026-10-09) — REAL ILOVA
+
+`integration_test/qa_court_test.dart`, skrinshotlar (10 ta) va JSON:
+`docs/qa/court_20261009/`.
+
+| Rejim | Ishga tushirish | Natija |
+|---|---|---|
+| TALABA (bepul) | `QA_MODE=student ./tool/qa_real_app.sh court` | 15/15 PASS |
+| MUTAXASSIS (Pro — test override, xarid emas) | `QA_MODE=professional QA_PRO=1 ./tool/qa_real_app.sh court` | 15/15 PASS |
+
+Tekshirildi (390 va 320 dp, uz): Asosiy sahifada kirish (mutaxassisda bor,
+talabada yo‘q — Kutubxonada bor); ogohlantirish; bepul foydalanuvchiga
+savol-javob kartasining barcha qismlari (A savol, I holat NEEDS_REVIEW,
+«Sud nimani tekshiradi», B qisqa javob, C asos, D manba joylari —
+masalan «78-modda, 2-qism», E/F qo‘shimcha savollar, G cheklovlar, H BibTeX/
+matn eksporti); «Manba tekshirilmagan» belgisi (ISO/IEC 17025 matni
+o‘qilmagan); yurisdiksiya O‘zbekiston → JPK va «Sud ekspertizasi
+to‘g‘risida»gi qonun moddalari (lex.uz); asosiy simulyator ssenariysi
+(4 mezon, NEEDS_REVIEW izohi); Pro: AI tahlili — halol «tez orada» (AI
+chaqirilmaydi), ketma-ket 4 rolli mashq, shaxsiy statistika va tarix
+(faqat qurilmada); bepulda Pro imkoniyatlari → tariflar sahifasi; qidiruv.
+Topilgan va tuzatilgan: simulyator bahosi qatorida `semanticsValue` son
+bo‘lmagani uchun semantika xatosi (widget testida ushlandi); «IIIB Table 1
+bo‘lim» kabi noqulay joy yozuvi → «§ IIIB Table 1 (bo‘lim)». Bloklangan HTTP
+urinishlari: 0. ADMIN roli taalluqli emas. Tekshirilmagan: haqiqiy xarid,
+real iOS/Android qurilma, qorong‘i mavzu, ru/en real-ilova yugurishi
+(ru/en faqat widget testlarida).
+
 ## 3. Til tekshiruvi (uz rejimi)
 
 Avtomatik tekshiruv har ekranda inglizcha UI so‘zlari va xom kodlarni
@@ -406,3 +434,25 @@ rolga bog‘liq emas); ekspert xulosasi shablonining o‘ziga joylash.
 Ko‘rildi: atribusiya qatori «Manba: Yuldashev Z.A. va boshq., … — muallif ruxsati bilan, barcha uchun bepul»,
 iqtiboslar raqamlanadi va kitob sahifasi «[1] (15-b.)» ko‘rinishida; 320 dp da toshib ketish yo‘q; uz rejimida til
 ogohlantirishlari yo‘q. Tekshirilmagan: ru/en UI, internet o‘chgan holat (kartalar — lokal asset), real iOS.
+
+## 9. «Ilmiy lug‘at» (term_translations) va kartalardagi «Atamalar» (2026-10-09)
+
+`integration_test/qa_glossary_test.dart` — Linux desktop (Xvfb), haqiqiy ilova va haqiqiy paket
+(106 atama: 38 T-TOKS, 48 T-GMT, 20 eski), MOCK akkaunt, HTTP bloklangan, Pro’siz.
+Toza o‘rnatish uchun `XDG_DATA_HOME` worktree ichidagi alohida papkaga yo‘naltirildi (qurilmadagi
+boshqa branch o‘rnatgan yangiroq paket ishlatilmasin). Skrinshotlar: `docs/qa/glossary_20261009/` (96 PNG).
+
+| Til | TALABA | MUTAXASSIS |
+|---|---|---|
+| uz | 18/18 PASS | 18/18 PASS |
+| ru | 18/18 PASS | 18/18 PASS |
+| en | 18/18 PASS | 18/18 PASS |
+
+Qadamlar: Kutubxona → «Ilmiy lug‘at» kartochkasi → ro‘yxat (joriy til + ostida qolgan ikki til);
+320 dp: rus («дитизон») va ingliz («steam distillation») filtri; atama sahifasi (uz/ru/en,
+«Mashina tarjimasi — tekshirilmagan» belgisi va izoh); bog‘langan toks kartasi → «Atamalar» bo‘limi →
+atama varag‘i; orqaga (varaq → atama → ro‘yxat); global qidiruv (ru/en/uz so‘rov va «реактив Марки»)
+→ lug‘at yozuvi; GMT opioidlar kartasi → Markis reaktivi varag‘i; 320 dp × 2 matn. Toshish yo‘q.
+
+Tekshirilmagan: real iOS/Android qurilma; ADMIN roli (funksiya rolga bog‘liq emas); internet o‘chgan
+holat alohida (lug‘at — lokal paket). Barcha tarjimalar machine_draft — terminolog tekshiruvi kerak.
