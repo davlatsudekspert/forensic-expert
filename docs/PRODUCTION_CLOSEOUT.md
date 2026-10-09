@@ -64,3 +64,4 @@ DEBUG build’lar store’ga yuklanmaydi.
 - Smoke (tranzaksiya qaytarilgan): murojaat CREATED → admin_stats (users=1, awaiting=1) → inbox total=1 → admin javobi SENT. Natijada support_threads=0, admin_audit=0.
 - Rollback: migratsiya fayli sarlavhasi + `supabase/rollback/20261009_pre_support_admin_functions.sql`.
 - Qolgan ruxsatlar: `delete-account` Edge Function deploy; maxfiylik siyosati bandi; MFA (TOTP ulangach `admin_requires_aal2`).
+- 2026-10-09: `delete-account` Edge Function v3 deploy qilindi (egasi ruxsati bilan): hisob o‘chirilganda `credentials` va `support-attachments` bucket’laridagi foydalanuvchi fayllari ham o‘chadi. verify_jwt=true; tokensiz va noto‘g‘ri token — 401 (tekshirildi). Real hisob bilan to‘liq o‘chirish sinalmagan (yagona hisob — egasiniki).
