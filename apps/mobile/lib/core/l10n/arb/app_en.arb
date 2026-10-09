@@ -10049,5 +10049,9 @@
   "glossaryLibraryArticles": "Glossary articles in the library",
   "@glossaryLibraryArticles": {
     "description": "Section inside the single Scientific glossary: glossary articles from the library."
+  },
+  "trStatusDerivedDraft": "Automatic explanation — not reviewed",
+  "@trStatusDerivedDraft": {
+    "description": "Status badge: explanation compiled automatically from the sourced quote in the same language; not reviewed."
   }
 }

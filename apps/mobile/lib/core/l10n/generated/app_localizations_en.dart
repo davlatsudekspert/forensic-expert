@@ -7714,4 +7714,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get glossaryLibraryArticles => 'Glossary articles in the library';
+
+  @override
+  String get trStatusDerivedDraft => 'Automatic explanation — not reviewed';
 }

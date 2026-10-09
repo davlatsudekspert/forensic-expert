@@ -7751,4 +7751,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get glossaryLibraryArticles => 'Статьи словаря в библиотеке';
+
+  @override
+  String get trStatusDerivedDraft => 'Автоматическое объяснение — не проверено';
 }

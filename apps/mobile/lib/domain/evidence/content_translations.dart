@@ -72,6 +72,13 @@ abstract final class ContentTextKind {
   /// `derived`); asl matn — kartadagi da’vo iqtibosi.
   static const topicBody = 'topic_body';
 
+  /// Usul kartasining qisqa tushuntirishi (shartlari [topicBody] bilan bir xil).
+  static const methodBody = 'method_body';
+
+  /// Asl matnning tarjimasi emas, balki undan tuzilgan tushuntirish: asl
+  /// matn bilan bir tilda ham ko‘rsatiladi (xesh baribir mos bo‘lishi shart).
+  static const derived = {topicBody, methodBody};
+
   static const known = {
     claimExcerpt,
     ruleExcerpt,
@@ -81,6 +88,7 @@ abstract final class ContentTextKind {
     standardNote,
     conflictText,
     topicBody,
+    methodBody,
     contextText,
     listItem,
     metaboliteName,
@@ -118,6 +126,7 @@ class ContentTranslationRow {
     required this.sourceSha256,
     required this.text,
     required this.status,
+    this.sourceClaims = const [],
   });
 
   final String kind;
@@ -127,6 +136,11 @@ class ContentTranslationRow {
   final String text;
   final ContentTranslationStatus status;
 
+  /// Tuzilgan tushuntirish ([ContentTextKind.derived]) qaysi da’volardan
+  /// olingani; asl matn — shu da’vo iqtiboslari shu tartibda, bo‘sh joy
+  /// bilan qo‘shilgan.
+  final List<String> sourceClaims;
+
   /// Xom qiymatlardan; yaroqsiz/noma’lum bo‘lsa — `null` (xato tashlamaydi).
   static ContentTranslationRow? tryParse({
     required Object? kind,
@@ -135,6 +149,7 @@ class ContentTranslationRow {
     required Object? sourceSha256,
     required Object? text,
     required Object? status,
+    Object? sourceClaims,
   }) {
     if (kind is! String || kind.isEmpty) return null;
     if (id is! String || id.isEmpty) return null;
@@ -155,6 +170,11 @@ class ContentTranslationRow {
       sourceSha256: sourceSha256.toLowerCase(),
       text: t,
       status: st,
+      sourceClaims: [
+        if (sourceClaims is List)
+          for (final c in sourceClaims)
+            if (c is String && c.isNotEmpty) c,
+      ],
     );
   }
 }
@@ -318,6 +338,7 @@ class ContentTranslations {
           sourceSha256: rec['source_sha256'],
           text: e.value,
           status: rec['status'],
+          sourceClaims: rec['source_claims'],
         );
         if (row != null) out.add(row);
       }
@@ -329,6 +350,15 @@ class ContentTranslations {
 
   bool get isEmpty => _byKey.isEmpty;
   int get length => _byKey.length;
+
+  /// Tuzilgan tushuntirishning manba da’volari (har qanday tildagi qatordan).
+  List<String> sourceClaimsOf(String kind, String id) {
+    for (final l in contentLanguages) {
+      final r = _byKey[_key(kind, id, l)];
+      if (r != null && r.sourceClaims.isNotEmpty) return r.sourceClaims;
+    }
+    return const [];
+  }
 
   /// Shu turdagi qatorlar soni (diagnostika, test).
   int countOf(String kind) => _byKey.values.where((r) => r.kind == kind).length;
@@ -353,7 +383,8 @@ class ContentTranslations {
       originalLang: orig,
       requestedLang: ui,
     );
-    if (ui == orig || source.trim().isEmpty) return original;
+    final derived = ContentTextKind.derived.contains(kind);
+    if ((ui == orig && !derived) || source.trim().isEmpty) return original;
     final hash = TextTranslation.hashOf(source);
     var row = _byKey[_key(kind, id, ui)];
     if (row != null && row.sourceSha256 != hash) row = null;
@@ -367,7 +398,7 @@ class ContentTranslations {
       }
     }
     if (row == null) return original;
-    if (row.text == source.trim()) return original;
+    if (!derived && row.text == source.trim()) return original;
     return LocalizedContent(
       text: row.text,
       textLang: ui,

@@ -35,3 +35,6 @@ content/phase5/cache/
 
 # Claude Code agent worktrees (local only)
 /.claude/
+
+# local temp (agent sessions)
+.tmp/

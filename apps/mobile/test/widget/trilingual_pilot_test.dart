@@ -136,4 +136,66 @@ void main() {
       findsOneWidget,
     );
   });
+
+  testWidgets('63 karta: topic/method tushuntirishi asl da’volarga mos', (
+    tester,
+  ) async {
+    final json = jsonDecode(
+      File('assets/content/translations/localized_texts.json')
+          .readAsStringSync(),
+    ) as Map;
+    final ids = [
+      for (final r in (json['records'] as List).cast<Map<String, Object?>>())
+        if (r['target_type'] == 'topic_body' ||
+            r['target_type'] == 'method_body')
+          r['target_id']! as String,
+    ];
+    expect(ids.length, 63);
+    final missing = <String>[];
+    for (final id in ids) {
+      await open(tester, 'ru', Routes.knowledgeEntry(id));
+      if (find.byKey(Key('topic.body.$id')).evaluate().isEmpty) {
+        missing.add(id);
+      }
+    }
+    expect(missing, isEmpty);
+  });
+
+  testWidgets('usul kartasi (method_body) — ru/uz tarjima, en tushuntirish', (
+    tester,
+  ) async {
+    const id = 'method-gcms';
+    await open(tester, 'ru', Routes.knowledgeEntry(id));
+    final body = find.byKey(const Key('topic.body.$id'));
+    expect(body, findsOneWidget);
+    expect(
+      find.descendant(of: body, matching: find.text('Краткое объяснение')),
+      findsOneWidget,
+    );
+    expect(
+      find.descendant(
+        of: body,
+        matching: find.text('Автоматический перевод — не проверен'),
+      ),
+      findsOneWidget,
+    );
+    await open(tester, 'en', Routes.knowledgeEntry(id));
+    final enBody = find.byKey(const Key('topic.body.$id'));
+    expect(enBody, findsOneWidget);
+    // Asl matn bilan bir tilda — tarjima emas, avtomatik tushuntirish.
+    expect(
+      find.descendant(
+        of: enBody,
+        matching: find.text('Automatic explanation — not reviewed'),
+      ),
+      findsOneWidget,
+    );
+    expect(
+      find.descendant(
+        of: enBody,
+        matching: find.text('Machine translation — not reviewed'),
+      ),
+      findsNothing,
+    );
+  });
 }

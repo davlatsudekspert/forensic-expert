@@ -1130,16 +1130,27 @@ class TopicBodySection extends ConsumerWidget {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
-    for (final claim in entry.claims) {
-      final excerpt = claim.excerpt;
-      if (excerpt == null || excerpt.trim().isEmpty) continue;
-      final r = resolveContent(
-        ref,
-        context,
-        ContentTextKind.topicBody,
-        entry.id,
-        source: excerpt,
-      );
+    final translations = ref.watch(contentTranslationsProvider);
+    final byId = {
+      for (final c in entry.claims)
+        if ((c.excerpt ?? '').trim().isNotEmpty) c.claimId: c.excerpt!,
+    };
+    // Asl matn: manba da’volari iqtiboslari (yon fayldagi tartibda, bo‘sh
+    // joy bilan); zaxira — har bir iqtibos alohida.
+    final candidates = <String>[
+      for (final k in ContentTextKind.derived)
+        if (translations.sourceClaimsOf(k, entry.id) case final ids
+            when ids.isNotEmpty && ids.every(byId.containsKey))
+          ids.map((id) => byId[id]!).join(' '),
+      ...byId.values,
+    ];
+    for (final excerpt in candidates) {
+      var kind = ContentTextKind.topicBody;
+      var r = resolveContent(ref, context, kind, entry.id, source: excerpt);
+      if (!r.isTranslation) {
+        kind = ContentTextKind.methodBody;
+        r = resolveContent(ref, context, kind, entry.id, source: excerpt);
+      }
       if (!r.isTranslation) continue;
       return Padding(
         padding: const EdgeInsets.only(top: FeSpace.sm),
@@ -1158,7 +1169,7 @@ class TopicBodySection extends ConsumerWidget {
               const SizedBox(height: FeSpace.xs),
               LocalizedContentView(
                 content: r,
-                kind: ContentTextKind.topicBody,
+                kind: kind,
                 id: entry.id,
                 style: t.bodyLarge,
                 originalShowLabel: l.trOriginalQuoteShow,

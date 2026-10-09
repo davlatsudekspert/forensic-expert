@@ -72,6 +72,9 @@ k("trTranslationSemantics", "Screen-reader label for a translated block.",
   "Asl matnning tarjimasi. {status}. Asl matn «Asl matn» tugmasi orqali ochiladi.", {"status": S})
 k("imageCaptionSection", "Image viewer: section header for the caption from the source (translation shown first).",
   "Caption in the source", "Подпись в источнике", "Manbadagi izoh")
+k("trStatusDerivedDraft", "Status badge: explanation compiled automatically from the sourced quote in the same language; not reviewed.",
+  "Automatic explanation — not reviewed", "Автоматическое объяснение — не проверено",
+  "Avtomatik tushuntirish — tekshirilmagan")
 k("trTopicSummaryLabel", "Topic card: short explanation in the UI language (from the card's sourced statements).",
   "Brief explanation", "Краткое объяснение", "Qisqacha tushuntirish")
 k("trTopicSummaryNote", "Note under the topic card explanation header.",

@@ -7686,4 +7686,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get glossaryLibraryArticles => 'Kutubxonadagi lug‘at maqolalari';
+
+  @override
+  String get trStatusDerivedDraft => 'Avtomatik tushuntirish — tekshirilmagan';
 }

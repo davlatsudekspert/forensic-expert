@@ -53,9 +53,17 @@ LocalizedContent resolveContent(
 
 /// Tarjima holati belgisi: «Avtomatik tarjima — tekshirilmagan».
 class TranslationStatusBadge extends StatelessWidget {
-  const TranslationStatusBadge({super.key, required this.status});
+  const TranslationStatusBadge({
+    super.key,
+    required this.status,
+    this.sameLanguage = false,
+  });
 
   final ContentTranslationStatus status;
+
+  /// Matn asl matn bilan bir tilda (tarjima emas, avtomatik tuzilgan
+  /// tushuntirish): «Avtomatik tushuntirish — tekshirilmagan».
+  final bool sameLanguage;
 
   @override
   Widget build(BuildContext context) {
@@ -79,7 +87,9 @@ class TranslationStatusBadge extends StatelessWidget {
         const SizedBox(width: FeSpace.xxs),
         Flexible(
           child: Text(
-            translationStatusLabel(l, status),
+            sameLanguage && !verified
+                ? l.trStatusDerivedDraft
+                : translationStatusLabel(l, status),
             style: t.labelSmall?.copyWith(color: color),
           ),
         ),
@@ -333,6 +343,7 @@ class LocalizedContentView extends StatelessWidget {
               TranslationStatusBadge(
                 key: Key('l10n.status.$kind.$id'),
                 status: content.status!,
+                sameLanguage: content.textLang == content.originalLang,
               ),
             ],
           ),

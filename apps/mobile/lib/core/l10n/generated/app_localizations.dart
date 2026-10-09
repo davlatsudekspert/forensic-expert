@@ -13550,6 +13550,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Glossary articles in the library'**
   String get glossaryLibraryArticles;
+
+  /// Status badge: explanation compiled automatically from the sourced quote in the same language; not reviewed.
+  ///
+  /// In en, this message translates to:
+  /// **'Automatic explanation — not reviewed'**
+  String get trStatusDerivedDraft;
 }
 
 class _AppLocalizationsDelegate
