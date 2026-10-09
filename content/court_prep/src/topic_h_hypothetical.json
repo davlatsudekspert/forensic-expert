@@ -1,0 +1,223 @@
+{
+  "topic": {
+    "id": "court.topic.hypothetical",
+    "order": 16,
+    "icon": "forum",
+    "title": {
+      "uz": "Faraziy va yo‘naltiruvchi savollar, ekspertlar kelishmovchiligi",
+      "ru": "Гипотетические и наводящие вопросы, расхождение экспертов",
+      "en": "Hypothetical and leading questions, disagreement between experts"
+    },
+    "summary": {
+      "uz": "«Faraz qiling…», «ha yoki yo‘q», boshqa ekspertning xulosasi va adabiyotga havola bilan e’tiroz.",
+      "ru": "«Предположим…», «да или нет», заключение другого эксперта и возражения со ссылкой на литературу.",
+      "en": "'Suppose…', 'yes or no', another expert's conclusion and challenges citing the literature."
+    }
+  },
+  "questions": [
+    {
+      "id": "court.q.hypo_suppose",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Faraz qiling, u kishi faqat ikki stakan ichgan. Unda natija boshqacha bo‘lmasmidi?",
+        "ru": "Предположим, человек выпил только два бокала. Разве результат не был бы другим?",
+        "en": "Suppose the person had only two drinks. Wouldn't the result be different?"
+      },
+      "tests": {
+        "uz": "Muqobil talqinni xolis ko‘rib chiqa olish: faraz qilinayotgan holat va sizning topilmangiz o‘zaro qanday munosabatda ekanini ilmiy baholash [court_enfsi2015].",
+        "ru": "Способность беспристрастно рассмотреть альтернативное объяснение: научно оценить, как соотносятся предполагаемые обстоятельства и ваша находка [court_enfsi2015].",
+        "en": "Whether you can fairly consider an alternative account: scientifically assess how the supposed circumstances relate to your finding [court_enfsi2015]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Talqinda qanday faraz va muqobil farazlar ko‘rib chiqilgani haqidagi ish yozuvlari [court_ilac_g19_2022].",
+            "ru": "Записи о том, какие гипотезы и альтернативы рассматривались при интерпретации [court_ilac_g19_2022].",
+            "en": "Case notes on which hypotheses and alternatives were considered in the interpretation [court_ilac_g19_2022]."
+          },
+          {
+            "uz": "Tegishli hisob-kitob vositasi va uning taxminlari (masalan, Widmark hisobi) [jones2010].",
+            "ru": "Соответствующий расчётный инструмент и его допущения (например, расчёт по Видмарку) [jones2010].",
+            "en": "The relevant calculation tool and its assumptions (for example, a Widmark estimate) [jones2010]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Faraziy savolga javob farazning shartlariga bog‘liq: shartlarni aniq takrorlab, ular to‘g‘ri bo‘lsa natija qanday bo‘lishi mumkinligini va qaysi ma’lumot yetishmasligini ayting [court_ely_gill2024].",
+            "ru": "Ответ на гипотетический вопрос зависит от его условий: точно повторите условия, скажите, каким мог бы быть результат при их истинности и каких данных не хватает [court_ely_gill2024].",
+            "en": "The answer to a hypothetical depends on its premises: restate them, say what the result could be if they were true and what data are missing [court_ely_gill2024]."
+          },
+          {
+            "uz": "Muqobil farazlarni ko‘rib chiqish xolislikni ko‘rsatadi [court_ilac_g19_2022]; «mumkin» va «ehtimoliy» tushunchalarini aniq farqlang [court_ely_gill2024].",
+            "ru": "Рассмотрение альтернативных гипотез демонстрирует беспристрастность [court_ilac_g19_2022]; чётко различайте «возможно» и «вероятно» [court_ely_gill2024].",
+            "en": "Considering alternative hypotheses demonstrates impartiality [court_ilac_g19_2022]; distinguish clearly between 'possible' and 'probable' [court_ely_gill2024]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Shartlari to‘liq aytilmagan farazga aniq son bilan javob berish; avval shartlarni aniqlashtiring.",
+            "ru": "Отвечать точным числом на гипотезу с неполными условиями; сначала уточните условия.",
+            "en": "Answering an incompletely specified hypothetical with an exact figure; clarify the premises first."
+          }
+        ]
+      },
+      "links": [
+        "tool:tool.tox.widmark",
+        "tool:tool.tox.back_calculation"
+      ],
+      "citations": [
+        "court_enfsi2015",
+        "court_ilac_g19_2022",
+        "jones2010",
+        "court_ely_gill2024"
+      ]
+    },
+    {
+      "id": "court.q.hypo_yes_no",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Faqat «ha» yoki «yo‘q» deb javob bering: modda topildimi?",
+        "ru": "Отвечайте только «да» или «нет»: вещество обнаружено?",
+        "en": "Answer only 'yes' or 'no': was the substance found?"
+      },
+      "tests": {
+        "uz": "Qisqa javob talab qilinganda ham ilmiy ma’noni saqlay olish: masalan, skrining musbat, lekin tasdiqlanmagan natijani «ha» deb aytish chalg‘itadi [court_ilac_g19_2022].",
+        "ru": "Умение сохранить научный смысл при требовании краткого ответа: например, назвать «да» положительный, но неподтверждённый скрининг — вводит в заблуждение [court_ilac_g19_2022].",
+        "en": "Keeping the scientific meaning when a short answer is demanded: for example, calling an unconfirmed positive screen 'yes' is misleading [court_ilac_g19_2022]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Har bir asosiy natija uchun bir jumlalik aniq ta’rif: nima topildi, qaysi usulda, tasdiqlanganmi, qaysi chegaradan yuqori yoki past.",
+            "ru": "Для каждого ключевого результата — одна точная фраза: что найдено, каким методом, подтверждено ли, выше или ниже какого предела.",
+            "en": "A one-sentence precise statement for each key result: what was found, by which method, whether confirmed, above or below which limit."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Ekspert o‘z xulosasi yoki ko‘rsatmasi noto‘g‘ri talqin qilinganda bu haqda bayonnomaga kiritiladigan arz qilish huquqiga ega (O‘zbekiston JPK) [court_uz_cpc].",
+            "ru": "Эксперт вправе делать заявления по поводу неправильного истолкования его заключения или показаний, которые заносятся в протокол (УПК Узбекистана) [court_uz_cpc].",
+            "en": "The expert has the right to make statements, entered in the record, when his conclusion or testimony is misinterpreted (Uzbekistan CPC) [court_uz_cpc]."
+          },
+          {
+            "uz": "Mijozga beriladigan har qanday natija chalg‘ituvchi bo‘lmasligi kerak; soddalashtirish noaniqlikka olib kelmasligi lozim [court_ilac_g19_2022].",
+            "ru": "Любой результат, передаваемый заказчику, не должен вводить в заблуждение; упрощение не должно порождать двусмысленность [court_ilac_g19_2022].",
+            "en": "Any output given to the customer must not be misleading; simplification must not create ambiguity [court_ilac_g19_2022]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Asabiylashish yoki bahslashish; xotirjam ohangda «ha/yo‘q to‘liq javob bo‘lmaydi, bir jumla bilan aniqlashtirishga ruxsat bering» deb so‘rash mumkin [court_gill_ely2024].",
+            "ru": "Раздражаться или спорить; можно спокойно попросить: «да/нет не будет полным ответом, позвольте уточнить одной фразой» [court_gill_ely2024].",
+            "en": "Getting irritated or arguing; you can calmly ask: 'yes/no would not be a complete answer — may I clarify in one sentence?' [court_gill_ely2024]."
+          }
+        ]
+      },
+      "links": [],
+      "citations": [
+        "court_ilac_g19_2022",
+        "court_uz_cpc",
+        "court_gill_ely2024"
+      ]
+    },
+    {
+      "id": "court.q.hypo_other_expert",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Boshqa ekspert boshqacha xulosa bergan. Demak, siz xato qilgansiz?",
+        "ru": "Другой эксперт пришёл к иному выводу. Значит, вы ошиблись?",
+        "en": "Another expert reached a different conclusion. So you were wrong?"
+      },
+      "tests": {
+        "uz": "Kelishmovchilikni ilmiy asosda tahlil qila olish; ekspertlar fikri farq qilganda, qaysi xulosaga qo‘shilish sababini qaror qabul qiluvchi asoslab berishi shart (O‘zbekiston JPK) [court_uz_cpc].",
+        "ru": "Умение разобрать расхождение на научной основе; при расхождении экспертов лицо, принимающее решение, обязано обосновать, с каким выводом оно согласно (УПК Узбекистана) [court_uz_cpc].",
+        "en": "Whether you can analyse the disagreement scientifically; where experts disagree, the decision-maker must justify which conclusion is accepted (Uzbekistan CPC) [court_uz_cpc]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Ikkala xulosaning taqqoslash jadvali: obyektlar, namuna turi va joyi, usul, LOD/LOQ, natija, noaniqlik, talqin asosi.",
+            "ru": "Таблица сравнения двух заключений: объекты, тип и место образца, метод, LOD/LOQ, результат, неопределённость, основа интерпретации.",
+            "en": "A comparison table of both reports: objects, specimen type and site, method, LOD/LOQ, result, uncertainty, basis of interpretation."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Farq ko‘pincha turli namuna, vaqt, usul yoki talqin taxminlaridan kelib chiqadi; har birini ilmiy jihatdan tushuntiring, shaxsiy baho bermang [court_ilac_g19_2022].",
+            "ru": "Расхождение часто вызвано разными образцами, временем, методом или допущениями интерпретации; объясняйте каждое научно, без личных оценок [court_ilac_g19_2022].",
+            "en": "Differences often stem from different specimens, timing, methods or interpretive assumptions; explain each scientifically, without personal judgements [court_ilac_g19_2022]."
+          },
+          {
+            "uz": "Talqin mustahkam tadqiqotlarga yoki hech bo‘lmaganda hujjatlashtirilgan dalillar majmuasiga tayanishi kerak — bu ikki xulosani solishtirishda mezon bo‘ladi [court_ilac_g19_2022].",
+            "ru": "Интерпретация должна опираться на надёжные исследования или хотя бы на документированную совокупность данных — это критерий при сравнении двух выводов [court_ilac_g19_2022].",
+            "en": "Interpretation should rest on robust studies or at least a documented body of evidence — a yardstick when comparing two conclusions [court_ilac_g19_2022]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Hamkasbni shaxsan tanqid qilish yoki aksincha, yangi dalilsiz o‘z xulosasidan darhol voz kechish; yangi ma’lumot bo‘lsa, uni xolis ko‘rib chiqing [court_dror2020].",
+            "ru": "Лично критиковать коллегу или, наоборот, сразу отказываться от своего вывода без новых данных; новую информацию рассматривайте беспристрастно [court_dror2020].",
+            "en": "Attacking the colleague personally or, conversely, dropping your conclusion without new data; consider any new information impartially [court_dror2020]."
+          }
+        ]
+      },
+      "links": [
+        "page:conflicts"
+      ],
+      "citations": [
+        "court_uz_cpc",
+        "court_ilac_g19_2022",
+        "court_dror2020"
+      ]
+    },
+    {
+      "id": "court.q.hypo_literature",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Mana bu maqolada boshqacha yozilgan. Siz adabiyotni bilmaysizmi?",
+        "ru": "В этой статье написано иначе. Вы не знаете литературу?",
+        "en": "This article says otherwise. Don't you know the literature?"
+      },
+      "tests": {
+        "uz": "Ilmiy adabiyotni tanqidiy baholay olish va o‘z talqiningiz qaysi ishonchli manbalarga tayanganini ko‘rsatish [court_ilac_g19_2022].",
+        "ru": "Умение критически оценить литературу и показать, на какие надёжные источники опирается ваша интерпретация [court_ilac_g19_2022].",
+        "en": "Whether you can appraise literature critically and show which reliable sources your interpretation rests on [court_ilac_g19_2022]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Xulosada tayangan asosiy manbalar ro‘yxati (DOI/PMID bilan) va har biri nimani tasdiqlashi.",
+            "ru": "Список ключевых источников заключения (с DOI/PMID) и что подтверждает каждый.",
+            "en": "A list of the key sources behind your conclusion (with DOI/PMID) and what each supports."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Maqolani ko‘rib chiqmasdan baho bermang: uni o‘qib chiqishga vaqt so‘rash mumkin; keyin uning namuna turi, usuli va populyatsiyasi ishingizga mos kelishini solishtiring [court_ely_gill2024].",
+            "ru": "Не оценивайте статью, не ознакомившись с ней: можно попросить время на прочтение; затем сопоставьте тип образца, метод и популяцию с вашим делом [court_ely_gill2024].",
+            "en": "Do not judge an article unseen: you may ask for time to read it; then compare its specimen type, method and population with your case [court_ely_gill2024]."
+          },
+          {
+            "uz": "Talqin uchun tegishli va ishonchli axborot manbalariga murojaat qilish tavsiya etiladi [court_ilac_g19_2022].",
+            "ru": "Для интерпретации рекомендуется обращаться к соответствующим надёжным источникам информации [court_ilac_g19_2022].",
+            "en": "Interpretation should draw on relevant, reliable sources of information [court_ilac_g19_2022]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "O‘qimagan maqolani rad etish yoki u bilan darhol rozi bo‘lish.",
+            "ru": "Отвергать непрочитанную статью или сразу с ней соглашаться.",
+            "en": "Rejecting — or instantly agreeing with — an article you have not read."
+          }
+        ]
+      },
+      "links": [
+        "page:sources"
+      ],
+      "citations": [
+        "court_ilac_g19_2022",
+        "court_ely_gill2024"
+      ]
+    }
+  ]
+}

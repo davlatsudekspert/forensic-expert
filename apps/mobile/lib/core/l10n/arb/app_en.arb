@@ -9168,5 +9168,529 @@
   "studyDeckGmt": "Drug analysis (Yuldashev Z.A.)",
   "@studyDeckGmt": {
     "description": "Study deck title: questions on the drug-analysis teaching manual."
+  },
+  "courtTitle": "Court testimony: preparation",
+  "@courtTitle": {
+    "description": "Section title: preparing for questioning in court."
+  },
+  "courtSubtitle": "Questions experts are asked about their conclusions, and how to prepare a scientifically sound answer",
+  "@courtSubtitle": {
+    "description": "Short description of the court-preparation section (Home/Library tile)."
+  },
+  "courtDisclaimer": "Preparation material; not legal advice; a conclusion rests only on the expert's own examination.",
+  "@courtDisclaimer": {
+    "description": "Calm disclaimer at the top of every court-preparation screen."
+  },
+  "courtSearchHint": "Search questions",
+  "@courtSearchHint": {
+    "description": "Search field hint in the court-preparation section."
+  },
+  "courtNoResults": "Nothing found. Try another word.",
+  "@courtNoResults": {
+    "description": "Empty search result in the court-preparation section."
+  },
+  "courtEmpty": "The section content could not be loaded.",
+  "@courtEmpty": {
+    "description": "Shown when the court-preparation content could not be loaded."
+  },
+  "courtTopics": "Topics",
+  "@courtTopics": {
+    "description": "Header above the list of topics."
+  },
+  "courtQuestionCount": "{count, plural, =1{1 question} other{{count} questions}}",
+  "@courtQuestionCount": {
+    "description": "Number of questions in a topic.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "courtTests": "What the court is testing",
+  "@courtTests": {
+    "description": "Block title: what the court or investigator is testing with the question."
+  },
+  "courtPrepare": "Preparing your answer",
+  "@courtPrepare": {
+    "description": "Block title: preparing your answer (checklist)."
+  },
+  "courtBlockDocuments": "Have ready: documents and data",
+  "@courtBlockDocuments": {
+    "description": "Checklist group: documents and data to have ready."
+  },
+  "courtBlockExplain": "Principles to explain",
+  "@courtBlockExplain": {
+    "description": "Checklist group: principles to explain."
+  },
+  "courtBlockPitfalls": "Typical pitfalls",
+  "@courtBlockPitfalls": {
+    "description": "Checklist group: typical pitfalls."
+  },
+  "courtRelated": "Related in the app",
+  "@courtRelated": {
+    "description": "Header: related content inside the app."
+  },
+  "courtCopyCitation": "Copy citation",
+  "@courtCopyCitation": {
+    "description": "Tooltip: copy a reference citation."
+  },
+  "courtCitationCopied": "Citation copied",
+  "@courtCitationCopied": {
+    "description": "Snackbar after copying a citation."
+  },
+  "courtPractice": "Practice mode",
+  "@courtPractice": {
+    "description": "Practice mode title / button."
+  },
+  "courtPracticeBody": "A random question: think through your answer, then open the checklist.",
+  "@courtPracticeBody": {
+    "description": "Practice mode description (button subtitle)."
+  },
+  "courtPracticeThink": "First prepare your own answer: which documents and which principles would you rely on?",
+  "@courtPracticeThink": {
+    "description": "Prompt under the practice question before reveal."
+  },
+  "courtPracticeReveal": "Show the checklist",
+  "@courtPracticeReveal": {
+    "description": "Button: reveal the preparation checklist."
+  },
+  "courtPracticeHint": "Tap to show what the court is testing",
+  "@courtPracticeHint": {
+    "description": "Accessibility hint on the practice card."
+  },
+  "courtPracticeNext": "Next question",
+  "@courtPracticeNext": {
+    "description": "Button: next random question."
+  },
+  "courtPracticeOpen": "Open full question",
+  "@courtPracticeOpen": {
+    "description": "Button: open the full question page."
+  },
+  "courtPracticeProgress": "Questions practised: {count}",
+  "@courtPracticeProgress": {
+    "description": "Practice counter.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "courtQuestionOf": "Question {index} of {count}",
+  "@courtQuestionOf": {
+    "description": "Question position inside its topic.",
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "courtShortAnswer": "Short answer",
+  "@courtShortAnswer": {
+    "description": "Card block B: short answer."
+  },
+  "courtBasisHeader": "Scientific and legal basis of the answer",
+  "@courtBasisHeader": {
+    "description": "Card section header: scientific and legal basis of the answer."
+  },
+  "courtBasis": "Scientific / legal basis",
+  "@courtBasis": {
+    "description": "Card block C."
+  },
+  "courtWhereWritten": "Where is it written?",
+  "@courtWhereWritten": {
+    "description": "Card block D: where exactly it is written."
+  },
+  "courtSourceUnverified": "Source not verified",
+  "@courtSourceUnverified": {
+    "description": "Shown instead of a bibliography line when the exact location was not verified."
+  },
+  "courtSourceUnverifiedNote": "The exact location in this source has not been confirmed from the original text.",
+  "@courtSourceUnverifiedNote": {
+    "description": "Explains the unverified-source line."
+  },
+  "courtFollowups": "Follow-up questions",
+  "@courtFollowups": {
+    "description": "Card blocks E/F: follow-up questions with answers."
+  },
+  "courtLimitations": "Limitations, exceptions and uncertainties",
+  "@courtLimitations": {
+    "description": "Card block G."
+  },
+  "courtExport": "Copy sources",
+  "@courtExport": {
+    "description": "Card block H: copy / export sources."
+  },
+  "courtExportText": "As text",
+  "@courtExportText": {
+    "description": "Export as plain text."
+  },
+  "courtExportBibtex": "BibTeX",
+  "@courtExportBibtex": {
+    "description": "Export as BibTeX."
+  },
+  "courtExportCopied": "Sources copied",
+  "@courtExportCopied": {
+    "description": "Snackbar after copying the list of sources."
+  },
+  "courtLawNote": "Uzbekistan · lex.uz · text as of {date}",
+  "@courtLawNote": {
+    "description": "Law source note: jurisdiction, site, date of the text.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "courtBookNote": "Used with the author's permission; free for everyone",
+  "@courtBookNote": {
+    "description": "Attribution note for teacher books."
+  },
+  "courtLocArticle": "Art. {article}",
+  "@courtLocArticle": {
+    "description": "Locator: article of a law.",
+    "placeholders": {
+      "article": {
+        "type": "String"
+      }
+    }
+  },
+  "courtLocArticlePart": "Art. {article}, part {part}",
+  "@courtLocArticlePart": {
+    "description": "Locator: article and part.",
+    "placeholders": {
+      "article": {
+        "type": "String"
+      },
+      "part": {
+        "type": "String"
+      }
+    }
+  },
+  "courtLocSection": "§ {section}",
+  "@courtLocSection": {
+    "description": "Locator: section of a document.",
+    "placeholders": {
+      "section": {
+        "type": "String"
+      }
+    }
+  },
+  "courtLocPdfPage": "PDF p. {page}",
+  "@courtLocPdfPage": {
+    "description": "Locator: PDF page.",
+    "placeholders": {
+      "page": {
+        "type": "String"
+      }
+    }
+  },
+  "courtLocPages": "pp. {pages}",
+  "@courtLocPages": {
+    "description": "Locator: page range.",
+    "placeholders": {
+      "pages": {
+        "type": "String"
+      }
+    }
+  },
+  "courtLocRecommendation": "Recommendation {n}",
+  "@courtLocRecommendation": {
+    "description": "Locator: numbered recommendation.",
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "courtLocGuidanceNote": "Guidance Note {n}",
+  "@courtLocGuidanceNote": {
+    "description": "Locator: guidance note.",
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "courtLocAbstract": "Abstract",
+  "@courtLocAbstract": {
+    "description": "Locator: abstract."
+  },
+  "courtLocScope": "Scope (official page)",
+  "@courtLocScope": {
+    "description": "Locator: scope statement on the official page."
+  },
+  "courtLocTitle": "Title and bibliographic record",
+  "@courtLocTitle": {
+    "description": "Locator: title and bibliographic record."
+  },
+  "courtLocGlossary": "Glossary",
+  "@courtLocGlossary": {
+    "description": "Locator: glossary."
+  },
+  "courtPrinciples": "Integrity principles",
+  "@courtPrinciples": {
+    "description": "Integrity principles card / screen title."
+  },
+  "courtPrinciplesBody": "Report everything, say “I don't know”, correct your errors, stay independent",
+  "@courtPrinciplesBody": {
+    "description": "Integrity principles card subtitle."
+  },
+  "courtPrinciplesIntro": "This section never teaches hiding, softening or misrepresenting real results.",
+  "@courtPrinciplesIntro": {
+    "description": "Intro on the integrity principles screen."
+  },
+  "courtJurisdictionUz": "Legal questions: under the law of Uzbekistan",
+  "@courtJurisdictionUz": {
+    "description": "Hub note when Uzbekistan is the selected jurisdiction."
+  },
+  "courtJurisdictionIntl": "Legal questions: general international principles. Select Uzbekistan to see its laws.",
+  "@courtJurisdictionIntl": {
+    "description": "Hub note when another jurisdiction is selected."
+  },
+  "courtJurisdictionChange": "Choose jurisdiction",
+  "@courtJurisdictionChange": {
+    "description": "Button: choose jurisdiction."
+  },
+  "courtPendingTopic": "In preparation — sources being verified",
+  "@courtPendingTopic": {
+    "description": "Badge on a topic without verified sources yet."
+  },
+  "courtSimulator": "Court questioning simulator",
+  "@courtSimulator": {
+    "description": "Simulator title."
+  },
+  "courtSimulatorBody": "Answer a judge, prosecutor, defence lawyer or another expert — scored on accuracy, sources, limitations and impartiality.",
+  "@courtSimulatorBody": {
+    "description": "Simulator entry subtitle."
+  },
+  "courtSimulatorNote": "The simulator never predetermines a case outcome and never teaches false testimony, evasion or hiding results.",
+  "@courtSimulatorNote": {
+    "description": "Simulator honesty note."
+  },
+  "courtRoleJudge": "Judge",
+  "@courtRoleJudge": {
+    "description": "Simulator role."
+  },
+  "courtRoleProsecutor": "Prosecutor",
+  "@courtRoleProsecutor": {
+    "description": "Simulator role."
+  },
+  "courtRoleDefense": "Defence lawyer",
+  "@courtRoleDefense": {
+    "description": "Simulator role."
+  },
+  "courtRoleExpert": "Another expert",
+  "@courtRoleExpert": {
+    "description": "Simulator role: another expert."
+  },
+  "courtSimContext": "Situation",
+  "@courtSimContext": {
+    "description": "Scenario context label."
+  },
+  "courtSimYourAnswer": "Your own answer (optional)",
+  "@courtSimYourAnswer": {
+    "description": "Free-text answer label."
+  },
+  "courtSimYourAnswerHint": "Type your answer…",
+  "@courtSimYourAnswerHint": {
+    "description": "Free-text hint."
+  },
+  "courtSimEvaluateText": "Check my wording",
+  "@courtSimEvaluateText": {
+    "description": "Button: evaluate the typed answer."
+  },
+  "courtSimChoose": "Choose the best answer",
+  "@courtSimChoose": {
+    "description": "Header above answer options."
+  },
+  "courtSimCheck": "Check answer",
+  "@courtSimCheck": {
+    "description": "Button: check the chosen option."
+  },
+  "courtSimResult": "Evaluation",
+  "@courtSimResult": {
+    "description": "Header: evaluation."
+  },
+  "courtSimTotal": "Total: {score}/{max}",
+  "@courtSimTotal": {
+    "description": "Total score.",
+    "placeholders": {
+      "score": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "courtSimBest": "Model answer",
+  "@courtSimBest": {
+    "description": "Header: model answer."
+  },
+  "courtSimNext": "Next scenario",
+  "@courtSimNext": {
+    "description": "Button: next scenario."
+  },
+  "courtSimOpenQuestion": "Open the related card",
+  "@courtSimOpenQuestion": {
+    "description": "Button: open related card."
+  },
+  "courtSimFreeTextNote": "Automatic, keyword-based and approximate. Compare scientific accuracy with the model answer yourself.",
+  "@courtSimFreeTextNote": {
+    "description": "Note under the automatic free-text evaluation."
+  },
+  "courtSimFlagOverstatement": "Absolute wording found (“100%”, “definitely”…) — certainty may be overstated.",
+  "@courtSimFlagOverstatement": {
+    "description": "Warning: absolute wording detected."
+  },
+  "courtSimFlagEvasion": "Evasive wording found — give the reason and what lies within your field.",
+  "@courtSimFlagEvasion": {
+    "description": "Warning: evasive wording detected."
+  },
+  "courtSimTooShort": "The answer is too short.",
+  "@courtSimTooShort": {
+    "description": "Warning: answer too short."
+  },
+  "courtCritAccuracy": "Scientific accuracy",
+  "@courtCritAccuracy": {
+    "description": "Criterion."
+  },
+  "courtCritSources": "Reliance on sources",
+  "@courtCritSources": {
+    "description": "Criterion."
+  },
+  "courtCritLimitations": "Explaining limitations",
+  "@courtCritLimitations": {
+    "description": "Criterion."
+  },
+  "courtCritImpartiality": "Impartiality",
+  "@courtCritImpartiality": {
+    "description": "Criterion."
+  },
+  "courtScenarioCount": "{count, plural, =1{1 scenario} other{{count} scenarios}}",
+  "@courtScenarioCount": {
+    "description": "Number of scenarios.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "courtProTitle": "Advanced preparation in {tier}",
+  "@courtProTitle": {
+    "description": "Pro features card title.",
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "courtProBody": "Full simulator (all scenarios), sequential role drills, AI analysis (coming soon), personal statistics and history. Q&A cards with sources are free for everyone.",
+  "@courtProBody": {
+    "description": "Pro features card body."
+  },
+  "courtProBadge": "Pro",
+  "@courtProBadge": {
+    "description": "Small badge on Pro-only entries."
+  },
+  "courtAiPro": "AI analysis (Pro)",
+  "@courtAiPro": {
+    "description": "AI analysis button label for free users."
+  },
+  "courtScoreSemantics": "{criterion}: {score} of 2",
+  "@courtScoreSemantics": {
+    "description": "Screen-reader label of a score bar.",
+    "placeholders": {
+      "criterion": {
+        "type": "String"
+      },
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "courtSimFreeNote": "Free: basic scenarios. The other scenarios, role drills and statistics are in Pro.",
+  "@courtSimFreeNote": {
+    "description": "Simulator list note for free users."
+  },
+  "courtDrill": "Role drill",
+  "@courtDrill": {
+    "description": "Pro: sequential role drill."
+  },
+  "courtDrillBody": "Judge → prosecutor → defence → another expert, one after another",
+  "@courtDrillBody": {
+    "description": "Role drill subtitle."
+  },
+  "courtDrillStep": "Step {index} of {count}",
+  "@courtDrillStep": {
+    "description": "Role drill progress.",
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "courtDrillNext": "Next role",
+  "@courtDrillNext": {
+    "description": "Button: next role in the drill."
+  },
+  "courtDrillDone": "Role drill complete",
+  "@courtDrillDone": {
+    "description": "Role drill finished."
+  },
+  "courtStats": "Statistics and history",
+  "@courtStats": {
+    "description": "Pro: statistics and history."
+  },
+  "courtStatsBody": "Your scores and attempt history — stored on this device only",
+  "@courtStatsBody": {
+    "description": "Statistics subtitle."
+  },
+  "courtStatsAttempts": "Attempts: {count}",
+  "@courtStatsAttempts": {
+    "description": "Number of attempts.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "courtStatsAverage": "Average score by criterion",
+  "@courtStatsAverage": {
+    "description": "Average by criterion header."
+  },
+  "courtStatsHistory": "History",
+  "@courtStatsHistory": {
+    "description": "History header."
+  },
+  "courtStatsEmpty": "No attempts yet.",
+  "@courtStatsEmpty": {
+    "description": "No attempts yet."
+  },
+  "courtStatsClear": "Clear history",
+  "@courtStatsClear": {
+    "description": "Button: clear history."
+  },
+  "courtAi": "AI analysis",
+  "@courtAi": {
+    "description": "Pro: AI analysis of the answer."
+  },
+  "courtAiUnavailable": "AI analysis is not connected yet — coming soon. Your answer was not sent anywhere.",
+  "@courtAiUnavailable": {
+    "description": "Honest unavailable state for AI analysis."
+  },
+  "courtSimPartialUnverified": "Partial — unverified source: this answer relies on a source whose location is not verified.",
+  "@courtSimPartialUnverified": {
+    "description": "Cap note: answer relies on an unverified source."
+  },
+  "courtSimReviewNote": "Scores are based on material awaiting expert review (NEEDS_REVIEW); the model answer is not a verified truth either.",
+  "@courtSimReviewNote": {
+    "description": "Note under every simulator evaluation."
   }
 }

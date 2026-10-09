@@ -1,0 +1,174 @@
+{
+  "criteria": ["accuracy", "sources", "limitations", "impartiality"],
+  "scenarios": [
+    {
+      "id": "court.sim.colour_test",
+      "role": "prosecutor",
+      "sample": true,
+      "question_id": "court.q.ident_colour_test",
+      "context": {"uz": "Musodara qilingan kukunda rangli test musbat; tasdiqlovchi tahlil hali tugallanmagan.", "ru": "Цветной тест изъятого порошка положительный; подтверждающий анализ ещё не завершён.", "en": "A colour test on a seized powder was positive; confirmatory analysis is not finished yet."},
+      "prompt": {"uz": "Prokuror: «Test musbat. Demak, bu giyohvand modda, to‘g‘rimi?»", "ru": "Прокурор: «Тест положительный. Значит, это наркотик, верно?»", "en": "Prosecutor: 'The test was positive. So it is a narcotic, correct?'"},
+      "options": [
+        {"text": {"uz": "Ha, rang aniq o‘zgardi — bu giyohvand modda.", "ru": "Да, окраска явно изменилась — это наркотик.", "en": "Yes, the colour clearly changed — it is a narcotic."},
+         "scores": {"accuracy": 0, "sources": 0, "limitations": 0, "impartiality": 1},
+         "feedback": {"uz": "Taxminiy testdan qat’iy xulosa chiqarilmaydi [court_ilac_g19_2022]; rangli test C toifasidagi usul [swgdrug2024].", "ru": "Из предварительного теста окончательный вывод не делается [court_ilac_g19_2022]; цветной тест — метод категории C [swgdrug2024].", "en": "No definitive conclusion is drawn from a presumptive test [court_ilac_g19_2022]; a colour test is a Category C technique [swgdrug2024]."}},
+        {"text": {"uz": "Bu taxminiy natija. Rangli test — skrining; identifikatsiya tasdiqlovchi usul bilan qilinadi va u hali tugamagan. Hozircha «taxminiy musbat, tasdiqlash kutilmoqda» deyishim mumkin.", "ru": "Это предварительный результат. Цветной тест — скрининг; идентификация выполняется подтверждающим методом, который ещё не завершён. Пока могу сказать: «предварительно положительно, ожидается подтверждение».", "en": "This is a presumptive result. A colour test is screening; identification requires a confirmatory method, which is not finished. For now I can say 'presumptive positive, confirmation pending'."},
+         "scores": {"accuracy": 2, "sources": 2, "limitations": 2, "impartiality": 2},
+         "feedback": {"uz": "Kuchli javob: skrining va tasdiqlash farqi aniq aytildi va natija yashirilmadi [court_ilac_g19_2022, philp2018].", "ru": "Сильный ответ: чётко разграничены скрининг и подтверждение, результат не скрыт [court_ilac_g19_2022, philp2018].", "en": "Strong answer: screening and confirmation are clearly distinguished and the result is not hidden [court_ilac_g19_2022, philp2018]."}},
+        {"text": {"uz": "Bu haqda hech narsa deya olmayman.", "ru": "Ничего не могу об этом сказать.", "en": "I cannot say anything about that."},
+         "scores": {"accuracy": 1, "sources": 0, "limitations": 1, "impartiality": 1},
+         "feedback": {"uz": "Mavjud natijani aytmaslik ham noto‘g‘ri: barcha tegishli natijalar cheklovi bilan xabar qilinadi [court_ilac_g19_2022].", "ru": "Не называть имеющийся результат тоже неверно: все значимые результаты сообщаются с ограничениями [court_ilac_g19_2022].", "en": "Withholding the available result is also wrong: all relevant results are reported with their limitations [court_ilac_g19_2022]."}}
+      ],
+      "citations": ["court_ilac_g19_2022", "swgdrug2024", "philp2018"],
+      "locators": {"court_ilac_g19_2022": ["sec:4.8.1", "sec:4.9"], "swgdrug2024": ["sec:IIIB Table 1"], "philp2018": ["abstract"]}
+    },
+    {
+      "id": "court.sim.certainty",
+      "role": "judge",
+      "sample": true,
+      "question_id": "court.q.report_certainty",
+      "context": {"uz": "Qonda modda tasdiqlovchi usulda aniqlangan va miqdori noaniqlik bilan berilgan.", "ru": "Вещество в крови определено подтверждающим методом, количество дано с неопределённостью.", "en": "A drug in blood was confirmed and quantified with an uncertainty."},
+      "prompt": {"uz": "Sudya: «Natijangiz yuz foiz to‘g‘rimi?»", "ru": "Судья: «Ваш результат верен на сто процентов?»", "en": "Judge: 'Is your result one hundred per cent correct?'"},
+      "options": [
+        {"text": {"uz": "Ha, yuz foiz. Laboratoriyamiz xato qilmaydi.", "ru": "Да, на сто процентов. Наша лаборатория не ошибается.", "en": "Yes, one hundred per cent. Our laboratory does not make mistakes."},
+         "scores": {"accuracy": 0, "sources": 0, "limitations": 0, "impartiality": 1},
+         "feedback": {"uz": "Har qanday laboratoriya testining xatolik darajasi noldan katta; «yuz foiz» degan bayonot ilmiy himoyalanmaydi [court_pcast2016].", "ru": "У любого лабораторного теста частота ошибок больше нуля; утверждение «на сто процентов» научно не защитимо [court_pcast2016].", "en": "Every laboratory test has a non-zero error rate; '100 per cent' is not scientifically defensible [court_pcast2016]."}},
+        {"text": {"uz": "Hech bir test yuz foiz emas. Natija validatsiyalangan usulda, nazoratlar qoniqarli bo‘lgan seriyada olingan; miqdor noaniqlik oralig‘i bilan berilgan — buni tushuntirib beraman.", "ru": "Ни один тест не верен на сто процентов. Результат получен валидированным методом в серии с удовлетворительными контролями; количество дано с интервалом неопределённости — могу пояснить.", "en": "No test is one hundred per cent. The result came from a validated method in a batch with acceptable controls; the amount is given with an uncertainty interval — I can explain it."},
+         "scores": {"accuracy": 2, "sources": 2, "limitations": 2, "impartiality": 2},
+         "feedback": {"uz": "Kuchli javob: ishonchlilik asoslari va noaniqlik ochiq aytildi [court_pcast2016, court_ilac_g19_2022].", "ru": "Сильный ответ: открыто названы основания надёжности и неопределённость [court_pcast2016, court_ilac_g19_2022].", "en": "Strong answer: the basis for reliability and the uncertainty are stated openly [court_pcast2016, court_ilac_g19_2022]."}},
+        {"text": {"uz": "Ilmiy ishonchning oqilona darajasida to‘g‘ri.", "ru": "Верен с разумной степенью научной уверенности.", "en": "Correct to a reasonable degree of scientific certainty."},
+         "scores": {"accuracy": 1, "sources": 0, "limitations": 0, "impartiality": 1},
+         "feedback": {"uz": "Bu ibora ilmda umumqabul qilingan ma’noga ega emas va ishonchni oshirib ko‘rsatishi mumkin [court_pcast2016].", "ru": "У этого выражения нет общепринятого научного смысла, и оно может преувеличивать уверенность [court_pcast2016].", "en": "The phrase has no generally accepted scientific meaning and may overstate certainty [court_pcast2016]."}}
+      ],
+      "citations": ["court_pcast2016", "court_ilac_g19_2022"],
+      "locators": {"court_pcast2016": ["pp:29-30"], "court_ilac_g19_2022": ["sec:4.7.7.2", "sec:4.9"]}
+    },
+    {
+      "id": "court.sim.redistribution",
+      "role": "defense",
+      "question_id": "court.q.interp_redistribution",
+      "context": {"uz": "Murda yurak qonida dori konsentratsiyasi yuqori; son qoni olinmagan.", "ru": "В крови из сердца трупа высокая концентрация лекарства; бедренная кровь не взята.", "en": "A high drug concentration was found in postmortem heart blood; no femoral blood was taken."},
+      "prompt": {"uz": "Himoyachi: «Bu raqam o‘limdan keyingi qayta taqsimlanish natijasi bo‘lishi mumkin emasmi?»", "ru": "Защитник: «Не может ли эта цифра быть результатом посмертного перераспределения?»", "en": "Defence: 'Couldn't this figure be the result of postmortem redistribution?'"},
+      "options": [
+        {"text": {"uz": "Yo‘q, bu mumkin emas.", "ru": "Нет, это невозможно.", "en": "No, that is impossible."},
+         "scores": {"accuracy": 0, "sources": 0, "limitations": 0, "impartiality": 0},
+         "feedback": {"uz": "Markaziy tomirlarda konsentratsiya odatda yuqori; bu ehtimolni rad etish ilmiy asossiz [pounder1990].", "ru": "В центральных сосудах концентрация обычно выше; отвергать эту возможность научно необоснованно [pounder1990].", "en": "Central vessels usually show higher concentrations; dismissing the possibility is unscientific [pounder1990]."}},
+        {"text": {"uz": "Ha, bu mumkin. Yurak qoni markaziy namuna, son qoni yo‘q — shuning uchun talqinim cheklangan va ma’lumotnoma qiymatlari bilan to‘g‘ridan-to‘g‘ri solishtirmayman.", "ru": "Да, это возможно. Кровь из сердца — центральный образец, бедренной нет — поэтому моя интерпретация ограничена, и я не сравниваю напрямую со справочными значениями.", "en": "Yes, it is possible. Heart blood is a central sample and no femoral blood exists, so my interpretation is limited and I do not compare directly with reference values."},
+         "scores": {"accuracy": 2, "sources": 2, "limitations": 2, "impartiality": 2},
+         "feedback": {"uz": "Kuchli javob: olish joyining ta’siri va cheklov ochiq aytildi [pounder1990, pelissier2003].", "ru": "Сильный ответ: открыто названы влияние места отбора и ограничение [pounder1990, pelissier2003].", "en": "Strong answer: the effect of the sampling site and the limitation are stated openly [pounder1990, pelissier2003]."}},
+        {"text": {"uz": "Ha, demak natija ahamiyatsiz.", "ru": "Да, значит результат не имеет значения.", "en": "Yes, so the result is meaningless."},
+         "scores": {"accuracy": 1, "sources": 0, "limitations": 1, "impartiality": 0},
+         "feedback": {"uz": "Natija o‘lchangan qiymat sifatida haqiqiy; faqat talqin cheklangan. Bir tomonga og‘ish xolislikka zid [court_ilac_g19_2022].", "ru": "Результат как измеренное значение действителен; ограничена лишь интерпретация. Уклон в сторону одной стороны противоречит беспристрастности [court_ilac_g19_2022].", "en": "The measured value stands; only its interpretation is limited. Leaning to one side breaches impartiality [court_ilac_g19_2022]."}}
+      ],
+      "citations": ["pounder1990", "pelissier2003", "court_ilac_g19_2022"],
+      "locators": {"pounder1990": ["abstract"], "pelissier2003": ["abstract"], "court_ilac_g19_2022": ["sec:2.12"]}
+    },
+    {
+      "id": "court.sim.legal_question",
+      "role": "defense",
+      "question_id": "court.q.report_legal_question",
+      "context": {"uz": "Etanol konsentratsiyasi aniqlangan.", "ru": "Определена концентрация этанола.", "en": "An ethanol concentration was measured."},
+      "prompt": {"uz": "Himoyachi: «Sizningcha, mening himoyalanuvchim aybdormi?»", "ru": "Защитник: «По-вашему, мой подзащитный виновен?»", "en": "Defence: 'In your view, is my client guilty?'"},
+      "options": [
+        {"text": {"uz": "Natijalarga qaraganda, ha.", "ru": "Судя по результатам, да.", "en": "Judging by the results, yes."},
+         "scores": {"accuracy": 0, "sources": 0, "limitations": 0, "impartiality": 0},
+         "feedback": {"uz": "Aybdorlik — huquqiy masala; xulosani boshqa dalillar bilan birga baholash sud vakolatida (O‘zbekiston JPK) [court_uz_cpc].", "ru": "Виновность — правовой вопрос; оценка заключения вместе с другими доказательствами — компетенция суда (УПК Узбекистана) [court_uz_cpc].", "en": "Guilt is a legal matter; weighing the report with other evidence is for the court (Uzbekistan CPC) [court_uz_cpc]."}},
+        {"text": {"uz": "Bu huquqiy savol va mening vakolatimdan tashqarida. Men faqat qaysi namunada, qanday usulda, qanday konsentratsiya noaniqlik bilan aniqlanganini va uning ilmiy cheklovlarini ayta olaman.", "ru": "Это правовой вопрос вне моей компетенции. Я могу сказать лишь, в каком образце, каким методом и какая концентрация определена с неопределённостью, и о научных ограничениях.", "en": "That is a legal question outside my competence. I can state in which specimen, by which method and at what concentration (with uncertainty) it was measured, and its scientific limitations."},
+         "scores": {"accuracy": 2, "sources": 2, "limitations": 2, "impartiality": 2},
+         "feedback": {"uz": "Kuchli javob: vakolat chegarasi saqlandi va ilmiy natija yashirilmadi [court_enfsi2015].", "ru": "Сильный ответ: соблюдены пределы компетенции, научный результат не скрыт [court_enfsi2015].", "en": "Strong answer: competence limits are respected and the scientific result is not withheld [court_enfsi2015]."}},
+        {"text": {"uz": "Javob bermayman.", "ru": "Отвечать не буду.", "en": "I will not answer."},
+         "scores": {"accuracy": 1, "sources": 0, "limitations": 0, "impartiality": 1},
+         "feedback": {"uz": "Sababini aytish va o‘z sohangizdagi ma’lumotni taklif qilish kerak; ekspert ko‘rsatma berish va xulosani tushuntirishga majbur (O‘zbekiston JPK) [court_uz_cpc].", "ru": "Нужно объяснить причину и предложить сведения в своей области; эксперт обязан давать показания и разъяснять заключение (УПК Узбекистана) [court_uz_cpc].", "en": "Give the reason and offer what lies in your field; the expert must testify and explain the report (Uzbekistan CPC) [court_uz_cpc]."}}
+      ],
+      "citations": ["court_uz_cpc", "court_enfsi2015"],
+      "locators": {"court_uz_cpc": ["art:68:2", "art:187:1"], "court_enfsi2015": ["sec:1.3"]}
+    },
+    {
+      "id": "court.sim.neoformation",
+      "role": "prosecutor",
+      "question_id": "court.q.interp_ethanol_neoformation",
+      "context": {"uz": "Chirish belgilari bor jasad qonida etanol aniqlangan; boshqa namunalar yo‘q.", "ru": "В крови тела с признаками гниения обнаружен этанол; других образцов нет.", "en": "Ethanol was found in blood from a decomposed body; no other specimens exist."},
+      "prompt": {"uz": "Prokuror: «Demak, marhum o‘limidan oldin ichgan, shundaymi?»", "ru": "Прокурор: «Значит, покойный пил перед смертью, так?»", "en": "Prosecutor: 'So the deceased was drinking before death, right?'"},
+      "options": [
+        {"text": {"uz": "Ha, etanol topildi — demak ichgan.", "ru": "Да, этанол найден — значит пил.", "en": "Yes, ethanol was found — so he drank."},
+         "scores": {"accuracy": 0, "sources": 0, "limitations": 0, "impartiality": 0},
+         "feedback": {"uz": "O‘limdan keyin mikrobial bijg‘ish etanol hosil qilishi mumkin [boumba2008].", "ru": "После смерти микробное брожение может образовать этанол [boumba2008].", "en": "Microbial fermentation can produce ethanol after death [boumba2008]."}},
+        {"text": {"uz": "Faqat shu namuna bo‘yicha buni aniqlay olmayman: chirish paytida etanol hosil bo‘lishi mumkin. Ajratish uchun muqobil namunalar yoki markerlar kerak edi; ular yo‘qligi xulosamni cheklaydi.", "ru": "По одному этому образцу установить не могу: при гниении этанол может образоваться. Для разграничения нужны альтернативные образцы или маркеры; их отсутствие ограничивает мой вывод.", "en": "From this sample alone I cannot tell: ethanol can form during decomposition. Alternative specimens or markers would be needed; their absence limits my conclusion."},
+         "scores": {"accuracy": 2, "sources": 2, "limitations": 2, "impartiality": 2},
+         "feedback": {"uz": "Kuchli javob: muqobil izoh va cheklov aytildi [boumba2008, lin2020].", "ru": "Сильный ответ: названы альтернативное объяснение и ограничение [boumba2008, lin2020].", "en": "Strong answer: the alternative explanation and the limitation are stated [boumba2008, lin2020]."}},
+        {"text": {"uz": "Yo‘q, bu albatta chirish natijasi.", "ru": "Нет, это наверняка результат гниения.", "en": "No, it is definitely from decomposition."},
+         "scores": {"accuracy": 0, "sources": 1, "limitations": 0, "impartiality": 0},
+         "feedback": {"uz": "Teskari tomonga qat’iy xulosa ham asossiz; bitta qon namunasi ikkalasini ham isbotlamaydi [kugelberg2007].", "ru": "Категорический вывод в обратную сторону тоже необоснован; один образец крови не доказывает ни того, ни другого [kugelberg2007].", "en": "A firm conclusion the other way is also unfounded; one blood sample proves neither [kugelberg2007]."}}
+      ],
+      "citations": ["boumba2008", "lin2020", "kugelberg2007"],
+      "locators": {"boumba2008": ["abstract"], "lin2020": ["abstract"], "kugelberg2007": ["abstract"]}
+    },
+    {
+      "id": "court.sim.other_expert",
+      "role": "expert",
+      "question_id": "court.q.hypo_other_expert",
+      "context": {"uz": "Takroriy ekspertizani o‘tkazgan ekspert boshqa usulda pastroq konsentratsiya olgan.", "ru": "Эксперт повторной экспертизы получил другим методом более низкую концентрацию.", "en": "The expert of a repeat examination obtained a lower concentration with another method."},
+      "prompt": {"uz": "Boshqa ekspert: «Mening natijam pastroq. Sizniki xato emasmi?»", "ru": "Другой эксперт: «Мой результат ниже. Разве ваш не ошибочен?»", "en": "Other expert: 'My result is lower. Isn't yours wrong?'"},
+      "options": [
+        {"text": {"uz": "Mening usulim yaxshiroq, sizniki xato.", "ru": "Мой метод лучше, ваш ошибочен.", "en": "My method is better; yours is wrong."},
+         "scores": {"accuracy": 0, "sources": 0, "limitations": 0, "impartiality": 0},
+         "feedback": {"uz": "Kelishmovchilik ilmiy tahlil qilinadi, shaxsiy baho emas; yangi ma’lumot xolis ko‘rib chiqiladi [court_dror2020].", "ru": "Расхождение разбирают научно, а не личной оценкой; новые данные рассматривают беспристрастно [court_dror2020].", "en": "Disagreement is analysed scientifically, not personally; new information is considered impartially [court_dror2020]."}},
+        {"text": {"uz": "Keling, solishtiramiz: namuna, saqlash vaqti, usul, LOD/LOQ, kalibrlash va noaniqlik. Farq barqarorlik yoki usul farqidan bo‘lishi mumkin; agar xato menda bo‘lsa, uni tan olaman va tuzataman.", "ru": "Давайте сравним: образец, срок хранения, метод, LOD/LOQ, калибровку и неопределённость. Разница может быть из-за стабильности или метода; если ошибка моя — признаю и исправлю.", "en": "Let us compare: specimen, storage time, method, LOD/LOQ, calibration and uncertainty. The difference may come from stability or method; if the error is mine, I will acknowledge and correct it."},
+         "scores": {"accuracy": 2, "sources": 2, "limitations": 2, "impartiality": 2},
+         "feedback": {"uz": "Kuchli javob: ilmiy solishtirish va o‘z xatosini tuzatishga tayyorlik [court_ilac_g19_2022, peters2007stab].", "ru": "Сильный ответ: научное сравнение и готовность исправить свою ошибку [court_ilac_g19_2022, peters2007stab].", "en": "Strong answer: scientific comparison and readiness to correct one's own error [court_ilac_g19_2022, peters2007stab]."}},
+        {"text": {"uz": "Unda men xulosamdan voz kechaman.", "ru": "Тогда я отказываюсь от своего вывода.", "en": "Then I withdraw my conclusion."},
+         "scores": {"accuracy": 1, "sources": 0, "limitations": 1, "impartiality": 1},
+         "feedback": {"uz": "Yangi dalilsiz voz kechish ham ilmiy emas; avval farq sababini tahlil qiling [court_ilac_g19_2022].", "ru": "Отказ без новых данных тоже ненаучен; сначала разберите причину расхождения [court_ilac_g19_2022].", "en": "Withdrawing without new evidence is not scientific either; analyse the cause of the difference first [court_ilac_g19_2022]."}}
+      ],
+      "citations": ["court_dror2020", "court_ilac_g19_2022", "peters2007stab"],
+      "locators": {"court_dror2020": ["abstract"], "court_ilac_g19_2022": ["sec:2.14", "sec:4.8.1"], "peters2007stab": ["abstract"]}
+    },
+    {
+      "id": "court.sim.not_detected",
+      "role": "defense",
+      "question_id": "court.q.method_lod",
+      "context": {"uz": "Siydikda modda aniqlanmadi; namuna voqeadan bir necha kun o‘tib olingan.", "ru": "Вещество в моче не обнаружено; образец взят через несколько дней после события.", "en": "The substance was not detected in urine; the sample was taken several days after the event."},
+      "prompt": {"uz": "Himoyachi: «Demak, himoyalanuvchim hech narsa iste’mol qilmagan?»", "ru": "Защитник: «Значит, мой подзащитный ничего не употреблял?»", "en": "Defence: 'So my client took nothing?'"},
+      "options": [
+        {"text": {"uz": "Ha, natija manfiy — demak iste’mol qilmagan.", "ru": "Да, результат отрицательный — значит не употреблял.", "en": "Yes, the result is negative — so he took nothing."},
+         "scores": {"accuracy": 0, "sources": 0, "limitations": 0, "impartiality": 0},
+         "feedback": {"uz": "Manfiy natija «aniqlash chegarasidan past» degani; u iste’mol qilinmaganini isbotlamaydi [swgdrug2024, court_armbruster2008].", "ru": "Отрицательный результат означает «ниже предела обнаружения»; он не доказывает отсутствие употребления [swgdrug2024, court_armbruster2008].", "en": "A negative result means 'below the detection limit'; it does not prove non-use [swgdrug2024, court_armbruster2008]."}},
+        {"text": {"uz": "Modda shu usulning aniqlash chegarasidan yuqori miqdorda topilmadi. Namuna kech olingani sababli modda chiqib ketgan bo‘lishi mumkin; shuning uchun iste’mol bo‘lgan-bo‘lmaganini bu natija bo‘yicha ayta olmayman.", "ru": "Вещество не найдено выше предела обнаружения метода. Образец взят поздно, вещество могло вывестись; поэтому по этому результату не могу сказать, было ли употребление.", "en": "The substance was not found above the method's detection limit. The sample was late, so it may have been eliminated; I therefore cannot say from this result whether it was taken."},
+         "scores": {"accuracy": 2, "sources": 2, "limitations": 2, "impartiality": 2},
+         "feedback": {"uz": "Kuchli javob: natija va uning chegarasi aniq ajratildi [court_armbruster2008].", "ru": "Сильный ответ: результат и его предел чётко разграничены [court_armbruster2008].", "en": "Strong answer: the result and its limit are clearly separated [court_armbruster2008]."}},
+        {"text": {"uz": "Natija manfiy, lekin u baribir iste’mol qilgan bo‘lishi kerak.", "ru": "Результат отрицательный, но он всё равно наверняка употреблял.", "en": "The result is negative, but he must have taken it anyway."},
+         "scores": {"accuracy": 0, "sources": 0, "limitations": 1, "impartiality": 0},
+         "feedback": {"uz": "Bu dalilsiz taxmin va bir tomonga og‘ish; xolislik buziladi [court_ilac_g19_2022].", "ru": "Это предположение без данных и уклон в одну сторону; беспристрастность нарушена [court_ilac_g19_2022].", "en": "That is an unsupported assumption favouring one side; impartiality is breached [court_ilac_g19_2022]."}}
+      ],
+      "citations": ["swgdrug2024", "court_armbruster2008", "court_ilac_g19_2022"],
+      "locators": {"swgdrug2024": ["sec:IIIB.3.3.4"], "court_armbruster2008": ["abstract"], "court_ilac_g19_2022": ["sec:2.12"]}
+    },
+    {
+      "id": "court.sim.pressure",
+      "role": "judge",
+      "question_id": "court.q.comm_dont_know",
+      "context": {"uz": "Sizdan o‘lim vaqtini aniqlash so‘ralmoqda; siz sud-kimyogarsiz.", "ru": "Вас спрашивают о времени смерти; вы судебный химик.", "en": "You are asked about the time of death; you are a forensic chemist."},
+      "prompt": {"uz": "Sudya: «Siz ekspertsiz. O‘lim qachon sodir bo‘lgan?»", "ru": "Судья: «Вы эксперт. Когда наступила смерть?»", "en": "Judge: 'You are the expert. When did death occur?'"},
+      "options": [
+        {"text": {"uz": "Tajribamga ko‘ra, taxminan ikki kun oldin.", "ru": "По моему опыту, примерно два дня назад.", "en": "From experience, about two days earlier."},
+         "scores": {"accuracy": 0, "sources": 0, "limitations": 0, "impartiality": 1},
+         "feedback": {"uz": "Ixtisoslikdan tashqaridagi savolga «tajriba» bilan javob berish noto‘g‘ri; ekspert o‘z sohasidan tashqarida xulosa bermaydi [court_enfsi2015].", "ru": "Отвечать «по опыту» на вопрос вне специальности неверно; эксперт не даёт выводов вне своей области [court_enfsi2015].", "en": "Answering an out-of-scope question 'from experience' is wrong; experts do not report outside their area [court_enfsi2015]."}},
+        {"text": {"uz": "Bu mening ixtisosligimdan tashqarida — o‘lim vaqtini sud-tibbiyot eksperti baholaydi. Men kimyoviy natijalar va ularning cheklovlari haqida gapira olaman.", "ru": "Это вне моей специальности — время смерти оценивает судебно-медицинский эксперт. Я могу говорить о химических результатах и их ограничениях.", "en": "That is outside my specialty — time of death is for the forensic pathologist. I can speak to the chemical results and their limitations."},
+         "scores": {"accuracy": 2, "sources": 2, "limitations": 2, "impartiality": 2},
+         "feedback": {"uz": "Kuchli javob: «vakolatimdan tashqarida» deyish ilmiy halollik [court_enfsi2015, court_uz_expertise_law].", "ru": "Сильный ответ: сказать «вне моей компетенции» — научная честность [court_enfsi2015, court_uz_expertise_law].", "en": "Strong answer: saying 'outside my competence' is scientific integrity [court_enfsi2015, court_uz_expertise_law]."}},
+        {"text": {"uz": "Javob bera olmayman, chunki ma’lumot berishmadi.", "ru": "Не могу ответить, потому что мне не дали сведений.", "en": "I cannot answer because I was not given information."},
+         "scores": {"accuracy": 1, "sources": 0, "limitations": 1, "impartiality": 1},
+         "feedback": {"uz": "Asl sabab — bu savol vakolatingizdan tashqarida; sababni aniq ayting [court_enfsi2015].", "ru": "Настоящая причина — вопрос вне вашей компетенции; назовите её точно [court_enfsi2015].", "en": "The real reason is that the question is outside your competence; state that precisely [court_enfsi2015]."}}
+      ],
+      "citations": ["court_enfsi2015", "court_uz_expertise_law"],
+      "locators": {"court_enfsi2015": ["sec:1.3"], "court_uz_expertise_law": ["art:8", "art:24"]}
+    }
+  ],
+  "free_text_rubric": {
+    "sources": ["manba", "standart", "validatsiya", "hujjat", "yozuv", "nazorat", "source", "standard", "validat", "record", "control", "источник", "стандарт", "валидац", "запис", "контрол"],
+    "limitations": ["noaniqlik", "cheklov", "chegara", "lod", "loq", "mumkin", "uncertain", "limit", "may", "неопредел", "огранич", "предел", "может"],
+    "impartiality": ["muqobil", "xolis", "ikkala", "boshqa izoh", "alternativ", "impartial", "both", "other explanation", "альтернатив", "беспристраст", "другое объяснение"],
+    "overstatement": ["100", "yuz foiz", "mutlaqo", "albatta", "hech qachon", "absolutely", "certainly", "never", "always", "definitely", "абсолютно", "наверняка", "никогда", "всегда", "сто процентов"],
+    "evasion": ["javob bermayman", "aytmayman", "no comment", "won't answer", "не буду отвечать", "без комментариев"]
+  }
+}

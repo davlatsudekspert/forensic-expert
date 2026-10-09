@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../app/account.dart';
+import '../../../app/court_prep.dart';
 import '../../../app/guidelines.dart';
 import '../../../app/providers.dart';
 import '../../../app/publications.dart';
@@ -410,6 +411,12 @@ class LibraryScreen extends ConsumerWidget {
         l.guidelinesTitle,
         guidelineCount,
       ),
+      (
+        'court',
+        Icons.gavel_outlined,
+        l.courtTitle,
+        ref.watch(courtPrepProvider).value?.questions.length ?? 0,
+      ),
       // «Ekspert maqolalari»: FE_PUBLICATIONS yoki admin uchun.
       if (ref.watch(publicationsVisibleProvider))
         (
@@ -466,6 +473,7 @@ class LibraryScreen extends ConsumerWidget {
       'rapid' => Routes.knowledge(KnowledgeKind.screeningTest.name),
       'standards' => Routes.libraryStandards,
       'guidelines' => Routes.guidelines,
+      'court' => Routes.courtPrep,
       'publications' => Routes.publications,
       'research' => Routes.research,
       _ => Routes.jurisdictions,

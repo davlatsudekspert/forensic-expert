@@ -2163,6 +2163,368 @@
       "used_for": "Carboxyhaemoglobin declines under normobaric oxygen administration following a bi-compartmental rather than mono-compartmental model, and a slight rebound was observed after oxygen was stopped; extravascular CO storage cannot be estimated in routine practice.",
       "verified_via": "PubMed MCP get_article_metadata",
       "verified_on": "2026-10-09"
+    },
+    {
+      "key": "court_uz_cpc",
+      "type": "law",
+      "authors": [
+        "Republic of Uzbekistan"
+      ],
+      "title": "Criminal Procedure Code of the Republic of Uzbekistan (22.09.1994), Articles 67, 68, 76, 78, 184, 186, 187",
+      "publisher": "National Database of Legislation (lex.uz)",
+      "year": 1994,
+      "doi": null,
+      "pmid": null,
+      "url": "https://lex.uz/docs/111460",
+      "note": "Official Uzbek text: https://lex.uz/docs/111460 ; Russian text: https://lex.uz/docs/111463 (lex.uz marks some recent amendments in the Russian text as an unofficial translation). Wording as in force on the access date; check lex.uz for later amendments. Accessed 2026-10-09.",
+      "used_for": "Art. 67: an expert is a person with special knowledge needed to give a conclusion. Art. 68: expert's rights (study case materials relating to the subject of the examination; request additional materials/objects; with court permission ask questions; state conclusions on other matters relevant to the subject of the examination; make statements about incorrect interpretation of the conclusion or testimony by participants, to be entered in the record; use native language with an interpreter) and duties (self-recusal on Art. 76/78 grounds; comprehensive and complete examination; reasoned and objective written conclusion; appear when summoned; testify about the examination and answer additional questions explaining the conclusion; confidentiality; preserve objects and case materials). Art. 78: recusal for service or other dependence on a participant and for professional incompetence. Art. 184: required content of the conclusion (expert details incl. education, specialty, experience; questions; objects; methods applied; evaluation of results; reasoned answers); materials documenting course and results are retained by the institution; conclusion must justify refusal to answer questions when objects, materials or special knowledge proved insufficient. Art. 186: questioning of the expert when the conclusion is unclear or methods need clarification; only about his own conclusion and personally performed research; not before the conclusion is given. Art. 187: conclusion assessed together with other evidence for scientific soundness and procedural compliance; no predetermined probative force; disagreement must be reasoned; where experts disagree the decision-maker must justify agreeing with some and not others.",
+      "verified_via": "Official site lex.uz: Russian (docs/111463) and Uzbek (docs/111460) texts downloaded; Articles 67, 68, 76, 78, 184, 186, 187 read in full",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "key": "court_nas2009",
+      "type": "report",
+      "authors": [
+        "National Research Council, Committee on Identifying the Needs of the Forensic Sciences Community"
+      ],
+      "title": "Strengthening Forensic Science in the United States: A Path Forward",
+      "publisher": "The National Academies Press",
+      "year": 2009,
+      "doi": "10.17226/12589",
+      "pmid": null,
+      "url": "https://nap.nationalacademies.org/catalog/12589",
+      "note": "US-focused policy report. Full text read from the NCJRS copy (ojp.gov/pdffiles1/nij/grants/228091.pdf).",
+      "used_for": "Summary recommendations: Rec. 2 standard terminology for reporting and testifying and model laboratory reports; Rec. 3 research on accuracy, reliability and validity; Rec. 4 independence of public forensic laboratories from law-enforcement/prosecutorial administrative control; Rec. 5 research on human observer (contextual) bias and SOPs to minimise bias; Rec. 7 mandatory laboratory accreditation and individual certification (incl. proficiency testing, continuing education, code of ethics), considering ISO standards; Rec. 8 routine QA/QC procedures to identify mistakes, fraud and bias.",
+      "verified_via": "Crossref API (api.crossref.org/works/10.17226/12589) + full text (NCJRS 228091 PDF) Summary recommendations read",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "key": "court_pcast2016",
+      "type": "report",
+      "authors": [
+        "President's Council of Advisors on Science and Technology (PCAST)"
+      ],
+      "title": "Report to the President. Forensic Science in Criminal Courts: Ensuring Scientific Validity of Feature-Comparison Methods",
+      "publisher": "Executive Office of the President",
+      "year": 2016,
+      "doi": null,
+      "pmid": null,
+      "url": "https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/PCAST/pcast_forensic_science_report_final.pdf",
+      "note": "September 2016. Scope: feature-comparison methods (not analytical chemistry); cited only for general principles of scientifically valid testimony.",
+      "used_for": "Foundational validity and validity as applied; statements claiming or implying greater certainty than demonstrated by empirical evidence are scientifically invalid; all laboratory tests have non-zero error rates; '100 percent certain' / 'zero error rate' testimony not scientifically defensible; 'reasonable degree of scientific certainty' has no generally accepted meaning in science.",
+      "verified_via": "Official PDF (obamawhitehouse.archives.gov) downloaded; executive summary and chapter on testimony read",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "key": "court_ilac_g19_2022",
+      "type": "guideline",
+      "authors": [
+        "International Laboratory Accreditation Cooperation (ILAC)"
+      ],
+      "title": "ILAC-G19:06/2022 Modules in a Forensic Science Process",
+      "publisher": "ILAC",
+      "year": 2022,
+      "doi": null,
+      "pmid": null,
+      "url": "https://ilac.org/publications-and-resources/ilac-guidance-series/",
+      "note": "Free official PDF from the ILAC guidance series page. Guidance for applying ISO/IEC 17025 and ISO/IEC 17020 to the forensic process.",
+      "used_for": "2.12 impartiality (alternative hypotheses, background information, balanced opinion scales); 3.x competence shown by objective assessment, qualifications/training/experience do not guarantee competence, training records, training in presenting evidence in court; QC: positive/negative controls, critical findings checks, peer review, proficiency testing/interlaboratory comparisons; validation aspects (accuracy, precision, measurement uncertainty, matrix effects, interference, LOD, LOQ, linearity, stability, specificity/selectivity, robustness, limitations of conclusions); chain-of-custody record adapted to national law; 4.7.1 background information should not compromise impartiality; 4.7.7.2 QC list and PT records; 4.8.1 interpretation based on robust studies, alternative hypotheses, no definitive conclusions from presumptive tests; 4.8.2 peer review; 4.8.3 competence before interpreting; 4.9 report must make clear which parts are background, results and interpretations/opinions; output not misleading; conclusions properly qualified; oral reports recorded and provisional results caveated. Annex B lists ISO/IEC 17025:2017.",
+      "verified_via": "Official ILAC PDF downloaded (ilac.org ddownload 124605) and text read (pdftotext)",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "key": "court_iso17025_2017",
+      "type": "standard",
+      "authors": [
+        "ISO/IEC"
+      ],
+      "title": "ISO/IEC 17025:2017 General requirements for the competence of testing and calibration laboratories",
+      "publisher": "International Organization for Standardization / International Electrotechnical Commission",
+      "year": 2017,
+      "doi": null,
+      "pmid": null,
+      "url": "https://www.iso.org/standard/66912.html",
+      "note": "Cited as a standard only; normative text not reproduced. iso.org refused automated access (HTTP 403); number, title and edition confirmed in ILAC-G19:06/2022 Annex B and Annex C.",
+      "used_for": "Existence and scope: the international competence standard for testing and calibration laboratories, the basis of laboratory accreditation referenced by ILAC-G19 for forensic units.",
+      "verified_via": "ILAC-G19:06/2022 official PDF (Annex B bibliography and Annex C correlation table)",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "key": "court_enfsi2015",
+      "type": "guideline",
+      "authors": [
+        "European Network of Forensic Science Institutes (ENFSI)"
+      ],
+      "title": "ENFSI Guideline for Evaluative Reporting in Forensic Science (approved version 3.0)",
+      "publisher": "ENFSI",
+      "year": 2015,
+      "doi": null,
+      "pmid": null,
+      "url": "https://enfsi.eu/wp-content/uploads/2016/09/m1_guideline.pdf",
+      "note": "Approved version 3.0; foreword dated 8 March 2015 (STEOFRAE project).",
+      "used_for": "Guidance Note 1: Balance (at least one pair of propositions; if no alternative can be formulated the value of the findings cannot be assessed), Logic (probability of the findings given the propositions, not of the propositions given the findings; no transposed conditional), Robustness (capable of sustaining scrutiny and cross-examination), Transparency (demonstrable process; understandable to a wide audience); hierarchy of propositions; likelihood ratio.",
+      "verified_via": "Official PDF (enfsi.eu) downloaded and Guidance Note 1 read",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "key": "court_jcgm100_2008",
+      "type": "guideline",
+      "authors": [
+        "Joint Committee for Guides in Metrology (JCGM)"
+      ],
+      "title": "JCGM 100:2008 Evaluation of measurement data — Guide to the expression of uncertainty in measurement (GUM 1995 with minor corrections)",
+      "publisher": "BIPM",
+      "year": 2008,
+      "doi": "10.59161/JCGM100-2008E",
+      "pmid": null,
+      "url": "https://www.bipm.org/en/doi/10.59161/JCGM100-2008E",
+      "note": "Free official document from BIPM.",
+      "used_for": "General rules for evaluating and expressing uncertainty in measurement.",
+      "verified_via": "Official BIPM page (title, abstract and DOI read)",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "key": "court_quam2012",
+      "type": "guideline",
+      "authors": [
+        "EURACHEM/CITAC Measurement Uncertainty Working Group"
+      ],
+      "title": "Eurachem/CITAC Guide: Quantifying Uncertainty in Analytical Measurement, 3rd edition",
+      "publisher": "Eurachem",
+      "year": 2012,
+      "doi": null,
+      "pmid": null,
+      "url": "https://www.eurachem.org/index.php/publications/guides/quam",
+      "note": "Produced by the joint EURACHEM/CITAC Measurement Uncertainty Working Group; based on the ISO GUM.",
+      "used_for": "Application of the GUM to analytical chemistry; uncertainty estimation integrated with existing quality-assurance data (validation, QC).",
+      "verified_via": "Official Eurachem guide page (title, edition, year and scope statement read)",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "key": "court_dror2020",
+      "type": "journal_article",
+      "authors": [
+        "Dror IE"
+      ],
+      "title": "Cognitive and Human Factors in Expert Decision Making: Six Fallacies and the Eight Sources of Bias",
+      "journal": "Analytical Chemistry",
+      "year": 2020,
+      "volume": "92",
+      "issue": "12",
+      "pages": "7998-8004",
+      "doi": "10.1021/acs.analchem.0c00704",
+      "pmid": "32508089",
+      "used_for": "Fallacies: bias is an ethical issue, only 'bad apples', experts immune, technology eliminates bias, blind spot, illusion of control; sources of bias incl. contextual information, reference materials, base rates, organizational factors; bias can affect data, results and conclusions; measures to minimise bias.",
+      "verified_via": "PubMed MCP lookup_article_by_citation + get_article_metadata",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "key": "court_cook1998",
+      "type": "journal_article",
+      "authors": [
+        "Cook R",
+        "Evett IW",
+        "Jackson G",
+        "Jones PJ",
+        "Lambert JA"
+      ],
+      "title": "A hierarchy of propositions: deciding which level to address in casework",
+      "journal": "Science & Justice",
+      "year": 1998,
+      "volume": "38",
+      "issue": "4",
+      "pages": "231-239",
+      "doi": "10.1016/S1355-0306(98)72117-3",
+      "pmid": null,
+      "used_for": "Hierarchy of propositions (source, activity, offence levels) and choosing the level a scientist can address.",
+      "verified_via": "Crossref API (bibliographic query; DOI, authors, volume, pages)",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "key": "court_thompson1987",
+      "type": "journal_article",
+      "authors": [
+        "Thompson WC",
+        "Schumann EL"
+      ],
+      "title": "Interpretation of statistical evidence in criminal trials: The prosecutor's fallacy and the defense attorney's fallacy",
+      "journal": "Law and Human Behavior",
+      "year": 1987,
+      "volume": "11",
+      "issue": "3",
+      "pages": "167-187",
+      "doi": "10.1007/BF01044641",
+      "pmid": null,
+      "used_for": "Prosecutor's fallacy and defense attorney's fallacy as misinterpretations of statistical forensic evidence.",
+      "verified_via": "Crossref API (api.crossref.org/works/10.1007/BF01044641)",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "key": "court_druid1997",
+      "type": "journal_article",
+      "authors": [
+        "Druid H",
+        "Holmgren P"
+      ],
+      "title": "A compilation of fatal and control concentrations of drugs in postmortem femoral blood",
+      "journal": "Journal of Forensic Sciences",
+      "year": 1997,
+      "volume": "42",
+      "issue": "1",
+      "pages": "79-87",
+      "doi": "10.1520/JFS14071J",
+      "pmid": "8988577",
+      "used_for": "Femoral blood concentrations compiled for single-substance intoxications, multi-substance intoxications and other causes of death (control group); factors influencing postmortem concentrations.",
+      "verified_via": "PubMed MCP get_article_metadata (PMID) + Crossref API (DOI)",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "key": "court_ketola2019",
+      "type": "journal_article",
+      "authors": [
+        "Ketola RA",
+        "Ojanperä I"
+      ],
+      "title": "Summary statistics for drug concentrations in post-mortem femoral blood representing all causes of death",
+      "journal": "Drug Testing and Analysis",
+      "year": 2019,
+      "volume": "11",
+      "issue": "9",
+      "pages": "1326-1337",
+      "doi": "10.1002/dta.2655",
+      "pmid": "31128576",
+      "used_for": "Concentration distributions of drugs in postmortem femoral blood from all causes of death; medians indicate 'normal' postmortem levels, upper percentiles indicate possible overdose levels — distributions, not single cut-offs.",
+      "verified_via": "PubMed MCP lookup_article_by_citation + get_article_metadata",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "key": "court_armbruster2008",
+      "type": "journal_article",
+      "authors": [
+        "Armbruster DA",
+        "Pry T"
+      ],
+      "title": "Limit of blank, limit of detection and limit of quantitation",
+      "journal": "Clinical Biochemist Reviews",
+      "year": 2008,
+      "volume": "29 Suppl 1",
+      "pages": "S49-S52",
+      "doi": null,
+      "pmid": "18852857",
+      "used_for": "Definitions of LoB, LoD and LoQ; LoQ is where predefined bias and imprecision goals are met and may be much higher than LoD.",
+      "verified_via": "PubMed MCP lookup_article_by_citation + get_article_metadata",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "key": "court_gullberg2012",
+      "type": "journal_article",
+      "authors": [
+        "Gullberg RG"
+      ],
+      "title": "Estimating the measurement uncertainty in forensic blood alcohol analysis",
+      "journal": "Journal of Analytical Toxicology",
+      "year": 2012,
+      "volume": "36",
+      "issue": "3",
+      "pages": "153-161",
+      "doi": "10.1093/jat/bks012",
+      "pmid": "22417830",
+      "used_for": "Bottom-up uncertainty budget: specify the measurand, identify, quantify and combine components, report; reporting uncertainty part of fitness for purpose.",
+      "verified_via": "PubMed MCP lookup_article_by_citation + get_article_metadata",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "key": "court_gill_ely2024",
+      "type": "journal_article",
+      "authors": [
+        "Gill JR",
+        "Ely SF"
+      ],
+      "title": "Forensic Pathologist Testimony, Part 1: Common Questions and Considerations",
+      "journal": "Academic Forensic Pathology",
+      "year": 2024,
+      "volume": "15",
+      "issue": "1",
+      "pages": "28-41",
+      "doi": "10.1177/19253621241297350",
+      "pmid": "39544453",
+      "used_for": "Expert's role: lay out concepts clearly, methodically and objectively in plain language and explain how the evidence supports conclusions and/or presents limitations; common court questions reviewed without prescribing answers (abstract).",
+      "verified_via": "PubMed MCP search_articles + get_article_metadata (abstract read; PMC full text not returned)",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "key": "court_ely_gill2024",
+      "type": "journal_article",
+      "authors": [
+        "Ely SF",
+        "Gill JR"
+      ],
+      "title": "Forensic Pathologist Testimony, Part 2: Special Issues and Considerations",
+      "journal": "Academic Forensic Pathology",
+      "year": 2024,
+      "volume": "15",
+      "issue": "2",
+      "pages": "68-84",
+      "doi": "10.1177/19253621241297295",
+      "pmid": "39544452",
+      "used_for": "Differences between possibilities, probabilities and 'reasonable degree of medical certainty'; cognitive bias, objections and attempts at witness impeachment (abstract).",
+      "verified_via": "PubMed MCP search_articles + get_article_metadata (abstract read)",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "key": "court_uz_expertise_law",
+      "type": "law",
+      "authors": [
+        "Republic of Uzbekistan"
+      ],
+      "title": "Закон Республики Узбекистан «О судебной экспертизе» № ЗРУ-249 от 01.06.2010 (Law on Forensic Expertise), Articles 4, 7, 8, 15, 16, 24",
+      "publisher": "National Database of Legislation (lex.uz)",
+      "year": 2010,
+      "doi": null,
+      "pmid": null,
+      "url": "https://lex.uz/docs/1633100",
+      "note": "Russian text on lex.uz (the Uzbek-language page was not located). Wording as in force on 2026-10-09, including 2024 amendments (ZRU-945, ZRU-1003). Accessed 2026-10-09.",
+      "used_for": "Art. 4 principles (legality, human rights, independence, objectivity, comprehensiveness and completeness). Art. 7 independence from the appointing body, the parties and other interested persons; conclusion based on own research and special knowledge; pressure to obtain a conclusion in anyone's favour is not allowed. Art. 8 objective, strictly scientific research within the specialty, comprehensive and complete; conclusion must allow verification against generally accepted scientific data. Art. 15 rights (study case materials relating to the subject; request additional materials/objects; attend investigative actions with permission; take part in examining evidence in court; state conclusions on other relevant matters; statements on misinterpretation of the conclusion; native language; appeal). Art. 16 duties (self-recusal; comprehensive and complete examination; reasoned objective conclusion; appear; testify and answer questions explaining the conclusion; confidentiality; preserve objects; comply with requirements) and prohibitions (no personal contacts with participants that question impartiality; no independent collection of materials; no disclosure of results except to the appointing body). Art. 24 reasoned act on impossibility of giving a conclusion when questions exceed special knowledge, objects are unsuitable/insufficient, or the state of science does not allow an answer.",
+      "verified_via": "Official site lex.uz (docs/1633100) downloaded; Articles 4, 7, 8, 15, 16, 24 read in full",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "key": "court_yuldashev_toks2025",
+      "type": "book",
+      "authors": [
+        "Yuldashev ZA",
+        "Umarova GQ"
+      ],
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua",
+      "publisher": "Toshkent farmatsevtika instituti, Toksikologik kimyo kafedrasi",
+      "year": 2025,
+      "doi": null,
+      "pmid": null,
+      "url": null,
+      "note": "Teaching material used with the author's written permission (2026-10-09; docs/DECISIONS.md): muallif ruxsati bilan, barcha uchun bepul. Page locators are PDF pages of the copy provided by the owner. Paraphrased, not copied.",
+      "used_for": "PDF p. 10: object groups and preservation — ethanol used as a preservative for long-distance shipping in hot weather, but forbidden when the object is to be tested for ethanol (older practice; modern guidance uses sodium fluoride). PDF p. 12 (repeated p. 21): preliminary examination plans the analysis and saves material; no conclusion may be drawn from a preliminary examination — a positive presumptive result requires the main examination; some presumptive tests are sensitive but not specific. PDF p. 47: gas-liquid chromatography for qualitative and quantitative analysis of alcohols. PDF p. 188: principle of gas chromatography (separation, qualitative and quantitative determination).",
+      "verified_via": "PDF copy provided by the owner (text extracted; passages located on the cited PDF pages)",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "key": "court_yuldashev_gmt2024",
+      "type": "book",
+      "authors": [
+        "Yuldashev ZA",
+        "Zulfikariyeva DA",
+        "Usmanaliyeva ZU",
+        "Nurmatova MI"
+      ],
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma",
+      "publisher": "Toshkent farmatsevtika instituti",
+      "year": 2024,
+      "doi": null,
+      "pmid": null,
+      "url": null,
+      "note": "Teaching material used with the author's written permission (2026-10-09; docs/DECISIONS.md): muallif ruxsati bilan, barcha uchun bepul. Page locators are PDF pages of the copy provided by the owner.",
+      "used_for": "PDF p. 4: abbreviations — TLC, GLC, HPLC, immunoenzyme assay, GC-MS, HPLC-MS, UV and IR spectrometry. PDF p. 37: heroin is currently determined by gas-liquid chromatography, GC-MS and immunological methods.",
+      "verified_via": "PDF copy provided by the owner (text extracted; passages located on the cited PDF pages)",
+      "verified_on": "2026-10-09"
     }
   ]
 }

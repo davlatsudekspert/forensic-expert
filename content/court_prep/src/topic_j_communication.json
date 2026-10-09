@@ -1,0 +1,99 @@
+{
+  "topic": {
+    "id": "court.topic.communication",
+    "order": 17,
+    "icon": "forum",
+    "title": {"uz": "Muloqot va ilmiy halollik", "ru": "Коммуникация и научная честность", "en": "Communication and scientific integrity"},
+    "summary": {"uz": "Ilmiy dalilni oddiy tilda tushuntirish, «bilmayman» deyish, o‘z xatosini tuzatish, sonlarni to‘g‘ri aytish.", "ru": "Объяснять научные данные простым языком, говорить «не знаю», исправлять свои ошибки, правильно говорить о числах.", "en": "Explaining science in plain language, saying 'I don't know', correcting your own errors, communicating numbers."}
+  },
+  "questions": [
+    {
+      "id": "court.q.comm_plain",
+      "status": "NEEDS_REVIEW",
+      "question": {"uz": "Buni mutaxassis bo‘lmaganlar tushunadigan tilda tushuntirib bera olasizmi?", "ru": "Можете объяснить это языком, понятным неспециалистам?", "en": "Can you explain this in terms non-scientists understand?"},
+      "tests": {"uz": "Ekspert ilmiy dalilni aniqligini yo‘qotmasdan sodda tilda bayon qila oladimi [court_gill_ely2024].", "ru": "Может ли эксперт изложить научные данные простым языком, не теряя точности [court_gill_ely2024].", "en": "Whether the expert can explain scientific evidence simply without losing accuracy [court_gill_ely2024]."},
+      "short_answer": {"uz": "Ha: avval nima o‘lchanganini, keyin qanday usulda, nima topilganini va bu nimani anglatmasligini aytaman. Ekspert tushunchalarni aniq, izchil va xolis, oddiy tilda bayon qilib, dalil xulosani qanday qo‘llab-quvvatlashi yoki cheklashini tushuntiradi [court_gill_ely2024]; hisobot keng auditoriyaga tushunarli bo‘lishi tavsiya etiladi [court_enfsi2015].", "ru": "Да: сначала что измерялось, затем каким методом, что найдено и чего это не означает. Эксперт излагает понятия ясно, последовательно и объективно, простым языком и объясняет, как данные поддерживают или ограничивают вывод [court_gill_ely2024]; отчёт должен быть понятен широкой аудитории [court_enfsi2015].", "en": "Yes: first what was measured, then how, what was found, and what it does not mean. The expert sets out concepts clearly, methodically and objectively in plain language and explains how the evidence supports or limits the conclusion [court_gill_ely2024]; reports should suit a wide audience [court_enfsi2015]."},
+      "prepare": {
+        "documents": [{"uz": "Asosiy atamalar uchun bir jumlalik sodda ta’riflar (masalan, skrining, tasdiqlash, LOD, noaniqlik) [court_gill_ely2024].", "ru": "Однофразовые простые определения ключевых терминов (скрининг, подтверждение, LOD, неопределённость) [court_gill_ely2024].", "en": "One-sentence plain definitions of key terms (screening, confirmation, LOD, uncertainty) [court_gill_ely2024]."}],
+        "explain": [{"uz": "Soddalashtirish ma’noni o‘zgartirmasligi kerak: natija chalg‘ituvchi bo‘lmasligi lozim [court_ilac_g19_2022].", "ru": "Упрощение не должно менять смысл: результат не должен вводить в заблуждение [court_ilac_g19_2022].", "en": "Simplifying must not change the meaning: output must not be misleading [court_ilac_g19_2022]."}],
+        "pitfalls": [{"uz": "Soddalashtirish uchun cheklov va noaniqlikni tashlab yuborish [court_ilac_g19_2022].", "ru": "Ради простоты опускать ограничения и неопределённость [court_ilac_g19_2022].", "en": "Dropping limitations and uncertainty for the sake of simplicity [court_ilac_g19_2022]."}]
+      },
+      "followups": [
+        {"q": {"uz": "Qisqasini ayting: topildimi yoki yo‘qmi?", "ru": "Короче: найдено или нет?", "en": "In short: found or not?"},
+         "a": {"uz": "Qisqa javob natija, usul va cheklovni saqlashi kerak; masalan, «tasdiqlovchi usulda aniqlandi, miqdori ... noaniqlik bilan» [court_ilac_g19_2022].", "ru": "Краткий ответ должен сохранять результат, метод и ограничение; например, «обнаружено подтверждающим методом, количество ... с неопределённостью» [court_ilac_g19_2022].", "en": "A short answer must keep result, method and limitation — e.g., 'detected by a confirmatory method, amount … with uncertainty' [court_ilac_g19_2022]."}},
+        {"q": {"uz": "Misol bilan tushuntiring.", "ru": "Объясните на примере.", "en": "Explain with an example."},
+         "a": {"uz": "Misol tanlang, lekin u ilmiy ma’noni buzmasin va ishdagi faktlar o‘rnini bosmasin [court_gill_ely2024].", "ru": "Пример уместен, если он не искажает научный смысл и не подменяет фактов дела [court_gill_ely2024].", "en": "Use an example only if it does not distort the science or substitute for case facts [court_gill_ely2024]."}}
+      ],
+      "limitations": [{"uz": "Gill va Ely sharhlari sud-tibbiyot ekspertlari uchun yozilgan; bu yerda faqat annotatsiyadagi umumiy tamoyillar ishlatildi.", "ru": "Обзоры Gill и Ely написаны для судебно-медицинских экспертов; здесь использованы только общие принципы из аннотаций.", "en": "The Gill and Ely reviews address forensic pathologists; only general principles from their abstracts are used here."}],
+      "links": [],
+      "citations": ["court_gill_ely2024", "court_enfsi2015", "court_ilac_g19_2022"],
+      "locators": {"court_gill_ely2024": ["abstract"], "court_enfsi2015": ["gn:1"], "court_ilac_g19_2022": ["sec:4.9"]}
+    },
+    {
+      "id": "court.q.comm_dont_know",
+      "status": "NEEDS_REVIEW",
+      "question": {"uz": "Bu savolga javobni bilmasangiz yoki u vakolatingizdan tashqarida bo‘lsa-chi?", "ru": "А если вы не знаете ответа или вопрос вне вашей компетенции?", "en": "What if you do not know the answer, or it is outside your competence?"},
+      "tests": {"uz": "Ekspert bilim chegarasini halol tan oladimi yoki taxminni ilmiy xulosa sifatida beradimi [court_enfsi2015].", "ru": "Честно ли эксперт признаёт границы знаний или выдаёт догадку за научный вывод [court_enfsi2015].", "en": "Whether the expert honestly admits the limits of knowledge or offers a guess as a scientific conclusion [court_enfsi2015]."},
+      "short_answer": {"uz": "«Bilmayman» yoki «bu mening ixtisosligimdan tashqarida» deb aytaman. Ekspert o‘z sohasidan tashqaridagi masalalar bo‘yicha xulosa bermaydi [court_enfsi2015]; O‘zbekistonda bilim, obyekt yoki fan holati yetmasa, asoslangan «xulosa berish mumkin emasligi» dalolatnomasi tuziladi [court_uz_expertise_law].", "ru": "Говорю «не знаю» или «это вне моей специальности». Эксперт не даёт выводов вне своей области [court_enfsi2015]; в Узбекистане при недостатке знаний, объектов или состояния науки составляется мотивированный акт о невозможности дачи заключения [court_uz_expertise_law].", "en": "I say 'I don't know' or 'this is outside my specialty'. Experts do not report outside their area [court_enfsi2015]; in Uzbekistan, when knowledge, objects or the state of science fall short, a reasoned act on the impossibility of giving a conclusion is drawn up [court_uz_expertise_law]."},
+      "prepare": {
+        "documents": [{"uz": "Vakolatingiz chegarasi: lavozim tavsifi va kompetensiya baholangan ish turlari [court_ilac_g19_2022].", "ru": "Границы вашей компетенции: описание роли и виды работ с оценённой компетентностью [court_ilac_g19_2022].", "en": "Your scope: role description and the work types for which competence was assessed [court_ilac_g19_2022]."}],
+        "explain": [{"uz": "«Bilmayman» — ilmiy halollik; asossiz taxmin ishonchlilikni pasaytiradi va hisobot chalg‘ituvchi bo‘lishi mumkin [court_ilac_g19_2022].", "ru": "«Не знаю» — научная честность; необоснованная догадка снижает надёжность и может ввести в заблуждение [court_ilac_g19_2022].", "en": "'I don't know' is scientific integrity; an unsupported guess lowers reliability and may mislead [court_ilac_g19_2022]."}],
+        "pitfalls": [{"uz": "Bosim ostida ixtisoslikdan tashqaridagi savolga «tajribam bo‘yicha» deb javob berish [court_enfsi2015].", "ru": "Под давлением отвечать на вопрос вне специальности «по опыту» [court_enfsi2015].", "en": "Under pressure, answering an out-of-scope question 'from experience' [court_enfsi2015]."}]
+      },
+      "followups": [
+        {"q": {"uz": "Siz ekspertsiz-ku, bilishingiz kerak.", "ru": "Вы же эксперт, вы должны знать.", "en": "You are the expert — you should know."},
+         "a": {"uz": "Ekspertlik sohaga chegaralangan; sohadan tashqarida so‘ralsa, bu ekspert baholash emasligi aniq aytiladi [court_enfsi2015].", "ru": "Экспертность ограничена областью; если спрашивают вне неё, ясно говорят, что это не экспертная оценка [court_enfsi2015].", "en": "Expertise is bounded; if asked outside it, make clear it is not an expert evaluation [court_enfsi2015]."}},
+        {"q": {"uz": "Kim javob bera oladi?", "ru": "Кто может ответить?", "en": "Who could answer?"},
+         "a": {"uz": "Tegishli mutaxassislikni aytishingiz mumkin; qo‘shimcha yoki kompleks ekspertiza haqida qarorni tayinlovchi organ qabul qiladi (O‘zbekiston JPK) [court_uz_cpc].", "ru": "Можно назвать нужную специальность; решение о дополнительной или комплексной экспертизе принимает назначающий орган (УПК Узбекистана) [court_uz_cpc].", "en": "You may name the relevant specialty; the appointing authority decides on further or complex examinations (Uzbekistan CPC) [court_uz_cpc]."}}
+      ],
+      "limitations": [{"uz": "Dalolatnoma shakli va tartibi mamlakat qonuniga bog‘liq; boshqa yurisdiksiyada mahalliy qonunni tekshiring.", "ru": "Форма и порядок акта зависят от закона страны; в другой юрисдикции проверьте местный закон.", "en": "The form and procedure depend on national law; check local law elsewhere."}],
+      "links": [],
+      "citations": ["court_enfsi2015", "court_uz_expertise_law", "court_ilac_g19_2022", "court_uz_cpc"],
+      "locators": {"court_enfsi2015": ["sec:1.3"], "court_uz_expertise_law": ["art:24"], "court_ilac_g19_2022": ["sec:3.3", "sec:4.9"], "court_uz_cpc": ["art:67", "art:184:5"]}
+    },
+    {
+      "id": "court.q.comm_own_error",
+      "status": "NEEDS_REVIEW",
+      "question": {"uz": "Xulosangizda xato borligi aniqlansa, nima qilasiz?", "ru": "Что вы сделаете, если в заключении обнаружится ошибка?", "en": "What do you do if an error is found in your report?"},
+      "tests": {"uz": "Ekspert o‘z xatosini oshkor qilib tuzatishga tayyormi yoki uni himoya qiladimi [court_ilac_g19_2022].", "ru": "Готов ли эксперт раскрыть и исправить свою ошибку или будет её защищать [court_ilac_g19_2022].", "en": "Whether the expert will disclose and correct an error or defend it [court_ilac_g19_2022]."},
+      "short_answer": {"uz": "Xatoni tan olaman, ta’sirini baholayman va tuzatish jarayonini boshlayman. Nomuvofiq ish tushunchasi ekspert ko‘rsatmasini ham qamraydi (masalan, moddani noto‘g‘ri identifikatsiya qilish); sud qarori muvaffaqiyatli e’tiroz qilinsa, bu ham shikoyat yoki takomillashtirish jarayonida ko‘rib chiqiladi [court_ilac_g19_2022].", "ru": "Признаю ошибку, оцениваю её влияние и запускаю процесс исправления. Понятие несоответствующей работы охватывает и показания эксперта (например, неверную идентификацию вещества); успешное оспаривание судебного решения тоже рассматривается в процессе жалоб или улучшений [court_ilac_g19_2022].", "en": "I acknowledge the error, assess its impact and start the corrective process. Non-conforming work includes expert testimony (for example, misidentifying a drug); a successfully challenged court decision is also handled through complaints or improvement processes [court_ilac_g19_2022]."},
+      "prepare": {
+        "documents": [{"uz": "Nomuvofiqlik va tuzatuvchi chora yozuvlari [court_ilac_g19_2022].", "ru": "Записи о несоответствии и корректирующем действии [court_ilac_g19_2022].", "en": "Non-conformity and corrective-action records [court_ilac_g19_2022]."}],
+        "explain": [{"uz": "Xulosa umumqabul qilingan ilmiy ma’lumotlar bo‘yicha tekshirib bo‘ladigan bo‘lishi kerak — demak, xato topilishi va tuzatilishi mumkin [court_uz_expertise_law].", "ru": "Заключение должно быть проверяемым по общепринятым научным данным — значит, ошибку можно выявить и исправить [court_uz_expertise_law].", "en": "A conclusion must be verifiable against accepted scientific data — so errors can be found and corrected [court_uz_expertise_law]."}],
+        "pitfalls": [{"uz": "Obro‘ni saqlash uchun xatoni inkor etish yoki kichraytirish — bu mumkin emas [court_ilac_g19_2022].", "ru": "Отрицать или преуменьшать ошибку ради репутации недопустимо [court_ilac_g19_2022].", "en": "Denying or minimising an error to protect reputation is not acceptable [court_ilac_g19_2022]."}]
+      },
+      "followups": [
+        {"q": {"uz": "Xato xulosani o‘zgartiradimi?", "ru": "Меняет ли ошибка вывод?", "en": "Does the error change the conclusion?"},
+         "a": {"uz": "Bu xatoning ta’sirini baholashga bog‘liq; buni ochiq tushuntiring va kerak bo‘lsa xulosani qayta ko‘rib chiqing [court_ilac_g19_2022].", "ru": "Это зависит от оценки влияния ошибки; объясните открыто и при необходимости пересмотрите вывод [court_ilac_g19_2022].", "en": "It depends on the impact assessment; explain openly and revise the conclusion if needed [court_ilac_g19_2022]."}},
+        {"q": {"uz": "Nega avvalroq aytmadingiz?", "ru": "Почему вы не сказали раньше?", "en": "Why didn't you say so earlier?"},
+         "a": {"uz": "Xato qachon va qanday aniqlanganini rostini ayting; kontekst va inson omili har qanday ekspertga ta’sir qilishi mumkin [court_dror2020].", "ru": "Честно скажите, когда и как ошибка обнаружена; контекст и человеческий фактор могут влиять на любого эксперта [court_dror2020].", "en": "State truthfully when and how the error was found; context and human factors can affect any expert [court_dror2020]."}}
+      ],
+      "limitations": [{"uz": "Xulosani rasmiy o‘zgartirish tartibi protsessual qonunga bog‘liq.", "ru": "Порядок официального изменения заключения зависит от процессуального закона.", "en": "The formal procedure for amending a report depends on procedural law."}],
+      "links": [],
+      "citations": ["court_ilac_g19_2022", "court_uz_expertise_law", "court_dror2020"],
+      "locators": {"court_ilac_g19_2022": ["sec:2.14", "sec:3.2"], "court_uz_expertise_law": ["art:8"], "court_dror2020": ["abstract"]}
+    },
+    {
+      "id": "court.q.comm_numbers",
+      "status": "NEEDS_REVIEW",
+      "question": {"uz": "Konsentratsiya va noaniqlik sonlarini sudga qanday tushuntirasiz?", "ru": "Как вы объясните суду числа концентрации и неопределённости?", "en": "How do you explain concentration and uncertainty figures to the court?"},
+      "tests": {"uz": "Ekspert sonlarni ortiqcha aniqlik yoki noto‘g‘ri ehtimollik bilan bermaydimi [court_jcgm100_2008, court_thompson1987].", "ru": "Не подаёт ли эксперт числа с лишней точностью или неверной вероятностью [court_jcgm100_2008, court_thompson1987].", "en": "Whether the expert avoids false precision and wrong probability statements [court_jcgm100_2008, court_thompson1987]."},
+      "short_answer": {"uz": "Natijani birligi va noaniqlik oralig‘i bilan aytaman, oraliq nima ekanini sodda tushuntiraman [court_jcgm100_2008, court_gullberg2012]. Ehtimollikni «topilmaning taxmin ostidagi ehtimoli» sifatida aytaman, aksincha emas [court_enfsi2015].", "ru": "Называю результат с единицей и интервалом неопределённости и просто объясняю, что это за интервал [court_jcgm100_2008, court_gullberg2012]. Вероятность формулирую как вероятность находки при предположении, а не наоборот [court_enfsi2015].", "en": "I give the result with its unit and uncertainty interval and explain simply what the interval means [court_jcgm100_2008, court_gullberg2012]. I state probability as the probability of the findings given a proposition, not the reverse [court_enfsi2015]."},
+      "prepare": {
+        "documents": [{"uz": "Birliklar va ularning o‘zaro o‘tkazilishi (masalan, g/L va ‰) hisob-kitobi.", "ru": "Единицы и их пересчёт (например, г/л и ‰).", "en": "Units and their conversion (for example, g/L and ‰)."}],
+        "explain": [{"uz": "Natijani ortiqcha raqamlar bilan berish aniqlikni oshirib ko‘rsatadi [court_pcast2016].", "ru": "Лишние знаки в результате преувеличивают точность [court_pcast2016].", "en": "Excess digits overstate precision [court_pcast2016]."}],
+        "pitfalls": [{"uz": "«Tasodif ehtimoli juda kichik — demak, u aybdor» kabi xulosa: bu shartni almashtirish xatosi [court_thompson1987].", "ru": "Вывод вида «вероятность случайности мала — значит, виновен»: это ошибка перестановки условия [court_thompson1987].", "en": "'The chance of coincidence is tiny, so he is guilty' — the transposed-conditional fallacy [court_thompson1987]."}]
+      },
+      "followups": [
+        {"q": {"uz": "Noaniqlik oralig‘i nimani anglatadi?", "ru": "Что означает интервал неопределённости?", "en": "What does the uncertainty interval mean?"},
+         "a": {"uz": "Oraliq natija qanchalik aniq ekanini ko‘rsatadi; uni baholash va ifodalashning umumiy qoidalari GUM da berilgan [court_jcgm100_2008].", "ru": "Интервал показывает, насколько точен результат; общие правила его оценки и выражения даны в GUM [court_jcgm100_2008].", "en": "The interval shows how precise the result is; the GUM sets general rules for evaluating and expressing it [court_jcgm100_2008]."}},
+        {"q": {"uz": "Promillega o‘tkazib bera olasizmi?", "ru": "Можете перевести в промилле?", "en": "Can you convert to per mille?"},
+         "a": {"uz": "Ha, lekin qaysi birlik va o‘tkazish asosi ishlatilganini ayting; qonuniy birliklar mamlakatlarga qarab farq qiladi [jones2024units].", "ru": "Да, но назовите единицу и основу пересчёта; правовые единицы различаются по странам [jones2024units].", "en": "Yes, but state the unit and the conversion basis; legal units differ between countries [jones2024units]."}}
+      ],
+      "limitations": [{"uz": "Ehtimollik nisbati bilan ishlash har bir sohada ma’lumotlar bazasini talab qiladi.", "ru": "Работа с отношением правдоподобия требует баз данных в каждой области.", "en": "Likelihood ratios need data for each field."}],
+      "links": ["tool:tool.conv.ethanol_units", "tool:tool.conv.concentration_units"],
+      "citations": ["court_jcgm100_2008", "court_thompson1987", "court_gullberg2012", "court_enfsi2015", "court_pcast2016", "jones2024units"],
+      "locators": {"court_jcgm100_2008": ["scope"], "court_thompson1987": ["title"], "court_gullberg2012": ["abstract"], "court_enfsi2015": ["gn:1"], "court_pcast2016": ["pp:5-6"], "jones2024units": ["abstract"]}
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "topic": {
+    "id": "court.topic.rights",
+    "order": 1,
+    "icon": "gavel",
+    "title": {"uz": "Ekspert huquq va majburiyatlari", "ru": "Права и обязанности эксперта", "en": "Rights and duties of the expert"},
+    "summary": {
+      "uz": "Huquqlar va majburiyatlar alohida; tanlangan yurisdiksiyaga qarab (O‘zbekiston yoki umumiy xalqaro).",
+      "ru": "Права и обязанности отдельно; с учётом выбранной юрисдикции (Узбекистан или общие международные).",
+      "en": "Rights and duties separately; by selected jurisdiction (Uzbekistan or general international)."
+    }
+  },
+  "questions": [
+    {
+      "id": "court.q.rights_uz",
+      "jurisdiction": "UZ",
+      "status": "NEEDS_REVIEW",
+      "question": {"uz": "Ekspert sifatida qanday protsessual huquqlaringiz bor?", "ru": "Какие процессуальные права есть у вас как у эксперта?", "en": "What procedural rights do you have as an expert?"},
+      "tests": {
+        "uz": "Ekspert o‘z huquqlarini bilib, ulardan to‘g‘ri foydalanadimi: masalan, qo‘shimcha material so‘rash yoki xulosasi noto‘g‘ri talqin qilinganda arz qilish (O‘zbekiston JPK) [court_uz_cpc].",
+        "ru": "Знает ли эксперт свои права и пользуется ли ими правильно: например, ходатайствовать о дополнительных материалах или заявлять о неправильном истолковании заключения (УПК Узбекистана) [court_uz_cpc].",
+        "en": "Whether the expert knows and properly uses his rights: for example, requesting additional materials or objecting to a misinterpretation of the conclusion (Uzbekistan CPC) [court_uz_cpc]."
+      },
+      "short_answer": {
+        "uz": "O‘zbekistonda ekspert huquqlari JPK 68-moddasi 1-qismida va «Sud ekspertizasi to‘g‘risida»gi qonunning 15-moddasida: ekspertiza predmetiga oid ish materiallari bilan tanishish, qo‘shimcha material va obyekt so‘rash, ruxsat bilan tergov harakatlarida va sudda dalillarni tekshirishda qatnashish, predmetga oid boshqa muhim masalalar bo‘yicha xulosa bayon qilish, xulosasi noto‘g‘ri talqin qilinganda arz qilish, ona tilida xulosa berish va shikoyat qilish [court_uz_cpc, court_uz_expertise_law].",
+        "ru": "В Узбекистане права эксперта — ч. 1 ст. 68 УПК и ст. 15 Закона «О судебной экспертизе»: знакомиться с материалами дела по предмету экспертизы, ходатайствовать о дополнительных материалах и объектах, с разрешения участвовать в следственных действиях и в исследовании доказательств в суде, излагать выводы по иным значимым вопросам предмета, делать заявления о неправильном истолковании заключения, давать заключение на родном языке и обжаловать решения [court_uz_cpc, court_uz_expertise_law].",
+        "en": "In Uzbekistan the expert's rights are in CPC Art. 68(1) and Art. 15 of the Law on Forensic Expertise: study case materials relating to the subject, request additional materials and objects, take part with permission in investigative actions and in examining evidence in court, state conclusions on other relevant matters, object to misinterpretation of the conclusion, use one's native language, and appeal [court_uz_cpc, court_uz_expertise_law]."
+      },
+      "prepare": {
+        "documents": [
+          {"uz": "Qo‘shimcha material so‘ragan bo‘lsangiz — iltimosnoma va unga javob (O‘zbekiston JPK) [court_uz_cpc].", "ru": "Если вы ходатайствовали о материалах — ходатайство и ответ (УПК Узбекистана) [court_uz_cpc].", "en": "If you requested materials — the request and the response (Uzbekistan CPC) [court_uz_cpc]."}
+        ],
+        "explain": [
+          {"uz": "Huquqlar ekspertizani to‘liq va asosli o‘tkazish uchun; ular ekspertga materiallarni mustaqil yig‘ish huquqini bermaydi [court_uz_expertise_law].", "ru": "Права служат полному и обоснованному исследованию; они не дают эксперту права самостоятельно собирать материалы [court_uz_expertise_law].", "en": "The rights serve a complete, well-founded examination; they do not let the expert collect materials independently [court_uz_expertise_law]."}
+        ],
+        "pitfalls": [
+          {"uz": "Huquqni majburiyat bilan aralashtirish yoki qonun moddasini tekshirmasdan keltirish; joriy tahririni lex.uz da tekshiring.", "ru": "Путать права с обязанностями или цитировать статью без проверки; проверяйте действующую редакцию на lex.uz.", "en": "Confusing rights with duties, or quoting an article unchecked; verify the current wording on lex.uz."}
+        ]
+      },
+      "followups": [
+        {"q": {"uz": "Siz guvohlarga savol bera olasizmi?", "ru": "Можете ли вы задавать вопросы свидетелям?", "en": "May you question witnesses?"},
+         "a": {"uz": "Sudda ekspertiza predmetiga oid dalillarni tekshirishda qatnashib, sud ruxsati bilan so‘roq qilinayotgan shaxslarga savol berish mumkin (O‘zbekiston JPK) [court_uz_cpc].", "ru": "Участвуя в исследовании доказательств по предмету экспертизы, с разрешения суда можно задавать вопросы допрашиваемым (УПК Узбекистана) [court_uz_cpc].", "en": "When taking part in examining evidence on the subject of the examination, you may question persons with the court's permission (Uzbekistan CPC) [court_uz_cpc]."}},
+        {"q": {"uz": "Xulosada sizga berilmagan savolga javob bera olasizmi?", "ru": "Можете ли вы ответить в заключении на непоставленный вопрос?", "en": "May you address a question you were not asked?"},
+         "a": {"uz": "Ha, agar u ekspertiza predmetiga oid va ish uchun ahamiyatli bo‘lsa [court_uz_expertise_law].", "ru": "Да, если он относится к предмету экспертизы и имеет значение для дела [court_uz_expertise_law].", "en": "Yes, if it relates to the subject of the examination and matters for the case [court_uz_expertise_law]."}}
+      ],
+      "limitations": [
+        {"uz": "Fuqarolik va iqtisodiy ishlardagi ekspert huquqlari alohida kodekslarda; bu yerda ular tekshirilmagan — qonun matni lex.uz da tekshirilishi kerak.", "ru": "Права эксперта в гражданском и экономическом процессе — в отдельных кодексах; здесь они не проверялись — текст закона нужно проверить на lex.uz.", "en": "Expert rights in civil and economic proceedings are in separate codes not checked here — the legal text must be verified on lex.uz."}
+      ],
+      "links": [],
+      "citations": ["court_uz_cpc", "court_uz_expertise_law"],
+      "locators": {"court_uz_cpc": ["art:68:1"], "court_uz_expertise_law": ["art:15", "art:16:2"]}
+    },
+    {
+      "id": "court.q.duties_uz",
+      "jurisdiction": "UZ",
+      "status": "NEEDS_REVIEW",
+      "question": {"uz": "Ekspert sifatida qanday majburiyatlaringiz va taqiqlaringiz bor?", "ru": "Какие у вас обязанности и запреты как у эксперта?", "en": "What duties and prohibitions apply to you as an expert?"},
+      "tests": {
+        "uz": "Ekspert o‘z majburiyatlarini — to‘liq va xolis tadqiqot, asosli xulosa, ko‘rsatma berish — va mustaqillik talablarini biladimi [court_uz_expertise_law].",
+        "ru": "Знает ли эксперт свои обязанности — полное и объективное исследование, обоснованное заключение, дача показаний — и требования независимости [court_uz_expertise_law].",
+        "en": "Whether the expert knows his duties — complete and objective research, a reasoned conclusion, giving testimony — and the independence requirements [court_uz_expertise_law]."
+      },
+      "short_answer": {
+        "uz": "Majburiyatlar: asos bo‘lsa darhol o‘zini rad etish; obyektlarni har tomonlama va to‘liq tekshirish; asosli va xolis xulosa berish; chaqiruvga kelish; xulosa bo‘yicha ko‘rsatma berish va savollarga javob berish; sirni saqlash; obyektlar butligini ta’minlash (O‘zbekiston JPK) [court_uz_cpc]. Taqiqlar: xolislikka shubha tug‘diradigan shaxsiy aloqalar, materiallarni mustaqil yig‘ish, natijani tayinlagan organdan boshqaga aytish [court_uz_expertise_law].",
+        "ru": "Обязанности: немедленно заявить самоотвод при основаниях; всесторонне и полно исследовать объекты; дать обоснованное и объективное заключение; являться по вызову; давать показания и отвечать на вопросы по заключению; не разглашать сведения; обеспечить сохранность объектов (УПК Узбекистана) [court_uz_cpc]. Запреты: личные контакты, ставящие под сомнение незаинтересованность, самостоятельный сбор материалов, сообщение результатов кому-либо, кроме назначившего органа [court_uz_expertise_law].",
+        "en": "Duties: recuse immediately where grounds exist; examine objects comprehensively and completely; give a reasoned, objective conclusion; appear when summoned; testify and answer questions on the conclusion; keep confidentiality; preserve the objects (Uzbekistan CPC) [court_uz_cpc]. Prohibitions: personal contacts that question impartiality, collecting materials independently, disclosing results to anyone but the appointing body [court_uz_expertise_law]."
+      },
+      "prepare": {
+        "documents": [
+          {"uz": "Xulosada ekspertning jinoiy javobgarlik haqida ogohlantirilgani qayd etilgan bo‘lishi kerak (O‘zbekiston JPK) [court_uz_cpc].", "ru": "В заключении должно быть отражено предупреждение эксперта об уголовной ответственности (УПК Узбекистана) [court_uz_cpc].", "en": "The report must record that the expert was warned of criminal liability (Uzbekistan CPC) [court_uz_cpc]."}
+        ],
+        "explain": [
+          {"uz": "Tadqiqot qat’iy ilmiy asosda, ixtisoslik doirasida, to‘liq o‘tkaziladi; xulosa uning asosliligini umumqabul qilingan ilmiy ma’lumotlar bo‘yicha tekshirish imkonini berishi kerak [court_uz_expertise_law].", "ru": "Исследование проводится на строго научной основе, в пределах специальности и в полном объёме; заключение должно позволять проверить обоснованность по общепринятым научным данным [court_uz_expertise_law].", "en": "Research is strictly scientific, within the specialty and complete; the conclusion must allow its validity to be checked against generally accepted scientific data [court_uz_expertise_law]."}
+        ],
+        "pitfalls": [
+          {"uz": "Natijalarni tayinlagan organdan boshqa shaxslarga (masalan, tomonlarning vakillariga) xulosadan oldin aytib qo‘yish [court_uz_expertise_law].", "ru": "Сообщать результаты кому-либо, кроме назначившего органа (например, представителям сторон) [court_uz_expertise_law].", "en": "Telling results to anyone other than the appointing body (for example, a party's representative) [court_uz_expertise_law]."}
+        ]
+      },
+      "followups": [
+        {"q": {"uz": "Xulosa berishdan oldin sizni so‘roq qilish mumkinmi?", "ru": "Можно ли допросить вас до дачи заключения?", "en": "Can you be questioned before giving your conclusion?"},
+         "a": {"uz": "Yo‘q, xulosa berilishidan oldin ekspertni so‘roq qilish taqiqlangan; so‘roq faqat o‘z xulosasi va shaxsan o‘tkazgan tadqiqoti bo‘yicha (O‘zbekiston JPK) [court_uz_cpc].", "ru": "Нет, допрос эксперта до дачи заключения запрещён; допрос — только по своему заключению и лично проведённым исследованиям (УПК Узбекистана) [court_uz_cpc].", "en": "No, questioning the expert before the conclusion is given is prohibited; questioning concerns only his own conclusion and personal research (Uzbekistan CPC) [court_uz_cpc]."}},
+        {"q": {"uz": "Savolga javob berish uchun bilim yetmasa-chi?", "ru": "А если для ответа не хватает знаний?", "en": "What if your knowledge is insufficient to answer?"},
+         "a": {"uz": "Asoslangan «xulosa berish mumkin emasligi» dalolatnomasi tuziladi [court_uz_expertise_law].", "ru": "Составляется мотивированный акт о невозможности дачи заключения [court_uz_expertise_law].", "en": "A reasoned act on the impossibility of giving a conclusion is drawn up [court_uz_expertise_law]."}}
+      ],
+      "limitations": [
+        {"uz": "Qonun matni rus tilidagi lex.uz sahifasidan o‘qildi; rasmiy o‘zbekcha matn va keyingi o‘zgarishlar lex.uz da tekshirilishi kerak.", "ru": "Текст закона прочитан на русской странице lex.uz; официальный узбекский текст и последующие изменения нужно проверить на lex.uz.", "en": "The law was read on the Russian lex.uz page; the official Uzbek text and later amendments must be checked on lex.uz."}
+      ],
+      "links": [],
+      "citations": ["court_uz_cpc", "court_uz_expertise_law"],
+      "locators": {"court_uz_cpc": ["art:68:2", "art:184:2", "art:186:3"], "court_uz_expertise_law": ["art:8", "art:16", "art:24"]}
+    },
+    {
+      "id": "court.q.rights_intl",
+      "jurisdiction": "INTL",
+      "status": "NEEDS_REVIEW",
+      "question": {"uz": "Ekspert sifatida nimani so‘rashga va nimaga tayanishga haqlisiz?", "ru": "Что вы вправе запросить и на что опираться как эксперт?", "en": "What are you entitled to ask for and rely on as an expert?"},
+      "tests": {
+        "uz": "Ekspert ishni to‘g‘ri bajarish uchun zarur ma’lumotni so‘ray oladimi va bu xolislikka putur yetkazmaydimi [court_ilac_g19_2022].",
+        "ru": "Может ли эксперт запросить сведения, нужные для работы, не нарушая беспристрастности [court_ilac_g19_2022].",
+        "en": "Whether the expert can request the information needed for the work without compromising impartiality [court_ilac_g19_2022]."
+      },
+      "short_answer": {
+        "uz": "Xalqaro yo‘l-yo‘riqqa ko‘ra, zarur bo‘lganda mijozdan obyektlar va holatlar haqida yetarli ma’lumot so‘raladi; bu ma’lumot xolislikka putur yetkazmasligi kerak, uning yetishmasligi esa talqinni cheklaydi [court_ilac_g19_2022]. Aniq protsessual huquqlar mamlakat qonunida — uni rasmiy manbadan tekshiring.",
+        "ru": "По международным руководствам при необходимости у заказчика запрашивают достаточные сведения об объектах и обстоятельствах; они не должны нарушать беспристрастность, а их нехватка ограничивает интерпретацию [court_ilac_g19_2022]. Конкретные процессуальные права — в законе страны; проверьте его по официальному источнику.",
+        "en": "Under international guidance, the customer is asked for sufficient information about the items and circumstances when needed; it must not compromise impartiality, and its absence limits interpretation [court_ilac_g19_2022]. Specific procedural rights are in national law — check the official source."
+      },
+      "prepare": {
+        "documents": [
+          {"uz": "Shartnoma/topshiriq ko‘rib chiqilgani: tekshiruv maqsadi hujjatda aniqlangan [court_ilac_g19_2022].", "ru": "Анализ заявки: цель исследования определена в документе [court_ilac_g19_2022].", "en": "Contract review: the purpose of the examination is defined in writing [court_ilac_g19_2022]."}
+        ],
+        "explain": [
+          {"uz": "Ekspert o‘z sohasidan tashqaridagi masalalar bo‘yicha xulosa bermaydi [court_enfsi2015].", "ru": "Эксперт не даёт выводов вне своей области [court_enfsi2015].", "en": "Experts do not report on matters outside their own area of expertise [court_enfsi2015]."}
+        ],
+        "pitfalls": [
+          {"uz": "Boshqa davlat qonunidagi huquqni o‘z yurisdiksiyangizda bor deb taxmin qilish.", "ru": "Предполагать, что право из закона другой страны действует в вашей юрисдикции.", "en": "Assuming a right from another country's law applies in your jurisdiction."}
+        ]
+      },
+      "followups": [
+        {"q": {"uz": "Ish haqida ko‘proq bilsangiz, xolisligingiz buzilmaydimi?", "ru": "Не нарушит ли беспристрастность больше сведений о деле?", "en": "Won't knowing more about the case compromise impartiality?"},
+         "a": {"uz": "Fon ma’lumot xolislikka putur yetkazmasligi kerak; muqobil farazlarni ko‘rib chiqish xolislikni ko‘rsatadi [court_ilac_g19_2022].", "ru": "Фоновая информация не должна нарушать беспристрастность; рассмотрение альтернативных гипотез её демонстрирует [court_ilac_g19_2022].", "en": "Background information should not compromise impartiality; considering alternative hypotheses demonstrates it [court_ilac_g19_2022]."}},
+        {"q": {"uz": "Mamlakatimdagi huquqlarni qayerdan bilaman?", "ru": "Где узнать права в моей стране?", "en": "Where do I find the rights in my country?"},
+         "a": {"uz": "Protsessual kodeks va sud ekspertizasi to‘g‘risidagi qonunning rasmiy matnidan; ilovada «Huquq va yurisdiksiyalar» bo‘limini ham ko‘ring.", "ru": "Из официального текста процессуального кодекса и закона о судебной экспертизе; см. также раздел «Право и юрисдикции».", "en": "From the official text of the procedural code and forensic-expertise law; see also the app's jurisdictions section."}}
+      ],
+      "limitations": [
+        {"uz": "Bu umumiy xalqaro tamoyillar; ular mamlakat qonunini almashtirmaydi.", "ru": "Это общие международные принципы; они не заменяют закон страны.", "en": "These are general international principles; they do not replace national law."}
+      ],
+      "links": ["page:standards"],
+      "citations": ["court_ilac_g19_2022", "court_enfsi2015"],
+      "locators": {"court_ilac_g19_2022": ["sec:4.7.1", "sec:4.8.1"], "court_enfsi2015": ["sec:1.3"]}
+    },
+    {
+      "id": "court.q.duties_intl",
+      "jurisdiction": "INTL",
+      "status": "NEEDS_REVIEW",
+      "question": {"uz": "Ekspertning asosiy majburiyatlari nimalardan iborat?", "ru": "В чём основные обязанности эксперта?", "en": "What are the expert's core duties?"},
+      "tests": {
+        "uz": "Ekspert xolislik, kompetensiya va chalg‘itmaydigan hisobot talablarini biladimi [court_ilac_g19_2022].",
+        "ru": "Знает ли эксперт требования беспристрастности, компетентности и не вводящего в заблуждение отчёта [court_ilac_g19_2022].",
+        "en": "Whether the expert knows the requirements of impartiality, competence and non-misleading reporting [court_ilac_g19_2022]."
+      },
+      "short_answer": {
+        "uz": "Xolis ishlash, faqat kompetensiyasi baholangan ish bo‘yicha talqin berish va to‘liq, chalg‘itmaydigan, cheklovlari ko‘rsatilgan hisobot tayyorlash [court_ilac_g19_2022]; sud tizimiga yordam berish — har qanday hisobot turida asosiy vazifa [court_enfsi2015].",
+        "ru": "Работать беспристрастно, интерпретировать только в рамках оценённой компетентности и готовить полный, не вводящий в заблуждение отчёт с оговорками [court_ilac_g19_2022]; помогать судебной системе — основная задача при любом виде отчёта [court_enfsi2015].",
+        "en": "Work impartially, interpret only within assessed competence, and produce complete, non-misleading, properly qualified reports [court_ilac_g19_2022]; assisting the justice system is the underlying duty in every type of report [court_enfsi2015]."
+      },
+      "prepare": {
+        "documents": [
+          {"uz": "Kompetensiya baholangani haqidagi yozuv va xulosa shkalasi tavsifi [court_ilac_g19_2022].", "ru": "Запись об оценке компетентности и описание шкалы выводов [court_ilac_g19_2022].", "en": "Competence assessment record and the description of the conclusion scale [court_ilac_g19_2022]."}
+        ],
+        "explain": [
+          {"uz": "Hisobotda qaysi qism fon ma’lumot, qaysi qism natija va qaysi qism talqin ekani aniq bo‘lishi kerak [court_ilac_g19_2022].", "ru": "В отчёте должно быть ясно, что — фоновая информация, что — результаты, что — интерпретация [court_ilac_g19_2022].", "en": "A report must make clear which parts are background, results and interpretation [court_ilac_g19_2022]."}
+        ],
+        "pitfalls": [
+          {"uz": "Xalqaro yo‘l-yo‘riqni mamlakat qonuni kabi «majburiy» deb ko‘rsatish.", "ru": "Выдавать международное руководство за обязательный закон страны.", "en": "Presenting international guidance as if it were binding national law."}
+        ]
+      },
+      "followups": [
+        {"q": {"uz": "Xatoingizni topsangiz nima qilasiz?", "ru": "Что вы сделаете, обнаружив свою ошибку?", "en": "What do you do if you find your own error?"},
+         "a": {"uz": "Nomuvofiq ish (shu jumladan ekspert ko‘rsatmasi) tuzatish jarayonida ko‘rib chiqiladi; xatoni oshkor qilish va tuzatish majburiyat [court_ilac_g19_2022].", "ru": "Несоответствующая работа (включая показания эксперта) рассматривается в процессе исправления; ошибку нужно раскрыть и исправить [court_ilac_g19_2022].", "en": "Non-conforming work (including expert testimony) is handled through the corrective process; the error must be disclosed and corrected [court_ilac_g19_2022]."}},
+        {"q": {"uz": "Sizga «aniq qilib ayting» deyishsa-chi?", "ru": "А если от вас требуют «сказать определённо»?", "en": "What if you are told to 'be definite'?"},
+         "a": {"uz": "Empirik dalil ko‘rsatganidan ortiq ishonch bildirish ilmiy jihatdan asossiz [court_pcast2016].", "ru": "Выражать большую уверенность, чем показали эмпирические данные, научно несостоятельно [court_pcast2016].", "en": "Expressing more certainty than the empirical evidence shows is scientifically invalid [court_pcast2016]."}}
+      ],
+      "limitations": [
+        {"uz": "Majburiyatlarning huquqiy shakli mamlakat qonunida; bu yerda faqat xalqaro yo‘l-yo‘riqlar keltirilgan.", "ru": "Правовая форма обязанностей — в законе страны; здесь приведены только международные руководства.", "en": "The legal form of these duties is in national law; only international guidance is given here."}
+      ],
+      "links": [],
+      "citations": ["court_ilac_g19_2022", "court_enfsi2015", "court_pcast2016"],
+      "locators": {"court_ilac_g19_2022": ["sec:2.12", "sec:2.14", "sec:4.8.3", "sec:4.9"], "court_enfsi2015": ["sec:1.2"], "court_pcast2016": ["pp:5-6"]}
+    }
+  ]
+}

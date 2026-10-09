@@ -45,6 +45,19 @@ abstract final class Routes {
   static const practiceCatalog = '/library/guidelines/practice';
   static String guideline(String id) =>
       '/library/guidelines/card/${Uri.encodeComponent(id)}';
+  // «Sudda so‘roq: tayyorgarlik» (Mutaxassis Pro; bepul — namunalar).
+  static const courtPrep = '/library/court-prep';
+  static const courtPrepPractice = '/library/court-prep/practice';
+  static const courtPrepPrinciples = '/library/court-prep/principles';
+  static const courtPrepSimulator = '/library/court-prep/simulator';
+  static const courtPrepDrill = '/library/court-prep/drill';
+  static const courtPrepStats = '/library/court-prep/stats';
+  static String courtPrepScenario(String id) =>
+      '/library/court-prep/simulator/${Uri.encodeComponent(id)}';
+  static String courtPrepTopic(String id) =>
+      '/library/court-prep/topic/${Uri.encodeComponent(id)}';
+  static String courtPrepQuestion(String id) =>
+      '/library/court-prep/q/${Uri.encodeComponent(id)}';
   // «Ekspert maqolalari» (FE_PUBLICATIONS yoki admin).
   static const publications = '/library/publications';
   static String publication(String id) =>

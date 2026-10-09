@@ -1,0 +1,54 @@
+{
+  "principles": [
+    {
+      "id": "court.p.all_findings",
+      "text": {
+        "uz": "Barcha tegishli natijalarni — cheklovlar va noaniqlik bilan birga — xabar qiling; hisobot to‘liq va chalg‘itmaydigan bo‘lishi kerak [court_ilac_g19_2022]. O‘zbekiston qonuniga ko‘ra tadqiqot xolis, har tomonlama va to‘liq o‘tkaziladi [court_uz_expertise_law].",
+        "ru": "Сообщайте все значимые результаты — вместе с ограничениями и неопределённостью; отчёт должен быть полным и не вводить в заблуждение [court_ilac_g19_2022]. По закону Узбекистана исследование проводится объективно, всесторонне и полно [court_uz_expertise_law].",
+        "en": "Report all relevant findings — with their limitations and uncertainty; a report must be complete and not misleading [court_ilac_g19_2022]. Under Uzbekistan's law, research is objective, comprehensive and complete [court_uz_expertise_law]."
+      },
+      "citations": ["court_ilac_g19_2022", "court_uz_expertise_law"],
+      "locators": {"court_ilac_g19_2022": ["sec:4.9"], "court_uz_expertise_law": ["art:8"]}
+    },
+    {
+      "id": "court.p.dont_know",
+      "text": {
+        "uz": "Kerak bo‘lsa «bilmayman» yoki «bu mening vakolatimdan tashqarida» deng; ekspert o‘z sohasidan tashqarida xulosa bermaydi [court_enfsi2015].",
+        "ru": "Когда нужно, говорите «не знаю» или «это вне моей компетенции»; эксперт не даёт выводов вне своей области [court_enfsi2015].",
+        "en": "Say 'I don't know' or 'this is outside my competence' when that is the truth; experts do not report outside their area [court_enfsi2015]."
+      },
+      "citations": ["court_enfsi2015"],
+      "locators": {"court_enfsi2015": ["sec:1.3"]}
+    },
+    {
+      "id": "court.p.correct_errors",
+      "text": {
+        "uz": "O‘z xatongizni oshkor qiling va tuzating: nomuvofiq ish tushunchasi ekspert ko‘rsatmasini ham qamraydi [court_ilac_g19_2022].",
+        "ru": "Раскрывайте и исправляйте собственные ошибки: несоответствующая работа включает и показания эксперта [court_ilac_g19_2022].",
+        "en": "Disclose and correct your own errors: non-conforming work includes expert testimony [court_ilac_g19_2022]."
+      },
+      "citations": ["court_ilac_g19_2022"],
+      "locators": {"court_ilac_g19_2022": ["sec:2.14", "sec:3.2"]}
+    },
+    {
+      "id": "court.p.independence",
+      "text": {
+        "uz": "Ekspertizani tayinlagan tomondan mustaqil bo‘ling: biror tomon foydasiga xulosa olish uchun ta’sir qilish taqiqlangan [court_uz_expertise_law]; xolislik muqobil farazlarni ko‘rib chiqishda namoyon bo‘ladi [court_ilac_g19_2022].",
+        "ru": "Будьте независимы от стороны, назначившей экспертизу: воздействие ради заключения в чью-либо пользу запрещено [court_uz_expertise_law]; беспристрастность проявляется в рассмотрении альтернативных гипотез [court_ilac_g19_2022].",
+        "en": "Stay independent of the side that commissioned the examination: pressure to obtain a conclusion in anyone's favour is prohibited [court_uz_expertise_law]; impartiality shows in considering alternative hypotheses [court_ilac_g19_2022]."
+      },
+      "citations": ["court_uz_expertise_law", "court_ilac_g19_2022"],
+      "locators": {"court_uz_expertise_law": ["art:7"], "court_ilac_g19_2022": ["sec:2.12"]}
+    },
+    {
+      "id": "court.p.no_overstatement",
+      "text": {
+        "uz": "Natijani hech qachon yashirmang, yumshatmang yoki bo‘rttirmang: empirik dalil ko‘rsatganidan katta ishonch bildirish ilmiy asossiz [court_pcast2016].",
+        "ru": "Никогда не скрывайте, не смягчайте и не преувеличивайте результат: уверенность сверх эмпирических данных научно несостоятельна [court_pcast2016].",
+        "en": "Never hide, soften or overstate a result: claiming more certainty than the empirical evidence supports is scientifically invalid [court_pcast2016]."
+      },
+      "citations": ["court_pcast2016"],
+      "locators": {"court_pcast2016": ["pp:5-6"]}
+    }
+  ]
+}
