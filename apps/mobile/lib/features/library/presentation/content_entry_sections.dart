@@ -15,8 +15,10 @@ import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../core/widgets/fe_data_components.dart';
+import '../../../domain/evidence/citation_format.dart';
 import '../../../domain/library/library_models.dart';
 import '../../../domain/ports/billing_ports.dart';
+import '../../evidence/presentation/citation_sheet.dart';
 import '../../evidence/presentation/provenance_widgets.dart';
 import '../../evidence/presentation/research_screens.dart';
 import '../../evidence/presentation/scientific_image.dart';
@@ -268,7 +270,16 @@ class _ContentEntryBodyState extends ConsumerState<ContentEntryBody> {
           key: _anchor('related'),
           child: RelatedSection(entityId: entry.id),
         ),
-        _section('sources', l.detailReferences),
+        KeyedSubtree(
+          key: _anchor('sources'),
+          child: FeSectionHeader(
+            l.detailReferences,
+            actionLabel: d.allSources.isEmpty ? null : l.citeAllSources,
+            onAction: () => showCitationSheet(context, [
+              for (final s in d.allSources) CitationData.fromSource(s),
+            ], asList: true),
+          ),
+        ),
         if (d.allSources.isEmpty)
           Text(
             l.noReliableSource,
@@ -666,7 +677,29 @@ class SourceTile extends StatelessWidget {
                   icon: const Icon(Icons.copy, size: 18),
                   onPressed: () => Clipboard.setData(ClipboardData(text: link)),
                 ),
+                if (linkToDetail)
+                  CiteButton(
+                    key: Key('source.cite.${source.sourceId}'),
+                    citation: CitationData.fromSource(source),
+                  ),
               ],
+            )
+          else if (linkToDetail)
+            Align(
+              alignment: AlignmentDirectional.centerEnd,
+              child: CiteButton(
+                key: Key('source.cite.${source.sourceId}'),
+                citation: CitationData.fromSource(source),
+              ),
+            ),
+          if (!linkToDetail)
+            Align(
+              alignment: AlignmentDirectional.centerStart,
+              child: CiteButton(
+                key: Key('source.cite.${source.sourceId}'),
+                citation: CitationData.fromSource(source),
+                compact: false,
+              ),
             ),
         ],
       ),

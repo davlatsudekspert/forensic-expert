@@ -299,6 +299,13 @@ class ContentProvenance {
       sha256: s['sha256'] as String?,
       sourceVersion: s['source_version'] as String?,
       language: s['src_language'] as String?,
+      authors: switch (s['authors_json']) {
+        final String j when j.isNotEmpty => [
+          for (final a in (jsonDecode(j) as List? ?? const []))
+            if ('$a'.trim().isNotEmpty) '$a'.trim(),
+        ],
+        _ => const [],
+      },
     );
   }
 

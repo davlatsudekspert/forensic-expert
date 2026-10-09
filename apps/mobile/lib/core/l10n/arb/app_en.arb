@@ -8905,5 +8905,59 @@
         "type": "String"
       }
     }
+  },
+  "citeCopy": "Copy citation",
+  "@citeCopy": {
+    "description": "Action on a source/reference: open the sheet to copy a formatted bibliographic citation."
+  },
+  "citeAllSources": "Copy reference list",
+  "@citeAllSources": {
+    "description": "Page action (substance/guideline): copy a numbered list of all sources on this page."
+  },
+  "citeListTitle": "Reference list · {count}",
+  "@citeListTitle": {
+    "description": "Citation sheet title for the page-level reference list.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "citeStyleLabel": "Citation style",
+  "@citeStyleLabel": {
+    "description": "Citation sheet: label above the style selector."
+  },
+  "citeStyleGost": "GOST",
+  "@citeStyleGost": {
+    "description": "Citation style name: GOST R 7.0.100-2018."
+  },
+  "citeStyleVancouver": "Vancouver",
+  "@citeStyleVancouver": {
+    "description": "Citation style name: Vancouver."
+  },
+  "citeStyleApa": "APA 7",
+  "@citeStyleApa": {
+    "description": "Citation style name: APA 7th edition."
+  },
+  "citeCopyButton": "Copy",
+  "@citeCopyButton": {
+    "description": "Citation sheet: copy button."
+  },
+  "citeCopied": "Citation copied",
+  "@citeCopied": {
+    "description": "Snackbar after copying one citation."
+  },
+  "citeListCopied": "{count, plural, =1{1 reference copied} other{{count} references copied}}",
+  "@citeListCopied": {
+    "description": "Snackbar after copying the reference list.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "citeVerifyNote": "The app is a reference tool: verify each source against the original before citing it in an expert conclusion.",
+  "@citeVerifyNote": {
+    "description": "One-line note under citations: the app is a reference tool; the expert must verify sources."
   }
 }

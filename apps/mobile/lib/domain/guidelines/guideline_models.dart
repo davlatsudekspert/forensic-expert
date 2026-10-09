@@ -98,6 +98,16 @@ class GuidelineReference {
     this.pmid,
     this.url,
     this.verifiedVia,
+    this.type,
+    this.authors = const [],
+    this.title,
+    this.journal,
+    this.publisher,
+    this.year,
+    this.volume,
+    this.issue,
+    this.pages,
+    this.verifiedOn,
   });
 
   factory GuidelineReference.fromJson(Map<String, Object?> j) {
@@ -127,6 +137,23 @@ class GuidelineReference {
       pmid: s('pmid'),
       url: s('url'),
       verifiedVia: s('verified_via'),
+      type: s('type'),
+      authors: switch (j['authors']) {
+        final List<Object?> a => [
+          for (final e in a)
+            if ('$e'.trim().isNotEmpty) '$e'.trim(),
+        ],
+        final String a when a.trim().isNotEmpty => [a.trim()],
+        _ => const [],
+      },
+      title: s('title'),
+      journal: s('journal'),
+      publisher: s('publisher'),
+      year: s('year'),
+      volume: s('volume'),
+      issue: s('issue'),
+      pages: s('pages'),
+      verifiedOn: DateTime.tryParse(s('verified_on') ?? ''),
     );
   }
 
@@ -136,6 +163,21 @@ class GuidelineReference {
   final String? pmid;
   final String? url;
   final String? verifiedVia;
+
+  // Tuzilgan bibliografik maydonlar (iqtibos eksporti uchun; yo‘q bo‘lsa
+  // null — hech narsa to‘qib chiqarilmaydi).
+  final String? type;
+  final List<String> authors;
+  final String? title;
+  final String? journal;
+  final String? publisher;
+  final String? year;
+  final String? volume;
+  final String? issue;
+  final String? pages;
+
+  /// Havola onlayn tekshirilgan sana (`verified_on`) — murojaat sanasi.
+  final DateTime? verifiedOn;
 
   Uri? get link {
     if (doi != null) return Uri.parse('https://doi.org/$doi');

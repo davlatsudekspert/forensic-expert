@@ -6876,4 +6876,49 @@ class AppLocalizationsRu extends AppLocalizations {
   String rdGuidelineMeta(int sections, String refs) {
     return 'Разделов: $sections · $refs';
   }
+
+  @override
+  String get citeCopy => 'Копировать для списка литературы';
+
+  @override
+  String get citeAllSources => 'Список всех источников';
+
+  @override
+  String citeListTitle(int count) {
+    return 'Список источников · $count';
+  }
+
+  @override
+  String get citeStyleLabel => 'Стиль оформления';
+
+  @override
+  String get citeStyleGost => 'ГОСТ';
+
+  @override
+  String get citeStyleVancouver => 'Ванкувер';
+
+  @override
+  String get citeStyleApa => 'APA 7';
+
+  @override
+  String get citeCopyButton => 'Копировать';
+
+  @override
+  String get citeCopied => 'Ссылка скопирована';
+
+  @override
+  String citeListCopied(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Скопировано $count источников',
+      few: 'Скопировано $count источника',
+      one: 'Скопирован $count источник',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get citeVerifyNote =>
+      'Приложение — справочный инструмент: перед включением в заключение сверьте каждый источник с оригиналом.';
 }

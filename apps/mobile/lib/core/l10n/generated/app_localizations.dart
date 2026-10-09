@@ -12170,6 +12170,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{sections} sections · {refs}'**
   String rdGuidelineMeta(int sections, String refs);
+
+  /// Action on a source/reference: open the sheet to copy a formatted bibliographic citation.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy citation'**
+  String get citeCopy;
+
+  /// Page action (substance/guideline): copy a numbered list of all sources on this page.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy reference list'**
+  String get citeAllSources;
+
+  /// Citation sheet title for the page-level reference list.
+  ///
+  /// In en, this message translates to:
+  /// **'Reference list · {count}'**
+  String citeListTitle(int count);
+
+  /// Citation sheet: label above the style selector.
+  ///
+  /// In en, this message translates to:
+  /// **'Citation style'**
+  String get citeStyleLabel;
+
+  /// Citation style name: GOST R 7.0.100-2018.
+  ///
+  /// In en, this message translates to:
+  /// **'GOST'**
+  String get citeStyleGost;
+
+  /// Citation style name: Vancouver.
+  ///
+  /// In en, this message translates to:
+  /// **'Vancouver'**
+  String get citeStyleVancouver;
+
+  /// Citation style name: APA 7th edition.
+  ///
+  /// In en, this message translates to:
+  /// **'APA 7'**
+  String get citeStyleApa;
+
+  /// Citation sheet: copy button.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy'**
+  String get citeCopyButton;
+
+  /// Snackbar after copying one citation.
+  ///
+  /// In en, this message translates to:
+  /// **'Citation copied'**
+  String get citeCopied;
+
+  /// Snackbar after copying the reference list.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 reference copied} other{{count} references copied}}'**
+  String citeListCopied(int count);
+
+  /// One-line note under citations: the app is a reference tool; the expert must verify sources.
+  ///
+  /// In en, this message translates to:
+  /// **'The app is a reference tool: verify each source against the original before citing it in an expert conclusion.'**
+  String get citeVerifyNote;
 }
 
 class _AppLocalizationsDelegate
