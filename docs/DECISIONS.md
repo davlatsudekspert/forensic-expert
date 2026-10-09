@@ -23,9 +23,9 @@
 - **Egasi qarori (2026-10-09): Yuldashev Z.A. materiallaridan olingan BARCHA kontent — barcha uchun
   BEPUL**, hech qachon Pro ortida emas: yo‘riqnoma kartalari, test savollari, glossariy terminlari va
   paketga qo‘shiladigan har qanday yozuv (`tier_access`/`EntryAccess` = free). Kartada
-  `source_access: {access: free, basis: author_permission_2026-10-09}` va uz/ru/en atribusiya qatori
+  `access: "free"`, manba `type: teaching_material` (joy, nashriyot, huquq) va uz/ru/en atribusiya qatori
   («Manba: Yuldashev Z.A. va boshq., … — muallif ruxsati bilan, barcha uchun bepul») ko‘rsatiladi.
-  Tekshiruv: `content/guidelines/validate.py` G016 va `test/unit/guidelines_content_test.dart`,
+  Tekshiruv: `content/guidelines/validate.py` G014–G017 va `test/unit/guidelines_content_test.dart`,
   `test/unit/gmt_study_glossary_test.dart`. Birinchi qo‘llanish: «Giyohvand moddalar tahlili» (2024) —
   9 karta, 42 savol, 48 termin; xatolar ro‘yxati `content/guidelines/REVIEW_GMT.md`.
 - Egasining reaktivlar to‘plami (o‘zi jamlagan) — egasi ruxsati bilan (2026-10-09).

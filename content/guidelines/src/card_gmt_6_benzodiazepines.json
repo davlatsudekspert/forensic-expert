@@ -1,11 +1,18 @@
 {
   "id": "guideline.chem.gmt_benzodiazepines",
-  "discipline_codes": ["forensic_chemistry", "forensic_toxicology"],
+  "discipline_codes": [
+    "forensic_chemistry",
+    "forensic_toxicology"
+  ],
   "status": "NEEDS_REVIEW",
   "updated": "2026-10-09",
-  "translation_status": {"uz": "AUTHORED", "ru": "DRAFT", "en": "DRAFT"},
+  "translation_status": {
+    "uz": "AUTHORED",
+    "ru": "DRAFT",
+    "en": "DRAFT"
+  },
   "related_tool_ids": [],
-  "source_access": {"source_key": "gmt_yuldashev2024", "access": "free", "basis": "author_permission_2026-10-09"},
+  "access": "free",
   "title": {
     "uz": "1,4-benzodiazepinlar: diazepam, xlordiazepoksid, oksazepam, nitrazepam, fenazepam",
     "ru": "1,4-бензодиазепины: диазепам, хлордиазепоксид, оксазепам, нитразепам, феназепам",
@@ -19,79 +26,167 @@
   "sections": [
     {
       "key": "basis",
-      "title": {"uz": "Kimyoviy asos va metabolizm", "ru": "Химическая основа и метаболизм", "en": "Chemistry and metabolism"},
+      "title": {
+        "uz": "Kimyoviy asos va metabolizm",
+        "ru": "Химическая основа и метаболизм",
+        "en": "Chemistry and metabolism"
+      },
       "body": {
         "uz": "1,4-benzodiazepin hosilalari trankvilizatorlar; toksikologik ahamiyatga ega vakillar — xlordiazepoksid, diazepam, oksazepam, nitrazepam, fenazepam. Ular alkogol, opioidlar va uxlatuvchilar ta’sirini kuchaytiradi [gmt_yuldashev2024] (132-b.).\n\nMetabolizm: diazepam N-demetillanib dezmetildiazepamga, so‘ng gidroksillanib oksazepamga aylanadi; oksazepam glyukuronid holida siydik bilan chiqadi. Nitrazepam nitroguruhning qaytarilishi orqali 7-amino- va 7-atsetilamino-metabolitlarga aylanadi [gmt_yuldashev2024] (132–133, 140-b.). O‘limdan keyin benzodiazepinlar, ayniqsa nitro-hosilalar, o‘zgarishda davom etishi mumkin [drummer2004].",
         "ru": "Производные 1,4-бензодиазепина — транквилизаторы; токсикологически значимые представители — хлордиазепоксид, диазепам, оксазепам, нитразепам, феназепам. Они усиливают действие алкоголя, опиоидов и снотворных [gmt_yuldashev2024] (с. 132).\n\nМетаболизм: диазепам N-деметилируется до десметилдиазепама, затем гидроксилируется до оксазепама; оксазепам выводится с мочой в виде глюкуронида. Нитразепам восстанавливается по нитрогруппе до 7-амино- и 7-ацетиламинометаболитов [gmt_yuldashev2024] (с. 132–133, 140). Посмертно бензодиазепины, особенно нитропроизводные, могут продолжать превращаться [drummer2004].",
         "en": "1,4-Benzodiazepine derivatives are tranquillisers; the toxicologically relevant members are chlordiazepoxide, diazepam, oxazepam, nitrazepam and phenazepam. They potentiate alcohol, opioids and hypnotics [gmt_yuldashev2024] (p. 132).\n\nMetabolism: diazepam is N-demethylated to desmethyldiazepam and then hydroxylated to oxazepam, which is excreted in urine as the glucuronide. Nitrazepam is reduced at the nitro group to 7-amino and 7-acetamido metabolites [gmt_yuldashev2024] (pp. 132–133, 140). After death benzodiazepines, especially nitro compounds, may continue to change [drummer2004]."
       },
-      "citations": ["gmt_yuldashev2024", "drummer2004"]
+      "citations": [
+        "gmt_yuldashev2024",
+        "drummer2004"
+      ]
     },
     {
       "key": "scope",
-      "title": {"uz": "Ob’ektlar va ajratib olish", "ru": "Объекты и изолирование", "en": "Objects and isolation"},
+      "title": {
+        "uz": "Ob’ektlar va ajratib olish",
+        "ru": "Объекты и изолирование",
+        "en": "Objects and isolation"
+      },
       "body": {
         "uz": "• Ob’ektlar: oshqozon va ingichka ichak, jigar, buyrak, qon, siydik; behush bemorlar oshqozonida dori qabul qilingandan 2–3 sutka keyin ham topilishi mumkin [gmt_yuldashev2024] (133–134-b.).\n• Izotov usuli: maydalangan ob’ekt pH 2 gacha nordonlashtirilgan suv bilan ajratiladi, kislotali ekstrakt xloroform bilan yuvilib tashlanadi, so‘ng suvli qatlam pH 9–10 da dietil efir bilan ekstraksiya qilinadi [gmt_yuldashev2024] (134-b.).\n• Gidroliz usuli: siydik yoki qon konsentrlangan xlorid kislota bilan qaytar sovutgichda qizdiriladi, so‘ng pH 8–10 da xloroform bilan ekstraksiya qilinadi; benzofenonlar YuQX da aniqlanadi [gmt_yuldashev2024] (133–134-b.).",
         "ru": "• Объекты: желудок и тонкий кишечник, печень, почки, кровь, моча; у больных в коме препарат может обнаруживаться в желудке через 2–3 суток после приёма [gmt_yuldashev2024] (с. 133–134).\n• Метод Изотова: измельчённый объект настаивают с водой, подкисленной до pH 2, кислое извлечение промывают хлороформом (его отбрасывают), затем водный слой при pH 9–10 экстрагируют диэтиловым эфиром [gmt_yuldashev2024] (с. 134).\n• Метод гидролиза: мочу или кровь нагревают с концентрированной соляной кислотой с обратным холодильником, затем экстрагируют хлороформом при pH 8–10; бензофеноны определяют ТСХ [gmt_yuldashev2024] (с. 133–134).",
         "en": "• Objects: stomach and small intestine, liver, kidney, blood, urine; in comatose patients the drug may still be found in the stomach 2–3 days after ingestion [gmt_yuldashev2024] (pp. 133–134).\n• Izotov method: comminuted material is steeped in water acidified to pH 2, the acidic extract is washed with chloroform (discarded), then the aqueous layer is extracted with diethyl ether at pH 9–10 [gmt_yuldashev2024] (p. 134).\n• Hydrolysis method: urine or blood is heated under reflux with concentrated hydrochloric acid, then extracted with chloroform at pH 8–10; the benzophenones are detected by TLC [gmt_yuldashev2024] (pp. 133–134)."
       },
-      "citations": ["gmt_yuldashev2024"]
+      "citations": [
+        "gmt_yuldashev2024"
+      ]
     },
     {
       "key": "reactions",
-      "title": {"uz": "Rangli va cho‘ktiruvchi reaksiyalar", "ru": "Цветные и осадочные реакции", "en": "Colour and precipitation reactions"},
+      "title": {
+        "uz": "Rangli va cho‘ktiruvchi reaksiyalar",
+        "ru": "Цветные и осадочные реакции",
+        "en": "Colour and precipitation reactions"
+      },
       "body": {
         "uz": "• Simmerman testi: qizil-binafsha yoki pushti rang diazepam va ayrim hosilalar bo‘lishi mumkinligini ko‘rsatadi; lorazepam, oksazepam, oksazolam, klorazepat, xlordiazepoksid, midazolam rang bermaydi [gmt_unodc_rapid_tests] (50-b.).\n• Xlorid kislota testi: sariq rang (ko‘p nazoratdagi bo‘lmagan dorilar ham shunday rang beradi) [gmt_unodc_rapid_tests] (51-b.).\n• Vitali–Moren testi: sariq-zarg‘aldoq rang [gmt_unodc_rapid_tests] (51-b.); darslikda bu reaksiya barcha 1,4-benzodiazepinlar uchun umumiy deyiladi [gmt_yuldashev2024] (135-b.).\n• Bratton–Marshall reaksiyasi: gidrolizdan keyingi birlamchi aromatik amin (aminobenzofenon) natriy nitrit bilan diazotirlanib, N-(1-naftil)etilendiamin bilan qizil-olcha rangli bo‘yoq hosil qiladi; bu fotokolorimetrik miqdoriy aniqlashda ham ishlatiladi [gmt_yuldashev2024] (136-b.).\n• Dragendorf reaktivi amorf cho‘kma yoki qizil kristallar beradi; yod komplekslari bilan mikrokristallar [gmt_yuldashev2024] (136-b.). Fenazepamdagi galogen Beylshteyn sinovi (mis sim, yashil alanga) bilan ko‘rsatiladi [gmt_yuldashev2024] (142-b.).",
         "ru": "• Тест Циммермана: красно-фиолетовая или розовая окраска указывает на возможное присутствие диазепама и некоторых производных; лоразепам, оксазепам, оксазолам, клоразепат, хлордиазепоксид, мидазолам не окрашиваются [gmt_unodc_rapid_tests] (с. 50).\n• Тест с соляной кислотой: жёлтая окраска (сходную дают многие неконтролируемые препараты) [gmt_unodc_rapid_tests] (с. 51).\n• Тест Витали–Морена: жёлто-оранжевая окраска [gmt_unodc_rapid_tests] (с. 51); в пособии эта реакция названа общей для всех 1,4-бензодиазепинов [gmt_yuldashev2024] (с. 135).\n• Реакция Браттона–Маршалла: первичный ароматический амин (аминобензофенон) после гидролиза диазотируют нитритом натрия и сочетают с N-(1-нафтил)этилендиамином — образуется вишнёво-красный краситель; применяется и для фотоколориметрического определения [gmt_yuldashev2024] (с. 136).\n• Реактив Драгендорфа даёт аморфный осадок или красные кристаллы; с иодидными комплексами — микрокристаллы [gmt_yuldashev2024] (с. 136). Галоген в феназепаме выявляют пробой Бейльштейна (медная проволока, зелёное пламя) [gmt_yuldashev2024] (с. 142).",
         "en": "• Zimmermann test: a reddish-purple or pink colour indicates possible diazepam and some related derivatives; lorazepam, oxazepam, oxazolam, clorazepate, chlordiazepoxide and midazolam give no colour [gmt_unodc_rapid_tests] (p. 50).\n• Hydrochloric acid test: yellow (many non-controlled drugs give the same) [gmt_unodc_rapid_tests] (p. 51).\n• Vitali–Morin test: yellow-orange [gmt_unodc_rapid_tests] (p. 51); the textbook calls this reaction common to all 1,4-benzodiazepines [gmt_yuldashev2024] (p. 135).\n• Bratton–Marshall reaction: the primary aromatic amine (aminobenzophenone) formed by hydrolysis is diazotised with sodium nitrite and coupled with N-(1-naphthyl)ethylenediamine to a cherry-red dye; also used for colorimetric quantitation [gmt_yuldashev2024] (p. 136).\n• Dragendorff reagent gives an amorphous precipitate or red crystals; iodide complexes give microcrystals [gmt_yuldashev2024] (p. 136). The halogen in phenazepam is shown by the Beilstein test (copper wire, green flame) [gmt_yuldashev2024] (p. 142)."
       },
-      "citations": ["gmt_unodc_rapid_tests", "gmt_yuldashev2024"]
+      "citations": [
+        "gmt_unodc_rapid_tests",
+        "gmt_yuldashev2024"
+      ]
     },
     {
       "key": "tlc",
-      "title": {"uz": "YuQX: benzofenonlar va asl moddalar", "ru": "ТСХ: бензофеноны и исходные вещества", "en": "TLC: benzophenones and parent drugs"},
+      "title": {
+        "uz": "YuQX: benzofenonlar va asl moddalar",
+        "ru": "ТСХ: бензофеноны и исходные вещества",
+        "en": "TLC: benzophenones and parent drugs"
+      },
       "body": {
         "uz": "Kislotali gidrolizda hosil bo‘ladigan benzofenonlar: xlordiazepoksid va oksazepam — 2-amino-5-xlorbenzofenon (AXB); diazepam — 2-metilamino-5-xlorbenzofenon (MXB); nitrazepam — 2-amino-5-nitrobenzofenon (ANB); fenazepam — brom va xlor saqlovchi aminobenzofenon [gmt_yuldashev2024] (134–135-b.).\n\nBenzofenonlar plastinkada sariq dog‘lar beradi; diazotirlash va naftol bilan qo‘shilganda AXB — qizil, ANB — yorqin zarg‘aldoq rangga kiradi, MXB (ikkilamchi amin) esa sariqligicha qoladi yoki rangsizlanadi [gmt_yuldashev2024] (134–135-b.).\n\nAsl moddalar uchun silikagelda etilatsetat–metanol–25% ammiak (85:10:5) tizimi va Dragendorf reaktivi ishlatiladi [gmt_yuldashev2024] (135-b.).",
         "ru": "Бензофеноны, образующиеся при кислотном гидролизе: хлордиазепоксид и оксазепам — 2-амино-5-хлорбензофенон (АХБ); диазепам — 2-метиламино-5-хлорбензофенон (МХБ); нитразепам — 2-амино-5-нитробензофенон (АНБ); феназепам — аминобензофенон, содержащий бром и хлор [gmt_yuldashev2024] (с. 134–135).\n\nБензофеноны дают на пластинке жёлтые пятна; после диазотирования и сочетания с нафтолом АХБ становится красным, АНБ — ярко-оранжевым, а МХБ (вторичный амин) остаётся жёлтым или обесцвечивается [gmt_yuldashev2024] (с. 134–135).\n\nДля исходных веществ применяют систему этилацетат–метанол–25% аммиак (85:10:5) на силикагеле и реактив Драгендорфа [gmt_yuldashev2024] (с. 135).",
         "en": "Benzophenones formed by acid hydrolysis: chlordiazepoxide and oxazepam — 2-amino-5-chlorobenzophenone (ACB); diazepam — 2-methylamino-5-chlorobenzophenone (MACB); nitrazepam — 2-amino-5-nitrobenzophenone (ANB); phenazepam — an aminobenzophenone carrying bromine and chlorine [gmt_yuldashev2024] (pp. 134–135).\n\nBenzophenones show as yellow spots; after diazotisation and coupling with naphthol, ACB turns red and ANB bright orange, whereas MACB (a secondary amine) stays yellow or fades [gmt_yuldashev2024] (pp. 134–135).\n\nFor the parent drugs, ethyl acetate–methanol–25% ammonia (85:10:5) on silica with Dragendorff reagent is used [gmt_yuldashev2024] (p. 135)."
       },
-      "citations": ["gmt_yuldashev2024"]
+      "citations": [
+        "gmt_yuldashev2024"
+      ]
     },
     {
       "key": "instrumental",
-      "title": {"uz": "Instrumental tasdiqlash", "ru": "Инструментальное подтверждение", "en": "Instrumental confirmation"},
+      "title": {
+        "uz": "Instrumental tasdiqlash",
+        "ru": "Инструментальное подтверждение",
+        "en": "Instrumental confirmation"
+      },
       "body": {
         "uz": "• EI mass-spektr (NIST yozuvlari): diazepam — m/z 256 (asosiy), 283, 284; nitrazepam — m/z 253 va 280 (asosiy cho‘qqi yozuvga qarab almashadi), 206 [gmt_pubchem_2026]. Darslikdagi diazepam (256, 283, 284) va nitrazepam (280, 253) qiymatlari shu ma’lumotlarga mos [gmt_yuldashev2024] (139, 141-b.).\n• UB-spektrofotometriya va FEK miqdoriy aniqlash uchun ishlatiladi [gmt_yuldashev2024] (136–137-b.).\n• Immunokimyoviy skrining natijasi tasdiqlanmaguncha taxminiy [saitman2014].",
         "ru": "• Масс-спектр ЭИ (записи NIST): диазепам — m/z 256 (основной), 283, 284; нитразепам — m/z 253 и 280 (основной пик меняется в зависимости от записи), 206 [gmt_pubchem_2026]. Значения пособия для диазепама (256, 283, 284) и нитразепама (280, 253) с этим согласуются [gmt_yuldashev2024] (с. 139, 141).\n• Для количественного определения применяют УФ-спектрофотометрию и ФЭК [gmt_yuldashev2024] (с. 136–137).\n• Результат иммунохимического скрининга предварителен до подтверждения [saitman2014].",
         "en": "• EI mass spectra (NIST records): diazepam — m/z 256 (base), 283, 284; nitrazepam — m/z 253 and 280 (the base peak alternates between records), 206 [gmt_pubchem_2026]. The textbook values for diazepam (256, 283, 284) and nitrazepam (280, 253) agree [gmt_yuldashev2024] (pp. 139, 141).\n• UV spectrophotometry and colorimetry are used for quantitation [gmt_yuldashev2024] (pp. 136–137).\n• Immunochemical screening stays presumptive until confirmed [saitman2014]."
       },
-      "citations": ["gmt_pubchem_2026", "gmt_yuldashev2024", "saitman2014"]
+      "citations": [
+        "gmt_pubchem_2026",
+        "gmt_yuldashev2024",
+        "saitman2014"
+      ]
     },
     {
       "key": "interpretation",
-      "title": {"uz": "Talqin: gidrolizning cheklovi", "ru": "Интерпретация: ограничение гидролиза", "en": "Interpretation: the limit of hydrolysis"},
+      "title": {
+        "uz": "Talqin: gidrolizning cheklovi",
+        "ru": "Интерпретация: ограничение гидролиза",
+        "en": "Interpretation: the limit of hydrolysis"
+      },
       "body": {
         "uz": "Gidroliz usuli guruhni ko‘rsatadi, lekin bitta dorini aniqlamaydi: xlordiazepoksid, oksazepam va diazepamning dezmetil-metaboliti bir xil AXB ni beradi [gmt_yuldashev2024] (134–135-b.). Shuning uchun aniq modda (va uning metaboliti emasligi) asl molekulani GX-MS yoki SX-MS bilan aniqlash orqali hal qilinadi [maurer2004, swgdrug2024].",
         "ru": "Метод гидролиза указывает на группу, но не на конкретный препарат: хлордиазепоксид, оксазепам и десметилметаболит диазепама дают один и тот же АХБ [gmt_yuldashev2024] (с. 134–135). Поэтому конкретное вещество (и то, что это не метаболит) устанавливают определением исходной молекулы ГХ-МС или ЖХ-МС [maurer2004, swgdrug2024].",
         "en": "The hydrolysis method points to the class but not to a single drug: chlordiazepoxide, oxazepam and the desmethyl metabolite of diazepam all give the same ACB [gmt_yuldashev2024] (pp. 134–135). The actual substance (and that it is not a metabolite) is therefore established by detecting the intact molecule by GC-MS or LC-MS [maurer2004, swgdrug2024]."
       },
-      "citations": ["gmt_yuldashev2024", "maurer2004", "swgdrug2024"]
+      "citations": [
+        "gmt_yuldashev2024",
+        "maurer2004",
+        "swgdrug2024"
+      ]
     },
     {
       "key": "cautions",
-      "title": {"uz": "Darslikdagi tuzatilgan joylar", "ru": "Исправления по сравнению с пособием", "en": "Corrections to the textbook"},
+      "title": {
+        "uz": "Darslikdagi tuzatilgan joylar",
+        "ru": "Исправления по сравнению с пособием",
+        "en": "Corrections to the textbook"
+      },
       "body": {
         "uz": "• Darslikning bir joyida nitrazepam gidrolizidan AXB hosil bo‘lishi yozilgan [gmt_yuldashev2024] (134-b.), xuddi shu sahifadagi sxema va jadvalda esa ANB [gmt_yuldashev2024] (135-b.); nitroguruh saqlovchi nitrazepam ANB beradi.\n• Qondagi «zaharli» va «o‘limga olib keluvchi» umumiy konsentratsiyalar [gmt_yuldashev2024] (133-b.) moddaga xos emas va tekshirilmagan — keltirilmaydi.\n• Darslikdagi YuQX tizimlarida benzol ishlatilgan [gmt_yuldashev2024] (134-b.); laboratoriya xavfsizlik qoidalariga ko‘ra almashtirish masalasi alohida ko‘rib chiqiladi.",
         "ru": "• В одном месте пособия указано, что при гидролизе нитразепама образуется АХБ [gmt_yuldashev2024] (с. 134), а в схеме и таблице — АНБ [gmt_yuldashev2024] (с. 135); нитразепам, содержащий нитрогруппу, даёт АНБ.\n• Обобщённые «токсические» и «смертельные» концентрации в крови [gmt_yuldashev2024] (с. 133) не специфичны для веществ и не проверены — не приводятся.\n• В системах ТСХ пособия используется бензол [gmt_yuldashev2024] (с. 134); его замена решается по правилам безопасности лаборатории.",
         "en": "• In one place the textbook states that nitrazepam hydrolysis gives ACB [gmt_yuldashev2024] (p. 134), while the scheme and table give ANB [gmt_yuldashev2024] (p. 135); nitrazepam, which carries the nitro group, gives ANB.\n• Generic «toxic» and «lethal» blood concentrations [gmt_yuldashev2024] (p. 133) are not substance-specific and were not verified — not reproduced.\n• The textbook's TLC systems use benzene [gmt_yuldashev2024] (p. 134); substitution is a matter for the laboratory's safety rules."
       },
-      "citations": ["gmt_yuldashev2024"]
+      "citations": [
+        "gmt_yuldashev2024"
+      ]
     }
   ],
   "keywords": {
-    "uz": ["benzodiazepinlar", "diazepam", "xlordiazepoksid", "oksazepam", "nitrazepam", "fenazepam", "aminobenzofenon", "gidroliz", "Bratton–Marshall", "Simmerman testi", "Vitali–Moren", "trankvilizatorlar", "Izotov usuli"],
-    "ru": ["бензодиазепины", "диазепам", "хлордиазепоксид", "оксазепам", "нитразепам", "феназепам", "аминобензофенон", "гидролиз", "Браттон–Маршалл", "тест Циммермана", "Витали–Морен", "транквилизаторы"],
-    "en": ["benzodiazepines", "diazepam", "chlordiazepoxide", "oxazepam", "nitrazepam", "phenazepam", "aminobenzophenone", "hydrolysis", "Bratton-Marshall", "Zimmermann test", "Vitali-Morin", "tranquillisers"]
+    "uz": [
+      "benzodiazepinlar",
+      "diazepam",
+      "xlordiazepoksid",
+      "oksazepam",
+      "nitrazepam",
+      "fenazepam",
+      "aminobenzofenon",
+      "gidroliz",
+      "Bratton–Marshall",
+      "Simmerman testi",
+      "Vitali–Moren",
+      "trankvilizatorlar",
+      "Izotov usuli"
+    ],
+    "ru": [
+      "бензодиазепины",
+      "диазепам",
+      "хлордиазепоксид",
+      "оксазепам",
+      "нитразепам",
+      "феназепам",
+      "аминобензофенон",
+      "гидролиз",
+      "Браттон–Маршалл",
+      "тест Циммермана",
+      "Витали–Морен",
+      "транквилизаторы"
+    ],
+    "en": [
+      "benzodiazepines",
+      "diazepam",
+      "chlordiazepoxide",
+      "oxazepam",
+      "nitrazepam",
+      "phenazepam",
+      "aminobenzophenone",
+      "hydrolysis",
+      "Bratton-Marshall",
+      "Zimmermann test",
+      "Vitali-Morin",
+      "tranquillisers"
+    ]
   },
   "omitted_unverified": [
     "Blood toxic/lethal concentrations 5-20 / 50 mg/L (p. 133): generic, not verified.",
@@ -103,58 +198,162 @@
   "quiz": [
     {
       "id": "gmt.bzd.1",
-      "question": {"uz": "Diazepam kislotali gidrolizda qaysi benzofenonni beradi?", "ru": "Какой бензофенон образует диазепам при кислотном гидролизе?", "en": "Which benzophenone does diazepam give on acid hydrolysis?"},
-      "answer": {"uz": "2-metilamino-5-xlorbenzofenon (MXB)", "ru": "2-метиламино-5-хлорбензофенон (МХБ)", "en": "2-methylamino-5-chlorobenzophenone (MACB)"},
-      "distractors": [
-        {"uz": "2-amino-5-xlorbenzofenon (AXB)", "ru": "2-амино-5-хлорбензофенон (АХБ)", "en": "2-amino-5-chlorobenzophenone (ACB)"},
-        {"uz": "2-amino-5-nitrobenzofenon (ANB)", "ru": "2-амино-5-нитробензофенон (АНБ)", "en": "2-amino-5-nitrobenzophenone (ANB)"},
-        {"uz": "Benzoy kislota", "ru": "Бензойная кислота", "en": "Benzoic acid"}
-      ],
-      "citations": [{"key": "gmt_yuldashev2024", "pages": "134–135"}]
+      "q": {
+        "uz": "Diazepam kislotali gidrolizda qaysi benzofenonni beradi?",
+        "ru": "Какой бензофенон образует диазепам при кислотном гидролизе?",
+        "en": "Which benzophenone does diazepam give on acid hydrolysis?"
+      },
+      "a": {
+        "uz": "2-metilamino-5-xlorbenzofenon (MXB)",
+        "ru": "2-метиламино-5-хлорбензофенон (МХБ)",
+        "en": "2-methylamino-5-chlorobenzophenone (MACB)"
+      },
+      "d": {
+        "uz": [
+          "2-amino-5-xlorbenzofenon (AXB)",
+          "2-amino-5-nitrobenzofenon (ANB)",
+          "Benzoy kislota"
+        ],
+        "ru": [
+          "2-амино-5-хлорбензофенон (АХБ)",
+          "2-амино-5-нитробензофенон (АНБ)",
+          "Бензойная кислота"
+        ],
+        "en": [
+          "2-amino-5-chlorobenzophenone (ACB)",
+          "2-amino-5-nitrobenzophenone (ANB)",
+          "Benzoic acid"
+        ]
+      },
+      "pages": "134–135"
     },
     {
       "id": "gmt.bzd.2",
-      "question": {"uz": "Nitrazepam gidrolizida qaysi benzofenon hosil bo‘ladi?", "ru": "Какой бензофенон образуется при гидролизе нитразепама?", "en": "Which benzophenone is formed when nitrazepam is hydrolysed?"},
-      "answer": {"uz": "2-amino-5-nitrobenzofenon (ANB)", "ru": "2-амино-5-нитробензофенон (АНБ)", "en": "2-amino-5-nitrobenzophenone (ANB)"},
-      "distractors": [
-        {"uz": "2-amino-5-xlorbenzofenon (AXB)", "ru": "2-амино-5-хлорбензофенон (АХБ)", "en": "2-amino-5-chlorobenzophenone (ACB)"},
-        {"uz": "2-metilamino-5-xlorbenzofenon (MXB)", "ru": "2-метиламино-5-хлорбензофенон (МХБ)", "en": "2-methylamino-5-chlorobenzophenone (MACB)"},
-        {"uz": "Antranil kislota", "ru": "Антраниловая кислота", "en": "Anthranilic acid"}
-      ],
-      "citations": [{"key": "gmt_yuldashev2024", "pages": "135"}]
+      "q": {
+        "uz": "Nitrazepam gidrolizida qaysi benzofenon hosil bo‘ladi?",
+        "ru": "Какой бензофенон образуется при гидролизе нитразепама?",
+        "en": "Which benzophenone is formed when nitrazepam is hydrolysed?"
+      },
+      "a": {
+        "uz": "2-amino-5-nitrobenzofenon (ANB)",
+        "ru": "2-амино-5-нитробензофенон (АНБ)",
+        "en": "2-amino-5-nitrobenzophenone (ANB)"
+      },
+      "d": {
+        "uz": [
+          "2-amino-5-xlorbenzofenon (AXB)",
+          "2-metilamino-5-xlorbenzofenon (MXB)",
+          "Antranil kislota"
+        ],
+        "ru": [
+          "2-амино-5-хлорбензофенон (АХБ)",
+          "2-метиламино-5-хлорбензофенон (МХБ)",
+          "Антраниловая кислота"
+        ],
+        "en": [
+          "2-amino-5-chlorobenzophenone (ACB)",
+          "2-methylamino-5-chlorobenzophenone (MACB)",
+          "Anthranilic acid"
+        ]
+      },
+      "pages": "135"
     },
     {
       "id": "gmt.bzd.3",
-      "question": {"uz": "Nima uchun diazotirlashdan keyin MXB dog‘i rangli bo‘yoq bermaydi?", "ru": "Почему пятно МХБ не даёт окрашенного красителя после диазотирования?", "en": "Why does the MACB spot not form a coloured dye after diazotisation?"},
-      "answer": {"uz": "Unda birlamchi emas, ikkilamchi aromatik amin bor", "ru": "В нём не первичный, а вторичный ароматический амин", "en": "It has a secondary, not a primary, aromatic amine"},
-      "distractors": [
-        {"uz": "U plastinkada umuman ko‘rinmaydi", "ru": "Оно вообще не видно на пластинке", "en": "It is not visible on the plate at all"},
-        {"uz": "U nitroguruh saqlaydi", "ru": "Оно содержит нитрогруппу", "en": "It contains a nitro group"},
-        {"uz": "U gidrolizda parchalanib ketadi", "ru": "Оно разрушается при гидролизе", "en": "It is destroyed by hydrolysis"}
-      ],
-      "citations": [{"key": "gmt_yuldashev2024", "pages": "134–136"}]
+      "q": {
+        "uz": "Nima uchun diazotirlashdan keyin MXB dog‘i rangli bo‘yoq bermaydi?",
+        "ru": "Почему пятно МХБ не даёт окрашенного красителя после диазотирования?",
+        "en": "Why does the MACB spot not form a coloured dye after diazotisation?"
+      },
+      "a": {
+        "uz": "Unda birlamchi emas, ikkilamchi aromatik amin bor",
+        "ru": "В нём не первичный, а вторичный ароматический амин",
+        "en": "It has a secondary, not a primary, aromatic amine"
+      },
+      "d": {
+        "uz": [
+          "U plastinkada umuman ko‘rinmaydi",
+          "U nitroguruh saqlaydi",
+          "U gidrolizda parchalanib ketadi"
+        ],
+        "ru": [
+          "Оно вообще не видно на пластинке",
+          "Оно содержит нитрогруппу",
+          "Оно разрушается при гидролизе"
+        ],
+        "en": [
+          "It is not visible on the plate at all",
+          "It contains a nitro group",
+          "It is destroyed by hydrolysis"
+        ]
+      },
+      "pages": "134–136"
     },
     {
       "id": "gmt.bzd.4",
-      "question": {"uz": "Qaysi benzodiazepin Simmerman testida rang BERMAYDI?", "ru": "Какой бензодиазепин НЕ окрашивается в тесте Циммермана?", "en": "Which benzodiazepine gives NO colour in the Zimmermann test?"},
-      "answer": {"uz": "Oksazepam", "ru": "Оксазепам", "en": "Oxazepam"},
-      "distractors": [
-        {"uz": "Diazepam", "ru": "Диазепам", "en": "Diazepam"},
-        {"uz": "Hammasi bir xil qizil-binafsha beradi", "ru": "Все дают одинаковую красно-фиолетовую", "en": "All give the same reddish-purple"},
-        {"uz": "Hech biri rang bermaydi", "ru": "Ни один не окрашивается", "en": "None gives any colour"}
-      ],
-      "citations": [{"key": "gmt_unodc_rapid_tests", "pages": "50"}]
+      "q": {
+        "uz": "Qaysi benzodiazepin Simmerman testida rang BERMAYDI?",
+        "ru": "Какой бензодиазепин НЕ окрашивается в тесте Циммермана?",
+        "en": "Which benzodiazepine gives NO colour in the Zimmermann test?"
+      },
+      "a": {
+        "uz": "Oksazepam",
+        "ru": "Оксазепам",
+        "en": "Oxazepam"
+      },
+      "d": {
+        "uz": [
+          "Diazepam",
+          "Hammasi bir xil qizil-binafsha beradi",
+          "Hech biri rang bermaydi"
+        ],
+        "ru": [
+          "Диазепам",
+          "Все дают одинаковую красно-фиолетовую",
+          "Ни один не окрашивается"
+        ],
+        "en": [
+          "Diazepam",
+          "All give the same reddish-purple",
+          "None gives any colour"
+        ]
+      },
+      "cite": [
+        "gmt_unodc_rapid_tests"
+      ]
     },
     {
       "id": "gmt.bzd.5",
-      "question": {"uz": "Diazepamning EI mass-spektridagi asosiy cho‘qqi qaysi?", "ru": "Какой основной пик в ЭИ масс-спектре диазепама?", "en": "What is the base peak in the EI mass spectrum of diazepam?"},
-      "answer": {"uz": "m/z 256", "ru": "m/z 256", "en": "m/z 256"},
-      "distractors": [
-        {"uz": "m/z 204", "ru": "m/z 204", "en": "m/z 204"},
-        {"uz": "m/z 245", "ru": "m/z 245", "en": "m/z 245"},
-        {"uz": "m/z 72", "ru": "m/z 72", "en": "m/z 72"}
-      ],
-      "citations": [{"key": "gmt_pubchem_2026"}]
+      "q": {
+        "uz": "Diazepamning EI mass-spektridagi asosiy cho‘qqi qaysi?",
+        "ru": "Какой основной пик в ЭИ масс-спектре диазепама?",
+        "en": "What is the base peak in the EI mass spectrum of diazepam?"
+      },
+      "a": {
+        "uz": "m/z 256",
+        "ru": "m/z 256",
+        "en": "m/z 256"
+      },
+      "d": {
+        "uz": [
+          "m/z 204",
+          "m/z 245",
+          "m/z 72"
+        ],
+        "ru": [
+          "m/z 204",
+          "m/z 245",
+          "m/z 72"
+        ],
+        "en": [
+          "m/z 204",
+          "m/z 245",
+          "m/z 72"
+        ]
+      },
+      "cite": [
+        "gmt_pubchem_2026"
+      ]
     }
   ]
 }

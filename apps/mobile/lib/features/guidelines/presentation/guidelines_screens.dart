@@ -15,7 +15,9 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
+import '../../../domain/evidence/citation_format.dart';
 import '../../../domain/guidelines/guideline_models.dart';
+import '../../evidence/presentation/citation_sheet.dart';
 import '../../support/presentation/support_widgets.dart' show ReportErrorMenu;
 import '../../tools/tool_strings.dart';
 import 'practice_catalog_screen.dart';
@@ -298,21 +300,16 @@ class _GuidelineDetailScreenState extends ConsumerState<GuidelineDetailScreen> {
                     icon: Icons.menu_book_outlined,
                     text: l.guidelineIndependentNote,
                   ),
-                  if (card.sourceAccess case final a?
-                      when a.isFree && a.byAuthorPermission)
-                    if (bundle.references[a.sourceKey] case final r?) ...[
-                      const SizedBox(height: FeSpace.xs),
-                      FeBanner(
-                        key: const Key('guideline.authorPermissionFree'),
-                        icon: Icons.volunteer_activism_outlined,
-                        tone: FeBannerTone.review,
-                        text: l.guidelineAuthorPermissionFree(
-                          r.firstAuthor,
-                          r.title ?? '',
-                          r.year ?? '',
-                        ),
-                      ),
-                    ],
+                  if (bundle.citesYuldashevMaterial(card)) ...[
+                    const SizedBox(height: FeSpace.xs),
+                    FeBanner(
+                      key: const Key('guideline.toksAttribution'),
+                      icon: Icons.school_outlined,
+                      text: refs.any((r) => r.key.startsWith('gmt_'))
+                          ? l.guidelineGmtAttribution
+                          : l.guidelineToksAttribution,
+                    ),
+                  ],
                   if (title.isFallback) ...[
                     const SizedBox(height: FeSpace.xs),
                     FeBanner(
@@ -416,7 +413,14 @@ class _GuidelineDetailScreenState extends ConsumerState<GuidelineDetailScreen> {
                   if (refs.isNotEmpty) ...[
                     KeyedSubtree(
                       key: _anchor('refs'),
-                      child: FeSectionHeader(l.guidelineReferences),
+                      child: FeSectionHeader(
+                        l.guidelineReferences,
+                        actionLabel: l.citeAllSources,
+                        onAction: () => showCitationSheet(context, [
+                          for (final r in refs)
+                            CitationData.fromGuidelineReference(r),
+                        ], asList: true),
+                      ),
                     ),
                     for (var i = 0; i < refs.length; i++)
                       _ReferenceTile(number: i + 1, reference: refs[i]),
@@ -490,16 +494,24 @@ class _ReferenceTile extends StatelessWidget {
               children: [
                 SelectableText(reference.citation, style: t.bodySmall),
                 if (ids.isNotEmpty) Text(ids, style: t.labelSmall),
-                if (link != null)
-                  Align(
-                    alignment: AlignmentDirectional.centerStart,
-                    child: TextButton.icon(
-                      onPressed: () =>
-                          launchUrl(link, mode: LaunchMode.externalApplication),
-                      icon: const Icon(Icons.open_in_new, size: 16),
-                      label: Text(l.guidelineOpenReference),
+                Wrap(
+                  crossAxisAlignment: WrapCrossAlignment.center,
+                  children: [
+                    if (link != null)
+                      TextButton.icon(
+                        onPressed: () => launchUrl(
+                          link,
+                          mode: LaunchMode.externalApplication,
+                        ),
+                        icon: const Icon(Icons.open_in_new, size: 16),
+                        label: Text(l.guidelineOpenReference),
+                      ),
+                    CiteButton(
+                      key: Key('guideline.cite.${reference.key}'),
+                      citation: CitationData.fromGuidelineReference(reference),
                     ),
-                  ),
+                  ],
+                ),
               ],
             ),
           ),

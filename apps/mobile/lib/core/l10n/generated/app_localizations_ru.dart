@@ -5964,7 +5964,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get studyQuizNote =>
-      'Неверные варианты — другие записи того же типа из приложения или, для вопросов к руководствам, варианты, заданные редакцией в карточке; у каждого вопроса указан источник.';
+      'Неверные варианты — другие записи того же типа из приложения; ничего не придумано.';
 
   @override
   String studyQuizQuestionOf(int current, int total) {
@@ -6878,15 +6878,218 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String guidelineAuthorPermissionFree(
-    String author,
-    String title,
-    String year,
-  ) {
-    return 'Источник: $author и др., «$title», $year — с разрешения автора, бесплатно для всех.';
+  String get toolBeerLambertName => 'Закон Бугера–Ламберта–Бера (A = ε·l·c)';
+
+  @override
+  String get toolBeerLambertDesc =>
+      'Расчёт оптической плотности, концентрации или коэффициента поглощения по A = ε·l·c — на молярной или массовой основе, с единицами.';
+
+  @override
+  String get calcBeerAbsorbance => 'Оптическая плотность';
+
+  @override
+  String get calcBeerAbsorptivityMolar => 'Молярный коэффициент поглощения';
+
+  @override
+  String get calcBeerAbsorptivityMass =>
+      'Удельный (массовый) коэффициент поглощения';
+
+  @override
+  String get calcBeerConcentration => 'Концентрация';
+
+  @override
+  String get calcBeerPath => 'Толщина слоя (l)';
+
+  @override
+  String get calcBeerResultUnit => 'Единица результата (c)';
+
+  @override
+  String get calcBeerBasis => 'Основа коэффициента поглощения';
+
+  @override
+  String get calcBeerBasisMolar => 'Молярный (ε, моль/л)';
+
+  @override
+  String get calcBeerBasisMass => 'Массовый (a, г/л)';
+
+  @override
+  String get calcBeerFormulaNote =>
+      'A — оптическая плотность (безразмерная); ε — молярный коэффициент поглощения, л·моль⁻¹·см⁻¹ (или a — массовый, л·г⁻¹·см⁻¹); l — толщина слоя, см; c — концентрация, моль/л (или г/л).';
+
+  @override
+  String get calcBeerErrorBasis =>
+      'Единица концентрации не соответствует основе коэффициента: с молярным ε — моль/л, с массовым a — единицы типа г/л.';
+
+  @override
+  String get calcBeerAssumptionDefinition =>
+      'Определительное соотношение: оптическая плотность пропорциональна толщине слоя и концентрации. Значения коэффициентов в приложение не встроены — вводите значение из собственной калибровки или проверенного источника для той же длины волны, растворителя и pH.';
+
+  @override
+  String get calcBeerAssumptionBlank =>
+      'A — оптическая плотность образца за вычетом холостой пробы (реагентной или матричной) при выбранной длине волны.';
+
+  @override
+  String get calcBeerLimitationLinear =>
+      'Действует только в рабочем диапазоне, где линейность подтверждена калибровкой; ICH Q2(R2) §3.2.2.1 рекомендует не менее пяти концентраций по диапазону. Вне его разбавьте образец или используйте калибровочный график.';
+
+  @override
+  String get calcBeerLimitationIdentity =>
+      'Оптическая плотность не идентифицирует вещество. УФ-видимая спектрофотометрия малоспецифична; идентичность подтверждается другим методом (например, хроматографией с масс-спектрометрией).';
+
+  @override
+  String get calcBeerReference =>
+      'IUPAC Gold Book: «Beer–Lambert law», doi:10.1351/goldbook.B00626 · Swinehart DF. The Beer-Lambert law. J Chem Educ 1962;39(7):333, doi:10.1021/ed039p333 · Линейность: ICH Q2(R2) (2023), §3.2.2.1.';
+
+  @override
+  String get calcBeerRelatedTools =>
+      'Связанные инструменты: калибровка и пределы';
+
+  @override
+  String get citeCopy => 'Копировать для списка литературы';
+
+  @override
+  String get citeAllSources => 'Список всех источников';
+
+  @override
+  String citeListTitle(int count) {
+    return 'Список источников · $count';
   }
 
   @override
-  String get studyFrontGuidelineQuiz =>
-      'Вспомните ответ, затем переверните карточку';
+  String get citeStyleLabel => 'Стиль оформления';
+
+  @override
+  String get citeStyleGost => 'ГОСТ';
+
+  @override
+  String get citeStyleVancouver => 'Ванкувер';
+
+  @override
+  String get citeStyleApa => 'APA 7';
+
+  @override
+  String get citeCopyButton => 'Копировать';
+
+  @override
+  String get citeCopied => 'Ссылка скопирована';
+
+  @override
+  String citeListCopied(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Скопировано $count источников',
+      few: 'Скопировано $count источника',
+      one: 'Скопирован $count источник',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get citeVerifyNote =>
+      'Приложение — справочный инструмент: перед включением в заключение сверьте каждый источник с оригиналом.';
+
+  @override
+  String get guidelineToksAttribution =>
+      'Источник: проф. Юлдашев З.А. и соавторы, учебно-методические комплексы «Токсикологическая химия» (Ташкентский фармацевтический институт, 2025) — с разрешения автора, бесплатно для всех.';
+
+  @override
+  String get studySectionTeaching => 'Учебно-методические комплексы';
+
+  @override
+  String get studyDeckToks => 'Токсикологическая химия (Юлдашев З.А.)';
+
+  @override
+  String get studyFrontQuestion => 'Вспомните ответ и переверните карточку';
+
+  @override
+  String get studyQuizNoteAuthored =>
+      'Вопросы и неверные варианты составлены самостоятельно по фактам из карточек руководств; правильный ответ и страница указаны в цитируемом источнике.';
+
+  @override
+  String studySourcePages(String pages) {
+    return 'с. $pages';
+  }
+
+  @override
+  String reagentHazardBanner(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count предупреждений об опасности — прочитайте до приготовления',
+      few: '$count предупреждения об опасности — прочитайте до приготовления',
+      one: '$count предупреждение об опасности — прочитайте до приготовления',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get reagentHazardGhs => 'Формулировки опасности СГС (PubChem)';
+
+  @override
+  String get reagentHazardGeneral =>
+      'Общая рекомендация по безопасности (от приложения)';
+
+  @override
+  String reagentRecipeSource(String title) {
+    return 'Источник: $title';
+  }
+
+  @override
+  String get reagentMachineDraft =>
+      'Перевод — автоматический черновик, специалистом не проверен. Числа перенесены из источника без изменений; сверяйте с исходным текстом ниже.';
+
+  @override
+  String reagentVariant(String label) {
+    return 'Способ $label';
+  }
+
+  @override
+  String reagentMakeUpTo(String value) {
+    return 'до $value';
+  }
+
+  @override
+  String get reagentUnitG => 'г';
+
+  @override
+  String get reagentUnitMl => 'мл';
+
+  @override
+  String get reagentUnitL => 'л';
+
+  @override
+  String reagentDropsAmount(int count, String value) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$value капель',
+      few: '$value капли',
+      one: '$value капля',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get reagentPurpose => 'Назначение (по источнику)';
+
+  @override
+  String get reagentNote => 'Примечание из источника';
+
+  @override
+  String get reagentAmbiguity => 'Сверьте с оригиналом';
+
+  @override
+  String get reagentOriginalText => 'Исходный текст (рус.)';
+
+  @override
+  String get reagentOriginalHint =>
+      'Дословно из источника, для прослеживаемости (ошибки распознавания не исправлены).';
+
+  @override
+  String get guidelineGmtAttribution =>
+      'Источник: Юлдашев З.А. и соавт., «Анализ наркотических веществ. Учебное пособие» (Ташкентский фармацевтический институт, Ташкент, 2024) — с разрешения автора, бесплатно для всех.';
+
+  @override
+  String get studyDeckGmt => 'Анализ наркотических веществ (Юлдашев З.А.)';
 }

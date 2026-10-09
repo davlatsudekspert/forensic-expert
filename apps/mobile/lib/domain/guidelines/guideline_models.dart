@@ -98,9 +98,17 @@ class GuidelineReference {
     this.pmid,
     this.url,
     this.verifiedVia,
-    this.firstAuthor = '',
+    this.type,
+    this.authors = const [],
     this.title,
+    this.journal,
+    this.publisher,
+    this.place,
     this.year,
+    this.volume,
+    this.issue,
+    this.pages,
+    this.verifiedOn,
   });
 
   factory GuidelineReference.fromJson(Map<String, Object?> j) {
@@ -114,24 +122,21 @@ class GuidelineReference {
       final String a => a,
       _ => '',
     };
-    final venue = s('journal') ?? s('publisher') ?? '';
+    final publisher = s('publisher');
+    final venue =
+        s('journal') ??
+        (publisher != null && s('place') != null
+            ? '${s('place')}: $publisher'
+            : publisher) ??
+        '';
     final parts = <String>[
       if (authors.isNotEmpty) authors,
       if (s('year') != null) '(${s('year')})',
       if (s('title') != null) '${s('title')}.',
-      // Kitoblar: «Nashriyot, Joy» (masalan, «…, Toshkent»).
-      if (venue.isNotEmpty)
-        s('journal') == null && s('place') != null
-            ? '$venue, ${s('place')}'
-            : venue,
+      if (venue.isNotEmpty) venue,
       if (s('volume') != null) s('volume')!,
       if (s('pages') != null) s('pages')!,
     ];
-    final first = switch (j['authors']) {
-      final List<Object?> a when a.isNotEmpty => '${a.first}',
-      final String a => a,
-      _ => '',
-    };
     return GuidelineReference(
       key: s('key') ?? '',
       citation: parts.join(' ').replaceAll(RegExp(r'\s+'), ' ').trim(),
@@ -139,17 +144,25 @@ class GuidelineReference {
       pmid: s('pmid'),
       url: s('url'),
       verifiedVia: s('verified_via'),
-      firstAuthor: _initialsDotted(first.trim()),
+      type: s('type'),
+      authors: switch (j['authors']) {
+        final List<Object?> a => [
+          for (final e in a)
+            if ('$e'.trim().isNotEmpty) '$e'.trim(),
+        ],
+        final String a when a.trim().isNotEmpty => [a.trim()],
+        _ => const [],
+      },
       title: s('title'),
+      journal: s('journal'),
+      publisher: s('publisher'),
+      place: s('place'),
       year: s('year'),
+      volume: s('volume'),
+      issue: s('issue'),
+      pages: s('pages'),
+      verifiedOn: DateTime.tryParse(s('verified_on') ?? ''),
     );
-  }
-
-  /// «Yuldashev ZA» → «Yuldashev Z.A.» (qisqa atribusiya qatori uchun).
-  static String _initialsDotted(String a) {
-    final m = RegExp(r'^(.+?)\s+([A-Z]{1,3})$').firstMatch(a);
-    if (m == null) return a;
-    return '${m[1]} ${m[2]!.split('').map((c) => '$c.').join()}';
   }
 
   final String key;
@@ -159,10 +172,28 @@ class GuidelineReference {
   final String? url;
   final String? verifiedVia;
 
-  /// Birinchi muallif (initsiallar nuqta bilan), sarlavha va yil.
-  final String firstAuthor;
+  // Tuzilgan bibliografik maydonlar (iqtibos eksporti uchun; yo‘q bo‘lsa
+  // null — hech narsa to‘qib chiqarilmaydi).
+  final String? type;
+  final List<String> authors;
   final String? title;
+  final String? journal;
+  final String? publisher;
+
+  /// Nashr joyi (masalan, «Toshkent»).
+  final String? place;
   final String? year;
+  final String? volume;
+  final String? issue;
+  final String? pages;
+
+  /// Havola onlayn tekshirilgan sana (`verified_on`) — murojaat sanasi.
+  final DateTime? verifiedOn;
+
+  /// Prof. Yuldashev Z.A. o‘quv-uslubiy majmualari (muallif ruxsati bilan,
+  /// egasi qarori: barcha uchun bepul).
+  bool get isYuldashevMaterial =>
+      yuldashevReferencePrefixes.any(key.startsWith);
 
   Uri? get link {
     if (doi != null) return Uri.parse('https://doi.org/$doi');
@@ -172,6 +203,77 @@ class GuidelineReference {
     if (url != null) return Uri.tryParse(url!);
     return null;
   }
+}
+
+/// Prof. Yuldashev Z.A. materiallari kalit prefikslari (`references.json`).
+const yuldashevReferencePrefixes = ['toks_', 'dvssm_', 'gmt_'];
+
+/// Kartaga biriktirilgan o‘z-o‘zini tekshirish savoli (o‘quv rejimi uchun).
+///
+/// Savol va variantlar kartadagi faktlardan mustaqil yozilgan; manba —
+/// kartaning adabiyoti va [pages] (manbadagi sahifalar).
+@immutable
+class GuidelineQuizItem {
+  const GuidelineQuizItem({
+    required this.id,
+    required this.question,
+    required this.answer,
+    required this.distractors,
+    this.pages,
+    this.cite = const [],
+  });
+
+  static GuidelineQuizItem? fromJson(Object? j) {
+    if (j is! Map) return null;
+    final id = '${j['id'] ?? ''}'.trim();
+    final q = Tri.fromJson(j['q']);
+    final a = Tri.fromJson(j['a']);
+    if (id.isEmpty || q.values.isEmpty || a.values.isEmpty) return null;
+    final d = j['d'];
+    final perLang = <String, List<String>>{
+      if (d is Map)
+        for (final e in d.entries)
+          '${e.key}': [
+            for (final x in (e.value as List? ?? const []))
+              if ('$x'.trim().isNotEmpty) '$x'.trim(),
+          ],
+    };
+    final n = perLang.values.fold<int>(
+      0,
+      (m, l) => l.length > m ? l.length : m,
+    );
+    final distractors = <Tri>[
+      for (var i = 0; i < n; i++)
+        Tri({
+          for (final e in perLang.entries)
+            if (i < e.value.length) e.key: e.value[i],
+        }),
+    ];
+    final pages = '${j['pages'] ?? ''}'.trim();
+    return GuidelineQuizItem(
+      id: id,
+      question: q,
+      answer: a,
+      distractors: distractors,
+      pages: pages.isEmpty ? null : pages,
+      cite: [
+        for (final k in (j['cite'] as List? ?? const []))
+          if ('$k'.trim().isNotEmpty) '$k'.trim(),
+      ],
+    );
+  }
+
+  final String id;
+  final Tri question;
+  final Tri answer;
+  final List<Tri> distractors;
+
+  /// Manbadagi sahifa(lar), masalan `25, 172`.
+  final String? pages;
+
+  /// Savol aniq tayangan manba kalitlari (bo‘sh bo‘lsa — kartadagi
+  /// o‘quv-uslubiy material). [pages] o‘quv-uslubiy materialga tegishli.
+  final List<String> cite;
 }
 
 /// Yo‘riqnomalar bo‘limidagi fan guruhlari (egasi belgilagan tartibda).
@@ -206,92 +308,13 @@ enum GuidelineArea {
   }
 }
 
-/// Kartaning asosiy manbasidan foydalanish sharti (`source_access`).
-///
-/// Egasi qarori (2026-10-09): muallif ruxsati bilan olingan manbalardan
-/// (Yuldashev Z.A. va boshq.) tuzilgan kartalar, test savollari va
-/// terminlar **barcha uchun bepul** — hech qachon Pro ortida emas.
-@immutable
-class GuidelineSourceAccess {
-  const GuidelineSourceAccess({
-    required this.sourceKey,
-    required this.access,
-    this.basis,
-  });
+/// Karta kirish darajasi (`access`). Belgilanmagan — bepul.
+enum GuidelineAccess {
+  free,
+  pro;
 
-  static GuidelineSourceAccess? fromJson(Object? j) {
-    if (j is! Map) return null;
-    final key = '${j['source_key'] ?? ''}'.trim();
-    if (key.isEmpty) return null;
-    return GuidelineSourceAccess(
-      sourceKey: key,
-      access: '${j['access'] ?? ''}'.trim(),
-      basis: j['basis'] == null ? null : '${j['basis']}',
-    );
-  }
-
-  final String sourceKey;
-  final String access;
-  final String? basis;
-
-  bool get isFree => access == 'free';
-
-  /// Muallifning yozma ruxsati asosida (atribusiya qatori ko‘rsatiladi).
-  bool get byAuthorPermission =>
-      basis?.startsWith('author_permission') ?? false;
-}
-
-/// Test savoli manbasi: kalit va (kitob uchun) sahifa.
-@immutable
-class GuidelineQuizCitation {
-  const GuidelineQuizCitation(this.key, [this.pages]);
-
-  final String key;
-  final String? pages;
-}
-
-/// Karta faktlariga asoslangan, tahririyat yozgan test savoli
-/// (manbadagi test savollari ko‘chirilmaydi).
-@immutable
-class GuidelineQuizItem {
-  const GuidelineQuizItem({
-    required this.id,
-    required this.question,
-    required this.answer,
-    required this.distractors,
-    required this.citations,
-  });
-
-  static GuidelineQuizItem? fromJson(Object? j) {
-    if (j is! Map) return null;
-    final id = '${j['id'] ?? ''}'.trim();
-    final q = Tri.fromJson(j['question']);
-    final a = Tri.fromJson(j['answer']);
-    if (id.isEmpty || q.values.isEmpty || a.values.isEmpty) return null;
-    return GuidelineQuizItem(
-      id: id,
-      question: q,
-      answer: a,
-      distractors: [
-        for (final d in (j['distractors'] as List? ?? const []))
-          if (Tri.fromJson(d) case final t when t.values.isNotEmpty) t,
-      ],
-      citations: [
-        for (final c in (j['citations'] as List? ?? const []))
-          if (c is Map && c['key'] != null)
-            GuidelineQuizCitation(
-              '${c['key']}',
-              c['pages'] == null ? null : '${c['pages']}',
-            ),
-      ],
-    );
-  }
-
-  final String id;
-  final Tri question;
-  final Tri answer;
-  final List<Tri> distractors;
-  final List<GuidelineQuizCitation> citations;
+  static GuidelineAccess parse(Object? v) =>
+      '$v'.toLowerCase() == 'pro' ? pro : free;
 }
 
 @immutable
@@ -307,7 +330,7 @@ class GuidelineCard {
     this.keywords = const {},
     this.translationStatus = const {},
     this.relatedToolIds = const [],
-    this.sourceAccess,
+    this.access = GuidelineAccess.free,
     this.quiz = const [],
   });
 
@@ -343,7 +366,7 @@ class GuidelineCard {
       relatedToolIds: [
         for (final t in (j['related_tool_ids'] as List? ?? const [])) '$t',
       ],
-      sourceAccess: GuidelineSourceAccess.fromJson(j['source_access']),
+      access: GuidelineAccess.parse(j['access']),
       quiz: [
         for (final q in (j['quiz'] as List? ?? const []))
           ?GuidelineQuizItem.fromJson(q),
@@ -373,11 +396,13 @@ class GuidelineCard {
   final Map<String, GuidelineTranslationStatus> translationStatus;
   final List<String> relatedToolIds;
 
-  /// Asosiy manbadan foydalanish sharti (bo‘lmasa — `null`).
-  final GuidelineSourceAccess? sourceAccess;
+  /// Kirish darajasi. Yo‘riqnomalar bepul; `pro` faqat aniq belgilansa.
+  final GuidelineAccess access;
 
-  /// Kartadagi faktlar bo‘yicha test savollari (manbasi bilan).
+  /// O‘quv rejimi uchun savollar (bo‘lmasa — bo‘sh).
   final List<GuidelineQuizItem> quiz;
+
+  bool get isFree => access == GuidelineAccess.free;
 
   GuidelineArea get area => GuidelineArea.forCodes(disciplineCodes);
 
@@ -424,6 +449,11 @@ class GuidelineBundle {
     }
     return null;
   }
+
+  /// Karta Prof. Yuldashev Z.A. materiallariga tayanadimi (manba qatori
+  /// ko‘rsatiladi; egasi qarori bo‘yicha bunday kontent har doim bepul).
+  bool citesYuldashevMaterial(GuidelineCard card) =>
+      referencesOf(card).any((r) => r.isYuldashevMaterial);
 
   /// Karta bo‘yicha ishlatilgan manbalar — birinchi uchrash tartibida
   /// raqamlanadi ([1], [2], …).

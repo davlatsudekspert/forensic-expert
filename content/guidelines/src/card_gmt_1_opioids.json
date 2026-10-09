@@ -12,11 +12,7 @@
     "en": "DRAFT"
   },
   "related_tool_ids": [],
-  "source_access": {
-    "source_key": "gmt_yuldashev2024",
-    "access": "free",
-    "basis": "author_permission_2026-10-09"
-  },
+  "access": "free",
   "title": {
     "uz": "Opiatlar va opioidlar: morfin, kodein, geroin, sintetik opioidlar",
     "ru": "Опиаты и опиоиды: морфин, кодеин, героин, синтетические опиоиды",
@@ -253,296 +249,262 @@
   "quiz": [
     {
       "id": "gmt.op.1",
-      "question": {
+      "q": {
         "uz": "Morfinni kodein va geroindan qaysi oddiy reaktiv bilan farqlash mumkin?",
         "ru": "Каким простым реактивом можно отличить морфин от кодеина и героина?",
         "en": "Which simple reagent distinguishes morphine from codeine and heroin?"
       },
-      "answer": {
+      "a": {
         "uz": "Temir(III) xlorid — morfin ko‘k rang beradi",
         "ru": "Хлорид железа(III) — морфин даёт синее окрашивание",
         "en": "Iron(III) chloride — morphine turns blue"
       },
-      "distractors": [
-        {
-          "uz": "Markis reaktivi — faqat morfin rang beradi",
-          "ru": "Реактив Марки — окрашивается только морфин",
-          "en": "Marquis reagent — only morphine reacts"
-        },
-        {
-          "uz": "Kobalt tiotsianat — morfin ko‘k rang beradi",
-          "ru": "Тиоцианат кобальта — морфин даёт синее окрашивание",
-          "en": "Cobalt thiocyanate — morphine turns blue"
-        },
-        {
-          "uz": "Dille–Koppani — morfin binafsha rang beradi",
-          "ru": "Дилле–Коппани — морфин даёт фиолетовое окрашивание",
-          "en": "Dille–Koppanyi — morphine turns violet"
-        }
-      ],
-      "citations": [
-        {
-          "key": "gmt_yuldashev2024",
-          "pages": "23"
-        }
-      ]
+      "d": {
+        "uz": [
+          "Markis reaktivi — faqat morfin rang beradi",
+          "Kobalt tiotsianat — morfin ko‘k rang beradi",
+          "Dille–Koppani — morfin binafsha rang beradi"
+        ],
+        "ru": [
+          "Реактив Марки — окрашивается только морфин",
+          "Тиоцианат кобальта — морфин даёт синее окрашивание",
+          "Дилле–Коппани — морфин даёт фиолетовое окрашивание"
+        ],
+        "en": [
+          "Marquis reagent — only morphine reacts",
+          "Cobalt thiocyanate — morphine turns blue",
+          "Dille–Koppanyi — morphine turns violet"
+        ]
+      },
+      "pages": "23"
     },
     {
       "id": "gmt.op.2",
-      "question": {
+      "q": {
         "uz": "Geroin iste’molining eng muhim belgi-metaboliti qaysi?",
         "ru": "Какой метаболит — главный маркер употребления героина?",
         "en": "Which metabolite is the key marker of heroin use?"
       },
-      "answer": {
+      "a": {
         "uz": "6-monoatsetilmorfin (6-MAM)",
         "ru": "6-моноацетилморфин (6-МАМ)",
         "en": "6-monoacetylmorphine (6-MAM)"
       },
-      "distractors": [
-        {
-          "uz": "Norkodein",
-          "ru": "Норкодеин",
-          "en": "Norcodeine"
-        },
-        {
-          "uz": "Mekon kislotasi",
-          "ru": "Меконовая кислота",
-          "en": "Meconic acid"
-        },
-        {
-          "uz": "Benzoilekgonin",
-          "ru": "Бензоилэкгонин",
-          "en": "Benzoylecgonine"
-        }
-      ],
-      "citations": [
-        {
-          "key": "gmt_yuldashev2024",
-          "pages": "31, 35"
-        }
-      ]
+      "d": {
+        "uz": [
+          "Norkodein",
+          "Mekon kislotasi",
+          "Benzoilekgonin"
+        ],
+        "ru": [
+          "Норкодеин",
+          "Меконовая кислота",
+          "Бензоилэкгонин"
+        ],
+        "en": [
+          "Norcodeine",
+          "Meconic acid",
+          "Benzoylecgonine"
+        ]
+      },
+      "pages": "31, 35"
     },
     {
       "id": "gmt.op.3",
-      "question": {
+      "q": {
         "uz": "Opiyni omnopondan farqlashga qaysi moddalar yordam beradi?",
         "ru": "Какие вещества помогают отличить опий от омнопона?",
         "en": "Which substances help distinguish opium from omnopon?"
       },
-      "answer": {
+      "a": {
         "uz": "Mekon kislotasi va mekonin (omnoponda yo‘q)",
         "ru": "Меконовая кислота и меконин (в омнопоне отсутствуют)",
         "en": "Meconic acid and meconin (absent from omnopon)"
       },
-      "distractors": [
-        {
-          "uz": "Morfin va kodein",
-          "ru": "Морфин и кодеин",
-          "en": "Morphine and codeine"
-        },
-        {
-          "uz": "6-MAM va morfin",
-          "ru": "6-МАМ и морфин",
-          "en": "6-MAM and morphine"
-        },
-        {
-          "uz": "Papaverin va tebain",
-          "ru": "Папаверин и тебаин",
-          "en": "Papaverine and thebaine"
-        }
-      ],
-      "citations": [
-        {
-          "key": "gmt_yuldashev2024",
-          "pages": "16–17"
-        }
-      ]
+      "d": {
+        "uz": [
+          "Morfin va kodein",
+          "6-MAM va morfin",
+          "Papaverin va tebain"
+        ],
+        "ru": [
+          "Морфин и кодеин",
+          "6-МАМ и морфин",
+          "Папаверин и тебаин"
+        ],
+        "en": [
+          "Morphine and codeine",
+          "6-MAM and morphine",
+          "Papaverine and thebaine"
+        ]
+      },
+      "pages": "16–17"
     },
     {
       "id": "gmt.op.4",
-      "question": {
+      "q": {
         "uz": "Markis reaktivi morfin, kodein va geroin bilan qanday rang beradi?",
         "ru": "Какую окраску даёт реактив Марки с морфином, кодеином и героином?",
         "en": "What colour does Marquis reagent give with morphine, codeine and heroin?"
       },
-      "answer": {
+      "a": {
         "uz": "Binafshadan qizil-binafshagacha",
         "ru": "От фиолетовой до красно-фиолетовой",
         "en": "Violet to reddish-purple"
       },
-      "distractors": [
-        {
-          "uz": "Zarg‘aldoqdan jigarranggacha",
-          "ru": "От оранжевой до коричневой",
-          "en": "Orange to brown"
-        },
-        {
-          "uz": "Ko‘k, xloroform qatlamida saqlanadi",
-          "ru": "Синяя, сохраняется в хлороформном слое",
-          "en": "Blue, persisting in the chloroform layer"
-        },
-        {
-          "uz": "Rang hosil bo‘lmaydi",
-          "ru": "Окраска не появляется",
-          "en": "No colour"
-        }
-      ],
-      "citations": [
-        {
-          "key": "gmt_unodc_rapid_tests",
-          "pages": "38"
-        }
+      "d": {
+        "uz": [
+          "Zarg‘aldoqdan jigarranggacha",
+          "Ko‘k, xloroform qatlamida saqlanadi",
+          "Rang hosil bo‘lmaydi"
+        ],
+        "ru": [
+          "От оранжевой до коричневой",
+          "Синяя, сохраняется в хлороформном слое",
+          "Окраска не появляется"
+        ],
+        "en": [
+          "Orange to brown",
+          "Blue, persisting in the chloroform layer",
+          "No colour"
+        ]
+      },
+      "cite": [
+        "gmt_unodc_rapid_tests"
       ]
     },
     {
       "id": "gmt.op.5",
-      "question": {
+      "q": {
         "uz": "Petidinning (meperidin) to‘g‘ri kimyoviy nomi qaysi?",
         "ru": "Каково правильное химическое название петидина (меперидина)?",
         "en": "What is the correct chemical name of pethidine (meperidine)?"
       },
-      "answer": {
+      "a": {
         "uz": "Etil 1-metil-4-fenilpiperidin-4-karboksilat",
         "ru": "Этил-1-метил-4-фенилпиперидин-4-карбоксилат",
         "en": "Ethyl 1-methyl-4-phenylpiperidine-4-carboxylate"
       },
-      "distractors": [
-        {
-          "uz": "1-metil-4-etinil-4-fenilpiperidin",
-          "ru": "1-метил-4-этинил-4-фенилпиперидин",
-          "en": "1-methyl-4-ethynyl-4-phenylpiperidine"
-        },
-        {
-          "uz": "6-dimetilamino-4,4-difenil-3-geptanon",
-          "ru": "6-диметиламино-4,4-дифенил-3-гептанон",
-          "en": "6-dimethylamino-4,4-diphenyl-3-heptanone"
-        },
-        {
-          "uz": "1,2,5-trimetil-4-fenil-4-propioniloksipiperidin",
-          "ru": "1,2,5-триметил-4-фенил-4-пропионилоксипиперидин",
-          "en": "1,2,5-trimethyl-4-phenyl-4-propionyloxypiperidine"
-        }
+      "d": {
+        "uz": [
+          "1-metil-4-etinil-4-fenilpiperidin",
+          "6-dimetilamino-4,4-difenil-3-geptanon",
+          "1,2,5-trimetil-4-fenil-4-propioniloksipiperidin"
+        ],
+        "ru": [
+          "1-метил-4-этинил-4-фенилпиперидин",
+          "6-диметиламино-4,4-дифенил-3-гептанон",
+          "1,2,5-триметил-4-фенил-4-пропионилоксипиперидин"
+        ],
+        "en": [
+          "1-methyl-4-ethynyl-4-phenylpiperidine",
+          "6-dimethylamino-4,4-diphenyl-3-heptanone",
+          "1,2,5-trimethyl-4-phenyl-4-propionyloxypiperidine"
+        ]
+      },
+      "cite": [
+        "gmt_pubchem_2026",
+        "gmt_yuldashev2024"
       ],
-      "citations": [
-        {
-          "key": "gmt_pubchem_2026"
-        },
-        {
-          "key": "gmt_yuldashev2024",
-          "pages": "50"
-        }
-      ]
+      "pages": "50"
     },
     {
       "id": "gmt.op.6",
-      "question": {
+      "q": {
         "uz": "Fentanilning EI mass-spektridagi asosiy cho‘qqi qaysi?",
         "ru": "Какой основной пик в ЭИ масс-спектре фентанила?",
         "en": "What is the base peak in the EI mass spectrum of fentanyl?"
       },
-      "answer": {
+      "a": {
         "uz": "m/z 245",
         "ru": "m/z 245",
         "en": "m/z 245"
       },
-      "distractors": [
-        {
-          "uz": "m/z 72",
-          "ru": "m/z 72",
-          "en": "m/z 72"
-        },
-        {
-          "uz": "m/z 82",
-          "ru": "m/z 82",
-          "en": "m/z 82"
-        },
-        {
-          "uz": "m/z 204",
-          "ru": "m/z 204",
-          "en": "m/z 204"
-        }
+      "d": {
+        "uz": [
+          "m/z 72",
+          "m/z 82",
+          "m/z 204"
+        ],
+        "ru": [
+          "m/z 72",
+          "m/z 82",
+          "m/z 204"
+        ],
+        "en": [
+          "m/z 72",
+          "m/z 82",
+          "m/z 204"
+        ]
+      },
+      "cite": [
+        "gmt_pubchem_2026",
+        "gmt_yuldashev2024"
       ],
-      "citations": [
-        {
-          "key": "gmt_pubchem_2026"
-        },
-        {
-          "key": "gmt_yuldashev2024",
-          "pages": "47"
-        }
-      ]
+      "pages": "47"
     },
     {
       "id": "gmt.op.7",
-      "question": {
+      "q": {
         "uz": "Morfin ekstraksiyasi uchun darslikdagi «8,6–10,2» oralig‘i nimani bildiradi?",
         "ru": "Что означает интервал «8,6–10,2» в пособии для экстракции морфина?",
         "en": "What does the textbook's «8.6–10.2» for morphine extraction actually denote?"
       },
-      "answer": {
+      "a": {
         "uz": "Ekstraksiya muhitining pH qiymatini",
         "ru": "Значение pH среды экстракции",
         "en": "The pH of the extraction medium"
       },
-      "distractors": [
-        {
-          "uz": "YuQX dagi Rf qiymatini",
-          "ru": "Значение Rf в ТСХ",
-          "en": "The TLC Rf value"
-        },
-        {
-          "uz": "UB-spektr maksimumini (nm)",
-          "ru": "Максимум УФ-спектра (нм)",
-          "en": "The UV maximum (nm)"
-        },
-        {
-          "uz": "Ekstraksiya unumini (%)",
-          "ru": "Выход экстракции (%)",
-          "en": "The extraction yield (%)"
-        }
-      ],
-      "citations": [
-        {
-          "key": "gmt_yuldashev2024",
-          "pages": "22"
-        }
-      ]
+      "d": {
+        "uz": [
+          "YuQX dagi Rf qiymatini",
+          "UB-spektr maksimumini (nm)",
+          "Ekstraksiya unumini (%)"
+        ],
+        "ru": [
+          "Значение Rf в ТСХ",
+          "Максимум УФ-спектра (нм)",
+          "Выход экстракции (%)"
+        ],
+        "en": [
+          "The TLC Rf value",
+          "The UV maximum (nm)",
+          "The extraction yield (%)"
+        ]
+      },
+      "pages": "22"
     },
     {
       "id": "gmt.op.8",
-      "question": {
+      "q": {
         "uz": "Nitrat kislota testida qaysi opiat sariq rang berib, sekin och yashilga o‘tadi?",
         "ru": "Какой опиат в тесте с азотной кислотой даёт жёлтую окраску, медленно переходящую в светло-зелёную?",
         "en": "In the nitric acid test, which opiate gives yellow slowly turning light green?"
       },
-      "answer": {
+      "a": {
         "uz": "Geroin",
         "ru": "Героин",
         "en": "Heroin"
       },
-      "distractors": [
-        {
-          "uz": "Morfin",
-          "ru": "Морфин",
-          "en": "Morphine"
-        },
-        {
-          "uz": "Kodein",
-          "ru": "Кодеин",
-          "en": "Codeine"
-        },
-        {
-          "uz": "Metadon",
-          "ru": "Метадон",
-          "en": "Methadone"
-        }
-      ],
-      "citations": [
-        {
-          "key": "gmt_unodc_rapid_tests",
-          "pages": "39"
-        }
+      "d": {
+        "uz": [
+          "Morfin",
+          "Kodein",
+          "Metadon"
+        ],
+        "ru": [
+          "Морфин",
+          "Кодеин",
+          "Метадон"
+        ],
+        "en": [
+          "Morphine",
+          "Codeine",
+          "Methadone"
+        ]
+      },
+      "cite": [
+        "gmt_unodc_rapid_tests"
       ]
     }
   ]

@@ -5813,7 +5813,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get studyIntro =>
-      'Every card and question is built from a record or guideline that already exists in the app, together with its source. Guideline questions are written by the editors from the card\'s facts. Material that is still under expert review is labelled.';
+      'Every card and question is built from a record or guideline that already exists in the app, together with its source. Guideline questions are written by the editors from the card’s facts. Material that is still under expert review is labelled.';
 
   @override
   String get studySectionTopics => 'Topics by discipline';
@@ -5950,7 +5950,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get studyQuizNote =>
-      'Wrong options are other records of the same type from the app or, for guideline questions, options set by the editors on the card; every question shows its source.';
+      'Wrong options are other records of the same type from the app; nothing is invented.';
 
   @override
   String studyQuizQuestionOf(int current, int total) {
@@ -6850,14 +6850,212 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String guidelineAuthorPermissionFree(
-    String author,
-    String title,
-    String year,
-  ) {
-    return 'Source: $author et al., «$title», $year — used with the author\'s permission, free for everyone.';
+  String get toolBeerLambertName => 'Beer–Lambert law (A = ε·l·c)';
+
+  @override
+  String get toolBeerLambertDesc =>
+      'Find absorbance, concentration or absorptivity from A = ε·l·c, on a molar or mass basis, with units.';
+
+  @override
+  String get calcBeerAbsorbance => 'Absorbance';
+
+  @override
+  String get calcBeerAbsorptivityMolar => 'Molar absorptivity';
+
+  @override
+  String get calcBeerAbsorptivityMass => 'Specific (mass) absorptivity';
+
+  @override
+  String get calcBeerConcentration => 'Concentration';
+
+  @override
+  String get calcBeerPath => 'Path length (l)';
+
+  @override
+  String get calcBeerResultUnit => 'Result unit (c)';
+
+  @override
+  String get calcBeerBasis => 'Absorptivity basis';
+
+  @override
+  String get calcBeerBasisMolar => 'Molar (ε, mol/L)';
+
+  @override
+  String get calcBeerBasisMass => 'Mass (a, g/L)';
+
+  @override
+  String get calcBeerFormulaNote =>
+      'A — absorbance (dimensionless); ε — molar absorptivity, L·mol⁻¹·cm⁻¹ (or a — mass absorptivity, L·g⁻¹·cm⁻¹); l — path length, cm; c — concentration, mol/L (or g/L).';
+
+  @override
+  String get calcBeerErrorBasis =>
+      'The concentration unit does not match the absorptivity basis: use mol/L units with molar ε and g/L-type units with mass a.';
+
+  @override
+  String get calcBeerAssumptionDefinition =>
+      'Definitional relationship: absorbance is proportional to path length and concentration. No absorptivity values are built in — enter a value from your own calibration or a verified source for the same wavelength, solvent and pH.';
+
+  @override
+  String get calcBeerAssumptionBlank =>
+      'A is the sample absorbance corrected for the blank (reagent or matrix blank) at the chosen wavelength.';
+
+  @override
+  String get calcBeerLimitationLinear =>
+      'Valid only within the working range where linearity has been shown by calibration; ICH Q2(R2) §3.2.2.1 recommends at least five concentrations across the range. Outside it, dilute the sample or use the calibration curve.';
+
+  @override
+  String get calcBeerLimitationIdentity =>
+      'Absorbance does not identify a substance. UV-Vis has low specificity; identity must be confirmed by another technique (for example, chromatography with mass spectrometry).';
+
+  @override
+  String get calcBeerReference =>
+      'IUPAC Gold Book: “Beer–Lambert law”, doi:10.1351/goldbook.B00626 · Swinehart DF. The Beer-Lambert law. J Chem Educ 1962;39(7):333, doi:10.1021/ed039p333 · Linearity: ICH Q2(R2) (2023), §3.2.2.1.';
+
+  @override
+  String get calcBeerRelatedTools => 'Related tools: calibration and limits';
+
+  @override
+  String get citeCopy => 'Copy citation';
+
+  @override
+  String get citeAllSources => 'Copy reference list';
+
+  @override
+  String citeListTitle(int count) {
+    return 'Reference list · $count';
   }
 
   @override
-  String get studyFrontGuidelineQuiz => 'Recall the answer, then flip the card';
+  String get citeStyleLabel => 'Citation style';
+
+  @override
+  String get citeStyleGost => 'GOST';
+
+  @override
+  String get citeStyleVancouver => 'Vancouver';
+
+  @override
+  String get citeStyleApa => 'APA 7';
+
+  @override
+  String get citeCopyButton => 'Copy';
+
+  @override
+  String get citeCopied => 'Citation copied';
+
+  @override
+  String citeListCopied(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count references copied',
+      one: '1 reference copied',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get citeVerifyNote =>
+      'The app is a reference tool: verify each source against the original before citing it in an expert conclusion.';
+
+  @override
+  String get guidelineToksAttribution =>
+      'Source: Prof. Yuldashev Z.A. and co-authors, «Toxicological chemistry» teaching complexes (Tashkent Pharmaceutical Institute, 2025) — used with the author’s permission, free for everyone.';
+
+  @override
+  String get studySectionTeaching => 'Teaching complexes';
+
+  @override
+  String get studyDeckToks => 'Toxicological chemistry (Yuldashev Z.A.)';
+
+  @override
+  String get studyFrontQuestion => 'Recall the answer, then flip the card';
+
+  @override
+  String get studyQuizNoteAuthored =>
+      'Questions and wrong options were written independently from the facts in the guideline cards; the correct answer and its page are given in the cited source.';
+
+  @override
+  String studySourcePages(String pages) {
+    return 'pp. $pages';
+  }
+
+  @override
+  String reagentHazardBanner(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hazard notes — read before preparing',
+      one: '1 hazard note — read before preparing',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get reagentHazardGhs => 'GHS hazard statements (PubChem)';
+
+  @override
+  String get reagentHazardGeneral => 'General safety advice (app guidance)';
+
+  @override
+  String reagentRecipeSource(String title) {
+    return 'Source: $title';
+  }
+
+  @override
+  String get reagentMachineDraft =>
+      'Translation is an automatic draft and has not been reviewed by a specialist. Numbers are copied from the source unchanged; check them against the original text below.';
+
+  @override
+  String reagentVariant(String label) {
+    return 'Method $label';
+  }
+
+  @override
+  String reagentMakeUpTo(String value) {
+    return 'to $value';
+  }
+
+  @override
+  String get reagentUnitG => 'g';
+
+  @override
+  String get reagentUnitMl => 'mL';
+
+  @override
+  String get reagentUnitL => 'L';
+
+  @override
+  String reagentDropsAmount(int count, String value) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$value drops',
+      one: '$value drop',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get reagentPurpose => 'Purpose (from the source)';
+
+  @override
+  String get reagentNote => 'Note from the source';
+
+  @override
+  String get reagentAmbiguity => 'Check against the original';
+
+  @override
+  String get reagentOriginalText => 'Original text (Russian)';
+
+  @override
+  String get reagentOriginalHint =>
+      'Verbatim from the source, kept for traceability (OCR errors not corrected).';
+
+  @override
+  String get guidelineGmtAttribution =>
+      'Source: Yuldashev Z.A. et al., «Analysis of narcotic substances. Teaching manual» (Tashkent Pharmaceutical Institute, Tashkent, 2024) — used with the author’s permission, free for everyone.';
+
+  @override
+  String get studyDeckGmt => 'Drug analysis (Yuldashev Z.A.)';
 }

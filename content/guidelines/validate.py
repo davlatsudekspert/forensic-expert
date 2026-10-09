@@ -16,12 +16,15 @@ Checks (exit code 1 on any error):
   G011 updated date is ISO yyyy-mm-dd
   G012 no reference to the restricted 'ABY' manual
   G013 built file is in sync with src/ and references.json (re-run build.py)
-  G014 quiz items: unique id, question/answer/3 distractors in uz/ru/en, answer
-       differs from distractors, every citation key is cited by the card
-  G015 page-cited book sources (PAGE_CITED): the key stands alone in its
-       brackets and is followed by a page locator in the body language
-  G016 cards citing a FREE_SOURCES key declare source_access.access == "free"
-       (owner decision 2026-10-09: author-permitted material is free for all)
+  G014 'teaching_material' references carry publisher, place and rights (author permission)
+  G015 cards citing a teaching_material reference are free (access == "free");
+       access, if present, is "free" or "pro"
+  G016 quiz items: unique id, q/a in uz/ru/en, exactly 3 distractors per language,
+       distractors differ from the answer, pages given (or explicit `cite` keys
+       that the card cites; `pages` then belong to the teaching-material key)
+  G017 page-cited teaching books (PAGE_CITED): the key stands alone in its
+       brackets and is followed by a page locator in the body language,
+       e.g. "[key] (23-b.)", "[key] (с. 23–24)", "[key] (pp. 23, 27)"
 """
 import json
 import pathlib
@@ -36,8 +39,6 @@ INLINE = re.compile(r"\[([a-z0-9_]+(?:,\s*[a-z0-9_]+)*)\]")
 
 errors: list[str] = []
 
-# G015: textbook cited with printed page numbers, e.g. "[key] (23-b.)",
-# "[key] (с. 23–24)", "[key] (pp. 23, 27)".
 PAGE_CITED = {"gmt_yuldashev2024"}
 PAGES = r"\d+(?:[–-]\d+)?(?:, ?\d+(?:[–-]\d+)?)*"
 LOCATOR = {
@@ -45,8 +46,6 @@ LOCATOR = {
     "ru": re.compile(r"\s\(с\. " + PAGES + r"\)"),
     "en": re.compile(r"\s\(pp?\. " + PAGES + r"\)"),
 }
-# G016: sources whose derived content must be free for everyone.
-FREE_SOURCES = {"gmt_yuldashev2024"}
 
 
 def err(code: str, where: str, msg: str) -> None:
@@ -97,7 +96,6 @@ def main() -> int:
 
     codes = taxonomy_codes()
     ids = set()
-    quiz_ids = set()
     for card in data.get("cards", []):
         cid = card.get("id", "?")
         if cid in ids:
@@ -148,43 +146,52 @@ def main() -> int:
                     if not PAGE_CITED.intersection(keys):
                         continue
                     if len(keys) != 1:
-                        err("G015", f"{where}.{lang}", f"{keys[0]} must be cited alone: [{m.group(1)}]")
+                        err("G017", f"{where}.{lang}", f"{keys[0]} must be cited alone: [{m.group(1)}]")
                     elif not LOCATOR[lang].match(body, m.end()):
-                        err("G015", f"{where}.{lang}", f"[{keys[0]}] without page locator: {body[m.end():m.end() + 16]!r}")
+                        err("G017", f"{where}.{lang}", f"[{keys[0]}] without page locator: {body[m.end():m.end() + 16]!r}")
             uz_texts += [s["title"]["uz"], s["body"]["uz"]]
-        card_keys = {k for s in card.get("sections", []) for k in s.get("citations", [])}
-        if card_keys & FREE_SOURCES:
-            acc = card.get("source_access") or {}
-            if acc.get("access") != "free" or acc.get("source_key") not in FREE_SOURCES:
-                err("G016", cid, "cards built on author-permitted sources must declare source_access.access = free")
-        qids = set()
-        for i, q in enumerate(card.get("quiz", [])):
-            qw = f"{cid}.quiz[{i}]"
-            qid = q.get("id")
-            if not qid or qid in quiz_ids:
-                err("G014", qw, f"missing or duplicate quiz id {qid!r}")
-            quiz_ids.add(qid)
-            qids.add(qid)
-            tri(q.get("question"), "G014", f"{qw}.question")
-            tri(q.get("answer"), "G014", f"{qw}.answer")
-            ds = q.get("distractors", [])
-            if len(ds) != 3:
-                err("G014", qw, "exactly 3 distractors required")
-            for j, d in enumerate(ds):
-                tri(d, "G014", f"{qw}.distractors[{j}]")
-                for lang in LANGS:
-                    if (d or {}).get(lang, "").strip().lower() == (q.get("answer") or {}).get(lang, "").strip().lower():
-                        err("G014", qw, f"distractor {j} equals the answer ({lang})")
-            cits = q.get("citations", [])
-            if not cits:
-                err("G014", qw, "no citations")
-            for c in cits:
-                if c.get("key") not in card_keys:
-                    err("G014", qw, f"quiz citation {c.get('key')!r} is not cited by the card")
-            uz_texts += [(q.get("question") or {}).get("uz", ""), (q.get("answer") or {}).get("uz", "")]
-            uz_texts += [(d or {}).get("uz", "") for d in ds]
         for i, t in enumerate(uz_texts):
             check_uz(t, f"{cid}.uz[{i}]")
+
+    # G014-G016: o‘quv-uslubiy materiallar (muallif ruxsati bilan, bepul) va test savollari
+    teaching = {k for k, r in refs.items() if r.get("type") == "teaching_material"}
+    for k in teaching:
+        for f in ("publisher", "place", "rights"):
+            if not refs[k].get(f):
+                err("G014", k, f"teaching_material needs {f}")
+    quiz_ids = set()
+    for card in data.get("cards", []):
+        cid = card.get("id", "?")
+        access = card.get("access")
+        if access is not None and access not in ("free", "pro"):
+            err("G015", cid, f"access must be free/pro, got {access!r}")
+        if teaching & set(card.get("reference_keys", [])) and access != "free":
+            err("G015", cid, "cites a teaching_material source: access must be 'free'")
+        for i, q in enumerate(card.get("quiz", [])):
+            where = f"{cid}.quiz[{i}]"
+            qid = q.get("id")
+            if not qid or qid in quiz_ids:
+                err("G016", where, f"missing or duplicate id {qid!r}")
+            quiz_ids.add(qid)
+            tri(q.get("q"), "G016", f"{where}.q")
+            tri(q.get("a"), "G016", f"{where}.a")
+            cite = q.get("cite")
+            if cite is not None:
+                if not cite or any(k not in card.get("reference_keys", []) for k in cite):
+                    err("G016", where, f"cite keys must be cited by the card: {cite!r}")
+                if teaching & set(cite) and not str(q.get("pages", "")).strip():
+                    err("G016", where, "pages missing for the teaching-material source")
+            elif not str(q.get("pages", "")).strip():
+                err("G016", where, "pages missing")
+            for lang in LANGS:
+                ds = (q.get("d") or {}).get(lang) or []
+                if len(ds) != 3 or not all(isinstance(x, str) and x.strip() for x in ds):
+                    err("G016", where, f"d.{lang} must have 3 non-empty distractors")
+                ans = (q.get("a") or {}).get(lang, "").strip().lower()
+                if ans in {x.strip().lower() for x in ds}:
+                    err("G016", where, f"d.{lang} repeats the answer")
+            check_uz(" ".join([q.get("q", {}).get("uz", ""), q.get("a", {}).get("uz", ""),
+                               *((q.get("d") or {}).get("uz") or [])]), f"{where}.uz")
 
     blob = json.dumps(data, ensure_ascii=False)
     if re.search(r"\bABY\b", blob):
@@ -204,8 +211,7 @@ def main() -> int:
         for s in c["sections"]:
             for lang in LANGS:
                 words[lang] += len(s["body"][lang].split())
-    n_quiz = sum(len(c.get("quiz", [])) for c in data.get("cards", []))
-    print(f"cards={n_cards} references={len(refs)} quiz={n_quiz} words={words}")
+    print(f"cards={n_cards} references={len(refs)} words={words}")
     for c in data.get("cards", []):
         per = {lang: sum(len(s['body'][lang].split()) for s in c['sections']) for lang in LANGS}
         print(f"  {c['id']}: sections={len(c['sections'])} refs={len(c['reference_keys'])} words={per}")
@@ -214,7 +220,7 @@ def main() -> int:
         for e in errors:
             print("  " + e)
         return 1
-    print("OK: all checks passed (G001-G016)")
+    print("OK: all checks passed (G001-G017)")
     return 0
 
 

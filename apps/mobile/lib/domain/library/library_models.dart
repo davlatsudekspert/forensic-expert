@@ -82,6 +82,7 @@ class SourceView {
     this.sha256,
     this.sourceVersion,
     this.language,
+    this.authors = const [],
   });
 
   final String sourceId;
@@ -113,6 +114,9 @@ class SourceView {
   final String? sourceVersion;
   final String? language;
 
+  /// Mualliflar (kontent paketidagi `authors_json`; bo‘lmasa — bo‘sh).
+  final List<String> authors;
+
   bool get isRetracted =>
       lifecycle == SourceLifecycle.retracted ||
       lifecycle == SourceLifecycle.withdrawn;
@@ -141,6 +145,7 @@ class SourceView {
     sha256: sha256,
     sourceVersion: sourceVersion,
     language: language,
+    authors: authors,
   );
 }
 

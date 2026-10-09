@@ -541,6 +541,86 @@ class ContentValidator {
   // PHASE 4: Reagents, Screening, Methods, Emerging, yurisdiksiya statuslari
   // ---------------------------------------------------------------------------
 
+  /// Retsept kengaytmalari (2026-10-09): variantlar, raqamsiz miqdor,
+  /// asl matn va machine_draft tarjimalar.
+  void _checkRecipeExtensions(
+    SolutionRecipe r,
+    Map<String, Source> sources,
+    void Function(String code, String id, String msg) err,
+    void Function(String id, Iterable<String?> refs) checkSourceRefs,
+  ) {
+    final variantIds = {for (final v in r.variants) v.id};
+    if (variantIds.length != r.variants.length) {
+      err(RuleCodes.unsourcedValue, r.id, 'Duplicate recipe variant id.');
+    }
+    for (final v in r.variants) {
+      if (v.sourceId != null && !r.sourceIds.contains(v.sourceId)) {
+        err(
+          RuleCodes.unsourcedValue,
+          r.id,
+          'Variant ${v.id} source ${v.sourceId} is not a recipe source.',
+        );
+      }
+    }
+    final used = [
+      for (final i in r.ingredients) i.variant,
+      for (final s in r.steps) s.variant,
+    ];
+    for (final v in used) {
+      if (v != null && !variantIds.contains(v)) {
+        err(RuleCodes.unsourcedValue, r.id, 'Unknown recipe variant "$v".');
+      }
+    }
+    for (final i in r.ingredients) {
+      // Raqamsiz miqdor faqat manbadagi izoh bilan (taxmin yo‘q).
+      if (i.amount == null && i.quantityNote.isEmpty) {
+        err(
+          RuleCodes.unsourcedValue,
+          r.id,
+          'Ingredient "${i.name}" has neither an amount nor a quantity note.',
+        );
+      }
+      if (i.amount != null && (i.unit ?? '').isEmpty) {
+        err(RuleCodes.unsourcedValue, r.id, 'Amount without unit: ${i.name}.');
+      }
+      if (i.amountMax != null &&
+          (i.amount == null || i.amountMax! < i.amount!)) {
+        err(RuleCodes.unsourcedValue, r.id, 'Invalid range: ${i.name}.');
+      }
+    }
+    checkSourceRefs(r.id, [for (final n in r.notes) n.sourceId]);
+    if (r.originalText != null) {
+      final src = sources[r.originalSourceId];
+      if (src == null || !r.sourceIds.contains(r.originalSourceId)) {
+        err(
+          RuleCodes.unsourcedValue,
+          r.id,
+          'Original text needs original_source_id among recipe sources.',
+        );
+      } else if (!src.canBackStructuredValue) {
+        // Asl matn faqat ochiq litsenziya yoki egasi/shartnoma ruxsati bilan.
+        err(
+          RuleCodes.textLicense,
+          r.id,
+          'Original text from ${src.sourceId} (${src.licenseMode.name}) '
+          'without a license agreement.',
+        );
+      }
+    }
+    final translated =
+        r.steps.any((s) => s.texts.isNotEmpty) ||
+        r.ingredients.any((i) => i.names.isNotEmpty) ||
+        r.notes.any((n) => n.texts.isNotEmpty) ||
+        r.hazards.any((n) => n.texts.isNotEmpty);
+    if (translated && r.translationStatus != TextTranslation.machineDraft) {
+      err(
+        RuleCodes.textTranslationInvalid,
+        r.id,
+        'Localized recipe text must be marked machine_draft until reviewed.',
+      );
+    }
+  }
+
   void _checkKnowledge(
     List<ValidationIssue> issues,
     ContentBundle b,
@@ -672,6 +752,7 @@ class ContentValidator {
           'Order of addition is set but the source does not state it.',
         );
       }
+      _checkRecipeExtensions(r, sources, err, checkSourceRefs);
     }
 
     for (final t in b.screeningTests) {

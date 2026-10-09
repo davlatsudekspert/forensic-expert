@@ -5942,7 +5942,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get studyQuizNote =>
-      'Noto‘g‘ri variantlar — ilovadagi shu turdagi boshqa yozuvlar yoki yo‘riqnoma savollarida tahririyat kartada belgilagan variantlar; har bir savolning manbasi ko‘rsatiladi.';
+      'Noto‘g‘ri variantlar — ilovadagi shu turdagi boshqa yozuvlar; hech narsa to‘qib chiqarilmagan.';
 
   @override
   String studyQuizQuestionOf(int current, int total) {
@@ -6831,15 +6831,213 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String guidelineAuthorPermissionFree(
-    String author,
-    String title,
-    String year,
-  ) {
-    return 'Manba: $author va boshq., «$title», $year — muallif ruxsati bilan, barcha uchun bepul.';
+  String get toolBeerLambertName => 'Buger–Lambert–Ber qonuni (A = ε·l·c)';
+
+  @override
+  String get toolBeerLambertDesc =>
+      'A = ε·l·c bo‘yicha optik zichlik, konsentratsiya yoki yutilish koeffitsientini topish — molyar yoki massaviy asosda, birliklar bilan.';
+
+  @override
+  String get calcBeerAbsorbance => 'Optik zichlik';
+
+  @override
+  String get calcBeerAbsorptivityMolar => 'Molyar yutilish koeffitsienti';
+
+  @override
+  String get calcBeerAbsorptivityMass =>
+      'Solishtirma (massaviy) yutilish koeffitsienti';
+
+  @override
+  String get calcBeerConcentration => 'Konsentratsiya';
+
+  @override
+  String get calcBeerPath => 'Kyuveta qalinligi (l)';
+
+  @override
+  String get calcBeerResultUnit => 'Natija birligi (c)';
+
+  @override
+  String get calcBeerBasis => 'Yutilish koeffitsienti asosi';
+
+  @override
+  String get calcBeerBasisMolar => 'Molyar (ε, mol/L)';
+
+  @override
+  String get calcBeerBasisMass => 'Massaviy (a, g/L)';
+
+  @override
+  String get calcBeerFormulaNote =>
+      'A — optik zichlik (o‘lchamsiz); ε — molyar yutilish koeffitsienti, L·mol⁻¹·cm⁻¹ (yoki a — massaviy, L·g⁻¹·cm⁻¹); l — kyuveta qalinligi, cm; c — konsentratsiya, mol/L (yoki g/L).';
+
+  @override
+  String get calcBeerErrorBasis =>
+      'Konsentratsiya birligi koeffitsient asosiga mos emas: molyar ε bilan — mol/L, massaviy a bilan — g/L turidagi birliklar.';
+
+  @override
+  String get calcBeerAssumptionDefinition =>
+      'Ta’rifiy munosabat: optik zichlik kyuveta qalinligi va konsentratsiyaga proporsional. Ilovada koeffitsient qiymatlari yo‘q — qiymatni o‘z kalibrlashingizdan yoki tekshirilgan manbadan, xuddi shu to‘lqin uzunligi, erituvchi va pH uchun kiriting.';
+
+  @override
+  String get calcBeerAssumptionBlank =>
+      'A — tanlangan to‘lqin uzunligida bo‘sh (reagent yoki matritsa) namunaga nisbatan tuzatilgan namuna optik zichligi.';
+
+  @override
+  String get calcBeerLimitationLinear =>
+      'Faqat chiziqlilik kalibrlash bilan ko‘rsatilgan ishchi oraliqda amal qiladi; ICH Q2(R2) §3.2.2.1 oraliq bo‘ylab kamida beshta konsentratsiyani tavsiya qiladi. Undan tashqarida namunani suyultiring yoki kalibrlash grafigidan foydalaning.';
+
+  @override
+  String get calcBeerLimitationIdentity =>
+      'Optik zichlik moddani identifikatsiya qilmaydi. UB-ko‘rinadigan spektrofotometriyaning o‘ziga xosligi past; modda boshqa usul bilan (masalan, xromatografiya va mass-spektrometriya) tasdiqlanishi kerak.';
+
+  @override
+  String get calcBeerReference =>
+      'IUPAC Gold Book: «Beer–Lambert law», doi:10.1351/goldbook.B00626 · Swinehart DF. The Beer-Lambert law. J Chem Educ 1962;39(7):333, doi:10.1021/ed039p333 · Chiziqlilik: ICH Q2(R2) (2023), §3.2.2.1.';
+
+  @override
+  String get calcBeerRelatedTools =>
+      'Bog‘liq vositalar: kalibrlash va chegaralar';
+
+  @override
+  String get citeCopy => 'Iqtibosni nusxalash';
+
+  @override
+  String get citeAllSources => 'Barcha manbalar ro‘yxati';
+
+  @override
+  String citeListTitle(int count) {
+    return 'Manbalar ro‘yxati · $count';
   }
 
   @override
-  String get studyFrontGuidelineQuiz =>
+  String get citeStyleLabel => 'Rasmiylashtirish uslubi';
+
+  @override
+  String get citeStyleGost => 'GOST';
+
+  @override
+  String get citeStyleVancouver => 'Vancouver';
+
+  @override
+  String get citeStyleApa => 'APA 7';
+
+  @override
+  String get citeCopyButton => 'Nusxalash';
+
+  @override
+  String get citeCopied => 'Iqtibos nusxalandi';
+
+  @override
+  String citeListCopied(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta manba nusxalandi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get citeVerifyNote =>
+      'Ilova — ma’lumotnoma vosita: xulosaga kiritishdan oldin har bir manbani asl nusxa bilan tekshiring.';
+
+  @override
+  String get guidelineToksAttribution =>
+      'Manba: prof. Yuldashev Z.A. va hammualliflar, «Toksikologik kimyo» o‘quv-uslubiy majmualari (Toshkent farmatsevtika instituti, 2025) — muallif ruxsati bilan, barcha uchun bepul.';
+
+  @override
+  String get studySectionTeaching => 'O‘quv-uslubiy majmualar';
+
+  @override
+  String get studyDeckToks => 'Toksikologik kimyo (Yuldashev Z.A.)';
+
+  @override
+  String get studyFrontQuestion =>
       'Javobni eslang, so‘ng kartochkani aylantiring';
+
+  @override
+  String get studyQuizNoteAuthored =>
+      'Savollar va noto‘g‘ri variantlar yo‘riqnoma kartalaridagi faktlar asosida mustaqil tuzilgan; to‘g‘ri javob va uning sahifasi keltirilgan manbada.';
+
+  @override
+  String studySourcePages(String pages) {
+    return '$pages-betlar';
+  }
+
+  @override
+  String reagentHazardBanner(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta xavf ogohlantirishi — tayyorlashdan oldin o‘qing',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get reagentHazardGhs => 'GHS xavf bayonotlari (PubChem)';
+
+  @override
+  String get reagentHazardGeneral =>
+      'Umumiy xavfsizlik tavsiyasi (ilova izohi)';
+
+  @override
+  String reagentRecipeSource(String title) {
+    return 'Manba: $title';
+  }
+
+  @override
+  String get reagentMachineDraft =>
+      'Tarjima — avtomatik qoralama, mutaxassis tomonidan tekshirilmagan. Raqamlar manbadan o‘zgarishsiz olingan; quyidagi asl matn bilan solishtiring.';
+
+  @override
+  String reagentVariant(String label) {
+    return 'Usul: $label';
+  }
+
+  @override
+  String reagentMakeUpTo(String value) {
+    return '$value gacha';
+  }
+
+  @override
+  String get reagentUnitG => 'g';
+
+  @override
+  String get reagentUnitMl => 'ml';
+
+  @override
+  String get reagentUnitL => 'l';
+
+  @override
+  String reagentDropsAmount(int count, String value) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$value tomchi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get reagentPurpose => 'Qo‘llanishi (manba bo‘yicha)';
+
+  @override
+  String get reagentNote => 'Manbadagi izoh';
+
+  @override
+  String get reagentAmbiguity => 'Asl matn bilan tekshiring';
+
+  @override
+  String get reagentOriginalText => 'Asl matn (rus)';
+
+  @override
+  String get reagentOriginalHint =>
+      'Manbadan so‘zma-so‘z, kuzatuvchanlik uchun (OCR xatolari tuzatilmagan).';
+
+  @override
+  String get guidelineGmtAttribution =>
+      'Manba: Yuldashev Z.A. va boshq., «Giyohvand moddalar tahlili. O‘quv qo‘llanma» (Toshkent farmatsevtika instituti, Toshkent, 2024) — muallif ruxsati bilan, barcha uchun bepul.';
+
+  @override
+  String get studyDeckGmt => 'Giyohvand moddalar tahlili (Yuldashev Z.A.)';
 }

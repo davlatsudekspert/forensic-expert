@@ -235,6 +235,50 @@ matritsa darhol FAIL berdi (`STUDENT: SELECT others' rows`).
 Kichik ekran (320×640) va 390×844 qadamlarida birorta ham overflow yoki
 boshqa Flutter render xatosi qayd etilmadi.
 
+### 2.x Spektrofotometriya (2026-10-09) — REAL ILOVA
+
+`integration_test/qa_spectro_test.dart`, skrinshotlar va JSON:
+`docs/qa/spectro_20261009/`.
+
+| Rejim | Ishga tushirish | Natija |
+|---|---|---|
+| TALABA (Pro’siz) | `QA_MODE=student ./tool/qa_real_app.sh spectro` | 6/6 PASS |
+| MUTAXASSIS (Pro — test override, xarid emas) | `QA_MODE=professional QA_PRO=1 ./tool/qa_real_app.sh spectro` | 11/11 PASS |
+
+Tekshirildi: «Yo‘riqnomalar» ro‘yxatida yangi UB-ko‘rinadigan
+spektrofotometriya kartasi; karta ochilishi, ehtiyot choralari, bog‘liq
+vositalar va manbalar; kartadan Buger–Lambert–Ber vositasiga o‘tish (talabada —
+aniq tarif nomi bilan qulf kartasi); hisoblar qo‘lda tekshirilgan qiymatlar
+bilan (0,45/(15000·1) → 30 µmol/L; 25·1·20 mg/L → 0,5); bo‘sh maydon xatosi;
+Kalibrlash vositasiga havola; 320 dp. Topilgan va tuzatilgan: 320 dp’da
+qo‘shimcha birlik qatorlari («mol/ L») sinardi → bitta izoh qatoriga
+ko‘chirildi; uz yorlig‘ida ikki qavs («Optik zichlik (absorbsiya) (A)») →
+«Optik zichlik (A)». Bloklangan HTTP urinishlari: 0. ADMIN roli bu ishga
+taalluqli emas (yangi admin funksiyasi yo‘q).
+
+### 2a. Reaktiv retseptlari (ilova egasi to‘plami, 2026-10-09)
+
+`integration_test/qa_reagents_test.dart` (`./tool/qa_real_app.sh reagents`),
+REAL ILOVA, uz, MOCK akkaunt, tarmoq o‘chiq. Skrinshotlar:
+`docs/qa/reagents_20261009/` (8 ta).
+
+| Rol | Qadamlar | PASS | FAIL |
+|---|---|---|---|
+| Talaba (bepul) | 10 | 10 | 0 |
+| Mutaxassis (Pro, `QA_MODE=professional QA_PRO=1`) | 10 | 10 | 0 |
+
+Tekshirildi: qidiruv «Dragendorf» / «Марки» → reaktiv; Dragendorf (bepul):
+xavf banneri + PubChem GHS kartalari, tarkib jadvali (27,2 g; «100 ml gacha»),
+bosqichlar, «Asl matn (rus)» ochiladi; Marki; Nessler — bepulda retsept
+yopiq, lekin xavf ogohlantirishlari ochiq; Pro’da to‘liq retsept;
+320 dp ekran — overflow yo‘q. Til tekshiruvi faqat PubChem manba havolasi
+domenini («pubchem.ncbi.nlm.nih.gov») belgiladi — URL, xato emas.
+Eslatma: bir xil `pack_version` bilan qayta yig‘ilgan paket desktop’dagi
+eski o‘rnatilgan nusxani almashtirmaydi — QA oldidan
+`~/.local/share/uz.forensicexpert.forensic_expert/content` tozalandi.
+TEKSHIRILMAGAN: haqiqiy iOS/Android qurilma, ru/en rejimlari real ilovada
+(widget testlarida ru/en/320 dp tekshirilgan).
+
 ## 3. Til tekshiruvi (uz rejimi)
 
 Avtomatik tekshiruv har ekranda inglizcha UI so‘zlari va xom kodlarni
@@ -324,7 +368,32 @@ Fayllar: `integration_test/qa_student_test.dart`,
 CI’ga ulanmagan: toza Ubuntu runner’da apt paketlari + Linux build bilan
 ~5 daqiqadan oshadi; qo‘lda ishga tushiriladi.
 
-## 7. «Giyohvand moddalar tahlili» (GMT) kartalari va testi (2026-10-09)
+## 7. Iqtibos eksporti (2026-10-09)
+
+Taqrizchi (prof. Yuldashev Z.A.) talabi: har bir yozuv adabiyotga havola bilan,
+tergov/sud hujjatiga ilova qilish mumkin bo‘lsin.
+
+`QA_OUT=docs/qa/citations_20261009 ./tool/qa_real_app.sh citations`
+(Linux desktop, MOCK akkaunt, HTTP bloklangan, haqiqiy pilot paket):
+
+| Yugurish | Natija |
+|---|---|
+| uz, talaba (skrinshotlar `docs/qa/citations_20261009/`) | 6/6 PASS |
+| ru, mutaxassis (`QA_SHOTS=0`) | 6/6 PASS — ГОСТ, «[Электронный ресурс]» |
+| en, mutaxassis (`QA_SHOTS=0`) | 6/6 PASS — APA 7 standart |
+
+Tekshirildi: etanol sahifasi → «Barcha manbalar ro‘yxati» → GOST ro‘yxat
+haqiqiy tizim buferiga (GTK) nusxalandi va o‘qib tekshirildi (6 qator,
+raqamlash, «[Elektron resurs]», «murojaat sanasi»); manba kartasidagi
+«Iqtibosni nusxalash» → Vancouver; «Etanol GC» yo‘riqnomasi adabiyotlari
+ro‘yxati; 320 dp ekranda oyna va «Nusxalash» tugmasi ko‘rinadi.
+Tuzatildi: 320 dp’da «Vancouver» yorlig‘i bo‘linib ketardi; avvalgi
+«nusxalandi» xabari oynadagi tugmani to‘sib qo‘yardi.
+
+Sinalmagan: iOS/Android qurilmadagi tizim buferi; ADMIN roli (funksiya
+rolga bog‘liq emas); ekspert xulosasi shablonining o‘ziga joylash.
+
+## 8. «Giyohvand moddalar tahlili» (GMT) kartalari va testi (2026-10-09)
 
 `integration_test/qa_gmt_test.dart` — Linux desktop, haqiqiy ilova, MOCK akkaunt, HTTP bloklangan,
 **Pro huquqisiz** (bepul foydalanuvchi). Skrinshotlar: `docs/qa/gmt_20261009/` (8 ta PNG).

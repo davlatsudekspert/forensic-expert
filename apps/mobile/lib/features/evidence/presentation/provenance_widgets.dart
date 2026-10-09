@@ -13,8 +13,10 @@ import '../../../core/l10n/date_format.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../../domain/evidence/citation_format.dart';
 import '../../../domain/evidence/provenance_models.dart';
 import '../../../domain/library/library_models.dart';
+import 'citation_sheet.dart';
 import 'source_quote.dart';
 
 /// PHASE 7 yorliqlari (enum → lokal matn).
@@ -391,6 +393,14 @@ class _SourceProvenanceBlock extends StatelessWidget {
                 ),
               ],
             ),
+          Align(
+            alignment: AlignmentDirectional.centerStart,
+            child: CiteButton(
+              key: Key('provenance.cite.${source.sourceId}'),
+              citation: CitationData.fromSource(source),
+              compact: false,
+            ),
+          ),
         ],
       ),
     );

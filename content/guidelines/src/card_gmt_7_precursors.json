@@ -1,11 +1,17 @@
 {
   "id": "guideline.chem.gmt_precursors",
-  "discipline_codes": ["forensic_chemistry"],
+  "discipline_codes": [
+    "forensic_chemistry"
+  ],
   "status": "NEEDS_REVIEW",
   "updated": "2026-10-09",
-  "translation_status": {"uz": "AUTHORED", "ru": "DRAFT", "en": "DRAFT"},
+  "translation_status": {
+    "uz": "AUTHORED",
+    "ru": "DRAFT",
+    "en": "DRAFT"
+  },
   "related_tool_ids": [],
-  "source_access": {"source_key": "gmt_yuldashev2024", "access": "free", "basis": "author_permission_2026-10-09"},
+  "access": "free",
   "title": {
     "uz": "Prekursorlar: guruhlar va identifikatsiya reaksiyalari",
     "ru": "Прекурсоры: группы и реакции идентификации",
@@ -19,79 +25,177 @@
   "sections": [
     {
       "key": "basis",
-      "title": {"uz": "Ta’rif va guruhlar", "ru": "Определение и группы", "en": "Definition and groups"},
+      "title": {
+        "uz": "Ta’rif va guruhlar",
+        "ru": "Определение и группы",
+        "en": "Definition and groups"
+      },
       "body": {
         "uz": "O‘zbekiston qonunchiligida prekursorlar alohida ro‘yxatga (IV ro‘yxat) kiritiladi [gmt_lex_law813]. Darslik ularni shartli ikki guruhga bo‘ladi: 1) sintezda mahsulot molekulasining katta qismini tashkil etuvchi moddalar; 2) yashirin tayyorlashda yordamchi, lekin muhim rol o‘ynovchi reagent va erituvchilar [gmt_yuldashev2024] (145-b.).\n\nMisollar (darslik bo‘yicha): sirka angidridi — geroin va metakvalon; antranil va N-atsetilantranil kislotalari — metakvalon; efedrin va psevdoefedrin — metamfetamin (pervitin) va metkatinon; 1-fenil-2-propanon — amfetamin; safrol, izosafrol, piperonal va 3,4-metilendioksifenil-2-propanon — MDA/MDMA guruhi; lizergin kislota, ergometrin, ergotamin — LSD; piperidin — fensiklidin; kaliy permanganat, sulfat va xlorid kislotalar, aseton, metiletilketon, toluol, dietil efir — reagent va erituvchilar [gmt_yuldashev2024] (146–147-b.). Geroin morfinni atsetillab olinadi [gmt_yuldashev2024] (15-b.); kaliy permanganat kokainni tozalashda va efedrindan metkatinon olishda ishlatiladi [gmt_yuldashev2024] (56, 76-b.).",
         "ru": "В законодательстве Узбекистана прекурсоры вносятся в отдельный список (Список IV) [gmt_lex_law813]. Пособие условно делит их на две группы: 1) вещества, составляющие значительную часть молекулы продукта синтеза; 2) вспомогательные, но важные реагенты и растворители при подпольном изготовлении [gmt_yuldashev2024] (с. 145).\n\nПримеры (по пособию): уксусный ангидрид — героин и метаквалон; антраниловая и N-ацетилантраниловая кислоты — метаквалон; эфедрин и псевдоэфедрин — метамфетамин (первитин) и меткатинон; 1-фенил-2-пропанон — амфетамин; сафрол, изосафрол, пиперональ и 3,4-метилендиоксифенил-2-пропанон — группа МДА/МДМА; лизергиновая кислота, эргометрин, эрготамин — ЛСД; пиперидин — фенциклидин; перманганат калия, серная и соляная кислоты, ацетон, метилэтилкетон, толуол, диэтиловый эфир — реагенты и растворители [gmt_yuldashev2024] (с. 146–147). Героин получают ацетилированием морфина [gmt_yuldashev2024] (с. 15); перманганат калия используют при очистке кокаина и получении меткатинона из эфедрина [gmt_yuldashev2024] (с. 56, 76).",
         "en": "In Uzbek legislation precursors are placed on a separate list (List IV) [gmt_lex_law813]. The textbook divides them into two notional groups: 1) substances that form a large part of the product molecule; 2) auxiliary but important reagents and solvents in clandestine manufacture [gmt_yuldashev2024] (p. 145).\n\nExamples (per the textbook): acetic anhydride — heroin and methaqualone; anthranilic and N-acetylanthranilic acids — methaqualone; ephedrine and pseudoephedrine — methamphetamine and methcathinone; 1-phenyl-2-propanone — amphetamine; safrole, isosafrole, piperonal and 3,4-methylenedioxyphenyl-2-propanone — the MDA/MDMA group; lysergic acid, ergometrine, ergotamine — LSD; piperidine — phencyclidine; potassium permanganate, sulfuric and hydrochloric acids, acetone, methyl ethyl ketone, toluene, diethyl ether — reagents and solvents [gmt_yuldashev2024] (pp. 146–147). Heroin is made by acetylating morphine [gmt_yuldashev2024] (p. 15); potassium permanganate is used to purify cocaine and to make methcathinone from ephedrine [gmt_yuldashev2024] (pp. 56, 76)."
       },
-      "citations": ["gmt_lex_law813", "gmt_yuldashev2024"]
+      "citations": [
+        "gmt_lex_law813",
+        "gmt_yuldashev2024"
+      ]
     },
     {
       "key": "scope",
-      "title": {"uz": "Namuna olish", "ru": "Отбор проб", "en": "Sampling"},
+      "title": {
+        "uz": "Namuna olish",
+        "ru": "Отбор проб",
+        "en": "Sampling"
+      },
       "body": {
         "uz": "Suyuq va qattiq prekursorlardan namuna musodara qilingan materialni namuna olishning umumiy qoidalari bo‘yicha olinadi: kam miqdorda bo‘lsa — butun miqdor ko‘rsatiladi, qayta tahlil kutilsa — ikki baravar ko‘p olinadi [gmt_yuldashev2024] (145-b.). Sirka angidridi havodagi namlikda sirka kislotaga gidrolizlanadi, shuning uchun idish zich yopiladi va tahlil tez o‘tkaziladi [gmt_yuldashev2024] (151-b.).",
         "ru": "Пробы жидких и твёрдых прекурсоров отбирают по общим правилам для изъятых материалов: при малом количестве указывают всё количество, при ожидаемом повторном анализе берут вдвое больше [gmt_yuldashev2024] (с. 145). Уксусный ангидрид гидролизуется влагой воздуха до уксусной кислоты, поэтому тару плотно закрывают и анализируют быстро [gmt_yuldashev2024] (с. 151).",
         "en": "Liquid and solid precursors are sampled by the general rules for seized material: if the amount is small the whole amount is stated; if re-analysis is expected twice the amount is taken [gmt_yuldashev2024] (p. 145). Acetic anhydride hydrolyses to acetic acid with air moisture, so containers are kept tightly closed and analysed promptly [gmt_yuldashev2024] (p. 151)."
       },
-      "citations": ["gmt_yuldashev2024"]
+      "citations": [
+        "gmt_yuldashev2024"
+      ]
     },
     {
       "key": "reactions",
-      "title": {"uz": "Kimyoviy reaksiyalar", "ru": "Химические реакции", "en": "Chemical reactions"},
+      "title": {
+        "uz": "Kimyoviy reaksiyalar",
+        "ru": "Химические реакции",
+        "en": "Chemical reactions"
+      },
       "body": {
         "uz": "• Aseton: ishqoriy yod eritmasi bilan yodoform (etanol va sut kislota ham beradi — xususiy emas); ishqoriy muhitda natriy nitroprussid bilan qizil-binafsha (boshqa ketonlar va aldegidlar xalaqit beradi); o-nitrobenzaldegid bilan ishqoriy muhitda indigo hosil bo‘lib, xloroform qatlami ko‘karadi [gmt_yuldashev2024] (150–151-b.).\n• Sirka angidridi: gidroliz mahsuloti — sirka kislota; neytrallangan qoldiq temir(III) xlorid bilan qizil rang beradi (qizdirilganda qo‘ng‘irlashadi); lantan nitrat + yod + ammiak — to‘q ko‘k; etanol va konsentrlangan sulfat kislota bilan qizdirilganda etil atsetat hidi [gmt_yuldashev2024] (151–152-b.).\n• Kaliy permanganat: sulfat kislotali muhitda vodorod peroksid bilan rangsizlanadi; miqdori yodometrik titrlash bilan [gmt_yuldashev2024] (152-b.).\n• Sulfat kislota: bariy tuzi bilan oq BaSO4 cho‘kmasi; xlorid kislota: kislotali muhitda kumush nitrat bilan oq AgCl cho‘kmasi [gmt_yuldashev2024] (153-b.).\n• Toluol: nitrolash mahsulotlari aseton ishtirokida spirtli ishqor bilan ko‘kimtir-binafsha rang beradi [gmt_yuldashev2024] (149-b.).\n• Ergot alkaloidlari va lizergin kislota: Erlix reaktivi (p-dimetilaminobenzaldegid) bilan ko‘k-binafsha rang, UB nurda ko‘k fluoressensiya; antranil kislota ham UB nurda havorang fluoressensiya beradi [gmt_yuldashev2024] (155–157-b.).",
         "ru": "• Ацетон: со щелочным раствором иода — иодоформ (дают и этанол, и молочная кислота — неспецифично); в щелочной среде с нитропруссидом натрия — красно-фиолетовая окраска (мешают другие кетоны и альдегиды); с о-нитробензальдегидом в щелочной среде образуется индиго, хлороформный слой синеет [gmt_yuldashev2024] (с. 150–151).\n• Уксусный ангидрид: продукт гидролиза — уксусная кислота; нейтрализованный остаток с хлоридом железа(III) даёт красную окраску (буреет при нагревании); нитрат лантана + иод + аммиак — тёмно-синяя; при нагревании с этанолом и концентрированной серной кислотой — запах этилацетата [gmt_yuldashev2024] (с. 151–152).\n• Перманганат калия: обесцвечивается пероксидом водорода в сернокислой среде; количество — иодометрическим титрованием [gmt_yuldashev2024] (с. 152).\n• Серная кислота: с солью бария — белый осадок BaSO4; соляная кислота: с нитратом серебра в кислой среде — белый осадок AgCl [gmt_yuldashev2024] (с. 153).\n• Толуол: продукты нитрования с ацетоном и спиртовой щёлочью дают синевато-фиолетовую окраску [gmt_yuldashev2024] (с. 149).\n• Алкалоиды спорыньи и лизергиновая кислота: с реактивом Эрлиха (п-диметиламинобензальдегид) — сине-фиолетовая окраска, в УФ-свете — синяя флуоресценция; антраниловая кислота также флуоресцирует голубым [gmt_yuldashev2024] (с. 155–157).",
         "en": "• Acetone: iodoform with alkaline iodine (also given by ethanol and lactic acid — not specific); red-violet with sodium nitroprusside in alkali (other ketones and aldehydes interfere); with o-nitrobenzaldehyde in alkali indigo forms and the chloroform layer turns blue [gmt_yuldashev2024] (pp. 150–151).\n• Acetic anhydride: the hydrolysis product is acetic acid; the neutralised residue gives a red colour with iron(III) chloride (browning on heating); lanthanum nitrate + iodine + ammonia — dark blue; heating with ethanol and concentrated sulfuric acid gives the odour of ethyl acetate [gmt_yuldashev2024] (pp. 151–152).\n• Potassium permanganate: decolourised by hydrogen peroxide in sulfuric acid; quantified by iodometric titration [gmt_yuldashev2024] (p. 152).\n• Sulfuric acid: white BaSO4 with a barium salt; hydrochloric acid: white AgCl with silver nitrate in acid [gmt_yuldashev2024] (p. 153).\n• Toluene: its nitration products give a bluish-violet colour with acetone and alcoholic alkali [gmt_yuldashev2024] (p. 149).\n• Ergot alkaloids and lysergic acid: blue-violet with Ehrlich reagent (p-dimethylaminobenzaldehyde) and blue fluorescence under UV; anthranilic acid also fluoresces blue [gmt_yuldashev2024] (pp. 155–157)."
       },
-      "citations": ["gmt_yuldashev2024"]
+      "citations": [
+        "gmt_yuldashev2024"
+      ]
     },
     {
       "key": "tlc",
-      "title": {"uz": "YuQX", "ru": "ТСХ", "en": "TLC"},
+      "title": {
+        "uz": "YuQX",
+        "ru": "ТСХ",
+        "en": "TLC"
+      },
       "body": {
         "uz": "Ergometrin va ergotamin silikagel plastinkada alohida tizimlarda xromatografiya qilinadi; ochuvchilar — p-dimetilaminobenzaldegidning sulfat kislotadagi eritmasi (ko‘k), kaliy permanganat (zarg‘aldoq), kaliy bixromat (ko‘k), kumush nitrat (qo‘ng‘ir). Lizergin kislota Erlix reaktivi bilan binafsha dog‘ beradi [gmt_yuldashev2024] (155–156-b.).",
         "ru": "Эргометрин и эрготамин хроматографируют на силикагеле в отдельных системах; проявители — раствор п-диметиламинобензальдегида в серной кислоте (синяя), перманганат калия (оранжевая), бихромат калия (синяя), нитрат серебра (бурая). Лизергиновая кислота с реактивом Эрлиха даёт фиолетовое пятно [gmt_yuldashev2024] (с. 155–156).",
         "en": "Ergometrine and ergotamine are chromatographed on silica in separate systems; visualisers are p-dimethylaminobenzaldehyde in sulfuric acid (blue), potassium permanganate (orange), potassium dichromate (blue) and silver nitrate (brown). Lysergic acid gives a violet spot with Ehrlich reagent [gmt_yuldashev2024] (pp. 155–156)."
       },
-      "citations": ["gmt_yuldashev2024"]
+      "citations": [
+        "gmt_yuldashev2024"
+      ]
     },
     {
       "key": "instrumental",
-      "title": {"uz": "Instrumental usullar", "ru": "Инструментальные методы", "en": "Instrumental methods"},
+      "title": {
+        "uz": "Instrumental usullar",
+        "ru": "Инструментальные методы",
+        "en": "Instrumental methods"
+      },
       "body": {
         "uz": "Aseton va toluol kabi erituvchilar alanga-ionizatsion detektorli GX da ushlanish parametrlari bo‘yicha aniqlanadi va miqdorlanadi [gmt_yuldashev2024] (149, 151-b.). Ergot alkaloidlari UB-spektrda taxminan 310–320 nm da maksimum beradi va YuSSX bilan tahlil qilinadi [gmt_yuldashev2024] (155-b.). Organik prekursorlarning identifikatsiyasi uchun A toifali usul (IQ yoki MS) boshqa usul bilan birga qo‘llanadi [swgdrug2024].",
         "ru": "Растворители, такие как ацетон и толуол, определяют и количественно оценивают методом ГХ с пламенно-ионизационным детектором по параметрам удерживания [gmt_yuldashev2024] (с. 149, 151). Алкалоиды спорыньи имеют максимум УФ-поглощения около 310–320 нм и анализируются ВЭЖХ [gmt_yuldashev2024] (с. 155). Для идентификации органических прекурсоров применяют метод категории A (ИК или МС) вместе с другим методом [swgdrug2024].",
         "en": "Solvents such as acetone and toluene are identified and quantified by GC with flame-ionisation detection from retention parameters [gmt_yuldashev2024] (pp. 149, 151). Ergot alkaloids absorb at about 310–320 nm in the UV and are analysed by HPLC [gmt_yuldashev2024] (p. 155). For organic precursors a Category A technique (IR or MS) is combined with another technique [swgdrug2024]."
       },
-      "citations": ["gmt_yuldashev2024", "swgdrug2024"]
+      "citations": [
+        "gmt_yuldashev2024",
+        "swgdrug2024"
+      ]
     },
     {
       "key": "limitations",
-      "title": {"uz": "Cheklovlar", "ru": "Ограничения", "en": "Limitations"},
+      "title": {
+        "uz": "Cheklovlar",
+        "ru": "Ограничения",
+        "en": "Limitations"
+      },
       "body": {
         "uz": "• Yodoform va nitroprussid reaksiyalari asetonga xos emas [gmt_yuldashev2024] (150-b.); sulfat va xlorid ionlariga reaksiyalar faqat anionni ko‘rsatadi, nazoratdagi kislota ekanini emas.\n• Moddaning nazorat holati amaldagi IV ro‘yxatga bog‘liq; ro‘yxatlar Vazirlar Mahkamasi qaroriga ilovalar sifatida o‘zgarib turadi [gmt_lex_cm330].",
         "ru": "• Иодоформная и нитропруссидная реакции неспецифичны для ацетона [gmt_yuldashev2024] (с. 150); реакции на сульфат- и хлорид-ионы показывают только анион, а не то, что это контролируемая кислота.\n• Контрольный статус вещества зависит от действующего Списка IV; списки как приложения к постановлению Кабинета Министров меняются [gmt_lex_cm330].",
         "en": "• The iodoform and nitroprusside reactions are not specific for acetone [gmt_yuldashev2024] (p. 150); sulfate and chloride tests only show the anion, not that a controlled acid is present.\n• Control status depends on the current List IV; the lists are appendices to a Cabinet of Ministers resolution and change over time [gmt_lex_cm330]."
       },
-      "citations": ["gmt_yuldashev2024", "gmt_lex_cm330"]
+      "citations": [
+        "gmt_yuldashev2024",
+        "gmt_lex_cm330"
+      ]
     },
     {
       "key": "cautions",
-      "title": {"uz": "Darslikdagi tuzatilgan joylar", "ru": "Исправления по сравнению с пособием", "en": "Corrections to the textbook"},
+      "title": {
+        "uz": "Darslikdagi tuzatilgan joylar",
+        "ru": "Исправления по сравнению с пособием",
+        "en": "Corrections to the textbook"
+      },
       "body": {
         "uz": "• Prekursorlar jadvalida fenilsirka kislota «MDA va uning hosilalari» bilan, N-metilefedrin «metkatinon» bilan, safrol faqat «MDEA» bilan bog‘langan [gmt_yuldashev2024] (146–147-b.); bu bog‘lanishlar to‘liq emas yoki noaniq, shuning uchun kartada keltirilmadi.\n• Sirka angidridi haqida «giyohvandlik vositalari tahlilida keng qo‘llaniladi» deyilgan [gmt_yuldashev2024] (151-b.); prekursor sifatidagi ahamiyati — sintezda (morfinni geroinga atsetillash) [gmt_yuldashev2024] (15-b.).\n• 1988 yilgi konvensiya bo‘yicha xalqaro nazoratdagi moddalar soni va O‘zbekiston IV ro‘yxatidagi moddalar soni [gmt_yuldashev2024] (13, 145-b.) vaqt o‘tishi bilan o‘zgaradi — raqamlar keltirilmaydi.",
         "ru": "• В таблице прекурсоров фенилуксусная кислота связана с «МДА и его производными», N-метилэфедрин — с «меткатиноном», сафрол — только с «MDEA» [gmt_yuldashev2024] (с. 146–147); эти связи неполны или неточны и в карточке не приводятся.\n• Об уксусном ангидриде сказано, что он «широко применяется в анализе наркотических средств» [gmt_yuldashev2024] (с. 151); значение его как прекурсора — в синтезе (ацетилирование морфина в героин) [gmt_yuldashev2024] (с. 15).\n• Число веществ под международным контролем по Конвенции 1988 г. и число веществ в Списке IV Узбекистана [gmt_yuldashev2024] (с. 13, 145) со временем меняется — числа не приводятся.",
         "en": "• The precursor table links phenylacetic acid with «MDA and its derivatives», N-methylephedrine with «methcathinone» and safrole only with «MDEA» [gmt_yuldashev2024] (pp. 146–147); these links are incomplete or inaccurate and are not reproduced.\n• Acetic anhydride is said to be «widely used in the analysis of narcotic drugs» [gmt_yuldashev2024] (p. 151); its relevance as a precursor lies in synthesis (acetylating morphine to heroin) [gmt_yuldashev2024] (p. 15).\n• The number of substances under the 1988 Convention and the number on Uzbekistan's List IV [gmt_yuldashev2024] (pp. 13, 145) change over time — the numbers are not reproduced."
       },
-      "citations": ["gmt_yuldashev2024"]
+      "citations": [
+        "gmt_yuldashev2024"
+      ]
     }
   ],
   "keywords": {
-    "uz": ["prekursorlar", "IV ro‘yxat", "sirka angidridi", "kaliy permanganat", "aseton", "toluol", "sulfat kislota", "xlorid kislota", "efedrin", "psevdoefedrin", "safrol", "piperonal", "ergotamin", "ergometrin", "lizergin kislota", "antranil kislota", "Erlix reaktivi", "yodoform"],
-    "ru": ["прекурсоры", "Список IV", "уксусный ангидрид", "перманганат калия", "ацетон", "толуол", "серная кислота", "соляная кислота", "эфедрин", "сафрол", "пиперональ", "эрготамин", "эргометрин", "лизергиновая кислота", "антраниловая кислота", "реактив Эрлиха"],
-    "en": ["precursors", "List IV", "acetic anhydride", "potassium permanganate", "acetone", "toluene", "sulfuric acid", "hydrochloric acid", "ephedrine", "safrole", "piperonal", "ergotamine", "ergometrine", "lysergic acid", "anthranilic acid", "Ehrlich reagent"]
+    "uz": [
+      "prekursorlar",
+      "IV ro‘yxat",
+      "sirka angidridi",
+      "kaliy permanganat",
+      "aseton",
+      "toluol",
+      "sulfat kislota",
+      "xlorid kislota",
+      "efedrin",
+      "psevdoefedrin",
+      "safrol",
+      "piperonal",
+      "ergotamin",
+      "ergometrin",
+      "lizergin kislota",
+      "antranil kislota",
+      "Erlix reaktivi",
+      "yodoform"
+    ],
+    "ru": [
+      "прекурсоры",
+      "Список IV",
+      "уксусный ангидрид",
+      "перманганат калия",
+      "ацетон",
+      "толуол",
+      "серная кислота",
+      "соляная кислота",
+      "эфедрин",
+      "сафрол",
+      "пиперональ",
+      "эрготамин",
+      "эргометрин",
+      "лизергиновая кислота",
+      "антраниловая кислота",
+      "реактив Эрлиха"
+    ],
+    "en": [
+      "precursors",
+      "List IV",
+      "acetic anhydride",
+      "potassium permanganate",
+      "acetone",
+      "toluene",
+      "sulfuric acid",
+      "hydrochloric acid",
+      "ephedrine",
+      "safrole",
+      "piperonal",
+      "ergotamine",
+      "ergometrine",
+      "lysergic acid",
+      "anthranilic acid",
+      "Ehrlich reagent"
+    ]
   },
   "omitted_unverified": [
     "Counts of internationally controlled precursors (26) and Uzbek List IV (29) (pp. 13, 145): time-dependent.",
@@ -104,47 +208,127 @@
   "quiz": [
     {
       "id": "gmt.pre.1",
-      "question": {"uz": "Geroin tayyorlashda morfinni atsetillash uchun qaysi prekursor ishlatiladi?", "ru": "Какой прекурсор используют для ацетилирования морфина при изготовлении героина?", "en": "Which precursor is used to acetylate morphine when making heroin?"},
-      "answer": {"uz": "Sirka angidridi", "ru": "Уксусный ангидрид", "en": "Acetic anhydride"},
-      "distractors": [
-        {"uz": "Kaliy permanganat", "ru": "Перманганат калия", "en": "Potassium permanganate"},
-        {"uz": "Antranil kislota", "ru": "Антраниловая кислота", "en": "Anthranilic acid"},
-        {"uz": "Piperidin", "ru": "Пиперидин", "en": "Piperidine"}
-      ],
-      "citations": [{"key": "gmt_yuldashev2024", "pages": "15, 146"}]
+      "q": {
+        "uz": "Geroin tayyorlashda morfinni atsetillash uchun qaysi prekursor ishlatiladi?",
+        "ru": "Какой прекурсор используют для ацетилирования морфина при изготовлении героина?",
+        "en": "Which precursor is used to acetylate morphine when making heroin?"
+      },
+      "a": {
+        "uz": "Sirka angidridi",
+        "ru": "Уксусный ангидрид",
+        "en": "Acetic anhydride"
+      },
+      "d": {
+        "uz": [
+          "Kaliy permanganat",
+          "Antranil kislota",
+          "Piperidin"
+        ],
+        "ru": [
+          "Перманганат калия",
+          "Антраниловая кислота",
+          "Пиперидин"
+        ],
+        "en": [
+          "Potassium permanganate",
+          "Anthranilic acid",
+          "Piperidine"
+        ]
+      },
+      "pages": "15, 146"
     },
     {
       "id": "gmt.pre.2",
-      "question": {"uz": "Qaysi reaksiya asetonni ko‘k indigo hosil qilish orqali ko‘rsatadi?", "ru": "Какая реакция выявляет ацетон по образованию синего индиго?", "en": "Which reaction reveals acetone by forming blue indigo?"},
-      "answer": {"uz": "Ishqoriy muhitda o-nitrobenzaldegid bilan", "ru": "С о-нитробензальдегидом в щелочной среде", "en": "With o-nitrobenzaldehyde in alkali"},
-      "distractors": [
-        {"uz": "Ishqoriy yod eritmasi bilan", "ru": "Со щелочным раствором иода", "en": "With alkaline iodine"},
-        {"uz": "Bariy xlorid bilan", "ru": "С хлоридом бария", "en": "With barium chloride"},
-        {"uz": "Kumush nitrat bilan", "ru": "С нитратом серебра", "en": "With silver nitrate"}
-      ],
-      "citations": [{"key": "gmt_yuldashev2024", "pages": "151"}]
+      "q": {
+        "uz": "Qaysi reaksiya asetonni ko‘k indigo hosil qilish orqali ko‘rsatadi?",
+        "ru": "Какая реакция выявляет ацетон по образованию синего индиго?",
+        "en": "Which reaction reveals acetone by forming blue indigo?"
+      },
+      "a": {
+        "uz": "Ishqoriy muhitda o-nitrobenzaldegid bilan",
+        "ru": "С о-нитробензальдегидом в щелочной среде",
+        "en": "With o-nitrobenzaldehyde in alkali"
+      },
+      "d": {
+        "uz": [
+          "Ishqoriy yod eritmasi bilan",
+          "Bariy xlorid bilan",
+          "Kumush nitrat bilan"
+        ],
+        "ru": [
+          "Со щелочным раствором иода",
+          "С хлоридом бария",
+          "С нитратом серебра"
+        ],
+        "en": [
+          "With alkaline iodine",
+          "With barium chloride",
+          "With silver nitrate"
+        ]
+      },
+      "pages": "151"
     },
     {
       "id": "gmt.pre.3",
-      "question": {"uz": "Nima uchun yodoform reaksiyasi aseton uchun xususiy emas?", "ru": "Почему иодоформная реакция неспецифична для ацетона?", "en": "Why is the iodoform reaction not specific for acetone?"},
-      "answer": {"uz": "Uni etanol va sut kislota ham beradi", "ru": "Её дают также этанол и молочная кислота", "en": "Ethanol and lactic acid also give it"},
-      "distractors": [
-        {"uz": "U faqat toluol bilan ishlaydi", "ru": "Она работает только с толуолом", "en": "It works only with toluene"},
-        {"uz": "U faqat UB nurda ko‘rinadi", "ru": "Она видна только в УФ-свете", "en": "It is visible only under UV"},
-        {"uz": "Aseton u bilan reaksiyaga kirmaydi", "ru": "Ацетон с ней не реагирует", "en": "Acetone does not react with it"}
-      ],
-      "citations": [{"key": "gmt_yuldashev2024", "pages": "150"}]
+      "q": {
+        "uz": "Nima uchun yodoform reaksiyasi aseton uchun xususiy emas?",
+        "ru": "Почему иодоформная реакция неспецифична для ацетона?",
+        "en": "Why is the iodoform reaction not specific for acetone?"
+      },
+      "a": {
+        "uz": "Uni etanol va sut kislota ham beradi",
+        "ru": "Её дают также этанол и молочная кислота",
+        "en": "Ethanol and lactic acid also give it"
+      },
+      "d": {
+        "uz": [
+          "U faqat toluol bilan ishlaydi",
+          "U faqat UB nurda ko‘rinadi",
+          "Aseton u bilan reaksiyaga kirmaydi"
+        ],
+        "ru": [
+          "Она работает только с толуолом",
+          "Она видна только в УФ-свете",
+          "Ацетон с ней не реагирует"
+        ],
+        "en": [
+          "It works only with toluene",
+          "It is visible only under UV",
+          "Acetone does not react with it"
+        ]
+      },
+      "pages": "150"
     },
     {
       "id": "gmt.pre.4",
-      "question": {"uz": "Ergot alkaloidlari va lizergin kislotani qaysi reaktiv ko‘k-binafsha rang bilan ko‘rsatadi?", "ru": "Какой реактив выявляет алкалоиды спорыньи и лизергиновую кислоту сине-фиолетовой окраской?", "en": "Which reagent reveals ergot alkaloids and lysergic acid with a blue-violet colour?"},
-      "answer": {"uz": "Erlix reaktivi (p-dimetilaminobenzaldegid)", "ru": "Реактив Эрлиха (п-диметиламинобензальдегид)", "en": "Ehrlich reagent (p-dimethylaminobenzaldehyde)"},
-      "distractors": [
-        {"uz": "Dille–Koppani reaktivi", "ru": "Реактив Дилле–Коппани", "en": "Dille–Koppanyi reagent"},
-        {"uz": "Kobalt tiotsianat", "ru": "Тиоцианат кобальта", "en": "Cobalt thiocyanate"},
-        {"uz": "Fast Blue B tuzi", "ru": "Соль прочного синего Б", "en": "Fast Blue B salt"}
-      ],
-      "citations": [{"key": "gmt_yuldashev2024", "pages": "155–156"}]
+      "q": {
+        "uz": "Ergot alkaloidlari va lizergin kislotani qaysi reaktiv ko‘k-binafsha rang bilan ko‘rsatadi?",
+        "ru": "Какой реактив выявляет алкалоиды спорыньи и лизергиновую кислоту сине-фиолетовой окраской?",
+        "en": "Which reagent reveals ergot alkaloids and lysergic acid with a blue-violet colour?"
+      },
+      "a": {
+        "uz": "Erlix reaktivi (p-dimetilaminobenzaldegid)",
+        "ru": "Реактив Эрлиха (п-диметиламинобензальдегид)",
+        "en": "Ehrlich reagent (p-dimethylaminobenzaldehyde)"
+      },
+      "d": {
+        "uz": [
+          "Dille–Koppani reaktivi",
+          "Kobalt tiotsianat",
+          "Fast Blue B tuzi"
+        ],
+        "ru": [
+          "Реактив Дилле–Коппани",
+          "Тиоцианат кобальта",
+          "Соль прочного синего Б"
+        ],
+        "en": [
+          "Dille–Koppanyi reagent",
+          "Cobalt thiocyanate",
+          "Fast Blue B salt"
+        ]
+      },
+      "pages": "155–156"
     }
   ]
 }

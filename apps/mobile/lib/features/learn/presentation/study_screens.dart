@@ -31,6 +31,12 @@ String studyDeckTitle(AppLocalizations l, StudyDeck d) {
     case StudyDeckKind.guidelineArea:
       final x = GuidelineArea.values.asNameMap()[d.key];
       return x == null ? d.key : x.label(l);
+    case StudyDeckKind.teachingMaterial:
+      return switch (d.key) {
+        StudyCatalogBuilder.toksDeckKey => l.studyDeckToks,
+        StudyCatalogBuilder.gmtDeckKey => l.studyDeckGmt,
+        _ => d.key,
+      };
   }
 }
 
@@ -38,6 +44,7 @@ String _sectionTitle(AppLocalizations l, StudyDeckKind k) => switch (k) {
   StudyDeckKind.discipline => l.studySectionTopics,
   StudyDeckKind.substanceGroup => l.studySectionSubstances,
   StudyDeckKind.guidelineArea => l.studySectionGuidelines,
+  StudyDeckKind.teachingMaterial => l.studySectionTeaching,
 };
 
 String _originRoute(StudyItem i) => switch (i.origin) {
@@ -144,6 +151,16 @@ class _DeckCard extends ConsumerWidget {
               if (deck.isTestData) const TestDataBadge(),
             ],
           ),
+          if (deck.kind == StudyDeckKind.teachingMaterial) ...[
+            const SizedBox(height: FeSpace.xs),
+            Text(
+              deck.key == StudyCatalogBuilder.gmtDeckKey
+                  ? l.guidelineGmtAttribution
+                  : l.guidelineToksAttribution,
+              key: Key('study.attribution.${deck.id}'),
+              style: t.bodySmall?.copyWith(color: c.textSecondary),
+            ),
+          ],
           const SizedBox(height: FeSpace.sm),
           Wrap(
             spacing: FeSpace.xs,
@@ -523,7 +540,7 @@ class _CardFront extends StatelessWidget {
       StudyItemKind.topicExcerpt => l.studyFrontTopic,
       StudyItemKind.substanceFormula => l.studyFrontSubstance,
       StudyItemKind.guidelineSummary => l.studyFrontGuideline,
-      StudyItemKind.guidelineQuiz => l.studyFrontGuidelineQuiz,
+      StudyItemKind.guidelineQuestion => l.studyFrontQuestion,
     };
     final prompt = item.prompt.resolve(lang);
     // Uzun sarlavha yoki katta shrift (2×) — so‘z o‘rtasidan uzilmasin.
@@ -648,7 +665,8 @@ class StudyAnswerText extends StatelessWidget {
             ),
           ],
         );
-      case StudyItemKind.guidelineSummary || StudyItemKind.guidelineQuiz:
+      case StudyItemKind.guidelineSummary:
+      case StudyItemKind.guidelineQuestion:
         return Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           mainAxisSize: MainAxisSize.min,
@@ -727,6 +745,14 @@ class StudySources extends StatelessWidget {
                             style: t.bodySmall?.copyWith(
                               color: c.textSecondary,
                               fontStyle: FontStyle.italic,
+                            ),
+                          ),
+                        if (s.pages != null)
+                          Text(
+                            l.studySourcePages(s.pages!),
+                            key: Key('study.source.pages.${item.id}.$i'),
+                            style: t.bodySmall?.copyWith(
+                              color: c.textSecondary,
                             ),
                           ),
                       ],
@@ -845,7 +871,7 @@ class _StudyQuizScreenState extends ConsumerState<StudyQuizScreen> {
         q.item.prompt.resolve(lang),
       ),
       StudyItemKind.guidelineSummary => l.studyQuizStemGuideline,
-      StudyItemKind.guidelineQuiz => q.item.prompt.resolve(lang),
+      StudyItemKind.guidelineQuestion => q.item.prompt.resolve(lang),
     };
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -894,7 +920,12 @@ class _StudyQuizScreenState extends ConsumerState<StudyQuizScreen> {
         ),
         if (n == 0) ...[
           const SizedBox(height: FeSpace.sm),
-          FeBanner(icon: Icons.info_outline, text: l.studyQuizNote),
+          FeBanner(
+            icon: Icons.info_outline,
+            text: q.item.distractors.isNotEmpty
+                ? l.studyQuizNoteAuthored
+                : l.studyQuizNote,
+          ),
         ],
         const SizedBox(height: FeSpace.sm),
         Wrap(
@@ -1037,11 +1068,13 @@ class _StudyQuizScreenState extends ConsumerState<StudyQuizScreen> {
                     const SizedBox(height: FeSpace.xs),
                     if (q.asksForPrompt)
                       StudyAnswerText(item: q.item, maxLines: 4)
-                    else if (q.item.kind == StudyItemKind.guidelineQuiz)
-                      Text(q.item.prompt.resolve(lang), style: t.titleSmall)
                     else
                       Text(
-                        l.studyQuizStemSubstance(q.item.prompt.resolve(lang)),
+                        q.item.kind == StudyItemKind.guidelineQuestion
+                            ? q.item.prompt.resolve(lang)
+                            : l.studyQuizStemSubstance(
+                                q.item.prompt.resolve(lang),
+                              ),
                         style: t.titleSmall,
                       ),
                     const SizedBox(height: FeSpace.xs),

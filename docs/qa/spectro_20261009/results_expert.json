@@ -1,0 +1,87 @@
+{
+  "role": "spectro",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "s01",
+      "title": "[professional] Yo‘riqnomalar: UB-spektrofotometriya kartasi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s01_professional_yo_riqnomalar_ub_spektrofot.png"
+    },
+    {
+      "id": "s02",
+      "title": "[professional] Karta ochildi: sarlavha va ilmiy asos",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s02_professional_karta_ochildi_sarlavha_va_i.png"
+    },
+    {
+      "id": "s03",
+      "title": "[professional] Karta: ehtiyot choralari (faqat UB spektri emas)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s03_professional_karta_ehtiyot_choralari_faq.png"
+    },
+    {
+      "id": "s04",
+      "title": "[professional] Karta: bog‘liq vositalar va manbalar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s04_professional_karta_bog_liq_vositalar_va_.png"
+    },
+    {
+      "id": "s05",
+      "title": "[professional] Bog‘liq vosita → Ber–Lambert sahifasi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s05_professional_bog_liq_vosita_ber_lambert_.png"
+    },
+    {
+      "id": "s06",
+      "title": "Ber–Lambert: c = 0,45/(15000·1) → 30 µmol/L",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s06_ber_lambert_c_0_45_15000_1_30_mol_l.png"
+    },
+    {
+      "id": "s07",
+      "title": "Ber–Lambert: massaviy asos, A = 25·1·20 mg/L → 0,5",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s07_ber_lambert_massaviy_asos_a_25_1_20_mg_l.png"
+    },
+    {
+      "id": "s08",
+      "title": "Ber–Lambert: bo‘sh maydon — tushunarli xato",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "s09",
+      "title": "Ber–Lambert → Kalibrlash vositasi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "s10",
+      "title": "320 dp: Ber–Lambert natijasi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s10_320_dp_ber_lambert_natijasi.png"
+    },
+    {
+      "id": "s11",
+      "title": "Tarmoq o‘chiq",
+      "result": "PASS",
+      "notes": [
+        "Bloklangan HTTP urinishlari: 0"
+      ],
+      "screenshot": null
+    }
+  ],
+  "pass": 11,
+  "fail": 0
+}

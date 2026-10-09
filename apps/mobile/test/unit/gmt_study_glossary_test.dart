@@ -20,76 +20,77 @@ void main() {
   group('O‘quv rejimi: GMT savollari', () {
     // Pullik ruxsatlarsiz (bepul foydalanuvchi) qurilgan katalog.
     final free = StudyCatalogBuilder.build(guidelines: guidelines);
-    final quiz = [
-      for (final d in free.decks)
-        for (final i in d.items)
-          if (i.kind == StudyItemKind.guidelineQuiz &&
-              i.originId.startsWith('guideline.chem.gmt_'))
-            i,
-    ];
+    final deck = free.deck(StudyCatalogBuilder.gmtDeckId);
 
-    test('bepul foydalanuvchida ham ≥30 savol bor (Pro ortida emas)', () {
-      expect(quiz.length, greaterThanOrEqualTo(30));
+    test('alohida bepul to‘plam, ≥30 savol (Pro ortida emas)', () {
+      expect(deck, isNotNull);
+      expect(deck!.kind, StudyDeckKind.teachingMaterial);
+      expect(deck.key, StudyCatalogBuilder.gmtDeckKey);
+      expect(deck.items.length, greaterThanOrEqualTo(30));
+      expect(
+        deck.items.every((i) => i.originId.startsWith('guideline.chem.gmt_')),
+        isTrue,
+      );
       final unlocked = StudyCatalogBuilder.build(
         guidelines: guidelines,
         substancesUnlocked: true,
         referencesUnlocked: true,
       );
-      final all = unlocked.itemsOfKind(StudyItemKind.guidelineQuiz);
       expect(
-        quiz.length,
-        all.where((i) => i.id.startsWith('gquiz.gmt.')).length,
+        unlocked.deck(StudyCatalogBuilder.gmtDeckId)!.items.length,
+        deck.items.length,
       );
+      // «Toksikologik kimyo» to‘plamiga aralashmaydi.
+      final toks = free.deck(StudyCatalogBuilder.toksDeckId);
+      if (toks != null) {
+        expect(
+          toks.items.any((i) => i.originId.startsWith('guideline.chem.gmt_')),
+          isFalse,
+        );
+      }
     });
 
-    test('har bir savol manbali, sahifa ko‘rsatilgan, NEEDS_REVIEW', () {
-      for (final i in quiz) {
+    test('har bir savol manbali; qo‘llanma sahifa bilan; NEEDS_REVIEW', () {
+      for (final i in deck!.items) {
+        expect(i.kind, StudyItemKind.guidelineQuestion);
         expect(i.citations, isNotEmpty, reason: i.id);
         expect(i.status, ScientificStatus.needsReview, reason: i.id);
-        expect(i.origin, StudyOrigin.guideline);
-        expect(i.choices, hasLength(3), reason: i.id);
+        expect(i.distractors, hasLength(3), reason: i.id);
         for (final c in i.citations) {
           if (c.title.contains('Giyohvand moddalar tahlili')) {
-            expect(c.detail, startsWith('p. '), reason: i.id);
+            expect(c.pages, isNotNull, reason: i.id);
           }
         }
       }
+      // Faqat PubChem/UNODC ga tayangan savol kitobni manba deb ko‘rsatmaydi.
+      final fentanyl = deck.items.firstWhere((i) => i.id.endsWith('gmt.op.6'));
       expect(
-        quiz.any((i) => i.citations.any((c) => c.title.contains('Yuldashev'))),
+        fentanyl.citations.any((c) => c.title.contains('PubChem')),
+        isTrue,
+      );
+      final marquis = deck.items.firstWhere((i) => i.id.endsWith('gmt.op.4'));
+      expect(
+        marquis.citations.every((c) => !c.title.contains('Giyohvand')),
         isTrue,
       );
     });
 
-    test('test: kartadagi 3 ta variant + to‘g‘ri javob, savol — prompt', () {
-      final deck = free.decks.firstWhere(
-        (d) => d.items.any((i) => i.kind == StudyItemKind.guidelineQuiz),
-      );
+    test('test: 3 ta aniq variant + to‘g‘ri javob, deterministik', () {
       final questions = StudyQuizBuilder.build(
-        deck,
+        deck!,
         free,
         seed: 7,
         length: deck.items.length,
       );
-      final qs = [
-        for (final q in questions)
-          if (q.item.kind == StudyItemKind.guidelineQuiz) q,
-      ];
-      expect(qs, isNotEmpty);
-      for (final q in qs) {
+      expect(questions, hasLength(deck.items.length));
+      for (final q in questions) {
         expect(q.asksForPrompt, isFalse);
-        expect(q.stem.resolve('uz'), q.item.prompt.resolve('uz'));
         expect(q.options, hasLength(4));
         expect(
           q.optionText(q.correctIndex).resolve('uz'),
           q.item.answer.resolve('uz'),
         );
-        final wrong = {
-          for (var i = 0; i < 4; i++)
-            if (i != q.correctIndex) q.optionText(i).resolve('en'),
-        };
-        expect(wrong, {for (final c in q.item.choices) c.resolve('en')});
       }
-      // Bir xil seed — bir xil test.
       final again = StudyQuizBuilder.build(
         deck,
         free,

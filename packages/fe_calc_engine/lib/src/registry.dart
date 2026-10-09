@@ -1,5 +1,6 @@
 import 'calculator.dart';
 import 'fm/henssge.dart';
+import 'lab/beer_lambert.dart';
 import 'lab/concentration_conversion.dart';
 import 'lab/dilution.dart';
 import 'lab/molarity.dart';
@@ -28,6 +29,7 @@ abstract final class CalculatorRegistry {
     BackCalculationCalculator(),
     EthanolUnitsCalculator(),
     HenssgeCalculator(),
+    BeerLambertCalculator(),
   ];
 
   static List<CalculatorDescriptor> get descriptors => [

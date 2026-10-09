@@ -69,7 +69,7 @@ void main() {
       }
     }
 
-    const deck = 'guideline.forensicChemistry';
+    const deck = 'teaching.gmt';
 
     if (!expert) {
       // ----------------------------------------------- TALABA (bepul)
@@ -80,12 +80,12 @@ void main() {
       });
       await qa.step('GMT: opioids card (attribution, free)', (s) async {
         await open(Routes.guideline('guideline.chem.gmt_opioids'));
-        expectKey('guideline.authorPermissionFree');
+        expectKey('guideline.toksAttribution');
         expectText(RegExp('Yuldashev Z.A.'));
       });
       await qa.step('GMT: cannabis card scrolled', (s) async {
         await open(Routes.guideline('guideline.chem.gmt_cannabis'));
-        expectKey('guideline.authorPermissionFree');
+        expectKey('guideline.toksAttribution');
         await qa.scrollBy(1200);
       });
       await qa.step('GMT: legal note card', (s) async {
@@ -113,7 +113,7 @@ void main() {
       ]) {
         await qa.step('GMT: open $id', (s) async {
           await open(Routes.guideline('guideline.chem.$id'));
-          expectKey('guideline.authorPermissionFree');
+          expectKey('guideline.toksAttribution');
         }, shot: false);
       }
     } else {
@@ -121,7 +121,7 @@ void main() {
       await qa.setSize(const Size(320, 640));
       await qa.step('GMT expert 320: benzodiazepines card', (s) async {
         await open(Routes.guideline('guideline.chem.gmt_benzodiazepines'));
-        expectKey('guideline.authorPermissionFree');
+        expectKey('guideline.toksAttribution');
       });
       await qa.step('GMT expert: study hub', (s) async {
         await open(Routes.study);
@@ -133,7 +133,7 @@ void main() {
       });
       await qa.step('GMT expert: precursors card', (s) async {
         await open(Routes.guideline('guideline.chem.gmt_precursors'));
-        expectKey('guideline.authorPermissionFree');
+        expectKey('guideline.toksAttribution');
       }, shot: false);
     }
 

@@ -10500,7 +10500,7 @@ abstract class AppLocalizations {
   /// Hub banner.
   ///
   /// In en, this message translates to:
-  /// **'Every card and question is built from a record or guideline that already exists in the app, together with its source. Guideline questions are written by the editors from the card\'s facts. Material that is still under expert review is labelled.'**
+  /// **'Every card and question is built from a record or guideline that already exists in the app, together with its source. Guideline questions are written by the editors from the card’s facts. Material that is still under expert review is labelled.'**
   String get studyIntro;
 
   /// Hub section.
@@ -10704,7 +10704,7 @@ abstract class AppLocalizations {
   /// Quiz banner.
   ///
   /// In en, this message translates to:
-  /// **'Wrong options are other records of the same type from the app or, for guideline questions, options set by the editors on the card; every question shows its source.'**
+  /// **'Wrong options are other records of the same type from the app; nothing is invented.'**
   String get studyQuizNote;
 
   /// Quiz progress.
@@ -12171,21 +12171,329 @@ abstract class AppLocalizations {
   /// **'{sections} sections · {refs}'**
   String rdGuidelineMeta(int sections, String refs);
 
-  /// Guideline detail: attribution line for cards built on an author-permitted source (free for everyone).
+  /// Tool name: Beer–Lambert calculator.
   ///
   /// In en, this message translates to:
-  /// **'Source: {author} et al., «{title}», {year} — used with the author\'s permission, free for everyone.'**
-  String guidelineAuthorPermissionFree(
-    String author,
-    String title,
-    String year,
-  );
+  /// **'Beer–Lambert law (A = ε·l·c)'**
+  String get toolBeerLambertName;
 
-  /// Flashcard front hint for a guideline question.
+  /// Tool description: Beer–Lambert calculator.
+  ///
+  /// In en, this message translates to:
+  /// **'Find absorbance, concentration or absorptivity from A = ε·l·c, on a molar or mass basis, with units.'**
+  String get toolBeerLambertDesc;
+
+  /// Field/result label: absorbance A.
+  ///
+  /// In en, this message translates to:
+  /// **'Absorbance'**
+  String get calcBeerAbsorbance;
+
+  /// Field/result label: molar absorptivity ε.
+  ///
+  /// In en, this message translates to:
+  /// **'Molar absorptivity'**
+  String get calcBeerAbsorptivityMolar;
+
+  /// Field/result label: specific (mass) absorptivity a.
+  ///
+  /// In en, this message translates to:
+  /// **'Specific (mass) absorptivity'**
+  String get calcBeerAbsorptivityMass;
+
+  /// Field/result label: concentration c.
+  ///
+  /// In en, this message translates to:
+  /// **'Concentration'**
+  String get calcBeerConcentration;
+
+  /// Field label: optical path length l.
+  ///
+  /// In en, this message translates to:
+  /// **'Path length (l)'**
+  String get calcBeerPath;
+
+  /// Dropdown label: unit of the calculated concentration.
+  ///
+  /// In en, this message translates to:
+  /// **'Result unit (c)'**
+  String get calcBeerResultUnit;
+
+  /// Label above the basis choice (molar or mass).
+  ///
+  /// In en, this message translates to:
+  /// **'Absorptivity basis'**
+  String get calcBeerBasis;
+
+  /// Choice: molar basis.
+  ///
+  /// In en, this message translates to:
+  /// **'Molar (ε, mol/L)'**
+  String get calcBeerBasisMolar;
+
+  /// Choice: mass basis.
+  ///
+  /// In en, this message translates to:
+  /// **'Mass (a, g/L)'**
+  String get calcBeerBasisMass;
+
+  /// Note under the formula: symbols and units.
+  ///
+  /// In en, this message translates to:
+  /// **'A — absorbance (dimensionless); ε — molar absorptivity, L·mol⁻¹·cm⁻¹ (or a — mass absorptivity, L·g⁻¹·cm⁻¹); l — path length, cm; c — concentration, mol/L (or g/L).'**
+  String get calcBeerFormulaNote;
+
+  /// Validation: concentration unit does not match the basis.
+  ///
+  /// In en, this message translates to:
+  /// **'The concentration unit does not match the absorptivity basis: use mol/L units with molar ε and g/L-type units with mass a.'**
+  String get calcBeerErrorBasis;
+
+  /// Assumption bullet.
+  ///
+  /// In en, this message translates to:
+  /// **'Definitional relationship: absorbance is proportional to path length and concentration. No absorptivity values are built in — enter a value from your own calibration or a verified source for the same wavelength, solvent and pH.'**
+  String get calcBeerAssumptionDefinition;
+
+  /// Assumption bullet.
+  ///
+  /// In en, this message translates to:
+  /// **'A is the sample absorbance corrected for the blank (reagent or matrix blank) at the chosen wavelength.'**
+  String get calcBeerAssumptionBlank;
+
+  /// Limitation bullet.
+  ///
+  /// In en, this message translates to:
+  /// **'Valid only within the working range where linearity has been shown by calibration; ICH Q2(R2) §3.2.2.1 recommends at least five concentrations across the range. Outside it, dilute the sample or use the calibration curve.'**
+  String get calcBeerLimitationLinear;
+
+  /// Limitation bullet.
+  ///
+  /// In en, this message translates to:
+  /// **'Absorbance does not identify a substance. UV-Vis has low specificity; identity must be confirmed by another technique (for example, chromatography with mass spectrometry).'**
+  String get calcBeerLimitationIdentity;
+
+  /// Reference bullet for the Beer–Lambert calculator.
+  ///
+  /// In en, this message translates to:
+  /// **'IUPAC Gold Book: “Beer–Lambert law”, doi:10.1351/goldbook.B00626 · Swinehart DF. The Beer-Lambert law. J Chem Educ 1962;39(7):333, doi:10.1021/ed039p333 · Linearity: ICH Q2(R2) (2023), §3.2.2.1.'**
+  String get calcBeerReference;
+
+  /// Section header: links to calibration and LOD/LOQ tools.
+  ///
+  /// In en, this message translates to:
+  /// **'Related tools: calibration and limits'**
+  String get calcBeerRelatedTools;
+
+  /// Action on a source/reference: open the sheet to copy a formatted bibliographic citation.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy citation'**
+  String get citeCopy;
+
+  /// Page action (substance/guideline): copy a numbered list of all sources on this page.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy reference list'**
+  String get citeAllSources;
+
+  /// Citation sheet title for the page-level reference list.
+  ///
+  /// In en, this message translates to:
+  /// **'Reference list · {count}'**
+  String citeListTitle(int count);
+
+  /// Citation sheet: label above the style selector.
+  ///
+  /// In en, this message translates to:
+  /// **'Citation style'**
+  String get citeStyleLabel;
+
+  /// Citation style name: GOST R 7.0.100-2018.
+  ///
+  /// In en, this message translates to:
+  /// **'GOST'**
+  String get citeStyleGost;
+
+  /// Citation style name: Vancouver.
+  ///
+  /// In en, this message translates to:
+  /// **'Vancouver'**
+  String get citeStyleVancouver;
+
+  /// Citation style name: APA 7th edition.
+  ///
+  /// In en, this message translates to:
+  /// **'APA 7'**
+  String get citeStyleApa;
+
+  /// Citation sheet: copy button.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy'**
+  String get citeCopyButton;
+
+  /// Snackbar after copying one citation.
+  ///
+  /// In en, this message translates to:
+  /// **'Citation copied'**
+  String get citeCopied;
+
+  /// Snackbar after copying the reference list.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 reference copied} other{{count} references copied}}'**
+  String citeListCopied(int count);
+
+  /// One-line note under citations: the app is a reference tool; the expert must verify sources.
+  ///
+  /// In en, this message translates to:
+  /// **'The app is a reference tool: verify each source against the original before citing it in an expert conclusion.'**
+  String get citeVerifyNote;
+
+  /// Attribution line on guideline cards based on Prof. Yuldashev's teaching materials.
+  ///
+  /// In en, this message translates to:
+  /// **'Source: Prof. Yuldashev Z.A. and co-authors, «Toxicological chemistry» teaching complexes (Tashkent Pharmaceutical Institute, 2025) — used with the author’s permission, free for everyone.'**
+  String get guidelineToksAttribution;
+
+  /// Study hub section for decks built from teaching complexes.
+  ///
+  /// In en, this message translates to:
+  /// **'Teaching complexes'**
+  String get studySectionTeaching;
+
+  /// Deck title: questions based on the toxicological chemistry teaching complex.
+  ///
+  /// In en, this message translates to:
+  /// **'Toxicological chemistry (Yuldashev Z.A.)'**
+  String get studyDeckToks;
+
+  /// Flashcard front hint for a question card.
   ///
   /// In en, this message translates to:
   /// **'Recall the answer, then flip the card'**
-  String get studyFrontGuidelineQuiz;
+  String get studyFrontQuestion;
+
+  /// Quiz banner for decks with written answer options.
+  ///
+  /// In en, this message translates to:
+  /// **'Questions and wrong options were written independently from the facts in the guideline cards; the correct answer and its page are given in the cited source.'**
+  String get studyQuizNoteAuthored;
+
+  /// Page numbers in the cited source.
+  ///
+  /// In en, this message translates to:
+  /// **'pp. {pages}'**
+  String studySourcePages(String pages);
+
+  /// Reagent page: prominent banner above hazard cards (count of hazard notes).
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 hazard note — read before preparing} other{{count} hazard notes — read before preparing}}'**
+  String reagentHazardBanner(int count);
+
+  /// Hazard card label: GHS hazard statements taken from PubChem.
+  ///
+  /// In en, this message translates to:
+  /// **'GHS hazard statements (PubChem)'**
+  String get reagentHazardGhs;
+
+  /// Hazard card label: general safety advice written by the app (not a cited source).
+  ///
+  /// In en, this message translates to:
+  /// **'General safety advice (app guidance)'**
+  String get reagentHazardGeneral;
+
+  /// Reagent page: which source the preparation comes from.
+  ///
+  /// In en, this message translates to:
+  /// **'Source: {title}'**
+  String reagentRecipeSource(String title);
+
+  /// Reagent page: Uzbek/English texts are automatic drafts, not yet reviewed.
+  ///
+  /// In en, this message translates to:
+  /// **'Translation is an automatic draft and has not been reviewed by a specialist. Numbers are copied from the source unchanged; check them against the original text below.'**
+  String get reagentMachineDraft;
+
+  /// Reagent page: heading of an alternative preparation method.
+  ///
+  /// In en, this message translates to:
+  /// **'Method {label}'**
+  String reagentVariant(String label);
+
+  /// Ingredient amount: make the volume up to this value («до 100 мл»).
+  ///
+  /// In en, this message translates to:
+  /// **'to {value}'**
+  String reagentMakeUpTo(String value);
+
+  /// Unit: grams.
+  ///
+  /// In en, this message translates to:
+  /// **'g'**
+  String get reagentUnitG;
+
+  /// Unit: millilitres.
+  ///
+  /// In en, this message translates to:
+  /// **'mL'**
+  String get reagentUnitMl;
+
+  /// Unit: litres.
+  ///
+  /// In en, this message translates to:
+  /// **'L'**
+  String get reagentUnitL;
+
+  /// Ingredient amount in drops; value is the formatted number or range, count selects the plural form.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{{value} drop} other{{value} drops}}'**
+  String reagentDropsAmount(int count, String value);
+
+  /// Reagent page: purpose stated in the source.
+  ///
+  /// In en, this message translates to:
+  /// **'Purpose (from the source)'**
+  String get reagentPurpose;
+
+  /// Reagent page: additional note from the source.
+  ///
+  /// In en, this message translates to:
+  /// **'Note from the source'**
+  String get reagentNote;
+
+  /// Reagent page: card listing ambiguities / OCR errors found in the source text.
+  ///
+  /// In en, this message translates to:
+  /// **'Check against the original'**
+  String get reagentAmbiguity;
+
+  /// Reagent page: collapsible section with the original Russian source text.
+  ///
+  /// In en, this message translates to:
+  /// **'Original text (Russian)'**
+  String get reagentOriginalText;
+
+  /// Reagent page: hint under the original text heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Verbatim from the source, kept for traceability (OCR errors not corrected).'**
+  String get reagentOriginalHint;
+
+  /// Guideline detail / study deck: attribution for cards built on the drug-analysis teaching manual (free for everyone).
+  ///
+  /// In en, this message translates to:
+  /// **'Source: Yuldashev Z.A. et al., «Analysis of narcotic substances. Teaching manual» (Tashkent Pharmaceutical Institute, Tashkent, 2024) — used with the author’s permission, free for everyone.'**
+  String get guidelineGmtAttribution;
+
+  /// Study deck title: questions on the drug-analysis teaching manual.
+  ///
+  /// In en, this message translates to:
+  /// **'Drug analysis (Yuldashev Z.A.)'**
+  String get studyDeckGmt;
 }
 
 class _AppLocalizationsDelegate

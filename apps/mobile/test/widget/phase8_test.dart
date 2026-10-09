@@ -106,7 +106,7 @@ void main() {
   });
 
   testWidgets('reagent: retsept yo‘q — to‘qilmaydi', (tester) async {
-    await open(tester, Routes.knowledgeEntry('reagent-marquis'));
+    await open(tester, Routes.knowledgeEntry('reagent-mecke'));
     await see(tester, find.byKey(const Key('reagent.noRecipe')));
   });
 }

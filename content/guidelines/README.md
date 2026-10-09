@@ -12,11 +12,12 @@ integratsiyasi `guidelines_v1.json` faylini o‘qiydi.
 | `references.json` | Tekshirilgan bibliografiya (yagona manba) |
 | `build.py` | `guidelines_v1.json` ni yig‘adi (faqat iqtibos keltirilgan manbalar kiritiladi) |
 | `guidelines_v1.json` | **Iste’mol uchun tayyor fayl** (generatsiya qilinadi, qo‘lda tahrirlanmaydi) |
-| `validate.py` | Tekshiruv (G001–G016) |
+| `validate.py` | Tekshiruv (G001–G017) |
 | `REVIEW_GMT.md` | «Giyohvand moddalar tahlili» kartalari: tuzatilgan va olib tashlangan raqamlar (ekspert uchun) |
 
 ```bash
 python3 content/guidelines/build.py && python3 content/guidelines/validate.py
+python3 content/guidelines/sync_app_asset.py   # ilova asset’i (ichki maydonlarsiz)
 ```
 
 ## Sxema: `fe-guidelines/1`
@@ -43,12 +44,7 @@ python3 content/guidelines/build.py && python3 content/guidelines/validate.py
     }],
     "reference_keys": ["…"],                    // kartochkadagi barcha kalitlar (build.py)
     "keywords": {"uz":[…],"ru":[…],"en":[…]},   // qidiruv uchun sinonimlar
-    "omitted_unverified": ["…"],                // ataylab kiritilmagan, tekshirilmagan faktlar (EN, ichki)
-    "source_access": {"source_key": "gmt_yuldashev2024", "access": "free",
-                      "basis": "author_permission_2026-10-09"},  // ixtiyoriy (G016)
-    "quiz": [{"id": "…", "question": {…}, "answer": {…},
-              "distractors": [{…}, {…}, {…}],
-              "citations": [{"key": "…", "pages": "23"}]}]     // ixtiyoriy (G014)
+    "omitted_unverified": ["…"]                 // ataylab kiritilmagan, tekshirilmagan faktlar (EN, ichki)
   }],
   "references": [{
     "key": "tiscione2011", "type": "journal_article",
@@ -60,6 +56,16 @@ python3 content/guidelines/build.py && python3 content/guidelines/validate.py
   }]
 }
 ```
+
+### O‘quv-uslubiy majmualar (`type: teaching_material`)
+- Prof. Yuldashev Z.A. majmualari (`toks_*`, `dvssm_*`) muallif ruxsati bilan;
+  `rights` va `publisher` majburiy (G014). Bunday manbaga tayangan karta va
+  undan olingan savollar **barcha uchun bepul** (`"access": "free"`, G015) —
+  kartada manba qatori ko‘rsatiladi, savollar o‘quv rejimida alohida bepul
+  to‘plamda.
+- Ixtiyoriy `quiz` maydoni (G016): `{"id","q":{uz,ru,en},"a":{…},"d":{"uz":[3 ta],…},"pages"}`.
+- Iqtibos sahifasi kalitdan keyin: `[toks_majmua2025] (23-b.)` / `(с. 23)` / `(p. 23)`.
+- Tuzatilgan va chiqarilgan raqamlar: `REVIEW_TOKS.md`.
 
 ### UI uchun eslatmalar
 - Matn ichidagi iqtiboslar `[key]` yoki `[key1, key2]` ko‘rinishida; UI ularni
@@ -86,8 +92,8 @@ python3 content/guidelines/build.py && python3 content/guidelines/validate.py
 - O‘zbek lotin yozuvi: o‘ / g‘ uchun U+2018, tutuq belgisi uchun ’ (U+2019) (G010).
 
 ## Qo‘shimcha qoidalar (2026-10-09)
-- `build.py` ilova assetini ham yozadi: `apps/mobile/assets/content/guidelines/guidelines_v1.json`
-  (`omitted_unverified` olib tashlangan, indent=1).
-- Kitob manbasi sahifa bilan keltiriladi: `[gmt_yuldashev2024] (23-b.)`, `(с. 23)`, `(p. 23)` (G015).
-- Muallif ruxsati bilan olingan manbadan tuzilgan kartalar `source_access.access = "free"` (G016);
-  ilova atribusiya qatorini ko‘rsatadi. Test savollari (`quiz`) o‘quv rejimiga tushadi (G014).
+- «Giyohvand moddalar tahlili» (`gmt_yuldashev2024`, `teaching_material`) sahifa bilan keltiriladi:
+  `[gmt_yuldashev2024] (23-b.)`, `(с. 23)`, `(p. 23)` (G017). Kartalar `access: "free"` (G015).
+- `quiz` elementida ixtiyoriy `"cite": ["kalit", …]` — savol aniq tayangan manbalar (masalan,
+  PubChem yoki UNODC); `pages` faqat o‘quv-uslubiy materialga tegishli (G016). GMT savollari
+  o‘quv rejimida alohida «Giyohvand moddalar tahlili (Yuldashev Z.A.)» to‘plamida.

@@ -3,6 +3,7 @@ library;
 
 export 'src/calculator.dart';
 export 'src/fm/henssge.dart';
+export 'src/lab/beer_lambert.dart';
 export 'src/lab/concentration_conversion.dart';
 export 'src/lab/dilution.dart';
 export 'src/lab/molarity.dart';

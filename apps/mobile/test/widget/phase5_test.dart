@@ -271,8 +271,8 @@ void main() {
     tester,
   ) async {
     await open(tester, Routes.knowledgeEntry('reagent-dragendorff'));
-    await see(tester, find.byKey(const Key('reagent.ingredients')));
-    expect(find.byKey(const Key('reagent.orderNotStated')), findsOneWidget);
+    await see(tester, find.byKey(const Key('reagent.ingredients.pmc')));
+    expect(find.byKey(const Key('reagent.orderNotStated.pmc')), findsOneWidget);
     expect(
       find.textContaining('Dragendorff’s reagent was prepared by mixing'),
       findsOneWidget,

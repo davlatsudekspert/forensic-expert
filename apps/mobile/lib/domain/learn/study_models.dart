@@ -7,10 +7,7 @@
 /// * bilim yozuvi (mavzu, metod…) ↔ unga biriktirilgan manbadagi asl jumla
 ///   (`definition` / `principle` / `use` / `marker` claim’lari);
 /// * modda ↔ molekulyar formula (`identity` claim’i, manbasi bilan);
-/// * yo‘riqnoma sarlavhasi ↔ uning qisqa mazmuni (karta manbalari bilan);
-/// * yo‘riqnoma test savoli ↔ javob — kartadagi faktlar asosida tahririyat
-///   yozgan, har biri manba (kitob uchun sahifa) bilan; noto‘g‘ri variantlar
-///   kartada belgilangan.
+/// * yo‘riqnoma sarlavhasi ↔ uning qisqa mazmuni (karta manbalari bilan).
 ///
 /// Manbasiz yozuv o‘quv materialiga kirmaydi. Status yozuvdan olinadi va
 /// hech qachon ko‘tarilmaydi. Tasodifiylik faqat berilgan `seed` orqali.
@@ -37,9 +34,9 @@ enum StudyItemKind {
   /// Yo‘riqnoma sarlavhasi ↔ qisqa mazmuni.
   guidelineSummary,
 
-  /// Yo‘riqnoma faktlari bo‘yicha savol ↔ qisqa javob (tahririyat yozgan;
-  /// noto‘g‘ri variantlar kartada belgilangan, manbasi bilan).
-  guidelineQuiz,
+  /// Yo‘riqnomaga biriktirilgan savol ↔ to‘g‘ri javob (aniq distraktorlar
+  /// bilan; o‘quv-uslubiy majmua faktlaridan mustaqil yozilgan).
+  guidelineQuestion,
 }
 
 /// Kartochka qayerdan olingani (UI shu yozuvga havola beradi).
@@ -53,6 +50,7 @@ class StudyCitation {
     this.detail,
     this.sourceId,
     this.locator,
+    this.pages,
   });
 
   /// Kontent paketidagi manba (manba sahifasiga havola bilan).
@@ -70,9 +68,9 @@ class StudyCitation {
     );
   }
 
-  /// Yo‘riqnoma adabiyoti (to‘liq iqtibos matni).
-  factory StudyCitation.fromReference(GuidelineReference r) =>
-      StudyCitation(title: r.citation);
+  /// Yo‘riqnoma adabiyoti (to‘liq iqtibos matni), kerak bo‘lsa sahifalar bilan.
+  factory StudyCitation.fromReference(GuidelineReference r, {String? pages}) =>
+      StudyCitation(title: r.citation, pages: pages);
 
   final String title;
   final String? detail;
@@ -82,6 +80,9 @@ class StudyCitation {
 
   /// Manba ichidagi joy (bo‘lim), bo‘lsa.
   final String? locator;
+
+  /// Manbadagi sahifa(lar) — o‘quv-uslubiy majmua savollari uchun.
+  final String? pages;
 }
 
 /// Bitta o‘quv kartochkasi.
@@ -101,7 +102,7 @@ class StudyItem {
     this.answerIsQuote = false,
     this.draftLanguages = const {},
     this.group,
-    this.choices = const [],
+    this.distractors = const [],
   });
 
   final String id;
@@ -130,12 +131,19 @@ class StudyItem {
   /// Tahririy guruh (moddalar uchun), bo‘lsa.
   final String? group;
 
-  /// Kartada belgilangan noto‘g‘ri variantlar ([StudyItemKind.guidelineQuiz]).
-  /// Bo‘sh bo‘lsa — distraktorlar shu turdagi boshqa yozuvlardan olinadi.
-  final List<LocalizedText> choices;
+  /// Aniq (muallif yozgan) noto‘g‘ri variantlar. Bo‘sh bo‘lsa —
+  /// distraktorlar bir xil turdagi boshqa kartochkalardan olinadi.
+  final List<LocalizedText> distractors;
 }
 
-enum StudyDeckKind { discipline, substanceGroup, guidelineArea }
+enum StudyDeckKind {
+  discipline,
+  substanceGroup,
+  guidelineArea,
+
+  /// O‘quv-uslubiy majmua bo‘yicha savollar (masalan, «Toksikologik kimyo»).
+  teachingMaterial,
+}
 
 /// Fan / mavzu bo‘yicha kartochkalar to‘plami.
 @immutable
@@ -150,7 +158,8 @@ class StudyDeck {
   final String id;
   final StudyDeckKind kind;
 
-  /// `ForensicDiscipline.name`, modda guruhi yoki `GuidelineArea.name`.
+  /// `ForensicDiscipline.name`, modda guruhi, `GuidelineArea.name` yoki
+  /// o‘quv-uslubiy majmua kaliti ([StudyCatalogBuilder.toksDeckKey]).
   final String key;
   final List<StudyItem> items;
 
@@ -188,6 +197,19 @@ class StudyCatalog {
 
 /// Mavjud yozuvlardan katalog quradi (sof funksiya).
 abstract final class StudyCatalogBuilder {
+  /// «Toksikologik kimyo» majmuasi savollari to‘plami (bepul, egasi qarori).
+  static const toksDeckKey = 'toks';
+  static const toksDeckId = 'teaching.$toksDeckKey';
+
+  /// «Giyohvand moddalar tahlili» (Yuldashev Z.A. va boshq., 2024) savollari
+  /// to‘plami (bepul, egasi qarori).
+  static const gmtDeckKey = 'gmt';
+  static const gmtDeckId = 'teaching.$gmtDeckKey';
+
+  /// Manba kaliti prefiksi bo‘yicha o‘quv-uslubiy majmua to‘plami.
+  static String teachingDeckKey(List<GuidelineReference> source) =>
+      source.any((r) => r.key.startsWith('gmt_')) ? gmtDeckKey : toksDeckKey;
+
   /// Bilim yozuvi uchun claim maydonlari — ustuvorlik tartibida.
   static const topicFields = ['definition', 'principle', 'use', 'marker'];
 
@@ -316,43 +338,66 @@ abstract final class StudyCatalogBuilder {
           citations: [for (final r in refs) StudyCitation.fromReference(r)],
           origin: StudyOrigin.guideline,
           originId: card.id,
-          draftLanguages: _draftLanguages(card),
+          draftLanguages: {
+            for (final lang in const ['uz', 'ru', 'en'])
+              if (card.translationFor(lang) == GuidelineTranslationStatus.draft)
+                lang,
+          },
         ),
       );
-    }
 
-    // 4. Yo‘riqnoma test savollari: savol ↔ qisqa javob. Yo‘riqnomalar —
-    // ochiq kontent (pullik emas); muallif ruxsati bilan olingan manbalar
-    // ham barcha uchun bepul (egasi qarori, 2026-10-09).
-    for (final card in guidelines.cards) {
-      if (!_usableStatus(card.status)) continue;
-      final area = card.area.name;
+      // 4. Kartaga biriktirilgan savollar (aniq distraktorlar bilan). Prof.
+      // Yuldashev materiallariga tayangan savollar — alohida bepul to‘plam.
+      if (card.quiz.isEmpty) continue;
+      final source = [
+        for (final r in refs)
+          if (r.isYuldashevMaterial) r,
+      ];
+      final toks = source.isNotEmpty;
+      final teachingKey = teachingDeckKey(source);
       for (final q in card.quiz) {
-        final citations = [
-          for (final c in q.citations)
-            if (guidelines.references[c.key] case final r?)
-              StudyCitation(
-                title: r.citation,
-                detail: c.pages == null ? null : 'p. ${c.pages}',
-              ),
-        ];
-        if (citations.isEmpty || q.distractors.isEmpty) continue;
+        if (q.distractors.isEmpty) continue;
+        // Savol aniq manbalarni ko‘rsatgan bo‘lsa — faqat o‘shalar
+        // (sahifa faqat o‘quv-uslubiy materialga tegishli).
+        final cited = q.cite.isEmpty
+            ? null
+            : [
+                for (final r in refs)
+                  if (q.cite.contains(r.key)) r,
+              ];
         add(
-          StudyDeckKind.guidelineArea,
-          area,
+          toks ? StudyDeckKind.teachingMaterial : StudyDeckKind.guidelineArea,
+          toks ? teachingKey : area,
           StudyItem(
-            id: 'gquiz.${q.id}',
-            kind: StudyItemKind.guidelineQuiz,
-            deckId: 'guideline.$area',
+            id: 'gq.${card.id}.${q.id}',
+            kind: StudyItemKind.guidelineQuestion,
+            deckId: toks ? 'teaching.$teachingKey' : 'guideline.$area',
             prompt: LocalizedText(q.question.values),
             answer: LocalizedText(q.answer.values),
             status: card.status,
             isTestData: false,
-            citations: citations,
+            citations: [
+              if (cited != null)
+                for (final r in cited)
+                  StudyCitation.fromReference(
+                    r,
+                    pages: r.isYuldashevMaterial ? q.pages : null,
+                  )
+              else
+                for (final r in toks ? source : refs)
+                  StudyCitation.fromReference(r, pages: toks ? q.pages : null),
+            ],
             origin: StudyOrigin.guideline,
             originId: card.id,
-            draftLanguages: _draftLanguages(card),
-            choices: [for (final d in q.distractors) LocalizedText(d.values)],
+            draftLanguages: {
+              for (final lang in const ['uz', 'ru', 'en'])
+                if (card.translationFor(lang) ==
+                    GuidelineTranslationStatus.draft)
+                  lang,
+            },
+            distractors: [
+              for (final d in q.distractors) LocalizedText(d.values),
+            ],
           ),
         );
       }
@@ -374,11 +419,6 @@ abstract final class StudyCatalogBuilder {
         });
     return StudyCatalog(decks);
   }
-
-  static Set<String> _draftLanguages(GuidelineCard card) => {
-    for (final lang in const ['uz', 'ru', 'en'])
-      if (card.translationFor(lang) == GuidelineTranslationStatus.draft) lang,
-  };
 
   static ClaimView? _topicClaim(KnowledgeEntry e) {
     for (final field in topicFields) {
@@ -416,7 +456,8 @@ class StudyQuestion {
   bool get asksForPrompt => askForPrompt(item.kind);
 
   static bool askForPrompt(StudyItemKind k) =>
-      k != StudyItemKind.substanceFormula && k != StudyItemKind.guidelineQuiz;
+      k != StudyItemKind.substanceFormula &&
+      k != StudyItemKind.guidelineQuestion;
 
   LocalizedText get stem => asksForPrompt ? item.answer : item.prompt;
 
@@ -475,25 +516,6 @@ abstract final class StudyQuizBuilder {
     return picked;
   }
 
-  /// Kartada belgilangan noto‘g‘ri variantlar — variant sifatidagi yozuvlar
-  /// (javob matni o‘rnida variant; manba va status asl savoldan).
-  static List<StudyItem> fixedChoices(StudyItem item) => [
-    for (final (i, c) in item.choices.indexed)
-      if (!_clash(c, item.answer))
-        StudyItem(
-          id: '${item.id}#$i',
-          kind: item.kind,
-          deckId: item.deckId,
-          prompt: item.prompt,
-          answer: c,
-          status: item.status,
-          isTestData: item.isTestData,
-          citations: const [],
-          origin: item.origin,
-          originId: item.originId,
-        ),
-  ];
-
   /// To‘plam bo‘yicha test. Bir xil [seed] — bir xil test.
   static List<StudyQuestion> build(
     StudyDeck deck,
@@ -506,8 +528,8 @@ abstract final class StudyQuizBuilder {
     final questions = <StudyQuestion>[];
     for (final item in items) {
       if (questions.length >= length) break;
-      final wrong = item.choices.isNotEmpty
-          ? fixedChoices(item)
+      final wrong = item.distractors.isNotEmpty
+          ? _explicit(item)
           : distractors(item, catalog.itemsOfKind(item.kind), random);
       if (wrong.isEmpty) continue;
       final options = [item, ...wrong]..shuffle(random);
@@ -521,6 +543,24 @@ abstract final class StudyQuizBuilder {
     }
     return questions;
   }
+
+  /// Aniq distraktorlar — faqat variant matni uchun ishlatiladigan
+  /// yordamchi kartochkalar (katalogga qo‘shilmaydi).
+  static List<StudyItem> _explicit(StudyItem item) => [
+    for (final (i, d) in item.distractors.indexed)
+      StudyItem(
+        id: '${item.id}#d$i',
+        kind: item.kind,
+        deckId: item.deckId,
+        prompt: item.prompt,
+        answer: d,
+        status: item.status,
+        isTestData: item.isTestData,
+        citations: const [],
+        origin: item.origin,
+        originId: item.originId,
+      ),
+  ];
 
   /// To‘plamdan test tuzish mumkinmi (kamida bitta distraktor bor).
   static bool canQuiz(StudyDeck deck, StudyCatalog catalog) =>

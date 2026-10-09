@@ -14,6 +14,7 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../core/widgets/fe_data_components.dart';
+import '../../../domain/evidence/citation_format.dart';
 import '../../../domain/evidence/evidence_models.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
 import '../../../domain/library/library_models.dart';
@@ -24,6 +25,7 @@ import '../../disciplines/discipline_strings.dart';
 import '../../professional/presentation/professional_widgets.dart';
 import '../../professional/presentation/review_section.dart';
 import '../evidence_strings.dart';
+import 'citation_sheet.dart';
 import 'source_quote.dart';
 
 /// Ro‘yxatdagi research yozuvi.
@@ -423,10 +425,10 @@ class ResearchDetailScreen extends ConsumerWidget {
                   ),
                   const SizedBox(height: FeSpace.sm),
                   FeMetaList(rows: rows),
-                  if (r.primaryLink case final link?)
-                    Wrap(
-                      spacing: FeSpace.xs,
-                      children: [
+                  Wrap(
+                    spacing: FeSpace.xs,
+                    children: [
+                      if (r.primaryLink case final link?) ...[
                         if (Uri.tryParse(link) case final uri?
                             when uri.hasScheme)
                           TextButton.icon(
@@ -452,7 +454,13 @@ class ResearchDetailScreen extends ConsumerWidget {
                           },
                         ),
                       ],
-                    ),
+                      CiteButton(
+                        key: const Key('research.cite'),
+                        citation: CitationData.fromResearch(r),
+                        compact: false,
+                      ),
+                    ],
+                  ),
                   if (r.linkedEntityIds.isNotEmpty) ...[
                     FeSectionHeader(l.researchLinked),
                     Wrap(

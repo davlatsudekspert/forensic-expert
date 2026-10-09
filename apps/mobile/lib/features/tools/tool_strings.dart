@@ -16,6 +16,7 @@ extension ToolStrings on AppLocalizations {
     'tool.lab.descriptive_stats' => toolStatsName,
     'tool.conv.concentration_units' => toolUnitsName,
     'tool.conv.ethanol_units' => toolEthanolUnitsName,
+    'tool.lab.beer_lambert' => toolBeerLambertName,
     _ => t.id,
   };
 
@@ -32,6 +33,7 @@ extension ToolStrings on AppLocalizations {
     'tool.lab.descriptive_stats' => toolStatsDesc,
     'tool.conv.concentration_units' => toolUnitsDesc,
     'tool.conv.ethanol_units' => toolEthanolUnitsDesc,
+    'tool.lab.beer_lambert' => toolBeerLambertDesc,
     _ => '',
   };
 

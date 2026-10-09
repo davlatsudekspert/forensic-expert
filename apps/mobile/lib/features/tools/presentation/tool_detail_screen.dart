@@ -89,6 +89,7 @@ class _ToolDetailScreenState extends ConsumerState<ToolDetailScreen> {
                         const BackCalculationView(),
                       'tox.ethanol.units' => const EthanolUnitsView(),
                       'fm.pmi.henssge' => const HenssgeView(),
+                      'lab.beer_lambert' => const BeerLambertView(),
                       _ => _PlannedToolView(tool: tool),
                     },
             ),

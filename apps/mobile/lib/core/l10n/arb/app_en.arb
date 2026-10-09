@@ -7556,7 +7556,7 @@
   "@studyEntrySubtitle": {
     "description": "Learn screen entry."
   },
-  "studyIntro": "Every card and question is built from a record or guideline that already exists in the app, together with its source. Guideline questions are written by the editors from the card's facts. Material that is still under expert review is labelled.",
+  "studyIntro": "Every card and question is built from a record or guideline that already exists in the app, together with its source. Guideline questions are written by the editors from the card’s facts. Material that is still under expert review is labelled.",
   "@studyIntro": {
     "description": "Hub banner."
   },
@@ -7741,7 +7741,7 @@
   "@studyQuizStemGuideline": {
     "description": "Quiz stem."
   },
-  "studyQuizNote": "Wrong options are other records of the same type from the app or, for guideline questions, options set by the editors on the card; every question shows its source.",
+  "studyQuizNote": "Wrong options are other records of the same type from the app; nothing is invented.",
   "@studyQuizNote": {
     "description": "Quiz banner."
   },
@@ -8906,23 +8906,263 @@
       }
     }
   },
-  "guidelineAuthorPermissionFree": "Source: {author} et al., «{title}», {year} — used with the author's permission, free for everyone.",
-  "@guidelineAuthorPermissionFree": {
-    "description": "Guideline detail: attribution line for cards built on an author-permitted source (free for everyone).",
+  "toolBeerLambertName": "Beer–Lambert law (A = ε·l·c)",
+  "@toolBeerLambertName": {
+    "description": "Tool name: Beer–Lambert calculator."
+  },
+  "toolBeerLambertDesc": "Find absorbance, concentration or absorptivity from A = ε·l·c, on a molar or mass basis, with units.",
+  "@toolBeerLambertDesc": {
+    "description": "Tool description: Beer–Lambert calculator."
+  },
+  "calcBeerAbsorbance": "Absorbance",
+  "@calcBeerAbsorbance": {
+    "description": "Field/result label: absorbance A."
+  },
+  "calcBeerAbsorptivityMolar": "Molar absorptivity",
+  "@calcBeerAbsorptivityMolar": {
+    "description": "Field/result label: molar absorptivity ε."
+  },
+  "calcBeerAbsorptivityMass": "Specific (mass) absorptivity",
+  "@calcBeerAbsorptivityMass": {
+    "description": "Field/result label: specific (mass) absorptivity a."
+  },
+  "calcBeerConcentration": "Concentration",
+  "@calcBeerConcentration": {
+    "description": "Field/result label: concentration c."
+  },
+  "calcBeerPath": "Path length (l)",
+  "@calcBeerPath": {
+    "description": "Field label: optical path length l."
+  },
+  "calcBeerResultUnit": "Result unit (c)",
+  "@calcBeerResultUnit": {
+    "description": "Dropdown label: unit of the calculated concentration."
+  },
+  "calcBeerBasis": "Absorptivity basis",
+  "@calcBeerBasis": {
+    "description": "Label above the basis choice (molar or mass)."
+  },
+  "calcBeerBasisMolar": "Molar (ε, mol/L)",
+  "@calcBeerBasisMolar": {
+    "description": "Choice: molar basis."
+  },
+  "calcBeerBasisMass": "Mass (a, g/L)",
+  "@calcBeerBasisMass": {
+    "description": "Choice: mass basis."
+  },
+  "calcBeerFormulaNote": "A — absorbance (dimensionless); ε — molar absorptivity, L·mol⁻¹·cm⁻¹ (or a — mass absorptivity, L·g⁻¹·cm⁻¹); l — path length, cm; c — concentration, mol/L (or g/L).",
+  "@calcBeerFormulaNote": {
+    "description": "Note under the formula: symbols and units."
+  },
+  "calcBeerErrorBasis": "The concentration unit does not match the absorptivity basis: use mol/L units with molar ε and g/L-type units with mass a.",
+  "@calcBeerErrorBasis": {
+    "description": "Validation: concentration unit does not match the basis."
+  },
+  "calcBeerAssumptionDefinition": "Definitional relationship: absorbance is proportional to path length and concentration. No absorptivity values are built in — enter a value from your own calibration or a verified source for the same wavelength, solvent and pH.",
+  "@calcBeerAssumptionDefinition": {
+    "description": "Assumption bullet."
+  },
+  "calcBeerAssumptionBlank": "A is the sample absorbance corrected for the blank (reagent or matrix blank) at the chosen wavelength.",
+  "@calcBeerAssumptionBlank": {
+    "description": "Assumption bullet."
+  },
+  "calcBeerLimitationLinear": "Valid only within the working range where linearity has been shown by calibration; ICH Q2(R2) §3.2.2.1 recommends at least five concentrations across the range. Outside it, dilute the sample or use the calibration curve.",
+  "@calcBeerLimitationLinear": {
+    "description": "Limitation bullet."
+  },
+  "calcBeerLimitationIdentity": "Absorbance does not identify a substance. UV-Vis has low specificity; identity must be confirmed by another technique (for example, chromatography with mass spectrometry).",
+  "@calcBeerLimitationIdentity": {
+    "description": "Limitation bullet."
+  },
+  "calcBeerReference": "IUPAC Gold Book: “Beer–Lambert law”, doi:10.1351/goldbook.B00626 · Swinehart DF. The Beer-Lambert law. J Chem Educ 1962;39(7):333, doi:10.1021/ed039p333 · Linearity: ICH Q2(R2) (2023), §3.2.2.1.",
+  "@calcBeerReference": {
+    "description": "Reference bullet for the Beer–Lambert calculator."
+  },
+  "calcBeerRelatedTools": "Related tools: calibration and limits",
+  "@calcBeerRelatedTools": {
+    "description": "Section header: links to calibration and LOD/LOQ tools."
+  },
+  "citeCopy": "Copy citation",
+  "@citeCopy": {
+    "description": "Action on a source/reference: open the sheet to copy a formatted bibliographic citation."
+  },
+  "citeAllSources": "Copy reference list",
+  "@citeAllSources": {
+    "description": "Page action (substance/guideline): copy a numbered list of all sources on this page."
+  },
+  "citeListTitle": "Reference list · {count}",
+  "@citeListTitle": {
+    "description": "Citation sheet title for the page-level reference list.",
     "placeholders": {
-      "author": {
-        "type": "String"
-      },
-      "title": {
-        "type": "String"
-      },
-      "year": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "citeStyleLabel": "Citation style",
+  "@citeStyleLabel": {
+    "description": "Citation sheet: label above the style selector."
+  },
+  "citeStyleGost": "GOST",
+  "@citeStyleGost": {
+    "description": "Citation style name: GOST R 7.0.100-2018."
+  },
+  "citeStyleVancouver": "Vancouver",
+  "@citeStyleVancouver": {
+    "description": "Citation style name: Vancouver."
+  },
+  "citeStyleApa": "APA 7",
+  "@citeStyleApa": {
+    "description": "Citation style name: APA 7th edition."
+  },
+  "citeCopyButton": "Copy",
+  "@citeCopyButton": {
+    "description": "Citation sheet: copy button."
+  },
+  "citeCopied": "Citation copied",
+  "@citeCopied": {
+    "description": "Snackbar after copying one citation."
+  },
+  "citeListCopied": "{count, plural, =1{1 reference copied} other{{count} references copied}}",
+  "@citeListCopied": {
+    "description": "Snackbar after copying the reference list.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "citeVerifyNote": "The app is a reference tool: verify each source against the original before citing it in an expert conclusion.",
+  "@citeVerifyNote": {
+    "description": "One-line note under citations: the app is a reference tool; the expert must verify sources."
+  },
+  "guidelineToksAttribution": "Source: Prof. Yuldashev Z.A. and co-authors, «Toxicological chemistry» teaching complexes (Tashkent Pharmaceutical Institute, 2025) — used with the author’s permission, free for everyone.",
+  "@guidelineToksAttribution": {
+    "description": "Attribution line on guideline cards based on Prof. Yuldashev's teaching materials."
+  },
+  "studySectionTeaching": "Teaching complexes",
+  "@studySectionTeaching": {
+    "description": "Study hub section for decks built from teaching complexes."
+  },
+  "studyDeckToks": "Toxicological chemistry (Yuldashev Z.A.)",
+  "@studyDeckToks": {
+    "description": "Deck title: questions based on the toxicological chemistry teaching complex."
+  },
+  "studyFrontQuestion": "Recall the answer, then flip the card",
+  "@studyFrontQuestion": {
+    "description": "Flashcard front hint for a question card."
+  },
+  "studyQuizNoteAuthored": "Questions and wrong options were written independently from the facts in the guideline cards; the correct answer and its page are given in the cited source.",
+  "@studyQuizNoteAuthored": {
+    "description": "Quiz banner for decks with written answer options."
+  },
+  "studySourcePages": "pp. {pages}",
+  "@studySourcePages": {
+    "description": "Page numbers in the cited source.",
+    "placeholders": {
+      "pages": {
         "type": "String"
       }
     }
   },
-  "studyFrontGuidelineQuiz": "Recall the answer, then flip the card",
-  "@studyFrontGuidelineQuiz": {
-    "description": "Flashcard front hint for a guideline question."
+  "reagentHazardBanner": "{count, plural, =1{1 hazard note — read before preparing} other{{count} hazard notes — read before preparing}}",
+  "@reagentHazardBanner": {
+    "description": "Reagent page: prominent banner above hazard cards (count of hazard notes).",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "reagentHazardGhs": "GHS hazard statements (PubChem)",
+  "@reagentHazardGhs": {
+    "description": "Hazard card label: GHS hazard statements taken from PubChem."
+  },
+  "reagentHazardGeneral": "General safety advice (app guidance)",
+  "@reagentHazardGeneral": {
+    "description": "Hazard card label: general safety advice written by the app (not a cited source)."
+  },
+  "reagentRecipeSource": "Source: {title}",
+  "@reagentRecipeSource": {
+    "description": "Reagent page: which source the preparation comes from.",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "reagentMachineDraft": "Translation is an automatic draft and has not been reviewed by a specialist. Numbers are copied from the source unchanged; check them against the original text below.",
+  "@reagentMachineDraft": {
+    "description": "Reagent page: Uzbek/English texts are automatic drafts, not yet reviewed."
+  },
+  "reagentVariant": "Method {label}",
+  "@reagentVariant": {
+    "description": "Reagent page: heading of an alternative preparation method.",
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "reagentMakeUpTo": "to {value}",
+  "@reagentMakeUpTo": {
+    "description": "Ingredient amount: make the volume up to this value («до 100 мл»).",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "reagentUnitG": "g",
+  "@reagentUnitG": {
+    "description": "Unit: grams."
+  },
+  "reagentUnitMl": "mL",
+  "@reagentUnitMl": {
+    "description": "Unit: millilitres."
+  },
+  "reagentUnitL": "L",
+  "@reagentUnitL": {
+    "description": "Unit: litres."
+  },
+  "reagentDropsAmount": "{count, plural, =1{{value} drop} other{{value} drops}}",
+  "@reagentDropsAmount": {
+    "description": "Ingredient amount in drops; value is the formatted number or range, count selects the plural form.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "reagentPurpose": "Purpose (from the source)",
+  "@reagentPurpose": {
+    "description": "Reagent page: purpose stated in the source."
+  },
+  "reagentNote": "Note from the source",
+  "@reagentNote": {
+    "description": "Reagent page: additional note from the source."
+  },
+  "reagentAmbiguity": "Check against the original",
+  "@reagentAmbiguity": {
+    "description": "Reagent page: card listing ambiguities / OCR errors found in the source text."
+  },
+  "reagentOriginalText": "Original text (Russian)",
+  "@reagentOriginalText": {
+    "description": "Reagent page: collapsible section with the original Russian source text."
+  },
+  "reagentOriginalHint": "Verbatim from the source, kept for traceability (OCR errors not corrected).",
+  "@reagentOriginalHint": {
+    "description": "Reagent page: hint under the original text heading."
+  },
+  "guidelineGmtAttribution": "Source: Yuldashev Z.A. et al., «Analysis of narcotic substances. Teaching manual» (Tashkent Pharmaceutical Institute, Tashkent, 2024) — used with the author’s permission, free for everyone.",
+  "@guidelineGmtAttribution": {
+    "description": "Guideline detail / study deck: attribution for cards built on the drug-analysis teaching manual (free for everyone)."
+  },
+  "studyDeckGmt": "Drug analysis (Yuldashev Z.A.)",
+  "@studyDeckGmt": {
+    "description": "Study deck title: questions on the drug-analysis teaching manual."
   }
 }

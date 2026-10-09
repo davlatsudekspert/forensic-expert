@@ -81,6 +81,14 @@ abstract final class ToolsCatalog {
     engineId: 'stats.lod_loq.ich',
   );
 
+  /// A = ε·l·c — ta’rifiy hisob; ε qiymatlari ilovada saqlanmaydi.
+  static const beerLambert = ToolEntry(
+    id: 'tool.lab.beer_lambert',
+    category: ToolCategory.laboratory,
+    availability: ToolAvailability.available,
+    engineId: 'lab.beer_lambert',
+  );
+
   static const stats = ToolEntry(
     id: 'tool.lab.descriptive_stats',
     category: ToolCategory.laboratory,
@@ -128,6 +136,7 @@ abstract final class ToolsCatalog {
       availability: ToolAvailability.available,
       engineId: 'tox.ethanol.units',
     ),
+    beerLambert,
   ];
 
   static ToolEntry? byId(String id) {

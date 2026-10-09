@@ -19,9 +19,6 @@ SECTION_ORDER = [
     "reactions", "tlc", "instrumental", "interpretation",
     "advantages", "limitations", "factors", "cautions", "alternatives",
 ]
-# Ilova asseti: ichki ishchi maydonlarsiz (omitted_unverified) nusxa.
-ASSET = HERE.parent.parent / "apps/mobile/assets/content/guidelines/guidelines_v1.json"
-INTERNAL_FIELDS = ("omitted_unverified",)
 
 
 def main() -> None:
@@ -49,11 +46,6 @@ def main() -> None:
     }
     target = HERE / "guidelines_v1.json"
     target.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    asset = json.loads(json.dumps(out))
-    for c in asset["cards"]:
-        for f in INTERNAL_FIELDS:
-            c.pop(f, None)
-    ASSET.write_text(json.dumps(asset, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"wrote {target.relative_to(HERE.parent.parent)}: "
           f"{len(cards)} cards, {len(out['references'])} references")
 

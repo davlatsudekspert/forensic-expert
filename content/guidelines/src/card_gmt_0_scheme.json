@@ -12,11 +12,7 @@
     "en": "DRAFT"
   },
   "related_tool_ids": [],
-  "source_access": {
-    "source_key": "gmt_yuldashev2024",
-    "access": "free",
-    "basis": "author_permission_2026-10-09"
-  },
+  "access": "free",
   "title": {
     "uz": "Giyohvand moddalarni tahlil qilish sxemasi",
     "ru": "Схема анализа наркотических средств",
@@ -235,147 +231,133 @@
   "quiz": [
     {
       "id": "gmt.scheme.1",
-      "question": {
+      "q": {
         "uz": "SWGDRUG tasnifida rangli testlar qaysi toifaga kiradi?",
         "ru": "К какой категории SWGDRUG относятся цветные тесты?",
         "en": "Which SWGDRUG category do colour tests belong to?"
       },
-      "answer": {
+      "a": {
         "uz": "C toifasi",
         "ru": "Категория C",
         "en": "Category C"
       },
-      "distractors": [
-        {
-          "uz": "A toifasi",
-          "ru": "Категория A",
-          "en": "Category A"
-        },
-        {
-          "uz": "B toifasi",
-          "ru": "Категория B",
-          "en": "Category B"
-        },
-        {
-          "uz": "Toifaga kirmaydi — tasdiqlovchi usul",
-          "ru": "Вне категорий — подтверждающий метод",
-          "en": "Not categorised — a confirmatory technique"
-        }
-      ],
-      "citations": [
-        {
-          "key": "swgdrug2024"
-        }
+      "d": {
+        "uz": [
+          "A toifasi",
+          "B toifasi",
+          "Toifaga kirmaydi — tasdiqlovchi usul"
+        ],
+        "ru": [
+          "Категория A",
+          "Категория B",
+          "Вне категорий — подтверждающий метод"
+        ],
+        "en": [
+          "Category A",
+          "Category B",
+          "Not categorised — a confirmatory technique"
+        ]
+      },
+      "cite": [
+        "swgdrug2024"
       ]
     },
     {
       "id": "gmt.scheme.2",
-      "question": {
+      "q": {
         "uz": "Rangli test ijobiy bo‘lsa, bu nimani bildiradi?",
         "ru": "Что означает положительный цветной тест?",
         "en": "What does a positive colour test mean?"
       },
-      "answer": {
+      "a": {
         "uz": "Modda bo‘lishi mumkin; tasdiqlovchi tahlil kerak",
         "ru": "Вещество возможно присутствует; нужно подтверждение",
         "en": "The substance may be present; confirmation is needed"
       },
-      "distractors": [
-        {
-          "uz": "Modda aniq identifikatsiya qilindi",
-          "ru": "Вещество однозначно идентифицировано",
-          "en": "The substance is definitely identified"
-        },
-        {
-          "uz": "Moddaning miqdori aniqlandi",
-          "ru": "Определено количество вещества",
-          "en": "The amount of substance is determined"
-        },
-        {
-          "uz": "Namuna nazoratdagi modda saqlamaydi",
-          "ru": "Проба не содержит контролируемых веществ",
-          "en": "The sample contains no controlled substance"
-        }
-      ],
-      "citations": [
-        {
-          "key": "gmt_unodc_rapid_tests",
-          "pages": "37–51"
-        },
-        {
-          "key": "swgdrug2024"
-        }
+      "d": {
+        "uz": [
+          "Modda aniq identifikatsiya qilindi",
+          "Moddaning miqdori aniqlandi",
+          "Namuna nazoratdagi modda saqlamaydi"
+        ],
+        "ru": [
+          "Вещество однозначно идентифицировано",
+          "Определено количество вещества",
+          "Проба не содержит контролируемых веществ"
+        ],
+        "en": [
+          "The substance is definitely identified",
+          "The amount of substance is determined",
+          "The sample contains no controlled substance"
+        ]
+      },
+      "cite": [
+        "gmt_unodc_rapid_tests",
+        "swgdrug2024"
       ]
     },
     {
       "id": "gmt.scheme.3",
-      "question": {
+      "q": {
         "uz": "Asos xossali giyohvand moddalar suvli ajratmadan qaysi muhitda organik erituvchiga ekstraksiya qilinadi?",
         "ru": "В какой среде основные наркотические вещества экстрагируют из водного извлечения органическим растворителем?",
         "en": "Under which conditions are basic drugs extracted from an aqueous isolate into an organic solvent?"
       },
-      "answer": {
+      "a": {
         "uz": "Ishqoriy muhitda",
         "ru": "В щелочной среде",
         "en": "Alkaline conditions"
       },
-      "distractors": [
-        {
-          "uz": "Kuchli kislotali muhitda",
-          "ru": "В сильнокислой среде",
-          "en": "Strongly acidic conditions"
-        },
-        {
-          "uz": "Faqat qaynatilgan suvda",
-          "ru": "Только в кипящей воде",
-          "en": "Only in boiling water"
-        },
-        {
-          "uz": "Muhit ahamiyatsiz",
-          "ru": "Среда не имеет значения",
-          "en": "pH does not matter"
-        }
-      ],
-      "citations": [
-        {
-          "key": "gmt_yuldashev2024",
-          "pages": "22, 40, 78"
-        }
-      ]
+      "d": {
+        "uz": [
+          "Kuchli kislotali muhitda",
+          "Faqat qaynatilgan suvda",
+          "Muhit ahamiyatsiz"
+        ],
+        "ru": [
+          "В сильнокислой среде",
+          "Только в кипящей воде",
+          "Среда не имеет значения"
+        ],
+        "en": [
+          "Strongly acidic conditions",
+          "Only in boiling water",
+          "pH does not matter"
+        ]
+      },
+      "pages": "22, 40, 78"
     },
     {
       "id": "gmt.scheme.4",
-      "question": {
+      "q": {
         "uz": "Keng skrining uchun qaysi usul tanlov usuli hisoblanadi?",
         "ru": "Какой метод считается методом выбора для широкого скрининга?",
         "en": "Which technique is the method of choice for broad screening?"
       },
-      "answer": {
+      "a": {
         "uz": "EI to‘liq skanerli GX-MS",
         "ru": "ГХ-МС с ЭИ в режиме полного сканирования",
         "en": "EI full-scan GC-MS"
       },
-      "distractors": [
-        {
-          "uz": "Faqat Markis testi",
-          "ru": "Только тест Марки",
-          "en": "The Marquis test alone"
-        },
-        {
-          "uz": "Suyuqlanish haroratini aniqlash",
-          "ru": "Определение температуры плавления",
-          "en": "Melting point determination"
-        },
-        {
-          "uz": "Organoleptik baholash",
-          "ru": "Органолептическая оценка",
-          "en": "Organoleptic assessment"
-        }
-      ],
-      "citations": [
-        {
-          "key": "maurer2004"
-        }
+      "d": {
+        "uz": [
+          "Faqat Markis testi",
+          "Suyuqlanish haroratini aniqlash",
+          "Organoleptik baholash"
+        ],
+        "ru": [
+          "Только тест Марки",
+          "Определение температуры плавления",
+          "Органолептическая оценка"
+        ],
+        "en": [
+          "The Marquis test alone",
+          "Melting point determination",
+          "Organoleptic assessment"
+        ]
+      },
+      "cite": [
+        "maurer2004"
       ]
     }
   ]
