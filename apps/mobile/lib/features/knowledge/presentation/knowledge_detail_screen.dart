@@ -28,6 +28,7 @@ import '../../evidence/presentation/scientific_image.dart';
 import '../../evidence/presentation/source_quote.dart';
 import '../../library/presentation/content_entry_sections.dart';
 import '../../professional/presentation/review_section.dart';
+import '../../support/presentation/support_widgets.dart' show ReportErrorMenu;
 import '../knowledge_strings.dart';
 
 /// Bilim yozuvi sahifasi.
@@ -111,6 +112,10 @@ class KnowledgeDetailScreen extends ConsumerWidget {
             ),
           ),
           FavoriteButton(id: e.id),
+          ReportErrorMenu(
+            entityId: 'knowledge:${e.id}',
+            title: e.name.resolve(lang),
+          ),
         ],
       ),
       body: SafeArea(

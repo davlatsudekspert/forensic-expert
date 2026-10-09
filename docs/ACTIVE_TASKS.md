@@ -1,10 +1,25 @@
 # ACTIVE TASKS
 
-Yangilangan: 2026-10-08. Format: [holat] vazifa — egasi/keyingi qadam.
+Yangilangan: 2026-10-09. Format: [holat] vazifa — egasi/keyingi qadam.
 
 ## Hozir bajarilmoqda
 - [agent] O‘zbekcha UI to‘liqligi + avtomatik test (worktree, birlashtirish kutilmoqda).
 - [agent] Premium dizayn tizimi: graphite/navy/noir, champagne gold, ivory, serif sarlavhalar (worktree).
+
+- [agent] Admin panel + «Taklif va murojaatlar» (worktree): migratsiya
+  `20261009000000_support_and_admin.sql` + SQL testlar, Flutter ekranlar, testlar,
+  goldenlar. Batafsil: `docs/ADMIN_PANEL.md`.
+
+## Admin panel / murojaatlar — yo‘l xaritasi
+1. [egasi] Migratsiyani production’ga qo‘llash (ruxsat) → OTP bilan kirib, Profil →
+   «Taklif va murojaatlar» va Boshqaruv paneli → Murojaatlar qutisi E2E.
+2. [egasi] `delete-account` Edge Function deploy (skrinshotlarni ham o‘chiradi).
+3. [backlog] MFA: ilovada TOTP enroll ekrani → `admin_requires_aal2 = true`.
+4. [backlog] Bildirishnoma: egasiga Telegram/email «yangi murojaat»; foydalanuvchiga
+   push (FCM) — feature-freeze’dan keyin, narx/variantlar `ADMIN_PANEL.md` §6.
+5. [backlog] Yopilgan murojaatlarni 24 oydan keyin tozalash (pg_cron) + maxfiylik
+   siyosatiga band.
+6. [backlog] Katta jamoa bo‘lsa — alohida web admin (o‘sha RPC’lar ustida).
 
 ## Navbatdagi (xavfsiz, mustaqil)
 1. Agent natijalarini birlashtirish → to‘liq test → goldenlar → push → CI.

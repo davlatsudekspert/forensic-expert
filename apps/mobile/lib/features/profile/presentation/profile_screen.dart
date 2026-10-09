@@ -8,6 +8,7 @@ import '../../../app/app_info.dart';
 import '../../../app/professional.dart';
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
+import '../../../app/support.dart';
 import '../../../app/user_data.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
@@ -24,6 +25,7 @@ import '../../professional/presentation/professional_widgets.dart';
 import '../../professional/presentation/verification_screens.dart';
 import '../../professional/professional_strings.dart';
 import '../../referral/presentation/invite_card.dart';
+import '../../support/presentation/support_widgets.dart';
 import 'subscription_ui.dart';
 
 class ProfileScreen extends ConsumerWidget {
@@ -47,6 +49,7 @@ class ProfileScreen extends ConsumerWidget {
     final pendingDocs = ref.watch(pendingCredentialsProvider).length;
     final t = Theme.of(context).textTheme;
     final lang = Localizations.localeOf(context).languageCode;
+    final unread = ref.watch(supportUnreadProvider).value ?? 0;
     final resolver = ref.watch(jurisdictionResolverProvider);
     final jurisdiction =
         resolver.byId(settings.jurisdictionId) ??
@@ -137,6 +140,51 @@ class ProfileScreen extends ConsumerWidget {
                       icon: Icons.person_remove_outlined,
                       title: l.deleteAccount,
                       onTap: () => context.push(Routes.accountDelete),
+                    ),
+                  ],
+                  if (ref.watch(supportAvailableProvider)) ...[
+                    if (unread > 0)
+                      Padding(
+                        padding: const EdgeInsets.only(top: FeSpace.xs),
+                        child: FeCard(
+                          key: const Key('profile.supportBanner'),
+                          color: c.accentContainer,
+                          padding: const EdgeInsets.all(FeSpace.sm),
+                          onTap: () => context.push(Routes.support),
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.mark_chat_unread_outlined,
+                                color: c.onAccentContainer,
+                              ),
+                              const SizedBox(width: FeSpace.sm),
+                              Expanded(
+                                child: Text(
+                                  l.supBannerText,
+                                  style: t.bodyMedium?.copyWith(
+                                    color: c.onAccentContainer,
+                                  ),
+                                ),
+                              ),
+                              Icon(
+                                Icons.chevron_right,
+                                color: c.onAccentContainer,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    _Row(
+                      key: const Key('profile.support'),
+                      icon: Icons.forum_outlined,
+                      title: l.supTitle,
+                      value: unread > 0
+                          ? l.supUnreadHint(unread)
+                          : l.supProfileHint,
+                      trailing: unread > 0
+                          ? SupportUnreadBadge(count: unread)
+                          : null,
+                      onTap: () => context.push(Routes.support),
                     ),
                   ],
                   const SizedBox(height: FeSpace.sm),
@@ -430,6 +478,7 @@ class _Row extends StatelessWidget {
     this.value,
     this.valueWidget,
     this.onTap,
+    this.trailing,
   });
 
   final IconData icon;
@@ -437,6 +486,7 @@ class _Row extends StatelessWidget {
   final String? value;
   final Widget? valueWidget;
   final VoidCallback? onTap;
+  final Widget? trailing;
 
   @override
   Widget build(BuildContext context) {
@@ -451,7 +501,14 @@ class _Row extends StatelessWidget {
         ),
         null => value == null ? null : Text(value!),
       },
-      trailing: onTap == null ? null : const Icon(Icons.chevron_right),
+      trailing: switch ((trailing, onTap)) {
+        (final w?, _) => Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [w, const Icon(Icons.chevron_right)],
+        ),
+        (null, null) => null,
+        _ => const Icon(Icons.chevron_right),
+      },
       onTap: onTap,
     );
   }

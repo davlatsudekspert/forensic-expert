@@ -15,6 +15,7 @@ import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
 import '../../../domain/guidelines/guideline_models.dart';
+import '../../support/presentation/support_widgets.dart' show ReportErrorMenu;
 import '../../tools/tool_strings.dart';
 import 'practice_catalog_screen.dart';
 
@@ -202,7 +203,12 @@ class GuidelineDetailScreen extends ConsumerWidget {
     final translation = card.translationFor(lang);
 
     return Scaffold(
-      appBar: AppBar(title: Text(l.guidelinesTitle)),
+      appBar: AppBar(
+        title: Text(l.guidelinesTitle),
+        actions: [
+          ReportErrorMenu(entityId: 'guideline:${card.id}', title: title.text),
+        ],
+      ),
       body: SafeArea(
         child: ListView(
           key: const Key('guideline.detail'),

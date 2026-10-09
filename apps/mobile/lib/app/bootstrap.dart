@@ -29,6 +29,7 @@ import '../data/remote/supabase_professional.dart';
 import '../data/remote/supabase_publications.dart';
 import '../data/remote/supabase_referral.dart';
 import '../data/remote/supabase_rest.dart';
+import '../data/remote/supabase_support.dart';
 import '../domain/ports/backend_ports.dart';
 import '../domain/ports/billing_ports.dart';
 import 'account.dart';
@@ -39,6 +40,7 @@ import 'providers.dart';
 import 'publications.dart';
 import 'referral.dart';
 import 'study.dart';
+import 'support.dart';
 import 'user_data.dart';
 
 /// Ilovani ishga tushirish.
@@ -118,6 +120,9 @@ Future<void> bootstrap() async {
           ),
           publicationServiceProvider.overrideWithValue(
             SupabasePublicationService(config: supabase, auth: auth),
+          ),
+          supportServiceProvider.overrideWithValue(
+            SupabaseSupportService(config: supabase, auth: auth),
           ),
         ],
         // Obunalar: faqat mobil store’larda. Boshqa platformada — store yo‘q.

@@ -6192,4 +6192,471 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get sectionComputedProperties => 'Вычисленные свойства';
+
+  @override
+  String get supTitle => 'Предложения и обращения';
+
+  @override
+  String get supProfileHint =>
+      'Идеи, ошибки, научные неточности — команда отвечает здесь';
+
+  @override
+  String supUnreadHint(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count новых ответов',
+      few: '$count новых ответа',
+      one: '$count новый ответ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get supNew => 'Новое обращение';
+
+  @override
+  String get supEmpty =>
+      'Вы ещё не отправляли обращений. Поделитесь идеей, сообщите об ошибке или научной неточности — мы читаем каждое сообщение.';
+
+  @override
+  String get supLoadFailed =>
+      'Не удалось загрузить обращения. Проверьте соединение.';
+
+  @override
+  String get supUnavailable =>
+      'Для обращений нужен онлайн-сервис, он не подключён в этой сборке.';
+
+  @override
+  String get supSignInRequired =>
+      'Войдите, чтобы отправить обращение и получать ответы.';
+
+  @override
+  String get supSignIn => 'Войти';
+
+  @override
+  String get supCatSuggestion => 'Предложение';
+
+  @override
+  String get supCatBug => 'Ошибка в приложении';
+
+  @override
+  String get supCatScientificError => 'Научная ошибка';
+
+  @override
+  String get supCatFeatureRequest => 'Новая функция';
+
+  @override
+  String get supCatTechSupport => 'Техническая поддержка';
+
+  @override
+  String get supCatGeneral => 'Общий вопрос';
+
+  @override
+  String get supStatusNew => 'Новое';
+
+  @override
+  String get supStatusInReview => 'На рассмотрении';
+
+  @override
+  String get supStatusAnswered => 'Отвечено';
+
+  @override
+  String get supStatusClosed => 'Закрыто';
+
+  @override
+  String get supCategory => 'Категория';
+
+  @override
+  String get supSubject => 'Тема';
+
+  @override
+  String get supMessage => 'Сообщение';
+
+  @override
+  String get supMessageHint =>
+      'Опишите, что произошло или что вы предлагаете. Не указывайте персональные данные третьих лиц и материалы дел.';
+
+  @override
+  String supRelated(String id) {
+    return 'Связанная запись: $id';
+  }
+
+  @override
+  String get supAttach => 'Прикрепить снимок экрана';
+
+  @override
+  String get supAttachHint => 'JPEG или PNG, до 5 МБ.';
+
+  @override
+  String get supAttachRemove => 'Удалить снимок';
+
+  @override
+  String get supAttachTooLarge => 'Изображение больше 5 МБ.';
+
+  @override
+  String get supAttachWrongType => 'Можно прикрепить только JPEG или PNG.';
+
+  @override
+  String get supAttachment => 'Снимок экрана';
+
+  @override
+  String get supPrivacyNote =>
+      'Сообщение, снимок и e-mail аккаунта хранятся на нашем сервере только для ответа вам. Их видит лишь команда FORENSIC EXPERT. Они удаляются вместе с аккаунтом.';
+
+  @override
+  String get supConsent =>
+      'Я согласен(на) на обработку этого сообщения для ответа на обращение.';
+
+  @override
+  String get supSend => 'Отправить';
+
+  @override
+  String get supSending => 'Отправка…';
+
+  @override
+  String get supSent => 'Обращение отправлено. Ответ появится здесь.';
+
+  @override
+  String get supConsentRequired => 'Подтвердите согласие.';
+
+  @override
+  String get supSubjectRequired => 'Укажите тему.';
+
+  @override
+  String get supMessageRequired => 'Введите сообщение.';
+
+  @override
+  String get supRateLimited => 'Слишком много сообщений. Попробуйте позже.';
+
+  @override
+  String get supFailed => 'Не отправлено. Проверьте соединение и повторите.';
+
+  @override
+  String get supClosedNote =>
+      'Обращение закрыто. Создайте новое, если нужна помощь.';
+
+  @override
+  String get supReplyHint => 'Напишите сообщение';
+
+  @override
+  String get supYou => 'Вы';
+
+  @override
+  String get supTeam => 'Команда FORENSIC EXPERT';
+
+  @override
+  String get supNotFound => 'Обращение не найдено.';
+
+  @override
+  String supUnreadBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count непрочитанных ответов',
+      few: '$count непрочитанных ответа',
+      one: '$count непрочитанный ответ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get supBannerText => 'Команда ответила на ваше обращение.';
+
+  @override
+  String get supBannerOpen => 'Посмотреть';
+
+  @override
+  String get supBannerDismiss => 'Скрыть';
+
+  @override
+  String get supReportError => 'Сообщить об ошибке';
+
+  @override
+  String supReportErrorSubject(String title) {
+    return 'Ошибка в материале: $title';
+  }
+
+  @override
+  String supMessages(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count сообщений',
+      few: '$count сообщения',
+      one: '$count сообщение',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get supMoreActions => 'Другие действия';
+
+  @override
+  String get admNavInbox => 'Входящие обращения';
+
+  @override
+  String admNavInboxHint(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ожидают ответа',
+      few: '$count ожидают ответа',
+      one: '$count ожидает ответа',
+      zero: 'Нет ожидающих ответа',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get admNavUsers => 'Пользователи';
+
+  @override
+  String get admNavUsersHint => 'Поиск, фильтры, уровень доступа';
+
+  @override
+  String get admNavAudit => 'Журнал действий';
+
+  @override
+  String get admNavAuditHint => 'Все действия админов, без текста сообщений';
+
+  @override
+  String get admNavModeration => 'Модерация публикаций';
+
+  @override
+  String admNavModerationHint(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count в очереди',
+      zero: 'Очередь пуста',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get admOverview => 'Обзор';
+
+  @override
+  String get admStatUsers => 'Пользователи';
+
+  @override
+  String get admStatNewToday => 'Новые сегодня';
+
+  @override
+  String get admStatNew7d => 'Новые за 7 дней';
+
+  @override
+  String get admStatNew30d => 'Новые за 30 дней';
+
+  @override
+  String get admStatActive7d => 'Активные за 7 дней';
+
+  @override
+  String get admStatActive30d => 'Активные за 30 дней';
+
+  @override
+  String get admStatPro => 'Pro (серверный доступ)';
+
+  @override
+  String get admStatFree => 'Бесплатно';
+
+  @override
+  String get admStatAwaiting => 'Обращения без ответа';
+
+  @override
+  String get admStatPublications => 'Статьи на модерации';
+
+  @override
+  String get admStatAiTotal => 'Вопросы к ИИ (всего)';
+
+  @override
+  String get admStatAi7d => 'Вопросы к ИИ за 7 дней';
+
+  @override
+  String get admStatProfiles => 'Профили специалистов';
+
+  @override
+  String get admStatVerified => 'Подтверждённые специалисты';
+
+  @override
+  String get admModesNote =>
+      'Студенты и эксперты: нет данных — режим использования хранится только на устройстве. Вместо этого показаны профили и подтверждённые специалисты.';
+
+  @override
+  String get admActiveNote =>
+      'Активный — вход, запуск приложения (отметка устройства) или вопрос к ИИ за период.';
+
+  @override
+  String get admProNote =>
+      'Pro учитывает только серверный доступ; покупки в магазине проверяются на устройстве.';
+
+  @override
+  String get admChart14d => 'Последние 14 дней: регистрации и вопросы к ИИ';
+
+  @override
+  String get admChartSignups => 'Регистрации';
+
+  @override
+  String get admChartAi => 'Вопросы к ИИ';
+
+  @override
+  String get admByCategory => 'Обращения по категориям';
+
+  @override
+  String get admStatsUnavailable => 'Статистика сейчас недоступна.';
+
+  @override
+  String get admNotAuthorizedTitle => 'Доступ запрещён';
+
+  @override
+  String get admNotAuthorized =>
+      'Раздел только для администраторов. Доступ проверяется на сервере.';
+
+  @override
+  String get admBackToProfile => 'Вернуться в профиль';
+
+  @override
+  String get admFilterAll => 'Все';
+
+  @override
+  String get admFilterAwaiting => 'Ждут ответа';
+
+  @override
+  String get admAllCategories => 'Все категории';
+
+  @override
+  String get admInboxSearch => 'Тема или e-mail';
+
+  @override
+  String get admInboxEmpty => 'Нет обращений по фильтру.';
+
+  @override
+  String get admLoadMore => 'Загрузить ещё';
+
+  @override
+  String admShown(int shown, int total) {
+    return '$shown из $total';
+  }
+
+  @override
+  String get admReply => 'Написать ответ';
+
+  @override
+  String get admReplySend => 'Отправить ответ';
+
+  @override
+  String get admReplySent =>
+      'Ответ отправлен. Пользователь увидит его в приложении.';
+
+  @override
+  String get admSetStatus => 'Изменить статус';
+
+  @override
+  String get admStatusChanged => 'Статус обновлён.';
+
+  @override
+  String admAuthor(String email) {
+    return 'От: $email';
+  }
+
+  @override
+  String admUnread(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count новых сообщений',
+      few: '$count новых сообщения',
+      one: '$count новое сообщение',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get admUsersSearch => 'E-mail или имя';
+
+  @override
+  String get admRoleAny => 'Любая роль';
+
+  @override
+  String get admRoleAdmin => 'Админы';
+
+  @override
+  String get admRoleModerator => 'Модераторы';
+
+  @override
+  String get admTierAny => 'Любой тариф';
+
+  @override
+  String get admTierFree => 'Бесплатный';
+
+  @override
+  String get admTierPro => 'Тариф Pro';
+
+  @override
+  String get admUsersEmpty => 'Нет пользователей по фильтру.';
+
+  @override
+  String admUserJoined(String date) {
+    return 'Регистрация: $date';
+  }
+
+  @override
+  String admUserLastActive(String date) {
+    return 'Последняя активность: $date';
+  }
+
+  @override
+  String get admUserNoActivity => 'Активность не зафиксирована';
+
+  @override
+  String get admUserActive => 'Активен';
+
+  @override
+  String get admUserUnconfirmed => 'E-mail не подтверждён';
+
+  @override
+  String get admUserBanned => 'Заблокирован';
+
+  @override
+  String get admPrev => 'Назад';
+
+  @override
+  String get admNext => 'Далее';
+
+  @override
+  String get admAuditEmpty => 'Действий администраторов пока нет.';
+
+  @override
+  String get admAuditSystem => 'система / консоль';
+
+  @override
+  String get admActSupportReply => 'Ответ на обращение';
+
+  @override
+  String get admActSupportStatus => 'Статус обращения изменён';
+
+  @override
+  String get admActSupportView => 'Открыто обращение';
+
+  @override
+  String get admActUsersView => 'Просмотрен список пользователей';
+
+  @override
+  String get admActAccessSet => 'Изменён уровень доступа';
+
+  @override
+  String get admActRoleGranted => 'Роль выдана';
+
+  @override
+  String get admActRoleRevoked => 'Роль отозвана';
+
+  @override
+  String get admActRoleChanged => 'Роль изменена';
+
+  @override
+  String get admActOther => 'Действие администратора';
+
+  @override
+  String get admRetry => 'Повторить';
 }

@@ -13,10 +13,13 @@ Deno.serve(async (req) => {
   const { data, error } = await user.auth.getUser();
   if (error || !data.user) return new Response("unauthorized", { status: 401 });
   const admin = createClient(url, service);
-  // Credential files first (private bucket), then the auth user (cascades).
-  const { data: files } = await admin.storage.from("credentials").list(data.user.id);
-  if (files && files.length > 0) {
-    await admin.storage.from("credentials").remove(files.map((f) => `${data.user.id}/${f.name}`));
+  // Private files first (credentials, support screenshots), then the auth
+  // user (cascades to support threads/messages and all other rows).
+  for (const bucket of ["credentials", "support-attachments"]) {
+    const { data: files } = await admin.storage.from(bucket).list(data.user.id);
+    if (files && files.length > 0) {
+      await admin.storage.from(bucket).remove(files.map((f) => `${data.user.id}/${f.name}`));
+    }
   }
   const del = await admin.auth.admin.deleteUser(data.user.id);
   if (del.error) return new Response("server", { status: 500 });

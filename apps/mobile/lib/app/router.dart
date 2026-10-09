@@ -14,8 +14,10 @@ import '../domain/knowledge/knowledge_models.dart';
 import '../domain/library/library_models.dart';
 import '../domain/publications/publication_models.dart';
 import '../domain/referral/referral_models.dart';
+import '../domain/support/support_models.dart';
 import '../features/account/presentation/auth_screens.dart';
 import '../features/admin/presentation/admin_screen.dart';
+import '../features/admin/presentation/admin_support_screens.dart';
 import '../features/ai/presentation/ai_screen.dart';
 import '../features/disciplines/presentation/disciplines_screens.dart';
 import '../features/evidence/presentation/provenance_screens.dart';
@@ -53,6 +55,7 @@ import '../features/publications/presentation/publications_screen.dart';
 import '../features/publications/presentation/submit_publication_screen.dart';
 import '../features/referral/presentation/referral_screen.dart';
 import '../features/shell/presentation/app_shell.dart';
+import '../features/support/presentation/support_screens.dart';
 import '../features/tools/presentation/module_hub_screen.dart';
 import '../features/tools/presentation/tool_detail_screen.dart';
 import '../features/tools/presentation/tools_screen.dart';
@@ -574,6 +577,64 @@ final routerProvider = Provider<GoRouter>((ref) {
                     path: 'admin',
                     parentNavigatorKey: rootKey,
                     builder: (c, s) => const AdminScreen(),
+                    routes: [
+                      GoRoute(
+                        path: 'inbox',
+                        parentNavigatorKey: rootKey,
+                        builder: (c, s) => const AdminInboxScreen(),
+                        routes: [
+                          GoRoute(
+                            path: ':id',
+                            parentNavigatorKey: rootKey,
+                            builder: (c, s) => AdminThreadScreen(
+                              threadId: s.pathParameters['id']!,
+                            ),
+                          ),
+                        ],
+                      ),
+                      GoRoute(
+                        path: 'users',
+                        parentNavigatorKey: rootKey,
+                        builder: (c, s) => const AdminUsersScreen(),
+                      ),
+                      GoRoute(
+                        path: 'audit',
+                        parentNavigatorKey: rootKey,
+                        builder: (c, s) => const AdminAuditScreen(),
+                      ),
+                    ],
+                  ),
+                  GoRoute(
+                    path: 'support',
+                    parentNavigatorKey: rootKey,
+                    builder: (c, s) => const SupportListScreen(),
+                    routes: [
+                      GoRoute(
+                        path: 'new',
+                        parentNavigatorKey: rootKey,
+                        builder: (c, s) {
+                          final q = s.uri.queryParameters;
+                          return NewSupportThreadScreen(
+                            initialCategory: q['category'] == null
+                                ? null
+                                : SupportCategory.fromWire(q['category']),
+                            relatedEntity: switch (q['entity']) {
+                              final e? when e.isNotEmpty =>
+                                sanitizeRelatedEntity(e),
+                              _ => null,
+                            },
+                            relatedTitle: q['title'],
+                          );
+                        },
+                      ),
+                      GoRoute(
+                        path: 'thread/:id',
+                        parentNavigatorKey: rootKey,
+                        builder: (c, s) => SupportThreadScreen(
+                          threadId: s.pathParameters['id']!,
+                        ),
+                      ),
+                    ],
                   ),
                   GoRoute(
                     path: 'invite',
