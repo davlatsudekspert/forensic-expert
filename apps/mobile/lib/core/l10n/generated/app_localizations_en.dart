@@ -6079,4 +6079,65 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get specimenSubstancesNone =>
       'No substance in the pack is linked to this specimen yet.';
+
+  @override
+  String get quoteMachineTranslation => 'Automatic translation · not verified';
+
+  @override
+  String get quoteMachineTranslationSemantics =>
+      'Automatic translation of the source excerpt, not verified by an expert. The original text above is the citation.';
+
+  @override
+  String quoteOriginalTitle(String title) {
+    return 'Original title: $title';
+  }
+
+  @override
+  String sourceSectionRef(String section) {
+    return '§ $section';
+  }
+
+  @override
+  String get sectionAbstract => 'Abstract';
+
+  @override
+  String get sectionIntroduction => 'Introduction';
+
+  @override
+  String get sectionBackground => 'Background';
+
+  @override
+  String get sectionMethods => 'Methods';
+
+  @override
+  String get sectionResults => 'Results';
+
+  @override
+  String get sectionDiscussion => 'Discussion';
+
+  @override
+  String get sectionConclusion => 'Conclusions';
+
+  @override
+  String get sectionCaseReport => 'Case report';
+
+  @override
+  String get sectionFigure => 'Figure';
+
+  @override
+  String get sectionTable => 'Table';
+
+  @override
+  String get sectionSupplement => 'Supplementary material';
+
+  @override
+  String get sectionTitle => 'Title';
+
+  @override
+  String researchAuthorsEtAl(String author) {
+    return '$author et al.';
+  }
+
+  @override
+  String get sectionComputedProperties => 'Computed properties';
 }

@@ -10,6 +10,7 @@ import 'knowledge.dart';
 import 'provenance.dart';
 import 'source.dart';
 import 'status_resolver.dart';
+import 'text_translation.dart';
 
 enum IssueSeverity { error, warning }
 
@@ -95,6 +96,10 @@ abstract final class RuleCodes {
 
   // --- PHASE 8 ---
   static const methodEvidenceType = 'FE042_METHOD_EVIDENCE_TYPE_UNSUPPORTED';
+
+  /// Iqtibos/sarlavha avtomatik tarjimasi: status `machine_draft` emas,
+  /// asl matn yo‘q yoki o‘zgargan (xesh mos emas), til yoki matn noto‘g‘ri.
+  static const textTranslationInvalid = 'FE043_TEXT_TRANSLATION_INVALID';
 }
 
 /// Test ma’lumot ID’lari shu prefiks bilan boshlanadi — ko‘zga tashlanishi
@@ -1186,6 +1191,38 @@ class ContentValidator {
           t.id,
           'Every localized value needs a translation status.',
         );
+      }
+    }
+
+    // FE043 — iqtibos/sarlavha avtomatik tarjimalari.
+    final excerptOf = <String, String>{
+      for (final c in b.claims)
+        if (c.value['excerpt'] case final String e)
+          '${TextTranslationTarget.claimExcerpt.code}:${c.claimId}': e,
+      for (final r in b.jurisdictionalRules)
+        if (r.value['excerpt'] case final String e)
+          '${TextTranslationTarget.ruleExcerpt.code}:${r.id}': e,
+      for (final r in b.research)
+        '${TextTranslationTarget.researchTitle.code}:${r.id}': r.title,
+    };
+    final seenText = <String>{};
+    for (final t in b.textTranslations) {
+      final key = '${t.target.code}:${t.targetId}';
+      void bad(String why) =>
+          err(RuleCodes.textTranslationInvalid, '$key/${t.lang}', why);
+      if (t.status != TextTranslation.machineDraft) {
+        bad('Automatic translations must stay machine_draft.');
+      }
+      if (!TextTranslation.languages.contains(t.lang)) {
+        bad('Unsupported translation language "${t.lang}".');
+      }
+      if (t.text.trim().isEmpty) bad('Empty translation text.');
+      if (!seenText.add('$key/${t.lang}')) bad('Duplicate translation.');
+      final source = excerptOf[key];
+      if (source == null) {
+        bad('Translated source text not found.');
+      } else if (!t.matches(source)) {
+        bad('Stale translation: source text changed (sha256 mismatch).');
       }
     }
 

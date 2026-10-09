@@ -23,6 +23,7 @@ Statuslar: WORKING (avtomatik test yoki real sinov dalili bor) · IMPLEMENTED-UN
 | Research workspace | PARTIAL | faqat lokal sevimlilar/tarix; izoh, to‘plam, sinxron yo‘q |
 | Expert Publications | IMPLEMENTED (migratsiya production’da, 2026-10-08, egasi ruxsati bilan) | RPC + RLS, moderatsiya holat mashinasi, audit; lokal SQL 62 PASS; production smoke (rollback bilan): save_draft → submit → can_moderate → FORBIDDEN_OWN; advisors: faqat kutilgan RPC ogohlantirishlari; UI faqat admin yoki `FE_PUBLICATIONS` bayrog‘i bilan |
 | Lokalizatsiya | WORKING | 3 til teng kalitlar; `uz_completeness_test` (inglizcha UI so‘zlari yo‘q) |
+| Iqtibos tarjimalari (2026-10-09) | PARTIAL | 357 claim + 2 qoida iqtibosi uz/ru avtomatik tarjima (`machine_draft`, «tekshirilmagan» belgisi, asl inglizcha matn birinchi; SHA-256 bilan eskirish nazorati, FE043, DB CHECK); bo‘lim kodlari (ABSTRACT/INTRO/DISCUSS…) lokal nom bilan; 883 tadqiqot sarlavhasi tarjimasi HALI YO‘Q (infratuzilma tayyor: `content/pilot/translations/research_titles_i18n.json`) |
 | Dizayn tizimi | WORKING (avtomatik) | Scientific Luxury: graphite/navy/noir + champagne gold, ivory; Source Serif 4 (OFL); kontrast testi 93/93 |
 | Offline paket + Ed25519 | WORKING (development kalit) | production imzo kaliti/kanal yo‘q |
 | CI | WORKING | format, analyze, test, db-security, gitleaks |

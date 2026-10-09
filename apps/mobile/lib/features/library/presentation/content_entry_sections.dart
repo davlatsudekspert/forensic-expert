@@ -20,6 +20,7 @@ import '../../../domain/ports/billing_ports.dart';
 import '../../evidence/presentation/provenance_widgets.dart';
 import '../../evidence/presentation/research_screens.dart';
 import '../../evidence/presentation/scientific_image.dart';
+import '../../evidence/presentation/source_quote.dart';
 import '../../legal/presentation/legal_rule_card.dart';
 import 'substance_analysis_section.dart';
 
@@ -483,21 +484,11 @@ class ClaimCard extends StatelessWidget {
                 ),
                 child: Padding(
                   padding: const EdgeInsets.only(left: FeSpace.sm),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        l.detailExcerpt,
-                        style: t.labelSmall?.copyWith(color: c.textSecondary),
-                      ),
-                      Text(
-                        excerpt,
-                        locale: const Locale('en'),
-                        style: t.bodySmall?.copyWith(
-                          fontStyle: FontStyle.italic,
-                        ),
-                      ),
-                    ],
+                  child: SourceQuote(
+                    target: TextTranslationTarget.claimExcerpt,
+                    id: claim.claimId,
+                    text: excerpt,
+                    label: l.detailExcerpt,
                   ),
                 ),
               )
@@ -515,7 +506,8 @@ class ClaimCard extends StatelessWidget {
                 source.title,
                 if (source.journal != null) source.journal!,
                 if (source.year != null) '${source.year}',
-                if (source.locator != null) '§ ${source.locator}',
+                if (source.locator != null)
+                  localizedSectionRef(l, source.locator!),
               ].join(' · '),
               style: t.bodySmall?.copyWith(color: c.textSecondary),
             ),

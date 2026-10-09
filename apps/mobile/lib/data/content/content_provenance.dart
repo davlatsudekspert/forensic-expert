@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:fe_database/fe_database.dart' show ContentDatabase;
 
+import '../../domain/evidence/machine_translations.dart';
 import '../../domain/evidence/provenance_models.dart';
 import '../../domain/library/library_models.dart';
 
@@ -18,6 +19,34 @@ class ContentProvenance {
 
   /// PHASE 7 provenance qatlami.
   ProvenanceIndex index = ProvenanceIndex.empty;
+
+  /// Asl iqtibos/sarlavhalarning avtomatik (machine_draft) tarjimalari.
+  MachineTranslations translations = MachineTranslations.empty;
+
+  /// `text_translations` (sxema v7). Jadval yo‘q eski paketda — bo‘sh.
+  static Future<MachineTranslations> loadTranslations(
+    ContentDatabase db,
+  ) async {
+    final exists = await db
+        .customSelect(
+          "SELECT 1 FROM sqlite_master WHERE type = 'table' "
+          "AND name = 'text_translations'",
+        )
+        .get();
+    if (exists.isEmpty) return MachineTranslations.empty;
+    return MachineTranslations.of([
+      for (final r
+          in await db.customSelect('SELECT * FROM text_translations').get())
+        TextTranslation(
+          target: TextTranslationTarget.fromCode(r.read<String>('target_type')),
+          targetId: r.read<String>('target_id'),
+          lang: r.read<String>('lang'),
+          sourceSha256: r.read<String>('source_sha256'),
+          text: r.read<String>('translated_text'),
+          status: r.read<String>('status'),
+        ),
+    ]);
+  }
 
   static Future<ContentProvenance> load(ContentDatabase db) async {
     // PHASE 7: source_provenance ustunlari manba qatoriga qo‘shiladi.
@@ -142,6 +171,7 @@ class ContentProvenance {
           detectedAt: date(r.data['detected_at']),
         ),
     ];
+    p.translations = await loadTranslations(db);
     p.index = ProvenanceIndex(
       conflicts: conflicts,
       claimsById: claimsById,

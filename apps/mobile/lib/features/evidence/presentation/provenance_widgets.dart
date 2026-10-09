@@ -14,6 +14,7 @@ import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/evidence/provenance_models.dart';
 import '../../../domain/library/library_models.dart';
+import 'source_quote.dart';
 
 /// PHASE 7 yorliqlari (enum → lokal matn).
 extension ProvenanceStrings on AppLocalizations {
@@ -244,14 +245,16 @@ class ProvenanceSheet extends ConsumerWidget {
         ClaimLifecycleBanners(claim: claim),
         label(l.provStatement),
         if (claim.excerpt != null)
-          Text(
-            claim.excerpt!,
-            locale: const Locale('en'),
-            style: t.bodyMedium?.copyWith(fontStyle: FontStyle.italic),
+          SourceQuote(
+            target: TextTranslationTarget.claimExcerpt,
+            id: claim.claimId,
+            text: claim.excerpt!,
+            large: true,
           )
         else
           line(l.detailExcerptWithheld),
-        if (location != null) line(l.provLocation(location)),
+        if (location != null)
+          line(l.provLocation(localizedSectionName(l, location))),
         line(
           '${l.provLifecycle}: ${l.lifecycleLabel(claim.lifecycle)}',
           key: const Key('provenance.lifecycle'),
@@ -303,7 +306,8 @@ class _SourceProvenanceBlock extends StatelessWidget {
               if (source.organization != null) source.organization!,
               if (source.journal != null) source.journal!,
               if (source.year != null) '${source.year}',
-              if (source.locator != null) '§ ${source.locator}',
+              if (source.locator != null)
+                localizedSectionRef(l, source.locator!),
             ].join(FeGlyphs.middleDot),
             style: muted,
           ),

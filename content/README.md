@@ -6,6 +6,9 @@ Bu katalogdagi har bir qiymat **real so‘rov yoki tekshiruv** natijasida olinga
 - `tools/verify_incb.py` — INCB Yellow List / Green List PDF: aniq qator va SHA-256.
 - `tools/verify_excerpts.py` — PMC BioC: iqtibos asl matnda bor-yo‘qligi, DOI va litsenziya.
 - `tools/assemble_pilot.py` — `pilot/bundle.json` (fe-bundle/1).
+- `tools/apply_text_translations.py` — `pilot/translations/*.json` dagi avtomatik
+  (machine_draft, tekshirilmagan) iqtibos/sarlavha tarjimalarini bundle’ga qo‘shadi;
+  asl matn xeshi (`source_sha256`) mos kelmasa, tarjima tashlab yuboriladi.
 - `pilot/candidates/` — qidiruv nomzodlari. Ular ishonchli emas: faqat tekshiruvdan o‘tgani ishlatiladi.
 
 Qayta yig‘ish (repo ildizidan):

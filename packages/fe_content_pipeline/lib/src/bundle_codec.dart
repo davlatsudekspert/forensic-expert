@@ -423,6 +423,10 @@ abstract final class BundleCodec {
       for (final t in _list(root, 'term_translations'))
         ev(t, ProvenanceJson.termFrom),
     ];
+    final textTranslations = [
+      for (final t in _list(root, 'text_translations'))
+        ev(t, TextTranslation.fromJson),
+    ];
 
     if ((root['reviews'] as List? ?? const []).isNotEmpty ||
         (root['reviewers'] as List? ?? const []).isNotEmpty) {
@@ -460,6 +464,7 @@ abstract final class BundleCodec {
         specimens: specimens,
         standards: standards,
         termTranslations: termTranslations,
+        textTranslations: textTranslations,
       ),
       substances: substances,
       sourceExtras: sourceExtras,

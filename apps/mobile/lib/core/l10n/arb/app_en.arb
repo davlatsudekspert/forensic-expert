@@ -7923,5 +7923,92 @@
   "specimenSubstancesNone": "No substance in the pack is linked to this specimen yet.",
   "@specimenSubstancesNone": {
     "description": "Specimen page empty."
+  },
+  "quoteMachineTranslation": "Automatic translation · not verified",
+  "@quoteMachineTranslation": {
+    "description": "Label above an automatic translation shown under a verbatim source excerpt. Must say it is automatic and not verified."
+  },
+  "quoteMachineTranslationSemantics": "Automatic translation of the source excerpt, not verified by an expert. The original text above is the citation.",
+  "@quoteMachineTranslationSemantics": {
+    "description": "Screen-reader label for the automatic translation block."
+  },
+  "quoteOriginalTitle": "Original title: {title}",
+  "@quoteOriginalTitle": {
+    "description": "Secondary line under a translated research title.",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "sourceSectionRef": "§ {section}",
+  "@sourceSectionRef": {
+    "description": "Locator of the quoted passage inside the source.",
+    "placeholders": {
+      "section": {
+        "type": "String"
+      }
+    }
+  },
+  "sectionAbstract": "Abstract",
+  "@sectionAbstract": {
+    "description": "Article section name."
+  },
+  "sectionIntroduction": "Introduction",
+  "@sectionIntroduction": {
+    "description": "Article section name."
+  },
+  "sectionBackground": "Background",
+  "@sectionBackground": {
+    "description": "Article section name."
+  },
+  "sectionMethods": "Methods",
+  "@sectionMethods": {
+    "description": "Article section name."
+  },
+  "sectionResults": "Results",
+  "@sectionResults": {
+    "description": "Article section name."
+  },
+  "sectionDiscussion": "Discussion",
+  "@sectionDiscussion": {
+    "description": "Article section name."
+  },
+  "sectionConclusion": "Conclusions",
+  "@sectionConclusion": {
+    "description": "Article section name."
+  },
+  "sectionCaseReport": "Case report",
+  "@sectionCaseReport": {
+    "description": "Article section name."
+  },
+  "sectionFigure": "Figure",
+  "@sectionFigure": {
+    "description": "Article section name."
+  },
+  "sectionTable": "Table",
+  "@sectionTable": {
+    "description": "Article section name."
+  },
+  "sectionSupplement": "Supplementary material",
+  "@sectionSupplement": {
+    "description": "Article section name."
+  },
+  "sectionTitle": "Title",
+  "@sectionTitle": {
+    "description": "Article section name."
+  },
+  "researchAuthorsEtAl": "{author} et al.",
+  "@researchAuthorsEtAl": {
+    "description": "Short author list: first author followed by et al.",
+    "placeholders": {
+      "author": {
+        "type": "String"
+      }
+    }
+  },
+  "sectionComputedProperties": "Computed properties",
+  "@sectionComputedProperties": {
+    "description": "PubChem record section name."
   }
 }

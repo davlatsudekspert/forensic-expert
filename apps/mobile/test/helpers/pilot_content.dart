@@ -12,6 +12,7 @@ import 'package:forensic_expert/data/content/content_library_repository.dart';
 import 'package:forensic_expert/data/content/content_provenance.dart';
 import 'package:forensic_expert/data/local/content_store.dart';
 import 'package:forensic_expert/domain/evidence/evidence_models.dart';
+import 'package:forensic_expert/domain/evidence/machine_translations.dart';
 import 'package:forensic_expert/domain/evidence/provenance_models.dart';
 import 'package:forensic_expert/domain/knowledge/knowledge_models.dart';
 
@@ -35,6 +36,7 @@ class PilotContent {
     this.evidence,
     this.images,
     this.provenance,
+    this.translations,
   );
 
   final ContentLibraryRepository library;
@@ -47,7 +49,13 @@ class PilotContent {
   /// PHASE 7 provenance qatlami.
   final ProvenanceIndex provenance;
 
-  List<Override> get overrides => [
+  /// Asl iqtiboslarning avtomatik (machine_draft) tarjimalari.
+  final MachineTranslations translations;
+
+  List<Override> get overrides => overridesWith();
+
+  /// [machine] berilsa — paketdagi tarjimalar o‘rniga (eskirgan xesh testi).
+  List<Override> overridesWith({MachineTranslations? machine}) => [
     evidenceDataProvider.overrideWithValue(evidence),
     imageBytesLoaderProvider.overrideWith((ref) async => images),
     libraryRepositoryProvider.overrideWithValue(library),
@@ -55,6 +63,7 @@ class PilotContent {
     contentLegalDataProvider.overrideWithValue(legal),
     contentStatusProvider.overrideWith((ref) async => status),
     provenanceIndexProvider.overrideWithValue(provenance),
+    machineTranslationsProvider.overrideWithValue(machine ?? translations),
   ];
 }
 
@@ -87,6 +96,7 @@ Future<PilotContent> loadPilotContent() async {
         r.read<String>('image_id'): r.read<Uint8List>('bytes'),
     }),
     prov.index,
+    prov.translations,
   );
   await db.close();
   return content;

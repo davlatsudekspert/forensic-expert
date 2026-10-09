@@ -28,11 +28,12 @@ _sys.path.insert(0, "tools/p7")
 import assemble_p7  # noqa: E402
 _sys.path.insert(0, "tools/p8")
 import assemble_p8  # noqa: E402
+import apply_text_translations  # noqa: E402
 
 FREE_DEMO = ["ethanol", "methanol", "carbon-monoxide"]  # 3 ta yozuv
-PACK_VERSION = "2026.10.7"
+PACK_VERSION = "2026.10.8"
 # Komponent versiyalari (ilova versiyasidan alohida).
-COMPONENT_VERSIONS = {"scientific": "2026.10.7", "jurisdiction": "2026.10.5",
+COMPONENT_VERSIONS = {"scientific": "2026.10.8", "jurisdiction": "2026.10.5",
                       "research": "2026.10.3"}
 
 
@@ -236,6 +237,7 @@ def main():
     # ---- PHASE 7: provenance pipeline ----------------------------------
     p8 = assemble_p8.apply(bundle)  # PHASE 8: yangi fanlar (p7 dan oldin: provenance qamrab olsin)
     p7 = assemble_p7.apply(bundle)
+    tt = apply_text_translations.apply(bundle)  # machine_draft iqtibos tarjimalari
     json.dump(bundle, open("pilot/bundle.json", "w"), ensure_ascii=False,
               indent=2)
     print(f"substances={len(substances)} claims={len(claims)} "
@@ -245,6 +247,7 @@ def main():
           f"screening_p5={len(pt['screening'])} research={len(research)} {rstats} links={len(bundle['links'])} images={len(images)}")
     print("p7:", json.dumps(p7, ensure_ascii=False))
     print("p8:", json.dumps(p8, ensure_ascii=False))
+    print("text_translations:", tt["rows"], "stale:", tt["stale"])
 
 
 if __name__ == "__main__":

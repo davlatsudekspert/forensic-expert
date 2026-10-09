@@ -18044,6 +18044,433 @@ class TermTranslationsCompanion extends UpdateCompanion<TermTranslation> {
   }
 }
 
+class TextTranslations extends Table
+    with TableInfo<TextTranslations, TextTranslation> {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  TextTranslations(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _targetTypeMeta = const VerificationMeta(
+    'targetType',
+  );
+  late final GeneratedColumn<String> targetType = GeneratedColumn<String>(
+    'target_type',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (target_type IN (\'claim_excerpt\', \'rule_excerpt\', \'research_title\'))',
+  );
+  static const VerificationMeta _targetIdMeta = const VerificationMeta(
+    'targetId',
+  );
+  late final GeneratedColumn<String> targetId = GeneratedColumn<String>(
+    'target_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL',
+  );
+  static const VerificationMeta _langMeta = const VerificationMeta('lang');
+  late final GeneratedColumn<String> lang = GeneratedColumn<String>(
+    'lang',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (lang IN (\'uz\', \'ru\'))',
+  );
+  static const VerificationMeta _sourceSha256Meta = const VerificationMeta(
+    'sourceSha256',
+  );
+  late final GeneratedColumn<String> sourceSha256 = GeneratedColumn<String>(
+    'source_sha256',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (length(source_sha256) = 64)',
+  );
+  static const VerificationMeta _translatedTextMeta = const VerificationMeta(
+    'translatedText',
+  );
+  late final GeneratedColumn<String> translatedText = GeneratedColumn<String>(
+    'translated_text',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (length(translated_text) > 0)',
+  );
+  static const VerificationMeta _statusMeta = const VerificationMeta('status');
+  late final GeneratedColumn<String> status = GeneratedColumn<String>(
+    'status',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    $customConstraints: 'NOT NULL CHECK (status = \'machine_draft\')',
+  );
+  @override
+  List<GeneratedColumn> get $columns => [
+    targetType,
+    targetId,
+    lang,
+    sourceSha256,
+    translatedText,
+    status,
+  ];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'text_translations';
+  @override
+  VerificationContext validateIntegrity(
+    Insertable<TextTranslation> instance, {
+    bool isInserting = false,
+  }) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('target_type')) {
+      context.handle(
+        _targetTypeMeta,
+        targetType.isAcceptableOrUnknown(data['target_type']!, _targetTypeMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_targetTypeMeta);
+    }
+    if (data.containsKey('target_id')) {
+      context.handle(
+        _targetIdMeta,
+        targetId.isAcceptableOrUnknown(data['target_id']!, _targetIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_targetIdMeta);
+    }
+    if (data.containsKey('lang')) {
+      context.handle(
+        _langMeta,
+        lang.isAcceptableOrUnknown(data['lang']!, _langMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_langMeta);
+    }
+    if (data.containsKey('source_sha256')) {
+      context.handle(
+        _sourceSha256Meta,
+        sourceSha256.isAcceptableOrUnknown(
+          data['source_sha256']!,
+          _sourceSha256Meta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_sourceSha256Meta);
+    }
+    if (data.containsKey('translated_text')) {
+      context.handle(
+        _translatedTextMeta,
+        translatedText.isAcceptableOrUnknown(
+          data['translated_text']!,
+          _translatedTextMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_translatedTextMeta);
+    }
+    if (data.containsKey('status')) {
+      context.handle(
+        _statusMeta,
+        status.isAcceptableOrUnknown(data['status']!, _statusMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_statusMeta);
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {targetType, targetId, lang};
+  @override
+  TextTranslation map(Map<String, dynamic> data, {String? tablePrefix}) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return TextTranslation(
+      targetType: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}target_type'],
+      )!,
+      targetId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}target_id'],
+      )!,
+      lang: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}lang'],
+      )!,
+      sourceSha256: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}source_sha256'],
+      )!,
+      translatedText: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}translated_text'],
+      )!,
+      status: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}status'],
+      )!,
+    );
+  }
+
+  @override
+  TextTranslations createAlias(String alias) {
+    return TextTranslations(attachedDatabase, alias);
+  }
+
+  @override
+  bool get withoutRowId => true;
+  @override
+  List<String> get customConstraints => const [
+    'PRIMARY KEY(target_type, target_id, lang)',
+  ];
+  @override
+  bool get dontWriteConstraints => true;
+}
+
+class TextTranslation extends DataClass implements Insertable<TextTranslation> {
+  final String targetType;
+  final String targetId;
+  final String lang;
+  final String sourceSha256;
+  final String translatedText;
+  final String status;
+  const TextTranslation({
+    required this.targetType,
+    required this.targetId,
+    required this.lang,
+    required this.sourceSha256,
+    required this.translatedText,
+    required this.status,
+  });
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['target_type'] = Variable<String>(targetType);
+    map['target_id'] = Variable<String>(targetId);
+    map['lang'] = Variable<String>(lang);
+    map['source_sha256'] = Variable<String>(sourceSha256);
+    map['translated_text'] = Variable<String>(translatedText);
+    map['status'] = Variable<String>(status);
+    return map;
+  }
+
+  TextTranslationsCompanion toCompanion(bool nullToAbsent) {
+    return TextTranslationsCompanion(
+      targetType: Value(targetType),
+      targetId: Value(targetId),
+      lang: Value(lang),
+      sourceSha256: Value(sourceSha256),
+      translatedText: Value(translatedText),
+      status: Value(status),
+    );
+  }
+
+  factory TextTranslation.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return TextTranslation(
+      targetType: serializer.fromJson<String>(json['target_type']),
+      targetId: serializer.fromJson<String>(json['target_id']),
+      lang: serializer.fromJson<String>(json['lang']),
+      sourceSha256: serializer.fromJson<String>(json['source_sha256']),
+      translatedText: serializer.fromJson<String>(json['translated_text']),
+      status: serializer.fromJson<String>(json['status']),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'target_type': serializer.toJson<String>(targetType),
+      'target_id': serializer.toJson<String>(targetId),
+      'lang': serializer.toJson<String>(lang),
+      'source_sha256': serializer.toJson<String>(sourceSha256),
+      'translated_text': serializer.toJson<String>(translatedText),
+      'status': serializer.toJson<String>(status),
+    };
+  }
+
+  TextTranslation copyWith({
+    String? targetType,
+    String? targetId,
+    String? lang,
+    String? sourceSha256,
+    String? translatedText,
+    String? status,
+  }) => TextTranslation(
+    targetType: targetType ?? this.targetType,
+    targetId: targetId ?? this.targetId,
+    lang: lang ?? this.lang,
+    sourceSha256: sourceSha256 ?? this.sourceSha256,
+    translatedText: translatedText ?? this.translatedText,
+    status: status ?? this.status,
+  );
+  TextTranslation copyWithCompanion(TextTranslationsCompanion data) {
+    return TextTranslation(
+      targetType: data.targetType.present
+          ? data.targetType.value
+          : this.targetType,
+      targetId: data.targetId.present ? data.targetId.value : this.targetId,
+      lang: data.lang.present ? data.lang.value : this.lang,
+      sourceSha256: data.sourceSha256.present
+          ? data.sourceSha256.value
+          : this.sourceSha256,
+      translatedText: data.translatedText.present
+          ? data.translatedText.value
+          : this.translatedText,
+      status: data.status.present ? data.status.value : this.status,
+    );
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('TextTranslation(')
+          ..write('targetType: $targetType, ')
+          ..write('targetId: $targetId, ')
+          ..write('lang: $lang, ')
+          ..write('sourceSha256: $sourceSha256, ')
+          ..write('translatedText: $translatedText, ')
+          ..write('status: $status')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode => Object.hash(
+    targetType,
+    targetId,
+    lang,
+    sourceSha256,
+    translatedText,
+    status,
+  );
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is TextTranslation &&
+          other.targetType == this.targetType &&
+          other.targetId == this.targetId &&
+          other.lang == this.lang &&
+          other.sourceSha256 == this.sourceSha256 &&
+          other.translatedText == this.translatedText &&
+          other.status == this.status);
+}
+
+class TextTranslationsCompanion extends UpdateCompanion<TextTranslation> {
+  final Value<String> targetType;
+  final Value<String> targetId;
+  final Value<String> lang;
+  final Value<String> sourceSha256;
+  final Value<String> translatedText;
+  final Value<String> status;
+  const TextTranslationsCompanion({
+    this.targetType = const Value.absent(),
+    this.targetId = const Value.absent(),
+    this.lang = const Value.absent(),
+    this.sourceSha256 = const Value.absent(),
+    this.translatedText = const Value.absent(),
+    this.status = const Value.absent(),
+  });
+  TextTranslationsCompanion.insert({
+    required String targetType,
+    required String targetId,
+    required String lang,
+    required String sourceSha256,
+    required String translatedText,
+    required String status,
+  }) : targetType = Value(targetType),
+       targetId = Value(targetId),
+       lang = Value(lang),
+       sourceSha256 = Value(sourceSha256),
+       translatedText = Value(translatedText),
+       status = Value(status);
+  static Insertable<TextTranslation> custom({
+    Expression<String>? targetType,
+    Expression<String>? targetId,
+    Expression<String>? lang,
+    Expression<String>? sourceSha256,
+    Expression<String>? translatedText,
+    Expression<String>? status,
+  }) {
+    return RawValuesInsertable({
+      if (targetType != null) 'target_type': targetType,
+      if (targetId != null) 'target_id': targetId,
+      if (lang != null) 'lang': lang,
+      if (sourceSha256 != null) 'source_sha256': sourceSha256,
+      if (translatedText != null) 'translated_text': translatedText,
+      if (status != null) 'status': status,
+    });
+  }
+
+  TextTranslationsCompanion copyWith({
+    Value<String>? targetType,
+    Value<String>? targetId,
+    Value<String>? lang,
+    Value<String>? sourceSha256,
+    Value<String>? translatedText,
+    Value<String>? status,
+  }) {
+    return TextTranslationsCompanion(
+      targetType: targetType ?? this.targetType,
+      targetId: targetId ?? this.targetId,
+      lang: lang ?? this.lang,
+      sourceSha256: sourceSha256 ?? this.sourceSha256,
+      translatedText: translatedText ?? this.translatedText,
+      status: status ?? this.status,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (targetType.present) {
+      map['target_type'] = Variable<String>(targetType.value);
+    }
+    if (targetId.present) {
+      map['target_id'] = Variable<String>(targetId.value);
+    }
+    if (lang.present) {
+      map['lang'] = Variable<String>(lang.value);
+    }
+    if (sourceSha256.present) {
+      map['source_sha256'] = Variable<String>(sourceSha256.value);
+    }
+    if (translatedText.present) {
+      map['translated_text'] = Variable<String>(translatedText.value);
+    }
+    if (status.present) {
+      map['status'] = Variable<String>(status.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('TextTranslationsCompanion(')
+          ..write('targetType: $targetType, ')
+          ..write('targetId: $targetId, ')
+          ..write('lang: $lang, ')
+          ..write('sourceSha256: $sourceSha256, ')
+          ..write('translatedText: $translatedText, ')
+          ..write('status: $status')
+          ..write(')'))
+        .toString();
+  }
+}
+
 abstract class _$ContentDatabase extends GeneratedDatabase {
   _$ContentDatabase(QueryExecutor e) : super(e);
   $ContentDatabaseManager get managers => $ContentDatabaseManager(this);
@@ -18136,6 +18563,7 @@ abstract class _$ContentDatabase extends GeneratedDatabase {
   late final Specimens specimens = Specimens(this);
   late final Standards standards = Standards(this);
   late final TermTranslations termTranslations = TermTranslations(this);
+  late final TextTranslations textTranslations = TextTranslations(this);
   @override
   Iterable<TableInfo<Table, Object?>> get allTables =>
       allSchemaEntities.whereType<TableInfo<Table, Object?>>();
@@ -18185,6 +18613,7 @@ abstract class _$ContentDatabase extends GeneratedDatabase {
     specimens,
     standards,
     termTranslations,
+    textTranslations,
   ];
   @override
   DriftDatabaseOptions get options =>
@@ -32388,6 +32817,238 @@ typedef $TermTranslationsProcessedTableManager =
       TermTranslation,
       PrefetchHooks Function()
     >;
+typedef $TextTranslationsCreateCompanionBuilder =
+    TextTranslationsCompanion Function({
+      required String targetType,
+      required String targetId,
+      required String lang,
+      required String sourceSha256,
+      required String translatedText,
+      required String status,
+    });
+typedef $TextTranslationsUpdateCompanionBuilder =
+    TextTranslationsCompanion Function({
+      Value<String> targetType,
+      Value<String> targetId,
+      Value<String> lang,
+      Value<String> sourceSha256,
+      Value<String> translatedText,
+      Value<String> status,
+    });
+
+class $TextTranslationsFilterComposer
+    extends Composer<_$ContentDatabase, TextTranslations> {
+  $TextTranslationsFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<String> get targetType => $composableBuilder(
+    column: $table.targetType,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get targetId => $composableBuilder(
+    column: $table.targetId,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get lang => $composableBuilder(
+    column: $table.lang,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get sourceSha256 => $composableBuilder(
+    column: $table.sourceSha256,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get translatedText => $composableBuilder(
+    column: $table.translatedText,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get status => $composableBuilder(
+    column: $table.status,
+    builder: (column) => ColumnFilters(column),
+  );
+}
+
+class $TextTranslationsOrderingComposer
+    extends Composer<_$ContentDatabase, TextTranslations> {
+  $TextTranslationsOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<String> get targetType => $composableBuilder(
+    column: $table.targetType,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get targetId => $composableBuilder(
+    column: $table.targetId,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get lang => $composableBuilder(
+    column: $table.lang,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get sourceSha256 => $composableBuilder(
+    column: $table.sourceSha256,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get translatedText => $composableBuilder(
+    column: $table.translatedText,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get status => $composableBuilder(
+    column: $table.status,
+    builder: (column) => ColumnOrderings(column),
+  );
+}
+
+class $TextTranslationsAnnotationComposer
+    extends Composer<_$ContentDatabase, TextTranslations> {
+  $TextTranslationsAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<String> get targetType => $composableBuilder(
+    column: $table.targetType,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get targetId =>
+      $composableBuilder(column: $table.targetId, builder: (column) => column);
+
+  GeneratedColumn<String> get lang =>
+      $composableBuilder(column: $table.lang, builder: (column) => column);
+
+  GeneratedColumn<String> get sourceSha256 => $composableBuilder(
+    column: $table.sourceSha256,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get translatedText => $composableBuilder(
+    column: $table.translatedText,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get status =>
+      $composableBuilder(column: $table.status, builder: (column) => column);
+}
+
+class $TextTranslationsTableManager
+    extends
+        RootTableManager<
+          _$ContentDatabase,
+          TextTranslations,
+          TextTranslation,
+          $TextTranslationsFilterComposer,
+          $TextTranslationsOrderingComposer,
+          $TextTranslationsAnnotationComposer,
+          $TextTranslationsCreateCompanionBuilder,
+          $TextTranslationsUpdateCompanionBuilder,
+          (
+            TextTranslation,
+            BaseReferences<
+              _$ContentDatabase,
+              TextTranslations,
+              TextTranslation
+            >,
+          ),
+          TextTranslation,
+          PrefetchHooks Function()
+        > {
+  $TextTranslationsTableManager(_$ContentDatabase db, TextTranslations table)
+    : super(
+        TableManagerState(
+          db: db,
+          table: table,
+          createFilteringComposer: () =>
+              $TextTranslationsFilterComposer($db: db, $table: table),
+          createOrderingComposer: () =>
+              $TextTranslationsOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer: () =>
+              $TextTranslationsAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<String> targetType = const Value.absent(),
+                Value<String> targetId = const Value.absent(),
+                Value<String> lang = const Value.absent(),
+                Value<String> sourceSha256 = const Value.absent(),
+                Value<String> translatedText = const Value.absent(),
+                Value<String> status = const Value.absent(),
+              }) => TextTranslationsCompanion(
+                targetType: targetType,
+                targetId: targetId,
+                lang: lang,
+                sourceSha256: sourceSha256,
+                translatedText: translatedText,
+                status: status,
+              ),
+          createCompanionCallback:
+              ({
+                required String targetType,
+                required String targetId,
+                required String lang,
+                required String sourceSha256,
+                required String translatedText,
+                required String status,
+              }) => TextTranslationsCompanion.insert(
+                targetType: targetType,
+                targetId: targetId,
+                lang: lang,
+                sourceSha256: sourceSha256,
+                translatedText: translatedText,
+                status: status,
+              ),
+          withReferenceMapper: (p0) => p0
+              .map(
+                (e) => (
+                  e.readTable<TextTranslations, TextTranslation>(table),
+                  BaseReferences<
+                    _$ContentDatabase,
+                    TextTranslations,
+                    TextTranslation
+                  >(db, table, e),
+                ),
+              )
+              .toList(),
+          prefetchHooksCallback: null,
+        ),
+      );
+}
+
+typedef $TextTranslationsProcessedTableManager =
+    ProcessedTableManager<
+      _$ContentDatabase,
+      TextTranslations,
+      TextTranslation,
+      $TextTranslationsFilterComposer,
+      $TextTranslationsOrderingComposer,
+      $TextTranslationsAnnotationComposer,
+      $TextTranslationsCreateCompanionBuilder,
+      $TextTranslationsUpdateCompanionBuilder,
+      (
+        TextTranslation,
+        BaseReferences<_$ContentDatabase, TextTranslations, TextTranslation>,
+      ),
+      TextTranslation,
+      PrefetchHooks Function()
+    >;
 
 class $ContentDatabaseManager {
   final _$ContentDatabase _db;
@@ -32455,4 +33116,6 @@ class $ContentDatabaseManager {
       $StandardsTableManager(_db, _db.standards);
   $TermTranslationsTableManager get termTranslations =>
       $TermTranslationsTableManager(_db, _db.termTranslations);
+  $TextTranslationsTableManager get textTranslations =>
+      $TextTranslationsTableManager(_db, _db.textTranslations);
 }

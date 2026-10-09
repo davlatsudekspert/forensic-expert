@@ -25,6 +25,7 @@ import '../../common/view_recorder.dart';
 import '../../evidence/evidence_strings.dart';
 import '../../evidence/presentation/research_screens.dart';
 import '../../evidence/presentation/scientific_image.dart';
+import '../../evidence/presentation/source_quote.dart';
 import '../../library/presentation/content_entry_sections.dart';
 import '../../professional/presentation/review_section.dart';
 import '../knowledge_strings.dart';
@@ -359,7 +360,8 @@ class _NoteCard extends StatelessWidget {
               l.knowledgeSourceRef(
                 [
                   entry.sourceById(note.sourceId)?.title ?? note.sourceId,
-                  if (note.locator != null) '§ ${note.locator}',
+                  if (note.locator != null)
+                    localizedSectionRef(l, note.locator!),
                 ].join(' · '),
               ),
               style: t.bodySmall?.copyWith(color: c.textSecondary),
