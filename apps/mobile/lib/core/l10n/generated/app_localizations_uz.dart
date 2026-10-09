@@ -4874,7 +4874,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String firstStepsProgress(int done, int total) {
-    return '$total tadan $done tasi bajarildi';
+    return 'Bajarildi: $done / $total';
   }
 
   @override
@@ -5870,7 +5870,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String studyCardProgress(int current, int total) {
-    return '$total tadan $current-kartochka';
+    return '$current-kartochka / $total';
   }
 
   @override
@@ -5908,7 +5908,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String studySessionSummary(int known, int total) {
-    return '$total tadan $known tasini bildingiz';
+    return 'Bildingiz: $known / $total';
   }
 
   @override
@@ -5946,7 +5946,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String studyQuizQuestionOf(int current, int total) {
-    return '$total tadan $current-savol';
+    return '$current-savol / $total';
   }
 
   @override
@@ -5957,7 +5957,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String studyQuizScore(int correct, int total) {
-    return 'Natija: $total tadan $correct ta';
+    return 'Natija: $correct / $total';
   }
 
   @override
@@ -6108,15 +6108,15 @@ class AppLocalizationsUz extends AppLocalizations {
       'Paketda bu namunaga bog‘langan modda hozircha yo‘q.';
 
   @override
-  String get quoteMachineTranslation => 'Avtomatik tarjima · tekshirilmagan';
+  String get quoteMachineTranslation => 'Avtomatik tarjima — tekshirilmagan';
 
   @override
   String get quoteMachineTranslationSemantics =>
-      'Manbadan iqtibosning avtomatik tarjimasi, ekspert tomonidan tekshirilmagan. Iqtibos — yuqoridagi asl matn.';
+      'Manbadan iqtibosning avtomatik tarjimasi, ekspert tomonidan tekshirilmagan. Asl iqtibos «Asl matn» tugmasi orqali ochiladi.';
 
   @override
   String quoteOriginalTitle(String title) {
-    return 'Asl sarlavha: $title';
+    return 'Asl nomi: $title';
   }
 
   @override
@@ -6505,7 +6505,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String admShown(int shown, int total) {
-    return '$total tadan $shown tasi';
+    return 'Ko‘rsatilmoqda: $shown / $total';
   }
 
   @override
@@ -7128,7 +7128,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String courtQuestionOf(int index, int count) {
-    return '$count tadan $index-savol';
+    return '$index-savol / $count';
   }
 
   @override
@@ -7371,7 +7371,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String courtDrillStep(int index, int count) {
-    return '$count tadan $index-qadam';
+    return '$index-qadam / $count';
   }
 
   @override
@@ -7477,4 +7477,83 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get guidelineTermsHint =>
       'Atamani o‘zbek, rus va ingliz tillarida ko‘rish uchun bosing.';
+
+  @override
+  String get trStatusMachineDraft => 'Avtomatik tarjima — tekshirilmagan';
+
+  @override
+  String get trStatusTerminologyChecked =>
+      'Avtomatik tarjima — atamalar tekshirilgan, mazmuni tekshirilmagan';
+
+  @override
+  String get trStatusClaimChecked =>
+      'Avtomatik tarjima — raqam va birliklar tekshirilgan, mutaxassis ko‘rmagan';
+
+  @override
+  String get trStatusReviewed => 'Tarjima mutaxassis tomonidan tekshirilgan';
+
+  @override
+  String get trStatusOfficial => 'Rasmiy matn';
+
+  @override
+  String get trOriginalShow => 'Asl matn';
+
+  @override
+  String get trOriginalHide => 'Asl matnni yashirish';
+
+  @override
+  String get trOriginalQuoteShow => 'Asl manbadagi iqtibosni ko‘rish';
+
+  @override
+  String trOriginalTitle(String title) {
+    return 'Asl nomi: $title';
+  }
+
+  @override
+  String trNotTranslated(String language) {
+    return 'Bu matnning o‘zbekcha tarjimasi hali tayyorlanmagan — asl tili: $language';
+  }
+
+  @override
+  String trTitleNotTranslated(String language) {
+    return 'Nomning o‘zbekcha tarjimasi hali yo‘q — asl tili: $language';
+  }
+
+  @override
+  String trInOriginalLanguage(String language) {
+    return 'asl tili: $language';
+  }
+
+  @override
+  String trLanguageName(String code) {
+    String _temp0 = intl.Intl.selectLogic(code, {
+      'en': 'ingliz',
+      'ru': 'rus',
+      'uz': 'o‘zbek',
+      'de': 'nemis',
+      'fr': 'fransuz',
+      'other': '$code',
+    });
+    return '$_temp0';
+  }
+
+  @override
+  String get trQuoteTranslatedLabel => 'Manbadagi iqtibos (tarjima)';
+
+  @override
+  String trTranslationSemantics(String status) {
+    return 'Asl matnning tarjimasi. $status. Asl matn «Asl matn» tugmasi orqali ochiladi.';
+  }
+
+  @override
+  String get legalTitleUnofficial =>
+      'Nomning norasmiy tarjimasi — tekshirilmagan';
+
+  @override
+  String legalTitleOfficialIn(String language) {
+    return 'Rasmiy nomi ($language tilida)';
+  }
+
+  @override
+  String get imageCaptionSection => 'Manbadagi izoh';
 }

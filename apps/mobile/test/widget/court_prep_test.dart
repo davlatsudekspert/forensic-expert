@@ -428,7 +428,7 @@ void main() {
 
     c.read(routerProvider).go(Routes.courtPrepDrill);
     await tester.pumpAndSettle();
-    expect(find.text('4 tadan 1-qadam'), findsOne);
+    expect(find.text('1-qadam / 4'), findsOne);
     for (var step = 0; step < 4; step++) {
       // Har qadamda eng kuchli variantni topib tekshiramiz.
       final best = _key('court.sim.option.1');

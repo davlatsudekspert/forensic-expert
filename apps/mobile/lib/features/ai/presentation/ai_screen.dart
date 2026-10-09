@@ -14,6 +14,7 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../domain/ai/ai_architecture.dart';
 import '../../../domain/ai/rag_pipeline.dart';
 import '../../../domain/ports/ai_ports.dart';
+import '../../evidence/presentation/localized_content.dart';
 import 'rag_sections.dart';
 
 /// Forensic AI. Production AI provayderi ulanmaguncha ekran yuqorisida
@@ -474,10 +475,14 @@ class _ChunkCard extends StatelessWidget {
                   children: [
                     if (ch.title != null) Text(ch.title!, style: t.titleSmall),
                     const SizedBox(height: 2),
-                    Text(
-                      ch.text,
-                      locale: const Locale('en'),
-                      style: t.bodySmall?.copyWith(fontStyle: FontStyle.italic),
+                    // Manba parchasi: UI tilidagi tarjima (claim ID bo‘yicha)
+                    // birinchi, asl matn «Asl matn» ostida.
+                    LocalizedContentText(
+                      kind: ContentTextKind.claimExcerpt,
+                      id: ch.chunkId,
+                      source: ch.text,
+                      quote: true,
+                      style: t.bodySmall,
                     ),
                     const SizedBox(height: 2),
                     Wrap(

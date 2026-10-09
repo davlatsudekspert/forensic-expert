@@ -6117,11 +6117,11 @@ class AppLocalizationsEn extends AppLocalizations {
       'No substance in the pack is linked to this specimen yet.';
 
   @override
-  String get quoteMachineTranslation => 'Automatic translation · not verified';
+  String get quoteMachineTranslation => 'Machine translation — not reviewed';
 
   @override
   String get quoteMachineTranslationSemantics =>
-      'Automatic translation of the source excerpt, not verified by an expert. The original text above is the citation.';
+      'Machine translation of a source quote, not reviewed by an expert. The original quote is available under «Original text».';
 
   @override
   String quoteOriginalTitle(String title) {
@@ -7506,4 +7506,83 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get guidelineTermsHint =>
       'Tap a term to see it in Uzbek, Russian and English.';
+
+  @override
+  String get trStatusMachineDraft => 'Machine translation — not reviewed';
+
+  @override
+  String get trStatusTerminologyChecked =>
+      'Machine translation — terminology checked, content not reviewed';
+
+  @override
+  String get trStatusClaimChecked =>
+      'Machine translation — numbers and units checked, not reviewed by an expert';
+
+  @override
+  String get trStatusReviewed => 'Translation reviewed by an expert';
+
+  @override
+  String get trStatusOfficial => 'Official text';
+
+  @override
+  String get trOriginalShow => 'Original text';
+
+  @override
+  String get trOriginalHide => 'Hide original text';
+
+  @override
+  String get trOriginalQuoteShow => 'Show the quote from the original source';
+
+  @override
+  String trOriginalTitle(String title) {
+    return 'Original title: $title';
+  }
+
+  @override
+  String trNotTranslated(String language) {
+    return 'An English translation of this text is not available yet — original language: $language';
+  }
+
+  @override
+  String trTitleNotTranslated(String language) {
+    return 'No English translation of the title yet — original language: $language';
+  }
+
+  @override
+  String trInOriginalLanguage(String language) {
+    return 'original: $language';
+  }
+
+  @override
+  String trLanguageName(String code) {
+    String _temp0 = intl.Intl.selectLogic(code, {
+      'en': 'English',
+      'ru': 'Russian',
+      'uz': 'Uzbek',
+      'de': 'German',
+      'fr': 'French',
+      'other': '$code',
+    });
+    return '$_temp0';
+  }
+
+  @override
+  String get trQuoteTranslatedLabel => 'Source quote (translation)';
+
+  @override
+  String trTranslationSemantics(String status) {
+    return 'Translation of the original text. $status. The original is available under «Original text».';
+  }
+
+  @override
+  String get legalTitleUnofficial =>
+      'Unofficial translation of the title — not reviewed';
+
+  @override
+  String legalTitleOfficialIn(String language) {
+    return 'Official title ($language)';
+  }
+
+  @override
+  String get imageCaptionSection => 'Caption in the source';
 }

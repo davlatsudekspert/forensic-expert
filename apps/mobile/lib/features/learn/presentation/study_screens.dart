@@ -18,6 +18,7 @@ import '../../../domain/guidelines/guideline_models.dart';
 import '../../../domain/learn/study_models.dart';
 import '../../disciplines/discipline_strings.dart';
 import '../../evidence/evidence_strings.dart';
+import '../../evidence/presentation/localized_content.dart';
 import '../../guidelines/presentation/guidelines_screens.dart';
 
 /// To‘plam nomi (fan, modda guruhi yoki yo‘riqnoma yo‘nalishi).
@@ -610,15 +611,17 @@ class _CardBack extends StatelessWidget {
   }
 }
 
-/// Javob matni: asl iqtibos, formula yoki mazmun (tarjima holati bilan).
-class StudyAnswerText extends StatelessWidget {
+/// Javob matni: manbadagi iqtibos (UI tilidagi tarjima birinchi, asl
+/// iqtibos «Asl manbadagi iqtibosni ko‘rish» ostida), formula yoki mazmun
+/// (tarjima holati bilan).
+class StudyAnswerText extends ConsumerWidget {
   const StudyAnswerText({super.key, required this.item, this.maxLines});
 
   final StudyItem item;
   final int? maxLines;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
@@ -634,15 +637,34 @@ class StudyAnswerText extends StatelessWidget {
           textAlign: TextAlign.center,
         );
       case StudyItemKind.topicExcerpt:
+        // Asl iqtibos — manba tilida (inglizcha); tarjima — claim ID bo‘yicha.
+        const kind = ContentTextKind.claimExcerpt;
+        final id = item.answerQuoteId ?? item.id;
+        final r = resolveContent(
+          ref,
+          context,
+          kind,
+          id,
+          source: item.answer.resolve('en'), // asl iqtibos tili
+          originalLang: 'en',
+        );
         return Column(
+          key: Key('study.quote.${item.id}'),
           crossAxisAlignment: CrossAxisAlignment.stretch,
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              l.studyQuoteLabel,
+              r.isTranslation ? l.trQuoteTranslatedLabel : l.studyQuoteLabel,
               style: t.labelSmall?.copyWith(color: c.textSecondary),
             ),
             const SizedBox(height: FeSpace.xxs),
+            if (r.missingTranslation) ...[
+              NoTranslationNotice(
+                key: Key('l10n.missing.$kind.$id'),
+                originalLang: r.originalLang,
+              ),
+              const SizedBox(height: FeSpace.xxs),
+            ],
             DecoratedBox(
               decoration: BoxDecoration(
                 border: BorderDirectional(
@@ -652,17 +674,36 @@ class StudyAnswerText extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsetsDirectional.only(start: FeSpace.sm),
                 child: Text(
-                  text,
-                  locale: const Locale('en'),
+                  r.text,
+                  key: Key('l10n.text.$kind.$id'),
+                  locale: Locale(r.textLang),
                   maxLines: maxLines,
                   overflow: overflow,
                   style: t.bodyLarge?.copyWith(
-                    fontStyle: FontStyle.italic,
+                    // Aynan iqtibos — kursiv; tarjima — oddiy matn.
+                    fontStyle: r.isTranslation ? null : FontStyle.italic,
                     height: 1.45,
                   ),
                 ),
               ),
             ),
+            if (r.isTranslation) ...[
+              const SizedBox(height: FeSpace.xxs),
+              TranslationStatusBadge(
+                key: Key('l10n.status.$kind.$id'),
+                status: r.status!,
+              ),
+              if (maxLines == null)
+                OriginalTextToggle(
+                  key: Key('study.quote.original.${item.id}'),
+                  original: r.original,
+                  originalLang: r.originalLang,
+                  showLabel: l.trOriginalQuoteShow,
+                  toggleKey: Key('l10n.originalToggle.$kind.$id'),
+                  originalKey: Key('l10n.original.$kind.$id'),
+                  style: t.bodyMedium,
+                ),
+            ],
           ],
         );
       case StudyItemKind.guidelineSummary:
@@ -729,11 +770,15 @@ class StudySources extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          s.title,
-                          locale: const Locale('en'),
+                        // Bibliografiya — asl sarlavha (tarjima bo‘lsa —
+                        // u birinchi, asl nomi ostida).
+                        TranslatedTitle(
+                          kind: ContentTextKind.sourceTitle,
+                          id: s.sourceId ?? s.title,
+                          title: s.title,
+                          originalLang: s.language,
                           maxLines: 4,
-                          overflow: TextOverflow.ellipsis,
+                          showMissingNotice: false,
                           style: t.bodyMedium?.copyWith(
                             fontWeight: FontWeight.w600,
                             height: 1.35,

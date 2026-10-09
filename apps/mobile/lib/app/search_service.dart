@@ -14,6 +14,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../core/l10n/generated/app_localizations.dart';
 import '../core/settings/app_settings.dart';
 import '../domain/catalog/tools_catalog.dart';
+import '../domain/evidence/content_translations.dart';
 import '../domain/evidence/evidence_models.dart';
 import '../domain/evidence/provenance_models.dart';
 import '../domain/guidelines/guideline_models.dart';
@@ -536,8 +537,9 @@ class LinkedSearchTarget {
   /// Til kodi → nom.
   final Map<String, String> names;
 
+  /// UI tilidagi nom; yo‘q bo‘lsa — asl (`en`) yoki birinchi mavjud nom.
   String nameIn(String? lang) =>
-      names[lang] ?? names['en'] ?? names.values.first;
+      resolveLocalizedMap(names, lang: lang ?? 'en').text;
 }
 
 final searchServiceProvider = Provider<AppSearchService>(

@@ -478,9 +478,9 @@ class ClaimCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+          // Qatlamli karta (egasi): asosiy matn (UI tilida) → ilmiy asos
+          // → asl matn (yig‘ilgan) → manba → tekshiruv/tarjima holati.
           ClaimLifecycleBanners(claim: claim),
-          ClaimMeta(status: claim.status, level: claim.evidenceLevel),
-          const SizedBox(height: FeSpace.xs),
           for (final (k, v) in identityRows)
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 2),
@@ -500,8 +500,17 @@ class ClaimCard extends StatelessWidget {
               spacing: FeSpace.xs,
               runSpacing: FeSpace.xxs,
               children: [
-                for (final i in claim.items)
-                  Chip(label: Text(i), visualDensity: VisualDensity.compact),
+                // Metabolit/marker nomlari manbadan (inglizcha) — tarjima
+                // `list_item` `<claimId>#<indeks>` bo‘yicha.
+                for (final (idx, i) in claim.items.indexed)
+                  Chip(
+                    label: LocalizedInlineText(
+                      kind: ContentTextKind.listItem,
+                      id: '${claim.claimId}#$idx',
+                      source: i,
+                    ),
+                    visualDensity: VisualDensity.compact,
+                  ),
               ],
             ),
           if (claim.field != 'identity') ...[
@@ -515,7 +524,7 @@ class ClaimCard extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.only(left: FeSpace.sm),
                   child: SourceQuote(
-                    target: TextTranslationTarget.claimExcerpt,
+                    kind: ContentTextKind.claimExcerpt,
                     id: claim.claimId,
                     text: excerpt,
                     label: l.detailExcerpt,
@@ -542,6 +551,8 @@ class ClaimCard extends StatelessWidget {
               style: t.bodySmall?.copyWith(color: c.textSecondary),
             ),
           ],
+          const SizedBox(height: FeSpace.xs),
+          ClaimMeta(status: claim.status, level: claim.evidenceLevel),
           ProvenanceButton(claim: claim),
         ],
       ),
@@ -582,13 +593,15 @@ class SourceTile extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Expanded(
-                child: Text(
-                  source.title,
+                child: TranslatedTitle(
+                  kind: ContentTextKind.sourceTitle,
+                  id: source.sourceId,
+                  title: source.title,
+                  originalLang: source.language,
                   style: t.bodyMedium?.copyWith(
                     fontWeight: FontWeight.w600,
                     height: 1.35,
                   ),
-                  locale: const Locale('en'),
                 ),
               ),
               if (linkToDetail)

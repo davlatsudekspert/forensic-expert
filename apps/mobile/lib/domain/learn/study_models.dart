@@ -51,6 +51,7 @@ class StudyCitation {
     this.sourceId,
     this.locator,
     this.pages,
+    this.language,
   });
 
   /// Kontent paketidagi manba (manba sahifasiga havola bilan).
@@ -65,6 +66,7 @@ class StudyCitation {
       detail: detail.isEmpty ? null : detail,
       sourceId: s.sourceId,
       locator: s.locator,
+      language: s.language,
     );
   }
 
@@ -83,6 +85,9 @@ class StudyCitation {
 
   /// Manbadagi sahifa(lar) — o‘quv-uslubiy majmua savollari uchun.
   final String? pages;
+
+  /// Manba (asl sarlavha) tili, ma’lum bo‘lsa.
+  final String? language;
 }
 
 /// Bitta o‘quv kartochkasi.
@@ -100,6 +105,7 @@ class StudyItem {
     required this.origin,
     required this.originId,
     this.answerIsQuote = false,
+    this.answerQuoteId,
     this.draftLanguages = const {},
     this.group,
     this.distractors = const [],
@@ -124,6 +130,10 @@ class StudyItem {
 
   /// Javob — manbadagi asl jumla (asl tilda, tarjima qilinmagan).
   final bool answerIsQuote;
+
+  /// Asl iqtibosning manba yozuvi (claim ID) — tarjima qatlami
+  /// (`text_translations` `claim_excerpt`) shu ID bo‘yicha qidiriladi.
+  final String? answerQuoteId;
 
   /// Tarjimasi hali qoralama bo‘lgan tillar (yo‘riqnomalar).
   final Set<String> draftLanguages;
@@ -267,9 +277,11 @@ abstract final class StudyCatalogBuilder {
             kind: StudyItemKind.topicExcerpt,
             deckId: deckId,
             prompt: e.name,
-            // Asl jumla tarjima qilinmaydi (manba tili — inglizcha).
+            // Asl jumla (manba tili — inglizcha) — dalil, o‘zgarmaydi; UI
+            // tarjimani `answerQuoteId` bo‘yicha birinchi ko‘rsatadi.
             answer: LocalizedText({'en': claim.excerpt!.trim()}),
             answerIsQuote: true,
+            answerQuoteId: claim.claimId,
             status: aggregateStatus([e.status, claim.status]),
             isTestData: e.isTestData,
             citations: [

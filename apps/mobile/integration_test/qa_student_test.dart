@@ -163,7 +163,7 @@ void main() {
 
     await qa.step('Manba iqtibosi + o‘zbekcha tarjima', (s) async {
       await qa.tapText('Metabolitlar');
-      await qa.scrollUntil(find.text('Avtomatik tarjima · tekshirilmagan'));
+      await qa.scrollUntil(find.text('Avtomatik tarjima — tekshirilmagan'));
       qa.expectText('Manbadan iqtibos', s);
       qa.expectText('Avtomatik tarjima', s);
       qa.expectText('atsetaldegid', s);

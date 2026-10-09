@@ -2,13 +2,14 @@ import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/routes.dart';
-import 'package:forensic_expert/domain/evidence/machine_translations.dart';
+import 'package:forensic_expert/domain/evidence/content_translations.dart';
 
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 
-/// Haqiqiy pilot paket: asl iqtibos birinchi, ostida belgilangan avtomatik
-/// tarjima; bo‘lim kodi lokal nom bilan.
+/// Haqiqiy pilot paket (Phase C): UI tilidagi tarjima **birinchi**, holat
+/// belgisi, asl iqtibos «Asl matn» ostida (yig‘ilgan); tarjima yo‘q yoki
+/// eskirgan bo‘lsa — halol xabar + asl matn.
 void main() {
   late PilotContent pilot;
   setUpAll(() async => pilot = await loadPilotContent());
@@ -17,11 +18,12 @@ void main() {
   const original =
       'Thereafter, ethanol, methanol, and formate concentrations were '
       'measured by headspace GC/FID.';
+  const kind = ContentTextKind.claimExcerpt;
 
   Future<void> open(
     WidgetTester tester,
     String lang, {
-    MachineTranslations? translations,
+    ContentTranslations? translations,
   }) => pumpApp(
     tester,
     settings: completedSettings(lang: lang),
@@ -39,7 +41,7 @@ void main() {
     await tester.pumpAndSettle();
   }
 
-  testWidgets('uz: asl iqtibos + «Avtomatik tarjima · tekshirilmagan»', (
+  testWidgets('uz: tarjima birinchi, holat, asl matn yig‘ilgan', (
     tester,
   ) async {
     expect(pilot.translations.isEmpty, isFalse);
@@ -47,19 +49,12 @@ void main() {
     final card = find.byKey(const Key('claim.excerpt.$claimId'));
     await scrollTo(tester, card);
     expect(card, findsOneWidget);
-    // Asl matn (dalil) o‘zgarmagan.
-    expect(
-      find.descendant(of: card, matching: find.textContaining(original)),
-      findsOneWidget,
-    );
-    final tr = find.byKey(
-      const Key('quote.translation.claim_excerpt.$claimId'),
-    );
+    final tr = find.byKey(const Key('quote.translation.$kind.$claimId'));
     expect(tr, findsOneWidget);
     expect(
       find.descendant(
         of: tr,
-        matching: find.text('Avtomatik tarjima · tekshirilmagan'),
+        matching: find.text('Avtomatik tarjima — tekshirilmagan'),
       ),
       findsOneWidget,
     );
@@ -72,10 +67,29 @@ void main() {
       ),
       findsOneWidget,
     );
-    // Tarjima asl iqtibos OSTIDA.
+    // Asl iqtibos (dalil) yig‘ilgan — bosilganda ochiladi, o‘zgarmagan.
+    expect(find.textContaining(original), findsNothing);
+    final toggle = find.byKey(const Key('l10n.originalToggle.$kind.$claimId'));
     expect(
-      tester.getTopLeft(tr).dy,
-      greaterThan(tester.getTopLeft(find.textContaining(original)).dy),
+      find.descendant(of: toggle, matching: find.text('Asl matn')),
+      findsOneWidget,
+    );
+    await tester.ensureVisible(toggle);
+    await tester.tap(toggle);
+    await tester.pumpAndSettle();
+    final orig = find.byKey(const Key('l10n.original.$kind.$claimId'));
+    expect(
+      find.descendant(of: orig, matching: find.textContaining(original)),
+      findsOneWidget,
+    );
+    // Asl matn tarjima OSTIDA.
+    expect(
+      tester.getTopLeft(orig).dy,
+      greaterThan(tester.getTopLeft(tr).dy),
+    );
+    expect(
+      find.descendant(of: toggle, matching: find.text('Asl matnni yashirish')),
+      findsOneWidget,
     );
     // «§ ABSTRACT» emas — lokal bo‘lim nomi.
     expect(find.textContaining('§ Annotatsiya'), findsWidgets);
@@ -83,38 +97,63 @@ void main() {
     expect(find.textContaining('tekshirilgan tarjima'), findsNothing);
   });
 
-  testWidgets('en: tarjima ko‘rsatilmaydi, faqat asl matn', (tester) async {
+  testWidgets('ru: «Оригинал» va ruscha holat belgisi', (tester) async {
+    await open(tester, 'ru');
+    final card = find.byKey(const Key('claim.excerpt.$claimId'));
+    await scrollTo(tester, card);
+    final tr = find.byKey(const Key('quote.translation.$kind.$claimId'));
+    expect(
+      find.descendant(
+        of: tr,
+        matching: find.text('Автоматический перевод — не проверен'),
+      ),
+      findsOneWidget,
+    );
+    expect(find.text('Оригинал'), findsWidgets);
+  });
+
+  testWidgets('en: tarjima ko‘rsatilmaydi, faqat asl matn (belgisiz)', (
+    tester,
+  ) async {
     await open(tester, 'en');
     final card = find.byKey(const Key('claim.excerpt.$claimId'));
     await scrollTo(tester, card);
     expect(find.textContaining(original), findsOneWidget);
     expect(
-      find.byKey(const Key('quote.translation.claim_excerpt.$claimId')),
+      find.byKey(const Key('quote.translation.$kind.$claimId')),
       findsNothing,
     );
+    expect(find.byKey(const Key('l10n.missing.$kind.$claimId')), findsNothing);
     expect(find.textContaining('§ Abstract'), findsWidgets);
   });
 
-  testWidgets('uz: eskirgan tarjima (xesh mos emas) — ko‘rsatilmaydi', (
+  testWidgets('uz: eskirgan tarjima — halol xabar + asl matn', (
     tester,
   ) async {
     await open(
       tester,
       'uz',
-      translations: MachineTranslations.of([
-        TextTranslation(
-          target: TextTranslationTarget.claimExcerpt,
-          targetId: claimId,
+      translations: ContentTranslations.of([
+        ContentTranslationRow.tryParse(
+          kind: kind,
+          id: claimId,
           lang: 'uz',
           sourceSha256: TextTranslation.hashOf('an older excerpt'),
           text: 'Eskirgan tarjima',
-        ),
+          status: 'machine_draft',
+        )!,
       ]),
     );
     final card = find.byKey(const Key('claim.excerpt.$claimId'));
     await scrollTo(tester, card);
     expect(find.textContaining(original), findsOneWidget);
-    expect(find.text('Avtomatik tarjima · tekshirilmagan'), findsNothing);
     expect(find.text('Eskirgan tarjima'), findsNothing);
+    expect(find.text('Avtomatik tarjima — tekshirilmagan'), findsNothing);
+    expect(
+      find.text(
+        'Bu matnning o‘zbekcha tarjimasi hali tayyorlanmagan — asl tili: ingliz',
+      ),
+      findsWidgets,
+    );
   });
 }

@@ -82,18 +82,24 @@ class KnowledgeDetailScreen extends ConsumerWidget {
       for (final x in claims)
         if (!safetyClaimFields.contains(x.field)) x,
     ];
+    // (yorliq, izoh, tarjima ID — `entity_note` `<entity>#<maydon>#<i>`)
     final safetyNotes =
-        <(String, SourcedNote)>[
+        <(String, SourcedNote, String)>[
           if (e.screening case final s?) ...[
-            for (final n in s.limitations) (l.screeningLimitations, n),
-            for (final n in s.crossReactivity) (l.screeningCrossReactivity, n),
-            for (final n in s.falsePositive) (l.screeningFalsePositive, n),
-            for (final n in s.falseNegative) (l.screeningFalseNegative, n),
+            for (final (i, n) in s.limitations.indexed)
+              (l.screeningLimitations, n, '${e.id}#limitations#$i'),
+            for (final (i, n) in s.crossReactivity.indexed)
+              (l.screeningCrossReactivity, n, '${e.id}#cross_reactivity#$i'),
+            for (final (i, n) in s.falsePositive.indexed)
+              (l.screeningFalsePositive, n, '${e.id}#false_positive#$i'),
+            for (final (i, n) in s.falseNegative.indexed)
+              (l.screeningFalseNegative, n, '${e.id}#false_negative#$i'),
           ],
           if (e.recipe case final r?)
-            for (final n in r.hazards) (l.reagentHazards, n),
+            for (final (i, n) in r.hazards.indexed)
+              (l.reagentHazards, n, '${e.id}#hazards#$i'),
         ].where((x) {
-          final (_, note) = x;
+          final (_, note, _) = x;
           return !claimExcerpts.contains(_norm(note.text));
         }).toList();
 
@@ -168,8 +174,8 @@ class KnowledgeDetailScreen extends ConsumerWidget {
                       ),
                       const SizedBox(height: FeSpace.xs),
                     ],
-                    for (final (label, n) in safetyNotes)
-                      _NoteCard(label: label, note: n, entry: e),
+                    for (final (label, n, trId) in safetyNotes)
+                      _NoteCard(label: label, note: n, entry: e, trId: trId),
                     for (final x in safetyClaims)
                       Padding(
                         padding: const EdgeInsets.only(bottom: FeSpace.xs),
@@ -273,12 +279,13 @@ class _Header extends StatelessWidget {
 }
 
 /// Manbadan kelgan qiymat yoki «manbada yo‘q» (hech qachon taxmin emas).
-class _Field extends StatelessWidget {
+class _Field extends ConsumerWidget {
   const _Field({
     required this.label,
     this.text,
     this.value,
     this.note,
+    this.trId,
     required this.entry,
   });
 
@@ -286,33 +293,77 @@ class _Field extends StatelessWidget {
   final String? text;
   final SourcedValue? value;
   final SourcedNote? note;
+
+  /// Manbadan olingan matn uchun tarjima ID’si (`screening_field` —
+  /// [text] uchun, `entity_note` — tilga moslanmagan [note] uchun).
+  final String? trId;
   final KnowledgeEntry entry;
 
+  /// Pipeline’ning inglizcha «manbada ko‘rsatilmagan» belgisi.
+  static const _notInSource = 'not specified in source';
+
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
     final lang = Localizations.localeOf(context).languageCode;
     final sourceId = value?.sourceId ?? note?.sourceId;
-    final shown =
-        text ??
-        (value == null ? null : '${value!.value} ${value!.unit}') ??
-        note?.resolve(lang);
+    final translations = ref.watch(contentTranslationsProvider);
+    // Manbadan olingan matn (raqamli qiymat emas): UI tilida bo‘lmasa —
+    // tarjima yoki asl + «asl tili» yorlig‘i.
+    LocalizedContent? sourced;
+    final raw =
+        text ?? (note != null && note!.texts.isEmpty ? note!.text : null);
+    if (raw != null && raw.trim().toLowerCase() != _notInSource) {
+      sourced = trId == null
+          ? LocalizedContent.original(
+              raw,
+              originalLang: 'en',
+              requestedLang: lang,
+            )
+          : translations.resolve(
+              text != null
+                  ? ContentTextKind.screeningField
+                  : ContentTextKind.entityNote,
+              trId!,
+              source: raw,
+              lang: lang,
+            );
+    } else if (note != null && note!.texts.isNotEmpty) {
+      // Retsept izohlari (machine_draft, banner bilan): UI tilida yo‘q
+      // bo‘lsa — fallback ochiq belgilanadi.
+      sourced = resolveLocalizedMap(
+        note!.texts,
+        lang: lang,
+        originalLang: note!.texts.containsKey('en') ? 'en' : null,
+        fallbackText: note!.text,
+      );
+      if (!sourced.missingTranslation) sourced = null;
+    }
+    final shown = raw != null && raw.trim().toLowerCase() == _notInSource
+        ? null
+        : text ??
+              (value == null ? null : '${value!.value} ${value!.unit}') ??
+              note?.resolve(lang);
     return Padding(
       padding: const EdgeInsets.only(bottom: FeSpace.xs),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(label, style: t.labelMedium?.copyWith(color: c.textSecondary)),
-          Text(
-            shown ?? l.knowledgeNotInSource,
-            style: shown == null
-                ? t.bodySmall?.copyWith(color: c.textSecondary)
-                : (value != null
-                      ? FeThemeBuilder.numeric(t.bodyMedium!)
-                      : t.bodyMedium),
-          ),
+          if (sourced != null &&
+              (sourced.isTranslation || sourced.missingTranslation))
+            LocalizedInlineView(content: sourced, style: t.bodyMedium)
+          else
+            Text(
+              shown ?? l.knowledgeNotInSource,
+              style: shown == null
+                  ? t.bodySmall?.copyWith(color: c.textSecondary)
+                  : (value != null
+                        ? FeThemeBuilder.numeric(t.bodyMedium!)
+                        : t.bodyMedium),
+            ),
           if (sourceId != null)
             Text(
               l.knowledgeSourceRef(
@@ -331,11 +382,15 @@ class _NoteCard extends StatelessWidget {
     required this.label,
     required this.note,
     required this.entry,
+    required this.trId,
   });
 
   final String label;
   final SourcedNote note;
   final KnowledgeEntry entry;
+
+  /// `entity_note` tarjima ID’si.
+  final String trId;
 
   @override
   Widget build(BuildContext context) {
@@ -394,12 +449,13 @@ class _NoteCard extends StatelessWidget {
                 padding: const EdgeInsets.only(left: FeSpace.sm),
                 child: localized
                     ? Text(note.resolve(lang), style: t.bodyMedium)
-                    : Text(
-                        note.text,
-                        locale: const Locale('en'),
-                        style: t.bodySmall?.copyWith(
-                          fontStyle: FontStyle.italic,
-                        ),
+                    // Manbadan asl izoh: tarjima birinchi, asl «Asl matn».
+                    : LocalizedContentText(
+                        kind: ContentTextKind.entityNote,
+                        id: trId,
+                        source: note.text,
+                        quote: true,
+                        style: t.bodySmall,
                       ),
               ),
             ),
@@ -487,9 +543,11 @@ class _RecipeSection extends StatelessWidget {
               const SizedBox(height: FeSpace.xs),
               Text(
                 l.reagentVariant(
-                  g.variant!.labels[lang] ??
-                      g.variant!.labels['en'] ??
-                      g.variant!.id,
+                  resolveLocalizedMap(
+                    g.variant!.labels,
+                    lang: lang,
+                    fallbackText: g.variant!.id,
+                  ).text,
                 ),
                 key: Key('reagent.variant.${g.variant!.id}'),
                 style: t.titleMedium,
@@ -700,7 +758,9 @@ String ingredientAmountText(Ingredient i, String lang, AppLocalizations l) {
     return lang == 'en' ? s : s.replaceAll('.', ',');
   }
 
-  final note = i.quantityNote[lang] ?? i.quantityNote['en'];
+  final note = i.quantityNote.isEmpty
+      ? null
+      : resolveLocalizedMap(i.quantityNote, lang: lang).text;
   final a = i.amount;
   if (a == null) return note ?? FeGlyphs.emDash;
   final value = i.amountMax == null ? n(a) : '${n(a)}–${n(i.amountMax!)}';
@@ -782,9 +842,24 @@ class _ScreeningSection extends ConsumerWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         FeSectionHeader(l.knowledgeDetails),
-        _Field(label: l.screeningAnalyte, text: test.analyte, entry: entry),
-        _Field(label: l.screeningSpecimen, text: test.specimen, entry: entry),
-        _Field(label: l.screeningPrinciple, text: test.principle, entry: entry),
+        _Field(
+          label: l.screeningAnalyte,
+          text: test.analyte,
+          trId: '${entry.id}#analyte',
+          entry: entry,
+        ),
+        _Field(
+          label: l.screeningSpecimen,
+          text: test.specimen,
+          trId: '${entry.id}#specimen',
+          entry: entry,
+        ),
+        _Field(
+          label: l.screeningPrinciple,
+          text: test.principle,
+          trId: '${entry.id}#principle',
+          entry: entry,
+        ),
         _Field(label: l.screeningCutoff, value: test.cutoff, entry: entry),
         _Field(
           label: l.screeningSensitivity,
@@ -799,15 +874,22 @@ class _ScreeningSection extends ConsumerWidget {
         _Field(
           label: l.screeningResultType,
           note: test.resultType,
+          trId: '${entry.id}#result_type',
           entry: entry,
         ),
         _Field(
           label: l.screeningDetectionWindow,
           note: test.detectionWindow,
+          trId: '${entry.id}#detection_window',
           entry: entry,
         ),
-        for (final n in test.interferences)
-          _Field(label: l.screeningInterference, note: n, entry: entry),
+        for (final (i, n) in test.interferences.indexed)
+          _Field(
+            label: l.screeningInterference,
+            note: n,
+            trId: '${entry.id}#interferences#$i',
+            entry: entry,
+          ),
         FeSectionHeader(l.screeningConfirmatory),
         for (final id in test.confirmatoryMethodIds)
           ListTile(

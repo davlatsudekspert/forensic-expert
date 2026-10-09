@@ -14,6 +14,7 @@ import 'dart:convert';
 import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/foundation.dart';
 
+import '../evidence/content_translations.dart';
 import '../guidelines/guideline_models.dart';
 
 /// Tayyorgarlik bloklari: hujjatlar, ilmiy/huquqiy asos, odatiy xatolar.
@@ -128,6 +129,7 @@ class CourtReference {
     this.url,
     this.verifiedVia,
     this.verifiedOn,
+    this.localizedTitles = ReferenceTitles.empty,
   });
 
   factory CourtReference.fromJson(Map<String, Object?> j) {
@@ -155,6 +157,7 @@ class CourtReference {
       url: s('url'),
       verifiedVia: s('verified_via'),
       verifiedOn: s('verified_on'),
+      localizedTitles: ReferenceTitles.fromJson(j),
     );
   }
 
@@ -176,6 +179,10 @@ class CourtReference {
   final String? url;
   final String? verifiedVia;
   final String? verifiedOn;
+
+  /// Ixtiyoriy tilga bog‘liq nom (masalan, UZ qonunining rasmiy o‘zbekcha
+  /// nomi) — UI uni asl iqtibos ustida ko‘rsatadi.
+  final ReferenceTitles localizedTitles;
 
   bool get isLaw => type == 'law';
   bool get isTeacherBook => type == 'book';

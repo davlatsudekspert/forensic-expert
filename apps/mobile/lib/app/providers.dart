@@ -20,8 +20,8 @@ import '../domain/ai/ai_architecture.dart';
 import '../domain/ai/local_retrieval.dart';
 import '../domain/ai/provenance_retrieval.dart';
 import '../domain/ai/rag_pipeline.dart';
+import '../domain/evidence/content_translations.dart';
 import '../domain/evidence/evidence_models.dart';
-import '../domain/evidence/machine_translations.dart';
 import '../domain/evidence/provenance_models.dart';
 import '../domain/evidence/substance_analysis.dart';
 import '../domain/jurisdiction/jurisdiction_catalog.dart';
@@ -212,12 +212,12 @@ final provenanceIndexProvider = Provider<ProvenanceIndex>(
       ProvenanceIndex.empty,
 );
 
-/// Asl iqtibos/sarlavhalarning avtomatik tarjimalari (machine_draft).
-/// Paket yuklanmaguncha — bo‘sh (faqat asl matn ko‘rsatiladi).
-final machineTranslationsProvider = Provider<MachineTranslations>(
+/// Kontent tarjimalari (`ContentTranslations.resolve(kind, id, …)`).
+/// Paket yuklanmaguncha — bo‘sh (asl matn + «tarjima hali yo‘q» belgisi).
+final contentTranslationsProvider = Provider<ContentTranslations>(
   (ref) =>
       ref.watch(contentProvenanceProvider).value?.translations ??
-      MachineTranslations.empty,
+      ContentTranslations.empty,
 );
 
 /// Bilim sohalari (mavzular, reagentlar, skrining, metodlar, yangi

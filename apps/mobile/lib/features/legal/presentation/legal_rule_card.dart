@@ -10,6 +10,7 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../evidence/presentation/source_quote.dart';
+import 'instrument_title.dart';
 
 /// Bitta yurisdiksion qoida — rasmiy hujjat, bo‘lim, organ, kuchga kirish
 /// sanasi, status va (ochiq litsenziyada) rasmiy matn iqtibosi bilan.
@@ -58,8 +59,26 @@ class LegalRuleCard extends ConsumerWidget {
     ];
     final authority = instrument.authorityId == null
         ? null
-        : catalog.authorities[instrument.authorityId]?.resolve(lang);
+        : authorityNameOf(
+            l,
+            catalog.authorities[instrument.authorityId]?.values,
+            lang,
+          );
     final secondary = t.bodySmall?.copyWith(color: c.textSecondary);
+    final title = instrumentTitleOf(instrument, lang);
+    // Konvensiya nomi (masalan «Single Convention on Narcotic Drugs, 1961») —
+    // rasmiy inglizcha nom; tarjimasi `rule_convention` (qoida ID) bo‘yicha.
+    final conventionText = v['convention'] as String?;
+    final convention = conventionText == null
+        ? null
+        : ref
+              .watch(contentTranslationsProvider)
+              .resolve(
+                ContentTextKind.ruleConvention,
+                rule.id,
+                source: conventionText,
+                lang: lang,
+              );
 
     return FeCard(
       key: Key('legal.${rule.id}'),
@@ -98,9 +117,11 @@ class LegalRuleCard extends ConsumerWidget {
           if (rule.ruleType == JurisdictionalRuleType.controlStatus)
             Text(
               l.legalSchedule(
-                (v['convention'] as String?) ?? instrument.titles['en'] ?? '',
+                convention?.text ?? title.text,
                 schedules.join(', '),
               ),
+              key: Key('legal.${rule.id}.schedule'),
+              locale: Locale(convention?.textLang ?? title.textLang),
               style: t.bodyMedium?.copyWith(fontWeight: FontWeight.w600),
             )
           else ...[
@@ -132,11 +153,14 @@ class LegalRuleCard extends ConsumerWidget {
                 ),
           ],
           const SizedBox(height: FeSpace.xxs),
-          Text(
-            instrument.titles['en'] ?? instrument.id,
-            locale: const Locale('en'),
-            style: t.bodySmall,
-          ),
+          if (convention != null && convention.missingTranslation)
+            NoTranslationNotice(
+              key: Key('l10n.missing.rule_convention.${rule.id}'),
+              originalLang: convention.originalLang,
+              title: true,
+            ),
+          // Hujjat nomi UI tilida (rasmiy / norasmiy tarjima holati bilan).
+          InstrumentTitle(instrument: instrument, style: t.bodySmall),
           if (rule.articleSection != null)
             Text(l.compareArticle(rule.articleSection!), style: secondary),
           if (authority != null)
@@ -186,7 +210,7 @@ class LegalRuleCard extends ConsumerWidget {
                       style: t.labelSmall?.copyWith(color: c.textSecondary),
                     ),
                     SourceQuote(
-                      target: TextTranslationTarget.ruleExcerpt,
+                      kind: ContentTextKind.ruleExcerpt,
                       id: rule.id,
                       text: excerpt,
                       originalLang: instrument.language ?? 'en',

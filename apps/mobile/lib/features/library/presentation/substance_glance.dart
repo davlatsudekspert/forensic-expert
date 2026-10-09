@@ -7,6 +7,7 @@ import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/library/library_models.dart';
+import '../../evidence/presentation/localized_content.dart';
 
 /// «Qisqacha» — modda sahifasi tepasidagi ixcham xulosa.
 ///
@@ -61,12 +62,27 @@ class SubstanceGlanceCard extends ConsumerWidget {
       for (final id in a.allMethodIds)
         knowledge.byId(id)?.name.resolve(lang) ?? id,
     ];
+    // Kutubxonada yozuvi yo‘q metabolit — manbadagi nom (`metabolite_name`
+    // tarjimasi bo‘lsa — u); UI tilida bo‘lmasa, qator oxirida ochiq belgi.
+    final translations = ref.watch(contentTranslationsProvider);
+    var metaboliteOriginal = <String>{};
     final metabolites = [
       for (final m in a.metabolites)
         (m.relation.metaboliteId == null
                 ? null
                 : library.byId(m.relation.metaboliteId!)?.name.resolve(lang)) ??
-            m.relation.metaboliteName,
+            () {
+              final r = translations.resolve(
+                ContentTextKind.metaboliteName,
+                m.relation.id,
+                source: m.relation.metaboliteName,
+                lang: lang,
+              );
+              if (r.missingTranslation) {
+                metaboliteOriginal = {...metaboliteOriginal, r.originalLang};
+              }
+              return r.text;
+            }(),
     ];
     final concentrations = d.claims
         .where((x) => x.field == 'reported_concentration')
@@ -107,7 +123,13 @@ class SubstanceGlanceCard extends ConsumerWidget {
           'metabolites',
           Icons.subdirectory_arrow_right,
           l.rdGlanceMetabolites,
-          unlocked ? names(metabolites) : l.rdGlanceRecords(metabolites.length),
+          unlocked
+              ? [
+                  names(metabolites),
+                  for (final o in metaboliteOriginal)
+                    '(${l.trInOriginalLanguage(contentLanguageName(l, o))})',
+                ].join(' ')
+              : l.rdGlanceRecords(metabolites.length),
           unlocked ? 'analysis' : 'locked',
         ),
       if (concentrations > 0)

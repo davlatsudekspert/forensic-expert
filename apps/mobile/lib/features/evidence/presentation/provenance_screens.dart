@@ -14,8 +14,10 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../domain/evidence/provenance_models.dart';
 import '../../../domain/evidence/substance_analysis.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
+import '../../legal/presentation/instrument_title.dart';
 import '../../legal/presentation/jurisdiction_screens.dart';
 import '../../library/presentation/content_entry_sections.dart';
+import 'localized_content.dart';
 import 'provenance_widgets.dart';
 
 Widget _page({
@@ -76,9 +78,10 @@ class ConflictsScreen extends ConsumerWidget {
                 spacing: 2,
                 children: [
                   Text(l.conflictKindLabel(k.kind), style: t.labelLarge),
-                  Text(
-                    k.question,
-                    locale: const Locale('en'),
+                  LocalizedInlineText(
+                    kind: ContentTextKind.conflictQuestion,
+                    id: k.id,
+                    source: k.question,
                     style: t.bodyMedium,
                   ),
                   Text(
@@ -131,9 +134,19 @@ class ConflictDetailScreen extends ConsumerWidget {
           tone: FeBannerTone.warning,
         ),
         FeSectionHeader(l.conflictQuestion),
-        Text(k.question, locale: const Locale('en'), style: t.bodyMedium),
+        LocalizedContentText(
+          kind: ContentTextKind.conflictQuestion,
+          id: k.id,
+          source: k.question,
+          style: t.bodyMedium,
+        ),
         FeSectionHeader(l.conflictNoteLabel),
-        Text(k.note, locale: const Locale('en'), style: t.bodySmall),
+        LocalizedContentText(
+          kind: ContentTextKind.conflictNote,
+          id: k.id,
+          source: k.note,
+          style: t.bodySmall,
+        ),
         const SizedBox(height: FeSpace.xs),
         Text(
           k.state == EvidenceConflictState.open
@@ -417,7 +430,7 @@ class KnowledgeChainScreen extends ConsumerWidget {
       for (final i in resolver.instruments) {
         if (ruleId.startsWith('R-${i.jurisdictionId}-')) {
           return '${i.jurisdictionId}${FeGlyphs.middleDot}'
-              '${i.titles[lang] ?? i.titles['en'] ?? i.titles.values.first}';
+              '${instrumentTitleOf(i, lang).text}';
         }
       }
       return ruleId;
@@ -441,7 +454,11 @@ class KnowledgeChainScreen extends ConsumerWidget {
             key: Key('chain.$entityId.${m.id}'),
             dense: true,
             contentPadding: EdgeInsets.zero,
-            title: Text(m.metaboliteName, locale: const Locale('en')),
+            title: LocalizedInlineText(
+              kind: ContentTextKind.metaboliteName,
+              id: m.id,
+              source: m.metaboliteName,
+            ),
             subtitle: Text(
               '${l.metaboliteKindLabel(m.kind)}${FeGlyphs.middleDot}'
               '${l.chainBasis(m.basisClaimId)}',
@@ -600,7 +617,12 @@ class StandardCatalogueTile extends StatelessWidget {
           spacing: 2,
           children: [
             Text(s.designation, style: t.titleSmall),
-            Text(s.title, locale: const Locale('en'), style: t.bodyMedium),
+            TranslatedTitle(
+              kind: ContentTextKind.standardTitle,
+              id: s.id,
+              title: s.title,
+              style: t.bodyMedium,
+            ),
             Text(
               [
                 s.publisher,
@@ -644,7 +666,12 @@ class StandardCatalogueTile extends StatelessWidget {
               style: muted,
             ),
             if (s.note != null)
-              Text(s.note!, locale: const Locale('en'), style: muted),
+              LocalizedContentText(
+                kind: ContentTextKind.standardNote,
+                id: s.id,
+                source: s.note!,
+                style: muted,
+              ),
             if (s.url != null)
               SelectableText(
                 s.url!,

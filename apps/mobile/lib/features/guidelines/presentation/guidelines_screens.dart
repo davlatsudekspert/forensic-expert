@@ -19,6 +19,7 @@ import '../../../domain/catalog/tools_catalog.dart';
 import '../../../domain/evidence/citation_format.dart';
 import '../../../domain/guidelines/guideline_models.dart';
 import '../../evidence/presentation/citation_sheet.dart';
+import '../../evidence/presentation/localized_content.dart';
 import '../../glossary/presentation/glossary_screens.dart';
 import '../../support/presentation/support_widgets.dart' show ReportErrorMenu;
 import '../../tools/tool_strings.dart';
@@ -514,6 +515,11 @@ class _ReferenceTile extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                LocalizedReferenceTitle(
+                  key: Key('guideline.refTitle.${reference.key}'),
+                  titles: reference.localizedTitles,
+                  original: reference.title,
+                ),
                 SelectableText(reference.citation, style: t.bodySmall),
                 if (ids.isNotEmpty) Text(ids, style: t.labelSmall),
                 Wrap(

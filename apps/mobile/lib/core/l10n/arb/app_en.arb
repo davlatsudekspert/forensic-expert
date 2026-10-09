@@ -7974,11 +7974,11 @@
   "@specimenSubstancesNone": {
     "description": "Specimen page empty."
   },
-  "quoteMachineTranslation": "Automatic translation · not verified",
+  "quoteMachineTranslation": "Machine translation — not reviewed",
   "@quoteMachineTranslation": {
     "description": "Label above an automatic translation shown under a verbatim source excerpt. Must say it is automatic and not verified."
   },
-  "quoteMachineTranslationSemantics": "Automatic translation of the source excerpt, not verified by an expert. The original text above is the citation.",
+  "quoteMachineTranslationSemantics": "Machine translation of a source quote, not reviewed by an expert. The original quote is available under «Original text».",
   "@quoteMachineTranslationSemantics": {
     "description": "Screen-reader label for the automatic translation block."
   },
@@ -9772,5 +9772,112 @@
   "guidelineTermsHint": "Tap a term to see it in Uzbek, Russian and English.",
   "@guidelineTermsHint": {
     "description": "Hint under the Terms section of a guideline card."
+  },
+  "trStatusMachineDraft": "Machine translation — not reviewed",
+  "@trStatusMachineDraft": {
+    "description": "Translation status badge: machine translation, not reviewed by a person."
+  },
+  "trStatusTerminologyChecked": "Machine translation — terminology checked, content not reviewed",
+  "@trStatusTerminologyChecked": {
+    "description": "Translation status badge: terminology checked automatically, content not reviewed."
+  },
+  "trStatusClaimChecked": "Machine translation — numbers and units checked, not reviewed by an expert",
+  "@trStatusClaimChecked": {
+    "description": "Translation status badge: numbers, units and substance names checked automatically; no expert review."
+  },
+  "trStatusReviewed": "Translation reviewed by an expert",
+  "@trStatusReviewed": {
+    "description": "Translation status badge: reviewed by a qualified person."
+  },
+  "trStatusOfficial": "Official text",
+  "@trStatusOfficial": {
+    "description": "Translation status badge: official text in this language."
+  },
+  "trOriginalShow": "Original text",
+  "@trOriginalShow": {
+    "description": "Expandable control that reveals the original-language text."
+  },
+  "trOriginalHide": "Hide original text",
+  "@trOriginalHide": {
+    "description": "Collapse the original-language text."
+  },
+  "trOriginalQuoteShow": "Show the quote from the original source",
+  "@trOriginalQuoteShow": {
+    "description": "Study quiz: reveal the verbatim quote from the original source."
+  },
+  "trOriginalTitle": "Original title: {title}",
+  "@trOriginalTitle": {
+    "description": "Secondary line: the original (untranslated) title of a work or document.",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "trNotTranslated": "An English translation of this text is not available yet — original language: {language}",
+  "@trNotTranslated": {
+    "description": "Honest notice: no translation into the UI language exists yet; the original follows.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "trTitleNotTranslated": "No English translation of the title yet — original language: {language}",
+  "@trTitleNotTranslated": {
+    "description": "Honest notice under an untranslated title.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "trInOriginalLanguage": "original: {language}",
+  "@trInOriginalLanguage": {
+    "description": "Compact tag after a short untranslated value (name, list item).",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "trLanguageName": "{code, select, en{English} ru{Russian} uz{Uzbek} de{German} fr{French} other{{code}}}",
+  "@trLanguageName": {
+    "description": "Language name used inside «original language: …».",
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "trQuoteTranslatedLabel": "Source quote (translation)",
+  "@trQuoteTranslatedLabel": {
+    "description": "Label above a translated source quote (translation shown first)."
+  },
+  "trTranslationSemantics": "Translation of the original text. {status}. The original is available under «Original text».",
+  "@trTranslationSemantics": {
+    "description": "Screen-reader label for a translated block.",
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "legalTitleUnofficial": "Unofficial translation of the title — not reviewed",
+  "@legalTitleUnofficial": {
+    "description": "Status line under a legal document title shown as a translation."
+  },
+  "legalTitleOfficialIn": "Official title ({language})",
+  "@legalTitleOfficialIn": {
+    "description": "Status line under a legal document title shown in its official language.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "imageCaptionSection": "Caption in the source",
+  "@imageCaptionSection": {
+    "description": "Image viewer: section header for the caption from the source (translation shown first)."
   }
 }

@@ -10,6 +10,8 @@ library;
 import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/foundation.dart';
 
+import '../evidence/content_translations.dart';
+
 /// Uch tilli matn. Tanlangan tilda bo‘lmasa — boshqa tildagi asl matn
 /// qaytariladi va [LocalizedPick.isFallback] bilan belgilanadi (soxta
 /// tarjima yo‘q).
@@ -109,6 +111,7 @@ class GuidelineReference {
     this.issue,
     this.pages,
     this.verifiedOn,
+    this.localizedTitles = ReferenceTitles.empty,
   });
 
   factory GuidelineReference.fromJson(Map<String, Object?> j) {
@@ -162,6 +165,7 @@ class GuidelineReference {
       issue: s('issue'),
       pages: s('pages'),
       verifiedOn: DateTime.tryParse(s('verified_on') ?? ''),
+      localizedTitles: ReferenceTitles.fromJson(j),
     );
   }
 
@@ -189,6 +193,9 @@ class GuidelineReference {
 
   /// Havola onlayn tekshirilgan sana (`verified_on`) — murojaat sanasi.
   final DateTime? verifiedOn;
+
+  /// Ixtiyoriy tilga bog‘liq nom (`titles` + `title_status`).
+  final ReferenceTitles localizedTitles;
 
   /// Prof. Yuldashev Z.A. o‘quv-uslubiy majmualari (muallif ruxsati bilan,
   /// egasi qarori: barcha uchun bepul).

@@ -15,6 +15,7 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../core/widgets/fe_data_components.dart';
 import '../../../domain/evidence/evidence_models.dart';
 import '../evidence_strings.dart';
+import 'localized_content.dart';
 
 /// Rasm turi belgisi: sxema / real nashr rasmi / hisoblangan struktura.
 class ImageKindBadge extends StatelessWidget {
@@ -270,11 +271,14 @@ class ImageViewerScreen extends ConsumerWidget {
                       ),
                     ),
                   if (meta.captionOriginal != null) ...[
-                    FeSectionHeader(l.imageOriginalCaption),
-                    Text(
-                      meta.captionOriginal!,
-                      locale: const Locale('en'),
-                      style: t.bodySmall?.copyWith(fontStyle: FontStyle.italic),
+                    FeSectionHeader(l.imageCaptionSection),
+                    // Tarjima birinchi; asl izoh «Asl matn» ostida.
+                    LocalizedContentText(
+                      kind: ContentTextKind.imageCaption,
+                      id: meta.id,
+                      source: meta.captionOriginal!,
+                      quote: true,
+                      style: t.bodySmall,
                     ),
                   ],
                   const SizedBox(height: FeSpace.xl),

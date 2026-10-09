@@ -252,7 +252,7 @@ class ProvenanceSheet extends ConsumerWidget {
         label(l.provStatement),
         if (claim.excerpt != null)
           SourceQuote(
-            target: TextTranslationTarget.claimExcerpt,
+            kind: ContentTextKind.claimExcerpt,
             id: claim.claimId,
             text: claim.excerpt!,
             large: true,
@@ -306,7 +306,13 @@ class _SourceProvenanceBlock extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         spacing: 2,
         children: [
-          Text(source.title, style: t.bodyMedium, locale: const Locale('en')),
+          TranslatedTitle(
+            kind: ContentTextKind.sourceTitle,
+            id: source.sourceId,
+            title: source.title,
+            originalLang: source.language,
+            style: t.bodyMedium,
+          ),
           Text(
             [
               if (source.organization != null) source.organization!,
@@ -428,9 +434,10 @@ class _ConflictSummary extends StatelessWidget {
         spacing: 2,
         children: [
           Text(l.conflictKindLabel(conflict.kind), style: t.labelLarge),
-          Text(
-            conflict.question,
-            locale: const Locale('en'),
+          LocalizedInlineText(
+            kind: ContentTextKind.conflictQuestion,
+            id: conflict.id,
+            source: conflict.question,
             style: t.bodySmall,
           ),
         ],
@@ -490,13 +497,25 @@ class StrictContextTable extends ConsumerWidget {
       return parts.isEmpty ? l.ctxNotStated : parts.join(' · ');
     }
 
-    String studyContext() {
-      if (auto) return na;
+    final translations = ref.watch(contentTranslationsProvider);
+    // Manbadan olingan kontekst maydoni: UI tilidagi tarjima bo‘lsa — u,
+    // aks holda asl matn + «asl tili» yorlig‘i (`context_text`,
+    // ID `<claimId>#<maydon>` — docs/L10N_DATA_CONTRACT.md).
+    LocalizedContent part(String key, String shown) => translations.resolve(
+      ContentTextKind.contextText,
+      '${claim.claimId}#$key',
+      source: shown,
+      lang: lang,
+    );
+    LocalizedContent? sourced(List<String> keys) {
+      if (auto) return null;
       final parts = [
-        for (final k in ['case_type', 'population', 'study_size'])
-          if (ctx[k] != null && ctx[k] != ns) value(k),
+        for (final k in keys)
+          if (ctx[k] != null && ctx[k] != ns) part(k, value(k)),
       ];
-      return parts.isEmpty ? l.ctxNotStated : parts.join(' · ');
+      return parts.isEmpty
+          ? null
+          : LocalizedContent.join(parts, requestedLang: lang);
     }
 
     final section = switch (claim.value['section']) {
@@ -519,20 +538,34 @@ class StrictContextTable extends ConsumerWidget {
       for (final x in (ctx['limitations'] as List? ?? const [])) '$x',
     ];
 
-    // (sarlavha, qiymat, manba matni — asl tilda qoladi)
-    final rows = <(String, String, bool)>[
-      (l.concSubstance, substance, false),
-      (l.concValue, l.concValueInQuote, false),
-      (l.ctxSpecimen, specimens.isEmpty ? na : specimens.join(', '), false),
-      (l.concLivingPostmortem, livingPostmortem(), false),
-      (l.concSourceType, section, false),
-      (l.concStudyContext, studyContext(), true),
-      (l.ctxMethod, value('analytical_method'), true),
-      (l.ctxCoIntoxicants, value('co_intoxicants'), true),
-      if (!auto) (l.ctxTiming, value('timing'), true),
-      if (!auto) (l.ctxReporting, value('reporting'), false),
-      (l.concEvidenceLevel, claim.evidenceLevel, false),
-      (l.concSource, source, true),
+    // (sarlavha, qiymat, manbadan olingan matn — tarjima qatlami orqali)
+    LocalizedContent? one(String key) => auto ? null : sourced([key]);
+    final sourceContent = claim.sources.isEmpty
+        ? null
+        : translations.resolve(
+            ContentTextKind.sourceTitle,
+            claim.sources.first.sourceId,
+            source: source,
+            lang: lang,
+            originalLang: claim.sources.first.language,
+          );
+    final rows = <(String, String, LocalizedContent?)>[
+      (l.concSubstance, substance, null),
+      (l.concValue, l.concValueInQuote, null),
+      (l.ctxSpecimen, specimens.isEmpty ? na : specimens.join(', '), null),
+      (l.concLivingPostmortem, livingPostmortem(), null),
+      (l.concSourceType, section, null),
+      (
+        l.concStudyContext,
+        auto ? na : l.ctxNotStated,
+        sourced(const ['case_type', 'population', 'study_size']),
+      ),
+      (l.ctxMethod, value('analytical_method'), one('analytical_method')),
+      (l.ctxCoIntoxicants, value('co_intoxicants'), one('co_intoxicants')),
+      if (!auto) (l.ctxTiming, value('timing'), one('timing')),
+      if (!auto) (l.ctxReporting, value('reporting'), null),
+      (l.concEvidenceLevel, claim.evidenceLevel, null),
+      (l.concSource, source, sourceContent),
     ];
     bool missing(String v) => v == na || v == l.ctxNotStated;
 
@@ -556,25 +589,28 @@ class StrictContextTable extends ConsumerWidget {
               key: Key('claim.contextUnavailable.${claim.claimId}'),
               style: t.bodySmall?.copyWith(color: c.textSecondary),
             ),
-          for (final (k, v, sourceText) in rows)
+          for (final (k, v, sourced) in rows)
             Padding(
               padding: const EdgeInsets.only(top: 2),
               child: Wrap(
                 spacing: FeSpace.xs,
                 children: [
                   Text(k, style: t.bodySmall?.copyWith(color: c.textSecondary)),
-                  Text(
-                    v,
-                    // Manbadan olingan matn asl tilda qoladi.
-                    locale: sourceText && !missing(v)
-                        ? const Locale('en')
-                        : null,
-                    style: t.bodySmall?.copyWith(
-                      color: missing(v) ? c.textSecondary : null,
-                      fontStyle: missing(v) ? FontStyle.italic : null,
-                      fontWeight: missing(v) ? null : FontWeight.w600,
+                  if (sourced != null && !missing(sourced.original))
+                    // Manbadan olingan matn: tarjima yoki asl + «asl tili».
+                    LocalizedInlineView(
+                      content: sourced,
+                      style: t.bodySmall?.copyWith(fontWeight: FontWeight.w600),
+                    )
+                  else
+                    Text(
+                      v,
+                      style: t.bodySmall?.copyWith(
+                        color: missing(v) ? c.textSecondary : null,
+                        fontStyle: missing(v) ? FontStyle.italic : null,
+                        fontWeight: missing(v) ? null : FontWeight.w600,
+                      ),
                     ),
-                  ),
                 ],
               ),
             ),
@@ -602,10 +638,12 @@ class StrictContextTable extends ConsumerWidget {
               ),
             )
           else
-            for (final x in limitations)
-              Text(
-                '${FeGlyphs.bullet} $x',
-                locale: const Locale('en'),
+            for (final (i, x) in limitations.indexed)
+              LocalizedInlineText(
+                kind: ContentTextKind.contextText,
+                id: '${claim.claimId}#limitations#$i',
+                source: x,
+                prefix: FeGlyphs.bullet,
                 style: t.bodySmall,
               ),
         ],
@@ -657,10 +695,13 @@ class SubstanceProvenanceSections extends ConsumerWidget {
         dense: true,
         contentPadding: EdgeInsets.zero,
         leading: Icon(Icons.subdirectory_arrow_right, color: c.accent),
-        title: Text(
-          parent ? l.metParentOf(name) : name,
-          locale: parent ? null : const Locale('en'),
-        ),
+        title: parent
+            ? Text(l.metParentOf(name))
+            : LocalizedInlineText(
+                kind: ContentTextKind.metaboliteName,
+                id: m.id,
+                source: name,
+              ),
         subtitle: Text(
           '${l.metaboliteKindLabel(m.kind)}'
           '${FeGlyphs.middleDot}${l.chainBasis(m.basisClaimId)}',

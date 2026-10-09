@@ -21,6 +21,7 @@ import '../../../domain/knowledge/knowledge_models.dart';
 import '../../../domain/library/library_models.dart';
 import '../../evidence/evidence_strings.dart';
 import '../../evidence/presentation/provenance_screens.dart';
+import '../../legal/presentation/instrument_title.dart';
 import '../../legal/presentation/jurisdiction_screens.dart';
 import '../../placeholder/presentation/in_development_view.dart';
 import 'content_entry_sections.dart';
@@ -620,7 +621,7 @@ class StandardsScreen extends ConsumerWidget {
                     ListTile(
                       key: Key('standards.${i.id}'),
                       contentPadding: EdgeInsets.zero,
-                      title: Text(i.titles[lang] ?? i.titles['en'] ?? i.id),
+                      title: InstrumentTitle(instrument: i),
                       subtitle: kindLine(documentKindOfInstrument(i.type)),
                       trailing: const Icon(Icons.chevron_right),
                       onTap: () =>

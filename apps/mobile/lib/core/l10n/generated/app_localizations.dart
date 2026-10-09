@@ -10962,13 +10962,13 @@ abstract class AppLocalizations {
   /// Label above an automatic translation shown under a verbatim source excerpt. Must say it is automatic and not verified.
   ///
   /// In en, this message translates to:
-  /// **'Automatic translation · not verified'**
+  /// **'Machine translation — not reviewed'**
   String get quoteMachineTranslation;
 
   /// Screen-reader label for the automatic translation block.
   ///
   /// In en, this message translates to:
-  /// **'Automatic translation of the source excerpt, not verified by an expert. The original text above is the citation.'**
+  /// **'Machine translation of a source quote, not reviewed by an expert. The original quote is available under «Original text».'**
   String get quoteMachineTranslationSemantics;
 
   /// Secondary line under a translated research title.
@@ -13244,6 +13244,114 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Tap a term to see it in Uzbek, Russian and English.'**
   String get guidelineTermsHint;
+
+  /// Translation status badge: machine translation, not reviewed by a person.
+  ///
+  /// In en, this message translates to:
+  /// **'Machine translation — not reviewed'**
+  String get trStatusMachineDraft;
+
+  /// Translation status badge: terminology checked automatically, content not reviewed.
+  ///
+  /// In en, this message translates to:
+  /// **'Machine translation — terminology checked, content not reviewed'**
+  String get trStatusTerminologyChecked;
+
+  /// Translation status badge: numbers, units and substance names checked automatically; no expert review.
+  ///
+  /// In en, this message translates to:
+  /// **'Machine translation — numbers and units checked, not reviewed by an expert'**
+  String get trStatusClaimChecked;
+
+  /// Translation status badge: reviewed by a qualified person.
+  ///
+  /// In en, this message translates to:
+  /// **'Translation reviewed by an expert'**
+  String get trStatusReviewed;
+
+  /// Translation status badge: official text in this language.
+  ///
+  /// In en, this message translates to:
+  /// **'Official text'**
+  String get trStatusOfficial;
+
+  /// Expandable control that reveals the original-language text.
+  ///
+  /// In en, this message translates to:
+  /// **'Original text'**
+  String get trOriginalShow;
+
+  /// Collapse the original-language text.
+  ///
+  /// In en, this message translates to:
+  /// **'Hide original text'**
+  String get trOriginalHide;
+
+  /// Study quiz: reveal the verbatim quote from the original source.
+  ///
+  /// In en, this message translates to:
+  /// **'Show the quote from the original source'**
+  String get trOriginalQuoteShow;
+
+  /// Secondary line: the original (untranslated) title of a work or document.
+  ///
+  /// In en, this message translates to:
+  /// **'Original title: {title}'**
+  String trOriginalTitle(String title);
+
+  /// Honest notice: no translation into the UI language exists yet; the original follows.
+  ///
+  /// In en, this message translates to:
+  /// **'An English translation of this text is not available yet — original language: {language}'**
+  String trNotTranslated(String language);
+
+  /// Honest notice under an untranslated title.
+  ///
+  /// In en, this message translates to:
+  /// **'No English translation of the title yet — original language: {language}'**
+  String trTitleNotTranslated(String language);
+
+  /// Compact tag after a short untranslated value (name, list item).
+  ///
+  /// In en, this message translates to:
+  /// **'original: {language}'**
+  String trInOriginalLanguage(String language);
+
+  /// Language name used inside «original language: …».
+  ///
+  /// In en, this message translates to:
+  /// **'{code, select, en{English} ru{Russian} uz{Uzbek} de{German} fr{French} other{{code}}}'**
+  String trLanguageName(String code);
+
+  /// Label above a translated source quote (translation shown first).
+  ///
+  /// In en, this message translates to:
+  /// **'Source quote (translation)'**
+  String get trQuoteTranslatedLabel;
+
+  /// Screen-reader label for a translated block.
+  ///
+  /// In en, this message translates to:
+  /// **'Translation of the original text. {status}. The original is available under «Original text».'**
+  String trTranslationSemantics(String status);
+
+  /// Status line under a legal document title shown as a translation.
+  ///
+  /// In en, this message translates to:
+  /// **'Unofficial translation of the title — not reviewed'**
+  String get legalTitleUnofficial;
+
+  /// Status line under a legal document title shown in its official language.
+  ///
+  /// In en, this message translates to:
+  /// **'Official title ({language})'**
+  String legalTitleOfficialIn(String language);
+
+  /// Image viewer: section header for the caption from the source (translation shown first).
+  ///
+  /// In en, this message translates to:
+  /// **'Caption in the source'**
+  String get imageCaptionSection;
 }
 
 class _AppLocalizationsDelegate

@@ -16,6 +16,8 @@ import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../core/widgets/fe_data_components.dart';
 import '../../../domain/jurisdiction/jurisdiction_catalog.dart';
+import '../../evidence/presentation/localized_content.dart';
+import 'instrument_title.dart';
 
 /// Global yurisdiksiya qatlami (PHASE 6).
 ///
@@ -549,7 +551,7 @@ class InstrumentCard extends ConsumerWidget {
     final source = catalog.instrumentSources[i.id];
     final authority = i.authorityId == null
         ? null
-        : catalog.authorities[i.authorityId]?.resolve(lang);
+        : authorityNameOf(l, catalog.authorities[i.authorityId]?.values, lang);
     String date(DateTime d) => feDate(context, d);
     final rows = <(String, String)>[
       if (i.officialReference != null) (l.instrNumber, i.officialReference!),
@@ -561,7 +563,8 @@ class InstrumentCard extends ConsumerWidget {
       if (i.lastAmendedAt != null) (l.instrAmended, date(i.lastAmendedAt!)),
       (l.instrVersion, i.version),
       (l.instrLegalStatus, l.legalStatusLabel(i.legalStatus)),
-      if (i.language != null) (l.instrLanguage, i.language!),
+      if (i.language != null)
+        (l.instrLanguage, contentLanguageName(l, i.language!)),
       (
         l.instrTranslation,
         switch (i.translationStatus) {
@@ -574,11 +577,8 @@ class InstrumentCard extends ConsumerWidget {
       if (i.lastVerifiedAt != null)
         (l.instrLastVerified, date(i.lastVerifiedAt!)),
       if (source != null) (l.instrSource, source.title),
-      // PHASE 10: asl tildagi rasmiy sarlavha.
-      if (i.language != null &&
-          i.language != lang &&
-          (i.titles[i.language] ?? '').isNotEmpty)
-        (l.instrOriginalTitle, i.titles[i.language]!),
+      // Asl tildagi rasmiy sarlavha — sarlavha ostida («Asl nomi: …»,
+      // [InstrumentTitle]); bu yerda takrorlanmaydi.
     ];
     final missing = LegalRecordCompleteness.missing(
       i,
@@ -620,7 +620,7 @@ class InstrumentCard extends ConsumerWidget {
               ],
             ),
             const SizedBox(height: FeSpace.xxs),
-            Text(i.titles[lang] ?? i.titles['en'] ?? i.id, style: t.titleSmall),
+            InstrumentTitle(instrument: i, style: t.titleSmall),
             Text(
               l.bindingLabel(kind.binding),
               style: t.bodySmall?.copyWith(color: c.textSecondary),

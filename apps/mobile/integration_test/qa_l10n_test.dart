@@ -8,7 +8,12 @@
 // uchun natija qo‘lda ko‘rib chiqiladi).
 //
 // Muhit: QA_LANG=uz|ru|en  QA_OUT=<katalog>
+//   QA_MODE=professional|student (standart: professional — EXPERT)
+//   QA_WIDTH=390|320 (mantiqiy piksel; standart 390)
 //   QA_LANG=ru ./tool/qa_real_app.sh l10n
+//
+// Phase C (2026-10-09): tarjima birinchi, «Asl matn» ochilishi, huquqiy
+// hujjat nomi UI tilida — qo‘shimcha qadamlar oxirida.
 import 'dart:convert';
 import 'dart:io';
 
@@ -27,17 +32,24 @@ void main() {
 
   final env = Platform.environment;
   final lang = env['QA_LANG'] ?? 'uz';
+  final mode = env['QA_MODE'] ?? 'professional';
+  final width = double.tryParse(env['QA_WIDTH'] ?? '') ?? 390;
+  final suffix = [
+    lang,
+    if (mode != 'professional') mode,
+    if (width != 390) '${width.toInt()}',
+  ].join('-');
 
-  testWidgets('QA real app — L10N AUDIT ($lang)', (tester) async {
+  testWidgets('QA real app — L10N AUDIT ($suffix)', (tester) async {
     final net = NoNetworkOverrides();
     HttpOverrides.global = net;
     final qa = await launchRealApp(
       tester,
-      role: 'l10n-$lang',
+      role: 'l10n-$suffix',
       prefs: {
         'fe.settings.locale': lang,
         'fe.settings.theme': 'light',
-        'fe.settings.mode': 'professional',
+        'fe.settings.mode': mode,
         'fe.settings.disclaimer_version': 1,
       },
       overrides: [
@@ -54,6 +66,7 @@ void main() {
       ],
     );
     qa.lang = lang;
+    if (width != 390) await qa.setSize(Size(width, 844));
     final texts = <String, List<String>>{};
 
     Future<void> open(String route) async {
@@ -153,7 +166,36 @@ void main() {
     });
     await shot('AI answer scrolled', () async => qa.scrollBy(900));
 
-    File('${qa.outDir.path}/screen_texts_l10n-$lang.json').writeAsStringSync(
+    // 7. Phase C: tarjima birinchi + «Asl matn» ochilishi.
+    Finder keyPrefix(String p) => find.byWidgetPredicate(
+      (w) =>
+          w.key is ValueKey<String> &&
+          (w.key! as ValueKey<String>).value.startsWith(p),
+    );
+    await shot('C Study quiz quote original opened', () async {
+      await open(Routes.studyQuiz('discipline.forensicToxicology'));
+      final t = keyPrefix('l10n.originalToggle.claim_excerpt.');
+      if (t.evaluate().isNotEmpty) await qa.tapFinder(t.first);
+    });
+    await shot('C Topic card PMR original opened', () async {
+      await open(Routes.knowledgeEntry('tox-postmortem-redistribution'));
+      final t = keyPrefix('l10n.originalToggle.claim_excerpt.');
+      if (t.evaluate().isNotEmpty) {
+        await qa.scrollUntil(t.first);
+        await qa.tapFinder(t.first);
+      }
+    });
+    await shot('C Morphine context and limitations', () async {
+      await open(Routes.libraryEntry('morphine'));
+      final f = keyPrefix('claim.context.');
+      if (f.evaluate().isNotEmpty) await qa.scrollUntil(f.first);
+    });
+    await shot('C Conflicts list', () async => open(Routes.conflicts));
+    await shot('C Jurisdiction GB legal titles', () async {
+      await open(Routes.jurisdiction('GB'));
+    });
+
+    File('${qa.outDir.path}/screen_texts_l10n-$suffix.json').writeAsStringSync(
       const JsonEncoder.withIndent(' ').convert({'lang': lang, 'steps': texts}),
     );
     qa.restoreErrorHandler();

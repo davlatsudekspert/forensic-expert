@@ -13,6 +13,7 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
 import '../../../domain/court_prep/court_prep_models.dart';
 import '../../../domain/guidelines/guideline_models.dart';
+import '../../evidence/presentation/localized_content.dart';
 import '../../guidelines/presentation/guidelines_screens.dart'
     show numberCitations;
 import '../../tools/tool_strings.dart';
@@ -425,6 +426,11 @@ class CourtReferenceTile extends StatelessWidget {
                 : Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      LocalizedReferenceTitle(
+                        key: Key('court.refTitle.${reference.key}'),
+                        titles: reference.localizedTitles,
+                        original: reference.title,
+                      ),
                       SelectableText(reference.citation, style: t.bodySmall),
                       Text(
                         locs.map((x) => courtLocatorLabel(l, x)).join('; '),

@@ -1,9 +1,10 @@
 import 'dart:convert';
 
+import 'package:drift/drift.dart' show Variable;
 import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:fe_database/fe_database.dart' show ContentDatabase;
 
-import '../../domain/evidence/machine_translations.dart';
+import '../../domain/evidence/content_translations.dart';
 import '../../domain/evidence/provenance_models.dart';
 import '../../domain/library/library_models.dart';
 
@@ -20,32 +21,61 @@ class ContentProvenance {
   /// PHASE 7 provenance qatlami.
   ProvenanceIndex index = ProvenanceIndex.empty;
 
-  /// Asl iqtibos/sarlavhalarning avtomatik (machine_draft) tarjimalari.
-  MachineTranslations translations = MachineTranslations.empty;
+  /// Kontent tarjimalari (asl iqtibos, sarlavha, izoh…) — `resolve()`.
+  ContentTranslations translations = ContentTranslations.empty;
 
-  /// `text_translations` (sxema v7). Jadval yo‘q eski paketda — bo‘sh.
-  static Future<MachineTranslations> loadTranslations(
+  /// `text_translations` (sxema v7) va ixtiyoriy `localized_texts` (taklif
+  /// qilingan v8) jadvallari. Jadval yo‘q eski paketda — bo‘sh. Noma’lum
+  /// tur/status/til qatorlari **e’tiborsiz** (hech qachon xato emas) —
+  /// shartnoma: `docs/L10N_DATA_CONTRACT.md`.
+  static Future<ContentTranslations> loadTranslations(
     ContentDatabase db,
   ) async {
-    final exists = await db
-        .customSelect(
-          "SELECT 1 FROM sqlite_master WHERE type = 'table' "
-          "AND name = 'text_translations'",
-        )
-        .get();
-    if (exists.isEmpty) return MachineTranslations.empty;
-    return MachineTranslations.of([
-      for (final r
-          in await db.customSelect('SELECT * FROM text_translations').get())
-        TextTranslation(
-          target: TextTranslationTarget.fromCode(r.read<String>('target_type')),
-          targetId: r.read<String>('target_id'),
-          lang: r.read<String>('lang'),
-          sourceSha256: r.read<String>('source_sha256'),
-          text: r.read<String>('translated_text'),
-          status: r.read<String>('status'),
-        ),
-    ]);
+    Future<Set<String>> columnsOf(String table) async {
+      final exists = await db
+          .customSelect(
+            "SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = ?",
+            variables: [Variable.withString(table)],
+          )
+          .get();
+      if (exists.isEmpty) return const {};
+      return {
+        for (final r
+            in await db.customSelect('PRAGMA table_info($table)').get())
+          r.read<String>('name'),
+      };
+    }
+
+    final rows = <ContentTranslationRow>[];
+    for (final table in const ['text_translations', 'localized_texts']) {
+      final cols = await columnsOf(table);
+      if (!cols.containsAll(const [
+        'target_type',
+        'target_id',
+        'lang',
+        'source_sha256',
+        'status',
+      ])) {
+        continue;
+      }
+      final textCol = cols.contains('translated_text')
+          ? 'translated_text'
+          : (cols.contains('text') ? 'text' : null);
+      if (textCol == null) continue;
+      for (final r in await db.customSelect('SELECT * FROM $table').get()) {
+        final d = r.data;
+        final row = ContentTranslationRow.tryParse(
+          kind: d['target_type'],
+          id: d['target_id'],
+          lang: d['lang'],
+          sourceSha256: d['source_sha256'],
+          text: d[textCol],
+          status: d['status'],
+        );
+        if (row != null) rows.add(row);
+      }
+    }
+    return ContentTranslations.of(rows);
   }
 
   static Future<ContentProvenance> load(ContentDatabase db) async {

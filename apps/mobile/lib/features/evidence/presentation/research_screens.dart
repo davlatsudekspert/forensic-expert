@@ -28,17 +28,27 @@ import '../evidence_strings.dart';
 import 'citation_sheet.dart';
 import 'source_quote.dart';
 
-/// Ro‘yxatdagi research yozuvi.
-class ResearchTile extends StatelessWidget {
+/// Ro‘yxatdagi research yozuvi: UI tilidagi sarlavha (tarjima bo‘lsa) →
+/// «Asl nomi» → mualliflar/jurnal/yil; tarjima yo‘q bo‘lsa — asl sarlavha
+/// va «asl tili: …» belgisi.
+class ResearchTile extends ConsumerWidget {
   const ResearchTile({super.key, required this.entry});
 
   final ResearchEntry entry;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
+    final title = resolveContent(
+      ref,
+      context,
+      ContentTextKind.researchTitle,
+      entry.id,
+      source: entry.title,
+      originalLang: entry.language,
+    );
     final meta = [
       if (entry.authors.isNotEmpty)
         entry.authors.length > 1
@@ -76,14 +86,26 @@ class ResearchTile extends StatelessWidget {
                     label: l.researchNotPeerReviewed,
                     color: c.warning,
                   ),
+                // Sarlavha UI tilida emas — ochiq belgi (ro‘yxatda ixcham).
+                if (title.missingTranslation)
+                  StatusChip(
+                    key: Key('research.originalLang.${entry.id}'),
+                    icon: Icons.language,
+                    label: l.trInOriginalLanguage(
+                      contentLanguageName(l, title.originalLang),
+                    ),
+                    color: c.textSecondary,
+                  ),
               ],
             ),
             const SizedBox(height: FeSpace.xxs),
             TranslatedTitle(
               id: entry.id,
               title: entry.title,
+              originalLang: entry.language,
               style: t.titleSmall,
-              maxLines: 3,
+              maxLines: 4,
+              showMissingNotice: false,
             ),
             if (meta.isNotEmpty) ...[
               const SizedBox(height: 2),
@@ -420,6 +442,7 @@ class ResearchDetailScreen extends ConsumerWidget {
                   TranslatedTitle(
                     id: r.id,
                     title: r.title,
+                    originalLang: r.language,
                     style: t.titleMedium,
                     selectable: true,
                   ),

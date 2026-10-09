@@ -10,6 +10,7 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/evidence/substance_analysis.dart';
 import '../../../domain/library/library_models.dart';
+import '../../evidence/presentation/localized_content.dart';
 import '../../evidence/presentation/provenance_widgets.dart';
 import 'content_entry_sections.dart';
 
@@ -171,12 +172,28 @@ class SubstanceAnalysisSection extends ConsumerWidget {
                 final entry = r.metaboliteId == null
                     ? null
                     : library.byId(r.metaboliteId!);
+                // Kutubxonada yozuvi yo‘q metabolit — manbadagi nom
+                // (`metabolite_name` tarjimasi bo‘lsa — u, aks holda asl).
+                final name = entry == null
+                    ? ref
+                          .watch(contentTranslationsProvider)
+                          .resolve(
+                            ContentTextKind.metaboliteName,
+                            r.id,
+                            source: r.metaboliteName,
+                            lang: lang,
+                          )
+                    : null;
                 return AnalysisRow(
                   key: Key('analysis.metabolite.$entityId.${r.id}'),
                   icon: Icons.subdirectory_arrow_right,
-                  title: entry?.name.resolve(lang) ?? r.metaboliteName,
-                  titleLocale: entry == null ? const Locale('en') : null,
+                  title: entry?.name.resolve(lang) ?? name!.text,
+                  titleLocale: name == null ? null : Locale(name.textLang),
                   details: [
+                    if (name != null && name.missingTranslation)
+                      l.trInOriginalLanguage(
+                        contentLanguageName(l, name.originalLang),
+                      ),
                     l.metaboliteKindLabel(r.kind),
                     if (m.specimenIds.isNotEmpty)
                       l.analysisMetaboliteSpecimens(
