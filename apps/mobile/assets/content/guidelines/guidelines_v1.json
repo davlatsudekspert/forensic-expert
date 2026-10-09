@@ -4591,6 +4591,340 @@
     "remane2016",
     "peters2007"
    ]
+  },
+  {
+   "id": "guideline.chem.co_cohb_determination",
+   "discipline_codes": [
+    "forensic_chemistry",
+    "forensic_toxicology",
+    "analytical_science"
+   ],
+   "status": "NEEDS_REVIEW",
+   "access": "free",
+   "updated": "2026-10-09",
+   "translation_status": {
+    "uz": "AUTHORED",
+    "ru": "DRAFT",
+    "en": "DRAFT"
+   },
+   "related_tool_ids": [
+    "tool.lab.calibration",
+    "tool.lab.beer_lambert",
+    "tool.lab.descriptive_stats"
+   ],
+   "title": {
+    "uz": "Qonda karboksigemoglobin (COHb) ni laboratoriyada aniqlash: namuna, usullar va sifat nazorati",
+    "ru": "Лабораторное определение карбоксигемоглобина (COHb) в крови: образец, методы и контроль качества",
+    "en": "Laboratory determination of carboxyhaemoglobin (COHb) in blood: specimen, methods and quality control"
+   },
+   "summary": {
+    "uz": "Uglerod (II) oksidiga ta’sirlanish ko‘rsatkichi sifatida qonda gemoglobinning COHb ga to‘yinish ulushi o‘lchanadi [widdop2002]. Asosiy yo‘llar: ko‘p to‘lqinli spektrofotometriya (CO-oksimetriya), klassik spektrofotometrik usullar (ditionit bilan qaytarish, izosbestik nuqtalarda yutilish farqi, hosilaviy spektr) va gaz xromatografiyasi — bunda CO namunadan ajratib olinib, issiqlik o‘tkazuvchanlik detektori, metanlashtirgich-FID yoki mass-spektrometr bilan o‘lchanadi. O‘lim keyingi namunalarda chirish, issiqlik ta’siri va boshqa gemoglobin pigmentlari optik o‘lchovni buzishi mumkin; shuning uchun natija kalibrlash, nazorat namunalari va boshqa o‘lchov tamoyiliga asoslangan ikkinchi usul bilan tasdiqlanadi. Karta faqat analitik qismni qamraydi: COHb natijasining ma’nosi holat sharoitlari, chekish, ta’sirlanishdan o‘tgan vaqt va kislorod berilgani bilan birga, malakali ekspert tomonidan baholanadi. Toksik yoki o‘ldiruvchi darajalar keltirilmaydi.",
+    "ru": "Показателем воздействия оксида углерода (II) служит доля гемоглобина, связанного в COHb [widdop2002]. Основные подходы: многоволновая спектрофотометрия (CO-оксиметрия), классические спектрофотометрические методы (восстановление дитионитом, разностное поглощение в изосбестических точках, производные спектры) и газовая хроматография, где CO высвобождают из образца и измеряют детектором по теплопроводности, метанизатором-ПИД или масс-спектрометром. В посмертных образцах гниение, нагрев и другие производные гемоглобина искажают оптическое измерение, поэтому результат подтверждают калибровкой, контрольными образцами и вторым методом с иным принципом измерения. Карточка охватывает только аналитическую часть: значение результата COHb оценивает квалифицированный эксперт с учётом обстоятельств, курения, времени после воздействия и кислородной терапии. Токсические или смертельные уровни не приводятся.",
+    "en": "Exposure to carbon monoxide is assessed as the fraction of haemoglobin present as COHb [widdop2002]. The main approaches are multiwavelength spectrophotometry (CO-oximetry), classical spectrophotometric methods (dithionite reduction, absorbance differences at isosbestic points, derivative spectra) and gas chromatography, in which CO is released from the specimen and measured by thermal conductivity detection, a methaniser-FID or mass spectrometry. In postmortem specimens putrefaction, heat and other haemoglobin pigments can distort the optical measurement, so results are supported by calibration, controls and a second method based on a different measurement principle. The card covers the analytical part only: the meaning of a COHb result is judged by a qualified expert together with the circumstances, smoking, time since exposure and oxygen administration. No toxic or lethal levels are given."
+   },
+   "sections": [
+    {
+     "key": "basis",
+     "title": {
+      "uz": "Ilmiy asos",
+      "ru": "Научная основа",
+      "en": "Scientific basis"
+     },
+     "body": {
+      "uz": "Uglerod (II) oksidi gemoglobin bilan birikib karboksigemoglobin (COHb) hosil qiladi; ta’sirlanish darajasi ko‘pincha qonda gemoglobinning COHb ga to‘yinish ulushi (%COHb) bilan ifodalanadi [widdop2002].\n\nO‘lchovning ikki tamoyili bor:\n• Optik — COHb, oksigemoglobin va qaytarilgan gemoglobin ko‘rinadigan sohada turli spektrga ega; yutilish qiymatlari bo‘yicha ulushlar hisoblanadi [widdop2002, siek1984].\n• Gaz-xromatografik — CO gemoglobindan reagent bilan ajratib olinib (masalan, kislota yoki kaliy geksasiyanoferrat (III) bilan), flakon ustidagi gaz fazasida o‘lchanadi [vandam1994, oritani2000].\n\nPuls-oksimetriya COHb ni o‘lchamaydi: COHb to‘yinishi oshganda ham puls-oksimetr ko‘rsatkichi yuqori bo‘lib qolgan va o‘lchangan oksigemoglobin to‘yinishining pasayishini aniqlamagan; shu sababli COHb to‘g‘ridan-to‘g‘ri o‘lchanmaguncha puls-oksimetriya ishonchsiz deb qaraladi [bozeman1997].",
+      "ru": "Оксид углерода (II) связывается с гемоглобином, образуя карбоксигемоглобин (COHb); степень воздействия обычно выражают долей гемоглобина в виде COHb (%COHb) [widdop2002].\n\nИзмерение основано на двух принципах:\n• оптическом — COHb, оксигемоглобин и восстановленный гемоглобин имеют разные спектры в видимой области, и доли рассчитывают по величинам поглощения [widdop2002, siek1984];\n• газохроматографическом — CO высвобождают из гемоглобина реагентом (например, кислотой или гексацианоферратом (III) калия) и измеряют в газовой фазе над образцом [vandam1994, oritani2000].\n\nПульсоксиметрия не измеряет COHb: при росте насыщения COHb показания пульсоксиметра оставались высокими и не выявляли снижения измеренного насыщения оксигемоглобином, поэтому пульсоксиметрию считают ненадёжной, пока COHb не измерен напрямую [bozeman1997].",
+      "en": "Carbon monoxide binds to haemoglobin to form carboxyhaemoglobin (COHb); exposure is usually expressed as the fraction of haemoglobin present as COHb (%COHb) [widdop2002].\n\nMeasurement rests on two principles:\n• optical — COHb, oxyhaemoglobin and reduced haemoglobin have different visible spectra, and the fractions are calculated from absorbance values [widdop2002, siek1984];\n• gas chromatographic — CO is liberated from haemoglobin with a reagent (e.g. acid or potassium hexacyanoferrate(III)) and measured in the headspace above the sample [vandam1994, oritani2000].\n\nPulse oximetry does not measure COHb: readings remained high across the range of COHb saturations and failed to detect the fall in measured oxyhaemoglobin saturation, so pulse oximetry is considered unreliable until COHb has been measured directly [bozeman1997]."
+     },
+     "citations": [
+      "widdop2002",
+      "siek1984",
+      "vandam1994",
+      "oritani2000",
+      "bozeman1997"
+     ]
+    },
+    {
+     "key": "scope",
+     "title": {
+      "uz": "Qo‘llanish sohasi",
+      "ru": "Область применения",
+      "en": "Scope"
+     },
+     "body": {
+      "uz": "Kartochka qonda COHb ni laboratoriyada aniqlashning analitik qismiga tegishli: namunaga qo‘yiladigan talablar, usullar, ularning cheklovlari va sifat nazorati. Tirik shaxs namunalari ham, o‘lim keyingi namunalar ham qamraladi [widdop2002, kristoffersen2023].\n\nOddiy qon olinmaydigan hollar (parchalangan, formalinda saqlangan, embalmlangan, qabrdan olingan yoki yonginda qurib qolgan material) alohida yondashuvni talab qiladi va bunda odatdagi COHb usullari ko‘p hollarda ishlamaydi [middleberg1993].\n\nKartochkada toksik yoki o‘ldiruvchi darajalar, chegaraviy jadvallar, davolash yoki antidot bo‘yicha ko‘rsatma yo‘q; natijani talqin qilish — malakali ekspert vakolatida.",
+      "ru": "Карточка относится к аналитической части лабораторного определения COHb в крови: требования к образцу, методы, их ограничения и контроль качества. Охватываются как образцы живых лиц, так и посмертные образцы [widdop2002, kristoffersen2023].\n\nСлучаи, когда обычная кровь недоступна (разложившийся, фиксированный формалином, эмбальмированный, эксгумированный или высохший при пожаре материал), требуют особого подхода, и обычные методы определения COHb в них часто неприменимы [middleberg1993].\n\nКарточка не содержит токсических или смертельных уровней, пороговых таблиц, указаний по лечению или антидотам; интерпретация результата — компетенция квалифицированного эксперта.",
+      "en": "The card covers the analytical part of determining COHb in blood: specimen requirements, methods, their limitations and quality control. Both samples from living persons and postmortem samples are included [widdop2002, kristoffersen2023].\n\nCases in which ordinary blood is not available (decomposed, formalin-fixed, embalmed, exhumed or fire-dried material) need a separate approach, and the usual COHb methods frequently fail there [middleberg1993].\n\nThe card gives no toxic or lethal levels, threshold tables, treatment or antidote guidance; interpreting the result is the task of a qualified expert."
+     },
+     "citations": [
+      "widdop2002",
+      "kristoffersen2023",
+      "middleberg1993"
+     ]
+    },
+    {
+     "key": "methods",
+     "title": {
+      "uz": "Usullar va sifat nazorati",
+      "ru": "Методы и контроль качества",
+      "en": "Methods and quality control"
+     },
+     "body": {
+      "uz": "• CO-oksimetriya (ko‘p to‘lqinli spektrofotometriya). Avtomatlashtirilgan asboblar umumiy gemoglobin, oksigemoglobin va karboksigemoglobin ulushini bir vaqtda hisoblaydi va ko‘pchilik klinik maqsadlar uchun tavsiya etilgan [widdop2002]. O‘lim keyingi to‘liq qonda 128 to‘lqin uzunligida o‘lchaydigan CO-oksimetriya kichik hajmdagi namunada bajarilgan va gaz-xromatografik usul bilan solishtirilgan [kristoffersen2023].\n• Klassik spektrofotometrik usullar. Oqsilni cho‘ktirish farqiga yoki natriy ditionit bilan qaytarishga asoslangan oddiy usullar mavjud, lekin ular boshqa gemoglobin pigmentlari xalaqitiga beriluvchan va past darajalarda pretsizligi past [widdop2002]. Mikroprotsessorli spektrofotometrda oksigemoglobin, karboksigemoglobin va qaytarilgan gemoglobin uchun izosbestik nuqtalarda yutilish farqini o‘lchash, methemoglobin uchun tuzatish kiritish, shuningdek spektr tafsiloti, ditionit bilan qaytarish va birinchi hosila spektri bo‘yicha sifat tasdig‘i tavsiflangan [siek1984].\n• Gaz xromatografiyasi. CO ni ajratib olib o‘lchash past darajadagi ta’sirlanishni aniqlash uchun va chirish yoki issiqlik ta’siri gemoglobin tarkibini o‘zgartirgan o‘lim keyingi namunalar uchun talab qilinadi [widdop2002]. Detektorlar: mikro issiqlik o‘tkazuvchanlik detektori bilan kapillyar gaz xromatografiyasi [vandam1994]; CO ni katalitik yo‘l bilan metana aylantirib FID bilan o‘lchash (temir atom-absorbsion spektrofotometriya bilan aniqlanadi) [kristoffersen2023]; avtomatlashtirilgan flakon usti GX/MS [oritani2000, hao2013]. GX usullarida natriy ditionit qo‘shilishi methemoglobinni gemoglobinga qaytaradi va shundan kelib chiqadigan xatoni yo‘qotadi [lewis2004].\n• Sifat nazorati. Kalibrlash va ma’lum darajali nazorat namunalari bilan ishlanadi; usulning maqsadga yaroqliligi validatsiya orqali ko‘rsatiladi [asb036_2019, peters2007]. O‘lchov ishchi oralig‘i, chiziqlilik, aniqlik va pretsizlik baholanadi [ich_q2r2_2023]. Usullar taqqoslanganda Bland–Altman tahlili va laboratoriyalararo malaka sinovlari qo‘llangan; aniqlik siljish (bias), pretsizlik nisbiy standart og‘ish bilan hisobot qilingan [kristoffersen2023]. Ishonchli analitik natija — talqinning shartidir [peters2007].",
+      "ru": "• CO-оксиметрия (многоволновая спектрофотометрия). Автоматические приборы одновременно оценивают общий гемоглобин, долю оксигемоглобина и карбоксигемоглобина и рекомендованы для большинства клинических задач [widdop2002]. В посмертной цельной крови применена CO-оксиметрия с измерением на 128 длинах волн в малом объёме образца и сопоставлена с газохроматографическим методом [kristoffersen2023].\n• Классические спектрофотометрические методы. Простые методы, основанные на разном осаждении белка или восстановлении дитионитом натрия, подвержены помехам от других производных гемоглобина и неточны при низких значениях [widdop2002]. Описано измерение разности поглощения в изосбестических точках для оксигемоглобина, карбоксигемоглобина и восстановленного гемоглобина с поправкой на метгемоглобин, а также качественное подтверждение по деталям спектра, восстановлению дитионитом и первой производной спектра [siek1984].\n• Газовая хроматография. Высвобождение и измерение CO требуется для выявления воздействия низкого уровня и для посмертных образцов, в которых гниение или нагрев изменили состав гемоглобина [widdop2002]. Детекторы: капиллярная ГХ с микродетектором по теплопроводности [vandam1994]; каталитическое превращение CO в метан с ПИД (железо определяют атомно-абсорбционной спектрофотометрией) [kristoffersen2023]; автоматизированная ГХ/МС по газовой фазе [oritani2000, hao2013]. Добавление дитионита натрия восстанавливает метгемоглобин до гемоглобина и устраняет связанную с ним ошибку [lewis2004].\n• Контроль качества. Используют калибровку и контрольные образцы с известным уровнем; пригодность метода для назначения показывают валидацией [asb036_2019, peters2007]. Оценивают рабочий диапазон, линейность, правильность и прецизионность [ich_q2r2_2023]. При сравнении методов применяли анализ Бланда–Алтмана и межлабораторные испытания квалификации; правильность отчитывали как смещение, прецизионность — как относительное стандартное отклонение [kristoffersen2023]. Надёжный аналитический результат — условие интерпретации [peters2007].",
+      "en": "• CO-oximetry (multiwavelength spectrophotometry). Automated devices estimate total haemoglobin, oxyhaemoglobin and carboxyhaemoglobin fractions simultaneously and are recommended for most clinical purposes [widdop2002]. In postmortem whole blood, CO-oximetry measuring at 128 wavelengths was applied to a small sample aliquot and compared with a gas chromatographic method [kristoffersen2023].\n• Classical spectrophotometric methods. Simple methods based on differential protein precipitation or sodium dithionite reduction are prone to interference from other haemoglobin pigments and imprecise at low levels [widdop2002]. Absorbance-difference measurement at isosbestic points for oxy-, carboxy- and reduced haemoglobin with a methaemoglobin correction is described, as is qualitative confirmation by spectral detail, dithionite reduction and first-derivative spectra [siek1984].\n• Gas chromatography. Releasing and measuring CO is required for low-level exposure and for postmortem samples in which putrefaction or heat stress has changed haemoglobin composition [widdop2002]. Detectors include capillary GC with a micro thermal conductivity detector [vandam1994]; catalytic reduction of CO to methane with FID (iron determined by atomic absorption spectrophotometry) [kristoffersen2023]; and automated headspace GC/MS [oritani2000, hao2013]. Adding sodium dithionite in GC methods reduces methaemoglobin to haemoglobin and removes the resulting error [lewis2004].\n• Quality control. Calibration and controls at known levels are used, and fitness for the intended purpose is demonstrated by validation [asb036_2019, peters2007]. Working range, linearity, accuracy and precision are assessed [ich_q2r2_2023]. In method comparison, Bland-Altman analysis and interlaboratory proficiency testing were used, with accuracy reported as bias and precision as relative standard deviation [kristoffersen2023]. A reliable analytical result is the precondition for interpretation [peters2007]."
+     },
+     "citations": [
+      "widdop2002",
+      "kristoffersen2023",
+      "siek1984",
+      "vandam1994",
+      "oritani2000",
+      "hao2013",
+      "lewis2004",
+      "asb036_2019",
+      "peters2007",
+      "ich_q2r2_2023"
+     ]
+    },
+    {
+     "key": "advantages",
+     "title": {
+      "uz": "Usullarning imkoniyatlari va taqqoslanishi",
+      "ru": "Возможности методов и их сравнение",
+      "en": "Method capabilities and comparison"
+     },
+     "body": {
+      "uz": "Uch yondashuvni qisqa taqqoslash:\n• CO-oksimetriya (ko‘p to‘lqinli): tez, kichik hajm, bir o‘lchovda bir necha gemoglobin ulushi; ko‘pchilik klinik maqsadlar uchun tavsiya etilgan [widdop2002]; ammo past to‘yinish sohasida va boshqa gemoglobin pigmentlari bo‘lganda xato ehtimoli bor — taqqoslash ishida past oraliqdagi bitta namuna noto‘g‘ri manfiy bo‘lgan va yuqori to‘yinishli ayrim namunalar sezilarli farq bergan [kristoffersen2023].\n• Klassik spektrofotometrik usullar (oqsil cho‘ktirish farqi, ditionit bilan qaytarish): sodda va arzon, lekin xalaqitga beriluvchan, past darajalarda pretsizligi past [widdop2002]; izosbestik nuqtalarda yutilish farqi va methemoglobin tuzatishi bilan aniqlik oshadi, biroq denaturlangan yoki avtolizga uchragan qonda aniqlik pasayadi — identifikatsiya esa saqlanadi [siek1984].\n• Gaz xromatografiyasi (CO ni ajratib olib o‘lchash): past darajadagi ta’sirlanish va o‘lim keyingi o‘zgargan material uchun zarur [widdop2002]; chirigan va termik koagulyatsiyaga uchragan namunalarda ishlagan [oritani2000, hao2013]; CO-oksimetriya bilan butun o‘lchov oralig‘ida qoniqarli mos kelgan [kristoffersen2023]; ammo %COHb ni to‘yintirilgan/to‘yintirilmagan qon nisbatidan hisoblash methemoglobin bo‘lganda xato beradi, shuning uchun ditionit qo‘shiladi [lewis2004].\n\n• CO-oksimetriya tez, kichik hajmdagi qonda bajariladi va bir o‘lchovda bir necha gemoglobin ulushini beradi [widdop2002, kristoffersen2023].\n• Gaz-xromatografik usullar chirigan, termik ta’sirga uchragan va ifloslangan material uchun ham qo‘llangan: avtomatlashtirilgan flakon usti GX/MS qon va suyak ko‘migi aspiratida ishlagan va CO-oksimetr natijalarini tasdiqlagan [oritani2000]; chirigan o‘lim keyingi qonda GX/MS chiziqli javob va yaxshi takrorlanuvchanlik ko‘rsatgan [hao2013].\n• Kapillyar GX va mikro issiqlik o‘tkazuvchanlik detektori yuqori ajratish qobiliyati va qisqa tahlil vaqtini beradi; kislota bilan CO ni ajratish bosqichma-bosqich va takrorlanuvchan bo‘lgan [vandam1994].\n• Oddiy qon mavjud bo‘lmaganda GX/MS bilan CO va alangali atom-absorbsion spektrofotometriya bilan temirni bitta ulushda o‘lchash orqali karboksi-gem to‘yinishini hisoblash mumkin [middleberg1993].\n• Muzlatgichda saqlangan, konservant bilan yoki konservantsiz vakutayner probirkalardagi o‘lim keyingi qonda COHb uzoq saqlash davomida barqaror topilgan [kunsman2000].",
+      "ru": "Краткое сравнение трёх подходов:\n• CO-оксиметрия (многоволновая): быстра, малый объём, несколько фракций гемоглобина за одно измерение; рекомендована для большинства клинических задач [widdop2002]; однако в области низкого насыщения и при наличии других производных гемоглобина возможна ошибка — в сравнительном исследовании один образец в нижней области дал ложноотрицательный результат, а отдельные образцы с высоким насыщением различались заметно [kristoffersen2023].\n• Классические спектрофотометрические методы (разное осаждение белка, восстановление дитионитом): просты и дешевы, но подвержены помехам и неточны при низких значениях [widdop2002]; разность поглощения в изосбестических точках с поправкой на метгемоглобин повышает точность, однако в денатурированной или автолизированной крови точность снижается, тогда как идентификация сохраняется [siek1984].\n• Газовая хроматография (высвобождение и измерение CO): необходима при низком уровне воздействия и при посмертно изменённом материале [widdop2002]; работала с гнилостными и термически коагулированными образцами [oritani2000, hao2013]; удовлетворительно совпадала с CO-оксиметрией во всём диапазоне измерений [kristoffersen2023]; но расчёт %COHb по отношению насыщенной и ненасыщенной крови даёт ошибку при метгемоглобине, поэтому добавляют дитионит [lewis2004].\n\n• CO-оксиметрия быстра, выполняется в малом объёме крови и даёт несколько фракций гемоглобина за одно измерение [widdop2002, kristoffersen2023].\n• Газохроматографические методы применимы и к гнилостному, термически изменённому и загрязнённому материалу: автоматизированная ГХ/МС по газовой фазе работала с кровью и аспиратом костного мозга, подтверждая результаты CO-оксиметра [oritani2000]; в гнилостной посмертной крови ГХ/МС показала линейный отклик и хорошую воспроизводимость [hao2013].\n• Капиллярная ГХ с микродетектором по теплопроводности даёт высокое разрешение и короткое время анализа; высвобождение CO кислотой было постепенным и воспроизводимым [vandam1994].\n• При отсутствии обычной крови насыщение карбокси-гемом можно рассчитать, измеряя CO методом ГХ/МС и железо пламенной атомно-абсорбционной спектрофотометрией в одной и той же аликвоте [middleberg1993].\n• В посмертной крови в вакутайнерных пробирках с консервантом и без него при хранении в холодильнике COHb оказался устойчивым в течение длительного срока [kunsman2000].",
+      "en": "A short comparison of the three approaches:\n• CO-oximetry (multiwavelength): fast, small volume, several haemoglobin fractions in one measurement, recommended for most clinical purposes [widdop2002]; but error is possible in the low saturation range and in the presence of other haemoglobin pigments — in a comparison study one sample in the lower range was false negative and individual samples at high saturation deviated markedly [kristoffersen2023].\n• Classical spectrophotometric methods (differential protein precipitation, dithionite reduction): simple and inexpensive, but prone to interference and imprecise at low levels [widdop2002]; absorbance differences at isosbestic points with a methaemoglobin correction improve accuracy, yet accuracy is diminished in denatured or autolysed blood while identification remains reliable [siek1984].\n• Gas chromatography (release and measurement of CO): required for low-level exposure and for postmortem-altered material [widdop2002]; it has worked with putrefied and thermocoagulated samples [oritani2000, hao2013] and agreed satisfactorily with CO-oximetry over the whole measured range [kristoffersen2023]; but computing %COHb from the ratio of saturated to unsaturated blood errs when methaemoglobin is present, hence the addition of dithionite [lewis2004].\n\n• CO-oximetry is fast, works on a small blood volume and yields several haemoglobin fractions in one measurement [widdop2002, kristoffersen2023].\n• Gas chromatographic methods have also been applied to putrefied, heat-affected and contaminated material: automated headspace GC/MS worked with blood and bone-marrow aspirates and confirmed CO-oximeter findings [oritani2000]; in putrid postmortem blood GC/MS showed a linear response and good reproducibility [hao2013].\n• Capillary GC with a micro thermal conductivity detector offers high resolution and a short analysis time, and CO release with acid was gradual and reproducible [vandam1994].\n• When ordinary blood is unavailable, carboxy-haem saturation can be calculated by measuring CO by GC/MS and iron by flame atomic absorption spectrophotometry in the same aliquot [middleberg1993].\n• In postmortem blood collected in vacutainer tubes with or without preservative and kept refrigerated, COHb was found to be stable over long-term storage [kunsman2000]."
+     },
+     "citations": [
+      "widdop2002",
+      "kristoffersen2023",
+      "oritani2000",
+      "hao2013",
+      "vandam1994",
+      "middleberg1993",
+      "kunsman2000",
+      "siek1984",
+      "lewis2004"
+     ]
+    },
+    {
+     "key": "limitations",
+     "title": {
+      "uz": "Cheklovlar",
+      "ru": "Ограничения",
+      "en": "Limitations"
+     },
+     "body": {
+      "uz": "• Optik usullar boshqa gemoglobin pigmentlariga sezgir: o‘lim keyingi qon tahlili ko‘pincha methemoglobin va sulfgemoglobin kabi pigmentlar hisobiga siljiydi [siek1984]; oddiy spektrofotometrik usullar xalaqitga beriluvchan va past darajalarda pretsizligi past [widdop2002].\n• Issiqlik ta’sirida gemoglobin shakllari turlicha o‘zgaradi va cho‘kadi; qizdirilgan namunada yutilish spektri buziladi, ikki to‘lqinli spektrofotometriya noto‘g‘ri %COHb beradi va %COHb sun’iy oshishi kuzatiladi; qizdirishda o‘z-o‘zidan CO ham hosil bo‘ladi [seto2001].\n• O‘lim keyingi hollarda spektrofotometrik COHb natijasi namuna yoki tahlil nomuvofiq bo‘lganda noto‘g‘ri bo‘lishi mumkin [varlet2013].\n• Methemoglobin CO ni bog‘lamaydi; %COHb ni to‘yintirilmagan va CO bilan to‘yintirilgan qon nisbatidan hisoblaydigan GX usullari bunda haqiqatdan yuqori natija beradi [lewis2004].\n• Usullar taqqoslanganda umumiy moslik qoniqarli bo‘lgani holda, yuqori to‘yinishli ayrim namunalar sezilarli farq bergan va past oraliqdagi bitta namuna CO-oksimetriyada noto‘g‘ri manfiy bo‘lgan [kristoffersen2023].\n• Namuna olish, tashish va saqlash davomida qonning optik holati o‘zgarishi va parchalanishi spektrofotometrik tahlilga kuchli ta’sir qiladi [oliverio2019].",
+      "ru": "• Оптические методы чувствительны к другим производным гемоглобина: анализ посмертной крови часто смещён из-за метгемоглобина и сульфгемоглобина [siek1984]; простые спектрофотометрические методы подвержены помехам и неточны при низких значениях [widdop2002].\n• При нагреве формы гемоглобина изменяются и осаждаются по-разному; спектр поглощения нагретого образца искажается, двухволновая спектрофотометрия даёт неверный %COHb, наблюдается искусственное повышение %COHb, а при нагреве образуется и спонтанный CO [seto2001].\n• В посмертных случаях спектрофотометрический результат COHb может быть неверным при неподходящем образце или анализе [varlet2013].\n• Метгемоглобин не связывает CO; методы ГХ, рассчитывающие %COHb по отношению ненасыщенной и насыщенной CO крови, дают при этом завышенный результат [lewis2004].\n• При сравнении методов общее согласие было удовлетворительным, однако отдельные образцы с высоким насыщением различались заметно, а один образец в нижней области дал ложноотрицательный результат на CO-оксиметрии [kristoffersen2023].\n• Изменение оптического состояния и деградация крови при отборе, транспортировке и хранении сильно влияют на спектрофотометрический анализ [oliverio2019].",
+      "en": "• Optical methods are sensitive to other haemoglobin pigments: analysis of postmortem blood is often biased by pigments such as methaemoglobin and sulfhaemoglobin [siek1984], and simple spectrophotometric methods are prone to interference and imprecise at low levels [widdop2002].\n• On heating, haemoglobin forms differ in heat susceptibility and precipitability; absorbance spectra of heated samples deteriorate, double-wavelength spectrophotometry gives a wrong %COHb, an artificial increase of %COHb occurs, and CO is also produced spontaneously during heating [seto2001].\n• In postmortem cases the spectrophotometric COHb result may be inaccurate when the sample or the analysis is inadequate [varlet2013].\n• Methaemoglobin does not bind CO, so GC methods that compute %COHb from the ratio of unsaturated to CO-saturated blood give erroneously high values [lewis2004].\n• In a method comparison the overall agreement was satisfactory, yet individual samples at high saturation deviated markedly and one sample in the lower range was false negative by CO-oximetry [kristoffersen2023].\n• Changes in the optical state and degradation of blood during sampling, transport and storage strongly affect spectrophotometric analysis [oliverio2019]."
+     },
+     "citations": [
+      "siek1984",
+      "widdop2002",
+      "seto2001",
+      "varlet2013",
+      "lewis2004",
+      "kristoffersen2023",
+      "oliverio2019"
+     ]
+    },
+    {
+     "key": "factors",
+     "title": {
+      "uz": "Namuna va natijaga ta’sir qiluvchi omillar",
+      "ru": "Образец и факторы, влияющие на результат",
+      "en": "Specimen and factors affecting the result"
+     },
+     "body": {
+      "uz": "• Namuna turi va olinishi. Tahlil uchun antikoagulyant (yoki konservant) solingan probirkadagi qon olinadi; sud-toksikologik namunalarni olish, miqdori, konservantlari va saqlash sharoitlari bo‘yicha alohida tavsiyalar mavjud [asb_bpr156_2023]. Probirka to‘liq to‘ldirilib, ustidagi gaz fazasi (headspace) iloji boricha kichik qoldiriladi, germetik yopiladi va muzlatgichda saqlanadi: saqlash harorati, konservant, vaqt, probirka ustidagi gaz hajmi, boshlang‘ich to‘yinish darajasi, muzlatish–eritish va qayta ochish siklari COHb natijasiga ta’sir qiluvchi omillar sifatida o‘rganilgan [oliverio2019]. Sovutilgan vakutayner probirkalarda COHb barqaror topilgan [kunsman2000].\n• O‘lim keyingi o‘zgarishlar. Chirish va issiqlik ta’siri gemoglobin tarkibini o‘zgartiradi; bunday namunalarda gaz-xromatografik usul talab qilinadi [widdop2002]. Termik koagulyatsiyaga uchragan va chirigan materialda flakon usti GX/MS qo‘llangan [oritani2000, hao2013]. Qizdirish %COHb ni sun’iy oshirishi mumkin [seto2001].\n• Tashqi ko‘rinish. Murdada «gilos-qizil» rang CO bilan bir qatorda gipotermiya va sianid bilan zaharlanishda ham tasvirlangan, ya’ni u o‘ziga xos belgi emas va laboratoriya o‘lchovini almashtirmaydi [cohen2025].\n• Fiziologik va ta’sirlanish omillari. CO tamaki ta’sirining o‘ziga xos bo‘lmagan ko‘rsatkichi; nafasdagi CO qondagi COHb bilan chambarchas bog‘liq, ammo eliminatsiya jinsi, ventilyatsiya, jismoniy yuklama va kun vaqtiga qarab o‘zgaradi, bir qancha chekmaslik holatlari esa CO ni oshiradi [underner2010]. Kislorod yuborilganda COHb pasayishi bir emas, ikki kamerali model bilan tavsiflangan va kislorod to‘xtatilgandan keyin kichik qayta ko‘tarilish qayd etilgan [delvau2024].",
+      "ru": "• Вид образца и его отбор. Для анализа берут кровь в пробирку с антикоагулянтом (или консервантом); для судебно-токсикологических образцов существуют отдельные рекомендации по отбору, количеству, консервантам и условиям хранения [asb_bpr156_2023]. Пробирку заполняют полностью, оставляя минимальный объём газовой фазы, герметично закрывают и хранят в холодильнике: температура хранения, консервант, время, объём газа над кровью, исходное насыщение, циклы замораживания-оттаивания и повторного открывания изучены как факторы, влияющие на результат COHb [oliverio2019]. В охлаждённых вакутайнерных пробирках COHb оказался устойчивым [kunsman2000].\n• Посмертные изменения. Гниение и нагрев меняют состав гемоглобина; для таких образцов требуется газохроматографический метод [widdop2002]. Для термически коагулированного и гнилостного материала применялась ГХ/МС по газовой фазе [oritani2000, hao2013]. Нагрев может искусственно повышать %COHb [seto2001].\n• Внешний вид. «Вишнёво-красная» окраска трупных пятен описана не только при CO, но и при гипотермии и отравлении цианидом, то есть неспецифична и не заменяет лабораторного измерения [cohen2025].\n• Физиологические факторы и условия воздействия. CO — неспецифический маркер воздействия табака; выдыхаемый CO тесно связан с COHb крови, но элиминация зависит от пола, вентиляции, физической нагрузки и времени суток, а ряд некурительных состояний повышает CO [underner2010]. При подаче кислорода снижение COHb описано двухкамерной, а не однокамерной моделью, а после прекращения кислорода отмечен небольшой подъём [delvau2024].",
+      "en": "• Specimen type and collection. Blood is collected into a tube with an anticoagulant (or preservative); separate recommendations exist for the collection, amounts, preservatives and storage conditions of forensic toxicology specimens [asb_bpr156_2023]. The tube is filled, leaving minimal headspace, sealed and refrigerated: storage temperature, preservative, time, tube headspace volume, initial saturation and freeze-thaw and reopening cycles have been studied as factors affecting the COHb result [oliverio2019]. In refrigerated vacutainer tubes COHb was found to be stable [kunsman2000].\n• Postmortem changes. Putrefaction and heat alter haemoglobin composition, and such samples call for a gas chromatographic method [widdop2002]. Headspace GC/MS has been applied to thermocoagulated and putrefied material [oritani2000, hao2013]. Heating can artificially raise %COHb [seto2001].\n• Appearance. Cherry-red or pink lividity is described with carbon monoxide but also with hypothermia and cyanide poisoning, so it is not specific and does not replace laboratory measurement [cohen2025].\n• Physiological and exposure factors. CO is a non-specific marker of tobacco exposure; exhaled CO correlates closely with blood COHb, but elimination varies with sex, ventilation, exercise and time of day, and several non-smoking conditions raise CO [underner2010]. Under oxygen administration the decline of COHb was described by a bi-compartmental rather than a mono-compartmental model, with a slight rebound after oxygen was stopped [delvau2024]."
+     },
+     "citations": [
+      "asb_bpr156_2023",
+      "oliverio2019",
+      "kunsman2000",
+      "widdop2002",
+      "oritani2000",
+      "hao2013",
+      "seto2001",
+      "cohen2025",
+      "underner2010",
+      "delvau2024"
+     ]
+    },
+    {
+     "key": "cautions",
+     "title": {
+      "uz": "Talqin: COHb natijasining chegaralari",
+      "ru": "Интерпретация: границы результата COHb",
+      "en": "Interpretation: the limits of a COHb result"
+     },
+     "body": {
+      "uz": "%COHb raqamining o‘zi zaharlanish darajasini yoki o‘lim sababini qat’iy belgilamaydi. O‘lim keyingi toksikologiyaning umumiy qoidasi shundaki, konsentratsiya alohida holda talqin qilinmaydi [drummer2004]; «o‘ldiruvchi konsentratsiya» ro‘yxatlari va jadvallari chalg‘ituvchi deb baholangan [ferner2008, kennedy2010], va natija antemortem anamnez va boshqa ma’lumotlar bilan birgalikda ko‘riladi [kennedy2010]. O‘lim keyingi o‘zgarishlar klinik farmakokinetika taxminlarini bekor qiladi [ferner2008], preanalitik bosqich va namuna sifati esa natijaning ma’nosini belgilaydi [skopp2004].\n\nTalqinda kamida quyidagilar birgalikda baholanadi: namunaning holati (o‘lim keyingi o‘zgarishlar, chirish, issiqlik/kuyish, saqlash sharoiti va probirka ustidagi gaz fazasi) [oliverio2019, seto2001, widdop2002]; ishlatilgan laboratoriya usuli va uning xalaqitlari (o‘lim keyingi yoki gemolizlangan qonda CO-oksimetriya, boshqa gemoglobin shakllari) [kristoffersen2023, siek1984, lewis2004, varlet2013]; ta’sirlanishdan o‘tgan vaqt va kislorod berilgani [delvau2024]; chekish va CO ning boshqa manbalari [underner2010]; autopsiya topilmalari, voqea joyi va anamnez kabi boshqa dalillar [kennedy2010, cohen2025]. Xulosani faqat malakali ekspert chiqaradi; kartochka toksik yoki o‘ldiruvchi darajalarni va og‘irlik jadvallarini keltirmaydi.\n\n• COHb natijasi o‘z-o‘zidan xulosa emas. Uni voqea holatlari, chekish odati va boshqa CO manbalari [underner2010], ta’sirlanishdan keyin o‘tgan vaqt va kislorod berilgani [delvau2024], namunaning holati va saqlanishi [oliverio2019, seto2001] bilan birgalikda, faqat malakali ekspert baholaydi. Kartochka toksik yoki o‘ldiruvchi darajalarni keltirmaydi.\n• Analitik natijani bitta usul bilan cheklamang: spektrofotometrik natijani boshqa analitik tamoyilga asoslangan ikkinchi usul bilan tasdiqlash muhim deb hisoblangan [lewis2004].\n• Nomuvofiq namuna yoki buzilgan optik holat natijani noto‘g‘ri qilib, CO ning rolini xato tasniflashga olib kelishi mumkin [varlet2013].\n• Klinik sharoitda puls-oksimetr ko‘rsatkichi COHb o‘rnini bosmaydi [bozeman1997].\n• Murdadagi rang va boshqa tashqi belgilar o‘ziga xos emas [cohen2025].\n• Ishonchli talqin uchun avval analitik ishonchlilik kerak: usul validatsiyasi va sifat nazorati hisobotning ajralmas qismi [peters2007, asb036_2019].",
+      "ru": "Само значение %COHb не определяет однозначно ни степень отравления, ни причину смерти. Общее правило посмертной токсикологии: концентрацию не интерпретируют изолированно [drummer2004]; перечни и таблицы «смертельных концентраций» признаны вводящими в заблуждение [ferner2008, kennedy2010], а результат рассматривают вместе с антемортальным анамнезом и другими данными [kennedy2010]. Посмертные изменения лишают силы допущения клинической фармакокинетики [ferner2008], а преаналитический этап и качество образца определяют смысл результата [skopp2004].\n\nПри интерпретации совместно оценивают как минимум: состояние образца (посмертные изменения, гниение, нагрев/ожоги, условия хранения и объём газовой фазы в пробирке) [oliverio2019, seto2001, widdop2002]; использованный лабораторный метод и его помехи (CO-оксиметрия в посмертной или гемолизированной крови, другие производные гемоглобина) [kristoffersen2023, siek1984, lewis2004, varlet2013]; время после воздействия и кислородную терапию [delvau2024]; курение и другие источники CO [underner2010]; иные доказательства — данные вскрытия, места происшествия и анамнеза [kennedy2010, cohen2025]. Вывод делает только квалифицированный эксперт; карточка не приводит токсических или смертельных уровней и таблиц тяжести.\n\n• Результат COHb сам по себе не является выводом. Его оценивает только квалифицированный эксперт вместе с обстоятельствами происшествия, курением и другими источниками CO [underner2010], временем после воздействия и кислородной терапией [delvau2024], состоянием и хранением образца [oliverio2019, seto2001]. Карточка не приводит токсических или смертельных уровней.\n• Не ограничивайтесь одним методом: подтверждение спектрофотометрического результата вторым методом с иным аналитическим принципом считается важным [lewis2004].\n• Неподходящий образец или нарушенное оптическое состояние могут сделать результат неверным и привести к ошибочной оценке роли CO [varlet2013].\n• В клинических условиях показания пульсоксиметра не заменяют COHb [bozeman1997].\n• Окраска трупных пятен и другие внешние признаки неспецифичны [cohen2025].\n• Надёжная интерпретация требует прежде аналитической надёжности: валидация метода и контроль качества — неотъемлемая часть отчёта [peters2007, asb036_2019].",
+      "en": "A %COHb figure on its own never firmly establishes the severity of poisoning or the cause of death. A general rule of postmortem toxicology is that a concentration is not interpreted in isolation [drummer2004]; compilations and tables of \"lethal concentrations\" are regarded as misleading [ferner2008, kennedy2010], and a result is considered together with the antemortem history and other information [kennedy2010]. Postmortem changes invalidate clinical pharmacokinetic assumptions [ferner2008], and the preanalytic phase and specimen quality govern what a result means [skopp2004].\n\nInterpretation weighs at least the following together: the condition of the specimen (postmortem changes, putrefaction, heat or burns, storage conditions and tube headspace) [oliverio2019, seto2001, widdop2002]; the laboratory method used and its interferences (CO-oximetry in postmortem or haemolysed blood, other haemoglobin species) [kristoffersen2023, siek1984, lewis2004, varlet2013]; the time since exposure and oxygen administration [delvau2024]; smoking and other sources of CO [underner2010]; and other evidence such as autopsy, scene and history [kennedy2010, cohen2025]. Only a qualified expert draws the conclusion; the card gives no toxic or lethal levels and no severity tables.\n\n• A COHb result is not a conclusion in itself. Only a qualified expert evaluates it together with the circumstances of the event, smoking and other CO sources [underner2010], the time since exposure and oxygen administration [delvau2024], and the condition and storage of the specimen [oliverio2019, seto2001]. The card gives no toxic or lethal levels.\n• Do not rely on a single method: confirming a spectrophotometric result with a second technique based on a different analytical principle is considered essential [lewis2004].\n• An inadequate sample or an altered optical state can make the result inaccurate and lead to misclassification of the role of CO [varlet2013].\n• In the clinical setting a pulse oximeter reading does not replace a COHb measurement [bozeman1997].\n• The colour of lividity and other external signs are not specific [cohen2025].\n• Reliable interpretation presupposes analytical reliability: method validation and quality control are an integral part of the report [peters2007, asb036_2019]."
+     },
+     "citations": [
+      "underner2010",
+      "delvau2024",
+      "oliverio2019",
+      "seto2001",
+      "lewis2004",
+      "varlet2013",
+      "bozeman1997",
+      "cohen2025",
+      "peters2007",
+      "asb036_2019",
+      "drummer2004",
+      "ferner2008",
+      "kennedy2010",
+      "skopp2004",
+      "widdop2002",
+      "kristoffersen2023",
+      "siek1984"
+     ]
+    },
+    {
+     "key": "alternatives",
+     "title": {
+      "uz": "Tasdiqlash va boshqa yondashuvlar",
+      "ru": "Подтверждение и другие подходы",
+      "en": "Confirmation and other approaches"
+     },
+     "body": {
+      "uz": "• Tasdiqlovchi (referens) usul sifatida CO ni ajratib olib gaz xromatografiyasida o‘lchash ishlatiladi; spektrofotometrik natijani boshqa tamoyilga asoslangan GX usuli bilan solishtirish tavsiya etilgan [lewis2004, widdop2002]. O‘lim keyingi to‘liq qonda CO-oksimetriya va flakon usti GX-FID (temir — atom-absorbsion spektrofotometriya) natijalari butun o‘lchov oralig‘ida qoniqarli mos kelgan [kristoffersen2023].\n• Qondagi umumiy CO (gemoglobin bilan bog‘langan va ajralgan CO yig‘indisi) ni flakon usti GX-MS bilan o‘lchash alohida yondashuv sifatida taklif qilingan; undan COHb ni hisoblash mumkin [varlet2013]. Saqlash sharoiti nooptimal bo‘lganda umumiy CO COHb ga qaraganda barqarorroq topilgan [oliverio2019].\n• Oddiy qon bo‘lmagan hollarda boshqa material: suyak ko‘migi aspirati [oritani2000], taloq, jigar, mushak, qurib qolgan qon va parchalangan to‘qima [middleberg1993].\n• Namunalar va usullar tanlovi, skrining va tasdiqlovchi tahlil farqi hamda validatsiya talablari alohida kartochkalarda ko‘rib chiqilgan [peters2007, asb036_2019, asb_bpr156_2023].",
+      "ru": "• В качестве подтверждающего (референсного) метода используют высвобождение CO с измерением газовой хроматографией; сопоставление спектрофотометрического результата с методом ГХ, основанным на ином принципе, рекомендовано [lewis2004, widdop2002]. В посмертной цельной крови результаты CO-оксиметрии и ГХ-ПИД по газовой фазе (железо — атомно-абсорбционная спектрофотометрия) удовлетворительно совпадали во всём диапазоне измерений [kristoffersen2023].\n• Отдельным подходом предложено измерение общего CO крови (связанного с гемоглобином и высвобожденного) методом ГХ-МС по газовой фазе, из которого можно рассчитать COHb [varlet2013]. При неоптимальных условиях хранения общий CO оказался устойчивее COHb [oliverio2019].\n• При отсутствии обычной крови используют другой материал: аспират костного мозга [oritani2000], селезёнку, печень, мышцу, высохшую кровь и разложившуюся ткань [middleberg1993].\n• Выбор образцов и методов, различие скрининга и подтверждающего анализа и требования валидации рассмотрены в отдельных карточках [peters2007, asb036_2019, asb_bpr156_2023].",
+      "en": "• Releasing CO and measuring it by gas chromatography serves as the confirmatory (reference) approach, and comparing a spectrophotometric result with a GC method based on a different principle is recommended [lewis2004, widdop2002]. In postmortem whole blood, CO-oximetry and headspace GC-FID (with iron by atomic absorption spectrophotometry) agreed satisfactorily over the whole measured range [kristoffersen2023].\n• Measuring total blood CO (haemoglobin-bound plus dissociated) by headspace GC-MS has been proposed as a separate approach, from which COHb can be estimated [varlet2013]. Under non-optimal storage, total CO proved more stable than COHb [oliverio2019].\n• When ordinary blood is unavailable, other material is used: bone-marrow aspirate [oritani2000]; spleen, liver, muscle, dried blood and decomposed tissue [middleberg1993].\n• The choice of specimens and methods, the difference between screening and confirmatory analysis and validation requirements are covered in separate cards [peters2007, asb036_2019, asb_bpr156_2023]."
+     },
+     "citations": [
+      "lewis2004",
+      "widdop2002",
+      "kristoffersen2023",
+      "varlet2013",
+      "oliverio2019",
+      "oritani2000",
+      "middleberg1993",
+      "peters2007",
+      "asb036_2019",
+      "asb_bpr156_2023"
+     ]
+    }
+   ],
+   "keywords": {
+    "uz": [
+     "karboksigemoglobin",
+     "COHb",
+     "uglerod (II) oksidi",
+     "CO",
+     "is gazi",
+     "CO-oksimetriya",
+     "ko‘p to‘lqinli spektrofotometriya",
+     "spektrofotometriya",
+     "natriy ditionit",
+     "izosbestik nuqta",
+     "methemoglobin",
+     "sulfgemoglobin",
+     "gaz xromatografiyasi",
+     "flakon usti tahlili",
+     "headspace",
+     "issiqlik o‘tkazuvchanlik detektori",
+     "metanlashtirgich",
+     "GX-MS",
+     "kalibrlash",
+     "nazorat namunasi",
+     "o‘lchov noaniqligi",
+     "usullarni taqqoslash",
+     "namuna saqlash",
+     "chirish",
+     "sud-kimyo",
+     "sud-toksikologiya"
+    ],
+    "ru": [
+     "карбоксигемоглобин",
+     "COHb",
+     "оксид углерода (II)",
+     "монооксид углерода",
+     "CO-оксиметрия",
+     "многоволновая спектрофотометрия",
+     "спектрофотометрия",
+     "дитионит натрия",
+     "изосбестическая точка",
+     "метгемоглобин",
+     "сульфгемоглобин",
+     "газовая хроматография",
+     "анализ газовой фазы",
+     "хедспейс",
+     "детектор по теплопроводности",
+     "метанизатор",
+     "ГХ-МС",
+     "калибровка",
+     "контрольный образец",
+     "неопределённость измерения",
+     "сравнение методов",
+     "хранение образцов",
+     "гниение",
+     "судебная химия",
+     "судебная токсикология"
+    ],
+    "en": [
+     "carboxyhaemoglobin",
+     "carboxyhemoglobin",
+     "COHb",
+     "carbon monoxide",
+     "CO",
+     "CO-oximetry",
+     "multiwavelength spectrophotometry",
+     "spectrophotometry",
+     "sodium dithionite",
+     "isosbestic point",
+     "methaemoglobin",
+     "sulfhaemoglobin",
+     "gas chromatography",
+     "headspace",
+     "thermal conductivity detector",
+     "methaniser",
+     "GC-MS",
+     "calibration",
+     "controls",
+     "measurement uncertainty",
+     "method comparison",
+     "sample storage",
+     "putrefaction",
+     "forensic chemistry",
+     "forensic toxicology"
+    ]
+   },
+   "reference_keys": [
+    "widdop2002",
+    "siek1984",
+    "vandam1994",
+    "oritani2000",
+    "bozeman1997",
+    "kristoffersen2023",
+    "middleberg1993",
+    "hao2013",
+    "lewis2004",
+    "asb036_2019",
+    "peters2007",
+    "ich_q2r2_2023",
+    "kunsman2000",
+    "seto2001",
+    "varlet2013",
+    "oliverio2019",
+    "asb_bpr156_2023",
+    "cohen2025",
+    "underner2010",
+    "delvau2024",
+    "drummer2004",
+    "ferner2008",
+    "kennedy2010",
+    "skopp2004"
+   ]
   }
  ],
  "references": [
@@ -6292,6 +6626,352 @@
    "used_for": "Specimen collection for forensic chemical examination as summarised in lecture 14: separate clean dry glass jars (no metal or ceramic containers), organs not washed, preservation with ethanol only in specified cases with a sample of the preservative sent along, part of the material kept for re-examination.",
    "rights": "muallif ruxsati bilan, 2026-10-09; barcha uchun bepul (egasi qarori, 2026-10-09)",
    "verified_via": "Owner-supplied PDF copy; title page (pp. 1-3) and contents read directly",
+   "verified_on": "2026-10-09"
+  },
+  {
+   "key": "kristoffersen2023",
+   "type": "journal_article",
+   "authors": [
+    "Kristoffersen L",
+    "Vevelstad M",
+    "Hansen IA",
+    "Strømsvåg B",
+    "Strand DH"
+   ],
+   "title": "Comparative Evaluation of Carboxyhemoglobin Quantification in Postmortem Whole Blood by CO-Oximetry and Headspace Gas Chromatography with Flame Ionization Detection and Atom Absorption Spectrophotometry",
+   "journal": "Journal of Analytical Toxicology",
+   "year": 2023,
+   "volume": "47",
+   "issue": "3",
+   "pages": "311-316",
+   "doi": "10.1093/jat/bkac099",
+   "pmid": "36495201",
+   "note": "Abstract-level verification only; full text not read.",
+   "used_for": "Method comparison of multiwavelength CO-oximetry and headspace GC-FID (CO reduced to methane) with iron by AAS in postmortem whole blood; Bland-Altman agreement over the measured range, individual deviating and one false-negative sample, between-assay bias and precision, satisfactory proficiency-test performance.",
+   "verified_via": "PubMed MCP get_article_metadata",
+   "verified_on": "2026-10-09"
+  },
+  {
+   "key": "widdop2002",
+   "type": "journal_article",
+   "authors": [
+    "Widdop B"
+   ],
+   "title": "Analysis of carbon monoxide",
+   "journal": "Annals of Clinical Biochemistry",
+   "year": 2002,
+   "volume": "39",
+   "issue": "Pt 4",
+   "pages": "378-391",
+   "doi": "10.1258/000456302760042146",
+   "pmid": "12117442",
+   "note": "Review; abstract-level verification only.",
+   "used_for": "Exposure assessed as blood carboxyhaemoglobin saturation; simple spectrophotometric methods based on differential protein precipitation or dithionite reduction are prone to interference from other haemoglobin pigments and imprecise at low levels; automated CO-oximeters recommended for most clinical purposes; GC methods needed for low-level exposure and for postmortem blood altered by putrefaction or heat stress.",
+   "verified_via": "PubMed MCP get_article_metadata",
+   "verified_on": "2026-10-09"
+  },
+  {
+   "key": "lewis2004",
+   "type": "journal_article",
+   "authors": [
+    "Lewis RJ",
+    "Johnson RD",
+    "Canfield DV"
+   ],
+   "title": "An accurate method for the determination of carboxyhemoglobin in postmortem blood using GC-TCD",
+   "journal": "Journal of Analytical Toxicology",
+   "year": 2004,
+   "volume": "28",
+   "issue": "1",
+   "pages": "59-62",
+   "doi": "10.1093/jat/28.1.59",
+   "pmid": "14987426",
+   "note": "Abstract-level verification only.",
+   "used_for": "Confirmation of a spectrophotometric result by a second technique based on a different analytical principle; methaemoglobin does not bind CO, so loss of CO-binding capacity biases GC methods that compute %COHb from the ratio of unsaturated to CO-saturated blood; adding sodium dithionite reduces methaemoglobin and removes the error.",
+   "verified_via": "PubMed MCP get_article_metadata",
+   "verified_on": "2026-10-09"
+  },
+  {
+   "key": "siek1984",
+   "type": "journal_article",
+   "authors": [
+    "Siek TJ",
+    "Rieders F"
+   ],
+   "title": "Determination of carboxyhemoglobin in the presence of other blood hemoglobin pigments by visible spectrophotometry",
+   "journal": "Journal of Forensic Sciences",
+   "year": 1984,
+   "volume": "29",
+   "issue": "1",
+   "pages": "39-54",
+   "doi": null,
+   "pmid": "6699606",
+   "note": "Abstract-level verification only; no DOI in PubMed record.",
+   "used_for": "Postmortem blood spectrophotometry biased by pigments other than oxy-, carboxy- and reduced haemoglobin (notably methaemoglobin and sulfhaemoglobin); absorbance-difference measurement at isosbestic points with a methaemoglobin correction; qualitative confirmation by spectral detail, dithionite reduction and first-derivative spectra; accuracy diminished in denatured/autolysed blood while identification remains reliable.",
+   "verified_via": "PubMed MCP get_article_metadata",
+   "verified_on": "2026-10-09"
+  },
+  {
+   "key": "seto2001",
+   "type": "journal_article",
+   "authors": [
+    "Seto Y",
+    "Kataoka M",
+    "Tsuge K"
+   ],
+   "title": "Stability of blood carbon monoxide and hemoglobins during heating",
+   "journal": "Forensic Science International",
+   "year": 2001,
+   "volume": "121",
+   "issue": "1-2",
+   "pages": "144-150",
+   "doi": "10.1016/s0379-0738(01)00465-0",
+   "pmid": "11516900",
+   "note": "Abstract-level verification only.",
+   "used_for": "Heated blood shows deteriorated absorbance spectra and double-wavelength spectrophotometry gives wrong %COHb; a fire-casualty sample gave a significantly higher spectrophotometric %COHb than headspace GC with thermal conductivity detection; different heat susceptibility and precipitability of haemoglobin forms causes artificial increase of %COHb; spontaneous CO produced during heating.",
+   "verified_via": "PubMed MCP get_article_metadata",
+   "verified_on": "2026-10-09"
+  },
+  {
+   "key": "oritani2000",
+   "type": "journal_article",
+   "authors": [
+    "Oritani S",
+    "Zhu BL",
+    "Ishida K",
+    "Shimotouge K",
+    "Quan L",
+    "Fujita MQ",
+    "Maeda H"
+   ],
+   "title": "Automated determination of carboxyhemoglobin contents in autopsy materials using head-space gas chromatography/mass spectrometry",
+   "journal": "Forensic Science International",
+   "year": 2000,
+   "volume": "113",
+   "issue": "1-3",
+   "pages": "375-379",
+   "doi": "10.1016/s0379-0738(00)00227-9",
+   "pmid": "10978651",
+   "note": "Abstract-level verification only.",
+   "used_for": "Automated headspace GC/MS for routine COHb in autopsy material including thermocoagulated, putrefied and contaminated specimens; CO released with potassium ferricyanide, internal standard, parallel CO-saturated aliquot for total haemoglobin; practical for blood and bone-marrow aspirates, confirming CO-oximeter findings.",
+   "verified_via": "PubMed MCP get_article_metadata",
+   "verified_on": "2026-10-09"
+  },
+  {
+   "key": "hao2013",
+   "type": "journal_article",
+   "authors": [
+    "Hao H",
+    "Zhou H",
+    "Liu X",
+    "Zhang Z",
+    "Yu Z"
+   ],
+   "title": "An accurate method for microanalysis of carbon monoxide in putrid postmortem blood by head-space gas chromatography-mass spectrometry (HS/GC/MS)",
+   "journal": "Forensic Science International",
+   "year": 2013,
+   "volume": "229",
+   "issue": "1-3",
+   "pages": "116-121",
+   "doi": "10.1016/j.forsciint.2013.03.052",
+   "pmid": "23683916",
+   "note": "Abstract-level verification only.",
+   "used_for": "Headspace GC/MS on a molecular-sieve column for COHb in putrid postmortem blood: linear relationship between CO peak area and COHb%, small sample volumes, good reproducibility; stated advantages over UV spectrometry.",
+   "verified_via": "PubMed MCP get_article_metadata",
+   "verified_on": "2026-10-09"
+  },
+  {
+   "key": "vandam1994",
+   "type": "journal_article",
+   "authors": [
+    "Van Dam J",
+    "Daenens P"
+   ],
+   "title": "Microanalysis of carbon monoxide in blood by head-space capillary gas chromatography",
+   "journal": "Journal of Forensic Sciences",
+   "year": 1994,
+   "volume": "39",
+   "issue": "2",
+   "pages": "473-478",
+   "doi": null,
+   "pmid": "8195758",
+   "note": "Abstract-level verification only; no DOI in PubMed record.",
+   "used_for": "Headspace capillary GC with a micro thermal conductivity detector for carboxyhaemoglobin: sensitivity and resolution, short analysis time, gradual and reproducible CO release when sulphuric acid is used as liberating agent.",
+   "verified_via": "PubMed MCP get_article_metadata",
+   "verified_on": "2026-10-09"
+  },
+  {
+   "key": "middleberg1993",
+   "type": "journal_article",
+   "authors": [
+    "Middleberg RA",
+    "Easterling DE",
+    "Zelonis SF",
+    "Rieders F",
+    "Rieders MF"
+   ],
+   "title": "Estimation of perimortal percent carboxy-heme in nonstandard postmortem specimens using analysis of carbon monoxide by GC/MS and iron by flame atomic absorption spectrophotometry",
+   "journal": "Journal of Analytical Toxicology",
+   "year": 1993,
+   "volume": "17",
+   "issue": "1",
+   "pages": "11-13",
+   "doi": "10.1093/jat/17.1.11",
+   "pmid": "8429619",
+   "note": "Abstract-level verification only.",
+   "used_for": "When normal blood is unavailable (decomposed, formalin-fixed, embalmed, exhumed, fire-dried specimens) usual COHb methods frequently fail; acid liberation of CO into a headspace vial with GC/MS quantitation by standard addition plus iron by flame AAS in the same aliquot, carboxy-heme saturation calculated from the CO/Fe ratio; tissues included spleen, liver, muscle, dried blood.",
+   "verified_via": "PubMed MCP get_article_metadata",
+   "verified_on": "2026-10-09"
+  },
+  {
+   "key": "kunsman2000",
+   "type": "journal_article",
+   "authors": [
+    "Kunsman GW",
+    "Presses CL",
+    "Rodriguez P"
+   ],
+   "title": "Carbon monoxide stability in stored postmortem blood samples",
+   "journal": "Journal of Analytical Toxicology",
+   "year": 2000,
+   "volume": "24",
+   "issue": "7",
+   "pages": "572-578",
+   "doi": "10.1093/jat/24.7.572",
+   "pmid": "11043662",
+   "note": "Abstract-level verification only.",
+   "used_for": "Carboxyhaemoglobin found stable in postmortem blood collected in vacutainer tubes with or without preservative and stored refrigerated for up to two years, measured with CO-oximeters at autopsy and after storage.",
+   "verified_via": "PubMed MCP get_article_metadata",
+   "verified_on": "2026-10-09"
+  },
+  {
+   "key": "oliverio2019",
+   "type": "journal_article",
+   "authors": [
+    "Oliverio S",
+    "Varlet V"
+   ],
+   "title": "New strategy for carbon monoxide poisoning diagnosis: Carboxyhemoglobin (COHb) vs Total Blood Carbon Monoxide (TBCO)",
+   "journal": "Forensic Science International",
+   "year": 2019,
+   "volume": "306",
+   "issue": null,
+   "pages": "110063",
+   "doi": "10.1016/j.forsciint.2019.110063",
+   "pmid": "31790891",
+   "note": "Abstract-level verification only.",
+   "used_for": "Blood samples are susceptible to alteration of the optical state and to degradation during sampling, transport and storage, which strongly affects spectrophotometric analysis; over one month of storage COHb changed significantly while chromatographically measured total blood CO stayed relatively stable irrespective of temperature, time and tube headspace volume; storage parameters studied included temperature, preservative, time, headspace volume, initial saturation and freeze-thaw/reopening cycles.",
+   "verified_via": "PubMed MCP get_article_metadata",
+   "verified_on": "2026-10-09"
+  },
+  {
+   "key": "varlet2013",
+   "type": "journal_article",
+   "authors": [
+    "Varlet V",
+    "De Croutte EL",
+    "Augsburger M",
+    "Mangin P"
+   ],
+   "title": "A new approach for the carbon monoxide (CO) exposure diagnosis: measurement of total CO in human blood versus carboxyhemoglobin (HbCO)",
+   "journal": "Journal of Forensic Sciences",
+   "year": 2013,
+   "volume": "58",
+   "issue": "4",
+   "pages": "1041-1046",
+   "doi": "10.1111/1556-4029.12130",
+   "pmid": "23692308",
+   "note": "Abstract-level verification only; the cut-off values proposed by the authors are deliberately not reproduced in the card.",
+   "used_for": "In postmortem cases HbCO measured by spectrophotometry frequently gives inaccurate results because of inadequate samples or analyses, so the role of CO can be misclassified; headspace GC-MS measures total CO (bound plus dissociated), from which HbCO can be estimated.",
+   "verified_via": "PubMed MCP get_article_metadata",
+   "verified_on": "2026-10-09"
+  },
+  {
+   "key": "bozeman1997",
+   "type": "journal_article",
+   "authors": [
+    "Bozeman WP",
+    "Myers RA",
+    "Barish RA"
+   ],
+   "title": "Confirmation of the pulse oximetry gap in carbon monoxide poisoning",
+   "journal": "Annals of Emergency Medicine",
+   "year": 1997,
+   "volume": "30",
+   "issue": "5",
+   "pages": "608-611",
+   "doi": "10.1016/s0196-0644(97)70077-5",
+   "pmid": "9360570",
+   "note": "Abstract-level verification only.",
+   "used_for": "Finger-probe pulse oximetry readings stayed high across the range of carboxyhaemoglobin saturations and failed to detect the decrease in measured oxyhaemoglobin saturation; pulse oximetry must be considered unreliable until carboxyhaemoglobin has been measured by direct spectrophotometric determination.",
+   "verified_via": "PubMed MCP get_article_metadata",
+   "verified_on": "2026-10-09"
+  },
+  {
+   "key": "cohen2025",
+   "type": "journal_article",
+   "authors": [
+    "Cohen PR",
+    "Moss RJ",
+    "Prahlow JA"
+   ],
+   "title": "Livor Mortis and Forensic Dermatology: A Review of Death-Related Gravity-Dependent Lividity and Postmortem Hypostasis",
+   "journal": "Cureus",
+   "year": 2025,
+   "volume": "17",
+   "issue": "8",
+   "pages": "e90760",
+   "doi": "10.7759/cureus.90760",
+   "pmid": "40984954",
+   "note": "Narrative review; abstract-level verification only.",
+   "used_for": "The colour of lividity may suggest a cause of death, but cherry-red or pink lividity is associated with carbon monoxide intoxication, hypothermia or cyanide poisoning alike, i.e. it is not specific.",
+   "verified_via": "PubMed MCP get_article_metadata",
+   "verified_on": "2026-10-09"
+  },
+  {
+   "key": "underner2010",
+   "type": "journal_article",
+   "authors": [
+    "Underner M",
+    "Peiffer G"
+   ],
+   "title": "Interprétation des valeurs du CO expiré en tabacologie",
+   "journal": "Revue des Maladies Respiratoires",
+   "year": 2010,
+   "volume": "27",
+   "issue": "4",
+   "pages": "293-300",
+   "doi": "10.1016/j.rmr.2009.09.004",
+   "pmid": "20403540",
+   "note": "Article in French (PubMed shows the translated title '[Interpretation of exhaled CO levels in studies on smoking]'); abstract-level verification only.",
+   "used_for": "CO is a non-specific biomarker of tobacco exposure with a short half-life; exhaled CO reflects the intensity of smoke inhalation and correlates strongly and linearly with blood carboxyhaemoglobin; elimination varies with sex, ventilation, exercise and time of day; several non-smoking conditions raise CO, so false positives and increased endogenous CO production must be taken into account when interpreting COHb.",
+   "verified_via": "PubMed MCP get_article_metadata",
+   "verified_on": "2026-10-09"
+  },
+  {
+   "key": "delvau2024",
+   "type": "journal_article",
+   "authors": [
+    "Delvau N",
+    "Elens L",
+    "Penaloza A",
+    "Liistro G",
+    "Thys F",
+    "Roy PM",
+    "Gianello P",
+    "Hantson P"
+   ],
+   "title": "Carboxyhemoglobin half-life toxicokinetic profiles during and after normobaric oxygen therapy: On a swine model",
+   "journal": "Toxicology Reports",
+   "year": 2024,
+   "volume": "12",
+   "issue": null,
+   "pages": "271-279",
+   "doi": "10.1016/j.toxrep.2024.02.005",
+   "pmid": "38433766",
+   "note": "Experimental swine model; abstract-level verification only. Cited only for the fact that oxygen administration governs COHb decline over time.",
+   "used_for": "Carboxyhaemoglobin declines under normobaric oxygen administration following a bi-compartmental rather than mono-compartmental model, and a slight rebound was observed after oxygen was stopped; extravascular CO storage cannot be estimated in routine practice.",
+   "verified_via": "PubMed MCP get_article_metadata",
    "verified_on": "2026-10-09"
   }
  ]
