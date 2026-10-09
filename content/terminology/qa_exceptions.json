@@ -13,6 +13,46 @@
     {
       "match": "bundle:text_translations:claim_excerpt:C-OXYCODONE-REPORTED_CONCENTRATION-P5:ru :: abbreviations/formulas missing: ['PM']",
       "reason": "«PM» (post-mortem) is spelled out as «посмертный» in Russian; meaning preserved, all numbers/units unchanged."
+    },
+    {
+      "match": "bundle:text_translations:research_title:RS-801d80d523e7:uz :: abbreviations/formulas missing: ['NBOMes-Highly']",
+      "reason": "The original title has no space around the dash («NBOMes-Highly Potent and Toxic Alternatives of LSD»), so the detector reads «NBOMes-Highly» as one token. The gloss keeps the abbreviation «NBOMe»; no number, unit or claim is affected."
+    },
+    {
+      "match": "bundle:text_translations:research_title:RS-801d80d523e7:ru :: abbreviations/formulas missing: ['NBOMes-Highly']",
+      "reason": "Same original-title typography as the Uzbek gloss of RS-801d80d523e7; the Russian gloss keeps «NBOMe»."
+    },
+    {
+      "match": "bundle:text_translations:research_title:RS-60082d3c8eb7:uz :: abbreviations/formulas missing: ['ACUTE']",
+      "reason": "The original title is printed in capitals («ACUTE PARATHION POISONING»), so the detector reads the ordinary English word «ACUTE» as an abbreviation. It is translated («o‘tkir»); no number, unit or claim is affected."
+    },
+    {
+      "match": "bundle:text_translations:research_title:RS-60082d3c8eb7:ru :: abbreviations/formulas missing: ['ACUTE']",
+      "reason": "Same all-capitals original title as the Uzbek gloss of RS-60082d3c8eb7; «ACUTE» is translated («острое»)."
+    },
+    {
+      "match": "bundle:text_translations:research_title:RS-137d5a69d883:uz :: abbreviations/formulas missing: ['CASES', 'HUMAN', 'NEW', 'OF', 'THE']",
+      "reason": "All-capitals original title: the detector reads ordinary English words as abbreviations. The genuine abbreviations (STR, DNA) are kept in the gloss; no number, unit or claim is affected."
+    },
+    {
+      "match": "bundle:text_translations:research_title:RS-137d5a69d883:ru :: abbreviations/formulas missing: ['CASES', 'HUMAN', 'IN', 'NEW', 'OF', 'THE']",
+      "reason": "All-capitals original title (see the Uzbek gloss of RS-137d5a69d883); STR and DNA are kept."
+    },
+    {
+      "match": "bundle:text_translations:research_title:RS-27a8af38d6a1:uz :: abbreviations/formulas missing: ['KIT', 'OF', 'STUDY', 'USING']",
+      "reason": "All-capitals original title: ordinary English words are read as abbreviations. The product name (FORENSEQ DNA SIGNATURE TM) is kept verbatim in the gloss."
+    },
+    {
+      "match": "bundle:text_translations:research_title:RS-27a8af38d6a1:ru :: abbreviations/formulas missing: ['KIT', 'OF', 'STUDY', 'USING']",
+      "reason": "All-capitals original title (see the Uzbek gloss of RS-27a8af38d6a1); the product name is kept verbatim."
+    },
+    {
+      "match": "bundle:text_translations:research_title:RS-47115dbc2637:uz :: abbreviations/formulas missing: ['DRUGS', 'FOR', 'METHOD', 'OF', 'SEIZED', 'THE']",
+      "reason": "All-capitals original title: ordinary English words are read as abbreviations. The genuine abbreviation (INAA) is kept in the gloss."
+    },
+    {
+      "match": "bundle:text_translations:research_title:RS-47115dbc2637:ru :: abbreviations/formulas missing: ['DRUGS', 'FOR', 'METHOD', 'OF', 'SEIZED', 'THE']",
+      "reason": "All-capitals original title (see the Uzbek gloss of RS-47115dbc2637); INAA is kept."
     }
   ]
 }
