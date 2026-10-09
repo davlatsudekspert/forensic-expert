@@ -77,9 +77,8 @@ void main() {
 
   // ICU argumentlari: `{name}` yoki `{name, select, …}`; select/plural
   // tarmoqlari (`en{English}`) — argument emas (oldida so‘z belgisi bor).
-  Set<String> placeholders(String s) => RegExp(
-    r'(?<!\w)\{(\w+)[,}]',
-  ).allMatches(s).map((m) => m[1]!).toSet();
+  Set<String> placeholders(String s) =>
+      RegExp(r'(?<!\w)\{(\w+)[,}]').allMatches(s).map((m) => m[1]!).toSet();
 
   test('template’dagi har bir kalitda tavsif bor', () {
     for (final k in messageKeys) {
