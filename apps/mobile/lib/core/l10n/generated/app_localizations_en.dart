@@ -293,7 +293,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Range-based estimate for an earlier point in time.';
 
   @override
-  String get toolPmiName => 'Time since death (Henssge)';
+  String get toolPmiName => 'Postmortem interval (PMI) — Henssge';
 
   @override
   String get toolPmiDesc =>
@@ -1293,7 +1293,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get fmTopicPostmortemChanges => 'Postmortem changes';
 
   @override
-  String get fmTopicPostmortemInterval => 'Postmortem interval';
+  String get fmTopicPostmortemInterval => 'Postmortem interval (PMI)';
 
   @override
   String get fmTopicAlgorMortis => 'Algor mortis';
@@ -5180,7 +5180,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get calcFactorBedding => 'Under a thick blanket — 2.0';
 
   @override
-  String get calcHenssgeTime => 'Estimated time since death';
+  String get calcHenssgeTime => 'Estimated postmortem interval (PMI)';
 
   @override
   String get calcHenssgeRange => '95 % limits';

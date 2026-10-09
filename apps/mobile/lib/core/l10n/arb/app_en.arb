@@ -362,7 +362,7 @@
   "@toolBackCalcDesc": {
     "description": "Tool description."
   },
-  "toolPmiName": "Time since death (Henssge)",
+  "toolPmiName": "Postmortem interval (PMI) — Henssge",
   "@toolPmiName": {
     "description": "Tool name."
   },
@@ -1675,7 +1675,7 @@
   "@fmTopicPostmortemChanges": {
     "description": "Forensic medicine taxonomy topic name."
   },
-  "fmTopicPostmortemInterval": "Postmortem interval",
+  "fmTopicPostmortemInterval": "Postmortem interval (PMI)",
   "@fmTopicPostmortemInterval": {
     "description": "Forensic medicine taxonomy topic name."
   },
@@ -6723,7 +6723,7 @@
   "@calcFactorBedding": {
     "description": "Option."
   },
-  "calcHenssgeTime": "Estimated time since death",
+  "calcHenssgeTime": "Estimated postmortem interval (PMI)",
   "@calcHenssgeTime": {
     "description": "Result."
   },

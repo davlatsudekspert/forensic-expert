@@ -293,7 +293,7 @@ class AppLocalizationsRu extends AppLocalizations {
       'Оценка диапазона на более ранний момент времени.';
 
   @override
-  String get toolPmiName => 'Давность смерти (Хенссге)';
+  String get toolPmiName => 'Посмертный интервал (PMI) — Хенссге';
 
   @override
   String get toolPmiDesc =>
@@ -1292,7 +1292,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get fmTopicPostmortemChanges => 'Посмертные изменения';
 
   @override
-  String get fmTopicPostmortemInterval => 'Давность наступления смерти';
+  String get fmTopicPostmortemInterval => 'Посмертный интервал (PMI)';
 
   @override
   String get fmTopicAlgorMortis => 'Охлаждение трупа';
@@ -5185,7 +5185,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get calcFactorBedding => 'Под толстым одеялом — 2,0';
 
   @override
-  String get calcHenssgeTime => 'Расчётная давность смерти';
+  String get calcHenssgeTime => 'Расчётный посмертный интервал (PMI)';
 
   @override
   String get calcHenssgeRange => '95 % границы';

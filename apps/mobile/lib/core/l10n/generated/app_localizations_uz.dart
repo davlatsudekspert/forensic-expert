@@ -296,7 +296,8 @@ class AppLocalizationsUz extends AppLocalizations {
       'Oldingi vaqt nuqtasi uchun diapazonli baholash.';
 
   @override
-  String get toolPmiName => 'O‘lim vaqtini aniqlash (Henssge)';
+  String get toolPmiName =>
+      'O‘limdan keyin o‘tgan vaqt oralig‘i (PMI) — Henssge';
 
   @override
   String get toolPmiDesc =>
@@ -1292,7 +1293,8 @@ class AppLocalizationsUz extends AppLocalizations {
   String get fmTopicPostmortemChanges => 'O‘limdan keyingi o‘zgarishlar';
 
   @override
-  String get fmTopicPostmortemInterval => 'O‘limdan keyingi vaqt';
+  String get fmTopicPostmortemInterval =>
+      'O‘limdan keyin o‘tgan vaqt oralig‘i (PMI)';
 
   @override
   String get fmTopicAlgorMortis => 'Murdaning sovishi';
@@ -5168,7 +5170,8 @@ class AppLocalizationsUz extends AppLocalizations {
   String get calcFactorBedding => 'Qalin ko‘rpa ostida — 2,0';
 
   @override
-  String get calcHenssgeTime => 'Taxminiy o‘lim vaqti (o‘tgan vaqt)';
+  String get calcHenssgeTime =>
+      'Taxminiy o‘limdan keyin o‘tgan vaqt oralig‘i (PMI)';
 
   @override
   String get calcHenssgeRange => '95 % chegara';

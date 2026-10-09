@@ -115,8 +115,8 @@ class ContentLearnRepository implements LearnRepository {
           id: 'course.postmortem',
           title: const LocalizedText({
             'en': 'Postmortem changes and postmortem interval (PMI) — source reading',
-            'ru': 'Посмертные изменения и давность смерти — чтение источников',
-            'uz': 'O‘limdan keyingi o‘zgarishlar va o‘lim vaqti (PMI) — manbalarni o‘qish',
+            'ru': 'Посмертные изменения и посмертный интервал (PMI) — чтение источников',
+            'uz': 'O‘limdan keyingi o‘zgarishlar va o‘limdan keyin o‘tgan vaqt oralig‘i (PMI) — manbalarni o‘qish',
           }),
           lessons: [
             for (final e in [...fm, ...bio]) lesson(e),

@@ -619,7 +619,7 @@ abstract class AppLocalizations {
   /// Tool name.
   ///
   /// In en, this message translates to:
-  /// **'Time since death (Henssge)'**
+  /// **'Postmortem interval (PMI) — Henssge'**
   String get toolPmiName;
 
   /// Tool description.
@@ -2395,7 +2395,7 @@ abstract class AppLocalizations {
   /// Forensic medicine taxonomy topic name.
   ///
   /// In en, this message translates to:
-  /// **'Postmortem interval'**
+  /// **'Postmortem interval (PMI)'**
   String get fmTopicPostmortemInterval;
 
   /// Forensic medicine taxonomy topic name.
@@ -9402,7 +9402,7 @@ abstract class AppLocalizations {
   /// Result.
   ///
   /// In en, this message translates to:
-  /// **'Estimated time since death'**
+  /// **'Estimated postmortem interval (PMI)'**
   String get calcHenssgeTime;
 
   /// Result.
