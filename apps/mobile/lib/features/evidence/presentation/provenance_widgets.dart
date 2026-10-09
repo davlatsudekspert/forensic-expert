@@ -176,7 +176,8 @@ class ProvenanceButton extends StatelessWidget {
         key: Key('claim.provenance.${claim.claimId}'),
         style: TextButton.styleFrom(
           padding: EdgeInsets.zero,
-          visualDensity: VisualDensity.compact,
+          // Kamida 48 dp bosish maydoni (a11y).
+          minimumSize: const Size(48, 48),
         ),
         icon: const Icon(Icons.travel_explore, size: 18),
         label: Text(l.provWhereFrom),
