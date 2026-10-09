@@ -6876,4 +6876,79 @@ class AppLocalizationsRu extends AppLocalizations {
   String rdGuidelineMeta(int sections, String refs) {
     return 'Разделов: $sections · $refs';
   }
+
+  @override
+  String reagentHazardBanner(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count предупреждений об опасности — прочитайте до приготовления',
+      few: '$count предупреждения об опасности — прочитайте до приготовления',
+      one: '$count предупреждение об опасности — прочитайте до приготовления',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get reagentHazardGhs => 'Формулировки опасности СГС (PubChem)';
+
+  @override
+  String get reagentHazardGeneral =>
+      'Общая рекомендация по безопасности (от приложения)';
+
+  @override
+  String reagentRecipeSource(String title) {
+    return 'Источник: $title';
+  }
+
+  @override
+  String get reagentMachineDraft =>
+      'Перевод — автоматический черновик, специалистом не проверен. Числа перенесены из источника без изменений; сверяйте с исходным текстом ниже.';
+
+  @override
+  String reagentVariant(String label) {
+    return 'Способ $label';
+  }
+
+  @override
+  String reagentMakeUpTo(String value) {
+    return 'до $value';
+  }
+
+  @override
+  String get reagentUnitG => 'г';
+
+  @override
+  String get reagentUnitMl => 'мл';
+
+  @override
+  String get reagentUnitL => 'л';
+
+  @override
+  String get reagentPurpose => 'Назначение (по источнику)';
+
+  @override
+  String get reagentNote => 'Примечание из источника';
+
+  @override
+  String get reagentAmbiguity => 'Сверьте с оригиналом';
+
+  @override
+  String get reagentOriginalText => 'Исходный текст (рус.)';
+
+  @override
+  String get reagentOriginalHint =>
+      'Дословно из источника, для прослеживаемости (ошибки распознавания не исправлены).';
+
+  @override
+  String reagentDropsAmount(int count, String value) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$value капель',
+      few: '$value капли',
+      one: '$value капля',
+    );
+    return '$_temp0';
+  }
 }

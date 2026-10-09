@@ -1,0 +1,748 @@
+# Ilova egasi to‘plami «Приготовление реактивов» (SRC-OWNER-REAGENTS), 1–37-bandlar.
+# Tuzilgan shakl: ingrediyent [kimyoviy kalit, miqdor, birlik, {opsiyalar}],
+# qadamlar uz/ru/en. Raqamlar manbadan o‘zgarishsiz; uz/en — machine_draft.
+# Opsiyalar: to — «… gacha» (до); max — oraliq yuqori chegarasi;
+# spec — konsentratsiya (assemble_reagents.py SPEC jadvali yoki {uz,ru,en});
+# q — raqamsiz miqdor izohi (QTY jadvali yoki {uz,ru,en}); v — variant.
+
+- num: 1
+  slug: barbituric-acid-pyridine
+  names: {uz: "Barbitur kislotaning piridindagi eritmasi", ru: "Барбитуровая кислота (раствор в пиридине)", en: "Barbituric acid solution in pyridine"}
+  ing:
+    - [barbituric_acid, 3, g]
+    - [pyridine_fd, 15, mL]
+    - [hcl_conc, 3, mL]
+    - [water, 50, mL, {to: true}]
+  steps:
+    - uz: "Kolbaga 3 g barbitur kislota soling, 15 ml yangi haydalgan piridin va 3 ml konsentrlangan xlorid kislota qo‘shing."
+      ru: "В колбу вносят 3 г барбитуровой кислоты, 15 мл свежеперегнанного пиридина и 3 мл концентрированной соляной кислоты."
+      en: "Place 3 g of barbituric acid in a flask; add 15 mL of freshly distilled pyridine and 3 mL of concentrated hydrochloric acid."
+    - uz: "Aralashmani yaxshilab chayqating, suv bilan 50 ml gacha yetkazing va filtrlang."
+      ru: "Содержимое хорошо взбалтывают, доводят водой до 50 мл и фильтруют."
+      en: "Shake well, make up to 50 mL with water and filter."
+  stability: {uz: "Reaktiv yangi tayyorlangan bo‘lishi kerak.", ru: "Реактив должен быть свежеприготовленным.", en: "The reagent must be freshly prepared."}
+
+- num: 2
+  slug: baryta-water
+  names: {uz: "Barit suvi", ru: "Баритовая вода", en: "Baryta water (barium hydroxide solution)"}
+  synonyms: ["baryta water", "barium hydroxide solution"]
+  ing:
+    - [ba_oh2, 5, g]
+    - [water_boiled, 100, mL]
+  steps:
+    - uz: "5 g bariy gidroksidni 100 ml yangi qaynatilib, so‘ng sovitilgan distillangan suv bilan chayqating."
+      ru: "5 г гидроксида бария взбалтывают со 100 мл свежепрокипячённой, а затем охлаждённой дистиллированной воды."
+      en: "Shake 5 g of barium hydroxide with 100 mL of freshly boiled and then cooled distilled water."
+  stability: {uz: "Eritma yangi tayyorlangan bo‘lishi kerak.", ru: "Раствор должен быть свежеприготовленным.", en: "The solution must be freshly prepared."}
+
+- num: 3
+  slug: bromine-water
+  names: {uz: "Bromli suv", ru: "Бромная вода", en: "Bromine water"}
+  ing:
+    - [bromine, 3, g]
+    - [water, 100, mL]
+  steps:
+    - uz: "Shlifli tiqinli idishga 3 g brom va 100 ml suv soling (reaktiv — bromning suvdagi to‘yingan eritmasi)."
+      ru: "В склянку с притёртой пробкой вносят 3 г брома и 100 мл воды (реактив — насыщенный раствор брома в воде)."
+      en: "Place 3 g of bromine and 100 mL of water in a bottle with a ground-glass stopper (the reagent is a saturated solution of bromine in water)."
+    - uz: "Aralashmani kuchli chayqating va qatlamlar ajralishi uchun bir necha soatga qoldiring."
+      ru: "Смесь интенсивно взбалтывают и оставляют на несколько часов для разделения слоёв."
+      en: "Shake vigorously and leave for several hours for the layers to separate."
+    - uz: "Yuqoridagi tiniq qatlamni shlifli tiqinli to‘q sariq shisha idishga quyib oling."
+      ru: "Верхний прозрачный слой сливают в склянку из оранжевого стекла с притёртой пробкой."
+      en: "Decant the clear upper layer into an orange-glass bottle with a ground-glass stopper."
+  storage: {uz: "Yorug‘likdan himoyalangan joyda saqlanadi.", ru: "Сохраняют в защищённом от света месте.", en: "Store protected from light."}
+
+- num: 4
+  slug: starch-iodide-paper
+  names: {uz: "Yod-kraxmalli qog‘oz", ru: "Бумага иодкрахмальная", en: "Starch–iodide paper"}
+  synonyms: ["iodine starch paper", "иодкрахмальная бумага"]
+  ing:
+    - [starch, null, null, {q: small}]
+    - [water, null, null, {q: small}]
+    - [water_boiling, null, null, {q: as_needed}]
+    - [ki_pure, null, null, {q: little}]
+    - [filter_paper, null, null, {q: as_needed}]
+  steps:
+    - uz: "Oz miqdordagi guruch yoki kartoshka kraxmalini oz miqdordagi suv bilan yaxshilab aralashtiring."
+      ru: "Небольшое количество рисового или картофельного крахмала тщательно перемешивают с небольшим количеством воды."
+      en: "Thoroughly mix a small amount of rice or potato starch with a small amount of water."
+    - uz: "Hosil bo‘lgan suspenziyani kichik ulushlarda qaynab turgan suvga quying, shisha tayoqcha bilan aralashtiring va tiniq eritma hosil bo‘lguncha qaynatishni davom ettiring."
+      ru: "Суспензию малыми порциями вливают в кипящую воду, перемешивают стеклянной палочкой и кипятят до получения прозрачного раствора."
+      en: "Pour the suspension in small portions into boiling water, stir with a glass rod and keep boiling until a clear solution is obtained."
+    - uz: "Sovitilgan kraxmal eritmasiga ozgina toza kaliy yodid qo‘shing."
+      ru: "К охлаждённому раствору крахмала прибавляют немного чистого иодида калия."
+      en: "Add a little pure potassium iodide to the cooled starch solution."
+    - uz: "Shu eritmaga filtr qog‘oz tasmalarini shimdiring va quriting."
+      ru: "Этим раствором пропитывают полоски фильтровальной бумаги и высушивают их."
+      en: "Impregnate strips of filter paper with this solution and dry them."
+  flags:
+    - {kind: ambiguity, uz: "Manbada kraxmal, suv va kaliy yodid miqdori raqam bilan berilmagan («oz miqdor», «ozgina»).", ru: "В источнике количества крахмала, воды и иодида калия не указаны числом («небольшое количество», «немного»).", en: "The source gives no numeric amounts for starch, water or potassium iodide («a small amount», «a little»)."}
+
+- num: 5
+  slug: lead-acetate-paper
+  names: {uz: "Qo‘rg‘oshin atsetat shimdirilgan qog‘oz", ru: "Бумага, пропитанная ацетатом свинца", en: "Lead acetate paper"}
+  ing:
+    - [pb_acetate, null, null, {spec: "%:5", q: as_needed}]
+    - [naoh, null, null, {spec: "%:5", q: until_ppt_dissolves}]
+    - [filter_paper, null, null, {q: as_needed}]
+  steps:
+    - uz: "5 % li qo‘rg‘oshin atsetat eritmasiga hosil bo‘ladigan cho‘kma eriguncha 5 % li natriy gidroksid eritmasini qo‘shing."
+      ru: "К 5 %-му раствору ацетата свинца прибавляют 5 %-й раствор гидроксида натрия до растворения образующегося осадка."
+      en: "Add 5 % sodium hydroxide solution to 5 % lead acetate solution until the precipitate that forms dissolves."
+    - uz: "Hosil bo‘lgan eritmaga filtr qog‘oz tasmalarini 1–2 daqiqaga botiring, so‘ng havoda quriting."
+      ru: "В полученный раствор на 1–2 мин погружают полоски фильтровальной бумаги, затем высушивают их на воздухе."
+      en: "Immerse strips of filter paper in the solution for 1–2 min, then dry them in air."
+  flags:
+    - {kind: ambiguity, uz: "Eritmalar hajmi manbada ko‘rsatilmagan.", ru: "Объёмы растворов в источнике не указаны.", en: "The source does not state the volumes of the solutions."}
+
+- num: 6
+  slug: benzidine-paper
+  names: {uz: "Benzidin shimdirilgan qog‘oz", ru: "Бумага, пропитанная бензидином", en: "Benzidine paper (copper acetate–benzidine)"}
+  synonyms: ["benzidine paper", "бензидиновая бумага"]
+  restricted: benzidine
+  ing:
+    - [cu_acetate, 0.286, g, {role: {uz: "A eritma", ru: "раствор А", en: "solution A"}}]
+    - [water, 100, mL, {role: {uz: "A eritma", ru: "раствор А", en: "solution A"}}]
+    - [benzidine_acetate, 47.5, mL, {spec: "sat", role: {uz: "B eritma", ru: "раствор Б", en: "solution B"}}]
+    - [water, 52.5, mL, {role: {uz: "B eritma", ru: "раствор Б", en: "solution B"}}]
+    - [filter_paper, null, null, {q: as_needed}]
+  steps:
+    - uz: "A eritma: 0,286 g mis atsetatni 100 ml suvda eriting."
+      ru: "Раствор А: 0,286 г ацетата меди в 100 мл воды."
+      en: "Solution A: dissolve 0.286 g of copper acetate in 100 mL of water."
+    - uz: "Benzidin atsetatning to‘yingan eritmasini tayyorlang. B eritma: 47,5 ml to‘yingan benzidin atsetat eritmasiga 52,5 ml suv qo‘shing."
+      ru: "Готовят насыщенный раствор ацетата бензидина. Раствор Б: к 47,5 мл насыщенного раствора ацетата бензидина прибавляют 52,5 мл воды."
+      en: "Prepare a saturated solution of benzidine acetate. Solution B: add 52.5 mL of water to 47.5 mL of the saturated benzidine acetate solution."
+    - uz: "A va B eritmalarni teng hajmda aralashtiring, filtr qog‘oz tasmalarini shu suyuqlikda namlang va havoda quriting."
+      ru: "Смешивают равные объёмы растворов А и Б, смачивают в этой жидкости полоски фильтровальной бумаги и высушивают на воздухе."
+      en: "Mix equal volumes of solutions A and B, wet strips of filter paper in the liquid and dry them in air."
+
+- num: 7
+  slug: mercury-halide-paper
+  names: {uz: "Simob(II) bromid yoki xlorid shimdirilgan qog‘oz", ru: "Бумага, пропитанная раствором бромида или хлорида ртути (II)", en: "Mercury(II) bromide or chloride paper"}
+  synonyms: ["mercuric bromide paper", "ртутно-бромидная бумага"]
+  extra_hazards: [hgbr2, hgcl2, ethanol]
+  ing:
+    - [filter_paper_pieces, null, null, {q: as_needed}]
+    - [hgbr2, null, null, {spec: "etoh%:5", q: or_next}]
+    - [hgcl2, null, null, {spec: "etoh%:5", q: as_needed}]
+  steps:
+    - uz: "Kesilgan filtr qog‘oz bo‘laklariga simob(II) bromid yoki simob(II) xloridning 5 % li spirtli eritmasini shimdiring."
+      ru: "Нарезанные кусочки фильтровальной бумаги пропитывают 5 %-м спиртовым раствором бромида или хлорида ртути (II)."
+      en: "Impregnate cut pieces of filter paper with a 5 % ethanolic solution of mercury(II) bromide or mercury(II) chloride."
+    - uz: "Qog‘ozni xona haroratida (mo‘rili shkafda) quriting."
+      ru: "Бумагу высушивают при комнатной температуре (в вытяжном шкафу)."
+      en: "Dry the paper at room temperature (in a fume hood)."
+  storage: {uz: "Shlifli tiqinli idishda, qorong‘i va salqin joyda saqlanadi.", ru: "Сохраняют в склянке с притёртой пробкой в тёмном прохладном месте.", en: "Store in a ground-glass-stoppered bottle in a dark, cool place."}
+  stability: {uz: "Tayyorlangan kundan boshlab bir oydan ortiq ishlatilmaydi.", ru: "Применять не более одного месяца со дня приготовления.", en: "Use for no more than one month from the day of preparation."}
+
+- num: 8
+  slug: lead-acetate-cotton
+  names: {uz: "Qo‘rg‘oshin atsetat shimdirilgan paxta", ru: "Вата, пропитанная раствором ацетата свинца", en: "Lead acetate cotton wool"}
+  ing:
+    - [pb_subacetate, 10, g]
+    - [water, 100, mL]
+    - [acetic_acid, null, null, {q: dropwise_clear}]
+    - [cotton, null, null, {q: as_needed}]
+  steps:
+    - uz: "10 g asosli qo‘rg‘oshin atsetatga 100 ml suv qo‘shing."
+      ru: "К 10 г основного ацетата свинца прибавляют 100 мл воды."
+      en: "Add 100 mL of water to 10 g of basic lead acetate."
+    - uz: "Tiniq yoki biroz opalestsensiyalanuvchi eritma hosil bo‘lguncha sirka kislotani tomchilab qo‘shing."
+      ru: "По каплям прибавляют уксусную кислоту до получения прозрачного или слегка опалесцирующего раствора."
+      en: "Add acetic acid dropwise until a clear or slightly opalescent solution is obtained."
+    - uz: "Shu eritma bilan gigroskopik paxtani namlang va havoda quriting."
+      ru: "Этим раствором смачивают гигроскопическую вату и высушивают её на воздухе."
+      en: "Wet absorbent cotton wool with this solution and dry it in air."
+  storage: {uz: "Quritilgan paxta shlifli tiqinli idishda saqlanadi.", ru: "Высушенную вату сохраняют в склянке с притёртой пробкой.", en: "Store the dried cotton wool in a ground-glass-stoppered bottle."}
+
+- num: 9
+  slug: potassium-hexahydroxoantimonate
+  names: {uz: "Kaliy geksagidroksostibiat eritmasi", ru: "Гидроксостибиат калия (раствор)", en: "Potassium hexahydroxoantimonate solution"}
+  synonyms: ["potassium pyroantimonate", "пироантимонат калия"]
+  ing:
+    - [k_antimonate, 2.2, g]
+    - [water_hot, 100, mL]
+    - [koh, 3.5, mL, {spec: "N:6"}]
+  steps:
+    - uz: "100 ml issiq suvda 2,2 g kaliy geksagidroksostibiatni eriting."
+      ru: "В 100 мл горячей воды растворяют 2,2 г гидроксостибиата калия."
+      en: "Dissolve 2.2 g of potassium hexahydroxoantimonate in 100 mL of hot water."
+    - uz: "Eritmani 2 daqiqa qaynating."
+      ru: "Раствор кипятят 2 мин."
+      en: "Boil the solution for 2 min."
+    - uz: "Sovigach, 3,5 ml 6 n. kaliy gidroksid eritmasini qo‘shing."
+      ru: "После охлаждения прибавляют 3,5 мл 6 н. раствора гидроксида калия."
+      en: "After cooling, add 3.5 mL of 6 N potassium hydroxide solution."
+    - uz: "Suyuqlikni bir sutkaga qoldiring, so‘ng filtrlang."
+      ru: "Жидкость оставляют на сутки, затем фильтруют."
+      en: "Leave the liquid for 24 hours, then filter."
+
+- num: 10
+  slug: sodium-hypochlorite
+  names: {uz: "Natriy gipoxlorit", ru: "Гипохлорит натрия", en: "Sodium hypochlorite"}
+  variants:
+    - {id: a, uz: "a) xlorli ohakdan", ru: "а) из хлорной извести", en: "a) from chlorinated lime"}
+    - {id: b, uz: "b) xlor gazidan", ru: "б) из газообразного хлора", en: "b) from chlorine gas"}
+  ing:
+    - [bleach, 20, g, {v: a}]
+    - [water_cold, 100, mL, {v: a}]
+    - [na2co3, 500, mL, {spec: "%:5", v: a}]
+    - [naoh, null, null, {spec: "%:5", q: as_needed, v: b}]
+    - [chlorine, null, null, {q: sat_gas, v: b}]
+  steps:
+    - v: a
+      uz: "Hovonchaga 20 g xlorli ohak soling, 100 ml sovuq suv qo‘shib yaxshilab aralashtiring."
+      ru: "В ступку вносят 20 г хлорной извести, прибавляют 100 мл холодной воды и хорошо смешивают."
+      en: "Place 20 g of chlorinated lime in a mortar, add 100 mL of cold water and mix well."
+    - v: a
+      uz: "500 ml 5 % li natriy karbonat eritmasini qo‘shing, yaxshilab aralashtiring va bir muddat qoldiring."
+      ru: "Прибавляют 500 мл 5 %-го раствора карбоната натрия, хорошо перемешивают и оставляют на некоторое время."
+      en: "Add 500 mL of 5 % sodium carbonate solution, mix well and leave for a while."
+    - v: a
+      uz: "Tiniq suyuqlikni cho‘kmadan quyib oling va filtrlang."
+      ru: "Прозрачную жидкость сливают с осадка и фильтруют."
+      en: "Decant the clear liquid from the precipitate and filter."
+    - v: b
+      uz: "5 % li natriy gidroksid eritmasi orqali eritma to‘yinguncha xlor gazini o‘tkazing."
+      ru: "Через 5 %-й раствор гидроксида натрия пропускают газообразный хлор до насыщения."
+      en: "Pass chlorine gas through 5 % sodium hydroxide solution until the solution is saturated."
+  flags:
+    - {kind: ambiguity, uz: "b) usulida natriy gidroksid eritmasi hajmi ko‘rsatilmagan.", ru: "В способе б) объём раствора гидроксида натрия не указан.", en: "Method b) does not state the volume of sodium hydroxide solution."}
+
+- num: 11
+  slug: potassium-diiodocuprate
+  names: {uz: "Kaliy diyodokuprat (yod eritmasida)", ru: "Дииодокупрат калия (в растворе иода)", en: "Potassium diiodocuprate (in iodine solution)"}
+  ing:
+    - [cuso4, 0.3, g]
+    - [water, 3, mL]
+    - [hcl_conc, 1, mL]
+    - [ki, 3, g]
+    - [water, 10, mL, {to: true}]
+  steps:
+    - uz: "3 ml suvda 0,3 g mis sulfatni eriting, 1 ml konsentrlangan xlorid kislota va 3 g kaliy yodid qo‘shing."
+      ru: "В 3 мл воды растворяют 0,3 г сульфата меди, прибавляют 1 мл концентрированной соляной кислоты и 3 г иодида калия."
+      en: "Dissolve 0.3 g of copper sulfate in 3 mL of water; add 1 mL of concentrated hydrochloric acid and 3 g of potassium iodide."
+    - uz: "Chayqating va suv bilan 10 ml gacha yetkazing."
+      ru: "Взбалтывают и прибавляют воду до 10 мл."
+      en: "Shake and make up to 10 mL with water."
+    - uz: "Bir sutkadan keyin suyuqlikni cho‘kmadan quyib oling — u yod eritmasi va kaliy diyodokuprat (K[CuI₂]) aralashmasidan iborat reaktiv."
+      ru: "Через сутки жидкость сливают с осадка; она представляет собой смесь раствора иода и дииодокупрата калия (K[CuI₂])."
+      en: "After 24 hours decant the liquid from the precipitate; it is a mixture of iodine solution and potassium diiodocuprate (K[CuI₂]) used as the reagent."
+
+- num: 12
+  slug: dithizone-solution
+  names: {uz: "Ditizon eritmasi (xloroform yoki uglerod tetraxloridda)", ru: "Дитизон (раствор в хлороформе или в четырёххлористом углероде)", en: "Dithizone solution (in chloroform or carbon tetrachloride)"}
+  synonyms: ["diphenylthiocarbazone", "дифенилтиокарбазон"]
+  extra_hazards: [chloroform, ccl4]
+  ing:
+    - [dithizone, 0.2, g]
+    - [chloroform_or_ccl4, 150, mL]
+    - [ammonia, 50, mL, {spec: "N:3"}]
+    - [chloroform, null, null, {q: portions_until_yellow}]
+    - [ascorbic, 2, g, {max: 3}]
+    - [h2so4, null, null, {spec: "N:4", q: to_ph34}]
+    - [chloroform, 15, mL, {q: per_portion_repeat}]
+    - [chloroform, 200, mL, {to: true}]
+    - [h2so4, null, null, {spec: "N:0.2", q: layer05}]
+  steps:
+    - uz: "150 ml xloroform yoki uglerod tetraxloridda 0,2 g ditizonni eriting va 5–10 daqiqadan so‘ng filtrlang."
+      ru: "В 150 мл хлороформа или четырёххлористого углерода растворяют 0,2 г дитизона и через 5–10 мин фильтруют."
+      en: "Dissolve 0.2 g of dithizone in 150 mL of chloroform or carbon tetrachloride and filter after 5–10 min."
+    - uz: "Filtratni 500 ml li ajratgich voronkaga yig‘ing, 50 ml 3 n. ammiak eritmasini qo‘shib chayqating: suvli qatlam (ditizonning ammoniy tuzi) sariq yoki to‘q sariq, xloroform qatlami (difeniltiokarbadiazon) jigarrang yoki qizg‘ish-qo‘ng‘ir bo‘ladi."
+      ru: "Фильтрат собирают в делительную воронку на 500 мл, прибавляют 50 мл 3 н. раствора аммиака и взбалтывают: водный слой (аммонийная соль дитизона) — жёлтый или оранжевый, хлороформный (дифенилтиокарбадиазон) — коричневый или красно-бурый."
+      en: "Collect the filtrate in a 500 mL separatory funnel, add 50 mL of 3 N ammonia solution and shake: the aqueous layer (ammonium salt of dithizone) turns yellow or orange, the chloroform layer (diphenylthiocarbadiazone) brown or red-brown."
+    - uz: "Suvli fazani ajrating va suvli qatlam rangi o‘zgarmas sariq bo‘lguncha yangi xloroform ulushlari bilan chayqating."
+      ru: "Водную фазу отделяют и взбалтывают с новыми порциями хлороформа, пока водный слой не будет иметь неизменяющуюся жёлтую окраску."
+      en: "Separate the aqueous phase and shake it with fresh portions of chloroform until the aqueous layer keeps a constant yellow colour."
+    - uz: "Suvli fazani ajrating, muz bilan sovitib, 2–3 g askorbin kislota va pH 3–4 ga yetguncha 4 n. sulfat kislota eritmasini qo‘shing."
+      ru: "Водную фазу отделяют и при охлаждении льдом прибавляют 2–3 г аскорбиновой кислоты и 4 н. раствор серной кислоты до pH 3–4."
+      en: "Separate the aqueous phase and, while cooling with ice, add 2–3 g of ascorbic acid and 4 N sulfuric acid to pH 3–4."
+    - uz: "Ajralib chiqqan ditizonni xloroform bilan (har safar 15 ml) oxirgi ekstrakt yashil rangga bo‘yalmay qolguncha bir necha marta ekstraksiya qiling."
+      ru: "Выделившийся дитизон несколько раз экстрагируют хлороформом (по 15 мл), пока последняя вытяжка не перестанет окрашиваться в зелёный цвет."
+      en: "Extract the liberated dithizone several times with chloroform (15 mL each) until the last extract is no longer coloured green."
+    - uz: "Xloroformli ekstraktlarni birlashtiring va xloroform bilan 200 ml gacha yetkazing. Eritmada 0,1 % ditizon bor, rangi yashil."
+      ru: "Хлороформные вытяжки соединяют и доводят хлороформом до 200 мл. Раствор содержит 0,1 % дитизона и имеет зелёную окраску."
+      en: "Combine the chloroform extracts and make up to 200 mL with chloroform. The solution contains 0.1 % dithizone and is green."
+    - uz: "Eritma yuzasiga 0,5 sm qalinlikda 0,2 n. sulfat kislota eritmasi qatlamini quying."
+      ru: "На поверхность раствора наносят слой 0,2 н. раствора серной кислоты толщиной 0,5 см."
+      en: "Cover the surface of the solution with a 0.5 cm layer of 0.2 N sulfuric acid."
+  storage: {uz: "Sovuq joyda, qorong‘i shisha idishda saqlanadi.", ru: "Сохраняют в холодном месте в склянке из тёмного стекла.", en: "Store in a cold place in a dark-glass bottle."}
+  notes:
+    - {kind: info, uz: "Tijorat ditizonida difeniltiokarbadiazon (oksidlanish mahsuloti), ayrim metallar ditizonatlari va boshqa aralashmalar bo‘lishi mumkin; ularning rangi metall ionlarini aniqlashga xalaqit beradi, shuning uchun eritma tayyorlashdan oldin ditizon tozalanadi.", ru: "Товарный дитизон может содержать дифенилтиокарбадиазон (продукт окисления), дитизонаты металлов и другие примеси; их окраска мешает обнаружению ионов металлов, поэтому дитизон перед приготовлением раствора очищают.", en: "Commercial dithizone may contain diphenylthiocarbadiazone (an oxidation product), metal dithizonates and other impurities whose colour interferes with detecting metal ions, so dithizone is purified before the solution is prepared."}
+
+- num: 13
+  slug: potassium-dichromate-solution
+  names: {uz: "Kaliy dixromat eritmasi", ru: "Дихромат калия (раствор)", en: "Potassium dichromate solution"}
+  ing:
+    - [k2cr2o7, 0.37, g]
+    - [water, 15, mL]
+    - [h2so4_conc, 28, mL]
+    - [water, 65, mL, {to: true}]
+  steps:
+    - uz: "0,37 g kaliy dixromatga 15 ml suv qo‘shing va eriting."
+      ru: "К 0,37 г дихромата калия прибавляют 15 мл воды и растворяют."
+      en: "Add 15 mL of water to 0.37 g of potassium dichromate and dissolve."
+    - uz: "Eritgach, ehtiyotkorlik bilan 28 ml konsentrlangan sulfat kislota qo‘shing."
+      ru: "После растворения осторожно прибавляют 28 мл концентрированной серной кислоты."
+      en: "After dissolution, carefully add 28 mL of concentrated sulfuric acid."
+    - uz: "Eritmani soviting va suv bilan 65 ml gacha yetkazing."
+      ru: "Раствор охлаждают и доводят водой до 65 мл."
+      en: "Cool the solution and make up to 65 mL with water."
+
+- num: 14
+  slug: lead-diethyldithiocarbamate-chloroform
+  names: {uz: "Qo‘rg‘oshin dietilditiokarbamat (xloroformdagi eritma)", ru: "Диэтилдитиокарбамат свинца (раствор в хлороформе)", en: "Lead diethyldithiocarbamate (solution in chloroform)"}
+  ing:
+    - [pb_acetate, 0.5, g]
+    - [water, null, null, {q: dissolve}]
+    - [kno3, 25, mL, {spec: "%:10"}]
+    - [nh4_or_na_ddtc, 50, mL, {spec: "%:1"}]
+    - [chloroform, 50, mL, {q: per_portion_repeat}]
+    - [chloroform, 250, mL, {to: true}]
+  steps:
+    - uz: "0,5 g qo‘rg‘oshin atsetatga u eriguncha suv qo‘shing."
+      ru: "К 0,5 г ацетата свинца прибавляют воду до его растворения."
+      en: "Add water to 0.5 g of lead acetate until it dissolves."
+    - uz: "25 ml 10 % li kaliy nitrat eritmasini qo‘shing, aralashmani ajratgich voronkaga o‘tkazing va 50 ml 1 % li ammoniy (yoki natriy) dietilditiokarbamat eritmasini qo‘shing."
+      ru: "Прибавляют 25 мл 10 %-го раствора нитрата калия, смесь переносят в делительную воронку и прибавляют 50 мл 1 %-го раствора диэтилдитиокарбамата аммония (или натрия)."
+      en: "Add 25 mL of 10 % potassium nitrate solution, transfer the mixture to a separatory funnel and add 50 mL of 1 % ammonium (or sodium) diethyldithiocarbamate solution."
+    - uz: "Cho‘kma erib, to‘liq xloroform qatlamiga o‘tguncha yangi xloroform ulushlari (har biri 50 ml) bilan bir necha marta chayqating."
+      ru: "Несколько раз взбалтывают с новыми порциями хлороформа (по 50 мл), пока осадок не растворится и полностью не перейдёт в хлороформный слой."
+      en: "Shake several times with fresh portions of chloroform (50 mL each) until the precipitate dissolves and passes completely into the chloroform layer."
+    - uz: "Xloroformli ekstraktlarni birlashtiring, xloroform bilan 250 ml gacha yetkazing, filtrlang va reaktiv sifatida ishlating."
+      ru: "Хлороформные вытяжки соединяют, доводят хлороформом до 250 мл, фильтруют и применяют как реактив."
+      en: "Combine the chloroform extracts, make up to 250 mL with chloroform, filter and use as the reagent."
+
+- num: 15
+  slug: silver-diethyldithiocarbamate-pyridine
+  names: {uz: "Kumush dietilditiokarbamat (piridindagi eritma)", ru: "Диэтилдитиокарбамат серебра (раствор в пиридине)", en: "Silver diethyldithiocarbamate (solution in pyridine)"}
+  synonyms: ["AgDDTC", "silver DDTC"]
+  extra_hazards: [pyridine]
+  ing:
+    - [na_ddtc, 3, g]
+    - [water, 200, mL]
+    - [agno3, 50, mL, {spec: "%:7"}]
+    - [pyridine, null, null, {q: to_05pct}]
+  steps:
+    - uz: "200 ml suvda 3 g natriy dietilditiokarbamatni eriting va 50 ml 7 % li kumush nitrat eritmasini qo‘shing."
+      ru: "В 200 мл воды растворяют 3 г диэтилдитиокарбамата натрия и прибавляют 50 мл 7 %-го раствора нитрата серебра."
+      en: "Dissolve 3 g of sodium diethyldithiocarbamate in 200 mL of water and add 50 mL of 7 % silver nitrate solution."
+    - uz: "Cho‘kkan sariq cho‘kmani Byuxner voronkasida filtrlang va filtr qog‘oz varaqlari orasida quriting."
+      ru: "Выпавший жёлтый осадок отфильтровывают через воронку Бюхнера и высушивают между листами фильтровальной бумаги."
+      en: "Filter off the yellow precipitate on a Büchner funnel and dry it between sheets of filter paper."
+    - uz: "Shu cho‘kmadan piridinda 0,5 % li eritma tayyorlang."
+      ru: "Из осадка готовят 0,5 %-й раствор в пиридине."
+      en: "Prepare a 0.5 % solution of the precipitate in pyridine."
+  storage: {uz: "Salqin joyda, qorong‘i shisha idishda saqlanadi.", ru: "Сохраняют в прохладном месте в склянке из тёмного стекла.", en: "Store in a cool place in a dark-glass bottle."}
+  stability: {uz: "Eritma 10 sutka davomida yaroqli.", ru: "Раствор годен к употреблению 10 сут.", en: "The solution is usable for 10 days."}
+
+- num: 16
+  slug: potassium-iodide-sulfuric-ethanol
+  names: {uz: "Kaliy yodid (sulfat kislota va etil spirtidagi eritma)", ru: "Иодид калия (раствор в серной кислоте и этиловом спирте)", en: "Potassium iodide in sulfuric acid and ethanol"}
+  ing:
+    - [ki, 3, g]
+    - [h2so4_conc, 1, mL]
+    - [ethanol96, 5, mL]
+    - [water, 8, mL]
+  steps:
+    - uz: "3 g kaliy yodidga 1 ml konsentrlangan sulfat kislota, 5 ml etil spirti (96°) va 8 ml suv qo‘shing."
+      ru: "К 3 г иодида калия прибавляют 1 мл концентрированной серной кислоты, 5 мл этилового спирта (96°) и 8 мл воды."
+      en: "To 3 g of potassium iodide add 1 mL of concentrated sulfuric acid, 5 mL of ethanol (96°) and 8 mL of water."
+
+- num: 17
+  slug: copper-i-iodide-suspension
+  names: {uz: "Mis(I) yodid suspenziyasi", ru: "Иодид меди (I) (суспензия)", en: "Copper(I) iodide suspension"}
+  ing:
+    - [ki, 21.2, g]
+    - [water, 100, mL]
+    - [cuso4, 100, mL, {spec: "%:16"}]
+    - [water, null, null, {q: washing}]
+    - [na2so4, null, null, {spec: "N:2", q: washing}]
+    - [na2so4, null, null, {spec: "sat", q: washing}]
+    - [water, 100, mL]
+  steps:
+    - uz: "100 ml suvda 21,2 g kaliy yodidni eriting va 100 ml 16 % li mis(II) sulfat eritmasini qo‘shing."
+      ru: "В 100 мл воды растворяют 21,2 г иодида калия и прибавляют 100 мл 16 %-го раствора сульфата меди (II)."
+      en: "Dissolve 21.2 g of potassium iodide in 100 mL of water and add 100 mL of 16 % copper(II) sulfate solution."
+    - uz: "Hosil bo‘lgan mis(I) yodid cho‘kmasini tindiring va suyuqlikni ehtiyotkorlik bilan quyib oling."
+      ru: "Осадок иодида меди (I) отстаивают и осторожно сливают жидкость."
+      en: "Let the copper(I) iodide precipitate settle and carefully decant the liquid."
+    - uz: "Cho‘kmani bir necha marta suv bilan, so‘ng 2 n. natriy sulfat eritmasi bilan va yana suv bilan chayqating."
+      ru: "Осадок несколько раз взбалтывают с водой, затем с 2 н. раствором сульфата натрия и снова с водой."
+      en: "Shake the precipitate several times with water, then with 2 N sodium sulfate solution and again with water."
+    - uz: "Yoddan tozalangan cho‘kmani zarrachalarni koagulyatsiya qilish uchun to‘yingan natriy sulfat eritmasi bilan yuving."
+      ru: "Отмытый от иода осадок промывают насыщенным раствором сульфата натрия для коагуляции частиц."
+      en: "Wash the iodine-free precipitate with saturated sodium sulfate solution to coagulate the particles."
+    - uz: "Cho‘kmani qog‘oz filtrga o‘tkazing, suv bilan yuving, so‘ng silindrga o‘tkazib, 100 ml suv qo‘shing va chayqating."
+      ru: "Осадок переносят на бумажный фильтр, промывают водой, затем переносят в цилиндр, прибавляют 100 мл воды и взбалтывают."
+      en: "Transfer the precipitate to a paper filter, wash with water, then transfer to a cylinder, add 100 mL of water and shake."
+  storage: {uz: "Suspenziya qorong‘i shisha idishda saqlanadi.", ru: "Суспензию сохраняют в склянке из тёмного стекла.", en: "Store the suspension in a dark-glass bottle."}
+  flags:
+    - {kind: ambiguity, uz: "Manbada yodni yuvish uchun «2 n. natriy sulfat eritmasi» yozilgan; yodni yuvish uchun odatda natriy tiosulfat ishlatiladi — asl darslik bilan solishtirib tekshiring (matn o‘zgartirilmadi).", ru: "В источнике для отмывки от иода указан «2 н. раствор сульфата натрия»; для удаления иода обычно применяют тиосульфат натрия — сверьте с первоисточником (текст не изменён).", en: "The source specifies «2 N sodium sulfate» for washing out iodine; sodium thiosulfate is usually used for this — check against the original textbook (text left unchanged)."}
+
+- num: 18
+  slug: iodine-sublimed
+  names: {uz: "Sublimatlangan yod", ru: "Иод сублимированный", en: "Sublimed iodine"}
+  ing:
+    - [ki, 1, g]
+    - [cao, 2, g]
+    - [iodine, 6, g]
+  steps:
+    - uz: "Chinni hovonchada 1 g kaliy yodid, 2 g kalsiy oksid va 6 g yodni ezing."
+      ru: "В фарфоровой ступке растирают 1 г иодида калия, 2 г оксида кальция и 6 г иода."
+      en: "Grind 1 g of potassium iodide, 2 g of calcium oxide and 6 g of iodine in a porcelain mortar."
+    - uz: "Aralashmani yupqa devorli stakanga o‘tkazib, qum hammomiga qo‘ying; stakanni soat oynasi bilan yoping va oyna ustiga ozgina suv quying."
+      ru: "Смесь переносят в тонкостенный стакан на песочной бане, накрывают часовым стеклом и наливают на него немного воды."
+      en: "Transfer the mixture to a thin-walled beaker on a sand bath, cover with a watch glass and pour a little water onto the glass."
+    - uz: "Qizdiring: yod sublimatlanib, suv bilan sovitilgan oynada ignasimon kristallar shaklida o‘tiradi."
+      ru: "Нагревают: иод возгоняется и оседает на охлаждённом водой стекле в виде игольчатых кристаллов."
+      en: "Heat: the iodine sublimes and deposits as needle-shaped crystals on the water-cooled glass."
+  storage: {uz: "Eksikatorda kalsiy xlorid ustida saqlanadi; eksikator shlifini vazelin bilan moylamang.", ru: "Хранят в эксикаторе над хлоридом кальция; шлиф эксикатора не смазывают вазелином.", en: "Store in a desiccator over calcium chloride; do not grease the desiccator joint with petroleum jelly."}
+
+- num: 19
+  slug: iodine-twice-sublimed
+  names: {uz: "Ikki marta sublimatlangan yod", ru: "Иод дважды сублимированный", en: "Twice-sublimed iodine"}
+  ing:
+    - [ki, 1, g]
+    - [cao, 2, g]
+    - [iodine_1subl, 6, g]
+  steps:
+    - uz: "Chinni hovonchada 1 g kaliy yodid, 2 g kalsiy oksid va bir marta sublimatlab tozalangan 6 g yodni yaxshilab ezing."
+      ru: "В фарфоровой ступке тщательно растирают 1 г иодида калия, 2 г оксида кальция и 6 г иода, очищенного однократной сублимацией."
+      en: "Thoroughly grind 1 g of potassium iodide, 2 g of calcium oxide and 6 g of iodine purified by a single sublimation in a porcelain mortar."
+    - uz: "Aralashmani yupqa devorli stakanga o‘tkazib, qum hammomida «Sublimatlangan yod» dagi kabi sublimatlang."
+      ru: "Смесь переносят в тонкостенный стакан на песочной бане и проводят сублимацию, как для иода сублимированного."
+      en: "Transfer the mixture to a thin-walled beaker on a sand bath and sublime as described for sublimed iodine."
+  storage: {uz: "Eksikatorda kalsiy xlorid ustida saqlanadi; eksikator shlifini vazelin bilan moylamang.", ru: "Хранят в эксикаторе над хлоридом кальция; шлиф эксикатора не смазывают вазелином.", en: "Store in a desiccator over calcium chloride; do not grease the desiccator joint with petroleum jelly."}
+
+- num: 20
+  slug: sodium-cobaltinitrite
+  names: {uz: "Natriy kobaltinitrit eritmasi", ru: "Кобальтинитрит натрия (раствор)", en: "Sodium cobaltinitrite solution"}
+  synonyms: ["sodium hexanitrocobaltate"]
+  ing:
+    - [nano2, 23, g]
+    - [water, 50, mL]
+    - [co_nitrate_iii, 3, g]
+    - [acetic_acid, 20, mL, {spec: "N:5"}]
+    - [water, 100, mL, {to: true}]
+  steps:
+    - uz: "50 ml suvda 23 g natriy nitritni eriting."
+      ru: "В 50 мл воды растворяют 23 г нитрита натрия."
+      en: "Dissolve 23 g of sodium nitrite in 50 mL of water."
+    - uz: "3 g kobalt nitrat (manbada — kobalt(III) nitrat), 20 ml 5 n. sirka kislota eritmasini qo‘shing, so‘ng suv bilan 100 ml gacha yetkazing."
+      ru: "Прибавляют 3 г нитрата кобальта (в источнике — кобальта (III)), 20 мл 5 н. раствора уксусной кислоты, затем воду до 100 мл."
+      en: "Add 3 g of cobalt nitrate (the source says cobalt(III) nitrate) and 20 mL of 5 N acetic acid, then make up to 100 mL with water."
+    - uz: "Eritmani bir sutkaga qoldiring, so‘ng filtrlang."
+      ru: "Раствор оставляют на сутки, затем фильтруют."
+      en: "Leave the solution for 24 hours, then filter."
+  stability: {uz: "Reaktiv yangi tayyorlangan holda ishlatiladi.", ru: "Реактив используют свежеприготовленным.", en: "Use the reagent freshly prepared."}
+  flags:
+    - {kind: ambiguity, uz: "Manbada «kobalt(III) nitrat» deb yozilgan; bu reaktiv odatda kobalt(II) nitratdan tayyorlanadi — asl manba bilan tekshiring.", ru: "В источнике указан «нитрат кобальта (III)»; обычно этот реактив готовят из нитрата кобальта (II) — сверьте с первоисточником.", en: "The source says «cobalt(III) nitrate»; this reagent is usually prepared from cobalt(II) nitrate — verify against the original."}
+
+- num: 21
+  slug: methyl-violet-solution
+  names: {uz: "Metil binafsha eritmasi", ru: "Метиловый фиолетовый (раствор)", en: "Methyl violet solution"}
+  ing:
+    - [methyl_violet, 0.5, g]
+    - [water, 400, mL]
+    - [hcl_conc, 5, mL]
+    - [na2so4, 12.1, g]
+    - [hcl_conc, 5, mL]
+    - [charcoal, 5, g]
+    - [water, 500, mL, {to: true}]
+  steps:
+    - uz: "400 ml suvda 0,5 g metil binafshani eriting; 5 ml konsentrlangan xlorid kislota, 12,1 g natriy sulfat va yana 5 ml konsentrlangan xlorid kislota qo‘shing."
+      ru: "В 400 мл воды растворяют 0,5 г метилового фиолетового, прибавляют 5 мл концентрированной соляной кислоты, 12,1 г сульфата натрия и ещё 5 мл концентрированной соляной кислоты."
+      en: "Dissolve 0.5 g of methyl violet in 400 mL of water; add 5 mL of concentrated hydrochloric acid, 12.1 g of sodium sulfate and another 5 mL of concentrated hydrochloric acid."
+    - uz: "Suyuqlikni 8 soatga qoldiring, so‘ng 5 g faollashtirilgan ko‘mir qo‘shing, yaxshilab chayqating va filtrlang."
+      ru: "Жидкость оставляют на 8 ч, затем прибавляют 5 г активированного угля, хорошо взбалтывают и фильтруют."
+      en: "Leave for 8 h, then add 5 g of activated charcoal, shake well and filter."
+    - uz: "Filtratni suv bilan 500 ml gacha suyultiring."
+      ru: "Фильтрат разбавляют водой до 500 мл."
+      en: "Dilute the filtrate to 500 mL with water."
+  stability: {uz: "Tayyorlangandan keyin ikki oy davomida yaroqli.", ru: "Пригоден к употреблению в течение двух месяцев после приготовления.", en: "Usable for two months after preparation."}
+
+- num: 22
+  slug: alpha-naphthol-solution
+  names: {uz: "α-Naftol eritmasi", ru: "α-Нафтол (раствор)", en: "α-Naphthol solution"}
+  synonyms: ["alpha-naphthol", "1-naphthol", "альфа-нафтол"]
+  ing:
+    - [naphthol_a, 0.05, g]
+    - [ethanol, 100, mL, {spec: "pct:40", to: true}]
+  steps:
+    - uz: "0,05 g α-naftolni 40 % li etil spirtida eriting va hajmni shu spirt bilan 100 ml gacha yetkazing."
+      ru: "0,05 г α-нафтола растворяют в 40 %-м этиловом спирте и доводят объём тем же спиртом до 100 мл."
+      en: "Dissolve 0.05 g of α-naphthol in 40 % ethanol and make up to 100 mL with the same ethanol."
+
+- num: 23
+  slug: beta-naphthol-solution
+  names: {uz: "β-Naftol eritmasi", ru: "β-Нафтол (раствор)", en: "β-Naphthol solution"}
+  synonyms: ["beta-naphthol", "2-naphthol", "бета-нафтол"]
+  ing:
+    - [naphthol_b, 2, g]
+    - [naoh, 40, mL, {spec: "%:10"}]
+    - [water, 100, mL, {to: true}]
+  steps:
+    - uz: "40 ml 10 % li natriy gidroksid eritmasida 2 g β-naftolni eriting va suv bilan 100 ml gacha yetkazing."
+      ru: "В 40 мл 10 %-го раствора гидроксида натрия растворяют 2 г β-нафтола и прибавляют воду до 100 мл."
+      en: "Dissolve 2 g of β-naphthol in 40 mL of 10 % sodium hydroxide solution and make up to 100 mL with water."
+  stability: {uz: "Eritma yangi tayyorlangan holda ishlatiladi.", ru: "Раствор используют свежеприготовленным.", en: "Use the solution freshly prepared."}
+
+- num: 24
+  slug: nile-blue-ethanolic
+  names: {uz: "Nil ko‘ki (spirtli eritma)", ru: "Нильский голубой (спиртовой раствор)", en: "Nile blue (ethanolic solution)"}
+  extra_hazards: [ethanol]
+  ing:
+    - [nile_blue, null, null, {spec: "etoh%:0.1", q: not_stated}]
+  steps:
+    - uz: "Nil ko‘kining 0,1 % li spirtli eritmasi tayyorlanadi (manbada tortim va hajm ko‘rsatilmagan)."
+      ru: "Используют спиртовой 0,1 %-й раствор нильского голубого (навеска и объём в источнике не указаны)."
+      en: "A 0.1 % ethanolic solution of Nile blue is used (the source gives no mass or volume)."
+  notes:
+    - {kind: purpose, uz: "Indikator: pH 10,1–11,1 oralig‘ida ko‘k rang qizilga o‘tadi. Nil ko‘ki oksazin qatori bo‘yoqlariga kiradi.", ru: "Индикатор: синяя окраска при pH 10,1–11,1 переходит в красную. Нильский голубой относится к красителям оксазинового ряда.", en: "Indicator: the blue colour changes to red at pH 10.1–11.1. Nile blue is an oxazine dye."}
+    - {kind: info, uz: "O‘tish oralig‘i yaqin bo‘lgan indikator — alizarin sariq R: pH 10,1–12,1 da sariq rang binafsha (siyohrang)ga o‘tadi.", ru: "Близкий интервал перехода имеет ализариновый жёлтый Р: жёлтая окраска при pH 10,1–12,1 переходит в лиловую.", en: "Alizarin yellow R has a similar transition range: yellow changes to lilac at pH 10.1–12.1."}
+  flags:
+    - {kind: ambiguity, uz: "Tayyorlash tartibi va miqdorlar manbada berilmagan — faqat konsentratsiya (0,1 %).", ru: "Порядок приготовления и количества в источнике не приведены — только концентрация (0,1 %).", en: "The source gives no preparation procedure or amounts — only the concentration (0.1 %)."}
+
+- num: 25
+  slug: bismuth-nitrate-solution
+  names: {uz: "Vismut nitrat eritmasi", ru: "Нитрат висмута (раствор)", en: "Bismuth nitrate solution"}
+  ing:
+    - [bi_nitrate, 0.43, g]
+    - [acetic_glacial, 30, mL]
+    - [water, 150, mL, {to: true}]
+  steps:
+    - uz: "0,43 g vismut nitratga 30 ml muzsimon sirka kislota qo‘shib chayqating."
+      ru: "К 0,43 г нитрата висмута прибавляют 30 мл ледяной уксусной кислоты и взбалтывают."
+      en: "Add 30 mL of glacial acetic acid to 0.43 g of bismuth nitrate and shake."
+    - uz: "Hosil bo‘lgan eritmani suv bilan 150 ml gacha yetkazing."
+      ru: "К раствору прибавляют воду до 150 мл."
+      en: "Make the solution up to 150 mL with water."
+
+- num: 26
+  slug: copper-nitrate-ammoniacal
+  names: {uz: "Mis nitrat (ammiakli eritma)", ru: "Нитрат меди (аммиачный раствор)", en: "Copper nitrate, ammoniacal solution"}
+  ing:
+    - [water, null, null, {q: small_volume}]
+    - [cu_nitrate_i, 1, g]
+    - [nh2oh_hcl, 4, g]
+    - [ammonia, 5, mL, {spec: "%:20"}]
+    - [water, 50, mL, {to: true}]
+  steps:
+    - uz: "Oz hajm suvda 1 g mis nitrat (manbada — mis(I) nitrat) va 4 g gidroksilamin gidroxloridni eriting; 5 ml 20 % li ammiak eritmasini qo‘shing."
+      ru: "В небольшом объёме воды растворяют 1 г нитрата меди (в источнике — меди (I)) и 4 г гидрохлорида гидроксиламина, прибавляют 5 мл 20 %-го раствора аммиака."
+      en: "In a small volume of water dissolve 1 g of copper nitrate (the source says copper(I) nitrate) and 4 g of hydroxylamine hydrochloride; add 5 mL of 20 % ammonia solution."
+    - uz: "Rangsizlanguncha chayqating, so‘ng suv bilan 50 ml gacha yetkazing."
+      ru: "Взбалтывают до обесцвечивания, затем прибавляют воду до 50 мл."
+      en: "Shake until colourless, then make up to 50 mL with water."
+  flags:
+    - {kind: ambiguity, uz: "Manbada «mis(I) nitrat» yozilgan; bu reaktivda odatda mis(II) nitrat ishlatiladi (gidroksilamin uni mis(I) gacha qaytaradi) — asl manba bilan tekshiring.", ru: "В источнике указан «нитрат меди (I)»; обычно используют нитрат меди (II), который гидроксиламин восстанавливает до меди (I), — сверьте с первоисточником.", en: "The source says «copper(I) nitrate»; copper(II) nitrate is normally used (hydroxylamine reduces it to copper(I)) — verify against the original."}
+
+- num: 27
+  slug: pyridine-freshly-distilled
+  names: {uz: "Yangi haydalgan piridin", ru: "Пиридин свежеперегнанный", en: "Freshly distilled pyridine"}
+  ing:
+    - [pyridine, null, null, {q: as_needed}]
+    - [koh_granules, null, null, {q: as_needed}]
+    - [bao, null, null, {q: as_needed}]
+  steps:
+    - uz: "Tijorat piridinini bir sutka davomida kaliy gidroksid granulalari ustida tindiring."
+      ru: "Товарный пиридин в течение суток настаивают с гранулами гидроксида калия."
+      en: "Let commercial pyridine stand over potassium hydroxide granules for 24 hours."
+    - uz: "Piridinni haydash qurilmasining quritilgan kolbasiga quyib oling va bariy oksid qo‘shing."
+      ru: "Пиридин сливают в высушенную колбу аппарата для перегонки и прибавляют оксид бария."
+      en: "Decant the pyridine into the dried flask of a distillation apparatus and add barium oxide."
+    - uz: "Piridinni glitserin hammomida haydang."
+      ru: "Пиридин отгоняют на глицериновой бане."
+      en: "Distil the pyridine on a glycerol bath."
+  storage: {uz: "Haydalgan piridin shlifli tiqinli idishlarda saqlanadi.", ru: "Отогнанный пиридин сохраняют в склянках с притёртой пробкой.", en: "Store the distilled pyridine in ground-glass-stoppered bottles."}
+  notes:
+    - {kind: purpose, uz: "Tijorat piridinidagi aralashmalar bir qator moddalarni aniqlash va miqdoriy o‘lchashga xalaqit beradi; bu — tozalash usullaridan biri.", ru: "Примеси в товарном пиридине мешают обнаружению и количественному определению ряда веществ; приведён один из способов очистки.", en: "Impurities in commercial pyridine interfere with detecting and quantifying a number of substances; this is one of several purification methods."}
+    - {kind: info, uz: "Boshqa usullar adabiyotda bayon etilgan (masalan: Houben-Weyl. Organik kimyo metodlari, 2 jildda. M.: Ximiya, 1967, 2-jild).", ru: "Другие способы описаны в литературе (например: А. Губен-Вейль. Методы органической химии: в 2 т. — М.: Химия, 1967. — Т. 2).", en: "Other methods are described in the literature (e.g., Houben-Weyl, Methods of Organic Chemistry, 2 vols., Moscow: Khimiya, 1967, vol. 2)."}
+  flags:
+    - {kind: ambiguity, uz: "Miqdorlar manbada berilmagan.", ru: "Количества в источнике не указаны.", en: "The source gives no amounts."}
+
+- num: 28
+  slug: pyridine-thiocyanate-reagent
+  names: {uz: "Piridin-rodanid reaktivi", ru: "Пиридин-роданидный реактив", en: "Pyridine–thiocyanate reagent"}
+  ing:
+    - [pyridine, null, null, {spec: "aq%:50", q: equal_vol}]
+    - [nh4scn, null, null, {spec: "aq%:20", q: equal_vol}]
+  steps:
+    - uz: "Piridinning 50 % li suvli eritmasi va ammoniy rodanidning 20 % li suvli eritmasini teng hajmda aralashtiring."
+      ru: "Смешивают равные объёмы 50 %-го водного раствора пиридина и 20 %-го водного раствора роданида аммония."
+      en: "Mix equal volumes of 50 % aqueous pyridine and 20 % aqueous ammonium thiocyanate."
+
+- num: 29
+  slug: bouchardat
+  names: {uz: "Bushard reaktivi", ru: "Реактив Бушарда", en: "Bouchardat reagent"}
+  synonyms: ["Bouchardat", "Bushard", "Bushardat", "Бушарда", "Бушард"]
+  ing:
+    - [ki, 2, g]
+    - [water, 10, mL, {max: 15}]
+    - [iodine, 1.27, g]
+    - [water, 100, mL, {to: true}]
+  steps:
+    - uz: "10–15 ml suvda 2 g kaliy yodidni eriting."
+      ru: "В 10–15 мл воды растворяют 2 г иодида калия."
+      en: "Dissolve 2 g of potassium iodide in 10–15 mL of water."
+    - uz: "1,27 g yod qo‘shing; yod erigach, suv bilan 100 ml gacha yetkazing."
+      ru: "Прибавляют 1,27 г иода; после растворения иода доводят водой до 100 мл."
+      en: "Add 1.27 g of iodine; once it has dissolved, make up to 100 mL with water."
+
+- num: 30
+  slug: wagner
+  names: {uz: "Vagner reaktivi", ru: "Реактив Вагнера", en: "Wagner reagent"}
+  synonyms: ["Wagner", "Vagner", "Вагнера", "Вагнер"]
+  ing:
+    - [ki, 2, g]
+    - [water, 10, mL, {max: 15}]
+    - [iodine, 1, g]
+    - [water, 50, mL, {to: true}]
+  steps:
+    - uz: "10–15 ml suvda 2 g kaliy yodidni eriting."
+      ru: "В 10–15 мл воды растворяют 2 г иодида калия."
+      en: "Dissolve 2 g of potassium iodide in 10–15 mL of water."
+    - uz: "1 g yod qo‘shing; yod erigach, suv bilan 50 ml gacha yetkazing."
+      ru: "Прибавляют 1 г иода; после растворения иода доводят водой до 50 мл."
+      en: "Add 1 g of iodine; once it has dissolved, make up to 50 mL with water."
+  flags:
+    - {kind: ambiguity, uz: "Asl matnda nom «Вагиера» (OCR xatosi) — «Вагнера» deb o‘qildi.", ru: "В исходном тексте «Вагиера» (ошибка распознавания) — прочитано как «Вагнера».", en: "The original text reads «Вагиера» (OCR error), read as «Вагнера» (Wagner)."}
+
+- num: 31
+  slug: griess
+  names: {uz: "Griss reaktivi", ru: "Реактив Грисса", en: "Griess reagent"}
+  synonyms: ["Griess", "Griss", "Грисса", "Грисс"]
+  ing:
+    - [sulfanilic, null, null, {spec: "ac30%:1", q: equal_vol, role: {uz: "A eritma", ru: "раствор А", en: "solution A"}}]
+    - [naphthylamine_a, null, null, {spec: "ac30%:0.1", q: equal_vol, role: {uz: "B eritma", ru: "раствор Б", en: "solution B"}}]
+  extra_hazards: [acetic_acid]
+  steps:
+    - uz: "Ikki eritma tayyorlang: A — sulfanil kislotaning 30 % li sirka kislotadagi 1 % li eritmasi; B — α-naftilaminning 30 % li sirka kislotadagi 0,1 % li eritmasi."
+      ru: "Готовят два раствора: А — 1 %-й раствор сульфаниловой кислоты в 30 %-м растворе уксусной кислоты; Б — 0,1 %-й раствор α-нафтиламина в 30 %-м растворе уксусной кислоты."
+      en: "Prepare two solutions: A — 1 % sulfanilic acid in 30 % acetic acid; B — 0.1 % α-naphthylamine in 30 % acetic acid."
+    - uz: "Ishlatishdan oldin A va B eritmalarni teng hajmda aralashtiring."
+      ru: "Перед употреблением смешивают равные объёмы растворов А и Б."
+      en: "Mix equal volumes of solutions A and B before use."
+  notes:
+    - {kind: purpose, uz: "Nitritlarni aniqlash uchun qo‘llaniladi.", ru: "Применяется для обнаружения нитритов.", en: "Used for detecting nitrites."}
+
+- num: 32
+  slug: dragendorff
+  merge: reagent-dragendorff
+  names: {uz: "Dragendorf reaktivi", ru: "Реактив Драгендорфа", en: "Dragendorff reagent"}
+  synonyms: ["Dragendorff", "Dragendorf", "Dragendorff's reagent", "Драгендорфа", "Драгендорф", "Драгендорфа реактив"]
+  ing:
+    - [bi_subnitrate, 8, g]
+    - [hno3, 20, mL, {spec: "d:1.18"}]
+    - [ki, 27.2, g]
+    - [water, 30, mL]
+    - [water, 100, mL, {to: true}]
+  steps:
+    - uz: "20 ml nitrat kislotada (zichligi 1,18) 8 g asosli vismut nitratni eriting."
+      ru: "В 20 мл азотной кислоты (пл. 1,18) растворяют 8 г основного нитрата висмута."
+      en: "Dissolve 8 g of basic bismuth nitrate in 20 mL of nitric acid (density 1.18)."
+    - uz: "Hosil bo‘lgan eritmani 30 ml suvda 27,2 g kaliy yodid saqlovchi eritmaga quying."
+      ru: "Полученный раствор вливают в раствор 27,2 г иодида калия в 30 мл воды."
+      en: "Pour the solution into a solution of 27.2 g of potassium iodide in 30 mL of water."
+    - uz: "Bir necha kundan keyin suyuqlikni filtrlang va suv bilan 100 ml gacha suyultiring."
+      ru: "Через несколько дней жидкость фильтруют и разбавляют водой до 100 мл."
+      en: "After several days filter the liquid and dilute to 100 mL with water."
+
+- num: 33
+  slug: dragendorff-munier
+  names: {uz: "Dragendorf reaktivi (Myunye modifikatsiyasi)", ru: "Реактив Драгендорфа, модифицированный по Мунье", en: "Dragendorff reagent, Munier modification"}
+  synonyms: ["Dragendorff Munier", "Dragendorf Munye", "Munier", "Мунье", "Драгендорфа Мунье"]
+  ing:
+    - [bi_subnitrate, 0.85, g]
+    - [acetic_glacial, 10, mL]
+    - [water, 40, mL]
+    - [ki, 8, g]
+    - [water, 20, mL]
+    - [acetic_glacial, 2, mL, {role: {uz: "ishlatishdan oldin (1 ml eritmaga)", ru: "перед употреблением (на 1 мл раствора)", en: "before use (per 1 mL of stock)"}}]
+    - [water, 10, mL, {role: {uz: "ishlatishdan oldin (1 ml eritmaga)", ru: "перед употреблением (на 1 мл раствора)", en: "before use (per 1 mL of stock)"}}]
+  steps:
+    - uz: "10 ml muzsimon sirka kislotada 0,85 g asosli vismut nitratni eriting va 40 ml suv qo‘shing."
+      ru: "В 10 мл ледяной уксусной кислоты растворяют 0,85 г основного нитрата висмута и прибавляют 40 мл воды."
+      en: "Dissolve 0.85 g of basic bismuth nitrate in 10 mL of glacial acetic acid and add 40 mL of water."
+    - uz: "Unga 20 ml suvda 8 g kaliy yodid saqlovchi eritmani qo‘shing."
+      ru: "К этой жидкости прибавляют раствор 8 г иодида калия в 20 мл воды."
+      en: "Add a solution of 8 g of potassium iodide in 20 mL of water."
+    - uz: "Ishlatishdan oldin shu eritmadan 1 ml oling, unga 2 ml muzsimon sirka kislota va 10 ml suv qo‘shing."
+      ru: "Перед употреблением берут 1 мл этого раствора, прибавляют 2 мл ледяной уксусной кислоты и 10 мл воды."
+      en: "Before use, take 1 mL of this solution and add 2 mL of glacial acetic acid and 10 mL of water."
+  flags:
+    - {kind: ambiguity, uz: "Asl matnda «Муиье» (OCR xatosi) — «Мунье» (Munier) deb o‘qildi.", ru: "В исходном тексте «Муиье» (ошибка распознавания) — прочитано как «Мунье».", en: "The original text reads «Муиье» (OCR error), read as «Мунье» (Munier)."}
+
+- num: 34
+  slug: sonnenschein
+  names: {uz: "Zonnenshteyn reaktivi", ru: "Реактив Зонненштейна", en: "Sonnenschein reagent"}
+  synonyms: ["Sonnenschein", "Zonnenshteyn", "Зонненштейна"]
+  ing:
+    - [na2hpo4, null, null, {q: as_needed}]
+    - [nh4_moo4_in_hno3, null, null, {q: as_needed}]
+    - [na2co3, null, null, {q: small_volume}]
+    - [water, null, null, {q: tenfold}]
+    - [hno3, null, null, {q: until_ppt_dissolves}]
+  steps:
+    - uz: "Natriy gidrofosfat eritmasiga ammoniy molibdatning nitrat kislotadagi eritmasini qo‘shing."
+      ru: "К раствору моногидрофосфата натрия прибавляют раствор молибдата аммония в азотной кислоте."
+      en: "Add a solution of ammonium molybdate in nitric acid to a solution of disodium hydrogen phosphate."
+    - uz: "Hosil bo‘lgan cho‘kmani filtrlang va oz hajm natriy karbonat eritmasida eriting."
+      ru: "Образовавшийся осадок отфильтровывают и растворяют в небольшом объёме раствора карбоната натрия."
+      en: "Filter off the precipitate and dissolve it in a small volume of sodium carbonate solution."
+    - uz: "Eritmani quruq qoldiqqacha bug‘lating, qoldiqni qizdirib kuydiring va soviting."
+      ru: "Раствор выпаривают досуха, сухой остаток прокаливают и охлаждают."
+      en: "Evaporate to dryness, ignite the residue and cool."
+    - uz: "Qoldiqqa o‘n baravar miqdorda suv va cho‘kma eriguncha nitrat kislota qo‘shing."
+      ru: "К остатку прибавляют десятикратное количество воды и азотную кислоту до растворения осадка."
+      en: "Add a tenfold amount of water to the residue and nitric acid until the precipitate dissolves."
+  flags:
+    - {kind: ambiguity, uz: "Miqdor va konsentratsiyalar manbada berilmagan. Asl matnda nom «Зоннеишейиа» (OCR xatosi) — «Зонненштейна» deb o‘qildi.", ru: "Количества и концентрации в источнике не указаны. В исходном тексте «Зоннеишейиа» (ошибка распознавания) — прочитано как «Зонненштейна».", en: "The source gives no amounts or concentrations. The original reads «Зоннеишейиа» (OCR error), read as «Зонненштейна» (Sonnenschein)."}
+
+- num: 35
+  slug: mayer
+  names: {uz: "Mayer reaktivi", ru: "Реактив Майера", en: "Mayer reagent"}
+  synonyms: ["Mayer", "Mayer's reagent", "Майера", "Майер", "potassium mercuric iodide"]
+  ing:
+    - [hgcl2, 1.35, g]
+    - [ki, 20, mL, {spec: "%:25"}]
+    - [water, 100, mL, {to: true}]
+  steps:
+    - uz: "1,35 g simob(II) xloridga 20 ml 25 % li kaliy yodid eritmasini qo‘shing."
+      ru: "К 1,35 г хлорида ртути (II) прибавляют 20 мл 25 %-го раствора иодида калия."
+      en: "Add 20 mL of 25 % potassium iodide solution to 1.35 g of mercury(II) chloride."
+    - uz: "Simob xlorid erigach, suv bilan 100 ml gacha yetkazing."
+      ru: "После растворения хлорида ртути прибавляют воду до 100 мл."
+      en: "Once the mercury chloride has dissolved, make up to 100 mL with water."
+
+- num: 36
+  slug: marquis
+  merge: reagent-marquis
+  names: {uz: "Marki reaktivi", ru: "Реактив Марки", en: "Marquis reagent"}
+  synonyms: ["Marquis", "Marki", "Marquis reagent", "Марки", "Марки реактив"]
+  ing:
+    - [h2so4_conc, 1, mL]
+    - [formalin, 1, drop]
+  steps:
+    - uz: "1 ml konsentrlangan sulfat kislotaga bir tomchi formalin qo‘shing va soviting."
+      ru: "К 1 мл концентрированной серной кислоты прибавляют каплю формалина и охлаждают."
+      en: "Add one drop of formalin to 1 mL of concentrated sulfuric acid and cool."
+  stability: {uz: "Reaktiv yangi tayyorlangan holda ishlatiladi.", ru: "Реактив используют свежеприготовленным.", en: "Use the reagent freshly prepared."}
+
+- num: 37
+  slug: mandelin
+  names: {uz: "Mandelin reaktivi", ru: "Реактив Манделина", en: "Mandelin reagent"}
+  synonyms: ["Mandelin", "Манделина", "Манделин", "ammonium vanadate in sulfuric acid"]
+  ing:
+    - [nh4vo3, 0.01, g]
+    - [h2so4_conc, 2, mL]
+  steps:
+    - uz: "0,01 g ammoniy vanadatga 2 ml konsentrlangan sulfat kislota qo‘shing."
+      ru: "К 0,01 г ванадата аммония прибавляют 2 мл концентрированной серной кислоты."
+      en: "Add 2 mL of concentrated sulfuric acid to 0.01 g of ammonium vanadate."
+  stability: {uz: "Reaktiv yangi tayyorlangan bo‘lishi kerak.", ru: "Реактив должен быть свежеприготовленным.", en: "The reagent must be freshly prepared."}
+  flags:
+    - {kind: ambiguity, uz: "Asl matnda nom «Маиделина» (OCR xatosi) — «Манделина» deb o‘qildi.", ru: "В исходном тексте «Маиделина» (ошибка распознавания) — прочитано как «Манделина».", en: "The original reads «Маиделина» (OCR error), read as «Манделина» (Mandelin)."}

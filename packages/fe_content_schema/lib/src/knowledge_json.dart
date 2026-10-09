@@ -35,6 +35,8 @@ abstract final class KnowledgeJson {
     'text': n.text,
     'source_id': n.sourceId,
     if (n.locator != null) 'locator': n.locator,
+    if (n.texts.isNotEmpty) 'texts': n.texts,
+    if (n.kind != null) 'kind': n.kind,
   };
 
   static SourcedNote? noteFrom(Object? j) {
@@ -44,6 +46,8 @@ abstract final class KnowledgeJson {
       text: _req<String>(m, 'text'),
       sourceId: _req<String>(m, 'source_id'),
       locator: m['locator'] as String?,
+      texts: _strMap(m['texts']),
+      kind: m['kind'] as String?,
     );
   }
 
@@ -69,12 +73,22 @@ abstract final class KnowledgeJson {
           'unit': i.unit,
           if (i.role != null) 'role': i.role,
           if (i.grade != null) 'grade': i.grade,
+          if (i.names.isNotEmpty) 'names': i.names,
+          if (i.amountMax != null) 'amount_max': i.amountMax,
+          if (i.makeUpTo) 'make_up_to': true,
+          if (i.quantityNote.isNotEmpty) 'quantity_note': i.quantityNote,
+          if (i.variant != null) 'variant': i.variant,
         },
     ],
     if (r.finalVolume != null) 'final_volume': value(r.finalVolume!),
     'steps': [
       for (final s in r.steps)
-        {'text': s.text, if (s.order != null) 'order': s.order},
+        {
+          'text': s.text,
+          if (s.order != null) 'order': s.order,
+          if (s.texts.isNotEmpty) 'texts': s.texts,
+          if (s.variant != null) 'variant': s.variant,
+        },
     ],
     'order_explicit_in_source': r.orderExplicitInSource,
     if (r.storage != null) 'storage': note(r.storage!),
@@ -93,6 +107,21 @@ abstract final class KnowledgeJson {
     if (r.expiry != null) 'expiry': note(r.expiry!),
     'ppe': [for (final n in r.ppe) note(n)],
     'calculator_ids': r.calculatorIds,
+    if (r.synonyms.isNotEmpty) 'synonyms': r.synonyms,
+    if (r.variants.isNotEmpty)
+      'variants': [
+        for (final v in r.variants)
+          {
+            'variant_id': v.id,
+            if (v.labels.isNotEmpty) 'labels': v.labels,
+            if (v.sourceId != null) 'source_id': v.sourceId,
+          },
+      ],
+    if (r.notes.isNotEmpty) 'notes': [for (final n in r.notes) note(n)],
+    if (r.originalText != null) 'original_text': r.originalText,
+    if (r.originalLanguage != null) 'original_language': r.originalLanguage,
+    if (r.originalSourceId != null) 'original_source_id': r.originalSourceId,
+    if (r.translationStatus != null) 'translation_status': r.translationStatus,
   };
 
   static SolutionRecipe recipeFrom(Object? j) {
@@ -111,10 +140,15 @@ abstract final class KnowledgeJson {
             final i = _map(e);
             return Ingredient(
               name: _req<String>(i, 'name'),
-              amount: _req<num>(i, 'amount'),
-              unit: _req<String>(i, 'unit'),
+              amount: i['amount'] as num?,
+              unit: i['unit'] as String?,
               role: i['role'] as String?,
               grade: i['grade'] as String?,
+              names: _strMap(i['names']),
+              amountMax: i['amount_max'] as num?,
+              makeUpTo: i['make_up_to'] == true,
+              quantityNote: _strMap(i['quantity_note']),
+              variant: i['variant'] as String?,
             );
           }(),
       ],
@@ -126,6 +160,8 @@ abstract final class KnowledgeJson {
             return PreparationStep(
               text: _req<String>(s, 'text'),
               order: s['order'] as int?,
+              texts: _strMap(s['texts']),
+              variant: s['variant'] as String?,
             );
           }(),
       ],
@@ -145,6 +181,23 @@ abstract final class KnowledgeJson {
       expiry: noteFrom(m['expiry']),
       ppe: _notes(m['ppe']),
       calculatorIds: _strList(m['calculator_ids']),
+      synonyms: _strList(m['synonyms']),
+      variants: [
+        for (final e in (m['variants'] as List? ?? const []))
+          () {
+            final v = _map(e);
+            return RecipeVariant(
+              id: _req<String>(v, 'variant_id'),
+              labels: _strMap(v['labels']),
+              sourceId: v['source_id'] as String?,
+            );
+          }(),
+      ],
+      notes: _notes(m['notes']),
+      originalText: m['original_text'] as String?,
+      originalLanguage: m['original_language'] as String?,
+      originalSourceId: m['original_source_id'] as String?,
+      translationStatus: m['translation_status'] as String?,
     );
   }
 

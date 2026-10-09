@@ -24,6 +24,8 @@ void main() {
     'sourcePmid',
     // SI birligi (g/mol) — barcha tillarda bir xil yoziladi.
     'rdGlanceMolarMass',
+    // Reaktiv retsepti: SI birligi «g» o‘zbekchada ham aynan shunday.
+    'reagentUnitG',
     'languageOptionSemantics',
     'moduleAi',
     'navAi',

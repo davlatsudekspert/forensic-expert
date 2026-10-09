@@ -173,7 +173,7 @@ void main() {
       ),
       // PHASE 4 bilim sohalari va yurisdiksiya solishtiruvi.
       (
-        'p4_reagent_norecipe_en',
+        'p4_reagent_marquis_en',
         s('en'),
         Routes.knowledgeEntry('reagent-marquis'),
         false,
