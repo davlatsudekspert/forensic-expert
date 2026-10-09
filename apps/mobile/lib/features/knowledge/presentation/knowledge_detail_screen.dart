@@ -253,11 +253,6 @@ class _Header extends StatelessWidget {
             reviews == 0 ? l.detailReviewsNone : l.detailReviewsCount(reviews),
             style: t.bodySmall,
           ),
-          Text(
-            l.detailVersionValue(entry.version, entry.packVersion ?? '—'),
-            style: FeThemeBuilder.numeric(t.bodySmall!)
-                .copyWith(color: c.textSecondary),
-          ),
         ],
       ),
     );

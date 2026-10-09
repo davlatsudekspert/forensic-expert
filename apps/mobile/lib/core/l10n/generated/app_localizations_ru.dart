@@ -1669,7 +1669,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get detailStructure => 'Химическая структура';
 
   @override
-  String get detailRelated => 'Связанные профессиональные материалы';
+  String get detailRelated => 'Связанные материалы';
 
   @override
   String get relationAnalysedBy =>

@@ -65,7 +65,7 @@ void main() {
       findsOneWidget,
     );
     // Hech biri «tasdiqlangan» emas; dalil darajasi ko‘rinadi.
-    expect(inAnalysis('morphine', find.text('Tekshiruv kerak')), findsWidgets);
+    expect(inAnalysis('morphine', find.text('Tekshirilmagan')), findsWidgets);
     expect(inAnalysis('morphine', find.text('Tasdiqlangan')), findsNothing);
     // Metabolitlar.
     await see(
@@ -140,7 +140,7 @@ void main() {
       inAnalysis(
         'cocaine',
         find.text(
-          'Skrining natijasi taxminiy — u tasdiqlovchi metod bilan '
+          'Skrining natijasi taxminiy — u tasdiqlovchi usul bilan '
           'tasdiqlanishi shart.',
         ),
       ),
@@ -157,7 +157,7 @@ void main() {
     expect(
       find.text(
         'Kontent paketida bu modda uchun hozircha manbali tahlil ma’lumoti '
-        '(namuna, metod yoki metabolit) yo‘q.',
+        '(namuna, usul yoki metabolit) yo‘q.',
       ),
       findsOneWidget,
     );

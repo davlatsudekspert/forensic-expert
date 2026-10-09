@@ -43,6 +43,7 @@ k("analysisMethodsTitle","Analysis subsection.","Analytical methods","Анали
 k("analysisMethodsRoleNote","Analytical methods note.","Mentioned with this substance in a source; not a validated procedure.","Упомянут с этим веществом в источнике; не валидированная методика.","Manbada shu modda bilan tilga olingan; tasdiqlangan protsedura emas.")
 k("analysisMethodsNotPaired","Methods not linked to specimens.","Sources do not tie these methods to a specific specimen.","Источники не привязывают эти методы к конкретному объекту.","Manbalar bu usullarni aniq namunaga bog‘lamaydi.")
 
+k("detailRelated","Entry page section header.","Related materials","Связанные материалы","Bog‘liq materiallar")
 for idx, code in enumerate(["en","ru","uz"]):
     p = f"{D}/app_{code}.arb"
     data = json.load(open(p, encoding="utf-8"), object_pairs_hook=collections.OrderedDict)

@@ -1670,7 +1670,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get detailStructure => 'Kimyoviy tuzilish';
 
   @override
-  String get detailRelated => 'Bog‘liq professional materiallar';
+  String get detailRelated => 'Bog‘liq materiallar';
 
   @override
   String get relationAnalysedBy => 'Tahlil usuli (manbada tilga olingan)';

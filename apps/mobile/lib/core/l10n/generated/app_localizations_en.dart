@@ -1669,7 +1669,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get detailStructure => 'Chemical structure';
 
   @override
-  String get detailRelated => 'Related professional content';
+  String get detailRelated => 'Related materials';
 
   @override
   String get relationAnalysedBy => 'Analysed by (mentioned in source)';

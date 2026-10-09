@@ -360,9 +360,6 @@ class _ProvenanceCard extends StatelessWidget {
     final t = Theme.of(context).textTheme;
     final d = entry.details!;
     final reviews = d.claims.fold<int>(0, (a, x) => a + x.reviewCount);
-    final claimVersion = d.claims.isEmpty
-        ? 1
-        : d.claims.map((x) => x.version).reduce((a, b) => a > b ? a : b);
     final draft = d.translationStatus.values.any((s) => s != 'reviewed');
     Widget row(String label, Widget value) => Padding(
       padding: const EdgeInsets.symmetric(vertical: 3),
@@ -396,13 +393,6 @@ class _ProvenanceCard extends StatelessWidget {
                   : l.detailReviewsCount(reviews),
               key: const Key('entry.reviewStatus'),
               style: t.bodySmall,
-            ),
-          ),
-          row(
-            l.detailVersion,
-            Text(
-              l.detailVersionValue(claimVersion, d.packVersion),
-              style: FeThemeBuilder.numeric(t.bodySmall!),
             ),
           ),
           if (draft)

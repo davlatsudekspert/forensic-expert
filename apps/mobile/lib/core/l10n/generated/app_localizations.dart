@@ -3064,10 +3064,10 @@ abstract class AppLocalizations {
   /// **'Chemical structure'**
   String get detailStructure;
 
-  /// Knowledge graph section.
+  /// Entry page section header.
   ///
   /// In en, this message translates to:
-  /// **'Related professional content'**
+  /// **'Related materials'**
   String get detailRelated;
 
   /// Graph relation label.
