@@ -10766,6 +10766,138 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'This deck is not available.'**
   String get studyDeckNotFound;
+
+  /// Substance page: analysis section header.
+  ///
+  /// In en, this message translates to:
+  /// **'Analysis'**
+  String get analysisTitle;
+
+  /// Analysis section banner.
+  ///
+  /// In en, this message translates to:
+  /// **'How this substance is analysed in biological specimens — only links that already exist in the content pack, each with its source. None of them has been expert-reviewed yet.'**
+  String get analysisIntro;
+
+  /// Analysis subsection.
+  ///
+  /// In en, this message translates to:
+  /// **'Specimens (biological objects)'**
+  String get analysisSpecimensTitle;
+
+  /// Specimens note.
+  ///
+  /// In en, this message translates to:
+  /// **'A source reports a value for this substance in these specimens. The values are shown below under reported concentrations — they are not thresholds.'**
+  String get analysisSpecimensNote;
+
+  /// Specimens empty.
+  ///
+  /// In en, this message translates to:
+  /// **'The pack has no sourced specimen for this substance yet.'**
+  String get analysisNoSpecimens;
+
+  /// Count of basis records.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 sourced record} other{{count} sourced records}}'**
+  String analysisSourcedRecords(int count);
+
+  /// Methods linked to a specimen via the same source.
+  ///
+  /// In en, this message translates to:
+  /// **'Methods in the same source: {methods}'**
+  String analysisSpecimenMethods(String methods);
+
+  /// Analysis subsection.
+  ///
+  /// In en, this message translates to:
+  /// **'Screening (presumptive)'**
+  String get analysisScreeningTitle;
+
+  /// Screening warning.
+  ///
+  /// In en, this message translates to:
+  /// **'A screening result is presumptive and must be confirmed by a confirmation method.'**
+  String get analysisScreeningNote;
+
+  /// Screening row: confirmation methods.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirmation: {methods}'**
+  String analysisConfirmedBy(String methods);
+
+  /// Analysis subsection.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirmation methods'**
+  String get analysisConfirmationTitle;
+
+  /// Confirmation row: screening tests.
+  ///
+  /// In en, this message translates to:
+  /// **'After screening: {tests}'**
+  String analysisAfterScreening(String tests);
+
+  /// Analysis subsection.
+  ///
+  /// In en, this message translates to:
+  /// **'Analytical methods in sources'**
+  String get analysisMethodsTitle;
+
+  /// Analytical methods note.
+  ///
+  /// In en, this message translates to:
+  /// **'A method is listed because a source sentence mentions it together with this substance; this is not a validated procedure.'**
+  String get analysisMethodsRoleNote;
+
+  /// Methods not linked to specimens.
+  ///
+  /// In en, this message translates to:
+  /// **'The sources in the pack do not link these methods to a specific specimen, so they are listed for the substance as a whole.'**
+  String get analysisMethodsNotPaired;
+
+  /// Analysis subsection.
+  ///
+  /// In en, this message translates to:
+  /// **'Metabolites to target'**
+  String get analysisMetabolitesTitle;
+
+  /// Metabolite row: specimens.
+  ///
+  /// In en, this message translates to:
+  /// **'Specimens: {specimens}'**
+  String analysisMetaboliteSpecimens(String specimens);
+
+  /// Analysis empty state.
+  ///
+  /// In en, this message translates to:
+  /// **'The content pack has no sourced analysis data (specimens, methods or metabolites) for this substance yet.'**
+  String get analysisEmpty;
+
+  /// Tooltip: open basis claim provenance.
+  ///
+  /// In en, this message translates to:
+  /// **'Show the source'**
+  String get analysisShowSource;
+
+  /// Specimen page section.
+  ///
+  /// In en, this message translates to:
+  /// **'Substances analysed in this specimen'**
+  String get specimenSubstancesTitle;
+
+  /// Specimen page note.
+  ///
+  /// In en, this message translates to:
+  /// **'A source reports a value for each of these substances in this specimen.'**
+  String get specimenSubstancesNote;
+
+  /// Specimen page empty.
+  ///
+  /// In en, this message translates to:
+  /// **'No substance in the pack is linked to this specimen yet.'**
+  String get specimenSubstancesNone;
 }
 
 class _AppLocalizationsDelegate

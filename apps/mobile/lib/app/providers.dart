@@ -22,6 +22,7 @@ import '../domain/ai/provenance_retrieval.dart';
 import '../domain/ai/rag_pipeline.dart';
 import '../domain/evidence/evidence_models.dart';
 import '../domain/evidence/provenance_models.dart';
+import '../domain/evidence/substance_analysis.dart';
 import '../domain/jurisdiction/jurisdiction_catalog.dart';
 import '../domain/knowledge/knowledge_models.dart';
 import '../domain/learn/learn_models.dart';
@@ -293,6 +294,16 @@ final evidenceDataProvider = Provider<EvidenceData>(
   (ref) => FeFlags.showTestFixtures
       ? EvidenceData.empty
       : ref.watch(contentEvidenceProvider).value ?? EvidenceData.empty,
+);
+
+/// Modda tahlili (namunalar, skrining, metodlar, metabolitlar) — faqat
+/// paketdagi manbali graf bog‘lanishlaridan.
+final substanceAnalysisProvider = Provider.family<SubstanceAnalysis, String>(
+  (ref, entityId) => SubstanceAnalysis.build(
+    entityId: entityId,
+    evidence: ref.watch(evidenceDataProvider),
+    provenance: ref.watch(provenanceIndexProvider),
+  ),
 );
 
 /// Rasm baytlari — kerak bo‘lganda bazadan (offline).

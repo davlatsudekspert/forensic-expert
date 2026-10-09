@@ -252,6 +252,25 @@ void main() {
           scrollTo: const Key('library.hub.review'),
           tap: null,
         ),
+        // «Tahlil» bo‘limi — biologik ob’ektlar va metodlar.
+        (
+          name: 'p7_25_analysis_morphine_uz',
+          settings: s('uz'),
+          route: Routes.libraryEntry('morphine'),
+          size: std,
+          scale: 1,
+          scrollTo: const Key('analysis.morphine'),
+          tap: null,
+        ),
+        (
+          name: 'p7_26_analysis_cocaine_uz_dark',
+          settings: s('uz', theme: dark),
+          route: Routes.libraryEntry('cocaine'),
+          size: std,
+          scale: 1,
+          scrollTo: const Key('screened.cocaine.scr-immunoassay-drugs'),
+          tap: null,
+        ),
       ];
 
   for (final c in cases) {

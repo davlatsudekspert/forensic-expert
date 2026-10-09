@@ -12,6 +12,7 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/evidence/provenance_models.dart';
+import '../../../domain/evidence/substance_analysis.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
 import '../../legal/presentation/jurisdiction_screens.dart';
 import '../../library/presentation/content_entry_sections.dart';
@@ -215,12 +216,52 @@ class SpecimenDetailScreen extends ConsumerWidget {
     final s = index.specimen(specimenId);
     final about = index.claimsAbout(specimenId);
     final measured = index.claimsMeasuredIn(specimenId);
+    // Teskari ro‘yxat: shu namunada (manbada qiymat bilan) tahlil qilingan
+    // moddalar — `measured_in` bog‘lanishlaridan.
+    final substances = [
+      for (final id in substancesMeasuredIn(
+        ref.watch(evidenceDataProvider),
+        specimenId,
+      ))
+        (id, library.byId(id)?.name.resolve(lang) ?? id),
+    ]..sort((a, b) => a.$2.toLowerCase().compareTo(b.$2.toLowerCase()));
     return _page(
       key: Key('specimen.$specimenId'),
       title: s?.names.resolve(lang) ?? specimenId,
       children: [
         if (s != null)
           Text(l.specimenCategoryLabel(s.category), style: t.bodySmall),
+        FeSectionHeader(l.specimenSubstancesTitle),
+        if (substances.isEmpty)
+          FeEmptyState(
+            key: Key('specimen.substances.none.$specimenId'),
+            icon: Icons.inventory_2_outlined,
+            body: l.specimenSubstancesNone,
+            compact: true,
+          )
+        else ...[
+          Text(
+            l.specimenSubstancesNote,
+            style: t.bodySmall?.copyWith(
+              color: FeTheme.of(context).textSecondary,
+            ),
+          ),
+          const SizedBox(height: FeSpace.xs),
+          Wrap(
+            key: Key('specimen.substances.$specimenId'),
+            spacing: FeSpace.xs,
+            runSpacing: FeSpace.xxs,
+            children: [
+              for (final (id, name) in substances)
+                ActionChip(
+                  key: Key('specimen.substance.$specimenId.$id'),
+                  avatar: const Icon(Icons.science_outlined, size: 18),
+                  label: Text(name),
+                  onPressed: () => context.push(Routes.libraryEntry(id)),
+                ),
+            ],
+          ),
+        ],
         FeSectionHeader(l.specimenAbout),
         if (about.isEmpty)
           FeEmptyState(

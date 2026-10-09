@@ -7810,5 +7810,118 @@
   "studyDeckNotFound": "This deck is not available.",
   "@studyDeckNotFound": {
     "description": "Empty state."
+  },
+  "analysisTitle": "Analysis",
+  "@analysisTitle": {
+    "description": "Substance page: analysis section header."
+  },
+  "analysisIntro": "How this substance is analysed in biological specimens — only links that already exist in the content pack, each with its source. None of them has been expert-reviewed yet.",
+  "@analysisIntro": {
+    "description": "Analysis section banner."
+  },
+  "analysisSpecimensTitle": "Specimens (biological objects)",
+  "@analysisSpecimensTitle": {
+    "description": "Analysis subsection."
+  },
+  "analysisSpecimensNote": "A source reports a value for this substance in these specimens. The values are shown below under reported concentrations — they are not thresholds.",
+  "@analysisSpecimensNote": {
+    "description": "Specimens note."
+  },
+  "analysisNoSpecimens": "The pack has no sourced specimen for this substance yet.",
+  "@analysisNoSpecimens": {
+    "description": "Specimens empty."
+  },
+  "analysisSourcedRecords": "{count, plural, =1{1 sourced record} other{{count} sourced records}}",
+  "@analysisSourcedRecords": {
+    "description": "Count of basis records.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "analysisSpecimenMethods": "Methods in the same source: {methods}",
+  "@analysisSpecimenMethods": {
+    "description": "Methods linked to a specimen via the same source.",
+    "placeholders": {
+      "methods": {
+        "type": "String"
+      }
+    }
+  },
+  "analysisScreeningTitle": "Screening (presumptive)",
+  "@analysisScreeningTitle": {
+    "description": "Analysis subsection."
+  },
+  "analysisScreeningNote": "A screening result is presumptive and must be confirmed by a confirmation method.",
+  "@analysisScreeningNote": {
+    "description": "Screening warning."
+  },
+  "analysisConfirmedBy": "Confirmation: {methods}",
+  "@analysisConfirmedBy": {
+    "description": "Screening row: confirmation methods.",
+    "placeholders": {
+      "methods": {
+        "type": "String"
+      }
+    }
+  },
+  "analysisConfirmationTitle": "Confirmation methods",
+  "@analysisConfirmationTitle": {
+    "description": "Analysis subsection."
+  },
+  "analysisAfterScreening": "After screening: {tests}",
+  "@analysisAfterScreening": {
+    "description": "Confirmation row: screening tests.",
+    "placeholders": {
+      "tests": {
+        "type": "String"
+      }
+    }
+  },
+  "analysisMethodsTitle": "Analytical methods in sources",
+  "@analysisMethodsTitle": {
+    "description": "Analysis subsection."
+  },
+  "analysisMethodsRoleNote": "A method is listed because a source sentence mentions it together with this substance; this is not a validated procedure.",
+  "@analysisMethodsRoleNote": {
+    "description": "Analytical methods note."
+  },
+  "analysisMethodsNotPaired": "The sources in the pack do not link these methods to a specific specimen, so they are listed for the substance as a whole.",
+  "@analysisMethodsNotPaired": {
+    "description": "Methods not linked to specimens."
+  },
+  "analysisMetabolitesTitle": "Metabolites to target",
+  "@analysisMetabolitesTitle": {
+    "description": "Analysis subsection."
+  },
+  "analysisMetaboliteSpecimens": "Specimens: {specimens}",
+  "@analysisMetaboliteSpecimens": {
+    "description": "Metabolite row: specimens.",
+    "placeholders": {
+      "specimens": {
+        "type": "String"
+      }
+    }
+  },
+  "analysisEmpty": "The content pack has no sourced analysis data (specimens, methods or metabolites) for this substance yet.",
+  "@analysisEmpty": {
+    "description": "Analysis empty state."
+  },
+  "analysisShowSource": "Show the source",
+  "@analysisShowSource": {
+    "description": "Tooltip: open basis claim provenance."
+  },
+  "specimenSubstancesTitle": "Substances analysed in this specimen",
+  "@specimenSubstancesTitle": {
+    "description": "Specimen page section."
+  },
+  "specimenSubstancesNote": "A source reports a value for each of these substances in this specimen.",
+  "@specimenSubstancesNote": {
+    "description": "Specimen page note."
+  },
+  "specimenSubstancesNone": "No substance in the pack is linked to this specimen yet.",
+  "@specimenSubstancesNone": {
+    "description": "Specimen page empty."
   }
 }

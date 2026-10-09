@@ -21,6 +21,7 @@ import '../../evidence/presentation/provenance_widgets.dart';
 import '../../evidence/presentation/research_screens.dart';
 import '../../evidence/presentation/scientific_image.dart';
 import '../../legal/presentation/legal_rule_card.dart';
+import 'substance_analysis_section.dart';
 
 /// Kontent paketidan kelgan yozuv uchun bo‘limlar.
 ///
@@ -99,7 +100,9 @@ class _ContentEntryBodyState extends ConsumerState<ContentEntryBody> {
         .watch(evidenceDataProvider)
         .imagesFor(entry.id)
         .any((m) => m.kind == ImageKind.chemicalStructure);
+    final isSubstance = entry.section == LibrarySection.substances;
     final index = <(String, String)>[
+      if (unlocked && isSubstance) ('analysis', l.analysisTitle),
       if (hasStructure) ('structure', l.detailStructure),
       if (unlocked) ...[
         for (final (field, title) in scientificFields)
@@ -135,6 +138,13 @@ class _ContentEntryBodyState extends ConsumerState<ContentEntryBody> {
             ],
           ),
         ),
+        // «Tahlil» — biologik ob’ektlarda qanday tahlil qilinadi (yuqorida,
+        // to‘g‘ridan-to‘g‘ri ko‘rinadi). Ilmiy tafsilot: paywall qoidasi
+        // boshqa ilmiy bo‘limlar bilan bir xil.
+        if (unlocked && isSubstance) ...[
+          _section('analysis', l.analysisTitle),
+          SubstanceAnalysisSection(entityId: entry.id),
+        ],
         // Struktura — identifikatsiya (paywall ortida emas).
         for (final im
             in ref
