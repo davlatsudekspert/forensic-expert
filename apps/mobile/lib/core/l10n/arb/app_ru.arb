@@ -1995,5 +1995,20 @@
   "calcLodUnitNote": "DL и QL — в единицах концентрации оси x калибровки.",
   "calcHenssgeFormulaLow": "Применена: среда ≤ 23 °C",
   "calcHenssgeFormulaHigh": "Применена: среда > 23 °C",
-  "admRolePublicationModerator": "Модератор публикаций"
+  "admRolePublicationModerator": "Модератор публикаций",
+  "rdGlanceTitle": "Кратко",
+  "rdGlanceNote": "Из разделов ниже, с источниками. Цитаты и статус — внутри каждого раздела.",
+  "rdGlanceFormula": "Формула",
+  "rdGlanceMolarMass": "{value} г/моль",
+  "rdGlanceSpecimens": "Образцы",
+  "rdGlanceMethods": "Методы",
+  "rdGlanceMetabolites": "Метаболиты",
+  "rdGlanceConcentrations": "Концентрации",
+  "rdGlanceSources": "Источники",
+  "rdGlanceRecords": "{count, plural, one{{count} запись с источником} few{{count} записи с источником} other{{count} записей с источником}}",
+  "rdSourcesCount": "{count, plural, one{{count} источник} few{{count} источника} other{{count} источников}}",
+  "rdGlanceMore": "ещё {count}",
+  "rdGlanceLockedHint": "Подробности ниже открываются в Pro. Названия, предупреждения и источники остаются бесплатными.",
+  "rdJumpTo": "Перейти к разделу",
+  "rdGuidelineMeta": "Разделов: {sections} · {refs}"
 }

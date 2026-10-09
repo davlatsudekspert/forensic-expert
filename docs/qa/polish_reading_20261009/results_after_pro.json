@@ -1,0 +1,319 @@
+{
+  "role": "reading-uz-professional-pro-dark",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "r01",
+      "title": "Library hub",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "r01_library_hub.png"
+    },
+    {
+      "id": "r02",
+      "title": "Library hub scrolled",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "r02_library_hub_scrolled.png"
+    },
+    {
+      "id": "r03",
+      "title": "Substances list",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "r03_substances_list.png"
+    },
+    {
+      "id": "r04",
+      "title": "Ethanol top",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | RAW:\"legislation.gov.uk\""
+      ],
+      "screenshot": "r04_ethanol_top.png"
+    },
+    {
+      "id": "r05",
+      "title": "Ethanol scroll 1",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | RAW:\"legislation.gov.uk\""
+      ],
+      "screenshot": "r05_ethanol_scroll_1.png"
+    },
+    {
+      "id": "r06",
+      "title": "Ethanol Tahlil",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | RAW:\"legislation.gov.uk\""
+      ],
+      "screenshot": "r06_ethanol_tahlil.png"
+    },
+    {
+      "id": "r07",
+      "title": "Ethanol Tahlil 2",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | RAW:\"legislation.gov.uk\""
+      ],
+      "screenshot": "r07_ethanol_tahlil_2.png"
+    },
+    {
+      "id": "r08",
+      "title": "Ethanol concentrations",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | RAW:\"legislation.gov.uk\""
+      ],
+      "screenshot": "r08_ethanol_concentrations.png"
+    },
+    {
+      "id": "r09",
+      "title": "Ethanol concentrations 2",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | RAW:\"legislation.gov.uk\""
+      ],
+      "screenshot": "r09_ethanol_concentrations_2.png"
+    },
+    {
+      "id": "r10",
+      "title": "Ethanol where from sheet",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | RAW:\"legislation.gov.uk\""
+      ],
+      "screenshot": "r10_ethanol_where_from_sheet.png"
+    },
+    {
+      "id": "r11",
+      "title": "Ethanol sources",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | RAW:\"legislation.gov.uk\""
+      ],
+      "screenshot": "r11_ethanol_sources.png"
+    },
+    {
+      "id": "r12",
+      "title": "Ethanol bottom",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | RAW:\"legislation.gov.uk\""
+      ],
+      "screenshot": "r12_ethanol_bottom.png"
+    },
+    {
+      "id": "r13",
+      "title": "Search morfin qon",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "r13_search_morfin_qon.png"
+    },
+    {
+      "id": "r14",
+      "title": "Morphine top",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"•   Group medians only; ranges and group sizes are not in the excerpt.\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | EN:\"Codeine and Metabolite Concentrations in the Breastfed Neonate\" | RAW:\"legislation.gov.uk\" | RAW:\"incb.org\" | RAW:\"ecfr.gov\""
+      ],
+      "screenshot": "r14_morphine_top.png"
+    },
+    {
+      "id": "r15",
+      "title": "Morphine scroll",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"•   Group medians only; ranges and group sizes are not in the excerpt.\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | EN:\"Codeine and Metabolite Concentrations in the Breastfed Neonate\" | RAW:\"legislation.gov.uk\" | RAW:\"incb.org\" | RAW:\"ecfr.gov\""
+      ],
+      "screenshot": "r15_morphine_scroll.png"
+    },
+    {
+      "id": "r16",
+      "title": "Morphine Tahlil",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"•   Group medians only; ranges and group sizes are not in the excerpt.\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | EN:\"Codeine and Metabolite Concentrations in the Breastfed Neonate\" | RAW:\"legislation.gov.uk\" | RAW:\"incb.org\" | RAW:\"ecfr.gov\""
+      ],
+      "screenshot": "r16_morphine_tahlil.png"
+    },
+    {
+      "id": "r17",
+      "title": "Morphine Tahlil 2",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"•   Group medians only; ranges and group sizes are not in the excerpt.\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | EN:\"Codeine and Metabolite Concentrations in the Breastfed Neonate\" | RAW:\"legislation.gov.uk\" | RAW:\"incb.org\" | RAW:\"ecfr.gov\""
+      ],
+      "screenshot": "r17_morphine_tahlil_2.png"
+    },
+    {
+      "id": "r18",
+      "title": "Morphine concentrations",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"•   Group medians only; ranges and group sizes are not in the excerpt.\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | EN:\"Codeine and Metabolite Concentrations in the Breastfed Neonate\" | RAW:\"legislation.gov.uk\" | RAW:\"incb.org\" | RAW:\"ecfr.gov\""
+      ],
+      "screenshot": "r18_morphine_concentrations.png"
+    },
+    {
+      "id": "r19",
+      "title": "Methods list",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "r19_methods_list.png"
+    },
+    {
+      "id": "r20",
+      "title": "Headspace GC top",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "r20_headspace_gc_top.png"
+    },
+    {
+      "id": "r21",
+      "title": "Headspace GC scroll",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "r21_headspace_gc_scroll.png"
+    },
+    {
+      "id": "r22",
+      "title": "Guidelines list",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "r22_guidelines_list.png"
+    },
+    {
+      "id": "r23",
+      "title": "Ethanol GC guideline",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "r23_ethanol_gc_guideline.png"
+    },
+    {
+      "id": "r24",
+      "title": "Guideline scroll",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "r24_guideline_scroll.png"
+    },
+    {
+      "id": "r25",
+      "title": "Guideline references",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "r25_guideline_references.png"
+    },
+    {
+      "id": "r26",
+      "title": "Sources list",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"Acute Intoxications Involving α-Pyrrolidinobutiophenone (α-PBP): Resul…\" | EN:\"Antagonism between salicylate and the cAMP signal controls yeast cell …\" | EN:\"Codeine and Metabolite Concentrations in the Breastfed Neonate\" | EN:\"Complete Reaction Phenotyping of Propranolol and 4-Hydroxypropranolol …\" | EN:\"CYP2D6 phenotype and post-surgical pain control with hydrocodone and o…\" | EN:\"Fentanyls continue to replace heroin in the drug arena: the cases of o…\" | EN:\"The adulterated XANAX pill: a fatal intoxication with etizolam and caf…\""
+      ],
+      "screenshot": "r26_sources_list.png"
+    },
+    {
+      "id": "r27",
+      "title": "Source detail",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "r27_source_detail.png"
+    },
+    {
+      "id": "r28",
+      "title": "Specimens list",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "r28_specimens_list.png"
+    },
+    {
+      "id": "r29",
+      "title": "Specimen blood",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"•   Cited from other authors.\" | EN:\"•   Outcome of the two cases is not stated in the excerpt.\" | EN:\"Fentanyls continue to replace heroin in the drug arena: the cases of o…\" | EN:\"Acute Intoxications Involving α-Pyrrolidinobutiophenone (α-PBP): Resul…\" | EN:\"•   Group medians only; ranges and group sizes are not in the excerpt.\" | EN:\"•   National data quoted for comparison, not measured in the citing st…\""
+      ],
+      "screenshot": "r29_specimen_blood.png"
+    },
+    {
+      "id": "r30",
+      "title": "Research list",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "r30_research_list.png"
+    },
+    {
+      "id": "r31",
+      "title": "Research detail",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"The journal of the American Academy of Psychiatry and the Law\""
+      ],
+      "screenshot": "r31_research_detail.png"
+    },
+    {
+      "id": "r32",
+      "title": "Disciplines",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "r32_disciplines.png"
+    },
+    {
+      "id": "r33",
+      "title": "Search alkogol",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "r33_search_alkogol.png"
+    },
+    {
+      "id": "r34",
+      "title": "Search etanol qon",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "r34_search_etanol_qon.png"
+    },
+    {
+      "id": "r35",
+      "title": "Search headspace",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "r35_search_headspace.png"
+    },
+    {
+      "id": "r36",
+      "title": "320 2x ethanol",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | RAW:\"legislation.gov.uk\""
+      ],
+      "screenshot": "r36_320_2x_ethanol.png"
+    },
+    {
+      "id": "r37",
+      "title": "320 2x ethanol Tahlil",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | RAW:\"legislation.gov.uk\""
+      ],
+      "screenshot": "r37_320_2x_ethanol_tahlil.png"
+    },
+    {
+      "id": "r38",
+      "title": "320 2x guideline",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "r38_320_2x_guideline.png"
+    },
+    {
+      "id": "r39",
+      "title": "320 2x search",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "r39_320_2x_search.png"
+    }
+  ],
+  "pass": 39,
+  "fail": 0
+}

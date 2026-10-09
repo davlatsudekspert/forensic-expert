@@ -62,6 +62,25 @@ class EntryDetailScreen extends ConsumerWidget {
           ]
         : <(IconData, String)>[];
 
+    final names = <Widget>[
+      FeSectionHeader(l.detailNames),
+      for (final code in const ['en', 'ru', 'uz'])
+        if (entry.name.values[code] != null)
+          _KeyValue(
+            label: code.toUpperCase(),
+            value: Text(
+              entry.name.values[code]!,
+              locale: Locale(code),
+              style: t.bodyMedium,
+            ),
+          ),
+      for (final s in entry.synonyms)
+        _KeyValue(
+          label: '≈',
+          value: Text(s, style: t.bodyMedium),
+        ),
+    ];
+
     return Scaffold(
       appBar: AppBar(
         title: Text(entry.name.resolve(lang)),
@@ -121,25 +140,11 @@ class EntryDetailScreen extends ConsumerWidget {
                       ),
                     ),
                   ],
-                  FeSectionHeader(l.detailNames),
-                  for (final code in const ['en', 'ru', 'uz'])
-                    if (entry.name.values[code] != null)
-                      _KeyValue(
-                        label: code.toUpperCase(),
-                        value: Text(
-                          entry.name.values[code]!,
-                          locale: Locale(code),
-                          style: t.bodyMedium,
-                        ),
-                      ),
-                  for (final s in entry.synonyms)
-                    _KeyValue(
-                      label: '≈',
-                      value: Text(s, style: t.bodyMedium),
-                    ),
                   if (entry.details != null)
-                    ContentEntryBody(entry: entry)
+                    // Kontent paketi yozuvi: «Qisqacha» → nomlar → …
+                    ContentEntryBody(entry: entry, names: names)
                   else ...[
+                    ...names,
                     if (isSubstance) ...[
                       FeSectionHeader(l.detailLayerScientific),
                       FeBanner(

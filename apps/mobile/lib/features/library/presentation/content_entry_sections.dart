@@ -23,6 +23,7 @@ import '../../evidence/presentation/scientific_image.dart';
 import '../../evidence/presentation/source_quote.dart';
 import '../../legal/presentation/legal_rule_card.dart';
 import 'substance_analysis_section.dart';
+import 'substance_glance.dart';
 
 /// Kontent paketidan kelgan yozuv uchun bo‘limlar.
 ///
@@ -30,9 +31,17 @@ import 'substance_analysis_section.dart';
 /// hech qachon yopilmaydi. Lifetime’siz faqat ilmiy tafsilotlar va
 /// yurisdiksiya qatlami yopiladi.
 class ContentEntryBody extends ConsumerStatefulWidget {
-  const ContentEntryBody({super.key, required this.entry});
+  const ContentEntryBody({
+    super.key,
+    required this.entry,
+    this.names = const [],
+  });
 
   final LibraryEntry entry;
+
+  /// «Nomlar va sinonimlar» bloki — moddada «Qisqacha» xulosadan keyin
+  /// (eng muhim ma’lumot birinchi).
+  final List<Widget> names;
 
   @override
   ConsumerState<ContentEntryBody> createState() => _ContentEntryBodyState();
@@ -117,11 +126,28 @@ class _ContentEntryBodyState extends ConsumerState<ContentEntryBody> {
       ('related', l.detailRelated),
       ('sources', l.detailReferences),
     ];
+    final t = Theme.of(context).textTheme;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
+        if (isSubstance)
+          SubstanceGlanceCard(entry: entry, unlocked: unlocked, onJump: _jump),
+        ...widget.names,
+        const SizedBox(height: FeSpace.sm),
         _ProvenanceCard(entry: entry),
-        FeSectionHeader(l.detailOnThisPage),
+        // Navigatsiya qatori — kontent sarlavhasi emas (ixcham yorliq).
+        Padding(
+          padding: const EdgeInsets.only(top: FeSpace.md, bottom: FeSpace.xs),
+          child: Semantics(
+            header: true,
+            child: Text(
+              l.detailOnThisPage,
+              style: t.labelLarge?.copyWith(
+                color: FeTheme.of(context).textSecondary,
+              ),
+            ),
+          ),
+        ),
         SingleChildScrollView(
           key: const Key('entry.index'),
           scrollDirection: Axis.horizontal,
@@ -157,7 +183,10 @@ class _ContentEntryBodyState extends ConsumerState<ContentEntryBody> {
         ],
         if (!unlocked) ...[
           const SizedBox(height: FeSpace.md),
-          const LockedContentCard(key: Key('entry.locked')),
+          KeyedSubtree(
+            key: _anchor('locked'),
+            child: const LockedContentCard(key: Key('entry.locked')),
+          ),
         ] else ...[
           FeSectionHeader(l.detailLayerScientific),
           FeBanner(
@@ -569,34 +598,55 @@ class SourceTile extends StatelessWidget {
             ),
           ),
           const SizedBox(height: FeSpace.xxs),
-          Wrap(
-            spacing: FeSpace.xs,
-            runSpacing: FeSpace.xxs,
-            children: [
-              StatusChip(
-                icon: Icons.layers_outlined,
-                label: l.detailEvidenceLevel(source.evidenceLevel),
-                color: c.textSecondary,
-              ),
-              if (source.identifierVerified)
+          if (linkToDetail)
+            // Ro‘yxatda ixcham: dalil darajasi va identifikator tekshiruvi
+            // bitta qatorda; PMID va murojaat sanasi manba sahifasida.
+            Row(
+              key: Key('source.meta.${source.sourceId}'),
+              children: [
+                Icon(Icons.layers_outlined, size: 14, color: c.textSecondary),
+                const SizedBox(width: FeSpace.xxs),
+                Flexible(
+                  child: Text(
+                    [
+                      l.detailEvidenceLevel(source.evidenceLevel),
+                      if (source.identifierVerified) l.detailIdentifierVerified,
+                    ].join(FeGlyphs.middleDot),
+                    style: t.labelSmall?.copyWith(color: c.textSecondary),
+                  ),
+                ),
+              ],
+            )
+          else ...[
+            Wrap(
+              spacing: FeSpace.xs,
+              runSpacing: FeSpace.xxs,
+              children: [
                 StatusChip(
-                  icon: Icons.fact_check_outlined,
-                  label: l.detailIdentifierVerified,
+                  icon: Icons.layers_outlined,
+                  label: l.detailEvidenceLevel(source.evidenceLevel),
                   color: c.textSecondary,
                 ),
-            ],
-          ),
-          if (source.pmid != null)
-            SelectableText(
-              l.sourcePmid(source.pmid!),
-              style: FeThemeBuilder.numeric(t.bodySmall!)
-                  .copyWith(color: c.textSecondary),
+                if (source.identifierVerified)
+                  StatusChip(
+                    icon: Icons.fact_check_outlined,
+                    label: l.detailIdentifierVerified,
+                    color: c.textSecondary,
+                  ),
+              ],
             ),
-          if (source.accessedDate != null)
-            Text(
-              l.detailSourceAccessed(date(source.accessedDate!)),
-              style: t.bodySmall?.copyWith(color: c.textSecondary),
-            ),
+            if (source.pmid != null)
+              SelectableText(
+                l.sourcePmid(source.pmid!),
+                style: FeThemeBuilder.numeric(t.bodySmall!)
+                    .copyWith(color: c.textSecondary),
+              ),
+            if (source.accessedDate != null)
+              Text(
+                l.detailSourceAccessed(date(source.accessedDate!)),
+                style: t.bodySmall?.copyWith(color: c.textSecondary),
+              ),
+          ],
           if (link != null)
             Row(
               children: [

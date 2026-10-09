@@ -6805,4 +6805,75 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get admRolePublicationModerator => 'Модератор публикаций';
+
+  @override
+  String get rdGlanceTitle => 'Кратко';
+
+  @override
+  String get rdGlanceNote =>
+      'Из разделов ниже, с источниками. Цитаты и статус — внутри каждого раздела.';
+
+  @override
+  String get rdGlanceFormula => 'Формула';
+
+  @override
+  String rdGlanceMolarMass(String value) {
+    return '$value г/моль';
+  }
+
+  @override
+  String get rdGlanceSpecimens => 'Образцы';
+
+  @override
+  String get rdGlanceMethods => 'Методы';
+
+  @override
+  String get rdGlanceMetabolites => 'Метаболиты';
+
+  @override
+  String get rdGlanceConcentrations => 'Концентрации';
+
+  @override
+  String get rdGlanceSources => 'Источники';
+
+  @override
+  String rdGlanceRecords(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count записей с источником',
+      few: '$count записи с источником',
+      one: '$count запись с источником',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String rdSourcesCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count источников',
+      few: '$count источника',
+      one: '$count источник',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String rdGlanceMore(int count) {
+    return 'ещё $count';
+  }
+
+  @override
+  String get rdGlanceLockedHint =>
+      'Подробности ниже открываются в Pro. Названия, предупреждения и источники остаются бесплатными.';
+
+  @override
+  String get rdJumpTo => 'Перейти к разделу';
+
+  @override
+  String rdGuidelineMeta(int sections, String refs) {
+    return 'Разделов: $sections · $refs';
+  }
 }

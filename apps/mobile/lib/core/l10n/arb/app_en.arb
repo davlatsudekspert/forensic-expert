@@ -8817,5 +8817,93 @@
   "admRolePublicationModerator": "Publication moderator",
   "@admRolePublicationModerator": {
     "description": "Role name of a publication moderator (admin users list, audit log)."
+  },
+  "rdGlanceTitle": "At a glance",
+  "@rdGlanceTitle": {
+    "description": "Substance page: compact summary card title."
+  },
+  "rdGlanceNote": "From the sourced sections below. Quotes and status are inside each section.",
+  "@rdGlanceNote": {
+    "description": "Substance page: summary card note (no new facts; built from the sections below)."
+  },
+  "rdGlanceFormula": "Formula",
+  "@rdGlanceFormula": {
+    "description": "Summary row: molecular formula and weight."
+  },
+  "rdGlanceMolarMass": "{value} g/mol",
+  "@rdGlanceMolarMass": {
+    "description": "Summary row: molecular weight value from the identity record (PubChem), with unit.",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "rdGlanceSpecimens": "Specimens",
+  "@rdGlanceSpecimens": {
+    "description": "Summary row: specimens with sourced values."
+  },
+  "rdGlanceMethods": "Methods",
+  "@rdGlanceMethods": {
+    "description": "Summary row: analytical methods named in sources."
+  },
+  "rdGlanceMetabolites": "Metabolites",
+  "@rdGlanceMetabolites": {
+    "description": "Summary row: metabolites."
+  },
+  "rdGlanceConcentrations": "Concentrations",
+  "@rdGlanceConcentrations": {
+    "description": "Summary row: reported concentrations (count)."
+  },
+  "rdGlanceSources": "Sources",
+  "@rdGlanceSources": {
+    "description": "Summary row: sources (count)."
+  },
+  "rdGlanceRecords": "{count, plural, =1{1 sourced record} other{{count} sourced records}}",
+  "@rdGlanceRecords": {
+    "description": "Count of sourced records.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "rdSourcesCount": "{count, plural, =1{1 source} other{{count} sources}}",
+  "@rdSourcesCount": {
+    "description": "Count of sources / references.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "rdGlanceMore": "+{count} more",
+  "@rdGlanceMore": {
+    "description": "Suffix after a shortened list of names.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "rdGlanceLockedHint": "Details below open with Pro. Names, warnings and sources stay free.",
+  "@rdGlanceLockedHint": {
+    "description": "Summary card when details are locked: what is behind Pro (counts only)."
+  },
+  "rdJumpTo": "Go to section",
+  "@rdJumpTo": {
+    "description": "Semantics hint: tap to jump to a section on this page."
+  },
+  "rdGuidelineMeta": "{sections} sections · {refs}",
+  "@rdGuidelineMeta": {
+    "description": "Guideline list row: number of sections and references.",
+    "placeholders": {
+      "sections": {
+        "type": "int"
+      },
+      "refs": {
+        "type": "String"
+      }
+    }
   }
 }

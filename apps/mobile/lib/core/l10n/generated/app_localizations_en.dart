@@ -6779,4 +6779,73 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get admRolePublicationModerator => 'Publication moderator';
+
+  @override
+  String get rdGlanceTitle => 'At a glance';
+
+  @override
+  String get rdGlanceNote =>
+      'From the sourced sections below. Quotes and status are inside each section.';
+
+  @override
+  String get rdGlanceFormula => 'Formula';
+
+  @override
+  String rdGlanceMolarMass(String value) {
+    return '$value g/mol';
+  }
+
+  @override
+  String get rdGlanceSpecimens => 'Specimens';
+
+  @override
+  String get rdGlanceMethods => 'Methods';
+
+  @override
+  String get rdGlanceMetabolites => 'Metabolites';
+
+  @override
+  String get rdGlanceConcentrations => 'Concentrations';
+
+  @override
+  String get rdGlanceSources => 'Sources';
+
+  @override
+  String rdGlanceRecords(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sourced records',
+      one: '1 sourced record',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String rdSourcesCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sources',
+      one: '1 source',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String rdGlanceMore(int count) {
+    return '+$count more';
+  }
+
+  @override
+  String get rdGlanceLockedHint =>
+      'Details below open with Pro. Names, warnings and sources stay free.';
+
+  @override
+  String get rdJumpTo => 'Go to section';
+
+  @override
+  String rdGuidelineMeta(int sections, String refs) {
+    return '$sections sections · $refs';
+  }
 }

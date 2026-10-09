@@ -196,11 +196,17 @@ void main() {
     await tester.tap(find.byKey(const Key('guidelines.card.gl.chem.test')));
     await tester.pumpAndSettle();
     expect(find.text('Sinov kartasi'), findsOne);
+    // Bo‘lim sarlavhasi va «Shu sahifada» qatoridagi havola.
     expect(
       find.textContaining(RegExp('ilmiy asos', caseSensitive: false)),
-      findsOne,
+      findsWidgets,
     );
+    expect(find.byKey(const Key('guideline.index')), findsOne);
     expect(find.byKey(const Key('guideline.ref.r1')), findsOne);
+    // «Adabiyotlar» havolasi ro‘yxatga olib boradi.
+    await tester.tap(find.byKey(const Key('guideline.index.refs')));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('guideline.ref.r1')).hitTestable(), findsOne);
     // O‘zbekcha — asl matn: qoralama ogohlantirishi yo‘q.
     expect(find.byKey(const Key('guideline.draftTranslation')), findsNothing);
   });

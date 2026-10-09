@@ -135,15 +135,19 @@ class SubstanceAnalysisSection extends ConsumerWidget {
         // 4. Manbalardagi tahlil metodlari (modda darajasida).
         if (a.analyticalMethods.isNotEmpty) ...[
           subheader(l.analysisMethodsTitle),
+          // Bitta izoh: «namunaga bog‘lanmagan» + «tasdiqlangan protsedura
+          // emas» — ikki alohida banner/izoh o‘rniga.
           if (!a.methodsLinkedToSpecimens) ...[
             FeBanner(
               key: Key('analysis.notPaired.$entityId'),
               icon: Icons.info_outline,
-              text: l.analysisMethodsNotPaired,
+              text:
+                  '${l.analysisMethodsNotPaired} '
+                  '${l.analysisMethodsRoleNote}',
             ),
             const SizedBox(height: FeSpace.xs),
-          ],
-          note(l.analysisMethodsRoleNote),
+          ] else
+            note(l.analysisMethodsRoleNote),
           for (final m in a.analyticalMethods)
             AnalysisRow(
               key: Key('analysis.method.$entityId.${m.methodId}'),

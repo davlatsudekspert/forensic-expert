@@ -18,6 +18,7 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
+import '../../../domain/library/library_models.dart' show EntryAccess;
 import '../../../domain/ports/billing_ports.dart';
 import '../../disciplines/discipline_strings.dart';
 import '../../evidence/evidence_strings.dart';
@@ -268,6 +269,20 @@ class _Results extends ConsumerWidget {
       ref.watch(accessProvider),
     );
     const freeLimit = AccessPolicy.freeSearchResultsPerGroup;
+    final access = ref.watch(accessProvider);
+
+    /// Yozuv to‘liq faqat Pro bilan ochiladimi (ochishdan oldin ko‘rinsin).
+    bool lockedHit(SearchHit hit) {
+      if (library.byId(hit.entityId) case final e?) {
+        return e.access != EntryAccess.free &&
+            !AccessPolicy.unlocks(ProductFeature.substanceLibrary, access);
+      }
+      if (knowledge.byId(hit.entityId) case final k?) {
+        return k.access != EntryAccess.free &&
+            !AccessPolicy.unlocks(ProductFeature.verifiedReferences, access);
+      }
+      return false;
+    }
 
     String groupTitle(SearchGroup g) => switch (g) {
       SearchGroup.substances => l.librarySubstances,
@@ -407,10 +422,13 @@ class _Results extends ConsumerWidget {
             children: [
               Icon(Icons.offline_pin_outlined, size: 16, color: c.accent),
               const SizedBox(width: FeSpace.xxs),
-              Text(
-                l.searchOfflineLabel,
-                style: Theme.of(context).textTheme.labelMedium
-                    ?.copyWith(color: c.textSecondary),
+              // Tor ekran / 2x matnda keyingi qatorga o‘tadi (toshmaydi).
+              Flexible(
+                child: Text(
+                  l.searchOfflineLabel,
+                  style: Theme.of(context).textTheme.labelMedium
+                      ?.copyWith(color: c.textSecondary),
+                ),
               ),
             ],
           ),
@@ -449,6 +467,7 @@ class _Results extends ConsumerWidget {
                   isPlannedTool:
                       g == SearchGroup.tools &&
                       !(ToolsCatalog.byId(hit.entityId)?.isAvailable ?? true),
+                  isLocked: lockedHit(hit),
                   onTap: () => onOpen(g, hit),
                 ),
               // Bepul demo: har guruhda cheklangan natija; qolganlari
@@ -525,6 +544,7 @@ class _ResultTile extends StatelessWidget {
     required this.isTestData,
     required this.isPlannedTool,
     required this.onTap,
+    this.isLocked = false,
   });
 
   final IconData icon;
@@ -535,6 +555,9 @@ class _ResultTile extends StatelessWidget {
   final String meta;
   final bool isTestData;
   final bool isPlannedTool;
+
+  /// To‘liq tafsilot Pro’da (nom, ogohlantirish va manbalar baribir ochiq).
+  final bool isLocked;
   final VoidCallback onTap;
 
   @override
@@ -557,6 +580,20 @@ class _ResultTile extends StatelessWidget {
               style: Theme.of(context).textTheme.bodySmall
                   ?.copyWith(color: c.textSecondary),
             ),
+            if (isLocked)
+              Row(
+                key: const Key('search.hit.locked'),
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(Icons.lock_outline, size: 13, color: c.textSecondary),
+                  const SizedBox(width: 3),
+                  Text(
+                    l.lockedBadge,
+                    style: Theme.of(context).textTheme.labelSmall
+                        ?.copyWith(color: c.textSecondary),
+                  ),
+                ],
+              ),
             if (isTestData) const TestDataBadge(),
             if (isPlannedTool)
               StatusChip(
