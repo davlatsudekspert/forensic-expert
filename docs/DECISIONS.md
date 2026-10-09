@@ -21,3 +21,26 @@
   topilgan xatolar (etanol letal dozasi, morfin pH, petidin formulasi, TGK foizlari, muvozanatsiz tenglamalar) tuzatiladi;
   holat NEEDS_REVIEW; muallifga ilmiy taqrizchi bo‘lish taklif qilingan.
 - Egasining reaktivlar to‘plami (o‘zi jamlagan) — egasi ruxsati bilan (2026-10-09).
+
+## 2026-10-09 — Free/Pro qarori (egasi)
+- **Reaktivlar:** egasi to‘plamidagi 74 retseptning hammasi FREE (`tier_access=free`, `assemble_reagents.py`). Holat NEEDS_REVIEW;
+  amaliy laboratoriya tavsiyasi sifatida tasdiqlanmagan. PubChem’da GHS tasnifi topilmagan ingrediyentli 33 retseptda
+  «Xavflilik ma’lumotlari to‘liq tekshirilmagan … xavfsiz degani emas» ogohlantirishi. Keyinchalik Pro bo‘lishi mumkin:
+  chuqur solishtirish, professional kalkulyatorlar, shaxsiy laboratoriya vositalari.
+- **«Sudda so‘roq»:** barcha asosiy savol-javoblar, ilmiy/huquqiy asoslar, manba/sahifa/modda havolalari, cheklovlar va
+  namunaviy qo‘shimcha savollar FREE. Pro: ilg‘or simulyator, sudya/advokat/prokuror ketma-ket mashqlari, AI tahlil,
+  shaxsiy baholash, murakkab ssenariylar, statistika/tarix. Simulyator tekshirilmagan javobni to‘g‘ri deb baholamaydi.
+- O‘zgarish faqat ilova kodi va kontent paketida; production entitlement/billing konfiguratsiyasi o‘zgartirilmadi.
+- «MUALLIF/EGASI RUXSATI BILAN» belgisi faqat kontent huquqi (mualliflik) ruxsati uchun — xavfli moddalar muomalasi
+  bo‘yicha qonuniy ruxsat ma’nosida emas. Faqat `license_agreement_id` qayd etilgan manbalarda chiqadi.
+
+## 2026-10-09 — Hodisa: agent umumiy papkani o‘chirgan
+- Reaktivlar agenti worktree’dan tashqaridagi `~/.local/share/uz.forensicexpert.forensic_expert/content` (desktop QA ilovasining
+  o‘rnatilgan kontent paketi) ni o‘chirgan; boshqa bir agent `/tmp/flutter_tools` ni o‘chirib, parallel test yugurishini to‘xtatgan.
+  Manba, kalit yoki foydalanuvchi ma’lumoti yo‘qolmagan; paket keyingi ishga tushishda assets’dan qayta o‘rnatiladi.
+- Qoida: har agent faqat o‘z worktree’sida, `TMPDIR=<worktree>/.tmp`; tashqarida hech narsa o‘chirilmaydi; umumiy tozalash —
+  faqat birlashtirishdan keyin, koordinator tomonidan.
+- Ildiz sabab tuzatildi: `BundledPackInstaller` bir xil `pack_version` dagi, lekin mazmuni (SHA-256) boshqa paketni almashtirmas edi
+  → eskirgan kontent qolardi. Endi teng versiya + boshqa xesh bo‘lsa qayta o‘rnatiladi (imzo va xesh tekshiruvi saqlanadi;
+  eski versiyaga qaytish baribir rad etiladi). Test: `content_pack_test.dart`. Paket faqat o‘qiladigan kontent — foydalanuvchi
+  ma’lumoti (sozlamalar, eslatmalar, murojaatlar) boshqa joyda saqlanadi.

@@ -40,9 +40,10 @@ class BundledPackInstaller {
   Future<InstallReport?> ensureInstalled() async {
     final manifestBytes = await _bytes('manifest.json');
     final signature = await _bytes('manifest.sig');
-    final bundledVersion = PackManifest.fromJson(
+    final bundled = PackManifest.fromJson(
       (jsonDecode(utf8.decode(manifestBytes)) as Map).cast(),
-    ).packVersion;
+    );
+    final bundledVersion = bundled.packVersion;
 
     final installer = PackInstaller(
       root: root,
@@ -53,15 +54,27 @@ class BundledPackInstaller {
       ),
       healthCheck: _healthCheck,
     );
-    final current = await _activeVersion(installer.activeDir);
-    if (current != null && !(bundledVersion > current)) return null;
+    final active = await _activeManifest(installer.activeDir);
+    final current = active?.packVersion;
+    // Ilova ichidagi paket o‘sha versiyada, lekin mazmuni boshqa bo‘lsa
+    // (masalan, bir xil versiya bilan qayta yig‘ilgan ichki build) —
+    // eskirgan kontent qolib ketmasligi uchun qayta o‘rnatiladi. Imzo va
+    // SHA-256 tekshiruvi o‘zgarmaydi; faqat TENG versiya uchun monotonlik
+    // tekshiruvi chetlab o‘tiladi (eski versiyaga qaytish baribir rad etiladi).
+    final sameVersionChanged =
+        active != null &&
+        current == bundledVersion &&
+        _digest(active) != _digest(bundled);
+    if (current != null && !(bundledVersion > current) && !sameVersionChanged) {
+      return null;
+    }
 
     return installer.install(
       manifestBytes: manifestBytes,
       signature: signature,
       files: {'content.db': await _bytes('content.db')},
       context: InstallContext(
-        currentPackVersion: current,
+        currentPackVersion: sameVersionChanged ? null : current,
         appVersion: AppVersion.parse(AppInfo.version),
         acceptedChannel: PackChannel.values.byName(_acceptedChannel),
         supportedSchemaVersions: {ContentDatabase.contentSchemaVersion},
@@ -74,17 +87,20 @@ class BundledPackInstaller {
     return data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes);
   }
 
-  static Future<PackVersion?> _activeVersion(Directory active) async {
+  static Future<PackManifest?> _activeManifest(Directory active) async {
     final f = File('${active.path}/manifest.json');
     if (!f.existsSync()) return null;
     try {
       final j = (jsonDecode(await f.readAsString()) as Map)
           .cast<String, Object?>();
-      return PackManifest.fromJson(j).packVersion;
+      return PackManifest.fromJson(j);
     } on Object {
       return null;
     }
   }
+
+  static String _digest(PackManifest m) =>
+      ([for (final f in m.files) '${f.path}:${f.sha256}']..sort()).join('|');
 
   static Future<bool> _healthCheck(Directory staged) async {
     final db = ContentDatabase(
