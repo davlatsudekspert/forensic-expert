@@ -3,6 +3,10 @@
 Yangilangan: 2026-10-09. Format: [holat] vazifa — egasi/keyingi qadam.
 
 ## Hozir bajarilmoqda
+- [agent] Uch tilli ilova (egasining ustuvor loyihasi): **Phase A audit tugadi** —
+  `docs/L10N_AUDIT_20261009.md`, detektor `apps/mobile/tool/lang_audit.py`, real-ilova
+  `integration_test/qa_l10n_test.dart`. Keyingi: Phase B (ARB) → C (tarjima birinchi + «Asl matn»
+  qatlami) → D (ilmiy tarjima + claim preservation) → E (test) → F (terminologiya) → G (regressiya).
 - [agent] O‘zbekcha UI to‘liqligi + avtomatik test (worktree, birlashtirish kutilmoqda).
 - [agent] Premium dizayn tizimi: graphite/navy/noir, champagne gold, ivory, serif sarlavhalar (worktree).
 
