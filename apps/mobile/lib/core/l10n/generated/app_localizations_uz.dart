@@ -6896,4 +6896,47 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get calcBeerRelatedTools =>
       'Bog‘liq vositalar: kalibrlash va chegaralar';
+
+  @override
+  String get citeCopy => 'Iqtibosni nusxalash';
+
+  @override
+  String get citeAllSources => 'Barcha manbalar ro‘yxati';
+
+  @override
+  String citeListTitle(int count) {
+    return 'Manbalar ro‘yxati · $count';
+  }
+
+  @override
+  String get citeStyleLabel => 'Rasmiylashtirish uslubi';
+
+  @override
+  String get citeStyleGost => 'GOST';
+
+  @override
+  String get citeStyleVancouver => 'Vancouver';
+
+  @override
+  String get citeStyleApa => 'APA 7';
+
+  @override
+  String get citeCopyButton => 'Nusxalash';
+
+  @override
+  String get citeCopied => 'Iqtibos nusxalandi';
+
+  @override
+  String citeListCopied(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta manba nusxalandi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get citeVerifyNote =>
+      'Ilova — ma’lumotnoma vosita: xulosaga kiritishdan oldin har bir manbani asl nusxa bilan tekshiring.';
 }

@@ -50,6 +50,10 @@ void main() {
     'docKindSop',
     'researchPeriod2010',
     'tpl_marker',
+    // Iqtibos uslublari nomlari (GOST, Vancouver, APA 7) — xos nomlar.
+    'citeStyleGost',
+    'citeStyleVancouver',
+    'citeStyleApa',
     'metKindMarker',
     'reagentPh',
     // Tarif nomlari — mahsulot brendi, har tilda bir xil.

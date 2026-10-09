@@ -58,6 +58,10 @@ void main() {
     // Yil oralig‘i — raqamlar barcha tillarda bir xil; uz: SOP, Marker.
     'researchPeriod2010',
     'tpl_marker',
+    // Iqtibos uslublari nomlari (GOST, Vancouver, APA 7) — xos nomlar.
+    'citeStyleGost',
+    'citeStyleVancouver',
+    'citeStyleApa',
     'metKindMarker',
     'reagentPh',
     // Tarif nomlari — mahsulot brendi, har tilda bir xil.

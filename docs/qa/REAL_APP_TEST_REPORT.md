@@ -344,3 +344,28 @@ Fayllar: `integration_test/qa_student_test.dart`,
 `integration_test/qa_probe_test.dart` (yangi yo‘llarni o‘rganish uchun).
 CI’ga ulanmagan: toza Ubuntu runner’da apt paketlari + Linux build bilan
 ~5 daqiqadan oshadi; qo‘lda ishga tushiriladi.
+
+## 7. Iqtibos eksporti (2026-10-09)
+
+Taqrizchi (prof. Yuldashev Z.A.) talabi: har bir yozuv adabiyotga havola bilan,
+tergov/sud hujjatiga ilova qilish mumkin bo‘lsin.
+
+`QA_OUT=docs/qa/citations_20261009 ./tool/qa_real_app.sh citations`
+(Linux desktop, MOCK akkaunt, HTTP bloklangan, haqiqiy pilot paket):
+
+| Yugurish | Natija |
+|---|---|
+| uz, talaba (skrinshotlar `docs/qa/citations_20261009/`) | 6/6 PASS |
+| ru, mutaxassis (`QA_SHOTS=0`) | 6/6 PASS — ГОСТ, «[Электронный ресурс]» |
+| en, mutaxassis (`QA_SHOTS=0`) | 6/6 PASS — APA 7 standart |
+
+Tekshirildi: etanol sahifasi → «Barcha manbalar ro‘yxati» → GOST ro‘yxat
+haqiqiy tizim buferiga (GTK) nusxalandi va o‘qib tekshirildi (6 qator,
+raqamlash, «[Elektron resurs]», «murojaat sanasi»); manba kartasidagi
+«Iqtibosni nusxalash» → Vancouver; «Etanol GC» yo‘riqnomasi adabiyotlari
+ro‘yxati; 320 dp ekranda oyna va «Nusxalash» tugmasi ko‘rinadi.
+Tuzatildi: 320 dp’da «Vancouver» yorlig‘i bo‘linib ketardi; avvalgi
+«nusxalandi» xabari oynadagi tugmani to‘sib qo‘yardi.
+
+Sinalmagan: iOS/Android qurilmadagi tizim buferi; ADMIN roli (funksiya
+rolga bog‘liq emas); ekspert xulosasi shablonining o‘ziga joylash.

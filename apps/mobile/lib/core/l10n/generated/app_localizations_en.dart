@@ -6913,4 +6913,48 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get calcBeerRelatedTools => 'Related tools: calibration and limits';
+
+  @override
+  String get citeCopy => 'Copy citation';
+
+  @override
+  String get citeAllSources => 'Copy reference list';
+
+  @override
+  String citeListTitle(int count) {
+    return 'Reference list · $count';
+  }
+
+  @override
+  String get citeStyleLabel => 'Citation style';
+
+  @override
+  String get citeStyleGost => 'GOST';
+
+  @override
+  String get citeStyleVancouver => 'Vancouver';
+
+  @override
+  String get citeStyleApa => 'APA 7';
+
+  @override
+  String get citeCopyButton => 'Copy';
+
+  @override
+  String get citeCopied => 'Citation copied';
+
+  @override
+  String citeListCopied(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count references copied',
+      one: '1 reference copied',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get citeVerifyNote =>
+      'The app is a reference tool: verify each source against the original before citing it in an expert conclusion.';
 }
