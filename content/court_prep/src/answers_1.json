@@ -281,7 +281,7 @@
     "followups": [
       {
         "q": {"uz": "Mass-spektrometriya baribir selektiv emasmi?", "ru": "Разве масс-спектрометрия не селективна сама по себе?", "en": "Isn't mass spectrometry selective anyway?"},
-        "a": {"uz": "LC-MS/MS ham selektivlikni kafolatlamaydi: ionlanishni susaytirish yoki kuchaytirish mumkin, shuning uchun u alohida baholanadi [matuszewski2003].", "ru": "Даже ВЭЖХ-МС/МС не гарантирует селективности: возможны подавление или усиление ионизации, поэтому её оценивают отдельно [matuszewski2003].", "en": "Even LC-MS/MS does not guarantee selectivity: ionisation can be suppressed or enhanced, so it is assessed separately [matuszewski2003]."}
+        "a": {"uz": "LC-MS/MS (suyuqlik xromatografiyasi — tandem mass-spektrometriya) ham selektivlikni kafolatlamaydi: ionlanishni susaytirish yoki kuchaytirish mumkin, shuning uchun u alohida baholanadi [matuszewski2003].", "ru": "Даже LC-MS/MS (жидкостная хроматография — тандемная масс-спектрометрия) не гарантирует селективности: возможны подавление или усиление ионизации, поэтому её оценивают отдельно [matuszewski2003].", "en": "Even LC-MS/MS (liquid chromatography–tandem mass spectrometry) does not guarantee selectivity: ionisation can be suppressed or enhanced, so it is assessed separately [matuszewski2003]."}
       },
       {
         "q": {"uz": "Ichki standart bu muammoni hal qiladimi?", "ru": "Решает ли проблему внутренний стандарт?", "en": "Does an internal standard solve the problem?"},
@@ -317,9 +317,9 @@
   },
   "court.q.ident_immunoassay": {
     "short_answer": {
-      "uz": "Immunotahlil kesishgan reaktivlik tufayli soxta musbat bo‘lishi mumkin; musbat natija ikkinchi, mustaqil kimyoviy usul bilan tasdiqlanmaguncha taxminiy [saitman2014]. Tasdiqlash GC-MS yoki LC-MS/MS bilan bajarilgan [drummer2007].",
-      "ru": "Иммуноанализ может давать ложноположительные результаты из-за перекрёстной реактивности; положительный результат предварителен до подтверждения вторым независимым химическим методом [saitman2014]. Подтверждение выполнено ГХ-МС или ВЭЖХ-МС/МС [drummer2007].",
-      "en": "Immunoassays can be falsely positive through cross-reactivity; a positive is presumptive until confirmed by a second, independent chemical technique [saitman2014]. Confirmation was by GC-MS or LC-MS/MS [drummer2007]."
+      "uz": "Immunotahlil kesishgan reaktivlik tufayli soxta musbat bo‘lishi mumkin; musbat natija ikkinchi, mustaqil kimyoviy usul bilan tasdiqlanmaguncha taxminiy [saitman2014]. Tasdiqlash GC-MS yoki LC-MS/MS (suyuqlik xromatografiyasi — tandem mass-spektrometriya) bilan bajarilgan [drummer2007].",
+      "ru": "Иммуноанализ может давать ложноположительные результаты из-за перекрёстной реактивности; положительный результат предварителен до подтверждения вторым независимым химическим методом [saitman2014]. Подтверждение выполнено GC-MS (газовая хроматография — масс-спектрометрия) или LC-MS/MS (жидкостная хроматография — тандемная масс-спектрометрия) [drummer2007].",
+      "en": "Immunoassays can be falsely positive through cross-reactivity; a positive is presumptive until confirmed by a second, independent chemical technique [saitman2014]. Confirmation was by GC-MS or LC-MS/MS (liquid chromatography–tandem mass spectrometry) [drummer2007]."
     },
     "followups": [
       {
