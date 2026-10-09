@@ -18,7 +18,7 @@ import '../../../core/perf/startup_metrics.dart';
 import '../../../core/settings/app_settings.dart';
 import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/fe_components.dart';
-import '../../../domain/ports/billing_ports.dart';
+import '../../../domain/ports/billing_ports.dart' hide VerificationStatus;
 import '../../../domain/ports/professional_ports.dart';
 import '../../../domain/professional/professional_models.dart';
 import '../../professional/presentation/professional_widgets.dart';
@@ -61,6 +61,50 @@ class ProfileScreen extends ConsumerWidget {
       null => '—',
     };
 
+    final largeText = MediaQuery.textScalerOf(context).scale(1) >= 1.6;
+    final signedIn = authState.signedIn;
+    final account = authState.account;
+    final supportOn = ref.watch(supportAvailableProvider);
+    final isAdmin = ref.watch(serverAccessProvider).value?.isAdmin ?? false;
+    // Talabaga professional tasdiq bo‘limi faqat jarayon boshlangan bo‘lsa.
+    final showVerification =
+        settings.userMode != UserMode.student ||
+        verification.status != VerificationStatus.unverified ||
+        pendingDocs > 0;
+
+    Future<void> confirmDeleteLocal() async {
+      final ok = await showDialog<bool>(
+        context: context,
+        builder: (ctx) => AlertDialog(
+          title: Text(l.deleteLocalData),
+          content: Text(l.deleteLocalDataBody),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(ctx, false),
+              child: Text(MaterialLocalizations.of(ctx).cancelButtonLabel),
+            ),
+            FilledButton(
+              key: const Key('profile.deleteLocalData.confirm'),
+              onPressed: () => Navigator.pop(ctx, true),
+              child: Text(l.deleteLocalDataConfirm),
+            ),
+          ],
+        ),
+      );
+      if (ok == true) {
+        await ref.read(userDataProvider.notifier).deleteAllLocalData();
+        await ref.read(localProfileProvider.notifier).clear();
+        ref.read(pendingCredentialsProvider.notifier).clear();
+        if (context.mounted) {
+          ScaffoldMessenger.of(context)
+              .showSnackBar(SnackBar(content: Text(l.deleteLocalDataDone)));
+        }
+      }
+    }
+
+    // Tartib: kim (kartochka) → hisob → obuna → sozlamalar → ko‘rinish →
+    // yordam → tasdiqlash → ma’lumotlar → ilova haqida. Har bo‘lim —
+    // bitta guruhlangan karta.
     return Scaffold(
       appBar: AppBar(title: Text(l.profileTitle)),
       body: SafeArea(
@@ -75,374 +119,385 @@ class ProfileScreen extends ConsumerWidget {
                     declaredRole: settings.declaredRole,
                     profile: localProfile,
                   ),
-                  // Hisob — sarlavha kartasidan darhol keyin.
                   FeSectionHeader(l.accountSection),
-                  if (!authState.signedIn) ...[
+                  if (!signedIn && !authRepo.isConfigured) ...[
+                    // Akkaunt xizmati ulanmagan: ishlamaydigan kirish
+                    // tugmalari ko‘rsatilmaydi — faqat aniq izoh.
                     Text(
                       l.accountOptionalNote,
                       key: const Key('profile.accountOptional'),
                       style: t.bodyMedium?.copyWith(color: c.textSecondary),
                     ),
-                    if (!authRepo.isConfigured) ...[
-                      // Akkaunt xizmati ulanmagan: ishlamaydigan kirish
-                      // tugmalari ko‘rsatilmaydi — faqat aniq izoh.
-                      const SizedBox(height: FeSpace.xs),
-                      FeBanner(
-                        key: const Key('profile.accountNotConnected'),
-                        icon: Icons.cloud_off_outlined,
-                        text: l.accountNotConnected,
-                      ),
-                    ] else ...[
-                      // Bitta kirish yo‘li: email kod (parol bilan kirish va
-                      // ro‘yxatdan o‘tish qatorlari ko‘rsatilmaydi).
-                      _Row(
-                        key: const Key('profile.emailCode'),
-                        icon: Icons.login,
-                        title: l.accountSignInEmailCode,
-                        value: l.emailCodeRowHint,
-                        onTap: () => context.push(Routes.accountEmailCode),
-                      ),
-                    ],
-                  ] else ...[
-                    _Row(
-                      key: const Key('profile.accountEmail'),
-                      icon: Icons.person_outline,
-                      title: authState.account!.email,
-                      value: authState.account!.emailVerified
-                          ? l.accountVerified
-                          : l.accountNotVerified,
+                    const SizedBox(height: FeSpace.xs),
+                    FeBanner(
+                      key: const Key('profile.accountNotConnected'),
+                      icon: Icons.cloud_off_outlined,
+                      text: l.accountNotConnected,
                     ),
-                    if (!authState.account!.emailVerified)
-                      _Row(
-                        key: const Key('profile.verify'),
-                        icon: Icons.mark_email_unread_outlined,
-                        title: l.accountVerifyNow,
-                        onTap: () => context.push(
-                          Routes.accountVerify,
-                          extra: authState.account!.email,
+                  ] else if (!signedIn)
+                    // Bitta kirish yo‘li: email kod (parolsiz).
+                    _SignInCard(
+                      key: const Key('profile.emailCode'),
+                      onTap: () => context.push(Routes.accountEmailCode),
+                    )
+                  else
+                    _Group(
+                      children: [
+                        _Row(
+                          key: const Key('profile.accountEmail'),
+                          icon: Icons.person_outline,
+                          title: account!.email,
+                          value: account.emailVerified
+                              ? l.accountVerified
+                              : l.accountNotVerified,
                         ),
-                      ),
-                    _Row(
-                      key: const Key('profile.signOut'),
-                      icon: Icons.logout,
-                      title: l.accountSignOut,
-                      onTap: () async {
-                        final messenger = ScaffoldMessenger.of(context);
-                        await authRepo.signOut();
-                        messenger.showSnackBar(
-                          SnackBar(content: Text(l.accountSignedOut)),
-                        );
-                      },
+                        // Egasi uchun panel — hisob yonida (tez topiladi).
+                        if (isAdmin)
+                          _Row(
+                            key: const Key('profile.admin'),
+                            icon: Icons.admin_panel_settings_outlined,
+                            title: l.adminTitle,
+                            value: l.adminProfileHint,
+                            onTap: () => context.push(Routes.admin),
+                          ),
+                        if (!account.emailVerified)
+                          _Row(
+                            key: const Key('profile.verify'),
+                            icon: Icons.mark_email_unread_outlined,
+                            title: l.accountVerifyNow,
+                            onTap: () => context.push(
+                              Routes.accountVerify,
+                              extra: account.email,
+                            ),
+                          ),
+                        _Row(
+                          key: const Key('profile.signOut'),
+                          icon: Icons.logout,
+                          title: l.accountSignOut,
+                          onTap: () async {
+                            final messenger = ScaffoldMessenger.of(context);
+                            await authRepo.signOut();
+                            messenger.showSnackBar(
+                              SnackBar(content: Text(l.accountSignedOut)),
+                            );
+                          },
+                        ),
+                        // Apple 5.1.1(v), Google Play account deletion.
+                        _Row(
+                          key: const Key('profile.deleteAccount'),
+                          icon: Icons.person_remove_outlined,
+                          title: l.deleteAccount,
+                          onTap: () => context.push(Routes.accountDelete),
+                        ),
+                      ],
                     ),
-                    // Apple 5.1.1(v), Google Play account deletion.
-                    _Row(
-                      key: const Key('profile.deleteAccount'),
-                      icon: Icons.person_remove_outlined,
-                      title: l.deleteAccount,
-                      onTap: () => context.push(Routes.accountDelete),
-                    ),
-                  ],
-                  if (ref.watch(supportAvailableProvider)) ...[
-                    if (unread > 0)
-                      Padding(
-                        padding: const EdgeInsets.only(top: FeSpace.xs),
-                        child: FeCard(
-                          key: const Key('profile.supportBanner'),
-                          color: c.accentContainer,
-                          padding: const EdgeInsets.all(FeSpace.sm),
-                          onTap: () => context.push(Routes.support),
-                          child: Row(
-                            children: [
-                              Icon(
-                                Icons.mark_chat_unread_outlined,
-                                color: c.onAccentContainer,
-                              ),
-                              const SizedBox(width: FeSpace.sm),
-                              Expanded(
-                                child: Text(
-                                  l.supBannerText,
-                                  style: t.bodyMedium?.copyWith(
-                                    color: c.onAccentContainer,
-                                  ),
+                  if (supportOn && unread > 0)
+                    Padding(
+                      padding: const EdgeInsets.only(top: FeSpace.sm),
+                      child: FeCard(
+                        key: const Key('profile.supportBanner'),
+                        color: c.accentContainer,
+                        padding: const EdgeInsets.all(FeSpace.sm),
+                        onTap: () => context.push(Routes.support),
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.mark_chat_unread_outlined,
+                              color: c.onAccentContainer,
+                            ),
+                            const SizedBox(width: FeSpace.sm),
+                            Expanded(
+                              child: Text(
+                                l.supBannerText,
+                                style: t.bodyMedium?.copyWith(
+                                  color: c.onAccentContainer,
                                 ),
                               ),
-                              Icon(
-                                Icons.chevron_right,
-                                color: c.onAccentContainer,
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    _Row(
-                      key: const Key('profile.support'),
-                      icon: Icons.forum_outlined,
-                      title: l.supTitle,
-                      value: unread > 0
-                          ? l.supUnreadHint(unread)
-                          : l.supProfileHint,
-                      trailing: unread > 0
-                          ? SupportUnreadBadge(count: unread)
-                          : null,
-                      onTap: () => context.push(Routes.support),
-                    ),
-                  ],
-                  const SizedBox(height: FeSpace.sm),
-                  const InviteColleagueCard(key: Key('profile.invite')),
-                  if (ref.watch(serverAccessProvider).value?.isAdmin ?? false)
-                    _Row(
-                      key: const Key('profile.admin'),
-                      icon: Icons.admin_panel_settings_outlined,
-                      title: l.adminTitle,
-                      value: l.adminProfileHint,
-                      onTap: () => context.push(Routes.admin),
-                    ),
-                  FeSectionHeader(l.profileSectionVerification),
-                  if (settings.userMode == UserMode.student)
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: FeSpace.xs),
-                      child: FeNote(
-                        key: const Key('profile.studentNoVerification'),
-                        icon: Icons.school_outlined,
-                        text: l.profileStudentVerificationNote,
-                      ),
-                    ),
-                  _Row(
-                    key: const Key('profile.verification'),
-                    icon: Icons.verified_user_outlined,
-                    title: l.verifTitle,
-                    valueWidget: VerificationStatusChip(
-                      status: verification.status,
-                    ),
-                    onTap: () => context.push(Routes.verification),
-                  ),
-                  _Row(
-                    key: const Key('profile.credentials'),
-                    icon: Icons.upload_file_outlined,
-                    title: l.credUploadTitle,
-                    value: pendingDocs == 0
-                        ? l.credOptional
-                        : l.credSelectedCount(pendingDocs),
-                    onTap: () => context.push(Routes.verificationDocuments),
-                  ),
-                  if (identity != null &&
-                      identity.isVerifiedProfessional &&
-                      identity.scopes.isNotEmpty)
-                    _Row(
-                      key: const Key('profile.reviewDashboard'),
-                      icon: Icons.rate_review_outlined,
-                      title: l.dashboardTitle,
-                      onTap: () => context.push(Routes.reviewDashboard),
-                    ),
-                  FeSectionHeader(l.profileSectionPreferences),
-                  _Row(
-                    key: const Key('profile.language'),
-                    icon: Icons.language,
-                    title: l.settingsLanguage,
-                    value: l.languageNameNative,
-                    onTap: () => context.push(Routes.profileLanguage),
-                  ),
-                  _Row(
-                    key: const Key('profile.mode'),
-                    icon: Icons.tune,
-                    title: l.settingsMode,
-                    value: modeLabel(settings.userMode),
-                    onTap: () => context.push(Routes.profileMode),
-                  ),
-                  _Row(
-                    key: const Key('profile.jurisdiction'),
-                    icon: Icons.public,
-                    title: l.settingsJurisdiction,
-                    value: jurisdiction.name(lang),
-                    onTap: () => context.push(Routes.profileJurisdiction),
-                  ),
-                  const SizedBox(height: FeSpace.sm),
-                  Text(l.settingsTheme, style: t.titleSmall),
-                  const SizedBox(height: FeSpace.xs),
-                  SegmentedButton<ThemeMode>(
-                    key: const Key('profile.theme'),
-                    showSelectedIcon: false,
-                    segments: [
-                      ButtonSegment(
-                        value: ThemeMode.system,
-                        label: Text(l.themeSystem),
-                      ),
-                      ButtonSegment(
-                        value: ThemeMode.light,
-                        label: Text(l.themeLight),
-                      ),
-                      ButtonSegment(
-                        value: ThemeMode.dark,
-                        label: Text(l.themeDark),
-                      ),
-                    ],
-                    selected: {settings.themeMode},
-                    onSelectionChanged: (s) =>
-                        controller.setThemeMode(s.single),
-                  ),
-                  const SizedBox(height: FeSpace.md),
-                  Text(l.settingsContrast, style: t.titleSmall),
-                  const SizedBox(height: FeSpace.xs),
-                  SegmentedButton<ContrastPreference>(
-                    key: const Key('profile.contrast'),
-                    showSelectedIcon: false,
-                    segments: [
-                      ButtonSegment(
-                        value: ContrastPreference.system,
-                        label: Text(l.themeSystem),
-                      ),
-                      ButtonSegment(
-                        value: ContrastPreference.standard,
-                        label: Text(l.contrastStandard),
-                      ),
-                      ButtonSegment(
-                        value: ContrastPreference.high,
-                        label: Text(l.contrastHigh),
-                      ),
-                    ],
-                    selected: {settings.contrast},
-                    onSelectionChanged: (s) => controller.setContrast(s.single),
-                  ),
-                  const SizedBox(height: FeSpace.xxs),
-                  Text(
-                    l.contrastSystemHint,
-                    style: t.bodySmall?.copyWith(color: c.textSecondary),
-                  ),
-                  FeSectionHeader(l.subscriptionSection),
-                  _Row(
-                    key: const Key('profile.purchase'),
-                    icon: Icons.workspace_premium_outlined,
-                    title: l.planLabel,
-                    value: tierLabel(l, access.effectiveTier),
-                    onTap: () => context.push(Routes.purchase),
-                  ),
-                  _Row(
-                    key: const Key('profile.subscriptionStatus'),
-                    icon: Icons.event_repeat_outlined,
-                    title: l.subscriptionStateLabel,
-                    value: subscriptionStatusLabel(context, access),
-                  ),
-                  _Row(
-                    key: const Key('profile.restore'),
-                    icon: Icons.restore,
-                    title: l.restorePurchases,
-                    onTap: () async {
-                      final messenger = ScaffoldMessenger.of(context);
-                      final e = await ref
-                          .read(entitlementServiceProvider)
-                          .restore();
-                      messenger.showSnackBar(
-                        SnackBar(
-                          content: Text(
-                            e.effectiveTier == PlanTier.free
-                                ? l.restoreNothing
-                                : l.purchaseOwned,
-                          ),
-                        ),
-                      );
-                    },
-                  ),
-                  if (access.effectiveTier != PlanTier.free)
-                    _Row(
-                      key: const Key('profile.manage'),
-                      icon: Icons.open_in_new,
-                      title: l.manageSubscription,
-                      onTap: () => openManageSubscription(
-                        context,
-                        productId: access.productId,
-                      ),
-                    ),
-                  FeSectionHeader(l.profileSectionData),
-                  _Row(
-                    key: const Key('profile.deleteLocalData'),
-                    icon: Icons.delete_sweep_outlined,
-                    title: l.deleteLocalData,
-                    onTap: () async {
-                      final ok = await showDialog<bool>(
-                        context: context,
-                        builder: (ctx) => AlertDialog(
-                          title: Text(l.deleteLocalData),
-                          content: Text(l.deleteLocalDataBody),
-                          actions: [
-                            TextButton(
-                              onPressed: () => Navigator.pop(ctx, false),
-                              child: Text(
-                                MaterialLocalizations.of(ctx).cancelButtonLabel,
-                              ),
                             ),
-                            FilledButton(
-                              key: const Key('profile.deleteLocalData.confirm'),
-                              onPressed: () => Navigator.pop(ctx, true),
-                              child: Text(l.deleteLocalDataConfirm),
+                            Icon(
+                              Icons.chevron_right,
+                              color: c.onAccentContainer,
                             ),
                           ],
                         ),
-                      );
-                      if (ok == true) {
-                        await ref
-                            .read(userDataProvider.notifier)
-                            .deleteAllLocalData();
-                        await ref.read(localProfileProvider.notifier).clear();
-                        ref.read(pendingCredentialsProvider.notifier).clear();
-                        if (context.mounted) {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(content: Text(l.deleteLocalDataDone)),
+                      ),
+                    ),
+                  FeSectionHeader(l.subscriptionSection),
+                  _Group(
+                    children: [
+                      _Row(
+                        key: const Key('profile.purchase'),
+                        icon: Icons.workspace_premium_outlined,
+                        title: l.planLabel,
+                        value: tierLabel(l, access.effectiveTier),
+                        onTap: () => context.push(Routes.purchase),
+                      ),
+                      _Row(
+                        key: const Key('profile.subscriptionStatus'),
+                        icon: Icons.event_repeat_outlined,
+                        title: l.subscriptionStateLabel,
+                        value: subscriptionStatusLabel(context, access),
+                      ),
+                      _Row(
+                        key: const Key('profile.restore'),
+                        icon: Icons.restore,
+                        title: l.restorePurchases,
+                        onTap: () async {
+                          final messenger = ScaffoldMessenger.of(context);
+                          final e = await ref
+                              .read(entitlementServiceProvider)
+                              .restore();
+                          messenger.showSnackBar(
+                            SnackBar(
+                              content: Text(
+                                e.effectiveTier == PlanTier.free
+                                    ? l.restoreNothing
+                                    : l.purchaseOwned,
+                              ),
+                            ),
                           );
-                        }
-                      }
-                    },
+                        },
+                      ),
+                      if (access.effectiveTier != PlanTier.free)
+                        _Row(
+                          key: const Key('profile.manage'),
+                          icon: Icons.open_in_new,
+                          title: l.manageSubscription,
+                          onTap: () => openManageSubscription(
+                            context,
+                            productId: access.productId,
+                          ),
+                        ),
+                    ],
                   ),
-                  _Row(
-                    key: const Key('profile.privacy'),
-                    icon: Icons.privacy_tip_outlined,
-                    title: l.privacyPolicy,
-                    onTap: () => context.push(Routes.privacy),
+                  FeSectionHeader(l.profileSectionPreferences),
+                  _Group(
+                    children: [
+                      _Row(
+                        key: const Key('profile.language'),
+                        icon: Icons.language,
+                        title: l.settingsLanguage,
+                        value: l.languageNameNative,
+                        onTap: () => context.push(Routes.profileLanguage),
+                      ),
+                      _Row(
+                        key: const Key('profile.mode'),
+                        icon: Icons.tune,
+                        title: l.settingsMode,
+                        value: modeLabel(settings.userMode),
+                        onTap: () => context.push(Routes.profileMode),
+                      ),
+                      _Row(
+                        key: const Key('profile.jurisdiction'),
+                        icon: Icons.public,
+                        title: l.settingsJurisdiction,
+                        value: jurisdiction.name(lang),
+                        onTap: () => context.push(Routes.profileJurisdiction),
+                      ),
+                    ],
+                  ),
+                  FeSectionHeader(l.profileSectionAppearance),
+                  _Group(
+                    padding: const EdgeInsets.all(FeSpace.md),
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Text(l.settingsTheme, style: t.titleSmall),
+                          const SizedBox(height: FeSpace.xs),
+                          SegmentedButton<ThemeMode>(
+                            key: const Key('profile.theme'),
+                            showSelectedIcon: false,
+                            segments: [
+                              ButtonSegment(
+                                value: ThemeMode.system,
+                                label: Text(l.themeSystem),
+                              ),
+                              ButtonSegment(
+                                value: ThemeMode.light,
+                                label: Text(l.themeLight),
+                              ),
+                              ButtonSegment(
+                                value: ThemeMode.dark,
+                                label: Text(l.themeDark),
+                              ),
+                            ],
+                            selected: {settings.themeMode},
+                            onSelectionChanged: (s) =>
+                                controller.setThemeMode(s.single),
+                          ),
+                          const SizedBox(height: FeSpace.md),
+                          Text(l.settingsContrast, style: t.titleSmall),
+                          const SizedBox(height: FeSpace.xs),
+                          SegmentedButton<ContrastPreference>(
+                            key: const Key('profile.contrast'),
+                            showSelectedIcon: false,
+                            segments: [
+                              ButtonSegment(
+                                value: ContrastPreference.system,
+                                label: Text(l.themeSystem),
+                              ),
+                              ButtonSegment(
+                                value: ContrastPreference.standard,
+                                label: Text(l.contrastStandard),
+                              ),
+                              ButtonSegment(
+                                value: ContrastPreference.high,
+                                label: Text(l.contrastHigh),
+                              ),
+                            ],
+                            selected: {settings.contrast},
+                            onSelectionChanged: (s) =>
+                                controller.setContrast(s.single),
+                          ),
+                          const SizedBox(height: FeSpace.xs),
+                          Text(
+                            l.contrastSystemHint,
+                            style: t.bodySmall?.copyWith(
+                              color: c.textSecondary,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  FeSectionHeader(l.profileSectionHelp),
+                  if (supportOn) ...[
+                    _Group(
+                      children: [
+                        _Row(
+                          key: const Key('profile.support'),
+                          icon: Icons.forum_outlined,
+                          title: l.supTitle,
+                          value: unread > 0
+                              ? l.supUnreadHint(unread)
+                              : l.supProfileHint,
+                          trailing: unread > 0
+                              ? SupportUnreadBadge(count: unread)
+                              : null,
+                          onTap: () => context.push(Routes.support),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: FeSpace.sm),
+                  ],
+                  const InviteColleagueCard(key: Key('profile.invite')),
+                  if (showVerification) ...[
+                    FeSectionHeader(l.profileSectionVerification),
+                    if (settings.userMode == UserMode.student)
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: FeSpace.xs),
+                        child: FeNote(
+                          key: const Key('profile.studentNoVerification'),
+                          icon: Icons.school_outlined,
+                          text: l.profileStudentVerificationNote,
+                        ),
+                      ),
+                    _Group(
+                      children: [
+                        _Row(
+                          key: const Key('profile.verification'),
+                          icon: Icons.verified_user_outlined,
+                          title: l.verifTitle,
+                          // Katta shriftda chip so‘z o‘rtasidan bo‘linmasin.
+                          value: largeText
+                              ? l.verificationStatusLabel(verification.status)
+                              : null,
+                          valueWidget: largeText
+                              ? null
+                              : VerificationStatusChip(
+                                  status: verification.status,
+                                ),
+                          onTap: () => context.push(Routes.verification),
+                        ),
+                        _Row(
+                          key: const Key('profile.credentials'),
+                          icon: Icons.upload_file_outlined,
+                          title: l.credUploadTitle,
+                          value: pendingDocs == 0
+                              ? l.credOptional
+                              : l.credSelectedCount(pendingDocs),
+                          onTap: () =>
+                              context.push(Routes.verificationDocuments),
+                        ),
+                        if (identity != null &&
+                            identity.isVerifiedProfessional &&
+                            identity.scopes.isNotEmpty)
+                          _Row(
+                            key: const Key('profile.reviewDashboard'),
+                            icon: Icons.rate_review_outlined,
+                            title: l.dashboardTitle,
+                            onTap: () => context.push(Routes.reviewDashboard),
+                          ),
+                      ],
+                    ),
+                  ],
+                  FeSectionHeader(l.profileSectionData),
+                  _Group(
+                    children: [
+                      _Row(
+                        key: const Key('profile.deleteLocalData'),
+                        icon: Icons.delete_sweep_outlined,
+                        title: l.deleteLocalData,
+                        onTap: confirmDeleteLocal,
+                      ),
+                      _Row(
+                        key: const Key('profile.privacy'),
+                        icon: Icons.privacy_tip_outlined,
+                        title: l.privacyPolicy,
+                        onTap: () => context.push(Routes.privacy),
+                      ),
+                    ],
                   ),
                   FeSectionHeader(l.profileSectionAbout),
-                  _Row(
-                    icon: Icons.storage_outlined,
-                    title: l.scientificDatabaseLabel,
-                    value: content.when(
-                      data: (s) =>
-                          s.packVersion ?? l.scientificDatabaseNotInstalled,
-                      loading: () => '…',
-                      error: (_, _) => l.scientificDatabaseNotInstalled,
-                    ),
-                  ),
-                  _Row(
-                    key: const Key('profile.terms'),
-                    icon: Icons.description_outlined,
-                    title: l.termsOfUse,
-                    onTap: () => context.push(Routes.terms),
-                  ),
-                  _Row(
-                    key: const Key('profile.disclaimer'),
-                    icon: Icons.gavel_outlined,
-                    title: l.scientificDisclaimerLink,
-                    onTap: () => context.push(Routes.profileDisclaimer),
-                  ),
-                  _Row(
-                    key: const Key('profile.aiDisclaimer'),
-                    icon: Icons.auto_awesome_outlined,
-                    title: l.aiDisclaimerLink,
-                    onTap: () => context.push(Routes.aiDisclaimer),
-                  ),
-                  _Row(
-                    key: const Key('profile.licenses'),
-                    icon: Icons.code,
-                    title: l.openSourceLicenses,
-                    onTap: () => showLicensePage(
-                      context: context,
-                      applicationName: l.appTitle,
-                      applicationVersion: AppInfo.version,
-                    ),
-                  ),
-                  _Row(
-                    key: const Key('profile.about'),
-                    icon: Icons.info_outline,
-                    title: l.aboutApp,
-                    value: '${l.appVersionLabel} ${AppInfo.version}',
-                    onTap: () => context.push(Routes.about),
+                  _Group(
+                    children: [
+                      _Row(
+                        key: const Key('profile.about'),
+                        icon: Icons.info_outline,
+                        title: l.aboutApp,
+                        value: '${l.appVersionLabel} ${AppInfo.version}',
+                        onTap: () => context.push(Routes.about),
+                      ),
+                      _Row(
+                        icon: Icons.storage_outlined,
+                        title: l.scientificDatabaseLabel,
+                        value: content.when(
+                          data: (s) =>
+                              s.packVersion ?? l.scientificDatabaseNotInstalled,
+                          loading: () => '…',
+                          error: (_, _) => l.scientificDatabaseNotInstalled,
+                        ),
+                      ),
+                      _Row(
+                        key: const Key('profile.terms'),
+                        icon: Icons.description_outlined,
+                        title: l.termsOfUse,
+                        onTap: () => context.push(Routes.terms),
+                      ),
+                      _Row(
+                        key: const Key('profile.disclaimer'),
+                        icon: Icons.gavel_outlined,
+                        title: l.scientificDisclaimerLink,
+                        onTap: () => context.push(Routes.profileDisclaimer),
+                      ),
+                      _Row(
+                        key: const Key('profile.aiDisclaimer'),
+                        icon: Icons.auto_awesome_outlined,
+                        title: l.aiDisclaimerLink,
+                        onTap: () => context.push(Routes.aiDisclaimer),
+                      ),
+                      _Row(
+                        key: const Key('profile.licenses'),
+                        icon: Icons.code,
+                        title: l.openSourceLicenses,
+                        onTap: () => showLicensePage(
+                          context: context,
+                          applicationName: l.appTitle,
+                          applicationVersion: AppInfo.version,
+                        ),
+                      ),
+                    ],
                   ),
                   if (kDebugMode || kProfileMode) ...[
                     FeSectionHeader(l.diagnosticsSection),
@@ -470,6 +525,95 @@ class ProfileScreen extends ConsumerWidget {
   }
 }
 
+/// Bo‘lim kartasi: qatorlar bitta yuzada, ingichka ajratgichlar bilan.
+class _Group extends StatelessWidget {
+  const _Group({required this.children, this.padding});
+
+  final List<Widget> children;
+  final EdgeInsetsGeometry? padding;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = FeTheme.of(context);
+    return Material(
+      color: c.surfaceRaised,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(FeRadius.card),
+        side: BorderSide(
+          color: FeTheme.isHighContrast(context) ? c.borderStrong : c.border,
+        ),
+      ),
+      clipBehavior: Clip.antiAlias,
+      child: Padding(
+        padding: padding ?? EdgeInsets.zero,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            for (var i = 0; i < children.length; i++) ...[
+              if (i > 0)
+                Divider(height: 1, thickness: 1, indent: 56, color: c.border),
+              children[i],
+            ],
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Kirmagan foydalanuvchi uchun bitta aniq amal: email kod bilan kirish.
+class _SignInCard extends StatelessWidget {
+  const _SignInCard({super.key, required this.onTap});
+
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    return FeCard(
+      semanticLabel: l.accountSignInEmailCode,
+      onTap: onTap,
+      child: Row(
+        children: [
+          DecoratedBox(
+            decoration: BoxDecoration(
+              color: c.accentContainer,
+              shape: BoxShape.circle,
+              border: Border.all(color: c.accentBorder),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.all(10),
+              child: Icon(Icons.mail_outline, color: c.accent, size: 22),
+            ),
+          ),
+          const SizedBox(width: FeSpace.md),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  l.accountSignInEmailCode,
+                  style: t.titleSmall?.copyWith(fontWeight: FontWeight.w600),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  l.profileSignInBody,
+                  style: t.bodySmall?.copyWith(color: c.textSecondary),
+                ),
+              ],
+            ),
+          ),
+          ExcludeSemantics(
+            child: Icon(Icons.arrow_forward, color: c.accent, size: 20),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 class _Row extends StatelessWidget {
   const _Row({
     super.key,
@@ -490,9 +634,10 @@ class _Row extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final c = FeTheme.of(context);
     return ListTile(
-      contentPadding: EdgeInsets.zero,
-      leading: Icon(icon),
+      contentPadding: const EdgeInsets.symmetric(horizontal: FeSpace.md),
+      leading: Icon(icon, color: c.textSecondary),
       title: Text(title),
       subtitle: switch (valueWidget) {
         final w? => Padding(
@@ -629,7 +774,7 @@ class _IdentityCard extends StatelessWidget {
                               ? l.profileFillAction
                               : l.profileEditAction,
                           style: t.labelMedium?.copyWith(
-                            color: const Color(0xFF7FDDE6),
+                            color: const Color(0xFFC9A75E),
                           ),
                         ),
                       ],

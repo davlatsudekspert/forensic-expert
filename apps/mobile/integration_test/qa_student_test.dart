@@ -46,11 +46,11 @@ void main() {
     await qa.step('Rejim: Talaba → hisob taklifi', (s) async {
       await qa.tapText(l.modeStudent);
       await qa.tapText(l.actionContinue);
-      qa.expectText('Hisobsiz davom etish', s);
+      qa.expectText(l.accountStartNow, s);
     });
 
-    await qa.step('Hisobsiz davom etish → Asosiy', (s) async {
-      await qa.tapText('Hisobsiz davom etish');
+    await qa.step('Boshlash → Asosiy', (s) async {
+      await qa.tapFinder(find.byKey(const Key('account.skip')));
       qa.expectText('Rejim: Talaba', s);
     });
 

@@ -9,6 +9,7 @@ import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../onboarding/presentation/onboarding_progress.dart';
 import 'professional_widgets.dart';
 
 /// Onboarding’dan keyin: hisobsiz davom etish (asosiy) yoki hisob.
@@ -25,14 +26,6 @@ class AccountChoiceScreen extends ConsumerWidget {
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
     final configured = ref.watch(authRepositoryProvider).isConfigured;
-    final cloudFeatures = [
-      (Icons.verified_user_outlined, l.accountNeedVerification),
-      (Icons.rate_review_outlined, l.accountNeedReviews),
-      (Icons.sync, l.accountNeedSync),
-      (Icons.workspace_premium_outlined, l.accountNeedSubscriptions),
-      (Icons.auto_awesome_outlined, l.accountNeedCloudAi),
-      (Icons.apartment_outlined, l.accountNeedInstitution),
-    ];
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
@@ -40,36 +33,51 @@ class AccountChoiceScreen extends ConsumerWidget {
           icon: const Icon(Icons.arrow_back),
           onPressed: () => context.go(Routes.mode),
         ),
+        title: const OnboardingProgress(step: OnboardingSteps.total),
       ),
       body: SafeArea(
         child: FeScrollableBody(
-          padding: const EdgeInsets.only(bottom: FeSpace.xl),
+          padding: const EdgeInsets.only(top: FeSpace.sm, bottom: FeSpace.xl),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Semantics(
-                header: true,
-                child: Text(l.accountChoiceTitle, style: t.headlineSmall),
-              ),
-              const SizedBox(height: FeSpace.xs),
-              Text(
-                l.accountChoiceSubtitle,
-                style: t.bodyMedium?.copyWith(color: c.textSecondary),
-              ),
-              const SizedBox(height: FeSpace.lg),
-              FilledButton.icon(
-                key: const Key('account.skip'),
-                onPressed: () => context.go(Routes.home),
-                icon: const Icon(Icons.offline_bolt_outlined),
-                label: Text(l.accountContinueWithout),
-              ),
-              const SizedBox(height: FeSpace.xs),
-              Text(
-                l.accountContinueWithoutNote,
-                textAlign: TextAlign.center,
-                style: t.bodySmall?.copyWith(color: c.textSecondary),
+              ExcludeSemantics(
+                child: Align(
+                  alignment: AlignmentDirectional.centerStart,
+                  child: DecoratedBox(
+                    decoration: BoxDecoration(
+                      color: c.accentContainer,
+                      shape: BoxShape.circle,
+                      border: Border.all(color: c.accentBorder),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(FeSpace.sm),
+                      child: Icon(
+                        Icons.check_rounded,
+                        size: 28,
+                        color: c.accent,
+                      ),
+                    ),
+                  ),
+                ),
               ),
               const SizedBox(height: FeSpace.md),
+              Semantics(
+                header: true,
+                child: Text(l.accountReadyTitle, style: t.headlineSmall),
+              ),
+              const SizedBox(height: FeSpace.xs),
+              Text(
+                l.accountReadyBody,
+                style: t.bodyLarge?.copyWith(color: c.textSecondary),
+              ),
+              const SizedBox(height: FeSpace.xl),
+              FilledButton(
+                key: const Key('account.skip'),
+                onPressed: () => context.go(Routes.home),
+                child: Text(l.accountStartNow),
+              ),
+              const SizedBox(height: FeSpace.sm),
               OutlinedButton.icon(
                 key: const Key('account.create'),
                 onPressed: configured
@@ -82,37 +90,22 @@ class AccountChoiceScreen extends ConsumerWidget {
                         }
                       }
                     : null,
-                icon: const Icon(Icons.person_add_alt),
+                icon: const Icon(Icons.mail_outline),
                 label: Text(l.accountCreateOrSignIn),
               ),
-              if (!configured) ...[
-                const SizedBox(height: FeSpace.xs),
+              const SizedBox(height: FeSpace.md),
+              if (!configured)
                 FeNote(
                   key: const Key('account.unavailable'),
                   icon: Icons.cloud_off_outlined,
                   text: l.accountCloudUnavailable,
+                )
+              else
+                FeNote(
+                  key: const Key('account.benefits'),
+                  icon: Icons.info_outline,
+                  text: l.accountBenefitsNote,
                 ),
-              ],
-              const SizedBox(height: FeSpace.lg),
-              Text(l.accountNeededFor, style: t.titleSmall),
-              const SizedBox(height: FeSpace.xs),
-              for (final (icon, text) in cloudFeatures)
-                Padding(
-                  padding: const EdgeInsets.only(bottom: FeSpace.xs),
-                  child: FeNote(icon: icon, text: text),
-                ),
-              const SizedBox(height: FeSpace.md),
-              TextButton.icon(
-                key: const Key('account.fillProfile'),
-                onPressed: () => context.push(Routes.welcomeProfile),
-                icon: const Icon(Icons.badge_outlined),
-                label: Text(l.accountFillProfile),
-              ),
-              Text(
-                l.profileLocalOnlyNote,
-                textAlign: TextAlign.center,
-                style: t.bodySmall?.copyWith(color: c.textSecondary),
-              ),
             ],
           ),
         ),

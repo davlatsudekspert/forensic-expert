@@ -94,7 +94,7 @@ void main() {
       await tapKey(tester, 'mode.continue');
       expect(repo.value.userMode, UserMode.student);
       expect(repo.value.declaredRole, 'residentTrainee');
-      expect(find.text('Hisobsiz davom etish'), findsOneWidget);
+      expect(find.text('Boshlash'), findsOneWidget);
     });
 
     testWidgets('rejim tanlanmasa davom etib bo‘lmaydi', (tester) async {

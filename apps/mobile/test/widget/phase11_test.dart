@@ -21,12 +21,7 @@ void main() {
     await c.read(userDataProvider.notifier).recordSearch('fentanyl');
     expect(c.read(userDataProvider).favorites, isNotEmpty);
     final row = find.byKey(const Key('profile.deleteLocalData'));
-    await tester.dragUntilVisible(
-      row,
-      find.byType(Scrollable).first,
-      const Offset(0, -200),
-    );
-    await tester.drag(find.byType(Scrollable).first, const Offset(0, -150));
+    await tester.ensureVisible(row);
     await tester.pumpAndSettle();
     await tester.tap(row);
     await tester.pumpAndSettle();
