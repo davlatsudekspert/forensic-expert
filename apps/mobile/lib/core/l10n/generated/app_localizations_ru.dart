@@ -6668,4 +6668,7 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get imageAttrOriginalSchematic =>
       'Оригинальная схема — FORENSIC EXPERT';
+
+  @override
+  String get supRelatedUnknown => 'запись в контент-пакете';
 }

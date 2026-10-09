@@ -8652,5 +8652,9 @@
   "imageAttrOriginalSchematic": "Original schematic — FORENSIC EXPERT",
   "@imageAttrOriginalSchematic": {
     "description": "Attribution of an original schematic drawn by the app team."
+  },
+  "supRelatedUnknown": "record in the content pack",
+  "@supRelatedUnknown": {
+    "description": "Fallback when the related record is not in this content pack."
   }
 }

@@ -11852,6 +11852,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Original schematic — FORENSIC EXPERT'**
   String get imageAttrOriginalSchematic;
+
+  /// Fallback when the related record is not in this content pack.
+  ///
+  /// In en, this message translates to:
+  /// **'record in the content pack'**
+  String get supRelatedUnknown;
 }
 
 class _AppLocalizationsDelegate

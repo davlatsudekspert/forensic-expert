@@ -277,7 +277,7 @@ class _AdminOverview extends ConsumerWidget {
             items: [
               (Icons.group_outlined, '${value.usersTotal}', l.admStatUsers),
               (
-                Icons.fiber_new_outlined,
+                Icons.person_add_alt_1_outlined,
                 '${value.newToday}',
                 l.admStatNewToday,
               ),

@@ -290,7 +290,15 @@ class _NewSupportThreadScreenState
                         FeNote(
                           key: const Key('supportNew.related'),
                           icon: Icons.link,
-                          text: l.supRelated(e),
+                          text: l.supRelated(
+                            widget.relatedTitle ??
+                                relatedEntityName(
+                                  ref,
+                                  Localizations.localeOf(context).languageCode,
+                                  e,
+                                ) ??
+                                l.supRelatedUnknown,
+                          ),
                         ),
                       ],
                       const SizedBox(height: FeSpace.sm),
@@ -516,7 +524,7 @@ class _SupportThreadScreenState extends ConsumerState<SupportThreadScreen> {
 }
 
 /// Sarlavha (mavzu, turkum, holat) + xabarlar + pastki panel.
-class SupportConversation extends StatelessWidget {
+class SupportConversation extends ConsumerWidget {
   const SupportConversation({
     super.key,
     required this.thread,
@@ -531,7 +539,7 @@ class SupportConversation extends StatelessWidget {
   final Widget? header;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
     final t = Theme.of(context).textTheme;
     final c = FeTheme.of(context);
@@ -569,7 +577,14 @@ class SupportConversation extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.only(top: FeSpace.xxs),
                         child: Text(
-                          l.supRelated(e),
+                          l.supRelated(
+                            relatedEntityName(
+                                  ref,
+                                  Localizations.localeOf(context).languageCode,
+                                  e,
+                                ) ??
+                                l.supRelatedUnknown,
+                          ),
                           style: t.bodySmall?.copyWith(color: c.textSecondary),
                         ),
                       ),

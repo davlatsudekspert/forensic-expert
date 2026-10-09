@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../app/guidelines.dart';
+import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../app/support.dart';
 import '../../../core/design/theme.dart';
@@ -419,4 +421,27 @@ class ReportErrorMenu extends ConsumerWidget {
       ],
     );
   }
+}
+
+/// `substance:morphine` kabi ichki identifikator o‘rniga yozuvning
+/// joriy tildagi nomi. Topilmasa — `null` (xom kod ko‘rsatilmaydi).
+String? relatedEntityName(WidgetRef ref, String lang, String entity) {
+  final i = entity.indexOf(':');
+  if (i <= 0) return null;
+  final kind = entity.substring(0, i);
+  final id = entity.substring(i + 1);
+  return switch (kind) {
+    'substance' ||
+    'entry' => ref.read(libraryRepositoryProvider).byId(id)?.name.resolve(lang),
+    'knowledge' =>
+      ref.read(knowledgeRepositoryProvider).byId(id)?.name.resolve(lang),
+    'guideline' => () {
+      final cards = ref.read(guidelinesProvider).value?.cards ?? const [];
+      for (final c in cards) {
+        if (c.id == id) return c.title.pick(lang).text;
+      }
+      return null;
+    }(),
+    _ => null,
+  };
 }

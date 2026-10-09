@@ -6644,4 +6644,7 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get imageAttrOriginalSchematic =>
       'Original schematic — FORENSIC EXPERT';
+
+  @override
+  String get supRelatedUnknown => 'record in the content pack';
 }

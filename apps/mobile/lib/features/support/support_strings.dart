@@ -47,7 +47,7 @@ extension SupportCategoryUi on SupportCategory {
 
 extension SupportStatusUi on SupportStatus {
   IconData get icon => switch (this) {
-    SupportStatus.newRequest => Icons.fiber_new_outlined,
+    SupportStatus.newRequest => Icons.mark_email_unread_outlined,
     SupportStatus.inReview => Icons.manage_search,
     SupportStatus.answered => Icons.mark_chat_read_outlined,
     SupportStatus.closed => Icons.lock_outline,

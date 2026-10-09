@@ -156,7 +156,14 @@ void main() {
     await _tap(tester, find.byKey(const Key('support.reportMenu')));
     await _tap(tester, find.byKey(const Key('support.reportError')));
     expect(find.byKey(const Key('supportNew.related')), findsOneWidget);
-    expect(find.textContaining('TEST-SUB-ETOH'), findsWidgets);
+    // Xom identifikator emas — yozuv nomi ko‘rsatiladi.
+    expect(
+      find.descendant(
+        of: find.byKey(const Key('supportNew.related')),
+        matching: find.textContaining('TEST-SUB-ETOH'),
+      ),
+      findsNothing,
+    );
     expect(find.text('Scientific error'), findsOneWidget);
     await tester.enterText(
       find.byKey(const Key('supportNew.body')),

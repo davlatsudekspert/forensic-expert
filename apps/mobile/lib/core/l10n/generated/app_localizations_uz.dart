@@ -6634,4 +6634,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get imageAttrOriginalSchematic => 'Asl sxema — FORENSIC EXPERT';
+
+  @override
+  String get supRelatedUnknown => 'kontent paketidagi yozuv';
 }

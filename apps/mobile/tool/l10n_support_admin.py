@@ -143,6 +143,7 @@ k("admActRoleChanged","Audit action.","Role changed","Роль изменена"
 k("admActOther","Audit action fallback.","Admin action","Действие администратора","Admin amali")
 k("admRetry","Action.","Try again","Повторить","Qayta urinish")
 
+k("supRelatedUnknown","Fallback when the related record is not in this content pack.","record in the content pack","запись в контент-пакете","kontent paketidagi yozuv")
 for idx, code in enumerate(["en","ru","uz"]):
     p = f"{D}/app_{code}.arb"
     data = json.load(open(p, encoding="utf-8"), object_pairs_hook=collections.OrderedDict)
