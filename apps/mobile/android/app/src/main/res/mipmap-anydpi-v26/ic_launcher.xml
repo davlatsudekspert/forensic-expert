@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- «Shield of Evidence» (design/brand/tools/generate_brand.py). Monochrome — Android 13+ themed icon. -->
+<!-- Premium qalqon emblemasi (design/brand/tools/generate_brand.py).
+     Fon — navy radial gradient; monochrome — Android 13+ themed icon. -->
 <adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
-    <background android:drawable="@color/ic_launcher_background"/>
+    <background android:drawable="@mipmap/ic_launcher_background"/>
     <foreground android:drawable="@mipmap/ic_launcher_foreground"/>
     <monochrome android:drawable="@mipmap/ic_launcher_monochrome"/>
 </adaptive-icon>

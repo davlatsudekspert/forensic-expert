@@ -1,416 +1,492 @@
 #!/usr/bin/env python3
-"""FORENSIC EXPERT — «Shield of Evidence» brend generatori (yakuniy).
+"""FORENSIC EXPERT — premium logotip assetlari generatori (2026-10-09).
 
-Egasi bergan referens rasm — faqat vizual yo‘nalish. Belgi toza vektor
-geometriyada qayta chizilgan original kompozitsiya:
+Yagona manba: egasi bergan rastr logotip
+`design/brand/source/logo_original.webp` (1254×1254, RGB, oq fon).
+Vektor trace qilinmagan: manbada metall gradientlar va soyalar bor —
+trace ularni tekislab yuborardi. Barcha assetlar yuqori aniqlikdagi
+rastrdan (premultiplied alpha bilan) **faqat kichraytirib** olinadi.
 
-  * qalqon — institutsional ishonch, dalilni himoya qilish;
-  * markazdagi tayoq va bitta ilon — umumiy tibbiyot ramzi (Asklepiy
-    tayog‘i, jamoat mulki) — sud tibbiyoti;
-  * tarozi — ekspert xulosasining xolisligi;
-  * barmoq izi (chapda) — kriminalistik dalil;
-  * xromatogramma cho‘qqilari (o‘ngda) — analitik laboratoriya
-    (shartli shakl, real ma’lumot emas);
-  * tashqi bo‘lingan halqa (4 kesik) — aniqlik.
+Natijalar:
+  * design/brand/png/ — kesilgan emblema (light/dark, full/small, mono),
+    kvadrat emblema, wordmark, lockup (light/dark), app icon, o‘lcham
+    sinovi;
+  * apps/mobile/assets/brand/ — ilova ichidagi emblema (@1x/@2x/@3x);
+  * Android: mipmap (legacy, adaptive foreground/background, monochrome),
+    splash (drawable-*/launch_mark, light va night);
+  * iOS: AppIcon (alpha yo‘q), LaunchImage (light + dark appearance).
 
-Hech qanday tashkilot (AAFS, WHO, politsiya, vazirlik va h.k.) logotipidan
-nusxa emas; 3D/metall effektlar yo‘q — tekis vektor, oltin faqat
-emblemada cheklangan aksent.
-
-Uch daraja (optik soddalashtirish):
-  full  (≥ 96 px)  — barcha elementlar: splash, About, marketing;
-  icon  (41–95 px) — qalqon + tayoq/ilon + tarozi: launcher, App Store;
-  small (≤ 40 px)  — qalqon + tayoq/ilon: favicon, kichik header.
-
-Yagona manba: shu fayldagi geometriya → SVG (design/brand/svg), PNG
-(cairosvg), Android/iOS ikonlari va splash, hamda Flutter painter
-(`apps/mobile/lib/core/widgets/brand_emblem.g.dart`). 100×100 grid.
-Talab: `pip install cairosvg pillow`.
+Talab: `pip install pillow numpy`. Ishga tushirish (repo ildizidan):
+  python3 design/brand/tools/generate_brand.py
 """
-import io
 import json
-import math
+from collections import deque
 from pathlib import Path
 
-import cairosvg
-from PIL import Image, ImageDraw
+import numpy as np
+from PIL import Image, ImageDraw, ImageFilter
 
 ROOT = Path(__file__).resolve().parents[3]
-OUT = ROOT / "design" / "brand"
+BRAND = ROOT / "design" / "brand"
+SRC = BRAND / "source" / "logo_original.webp"
+PNG = BRAND / "png"
 APP = ROOT / "apps" / "mobile"
 
-NAVY = "#0F1E3D"
-NAVY_FILL = "#15284D"     # qalqon ichki foni (to‘q variant)
-GRAPHITE = "#1E2633"
-WHITE = "#FFFFFF"
-SILVER = "#E8EDF4"         # to‘q fonda asosiy siyoh
-GOLD_DARK = "#C9A75E"      # to‘q fonda cheklangan oltin aksent
-GOLD_LIGHT = "#9C7A33"     # oq fonda oltin (kontrast uchun to‘qroq)
-TEAL_LIGHT = "#0A6F7A"
-TEAL_DARK = "#4CC9D6"
-INK = "#0B1220"
+# Logotipdan o‘lchangan ranglar (docs/BRAND.md).
+NAVY = (0x01, 0x18, 0x30)          # qalqon ichi (o‘rtacha)
+NAVY_ICON_CENTER = (0x17, 0x31, 0x55)
+NAVY_ICON_EDGE = (0x06, 0x12, 0x24)
+NAVY_LIFT = (0x10, 0x2C, 0x52)      # to‘q fonda qalqon ichi (ko‘tarilgan)
+IVORY = (0xF7, 0xF5, 0xEF)          # FePalette.light.background
+GRAPHITE = (0x0B, 0x10, 0x17)       # FePalette.dark.background
+TEXT_IVORY = (0xF4, 0xF4, 0xF1)     # FePalette.dark.textPrimary
+TAGLINE_DARK = (0xC3, 0xC9, 0xD2)
+WHITE = np.array([254.0, 254.0, 254.0])
 
-PALETTES = {
-    # nom: (ink, gold, accent, shield_fill)
-    "light": (NAVY, GOLD_LIGHT, TEAL_LIGHT, WHITE),
-    "dark": (SILVER, GOLD_DARK, TEAL_DARK, NAVY_FILL),
-    "mono-black": (INK, INK, INK, None),
-    "mono-white": (WHITE, WHITE, WHITE, None),
-}
+# Manbadagi qismlar (piksel, 1254² koordinatada).
+SHIELD_BOX = (330, 95, 925, 785)
+WORD_FORENSIC = (110, 782, 1140, 962)
+WORD_EXPERT = (110, 972, 1140, 1075)
+WORD_TAGLINE = (110, 1092, 1140, 1132)
 
 
-# --- Geometriya ------------------------------------------------------------
+# --------------------------------------------------------------- yordamchi
 
-def arc(cx, cy, rx, ry, a0, a1):
-    """Ellips yoyi → kubik Bezye bo‘laklari (≤ 90°). Burchak — gradus."""
-    cmds = []
-    n = max(1, math.ceil(abs(a1 - a0) / 90))
-    step = (a1 - a0) / n
-    for i in range(n):
-        t0 = math.radians(a0 + step * i)
-        t1 = math.radians(a0 + step * (i + 1))
-        k = 4 / 3 * math.tan((t1 - t0) / 4)
-        p0 = (cx + rx * math.cos(t0), cy + ry * math.sin(t0))
-        p3 = (cx + rx * math.cos(t1), cy + ry * math.sin(t1))
-        c1 = (p0[0] - k * rx * math.sin(t0), p0[1] + k * ry * math.cos(t0))
-        c2 = (p3[0] + k * rx * math.sin(t1), p3[1] - k * ry * math.cos(t1))
-        if i == 0:
-            cmds.append(("M", p0))
-        cmds.append(("C", c1, c2, p3))
-    return cmds
+def box_blur(a, r):
+    """Kvadrat (2r+1) o‘rtacha filtri, 2D yoki 3D massiv (cumsum)."""
+    if r <= 0:
+        return a.astype(float)
+    a = a.astype(float)
+    pad = [(r + 1, r), (r + 1, r)] + [(0, 0)] * (a.ndim - 2)
+    p = np.pad(a, pad, mode="edge")
+    c = p.cumsum(0).cumsum(1)
+    k = 2 * r + 1
+    s = c[k:, k:] - c[:-k, k:] - c[k:, :-k] + c[:-k, :-k]
+    return s / (k * k)
 
 
-def circle(cx, cy, r):
-    return arc(cx, cy, r, r, 0, 360) + [("Z",)]
+def morph(mask, r, op):
+    img = Image.fromarray((mask * 255).astype(np.uint8))
+    f = ImageFilter.MaxFilter(2 * r + 1) if op == "dilate" else ImageFilter.MinFilter(2 * r + 1)
+    return np.asarray(img.filter(f)) > 127
 
 
-def E(d, role, w=None, fill=False, halo=0.0):
-    """Element: path, rang roli, chiziq qalinligi, fon «halo»si (kesishish)."""
-    return {"d": d, "role": role, "w": w, "fill": fill, "halo": halo}
+def flood_outside(fgmask):
+    """Burchaklardan fon (fg bo‘lmagan) mintaqasini to‘ldirish."""
+    h, w = fgmask.shape
+    out = np.zeros((h, w), bool)
+    q = deque()
+    for y, x in ((0, 0), (0, w - 1), (h - 1, 0), (h - 1, w - 1)):
+        if not fgmask[y, x]:
+            out[y, x] = True
+            q.append((y, x))
+    while q:
+        y, x = q.popleft()
+        for ny, nx in ((y - 1, x), (y + 1, x), (y, x - 1), (y, x + 1)):
+            if 0 <= ny < h and 0 <= nx < w and not out[ny, nx] and not fgmask[ny, nx]:
+                out[ny, nx] = True
+                q.append((ny, nx))
+    return out
 
 
-def shield(x0, x1, top, notch, shoulder, tip):
-    m = (x0 + x1) / 2
-    return [("M", (x0, top)),
-            ("C", (x0 + (m - x0) * 0.33, top), (x0 + (m - x0) * 0.67, top - notch * 0.3),
-             (m, top - notch)),
-            ("C", (x1 - (x1 - m) * 0.67, top - notch * 0.3), (x1 - (x1 - m) * 0.33, top),
-             (x1, top)),
-            ("L", (x1, shoulder)),
-            ("C", (x1, shoulder + (tip - shoulder) * 0.45), (m + (x1 - m) * 0.5, tip - 8),
-             (m, tip)),
-            ("C", (m - (m - x0) * 0.5, tip - 8), (x0, shoulder + (tip - shoulder) * 0.45),
-             (x0, shoulder)),
-            ("Z",)]
+def unmix(rgb, core, band, radius=3, fallback=None):
+    """Oq fondan ajratish: chekka piksellar uchun alpha va rang.
 
-
-def serpent(y_bottom, y_top, amp, coils, head):
-    """Tayoq atrofidagi S-ilon: pastdan yuqoriga `coils` yarim to‘lqin."""
-    h = (y_bottom - y_top) / coils
-    d = [("M", (50 - amp * 0.55, y_bottom + 1.5))]
-    side = 1
-    y = y_bottom
-    for _ in range(coils):
-        y2 = y - h
-        d.append(("C", (50 + side * amp, y - h * 0.15), (50 + side * amp, y2 + h * 0.4),
-                  (50, y2)))
-        side = -side
-        y = y2
-    # bosh tomonga burilish
-    d.append(("C", (50 + head * 0.35, y - 1.6), (50 + head * 0.75, y - 1.6), (50 + head, y)))
-    return d, (50 + head + 0.6, y + 0.4)
-
-
-def scales(beam_y, half, pan_cx, pan_w, drop, w_beam, w_line):
-    els = [E([("M", (50 - half, beam_y)), ("L", (50 + half, beam_y))], "gold", w_beam)]
-    for side in (-1, 1):
-        cx = 50 + side * pan_cx
-        l = (cx - pan_w / 2, beam_y + drop)
-        r = (cx + pan_w / 2, beam_y + drop)
-        els.append(E([("M", l), ("L", (cx, beam_y)), ("L", r)], "gold", w_line))
-        pan = [("M", l), ("C", (l[0] + 1, beam_y + drop + pan_w * 0.42),
-                              (r[0] - 1, beam_y + drop + pan_w * 0.42), r), ("Z",)]
-        els.append(E(pan, "gold", fill=True))
-    return els
-
-
-def emblem(tier):
-    els = []
-    if tier == "full":
-        for a0 in (0, 90, 180, 270):
-            els.append(E(arc(50, 50, 46, 46, a0 + 9, a0 + 81), "gold", 3.0))
-        for x0, x1 in ((1.5, 8.5), (91.5, 98.5)):
-            els.append(E([("M", (x0, 50)), ("L", (x1, 50))], "gold", 2.0))
-        sh = shield(25, 75, 21, 4.5, 47, 84)
-        els.append(E(sh, "fill", fill=True))
-        els.append(E(sh, "ink", 3.0))
-        els += scales(31, 19, 15, 10, 9.5, 1.9, 0.9)
-        for i, r in enumerate((1.6, 3.4, 5.2, 7.0)):
-            els.append(E(arc(37, 58, r, r * 1.22, 150 + i * 8, 470 - i * 10), "accent", 1.15))
-        pk = [(55, 64), (57, 64), (58, 59), (59, 64), (60.3, 64), (61.5, 49.5),
-              (62.7, 64), (64, 64), (65, 56), (66, 64), (68.5, 64)]
-        els.append(E([("M", pk[0])] + [("L", p) for p in pk[1:]], "accent", 1.25))
-        els.append(E([("M", (50, 8)), ("L", (50, 91))], "ink", 2.6))
-        els.append(E(circle(50, 7, 2.7), "gold", fill=True))
-        d, hd = serpent(76, 30, 6.5, 4, 7)
-        els.append(E(d, "ink", 3.1, halo=2.2))
-        els.append(E(circle(*hd, 2.1), "ink", fill=True))
-    elif tier == "icon":
-        sh = shield(21, 79, 19, 5.5, 46, 89)
-        els.append(E(sh, "fill", fill=True))
-        els.append(E(sh, "ink", 4.6))
-        els += scales(31, 21, 16.5, 12, 11, 3.0, 1.6)
-        els.append(E([("M", (50, 7)), ("L", (50, 95))], "ink", 3.8))
-        els.append(E(circle(50, 6.5, 3.8), "gold", fill=True))
-        d, hd = serpent(79, 31, 8.5, 4, 9)
-        els.append(E(d, "ink", 4.6, halo=2.6))
-        els.append(E(circle(*hd, 3.0), "ink", fill=True))
-    else:  # small
-        sh = shield(15, 85, 15, 7, 46, 94)
-        els.append(E(sh, "fill", fill=True))
-        els.append(E(sh, "ink", 8.5))
-        els.append(E([("M", (50, 18)), ("L", (50, 86))], "ink", 6.0))
-        d, hd = serpent(76, 32, 12, 3, 10)
-        els.append(E(d, "accent", 6.2, halo=3.6))
-        els.append(E(circle(hd[0], hd[1], 4.6), "accent", fill=True))
-    return els
-
-
-# --- SVG -------------------------------------------------------------------
-
-def path_d(d):
-    out = []
-    for c in d:
-        out.append("Z" if c[0] == "Z" else
-                   c[0] + " " + " ".join(f"{p[0]:.2f} {p[1]:.2f}" for p in c[1:]))
-    return " ".join(out)
-
-
-def svg_group(tier, palette):
-    ink, gold, accent, fill = PALETTES[palette]
-    col = {"ink": ink, "gold": gold, "accent": accent, "fill": fill}
-    parts = []
-    for e in emblem(tier):
-        c = col[e["role"]]
-        if c is None:
-            continue
-        d = path_d(e["d"])
-        if e["fill"]:
-            parts.append(f'<path d="{d}" fill="{c}"/>')
-            continue
-        if e["halo"] and fill:
-            parts.append(f'<path d="{d}" fill="none" stroke="{fill}" '
-                         f'stroke-width="{e["w"] + e["halo"]:.2f}" stroke-linecap="round" '
-                         f'stroke-linejoin="round"/>')
-        parts.append(f'<path d="{d}" fill="none" stroke="{c}" stroke-width="{e["w"]:.2f}" '
-                     f'stroke-linecap="round" stroke-linejoin="round"/>')
-    return "\n".join(parts)
-
-
-def svg_symbol(tier, palette, size=100, pad=0.0, bg=None, radius=0):
-    s = 1 - 2 * pad
-    o = 50 * (1 - s)
-    out = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="{size}" '
-           f'height="{size}" role="img" aria-label="FORENSIC EXPERT">']
-    if bg:
-        out.append(f'<rect width="100" height="100" rx="{radius}" fill="{bg}"/>')
-    out.append(f'<g transform="translate({o:.3f} {o:.3f}) scale({s:.4f})">')
-    out.append(svg_group(tier, palette))
-    out.append("</g>\n</svg>")
-    return "\n".join(out)
-
-
-SERIF = "Georgia, 'Times New Roman', 'Liberation Serif', serif"
-SANS = "Inter, 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif"
-TAGLINE = "EVIDENCE · SCIENCE · PRECISION"
-
-
-def svg_lockup(palette, stacked=False, bg=None):
-    ink, gold, _, _ = PALETTES[palette]
-    dark = palette == "dark"
-    word = WHITE if dark else ink
-    sub = "#B8C2D6" if dark else ("#4A5568" if palette == "light" else ink)
-    sym = svg_group("full", palette)
-    rect = f'<rect width="100%" height="100%" fill="{bg}"/>' if bg else ""
-    if stacked:
-        return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" '
-                f'aria-label="FORENSIC EXPERT — Evidence · Science · Precision">{rect}'
-                f'<g transform="translate(130 12) scale(1.4)">{sym}</g>'
-                f'<text x="200" y="210" text-anchor="middle" font-family="{SERIF}" '
-                f'font-weight="600" font-size="31" letter-spacing="1.5" fill="{word}">'
-                f'FORENSIC EXPERT</text>'
-                f'<line x1="40" y1="236" x2="64" y2="236" stroke="{gold}" stroke-width="1.5"/>'
-                f'<line x1="336" y1="236" x2="360" y2="236" stroke="{gold}" stroke-width="1.5"/>'
-                f'<text x="200" y="241" text-anchor="middle" font-family="{SANS}" '
-                f'font-weight="500" font-size="11.5" letter-spacing="2" fill="{sub}">'
-                f'{TAGLINE}</text></svg>')
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 120" role="img" '
-            f'aria-label="FORENSIC EXPERT — Evidence · Science · Precision">{rect}'
-            f'<g transform="translate(10 10)">{sym}</g>'
-            f'<line x1="126" y1="22" x2="126" y2="98" stroke="{gold}" stroke-width="1.5"/>'
-            f'<text x="144" y="64" font-family="{SERIF}" font-weight="600" font-size="38" '
-            f'letter-spacing="1.5" fill="{word}">FORENSIC EXPERT</text>'
-            f'<text x="146" y="90" font-family="{SANS}" font-weight="500" font-size="13" '
-            f'letter-spacing="2.6" fill="{sub}">{TAGLINE}</text></svg>')
-
-
-# --- Rastr -----------------------------------------------------------------
-
-def tier_for(px):
-    return "small" if px <= 40 else ("icon" if px < 96 else "full")
-
-
-def raster_svg(svg, w, h=None):
-    # Rastrlash muhitida Georgia yo‘q — metrik mos «Liberation Serif».
-    svg = svg.replace(SERIF, "Liberation Serif")
-    data = cairosvg.svg2png(bytestring=svg.encode(), output_width=w, output_height=h or w)
-    return Image.open(io.BytesIO(data)).convert("RGBA")
-
-
-def render(px, palette, tier=None, pad=0.0, bg=None):
-    tier = tier or tier_for(px)
-    big = raster_svg(svg_symbol(tier, palette, pad=pad, bg=bg), px * 4)
-    return big.resize((px, px), Image.LANCZOS)
-
-
-def save_png(img, path, flatten=None):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    if flatten:
-        base = Image.new("RGB", img.size, flatten)
-        base.paste(img, mask=img.split()[3])
-        base.save(path)
+    core — to‘liq qoplangan piksellar; band — chekka. Har chekka piksel
+    uchun yaqin core ranglarining o‘rtachasi F; alpha = (p−W)·(F−W)/|F−W|².
+    Rang F ga tenglanadi — oq «halo» qolmaydi.
+    """
+    w = box_blur(core.astype(float), radius)
+    s = box_blur(rgb * core[..., None], radius)
+    with np.errstate(invalid="ignore", divide="ignore"):
+        F = s / w[..., None]
+    nofg = w < 1e-6
+    if fallback is not None:
+        F[nofg] = fallback(rgb)[nofg]
     else:
-        img.save(path)
+        F[nofg] = rgb[nofg]
+    d = F - WHITE
+    a = ((rgb - WHITE) * d).sum(-1) / np.maximum((d * d).sum(-1), 1.0)
+    a = np.clip(a, 0, 1)
+    alpha = np.where(core, 1.0, np.where(band, a, 0.0))
+    color = np.where(core[..., None], rgb, F)
+    return alpha, np.clip(color, 0, 255)
 
 
-# --- Flutter painter -------------------------------------------------------
-
-def dart_painter():
-    def pt(p):
-        return f"{p[0]:.2f}, {p[1]:.2f}"
-
-    lines = [
-        "// GENERATED by design/brand/tools/generate_brand.py — qo‘lda tahrir qilmang.",
-        "part of 'brand_mark.dart';",
-        "",
-        "const _emblemTiers = <BrandTier, List<_El>>{",
-    ]
-    for tier in ("full", "icon", "small"):
-        lines.append(f"  BrandTier.{tier}: [")
-        for e in emblem(tier):
-            ops = []
-            for c in e["d"]:
-                if c[0] == "M":
-                    ops.append(f"_Op.m({pt(c[1])})")
-                elif c[0] == "L":
-                    ops.append(f"_Op.l({pt(c[1])})")
-                elif c[0] == "C":
-                    ops.append(f"_Op.c({pt(c[1])}, {pt(c[2])}, {pt(c[3])})")
-                else:
-                    ops.append("_Op.z()")
-            w = f"{e['w']:.2f}" if e["w"] else "0"
-            lines.append(f"    _El(")
-            lines.append(f"      _Role.{e['role']},")
-            lines.append(f"      {w},")
-            if e["fill"]:
-                lines.append("      fill: true,")
-            if e["halo"]:
-                lines.append(f"      halo: {e['halo']:.2f},")
-            lines.append("      ops: [")
-            for op in ops:
-                lines.append(f"        {op},")
-            lines.append("      ],")
-            lines.append("    ),")
-        lines.append("  ],")
-    lines.append("};")
-    return "\n".join(lines) + "\n"
+def to_img(color, alpha):
+    arr = np.dstack([color, alpha[..., None] * 255.0]).round().clip(0, 255).astype(np.uint8)
+    return Image.fromarray(arr, "RGBA")
 
 
-# --- Asosiy ----------------------------------------------------------------
+def bbox_of(img):
+    return img.getchannel("A").point(lambda v: 255 if v > 8 else 0).getbbox()
+
+
+def resize(img, size):
+    """Premultiplied alpha bilan kichraytirish (qora/oq chekka yo‘q)."""
+    if img.size == size:
+        return img.copy()
+    return img.convert("RGBa").resize(size, Image.LANCZOS).convert("RGBA")
+
+
+def fit(img, box_w, box_h):
+    """Proporsiyani saqlab (cho‘zmasdan) quti ichiga sig‘diradi."""
+    s = min(box_w / img.width, box_h / img.height)
+    return resize(img, (max(1, round(img.width * s)), max(1, round(img.height * s))))
+
+
+def paste_center(canvas, img, cx=None, cy=None):
+    cx = canvas.width / 2 if cx is None else cx
+    cy = canvas.height / 2 if cy is None else cy
+    canvas.alpha_composite(img, (round(cx - img.width / 2), round(cy - img.height / 2)))
+    return canvas
+
+
+def save(img, path, rgb=None):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    if rgb is not None:
+        base = Image.new("RGB", img.size, rgb)
+        base.paste(img, mask=img.getchannel("A"))
+        img = base
+    img.save(path, optimize=True)
+
+
+def radial_bg(px, center=NAVY_ICON_CENTER, edge=NAVY_ICON_EDGE, cy=0.42):
+    yy, xx = np.mgrid[0:px, 0:px] + 0.5
+    r = np.sqrt((xx / px - 0.5) ** 2 + (yy / px - cy) ** 2) / 0.75
+    t = np.clip(r, 0, 1)[..., None] ** 1.2
+    c = np.array(center) * (1 - t) + np.array(edge) * t
+    return Image.fromarray(c.round().astype(np.uint8), "RGB").convert("RGBA")
+
+
+# --------------------------------------------------------------- emblema
+
+def cut_shield(rgb):
+    x0, y0, x1, y1 = SHIELD_BOX
+    c = rgb[y0:y1, x0:x1]
+    diff = np.abs(c - WHITE).max(-1)
+    outside = flood_outside(diff > 40)
+    core = morph(~outside, 1, "erode")
+    band = morph(core, 3, "dilate") & ~core
+    alpha, color = unmix(c, core, band)
+    img = to_img(color, alpha)
+    bb = bbox_of(img)
+    return img.crop(bb), (x0 + bb[0], y0 + bb[1])
+
+
+def gold_components(c):
+    R, B = c[..., 0], c[..., 2]
+    gold = ((R - B) > 35) & (R > 110)
+    h, w = gold.shape
+    lab = np.zeros((h, w), np.int32)
+    boxes = {}
+    n = 0
+    for y, x in zip(*np.nonzero(gold)):
+        if lab[y, x]:
+            continue
+        n += 1
+        lab[y, x] = n
+        q = deque([(y, x)])
+        bb = [x, y, x, y]
+        while q:
+            yy, xx = q.popleft()
+            bb = [min(bb[0], xx), min(bb[1], yy), max(bb[2], xx), max(bb[3], yy)]
+            for dy in (-1, 0, 1):
+                for dx in (-1, 0, 1):
+                    ny, nx = yy + dy, xx + dx
+                    if 0 <= ny < h and 0 <= nx < w and gold[ny, nx] and not lab[ny, nx]:
+                        lab[ny, nx] = n
+                        q.append((ny, nx))
+        boxes[n] = bb
+    return gold, lab, boxes
+
+
+def simplify_small(shield):
+    """Kichik o‘lcham varianti: qalqon + tayoq/ilon (DNK va tarozisiz)."""
+    a = np.asarray(shield).astype(float)
+    c, alpha = a[..., :3], a[..., 3] / 255
+    h, w = alpha.shape
+    gold, lab, boxes = gold_components(c)
+    border = max(boxes, key=lambda k: (boxes[k][2] - boxes[k][0]) * (boxes[k][3] - boxes[k][1]))
+    keep = np.zeros_like(gold)
+    for k, (bx0, by0, bx1, by1) in boxes.items():
+        cx = (bx0 + bx1) / 2 / w
+        head = bx0 > 0.53 * w and bx1 < 0.83 * w and by1 < 0.33 * h  # ilon boshi, tili
+        if k == border or 0.37 <= cx <= 0.63 or head:
+            keep |= lab == k
+    R, B = c[..., 0], c[..., 2]
+    lum = c.mean(-1)
+    # Oltin yaltirashlari (shar, tayoq) deyarli oq — ular ham saqlanadi.
+    keep |= morph(keep, 3, "dilate") & (lum > 150) & (R >= B)
+    dna = (B > 75) & ((B - R) > 30) & ~gold
+    # Hoshiyaning ichki faskasi (soya/yaltirash) tegilmaydi.
+    interior = morph(alpha > 0.99, 4, "erode") & ~morph(lab == border, 9, "dilate")
+    stuff = interior & ((lum > 45) | dna)        # navy bo‘lmagan har qanday narsa
+    drop = (gold & ~keep) | dna
+    # Tashlanadigan element atrofidagi yarim-ton piksellar ham olinadi.
+    near = morph(drop, 6, "dilate") & stuff & ~morph(keep, 2, "dilate")
+    remove = morph(drop | near, 2, "dilate") & interior & ~morph(keep, 1, "dilate")
+    navy = interior & ~stuff & ~remove
+    wsum = box_blur(navy.astype(float), 24)
+    fill = box_blur(c * navy[..., None], 24) / np.maximum(wsum, 1e-6)[..., None]
+    fill[wsum < 1e-6] = NAVY
+    # Yumshoq chegara: olib tashlangan joy navy bilan bir tekis qoplanadi.
+    soft = np.clip(box_blur(remove.astype(float), 1) * 1.6, 0, 1)
+    out = c * (1 - soft[..., None]) + fill * soft[..., None]
+    return to_img(out, alpha)
+
+
+def darken_variant(img):
+    """To‘q fon varianti: qalqon ichidagi navy biroz ko‘tariladi — grafit
+    fonda yo‘qolib ketmaydi; oltin hoshiya va ramzlar o‘zgarmaydi."""
+    a = np.asarray(img).astype(float)
+    c = a[..., :3]
+    lum = c.mean(-1)
+    blue = (c[..., 2] - c[..., 0]) > 15
+    w = np.clip(1 - (lum - 18) / 40, 0, 1) * blue
+    lift = np.array(NAVY_LIFT) - np.array(NAVY)
+    c = c + w[..., None] * lift
+    return to_img(np.clip(c, 0, 255), a[..., 3] / 255)
+
+
+def mono_variant(img):
+    """Android 13 themed ikon: oltin (hoshiya + tayoq/ilon) → oq siluet."""
+    a = np.asarray(img).astype(float)
+    R = a[..., 0]
+    alpha = np.clip((R - 40) / 110, 0, 1) * (a[..., 3] / 255)
+    white = np.full(a.shape[:2] + (3,), 255.0)
+    return to_img(white, alpha)
+
+
+# --------------------------------------------------------------- wordmark
+
+def ink_fallback(rgb):
+    gold = (rgb[..., 0] - rgb[..., 2]) > 25
+    out = np.empty_like(rgb)
+    out[...] = (0x0B, 0x1B, 0x35)
+    out[gold] = (0xB3, 0x93, 0x5F)
+    return out
+
+
+def cut_text(rgb, box):
+    x0, y0, x1, y1 = box
+    c = rgb[y0:y1, x0:x1]
+    diff = np.abs(c - WHITE).max(-1)
+    core = diff > 120
+    band = (diff > 6) & ~core
+    alpha, color = unmix(c, core, band, radius=2, fallback=ink_fallback)
+    img = to_img(color, alpha)
+    bb = bbox_of(img)
+    return img.crop(bb), (x0 + bb[0], y0 + bb[1])
+
+
+def recolor_text(img, navy_to, gold_to=None):
+    a = np.asarray(img).astype(float)
+    c = a[..., :3]
+    gold = (c[..., 0] - c[..., 2]) > 25
+    out = c.copy()
+    out[~gold] = navy_to
+    if gold_to is not None:
+        out[gold] = gold_to
+    return to_img(out, a[..., 3] / 255)
+
+
+def lockup(shield, forensic, expert, tagline, src_offsets, tagline_on=True, width=1200):
+    """Asl kompozitsiya oraliqlari saqlangan holda shaffof lockup."""
+    parts = [(shield, src_offsets["shield"]), (forensic, src_offsets["forensic"]),
+             (expert, src_offsets["expert"])]
+    if tagline_on:
+        parts.append((tagline, src_offsets["tagline"]))
+    xs0 = min(o[0] for _, o in parts)
+    ys0 = min(o[1] for _, o in parts)
+    xs1 = max(o[0] + im.width for im, o in parts)
+    ys1 = max(o[1] + im.height for im, o in parts)
+    pad = 24
+    canvas = Image.new("RGBA", (xs1 - xs0 + 2 * pad, ys1 - ys0 + 2 * pad), (0, 0, 0, 0))
+    for im, (ox, oy) in parts:
+        canvas.alpha_composite(im, (ox - xs0 + pad, oy - ys0 + pad))
+    return fit(canvas, width, 10_000) if width < canvas.width else canvas
+
+
+def square(img, px, scale=0.98):
+    canvas = Image.new("RGBA", (px, px), (0, 0, 0, 0))
+    return paste_center(canvas, fit(img, px * scale, px * scale))
+
+
+# --------------------------------------------------------------- ikonlar
+
+def app_icon(px, shield, small=None, ivory=False):
+    """Kvadrat ikon (iOS 1024 va boshqalar): navy gradient + qalqon."""
+    if ivory:
+        bg = Image.new("RGBA", (px, px), IVORY + (255,))
+    else:
+        bg = radial_bg(px)
+    mark = small if (small is not None and px <= 48) else shield
+    h = px * 0.66
+    m = fit(mark, h * mark.width / mark.height, h)
+    return paste_center(bg, m, cy=px * 0.5)
+
+
+def crisp(img, px):
+    """≤ 64 px: yengil unsharp — kichik o‘lchamda hoshiya va tayoq aniq."""
+    if px > 64:
+        return img
+    return img.filter(ImageFilter.UnsharpMask(radius=0.6, percent=70, threshold=0))
+
+
+def icon_at(px, mark):
+    bg = resize(radial_bg(min(px * 4, 1024)), (px, px))
+    # ≤ 32 px: belgi biroz kattaroq — tayoq/ilon o‘qiladi.
+    h = px * (0.74 if px <= 32 else 0.66)
+    return crisp(paste_center(bg, fit(mark, h * mark.width / mark.height, h)), px)
+
+
+def adaptive_fg(px108, shield):
+    # 108dp tuval; qalqon 52dp balandlikda — 66dp xavfsiz doira ichida.
+    canvas = Image.new("RGBA", (px108, px108), (0, 0, 0, 0))
+    h = px108 * 52 / 108
+    return paste_center(canvas, fit(shield, h * shield.width / shield.height, h))
+
+
+def rounded_mask(px, radius_frac):
+    m = Image.new("L", (px * 4, px * 4), 0)
+    ImageDraw.Draw(m).rounded_rectangle([0, 0, px * 4 - 1, px * 4 - 1], radius=px * 4 * radius_frac, fill=255)
+    return m.resize((px, px), Image.LANCZOS)
+
+
+# --------------------------------------------------------------- asosiy
 
 def main():
-    svgdir, pngdir = OUT / "svg", OUT / "png"
-    for d in (svgdir, pngdir):
-        d.mkdir(parents=True, exist_ok=True)
-        for f in d.iterdir():
-            f.unlink()  # eski belgining barcha assetlari o‘chiriladi
-    files = {}
-    for tier in ("full", "icon", "small"):
-        for pal in PALETTES:
-            files[f"emblem-{tier}-{pal}.svg"] = svg_symbol(tier, pal)
-    files["app-icon-dark.svg"] = svg_symbol("icon", "dark", 1024, 0.1, NAVY)
-    files["app-icon-light.svg"] = svg_symbol("icon", "light", 1024, 0.1, WHITE)
-    files["app-icon-mono-dark.svg"] = svg_symbol("icon", "mono-white", 1024, 0.1, GRAPHITE)
-    files["app-icon-mono-light.svg"] = svg_symbol("icon", "mono-black", 1024, 0.1, WHITE)
-    files["splash-mark.svg"] = svg_symbol("full", "dark", 512)
-    files["logo-horizontal-light.svg"] = svg_lockup("light")
-    files["logo-horizontal-dark.svg"] = svg_lockup("dark", bg=NAVY)
-    files["logo-horizontal-mono.svg"] = svg_lockup("mono-black")
-    files["logo-stacked-light.svg"] = svg_lockup("light", stacked=True)
-    files["logo-stacked-dark.svg"] = svg_lockup("dark", stacked=True, bg=NAVY)
-    files["logo-stacked-mono.svg"] = svg_lockup("mono-black", stacked=True)
-    for name, svg in files.items():
-        (svgdir / name).write_text(svg + "\n", encoding="utf-8")
+    rgb = np.asarray(Image.open(SRC).convert("RGB")).astype(float)
+    PNG.mkdir(parents=True, exist_ok=True)
+    for f in PNG.iterdir():
+        f.unlink()
 
-    for name in ("logo-horizontal-light", "logo-horizontal-dark"):
-        save_png(raster_svg(files[name + ".svg"], 1120, 240), pngdir / f"{name}.png")
-    for name in ("logo-stacked-light", "logo-stacked-dark"):
-        save_png(raster_svg(files[name + ".svg"], 800, 600), pngdir / f"{name}.png")
-    for name in ("app-icon-dark", "app-icon-light", "app-icon-mono-dark", "app-icon-mono-light"):
-        save_png(raster_svg(files[name + ".svg"], 512), pngdir / f"{name}-512.png")
+    # Kesilgan qalqon va uning manbadagi joyi (lockup oraliqlari uchun).
+    shield, shield_off = cut_shield(rgb)
 
-    # O‘lcham sinovi: light / dark / mono / app icon × 16…180 px.
+    small = simplify_small(shield)
+    shield_dark = darken_variant(shield)
+    small_dark = darken_variant(small)
+    mono = mono_variant(small)
+
+    texts = {}
+    offs = {"shield": shield_off}
+    for key, box in (("forensic", WORD_FORENSIC), ("expert", WORD_EXPERT), ("tagline", WORD_TAGLINE)):
+        texts[key], offs[key] = cut_text(rgb, box)
+    forensic_d = recolor_text(texts["forensic"], TEXT_IVORY)
+    expert_d = texts["expert"]
+    tagline_d = recolor_text(texts["tagline"], TAGLINE_DARK)
+
+    # --- design/brand/png -------------------------------------------------
+    save(shield, PNG / "emblem-full-light.png")
+    save(shield_dark, PNG / "emblem-full-dark.png")
+    save(small, PNG / "emblem-small-light.png")
+    save(small_dark, PNG / "emblem-small-dark.png")
+    save(mono, PNG / "emblem-mono-white.png")
+    for name, im in (("full-light", shield), ("full-dark", shield_dark),
+                     ("small-light", small), ("small-dark", small_dark)):
+        for px in (512, 256):
+            save(square(im, px), PNG / f"emblem-square-{name}-{px}.png")
+    light_lock = lockup(shield, texts["forensic"], texts["expert"], texts["tagline"], offs)
+    dark_lock = lockup(shield_dark, forensic_d, expert_d, tagline_d, offs)
+    save(light_lock, PNG / "lockup-stacked-light.png")
+    save(dark_lock, PNG / "lockup-stacked-dark.png")
+    save(lockup(shield, texts["forensic"], texts["expert"], None, offs, tagline_on=False),
+         PNG / "lockup-compact-light.png")
+    save(lockup(shield_dark, forensic_d, expert_d, None, offs, tagline_on=False),
+         PNG / "lockup-compact-dark.png")
+    word_offs = {k: v for k, v in offs.items()}
+    word = lockup(Image.new("RGBA", (1, 1)), texts["forensic"], texts["expert"], texts["tagline"],
+                  dict(word_offs, shield=offs["forensic"]))
+    save(word, PNG / "wordmark-light.png")
+    save(lockup(Image.new("RGBA", (1, 1)), forensic_d, expert_d, tagline_d,
+                dict(word_offs, shield=offs["forensic"])), PNG / "wordmark-dark.png")
+    save(app_icon(1024, shield), PNG / "app-icon-1024.png", rgb=NAVY_ICON_EDGE)
+    save(app_icon(1024, shield, ivory=True), PNG / "app-icon-alt-ivory-1024.png", rgb=IVORY)
+
+    # O‘lcham sinovi: 16…180 px, full va small, yorug‘ va to‘q fonda.
     sizes = [16, 24, 32, 48, 64, 96, 180]
-    rows = [("light", "#F5F7FA", 0.0, None), ("dark", NAVY, 0.0, None),
-            ("mono-black", "#FFFFFF", 0.0, None), ("dark", "#FFFFFF", 0.1, NAVY)]
-    sheet = Image.new("RGB", (40 + sum(s + 40 for s in sizes), len(rows) * 230), "#FFFFFF")
+    rows = [("full", shield, IVORY), ("small", small, IVORY),
+            ("full", shield_dark, GRAPHITE), ("small", small_dark, GRAPHITE)]
+    sheet = Image.new("RGBA", (40 + sum(s + 40 for s in sizes), len(rows) * 220), (255, 255, 255, 255))
     dr = ImageDraw.Draw(sheet)
-    for ri, (pal, bg, pad, tile) in enumerate(rows):
-        y0 = ri * 230
-        dr.rectangle([0, y0, sheet.width, y0 + 229], fill=bg)
+    for ri, (_, im, bg) in enumerate(rows):
+        y0r = ri * 220
+        dr.rectangle([0, y0r, sheet.width, y0r + 219], fill=bg + (255,))
         x = 40
         for s in sizes:
-            im = render(s, pal, pad=pad, bg=tile)
-            sheet.paste(im, (x, y0 + (230 - s) // 2), im)
+            sheet.alpha_composite(square(im, s), (x, y0r + (220 - s) // 2))
             x += s + 40
-    save_png(sheet, pngdir / "size-test-sheet.png")
-    for s in (16, 24, 32, 48, 64, 96, 180, 512, 1024):
-        save_png(render(s, "light"), pngdir / f"emblem-light-{s}.png")
-        save_png(render(s, "dark", bg=NAVY), pngdir / f"emblem-dark-{s}.png")
-    save_png(render(32, "light", bg=WHITE), pngdir / "favicon-32.png")
-    save_png(render(16, "light", bg=WHITE), pngdir / "favicon-16.png")
+    save(sheet, PNG / "size-test-sheet.png", rgb=(255, 255, 255))
 
-    # --- Android -----------------------------------------------------------
+    # --- Flutter assets (@1x/@2x/@3x, kvadrat) -----------------------------
+    assets = APP / "assets" / "brand"
+    for name, im, base in (("emblem_full_light", shield, 128), ("emblem_full_dark", shield_dark, 128),
+                           ("emblem_small_light", small, 40), ("emblem_small_dark", small_dark, 40)):
+        for sub, k in (("", 1), ("2.0x/", 2), ("3.0x/", 3)):
+            save(square(im, base * k), assets / f"{sub}{name}.png")
+
+    # --- Android ------------------------------------------------------------
     res = APP / "android" / "app" / "src" / "main" / "res"
-    for dname, f in {"mdpi": 1, "hdpi": 1.5, "xhdpi": 2, "xxhdpi": 3, "xxxhdpi": 4}.items():
-        px = round(48 * f)
-        save_png(render(px, "dark", tier="icon", pad=0.1, bg=NAVY),
-                 res / f"mipmap-{dname}" / "ic_launcher.png", flatten=NAVY)
-        # Adaptive foreground 108dp: belgi 66dp xavfsiz zona ichida.
-        save_png(render(round(108 * f), "dark", tier="icon", pad=0.2),
-                 res / f"mipmap-{dname}" / "ic_launcher_foreground.png")
-        # Android 13+ themed (monoxrom) ikon.
-        save_png(render(round(108 * f), "mono-white", tier="icon", pad=0.2),
-                 res / f"mipmap-{dname}" / "ic_launcher_monochrome.png")
-    save_png(render(288, "dark", tier="full"), res / "drawable-nodpi" / "launch_mark.png")
+    dens = {"mdpi": 1, "hdpi": 1.5, "xhdpi": 2, "xxhdpi": 3, "xxxhdpi": 4}
+    for d, f in dens.items():
+        p48, p108 = round(48 * f), round(108 * f)
+        legacy = icon_at(p48, small if p48 <= 48 else shield)
+        legacy.putalpha(rounded_mask(p48, 0.2))
+        save(legacy, res / f"mipmap-{d}" / "ic_launcher.png")
+        save(adaptive_fg(p108, shield), res / f"mipmap-{d}" / "ic_launcher_foreground.png")
+        save(radial_bg(p108, cy=0.47), res / f"mipmap-{d}" / "ic_launcher_background.png", rgb=NAVY_ICON_EDGE)
+        save(adaptive_fg(p108, mono), res / f"mipmap-{d}" / "ic_launcher_monochrome.png")
+        # Splash: 200dp kenglikdagi lockup (tagline bilan).
+        w = round(200 * f)
+        save(fit(light_lock, w, 10_000), res / f"drawable-{d}" / "launch_mark.png")
+        save(fit(dark_lock, w, 10_000), res / f"drawable-night-{d}" / "launch_mark.png")
+    old = res / "drawable-nodpi" / "launch_mark.png"
+    if old.exists():
+        old.unlink()
+        old.parent.rmdir()
 
-    # --- iOS (alpha yo‘q) --------------------------------------------------
-    iconset = APP / "ios" / "Runner" / "Assets.xcassets" / "AppIcon.appiconset"
+    # --- iOS ------------------------------------------------------------------
+    xc = APP / "ios" / "Runner" / "Assets.xcassets"
+    iconset = xc / "AppIcon.appiconset"
     for im in json.loads((iconset / "Contents.json").read_text())["images"]:
         fn = im.get("filename")
         if not fn:
             continue
         px = round(float(im["size"].split("x")[0]) * int(im["scale"].rstrip("x")))
-        tier = "small" if px <= 40 else "icon"
-        save_png(render(px, "dark", tier=tier, pad=0.1, bg=NAVY), iconset / fn, flatten=NAVY)
-    launch = APP / "ios" / "Runner" / "Assets.xcassets" / "LaunchImage.imageset"
-    for fn, px in (("LaunchImage.png", 160), ("LaunchImage@2x.png", 320),
-                   ("LaunchImage@3x.png", 480)):
-        save_png(render(px, "dark", tier="full"), launch / fn)
+        # ≤ 48 px (Spotlight, Settings, bildirishnoma) — soddalashtirilgan
+        # variant; fon 4× o‘lchamda chiziladi, belgi bir marta kichraytiriladi.
+        mark = small if px <= 48 else shield
+        save(icon_at(px, mark), iconset / fn, rgb=NAVY_ICON_EDGE)
+    launch = xc / "LaunchImage.imageset"
+    for f in launch.glob("*.png"):
+        f.unlink()
+    images = []
+    for k in (1, 2, 3):
+        sfx = "" if k == 1 else f"@{k}x"
+        save(fit(light_lock, 200 * k, 10_000), launch / f"LaunchImage{sfx}.png")
+        save(fit(dark_lock, 200 * k, 10_000), launch / f"LaunchImageDark{sfx}.png")
+        images.append({"idiom": "universal", "filename": f"LaunchImage{sfx}.png", "scale": f"{k}x"})
+        images.append({"idiom": "universal", "filename": f"LaunchImageDark{sfx}.png", "scale": f"{k}x",
+                       "appearances": [{"appearance": "luminosity", "value": "dark"}]})
+    (launch / "Contents.json").write_text(json.dumps(
+        {"images": images, "info": {"version": 1, "author": "xcode"}}, indent=2) + "\n")
+    colorset = xc / "LaunchBackground.colorset"
+    colorset.mkdir(exist_ok=True)
 
-    (APP / "lib" / "core" / "widgets" / "brand_emblem.g.dart").write_text(
-        dart_painter(), encoding="utf-8")
-    print("brand assets generated:", len(files), "svg")
+    def comp(c):
+        return {"color-space": "srgb", "components": {
+            "red": f"0x{c[0]:02X}", "green": f"0x{c[1]:02X}", "blue": f"0x{c[2]:02X}", "alpha": "1.000"}}
+    (colorset / "Contents.json").write_text(json.dumps({
+        "colors": [
+            {"idiom": "universal", "color": comp(IVORY)},
+            {"idiom": "universal", "appearances": [{"appearance": "luminosity", "value": "dark"}],
+             "color": comp(GRAPHITE)},
+        ],
+        "info": {"version": 1, "author": "xcode"}}, indent=2) + "\n")
+
+    print("shield", shield.size, "small", small.size, "lockup", light_lock.size, "offsets", offs)
 
 
 if __name__ == "__main__":

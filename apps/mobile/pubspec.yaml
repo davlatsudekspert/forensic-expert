@@ -59,6 +59,8 @@ flutter:
     - assets/content/pilot/
     - assets/content/guidelines/
     - assets/content/court_prep/
+    # Brend emblemasi (@1x/@2x/@3x): design/brand/tools/generate_brand.py
+    - assets/brand/
 
   # Shriftlar ilovaga o‘rnatilgan (offline; runtime’da yuklanmaydi). SIL OFL 1.1.
   fonts:

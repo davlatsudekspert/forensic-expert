@@ -1,0 +1,66 @@
+{
+  "role": "brand",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "b01",
+      "title": "Til ekrani: lockup (emblema + wordmark + tagline)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "b02",
+      "title": "Onboarding → talaba, hisobsiz",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "b03",
+      "title": "Asosiy sarlavha (TALABA): kichik emblema",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "b04",
+      "title": "Kirish ekrani: lockup (taglinesiz)",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"EXPERT\""
+      ],
+      "screenshot": null
+    },
+    {
+      "id": "b05",
+      "title": "MOCK OTP bilan kirish (admin)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "b06",
+      "title": "Asosiy sarlavha (MUTAXASSIS)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "b07",
+      "title": "Admin panel sarlavhasi (ADMIN)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "b08",
+      "title": "320 dp, shrift ×2: lockup sig‘adi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    }
+  ],
+  "pass": 8,
+  "fail": 0
+}

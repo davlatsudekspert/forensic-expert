@@ -223,6 +223,34 @@ abstract final class FePalette {
   );
 }
 
+/// Brend (logotip) ranglari — `design/brand/source/logo_original.webp` dan
+/// o‘lchangan (docs/BRAND.md). UI palitrasi ([FePalette]) o‘zgarmaydi:
+/// bular faqat emblema, wordmark va splash/ikon fonlari uchun.
+abstract final class FeBrand {
+  /// Qalqon ichi va «FORENSIC» so‘zi.
+  static const navy = Color(0xFF021A31);
+
+  /// Qorong‘i fonda qalqon ichi (grafitda yo‘qolmasligi uchun ochroq).
+  static const navyLifted = Color(0xFF102C52);
+
+  /// App icon fon gradienti (markaz → chekka).
+  static const navyIconCenter = Color(0xFF173155);
+  static const navyIconEdge = Color(0xFF061224);
+
+  /// Metall oltin hoshiya (o‘rta ton) — faqat bezak.
+  static const goldMetal = Color(0xFFD0B076);
+
+  /// «EXPERT» oltini: yorug‘ fonda (yirik matn, ≥ 3:1) va to‘q fonda.
+  static const goldOnLight = Color(0xFFAB864B);
+  static const goldOnDark = Color(0xFFD0B076);
+
+  /// DNK spirali (emblemada, xira).
+  static const dnaBlue = Color(0xFF3F6381);
+
+  /// To‘q fonda wordmark (= dark textPrimary).
+  static const ivory = Color(0xFFF4F4F1);
+}
+
 /// Masofa shkalasi — 4 pt grid.
 abstract final class FeSpace {
   static const double xxs = 4;

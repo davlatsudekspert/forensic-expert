@@ -6,47 +6,15 @@ import '../design/tokens.dart';
 import '../l10n/generated/app_localizations.dart';
 import 'brand_mark.dart';
 
-/// Brend sarlavhasi: belgi + «FORENSIC EXPERT» + tagline.
+/// Brend sarlavhasi: emblema + «FORENSIC EXPERT» wordmark + tagline
+/// ([BrandLockup]; til ekrani va boshqa katta joylar).
 class BrandHeader extends StatelessWidget {
   const BrandHeader({super.key, this.markSize = 72});
 
   final double markSize;
 
   @override
-  Widget build(BuildContext context) {
-    // Brend nomi va tagline barcha tillarda bir xil; manbasi — ARB.
-    final l = AppLocalizations.of(context);
-    final c = FeTheme.of(context);
-    final t = Theme.of(context).textTheme;
-    return Semantics(
-      container: true,
-      header: true,
-      child: Column(
-        children: [
-          BrandMark(size: markSize),
-          const SizedBox(height: FeSpace.md),
-          Text(
-            l.appTitle,
-            textAlign: TextAlign.center,
-            style: t.titleLarge?.copyWith(
-              letterSpacing: 2.4,
-              fontWeight: FontWeight.w700,
-              color: c.textPrimary,
-            ),
-          ),
-          const SizedBox(height: FeSpace.xxs),
-          Text(
-            l.appTagline,
-            textAlign: TextAlign.center,
-            style: t.bodyMedium?.copyWith(
-              color: c.textSecondary,
-              letterSpacing: 0.6,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
+  Widget build(BuildContext context) => BrandLockup(markSize: markSize);
 }
 
 /// Ilmiy review statusi belgisi — rang + ikonka + matn (faqat rangga

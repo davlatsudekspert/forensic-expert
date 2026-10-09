@@ -13,8 +13,15 @@ void main() {
   testWidgets('birinchi ekran — til tanlash (login yo‘q)', (tester) async {
     await pumpApp(tester);
     expect(find.byType(LanguageScreen), findsOneWidget);
-    expect(find.text('FORENSIC EXPERT'), findsOneWidget);
-    expect(find.text('Evidence · Science · Precision'), findsOneWidget);
+    // Brend lockup’i: wordmark (FORENSIC + EXPERT) va tagline; ekran
+    // o‘quvchisi uchun to‘liq nom bitta yorliqda.
+    expect(find.text('FORENSIC'), findsOneWidget);
+    expect(find.text('EXPERT'), findsOneWidget);
+    expect(find.text('EVIDENCE · SCIENCE · PRECISION'), findsOneWidget);
+    expect(
+      find.bySemanticsLabel('FORENSIC EXPERT. Evidence · Science · Precision'),
+      findsOneWidget,
+    );
     // Uchala til o‘z nomi bilan.
     expect(find.text('English'), findsOneWidget);
     expect(find.text('Русский'), findsOneWidget);

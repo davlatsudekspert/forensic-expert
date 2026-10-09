@@ -1,173 +1,178 @@
 import 'package:flutter/material.dart';
 
-part 'brand_emblem.g.dart';
+import '../design/theme.dart';
+import '../design/tokens.dart';
+import '../l10n/generated/app_localizations.dart';
 
-/// Optik soddalashtirish darajalari (`design/brand/tools/generate_brand.py`).
+/// Emblema darajalari (optik soddalashtirish).
 ///
-/// * [full] — qalqon, Asklepiy tayog‘i va ilon, tarozi, barmoq izi,
-///   xromatogramma, bo‘lingan tashqi halqa (≥ 96 px);
-/// * [icon] — qalqon + tayoq/ilon + tarozi (41–95 px);
-/// * [small] — qalqon + tayoq/ilon (≤ 40 px).
-enum BrandTier { full, icon, small }
+/// * [full] — qalqon, Asklepiy tayog‘i va ilon, DNK spirali, tarozi
+///   (≥ 57 dp: splash, kirish, About, til ekrani);
+/// * [small] — qalqon + tayoq/ilon, DNK va tarozisiz (≤ 56 dp: Home
+///   sarlavhasi, AppBar, paywall) — kichik o‘lchamda «loyqa» bo‘lmaydi.
+enum BrandTier { full, small }
 
-/// Brend belgisi — **«Shield of Evidence»** (original vektor emblema).
+/// Brend emblemasi — egasi bergan premium logotipdan olingan qalqon
+/// (`design/brand/tools/generate_brand.py`, manba:
+/// `design/brand/source/logo_original.webp`).
 ///
-/// Geometriya yagona manbadan generatsiya qilinadi (SVG, PNG, launcher
-/// ikonlari va shu painter bir xil). Oltin faqat emblemada cheklangan
-/// aksent sifatida. Belgi dekorativ — ekran o‘quvchisidan yashirilgan,
-/// brend nomi alohida matn sifatida o‘qiladi.
+/// Assetlar kvadrat, shaffof fonli, @1x/@2x/@3x — hech qachon
+/// cho‘zilmaydi ([BoxFit.contain]). Yorug‘ va qorong‘i variant alohida:
+/// qorong‘ida qalqon ichi biroz ochroq navy — grafit fonda yo‘qolmaydi.
+/// Belgi dekorativ — ekran o‘quvchisidan yashirilgan, brend nomi alohida
+/// matn sifatida o‘qiladi.
 class BrandMark extends StatelessWidget {
   const BrandMark({super.key, this.size = 72, this.onDark = false, this.tier});
 
   final double size;
 
-  /// To‘q fon ustida (splash, navy banner) — to‘q palitra.
+  /// To‘q fon ustida (yorug‘ mavzuda ham) — qorong‘i variant.
   final bool onDark;
 
   /// Majburiy daraja; berilmasa o‘lchamdan tanlanadi.
   final BrandTier? tier;
 
-  static BrandTier tierFor(double size) => size <= 40
-      ? BrandTier.small
-      : size < 96
-      ? BrandTier.icon
-      : BrandTier.full;
+  /// Shu o‘lchamgacha (dp) soddalashtirilgan variant.
+  static const smallMax = 56.0;
+
+  static BrandTier tierFor(double size) =>
+      size <= smallMax ? BrandTier.small : BrandTier.full;
+
+  static String assetFor(BrandTier tier, {required bool dark}) =>
+      'assets/brand/emblem_${tier.name}_${dark ? 'dark' : 'light'}.png';
+
+  /// Barcha emblema variantlari (oldindan yuklash, testlar).
+  static List<String> get allAssets => [
+    for (final t in BrandTier.values)
+      for (final d in [false, true]) assetFor(t, dark: d),
+  ];
+
+  /// Birinchi kadrda belgi «paydo bo‘lib qolmasligi» uchun.
+  static Future<void> precache(BuildContext context) => Future.wait([
+    for (final a in allAssets) precacheImage(AssetImage(a), context),
+  ]);
 
   @override
   Widget build(BuildContext context) {
     final dark = onDark || Theme.of(context).brightness == Brightness.dark;
-    // Emblema ranglari brend kitobidan (docs/BRAND.md) — UI palitrasidan
-    // mustaqil, logotip barcha mavzularda bir xil qoladi.
-    return ExcludeSemantics(
-      child: SizedBox.square(
-        dimension: size,
-        child: CustomPaint(
-          painter: BrandEmblemPainter(
-            tier: tier ?? tierFor(size),
-            ink: dark ? const Color(0xFFE8EDF4) : const Color(0xFF0F1E3D),
-            gold: dark ? const Color(0xFFC9A75E) : const Color(0xFF9C7A33),
-            accent: dark ? const Color(0xFF4CC9D6) : const Color(0xFF0A6F7A),
-            fill: dark ? const Color(0xFF15284D) : Colors.white,
-          ),
-        ),
+    return SizedBox.square(
+      dimension: size,
+      child: Image.asset(
+        assetFor(tier ?? tierFor(size), dark: dark),
+        width: size,
+        height: size,
+        fit: BoxFit.contain,
+        filterQuality: FilterQuality.medium,
+        gaplessPlayback: true,
+        excludeFromSemantics: true,
       ),
     );
   }
 }
 
-enum _Role { ink, gold, accent, fill }
+/// Emblema + «FORENSIC EXPERT» wordmark (+ ixtiyoriy tagline) lockup’i.
+///
+/// Wordmark — jonli matn (Source Serif 4): har o‘lchamda tiniq, tilga
+/// moslashadi (tagline ARB’dan). Ranglar logotipdan: navy so‘z, oltin
+/// «EXPERT» yon chiziqlar bilan. Qorong‘ida navy o‘rniga fil suyagi.
+class BrandLockup extends StatelessWidget {
+  const BrandLockup({super.key, this.markSize = 112, this.showTagline = true});
 
-class _Op {
-  const _Op.m(this.x1, this.y1) : cmd = 'M', x2 = 0, y2 = 0, x3 = 0, y3 = 0;
-  const _Op.l(this.x1, this.y1) : cmd = 'L', x2 = 0, y2 = 0, x3 = 0, y3 = 0;
-  const _Op.c(this.x1, this.y1, this.x2, this.y2, this.x3, this.y3) : cmd = 'C';
-  const _Op.z() : cmd = 'Z', x1 = 0, y1 = 0, x2 = 0, y2 = 0, x3 = 0, y3 = 0;
+  /// Emblema balandligi (dp). Wordmark shunga mutanosib.
+  final double markSize;
 
-  final String cmd;
-  final double x1, y1, x2, y2, x3, y3;
-}
-
-class _El {
-  const _El(
-    this.role,
-    this.width, {
-    required this.ops,
-    this.fill = false,
-    this.halo = 0,
-  });
-
-  final _Role role;
-  final double width;
-  final bool fill;
-  final double halo;
-  final List<_Op> ops;
-
-  Path toPath() {
-    final p = Path();
-    for (final o in ops) {
-      switch (o.cmd) {
-        case 'M':
-          p.moveTo(o.x1, o.y1);
-        case 'L':
-          p.lineTo(o.x1, o.y1);
-        case 'C':
-          p.cubicTo(o.x1, o.y1, o.x2, o.y2, o.x3, o.y3);
-        default:
-          p.close();
-      }
-    }
-    return p;
-  }
-}
-
-/// 100×100 grid painter (SVG bilan aynan bir xil geometriya).
-class BrandEmblemPainter extends CustomPainter {
-  const BrandEmblemPainter({
-    required this.tier,
-    required this.ink,
-    required this.gold,
-    required this.accent,
-    required this.fill,
-  });
-
-  final BrandTier tier;
-  final Color ink;
-  final Color gold;
-  final Color accent;
-  final Color fill;
-
-  /// Darajadagi elementlar soni (testlar uchun).
-  static int elementCount(BrandTier tier) => _emblemTiers[tier]!.length;
-
-  Color _color(_Role r) => switch (r) {
-    _Role.ink => ink,
-    _Role.gold => gold,
-    _Role.accent => accent,
-    _Role.fill => fill,
-  };
+  /// Tagline faqat yetarlicha katta joyda (splash, til ekrani).
+  final bool showTagline;
 
   @override
-  void paint(Canvas canvas, Size size) {
-    canvas
-      ..save()
-      ..scale(size.shortestSide / 100);
-    for (final e in _emblemTiers[tier]!) {
-      final path = e.toPath();
-      final paint = Paint()
-        ..isAntiAlias = true
-        ..color = _color(e.role);
-      if (e.fill) {
-        canvas.drawPath(path, paint..style = PaintingStyle.fill);
-        continue;
-      }
-      final stroke = Paint()
-        ..isAntiAlias = true
-        ..style = PaintingStyle.stroke
-        ..strokeCap = StrokeCap.round
-        ..strokeJoin = StrokeJoin.round;
-      if (e.halo > 0) {
-        canvas.drawPath(
-          path,
-          stroke
-            ..color = fill
-            ..strokeWidth = e.width + e.halo,
-        );
-      }
-      canvas.drawPath(
-        path,
-        stroke
-          ..color = _color(e.role)
-          ..strokeWidth = e.width,
-      );
-    }
-    canvas.restore();
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final dark = Theme.of(context).brightness == Brightness.dark;
+    final words = l.appTitle.split(' ');
+    final first = words.first;
+    final rest = words.skip(1).join(' ');
+    final word = (markSize * 0.27).clamp(22.0, 40.0);
+    final gold = dark ? FeBrand.goldOnDark : FeBrand.goldOnLight;
+    final rule = Container(height: 1.2, color: gold.withValues(alpha: 0.85));
+    return Semantics(
+      container: true,
+      header: true,
+      label: showTagline ? '${l.appTitle}. ${l.appTagline}' : l.appTitle,
+      child: ExcludeSemantics(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            BrandMark(size: markSize),
+            SizedBox(height: markSize * 0.12),
+            FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(
+                first,
+                maxLines: 1,
+                // Wordmark — logotip qismi: shrift masshtabi bilan
+                // kattalashmaydi (nom Semantics yorlig‘ida o‘qiladi).
+                textScaler: TextScaler.noScaling,
+                style: TextStyle(
+                  fontFamily: FeFonts.serif,
+                  fontWeight: FontWeight.w600,
+                  fontSize: word,
+                  height: 1.0,
+                  letterSpacing: word * 0.06,
+                  color: dark ? FeBrand.ivory : FeBrand.navy,
+                ),
+              ),
+            ),
+            if (rest.isNotEmpty) ...[
+              SizedBox(height: word * 0.2),
+              SizedBox(
+                width: word * 7.2,
+                child: Row(
+                  children: [
+                    Expanded(child: rule),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: word * 0.35),
+                      child: Text(
+                        rest,
+                        maxLines: 1,
+                        textScaler: TextScaler.noScaling,
+                        style: TextStyle(
+                          fontFamily: FeFonts.serif,
+                          fontWeight: FontWeight.w600,
+                          fontSize: word * 0.62,
+                          height: 1.0,
+                          letterSpacing: word * 0.62 * 0.28,
+                          color: gold,
+                        ),
+                      ),
+                    ),
+                    Expanded(child: rule),
+                  ],
+                ),
+              ),
+            ],
+            if (showTagline) ...[
+              SizedBox(height: word * 0.42),
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  l.appTagline.toUpperCase(),
+                  maxLines: 1,
+                  textScaler: MediaQuery.textScalerOf(context)
+                      .clamp(maxScaleFactor: 1.3),
+                  style: TextStyle(
+                    fontFamily: FeFonts.sans,
+                    fontWeight: FontWeight.w500,
+                    fontSize: (word * 0.36).clamp(11.0, 14.0),
+                    letterSpacing: 2.2,
+                    color: c.textSecondary,
+                  ),
+                ),
+              ),
+            ],
+          ],
+        ),
+      ),
+    );
   }
-
-  @override
-  bool shouldRepaint(BrandEmblemPainter old) =>
-      old.tier != tier ||
-      old.ink != ink ||
-      old.gold != gold ||
-      old.accent != accent ||
-      old.fill != fill;
 }
