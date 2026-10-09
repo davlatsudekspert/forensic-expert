@@ -256,6 +256,29 @@ ko‘chirildi; uz yorlig‘ida ikki qavs («Optik zichlik (absorbsiya) (A)») �
 «Optik zichlik (A)». Bloklangan HTTP urinishlari: 0. ADMIN roli bu ishga
 taalluqli emas (yangi admin funksiyasi yo‘q).
 
+### 2a. Reaktiv retseptlari (ilova egasi to‘plami, 2026-10-09)
+
+`integration_test/qa_reagents_test.dart` (`./tool/qa_real_app.sh reagents`),
+REAL ILOVA, uz, MOCK akkaunt, tarmoq o‘chiq. Skrinshotlar:
+`docs/qa/reagents_20261009/` (8 ta).
+
+| Rol | Qadamlar | PASS | FAIL |
+|---|---|---|---|
+| Talaba (bepul) | 10 | 10 | 0 |
+| Mutaxassis (Pro, `QA_MODE=professional QA_PRO=1`) | 10 | 10 | 0 |
+
+Tekshirildi: qidiruv «Dragendorf» / «Марки» → reaktiv; Dragendorf (bepul):
+xavf banneri + PubChem GHS kartalari, tarkib jadvali (27,2 g; «100 ml gacha»),
+bosqichlar, «Asl matn (rus)» ochiladi; Marki; Nessler — bepulda retsept
+yopiq, lekin xavf ogohlantirishlari ochiq; Pro’da to‘liq retsept;
+320 dp ekran — overflow yo‘q. Til tekshiruvi faqat PubChem manba havolasi
+domenini («pubchem.ncbi.nlm.nih.gov») belgiladi — URL, xato emas.
+Eslatma: bir xil `pack_version` bilan qayta yig‘ilgan paket desktop’dagi
+eski o‘rnatilgan nusxani almashtirmaydi — QA oldidan
+`~/.local/share/uz.forensicexpert.forensic_expert/content` tozalandi.
+TEKSHIRILMAGAN: haqiqiy iOS/Android qurilma, ru/en rejimlari real ilovada
+(widget testlarida ru/en/320 dp tekshirilgan).
+
 ## 3. Til tekshiruvi (uz rejimi)
 
 Avtomatik tekshiruv har ekranda inglizcha UI so‘zlari va xom kodlarni
@@ -369,3 +392,39 @@ Tuzatildi: 320 dp’da «Vancouver» yorlig‘i bo‘linib ketardi; avvalgi
 
 Sinalmagan: iOS/Android qurilmadagi tizim buferi; ADMIN roli (funksiya
 rolga bog‘liq emas); ekspert xulosasi shablonining o‘ziga joylash.
+
+## 8. «Giyohvand moddalar tahlili» (GMT) kartalari va testi (2026-10-09)
+
+`integration_test/qa_gmt_test.dart` — Linux desktop, haqiqiy ilova, MOCK akkaunt, HTTP bloklangan,
+**Pro huquqisiz** (bepul foydalanuvchi). Skrinshotlar: `docs/qa/gmt_20261009/` (8 ta PNG).
+
+| Rol | Qadamlar | Natija |
+|---|---|---|
+| TALABA (uz, 390 dp) | yo‘riqnomalar ro‘yxati; opioidlar, kannabis, huquqiy eslatma kartalari (atribusiya qatori bor); qolgan 6 karta ochiladi; o‘quv testi: savol → javob → manba | 12/12 PASS |
+| MUTAXASSIS (uz, 320 dp) | benzodiazepinlar kartasi; o‘quv markazi to‘plami; test javobi; prekursorlar kartasi | 4/4 PASS |
+
+Ko‘rildi: atribusiya qatori «Manba: Yuldashev Z.A. va boshq., … — muallif ruxsati bilan, barcha uchun bepul»,
+iqtiboslar raqamlanadi va kitob sahifasi «[1] (15-b.)» ko‘rinishida; 320 dp da toshib ketish yo‘q; uz rejimida til
+ogohlantirishlari yo‘q. Tekshirilmagan: ru/en UI, internet o‘chgan holat (kartalar — lokal asset), real iOS.
+
+## 9. «Ilmiy lug‘at» (term_translations) va kartalardagi «Atamalar» (2026-10-09)
+
+`integration_test/qa_glossary_test.dart` — Linux desktop (Xvfb), haqiqiy ilova va haqiqiy paket
+(106 atama: 38 T-TOKS, 48 T-GMT, 20 eski), MOCK akkaunt, HTTP bloklangan, Pro’siz.
+Toza o‘rnatish uchun `XDG_DATA_HOME` worktree ichidagi alohida papkaga yo‘naltirildi (qurilmadagi
+boshqa branch o‘rnatgan yangiroq paket ishlatilmasin). Skrinshotlar: `docs/qa/glossary_20261009/` (96 PNG).
+
+| Til | TALABA | MUTAXASSIS |
+|---|---|---|
+| uz | 18/18 PASS | 18/18 PASS |
+| ru | 18/18 PASS | 18/18 PASS |
+| en | 18/18 PASS | 18/18 PASS |
+
+Qadamlar: Kutubxona → «Ilmiy lug‘at» kartochkasi → ro‘yxat (joriy til + ostida qolgan ikki til);
+320 dp: rus («дитизон») va ingliz («steam distillation») filtri; atama sahifasi (uz/ru/en,
+«Mashina tarjimasi — tekshirilmagan» belgisi va izoh); bog‘langan toks kartasi → «Atamalar» bo‘limi →
+atama varag‘i; orqaga (varaq → atama → ro‘yxat); global qidiruv (ru/en/uz so‘rov va «реактив Марки»)
+→ lug‘at yozuvi; GMT opioidlar kartasi → Markis reaktivi varag‘i; 320 dp × 2 matn. Toshish yo‘q.
+
+Tekshirilmagan: real iOS/Android qurilma; ADMIN roli (funksiya rolga bog‘liq emas); internet o‘chgan
+holat alohida (lug‘at — lokal paket). Barcha tarjimalar machine_draft — terminolog tekshiruvi kerak.

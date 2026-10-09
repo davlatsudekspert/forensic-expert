@@ -13,8 +13,11 @@ import pathlib
 
 HERE = pathlib.Path(__file__).resolve().parent
 SECTION_ORDER = [
-    "basis", "scope", "methods", "advantages",
-    "limitations", "factors", "cautions", "alternatives",
+    "basis", "scope", "methods",
+    # Giyohvand moddalar tahlili kartalari (gmt): reaksiyalar → YuQX →
+    # instrumental tasdiqlash → talqin.
+    "reactions", "tlc", "instrumental", "interpretation",
+    "advantages", "limitations", "factors", "cautions", "alternatives",
 ]
 
 

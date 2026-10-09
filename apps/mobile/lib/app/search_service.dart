@@ -279,6 +279,17 @@ class AppSearchService {
             ),
           );
         }
+        // Reaktiv sinonimlari: boshqa yozilishlar («Dragendorf», «Марки»).
+        for (final syn in e.recipe?.synonyms ?? const <String>[]) {
+          terms.add(
+            SearchTerm(
+              entityId: e.id,
+              category: cat,
+              term: syn,
+              kind: TermKind.synonym,
+            ),
+          );
+        }
       }
     }
     // Rasmiy hujjatlar (qonun / standart) — sarlavha bo‘yicha.

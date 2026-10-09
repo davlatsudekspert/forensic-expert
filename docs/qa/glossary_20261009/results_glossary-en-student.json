@@ -1,0 +1,134 @@
+{
+  "role": "glossary-en-student",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "g01",
+      "title": "en student library hub glossary tile",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "g01_en_student_library_hub_glossary_tile.png"
+    },
+    {
+      "id": "g02",
+      "title": "en student glossary list",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "g02_en_student_glossary_list.png"
+    },
+    {
+      "id": "g03",
+      "title": "en student 320 filter russian",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "g03_en_student_320_filter_russian.png"
+    },
+    {
+      "id": "g04",
+      "title": "en student 320 filter english",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "g04_en_student_320_filter_english.png"
+    },
+    {
+      "id": "g05",
+      "title": "en student 320 term detail",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "g05_en_student_320_term_detail.png"
+    },
+    {
+      "id": "g06",
+      "title": "en student 320 term linked cards",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "g06_en_student_320_term_linked_cards.png"
+    },
+    {
+      "id": "g07",
+      "title": "en student 320 open linked card",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "g07_en_student_320_open_linked_card.png"
+    },
+    {
+      "id": "g08",
+      "title": "en student 320 card terms section",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "g08_en_student_320_card_terms_section.png"
+    },
+    {
+      "id": "g09",
+      "title": "en student 320 card term sheet",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "g09_en_student_320_card_term_sheet.png"
+    },
+    {
+      "id": "g10",
+      "title": "en student back to term and list",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "g10_en_student_back_to_term_and_list.png"
+    },
+    {
+      "id": "g11",
+      "title": "en student search перегонка с водяным паром",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "g12",
+      "title": "en student search dithizone",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "g12_en_student_search_dithizone.png"
+    },
+    {
+      "id": "g13",
+      "title": "en student search suv bug‘i bilan haydash",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "g14",
+      "title": "en student search реактив Марки",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "g15",
+      "title": "en student search opens glossary entry",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "g15_en_student_search_opens_glossary_entry.png"
+    },
+    {
+      "id": "g16",
+      "title": "en student 320 gmt opioids terms",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "g16_en_student_320_gmt_opioids_terms.png"
+    },
+    {
+      "id": "g17",
+      "title": "en student 320 2x term detail",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "g17_en_student_320_2x_term_detail.png"
+    },
+    {
+      "id": "g18",
+      "title": "en student 320 2x glossary list",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "g18_en_student_320_2x_glossary_list.png"
+    }
+  ],
+  "pass": 18,
+  "fail": 0
+}

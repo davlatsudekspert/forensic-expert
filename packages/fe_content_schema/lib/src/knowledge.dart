@@ -119,11 +119,29 @@ class SourcedValue {
 /// Manba bilan bog‘langan matn (cross-reactivity, cheklov, xavf).
 @immutable
 class SourcedNote {
-  const SourcedNote({required this.text, required this.sourceId, this.locator});
+  const SourcedNote({
+    required this.text,
+    required this.sourceId,
+    this.locator,
+    this.texts = const {},
+    this.kind,
+  });
 
   final String text;
   final String sourceId;
   final String? locator;
+
+  /// Tilga moslangan matn (uz/ru/en). Bo‘sh bo‘lsa — [text] (asl til).
+  /// Tarjimalar retseptning `translation_status` iga bo‘ysunadi.
+  final Map<String, String> texts;
+
+  /// Izoh turi (ixtiyoriy): `ghs` — PubChem GHS bayonoti, `general` —
+  /// ilovaning umumiy ehtiyot tavsiyasi (manbadagi xavf asosida),
+  /// `purpose`, `ambiguity` — manbadagi noaniqlik/OCR xatosi, `info`.
+  final String? kind;
+
+  /// [lang] uchun matn; topilmasa `en`, so‘ng [text].
+  String resolve(String lang) => texts[lang] ?? texts['en'] ?? text;
 }
 
 // ---------------------------------------------------------------------------
@@ -138,25 +156,81 @@ class Ingredient {
     required this.unit,
     this.role,
     this.grade,
+    this.names = const {},
+    this.amountMax,
+    this.makeUpTo = false,
+    this.quantityNote = const {},
+    this.variant,
   });
 
   final String name;
-  final num amount;
-  final String unit;
+
+  /// Manbadagi miqdor. Manba raqam bermagan bo‘lsa (`небольшое
+  /// количество`, `до растворения`) — `null` va [quantityNote] majburiy
+  /// (validator FE022). Raqam hech qachon taxmin qilinmaydi.
+  final num? amount;
+  final String? unit;
   final String? role;
 
   /// Tozalik / sinf (masalan «analytical grade») — faqat manbada bo‘lsa.
   final String? grade;
+
+  /// Ko‘rsatiladigan nom (uz/ru/en), konsentratsiya bilan.
+  final Map<String, String> names;
+
+  /// Oraliq yuqori chegarasi (`10—15 мл` → amount 10, amountMax 15).
+  final num? amountMax;
+
+  /// «… gacha suyultiriladi» (`до 100 мл`) — [amount] yakuniy hajm.
+  final bool makeUpTo;
+
+  /// Raqamsiz miqdor izohi (uz/ru/en).
+  final Map<String, String> quantityNote;
+
+  /// Retsept varianti (`a`, `b`…) — [SolutionRecipe.variants] dan.
+  final String? variant;
+
+  String displayName(String lang) => names[lang] ?? names['en'] ?? name;
 }
 
 @immutable
 class PreparationStep {
-  const PreparationStep({required this.text, this.order});
+  const PreparationStep({
+    required this.text,
+    this.order,
+    this.texts = const {},
+    this.variant,
+  });
 
   final String text;
 
   /// Tartib raqami — faqat manba tartibni **aniq** aytgan bo‘lsa.
   final int? order;
+
+  /// Tilga moslangan matn (uz/ru/en).
+  final Map<String, String> texts;
+
+  /// Retsept varianti (`a`, `b`…).
+  final String? variant;
+
+  String resolve(String lang) => texts[lang] ?? texts['en'] ?? text;
+}
+
+/// Bir reaktivning muqobil tayyorlash usuli (manbada «а)», «б)» yoki
+/// boshqa manbadagi retsept).
+@immutable
+class RecipeVariant {
+  const RecipeVariant({
+    required this.id,
+    this.labels = const {},
+    this.sourceId,
+  });
+
+  final String id;
+  final Map<String, String> labels;
+
+  /// Variant manbasi (retsept `source_ids` ichida bo‘lishi shart).
+  final String? sourceId;
 }
 
 /// Eritma / reagent tayyorlash retsepti.
@@ -194,6 +268,13 @@ class SolutionRecipe {
     this.expiry,
     this.ppe = const [],
     this.calculatorIds = const [],
+    this.synonyms = const [],
+    this.variants = const [],
+    this.notes = const [],
+    this.originalText,
+    this.originalLanguage,
+    this.originalSourceId,
+    this.translationStatus,
   });
 
   final String id;
@@ -229,6 +310,25 @@ class SolutionRecipe {
   /// Deterministik kalkulyatorlar (molarlik, foizli eritma) — tahririy
   /// bog‘lanish; ilmiy qiymat emas, hisob foydalanuvchi kiritganidan.
   final List<String> calculatorIds;
+
+  /// Qidiruv sinonimlari (boshqa yozilishlar: «Dragendorf», «Марки»…).
+  final List<String> synonyms;
+
+  /// Muqobil tayyorlash usullari; ingredient/qadam `variant` i shu ID’lar.
+  final List<RecipeVariant> variants;
+
+  /// Manbadagi maqsad, noaniqlik (OCR) va boshqa izohlar ([SourcedNote.kind]).
+  final List<SourcedNote> notes;
+
+  /// Kuzatuvchanlik uchun asl matn (masalan, rus tilidagi manba bandi).
+  /// Faqat qayta foydalanishga ruxsat bergan manbadan (FE025).
+  final String? originalText;
+  final String? originalLanguage;
+  final String? originalSourceId;
+
+  /// Tuzilgan matnlar (nom, qadam, izoh) tarjimasi holati —
+  /// hozircha faqat `machine_draft` (FE043).
+  final String? translationStatus;
 
   bool get hasPreparationData =>
       ingredients.isNotEmpty ||

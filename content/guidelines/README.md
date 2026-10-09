@@ -12,7 +12,8 @@ integratsiyasi `guidelines_v1.json` faylini o‘qiydi.
 | `references.json` | Tekshirilgan bibliografiya (yagona manba) |
 | `build.py` | `guidelines_v1.json` ni yig‘adi (faqat iqtibos keltirilgan manbalar kiritiladi) |
 | `guidelines_v1.json` | **Iste’mol uchun tayyor fayl** (generatsiya qilinadi, qo‘lda tahrirlanmaydi) |
-| `validate.py` | Tekshiruv (G001–G013) |
+| `validate.py` | Tekshiruv (G001–G017) |
+| `REVIEW_GMT.md` | «Giyohvand moddalar tahlili» kartalari: tuzatilgan va olib tashlangan raqamlar (ekspert uchun) |
 
 ```bash
 python3 content/guidelines/build.py && python3 content/guidelines/validate.py
@@ -25,7 +26,7 @@ python3 content/guidelines/sync_app_asset.py   # ilova asset’i (ichki maydonla
 {
   "schema": "fe-guidelines/1",
   "language_order": ["uz", "ru", "en"],
-  "section_order": ["basis","scope","methods","advantages","limitations","factors","cautions","alternatives"],
+  "section_order": ["basis","scope","methods","reactions","tlc","instrumental","interpretation","advantages","limitations","factors","cautions","alternatives"],
   "cards": [{
     "id": "guideline.chem.ethanol_gc",          // barqaror ID (bookmark/URL)
     "discipline_codes": ["forensic_chemistry"], // taxonomy.dart ForensicDiscipline.code
@@ -89,3 +90,10 @@ python3 content/guidelines/sync_app_asset.py   # ilova asset’i (ichki maydonla
   status o‘zgarmaydi (G002). O‘zbek matni — muallif matni, rus va ingliz —
   mashina yordamidagi qoralama tarjima (`DRAFT`).
 - O‘zbek lotin yozuvi: o‘ / g‘ uchun U+2018, tutuq belgisi uchun ’ (U+2019) (G010).
+
+## Qo‘shimcha qoidalar (2026-10-09)
+- «Giyohvand moddalar tahlili» (`gmt_yuldashev2024`, `teaching_material`) sahifa bilan keltiriladi:
+  `[gmt_yuldashev2024] (23-b.)`, `(с. 23)`, `(p. 23)` (G017). Kartalar `access: "free"` (G015).
+- `quiz` elementida ixtiyoriy `"cite": ["kalit", …]` — savol aniq tayangan manbalar (masalan,
+  PubChem yoki UNODC); `pages` faqat o‘quv-uslubiy materialga tegishli (G016). GMT savollari
+  o‘quv rejimida alohida «Giyohvand moddalar tahlili (Yuldashev Z.A.)» to‘plamida.

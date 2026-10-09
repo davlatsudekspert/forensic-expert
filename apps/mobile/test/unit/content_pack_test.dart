@@ -33,6 +33,22 @@ void main() {
     expect(await installer().ensureInstalled(), isNull);
   });
 
+  test('xuddi shu versiya, boshqa mazmun — eskirgan kontent almashtiriladi', () async {
+    await installer().ensureInstalled();
+    // Oldingi build’dan qolgan, xuddi shu versiyali, lekin boshqa xeshli paket.
+    final m = File('${root.path}/active/manifest.json');
+    m.writeAsStringSync(
+      m.readAsStringSync().replaceFirst(
+        RegExp(r'"sha256":\s*"[0-9a-f]+"'),
+        '"sha256": "${'0' * 64}"',
+      ),
+    );
+    final r = await installer().ensureInstalled();
+    expect(r!.outcome, InstallOutcome.installed);
+    // Endi mos — qayta o‘rnatilmaydi.
+    expect(await installer().ensureInstalled(), isNull);
+  });
+
   test('production yig‘ma development paketni rad etadi', () async {
     final r = await installer(channel: 'production').ensureInstalled();
     expect(r!.outcome, InstallOutcome.rejectedByVerifier);

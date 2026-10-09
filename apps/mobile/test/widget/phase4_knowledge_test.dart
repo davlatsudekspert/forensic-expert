@@ -51,14 +51,24 @@ void main() {
     }
   });
 
-  testWidgets('Marquis: retsept taxmin qilinmagan, manbalar ochiq', (
+  testWidgets('Mecke: retsept taxmin qilinmagan, manbalar ochiq', (
     tester,
   ) async {
-    await open(tester, Routes.knowledgeEntry('reagent-marquis'));
+    await open(tester, Routes.knowledgeEntry('reagent-mecke'), owned: true);
     expect(find.byType(UnverifiedBanner), findsWidgets);
     await see(tester, find.byKey(const Key('reagent.noRecipe')));
     expect(find.byKey(const Key('reagent.ingredients')), findsNothing);
+    await see(tester, find.byKey(const Key('source.SRC-PMC13189459')));
+  });
+
+  testWidgets('Marki: egasi to‘plamidagi retsept, PMC manbalari saqlangan', (
+    tester,
+  ) async {
+    await open(tester, Routes.knowledgeEntry('reagent-marquis'));
+    await see(tester, find.byKey(const Key('reagent.ingredients')));
+    expect(find.byKey(const Key('reagent.noRecipe')), findsNothing);
     await see(tester, find.byKey(const Key('source.SRC-PMC11961553')));
+    await see(tester, find.byKey(const Key('source.SRC-OWNER-REAGENTS')));
   });
 
   testWidgets('skrining: «skrining ≠ tasdiqlash» va tasdiqlovchi metod', (

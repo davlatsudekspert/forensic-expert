@@ -217,7 +217,7 @@ void main() {
               FixtureReviewService(
                 identity: fixtureToxReviewer,
                 reviews: [
-                  fixtureReview(recordId: 'morphine', version: '2026.10.8'),
+                  fixtureReview(recordId: 'morphine', version: '2026.10.9'),
                 ],
               ),
             ),
@@ -279,7 +279,7 @@ void main() {
                     subject: ReviewSubject(
                       recordId: 'fixture-record',
                       kind: ReviewSubjectKind.substance,
-                      contentVersion: '2026.10.8',
+                      contentVersion: '2026.10.9',
                       scopes: {ReviewerScope.forensicToxicology},
                     ),
                     title: 'FIXTURE record (not real content)',

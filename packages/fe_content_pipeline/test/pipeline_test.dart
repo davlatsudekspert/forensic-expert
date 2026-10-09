@@ -136,6 +136,17 @@ void main() {
         expect(cited, contains(c.claimId));
       }
       for (final s in bundle.content.sources) {
+        // Ilova egasi to‘plami (DOI/PMID yo‘q, egasi ruxsati bilan) va
+        // tahririy izohlar (dalil emas) — identifikatorsiz, lekin aniq.
+        if (s.sourceId == 'SRC-OWNER-REAGENTS') {
+          expect(s.licenseAgreementId, 'OWNER-PERMISSION-2026-10-09');
+          expect(s.accessedDate, isNotNull);
+          continue;
+        }
+        if (s.sourceId == 'SRC-FE-EDITORIAL') {
+          expect(s.sourceClass.canBackClaim, isFalse);
+          continue;
+        }
         expect(s.identifierVerified, isTrue, reason: s.sourceId);
         expect(s.accessedDate, isNotNull, reason: s.sourceId);
       }
@@ -188,12 +199,19 @@ void main() {
       final cited = {for (final c in k.claims) c.entityId};
       for (final id in [
         ...k.topics.map((t) => t.id),
-        ...k.recipes.map((r) => r.reagentId),
+        ...k.recipes
+            .where((r) => r.originalSourceId == null)
+            .map((r) => r.reagentId),
         ...k.screeningTests.map((t) => t.id),
         ...k.methods.map((m) => m.id),
         ...k.emergingIssues.map((e) => e.id),
       ]) {
         expect(cited, contains(id), reason: '$id — manbali claim yo‘q');
+      }
+      // Egasi to‘plamidagi retseptlar: claim emas, bevosita manba + asl matn.
+      for (final r in k.recipes.where((r) => r.originalSourceId != null)) {
+        expect(r.sourceIds, contains(r.originalSourceId), reason: r.id);
+        expect(r.originalText, isNotEmpty, reason: r.id);
       }
     });
 
@@ -207,13 +225,20 @@ void main() {
         // tartib faqat manba aniq aytgan bo‘lsa raqamlanadi.
         expect(r.sourceIds, isNotEmpty, reason: r.id);
         for (final st in r.steps) {
+          // Egasi to‘plami qadamlari: tuzilgan (uz/ru/en) matn, asl band
+          // `original_text` da saqlanadi; boshqalari — manbadagi asl jumla.
+          if (st.texts.isNotEmpty) {
+            expect(r.originalText, isNotEmpty, reason: r.id);
+            expect(r.translationStatus, 'machine_draft', reason: r.id);
+            continue;
+          }
           expect(excerpts, contains(st.text), reason: r.id);
           if (!r.orderExplicitInSource) expect(st.order, isNull);
         }
       }
       expect(
         bundle.content.recipes
-            .firstWhere((r) => r.id == 'recipe-marquis')
+            .firstWhere((r) => r.id == 'recipe-mecke')
             .hasPreparationData,
         isFalse,
       );

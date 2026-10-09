@@ -20,11 +20,11 @@ Ishga tushirish (repo ildizida):
 """
 import json
 import pathlib
-import re
+
+import card_terms
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 BUNDLE = ROOT / "content/pilot/bundle.json"
-CARDS = ROOT / "content/guidelines/src"
 
 # (id, uz, ru, en)
 TERMS = [
@@ -101,39 +101,17 @@ CARD_TERMS = {
     ],
 }
 
-_TERM_LINE = re.compile(r'^  "term_ids": \[[^\]]*\],\n', re.M)
-_ANCHOR = re.compile(r'^  "related_tool_ids": \[[^\]]*\],\n', re.M)
-
-
 def term_id(short: str) -> str:
     return f"T-TOKS-{short.upper()}"
 
 
 def write_card_terms() -> int:
-    """`term_ids` qatorini kartaning src fayliga yozadi (qo‘lda formatlangan
-    JSON — faqat bitta qator almashtiriladi)."""
-    known = {tid for tid, *_ in TERMS}
-    done = 0
-    for path in sorted(CARDS.glob("card_*.json")):
-        raw = path.read_text(encoding="utf-8")
-        cid = json.loads(raw)["id"]
-        if cid not in CARD_TERMS:
-            continue
-        shorts = CARD_TERMS[cid]
-        assert len(set(shorts)) == len(shorts), cid
-        for t in shorts:
-            assert t in known, (cid, t)
-        line = '  "term_ids": [' + ", ".join(f'"{term_id(t)}"' for t in shorts) + "],\n"
-        text = _TERM_LINE.sub("", raw)
-        m = _ANCHOR.search(text)
-        assert m, f"{path.name}: related_tool_ids qatori topilmadi"
-        text = text[: m.end()] + line + text[m.end():]
-        json.loads(text)  # buzilmaganini tekshirish
-        if text != raw:
-            path.write_text(text, encoding="utf-8")
-        done += 1
-    assert done == len(CARD_TERMS), "kartalar topilmadi"
-    return done
+    """`term_ids` qatorini toks kartalarining src fayllariga yozadi."""
+    known = {term_id(tid) for tid, *_ in TERMS}
+    return card_terms.write_card_terms(
+        {cid: [term_id(t) for t in shorts] for cid, shorts in CARD_TERMS.items()},
+        known,
+    )
 
 
 def main() -> None:
@@ -156,7 +134,12 @@ def main() -> None:
     for t in new:
         for bad in ("o'", "g'", "oʻ", "gʻ"):
             assert bad not in t["original"], t["term_id"]
-    bundle["term_translations"] = keep + new
+    # Joyini saqlaydi (boshqa atamalar keyin qo‘shilgan bo‘lsa, tartib buzilmaydi).
+    old = bundle.get("term_translations", [])
+    first = next((i for i, t in enumerate(old) if t["term_id"].startswith("T-TOKS-")), len(old))
+    before = [t for t in old[:first] if not t["term_id"].startswith("T-TOKS-")]
+    after = [t for t in old[first:] if not t["term_id"].startswith("T-TOKS-")]
+    bundle["term_translations"] = before + new + after
     tail = "\n" if raw.endswith("\n") else ""
     BUNDLE.write_text(json.dumps(bundle, ensure_ascii=False, indent=2) + tail, encoding="utf-8")
     print(f"term_translations: {len(keep)} kept + {len(new)} T-TOKS-*")

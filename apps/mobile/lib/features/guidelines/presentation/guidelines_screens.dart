@@ -308,7 +308,9 @@ class _GuidelineDetailScreenState extends ConsumerState<GuidelineDetailScreen> {
                     FeBanner(
                       key: const Key('guideline.toksAttribution'),
                       icon: Icons.school_outlined,
-                      text: l.guidelineToksAttribution,
+                      text: refs.any((r) => r.key.startsWith('gmt_'))
+                          ? l.guidelineGmtAttribution
+                          : l.guidelineToksAttribution,
                     ),
                   ],
                   if (title.isFallback) ...[

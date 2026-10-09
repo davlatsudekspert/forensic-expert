@@ -206,7 +206,7 @@ class GuidelineReference {
 }
 
 /// Prof. Yuldashev Z.A. materiallari kalit prefikslari (`references.json`).
-const yuldashevReferencePrefixes = ['toks_', 'dvssm_'];
+const yuldashevReferencePrefixes = ['toks_', 'dvssm_', 'gmt_'];
 
 /// Kartaga biriktirilgan o‘z-o‘zini tekshirish savoli (o‘quv rejimi uchun).
 ///
@@ -220,6 +220,7 @@ class GuidelineQuizItem {
     required this.answer,
     required this.distractors,
     this.pages,
+    this.cite = const [],
   });
 
   static GuidelineQuizItem? fromJson(Object? j) {
@@ -255,6 +256,10 @@ class GuidelineQuizItem {
       answer: a,
       distractors: distractors,
       pages: pages.isEmpty ? null : pages,
+      cite: [
+        for (final k in (j['cite'] as List? ?? const []))
+          if ('$k'.trim().isNotEmpty) '$k'.trim(),
+      ],
     );
   }
 
@@ -265,6 +270,10 @@ class GuidelineQuizItem {
 
   /// Manbadagi sahifa(lar), masalan `25, 172`.
   final String? pages;
+
+  /// Savol aniq tayangan manba kalitlari (bo‘sh bo‘lsa — kartadagi
+  /// o‘quv-uslubiy material). [pages] o‘quv-uslubiy materialga tegishli.
+  final List<String> cite;
 }
 
 /// Yo‘riqnomalar bo‘limidagi fan guruhlari (egasi belgilagan tartibda).

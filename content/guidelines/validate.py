@@ -20,8 +20,12 @@ Checks (exit code 1 on any error):
   G015 cards citing a teaching_material reference are free (access == "free");
        access, if present, is "free" or "pro"
   G016 quiz items: unique id, q/a in uz/ru/en, exactly 3 distractors per language,
-       distractors differ from the answer, pages given
-  G017 term_ids (optional): unique strings, each an existing term_id in
+       distractors differ from the answer, pages given (or explicit `cite` keys
+       that the card cites; `pages` then belong to the teaching-material key)
+  G017 page-cited teaching books (PAGE_CITED): the key stands alone in its
+       brackets and is followed by a page locator in the body language,
+       e.g. "[key] (23-b.)", "[key] (с. 23–24)", "[key] (pp. 23, 27)"
+  G018 term_ids (optional): unique strings, each an existing term_id in
        content/pilot/bundle.json term_translations (glossary link)
 """
 import json
@@ -36,6 +40,14 @@ TRANSLATION_VALUES = {"AUTHORED", "DRAFT", "REVIEWED"}
 INLINE = re.compile(r"\[([a-z0-9_]+(?:,\s*[a-z0-9_]+)*)\]")
 
 errors: list[str] = []
+
+PAGE_CITED = {"gmt_yuldashev2024"}
+PAGES = r"\d+(?:[–-]\d+)?(?:, ?\d+(?:[–-]\d+)?)*"
+LOCATOR = {
+    "uz": re.compile(r"\s\(" + PAGES + r"-b\.\)"),
+    "ru": re.compile(r"\s\(с\. " + PAGES + r"\)"),
+    "en": re.compile(r"\s\(pp?\. " + PAGES + r"\)"),
+}
 
 
 def err(code: str, where: str, msg: str) -> None:
@@ -129,6 +141,16 @@ def main() -> int:
                             err("G004", f"{where}.{lang}", f"inline [{k}] not in references")
                         elif k not in cites:
                             err("G005", f"{where}.{lang}", f"inline [{k}] not in section citations")
+            for lang in LANGS:
+                body = s.get("body", {}).get(lang, "")
+                for m in INLINE.finditer(body):
+                    keys = [x.strip() for x in m.group(1).split(",")]
+                    if not PAGE_CITED.intersection(keys):
+                        continue
+                    if len(keys) != 1:
+                        err("G017", f"{where}.{lang}", f"{keys[0]} must be cited alone: [{m.group(1)}]")
+                    elif not LOCATOR[lang].match(body, m.end()):
+                        err("G017", f"{where}.{lang}", f"[{keys[0]}] without page locator: {body[m.end():m.end() + 16]!r}")
             uz_texts += [s["title"]["uz"], s["body"]["uz"]]
         for i, t in enumerate(uz_texts):
             check_uz(t, f"{cid}.uz[{i}]")
@@ -155,7 +177,13 @@ def main() -> int:
             quiz_ids.add(qid)
             tri(q.get("q"), "G016", f"{where}.q")
             tri(q.get("a"), "G016", f"{where}.a")
-            if not str(q.get("pages", "")).strip():
+            cite = q.get("cite")
+            if cite is not None:
+                if not cite or any(k not in card.get("reference_keys", []) for k in cite):
+                    err("G016", where, f"cite keys must be cited by the card: {cite!r}")
+                if teaching & set(cite) and not str(q.get("pages", "")).strip():
+                    err("G016", where, "pages missing for the teaching-material source")
+            elif not str(q.get("pages", "")).strip():
                 err("G016", where, "pages missing")
             for lang in LANGS:
                 ds = (q.get("d") or {}).get(lang) or []
@@ -167,18 +195,18 @@ def main() -> int:
             check_uz(" ".join([q.get("q", {}).get("uz", ""), q.get("a", {}).get("uz", ""),
                                *((q.get("d") or {}).get("uz") or [])]), f"{where}.uz")
 
-    # G017: karta → ilmiy lug‘at atamalari (aniq bog‘lanish)
+    # G018: karta → ilmiy lug‘at atamalari (aniq bog‘lanish)
     bundle = json.loads((ROOT / "content/pilot/bundle.json").read_text(encoding="utf-8"))
     term_ids = {t["term_id"] for t in bundle.get("term_translations", [])}
     for card in data.get("cards", []):
         cid = card.get("id", "?")
         tids = card.get("term_ids", [])
         if not isinstance(tids, list) or len(set(tids)) != len(tids):
-            err("G017", cid, "term_ids must be a list of unique ids")
+            err("G018", cid, "term_ids must be a list of unique ids")
             continue
         for t in tids:
             if t not in term_ids:
-                err("G017", cid, f"term {t!r} not in bundle term_translations")
+                err("G018", cid, f"term {t!r} not in bundle term_translations")
 
     blob = json.dumps(data, ensure_ascii=False)
     if re.search(r"\bABY\b", blob):
@@ -207,7 +235,7 @@ def main() -> int:
         for e in errors:
             print("  " + e)
         return 1
-    print("OK: all checks passed (G001-G017)")
+    print("OK: all checks passed (G001-G018)")
     return 0
 
 

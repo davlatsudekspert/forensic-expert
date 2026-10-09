@@ -1,0 +1,36 @@
+{
+  "role": "gmt-uz-professional",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "g01",
+      "title": "GMT expert 320: benzodiazepines card",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "g01_gmt_expert_320_benzodiazepines_card.png"
+    },
+    {
+      "id": "g02",
+      "title": "GMT expert: study hub",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "g03",
+      "title": "GMT expert 320: quiz answered",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "g03_gmt_expert_320_quiz_answered.png"
+    },
+    {
+      "id": "g04",
+      "title": "GMT expert: precursors card",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    }
+  ],
+  "pass": 4,
+  "fail": 0
+}

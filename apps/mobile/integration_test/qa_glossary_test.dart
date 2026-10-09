@@ -175,6 +175,7 @@ void main() {
       ('перегонка с водяным паром', steam),
       ('dithizone', 'T-TOKS-DITHIZONE'),
       ('suv bug‘i bilan haydash', steam),
+      ('реактив Марки', 'T-GMT-MARQUIS-REAGENT'),
     ]) {
       await qa.step('$tag search $q', shot: shots && q == 'dithizone', (
         s,
@@ -203,6 +204,21 @@ void main() {
       await qa.back();
       expectKey('search.hit.$steam', s);
     });
+
+    // ------------------------------------------- GMT kartasi atamalari
+    await qa.step('$tag 320 gmt opioids terms', shot: shots, (s) async {
+      await open(Routes.guideline('guideline.chem.gmt_opioids'));
+      expectKey('guideline.index.terms', s);
+      await qa.scrollUntil(
+        find.byKey(const Key('guideline.term.T-GMT-MARQUIS-REAGENT')),
+      );
+      expectKey('guideline.term.T-GMT-MARQUIS-REAGENT', s);
+      await tapKey('guideline.term.T-GMT-MARQUIS-REAGENT');
+      expectKey('glossary.sheet', s);
+      expectKey('glossary.badge.machineDraft', s);
+      expectKey('glossary.card.guideline.chem.gmt_phenylalkylamines', s);
+    });
+    await qa.back();
 
     // ------------------------------------------- 320 dp, katta matn
     tester.platformDispatcher.textScaleFactorTestValue = 2;

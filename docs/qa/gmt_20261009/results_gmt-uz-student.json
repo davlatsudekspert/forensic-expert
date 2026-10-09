@@ -1,0 +1,92 @@
+{
+  "role": "gmt-uz-student",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "g01",
+      "title": "GMT: guidelines list",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "g01_gmt_guidelines_list.png"
+    },
+    {
+      "id": "g02",
+      "title": "GMT: opioids card (attribution, free)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "g02_gmt_opioids_card_attribution_free.png"
+    },
+    {
+      "id": "g03",
+      "title": "GMT: cannabis card scrolled",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "g03_gmt_cannabis_card_scrolled.png"
+    },
+    {
+      "id": "g04",
+      "title": "GMT: legal note card",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "g04_gmt_legal_note_card.png"
+    },
+    {
+      "id": "g05",
+      "title": "GMT: quiz question",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "g05_gmt_quiz_question.png"
+    },
+    {
+      "id": "g06",
+      "title": "GMT: quiz answered + sources",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "g06_gmt_quiz_answered_sources.png"
+    },
+    {
+      "id": "g07",
+      "title": "GMT: open gmt_analysis_scheme",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "g08",
+      "title": "GMT: open gmt_cocaine",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "g09",
+      "title": "GMT: open gmt_phenylalkylamines",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "g10",
+      "title": "GMT: open gmt_barbiturates",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "g11",
+      "title": "GMT: open gmt_benzodiazepines",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "g12",
+      "title": "GMT: open gmt_precursors",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    }
+  ],
+  "pass": 12,
+  "fail": 0
+}

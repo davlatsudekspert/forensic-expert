@@ -7556,7 +7556,7 @@
   "@studyEntrySubtitle": {
     "description": "Learn screen entry."
   },
-  "studyIntro": "Every card and question is built from a record that already exists in the app, together with its source. Nothing new is written. Material that is still under expert review is labelled.",
+  "studyIntro": "Every card and question is built from a record or guideline that already exists in the app, together with its source. Guideline questions are written by the editors from the card’s facts. Material that is still under expert review is labelled.",
   "@studyIntro": {
     "description": "Hub banner."
   },
@@ -9064,6 +9064,110 @@
         "type": "String"
       }
     }
+  },
+  "reagentHazardBanner": "{count, plural, =1{1 hazard note — read before preparing} other{{count} hazard notes — read before preparing}}",
+  "@reagentHazardBanner": {
+    "description": "Reagent page: prominent banner above hazard cards (count of hazard notes).",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "reagentHazardGhs": "GHS hazard statements (PubChem)",
+  "@reagentHazardGhs": {
+    "description": "Hazard card label: GHS hazard statements taken from PubChem."
+  },
+  "reagentHazardGeneral": "General safety advice (app guidance)",
+  "@reagentHazardGeneral": {
+    "description": "Hazard card label: general safety advice written by the app (not a cited source)."
+  },
+  "reagentRecipeSource": "Source: {title}",
+  "@reagentRecipeSource": {
+    "description": "Reagent page: which source the preparation comes from.",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "reagentMachineDraft": "Translation is an automatic draft and has not been reviewed by a specialist. Numbers are copied from the source unchanged; check them against the original text below.",
+  "@reagentMachineDraft": {
+    "description": "Reagent page: Uzbek/English texts are automatic drafts, not yet reviewed."
+  },
+  "reagentVariant": "Method {label}",
+  "@reagentVariant": {
+    "description": "Reagent page: heading of an alternative preparation method.",
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "reagentMakeUpTo": "to {value}",
+  "@reagentMakeUpTo": {
+    "description": "Ingredient amount: make the volume up to this value («до 100 мл»).",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "reagentUnitG": "g",
+  "@reagentUnitG": {
+    "description": "Unit: grams."
+  },
+  "reagentUnitMl": "mL",
+  "@reagentUnitMl": {
+    "description": "Unit: millilitres."
+  },
+  "reagentUnitL": "L",
+  "@reagentUnitL": {
+    "description": "Unit: litres."
+  },
+  "reagentDropsAmount": "{count, plural, =1{{value} drop} other{{value} drops}}",
+  "@reagentDropsAmount": {
+    "description": "Ingredient amount in drops; value is the formatted number or range, count selects the plural form.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "reagentPurpose": "Purpose (from the source)",
+  "@reagentPurpose": {
+    "description": "Reagent page: purpose stated in the source."
+  },
+  "reagentNote": "Note from the source",
+  "@reagentNote": {
+    "description": "Reagent page: additional note from the source."
+  },
+  "reagentAmbiguity": "Check against the original",
+  "@reagentAmbiguity": {
+    "description": "Reagent page: card listing ambiguities / OCR errors found in the source text."
+  },
+  "reagentOriginalText": "Original text (Russian)",
+  "@reagentOriginalText": {
+    "description": "Reagent page: collapsible section with the original Russian source text."
+  },
+  "reagentOriginalHint": "Verbatim from the source, kept for traceability (OCR errors not corrected).",
+  "@reagentOriginalHint": {
+    "description": "Reagent page: hint under the original text heading."
+  },
+  "reusePermissionGranted": "RIGHTS HOLDER'S PERMISSION",
+  "@reusePermissionGranted": {
+    "description": "Reuse status chip: content-rights permission from the owner/author is on record (copyright only; NOT a legal permit for handling hazardous substances)."
+  },
+  "guidelineGmtAttribution": "Source: Yuldashev Z.A. et al., «Analysis of narcotic substances. Teaching manual» (Tashkent Pharmaceutical Institute, Tashkent, 2024) — used with the author’s permission, free for everyone.",
+  "@guidelineGmtAttribution": {
+    "description": "Guideline detail / study deck: attribution for cards built on the drug-analysis teaching manual (free for everyone)."
+  },
+  "studyDeckGmt": "Drug analysis (Yuldashev Z.A.)",
+  "@studyDeckGmt": {
+    "description": "Study deck title: questions on the drug-analysis teaching manual."
   },
   "glossaryTitle": "Scientific glossary",
   "@glossaryTitle": {

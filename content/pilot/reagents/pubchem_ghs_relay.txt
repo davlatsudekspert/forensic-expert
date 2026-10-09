@@ -1,0 +1,775 @@
+# PubChem PUG View «GHS Classification» — WebFetch relay orqali olingan yozuvlar.
+# Sabab: sessiya egress’i pubchem.ncbi.nlm.nih.gov ga to‘g‘ridan-to‘g‘ri
+# so‘rovlarni HTTP 429 bilan cheklagan (2026-10-09). Har blok:
+#   ### <CID> | <so‘rov nomi>
+#   <RecordTitle>
+#   REF <birinchi «GHS Hazard Statements» yozuvining ReferenceNumber’i>
+#   <o‘sha yozuvning satrlari, so‘zma-so‘z>
+#   SIGNAL <signal so‘zi>
+# URL: https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/<CID>/JSON?heading=GHS+Classification
+# CID: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/<nom>/cids/TXT (birinchi CID)
+# fetch_ghs.py --relay bu faylni to‘g‘ridan-to‘g‘ri olingan natija bilan bir xil
+# qoida (birinchi yozuv, ≥50 %) bo‘yicha qayta ishlaydi.
+
+### 107711 | bismuth nitrate
+Bismuth nitrate
+REF 9
+H272 (96.6%): May intensify fire; oxidizer [Danger Oxidizing liquids; Oxidizing solids]
+H318 (86.5%): Causes serious eye damage [Danger Serious eye damage/eye irritation]
+SIGNAL Danger
+
+### 73415757 | bismuth subnitrate
+Bismuth Subnitrate
+REF 14
+H272 (24.2%): May intensify fire; oxidizer [Danger Oxidizing liquids; Oxidizing solids]
+H315 (23.2%): Causes skin irritation [Warning Skin corrosion/irritation]
+H319 (23.2%): Causes serious eye irritation [Warning Serious eye damage/eye irritation]
+H335 (23.2%): May cause respiratory irritation [Warning Specific target organ toxicity, single exposure; Respiratory tract irritation]
+H372 (17.7%): Causes damage to organs through prolonged or repeated exposure [Danger Specific target organ toxicity, repeated exposure]
+SIGNAL Danger
+
+### 24408 | bromine
+Bromine
+REF 51
+H314: Causes severe skin burns and eye damage [Danger Skin corrosion/irritation]
+H330: Fatal if inhaled [Danger Acute toxicity, inhalation]
+H400: Very toxic to aquatic life [Warning Hazardous to the aquatic environment, acute hazard]
+SIGNAL Danger
+
+### 6450 | bromothymol blue
+Bromothymol Blue
+REF 12
+H302 (11.1%): Harmful if swallowed [Warning Acute toxicity, oral]
+H315 (11.1%): Causes skin irritation [Warning Skin corrosion/irritation]
+H319 (11.1%): Causes serious eye irritation [Warning Serious eye damage/eye irritation]
+SIGNAL Warning
+
+### 24635 | cadmium iodide
+Cadmium iodide
+REF 18
+H301: Toxic if swallowed [Danger Acute toxicity, oral]
+H331: Toxic if inhaled [Danger Acute toxicity, inhalation]
+H351: Suspected of causing cancer [Warning Carcinogenicity]
+H373 **: May causes damage to organs through prolonged or repeated exposure [Warning Specific target organ toxicity, repeated exposure]
+H400: Very toxic to aquatic life [Warning Hazardous to the aquatic environment, acute hazard]
+H410: Very toxic to aquatic life with long lasting effects [Warning Hazardous to the aquatic environment, long-term hazard]
+SIGNAL Danger
+
+### 24504 | calcium hypochlorite
+Calcium hypochlorite
+REF 41
+H272: May intensify fire; oxidizer [Danger Oxidizing liquids; Oxidizing solids]
+H302: Harmful if swallowed [Warning Acute toxicity, oral]
+H314: Causes severe skin burns and eye damage [Danger Skin corrosion/irritation]
+H400: Very toxic to aquatic life [Warning Hazardous to the aquatic environment, acute hazard]
+SIGNAL Danger
+
+### 14778 | calcium oxide
+Calcium Oxide
+REF 23
+H302 (18.2%): Harmful if swallowed [Warning Acute toxicity, oral]
+H314 (25.8%): Causes severe skin burns and eye damage [Danger Skin corrosion/irritation]
+H315 (63.8%): Causes skin irritation [Warning Skin corrosion/irritation]
+H318 (92.8%): Causes serious eye damage [Danger Serious eye damage/eye irritation]
+H335 (63%): May cause respiratory irritation [Warning Specific target organ toxicity, single exposure; Respiratory tract irritation]
+SIGNAL Danger
+
+### 5943 | carbon tetrachloride
+Carbon Tetrachloride
+REF 81
+H301: Toxic if swallowed [Danger Acute toxicity, oral]
+H311: Toxic in contact with skin [Danger Acute toxicity, dermal]
+H331: Toxic if inhaled [Danger Acute toxicity, inhalation]
+H351: Suspected of causing cancer [Warning Carcinogenicity]
+H372 **: Causes damage to organs through prolonged or repeated exposure [Danger Specific target organ toxicity, repeated exposure]
+H412: Harmful to aquatic life with long lasting effects [Hazardous to the aquatic environment, long-term hazard]
+H420: Harms public health and the environment by destroying ozone in the upper atmosphere [Warning Hazardous to the ozone layer]
+SIGNAL Danger
+
+### 24526 | chlorine
+Chlorine
+REF 66
+H270: May cause or intensify fire; oxidizer [Danger Oxidizing gases]
+H315: Causes skin irritation [Warning Skin corrosion/irritation]
+H319: Causes serious eye irritation [Warning Serious eye damage/eye irritation]
+H331: Toxic if inhaled [Danger Acute toxicity, inhalation]
+H335: May cause respiratory irritation [Warning Specific target organ toxicity, single exposure; Respiratory tract irritation]
+H400: Very toxic to aquatic life [Warning Hazardous to the aquatic environment, acute hazard]
+SIGNAL Danger
+
+### 6212 | chloroform
+Chloroform
+REF 106
+H302: Harmful if swallowed [Warning Acute toxicity, oral]
+H315: Causes skin irritation [Warning Skin corrosion/irritation]
+H319: Causes serious eye irritation [Warning Serious eye damage/eye irritation]
+H331: Toxic if inhaled [Danger Acute toxicity, inhalation]
+H351: Suspected of causing cancer [Warning Carcinogenicity]
+H361d: Suspected of damaging the unborn child [Warning Reproductive toxicity]
+H372: Causes damage to organs through prolonged or repeated exposure [Danger Specific target organ toxicity, repeated exposure]
+SIGNAL Danger
+
+### 25000 | cobalt(II) nitrate
+Cobalt dinitrate
+REF 29
+H317: May cause an allergic skin reaction [Warning Sensitization, Skin]
+H334: May cause allergy or asthma symptoms or breathing difficulties if inhaled [Danger Sensitization, respiratory]
+H341: Suspected of causing genetic defects [Warning Germ cell mutagenicity]
+H350i: May cause cancer by inhalation [Danger Carcinogenicity]
+H360F ***: May damage fertility [Danger Reproductive toxicity]
+H400: Very toxic to aquatic life [Warning Hazardous to the aquatic environment, acute hazard]
+H410: Very toxic to aquatic life with long lasting effects [Warning Hazardous to the aquatic environment, long-term hazard]
+SIGNAL Danger
+
+### 8895 | cupric acetate
+Cupric acetate
+REF 13
+H301 (19.8%): Toxic if swallowed [Danger Acute toxicity, oral]
+H302 (73.4%): Harmful if swallowed [Warning Acute toxicity, oral]
+H311 (19.8%): Toxic in contact with skin [Danger Acute toxicity, dermal]
+H314 (35.9%): Causes severe skin burns and eye damage [Danger Skin corrosion/irritation]
+H318 (37%): Causes serious eye damage [Danger Serious eye damage/eye irritation]
+H400 (44.3%): Very toxic to aquatic life [Warning Hazardous to the aquatic environment, acute hazard]
+H410 (22.1%): Very toxic to aquatic life with long lasting effects [Warning Hazardous to the aquatic environment, long-term hazard]
+H411 (31.2%): Toxic to aquatic life with long lasting effects [Hazardous to the aquatic environment, long-term hazard]
+H412 (19.8%): Harmful to aquatic life with long lasting effects [Hazardous to the aquatic environment, long-term hazard]
+SIGNAL Danger
+
+### 24014 | cupric chloride
+Cupric Chloride
+REF 29
+H290 (10.4%): May be corrosive to metals [Warning Corrosive to Metals]
+H302+H312 (26.9%): Harmful if swallowed or in contact with skin [Warning Acute toxicity, oral; acute toxicity, dermal]
+H302 (94.4%): Harmful if swallowed [Warning Acute toxicity, oral]
+H312 (84.7%): Harmful in contact with skin [Warning Acute toxicity, dermal]
+H315 (98%): Causes skin irritation [Warning Skin corrosion/irritation]
+H318 (85.6%): Causes serious eye damage [Danger Serious eye damage/eye irritation]
+H319 (12.4%): Causes serious eye irritation [Warning Serious eye damage/eye irritation]
+H400 (92%): Very toxic to aquatic life [Warning Hazardous to the aquatic environment, acute hazard]
+H410 (55.3%): Very toxic to aquatic life with long lasting effects [Warning Hazardous to the aquatic environment, long-term hazard]
+H411 (62.5%): Toxic to aquatic life with long lasting effects [Hazardous to the aquatic environment, long-term hazard]
+SIGNAL Danger
+
+### 18616 | cupric nitrate
+Cupric nitrate
+REF 15
+H270 (13.7%): May cause or intensify fire; oxidizer
+H272 (50.5%): May intensify fire; oxidizer
+H301 (34.5%): Toxic if swallowed
+H302 (33.3%): Harmful if swallowed
+H314 (52.3%): Causes severe skin burns and eye damage
+H315 (42.2%): Causes skin irritation
+H318 (36.1%): Causes serious eye damage
+H319 (39.3%): Causes serious eye irritation
+H400 (79.5%): Very toxic to aquatic life
+H410 (20.3%): Very toxic to aquatic life with long lasting effects
+H411 (31.8%): Toxic to aquatic life with long lasting effects
+SIGNAL Danger
+
+### 24462 | cupric sulfate
+Copper Sulfate
+REF 58
+H302: Harmful if swallowed
+H315: Causes skin irritation
+H319: Causes serious eye irritation
+H400: Very toxic to aquatic life
+H410: Very toxic to aquatic life with long lasting effects
+SIGNAL Warning
+
+### 702 | ethanol
+Ethanol
+REF 160
+H225: Highly Flammable liquid and vapor
+SIGNAL Danger
+
+### 7862 | ethylmercuric chloride
+Ethylmercury Chloride
+REF 10
+H300 (100%): Fatal if swallowed
+H310 (100%): Fatal in contact with skin
+H330 (100%): Fatal if inhaled
+H373 (100%): May causes damage to organs through prolonged or repeated exposure
+H400 (100%): Very toxic to aquatic life
+H410 (100%): Very toxic to aquatic life with long lasting effects
+SIGNAL Danger
+
+### 24380 | ferric chloride
+Iron chloride (FeCl3)
+REF 23
+H302 (96.6%): Harmful if swallowed
+H314 (75.4%): Causes severe skin burns and eye damage
+H315 (24.4%): Causes skin irritation
+H318 (24.5%): Causes serious eye damage
+H412 (72.4%): Harmful to aquatic life with long lasting effects
+SIGNAL Danger
+
+### 25251 | ferric nitrate
+Ferric nitrate
+REF 11
+H315 (92%): Causes skin irritation
+H319 (92.1%): Causes serious eye irritation
+SIGNAL Warning
+
+### 712 | formaldehyde
+Formaldehyde
+REF 154
+H302: Harmful if swallowed
+H314: Causes severe skin burns and eye damage
+H317: May cause an allergic skin reaction
+H330: Fatal if inhaled
+H341: Suspected of causing genetic defects
+H350: May cause cancer
+SIGNAL Danger
+
+### 313 | hydrochloric acid
+Hydrochloric Acid
+REF 101
+H314: Causes severe skin burns and eye damage
+H331: Toxic if inhaled
+SIGNAL Danger
+
+### 784 | hydrogen peroxide
+Hydrogen Peroxide
+REF 110
+H271: May cause fire or explosion; strong Oxidizer
+H302: Harmful if swallowed
+H314: Causes severe skin burns and eye damage
+H332: Harmful if inhaled
+SIGNAL Danger
+
+### 402 | hydrogen sulfide
+Hydrogen Sulfide
+REF 85
+H220: Extremely flammable gas
+H330: Fatal if inhaled
+H400: Very toxic to aquatic life
+SIGNAL Danger
+
+### 443297 | hydroxylamine hydrochloride
+Hydroxyamine hydrochloride
+REF 23
+H290: May be corrosive to metals
+H302: Harmful if swallowed
+H312: Harmful in contact with skin
+H315: Causes skin irritation
+H317: May cause an allergic skin reaction
+H319: Causes serious eye irritation
+H351: Suspected of causing cancer
+H373 **: May causes damage to organs through prolonged or repeated exposure
+H400: Very toxic to aquatic life
+SIGNAL Warning
+
+### 807 | iodine
+Iodine
+REF 83
+H312: Harmful in contact with skin
+H332: Harmful if inhaled
+H400: Very toxic to aquatic life
+SIGNAL Warning
+
+### 5284406 | lead subacetate
+Lead acetate (Pb3(AcO)2(OH)4)
+REF 21
+H351: Suspected of causing cancer
+H360Df: May damage the unborn child; Suspected of damaging fertility
+H373 **: May causes damage to organs through prolonged or repeated exposure
+H400: Very toxic to aquatic life
+H410: Very toxic to aquatic life with long lasting effects
+SIGNAL Danger
+
+### 9317 | lead(II) acetate
+Lead diacetate
+REF 39
+H360Df: May damage the unborn child; Suspected of damaging fertility
+H373 **: May causes damage to organs through prolonged or repeated exposure
+H400: Very toxic to aquatic life
+H410: Very toxic to aquatic life with long lasting effects
+SIGNAL Danger
+
+### 66320 | lithium sulfate
+Lithium sulfate
+REF 12
+H302 (98.2%): Harmful if swallowed
+H319 (61.9%): Causes serious eye irritation
+H412 (48%): Harmful to aquatic life with long lasting effects
+SIGNAL Warning
+
+### 24612 | mercuric bromide
+Mercury dibromide
+REF 13
+H300 (100%): Fatal if swallowed
+H310 (100%): Fatal in contact with skin
+H330 (100%): Fatal if inhaled
+H373 (100%): May causes damage to organs through prolonged or repeated exposure
+H400 (94.1%): Very toxic to aquatic life
+H410 (100%): Very toxic to aquatic life with long lasting effects
+SIGNAL Danger
+
+### 24085 | mercuric chloride
+Mercuric Chloride
+REF 44
+H300: Fatal if swallowed
+H314: Causes severe skin burns and eye damage
+H341: Suspected of causing genetic defects
+H361f ***: Suspected of damaging fertility
+H372 **: Causes damage to organs through prolonged or repeated exposure
+H400: Very toxic to aquatic life
+H410: Very toxic to aquatic life with long lasting effects
+SIGNAL Danger
+
+### 30856 | mercuric oxide
+Mercuric oxide
+REF 14
+H300 (100%): Fatal if swallowed
+H310 (98.7%): Fatal in contact with skin
+H330 (100%): Fatal if inhaled
+H373 (100%): May causes damage to organs through prolonged or repeated exposure
+H400 (98.7%): Very toxic to aquatic life
+H410 (100%): Very toxic to aquatic life with long lasting effects
+SIGNAL Danger
+
+### 25247 | mercurous nitrate
+Mercurous nitrate
+REF 10
+H300 (100%): Fatal if swallowed
+H310 (100%): Fatal in contact with skin
+H330 (100%): Fatal if inhaled
+H373 (100%): May causes damage to organs through prolonged or repeated exposure
+H400 (100%): Very toxic to aquatic life
+H410 (100%): Very toxic to aquatic life with long lasting effects
+SIGNAL Danger
+
+### 23931 | mercury
+Mercury
+REF 61
+H330: Fatal if inhaled
+H360D ***: May damage the unborn child
+H372 **: Causes damage to organs through prolonged or repeated exposure
+H400: Very toxic to aquatic life
+H410: Very toxic to aquatic life with long lasting effects
+SIGNAL Danger
+
+### 196986 | methyl violet
+Benzenamine, 4,4'-((4-(methylimino)-2,5-cyclohexadien-1-ylidene)methylene)bis(N,N-dimethyl-, hydrochloride (1:1)
+REF 7
+H302 (83.6%): Harmful if swallowed
+H318 (20.5%): Causes serious eye damage
+H400 (15.1%): Very toxic to aquatic life
+H410 (20.5%): Very toxic to aquatic life with long lasting effects
+SIGNAL Danger
+
+### 944 | nitric acid
+Nitric Acid
+REF 61
+H272: May intensify fire; oxidizer
+H314: Causes severe skin burns and eye damage
+H330: Fatal if inhaled
+SIGNAL Danger
+
+### 24247 | perchloric acid
+Perchloric Acid
+REF 35
+H271: May cause fire or explosion; strong Oxidizer
+H314: Causes severe skin burns and eye damage
+SIGNAL Danger
+
+### 1004 | phosphoric acid
+Phosphoric Acid
+REF 112
+H314: Causes severe skin burns and eye damage
+SIGNAL Danger
+
+### 24502 | potassium dichromate
+Potassium Dichromate
+REF 38
+H272: May intensify fire; oxidizer
+H301: Toxic if swallowed
+H312: Harmful in contact with skin
+H314: Causes severe skin burns and eye damage
+H317: May cause an allergic skin reaction
+H330: Fatal if inhaled
+H334: May cause allergy or asthma symptoms or breathing difficulties if inhaled
+H340: May cause genetic defects
+H350: May cause cancer
+H360FD: May damage fertility; May damage the unborn child
+H372 **: Causes damage to organs through prolonged or repeated exposure
+H400: Very toxic to aquatic life
+H410: Very toxic to aquatic life with long lasting effects
+SIGNAL Danger
+
+### 25524 | potassium hexahydroxoantimonate
+Potassium hexahydroxoantimonate
+REF 4
+H302 (100%): Harmful if swallowed
+H332 (100%): Harmful if inhaled
+H411 (98.4%): Toxic to aquatic life with long lasting effects
+SIGNAL Warning
+
+### 14797 | potassium hydroxide
+Potassium Hydroxide
+REF 61
+H302: Harmful if swallowed
+H314: Causes severe skin burns and eye damage
+SIGNAL Danger
+
+### 4875 | potassium iodide
+Potassium Iodide
+REF 31
+H302 (16.2%): Harmful if swallowed
+H315 (28.4%): Causes skin irritation
+H317 (20.8%): May cause an allergic skin reaction
+H319 (30.1%): Causes serious eye irritation
+H334 (11.7%): May cause allergy or asthma symptoms or breathing difficulties if inhaled
+H372 (43.6%): Causes damage to organs through prolonged or repeated exposure
+H373 (11.4%): May causes damage to organs through prolonged or repeated exposure
+H411 (14%): Toxic to aquatic life with long lasting effects
+SIGNAL Danger
+
+### 24434 | potassium nitrate
+Potassium Nitrate
+REF 27
+H272 (93.9%): May intensify fire; oxidizer
+H315 (59.4%): Causes skin irritation
+H319 (59.5%): Causes serious eye irritation
+H335 (59.3%): May cause respiratory irritation
+SIGNAL Danger
+
+### 516872 | potassium thiocyanate
+Potassium thiocyanate
+REF 15
+H302+H312+H332 (45.4%): Harmful if swallowed, in contact with skin or if inhaled
+H302 (100%): Harmful if swallowed
+H312 (99.6%): Harmful in contact with skin
+H318 (29.2%): Causes serious eye damage
+H319 (28.2%): Causes serious eye irritation
+H332 (99.6%): Harmful if inhaled
+H400 (13.4%): Very toxic to aquatic life
+H412 (81%): Harmful to aquatic life with long lasting effects
+SIGNAL Danger
+
+### 1049 | pyridine
+Pyridine
+REF 131
+H225: Highly Flammable liquid and vapor
+H302: Harmful if swallowed
+H312: Harmful in contact with skin
+H332: Harmful if inhaled
+SIGNAL Danger
+
+### 24470 | silver nitrate
+Silver Nitrate
+REF 53
+H272: May intensify fire; oxidizer
+H314: Causes severe skin burns and eye damage
+H400: Very toxic to aquatic life
+H410: Very toxic to aquatic life with long lasting effects
+SIGNAL Danger
+
+### 253881 | sodium bromide
+Sodium Bromide
+REF 21
+H319 (11%): Causes serious eye irritation
+H336 (10.7%): May cause drowsiness or dizziness
+H360 (53.2%): May damage fertility or the unborn child
+H361 (10.7%): Suspected of damaging fertility or the unborn child
+SIGNAL Danger
+
+### 10340 | sodium carbonate
+Sodium Carbonate
+REF 57
+H319: Causes serious eye irritation
+SIGNAL Warning
+
+### 533728 | sodium diethyldithiocarbamate
+Sodium Diethyldithiocarbamate
+REF 17
+H302 (71.2%): Harmful if swallowed
+H315 (16.7%): Causes skin irritation
+H319 (13.6%): Causes serious eye irritation
+H335 (10.6%): May cause respiratory irritation
+H400 (43.9%): Very toxic to aquatic life
+SIGNAL Warning
+
+### 14798 | sodium hydroxide
+Sodium Hydroxide
+REF 77
+H314: Causes severe skin burns and eye damage
+SIGNAL Danger
+
+### 61424 | sodium molybdate
+Sodium Molybdate
+REF 17
+H315 (33.1%): Causes skin irritation
+H319 (33.2%): Causes serious eye irritation
+H332 (33.2%): Harmful if inhaled
+H335 (33.1%): May cause respiratory irritation
+SIGNAL Warning
+
+### 23668193 | sodium nitrite
+Sodium Nitrite
+REF 59
+H272: May intensify fire; oxidizer
+H301: Toxic if swallowed
+H400: Very toxic to aquatic life
+SIGNAL Danger
+PICTO Oxidizer, Acute Toxic, Environmental Hazard
+PCODES P210, P220, P264, P270, P273, P280, P301+P316, P321, P330, P370+P378, P391, P405, P501
+
+### 24437 | sodium sulfite
+Sodium Sulfite
+REF 19
+H302 (18.3%): Harmful if swallowed
+H314 (51.8%): Causes severe skin burns and eye damage
+H315 (19.3%): Causes skin irritation
+H319 (21%): Causes serious eye irritation
+SIGNAL Danger
+PICTO Corrosive, Irritant
+PCODES P260, P264, P264+P265, P270, P280, P301+P317, P301+P330+P331, P302+P352, P302+P361+P354, P304+P340, P305+P351+P338, P305+P354+P338, P316, P321, P330, P332+P317, P337+P317, P362+P364, P363, P405, P501
+
+### 26052 | sodium tungstate
+Sodium tungstate
+REF 14
+H302 (100%): Harmful if swallowed
+SIGNAL Warning
+PICTO Irritant
+PCODES P264, P270, P301+P317, P330, P501
+
+### 24479 | stannous chloride
+Stannous Chloride
+REF 17
+H290 (36.2%): May be corrosive to metals
+H302+H332 (24.5%): Harmful if swallowed or if inhaled
+H302 (78.8%): Harmful if swallowed
+H312 (16.3%): Harmful in contact with skin
+H314 (94.4%): Causes severe skin burns and eye damage
+H317 (37.9%): May cause an allergic skin reaction
+H318 (47.7%): Causes serious eye damage
+H319 (30.9%): Causes serious eye irritation
+H332 (49.4%): Harmful if inhaled
+H335 (52.5%): May cause respiratory irritation
+H373 (48.1%): May causes damage to organs through prolonged or repeated exposure
+H400 (32.2%): Very toxic to aquatic life
+H410 (34.9%): Very toxic to aquatic life with long lasting effects
+H412 (19.5%): Harmful to aquatic life with long lasting effects
+SIGNAL Danger
+PICTO Corrosive, Irritant, Health Hazard, Environmental Hazard
+PCODES P234, P260, P261, P264, P264+P265, P270, P271, P272, P273, P280, P301+P317, P301+P330+P331, P302+P352, P302+P361+P354, P304+P340, P305+P351+P338, P305+P354+P338, P316, P317, P319, P321, P330, P333+P317, P337+P317, P362+P364, P363, P390, P391, P403+P233, P405, P406, P501
+
+### 8479 | sulfanilic acid
+Sulfanilic acid
+REF 92
+H315: Causes skin irritation
+H317: May cause an allergic skin reaction
+H319: Causes serious eye irritation
+SIGNAL Warning
+PICTO Irritant
+PCODES P261, P264, P264+P265, P272, P280, P302+P352, P305+P351+P338, P321, P332+P317, P333+P317, P337+P317, P362+P364, P501
+
+### 1119 | sulfur dioxide
+Sulfur Dioxide
+REF 63
+H314: Causes severe skin burns and eye damage
+H331: Toxic if inhaled
+H370: Causes damage to organs
+SIGNAL Danger
+PICTO Compressed Gas, Corrosive, Acute Toxic, Health Hazard
+PCODES P260, P261, P264, P270, P271, P280, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P308+P316, P316, P321, P363, P403+P233, P405, P501
+
+### 1118 | sulfuric acid
+Sulfuric Acid
+REF 94
+H314: Causes severe skin burns and eye damage
+SIGNAL Danger
+PICTO Corrosive
+PCODES P260, P264, P280, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P316, P321, P363, P405, P501
+
+### 21226249 | uranyl acetate
+Uranyl acetate
+REF 6
+H300+H330 (92.7%): Fatal if swallowed or if inhaled
+H300 (97.6%): Fatal if swallowed
+H330 (97.6%): Fatal if inhaled
+H373 (97.6%): May causes damage to organs through prolonged or repeated exposure
+H411 (97.6%): Toxic to aquatic life with long lasting effects
+SIGNAL Danger
+PICTO Acute Toxic, Health Hazard, Environmental Hazard
+PCODES P260, P264, P270, P271, P273, P284, P301+P316, P304+P340, P316, P319, P320, P321, P330, P391, P403+P233, P405, P501
+
+### 11192 | zinc acetate
+Zinc Acetate
+REF 26
+H302 (39.7%): Harmful if swallowed
+H318 (20.6%): Causes serious eye damage
+H319 (11.4%): Causes serious eye irritation
+H400 (32.9%): Very toxic to aquatic life
+H410 (16.4%): Very toxic to aquatic life with long lasting effects
+H411 (23.2%): Toxic to aquatic life with long lasting effects
+SIGNAL Danger
+PICTO Corrosive, Irritant, Environmental Hazard
+PCODES P264, P264+P265, P270, P273, P280, P301+P317, P305+P351+P338, P305+P354+P338, P317, P330, P337+P317, P391, P501
+
+### 5727 | zinc chloride
+Zinc Chloride
+REF 54
+H302: Harmful if swallowed
+H314: Causes severe skin burns and eye damage
+H400: Very toxic to aquatic life
+H410: Very toxic to aquatic life with long lasting effects
+SIGNAL Danger
+PICTO Corrosive, Irritant, Environmental Hazard
+PCODES P260, P264, P270, P273, P280, P301+P317, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P316, P321, P330, P363, P391, P405, P501
+
+### 485454 | ammonium molybdate
+Ammonium molybdate anhydrous
+REF 10
+Not Classified
+SIGNAL none
+
+### 8272 | bromophenol blue
+# PUG View GHS Classification: HTTP 404 (bo‘lim yo‘q)
+
+### 657262 | dithizone
+# PUG View GHS Classification: HTTP 404 (bo‘lim yo‘q)
+
+# --- Qo‘shimcha: piktogramma va P-kodlar (shu REF uchun) ---
+### 107711 | +
+PICTO Oxidizer, Corrosive
+PCODES P210, P220, P264+P265, P280, P305+P354+P338, P317, P370+P378, P501
+### 24408 | +
+PICTO Corrosive, Acute Toxic, Environmental Hazard
+PCODES P260, P264, P271, P273, P280, P284, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P316, P320, P321, P363, P391, P403+P233, P405, P501
+### 24635 | +
+PICTO Acute Toxic, Health Hazard, Environmental Hazard
+PCODES P203, P260, P261, P264, P270, P271, P273, P280, P301+P316, P304+P340, P316, P318, P319, P321, P330, P391, P403+P233, P405, P501
+### 24504 | +
+PICTO Oxidizer, Corrosive, Irritant, Environmental Hazard
+PCODES P210, P220, P260, P264, P270, P273, P280, P301+P317, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P316, P321, P330, P363, P370+P378, P391, P405, P501
+### 14778 | +
+PICTO Corrosive, Irritant
+PCODES P260, P261, P264, P264+P265, P270, P271, P280, P301+P317, P301+P330+P331, P302+P352, P302+P361+P354, P304+P340, P305+P354+P338, P316, P317, P319, P321, P330, P332+P317, P362+P364, P363, P403+P233, P405, P501
+### 5943 | +
+PICTO Acute Toxic, Health Hazard
+PCODES P203, P260, P261, P262, P264, P270, P271, P273, P280, P301+P316, P302+P352, P304+P340, P316, P318, P319, P321, P330, P361+P364, P403+P233, P405, P501, P502
+### 24526 | +
+PICTO Oxidizer, Compressed Gas, Acute Toxic, Environmental Hazard
+PCODES P220, P244, P261, P264, P264+P265, P271, P273, P280, P302+P352, P304+P340, P305+P351+P338, P316, P319, P321, P332+P317, P337+P317, P362+P364, P370+P376, P391, P403, P403+P233, P405, P501
+### 6212 | +
+PICTO Acute Toxic, Health Hazard
+PCODES P203, P260, P261, P264, P264+P265, P270, P271, P280, P301+P317, P302+P352, P304+P340, P305+P351+P338, P316, P318, P319, P321, P330, P332+P317, P337+P317, P362+P364, P403+P233, P405, P501
+### 25000 | +
+PICTO Health Hazard, Environmental Hazard
+PCODES P203, P233, P260, P261, P271, P272, P273, P280, P284, P302+P352, P304+P340, P318, P321, P333+P317, P342+P316, P362+P364, P391, P403, P405, P501
+### 8895 | +
+PICTO Corrosive, Acute Toxic, Irritant, Environmental Hazard
+PCODES P260, P262, P264, P264+P265, P270, P273, P280, P301+P316, P301+P317, P301+P330+P331, P302+P352, P302+P361+P354, P304+P340, P305+P354+P338, P316, P317, P321, P330, P361+P364, P363, P391, P405, P501
+### 24014 | +
+PICTO Corrosive, Irritant, Environmental Hazard
+PCODES P234, P264, P264+P265, P270, P273, P280, P301+P317, P302+P352, P305+P351+P338, P305+P354+P338, P317, P321, P330, P332+P317, P337+P317, P362+P364, P390, P391, P406, P501
+### 18616 | +
+PICTO Oxidizer, Corrosive, Acute Toxic, Irritant, Environmental Hazard
+PCODES P210, P220, P244, P260, P264, P264+P265, P270, P273, P280, P301+P316, P301+P317, P301+P330+P331, P302+P352, P302+P361+P354, P304+P340, P305+P351+P338, P305+P354+P338, P316, P317, P321, P330, P332+P317, P337+P317, P362+P364, P363, P370+P376, P370+P378, P391, P403, P405, P501
+### 24462 | +
+PICTO Irritant, Environmental Hazard
+PCODES P264, P264+P265, P270, P273, P280, P301+P317, P302+P352, P305+P351+P338, P321, P330, P332+P317, P337+P317, P362+P364, P391, P501
+### 702 | +
+PICTO Flammable
+PCODES P210, P233, P240, P241, P242, P243, P280, P303+P361+P353, P370+P378, P403+P235, P501
+### 7862 | +
+PICTO Acute Toxic, Health Hazard, Environmental Hazard
+PCODES P260, P262, P264, P270, P271, P273, P280, P284, P301+P316, P302+P352, P304+P340, P316, P319, P320, P321, P330, P361+P364, P391, P403+P233, P405, P501
+### 24380 | +
+PICTO Corrosive, Irritant
+PCODES P260, P264, P264+P265, P270, P273, P280, P301+P317, P301+P330+P331, P302+P352, P302+P361+P354, P304+P340, P305+P354+P338, P316, P317, P321, P330, P332+P317, P362+P364, P363, P405, P501
+### 25251 | +
+PICTO Irritant
+PCODES P264, P264+P265, P280, P302+P352, P305+P351+P338, P321, P332+P317, P337+P317, P362+P364
+### 712 | +
+PICTO Corrosive, Acute Toxic, Health Hazard
+PCODES P203, P260, P261, P264, P270, P271, P272, P280, P284, P301+P317, P301+P330+P331, P302+P352, P302+P361+P354, P304+P340, P305+P354+P338, P316, P318, P320, P321, P330, P333+P317, P362+P364, P363, P403+P233, P405, P501
+### 313 | +
+PICTO Compressed Gas, Corrosive, Acute Toxic
+PCODES P260, P261, P264, P271, P280, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P316, P321, P363, P403+P233, P405, P501
+### 784 | +
+PICTO Oxidizer, Corrosive, Irritant
+PCODES P210, P220, P260, P261, P264, P270, P271, P280, P283, P301+P317, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P306+P360, P316, P317, P321, P330, P363, P370+P378, P371+P380+P375, P405, P420, P501
+### 402 | +
+PICTO Flammable, Acute Toxic, Environmental Hazard
+PCODES P203, P210, P222, P260, P271, P273, P280, P284, P304+P340, P316, P320, P377, P381, P391, P403, P403+P233, P405, P501
+### 443297 | +
+PICTO Corrosive, Irritant, Health Hazard, Environmental Hazard
+PCODES P203, P234, P260, P261, P264, P264+P265, P270, P272, P273, P280, P301+P317, P302+P352, P305+P351+P338, P317, P318, P319, P321, P330, P332+P317, P333+P317, P337+P317, P362+P364, P390, P391, P405, P406, P501
+### 807 | +
+PICTO Irritant, Environmental Hazard
+PCODES P261, P271, P273, P280, P302+P352, P304+P340, P317, P321, P362+P364, P391, P501
+### 5284406 | +
+PICTO Health Hazard, Environmental Hazard
+PCODES P203, P260, P273, P280, P318, P319, P391, P405, P501
+### 9317 | +
+PICTO Health Hazard, Environmental Hazard
+PCODES P203, P260, P273, P280, P318, P319, P391, P405, P501
+### 66320 | +
+PICTO Irritant
+PCODES P264, P264+P265, P270, P273, P280, P301+P317, P305+P351+P338, P330, P337+P317, P501
+### 24612 | +
+PICTO Acute Toxic, Health Hazard, Environmental Hazard
+PCODES P260, P262, P264, P270, P271, P273, P280, P284, P301+P316, P302+P352, P304+P340, P316, P319, P320, P321, P330, P361+P364, P391, P403+P233, P405, P501
+### 24085 | +
+PICTO Corrosive, Acute Toxic, Health Hazard, Environmental Hazard
+PCODES P203, P260, P264, P270, P273, P280, P301+P316, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P316, P318, P319, P321, P330, P363, P391, P405, P501
+### 30856 | +
+PICTO Acute Toxic, Health Hazard, Environmental Hazard
+PCODES P260, P262, P264, P270, P271, P273, P280, P284, P301+P316, P302+P352, P304+P340, P316, P319, P320, P321, P330, P361+P364, P391, P403+P233, P405, P501
+### 25247 | +
+PICTO Acute Toxic, Health Hazard, Environmental Hazard
+PCODES P260, P262, P264, P270, P271, P273, P280, P284, P301+P316, P302+P352, P304+P340, P316, P319, P320, P321, P330, P361+P364, P391, P403+P233, P405, P501
+### 23931 | +
+PICTO Acute Toxic, Health Hazard, Environmental Hazard
+PCODES P203, P260, P264, P270, P271, P273, P280, P284, P304+P340, P316, P318, P319, P320, P391, P403+P233, P405, P501
+### 196986 | +
+PICTO Corrosive, Irritant, Environmental Hazard
+PCODES P264, P264+P265, P270, P273, P280, P301+P317, P305+P354+P338, P317, P330, P391, P501
+### 944 | +
+PICTO Oxidizer, Corrosive, Acute Toxic
+PCODES P210, P220, P260, P264, P271, P280, P284, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P316, P320, P321, P363, P370+P378, P403+P233, P405, P501
+### 24247 | +
+PICTO Oxidizer, Corrosive
+PCODES P210, P220, P260, P264, P280, P283, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P306+P360, P316, P321, P363, P370+P378, P371+P380+P375, P405, P420, P501
+### 1004 | +
+PICTO Corrosive
+PCODES P260, P264, P280, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P316, P321, P363, P405, P501
+### 24502 | +
+PICTO Oxidizer, Corrosive, Acute Toxic, Health Hazard, Environmental Hazard
+PCODES P203, P210, P220, P233, P260, P261, P264, P270, P271, P272, P273, P280, P284, P301+P316, P301+P330+P331, P302+P352, P302+P361+P354, P304+P340, P305+P354+P338, P316, P317, P318, P319, P320, P321, P330, P333+P317, P342+P316, P362+P364, P363, P370+P378, P391, P403, P403+P233, P405, P501
+### 25524 | +
+PICTO Irritant, Environmental Hazard
+PCODES P261, P264, P270, P271, P273, P301+P317, P304+P340, P317, P330, P391, P501
+### 14797 | +
+PICTO Corrosive, Irritant
+PCODES P260, P264, P270, P280, P301+P317, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P316, P321, P330, P363, P405, P501
+### 4875 | +
+PICTO Irritant, Health Hazard, Environmental Hazard
+PCODES P233, P260, P261, P264, P264+P265, P270, P271, P272, P273, P280, P284, P301+P317, P302+P352, P304+P340, P305+P351+P338, P319, P321, P330, P332+P317, P333+P317, P337+P317, P342+P316, P362+P364, P391, P403, P501
+### 24434 | +
+PICTO Oxidizer, Irritant
+PCODES P210, P220, P261, P264, P264+P265, P271, P280, P302+P352, P304+P340, P305+P351+P338, P319, P321, P332+P317, P337+P317, P362+P364, P370+P378, P403+P233, P405, P501
+### 516872 | +
+PICTO Corrosive, Irritant, Environmental Hazard
+PCODES P261, P264, P264+P265, P270, P271, P273, P280, P301+P317, P302+P352, P304+P340, P305+P351+P338, P305+P354+P338, P317, P321, P330, P337+P317, P362+P364, P391, P501
+### 1049 | +
+PICTO Flammable, Irritant
+PCODES P210, P233, P240, P241, P242, P243, P261, P264, P270, P271, P280, P301+P317, P302+P352, P303+P361+P353, P304+P340, P317, P321, P330, P362+P364, P370+P378, P403+P235, P501
+### 24470 | +
+PICTO Oxidizer, Corrosive, Environmental Hazard
+PCODES P210, P220, P260, P264, P273, P280, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P316, P321, P363, P370+P378, P391, P405, P501
+### 253881 | +
+PICTO Irritant, Health Hazard
+PCODES P203, P261, P264+P265, P271, P280, P304+P340, P305+P351+P338, P318, P319, P337+P317, P403+P233, P405, P501
+### 10340 | +
+PICTO Irritant
+PCODES P264+P265, P280, P305+P351+P338, P337+P317
+### 533728 | +
+PICTO Irritant, Environmental Hazard
+PCODES P261, P264, P264+P265, P270, P271, P273, P280, P301+P317, P302+P352, P304+P340, P305+P351+P338, P319, P321, P330, P332+P317, P337+P317, P362+P364, P391, P403+P233, P405, P501
+### 14798 | +
+PICTO Corrosive
+PCODES P260, P264, P280, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P316, P321, P363, P405, P501

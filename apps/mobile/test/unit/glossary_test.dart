@@ -43,14 +43,27 @@ void main() {
     'guideline.chem.toks_pesticides',
   ];
 
+  const gmtCards = [
+    'guideline.chem.gmt_analysis_scheme',
+    'guideline.chem.gmt_opioids',
+    'guideline.chem.gmt_cocaine',
+    'guideline.chem.gmt_cannabis',
+    'guideline.chem.gmt_phenylalkylamines',
+    'guideline.chem.gmt_barbiturates',
+    'guideline.chem.gmt_benzodiazepines',
+    'guideline.chem.gmt_precursors',
+    'guideline.chem.gmt_uz_control_lists',
+  ];
+
   group('yuklash', () {
-    test('paketdagi barcha atamalar (38 ta T-TOKS) lug‘atda', () {
+    test('paketdagi barcha atamalar (38 T-TOKS, 48 T-GMT) lug‘atda', () {
       expect(glossary.terms.length, pilot.provenance.terms.length);
       expect(glossary.terms.length, greaterThanOrEqualTo(58));
       expect(
         glossary.terms.where((t) => t.id.startsWith('T-TOKS-')).length,
         38,
       );
+      expect(glossary.terms.where((t) => t.id.startsWith('T-GMT-')).length, 48);
     });
 
     test('mashina tarjimasi hech qachon tasdiqlangan deb ko‘rsatilmaydi', () {
@@ -78,6 +91,16 @@ void main() {
         containsAll([
           'guideline.chem.toks_isolation',
           'guideline.chem.toks_volatile_poisons',
+        ]),
+      );
+      for (final id in gmtCards) {
+        expect(glossary.termsOfCard(id), isNotEmpty, reason: id);
+      }
+      expect(
+        glossary.byId('T-GMT-MARQUIS-REAGENT')!.cardIds,
+        containsAll([
+          'guideline.chem.gmt_opioids',
+          'guideline.chem.gmt_phenylalkylamines',
         ]),
       );
       // Umumiy atama — kartaga bog‘lanmagan (taxmin yo‘q).
@@ -143,6 +166,8 @@ void main() {
       ('дитизон', 'en', 'T-TOKS-DITHIZONE'),
       ('Marsh test', 'ru', 'T-TOKS-MARSH-TEST'),
       ('murda dog‘lari', 'uz', 'T-LIVOR-MORTIS'),
+      ('реактив Марки', 'uz', 'T-GMT-MARQUIS-REAGENT'),
+      ('hashish', 'ru', 'T-GMT-HASHISH-CANNABIS-RESIN'),
     ]) {
       test('«$q» ($lang) → $id', () async {
         final r = await search.search(q, lang: lang);

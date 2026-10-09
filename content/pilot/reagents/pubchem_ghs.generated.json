@@ -1,0 +1,3378 @@
+{
+ "fetched_at": "2026-10-09",
+ "method": "PubChem PUG REST name->CID; PUG View 'GHS Classification'; first 'GHS Hazard Statements' record, statements reported in >=50 % of notifications; signal word, pictograms and P-codes of the same record",
+ "compounds": {
+  "1-naphthol": {
+   "cid": 7005,
+   "retrieved_via": "direct",
+   "title": "1-Naphthol",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H302",
+     "text": "Harmful if swallowed"
+    },
+    {
+     "code": "H312",
+     "text": "Harmful in contact with skin"
+    },
+    {
+     "code": "H315",
+     "text": "Causes skin irritation"
+    },
+    {
+     "code": "H318",
+     "text": "Causes serious eye damage"
+    },
+    {
+     "code": "H335",
+     "text": "May cause respiratory irritation"
+    }
+   ],
+   "pictograms": [
+    "Corrosive",
+    "Irritant"
+   ],
+   "p_codes": [
+    "P261",
+    "P264",
+    "P264+P265",
+    "P270",
+    "P271",
+    "P280",
+    "P301+P317",
+    "P302+P352",
+    "P304+P340",
+    "P305+P354+P338",
+    "P317",
+    "P319",
+    "P321",
+    "P330",
+    "P332+P317",
+    "P362+P364",
+    "P403+P233",
+    "P405",
+    "P501 (click each P-code to see the statement)"
+   ],
+   "reference_number": 104
+  },
+  "1-naphthylamine": {
+   "cid": 8640,
+   "retrieved_via": "direct",
+   "title": "1-Naphthylamine",
+   "signal": "Warning",
+   "statements": [
+    {
+     "code": "H302",
+     "text": "Harmful if swallowed"
+    },
+    {
+     "code": "H411",
+     "text": "Toxic to aquatic life with long lasting effects"
+    }
+   ],
+   "pictograms": [
+    "Irritant",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P264",
+    "P270",
+    "P273",
+    "P301+P317",
+    "P330",
+    "P391",
+    "P501 (click each P-code to see the statement)"
+   ],
+   "reference_number": 84
+  },
+  "2-naphthol": {
+   "cid": 8663,
+   "retrieved_via": "direct",
+   "title": "2-Naphthol",
+   "signal": "Warning",
+   "statements": [
+    {
+     "code": "H302",
+     "text": "Harmful if swallowed"
+    },
+    {
+     "code": "H332",
+     "text": "Harmful if inhaled"
+    },
+    {
+     "code": "H400",
+     "text": "Very toxic to aquatic life"
+    }
+   ],
+   "pictograms": [
+    "Irritant",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P261",
+    "P264",
+    "P270",
+    "P271",
+    "P273",
+    "P301+P317",
+    "P304+P340",
+    "P317",
+    "P330",
+    "P391",
+    "P501 (click each P-code to see the statement)"
+   ],
+   "reference_number": 118
+  },
+  "acetic acid": {
+   "cid": 176,
+   "retrieved_via": "direct",
+   "title": "Acetic Acid",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H226",
+     "text": "Flammable liquid and vapor"
+    },
+    {
+     "code": "H314",
+     "text": "Causes severe skin burns and eye damage"
+    }
+   ],
+   "pictograms": [
+    "Flammable",
+    "Corrosive"
+   ],
+   "p_codes": [
+    "P210",
+    "P233",
+    "P240",
+    "P241",
+    "P242",
+    "P243",
+    "P260",
+    "P264",
+    "P280",
+    "P301+P330+P331",
+    "P302+P361+P354",
+    "P303+P361+P353",
+    "P304+P340",
+    "P305+P354+P338",
+    "P316",
+    "P321",
+    "P363",
+    "P370+P378",
+    "P403+P235",
+    "P405",
+    "P501 (click each P-code to see the statement)"
+   ],
+   "reference_number": 146
+  },
+  "acetone": {
+   "cid": 180,
+   "retrieved_via": "direct",
+   "title": "Acetone",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H225",
+     "text": "Highly Flammable liquid and vapor"
+    },
+    {
+     "code": "H319",
+     "text": "Causes serious eye irritation"
+    },
+    {
+     "code": "H336",
+     "text": "May cause drowsiness or dizziness"
+    }
+   ],
+   "pictograms": [
+    "Flammable",
+    "Irritant"
+   ],
+   "p_codes": [
+    "P210",
+    "P233",
+    "P240",
+    "P241",
+    "P242",
+    "P243",
+    "P261",
+    "P264+P265",
+    "P271",
+    "P280",
+    "P303+P361+P353",
+    "P304+P340",
+    "P305+P351+P338",
+    "P319",
+    "P337+P317",
+    "P370+P378",
+    "P403+P233",
+    "P403+P235",
+    "P405",
+    "P501 (click each P-code to see the statement)"
+   ],
+   "reference_number": 175
+  },
+  "ammonium chloride": {
+   "cid": 25517,
+   "retrieved_via": "direct",
+   "title": "Ammonium Chloride",
+   "signal": "Warning",
+   "statements": [
+    {
+     "code": "H302",
+     "text": "Harmful if swallowed"
+    },
+    {
+     "code": "H319",
+     "text": "Causes serious eye irritation"
+    }
+   ],
+   "pictograms": [
+    "Irritant"
+   ],
+   "p_codes": [
+    "P264",
+    "P264+P265",
+    "P270",
+    "P280",
+    "P301+P317",
+    "P305+P351+P338",
+    "P330",
+    "P337+P317",
+    "P501 (click each P-code to see the statement)"
+   ],
+   "reference_number": 71
+  },
+  "ammonium hydroxide": {
+   "cid": 14923,
+   "retrieved_via": "direct",
+   "title": "Ammonium Hydroxide",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H314",
+     "text": "Causes severe skin burns and eye damage"
+    },
+    {
+     "code": "H400",
+     "text": "Very toxic to aquatic life"
+    }
+   ],
+   "pictograms": [
+    "Corrosive",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P260",
+    "P264",
+    "P273",
+    "P280",
+    "P301+P330+P331",
+    "P302+P361+P354",
+    "P304+P340",
+    "P305+P354+P338",
+    "P316",
+    "P321",
+    "P363",
+    "P391",
+    "P405",
+    "P501 (click each P-code to see the statement)"
+   ],
+   "reference_number": 43
+  },
+  "ammonium metavanadate": {
+   "cid": 516859,
+   "retrieved_via": "direct",
+   "title": "Ammonium metavanadate",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H301",
+     "text": "Toxic if swallowed",
+     "percent": 94.9
+    },
+    {
+     "code": "H315",
+     "text": "Causes skin irritation",
+     "percent": 73.2
+    },
+    {
+     "code": "H319",
+     "text": "Causes serious eye irritation",
+     "percent": 95.3
+    },
+    {
+     "code": "H330",
+     "text": "Fatal if inhaled",
+     "percent": 70.4
+    },
+    {
+     "code": "H335",
+     "text": "May cause respiratory irritation",
+     "percent": 73.8
+    },
+    {
+     "code": "H341",
+     "text": "Suspected of causing genetic defects",
+     "percent": 51.6
+    }
+   ],
+   "pictograms": [
+    "Acute Toxic",
+    "Irritant",
+    "Health Hazard",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P203",
+    "P260",
+    "P261",
+    "P264",
+    "P264+P265",
+    "P270",
+    "P271",
+    "P273",
+    "P280",
+    "P284",
+    "P301+P316",
+    "P302+P352",
+    "P304+P340",
+    "P305+P351+P338",
+    "P316",
+    "P317",
+    "P318",
+    "P319",
+    "P320",
+    "P321",
+    "P330",
+    "P332+P317",
+    "P337+P317",
+    "P362+P364",
+    "P391",
+    "P403+P233",
+    "P405",
+    "P501 (click each P-code to see the statement)"
+   ],
+   "reference_number": 14
+  },
+  "ammonium thiocyanate": {
+   "cid": 15666,
+   "retrieved_via": "direct",
+   "title": "Ammonium thiocyanate",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H302",
+     "text": "Harmful if swallowed",
+     "percent": 99.7
+    },
+    {
+     "code": "H312",
+     "text": "Harmful in contact with skin",
+     "percent": 98.8
+    },
+    {
+     "code": "H332",
+     "text": "Harmful if inhaled",
+     "percent": 99.1
+    },
+    {
+     "code": "H412",
+     "text": "Harmful to aquatic life with long lasting effects",
+     "percent": 88.2
+    }
+   ],
+   "pictograms": [
+    "Corrosive",
+    "Irritant"
+   ],
+   "p_codes": [
+    "P261",
+    "P264",
+    "P264+P265",
+    "P270",
+    "P271",
+    "P273",
+    "P280",
+    "P301+P317",
+    "P302+P352",
+    "P304+P340",
+    "P305+P354+P338",
+    "P317",
+    "P321",
+    "P330",
+    "P362+P364",
+    "P501 (click each P-code to see the statement)"
+   ],
+   "reference_number": 18
+  },
+  "barbituric acid": {
+   "cid": 6211,
+   "retrieved_via": "direct",
+   "title": "Barbituric Acid",
+   "signal": "Warning",
+   "statements": [
+    {
+     "code": "H315",
+     "text": "Causes skin irritation",
+     "percent": 63.1
+    },
+    {
+     "code": "H319",
+     "text": "Causes serious eye irritation",
+     "percent": 63.7
+    },
+    {
+     "code": "H335",
+     "text": "May cause respiratory irritation",
+     "percent": 61.9
+    }
+   ],
+   "pictograms": [
+    "Irritant"
+   ],
+   "p_codes": [
+    "P261",
+    "P264",
+    "P264+P265",
+    "P271",
+    "P280",
+    "P302+P352",
+    "P304+P340",
+    "P305+P351+P338",
+    "P319",
+    "P321",
+    "P332+P317",
+    "P337+P317",
+    "P362+P364",
+    "P403+P233",
+    "P405",
+    "P501 (click each P-code to see the statement)"
+   ],
+   "reference_number": 21
+  },
+  "barium hydroxide": {
+   "cid": 6093286,
+   "retrieved_via": "direct",
+   "title": "Barium hydroxide",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H302",
+     "text": "Harmful if swallowed",
+     "percent": 80.1
+    },
+    {
+     "code": "H314",
+     "text": "Causes severe skin burns and eye damage",
+     "percent": 76.9
+    },
+    {
+     "code": "H318",
+     "text": "Causes serious eye damage",
+     "percent": 60.3
+    },
+    {
+     "code": "H332",
+     "text": "Harmful if inhaled",
+     "percent": 62.8
+    }
+   ],
+   "pictograms": [
+    "Corrosive",
+    "Acute Toxic",
+    "Irritant"
+   ],
+   "p_codes": [
+    "P234",
+    "P260",
+    "P261",
+    "P264",
+    "P264+P265",
+    "P270",
+    "P271",
+    "P273",
+    "P280",
+    "P301+P316",
+    "P301+P317",
+    "P301+P330+P331",
+    "P302+P361+P354",
+    "P304+P340",
+    "P305+P354+P338",
+    "P316",
+    "P317",
+    "P321",
+    "P330",
+    "P363",
+    "P390",
+    "P405",
+    "P406",
+    "P501 (click each P-code to see the statement)"
+   ],
+   "reference_number": 9
+  },
+  "barium oxide": {
+   "cid": 62392,
+   "retrieved_via": "direct",
+   "title": "Barium oxide",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H314",
+     "text": "Causes severe skin burns and eye damage",
+     "percent": 51.3
+    },
+    {
+     "code": "H332",
+     "text": "Harmful if inhaled",
+     "percent": 76.9
+    }
+   ],
+   "pictograms": [
+    "Oxidizer",
+    "Corrosive",
+    "Acute Toxic",
+    "Irritant"
+   ],
+   "p_codes": [
+    "P210",
+    "P220",
+    "P260",
+    "P261",
+    "P264",
+    "P264+P265",
+    "P270",
+    "P271",
+    "P280",
+    "P283",
+    "P301+P316",
+    "P301+P317",
+    "P301+P330+P331",
+    "P302+P352",
+    "P302+P361+P354",
+    "P304+P340",
+    "P305+P351+P338",
+    "P305+P354+P338",
+    "P306+P360",
+    "P316",
+    "P317",
+    "P321",
+    "P330",
+    "P332+P317",
+    "P337+P317",
+    "P362+P364",
+    "P363",
+    "P370+P378",
+    "P371+P380+P375",
+    "P405",
+    "P420",
+    "P501 (click each P-code to see the statement)"
+   ],
+   "reference_number": 12
+  },
+  "benzidine": {
+   "cid": 7111,
+   "retrieved_via": "direct",
+   "title": "Benzidine",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H302",
+     "text": "Harmful if swallowed"
+    },
+    {
+     "code": "H350",
+     "text": "May cause cancer"
+    },
+    {
+     "code": "H400",
+     "text": "Very toxic to aquatic life"
+    },
+    {
+     "code": "H410",
+     "text": "Very toxic to aquatic life with long lasting effects"
+    }
+   ],
+   "pictograms": [
+    "Irritant",
+    "Health Hazard",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P203",
+    "P264",
+    "P270",
+    "P273",
+    "P280",
+    "P301+P317",
+    "P318",
+    "P330",
+    "P391",
+    "P405",
+    "P501 (click each P-code to see the statement)"
+   ],
+   "reference_number": 87
+  },
+  "bismuth nitrate": {
+   "cid": 107711,
+   "retrieved_via": "relay",
+   "title": "Bismuth nitrate",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H272",
+     "text": "May intensify fire; oxidizer",
+     "percent": 96.6
+    },
+    {
+     "code": "H318",
+     "text": "Causes serious eye damage",
+     "percent": 86.5
+    }
+   ],
+   "pictograms": [
+    "Oxidizer",
+    "Corrosive"
+   ],
+   "p_codes": [
+    "P210",
+    "P220",
+    "P264+P265",
+    "P280",
+    "P305+P354+P338",
+    "P317",
+    "P370+P378",
+    "P501"
+   ],
+   "reference_number": 9
+  },
+  "bromine": {
+   "cid": 24408,
+   "retrieved_via": "relay",
+   "title": "Bromine",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H314",
+     "text": "Causes severe skin burns and eye damage"
+    },
+    {
+     "code": "H330",
+     "text": "Fatal if inhaled"
+    },
+    {
+     "code": "H400",
+     "text": "Very toxic to aquatic life"
+    }
+   ],
+   "pictograms": [
+    "Corrosive",
+    "Acute Toxic",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P260",
+    "P264",
+    "P271",
+    "P273",
+    "P280",
+    "P284",
+    "P301+P330+P331",
+    "P302+P361+P354",
+    "P304+P340",
+    "P305+P354+P338",
+    "P316",
+    "P320",
+    "P321",
+    "P363",
+    "P391",
+    "P403+P233",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 51
+  },
+  "cadmium iodide": {
+   "cid": 24635,
+   "retrieved_via": "relay",
+   "title": "Cadmium iodide",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H301",
+     "text": "Toxic if swallowed"
+    },
+    {
+     "code": "H331",
+     "text": "Toxic if inhaled"
+    },
+    {
+     "code": "H351",
+     "text": "Suspected of causing cancer"
+    },
+    {
+     "code": "H373",
+     "text": "May causes damage to organs through prolonged or repeated exposure"
+    },
+    {
+     "code": "H400",
+     "text": "Very toxic to aquatic life"
+    },
+    {
+     "code": "H410",
+     "text": "Very toxic to aquatic life with long lasting effects"
+    }
+   ],
+   "pictograms": [
+    "Acute Toxic",
+    "Health Hazard",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P203",
+    "P260",
+    "P261",
+    "P264",
+    "P270",
+    "P271",
+    "P273",
+    "P280",
+    "P301+P316",
+    "P304+P340",
+    "P316",
+    "P318",
+    "P319",
+    "P321",
+    "P330",
+    "P391",
+    "P403+P233",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 18
+  },
+  "calcium hypochlorite": {
+   "cid": 24504,
+   "retrieved_via": "relay",
+   "title": "Calcium hypochlorite",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H272",
+     "text": "May intensify fire; oxidizer"
+    },
+    {
+     "code": "H302",
+     "text": "Harmful if swallowed"
+    },
+    {
+     "code": "H314",
+     "text": "Causes severe skin burns and eye damage"
+    },
+    {
+     "code": "H400",
+     "text": "Very toxic to aquatic life"
+    }
+   ],
+   "pictograms": [
+    "Oxidizer",
+    "Corrosive",
+    "Irritant",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P210",
+    "P220",
+    "P260",
+    "P264",
+    "P270",
+    "P273",
+    "P280",
+    "P301+P317",
+    "P301+P330+P331",
+    "P302+P361+P354",
+    "P304+P340",
+    "P305+P354+P338",
+    "P316",
+    "P321",
+    "P330",
+    "P363",
+    "P370+P378",
+    "P391",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 41
+  },
+  "calcium oxide": {
+   "cid": 14778,
+   "retrieved_via": "relay",
+   "title": "Calcium Oxide",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H315",
+     "text": "Causes skin irritation",
+     "percent": 63.8
+    },
+    {
+     "code": "H318",
+     "text": "Causes serious eye damage",
+     "percent": 92.8
+    },
+    {
+     "code": "H335",
+     "text": "May cause respiratory irritation",
+     "percent": 63.0
+    }
+   ],
+   "pictograms": [
+    "Corrosive",
+    "Irritant"
+   ],
+   "p_codes": [
+    "P260",
+    "P261",
+    "P264",
+    "P264+P265",
+    "P270",
+    "P271",
+    "P280",
+    "P301+P317",
+    "P301+P330+P331",
+    "P302+P352",
+    "P302+P361+P354",
+    "P304+P340",
+    "P305+P354+P338",
+    "P316",
+    "P317",
+    "P319",
+    "P321",
+    "P330",
+    "P332+P317",
+    "P362+P364",
+    "P363",
+    "P403+P233",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 23
+  },
+  "carbon tetrachloride": {
+   "cid": 5943,
+   "retrieved_via": "relay",
+   "title": "Carbon Tetrachloride",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H301",
+     "text": "Toxic if swallowed"
+    },
+    {
+     "code": "H311",
+     "text": "Toxic in contact with skin"
+    },
+    {
+     "code": "H331",
+     "text": "Toxic if inhaled"
+    },
+    {
+     "code": "H351",
+     "text": "Suspected of causing cancer"
+    },
+    {
+     "code": "H372",
+     "text": "Causes damage to organs through prolonged or repeated exposure"
+    },
+    {
+     "code": "H412",
+     "text": "Harmful to aquatic life with long lasting effects"
+    },
+    {
+     "code": "H420",
+     "text": "Harms public health and the environment by destroying ozone in the upper atmosphere"
+    }
+   ],
+   "pictograms": [
+    "Acute Toxic",
+    "Health Hazard"
+   ],
+   "p_codes": [
+    "P203",
+    "P260",
+    "P261",
+    "P262",
+    "P264",
+    "P270",
+    "P271",
+    "P273",
+    "P280",
+    "P301+P316",
+    "P302+P352",
+    "P304+P340",
+    "P316",
+    "P318",
+    "P319",
+    "P321",
+    "P330",
+    "P361+P364",
+    "P403+P233",
+    "P405",
+    "P501",
+    "P502"
+   ],
+   "reference_number": 81
+  },
+  "chlorine": {
+   "cid": 24526,
+   "retrieved_via": "relay",
+   "title": "Chlorine",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H270",
+     "text": "May cause or intensify fire; oxidizer"
+    },
+    {
+     "code": "H315",
+     "text": "Causes skin irritation"
+    },
+    {
+     "code": "H319",
+     "text": "Causes serious eye irritation"
+    },
+    {
+     "code": "H331",
+     "text": "Toxic if inhaled"
+    },
+    {
+     "code": "H335",
+     "text": "May cause respiratory irritation"
+    },
+    {
+     "code": "H400",
+     "text": "Very toxic to aquatic life"
+    }
+   ],
+   "pictograms": [
+    "Oxidizer",
+    "Compressed Gas",
+    "Acute Toxic",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P220",
+    "P244",
+    "P261",
+    "P264",
+    "P264+P265",
+    "P271",
+    "P273",
+    "P280",
+    "P302+P352",
+    "P304+P340",
+    "P305+P351+P338",
+    "P316",
+    "P319",
+    "P321",
+    "P332+P317",
+    "P337+P317",
+    "P362+P364",
+    "P370+P376",
+    "P391",
+    "P403",
+    "P403+P233",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 66
+  },
+  "chloroform": {
+   "cid": 6212,
+   "retrieved_via": "relay",
+   "title": "Chloroform",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H302",
+     "text": "Harmful if swallowed"
+    },
+    {
+     "code": "H315",
+     "text": "Causes skin irritation"
+    },
+    {
+     "code": "H319",
+     "text": "Causes serious eye irritation"
+    },
+    {
+     "code": "H331",
+     "text": "Toxic if inhaled"
+    },
+    {
+     "code": "H351",
+     "text": "Suspected of causing cancer"
+    },
+    {
+     "code": "H361d",
+     "text": "Suspected of damaging the unborn child"
+    },
+    {
+     "code": "H372",
+     "text": "Causes damage to organs through prolonged or repeated exposure"
+    }
+   ],
+   "pictograms": [
+    "Acute Toxic",
+    "Health Hazard"
+   ],
+   "p_codes": [
+    "P203",
+    "P260",
+    "P261",
+    "P264",
+    "P264+P265",
+    "P270",
+    "P271",
+    "P280",
+    "P301+P317",
+    "P302+P352",
+    "P304+P340",
+    "P305+P351+P338",
+    "P316",
+    "P318",
+    "P319",
+    "P321",
+    "P330",
+    "P332+P317",
+    "P337+P317",
+    "P362+P364",
+    "P403+P233",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 106
+  },
+  "cobalt(II) nitrate": {
+   "cid": 25000,
+   "retrieved_via": "relay",
+   "title": "Cobalt dinitrate",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H317",
+     "text": "May cause an allergic skin reaction"
+    },
+    {
+     "code": "H334",
+     "text": "May cause allergy or asthma symptoms or breathing difficulties if inhaled"
+    },
+    {
+     "code": "H341",
+     "text": "Suspected of causing genetic defects"
+    },
+    {
+     "code": "H350i",
+     "text": "May cause cancer by inhalation"
+    },
+    {
+     "code": "H360F",
+     "text": "May damage fertility"
+    },
+    {
+     "code": "H400",
+     "text": "Very toxic to aquatic life"
+    },
+    {
+     "code": "H410",
+     "text": "Very toxic to aquatic life with long lasting effects"
+    }
+   ],
+   "pictograms": [
+    "Health Hazard",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P203",
+    "P233",
+    "P260",
+    "P261",
+    "P271",
+    "P272",
+    "P273",
+    "P280",
+    "P284",
+    "P302+P352",
+    "P304+P340",
+    "P318",
+    "P321",
+    "P333+P317",
+    "P342+P316",
+    "P362+P364",
+    "P391",
+    "P403",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 29
+  },
+  "cupric acetate": {
+   "cid": 8895,
+   "retrieved_via": "relay",
+   "title": "Cupric acetate",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H302",
+     "text": "Harmful if swallowed",
+     "percent": 73.4
+    }
+   ],
+   "pictograms": [],
+   "p_codes": [],
+   "reference_number": 13
+  },
+  "cupric chloride": {
+   "cid": 24014,
+   "retrieved_via": "relay",
+   "title": "Cupric Chloride",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H302",
+     "text": "Harmful if swallowed",
+     "percent": 94.4
+    },
+    {
+     "code": "H312",
+     "text": "Harmful in contact with skin",
+     "percent": 84.7
+    },
+    {
+     "code": "H315",
+     "text": "Causes skin irritation",
+     "percent": 98.0
+    },
+    {
+     "code": "H318",
+     "text": "Causes serious eye damage",
+     "percent": 85.6
+    },
+    {
+     "code": "H400",
+     "text": "Very toxic to aquatic life",
+     "percent": 92.0
+    },
+    {
+     "code": "H410",
+     "text": "Very toxic to aquatic life with long lasting effects",
+     "percent": 55.3
+    },
+    {
+     "code": "H411",
+     "text": "Toxic to aquatic life with long lasting effects",
+     "percent": 62.5
+    }
+   ],
+   "pictograms": [
+    "Corrosive",
+    "Irritant",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P234",
+    "P264",
+    "P264+P265",
+    "P270",
+    "P273",
+    "P280",
+    "P301+P317",
+    "P302+P352",
+    "P305+P351+P338",
+    "P305+P354+P338",
+    "P317",
+    "P321",
+    "P330",
+    "P332+P317",
+    "P337+P317",
+    "P362+P364",
+    "P390",
+    "P391",
+    "P406",
+    "P501"
+   ],
+   "reference_number": 29
+  },
+  "cupric nitrate": {
+   "cid": 18616,
+   "retrieved_via": "relay",
+   "title": "Cupric nitrate",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H272",
+     "text": "May intensify fire; oxidizer",
+     "percent": 50.5
+    },
+    {
+     "code": "H314",
+     "text": "Causes severe skin burns and eye damage",
+     "percent": 52.3
+    },
+    {
+     "code": "H400",
+     "text": "Very toxic to aquatic life",
+     "percent": 79.5
+    }
+   ],
+   "pictograms": [
+    "Oxidizer",
+    "Corrosive",
+    "Acute Toxic",
+    "Irritant",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P210",
+    "P220",
+    "P244",
+    "P260",
+    "P264",
+    "P264+P265",
+    "P270",
+    "P273",
+    "P280",
+    "P301+P316",
+    "P301+P317",
+    "P301+P330+P331",
+    "P302+P352",
+    "P302+P361+P354",
+    "P304+P340",
+    "P305+P351+P338",
+    "P305+P354+P338",
+    "P316",
+    "P317",
+    "P321",
+    "P330",
+    "P332+P317",
+    "P337+P317",
+    "P362+P364",
+    "P363",
+    "P370+P376",
+    "P370+P378",
+    "P391",
+    "P403",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 15
+  },
+  "cupric sulfate": {
+   "cid": 24462,
+   "retrieved_via": "relay",
+   "title": "Copper Sulfate",
+   "signal": "Warning",
+   "statements": [
+    {
+     "code": "H302",
+     "text": "Harmful if swallowed"
+    },
+    {
+     "code": "H315",
+     "text": "Causes skin irritation"
+    },
+    {
+     "code": "H319",
+     "text": "Causes serious eye irritation"
+    },
+    {
+     "code": "H400",
+     "text": "Very toxic to aquatic life"
+    },
+    {
+     "code": "H410",
+     "text": "Very toxic to aquatic life with long lasting effects"
+    }
+   ],
+   "pictograms": [
+    "Irritant",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P264",
+    "P264+P265",
+    "P270",
+    "P273",
+    "P280",
+    "P301+P317",
+    "P302+P352",
+    "P305+P351+P338",
+    "P321",
+    "P330",
+    "P332+P317",
+    "P337+P317",
+    "P362+P364",
+    "P391",
+    "P501"
+   ],
+   "reference_number": 58
+  },
+  "ethanol": {
+   "cid": 702,
+   "retrieved_via": "relay",
+   "title": "Ethanol",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H225",
+     "text": "Highly Flammable liquid and vapor"
+    }
+   ],
+   "pictograms": [
+    "Flammable"
+   ],
+   "p_codes": [
+    "P210",
+    "P233",
+    "P240",
+    "P241",
+    "P242",
+    "P243",
+    "P280",
+    "P303+P361+P353",
+    "P370+P378",
+    "P403+P235",
+    "P501"
+   ],
+   "reference_number": 160
+  },
+  "ethylmercuric chloride": {
+   "cid": 7862,
+   "retrieved_via": "relay",
+   "title": "Ethylmercury Chloride",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H300",
+     "text": "Fatal if swallowed",
+     "percent": 100.0
+    },
+    {
+     "code": "H310",
+     "text": "Fatal in contact with skin",
+     "percent": 100.0
+    },
+    {
+     "code": "H330",
+     "text": "Fatal if inhaled",
+     "percent": 100.0
+    },
+    {
+     "code": "H373",
+     "text": "May causes damage to organs through prolonged or repeated exposure",
+     "percent": 100.0
+    },
+    {
+     "code": "H400",
+     "text": "Very toxic to aquatic life",
+     "percent": 100.0
+    },
+    {
+     "code": "H410",
+     "text": "Very toxic to aquatic life with long lasting effects",
+     "percent": 100.0
+    }
+   ],
+   "pictograms": [
+    "Acute Toxic",
+    "Health Hazard",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P260",
+    "P262",
+    "P264",
+    "P270",
+    "P271",
+    "P273",
+    "P280",
+    "P284",
+    "P301+P316",
+    "P302+P352",
+    "P304+P340",
+    "P316",
+    "P319",
+    "P320",
+    "P321",
+    "P330",
+    "P361+P364",
+    "P391",
+    "P403+P233",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 10
+  },
+  "ferric chloride": {
+   "cid": 24380,
+   "retrieved_via": "relay",
+   "title": "Iron chloride (FeCl3)",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H302",
+     "text": "Harmful if swallowed",
+     "percent": 96.6
+    },
+    {
+     "code": "H314",
+     "text": "Causes severe skin burns and eye damage",
+     "percent": 75.4
+    },
+    {
+     "code": "H412",
+     "text": "Harmful to aquatic life with long lasting effects",
+     "percent": 72.4
+    }
+   ],
+   "pictograms": [
+    "Corrosive",
+    "Irritant"
+   ],
+   "p_codes": [
+    "P260",
+    "P264",
+    "P264+P265",
+    "P270",
+    "P273",
+    "P280",
+    "P301+P317",
+    "P301+P330+P331",
+    "P302+P352",
+    "P302+P361+P354",
+    "P304+P340",
+    "P305+P354+P338",
+    "P316",
+    "P317",
+    "P321",
+    "P330",
+    "P332+P317",
+    "P362+P364",
+    "P363",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 23
+  },
+  "ferric nitrate": {
+   "cid": 25251,
+   "retrieved_via": "relay",
+   "title": "Ferric nitrate",
+   "signal": "Warning",
+   "statements": [
+    {
+     "code": "H315",
+     "text": "Causes skin irritation",
+     "percent": 92.0
+    },
+    {
+     "code": "H319",
+     "text": "Causes serious eye irritation",
+     "percent": 92.1
+    }
+   ],
+   "pictograms": [
+    "Irritant"
+   ],
+   "p_codes": [
+    "P264",
+    "P264+P265",
+    "P280",
+    "P302+P352",
+    "P305+P351+P338",
+    "P321",
+    "P332+P317",
+    "P337+P317",
+    "P362+P364"
+   ],
+   "reference_number": 11
+  },
+  "formaldehyde": {
+   "cid": 712,
+   "retrieved_via": "relay",
+   "title": "Formaldehyde",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H302",
+     "text": "Harmful if swallowed"
+    },
+    {
+     "code": "H314",
+     "text": "Causes severe skin burns and eye damage"
+    },
+    {
+     "code": "H317",
+     "text": "May cause an allergic skin reaction"
+    },
+    {
+     "code": "H330",
+     "text": "Fatal if inhaled"
+    },
+    {
+     "code": "H341",
+     "text": "Suspected of causing genetic defects"
+    },
+    {
+     "code": "H350",
+     "text": "May cause cancer"
+    }
+   ],
+   "pictograms": [
+    "Corrosive",
+    "Acute Toxic",
+    "Health Hazard"
+   ],
+   "p_codes": [
+    "P203",
+    "P260",
+    "P261",
+    "P264",
+    "P270",
+    "P271",
+    "P272",
+    "P280",
+    "P284",
+    "P301+P317",
+    "P301+P330+P331",
+    "P302+P352",
+    "P302+P361+P354",
+    "P304+P340",
+    "P305+P354+P338",
+    "P316",
+    "P318",
+    "P320",
+    "P321",
+    "P330",
+    "P333+P317",
+    "P362+P364",
+    "P363",
+    "P403+P233",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 154
+  },
+  "hydrochloric acid": {
+   "cid": 313,
+   "retrieved_via": "relay",
+   "title": "Hydrochloric Acid",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H314",
+     "text": "Causes severe skin burns and eye damage"
+    },
+    {
+     "code": "H331",
+     "text": "Toxic if inhaled"
+    }
+   ],
+   "pictograms": [
+    "Compressed Gas",
+    "Corrosive",
+    "Acute Toxic"
+   ],
+   "p_codes": [
+    "P260",
+    "P261",
+    "P264",
+    "P271",
+    "P280",
+    "P301+P330+P331",
+    "P302+P361+P354",
+    "P304+P340",
+    "P305+P354+P338",
+    "P316",
+    "P321",
+    "P363",
+    "P403+P233",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 101
+  },
+  "hydrogen peroxide": {
+   "cid": 784,
+   "retrieved_via": "relay",
+   "title": "Hydrogen Peroxide",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H271",
+     "text": "May cause fire or explosion; strong Oxidizer"
+    },
+    {
+     "code": "H302",
+     "text": "Harmful if swallowed"
+    },
+    {
+     "code": "H314",
+     "text": "Causes severe skin burns and eye damage"
+    },
+    {
+     "code": "H332",
+     "text": "Harmful if inhaled"
+    }
+   ],
+   "pictograms": [
+    "Oxidizer",
+    "Corrosive",
+    "Irritant"
+   ],
+   "p_codes": [
+    "P210",
+    "P220",
+    "P260",
+    "P261",
+    "P264",
+    "P270",
+    "P271",
+    "P280",
+    "P283",
+    "P301+P317",
+    "P301+P330+P331",
+    "P302+P361+P354",
+    "P304+P340",
+    "P305+P354+P338",
+    "P306+P360",
+    "P316",
+    "P317",
+    "P321",
+    "P330",
+    "P363",
+    "P370+P378",
+    "P371+P380+P375",
+    "P405",
+    "P420",
+    "P501"
+   ],
+   "reference_number": 110
+  },
+  "hydrogen sulfide": {
+   "cid": 402,
+   "retrieved_via": "relay",
+   "title": "Hydrogen Sulfide",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H220",
+     "text": "Extremely flammable gas"
+    },
+    {
+     "code": "H330",
+     "text": "Fatal if inhaled"
+    },
+    {
+     "code": "H400",
+     "text": "Very toxic to aquatic life"
+    }
+   ],
+   "pictograms": [
+    "Flammable",
+    "Acute Toxic",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P203",
+    "P210",
+    "P222",
+    "P260",
+    "P271",
+    "P273",
+    "P280",
+    "P284",
+    "P304+P340",
+    "P316",
+    "P320",
+    "P377",
+    "P381",
+    "P391",
+    "P403",
+    "P403+P233",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 85
+  },
+  "hydroxylamine hydrochloride": {
+   "cid": 443297,
+   "retrieved_via": "relay",
+   "title": "Hydroxyamine hydrochloride",
+   "signal": "Warning",
+   "statements": [
+    {
+     "code": "H290",
+     "text": "May be corrosive to metals"
+    },
+    {
+     "code": "H302",
+     "text": "Harmful if swallowed"
+    },
+    {
+     "code": "H312",
+     "text": "Harmful in contact with skin"
+    },
+    {
+     "code": "H315",
+     "text": "Causes skin irritation"
+    },
+    {
+     "code": "H317",
+     "text": "May cause an allergic skin reaction"
+    },
+    {
+     "code": "H319",
+     "text": "Causes serious eye irritation"
+    },
+    {
+     "code": "H351",
+     "text": "Suspected of causing cancer"
+    },
+    {
+     "code": "H373",
+     "text": "May causes damage to organs through prolonged or repeated exposure"
+    },
+    {
+     "code": "H400",
+     "text": "Very toxic to aquatic life"
+    }
+   ],
+   "pictograms": [
+    "Corrosive",
+    "Irritant",
+    "Health Hazard",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P203",
+    "P234",
+    "P260",
+    "P261",
+    "P264",
+    "P264+P265",
+    "P270",
+    "P272",
+    "P273",
+    "P280",
+    "P301+P317",
+    "P302+P352",
+    "P305+P351+P338",
+    "P317",
+    "P318",
+    "P319",
+    "P321",
+    "P330",
+    "P332+P317",
+    "P333+P317",
+    "P337+P317",
+    "P362+P364",
+    "P390",
+    "P391",
+    "P405",
+    "P406",
+    "P501"
+   ],
+   "reference_number": 23
+  },
+  "iodine": {
+   "cid": 807,
+   "retrieved_via": "relay",
+   "title": "Iodine",
+   "signal": "Warning",
+   "statements": [
+    {
+     "code": "H312",
+     "text": "Harmful in contact with skin"
+    },
+    {
+     "code": "H332",
+     "text": "Harmful if inhaled"
+    },
+    {
+     "code": "H400",
+     "text": "Very toxic to aquatic life"
+    }
+   ],
+   "pictograms": [
+    "Irritant",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P261",
+    "P271",
+    "P273",
+    "P280",
+    "P302+P352",
+    "P304+P340",
+    "P317",
+    "P321",
+    "P362+P364",
+    "P391",
+    "P501"
+   ],
+   "reference_number": 83
+  },
+  "lead subacetate": {
+   "cid": 5284406,
+   "retrieved_via": "relay",
+   "title": "Lead acetate (Pb3(AcO)2(OH)4)",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H351",
+     "text": "Suspected of causing cancer"
+    },
+    {
+     "code": "H360Df",
+     "text": "May damage the unborn child; Suspected of damaging fertility"
+    },
+    {
+     "code": "H373",
+     "text": "May causes damage to organs through prolonged or repeated exposure"
+    },
+    {
+     "code": "H400",
+     "text": "Very toxic to aquatic life"
+    },
+    {
+     "code": "H410",
+     "text": "Very toxic to aquatic life with long lasting effects"
+    }
+   ],
+   "pictograms": [
+    "Health Hazard",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P203",
+    "P260",
+    "P273",
+    "P280",
+    "P318",
+    "P319",
+    "P391",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 21
+  },
+  "lead(II) acetate": {
+   "cid": 9317,
+   "retrieved_via": "relay",
+   "title": "Lead diacetate",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H360Df",
+     "text": "May damage the unborn child; Suspected of damaging fertility"
+    },
+    {
+     "code": "H373",
+     "text": "May causes damage to organs through prolonged or repeated exposure"
+    },
+    {
+     "code": "H400",
+     "text": "Very toxic to aquatic life"
+    },
+    {
+     "code": "H410",
+     "text": "Very toxic to aquatic life with long lasting effects"
+    }
+   ],
+   "pictograms": [
+    "Health Hazard",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P203",
+    "P260",
+    "P273",
+    "P280",
+    "P318",
+    "P319",
+    "P391",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 39
+  },
+  "lithium sulfate": {
+   "cid": 66320,
+   "retrieved_via": "relay",
+   "title": "Lithium sulfate",
+   "signal": "Warning",
+   "statements": [
+    {
+     "code": "H302",
+     "text": "Harmful if swallowed",
+     "percent": 98.2
+    },
+    {
+     "code": "H319",
+     "text": "Causes serious eye irritation",
+     "percent": 61.9
+    }
+   ],
+   "pictograms": [
+    "Irritant"
+   ],
+   "p_codes": [
+    "P264",
+    "P264+P265",
+    "P270",
+    "P273",
+    "P280",
+    "P301+P317",
+    "P305+P351+P338",
+    "P330",
+    "P337+P317",
+    "P501"
+   ],
+   "reference_number": 12
+  },
+  "mercuric bromide": {
+   "cid": 24612,
+   "retrieved_via": "relay",
+   "title": "Mercury dibromide",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H300",
+     "text": "Fatal if swallowed",
+     "percent": 100.0
+    },
+    {
+     "code": "H310",
+     "text": "Fatal in contact with skin",
+     "percent": 100.0
+    },
+    {
+     "code": "H330",
+     "text": "Fatal if inhaled",
+     "percent": 100.0
+    },
+    {
+     "code": "H373",
+     "text": "May causes damage to organs through prolonged or repeated exposure",
+     "percent": 100.0
+    },
+    {
+     "code": "H400",
+     "text": "Very toxic to aquatic life",
+     "percent": 94.1
+    },
+    {
+     "code": "H410",
+     "text": "Very toxic to aquatic life with long lasting effects",
+     "percent": 100.0
+    }
+   ],
+   "pictograms": [
+    "Acute Toxic",
+    "Health Hazard",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P260",
+    "P262",
+    "P264",
+    "P270",
+    "P271",
+    "P273",
+    "P280",
+    "P284",
+    "P301+P316",
+    "P302+P352",
+    "P304+P340",
+    "P316",
+    "P319",
+    "P320",
+    "P321",
+    "P330",
+    "P361+P364",
+    "P391",
+    "P403+P233",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 13
+  },
+  "mercuric chloride": {
+   "cid": 24085,
+   "retrieved_via": "relay",
+   "title": "Mercuric Chloride",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H300",
+     "text": "Fatal if swallowed"
+    },
+    {
+     "code": "H314",
+     "text": "Causes severe skin burns and eye damage"
+    },
+    {
+     "code": "H341",
+     "text": "Suspected of causing genetic defects"
+    },
+    {
+     "code": "H361f",
+     "text": "Suspected of damaging fertility"
+    },
+    {
+     "code": "H372",
+     "text": "Causes damage to organs through prolonged or repeated exposure"
+    },
+    {
+     "code": "H400",
+     "text": "Very toxic to aquatic life"
+    },
+    {
+     "code": "H410",
+     "text": "Very toxic to aquatic life with long lasting effects"
+    }
+   ],
+   "pictograms": [
+    "Corrosive",
+    "Acute Toxic",
+    "Health Hazard",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P203",
+    "P260",
+    "P264",
+    "P270",
+    "P273",
+    "P280",
+    "P301+P316",
+    "P301+P330+P331",
+    "P302+P361+P354",
+    "P304+P340",
+    "P305+P354+P338",
+    "P316",
+    "P318",
+    "P319",
+    "P321",
+    "P330",
+    "P363",
+    "P391",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 44
+  },
+  "mercuric oxide": {
+   "cid": 30856,
+   "retrieved_via": "relay",
+   "title": "Mercuric oxide",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H300",
+     "text": "Fatal if swallowed",
+     "percent": 100.0
+    },
+    {
+     "code": "H310",
+     "text": "Fatal in contact with skin",
+     "percent": 98.7
+    },
+    {
+     "code": "H330",
+     "text": "Fatal if inhaled",
+     "percent": 100.0
+    },
+    {
+     "code": "H373",
+     "text": "May causes damage to organs through prolonged or repeated exposure",
+     "percent": 100.0
+    },
+    {
+     "code": "H400",
+     "text": "Very toxic to aquatic life",
+     "percent": 98.7
+    },
+    {
+     "code": "H410",
+     "text": "Very toxic to aquatic life with long lasting effects",
+     "percent": 100.0
+    }
+   ],
+   "pictograms": [
+    "Acute Toxic",
+    "Health Hazard",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P260",
+    "P262",
+    "P264",
+    "P270",
+    "P271",
+    "P273",
+    "P280",
+    "P284",
+    "P301+P316",
+    "P302+P352",
+    "P304+P340",
+    "P316",
+    "P319",
+    "P320",
+    "P321",
+    "P330",
+    "P361+P364",
+    "P391",
+    "P403+P233",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 14
+  },
+  "mercurous nitrate": {
+   "cid": 25247,
+   "retrieved_via": "relay",
+   "title": "Mercurous nitrate",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H300",
+     "text": "Fatal if swallowed",
+     "percent": 100.0
+    },
+    {
+     "code": "H310",
+     "text": "Fatal in contact with skin",
+     "percent": 100.0
+    },
+    {
+     "code": "H330",
+     "text": "Fatal if inhaled",
+     "percent": 100.0
+    },
+    {
+     "code": "H373",
+     "text": "May causes damage to organs through prolonged or repeated exposure",
+     "percent": 100.0
+    },
+    {
+     "code": "H400",
+     "text": "Very toxic to aquatic life",
+     "percent": 100.0
+    },
+    {
+     "code": "H410",
+     "text": "Very toxic to aquatic life with long lasting effects",
+     "percent": 100.0
+    }
+   ],
+   "pictograms": [
+    "Acute Toxic",
+    "Health Hazard",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P260",
+    "P262",
+    "P264",
+    "P270",
+    "P271",
+    "P273",
+    "P280",
+    "P284",
+    "P301+P316",
+    "P302+P352",
+    "P304+P340",
+    "P316",
+    "P319",
+    "P320",
+    "P321",
+    "P330",
+    "P361+P364",
+    "P391",
+    "P403+P233",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 10
+  },
+  "mercury": {
+   "cid": 23931,
+   "retrieved_via": "relay",
+   "title": "Mercury",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H330",
+     "text": "Fatal if inhaled"
+    },
+    {
+     "code": "H360D",
+     "text": "May damage the unborn child"
+    },
+    {
+     "code": "H372",
+     "text": "Causes damage to organs through prolonged or repeated exposure"
+    },
+    {
+     "code": "H400",
+     "text": "Very toxic to aquatic life"
+    },
+    {
+     "code": "H410",
+     "text": "Very toxic to aquatic life with long lasting effects"
+    }
+   ],
+   "pictograms": [
+    "Acute Toxic",
+    "Health Hazard",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P203",
+    "P260",
+    "P264",
+    "P270",
+    "P271",
+    "P273",
+    "P280",
+    "P284",
+    "P304+P340",
+    "P316",
+    "P318",
+    "P319",
+    "P320",
+    "P391",
+    "P403+P233",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 61
+  },
+  "methyl violet": {
+   "cid": 196986,
+   "retrieved_via": "relay",
+   "title": "Benzenamine, 4,4'-((4-(methylimino)-2,5-cyclohexadien-1-ylidene)methylene)bis(N,N-dimethyl-, hydrochloride (1:1)",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H302",
+     "text": "Harmful if swallowed",
+     "percent": 83.6
+    }
+   ],
+   "pictograms": [
+    "Corrosive",
+    "Irritant",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P264",
+    "P264+P265",
+    "P270",
+    "P273",
+    "P280",
+    "P301+P317",
+    "P305+P354+P338",
+    "P317",
+    "P330",
+    "P391",
+    "P501"
+   ],
+   "reference_number": 7
+  },
+  "nitric acid": {
+   "cid": 944,
+   "retrieved_via": "relay",
+   "title": "Nitric Acid",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H272",
+     "text": "May intensify fire; oxidizer"
+    },
+    {
+     "code": "H314",
+     "text": "Causes severe skin burns and eye damage"
+    },
+    {
+     "code": "H330",
+     "text": "Fatal if inhaled"
+    }
+   ],
+   "pictograms": [
+    "Oxidizer",
+    "Corrosive",
+    "Acute Toxic"
+   ],
+   "p_codes": [
+    "P210",
+    "P220",
+    "P260",
+    "P264",
+    "P271",
+    "P280",
+    "P284",
+    "P301+P330+P331",
+    "P302+P361+P354",
+    "P304+P340",
+    "P305+P354+P338",
+    "P316",
+    "P320",
+    "P321",
+    "P363",
+    "P370+P378",
+    "P403+P233",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 61
+  },
+  "perchloric acid": {
+   "cid": 24247,
+   "retrieved_via": "relay",
+   "title": "Perchloric Acid",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H271",
+     "text": "May cause fire or explosion; strong Oxidizer"
+    },
+    {
+     "code": "H314",
+     "text": "Causes severe skin burns and eye damage"
+    }
+   ],
+   "pictograms": [
+    "Oxidizer",
+    "Corrosive"
+   ],
+   "p_codes": [
+    "P210",
+    "P220",
+    "P260",
+    "P264",
+    "P280",
+    "P283",
+    "P301+P330+P331",
+    "P302+P361+P354",
+    "P304+P340",
+    "P305+P354+P338",
+    "P306+P360",
+    "P316",
+    "P321",
+    "P363",
+    "P370+P378",
+    "P371+P380+P375",
+    "P405",
+    "P420",
+    "P501"
+   ],
+   "reference_number": 35
+  },
+  "phosphoric acid": {
+   "cid": 1004,
+   "retrieved_via": "relay",
+   "title": "Phosphoric Acid",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H314",
+     "text": "Causes severe skin burns and eye damage"
+    }
+   ],
+   "pictograms": [
+    "Corrosive"
+   ],
+   "p_codes": [
+    "P260",
+    "P264",
+    "P280",
+    "P301+P330+P331",
+    "P302+P361+P354",
+    "P304+P340",
+    "P305+P354+P338",
+    "P316",
+    "P321",
+    "P363",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 112
+  },
+  "potassium dichromate": {
+   "cid": 24502,
+   "retrieved_via": "relay",
+   "title": "Potassium Dichromate",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H272",
+     "text": "May intensify fire; oxidizer"
+    },
+    {
+     "code": "H301",
+     "text": "Toxic if swallowed"
+    },
+    {
+     "code": "H312",
+     "text": "Harmful in contact with skin"
+    },
+    {
+     "code": "H314",
+     "text": "Causes severe skin burns and eye damage"
+    },
+    {
+     "code": "H317",
+     "text": "May cause an allergic skin reaction"
+    },
+    {
+     "code": "H330",
+     "text": "Fatal if inhaled"
+    },
+    {
+     "code": "H334",
+     "text": "May cause allergy or asthma symptoms or breathing difficulties if inhaled"
+    },
+    {
+     "code": "H340",
+     "text": "May cause genetic defects"
+    },
+    {
+     "code": "H350",
+     "text": "May cause cancer"
+    },
+    {
+     "code": "H360FD",
+     "text": "May damage fertility; May damage the unborn child"
+    },
+    {
+     "code": "H372",
+     "text": "Causes damage to organs through prolonged or repeated exposure"
+    },
+    {
+     "code": "H400",
+     "text": "Very toxic to aquatic life"
+    },
+    {
+     "code": "H410",
+     "text": "Very toxic to aquatic life with long lasting effects"
+    }
+   ],
+   "pictograms": [
+    "Oxidizer",
+    "Corrosive",
+    "Acute Toxic",
+    "Health Hazard",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P203",
+    "P210",
+    "P220",
+    "P233",
+    "P260",
+    "P261",
+    "P264",
+    "P270",
+    "P271",
+    "P272",
+    "P273",
+    "P280",
+    "P284",
+    "P301+P316",
+    "P301+P330+P331",
+    "P302+P352",
+    "P302+P361+P354",
+    "P304+P340",
+    "P305+P354+P338",
+    "P316",
+    "P317",
+    "P318",
+    "P319",
+    "P320",
+    "P321",
+    "P330",
+    "P333+P317",
+    "P342+P316",
+    "P362+P364",
+    "P363",
+    "P370+P378",
+    "P391",
+    "P403",
+    "P403+P233",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 38
+  },
+  "potassium hexahydroxoantimonate": {
+   "cid": 25524,
+   "retrieved_via": "relay",
+   "title": "Potassium hexahydroxoantimonate",
+   "signal": "Warning",
+   "statements": [
+    {
+     "code": "H302",
+     "text": "Harmful if swallowed",
+     "percent": 100.0
+    },
+    {
+     "code": "H332",
+     "text": "Harmful if inhaled",
+     "percent": 100.0
+    },
+    {
+     "code": "H411",
+     "text": "Toxic to aquatic life with long lasting effects",
+     "percent": 98.4
+    }
+   ],
+   "pictograms": [
+    "Irritant",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P261",
+    "P264",
+    "P270",
+    "P271",
+    "P273",
+    "P301+P317",
+    "P304+P340",
+    "P317",
+    "P330",
+    "P391",
+    "P501"
+   ],
+   "reference_number": 4
+  },
+  "potassium hydroxide": {
+   "cid": 14797,
+   "retrieved_via": "relay",
+   "title": "Potassium Hydroxide",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H302",
+     "text": "Harmful if swallowed"
+    },
+    {
+     "code": "H314",
+     "text": "Causes severe skin burns and eye damage"
+    }
+   ],
+   "pictograms": [
+    "Corrosive",
+    "Irritant"
+   ],
+   "p_codes": [
+    "P260",
+    "P264",
+    "P270",
+    "P280",
+    "P301+P317",
+    "P301+P330+P331",
+    "P302+P361+P354",
+    "P304+P340",
+    "P305+P354+P338",
+    "P316",
+    "P321",
+    "P330",
+    "P363",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 61
+  },
+  "potassium nitrate": {
+   "cid": 24434,
+   "retrieved_via": "relay",
+   "title": "Potassium Nitrate",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H272",
+     "text": "May intensify fire; oxidizer",
+     "percent": 93.9
+    },
+    {
+     "code": "H315",
+     "text": "Causes skin irritation",
+     "percent": 59.4
+    },
+    {
+     "code": "H319",
+     "text": "Causes serious eye irritation",
+     "percent": 59.5
+    },
+    {
+     "code": "H335",
+     "text": "May cause respiratory irritation",
+     "percent": 59.3
+    }
+   ],
+   "pictograms": [
+    "Oxidizer",
+    "Irritant"
+   ],
+   "p_codes": [
+    "P210",
+    "P220",
+    "P261",
+    "P264",
+    "P264+P265",
+    "P271",
+    "P280",
+    "P302+P352",
+    "P304+P340",
+    "P305+P351+P338",
+    "P319",
+    "P321",
+    "P332+P317",
+    "P337+P317",
+    "P362+P364",
+    "P370+P378",
+    "P403+P233",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 27
+  },
+  "potassium thiocyanate": {
+   "cid": 516872,
+   "retrieved_via": "relay",
+   "title": "Potassium thiocyanate",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H302",
+     "text": "Harmful if swallowed",
+     "percent": 100.0
+    },
+    {
+     "code": "H312",
+     "text": "Harmful in contact with skin",
+     "percent": 99.6
+    },
+    {
+     "code": "H332",
+     "text": "Harmful if inhaled",
+     "percent": 99.6
+    },
+    {
+     "code": "H412",
+     "text": "Harmful to aquatic life with long lasting effects",
+     "percent": 81.0
+    }
+   ],
+   "pictograms": [
+    "Corrosive",
+    "Irritant",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P261",
+    "P264",
+    "P264+P265",
+    "P270",
+    "P271",
+    "P273",
+    "P280",
+    "P301+P317",
+    "P302+P352",
+    "P304+P340",
+    "P305+P351+P338",
+    "P305+P354+P338",
+    "P317",
+    "P321",
+    "P330",
+    "P337+P317",
+    "P362+P364",
+    "P391",
+    "P501"
+   ],
+   "reference_number": 15
+  },
+  "pyridine": {
+   "cid": 1049,
+   "retrieved_via": "relay",
+   "title": "Pyridine",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H225",
+     "text": "Highly Flammable liquid and vapor"
+    },
+    {
+     "code": "H302",
+     "text": "Harmful if swallowed"
+    },
+    {
+     "code": "H312",
+     "text": "Harmful in contact with skin"
+    },
+    {
+     "code": "H332",
+     "text": "Harmful if inhaled"
+    }
+   ],
+   "pictograms": [
+    "Flammable",
+    "Irritant"
+   ],
+   "p_codes": [
+    "P210",
+    "P233",
+    "P240",
+    "P241",
+    "P242",
+    "P243",
+    "P261",
+    "P264",
+    "P270",
+    "P271",
+    "P280",
+    "P301+P317",
+    "P302+P352",
+    "P303+P361+P353",
+    "P304+P340",
+    "P317",
+    "P321",
+    "P330",
+    "P362+P364",
+    "P370+P378",
+    "P403+P235",
+    "P501"
+   ],
+   "reference_number": 131
+  },
+  "silver nitrate": {
+   "cid": 24470,
+   "retrieved_via": "relay",
+   "title": "Silver Nitrate",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H272",
+     "text": "May intensify fire; oxidizer"
+    },
+    {
+     "code": "H314",
+     "text": "Causes severe skin burns and eye damage"
+    },
+    {
+     "code": "H400",
+     "text": "Very toxic to aquatic life"
+    },
+    {
+     "code": "H410",
+     "text": "Very toxic to aquatic life with long lasting effects"
+    }
+   ],
+   "pictograms": [
+    "Oxidizer",
+    "Corrosive",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P210",
+    "P220",
+    "P260",
+    "P264",
+    "P273",
+    "P280",
+    "P301+P330+P331",
+    "P302+P361+P354",
+    "P304+P340",
+    "P305+P354+P338",
+    "P316",
+    "P321",
+    "P363",
+    "P370+P378",
+    "P391",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 53
+  },
+  "sodium bromide": {
+   "cid": 253881,
+   "retrieved_via": "relay",
+   "title": "Sodium Bromide",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H360",
+     "text": "May damage fertility or the unborn child",
+     "percent": 53.2
+    }
+   ],
+   "pictograms": [
+    "Irritant",
+    "Health Hazard"
+   ],
+   "p_codes": [
+    "P203",
+    "P261",
+    "P264+P265",
+    "P271",
+    "P280",
+    "P304+P340",
+    "P305+P351+P338",
+    "P318",
+    "P319",
+    "P337+P317",
+    "P403+P233",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 21
+  },
+  "sodium carbonate": {
+   "cid": 10340,
+   "retrieved_via": "relay",
+   "title": "Sodium Carbonate",
+   "signal": "Warning",
+   "statements": [
+    {
+     "code": "H319",
+     "text": "Causes serious eye irritation"
+    }
+   ],
+   "pictograms": [
+    "Irritant"
+   ],
+   "p_codes": [
+    "P264+P265",
+    "P280",
+    "P305+P351+P338",
+    "P337+P317"
+   ],
+   "reference_number": 57
+  },
+  "sodium diethyldithiocarbamate": {
+   "cid": 533728,
+   "retrieved_via": "relay",
+   "title": "Sodium Diethyldithiocarbamate",
+   "signal": "Warning",
+   "statements": [
+    {
+     "code": "H302",
+     "text": "Harmful if swallowed",
+     "percent": 71.2
+    }
+   ],
+   "pictograms": [
+    "Irritant",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P261",
+    "P264",
+    "P264+P265",
+    "P270",
+    "P271",
+    "P273",
+    "P280",
+    "P301+P317",
+    "P302+P352",
+    "P304+P340",
+    "P305+P351+P338",
+    "P319",
+    "P321",
+    "P330",
+    "P332+P317",
+    "P337+P317",
+    "P362+P364",
+    "P391",
+    "P403+P233",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 17
+  },
+  "sodium hydroxide": {
+   "cid": 14798,
+   "retrieved_via": "relay",
+   "title": "Sodium Hydroxide",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H314",
+     "text": "Causes severe skin burns and eye damage"
+    }
+   ],
+   "pictograms": [
+    "Corrosive"
+   ],
+   "p_codes": [
+    "P260",
+    "P264",
+    "P280",
+    "P301+P330+P331",
+    "P302+P361+P354",
+    "P304+P340",
+    "P305+P354+P338",
+    "P316",
+    "P321",
+    "P363",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 77
+  },
+  "sodium nitrite": {
+   "cid": 23668193,
+   "retrieved_via": "relay",
+   "title": "Sodium Nitrite",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H272",
+     "text": "May intensify fire; oxidizer"
+    },
+    {
+     "code": "H301",
+     "text": "Toxic if swallowed"
+    },
+    {
+     "code": "H400",
+     "text": "Very toxic to aquatic life"
+    }
+   ],
+   "pictograms": [
+    "Oxidizer",
+    "Acute Toxic",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P210",
+    "P220",
+    "P264",
+    "P270",
+    "P273",
+    "P280",
+    "P301+P316",
+    "P321",
+    "P330",
+    "P370+P378",
+    "P391",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 59
+  },
+  "sodium sulfite": {
+   "cid": 24437,
+   "retrieved_via": "relay",
+   "title": "Sodium Sulfite",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H314",
+     "text": "Causes severe skin burns and eye damage",
+     "percent": 51.8
+    }
+   ],
+   "pictograms": [
+    "Corrosive",
+    "Irritant"
+   ],
+   "p_codes": [
+    "P260",
+    "P264",
+    "P264+P265",
+    "P270",
+    "P280",
+    "P301+P317",
+    "P301+P330+P331",
+    "P302+P352",
+    "P302+P361+P354",
+    "P304+P340",
+    "P305+P351+P338",
+    "P305+P354+P338",
+    "P316",
+    "P321",
+    "P330",
+    "P332+P317",
+    "P337+P317",
+    "P362+P364",
+    "P363",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 19
+  },
+  "sodium tungstate": {
+   "cid": 26052,
+   "retrieved_via": "relay",
+   "title": "Sodium tungstate",
+   "signal": "Warning",
+   "statements": [
+    {
+     "code": "H302",
+     "text": "Harmful if swallowed",
+     "percent": 100.0
+    }
+   ],
+   "pictograms": [
+    "Irritant"
+   ],
+   "p_codes": [
+    "P264",
+    "P270",
+    "P301+P317",
+    "P330",
+    "P501"
+   ],
+   "reference_number": 14
+  },
+  "stannous chloride": {
+   "cid": 24479,
+   "retrieved_via": "relay",
+   "title": "Stannous Chloride",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H302",
+     "text": "Harmful if swallowed",
+     "percent": 78.8
+    },
+    {
+     "code": "H314",
+     "text": "Causes severe skin burns and eye damage",
+     "percent": 94.4
+    },
+    {
+     "code": "H335",
+     "text": "May cause respiratory irritation",
+     "percent": 52.5
+    }
+   ],
+   "pictograms": [
+    "Corrosive",
+    "Irritant",
+    "Health Hazard",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P234",
+    "P260",
+    "P261",
+    "P264",
+    "P264+P265",
+    "P270",
+    "P271",
+    "P272",
+    "P273",
+    "P280",
+    "P301+P317",
+    "P301+P330+P331",
+    "P302+P352",
+    "P302+P361+P354",
+    "P304+P340",
+    "P305+P351+P338",
+    "P305+P354+P338",
+    "P316",
+    "P317",
+    "P319",
+    "P321",
+    "P330",
+    "P333+P317",
+    "P337+P317",
+    "P362+P364",
+    "P363",
+    "P390",
+    "P391",
+    "P403+P233",
+    "P405",
+    "P406",
+    "P501"
+   ],
+   "reference_number": 17
+  },
+  "sulfanilic acid": {
+   "cid": 8479,
+   "retrieved_via": "relay",
+   "title": "Sulfanilic acid",
+   "signal": "Warning",
+   "statements": [
+    {
+     "code": "H315",
+     "text": "Causes skin irritation"
+    },
+    {
+     "code": "H317",
+     "text": "May cause an allergic skin reaction"
+    },
+    {
+     "code": "H319",
+     "text": "Causes serious eye irritation"
+    }
+   ],
+   "pictograms": [
+    "Irritant"
+   ],
+   "p_codes": [
+    "P261",
+    "P264",
+    "P264+P265",
+    "P272",
+    "P280",
+    "P302+P352",
+    "P305+P351+P338",
+    "P321",
+    "P332+P317",
+    "P333+P317",
+    "P337+P317",
+    "P362+P364",
+    "P501"
+   ],
+   "reference_number": 92
+  },
+  "sulfur dioxide": {
+   "cid": 1119,
+   "retrieved_via": "relay",
+   "title": "Sulfur Dioxide",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H314",
+     "text": "Causes severe skin burns and eye damage"
+    },
+    {
+     "code": "H331",
+     "text": "Toxic if inhaled"
+    },
+    {
+     "code": "H370",
+     "text": "Causes damage to organs"
+    }
+   ],
+   "pictograms": [
+    "Compressed Gas",
+    "Corrosive",
+    "Acute Toxic",
+    "Health Hazard"
+   ],
+   "p_codes": [
+    "P260",
+    "P261",
+    "P264",
+    "P270",
+    "P271",
+    "P280",
+    "P301+P330+P331",
+    "P302+P361+P354",
+    "P304+P340",
+    "P305+P354+P338",
+    "P308+P316",
+    "P316",
+    "P321",
+    "P363",
+    "P403+P233",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 63
+  },
+  "sulfuric acid": {
+   "cid": 1118,
+   "retrieved_via": "relay",
+   "title": "Sulfuric Acid",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H314",
+     "text": "Causes severe skin burns and eye damage"
+    }
+   ],
+   "pictograms": [
+    "Corrosive"
+   ],
+   "p_codes": [
+    "P260",
+    "P264",
+    "P280",
+    "P301+P330+P331",
+    "P302+P361+P354",
+    "P304+P340",
+    "P305+P354+P338",
+    "P316",
+    "P321",
+    "P363",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 94
+  },
+  "uranyl acetate": {
+   "cid": 21226249,
+   "retrieved_via": "relay",
+   "title": "Uranyl acetate",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H300+H330",
+     "text": "Fatal if swallowed or if inhaled",
+     "percent": 92.7
+    },
+    {
+     "code": "H300",
+     "text": "Fatal if swallowed",
+     "percent": 97.6
+    },
+    {
+     "code": "H330",
+     "text": "Fatal if inhaled",
+     "percent": 97.6
+    },
+    {
+     "code": "H373",
+     "text": "May causes damage to organs through prolonged or repeated exposure",
+     "percent": 97.6
+    },
+    {
+     "code": "H411",
+     "text": "Toxic to aquatic life with long lasting effects",
+     "percent": 97.6
+    }
+   ],
+   "pictograms": [
+    "Acute Toxic",
+    "Health Hazard",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P260",
+    "P264",
+    "P270",
+    "P271",
+    "P273",
+    "P284",
+    "P301+P316",
+    "P304+P340",
+    "P316",
+    "P319",
+    "P320",
+    "P321",
+    "P330",
+    "P391",
+    "P403+P233",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 6
+  },
+  "zinc chloride": {
+   "cid": 5727,
+   "retrieved_via": "relay",
+   "title": "Zinc Chloride",
+   "signal": "Danger",
+   "statements": [
+    {
+     "code": "H302",
+     "text": "Harmful if swallowed"
+    },
+    {
+     "code": "H314",
+     "text": "Causes severe skin burns and eye damage"
+    },
+    {
+     "code": "H400",
+     "text": "Very toxic to aquatic life"
+    },
+    {
+     "code": "H410",
+     "text": "Very toxic to aquatic life with long lasting effects"
+    }
+   ],
+   "pictograms": [
+    "Corrosive",
+    "Irritant",
+    "Environmental Hazard"
+   ],
+   "p_codes": [
+    "P260",
+    "P264",
+    "P270",
+    "P273",
+    "P280",
+    "P301+P317",
+    "P301+P330+P331",
+    "P302+P361+P354",
+    "P304+P340",
+    "P305+P354+P338",
+    "P316",
+    "P321",
+    "P330",
+    "P363",
+    "P391",
+    "P405",
+    "P501"
+   ],
+   "reference_number": 54
+  }
+ },
+ "unresolved": [
+  {
+   "query": "ammonium molybdate",
+   "cid": 485454,
+   "reason": "no GHS hazard statements (>=50 %) or no GHS section"
+  },
+  {
+   "query": "basic fuchsin",
+   "reason": "name lookup: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/basic%20fuchsin/cids/JSON"
+  },
+  {
+   "query": "bismuth subnitrate",
+   "cid": 73415757,
+   "reason": "no GHS hazard statements (>=50 %) or no GHS section"
+  },
+  {
+   "query": "bromophenol blue",
+   "cid": 8272,
+   "reason": "no GHS hazard statements (>=50 %) or no GHS section"
+  },
+  {
+   "query": "bromothymol blue",
+   "cid": 6450,
+   "reason": "no GHS hazard statements (>=50 %) or no GHS section"
+  },
+  {
+   "query": "dithizone",
+   "cid": 657262,
+   "reason": "no GHS hazard statements (>=50 %) or no GHS section"
+  },
+  {
+   "query": "potassium iodide",
+   "cid": 4875,
+   "reason": "no GHS hazard statements (>=50 %) or no GHS section"
+  },
+  {
+   "query": "sodium molybdate",
+   "cid": 61424,
+   "reason": "no GHS hazard statements (>=50 %) or no GHS section"
+  },
+  {
+   "query": "zinc acetate",
+   "cid": 11192,
+   "reason": "no GHS hazard statements (>=50 %) or no GHS section"
+  }
+ ]
+}
