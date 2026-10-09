@@ -201,6 +201,15 @@ abstract final class StudyCatalogBuilder {
   static const toksDeckKey = 'toks';
   static const toksDeckId = 'teaching.$toksDeckKey';
 
+  /// «Giyohvand moddalar tahlili» (Yuldashev Z.A. va boshq., 2024) savollari
+  /// to‘plami (bepul, egasi qarori).
+  static const gmtDeckKey = 'gmt';
+  static const gmtDeckId = 'teaching.$gmtDeckKey';
+
+  /// Manba kaliti prefiksi bo‘yicha o‘quv-uslubiy majmua to‘plami.
+  static String teachingDeckKey(List<GuidelineReference> source) =>
+      source.any((r) => r.key.startsWith('gmt_')) ? gmtDeckKey : toksDeckKey;
+
   /// Bilim yozuvi uchun claim maydonlari — ustuvorlik tartibida.
   static const topicFields = ['definition', 'principle', 'use', 'marker'];
 
@@ -345,22 +354,38 @@ abstract final class StudyCatalogBuilder {
           if (r.isYuldashevMaterial) r,
       ];
       final toks = source.isNotEmpty;
+      final teachingKey = teachingDeckKey(source);
       for (final q in card.quiz) {
         if (q.distractors.isEmpty) continue;
+        // Savol aniq manbalarni ko‘rsatgan bo‘lsa — faqat o‘shalar
+        // (sahifa faqat o‘quv-uslubiy materialga tegishli).
+        final cited = q.cite.isEmpty
+            ? null
+            : [
+                for (final r in refs)
+                  if (q.cite.contains(r.key)) r,
+              ];
         add(
           toks ? StudyDeckKind.teachingMaterial : StudyDeckKind.guidelineArea,
-          toks ? toksDeckKey : area,
+          toks ? teachingKey : area,
           StudyItem(
             id: 'gq.${card.id}.${q.id}',
             kind: StudyItemKind.guidelineQuestion,
-            deckId: toks ? toksDeckId : 'guideline.$area',
+            deckId: toks ? 'teaching.$teachingKey' : 'guideline.$area',
             prompt: LocalizedText(q.question.values),
             answer: LocalizedText(q.answer.values),
             status: card.status,
             isTestData: false,
             citations: [
-              for (final r in toks ? source : refs)
-                StudyCitation.fromReference(r, pages: toks ? q.pages : null),
+              if (cited != null)
+                for (final r in cited)
+                  StudyCitation.fromReference(
+                    r,
+                    pages: r.isYuldashevMaterial ? q.pages : null,
+                  )
+              else
+                for (final r in toks ? source : refs)
+                  StudyCitation.fromReference(r, pages: toks ? q.pages : null),
             ],
             origin: StudyOrigin.guideline,
             originId: card.id,

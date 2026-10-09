@@ -5813,7 +5813,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get studyIntro =>
-      'Every card and question is built from a record that already exists in the app, together with its source. Nothing new is written. Material that is still under expert review is labelled.';
+      'Every card and question is built from a record or guideline that already exists in the app, together with its source. Guideline questions are written by the editors from the card’s facts. Material that is still under expert review is labelled.';
 
   @override
   String get studySectionTopics => 'Topics by discipline';
@@ -7054,4 +7054,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get reusePermissionGranted => 'RIGHTS HOLDER\'S PERMISSION';
+
+  @override
+  String get guidelineGmtAttribution =>
+      'Source: Yuldashev Z.A. et al., «Analysis of narcotic substances. Teaching manual» (Tashkent Pharmaceutical Institute, Tashkent, 2024) — used with the author’s permission, free for everyone.';
+
+  @override
+  String get studyDeckGmt => 'Drug analysis (Yuldashev Z.A.)';
 }

@@ -1527,6 +1527,122 @@
       "verified_on": "2026-10-08"
     },
     {
+      "key": "gmt_yuldashev2024",
+      "type": "teaching_material",
+      "authors": [
+        "Yuldashev ZA",
+        "Zulfikariyeva DA",
+        "Usmanaliyeva ZU",
+        "Nurmatova MI"
+      ],
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma",
+      "publisher": "Toshkent farmatsevtika instituti",
+      "place": "Toshkent",
+      "year": 2024,
+      "language": "uz",
+      "pages_total": 173,
+      "udc": "615.074.615.322",
+      "department": "Toksikologik kimyo kafedrasi",
+      "isbn": null,
+      "doi": null,
+      "pmid": null,
+      "access": "free",
+      "rights": "muallif ruxsati bilan, 2026-10-09 (yozma ruxsat; docs/DECISIONS.md); kartalar barcha uchun bepul",
+      "note": "Teaching manual of the Department of Toxicological Chemistry, Tashkent Pharmaceutical Institute; approved by the institute council on 2024-07-03 (protocol No. 11); reviewers N.Sh. Xalilova, N.A. Yunusxodjayeva. No ISBN/DOI on the imprint. Cited with printed page numbers. Facts are restated in our own words; known errors of the manual are corrected or omitted and listed in content/guidelines/REVIEW_GMT.md. Nothing from its test questions is reused.",
+      "used_for": "Analysis stages and objects (pp. 9-10, 145); opium alkaloids, meconic acid, meconin, omnopon (pp. 15-18); morphine, codeine, noscapine colour/microcrystal reactions and TLC order (pp. 22-29); heroin, ethylmorphine, apomorphine (pp. 31-38); promedol, methadone, fentanyl, pethidine (pp. 39-52); cocaine (pp. 53-58); cannabis (pp. 60-70); natural and synthetic phenylalkylamines (pp. 72-86); barbiturates (pp. 100-115); 1,4-benzodiazepines (pp. 132-143); precursors (pp. 145-157); mention of Law No. 813-I and CM Resolution No. 878 (p. 12).",
+      "verified_via": "Title page, imprint and table of contents of the author-provided PDF (173 pages): authors, title, UDK, publisher, place, year; written permission of the lead author recorded in docs/DECISIONS.md (2026-10-09)",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "key": "gmt_unodc_rapid_tests",
+      "type": "guideline",
+      "authors": [
+        "United Nations Office on Drugs and Crime (UNODC), Laboratory and Scientific Section"
+      ],
+      "title": "Rapid Testing Methods of Drugs of Abuse: Manual for Use by National Law Enforcement and Narcotic Laboratory Personnel (ST/NAR/13/Rev.1)",
+      "publisher": "United Nations, New York",
+      "year": 1994,
+      "isbn": "978-92-1-148230-0",
+      "doi": null,
+      "pmid": null,
+      "url": "https://www.unodc.org/unodc/en/scientists/rapid-testing-methods-of-drugs-of-abuse_new.html",
+      "note": "Official UNODC PDF (Rapid_Testing_Methods_of_Drugs_of_Abuse_E.pdf, sales No. E.08.XI.14) downloaded from unodc.org; scanned pages 37-51 read. Field/laboratory colour tests are presumptive; positive results must be confirmed in a laboratory.",
+      "used_for": "Opium: Marquis purple-violet, ferric sulfate brownish purple (p. 37); morphine/codeine/heroin: Marquis violet to reddish-purple (p. 38), Mecke blue to green, nitric acid differentiation (heroin yellow to light green; morphine orange to red to yellow; codeine orange to yellow) (p. 39); cannabis: Fast Blue B purple-red and Duquenois-Levine violet in chloroform layer (p. 41); cocaine: cobalt thiocyanate blue with methaqualone/PCP interferences (p. 42), modified Scott test and methyl benzoate odour (p. 43); amphetamines: Marquis orange to brown (amphetamine/methamphetamine), black (MDA/MDMA/MDE), yellow (DOM/DOET), yellow-green to green (DMA/DOB); sulfuric acid no colour (p. 45); Simon blue for methamphetamine and N-substituted analogues (p. 46); barbiturates: Dille-Koppanyi reddish purple (p. 49); benzodiazepines: Zimmermann reddish-purple/pink, some (lorazepam, oxazepam, chlordiazepoxide, midazolam) no colour (p. 50), hydrochloric acid yellow, Vitali-Morin yellow-orange (p. 51); THC content depends on growth and preparation (p. 9).",
+      "verified_via": "Official site unodc.org (manual page and English PDF downloaded; pages 9-11 and 37-51 read from the scanned PDF)",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "key": "gmt_pubchem_2026",
+      "type": "database",
+      "authors": [
+        "National Center for Biotechnology Information (NCBI)"
+      ],
+      "title": "PubChem Compound records (molecular formula, IUPAC name, GC-MS top peaks)",
+      "publisher": "U.S. National Library of Medicine",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/",
+      "note": "Read through PUG REST/PUG-View on 2026-10-09. GC-MS top peaks come from the NIST Mass Spectrometry Data Center records shown in PubChem unless stated (cocaine and morphine: HMDB/MoNA EI records). CIDs: meperidine 4058, trimeperidine 20055107, fentanyl 3345, methadone 4095, morphine 5288826, codeine 5284371, cocaine 446220, amphetamine 3007, MDMA 1615, phenobarbital 4763, diazepam 3016, nitrazepam 4506.",
+      "used_for": "Formulas: pethidine (meperidine) C15H21NO2, ethyl 1-methyl-4-phenylpiperidine-4-carboxylate; trimeperidine C17H25NO2; fentanyl C22H28N2O; methadone C21H27NO; morphine C17H19NO3; codeine C18H21NO3; cocaine C17H21NO4. EI-MS top peaks: fentanyl 245/146/189; methadone 72; meperidine 71/70 with m/z 247 present; amphetamine 44/91; MDMA 58/135/77; phenobarbital 204/117; diazepam 256/283/284; nitrazepam 253/280/206; cocaine 82 (HMDB/MoNA); morphine 285 (HMDB). No GC-MS record for trimeperidine.",
+      "verified_via": "PubChem PUG REST (property) and PUG-View (heading GC-MS) queries",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "key": "gmt_bird2023",
+      "type": "journal_article",
+      "authors": [
+        "Bird HE",
+        "Huhn AS",
+        "Dunn KE"
+      ],
+      "title": "Fentanyl Absorption, Distribution, Metabolism, and Excretion: Narrative Review and Clinical Significance Related to Illicitly Manufactured Fentanyl",
+      "journal": "Journal of Addiction Medicine",
+      "year": 2023,
+      "volume": "17",
+      "issue": "5",
+      "pages": "503-508",
+      "doi": "10.1097/ADM.0000000000001185",
+      "pmid": "37788600",
+      "used_for": "Fentanyl is highly lipophilic and eliminated mainly by metabolism with urinary excretion of metabolites, chiefly norfentanyl.",
+      "verified_via": "PubMed MCP convert_article_ids (PMC10593981) + get_article_metadata",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "key": "gmt_lex_law813",
+      "type": "legislation",
+      "authors": [
+        "Oliy Majlis of the Republic of Uzbekistan"
+      ],
+      "title": "Law of the Republic of Uzbekistan No. 813-I of 19.08.1999 «On narcotic drugs and psychotropic substances» (consolidated text)",
+      "publisher": "National Database of Legislation (lex.uz)",
+      "year": 1999,
+      "doi": null,
+      "pmid": null,
+      "url": "https://lex.uz/docs/86028",
+      "note": "Accessed 2026-10-09; latest amendment date shown in the edition list: 08.05.2025. Lists are not reproduced in the app.",
+      "used_for": "Art. 4: controlled substances are entered in List I (narcotic drugs, circulation prohibited), List II (narcotic drugs, restricted), List III (psychotropic substances, restricted), List IV (precursors, restricted); lists are approved in the procedure set by the Cabinet of Ministers and published (LexUz comment points to CM Resolution No. 330 of 12.11.2015). Art. 28: use of controlled substances for expert examinations is allowed in the procedure set by the Cabinet of Ministers.",
+      "verified_via": "Official site lex.uz (document 86028, Russian consolidated text read)",
+      "verified_on": "2026-10-09"
+    },
+    {
+      "key": "gmt_lex_cm330",
+      "type": "legislation",
+      "authors": [
+        "Cabinet of Ministers of the Republic of Uzbekistan"
+      ],
+      "title": "Resolution of the Cabinet of Ministers No. 330 of 12.11.2015 «On improving the procedure for import, export and transit of narcotic drugs, psychotropic substances and precursors through the territory of the Republic of Uzbekistan and control over their circulation» (consolidated text)",
+      "publisher": "National Database of Legislation (lex.uz)",
+      "year": 2015,
+      "doi": null,
+      "pmid": null,
+      "url": "https://lex.uz/docs/2815342",
+      "note": "Accessed 2026-10-09; in force from 23.11.2015; the edition list shows later amendments (2017-2025 and an edition dated 12.01.2027). Lists are not reproduced in the app.",
+      "used_for": "Appendices 4-7 contain List I, List II, List III and List IV; the texts of appendices 6 and 7 are given in the wording of CM Resolution No. 878 of 27.10.2018 (National Database of Legislation, 29.10.2018, No. 09/18/878/2120).",
+      "verified_via": "Official site lex.uz (document 2815342, Russian consolidated text read)",
+      "verified_on": "2026-10-09"
+    },
+    {
       "key": "herzler2003",
       "type": "journal_article",
       "authors": [

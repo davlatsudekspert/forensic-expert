@@ -309,4 +309,143 @@ void main() {
       }
     });
   });
+
+  group('«Giyohvand moddalar tahlili» (GMT) kartalari', () {
+    const book = 'gmt_yuldashev2024';
+    const ids = {
+      'guideline.chem.gmt_analysis_scheme',
+      'guideline.chem.gmt_opioids',
+      'guideline.chem.gmt_cocaine',
+      'guideline.chem.gmt_cannabis',
+      'guideline.chem.gmt_phenylalkylamines',
+      'guideline.chem.gmt_barbiturates',
+      'guideline.chem.gmt_benzodiazepines',
+      'guideline.chem.gmt_precursors',
+      'guideline.chem.gmt_uz_control_lists',
+    };
+    final gmt = [
+      for (final c in bundle.cards)
+        if (c.id.startsWith('guideline.chem.gmt_')) c,
+    ];
+    final inline = RegExp(r'\[[a-z0-9_]+(?:,\s*[a-z0-9_]+)*\]');
+
+    test('9 ta karta: har bir guruh + sxema + huquqiy eslatma', () {
+      expect({for (final c in gmt) c.id}, ids);
+      for (final c in gmt) {
+        expect(c.area, GuidelineArea.forensicChemistry, reason: c.id);
+        expect(c.status, ScientificStatus.needsReview, reason: c.id);
+        for (final lang in ['uz', 'ru', 'en']) {
+          expect(c.summary.pick(lang).isFallback, isFalse, reason: c.id);
+        }
+      }
+    });
+
+    test('qo‘llanma: to‘liq bibliografiya, joy va nashriyot, huquq', () {
+      final ref = bundle.references[book];
+      expect(ref, isNotNull);
+      expect(ref!.type, 'teaching_material');
+      expect(ref.isYuldashevMaterial, isTrue);
+      expect(ref.publisher, 'Toshkent farmatsevtika instituti');
+      expect(ref.place, 'Toshkent');
+      expect(ref.year, '2024');
+      expect(ref.authors, hasLength(4));
+      expect(ref.citation, startsWith('Yuldashev ZA, Zulfikariyeva DA'));
+      expect(ref.citation, contains('Giyohvand moddalar tahlili'));
+      expect(
+        ref.citation,
+        contains('Toshkent: Toshkent farmatsevtika instituti'),
+      );
+      final rawRef =
+          ((json['references']! as List).cast<Map<String, Object?>>())
+              .firstWhere((r) => r['key'] == book);
+      expect(rawRef['pages_total'], 173);
+      expect(
+        '${rawRef['rights']}',
+        contains('muallif ruxsati bilan, 2026-10-09'),
+      );
+    });
+
+    test('egasi qarori: barcha uchun bepul, atribusiya qatori', () {
+      for (final c in gmt) {
+        expect(c.access, GuidelineAccess.free, reason: c.id);
+        expect(c.isFree, isTrue, reason: c.id);
+        expect(bundle.citesYuldashevMaterial(c), isTrue, reason: c.id);
+        expect(
+          bundle.referencesOf(c).map((r) => r.key),
+          contains(book),
+          reason: c.id,
+        );
+      }
+    });
+
+    test('har bir bayonot (qator) iqtibosli; qo‘llanma sahifasi bilan', () {
+      final locator = {
+        'uz': RegExp(r'\[gmt_yuldashev2024\] \([0-9–, -]+-b\.\)'),
+        'ru': RegExp(r'\[gmt_yuldashev2024\] \(с\. [0-9–, ]+\)'),
+        'en': RegExp(r'\[gmt_yuldashev2024\] \(pp?\. [0-9–, ]+\)'),
+      };
+      for (final c in gmt) {
+        for (final s in c.sections) {
+          expect(s.citations, isNotEmpty, reason: '${c.id}/${s.key}');
+          for (final lang in ['uz', 'ru', 'en']) {
+            final body = s.body.of(lang);
+            for (final line in body.split('\n')) {
+              if (line.trim().isEmpty) continue;
+              expect(
+                inline.hasMatch(line),
+                isTrue,
+                reason: '${c.id}/${s.key}/$lang: $line',
+              );
+            }
+            final bookCites = RegExp(r'\[gmt_yuldashev2024\]').allMatches(body);
+            expect(
+              locator[lang]!.allMatches(body).length,
+              bookCites.length,
+              reason: '${c.id}/${s.key}/$lang: sahifasiz keltirilgan',
+            );
+          }
+        }
+      }
+    });
+
+    test('savollar: ≥30, uch tilda, 3 ta distraktor, manba/sahifa', () {
+      final quiz = [for (final c in gmt) ...c.quiz];
+      expect(quiz.length, greaterThanOrEqualTo(30));
+      expect({for (final q in quiz) q.id}.length, quiz.length);
+      for (final c in gmt) {
+        final keys = {for (final r in bundle.referencesOf(c)) r.key};
+        for (final q in c.quiz) {
+          expect(q.distractors, hasLength(3), reason: q.id);
+          expect(keys.containsAll(q.cite), isTrue, reason: q.id);
+          if (q.cite.isEmpty || q.cite.contains(book)) {
+            expect(q.pages, isNotNull, reason: q.id);
+          }
+          for (final lang in ['uz', 'ru', 'en']) {
+            expect(q.question.pick(lang).isFallback, isFalse, reason: q.id);
+            final a = q.answer.of(lang).trim().toLowerCase();
+            for (final d in q.distractors) {
+              expect(d.of(lang).trim().toLowerCase(), isNot(a), reason: q.id);
+            }
+          }
+        }
+      }
+    });
+
+    test('tuzatilgan xatolar faqat «tuzatishlar» bo‘limida eslatiladi', () {
+      final opioids = bundle.byId('guideline.chem.gmt_opioids')!;
+      final basis = opioids.sections.firstWhere((s) => s.key == 'basis');
+      for (final lang in ['uz', 'ru', 'en']) {
+        expect(basis.body.of(lang), contains('C15H21NO2'));
+      }
+      final wrong = RegExp(r'etinil|этинил|ethynyl|Rf\s*=\s*8[.,]6|13–15%');
+      for (final c in gmt) {
+        for (final s in c.sections) {
+          if (s.key == 'cautions') continue;
+          for (final b in s.body.all) {
+            expect(wrong.hasMatch(b), isFalse, reason: '${c.id}/${s.key}');
+          }
+        }
+      }
+    });
+  });
 }

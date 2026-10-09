@@ -1,0 +1,370 @@
+{
+  "id": "guideline.chem.gmt_cocaine",
+  "discipline_codes": [
+    "forensic_chemistry",
+    "forensic_toxicology"
+  ],
+  "status": "NEEDS_REVIEW",
+  "updated": "2026-10-09",
+  "translation_status": {
+    "uz": "AUTHORED",
+    "ru": "DRAFT",
+    "en": "DRAFT"
+  },
+  "related_tool_ids": [],
+  "access": "free",
+  "title": {
+    "uz": "Kokain: tahlil va identifikatsiya",
+    "ru": "Кокаин: анализ и идентификация",
+    "en": "Cocaine: analysis and identification"
+  },
+  "summary": {
+    "uz": "Kokain — koka bargidan olinadigan tropan alkaloidi; tuz (gidroxlorid) va asos («krek») shakllarida uchraydi. Dastlabki aniqlash kobalt tiotsianat va Skott testi, metil benzoat hidi bilan; YuQX va GX-MS (asosiy cho‘qqi m/z 82) bilan tasdiqlanadi. Biologik namunalarda asosiy belgi — benzoilekgonin; kokaetilen alkogol bilan birga iste’molni ko‘rsatadi.",
+    "ru": "Кокаин — тропановый алкалоид из листьев коки; встречается в форме соли (гидрохлорид) и основания («крэк»). Предварительно выявляется тиоцианатом кобальта и тестом Скотта, запахом метилбензоата; подтверждается ТСХ и ГХ-МС (основной пик m/z 82). В биологических образцах главный маркер — бензоилэкгонин; кокаэтилен указывает на сочетание с алкоголем.",
+    "en": "Cocaine is a tropane alkaloid from coca leaves, found as the salt (hydrochloride) and as the base («crack»). It is screened with cobalt thiocyanate and the Scott test and by the methyl benzoate odour, and confirmed by TLC and GC-MS (base peak m/z 82). In biological samples the main marker is benzoylecgonine; cocaethylene indicates combined use with alcohol."
+  },
+  "sections": [
+    {
+      "key": "basis",
+      "title": {
+        "uz": "Kimyoviy tavsif va shakllar",
+        "ru": "Химическая характеристика и формы",
+        "en": "Chemistry and forms"
+      },
+      "body": {
+        "uz": "Kokain (C17H21NO4) — benzoilekgoninning metil efiri, tropan qatoridagi alkaloid [gmt_pubchem_2026]. Asosiy manbalari Erythroxylum coca va E. novogranatense barglari; bargda kokaindan tashqari ekgonin hosilalari (metilekgonin, sinnamoilkokain, benzoilekgonin) bor [gmt_yuldashev2024] (53–54-b.).\n\nShakllar: kokain pastasi (barg ishlovining oraliq mahsuloti), kokain gidroxlorid (oq kristall kukun) va undan olinadigan asos — «krek»/«freebase». Ko‘cha namunalari kofein, lidokain, prokain, benzokain, shakar, kraxmal kabi moddalar bilan suyultiriladi [gmt_yuldashev2024] (54-b.).",
+        "ru": "Кокаин (C17H21NO4) — метиловый эфир бензоилэкгонина, алкалоид тропанового ряда [gmt_pubchem_2026]. Основные источники — листья Erythroxylum coca и E. novogranatense; кроме кокаина в листе есть производные экгонина (метилэкгонин, циннамоилкокаин, бензоилэкгонин) [gmt_yuldashev2024] (с. 53–54).\n\nФормы: кокаиновая паста (промежуточный продукт переработки листа), гидрохлорид кокаина (белый кристаллический порошок) и получаемое из него основание — «крэк»/«фрибейс». Уличные образцы разбавляют кофеином, лидокаином, прокаином, бензокаином, сахаром, крахмалом [gmt_yuldashev2024] (с. 54).",
+        "en": "Cocaine (C17H21NO4) is the methyl ester of benzoylecgonine, a tropane alkaloid [gmt_pubchem_2026]. The main sources are the leaves of Erythroxylum coca and E. novogranatense; besides cocaine the leaf contains ecgonine derivatives (methylecgonine, cinnamoylcocaine, benzoylecgonine) [gmt_yuldashev2024] (pp. 53–54).\n\nForms: coca paste (an intermediate of leaf processing), cocaine hydrochloride (white crystalline powder) and the base prepared from it — «crack»/«freebase». Street samples are cut with caffeine, lidocaine, procaine, benzocaine, sugars and starch [gmt_yuldashev2024] (p. 54)."
+      },
+      "citations": [
+        "gmt_pubchem_2026",
+        "gmt_yuldashev2024"
+      ]
+    },
+    {
+      "key": "scope",
+      "title": {
+        "uz": "Biologik namunalar va metabolitlar",
+        "ru": "Биологические образцы и метаболиты",
+        "en": "Biological samples and metabolites"
+      },
+      "body": {
+        "uz": "• Kokain asosan metabolitlar holida siydik bilan chiqariladi: benzoilekgonin, ekgonin metil efiri, ekgonin, norkokain; o‘zgarmagan kokain ulushi kichik [gmt_yuldashev2024] (55-b.).\n• Siydikda benzoilekgoninning etil efiri (kokaetilen) aniqlansa, kokain va alkogol birga iste’mol qilingan; angidroekgonin metil efiri krek (asos) chekilganini ko‘rsatadi [gmt_yuldashev2024] (55-b.).\n• Kokain biologik suyuqliklardan pH 7,0–8,5 da xloroform bilan yaxshi ekstraksiyalanadi, qisman kislotali muhitdan ham o‘tadi [gmt_yuldashev2024] (57-b.).\n• O‘limdan keyin kokain beqaror bo‘lib, parchalanishda davom etadi [drummer2004].",
+        "ru": "• Кокаин выводится с мочой в основном в виде метаболитов: бензоилэкгонин, метиловый эфир экгонина, экгонин, норкокаин; доля неизменённого кокаина мала [gmt_yuldashev2024] (с. 55).\n• Обнаружение в моче этилового эфира бензоилэкгонина (кокаэтилена) указывает на совместный приём кокаина и алкоголя; метиловый эфир ангидроэкгонина — на курение крэка (основания) [gmt_yuldashev2024] (с. 55).\n• Кокаин хорошо экстрагируется из биологических жидкостей хлороформом при pH 7,0–8,5, частично и из кислой среды [gmt_yuldashev2024] (с. 57).\n• Посмертно кокаин нестабилен и продолжает разрушаться [drummer2004].",
+        "en": "• Cocaine is excreted in urine mostly as metabolites: benzoylecgonine, ecgonine methyl ester, ecgonine, norcocaine; the unchanged fraction is small [gmt_yuldashev2024] (p. 55).\n• Benzoylecgonine ethyl ester (cocaethylene) in urine indicates combined cocaine and alcohol use; anhydroecgonine methyl ester indicates smoking of crack (base) [gmt_yuldashev2024] (p. 55).\n• Cocaine is well extracted from biological fluids with chloroform at pH 7.0–8.5 and partly also from acidic media [gmt_yuldashev2024] (p. 57).\n• Post mortem, cocaine is unstable and continues to degrade [drummer2004]."
+      },
+      "citations": [
+        "gmt_yuldashev2024",
+        "drummer2004"
+      ]
+    },
+    {
+      "key": "reactions",
+      "title": {
+        "uz": "Rangli va mikrokristall reaksiyalar",
+        "ru": "Цветные и микрокристаллические реакции",
+        "en": "Colour and microcrystal reactions"
+      },
+      "body": {
+        "uz": "• Kobalt tiotsianat: ko‘k rang kokain (shu jumladan «krek») bo‘lishi mumkinligini ko‘rsatadi; o‘xshash rangni metakvalon, fensiklidin va nazoratdagi bo‘lmagan moddalar ham beradi [gmt_unodc_rapid_tests] (42-b.).\n• Modifikatsiyalangan Skott testi: reaktiv bilan ko‘k rang → xlorid kislota qo‘shilganda pushti → xloroform qo‘shilganda pastki (xloroform) qatlamda yana ko‘k rang. Bu ketma-ketlikni kam moddalar beradi [gmt_unodc_rapid_tests] (43-b.); darslikda ham shu bosqichlar tasvirlangan [gmt_yuldashev2024] (57-b.).\n• Metil benzoat testi: metanoldagi kaliy gidroksid bilan namlangan namunada metil benzoatga xos hid paydo bo‘ladi va standart bilan solishtiriladi [gmt_unodc_rapid_tests] (43-b.). Darslikda kislotali gidroliz va etanol bilan etil benzoat hidi olinishi tasvirlangan [gmt_yuldashev2024] (57-b.).\n• Kaliy permanganat (xlorid kislotali muhit): to‘g‘ri to‘rtburchak shaklidagi qizil-binafsha kristallar; Mayer, Bushard, Dragendorf, pikrin kislota bilan asosan amorf cho‘kmalar [gmt_yuldashev2024] (57-b.).",
+        "ru": "• Тиоцианат кобальта: синяя окраска указывает на возможное присутствие кокаина (включая «крэк»); сходную окраску дают метаквалон, фенциклидин и неконтролируемые вещества [gmt_unodc_rapid_tests] (с. 42).\n• Модифицированный тест Скотта: с реактивом синяя окраска → после соляной кислоты розовая → после добавления хлороформа синяя окраска вновь появляется в нижнем (хлороформном) слое. Такую последовательность дают немногие вещества [gmt_unodc_rapid_tests] (с. 43); те же этапы описаны в пособии [gmt_yuldashev2024] (с. 57).\n• Тест на метилбензоат: проба, смоченная раствором гидроксида калия в метаноле, приобретает запах метилбензоата, который сравнивают со стандартом [gmt_unodc_rapid_tests] (с. 43). В пособии описан запах этилбензоата после кислотного гидролиза и добавления этанола [gmt_yuldashev2024] (с. 57).\n• Перманганат калия (в солянокислой среде): красно-фиолетовые прямоугольные кристаллы; с реактивами Майера, Бушарда, Драгендорфа, пикриновой кислотой — в основном аморфные осадки [gmt_yuldashev2024] (с. 57).",
+        "en": "• Cobalt thiocyanate: a blue colour indicates possible cocaine (including «crack»); methaqualone, phencyclidine and non-controlled substances give a similar colour [gmt_unodc_rapid_tests] (p. 42).\n• Modified Scott test: blue with the reagent → pink after hydrochloric acid → blue again in the lower (chloroform) layer after chloroform is added. Few substances give this sequence [gmt_unodc_rapid_tests] (p. 43); the textbook describes the same steps [gmt_yuldashev2024] (p. 57).\n• Methyl benzoate test: the sample moistened with methanolic potassium hydroxide develops the odour of methyl benzoate, compared with a reference [gmt_unodc_rapid_tests] (p. 43). The textbook describes the ethyl benzoate odour after acid hydrolysis and ethanol [gmt_yuldashev2024] (p. 57).\n• Potassium permanganate (hydrochloric acid medium): red-violet rectangular crystals; Mayer, Bouchardat, Dragendorff and picric acid give mostly amorphous precipitates [gmt_yuldashev2024] (p. 57)."
+      },
+      "citations": [
+        "gmt_unodc_rapid_tests",
+        "gmt_yuldashev2024"
+      ]
+    },
+    {
+      "key": "tlc",
+      "title": {
+        "uz": "YuQX",
+        "ru": "ТСХ",
+        "en": "TLC"
+      },
+      "body": {
+        "uz": "Darslikda silikagel plastinkalarda uchta tizim keltiriladi: xloroform–dioksan–etilatsetat–25% ammiak (25:60:10:5), metanol–25% ammiak (100:1,5) va siklogeksan–toluol–dietilamin (75:15:10) [gmt_yuldashev2024] (57-b.).\n\nQutbli metabolitlar — benzoilekgonin va ekgonin — birinchi va uchinchi (kam qutbli) tizimlarda startda qoladi va faqat metanol–ammiak tizimida harakatlanadi; kokain, sinnamoilkokain va mahalliy anestetiklar (prokain, benzokain) tizimlarga qarab turlicha ajraladi [gmt_yuldashev2024] (58-b.). Shuning uchun bitta tizim yetarli emas — kamida ikki tizim va standartlar ishlatiladi [uchiyama2008].",
+        "ru": "В пособии для пластинок силикагеля приведены три системы: хлороформ–диоксан–этилацетат–25% аммиак (25:60:10:5), метанол–25% аммиак (100:1,5) и циклогексан–толуол–диэтиламин (75:15:10) [gmt_yuldashev2024] (с. 57).\n\nПолярные метаболиты — бензоилэкгонин и экгонин — в первой и третьей (малополярных) системах остаются на старте и движутся только в системе метанол–аммиак; кокаин, циннамоилкокаин и местные анестетики (прокаин, бензокаин) разделяются по-разному в зависимости от системы [gmt_yuldashev2024] (с. 58). Поэтому одной системы недостаточно — используют не менее двух систем и стандарты [uchiyama2008].",
+        "en": "The textbook gives three systems on silica gel: chloroform–dioxane–ethyl acetate–25% ammonia (25:60:10:5), methanol–25% ammonia (100:1.5) and cyclohexane–toluene–diethylamine (75:15:10) [gmt_yuldashev2024] (p. 57).\n\nThe polar metabolites benzoylecgonine and ecgonine stay at the origin in the first and third (less polar) systems and move only in methanol–ammonia; cocaine, cinnamoylcocaine and local anaesthetics (procaine, benzocaine) separate differently depending on the system [gmt_yuldashev2024] (p. 58). One system is therefore not enough — at least two systems and standards are used [uchiyama2008]."
+      },
+      "citations": [
+        "gmt_yuldashev2024",
+        "uchiyama2008"
+      ]
+    },
+    {
+      "key": "instrumental",
+      "title": {
+        "uz": "Instrumental tasdiqlash va miqdor",
+        "ru": "Инструментальное подтверждение и количество",
+        "en": "Instrumental confirmation and quantitation"
+      },
+      "body": {
+        "uz": "• EI mass-spektrda kokainning asosiy cho‘qqisi m/z 82 [gmt_pubchem_2026]; identifikatsiya GX-MS yoki SX-MS bilan, standart va kutubxona spektri bilan solishtirib olib boriladi [maurer2004, swgdrug2024].\n• Darslikda YuSSX (fosfat bufer–atsetonitril, bir necha to‘lqin uzunligida UB-detektsiya) hamda kokain gidroxloridni kislotali suvdagi eritmada 234 nm da kalibrlash grafigi bo‘yicha miqdoriy aniqlash tasvirlangan [gmt_yuldashev2024] (58-b.).\n• Suyultiruvchi moddalar (lidokain, prokain, kofein) UB-spektrga ta’sir qiladi, shuning uchun miqdor xromatografik ajratishdan keyin aniqlanadi [gmt_yuldashev2024] (54, 58-b.).",
+        "ru": "• Основной пик кокаина в масс-спектре ЭИ — m/z 82 [gmt_pubchem_2026]; идентификацию проводят ГХ-МС или ЖХ-МС со сравнением со стандартом и библиотечным спектром [maurer2004, swgdrug2024].\n• В пособии описаны ВЭЖХ (фосфатный буфер–ацетонитрил, УФ-детекция на нескольких длинах волн) и количественное определение гидрохлорида кокаина в подкисленном водном растворе при 234 нм по градуировочному графику [gmt_yuldashev2024] (с. 58).\n• Разбавители (лидокаин, прокаин, кофеин) влияют на УФ-спектр, поэтому количество определяют после хроматографического разделения [gmt_yuldashev2024] (с. 54, 58).",
+        "en": "• The base peak of cocaine in the EI mass spectrum is m/z 82 [gmt_pubchem_2026]; identification uses GC-MS or LC-MS compared with a reference standard and library spectrum [maurer2004, swgdrug2024].\n• The textbook describes HPLC (phosphate buffer–acetonitrile, UV detection at several wavelengths) and quantitation of cocaine hydrochloride in acidified water at 234 nm against a calibration graph [gmt_yuldashev2024] (p. 58).\n• Cutting agents (lidocaine, procaine, caffeine) affect the UV spectrum, so quantitation follows chromatographic separation [gmt_yuldashev2024] (pp. 54, 58)."
+      },
+      "citations": [
+        "gmt_pubchem_2026",
+        "maurer2004",
+        "swgdrug2024",
+        "gmt_yuldashev2024"
+      ]
+    },
+    {
+      "key": "limitations",
+      "title": {
+        "uz": "Cheklovlar",
+        "ru": "Ограничения",
+        "en": "Limitations"
+      },
+      "body": {
+        "uz": "• Kobalt tiotsianat testi kokain uchun xususiy emas [gmt_unodc_rapid_tests] (42-b.); Skott testi selektivroq, lekin u ham taxminiy [gmt_unodc_rapid_tests] (43-b.).\n• Darslikda hayvon ko‘ziga tomizish (qorachiq kengayishi) va til uchida sezuvchanlikni baholash kabi farmakologik/organoleptik sinovlar eslatiladi [gmt_yuldashev2024] (57-b.); zamonaviy identifikatsiya sxemalarida bunday sinovlar yo‘q, ular xavfli va tavsiya etilmaydi — instrumental usullar qo‘llanadi [swgdrug2024].\n• Immunokimyoviy skrining natijasi tasdiqlashni talab qiladi [saitman2014].",
+        "ru": "• Тест с тиоцианатом кобальта неспецифичен для кокаина [gmt_unodc_rapid_tests] (с. 42); тест Скотта селективнее, но тоже предварителен [gmt_unodc_rapid_tests] (с. 43).\n• В пособии упомянуты фармакологические/органолептические пробы (закапывание в глаз животного, оценка онемения кончика языка) [gmt_yuldashev2024] (с. 57); в современных схемах идентификации таких проб нет, они опасны и не рекомендуются — применяются инструментальные методы [swgdrug2024].\n• Результат иммунохимического скрининга требует подтверждения [saitman2014].",
+        "en": "• The cobalt thiocyanate test is not specific for cocaine [gmt_unodc_rapid_tests] (p. 42); the Scott test is more selective but still presumptive [gmt_unodc_rapid_tests] (p. 43).\n• The textbook mentions pharmacological/organoleptic tests (instilling into an animal's eye, judging numbness of the tongue tip) [gmt_yuldashev2024] (p. 57); modern identification schemes contain no such tests, they are unsafe and not recommended — instrumental methods are used [swgdrug2024].\n• Immunochemical screening results require confirmation [saitman2014]."
+      },
+      "citations": [
+        "gmt_unodc_rapid_tests",
+        "gmt_yuldashev2024",
+        "swgdrug2024",
+        "saitman2014"
+      ]
+    },
+    {
+      "key": "cautions",
+      "title": {
+        "uz": "Manbadan olinmagan ma’lumotlar",
+        "ru": "Что не взято из источника",
+        "en": "What was not taken from the source"
+      },
+      "body": {
+        "uz": "Darslikdagi dozalar, o‘lim dozalari, bioyaroqlilik foizlari va ishlab chiqarishga oid ma’lumotlar (prekursor miqdorlari) [gmt_yuldashev2024] (55–56-b.) tahlil uchun zarur emas va mustaqil tekshirilmagani sababli keltirilmadi. YuQX dagi Rf×100 qiymatlari o‘rniga faqat sifat xulosasi berildi [gmt_yuldashev2024] (58-b.).",
+        "ru": "Дозы, смертельные дозы, доли биодоступности и сведения о производстве (количества прекурсоров) из пособия [gmt_yuldashev2024] (с. 55–56) не нужны для анализа и не проверены независимо, поэтому не приводятся. Вместо значений Rf×100 в ТСХ дан только качественный вывод [gmt_yuldashev2024] (с. 58).",
+        "en": "Doses, lethal doses, bioavailability percentages and manufacturing details (precursor quantities) in the textbook [gmt_yuldashev2024] (pp. 55–56) are not needed for analysis and were not independently verified, so they are omitted. Instead of the Rf×100 values only a qualitative conclusion is given [gmt_yuldashev2024] (p. 58)."
+      },
+      "citations": [
+        "gmt_yuldashev2024"
+      ]
+    }
+  ],
+  "keywords": {
+    "uz": [
+      "kokain",
+      "krek",
+      "kokain gidroxlorid",
+      "koka",
+      "benzoilekgonin",
+      "ekgonin metil efiri",
+      "kokaetilen",
+      "angidroekgonin metil efiri",
+      "kobalt tiotsianat",
+      "Skott testi",
+      "metil benzoat",
+      "lidokain",
+      "prokain",
+      "tropan alkaloidlari"
+    ],
+    "ru": [
+      "кокаин",
+      "крэк",
+      "гидрохлорид кокаина",
+      "кока",
+      "бензоилэкгонин",
+      "метилэкгонин",
+      "кокаэтилен",
+      "тиоцианат кобальта",
+      "тест Скотта",
+      "метилбензоат",
+      "лидокаин",
+      "прокаин",
+      "тропановые алкалоиды"
+    ],
+    "en": [
+      "cocaine",
+      "crack",
+      "cocaine hydrochloride",
+      "coca",
+      "benzoylecgonine",
+      "ecgonine methyl ester",
+      "cocaethylene",
+      "anhydroecgonine methyl ester",
+      "cobalt thiocyanate",
+      "Scott test",
+      "methyl benzoate",
+      "lidocaine",
+      "procaine",
+      "tropane alkaloids"
+    ]
+  },
+  "omitted_unverified": [
+    "Half-lives, bioavailability, clinical/street/lethal doses (p. 55): not verified.",
+    "Urinary metabolite percentages (p. 55) and detection windows: not verified, described qualitatively.",
+    "Manufacturing quantities of precursors (p. 56): not relevant and not verified.",
+    "Rf x 100 table (p. 58) and HPLC retention data: condition-dependent."
+  ],
+  "quiz": [
+    {
+      "id": "gmt.coc.1",
+      "q": {
+        "uz": "Modifikatsiyalangan Skott testida kokain bo‘lsa, rang ketma-ketligi qanday?",
+        "ru": "Какова последовательность окрасок в модифицированном тесте Скотта при наличии кокаина?",
+        "en": "What colour sequence does the modified Scott test show with cocaine?"
+      },
+      "a": {
+        "uz": "Ko‘k → pushti (HCl) → xloroform qatlamida yana ko‘k",
+        "ru": "Синяя → розовая (HCl) → снова синяя в хлороформном слое",
+        "en": "Blue → pink (HCl) → blue again in the chloroform layer"
+      },
+      "d": {
+        "uz": [
+          "Zarg‘aldoq → jigarrang",
+          "Binafsha → qizil-binafsha",
+          "Sariq → och yashil"
+        ],
+        "ru": [
+          "Оранжевая → коричневая",
+          "Фиолетовая → красно-фиолетовая",
+          "Жёлтая → светло-зелёная"
+        ],
+        "en": [
+          "Orange → brown",
+          "Violet → reddish-purple",
+          "Yellow → light green"
+        ]
+      },
+      "cite": [
+        "gmt_unodc_rapid_tests",
+        "gmt_yuldashev2024"
+      ],
+      "pages": "57"
+    },
+    {
+      "id": "gmt.coc.2",
+      "q": {
+        "uz": "Siydikda qaysi modda kokain alkogol bilan birga iste’mol qilinganini ko‘rsatadi?",
+        "ru": "Какое вещество в моче указывает на совместный приём кокаина и алкоголя?",
+        "en": "Which urinary substance indicates cocaine taken together with alcohol?"
+      },
+      "a": {
+        "uz": "Kokaetilen (benzoilekgonin etil efiri)",
+        "ru": "Кокаэтилен (этиловый эфир бензоилэкгонина)",
+        "en": "Cocaethylene (benzoylecgonine ethyl ester)"
+      },
+      "d": {
+        "uz": [
+          "Angidroekgonin metil efiri",
+          "Norkokain",
+          "Sinnamoilkokain"
+        ],
+        "ru": [
+          "Метиловый эфир ангидроэкгонина",
+          "Норкокаин",
+          "Циннамоилкокаин"
+        ],
+        "en": [
+          "Anhydroecgonine methyl ester",
+          "Norcocaine",
+          "Cinnamoylcocaine"
+        ]
+      },
+      "pages": "55"
+    },
+    {
+      "id": "gmt.coc.3",
+      "q": {
+        "uz": "Krek (kokain asosi) chekilganini qaysi modda ko‘rsatadi?",
+        "ru": "Какое вещество указывает на курение крэка (основания кокаина)?",
+        "en": "Which substance indicates smoking of crack (cocaine base)?"
+      },
+      "a": {
+        "uz": "Angidroekgonin metil efiri",
+        "ru": "Метиловый эфир ангидроэкгонина",
+        "en": "Anhydroecgonine methyl ester"
+      },
+      "d": {
+        "uz": [
+          "Kokaetilen",
+          "Ekgonin",
+          "6-MAM"
+        ],
+        "ru": [
+          "Кокаэтилен",
+          "Экгонин",
+          "6-МАМ"
+        ],
+        "en": [
+          "Cocaethylene",
+          "Ecgonine",
+          "6-MAM"
+        ]
+      },
+      "pages": "55"
+    },
+    {
+      "id": "gmt.coc.4",
+      "q": {
+        "uz": "Kokain uchun kobalt tiotsianat testining asosiy kamchiligi nima?",
+        "ru": "В чём главный недостаток теста с тиоцианатом кобальта для кокаина?",
+        "en": "What is the main weakness of the cobalt thiocyanate test for cocaine?"
+      },
+      "a": {
+        "uz": "Ko‘k rangni metakvalon, fensiklidin va boshqalar ham beradi",
+        "ru": "Синюю окраску дают и метаквалон, фенциклидин и другие",
+        "en": "Methaqualone, phencyclidine and others also turn it blue"
+      },
+      "d": {
+        "uz": [
+          "Krek bilan umuman reaksiya bermaydi",
+          "Faqat siydikda ishlaydi",
+          "Rang faqat UB nurda ko‘rinadi"
+        ],
+        "ru": [
+          "С крэком вообще не реагирует",
+          "Работает только с мочой",
+          "Окраска видна только в УФ-свете"
+        ],
+        "en": [
+          "It does not react with crack at all",
+          "It works only in urine",
+          "The colour is visible only under UV light"
+        ]
+      },
+      "cite": [
+        "gmt_unodc_rapid_tests"
+      ]
+    },
+    {
+      "id": "gmt.coc.5",
+      "q": {
+        "uz": "Kokainning EI mass-spektridagi asosiy cho‘qqi qaysi?",
+        "ru": "Какой основной пик в ЭИ масс-спектре кокаина?",
+        "en": "What is the base peak in the EI mass spectrum of cocaine?"
+      },
+      "a": {
+        "uz": "m/z 82",
+        "ru": "m/z 82",
+        "en": "m/z 82"
+      },
+      "d": {
+        "uz": [
+          "m/z 245",
+          "m/z 58",
+          "m/z 256"
+        ],
+        "ru": [
+          "m/z 245",
+          "m/z 58",
+          "m/z 256"
+        ],
+        "en": [
+          "m/z 245",
+          "m/z 58",
+          "m/z 256"
+        ]
+      },
+      "cite": [
+        "gmt_pubchem_2026"
+      ]
+    }
+  ]
+}

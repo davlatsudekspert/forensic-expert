@@ -10500,7 +10500,7 @@ abstract class AppLocalizations {
   /// Hub banner.
   ///
   /// In en, this message translates to:
-  /// **'Every card and question is built from a record that already exists in the app, together with its source. Nothing new is written. Material that is still under expert review is labelled.'**
+  /// **'Every card and question is built from a record or guideline that already exists in the app, together with its source. Guideline questions are written by the editors from the card’s facts. Material that is still under expert review is labelled.'**
   String get studyIntro;
 
   /// Hub section.
@@ -12488,6 +12488,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'RIGHTS HOLDER\'S PERMISSION'**
   String get reusePermissionGranted;
+
+  /// Guideline detail / study deck: attribution for cards built on the drug-analysis teaching manual (free for everyone).
+  ///
+  /// In en, this message translates to:
+  /// **'Source: Yuldashev Z.A. et al., «Analysis of narcotic substances. Teaching manual» (Tashkent Pharmaceutical Institute, Tashkent, 2024) — used with the author’s permission, free for everyone.'**
+  String get guidelineGmtAttribution;
+
+  /// Study deck title: questions on the drug-analysis teaching manual.
+  ///
+  /// In en, this message translates to:
+  /// **'Drug analysis (Yuldashev Z.A.)'**
+  String get studyDeckGmt;
 }
 
 class _AppLocalizationsDelegate

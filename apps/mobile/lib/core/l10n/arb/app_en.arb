@@ -7556,7 +7556,7 @@
   "@studyEntrySubtitle": {
     "description": "Learn screen entry."
   },
-  "studyIntro": "Every card and question is built from a record that already exists in the app, together with its source. Nothing new is written. Material that is still under expert review is labelled.",
+  "studyIntro": "Every card and question is built from a record or guideline that already exists in the app, together with its source. Guideline questions are written by the editors from the card’s facts. Material that is still under expert review is labelled.",
   "@studyIntro": {
     "description": "Hub banner."
   },
@@ -9160,5 +9160,13 @@
   "reusePermissionGranted": "RIGHTS HOLDER'S PERMISSION",
   "@reusePermissionGranted": {
     "description": "Reuse status chip: content-rights permission from the owner/author is on record (copyright only; NOT a legal permit for handling hazardous substances)."
+  },
+  "guidelineGmtAttribution": "Source: Yuldashev Z.A. et al., «Analysis of narcotic substances. Teaching manual» (Tashkent Pharmaceutical Institute, Tashkent, 2024) — used with the author’s permission, free for everyone.",
+  "@guidelineGmtAttribution": {
+    "description": "Guideline detail / study deck: attribution for cards built on the drug-analysis teaching manual (free for everyone)."
+  },
+  "studyDeckGmt": "Drug analysis (Yuldashev Z.A.)",
+  "@studyDeckGmt": {
+    "description": "Study deck title: questions on the drug-analysis teaching manual."
   }
 }

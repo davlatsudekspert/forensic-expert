@@ -32,7 +32,11 @@ String studyDeckTitle(AppLocalizations l, StudyDeck d) {
       final x = GuidelineArea.values.asNameMap()[d.key];
       return x == null ? d.key : x.label(l);
     case StudyDeckKind.teachingMaterial:
-      return d.key == StudyCatalogBuilder.toksDeckKey ? l.studyDeckToks : d.key;
+      return switch (d.key) {
+        StudyCatalogBuilder.toksDeckKey => l.studyDeckToks,
+        StudyCatalogBuilder.gmtDeckKey => l.studyDeckGmt,
+        _ => d.key,
+      };
   }
 }
 
@@ -150,7 +154,9 @@ class _DeckCard extends ConsumerWidget {
           if (deck.kind == StudyDeckKind.teachingMaterial) ...[
             const SizedBox(height: FeSpace.xs),
             Text(
-              l.guidelineToksAttribution,
+              deck.key == StudyCatalogBuilder.gmtDeckKey
+                  ? l.guidelineGmtAttribution
+                  : l.guidelineToksAttribution,
               key: Key('study.attribution.${deck.id}'),
               style: t.bodySmall?.copyWith(color: c.textSecondary),
             ),

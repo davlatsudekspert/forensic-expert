@@ -5808,7 +5808,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get studyIntro =>
-      'Har bir kartochka va savol ilovada mavjud yozuvdan, uning manbasi bilan birga tuziladi. Yangi matn yozilmaydi. Hali ekspert tekshiruvidan o‘tmagan material belgilab qo‘yilgan.';
+      'Har bir kartochka va savol ilovada mavjud yozuv yoki yo‘riqnomadan, uning manbasi bilan birga tuziladi. Yo‘riqnoma savollarini tahririyat karta faktlari asosida yozgan. Hali ekspert tekshiruvidan o‘tmagan material belgilab qo‘yilgan.';
 
   @override
   String get studySectionTopics => 'Fanlar bo‘yicha mavzular';
@@ -7036,4 +7036,11 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get reusePermissionGranted => 'MUALLIF/EGASI RUXSATI BILAN';
+
+  @override
+  String get guidelineGmtAttribution =>
+      'Manba: Yuldashev Z.A. va boshq., «Giyohvand moddalar tahlili. O‘quv qo‘llanma» (Toshkent farmatsevtika instituti, Toshkent, 2024) — muallif ruxsati bilan, barcha uchun bepul.';
+
+  @override
+  String get studyDeckGmt => 'Giyohvand moddalar tahlili (Yuldashev Z.A.)';
 }

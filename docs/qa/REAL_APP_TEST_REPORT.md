@@ -392,3 +392,17 @@ Tuzatildi: 320 dp’da «Vancouver» yorlig‘i bo‘linib ketardi; avvalgi
 
 Sinalmagan: iOS/Android qurilmadagi tizim buferi; ADMIN roli (funksiya
 rolga bog‘liq emas); ekspert xulosasi shablonining o‘ziga joylash.
+
+## 8. «Giyohvand moddalar tahlili» (GMT) kartalari va testi (2026-10-09)
+
+`integration_test/qa_gmt_test.dart` — Linux desktop, haqiqiy ilova, MOCK akkaunt, HTTP bloklangan,
+**Pro huquqisiz** (bepul foydalanuvchi). Skrinshotlar: `docs/qa/gmt_20261009/` (8 ta PNG).
+
+| Rol | Qadamlar | Natija |
+|---|---|---|
+| TALABA (uz, 390 dp) | yo‘riqnomalar ro‘yxati; opioidlar, kannabis, huquqiy eslatma kartalari (atribusiya qatori bor); qolgan 6 karta ochiladi; o‘quv testi: savol → javob → manba | 12/12 PASS |
+| MUTAXASSIS (uz, 320 dp) | benzodiazepinlar kartasi; o‘quv markazi to‘plami; test javobi; prekursorlar kartasi | 4/4 PASS |
+
+Ko‘rildi: atribusiya qatori «Manba: Yuldashev Z.A. va boshq., … — muallif ruxsati bilan, barcha uchun bepul»,
+iqtiboslar raqamlanadi va kitob sahifasi «[1] (15-b.)» ko‘rinishida; 320 dp da toshib ketish yo‘q; uz rejimida til
+ogohlantirishlari yo‘q. Tekshirilmagan: ru/en UI, internet o‘chgan holat (kartalar — lokal asset), real iOS.
