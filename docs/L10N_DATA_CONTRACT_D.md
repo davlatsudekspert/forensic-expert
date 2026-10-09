@@ -7,7 +7,7 @@ Sana: 2026-10-09. Holat: barcha tarjimalar **`machine_draft`** (inson tekshirmag
 
 | Joy | Nima | Manba fayl |
 |---|---|---|
-| `text_translations` `research_title` (uz, ru) | 100 ta tadqiqot sarlavhasi glossi (o‘limdan keyingi / PMR / PMI ustuvor to‘plami) | `content/pilot/translations/research_titles_i18n.json` → `tools/apply_text_translations.py` |
+| `text_translations` `research_title` (uz, ru) | **882 / 883** tadqiqot sarlavhasi glossi (hammasi `machine_draft`). Tarjima qilinmagan 1 ta sarlavha va sababi: `content/pilot/translations/research_titles_pending.json` (asl sarlavha har uch tilda o‘zgarmagan holda ko‘rsatiladi) | `content/pilot/translations/research_titles_i18n.json` → `tools/apply_text_translations.py` |
 | `text_translations` `claim_excerpt` | 10 ta tarjimada mingliklar «1,710» → «1 710» (uz/ru’da vergul — o‘nli kasr); 7 ta qisqartma tiklandi (CSF, CoA, EG, PK, UDP); ВЭЖХ → HPLC | `excerpts_i18n.json` |
 | `authorities.names` | 6 ta idora uz/ru/en («Олий Мажлис…» → uz «O‘zbekiston Respublikasi Oliy Majlisi», en «Oliy Majlis (Parliament) of the Republic of Uzbekistan») | `content/tools/apply_l10n_d.py` |
 | `jurisdictions.names` | INT uz/ru | 〃 |
@@ -47,7 +47,14 @@ jadvali shaklida:
 | `context_text` | `<claim_id>#<context_strict kaliti>[i]` (faqat erkin matn; `not_stated` kabi kodlar — ARB yorlig‘i) | 67 |
 | `list_item` | `<claim_id>#items[i]` | 34 |
 | `source_title` | `SRC-FE-EDITORIAL` (asl tili uz → `text.ru`, `text.en`) | 1 |
-| `topic_body` | `<topic_id>`; `derived: true`, `source_claims[]` — faqat kartadagi manbali da’volardan | 1 |
+| `topic_body` | `<topic_id>`; `derived: true`, `source_claims[]` — faqat kartadagi manbali da’volardan | 45 |
+| `method_body` | `<method_id>`; shart-sharoiti `topic_body` bilan bir xil (`derived: true`, `source_claims[]`) | 18 |
+
+Barcha 63 ta mavzu/usul kartasi (45 mavzu + 18 usul) uchun uch tilli tushuntiruvchi bo‘lim
+`topic_body` / `method_body` yozuvlarida: matn faqat o‘sha kartaning manbali da’volaridan
+chiqarilgan (yangi fakt yo‘q, raqam va birlik o‘zgarmagan — `translation_qa.py` `derived`
+tekshiruvi), oxirida kartaning qolgan bo‘limlari hali manbasiz ekani aytiladi. Status —
+`machine_draft`: ilmiy reviewer tasdig‘i kerak.
 
 Qoidalar: yozuv faqat `sha256(asl matn) == source_sha256` bo‘lsa ko‘rsatiladi; status faqat
 `machine_draft` (validator `terminology_checked`/`claim_checked` ni ham qabul qiladi, lekin

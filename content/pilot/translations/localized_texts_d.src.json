@@ -670,6 +670,17 @@
         "en": "Vitreous urea and creatinine are markers related to renal function. According to the card's source, urea concentrations in vitreous humor (VH) were significantly correlated with renal or infectious causes of death and with multi-organ failure. This explanation rests only on that sourced statement; the other sections have no source yet."
       }
     },
+    "ent-pmi-insects": {
+      "claims": [
+        "C-ENT-PMI-INSECTS-PRINCIPLE-P8",
+        "C-ENT-PMI-INSECTS-PRINCIPLE_TEMPERATURE-P8"
+      ],
+      "text": {
+        "uz": "Sud entomologiyasi hasharotlar dalilini o‘lim muddatini baholashga bog‘laydi. Kartadagi manbali da’volarga ko‘ra, sud entomologiyasi hasharotlar dalilini huquqiy masalalarga, jumladan eng kam o‘limdan keyin o‘tgan vaqt oralig‘i (mPMI)ni baholashga qo‘llaydi; ikkinchi usul hasharotlar rivojlanishining qonuniyligiga, xususan harorat va rivojlanish tezligi o‘rtasidagi yaqin bog‘liqlikka tayanadi. Tushuntirish faqat shu manbali da’volardan olingan; boshqa bo‘limlar uchun hali manba yo‘q.",
+        "ru": "Судебная энтомология связывает энтомологические данные с оценкой давности смерти. Согласно источникам карточки, судебная энтомология применяет данные о насекомых к правовым вопросам, в частности к оценке минимального посмертного интервала (mPMI); второй метод опирается на закономерность развития насекомых, прежде всего на тесную связь между температурой и скоростью развития. Пояснение составлено только по этим утверждениям из источников; для других разделов источника пока нет.",
+        "en": "Forensic entomology links insect evidence to the estimation of time since death. According to the card's sources, forensic entomology applies insect evidence to legal problems such as the estimation of the minimum postmortem interval (mPMI); the second method uses the regularity of insect development, in particular the close relationship between temperature and the rate of development. This explanation rests only on those sourced statements; the other sections have no source yet."
+      }
+    },
     "fm-age-estimation": {
       "claims": [
         "C-FM-AGE-ESTIMATION-LIMITATION-P5"
@@ -853,6 +864,17 @@
         "en": "Stature estimation relies on skeletal dimensions. According to the card's source, stature estimation of skeletal remains depends mostly on the lengths of long bones, but these are often unavailable in fragmented or commingled assemblages. This explanation rests only on that sourced statement; the other sections have no source yet."
       }
     },
+    "gen-str-profiling": {
+      "claims": [
+        "C-GEN-STR-PROFILING-PRINCIPLE-P8",
+        "C-GEN-STR-PROFILING-LIMITATION-P8"
+      ],
+      "text": {
+        "uz": "DNK profillash (STR) sud biologiyasining asosiy usuli. Kartadagi manbali da’volarga ko‘ra, DNK profillash uchun STR multipleks PCR ning paydo bo‘lishi qo‘shimcha gipero‘zgaruvchan STR lokuslarini kiritishga imkon berdi va bu usul tez orada RFLP tahlilini siqib chiqarib, sud biologiyasining tayanchiga aylandi; shu bilan birga sud ekspertlari ko‘pincha DNK butunligi turli parchalanish jarayonlari tufayli buzilgan, amplifikatsiya samaradorligiga ta’sir qiluvchi murakkab namunalar bilan ishlashga to‘g‘ri keladi. Tushuntirish faqat shu manbali da’volardan olingan; kartaning boshqa bo‘limlari uchun hali manba yo‘q.",
+        "ru": "DNA-профилирование (STR) — основной метод судебной биологии. Согласно источникам карточки, появление мультиплексной PCR по STR для DNA-профилирования позволило ввести дополнительные гипервариабельные локусы STR, и этот метод быстро вытеснил анализ RFLP, став опорой судебной биологии; при этом судебным экспертам часто приходится работать с трудными образцами, в которых целостность DNA нарушена различными процессами деградации, влияющими на эффективность амплификации. Пояснение составлено только по этим утверждениям из источников; для других разделов карточки источника пока нет.",
+        "en": "DNA profiling (STR) is the core method of forensic biology. According to the card's sources, the advent of STR multiplexing PCR for DNA profiling allowed additional hypervariable STR loci to be introduced, and the technique quickly superseded RFLP analysis to become the cornerstone of the forensic biology discipline; at the same time forensic scientists frequently deal with challenging samples in which DNA integrity is compromised through degradation processes that affect amplification efficiency. This explanation rests only on those sourced statements; the card's other sections have no source yet."
+      }
+    },
     "his-fat-embolism": {
       "claims": [
         "C-HIS-FAT-EMBOLISM-CASE_OBSERVATION-P5"
@@ -913,6 +935,26 @@
         "en": "Assessing wound vitality and age is difficult. According to the card's source, because of supravital reactions and the minor morphological changes evident during this time, immunohistochemical parameters for age assessment and vitality of human skin wounds remain challenging. This explanation rests only on that sourced statement; the other sections have no source yet."
       }
     },
+    "mic-thanatomicrobiome": {
+      "claims": [
+        "C-MIC-THANATOMICROBIOME-PRINCIPLE-P8"
+      ],
+      "text": {
+        "uz": "Tanatomikrobiom — o‘limdan keyingi mikrobiom. Kartadagi manbali da’voga ko‘ra, tanatomikrobiom, ya’ni o‘limdan keyingi mikrobiom, egasining o‘lim vaqti va joyini ko‘rsatuvchi foydali mikrobial marker sifatida tan olingan. Tushuntirish faqat shu manbali da’vodan olingan; boshqa bo‘limlar uchun hali manba yo‘q.",
+        "ru": "Танатомикробиом — посмертный микробиом. Согласно источнику карточки, танатомикробиом, то есть посмертный микробиом, признан полезным микробным маркером времени и места смерти хозяина. Пояснение составлено только по этому утверждению из источника; для других разделов источника пока нет.",
+        "en": "The thanatomicrobiome is the postmortem microbiome. According to the card's source, the thanatomicrobiome, or postmortem microbiome, has been recognized as a useful microbial marker of the time and location of host death. This explanation rests only on that sourced statement; the other sections have no source yet."
+      }
+    },
+    "rad-pmct": {
+      "claims": [
+        "C-RAD-PMCT-APPLICATION-P8"
+      ],
+      "text": {
+        "uz": "O‘limdan keyingi kompyuter tomografiyasi (PMCT) yorib ko‘rishdan oldingi tasvirlash usuli. Kartadagi manbali da’voga ko‘ra, o‘limdan keyingi kompyuter tomografiyasi tananing bir nechta sohasini bir vaqtda tahlil qilishga imkon beradi; klinik tadqiqotlarda esa (tekshiruv sohasi cheklangan bo‘lishi kerak) bu har doim mumkin bo‘lmaydi. Tushuntirish faqat shu manbali da’vodan olingan; boshqa bo‘limlar uchun hali manba yo‘q.",
+        "ru": "Посмертная компьютерная томография (PMCT) — метод визуализации до вскрытия. Согласно источнику карточки, посмертная компьютерная томография позволяет анализировать несколько областей тела одновременно, что может быть невозможно в клинических исследованиях, где область исследования должна быть ограничена. Пояснение составлено только по этому утверждению из источника; для других разделов источника пока нет.",
+        "en": "Post-mortem computed tomography (PMCT) is an imaging method used before autopsy. According to the card's source, postmortem computed tomography allows the analysis of several areas of the body at the same time, which may not be possible in clinical trials, where the examination area should be limited. This explanation rests only on that sourced statement; the other sections have no source yet."
+      }
+    },
     "tox-postmortem-redistribution": {
       "claims": [
         "C-TOX-POSTMORTEM-REDISTRIBUTION-PRINCIPLE-P8"
@@ -924,5 +966,190 @@
       }
     }
   },
-  "method_bodies": {}
+  "method_bodies": {
+    "method-derivatization": {
+      "claims": [
+        "C-METHOD-DERIVATIZATION-PRINCIPLE-P5"
+      ],
+      "text": {
+        "uz": "Derivatizatsiya GC (gaz xromatografiyasi) uchun birikmalarni moslashtiradi. Kartadagi manbali da’voga ko‘ra, ba’zi birikmalarning uchuvchanligi past bo‘lishiga qaramay, ularni mos ravishda derivatizatsiya qilgan holda GC-MS bilan ham samarali natijaga erishish mumkin. Tushuntirish faqat shu manbali da’vodan olingan; kartaning boshqa bo‘limlari uchun hali manba yo‘q.",
+        "ru": "Дериватизация приспосабливает соединения для GC (газовой хроматографии). Согласно источнику карточки, несмотря на низкую летучесть некоторых соединений, эффективный результат может быть получен и с помощью GC-MS при их подходящей дериватизации. Пояснение составлено только по этому утверждению из источника; для других разделов карточки источника пока нет.",
+        "en": "Derivatization adapts compounds for GC (gas chromatography). According to the card's source, although certain compounds have poor volatility, an efficient result can also be achieved with GC-MS when the compounds are suitably derivatized. This explanation rests only on that sourced statement; the card's other sections have no source yet."
+      }
+    },
+    "method-gc-fid": {
+      "claims": [
+        "C-METHOD-GC-FID-APPLICATION-P5"
+      ],
+      "text": {
+        "uz": "GC-FID (alanga-ionlanish detektorli gaz xromatografiyasi) etanolni aniqlashda qo‘llanadi. Kartadagi manbali da’voga ko‘ra, etanol miqdorini aniqlashda ikki kolonkali, ikki detektorli HS-GC-FID sud toksikologiyasida keng tarqalgan analitik usul; biroq ko‘pchilik tizimlar bu usuldagidek sodda gaz o‘tkazmaydigan shprizdan ko‘ra bosim muvozanatidagi kiritishdan foydalanadi. Tushuntirish faqat shu manbali da’vodan olingan; kartaning boshqa bo‘limlari uchun hali manba yo‘q.",
+        "ru": "GC-FID (газовая хроматография с пламенно-ионизационным детектором) применяется для определения этанола. Согласно источнику карточки, использование двухколоночного двухдетекторного HS-GC-FID для количественного определения этанола — распространённый аналитический приём в судебной токсикологии; однако большинство систем используют ввод с уравновешиванием давления, а не упрощённый газонепроницаемый шприц, как в описанной методике. Пояснение составлено только по этому утверждению из источника; для других разделов карточки источника пока нет.",
+        "en": "GC-FID (gas chromatography with flame ionization detection) is used to determine ethanol. According to the card's source, the use of a dual-column, dual-detector HS-GC-FID to quantitate ethanol is a common analytical technique in forensic toxicology; however, most analytical systems use pressure-balance injection rather than the simplified gas-tight syringe of that technique. This explanation rests only on that sourced statement; the card's other sections have no source yet."
+      }
+    },
+    "method-gcms": {
+      "claims": [
+        "C-METHOD-GCMS-ROLE_IN_FORENSIC_TOXICOLOGY",
+        "C-METHOD-GCMS-PRINCIPLE-P5",
+        "C-METHOD-GCMS-LIMITATION-P5"
+      ],
+      "text": {
+        "uz": "GC-MS (gaz xromatografiyasi — mass-spektrometriya) sud toksikologiyasining asosiy usullaridan biri. Kartadagi manbali da’volarga ko‘ra, sud toksikologlari GC-MS va LC-MS kabi usullarni qo‘llaydilar va ular sohada «oltin standart» hisoblanadi; qondagi alkogol konsentratsiyasi va uchuvchi moddalar bug‘ fazali GC-MS tizimi bilan aniqlangan. Shu bilan birga GC-MS ning cheklovlari bor: u uchuvchi bo‘lmagan, qutbli yoki termolabil birikmalarni tahlil qilishga yaroqsiz, chunki bu birikmalar gaz xromatografiyasi uchun kerakli yuqori haroratlarda parchalanishi mumkin. Tushuntirish faqat shu manbali da’volardan olingan; kartaning boshqa bo‘limlari uchun hali manba yo‘q.",
+        "ru": "GC-MS (газовая хроматография — масс-спектрометрия) — один из основных методов судебной токсикологии. Согласно источникам карточки, судебные токсикологи применяют такие методы, как GC-MS и LC-MS, которые считаются «золотым стандартом» в этой области; концентрацию алкоголя в крови и летучие вещества определяли с помощью равновесно-паровой системы GC-MS. При этом у GC-MS есть ограничения: метод непригоден для анализа нелетучих, полярных или термолабильных соединений, которые могут разрушаться при высоких температурах, необходимых для газовой хроматографии. Пояснение составлено только по этим утверждениям из источников; для других разделов карточки источника пока нет.",
+        "en": "GC-MS (gas chromatography–mass spectrometry) is one of the core methods of forensic toxicology. According to the card's sources, forensic toxicologists employ methods such as GC-MS and LC-MS, which are considered gold standards in the field; blood alcohol concentration and volatile substances were determined with a headspace GC-MS system. GC-MS also has limitations: it is ineffective for non-volatile, polar or thermolabile compounds, which may degrade at the high temperatures required for gas chromatography. This explanation rests only on those sourced statements; the card's other sections have no source yet."
+      }
+    },
+    "method-headspace-gc": {
+      "claims": [
+        "C-METHOD-HEADSPACE-GC-APPLICATION-P5"
+      ],
+      "text": {
+        "uz": "Bug‘ fazali gaz xromatografiyasi qondagi etanolni aniqlash uchun ishlatiladi. Kartadagi manbali da’voga ko‘ra, aniqlik va takrorlanuvchanlikni oshirish uchun inson qonida etanol gaz xromatografiyasining (GC) turli ko‘rinishlari — bevosita kiritishli GC va bug‘ fazali gaz xromatografiyasi (HS-GC) — orqali aniqlanadi. Tushuntirish faqat shu manbali da’vodan olingan; kartaning boshqa bo‘limlari uchun hali manba yo‘q.",
+        "ru": "Равновесно-паровая газовая хроматография применяется для определения этанола в крови. Согласно источнику карточки, для большей точности и прецизионности этанол в крови человека определяют различными вариантами газовой хроматографии (GC), включая GC с прямым вводом и равновесно-паровую газовую хроматографию (HS-GC). Пояснение составлено только по этому утверждению из источника; для других разделов карточки источника пока нет.",
+        "en": "Headspace gas chromatography is used to determine ethanol in blood. According to the card's source, for higher accuracy and precision ethanol is determined in human blood through various types of gas chromatography (GC), including direct injection GC and headspace gas chromatography (HS-GC). This explanation rests only on that sourced statement; the card's other sections have no source yet."
+      }
+    },
+    "method-hplc": {
+      "claims": [
+        "C-METHOD-HPLC-APPLICATION-P5"
+      ],
+      "text": {
+        "uz": "HPLC (yuqori samarali suyuqlik xromatografiyasi) turli detektorlar bilan qo‘llanadi. Kartadagi manbali da’voga ko‘ra, UB, fluoressent yoki diod-matritsali detektorli HPLC farmakokinetik va klinik sharoitlarda morfin va uning glyukuronidlarini mustahkam miqdoriy aniqlash imkonini beradi. Tushuntirish faqat shu manbali da’vodan olingan; kartaning boshqa bo‘limlari uchun hali manba yo‘q.",
+        "ru": "HPLC (высокоэффективная жидкостная хроматография) применяется с разными детекторами. Согласно источнику карточки, HPLC с УФ-, флуоресцентным или диодно-матричным детектированием обеспечивает надёжное количественное определение морфина и его глюкуронидов в фармакокинетических и клинических условиях. Пояснение составлено только по этому утверждению из источника; для других разделов карточки источника пока нет.",
+        "en": "HPLC (high-performance liquid chromatography) is used with various detectors. According to the card's source, HPLC with UV, fluorescence or diode-array detection enables robust quantification of morphine and its glucuronides in pharmacokinetic and clinical settings. This explanation rests only on that sourced statement; the card's other sections have no source yet."
+      }
+    },
+    "method-hrms": {
+      "claims": [
+        "C-METHOD-HRMS-APPLICATION-P5"
+      ],
+      "text": {
+        "uz": "HRMS (yuqori aniqlikdagi mass-spektrometriya) skrining imkoniyatlarini kengaytiradi. Kartadagi manbali da’voga ko‘ra, HRMS ning yana bir afzalligi — nishonga qaratilgan va nishonsiz skriningni birgalikda bajarish imkoniyati. Tushuntirish faqat shu manbali da’vodan olingan; kartaning boshqa bo‘limlari uchun hali manba yo‘q.",
+        "ru": "HRMS (масс-спектрометрия высокого разрешения) расширяет возможности скрининга. Согласно источнику карточки, ещё одно преимущество HRMS — возможность совмещать направленный и ненаправленный скрининг. Пояснение составлено только по этому утверждению из источника; для других разделов карточки источника пока нет.",
+        "en": "HRMS (high-resolution mass spectrometry) widens screening options. According to the card's source, another advantage of HRMS is the option of combined targeted and untargeted screening. This explanation rests only on that sourced statement; the card's other sections have no source yet."
+      }
+    },
+    "method-identification-criteria": {
+      "claims": [
+        "C-METHOD-IDENTIFICATION-CRITERIA-PRINCIPLE-P5"
+      ],
+      "text": {
+        "uz": "Identifikatsiya mezonlari miqdoriy ko‘rsatkichlarni to‘ldiradi. Kartadagi manbali da’voga ko‘ra, miqdoriy ishlash tavsiflaridan tashqari sifat identifikatsiya mezonlari — ion nisbati va ushlanish vaqti — ham baholangan. Tushuntirish faqat shu manbali da’vodan olingan; kartaning boshqa bo‘limlari uchun hali manba yo‘q.",
+        "ru": "Критерии идентификации дополняют количественные характеристики. Согласно источнику карточки, помимо количественных характеристик методики оценивались и качественные критерии идентификации — соотношение ионов и время удерживания. Пояснение составлено только по этому утверждению из источника; для других разделов карточки источника пока нет.",
+        "en": "Identification criteria complement quantitative performance. According to the card's source, in addition to quantitative performance characteristics, qualitative identification criteria — ion ratio and retention time — were also assessed. This explanation rests only on that sourced statement; the card's other sections have no source yet."
+      }
+    },
+    "method-immunoassay": {
+      "claims": [
+        "C-METHOD-IMMUNOASSAY-PRINCIPLE-P5"
+      ],
+      "text": {
+        "uz": "Immunoanaliz antitana-antigen bog‘lanishiga asoslanadi. Kartadagi manbali da’voga ko‘ra, AQShda hozirda sotuvda bo‘lgan barcha kokain skriningi immunoanalizlari antigen nishoni sifatida benzoilekgoninga — odamdagi kokainning asosiy metabolitlaridan biriga — qarshi olingan antitanalardan foydalanadi. Tushuntirish faqat shu manbali da’vodan olingan; kartaning boshqa bo‘limlari uchun hali manba yo‘q.",
+        "ru": "Иммуноанализ основан на связывании антитела с антигеном. Согласно источнику карточки, все продаваемые в настоящее время в США иммуноанализы для скрининга на кокаин используют в качестве антигенной цели антитела к бензоилэкгонину — одному из основных метаболитов кокаина у человека. Пояснение составлено только по этому утверждению из источника; для других разделов карточки источника пока нет.",
+        "en": "Immunoassay rests on antibody–antigen binding. According to the card's source, all cocaine screening immunoassays currently marketed in the United States use antibodies raised against benzoylecgonine, one of the major cocaine metabolites in humans, as the antigenic target. This explanation rests only on that sourced statement; the card's other sections have no source yet."
+      }
+    },
+    "method-lcmsms": {
+      "claims": [
+        "C-METHOD-LCMSMS-PRINCIPLE-P5",
+        "C-METHOD-LCMSMS-LIMITATION-P5"
+      ],
+      "text": {
+        "uz": "LC-MS/MS (suyuqlik xromatografiyasi — tandem mass-spektrometriya) sezgir va o‘ziga xos miqdoriy usul. Kartadagi manbali da’volarga ko‘ra, o‘limdan keyingi inson zardobi namunalarida parakvat (PQ) miqdorini aniqlash uchun LC-MS/MS sodda, sezgir va o‘ziga xos usul sifatida qo‘llangan; biroq matritsa ta’siri sinovida usul opioid buprenorfin va kannabinoid metaboliti 11-Nor-9-karboksi-Δ9-tetragidrokannabinol uchun matritsa bosimi tufayli ideal bo‘lmagani ko‘rsatilgan. Tushuntirish faqat shu manbali da’volardan olingan; kartaning boshqa bo‘limlari uchun hali manba yo‘q.",
+        "ru": "LC-MS/MS (жидкостная хроматография — тандемная масс-спектрометрия) — чувствительный и специфичный количественный метод. Согласно источникам карточки, LC-MS/MS применяли как простой, чувствительный и специфичный метод количественного анализа параквата (PQ) в посмертных образцах сыворотки человека; однако при проверке матричного эффекта метод оказался неидеальным для опиоида бупренорфина и метаболита каннабиноидов 11-Nor-9-карбокси-Δ9-тетрагидроканнабинола из-за подавления матрицей. Пояснение составлено только по этим утверждениям из источников; для других разделов карточки источника пока нет.",
+        "en": "LC-MS/MS (liquid chromatography–tandem mass spectrometry) is a sensitive and specific quantitative method. According to the card's sources, LC-MS/MS was used as a simple, sensitive and specific method for the quantitative analysis of paraquat (PQ) in post-mortem human serum samples; however, when the matrix effect was tested, the method was not ideal for the opioid buprenorphine and the cannabinoid metabolite 11-Nor-9-carboxy-Δ9-tetrahydrocannabinol because of matrix suppression. This explanation rests only on those sourced statements; the card's other sections have no source yet."
+      }
+    },
+    "method-lle": {
+      "claims": [
+        "C-METHOD-LLE-PRINCIPLE-P5"
+      ],
+      "text": {
+        "uz": "Suyuqlik–suyuqlik ekstraksiyasi (LLE) matritsa ta’sirini kamaytiradi. Kartadagi manbali da’voga ko‘ra, suyuqlik–suyuqlik ekstraksiyasi namunalardagi lipid darajasidan qat’i nazar past matritsa ta’sirini bergan, biroq ajratib olish darajasi va aniqligida sezilarli farqlar topilgan. Tushuntirish faqat shu manbali da’vodan olingan; kartaning boshqa bo‘limlari uchun hali manba yo‘q.",
+        "ru": "Жидкостно-жидкостная экстракция (LLE) снижает матричный эффект. Согласно источнику карточки, жидкостно-жидкостная экстракция давала низкий матричный эффект независимо от уровня липидов в образцах, однако были обнаружены заметные различия в степени извлечения и правильности. Пояснение составлено только по этому утверждению из источника; для других разделов карточки источника пока нет.",
+        "en": "Liquid–liquid extraction (LLE) lowers the matrix effect. According to the card's source, liquid–liquid extraction provided a low matrix effect regardless of the lipid levels in the samples, but pronounced differences were found in recovery and accuracy. This explanation rests only on that sourced statement; the card's other sections have no source yet."
+      }
+    },
+    "method-protein-precipitation": {
+      "claims": [
+        "C-METHOD-PROTEIN-PRECIPITATION-PRINCIPLE-P5"
+      ],
+      "text": {
+        "uz": "Oqsillarni cho‘ktirish — namuna tayyorlashning sodda usuli. Kartadagi manbali da’voga ko‘ra, tavsiflangan usulda namuna tayyorlash tez va sodda bo‘lib, asosan enzimatik dekonjugatsiya va organik erituvchilar bilan oqsillarni cho‘ktirishdan iborat. Tushuntirish faqat shu manbali da’vodan olingan; kartaning boshqa bo‘limlari uchun hali manba yo‘q.",
+        "ru": "Осаждение белков — простой способ подготовки образца. Согласно источнику карточки, подготовка образца в описанной методике быстра и проста и состоит в основном из ферментативной деконъюгации и осаждения белков органическими растворителями. Пояснение составлено только по этому утверждению из источника; для других разделов карточки источника пока нет.",
+        "en": "Protein precipitation is a simple sample preparation step. According to the card's source, sample preparation in the method described is fast and simple and consists mainly of enzymatic deconjugation and protein precipitation with organic solvents. This explanation rests only on that sourced statement; the card's other sections have no source yet."
+      }
+    },
+    "method-quechers": {
+      "claims": [
+        "C-METHOD-QUECHERS-APPLICATION-P5"
+      ],
+      "text": {
+        "uz": "QuEChERS ekstraksiyasi biologik namunalarga ham qo‘llanadi. Kartadagi manbali da’voga ko‘ra, qoldiq yurak qoni namunalari deproteinizatsiya va QuEChERS usullari bilan oldindan ishlangan. Tushuntirish faqat shu manbali da’vodan olingan; kartaning boshqa bo‘limlari uchun hali manba yo‘q.",
+        "ru": "Экстракция QuEChERS применяется и к биологическим образцам. Согласно источнику карточки, остаточные образцы сердечной крови предварительно обрабатывали методами депротеинизации и QuEChERS. Пояснение составлено только по этому утверждению из источника; для других разделов карточки источника пока нет.",
+        "en": "QuEChERS extraction is also applied to biological specimens. According to the card's source, residual cardiac blood samples were pretreated using deproteinization and QuEChERS methods. This explanation rests only on that sourced statement; the card's other sections have no source yet."
+      }
+    },
+    "method-spe": {
+      "claims": [
+        "C-METHOD-SPE-PRINCIPLE-P5"
+      ],
+      "text": {
+        "uz": "Qattiq fazali ekstraksiya (SPE) namunani tozalash usuli. Kartadagi manbali da’voga ko‘ra, Birkler va hamkasblarining tadqiqotida to‘liq qondan keng tarqalgan suiiste’mol moddalarini ajratib olish uchun qattiq fazali ekstraksiya (SPE) kartridjlari qo‘llangan. Tushuntirish faqat shu manbali da’vodan olingan; kartaning boshqa bo‘limlari uchun hali manba yo‘q.",
+        "ru": "Твердофазная экстракция (SPE) — метод подготовки и очистки образца. Согласно источнику карточки, в исследовании Birkler и соавторов применяли картриджи твердофазной экстракции (SPE) для извлечения распространённых веществ злоупотребления из цельной крови. Пояснение составлено только по этому утверждению из источника; для других разделов карточки источника пока нет.",
+        "en": "Solid-phase extraction (SPE) is a sample clean-up method. According to the card's source, a study by Birkler et al. used solid phase extraction (SPE) cartridges to extract common drugs of abuse from whole blood. This explanation rests only on that sourced statement; the card's other sections have no source yet."
+      }
+    },
+    "method-spectroscopy": {
+      "claims": [
+        "C-METHOD-SPECTROSCOPY-APPLICATION-P5"
+      ],
+      "text": {
+        "uz": "Tebranma spektroskopiya (IQ / Raman) tez va buzmaydigan tahlil imkonini beradi. Kartadagi manbali da’voga ko‘ra, tadqiqot susaytirilgan to‘liq qaytarishli Furye o‘zgartirishli infraqizil spektroskopiya (ATR-FTIR) yordamida siydikdagi keng tarqalgan dori metabolitlarini aniqlash orqali modda iste’molini tez, invaziv bo‘lmagan usulda belgilash metodikasini yaratishga qaratilgan. Tushuntirish faqat shu manbali da’vodan olingan; kartaning boshqa bo‘limlari uchun hali manba yo‘q.",
+        "ru": "Вибрационная спектроскопия (ИК / Raman) позволяет проводить быстрый и неразрушающий анализ. Согласно источнику карточки, исследование направлено на создание быстрой неинвазивной методики выявления употребления веществ путём идентификации распространённых метаболитов в моче с помощью инфракрасной спектроскопии с преобразованием Фурье и нарушенным полным внутренним отражением (ATR-FTIR). Пояснение составлено только по этому утверждению из источника; для других разделов карточки источника пока нет.",
+        "en": "Vibrational spectroscopy (IR / Raman) allows rapid, non-destructive analysis. According to the card's source, the study seeks to establish a rapid, non-invasive methodology for detecting drug use by identifying common urinary drug metabolites with attenuated total reflectance Fourier transform infrared spectroscopy (ATR-FTIR). This explanation rests only on that sourced statement; the card's other sections have no source yet."
+      }
+    },
+    "method-tlc": {
+      "claims": [
+        "C-METHOD-TLC-APPLICATION-P5"
+      ],
+      "text": {
+        "uz": "TLC (yupqa qatlamli xromatografiya) skrining usuli sifatida ishlatilgan. Kartadagi manbali da’voga ko‘ra, immunoanalizlar yupqa qatlamli xromatografiya yoki kolorimetrik sinovlar kabi boshqa modda skriningi usullarini bosqichma-bosqich siqib chiqargan. Tushuntirish faqat shu manbali da’vodan olingan; kartaning boshqa bo‘limlari uchun hali manba yo‘q.",
+        "ru": "TLC (тонкослойная хроматография) применялась как метод скрининга. Согласно источнику карточки, иммуноанализы постепенно вытеснили другие методы скрининга на вещества, такие как тонкослойная хроматография или колориметрические тесты. Пояснение составлено только по этому утверждению из источника; для других разделов карточки источника пока нет.",
+        "en": "TLC (thin-layer chromatography) was used as a screening method. According to the card's source, immunoassays have steadily displaced other drug screening methods such as thin-layer chromatography or colorimetric assays. This explanation rests only on that sourced statement; the card's other sections have no source yet."
+      }
+    },
+    "method-uncertainty": {
+      "claims": [
+        "C-METHOD-UNCERTAINTY-PRINCIPLE-P5"
+      ],
+      "text": {
+        "uz": "O‘lchov noaniqligi natijani talqin qilishning bir qismi. Kartadagi manbali da’voga ko‘ra, siljish t-test yordamida, nishonning noaniqligi — sertifikatlangan etalon materialning noaniqligi — o‘lchov noaniqligiga kiritilgan holda baholangan. Tushuntirish faqat shu manbali da’vodan olingan; kartaning boshqa bo‘limlari uchun hali manba yo‘q.",
+        "ru": "Неопределённость измерений — часть интерпретации результата. Согласно источнику карточки, смещение оценивали с помощью t-критерия, включая неопределённость цели — неопределённость сертифицированного эталонного материала — в неопределённость измерения. Пояснение составлено только по этому утверждению из источника; для других разделов карточки источника пока нет.",
+        "en": "Measurement uncertainty is part of interpreting a result. According to the card's source, the bias was evaluated using a t-test that incorporated the uncertainty of the target — the certified reference material uncertainty — into the measurement uncertainty. This explanation rests only on that sourced statement; the card's other sections have no source yet."
+      }
+    },
+    "method-uvvis": {
+      "claims": [
+        "C-METHOD-UVVIS-APPLICATION-P5"
+      ],
+      "text": {
+        "uz": "UB-ko‘rinadigan spektrofotometriya karboksigemoglobinni aniqlashda qo‘llangan. Kartadagi manbali da’voga ko‘ra, COHb Katsumata va hamkasblari tavsiya etgan tartibda spektrofotometriya bilan aniqlangan. Tushuntirish faqat shu manbali da’vodan olingan; kartaning boshqa bo‘limlari uchun hali manba yo‘q.",
+        "ru": "УФ-видимая спектрофотометрия применялась для определения карбоксигемоглобина. Согласно источнику карточки, COHb определяли спектрофотометрией по рекомендации Katsumata и соавторов. Пояснение составлено только по этому утверждению из источника; для других разделов карточки источника пока нет.",
+        "en": "UV-Vis spectrophotometry was used to determine carboxyhaemoglobin. According to the card's source, COHb was determined by spectrophotometry as recommended by Katsumata et al. This explanation rests only on that sourced statement; the card's other sections have no source yet."
+      }
+    },
+    "method-validation": {
+      "claims": [
+        "C-METHOD-VALIDATION-PRINCIPLE-P5",
+        "C-METHOD-VALIDATION-LIMITATION-P5"
+      ],
+      "text": {
+        "uz": "Metod validatsiyasi natijaning ishonchliligini belgilaydi. Kartadagi manbali da’volarga ko‘ra, sud toksikologiyasining metod validatsiyasi yo‘riqnomalariga muvofiq, dorilar konsentratsiyasi dastlabki qiymatlarning ±20% doirasida qolsa, ular barqaror hisoblanadi, ya’ni 20% dan kam parchalanish ahamiyatsiz deb olinadi va metodning qabul qilinadigan siljishi doirasiga kiradi; shu bilan birga sharh suyak ko‘migi (BM) anatomiyasi, namuna olish joyi, ksenobiotiklar taqsimlanishi va barqarorligi hamda o‘limdan keyingi qayta taqsimlanish (PMR) va chirishning tahlil natijalarini toksikologik talqin qilishga ta’sirini umumlashtiradi. Tushuntirish faqat shu manbali da’volardan olingan; kartaning boshqa bo‘limlari uchun hali manba yo‘q.",
+        "ru": "Валидация методики определяет надёжность результата. Согласно источникам карточки, по руководствам судебной токсикологии по валидации методик вещества считаются стабильными, если их концентрации остаются в пределах ±20% от исходных значений, то есть деградация менее 20% признаётся незначимой и попадает в допустимое смещение методики; при этом обзор суммирует данные об анатомии костного мозга (BM), месте взятия образца, распределении и стабильности ксенобиотиков, а также о влиянии посмертного перераспределения (PMR) и гниения на токсикологическую интерпретацию аналитических результатов. Пояснение составлено только по этим утверждениям из источников; для других разделов карточки источника пока нет.",
+        "en": "Method validation defines how reliable a result is. According to the card's sources, under forensic toxicology guidelines for method validation drugs are considered stable if their concentrations remain within ±20% of the original values, meaning that degradation of less than 20% is deemed insignificant and falls within the acceptable method bias; the review also summarizes bone marrow (BM) anatomy, sampling site, xenobiotic distribution and stability, and the influence of postmortem redistribution (PMR) and putrefaction on the toxicological interpretation of analytical results. This explanation rests only on those sourced statements; the card's other sections have no source yet."
+      }
+    }
+  }
 }
