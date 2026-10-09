@@ -101,3 +101,10 @@ qoida sifatida bermaydi.
 2. Laboratoriya sxemalarida benzol (sevin, karbofos) — xavfsizroq erituvchi bilan
    almashtirish tavsiyasi kartada umumiy xavfsizlik talabi sifatida berilgan.
 3. Rus va ingliz matnlari — mashina yordamidagi qoralama (`DRAFT`).
+
+## Manba auditi (2026-10-09)
+Har bir iqtibosli da’vo (177) va 34 savol majmua sahifasi bilan solishtirildi:
+`docs/qa/TOKS_SOURCE_AUDIT.md`. 144 SUPPORTED, 29 PARTIAL (toraytirildi),
+4 WRONG_PAGE (tuzatildi), 0 olib tashlandi; savollar: 27 SUPPORTED, 7 tuzatildi.
+Kitobdagi tenglama xatolari tuzatilgan holda qoldi, iqtibos endi «majmuada
+balanslanmagan; to‘g‘ri shakli …» deb aniq yoziladi. Kartalar `NEEDS_REVIEW`.
