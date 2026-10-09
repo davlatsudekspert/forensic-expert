@@ -20,9 +20,9 @@
     "en": "Cocaine: analysis and identification"
   },
   "summary": {
-    "uz": "Kokain — koka bargidan olinadigan tropan alkaloidi; tuz (gidroxlorid) va asos («krek») shakllarida uchraydi. Dastlabki aniqlash kobalt tiotsianat va Skott testi, metil benzoat hidi bilan; YuQX va GX-MS (asosiy cho‘qqi m/z 82) bilan tasdiqlanadi. Biologik namunalarda asosiy belgi — benzoilekgonin; kokaetilen alkogol bilan birga iste’molni ko‘rsatadi.",
-    "ru": "Кокаин — тропановый алкалоид из листьев коки; встречается в форме соли (гидрохлорид) и основания («крэк»). Предварительно выявляется тиоцианатом кобальта и тестом Скотта, запахом метилбензоата; подтверждается ТСХ и ГХ-МС (основной пик m/z 82). В биологических образцах главный маркер — бензоилэкгонин; кокаэтилен указывает на сочетание с алкоголем.",
-    "en": "Cocaine is a tropane alkaloid from coca leaves, found as the salt (hydrochloride) and as the base («crack»). It is screened with cobalt thiocyanate and the Scott test and by the methyl benzoate odour, and confirmed by TLC and GC-MS (base peak m/z 82). In biological samples the main marker is benzoylecgonine; cocaethylene indicates combined use with alcohol."
+    "uz": "Kokain — koka bargidan olinadigan tropan alkaloidi; tuz (gidroxlorid) va asos («krek») shakllarida uchraydi. Dastlabki aniqlash kobalt tiotsianat va Skott testi, metil benzoat hidi bilan; TLC (yupqa qatlamli xromatografiya) va GC-MS (gaz xromatografiyasi — mass-spektrometriya) (asosiy cho‘qqi m/z 82) bilan tasdiqlanadi. Biologik namunalarda asosiy belgi — benzoilekgonin; kokaetilen alkogol bilan birga iste’molni ko‘rsatadi.",
+    "ru": "Кокаин — тропановый алкалоид из листьев коки; встречается в форме соли (гидрохлорид) и основания («крэк»). Предварительно выявляется тиоцианатом кобальта и тестом Скотта, запахом метилбензоата; подтверждается TLC (тонкослойная хроматография) и GC-MS (газовая хроматография — масс-спектрометрия) (основной пик m/z 82). В биологических образцах главный маркер — бензоилэкгонин; кокаэтилен указывает на сочетание с алкоголем.",
+    "en": "Cocaine is a tropane alkaloid from coca leaves, found as the salt (hydrochloride) and as the base («crack»). It is screened with cobalt thiocyanate and the Scott test and by the methyl benzoate odour, and confirmed by TLC (thin-layer chromatography) and GC-MS (gas chromatography–mass spectrometry) (base peak m/z 82). In biological samples the main marker is benzoylecgonine; cocaethylene indicates combined use with alcohol."
   },
   "sections": [
     {
@@ -79,8 +79,8 @@
     {
       "key": "tlc",
       "title": {
-        "uz": "YuQX",
-        "ru": "ТСХ",
+        "uz": "TLC",
+        "ru": "TLC",
         "en": "TLC"
       },
       "body": {
@@ -101,9 +101,9 @@
         "en": "Instrumental confirmation and quantitation"
       },
       "body": {
-        "uz": "• EI mass-spektrda kokainning asosiy cho‘qqisi m/z 82 [gmt_pubchem_2026]; identifikatsiya GX-MS yoki SX-MS bilan, standart va kutubxona spektri bilan solishtirib olib boriladi [maurer2004, swgdrug2024].\n• Darslikda YuSSX (fosfat bufer–atsetonitril, bir necha to‘lqin uzunligida UB-detektsiya) hamda kokain gidroxloridni kislotali suvdagi eritmada 234 nm da kalibrlash grafigi bo‘yicha miqdoriy aniqlash tasvirlangan [gmt_yuldashev2024] (58-b.).\n• Suyultiruvchi moddalar (lidokain, prokain, kofein) UB-spektrga ta’sir qiladi, shuning uchun miqdor xromatografik ajratishdan keyin aniqlanadi [gmt_yuldashev2024] (54, 58-b.).",
-        "ru": "• Основной пик кокаина в масс-спектре ЭИ — m/z 82 [gmt_pubchem_2026]; идентификацию проводят ГХ-МС или ЖХ-МС со сравнением со стандартом и библиотечным спектром [maurer2004, swgdrug2024].\n• В пособии описаны ВЭЖХ (фосфатный буфер–ацетонитрил, УФ-детекция на нескольких длинах волн) и количественное определение гидрохлорида кокаина в подкисленном водном растворе при 234 нм по градуировочному графику [gmt_yuldashev2024] (с. 58).\n• Разбавители (лидокаин, прокаин, кофеин) влияют на УФ-спектр, поэтому количество определяют после хроматографического разделения [gmt_yuldashev2024] (с. 54, 58).",
-        "en": "• The base peak of cocaine in the EI mass spectrum is m/z 82 [gmt_pubchem_2026]; identification uses GC-MS or LC-MS compared with a reference standard and library spectrum [maurer2004, swgdrug2024].\n• The textbook describes HPLC (phosphate buffer–acetonitrile, UV detection at several wavelengths) and quantitation of cocaine hydrochloride in acidified water at 234 nm against a calibration graph [gmt_yuldashev2024] (p. 58).\n• Cutting agents (lidocaine, procaine, caffeine) affect the UV spectrum, so quantitation follows chromatographic separation [gmt_yuldashev2024] (pp. 54, 58)."
+        "uz": "• EI mass-spektrda kokainning asosiy cho‘qqisi m/z 82 [gmt_pubchem_2026]; identifikatsiya GC-MS yoki LC-MS (suyuqlik xromatografiyasi — mass-spektrometriya) bilan, standart va kutubxona spektri bilan solishtirib olib boriladi [maurer2004, swgdrug2024].\n• Darslikda HPLC (yuqori samarali suyuqlik xromatografiyasi) (fosfat bufer–atsetonitril, bir necha to‘lqin uzunligida UB-detektsiya) hamda kokain gidroxloridni kislotali suvdagi eritmada 234 nm da kalibrlash grafigi bo‘yicha miqdoriy aniqlash tasvirlangan [gmt_yuldashev2024] (58-b.).\n• Suyultiruvchi moddalar (lidokain, prokain, kofein) UB-spektrga ta’sir qiladi, shuning uchun miqdor xromatografik ajratishdan keyin aniqlanadi [gmt_yuldashev2024] (54, 58-b.).",
+        "ru": "• Основной пик кокаина в масс-спектре ЭИ — m/z 82 [gmt_pubchem_2026]; идентификацию проводят GC-MS или LC-MS (жидкостная хроматография — масс-спектрометрия) со сравнением со стандартом и библиотечным спектром [maurer2004, swgdrug2024].\n• В пособии описаны HPLC (высокоэффективная жидкостная хроматография) (фосфатный буфер–ацетонитрил, УФ-детекция на нескольких длинах волн) и количественное определение гидрохлорида кокаина в подкисленном водном растворе при 234 нм по градуировочному графику [gmt_yuldashev2024] (с. 58).\n• Разбавители (лидокаин, прокаин, кофеин) влияют на УФ-спектр, поэтому количество определяют после хроматографического разделения [gmt_yuldashev2024] (с. 54, 58).",
+        "en": "• The base peak of cocaine in the EI mass spectrum is m/z 82 [gmt_pubchem_2026]; identification uses GC-MS or LC-MS (liquid chromatography–mass spectrometry) compared with a reference standard and library spectrum [maurer2004, swgdrug2024].\n• The textbook describes HPLC (high-performance liquid chromatography) (phosphate buffer–acetonitrile, UV detection at several wavelengths) and quantitation of cocaine hydrochloride in acidified water at 234 nm against a calibration graph [gmt_yuldashev2024] (p. 58).\n• Cutting agents (lidocaine, procaine, caffeine) affect the UV spectrum, so quantitation follows chromatographic separation [gmt_yuldashev2024] (pp. 54, 58)."
       },
       "citations": [
         "gmt_pubchem_2026",
@@ -139,9 +139,9 @@
         "en": "What was not taken from the source"
       },
       "body": {
-        "uz": "Darslikdagi dozalar, o‘lim dozalari, bioyaroqlilik foizlari va ishlab chiqarishga oid ma’lumotlar (prekursor miqdorlari) [gmt_yuldashev2024] (55–56-b.) tahlil uchun zarur emas va mustaqil tekshirilmagani sababli keltirilmadi. YuQX dagi Rf×100 qiymatlari o‘rniga faqat sifat xulosasi berildi [gmt_yuldashev2024] (58-b.).",
-        "ru": "Дозы, смертельные дозы, доли биодоступности и сведения о производстве (количества прекурсоров) из пособия [gmt_yuldashev2024] (с. 55–56) не нужны для анализа и не проверены независимо, поэтому не приводятся. Вместо значений Rf×100 в ТСХ дан только качественный вывод [gmt_yuldashev2024] (с. 58).",
-        "en": "Doses, lethal doses, bioavailability percentages and manufacturing details (precursor quantities) in the textbook [gmt_yuldashev2024] (pp. 55–56) are not needed for analysis and were not independently verified, so they are omitted. Instead of the Rf×100 values only a qualitative conclusion is given [gmt_yuldashev2024] (p. 58)."
+        "uz": "Darslikdagi dozalar, o‘lim dozalari, bioyaroqlilik foizlari va ishlab chiqarishga oid ma’lumotlar (prekursor miqdorlari) [gmt_yuldashev2024] (55–56-b.) tahlil uchun zarur emas va mustaqil tekshirilmagani sababli keltirilmadi. TLC dagi Rf×100 qiymatlari o‘rniga faqat sifat xulosasi berildi [gmt_yuldashev2024] (58-b.).",
+        "ru": "Дозы, смертельные дозы, доли биодоступности и сведения о производстве (количества прекурсоров) из пособия [gmt_yuldashev2024] (с. 55–56) не нужны для анализа и не проверены независимо, поэтому не приводятся. Вместо значений Rf×100 в TLC дан только качественный вывод [gmt_yuldashev2024] (с. 58).",
+        "en": "Doses, lethal doses, bioavailability percentages and manufacturing details (precursor quantities) in the textbook [gmt_yuldashev2024] (pp. 55–56) are not needed for analysis and were not independently verified, so they are omitted. Instead of the TLC Rf×100 values only a qualitative conclusion is given [gmt_yuldashev2024] (p. 58)."
       },
       "citations": [
         "gmt_yuldashev2024"

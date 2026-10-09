@@ -2,7 +2,7 @@
 """Validate abbreviation_glossary.json against canonical_terms.json and copy
 it into the app asset (apps/mobile/assets/content/terminology/).
 
-Checks: every canonical term has exactly one glossary entry with the same
+Checks: every glossary entry points to a canonical term (canonical_id) with the same
 abbreviation; expansion matches the canonical expansion; explanation and
 expansion present in uz/ru/en; status is machine_draft / translated /
 reviewed (never promoted silently); Uzbek text uses U+2018 for o‘/g‘.
@@ -25,13 +25,13 @@ def main() -> int:
     canon = json.loads((HERE / "canonical_terms.json").read_text(encoding="utf-8"))
     data = json.loads((HERE / "abbreviation_glossary.json").read_text(encoding="utf-8"))
     errors = []
-    by_canon = {t["canonical_id"]: t for t in data["terms"]}
-    for c in canon["terms"]:
-        t = by_canon.get(c["id"])
-        if t is None:
-            errors.append(f"{c['id']}: no glossary entry")
+    canon_by_id = {c["id"]: c for c in canon["terms"]}
+    for t in data["terms"]:
+        c = canon_by_id.get(t["canonical_id"])
+        if c is None:
+            errors.append(f"{t['id']}: canonical_id {t['canonical_id']!r} not in canonical_terms.json")
             continue
-        if t["abbreviation"] != c["abbreviation"]:
+        if t["abbreviation"] != c["abbr"]:
             errors.append(f"{c['id']}: abbreviation differs")
         for lang in LANGS:
             if t["expansion"].get(lang) != c["expansion"].get(lang):

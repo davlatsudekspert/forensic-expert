@@ -1849,13 +1849,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get tech_tlc => 'TLC (тонкослойная хроматография)';
 
   @override
-  String get tech_gc => 'ГХ';
+  String get tech_gc => 'GC';
 
   @override
-  String get tech_gcFid => 'ГХ-ПИД';
+  String get tech_gcFid => 'GC-FID';
 
   @override
-  String get tech_headspaceGc => 'Парофазная ГХ';
+  String get tech_headspaceGc => 'Парофазная GC';
 
   @override
   String get tech_gcMs => 'GC-MS';

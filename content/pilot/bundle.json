@@ -13,7 +13,9 @@
       "jurisdiction_id": "INT",
       "level": "international",
       "names": {
-        "en": "International"
+        "en": "International",
+        "ru": "Международный уровень",
+        "uz": "Xalqaro daraja"
       }
     },
     {
@@ -110,42 +112,55 @@
       "authority_id": "AUTH-GB-PARLIAMENT",
       "jurisdiction_id": "GB",
       "names": {
-        "en": "Parliament of the United Kingdom"
+        "en": "Parliament of the United Kingdom",
+        "ru": "Парламент Соединённого Королевства",
+        "uz": "Buyuk Britaniya Parlamenti"
       }
     },
     {
       "authority_id": "AUTH-GB-SCT-MINISTERS",
       "jurisdiction_id": "GB-SCT",
       "names": {
-        "en": "The Scottish Ministers"
+        "en": "The Scottish Ministers",
+        "ru": "Правительство Шотландии (The Scottish Ministers)",
+        "uz": "Shotlandiya hukumati (The Scottish Ministers)"
       }
     },
     {
       "authority_id": "AUTH-GB-MDA-1971-SCH2",
       "jurisdiction_id": "GB",
       "names": {
-        "en": "Parliament of the United Kingdom"
+        "en": "Parliament of the United Kingdom",
+        "ru": "Парламент Соединённого Королевства",
+        "uz": "Buyuk Britaniya Parlamenti"
       }
     },
     {
       "authority_id": "AUTH-US-21CFR1308",
       "jurisdiction_id": "US",
       "names": {
-        "en": "Drug Enforcement Administration (DEA), U.S. Department of Justice"
+        "en": "Drug Enforcement Administration (DEA), U.S. Department of Justice",
+        "ru": "Управление по борьбе с наркотиками (DEA), Министерство юстиции США",
+        "uz": "AQSh Adliya vazirligining Giyohvand moddalarga qarshi kurash boshqarmasi (DEA)"
       }
     },
     {
       "authority_id": "AUTH-DE-BTMG-ANL",
       "jurisdiction_id": "DE",
       "names": {
-        "en": "Bundesministerium der Justiz (Veröffentlichung)"
+        "de": "Bundesministerium der Justiz (Veröffentlichung)",
+        "en": "Federal Ministry of Justice of Germany (Bundesministerium der Justiz), publisher",
+        "ru": "Федеральное министерство юстиции Германии (Bundesministerium der Justiz), публикация",
+        "uz": "Germaniya Federal adliya vazirligi (Bundesministerium der Justiz), nashr"
       }
     },
     {
       "authority_id": "AUTH-UZ-LAW-813-I",
       "jurisdiction_id": "UZ",
       "names": {
-        "en": "Олий Мажлис Республики Узбекистан"
+        "en": "Oliy Majlis (Parliament) of the Republic of Uzbekistan",
+        "ru": "Олий Мажлис Республики Узбекистан",
+        "uz": "O‘zbekiston Respublikasi Oliy Majlisi"
       }
     }
   ],
@@ -9893,7 +9908,7 @@
       "source_id": "SRC-OWNER-REAGENTS",
       "source_type": "report",
       "source_class": "secondary",
-      "title": "«Приготовление реактивов» — reagent preparation compilation (toxicological chemistry), 74 entries",
+      "title": "«Приготовление реактивов»",
       "organization": "FORENSIC EXPERT ilovasi egasi — shaxsiy to‘plam (internet manbalari: xumuk.ru kimyo ensiklopediyasi / darslik materiallari)",
       "accessed_date": "2026-10-09",
       "tier": "tier3",
@@ -9902,7 +9917,7 @@
       "license_agreement_id": "OWNER-PERMISSION-2026-10-09",
       "identifier_verified": false,
       "language": "ru",
-      "notes": "Egasi ruxsati bilan, 2026-10-09. Ilova egasi internet manbalaridan (xumuk.ru / darslik materiallari) to‘plagan hujjat; asl fayl repoga kiritilmagan. Raqamlar o‘zgarishsiz; uz/en tarjimalar machine_draft; ilmiy review kutilmoqda."
+      "notes": "Egasi ruxsati bilan, 2026-10-09. Ilova egasi internet manbalaridan (xumuk.ru / darslik materiallari) to‘plagan hujjat; asl fayl repoga kiritilmagan. Raqamlar o‘zgarishsiz; uz/en tarjimalar machine_draft; ilmiy review kutilmoqda. Bibliographic title kept in its original language (ru); descriptive gloss: reagent preparation compilation (toxicological chemistry), 74 entries."
     },
     {
       "source_id": "SRC-FE-EDITORIAL",
@@ -25061,7 +25076,9 @@
       "jurisdiction_id": "INT",
       "instrument_type": "controlled_substance_schedule",
       "titles": {
-        "en": "List of Narcotic Drugs under International Control (Yellow List), 65th edition"
+        "en": "List of Narcotic Drugs under International Control (Yellow List), 65th edition",
+        "ru": "Перечень наркотических средств, находящихся под международным контролем («Жёлтый список»), 65-е издание",
+        "uz": "Xalqaro nazoratdagi giyohvandlik vositalari ro‘yxati («Sariq ro‘yxat»), 65-nashr"
       },
       "official_source_id": "SRC-INCB-YELLOW-LIST-65",
       "official_reference": "Single Convention on Narcotic Drugs, 1961 — 65th edition, July 2026",
@@ -25069,14 +25086,17 @@
       "version": "65th edition, July 2026",
       "last_verified_at": "2026-10-04",
       "review_status": "NEEDS_REVIEW",
-      "date_precision": "month"
+      "date_precision": "month",
+      "translation_status": "machine_draft"
     },
     {
       "instrument_id": "INT-INCB-GL-36",
       "jurisdiction_id": "INT",
       "instrument_type": "controlled_substance_schedule",
       "titles": {
-        "en": "List of Psychotropic Substances under International Control (Green List), 36th edition"
+        "en": "List of Psychotropic Substances under International Control (Green List), 36th edition",
+        "ru": "Перечень психотропных веществ, находящихся под международным контролем («Зелёный список»), 36-е издание",
+        "uz": "Xalqaro nazoratdagi psixotrop moddalar ro‘yxati («Yashil ro‘yxat»), 36-nashr"
       },
       "official_source_id": "SRC-INCB-GREEN-LIST-36",
       "official_reference": "Convention on Psychotropic Substances of 1971 — 36th edition, 2025",
@@ -25084,7 +25104,8 @@
       "version": "36th edition, 2025",
       "last_verified_at": "2026-10-04",
       "review_status": "NEEDS_REVIEW",
-      "date_precision": "year"
+      "date_precision": "year",
+      "translation_status": "machine_draft"
     },
     {
       "instrument_id": "GB-RTA-1988-S11",
@@ -25092,7 +25113,9 @@
       "instrument_type": "law",
       "authority_id": "AUTH-GB-PARLIAMENT",
       "titles": {
-        "en": "Road Traffic Act 1988, s. 11"
+        "en": "Road Traffic Act 1988, s. 11",
+        "ru": "Закон о дорожном движении 1988 г. (Road Traffic Act 1988), раздел 11",
+        "uz": "1988-yilgi Yo‘l harakati to‘g‘risidagi qonun (Road Traffic Act 1988), 11-bo‘lim"
       },
       "official_source_id": "SRC-GB-RTA-1988-S11",
       "official_reference": "1988 c. 52, s. 11(2)",
@@ -25102,7 +25125,8 @@
       "legal_status": "in_force",
       "language": "en",
       "review_status": "NEEDS_REVIEW",
-      "date_precision": "day"
+      "date_precision": "day",
+      "translation_status": "machine_draft"
     },
     {
       "instrument_id": "GB-SCT-SSI-2014-328",
@@ -25110,7 +25134,9 @@
       "instrument_type": "regulation",
       "authority_id": "AUTH-GB-SCT-MINISTERS",
       "titles": {
-        "en": "The Road Traffic Act 1988 (Prescribed Limit) (Scotland) Regulations 2014"
+        "en": "The Road Traffic Act 1988 (Prescribed Limit) (Scotland) Regulations 2014",
+        "ru": "Постановление 2014 г. к Закону о дорожном движении 1988 г. о предельно допустимых уровнях (Шотландия)",
+        "uz": "1988-yilgi Yo‘l harakati to‘g‘risidagi qonunga oid belgilangan chegaralar haqidagi (Shotlandiya) 2014-yilgi qoidalar"
       },
       "official_source_id": "SRC-GB-SSI-2014-328",
       "official_reference": "SSI 2014/328, reg. 2 (made 2014-11-20)",
@@ -25120,7 +25146,8 @@
       "legal_status": "in_force",
       "language": "en",
       "review_status": "NEEDS_REVIEW",
-      "date_precision": "day"
+      "date_precision": "day",
+      "translation_status": "machine_draft"
     },
     {
       "instrument_id": "GB-MDA-1971-SCH2",
@@ -25156,7 +25183,7 @@
       },
       "translation_status": "machine_draft",
       "official_source_id": "SRC-US-21CFR1308",
-      "official_reference": "21 CFR 1308.11–1308.15 — consolidated text retrieved 2026-10-04; date of entry into force not recorded (NEEDS LEGAL REVIEW)",
+      "official_reference": "21 CFR 1308.11–1308.15",
       "effective_from": "2026-10-04",
       "version": "2026-10-04",
       "last_verified_at": "2026-10-04",
@@ -25164,7 +25191,8 @@
       "publication_date": null,
       "language": "en",
       "review_status": "NEEDS_REVIEW",
-      "date_precision": "day"
+      "date_precision": "day",
+      "internal_note": "21 CFR 1308.11–1308.15 — consolidated text retrieved 2026-10-04; date of entry into force not recorded (NEEDS LEGAL REVIEW)"
     },
     {
       "instrument_id": "DE-BTMG-ANL",
@@ -25179,7 +25207,7 @@
       },
       "translation_status": "machine_draft",
       "official_source_id": "SRC-DE-BTMG-ANL",
-      "official_reference": "BtMG 1981, Anlagen I–III — consolidated text retrieved 2026-10-04; date of entry into force not recorded (NEEDS LEGAL REVIEW)",
+      "official_reference": "BtMG 1981, Anlagen I–III",
       "effective_from": "2026-10-04",
       "version": "2026-10-04",
       "last_verified_at": "2026-10-04",
@@ -25187,7 +25215,8 @@
       "publication_date": "1981-07-28",
       "language": "de",
       "review_status": "NEEDS_REVIEW",
-      "date_precision": "day"
+      "date_precision": "day",
+      "internal_note": "BtMG 1981, Anlagen I–III — consolidated text retrieved 2026-10-04; date of entry into force not recorded (NEEDS LEGAL REVIEW)"
     },
     {
       "instrument_id": "UZ-LAW-813-I",
@@ -25201,7 +25230,7 @@
       },
       "translation_status": "machine_draft",
       "official_source_id": "SRC-UZ-LAW-813-I",
-      "official_reference": "№ 813-I — consolidated text retrieved 2026-10-04; date of entry into force not recorded (NEEDS LEGAL REVIEW)",
+      "official_reference": "19.08.1999, № 813-I",
       "effective_from": "2026-10-04",
       "version": "2026-10-04",
       "last_verified_at": "2026-10-04",
@@ -25209,7 +25238,9 @@
       "publication_date": "1999-08-19",
       "language": "ru",
       "review_status": "NEEDS_REVIEW",
-      "date_precision": "day"
+      "date_precision": "day",
+      "internal_title_note": "uz/ru titles are the official names on lex.uz (uz-Cyrl docs/86044 transliterated to Latin; ru docs/86028), read 2026-10-09; en is unofficial.",
+      "internal_note": "№ 813-I — consolidated text retrieved 2026-10-04; date of entry into force not recorded (NEEDS LEGAL REVIEW)"
     }
   ],
   "rules": [
@@ -27577,8 +27608,8 @@
       "kind": "scientificMethod",
       "titles": {
         "en": "Gas chromatography–mass spectrometry (GC-MS)",
-        "ru": "Газовая хроматография — масс-спектрометрия (ГХ-МС)",
-        "uz": "Gaz xromatografiyasi — mass-spektrometriya (GX-MS)"
+        "ru": "Газовая хроматография — масс-спектрометрия (GC-MS)",
+        "uz": "Gaz xromatografiyasi — mass-spektrometriya (GC-MS)"
       },
       "techniques": [
         "gcMs"
@@ -27596,8 +27627,8 @@
       "kind": "scientificMethod",
       "titles": {
         "en": "GC-FID (flame ionization detection)",
-        "ru": "ГХ-ПИД",
-        "uz": "GX-AID (alanga ionizatsiya detektori)"
+        "ru": "GC-FID (газовая хроматография с пламенно-ионизационным детектором)",
+        "uz": "GC-FID (alanga-ionlanish detektorli gaz xromatografiyasi)"
       },
       "techniques": [
         "gcFid"
@@ -27632,8 +27663,8 @@
       "kind": "scientificMethod",
       "titles": {
         "en": "LC-MS/MS (liquid chromatography–tandem mass spectrometry)",
-        "ru": "ВЭЖХ-МС/МС",
-        "uz": "SX-MS/MS (tandem mass-spektrometriya)"
+        "ru": "LC-MS/MS (жидкостная хроматография — тандемная масс-спектрометрия)",
+        "uz": "LC-MS/MS (suyuqlik xromatografiyasi — tandem mass-spektrometriya)"
       },
       "techniques": [
         "lcMsMs"
@@ -27652,8 +27683,8 @@
       "kind": "scientificMethod",
       "titles": {
         "en": "HPLC (UV / DAD / fluorescence)",
-        "ru": "ВЭЖХ (УФ / ДМД)",
-        "uz": "YuSSX (UB / DAD)"
+        "ru": "HPLC — высокоэффективная жидкостная хроматография (УФ / DAD / флуоресцентный детектор)",
+        "uz": "HPLC — yuqori samarali suyuqlik xromatografiyasi (UB / DAD / fluoressent detektor)"
       },
       "techniques": [
         "hplc"
@@ -27670,8 +27701,8 @@
       "kind": "scientificMethod",
       "titles": {
         "en": "Thin-layer chromatography (TLC)",
-        "ru": "Тонкослойная хроматография (ТСХ)",
-        "uz": "Yupqa qatlamli xromatografiya (YuQX)"
+        "ru": "Тонкослойная хроматография (TLC)",
+        "uz": "Yupqa qatlamli xromatografiya (TLC)"
       },
       "techniques": [
         "tlc"
@@ -27833,8 +27864,8 @@
       "kind": "scientificMethod",
       "titles": {
         "en": "Derivatization for GC",
-        "ru": "Дериватизация для ГХ",
-        "uz": "GX uchun derivatizatsiya"
+        "ru": "Дериватизация для GC (газовой хроматографии)",
+        "uz": "GC (gaz xromatografiyasi) uchun derivatizatsiya"
       },
       "techniques": [
         "samplePreparation"
@@ -28324,25 +28355,45 @@
           "name": "distilled water",
           "amount": 70,
           "unit": "mL",
-          "variant": "pmc"
+          "variant": "pmc",
+          "names": {
+            "uz": "distillangan suv",
+            "ru": "дистиллированная вода",
+            "en": "distilled water"
+          }
         },
         {
           "name": "acetic acid",
           "amount": 20,
           "unit": "mL",
-          "variant": "pmc"
+          "variant": "pmc",
+          "names": {
+            "uz": "sirka kislota",
+            "ru": "уксусная кислота",
+            "en": "acetic acid"
+          }
         },
         {
           "name": "potassium iodide solution, 40 g% (w/v)",
           "amount": 5,
           "unit": "mL",
-          "variant": "pmc"
+          "variant": "pmc",
+          "names": {
+            "uz": "kaliy yodid eritmasi, 40 g% (w/v)",
+            "ru": "раствор иодида калия, 40 g% (w/v)",
+            "en": "potassium iodide solution, 40 g% (w/v)"
+          }
         },
         {
           "name": "basic bismuth nitrate, 1.7 g% w/v in 20% v/v acetic acid",
           "amount": 5,
           "unit": "mL",
-          "variant": "pmc"
+          "variant": "pmc",
+          "names": {
+            "uz": "asosli vismut nitrat, 20% v/v sirka kislotadagi 1,7 g% w/v",
+            "ru": "основной нитрат висмута, 1,7 g% w/v в 20% v/v уксусной кислоте",
+            "en": "basic bismuth nitrate, 1.7 g% w/v in 20% v/v acetic acid"
+          }
         }
       ],
       "steps": [
@@ -28378,7 +28429,12 @@
         },
         {
           "text": "Dragendorff’s reagent was prepared by mixing 70 mL distilled water and 20 mL acetic acid with 5 mL of 40 g% potassium iodide solution and 5 mL of 1.7 g% w/v basic bismuth nitrate in 20% v/v acetic acid solution.",
-          "variant": "pmc"
+          "variant": "pmc",
+          "texts": {
+            "uz": "Dragendorf reaktivi 70 ml distillangan suv va 20 ml sirka kislotani 5 ml 40 g% li kaliy yodid eritmasi hamda 20% v/v sirka kislotadagi 1,7 g% w/v asosli vismut nitrat eritmasidan 5 ml bilan aralashtirib tayyorlangan.",
+            "ru": "Реактив Драгендорфа готовили, смешивая 70 мл дистиллированной воды и 20 мл уксусной кислоты с 5 мл 40 g% раствора иодида калия и 5 мл раствора основного нитрата висмута 1,7 g% w/v в 20% v/v уксусной кислоте.",
+            "en": "Dragendorff’s reagent was prepared by mixing 70 mL distilled water and 20 mL acetic acid with 5 mL of 40 g% potassium iodide solution and 5 mL of 1.7 g% w/v basic bismuth nitrate in 20% v/v acetic acid solution."
+          }
         }
       ],
       "order_explicit_in_source": true,
@@ -31862,8 +31918,8 @@
           "amount": 0.05,
           "unit": "g",
           "names": {
-            "uz": "α-naftol",
-            "ru": "α-нафтол",
+            "uz": "α-naftol (1-naftol)",
+            "ru": "α-нафтол (1-нафтол)",
             "en": "α-naphthol (1-naphthol)"
           }
         },
@@ -31959,8 +32015,8 @@
           "amount": 2,
           "unit": "g",
           "names": {
-            "uz": "β-naftol",
-            "ru": "β-нафтол",
+            "uz": "β-naftol (2-naftol)",
+            "ru": "β-нафтол (2-нафтол)",
             "en": "β-naphthol (2-naphthol)"
           }
         },
@@ -32515,7 +32571,7 @@
           "order": 1,
           "texts": {
             "uz": "Tijorat piridinini bir sutka davomida kaliy gidroksid granulalari ustida tindiring.",
-            "ru": "Товарный пиридин в течение суток настаивают с гранулами гидроксида калия.",
+            "ru": "Товарный пиридин выдерживают над гранулами гидроксида калия 24 часа (сутки).",
             "en": "Let commercial pyridine stand over potassium hydroxide granules for 24 hours."
           }
         },
@@ -33041,8 +33097,8 @@
           "amount": null,
           "unit": null,
           "names": {
-            "uz": "B eritma: α-naftilamin, 30 % li sirka kislotadagi 0,1 % li eritma",
-            "ru": "раствор Б: α-нафтиламин, 0,1 %-й раствор в 30 %-м растворе уксусной кислоты",
+            "uz": "B eritma: α-naftilamin (1-naftilamin), 30 % li sirka kislotadagi 0,1 % li eritma",
+            "ru": "раствор Б: α-нафтиламин (1-нафтиламин), 0,1 %-й раствор в 30 %-м растворе уксусной кислоты",
             "en": "solution B: α-naphthylamine (1-naphthylamine), 0.1 % solution in 30 % acetic acid"
           },
           "quantity_note": {
@@ -39186,7 +39242,7 @@
           "order": 1,
           "texts": {
             "uz": "Bir kolbada 1 litr distillangan suvda 11,876 g natriy gidrofosfatni, boshqasida 1 litr distillangan suvda 9,078 g kaliy digidrofosfatni eriting.",
-            "ru": "В одной колбе в литре дистиллированной воды растворяют 11,876 г моногидрофосфата натрия, в другой — 9,078 г дигидрофосфата калия в одном литре дистиллированной воды.",
+            "ru": "В одной колбе растворяют 11,876 г моногидрофосфата натрия в 1 л дистиллированной воды, в другой — 9,078 г дигидрофосфата калия в 1 л дистиллированной воды.",
             "en": "In one flask dissolve 11.876 g of disodium hydrogen phosphate in 1 L of distilled water; in another dissolve 9.078 g of potassium dihydrogen phosphate in 1 L of distilled water."
           }
         },
@@ -72306,9 +72362,9 @@
       "original_lang": "en",
       "canonical": "postmortem interval",
       "localized": {
-        "en": "postmortem interval",
-        "ru": "давность наступления смерти",
-        "uz": "o‘limdan keyin o‘tgan vaqt"
+        "en": "postmortem interval (PMI)",
+        "ru": "посмертный интервал (PMI)",
+        "uz": "o‘limdan keyin o‘tgan vaqt oralig‘i (PMI)"
       },
       "status": {
         "en": "machine_draft",
@@ -74201,7 +74257,7 @@
       "target_id": "C-ACETYLFENTANYL-REPORTED_CONCENTRATION-P5",
       "lang": "uz",
       "source_sha256": "3e7d45fe99d4d2cd36d7432ce4e81b899e68f22eea148aed2da4bb205dcacf80",
-      "text": "5 ta holatdagi namunalar atsetilfentanil va atsetil norfentanilga ijobiy natija berdi; qondagi o‘rtacha konsentratsiyalar mos ravishda 40.2 ± 38.6 va 44.5 ± 21.1 μg/L (n = 3), siydikdagi o‘rtacha konsentratsiyalar mos ravishda 1,874 ± 1,710 va 6,582 ± 3,252 μg/L (n = 5) bo‘lgan.",
+      "text": "5 ta holatdagi namunalar atsetilfentanil va atsetil norfentanilga ijobiy natija berdi; qondagi o‘rtacha konsentratsiyalar mos ravishda 40.2 ± 38.6 va 44.5 ± 21.1 μg/L (n = 3), siydikdagi o‘rtacha konsentratsiyalar mos ravishda 1 874 ± 1 710 va 6 582 ± 3 252 μg/L (n = 5) bo‘lgan.",
       "status": "machine_draft"
     },
     {
@@ -74209,7 +74265,7 @@
       "target_id": "C-ACETYLFENTANYL-REPORTED_CONCENTRATION-P5",
       "lang": "ru",
       "source_sha256": "3e7d45fe99d4d2cd36d7432ce4e81b899e68f22eea148aed2da4bb205dcacf80",
-      "text": "Образцы из 5 случаев дали положительный результат на ацетилфентанил и ацетилнорфентанил; средние концентрации в крови составили 40.2 ± 38.6 и 44.5 ± 21.1 μg/L соответственно (n = 3); средние концентрации в моче — 1,874 ± 1,710 и 6,582 ± 3,252 μg/L соответственно (n = 5).",
+      "text": "Образцы из 5 случаев дали положительный результат на ацетилфентанил и ацетилнорфентанил; средние концентрации в крови составили 40.2 ± 38.6 и 44.5 ± 21.1 μg/L соответственно (n = 3); средние концентрации в моче — 1 874 ± 1 710 и 6 582 ± 3 252 μg/L соответственно (n = 5).",
       "status": "machine_draft"
     },
     {
@@ -74489,7 +74545,7 @@
       "target_id": "C-AMPHETAMINE-REPORTED_CONCENTRATION-P5",
       "lang": "uz",
       "source_sha256": "27cc00b14afbad501cd79b84e09fc327a2594dcab274d374533b44b74c109e4a",
-      "text": "Amfetamin barcha biologik materiallarda aniqlandi; eng yuqori konsentratsiyalar siydikda (2600 μg/ml, 1-holat) va oshqozon tarkibida (14,000 μg/g, 2-holat) topildi.",
+      "text": "Amfetamin barcha biologik materiallarda aniqlandi; eng yuqori konsentratsiyalar siydikda (2600 μg/ml, 1-holat) va oshqozon tarkibida (14 000 μg/g, 2-holat) topildi.",
       "status": "machine_draft"
     },
     {
@@ -74497,7 +74553,7 @@
       "target_id": "C-AMPHETAMINE-REPORTED_CONCENTRATION-P5",
       "lang": "ru",
       "source_sha256": "27cc00b14afbad501cd79b84e09fc327a2594dcab274d374533b44b74c109e4a",
-      "text": "Амфетамин был обнаружен во всех биологических материалах; наибольшие концентрации выявлены в моче (2600 μg/ml, случай 1) и содержимом желудка (14,000 μg/g, случай 2).",
+      "text": "Амфетамин был обнаружен во всех биологических материалах; наибольшие концентрации выявлены в моче (2600 μg/ml, случай 1) и содержимом желудка (14 000 μg/g, случай 2).",
       "status": "machine_draft"
     },
     {
@@ -74569,7 +74625,7 @@
       "target_id": "C-BENZOYLECGONINE-REPORTED_CONCENTRATION-P5",
       "lang": "uz",
       "source_sha256": "9e549fc88daf4fa450629239a6b2abf1a404fc937ccde9c5931e16ea4fa8c2a1",
-      "text": "Kamida bitta ijobiy test natijasiga ega 10,996 haydovchi orasida qondagi etanol, THC, MDMA, amfetamin, benzoilekgonin va 6-MAM ning mediana konsentratsiyalari mos ravishda 1.82 g/L, 2.41 ng/mL, 138.4 ng/mL, 67.7 ng/mL, 173.3 ng/mL va 0.97 ng/mL bo‘lgan.",
+      "text": "Kamida bitta ijobiy test natijasiga ega 10 996 haydovchi orasida qondagi etanol, THC, MDMA, amfetamin, benzoilekgonin va 6-MAM ning mediana konsentratsiyalari mos ravishda 1.82 g/L, 2.41 ng/mL, 138.4 ng/mL, 67.7 ng/mL, 173.3 ng/mL va 0.97 ng/mL bo‘lgan.",
       "status": "machine_draft"
     },
     {
@@ -74577,7 +74633,7 @@
       "target_id": "C-BENZOYLECGONINE-REPORTED_CONCENTRATION-P5",
       "lang": "ru",
       "source_sha256": "9e549fc88daf4fa450629239a6b2abf1a404fc937ccde9c5931e16ea4fa8c2a1",
-      "text": "Среди 10,996 водителей как минимум с одним положительным тестом медианные концентрации этанола, THC, MDMA, амфетамина, бензоилэкгонина и 6-MAM в крови составили соответственно 1.82 g/L, 2.41 ng/mL, 138.4 ng/mL, 67.7 ng/mL, 173.3 ng/mL и 0.97 ng/mL.",
+      "text": "Среди 10 996 водителей как минимум с одним положительным тестом медианные концентрации этанола, THC, MDMA, амфетамина, бензоилэкгонина и 6-MAM в крови составили соответственно 1.82 g/L, 2.41 ng/mL, 138.4 ng/mL, 67.7 ng/mL, 173.3 ng/mL и 0.97 ng/mL.",
       "status": "machine_draft"
     },
     {
@@ -74649,7 +74705,7 @@
       "target_id": "C-BIO-CSF-APPLICATION-P5",
       "lang": "uz",
       "source_sha256": "3e23c798c79ea41b06fbb75d685b738a18b161b4b572ddfcd14db42636543298",
-      "text": "Sud-neyropatologik diagnostika usullaridan tashqari, hozirda orqa miya suyuqligi va miya to‘qimasida turli sitokinlar, o‘tkir faza oqsillari, MNS biomarkerlari yoki Na+-glyukoza tashuvchilarining o‘limdan keyingi biokimyoviy tahlillari, shuningdek jarohatdan keyin mahalliy mikrogliyaning erta to‘qima reaksiyasini o‘rganish tobora ko‘proq o‘tkazilmoqda.",
+      "text": "Sud-neyropatologik diagnostika usullaridan tashqari, hozirda orqa miya suyuqligi (CSF) va miya to‘qimasida turli sitokinlar, o‘tkir faza oqsillari, MNS biomarkerlari yoki Na+-glyukoza tashuvchilarining o‘limdan keyingi biokimyoviy tahlillari, shuningdek jarohatdan keyin mahalliy mikrogliyaning erta to‘qima reaksiyasini o‘rganish tobora ko‘proq o‘tkazilmoqda.",
       "status": "machine_draft"
     },
     {
@@ -74657,7 +74713,7 @@
       "target_id": "C-BIO-CSF-APPLICATION-P5",
       "lang": "ru",
       "source_sha256": "3e23c798c79ea41b06fbb75d685b738a18b161b4b572ddfcd14db42636543298",
-      "text": "Помимо судебно-нейропатологических диагностических методов, в настоящее время всё чаще проводятся посмертные биохимические анализы различных цитокинов, белков острой фазы, биомаркеров ЦНС или Na+-глюкозных транспортёров в ликворе и ткани мозга, а также исследования ранней тканевой реакции локальной микроглии после травмы.",
+      "text": "Помимо судебно-нейропатологических диагностических методов, в настоящее время всё чаще проводятся посмертные биохимические анализы различных цитокинов, белков острой фазы, биомаркеров ЦНС или Na+-глюкозных транспортёров в ликворе (CSF) и ткани мозга, а также исследования ранней тканевой реакции локальной микроглии после травмы.",
       "status": "machine_draft"
     },
     {
@@ -75401,7 +75457,7 @@
       "target_id": "C-COCAINE-REPORTED_CONCENTRATION-P5",
       "lang": "uz",
       "source_sha256": "29ee8f5d4adb4414df66e828c40da37725b41fb644086b1a5c898308f8413a91",
-      "text": "Moddalarni suiiste’mol qilishdan o‘lim bo‘yicha milliy dasturga (2000–2019) xabar qilingan 5,339 ta holat tahlili shuni ko‘rsatdiki, qondagi o‘rtacha kokain konsentratsiyalari yurak bilan bog‘liq o‘limlarda taxminan 900 ng/mL bo‘lgan, o‘tkir intoksikatsiyada (≈19,100 ng/mL) va surunkali yoki ko‘p martalik (binge) iste’molda (≈6,200 ng/mL) esa sezilarli darajada yuqori bo‘lgan.",
+      "text": "Moddalarni suiiste’mol qilishdan o‘lim bo‘yicha milliy dasturga (2000–2019) xabar qilingan 5 339 ta holat tahlili shuni ko‘rsatdiki, qondagi o‘rtacha kokain konsentratsiyalari yurak bilan bog‘liq o‘limlarda taxminan 900 ng/mL bo‘lgan, o‘tkir intoksikatsiyada (≈19 100 ng/mL) va surunkali yoki ko‘p martalik (binge) iste’molda (≈6 200 ng/mL) esa sezilarli darajada yuqori bo‘lgan.",
       "status": "machine_draft"
     },
     {
@@ -75409,7 +75465,7 @@
       "target_id": "C-COCAINE-REPORTED_CONCENTRATION-P5",
       "lang": "ru",
       "source_sha256": "29ee8f5d4adb4414df66e828c40da37725b41fb644086b1a5c898308f8413a91",
-      "text": "Анализ 5,339 случаев, сообщённых в Национальную программу по смертям от злоупотребления психоактивными веществами (2000–2019), показал, что средние концентрации кокаина в крови составляли примерно 900 ng/mL при смертях, связанных с сердцем, тогда как при острой интоксикации (≈19,100 ng/mL) и хроническом или запойном употреблении (≈6,200 ng/mL) уровни были значительно выше.",
+      "text": "Анализ 5 339 случаев, сообщённых в Национальную программу по смертям от злоупотребления психоактивными веществами (2000–2019), показал, что средние концентрации кокаина в крови составляли примерно 900 ng/mL при смертях, связанных с сердцем, тогда как при острой интоксикации (≈19 100 ng/mL) и хроническом или запойном употреблении (≈6 200 ng/mL) уровни были значительно выше.",
       "status": "machine_draft"
     },
     {
@@ -75785,7 +75841,7 @@
       "target_id": "C-ETHANOL-METABOLITES",
       "lang": "uz",
       "source_sha256": "541bf1ef464fcc9cb50aa41d34ef81d2b594ed9a4de4d57f1583cc6eb94c66be",
-      "text": "Shundan so‘ng atsetaldegid aldegiddegidrogenaza (ALDH) fermenti ta’sirida atsetatgacha oksidlanadi; atsetat yo siydik bilan chiqariladi, yoki atsetil-KoA sifatida oraliq metabolizmga qayta qo‘shiladi.",
+      "text": "Shundan so‘ng atsetaldegid aldegiddegidrogenaza (ALDH) fermenti ta’sirida atsetatgacha oksidlanadi; atsetat yo siydik bilan chiqariladi, yoki atsetil-CoA sifatida oraliq metabolizmga qayta qo‘shiladi.",
       "status": "machine_draft"
     },
     {
@@ -75793,7 +75849,7 @@
       "target_id": "C-ETHANOL-METABOLITES",
       "lang": "ru",
       "source_sha256": "541bf1ef464fcc9cb50aa41d34ef81d2b594ed9a4de4d57f1583cc6eb94c66be",
-      "text": "Затем ацетальдегид окисляется ферментом альдегиддегидрогеназой (ALDH) до ацетата, который либо выводится с мочой, либо повторно включается в промежуточный метаболизм в виде ацетил-КоА.",
+      "text": "Затем ацетальдегид окисляется ферментом альдегиддегидрогеназой (ALDH) до ацетата, который либо выводится с мочой, либо повторно включается в промежуточный метаболизм в виде ацетил-CoA.",
       "status": "machine_draft"
     },
     {
@@ -75841,7 +75897,7 @@
       "target_id": "C-ETHYLENE-GLYCOL-METABOLITES",
       "lang": "ru",
       "source_sha256": "8e6b32c0ee58751b2cd3a950c0be37f04988f20772b4a498f151486e3c9cfb4a",
-      "text": "Одна треть всосавшегося ЭГ выводится с мочой в неизменённом виде, а две трети окисляются в печени ферментом алкогольдегидрогеназой (ADH) до гликольальдегида, который затем быстро превращается в гликолат альдегиддегидрогеназой.",
+      "text": "Одна треть всосавшегося этиленгликоля (EG) выводится с мочой в неизменённом виде, а две трети окисляются в печени ферментом алкогольдегидрогеназой (ADH) до гликольальдегида, который затем быстро превращается в гликолат альдегиддегидрогеназой.",
       "status": "machine_draft"
     },
     {
@@ -75849,7 +75905,7 @@
       "target_id": "C-ETHYLENE-GLYCOL-REPORTED_CONCENTRATION-P5",
       "lang": "uz",
       "source_sha256": "089ca5030f09941381d7f164bd2cbca81a6058709f18d1042fe749709862bc7b",
-      "text": "O‘lim bilan tugamagan holatlarda etilenglikol konsentratsiyalari quyidagicha bo‘lgan: 145–7060 μg/mL (qon), 40–10,700 μg/mL (zardob) va 80.5–13,600 μg/mL (siydik).",
+      "text": "O‘lim bilan tugamagan holatlarda etilenglikol konsentratsiyalari quyidagicha bo‘lgan: 145–7060 μg/mL (qon), 40–10 700 μg/mL (zardob) va 80.5–13 600 μg/mL (siydik).",
       "status": "machine_draft"
     },
     {
@@ -75857,7 +75913,7 @@
       "target_id": "C-ETHYLENE-GLYCOL-REPORTED_CONCENTRATION-P5",
       "lang": "ru",
       "source_sha256": "089ca5030f09941381d7f164bd2cbca81a6058709f18d1042fe749709862bc7b",
-      "text": "В нелетальных случаях концентрации этиленгликоля составляли: 145–7060 μg/mL (кровь), 40–10,700 μg/mL (сыворотка) и 80.5–13,600 μg/mL (моча).",
+      "text": "В нелетальных случаях концентрации этиленгликоля составляли: 145–7060 μg/mL (кровь), 40–10 700 μg/mL (сыворотка) и 80.5–13 600 μg/mL (моча).",
       "status": "machine_draft"
     },
     {
@@ -76513,7 +76569,7 @@
       "target_id": "C-HALOPERIDOL-ANALYTICAL_METHOD-P5",
       "lang": "ru",
       "source_sha256": "44fa3ca6a889d53e2e04dd0429af3724c0b766f90aadf81dc4971ac37d8ab63d",
-      "text": "Cheng и его коллеги (1987) изучали ФК-профиль галоперидола у мужчин и женщин с психозами в возрасте от 20 до 43 лет и использовали метод HPLC для определения концентрации в сыворотке.",
+      "text": "Cheng и его коллеги (1987) изучали фармакокинетический (PK) профиль галоперидола у мужчин и женщин с психозами в возрасте от 20 до 43 лет и использовали метод HPLC для определения концентрации в сыворотке.",
       "status": "machine_draft"
     },
     {
@@ -76545,7 +76601,7 @@
       "target_id": "C-HEROIN-ANALYTICAL_METHOD-P5",
       "lang": "ru",
       "source_sha256": "3e51a9ef7df167778a00648df0b1e9b80b0464e4026e1cf65ae6186fa633508a",
-      "text": "Скрининг на соединения, помимо диацетилморфина, MAM, морфина, парацетамола и кофеина, выполняли на системе G6550A ifunnel Q-ToF LC–MS (Agilent, Вальдбронн, Германия), оснащённой системой ВЭЖХ 1290 Infinity.",
+      "text": "Скрининг на соединения, помимо диацетилморфина, MAM, морфина, парацетамола и кофеина, выполняли на системе G6550A ifunnel Q-ToF LC–MS (Agilent, Вальдбронн, Германия), оснащённой системой HPLC 1290 Infinity.",
       "status": "machine_draft"
     },
     {
@@ -76745,7 +76801,7 @@
       "target_id": "C-HYDROMORPHONE-METABOLISM_NOTE-P5",
       "lang": "uz",
       "source_sha256": "07cce2003734153b26d796d96e3d306e66acc68dad557698db1d7b93b56d2547",
-      "text": "U asosan UDF-glyukuroniltransferaza (UGT)2B7 ta’sirida metabolizmga uchrab, nofaol gidromorfon-3-glyukuronid hosil qiladi.",
+      "text": "U asosan UDP-glyukuroniltransferaza (UGT)2B7 ta’sirida metabolizmga uchrab, nofaol gidromorfon-3-glyukuronid hosil qiladi.",
       "status": "machine_draft"
     },
     {
@@ -77001,7 +77057,7 @@
       "target_id": "C-LIDOCAINE-METABOLISM_NOTE-P5",
       "lang": "uz",
       "source_sha256": "b5291d1ab1b70009a4bbecedcd25100469144c67c2a8d571cc2b9f8a627268a9",
-      "text": "Biroq gialuron kislotasi in’ektsiyasida lidokain va uning faol metabolitlari — monoetilglitsilksilidid (MEGX) va glitsilksilidid (GX) ning mumkin bo‘lgan farmakokinetik (PK) o‘zgarishlari hozirgacha o‘rganilmagan.",
+      "text": "Biroq gialuron kislotasi in’ektsiyasida lidokain va uning faol metabolitlari — monoetilglitsilksilidid (MEGX) va glitsilksilidid (GC) ning mumkin bo‘lgan farmakokinetik (PK) o‘zgarishlari hozirgacha o‘rganilmagan.",
       "status": "machine_draft"
     },
     {
@@ -77569,7 +77625,7 @@
       "target_id": "C-METHOD-HPLC-APPLICATION-P5",
       "lang": "ru",
       "source_sha256": "b570d9c37ecc9390b48f55cd53562ec987afe71f199f47519d051f6fc229db9d",
-      "text": "ВЭЖХ с УФ-, флуоресцентным или диодно-матричным детектированием обеспечивает надёжное количественное определение морфина и его глюкуронидов в фармакокинетических и клинических условиях.",
+      "text": "HPLC с УФ-, флуоресцентным или диодно-матричным детектированием обеспечивает надёжное количественное определение морфина и его глюкуронидов в фармакокинетических и клинических условиях.",
       "status": "machine_draft"
     },
     {
@@ -77825,7 +77881,7 @@
       "target_id": "C-METHYLPHENIDATE-ANALYTICAL_METHOD-P5",
       "lang": "ru",
       "source_sha256": "6e1d7de9b0f5330322f3204a3e6867dd56210b6706155817d5c7fe6c2e620db3",
-      "text": "Существуют различные аналитические методы определения метилфенидата, большинство из которых основаны на хроматографических методах с использованием ВЭЖХ с ультрафиолетовым детектированием, ВЭЖХ с флуоресцентным детектированием, ВЭЖХ с хемилюминесцентным детектированием, ВЭЖХ-масс-спектрометрии и энантиомерного разделения.",
+      "text": "Существуют различные аналитические методы определения метилфенидата, большинство из которых основаны на хроматографических методах с использованием HPLC с ультрафиолетовым детектированием, HPLC с флуоресцентным детектированием, HPLC с хемилюминесцентным детектированием, HPLC-масс-спектрометрии и энантиомерного разделения.",
       "status": "machine_draft"
     },
     {
@@ -79697,7 +79753,7 @@
       "target_id": "C-ZOLPIDEM-ANALYTICAL_METHOD-P5",
       "lang": "ru",
       "source_sha256": "91a96a691ff446d68812d82c8aeab2781e9ee7166941697b61213a9a7954071e",
-      "text": "Описан ряд аналитических методов количественного определения золпидема в крови, включая ВЭЖХ с флуоресцентным детектированием, HPLC-DAD, GC/MS, GC/MS/MS, LC/MS, UPLC/MS, LC/MS/MS и UHPLC-MS/MS.",
+      "text": "Описан ряд аналитических методов количественного определения золпидема в крови, включая HPLC с флуоресцентным детектированием, HPLC-DAD, GC/MS, GC/MS/MS, LC/MS, UPLC/MS, LC/MS/MS и UHPLC-MS/MS.",
       "status": "machine_draft"
     },
     {
@@ -79778,6 +79834,1606 @@
       "lang": "ru",
       "source_sha256": "a98ba18f1993c4c88b29f98862ce25bfb75e37c1603a64c6d1cb7d47d6108089",
       "text": "Для целей определения «предписанного предела» в разделе 11(2) Закона о дорожном движении 1988 года (The Road Traffic Act 1988) предписанная пропорция в отношении вождения или попытки вождения либо нахождения в управлении транспортным средством в Шотландии составляет — a 22 микрограмма алкоголя в 100 миллилитрах выдыхаемого воздуха; b 50 миллиграммов алкоголя в 100 миллилитрах крови; или c 67 миллиграммов алкоголя в 100 миллилитрах мочи.",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-02155c8c658c",
+      "lang": "uz",
+      "source_sha256": "ff15be46f335eb9ca832cdbab4ab267ff777957f289b2119bf105257f4f94aaa",
+      "text": "Fentanilning o‘limdan keyingi qayta taqsimlanishi: son venasi qoni hamda jigar va yurak to‘qimalaridagi konsentratsiyalar o‘zaro bog‘liqligi bo‘yicha dastlabki natijalar",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-02155c8c658c",
+      "lang": "ru",
+      "source_sha256": "ff15be46f335eb9ca832cdbab4ab267ff777957f289b2119bf105257f4f94aaa",
+      "text": "Посмертное перераспределение фентанила: предварительные данные о соотношении концентраций в бедренной крови, ткани печени и сердца",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-054f2dd66c3a",
+      "lang": "uz",
+      "source_sha256": "43ee1c28e99db9da21298b03177e4672cec78102b08615783f3c1a0c5ed7bd28",
+      "text": "To‘qimachilik materiallarining yemirilish tezligini qiyosiy tahlil qilish va ularning o‘limdan keyin o‘tgan vaqt oralig‘ini aniqlashdagi o‘rni",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-054f2dd66c3a",
+      "lang": "ru",
+      "source_sha256": "43ee1c28e99db9da21298b03177e4672cec78102b08615783f3c1a0c5ed7bd28",
+      "text": "Сравнительный анализ скорости разрушения текстиля и его роль в определении посмертного интервала",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-0a78dde8c0ce",
+      "lang": "uz",
+      "source_sha256": "c2665f15f5bb7f8ac53b51d80b9994cd505795e26ffa2285eefbda811f40058a",
+      "text": "Etanolning sud toksikologiyasi",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-0a78dde8c0ce",
+      "lang": "ru",
+      "source_sha256": "c2665f15f5bb7f8ac53b51d80b9994cd505795e26ffa2285eefbda811f40058a",
+      "text": "Судебная токсикология этанола",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-0cdadb6be150",
+      "lang": "uz",
+      "source_sha256": "a55951f930437ee4f807906cabea48ad67d54df2430434e1eb23c3acf7d11426",
+      "text": "Odam suyagining kortikal qatlamida VNIR spektroskopiyasi yordamida o‘limdan keyin o‘tgan vaqt oralig‘ini baholash",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-0cdadb6be150",
+      "lang": "ru",
+      "source_sha256": "a55951f930437ee4f807906cabea48ad67d54df2430434e1eb23c3acf7d11426",
+      "text": "Оценка посмертного интервала с помощью VNIR-спектроскопии кортикальной кости человека",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-0e17554f4650",
+      "lang": "uz",
+      "source_sha256": "d88832ee9bcf5cce64f466e9c03ab116a6e860ef6c39751e771175374a2e2356",
+      "text": "Izopropanol bilan zaharlanish",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-0e17554f4650",
+      "lang": "ru",
+      "source_sha256": "d88832ee9bcf5cce64f466e9c03ab116a6e860ef6c39751e771175374a2e2356",
+      "text": "Отравление изопропанолом",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-0eb0eebff943",
+      "lang": "uz",
+      "source_sha256": "cf59efe3d72d07303cb48028bec543c55d0f8bcf520bba1f7498ea7a5b35752d",
+      "text": "Barbituratlarning odam biologik to‘qimalarida o‘limdan keyingi qayta taqsimlanishi",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-0eb0eebff943",
+      "lang": "ru",
+      "source_sha256": "cf59efe3d72d07303cb48028bec543c55d0f8bcf520bba1f7498ea7a5b35752d",
+      "text": "Посмертное перераспределение барбитуратов в биологических тканях человека",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-12f60763d6c6",
+      "lang": "uz",
+      "source_sha256": "bba496a071b485b5e4b459bd811108c66fc1d275be0285095133dd4f85a298b1",
+      "text": "O‘limdan keyingi sud-tibbiy qon namunalarida dizayner benzodiazepinlarni miqdoriy aniqlash uchun mikro-QuEChERS ekstraksiya usulini optimallashtirish",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-12f60763d6c6",
+      "lang": "ru",
+      "source_sha256": "bba496a071b485b5e4b459bd811108c66fc1d275be0285095133dd4f85a298b1",
+      "text": "Оптимизация метода экстракции micro-QuEChERS для количественного определения дизайнерских бензодиазепинов в посмертных образцах крови в судебной практике",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-172aab490c13",
+      "lang": "uz",
+      "source_sha256": "377cdb522c718685d303e2b09fd627ec5b989b6013d148e70bb92ed29dd62b13",
+      "text": "Mikrobiologiya va o‘limdan keyin o‘tgan vaqt oralig‘i: tizimli sharh",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-172aab490c13",
+      "lang": "ru",
+      "source_sha256": "377cdb522c718685d303e2b09fd627ec5b989b6013d148e70bb92ed29dd62b13",
+      "text": "Микробиология и посмертный интервал: систематический обзор",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-1b3cd1d3b41a",
+      "lang": "uz",
+      "source_sha256": "e29b5f4b0b59c003511861a724333e9ccc15c67646f6f22a2f53b734b18b72b2",
+      "text": "O‘lim vaqtini aniqlash: sud tafonomiyasi va o‘limdan keyin o‘tgan vaqt oralig‘i",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-1b3cd1d3b41a",
+      "lang": "ru",
+      "source_sha256": "e29b5f4b0b59c003511861a724333e9ccc15c67646f6f22a2f53b734b18b72b2",
+      "text": "Датировка смерти: судебная тафономия и посмертный интервал",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-1dedb14b058c",
+      "lang": "uz",
+      "source_sha256": "912b421d4db6fa796ad50df8392e1c74c7a3095f173e03e01344a4b2961a322e",
+      "text": "O‘limdan keyingi teri ekstraktlarini tahlil qilish — sud tibbiyotini qo‘llab-quvvatlovchi samarali noqonuniy giyohvand moddalar skrining usuli",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-1dedb14b058c",
+      "lang": "ru",
+      "source_sha256": "912b421d4db6fa796ad50df8392e1c74c7a3095f173e03e01344a4b2961a322e",
+      "text": "Анализ посмертных кожных экстрактов как эффективный метод скрининга запрещённых наркотиков в помощь судебной медицине",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-21d4c3edf416",
+      "lang": "uz",
+      "source_sha256": "cc7cf711a7d6f24f2f37e60555b9646f8da5d346aa474c3020df4798ca3ac4e1",
+      "text": "Etanol",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-21d4c3edf416",
+      "lang": "ru",
+      "source_sha256": "cc7cf711a7d6f24f2f37e60555b9646f8da5d346aa474c3020df4798ca3ac4e1",
+      "text": "Этанол",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-2299ffe22009",
+      "lang": "uz",
+      "source_sha256": "a2c4b759a5f9abc2874009536b6e14bd073b0b4b53493960d1c26a6b93187774",
+      "text": "Tetragidrokannabinol va kannabidiolning bir nechta turli o‘limdan keyingi matritsalarda taqsimlanishi",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-2299ffe22009",
+      "lang": "ru",
+      "source_sha256": "a2c4b759a5f9abc2874009536b6e14bd073b0b4b53493960d1c26a6b93187774",
+      "text": "Распределение тетрагидроканнабинола и каннабидиола в нескольких различных посмертных матрицах",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-237aea41ae27",
+      "lang": "uz",
+      "source_sha256": "b1edaaa48aad0c66c902f8c0aac48047fd56ff245c28b3a80d5e56f017085d58",
+      "text": "Odam suyagida ketiapin va pregabalinning o‘limdan keyingi tahlili",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-237aea41ae27",
+      "lang": "ru",
+      "source_sha256": "b1edaaa48aad0c66c902f8c0aac48047fd56ff245c28b3a80d5e56f017085d58",
+      "text": "Посмертный анализ кветиапина и прегабалина в костной ткани человека",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-2556f5f4c0ff",
+      "lang": "uz",
+      "source_sha256": "fcf8a0ecfef9820a85d6a3b6a14f60b886f818783dcb839f991552220b0bb88a",
+      "text": "O‘limdan keyingi triptaza o‘limga olib kelgan anafilaksiyaning diagnostik markeri sifatida: tizimli sharh va meta-tahlil",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-2556f5f4c0ff",
+      "lang": "ru",
+      "source_sha256": "fcf8a0ecfef9820a85d6a3b6a14f60b886f818783dcb839f991552220b0bb88a",
+      "text": "Посмертная триптаза как диагностический маркер фатальной анафилаксии: систематический обзор и метаанализ",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-293d0e192257",
+      "lang": "uz",
+      "source_sha256": "a465b04a19f55e1ce1aec1d547364fccf4c6dbe8fd2db11c46eb5a157f166c8f",
+      "text": "Metanol bilan zaharlanish",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-293d0e192257",
+      "lang": "ru",
+      "source_sha256": "a465b04a19f55e1ce1aec1d547364fccf4c6dbe8fd2db11c46eb5a157f166c8f",
+      "text": "Отравление метанолом",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-29af76654f42",
+      "lang": "uz",
+      "source_sha256": "5385176ae4d19b7e61831dbcd40002eb7f4b9e7bb38e32ab1e574c2e3ae29bd8",
+      "text": "O‘limdan keyin o‘tgan vaqt oralig‘ini voqea joyida tezkor aniqlash uchun kimyoviy tahlil vositalari: «aqlli shahar» tamoyillarini sud ekspertizasiga tatbiq etish",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-29af76654f42",
+      "lang": "ru",
+      "source_sha256": "5385176ae4d19b7e61831dbcd40002eb7f4b9e7bb38e32ab1e574c2e3ae29bd8",
+      "text": "Инструменты химического анализа для быстрого определения посмертного интервала на месте: применение принципов «умного города» в судебной науке",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-2b380bd297f3",
+      "lang": "uz",
+      "source_sha256": "a73c5d57ef9d0b88a6a9cdcfb59d5bf3c24172a408bf9193103bf552a1fa45f5",
+      "text": "O‘limdan keyingi qonda karboksigemoglobinni aniqlashning spektrofotometrik usullarini taqqoslash",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-2b380bd297f3",
+      "lang": "ru",
+      "source_sha256": "a73c5d57ef9d0b88a6a9cdcfb59d5bf3c24172a408bf9193103bf552a1fa45f5",
+      "text": "Сравнение спектрофотометрических методов определения карбоксигемоглобина в посмертной крови",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-319e0f61b789",
+      "lang": "uz",
+      "source_sha256": "53ee03c629329d36b164eb94af8c76b35db19475ae7ce0f279122680f9bee484",
+      "text": "33 ta o‘limdan keyingi holatda flualprazolamning son venasi qonidagi konsentratsiyalari",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-319e0f61b789",
+      "lang": "ru",
+      "source_sha256": "53ee03c629329d36b164eb94af8c76b35db19475ae7ce0f279122680f9bee484",
+      "text": "Концентрации флуалпразолама в бедренной крови в 33 посмертных случаях",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-33a04e078701",
+      "lang": "uz",
+      "source_sha256": "407c1514f5f35152c8c8f9e8eb72ade9868ab1b7b3e655cb13ccabeeb8cb1898",
+      "text": "SARS-CoV-2 bilan bog‘liq o‘limdan keyingi topilmalar: tizimli sharh va meta-tahlil",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-33a04e078701",
+      "lang": "ru",
+      "source_sha256": "407c1514f5f35152c8c8f9e8eb72ade9868ab1b7b3e655cb13ccabeeb8cb1898",
+      "text": "Посмертные находки, связанные с SARS-CoV-2: систематический обзор и метаанализ",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-355e8b0179db",
+      "lang": "uz",
+      "source_sha256": "4a92eca67e87320bacedf6e1e94d9b10c7a85498f28e086182521a422951eba8",
+      "text": "Soch tahlili o‘limdan keyingi toksikologiyada diagnostik vosita sifatida",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-355e8b0179db",
+      "lang": "ru",
+      "source_sha256": "4a92eca67e87320bacedf6e1e94d9b10c7a85498f28e086182521a422951eba8",
+      "text": "Анализ волос как диагностический инструмент в посмертной токсикологии",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-367397f42e3a",
+      "lang": "uz",
+      "source_sha256": "f2ebb7d04eba09249e3c78a31871ca6f162e1b7f1de92d134f0f5fcc699f1486",
+      "text": "Luiziana shtatida o‘limdan keyin o‘tgan vaqt oralig‘ini baholashning retrospektiv tahlili va usul validatsiyasi",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-367397f42e3a",
+      "lang": "ru",
+      "source_sha256": "f2ebb7d04eba09249e3c78a31871ca6f162e1b7f1de92d134f0f5fcc699f1486",
+      "text": "Ретроспективный анализ и валидация метода оценки посмертного интервала в Луизиане",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-370ab4ae336b",
+      "lang": "uz",
+      "source_sha256": "1abcf18c8ad91834a8e555129af7a2c4c7d89c6d633a58c183ad6f172821cb08",
+      "text": "Boshning o‘qotar qurol jarohatlari: o‘limdan keyingi magnit-rezonans tomografiya, kompyuter tomografiyasi va autopsiyani taqqoslash",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-370ab4ae336b",
+      "lang": "ru",
+      "source_sha256": "1abcf18c8ad91834a8e555129af7a2c4c7d89c6d633a58c183ad6f172821cb08",
+      "text": "Огнестрельные ранения головы: сравнение посмертной магнитно-резонансной томографии, компьютерной томографии и аутопсии",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-3d9fedcd0df8",
+      "lang": "uz",
+      "source_sha256": "778781319efbcc1cf52c17435737154a03a0e74cafab8f96356c525e7f827d61",
+      "text": "Shri-Lanka aholisida tabiiy o‘lim holatlarida ko‘z shishasimon tanasi elektrolitlari konsentratsiyalari bo‘yicha o‘limdan keyin o‘tgan vaqt oralig‘ini baholash",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-3d9fedcd0df8",
+      "lang": "ru",
+      "source_sha256": "778781319efbcc1cf52c17435737154a03a0e74cafab8f96356c525e7f827d61",
+      "text": "Оценка посмертного интервала по концентрациям электролитов стекловидного тела при естественной смерти в популяции Шри-Ланки",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-3fac7ed87685",
+      "lang": "uz",
+      "source_sha256": "ad7d16d592a7c2d140a89753c9d4d842ff8cce9ecc6b604b493b728f01469b9c",
+      "text": "Morfinning o‘limdan keyingi qayta taqsimlanishini mexanizmga asoslangan sud-tibbiy tadqiq etish",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-3fac7ed87685",
+      "lang": "ru",
+      "source_sha256": "ad7d16d592a7c2d140a89753c9d4d842ff8cce9ecc6b604b493b728f01469b9c",
+      "text": "Основанное на механизмах судебное исследование посмертного перераспределения морфина",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-446a725c4bb5",
+      "lang": "uz",
+      "source_sha256": "00b6a573ddeeb84dc27bc97c2261119fad6001bfb2400f01d5ef7fca26ec04d1",
+      "text": "Sud-tibbiy holatlarda bosh sochining o‘limdan keyingi yemirilishini tahlil qilish orqali o‘limdan keyin o‘tgan vaqt oralig‘ini baholash",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-446a725c4bb5",
+      "lang": "ru",
+      "source_sha256": "00b6a573ddeeb84dc27bc97c2261119fad6001bfb2400f01d5ef7fca26ec04d1",
+      "text": "Оценка посмертного интервала в судебно-медицинских случаях по анализу посмертного разрушения волос головы",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-45bc09d0259c",
+      "lang": "uz",
+      "source_sha256": "60432a2377a30dccea6a98c0328762ac2dbe3e660de4ac8e631f4447ee66d2c5",
+      "text": "Teri orqali metanol bilan zaharlanish",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-45bc09d0259c",
+      "lang": "ru",
+      "source_sha256": "60432a2377a30dccea6a98c0328762ac2dbe3e660de4ac8e631f4447ee66d2c5",
+      "text": "Трансдермальная интоксикация метанолом",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-4b06c2977f6f",
+      "lang": "uz",
+      "source_sha256": "98118fdde66a184f89bfe873ed9842d29c009b8dd355401947b4f24efe460bbb",
+      "text": "Yaponiyada metonitazen bilan o‘tkir zaharlanishda o‘limdan keyingi tekshiruv va toksikologik tahlil: holat tavsifi",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-4b06c2977f6f",
+      "lang": "ru",
+      "source_sha256": "98118fdde66a184f89bfe873ed9842d29c009b8dd355401947b4f24efe460bbb",
+      "text": "Посмертное исследование и токсикологический анализ при остром отравлении метонитазеном в Японии: описание случая",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-4e2bfdf57da9",
+      "lang": "uz",
+      "source_sha256": "24157809219980ebca0cec44ff635dde8be90d770f7d850409b1d561e962911b",
+      "text": "Yashirishning tafonomik modeli: 55 gallonli bochkada chirish va o‘limdan keyin o‘tgan vaqt oralig‘i (PMI)",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-4e2bfdf57da9",
+      "lang": "ru",
+      "source_sha256": "24157809219980ebca0cec44ff635dde8be90d770f7d850409b1d561e962911b",
+      "text": "Тафономическая модель сокрытия: разложение и посмертный интервал (PMI) в 55-галлонной бочке",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-51310455d14b",
+      "lang": "uz",
+      "source_sha256": "641c1013a206565edf26392415d84c19b73b3ad1a41102a8e81992cdcef85e84",
+      "text": "O‘limdan keyingi metabolomika: diazepam, nordiazepam, morfin, kodein, mirtazapin va sitalopramning vaqtga bog‘liq o‘limdan keyingi o‘zgarishlarini baholash strategiyalari",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-51310455d14b",
+      "lang": "ru",
+      "source_sha256": "641c1013a206565edf26392415d84c19b73b3ad1a41102a8e81992cdcef85e84",
+      "text": "Посмертная метаболомика: стратегии оценки зависящих от времени посмертных изменений диазепама, нордиазепама, морфина, кодеина, миртазапина и циталопрама",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-57538df51351",
+      "lang": "uz",
+      "source_sha256": "b2ef1023e47b1289a6a8a7853cdf16c2d257a83bc2d4e5d2eb1e89005752204f",
+      "text": "O‘limdan keyin olingan namunalarda karfentanilning taqsimlanishi va qayta taqsimlanishi",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-57538df51351",
+      "lang": "ru",
+      "source_sha256": "b2ef1023e47b1289a6a8a7853cdf16c2d257a83bc2d4e5d2eb1e89005752204f",
+      "text": "Распределение и перераспределение карфентанила в посмертных образцах",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-57cc3805bfb6",
+      "lang": "uz",
+      "source_sha256": "f25e6f814192057060a50b1ce45364f6c29ccc895bac895b5966eeb208eec65f",
+      "text": "Kasalxonadan tashqarida yuz bergan, o‘limdan keyingi degeneratsiyali o‘lim holatlarida minimal invaziv autopsiya orqali olingan to‘qima namunalarida COVID-19 tahlili",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-57cc3805bfb6",
+      "lang": "ru",
+      "source_sha256": "f25e6f814192057060a50b1ce45364f6c29ccc895bac895b5966eeb208eec65f",
+      "text": "Анализ на COVID-19 в образцах тканей, полученных при минимально инвазивной аутопсии, в случаях внебольничной смерти с посмертными изменениями",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-591ccd494da0",
+      "lang": "uz",
+      "source_sha256": "b52fbe527fb50d44d9a6e2f0ab36b1e34c462260c153cfc262528b3b5e2975a2",
+      "text": "Sud tibbiyotida o‘limdan keyingi MRS termometriyasi uchun optimal harorat kalibrlashini topish",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-591ccd494da0",
+      "lang": "ru",
+      "source_sha256": "b52fbe527fb50d44d9a6e2f0ab36b1e34c462260c153cfc262528b3b5e2975a2",
+      "text": "Поиск оптимальной температурной калибровки для посмертной MRS-термометрии в судебной медицине",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-5b9acd603068",
+      "lang": "uz",
+      "source_sha256": "f2b381984b74b3d1b78d624d88024dcc81ba55cca76a66a1d7b7b53abde78ce8",
+      "text": "O‘limdan keyingi triptazaning chegaraviy qiymatlari (cut-off) va o‘limga olib kelgan anafilaksiyaning asosiy sabablari",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-5b9acd603068",
+      "lang": "ru",
+      "source_sha256": "f2b381984b74b3d1b78d624d88024dcc81ba55cca76a66a1d7b7b53abde78ce8",
+      "text": "Пороговые значения (cut-off) посмертной триптазы и основные причины фатальной анафилаксии",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-5bd26406674d",
+      "lang": "uz",
+      "source_sha256": "cedca0fc7340a0fc0c824e156a1634bc78e0ab8718bad7a003339d3669f6a12b",
+      "text": "Fentanil, desalkilgidazepam va bromazolam ishtirokidagi o‘limdan keyingi holat tavsifi",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-5bd26406674d",
+      "lang": "ru",
+      "source_sha256": "cedca0fc7340a0fc0c824e156a1634bc78e0ab8718bad7a003339d3669f6a12b",
+      "text": "Описание посмертного случая с участием фентанила, дезалкилгидазепама и бромазолама",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-603ceff05fe0",
+      "lang": "uz",
+      "source_sha256": "6d56e9d912394e0a4d877a047535322efa5a847feda513740a247ec5a5320107",
+      "text": "O‘limdan keyingi holatlarda bromazolamning qondagi konsentratsiyalari: Britaniya Kolumbiyasi tajribasi",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-603ceff05fe0",
+      "lang": "ru",
+      "source_sha256": "6d56e9d912394e0a4d877a047535322efa5a847feda513740a247ec5a5320107",
+      "text": "Концентрации бромазолама в крови в посмертных случаях: опыт Британской Колумбии",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-61e3d60fe1c6",
+      "lang": "uz",
+      "source_sha256": "614be9493b30dd2d00b3368d3c101667f2d984ec90a8f73607d47d7a851c5309",
+      "text": "O‘limdan keyin olingan namunalar uchun HbA1c aniqlash usulini baholash",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-61e3d60fe1c6",
+      "lang": "ru",
+      "source_sha256": "614be9493b30dd2d00b3368d3c101667f2d984ec90a8f73607d47d7a851c5309",
+      "text": "Оценка метода определения HbA1c для посмертных образцов",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-63317a3f07a5",
+      "lang": "uz",
+      "source_sha256": "28db440e732df67d240ada8432f07d51a7fb84a4928fd5f5ed0990560bf8c98f",
+      "text": "Erta o‘tkir miokard infarktida o‘limdan keyingi immunogistokimyoviy topilmalar: tizimli sharh",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-63317a3f07a5",
+      "lang": "ru",
+      "source_sha256": "28db440e732df67d240ada8432f07d51a7fb84a4928fd5f5ed0990560bf8c98f",
+      "text": "Посмертные иммуногистохимические находки при раннем остром инфаркте миокарда: систематический обзор",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-64b4721e76d7",
+      "lang": "uz",
+      "source_sha256": "77583217bb27c9c4db00da1f331b5cf8b58fd089ef1839894bb51a901831ce5f",
+      "text": "Modifikatsiyalangan mikro-QuEChERS va LC-MS-MS yordamida o‘limdan keyingi qon namunalarida 28 ta psixotrop dori vositasini miqdoriy aniqlash usulini ishlab chiqish va validatsiya qilish",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-64b4721e76d7",
+      "lang": "ru",
+      "source_sha256": "77583217bb27c9c4db00da1f331b5cf8b58fd089ef1839894bb51a901831ce5f",
+      "text": "Разработка и валидация методики количественного определения 28 психотропных препаратов в посмертных образцах крови с помощью модифицированного micro-QuEChERS и LC-MS-MS",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-64f6fe5e5b93",
+      "lang": "uz",
+      "source_sha256": "6328f5eb6635c4202d2203284a467f40becc20c54b00aaf8969d663bd7fb9d42",
+      "text": "Sud tibbiyotida o‘pka arteriyasi tromboemboliyasini o‘limdan keyingi kompyuter tomografiyasi yordamida tashxislash (pilot tadqiqot)",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-64f6fe5e5b93",
+      "lang": "ru",
+      "source_sha256": "6328f5eb6635c4202d2203284a467f40becc20c54b00aaf8969d663bd7fb9d42",
+      "text": "Посмертная компьютерно-томографическая диагностика тромбоэмболии лёгочной артерии в судебной медицине (пилотное исследование)",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-6564bad9d6cb",
+      "lang": "uz",
+      "source_sha256": "5c67b3a6c7c437d127e36fca10fa5bc5d471ab8e3cb8ef020d3000e063334ee3",
+      "text": "Metanol bilan zaharlanish",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-6564bad9d6cb",
+      "lang": "ru",
+      "source_sha256": "5c67b3a6c7c437d127e36fca10fa5bc5d471ab8e3cb8ef020d3000e063334ee3",
+      "text": "Отравление метанолом",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-6931ce4b186a",
+      "lang": "uz",
+      "source_sha256": "19c2598ed24c54fdd2dcb5e257fc10db931e368d7bf550a82e3cb2a2511fa289",
+      "text": "Fermentlar o‘limdan keyin o‘tgan vaqt oralig‘ining aniq ko‘rsatkichlarimi? Biokimyoviy tahlil",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-6931ce4b186a",
+      "lang": "ru",
+      "source_sha256": "19c2598ed24c54fdd2dcb5e257fc10db931e368d7bf550a82e3cb2a2511fa289",
+      "text": "Являются ли ферменты точными индикаторами посмертного интервала? Биохимический анализ",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-6cdac30af100",
+      "lang": "uz",
+      "source_sha256": "687cc2a6dd13c5e9c2b29a5b84a836b5cc56f481c834d63b7e6c196693358ed8",
+      "text": "ELISA va LC-MS-MS ni taqqoslash: o‘limdan keyingi qonni oddiy maqsadli skrining qilish",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-6cdac30af100",
+      "lang": "ru",
+      "source_sha256": "687cc2a6dd13c5e9c2b29a5b84a836b5cc56f481c834d63b7e6c196693358ed8",
+      "text": "Сравнение ELISA и LC-MS-MS: простой целевой скрининг посмертной крови",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-6d7a30bc3fea",
+      "lang": "uz",
+      "source_sha256": "d695774f6936831644d333dca8d4905125c04d9857f2dbebfacb304f29f1648c",
+      "text": "O‘limdan keyingi zardob, ko‘z shishasimon tanasi va perikard suyuqligida mochevina azoti, kreatinin va siydik kislotasi darajalari",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-6d7a30bc3fea",
+      "lang": "ru",
+      "source_sha256": "d695774f6936831644d333dca8d4905125c04d9857f2dbebfacb304f29f1648c",
+      "text": "Уровни азота мочевины, креатинина и мочевой кислоты в посмертной сыворотке, стекловидном теле и перикардиальной жидкости",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-6dd953d28c8c",
+      "lang": "uz",
+      "source_sha256": "05c745936470dc8534ba3f5d31eeb4c373195a7cc912e0f0cafcdb7f58dbe6ed",
+      "text": "Metanol bilan zaharlanish",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-6dd953d28c8c",
+      "lang": "ru",
+      "source_sha256": "05c745936470dc8534ba3f5d31eeb4c373195a7cc912e0f0cafcdb7f58dbe6ed",
+      "text": "Отравление метанолом",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-72f3b2970463",
+      "lang": "uz",
+      "source_sha256": "32c4418e44776611513cfa8373d68c11332beb55ec711c7094069d64b61cb3f0",
+      "text": "Gidrokodon aniqlangan o‘limdan keyingi namunalarda digidrokodeinning uchrash chastotasi",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-72f3b2970463",
+      "lang": "ru",
+      "source_sha256": "32c4418e44776611513cfa8373d68c11332beb55ec711c7094069d64b61cb3f0",
+      "text": "Частота выявления дигидрокодеина в посмертных образцах, положительных на гидрокодон",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-75f082d8c5b5",
+      "lang": "uz",
+      "source_sha256": "fe1f9d24913bcf418a506be3c61fda401156ef2806097a6916d924c4e7b67701",
+      "text": "O‘limdan keyingi kompyuter tomografiyasi va KT-angiografiya: sud tibbiyotida ko‘krak qafasi va yurakni tasvirlashda qo‘llanilishi",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-75f082d8c5b5",
+      "lang": "ru",
+      "source_sha256": "fe1f9d24913bcf418a506be3c61fda401156ef2806097a6916d924c4e7b67701",
+      "text": "Посмертная компьютерная томография и КТ-ангиография: применение для визуализации сердца и органов грудной клетки в судебной медицине",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-79677bf1685c",
+      "lang": "uz",
+      "source_sha256": "bb4c3c5f8f80a97d0d88f3b5ae6b6aad00daa92bce9a1e739206abf439288d31",
+      "text": "Muayyan vaqt nuqtalarida qondagi alkogol konsentratsiyasini (BAC) aniqlashning eng yaxshi amaliyoti: o‘limdan oldingi alkogol farmakokinetikasini modellashtirish va o‘limdan keyingi alkogol hosil bo‘lishi hamda ko‘chishini hisobga olishning uyg‘unligi",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-79677bf1685c",
+      "lang": "ru",
+      "source_sha256": "bb4c3c5f8f80a97d0d88f3b5ae6b6aad00daa92bce9a1e739206abf439288d31",
+      "text": "Подход лучшей практики к определению концентрации алкоголя в крови (BAC) на конкретные моменты времени: сочетание моделирования прижизненной фармакокинетики алкоголя и учёта посмертного образования и переноса алкоголя",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-7e8f88fdc315",
+      "lang": "uz",
+      "source_sha256": "634ecbb6943c99f22d9a8d645f156c38e320ea9f5bda0b6e93ce3aba089c0365",
+      "text": "O‘limdan keyin olingan miya to‘qimasida xromatin immunopretsipitatsiyasi",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-7e8f88fdc315",
+      "lang": "ru",
+      "source_sha256": "634ecbb6943c99f22d9a8d645f156c38e320ea9f5bda0b6e93ce3aba089c0365",
+      "text": "Иммунопреципитация хроматина в посмертном мозге",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-80e111421384",
+      "lang": "uz",
+      "source_sha256": "93f3f4f7a144b9a34bf1f461951ddb72a4ecd3287f0d20f300e5dd75f49b099f",
+      "text": "Murda parchalanish orolchalari va sud tafonomiyasi: qisqa (30 d) va uzoq (900 d) o‘limdan keyingi vaqt oraliqlarida qabr tuprog‘ining δ(13)C va δ(15)N bilan boyish qonuniyatlari",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-80e111421384",
+      "lang": "ru",
+      "source_sha256": "93f3f4f7a144b9a34bf1f461951ddb72a4ecd3287f0d20f300e5dd75f49b099f",
+      "text": "Островки разложения трупа и судебная тафономия: закономерности обогащения могильного грунта δ(13)C и δ(15)N при коротких (30 d) и длительных (900 d) посмертных интервалах",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-818978cde21d",
+      "lang": "uz",
+      "source_sha256": "bea671184239f31ff671a1752ea8ea4926af817383acac5ed487440373ac7f43",
+      "text": "Bolalar qoldiqlarini antropologik tekshirishda o‘limdan keyingi kompyuter tomografiyasini (PMCT) qo‘llash",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-818978cde21d",
+      "lang": "ru",
+      "source_sha256": "bea671184239f31ff671a1752ea8ea4926af817383acac5ed487440373ac7f43",
+      "text": "Применение посмертной компьютерной томографии (PMCT) при антропологическом исследовании останков детей",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-836378d704de",
+      "lang": "uz",
+      "source_sha256": "7f47802d1dc8ca8e90b31510aa92995f6af4382a411a8d937514a9a1a7a018ad",
+      "text": "O‘limdan keyingi tasvirlashda chap qorincha devori o‘lchamlarini autopsiya natijalari bilan taqqoslash",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-836378d704de",
+      "lang": "ru",
+      "source_sha256": "7f47802d1dc8ca8e90b31510aa92995f6af4382a411a8d937514a9a1a7a018ad",
+      "text": "Сравнение измерений стенки левого желудочка при посмертной визуализации с данными аутопсии",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-861d15c1d68a",
+      "lang": "uz",
+      "source_sha256": "367c156f6959fa139af9e68d75cd21f637d1f0c976e0b83f1ea1ea7f0efd6ef0",
+      "text": "Saqlash sharoitlari va qo‘shimchalarning o‘limdan keyingi HbA1c o‘lchovlariga ta’siri",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-861d15c1d68a",
+      "lang": "ru",
+      "source_sha256": "367c156f6959fa139af9e68d75cd21f637d1f0c976e0b83f1ea1ea7f0efd6ef0",
+      "text": "Влияние условий хранения и добавок на посмертные измерения HbA1c",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-885c3542cd97",
+      "lang": "uz",
+      "source_sha256": "c07cb4e7b85ba44997feb7d3042f8ef1e0927ba46bf0ddbe91c0267407d73c8e",
+      "text": "Siydik, qon va ko‘z shishasimon tanasidagi o‘limdan keyingi metamfetamin konsentratsiyalari orasidagi bog‘liqlik",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-885c3542cd97",
+      "lang": "ru",
+      "source_sha256": "c07cb4e7b85ba44997feb7d3042f8ef1e0927ba46bf0ddbe91c0267407d73c8e",
+      "text": "Взаимосвязь посмертных концентраций метамфетамина в моче, крови и стекловидном теле",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-8977e2dbf41c",
+      "lang": "uz",
+      "source_sha256": "7bca0102682f3d22a0c39cc94671e1090f3595dfdd3dc50587654f911d415438",
+      "text": "Sepsisni o‘limdan keyin tashxislashda immunogistokimyo: tizimli sharh",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-8977e2dbf41c",
+      "lang": "ru",
+      "source_sha256": "7bca0102682f3d22a0c39cc94671e1090f3595dfdd3dc50587654f911d415438",
+      "text": "Иммуногистохимия в посмертной диагностике сепсиса: систематический обзор",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-8e0e8665cc47",
+      "lang": "uz",
+      "source_sha256": "c1fb1955ca2140f3c107296497228b13e512a55ab812718b62bbdd3b759e0992",
+      "text": "O‘limdan keyingi ekspertiza amaliyotida protonitazen metabolitlarining o‘zgaruvchanligi",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-8e0e8665cc47",
+      "lang": "ru",
+      "source_sha256": "c1fb1955ca2140f3c107296497228b13e512a55ab812718b62bbdd3b759e0992",
+      "text": "Вариабельность метаболитов протонитазена в посмертной экспертной практике",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-8ef519c9d2df",
+      "lang": "uz",
+      "source_sha256": "3b9d99d63ade5768315c51267b8b98add4d4f60386c89293445556b2c72b8ff2",
+      "text": "Taqim venasidan qon olish va diazepam, metadon hamda morfinning o‘limdan keyingi qayta taqsimlanishi",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-8ef519c9d2df",
+      "lang": "ru",
+      "source_sha256": "3b9d99d63ade5768315c51267b8b98add4d4f60386c89293445556b2c72b8ff2",
+      "text": "Забор крови из подколенной вены и посмертное перераспределение диазепама, метадона и морфина",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-941271e88cb4",
+      "lang": "uz",
+      "source_sha256": "3ced6e11f885e3daca1df6d723e2a30ba5bb88423a7a3d255f6f1862a82c5d40",
+      "text": "Hayvon jasadlarida o‘limdan keyingi o‘zgarishlar va o‘limdan keyin o‘tgan vaqt oralig‘ini baholash",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-941271e88cb4",
+      "lang": "ru",
+      "source_sha256": "3ced6e11f885e3daca1df6d723e2a30ba5bb88423a7a3d255f6f1862a82c5d40",
+      "text": "Посмертные изменения в трупах животных и оценка посмертного интервала",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-9490bbd40132",
+      "lang": "uz",
+      "source_sha256": "4269b53b3c22594d222d87c616fc9369c177b8b16bc00497ce355a4451634f39",
+      "text": "Oqsil chipi texnologiyasini ko‘p o‘lchovli tahlil usullari bilan birga qo‘llab o‘limdan keyin o‘tgan vaqt oralig‘ini baholash",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-9490bbd40132",
+      "lang": "ru",
+      "source_sha256": "4269b53b3c22594d222d87c616fc9369c177b8b16bc00497ce355a4451634f39",
+      "text": "Оценка посмертного интервала с помощью технологии белковых чипов в сочетании с методами многомерного анализа",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-98726ba33de4",
+      "lang": "uz",
+      "source_sha256": "9cdb3ecb2aa5d9c5e9935653d2067bb9750f8fea97a4264924ee44e36d635eb2",
+      "text": "Janubi-g‘arbiy Xitoyda kuchli chirigan jasad bo‘yicha Aldrichina grahami (Diptera: Calliphoridae) rivojlanishi asosida o‘limdan keyin o‘tgan vaqt oralig‘ini baholash: holat tavsifi",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-98726ba33de4",
+      "lang": "ru",
+      "source_sha256": "9cdb3ecb2aa5d9c5e9935653d2067bb9750f8fea97a4264924ee44e36d635eb2",
+      "text": "Оценка посмертного интервала сильно разложившегося тела по развитию Aldrichina grahami (Diptera: Calliphoridae) на юго-западе Китая: описание случая",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-9bc12217b836",
+      "lang": "uz",
+      "source_sha256": "e6f2f3d9a4d1fbec3997f12504c36988cbf3f860cb5af6846a19ba42621d3289",
+      "text": "«Omika» usullari va o‘limdan keyin o‘tgan vaqt oralig‘ini baholash: tizimli sharh",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-9bc12217b836",
+      "lang": "ru",
+      "source_sha256": "e6f2f3d9a4d1fbec3997f12504c36988cbf3f860cb5af6846a19ba42621d3289",
+      "text": "«Омиксные» методы и оценка посмертного интервала: систематический обзор",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-9e890369587b",
+      "lang": "uz",
+      "source_sha256": "06ca14fcea61672d5019577ae83485728a375352b08ce08b8327ec63105df825",
+      "text": "Qandli diabet va uning asoratlarini o‘limdan keyin tashxislash",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-9e890369587b",
+      "lang": "ru",
+      "source_sha256": "06ca14fcea61672d5019577ae83485728a375352b08ce08b8327ec63105df825",
+      "text": "Посмертная диагностика сахарного диабета и его осложнений",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-9fdf17481093",
+      "lang": "uz",
+      "source_sha256": "1343c67624d5f0dd9fd99e6b22a68e7973fa3e1ba8f11ac6278fc92c65c53e07",
+      "text": "3-beta-gidroksibutiratning o‘limdan keyingi taqsimlanishi",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-9fdf17481093",
+      "lang": "ru",
+      "source_sha256": "1343c67624d5f0dd9fd99e6b22a68e7973fa3e1ba8f11ac6278fc92c65c53e07",
+      "text": "Посмертное распределение 3-бета-гидроксибутирата",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-a8c9fd9059d2",
+      "lang": "uz",
+      "source_sha256": "87148f8d89344a681df8551d17935c4b3c2fd37b79b593336f88af8be9dd8a2a",
+      "text": "Gemolizlangan qonni ultrafiltratsiya qilish orqali o‘limdan keyingi zardobdagi mochevinani baholash",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-a8c9fd9059d2",
+      "lang": "ru",
+      "source_sha256": "87148f8d89344a681df8551d17935c4b3c2fd37b79b593336f88af8be9dd8a2a",
+      "text": "Оценка посмертной концентрации мочевины в сыворотке путём ультрафильтрации гемолизированной крови",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-a9b1613bfcde",
+      "lang": "uz",
+      "source_sha256": "e371aa37fa04dc054b7b4b2214a52231c9e93900be86ba053ad7bb6a675b2e62",
+      "text": "Δ9-tetragidrokannabinol (THC), 11-gidroksi-THC (11-OH-THC) va 11-nor-9-karboksi-THC (THCCOOH) ning o‘limdan keyingi qayta taqsimlanishi",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-a9b1613bfcde",
+      "lang": "ru",
+      "source_sha256": "e371aa37fa04dc054b7b4b2214a52231c9e93900be86ba053ad7bb6a675b2e62",
+      "text": "Посмертное перераспределение Δ9-тетрагидроканнабинола (THC), 11-гидрокси-THC (11-OH-THC) и 11-нор-9-карбокси-THC (THCCOOH)",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-aa6c212ab841",
+      "lang": "uz",
+      "source_sha256": "d9e04127df60e8cdf8ed4b9e5c3b4976a5b5137cdc5d42322bf542c993210e46",
+      "text": "Implantatsiya qilingan yurak elektron qurilmalarini (CIED) o‘limdan keyin so‘rovdan o‘tkazishning sud-tibbiy jihatlari: tizimli sharh va meta-tahlil",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-aa6c212ab841",
+      "lang": "ru",
+      "source_sha256": "d9e04127df60e8cdf8ed4b9e5c3b4976a5b5137cdc5d42322bf542c993210e46",
+      "text": "Судебно-медицинские аспекты посмертного опроса имплантируемых кардиоэлектронных устройств (CIED): систематический обзор и метаанализ",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-b04271bc0157",
+      "lang": "uz",
+      "source_sha256": "4762ae09038242c3650d69350332f5f010f9918682fe938a205902f7f8397be2",
+      "text": "Gipertermiya va o‘limdan keyingi biokimyoviy tekshiruvlar",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-b04271bc0157",
+      "lang": "ru",
+      "source_sha256": "4762ae09038242c3650d69350332f5f010f9918682fe938a205902f7f8397be2",
+      "text": "Гипертермия и посмертные биохимические исследования",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-b2052182ba52",
+      "lang": "uz",
+      "source_sha256": "e098a2c2ad607071cc3aef4f3585ee15961af3c4e7e39a88ab891dfbe5ae993e",
+      "text": "THC, 11-OH-THC va THC-COOH ning o‘limdan keyingi suyuqlik va to‘qimalardagi konsentratsiyalari",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-b2052182ba52",
+      "lang": "ru",
+      "source_sha256": "e098a2c2ad607071cc3aef4f3585ee15961af3c4e7e39a88ab891dfbe5ae993e",
+      "text": "Посмертные концентрации THC, 11-OH-THC и THC-COOH в жидкостях и тканях",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-b34157ab3b89",
+      "lang": "uz",
+      "source_sha256": "04ffba35b3145018e3d798570a32b3f66443f5f2a3aa5a83b2126054d46462ed",
+      "text": "O‘limdan keyin o‘tgan vaqt oralig‘ini baholash uchun tish pulpasida RNK degradatsiyasini tahlil qilish",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-b34157ab3b89",
+      "lang": "ru",
+      "source_sha256": "04ffba35b3145018e3d798570a32b3f66443f5f2a3aa5a83b2126054d46462ed",
+      "text": "Анализ деградации РНК в пульпе зуба для оценки посмертного интервала",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-b83d2f08cdee",
+      "lang": "uz",
+      "source_sha256": "2f0cf555b5fffb60f78b7db6f6520ff6e969ce36566a43fa631f4f368cdcc54a",
+      "text": "Murdaning rektal harorati va o‘limdan keyin o‘tgan vaqt oralig‘ini baholash",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-b83d2f08cdee",
+      "lang": "ru",
+      "source_sha256": "2f0cf555b5fffb60f78b7db6f6520ff6e969ce36566a43fa631f4f368cdcc54a",
+      "text": "Ректальная температура трупа и оценка посмертного интервала",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-bcfdaa9dd6f0",
+      "lang": "uz",
+      "source_sha256": "7ec8bee7699ff761bd155e2951178c6e5b627afc45b18c577dad7769ca767a7f",
+      "text": "Haroratning murdaning turli to‘qimalaridagi mikrob suksessiyasiga ta’siri va o‘limdan keyin o‘tgan vaqt oralig‘ini baholash",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-bcfdaa9dd6f0",
+      "lang": "ru",
+      "source_sha256": "7ec8bee7699ff761bd155e2951178c6e5b627afc45b18c577dad7769ca767a7f",
+      "text": "Влияние температуры на микробную сукцессию в различных тканях трупа и оценка посмертного интервала",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-bde4047e51fa",
+      "lang": "uz",
+      "source_sha256": "9ab59822d3b5e6da8a6cd36a97d99690a3a6d0b3078c01f669c9109433d0706c",
+      "text": "O‘lim turini tasniflashda implantatsiya qilingan kardioverter-defibrillyatorni (ICD) o‘limdan keyin so‘rovdan o‘tkazish",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-bde4047e51fa",
+      "lang": "ru",
+      "source_sha256": "9ab59822d3b5e6da8a6cd36a97d99690a3a6d0b3078c01f669c9109433d0706c",
+      "text": "Посмертный опрос имплантируемого кардиовертера-дефибриллятора (ICD) при классификации вида смерти",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-c4a6f3bc4612",
+      "lang": "uz",
+      "source_sha256": "367b6e3c4105d8012393706e8d043cf4746bf663f06fb3f7b50c165d1242b92b",
+      "text": "Gipotermiyaning o‘limdan keyingi diagnostikasi",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-c4a6f3bc4612",
+      "lang": "ru",
+      "source_sha256": "367b6e3c4105d8012393706e8d043cf4746bf663f06fb3f7b50c165d1242b92b",
+      "text": "Посмертная диагностика гипотермии",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-c50bfac38321",
+      "lang": "uz",
+      "source_sha256": "8e40fc1dd0a9e39d10446d88ba4ead4a6a5b5f545968dbc8204f959c0e658d4e",
+      "text": "Ko‘z shishasimon tanasidagi natriy va xlorid konsentratsiyalarini o‘limdan keyin talqin qilish",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-c50bfac38321",
+      "lang": "ru",
+      "source_sha256": "8e40fc1dd0a9e39d10446d88ba4ead4a6a5b5f545968dbc8204f959c0e658d4e",
+      "text": "Интерпретация посмертных концентраций натрия и хлорида в стекловидном теле",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-c61d77913f97",
+      "lang": "uz",
+      "source_sha256": "56a4be596ce6f5c952a574eea4b574bdf650c0fdcdcab8c768e818d387f2c5ab",
+      "text": "Raqamlardan tashqari: anafilaksiyani sud-tibbiy tashxislashda o‘limdan keyingi triptazaning o‘rnini tanqidiy tahlil qilish",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-c61d77913f97",
+      "lang": "ru",
+      "source_sha256": "56a4be596ce6f5c952a574eea4b574bdf650c0fdcdcab8c768e818d387f2c5ab",
+      "text": "За пределами цифр: критический анализ роли посмертной триптазы в судебно-медицинской диагностике анафилаксии",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-c96443f4f3ac",
+      "lang": "uz",
+      "source_sha256": "de75f717eb9995d5d6006b5268fd35597856eb633aafaeaf28215c4519176eaf",
+      "text": "Amfetamin, kokain, efedrin, MDMA va metilfenidatning o‘limdan keyingi miya/qon nisbatlari",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-c96443f4f3ac",
+      "lang": "ru",
+      "source_sha256": "de75f717eb9995d5d6006b5268fd35597856eb633aafaeaf28215c4519176eaf",
+      "text": "Посмертные соотношения мозг/кровь для амфетамина, кокаина, эфедрина, MDMA и метилфенидата",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-c9776978d897",
+      "lang": "uz",
+      "source_sha256": "2b7333ceba3c4a905430c30174cc44aaab02af932563d170fc65ee6d1db5b768",
+      "text": "Etanol, izopropanol, metanol va etilenglikol bilan zaharlanish",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-c9776978d897",
+      "lang": "ru",
+      "source_sha256": "2b7333ceba3c4a905430c30174cc44aaab02af932563d170fc65ee6d1db5b768",
+      "text": "Отравление этанолом, изопропанолом, метанолом и этиленгликолем",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-cd8990b8217c",
+      "lang": "uz",
+      "source_sha256": "5041c6e3bafa3635d1edd7c7bf06c282691129d77cc8730e1e3d3e99e29441b6",
+      "text": "Sud ekspertizasida qon biomarkerlari orqali o‘limdan keyin o‘tgan vaqt oralig‘ini (PMI) bashorat qilishda sun’iy intellekt: konsepsiya",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-cd8990b8217c",
+      "lang": "ru",
+      "source_sha256": "5041c6e3bafa3635d1edd7c7bf06c282691129d77cc8730e1e3d3e99e29441b6",
+      "text": "Искусственный интеллект в прогнозировании посмертного интервала (PMI) по биомаркерам крови в судебной экспертизе: концепция",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-d2ccb08de6a3",
+      "lang": "uz",
+      "source_sha256": "fb6912957063473e999aa9bc33d04e69ff69aaa386ffbbdd58f10574f2974ecc",
+      "text": "Qutblanishga sezgir optik kogerent tomografiya va ikki nur sindirish mikroskopiyasi yordamida o‘limdan keyin o‘tgan vaqtning miyelin butunligiga ta’sirini miqdoriy baholash",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-d2ccb08de6a3",
+      "lang": "ru",
+      "source_sha256": "fb6912957063473e999aa9bc33d04e69ff69aaa386ffbbdd58f10574f2974ecc",
+      "text": "Количественная оценка влияния посмертного интервала на целостность миелина с помощью поляризационно-чувствительной оптической когерентной томографии и микроскопии двулучепреломления",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-d89e7c7294f7",
+      "lang": "uz",
+      "source_sha256": "42af21d2d3d116abf22937262319c431439c02fee53995884109b87559282e5e",
+      "text": "Diazepam, metadon, morfin va ularning metabolitlari o‘limdan keyingi qayta taqsimlanishining joy, usul va vaqtga bog‘liq jihatlari: taqim venasidan qon olishning ahamiyati",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-d89e7c7294f7",
+      "lang": "ru",
+      "source_sha256": "42af21d2d3d116abf22937262319c431439c02fee53995884109b87559282e5e",
+      "text": "Аспекты посмертного перераспределения диазепама, метадона, морфина и их метаболитов, связанные с местом, техникой и временем забора: значение забора крови из подколенной вены",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-d8b6bc248af6",
+      "lang": "uz",
+      "source_sha256": "4056ba382dca5b899dd76f0f261dd74e7ed447a8fcf7221a23e8fe60fc919f29",
+      "text": "Etanol trombotsitlar apoptozini keltirib chiqaradi",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-d8b6bc248af6",
+      "lang": "ru",
+      "source_sha256": "4056ba382dca5b899dd76f0f261dd74e7ed447a8fcf7221a23e8fe60fc919f29",
+      "text": "Этанол индуцирует апоптоз тромбоцитов",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-d908490973e9",
+      "lang": "uz",
+      "source_sha256": "7e47963d7854d26c0e01cb7dc032ce82950636e6bc9ce21d1472886edfd89a3e",
+      "text": "O‘limdan keyin olingan namunalarda fentanil va norfentanilning taqsimlanishi va qayta taqsimlanishi",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-d908490973e9",
+      "lang": "ru",
+      "source_sha256": "7e47963d7854d26c0e01cb7dc032ce82950636e6bc9ce21d1472886edfd89a3e",
+      "text": "Распределение и перераспределение фентанила и норфентанила в посмертных образцах",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-dbb470281f80",
+      "lang": "uz",
+      "source_sha256": "a164da38214064446c3be447edf4ad16fea205ea57030e79f9677b2d38b8c784",
+      "text": "Giperglikemiyani o‘limdan keyin aniqlash",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-dbb470281f80",
+      "lang": "ru",
+      "source_sha256": "a164da38214064446c3be447edf4ad16fea205ea57030e79f9677b2d38b8c784",
+      "text": "Посмертное выявление гипергликемии",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-e1f89efa5134",
+      "lang": "uz",
+      "source_sha256": "bfd91492d34e91ebe43f87bc72821705b01254799da2388376bcf0c7e8895957",
+      "text": "Shizofreniyada bosh miya yallig‘lanishining o‘limdan keyingi dalillari: tizimli sharh",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-e1f89efa5134",
+      "lang": "ru",
+      "source_sha256": "bfd91492d34e91ebe43f87bc72821705b01254799da2388376bcf0c7e8895957",
+      "text": "Посмертные признаки воспаления головного мозга при шизофрении: систематический обзор",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-e21ab6953020",
+      "lang": "uz",
+      "source_sha256": "a22e7ad12d530c2b2fedc7e0e6850261d3b7204bf524fb4bba018cf2bba69fd4",
+      "text": "O‘limdan keyin olingan namunalardagi endogen gamma-gidroksibutirat",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-e21ab6953020",
+      "lang": "ru",
+      "source_sha256": "a22e7ad12d530c2b2fedc7e0e6850261d3b7204bf524fb4bba018cf2bba69fd4",
+      "text": "Эндогенный гамма-гидроксибутират в посмертных образцах",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-e340f31f4b06",
+      "lang": "uz",
+      "source_sha256": "c7217dc71bd8d5453099d916ccb3bfa45c0edbe823c2db7e4fae21d46b765c8e",
+      "text": "O‘limdan keyingi holatlarda oksikodon topilmalari va CYP2D6 funksiyasi",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-e340f31f4b06",
+      "lang": "ru",
+      "source_sha256": "c7217dc71bd8d5453099d916ccb3bfa45c0edbe823c2db7e4fae21d46b765c8e",
+      "text": "Находки оксикодона и функция CYP2D6 в посмертных случаях",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-e364a9179136",
+      "lang": "uz",
+      "source_sha256": "78e605b50e2836fe76115b63de59c77b3ee7aaf27da0984297491f9b8f4ebba6",
+      "text": "O‘limdan keyingi o‘zgarishlarga oid adabiyotlarning 19-asrgacha bo‘lgan qisqacha tarixi",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-e364a9179136",
+      "lang": "ru",
+      "source_sha256": "78e605b50e2836fe76115b63de59c77b3ee7aaf27da0984297491f9b8f4ebba6",
+      "text": "Краткая история литературы о посмертных изменениях до 19 века",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-e3fee18d4ccd",
+      "lang": "uz",
+      "source_sha256": "79e4dbe33013900fbf2f90d7bc4f5384f5d65fa301198c81e73804e2746eb22e",
+      "text": "Gemolizning ECLIA usulida IgE ning o‘limdan keyingi biokimyoviy tahliliga xalaqit berishi",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-e3fee18d4ccd",
+      "lang": "ru",
+      "source_sha256": "79e4dbe33013900fbf2f90d7bc4f5384f5d65fa301198c81e73804e2746eb22e",
+      "text": "Влияние гемолиза на посмертный биохимический анализ IgE методом ECLIA",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-e460742a28f0",
+      "lang": "uz",
+      "source_sha256": "21ce53adb283619e09d7e733365e5f9141131b045c6bb3f1b2a3fc248c4cb45b",
+      "text": "Ko‘z shishasimon tanasi va zardobdagi biokimyoviy markerlarning o‘limdan keyin o‘tgan vaqt oralig‘i hamda sovuqda saqlash muddati bilan korrelyatsiyasi: prospektiv kuzatuv tadqiqoti",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-e460742a28f0",
+      "lang": "ru",
+      "source_sha256": "21ce53adb283619e09d7e733365e5f9141131b045c6bb3f1b2a3fc248c4cb45b",
+      "text": "Корреляция биохимических маркеров стекловидного тела и сыворотки с посмертным интервалом и длительностью хранения в холоде: проспективное наблюдательное исследование",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-e68434e7daec",
+      "lang": "uz",
+      "source_sha256": "fdca31f1b052617524934b014a82ef71f5eb733a710fac8d57aac6cb30c98b18",
+      "text": "Og‘iz suyuqligidagi giyohvand moddalar va gamma-gidroksibutiratning o‘limdan keyingi qondagi endogen konsentratsiyalari",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-e68434e7daec",
+      "lang": "ru",
+      "source_sha256": "fdca31f1b052617524934b014a82ef71f5eb733a710fac8d57aac6cb30c98b18",
+      "text": "Наркотики в ротовой жидкости и эндогенные посмертные концентрации гамма-гидроксибутирата в крови",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-eb797881a555",
+      "lang": "uz",
+      "source_sha256": "fb8bbcd334f3ca2a36dd9782af7838f3e063126aca734a665688998bdf2cc5de",
+      "text": "Izopropil spirti bilan zaharlanish",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-eb797881a555",
+      "lang": "ru",
+      "source_sha256": "fb8bbcd334f3ca2a36dd9782af7838f3e063126aca734a665688998bdf2cc5de",
+      "text": "Интоксикация изопропиловым спиртом",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-ed4b2e74065c",
+      "lang": "uz",
+      "source_sha256": "eb9a684d2e01cfaa91994410d5dca4a8868562339eb031061426bfdb13d528a1",
+      "text": "O‘limdan keyingi sud-toksikologik holatlar: Milan (Italiya) materiallari bo‘yicha retrospektiv tahlil",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-ed4b2e74065c",
+      "lang": "ru",
+      "source_sha256": "eb9a684d2e01cfaa91994410d5dca4a8868562339eb031061426bfdb13d528a1",
+      "text": "Посмертные судебно-токсикологические случаи: ретроспективный обзор материалов Милана (Италия)",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-ed4dda8139ff",
+      "lang": "uz",
+      "source_sha256": "d34c8e21e5a4f3a69e40c3f8c58d17ddaec71748d1f48dfc20d3d32d8d5f26c4",
+      "text": "Ketoatsidozning o‘limdan keyingi diagnostikasi: turli o‘lim sabablarida beta-gidroksibutirat, aseton va izopropanol darajalari",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-ed4dda8139ff",
+      "lang": "ru",
+      "source_sha256": "d34c8e21e5a4f3a69e40c3f8c58d17ddaec71748d1f48dfc20d3d32d8d5f26c4",
+      "text": "Посмертная диагностика кетоацидоза: уровни бета-гидроксибутирата, ацетона и изопропанола при различных причинах смерти",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-ee0ca660aec7",
+      "lang": "uz",
+      "source_sha256": "1319bef65e031cf53c677f2e225b33bcba7a3522eb6303f27680bf48c91698c1",
+      "text": "O‘limdan keyingi qon va sochda kannabinoidlarni tahlil qilish: o‘limdan keyingi toksikologiyadagi ahamiyati",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-ee0ca660aec7",
+      "lang": "ru",
+      "source_sha256": "1319bef65e031cf53c677f2e225b33bcba7a3522eb6303f27680bf48c91698c1",
+      "text": "Анализ каннабиноидов в посмертной крови и волосах: значение для посмертной токсикологии",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-ee0cfff2899b",
+      "lang": "uz",
+      "source_sha256": "9ebf9fb9c1aab1dff86475ebaaacc4a6ae05916fa2c690569d199430e4cd5372",
+      "text": "Janubi-g‘arbiy Koloradodagi uchta biogeoiqlim zonasida o‘limdan keyin o‘tgan vaqt oralig‘ini (PMI) aniqlash",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-ee0cfff2899b",
+      "lang": "ru",
+      "source_sha256": "9ebf9fb9c1aab1dff86475ebaaacc4a6ae05916fa2c690569d199430e4cd5372",
+      "text": "Определение посмертного интервала (PMI) в трёх биогеоклиматических зонах юго-запада Колорадо",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-ef888204239f",
+      "lang": "uz",
+      "source_sha256": "d3decce150de51707cead58ee9b5d8abcc195b0ecbe1bcff012012c9073703a1",
+      "text": "Etanolning gepatotoksikligida gidroksietil radikallari",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-ef888204239f",
+      "lang": "ru",
+      "source_sha256": "d3decce150de51707cead58ee9b5d8abcc195b0ecbe1bcff012012c9073703a1",
+      "text": "Гидроксиэтильные радикалы в гепатотоксичности этанола",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-f17eed69a04c",
+      "lang": "uz",
+      "source_sha256": "ebb6bedf478f38aff57e880918bcc2746032ba45f4220c2e698939224090b235",
+      "text": "Furanilfentanil bilan bog‘liq o‘lim holatlari seriyasida o‘limdan keyingi va toksikologik topilmalar",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-f17eed69a04c",
+      "lang": "ru",
+      "source_sha256": "ebb6bedf478f38aff57e880918bcc2746032ba45f4220c2e698939224090b235",
+      "text": "Посмертные и токсикологические находки в серии смертей, связанных с фуранилфентанилом",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-f592e99129d6",
+      "lang": "uz",
+      "source_sha256": "fe2944328a631fea19fd0b5ecc8b3568b36ba438d76a5acb7e033fbe8aa26ba2",
+      "text": "Gipertonik degidratatsiyaning o‘limdan keyingi diagnostikasi",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-f592e99129d6",
+      "lang": "ru",
+      "source_sha256": "fe2944328a631fea19fd0b5ecc8b3568b36ba438d76a5acb7e033fbe8aa26ba2",
+      "text": "Посмертная диагностика гипертонической дегидратации",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-fc5b3516473f",
+      "lang": "uz",
+      "source_sha256": "c799a02dbfbf3a3591c8306788e3fd55efe6387e56914dee3a9db997105bb054",
+      "text": "Sud patologiyasida o‘limdan keyingi MRT ning dalil sifatidagi ahamiyati",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-fc5b3516473f",
+      "lang": "ru",
+      "source_sha256": "c799a02dbfbf3a3591c8306788e3fd55efe6387e56914dee3a9db997105bb054",
+      "text": "Доказательное значение посмертной МРТ в судебной патологии",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-fe6f7933a7ca",
+      "lang": "uz",
+      "source_sha256": "93f296281c439ab6e25399ad71789ba3c704a5a3865b2e2b651bdc6a4e27ed54",
+      "text": "Tog‘ay — o‘limdan keyin o‘tgan vaqt oralig‘ini aniqlashning yangi ko‘rsatkichimi?",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-fe6f7933a7ca",
+      "lang": "ru",
+      "source_sha256": "93f296281c439ab6e25399ad71789ba3c704a5a3865b2e2b651bdc6a4e27ed54",
+      "text": "Хрящ — новый параметр для определения посмертного интервала?",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-ffb8a261050c",
+      "lang": "uz",
+      "source_sha256": "1afbb17cc94335be1bda9b1e9b7e7fe4a1f4b4b180cd9c1ec6eff4f5ef0a6c48",
+      "text": "O‘limdan keyin olingan namunalarda flualprazolamning taqsimlanishi",
+      "status": "machine_draft"
+    },
+    {
+      "target_type": "research_title",
+      "target_id": "RS-ffb8a261050c",
+      "lang": "ru",
+      "source_sha256": "1afbb17cc94335be1bda9b1e9b7e7fe4a1f4b4b180cd9c1ec6eff4f5ef0a6c48",
+      "text": "Распределение флуалпразолама в посмертных образцах",
       "status": "machine_draft"
     }
   ]

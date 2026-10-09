@@ -64,7 +64,7 @@ void main() {
     // Oldingi manba (PMC) retsepti alohida variant sifatida qoladi.
     await see(tester, find.byKey(const Key('reagent.ingredients.pmc')));
     expect(
-      find.textContaining('Dragendorff’s reagent was prepared by mixing'),
+      find.textContaining('Dragendorf reaktivi 70 ml distillangan suv'),
       findsOneWidget,
     );
 

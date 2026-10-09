@@ -29,6 +29,10 @@ Checks (exit code 1 on any error):
        e.g. "[key] (23-b.)", "[key] (с. 23–24)", "[key] (pp. 23, 27)"
   G018 term_ids (optional): unique strings, each an existing term_id in
        content/pilot/bundle.json term_translations (glossary link)
+  G019 translation QA gate: numbers/units/formulas/abbreviations of the uz
+       original kept in ru/en, canonical terminology (content/terminology/
+       canonical_terms.json); Uzbek legal references carry official uz/ru
+       titles with title_status and lex.uz verification
 """
 import json
 import pathlib
@@ -83,6 +87,31 @@ def check_uz(text: str, where: str) -> None:
             err("G010", where, f"Uzbek apostrophe convention: found {bad!r}; use U+2018")
             return
 
+
+
+def translation_gate(path, label, err, code):
+    """G019: claim preservation + canonical terminology (content/tools/translation_qa.py)
+    and official uz/ru titles for Uzbek legal references (lex.uz)."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("translation_qa", ROOT / "content/tools/translation_qa.py")
+    tqa = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(tqa)
+    rep = tqa.Report(tqa.load_exceptions())
+    tqa.check_tri_file(path, rep, label)
+    for rid, problem in rep.errors:
+        err(code, rid, problem)
+    data = json.loads(path.read_text(encoding="utf-8"))
+    for r in data.get("references", []):
+        if "lex.uz" in (r.get("url") or "") and r.get("type") in ("law", "legislation", "regulation"):
+            titles = r.get("titles") or {}
+            status = r.get("title_status") or {}
+            for lang in ("uz", "ru", "en"):
+                if not (titles.get(lang) or "").strip():
+                    err(code, r["key"], f"Uzbek legal reference without titles.{lang}")
+                if status.get(lang) not in ("official", "official_transliterated", "unofficial_translation"):
+                    err(code, r["key"], f"title_status.{lang} missing/invalid")
+            if not r.get("title_verification"):
+                err(code, r["key"], "title_verification (lex.uz URL + access date) missing")
 
 def main() -> int:
     data = json.loads((HERE / "guidelines_v1.json").read_text(encoding="utf-8"))
@@ -243,12 +272,13 @@ def main() -> int:
     for c in data.get("cards", []):
         per = {lang: sum(len(s['body'][lang].split()) for s in c['sections']) for lang in LANGS}
         print(f"  {c['id']}: sections={len(c['sections'])} refs={len(c['reference_keys'])} words={per}")
+    translation_gate(HERE / "guidelines_v1.json", "guidelines", err, "G019")
     if errors:
         print(f"FAILED: {len(errors)} error(s)")
         for e in errors:
             print("  " + e)
         return 1
-    print("OK: all checks passed (G001-G018)")
+    print("OK: all checks passed (G001-G019)")
     return 0
 
 

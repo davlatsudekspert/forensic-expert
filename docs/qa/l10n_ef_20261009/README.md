@@ -33,7 +33,7 @@ testlarida), ADMIN roli (o‘quv rejimida admin farqi yo‘q).
   «Asl manbadagi iqtibosni ko‘rish», «To‘g‘ri / Noto‘g‘ri» savoli.
 - `s07`–`s08`: imtihon natijasi «Natija: 6 / 20», foiz, barcha javoblar izoh bilan.
 - `s09`, `s20`, `s30`: kartadagi qisqartma → qisqa izoh varag‘i (machine_draft belgisi).
-  **uz/ru kartalarida «GX-MS / ГХ-МС» hali kanonik emas** — havola faqat «Rf» da; en da
-  TLC, GC-MS, LC-MS/MS, Rf, HPLC. Karta matnlarini D bosqichi tuzatadi.
+  D bosqichi base’ga birlashtirilgandan keyin (5810e30) uchala tilda ham kartada TLC, GC-MS,
+  LC-MS/MS, Rf, HPLC havolalari bor.
 - `s12`: sanoq «1-savol / 10 ta».
 - `s19`: ru — imtihon o‘rniga «Экзамен доступен на узбекском…».

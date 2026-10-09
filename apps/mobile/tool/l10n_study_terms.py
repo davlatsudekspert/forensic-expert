@@ -144,6 +144,9 @@ UPDATE = {
     "tech_lcMsMs": {"ru": "LC-MS/MS"},
     "tech_gcMsMs": {"ru": "GC-MS/MS"},
     "tech_lcMs": {"ru": "LC-MS"},
+    "tech_gc": {"ru": "GC"},
+    "tech_gcFid": {"ru": "GC-FID"},
+    "tech_headspaceGc": {"ru": "Парофазная GC"},
 }
 
 for idx, code in enumerate(["en", "ru", "uz"]):

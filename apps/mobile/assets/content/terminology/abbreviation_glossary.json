@@ -5,7 +5,7 @@
   {
    "id": "A-PMI",
    "abbreviation": "PMI",
-   "canonical_id": "PMI",
+   "canonical_id": "pmi",
    "related_term_id": "T-POSTMORTEM-INTERVAL",
    "expansion": {
     "uz": "o‘limdan keyin o‘tgan vaqt oralig‘i",
@@ -31,7 +31,7 @@
   {
    "id": "A-PMR",
    "abbreviation": "PMR",
-   "canonical_id": "PMR",
+   "canonical_id": "pmr",
    "related_term_id": "T-POSTMORTEM-REDISTRIBUTION",
    "expansion": {
     "uz": "o‘limdan keyingi qayta taqsimlanish",
@@ -56,7 +56,7 @@
   {
    "id": "A-GC-MS",
    "abbreviation": "GC-MS",
-   "canonical_id": "GC-MS",
+   "canonical_id": "gc_ms",
    "related_term_id": "T-GC-MS",
    "expansion": {
     "uz": "gaz xromatografiyasi — mass-spektrometriya",
@@ -81,7 +81,7 @@
   {
    "id": "A-LC-MS-MS",
    "abbreviation": "LC-MS/MS",
-   "canonical_id": "LC-MS/MS",
+   "canonical_id": "lc_ms_ms",
    "related_term_id": "T-LC-MS-MS",
    "expansion": {
     "uz": "suyuqlik xromatografiyasi — tandem mass-spektrometriya",
@@ -106,7 +106,7 @@
   {
    "id": "A-HPLC",
    "abbreviation": "HPLC",
-   "canonical_id": "HPLC",
+   "canonical_id": "hplc",
    "related_term_id": "T-GMT-HIGH-PERFORMANCE-LIQUID-CHROMATOGRAPHY",
    "expansion": {
     "uz": "yuqori samarali suyuqlik xromatografiyasi",
@@ -130,7 +130,7 @@
   {
    "id": "A-TLC",
    "abbreviation": "TLC",
-   "canonical_id": "TLC",
+   "canonical_id": "tlc",
    "related_term_id": "T-GMT-THIN-LAYER-CHROMATOGRAPHY",
    "expansion": {
     "uz": "yupqa qatlamli xromatografiya",
@@ -154,9 +154,9 @@
   {
    "id": "A-RF",
    "abbreviation": "Rf",
-   "canonical_id": "Rf",
+   "canonical_id": "rf",
    "expansion": {
-    "uz": "harakatchanlik koeffitsienti",
+    "uz": "ushlanish koeffitsiyenti (harakatchanlik koeffitsiyenti)",
     "ru": "коэффициент подвижности",
     "en": "retardation factor"
    },
@@ -177,7 +177,7 @@
   {
    "id": "A-VD",
    "abbreviation": "Vd",
-   "canonical_id": "Vd",
+   "canonical_id": "vd",
    "expansion": {
     "uz": "taqsimlanish hajmi",
     "ru": "объём распределения",
@@ -200,7 +200,7 @@
   {
    "id": "A-COHB",
    "abbreviation": "COHb",
-   "canonical_id": "COHb",
+   "canonical_id": "cohb",
    "expansion": {
     "uz": "karboksigemoglobin",
     "ru": "карбоксигемоглобин",

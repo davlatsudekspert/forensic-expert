@@ -5,7 +5,7 @@
     {
       "id": "A-PMI",
       "abbreviation": "PMI",
-      "canonical_id": "PMI",
+      "canonical_id": "pmi",
       "related_term_id": "T-POSTMORTEM-INTERVAL",
       "expansion": {"uz": "o‘limdan keyin o‘tgan vaqt oralig‘i", "ru": "посмертный интервал", "en": "postmortem interval"},
       "explanation": {
@@ -19,7 +19,7 @@
     {
       "id": "A-PMR",
       "abbreviation": "PMR",
-      "canonical_id": "PMR",
+      "canonical_id": "pmr",
       "related_term_id": "T-POSTMORTEM-REDISTRIBUTION",
       "expansion": {"uz": "o‘limdan keyingi qayta taqsimlanish", "ru": "посмертное перераспределение", "en": "postmortem redistribution"},
       "explanation": {
@@ -33,7 +33,7 @@
     {
       "id": "A-GC-MS",
       "abbreviation": "GC-MS",
-      "canonical_id": "GC-MS",
+      "canonical_id": "gc_ms",
       "related_term_id": "T-GC-MS",
       "expansion": {"uz": "gaz xromatografiyasi — mass-spektrometriya", "ru": "газовая хроматография — масс-спектрометрия", "en": "gas chromatography–mass spectrometry"},
       "explanation": {
@@ -47,7 +47,7 @@
     {
       "id": "A-LC-MS-MS",
       "abbreviation": "LC-MS/MS",
-      "canonical_id": "LC-MS/MS",
+      "canonical_id": "lc_ms_ms",
       "related_term_id": "T-LC-MS-MS",
       "expansion": {"uz": "suyuqlik xromatografiyasi — tandem mass-spektrometriya", "ru": "жидкостная хроматография — тандемная масс-спектрометрия", "en": "liquid chromatography–tandem mass spectrometry"},
       "explanation": {
@@ -61,7 +61,7 @@
     {
       "id": "A-HPLC",
       "abbreviation": "HPLC",
-      "canonical_id": "HPLC",
+      "canonical_id": "hplc",
       "related_term_id": "T-GMT-HIGH-PERFORMANCE-LIQUID-CHROMATOGRAPHY",
       "expansion": {"uz": "yuqori samarali suyuqlik xromatografiyasi", "ru": "высокоэффективная жидкостная хроматография", "en": "high-performance liquid chromatography"},
       "explanation": {
@@ -75,7 +75,7 @@
     {
       "id": "A-TLC",
       "abbreviation": "TLC",
-      "canonical_id": "TLC",
+      "canonical_id": "tlc",
       "related_term_id": "T-GMT-THIN-LAYER-CHROMATOGRAPHY",
       "expansion": {"uz": "yupqa qatlamli xromatografiya", "ru": "тонкослойная хроматография", "en": "thin-layer chromatography"},
       "explanation": {
@@ -89,8 +89,8 @@
     {
       "id": "A-RF",
       "abbreviation": "Rf",
-      "canonical_id": "Rf",
-      "expansion": {"uz": "harakatchanlik koeffitsienti", "ru": "коэффициент подвижности", "en": "retardation factor"},
+      "canonical_id": "rf",
+      "expansion": {"uz": "ushlanish koeffitsiyenti (harakatchanlik koeffitsiyenti)", "ru": "коэффициент подвижности", "en": "retardation factor"},
       "explanation": {
         "uz": "TLC da dog‘ bosib o‘tgan masofaning erituvchi fronti masofasiga nisbati (0 dan 1 gacha). Plastinka, erituvchilar tizimi va sharoitga bog‘liq, shuning uchun faqat shu plastinkadagi standart bilan solishtiriladi.",
         "ru": "В TLC — отношение пути, пройденного пятном, к пути фронта растворителя (от 0 до 1). Зависит от пластинки, системы растворителей и условий, поэтому сравнивается только со стандартом на той же пластинке.",
@@ -102,7 +102,7 @@
     {
       "id": "A-VD",
       "abbreviation": "Vd",
-      "canonical_id": "Vd",
+      "canonical_id": "vd",
       "expansion": {"uz": "taqsimlanish hajmi", "ru": "объём распределения", "en": "volume of distribution"},
       "explanation": {
         "uz": "Organizmdagi dori miqdorini uning plazmadagi konsentratsiyasi bilan bog‘lovchi shartli hajm (odatda L/kg). Katta Vd moddaning to‘qimalarga keng tarqalishini bildiradi va o‘limdan keyingi qayta taqsimlanish (PMR) kuchliroq bo‘lishi bilan bog‘liq.",
@@ -115,7 +115,7 @@
     {
       "id": "A-COHB",
       "abbreviation": "COHb",
-      "canonical_id": "COHb",
+      "canonical_id": "cohb",
       "expansion": {"uz": "karboksigemoglobin", "ru": "карбоксигемоглобин", "en": "carboxyhaemoglobin"},
       "explanation": {
         "uz": "Uglerod oksidi bilan bog‘langan gemoglobin; umumiy gemoglobinning to‘yinish foizi sifatida ifodalanadi. Uglerod oksidi ta’sirining asosiy laboratoriya ko‘rsatkichi.",

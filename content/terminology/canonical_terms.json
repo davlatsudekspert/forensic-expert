@@ -1,71 +1,167 @@
 {
   "schema": "fe-canonical-terms/1",
   "decided": "2026-10-09",
-  "note": "Owner decision (L10N audit §9): international abbreviations are kept unchanged in uz, ru and en; the full form is written on first use and explained in the glossary. 'forbidden' lists variants that must not appear in UI strings (ARB) or quiz texts. Entries marked 'proposed' were added by the study/terminology (E/F) agent and await reconciliation with the content (D) agent.",
+  "decision": "International abbreviations are kept unchanged in ALL UI languages (uz, ru, en). Local transliterated/Cyrillic abbreviations (GX-MS, SX-MS, YuSSX, YuQX, ГХ-МС, ЖХ-МС, ВЭЖХ, ТСХ …) are forbidden in running text. On first mention per card/record the abbreviation is followed by its expansion in the UI language: «GC-MS (gaz xromatografiyasi — mass-spektrometriya)». Search keywords may keep the old variants (they are synonyms, not displayed text).",
+  "consumers": [
+    "content/tools/translation_qa.py (terminology gate for bundle, guidelines, court_prep)",
+    "content/tools/l10n_terms_normalize.py (idempotent normaliser)",
+    "apps/mobile/tool/l10n_*.py (ARB / quiz texts — other agent)"
+  ],
   "terms": [
     {
-      "id": "PMI",
-      "abbreviation": "PMI",
-      "expansion": {"uz": "o‘limdan keyin o‘tgan vaqt oralig‘i", "ru": "посмертный интервал", "en": "postmortem interval"},
-      "glossary_term_id": "T-POSTMORTEM-INTERVAL",
-      "forbidden": {"uz": [], "ru": []}
+      "id": "gc_ms", "abbr": "GC-MS",
+      "expansion": {
+        "uz": "gaz xromatografiyasi — mass-spektrometriya",
+        "ru": "газовая хроматография — масс-спектрометрия",
+        "en": "gas chromatography–mass spectrometry"
+      },
+      "forbidden": {"uz": ["GX-MS", "GX–MS", "GXMS"], "ru": ["ГХ-МС", "ГХ–МС", "ГХ/МС", "GC/МС", "ГХМС", "ХМС"], "en": []},
+      "allowed_variants": ["GC–MS", "GCMS"]
     },
     {
-      "id": "PMR",
-      "abbreviation": "PMR",
-      "expansion": {"uz": "o‘limdan keyingi qayta taqsimlanish", "ru": "посмертное перераспределение", "en": "postmortem redistribution"},
-      "glossary_term_id": "T-POSTMORTEM-REDISTRIBUTION",
-      "forbidden": {"uz": [], "ru": []}
+      "id": "lc_ms_ms", "abbr": "LC-MS/MS",
+      "expansion": {
+        "uz": "suyuqlik xromatografiyasi — tandem mass-spektrometriya",
+        "ru": "жидкостная хроматография — тандемная масс-спектрометрия",
+        "en": "liquid chromatography–tandem mass spectrometry"
+      },
+      "forbidden": {"uz": ["SX-MS/MS", "SX–MS/MS", "YuSSX-MS/MS"], "ru": ["ЖХ-МС/МС", "ЖХ–МС/МС", "ВЭЖХ-МС/МС", "ВЭЖХ–МС/МС"], "en": []},
+      "allowed_variants": ["LC–MS/MS", "LC-MS-MS", "LC–MS–MS", "LC/MS/MS", "UPLC-MS/MS"]
     },
     {
-      "id": "GC-MS",
-      "abbreviation": "GC-MS",
-      "expansion": {"uz": "gaz xromatografiyasi — mass-spektrometriya", "ru": "газовая хроматография — масс-спектрометрия", "en": "gas chromatography–mass spectrometry"},
-      "glossary_term_id": "T-GC-MS",
-      "forbidden": {"uz": ["GX-MS"], "ru": ["ГХ-МС"]},
-      "proposed": ["forbidden.ru"]
+      "id": "lc_ms", "abbr": "LC-MS",
+      "expansion": {
+        "uz": "suyuqlik xromatografiyasi — mass-spektrometriya",
+        "ru": "жидкостная хроматография — масс-спектрометрия",
+        "en": "liquid chromatography–mass spectrometry"
+      },
+      "forbidden": {"uz": ["SX-MS", "SX–MS"], "ru": ["ЖХ-МС", "ЖХ–МС"], "en": []},
+      "allowed_variants": ["LC–MS", "LC/MS"],
+      "note": "LC-MS (single-stage) is NOT the same technique as LC-MS/MS; the normaliser keeps the distinction of the source."
     },
     {
-      "id": "LC-MS/MS",
-      "abbreviation": "LC-MS/MS",
-      "expansion": {"uz": "suyuqlik xromatografiyasi — tandem mass-spektrometriya", "ru": "жидкостная хроматография — тандемная масс-спектрометрия", "en": "liquid chromatography–tandem mass spectrometry"},
-      "glossary_term_id": "T-LC-MS-MS",
-      "forbidden": {"uz": ["SX-MS"], "ru": ["ЖХ-МС/МС", "ЖХ-МС"]},
-      "proposed": ["forbidden.ru"]
+      "id": "hplc", "abbr": "HPLC",
+      "expansion": {
+        "uz": "yuqori samarali suyuqlik xromatografiyasi",
+        "ru": "высокоэффективная жидкостная хроматография",
+        "en": "high-performance liquid chromatography"
+      },
+      "forbidden": {"uz": ["YuSSX"], "ru": ["ВЭЖХ"], "en": []},
+      "allowed_variants": ["UHPLC", "UPLC"]
     },
     {
-      "id": "HPLC",
-      "abbreviation": "HPLC",
-      "expansion": {"uz": "yuqori samarali suyuqlik xromatografiyasi", "ru": "высокоэффективная жидкостная хроматография", "en": "high-performance liquid chromatography"},
-      "glossary_term_id": "T-GMT-HIGH-PERFORMANCE-LIQUID-CHROMATOGRAPHY",
-      "forbidden": {"uz": ["YuSSX"], "ru": ["ВЭЖХ"]},
-      "proposed": ["forbidden.ru"]
+      "id": "hplc_dad", "abbr": "HPLC-DAD",
+      "expansion": {
+        "uz": "diod-matritsali detektorli yuqori samarali suyuqlik xromatografiyasi",
+        "ru": "высокоэффективная жидкостная хроматография с диодно-матричным детектором",
+        "en": "high-performance liquid chromatography with diode-array detection"
+      },
+      "forbidden": {"uz": ["YuSSX-DMD"], "ru": ["ВЭЖХ-ДМД", "ВЭЖХ-ДАД"], "en": []},
+      "allowed_variants": []
     },
     {
-      "id": "TLC",
-      "abbreviation": "TLC",
-      "expansion": {"uz": "yupqa qatlamli xromatografiya", "ru": "тонкослойная хроматография", "en": "thin-layer chromatography"},
-      "glossary_term_id": "T-GMT-THIN-LAYER-CHROMATOGRAPHY",
-      "forbidden": {"uz": ["YuQX"], "ru": ["ТСХ"]},
-      "proposed": ["forbidden.uz", "forbidden.ru"]
+      "id": "tlc", "abbr": "TLC",
+      "expansion": {
+        "uz": "yupqa qatlamli xromatografiya",
+        "ru": "тонкослойная хроматография",
+        "en": "thin-layer chromatography"
+      },
+      "forbidden": {"uz": ["YuQX"], "ru": ["ТСХ"], "en": []},
+      "allowed_variants": []
     },
     {
-      "id": "Rf",
-      "abbreviation": "Rf",
-      "expansion": {"uz": "harakatchanlik koeffitsienti", "ru": "коэффициент подвижности", "en": "retardation factor"},
-      "forbidden": {"uz": [], "ru": []}
+      "id": "hptlc", "abbr": "HPTLC",
+      "expansion": {
+        "uz": "yuqori samarali yupqa qatlamli xromatografiya",
+        "ru": "высокоэффективная тонкослойная хроматография",
+        "en": "high-performance thin-layer chromatography"
+      },
+      "forbidden": {"uz": ["YuSYuQX"], "ru": ["ВЭТСХ"], "en": []},
+      "allowed_variants": []
     },
     {
-      "id": "Vd",
-      "abbreviation": "Vd",
+      "id": "gc", "abbr": "GC",
+      "expansion": {"uz": "gaz xromatografiyasi", "ru": "газовая хроматография", "en": "gas chromatography"},
+      "forbidden": {"uz": ["GX"], "ru": ["ГХ"], "en": []},
+      "allowed_variants": []
+    },
+    {
+      "id": "glc", "abbr": "GLC",
+      "expansion": {"uz": "gaz-suyuqlik xromatografiyasi", "ru": "газожидкостная хроматография", "en": "gas–liquid chromatography"},
+      "forbidden": {"uz": ["GSX"], "ru": ["ГЖХ"], "en": []},
+      "allowed_variants": []
+    },
+    {
+      "id": "lc", "abbr": "LC",
+      "expansion": {"uz": "suyuqlik xromatografiyasi", "ru": "жидкостная хроматография", "en": "liquid chromatography"},
+      "forbidden": {"uz": ["SX"], "ru": ["ЖХ"], "en": []},
+      "allowed_variants": []
+    },
+    {
+      "id": "gc_fid", "abbr": "GC-FID",
+      "expansion": {"uz": "alanga-ionlanish detektorli gaz xromatografiyasi", "ru": "газовая хроматография с пламенно-ионизационным детектором", "en": "gas chromatography with flame ionization detection"},
+      "forbidden": {"uz": ["GX-AID"], "ru": ["ГХ-ПИД"], "en": []},
+      "allowed_variants": ["HS-GC-FID"]
+    },
+    {
+      "id": "hrms", "abbr": "HRMS",
+      "expansion": {"uz": "yuqori aniqlikdagi mass-spektrometriya", "ru": "масс-спектрометрия высокого разрешения", "en": "high-resolution mass spectrometry"},
+      "forbidden": {"uz": ["YuAMS"], "ru": ["МСВР"], "en": []},
+      "allowed_variants": []
+    },
+    {
+      "id": "rf", "abbr": "Rf",
+      "expansion": {"uz": "ushlanish koeffitsiyenti (harakatchanlik koeffitsiyenti)", "ru": "коэффициент подвижности", "en": "retardation factor"},
+      "forbidden": {"uz": [], "ru": [], "en": []},
+      "allowed_variants": ["hRf", "Rf×100"]
+    },
+    {
+      "id": "vd", "abbr": "Vd",
       "expansion": {"uz": "taqsimlanish hajmi", "ru": "объём распределения", "en": "volume of distribution"},
-      "forbidden": {"uz": [], "ru": []}
+      "forbidden": {"uz": [], "ru": [], "en": []},
+      "allowed_variants": []
     },
     {
-      "id": "COHb",
-      "abbreviation": "COHb",
+      "id": "cohb", "abbr": "COHb",
       "expansion": {"uz": "karboksigemoglobin", "ru": "карбоксигемоглобин", "en": "carboxyhaemoglobin"},
-      "forbidden": {"uz": [], "ru": []}
+      "forbidden": {"uz": ["KOHb", "HbCO"], "ru": ["КОHb", "HbCO"], "en": []},
+      "allowed_variants": ["%COHb"]
+    },
+    {
+      "id": "pmi", "abbr": "PMI",
+      "expansion": {"uz": "o‘limdan keyin o‘tgan vaqt oralig‘i", "ru": "посмертный интервал", "en": "postmortem interval"},
+      "forbidden": {"uz": [], "ru": ["ПМИ"], "en": []},
+      "allowed_variants": []
+    },
+    {
+      "id": "pmr", "abbr": "PMR",
+      "expansion": {"uz": "o‘limdan keyingi qayta taqsimlanish", "ru": "посмертное перераспределение", "en": "postmortem redistribution"},
+      "forbidden": {"uz": [], "ru": ["ПМР"], "en": []},
+      "allowed_variants": []
+    }
+  ],
+  "words": [
+    {
+      "id": "postmortem_adj", "lang": "uz",
+      "forbidden": ["postmortem", "post-mortem"],
+      "use": "o‘limdan keyingi",
+      "note": "Latin phrase «post mortem» (two words, italic sense) is tolerated by the detector; English one-word adjective is not."
+    },
+    {
+      "id": "antemortem_adj", "lang": "uz",
+      "forbidden": ["antemortem", "ante-mortem"],
+      "use": "o‘limdan oldingi"
+    },
+    {
+      "id": "methemoglobin", "lang": "uz",
+      "forbidden": ["methemoglobin"],
+      "use": "metgemoglobin"
+    },
+    {
+      "id": "ethanol_word", "lang": "uz",
+      "forbidden": ["ethanol"],
+      "use": "etanol",
+      "note": "Identifiers such as tool.conv.ethanol_units are exempt (dotted IDs)."
     }
   ]
 }

@@ -28,11 +28,12 @@ void main() {
     '(?![\\w\\u0400-\\u04FF-])',
   );
 
-  test('kanonik ro‘yxat: 9 ta qisqartma, uz/ru/en kengaytma', () {
-    expect(
-      [for (final t in terms) t['abbreviation']],
-      ['PMI', 'PMR', 'GC-MS', 'LC-MS/MS', 'HPLC', 'TLC', 'Rf', 'Vd', 'COHb'],
-    );
+  const required = [
+    'PMI', 'PMR', 'GC-MS', 'LC-MS/MS', 'HPLC', 'TLC', 'Rf', 'Vd', 'COHb', //
+  ];
+
+  test('kanonik ro‘yxat: majburiy qisqartmalar, uz/ru/en kengaytma', () {
+    expect([for (final t in terms) t['abbr']], containsAll(required));
     for (final t in terms) {
       for (final lang in const ['uz', 'ru', 'en']) {
         expect((t['expansion']! as Map)[lang], isNotEmpty, reason: '$t');
@@ -91,9 +92,7 @@ void main() {
     );
 
     test('9 ta qisqartma, uch tilda qisqa izoh, machine_draft', () {
-      expect(glossary.abbreviations.toSet(), {
-        for (final t in terms) '${t['abbreviation']}',
-      });
+      expect(glossary.abbreviations.toSet(), required.toSet());
       for (final abbr in glossary.abbreviations) {
         final term = glossary.byAbbreviation(abbr)!;
         expect(term.kind, ScientificTermKind.abbreviation);
