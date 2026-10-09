@@ -6167,4 +6167,463 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get sectionComputedProperties => 'Hisoblangan xossalar';
+
+  @override
+  String get supTitle => 'Taklif va murojaatlar';
+
+  @override
+  String get supProfileHint =>
+      'G‘oya, nosozlik, ilmiy xato — jamoa shu yerda javob beradi';
+
+  @override
+  String supUnreadHint(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta yangi javob',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get supNew => 'Yangi murojaat';
+
+  @override
+  String get supEmpty =>
+      'Hali murojaat yubormagansiz. G‘oya bildiring, nosozlik yoki ilmiy xato haqida xabar bering — har bir xabarni o‘qiymiz.';
+
+  @override
+  String get supLoadFailed =>
+      'Murojaatlarni yuklab bo‘lmadi. Aloqani tekshiring.';
+
+  @override
+  String get supUnavailable =>
+      'Murojaatlar uchun onlayn xizmat kerak, u bu yig‘mada ulanmagan.';
+
+  @override
+  String get supSignInRequired =>
+      'Murojaat yuborish va javob olish uchun hisobingizga kiring.';
+
+  @override
+  String get supSignIn => 'Kirish';
+
+  @override
+  String get supCatSuggestion => 'Taklif';
+
+  @override
+  String get supCatBug => 'Ilovadagi nosozlik';
+
+  @override
+  String get supCatScientificError => 'Ilmiy xato';
+
+  @override
+  String get supCatFeatureRequest => 'Yangi imkoniyat so‘rovi';
+
+  @override
+  String get supCatTechSupport => 'Texnik yordam';
+
+  @override
+  String get supCatGeneral => 'Umumiy savol';
+
+  @override
+  String get supStatusNew => 'Yangi';
+
+  @override
+  String get supStatusInReview => 'Ko‘rib chiqilmoqda';
+
+  @override
+  String get supStatusAnswered => 'Javob berilgan';
+
+  @override
+  String get supStatusClosed => 'Yopilgan';
+
+  @override
+  String get supCategory => 'Turkum';
+
+  @override
+  String get supSubject => 'Mavzu';
+
+  @override
+  String get supMessage => 'Xabar';
+
+  @override
+  String get supMessageHint =>
+      'Nima bo‘lganini yoki taklifingizni yozing. Uchinchi shaxslarning shaxsiy ma’lumotlari va ish materiallarini kiritmang.';
+
+  @override
+  String supRelated(String id) {
+    return 'Bog‘liq yozuv: $id';
+  }
+
+  @override
+  String get supAttach => 'Skrinshot biriktirish';
+
+  @override
+  String get supAttachHint => 'JPEG yoki PNG, 5 MB gacha.';
+
+  @override
+  String get supAttachRemove => 'Skrinshotni olib tashlash';
+
+  @override
+  String get supAttachTooLarge => 'Rasm hajmi 5 MB dan katta.';
+
+  @override
+  String get supAttachWrongType =>
+      'Faqat JPEG yoki PNG rasm biriktirish mumkin.';
+
+  @override
+  String get supAttachment => 'Skrinshot';
+
+  @override
+  String get supPrivacyNote =>
+      'Xabaringiz, skrinshot va hisob elektron pochtasi serverimizda faqat sizga javob berish uchun saqlanadi. Ularni faqat FORENSIC EXPERT jamoasi ko‘radi. Hisob o‘chirilganda ular ham o‘chiriladi.';
+
+  @override
+  String get supConsent =>
+      'Murojaatimga javob berish uchun ushbu xabar qayta ishlanishiga roziman.';
+
+  @override
+  String get supSend => 'Yuborish';
+
+  @override
+  String get supSending => 'Yuborilmoqda…';
+
+  @override
+  String get supSent => 'Murojaat yuborildi. Javob shu yerda paydo bo‘ladi.';
+
+  @override
+  String get supConsentRequired => 'Iltimos, roziligingizni tasdiqlang.';
+
+  @override
+  String get supSubjectRequired => 'Mavzuni kiriting.';
+
+  @override
+  String get supMessageRequired => 'Xabarni kiriting.';
+
+  @override
+  String get supRateLimited => 'Xabarlar juda ko‘p. Keyinroq urinib ko‘ring.';
+
+  @override
+  String get supFailed =>
+      'Yuborilmadi. Aloqani tekshirib, qayta urinib ko‘ring.';
+
+  @override
+  String get supClosedNote =>
+      'Bu murojaat yopilgan. Yordam kerak bo‘lsa, yangisini yarating.';
+
+  @override
+  String get supReplyHint => 'Xabar yozing';
+
+  @override
+  String get supYou => 'Siz';
+
+  @override
+  String get supTeam => 'FORENSIC EXPERT jamoasi';
+
+  @override
+  String get supNotFound => 'Murojaat topilmadi.';
+
+  @override
+  String supUnreadBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta o‘qilmagan javob',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get supBannerText => 'Jamoa murojaatingizga javob berdi.';
+
+  @override
+  String get supBannerOpen => 'Ko‘rish';
+
+  @override
+  String get supBannerDismiss => 'Yashirish';
+
+  @override
+  String get supReportError => 'Xato haqida xabar berish';
+
+  @override
+  String supReportErrorSubject(String title) {
+    return 'Xato: $title';
+  }
+
+  @override
+  String supMessages(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta xabar',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get supMoreActions => 'Boshqa amallar';
+
+  @override
+  String get admNavInbox => 'Murojaatlar qutisi';
+
+  @override
+  String admNavInboxHint(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta javob kutmoqda',
+      zero: 'Javob kutayotgan murojaat yo‘q',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get admNavUsers => 'Foydalanuvchilar';
+
+  @override
+  String get admNavUsersHint => 'Qidiruv, saralash, kirish darajasi';
+
+  @override
+  String get admNavAudit => 'Amallar jurnali';
+
+  @override
+  String get admNavAuditHint => 'Har bir admin amali, xabar matnisiz';
+
+  @override
+  String get admNavModeration => 'Maqolalar moderatsiyasi';
+
+  @override
+  String admNavModerationHint(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Navbatda $count ta',
+      zero: 'Navbat bo‘sh',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get admOverview => 'Umumiy ko‘rinish';
+
+  @override
+  String get admStatUsers => 'Foydalanuvchilar';
+
+  @override
+  String get admStatNewToday => 'Bugun yangi';
+
+  @override
+  String get admStatNew7d => '7 kunda yangi';
+
+  @override
+  String get admStatNew30d => '30 kunda yangi';
+
+  @override
+  String get admStatActive7d => '7 kunda faol';
+
+  @override
+  String get admStatActive30d => '30 kunda faol';
+
+  @override
+  String get admStatPro => 'Pro (server ruxsati)';
+
+  @override
+  String get admStatFree => 'Bepul';
+
+  @override
+  String get admStatAwaiting => 'Javob kutayotgan murojaatlar';
+
+  @override
+  String get admStatPublications => 'Moderatsiya kutayotgan maqolalar';
+
+  @override
+  String get admStatAiTotal => 'AI savollari (jami)';
+
+  @override
+  String get admStatAi7d => '7 kunda AI savollari';
+
+  @override
+  String get admStatProfiles => 'Mutaxassis profillari';
+
+  @override
+  String get admStatVerified => 'Tasdiqlangan mutaxassislar';
+
+  @override
+  String get admModesNote =>
+      'Talabalar va ekspertlar: ma’lumot yo‘q — foydalanish rejimi faqat qurilmada saqlanadi, serverda emas. O‘rniga mutaxassis profillari va tasdiqlanganlar ko‘rsatilgan.';
+
+  @override
+  String get admActiveNote =>
+      'Faol — davr ichida hisobga kirgan, ilovani ochgan (qurilma belgisi) yoki AI’ga savol bergan.';
+
+  @override
+  String get admProNote =>
+      'Pro faqat server ruxsatini sanaydi; do‘kon xaridlari qurilmada tekshiriladi.';
+
+  @override
+  String get admChart14d => 'So‘nggi 14 kun: ro‘yxatdan o‘tish va AI savollari';
+
+  @override
+  String get admChartSignups => 'Ro‘yxatdan o‘tish';
+
+  @override
+  String get admChartAi => 'AI savollari';
+
+  @override
+  String get admByCategory => 'Turkumlar bo‘yicha murojaatlar';
+
+  @override
+  String get admStatsUnavailable => 'Statistika hozir mavjud emas.';
+
+  @override
+  String get admNotAuthorizedTitle => 'Kirish taqiqlangan';
+
+  @override
+  String get admNotAuthorized =>
+      'Bu bo‘lim faqat administratorlar uchun. Ruxsat serverda tekshiriladi.';
+
+  @override
+  String get admBackToProfile => 'Profilga qaytish';
+
+  @override
+  String get admFilterAll => 'Hammasi';
+
+  @override
+  String get admFilterAwaiting => 'Javob kutmoqda';
+
+  @override
+  String get admAllCategories => 'Barcha turkumlar';
+
+  @override
+  String get admInboxSearch => 'Mavzu yoki elektron pochta';
+
+  @override
+  String get admInboxEmpty => 'Saralashga mos murojaat yo‘q.';
+
+  @override
+  String get admLoadMore => 'Yana yuklash';
+
+  @override
+  String admShown(int shown, int total) {
+    return '$total tadan $shown tasi';
+  }
+
+  @override
+  String get admReply => 'Javob yozish';
+
+  @override
+  String get admReplySend => 'Javobni yuborish';
+
+  @override
+  String get admReplySent =>
+      'Javob yuborildi. Foydalanuvchi uni ilovada ko‘radi.';
+
+  @override
+  String get admSetStatus => 'Holatni o‘zgartirish';
+
+  @override
+  String get admStatusChanged => 'Holat yangilandi.';
+
+  @override
+  String admAuthor(String email) {
+    return 'Kimdan: $email';
+  }
+
+  @override
+  String admUnread(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta yangi xabar',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get admUsersSearch => 'Elektron pochta yoki ism';
+
+  @override
+  String get admRoleAny => 'Har qanday rol';
+
+  @override
+  String get admRoleAdmin => 'Adminlar';
+
+  @override
+  String get admRoleModerator => 'Moderatorlar';
+
+  @override
+  String get admTierAny => 'Har qanday tarif';
+
+  @override
+  String get admTierFree => 'Bepul';
+
+  @override
+  String get admTierPro => 'Pro tarif';
+
+  @override
+  String get admUsersEmpty => 'Saralashga mos foydalanuvchi yo‘q.';
+
+  @override
+  String admUserJoined(String date) {
+    return 'Ro‘yxatdan o‘tgan: $date';
+  }
+
+  @override
+  String admUserLastActive(String date) {
+    return 'Oxirgi faollik: $date';
+  }
+
+  @override
+  String get admUserNoActivity => 'Faollik qayd etilmagan';
+
+  @override
+  String get admUserActive => 'Faol';
+
+  @override
+  String get admUserUnconfirmed => 'Elektron pochta tasdiqlanmagan';
+
+  @override
+  String get admUserBanned => 'Bloklangan';
+
+  @override
+  String get admPrev => 'Oldingi';
+
+  @override
+  String get admNext => 'Keyingi';
+
+  @override
+  String get admAuditEmpty => 'Hozircha admin amallari yo‘q.';
+
+  @override
+  String get admAuditSystem => 'tizim / konsol';
+
+  @override
+  String get admActSupportReply => 'Murojaatga javob berildi';
+
+  @override
+  String get admActSupportStatus => 'Murojaat holati o‘zgartirildi';
+
+  @override
+  String get admActSupportView => 'Murojaat ochildi';
+
+  @override
+  String get admActUsersView => 'Foydalanuvchilar ro‘yxati ko‘rildi';
+
+  @override
+  String get admActAccessSet => 'Kirish darajasi o‘zgartirildi';
+
+  @override
+  String get admActRoleGranted => 'Rol berildi';
+
+  @override
+  String get admActRoleRevoked => 'Rol olib tashlandi';
+
+  @override
+  String get admActRoleChanged => 'Rol o‘zgartirildi';
+
+  @override
+  String get admActOther => 'Admin amali';
+
+  @override
+  String get admRetry => 'Qayta urinish';
 }

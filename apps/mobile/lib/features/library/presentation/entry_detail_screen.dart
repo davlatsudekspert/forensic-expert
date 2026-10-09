@@ -1,7 +1,6 @@
 import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
 import 'package:go_router/go_router.dart';
 
 import '../../../app/providers.dart';
@@ -23,6 +22,7 @@ import '../../common/favorite_button.dart';
 import '../../common/share_button.dart';
 import '../../common/view_recorder.dart';
 import '../../professional/presentation/review_section.dart';
+import '../../support/presentation/support_widgets.dart' show ReportErrorMenu;
 import 'content_entry_sections.dart';
 import 'library_screen.dart';
 
@@ -76,6 +76,10 @@ class EntryDetailScreen extends ConsumerWidget {
             ),
           ),
           FavoriteButton(id: entry.id),
+          ReportErrorMenu(
+            entityId: '${isSubstance ? 'substance' : 'entry'}:${entry.id}',
+            title: entry.name.resolve(lang),
+          ),
         ],
       ),
       body: SafeArea(

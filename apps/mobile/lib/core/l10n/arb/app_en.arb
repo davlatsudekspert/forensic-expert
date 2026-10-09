@@ -8060,5 +8060,584 @@
   "sectionComputedProperties": "Computed properties",
   "@sectionComputedProperties": {
     "description": "PubChem record section name."
+  },
+  "supTitle": "Suggestions & support",
+  "@supTitle": {
+    "description": "Screen title / Profile row."
+  },
+  "supProfileHint": "Ideas, bugs, scientific errors — the team replies here",
+  "@supProfileHint": {
+    "description": "Profile row subtitle."
+  },
+  "supUnreadHint": "{count, plural, =1{1 new reply} other{{count} new replies}}",
+  "@supUnreadHint": {
+    "description": "Profile row subtitle with unread replies.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "supNew": "New request",
+  "@supNew": {
+    "description": "Action / screen title."
+  },
+  "supEmpty": "You have not sent any requests yet. Share an idea, report a bug or a scientific error — we read every message.",
+  "@supEmpty": {
+    "description": "Empty list."
+  },
+  "supLoadFailed": "Could not load requests. Check the connection.",
+  "@supLoadFailed": {
+    "description": "Load error."
+  },
+  "supUnavailable": "Requests need the online service, which is not connected in this build.",
+  "@supUnavailable": {
+    "description": "Backend not connected."
+  },
+  "supSignInRequired": "Sign in to send a request and receive replies.",
+  "@supSignInRequired": {
+    "description": "Signed-out note."
+  },
+  "supSignIn": "Sign in",
+  "@supSignIn": {
+    "description": "Action."
+  },
+  "supCatSuggestion": "Suggestion",
+  "@supCatSuggestion": {
+    "description": "Category."
+  },
+  "supCatBug": "Bug in the app",
+  "@supCatBug": {
+    "description": "Category."
+  },
+  "supCatScientificError": "Scientific error",
+  "@supCatScientificError": {
+    "description": "Category."
+  },
+  "supCatFeatureRequest": "Feature request",
+  "@supCatFeatureRequest": {
+    "description": "Category."
+  },
+  "supCatTechSupport": "Technical support",
+  "@supCatTechSupport": {
+    "description": "Category."
+  },
+  "supCatGeneral": "General question",
+  "@supCatGeneral": {
+    "description": "Category."
+  },
+  "supStatusNew": "New",
+  "@supStatusNew": {
+    "description": "Status."
+  },
+  "supStatusInReview": "In review",
+  "@supStatusInReview": {
+    "description": "Status."
+  },
+  "supStatusAnswered": "Answered",
+  "@supStatusAnswered": {
+    "description": "Status."
+  },
+  "supStatusClosed": "Closed",
+  "@supStatusClosed": {
+    "description": "Status."
+  },
+  "supCategory": "Category",
+  "@supCategory": {
+    "description": "Field."
+  },
+  "supSubject": "Subject",
+  "@supSubject": {
+    "description": "Field."
+  },
+  "supMessage": "Message",
+  "@supMessage": {
+    "description": "Field."
+  },
+  "supMessageHint": "Describe what happened or what you suggest. Do not include personal data of third parties or case materials.",
+  "@supMessageHint": {
+    "description": "Field hint."
+  },
+  "supRelated": "Related record: {id}",
+  "@supRelated": {
+    "description": "Prefilled related record.",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "supAttach": "Attach screenshot",
+  "@supAttach": {
+    "description": "Action."
+  },
+  "supAttachHint": "JPEG or PNG, up to 5 MB.",
+  "@supAttachHint": {
+    "description": "Attachment rules."
+  },
+  "supAttachRemove": "Remove screenshot",
+  "@supAttachRemove": {
+    "description": "Action."
+  },
+  "supAttachTooLarge": "The image is larger than 5 MB.",
+  "@supAttachTooLarge": {
+    "description": "Error."
+  },
+  "supAttachWrongType": "Only JPEG or PNG images can be attached.",
+  "@supAttachWrongType": {
+    "description": "Error."
+  },
+  "supAttachment": "Screenshot",
+  "@supAttachment": {
+    "description": "Attachment label in a message."
+  },
+  "supPrivacyNote": "Your message, the screenshot and your account email are stored on our server only to answer you. Only the FORENSIC EXPERT team can read them. They are deleted together with your account.",
+  "@supPrivacyNote": {
+    "description": "Privacy note on the form."
+  },
+  "supConsent": "I agree that this message is processed to answer my request.",
+  "@supConsent": {
+    "description": "Consent checkbox."
+  },
+  "supSend": "Send",
+  "@supSend": {
+    "description": "Action."
+  },
+  "supSending": "Sending…",
+  "@supSending": {
+    "description": "Progress."
+  },
+  "supSent": "Request sent. We will reply here.",
+  "@supSent": {
+    "description": "Result."
+  },
+  "supConsentRequired": "Please confirm your consent.",
+  "@supConsentRequired": {
+    "description": "Validation."
+  },
+  "supSubjectRequired": "Enter a subject.",
+  "@supSubjectRequired": {
+    "description": "Validation."
+  },
+  "supMessageRequired": "Enter a message.",
+  "@supMessageRequired": {
+    "description": "Validation."
+  },
+  "supRateLimited": "Too many messages. Please try again later.",
+  "@supRateLimited": {
+    "description": "Result."
+  },
+  "supFailed": "Not sent. Check the connection and try again.",
+  "@supFailed": {
+    "description": "Result."
+  },
+  "supClosedNote": "This request is closed. Create a new one if you need more help.",
+  "@supClosedNote": {
+    "description": "Closed thread."
+  },
+  "supReplyHint": "Write a message",
+  "@supReplyHint": {
+    "description": "Reply field."
+  },
+  "supYou": "You",
+  "@supYou": {
+    "description": "Bubble author."
+  },
+  "supTeam": "FORENSIC EXPERT team",
+  "@supTeam": {
+    "description": "Bubble author (admin)."
+  },
+  "supNotFound": "Request not found.",
+  "@supNotFound": {
+    "description": "Thread missing."
+  },
+  "supUnreadBadge": "{count, plural, =1{1 unread reply} other{{count} unread replies}}",
+  "@supUnreadBadge": {
+    "description": "Semantic label for unread badge.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "supBannerText": "The team replied to your request.",
+  "@supBannerText": {
+    "description": "In-app banner on open."
+  },
+  "supBannerOpen": "View",
+  "@supBannerOpen": {
+    "description": "Banner action."
+  },
+  "supBannerDismiss": "Dismiss",
+  "@supBannerDismiss": {
+    "description": "Banner action (tooltip)."
+  },
+  "supReportError": "Report an error",
+  "@supReportError": {
+    "description": "App bar menu item on content pages."
+  },
+  "supReportErrorSubject": "Error in: {title}",
+  "@supReportErrorSubject": {
+    "description": "Prefilled subject.",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "supMessages": "{count, plural, =1{1 message} other{{count} messages}}",
+  "@supMessages": {
+    "description": "Count.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "supMoreActions": "More actions",
+  "@supMoreActions": {
+    "description": "Overflow tooltip."
+  },
+  "admNavInbox": "Requests inbox",
+  "@admNavInbox": {
+    "description": "Admin section."
+  },
+  "admNavInboxHint": "{count, plural, =0{Nothing awaiting a reply} =1{1 awaiting a reply} other{{count} awaiting a reply}}",
+  "@admNavInboxHint": {
+    "description": "Admin section hint.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "admNavUsers": "Users",
+  "@admNavUsers": {
+    "description": "Admin section."
+  },
+  "admNavUsersHint": "Search, filters, access level",
+  "@admNavUsersHint": {
+    "description": "Admin section hint."
+  },
+  "admNavAudit": "Audit log",
+  "@admNavAudit": {
+    "description": "Admin section."
+  },
+  "admNavAuditHint": "Every admin action, without message text",
+  "@admNavAuditHint": {
+    "description": "Admin section hint."
+  },
+  "admNavModeration": "Publication moderation",
+  "@admNavModeration": {
+    "description": "Admin section."
+  },
+  "admNavModerationHint": "{count, plural, =0{Queue is empty} other{{count} in the queue}}",
+  "@admNavModerationHint": {
+    "description": "Admin section hint.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "admOverview": "Overview",
+  "@admOverview": {
+    "description": "Section header."
+  },
+  "admStatUsers": "Users",
+  "@admStatUsers": {
+    "description": "Stat card."
+  },
+  "admStatNewToday": "New today",
+  "@admStatNewToday": {
+    "description": "Stat card."
+  },
+  "admStatNew7d": "New in 7 days",
+  "@admStatNew7d": {
+    "description": "Stat card."
+  },
+  "admStatNew30d": "New in 30 days",
+  "@admStatNew30d": {
+    "description": "Stat card."
+  },
+  "admStatActive7d": "Active in 7 days",
+  "@admStatActive7d": {
+    "description": "Stat card."
+  },
+  "admStatActive30d": "Active in 30 days",
+  "@admStatActive30d": {
+    "description": "Stat card."
+  },
+  "admStatPro": "Pro (server grants)",
+  "@admStatPro": {
+    "description": "Stat card."
+  },
+  "admStatFree": "Free",
+  "@admStatFree": {
+    "description": "Stat card."
+  },
+  "admStatAwaiting": "Requests awaiting reply",
+  "@admStatAwaiting": {
+    "description": "Stat card."
+  },
+  "admStatPublications": "Articles awaiting moderation",
+  "@admStatPublications": {
+    "description": "Stat card."
+  },
+  "admStatAiTotal": "AI questions (all time)",
+  "@admStatAiTotal": {
+    "description": "Stat card."
+  },
+  "admStatAi7d": "AI questions in 7 days",
+  "@admStatAi7d": {
+    "description": "Stat card."
+  },
+  "admStatProfiles": "Professional profiles",
+  "@admStatProfiles": {
+    "description": "Stat card."
+  },
+  "admStatVerified": "Verified professionals",
+  "@admStatVerified": {
+    "description": "Stat card."
+  },
+  "admModesNote": "Students vs experts: not available — the usage mode is a device setting and is not stored on the server. Professional profiles and verified professionals are shown instead.",
+  "@admModesNote": {
+    "description": "Explains missing student/expert split."
+  },
+  "admActiveNote": "Active = signed in, opened the app (device check-in) or asked the AI within the window.",
+  "@admActiveNote": {
+    "description": "Definition of active users."
+  },
+  "admProNote": "Pro counts server grants only; store purchases are verified on the device.",
+  "@admProNote": {
+    "description": "Definition of Pro count."
+  },
+  "admChart14d": "Last 14 days: sign-ups and AI questions",
+  "@admChart14d": {
+    "description": "Chart title."
+  },
+  "admChartSignups": "Sign-ups",
+  "@admChartSignups": {
+    "description": "Chart legend."
+  },
+  "admChartAi": "AI questions",
+  "@admChartAi": {
+    "description": "Chart legend."
+  },
+  "admByCategory": "Requests by category",
+  "@admByCategory": {
+    "description": "Chart title."
+  },
+  "admStatsUnavailable": "Statistics are unavailable right now.",
+  "@admStatsUnavailable": {
+    "description": "Stats failed."
+  },
+  "admNotAuthorizedTitle": "Access denied",
+  "@admNotAuthorizedTitle": {
+    "description": "Not-authorized page title."
+  },
+  "admNotAuthorized": "This section is for administrators only. Access is checked on the server.",
+  "@admNotAuthorized": {
+    "description": "Not-authorized page body."
+  },
+  "admBackToProfile": "Back to Profile",
+  "@admBackToProfile": {
+    "description": "Action."
+  },
+  "admFilterAll": "All",
+  "@admFilterAll": {
+    "description": "Filter chip."
+  },
+  "admFilterAwaiting": "Awaiting reply",
+  "@admFilterAwaiting": {
+    "description": "Filter chip."
+  },
+  "admAllCategories": "All categories",
+  "@admAllCategories": {
+    "description": "Dropdown."
+  },
+  "admInboxSearch": "Subject or email",
+  "@admInboxSearch": {
+    "description": "Search hint."
+  },
+  "admInboxEmpty": "No requests match the filter.",
+  "@admInboxEmpty": {
+    "description": "Empty inbox."
+  },
+  "admLoadMore": "Load more",
+  "@admLoadMore": {
+    "description": "Action."
+  },
+  "admShown": "{shown} of {total}",
+  "@admShown": {
+    "description": "Pagination info.",
+    "placeholders": {
+      "shown": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "admReply": "Write a reply",
+  "@admReply": {
+    "description": "Action / field label."
+  },
+  "admReplySend": "Send reply",
+  "@admReplySend": {
+    "description": "Action."
+  },
+  "admReplySent": "Reply sent. The user will see it in the app.",
+  "@admReplySent": {
+    "description": "Result."
+  },
+  "admSetStatus": "Change status",
+  "@admSetStatus": {
+    "description": "Action."
+  },
+  "admStatusChanged": "Status updated.",
+  "@admStatusChanged": {
+    "description": "Result."
+  },
+  "admAuthor": "From: {email}",
+  "@admAuthor": {
+    "description": "Thread meta.",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "admUnread": "{count, plural, =1{1 new message} other{{count} new messages}}",
+  "@admUnread": {
+    "description": "Inbox badge semantic label.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "admUsersSearch": "Email or name",
+  "@admUsersSearch": {
+    "description": "Search hint."
+  },
+  "admRoleAny": "Any role",
+  "@admRoleAny": {
+    "description": "Filter chip."
+  },
+  "admRoleAdmin": "Admins",
+  "@admRoleAdmin": {
+    "description": "Filter chip."
+  },
+  "admRoleModerator": "Moderators",
+  "@admRoleModerator": {
+    "description": "Filter chip."
+  },
+  "admTierAny": "Any plan",
+  "@admTierAny": {
+    "description": "Filter chip."
+  },
+  "admTierFree": "Free",
+  "@admTierFree": {
+    "description": "Filter chip."
+  },
+  "admTierPro": "Pro plan",
+  "@admTierPro": {
+    "description": "Filter chip."
+  },
+  "admUsersEmpty": "No users match the filter.",
+  "@admUsersEmpty": {
+    "description": "Empty list."
+  },
+  "admUserJoined": "Joined {date}",
+  "@admUserJoined": {
+    "description": "User meta.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "admUserLastActive": "Last activity {date}",
+  "@admUserLastActive": {
+    "description": "User meta.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "admUserNoActivity": "No activity recorded",
+  "@admUserNoActivity": {
+    "description": "User meta."
+  },
+  "admUserActive": "Active",
+  "@admUserActive": {
+    "description": "Account status."
+  },
+  "admUserUnconfirmed": "Email not confirmed",
+  "@admUserUnconfirmed": {
+    "description": "Account status."
+  },
+  "admUserBanned": "Blocked",
+  "@admUserBanned": {
+    "description": "Account status."
+  },
+  "admPrev": "Previous",
+  "@admPrev": {
+    "description": "Pagination."
+  },
+  "admNext": "Next",
+  "@admNext": {
+    "description": "Pagination."
+  },
+  "admAuditEmpty": "No admin actions yet.",
+  "@admAuditEmpty": {
+    "description": "Empty audit log."
+  },
+  "admAuditSystem": "system / console",
+  "@admAuditSystem": {
+    "description": "Actor unknown (SQL console)."
+  },
+  "admActSupportReply": "Replied to a request",
+  "@admActSupportReply": {
+    "description": "Audit action."
+  },
+  "admActSupportStatus": "Request status changed",
+  "@admActSupportStatus": {
+    "description": "Audit action."
+  },
+  "admActSupportView": "Opened a request",
+  "@admActSupportView": {
+    "description": "Audit action."
+  },
+  "admActUsersView": "Viewed the users list",
+  "@admActUsersView": {
+    "description": "Audit action."
+  },
+  "admActAccessSet": "Access level changed",
+  "@admActAccessSet": {
+    "description": "Audit action."
+  },
+  "admActRoleGranted": "Role granted",
+  "@admActRoleGranted": {
+    "description": "Audit action."
+  },
+  "admActRoleRevoked": "Role revoked",
+  "@admActRoleRevoked": {
+    "description": "Audit action."
+  },
+  "admActRoleChanged": "Role changed",
+  "@admActRoleChanged": {
+    "description": "Audit action."
+  },
+  "admActOther": "Admin action",
+  "@admActOther": {
+    "description": "Audit action fallback."
+  },
+  "admRetry": "Try again",
+  "@admRetry": {
+    "description": "Action."
   }
 }

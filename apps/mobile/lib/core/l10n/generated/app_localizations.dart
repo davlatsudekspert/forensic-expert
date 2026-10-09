@@ -11066,6 +11066,780 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Computed properties'**
   String get sectionComputedProperties;
+
+  /// Screen title / Profile row.
+  ///
+  /// In en, this message translates to:
+  /// **'Suggestions & support'**
+  String get supTitle;
+
+  /// Profile row subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Ideas, bugs, scientific errors — the team replies here'**
+  String get supProfileHint;
+
+  /// Profile row subtitle with unread replies.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 new reply} other{{count} new replies}}'**
+  String supUnreadHint(int count);
+
+  /// Action / screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'New request'**
+  String get supNew;
+
+  /// Empty list.
+  ///
+  /// In en, this message translates to:
+  /// **'You have not sent any requests yet. Share an idea, report a bug or a scientific error — we read every message.'**
+  String get supEmpty;
+
+  /// Load error.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not load requests. Check the connection.'**
+  String get supLoadFailed;
+
+  /// Backend not connected.
+  ///
+  /// In en, this message translates to:
+  /// **'Requests need the online service, which is not connected in this build.'**
+  String get supUnavailable;
+
+  /// Signed-out note.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in to send a request and receive replies.'**
+  String get supSignInRequired;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in'**
+  String get supSignIn;
+
+  /// Category.
+  ///
+  /// In en, this message translates to:
+  /// **'Suggestion'**
+  String get supCatSuggestion;
+
+  /// Category.
+  ///
+  /// In en, this message translates to:
+  /// **'Bug in the app'**
+  String get supCatBug;
+
+  /// Category.
+  ///
+  /// In en, this message translates to:
+  /// **'Scientific error'**
+  String get supCatScientificError;
+
+  /// Category.
+  ///
+  /// In en, this message translates to:
+  /// **'Feature request'**
+  String get supCatFeatureRequest;
+
+  /// Category.
+  ///
+  /// In en, this message translates to:
+  /// **'Technical support'**
+  String get supCatTechSupport;
+
+  /// Category.
+  ///
+  /// In en, this message translates to:
+  /// **'General question'**
+  String get supCatGeneral;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'New'**
+  String get supStatusNew;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'In review'**
+  String get supStatusInReview;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Answered'**
+  String get supStatusAnswered;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Closed'**
+  String get supStatusClosed;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Category'**
+  String get supCategory;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Subject'**
+  String get supSubject;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Message'**
+  String get supMessage;
+
+  /// Field hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Describe what happened or what you suggest. Do not include personal data of third parties or case materials.'**
+  String get supMessageHint;
+
+  /// Prefilled related record.
+  ///
+  /// In en, this message translates to:
+  /// **'Related record: {id}'**
+  String supRelated(String id);
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Attach screenshot'**
+  String get supAttach;
+
+  /// Attachment rules.
+  ///
+  /// In en, this message translates to:
+  /// **'JPEG or PNG, up to 5 MB.'**
+  String get supAttachHint;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove screenshot'**
+  String get supAttachRemove;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'The image is larger than 5 MB.'**
+  String get supAttachTooLarge;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Only JPEG or PNG images can be attached.'**
+  String get supAttachWrongType;
+
+  /// Attachment label in a message.
+  ///
+  /// In en, this message translates to:
+  /// **'Screenshot'**
+  String get supAttachment;
+
+  /// Privacy note on the form.
+  ///
+  /// In en, this message translates to:
+  /// **'Your message, the screenshot and your account email are stored on our server only to answer you. Only the FORENSIC EXPERT team can read them. They are deleted together with your account.'**
+  String get supPrivacyNote;
+
+  /// Consent checkbox.
+  ///
+  /// In en, this message translates to:
+  /// **'I agree that this message is processed to answer my request.'**
+  String get supConsent;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Send'**
+  String get supSend;
+
+  /// Progress.
+  ///
+  /// In en, this message translates to:
+  /// **'Sending…'**
+  String get supSending;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Request sent. We will reply here.'**
+  String get supSent;
+
+  /// Validation.
+  ///
+  /// In en, this message translates to:
+  /// **'Please confirm your consent.'**
+  String get supConsentRequired;
+
+  /// Validation.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a subject.'**
+  String get supSubjectRequired;
+
+  /// Validation.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a message.'**
+  String get supMessageRequired;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Too many messages. Please try again later.'**
+  String get supRateLimited;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Not sent. Check the connection and try again.'**
+  String get supFailed;
+
+  /// Closed thread.
+  ///
+  /// In en, this message translates to:
+  /// **'This request is closed. Create a new one if you need more help.'**
+  String get supClosedNote;
+
+  /// Reply field.
+  ///
+  /// In en, this message translates to:
+  /// **'Write a message'**
+  String get supReplyHint;
+
+  /// Bubble author.
+  ///
+  /// In en, this message translates to:
+  /// **'You'**
+  String get supYou;
+
+  /// Bubble author (admin).
+  ///
+  /// In en, this message translates to:
+  /// **'FORENSIC EXPERT team'**
+  String get supTeam;
+
+  /// Thread missing.
+  ///
+  /// In en, this message translates to:
+  /// **'Request not found.'**
+  String get supNotFound;
+
+  /// Semantic label for unread badge.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 unread reply} other{{count} unread replies}}'**
+  String supUnreadBadge(int count);
+
+  /// In-app banner on open.
+  ///
+  /// In en, this message translates to:
+  /// **'The team replied to your request.'**
+  String get supBannerText;
+
+  /// Banner action.
+  ///
+  /// In en, this message translates to:
+  /// **'View'**
+  String get supBannerOpen;
+
+  /// Banner action (tooltip).
+  ///
+  /// In en, this message translates to:
+  /// **'Dismiss'**
+  String get supBannerDismiss;
+
+  /// App bar menu item on content pages.
+  ///
+  /// In en, this message translates to:
+  /// **'Report an error'**
+  String get supReportError;
+
+  /// Prefilled subject.
+  ///
+  /// In en, this message translates to:
+  /// **'Error in: {title}'**
+  String supReportErrorSubject(String title);
+
+  /// Count.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 message} other{{count} messages}}'**
+  String supMessages(int count);
+
+  /// Overflow tooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'More actions'**
+  String get supMoreActions;
+
+  /// Admin section.
+  ///
+  /// In en, this message translates to:
+  /// **'Requests inbox'**
+  String get admNavInbox;
+
+  /// Admin section hint.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{Nothing awaiting a reply} =1{1 awaiting a reply} other{{count} awaiting a reply}}'**
+  String admNavInboxHint(int count);
+
+  /// Admin section.
+  ///
+  /// In en, this message translates to:
+  /// **'Users'**
+  String get admNavUsers;
+
+  /// Admin section hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search, filters, access level'**
+  String get admNavUsersHint;
+
+  /// Admin section.
+  ///
+  /// In en, this message translates to:
+  /// **'Audit log'**
+  String get admNavAudit;
+
+  /// Admin section hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Every admin action, without message text'**
+  String get admNavAuditHint;
+
+  /// Admin section.
+  ///
+  /// In en, this message translates to:
+  /// **'Publication moderation'**
+  String get admNavModeration;
+
+  /// Admin section hint.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{Queue is empty} other{{count} in the queue}}'**
+  String admNavModerationHint(int count);
+
+  /// Section header.
+  ///
+  /// In en, this message translates to:
+  /// **'Overview'**
+  String get admOverview;
+
+  /// Stat card.
+  ///
+  /// In en, this message translates to:
+  /// **'Users'**
+  String get admStatUsers;
+
+  /// Stat card.
+  ///
+  /// In en, this message translates to:
+  /// **'New today'**
+  String get admStatNewToday;
+
+  /// Stat card.
+  ///
+  /// In en, this message translates to:
+  /// **'New in 7 days'**
+  String get admStatNew7d;
+
+  /// Stat card.
+  ///
+  /// In en, this message translates to:
+  /// **'New in 30 days'**
+  String get admStatNew30d;
+
+  /// Stat card.
+  ///
+  /// In en, this message translates to:
+  /// **'Active in 7 days'**
+  String get admStatActive7d;
+
+  /// Stat card.
+  ///
+  /// In en, this message translates to:
+  /// **'Active in 30 days'**
+  String get admStatActive30d;
+
+  /// Stat card.
+  ///
+  /// In en, this message translates to:
+  /// **'Pro (server grants)'**
+  String get admStatPro;
+
+  /// Stat card.
+  ///
+  /// In en, this message translates to:
+  /// **'Free'**
+  String get admStatFree;
+
+  /// Stat card.
+  ///
+  /// In en, this message translates to:
+  /// **'Requests awaiting reply'**
+  String get admStatAwaiting;
+
+  /// Stat card.
+  ///
+  /// In en, this message translates to:
+  /// **'Articles awaiting moderation'**
+  String get admStatPublications;
+
+  /// Stat card.
+  ///
+  /// In en, this message translates to:
+  /// **'AI questions (all time)'**
+  String get admStatAiTotal;
+
+  /// Stat card.
+  ///
+  /// In en, this message translates to:
+  /// **'AI questions in 7 days'**
+  String get admStatAi7d;
+
+  /// Stat card.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional profiles'**
+  String get admStatProfiles;
+
+  /// Stat card.
+  ///
+  /// In en, this message translates to:
+  /// **'Verified professionals'**
+  String get admStatVerified;
+
+  /// Explains missing student/expert split.
+  ///
+  /// In en, this message translates to:
+  /// **'Students vs experts: not available — the usage mode is a device setting and is not stored on the server. Professional profiles and verified professionals are shown instead.'**
+  String get admModesNote;
+
+  /// Definition of active users.
+  ///
+  /// In en, this message translates to:
+  /// **'Active = signed in, opened the app (device check-in) or asked the AI within the window.'**
+  String get admActiveNote;
+
+  /// Definition of Pro count.
+  ///
+  /// In en, this message translates to:
+  /// **'Pro counts server grants only; store purchases are verified on the device.'**
+  String get admProNote;
+
+  /// Chart title.
+  ///
+  /// In en, this message translates to:
+  /// **'Last 14 days: sign-ups and AI questions'**
+  String get admChart14d;
+
+  /// Chart legend.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign-ups'**
+  String get admChartSignups;
+
+  /// Chart legend.
+  ///
+  /// In en, this message translates to:
+  /// **'AI questions'**
+  String get admChartAi;
+
+  /// Chart title.
+  ///
+  /// In en, this message translates to:
+  /// **'Requests by category'**
+  String get admByCategory;
+
+  /// Stats failed.
+  ///
+  /// In en, this message translates to:
+  /// **'Statistics are unavailable right now.'**
+  String get admStatsUnavailable;
+
+  /// Not-authorized page title.
+  ///
+  /// In en, this message translates to:
+  /// **'Access denied'**
+  String get admNotAuthorizedTitle;
+
+  /// Not-authorized page body.
+  ///
+  /// In en, this message translates to:
+  /// **'This section is for administrators only. Access is checked on the server.'**
+  String get admNotAuthorized;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Back to Profile'**
+  String get admBackToProfile;
+
+  /// Filter chip.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get admFilterAll;
+
+  /// Filter chip.
+  ///
+  /// In en, this message translates to:
+  /// **'Awaiting reply'**
+  String get admFilterAwaiting;
+
+  /// Dropdown.
+  ///
+  /// In en, this message translates to:
+  /// **'All categories'**
+  String get admAllCategories;
+
+  /// Search hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Subject or email'**
+  String get admInboxSearch;
+
+  /// Empty inbox.
+  ///
+  /// In en, this message translates to:
+  /// **'No requests match the filter.'**
+  String get admInboxEmpty;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Load more'**
+  String get admLoadMore;
+
+  /// Pagination info.
+  ///
+  /// In en, this message translates to:
+  /// **'{shown} of {total}'**
+  String admShown(int shown, int total);
+
+  /// Action / field label.
+  ///
+  /// In en, this message translates to:
+  /// **'Write a reply'**
+  String get admReply;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Send reply'**
+  String get admReplySend;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Reply sent. The user will see it in the app.'**
+  String get admReplySent;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Change status'**
+  String get admSetStatus;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Status updated.'**
+  String get admStatusChanged;
+
+  /// Thread meta.
+  ///
+  /// In en, this message translates to:
+  /// **'From: {email}'**
+  String admAuthor(String email);
+
+  /// Inbox badge semantic label.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 new message} other{{count} new messages}}'**
+  String admUnread(int count);
+
+  /// Search hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Email or name'**
+  String get admUsersSearch;
+
+  /// Filter chip.
+  ///
+  /// In en, this message translates to:
+  /// **'Any role'**
+  String get admRoleAny;
+
+  /// Filter chip.
+  ///
+  /// In en, this message translates to:
+  /// **'Admins'**
+  String get admRoleAdmin;
+
+  /// Filter chip.
+  ///
+  /// In en, this message translates to:
+  /// **'Moderators'**
+  String get admRoleModerator;
+
+  /// Filter chip.
+  ///
+  /// In en, this message translates to:
+  /// **'Any plan'**
+  String get admTierAny;
+
+  /// Filter chip.
+  ///
+  /// In en, this message translates to:
+  /// **'Free'**
+  String get admTierFree;
+
+  /// Filter chip.
+  ///
+  /// In en, this message translates to:
+  /// **'Pro plan'**
+  String get admTierPro;
+
+  /// Empty list.
+  ///
+  /// In en, this message translates to:
+  /// **'No users match the filter.'**
+  String get admUsersEmpty;
+
+  /// User meta.
+  ///
+  /// In en, this message translates to:
+  /// **'Joined {date}'**
+  String admUserJoined(String date);
+
+  /// User meta.
+  ///
+  /// In en, this message translates to:
+  /// **'Last activity {date}'**
+  String admUserLastActive(String date);
+
+  /// User meta.
+  ///
+  /// In en, this message translates to:
+  /// **'No activity recorded'**
+  String get admUserNoActivity;
+
+  /// Account status.
+  ///
+  /// In en, this message translates to:
+  /// **'Active'**
+  String get admUserActive;
+
+  /// Account status.
+  ///
+  /// In en, this message translates to:
+  /// **'Email not confirmed'**
+  String get admUserUnconfirmed;
+
+  /// Account status.
+  ///
+  /// In en, this message translates to:
+  /// **'Blocked'**
+  String get admUserBanned;
+
+  /// Pagination.
+  ///
+  /// In en, this message translates to:
+  /// **'Previous'**
+  String get admPrev;
+
+  /// Pagination.
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get admNext;
+
+  /// Empty audit log.
+  ///
+  /// In en, this message translates to:
+  /// **'No admin actions yet.'**
+  String get admAuditEmpty;
+
+  /// Actor unknown (SQL console).
+  ///
+  /// In en, this message translates to:
+  /// **'system / console'**
+  String get admAuditSystem;
+
+  /// Audit action.
+  ///
+  /// In en, this message translates to:
+  /// **'Replied to a request'**
+  String get admActSupportReply;
+
+  /// Audit action.
+  ///
+  /// In en, this message translates to:
+  /// **'Request status changed'**
+  String get admActSupportStatus;
+
+  /// Audit action.
+  ///
+  /// In en, this message translates to:
+  /// **'Opened a request'**
+  String get admActSupportView;
+
+  /// Audit action.
+  ///
+  /// In en, this message translates to:
+  /// **'Viewed the users list'**
+  String get admActUsersView;
+
+  /// Audit action.
+  ///
+  /// In en, this message translates to:
+  /// **'Access level changed'**
+  String get admActAccessSet;
+
+  /// Audit action.
+  ///
+  /// In en, this message translates to:
+  /// **'Role granted'**
+  String get admActRoleGranted;
+
+  /// Audit action.
+  ///
+  /// In en, this message translates to:
+  /// **'Role revoked'**
+  String get admActRoleRevoked;
+
+  /// Audit action.
+  ///
+  /// In en, this message translates to:
+  /// **'Role changed'**
+  String get admActRoleChanged;
+
+  /// Audit action fallback.
+  ///
+  /// In en, this message translates to:
+  /// **'Admin action'**
+  String get admActOther;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Try again'**
+  String get admRetry;
 }
 
 class _AppLocalizationsDelegate

@@ -101,6 +101,28 @@ abstract final class Routes {
 
   /// Egasi uchun admin panel (faqat identity_admin).
   static const admin = '/profile/admin';
+  static const adminInbox = '/profile/admin/inbox';
+  static String adminThread(String id) =>
+      '/profile/admin/inbox/${Uri.encodeComponent(id)}';
+  static const adminUsers = '/profile/admin/users';
+  static const adminAudit = '/profile/admin/audit';
+
+  /// «Taklif va murojaatlar» (foydalanuvchi).
+  static const support = '/profile/support';
+  static const supportNew = '/profile/support/new';
+
+  /// Oldindan to‘ldirilgan forma (masalan, ilmiy xato: `category` +
+  /// `entity` kontent identifikatori, `title` — mavzu uchun nom).
+  static String supportNewFor({
+    required String category,
+    String? entity,
+    String? title,
+  }) => Uri(
+    path: supportNew,
+    queryParameters: {'category': category, 'entity': ?entity, 'title': ?title},
+  ).toString();
+  static String supportThread(String id) =>
+      '/profile/support/thread/${Uri.encodeComponent(id)}';
 
   /// Kiruvchi taklif havolasi: `/invite/<CODE>` (deep link).
   static const invitePrefix = '/invite/';

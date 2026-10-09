@@ -6175,4 +6175,464 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get sectionComputedProperties => 'Computed properties';
+
+  @override
+  String get supTitle => 'Suggestions & support';
+
+  @override
+  String get supProfileHint =>
+      'Ideas, bugs, scientific errors — the team replies here';
+
+  @override
+  String supUnreadHint(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count new replies',
+      one: '1 new reply',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get supNew => 'New request';
+
+  @override
+  String get supEmpty =>
+      'You have not sent any requests yet. Share an idea, report a bug or a scientific error — we read every message.';
+
+  @override
+  String get supLoadFailed => 'Could not load requests. Check the connection.';
+
+  @override
+  String get supUnavailable =>
+      'Requests need the online service, which is not connected in this build.';
+
+  @override
+  String get supSignInRequired =>
+      'Sign in to send a request and receive replies.';
+
+  @override
+  String get supSignIn => 'Sign in';
+
+  @override
+  String get supCatSuggestion => 'Suggestion';
+
+  @override
+  String get supCatBug => 'Bug in the app';
+
+  @override
+  String get supCatScientificError => 'Scientific error';
+
+  @override
+  String get supCatFeatureRequest => 'Feature request';
+
+  @override
+  String get supCatTechSupport => 'Technical support';
+
+  @override
+  String get supCatGeneral => 'General question';
+
+  @override
+  String get supStatusNew => 'New';
+
+  @override
+  String get supStatusInReview => 'In review';
+
+  @override
+  String get supStatusAnswered => 'Answered';
+
+  @override
+  String get supStatusClosed => 'Closed';
+
+  @override
+  String get supCategory => 'Category';
+
+  @override
+  String get supSubject => 'Subject';
+
+  @override
+  String get supMessage => 'Message';
+
+  @override
+  String get supMessageHint =>
+      'Describe what happened or what you suggest. Do not include personal data of third parties or case materials.';
+
+  @override
+  String supRelated(String id) {
+    return 'Related record: $id';
+  }
+
+  @override
+  String get supAttach => 'Attach screenshot';
+
+  @override
+  String get supAttachHint => 'JPEG or PNG, up to 5 MB.';
+
+  @override
+  String get supAttachRemove => 'Remove screenshot';
+
+  @override
+  String get supAttachTooLarge => 'The image is larger than 5 MB.';
+
+  @override
+  String get supAttachWrongType => 'Only JPEG or PNG images can be attached.';
+
+  @override
+  String get supAttachment => 'Screenshot';
+
+  @override
+  String get supPrivacyNote =>
+      'Your message, the screenshot and your account email are stored on our server only to answer you. Only the FORENSIC EXPERT team can read them. They are deleted together with your account.';
+
+  @override
+  String get supConsent =>
+      'I agree that this message is processed to answer my request.';
+
+  @override
+  String get supSend => 'Send';
+
+  @override
+  String get supSending => 'Sending…';
+
+  @override
+  String get supSent => 'Request sent. We will reply here.';
+
+  @override
+  String get supConsentRequired => 'Please confirm your consent.';
+
+  @override
+  String get supSubjectRequired => 'Enter a subject.';
+
+  @override
+  String get supMessageRequired => 'Enter a message.';
+
+  @override
+  String get supRateLimited => 'Too many messages. Please try again later.';
+
+  @override
+  String get supFailed => 'Not sent. Check the connection and try again.';
+
+  @override
+  String get supClosedNote =>
+      'This request is closed. Create a new one if you need more help.';
+
+  @override
+  String get supReplyHint => 'Write a message';
+
+  @override
+  String get supYou => 'You';
+
+  @override
+  String get supTeam => 'FORENSIC EXPERT team';
+
+  @override
+  String get supNotFound => 'Request not found.';
+
+  @override
+  String supUnreadBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count unread replies',
+      one: '1 unread reply',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get supBannerText => 'The team replied to your request.';
+
+  @override
+  String get supBannerOpen => 'View';
+
+  @override
+  String get supBannerDismiss => 'Dismiss';
+
+  @override
+  String get supReportError => 'Report an error';
+
+  @override
+  String supReportErrorSubject(String title) {
+    return 'Error in: $title';
+  }
+
+  @override
+  String supMessages(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count messages',
+      one: '1 message',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get supMoreActions => 'More actions';
+
+  @override
+  String get admNavInbox => 'Requests inbox';
+
+  @override
+  String admNavInboxHint(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count awaiting a reply',
+      one: '1 awaiting a reply',
+      zero: 'Nothing awaiting a reply',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get admNavUsers => 'Users';
+
+  @override
+  String get admNavUsersHint => 'Search, filters, access level';
+
+  @override
+  String get admNavAudit => 'Audit log';
+
+  @override
+  String get admNavAuditHint => 'Every admin action, without message text';
+
+  @override
+  String get admNavModeration => 'Publication moderation';
+
+  @override
+  String admNavModerationHint(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count in the queue',
+      zero: 'Queue is empty',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get admOverview => 'Overview';
+
+  @override
+  String get admStatUsers => 'Users';
+
+  @override
+  String get admStatNewToday => 'New today';
+
+  @override
+  String get admStatNew7d => 'New in 7 days';
+
+  @override
+  String get admStatNew30d => 'New in 30 days';
+
+  @override
+  String get admStatActive7d => 'Active in 7 days';
+
+  @override
+  String get admStatActive30d => 'Active in 30 days';
+
+  @override
+  String get admStatPro => 'Pro (server grants)';
+
+  @override
+  String get admStatFree => 'Free';
+
+  @override
+  String get admStatAwaiting => 'Requests awaiting reply';
+
+  @override
+  String get admStatPublications => 'Articles awaiting moderation';
+
+  @override
+  String get admStatAiTotal => 'AI questions (all time)';
+
+  @override
+  String get admStatAi7d => 'AI questions in 7 days';
+
+  @override
+  String get admStatProfiles => 'Professional profiles';
+
+  @override
+  String get admStatVerified => 'Verified professionals';
+
+  @override
+  String get admModesNote =>
+      'Students vs experts: not available — the usage mode is a device setting and is not stored on the server. Professional profiles and verified professionals are shown instead.';
+
+  @override
+  String get admActiveNote =>
+      'Active = signed in, opened the app (device check-in) or asked the AI within the window.';
+
+  @override
+  String get admProNote =>
+      'Pro counts server grants only; store purchases are verified on the device.';
+
+  @override
+  String get admChart14d => 'Last 14 days: sign-ups and AI questions';
+
+  @override
+  String get admChartSignups => 'Sign-ups';
+
+  @override
+  String get admChartAi => 'AI questions';
+
+  @override
+  String get admByCategory => 'Requests by category';
+
+  @override
+  String get admStatsUnavailable => 'Statistics are unavailable right now.';
+
+  @override
+  String get admNotAuthorizedTitle => 'Access denied';
+
+  @override
+  String get admNotAuthorized =>
+      'This section is for administrators only. Access is checked on the server.';
+
+  @override
+  String get admBackToProfile => 'Back to Profile';
+
+  @override
+  String get admFilterAll => 'All';
+
+  @override
+  String get admFilterAwaiting => 'Awaiting reply';
+
+  @override
+  String get admAllCategories => 'All categories';
+
+  @override
+  String get admInboxSearch => 'Subject or email';
+
+  @override
+  String get admInboxEmpty => 'No requests match the filter.';
+
+  @override
+  String get admLoadMore => 'Load more';
+
+  @override
+  String admShown(int shown, int total) {
+    return '$shown of $total';
+  }
+
+  @override
+  String get admReply => 'Write a reply';
+
+  @override
+  String get admReplySend => 'Send reply';
+
+  @override
+  String get admReplySent => 'Reply sent. The user will see it in the app.';
+
+  @override
+  String get admSetStatus => 'Change status';
+
+  @override
+  String get admStatusChanged => 'Status updated.';
+
+  @override
+  String admAuthor(String email) {
+    return 'From: $email';
+  }
+
+  @override
+  String admUnread(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count new messages',
+      one: '1 new message',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get admUsersSearch => 'Email or name';
+
+  @override
+  String get admRoleAny => 'Any role';
+
+  @override
+  String get admRoleAdmin => 'Admins';
+
+  @override
+  String get admRoleModerator => 'Moderators';
+
+  @override
+  String get admTierAny => 'Any plan';
+
+  @override
+  String get admTierFree => 'Free';
+
+  @override
+  String get admTierPro => 'Pro plan';
+
+  @override
+  String get admUsersEmpty => 'No users match the filter.';
+
+  @override
+  String admUserJoined(String date) {
+    return 'Joined $date';
+  }
+
+  @override
+  String admUserLastActive(String date) {
+    return 'Last activity $date';
+  }
+
+  @override
+  String get admUserNoActivity => 'No activity recorded';
+
+  @override
+  String get admUserActive => 'Active';
+
+  @override
+  String get admUserUnconfirmed => 'Email not confirmed';
+
+  @override
+  String get admUserBanned => 'Blocked';
+
+  @override
+  String get admPrev => 'Previous';
+
+  @override
+  String get admNext => 'Next';
+
+  @override
+  String get admAuditEmpty => 'No admin actions yet.';
+
+  @override
+  String get admAuditSystem => 'system / console';
+
+  @override
+  String get admActSupportReply => 'Replied to a request';
+
+  @override
+  String get admActSupportStatus => 'Request status changed';
+
+  @override
+  String get admActSupportView => 'Opened a request';
+
+  @override
+  String get admActUsersView => 'Viewed the users list';
+
+  @override
+  String get admActAccessSet => 'Access level changed';
+
+  @override
+  String get admActRoleGranted => 'Role granted';
+
+  @override
+  String get admActRoleRevoked => 'Role revoked';
+
+  @override
+  String get admActRoleChanged => 'Role changed';
+
+  @override
+  String get admActOther => 'Admin action';
+
+  @override
+  String get admRetry => 'Try again';
 }
