@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../app/account.dart';
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
@@ -213,6 +214,8 @@ class ProvenanceSheet extends ConsumerWidget {
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
     final index = ref.watch(provenanceIndexProvider);
+    // Ichki yozuv ID’si faqat admin uchun (oddiy foydalanuvchiga keraksiz).
+    final isAdmin = ref.watch(serverAccessProvider).value?.isAdmin ?? false;
     final verified = claim.status == ScientificStatus.verified;
     final role = requiredRoleFor(claim);
     final location = claim.value['section'] as String?;
@@ -263,7 +266,7 @@ class ProvenanceSheet extends ConsumerWidget {
               ? c.danger
               : c.textSecondary,
         ),
-        line(l.provClaimId(claim.claimId, claim.version)),
+        if (isAdmin) line(l.provClaimId(claim.claimId, claim.version)),
         line(l.provRequiredRole(l.roleLabel(role))),
         line(l.provReviewsRecorded(claim.reviewCount)),
         for (final s in claim.sources) ...[

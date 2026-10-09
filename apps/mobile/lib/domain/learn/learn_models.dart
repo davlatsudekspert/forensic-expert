@@ -114,9 +114,9 @@ class ContentLearnRepository implements LearnRepository {
         Course(
           id: 'course.postmortem',
           title: const LocalizedText({
-            'en': 'Postmortem changes and PMI — source reading',
+            'en': 'Postmortem changes and postmortem interval (PMI) — source reading',
             'ru': 'Посмертные изменения и давность смерти — чтение источников',
-            'uz': 'O‘limdan keyingi o‘zgarishlar va PMI — manbalarni o‘qish',
+            'uz': 'O‘limdan keyingi o‘zgarishlar va o‘lim vaqti (PMI) — manbalarni o‘qish',
           }),
           lessons: [
             for (final e in [...fm, ...bio]) lesson(e),

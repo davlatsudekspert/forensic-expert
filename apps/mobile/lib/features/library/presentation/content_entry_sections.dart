@@ -601,10 +601,14 @@ class SourceTile extends StatelessWidget {
             Row(
               children: [
                 Expanded(
-                  child: SelectableText(
-                    link,
-                    style: FeThemeBuilder.numeric(t.bodySmall!)
-                        .copyWith(color: c.accent),
+                  // Uzun havola o‘rniga faqat domen; to‘liq havola nusxalanadi.
+                  child: Text(
+                    source.doi != null
+                        ? 'DOI ${source.doi}'
+                        : Uri.tryParse(link)?.host.replaceFirst('www.', '') ??
+                              link,
+                    style: t.bodySmall?.copyWith(color: c.accent),
+                    semanticsLabel: link,
                   ),
                 ),
                 IconButton(
