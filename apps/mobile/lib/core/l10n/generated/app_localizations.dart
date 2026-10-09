@@ -12074,6 +12074,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Applied: ambient > 23 °C'**
   String get calcHenssgeFormulaHigh;
+
+  /// Role name of a publication moderator (admin users list, audit log).
+  ///
+  /// In en, this message translates to:
+  /// **'Publication moderator'**
+  String get admRolePublicationModerator;
 }
 
 class _AppLocalizationsDelegate

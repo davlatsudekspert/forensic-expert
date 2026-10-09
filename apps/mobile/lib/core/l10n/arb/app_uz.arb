@@ -1845,7 +1845,7 @@
   "supStatusNew": "Yangi",
   "supStatusInReview": "Ko‘rib chiqilmoqda",
   "supStatusAnswered": "Javob berilgan",
-  "supStatusClosed": "Yopilgan",
+  "supStatusClosed": "Yakunlandi",
   "supCategory": "Turkum",
   "supSubject": "Mavzu",
   "supMessage": "Xabar",
@@ -1867,7 +1867,7 @@
   "supMessageRequired": "Xabarni kiriting.",
   "supRateLimited": "Xabarlar juda ko‘p. Keyinroq urinib ko‘ring.",
   "supFailed": "Yuborilmadi. Aloqani tekshirib, qayta urinib ko‘ring.",
-  "supClosedNote": "Bu murojaat yopilgan. Yordam kerak bo‘lsa, yangisini yarating.",
+  "supClosedNote": "Bu murojaat yakunlangan. Yordam kerak bo‘lsa, yangisini yarating.",
   "supReplyHint": "Xabar yozing",
   "supYou": "Siz",
   "supTeam": "FORENSIC EXPERT jamoasi",
@@ -1994,5 +1994,6 @@
   "calcLockedBody": "Bu kalkulyator Mutaxassis Pro tarifida ochiladi. Suyultirish va konsentratsiya birliklari konvertori — bepul.",
   "calcLodUnitNote": "DL va QL kalibrlash x o‘qidagi konsentratsiya birligida.",
   "calcHenssgeFormulaLow": "Qo‘llangan: muhit ≤ 23 °C",
-  "calcHenssgeFormulaHigh": "Qo‘llangan: muhit > 23 °C"
+  "calcHenssgeFormulaHigh": "Qo‘llangan: muhit > 23 °C",
+  "admRolePublicationModerator": "Maqolalar moderatori"
 }

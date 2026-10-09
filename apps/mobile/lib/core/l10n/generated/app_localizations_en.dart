@@ -6776,4 +6776,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get calcHenssgeFormulaHigh => 'Applied: ambient > 23 °C';
+
+  @override
+  String get admRolePublicationModerator => 'Publication moderator';
 }

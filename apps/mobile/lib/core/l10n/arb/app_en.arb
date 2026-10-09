@@ -8813,5 +8813,9 @@
   "calcHenssgeFormulaHigh": "Applied: ambient > 23 °C",
   "@calcHenssgeFormulaHigh": {
     "description": "Caption: which Henssge equation is applied."
+  },
+  "admRolePublicationModerator": "Publication moderator",
+  "@admRolePublicationModerator": {
+    "description": "Role name of a publication moderator (admin users list, audit log)."
   }
 }

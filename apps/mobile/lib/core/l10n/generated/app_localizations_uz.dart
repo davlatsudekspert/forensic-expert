@@ -6235,7 +6235,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get supStatusAnswered => 'Javob berilgan';
 
   @override
-  String get supStatusClosed => 'Yopilgan';
+  String get supStatusClosed => 'Yakunlandi';
 
   @override
   String get supCategory => 'Turkum';
@@ -6309,7 +6309,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get supClosedNote =>
-      'Bu murojaat yopilgan. Yordam kerak bo‘lsa, yangisini yarating.';
+      'Bu murojaat yakunlangan. Yordam kerak bo‘lsa, yangisini yarating.';
 
   @override
   String get supReplyHint => 'Xabar yozing';
@@ -6759,4 +6759,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get calcHenssgeFormulaHigh => 'Qo‘llangan: muhit > 23 °C';
+
+  @override
+  String get admRolePublicationModerator => 'Maqolalar moderatori';
 }

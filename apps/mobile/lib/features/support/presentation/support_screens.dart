@@ -162,6 +162,10 @@ class _NewSupportThreadScreenState
   bool _consentError = false;
   bool _busy = false;
 
+  /// Birinchi «Yuborish»dan keyin maydonlar yozilganda qayta tekshiriladi —
+  /// to‘ldirilgan maydon ostida eski xato qolmaydi.
+  bool _validateOnInput = false;
+
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
@@ -204,7 +208,10 @@ class _NewSupportThreadScreenState
   Future<void> _submit() async {
     final l = AppLocalizations.of(context);
     final valid = _form.currentState!.validate();
-    setState(() => _consentError = !_consent);
+    setState(() {
+      _consentError = !_consent;
+      _validateOnInput = true;
+    });
     if (!valid || !_consent) return;
     final messenger = ScaffoldMessenger.of(context);
     setState(() => _busy = true);
@@ -250,6 +257,9 @@ class _NewSupportThreadScreenState
         body: SafeArea(
           child: Form(
             key: _form,
+            autovalidateMode: _validateOnInput
+                ? AutovalidateMode.onUserInteraction
+                : AutovalidateMode.disabled,
             child: ListView(
               key: const Key('supportNew.list'),
               children: [

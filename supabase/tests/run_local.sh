@@ -18,3 +18,11 @@ $P -d fe -f "$HERE/referral_test.sql"
 $P -d fe -f "$HERE/admin_test.sql"
 $P -d fe -f "$HERE/publications_test.sql"
 $P -d fe -f "$HERE/support_admin_test.sql"
+# RLS role matrix: fresh database with Supabase-like default table grants
+# (the files above grant/revoke privileges for their own checks). Roles are
+# cluster-wide, so stubs.sql is loaded without its CREATE ROLE lines.
+$P -c "create database fe_matrix"
+grep -v '^create role ' "$HERE/stubs.sql" | $P -d fe_matrix
+$P -d fe_matrix -f "$HERE/stubs_supabase_defaults.sql"
+for m in "$HERE"/../migrations/*.sql; do $P -d fe_matrix -f "$m"; done
+$P -d fe_matrix -f "$HERE/rls_role_matrix_test.sql"

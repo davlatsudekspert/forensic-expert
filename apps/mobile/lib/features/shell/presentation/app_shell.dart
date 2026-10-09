@@ -139,6 +139,26 @@ class _SupportReplyBannerState extends ConsumerState<_SupportReplyBanner> {
   /// Yopilgan paytdagi son: yangi javob kelsa banner qaytadi.
   int _dismissedAt = 0;
 
+  /// Ilova fondan qaytganda (push yo‘q) o‘qilmagan javoblar qayta so‘raladi —
+  /// aks holda belgi/banner faqat ilova qayta ishga tushganda yangilanardi.
+  late final AppLifecycleListener _lifecycle;
+
+  @override
+  void initState() {
+    super.initState();
+    _lifecycle = AppLifecycleListener(
+      onResume: () {
+        if (mounted) ref.invalidate(supportUnreadProvider);
+      },
+    );
+  }
+
+  @override
+  void dispose() {
+    _lifecycle.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     final unread = ref.watch(supportUnreadProvider).value ?? 0;

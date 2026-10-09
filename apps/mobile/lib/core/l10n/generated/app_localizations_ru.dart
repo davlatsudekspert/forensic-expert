@@ -6802,4 +6802,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get calcHenssgeFormulaHigh => 'Применена: среда > 23 °C';
+
+  @override
+  String get admRolePublicationModerator => 'Модератор публикаций';
 }

@@ -32,6 +32,40 @@ extension SupportStrings on AppLocalizations {
     'ROLE_CHANGED' => admActRoleChanged,
     _ => admActOther,
   };
+
+  /// Server tarif kodi (`studentPro`…) → tarif nomi. Xom kod ko‘rsatilmaydi.
+  String admTierLabel(String? tier) => switch (tier) {
+    null => admTierFree,
+    'studentPro' => tierStudentPro,
+    'professionalPro' => tierProfessionalPro,
+    'institution' => tierInstitution,
+    _ => admTierPro,
+  };
+
+  /// `android` / `ios` → «Android» / «iOS»; boshqasi o‘zgarmaydi.
+  String admPlatformLabel(String p) => switch (p.toLowerCase()) {
+    'android' => adminAndroid,
+    'ios' => adminIos,
+    _ => p,
+  };
+
+  /// Server rol kodi → nomi (`publication_moderator` admin EMAS).
+  String admRoleLabel(String role) => switch (role) {
+    'identity_admin' => adminAdminBadge,
+    'publication_moderator' => admRolePublicationModerator,
+    _ => role,
+  };
+
+  /// Jurnal tafsiloti (holat, tarif yoki rol kodi) → o‘qiladigan nom.
+  String admAuditValue(String v) {
+    for (final s in SupportStatus.values) {
+      if (s.wire == v) return supStatus(s);
+    }
+    return switch (v) {
+      'studentPro' || 'professionalPro' || 'institution' => admTierLabel(v),
+      _ => admRoleLabel(v),
+    };
+  }
 }
 
 extension SupportCategoryUi on SupportCategory {
