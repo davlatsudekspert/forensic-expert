@@ -21,8 +21,12 @@ void main() {
       expect(catalog.decks, hasLength(1));
       final deck = catalog.decks.single;
       expect(deck.kind, StudyDeckKind.discipline);
-      expect(deck.key, ForensicDiscipline.forensicMedicine.name);
+      // Bitta elementli to‘plam alohida chiqmaydi — aralash to‘plamga.
+      expect(deck.key, StudyCatalogBuilder.mixedDeckKey);
+      expect(deck.id, 'discipline.mixed');
       final item = deck.items.single;
+      expect(item.domain, 'topic:forensic_medicine');
+      expect(item.claimId, 'C-A');
       expect(item.kind, StudyItemKind.topicExcerpt);
       expect(item.answer.resolve('uz'), 'TEST excerpt for A.');
       expect(item.answerIsQuote, isTrue);
@@ -146,8 +150,13 @@ void main() {
           testSubstance('s4', sources: const []),
         ]),
       );
-      expect([for (final d in catalog.decks) d.id], ['group.g_a', 'group.g_b']);
-      final item = catalog.deck('group.g_a')!.items.single;
+      // Kichik guruhlar aralash to‘plamga; soha (guruh) saqlanadi.
+      expect([for (final d in catalog.decks) d.id], ['group.mixed']);
+      final item = catalog
+          .deck('group.mixed')!
+          .items
+          .firstWhere((i) => i.originId == 's1');
+      expect(item.domain, 'substance:g_a');
       expect(item.answer.resolve('ru'), 'TEST-F1');
       expect(item.origin, StudyOrigin.libraryEntry);
       expect(item.citations, isNotEmpty);
@@ -157,7 +166,7 @@ void main() {
     test('yo‘riqnoma: mazmun + adabiyot; VERIFIED fayl ham ko‘tarilmaydi', () {
       final catalog = StudyCatalogBuilder.build(guidelines: testGuidelines());
       final deck = catalog.deck('guideline.forensicChemistry')!;
-      expect(deck.items, hasLength(2));
+      expect(deck.items, hasLength(4));
       final item = deck.items.first;
       expect(item.answer.resolve('uz'), 'TEST mazmun g1');
       expect(item.citations.single.title, contains('TEST reference g1'));
@@ -194,29 +203,141 @@ void main() {
     });
   });
 
-  group('Distraktorlar va test', () {
-    test('faqat bir xil turdagi boshqa yozuvlar, takrorsiz', () {
+  group('Distraktorlar: faqat bir soha, semantik cheklovlar', () {
+    test('faqat shu sohadagi boshqa yozuvlar, takrorsiz', () {
       final catalog = testStudyCatalog();
       final item = catalog.deck('group.test_group')!.items.first;
       final all = [for (final d in catalog.decks) ...d.items];
       final picked = StudyQuizBuilder.distractors(item, all, Random(1));
-      expect(picked, hasLength(2));
+      expect(picked, hasLength(3));
+      for (final p in picked) {
+        expect(p.kind, StudyItemKind.substanceFormula);
+        expect(p.domain, item.domain);
+        expect(p.id, isNot(item.id));
+      }
+      expect({for (final p in picked) p.answer.resolve('en')}, hasLength(3));
+    });
+
+    test('boshqa fan hech qachon distraktor emas (yetmasa ham)', () {
+      // 2 ta sud-tibbiyot mavzusi + 4 ta biokimyo: sud-tibbiyot mavzusiga
+      // biokimyodan variant olinmaydi — «To‘g‘ri / Noto‘g‘ri» ga o‘tadi.
+      final catalog = StudyCatalogBuilder.build(
+        knowledge: ListKnowledgeRepository([
+          testTopic('M1'),
+          testTopic('M2'),
+          for (final id in ['B1', 'B2', 'B3', 'B4'])
+            testTopic(id, area: KnowledgeArea.biochemistry),
+        ]),
+      );
+      final all = [for (final d in catalog.decks) ...d.items];
+      final m1 = all.firstWhere((i) => i.originId == 'M1');
+      final b1 = all.firstWhere((i) => i.originId == 'B1');
+      expect(m1.domain, isNot(b1.domain));
+      for (var seed = 0; seed < 20; seed++) {
+        final picked = StudyQuizBuilder.distractors(m1, all, Random(seed));
+        expect([for (final p in picked) p.originId], ['M2']);
+      }
+      expect(catalog.formatOf(m1), StudyQuizFormat.trueFalse);
+      expect(catalog.formatOf(b1), StudyQuizFormat.multipleChoice);
       expect(
-        picked.every(
-          (p) => p.kind == StudyItemKind.substanceFormula && p.id != item.id,
-        ),
+        catalog.plausibleDistractors(b1).every((p) => p.domain == b1.domain),
         isTrue,
       );
-      expect({for (final p in picked) p.answer.resolve('en')}, hasLength(2));
+    });
+
+    test('fan oilasi: sud patologiyasi sud-tibbiyot bilan bir soha', () {
+      expect(
+        StudyCatalogBuilder.topicDomain(ForensicDiscipline.forensicPathology),
+        StudyCatalogBuilder.topicDomain(ForensicDiscipline.forensicMedicine),
+      );
+      expect(
+        StudyCatalogBuilder.topicDomain(ForensicDiscipline.forensicGenetics),
+        isNot(
+          StudyCatalogBuilder.topicDomain(ForensicDiscipline.forensicMedicine),
+        ),
+      );
+    });
+
+    test('mos distraktor yo‘q — faqat kartochka, test tuzilmaydi', () {
+      final single = StudyCatalogBuilder.build(
+        knowledge: ListKnowledgeRepository([testTopic('A')]),
+      );
+      final item = single.decks.single.items.single;
+      expect(single.formatOf(item), StudyQuizFormat.flashcardOnly);
+      expect(StudyQuizBuilder.canQuiz(single.decks.single, single), isFalse);
+      expect(
+        StudyQuizBuilder.build(single.decks.single, single, seed: 1),
+        isEmpty,
+      );
+    });
+
+    test(
+      'formula: organik / noorganik aralashmaydi, yaqin formulalar oldin',
+      () {
+        final catalog = StudyCatalogBuilder.build(
+          library: TestLibrary([
+            testSubstance('p1', formula: 'C10H14NO5PS', group: 'pest'),
+            testSubstance('p2', formula: 'C12H21N2O3PS', group: 'pest'),
+            testSubstance('p3', formula: 'C9H11Cl3NO3PS', group: 'pest'),
+            testSubstance('p4', formula: 'C31H23BrO3', group: 'pest'),
+            testSubstance('p5', formula: 'AlP', group: 'pest'),
+          ]),
+        );
+        final items = catalog.itemsOfKind(StudyItemKind.substanceFormula);
+        final alp = items.firstWhere((i) => i.originId == 'p5');
+        expect(catalog.plausibleDistractors(alp), isEmpty);
+        expect(catalog.formatOf(alp), StudyQuizFormat.flashcardOnly);
+        final p1 = items.firstWhere((i) => i.originId == 'p1');
+        final ranked = catalog.plausibleDistractors(p1);
+        expect(ranked.map((p) => p.originId), isNot(contains('p5')));
+        // Eng yaqin (P va S saqlovchi, uglerod soni yaqin) — birinchi.
+        expect(ranked.first.originId, anyOf('p2', 'p3'));
+        expect(ranked.last.originId, 'p4');
+      },
+    );
+
+    test('birlik: raqamli variantlar faqat bir xil birlikda', () {
+      expect(StudyQuizBuilder.unitSignature('2.5 mg/L'), {'mg/L'});
+      expect(StudyQuizBuilder.unitSignature('pH 8,5–9'), {'pH'});
+      expect(StudyQuizBuilder.unitSignature('C2H6O'), isEmpty);
+      const a = StudyItem(
+        id: 'a',
+        kind: StudyItemKind.substanceFormula,
+        deckId: 'x',
+        domain: 'substance:x',
+        prompt: LocalizedText({'en': 'A'}),
+        answer: LocalizedText({'en': '10 mg/L'}),
+        status: ScientificStatus.needsReview,
+        isTestData: true,
+        citations: [],
+        origin: StudyOrigin.libraryEntry,
+        originId: 'a',
+      );
+      StudyItem other(String id, String answer) => StudyItem(
+        id: id,
+        kind: a.kind,
+        deckId: 'x',
+        domain: a.domain,
+        prompt: LocalizedText({'en': id}),
+        answer: LocalizedText({'en': answer}),
+        status: a.status,
+        isTestData: true,
+        citations: const [],
+        origin: a.origin,
+        originId: id,
+      );
+      expect(StudyQuizBuilder.compatible(a, other('b', '20 mg/L')), isTrue);
+      expect(StudyQuizBuilder.compatible(a, other('c', '20 %')), isFalse);
+      expect(StudyQuizBuilder.compatible(a, other('d', '20 µg/mL')), isFalse);
     });
 
     test('ko‘rinishi bir xil variant tashlanadi', () {
       final catalog = StudyCatalogBuilder.build(
         library: TestLibrary([
-          testSubstance('s1', formula: 'TEST-F1'),
-          testSubstance('s2', formula: 'TEST-F1'),
-          testSubstance('s3', formula: 'test-f1 '),
-          testSubstance('s4', formula: 'TEST-F4'),
+          testSubstance('s1', formula: 'C1H4'),
+          testSubstance('s2', formula: 'C1H4'),
+          testSubstance('s3', formula: 'c1h4 '),
+          testSubstance('s4', formula: 'C4H10'),
         ]),
       );
       final items = catalog.itemsOfKind(StudyItemKind.substanceFormula);
@@ -224,26 +345,9 @@ void main() {
       final picked = StudyQuizBuilder.distractors(s1, items, Random(3));
       expect([for (final p in picked) p.originId], ['s4']);
     });
+  });
 
-    test('avval shu to‘plamdan, keyin boshqasidan', () {
-      final catalog = StudyCatalogBuilder.build(
-        library: TestLibrary([
-          testSubstance('a1', formula: 'TEST-A1', group: 'a'),
-          testSubstance('a2', formula: 'TEST-A2', group: 'a'),
-          testSubstance('b1', formula: 'TEST-B1', group: 'b'),
-          testSubstance('b2', formula: 'TEST-B2', group: 'b'),
-          testSubstance('b3', formula: 'TEST-B3', group: 'b'),
-        ]),
-      );
-      final items = catalog.itemsOfKind(StudyItemKind.substanceFormula);
-      final a1 = items.firstWhere((i) => i.originId == 'a1');
-      for (var seed = 0; seed < 20; seed++) {
-        final picked = StudyQuizBuilder.distractors(a1, items, Random(seed));
-        expect(picked, hasLength(3));
-        expect(picked.first.originId, 'a2', reason: 'seed $seed');
-      }
-    });
-
+  group('Test: mashq / imtihon, izoh', () {
     test('bir xil seed — bir xil test; to‘g‘ri javob o‘z joyida', () {
       final catalog = testStudyCatalog();
       final deck = catalog.decks.first;
@@ -257,6 +361,7 @@ void main() {
       expect(sig(a), sig(b));
       expect(a, hasLength(deck.items.length));
       for (final q in a) {
+        expect(q.format, StudyQuizFormat.multipleChoice);
         expect(q.options[q.correctIndex].id, q.item.id);
         expect(q.options, hasLength(4));
         expect({for (final o in q.options) o.id}, hasLength(4));
@@ -270,17 +375,33 @@ void main() {
       expect(seeds.length, greaterThan(1));
     });
 
-    test('uzunlik cheklanadi; distraktorsiz yozuv savolga aylanmaydi', () {
+    test('«To‘g‘ri / Noto‘g‘ri»: taklif — o‘zi yoki shu sohadan', () {
+      final catalog = StudyCatalogBuilder.build(
+        knowledge: ListKnowledgeRepository([testTopic('A'), testTopic('B')]),
+      );
+      final deck = catalog.decks.single;
+      final seen = <int>{};
+      for (var seed = 0; seed < 30; seed++) {
+        for (final q in StudyQuizBuilder.build(deck, catalog, seed: seed)) {
+          expect(q.format, StudyQuizFormat.trueFalse);
+          expect(q.choiceCount, 2);
+          final shown = q.options.single;
+          expect(shown.domain, q.item.domain);
+          expect(q.correctIndex, shown.id == q.item.id ? 0 : 1);
+          expect(q.isCorrect(q.correctIndex), isTrue);
+          seen.add(q.correctIndex);
+        }
+      }
+      expect(seen, {0, 1});
+    });
+
+    test('uzunlik cheklanadi', () {
       final catalog = testStudyCatalog();
       final deck = catalog.decks.first;
       expect(
         StudyQuizBuilder.build(deck, catalog, seed: 1, length: 2),
         hasLength(2),
       );
-      final single = StudyCatalogBuilder.build(
-        knowledge: ListKnowledgeRepository([testTopic('A')]),
-      );
-      expect(StudyQuizBuilder.canQuiz(single.decks.single, single), isFalse);
     });
 
     test('formula savoli: nom → formula', () {
@@ -293,6 +414,141 @@ void main() {
         q.optionText(q.correctIndex).resolve('en'),
         q.item.answer.resolve('en'),
       );
+    });
+
+    test('imtihon: faqat muallif savollari (sahifa/bo‘lim + izoh, til '
+        'qoralama emas)', () {
+      final catalog = testStudyCatalog(quiz: true);
+      final deck = catalog.deck('guideline.forensicChemistry')!;
+      final gq = [
+        for (final i in deck.items)
+          if (i.kind == StudyItemKind.guidelineQuestion) i,
+      ];
+      expect(gq, hasLength(5));
+      for (final i in gq) {
+        expect(StudyEligibility.examEligible(i, 'uz'), isTrue, reason: i.id);
+        // ru/en — DRAFT: imtihonga kirmaydi.
+        expect(StudyEligibility.examEligible(i, 'en'), isFalse);
+        expect(
+          StudyEligibility.reason(i, 'en'),
+          StudyIneligibility.draftTranslation,
+        );
+        expect(i.citations.single.section?.resolve('uz'), 'TEST bo‘lim');
+      }
+      final summaries = deck.items.where(
+        (i) => i.kind == StudyItemKind.guidelineSummary,
+      );
+      for (final i in summaries) {
+        expect(StudyEligibility.examEligible(i, 'uz'), isFalse);
+        expect(
+          StudyEligibility.reason(i, 'uz'),
+          StudyIneligibility.autoGenerated,
+        );
+      }
+      final exam = StudyQuizBuilder.build(
+        deck,
+        catalog,
+        seed: 1,
+        mode: StudyQuizMode.exam,
+        lang: 'uz',
+      );
+      expect(exam, hasLength(5));
+      expect(
+        exam.every((q) => q.item.kind == StudyItemKind.guidelineQuestion),
+        isTrue,
+      );
+      expect(StudyQuizBuilder.canExam(deck, catalog, 'uz'), isTrue);
+      expect(StudyQuizBuilder.canExam(deck, catalog, 'en'), isFalse);
+      expect(
+        StudyQuizBuilder.build(
+          deck,
+          catalog,
+          seed: 1,
+          mode: StudyQuizMode.exam,
+          lang: 'en',
+        ),
+        isEmpty,
+      );
+      // Mashqda hammasi bor (savollar + mazmun kartalari).
+      expect(
+        StudyQuizBuilder.build(deck, catalog, seed: 1, length: 50),
+        hasLength(deck.items.length),
+      );
+    });
+
+    test('imtihon: izohsiz yoki sahifasiz savol — faqat mashq', () {
+      StudyItem gq({LocalizedText? e, StudyCitation? c}) => StudyItem(
+        id: 'gq.x',
+        kind: StudyItemKind.guidelineQuestion,
+        deckId: 'd',
+        prompt: const LocalizedText({'uz': 'Q'}),
+        answer: const LocalizedText({'uz': 'A'}),
+        status: ScientificStatus.needsReview,
+        isTestData: false,
+        citations: [c ?? const StudyCitation(title: 'T', pages: '12')],
+        origin: StudyOrigin.guideline,
+        originId: 'g',
+        distractors: const [
+          LocalizedText({'uz': 'x'}),
+          LocalizedText({'uz': 'y'}),
+          LocalizedText({'uz': 'z'}),
+        ],
+        explanation: e,
+      );
+      const e = LocalizedText({'uz': 'Izoh'});
+      expect(StudyEligibility.examEligible(gq(e: e), 'uz'), isTrue);
+      expect(
+        StudyEligibility.reason(gq(), 'uz'),
+        StudyIneligibility.noExplanation,
+      );
+      expect(
+        StudyEligibility.reason(
+          gq(
+            e: e,
+            c: const StudyCitation(title: 'T'),
+          ),
+          'uz',
+        ),
+        StudyIneligibility.noLocator,
+      );
+    });
+
+    test('izoh: har savolda (muallif yoki manbali claim + manba)', () {
+      final catalog = testStudyCatalog(quiz: true);
+      for (final d in catalog.decks) {
+        for (final q in StudyQuizBuilder.build(
+          d,
+          catalog,
+          seed: 2,
+          length: 50,
+        )) {
+          for (final lang in const ['uz', 'ru', 'en']) {
+            expect(q.item.hasExplanation(lang), isTrue, reason: q.item.id);
+          }
+          expect(
+            q.item.explanationKind,
+            q.item.kind == StudyItemKind.guidelineQuestion
+                ? StudyExplanationKind.authored
+                : isNot(StudyExplanationKind.authored),
+          );
+        }
+      }
+    });
+
+    test('kichik to‘plamlar aralash to‘plamga, katta to‘plam o‘z joyida', () {
+      final catalog = StudyCatalogBuilder.build(
+        knowledge: ListKnowledgeRepository([
+          for (final id in ['A', 'B', 'C', 'D']) testTopic(id),
+          testTopic('G', area: KnowledgeArea.biochemistry),
+        ]),
+      );
+      expect(
+        [for (final d in catalog.decks) d.id],
+        ['discipline.forensicMedicine', 'discipline.mixed'],
+      );
+      final mixed = catalog.deck('discipline.mixed')!;
+      expect(mixed.isMixed, isTrue);
+      expect(mixed.items.single.deckId, 'discipline.mixed');
     });
   });
 
@@ -412,8 +668,9 @@ void main() {
       }
     });
 
-    test('har bir to‘plamdan test tuzish mumkin', () {
+    test('aralash bo‘lmagan har bir to‘plamdan test tuzish mumkin', () {
       for (final d in catalog.decks) {
+        if (d.isMixed) continue;
         expect(StudyQuizBuilder.canQuiz(d, catalog), isTrue, reason: d.id);
       }
     });

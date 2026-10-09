@@ -116,47 +116,102 @@ class TestLibrary implements LibraryRepository {
   }
 }
 
-GuidelineBundle testGuidelines({bool withRefs = true}) =>
-    GuidelineBundle.fromJson({
-      'schema': 'fe-guidelines/1',
-      'cards': [
-        for (final id in ['g1', 'g2'])
+/// TEST yo‘riqnoma kartalari ([cards] ta, sud-kimyo yo‘nalishi).
+///
+/// [quiz] — birinchi kartaga 5 ta muallif savoli (3 distraktor, uch tilli
+/// izoh, aniq `cite`) qo‘shiladi; [authored] — barcha tillar `AUTHORED`
+/// (aks holda ru/en `DRAFT`).
+GuidelineBundle testGuidelines({
+  bool withRefs = true,
+  int cards = 4,
+  bool quiz = false,
+  bool authored = false,
+}) => GuidelineBundle.fromJson({
+  'schema': 'fe-guidelines/1',
+  'cards': [
+    for (var n = 1; n <= cards; n++)
+      {
+        'id': 'guideline.test.g$n',
+        'discipline_codes': ['forensic_chemistry'],
+        'status': 'VERIFIED',
+        'translation_status': {
+          'uz': 'AUTHORED',
+          'ru': authored ? 'AUTHORED' : 'DRAFT',
+          'en': authored ? 'AUTHORED' : 'DRAFT',
+        },
+        'title': {
+          'uz': 'TEST yo‘riqnoma g$n',
+          'ru': 'TEST руководство g$n',
+          'en': 'TEST guideline g$n',
+        },
+        'summary': {
+          'uz': 'TEST mazmun g$n',
+          'ru': 'TEST содержание g$n',
+          'en': 'TEST summary g$n',
+        },
+        'sections': [
           {
-            'id': 'guideline.test.$id',
-            'discipline_codes': ['forensic_chemistry'],
-            'status': 'VERIFIED',
-            'translation_status': {
-              'uz': 'AUTHORED',
-              'ru': 'DRAFT',
-              'en': 'DRAFT',
+            'key': 'basis',
+            'title': {
+              'uz': 'TEST bo‘lim',
+              'ru': 'TEST раздел',
+              'en': 'TEST section',
             },
-            'title': {'uz': 'TEST yo‘riqnoma $id', 'en': 'TEST guideline $id'},
-            'summary': {'uz': 'TEST mazmun $id', 'en': 'TEST summary $id'},
-            'sections': [
-              {
-                'key': 'basis',
-                'title': {'en': 'TEST'},
-                'body': {'en': 'TEST'},
-                'citations': withRefs ? ['ref.$id'] : <String>[],
-              },
-            ],
+            'body': {'en': 'TEST body with GC-MS'},
+            'citations': withRefs ? ['ref.g$n'] : <String>[],
           },
-      ],
-      'references': [
-        for (final id in ['g1', 'g2'])
-          {'key': 'ref.$id', 'title': 'TEST reference $id', 'year': '2020'},
-      ],
-    });
+        ],
+        if (quiz && n == 1)
+          'quiz': [
+            for (var q = 1; q <= 5; q++)
+              {
+                'id': 'tq$q',
+                'q': {
+                  'uz': 'TEST savol $q?',
+                  'ru': 'TEST вопрос $q?',
+                  'en': 'TEST question $q?',
+                },
+                'a': {
+                  'uz': 'TEST javob $q',
+                  'ru': 'TEST ответ $q',
+                  'en': 'TEST answer $q',
+                },
+                'd': {
+                  for (final (lang, w) in const [
+                    ('uz', 'xato'),
+                    ('ru', 'ошибка'),
+                    ('en', 'wrong'),
+                  ])
+                    lang: [for (var d = 1; d <= 3; d++) 'TEST $w $q.$d'],
+                },
+                'e': {
+                  'uz': 'TEST izoh $q: GC-MS bilan tasdiqlanadi',
+                  'ru': 'TEST пояснение $q: подтверждается GC-MS',
+                  'en': 'TEST explanation $q: confirmed by GC-MS',
+                },
+                'cite': ['ref.g1'],
+              },
+          ],
+      },
+  ],
+  'references': [
+    for (var n = 1; n <= cards; n++)
+      {'key': 'ref.g$n', 'title': 'TEST reference g$n', 'year': '2020'},
+  ],
+});
 
-/// Uchta to‘plamli tayyor katalog (vidjet testlari uchun).
-StudyCatalog testStudyCatalog() => StudyCatalogBuilder.build(
-  knowledge: ListKnowledgeRepository([
-    for (final id in ['A', 'B', 'C', 'D']) testTopic(id),
-  ]),
-  library: TestLibrary([
-    testSubstance('s1', formula: 'TEST-F1'),
-    testSubstance('s2', formula: 'TEST-F2'),
-    testSubstance('s3', formula: 'TEST-F3'),
-  ]),
-  guidelines: testGuidelines(),
-);
+/// To‘rtta to‘plamli tayyor katalog (vidjet testlari uchun): mavzular,
+/// moddalar va yo‘riqnomalar — har birida 4 ta element (bir soha).
+StudyCatalog testStudyCatalog({bool quiz = false, bool authored = false}) =>
+    StudyCatalogBuilder.build(
+      knowledge: ListKnowledgeRepository([
+        for (final id in ['A', 'B', 'C', 'D']) testTopic(id),
+      ]),
+      library: TestLibrary([
+        testSubstance('s1', formula: 'C1H4-TEST'),
+        testSubstance('s2', formula: 'C2H6-TEST'),
+        testSubstance('s3', formula: 'C3H8-TEST'),
+        testSubstance('s4', formula: 'C4H10-TEST'),
+      ]),
+      guidelines: testGuidelines(quiz: quiz, authored: authored),
+    );

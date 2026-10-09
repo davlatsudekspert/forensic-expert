@@ -115,6 +115,7 @@
   "quiz": [
     {
       "id": "toks_iso_1",
+      "e": {"uz": "Kartaga ko‘ra maydalangan ob’ekt oksalat yoki vino kislotasi bilan pH 2,0–2,5 gacha nordonlashtiriladi. Kuchli mineral kislota sianidni parchalashi va fenol kon’yugatlarini gidrolizlab «soxta» fenol berishi mumkin, shuning uchun kuchsiz organik kislotalar afzal; ishqoriy muhit bu bosqichga to‘g‘ri kelmaydi.", "ru": "Согласно карточке, измельчённый объект подкисляют щавелевой или винной кислотой до pH 2,0–2,5. Сильная минеральная кислота может разложить цианид и гидролизовать конъюгаты фенола («ложный» фенол), поэтому предпочтительны слабые органические кислоты; щелочная среда на этом этапе не применяется.", "en": "Per the card, the minced specimen is acidified with oxalic or tartaric acid to pH 2.0–2.5. A strong mineral acid can decompose cyanide and hydrolyse phenol conjugates (a 'false' phenol), so weak organic acids are preferred; an alkaline medium does not fit this step."},
       "q": {"uz": "Uchuvchi zaharlarni suv bug‘i bilan haydashdan oldin ob’ekt odatda nima bilan nordonlashtiriladi?", "ru": "Чем обычно подкисляют объект перед перегонкой летучих ядов с водяным паром?", "en": "What is normally used to acidify the specimen before steam distillation of volatile poisons?"},
       "a": {"uz": "Oksalat yoki vino kislotasi (pH 2,0–2,5)", "ru": "Щавелевой или винной кислотой (pH 2,0–2,5)", "en": "Oxalic or tartaric acid (pH 2.0–2.5)"},
       "d": {
@@ -126,6 +127,7 @@
     },
     {
       "id": "toks_iso_2",
+      "e": {"uz": "Birinchi distillyat suyultirilgan natriy ishqori eritmasiga yig‘iladi: HCN uchmaydigan NaCN ga o‘tadi va bu distillyat faqat sianidga tekshiriladi. Fenol, spirtlar va formaldegid ikkinchi distillyatda tekshiriladi.", "ru": "Первый дистиллят собирают в разбавленный раствор гидроксида натрия: HCN переходит в нелетучий NaCN, и этот дистиллят исследуют только на цианид. Фенол, спирты и формальдегид исследуют во втором дистилляте.", "en": "The first distillate is collected into dilute sodium hydroxide: HCN becomes non-volatile NaCN, and this distillate is tested for cyanide only. Phenol, alcohols and formaldehyde are tested in the second distillate."},
       "q": {"uz": "Birinchi distillyat nima uchun ishqor eritmasiga yig‘iladi?", "ru": "Зачем первый дистиллят собирают в раствор щёлочи?", "en": "Why is the first distillate collected into alkali?"},
       "a": {"uz": "HCN uchmaydigan sianid tuziga o‘tib, yo‘qolmasligi uchun", "ru": "Чтобы HCN перешла в нелетучую соль цианида и не терялась", "en": "To trap HCN as a non-volatile cyanide salt"},
       "d": {
@@ -137,6 +139,7 @@
     },
     {
       "id": "toks_iso_3",
+      "e": {"uz": "Kartadagi omillar bo‘limiga ko‘ra kuchli mineral kislota tabiiy fenol kon’yugatlarini gidrolizlab «soxta» fenol berishi (va sianidni parchalashi) mumkin. Sirka kislotasi uchun esa, aksincha, kuchli mineral kislota kerak bo‘ladi; qolgan variantlar kartada bunday xato sifatida ko‘rsatilmagan.", "ru": "Согласно разделу карточки о факторах, сильная минеральная кислота может гидролизовать природные конъюгаты фенола и дать «ложный» фенол (а также разложить цианид). Для уксусной кислоты, наоборот, сильная минеральная кислота нужна; остальные варианты в карточке как такая ошибка не указаны.", "en": "According to the card's factors section, a strong mineral acid can hydrolyse natural phenol conjugates and give a 'false' phenol (and decompose cyanide). Acetic acid, by contrast, actually needs a strong mineral acid; the other options are not described in the card as such an error."},
       "q": {"uz": "Ob’ektni kuchli mineral kislota bilan nordonlashtirish qaysi xatoga olib kelishi mumkin?", "ru": "К какой ошибке может привести подкисление объекта сильной минеральной кислотой?", "en": "What error can acidifying the specimen with a strong mineral acid cause?"},
       "a": {"uz": "Fenol kon’yugatlari gidrolizlanib «soxta» fenol topilishi", "ru": "Гидролиз конъюгатов фенола и обнаружение «ложного» фенола", "en": "Hydrolysis of phenol conjugates giving 'false' phenol"},
       "d": {
@@ -148,6 +151,7 @@
     },
     {
       "id": "toks_iso_4",
+      "e": {"uz": "Kartaga ko‘ra Stas usuli (1851) nordonlashtirilgan etil spirti bilan ajratishga asoslangan; Otto (1856) spirtli ajratmani tozalashni qo‘shgan — shuning uchun usul Stas–Otto deb ataladi. Dragendorf, Kramarenko va Vasilyeva nomlari nordonlashtirilgan suv bilan ajratish usullariga tegishli.", "ru": "Согласно карточке, метод Стаса (1851) основан на извлечении подкисленным этанолом; Отто (1856) добавил очистку спиртового извлечения — отсюда название метод Стаса–Отто. Имена Драгендорфа, Крамаренко и Васильевой относятся к методам извлечения подкисленной водой.", "en": "Per the card, the Stas method (1851) extracts with acidified ethanol; Otto (1856) added the clean-up of the ethanolic extract, hence the Stas–Otto method. Dragendorff, Kramarenko and Vasilyeva are associated with acidified-water extraction methods."},
       "q": {"uz": "Stas usulini 1856 yilda kim o‘zgartirib, spirtli ajratmani tozalashni qo‘shgan?", "ru": "Кто в 1856 году дополнил метод Стаса очисткой спиртового извлечения?", "en": "Who in 1856 added clean-up of the alcoholic extract to Stas's method?"},
       "a": {"uz": "F. Otto", "ru": "Ф. Отто", "en": "F. Otto"},
       "d": {
@@ -159,6 +163,7 @@
     },
     {
       "id": "toks_iso_5",
+      "e": {"uz": "Kramarenko usulida ob’ekt pH 2–2,5 da suyultirilgan sulfat kislota bilan bo‘ktiriladi, nordon eritma efir bilan yuviladi, so‘ng alkaloidlar pH 8,5–9 da xloroform bilan ekstraksiya qilinadi. pH 2–2,5 — bo‘ktirish bosqichi, ekstraksiya emas.", "ru": "В методе Крамаренко объект настаивают с разбавленной серной кислотой при pH 2–2,5, кислый раствор промывают эфиром, затем алкалоиды экстрагируют хлороформом при pH 8,5–9. pH 2–2,5 относится к настаиванию, а не к экстракции.", "en": "In the Kramarenko method the specimen is steeped in dilute sulfuric acid at pH 2–2.5, the acidic solution is washed with ether, and the alkaloids are then extracted into chloroform at pH 8.5–9. pH 2–2.5 is the steeping step, not the extraction."},
       "q": {"uz": "Kramarenko usulida alkaloidlar nordon suvli ajratmadan qaysi pH da xloroform bilan ekstraksiya qilinadi?", "ru": "При каком pH в методе Крамаренко алкалоиды экстрагируют хлороформом из кислого водного извлечения?", "en": "At what pH are alkaloids extracted with chloroform in Kramarenko's method?"},
       "a": {"uz": "pH 8,5–9", "ru": "pH 8,5–9", "en": "pH 8.5–9"},
       "d": {
@@ -170,6 +175,7 @@
     },
     {
       "id": "toks_iso_6",
+      "e": {"uz": "Kartadagi cheklovlarga ko‘ra qayta ekstraksiya bilan tozalashda kuchsiz asoslar (purin hosilalari, narkotin, promedol, antipirin, amidopirin) yo‘qotilishi mumkin. Qolgan variantlar kartada bu bosqichdagi yo‘qotish sifatida ko‘rsatilmagan.", "ru": "Согласно ограничениям, указанным в карточке, при очистке переэкстракцией могут теряться слабые основания (производные пурина, наркотин, промедол, антипирин, амидопирин). Остальные варианты в карточке как потери на этом этапе не указаны.", "en": "According to the card's limitations, weak bases (purine derivatives, narcotine, promedol, antipyrine, aminophenazone) may be lost during clean-up by back-extraction. The other options are not listed in the card as losses at this step."},
       "q": {"uz": "Qayta ekstraksiya bilan tozalashda qaysi moddalar yo‘qotilishi mumkin?", "ru": "Какие вещества могут теряться при очистке реэкстракцией?", "en": "Which substances may be lost during clean-up by back-extraction?"},
       "a": {"uz": "Kuchsiz asoslar (purin hosilalari, narkotin, antipirin)", "ru": "Слабые основания (производные пурина, наркотин, антипирин)", "en": "Weak bases (purine derivatives, narcotine, antipyrine)"},
       "d": {

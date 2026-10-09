@@ -11,9 +11,77 @@ import 'package:flutter/foundation.dart';
 
 import '../guidelines/guideline_models.dart';
 
+/// Qisqartmaning qisqa izohi (`content/terminology/abbreviation_glossary.json`).
+///
+/// Tahririy ta’rif — terminolog tekshirmaguncha `machine_draft`
+/// ([TranslationStatus]); hech qachon tasdiqlangan deb ko‘rsatilmaydi.
+@immutable
+class AbbreviationNote {
+  const AbbreviationNote({
+    required this.id,
+    required this.abbreviation,
+    required this.expansion,
+    required this.explanation,
+    required this.status,
+    this.relatedTermId,
+  });
+
+  static AbbreviationNote? fromJson(Object? j) {
+    if (j is! Map) return null;
+    Map<String, String> tri(Object? v) => {
+      if (v is Map)
+        for (final e in v.entries)
+          if ('${e.value}'.trim().isNotEmpty) '${e.key}': '${e.value}'.trim(),
+    };
+    final id = '${j['id'] ?? ''}'.trim();
+    final abbr = '${j['abbreviation'] ?? ''}'.trim();
+    if (id.isEmpty || abbr.isEmpty) return null;
+    return AbbreviationNote(
+      id: id,
+      abbreviation: abbr,
+      expansion: tri(j['expansion']),
+      explanation: tri(j['explanation']),
+      status: {
+        for (final e in tri(j['status']).entries)
+          e.key: switch (e.value) {
+            'reviewed' => TranslationStatus.reviewed,
+            'translated' => TranslationStatus.translated,
+            _ => TranslationStatus.machineDraft,
+          },
+      },
+      relatedTermId: (j['related_term_id'] as String?)?.trim(),
+    );
+  }
+
+  static List<AbbreviationNote> listFromJson(Object? j) => [
+    if (j is Map)
+      for (final t in (j['terms'] as List? ?? const [])) ?fromJson(t),
+  ];
+
+  final String id;
+  final String abbreviation;
+  final Map<String, String> expansion;
+  final Map<String, String> explanation;
+  final Map<String, TranslationStatus> status;
+  final String? relatedTermId;
+
+  /// Lug‘at yozuvi: «PMI — o‘limdan keyin o‘tgan vaqt oralig‘i».
+  TermTranslation toTranslation() => TermTranslation(
+    id: id,
+    kind: ScientificTermKind.abbreviation,
+    original: abbreviation,
+    originalLang: 'en',
+    canonical: abbreviation,
+    localized: {
+      for (final e in expansion.entries) e.key: '$abbreviation — ${e.value}',
+    },
+    status: status,
+  );
+}
+
 @immutable
 class GlossaryTerm {
-  const GlossaryTerm(this.translation, {this.cardIds = const []});
+  const GlossaryTerm(this.translation, {this.cardIds = const [], this.note});
 
   /// Ko‘rsatish tartibi.
   static const languages = ['uz', 'ru', 'en'];
@@ -22,6 +90,13 @@ class GlossaryTerm {
 
   /// Atama ishlatilgan yo‘riqnoma kartalari (kartadagi `term_ids` dan).
   final List<String> cardIds;
+
+  /// Qisqartma bo‘lsa — qisqa izoh (uch tilda).
+  final AbbreviationNote? note;
+
+  /// Tildagi qisqa izoh, bo‘lsa.
+  String? explanationIn(String lang) =>
+      note?.explanation[lang] ?? note?.explanation['en'];
 
   String get id => translation.id;
   ScientificTermKind get kind => translation.kind;
@@ -66,12 +141,18 @@ class GlossaryTerm {
 
 @immutable
 class Glossary {
-  const Glossary._(this.terms, this._byId, this._cardTerms);
+  const Glossary._(
+    this.terms,
+    this._byId,
+    this._cardTerms, [
+    this._byAbbreviation = const {},
+  ]);
 
   factory Glossary.build(
     Iterable<TermTranslation> translations,
-    GuidelineBundle guidelines,
-  ) {
+    GuidelineBundle guidelines, {
+    Iterable<AbbreviationNote> abbreviations = const [],
+  }) {
     final cardsOf = <String, List<String>>{};
     final cardTerms = <String, List<String>>{};
     final known = {for (final t in translations) t.id};
@@ -82,13 +163,28 @@ class Glossary {
         cardTerms.putIfAbsent(card.id, () => []).add(tid);
       }
     }
+    final abbr = [
+      for (final n in abbreviations)
+        if (!known.contains(n.id))
+          GlossaryTerm(
+            n.toTranslation(),
+            note: n,
+            cardIds: List.unmodifiable(
+              cardsOf[n.relatedTermId] ?? const <String>[],
+            ),
+          ),
+    ];
     final terms = [
       for (final t in translations)
         GlossaryTerm(t, cardIds: List.unmodifiable(cardsOf[t.id] ?? const [])),
+      ...abbr,
     ];
-    return Glossary._(List.unmodifiable(terms), {
-      for (final t in terms) t.id: t,
-    }, cardTerms);
+    return Glossary._(
+      List.unmodifiable(terms),
+      {for (final t in terms) t.id: t},
+      cardTerms,
+      {for (final t in abbr) t.note!.abbreviation: t},
+    );
   }
 
   static const empty = Glossary._([], {}, {});
@@ -98,6 +194,12 @@ class Glossary {
   final List<GlossaryTerm> terms;
   final Map<String, GlossaryTerm> _byId;
   final Map<String, List<String>> _cardTerms;
+  final Map<String, GlossaryTerm> _byAbbreviation;
+
+  /// Izohi bor qisqartmalar (matnda bosiladigan havola uchun).
+  Iterable<String> get abbreviations => _byAbbreviation.keys;
+
+  GlossaryTerm? byAbbreviation(String abbr) => _byAbbreviation[abbr];
 
   bool get isEmpty => terms.isEmpty;
 

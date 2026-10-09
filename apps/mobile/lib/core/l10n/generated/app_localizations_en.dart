@@ -5854,7 +5854,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get studyQuizUnavailable =>
-      'Not enough records of this type for a quiz';
+      'Too few related options for a test — flashcards only';
 
   @override
   String get studyFrontTopic =>
@@ -5950,7 +5950,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get studyQuizNote =>
-      'Wrong options are other records of the same type from the app; nothing is invented.';
+      'Wrong options are other records of the same field or group only; nothing is invented. Practice only — not part of the graded exam.';
 
   @override
   String studyQuizQuestionOf(int current, int total) {
@@ -7506,4 +7506,123 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get guidelineTermsHint =>
       'Tap a term to see it in Uzbek, Russian and English.';
+
+  @override
+  String get studyModePractice => 'Practice';
+
+  @override
+  String get studyModeExam => 'Exam';
+
+  @override
+  String get studyModePracticeBanner =>
+      'Practice mode — not graded. After each answer you see whether it is right, why, and the source.';
+
+  @override
+  String get studyModeExamBanner =>
+      'Graded exam — only questions with an author-written answer key, three related wrong options, an explanation and a page or section in the source. Answers and explanations are shown at the end.';
+
+  @override
+  String studyExamCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Exam: $count questions',
+      one: 'Exam: 1 question',
+      zero: 'No exam questions',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get studyPracticeOnly => 'Practice only';
+
+  @override
+  String get studyExamUnavailable =>
+      'No exam for this set: its questions are generated automatically or lack an explanation or page in the source. Use Practice.';
+
+  @override
+  String get studyExamDraftLanguage =>
+      'The exam is available in Uzbek: the English translation of these questions is still a draft.';
+
+  @override
+  String get studyQuizFlashcardsOnly =>
+      'Too few related options for a test — flashcards only';
+
+  @override
+  String get studyTfQuestion => 'Is this answer correct?';
+
+  @override
+  String get studyTfProposed => 'Proposed answer';
+
+  @override
+  String get studyTrue => 'Correct';
+
+  @override
+  String get studyFalse => 'Incorrect';
+
+  @override
+  String get studyTfNote =>
+      'Where fewer than three related wrong options exist, the question is shown as Correct / Incorrect.';
+
+  @override
+  String studyExplainTopic(String topic) {
+    return 'This statement is cited for “$topic”. The other options are topics of the same field whose sources say something else.';
+  }
+
+  @override
+  String get studyExplainSourceSays => 'The source states:';
+
+  @override
+  String studyExplainSubstance(String name, String formula) {
+    return 'Molecular formula of $name in its identity record: $formula. The other options are formulas of substances from the same group.';
+  }
+
+  @override
+  String studyExplainGuideline(String title) {
+    return 'This summary belongs to the guideline card “$title”. The other options are cards of the same area.';
+  }
+
+  @override
+  String get studyOpenSource => 'Open source';
+
+  @override
+  String get studyQuoteTranslated =>
+      'Quote from the source — machine translation, not reviewed';
+
+  @override
+  String get studyShowOriginalQuote => 'Show the original quote';
+
+  @override
+  String studySourceSection(String section) {
+    return 'Section: $section';
+  }
+
+  @override
+  String get studyExamResultTitle => 'Exam result';
+
+  @override
+  String get studyExamReview => 'Answers and explanations';
+
+  @override
+  String studyExamPercent(int percent) {
+    return '$percent% correct';
+  }
+
+  @override
+  String get studyDeckMixedTopics => 'Other topics (small sets combined)';
+
+  @override
+  String get studyDeckMixedSubstances => 'Other groups (small sets combined)';
+
+  @override
+  String get studyDeckMixedGuidelines =>
+      'Other guidelines (small sets combined)';
+
+  @override
+  String get glossaryShortExplanation => 'Short explanation';
+
+  @override
+  String glossaryAbbrevSemantics(String abbr) {
+    return 'Abbreviation $abbr: tap for a short explanation';
+  }
 }

@@ -85,8 +85,10 @@ abstract final class Routes {
   static const study = '/home/learn/study';
   static String studyCards(String deckId) =>
       '$study/${Uri.encodeComponent(deckId)}/cards';
-  static String studyQuiz(String deckId) =>
-      '$study/${Uri.encodeComponent(deckId)}/quiz';
+
+  /// [exam] — baholanadigan imtihon (aks holda mashq).
+  static String studyQuiz(String deckId, {bool exam = false}) =>
+      '$study/${Uri.encodeComponent(deckId)}/quiz${exam ? '?mode=exam' : ''}';
 
   static const tools = '/tools';
   static String tool(String id) => '/tools/tool/$id';

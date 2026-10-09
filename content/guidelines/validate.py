@@ -21,7 +21,9 @@ Checks (exit code 1 on any error):
        access, if present, is "free" or "pro"
   G016 quiz items: unique id, q/a in uz/ru/en, exactly 3 distractors per language,
        distractors differ from the answer, pages given (or explicit `cite` keys
-       that the card cites; `pages` then belong to the teaching-material key)
+       that the card cites; `pages` then belong to the teaching-material key),
+       explanation `e` (why the answer is right / distractors wrong) in uz/ru/en;
+       no forbidden terminology variants (content/terminology/canonical_terms.json)
   G017 page-cited teaching books (PAGE_CITED): the key stands alone in its
        brackets and is followed by a page locator in the body language,
        e.g. "[key] (23-b.)", "[key] (с. 23–24)", "[key] (pp. 23, 27)"
@@ -41,6 +43,11 @@ HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parent.parent
 LANGS = ("uz", "ru", "en")
 TRANSLATION_VALUES = {"AUTHORED", "DRAFT", "REVIEWED"}
+# Kanonik terminologiya (content/terminology/canonical_terms.json): taqiqlangan
+# shakllar faqat quiz matnlarida tekshiriladi (karta matnlari — alohida bosqich).
+_CANON = json.loads((ROOT / "content/terminology/canonical_terms.json").read_text(encoding="utf-8"))
+FORBIDDEN_QUIZ_TERMS = sorted({v for t in _CANON["terms"] for lang in ("uz", "ru")
+                               for v in t.get("forbidden", {}).get(lang, [])})
 INLINE = re.compile(r"\[([a-z0-9_]+(?:,\s*[a-z0-9_]+)*)\]")
 
 errors: list[str] = []
@@ -206,6 +213,11 @@ def main() -> int:
             quiz_ids.add(qid)
             tri(q.get("q"), "G016", f"{where}.q")
             tri(q.get("a"), "G016", f"{where}.a")
+            tri(q.get("e"), "G016", f"{where}.e")
+            qblob = json.dumps(q, ensure_ascii=False)
+            for bad in FORBIDDEN_QUIZ_TERMS:
+                if re.search(rf"(?<![\w-]){re.escape(bad)}(?![\w-])", qblob):
+                    err("G016", where, f"forbidden terminology variant {bad!r}")
             cite = q.get("cite")
             if cite is not None:
                 if not cite or any(k not in card.get("reference_keys", []) for k in cite):
@@ -222,6 +234,7 @@ def main() -> int:
                 if ans in {x.strip().lower() for x in ds}:
                     err("G016", where, f"d.{lang} repeats the answer")
             check_uz(" ".join([q.get("q", {}).get("uz", ""), q.get("a", {}).get("uz", ""),
+                               (q.get("e") or {}).get("uz", ""),
                                *((q.get("d") or {}).get("uz") or [])]), f"{where}.uz")
 
     # G018: karta → ilmiy lug‘at atamalari (aniq bog‘lanish)

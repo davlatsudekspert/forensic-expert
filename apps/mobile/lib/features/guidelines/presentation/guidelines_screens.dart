@@ -19,6 +19,7 @@ import '../../../domain/catalog/tools_catalog.dart';
 import '../../../domain/evidence/citation_format.dart';
 import '../../../domain/guidelines/guideline_models.dart';
 import '../../evidence/presentation/citation_sheet.dart';
+import '../../glossary/presentation/glossary_linked_text.dart';
 import '../../glossary/presentation/glossary_screens.dart';
 import '../../support/presentation/support_widgets.dart' show ReportErrorMenu;
 import '../../tools/tool_strings.dart';
@@ -405,8 +406,12 @@ class _GuidelineDetailScreenState extends ConsumerState<GuidelineDetailScreen> {
                       key: _anchor('s$i'),
                       child: FeSectionHeader(s.title.of(lang)),
                     ),
-                    SelectableText(
+                    // Kanonik qisqartmalar (GC-MS, TLC, PMR …) — bosilganda
+                    // lug‘atdagi qisqa izoh.
+                    GlossaryLinkedText(
                       numberCitations(s.body.of(lang), s.citations, index),
+                      key: Key('guideline.body.$i'),
+                      selectable: true,
                       style: t.bodyMedium?.copyWith(height: 1.5),
                     ),
                   ],

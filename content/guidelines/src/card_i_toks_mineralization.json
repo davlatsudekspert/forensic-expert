@@ -115,6 +115,7 @@
   "quiz": [
     {
       "id": "toks_min_1",
+      "e": {"uz": "Kartaga ko‘ra sulfat–nitrat usulida simob deyarli to‘liq yo‘qoladi; quruq va ho‘l mineralizatsiyada ham simob yo‘qolgani uchun chala oksidlash — destruksiya (Vasilyeva usuli) qo‘llanadi. Qolgan variantlar kartada sabab sifatida keltirilmagan.", "ru": "Согласно карточке, при сернокислотно-азотнокислотной минерализации ртуть почти полностью теряется; так как ртуть теряется и при сухой, и при мокрой минерализации, применяют частичное окисление — деструкцию (метод Васильевой). Остальные варианты в карточке как причина не приводятся.", "en": "Per the card, mercury is almost completely lost with sulfuric–nitric acid mineralization; because it is lost in both dry and wet mineralization, partial oxidation — destruction (Vasilyeva method) — is used. The other options are not given in the card as the reason."},
       "q": {"uz": "Nima uchun simob uchun ho‘l mineralizatsiya emas, balki destruksiya qo‘llanadi?", "ru": "Почему на ртуть применяют деструкцию, а не мокрую минерализацию?", "en": "Why is mercury examined after destruction rather than wet mineralization?"},
       "a": {"uz": "Mineralizatsiyada simob deyarli to‘liq yo‘qoladi", "ru": "При минерализации ртуть почти полностью теряется", "en": "Mercury is almost completely lost during mineralization"},
       "d": {
@@ -126,6 +127,7 @@
     },
     {
       "id": "toks_min_2",
+      "e": {"uz": "Bir tomchi mineralizat suv bilan aralashtirilib, difenilaminning konsentrlangan sulfat kislotadagi eritmasi qo‘shiladi; ko‘k rang oksidlovchilar borligini ko‘rsatadi. Ditizon kartada metall kationlarini aniqlash va ajratish uchun keltirilgan.", "ru": "Каплю минерализата смешивают с водой и добавляют раствор дифениламина в концентрированной серной кислоте; синее окрашивание указывает на окислители. Дитизон в карточке приводится для обнаружения и выделения катионов металлов.", "en": "A drop of mineralizate is mixed with water and diphenylamine in concentrated sulfuric acid is added; a blue colour shows that oxidants are present. Dithizone appears in the card for detecting and separating metal cations."},
       "q": {"uz": "Mineralizatda oksidlovchilar borligi qaysi reaktiv bilan tekshiriladi?", "ru": "Каким реактивом проверяют наличие окислителей в минерализате?", "en": "Which reagent is used to test the digest for residual oxidants?"},
       "a": {"uz": "Difenilaminning konsentrlangan sulfat kislotadagi eritmasi (ko‘k rang)", "ru": "Раствор дифениламина в концентрированной серной кислоте (синее окрашивание)", "en": "Diphenylamine in concentrated sulfuric acid (blue colour)"},
       "d": {
@@ -137,6 +139,7 @@
     },
     {
       "id": "toks_min_3",
+      "e": {"uz": "Kartaga ko‘ra tugash belgisi: oksidlovchisiz qizdirilganda suyuqlik qoraymaydi va oltingugurt(VI) oksidining oq og‘ir bug‘lari chiqadi. Qorayish esa oksidlovchi yetishmasligini bildiradi va nitrat kislota qo‘shishni talab qiladi.", "ru": "Согласно карточке, признак окончания: при нагревании без окислителя жидкость не темнеет и выделяются белые тяжёлые пары оксида серы(VI). Потемнение же означает нехватку окислителя и требует добавления азотной кислоты.", "en": "Per the card, the end point is reached when the liquid no longer darkens on heating without oxidant and white, heavy sulfur(VI) oxide fumes appear. Darkening instead means a lack of oxidant and calls for more nitric acid."},
       "q": {"uz": "Ho‘l mineralizatsiya tugaganini qaysi belgi ko‘rsatadi?", "ru": "Какой признак указывает на окончание мокрой минерализации?", "en": "What indicates that wet mineralization is complete?"},
       "a": {"uz": "Oksidlovchisiz qizdirilganda qorayish yo‘q va SO3 ning oq bug‘lari chiqadi", "ru": "Без окислителя жидкость не темнеет и выделяются белые пары SO3", "en": "No darkening on heating without oxidant and white SO3 fumes appear"},
       "d": {
@@ -148,6 +151,7 @@
     },
     {
       "id": "toks_min_4",
+      "e": {"uz": "Kartadagi niqoblovchilar misolida Fe(III) uchun ftoridlar va fosfatlar (rangsiz komplekslar) ko‘rsatilgan: Fe(III) rodanid bilan qizil rang berib kobalt reaksiyasiga xalaqit beradi. Qolgan moddalar kartada Fe(III) niqoblovchisi sifatida keltirilmagan.", "ru": "В примерах маскирующих агентов карточки для Fe(III) указаны фториды и фосфаты (бесцветные комплексы): Fe(III) с роданидом даёт красную окраску и мешает реакции на кобальт. Остальные вещества в карточке как маскирующие Fe(III) не приводятся.", "en": "Among the card's masking agents, fluorides and phosphates (colourless complexes) are given for Fe(III): Fe(III) forms a red colour with thiocyanate and interferes with the cobalt test. The other substances are not given in the card as Fe(III) masking agents."},
       "q": {"uz": "Kasrli usulda Fe(III) ionlari odatda nima bilan niqoblanadi?", "ru": "Чем обычно маскируют ионы Fe(III) в дробном методе?", "en": "What is commonly used to mask Fe(III) in the fractional method?"},
       "a": {"uz": "Ftoridlar yoki fosfatlar", "ru": "Фторидами или фосфатами", "en": "Fluorides or phosphates"},
       "d": {
@@ -159,6 +163,7 @@
     },
     {
       "id": "toks_min_5",
+      "e": {"uz": "Kartadagi balanslangan tenglama: 4HNO3 + 3CH2O → 4NO + 3CO2 + 5H2O. Boshqa variantlarda ikki tomondagi atomlar soni teng emas.", "ru": "Сбалансированное уравнение в карточке: 4HNO3 + 3CH2O → 4NO + 3CO2 + 5H2O. В остальных вариантах число атомов в левой и правой частях не совпадает.", "en": "The balanced equation in the card is 4HNO3 + 3CH2O → 4NO + 3CO2 + 5H2O. In the other options the atom counts on the two sides do not match."},
       "q": {"uz": "Formaldegid bilan denitratsiyaning balanslangan tenglamasi qaysi?", "ru": "Какое уравнение денитрации формальдегидом сбалансировано?", "en": "Which is the balanced equation for denitration with formaldehyde?"},
       "a": {"uz": "4HNO3 + 3CH2O → 4NO + 3CO2 + 5H2O", "ru": "4HNO3 + 3CH2O → 4NO + 3CO2 + 5H2O", "en": "4HNO3 + 3CH2O → 4NO + 3CO2 + 5H2O"},
       "d": {
@@ -170,6 +175,7 @@
     },
     {
       "id": "toks_min_6",
+      "e": {"uz": "Kartaga ko‘ra marganets, kadmiy kabi metallar organizmda tabiiy mikroelement sifatida uchraydi, shuning uchun sifat reaksiyasi yetarli emas — miqdoriy tahlil majburiy. Bu elementlar uchun kartada sifat reaksiyalari ham keltirilgan.", "ru": "Согласно карточке, такие металлы, как марганец и кадмий, присутствуют в организме как естественные микроэлементы, поэтому качественной реакции недостаточно — обязателен количественный анализ. Качественные реакции на эти элементы в карточке также приводятся.", "en": "Per the card, metals such as manganese and cadmium occur naturally in the body as trace elements, so a qualitative reaction is not enough and quantitation is mandatory. The card does list qualitative reactions for these elements."},
       "q": {"uz": "Nima uchun marganets yoki kadmiy topilganda miqdoriy tahlil majburiy?", "ru": "Почему при обнаружении марганца или кадмия обязательно количественное определение?", "en": "Why is quantitation mandatory when manganese or cadmium is found?"},
       "a": {"uz": "Ular organizmda tabiiy mikroelement sifatida uchraydi", "ru": "Они присутствуют в организме как естественные микроэлементы", "en": "They occur naturally in the body as trace elements"},
       "d": {

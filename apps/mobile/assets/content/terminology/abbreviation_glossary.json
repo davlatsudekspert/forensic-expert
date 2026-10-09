@@ -1,0 +1,224 @@
+{
+ "schema": "fe-abbreviation-glossary/1",
+ "note": "Short uz/ru/en explanations of the canonical abbreviations (canonical_terms.json) for the glossary sheet. Textbook-level definitions only, written by the editorial agent and NOT reviewed by a terminologist: every language is machine_draft until a reviewer signs off. 'see' points to app content that discusses the term with sources. Copied to apps/mobile/assets/content/terminology/ by content/terminology/sync_app_asset.py.",
+ "terms": [
+  {
+   "id": "A-PMI",
+   "abbreviation": "PMI",
+   "canonical_id": "pmi",
+   "related_term_id": "T-POSTMORTEM-INTERVAL",
+   "expansion": {
+    "uz": "o‘limdan keyin o‘tgan vaqt oralig‘i",
+    "ru": "посмертный интервал",
+    "en": "postmortem interval"
+   },
+   "explanation": {
+    "uz": "O‘limdan keyin o‘tgan vaqt. U aniq o‘lchanmaydi, balki o‘limdan keyingi o‘zgarishlar (sovish, murda dog‘lari, qotish), shishasimon tana kimyosi yoki hasharotlar bo‘yicha baholanadi va oraliq sifatida beriladi.",
+    "ru": "Время, прошедшее после смерти. Оно не измеряется точно, а оценивается по посмертным изменениям (охлаждение, трупные пятна, окоченение), химии стекловидного тела или насекомым и указывается как интервал.",
+    "en": "The time elapsed since death. It is never measured exactly but estimated from postmortem changes (cooling, lividity, rigor), vitreous chemistry or insect evidence, and is reported as an interval."
+   },
+   "status": {
+    "uz": "machine_draft",
+    "ru": "machine_draft",
+    "en": "machine_draft"
+   },
+   "see": [
+    "topic:fm-algor-mortis",
+    "topic:bio-vitreous-potassium",
+    "topic:ent-pmi-insects"
+   ]
+  },
+  {
+   "id": "A-PMR",
+   "abbreviation": "PMR",
+   "canonical_id": "pmr",
+   "related_term_id": "T-POSTMORTEM-REDISTRIBUTION",
+   "expansion": {
+    "uz": "o‘limdan keyingi qayta taqsimlanish",
+    "ru": "посмертное перераспределение",
+    "en": "postmortem redistribution"
+   },
+   "explanation": {
+    "uz": "O‘limdan keyin dori konsentratsiyasining qonda o‘zgarishi: modda ko‘p to‘plangan a’zolardan (o‘pka, jigar, miokard) yaqin qonga o‘tadi. Markaziy (yurak) qon periferik (son venasi) qonga nisbatan ko‘proq o‘zgaradi, shuning uchun talqinda periferik qon afzal.",
+    "ru": "Изменение концентрации лекарств в крови после смерти: вещество диффундирует из органов с высоким содержанием (лёгкие, печень, миокард) в соседнюю кровь. Центральная (сердечная) кровь изменяется сильнее периферической (бедренной), поэтому для интерпретации предпочтительна периферическая кровь.",
+    "en": "The change in blood drug concentrations after death as drug diffuses from organs with high content (lungs, liver, myocardium) into nearby blood. Central (cardiac) blood changes more than peripheral (femoral) blood, so peripheral blood is preferred for interpretation."
+   },
+   "status": {
+    "uz": "machine_draft",
+    "ru": "machine_draft",
+    "en": "machine_draft"
+   },
+   "see": [
+    "guideline:guideline.tox.postmortem_interpretation",
+    "topic:tox-postmortem-redistribution"
+   ]
+  },
+  {
+   "id": "A-GC-MS",
+   "abbreviation": "GC-MS",
+   "canonical_id": "gc_ms",
+   "related_term_id": "T-GC-MS",
+   "expansion": {
+    "uz": "gaz xromatografiyasi — mass-spektrometriya",
+    "ru": "газовая хроматография — масс-спектрометрия",
+    "en": "gas chromatography–mass spectrometry"
+   },
+   "explanation": {
+    "uz": "Gaz xromatografiyasi uchuvchan va issiqlikka chidamli moddalarni ajratadi, mass-spektrometr esa ularni fragmentlanish spektri va ushlanish vaqti bo‘yicha aniqlaydi. Toksikologiya va giyohvand moddalar tahlilida standart tasdiqlovchi usul.",
+    "ru": "Газовая хроматография разделяет летучие и термостабильные вещества, а масс-спектрометр идентифицирует их по спектру фрагментации и времени удерживания. Стандартный подтверждающий метод в токсикологии и анализе наркотиков.",
+    "en": "Gas chromatography separates volatile, heat-stable compounds and the mass spectrometer identifies them by their fragmentation spectrum and retention time. A standard confirmatory method in toxicology and drug analysis."
+   },
+   "status": {
+    "uz": "machine_draft",
+    "ru": "machine_draft",
+    "en": "machine_draft"
+   },
+   "see": [
+    "topic:method-gcms",
+    "guideline:guideline.chem.method_comparison"
+   ]
+  },
+  {
+   "id": "A-LC-MS-MS",
+   "abbreviation": "LC-MS/MS",
+   "canonical_id": "lc_ms_ms",
+   "related_term_id": "T-LC-MS-MS",
+   "expansion": {
+    "uz": "suyuqlik xromatografiyasi — tandem mass-spektrometriya",
+    "ru": "жидкостная хроматография — тандемная масс-спектрометрия",
+    "en": "liquid chromatography–tandem mass spectrometry"
+   },
+   "explanation": {
+    "uz": "Suyuqlik xromatografiyasi eritmadagi moddalarni, jumladan qutbli va issiqlikka chidamsizlarini ajratadi; ketma-ket ikki mass-analizator boshlang‘ich ion va uning mahsulot ionlarini tanlaydi. Tasdiq va miqdoriy aniqlash uchun yuqori selektiv va sezgir usul.",
+    "ru": "Жидкостная хроматография разделяет вещества в растворе, в том числе полярные и термолабильные; два последовательных масс-анализатора отбирают ион-предшественник и его ионы-продукты. Высокоселективный и чувствительный метод подтверждения и количественного определения.",
+    "en": "Liquid chromatography separates compounds in solution, including polar and heat-labile ones; two mass analysers in series select a precursor ion and its product ions. A highly selective and sensitive method for confirmation and quantitation."
+   },
+   "status": {
+    "uz": "machine_draft",
+    "ru": "machine_draft",
+    "en": "machine_draft"
+   },
+   "see": [
+    "topic:method-lcmsms",
+    "guideline:guideline.chem.method_comparison"
+   ]
+  },
+  {
+   "id": "A-HPLC",
+   "abbreviation": "HPLC",
+   "canonical_id": "hplc",
+   "related_term_id": "T-GMT-HIGH-PERFORMANCE-LIQUID-CHROMATOGRAPHY",
+   "expansion": {
+    "uz": "yuqori samarali suyuqlik xromatografiyasi",
+    "ru": "высокоэффективная жидкостная хроматография",
+    "en": "high-performance liquid chromatography"
+   },
+   "explanation": {
+    "uz": "Mayda zarrachali kolonkada yuqori bosim ostida ajratish; detektor odatda UB (diod-matritsali) yoki mass-spektrometr. Moddalarni ajratish va miqdorini aniqlash uchun ishlatiladi.",
+    "ru": "Разделение на колонке с мелкими частицами под высоким давлением; детектор обычно УФ (диодно-матричный) или масс-спектрометр. Применяется для разделения и количественного определения веществ.",
+    "en": "Separation on a column of fine particles under high pressure, usually with UV (diode-array) or mass-spectrometric detection. Used to separate and quantify substances."
+   },
+   "status": {
+    "uz": "machine_draft",
+    "ru": "machine_draft",
+    "en": "machine_draft"
+   },
+   "see": [
+    "guideline:guideline.chem.method_comparison"
+   ]
+  },
+  {
+   "id": "A-TLC",
+   "abbreviation": "TLC",
+   "canonical_id": "tlc",
+   "related_term_id": "T-GMT-THIN-LAYER-CHROMATOGRAPHY",
+   "expansion": {
+    "uz": "yupqa qatlamli xromatografiya",
+    "ru": "тонкослойная хроматография",
+    "en": "thin-layer chromatography"
+   },
+   "explanation": {
+    "uz": "Namuna sorbent (masalan, silikagel) qoplangan plastinkaga tomiziladi va erituvchi bilan ishlab chiqiladi; dog‘lar reaktiv yoki UB nur bilan ko‘rinadi. Skrining usuli: natija instrumental usul bilan tasdiqlanadi.",
+    "ru": "Пробу наносят на пластинку с сорбентом (например, силикагелем) и элюируют растворителем; пятна проявляют реактивами или в УФ-свете. Скрининговый метод: результат подтверждают инструментальным методом.",
+    "en": "The sample is spotted on a plate coated with a sorbent (e.g. silica gel) and developed with a solvent; spots are visualised with reagents or UV light. A screening method whose result is confirmed instrumentally."
+   },
+   "status": {
+    "uz": "machine_draft",
+    "ru": "machine_draft",
+    "en": "machine_draft"
+   },
+   "see": [
+    "guideline:guideline.chem.tlc_screening"
+   ]
+  },
+  {
+   "id": "A-RF",
+   "abbreviation": "Rf",
+   "canonical_id": "rf",
+   "expansion": {
+    "uz": "ushlanish koeffitsiyenti (harakatchanlik koeffitsiyenti)",
+    "ru": "коэффициент подвижности",
+    "en": "retardation factor"
+   },
+   "explanation": {
+    "uz": "TLC da dog‘ bosib o‘tgan masofaning erituvchi fronti masofasiga nisbati (0 dan 1 gacha). Plastinka, erituvchilar tizimi va sharoitga bog‘liq, shuning uchun faqat shu plastinkadagi standart bilan solishtiriladi.",
+    "ru": "В TLC — отношение пути, пройденного пятном, к пути фронта растворителя (от 0 до 1). Зависит от пластинки, системы растворителей и условий, поэтому сравнивается только со стандартом на той же пластинке.",
+    "en": "In TLC, the distance travelled by the spot divided by the distance travelled by the solvent front (0 to 1). It depends on the plate, solvent system and conditions, so it is compared only with a standard on the same plate."
+   },
+   "status": {
+    "uz": "machine_draft",
+    "ru": "machine_draft",
+    "en": "machine_draft"
+   },
+   "see": [
+    "guideline:guideline.chem.tlc_screening"
+   ]
+  },
+  {
+   "id": "A-VD",
+   "abbreviation": "Vd",
+   "canonical_id": "vd",
+   "expansion": {
+    "uz": "taqsimlanish hajmi",
+    "ru": "объём распределения",
+    "en": "volume of distribution"
+   },
+   "explanation": {
+    "uz": "Organizmdagi dori miqdorini uning plazmadagi konsentratsiyasi bilan bog‘lovchi shartli hajm (odatda L/kg). Katta Vd moddaning to‘qimalarga keng tarqalishini bildiradi va o‘limdan keyingi qayta taqsimlanish (PMR) kuchliroq bo‘lishi bilan bog‘liq.",
+    "ru": "Условный объём, связывающий количество лекарства в организме с его концентрацией в плазме (обычно в л/кг). Большой Vd означает широкое распределение в тканях и связан с более выраженным посмертным перераспределением (PMR).",
+    "en": "An apparent volume relating the amount of drug in the body to its plasma concentration (usually in L/kg). A large Vd means extensive distribution into tissues and is associated with more pronounced postmortem redistribution (PMR)."
+   },
+   "status": {
+    "uz": "machine_draft",
+    "ru": "machine_draft",
+    "en": "machine_draft"
+   },
+   "see": [
+    "guideline:guideline.tox.postmortem_interpretation"
+   ]
+  },
+  {
+   "id": "A-COHB",
+   "abbreviation": "COHb",
+   "canonical_id": "cohb",
+   "expansion": {
+    "uz": "karboksigemoglobin",
+    "ru": "карбоксигемоглобин",
+    "en": "carboxyhaemoglobin"
+   },
+   "explanation": {
+    "uz": "Uglerod oksidi bilan bog‘langan gemoglobin; umumiy gemoglobinning to‘yinish foizi sifatida ifodalanadi. Uglerod oksidi ta’sirining asosiy laboratoriya ko‘rsatkichi.",
+    "ru": "Гемоглобин, связанный с монооксидом углерода; выражается в процентах насыщения общего гемоглобина. Основной лабораторный показатель воздействия угарного газа.",
+    "en": "Haemoglobin bound to carbon monoxide, expressed as percent saturation of total haemoglobin. The main laboratory marker of carbon monoxide exposure."
+   },
+   "status": {
+    "uz": "machine_draft",
+    "ru": "machine_draft",
+    "en": "machine_draft"
+   },
+   "see": [
+    "guideline:guideline.chem.co_cohb_determination"
+   ]
+  }
+ ]
+}

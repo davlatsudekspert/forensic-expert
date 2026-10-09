@@ -241,7 +241,9 @@ class GlossaryTermBody extends ConsumerWidget {
     final tr = term.translation;
     final origLang = tr.originalLang;
     final showOriginal =
-        tr.original.trim().isNotEmpty && tr.original != term.textIn(origLang);
+        term.note == null &&
+        tr.original.trim().isNotEmpty &&
+        tr.original != term.textIn(origLang);
     final translated = tr.status.values.contains(TranslationStatus.translated);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -297,6 +299,14 @@ class GlossaryTermBody extends ConsumerWidget {
             icon: Icons.translate,
             tone: FeBannerTone.warning,
             text: l.glossaryMachineDraftNote,
+          ),
+        ],
+        if (term.explanationIn(lang) case final note?) ...[
+          FeSectionHeader(l.glossaryShortExplanation),
+          Text(
+            note,
+            key: const Key('glossary.explanation'),
+            style: t.bodyMedium?.copyWith(height: 1.45),
           ),
         ],
         const SizedBox(height: FeSpace.sm),

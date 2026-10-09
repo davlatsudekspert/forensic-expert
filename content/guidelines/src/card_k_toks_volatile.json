@@ -117,6 +117,7 @@
   "quiz": [
     {
       "id": "toks_vol_1",
+      "e": {"uz": "Ishqoriy birinchi distillyatga temir(II) sulfat qo‘shib qizdiriladi, so‘ng xlorid kislota bilan nordonlashtiriladi: ko‘k cho‘kma yoki eritma (Berlin zangorisi) sianid borligini ko‘rsatadi. Yodoform — etanol, izonitril va Fujivara reaksiyalari — alkilgalogenidlar uchun.", "ru": "К щелочному первому дистилляту добавляют сульфат железа(II), нагревают, затем подкисляют соляной кислотой: синий осадок или раствор (берлинская лазурь) указывает на цианид. Йодоформная проба относится к этанолу, изонитрильная и реакция Фудживары — к алкилгалогенидам.", "en": "Iron(II) sulfate is added to the alkaline first distillate, which is heated and then acidified with hydrochloric acid: a blue precipitate or solution (Prussian blue) indicates cyanide. The iodoform test belongs to ethanol; the isonitrile and Fujiwara reactions to alkyl halides."},
       "q": {"uz": "Birinchi distillyatda sianid qaysi reaksiya bilan aniqlanadi?", "ru": "Какой реакцией обнаруживают цианид в первом дистилляте?", "en": "Which reaction detects cyanide in the first distillate?"},
       "a": {"uz": "Berlin zangorisi hosil bo‘lishi (temir(II) sulfat, so‘ng HCl)", "ru": "Образование берлинской лазури (сульфат железа(II), затем HCl)", "en": "Prussian blue formation (iron(II) sulfate, then HCl)"},
       "d": {
@@ -128,6 +129,7 @@
     },
     {
       "id": "toks_vol_2",
+      "e": {"uz": "Kartaga ko‘ra kodein va konsentrlangan sulfat kislota bilan ko‘k-binafsha rang sezgir va musbat ahamiyatli. Ishqoriy rezorsin reaksiyasi manfiy ahamiyatli (oksidlovchilar va oqsil parchalanish mahsulotlari ham beradi); Feling suyuqligi faqat ko‘p miqdorda qaytariladi.", "ru": "Согласно карточке, сине-фиолетовая окраска с кодеином и концентрированной серной кислотой чувствительна и имеет положительное значение. Реакция со щелочным резорцином имеет отрицательное значение (её дают также окислители и продукты распада белков); жидкость Фелинга восстанавливается лишь при больших количествах.", "en": "Per the card, the blue-violet colour with codeine and concentrated sulfuric acid is sensitive and has positive significance. The alkaline resorcinol reaction is only of negative significance (oxidants and protein breakdown products also give it); Fehling's solution is reduced only by large amounts."},
       "q": {"uz": "Qaysi formaldegid reaksiyasi majmuada musbat (o‘ziga xosroq) ahamiyatli deb ko‘rsatilgan?", "ru": "Какая реакция на формальдегид указана в комплексе как реакция положительного значения?", "en": "Which formaldehyde reaction is described as having positive (more specific) value?"},
       "a": {"uz": "Kodein va konsentrlangan sulfat kislota bilan ko‘k-binafsha rang", "ru": "Сине-фиолетовая окраска с кодеином и концентрированной серной кислотой", "en": "Blue-violet colour with codeine and concentrated sulfuric acid"},
       "d": {
@@ -139,6 +141,7 @@
     },
     {
       "id": "toks_vol_3",
+      "e": {"uz": "Kartaga ko‘ra izonitril reaksiyasini xloroform va xloralgidrat beradi, 1,2-dixloretan esa bermaydi (u ishqoriy rezorsin bilan qizil rang ham bermaydi).", "ru": "Согласно карточке, изонитрильную пробу дают хлороформ и хлоралгидрат, а 1,2-дихлорэтан её не даёт (не даёт он и красной окраски со щелочным резорцином).", "en": "Per the card, chloroform and chloral hydrate give the isonitrile test, whereas 1,2-dichloroethane does not (nor does it give the red colour with alkaline resorcinol)."},
       "q": {"uz": "Qaysi modda izonitril reaksiyasini BERMAYDI?", "ru": "Какое вещество НЕ даёт изонитрильную пробу?", "en": "Which substance does NOT give the isocyanide test?"},
       "a": {"uz": "1,2-dixloretan", "ru": "1,2-дихлорэтан", "en": "1,2-dichloroethane"},
       "d": {
@@ -150,6 +153,7 @@
     },
     {
       "id": "toks_vol_4",
+      "e": {"uz": "Distillyatdan olingan efirli ajralma xona haroratida bug‘latiladi: xloralgidrat efir bilan uchmaydi, shuning uchun qoldiqda reaksiyalar musbat bo‘lsa — xloralgidrat, manfiy bo‘lsa — xloroform. Feling suyuqligi bilan reaksiyani ikkalasi ham beradi.", "ru": "Эфирное извлечение из дистиллята упаривают при комнатной температуре: хлоралгидрат не улетучивается с эфиром, поэтому положительные реакции с остатком означают хлоралгидрат, отрицательные — хлороформ. Реакцию с жидкостью Фелинга дают оба вещества.", "en": "The ether extract of the distillate is evaporated at room temperature: chloral hydrate does not evaporate with the ether, so positive reactions with the residue mean chloral hydrate and negative ones chloroform. Both substances react with Fehling's solution."},
       "q": {"uz": "Distillyatda xloroform va xloralgidrat qanday farqlanadi?", "ru": "Как различают хлороформ и хлоралгидрат в дистилляте?", "en": "How are chloroform and chloral hydrate distinguished in a distillate?"},
       "a": {"uz": "Efirli ajralma bug‘latiladi: qoldiqda reaksiya musbat bo‘lsa — xloralgidrat", "ru": "Эфирное извлечение упаривают: положительные реакции с остатком — хлоралгидрат", "en": "The ether extract is evaporated: positive reactions with the residue mean chloral hydrate"},
       "d": {
@@ -161,6 +165,7 @@
     },
     {
       "id": "toks_vol_5",
+      "e": {"uz": "Metilsalitsilat hidini etanol ham beradi, shuning uchun distillyatda etanol bo‘lsa metanol permanganat bilan formaldegidgacha oksidlanib, fuksin-sulfit kislota bilan aniqlanadi; oksidlashdan oldin distillyatdagi formaldegid yo‘qotiladi.", "ru": "Запах метилсалицилата даёт и этанол, поэтому при наличии этанола в дистилляте метанол окисляют перманганатом до формальдегида и обнаруживают фуксинсернистой кислотой; перед окислением формальдегид дистиллята удаляют.", "en": "Ethanol also produces the methyl salicylate odour, so when ethanol is present methanol is oxidized with permanganate to formaldehyde and detected with fuchsin–sulfurous acid; formaldehyde already in the distillate is removed before oxidation."},
       "q": {"uz": "Nima uchun distillyatda etanol bo‘lsa, metanol uchun salitsil kislotali reaksiya yetarli emas?", "ru": "Почему при наличии этанола реакции с салициловой кислотой недостаточно для метанола?", "en": "Why is the salicylic-acid test insufficient for methanol when ethanol is present?"},
       "a": {"uz": "Etanol ham o‘xshash murakkab efir hidini beradi; formaldegidgacha oksidlash kerak", "ru": "Этанол даёт похожий запах сложного эфира; нужно окисление до формальдегида", "en": "Ethanol gives a similar ester odour; oxidation to formaldehyde is needed"},
       "d": {
@@ -172,6 +177,7 @@
     },
     {
       "id": "toks_vol_6",
+      "e": {"uz": "Fenol bromli suv bilan oq tribromfenol cho‘kmasini beradi. Ko‘k indofenol rangi — fenolning boshqa reaksiyasi (anilin va xlorli ohak, so‘ng ammiak), qizil mis atsetilenidi — dixloretan, sariq yodoform — etanol reaksiyasi.", "ru": "Фенол с бромной водой даёт белый осадок трибромфенола. Синяя окраска индофенола — другая реакция фенола (анилин и хлорная известь, затем аммиак), красный ацетиленид меди — реакция на дихлорэтан, жёлтый йодоформ — на этанол.", "en": "Phenol gives a white tribromophenol precipitate with bromine water. The blue indophenol colour is a different phenol test (aniline and bleaching powder, then ammonia); red copper acetylide belongs to dichloroethane and yellow iodoform to ethanol."},
       "q": {"uz": "Fenol bromli suv bilan qanday natija beradi?", "ru": "Что даёт фенол с бромной водой?", "en": "What does phenol give with bromine water?"},
       "a": {"uz": "Oq tribromfenol cho‘kmasi", "ru": "Белый осадок трибромфенола", "en": "A white precipitate of tribromophenol"},
       "d": {
@@ -183,6 +189,7 @@
     },
     {
       "id": "toks_vol_7",
+      "e": {"uz": "Kartaga ko‘ra HCN va uning tuzlari murdada uzoq saqlanmaydi (gidroliz, rodanidga aylanish, qandlar bilan birikish), shuning uchun salbiy natija iste’molni istisno qilishga yetarli bo‘lmasligi mumkin. Sianid suv bug‘i bilan haydaladi — u birinchi distillyatda tekshiriladi.", "ru": "Согласно карточке, HCN и её соли недолго сохраняются в трупе (гидролиз, превращение в роданид, связывание с сахарами), поэтому отрицательный результат может быть недостаточен, чтобы исключить приём. Цианид перегоняется с водяным паром — его исследуют в первом дистилляте.", "en": "Per the card, HCN and its salts do not persist long in a body (hydrolysis, conversion to thiocyanate, binding to sugars), so a negative result may not be enough to exclude intake. Cyanide does distil with steam — it is tested in the first distillate."},
       "q": {"uz": "Sianid uchun manfiy natija nima uchun iste’mol bo‘lmaganini isbotlamaydi?", "ru": "Почему отрицательный результат на цианид не доказывает отсутствия поступления?", "en": "Why does a negative cyanide result not prove there was no exposure?"},
       "a": {"uz": "Sianid murdada va saqlangan namunada tez o‘zgaradi va kamayadi", "ru": "Цианид быстро изменяется и убывает в трупе и хранящихся образцах", "en": "Cyanide changes and declines quickly in bodies and stored specimens"},
       "d": {
@@ -194,6 +201,7 @@
     },
     {
       "id": "toks_vol_8",
+      "e": {"uz": "Majmuaga ko‘ra spirtlar alkilnitritlarga o‘tkazilib bug‘-gaz fazasi tahlil qilinadi, miqdor esa ichki standart (propanol) bilan kalibrlash grafigi orqali hisoblanadi. Metanol — aniqlanadigan spirtlardan biri, shuning uchun ichki standart bo‘la olmaydi.", "ru": "Согласно пособию, спирты переводят в алкилнитриты и анализируют паровую фазу, а количество рассчитывают по градуировочному графику с внутренним стандартом (пропанолом). Метанол — один из определяемых спиртов, поэтому внутренним стандартом быть не может.", "en": "Per the manual, alcohols are converted to alkyl nitrites and the headspace is analysed, with quantitation by a calibration curve using an internal standard (propanol). Methanol is one of the target alcohols, so it cannot serve as the internal standard."},
       "q": {"uz": "Majmuada spirtlarni qon va siydikdan GC bilan aniqlashda ichki standart sifatida nima olinadi?", "ru": "Что используют как внутренний стандарт при GC-определении спиртов в крови и моче по комплексу?", "en": "What internal standard does the teaching complex use for GC of alcohols in blood and urine?"},
       "a": {"uz": "Propil spirti (propilnitrit holida)", "ru": "Пропиловый спирт (в виде пропилнитрита)", "en": "Propanol (as propyl nitrite)"},
       "d": {
