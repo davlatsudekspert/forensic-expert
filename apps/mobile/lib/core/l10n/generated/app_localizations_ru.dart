@@ -6192,4 +6192,13 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get sectionComputedProperties => 'Вычисленные свойства';
+
+  @override
+  String imageAttrPubchemRdkit(String cid) {
+    return 'Структура построена по SMILES из PubChem CID $cid с помощью RDKit';
+  }
+
+  @override
+  String get imageAttrOriginalSchematic =>
+      'Оригинальная схема — FORENSIC EXPERT';
 }

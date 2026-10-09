@@ -6175,4 +6175,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get sectionComputedProperties => 'Computed properties';
+
+  @override
+  String imageAttrPubchemRdkit(String cid) {
+    return 'Structure drawn from PubChem CID $cid SMILES with RDKit';
+  }
+
+  @override
+  String get imageAttrOriginalSchematic =>
+      'Original schematic — FORENSIC EXPERT';
 }

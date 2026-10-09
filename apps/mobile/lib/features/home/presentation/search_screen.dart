@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../app/guidelines.dart';
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../app/search_service.dart';
@@ -20,6 +21,7 @@ import '../../../domain/catalog/tools_catalog.dart';
 import '../../../domain/ports/billing_ports.dart';
 import '../../disciplines/discipline_strings.dart';
 import '../../evidence/evidence_strings.dart';
+import '../../tools/tool_strings.dart';
 
 /// Global Search.
 ///
@@ -259,6 +261,7 @@ class _Results extends ConsumerWidget {
     final library = ref.watch(libraryRepositoryProvider);
     final knowledge = ref.watch(knowledgeRepositoryProvider);
     final evidence = ref.watch(evidenceDataProvider);
+    final guidelines = ref.watch(guidelinesProvider).value;
     final lang = Localizations.localeOf(context).languageCode;
     final unlocked = AccessPolicy.unlocks(
       ProductFeature.globalSearch,
@@ -309,6 +312,30 @@ class _Results extends ConsumerWidget {
     String? rowStatus(ScientificStatus s) =>
         sharedStatus == null ? statusLabel(s) : null;
 
+    /// Natija sarlavhasi. Moslik **sinonim** bo‘yicha bo‘lsa — o‘sha sinonim
+    /// (nima topilgani ko‘rinadi). Moslik yozuv nomining **boshqa tildagi
+    /// tarjimasi** bo‘lsa (masalan uz rejimida «Алкоголь в крови») — joriy
+    /// tildagi nom; vositalar nomi har doim joriy tilda.
+    String titleOf(SearchGroup g, SearchHit hit) {
+      final m = hit.matchedTerm;
+      if (g == SearchGroup.tools) {
+        if (ToolsCatalog.byId(hit.entityId) case final t?) return l.toolName(t);
+      }
+      // Yo‘riqnoma kalit so‘z bo‘yicha topilsa ham sarlavhasi ko‘rinadi
+      // (aks holda bir nechta qator shunchaki «alkogol», «etanol» edi).
+      if (g == SearchGroup.guidelines) {
+        if (guidelines?.byId(hit.entityId) case final card?) {
+          return card.title.pick(lang).text;
+        }
+      }
+      final name =
+          library.byId(hit.entityId)?.name ??
+          knowledge.byId(hit.entityId)?.name;
+      if (name == null) return m;
+      final local = name.resolve(lang);
+      return name.values.values.contains(m) ? local : m;
+    }
+
     /// Natija nima ekanini aniq ko‘rsatadi: kategoriya · (asosiy yozuv) ·
     /// manba turi / dalil darajasi · review holati.
     String metaOf(SearchGroup g, SearchHit hit) {
@@ -329,14 +356,14 @@ class _Results extends ConsumerWidget {
         parts.add(
           hit.category == SearchCategory.metabolite
               ? l.searchMetaboliteOf(name)
-              : (name.toLowerCase() != hit.matchedTerm.toLowerCase()
+              : (name.toLowerCase() != titleOf(g, hit).toLowerCase()
                     ? name
                     : groupTitle(g)),
         );
         if (rowStatus(e.status) case final st?) parts.add(st);
       } else if (knowledge.byId(hit.entityId) case final k?) {
         final name = k.name.resolve(lang);
-        if (name.toLowerCase() != hit.matchedTerm.toLowerCase()) {
+        if (name.toLowerCase() != titleOf(g, hit).toLowerCase()) {
           parts.add(name);
         }
         parts.add(groupTitle(g));
@@ -414,7 +441,7 @@ class _Results extends ConsumerWidget {
                   // chiqishi mumkin — kalit takrorlanmasligi kerak.
                   key: hitKey(g, hit.entityId),
                   icon: groupIcon(g),
-                  title: hit.matchedTerm,
+                  title: titleOf(g, hit),
                   meta: metaOf(g, hit),
                   isTestData:
                       hit.entityId.startsWith('TEST-') ||

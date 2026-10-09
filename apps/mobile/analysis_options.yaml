@@ -10,6 +10,7 @@ analyzer:
     - android/**
     - ios/**
     - lib/core/l10n/generated/**
+    - linux/**
 
 linter:
   rules:

@@ -11,7 +11,16 @@ import '../../../core/l10n/generated/app_localizations.dart';
 /// tildagi nomga aylantiradi. Erkin matnli joylashuv (sarlavha, sahifa,
 /// raqamli bo‘lim) o‘zgarmaydi.
 String localizedSectionName(AppLocalizations l, String locator) {
-  final key = locator.trim().replaceAll(RegExp(r'[:.]$'), '').toUpperCase();
+  final trimmed = locator.trim();
+  // Sarlavhasiz kirish qismi (manba pipeline’i yozgan inglizcha izoh).
+  if (trimmed.toLowerCase().startsWith('(untitled opening section')) {
+    return l.sectionIntroduction;
+  }
+  // «1. Introduction» → «Introduction» (raqamli prefiks faqat moslash uchun).
+  final key = trimmed
+      .replaceFirst(RegExp(r'^\d+(\.\d+)*\.?\s+'), '')
+      .replaceAll(RegExp(r'[:.]$'), '')
+      .toUpperCase();
   return switch (key) {
     'ABSTRACT' => l.sectionAbstract,
     'INTRO' || 'INTRODUCTION' => l.sectionIntroduction,

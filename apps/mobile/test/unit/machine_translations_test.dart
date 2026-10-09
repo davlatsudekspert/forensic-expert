@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
 import 'package:forensic_expert/domain/evidence/machine_translations.dart';
+import 'package:forensic_expert/features/evidence/presentation/scientific_image.dart';
 import 'package:forensic_expert/features/evidence/presentation/source_quote.dart';
 
 const _src = 'Methanol oxidation leads to the formation of formaldehyde.';
@@ -83,13 +84,41 @@ void main() {
         'Вычисленные свойства',
       );
       expect(localizedSectionRef(uz, 'METHODS'), '§ Usullar');
-      for (final free in [
-        '3. Toxicokinetic',
-        'Metabolism of APAP',
-        "(untitled opening section, before 'ADH Variants')",
-      ]) {
+      for (final free in ['3. Toxicokinetic', 'Metabolism of APAP']) {
         expect(localizedSectionName(uz, free), free);
       }
+      // Real-ilova QA (2026-10-09): pipeline izohi va raqamli standart
+      // bo‘limlar ham lokallashtiriladi.
+      expect(
+        localizedSectionName(
+          uz,
+          "(untitled opening section, before 'ADH Variants')",
+        ),
+        'Kirish',
+      );
+      expect(localizedSectionName(uz, '1. Introduction'), 'Kirish');
     });
+  });
+
+  group('rasm atribusiyasi (real-ilova QA)', () {
+    test(
+      'standart shablonlar lokallashtiriladi, boshqalar o‘zgarmaydi',
+      () async {
+        final uz = await AppLocalizations.delegate.load(const Locale('uz'));
+        expect(
+          localizedAttribution(
+            uz,
+            'Structure drawn from PubChem CID 702 SMILES with RDKit',
+          ),
+          'Struktura PubChem CID 702 SMILES asosida RDKit bilan chizilgan',
+        );
+        expect(
+          localizedAttribution(uz, 'Original schematic — FORENSIC EXPERT'),
+          'Asl sxema — FORENSIC EXPERT',
+        );
+        const other = 'Bertol E et al., Journal of enzyme inhibition';
+        expect(localizedAttribution(uz, other), other);
+      },
+    );
   });
 }

@@ -11066,6 +11066,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Computed properties'**
   String get sectionComputedProperties;
+
+  /// Attribution of a computed structure image (PubChem SMILES rendered with RDKit).
+  ///
+  /// In en, this message translates to:
+  /// **'Structure drawn from PubChem CID {cid} SMILES with RDKit'**
+  String imageAttrPubchemRdkit(String cid);
+
+  /// Attribution of an original schematic drawn by the app team.
+  ///
+  /// In en, this message translates to:
+  /// **'Original schematic — FORENSIC EXPERT'**
+  String get imageAttrOriginalSchematic;
 }
 
 class _AppLocalizationsDelegate

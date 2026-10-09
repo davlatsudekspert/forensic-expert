@@ -101,6 +101,12 @@ class _LibrarySectionScreenState extends ConsumerState<LibrarySectionScreen> {
     final lang = Localizations.localeOf(context).languageCode;
     final all = repo.entries(_section);
     final entries = all.where(_matches).toList();
+    // Moddalar joriy tildagi nom bo‘yicha alifbo tartibida (paket inglizcha
+    // nom bo‘yicha tartiblangan: uz’da «Margimush…» «Amfetamin»dan keyin edi).
+    if (_section == LibrarySection.substances) {
+      String key(LibraryEntry e) => e.name.resolve(lang).toLowerCase();
+      entries.sort((a, b) => key(a).compareTo(key(b)));
+    }
     final groups = _section == LibrarySection.substances
         ? ({for (final e in all) ?e.group}.toList()..sort(
             (a, b) =>

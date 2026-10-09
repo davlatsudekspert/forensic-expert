@@ -6164,4 +6164,12 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get sectionComputedProperties => 'Hisoblangan xossalar';
+
+  @override
+  String imageAttrPubchemRdkit(String cid) {
+    return 'Struktura PubChem CID $cid SMILES asosida RDKit bilan chizilgan';
+  }
+
+  @override
+  String get imageAttrOriginalSchematic => 'Asl sxema — FORENSIC EXPERT';
 }
