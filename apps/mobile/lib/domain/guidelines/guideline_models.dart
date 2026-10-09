@@ -323,6 +323,7 @@ class GuidelineCard {
     this.relatedToolIds = const [],
     this.access = GuidelineAccess.free,
     this.quiz = const [],
+    this.termIds = const [],
   });
 
   factory GuidelineCard.fromJson(Map<String, Object?> j) {
@@ -362,6 +363,10 @@ class GuidelineCard {
         for (final q in (j['quiz'] as List? ?? const []))
           ?GuidelineQuizItem.fromJson(q),
       ],
+      termIds: [
+        for (final t in (j['term_ids'] as List? ?? const []))
+          if ('$t'.trim().isNotEmpty) '$t'.trim(),
+      ],
     );
   }
 
@@ -392,6 +397,10 @@ class GuidelineCard {
 
   /// O‘quv rejimi uchun savollar (bo‘lmasa — bo‘sh).
   final List<GuidelineQuizItem> quiz;
+
+  /// «Ilmiy lug‘at» atamalari (`term_translations.term_id`) — kartada
+  /// ishlatilgan atamalarning aniq ro‘yxati (`content/tools/toks_terms.py`).
+  final List<String> termIds;
 
   bool get isFree => access == GuidelineAccess.free;
 

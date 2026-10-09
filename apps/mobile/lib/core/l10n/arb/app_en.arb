@@ -9064,5 +9064,85 @@
         "type": "String"
       }
     }
+  },
+  "glossaryTitle": "Scientific glossary",
+  "@glossaryTitle": {
+    "description": "Scientific glossary screen title and Library hub tile."
+  },
+  "glossaryIntro": "Terms in Uzbek, Russian and English. Translations remain machine drafts until a terminologist reviews them.",
+  "@glossaryIntro": {
+    "description": "Short note at the top of the glossary."
+  },
+  "glossaryFilterHint": "Filter terms (uz, ru, en)",
+  "@glossaryFilterHint": {
+    "description": "Filter field hint in the glossary (any of the three languages)."
+  },
+  "glossaryEmpty": "No terms match the filter.",
+  "@glossaryEmpty": {
+    "description": "Glossary: nothing matches the filter."
+  },
+  "glossaryMachineDraft": "Machine translation — not verified",
+  "@glossaryMachineDraft": {
+    "description": "Badge on a machine-translated (unverified) term."
+  },
+  "glossaryMachineDraftNote": "These translations were produced automatically and have not been checked by a terminologist. Use them for orientation; for reports, check the term in an authoritative source.",
+  "@glossaryMachineDraftNote": {
+    "description": "Explanation under a machine-translated term."
+  },
+  "glossaryStatusTranslated": "Translated — not reviewed",
+  "@glossaryStatusTranslated": {
+    "description": "Badge: translated by a person but not yet reviewed."
+  },
+  "glossaryStatusReviewed": "Reviewed translation",
+  "@glossaryStatusReviewed": {
+    "description": "Badge: translation reviewed by a terminologist."
+  },
+  "glossaryOriginal": "In the source ({language}): {term}",
+  "@glossaryOriginal": {
+    "description": "Term detail: the form used in the source and its language.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      },
+      "term": {
+        "type": "String"
+      }
+    }
+  },
+  "glossaryKindTerm": "Term",
+  "@glossaryKindTerm": {
+    "description": "Glossary entry kind."
+  },
+  "glossaryKindAbbreviation": "Abbreviation",
+  "@glossaryKindAbbreviation": {
+    "description": "Glossary entry kind."
+  },
+  "glossaryKindIdentifier": "Identifier",
+  "@glossaryKindIdentifier": {
+    "description": "Glossary entry kind."
+  },
+  "glossaryKindFormula": "Formula",
+  "@glossaryKindFormula": {
+    "description": "Glossary entry kind."
+  },
+  "glossaryUsedIn": "Used in guideline cards",
+  "@glossaryUsedIn": {
+    "description": "Term detail: guideline cards that use the term."
+  },
+  "glossaryNoCards": "Not linked to a guideline card yet.",
+  "@glossaryNoCards": {
+    "description": "Term detail: the term is not linked to a guideline card."
+  },
+  "glossaryOpenInGlossary": "Open in glossary",
+  "@glossaryOpenInGlossary": {
+    "description": "Action in the term sheet: open the full glossary entry."
+  },
+  "guidelineTerms": "Terms",
+  "@guidelineTerms": {
+    "description": "Guideline card section listing glossary terms."
+  },
+  "guidelineTermsHint": "Tap a term to see it in Uzbek, Russian and English.",
+  "@guidelineTermsHint": {
+    "description": "Hint under the Terms section of a guideline card."
   }
 }

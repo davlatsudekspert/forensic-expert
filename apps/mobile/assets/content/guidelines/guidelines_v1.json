@@ -2094,6 +2094,21 @@
     "en": "DRAFT"
    },
    "related_tool_ids": [],
+   "term_ids": [
+    "T-TOKS-STEAM-DISTILLATION",
+    "T-TOKS-DISTILLATE",
+    "T-TOKS-MINERALIZATION",
+    "T-TOKS-DIALYSIS",
+    "T-TOKS-EXTRACTION",
+    "T-TOKS-EXTRACTANT",
+    "T-TOKS-BACK-EXTRACTION",
+    "T-TOKS-PARTITION-COEFFICIENT",
+    "T-TOKS-SALTING-OUT",
+    "T-TOKS-AZEOTROPE",
+    "T-TOKS-ACIDIFIED-WATER-METHOD",
+    "T-TOKS-STAS-OTTO-METHOD",
+    "T-TOKS-VOLATILE-POISONS"
+   ],
    "title": {
     "uz": "Zaharli moddalarni biologik ob’ektdan ajratib olish: suv bug‘i bilan haydash va qutbli erituvchilar",
     "ru": "Изолирование ядовитых веществ из биологического объекта: перегонка с водяным паром и полярные растворители",
@@ -2509,6 +2524,18 @@
     "en": "DRAFT"
    },
    "related_tool_ids": [],
+   "term_ids": [
+    "T-TOKS-MINERALIZATION",
+    "T-TOKS-MINERALIZATE",
+    "T-TOKS-DENITRATION",
+    "T-TOKS-DESTRUCTION",
+    "T-TOKS-FRACTIONAL-METHOD",
+    "T-TOKS-MASKING",
+    "T-TOKS-BACK-EXTRACTION",
+    "T-TOKS-DITHIZONE",
+    "T-TOKS-DIETHYLDITHIOCARBAMATE",
+    "T-TOKS-METAL-POISONS"
+   ],
    "title": {
     "uz": "Metall zaharlar uchun mineralizatsiya, denitratsiya va kasrli usul",
     "ru": "Минерализация, денитрация и дробный метод при исследовании на металлические яды",
@@ -3188,6 +3215,20 @@
     "en": "DRAFT"
    },
    "related_tool_ids": [],
+   "term_ids": [
+    "T-TOKS-METAL-POISONS",
+    "T-TOKS-MINERALIZATION",
+    "T-TOKS-MINERALIZATE",
+    "T-TOKS-DESTRUCTION",
+    "T-TOKS-FRACTIONAL-METHOD",
+    "T-TOKS-MASKING",
+    "T-TOKS-MARSH-TEST",
+    "T-TOKS-SANGER-BLACK-TEST",
+    "T-TOKS-DITHIZONE",
+    "T-TOKS-DIETHYLDITHIOCARBAMATE",
+    "T-TOKS-NEGATIVE-VALUE-REACTION",
+    "T-TOKS-MICROCRYSTAL-TEST"
+   ],
    "title": {
     "uz": "Metall zaharlar: mishyak, simob, qo‘rg‘oshin, bariy va boshqalarni aniqlash reaksiyalari",
     "ru": "Металлические яды: реакции обнаружения мышьяка, ртути, свинца, бария и других элементов",
@@ -3649,6 +3690,17 @@
     "en": "DRAFT"
    },
    "related_tool_ids": [],
+   "term_ids": [
+    "T-TOKS-VOLATILE-POISONS",
+    "T-TOKS-STEAM-DISTILLATION",
+    "T-TOKS-DISTILLATE",
+    "T-TOKS-AZEOTROPE",
+    "T-TOKS-PRUSSIAN-BLUE",
+    "T-TOKS-ISOCYANIDE-TEST",
+    "T-TOKS-FUJIWARA-REACTION",
+    "T-TOKS-FUCHSIN-SULFUROUS-ACID",
+    "T-TOKS-NEGATIVE-VALUE-REACTION"
+   ],
    "title": {
     "uz": "Uchuvchi zaharlar: sianidlar, formaldegid, spirtlar, galogenli birikmalar va fenolning asosiy reaksiyalari",
     "ru": "Летучие яды: основные реакции на цианиды, формальдегид, спирты, галогенпроизводные и фенол",
@@ -4144,6 +4196,18 @@
     "en": "DRAFT"
    },
    "related_tool_ids": [],
+   "term_ids": [
+    "T-TOKS-ORGANOPHOSPHORUS",
+    "T-TOKS-ORGANOCHLORINE",
+    "T-TOKS-SYNTHETIC-PYRETHROIDS",
+    "T-TOKS-CHOLINESTERASE",
+    "T-TOKS-MOLYBDENUM-BLUE",
+    "T-TOKS-EXTRACTION",
+    "T-TOKS-SALTING-OUT",
+    "T-TOKS-MICROCRYSTAL-TEST",
+    "T-TOKS-NEGATIVE-VALUE-REACTION",
+    "T-TOKS-PHYSICAL-EVIDENCE"
+   ],
    "title": {
     "uz": "Pestitsidlar: fosfororganik va xlororganik birikmalarni skrining va instrumental tasdiqlash",
     "ru": "Пестициды: скрининг и инструментальное подтверждение фосфорорганических и хлорорганических соединений",

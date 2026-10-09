@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../app/glossary.dart';
 import '../../../app/guidelines.dart';
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
@@ -117,6 +118,11 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
     final route = switch (group) {
       SearchGroup.guidelines => Routes.homeGuideline(id),
       SearchGroup.tools => Routes.homeTool(id),
+      // «Ilmiy lug‘at» atamasi — lug‘at yozuvi (Home tabi ichida).
+      SearchGroup.learning
+          when hit.category == SearchCategory.glossary &&
+              ref.read(glossaryProvider).byId(id) != null =>
+        Routes.homeGlossaryTerm(id),
       // Glossariy yozuvi — o‘z sahifasi; kurslar — Ta’lim bo‘limi.
       SearchGroup.learning when library.byId(id) != null =>
         Routes.homeSubstance(id),
@@ -263,6 +269,7 @@ class _Results extends ConsumerWidget {
     final knowledge = ref.watch(knowledgeRepositoryProvider);
     final evidence = ref.watch(evidenceDataProvider);
     final guidelines = ref.watch(guidelinesProvider).value;
+    final glossary = ref.watch(glossaryProvider);
     final lang = Localizations.localeOf(context).languageCode;
     final unlocked = AccessPolicy.unlocks(
       ProductFeature.globalSearch,
@@ -343,6 +350,10 @@ class _Results extends ConsumerWidget {
           return card.title.pick(lang).text;
         }
       }
+      if (glossary.byId(hit.entityId) case final term?) {
+        final local = term.textIn(lang);
+        return term.translation.localized.values.contains(m) ? local : m;
+      }
       final name =
           library.byId(hit.entityId)?.name ??
           knowledge.byId(hit.entityId)?.name;
@@ -366,6 +377,12 @@ class _Results extends ConsumerWidget {
           ..add(l.researchKindName(r.kind))
           ..add(l.researchEvidence(r.evidenceLevel));
         if (rowStatus(r.status) case final st?) parts.add(st);
+      } else if (glossary.byId(hit.entityId) case final term?) {
+        parts.add(l.glossaryTitle);
+        // Boshqa tilda topilgan bo‘lsa — nima topilgani ham ko‘rinadi.
+        final m = hit.matchedTerm;
+        if (m.toLowerCase() != titleOf(g, hit).toLowerCase()) parts.add(m);
+        if (term.hasMachineDraft) parts.add(l.glossaryMachineDraft);
       } else if (library.byId(hit.entityId) case final e?) {
         final name = e.name.resolve(lang);
         parts.add(
