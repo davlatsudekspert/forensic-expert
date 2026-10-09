@@ -12482,6 +12482,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Verbatim from the source, kept for traceability (OCR errors not corrected).'**
   String get reagentOriginalHint;
+
+  /// Reuse status chip: licence required, but written permission from the owner/author is on record.
+  ///
+  /// In en, this message translates to:
+  /// **'USED WITH PERMISSION'**
+  String get reusePermissionGranted;
 }
 
 class _AppLocalizationsDelegate

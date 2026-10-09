@@ -7033,4 +7033,7 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get reagentOriginalHint =>
       'Manbadan so‘zma-so‘z, kuzatuvchanlik uchun (OCR xatolari tuzatilmagan).';
+
+  @override
+  String get reusePermissionGranted => 'RUXSAT BILAN';
 }

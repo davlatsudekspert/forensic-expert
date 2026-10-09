@@ -83,6 +83,7 @@ class SourceView {
     this.sourceVersion,
     this.language,
     this.authors = const [],
+    this.licenseAgreementId,
   });
 
   final String sourceId;
@@ -117,6 +118,13 @@ class SourceView {
   /// Mualliflar (kontent paketidagi `authors_json`; bo‘lmasa — bo‘sh).
   final List<String> authors;
 
+  /// Litsenziya/ruxsat qaydi (masalan, egasi yoki muallif yozma ruxsati).
+  final String? licenseAgreementId;
+
+  /// Litsenziya talab qilinadi, lekin ruxsat allaqachon olingan.
+  bool get usedWithPermission =>
+      reuseStatus == ReuseStatus.licenseRequired && licenseAgreementId != null;
+
   bool get isRetracted =>
       lifecycle == SourceLifecycle.retracted ||
       lifecycle == SourceLifecycle.withdrawn;
@@ -146,6 +154,7 @@ class SourceView {
     sourceVersion: sourceVersion,
     language: language,
     authors: authors,
+    licenseAgreementId: licenseAgreementId,
   );
 }
 

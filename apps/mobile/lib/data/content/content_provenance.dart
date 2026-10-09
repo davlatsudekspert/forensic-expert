@@ -306,6 +306,10 @@ class ContentProvenance {
         ],
         _ => const [],
       },
+      licenseAgreementId: switch (s['license_agreement_id']) {
+        final String a when a.trim().isNotEmpty => a.trim(),
+        _ => null,
+      },
     );
   }
 

@@ -61,6 +61,9 @@ k("reagentOriginalHint", "Reagent page: hint under the original text heading.",
   "Дословно из источника, для прослеживаемости (ошибки распознавания не исправлены).",
   "Manbadan so‘zma-so‘z, kuzatuvchanlik uchun (OCR xatolari tuzatilmagan).")
 
+k("reusePermissionGranted", "Reuse status chip: licence required, but written permission from the owner/author is on record.",
+  "USED WITH PERMISSION", "ИСПОЛЬЗУЕТСЯ С РАЗРЕШЕНИЯ", "RUXSAT BILAN")
+
 # Eski kalitlar (idempotent tozalash).
 OLD = ["reagentUnitDrop"]
 

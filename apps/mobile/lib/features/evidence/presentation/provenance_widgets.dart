@@ -329,8 +329,12 @@ class _SourceProvenanceBlock extends StatelessWidget {
                 ),
               StatusChip(
                 icon: Icons.copyright_outlined,
-                label: l.reuseLabel(source.reuseStatus),
-                color: source.reuseStatus == ReuseStatus.licenseRequired
+                label: source.usedWithPermission
+                    ? l.reusePermissionGranted
+                    : l.reuseLabel(source.reuseStatus),
+                color:
+                    source.reuseStatus == ReuseStatus.licenseRequired &&
+                        !source.usedWithPermission
                     ? c.warning
                     : c.textSecondary,
               ),

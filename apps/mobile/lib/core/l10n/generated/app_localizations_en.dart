@@ -7051,4 +7051,7 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get reagentOriginalHint =>
       'Verbatim from the source, kept for traceability (OCR errors not corrected).';
+
+  @override
+  String get reusePermissionGranted => 'USED WITH PERMISSION';
 }

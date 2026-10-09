@@ -7085,4 +7085,7 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get reagentOriginalHint =>
       'Дословно из источника, для прослеживаемости (ошибки распознавания не исправлены).';
+
+  @override
+  String get reusePermissionGranted => 'ИСПОЛЬЗУЕТСЯ С РАЗРЕШЕНИЯ';
 }

@@ -64,8 +64,9 @@ class ContentDbWriter {
           'INSERT INTO sources (source_id, source_type, title, authors_json, '
           'organization, journal, publication_year, edition, doi, pmid, '
           'official_url, accessed_date, tier, evidence_level, license_mode, '
-          'identifier_verified, review_status, is_test_data) '
-          'VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
+          'license_agreement_id, identifier_verified, review_status, '
+          'is_test_data) '
+          'VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
           [
             s.sourceId,
             BundleCodec.sourceTypeCode(s.sourceType),
@@ -82,6 +83,7 @@ class ContentDbWriter {
             s.tier.index + 1,
             s.evidenceLevel.code,
             s.licenseMode.name,
+            s.licenseAgreementId,
             s.identifierVerified ? 1 : 0,
             ScientificStatus.needsReview.code,
             s.isTestData ? 1 : 0,
