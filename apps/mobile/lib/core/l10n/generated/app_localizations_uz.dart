@@ -6829,4 +6829,71 @@ class AppLocalizationsUz extends AppLocalizations {
   String rdGuidelineMeta(int sections, String refs) {
     return '$sections bo‘lim · $refs';
   }
+
+  @override
+  String get toolBeerLambertName => 'Buger–Lambert–Ber qonuni (A = ε·l·c)';
+
+  @override
+  String get toolBeerLambertDesc =>
+      'A = ε·l·c bo‘yicha optik zichlik, konsentratsiya yoki yutilish koeffitsientini topish — molyar yoki massaviy asosda, birliklar bilan.';
+
+  @override
+  String get calcBeerAbsorbance => 'Optik zichlik';
+
+  @override
+  String get calcBeerAbsorptivityMolar => 'Molyar yutilish koeffitsienti';
+
+  @override
+  String get calcBeerAbsorptivityMass =>
+      'Solishtirma (massaviy) yutilish koeffitsienti';
+
+  @override
+  String get calcBeerConcentration => 'Konsentratsiya';
+
+  @override
+  String get calcBeerPath => 'Kyuveta qalinligi (l)';
+
+  @override
+  String get calcBeerResultUnit => 'Natija birligi (c)';
+
+  @override
+  String get calcBeerBasis => 'Yutilish koeffitsienti asosi';
+
+  @override
+  String get calcBeerBasisMolar => 'Molyar (ε, mol/L)';
+
+  @override
+  String get calcBeerBasisMass => 'Massaviy (a, g/L)';
+
+  @override
+  String get calcBeerFormulaNote =>
+      'A — optik zichlik (o‘lchamsiz); ε — molyar yutilish koeffitsienti, L·mol⁻¹·cm⁻¹ (yoki a — massaviy, L·g⁻¹·cm⁻¹); l — kyuveta qalinligi, cm; c — konsentratsiya, mol/L (yoki g/L).';
+
+  @override
+  String get calcBeerErrorBasis =>
+      'Konsentratsiya birligi koeffitsient asosiga mos emas: molyar ε bilan — mol/L, massaviy a bilan — g/L turidagi birliklar.';
+
+  @override
+  String get calcBeerAssumptionDefinition =>
+      'Ta’rifiy munosabat: optik zichlik kyuveta qalinligi va konsentratsiyaga proporsional. Ilovada koeffitsient qiymatlari yo‘q — qiymatni o‘z kalibrlashingizdan yoki tekshirilgan manbadan, xuddi shu to‘lqin uzunligi, erituvchi va pH uchun kiriting.';
+
+  @override
+  String get calcBeerAssumptionBlank =>
+      'A — tanlangan to‘lqin uzunligida bo‘sh (reagent yoki matritsa) namunaga nisbatan tuzatilgan namuna optik zichligi.';
+
+  @override
+  String get calcBeerLimitationLinear =>
+      'Faqat chiziqlilik kalibrlash bilan ko‘rsatilgan ishchi oraliqda amal qiladi; ICH Q2(R2) §3.2.2.1 oraliq bo‘ylab kamida beshta konsentratsiyani tavsiya qiladi. Undan tashqarida namunani suyultiring yoki kalibrlash grafigidan foydalaning.';
+
+  @override
+  String get calcBeerLimitationIdentity =>
+      'Optik zichlik moddani identifikatsiya qilmaydi. UB-ko‘rinadigan spektrofotometriyaning o‘ziga xosligi past; modda boshqa usul bilan (masalan, xromatografiya va mass-spektrometriya) tasdiqlanishi kerak.';
+
+  @override
+  String get calcBeerReference =>
+      'IUPAC Gold Book: «Beer–Lambert law», doi:10.1351/goldbook.B00626 · Swinehart DF. The Beer-Lambert law. J Chem Educ 1962;39(7):333, doi:10.1021/ed039p333 · Chiziqlilik: ICH Q2(R2) (2023), §3.2.2.1.';
+
+  @override
+  String get calcBeerRelatedTools =>
+      'Bog‘liq vositalar: kalibrlash va chegaralar';
 }

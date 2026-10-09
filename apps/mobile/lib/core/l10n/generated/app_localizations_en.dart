@@ -6848,4 +6848,69 @@ class AppLocalizationsEn extends AppLocalizations {
   String rdGuidelineMeta(int sections, String refs) {
     return '$sections sections · $refs';
   }
+
+  @override
+  String get toolBeerLambertName => 'Beer–Lambert law (A = ε·l·c)';
+
+  @override
+  String get toolBeerLambertDesc =>
+      'Find absorbance, concentration or absorptivity from A = ε·l·c, on a molar or mass basis, with units.';
+
+  @override
+  String get calcBeerAbsorbance => 'Absorbance';
+
+  @override
+  String get calcBeerAbsorptivityMolar => 'Molar absorptivity';
+
+  @override
+  String get calcBeerAbsorptivityMass => 'Specific (mass) absorptivity';
+
+  @override
+  String get calcBeerConcentration => 'Concentration';
+
+  @override
+  String get calcBeerPath => 'Path length (l)';
+
+  @override
+  String get calcBeerResultUnit => 'Result unit (c)';
+
+  @override
+  String get calcBeerBasis => 'Absorptivity basis';
+
+  @override
+  String get calcBeerBasisMolar => 'Molar (ε, mol/L)';
+
+  @override
+  String get calcBeerBasisMass => 'Mass (a, g/L)';
+
+  @override
+  String get calcBeerFormulaNote =>
+      'A — absorbance (dimensionless); ε — molar absorptivity, L·mol⁻¹·cm⁻¹ (or a — mass absorptivity, L·g⁻¹·cm⁻¹); l — path length, cm; c — concentration, mol/L (or g/L).';
+
+  @override
+  String get calcBeerErrorBasis =>
+      'The concentration unit does not match the absorptivity basis: use mol/L units with molar ε and g/L-type units with mass a.';
+
+  @override
+  String get calcBeerAssumptionDefinition =>
+      'Definitional relationship: absorbance is proportional to path length and concentration. No absorptivity values are built in — enter a value from your own calibration or a verified source for the same wavelength, solvent and pH.';
+
+  @override
+  String get calcBeerAssumptionBlank =>
+      'A is the sample absorbance corrected for the blank (reagent or matrix blank) at the chosen wavelength.';
+
+  @override
+  String get calcBeerLimitationLinear =>
+      'Valid only within the working range where linearity has been shown by calibration; ICH Q2(R2) §3.2.2.1 recommends at least five concentrations across the range. Outside it, dilute the sample or use the calibration curve.';
+
+  @override
+  String get calcBeerLimitationIdentity =>
+      'Absorbance does not identify a substance. UV-Vis has low specificity; identity must be confirmed by another technique (for example, chromatography with mass spectrometry).';
+
+  @override
+  String get calcBeerReference =>
+      'IUPAC Gold Book: “Beer–Lambert law”, doi:10.1351/goldbook.B00626 · Swinehart DF. The Beer-Lambert law. J Chem Educ 1962;39(7):333, doi:10.1021/ed039p333 · Linearity: ICH Q2(R2) (2023), §3.2.2.1.';
+
+  @override
+  String get calcBeerRelatedTools => 'Related tools: calibration and limits';
 }

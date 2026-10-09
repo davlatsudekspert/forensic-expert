@@ -6876,4 +6876,71 @@ class AppLocalizationsRu extends AppLocalizations {
   String rdGuidelineMeta(int sections, String refs) {
     return 'Разделов: $sections · $refs';
   }
+
+  @override
+  String get toolBeerLambertName => 'Закон Бугера–Ламберта–Бера (A = ε·l·c)';
+
+  @override
+  String get toolBeerLambertDesc =>
+      'Расчёт оптической плотности, концентрации или коэффициента поглощения по A = ε·l·c — на молярной или массовой основе, с единицами.';
+
+  @override
+  String get calcBeerAbsorbance => 'Оптическая плотность';
+
+  @override
+  String get calcBeerAbsorptivityMolar => 'Молярный коэффициент поглощения';
+
+  @override
+  String get calcBeerAbsorptivityMass =>
+      'Удельный (массовый) коэффициент поглощения';
+
+  @override
+  String get calcBeerConcentration => 'Концентрация';
+
+  @override
+  String get calcBeerPath => 'Толщина слоя (l)';
+
+  @override
+  String get calcBeerResultUnit => 'Единица результата (c)';
+
+  @override
+  String get calcBeerBasis => 'Основа коэффициента поглощения';
+
+  @override
+  String get calcBeerBasisMolar => 'Молярный (ε, моль/л)';
+
+  @override
+  String get calcBeerBasisMass => 'Массовый (a, г/л)';
+
+  @override
+  String get calcBeerFormulaNote =>
+      'A — оптическая плотность (безразмерная); ε — молярный коэффициент поглощения, л·моль⁻¹·см⁻¹ (или a — массовый, л·г⁻¹·см⁻¹); l — толщина слоя, см; c — концентрация, моль/л (или г/л).';
+
+  @override
+  String get calcBeerErrorBasis =>
+      'Единица концентрации не соответствует основе коэффициента: с молярным ε — моль/л, с массовым a — единицы типа г/л.';
+
+  @override
+  String get calcBeerAssumptionDefinition =>
+      'Определительное соотношение: оптическая плотность пропорциональна толщине слоя и концентрации. Значения коэффициентов в приложение не встроены — вводите значение из собственной калибровки или проверенного источника для той же длины волны, растворителя и pH.';
+
+  @override
+  String get calcBeerAssumptionBlank =>
+      'A — оптическая плотность образца за вычетом холостой пробы (реагентной или матричной) при выбранной длине волны.';
+
+  @override
+  String get calcBeerLimitationLinear =>
+      'Действует только в рабочем диапазоне, где линейность подтверждена калибровкой; ICH Q2(R2) §3.2.2.1 рекомендует не менее пяти концентраций по диапазону. Вне его разбавьте образец или используйте калибровочный график.';
+
+  @override
+  String get calcBeerLimitationIdentity =>
+      'Оптическая плотность не идентифицирует вещество. УФ-видимая спектрофотометрия малоспецифична; идентичность подтверждается другим методом (например, хроматографией с масс-спектрометрией).';
+
+  @override
+  String get calcBeerReference =>
+      'IUPAC Gold Book: «Beer–Lambert law», doi:10.1351/goldbook.B00626 · Swinehart DF. The Beer-Lambert law. J Chem Educ 1962;39(7):333, doi:10.1021/ed039p333 · Линейность: ICH Q2(R2) (2023), §3.2.2.1.';
+
+  @override
+  String get calcBeerRelatedTools =>
+      'Связанные инструменты: калибровка и пределы';
 }

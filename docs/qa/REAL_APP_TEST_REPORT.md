@@ -235,6 +235,27 @@ matritsa darhol FAIL berdi (`STUDENT: SELECT others' rows`).
 Kichik ekran (320×640) va 390×844 qadamlarida birorta ham overflow yoki
 boshqa Flutter render xatosi qayd etilmadi.
 
+### 2.x Spektrofotometriya (2026-10-09) — REAL ILOVA
+
+`integration_test/qa_spectro_test.dart`, skrinshotlar va JSON:
+`docs/qa/spectro_20261009/`.
+
+| Rejim | Ishga tushirish | Natija |
+|---|---|---|
+| TALABA (Pro’siz) | `QA_MODE=student ./tool/qa_real_app.sh spectro` | 6/6 PASS |
+| MUTAXASSIS (Pro — test override, xarid emas) | `QA_MODE=professional QA_PRO=1 ./tool/qa_real_app.sh spectro` | 11/11 PASS |
+
+Tekshirildi: «Yo‘riqnomalar» ro‘yxatida yangi UB-ko‘rinadigan
+spektrofotometriya kartasi; karta ochilishi, ehtiyot choralari, bog‘liq
+vositalar va manbalar; kartadan Buger–Lambert–Ber vositasiga o‘tish (talabada —
+aniq tarif nomi bilan qulf kartasi); hisoblar qo‘lda tekshirilgan qiymatlar
+bilan (0,45/(15000·1) → 30 µmol/L; 25·1·20 mg/L → 0,5); bo‘sh maydon xatosi;
+Kalibrlash vositasiga havola; 320 dp. Topilgan va tuzatilgan: 320 dp’da
+qo‘shimcha birlik qatorlari («mol/ L») sinardi → bitta izoh qatoriga
+ko‘chirildi; uz yorlig‘ida ikki qavs («Optik zichlik (absorbsiya) (A)») →
+«Optik zichlik (A)». Bloklangan HTTP urinishlari: 0. ADMIN roli bu ishga
+taalluqli emas (yangi admin funksiyasi yo‘q).
+
 ## 3. Til tekshiruvi (uz rejimi)
 
 Avtomatik tekshiruv har ekranda inglizcha UI so‘zlari va xom kodlarni
