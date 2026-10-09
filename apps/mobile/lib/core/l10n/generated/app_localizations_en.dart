@@ -7053,5 +7053,5 @@ class AppLocalizationsEn extends AppLocalizations {
       'Verbatim from the source, kept for traceability (OCR errors not corrected).';
 
   @override
-  String get reusePermissionGranted => 'USED WITH PERMISSION';
+  String get reusePermissionGranted => 'RIGHTS HOLDER\'S PERMISSION';
 }

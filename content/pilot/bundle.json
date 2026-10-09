@@ -28117,6 +28117,7 @@
         "en": "Marquis reagent"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -28215,8 +28216,7 @@
           "en": "Use the reagent freshly prepared."
         },
         "locator": "№ 36"
-      },
-      "tier_access": "free"
+      }
     },
     {
       "recipe_id": "recipe-mecke",
@@ -28261,6 +28261,7 @@
         "en": "Dragendorff reagent"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -28383,6 +28384,16 @@
       "order_explicit_in_source": true,
       "hazards": [
         {
+          "text": "Hazard data not fully verified: basic bismuth nitrate (bismuth subnitrate), potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: asosli vismut nitrat, kaliy yodid. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: основной нитрат висмута, иодид калия. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: basic bismuth nitrate (bismuth subnitrate), potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
+        {
           "text": "Nitric acid (PubChem CID 944) — Danger. H272: May intensify fire; oxidizer; H314: Causes severe skin burns and eye damage; H330: Fatal if inhaled. GHS pictograms: Oxidizer, Corrosive, Acute toxic. Precautionary statements (P-codes): P210, P220, P260, P264, P271, P280, P284, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P316, P320, P321, P363, P370+P378, P403+P233, P405, P501.",
           "source_id": "SRC-PUBCHEM-944",
           "locator": "Safety and Hazards › GHS Classification",
@@ -28423,7 +28434,6 @@
       "original_source_id": "SRC-OWNER-REAGENTS",
       "translation_status": "machine_draft",
       "version": 1,
-      "tier_access": "free",
       "variants": [
         {
           "variant_id": "own",
@@ -28454,6 +28464,7 @@
         "en": "Barbituric acid solution in pyridine"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -28597,6 +28608,7 @@
         "en": "Baryta water (barium hydroxide solution)"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -28689,6 +28701,7 @@
         "en": "Bromine water"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -28796,6 +28809,7 @@
         "en": "Starch–iodide paper"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -28915,6 +28929,16 @@
       "order_explicit_in_source": true,
       "hazards": [
         {
+          "text": "Hazard data not fully verified: starch (rice or potato), potassium iodide, pure. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: kraxmal (guruch yoki kartoshka kraxmali), kaliy yodid (toza). PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: крахмал (рисовый или картофельный), иодид калия чистый. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: starch (rice or potato), potassium iodide, pure. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
+        {
           "text": "General guidance: before preparing, read your laboratory's safety data sheet (SDS) for each substance and follow its protective-equipment, handling and storage requirements.",
           "source_id": "SRC-FE-EDITORIAL",
           "texts": {
@@ -28960,6 +28984,7 @@
         "en": "Lead acetate paper"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -29097,6 +29122,7 @@
         "en": "Benzidine paper (copper acetate–benzidine)"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -29254,6 +29280,7 @@
         "en": "Mercury(II) bromide or chloride paper"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -29414,6 +29441,7 @@
         "en": "Lead acetate cotton wool"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -29563,6 +29591,7 @@
         "en": "Potassium hexahydroxoantimonate solution"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -29694,6 +29723,7 @@
         "en": "Sodium hypochlorite"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -29917,6 +29947,7 @@
         "en": "Potassium diiodocuprate (in iodine solution)"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -30003,6 +30034,16 @@
       "order_explicit_in_source": true,
       "hazards": [
         {
+          "text": "Hazard data not fully verified: potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: kaliy yodid. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: иодид калия. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
+        {
           "text": "Hydrochloric acid, concentrated (PubChem CID 313) — Danger. H314: Causes severe skin burns and eye damage; H331: Toxic if inhaled. GHS pictograms: Compressed gas, Corrosive, Acute toxic. Precautionary statements (P-codes): P260, P261, P264, P271, P280, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P316, P321, P363, P403+P233, P405, P501.",
           "source_id": "SRC-PUBCHEM-313",
           "locator": "Safety and Hazards › GHS Classification",
@@ -30057,6 +30098,7 @@
         "en": "Dithizone solution (in chloroform or carbon tetrachloride)"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -30240,6 +30282,16 @@
       "order_explicit_in_source": true,
       "hazards": [
         {
+          "text": "Hazard data not fully verified: dithizone (diphenylthiocarbazone), chloroform or carbon tetrachloride, ascorbic acid. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: ditizon (difeniltiokarbazon), xloroform yoki uglerod tetraxlorid, askorbin kislota. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: дитизон (дифенилтиокарбазон), хлороформ или четырёххлористый углерод, аскорбиновая кислота. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: dithizone (diphenylthiocarbazone), chloroform or carbon tetrachloride, ascorbic acid. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
+        {
           "text": "Ammonia solution (PubChem CID 14923) — Danger. H314: Causes severe skin burns and eye damage; H400: Very toxic to aquatic life. GHS pictograms: Corrosive, Environmental hazard. Precautionary statements (P-codes): P260, P264, P273, P280, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P316, P321, P363, P391, P405, P501 (click each P-code to see the statement).",
           "source_id": "SRC-PUBCHEM-14923",
           "locator": "Safety and Hazards › GHS Classification",
@@ -30343,6 +30395,7 @@
         "en": "Potassium dichromate solution"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -30473,6 +30526,7 @@
         "en": "Lead diethyldithiocarbamate (solution in chloroform)"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -30666,6 +30720,7 @@
         "en": "Silver diethyldithiocarbamate (solution in pyridine)"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -30835,6 +30890,7 @@
         "en": "Potassium iodide in sulfuric acid and ethanol"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -30892,6 +30948,16 @@
       "order_explicit_in_source": true,
       "hazards": [
         {
+          "text": "Hazard data not fully verified: potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: kaliy yodid. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: иодид калия. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
+        {
           "text": "Sulfuric acid, concentrated (PubChem CID 1118) — Danger. H314: Causes severe skin burns and eye damage. GHS pictograms: Corrosive. Precautionary statements (P-codes): P260, P264, P280, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P316, P321, P363, P405, P501.",
           "source_id": "SRC-PUBCHEM-1118",
           "locator": "Safety and Hazards › GHS Classification",
@@ -30946,6 +31012,7 @@
         "en": "Copper(I) iodide suspension"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -31084,6 +31151,16 @@
       "order_explicit_in_source": true,
       "hazards": [
         {
+          "text": "Hazard data not fully verified: potassium iodide, sodium sulfate. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: kaliy yodid, natriy sulfat. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: иодид калия, сульфат натрия. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: potassium iodide, sodium sulfate. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
+        {
           "text": "Copper(II) sulfate (PubChem CID 24462) — Warning. H302: Harmful if swallowed; H315: Causes skin irritation; H319: Causes serious eye irritation; H400: Very toxic to aquatic life; H410: Very toxic to aquatic life with long lasting effects. GHS pictograms: Irritant / harmful, Environmental hazard. Precautionary statements (P-codes): P264, P264+P265, P270, P273, P280, P301+P317, P302+P352, P305+P351+P338, P321, P330, P332+P317, P337+P317, P362+P364, P391, P501.",
           "source_id": "SRC-PUBCHEM-24462",
           "locator": "Safety and Hazards › GHS Classification",
@@ -31148,6 +31225,7 @@
         "en": "Sublimed iodine"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -31213,6 +31291,16 @@
       "order_explicit_in_source": true,
       "hazards": [
         {
+          "text": "Hazard data not fully verified: potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: kaliy yodid. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: иодид калия. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
+        {
           "text": "Calcium oxide (PubChem CID 14778) — Danger. H315: Causes skin irritation; H318: Causes serious eye damage; H335: May cause respiratory irritation. GHS pictograms: Corrosive, Irritant / harmful. Precautionary statements (P-codes): P260, P261, P264, P264+P265, P270, P271, P280, P301+P317, P301+P330+P331, P302+P352, P302+P361+P354, P304+P340, P305+P354+P338, P316, P317, P319, P321, P330, P332+P317, P362+P364, P363, P403+P233, P405, P501.",
           "source_id": "SRC-PUBCHEM-14778",
           "locator": "Safety and Hazards › GHS Classification",
@@ -31277,6 +31365,7 @@
         "en": "Twice-sublimed iodine"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -31332,6 +31421,16 @@
       ],
       "order_explicit_in_source": true,
       "hazards": [
+        {
+          "text": "Hazard data not fully verified: potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: kaliy yodid. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: иодид калия. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
         {
           "text": "Calcium oxide (PubChem CID 14778) — Danger. H315: Causes skin irritation; H318: Causes serious eye damage; H335: May cause respiratory irritation. GHS pictograms: Corrosive, Irritant / harmful. Precautionary statements (P-codes): P260, P261, P264, P264+P265, P270, P271, P280, P301+P317, P301+P330+P331, P302+P352, P302+P361+P354, P304+P340, P305+P354+P338, P316, P317, P319, P321, P330, P332+P317, P362+P364, P363, P403+P233, P405, P501.",
           "source_id": "SRC-PUBCHEM-14778",
@@ -31397,6 +31496,7 @@
         "en": "Sodium cobaltinitrite solution"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -31573,6 +31673,7 @@
         "en": "Methyl violet solution"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -31679,6 +31780,16 @@
       "order_explicit_in_source": true,
       "hazards": [
         {
+          "text": "Hazard data not fully verified: sodium sulfate, activated charcoal. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: natriy sulfat, faollashtirilgan ko‘mir. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: сульфат натрия, активированный уголь. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: sodium sulfate, activated charcoal. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
+        {
           "text": "Methyl violet (PubChem CID 196986) — Danger. H302: Harmful if swallowed. GHS pictograms: Corrosive, Irritant / harmful, Environmental hazard. Precautionary statements (P-codes): P264, P264+P265, P270, P273, P280, P301+P317, P305+P354+P338, P317, P330, P391, P501.",
           "source_id": "SRC-PUBCHEM-196986",
           "locator": "Safety and Hazards › GHS Classification",
@@ -31743,6 +31854,7 @@
         "en": "α-Naphthol solution"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -31839,6 +31951,7 @@
         "en": "β-Naphthol solution"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -31955,6 +32068,7 @@
         "en": "Nile blue (ethanolic solution)"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -31986,6 +32100,16 @@
       ],
       "order_explicit_in_source": true,
       "hazards": [
+        {
+          "text": "Hazard data not fully verified: Nile blue. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: Nil ko‘ki. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: нильский голубой. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: Nile blue. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
         {
           "text": "Ethanol (PubChem CID 702) — Danger. H225: Highly Flammable liquid and vapor. GHS pictograms: Flammable. Precautionary statements (P-codes): P210, P233, P240, P241, P242, P243, P280, P303+P361+P353, P370+P378, P403+P235, P501.",
           "source_id": "SRC-PUBCHEM-702",
@@ -32063,6 +32187,7 @@
         "en": "Bismuth nitrate solution"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -32174,6 +32299,7 @@
         "en": "Copper nitrate, ammoniacal solution"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -32334,6 +32460,7 @@
         "en": "Freshly distilled pyridine"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -32524,6 +32651,7 @@
         "en": "Pyridine–thiocyanate reagent"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -32625,6 +32753,7 @@
         "en": "Bouchardat reagent"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -32693,6 +32822,16 @@
       "order_explicit_in_source": true,
       "hazards": [
         {
+          "text": "Hazard data not fully verified: potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: kaliy yodid. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: иодид калия. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
+        {
           "text": "Iodine (PubChem CID 807) — Warning. H312: Harmful in contact with skin; H332: Harmful if inhaled; H400: Very toxic to aquatic life. GHS pictograms: Irritant / harmful, Environmental hazard. Precautionary statements (P-codes): P261, P271, P273, P280, P302+P352, P304+P340, P317, P321, P362+P364, P391, P501.",
           "source_id": "SRC-PUBCHEM-807",
           "locator": "Safety and Hazards › GHS Classification",
@@ -32741,6 +32880,7 @@
         "en": "Wagner reagent"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -32809,6 +32949,16 @@
       "order_explicit_in_source": true,
       "hazards": [
         {
+          "text": "Hazard data not fully verified: potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: kaliy yodid. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: иодид калия. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
+        {
           "text": "Iodine (PubChem CID 807) — Warning. H312: Harmful in contact with skin; H332: Harmful if inhaled; H400: Very toxic to aquatic life. GHS pictograms: Irritant / harmful, Environmental hazard. Precautionary statements (P-codes): P261, P271, P273, P280, P302+P352, P304+P340, P317, P321, P362+P364, P391, P501.",
           "source_id": "SRC-PUBCHEM-807",
           "locator": "Safety and Hazards › GHS Classification",
@@ -32868,6 +33018,7 @@
         "en": "Griess reagent"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -33007,6 +33158,7 @@
         "en": "Dragendorff reagent, Munier modification"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -33112,6 +33264,16 @@
       "order_explicit_in_source": true,
       "hazards": [
         {
+          "text": "Hazard data not fully verified: basic bismuth nitrate (bismuth subnitrate), potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: asosli vismut nitrat, kaliy yodid. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: основной нитрат висмута, иодид калия. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: basic bismuth nitrate (bismuth subnitrate), potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
+        {
           "text": "Glacial acetic acid (PubChem CID 176) — Danger. H226: Flammable liquid and vapor; H314: Causes severe skin burns and eye damage. GHS pictograms: Flammable, Corrosive. Precautionary statements (P-codes): P210, P233, P240, P241, P242, P243, P260, P264, P280, P301+P330+P331, P302+P361+P354, P303+P361+P353, P304+P340, P305+P354+P338, P316, P321, P363, P370+P378, P403+P235, P405, P501 (click each P-code to see the statement).",
           "source_id": "SRC-PUBCHEM-176",
           "locator": "Safety and Hazards › GHS Classification",
@@ -33172,6 +33334,7 @@
         "en": "Sonnenschein reagent"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -33291,6 +33454,16 @@
       "order_explicit_in_source": true,
       "hazards": [
         {
+          "text": "Hazard data not fully verified: disodium hydrogen phosphate, ammonium molybdate solution in nitric acid. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: natriy gidrofosfat, ammoniy molibdatning nitrat kislotadagi eritmasi. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: моногидрофосфат натрия, раствор молибдата аммония в азотной кислоте. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: disodium hydrogen phosphate, ammonium molybdate solution in nitric acid. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
+        {
           "text": "Nitric acid (PubChem CID 944) — Danger. H272: May intensify fire; oxidizer; H314: Causes severe skin burns and eye damage; H330: Fatal if inhaled. GHS pictograms: Oxidizer, Corrosive, Acute toxic. Precautionary statements (P-codes): P210, P220, P260, P264, P271, P280, P284, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P316, P320, P321, P363, P370+P378, P403+P233, P405, P501.",
           "source_id": "SRC-PUBCHEM-944",
           "locator": "Safety and Hazards › GHS Classification",
@@ -33361,6 +33534,7 @@
         "en": "Mayer reagent"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -33418,6 +33592,16 @@
       "order_explicit_in_source": true,
       "hazards": [
         {
+          "text": "Hazard data not fully verified: potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: kaliy yodid. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: иодид калия. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
+        {
           "text": "Mercury(II) chloride (PubChem CID 24085) — Danger. H300: Fatal if swallowed; H314: Causes severe skin burns and eye damage; H341: Suspected of causing genetic defects; H361f: Suspected of damaging fertility; H372: Causes damage to organs through prolonged or repeated exposure; H400: Very toxic to aquatic life; H410: Very toxic to aquatic life with long lasting effects. GHS pictograms: Corrosive, Acute toxic, Health hazard, Environmental hazard. Precautionary statements (P-codes): P203, P260, P264, P270, P273, P280, P301+P316, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P316, P318, P319, P321, P330, P363, P391, P405, P501.",
           "source_id": "SRC-PUBCHEM-24085",
           "locator": "Safety and Hazards › GHS Classification",
@@ -33466,6 +33650,7 @@
         "en": "Mandelin reagent"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -33584,6 +33769,7 @@
         "en": "Marmé reagent"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -33655,6 +33841,16 @@
       "order_explicit_in_source": true,
       "hazards": [
         {
+          "text": "Hazard data not fully verified: potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: kaliy yodid. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: иодид калия. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
+        {
           "text": "Cadmium iodide (PubChem CID 24635) — Danger. H301: Toxic if swallowed; H331: Toxic if inhaled; H351: Suspected of causing cancer; H373: May causes damage to organs through prolonged or repeated exposure; H400: Very toxic to aquatic life; H410: Very toxic to aquatic life with long lasting effects. GHS pictograms: Acute toxic, Health hazard, Environmental hazard. Precautionary statements (P-codes): P203, P260, P261, P264, P270, P271, P273, P280, P301+P316, P304+P340, P316, P318, P319, P321, P330, P391, P403+P233, P405, P501.",
           "source_id": "SRC-PUBCHEM-24635",
           "locator": "Safety and Hazards › GHS Classification",
@@ -33701,6 +33897,7 @@
         "en": "Millon reagent"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -33913,6 +34110,7 @@
         "en": "Nessler reagent"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -34004,6 +34202,16 @@
       "order_explicit_in_source": true,
       "hazards": [
         {
+          "text": "Hazard data not fully verified: potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: kaliy yodid. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: иодид калия. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
+        {
           "text": "Mercury(II) chloride (PubChem CID 24085) — Danger. H300: Fatal if swallowed; H314: Causes severe skin burns and eye damage; H341: Suspected of causing genetic defects; H361f: Suspected of damaging fertility; H372: Causes damage to organs through prolonged or repeated exposure; H400: Very toxic to aquatic life; H410: Very toxic to aquatic life with long lasting effects. GHS pictograms: Corrosive, Acute toxic, Health hazard, Environmental hazard. Precautionary statements (P-codes): P203, P260, P264, P270, P273, P280, P301+P316, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P316, P318, P319, P321, P330, P363, P391, P405, P501.",
           "source_id": "SRC-PUBCHEM-24085",
           "locator": "Safety and Hazards › GHS Classification",
@@ -34073,6 +34281,7 @@
         "en": "Trinder reagent"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -34241,6 +34450,7 @@
         "en": "Fehling reagent"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -34424,6 +34634,16 @@
       "order_explicit_in_source": true,
       "hazards": [
         {
+          "text": "Hazard data not fully verified: potassium sodium tartrate (Rochelle salt). No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: segnet tuzi (kaliy-natriy tartrat). PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: сегнетова соль. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: potassium sodium tartrate (Rochelle salt). No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
+        {
           "text": "Sulfuric acid, dilute (PubChem CID 1118) — Danger. H314: Causes severe skin burns and eye damage. GHS pictograms: Corrosive. Precautionary statements (P-codes): P260, P264, P280, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P316, P321, P363, P405, P501.",
           "source_id": "SRC-PUBCHEM-1118",
           "locator": "Safety and Hazards › GHS Classification",
@@ -34516,6 +34736,7 @@
         "en": "Folin–Ciocalteu reagent"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -34719,6 +34940,16 @@
       "order_explicit_in_source": true,
       "hazards": [
         {
+          "text": "Hazard data not fully verified: sodium molybdate. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: natriy molibdat. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: молибдат натрия. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: sodium molybdate. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
+        {
           "text": "Phosphoric acid (PubChem CID 1004) — Danger. H314: Causes severe skin burns and eye damage. GHS pictograms: Corrosive. Precautionary statements (P-codes): P260, P264, P280, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P316, P321, P363, P405, P501.",
           "source_id": "SRC-PUBCHEM-1004",
           "locator": "Safety and Hazards › GHS Classification",
@@ -34848,6 +35079,7 @@
         "en": "Forrest reagent"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -34996,6 +35228,7 @@
         "en": "FPN reagent"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -35113,6 +35346,7 @@
         "en": "Fröhde reagent"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -35168,6 +35402,16 @@
       ],
       "order_explicit_in_source": true,
       "hazards": [
+        {
+          "text": "Hazard data not fully verified: ammonium (or sodium) molybdate, powdered. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: ammoniy (yoki natriy) molibdat (kukun holiga keltirilgan). PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: молибдат аммония (или натрия), растёртый в порошок. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: ammonium (or sodium) molybdate, powdered. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
         {
           "text": "Sulfuric acid, concentrated (PubChem CID 1118) — Danger. H314: Causes severe skin burns and eye damage. GHS pictograms: Corrosive. Precautionary statements (P-codes): P260, P264, P280, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P316, P321, P363, P405, P501.",
           "source_id": "SRC-PUBCHEM-1118",
@@ -35239,6 +35483,7 @@
         "en": "Scheibler reagent"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -35334,6 +35579,7 @@
         "en": "Erdmann reagent"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -35430,6 +35676,7 @@
         "en": "Cobalt thiocyanate solution"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -35535,6 +35782,7 @@
         "en": "Sulfurous acid solution"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -35724,6 +35972,7 @@
         "en": "Mohr's salt solution"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -35802,6 +36051,16 @@
       "order_explicit_in_source": true,
       "hazards": [
         {
+          "text": "Hazard data not fully verified: Mohr's salt (ammonium iron(II) sulfate). No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: Mor tuzi (ammoniy-temir(II) sulfat). PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: соль Мора. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: Mohr's salt (ammonium iron(II) sulfate). No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
+        {
           "text": "Hydrochloric acid (PubChem CID 313) — Danger. H314: Causes severe skin burns and eye damage; H331: Toxic if inhaled. GHS pictograms: Compressed gas, Corrosive, Acute toxic. Precautionary statements (P-codes): P260, P261, P264, P271, P280, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P316, P321, P363, P403+P233, P405, P501.",
           "source_id": "SRC-PUBCHEM-313",
           "locator": "Safety and Hazards › GHS Classification",
@@ -35860,6 +36119,7 @@
         "en": "Diazotised sulfanilic acid"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -36005,6 +36265,7 @@
         "en": "Copper sulfate in ammonia and pyridine"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -36185,6 +36446,7 @@
         "en": "Mercury sulfate solution"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -36308,6 +36570,7 @@
         "en": "Ammonium tetrathiocyanatomercurate(II)"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -36412,6 +36675,7 @@
         "en": "Fuchsin–sulfurous acid solution"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -36559,6 +36823,16 @@
       "order_explicit_in_source": true,
       "hazards": [
         {
+          "text": "Hazard data not fully verified: basic fuchsin, chemically pure, fuchsin solution. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: asosli fuksin (kimyoviy toza), fuksin eritmasi. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: основной фуксин химически чистый, раствор фуксина. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: basic fuchsin, chemically pure, fuchsin solution. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
+        {
           "text": "Sodium sulfite, anhydrous (PubChem CID 24437) — Danger. H314: Causes severe skin burns and eye damage. GHS pictograms: Corrosive, Irritant / harmful. Precautionary statements (P-codes): P260, P264, P264+P265, P270, P280, P301+P317, P301+P330+P331, P302+P352, P302+P361+P354, P304+P340, P305+P351+P338, P305+P354+P338, P316, P321, P330, P332+P317, P337+P317, P362+P364, P363, P405, P501.",
           "source_id": "SRC-PUBCHEM-24437",
           "locator": "Safety and Hazards › GHS Classification",
@@ -36651,6 +36925,7 @@
         "en": "Iron(III) chloride solution containing potassium iodide"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -36717,6 +36992,16 @@
       ],
       "order_explicit_in_source": true,
       "hazards": [
+        {
+          "text": "Hazard data not fully verified: potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: kaliy yodid. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: иодид калия. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
         {
           "text": "Iron(III) chloride (PubChem CID 24380) — Danger. H302: Harmful if swallowed; H314: Causes severe skin burns and eye damage; H412: Harmful to aquatic life with long lasting effects. GHS pictograms: Corrosive, Irritant / harmful. Precautionary statements (P-codes): P260, P264, P264+P265, P270, P273, P280, P301+P317, P301+P330+P331, P302+P352, P302+P361+P354, P304+P340, P305+P354+P338, P316, P317, P321, P330, P332+P317, P362+P364, P363, P405, P501.",
           "source_id": "SRC-PUBCHEM-24380",
@@ -36794,6 +37079,7 @@
         "en": "Tin(II) chloride solution"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -36907,6 +37193,7 @@
         "en": "Chlorine water"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -37027,6 +37314,7 @@
         "en": "Chlor-zinc-iodine reagent"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -37136,6 +37424,16 @@
       "order_explicit_in_source": true,
       "hazards": [
         {
+          "text": "Hazard data not fully verified: potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: kaliy yodid. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: иодид калия. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
+        {
           "text": "Zinc chloride (PubChem CID 5727) — Danger. H302: Harmful if swallowed; H314: Causes severe skin burns and eye damage; H400: Very toxic to aquatic life; H410: Very toxic to aquatic life with long lasting effects. GHS pictograms: Corrosive, Irritant / harmful, Environmental hazard. Precautionary statements (P-codes): P260, P264, P270, P273, P280, P301+P317, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P316, P321, P330, P363, P391, P405, P501.",
           "source_id": "SRC-PUBCHEM-5727",
           "locator": "Safety and Hazards › GHS Classification",
@@ -37194,6 +37492,7 @@
         "en": "Copper-activated («cuprated») zinc"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -37259,6 +37558,16 @@
       "order_explicit_in_source": true,
       "hazards": [
         {
+          "text": "Hazard data not fully verified: zinc, arsenic-free. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: rux (margimushsiz). PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: цинк, не содержащий мышьяка. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: zinc, arsenic-free. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
+        {
           "text": "Copper(II) sulfate (PubChem CID 24462) — Warning. H302: Harmful if swallowed; H315: Causes skin irritation; H319: Causes serious eye irritation; H400: Very toxic to aquatic life; H410: Very toxic to aquatic life with long lasting effects. GHS pictograms: Irritant / harmful, Environmental hazard. Precautionary statements (P-codes): P264, P264+P265, P270, P273, P280, P301+P317, P302+P352, P305+P351+P338, P321, P330, P332+P317, P337+P317, P362+P364, P391, P501.",
           "source_id": "SRC-PUBCHEM-24462",
           "locator": "Safety and Hazards › GHS Classification",
@@ -37301,6 +37610,7 @@
         "en": "Zinc uranyl acetate solution"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -37387,6 +37697,16 @@
       "order_explicit_in_source": true,
       "hazards": [
         {
+          "text": "Hazard data not fully verified: zinc acetate. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: rux atsetat. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: ацетат цинка. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: zinc acetate. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
+        {
           "text": "Uranyl acetate (PubChem CID 21226249) — Danger. H300+H330: Fatal if swallowed or if inhaled; H300: Fatal if swallowed; H330: Fatal if inhaled; H373: May causes damage to organs through prolonged or repeated exposure; H411: Toxic to aquatic life with long lasting effects. GHS pictograms: Acute toxic, Health hazard, Environmental hazard. Precautionary statements (P-codes): P260, P264, P270, P271, P273, P284, P301+P316, P304+P340, P316, P319, P320, P321, P330, P391, P403+P233, P405, P501.",
           "source_id": "SRC-PUBCHEM-21226249",
           "locator": "Safety and Hazards › GHS Classification",
@@ -37441,6 +37761,7 @@
         "en": "Silver ammine complex (aqueous–acetone solution)"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -37574,6 +37895,7 @@
         "en": "Ammonia buffer"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -37668,6 +37990,7 @@
         "en": "Sodium bromide solution containing copper chloride"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -37769,6 +38092,7 @@
         "en": "Bromophenol blue solution containing silver nitrate"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -37805,6 +38129,16 @@
       ],
       "order_explicit_in_source": true,
       "hazards": [
+        {
+          "text": "Hazard data not fully verified: bromophenol blue. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: bromfenol ko‘ki. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: бромфеноловый синий. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: bromophenol blue. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
         {
           "text": "Silver nitrate (PubChem CID 24470) — Danger. H272: May intensify fire; oxidizer; H314: Causes severe skin burns and eye damage; H400: Very toxic to aquatic life; H410: Very toxic to aquatic life with long lasting effects. GHS pictograms: Oxidizer, Corrosive, Environmental hazard. Precautionary statements (P-codes): P210, P220, P260, P264, P273, P280, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P316, P321, P363, P370+P378, P391, P405, P501.",
           "source_id": "SRC-PUBCHEM-24470",
@@ -37880,6 +38214,7 @@
         "en": "Ethylmercury chloride dithizonate (chloroform solution)"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -37989,6 +38324,16 @@
       "order_explicit_in_source": true,
       "hazards": [
         {
+          "text": "Hazard data not fully verified: acetate buffer (pH 4.5), dithizone solution in chloroform. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: atsetat bufer aralashmasi (pH 4,5), ditizonning xloroformdagi eritmasi. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: ацетатная буферная смесь (pH 4,5), хлороформный раствор дитизона. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: acetate buffer (pH 4.5), dithizone solution in chloroform. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
+        {
           "text": "Ethylmercury chloride (PubChem CID 7862) — Danger. H300: Fatal if swallowed; H310: Fatal in contact with skin; H330: Fatal if inhaled; H373: May causes damage to organs through prolonged or repeated exposure; H400: Very toxic to aquatic life; H410: Very toxic to aquatic life with long lasting effects. GHS pictograms: Acute toxic, Health hazard, Environmental hazard. Precautionary statements (P-codes): P260, P262, P264, P270, P271, P273, P280, P284, P301+P316, P302+P352, P304+P340, P316, P319, P320, P321, P330, P361+P364, P391, P403+P233, P405, P501.",
           "source_id": "SRC-PUBCHEM-7862",
           "locator": "Safety and Hazards › GHS Classification",
@@ -38058,6 +38403,7 @@
         "en": "Indicator mixture for detecting organophosphorus compounds"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -38114,6 +38460,16 @@
       ],
       "order_explicit_in_source": true,
       "hazards": [
+        {
+          "text": "Hazard data not fully verified: horse serum, bromothymol blue. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: ot qon zardobi, bromtimol ko‘ki. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: лошадиная сыворотка, бромтимоловый синий. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: horse serum, bromothymol blue. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
         {
           "text": "Sodium hydroxide (PubChem CID 14798) — Danger. H314: Causes severe skin burns and eye damage. GHS pictograms: Corrosive. Precautionary statements (P-codes): P260, P264, P280, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P316, P321, P363, P405, P501.",
           "source_id": "SRC-PUBCHEM-14798",
@@ -38183,6 +38539,7 @@
         "en": "Iodine in potassium iodide solution"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -38250,6 +38607,16 @@
       "order_explicit_in_source": true,
       "hazards": [
         {
+          "text": "Hazard data not fully verified: potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: kaliy yodid. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: иодид калия. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: potassium iodide. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
+        {
           "text": "Iodine, sublimed (PubChem CID 807) — Warning. H312: Harmful in contact with skin; H332: Harmful if inhaled; H400: Very toxic to aquatic life. GHS pictograms: Irritant / harmful, Environmental hazard. Precautionary statements (P-codes): P261, P271, P273, P280, P302+P352, P304+P340, P317, P321, P362+P364, P391, P501.",
           "source_id": "SRC-PUBCHEM-807",
           "locator": "Safety and Hazards › GHS Classification",
@@ -38295,6 +38662,7 @@
         "en": "Ammonium molybdate solution"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -38356,6 +38724,16 @@
       "order_explicit_in_source": true,
       "hazards": [
         {
+          "text": "Hazard data not fully verified: ammonium molybdate. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: ammoniy molibdat. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: молибдат аммония. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: ammonium molybdate. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
+        {
           "text": "Nitric acid, concentrated (PubChem CID 944) — Danger. H272: May intensify fire; oxidizer; H314: Causes severe skin burns and eye damage; H330: Fatal if inhaled. GHS pictograms: Oxidizer, Corrosive, Acute toxic. Precautionary statements (P-codes): P210, P220, P260, P264, P271, P280, P284, P301+P330+P331, P302+P361+P354, P304+P340, P305+P354+P338, P316, P320, P321, P363, P370+P378, P403+P233, P405, P501.",
           "source_id": "SRC-PUBCHEM-944",
           "locator": "Safety and Hazards › GHS Classification",
@@ -38398,6 +38776,7 @@
         "en": "Alkaline hydrogen peroxide"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -38489,6 +38868,7 @@
         "en": "Copper sulfate, sodium sulfite and sodium hydrogen carbonate mixture (solution)"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -38545,6 +38925,16 @@
       "order_explicit_in_source": true,
       "hazards": [
         {
+          "text": "Hazard data not fully verified: sodium hydrogen carbonate. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: natriy gidrokarbonat. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: гидрокарбонат натрия. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: sodium hydrogen carbonate. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
+        {
           "text": "Sodium sulfite (PubChem CID 24437) — Danger. H314: Causes severe skin burns and eye damage. GHS pictograms: Corrosive, Irritant / harmful. Precautionary statements (P-codes): P260, P264, P264+P265, P270, P280, P301+P317, P301+P330+P331, P302+P352, P302+P361+P354, P304+P340, P305+P351+P338, P305+P354+P338, P316, P321, P330, P332+P317, P337+P317, P362+P364, P363, P405, P501.",
           "source_id": "SRC-PUBCHEM-24437",
           "locator": "Safety and Hazards › GHS Classification",
@@ -38599,6 +38989,7 @@
         "en": "Ammonium sulfide solution"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -38714,6 +39105,7 @@
         "en": "Phosphate buffer solution (pH 7.38)"
       },
       "domain": "lab",
+      "tier_access": "free",
       "status": "NEEDS_REVIEW",
       "ingredients": [
         {
@@ -38810,6 +39202,16 @@
       ],
       "order_explicit_in_source": true,
       "hazards": [
+        {
+          "text": "Hazard data not fully verified: disodium hydrogen phosphate, potassium dihydrogen phosphate. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use.",
+          "source_id": "SRC-FE-EDITORIAL",
+          "texts": {
+            "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: natriy gidrofosfat, kaliy digidrofosfat. PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+            "ru": "Данные об опасности не проверены полностью: моногидрофосфат натрия, дигидрофосфат калия. В PubChem классификация GHS не найдена — это не значит, что вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+            "en": "Hazard data not fully verified: disodium hydrogen phosphate, potassium dihydrogen phosphate. No GHS classification was found in PubChem — this does not mean the substance is safe; check the supplier's SDS before use."
+          },
+          "kind": "general"
+        },
         {
           "text": "General guidance: before preparing, read your laboratory's safety data sheet (SDS) for each substance and follow its protective-equipment, handling and storage requirements.",
           "source_id": "SRC-FE-EDITORIAL",

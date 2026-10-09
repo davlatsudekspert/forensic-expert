@@ -61,8 +61,8 @@ k("reagentOriginalHint", "Reagent page: hint under the original text heading.",
   "Дословно из источника, для прослеживаемости (ошибки распознавания не исправлены).",
   "Manbadan so‘zma-so‘z, kuzatuvchanlik uchun (OCR xatolari tuzatilmagan).")
 
-k("reusePermissionGranted", "Reuse status chip: licence required, but written permission from the owner/author is on record.",
-  "USED WITH PERMISSION", "ИСПОЛЬЗУЕТСЯ С РАЗРЕШЕНИЯ", "RUXSAT BILAN")
+k("reusePermissionGranted", "Reuse status chip: content-rights permission from the owner/author is on record (copyright only; NOT a legal permit for handling hazardous substances).",
+  "RIGHTS HOLDER'S PERMISSION", "С РАЗРЕШЕНИЯ ПРАВООБЛАДАТЕЛЯ", "MUALLIF/EGASI RUXSATI BILAN")
 
 # Eski kalitlar (idempotent tozalash).
 OLD = ["reagentUnitDrop"]

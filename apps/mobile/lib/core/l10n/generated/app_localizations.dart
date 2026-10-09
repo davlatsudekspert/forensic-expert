@@ -12483,10 +12483,10 @@ abstract class AppLocalizations {
   /// **'Verbatim from the source, kept for traceability (OCR errors not corrected).'**
   String get reagentOriginalHint;
 
-  /// Reuse status chip: licence required, but written permission from the owner/author is on record.
+  /// Reuse status chip: content-rights permission from the owner/author is on record (copyright only; NOT a legal permit for handling hazardous substances).
   ///
   /// In en, this message translates to:
-  /// **'USED WITH PERMISSION'**
+  /// **'RIGHTS HOLDER\'S PERMISSION'**
   String get reusePermissionGranted;
 }
 

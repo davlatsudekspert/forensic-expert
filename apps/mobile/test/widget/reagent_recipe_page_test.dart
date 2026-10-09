@@ -82,14 +82,27 @@ void main() {
     expect(tester.takeException(), isNull);
   });
 
-  testWidgets('benzidin qog‘ozi (Pro yopiq): xavf ogohlantirishi ko‘rinadi', (
+  testWidgets('benzidin qog‘ozi (bepul): xavf ogohlantirishi ko‘rinadi', (
     tester,
   ) async {
     await open(tester, 'reagent-benzidine-paper');
     expect(find.byKey(const Key('reagent.hazardBanner')), findsOneWidget);
     expect(find.byKey(const Key('reagent.hazard.general')), findsWidgets);
     expect(find.textContaining('tayyorlamaslik tavsiya etiladi'), findsOne);
-    expect(find.byKey(const Key('knowledge.locked')), findsOneWidget);
+    // Egasi qarori: egasi to‘plamidagi barcha retseptlar bepul.
+    expect(find.byKey(const Key('knowledge.locked')), findsNothing);
+  });
+
+  testWidgets('ditizon (bepul): GHS topilmagan modda «tekshirilmagan»', (
+    tester,
+  ) async {
+    await open(tester, 'reagent-dithizone-solution');
+    expect(find.byKey(const Key('knowledge.locked')), findsNothing);
+    await see(
+      tester,
+      find.textContaining('Xavflilik ma’lumotlari to‘liq tekshirilmagan'),
+    );
+    expect(find.textContaining('xavfsiz degani emas'), findsOneWidget);
   });
 
   testWidgets('Fehling (ru, 320 dp, Pro): variantlar, toshma yo‘q', (

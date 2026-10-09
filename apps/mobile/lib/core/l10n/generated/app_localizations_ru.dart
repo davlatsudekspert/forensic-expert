@@ -7087,5 +7087,5 @@ class AppLocalizationsRu extends AppLocalizations {
       'Дословно из источника, для прослеживаемости (ошибки распознавания не исправлены).';
 
   @override
-  String get reusePermissionGranted => 'ИСПОЛЬЗУЕТСЯ С РАЗРЕШЕНИЯ';
+  String get reusePermissionGranted => 'С РАЗРЕШЕНИЯ ПРАВООБЛАДАТЕЛЯ';
 }

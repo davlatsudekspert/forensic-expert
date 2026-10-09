@@ -7035,5 +7035,5 @@ class AppLocalizationsUz extends AppLocalizations {
       'Manbadan so‘zma-so‘z, kuzatuvchanlik uchun (OCR xatolari tuzatilmagan).';
 
   @override
-  String get reusePermissionGranted => 'RUXSAT BILAN';
+  String get reusePermissionGranted => 'MUALLIF/EGASI RUXSATI BILAN';
 }

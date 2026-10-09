@@ -246,6 +246,25 @@ def check_numbers(no, rec, original, errors):
 
 # --- xavf izohlari ---------------------------------------------------------
 
+# Kimyoviy xavf bahosi talab qilinmaydigan narsalar (suv, filtr qog‘oz…).
+NON_HAZARD_ITEMS = {"water", "water_dist", "water_boiled", "water_hot",
+                    "water_boiling", "water_cold", "filter_paper",
+                    "filter_paper_pieces", "cotton", "solution_a", "solution_b"}
+UNVERIFIED_HEAD = {
+    "uz": "Xavflilik ma’lumotlari to‘liq tekshirilmagan: ",
+    "ru": "Данные об опасности не проверены полностью: ",
+    "en": "Hazard data not fully verified: ",
+}
+UNVERIFIED_TAIL = {
+    "uz": ". PubChem’da GHS tasnifi topilmadi — bu modda xavfsiz degani emas; "
+          "ishlatishdan oldin yetkazib beruvchining SDS’ini tekshiring.",
+    "ru": ". В PubChem классификация GHS не найдена — это не значит, что "
+          "вещество безопасно; перед работой сверьтесь с SDS поставщика.",
+    "en": ". No GHS classification was found in PubChem — this does not mean "
+          "the substance is safe; check the supplier's SDS before use.",
+}
+
+
 def hazard_notes(entry, ingredient_keys, chem, ghs, hcodes, general, used_src):
     notes = []
     for g in entry.get("general_hazards", []):
@@ -297,6 +316,23 @@ def hazard_notes(entry, ingredient_keys, chem, ghs, hcodes, general, used_src):
         ghs_notes.append((rank, {"text": texts["en"], "source_id": sid,
                                  "locator": GHS_LOCATOR, "texts": texts,
                                  "kind": "ghs"}))
+    # GHS ma’lumoti topilmagan ingrediyentlar — «xavfsiz» deb talqin
+    # qilinmasligi uchun ochiq ogohlantirish (egasi talabi, 2026-10-09).
+    unverified = []
+    for k in keys:
+        c = chem.get(k)
+        if not c or k in NON_HAZARD_ITEMS:
+            continue
+        q = c.get("pubchem")
+        if q and q in ghs["compounds"] and ghs["compounds"][q].get("statements"):
+            continue
+        if all(c[lang] != u[lang] for u in unverified for lang in ("en",)):
+            unverified.append(c)
+    if unverified:
+        texts = {lang: UNVERIFIED_HEAD[lang] + ", ".join(u[lang] for u in unverified)
+                 + UNVERIFIED_TAIL[lang] for lang in LANGS}
+        notes.append({"text": texts["en"], "source_id": EDITORIAL,
+                      "texts": texts, "kind": "general"})
     # Yagona umumiy qator: «laboratoriyangiz SDS’ini o‘qing» (tahririy).
     sds = note(general["sds"], EDITORIAL, kind="general")
     return notes + [n for _, n in sorted(ghs_notes, key=lambda x: x[0])] + [sds]
@@ -351,6 +387,9 @@ def build(entry, chem, original, ghs, hcodes, general, used_src, errors):
         "reagent_id": entry.get("merge") or "reagent-" + entry["slug"],
         "names": {lang: entry["names"][lang] for lang in LANGS},
         "domain": "lab",
+        # Egasi qarori (2026-10-09): egasi to‘plamidagi barcha retseptlar
+        # bepul (kontent huquqi: OWNER-PERMISSION-2026-10-09).
+        "tier_access": "free",
         "status": "NEEDS_REVIEW",
         "ingredients": ings,
         "steps": steps,
@@ -385,8 +424,7 @@ def merge(base, own):
     out = dict(own)
     out["recipe_id"] = base["recipe_id"]
     out["reagent_id"] = base["reagent_id"]
-    if "tier_access" in base:
-        out["tier_access"] = base["tier_access"]
+    out["tier_access"] = "free"
     out["source_ids"] = [OWNER] + base_srcs + [
         s for s in own["source_ids"] if s.startswith("SRC-PUBCHEM-")]
     if base_ings or base_steps:
