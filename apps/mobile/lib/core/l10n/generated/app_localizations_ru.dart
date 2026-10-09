@@ -970,7 +970,7 @@ class AppLocalizationsRu extends AppLocalizations {
       'Названия, предупреждения и источники остаются открытыми. Научные данные и юрисдикционный слой открываются в платном тарифе.';
 
   @override
-  String get freeDemoBadge => 'Бесплатно (демо)';
+  String get freeDemoBadge => 'Бесплатно';
 
   @override
   String get lockedBadge => 'Pro';

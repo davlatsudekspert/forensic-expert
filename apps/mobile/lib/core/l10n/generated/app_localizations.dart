@@ -1798,10 +1798,10 @@ abstract class AppLocalizations {
   /// **'Names, warnings and sources stay open. Scientific details and the jurisdiction layer unlock with a paid plan.'**
   String get lockedBody;
 
-  /// Badge on free demo entries.
+  /// Access chip on a free entry (permanently free, not a time-limited demo).
   ///
   /// In en, this message translates to:
-  /// **'Free demo'**
+  /// **'Free'**
   String get freeDemoBadge;
 
   /// Badge.

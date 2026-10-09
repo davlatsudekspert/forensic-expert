@@ -968,7 +968,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Names, warnings and sources stay open. Scientific details and the jurisdiction layer unlock with a paid plan.';
 
   @override
-  String get freeDemoBadge => 'Free demo';
+  String get freeDemoBadge => 'Free';
 
   @override
   String get lockedBadge => 'Pro';

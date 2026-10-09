@@ -11,6 +11,8 @@ import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
+import '../../../core/settings/app_settings.dart';
+import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/auth/auth_models.dart';
 
@@ -38,6 +40,40 @@ String authFailureText(AppLocalizations l, AuthFailure f) => switch (f) {
 
 /// Akkaunt ekranlari uchun umumiy karkas: backend holati banneri (ulanmagan
 /// / TEST) va oflayn funksiyalar ishlashi haqida eslatma.
+///
+/// Sarlavhadagi til tugmasi: kirish/ro‘yxatdan o‘tishdan chiqmasdan tilni
+/// almashtirish (English → Русский → O‘zbekcha).
+Future<void> _showLanguageSheet(BuildContext context, WidgetRef ref) {
+  final current = ref.read(settingsControllerProvider).locale;
+  return showModalBottomSheet<void>(
+    context: context,
+    showDragHandle: true,
+    builder: (sheet) => SafeArea(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          for (final locale in SupportedLanguages.locales)
+            ListTile(
+              key: Key('auth.language.${locale.languageCode}'),
+              title: Text(
+                lookupAppLocalizations(locale).languageNameNative,
+                locale: locale,
+              ),
+              selected: current == locale,
+              trailing: current == locale ? const Icon(Icons.check) : null,
+              onTap: () async {
+                final notifier = ref.read(settingsControllerProvider.notifier);
+                Navigator.of(sheet).pop();
+                await notifier.setLocale(locale);
+              },
+            ),
+          const SizedBox(height: FeSpace.sm),
+        ],
+      ),
+    ),
+  );
+}
+
 class _AuthScaffold extends ConsumerWidget {
   const _AuthScaffold({
     required this.title,
@@ -55,7 +91,17 @@ class _AuthScaffold extends ConsumerWidget {
     final auth = ref.watch(authRepositoryProvider);
     return Scaffold(
       key: screenKey,
-      appBar: AppBar(title: Text(title)),
+      appBar: AppBar(
+        title: Text(title),
+        actions: [
+          IconButton(
+            key: const Key('auth.language'),
+            tooltip: l.settingsLanguage,
+            icon: const Icon(Icons.translate),
+            onPressed: () => _showLanguageSheet(context, ref),
+          ),
+        ],
+      ),
       body: SafeArea(
         child: ListView(
           children: [
