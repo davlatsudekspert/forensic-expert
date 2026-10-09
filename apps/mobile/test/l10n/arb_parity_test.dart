@@ -18,6 +18,8 @@ void main() {
   const sameInAllLanguages = {
     'appTitle',
     'appTagline',
+    // Manba bo‘limi havolasi: faqat «§» belgisi + lokal bo‘lim nomi.
+    'sourceSectionRef',
     // Yakuniy: xalqaro identifikator (PubMed ID).
     'sourcePmid',
     'languageOptionSemantics',

@@ -8,6 +8,7 @@ import 'knowledge.dart';
 import 'provenance.dart';
 import 'review.dart';
 import 'source.dart';
+import 'text_translation.dart';
 
 /// Validatsiya qilinadigan kontent to‘plami (content pipeline kirishi).
 @immutable
@@ -41,6 +42,7 @@ class ContentBundle {
     this.specimens = const [],
     this.standards = const [],
     this.termTranslations = const [],
+    this.textTranslations = const [],
   });
 
   final BundleChannel channel;
@@ -84,4 +86,8 @@ class ContentBundle {
   final List<SpecimenRecord> specimens;
   final List<StandardRecord> standards;
   final List<TermTranslation> termTranslations;
+
+  /// Asl iqtibos/sarlavhalarning avtomatik tarjimalari (faqat
+  /// `machine_draft`; asl matn o‘zgarmaydi).
+  final List<TextTranslation> textTranslations;
 }

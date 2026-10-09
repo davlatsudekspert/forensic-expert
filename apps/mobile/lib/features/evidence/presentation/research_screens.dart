@@ -24,6 +24,7 @@ import '../../legal/presentation/jurisdiction_screens.dart';
 import '../../professional/presentation/professional_widgets.dart';
 import '../../professional/presentation/review_section.dart';
 import '../evidence_strings.dart';
+import 'source_quote.dart';
 
 /// Ro‘yxatdagi research yozuvi.
 class ResearchTile extends StatelessWidget {
@@ -38,7 +39,9 @@ class ResearchTile extends StatelessWidget {
     final t = Theme.of(context).textTheme;
     final meta = [
       if (entry.authors.isNotEmpty)
-        entry.authors.first + (entry.authors.length > 1 ? ' et al.' : ''),
+        entry.authors.length > 1
+            ? l.researchAuthorsEtAl(entry.authors.first)
+            : entry.authors.first,
       if (entry.container != null) entry.container!,
       if (entry.organization != null) entry.organization!,
       if (entry.year != null) entry.year!,
@@ -74,12 +77,11 @@ class ResearchTile extends StatelessWidget {
               ],
             ),
             const SizedBox(height: FeSpace.xxs),
-            Text(
-              entry.title,
-              locale: const Locale('en'),
+            TranslatedTitle(
+              id: entry.id,
+              title: entry.title,
               style: t.titleSmall,
               maxLines: 3,
-              overflow: TextOverflow.ellipsis,
             ),
             if (meta.isNotEmpty) ...[
               const SizedBox(height: 2),
@@ -413,7 +415,12 @@ class ResearchDetailScreen extends ConsumerWidget {
                     ],
                   ),
                   const SizedBox(height: FeSpace.sm),
-                  SelectableText(r.title, style: t.titleMedium),
+                  TranslatedTitle(
+                    id: r.id,
+                    title: r.title,
+                    style: t.titleMedium,
+                    selectable: true,
+                  ),
                   const SizedBox(height: FeSpace.sm),
                   FeMetaList(rows: rows),
                   if (r.sourceApi != null) ...[

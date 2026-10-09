@@ -9,6 +9,7 @@ import '../../../core/l10n/date_format.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../evidence/presentation/source_quote.dart';
 
 /// Bitta yurisdiksion qoida — rasmiy hujjat, bo‘lim, organ, kuchga kirish
 /// sanasi, status va (ochiq litsenziyada) rasmiy matn iqtibosi bilan.
@@ -184,10 +185,11 @@ class LegalRuleCard extends ConsumerWidget {
                       l.compareOfficialExcerpt,
                       style: t.labelSmall?.copyWith(color: c.textSecondary),
                     ),
-                    Text(
-                      excerpt,
-                      locale: Locale(instrument.language ?? 'en'),
-                      style: t.bodySmall?.copyWith(fontStyle: FontStyle.italic),
+                    SourceQuote(
+                      target: TextTranslationTarget.ruleExcerpt,
+                      id: rule.id,
+                      text: excerpt,
+                      originalLang: instrument.language ?? 'en',
                     ),
                   ],
                 ),

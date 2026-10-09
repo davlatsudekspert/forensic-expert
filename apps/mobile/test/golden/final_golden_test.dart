@@ -290,7 +290,7 @@ void main() {
               FixtureReviewService(
                 identity: fixtureToxReviewer,
                 reviews: [
-                  fixtureReview(recordId: 'morphine', version: '2026.10.7'),
+                  fixtureReview(recordId: 'morphine', version: '2026.10.8'),
                 ],
               ),
             ),

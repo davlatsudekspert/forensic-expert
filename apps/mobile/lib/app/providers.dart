@@ -21,6 +21,7 @@ import '../domain/ai/local_retrieval.dart';
 import '../domain/ai/provenance_retrieval.dart';
 import '../domain/ai/rag_pipeline.dart';
 import '../domain/evidence/evidence_models.dart';
+import '../domain/evidence/machine_translations.dart';
 import '../domain/evidence/provenance_models.dart';
 import '../domain/jurisdiction/jurisdiction_catalog.dart';
 import '../domain/knowledge/knowledge_models.dart';
@@ -208,6 +209,14 @@ final provenanceIndexProvider = Provider<ProvenanceIndex>(
   (ref) =>
       ref.watch(contentProvenanceProvider).value?.index ??
       ProvenanceIndex.empty,
+);
+
+/// Asl iqtibos/sarlavhalarning avtomatik tarjimalari (machine_draft).
+/// Paket yuklanmaguncha — bo‘sh (faqat asl matn ko‘rsatiladi).
+final machineTranslationsProvider = Provider<MachineTranslations>(
+  (ref) =>
+      ref.watch(contentProvenanceProvider).value?.translations ??
+      MachineTranslations.empty,
 );
 
 /// Bilim sohalari (mavzular, reagentlar, skrining, metodlar, yangi

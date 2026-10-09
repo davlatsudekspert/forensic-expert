@@ -512,6 +512,14 @@ class ContentDbWriter {
         ],
       );
     }
+
+    for (final t in c.textTranslations) {
+      await run(
+        'INSERT INTO text_translations (target_type, target_id, lang, '
+        'source_sha256, translated_text, status) VALUES (?,?,?,?,?,?)',
+        [t.target.code, t.targetId, t.lang, t.sourceSha256, t.text, t.status],
+      );
+    }
   }
 
   /// PHASE 4 bilim obyektlari → `knowledge_entities` qatorlari.

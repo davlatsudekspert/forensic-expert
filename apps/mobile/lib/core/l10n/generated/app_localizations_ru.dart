@@ -6003,4 +6003,65 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get studyDeckNotFound => 'Эта колода недоступна.';
+
+  @override
+  String get quoteMachineTranslation => 'Автоматический перевод · не проверен';
+
+  @override
+  String get quoteMachineTranslationSemantics =>
+      'Автоматический перевод цитаты из источника, не проверен экспертом. Цитатой является оригинальный текст выше.';
+
+  @override
+  String quoteOriginalTitle(String title) {
+    return 'Оригинальное название: $title';
+  }
+
+  @override
+  String sourceSectionRef(String section) {
+    return '§ $section';
+  }
+
+  @override
+  String get sectionAbstract => 'Аннотация';
+
+  @override
+  String get sectionIntroduction => 'Введение';
+
+  @override
+  String get sectionBackground => 'Предпосылки';
+
+  @override
+  String get sectionMethods => 'Методы';
+
+  @override
+  String get sectionResults => 'Результаты';
+
+  @override
+  String get sectionDiscussion => 'Обсуждение';
+
+  @override
+  String get sectionConclusion => 'Выводы';
+
+  @override
+  String get sectionCaseReport => 'Описание случая';
+
+  @override
+  String get sectionFigure => 'Рисунок';
+
+  @override
+  String get sectionTable => 'Таблица';
+
+  @override
+  String get sectionSupplement => 'Дополнительные материалы';
+
+  @override
+  String get sectionTitle => 'Заголовок';
+
+  @override
+  String get sectionComputedProperties => 'Вычисленные свойства';
+
+  @override
+  String researchAuthorsEtAl(String author) {
+    return '$author и др.';
+  }
 }

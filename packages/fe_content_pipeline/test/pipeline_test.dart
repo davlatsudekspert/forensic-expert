@@ -247,6 +247,37 @@ void main() {
       expect(cells[3].hasData, isFalse); // xulosa chiqarilmaydi
     });
 
+    test('iqtibos tarjimalari: faqat machine_draft, asl matn xeshiga mos', () {
+      final c = bundle.content;
+      final excerpts = {
+        for (final x in c.claims)
+          if (x.value['excerpt'] case final String e) x.claimId: e,
+      };
+      final tt = c.textTranslations
+          .where((t) => t.target == TextTranslationTarget.claimExcerpt)
+          .toList();
+      expect(tt, isNotEmpty);
+      for (final t in c.textTranslations) {
+        expect(t.status, TextTranslation.machineDraft, reason: t.targetId);
+        expect(TextTranslation.languages, contains(t.lang));
+      }
+      for (final t in tt) {
+        expect(t.matches(excerpts[t.targetId]!), isTrue, reason: t.targetId);
+        expect(t.text, isNot(excerpts[t.targetId]), reason: t.targetId);
+      }
+      // Har bir iqtibos uchun uz va ru (asl matn o‘zgarmagan).
+      for (final id in excerpts.keys) {
+        expect(
+          {
+            for (final t in tt)
+              if (t.targetId == id) t.lang,
+          },
+          {'uz', 'ru'},
+          reason: id,
+        );
+      }
+    });
+
     test('bepul demo: ko‘pi bilan 3 ta yozuv', () {
       expect(
         bundle.substances.where((s) => s.tierAccess == 'free').length,
@@ -397,6 +428,34 @@ void main() {
       expect(
         (await verify(files: {'content.db': bytes})).rejection,
         PackRejection.hashMismatch,
+      );
+    });
+
+    test('baza: text_translations — faqat machine_draft', () async {
+      final d = db.ContentDatabase(
+        NativeDatabase(File('${pack.directory.path}/content.db')),
+      );
+      addTearDown(d.close);
+      final rows = await d
+          .customSelect(
+            'SELECT status, COUNT(*) AS n FROM text_translations GROUP BY 1',
+          )
+          .get();
+      expect(
+        {for (final r in rows) r.read<String>('status')},
+        {'machine_draft'},
+      );
+      expect(
+        rows.single.read<int>('n'),
+        bundle.content.textTranslations.length,
+      );
+      // CHECK: «tekshirilgan» tarjimani bazaga yozib bo‘lmaydi.
+      await expectLater(
+        d.customStatement(
+          'INSERT INTO text_translations VALUES '
+          "('claim_excerpt','X','uz','${'0' * 64}','t','reviewed')",
+        ),
+        throwsA(anything),
       );
     });
 

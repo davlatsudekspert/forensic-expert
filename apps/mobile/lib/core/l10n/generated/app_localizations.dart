@@ -10766,6 +10766,114 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'This deck is not available.'**
   String get studyDeckNotFound;
+
+  /// Label above an automatic translation shown under a verbatim source excerpt. Must say it is automatic and not verified.
+  ///
+  /// In en, this message translates to:
+  /// **'Automatic translation · not verified'**
+  String get quoteMachineTranslation;
+
+  /// Screen-reader label for the automatic translation block.
+  ///
+  /// In en, this message translates to:
+  /// **'Automatic translation of the source excerpt, not verified by an expert. The original text above is the citation.'**
+  String get quoteMachineTranslationSemantics;
+
+  /// Secondary line under a translated research title.
+  ///
+  /// In en, this message translates to:
+  /// **'Original title: {title}'**
+  String quoteOriginalTitle(String title);
+
+  /// Locator of the quoted passage inside the source.
+  ///
+  /// In en, this message translates to:
+  /// **'§ {section}'**
+  String sourceSectionRef(String section);
+
+  /// Article section name.
+  ///
+  /// In en, this message translates to:
+  /// **'Abstract'**
+  String get sectionAbstract;
+
+  /// Article section name.
+  ///
+  /// In en, this message translates to:
+  /// **'Introduction'**
+  String get sectionIntroduction;
+
+  /// Article section name.
+  ///
+  /// In en, this message translates to:
+  /// **'Background'**
+  String get sectionBackground;
+
+  /// Article section name.
+  ///
+  /// In en, this message translates to:
+  /// **'Methods'**
+  String get sectionMethods;
+
+  /// Article section name.
+  ///
+  /// In en, this message translates to:
+  /// **'Results'**
+  String get sectionResults;
+
+  /// Article section name.
+  ///
+  /// In en, this message translates to:
+  /// **'Discussion'**
+  String get sectionDiscussion;
+
+  /// Article section name.
+  ///
+  /// In en, this message translates to:
+  /// **'Conclusions'**
+  String get sectionConclusion;
+
+  /// Article section name.
+  ///
+  /// In en, this message translates to:
+  /// **'Case report'**
+  String get sectionCaseReport;
+
+  /// Article section name.
+  ///
+  /// In en, this message translates to:
+  /// **'Figure'**
+  String get sectionFigure;
+
+  /// Article section name.
+  ///
+  /// In en, this message translates to:
+  /// **'Table'**
+  String get sectionTable;
+
+  /// Article section name.
+  ///
+  /// In en, this message translates to:
+  /// **'Supplementary material'**
+  String get sectionSupplement;
+
+  /// Article section name.
+  ///
+  /// In en, this message translates to:
+  /// **'Title'**
+  String get sectionTitle;
+
+  /// PubChem record section name.
+  ///
+  /// In en, this message translates to:
+  /// **'Computed properties'**
+  String get sectionComputedProperties;
+
+  /// Short author list: first author followed by et al.
+  ///
+  /// In en, this message translates to:
+  /// **'{author} et al.'**
+  String researchAuthorsEtAl(String author);
 }
 
 class _AppLocalizationsDelegate

@@ -468,3 +468,18 @@ CREATE TABLE term_translations (
   localized_json TEXT NOT NULL,
   status_json TEXT NOT NULL
 ) WITHOUT ROWID;
+
+-- Asl iqtibos / sarlavhaning AVTOMATIK tarjimasi. Asl matn (dalil)
+-- claims/jurisdictional_rules/research_records da o‘zgarmay qoladi.
+-- Status faqat machine_draft: tekshirilgan deb belgilash mumkin emas.
+-- source_sha256 asl matnga mos kelmasa, ilova tarjimani ko‘rsatmaydi.
+CREATE TABLE text_translations (
+  target_type TEXT NOT NULL
+    CHECK (target_type IN ('claim_excerpt','rule_excerpt','research_title')),
+  target_id TEXT NOT NULL,
+  lang TEXT NOT NULL CHECK (lang IN ('uz','ru')),
+  source_sha256 TEXT NOT NULL CHECK (length(source_sha256) = 64),
+  translated_text TEXT NOT NULL CHECK (length(translated_text) > 0),
+  status TEXT NOT NULL CHECK (status = 'machine_draft'),
+  PRIMARY KEY (target_type, target_id, lang)
+) WITHOUT ROWID;

@@ -22,4 +22,5 @@ export 'src/review.dart';
 export 'src/source.dart';
 export 'src/status_resolver.dart';
 export 'src/taxonomy.dart';
+export 'src/text_translation.dart';
 export 'src/validator.dart';

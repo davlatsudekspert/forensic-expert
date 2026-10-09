@@ -5977,4 +5977,65 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get studyDeckNotFound => 'Bu to‘plam mavjud emas.';
+
+  @override
+  String get quoteMachineTranslation => 'Avtomatik tarjima · tekshirilmagan';
+
+  @override
+  String get quoteMachineTranslationSemantics =>
+      'Manbadan iqtibosning avtomatik tarjimasi, ekspert tomonidan tekshirilmagan. Iqtibos — yuqoridagi asl matn.';
+
+  @override
+  String quoteOriginalTitle(String title) {
+    return 'Asl sarlavha: $title';
+  }
+
+  @override
+  String sourceSectionRef(String section) {
+    return '§ $section';
+  }
+
+  @override
+  String get sectionAbstract => 'Annotatsiya';
+
+  @override
+  String get sectionIntroduction => 'Kirish';
+
+  @override
+  String get sectionBackground => 'Asos';
+
+  @override
+  String get sectionMethods => 'Usullar';
+
+  @override
+  String get sectionResults => 'Natijalar';
+
+  @override
+  String get sectionDiscussion => 'Muhokama';
+
+  @override
+  String get sectionConclusion => 'Xulosalar';
+
+  @override
+  String get sectionCaseReport => 'Holat tavsifi';
+
+  @override
+  String get sectionFigure => 'Rasm';
+
+  @override
+  String get sectionTable => 'Jadval';
+
+  @override
+  String get sectionSupplement => 'Qo‘shimcha materiallar';
+
+  @override
+  String get sectionTitle => 'Sarlavha';
+
+  @override
+  String get sectionComputedProperties => 'Hisoblangan xossalar';
+
+  @override
+  String researchAuthorsEtAl(String author) {
+    return '$author va boshq.';
+  }
 }

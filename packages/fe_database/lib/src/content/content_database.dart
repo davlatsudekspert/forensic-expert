@@ -24,7 +24,10 @@ class ContentDatabase extends _$ContentDatabase {
   /// 6 — PHASE 7: source_provenance, claim_lifecycle, evidence_conflicts,
   /// review_actions, metabolite_relations, specimens, standards,
   /// term_translations; yangi graf munosabatlari.
-  static const contentSchemaVersion = 6;
+  ///
+  /// 7 — text_translations: asl iqtibos/sarlavhalarning avtomatik
+  /// (machine_draft) tarjimalari, asl matn xeshi bilan.
+  static const contentSchemaVersion = 7;
 
   @override
   int get schemaVersion => contentSchemaVersion;
