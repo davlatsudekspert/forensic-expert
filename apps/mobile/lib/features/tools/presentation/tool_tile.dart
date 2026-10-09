@@ -1,4 +1,3 @@
-import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -8,11 +7,11 @@ import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
-import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
 import '../../../domain/ports/billing_ports.dart';
 import '../../common/favorite_button.dart';
+import '../../professional/presentation/professional_widgets.dart';
 import '../tool_strings.dart';
 
 /// Vosita kartochkasi: nom, qisqa vazifa, holat va favorite.
@@ -67,41 +66,33 @@ class ToolTile extends ConsumerWidget {
                       l.toolDescription(tool),
                       style: t.bodySmall?.copyWith(color: c.textSecondary),
                     ),
-                    const SizedBox(height: FeSpace.xs),
-                    Wrap(
-                      spacing: FeSpace.xs,
-                      runSpacing: FeSpace.xxs,
-                      children: [
-                        if (locked)
-                          StatusChip(
-                            key: Key('tool.locked.${tool.id}'),
-                            icon: Icons.lock_outline,
-                            label: l.lockedBadge,
-                            color: c.textSecondary,
-                          ),
-                        if (tool.isAvailable) ...[
-                          // Hisoblash moduli dasturiy testlangan; formula
-                          // manbasi alohida ilmiy holatga ega.
-                          StatusChip(
-                            key: Key('tool.engineTested.${tool.id}'),
-                            icon: Icons.memory_outlined,
-                            label: l.calcEngineChip,
-                            color: c.accent,
-                          ),
-                          const ReviewStatusBadge(
-                            status: ScientificStatus.needsReview,
-                            compact: true,
-                          ),
-                        ] else
-                          StatusChip(
-                            icon: Icons.schedule_outlined,
-                            label: tool.plannedRelease == null
-                                ? l.toolStatusPlanned
-                                : '${l.toolStatusPlanned} · ${tool.plannedRelease}',
-                            color: c.textSecondary,
-                          ),
-                      ],
-                    ),
+                    if (locked || !tool.isAvailable) ...[
+                      const SizedBox(height: FeSpace.xs),
+                      Wrap(
+                        spacing: FeSpace.xs,
+                        runSpacing: FeSpace.xxs,
+                        children: [
+                          if (locked)
+                            StatusChip(
+                              key: Key('tool.locked.${tool.id}'),
+                              icon: Icons.lock_outline,
+                              label: l.lockedBadge,
+                              color: c.textSecondary,
+                            ),
+                          // Modul/formula holati har plitkada takrorlanmaydi —
+                          // ro‘yxat ustida bitta [ToolsReviewNote]; to‘liq
+                          // holat vosita sahifasida.
+                          if (!tool.isAvailable)
+                            StatusChip(
+                              icon: Icons.schedule_outlined,
+                              label: tool.plannedRelease == null
+                                  ? l.toolStatusPlanned
+                                  : '${l.toolStatusPlanned} · ${tool.plannedRelease}',
+                              color: c.textSecondary,
+                            ),
+                        ],
+                      ),
+                    ],
                   ],
                 ),
               ),
@@ -112,4 +103,17 @@ class ToolTile extends ConsumerWidget {
       ),
     );
   }
+}
+
+/// Vositalar ro‘yxati ustidagi yagona eslatma: hisoblash modullari dasturiy
+/// sinovdan o‘tgan, formulalar manbasi esa hali ekspert tasdiqlamagan.
+class ToolsReviewNote extends StatelessWidget {
+  const ToolsReviewNote({super.key});
+
+  @override
+  Widget build(BuildContext context) => FeNote(
+    key: const Key('tools.reviewNote'),
+    icon: Icons.fact_check_outlined,
+    text: AppLocalizations.of(context).toolsReviewNote,
+  );
 }

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
@@ -20,7 +21,6 @@ import '../../../domain/professional/professional_models.dart';
 import '../../../domain/professional/review_models.dart';
 import '../../common/view_recorder.dart';
 import '../../disciplines/discipline_strings.dart';
-import '../../legal/presentation/jurisdiction_screens.dart';
 import '../../professional/presentation/professional_widgets.dart';
 import '../../professional/presentation/review_section.dart';
 import '../evidence_strings.dart';
@@ -361,24 +361,24 @@ class ResearchDetailScreen extends ConsumerWidget {
       if (r.pmid != null) ('PMID', r.pmid!),
       if (r.pmcid != null) ('PMCID', r.pmcid!),
       if (r.handle != null) (l.metaHandle, r.handle!),
-      (l.researchDocKind, l.documentKindLabel(documentKindOfResearch(r.kind))),
-      (
-        l.researchOpenAccess,
-        switch (r.openAccess) {
-          'pmc' => l.researchOpenPmc,
-          'free_link' => l.researchOpenLink,
-          _ => l.researchOpenUnknown,
-        },
-      ),
-      (
-        l.researchRelevance,
-        switch (r.forensicRelevance) {
-          ForensicRelevance.unassessed => l.relevanceUnassessed,
-          ForensicRelevance.direct => l.relevanceDirect,
-          ForensicRelevance.supporting => l.relevanceSupporting,
-          ForensicRelevance.background => l.relevanceBackground,
-        },
-      ),
+      // «Hujjat turi» qatori yo‘q (documentKindOfResearch deyarli hammasini
+      // «maqola» deb ko‘rsatardi); noma’lum ochiq kirish va baholanmagan
+      // ahamiyat ko‘rsatilmaydi.
+      if (switch (r.openAccess) {
+            'pmc' => l.researchOpenPmc,
+            'free_link' => l.researchOpenLink,
+            _ => null,
+          }
+          case final oa?)
+        (l.researchOpenAccess, oa),
+      if (switch (r.forensicRelevance) {
+            ForensicRelevance.unassessed => null,
+            ForensicRelevance.direct => l.relevanceDirect,
+            ForensicRelevance.supporting => l.relevanceSupporting,
+            ForensicRelevance.background => l.relevanceBackground,
+          }
+          case final rel?)
+        (l.researchRelevance, rel),
     ];
     return Scaffold(
       appBar: AppBar(title: Text(l.researchKindName(r.kind))),
@@ -416,29 +416,35 @@ class ResearchDetailScreen extends ConsumerWidget {
                   SelectableText(r.title, style: t.titleMedium),
                   const SizedBox(height: FeSpace.sm),
                   FeMetaList(rows: rows),
-                  if (r.sourceApi != null) ...[
-                    const SizedBox(height: FeSpace.xs),
-                    Text(
-                      l.researchSourceApi(r.sourceApi!),
-                      style: t.bodySmall?.copyWith(color: c.textSecondary),
-                    ),
-                  ],
                   if (r.primaryLink case final link?)
-                    Align(
-                      alignment: AlignmentDirectional.centerStart,
-                      child: TextButton.icon(
-                        key: const Key('research.copyLink'),
-                        icon: const Icon(Icons.link),
-                        label: Text(l.researchCopyLink),
-                        onPressed: () async {
-                          await Clipboard.setData(ClipboardData(text: link));
-                          if (context.mounted) {
-                            ScaffoldMessenger.of(context).showSnackBar(
-                              SnackBar(content: Text(l.researchLinkCopied)),
-                            );
-                          }
-                        },
-                      ),
+                    Wrap(
+                      spacing: FeSpace.xs,
+                      children: [
+                        if (Uri.tryParse(link) case final uri?
+                            when uri.hasScheme)
+                          TextButton.icon(
+                            key: const Key('research.openLink'),
+                            icon: const Icon(Icons.open_in_new),
+                            label: Text(l.researchOpenInBrowser),
+                            onPressed: () => launchUrl(
+                              uri,
+                              mode: LaunchMode.externalApplication,
+                            ),
+                          ),
+                        TextButton.icon(
+                          key: const Key('research.copyLink'),
+                          icon: const Icon(Icons.link),
+                          label: Text(l.researchCopyLink),
+                          onPressed: () async {
+                            await Clipboard.setData(ClipboardData(text: link));
+                            if (context.mounted) {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(content: Text(l.researchLinkCopied)),
+                              );
+                            }
+                          },
+                        ),
+                      ],
                     ),
                   if (r.linkedEntityIds.isNotEmpty) ...[
                     FeSectionHeader(l.researchLinked),

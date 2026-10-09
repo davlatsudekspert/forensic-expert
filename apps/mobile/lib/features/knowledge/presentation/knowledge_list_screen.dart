@@ -162,6 +162,8 @@ class AreaHubScreen extends ConsumerWidget {
           style: t.bodySmall,
         ),
         FeSectionHeader(l.moduleHubTools),
+        const ToolsReviewNote(),
+        const SizedBox(height: FeSpace.xs),
         for (final tool in ToolsCatalog.inCategory(
           ToolCategory.forensicMedicine,
         ))

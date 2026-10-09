@@ -32,6 +32,8 @@ class ToolsScreen extends StatelessWidget {
                     style: Theme.of(context).textTheme.bodyMedium
                         ?.copyWith(color: c.textSecondary),
                   ),
+                  const SizedBox(height: FeSpace.sm),
+                  const ToolsReviewNote(),
                   for (final category in ToolCategory.values) ...[
                     FeSectionHeader(l.toolCategoryName(category)),
                     for (final tool in ToolsCatalog.inCategory(category))

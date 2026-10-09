@@ -123,22 +123,30 @@ class _CompareJurisdictionsScreenState
                     )
                   else ...[
                     FeSectionHeader(topicLabel(topic)),
-                    Wrap(
-                      spacing: FeSpace.xs,
-                      runSpacing: FeSpace.xxs,
-                      children: [
-                        for (final tp in topics)
-                          if (topics.length > 1)
-                            ChoiceChip(
-                              key: Key(
-                                'compare.topic.${tp.subjectId}.${tp.topicKey}',
-                              ),
-                              label: Text(topicLabel(tp)),
-                              selected: tp == topic,
-                              onSelected: (_) => setState(() => _topic = tp),
+                    // Mavzular — o‘raladigan ro‘yxat (uzun nomlar 320 dp’da
+                    // kesilmaydi).
+                    if (topics.length > 1)
+                      for (final tp in topics)
+                        Semantics(
+                          selected: tp == topic,
+                          inMutuallyExclusiveGroup: true,
+                          child: ListTile(
+                            key: Key(
+                              'compare.topic.${tp.subjectId}.${tp.topicKey}',
                             ),
-                      ],
-                    ),
+                            contentPadding: EdgeInsets.zero,
+                            dense: true,
+                            visualDensity: VisualDensity.compact,
+                            leading: Icon(
+                              tp == topic
+                                  ? Icons.radio_button_checked
+                                  : Icons.radio_button_unchecked,
+                              color: tp == topic ? c.accent : c.textSecondary,
+                            ),
+                            title: Text(topicLabel(tp)),
+                            onTap: () => setState(() => _topic = tp),
+                          ),
+                        ),
                     Theme(
                       data: Theme.of(context)
                           .copyWith(dividerColor: Colors.transparent),
