@@ -1,0 +1,1680 @@
+{
+ "format": "fe-localized-texts/1",
+ "contract": "docs/L10N_DATA_CONTRACT_D.md",
+ "note": "Automatic drafts (machine_draft), NOT reviewed. Originals stay in content.db; a record applies only while source_sha256 == sha256(utf-8 original). Checked by content/tools/translation_qa.py.",
+ "records": [
+  {
+   "target_type": "screening_field",
+   "target_id": "scr-immunoassay-drugs#analyte",
+   "source_lang": "en",
+   "source_text": "drugs of abuse (class-based; see source)",
+   "source_sha256": "d5e89b0407c4f63fd2d38b4a143f8b0869a8206ffb4a7777d21894f157db8e9e",
+   "text": {
+    "uz": "suiiste’mol qilinadigan moddalar (sinf bo‘yicha; manbaga qarang)",
+    "ru": "наркотические и психоактивные вещества (по классам; см. источник)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "screening_field",
+   "target_id": "scr-immunoassay-drugs#specimen",
+   "source_lang": "en",
+   "source_text": "not specified in source",
+   "source_sha256": "afd81d778811655574320e94b529228f8cefa20d4c76b94688ad361ace44c23c",
+   "text": {
+    "uz": "manbada ko‘rsatilmagan",
+    "ru": "в источнике не указано"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "screening_field",
+   "target_id": "scr-immunoassay-drugs#principle",
+   "source_lang": "en",
+   "source_text": "immunoassay",
+   "source_sha256": "4ea53b45a6704cc2bce7c15db2f79425911e2722830d3e97e072e6d421010448",
+   "text": {
+    "uz": "immunoanaliz",
+    "ru": "иммуноанализ"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "screening_field",
+   "target_id": "scr-fentanyl-test-strips#analyte",
+   "source_lang": "en",
+   "source_text": "fentanyl and some analogues (see source)",
+   "source_sha256": "98374442c51ca6ced51801e4cda45305bbc5cbe559a5e5b1bbe9e0ebc7d43a0d",
+   "text": {
+    "uz": "fentanil va uning ayrim analoglari (manbaga qarang)",
+    "ru": "фентанил и некоторые его аналоги (см. источник)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "screening_field",
+   "target_id": "scr-fentanyl-test-strips#specimen",
+   "source_lang": "en",
+   "source_text": "not specified in source",
+   "source_sha256": "afd81d778811655574320e94b529228f8cefa20d4c76b94688ad361ace44c23c",
+   "text": {
+    "uz": "manbada ko‘rsatilmagan",
+    "ru": "в источнике не указано"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "screening_field",
+   "target_id": "scr-fentanyl-test-strips#principle",
+   "source_lang": "en",
+   "source_text": "test strip (see source)",
+   "source_sha256": "d9db1b81b02b91011193955253112beffda6309f44c7a69a5364907df765ff85",
+   "text": {
+    "uz": "test chizig‘i (manbaga qarang)",
+    "ru": "тест-полоска (см. источник)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "screening_field",
+   "target_id": "scr-immunoassay-amphetamines#analyte",
+   "source_lang": "en",
+   "source_text": "amphetamines (class-based)",
+   "source_sha256": "e35be7141005f5d28e7c23721b3008141ca6cf8134ed347e2d9192e112e02476",
+   "text": {
+    "uz": "amfetaminlar (sinf bo‘yicha)",
+    "ru": "амфетамины (по классу)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "screening_field",
+   "target_id": "scr-immunoassay-amphetamines#specimen",
+   "source_lang": "en",
+   "source_text": "not specified in source",
+   "source_sha256": "afd81d778811655574320e94b529228f8cefa20d4c76b94688ad361ace44c23c",
+   "text": {
+    "uz": "manbada ko‘rsatilmagan",
+    "ru": "в источнике не указано"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "screening_field",
+   "target_id": "scr-immunoassay-amphetamines#principle",
+   "source_lang": "en",
+   "source_text": "immunoassay",
+   "source_sha256": "4ea53b45a6704cc2bce7c15db2f79425911e2722830d3e97e072e6d421010448",
+   "text": {
+    "uz": "immunoanaliz",
+    "ru": "иммуноанализ"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "screening_field",
+   "target_id": "scr-immunoassay-opiates#analyte",
+   "source_lang": "en",
+   "source_text": "opiates (class-based)",
+   "source_sha256": "f24a637c0f665861a900927832d7e6e692118d8a6845878645a0ef087bfecf21",
+   "text": {
+    "uz": "opiatlar (sinf bo‘yicha)",
+    "ru": "опиаты (по классу)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "screening_field",
+   "target_id": "scr-immunoassay-opiates#specimen",
+   "source_lang": "en",
+   "source_text": "not specified in source",
+   "source_sha256": "afd81d778811655574320e94b529228f8cefa20d4c76b94688ad361ace44c23c",
+   "text": {
+    "uz": "manbada ko‘rsatilmagan",
+    "ru": "в источнике не указано"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "screening_field",
+   "target_id": "scr-immunoassay-opiates#principle",
+   "source_lang": "en",
+   "source_text": "immunoassay",
+   "source_sha256": "4ea53b45a6704cc2bce7c15db2f79425911e2722830d3e97e072e6d421010448",
+   "text": {
+    "uz": "immunoanaliz",
+    "ru": "иммуноанализ"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "screening_field",
+   "target_id": "scr-immunoassay-cannabinoids#analyte",
+   "source_lang": "en",
+   "source_text": "THC metabolites (class-based)",
+   "source_sha256": "52307fdbe867aa0ffde753dc6c99fdfcdfefbad34ace7a98f9f3e1c22fa86a7b",
+   "text": {
+    "uz": "THC metabolitlari (sinf bo‘yicha)",
+    "ru": "метаболиты THC (по классу)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "screening_field",
+   "target_id": "scr-immunoassay-cannabinoids#specimen",
+   "source_lang": "en",
+   "source_text": "not specified in source",
+   "source_sha256": "afd81d778811655574320e94b529228f8cefa20d4c76b94688ad361ace44c23c",
+   "text": {
+    "uz": "manbada ko‘rsatilmagan",
+    "ru": "в источнике не указано"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "screening_field",
+   "target_id": "scr-immunoassay-cannabinoids#principle",
+   "source_lang": "en",
+   "source_text": "immunoassay",
+   "source_sha256": "4ea53b45a6704cc2bce7c15db2f79425911e2722830d3e97e072e6d421010448",
+   "text": {
+    "uz": "immunoanaliz",
+    "ru": "иммуноанализ"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "screening_field",
+   "target_id": "scr-immunoassay-fentanyl#analyte",
+   "source_lang": "en",
+   "source_text": "fentanyl (class-based)",
+   "source_sha256": "df4cf3bdb16fd20b57bcf9cfb3496b9fc64a5d0beb73e6d8d76030fd954ba64d",
+   "text": {
+    "uz": "fentanil (sinf bo‘yicha)",
+    "ru": "фентанил (по классу)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "screening_field",
+   "target_id": "scr-immunoassay-fentanyl#specimen",
+   "source_lang": "en",
+   "source_text": "not specified in source",
+   "source_sha256": "afd81d778811655574320e94b529228f8cefa20d4c76b94688ad361ace44c23c",
+   "text": {
+    "uz": "manbada ko‘rsatilmagan",
+    "ru": "в источнике не указано"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "screening_field",
+   "target_id": "scr-immunoassay-fentanyl#principle",
+   "source_lang": "en",
+   "source_text": "immunoassay",
+   "source_sha256": "4ea53b45a6704cc2bce7c15db2f79425911e2722830d3e97e072e6d421010448",
+   "text": {
+    "uz": "immunoanaliz",
+    "ru": "иммуноанализ"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "screening_field",
+   "target_id": "scr-colour-tests#analyte",
+   "source_lang": "en",
+   "source_text": "various (presumptive)",
+   "source_sha256": "a0b016f6305eea875a361b39355e1ab63e8737d7e013d9cb54a81f6c2d566299",
+   "text": {
+    "uz": "turli moddalar (taxminiy natija)",
+    "ru": "различные вещества (предварительный результат)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "screening_field",
+   "target_id": "scr-colour-tests#specimen",
+   "source_lang": "en",
+   "source_text": "seized material (see source)",
+   "source_sha256": "80f40e5ecc47eadc6d5047a00076258cbfbbc6777fe009fc8ece5eb77d4cb78d",
+   "text": {
+    "uz": "musodara qilingan material (manbaga qarang)",
+    "ru": "изъятый материал (см. источник)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "screening_field",
+   "target_id": "scr-colour-tests#principle",
+   "source_lang": "en",
+   "source_text": "colour (spot) reaction",
+   "source_sha256": "7cc73d4ac3f8ab8bd85c50fd7e10818ee831bf705d752370c12148350eb8f5e5",
+   "text": {
+    "uz": "rangli (tomchi) reaksiya",
+    "ru": "цветная (капельная) реакция"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "conflict_text",
+   "target_id": "CF-VITREOUS-K-PMI#question",
+   "source_lang": "en",
+   "source_text": "Can vitreous potassium be used to estimate the post-mortem interval?",
+   "source_sha256": "247592d4dfa5bc5aae3d33c134737a59069c64ea0b6178bd3205a60b3f72e13e",
+   "text": {
+    "uz": "Ko‘z shishasimon tanasidagi kaliy bo‘yicha o‘limdan keyin o‘tgan vaqt oralig‘ini (PMI) baholash mumkinmi?",
+    "ru": "Можно ли оценивать посмертный интервал (PMI) по калию стекловидного тела?"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "conflict_text",
+   "target_id": "CF-VITREOUS-K-PMI#note",
+   "source_lang": "en",
+   "source_text": "One source reports a linear rise of vitreous potassium with advancing PMI; another reports an inconsistent influence of temperature and calls it a potential confounding factor.",
+   "source_sha256": "293509b55910bfcf30b9cbf7e38304356e80a1d17cd27079be3335c7cfd20c3a",
+   "text": {
+    "uz": "Bir manbada ko‘z shishasimon tanasidagi kaliy PMI ortishi bilan chiziqli oshishi qayd etilgan; boshqasida haroratning ta’siri bir xil emasligi aytilib, u ehtimoliy chalkashtiruvchi omil deb ataladi.",
+    "ru": "Один источник сообщает о линейном росте калия стекловидного тела по мере увеличения PMI; другой — о непостоянном влиянии температуры и называет её возможным искажающим фактором."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "conflict_text",
+   "target_id": "CF-METHADONE-PM-VS-LIVING#question",
+   "source_lang": "en",
+   "source_text": "Does a post-mortem methadone blood concentration distinguish toxicity from therapeutic use?",
+   "source_sha256": "38714ca389e917809ec189aa21a145109a11da697c16aa79f278057a547be05d",
+   "text": {
+    "uz": "Metadonning o‘limdan keyingi qondagi konsentratsiyasi toksik ta’sirni davolash maqsadidagi qabuldan ajratib bera oladimi?",
+    "ru": "Позволяет ли посмертная концентрация метадона в крови отличить токсическое действие от терапевтического применения?"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "conflict_text",
+   "target_id": "CF-METHADONE-PM-VS-LIVING#note",
+   "source_lang": "en",
+   "source_text": "The source states that the mean adult post-mortem concentration (503 ng/mL) overlaps the range reported in living patients on maintenance treatment (400–1000 ng/mL).",
+   "source_sha256": "ed5e5ee985bd2f4bc496091f7b604ae40ac87c8961697f39004ce3e303440802",
+   "text": {
+    "uz": "Manbaga ko‘ra, kattalardagi o‘rtacha o‘limdan keyingi konsentratsiya (503 ng/mL) qo‘llab-quvvatlovchi davolanishdagi tirik bemorlar uchun keltirilgan diapazon (400–1000 ng/mL) bilan ustma-ust tushadi.",
+    "ru": "Согласно источнику, средняя посмертная концентрация у взрослых (503 ng/mL) перекрывается с диапазоном, описанным у живых пациентов на поддерживающей терапии (400–1000 ng/mL)."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "conflict_text",
+   "target_id": "CF-FENTANYL-INCIDENTAL#question",
+   "source_lang": "en",
+   "source_text": "Can a fentanyl blood concentration alone separate fentanyl-attributed deaths from incidental findings?",
+   "source_sha256": "d60cf53da0e3337b0c4b51d64c1a20e8014a37e23d1da620113c2907ac64d577",
+   "text": {
+    "uz": "Faqat qondagi fentanil konsentratsiyasi asosida fentanil sabab bo‘lgan o‘limlarni tasodifiy topilmalardan ajratish mumkinmi?",
+    "ru": "Можно ли только по концентрации фентанила в крови отделить смерти, вызванные фентанилом, от случайных находок?"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "conflict_text",
+   "target_id": "CF-FENTANYL-INCIDENTAL#note",
+   "source_lang": "en",
+   "source_text": "The source reports partial overlap with blood values in natural-cause deaths where fentanyl was considered incidental (n = 12, 2.7–33 ng/mL).",
+   "source_sha256": "4448232b4df29031949b90d6b4ce3b38113fe0a7727c7960a012a6aa53e2b8dc",
+   "text": {
+    "uz": "Manbada fentanil tasodifiy topilma deb hisoblangan tabiiy sabablardan o‘lim holatlaridagi qon ko‘rsatkichlari bilan qisman ustma-ust tushish qayd etilgan (n = 12, 2,7–33 ng/mL).",
+    "ru": "Источник сообщает о частичном перекрытии со значениями в крови при смерти от естественных причин, когда фентанил считался случайной находкой (n = 12, 2,7–33 ng/mL)."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "conflict_text",
+   "target_id": "CF-TRAMADOL-M2-ACTIVITY#question",
+   "source_lang": "en",
+   "source_text": "Is N-desmethyltramadol (M2) described as an active metabolite?",
+   "source_sha256": "f89ea33ecd729009106b8477ab526cfab8ff5b1f73880614497dc7b4b14044dd",
+   "text": {
+    "uz": "N-desmetiltramadol (M2) faol metabolit sifatida tavsiflanadimi?",
+    "ru": "Описывается ли N-десметилтрамадол (M2) как активный метаболит?"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "conflict_text",
+   "target_id": "CF-TRAMADOL-M2-ACTIVITY#note",
+   "source_lang": "en",
+   "source_text": "One source names only O-desmethyltramadol as the active metabolite and M2 simply as 'the metabolite M2'; another describes both M1 and M2 as 'active metabolites'.",
+   "source_sha256": "845b4b502e6376aefb603ecc5d7e38c6d2d4e99f7ced5110cc43e3c10dbba09f",
+   "text": {
+    "uz": "Bir manba faol metabolit sifatida faqat O-desmetiltramadolni ko‘rsatadi, M2 ni esa shunchaki «M2 metaboliti» deb ataydi; boshqasi M1 va M2 ning ikkalasini ham «faol metabolitlar» deb tavsiflaydi.",
+    "ru": "Один источник называет активным метаболитом только O-десметилтрамадол, а M2 — просто «метаболитом M2»; другой описывает M1 и M2 как «активные метаболиты»."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "standard_note",
+   "target_id": "STD-ICH-Q2R2",
+   "source_lang": "en",
+   "source_text": "Pharmaceutical scope; applicability to forensic methods is a laboratory decision.",
+   "source_sha256": "53e8b6d758a4de84fee9a8815eda883ea3fec2b221a052851cc7463f74fc81db",
+   "text": {
+    "uz": "Farmatsevtika sohasiga mo‘ljallangan; sud-ekspert usullariga qo‘llash-qo‘llamaslikni laboratoriya hal qiladi.",
+    "ru": "Область применения — фармацевтика; применимость к судебно-экспертным методам определяет лаборатория."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "standard_note",
+   "target_id": "STD-ICH-Q2R1",
+   "source_lang": "en",
+   "source_text": "Superseded by Q2(R2) (complete revision; history table in Q2(R2)).",
+   "source_sha256": "6201b5f3118a2efe39b9ce6156c4c69ac542bf41782a597ea7ac5431950dd3be",
+   "text": {
+    "uz": "Q2(R2) bilan almashtirilgan (to‘liq qayta ko‘rib chiqilgan; o‘zgarishlar tarixi jadvali Q2(R2) da).",
+    "ru": "Заменён Q2(R2) (полный пересмотр; таблица истории изменений — в Q2(R2))."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "standard_note",
+   "target_id": "STD-UNODC-ST-NAR-41",
+   "source_lang": "en",
+   "source_text": "Status 'current' means no successor was found on the publisher page; not a statement of endorsement.",
+   "source_sha256": "6a98e49a2cf18ebdd9824abbf25e91569f7ae79994b1d3d65614b56b31eba647",
+   "text": {
+    "uz": "«Amaldagi» holati noshir sahifasida keyingi tahrir topilmaganini bildiradi; bu tavsiya yoki ma’qullash emas.",
+    "ru": "Статус «действующий» означает, что на странице издателя не найден документ-преемник; это не означает одобрения."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "standard_note",
+   "target_id": "STD-ASB-056-25",
+   "source_lang": "en",
+   "source_text": "Listed on the OSAC Registry (SDO published standard). Text not reproduced.",
+   "source_sha256": "284626fed4877e881a1d13daa4a0406f1d48587bbf7e1af9d8c57adccedacdac",
+   "text": {
+    "uz": "OSAC reyestriga kiritilgan (SDO tomonidan nashr etilgan standart). Matni ilovada keltirilmaydi.",
+    "ru": "Включён в реестр OSAC (стандарт, опубликованный SDO). Текст не воспроизводится."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "standard_note",
+   "target_id": "STD-ASB-017-25",
+   "source_lang": "en",
+   "source_text": "Listed on the OSAC Registry (SDO published standard). Text not reproduced.",
+   "source_sha256": "284626fed4877e881a1d13daa4a0406f1d48587bbf7e1af9d8c57adccedacdac",
+   "text": {
+    "uz": "OSAC reyestriga kiritilgan (SDO tomonidan nashr etilgan standart). Matni ilovada keltirilmaydi.",
+    "ru": "Включён в реестр OSAC (стандарт, опубликованный SDO). Текст не воспроизводится."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "standard_note",
+   "target_id": "STD-ASTM-E2329-25",
+   "source_lang": "en",
+   "source_text": "Listed on the OSAC Registry (SDO published standard). Text not reproduced.",
+   "source_sha256": "284626fed4877e881a1d13daa4a0406f1d48587bbf7e1af9d8c57adccedacdac",
+   "text": {
+    "uz": "OSAC reyestriga kiritilgan (SDO tomonidan nashr etilgan standart). Matni ilovada keltirilmaydi.",
+    "ru": "Включён в реестр OSAC (стандарт, опубликованный SDO). Текст не воспроизводится."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "standard_note",
+   "target_id": "STD-OSAC-2025-S-0010",
+   "source_lang": "en",
+   "source_text": "OSAC Proposed Standard, in SDO development — not a published SDO standard.",
+   "source_sha256": "38720d04ba727cbc7d00e3435471c6e3167fc82d62e4c333af840b05667ed9ae",
+   "text": {
+    "uz": "OSAC taklif etgan standart, SDO da ishlab chiqilmoqda — SDO tomonidan nashr etilgan standart emas.",
+    "ru": "Предлагаемый стандарт OSAC, находится в разработке в SDO — не опубликованный стандарт SDO."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-ETHANOL-METABOLITES#items[0]",
+   "source_lang": "en",
+   "source_text": "acetaldehyde",
+   "source_sha256": "e747dfc56530c65b4dd7976d3916f01d7d2cd8bde2dbf0f1e2766361b23a4e38",
+   "text": {
+    "uz": "atsetaldegid",
+    "ru": "ацетальдегид"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-ETHANOL-METABOLITES#items[1]",
+   "source_lang": "en",
+   "source_text": "acetate",
+   "source_sha256": "1fd391c7b3399f158c078e8a3008e04509883932020ee2b6976645704e565a15",
+   "text": {
+    "uz": "atsetat",
+    "ru": "ацетат"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-ETHANOL-METABOLITES#items[2]",
+   "source_lang": "en",
+   "source_text": "acetyl-CoA",
+   "source_sha256": "774faf5b436cd59f51eadf31189e170d3e052cf2b92926343589d0bb63bf50fe",
+   "text": {
+    "uz": "atsetil-CoA",
+    "ru": "ацетил-CoA"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-METHANOL-METABOLITES#items[0]",
+   "source_lang": "en",
+   "source_text": "formaldehyde",
+   "source_sha256": "3299926263e92c7d05376451d74f65ca3e4790556cbf6a0fb108687a12acfbc8",
+   "text": {
+    "uz": "formaldegid",
+    "ru": "формальдегид"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-METHANOL-METABOLITES#items[1]",
+   "source_lang": "en",
+   "source_text": "formic acid",
+   "source_sha256": "c967516c9b53f901a11e9f9da3bcd8af8e806a8293a3cc827683396a5be532ea",
+   "text": {
+    "uz": "chumoli kislota",
+    "ru": "муравьиная кислота"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-ETHYLENE-GLYCOL-METABOLITES#items[0]",
+   "source_lang": "en",
+   "source_text": "glycolaldehyde",
+   "source_sha256": "258b4fe102693ae1cdc2d30b719bcd031abb794324ccf8f0e7cad9a5317f1415",
+   "text": {
+    "uz": "glikolaldegid",
+    "ru": "гликольальдегид"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-ETHYLENE-GLYCOL-METABOLITES#items[1]",
+   "source_lang": "en",
+   "source_text": "glycolate",
+   "source_sha256": "6f2ee841a84b1bbf1116b5ee9710a9f8c421e99ef1bf725aacb1feafec1b1463",
+   "text": {
+    "uz": "glikolat",
+    "ru": "гликолат"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-MORPHINE-METABOLITES#items[0]",
+   "source_lang": "en",
+   "source_text": "morphine-3-glucuronide (M3G)",
+   "source_sha256": "e114edead13f3b4101d1a14c1892706a96602f7a946a56de22f609035e9256da",
+   "text": {
+    "uz": "morfin-3-glyukuronid (M3G)",
+    "ru": "морфин-3-глюкуронид (M3G)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-MORPHINE-METABOLITES#items[1]",
+   "source_lang": "en",
+   "source_text": "morphine-6-glucuronide (M6G)",
+   "source_sha256": "019633a2c42e4c8b333e21908466d4d0dc7c0a7a0e023f8b3e2a7f547994b6b2",
+   "text": {
+    "uz": "morfin-6-glyukuronid (M6G)",
+    "ru": "морфин-6-глюкуронид (M6G)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-HEROIN-METABOLITES#items[0]",
+   "source_lang": "en",
+   "source_text": "6-monoacetylmorphine (6-MAM)",
+   "source_sha256": "fce56616488aaca17f88f0bb0a79b329bc80c76e1b5b0997774d007c4df5710d",
+   "text": {
+    "uz": "6-monoatsetilmorfin (6-MAM)",
+    "ru": "6-моноацетилморфин (6-MAM)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-HEROIN-METABOLITES#items[1]",
+   "source_lang": "en",
+   "source_text": "morphine",
+   "source_sha256": "26fdcac1e157f107d37cfb39dd8d8f43c648b13c5c09d871c24fa7479dc26b45",
+   "text": {
+    "uz": "morfin",
+    "ru": "морфин"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-FENTANYL-METABOLITES#items[0]",
+   "source_lang": "en",
+   "source_text": "norfentanyl",
+   "source_sha256": "da38eb3404108f8cd3c7471cb928a3532ce0f21126728c163d4472e0bb1dcbcf",
+   "text": {
+    "uz": "norfentanil",
+    "ru": "норфентанил"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-TRAMADOL-METABOLITES#items[0]",
+   "source_lang": "en",
+   "source_text": "O-desmethyltramadol",
+   "source_sha256": "1d6006383619152e86412b2ba9aa0485d20df1b5d227648018a5d0b16efc3034",
+   "text": {
+    "uz": "O-desmetiltramadol",
+    "ru": "O-десметилтрамадол"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-TRAMADOL-METABOLITES#items[1]",
+   "source_lang": "en",
+   "source_text": "M2",
+   "source_sha256": "0892a10ece1f933ee98f5d554601b28f8437801d1aa1b77799e4035ddcb6950c",
+   "text": {
+    "uz": "M2",
+    "ru": "M2"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-TRAMADOL-METABOLITES#items[2]",
+   "source_lang": "en",
+   "source_text": "M5",
+   "source_sha256": "25efb20dfe4953e14dbef1bc5ac6bd7ea8dc659c582e4118260b50508c8f5f25",
+   "text": {
+    "uz": "M5",
+    "ru": "M5"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-METHAMPHETAMINE-METABOLITES#items[0]",
+   "source_lang": "en",
+   "source_text": "4-hydroxymetamphetamine",
+   "source_sha256": "3c5cb90177b1a0e84d3d0a108006b0e73517deec314e040d332b31a4bc469c09",
+   "text": {
+    "uz": "4-gidroksimetamfetamin",
+    "ru": "4-гидроксиметамфетамин"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-METHAMPHETAMINE-METABOLITES#items[1]",
+   "source_lang": "en",
+   "source_text": "amphetamine (AM)",
+   "source_sha256": "3b7752785d7795a3f36381c0da9121876c41d2e0356ada00a19aa05a6a746e2b",
+   "text": {
+    "uz": "amfetamin (AM)",
+    "ru": "амфетамин (AM)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-COCAINE-METABOLITES#items[0]",
+   "source_lang": "en",
+   "source_text": "EME",
+   "source_sha256": "ba8c7c678fe8881e77c6bf996c010f4020145575de29d1d34078098572089dbe",
+   "text": {
+    "uz": "EME (ekgoninmetil efiri)",
+    "ru": "EME (метиловый эфир экгонина)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-COCAINE-METABOLITES#items[1]",
+   "source_lang": "en",
+   "source_text": "BE",
+   "source_sha256": "d5a79707c0bb522e0de814a42fc80baa78e3bec1267720418c8c4c019d53a1fa",
+   "text": {
+    "uz": "BE (benzoilekgonin)",
+    "ru": "BE (бензоилэкгонин)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-COCAINE-METABOLITES#items[2]",
+   "source_lang": "en",
+   "source_text": "ecgonine (EC)",
+   "source_sha256": "04ac73321409f593012dc3a4b5f65bc7dad72299b399773b12a053d7d133a464",
+   "text": {
+    "uz": "ekgonin (EC)",
+    "ru": "экгонин (EC)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-THC-METABOLITES#items[0]",
+   "source_lang": "en",
+   "source_text": "THC-COOH",
+   "source_sha256": "32dcf377164c482b7244929485689969884ee852680d51efcebbde8db8267ff7",
+   "text": {
+    "uz": "THC-COOH",
+    "ru": "THC-COOH"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-THC-METABOLITES#items[1]",
+   "source_lang": "en",
+   "source_text": "11-OH-THC",
+   "source_sha256": "63d03e171566656fbd1aa20c349d42688cf30557e38c2574e093b493b4f93e7c",
+   "text": {
+    "uz": "11-OH-THC",
+    "ru": "11-OH-THC"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-ALPRAZOLAM-METABOLITES#items[0]",
+   "source_lang": "en",
+   "source_text": "4-hydroxyalprazolam",
+   "source_sha256": "de6dc23c8138487ca9e8f40aa7b3f2f2221387d3db64aeed8a926007b370e713",
+   "text": {
+    "uz": "4-gidroksialprazolam",
+    "ru": "4-гидроксиалпразолам"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-ALPRAZOLAM-METABOLITES#items[1]",
+   "source_lang": "en",
+   "source_text": "α-hydroxyalprazolam",
+   "source_sha256": "1c11e5a638353725683cea5693186fb356949bceb4f35a0f976c0d2cf45b472c",
+   "text": {
+    "uz": "α-gidroksialprazolam",
+    "ru": "α-гидроксиалпразолам"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-PHENAZEPAM-METABOLITES#items[0]",
+   "source_lang": "en",
+   "source_text": "3-hydroxyphenazepam",
+   "source_sha256": "260cbc49e85befb92e7b80904f5c47a79ad2f4b11f075c6a9b0f510dddd38a04",
+   "text": {
+    "uz": "3-gidroksifenazepam",
+    "ru": "3-гидроксифеназепам"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-AMITRIPTYLINE-METABOLITES#items[0]",
+   "source_lang": "en",
+   "source_text": "nortriptyline",
+   "source_sha256": "9345ec718f731511f7bf7dcbd96850e1505756a86adfadc1fcbb20b50d498608",
+   "text": {
+    "uz": "nortriptilin",
+    "ru": "нортриптилин"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-PARACETAMOL-METABOLITES#items[0]",
+   "source_lang": "en",
+   "source_text": "sulfate",
+   "source_sha256": "4209a3dbbaa23f07f4644e2ede409b16f2a3a43275f6d0a77820133e1a8f0feb",
+   "text": {
+    "uz": "sulfat",
+    "ru": "сульфат"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-PARACETAMOL-METABOLITES#items[1]",
+   "source_lang": "en",
+   "source_text": "glucuronide",
+   "source_sha256": "28851a6c9a95cbf7e326196cc79685fe875c0a3661fbc516a591d96184f848fa",
+   "text": {
+    "uz": "glyukuronid",
+    "ru": "глюкуронид"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-PARACETAMOL-METABOLITES#items[2]",
+   "source_lang": "en",
+   "source_text": "NAPQI",
+   "source_sha256": "7ad5801d2ca3cad9fbe045d73ca521932d76ee28cb7063319e7a82329ff6a517",
+   "text": {
+    "uz": "NAPQI",
+    "ru": "NAPQI"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-PREGABALIN-METABOLISM_NOTE#items[0]",
+   "source_lang": "en",
+   "source_text": "negligible metabolism",
+   "source_sha256": "9a7f67c0deccd67a122b6cc745a559240e09b52375eb14cc96a693db8396ab6e",
+   "text": {
+    "uz": "metabolizmi juda kam",
+    "ru": "незначительный метаболизм"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-PREGABALIN-METABOLISM_NOTE#items[1]",
+   "source_lang": "en",
+   "source_text": "almost exclusive renal elimination",
+   "source_sha256": "ef5dfe01528084c417facacfc172e155e88608ed75f05c804c4e045eb247ba99",
+   "text": {
+    "uz": "deyarli faqat buyrak orqali chiqariladi",
+    "ru": "выведение почти исключительно почками"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-CARBON-MONOXIDE-BIOMARKER#items[0]",
+   "source_lang": "en",
+   "source_text": "Carboxyhaemoglobin (COHb)",
+   "source_sha256": "0525a4861ca22513cdc0865b200ca02f037852653749f65afc98344113dc3433",
+   "text": {
+    "uz": "Karboksigemoglobin (COHb)",
+    "ru": "Карбоксигемоглобин (COHb)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-CHLORPYRIFOS-METABOLITES#items[0]",
+   "source_lang": "en",
+   "source_text": "chlorpyrifos-oxon",
+   "source_sha256": "35f640b2d9a49816ad4132f57b190f91820d5892d7c6c1374622c29070a76e6a",
+   "text": {
+    "uz": "xlorpirifos-okson",
+    "ru": "хлорпирифос-оксон"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-ALUMINIUM-PHOSPHIDE-TRANSFORMATION_PRODUCT#items[0]",
+   "source_lang": "en",
+   "source_text": "phosphine gas",
+   "source_sha256": "c77d63abe9e16621e9c905ed5d2001b0841c95a401e23c8a125696cfc2537a59",
+   "text": {
+    "uz": "fosfin gazi",
+    "ru": "газообразный фосфин"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-MORPHINE-REPORTED_CONCENTRATION-P5#population",
+   "source_lang": "en",
+   "source_text": "morphine deaths (study cohort; see source)",
+   "source_sha256": "e8cdd25cc0de8d4bd788f157a2281796ca04ee72208f0d6715607473de815e4d",
+   "text": {
+    "uz": "morfin bilan bog‘liq o‘limlar (tadqiqot kogortasi; manbaga qarang)",
+    "ru": "смерти, связанные с морфином (когорта исследования; см. источник)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-MORPHINE-REPORTED_CONCENTRATION-P5#case_type",
+   "source_lang": "en",
+   "source_text": "deaths with morphine findings",
+   "source_sha256": "a699048e614d099f8e899f8aa98ded5b7137608ff9c57fa0cf0bef00d91bf174",
+   "text": {
+    "uz": "morfin aniqlangan o‘lim holatlari",
+    "ru": "случаи смерти с обнаружением морфина"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-MORPHINE-REPORTED_CONCENTRATION-P5#co_intoxicants",
+   "source_lang": "en",
+   "source_text": "stratified: none / alcohol / benzodiazepines / alcohol + benzodiazepines",
+   "source_sha256": "fe3a0606653dbde3a22bc215fdf118c77fc82d452e3b597a0bbe172fee5d84fe",
+   "text": {
+    "uz": "guruhlarga ajratilgan: yo‘q / alkogol / benzodiazepinlar / alkogol + benzodiazepinlar",
+    "ru": "по группам: нет / алкоголь / бензодиазепины / алкоголь + бензодиазепины"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-MORPHINE-REPORTED_CONCENTRATION-P5#statistic",
+   "source_lang": "en",
+   "source_text": "median per group: 0.30 / 0.40 / 0.53 / 0.80 μg/mL",
+   "source_sha256": "20830027149a8d4a140e29bb6b89083b7b4f9ff91a1b4a22124a4eaefa68ccb9",
+   "text": {
+    "uz": "har bir guruh medianasi: 0,30 / 0,40 / 0,53 / 0,80 μg/mL",
+    "ru": "медиана по группам: 0,30 / 0,40 / 0,53 / 0,80 μg/mL"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-MORPHINE-REPORTED_CONCENTRATION-P5#limitations[0]",
+   "source_lang": "en",
+   "source_text": "Analyte reported as free morphine.",
+   "source_sha256": "0527624236e5e051e7135bef0ea00b128ba1a486520cdfdf51a89a1fbc402093",
+   "text": {
+    "uz": "Analit erkin morfin sifatida keltirilgan.",
+    "ru": "Аналит указан как свободный морфин."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-MORPHINE-REPORTED_CONCENTRATION-P5#limitations[1]",
+   "source_lang": "en",
+   "source_text": "Group medians only; ranges and group sizes are not in the excerpt.",
+   "source_sha256": "049a48ef1fce7a2895451b16cd91d12a1a94bea1b85b9080deed233698466cce",
+   "text": {
+    "uz": "Faqat guruh medianalari berilgan; diapazonlar va guruhlar hajmi iqtibosda yo‘q.",
+    "ru": "Приведены только медианы групп; диапазонов и численности групп в цитате нет."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-6-MAM-REPORTED_CONCENTRATION-P5#population",
+   "source_lang": "en",
+   "source_text": "heroin-related fatalities, Jeddah 2008–2018; 61–70-year age group",
+   "source_sha256": "56801700c49aedbc7c95f8880fecc0112f723fe93e4055f1b6b0bd704f987826",
+   "text": {
+    "uz": "geroin bilan bog‘liq o‘lim holatlari, Jidda, 2008–2018; 61–70 yoshli guruh",
+    "ru": "смертельные случаи, связанные с героином, Джидда, 2008–2018; возрастная группа 61–70 лет"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-6-MAM-REPORTED_CONCENTRATION-P5#case_type",
+   "source_lang": "en",
+   "source_text": "heroin-related fatalities",
+   "source_sha256": "f1813d114f6aef3c7d33eee32adc2382f4e74744cf5684291076933ac294f9ac",
+   "text": {
+    "uz": "geroin bilan bog‘liq o‘lim holatlari",
+    "ru": "смертельные случаи, связанные с героином"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-6-MAM-REPORTED_CONCENTRATION-P5#statistic",
+   "source_lang": "en",
+   "source_text": "median 21 ng/mL (BNaF); median 52 ng/mL (vitreous humor)",
+   "source_sha256": "99a29cc798b49d43e9153ee5e8faf8e6643f6c300ddefc620d3c57fd42879439",
+   "text": {
+    "uz": "mediana 21 ng/mL (BNaF); mediana 52 ng/mL (ko‘z shishasimon tanasi)",
+    "ru": "медиана 21 ng/mL (BNaF); медиана 52 ng/mL (стекловидное тело)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-6-MAM-REPORTED_CONCENTRATION-P5#limitations[0]",
+   "source_lang": "en",
+   "source_text": "Second matrix is given as 'BNaF'; the abbreviation is not expanded in the excerpt.",
+   "source_sha256": "352d7123bb3cdbabd3290ed362f2f6c1919b5b7dad6d12961c13f4a22349a9c4",
+   "text": {
+    "uz": "Ikkinchi matritsa «BNaF» deb berilgan; qisqartma iqtibosda ochib berilmagan.",
+    "ru": "Вторая матрица обозначена как «BNaF»; сокращение в цитате не расшифровано."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-6-MAM-REPORTED_CONCENTRATION-P5#limitations[1]",
+   "source_lang": "en",
+   "source_text": "Values refer to one age group only.",
+   "source_sha256": "feffca2fd930038bc5b4eee9864363f1cebb7130c3dd4ddedabbf98e2e608cfb",
+   "text": {
+    "uz": "Qiymatlar faqat bitta yosh guruhiga tegishli.",
+    "ru": "Значения относятся только к одной возрастной группе."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-METHADONE-REPORTED_CONCENTRATION-P5#population",
+   "source_lang": "en",
+   "source_text": "adult methadone-related deaths (compared with children)",
+   "source_sha256": "8ac7d66312dfbf71d8a678c750299810df84c781153e2676bb803c22c66b40e4",
+   "text": {
+    "uz": "kattalarda metadon bilan bog‘liq o‘limlar (bolalar bilan taqqoslangan)",
+    "ru": "смерти взрослых, связанные с метадоном (в сравнении с детьми)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-METHADONE-REPORTED_CONCENTRATION-P5#case_type",
+   "source_lang": "en",
+   "source_text": "methadone-related deaths",
+   "source_sha256": "6b0e34b4cca64a2a40b4247e22ce66cb676a67bcb9a992f5338b7388df83ecd3",
+   "text": {
+    "uz": "metadon bilan bog‘liq o‘lim holatlari",
+    "ru": "смерти, связанные с метадоном"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-METHADONE-REPORTED_CONCENTRATION-P5#statistic",
+   "source_lang": "en",
+   "source_text": "mean 503 ng/mL (adults)",
+   "source_sha256": "c0b4a244dfa5a03b3ee145094c6a01553f689f1dcf042d78b1d70899da784fd4",
+   "text": {
+    "uz": "o‘rtacha 503 ng/mL (kattalar)",
+    "ru": "среднее 503 ng/mL (взрослые)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-METHADONE-REPORTED_CONCENTRATION-P5#limitations[0]",
+   "source_lang": "en",
+   "source_text": "The 400–1000 ng/mL range quoted alongside refers to living patients in methadone maintenance treatment, not to this cohort.",
+   "source_sha256": "e580aa997ff8e98bb0a285eff811f9436a6020192586e3dafdb2296e682ef922",
+   "text": {
+    "uz": "Yonida keltirilgan 400–1000 ng/mL diapazoni bu kogortaga emas, metadon bilan qo‘llab-quvvatlovchi davolanishdagi tirik bemorlarga tegishli.",
+    "ru": "Приведённый рядом диапазон 400–1000 ng/mL относится к живым пациентам на поддерживающей терапии метадоном, а не к этой когорте."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-METHADONE-REPORTED_CONCENTRATION-P5#limitations[1]",
+   "source_lang": "en",
+   "source_text": "Post-mortem values overlap living-patient values (see EVIDENCE CONFLICT).",
+   "source_sha256": "68ffb0e7426a96a1d3e20453f4f49e265176ec3e89b7c5e7426ff6333e606612",
+   "text": {
+    "uz": "O‘limdan keyingi qiymatlar tirik bemorlardagi qiymatlar bilan ustma-ust tushadi («Dalillar ziddiyati»ga qarang).",
+    "ru": "Посмертные значения перекрываются со значениями у живых пациентов (см. «Противоречие доказательств»)."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-TRAMADOL-REPORTED_CONCENTRATION-P5#population",
+   "source_lang": "en",
+   "source_text": "single previously reported case",
+   "source_sha256": "e205a5cb783fabb10d13500eac1652e1ce0cfa67bb9c6e0ec900eb70ee5beb8a",
+   "text": {
+    "uz": "ilgari tavsiflangan yagona holat",
+    "ru": "единственный ранее описанный случай"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-TRAMADOL-REPORTED_CONCENTRATION-P5#case_type",
+   "source_lang": "en",
+   "source_text": "tramadol poisoning with hypoglycaemia and cardiac arrest (fatal outcome)",
+   "source_sha256": "de4fef73c47befd9c2d0c698e4c3720e70c78ce300f52f499fc07ef80dcd6569",
+   "text": {
+    "uz": "gipoglikemiya va yurak to‘xtashi bilan kechgan tramadol bilan zaharlanish (o‘lim bilan tugagan)",
+    "ru": "отравление трамадолом с гипогликемией и остановкой сердца (летальный исход)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-TRAMADOL-REPORTED_CONCENTRATION-P5#statistic",
+   "source_lang": "en",
+   "source_text": "single value 5.2 mg/L (plasma)",
+   "source_sha256": "75cb4e74d6f0dec8a89527d40c8085a8d769ffd56894fa1602f6c5659f4a0022",
+   "text": {
+    "uz": "yagona qiymat 5,2 mg/L (plazma)",
+    "ru": "единичное значение 5,2 mg/L (плазма)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-TRAMADOL-REPORTED_CONCENTRATION-P5#limitations[0]",
+   "source_lang": "en",
+   "source_text": "Value is cited from an earlier report, not measured by the citing authors.",
+   "source_sha256": "d45f244d995073655545d3b4ffc4872035e74408df65a8c09273c54119d5bc0f",
+   "text": {
+    "uz": "Qiymat oldingi hisobotdan olingan, iqtibos keltirgan mualliflar tomonidan o‘lchanmagan.",
+    "ru": "Значение взято из более ранней публикации и не измерялось цитирующими авторами."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-TRAMADOL-REPORTED_CONCENTRATION-P5#limitations[1]",
+   "source_lang": "en",
+   "source_text": "Whether the plasma sample was taken before or after death is not stated in the excerpt.",
+   "source_sha256": "d86460b342e75fbb35b229fc8a416c951c79919ae38f2d6d787ac34ccd8d71fa",
+   "text": {
+    "uz": "Plazma namunasi o‘limdan oldin yoki keyin olingani iqtibosda ko‘rsatilmagan.",
+    "ru": "Был ли образец плазмы взят до или после смерти, в цитате не указано."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-FENTANYL-REPORTED_CONCENTRATION-P5#population",
+   "source_lang": "en",
+   "source_text": "deaths from natural causes with an incidental fentanyl finding",
+   "source_sha256": "0ab55cb5a521b97543c3366c9c262f4a3634fea61ab0fab82dffa95a99c70788",
+   "text": {
+    "uz": "fentanil tasodifan aniqlangan tabiiy sabablardan o‘lim holatlari",
+    "ru": "смерти от естественных причин со случайной находкой фентанила"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-FENTANYL-REPORTED_CONCENTRATION-P5#case_type",
+   "source_lang": "en",
+   "source_text": "natural deaths; fentanyl considered incidental",
+   "source_sha256": "ca1638b0c8c7ac5a4b073e0cdbc49bf13c7165c7d4d55d89259f7ebe868cb1df",
+   "text": {
+    "uz": "tabiiy o‘lim; fentanil tasodifiy topilma deb hisoblangan",
+    "ru": "естественная смерть; фентанил расценён как случайная находка"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-FENTANYL-REPORTED_CONCENTRATION-P5#statistic",
+   "source_lang": "en",
+   "source_text": "range 2.7–33 ng/mL; mean 12 ng/mL",
+   "source_sha256": "9eac1fcfce2ffb2e98ad03a5f3b808cc4d8523e35134afba0eb59b3a8a4569da",
+   "text": {
+    "uz": "diapazon 2,7–33 ng/mL; o‘rtacha 12 ng/mL",
+    "ru": "диапазон 2,7–33 ng/mL; среднее 12 ng/mL"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-FENTANYL-REPORTED_CONCENTRATION-P5#limitations[0]",
+   "source_lang": "en",
+   "source_text": "Literature values summarised in a case report / literature review.",
+   "source_sha256": "9ebc15337b8cbe8bd7f3cf4d04a250fd7a448807326e7a6671e474aa622ba7dd",
+   "text": {
+    "uz": "Holat tavsifi / adabiyot sharhida umumlashtirilgan adabiyot qiymatlari.",
+    "ru": "Литературные значения, обобщённые в описании случая / обзоре литературы."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-FENTANYL-REPORTED_CONCENTRATION-P5#limitations[1]",
+   "source_lang": "en",
+   "source_text": "Partially overlaps values in fentanyl-attributed deaths (see EVIDENCE CONFLICT).",
+   "source_sha256": "142cbde696dfb85987130ffdc82cca742e4beea870cbc3549bbb7d656c869b2e",
+   "text": {
+    "uz": "Fentanil sabab bo‘lgan o‘limlardagi qiymatlar bilan qisman ustma-ust tushadi («Dalillar ziddiyati»ga qarang).",
+    "ru": "Частично перекрывается со значениями при смертях, вызванных фентанилом (см. «Противоречие доказательств»)."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-COCAINE-REPORTED_CONCENTRATION-P5#population",
+   "source_lang": "en",
+   "source_text": "deaths reported to the National Programme on Substance Abuse Deaths (2000–2019)",
+   "source_sha256": "61c8e6436abaf6f24e97c100d4c29216c074192939e19d4e8b647be15d372ce3",
+   "text": {
+    "uz": "Psixoaktiv moddalar suiiste’moli tufayli o‘limlar bo‘yicha milliy dasturga (NPSAD) xabar qilingan o‘limlar (2000–2019)",
+    "ru": "смерти, зарегистрированные Национальной программой по смертям от злоупотребления психоактивными веществами (2000–2019)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-COCAINE-REPORTED_CONCENTRATION-P5#case_type",
+   "source_lang": "en",
+   "source_text": "stratified: cardiac-related deaths / acute intoxication / chronic or binge use",
+   "source_sha256": "eb09abc4e859f1419f5c98d29ce233914a02d40cef53ff0c9a2a227513dd7386",
+   "text": {
+    "uz": "guruhlarga ajratilgan: yurak bilan bog‘liq o‘limlar / o‘tkir zaharlanish / surunkali yoki qisqa muddatli ko‘p miqdorda iste’mol",
+    "ru": "по группам: кардиальные смерти / острая интоксикация / хроническое или «запойное» употребление"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-COCAINE-REPORTED_CONCENTRATION-P5#statistic",
+   "source_lang": "en",
+   "source_text": "mean ≈900 / ≈19,100 / ≈6,200 ng/mL",
+   "source_sha256": "72efee8b0d15b48a53a51af554750649bf30bbda3314d2a763fb05d59d5cef31",
+   "text": {
+    "uz": "o‘rtacha ≈900 / ≈19 100 / ≈6 200 ng/mL",
+    "ru": "среднее ≈900 / ≈19 100 / ≈6 200 ng/mL"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-COCAINE-REPORTED_CONCENTRATION-P5#limitations[0]",
+   "source_lang": "en",
+   "source_text": "Approximate means quoted in the introduction of another paper.",
+   "source_sha256": "18f36d0120df48a98a17b372301a78e1182899bed4db42e50b291e55111973ea",
+   "text": {
+    "uz": "Boshqa maqolaning kirish qismida keltirilgan taxminiy o‘rtacha qiymatlar.",
+    "ru": "Приблизительные средние значения, приведённые во введении другой статьи."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-BENZOYLECGONINE-REPORTED_CONCENTRATION-P5#population",
+   "source_lang": "en",
+   "source_text": "motor vehicle drivers in Brittany, France, with at least one positive test",
+   "source_sha256": "83bfabcef0c92f8ae7d756a87239cd753a4a4376bad9e4132e016092a64c36e8",
+   "text": {
+    "uz": "Bretan (Fransiya) avtomobil haydovchilari, kamida bitta musbat test bilan",
+    "ru": "водители автотранспорта в Бретани (Франция) с хотя бы одним положительным тестом"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-BENZOYLECGONINE-REPORTED_CONCENTRATION-P5#case_type",
+   "source_lang": "en",
+   "source_text": "drivers tested for alcohol/drugs",
+   "source_sha256": "9590ed70d332c74c339f2c3eb4665187044db7c95b302efd5dd98959b732b208",
+   "text": {
+    "uz": "alkogol/giyohvand moddalarga tekshirilgan haydovchilar",
+    "ru": "водители, проверенные на алкоголь/наркотики"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-BENZOYLECGONINE-REPORTED_CONCENTRATION-P5#statistic",
+   "source_lang": "en",
+   "source_text": "median 173.3 ng/mL",
+   "source_sha256": "83a4b7d86a30ed2600c2f3a678cd3b888e7cbed95696dfa09b98159dec7db31f",
+   "text": {
+    "uz": "mediana 173,3 ng/mL",
+    "ru": "медиана 173,3 ng/mL"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-BENZOYLECGONINE-REPORTED_CONCENTRATION-P5#limitations[0]",
+   "source_lang": "en",
+   "source_text": "Median across all positive drivers; not limited to cocaine-only cases.",
+   "source_sha256": "f12807b11996dadc2ca4bd2dacedeab426a9502df3d68d10e9cd6f7dd5e916f3",
+   "text": {
+    "uz": "Barcha musbat natijali haydovchilar bo‘yicha mediana; faqat kokain holatlari bilan cheklanmagan.",
+    "ru": "Медиана по всем водителям с положительным результатом; не ограничена случаями только с кокаином."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-AMPHETAMINE-REPORTED_CONCENTRATION-P5#population",
+   "source_lang": "en",
+   "source_text": "two fatal cases after oral ingestion",
+   "source_sha256": "a794e29cc36083a00a0fa4f0d91b5e6125e3f005c79745ee976557e8cca9ff40",
+   "text": {
+    "uz": "og‘iz orqali qabul qilingandan keyingi ikkita o‘lim holati",
+    "ru": "два смертельных случая после приёма внутрь"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-AMPHETAMINE-REPORTED_CONCENTRATION-P5#case_type",
+   "source_lang": "en",
+   "source_text": "fatal oral amphetamine ingestion (case reports)",
+   "source_sha256": "29e83cf89a49a4c61bff3642d691cbba4ca5995d18ad232e31076d96a68567e8",
+   "text": {
+    "uz": "amfetaminni og‘iz orqali qabul qilish natijasida o‘lim (holatlar tavsifi)",
+    "ru": "смертельный пероральный приём амфетамина (описания случаев)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-AMPHETAMINE-REPORTED_CONCENTRATION-P5#statistic",
+   "source_lang": "en",
+   "source_text": "highest values: urine 2600 μg/mL (case 1); stomach content 14,000 μg/g (case 2)",
+   "source_sha256": "ea2d41c55d1c7e5c7bf72b8d20eee03e8330c5c8281432fe56c40d70084c6484",
+   "text": {
+    "uz": "eng yuqori qiymatlar: siydik 2600 μg/mL (1-holat); oshqozon tarkibi 14 000 μg/g (2-holat)",
+    "ru": "наибольшие значения: моча 2600 μg/mL (случай 1); содержимое желудка 14 000 μg/g (случай 2)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-AMPHETAMINE-REPORTED_CONCENTRATION-P5#limitations[0]",
+   "source_lang": "en",
+   "source_text": "Highest values only; different units (μg/mL vs μg/g).",
+   "source_sha256": "7a350cf54a538803ebf382ce8480e4e2bcfda53643e565229318d0b3e6f99c74",
+   "text": {
+    "uz": "Faqat eng yuqori qiymatlar; birliklar har xil (μg/mL va μg/g).",
+    "ru": "Только наибольшие значения; разные единицы (μg/mL и μg/g)."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-AMPHETAMINE-REPORTED_CONCENTRATION-P5#limitations[1]",
+   "source_lang": "en",
+   "source_text": "Two cases — not generalisable.",
+   "source_sha256": "315f50d7e8963435cbf1d1157efba6da9a5276be42aad27eb2a1125434fd60cd",
+   "text": {
+    "uz": "Ikkita holat — umumlashtirib bo‘lmaydi.",
+    "ru": "Два случая — обобщать нельзя."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-METHAMPHETAMINE-REPORTED_CONCENTRATION-P5#population",
+   "source_lang": "en",
+   "source_text": "nation-wide 7-year post-mortem study (see source)",
+   "source_sha256": "f8bec06920b92af65c086027a2c3809e1f121c287093e8c2d6deba82001e3d01",
+   "text": {
+    "uz": "mamlakat miqyosidagi 7 yillik o‘limdan keyingi tadqiqot (manbaga qarang)",
+    "ru": "общенациональное 7-летнее посмертное исследование (см. источник)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-METHAMPHETAMINE-REPORTED_CONCENTRATION-P5#case_type",
+   "source_lang": "en",
+   "source_text": "methamphetamine-positive post-mortem cases",
+   "source_sha256": "249c47606aed960084d157217a3266ef71b623781b9dda6ebf576cc122653b43",
+   "text": {
+    "uz": "metamfetamin aniqlangan o‘limdan keyingi holatlar",
+    "ru": "посмертные случаи, положительные на метамфетамин"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-METHAMPHETAMINE-REPORTED_CONCENTRATION-P5#co_intoxicants",
+   "source_lang": "en",
+   "source_text": "compared: methamphetamine only vs multiple substances",
+   "source_sha256": "78fcba0bbca152e4fba09cda66c9e3de1966e1b83a6d2112a7703e696c30e543",
+   "text": {
+    "uz": "taqqoslangan: faqat metamfetamin va bir nechta modda",
+    "ru": "сравнение: только метамфетамин и несколько веществ"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-METHAMPHETAMINE-REPORTED_CONCENTRATION-P5#statistic",
+   "source_lang": "en",
+   "source_text": "mean 2.68 (SD 13.7) vs 1.62 (SD 7.59) µg/mL; P = 0.255 (not significant)",
+   "source_sha256": "87aa3d4f8ca3abeea65db4edcc46c454b820c5dedb092bc5107a29da21b90fb2",
+   "text": {
+    "uz": "o‘rtacha 2,68 (SD 13,7) va 1,62 (SD 7,59) µg/mL; P = 0,255 (ahamiyatli emas)",
+    "ru": "среднее 2,68 (SD 13,7) и 1,62 (SD 7,59) µg/mL; P = 0,255 (незначимо)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-METHAMPHETAMINE-REPORTED_CONCENTRATION-P5#limitations[0]",
+   "source_lang": "en",
+   "source_text": "SD exceeds the mean — strongly skewed distribution.",
+   "source_sha256": "6402089c81a5abc9c997b85a4176ec65803c1817ff88cac736be01220a56b941",
+   "text": {
+    "uz": "SD o‘rtacha qiymatdan katta — taqsimot kuchli asimmetrik.",
+    "ru": "SD превышает среднее — распределение сильно асимметрично."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-MDMA-REPORTED_CONCENTRATION-P5#population",
+   "source_lang": "en",
+   "source_text": "MDMA-positive coronial cases, New Zealand",
+   "source_sha256": "d3921f053c2d816895b898efa6465a2ec504eef3d8a3f601feba3cc2661c06e0",
+   "text": {
+    "uz": "MDMA aniqlangan koroner holatlari, Yangi Zelandiya",
+    "ru": "коронерские случаи, положительные на MDMA, Новая Зеландия"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-MDMA-REPORTED_CONCENTRATION-P5#study_size",
+   "source_lang": "en",
+   "source_text": "73 quantified of 131",
+   "source_sha256": "40b04b8632d1f0e2ad2ac28628188aec5ca6da9ccad1645f9d1645ebe82227c9",
+   "text": {
+    "uz": "131 tadan 73 tasida miqdor aniqlangan",
+    "ru": "количественно определено в 73 из 131"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-MDMA-REPORTED_CONCENTRATION-P5#case_type",
+   "source_lang": "en",
+   "source_text": "coronial cases",
+   "source_sha256": "dd83ce52dbfbedb4762b5939501d0a7e6be911f4595f1286a509af980dc203b9",
+   "text": {
+    "uz": "koroner holatlari",
+    "ru": "коронерские случаи"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-MDMA-REPORTED_CONCENTRATION-P5#statistic",
+   "source_lang": "en",
+   "source_text": "mean 0.88 mg/L; range 0.01–9.30 mg/L (peripheral blood)",
+   "source_sha256": "effa7822a8137a6331e3c2043b7aeadd8605a23b1b31d61ed621d119072ec11d",
+   "text": {
+    "uz": "o‘rtacha 0,88 mg/L; diapazon 0,01–9,30 mg/L (periferik qon)",
+    "ru": "среднее 0,88 mg/L; диапазон 0,01–9,30 mg/L (периферическая кровь)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-MDMA-REPORTED_CONCENTRATION-P5#limitations[0]",
+   "source_lang": "en",
+   "source_text": "Coronial cases include deaths not caused by MDMA; cause of death is not in the excerpt.",
+   "source_sha256": "ca9171c662170e03dad80f22e3e18fcbbb537df36adfcc9077c2863e5038ebaf",
+   "text": {
+    "uz": "Koroner holatlariga MDMA sabab bo‘lmagan o‘limlar ham kiradi; o‘lim sababi iqtibosda yo‘q.",
+    "ru": "Коронерские случаи включают смерти, не вызванные MDMA; причина смерти в цитате не указана."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-THC-REPORTED_CONCENTRATION-P5#population",
+   "source_lang": "en",
+   "source_text": "paediatric cannabis intoxication cases, France",
+   "source_sha256": "1677f05453a26ac1e892378181d913ed02ed57cb04fc2123843fa8f759ad0a1c",
+   "text": {
+    "uz": "bolalarda kannabis bilan zaharlanish holatlari, Fransiya",
+    "ru": "случаи интоксикации каннабисом у детей, Франция"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-THC-REPORTED_CONCENTRATION-P5#case_type",
+   "source_lang": "en",
+   "source_text": "paediatric cannabis intoxication",
+   "source_sha256": "268b4bf25f5e73047ec709eb6243a76305f00710a95120e30ee2795ac80d3fb4",
+   "text": {
+    "uz": "bolalarda kannabis bilan zaharlanish",
+    "ru": "интоксикация каннабисом у детей"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-THC-REPORTED_CONCENTRATION-P5#statistic",
+   "source_lang": "en",
+   "source_text": "mean THC 29 ng/mL; 11-OH-THC 21 ng/mL; THC-COOH 255 ng/mL (plasma)",
+   "source_sha256": "2d7145496a7d1c71505e59eeb04bacae1daf225b576241cddee1b7ed34282446",
+   "text": {
+    "uz": "o‘rtacha THC 29 ng/mL; 11-OH-THC 21 ng/mL; THC-COOH 255 ng/mL (plazma)",
+    "ru": "среднее THC 29 ng/mL; 11-OH-THC 21 ng/mL; THC-COOH 255 ng/mL (плазма)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-THC-REPORTED_CONCENTRATION-P5#limitations[0]",
+   "source_lang": "en",
+   "source_text": "Cited from another study.",
+   "source_sha256": "0f68563537609dae87d76c699285e906f2b40a660120649436d4b5fb393202e9",
+   "text": {
+    "uz": "Boshqa tadqiqotdan iqtibos.",
+    "ru": "Цитируется по другому исследованию."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-THC-REPORTED_CONCENTRATION-P5#limitations[1]",
+   "source_lang": "en",
+   "source_text": "Time since exposure not stated in the excerpt.",
+   "source_sha256": "17d6a6010438ee654c509492e7f0cf944bcc808336a4b881cec90c3a4479c56a",
+   "text": {
+    "uz": "Ta’sirdan keyin o‘tgan vaqt iqtibosda ko‘rsatilmagan.",
+    "ru": "Время после воздействия в цитате не указано."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-THC-COOH-REPORTED_CONCENTRATION-P5#population",
+   "source_lang": "en",
+   "source_text": "case study reports (see source)",
+   "source_sha256": "5f93bdf2f9b3528b998671f1fdf5cda6a342a0aa3e58552198d1c7d5e6c07e31",
+   "text": {
+    "uz": "holatlar tavsifi (manbaga qarang)",
+    "ru": "описания случаев (см. источник)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-THC-COOH-REPORTED_CONCENTRATION-P5#case_type",
+   "source_lang": "en",
+   "source_text": "cannabis-related case reports",
+   "source_sha256": "484b648ddfccedc88c99a605bf2600e850eafd2b62cf9b1284a930b2eeb32f57",
+   "text": {
+    "uz": "kannabis bilan bog‘liq holatlar tavsifi",
+    "ru": "описания случаев, связанных с каннабисом"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-THC-COOH-REPORTED_CONCENTRATION-P5#statistic",
+   "source_lang": "en",
+   "source_text": "range 8.0–3894 ng/g (liver); 3–1774 ng/mL (kidney, as written)",
+   "source_sha256": "e461dd97aad36f4dfd84e9634849e8f53b96fe0c23ca4f47d024bdd6dd826961",
+   "text": {
+    "uz": "diapazon 8,0–3894 ng/g (jigar); 3–1774 ng/mL (buyrak, manbada shunday yozilgan)",
+    "ru": "диапазон 8,0–3894 ng/g (печень); 3–1774 ng/mL (почка, как указано в источнике)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-THC-COOH-REPORTED_CONCENTRATION-P5#limitations[0]",
+   "source_lang": "en",
+   "source_text": "Kidney tissue values are written in ng/mL in the source — reviewer to check units.",
+   "source_sha256": "028d2f3b40117d8efbe3bee9f7269f8b26e1ffd4f33b9d448e8d07c4b34bcc31",
+   "text": {
+    "uz": "Buyrak to‘qimasi qiymatlari manbada ng/mL da yozilgan — birliklarni ekspert tekshirishi kerak.",
+    "ru": "Значения для ткани почки в источнике даны в ng/mL — единицы должен проверить рецензент."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-ALPRAZOLAM-REPORTED_CONCENTRATION-P5#population",
+   "source_lang": "en",
+   "source_text": "two alprazolam toxicity cases",
+   "source_sha256": "a73a0b12c17ca248d7fd9a4ee276b5bb0096c8fe6b4dd5feefc4a414195c6cd7",
+   "text": {
+    "uz": "alprazolam toksikligining ikkita holati",
+    "ru": "два случая токсичности алпразолама"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-ALPRAZOLAM-REPORTED_CONCENTRATION-P5#case_type",
+   "source_lang": "en",
+   "source_text": "alprazolam toxicity",
+   "source_sha256": "0cafb0fdb3f58552da501a70a4fa2646965179afcaf9710e054e95c43711fa08",
+   "text": {
+    "uz": "alprazolam toksikligi",
+    "ru": "токсичность алпразолама"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-ALPRAZOLAM-REPORTED_CONCENTRATION-P5#statistic",
+   "source_lang": "en",
+   "source_text": "32.8 and 13.0 ng/mL",
+   "source_sha256": "f49e0dde328b29f2a0e96b2303f21f64e6be1f9610d6b402465a92110d4b0461",
+   "text": {
+    "uz": "32,8 va 13,0 ng/mL",
+    "ru": "32,8 и 13,0 ng/mL"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-ALPRAZOLAM-REPORTED_CONCENTRATION-P5#limitations[0]",
+   "source_lang": "en",
+   "source_text": "Cited from other authors.",
+   "source_sha256": "bf02f58740d9dc67d6d375553032b29ade9e85ac633e0c177ff84c559c5c7ecc",
+   "text": {
+    "uz": "Boshqa mualliflardan iqtibos.",
+    "ru": "Цитируется по другим авторам."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-ALPRAZOLAM-REPORTED_CONCENTRATION-P5#limitations[1]",
+   "source_lang": "en",
+   "source_text": "Outcome of the two cases is not stated in the excerpt.",
+   "source_sha256": "532de582c77dc03f3d248984e1bc6f079349a8a40245fbd505afd8404aeeceb6",
+   "text": {
+    "uz": "Ikkala holatning oqibati iqtibosda ko‘rsatilmagan.",
+    "ru": "Исход двух случаев в цитате не указан."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-PREGABALIN-REPORTED_CONCENTRATION-P5#population",
+   "source_lang": "en",
+   "source_text": "drug-related deaths, Australia, 2000–2020",
+   "source_sha256": "3fd30a5e9c77b598160d6bcdd36f9942202decae5618eebd1c3fdd7a7d35ce05",
+   "text": {
+    "uz": "dori/giyohvand moddalar bilan bog‘liq o‘limlar, Avstraliya, 2000–2020",
+    "ru": "смерти, связанные с лекарствами и наркотиками, Австралия, 2000–2020"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-PREGABALIN-REPORTED_CONCENTRATION-P5#case_type",
+   "source_lang": "en",
+   "source_text": "drug-related deaths",
+   "source_sha256": "fdd330843da6073a18c0b6e7edadc3120f2c687152a14312d4d1ec18ef8a53f8",
+   "text": {
+    "uz": "dori/giyohvand moddalar bilan bog‘liq o‘limlar",
+    "ru": "смерти, связанные с лекарствами и наркотиками"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-PREGABALIN-REPORTED_CONCENTRATION-P5#statistic",
+   "source_lang": "en",
+   "source_text": "mean 16.3 mg/L",
+   "source_sha256": "60bc0076537e727b9a9c92987f473509699854326d722135002043e4a255ab80",
+   "text": {
+    "uz": "o‘rtacha 16,3 mg/L",
+    "ru": "среднее 16,3 mg/L"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-PREGABALIN-REPORTED_CONCENTRATION-P5#limitations[0]",
+   "source_lang": "en",
+   "source_text": "National data quoted for comparison, not measured in the citing study.",
+   "source_sha256": "071235000926ee751a4b701724ae878bf2fb1e8e80d535b9fdc20f83596b89c3",
+   "text": {
+    "uz": "Taqqoslash uchun keltirilgan milliy ma’lumotlar; iqtibos keltirgan tadqiqotda o‘lchanmagan.",
+    "ru": "Национальные данные приведены для сравнения и не измерялись в цитирующем исследовании."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "topic_body",
+   "target_id": "tox-postmortem-redistribution",
+   "source_lang": "en",
+   "derived": true,
+   "source_claims": [
+    "C-TOX-POSTMORTEM-REDISTRIBUTION-PRINCIPLE-P8"
+   ],
+   "source_text": "For example, basic lipophilic drugs with a volume of distribution higher than 3 L/kg are likely to undergo PMR.",
+   "source_sha256": "36ab38386806601a2b3ea3daf22f3e580ca31bb9edd6a31aacb0459c89b1273d",
+   "text": {
+    "uz": "O‘limdan keyingi qayta taqsimlanish (PMR) — dori konsentratsiyasini talqin qilishda hisobga olinadigan hodisa. Kartadagi manbali da’voga ko‘ra, taqsimlanish hajmi (Vd) 3 L/kg dan yuqori bo‘lgan asosli lipofil dori vositalarida PMR ehtimoli yuqori. Bu tushuntirish faqat shu manbali da’vodan olingan; boshqa bo‘limlar (ta’rif, usullar, cheklovlar) uchun hali manba yo‘q.",
+    "ru": "Посмертное перераспределение (PMR) — явление, которое учитывают при интерпретации концентраций лекарственных веществ. Согласно источнику карточки, основные липофильные препараты с объёмом распределения (Vd) выше 3 L/kg с большой вероятностью подвергаются PMR. Пояснение составлено только по этому утверждению из источника; для других разделов (определение, методы, ограничения) источника пока нет.",
+    "en": "Postmortem redistribution (PMR) is taken into account when drug concentrations are interpreted. According to the card’s source, basic lipophilic drugs with a volume of distribution (Vd) above 3 L/kg are likely to undergo PMR. This explanation is based only on that sourced statement; the other sections (definition, methods, limitations) have no source yet."
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "source_title",
+   "target_id": "SRC-FE-EDITORIAL",
+   "source_lang": "uz",
+   "source_text": "FORENSIC EXPERT — tahririy izohlar (umumiy xavfsizlik tavsiyalari, manba noaniqliklari); ilmiy manba emas",
+   "source_sha256": "652ebd249a6ce8d8c4dcf4ebb509cdbea7d53d40971c997d7917e80f6313b9e3",
+   "text": {
+    "ru": "FORENSIC EXPERT — редакционные примечания (общие рекомендации по безопасности, неясности источников); не является научным источником",
+    "en": "FORENSIC EXPERT — editorial notes (general safety advice, source ambiguities); not a scientific source"
+   },
+   "status": "machine_draft"
+  }
+ ]
+}

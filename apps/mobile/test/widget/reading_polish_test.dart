@@ -58,7 +58,9 @@ void main() {
     expect(
       inGlance(
         'ethanol',
-        find.textContaining('GX-AID (alanga ionizatsiya detektori)'),
+        find.textContaining(
+          'GC-FID (alanga-ionlanish detektorli gaz xromatografiyasi)',
+        ),
       ),
       findsOne,
     );
@@ -88,7 +90,7 @@ void main() {
     await open(tester, Routes.libraryEntry('morphine'), owned: false);
     expect(find.byKey(const Key('entry.glance.morphine')), findsOneWidget);
     // Yopiq tafsilot nomlari ko‘rinmaydi, faqat son.
-    expect(inGlance('morphine', find.textContaining('SX-MS/MS')), findsNothing);
+    expect(inGlance('morphine', find.textContaining('LC-MS/MS')), findsNothing);
     expect(inGlance('morphine', find.text('Kimyoviy formula')), findsNothing);
     expect(inGlance('morphine', find.byIcon(Icons.lock_outline)), findsWidgets);
     expect(

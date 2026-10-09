@@ -1,0 +1,523 @@
+{
+  "format": "fe-localized-src/1",
+  "status": "machine_draft",
+  "note": "Phase D drafts keyed by the ORIGINAL English text (deduplicated). content/tools/build_localized_d.py expands them into per-target records (localized_texts_d.json) with source_sha256. Not reviewed.",
+  "texts": {
+    "drugs of abuse (class-based; see source)": {
+      "uz": "suiiste’mol qilinadigan moddalar (sinf bo‘yicha; manbaga qarang)",
+      "ru": "наркотические и психоактивные вещества (по классам; см. источник)"
+    },
+    "not specified in source": {
+      "uz": "manbada ko‘rsatilmagan",
+      "ru": "в источнике не указано"
+    },
+    "immunoassay": {
+      "uz": "immunoanaliz",
+      "ru": "иммуноанализ"
+    },
+    "fentanyl and some analogues (see source)": {
+      "uz": "fentanil va uning ayrim analoglari (manbaga qarang)",
+      "ru": "фентанил и некоторые его аналоги (см. источник)"
+    },
+    "test strip (see source)": {
+      "uz": "test chizig‘i (manbaga qarang)",
+      "ru": "тест-полоска (см. источник)"
+    },
+    "amphetamines (class-based)": {
+      "uz": "amfetaminlar (sinf bo‘yicha)",
+      "ru": "амфетамины (по классу)"
+    },
+    "opiates (class-based)": {
+      "uz": "opiatlar (sinf bo‘yicha)",
+      "ru": "опиаты (по классу)"
+    },
+    "THC metabolites (class-based)": {
+      "uz": "THC metabolitlari (sinf bo‘yicha)",
+      "ru": "метаболиты THC (по классу)"
+    },
+    "fentanyl (class-based)": {
+      "uz": "fentanil (sinf bo‘yicha)",
+      "ru": "фентанил (по классу)"
+    },
+    "various (presumptive)": {
+      "uz": "turli moddalar (taxminiy natija)",
+      "ru": "различные вещества (предварительный результат)"
+    },
+    "seized material (see source)": {
+      "uz": "musodara qilingan material (manbaga qarang)",
+      "ru": "изъятый материал (см. источник)"
+    },
+    "colour (spot) reaction": {
+      "uz": "rangli (tomchi) reaksiya",
+      "ru": "цветная (капельная) реакция"
+    },
+    "Can vitreous potassium be used to estimate the post-mortem interval?": {
+      "uz": "Ko‘z shishasimon tanasidagi kaliy bo‘yicha o‘limdan keyin o‘tgan vaqt oralig‘ini (PMI) baholash mumkinmi?",
+      "ru": "Можно ли оценивать посмертный интервал (PMI) по калию стекловидного тела?"
+    },
+    "One source reports a linear rise of vitreous potassium with advancing PMI; another reports an inconsistent influence of temperature and calls it a potential confounding factor.": {
+      "uz": "Bir manbada ko‘z shishasimon tanasidagi kaliy PMI ortishi bilan chiziqli oshishi qayd etilgan; boshqasida haroratning ta’siri bir xil emasligi aytilib, u ehtimoliy chalkashtiruvchi omil deb ataladi.",
+      "ru": "Один источник сообщает о линейном росте калия стекловидного тела по мере увеличения PMI; другой — о непостоянном влиянии температуры и называет её возможным искажающим фактором."
+    },
+    "Does a post-mortem methadone blood concentration distinguish toxicity from therapeutic use?": {
+      "uz": "Metadonning o‘limdan keyingi qondagi konsentratsiyasi toksik ta’sirni davolash maqsadidagi qabuldan ajratib bera oladimi?",
+      "ru": "Позволяет ли посмертная концентрация метадона в крови отличить токсическое действие от терапевтического применения?"
+    },
+    "The source states that the mean adult post-mortem concentration (503 ng/mL) overlaps the range reported in living patients on maintenance treatment (400–1000 ng/mL).": {
+      "uz": "Manbaga ko‘ra, kattalardagi o‘rtacha o‘limdan keyingi konsentratsiya (503 ng/mL) qo‘llab-quvvatlovchi davolanishdagi tirik bemorlar uchun keltirilgan diapazon (400–1000 ng/mL) bilan ustma-ust tushadi.",
+      "ru": "Согласно источнику, средняя посмертная концентрация у взрослых (503 ng/mL) перекрывается с диапазоном, описанным у живых пациентов на поддерживающей терапии (400–1000 ng/mL)."
+    },
+    "Can a fentanyl blood concentration alone separate fentanyl-attributed deaths from incidental findings?": {
+      "uz": "Faqat qondagi fentanil konsentratsiyasi asosida fentanil sabab bo‘lgan o‘limlarni tasodifiy topilmalardan ajratish mumkinmi?",
+      "ru": "Можно ли только по концентрации фентанила в крови отделить смерти, вызванные фентанилом, от случайных находок?"
+    },
+    "The source reports partial overlap with blood values in natural-cause deaths where fentanyl was considered incidental (n = 12, 2.7–33 ng/mL).": {
+      "uz": "Manbada fentanil tasodifiy topilma deb hisoblangan tabiiy sabablardan o‘lim holatlaridagi qon ko‘rsatkichlari bilan qisman ustma-ust tushish qayd etilgan (n = 12, 2,7–33 ng/mL).",
+      "ru": "Источник сообщает о частичном перекрытии со значениями в крови при смерти от естественных причин, когда фентанил считался случайной находкой (n = 12, 2,7–33 ng/mL)."
+    },
+    "Is N-desmethyltramadol (M2) described as an active metabolite?": {
+      "uz": "N-desmetiltramadol (M2) faol metabolit sifatida tavsiflanadimi?",
+      "ru": "Описывается ли N-десметилтрамадол (M2) как активный метаболит?"
+    },
+    "One source names only O-desmethyltramadol as the active metabolite and M2 simply as 'the metabolite M2'; another describes both M1 and M2 as 'active metabolites'.": {
+      "uz": "Bir manba faol metabolit sifatida faqat O-desmetiltramadolni ko‘rsatadi, M2 ni esa shunchaki «M2 metaboliti» deb ataydi; boshqasi M1 va M2 ning ikkalasini ham «faol metabolitlar» deb tavsiflaydi.",
+      "ru": "Один источник называет активным метаболитом только O-десметилтрамадол, а M2 — просто «метаболитом M2»; другой описывает M1 и M2 как «активные метаболиты»."
+    },
+    "Pharmaceutical scope; applicability to forensic methods is a laboratory decision.": {
+      "uz": "Farmatsevtika sohasiga mo‘ljallangan; sud-ekspert usullariga qo‘llash-qo‘llamaslikni laboratoriya hal qiladi.",
+      "ru": "Область применения — фармацевтика; применимость к судебно-экспертным методам определяет лаборатория."
+    },
+    "Superseded by Q2(R2) (complete revision; history table in Q2(R2)).": {
+      "uz": "Q2(R2) bilan almashtirilgan (to‘liq qayta ko‘rib chiqilgan; o‘zgarishlar tarixi jadvali Q2(R2) da).",
+      "ru": "Заменён Q2(R2) (полный пересмотр; таблица истории изменений — в Q2(R2))."
+    },
+    "Status 'current' means no successor was found on the publisher page; not a statement of endorsement.": {
+      "uz": "«Amaldagi» holati noshir sahifasida keyingi tahrir topilmaganini bildiradi; bu tavsiya yoki ma’qullash emas.",
+      "ru": "Статус «действующий» означает, что на странице издателя не найден документ-преемник; это не означает одобрения."
+    },
+    "Listed on the OSAC Registry (SDO published standard). Text not reproduced.": {
+      "uz": "OSAC reyestriga kiritilgan (SDO tomonidan nashr etilgan standart). Matni ilovada keltirilmaydi.",
+      "ru": "Включён в реестр OSAC (стандарт, опубликованный SDO). Текст не воспроизводится."
+    },
+    "OSAC Proposed Standard, in SDO development — not a published SDO standard.": {
+      "uz": "OSAC taklif etgan standart, SDO da ishlab chiqilmoqda — SDO tomonidan nashr etilgan standart emas.",
+      "ru": "Предлагаемый стандарт OSAC, находится в разработке в SDO — не опубликованный стандарт SDO."
+    },
+    "acetaldehyde": {
+      "uz": "atsetaldegid",
+      "ru": "ацетальдегид"
+    },
+    "acetate": {
+      "uz": "atsetat",
+      "ru": "ацетат"
+    },
+    "acetyl-CoA": {
+      "uz": "atsetil-CoA",
+      "ru": "ацетил-CoA"
+    },
+    "formaldehyde": {
+      "uz": "formaldegid",
+      "ru": "формальдегид"
+    },
+    "formic acid": {
+      "uz": "chumoli kislota",
+      "ru": "муравьиная кислота"
+    },
+    "glycolaldehyde": {
+      "uz": "glikolaldegid",
+      "ru": "гликольальдегид"
+    },
+    "glycolate": {
+      "uz": "glikolat",
+      "ru": "гликолат"
+    },
+    "morphine-3-glucuronide (M3G)": {
+      "uz": "morfin-3-glyukuronid (M3G)",
+      "ru": "морфин-3-глюкуронид (M3G)"
+    },
+    "morphine-6-glucuronide (M6G)": {
+      "uz": "morfin-6-glyukuronid (M6G)",
+      "ru": "морфин-6-глюкуронид (M6G)"
+    },
+    "6-monoacetylmorphine (6-MAM)": {
+      "uz": "6-monoatsetilmorfin (6-MAM)",
+      "ru": "6-моноацетилморфин (6-MAM)"
+    },
+    "morphine": {
+      "uz": "morfin",
+      "ru": "морфин"
+    },
+    "norfentanyl": {
+      "uz": "norfentanil",
+      "ru": "норфентанил"
+    },
+    "O-desmethyltramadol": {
+      "uz": "O-desmetiltramadol",
+      "ru": "O-десметилтрамадол"
+    },
+    "M2": {
+      "uz": "M2",
+      "ru": "M2"
+    },
+    "M5": {
+      "uz": "M5",
+      "ru": "M5"
+    },
+    "4-hydroxymetamphetamine": {
+      "uz": "4-gidroksimetamfetamin",
+      "ru": "4-гидроксиметамфетамин"
+    },
+    "amphetamine (AM)": {
+      "uz": "amfetamin (AM)",
+      "ru": "амфетамин (AM)"
+    },
+    "EME": {
+      "uz": "EME (ekgoninmetil efiri)",
+      "ru": "EME (метиловый эфир экгонина)"
+    },
+    "BE": {
+      "uz": "BE (benzoilekgonin)",
+      "ru": "BE (бензоилэкгонин)"
+    },
+    "ecgonine (EC)": {
+      "uz": "ekgonin (EC)",
+      "ru": "экгонин (EC)"
+    },
+    "THC-COOH": {
+      "uz": "THC-COOH",
+      "ru": "THC-COOH"
+    },
+    "11-OH-THC": {
+      "uz": "11-OH-THC",
+      "ru": "11-OH-THC"
+    },
+    "4-hydroxyalprazolam": {
+      "uz": "4-gidroksialprazolam",
+      "ru": "4-гидроксиалпразолам"
+    },
+    "α-hydroxyalprazolam": {
+      "uz": "α-gidroksialprazolam",
+      "ru": "α-гидроксиалпразолам"
+    },
+    "3-hydroxyphenazepam": {
+      "uz": "3-gidroksifenazepam",
+      "ru": "3-гидроксифеназепам"
+    },
+    "nortriptyline": {
+      "uz": "nortriptilin",
+      "ru": "нортриптилин"
+    },
+    "sulfate": {
+      "uz": "sulfat",
+      "ru": "сульфат"
+    },
+    "glucuronide": {
+      "uz": "glyukuronid",
+      "ru": "глюкуронид"
+    },
+    "NAPQI": {
+      "uz": "NAPQI",
+      "ru": "NAPQI"
+    },
+    "negligible metabolism": {
+      "uz": "metabolizmi juda kam",
+      "ru": "незначительный метаболизм"
+    },
+    "almost exclusive renal elimination": {
+      "uz": "deyarli faqat buyrak orqali chiqariladi",
+      "ru": "выведение почти исключительно почками"
+    },
+    "Carboxyhaemoglobin (COHb)": {
+      "uz": "Karboksigemoglobin (COHb)",
+      "ru": "Карбоксигемоглобин (COHb)"
+    },
+    "chlorpyrifos-oxon": {
+      "uz": "xlorpirifos-okson",
+      "ru": "хлорпирифос-оксон"
+    },
+    "phosphine gas": {
+      "uz": "fosfin gazi",
+      "ru": "газообразный фосфин"
+    },
+    "morphine deaths (study cohort; see source)": {
+      "uz": "morfin bilan bog‘liq o‘limlar (tadqiqot kogortasi; manbaga qarang)",
+      "ru": "смерти, связанные с морфином (когорта исследования; см. источник)"
+    },
+    "deaths with morphine findings": {
+      "uz": "morfin aniqlangan o‘lim holatlari",
+      "ru": "случаи смерти с обнаружением морфина"
+    },
+    "stratified: none / alcohol / benzodiazepines / alcohol + benzodiazepines": {
+      "uz": "guruhlarga ajratilgan: yo‘q / alkogol / benzodiazepinlar / alkogol + benzodiazepinlar",
+      "ru": "по группам: нет / алкоголь / бензодиазепины / алкоголь + бензодиазепины"
+    },
+    "median per group: 0.30 / 0.40 / 0.53 / 0.80 μg/mL": {
+      "uz": "har bir guruh medianasi: 0,30 / 0,40 / 0,53 / 0,80 μg/mL",
+      "ru": "медиана по группам: 0,30 / 0,40 / 0,53 / 0,80 μg/mL"
+    },
+    "Analyte reported as free morphine.": {
+      "uz": "Analit erkin morfin sifatida keltirilgan.",
+      "ru": "Аналит указан как свободный морфин."
+    },
+    "Group medians only; ranges and group sizes are not in the excerpt.": {
+      "uz": "Faqat guruh medianalari berilgan; diapazonlar va guruhlar hajmi iqtibosda yo‘q.",
+      "ru": "Приведены только медианы групп; диапазонов и численности групп в цитате нет."
+    },
+    "heroin-related fatalities, Jeddah 2008–2018; 61–70-year age group": {
+      "uz": "geroin bilan bog‘liq o‘lim holatlari, Jidda, 2008–2018; 61–70 yoshli guruh",
+      "ru": "смертельные случаи, связанные с героином, Джидда, 2008–2018; возрастная группа 61–70 лет"
+    },
+    "heroin-related fatalities": {
+      "uz": "geroin bilan bog‘liq o‘lim holatlari",
+      "ru": "смертельные случаи, связанные с героином"
+    },
+    "median 21 ng/mL (BNaF); median 52 ng/mL (vitreous humor)": {
+      "uz": "mediana 21 ng/mL (BNaF); mediana 52 ng/mL (ko‘z shishasimon tanasi)",
+      "ru": "медиана 21 ng/mL (BNaF); медиана 52 ng/mL (стекловидное тело)"
+    },
+    "Second matrix is given as 'BNaF'; the abbreviation is not expanded in the excerpt.": {
+      "uz": "Ikkinchi matritsa «BNaF» deb berilgan; qisqartma iqtibosda ochib berilmagan.",
+      "ru": "Вторая матрица обозначена как «BNaF»; сокращение в цитате не расшифровано."
+    },
+    "Values refer to one age group only.": {
+      "uz": "Qiymatlar faqat bitta yosh guruhiga tegishli.",
+      "ru": "Значения относятся только к одной возрастной группе."
+    },
+    "adult methadone-related deaths (compared with children)": {
+      "uz": "kattalarda metadon bilan bog‘liq o‘limlar (bolalar bilan taqqoslangan)",
+      "ru": "смерти взрослых, связанные с метадоном (в сравнении с детьми)"
+    },
+    "methadone-related deaths": {
+      "uz": "metadon bilan bog‘liq o‘lim holatlari",
+      "ru": "смерти, связанные с метадоном"
+    },
+    "mean 503 ng/mL (adults)": {
+      "uz": "o‘rtacha 503 ng/mL (kattalar)",
+      "ru": "среднее 503 ng/mL (взрослые)"
+    },
+    "The 400–1000 ng/mL range quoted alongside refers to living patients in methadone maintenance treatment, not to this cohort.": {
+      "uz": "Yonida keltirilgan 400–1000 ng/mL diapazoni bu kogortaga emas, metadon bilan qo‘llab-quvvatlovchi davolanishdagi tirik bemorlarga tegishli.",
+      "ru": "Приведённый рядом диапазон 400–1000 ng/mL относится к живым пациентам на поддерживающей терапии метадоном, а не к этой когорте."
+    },
+    "Post-mortem values overlap living-patient values (see EVIDENCE CONFLICT).": {
+      "uz": "O‘limdan keyingi qiymatlar tirik bemorlardagi qiymatlar bilan ustma-ust tushadi («Dalillar ziddiyati»ga qarang).",
+      "ru": "Посмертные значения перекрываются со значениями у живых пациентов (см. «Противоречие доказательств»)."
+    },
+    "single previously reported case": {
+      "uz": "ilgari tavsiflangan yagona holat",
+      "ru": "единственный ранее описанный случай"
+    },
+    "tramadol poisoning with hypoglycaemia and cardiac arrest (fatal outcome)": {
+      "uz": "gipoglikemiya va yurak to‘xtashi bilan kechgan tramadol bilan zaharlanish (o‘lim bilan tugagan)",
+      "ru": "отравление трамадолом с гипогликемией и остановкой сердца (летальный исход)"
+    },
+    "single value 5.2 mg/L (plasma)": {
+      "uz": "yagona qiymat 5,2 mg/L (plazma)",
+      "ru": "единичное значение 5,2 mg/L (плазма)"
+    },
+    "Value is cited from an earlier report, not measured by the citing authors.": {
+      "uz": "Qiymat oldingi hisobotdan olingan, iqtibos keltirgan mualliflar tomonidan o‘lchanmagan.",
+      "ru": "Значение взято из более ранней публикации и не измерялось цитирующими авторами."
+    },
+    "Whether the plasma sample was taken before or after death is not stated in the excerpt.": {
+      "uz": "Plazma namunasi o‘limdan oldin yoki keyin olingani iqtibosda ko‘rsatilmagan.",
+      "ru": "Был ли образец плазмы взят до или после смерти, в цитате не указано."
+    },
+    "deaths from natural causes with an incidental fentanyl finding": {
+      "uz": "fentanil tasodifan aniqlangan tabiiy sabablardan o‘lim holatlari",
+      "ru": "смерти от естественных причин со случайной находкой фентанила"
+    },
+    "natural deaths; fentanyl considered incidental": {
+      "uz": "tabiiy o‘lim; fentanil tasodifiy topilma deb hisoblangan",
+      "ru": "естественная смерть; фентанил расценён как случайная находка"
+    },
+    "range 2.7–33 ng/mL; mean 12 ng/mL": {
+      "uz": "diapazon 2,7–33 ng/mL; o‘rtacha 12 ng/mL",
+      "ru": "диапазон 2,7–33 ng/mL; среднее 12 ng/mL"
+    },
+    "Literature values summarised in a case report / literature review.": {
+      "uz": "Holat tavsifi / adabiyot sharhida umumlashtirilgan adabiyot qiymatlari.",
+      "ru": "Литературные значения, обобщённые в описании случая / обзоре литературы."
+    },
+    "Partially overlaps values in fentanyl-attributed deaths (see EVIDENCE CONFLICT).": {
+      "uz": "Fentanil sabab bo‘lgan o‘limlardagi qiymatlar bilan qisman ustma-ust tushadi («Dalillar ziddiyati»ga qarang).",
+      "ru": "Частично перекрывается со значениями при смертях, вызванных фентанилом (см. «Противоречие доказательств»)."
+    },
+    "deaths reported to the National Programme on Substance Abuse Deaths (2000–2019)": {
+      "uz": "Psixoaktiv moddalar suiiste’moli tufayli o‘limlar bo‘yicha milliy dasturga (NPSAD) xabar qilingan o‘limlar (2000–2019)",
+      "ru": "смерти, зарегистрированные Национальной программой по смертям от злоупотребления психоактивными веществами (2000–2019)"
+    },
+    "stratified: cardiac-related deaths / acute intoxication / chronic or binge use": {
+      "uz": "guruhlarga ajratilgan: yurak bilan bog‘liq o‘limlar / o‘tkir zaharlanish / surunkali yoki qisqa muddatli ko‘p miqdorda iste’mol",
+      "ru": "по группам: кардиальные смерти / острая интоксикация / хроническое или «запойное» употребление"
+    },
+    "mean ≈900 / ≈19,100 / ≈6,200 ng/mL": {
+      "uz": "o‘rtacha ≈900 / ≈19 100 / ≈6 200 ng/mL",
+      "ru": "среднее ≈900 / ≈19 100 / ≈6 200 ng/mL"
+    },
+    "Approximate means quoted in the introduction of another paper.": {
+      "uz": "Boshqa maqolaning kirish qismida keltirilgan taxminiy o‘rtacha qiymatlar.",
+      "ru": "Приблизительные средние значения, приведённые во введении другой статьи."
+    },
+    "motor vehicle drivers in Brittany, France, with at least one positive test": {
+      "uz": "Bretan (Fransiya) avtomobil haydovchilari, kamida bitta musbat test bilan",
+      "ru": "водители автотранспорта в Бретани (Франция) с хотя бы одним положительным тестом"
+    },
+    "drivers tested for alcohol/drugs": {
+      "uz": "alkogol/giyohvand moddalarga tekshirilgan haydovchilar",
+      "ru": "водители, проверенные на алкоголь/наркотики"
+    },
+    "median 173.3 ng/mL": {
+      "uz": "mediana 173,3 ng/mL",
+      "ru": "медиана 173,3 ng/mL"
+    },
+    "Median across all positive drivers; not limited to cocaine-only cases.": {
+      "uz": "Barcha musbat natijali haydovchilar bo‘yicha mediana; faqat kokain holatlari bilan cheklanmagan.",
+      "ru": "Медиана по всем водителям с положительным результатом; не ограничена случаями только с кокаином."
+    },
+    "two fatal cases after oral ingestion": {
+      "uz": "og‘iz orqali qabul qilingandan keyingi ikkita o‘lim holati",
+      "ru": "два смертельных случая после приёма внутрь"
+    },
+    "fatal oral amphetamine ingestion (case reports)": {
+      "uz": "amfetaminni og‘iz orqali qabul qilish natijasida o‘lim (holatlar tavsifi)",
+      "ru": "смертельный пероральный приём амфетамина (описания случаев)"
+    },
+    "highest values: urine 2600 μg/mL (case 1); stomach content 14,000 μg/g (case 2)": {
+      "uz": "eng yuqori qiymatlar: siydik 2600 μg/mL (1-holat); oshqozon tarkibi 14 000 μg/g (2-holat)",
+      "ru": "наибольшие значения: моча 2600 μg/mL (случай 1); содержимое желудка 14 000 μg/g (случай 2)"
+    },
+    "Highest values only; different units (μg/mL vs μg/g).": {
+      "uz": "Faqat eng yuqori qiymatlar; birliklar har xil (μg/mL va μg/g).",
+      "ru": "Только наибольшие значения; разные единицы (μg/mL и μg/g)."
+    },
+    "Two cases — not generalisable.": {
+      "uz": "Ikkita holat — umumlashtirib bo‘lmaydi.",
+      "ru": "Два случая — обобщать нельзя."
+    },
+    "nation-wide 7-year post-mortem study (see source)": {
+      "uz": "mamlakat miqyosidagi 7 yillik o‘limdan keyingi tadqiqot (manbaga qarang)",
+      "ru": "общенациональное 7-летнее посмертное исследование (см. источник)"
+    },
+    "methamphetamine-positive post-mortem cases": {
+      "uz": "metamfetamin aniqlangan o‘limdan keyingi holatlar",
+      "ru": "посмертные случаи, положительные на метамфетамин"
+    },
+    "compared: methamphetamine only vs multiple substances": {
+      "uz": "taqqoslangan: faqat metamfetamin va bir nechta modda",
+      "ru": "сравнение: только метамфетамин и несколько веществ"
+    },
+    "mean 2.68 (SD 13.7) vs 1.62 (SD 7.59) µg/mL; P = 0.255 (not significant)": {
+      "uz": "o‘rtacha 2,68 (SD 13,7) va 1,62 (SD 7,59) µg/mL; P = 0,255 (ahamiyatli emas)",
+      "ru": "среднее 2,68 (SD 13,7) и 1,62 (SD 7,59) µg/mL; P = 0,255 (незначимо)"
+    },
+    "SD exceeds the mean — strongly skewed distribution.": {
+      "uz": "SD o‘rtacha qiymatdan katta — taqsimot kuchli asimmetrik.",
+      "ru": "SD превышает среднее — распределение сильно асимметрично."
+    },
+    "MDMA-positive coronial cases, New Zealand": {
+      "uz": "MDMA aniqlangan koroner holatlari, Yangi Zelandiya",
+      "ru": "коронерские случаи, положительные на MDMA, Новая Зеландия"
+    },
+    "73 quantified of 131": {
+      "uz": "131 tadan 73 tasida miqdor aniqlangan",
+      "ru": "количественно определено в 73 из 131"
+    },
+    "coronial cases": {
+      "uz": "koroner holatlari",
+      "ru": "коронерские случаи"
+    },
+    "mean 0.88 mg/L; range 0.01–9.30 mg/L (peripheral blood)": {
+      "uz": "o‘rtacha 0,88 mg/L; diapazon 0,01–9,30 mg/L (periferik qon)",
+      "ru": "среднее 0,88 mg/L; диапазон 0,01–9,30 mg/L (периферическая кровь)"
+    },
+    "Coronial cases include deaths not caused by MDMA; cause of death is not in the excerpt.": {
+      "uz": "Koroner holatlariga MDMA sabab bo‘lmagan o‘limlar ham kiradi; o‘lim sababi iqtibosda yo‘q.",
+      "ru": "Коронерские случаи включают смерти, не вызванные MDMA; причина смерти в цитате не указана."
+    },
+    "paediatric cannabis intoxication cases, France": {
+      "uz": "bolalarda kannabis bilan zaharlanish holatlari, Fransiya",
+      "ru": "случаи интоксикации каннабисом у детей, Франция"
+    },
+    "paediatric cannabis intoxication": {
+      "uz": "bolalarda kannabis bilan zaharlanish",
+      "ru": "интоксикация каннабисом у детей"
+    },
+    "mean THC 29 ng/mL; 11-OH-THC 21 ng/mL; THC-COOH 255 ng/mL (plasma)": {
+      "uz": "o‘rtacha THC 29 ng/mL; 11-OH-THC 21 ng/mL; THC-COOH 255 ng/mL (plazma)",
+      "ru": "среднее THC 29 ng/mL; 11-OH-THC 21 ng/mL; THC-COOH 255 ng/mL (плазма)"
+    },
+    "Cited from another study.": {
+      "uz": "Boshqa tadqiqotdan iqtibos.",
+      "ru": "Цитируется по другому исследованию."
+    },
+    "Time since exposure not stated in the excerpt.": {
+      "uz": "Ta’sirdan keyin o‘tgan vaqt iqtibosda ko‘rsatilmagan.",
+      "ru": "Время после воздействия в цитате не указано."
+    },
+    "case study reports (see source)": {
+      "uz": "holatlar tavsifi (manbaga qarang)",
+      "ru": "описания случаев (см. источник)"
+    },
+    "cannabis-related case reports": {
+      "uz": "kannabis bilan bog‘liq holatlar tavsifi",
+      "ru": "описания случаев, связанных с каннабисом"
+    },
+    "range 8.0–3894 ng/g (liver); 3–1774 ng/mL (kidney, as written)": {
+      "uz": "diapazon 8,0–3894 ng/g (jigar); 3–1774 ng/mL (buyrak, manbada shunday yozilgan)",
+      "ru": "диапазон 8,0–3894 ng/g (печень); 3–1774 ng/mL (почка, как указано в источнике)"
+    },
+    "Kidney tissue values are written in ng/mL in the source — reviewer to check units.": {
+      "uz": "Buyrak to‘qimasi qiymatlari manbada ng/mL da yozilgan — birliklarni ekspert tekshirishi kerak.",
+      "ru": "Значения для ткани почки в источнике даны в ng/mL — единицы должен проверить рецензент."
+    },
+    "two alprazolam toxicity cases": {
+      "uz": "alprazolam toksikligining ikkita holati",
+      "ru": "два случая токсичности алпразолама"
+    },
+    "alprazolam toxicity": {
+      "uz": "alprazolam toksikligi",
+      "ru": "токсичность алпразолама"
+    },
+    "32.8 and 13.0 ng/mL": {
+      "uz": "32,8 va 13,0 ng/mL",
+      "ru": "32,8 и 13,0 ng/mL"
+    },
+    "Cited from other authors.": {
+      "uz": "Boshqa mualliflardan iqtibos.",
+      "ru": "Цитируется по другим авторам."
+    },
+    "Outcome of the two cases is not stated in the excerpt.": {
+      "uz": "Ikkala holatning oqibati iqtibosda ko‘rsatilmagan.",
+      "ru": "Исход двух случаев в цитате не указан."
+    },
+    "drug-related deaths, Australia, 2000–2020": {
+      "uz": "dori/giyohvand moddalar bilan bog‘liq o‘limlar, Avstraliya, 2000–2020",
+      "ru": "смерти, связанные с лекарствами и наркотиками, Австралия, 2000–2020"
+    },
+    "drug-related deaths": {
+      "uz": "dori/giyohvand moddalar bilan bog‘liq o‘limlar",
+      "ru": "смерти, связанные с лекарствами и наркотиками"
+    },
+    "mean 16.3 mg/L": {
+      "uz": "o‘rtacha 16,3 mg/L",
+      "ru": "среднее 16,3 mg/L"
+    },
+    "National data quoted for comparison, not measured in the citing study.": {
+      "uz": "Taqqoslash uchun keltirilgan milliy ma’lumotlar; iqtibos keltirgan tadqiqotda o‘lchanmagan.",
+      "ru": "Национальные данные приведены для сравнения и не измерялись в цитирующем исследовании."
+    }
+  },
+  "topic_bodies": {
+    "tox-postmortem-redistribution": {
+      "claims": [
+        "C-TOX-POSTMORTEM-REDISTRIBUTION-PRINCIPLE-P8"
+      ],
+      "text": {
+        "uz": "O‘limdan keyingi qayta taqsimlanish (PMR) — dori konsentratsiyasini talqin qilishda hisobga olinadigan hodisa. Kartadagi manbali da’voga ko‘ra, taqsimlanish hajmi (Vd) 3 L/kg dan yuqori bo‘lgan asosli lipofil dori vositalarida PMR ehtimoli yuqori. Bu tushuntirish faqat shu manbali da’vodan olingan; boshqa bo‘limlar (ta’rif, usullar, cheklovlar) uchun hali manba yo‘q.",
+        "ru": "Посмертное перераспределение (PMR) — явление, которое учитывают при интерпретации концентраций лекарственных веществ. Согласно источнику карточки, основные липофильные препараты с объёмом распределения (Vd) выше 3 L/kg с большой вероятностью подвергаются PMR. Пояснение составлено только по этому утверждению из источника; для других разделов (определение, методы, ограничения) источника пока нет.",
+        "en": "Postmortem redistribution (PMR) is taken into account when drug concentrations are interpreted. According to the card’s source, basic lipophilic drugs with a volume of distribution (Vd) above 3 L/kg are likely to undergo PMR. This explanation is based only on that sourced statement; the other sections (definition, methods, limitations) have no source yet."
+      }
+    }
+  }
+}

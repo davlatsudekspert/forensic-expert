@@ -65,3 +65,9 @@ DEBUG build’lar store’ga yuklanmaydi.
 - Rollback: migratsiya fayli sarlavhasi + `supabase/rollback/20261009_pre_support_admin_functions.sql`.
 - Qolgan ruxsatlar: `delete-account` Edge Function deploy; maxfiylik siyosati bandi; MFA (TOTP ulangach `admin_requires_aal2`).
 - 2026-10-09: `delete-account` Edge Function v3 deploy qilindi (egasi ruxsati bilan): hisob o‘chirilganda `credentials` va `support-attachments` bucket’laridagi foydalanuvchi fayllari ham o‘chadi. verify_jwt=true; tokensiz va noto‘g‘ri token — 401 (tekshirildi). Real hisob bilan to‘liq o‘chirish sinalmagan (yagona hisob — egasiniki).
+
+## TestFlight (ichki) — 2026-10-09
+- 0.3.0 (82) — `5cd021e`: reaktivlar, GMT, toks, COHb, «Sudda so‘roq», lug‘at, Free/Pro qarori. Delivery f01eb803-e430-4e59-9ffd-61c8811e474f.
+- 0.3.0 (85) — `4238338`: + yangi logotip (egasi tasdiqladi: ikon, splash, ilova ichidagi variantlar). Delivery a3f75e67-9e1b-4656-b052-69498a035917.
+- Ikkalasi ham UPLOAD SUCCEEDED; ko‘rib chiqishga yuborilmagan (public release yo‘q). CI yashil, to‘liq suite 2514 PASS, real-ilova 374/374.
+- Ma’lum: uch tilli ilmiy kontent loyihasi davom etmoqda (`docs/L10N_AUDIT_20261009.md`).

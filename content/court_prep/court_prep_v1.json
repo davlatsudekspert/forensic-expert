@@ -125,8 +125,8 @@
       "order": 6,
       "icon": "insights",
       "title": {
-        "uz": "YuQX, GX va GX-MS imkoniyatlari",
-        "ru": "Возможности ТСХ, ГХ и ГХ-МС",
+        "uz": "TLC, GC va GC-MS imkoniyatlari",
+        "ru": "Возможности TLC, GC и GC-MS",
         "en": "What TLC, GC and GC-MS can show"
       },
       "summary": {
@@ -2066,7 +2066,7 @@
           {
             "uz": "Har qanday laboratoriya testining xatolik darajasi noldan katta; «mutlaqo aniq» yoki «xato ehtimoli nol» kabi iboralar ilmiy himoyalanmaydi [court_pcast2016].",
             "ru": "У любого лабораторного теста частота ошибок больше нуля; выражения «абсолютно точно» или «нулевая вероятность ошибки» научно не защитимы [court_pcast2016].",
-            "en": "Every laboratory test has a non-zero error rate; phrases like '100 percent certain' or 'zero error' are not scientifically defensible [court_pcast2016]."
+            "en": "Every laboratory test has a non-zero error rate; phrases like 'one hundred percent certain' or 'zero error' are not scientifically defensible [court_pcast2016]."
           },
           {
             "uz": "«Ilmiy ishonchning oqilona darajasi» iborasi ilmda umumqabul qilingan ma’noga ega emas [court_pcast2016]; xulosa qanday dalilga tayanganini va cheklovlarini tushuntirish afzal [court_gill_ely2024].",
@@ -4232,18 +4232,18 @@
       "topic": "court.topic.instrumental",
       "status": "NEEDS_REVIEW",
       "question": {
-        "uz": "Yupqa qatlam xromatografiyasi (YuQX) moddani aniqlashga yetarli emasmi?",
-        "ru": "Разве тонкослойной хроматографии (ТСХ) недостаточно для установления вещества?",
+        "uz": "Yupqa qatlam xromatografiyasi (TLC) moddani aniqlashga yetarli emasmi?",
+        "ru": "Разве тонкослойной хроматографии (TLC) недостаточно для установления вещества?",
         "en": "Isn't thin-layer chromatography (TLC) enough to identify a substance?"
       },
       "tests": {
-        "uz": "YuQX ning tuzilma haqida ma’lumot bermasligini va B toifasiga kirishini bilish [swgdrug2024, cheng2011].",
-        "ru": "Знание того, что ТСХ не даёт структурной информации и относится к категории B [swgdrug2024, cheng2011].",
+        "uz": "TLC ning tuzilma haqida ma’lumot bermasligini va B toifasiga kirishini bilish [swgdrug2024, cheng2011].",
+        "ru": "Знание того, что TLC не даёт структурной информации и относится к категории B [swgdrug2024, cheng2011].",
         "en": "Knowing that TLC gives no structural information and is a Category B technique [swgdrug2024, cheng2011]."
       },
       "short_answer": {
-        "uz": "YuQX oddiy va arzon ajratish usuli, lekin ko‘rinishga keltirish moddani bevosita identifikatsiya qilmaydi va tuzilma haqida ma’lumot bermaydi [cheng2011]. SWGDRUG uni B toifasiga kiritadi; identifikatsiya uchun A toifasidagi usul yoki usullar majmuasi kerak [swgdrug2024].",
-        "ru": "ТСХ — простой и недорогой метод разделения, но визуализация не идентифицирует вещество напрямую и не даёт структурной информации [cheng2011]. SWGDRUG относит её к категории B; для идентификации нужен метод категории A или их совокупность [swgdrug2024].",
+        "uz": "TLC oddiy va arzon ajratish usuli, lekin ko‘rinishga keltirish moddani bevosita identifikatsiya qilmaydi va tuzilma haqida ma’lumot bermaydi [cheng2011]. SWGDRUG uni B toifasiga kiritadi; identifikatsiya uchun A toifasidagi usul yoki usullar majmuasi kerak [swgdrug2024].",
+        "ru": "TLC — простой и недорогой метод разделения, но визуализация не идентифицирует вещество напрямую и не даёт структурной информации [cheng2011]. SWGDRUG относит её к категории B; для идентификации нужен метод категории A или их совокупность [swgdrug2024].",
         "en": "TLC is a simple, low-cost separation, but visualisation does not identify a substance directly or characterise its structure [cheng2011]. SWGDRUG lists it as Category B; identification needs a Category A technique or a combination [swgdrug2024]."
       },
       "prepare": {
@@ -4272,20 +4272,20 @@
       "followups": [
         {
           "q": {
-            "uz": "YuQX ni mass-spektrometriya bilan birlashtirish mumkinmi?",
-            "ru": "Можно ли сочетать ТСХ с масс-спектрометрией?",
+            "uz": "TLC ni mass-spektrometriya bilan birlashtirish mumkinmi?",
+            "ru": "Можно ли сочетать TLC с масс-спектрометрией?",
             "en": "Can TLC be coupled with mass spectrometry?"
           },
           "a": {
             "uz": "Ha, bilvosita (dog‘ni qirib ekstraksiya qilish) va to‘g‘ridan-to‘g‘ri TLC-MS interfeyslari mavjud [cheng2011].",
-            "ru": "Да, существуют косвенные (соскоб и экстракция) и прямые интерфейсы ТСХ-МС [cheng2011].",
+            "ru": "Да, существуют косвенные (соскоб и экстракция) и прямые интерфейсы TLC-MS [cheng2011].",
             "en": "Yes, indirect (scrape-and-extract) and direct TLC-MS interfaces exist [cheng2011]."
           }
         },
         {
           "q": {
-            "uz": "Unda YuQX nimaga kerak?",
-            "ru": "Зачем тогда нужна ТСХ?",
+            "uz": "Unda TLC nimaga kerak?",
+            "ru": "Зачем тогда нужна TLC?",
             "en": "Then why use TLC at all?"
           },
           "a": {
@@ -4440,8 +4440,8 @@
       "topic": "court.topic.instrumental",
       "status": "NEEDS_REVIEW",
       "question": {
-        "uz": "GX-MS natijasi moddaning aynan shu ekanini qanchalik ko‘rsatadi?",
-        "ru": "Насколько результат ГХ-МС доказывает, что это именно данное вещество?",
+        "uz": "GC-MS natijasi moddaning aynan shu ekanini qanchalik ko‘rsatadi?",
+        "ru": "Насколько результат GC-MS доказывает, что это именно данное вещество?",
         "en": "How strongly does a GC-MS result show it is this substance?"
       },
       "tests": {
@@ -4450,9 +4450,9 @@
         "en": "That mass spectrometry is a Category A technique, yet identification depends on meeting predefined criteria [swgdrug2024, asb113_2023]."
       },
       "short_answer": {
-        "uz": "Mass-spektrometriya tuzilma haqida ma’lumot beradigan A toifasiga kiradi; GX-MS kabi tutash usul ikkala qismning mezonlari bajarilsa, ikki usul sifatida qaralishi mumkin [swgdrug2024]. Biologik namunada identifikatsiya laboratoriya mezonlari bo‘yicha baholanadi [asb113_2023]; natija nazoratlar va noaniqlik bilan beriladi.",
-        "ru": "Масс-спектрометрия относится к категории A со структурной информацией; сопряжённый метод, как ГХ-МС, может считаться двумя методами, если выполнены критерии обоих [swgdrug2024]. В биологическом образце идентификация оценивается по критериям лаборатории [asb113_2023]; результат даётся с контролями и неопределённостью.",
-        "en": "Mass spectrometry is a structurally informative Category A technique; a hyphenated technique such as GC-MS may count as two techniques if criteria for both are met [swgdrug2024]. In biological specimens identification is judged against the laboratory's criteria [asb113_2023]; the result comes with controls and uncertainty."
+        "uz": "Mass-spektrometriya tuzilma haqida ma’lumot beradigan A toifasiga kiradi; GC-MS (gaz xromatografiyasi — mass-spektrometriya) kabi tutash usul ikkala qismning mezonlari bajarilsa, ikki usul sifatida qaralishi mumkin [swgdrug2024]. Biologik namunada identifikatsiya laboratoriya mezonlari bo‘yicha baholanadi [asb113_2023]; natija nazoratlar va noaniqlik bilan beriladi.",
+        "ru": "Масс-спектрометрия относится к категории A со структурной информацией; сопряжённый метод, как GC-MS (газовая хроматография — масс-спектрометрия), может считаться двумя методами, если выполнены критерии обоих [swgdrug2024]. В биологическом образце идентификация оценивается по критериям лаборатории [asb113_2023]; результат даётся с контролями и неопределённостью.",
+        "en": "Mass spectrometry is a structurally informative Category A technique; a hyphenated technique such as GC-MS (gas chromatography–mass spectrometry) may count as two techniques if criteria for both are met [swgdrug2024]. In biological specimens identification is judged against the laboratory's criteria [asb113_2023]; the result comes with controls and uncertainty."
       },
       "prepare": {
         "documents": [
@@ -4464,9 +4464,9 @@
         ],
         "explain": [
           {
-            "uz": "Darslikda ham geroin hozirgi davrda GSX, GX-MS va immunologik usullar bilan aniqlanishi ko‘rsatilgan; ular turli darajadagi ma’lumot beradi [court_yuldashev_gmt2024, swgdrug2024].",
-            "ru": "В учебнике также указано, что героин сейчас определяют ГЖХ, ГХ-МС и иммунологическими методами; они дают информацию разного уровня [court_yuldashev_gmt2024, swgdrug2024].",
-            "en": "The textbook also notes heroin is now determined by GLC, GC-MS and immunological methods; these give different levels of information [court_yuldashev_gmt2024, swgdrug2024]."
+            "uz": "Darslikda ham geroin hozirgi davrda GLC (gaz-suyuqlik xromatografiyasi), GC-MS va immunologik usullar bilan aniqlanishi ko‘rsatilgan; ular turli darajadagi ma’lumot beradi [court_yuldashev_gmt2024, swgdrug2024].",
+            "ru": "В учебнике также указано, что героин сейчас определяют GLC (газожидкостная хроматография), GC-MS и иммунологическими методами; они дают информацию разного уровня [court_yuldashev_gmt2024, swgdrug2024].",
+            "en": "The textbook also notes heroin is now determined by GLC (gas–liquid chromatography), GC-MS and immunological methods; these give different levels of information [court_yuldashev_gmt2024, swgdrug2024]."
           }
         ],
         "pitfalls": [
@@ -4480,13 +4480,13 @@
       "followups": [
         {
           "q": {
-            "uz": "LC-MS GX-MS dan yaxshiroqmi?",
-            "ru": "ВЭЖХ-МС лучше ГХ-МС?",
-            "en": "Is LC-MS better than GC-MS?"
+            "uz": "LC-MS (suyuqlik xromatografiyasi — mass-spektrometriya) GC-MS dan yaxshiroqmi?",
+            "ru": "LC-MS (жидкостная хроматография — масс-спектрометрия) лучше GC-MS?",
+            "en": "Is LC-MS (liquid chromatography–mass spectrometry) better than GC-MS?"
           },
           "a": {
-            "uz": "Amaliyotda GX-MS dan LC-MS ga o‘tish kuzatilmoqda, yuqori aniqlikdagi MS murakkab biologik namunalarda muhim [ojanpera2012]; tanlov savol va validatsiyaga bog‘liq.",
-            "ru": "В практике наблюдается переход от ГХ-МС к ВЭЖХ-МС, МС высокого разрешения важна в сложных биологических образцах [ojanpera2012]; выбор зависит от вопроса и валидации.",
+            "uz": "Amaliyotda GC-MS dan LC-MS ga o‘tish kuzatilmoqda, yuqori aniqlikdagi MS murakkab biologik namunalarda muhim [ojanpera2012]; tanlov savol va validatsiyaga bog‘liq.",
+            "ru": "В практике наблюдается переход от GC-MS к LC-MS, МС высокого разрешения важна в сложных биологических образцах [ojanpera2012]; выбор зависит от вопроса и валидации.",
             "en": "Practice is shifting from GC-MS to LC-MS, and high-resolution MS matters in complex biological samples [ojanpera2012]; the choice depends on the question and validation."
           }
         },
@@ -4966,15 +4966,15 @@
             "en": "The immunoassay kit, its cross-reactivity list, cut-off and control results."
           },
           {
-            "uz": "Tasdiqlovchi tahlil (GC-MS yoki LC-MS/MS) xromatogramma va spektrlari [drummer2007].",
-            "ru": "Хроматограммы и спектры подтверждающего анализа (ГХ-МС или ВЭЖХ-МС/МС) [drummer2007].",
-            "en": "Chromatograms and spectra of the confirmatory analysis (GC-MS or LC-MS/MS) [drummer2007]."
+            "uz": "Tasdiqlovchi tahlil (GC-MS yoki LC-MS/MS (suyuqlik xromatografiyasi — tandem mass-spektrometriya)) xromatogramma va spektrlari [drummer2007].",
+            "ru": "Хроматограммы и спектры подтверждающего анализа (GC-MS (газовая хроматография — масс-спектрометрия) или LC-MS/MS (жидкостная хроматография — тандемная масс-спектрометрия)) [drummer2007].",
+            "en": "Chromatograms and spectra of the confirmatory analysis (GC-MS or LC-MS/MS (liquid chromatography–tandem mass spectrometry)) [drummer2007]."
           }
         ],
         "explain": [
           {
             "uz": "Immunotahlil musbat natijasi ikkinchi, mustaqil kimyoviy usul bilan tasdiqlanadi [saitman2014]; tasdiqlash GC-MS(MS) yoki LC-MS(MS) bilan bajariladi [drummer2007].",
-            "ru": "Положительный результат иммуноанализа подтверждается вторым, независимым химическим методом [saitman2014]; подтверждение выполняется ГХ-МС(МС) или ВЭЖХ-МС(МС) [drummer2007].",
+            "ru": "Положительный результат иммуноанализа подтверждается вторым, независимым химическим методом [saitman2014]; подтверждение выполняется GC-MS(/MS) или LC-MS(/MS) [drummer2007].",
             "en": "A positive immunoassay is confirmed by a second, independent chemical technique [saitman2014], such as GC-MS(MS) or LC-MS(MS) [drummer2007]."
           }
         ],
@@ -4995,9 +4995,9 @@
       ],
       "topic": "court.topic.identification",
       "short_answer": {
-        "uz": "Immunotahlil kesishgan reaktivlik tufayli soxta musbat bo‘lishi mumkin; musbat natija ikkinchi, mustaqil kimyoviy usul bilan tasdiqlanmaguncha taxminiy [saitman2014]. Tasdiqlash GC-MS yoki LC-MS/MS bilan bajarilgan [drummer2007].",
-        "ru": "Иммуноанализ может давать ложноположительные результаты из-за перекрёстной реактивности; положительный результат предварителен до подтверждения вторым независимым химическим методом [saitman2014]. Подтверждение выполнено ГХ-МС или ВЭЖХ-МС/МС [drummer2007].",
-        "en": "Immunoassays can be falsely positive through cross-reactivity; a positive is presumptive until confirmed by a second, independent chemical technique [saitman2014]. Confirmation was by GC-MS or LC-MS/MS [drummer2007]."
+        "uz": "Immunotahlil kesishgan reaktivlik tufayli soxta musbat bo‘lishi mumkin; musbat natija ikkinchi, mustaqil kimyoviy usul bilan tasdiqlanmaguncha taxminiy [saitman2014]. Tasdiqlash GC-MS yoki LC-MS/MS (suyuqlik xromatografiyasi — tandem mass-spektrometriya) bilan bajarilgan [drummer2007].",
+        "ru": "Иммуноанализ может давать ложноположительные результаты из-за перекрёстной реактивности; положительный результат предварителен до подтверждения вторым независимым химическим методом [saitman2014]. Подтверждение выполнено GC-MS (газовая хроматография — масс-спектрометрия) или LC-MS/MS (жидкостная хроматография — тандемная масс-спектрометрия) [drummer2007].",
+        "en": "Immunoassays can be falsely positive through cross-reactivity; a positive is presumptive until confirmed by a second, independent chemical technique [saitman2014]. Confirmation was by GC-MS or LC-MS/MS (liquid chromatography–tandem mass spectrometry) [drummer2007]."
       },
       "followups": [
         {
@@ -5611,14 +5611,14 @@
         "en": "Which method measured blood ethanol, and why that one?"
       },
       "tests": {
-        "uz": "Usul turi (bug‘ fazali GX yoki fermentativ) va namuna turiga mosligini tushunish [xuan2024, tiscione2011].",
-        "ru": "Понимание вида метода (парофазная ГХ или ферментативный) и его соответствия типу образца [xuan2024, tiscione2011].",
+        "uz": "Usul turi (bug‘ fazali GC (gaz xromatografiyasi) yoki fermentativ) va namuna turiga mosligini tushunish [xuan2024, tiscione2011].",
+        "ru": "Понимание вида метода (парофазная GC или ферментативный) и его соответствия типу образца [xuan2024, tiscione2011].",
         "en": "Understanding the method type (headspace GC or enzymatic) and its fit to the specimen [xuan2024, tiscione2011]."
       },
       "short_answer": {
         "uz": "Bug‘ fazali gaz xromatografiyasida FID bilan miqdor va MS bilan tasdiqlash bir vaqtda bajarilishi mumkin [tiscione2011]. Murda qonida fermentativ usulga laktat va LDG xalaqit berib, natijani oshirishi mumkin, shuning uchun HS-GC-FID tavsiya etiladi [xuan2024].",
-        "ru": "Парофазная ГХ позволяет одновременно количественно определять с ПИД и подтверждать с МС [tiscione2011]. В посмертной крови лактат и ЛДГ мешают ферментативному методу и завышают результат, поэтому рекомендуется ПФ-ГХ-ПИД [xuan2024].",
-        "en": "Headspace GC can quantify with FID while confirming with MS [tiscione2011]. In postmortem blood, lactate and LDH interfere with the enzymatic method and bias results upward, so HS-GC-FID is recommended [xuan2024]."
+        "ru": "Парофазная GC (газовая хроматография) позволяет одновременно количественно определять с ПИД и подтверждать с МС [tiscione2011]. В посмертной крови лактат и ЛДГ мешают ферментативному методу и завышают результат, поэтому рекомендуется HS-GC-FID [xuan2024].",
+        "en": "Headspace GC (gas chromatography) can quantify with FID while confirming with MS [tiscione2011]. In postmortem blood, lactate and LDH interfere with the enzymatic method and bias results upward, so HS-GC-FID is recommended [xuan2024]."
       },
       "prepare": {
         "documents": [
@@ -5631,7 +5631,7 @@
         "explain": [
           {
             "uz": "Zardob (fermentativ) va butun qon (HS-GC) natijalari nisbati konsentratsiyaga bog‘liq; yagona o‘tkazish koeffitsienti yo‘q [barnhill2007].",
-            "ru": "Соотношение результатов по сыворотке (ферментативно) и цельной крови (ПФ-ГХ) зависит от концентрации; единого коэффициента нет [barnhill2007].",
+            "ru": "Соотношение результатов по сыворотке (ферментативно) и цельной крови (HS-GC) зависит от концентрации; единого коэффициента нет [barnhill2007].",
             "en": "The serum (enzymatic) to whole-blood (HS-GC) ratio is concentration-dependent; no single conversion factor applies [barnhill2007]."
           }
         ],
@@ -5658,13 +5658,13 @@
         },
         {
           "q": {
-            "uz": "Darslikda GSX usuli tasvirlanganmi?",
-            "ru": "Описан ли метод ГЖХ в учебнике?",
-            "en": "Does the textbook describe GLC?"
+            "uz": "Darslikda GLC (gaz-suyuqlik xromatografiyasi) usuli tasvirlanganmi?",
+            "ru": "Описан ли метод GLC (газожидкостная хроматография) в учебнике?",
+            "en": "Does the textbook describe GLC (gas–liquid chromatography)?"
           },
           "a": {
-            "uz": "Ha, spirtlarni GSX bilan sifat va miqdoriy tahlil qilish o‘quv qo‘llanmada berilgan [court_yuldashev_toks2025]; laboratoriya amaliyoti esa validatsiyalangan SOPga tayanadi [tiscione2011].",
-            "ru": "Да, качественный и количественный анализ спиртов методом ГЖХ описан в пособии [court_yuldashev_toks2025]; практика лаборатории опирается на валидированную СОП [tiscione2011].",
+            "uz": "Ha, spirtlarni GLC bilan sifat va miqdoriy tahlil qilish o‘quv qo‘llanmada berilgan [court_yuldashev_toks2025]; laboratoriya amaliyoti esa validatsiyalangan SOPga tayanadi [tiscione2011].",
+            "ru": "Да, качественный и количественный анализ спиртов методом GLC описан в пособии [court_yuldashev_toks2025]; практика лаборатории опирается на валидированную СОП [tiscione2011].",
             "en": "Yes, qualitative and quantitative GLC of alcohols is described in the manual [court_yuldashev_toks2025]; laboratory practice relies on a validated SOP [tiscione2011]."
           }
         }
@@ -9057,9 +9057,9 @@
         "en": "Could other components of the sample (the matrix) have distorted the result?"
       },
       "tests": {
-        "uz": "Selektivlik va matritsa ta’siri: LC-MS/MS ham selektivlikni kafolatlamaydi — matritsa va metabolitlar ionlanishni susaytirishi yoki kuchaytirishi mumkin [matuszewski2003].",
-        "ru": "Селективность и матричные эффекты: даже ВЭЖХ-МС/МС не гарантирует селективности — матрица и метаболиты могут подавлять или усиливать ионизацию [matuszewski2003].",
-        "en": "Selectivity and matrix effects: even LC-MS/MS does not guarantee selectivity — matrix and metabolites can suppress or enhance ionisation [matuszewski2003]."
+        "uz": "Selektivlik va matritsa ta’siri: LC-MS/MS (suyuqlik xromatografiyasi — tandem mass-spektrometriya) ham selektivlikni kafolatlamaydi — matritsa va metabolitlar ionlanishni susaytirishi yoki kuchaytirishi mumkin [matuszewski2003].",
+        "ru": "Селективность и матричные эффекты: даже LC-MS/MS (жидкостная хроматография — тандемная масс-спектрометрия) не гарантирует селективности — матрица и метаболиты могут подавлять или усиливать ионизацию [matuszewski2003].",
+        "en": "Selectivity and matrix effects: even LC-MS/MS (liquid chromatography–tandem mass spectrometry) does not guarantee selectivity — matrix and metabolites can suppress or enhance ionisation [matuszewski2003]."
       },
       "prepare": {
         "documents": [
@@ -9111,9 +9111,9 @@
             "en": "Isn't mass spectrometry selective anyway?"
           },
           "a": {
-            "uz": "LC-MS/MS ham selektivlikni kafolatlamaydi: ionlanishni susaytirish yoki kuchaytirish mumkin, shuning uchun u alohida baholanadi [matuszewski2003].",
-            "ru": "Даже ВЭЖХ-МС/МС не гарантирует селективности: возможны подавление или усиление ионизации, поэтому её оценивают отдельно [matuszewski2003].",
-            "en": "Even LC-MS/MS does not guarantee selectivity: ionisation can be suppressed or enhanced, so it is assessed separately [matuszewski2003]."
+            "uz": "LC-MS/MS (suyuqlik xromatografiyasi — tandem mass-spektrometriya) ham selektivlikni kafolatlamaydi: ionlanishni susaytirish yoki kuchaytirish mumkin, shuning uchun u alohida baholanadi [matuszewski2003].",
+            "ru": "Даже LC-MS/MS (жидкостная хроматография — тандемная масс-спектрометрия) не гарантирует селективности: возможны подавление или усиление ионизации, поэтому её оценивают отдельно [matuszewski2003].",
+            "en": "Even LC-MS/MS (liquid chromatography–tandem mass spectrometry) does not guarantee selectivity: ionisation can be suppressed or enhanced, so it is assessed separately [matuszewski2003]."
           }
         },
         {
@@ -12094,7 +12094,7 @@
             "feedback": {
               "uz": "Har qanday laboratoriya testining xatolik darajasi noldan katta; «yuz foiz» degan bayonot ilmiy himoyalanmaydi [court_pcast2016].",
               "ru": "У любого лабораторного теста частота ошибок больше нуля; утверждение «на сто процентов» научно не защитимо [court_pcast2016].",
-              "en": "Every laboratory test has a non-zero error rate; '100 per cent' is not scientifically defensible [court_pcast2016]."
+              "en": "Every laboratory test has a non-zero error rate; 'one hundred per cent' is not scientifically defensible [court_pcast2016]."
             }
           },
           {
@@ -13854,7 +13854,36 @@
       "note": "Official Uzbek text: https://lex.uz/docs/111460 ; Russian text: https://lex.uz/docs/111463 (lex.uz marks some recent amendments in the Russian text as an unofficial translation). Wording as in force on the access date; check lex.uz for later amendments. Accessed 2026-10-09.",
       "used_for": "Art. 67: an expert is a person with special knowledge needed to give a conclusion. Art. 68: expert's rights (study case materials relating to the subject of the examination; request additional materials/objects; with court permission ask questions; state conclusions on other matters relevant to the subject of the examination; make statements about incorrect interpretation of the conclusion or testimony by participants, to be entered in the record; use native language with an interpreter) and duties (self-recusal on Art. 76/78 grounds; comprehensive and complete examination; reasoned and objective written conclusion; appear when summoned; testify about the examination and answer additional questions explaining the conclusion; confidentiality; preserve objects and case materials). Art. 78: recusal for service or other dependence on a participant and for professional incompetence. Art. 184: required content of the conclusion (expert details incl. education, specialty, experience; questions; objects; methods applied; evaluation of results; reasoned answers); materials documenting course and results are retained by the institution; conclusion must justify refusal to answer questions when objects, materials or special knowledge proved insufficient. Art. 186: questioning of the expert when the conclusion is unclear or methods need clarification; only about his own conclusion and personally performed research; not before the conclusion is given. Art. 187: conclusion assessed together with other evidence for scientific soundness and procedural compliance; no predetermined probative force; disagreement must be reasoned; where experts disagree the decision-maker must justify agreeing with some and not others.",
       "verified_via": "Official site lex.uz: Russian (docs/111463) and Uzbek (docs/111460) texts downloaded; Articles 67, 68, 76, 78, 184, 186, 187 read in full",
-      "verified_on": "2026-10-09"
+      "verified_on": "2026-10-09",
+      "titles": {
+        "uz": "O‘zbekiston Respublikasining Jinoyat-protsessual kodeksi (22.09.1994), 67, 68, 76, 78, 184, 186, 187-moddalar",
+        "ru": "Уголовно-процессуальный кодекс Республики Узбекистан от 22.09.1994, статьи 67, 68, 76, 78, 184, 186, 187",
+        "en": "Criminal Procedure Code of the Republic of Uzbekistan (22.09.1994), Articles 67, 68, 76, 78, 184, 186, 187"
+      },
+      "official_titles": {
+        "uz": "O‘zbekiston Respublikasining Jinoyat-protsessual kodeksi",
+        "uz_cyrl": "Ўзбекистон Республикасининг Жиноят-процессуал кодекси",
+        "ru": "Уголовно-процессуальный кодекс Республики Узбекистан"
+      },
+      "title_verification": [
+        {
+          "url": "https://lex.uz/docs/111460",
+          "lang": "uz-Cyrl",
+          "verbatim": "Ўзбекистон Республикасининг Жиноят-процессуал кодекси",
+          "accessed": "2026-10-09"
+        },
+        {
+          "url": "https://lex.uz/docs/111463",
+          "lang": "ru",
+          "verbatim": "Уголовно-процессуальный кодекс Республики Узбекистан",
+          "accessed": "2026-10-09"
+        }
+      ],
+      "title_status": {
+        "uz": "official_transliterated",
+        "ru": "official",
+        "en": "unofficial_translation"
+      }
     },
     {
       "key": "court_nas2009",
@@ -14130,16 +14159,46 @@
       "authors": [
         "Republic of Uzbekistan"
       ],
-      "title": "Закон Республики Узбекистан «О судебной экспертизе» № ЗРУ-249 от 01.06.2010 (Law on Forensic Expertise), Articles 4, 7, 8, 15, 16, 24",
+      "title": "Закон Республики Узбекистан «О судебной экспертизе» от 01.06.2010 № ЗРУ-249, статьи 4, 7, 8, 15, 16, 24",
       "publisher": "National Database of Legislation (lex.uz)",
       "year": 2010,
       "doi": null,
       "pmid": null,
       "url": "https://lex.uz/docs/1633100",
-      "note": "Russian text on lex.uz (the Uzbek-language page was not located). Wording as in force on 2026-10-09, including 2024 amendments (ZRU-945, ZRU-1003). Accessed 2026-10-09.",
+      "note": "Russian text on lex.uz (docs/1633100) was read for the articles; the official Uzbek text is docs/1633102. Wording as in force on 2026-10-09, including 2024 amendments (ZRU-945, ZRU-1003). Accessed 2026-10-09.",
       "used_for": "Art. 4 principles (legality, human rights, independence, objectivity, comprehensiveness and completeness). Art. 7 independence from the appointing body, the parties and other interested persons; conclusion based on own research and special knowledge; pressure to obtain a conclusion in anyone's favour is not allowed. Art. 8 objective, strictly scientific research within the specialty, comprehensive and complete; conclusion must allow verification against generally accepted scientific data. Art. 15 rights (study case materials relating to the subject; request additional materials/objects; attend investigative actions with permission; take part in examining evidence in court; state conclusions on other relevant matters; statements on misinterpretation of the conclusion; native language; appeal). Art. 16 duties (self-recusal; comprehensive and complete examination; reasoned objective conclusion; appear; testify and answer questions explaining the conclusion; confidentiality; preserve objects; comply with requirements) and prohibitions (no personal contacts with participants that question impartiality; no independent collection of materials; no disclosure of results except to the appointing body). Art. 24 reasoned act on impossibility of giving a conclusion when questions exceed special knowledge, objects are unsuitable/insufficient, or the state of science does not allow an answer.",
       "verified_via": "Official site lex.uz (docs/1633100) downloaded; Articles 4, 7, 8, 15, 16, 24 read in full",
-      "verified_on": "2026-10-09"
+      "verified_on": "2026-10-09",
+      "titles": {
+        "uz": "O‘zbekiston Respublikasining «Sud ekspertizasi to‘g‘risida»gi Qonuni (01.06.2010, O‘RQ-249), 4, 7, 8, 15, 16, 24-moddalar",
+        "ru": "Закон Республики Узбекистан «О судебной экспертизе» от 01.06.2010 № ЗРУ-249, статьи 4, 7, 8, 15, 16, 24",
+        "en": "Law of the Republic of Uzbekistan “On Forensic Expertise” No. ZRU-249 of 01.06.2010, Articles 4, 7, 8, 15, 16, 24"
+      },
+      "official_titles": {
+        "uz": "Sud ekspertizasi to‘g‘risida",
+        "uz_cyrl": "Суд экспертизаси тўғрисида",
+        "ru": "О судебной экспертизе"
+      },
+      "title_verification": [
+        {
+          "url": "https://lex.uz/docs/1633102",
+          "lang": "uz-Cyrl",
+          "verbatim": "ЎРҚ-249-сон 01.06.2010. Суд экспертизаси тўғрисида",
+          "accessed": "2026-10-09"
+        },
+        {
+          "url": "https://lex.uz/docs/1633100",
+          "lang": "ru",
+          "verbatim": "ЗРУ-249-сон 01.06.2010. О судебной экспертизе",
+          "accessed": "2026-10-09"
+        }
+      ],
+      "legal_status_note": "LexUZ commentary on docs/1633102 (read 2026-10-09): the law loses force on 13.12.2026 under Law O‘RQ-1152 of 11.06.2026 «Sud-ekspertlik faoliyati to‘g‘risida». Cards citing ZRU-249 must be re-checked against O‘RQ-1152 before that date (NEEDS LEGAL REVIEW; not changed in content).",
+      "title_status": {
+        "uz": "official_transliterated",
+        "ru": "official",
+        "en": "unofficial_translation"
+      }
     },
     {
       "key": "court_yuldashev_toks2025",

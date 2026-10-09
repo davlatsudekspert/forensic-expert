@@ -39,7 +39,7 @@ void main() {
   Finder inAnalysis(String entityId, Finder f) =>
       find.descendant(of: find.byKey(Key('analysis.$entityId')), matching: f);
 
-  testWidgets('morfin: «Tahlil» — Qon, SX-MS/MS, manba va holat', (
+  testWidgets('morfin: «Tahlil» — Qon, LC-MS/MS, manba va holat', (
     tester,
   ) async {
     await open(tester, Routes.libraryEntry('morphine'));
@@ -55,7 +55,9 @@ void main() {
     expect(
       inAnalysis(
         'morphine',
-        find.text('SX-MS/MS (tandem mass-spektrometriya)'),
+        find.text(
+          'LC-MS/MS (suyuqlik xromatografiyasi — tandem mass-spektrometriya)',
+        ),
       ),
       findsOneWidget,
     );
@@ -117,7 +119,10 @@ void main() {
       find.byKey(const Key('analysis.method.ethanol.method-gc-fid')),
     );
     expect(
-      inAnalysis('ethanol', find.text('GX-AID (alanga ionizatsiya detektori)')),
+      inAnalysis(
+        'ethanol',
+        find.text('GC-FID (alanga-ionlanish detektorli gaz xromatografiyasi)'),
+      ),
       findsOneWidget,
     );
     expect(

@@ -300,9 +300,9 @@
         "en": "Could other components of the sample (the matrix) have distorted the result?"
       },
       "tests": {
-        "uz": "Selektivlik va matritsa ta’siri: LC-MS/MS ham selektivlikni kafolatlamaydi — matritsa va metabolitlar ionlanishni susaytirishi yoki kuchaytirishi mumkin [matuszewski2003].",
-        "ru": "Селективность и матричные эффекты: даже ВЭЖХ-МС/МС не гарантирует селективности — матрица и метаболиты могут подавлять или усиливать ионизацию [matuszewski2003].",
-        "en": "Selectivity and matrix effects: even LC-MS/MS does not guarantee selectivity — matrix and metabolites can suppress or enhance ionisation [matuszewski2003]."
+        "uz": "Selektivlik va matritsa ta’siri: LC-MS/MS (suyuqlik xromatografiyasi — tandem mass-spektrometriya) ham selektivlikni kafolatlamaydi — matritsa va metabolitlar ionlanishni susaytirishi yoki kuchaytirishi mumkin [matuszewski2003].",
+        "ru": "Селективность и матричные эффекты: даже LC-MS/MS (жидкостная хроматография — тандемная масс-спектрометрия) не гарантирует селективности — матрица и метаболиты могут подавлять или усиливать ионизацию [matuszewski2003].",
+        "en": "Selectivity and matrix effects: even LC-MS/MS (liquid chromatography–tandem mass spectrometry) does not guarantee selectivity — matrix and metabolites can suppress or enhance ionisation [matuszewski2003]."
       },
       "prepare": {
         "documents": [
