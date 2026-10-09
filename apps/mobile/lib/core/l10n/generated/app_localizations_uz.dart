@@ -5983,14 +5983,14 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get analysisIntro =>
-      'Bu modda biologik ob’ektlarda qanday tahlil qilinadi — faqat kontent paketidagi mavjud bog‘lanishlar, har biri o‘z manbasi bilan. Ularning hech biri hali ekspert tekshiruvidan o‘tmagan.';
+      'Qaysi namuna va qaysi usul — manbalar asosida. Hali ekspert tekshirmagan.';
 
   @override
-  String get analysisSpecimensTitle => 'Namunalar (biologik ob’ektlar)';
+  String get analysisSpecimensTitle => 'Namunalar';
 
   @override
   String get analysisSpecimensNote =>
-      'Manbada bu modda uchun shu namunalarda qiymat keltirilgan. Qiymatlar pastda, keltirilgan konsentratsiyalar bo‘limida — ular chegaraviy qiymat emas.';
+      'Manbada shu namunalarda qiymat keltirilgan (chegaraviy qiymat emas).';
 
   @override
   String get analysisNoSpecimens =>
@@ -6008,7 +6008,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String analysisSpecimenMethods(String methods) {
-    return 'Shu manbadagi metodlar: $methods';
+    return 'Shu manbadagi usullar: $methods';
   }
 
   @override
@@ -6024,7 +6024,7 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String get analysisConfirmationTitle => 'Tasdiqlovchi metodlar';
+  String get analysisConfirmationTitle => 'Tasdiqlovchi usullar';
 
   @override
   String analysisAfterScreening(String tests) {
@@ -6032,15 +6032,15 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String get analysisMethodsTitle => 'Manbalardagi tahlil metodlari';
+  String get analysisMethodsTitle => 'Tahlil usullari';
 
   @override
   String get analysisMethodsRoleNote =>
-      'Metod manbadagi jumlada shu modda bilan birga tilga olingani uchun ko‘rsatilgan; bu validatsiyalangan protsedura emas.';
+      'Manbada shu modda bilan tilga olingan; tasdiqlangan protsedura emas.';
 
   @override
   String get analysisMethodsNotPaired =>
-      'Paketdagi manbalar bu metodlarni aniq namunaga bog‘lamaydi, shuning uchun ular modda uchun umumiy ko‘rsatilgan.';
+      'Manbalar bu usullarni aniq namunaga bog‘lamaydi.';
 
   @override
   String get analysisMetabolitesTitle => 'Izlanadigan metabolitlar';

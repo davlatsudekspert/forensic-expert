@@ -6009,14 +6009,14 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get analysisIntro =>
-      'Как это вещество исследуют в биологических объектах — только связи, уже имеющиеся в пакете контента, каждая со своим источником. Ни одна из них ещё не прошла экспертную проверку.';
+      'Какие объекты и методы — по источникам. Экспертом пока не проверено.';
 
   @override
-  String get analysisSpecimensTitle => 'Объекты исследования (биологические)';
+  String get analysisSpecimensTitle => 'Объекты исследования';
 
   @override
   String get analysisSpecimensNote =>
-      'Источник приводит значение для этого вещества в этих объектах. Значения показаны ниже в разделе сообщаемых концентраций — это не пороговые значения.';
+      'Источник приводит значение в этих объектах (не пороговое).';
 
   @override
   String get analysisNoSpecimens =>
@@ -6061,15 +6061,15 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get analysisMethodsTitle => 'Аналитические методы в источниках';
+  String get analysisMethodsTitle => 'Аналитические методы';
 
   @override
   String get analysisMethodsRoleNote =>
-      'Метод указан, потому что фраза источника упоминает его вместе с этим веществом; это не валидированная методика.';
+      'Упомянут с этим веществом в источнике; не валидированная методика.';
 
   @override
   String get analysisMethodsNotPaired =>
-      'Источники в пакете не связывают эти методы с конкретным объектом, поэтому они указаны для вещества в целом.';
+      'Источники не привязывают эти методы к конкретному объекту.';
 
   @override
   String get analysisMetabolitesTitle => 'Целевые метаболиты';

@@ -5994,14 +5994,14 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get analysisIntro =>
-      'How this substance is analysed in biological specimens — only links that already exist in the content pack, each with its source. None of them has been expert-reviewed yet.';
+      'Which specimens and methods — from sources. Not yet expert-reviewed.';
 
   @override
-  String get analysisSpecimensTitle => 'Specimens (biological objects)';
+  String get analysisSpecimensTitle => 'Specimens';
 
   @override
   String get analysisSpecimensNote =>
-      'A source reports a value for this substance in these specimens. The values are shown below under reported concentrations — they are not thresholds.';
+      'A source reports a value in these specimens (not a threshold).';
 
   @override
   String get analysisNoSpecimens =>
@@ -6044,15 +6044,15 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get analysisMethodsTitle => 'Analytical methods in sources';
+  String get analysisMethodsTitle => 'Analytical methods';
 
   @override
   String get analysisMethodsRoleNote =>
-      'A method is listed because a source sentence mentions it together with this substance; this is not a validated procedure.';
+      'Mentioned with this substance in a source; not a validated procedure.';
 
   @override
   String get analysisMethodsNotPaired =>
-      'The sources in the pack do not link these methods to a specific specimen, so they are listed for the substance as a whole.';
+      'Sources do not tie these methods to a specific specimen.';
 
   @override
   String get analysisMetabolitesTitle => 'Metabolites to target';

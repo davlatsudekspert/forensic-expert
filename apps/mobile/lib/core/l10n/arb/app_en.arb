@@ -7815,15 +7815,15 @@
   "@analysisTitle": {
     "description": "Substance page: analysis section header."
   },
-  "analysisIntro": "How this substance is analysed in biological specimens — only links that already exist in the content pack, each with its source. None of them has been expert-reviewed yet.",
+  "analysisIntro": "Which specimens and methods — from sources. Not yet expert-reviewed.",
   "@analysisIntro": {
     "description": "Analysis section banner."
   },
-  "analysisSpecimensTitle": "Specimens (biological objects)",
+  "analysisSpecimensTitle": "Specimens",
   "@analysisSpecimensTitle": {
     "description": "Analysis subsection."
   },
-  "analysisSpecimensNote": "A source reports a value for this substance in these specimens. The values are shown below under reported concentrations — they are not thresholds.",
+  "analysisSpecimensNote": "A source reports a value in these specimens (not a threshold).",
   "@analysisSpecimensNote": {
     "description": "Specimens note."
   },
@@ -7879,15 +7879,15 @@
       }
     }
   },
-  "analysisMethodsTitle": "Analytical methods in sources",
+  "analysisMethodsTitle": "Analytical methods",
   "@analysisMethodsTitle": {
     "description": "Analysis subsection."
   },
-  "analysisMethodsRoleNote": "A method is listed because a source sentence mentions it together with this substance; this is not a validated procedure.",
+  "analysisMethodsRoleNote": "Mentioned with this substance in a source; not a validated procedure.",
   "@analysisMethodsRoleNote": {
     "description": "Analytical methods note."
   },
-  "analysisMethodsNotPaired": "The sources in the pack do not link these methods to a specific specimen, so they are listed for the substance as a whole.",
+  "analysisMethodsNotPaired": "Sources do not tie these methods to a specific specimen.",
   "@analysisMethodsNotPaired": {
     "description": "Methods not linked to specimens."
   },

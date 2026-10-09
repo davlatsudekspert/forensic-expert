@@ -10776,19 +10776,19 @@ abstract class AppLocalizations {
   /// Analysis section banner.
   ///
   /// In en, this message translates to:
-  /// **'How this substance is analysed in biological specimens — only links that already exist in the content pack, each with its source. None of them has been expert-reviewed yet.'**
+  /// **'Which specimens and methods — from sources. Not yet expert-reviewed.'**
   String get analysisIntro;
 
   /// Analysis subsection.
   ///
   /// In en, this message translates to:
-  /// **'Specimens (biological objects)'**
+  /// **'Specimens'**
   String get analysisSpecimensTitle;
 
   /// Specimens note.
   ///
   /// In en, this message translates to:
-  /// **'A source reports a value for this substance in these specimens. The values are shown below under reported concentrations — they are not thresholds.'**
+  /// **'A source reports a value in these specimens (not a threshold).'**
   String get analysisSpecimensNote;
 
   /// Specimens empty.
@@ -10842,19 +10842,19 @@ abstract class AppLocalizations {
   /// Analysis subsection.
   ///
   /// In en, this message translates to:
-  /// **'Analytical methods in sources'**
+  /// **'Analytical methods'**
   String get analysisMethodsTitle;
 
   /// Analytical methods note.
   ///
   /// In en, this message translates to:
-  /// **'A method is listed because a source sentence mentions it together with this substance; this is not a validated procedure.'**
+  /// **'Mentioned with this substance in a source; not a validated procedure.'**
   String get analysisMethodsRoleNote;
 
   /// Methods not linked to specimens.
   ///
   /// In en, this message translates to:
-  /// **'The sources in the pack do not link these methods to a specific specimen, so they are listed for the substance as a whole.'**
+  /// **'Sources do not tie these methods to a specific specimen.'**
   String get analysisMethodsNotPaired;
 
   /// Analysis subsection.

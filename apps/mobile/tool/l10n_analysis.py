@@ -32,6 +32,17 @@ k("analysisShowSource","Tooltip: open basis claim provenance.","Show the source"
 k("specimenSubstancesTitle","Specimen page section.","Substances analysed in this specimen","Вещества, исследованные в этом объекте","Bu namunada tahlil qilingan moddalar")
 k("specimenSubstancesNote","Specimen page note.","A source reports a value for each of these substances in this specimen.","Для каждого из этих веществ источник приводит значение в этом объекте.","Har bir modda uchun manbada shu namunadagi qiymat keltirilgan.")
 k("specimenSubstancesNone","Specimen page empty.","No substance in the pack is linked to this specimen yet.","В пакете пока нет веществ, связанных с этим объектом.","Paketda bu namunaga bog‘langan modda hozircha yo‘q.")
+
+# Qisqa va sodda matnlar (egasi: «ilova oddiy bo‘lishi kerak»).
+k("analysisIntro","Analysis section banner.","Which specimens and methods — from sources. Not yet expert-reviewed.","Какие объекты и методы — по источникам. Экспертом пока не проверено.","Qaysi namuna va qaysi usul — manbalar asosida. Hali ekspert tekshirmagan.")
+k("analysisSpecimensTitle","Analysis subsection.","Specimens","Объекты исследования","Namunalar")
+k("analysisSpecimensNote","Specimens note.","A source reports a value in these specimens (not a threshold).","Источник приводит значение в этих объектах (не пороговое).","Manbada shu namunalarda qiymat keltirilgan (chegaraviy qiymat emas).")
+k("analysisSpecimenMethods","Methods linked to a specimen via the same source.","Methods in the same source: {methods}","Методы в том же источнике: {methods}","Shu manbadagi usullar: {methods}",{"methods":S})
+k("analysisConfirmationTitle","Analysis subsection.","Confirmation methods","Подтверждающие методы","Tasdiqlovchi usullar")
+k("analysisMethodsTitle","Analysis subsection.","Analytical methods","Аналитические методы","Tahlil usullari")
+k("analysisMethodsRoleNote","Analytical methods note.","Mentioned with this substance in a source; not a validated procedure.","Упомянут с этим веществом в источнике; не валидированная методика.","Manbada shu modda bilan tilga olingan; tasdiqlangan protsedura emas.")
+k("analysisMethodsNotPaired","Methods not linked to specimens.","Sources do not tie these methods to a specific specimen.","Источники не привязывают эти методы к конкретному объекту.","Manbalar bu usullarni aniq namunaga bog‘lamaydi.")
+
 for idx, code in enumerate(["en","ru","uz"]):
     p = f"{D}/app_{code}.arb"
     data = json.load(open(p, encoding="utf-8"), object_pairs_hook=collections.OrderedDict)
