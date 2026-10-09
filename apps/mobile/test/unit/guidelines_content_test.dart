@@ -203,4 +203,49 @@ void main() {
       }
     });
   });
+
+  group('COHb (uglerod (II) oksidi) kartasi', () {
+    final card = bundle.byId('guideline.chem.co_cohb_determination');
+
+    test('tuzilma, vositalar va bepul kirish', () {
+      expect(card, isNotNull);
+      expect(card!.area, GuidelineArea.forensicChemistry);
+      expect(card.status, ScientificStatus.needsReview);
+      expect(card.sections, hasLength(8));
+      expect(card.access, GuidelineAccess.free);
+      expect(bundle.citesYuldashevMaterial(card), isFalse);
+      for (final id in card.relatedToolIds) {
+        expect(ToolsCatalog.byId(id)?.isAvailable, isTrue, reason: id);
+      }
+      final keys = bundle.referencesOf(card).map((r) => r.key).toSet();
+      expect(
+        keys,
+        containsAll([
+          'widdop2002',
+          'kristoffersen2023',
+          'lewis2004',
+          'siek1984',
+          'oritani2000',
+        ]),
+      );
+      expect(bundle.references['kristoffersen2023']!.pmid, '36495201');
+      expect(bundle.references['widdop2002']!.doi,
+          '10.1258/000456302760042146');
+    });
+
+    test('talqin bo‘limi bor; o‘ldiruvchi chegaralar yo‘q', () {
+      final cautions =
+          card!.sections.singleWhere((s) => s.key == 'cautions');
+      expect(cautions.body.of('uz'), contains('qat’iy belgilamaydi'));
+      expect(cautions.body.of('en'), contains('cause of death'));
+      for (final s in card.sections) {
+        for (final lang in ['uz', 'ru', 'en']) {
+          final body = s.body.of(lang);
+          expect(RegExp(r'\bmg/kg\b').hasMatch(body), isFalse,
+              reason: '${s.key}/$lang');
+          expect(body.contains('‰'), isFalse, reason: '${s.key}/$lang');
+        }
+      }
+    });
+  });
 }
