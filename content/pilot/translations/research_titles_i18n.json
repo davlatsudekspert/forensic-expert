@@ -4,6 +4,11 @@
  "source_lang": "en",
  "note": "Translated GLOSSES of research titles (uz, ru) — drafts written for reading help, NOT reviewed. The original bibliographic title (English, as indexed) stays the citation; a gloss is shown only while source_sha256 equals sha256(utf-8 original title). Numbers, units, formulas and abbreviations of the original are checked unchanged by content/tools/translation_qa.py.",
  "research": {
+  "RS-001515539f91": {
+   "source_sha256": "96e8955a602e425ad23766c93ffc4aaecef50b177c96fdc5595528765f5da29a",
+   "uz": "Gallyutsinatsiyalar va propranolol",
+   "ru": "Галлюцинации и пропранолол"
+  },
   "RS-017a3481c5e2": {
    "source_sha256": "6b043690c47a011dc6f94db9a911c22de7f24ab808dd94a83362d55e3d126e0b",
    "uz": "Qondagi kokain va kokaetilen konsentratsiyasining klinik belgilar og‘irligi bilan bog‘liqligi",
@@ -59,6 +64,11 @@
    "uz": "Inson plazmasida klonazepamni aniqlash uchun tezkor RP-HPLC usulini yaratish",
    "ru": "Разработка быстрой методики RP-HPLC для определения клоназепама в плазме человека"
   },
+  "RS-0600e86e8f35": {
+   "source_sha256": "565c14146282c0f62490dfc94d1464e7a44bb0887a2f9576284271a2d88d8ecb",
+   "uz": "Propranololning qattiq parda afferent neyronlarida tetrodotoksinga chidamli Na(+) kanallariga ta’siri",
+   "ru": "Влияние пропранолола на устойчивые к тетродотоксину Na(+) каналы в афферентных нейронах твёрдой мозговой оболочки"
+  },
   "RS-061f27aab759": {
    "source_sha256": "f0f3a32a08189df842872f51f944982f90bcdb0d8166af1ea0559600c4bf80e2",
    "uz": "Kannabidiolning inson miyasi faoliyatiga ta’siri: tizimli sharh",
@@ -88,6 +98,11 @@
    "source_sha256": "ceae486c09db7fd1bb79b50b2172ef268c543b652200123758c98d392c5d934c",
    "uz": "Uglerod monoksidi",
    "ru": "Монооксид углерода"
+  },
+  "RS-09ca27c5d867": {
+   "source_sha256": "4422bae519043283271c8c34b2a56ee9a63e547e1c9a454f0e43d31c1975917a",
+   "uz": "Glifosat bilan zaharlanish",
+   "ru": "Отравление глифосатом"
   },
   "RS-0a78dde8c0ce": {
    "source_sha256": "c2665f15f5bb7f8ac53b51d80b9994cd505795e26ffa2285eefbda811f40058a",
@@ -149,6 +164,16 @@
    "uz": "Izopropanol bilan zaharlanish",
    "ru": "Отравление изопропанолом"
   },
+  "RS-0e25026ad906": {
+   "source_sha256": "6b88106a23fc08ceacdf57be29fd7cb313742b043443417864cc38db510e1b8e",
+   "uz": "Platsenta orqali lidokain bilan intoksikatsiya",
+   "ru": "Трансплацентарная интоксикация лидокаином"
+  },
+  "RS-0e8adde24b23": {
+   "source_sha256": "43a6318b05afeb4e77a02eb4b1e32a312f3c1725460e22325e44ec359222d7dc",
+   "uz": "Difengidraminning doza-javob bog‘liqligi",
+   "ru": "Зависимость «доза — эффект» для дифенгидрамина"
+  },
   "RS-0eacda762e98": {
    "source_sha256": "b8b66ee730e71e0588bbcbba8a6c7981f8e72d17c40707aaed327041c54f4f71",
    "uz": "Tramadolning qondagi glyukoza konsentratsiyasiga ta’siri: tizimli sharh",
@@ -189,6 +214,16 @@
    "uz": "O‘limdan keyingi sud-tibbiy qon namunalarida dizayner benzodiazepinlarni miqdoriy aniqlash uchun mikro-QuEChERS ekstraksiya usulini optimallashtirish",
    "ru": "Оптимизация метода экстракции micro-QuEChERS для количественного определения дизайнерских бензодиазепинов в посмертных образцах крови в судебной практике"
   },
+  "RS-13a7f34c544e": {
+   "source_sha256": "78ea74b6856265c17f6c88afcf084f4bd8e1469ed241177e7fb1c68bc133b491",
+   "uz": "Metforminning «ulkan» haddan ortiq dozasi",
+   "ru": "«Массивная» передозировка метформина"
+  },
+  "RS-13b129796ba3": {
+   "source_sha256": "9454c3bb56b09d16f1b479568a091a1c33b44eb28b93709f477464d6e495c65d",
+   "uz": "Embrion rivojlanishining erta davrida xlorpirifos-sipermetrin aralashmasi ta’siri uy tovug‘i yuragida tuzilish nuqsonlarini keltirib chiqaradi",
+   "ru": "Воздействие комбинации хлорпирифос-циперметрин на раннем эмбриональном этапе вызывает дефекты строения сердца домашней курицы"
+  },
   "RS-14b035bfe683": {
    "source_sha256": "211ffea8254931a91eb600630deb5455baf91d740e7d8ef0f171c0021ba0c1ba",
    "uz": "Yo‘tal, kodein va chalkash ong",
@@ -219,6 +254,11 @@
    "uz": "Flos Albiziae suvli ekstrakti va uning faol komponenti kvertsetin serotoninergik tizim orqali pentobarbitalning uyqu keltiruvchi ta’sirini kuchaytiradi",
    "ru": "Водный экстракт Flos Albiziae и его активный компонент кверцетин усиливают гипнотический эффект пентобарбитала через серотонинергическую систему"
   },
+  "RS-18cf2fedd8bd": {
+   "source_sha256": "dc287cf69cb57c5ffc4ec75df9a7a823057fb4f30dae4804fc0b8475d2dc58b9",
+   "uz": "Difengidramin keltirib chiqargan toksik psixoz",
+   "ru": "Токсический психоз, вызванный дифенгидрамином"
+  },
   "RS-18e88d5bc4b0": {
    "source_sha256": "f1ade31e16cad8bc96020bff367b9be59c8e6d7618e8b9871725c4f52923580e",
    "uz": "Imipraminning halokatli haddan ortiq dozasi",
@@ -234,6 +274,11 @@
    "uz": "Diazepam va nordiazepamning plazma va to‘liq qon orasida taqsimlanishi hamda gematokritning ta’siri",
    "ru": "Распределение диазепама и нордиазепама между плазмой и цельной кровью и влияние гематокрита"
   },
+  "RS-1ada30645bd3": {
+   "source_sha256": "648b098d0445e72f75880a7b5c5f5b478a3991552fe1896f1060e98475c02148",
+   "uz": "Digoksin: farmakologiyasi va toksikologiyasi — sharh",
+   "ru": "Дигоксин: фармакология и токсикология — обзор"
+  },
   "RS-1b3cd1d3b41a": {
    "source_sha256": "e29b5f4b0b59c003511861a724333e9ccc15c67646f6f22a2f53b734b18b72b2",
    "uz": "O‘lim vaqtini aniqlash: sud tafonomiyasi va o‘limdan keyin o‘tgan vaqt oralig‘i",
@@ -248,6 +293,11 @@
    "source_sha256": "c33eb1b282964fa20d63e8177e5cd4f33c662c0517f02a56dc04e753a24e2537",
    "uz": "To‘liq qonda THC, 11-gidroksi-THC va 11-nor-9-karboksi-THC ni o‘ta samarali suyuqlik xromatografiyasi/tandem mass-spektrometriya bilan sifat va miqdoriy tahlil qilish",
    "ru": "Качественный и количественный анализ THC, 11-гидрокси-THC и 11-нор-9-карбокси-THC в цельной крови методом ультраэффективной жидкостной хроматографии/тандемной масс-спектрометрии"
+  },
+  "RS-1caba7185c6c": {
+   "source_sha256": "21b04ab6eb1f04788e4f41cdda86584a3803d7779f724c48c7ba694fd06dc43e",
+   "uz": "Verapamilning haddan ortiq dozasi",
+   "ru": "Передозировка верапамила"
   },
   "RS-1d0c3b17fc3e": {
    "source_sha256": "3bea136242a3b7a79a8f8e5449e16fa726be4f45dd93d210db10255c2d3fbd55",
@@ -649,6 +699,11 @@
    "uz": "Sianidning klinik toksikologiyasi",
    "ru": "Клиническая токсикология цианида"
   },
+  "RS-41f046804817": {
+   "source_sha256": "afb9509762789804996798c821a12274bfde37e28955a5537ffe7700c84c2e28",
+   "uz": "COVID-19 bilan kasallangan bemorlarda ibuprofen qo‘llanilishi va klinik natijalar",
+   "ru": "Применение ибупрофена и клинические исходы у пациентов с COVID-19"
+  },
   "RS-42a507bc5e16": {
    "source_sha256": "c6f7f0b1aa257eff6c7832bacec6b7679d6826469add7a751f75e791dd38e918",
    "uz": "THC ni «bo‘ysundirish»: nasha komponentlarining mumkin bo‘lgan sinergiyasi va fitokannabinoid-terpenoid «hamrohlik» ta’siri",
@@ -789,6 +844,11 @@
    "uz": "Sochdagi 11-OH-THC faol nasha iste’moli belgisi sifatida: 672 ta THC-musbat soch namunasini baholash asosida ishonchli cut-off ni belgilash",
    "ru": "11-OH-THC в волосах как маркер активного употребления каннабиса: определение надёжного cut-off по оценке 672 THC-положительных образцов волос"
   },
+  "RS-4ff62aad9d45": {
+   "source_sha256": "c79b0067f0e364d47c28f42d1169d40d68fbc39566915069b960284bad3c9e99",
+   "uz": "Metformin miofibroblastlarda lipogen differensiatsiyani keltirib chiqarib o‘pka fibrozini orqaga qaytaradi",
+   "ru": "Метформин вызывает липогенную дифференцировку миофибробластов и обращает фиброз лёгких"
+  },
   "RS-50946b2cc973": {
    "source_sha256": "99ec8cd9fab2228f919b251d8642b558214fb1d69d61a65ac01b0f19c858a79b",
    "uz": "Etilenglikol bilan zaharlanish",
@@ -878,6 +938,11 @@
    "source_sha256": "b2ef1023e47b1289a6a8a7853cdf16c2d257a83bc2d4e5d2eb1e89005752204f",
    "uz": "O‘limdan keyin olingan namunalarda karfentanilning taqsimlanishi va qayta taqsimlanishi",
    "ru": "Распределение и перераспределение карфентанила в посмертных образцах"
+  },
+  "RS-577bd466f031": {
+   "source_sha256": "47798b7d4a030e61afe44da2038fbd910c4e4089e4c3f3922bba58da853d21a5",
+   "uz": "Difengidraminning toksikligi",
+   "ru": "Токсичность дифенгидрамина"
   },
   "RS-57caa6eb326f": {
    "source_sha256": "8d1462ba99beefaf003360f9be807f97644cf4454539a8cbb78c3b267096cf99",
@@ -989,6 +1054,11 @@
    "uz": "To‘liq validatsiyadan o‘tgan, to‘liq qonda furanilfentanil va okfentanilni aniqlash uchun GC-MS usuli",
    "ru": "Полностью валидированная методика GC-MS для определения фуранилфентанила и окфентанила в цельной крови"
   },
+  "RS-625b46962cc3": {
+   "source_sha256": "e2f9bcffbfdf161d7e8c8baa6111bc119320d09f582267bdea92e89ac368fee2",
+   "uz": "Uzaytirilgan ta’sirli verapamilning juda katta haddan ortiq dozasi: holat haqida hisobot va adabiyot sharhi",
+   "ru": "Массивная передозировка верапамила с замедленным высвобождением: описание случая и обзор литературы"
+  },
   "RS-63317a3f07a5": {
    "source_sha256": "28db440e732df67d240ada8432f07d51a7fb84a4928fd5f5ed0990560bf8c98f",
    "uz": "Erta o‘tkir miokard infarktida o‘limdan keyingi immunogistokimyoviy topilmalar: tizimli sharh",
@@ -1069,6 +1139,11 @@
    "uz": "[Noqonuniy modda: metonitazen]",
    "ru": "[Нелегальное вещество: метонитазен]"
   },
+  "RS-6ac3c5fa48ef": {
+   "source_sha256": "24e34e14fb4b2ed8f7406ab541980f00984b0d9a61eb075108646b7d3a4c73d4",
+   "uz": "Burun orqali lidokain yuborilgandan keyin halokatli insult holati",
+   "ru": "Описание случая смертельного инсульта после интраназального введения лидокаина"
+  },
   "RS-6b1e4b329ec3": {
    "source_sha256": "44d033504ac4a1f53bfe2e39b05977b3c4818935dce36dbbc3f08ef200c8fa93",
    "uz": "Alprazolam bilan bog‘liq gepatotoksiklik",
@@ -1089,10 +1164,20 @@
    "uz": "ELISA va LC-MS-MS ni taqqoslash: o‘limdan keyingi qonni oddiy maqsadli skrining qilish",
    "ru": "Сравнение ELISA и LC-MS-MS: простой целевой скрининг посмертной крови"
   },
+  "RS-6d0aaf11b231": {
+   "source_sha256": "08c6420b38903733359a815f7ab0c26713d59f0a61297876e8f7b51d43daa9b4",
+   "uz": "Tizimli sharh: ibuprofen keltirib chiqargan jigar zararlanishi",
+   "ru": "Систематический обзор: поражение печени, вызванное ибупрофеном"
+  },
   "RS-6d7a30bc3fea": {
    "source_sha256": "d695774f6936831644d333dca8d4905125c04d9857f2dbebfacb304f29f1648c",
    "uz": "O‘limdan keyingi zardob, ko‘z shishasimon tanasi va perikard suyuqligida mochevina azoti, kreatinin va siydik kislotasi darajalari",
    "ru": "Уровни азота мочевины, креатинина и мочевой кислоты в посмертной сыворотке, стекловидном теле и перикардиальной жидкости"
+  },
+  "RS-6d93334523d4": {
+   "source_sha256": "552bf3d7eac9e42774dd6faab1e292bd9bfec9e7dc53855de92be79bf03436d3",
+   "uz": "Alyuminiy fosfidi keltirib chiqargan leykopeniya",
+   "ru": "Лейкопения, вызванная фосфидом алюминия"
   },
   "RS-6dd953d28c8c": {
    "source_sha256": "05c745936470dc8534ba3f5d31eeb4c373195a7cc912e0f0cafcdb7f58dbe6ed",
@@ -1119,10 +1204,20 @@
    "uz": "Shvetsiyada haydovchilar tomonidan geroin iste’moli siydikda 6-atsetilmorfin tahlili bilan tasdiqlangan",
    "ru": "Употребление героина водителями в Швеции, подтверждённое анализом 6-ацетилморфина в моче"
   },
+  "RS-71665c88de17": {
+   "source_sha256": "1378555fe65e660f18209d9f7e5965f5890d22aab3478e835d30273f680745c6",
+   "uz": "Kokain-levamizol bilan bog‘liq trombotik vaskulopatiya",
+   "ru": "Тромботическая васкулопатия, связанная с кокаином и левамизолом"
+  },
   "RS-723ec0dd8b46": {
    "source_sha256": "ac35b659129937098a9a2da370c2ac9f65ecb397d38023f6f3a024af082d0a18",
    "uz": "Qonda flualprazolamni sezgir aniqlash va birlamchi metabolizmini tahlil qilish",
    "ru": "Чувствительное обнаружение флуалпразолама в крови и анализ его первичного метаболизма"
+  },
+  "RS-727116a5df8f": {
+   "source_sha256": "5b6b488ac09250cb36b1e060d3109c4091925469fbbf47480d26689172bf1767",
+   "uz": "PROPRANOLOL",
+   "ru": "ПРОПРАНОЛОЛ"
   },
   "RS-72f3b2970463": {
    "source_sha256": "32c4418e44776611513cfa8373d68c11332beb55ec711c7094069d64b61cb3f0",
@@ -1149,6 +1244,11 @@
    "uz": "Kodein va emizish",
    "ru": "Кодеин и кормление грудью"
   },
+  "RS-77c1f55bb5ce": {
+   "source_sha256": "e2a3dac181489599b3590d185e5e36fac63d4aa39a4db8651734aa8a814f40da",
+   "uz": "Ksilazinning kokain va 6-monoatsetilmorfin bilan birgalikda endotelial hujayralarga toksik ta’siri",
+   "ru": "Токсическое действие ксилазина на эндотелиальные клетки в сочетании с кокаином и 6-моноацетилморфином"
+  },
   "RS-7930802e487c": {
    "source_sha256": "60d59093907c3ebb3c0035f048ecdbc54af8fce956feb668ac8b420ec628b111",
    "uz": "MDEA ning haddan ortiq dozasidan halokatli monointoksikatsiya",
@@ -1164,15 +1264,30 @@
    "uz": "Flunitrazepam: qo‘llanilishi, suiiste’mol qilinishi va toksikligi bahosi",
    "ru": "Флунитразепам: оценка применения, злоупотребления и токсичности"
   },
+  "RS-7a8db085cee8": {
+   "source_sha256": "2822ed07dcd176b178a7c4f35f1009fa234c20f3619f61bf2f0655fb7d8c41a9",
+   "uz": "Kolxitsin va podagra",
+   "ru": "Колхицин и гаут (подагра)"
+  },
   "RS-7ab02c986d43": {
    "source_sha256": "9e963a94bcf01fcb851a3c6f3a96817e723e15c46812c73ff66b6f28be937664",
    "uz": "Azot (I) oksidini suiiste’mol qilish: tarqalganligi, neyrotoksikligi va davolash",
    "ru": "Злоупотребление оксидом азота (I): распространённость, нейротоксичность и лечение"
   },
+  "RS-7b20cf1c1af2": {
+   "source_sha256": "6a6ec83058398467518fea439376a8bd60a1b597cc4a8e7eab01c4d949e54bff",
+   "uz": "Parakvat bilan zaharlanish",
+   "ru": "Отравление паракватом"
+  },
   "RS-7b8be23b133a": {
    "source_sha256": "447ff99f30a571511b62a19039d8d49e0dc4daf779e828de7b76097bc93dd4ab",
    "uz": "Uglerod monoksidi bilan zaharlanish",
    "ru": "Отравление монооксидом углерода"
+  },
+  "RS-7cd21895ccf2": {
+   "source_sha256": "8c09a6ef048d03888262ff52c795ff5825ddba331763281bc68489743f8efffa",
+   "uz": "Verapamilning toksikligi",
+   "ru": "Токсичность верапамила"
   },
   "RS-7e59d41409aa": {
    "source_sha256": "9134313e42024ded314e4c1a64979d5526d8d9d4d75017813b2d2601104ee5a8",
@@ -1264,6 +1379,11 @@
    "uz": "AMITRIPTILIN BILAN ZAHARLANISH",
    "ru": "ОТРАВЛЕНИЕ АМИТРИПТИЛИНОМ"
   },
+  "RS-85cf9dae6ea2": {
+   "source_sha256": "17bd23a0c41177353b21fba2f35374029b7be29e03b96359a695fbb22c69fdc2",
+   "uz": "Digoksin toksikligini olib borish",
+   "ru": "Ведение токсичности дигоксина"
+  },
   "RS-85e953dc5542": {
    "source_sha256": "eccd3bfbe71d74dc639b104781985eb4c05eb7c6706eec465dded114fc75cbb7",
    "uz": "Alkogol abstinensiya sindromini olib borishda fenobarbital va lorazepamni qiyoslash: retrospektiv kogort tadqiqoti",
@@ -1298,6 +1418,11 @@
    "source_sha256": "7bca0102682f3d22a0c39cc94671e1090f3595dfdd3dc50587654f911d415438",
    "uz": "Sepsisni o‘limdan keyin tashxislashda immunogistokimyo: tizimli sharh",
    "ru": "Иммуногистохимия в посмертной диагностике сепсиса: систематический обзор"
+  },
+  "RS-8a232b383eba": {
+   "source_sha256": "e723efc163047cbcf21c9f040aa74275eb1329ce55589cca8287a938e0f89dd5",
+   "uz": "Verapamil bilan og‘ir zaharlanish",
+   "ru": "Серьёзное отравление верапамилом"
   },
   "RS-8a96219c7ffd": {
    "source_sha256": "c2c37d9a82a39c5b2ddf547a2a7ce263d55bf201b66b702b8173bf0a0038694e",
@@ -1364,6 +1489,11 @@
    "uz": "Sekobarbitalning ishlov berish darajalari paradigmasida esga tushirish va tanib olishga ta’siri",
    "ru": "Влияние секобарбитала на воспроизведение и узнавание в парадигме уровней переработки информации"
   },
+  "RS-92df6850dba3": {
+   "source_sha256": "416f5f4ce247b54a209d4e9691446f31379e2d307ebe1ccd1c9a0df0915c73db",
+   "uz": "Kolxitsin bilan zaharlanish: qadimiy dorining qorong‘i tomoni",
+   "ru": "Отравление колхицином: тёмная сторона древнего лекарства"
+  },
   "RS-92df97f1a0f9": {
    "source_sha256": "a74ab7f41caf60cb5275c196a66ea0e7019b67c635b861a5352d669686d669c6",
    "uz": "Pregabalin keltirib chiqargan gepatotoksiklik",
@@ -1394,6 +1524,11 @@
    "uz": "Oqsil chipi texnologiyasini ko‘p o‘lchovli tahlil usullari bilan birga qo‘llab o‘limdan keyin o‘tgan vaqt oralig‘ini baholash",
    "ru": "Оценка посмертного интервала с помощью технологии белковых чипов в сочетании с методами многомерного анализа"
   },
+  "RS-94c80926b63e": {
+   "source_sha256": "346e3d2ef96135544f0600bb77aa5016fd9d822ff52ae76b6682f37c1e849714",
+   "uz": "Digoksinga xos antitanalar: dozalashning yangi strategiyasi",
+   "ru": "Специфические к дигоксину антитела: новая стратегия дозирования"
+  },
   "RS-950fe6647d76": {
    "source_sha256": "8935328d6ca641afb9aedab45a9547a43b4fc0e7615f111900199287a17e2131",
    "uz": "Metabolomik profillash ADB-BUTINACA keltirib chiqargan uzoq muddatli gepatotoksiklikni ko‘rsatadi",
@@ -1403,6 +1538,11 @@
    "source_sha256": "9a3515f67ebb923f1a1673a2626eca8c3adba8f9effbb91b048ab65acdce535b",
    "uz": "Shizofreniyada galoperidol va kuchi past birinchi avlod antipsixotiklarini qiyoslash",
    "ru": "Галоперидол против низкопотентных антипсихотиков первого поколения при шизофрении"
+  },
+  "RS-955a96c56828": {
+   "source_sha256": "d6608276d472e3af9a3c6d574cc0a3c22a960a13469318a5a7db20ed72cae89d",
+   "uz": "Ksilazin bilan zaharlanish: tizimli sharh",
+   "ru": "Отравление ксилазином: систематический обзор"
   },
   "RS-9561de49b679": {
    "source_sha256": "8f82eebeaade553092c6aca563e6c0cd119850f868e4e56fa9e4022010a9b57d",
@@ -1473,6 +1613,11 @@
    "source_sha256": "b8abd72f47efd9d162fbbbe4c31d5a7fb6f26a8f76b79952310d12e345411c55",
    "uz": "[γ-gidroksibutiratni suiiste’mol qilish]",
    "ru": "[Злоупотребление γ-гидроксибутиратом]"
+  },
+  "RS-9a74f454f698": {
+   "source_sha256": "aa5fb176ee57b995df0c83c411d76f45973f518bfaffbdc5818371fb53d288f3",
+   "uz": "Xlorpirifos va yovvoyi tabiat",
+   "ru": "Хлорпирифос и дикая природа"
   },
   "RS-9ab7096f030a": {
    "source_sha256": "c2623b00760dad94d13435a0e4616c1d3a40b57083ca4b2c68782d79e26b9574",
@@ -1649,6 +1794,11 @@
    "uz": "Implantatsiya qilingan yurak elektron qurilmalarini (CIED) o‘limdan keyin so‘rovdan o‘tkazishning sud-tibbiy jihatlari: tizimli sharh va meta-tahlil",
    "ru": "Судебно-медицинские аспекты посмертного опроса имплантируемых кардиоэлектронных устройств (CIED): систематический обзор и метаанализ"
   },
+  "RS-ab2648abfc8a": {
+   "source_sha256": "c07a5d8c96e469fb44719d91423cc41693febd2b23222d09c9659704af032fac",
+   "uz": "O‘tkir koronar sindromlarda kolxitsinni qo‘llash: yangilangan ma’lumot",
+   "ru": "Применение колхицина при острых коронарных синдромах: обновление"
+  },
   "RS-ab3d67b9a0ae": {
    "source_sha256": "5b32eee80c49f81643ec8d6305ca4522c00666f268f6607474fe69f9973a9668",
    "uz": "Tramadol bilan zaharlanishga bog‘liq o‘lim",
@@ -1704,10 +1854,20 @@
    "uz": "Sintetik kannabinoid (JWH-018)ning o‘rtacha dozasidan keyingi psixozga o‘xshash belgilar: psixoz uchun ahamiyati",
    "ru": "Психотомиметические симптомы после умеренной дозы синтетического каннабиноида (JWH-018): значение для психоза"
   },
+  "RS-af730f93e0d4": {
+   "source_sha256": "5cc81af2daab67b9509e5c6ad4b20fabfb4e983a6c52b60a191e0cbca1e21b1c",
+   "uz": "Ibuprofenning haddan ortiq dozasi",
+   "ru": "Передозировка ибупрофена"
+  },
   "RS-aff669b0dd80": {
    "source_sha256": "8ed998bb7b6127890245f4fc9478d196a03211791315fc6fb0a5f44ef7990eca",
    "uz": "Bupropionning haddan ortiq dozasidan keyin tutqanoq rivojlanishi bilan bog‘liq omillar: toksikologiya tadqiqotchilari konsorsiumi ma’lumotlari sharhi",
    "ru": "Факторы, связанные с развитием судорог после передозировки бупропиона: обзор данных консорциума исследователей-токсикологов"
+  },
+  "RS-b02d485c4997": {
+   "source_sha256": "29dd46e9206b752ad0d2ccd79f22586dc1671fc5cbb31bd28d1bfaeb8b3cec92",
+   "uz": "Digoksin — masalalar va bahsli jihatlar",
+   "ru": "Дигоксин — вопросы и спорные положения"
   },
   "RS-b04271bc0157": {
    "source_sha256": "4762ae09038242c3650d69350332f5f010f9918682fe938a205902f7f8397be2",
@@ -1804,6 +1964,11 @@
    "uz": "Murdaning rektal harorati va o‘limdan keyin o‘tgan vaqt oralig‘ini baholash",
    "ru": "Ректальная температура трупа и оценка посмертного интервала"
   },
+  "RS-b865a4677d36": {
+   "source_sha256": "a33e250e4b0d390a43859888a1574cffcdc50a61c2ac28ad9c259eb98f315688",
+   "uz": "Alyuminiy fosfidini ichib qo‘yish",
+   "ru": "Приём фосфида алюминия внутрь"
+  },
   "RS-b8af9213a2a4": {
    "source_sha256": "e68689b9d7154567d69ed6b0ba4dddabda740666f297e05e1162f4bdc9f90c90",
    "uz": "Venlafaksin va yurak-qon tomir toksikligi",
@@ -1818,6 +1983,11 @@
    "source_sha256": "60f7b8f852cee2b05f161eb116282cc28cdf35cc19f19f46f4a3377835fc0593",
    "uz": "Klozapin bilan bog‘liq tromboembolik hodisalar",
    "ru": "Тромбоэмболические события, связанные с клозапином"
+  },
+  "RS-b96dc06117b6": {
+   "source_sha256": "0a893be96e7247acaf4ed98cc03dd4d2c049e32085a2da8e75c62ca5c264e4b4",
+   "uz": "Parakvat bilan qasddan zaharlash holati",
+   "ru": "Убийство путём отравления паракватом"
   },
   "RS-b9cb3cbdefa0": {
    "source_sha256": "5ac6307d20ec9f2a9c056db28bdf7e7912197402249c06f46f50f43b7061f17e",
@@ -1838,6 +2008,16 @@
    "source_sha256": "cdf0d88ecfd9ef68e93b2cf8682e97b79c5f5eb5386e45c31a0a45c98978189b",
    "uz": "Fenobarbital bilan o‘tkir intoksikatsiya",
    "ru": "Острая интоксикация фенобарбиталом"
+  },
+  "RS-bbd2e50a3334": {
+   "source_sha256": "fe13a05ce7978b1d5bb55b435784e206520f06b4967267eb77dd3d8cb2ebd0b9",
+   "uz": "Suksinat va metformin keltirib chiqargan laktat atsidozini davolashning qisqa yo‘li",
+   "ru": "Сукцинат и короткий путь к излечению лактат-ацидоза, вызванного метформином"
+  },
+  "RS-bc1e15575fbd": {
+   "source_sha256": "a6e4761c5ed1ba0137b1d9f532bb418ca27b0141a26eafef76cb0f75689f384f",
+   "uz": "Levamizol: yuqori samarali qo‘shimcha (to‘ldiruvchi) modda",
+   "ru": "Левамизол: высокоэффективный агент для разбавления"
   },
   "RS-bcfdaa9dd6f0": {
    "source_sha256": "7ec8bee7699ff761bd155e2951178c6e5b627afc45b18c577dad7769ca767a7f",
@@ -1899,6 +2079,11 @@
    "uz": "Erkin xlor vositachiligidagi triklozan oksidlanishida xloroform va xlorlangan organik birikmalarning hosil bo‘lishi",
    "ru": "Образование хлороформа и хлорированных органических соединений при опосредованном свободным хлором окислении триклозана"
   },
+  "RS-c1e7fba46f84": {
+   "source_sha256": "9f8646e3276345c0ee15a949dc5e067a06bf01617255a468322c23dff30b6842",
+   "uz": "Alyuminiy fosfidi bilan zaharlanishni olib borish",
+   "ru": "Ведение отравлений фосфидом алюминия"
+  },
   "RS-c22d40f4f0d3": {
    "source_sha256": "3260e5e7e0737b15bbb462362b2134c3c1e9543e671d4b0e3227a30b89a0574e",
    "uz": "Qaytalangan shizofreniyada og‘iz orqali beriladigan risperidon uchun doza-javob bog‘liqligini aniqlash",
@@ -1909,10 +2094,20 @@
    "uz": "Diqqat yetishmovchiligi/giperaktivlik buzilishi (ADHD) bo‘lgan kattalarda metilfenidat bilan davolash natijasini oldindan aytish",
    "ru": "Прогнозирование результата лечения метилфенидатом у взрослых с синдромом дефицита внимания/гиперактивности (ADHD)"
   },
+  "RS-c2aa36cd7b3d": {
+   "source_sha256": "4ca752ea93ababeb1e5dfd67153d5e941000c569c81abaf42e3e191b95751115",
+   "uz": "Propranolol (Hemangiol) va bolalardagi og‘ir gemangiomalar. Birinchi tanlov dorisi",
+   "ru": "Пропранолол (Hemangiol) и тяжёлые младенческие гемангиомы. Препарат первого выбора"
+  },
   "RS-c2c5e9192e3f": {
    "source_sha256": "052221d0be6ebfa6ee65c5bfa8a7a67fce71d278b79361cd4c25f1efbdef1819",
    "uz": "Imipramin gidroxloridi bilan intoksikatsiya",
    "ru": "Интоксикация гидрохлоридом имипрамина"
+  },
+  "RS-c30ca6d7486b": {
+   "source_sha256": "788fa70594437c279904ebd45ff049be6f8cb499a620c30da1b22dec1b5c34ed",
+   "uz": "Ko‘p modalli tasvirlash ketamin/ksilazin aralashmasining bir marta yuborilishidan keyin jigar metabolizmining vaqtincha buzilishi va sinusoidal qon aylanishining to‘silishini ko‘rsatadi",
+   "ru": "Мультимодальная визуализация выявляет временное нарушение метаболизма печени и обструкцию синусоидального кровотока после однократного введения смеси кетамин/ксилазин"
   },
   "RS-c4929cab59fb": {
    "source_sha256": "b14a98e3153f2496fca4ac68056eb21afebb7ba50301d8229a8d65afac7095a6",
@@ -1943,6 +2138,11 @@
    "source_sha256": "2245dc257bf75d596382d9b1714d3454d39c878a296db28d7852ea8d40a61666",
    "uz": "3,4-metilendioksi-N-etil-amfetamin (MDEA) ning neyropsixofarmakologiyasi va toksikologiyasi",
    "ru": "Нейропсихофармакология и токсикология 3,4-метилендиокси-N-этил-амфетамина (MDEA)"
+  },
+  "RS-c6b081ea4f6f": {
+   "source_sha256": "290a165f531d7dd80f2c798929efd16c53fe2fde1c1197be0655619e959c6ba1",
+   "uz": "2-tur diabet bilan kasallangan bemorlarda metformin, tiazolidindionlar yoki ikkisiga qo‘shimcha sifatida haftada bir marta semaglutid va kuniga bir marta sitagliptinning samaradorligi va xavfsizligi (SUSTAIN 2): 56 haftalik, qo‘sh ko‘r, 3a faza, tasodifiylashtirilgan tadqiqot",
+   "ru": "Эффективность и безопасность семаглутида один раз в неделю в сравнении с ситаглиптином один раз в сутки в качестве добавления к метформину, тиазолидиндионам или к обоим у пациентов с диабетом 2 типа (SUSTAIN 2): 56-недельное двойное слепое рандомизированное исследование фазы 3a"
   },
   "RS-c7cbbf3f8a54": {
    "source_sha256": "ba030392e55fcbb291b480fc8212646f0483b21af73ee4138cdddcef51247fd8",
@@ -2014,6 +2214,11 @@
    "uz": "Erkak huquqbuzarlarda flunitrazepam qabul qilish",
    "ru": "Приём флунитразепама у мужчин-правонарушителей"
   },
+  "RS-ce512277fa21": {
+   "source_sha256": "6856c370092574778b9f64dd9e0dd658cbeb95f9960ba9051bac811888bf4836",
+   "uz": "Faollashtirilgan loyqa va Variovorax Ibu-1 ta’sirida ibuprofenning trigidroksiibuprofenga biotransformatsiyasi",
+   "ru": "Биотрансформация ибупрофена в тригидроксиибупрофен в активном иле и под действием Variovorax Ibu-1"
+  },
   "RS-cef35a9edb0a": {
    "source_sha256": "dc797aa7bc91815105e36d02913f6fa0bce95cb75d4d47b8899ef96567ac1a20",
    "uz": "Toksikologik tahlilda 6-atsetilmorfin (6-AM) aniqlanmagan geroin toksikligi holatlarini belgilash",
@@ -2074,6 +2279,11 @@
    "uz": "Qutblanishga sezgir optik kogerent tomografiya va ikki nur sindirish mikroskopiyasi yordamida o‘limdan keyin o‘tgan vaqtning miyelin butunligiga ta’sirini miqdoriy baholash",
    "ru": "Количественная оценка влияния посмертного интервала на целостность миелина с помощью поляризационно-чувствительной оптической когерентной томографии и микроскопии двулучепреломления"
   },
+  "RS-d351cacf1edf": {
+   "source_sha256": "6a6ec83058398467518fea439376a8bd60a1b597cc4a8e7eab01c4d949e54bff",
+   "uz": "Parakvat bilan zaharlanish",
+   "ru": "Отравление паракватом"
+  },
   "RS-d397cfe645ae": {
    "source_sha256": "e6ddd050cfa2f5b658803b76545cfcefbb85192ead2c2d6f184521eeb49ef59c",
    "uz": "Sitalopramning toksikligi",
@@ -2088,6 +2298,11 @@
    "source_sha256": "188bbe1ece5a3c9c49374ac469a225eedb5d5c0ee5f6a86ddf01e38d7dba0be0",
    "uz": "1,1-Diftoretan: toksikolog va patolog uchun sud-ekspertiza jihatlari",
    "ru": "1,1-Дифторэтан: судебно-экспертные аспекты для токсиколога и патолога"
+  },
+  "RS-d63e6489499a": {
+   "source_sha256": "fcfcfc1dad2e2eacec884a27090aa3a1efaf8695b847554eb208f9c91ac7fd65",
+   "uz": "Lidokainning toksikligi",
+   "ru": "Токсичность лидокаина"
   },
   "RS-d64a0f6b2595": {
    "source_sha256": "5050f73c750b700091340fdbcba716069719845548feb49f8c33031018f3f009",
@@ -2214,6 +2429,11 @@
    "uz": "Kichik yoshdagi bolalarda olanzapinning xavfsizligi: tizimli sharh va meta-tahlil",
    "ru": "Безопасность оланзапина у детей младшего возраста: систематический обзор и метаанализ"
   },
+  "RS-e101820a33b3": {
+   "source_sha256": "124de9a0f381515c147b02edb3da2d1578a0a0f83c08ed8746f503b4c409dcd3",
+   "uz": "Kolxitsin bilan zaharlanish",
+   "ru": "Отравление колхицином"
+  },
   "RS-e1162444e305": {
    "source_sha256": "49efba20a3680b847ebaffd003389d3b0f8717829fb57f1967b7598d9e5dfe9d",
    "uz": "MDMA ning neyrotoksikligi: asosiy ta’sirlar va mexanizmlar",
@@ -2339,6 +2559,11 @@
    "uz": "Mitraginin (kratom)ning an’anaviy va noan’anaviy qo‘llanilishi: adabiyot sharhi",
    "ru": "Традиционное и нетрадиционное применение митрагинина (кратома): обзор литературы"
   },
+  "RS-ec776940b378": {
+   "source_sha256": "f12c10f95b14415dafc36129806db2b98043140e20c1efd096389fe333a22636",
+   "uz": "Veterinariya tinchlantiruvchisi ksilazin fentanil bilan tasodifiy intoksikatsiyadan kelib chiqqan 42 o‘lim holatida aniqlangan",
+   "ru": "Ветеринарный транквилизатор ксилазин обнаружен в 42 случаях смерти от случайной интоксикации фентанилом"
+  },
   "RS-ec9f8f372f9c": {
    "source_sha256": "ae96ea68cbe3fa712b3d46830c1a16228cd4f253fd1fa6414e6101f4f8e23685",
    "uz": "Karboksigemoglobinning toksikokinetikasi",
@@ -2353,6 +2578,11 @@
    "source_sha256": "915e41bcc54b208fdda787eb580a08cb43a5cf3817a52570f3c42dc29fe3b4c2",
    "uz": "Psilotsibin keltirib chiqargan takotsubo kardiomiopatiyasi",
    "ru": "Такоцубо-кардиомиопатия, вызванная псилоцибином"
+  },
+  "RS-ed2fec1dc3b2": {
+   "source_sha256": "77f86dbed7f247e510513820a348fead6d7c01bae0f3897b42a7ccef8bc28e07",
+   "uz": "Levamizol qo‘shilgan kokain halokatli vaskulitga olib kelgan: holat haqida hisobot",
+   "ru": "Кокаин с примесью левамизола, приведший к смертельному васкулиту: описание случая"
   },
   "RS-ed4b2e74065c": {
    "source_sha256": "eb9a684d2e01cfaa91994410d5dca4a8868562339eb031061426bfdb13d528a1",
@@ -2389,10 +2619,20 @@
    "uz": "Etanolning gepatotoksikligida gidroksietil radikallari",
    "ru": "Гидроксиэтильные радикалы в гепатотоксичности этанола"
   },
+  "RS-f0817bcfb48f": {
+   "source_sha256": "6cc6e0e23c0135c15baf3dda4a4fbfc3928eaf8c89ab0e4da31ecc5ab17d9954",
+   "uz": "Difengidraminga nisbatan fotoallergiya",
+   "ru": "Фотоаллергия на дифенгидрамин"
+  },
   "RS-f17eed69a04c": {
    "source_sha256": "ebb6bedf478f38aff57e880918bcc2746032ba45f4220c2e698939224090b235",
    "uz": "Furanilfentanil bilan bog‘liq o‘lim holatlari seriyasida o‘limdan keyingi va toksikologik topilmalar",
    "ru": "Посмертные и токсикологические находки в серии смертей, связанных с фуранилфентанилом"
+  },
+  "RS-f2563ac77867": {
+   "source_sha256": "58c78828685cce7ac30d825d1f9aa41779b0fe0538f0cabe706813302922090f",
+   "uz": "Odamda o‘tkir zaharlanishda alyuminiy fosfidi keltirib chiqargan oksidlanish stressiga N-asetilsisteinning himoya ta’siri",
+   "ru": "Защитное действие N-ацетилцистеина при окислительном стрессе, вызванном фосфидом алюминия, при остром отравлении у человека"
   },
   "RS-f2809fb41dba": {
    "source_sha256": "b6c62d94c264960533e7c7979b84537571f5afdf723a3a506e6810f4b9a7acf4",
@@ -2489,10 +2729,20 @@
    "uz": "Fenitoin — tutqanoqqa qarshi dori: kimyosi, farmakologiyasi va toksikologiyasi haqida umumiy ma’lumot",
    "ru": "Фенитоин — противосудорожный препарат: обзор его химии, фармакологии и токсикологии"
   },
+  "RS-fdb1c15a67af": {
+   "source_sha256": "6a6ec83058398467518fea439376a8bd60a1b597cc4a8e7eab01c4d949e54bff",
+   "uz": "Parakvat bilan zaharlanish",
+   "ru": "Отравление паракватом"
+  },
   "RS-fe6f7933a7ca": {
    "source_sha256": "93f296281c439ab6e25399ad71789ba3c704a5a3865b2e2b651bdc6a4e27ed54",
    "uz": "Tog‘ay — o‘limdan keyin o‘tgan vaqt oralig‘ini aniqlashning yangi ko‘rsatkichimi?",
    "ru": "Хрящ — новый параметр для определения посмертного интервала?"
+  },
+  "RS-fee1a99c5a05": {
+   "source_sha256": "0595198cdd01854fcf69faacb7c9b0e74f6d084a5f54afdf145c194845b8140a",
+   "uz": "Operatsiyadan keyingi og‘riq va tiklanishda lidokainni vena ichiga qo‘llash: samaradorlik va xavfsizlik bo‘yicha xalqaro konsensus bayonoti",
+   "ru": "Внутривенное применение лидокаина при послеоперационной боли и восстановлении: международное консенсусное заявление об эффективности и безопасности"
   },
   "RS-ffb8a261050c": {
    "source_sha256": "1afbb17cc94335be1bda9b1e9b7e7fe4a1f4b4b180cd9c1ec6eff4f5ef0a6c48",
