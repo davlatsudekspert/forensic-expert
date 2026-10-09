@@ -21,6 +21,14 @@
     {
       "match": "bundle:text_translations:research_title:RS-801d80d523e7:ru :: abbreviations/formulas missing: ['NBOMes-Highly']",
       "reason": "Same original-title typography as the Uzbek gloss of RS-801d80d523e7; the Russian gloss keeps «NBOMe»."
+    },
+    {
+      "match": "bundle:text_translations:research_title:RS-60082d3c8eb7:uz :: abbreviations/formulas missing: ['ACUTE']",
+      "reason": "The original title is printed in capitals («ACUTE PARATHION POISONING»), so the detector reads the ordinary English word «ACUTE» as an abbreviation. It is translated («o‘tkir»); no number, unit or claim is affected."
+    },
+    {
+      "match": "bundle:text_translations:research_title:RS-60082d3c8eb7:ru :: abbreviations/formulas missing: ['ACUTE']",
+      "reason": "Same all-capitals original title as the Uzbek gloss of RS-60082d3c8eb7; «ACUTE» is translated («острое»)."
     }
   ]
 }
