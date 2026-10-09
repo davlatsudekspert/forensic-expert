@@ -418,4 +418,82 @@ void main() {
       }
     });
   });
+
+  group('«Toksikologik kimyo» savollari (Yuldashev Z.A., bepul)', () {
+    late GuidelineBundle guidelines;
+    late StudyCatalog catalog;
+    setUpAll(() {
+      guidelines = GuidelineBundle.fromJson(
+        (jsonDecode(
+          File('assets/content/guidelines/guidelines_v1.json')
+              .readAsStringSync(),
+        ) as Map).cast<String, Object?>(),
+      );
+      // Pro ruxsatisiz (bepul foydalanuvchi).
+      catalog = StudyCatalogBuilder.build(guidelines: guidelines);
+    });
+
+    test('bepul foydalanuvchida alohida to‘plam, ≥30 savol', () {
+      final deck = catalog.deck(StudyCatalogBuilder.toksDeckId);
+      expect(deck, isNotNull);
+      expect(deck!.kind, StudyDeckKind.teachingMaterial);
+      expect(deck.key, StudyCatalogBuilder.toksDeckKey);
+      expect(deck.items.length, greaterThanOrEqualTo(30));
+      for (final i in deck.items) {
+        expect(i.kind, StudyItemKind.guidelineQuestion);
+        expect(i.distractors, hasLength(3), reason: i.id);
+        expect(i.status.isPublishable, isFalse, reason: i.id);
+        expect(i.citations, isNotEmpty, reason: i.id);
+        expect(
+          i.citations.every(
+            (c) => c.pages != null && c.title.contains('Yuldashev'),
+          ),
+          isTrue,
+          reason: i.id,
+        );
+        final card = guidelines.byId(i.originId)!;
+        expect(card.isFree, isTrue, reason: i.id);
+      }
+    });
+
+    test('test: savol matni → 4 variant, to‘g‘ri javob bitta', () {
+      final deck = catalog.deck(StudyCatalogBuilder.toksDeckId)!;
+      final qs = StudyQuizBuilder.build(deck, catalog, seed: 7, length: 50);
+      expect(qs.length, deck.items.length);
+      for (final q in qs) {
+        expect(q.asksForPrompt, isFalse);
+        expect(q.options, hasLength(4));
+        expect(q.options[q.correctIndex], same(q.item));
+        expect(q.stem.resolve('uz'), q.item.prompt.resolve('uz'));
+        final texts = {
+          for (var i = 0; i < 4; i++) q.optionText(i).resolve('ru'),
+        };
+        expect(texts, hasLength(4), reason: q.item.id);
+      }
+      expect(StudyQuizBuilder.canQuiz(deck, catalog), isTrue);
+    });
+
+    test(
+      'glossariy: T-TOKS terminlari paketda, uch tilda, machine_draft',
+      () async {
+        final pilot = await loadPilotContent();
+        final terms = [
+          for (final t in pilot.provenance.terms)
+            if (t.id.startsWith('T-TOKS-')) t,
+        ];
+        expect(terms.length, greaterThanOrEqualTo(30));
+        for (final t in terms) {
+          expect(t.originalLang, 'uz');
+          for (final lang in ['uz', 'ru', 'en']) {
+            expect(t.localized[lang], isNotNull, reason: t.id);
+            expect(
+              t.status[lang],
+              TranslationStatus.machineDraft,
+              reason: t.id,
+            );
+          }
+        }
+      },
+    );
+  });
 }

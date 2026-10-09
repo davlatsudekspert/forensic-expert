@@ -298,6 +298,14 @@ class _GuidelineDetailScreenState extends ConsumerState<GuidelineDetailScreen> {
                     icon: Icons.menu_book_outlined,
                     text: l.guidelineIndependentNote,
                   ),
+                  if (bundle.citesYuldashevMaterial(card)) ...[
+                    const SizedBox(height: FeSpace.xs),
+                    FeBanner(
+                      key: const Key('guideline.toksAttribution'),
+                      icon: Icons.school_outlined,
+                      text: l.guidelineToksAttribution,
+                    ),
+                  ],
                   if (title.isFallback) ...[
                     const SizedBox(height: FeSpace.xs),
                     FeBanner(

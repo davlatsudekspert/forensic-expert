@@ -6848,4 +6848,26 @@ class AppLocalizationsEn extends AppLocalizations {
   String rdGuidelineMeta(int sections, String refs) {
     return '$sections sections · $refs';
   }
+
+  @override
+  String get guidelineToksAttribution =>
+      'Source: Prof. Yuldashev Z.A. and co-authors, «Toxicological chemistry» teaching complexes (Tashkent Pharmaceutical Institute, 2025) — used with the author’s permission, free for everyone.';
+
+  @override
+  String get studySectionTeaching => 'Teaching complexes';
+
+  @override
+  String get studyDeckToks => 'Toxicological chemistry (Yuldashev Z.A.)';
+
+  @override
+  String get studyFrontQuestion => 'Recall the answer, then flip the card';
+
+  @override
+  String get studyQuizNoteAuthored =>
+      'Questions and wrong options were written independently from the facts in the guideline cards; the correct answer and its page are given in the cited source.';
+
+  @override
+  String studySourcePages(String pages) {
+    return 'pp. $pages';
+  }
 }

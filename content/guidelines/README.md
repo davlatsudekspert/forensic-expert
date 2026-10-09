@@ -16,6 +16,7 @@ integratsiyasi `guidelines_v1.json` faylini o‘qiydi.
 
 ```bash
 python3 content/guidelines/build.py && python3 content/guidelines/validate.py
+python3 content/guidelines/sync_app_asset.py   # ilova asset’i (ichki maydonlarsiz)
 ```
 
 ## Sxema: `fe-guidelines/1`
@@ -54,6 +55,16 @@ python3 content/guidelines/build.py && python3 content/guidelines/validate.py
   }]
 }
 ```
+
+### O‘quv-uslubiy majmualar (`type: teaching_material`)
+- Prof. Yuldashev Z.A. majmualari (`toks_*`, `dvssm_*`) muallif ruxsati bilan;
+  `rights` va `publisher` majburiy (G014). Bunday manbaga tayangan karta va
+  undan olingan savollar **barcha uchun bepul** (`"access": "free"`, G015) —
+  kartada manba qatori ko‘rsatiladi, savollar o‘quv rejimida alohida bepul
+  to‘plamda.
+- Ixtiyoriy `quiz` maydoni (G016): `{"id","q":{uz,ru,en},"a":{…},"d":{"uz":[3 ta],…},"pages"}`.
+- Iqtibos sahifasi kalitdan keyin: `[toks_majmua2025] (23-b.)` / `(с. 23)` / `(p. 23)`.
+- Tuzatilgan va chiqarilgan raqamlar: `REVIEW_TOKS.md`.
 
 ### UI uchun eslatmalar
 - Matn ichidagi iqtiboslar `[key]` yoki `[key1, key2]` ko‘rinishida; UI ularni

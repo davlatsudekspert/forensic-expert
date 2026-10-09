@@ -16,6 +16,11 @@ Checks (exit code 1 on any error):
   G011 updated date is ISO yyyy-mm-dd
   G012 no reference to the restricted 'ABY' manual
   G013 built file is in sync with src/ and references.json (re-run build.py)
+  G014 'teaching_material' references carry publisher, place and rights (author permission)
+  G015 cards citing a teaching_material reference are free (access == "free");
+       access, if present, is "free" or "pro"
+  G016 quiz items: unique id, q/a in uz/ru/en, exactly 3 distractors per language,
+       distractors differ from the answer, pages given
 """
 import json
 import pathlib
@@ -126,6 +131,40 @@ def main() -> int:
         for i, t in enumerate(uz_texts):
             check_uz(t, f"{cid}.uz[{i}]")
 
+    # G014-G016: o‘quv-uslubiy materiallar (muallif ruxsati bilan, bepul) va test savollari
+    teaching = {k for k, r in refs.items() if r.get("type") == "teaching_material"}
+    for k in teaching:
+        for f in ("publisher", "place", "rights"):
+            if not refs[k].get(f):
+                err("G014", k, f"teaching_material needs {f}")
+    quiz_ids = set()
+    for card in data.get("cards", []):
+        cid = card.get("id", "?")
+        access = card.get("access")
+        if access is not None and access not in ("free", "pro"):
+            err("G015", cid, f"access must be free/pro, got {access!r}")
+        if teaching & set(card.get("reference_keys", [])) and access != "free":
+            err("G015", cid, "cites a teaching_material source: access must be 'free'")
+        for i, q in enumerate(card.get("quiz", [])):
+            where = f"{cid}.quiz[{i}]"
+            qid = q.get("id")
+            if not qid or qid in quiz_ids:
+                err("G016", where, f"missing or duplicate id {qid!r}")
+            quiz_ids.add(qid)
+            tri(q.get("q"), "G016", f"{where}.q")
+            tri(q.get("a"), "G016", f"{where}.a")
+            if not str(q.get("pages", "")).strip():
+                err("G016", where, "pages missing")
+            for lang in LANGS:
+                ds = (q.get("d") or {}).get(lang) or []
+                if len(ds) != 3 or not all(isinstance(x, str) and x.strip() for x in ds):
+                    err("G016", where, f"d.{lang} must have 3 non-empty distractors")
+                ans = (q.get("a") or {}).get(lang, "").strip().lower()
+                if ans in {x.strip().lower() for x in ds}:
+                    err("G016", where, f"d.{lang} repeats the answer")
+            check_uz(" ".join([q.get("q", {}).get("uz", ""), q.get("a", {}).get("uz", ""),
+                               *((q.get("d") or {}).get("uz") or [])]), f"{where}.uz")
+
     blob = json.dumps(data, ensure_ascii=False)
     if re.search(r"\bABY\b", blob):
         err("G012", "root", "reference to restricted ABY manual found")
@@ -153,7 +192,7 @@ def main() -> int:
         for e in errors:
             print("  " + e)
         return 1
-    print("OK: all checks passed (G001-G013)")
+    print("OK: all checks passed (G001-G016)")
     return 0
 
 
