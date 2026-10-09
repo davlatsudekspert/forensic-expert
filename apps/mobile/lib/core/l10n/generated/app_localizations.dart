@@ -11858,6 +11858,96 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'record in the content pack'**
   String get supRelatedUnknown;
+
+  /// Substance page: compact summary card title.
+  ///
+  /// In en, this message translates to:
+  /// **'At a glance'**
+  String get rdGlanceTitle;
+
+  /// Substance page: summary card note (no new facts; built from the sections below).
+  ///
+  /// In en, this message translates to:
+  /// **'From the sourced sections below. Quotes and status are inside each section.'**
+  String get rdGlanceNote;
+
+  /// Summary row: molecular formula and weight.
+  ///
+  /// In en, this message translates to:
+  /// **'Formula'**
+  String get rdGlanceFormula;
+
+  /// Summary row: specimens with sourced values.
+  ///
+  /// In en, this message translates to:
+  /// **'Specimens'**
+  String get rdGlanceSpecimens;
+
+  /// Summary row: analytical methods named in sources.
+  ///
+  /// In en, this message translates to:
+  /// **'Methods'**
+  String get rdGlanceMethods;
+
+  /// Summary row: metabolites.
+  ///
+  /// In en, this message translates to:
+  /// **'Metabolites'**
+  String get rdGlanceMetabolites;
+
+  /// Summary row: reported concentrations (count).
+  ///
+  /// In en, this message translates to:
+  /// **'Concentrations'**
+  String get rdGlanceConcentrations;
+
+  /// Summary row: sources (count).
+  ///
+  /// In en, this message translates to:
+  /// **'Sources'**
+  String get rdGlanceSources;
+
+  /// Count of sourced records.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 sourced record} other{{count} sourced records}}'**
+  String rdGlanceRecords(int count);
+
+  /// Count of sources / references.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 source} other{{count} sources}}'**
+  String rdSourcesCount(int count);
+
+  /// Suffix after a shortened list of names.
+  ///
+  /// In en, this message translates to:
+  /// **'+{count} more'**
+  String rdGlanceMore(int count);
+
+  /// Summary card when details are locked: what is behind Pro (counts only).
+  ///
+  /// In en, this message translates to:
+  /// **'Details below open with Pro. Names, warnings and sources stay free.'**
+  String get rdGlanceLockedHint;
+
+  /// Semantics hint: tap to jump to a section on this page.
+  ///
+  /// In en, this message translates to:
+  /// **'Go to section'**
+  String get rdJumpTo;
+
+  /// Guideline list row: number of sections and references.
+  ///
+  /// In en, this message translates to:
+  /// **'{sections} sections · {refs}'**
+  String rdGuidelineMeta(int sections, String refs);
+
+  /// Summary row: molecular weight value from the identity record (PubChem), with unit.
+  ///
+  /// In en, this message translates to:
+  /// **'{value} g/mol'**
+  String rdGlanceMolarMass(String value);
 }
 
 class _AppLocalizationsDelegate

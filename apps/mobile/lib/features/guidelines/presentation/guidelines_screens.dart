@@ -9,6 +9,7 @@ import '../../../app/guidelines.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
+import '../../../core/l10n/date_format.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/common.dart';
@@ -137,6 +138,7 @@ class _GuidelinesScreenState extends ConsumerState<GuidelinesScreen> {
   ) {
     final list = cards.where((x) => x.area == area).toList();
     final c = FeTheme.of(context);
+    final bundle = ref.watch(guidelinesProvider).value ?? GuidelineBundle.empty;
     if (list.isEmpty) {
       return [
         Text(
@@ -167,7 +169,25 @@ class _GuidelinesScreenState extends ConsumerState<GuidelinesScreen> {
                         style: Theme.of(context).textTheme.titleSmall,
                       ),
                       const SizedBox(height: FeSpace.xxs),
-                      ReviewStatusBadge(status: card.status, compact: true),
+                      Wrap(
+                        spacing: FeSpace.xs,
+                        runSpacing: FeSpace.xxs,
+                        crossAxisAlignment: WrapCrossAlignment.center,
+                        children: [
+                          ReviewStatusBadge(status: card.status, compact: true),
+                          Text(
+                            l.rdGuidelineMeta(
+                              card.sections.length,
+                              l.rdSourcesCount(
+                                bundle.referencesOf(card).length,
+                              ),
+                            ),
+                            key: Key('guidelines.meta.${card.id}'),
+                            style: Theme.of(context).textTheme.labelSmall
+                                ?.copyWith(color: c.textSecondary),
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),
@@ -181,13 +201,36 @@ class _GuidelinesScreenState extends ConsumerState<GuidelinesScreen> {
 }
 
 /// Bitta yo‘riqnoma: bo‘limlar, iqtiboslar [n], manbalar ro‘yxati.
-class GuidelineDetailScreen extends ConsumerWidget {
+class GuidelineDetailScreen extends ConsumerStatefulWidget {
   const GuidelineDetailScreen({super.key, required this.cardId});
 
   final String cardId;
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<GuidelineDetailScreen> createState() =>
+      _GuidelineDetailScreenState();
+}
+
+/// Uzun yo‘riqnoma: «Shu sahifada» qatori bo‘limlar va adabiyotlarga
+/// bir bosishda olib boradi (matn devori ichida adashmaslik uchun).
+class _GuidelineDetailScreenState extends ConsumerState<GuidelineDetailScreen> {
+  final _anchors = <String, GlobalKey>{};
+
+  GlobalKey _anchor(String id) => _anchors.putIfAbsent(id, GlobalKey.new);
+
+  void _jump(String id) {
+    final ctx = _anchors[id]?.currentContext;
+    if (ctx != null) {
+      Scrollable.ensureVisible(
+        ctx,
+        duration: const Duration(milliseconds: 200),
+      );
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final cardId = widget.cardId;
     final l = AppLocalizations.of(context);
     final lang = Localizations.localeOf(context).languageCode;
     final bundle = ref.watch(guidelinesProvider).value ?? GuidelineBundle.empty;
@@ -220,7 +263,15 @@ class GuidelineDetailScreen extends ConsumerWidget {
                   const SizedBox(height: FeSpace.sm),
                   Semantics(
                     header: true,
-                    child: Text(title.text, style: t.headlineSmall),
+                    // Katta shriftda (2x) sarlavha so‘zlari harf bo‘yicha
+                    // bo‘linmasin: sarlavha shkalasi cheklanadi (u baribir
+                    // asosiy matndan katta qoladi).
+                    child: Text(
+                      title.text,
+                      style: t.headlineSmall,
+                      textScaler: MediaQuery.textScalerOf(context)
+                          .clamp(maxScaleFactor: 1.3),
+                    ),
                   ),
                   const SizedBox(height: FeSpace.xs),
                   Wrap(
@@ -235,10 +286,7 @@ class GuidelineDetailScreen extends ConsumerWidget {
                       ),
                       if (card.updated != null)
                         Text(
-                          l.guidelineUpdated(
-                            MaterialLocalizations.of(context)
-                                .formatMediumDate(card.updated!),
-                          ),
+                          l.guidelineUpdated(feDate(context, card.updated!)),
                           style: t.labelMedium?.copyWith(
                             color: c.textSecondary,
                           ),
@@ -270,8 +318,66 @@ class GuidelineDetailScreen extends ConsumerWidget {
                       text: l.guidelineTranslationDraft,
                     ),
                   ],
-                  for (final s in card.sections) ...[
-                    FeSectionHeader(s.title.of(lang)),
+                  if (card.sections.length > 1 || refs.isNotEmpty) ...[
+                    Padding(
+                      padding: const EdgeInsets.only(
+                        top: FeSpace.md,
+                        bottom: FeSpace.xs,
+                      ),
+                      child: Semantics(
+                        header: true,
+                        child: Text(
+                          l.detailOnThisPage,
+                          style: t.labelLarge?.copyWith(color: c.textSecondary),
+                        ),
+                      ),
+                    ),
+                    // Bir qator (gorizontal) — uzun sarlavhalar qisqartiriladi,
+                    // to‘liq nomi bo‘lim sarlavhasida.
+                    SingleChildScrollView(
+                      key: const Key('guideline.index'),
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        spacing: FeSpace.xs,
+                        children: [
+                          if (refs.isNotEmpty)
+                            ActionChip(
+                              key: const Key('guideline.index.refs'),
+                              avatar: const Icon(
+                                Icons.format_quote_outlined,
+                                size: 16,
+                              ),
+                              label: Text(
+                                '${l.guidelineReferences} · ${refs.length}',
+                              ),
+                              tooltip: l.rdJumpTo,
+                              onPressed: () => _jump('refs'),
+                            ),
+                          for (final (i, s) in card.sections.indexed)
+                            ActionChip(
+                              key: Key('guideline.index.$i'),
+                              label: ConstrainedBox(
+                                constraints: const BoxConstraints(
+                                  maxWidth: 200,
+                                ),
+                                child: Text(
+                                  s.title.of(lang),
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                ),
+                              ),
+                              tooltip: s.title.of(lang),
+                              onPressed: () => _jump('s$i'),
+                            ),
+                        ],
+                      ),
+                    ),
+                  ],
+                  for (final (i, s) in card.sections.indexed) ...[
+                    KeyedSubtree(
+                      key: _anchor('s$i'),
+                      child: FeSectionHeader(s.title.of(lang)),
+                    ),
                     SelectableText(
                       numberCitations(s.body.of(lang), s.citations, index),
                       style: t.bodyMedium?.copyWith(height: 1.5),
@@ -293,7 +399,10 @@ class GuidelineDetailScreen extends ConsumerWidget {
                         ),
                   ],
                   if (refs.isNotEmpty) ...[
-                    FeSectionHeader(l.guidelineReferences),
+                    KeyedSubtree(
+                      key: _anchor('refs'),
+                      child: FeSectionHeader(l.guidelineReferences),
+                    ),
                     for (var i = 0; i < refs.length; i++)
                       _ReferenceTile(number: i + 1, reference: refs[i]),
                   ],

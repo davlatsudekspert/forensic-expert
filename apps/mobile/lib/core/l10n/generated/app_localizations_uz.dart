@@ -6637,4 +6637,71 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get supRelatedUnknown => 'kontent paketidagi yozuv';
+
+  @override
+  String get rdGlanceTitle => 'Qisqacha';
+
+  @override
+  String get rdGlanceNote =>
+      'Quyidagi manbali bo‘limlardan. Iqtibos va holat — har bir bo‘lim ichida.';
+
+  @override
+  String get rdGlanceFormula => 'Kimyoviy formula';
+
+  @override
+  String get rdGlanceSpecimens => 'Namunalar';
+
+  @override
+  String get rdGlanceMethods => 'Usullar';
+
+  @override
+  String get rdGlanceMetabolites => 'Metabolitlar';
+
+  @override
+  String get rdGlanceConcentrations => 'Konsentratsiyalar';
+
+  @override
+  String get rdGlanceSources => 'Manbalar';
+
+  @override
+  String rdGlanceRecords(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta manbali yozuv',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String rdSourcesCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta manba',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String rdGlanceMore(int count) {
+    return 'yana $count ta';
+  }
+
+  @override
+  String get rdGlanceLockedHint =>
+      'Quyidagi tafsilotlar Pro’da ochiladi. Nomlar, ogohlantirishlar va manbalar bepul qoladi.';
+
+  @override
+  String get rdJumpTo => 'Bo‘limga o‘tish';
+
+  @override
+  String rdGuidelineMeta(int sections, String refs) {
+    return '$sections bo‘lim · $refs';
+  }
+
+  @override
+  String rdGlanceMolarMass(String value) {
+    return '$value g/mol';
+  }
 }

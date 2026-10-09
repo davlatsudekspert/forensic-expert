@@ -1958,5 +1958,20 @@
   "admRetry": "Qayta urinish",
   "imageAttrPubchemRdkit": "Struktura PubChem CID {cid} SMILES asosida RDKit bilan chizilgan",
   "imageAttrOriginalSchematic": "Asl sxema — FORENSIC EXPERT",
-  "supRelatedUnknown": "kontent paketidagi yozuv"
+  "supRelatedUnknown": "kontent paketidagi yozuv",
+  "rdGlanceTitle": "Qisqacha",
+  "rdGlanceNote": "Quyidagi manbali bo‘limlardan. Iqtibos va holat — har bir bo‘lim ichida.",
+  "rdGlanceFormula": "Kimyoviy formula",
+  "rdGlanceSpecimens": "Namunalar",
+  "rdGlanceMethods": "Usullar",
+  "rdGlanceMetabolites": "Metabolitlar",
+  "rdGlanceConcentrations": "Konsentratsiyalar",
+  "rdGlanceSources": "Manbalar",
+  "rdGlanceRecords": "{count, plural, other{{count} ta manbali yozuv}}",
+  "rdSourcesCount": "{count, plural, other{{count} ta manba}}",
+  "rdGlanceMore": "yana {count} ta",
+  "rdGlanceLockedHint": "Quyidagi tafsilotlar Pro’da ochiladi. Nomlar, ogohlantirishlar va manbalar bepul qoladi.",
+  "rdJumpTo": "Bo‘limga o‘tish",
+  "rdGuidelineMeta": "{sections} bo‘lim · {refs}",
+  "rdGlanceMolarMass": "{value} g/mol"
 }

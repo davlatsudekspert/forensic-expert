@@ -567,13 +567,17 @@ class _MethodSection extends ConsumerWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
+        // Chip o‘z o‘lchamida (ustun bo‘ylab cho‘zilmaydi).
         Padding(
           padding: const EdgeInsets.only(bottom: FeSpace.xs),
-          child: StatusChip(
-            key: const Key('method.evidenceType'),
-            icon: Icons.description_outlined,
-            label: l.methodEvidenceTypeLabel(method.effectiveEvidenceType),
-            color: c.textSecondary,
+          child: Align(
+            alignment: AlignmentDirectional.centerStart,
+            child: StatusChip(
+              key: const Key('method.evidenceType'),
+              icon: Icons.description_outlined,
+              label: l.methodEvidenceTypeLabel(method.effectiveEvidenceType),
+              color: c.textSecondary,
+            ),
           ),
         ),
         if (method.effectiveEvidenceType ==

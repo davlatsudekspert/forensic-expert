@@ -22,6 +22,8 @@ void main() {
     'sourceSectionRef',
     // Yakuniy: xalqaro identifikator (PubMed ID).
     'sourcePmid',
+    // SI birligi (g/mol) — barcha tillarda bir xil yoziladi.
+    'rdGlanceMolarMass',
     'languageOptionSemantics',
     'moduleAi',
     'navAi',
