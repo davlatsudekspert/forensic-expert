@@ -1,0 +1,9 @@
+{
+ "format": "fe-text-i18n-pending/1",
+ "note": "Research titles left WITHOUT an automatic uz/ru gloss. The original bibliographic title is shown unchanged in every UI language; a human translator/reviewer decides later. Counted by content/tools/translation_qa.py only indirectly (no record = nothing to check).",
+ "pending": {
+  "RS-f4a36aa65925": {
+   "reason": "Subject matter is a chemical warfare agent (organophosphorus nerve agent); no automatic draft produced — left for a human reviewer."
+  }
+ }
+}
