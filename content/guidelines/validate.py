@@ -25,6 +25,8 @@ Checks (exit code 1 on any error):
   G017 page-cited teaching books (PAGE_CITED): the key stands alone in its
        brackets and is followed by a page locator in the body language,
        e.g. "[key] (23-b.)", "[key] (с. 23–24)", "[key] (pp. 23, 27)"
+  G018 term_ids (optional): unique strings, each an existing term_id in
+       content/pilot/bundle.json term_translations (glossary link)
 """
 import json
 import pathlib
@@ -193,6 +195,19 @@ def main() -> int:
             check_uz(" ".join([q.get("q", {}).get("uz", ""), q.get("a", {}).get("uz", ""),
                                *((q.get("d") or {}).get("uz") or [])]), f"{where}.uz")
 
+    # G018: karta → ilmiy lug‘at atamalari (aniq bog‘lanish)
+    bundle = json.loads((ROOT / "content/pilot/bundle.json").read_text(encoding="utf-8"))
+    term_ids = {t["term_id"] for t in bundle.get("term_translations", [])}
+    for card in data.get("cards", []):
+        cid = card.get("id", "?")
+        tids = card.get("term_ids", [])
+        if not isinstance(tids, list) or len(set(tids)) != len(tids):
+            err("G018", cid, "term_ids must be a list of unique ids")
+            continue
+        for t in tids:
+            if t not in term_ids:
+                err("G018", cid, f"term {t!r} not in bundle term_translations")
+
     blob = json.dumps(data, ensure_ascii=False)
     if re.search(r"\bABY\b", blob):
         err("G012", "root", "reference to restricted ABY manual found")
@@ -220,7 +235,7 @@ def main() -> int:
         for e in errors:
             print("  " + e)
         return 1
-    print("OK: all checks passed (G001-G017)")
+    print("OK: all checks passed (G001-G018)")
     return 0
 
 

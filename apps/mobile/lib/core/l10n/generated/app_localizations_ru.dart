@@ -7482,4 +7482,63 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get courtSimReviewNote =>
       'Оценка основана на материале, ожидающем экспертной проверки (NEEDS_REVIEW); образцовый ответ — тоже не проверенная истина.';
+
+  @override
+  String get glossaryTitle => 'Научный словарь';
+
+  @override
+  String get glossaryIntro =>
+      'Термины на узбекском, русском и английском языках. Переводы остаются машинными черновиками, пока их не проверит терминолог.';
+
+  @override
+  String get glossaryFilterHint => 'Фильтр терминов (uz, ru, en)';
+
+  @override
+  String get glossaryEmpty => 'Нет терминов, подходящих под фильтр.';
+
+  @override
+  String get glossaryMachineDraft => 'Машинный перевод — не проверен';
+
+  @override
+  String get glossaryMachineDraftNote =>
+      'Эти переводы получены автоматически и не проверены терминологом. Используйте их для ориентира; для заключений сверяйте термин с авторитетным источником.';
+
+  @override
+  String get glossaryStatusTranslated => 'Переведено — не проверено';
+
+  @override
+  String get glossaryStatusReviewed => 'Проверенный перевод';
+
+  @override
+  String glossaryOriginal(String language, String term) {
+    return 'В источнике ($language): $term';
+  }
+
+  @override
+  String get glossaryKindTerm => 'Термин';
+
+  @override
+  String get glossaryKindAbbreviation => 'Аббревиатура';
+
+  @override
+  String get glossaryKindIdentifier => 'Идентификатор';
+
+  @override
+  String get glossaryKindFormula => 'Формула';
+
+  @override
+  String get glossaryUsedIn => 'Встречается в карточках руководств';
+
+  @override
+  String get glossaryNoCards => 'Пока не связан с карточками руководств.';
+
+  @override
+  String get glossaryOpenInGlossary => 'Открыть в словаре';
+
+  @override
+  String get guidelineTerms => 'Термины';
+
+  @override
+  String get guidelineTermsHint =>
+      'Нажмите на термин, чтобы увидеть его на узбекском, русском и английском.';
 }

@@ -13136,6 +13136,114 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Scores are based on material awaiting expert review (NEEDS_REVIEW); the model answer is not a verified truth either.'**
   String get courtSimReviewNote;
+
+  /// Scientific glossary screen title and Library hub tile.
+  ///
+  /// In en, this message translates to:
+  /// **'Scientific glossary'**
+  String get glossaryTitle;
+
+  /// Short note at the top of the glossary.
+  ///
+  /// In en, this message translates to:
+  /// **'Terms in Uzbek, Russian and English. Translations remain machine drafts until a terminologist reviews them.'**
+  String get glossaryIntro;
+
+  /// Filter field hint in the glossary (any of the three languages).
+  ///
+  /// In en, this message translates to:
+  /// **'Filter terms (uz, ru, en)'**
+  String get glossaryFilterHint;
+
+  /// Glossary: nothing matches the filter.
+  ///
+  /// In en, this message translates to:
+  /// **'No terms match the filter.'**
+  String get glossaryEmpty;
+
+  /// Badge on a machine-translated (unverified) term.
+  ///
+  /// In en, this message translates to:
+  /// **'Machine translation — not verified'**
+  String get glossaryMachineDraft;
+
+  /// Explanation under a machine-translated term.
+  ///
+  /// In en, this message translates to:
+  /// **'These translations were produced automatically and have not been checked by a terminologist. Use them for orientation; for reports, check the term in an authoritative source.'**
+  String get glossaryMachineDraftNote;
+
+  /// Badge: translated by a person but not yet reviewed.
+  ///
+  /// In en, this message translates to:
+  /// **'Translated — not reviewed'**
+  String get glossaryStatusTranslated;
+
+  /// Badge: translation reviewed by a terminologist.
+  ///
+  /// In en, this message translates to:
+  /// **'Reviewed translation'**
+  String get glossaryStatusReviewed;
+
+  /// Term detail: the form used in the source and its language.
+  ///
+  /// In en, this message translates to:
+  /// **'In the source ({language}): {term}'**
+  String glossaryOriginal(String language, String term);
+
+  /// Glossary entry kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Term'**
+  String get glossaryKindTerm;
+
+  /// Glossary entry kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Abbreviation'**
+  String get glossaryKindAbbreviation;
+
+  /// Glossary entry kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Identifier'**
+  String get glossaryKindIdentifier;
+
+  /// Glossary entry kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Formula'**
+  String get glossaryKindFormula;
+
+  /// Term detail: guideline cards that use the term.
+  ///
+  /// In en, this message translates to:
+  /// **'Used in guideline cards'**
+  String get glossaryUsedIn;
+
+  /// Term detail: the term is not linked to a guideline card.
+  ///
+  /// In en, this message translates to:
+  /// **'Not linked to a guideline card yet.'**
+  String get glossaryNoCards;
+
+  /// Action in the term sheet: open the full glossary entry.
+  ///
+  /// In en, this message translates to:
+  /// **'Open in glossary'**
+  String get glossaryOpenInGlossary;
+
+  /// Guideline card section listing glossary terms.
+  ///
+  /// In en, this message translates to:
+  /// **'Terms'**
+  String get guidelineTerms;
+
+  /// Hint under the Terms section of a guideline card.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap a term to see it in Uzbek, Russian and English.'**
+  String get guidelineTermsHint;
 }
 
 class _AppLocalizationsDelegate

@@ -434,3 +434,25 @@ rolga bog‘liq emas); ekspert xulosasi shablonining o‘ziga joylash.
 Ko‘rildi: atribusiya qatori «Manba: Yuldashev Z.A. va boshq., … — muallif ruxsati bilan, barcha uchun bepul»,
 iqtiboslar raqamlanadi va kitob sahifasi «[1] (15-b.)» ko‘rinishida; 320 dp da toshib ketish yo‘q; uz rejimida til
 ogohlantirishlari yo‘q. Tekshirilmagan: ru/en UI, internet o‘chgan holat (kartalar — lokal asset), real iOS.
+
+## 9. «Ilmiy lug‘at» (term_translations) va kartalardagi «Atamalar» (2026-10-09)
+
+`integration_test/qa_glossary_test.dart` — Linux desktop (Xvfb), haqiqiy ilova va haqiqiy paket
+(106 atama: 38 T-TOKS, 48 T-GMT, 20 eski), MOCK akkaunt, HTTP bloklangan, Pro’siz.
+Toza o‘rnatish uchun `XDG_DATA_HOME` worktree ichidagi alohida papkaga yo‘naltirildi (qurilmadagi
+boshqa branch o‘rnatgan yangiroq paket ishlatilmasin). Skrinshotlar: `docs/qa/glossary_20261009/` (96 PNG).
+
+| Til | TALABA | MUTAXASSIS |
+|---|---|---|
+| uz | 18/18 PASS | 18/18 PASS |
+| ru | 18/18 PASS | 18/18 PASS |
+| en | 18/18 PASS | 18/18 PASS |
+
+Qadamlar: Kutubxona → «Ilmiy lug‘at» kartochkasi → ro‘yxat (joriy til + ostida qolgan ikki til);
+320 dp: rus («дитизон») va ingliz («steam distillation») filtri; atama sahifasi (uz/ru/en,
+«Mashina tarjimasi — tekshirilmagan» belgisi va izoh); bog‘langan toks kartasi → «Atamalar» bo‘limi →
+atama varag‘i; orqaga (varaq → atama → ro‘yxat); global qidiruv (ru/en/uz so‘rov va «реактив Марки»)
+→ lug‘at yozuvi; GMT opioidlar kartasi → Markis reaktivi varag‘i; 320 dp × 2 matn. Toshish yo‘q.
+
+Tekshirilmagan: real iOS/Android qurilma; ADMIN roli (funksiya rolga bog‘liq emas); internet o‘chgan
+holat alohida (lug‘at — lokal paket). Barcha tarjimalar machine_draft — terminolog tekshiruvi kerak.

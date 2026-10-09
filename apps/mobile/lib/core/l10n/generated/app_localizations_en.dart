@@ -7447,4 +7447,63 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get courtSimReviewNote =>
       'Scores are based on material awaiting expert review (NEEDS_REVIEW); the model answer is not a verified truth either.';
+
+  @override
+  String get glossaryTitle => 'Scientific glossary';
+
+  @override
+  String get glossaryIntro =>
+      'Terms in Uzbek, Russian and English. Translations remain machine drafts until a terminologist reviews them.';
+
+  @override
+  String get glossaryFilterHint => 'Filter terms (uz, ru, en)';
+
+  @override
+  String get glossaryEmpty => 'No terms match the filter.';
+
+  @override
+  String get glossaryMachineDraft => 'Machine translation — not verified';
+
+  @override
+  String get glossaryMachineDraftNote =>
+      'These translations were produced automatically and have not been checked by a terminologist. Use them for orientation; for reports, check the term in an authoritative source.';
+
+  @override
+  String get glossaryStatusTranslated => 'Translated — not reviewed';
+
+  @override
+  String get glossaryStatusReviewed => 'Reviewed translation';
+
+  @override
+  String glossaryOriginal(String language, String term) {
+    return 'In the source ($language): $term';
+  }
+
+  @override
+  String get glossaryKindTerm => 'Term';
+
+  @override
+  String get glossaryKindAbbreviation => 'Abbreviation';
+
+  @override
+  String get glossaryKindIdentifier => 'Identifier';
+
+  @override
+  String get glossaryKindFormula => 'Formula';
+
+  @override
+  String get glossaryUsedIn => 'Used in guideline cards';
+
+  @override
+  String get glossaryNoCards => 'Not linked to a guideline card yet.';
+
+  @override
+  String get glossaryOpenInGlossary => 'Open in glossary';
+
+  @override
+  String get guidelineTerms => 'Terms';
+
+  @override
+  String get guidelineTermsHint =>
+      'Tap a term to see it in Uzbek, Russian and English.';
 }

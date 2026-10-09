@@ -6,6 +6,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../app/account.dart';
 import '../../../app/court_prep.dart';
+import '../../../app/glossary.dart';
 import '../../../app/guidelines.dart';
 import '../../../app/providers.dart';
 import '../../../app/publications.dart';
@@ -401,6 +402,13 @@ class LibraryScreen extends ConsumerWidget {
         l.libraryGlossary,
         lib(LibrarySection.glossary),
       ),
+      // «Ilmiy lug‘at» — uz/ru/en atamalar (term_translations).
+      (
+        'terms',
+        Icons.translate,
+        l.glossaryTitle,
+        ref.watch(glossaryProvider).terms.length,
+      ),
     ];
     final guidelineCount =
         ref.watch(guidelinesProvider).value?.cards.length ?? 0;
@@ -467,6 +475,7 @@ class LibraryScreen extends ConsumerWidget {
       'conflicts' => Routes.conflicts,
       'review' => Routes.reviewStatus,
       'glossary' => Routes.librarySection(LibrarySection.glossary.name),
+      'terms' => Routes.glossary,
       'references' => Routes.sources,
       'methods' => Routes.knowledge(KnowledgeKind.method.name),
       'reagents' => Routes.knowledge(KnowledgeKind.reagent.name),

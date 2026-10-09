@@ -7418,4 +7418,63 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get courtSimReviewNote =>
       'Baho ekspert ko‘rigini kutayotgan (NEEDS_REVIEW) materialga asoslangan; namunaviy javob ham tasdiqlangan haqiqat emas.';
+
+  @override
+  String get glossaryTitle => 'Ilmiy lug‘at';
+
+  @override
+  String get glossaryIntro =>
+      'Atamalar o‘zbek, rus va ingliz tillarida. Tarjimalar terminolog tekshirmaguncha mashina qoralamasi bo‘lib qoladi.';
+
+  @override
+  String get glossaryFilterHint => 'Atamani izlash (uz, ru, en)';
+
+  @override
+  String get glossaryEmpty => 'Filtrga mos atama topilmadi.';
+
+  @override
+  String get glossaryMachineDraft => 'Mashina tarjimasi — tekshirilmagan';
+
+  @override
+  String get glossaryMachineDraftNote =>
+      'Bu tarjimalar avtomatik olingan va terminolog tomonidan tekshirilmagan. Ulardan yo‘l-yo‘riq sifatida foydalaning; xulosa uchun atamani ishonchli manbadan tekshiring.';
+
+  @override
+  String get glossaryStatusTranslated => 'Tarjima qilingan — tekshirilmagan';
+
+  @override
+  String get glossaryStatusReviewed => 'Tekshirilgan tarjima';
+
+  @override
+  String glossaryOriginal(String language, String term) {
+    return 'Manbada ($language): $term';
+  }
+
+  @override
+  String get glossaryKindTerm => 'Atama';
+
+  @override
+  String get glossaryKindAbbreviation => 'Qisqartma';
+
+  @override
+  String get glossaryKindIdentifier => 'Identifikator';
+
+  @override
+  String get glossaryKindFormula => 'Kimyoviy formula';
+
+  @override
+  String get glossaryUsedIn => 'Qaysi yo‘riqnomalarda uchraydi';
+
+  @override
+  String get glossaryNoCards => 'Hozircha yo‘riqnoma kartasiga bog‘lanmagan.';
+
+  @override
+  String get glossaryOpenInGlossary => 'Lug‘atda ochish';
+
+  @override
+  String get guidelineTerms => 'Atamalar';
+
+  @override
+  String get guidelineTermsHint =>
+      'Atamani o‘zbek, rus va ingliz tillarida ko‘rish uchun bosing.';
 }

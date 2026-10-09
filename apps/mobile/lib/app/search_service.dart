@@ -5,6 +5,7 @@ import 'package:fe_content_schema/fe_content_schema.dart'
         JurisdictionalInstrument,
         KnowledgeArea,
         LinkRelation,
+        TermTranslation,
         disciplineOfArea;
 import 'package:fe_search_core/fe_search_core.dart';
 import 'package:flutter/material.dart';
@@ -124,6 +125,10 @@ class AppSearchService {
     for (final g in guidelines.cards) {
       for (final code in g.disciplineCodes) {
         disc(g.id, ForensicDiscipline.fromCode(code));
+        // Kartadagi atamalar — karta fanlari bo‘yicha filtrlanadi.
+        for (final tid in g.termIds) {
+          disc(tid, ForensicDiscipline.fromCode(code));
+        }
       }
       for (final entry in g.title.values.entries) {
         terms.add(
@@ -170,6 +175,34 @@ class AppSearchService {
             entityId: s.id,
             category: SearchCategory.specimen,
             term: a,
+            kind: TermKind.synonym,
+          ),
+        );
+      }
+    }
+    // «Ilmiy lug‘at»: atama uz/ru/en (va manbadagi asl ko‘rinishi) bo‘yicha
+    // topiladi; natija lug‘at yozuvini ochadi.
+    for (final g in provenance?.terms ?? const <TermTranslation>[]) {
+      final seen = <String>{};
+      for (final entry in g.localized.entries) {
+        if (entry.value.trim().isEmpty || !seen.add(entry.value)) continue;
+        terms.add(
+          SearchTerm(
+            entityId: g.id,
+            category: SearchCategory.glossary,
+            term: entry.value,
+            kind: TermKind.localized,
+            lang: entry.key,
+          ),
+        );
+      }
+      for (final extra in [g.canonical, g.original]) {
+        if (extra.trim().isEmpty || !seen.add(extra)) continue;
+        terms.add(
+          SearchTerm(
+            entityId: g.id,
+            category: SearchCategory.glossary,
+            term: extra,
             kind: TermKind.synonym,
           ),
         );

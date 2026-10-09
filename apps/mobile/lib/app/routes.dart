@@ -43,6 +43,12 @@ abstract final class Routes {
   static const libraryStandards = '/library/standards';
   static const guidelines = '/library/guidelines';
   static const practiceCatalog = '/library/guidelines/practice';
+  // «Ilmiy lug‘at» (term_translations).
+  static const glossary = '/library/glossary';
+  static String glossaryTerm(String id) =>
+      '/library/glossary/term/${Uri.encodeComponent(id)}';
+  static String homeGlossaryTerm(String id) =>
+      '/home/glossary/${Uri.encodeComponent(id)}';
   static String guideline(String id) =>
       '/library/guidelines/card/${Uri.encodeComponent(id)}';
   // «Sudda so‘roq: tayyorgarlik» (Mutaxassis Pro; bepul — namunalar).
