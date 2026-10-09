@@ -1,0 +1,171 @@
+{
+  "role": "admin",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "a01",
+      "title": "Onboarding → MOCK OTP bilan kirish",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "a02",
+      "title": "Profil: «Boshqaruv paneli» qatori (server is_admin)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "a02_profil_boshqaruv_paneli_qatori_server_is.png"
+    },
+    {
+      "id": "a03",
+      "title": "Boshqaruv paneli: statistika (FIXTURE)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "a03_boshqaruv_paneli_statistika_fixture.png"
+    },
+    {
+      "id": "a04",
+      "title": "Panel: davlatlar va 14 kunlik grafik",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "a05",
+      "title": "Murojaatlar qutisi: «Javob kutmoqda»",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "a05_murojaatlar_qutisi_javob_kutmoqda.png"
+    },
+    {
+      "id": "a06",
+      "title": "Inbox: turkum «Ilmiy xato»",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "a07",
+      "title": "Inbox: qidiruv «user03» + holat filtrlari",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "a08",
+      "title": "Murojaatni ochish (muallif, bog‘liq yozuv nomi)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "a08_murojaatni_ochish_muallif_bog_liq_yozuv_.png"
+    },
+    {
+      "id": "a09",
+      "title": "«Javob yozish» → javob yuborildi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "a09_javob_yozish_javob_yuborildi.png"
+    },
+    {
+      "id": "a10",
+      "title": "Holat → «Yakunlandi»",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "a10_holat_yakunlandi.png"
+    },
+    {
+      "id": "a11",
+      "title": "Inbox: yopilgan murojaat «Javob kutmoqda»da yo‘q",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "a12",
+      "title": "Foydalanuvchilar: 1-sahifa (25/30)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "a12_foydalanuvchilar_1_sahifa_25_30.png"
+    },
+    {
+      "id": "a13",
+      "title": "Foydalanuvchilar: «Keyingi» → 2-sahifa",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "a14",
+      "title": "Foydalanuvchilar: qidiruv + rol/tarif filtri",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "a14_foydalanuvchilar_qidiruv_rol_tarif_filtr.png"
+    },
+    {
+      "id": "a15",
+      "title": "Amallar jurnali (javob, holat, ochish)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "a15_amallar_jurnali_javob_holat_ochish.png"
+    },
+    {
+      "id": "a16",
+      "title": "RU: панель и обращения",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "a16_ru.png"
+    },
+    {
+      "id": "a17",
+      "title": "EN: audit log and users",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "a17_en_audit_log_and_users.png"
+    },
+    {
+      "id": "a18",
+      "title": "Til: O‘zbekcha (qaytish)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "a19",
+      "title": "320×640: boshqaruv paneli",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "a19_320_640_boshqaruv_paneli.png"
+    },
+    {
+      "id": "a20",
+      "title": "320×640: murojaatlar qutisi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "a20_320_640_murojaatlar_qutisi.png"
+    },
+    {
+      "id": "a21",
+      "title": "320×640: murojaat (admin)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "a21_320_640_murojaat_admin.png"
+    },
+    {
+      "id": "a22",
+      "title": "320×640: foydalanuvchilar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "a22_320_640_foydalanuvchilar.png"
+    },
+    {
+      "id": "a23",
+      "title": "Tarmoq o‘chiq: hech bir HTTP so‘rov muvaffaqiyatli emas",
+      "result": "PASS",
+      "notes": [
+        "Bloklangan HTTP urinishlari: 0"
+      ],
+      "screenshot": null
+    }
+  ],
+  "pass": 23,
+  "fail": 0
+}

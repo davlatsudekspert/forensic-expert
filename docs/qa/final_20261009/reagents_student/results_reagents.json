@@ -1,0 +1,94 @@
+{
+  "role": "reagents",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "r01",
+      "title": "Search Dragendorf",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "r01_search_dragendorf.png"
+    },
+    {
+      "id": "r02",
+      "title": "Search Марки",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "r02_search.png"
+    },
+    {
+      "id": "r03",
+      "title": "Dragendorf top hazards",
+      "result": "PASS",
+      "notes": [
+        "LANG? RAW:\"pubchem.ncbi.nlm.nih.gov\""
+      ],
+      "screenshot": "r03_dragendorf_top_hazards.png"
+    },
+    {
+      "id": "r04",
+      "title": "Dragendorf ingredients",
+      "result": "PASS",
+      "notes": [
+        "LANG? RAW:\"pubchem.ncbi.nlm.nih.gov\""
+      ],
+      "screenshot": "r04_dragendorf_ingredients.png"
+    },
+    {
+      "id": "r05",
+      "title": "Dragendorf original text",
+      "result": "PASS",
+      "notes": [
+        "LANG? RAW:\"pubchem.ncbi.nlm.nih.gov\""
+      ],
+      "screenshot": "r05_dragendorf_original_text.png"
+    },
+    {
+      "id": "r06",
+      "title": "Marki top",
+      "result": "PASS",
+      "notes": [
+        "LANG? RAW:\"pubchem.ncbi.nlm.nih.gov\""
+      ],
+      "screenshot": "r06_marki_top.png"
+    },
+    {
+      "id": "r07",
+      "title": "Marki recipe",
+      "result": "PASS",
+      "notes": [
+        "LANG? RAW:\"pubchem.ncbi.nlm.nih.gov\""
+      ],
+      "screenshot": "r07_marki_recipe.png"
+    },
+    {
+      "id": "r08",
+      "title": "Nessler top",
+      "result": "PASS",
+      "notes": [
+        "LANG? RAW:\"pubchem.ncbi.nlm.nih.gov\""
+      ],
+      "screenshot": "r08_nessler_top.png"
+    },
+    {
+      "id": "r09",
+      "title": "Nessler recipe (bepul)",
+      "result": "PASS",
+      "notes": [
+        "LANG? RAW:\"pubchem.ncbi.nlm.nih.gov\""
+      ],
+      "screenshot": "r09_nessler_recipe_bepul.png"
+    },
+    {
+      "id": "r10",
+      "title": "320 Dragendorf ingredients",
+      "result": "PASS",
+      "notes": [
+        "LANG? RAW:\"pubchem.ncbi.nlm.nih.gov\""
+      ],
+      "screenshot": "r10_320_dragendorf_ingredients.png"
+    }
+  ],
+  "pass": 10,
+  "fail": 0
+}

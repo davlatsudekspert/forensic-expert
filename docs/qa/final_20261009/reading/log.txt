@@ -1,0 +1,139 @@
+   Woah! You appear to be trying to run flutter as root.
+   We strongly recommend running the flutter tool without superuser privileges.
+  /
+📎
+Resolving dependencies in `/home/user/forensic-expert`...
+Downloading packages...
+  _fe_analyzer_shared 103.0.0 (109.0.0 available)
+  analyzer 13.3.0 (14.5.0 available)
+  build_runner 2.16.1 (2.16.2 available)
+  cross_file 0.3.5+5 (0.4.0 available)
+  cupertino_ui 1.1.1 (1.1.2 available)
+  drift 2.35.1 (2.35.2 available)
+  in_app_purchase_storekit 0.4.13 (0.4.13+1 available)
+  jni_flutter 1.0.3 (1.0.4+1 available)
+  material_color_utilities 0.13.0 (0.13.1 available)
+  material_ui 1.5.0 (1.6.0 available)
+  package_config 2.2.0 (3.0.0 available)
+  shared_preferences 2.5.5 (2.5.6 available)
+  source_gen 4.2.4 (4.3.0 available)
+  test 1.31.1 (1.33.0 available)
+  test_api 0.7.12 (0.7.15 available)
+  test_core 0.6.18 (0.6.21 available)
+Got dependencies in `/home/user/forensic-expert`!
+16 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading /home/user/forensic-expert/apps/mobile/integration_test/qa_reading_test.dart
+Building Linux application...                                   
+✓ Built build/linux/x64/debug/bundle/forensic_expert
+00:00 +0: QA real app — READING (uz-student)
+[perf] settings.load took 3 ms
+[perf] settings_loaded: 12 ms
+[perf] first_frame: 1210 ms
+[content] bundled pack: installed 
+WARNING (drift): It looks like you've created the database class ContentDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$ContentDatabase (package:fe_database/src/content/content_database.g.dart:18475:40)
+#4      new ContentDatabase (package:fe_database/src/content/content_database.dart)
+#5      LocalContentStore._open.<anonymous closure> (package:forensic_expert/data/local/content_store.dart:101:18)
+#6      StartupMetrics.measure (package:forensic_expert/core/perf/startup_metrics.dart:38:26)
+#7      LocalContentStore._open (package:forensic_expert/data/local/content_store.dart:100:36)
+#8      LocalContentStore.openActive (package:forensic_expert/data/local/content_store.dart:82:12)
+<asynchronous suspension>
+#9      contentLibraryProvider.<anonymous closure> (package:forensic_expert/app/providers.dart:174:14)
+<asynchronous suspension>
+#10     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:232:17)
+<asynchronous suspension>
+#11     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:237:29)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class ContentDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$ContentDatabase (package:fe_database/src/content/content_database.g.dart:18475:40)
+#4      new ContentDatabase (package:fe_database/src/content/content_database.dart)
+#5      LocalContentStore._open.<anonymous closure> (package:forensic_expert/data/local/content_store.dart:101:18)
+#6      StartupMetrics.measure (package:forensic_expert/core/perf/startup_metrics.dart:38:26)
+#7      LocalContentStore._open (package:forensic_expert/data/local/content_store.dart:100:36)
+#8      LocalContentStore.openActive (package:forensic_expert/data/local/content_store.dart:82:12)
+<asynchronous suspension>
+#9      contentKnowledgeProvider.<anonymous closure> (package:forensic_expert/app/providers.dart:228:14)
+<asynchronous suspension>
+#10     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:232:17)
+<asynchronous suspension>
+#11     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:237:29)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class ContentDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$ContentDatabase (package:fe_database/src/content/content_database.g.dart:18475:40)
+#4      new ContentDatabase (package:fe_database/src/content/content_database.dart)
+#5      LocalContentStore._open.<anonymous closure> (package:forensic_expert/data/local/content_store.dart:101:18)
+#6      StartupMetrics.measure (package:forensic_expert/core/perf/startup_metrics.dart:38:26)
+#7      LocalContentStore._open (package:forensic_expert/data/local/content_store.dart:100:36)
+#8      LocalContentStore.openActive (package:forensic_expert/data/local/content_store.dart:82:12)
+<asynchronous suspension>
+#9      contentEvidenceProvider.<anonymous closure> (package:forensic_expert/app/providers.dart:298:14)
+<asynchronous suspension>
+#10     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:232:17)
+<asynchronous suspension>
+#11     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:237:29)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+[perf] content_db.open took 82 ms
+[perf] content_db.open took 91 ms
+[perf] content_db.open took 102 ms
+[perf] content_db.open took 112 ms
+QA r01 PASS Library hub []
+QA r02 PASS Library hub scrolled []
+QA r03 PASS Substances list []
+QA r04 PASS Ethanol top [LANG? EN:"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…" | RAW:"pubchem.ncbi.nlm.nih.gov" | RAW:"legislation.gov.uk"]
+QA r05 PASS Ethanol scroll 1 [LANG? EN:"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…" | RAW:"pubchem.ncbi.nlm.nih.gov" | RAW:"legislation.gov.uk"]
+QA r06 PASS Ethanol Tahlil [LANG? EN:"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…" | RAW:"pubchem.ncbi.nlm.nih.gov" | RAW:"legislation.gov.uk"]
+QA r07 PASS Ethanol Tahlil 2 [LANG? EN:"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…" | RAW:"pubchem.ncbi.nlm.nih.gov" | RAW:"legislation.gov.uk"]
+QA r08 PASS Ethanol concentrations [LANG? EN:"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…" | RAW:"pubchem.ncbi.nlm.nih.gov" | RAW:"legislation.gov.uk"]
+QA r09 PASS Ethanol concentrations 2 [LANG? EN:"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…" | RAW:"pubchem.ncbi.nlm.nih.gov" | RAW:"legislation.gov.uk"]
+QA r10 PASS Ethanol where from sheet [LANG? EN:"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…" | RAW:"pubchem.ncbi.nlm.nih.gov" | RAW:"legislation.gov.uk"]
+QA r11 PASS Ethanol sources [LANG? EN:"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…" | RAW:"pubchem.ncbi.nlm.nih.gov" | RAW:"legislation.gov.uk"]
+QA r12 PASS Ethanol bottom [LANG? EN:"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…" | RAW:"pubchem.ncbi.nlm.nih.gov" | RAW:"legislation.gov.uk"]
+QA r13 PASS Search morfin qon []
+QA r14 PASS Morphine top [LANG? RAW:"pubchem.ncbi.nlm.nih.gov" | EN:"Codeine and Metabolite Concentrations in the Breastfed Neonate" | RAW:"legislation.gov.uk" | RAW:"incb.org" | RAW:"ecfr.gov"]
+QA r15 PASS Morphine scroll [LANG? RAW:"pubchem.ncbi.nlm.nih.gov" | EN:"Codeine and Metabolite Concentrations in the Breastfed Neonate" | RAW:"legislation.gov.uk" | RAW:"incb.org" | RAW:"ecfr.gov"]
+QA r16 PASS Morphine Tahlil [LANG? RAW:"pubchem.ncbi.nlm.nih.gov" | EN:"Codeine and Metabolite Concentrations in the Breastfed Neonate" | RAW:"legislation.gov.uk" | RAW:"incb.org" | RAW:"ecfr.gov"]
+QA r17 PASS Morphine Tahlil 2 [LANG? RAW:"pubchem.ncbi.nlm.nih.gov" | EN:"Codeine and Metabolite Concentrations in the Breastfed Neonate" | RAW:"legislation.gov.uk" | RAW:"incb.org" | RAW:"ecfr.gov"]
+QA r18 PASS Morphine concentrations [LANG? RAW:"pubchem.ncbi.nlm.nih.gov" | EN:"Codeine and Metabolite Concentrations in the Breastfed Neonate" | RAW:"legislation.gov.uk" | RAW:"incb.org" | RAW:"ecfr.gov"]
+QA r19 PASS Methods list []
+QA r20 PASS Headspace GC top []
+QA r21 PASS Headspace GC scroll []
+QA r22 PASS Guidelines list []
+QA r23 PASS Ethanol GC guideline []
+QA r24 PASS Guideline scroll []
+QA r25 PASS Guideline references []
+QA r26 PASS Sources list [LANG? EN:"Acute Intoxications Involving α-Pyrrolidinobutiophenone (α-PBP): Resul…" | EN:"Antagonism between salicylate and the cAMP signal controls yeast cell …" | EN:"Codeine and Metabolite Concentrations in the Breastfed Neonate" | EN:"Complete Reaction Phenotyping of Propranolol and 4-Hydroxypropranolol …" | EN:"CYP2D6 phenotype and post-surgical pain control with hydrocodone and o…" | EN:"Fentanyls continue to replace heroin in the drug arena: the cases of o…" | EN:"The adulterated XANAX pill: a fatal intoxication with etizolam and caf…"]
+QA r27 PASS Source detail []
+QA r28 PASS Specimens list []
+QA r29 PASS Specimen blood [LANG? EN:"•   Cited from other authors." | EN:"•   Outcome of the two cases is not stated in the excerpt." | EN:"Fentanyls continue to replace heroin in the drug arena: the cases of o…" | EN:"Acute Intoxications Involving α-Pyrrolidinobutiophenone (α-PBP): Resul…" | EN:"•   Group medians only; ranges and group sizes are not in the excerpt." | EN:"•   National data quoted for comparison, not measured in the citing st…"]
+QA r30 PASS Research list []
+QA r31 PASS Research detail [LANG? EN:"The journal of the American Academy of Psychiatry and the Law"]
+QA r32 PASS Disciplines []
+QA r33 PASS Search alkogol []
+QA r34 PASS Search etanol qon []
+QA r35 PASS Search headspace []
+QA r36 PASS 320 2x ethanol [LANG? EN:"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…" | RAW:"pubchem.ncbi.nlm.nih.gov" | RAW:"legislation.gov.uk"]
+QA r37 PASS 320 2x ethanol Tahlil [LANG? EN:"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…" | RAW:"pubchem.ncbi.nlm.nih.gov" | RAW:"legislation.gov.uk"]
+QA r38 PASS 320 2x guideline []
+QA r39 PASS 320 2x search []
+QA SUMMARY reading-uz-student: 39/39 PASS
+00:59 +1: (tearDownAll)
+00:59 +1: All tests passed!

@@ -1,0 +1,138 @@
+   Woah! You appear to be trying to run flutter as root.
+   We strongly recommend running the flutter tool without superuser privileges.
+  /
+📎
+Resolving dependencies in `/home/user/forensic-expert`...
+Downloading packages...
+  _fe_analyzer_shared 103.0.0 (109.0.0 available)
+  analyzer 13.3.0 (14.5.0 available)
+  build_runner 2.16.1 (2.16.2 available)
+  cross_file 0.3.5+5 (0.4.0 available)
+  cupertino_ui 1.1.1 (1.1.2 available)
+  drift 2.35.1 (2.35.2 available)
+  in_app_purchase_storekit 0.4.13 (0.4.13+1 available)
+  jni_flutter 1.0.3 (1.0.4+1 available)
+  material_color_utilities 0.13.0 (0.13.1 available)
+  material_ui 1.5.0 (1.6.0 available)
+  package_config 2.2.0 (3.0.0 available)
+  shared_preferences 2.5.5 (2.5.6 available)
+  source_gen 4.2.4 (4.3.0 available)
+  test 1.31.1 (1.33.0 available)
+  test_api 0.7.12 (0.7.15 available)
+  test_core 0.6.18 (0.6.21 available)
+Got dependencies in `/home/user/forensic-expert`!
+16 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading /home/user/forensic-expert/apps/mobile/integration_test/qa_tools_test.dart
+Building Linux application...                                   
+✓ Built build/linux/x64/debug/bundle/forensic_expert
+00:00 +0: QA real app — TOOLS & LEARN
+[perf] settings.load took 2 ms
+[perf] settings_loaded: 7 ms
+[perf] first_frame: 1044 ms
+[content] bundled pack: installed 
+WARNING (drift): It looks like you've created the database class ContentDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$ContentDatabase (package:fe_database/src/content/content_database.g.dart:18475:40)
+#4      new ContentDatabase (package:fe_database/src/content/content_database.dart)
+#5      LocalContentStore._open.<anonymous closure> (package:forensic_expert/data/local/content_store.dart:101:18)
+#6      StartupMetrics.measure (package:forensic_expert/core/perf/startup_metrics.dart:38:26)
+#7      LocalContentStore._open (package:forensic_expert/data/local/content_store.dart:100:36)
+#8      LocalContentStore.openActive (package:forensic_expert/data/local/content_store.dart:82:12)
+<asynchronous suspension>
+#9      contentLibraryProvider.<anonymous closure> (package:forensic_expert/app/providers.dart:174:14)
+<asynchronous suspension>
+#10     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:232:17)
+<asynchronous suspension>
+#11     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:237:29)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class ContentDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$ContentDatabase (package:fe_database/src/content/content_database.g.dart:18475:40)
+#4      new ContentDatabase (package:fe_database/src/content/content_database.dart)
+#5      LocalContentStore._open.<anonymous closure> (package:forensic_expert/data/local/content_store.dart:101:18)
+#6      StartupMetrics.measure (package:forensic_expert/core/perf/startup_metrics.dart:38:26)
+#7      LocalContentStore._open (package:forensic_expert/data/local/content_store.dart:100:36)
+#8      LocalContentStore.openActive (package:forensic_expert/data/local/content_store.dart:82:12)
+<asynchronous suspension>
+#9      contentKnowledgeProvider.<anonymous closure> (package:forensic_expert/app/providers.dart:228:14)
+<asynchronous suspension>
+#10     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:232:17)
+<asynchronous suspension>
+#11     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:237:29)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class ContentDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$ContentDatabase (package:fe_database/src/content/content_database.g.dart:18475:40)
+#4      new ContentDatabase (package:fe_database/src/content/content_database.dart)
+#5      LocalContentStore._open.<anonymous closure> (package:forensic_expert/data/local/content_store.dart:101:18)
+#6      StartupMetrics.measure (package:forensic_expert/core/perf/startup_metrics.dart:38:26)
+#7      LocalContentStore._open (package:forensic_expert/data/local/content_store.dart:100:36)
+#8      LocalContentStore.openActive (package:forensic_expert/data/local/content_store.dart:82:12)
+<asynchronous suspension>
+#9      contentEvidenceProvider.<anonymous closure> (package:forensic_expert/app/providers.dart:298:14)
+<asynchronous suspension>
+#10     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:232:17)
+<asynchronous suspension>
+#11     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:237:29)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+[perf] content_db.open took 117 ms
+[perf] content_db.open took 116 ms
+[perf] content_db.open took 126 ms
+[perf] content_db.open took 137 ms
+QA t01 PASS Vositalar ro‘yxati (Pro) []
+QA t02 PASS Suyultirish: o‘nlik vergul «0,5» → V₁ = 5 mL []
+QA t03 PASS Suyultirish: birlik almashtirildi → eski natija yo‘q []
+QA t04 PASS Suyultirish: natijani nusxalash []
+QA t05 PASS Suyultirish: manfiy qiymat → xato []
+QA t06 PASS Konvertor: 0,25 mg/L → 250 ng/mL []
+QA t07 PASS Molyarlik: NaCl 584,4 mg, 100 mL → 0,1 mol/L []
+QA t08 PASS Foizli eritma: 0,9 % w/v, 500 mL → 4,5 g []
+QA t09 PASS Statistika: «0,5 0,7 0,9» → n = 3, o‘rtacha 0,7 []
+QA t10 PASS Statistika: matn kiritildi → xato []
+QA t11 PASS Kalibrlash: o‘nlik vergulli «x y» juftliklari []
+QA t12 PASS LOD/LOQ: regressiyadan σ va S → DL, QL []
+QA t13 PASS Widmark: 80 kg, 500 mL 40 %, 2 soat → 1,57–2,34 ‰ []
+QA t14 PASS Widmark: vazn 5 kg → tushunarli xato []
+QA t15 PASS Teskari hisob: 0,8 ‰, 2 soat []
+QA t16 PASS Etanol birliklari: 0,5 ‰ → 0,5275 g/L []
+QA t17 PASS Henssge (PMI): Tr 30, Ta 15, 70 kg → ≈ 9,7 soat []
+QA t18 PASS Henssge: Ta 25 °C → > 23 °C formulasi ko‘rsatiladi []
+QA t19 PASS Henssge: Tr < Ta → xato []
+QA t20 PASS Ta’lim markazi []
+QA t21 PASS O‘quv rejimi: to‘plamlar []
+QA t22 PASS Kartochka: old tomoni []
+QA t23 PASS Kartochka: aylantirish (javob) []
+QA t24 PASS Kartochka: Bildim / Bilmadim (Leitner) []
+QA t25 PASS O‘quv rejimi: muddati kelganlar soni yangilandi []
+QA t26 PASS Test: 1-savol []
+QA t27 PASS Test: javob → tekshirish → manba []
+QA t28 PASS Test: oxirigacha → natija va xatolar [javoblar: 10]
+QA t29 PASS Test: xatolar ro‘yxati []
+QA t30 PASS Xato → manbani ochish []
+QA t31 PASS RU: Henssge (Посмертный интервал) []
+QA t32 PASS EN: Widmark []
+QA t33 PASS 320 dp: Widmark natijasi []
+QA t34 PASS 320 dp + 2× matn: Suyultirish []
+QA t35 PASS 320 dp + 2× matn: kartochka []
+QA t36 PASS Tungi rejim: Henssge natijasi []
+QA t37 PASS Tungi rejim: test savoli []
+QA t38 PASS Tarmoq o‘chiq [Bloklangan HTTP urinishlari: 0]
+QA SUMMARY tools: 38/38 PASS
+02:44 +1: (tearDownAll)
+02:44 +1: All tests passed!

@@ -130,18 +130,17 @@ void main() {
       await scrollTo(const Key('reagent.ingredients'));
     });
 
-    // ------------------------- 3) Nessler (Pro: retsept; bepul: xavf ochiq)
+    // ------- 3) Nessler — egasi qarori: barcha retseptlar bepul (pro=$pro)
     await qa.step('Nessler top', (s) async {
       await open(Routes.knowledgeEntry('reagent-nessler'));
       qa.expectText('PubChem CID', s);
-      final locked = find.byKey(const Key('knowledge.locked')).evaluate();
-      if (pro == locked.isNotEmpty) {
+      if (find.byKey(const Key('knowledge.locked')).evaluate().isNotEmpty) {
         s.passed = false;
-        s.notes.add('Pro holati kutilganidek emas (pro=$pro)');
+        s.notes.add('Retsept yopiq — bepul bo‘lishi kerak edi (pro=$pro)');
       }
     });
-    await qa.step('Nessler recipe or lock', (s) async {
-      await scrollTo(Key(pro ? 'reagent.ingredients' : 'knowledge.locked'));
+    await qa.step('Nessler recipe (bepul)', (s) async {
+      await scrollTo(const Key('reagent.ingredients'));
     });
 
     // --------------------------------------------- kichik ekran (320 dp)

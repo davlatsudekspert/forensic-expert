@@ -1,0 +1,56 @@
+{
+  "role": "citations-ru-professional",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "c01",
+      "title": "Ethanol sources section",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c01_ethanol_sources_section.png"
+    },
+    {
+      "id": "c02",
+      "title": "Ethanol reference list sheet",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c02_ethanol_reference_list_sheet.png"
+    },
+    {
+      "id": "c03",
+      "title": "Ethanol list copied",
+      "result": "PASS",
+      "notes": [
+        "6 qator; 1-qator: 1. Vitreous Humor Versus Peripheral Blood for Accurate Estimation of Antemortem Alcohol Levels: A Systematic Review of Postmortem Human Studies / A. Al-Juhani, R. Desoky, N. Aljohani [et al.] // Cureus. – 2025. – DOI: 10.7759/cureus.99092. – PMID: 41531574."
+      ],
+      "screenshot": "c03_ethanol_list_copied.png"
+    },
+    {
+      "id": "c04",
+      "title": "Single source citation (Vancouver)",
+      "result": "PASS",
+      "notes": [
+        "Vancouver: Al-Juhani A, Desoky R, Aljohani N, Aljohani OO, Abdulkareem RA, AlQumaizy RN. Vitreous Humor Versus Peripheral Blood for Accurate Estimation of Antemortem Alcohol Levels: A Systematic Review of Postmortem Human Studies. Cureus. 2025. doi:10.7759/cureus.99092. PMID: 41531574."
+      ],
+      "screenshot": "c04_single_source_citation_vancouver.png"
+    },
+    {
+      "id": "c05",
+      "title": "Guideline reference list",
+      "result": "PASS",
+      "notes": [
+        "1-qator: 1. Ethanol analysis by headspace gas chromatography with simultaneous flame-ionization and mass spectrometry detection / N.B. Tiscione, I. Alford, D.T. Yeatman [et al.] // Journal of Analytical Toxicology. – 2011. – Vol. 35, No. 7. – P. 501–511. – DOI: 10.1093/anatox/35.7.501. – PMID: 21871160."
+      ],
+      "screenshot": "c05_guideline_reference_list.png"
+    },
+    {
+      "id": "c06",
+      "title": "320dp citation sheet",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c06_320dp_citation_sheet.png"
+    }
+  ],
+  "pass": 6,
+  "fail": 0
+}
