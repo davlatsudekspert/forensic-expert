@@ -13,6 +13,14 @@
     {
       "match": "bundle:text_translations:claim_excerpt:C-OXYCODONE-REPORTED_CONCENTRATION-P5:ru :: abbreviations/formulas missing: ['PM']",
       "reason": "«PM» (post-mortem) is spelled out as «посмертный» in Russian; meaning preserved, all numbers/units unchanged."
+    },
+    {
+      "match": "bundle:text_translations:research_title:RS-801d80d523e7:uz :: abbreviations/formulas missing: ['NBOMes-Highly']",
+      "reason": "The original title has no space around the dash («NBOMes-Highly Potent and Toxic Alternatives of LSD»), so the detector reads «NBOMes-Highly» as one token. The gloss keeps the abbreviation «NBOMe»; no number, unit or claim is affected."
+    },
+    {
+      "match": "bundle:text_translations:research_title:RS-801d80d523e7:ru :: abbreviations/formulas missing: ['NBOMes-Highly']",
+      "reason": "Same original-title typography as the Uzbek gloss of RS-801d80d523e7; the Russian gloss keeps «NBOMe»."
     }
   ]
 }
