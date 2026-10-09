@@ -20,9 +20,9 @@
     "en": "Barbiturates: isolation and identification"
   },
   "summary": {
-    "uz": "Barbituratlar — barbitur kislotaning 5,5-almashgan hosilalari, kuchsiz kislotalar. Kobalt tuzi va amin bilan qizil-binafsha rang (Dille–Koppani), YuQX da difenilkarbazon–simob ochuvchisi, UB-spektrning pH ga bog‘liq siljishi (pH 10 da ~240 nm, pH 13 da ~255 nm) va GX-MS bilan aniqlanadi. Amobarbital va pentobarbital kabi izomerlar mass-spektrda o‘xshash, ular xromatografik ushlanish bilan farqlanadi.",
-    "ru": "Барбитураты — 5,5-замещённые производные барбитуровой кислоты, слабые кислоты. Выявляются красно-фиолетовой окраской с солью кобальта и амином (Дилле–Коппани), проявителем дифенилкарбазон–ртуть в ТСХ, pH-зависимым сдвигом УФ-спектра (около 240 нм при pH 10 и около 255 нм при pH 13) и ГХ-МС. Изомеры, например амобарбитал и пентобарбитал, имеют сходные масс-спектры и различаются по удерживанию.",
-    "en": "Barbiturates are 5,5-disubstituted derivatives of barbituric acid and weak acids. They are detected by the red-violet colour with a cobalt salt and an amine (Dille–Koppanyi), diphenylcarbazone–mercury spray on TLC, the pH-dependent UV shift (about 240 nm at pH 10 and about 255 nm at pH 13) and GC-MS. Isomers such as amobarbital and pentobarbital give similar mass spectra and are told apart by retention."
+    "uz": "Barbituratlar — barbitur kislotaning 5,5-almashgan hosilalari, kuchsiz kislotalar. Kobalt tuzi va amin bilan qizil-binafsha rang (Dille–Koppani), TLC (yupqa qatlamli xromatografiya) da difenilkarbazon–simob ochuvchisi, UB-spektrning pH ga bog‘liq siljishi (pH 10 da ~240 nm, pH 13 da ~255 nm) va GC-MS (gaz xromatografiyasi — mass-spektrometriya) bilan aniqlanadi. Amobarbital va pentobarbital kabi izomerlar mass-spektrda o‘xshash, ular xromatografik ushlanish bilan farqlanadi.",
+    "ru": "Барбитураты — 5,5-замещённые производные барбитуровой кислоты, слабые кислоты. Выявляются красно-фиолетовой окраской с солью кобальта и амином (Дилле–Коппани), проявителем дифенилкарбазон–ртуть в TLC (тонкослойная хроматография), pH-зависимым сдвигом УФ-спектра (около 240 нм при pH 10 и около 255 нм при pH 13) и GC-MS (газовая хроматография — масс-спектрометрия). Изомеры, например амобарбитал и пентобарбитал, имеют сходные масс-спектры и различаются по удерживанию.",
+    "en": "Barbiturates are 5,5-disubstituted derivatives of barbituric acid and weak acids. They are detected by the red-violet colour with a cobalt salt and an amine (Dille–Koppanyi), diphenylcarbazone–mercury spray on TLC (thin-layer chromatography), the pH-dependent UV shift (about 240 nm at pH 10 and about 255 nm at pH 13) and GC-MS (gas chromatography–mass spectrometry). Isomers such as amobarbital and pentobarbital give similar mass spectra and are told apart by retention."
   },
   "sections": [
     {
@@ -77,8 +77,8 @@
     {
       "key": "tlc",
       "title": {
-        "uz": "YuQX",
-        "ru": "ТСХ",
+        "uz": "TLC",
+        "ru": "TLC",
         "en": "TLC"
       },
       "body": {
@@ -99,9 +99,9 @@
         "en": "UV spectrophotometry and chromatography"
       },
       "body": {
-        "uz": "• UB: neytral (keto) shaklda 220 nm dan uzun to‘lqinda deyarli yutilish yo‘q; pH 10 da (borat bufer) monoanion taxminan 238–240 nm, pH 13 da (1 M ishqor) dianion taxminan 254–260 nm da maksimum beradi. Bu pH ga bog‘liq siljish 5,5-almashgan barbituratlar uchun xarakterli [gmt_yuldashev2024] (113–114-b.).\n• GX: metilsilikon (SE-30) fazada izotermik sharoitda ushlanish indekslari bo‘yicha; YuSSX: C18 kolonka, fosfat bufer (pH 3,5)–metanol, UB-detektsiya 216 nm [gmt_yuldashev2024] (112–113-b.).\n• EI mass-spektr: fenobarbital — asosiy cho‘qqi m/z 204, keyin 117 (NIST) [gmt_pubchem_2026]. Barbital, amobarbital, pentobarbital va butobarbital spektrlarida umumiy m/z 141 va 156 fragmentlari ustun [gmt_yuldashev2024] (114–115-b.); amobarbital va pentobarbital bir xil formulaga ega (C11H18N2O3) [gmt_yuldashev2024] (101, 103-b.), shuning uchun ular ushlanish vaqti va standart bilan farqlanadi [swgdrug2024].",
-        "ru": "• УФ: в нейтральной (кето) форме поглощения выше 220 нм практически нет; при pH 10 (боратный буфер) моноанион даёт максимум около 238–240 нм, при pH 13 (1 М щёлочь) дианион — около 254–260 нм. Этот pH-зависимый сдвиг характерен для 5,5-замещённых барбитуратов [gmt_yuldashev2024] (с. 113–114).\n• ГХ: на метилсиликоновой фазе (SE-30) в изотермическом режиме по индексам удерживания; ВЭЖХ: колонка C18, фосфатный буфер (pH 3,5)–метанол, УФ-детекция 216 нм [gmt_yuldashev2024] (с. 112–113).\n• Масс-спектр ЭИ: фенобарбитал — основной пик m/z 204, далее 117 (NIST) [gmt_pubchem_2026]. В спектрах барбитала, амобарбитала, пентобарбитала и бутобарбитала преобладают общие фрагменты m/z 141 и 156 [gmt_yuldashev2024] (с. 114–115); амобарбитал и пентобарбитал имеют одинаковую формулу (C11H18N2O3) [gmt_yuldashev2024] (с. 101, 103), поэтому их различают по удерживанию и стандарту [swgdrug2024].",
-        "en": "• UV: the neutral (keto) form shows practically no absorption above 220 nm; at pH 10 (borate buffer) the monoanion absorbs at about 238–240 nm and at pH 13 (1 M alkali) the dianion at about 254–260 nm. This pH-dependent shift is characteristic of 5,5-disubstituted barbiturates [gmt_yuldashev2024] (pp. 113–114).\n• GC: methylsilicone (SE-30) phase, isothermal, by retention indices; HPLC: C18 column, phosphate buffer (pH 3.5)–methanol, UV detection at 216 nm [gmt_yuldashev2024] (pp. 112–113).\n• EI mass spectra: phenobarbital — base peak m/z 204, then 117 (NIST) [gmt_pubchem_2026]. Barbital, amobarbital, pentobarbital and butobarbital spectra are dominated by the shared fragments m/z 141 and 156 [gmt_yuldashev2024] (pp. 114–115); amobarbital and pentobarbital have the same formula (C11H18N2O3) [gmt_yuldashev2024] (pp. 101, 103), so they are told apart by retention and a reference standard [swgdrug2024]."
+        "uz": "• UB: neytral (keto) shaklda 220 nm dan uzun to‘lqinda deyarli yutilish yo‘q; pH 10 da (borat bufer) monoanion taxminan 238–240 nm, pH 13 da (1 M ishqor) dianion taxminan 254–260 nm da maksimum beradi. Bu pH ga bog‘liq siljish 5,5-almashgan barbituratlar uchun xarakterli [gmt_yuldashev2024] (113–114-b.).\n• GC (gaz xromatografiyasi): metilsilikon (SE-30) fazada izotermik sharoitda ushlanish indekslari bo‘yicha; HPLC (yuqori samarali suyuqlik xromatografiyasi): C18 kolonka, fosfat bufer (pH 3,5)–metanol, UB-detektsiya 216 nm [gmt_yuldashev2024] (112–113-b.).\n• EI mass-spektr: fenobarbital — asosiy cho‘qqi m/z 204, keyin 117 (NIST) [gmt_pubchem_2026]. Barbital, amobarbital, pentobarbital va butobarbital spektrlarida umumiy m/z 141 va 156 fragmentlari ustun [gmt_yuldashev2024] (114–115-b.); amobarbital va pentobarbital bir xil formulaga ega (C11H18N2O3) [gmt_yuldashev2024] (101, 103-b.), shuning uchun ular ushlanish vaqti va standart bilan farqlanadi [swgdrug2024].",
+        "ru": "• УФ: в нейтральной (кето) форме поглощения выше 220 нм практически нет; при pH 10 (боратный буфер) моноанион даёт максимум около 238–240 нм, при pH 13 (1 М щёлочь) дианион — около 254–260 нм. Этот pH-зависимый сдвиг характерен для 5,5-замещённых барбитуратов [gmt_yuldashev2024] (с. 113–114).\n• GC (газовая хроматография): на метилсиликоновой фазе (SE-30) в изотермическом режиме по индексам удерживания; HPLC (высокоэффективная жидкостная хроматография): колонка C18, фосфатный буфер (pH 3,5)–метанол, УФ-детекция 216 нм [gmt_yuldashev2024] (с. 112–113).\n• Масс-спектр ЭИ: фенобарбитал — основной пик m/z 204, далее 117 (NIST) [gmt_pubchem_2026]. В спектрах барбитала, амобарбитала, пентобарбитала и бутобарбитала преобладают общие фрагменты m/z 141 и 156 [gmt_yuldashev2024] (с. 114–115); амобарбитал и пентобарбитал имеют одинаковую формулу (C11H18N2O3) [gmt_yuldashev2024] (с. 101, 103), поэтому их различают по удерживанию и стандарту [swgdrug2024].",
+        "en": "• UV: the neutral (keto) form shows practically no absorption above 220 nm; at pH 10 (borate buffer) the monoanion absorbs at about 238–240 nm and at pH 13 (1 M alkali) the dianion at about 254–260 nm. This pH-dependent shift is characteristic of 5,5-disubstituted barbiturates [gmt_yuldashev2024] (pp. 113–114).\n• GC (gas chromatography): methylsilicone (SE-30) phase, isothermal, by retention indices; HPLC (high-performance liquid chromatography): C18 column, phosphate buffer (pH 3.5)–methanol, UV detection at 216 nm [gmt_yuldashev2024] (pp. 112–113).\n• EI mass spectra: phenobarbital — base peak m/z 204, then 117 (NIST) [gmt_pubchem_2026]. Barbital, amobarbital, pentobarbital and butobarbital spectra are dominated by the shared fragments m/z 141 and 156 [gmt_yuldashev2024] (pp. 114–115); amobarbital and pentobarbital have the same formula (C11H18N2O3) [gmt_yuldashev2024] (pp. 101, 103), so they are told apart by retention and a reference standard [swgdrug2024]."
       },
       "citations": [
         "gmt_yuldashev2024",
@@ -295,8 +295,8 @@
     {
       "id": "gmt.bar.4",
       "q": {
-        "uz": "Amobarbital va pentobarbitalni GX-MS da qanday farqlash mumkin?",
-        "ru": "Как различить амобарбитал и пентобарбитал при ГХ-МС?",
+        "uz": "Amobarbital va pentobarbitalni GC-MS da qanday farqlash mumkin?",
+        "ru": "Как различить амобарбитал и пентобарбитал при GC-MS?",
         "en": "How are amobarbital and pentobarbital told apart by GC-MS?"
       },
       "a": {
