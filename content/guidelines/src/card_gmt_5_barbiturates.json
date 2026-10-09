@@ -197,6 +197,7 @@
   "quiz": [
     {
       "id": "gmt.bar.1",
+      "e": {"uz": "Dille–Koppani testida (kobalt tuzi + amin) qizil-binafsha rang barbituratlar bo‘lishi mumkinligini ko‘rsatadi; boshqa moddalardan juda kami shunday rang beradi. Bu guruh reaksiyasi — alohida barbituratni ko‘rsatmaydi.", "ru": "В тесте Дилле–Коппани (соль кобальта + амин) красно-фиолетовая окраска указывает на возможное присутствие барбитуратов; очень немногие другие вещества дают такую окраску. Это групповая реакция — отдельный барбитурат она не указывает.", "en": "In the Dille–Koppanyi test (cobalt salt + amine) a reddish-purple colour suggests barbiturates; very few other substances give it. It is a group reaction and does not identify an individual barbiturate."},
       "q": {
         "uz": "Dille–Koppani testida barbituratlar qanday rang beradi?",
         "ru": "Какую окраску дают барбитураты в тесте Дилле–Коппани?",
@@ -230,6 +231,7 @@
     },
     {
       "id": "gmt.bar.2",
+      "e": {"uz": "pH 10 da monoanion taxminan 238–240 nm, pH 13 da dianion taxminan 254–260 nm da maksimum beradi; bu pH ga bog‘liq siljish 5,5-almashgan barbituratlar uchun xarakterli. Neytral shaklda 220 nm dan uzun to‘lqinda deyarli yutilish yo‘q.", "ru": "При pH 10 моноанион даёт максимум около 238–240 нм, при pH 13 дианион — около 254–260 нм; этот зависящий от pH сдвиг характерен для 5,5-замещённых барбитуратов. В нейтральной форме поглощения выше 220 нм практически нет.", "en": "At pH 10 the monoanion absorbs at about 238–240 nm and at pH 13 the dianion at about 254–260 nm; this pH-dependent shift is characteristic of 5,5-disubstituted barbiturates. The neutral form hardly absorbs above 220 nm."},
       "q": {
         "uz": "Barbituratlar UB-spektrining pH 10 dan pH 13 ga o‘tganda o‘zgarishi qanday?",
         "ru": "Как меняется УФ-спектр барбитуратов при переходе от pH 10 к pH 13?",
@@ -261,6 +263,7 @@
     },
     {
       "id": "gmt.bar.3",
+      "e": {"uz": "NIST ma’lumotiga ko‘ra fenobarbitalning asosiy cho‘qqisi m/z 204, keyin 117. m/z 141 va 156 — barbital, amobarbital, pentobarbital va butobarbital spektrlarida umumiy fragmentlar.", "ru": "По данным NIST основной пик фенобарбитала — m/z 204, далее 117. m/z 141 и 156 — общие фрагменты в спектрах барбитала, амобарбитала, пентобарбитала и бутобарбитала.", "en": "According to NIST data, phenobarbital's base peak is m/z 204, then 117. m/z 141 and 156 are fragments shared by the spectra of barbital, amobarbital, pentobarbital and butobarbital."},
       "q": {
         "uz": "Fenobarbitalning EI mass-spektridagi asosiy cho‘qqi qaysi?",
         "ru": "Какой основной пик в ЭИ масс-спектре фенобарбитала?",
@@ -294,6 +297,7 @@
     },
     {
       "id": "gmt.bar.4",
+      "e": {"uz": "Amobarbital va pentobarbital bir xil formulaga ega (C11H18N2O3) va spektrlarida umumiy m/z 141 va 156 fragmentlari ustun, shuning uchun ular ushlanish vaqti va standart bilan farqlanadi. Dille–Koppani — guruh reaksiyasi.", "ru": "Амобарбитал и пентобарбитал имеют одинаковую формулу (C11H18N2O3), в их спектрах преобладают общие фрагменты m/z 141 и 156, поэтому их различают по времени удерживания и стандарту. Дилле–Коппани — групповая реакция.", "en": "Amobarbital and pentobarbital share the formula C11H18N2O3 and their spectra are dominated by the common m/z 141 and 156 fragments, so they are told apart by retention time and a reference standard. Dille–Koppanyi is a group reaction."},
       "q": {
         "uz": "Amobarbital va pentobarbitalni GC-MS da qanday farqlash mumkin?",
         "ru": "Как различить амобарбитал и пентобарбитал при GC-MS?",

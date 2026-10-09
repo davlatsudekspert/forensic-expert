@@ -232,6 +232,7 @@
   "quiz": [
     {
       "id": "gmt.scheme.1",
+      "e": {"uz": "SWGDRUG usullarni selektivligiga ko‘ra uch toifaga bo‘ladi: A — tuzilma haqida ma’lumot beradi (IQ, MS, YaMR, Raman), B — kimyoviy-fizik xossalar bo‘yicha selektiv (GC, LC, TLC, mikrokristall testlar), C — rangli testlar, immunotahlil, suyuqlanish harorati. Rangli testlar tasdiqlovchi usul emas.", "ru": "SWGDRUG делит методы по селективности на три категории: A — дают сведения о структуре (ИК, МС, ЯМР, Раман), B — селективны по химико-физическим свойствам (GC, LC, TLC, микрокристаллические пробы), C — цветные тесты, иммуноанализ, температура плавления. Цветные тесты не являются подтверждающим методом.", "en": "SWGDRUG groups methods by selectivity into three categories: A — structural information (IR, MS, NMR, Raman), B — selective by chemical/physical properties (GC, LC, TLC, microcrystal tests), C — colour tests, immunoassay, melting point. Colour tests are not a confirmatory method."},
       "q": {
         "uz": "SWGDRUG tasnifida rangli testlar qaysi toifaga kiradi?",
         "ru": "К какой категории SWGDRUG относятся цветные тесты?",
@@ -265,6 +266,7 @@
     },
     {
       "id": "gmt.scheme.2",
+      "e": {"uz": "Ijobiy rangli test faqat moddaning bo‘lishi «mumkinligini» bildiradi: o‘xshash rangni boshqa nazoratdagi yoki nazoratdagi bo‘lmagan moddalar ham beradi. Material tasdiqlovchi tahlil uchun vakolatli laboratoriyaga yuboriladi; rangli test identifikatsiya ham, miqdor ham bermaydi.", "ru": "Положительный цветной тест означает лишь, что вещество «может» присутствовать: похожую окраску дают и другие контролируемые и неконтролируемые вещества. Материал направляют на подтверждающий анализ в уполномоченную лабораторию; цветной тест не даёт ни идентификации, ни количества.", "en": "A positive colour test only means the substance 'may' be present: other controlled and non-controlled substances give similar colours. The material is sent to an authorised laboratory for confirmatory analysis; a colour test gives neither an identification nor a quantity."},
       "q": {
         "uz": "Rangli test ijobiy bo‘lsa, bu nimani bildiradi?",
         "ru": "Что означает положительный цветной тест?",
@@ -299,6 +301,7 @@
     },
     {
       "id": "gmt.scheme.3",
+      "e": {"uz": "Kartaga ko‘ra asos xossali moddalar (alkaloidlar, opioidlar, fenilalkilaminlar) biologik ob’ektdan nordonlashtirilgan suv yoki spirt bilan ajratib olinadi, so‘ng suvli ajratmadan ishqoriy muhitda organik erituvchi bilan ekstraksiya qilinadi.", "ru": "Согласно карточке, вещества основного характера (алкалоиды, опиоиды, фенилалкиламины) извлекают из биологического объекта подкисленной водой или спиртом, а затем экстрагируют из водного извлечения органическим растворителем в щелочной среде.", "en": "Per the card, basic substances (alkaloids, opioids, phenylalkylamines) are isolated from biological material with acidified water or alcohol and then extracted from the aqueous extract into an organic solvent under alkaline conditions."},
       "q": {
         "uz": "Asos xossali giyohvand moddalar suvli ajratmadan qaysi muhitda organik erituvchiga ekstraksiya qilinadi?",
         "ru": "В какой среде основные наркотические вещества экстрагируют из водного извлечения органическим растворителем?",
@@ -330,6 +333,7 @@
     },
     {
       "id": "gmt.scheme.4",
+      "e": {"uz": "Kartaga ko‘ra keng skrining uchun EI to‘liq skanerli GC-MS tanlov usuli, LC-MS esa qutbli, termolabil va past dozali moddalar uchun to‘ldiruvchi usul. Markis testi — faqat dastlabki rangli test (C toifasi).", "ru": "Согласно карточке, для широкого скрининга методом выбора является GC-MS с ЭИ в режиме полного сканирования, а LC-MS — дополняющий метод для полярных, термолабильных и низкодозовых веществ. Тест Марки — лишь предварительный цветной тест (категория C).", "en": "Per the card, EI full-scan GC-MS is the method of choice for broad screening, with LC-MS as a complementary method for polar, thermolabile and low-dose substances. The Marquis test is only a preliminary colour test (category C)."},
       "q": {
         "uz": "Keng skrining uchun qaysi usul tanlov usuli hisoblanadi?",
         "ru": "Какой метод считается методом выбора для широкого скрининга?",

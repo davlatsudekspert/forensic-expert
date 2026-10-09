@@ -115,6 +115,7 @@
   "quiz": [
     {
       "id": "toks_met_1",
+      "e": {"uz": "Mishyak birikmalari ajralayotgan vodorod ta’sirida uchuvchan arsinga (AsH3) qaytariladi; ajralgan arsin simob(II) bromid yoki xlorid shimdirilgan qog‘ozni sariqdan qo‘ng‘irgacha bo‘yaydi.", "ru": "Соединения мышьяка восстанавливаются выделяющимся водородом до летучего арсина (AsH3); выделившийся арсин окрашивает бумагу, пропитанную бромидом или хлоридом ртути(II), от жёлтого до коричневого цвета.", "en": "Arsenic compounds are reduced by nascent hydrogen to volatile arsine (AsH3); the arsine stains paper impregnated with mercury(II) bromide or chloride yellow to brown."},
       "q": {"uz": "Zanger–Blek reaksiyasida mishyak qaysi shaklda ajralib, qog‘ozni bo‘yaydi?", "ru": "В каком виде мышьяк выделяется и окрашивает бумагу в реакции Зангер–Блека?", "en": "In what form does arsenic leave the solution and stain the paper in the Sanger–Black test?"},
       "a": {"uz": "Arsin (AsH3) gazi holida", "ru": "В виде газа арсина (AsH3)", "en": "As arsine gas (AsH3)"},
       "d": {
@@ -126,6 +127,7 @@
     },
     {
       "id": "toks_met_2",
+      "e": {"uz": "Kartaga ko‘ra avval reaktivlar «bo‘sh» tajribada mishyakka tekshiriladi va qurilmadan havo vodorod bilan to‘liq siqib chiqariladi: vodorod–havo aralashmasi portlaydi. Shuning uchun qurilmani havo bilan to‘ldirish xavfli.", "ru": "Согласно карточке, сначала реактивы проверяют на мышьяк в холостом опыте и полностью вытесняют воздух из прибора водородом: смесь водорода с воздухом взрывоопасна. Поэтому заполнять прибор воздухом опасно.", "en": "Per the card, the reagents are first blank-tested for arsenic and the air is fully displaced from the apparatus by hydrogen, because a hydrogen–air mixture explodes. Filling the apparatus with air is therefore dangerous."},
       "q": {"uz": "Marsh usulida mineralizatni qo‘shishdan oldin nima qilinadi?", "ru": "Что делают в методе Марша перед внесением минерализата?", "en": "What is done in the Marsh test before the digest is added?"},
       "a": {"uz": "Reaktivlar «bo‘sh» tajribada mishyakka tekshiriladi va havo vodorod bilan siqib chiqariladi", "ru": "Проверяют реактивы на мышьяк в холостом опыте и вытесняют воздух водородом", "en": "Reagents are blank-tested for arsenic and air is displaced by hydrogen"},
       "d": {
@@ -137,6 +139,7 @@
     },
     {
       "id": "toks_met_3",
+      "e": {"uz": "Gipoxlorit eritmasida mishyak dog‘i eriydi, surmaniki erimaydi. Qo‘shimcha belgi: havoda qizdirilganda mishyak dog‘i oktaedrik kristallar, surma dog‘i amorf qoldiq beradi.", "ru": "В растворе гипохлорита налёт мышьяка растворяется, а налёт сурьмы — нет. Дополнительный признак: при нагревании на воздухе налёт мышьяка даёт октаэдрические кристаллы, налёт сурьмы — аморфный остаток.", "en": "In hypochlorite solution the arsenic mirror dissolves and the antimony mirror does not. A further sign: heated in air, the arsenic mirror gives octahedral crystals, the antimony mirror an amorphous residue."},
       "q": {"uz": "Marsh trubkasidagi mishyak dog‘ini surma dog‘idan qaysi sinov ajratadi?", "ru": "Какая проба отличает налёт мышьяка от налёта сурьмы в трубке Марша?", "en": "Which test distinguishes an arsenic mirror from an antimony mirror in the Marsh tube?"},
       "a": {"uz": "Gipoxlorit eritmasi: mishyak dog‘i eriydi, surmaniki erimaydi", "ru": "Раствор гипохлорита: налёт мышьяка растворяется, сурьмы — нет", "en": "Hypochlorite: the arsenic mirror dissolves, the antimony mirror does not"},
       "d": {
@@ -148,6 +151,7 @@
     },
     {
       "id": "toks_met_4",
+      "e": {"uz": "Mineralizat cho‘kmasi sirka kislotali issiq ammoniy atsetat bilan yuviladi: qo‘rg‘oshin sulfat eriydi, bariy sulfat qoladi.", "ru": "Осадок минерализата промывают горячим ацетатом аммония, подкисленным уксусной кислотой: сульфат свинца растворяется, сульфат бария остаётся.", "en": "The mineralizate precipitate is washed with hot ammonium acetate acidified with acetic acid: lead sulfate dissolves, barium sulfate remains."},
       "q": {"uz": "Mineralizat cho‘kmasida qo‘rg‘oshin sulfatni bariy sulfatdan qanday ajratiladi?", "ru": "Как отделяют сульфат свинца от сульфата бария в осадке минерализата?", "en": "How is lead sulfate separated from barium sulfate in the digest precipitate?"},
       "a": {"uz": "Sirka kislotali issiq ammoniy atsetat bilan yuvib (PbSO4 eriydi)", "ru": "Промыванием горячим ацетатом аммония с уксусной кислотой (PbSO4 растворяется)", "en": "By washing with hot acidified ammonium acetate (PbSO4 dissolves)"},
       "d": {
@@ -159,6 +163,7 @@
     },
     {
       "id": "toks_met_5",
+      "e": {"uz": "Destruktatda mis(I) yodid suspenziyasi simob bilan Cu2[HgI4] ning qizil-to‘q sariq cho‘kmasini beradi; oksidlovchilar xalaqit beradi.", "ru": "В деструктате суспензия иодида меди(I) с ртутью даёт красно-оранжевый осадок Cu2[HgI4]; мешают окислители.", "en": "In the destruction digest, a copper(I) iodide suspension gives a red-orange precipitate of Cu2[HgI4] with mercury; oxidants interfere."},
       "q": {"uz": "Destruktatda simob mis(I) yodid bilan qanday natija beradi?", "ru": "Что даёт ртуть в деструктате с иодидом меди(I)?", "en": "What does mercury in the destruction liquid give with copper(I) iodide?"},
       "a": {"uz": "Cu2[HgI4] ning qizil-to‘q sariq cho‘kmasi", "ru": "Красно-оранжевый осадок Cu2[HgI4]", "en": "A red-orange precipitate of Cu2[HgI4]"},
       "d": {
@@ -170,6 +175,7 @@
     },
     {
       "id": "toks_met_6",
+      "e": {"uz": "Kumush va simob ditizonatlari ikkalasi ham sariq; suyultirilgan HCl bilan chayqatilganda kumush ditizonati parchalanadi, simob ditizonati saqlanadi. Shuning uchun ditizon reaksiyalarida niqoblash va farqlovchi sinovlar zarur.", "ru": "Дитизонаты серебра и ртути оба жёлтые; при встряхивании с разбавленной HCl дитизонат серебра разрушается, а дитизонат ртути сохраняется. Поэтому в реакциях с дитизоном необходимы маскирование и различающие пробы.", "en": "Silver and mercury dithizonates are both yellow; shaken with dilute HCl, silver dithizonate decomposes while mercury dithizonate persists. Masking and distinguishing tests are therefore needed with dithizone."},
       "q": {"uz": "Kumush va simob ditizonatlari (ikkalasi sariq) qanday farqlanadi?", "ru": "Как различают дитизонаты серебра и ртути (оба жёлтые)?", "en": "How are silver and mercury dithizonates (both yellow) told apart?"},
       "a": {"uz": "Suyultirilgan HCl bilan chayqatiladi: kumush ditizonati parchalanadi, simobniki saqlanadi", "ru": "Встряхивают с разбавленной HCl: дитизонат серебра разрушается, ртути — сохраняется", "en": "Shake with dilute HCl: silver dithizonate decomposes, mercury dithizonate persists"},
       "d": {
@@ -181,6 +187,7 @@
     },
     {
       "id": "toks_met_7",
+      "e": {"uz": "Marganets persulfat yoki periodat bilan permanganatgacha oksidlanadi (pushti-qizil rang). Kartada natriy rodizonat — bariy, tiomochevina — vismut, difenilkarbazid — xrom uchun keltirilgan.", "ru": "Марганец окисляют персульфатом или периодатом до перманганата (розово-красная окраска). В карточке родизонат натрия приводится для бария, тиомочевина — для висмута, дифенилкарбазид — для хрома.", "en": "Manganese is oxidized with persulfate or periodate to permanganate (pink-red colour). In the card, sodium rhodizonate is given for barium, thiourea for bismuth and diphenylcarbazide for chromium."},
       "q": {"uz": "Marganets kationi mineralizatda qanday aniqlanadi?", "ru": "Как обнаруживают марганец в минерализате?", "en": "How is manganese detected in the digest?"},
       "a": {"uz": "Persulfat yoki periodat bilan permanganatgacha oksidlab (pushti-qizil rang)", "ru": "Окислением персульфатом или периодатом до перманганата (розово-красная окраска)", "en": "By oxidation with persulfate or periodate to permanganate (pink-red colour)"},
       "d": {

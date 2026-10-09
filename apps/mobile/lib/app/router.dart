@@ -11,6 +11,7 @@ import '../core/settings/app_settings.dart';
 import '../core/settings/settings_controller.dart';
 import '../domain/catalog/tools_catalog.dart';
 import '../domain/knowledge/knowledge_models.dart';
+import '../domain/learn/study_models.dart' show StudyQuizMode;
 import '../domain/library/library_models.dart';
 import '../domain/publications/publication_models.dart';
 import '../domain/referral/referral_models.dart';
@@ -220,6 +221,9 @@ final routerProvider = Provider<GoRouter>((ref) {
                             path: ':deck/quiz',
                             builder: (c, s) => StudyQuizScreen(
                               deckId: s.pathParameters['deck']!,
+                              mode: s.uri.queryParameters['mode'] == 'exam'
+                                  ? StudyQuizMode.exam
+                                  : StudyQuizMode.practice,
                             ),
                           ),
                         ],

@@ -1846,25 +1846,25 @@ class AppLocalizationsRu extends AppLocalizations {
   String get metaAccessed => 'Дата обращения';
 
   @override
-  String get tech_tlc => 'ТСХ (тонкослойная хроматография)';
+  String get tech_tlc => 'TLC (тонкослойная хроматография)';
 
   @override
-  String get tech_gc => 'ГХ';
+  String get tech_gc => 'GC';
 
   @override
-  String get tech_gcFid => 'ГХ-ПИД';
+  String get tech_gcFid => 'GC-FID';
 
   @override
-  String get tech_headspaceGc => 'Парофазная ГХ';
+  String get tech_headspaceGc => 'Парофазная GC';
 
   @override
-  String get tech_gcMs => 'ГХ-МС';
+  String get tech_gcMs => 'GC-MS';
 
   @override
-  String get tech_hplc => 'ВЭЖХ';
+  String get tech_hplc => 'HPLC';
 
   @override
-  String get tech_lcMsMs => 'ЖХ-МС/МС';
+  String get tech_lcMsMs => 'LC-MS/MS';
 
   @override
   String get tech_uvVis => 'УФ-видимая спектрофотометрия';
@@ -2140,10 +2140,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get researchKindCaseSeries => 'Серия случаев';
 
   @override
-  String get tech_gcMsMs => 'ГХ-МС/МС';
+  String get tech_gcMsMs => 'GC-MS/MS';
 
   @override
-  String get tech_lcMs => 'ЖХ-МС';
+  String get tech_lcMs => 'LC-MS';
 
   @override
   String get tech_hrms => 'HRMS (масс-спектрометрия высокого разрешения)';
@@ -5868,7 +5868,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get studyQuizUnavailable =>
-      'Недостаточно записей этого типа для теста';
+      'Слишком мало связанных вариантов для теста — только карточки';
 
   @override
   String get studyFrontTopic => 'Что говорит цитируемый источник об этой теме?';
@@ -5964,7 +5964,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get studyQuizNote =>
-      'Неверные варианты — другие записи того же типа из приложения; ничего не придумано.';
+      'Неверные варианты — только другие записи той же области или группы; ничего не придумано. Только тренировка — в экзамен не входит.';
 
   @override
   String studyQuizQuestionOf(int current, int total) {
@@ -7543,6 +7543,127 @@ class AppLocalizationsRu extends AppLocalizations {
       'Нажмите на термин, чтобы увидеть его на узбекском, русском и английском.';
 
   @override
+  String get studyModePractice => 'Тренировка';
+
+  @override
+  String get studyModeExam => 'Экзамен';
+
+  @override
+  String get studyModePracticeBanner =>
+      'Режим тренировки — без оценки. После каждого ответа показано, верен ли он, почему и источник.';
+
+  @override
+  String get studyModeExamBanner =>
+      'Экзамен с оценкой — только вопросы с авторским ключом ответа, тремя связанными неверными вариантами, пояснением и страницей или разделом источника. Ответы и пояснения — в конце.';
+
+  @override
+  String studyExamCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Экзамен: $count вопросов',
+      few: 'Экзамен: $count вопроса',
+      one: 'Экзамен: $count вопрос',
+      zero: 'Нет экзаменационных вопросов',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get studyPracticeOnly => 'Только тренировка';
+
+  @override
+  String get studyExamUnavailable =>
+      'Экзамена по этому набору нет: вопросы созданы автоматически или у них нет пояснения либо страницы источника. Используйте тренировку.';
+
+  @override
+  String get studyExamDraftLanguage =>
+      'Экзамен доступен на узбекском: русский перевод этих вопросов пока черновой.';
+
+  @override
+  String get studyQuizFlashcardsOnly =>
+      'Слишком мало связанных вариантов для теста — только карточки';
+
+  @override
+  String get studyTfQuestion => 'Верен ли этот ответ?';
+
+  @override
+  String get studyTfProposed => 'Предлагаемый ответ';
+
+  @override
+  String get studyTrue => 'Верно';
+
+  @override
+  String get studyFalse => 'Неверно';
+
+  @override
+  String get studyTfNote =>
+      'Если связанных неверных вариантов меньше трёх, вопрос показан в форме «Верно / Неверно».';
+
+  @override
+  String studyExplainTopic(String topic) {
+    return 'Это утверждение приведено для темы «$topic». Другие варианты — темы той же области, в источниках которых сказано иное.';
+  }
+
+  @override
+  String get studyExplainSourceSays => 'В источнике сказано:';
+
+  @override
+  String studyExplainSubstance(String name, String formula) {
+    return 'Молекулярная формула $name в идентификационной записи: $formula. Другие варианты — формулы веществ той же группы.';
+  }
+
+  @override
+  String studyExplainGuideline(String title) {
+    return 'Это краткое содержание относится к карточке руководства «$title». Другие варианты — карточки той же области.';
+  }
+
+  @override
+  String get studyOpenSource => 'Открыть источник';
+
+  @override
+  String get studyQuoteTranslated =>
+      'Цитата из источника — машинный перевод, не проверен';
+
+  @override
+  String get studyShowOriginalQuote => 'Показать цитату на языке оригинала';
+
+  @override
+  String studySourceSection(String section) {
+    return 'Раздел: $section';
+  }
+
+  @override
+  String get studyExamResultTitle => 'Результат экзамена';
+
+  @override
+  String get studyExamReview => 'Ответы и пояснения';
+
+  @override
+  String studyExamPercent(int percent) {
+    return '$percent% верных';
+  }
+
+  @override
+  String get studyDeckMixedTopics => 'Другие темы (малые наборы объединены)';
+
+  @override
+  String get studyDeckMixedSubstances =>
+      'Другие группы (малые наборы объединены)';
+
+  @override
+  String get studyDeckMixedGuidelines =>
+      'Другие руководства (малые наборы объединены)';
+
+  @override
+  String get glossaryShortExplanation => 'Краткое пояснение';
+
+  @override
+  String glossaryAbbrevSemantics(String abbr) {
+    return 'Аббревиатура $abbr: нажмите для краткого пояснения';
+  }
+
+  @override
   String get trStatusMachineDraft => 'Автоматический перевод — не проверен';
 
   @override
@@ -7610,6 +7731,16 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
+  String get imageCaptionSection => 'Подпись в источнике';
+
+  @override
+  String get trTopicSummaryLabel => 'Краткое объяснение';
+
+  @override
+  String get trTopicSummaryNote =>
+      'Составлено по утверждениям карточки с источниками; оригинальная цитата — ниже.';
+
+  @override
   String get legalTitleUnofficial =>
       'Неофициальный перевод названия — не проверен';
 
@@ -7619,12 +7750,5 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get imageCaptionSection => 'Подпись в источнике';
-
-  @override
-  String get trTopicSummaryLabel => 'Краткое объяснение';
-
-  @override
-  String get trTopicSummaryNote =>
-      'Составлено по утверждениям карточки с источниками; оригинальная цитата — ниже.';
+  String get glossaryLibraryArticles => 'Статьи словаря в библиотеке';
 }

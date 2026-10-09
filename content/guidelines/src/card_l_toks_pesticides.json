@@ -115,6 +115,7 @@
   "quiz": [
     {
       "id": "toks_pest_1",
+      "e": {"uz": "Fosfororganik birikmalar xolinesteraza fermentini bo‘g‘adi: atsetilxolin gidrolizlanmay to‘planadi va nerv impulslari uzatilishi buziladi; tahlil usullaridan biri ham shu ta’sirga asoslanadi. Qolgan variantlar kartada FOB mexanizmi sifatida keltirilmagan.", "ru": "Фосфорорганические соединения угнетают холинэстеразу: ацетилхолин не гидролизуется и накапливается, нарушается передача нервных импульсов; на этом же действии основан один из методов анализа. Остальные варианты в карточке как механизм ФОС не приводятся.", "en": "Organophosphorus compounds inhibit cholinesterase: acetylcholine is not hydrolysed and accumulates, disrupting nerve transmission; one of the analytical methods is based on this effect. The other options are not given in the card as the organophosphate mechanism."},
       "q": {"uz": "Fosfororganik birikmalarning zaharli ta’siri asosan nimaga bog‘liq?", "ru": "С чем в основном связано токсическое действие фосфорорганических соединений?", "en": "What mainly underlies the toxicity of organophosphorus compounds?"},
       "a": {"uz": "Xolinesteraza bo‘g‘ilib, atsetilxolin to‘planishiga", "ru": "С угнетением холинэстеразы и накоплением ацетилхолина", "en": "Inhibition of cholinesterase and accumulation of acetylcholine"},
       "d": {
@@ -126,6 +127,7 @@
     },
     {
       "id": "toks_pest_2",
+      "e": {"uz": "Fosfor-molibden ko‘ki reaksiyasini fosfor saqlovchi barcha moddalar beradi, shuning uchun u faqat manfiy ahamiyatli: manfiy natija FOB guruhini istisno qiladi. Reaksiya ajralma qoldig‘ini mineralizatsiyalab bajariladi va juda sezgir.", "ru": "Реакцию с образованием фосфорномолибденовой сини дают все фосфорсодержащие вещества, поэтому она имеет лишь отрицательное значение: отрицательный результат исключает группу ФОС. Реакцию проводят после минерализации остатка извлечения, и она очень чувствительна.", "en": "All phosphorus-containing substances give the phosphomolybdenum blue reaction, so it has only negative significance: a negative result rules out the organophosphate group. It is performed after mineralizing the extract residue and is very sensitive."},
       "q": {"uz": "Fosfor-molibden ko‘ki reaksiyasi nima uchun faqat manfiy ahamiyatli?", "ru": "Почему реакция фосфорномолибденовой сини имеет лишь отрицательное значение?", "en": "Why does the molybdenum blue reaction have only negative value?"},
       "a": {"uz": "Uni fosfor saqlovchi barcha moddalar beradi", "ru": "Её дают все фосфорсодержащие вещества", "en": "All phosphorus-containing substances give it"},
       "d": {
@@ -137,6 +139,7 @@
     },
     {
       "id": "toks_pest_3",
+      "e": {"uz": "To‘rt purkagichli TLC da ishqoriy rezorsin qizil dog‘ beradi — xlorofos. Natriy ishqori sariq dog‘ (metafos va boshqa p-nitrofenollilar), Dragendorf qo‘ng‘ir dog‘ (fozalon, ftalofos kabi azot saqlovchilar), bromfenol ko‘ki ko‘k dog‘ (tio- va ditiofosfatlar) beradi.", "ru": "В TLC с четырьмя проявителями щелочной резорцин даёт красное пятно — хлорофос. Гидроксид натрия даёт жёлтое пятно (метафос и другие п-нитрофенольные), реактив Драгендорфа — бурые пятна (азотсодержащие: фозалон, фталофос), бромфеноловый синий — синие пятна (тио- и дитиофосфаты).", "en": "In four-spray TLC, alkaline resorcinol gives a red spot — trichlorfon. Sodium hydroxide gives a yellow spot (methyl parathion and other p-nitrophenyl compounds), Dragendorff reagent brown spots (nitrogen-containing: phosalone, phthalophos), bromophenol blue blue spots (thio- and dithiophosphates)."},
       "q": {"uz": "To‘rt purkagichli TLC da ishqoriy rezorsin bilan qizil dog‘ qaysi birikmani ko‘rsatadi?", "ru": "Какое соединение указывает красное пятно со щелочным резорцином в TLC с четырьмя проявителями?", "en": "In four-reagent TLC, which compound gives a red spot with alkaline resorcinol?"},
       "a": {"uz": "Xlorofos", "ru": "Хлорофос", "en": "Trichlorfon (chlorophos)"},
       "d": {
@@ -148,6 +151,7 @@
     },
     {
       "id": "toks_pest_4",
+      "e": {"uz": "Natriy ishqori bilan sariq dog‘ni p-nitrofenol qoldig‘ini saqlovchi FOB (metafos, metilnitrofos, metiletiltiofos) beradi. Boshqa purkagichlar boshqa guruhlarni ko‘rsatadi: Dragendorf — azot saqlovchilar, ishqoriy rezorsin — xlorofos.", "ru": "Жёлтое пятно с гидроксидом натрия дают ФОС с остатком п-нитрофенола (метафос, метилнитрофос, метилэтилтиофос). Другие проявители выявляют другие группы: реактив Драгендорфа — азотсодержащие, щелочной резорцин — хлорофос.", "en": "The yellow spot with sodium hydroxide is given by organophosphates bearing a p-nitrophenol moiety (methyl parathion, methylnitrophos, methylethylthiophos). The other sprays show other groups: Dragendorff — nitrogen-containing compounds, alkaline resorcinol — trichlorfon."},
       "q": {"uz": "TLC da natriy ishqori bilan sariq dog‘ beruvchi FOB larning umumiy tuzilish xususiyati nima?", "ru": "Какая общая структурная особенность ФОС, дающих жёлтое пятно с гидроксидом натрия на TLC?", "en": "What structural feature do OPs that give a yellow spot with sodium hydroxide on TLC share?"},
       "a": {"uz": "p-Nitrofenol qoldig‘i", "ru": "Остаток п-нитрофенола", "en": "A p-nitrophenol moiety"},
       "d": {
@@ -159,6 +163,7 @@
     },
     {
       "id": "toks_pest_5",
+      "e": {"uz": "Kartaga ko‘ra xolinesteraza testiga sevin, prozerin, galantamin, alkogol va oqsil parchalanish mahsulotlari xalaqit beradi — shuning uchun test manfiy ahamiyatli.", "ru": "Согласно карточке, холинэстеразной пробе мешают севин, прозерин, галантамин, алкоголь и продукты распада белков — поэтому проба имеет отрицательное значение.", "en": "Per the card, carbaryl, neostigmine, galantamine, alcohol and protein breakdown products interfere with the cholinesterase test, which is why it has only negative significance."},
       "q": {"uz": "Xolinesteraza testi bo‘yicha FOB aniqlashga qaysi moddalar xalaqit berishi mumkin?", "ru": "Какие вещества могут мешать обнаружению ФОС по холинэстеразной пробе?", "en": "Which substances can interfere with OP detection by the cholinesterase test?"},
       "a": {"uz": "Sevin, prozerin, galantamin, alkogol, oqsil parchalanish mahsulotlari", "ru": "Севин, прозерин, галантамин, алкоголь, продукты распада белков", "en": "Carbaryl, neostigmine, galantamine, alcohol, protein breakdown products"},
       "d": {
@@ -170,6 +175,7 @@
     },
     {
       "id": "toks_pest_6",
+      "e": {"uz": "Spirtli ishqor geksaxlorandan 3 ta xlorni, metall natriy va spirt esa barcha 6 tasini ajratadi — kumush xlorid cho‘kmalari nisbati taxminan 1:2 bo‘lishi kerak.", "ru": "Спиртовая щёлочь отщепляет от гексахлорана 3 атома хлора, а металлический натрий со спиртом — все 6, поэтому соотношение осадков хлорида серебра должно быть примерно 1:2.", "en": "Alcoholic alkali removes 3 of hexachlorane's chlorines, while sodium metal with alcohol removes all 6, so the silver chloride precipitates should be in a ratio of about 1:2."},
       "q": {"uz": "Geksaxloranda spirtli ishqor va metall natriy bilan ajralgan xlor (AgCl) taxminan qanday nisbatda bo‘lishi kerak?", "ru": "В каком примерно соотношении должны быть количества хлора (AgCl), отщеплённого от гексахлорана спиртовой щёлочью и металлическим натрием?", "en": "Roughly what ratio is expected between chlorine (as AgCl) released from HCH by alcoholic alkali and by metallic sodium?"},
       "a": {"uz": "1:2 (3 va 6 ta xlor)", "ru": "1:2 (3 и 6 атомов хлора)", "en": "1:2 (3 versus 6 chlorines)"},
       "d": {
@@ -181,6 +187,7 @@
     },
     {
       "id": "toks_pest_7",
+      "e": {"uz": "Umumiy testlar va rangli TLC natijalari dastlabki hisoblanadi; majmuada pestitsidlarni GC, HPLC va GC-MS bilan aniqlash, tasdiqni esa ushlanish vaqtini standart modda bilan bir xil sharoitda solishtirib qilish ko‘rsatilgan. Rf ni jadval qiymati bilan solishtirgandan keyin ham qo‘shimcha tahlil talab etiladi.", "ru": "Общие пробы и цветная TLC являются предварительными; в пособии указано определение пестицидов методами GC, HPLC и GC-MS, а подтверждение — сравнением времени удерживания со стандартом в одинаковых условиях. Даже после сравнения Rf с табличными значениями требуется дополнительный анализ.", "en": "General tests and colour TLC are preliminary; the manual describes determining pesticides by GC, HPLC and GC-MS, with confirmation by comparing retention times against a reference standard under identical conditions. Even after comparing Rf with table values, further analysis is required."},
       "q": {"uz": "Pestitsid skriningining rangli natijasi qanday tasdiqlanadi?", "ru": "Как подтверждают цветной результат скрининга пестицидов?", "en": "How is a colour screening result for a pesticide confirmed?"},
       "a": {"uz": "Instrumental usulda (GC, HPLC yoki GC-MS), standart modda bilan solishtirib", "ru": "Инструментальным методом (GC, HPLC или GC-MS) со сравнением со стандартом", "en": "By an instrumental method (GC, HPLC or GC-MS) with comparison against a reference standard"},
       "d": {

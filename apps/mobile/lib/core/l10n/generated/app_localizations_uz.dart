@@ -5848,7 +5848,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get studyQuizUnavailable =>
-      'Test uchun bu turdagi yozuvlar yetarli emas';
+      'Test uchun mantiqan bog‘liq variantlar yetarli emas — faqat kartochkalar';
 
   @override
   String get studyFrontTopic => 'Keltirilgan manba bu mavzu haqida nima deydi?';
@@ -5870,12 +5870,12 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String studyCardProgress(int current, int total) {
-    return '$current-kartochka / $total';
+    return '$current-kartochka / $total ta';
   }
 
   @override
   String studyBox(int box, int total) {
-    return '$total ta qutidan $box-quti';
+    return '$box-quti / $total ta';
   }
 
   @override
@@ -5942,11 +5942,11 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get studyQuizNote =>
-      'Noto‘g‘ri variantlar — ilovadagi shu turdagi boshqa yozuvlar; hech narsa to‘qib chiqarilmagan.';
+      'Noto‘g‘ri variantlar — faqat shu soha yoki guruhdagi boshqa yozuvlar; hech narsa to‘qib chiqarilmagan. Faqat mashq — imtihonga kirmaydi.';
 
   @override
   String studyQuizQuestionOf(int current, int total) {
-    return '$current-savol / $total';
+    return '$current-savol / $total ta';
   }
 
   @override
@@ -7128,7 +7128,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String courtQuestionOf(int index, int count) {
-    return '$index-savol / $count';
+    return '$index-savol / $count ta';
   }
 
   @override
@@ -7371,7 +7371,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String courtDrillStep(int index, int count) {
-    return '$index-qadam / $count';
+    return '$index-qadam / $count ta';
   }
 
   @override
@@ -7479,6 +7479,126 @@ class AppLocalizationsUz extends AppLocalizations {
       'Atamani o‘zbek, rus va ingliz tillarida ko‘rish uchun bosing.';
 
   @override
+  String get studyModePractice => 'Mashq';
+
+  @override
+  String get studyModeExam => 'Imtihon';
+
+  @override
+  String get studyModePracticeBanner =>
+      'Mashq rejimi — baholanmaydi. Har bir javobdan keyin to‘g‘ri-noto‘g‘riligi, izohi va manbasi ko‘rsatiladi.';
+
+  @override
+  String get studyModeExamBanner =>
+      'Baholanadigan imtihon — faqat muallif yozgan javob kaliti, uchta mantiqan bog‘liq noto‘g‘ri varianti, izohi va manbadagi sahifa yoki bo‘limi bor savollar. Javoblar va izohlar oxirida ko‘rsatiladi.';
+
+  @override
+  String studyExamCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Imtihon: $count ta savol',
+      zero: 'Imtihon savollari yo‘q',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get studyPracticeOnly => 'Faqat mashq';
+
+  @override
+  String get studyExamUnavailable =>
+      'Bu to‘plam bo‘yicha imtihon yo‘q: savollar avtomatik tuzilgan yoki ularda izoh yoki manbadagi sahifa yo‘q. Mashq rejimidan foydalaning.';
+
+  @override
+  String get studyExamDraftLanguage =>
+      'Imtihon o‘zbek tilida mavjud: bu savollarning tarjimasi hali qoralama.';
+
+  @override
+  String get studyQuizFlashcardsOnly =>
+      'Test uchun mantiqan bog‘liq variantlar yetarli emas — faqat kartochkalar';
+
+  @override
+  String get studyTfQuestion => 'Bu javob to‘g‘rimi?';
+
+  @override
+  String get studyTfProposed => 'Taklif etilgan javob';
+
+  @override
+  String get studyTrue => 'To‘g‘ri';
+
+  @override
+  String get studyFalse => 'Noto‘g‘ri';
+
+  @override
+  String get studyTfNote =>
+      'Mantiqan bog‘liq noto‘g‘ri variant uchtadan kam bo‘lsa, savol «To‘g‘ri / Noto‘g‘ri» ko‘rinishida beriladi.';
+
+  @override
+  String studyExplainTopic(String topic) {
+    return 'Bu iqtibos «$topic» mavzusiga keltirilgan. Boshqa variantlar — shu sohaning boshqa mavzulari, ularning manbalarida boshqa gap aytilgan.';
+  }
+
+  @override
+  String get studyExplainSourceSays => 'Manbada shunday deyilgan:';
+
+  @override
+  String studyExplainSubstance(String name, String formula) {
+    return '$name identifikatsiya yozuvidagi molekulyar formulasi: $formula. Boshqa variantlar — shu guruhdagi boshqa moddalar formulalari.';
+  }
+
+  @override
+  String studyExplainGuideline(String title) {
+    return 'Bu qisqa mazmun «$title» yo‘riqnoma kartasiga tegishli. Boshqa variantlar — shu yo‘nalishning boshqa kartalari.';
+  }
+
+  @override
+  String get studyOpenSource => 'Manbani ochish';
+
+  @override
+  String get studyQuoteTranslated =>
+      'Manbadan iqtibos — avtomatik tarjima, tekshirilmagan';
+
+  @override
+  String get studyShowOriginalQuote => 'Asl manbadagi iqtibosni ko‘rish';
+
+  @override
+  String studySourceSection(String section) {
+    return 'Bo‘lim: $section';
+  }
+
+  @override
+  String get studyExamResultTitle => 'Imtihon natijasi';
+
+  @override
+  String get studyExamReview => 'Javoblar va izohlar';
+
+  @override
+  String studyExamPercent(int percent) {
+    return '$percent% to‘g‘ri';
+  }
+
+  @override
+  String get studyDeckMixedTopics =>
+      'Boshqa mavzular (kichik to‘plamlar birlashtirilgan)';
+
+  @override
+  String get studyDeckMixedSubstances =>
+      'Boshqa guruhlar (kichik to‘plamlar birlashtirilgan)';
+
+  @override
+  String get studyDeckMixedGuidelines =>
+      'Boshqa yo‘riqnomalar (kichik to‘plamlar birlashtirilgan)';
+
+  @override
+  String get glossaryShortExplanation => 'Qisqa izoh';
+
+  @override
+  String glossaryAbbrevSemantics(String abbr) {
+    return '$abbr qisqartmasi: qisqa izoh uchun bosing';
+  }
+
+  @override
   String get trStatusMachineDraft => 'Avtomatik tarjima — tekshirilmagan';
 
   @override
@@ -7546,6 +7666,16 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String get imageCaptionSection => 'Manbadagi izoh';
+
+  @override
+  String get trTopicSummaryLabel => 'Qisqacha tushuntirish';
+
+  @override
+  String get trTopicSummaryNote =>
+      'Kartadagi manbali da’volar asosida tuzilgan; asl iqtibos quyida.';
+
+  @override
   String get legalTitleUnofficial =>
       'Nomning norasmiy tarjimasi — tekshirilmagan';
 
@@ -7555,12 +7685,5 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String get imageCaptionSection => 'Manbadagi izoh';
-
-  @override
-  String get trTopicSummaryLabel => 'Qisqacha tushuntirish';
-
-  @override
-  String get trTopicSummaryNote =>
-      'Kartadagi manbali da’volar asosida tuzilgan; asl iqtibos quyida.';
+  String get glossaryLibraryArticles => 'Kutubxonadagi lug‘at maqolalari';
 }

@@ -78,6 +78,8 @@ k("trTopicSummaryNote", "Note under the topic card explanation header.",
   "Compiled from the sourced statements on this card; the original quote is below.",
   "Составлено по утверждениям карточки с источниками; оригинальная цитата — ниже.",
   "Kartadagi manbali da’volar asosida tuzilgan; asl iqtibos quyida.")
+k("glossaryLibraryArticles", "Section inside the single Scientific glossary: glossary articles from the library.",
+  "Glossary articles in the library", "Статьи словаря в библиотеке", "Kutubxonadagi lug‘at maqolalari")
 k("legalTitleUnofficial", "Status line under a legal document title shown as a translation.",
   "Unofficial translation of the title — not reviewed", "Неофициальный перевод названия — не проверен",
   "Nomning norasmiy tarjimasi — tekshirilmagan")
@@ -94,12 +96,10 @@ def s(key, en=None, ru=None, uz=None):
 
 
 # Noqulay sanoq «{total} tadan {n}-…» (egasi misoli «1 tadan 1-savol").
-s("studyQuizQuestionOf", uz="{current}-savol / {total}")
-s("studyCardProgress", uz="{current}-kartochka / {total}")
-s("studyQuizScore", uz="Natija: {correct} / {total}")
-s("studySessionSummary", uz="Bildingiz: {known} / {total}")
-s("courtQuestionOf", uz="{index}-savol / {count}")
-s("courtDrillStep", uz="{index}-qadam / {count}")
+# (study* sanoqlari — `l10n_study_terms.py` da: «{current}-savol / {total} ta»;
+# shu uslub bu yerda ham.)
+s("courtQuestionOf", uz="{index}-savol / {count} ta")
+s("courtDrillStep", uz="{index}-qadam / {count} ta")
 s("firstStepsProgress", uz="Bajarildi: {done} / {total}")
 s("admShown", uz="Ko‘rsatilmoqda: {shown} / {total}")
 # ru: lotincha «email» gap ichida.

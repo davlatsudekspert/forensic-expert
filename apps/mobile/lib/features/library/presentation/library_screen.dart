@@ -397,18 +397,13 @@ class LibraryScreen extends ConsumerWidget {
         l.librarySpecimens,
         provenance.specimens.length,
       ),
-      (
-        'glossary',
-        Icons.translate,
-        l.libraryGlossary,
-        lib(LibrarySection.glossary),
-      ),
-      // «Ilmiy lug‘at» — uz/ru/en atamalar (term_translations).
+      // Yagona «Ilmiy lug‘at» kirish nuqtasi: uz/ru/en atamalar
+      // (term_translations) + kutubxonadagi lug‘at maqolalari (ichida).
       (
         'terms',
         Icons.translate,
         l.glossaryTitle,
-        ref.watch(glossaryProvider).terms.length,
+        ref.watch(glossaryProvider).terms.length + lib(LibrarySection.glossary),
       ),
     ];
     final guidelineCount =

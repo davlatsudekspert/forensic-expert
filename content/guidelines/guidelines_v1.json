@@ -2399,6 +2399,11 @@
       "quiz": [
         {
           "id": "gmt.scheme.1",
+          "e": {
+            "uz": "SWGDRUG usullarni selektivligiga ko‘ra uch toifaga bo‘ladi: A — tuzilma haqida ma’lumot beradi (IQ, MS, YaMR, Raman), B — kimyoviy-fizik xossalar bo‘yicha selektiv (GC, LC, TLC, mikrokristall testlar), C — rangli testlar, immunotahlil, suyuqlanish harorati. Rangli testlar tasdiqlovchi usul emas.",
+            "ru": "SWGDRUG делит методы по селективности на три категории: A — дают сведения о структуре (ИК, МС, ЯМР, Раман), B — селективны по химико-физическим свойствам (GC, LC, TLC, микрокристаллические пробы), C — цветные тесты, иммуноанализ, температура плавления. Цветные тесты не являются подтверждающим методом.",
+            "en": "SWGDRUG groups methods by selectivity into three categories: A — structural information (IR, MS, NMR, Raman), B — selective by chemical/physical properties (GC, LC, TLC, microcrystal tests), C — colour tests, immunoassay, melting point. Colour tests are not a confirmatory method."
+          },
           "q": {
             "uz": "SWGDRUG tasnifida rangli testlar qaysi toifaga kiradi?",
             "ru": "К какой категории SWGDRUG относятся цветные тесты?",
@@ -2432,6 +2437,11 @@
         },
         {
           "id": "gmt.scheme.2",
+          "e": {
+            "uz": "Ijobiy rangli test faqat moddaning bo‘lishi «mumkinligini» bildiradi: o‘xshash rangni boshqa nazoratdagi yoki nazoratdagi bo‘lmagan moddalar ham beradi. Material tasdiqlovchi tahlil uchun vakolatli laboratoriyaga yuboriladi; rangli test identifikatsiya ham, miqdor ham bermaydi.",
+            "ru": "Положительный цветной тест означает лишь, что вещество «может» присутствовать: похожую окраску дают и другие контролируемые и неконтролируемые вещества. Материал направляют на подтверждающий анализ в уполномоченную лабораторию; цветной тест не даёт ни идентификации, ни количества.",
+            "en": "A positive colour test only means the substance 'may' be present: other controlled and non-controlled substances give similar colours. The material is sent to an authorised laboratory for confirmatory analysis; a colour test gives neither an identification nor a quantity."
+          },
           "q": {
             "uz": "Rangli test ijobiy bo‘lsa, bu nimani bildiradi?",
             "ru": "Что означает положительный цветной тест?",
@@ -2466,6 +2476,11 @@
         },
         {
           "id": "gmt.scheme.3",
+          "e": {
+            "uz": "Kartaga ko‘ra asos xossali moddalar (alkaloidlar, opioidlar, fenilalkilaminlar) biologik ob’ektdan nordonlashtirilgan suv yoki spirt bilan ajratib olinadi, so‘ng suvli ajratmadan ishqoriy muhitda organik erituvchi bilan ekstraksiya qilinadi.",
+            "ru": "Согласно карточке, вещества основного характера (алкалоиды, опиоиды, фенилалкиламины) извлекают из биологического объекта подкисленной водой или спиртом, а затем экстрагируют из водного извлечения органическим растворителем в щелочной среде.",
+            "en": "Per the card, basic substances (alkaloids, opioids, phenylalkylamines) are isolated from biological material with acidified water or alcohol and then extracted from the aqueous extract into an organic solvent under alkaline conditions."
+          },
           "q": {
             "uz": "Asos xossali giyohvand moddalar suvli ajratmadan qaysi muhitda organik erituvchiga ekstraksiya qilinadi?",
             "ru": "В какой среде основные наркотические вещества экстрагируют из водного извлечения органическим растворителем?",
@@ -2497,6 +2512,11 @@
         },
         {
           "id": "gmt.scheme.4",
+          "e": {
+            "uz": "Kartaga ko‘ra keng skrining uchun EI to‘liq skanerli GC-MS tanlov usuli, LC-MS esa qutbli, termolabil va past dozali moddalar uchun to‘ldiruvchi usul. Markis testi — faqat dastlabki rangli test (C toifasi).",
+            "ru": "Согласно карточке, для широкого скрининга методом выбора является GC-MS с ЭИ в режиме полного сканирования, а LC-MS — дополняющий метод для полярных, термолабильных и низкодозовых веществ. Тест Марки — лишь предварительный цветной тест (категория C).",
+            "en": "Per the card, EI full-scan GC-MS is the method of choice for broad screening, with LC-MS as a complementary method for polar, thermolabile and low-dose substances. The Marquis test is only a preliminary colour test (category C)."
+          },
           "q": {
             "uz": "Keng skrining uchun qaysi usul tanlov usuli hisoblanadi?",
             "ru": "Какой метод считается методом выбора для широкого скрининга?",
@@ -2810,6 +2830,11 @@
       "quiz": [
         {
           "id": "gmt.op.1",
+          "e": {
+            "uz": "Temir(III) xlorid bilan morfin erkin fenol gidroksili hisobiga ko‘k rang beradi; kodein (gidroksil metillangan) va geroin (atsetillangan) rang bermaydi. Markis reaktivi morfin, kodein va geroin bilan bir xil binafsha rang beradi, shuning uchun ularni farqlamaydi.",
+            "ru": "С хлоридом железа(III) морфин даёт синее окрашивание за счёт свободного фенольного гидроксила; кодеин (гидроксил метилирован) и героин (ацетилирован) не окрашиваются. Реактив Марки даёт с морфином, кодеином и героином одинаковую фиолетовую окраску и поэтому их не различает.",
+            "en": "Morphine turns blue with iron(III) chloride because of its free phenolic hydroxyl; codeine (methylated hydroxyl) and heroin (acetylated) give no colour. The Marquis reagent gives the same violet colour with morphine, codeine and heroin, so it does not distinguish them."
+          },
           "q": {
             "uz": "Morfinni kodein va geroindan qaysi oddiy reaktiv bilan farqlash mumkin?",
             "ru": "Каким простым реактивом можно отличить морфин от кодеина и героина?",
@@ -2841,6 +2866,11 @@
         },
         {
           "id": "gmt.op.2",
+          "e": {
+            "uz": "Geroin organizmda tez gidrolizlanib avval 6-MAM, so‘ng morfin hosil qiladi; 6-MAM geroin manbaining belgisi. Norkodein — kodein metaboliti, mekon kislotasi — opiy belgisi, benzoilekgonin — kokain metaboliti.",
+            "ru": "Героин в организме быстро гидролизуется сначала до 6-МАМ, затем до морфина; 6-МАМ — маркер героина как источника. Норкодеин — метаболит кодеина, меконовая кислота — маркер опия, бензоилэкгонин — метаболит кокаина.",
+            "en": "Heroin is rapidly hydrolysed in the body first to 6-MAM and then to morphine; 6-MAM marks heroin as the source. Norcodeine is a codeine metabolite, meconic acid a marker of opium and benzoylecgonine a cocaine metabolite."
+          },
           "q": {
             "uz": "Geroin iste’molining eng muhim belgi-metaboliti qaysi?",
             "ru": "Какой метаболит — главный маркер употребления героина?",
@@ -2872,6 +2902,11 @@
         },
         {
           "id": "gmt.op.3",
+          "e": {
+            "uz": "Omnopon (opiy alkaloidlari gidroxloridlari aralashmasi) tarkibida mekon kislotasi va mekonin bo‘lmaydi — bu opiyni omnopondan farqlashga yordam beradi. Faqat morfinning topilishi esa manbani ko‘rsatmaydi.",
+            "ru": "В омнопоне (смеси гидрохлоридов алкалоидов опия) нет меконовой кислоты и меконина — это помогает отличить опий от омнопона. Обнаружение одного морфина источник не указывает.",
+            "en": "Omnopon (a mixture of opium alkaloid hydrochlorides) contains no meconic acid or meconin, which helps distinguish opium from omnopon. Finding morphine alone does not indicate the source."
+          },
           "q": {
             "uz": "Opiyni omnopondan farqlashga qaysi moddalar yordam beradi?",
             "ru": "Какие вещества помогают отличить опий от омнопона?",
@@ -2903,6 +2938,11 @@
         },
         {
           "id": "gmt.op.4",
+          "e": {
+            "uz": "Xalqaro qo‘llanmaga ko‘ra Markis reaktivi morfin, kodein va geroin bilan binafshadan qizil-binafshagacha rang beradi. Natija faqat taxminiy: o‘xshash rangni boshqa moddalar ham beradi.",
+            "ru": "Согласно международному руководству, реактив Марки даёт с морфином, кодеином и героином окраску от фиолетовой до красно-фиолетовой. Результат лишь предварительный: похожую окраску дают и другие вещества.",
+            "en": "According to the international manual, the Marquis reagent gives violet to reddish-purple with morphine, codeine and heroin. The result is presumptive only: other substances give similar colours."
+          },
           "q": {
             "uz": "Markis reaktivi morfin, kodein va geroin bilan qanday rang beradi?",
             "ru": "Какую окраску даёт реактив Марки с морфином, кодеином и героином?",
@@ -2936,6 +2976,11 @@
         },
         {
           "id": "gmt.op.5",
+          "e": {
+            "uz": "Darslikda petidin «1-metil-4-etinil-4-fenilpiperidin» deb berilgan — karta buni xato deb tuzatgan; PubChem ga ko‘ra to‘g‘risi etil 1-metil-4-fenilpiperidin-4-karboksilat (C15H21NO2). Qolgan variantlar petidinning nomi emas.",
+            "ru": "В пособии петидин назван «1-метил-4-этинил-4-фенилпиперидин» — карточка исправляет эту ошибку; по данным PubChem правильно — этил-1-метил-4-фенилпиперидин-4-карбоксилат (C15H21NO2). Остальные варианты не являются названием петидина.",
+            "en": "The textbook names pethidine '1-methyl-4-ethynyl-4-phenylpiperidine' — the card corrects this error; per PubChem the correct name is ethyl 1-methyl-4-phenylpiperidine-4-carboxylate (C15H21NO2). The other options are not pethidine's name."
+          },
           "q": {
             "uz": "Petidinning (meperidin) to‘g‘ri kimyoviy nomi qaysi?",
             "ru": "Каково правильное химическое название петидина (меперидина)?",
@@ -2971,6 +3016,11 @@
         },
         {
           "id": "gmt.op.6",
+          "e": {
+            "uz": "NIST yozuvlariga ko‘ra fentanilning asosiy cho‘qqisi m/z 245 (keyin 146, 189); darslikdagi qiymatlar shunga mos. Kartada m/z 72 — metadonning asosiy cho‘qqisi.",
+            "ru": "По записям NIST основной пик фентанила — m/z 245 (далее 146, 189); значения пособия с этим согласуются. В карточке m/z 72 — основной пик метадона.",
+            "en": "According to NIST records, fentanyl's base peak is m/z 245 (then 146, 189), matching the textbook values. In the card, m/z 72 is the base peak of methadone."
+          },
           "q": {
             "uz": "Fentanilning EI mass-spektridagi asosiy cho‘qqi qaysi?",
             "ru": "Какой основной пик в ЭИ масс-спектре фентанила?",
@@ -3006,6 +3056,11 @@
         },
         {
           "id": "gmt.op.7",
+          "e": {
+            "uz": "Morfin suvli ajratmadan ishqoriy muhitda ekstraksiya qilinadi; darslikda «Rf» deb yozilgan 8,6–10,2 oralig‘i aslida pH qiymati — karta buni tuzatgan.",
+            "ru": "Морфин экстрагируют из водного извлечения в щелочной среде; интервал 8,6–10,2, записанный в пособии как «Rf», на самом деле является значением pH — карточка это исправляет.",
+            "en": "Morphine is extracted from the aqueous extract under alkaline conditions; the 8.6–10.2 range printed as 'Rf' in the textbook is actually a pH value, which the card corrects."
+          },
           "q": {
             "uz": "Morfin ekstraksiyasi uchun darslikdagi «8,6–10,2» oralig‘i nimani bildiradi?",
             "ru": "Что означает интервал «8,6–10,2» в пособии для экстракции морфина?",
@@ -3018,12 +3073,12 @@
           },
           "d": {
             "uz": [
-              "YuQX dagi Rf qiymatini",
+              "TLC dagi Rf qiymatini",
               "UB-spektr maksimumini (nm)",
               "Ekstraksiya unumini (%)"
             ],
             "ru": [
-              "Значение Rf в ТСХ",
+              "Значение Rf в TLC",
               "Максимум УФ-спектра (нм)",
               "Выход экстракции (%)"
             ],
@@ -3037,6 +3092,11 @@
         },
         {
           "id": "gmt.op.8",
+          "e": {
+            "uz": "Konsentrlangan nitrat kislota testida geroin sariq rang berib sekin och yashilga o‘tadi; morfin — zarg‘aldoq, tez qizilga, so‘ng sariqqa; kodein — zarg‘aldoq, sekin sariqqa. Bu test Markisdan keyingi ikkinchi test sifatida ishlatiladi.",
+            "ru": "В тесте с концентрированной азотной кислотой героин даёт жёлтую окраску, медленно переходящую в светло-зелёную; морфин — оранжевую, быстро краснеющую, затем жёлтую; кодеин — оранжевую, медленно желтеющую. Тест применяют вторым после теста Марки.",
+            "en": "In the concentrated nitric acid test heroin turns yellow, slowly becoming light green; morphine turns orange, quickly red, then yellow; codeine orange, slowly yellow. It is used as a second test after the Marquis test."
+          },
           "q": {
             "uz": "Nitrat kislota testida qaysi opiat sariq rang berib, sekin och yashilga o‘tadi?",
             "ru": "Какой опиат в тесте с азотной кислотой даёт жёлтую окраску, медленно переходящую в светло-зелёную?",
@@ -3298,6 +3358,11 @@
       "quiz": [
         {
           "id": "gmt.coc.1",
+          "e": {
+            "uz": "Modifikatsiyalangan Skott testida reaktiv bilan ko‘k rang, xlorid kislota qo‘shilganda pushti, xloroform qo‘shilganda pastki qatlamda yana ko‘k rang paydo bo‘ladi; bu ketma-ketlikni kam moddalar beradi.",
+            "ru": "В модифицированном тесте Скотта с реактивом появляется синяя окраска, при добавлении соляной кислоты — розовая, после добавления хлороформа нижний слой снова синеет; такую последовательность дают немногие вещества.",
+            "en": "In the modified Scott test the reagent gives blue, adding hydrochloric acid turns it pink, and after chloroform the lower layer turns blue again; few substances give this sequence."
+          },
           "q": {
             "uz": "Modifikatsiyalangan Skott testida kokain bo‘lsa, rang ketma-ketligi qanday?",
             "ru": "Какова последовательность окрасок в модифицированном тесте Скотта при наличии кокаина?",
@@ -3333,6 +3398,11 @@
         },
         {
           "id": "gmt.coc.2",
+          "e": {
+            "uz": "Siydikda benzoilekgoninning etil efiri (kokaetilen) aniqlansa, kokain va alkogol birga iste’mol qilingan. Angidroekgonin metil efiri krek chekilganini ko‘rsatadi; norkokain — kokain metaboliti.",
+            "ru": "Обнаружение в моче этилового эфира бензоилэкгонина (кокаэтилена) означает совместный приём кокаина и алкоголя. Метиловый эфир ангидроэкгонина указывает на курение крэка; норкокаин — метаболит кокаина.",
+            "en": "Finding the ethyl ester of benzoylecgonine (cocaethylene) in urine means cocaine and alcohol were taken together. Anhydroecgonine methyl ester points to smoked crack; norcocaine is a cocaine metabolite."
+          },
           "q": {
             "uz": "Siydikda qaysi modda kokain alkogol bilan birga iste’mol qilinganini ko‘rsatadi?",
             "ru": "Какое вещество в моче указывает на совместный приём кокаина и алкоголя?",
@@ -3364,6 +3434,11 @@
         },
         {
           "id": "gmt.coc.3",
+          "e": {
+            "uz": "Angidroekgonin metil efiri krek (kokain asosi) chekilganini ko‘rsatadi. Kokaetilen — kokain va alkogol birga iste’moli belgisi, ekgonin — kokain metaboliti, 6-MAM — geroin belgisi.",
+            "ru": "Метиловый эфир ангидроэкгонина указывает на курение крэка (основания кокаина). Кокаэтилен — маркер совместного приёма кокаина и алкоголя, экгонин — метаболит кокаина, 6-МАМ — маркер героина.",
+            "en": "Anhydroecgonine methyl ester indicates smoked crack (cocaine base). Cocaethylene marks combined cocaine and alcohol use, ecgonine is a cocaine metabolite and 6-MAM a heroin marker."
+          },
           "q": {
             "uz": "Krek (kokain asosi) chekilganini qaysi modda ko‘rsatadi?",
             "ru": "Какое вещество указывает на курение крэка (основания кокаина)?",
@@ -3395,6 +3470,11 @@
         },
         {
           "id": "gmt.coc.4",
+          "e": {
+            "uz": "Kobalt tiotsianat bilan ko‘k rang kokain (shu jumladan krek) bo‘lishi mumkinligini ko‘rsatadi, ammo o‘xshash rangni metakvalon, fensiklidin va nazoratdagi bo‘lmagan moddalar ham beradi — test xususiy emas.",
+            "ru": "Синяя окраска с тиоцианатом кобальта указывает на возможное присутствие кокаина (включая крэк), но похожую окраску дают метаквалон, фенциклидин и неконтролируемые вещества — тест неспецифичен.",
+            "en": "A blue colour with cobalt thiocyanate suggests cocaine (including crack), but methaqualone, phencyclidine and non-controlled substances give a similar colour — the test is not specific."
+          },
           "q": {
             "uz": "Kokain uchun kobalt tiotsianat testining asosiy kamchiligi nima?",
             "ru": "В чём главный недостаток теста с тиоцианатом кобальта для кокаина?",
@@ -3428,6 +3508,11 @@
         },
         {
           "id": "gmt.coc.5",
+          "e": {
+            "uz": "PubChem (NIST) ma’lumotiga ko‘ra kokainning EI mass-spektridagi asosiy cho‘qqi m/z 82; identifikatsiya standart va kutubxona spektri bilan solishtirib olib boriladi.",
+            "ru": "По данным PubChem (NIST) основной пик в ЭИ масс-спектре кокаина — m/z 82; идентификацию проводят сравнением со стандартом и библиотечным спектром.",
+            "en": "According to PubChem (NIST) data, the base peak in cocaine's EI mass spectrum is m/z 82; identification relies on comparison with a reference standard and a library spectrum."
+          },
           "q": {
             "uz": "Kokainning EI mass-spektridagi asosiy cho‘qqi qaysi?",
             "ru": "Какой основной пик в ЭИ масс-спектре кокаина?",
@@ -3688,6 +3773,11 @@
       "quiz": [
         {
           "id": "gmt.can.1",
+          "e": {
+            "uz": "Nasha tarkibida doimo kannabinol, kannabidiol va TGK uchraydi; ulardan faqat TGK giyohvand ta’sirga ega, shuning uchun namunaning giyohvand xossasi TGK ni aniqlash orqali baholanadi.",
+            "ru": "Каннабис всегда содержит каннабинол, каннабидиол и ТГК; наркотическим действием обладает только ТГК, поэтому наркотические свойства образца оценивают по обнаружению ТГК.",
+            "en": "Cannabis always contains cannabinol, cannabidiol and THC; only THC is psychoactive, so the narcotic nature of a sample is assessed by detecting THC."
+          },
           "q": {
             "uz": "Nashaning qaysi komponenti giyohvand (psixoaktiv) ta’sirga ega?",
             "ru": "Какой компонент каннабиса обладает наркотическим (психоактивным) действием?",
@@ -3719,6 +3809,11 @@
         },
         {
           "id": "gmt.can.2",
+          "e": {
+            "uz": "Dyukenua–Levin testida (vanilin–atsetaldegid, so‘ng xlorid kislota, so‘ng xloroform) xloroform qatlamining binafsha rangi nasha bo‘lishi mumkinligini bildiradi; natija taxminiy.",
+            "ru": "В тесте Дюкенуа–Левина (ванилин–ацетальдегид, затем соляная кислота, затем хлороформ) фиолетовая окраска хлороформного слоя указывает на возможное присутствие каннабиса; результат предварительный.",
+            "en": "In the Duquenois–Levine test (vanillin–acetaldehyde, then hydrochloric acid, then chloroform) a violet chloroform layer means cannabis may be present; the result is presumptive."
+          },
           "q": {
             "uz": "Dyukenua–Levin testida nasha bo‘lishi mumkinligini qaysi belgi ko‘rsatadi?",
             "ru": "Какой признак в тесте Дюкенуа–Левина указывает на возможное присутствие каннабиса?",
@@ -3752,6 +3847,11 @@
         },
         {
           "id": "gmt.can.3",
+          "e": {
+            "uz": "Faqat qo‘ldan olingan tamponda kannabinoidlar topilishi chekkanlik haqida xulosa uchun yetarli emas; so‘lak va og‘iz chayindisida TGK aniqlansa, xulosa asoslanadi.",
+            "ru": "Обнаружение каннабиноидов только в смыве с рук недостаточно для вывода о курении; вывод обоснован, если ТГК найден в слюне и смыве из полости рта.",
+            "en": "Finding cannabinoids only on a hand swab is not enough to conclude smoking; the conclusion is supported when THC is found in saliva and an oral rinse."
+          },
           "q": {
             "uz": "Faqat qo‘ldan olingan tamponda kannabinoid topilsa, qanday xulosa to‘g‘ri?",
             "ru": "Каннабиноиды найдены только в смыве с рук. Какой вывод правилен?",
@@ -3783,6 +3883,11 @@
         },
         {
           "id": "gmt.can.4",
+          "e": {
+            "uz": "Darslikda metilsilikon (SE-30) fazali kolonkada alanga-ionizatsion detektorli GC da elyutsiya tartibi: kannabidiol, TGK, kannabinol. Buni TLC dagi Rf tartibi (kannabidiol < kannabinol < TGK) bilan aralashtirmang.",
+            "ru": "В пособии для GC на колонке с метилсиликоновой фазой (SE-30) и пламенно-ионизационным детектором порядок элюирования: каннабидиол, ТГК, каннабинол. Не путайте его с порядком Rf в TLC (каннабидиол < каннабинол < ТГК).",
+            "en": "In the textbook GC on a methylsilicone (SE-30) column with flame-ionization detection, the elution order is cannabidiol, THC, cannabinol. Do not confuse it with the TLC Rf order (cannabidiol < cannabinol < THC)."
+          },
           "q": {
             "uz": "Darslikdagi GC sharoitida (SE-30) kannabinoidlar qaysi tartibda chiqadi?",
             "ru": "В каком порядке элюируются каннабиноиды в условиях GC из пособия (SE-30)?",
@@ -4050,6 +4155,11 @@
       "quiz": [
         {
           "id": "gmt.pa.1",
+          "e": {
+            "uz": "Markis reaktivi MDA, MDMA va MDE bilan qora rang beradi. Zarg‘aldoqdan jigarranggacha — amfetamin yoki metamfetamin, sariq-yashildan yashilgacha — DMA yoki DOB.",
+            "ru": "Реактив Марки даёт с МДА, МДМА и МДЭ чёрную окраску. От оранжевой до коричневой — амфетамин или метамфетамин, от жёлто-зелёной до зелёной — ДМА или ДОБ.",
+            "en": "The Marquis reagent turns black with MDA, MDMA and MDE. Orange to brown means amphetamine or methamphetamine; yellow-green to green means DMA or DOB."
+          },
           "q": {
             "uz": "Markis reaktivi MDMA bilan qanday rang beradi?",
             "ru": "Какую окраску даёт реактив Марки с МДМА?",
@@ -4083,6 +4193,11 @@
         },
         {
           "id": "gmt.pa.2",
+          "e": {
+            "uz": "Saymon testida ko‘k rang metamfetamin va boshqa N-almashgan hosilalar (MDMA, MDE va b.), ya’ni ikkilamchi aminlar bo‘lishi mumkinligini ko‘rsatadi; natija taxminiy.",
+            "ru": "Синяя окраска в тесте Саймона указывает на возможное присутствие метамфетамина и других N-замещённых производных (МДМА, МДЭ и др.), то есть вторичных аминов; результат предварительный.",
+            "en": "A blue colour in the Simon test suggests methamphetamine and other N-substituted analogues (MDMA, MDE, etc.), i.e. secondary amines; the result is presumptive."
+          },
           "q": {
             "uz": "Saymon testi qaysi moddalarni ko‘rsatadi?",
             "ru": "На какие вещества указывает тест Саймона?",
@@ -4116,6 +4231,11 @@
         },
         {
           "id": "gmt.pa.3",
+          "e": {
+            "uz": "Amfetamin asosi — uchuvchan moysimon suyuqlik; bug‘latishdan oldin oz miqdor xlorid kislota qo‘shilsa, asos tuzga aylanadi va yo‘qolmaydi.",
+            "ru": "Основание амфетамина — летучая маслянистая жидкость; если перед упариванием добавить немного соляной кислоты, основание переходит в соль и не теряется.",
+            "en": "Amphetamine base is a volatile oily liquid; adding a little hydrochloric acid before evaporation converts the base to its salt so it is not lost."
+          },
           "q": {
             "uz": "Amfetamin ekstraktini bug‘latishdan oldin nima uchun xlorid kislota qo‘shiladi?",
             "ru": "Зачем перед упариванием к экстракту амфетамина добавляют соляную кислоту?",
@@ -4147,6 +4267,11 @@
         },
         {
           "id": "gmt.pa.4",
+          "e": {
+            "uz": "Efedron (metkatinon) efedrinni kaliy permanganat va sirka kislota bilan oksidlab olinadi. Qizil fosfor va yodid kislota bilan qaytarish esa efedrindan metamfetamin olish yo‘li.",
+            "ru": "Эфедрон (меткатинон) получают окислением эфедрина перманганатом калия с уксусной кислотой. Восстановление красным фосфором и иодоводородной кислотой — путь получения метамфетамина из эфедрина.",
+            "en": "Ephedrone (methcathinone) is made by oxidizing ephedrine with potassium permanganate and acetic acid. Reduction with red phosphorus and hydriodic acid is the route from ephedrine to methamphetamine."
+          },
           "q": {
             "uz": "Efedron (metkatinon) efedrindan qanday olinadi?",
             "ru": "Как получают эфедрон (меткатинон) из эфедрина?",
@@ -4178,6 +4303,11 @@
         },
         {
           "id": "gmt.pa.5",
+          "e": {
+            "uz": "NIST yozuvlariga ko‘ra amfetaminning asosiy cho‘qqisi m/z 44 (keyin 91), MDMA niki — m/z 58 (135, 77). Kichik amin fragmentlari ko‘p analoglarda umumiy, shuning uchun ushlanish vaqti va standart ham kerak.",
+            "ru": "По записям NIST основной пик амфетамина — m/z 44 (далее 91), МДМА — m/z 58 (135, 77). Небольшие аминные фрагменты общие для многих аналогов, поэтому нужны также время удерживания и стандарт.",
+            "en": "According to NIST records, amphetamine's base peak is m/z 44 (then 91) and MDMA's is m/z 58 (135, 77). Small amine fragments are shared by many analogues, so retention time and a reference standard are also needed."
+          },
           "q": {
             "uz": "Amfetaminning EI mass-spektridagi asosiy cho‘qqi qaysi?",
             "ru": "Какой основной пик в ЭИ масс-спектре амфетамина?",
@@ -4429,6 +4559,11 @@
       "quiz": [
         {
           "id": "gmt.bar.1",
+          "e": {
+            "uz": "Dille–Koppani testida (kobalt tuzi + amin) qizil-binafsha rang barbituratlar bo‘lishi mumkinligini ko‘rsatadi; boshqa moddalardan juda kami shunday rang beradi. Bu guruh reaksiyasi — alohida barbituratni ko‘rsatmaydi.",
+            "ru": "В тесте Дилле–Коппани (соль кобальта + амин) красно-фиолетовая окраска указывает на возможное присутствие барбитуратов; очень немногие другие вещества дают такую окраску. Это групповая реакция — отдельный барбитурат она не указывает.",
+            "en": "In the Dille–Koppanyi test (cobalt salt + amine) a reddish-purple colour suggests barbiturates; very few other substances give it. It is a group reaction and does not identify an individual barbiturate."
+          },
           "q": {
             "uz": "Dille–Koppani testida barbituratlar qanday rang beradi?",
             "ru": "Какую окраску дают барбитураты в тесте Дилле–Коппани?",
@@ -4462,6 +4597,11 @@
         },
         {
           "id": "gmt.bar.2",
+          "e": {
+            "uz": "pH 10 da monoanion taxminan 238–240 nm, pH 13 da dianion taxminan 254–260 nm da maksimum beradi; bu pH ga bog‘liq siljish 5,5-almashgan barbituratlar uchun xarakterli. Neytral shaklda 220 nm dan uzun to‘lqinda deyarli yutilish yo‘q.",
+            "ru": "При pH 10 моноанион даёт максимум около 238–240 нм, при pH 13 дианион — около 254–260 нм; этот зависящий от pH сдвиг характерен для 5,5-замещённых барбитуратов. В нейтральной форме поглощения выше 220 нм практически нет.",
+            "en": "At pH 10 the monoanion absorbs at about 238–240 nm and at pH 13 the dianion at about 254–260 nm; this pH-dependent shift is characteristic of 5,5-disubstituted barbiturates. The neutral form hardly absorbs above 220 nm."
+          },
           "q": {
             "uz": "Barbituratlar UB-spektrining pH 10 dan pH 13 ga o‘tganda o‘zgarishi qanday?",
             "ru": "Как меняется УФ-спектр барбитуратов при переходе от pH 10 к pH 13?",
@@ -4493,6 +4633,11 @@
         },
         {
           "id": "gmt.bar.3",
+          "e": {
+            "uz": "NIST ma’lumotiga ko‘ra fenobarbitalning asosiy cho‘qqisi m/z 204, keyin 117. m/z 141 va 156 — barbital, amobarbital, pentobarbital va butobarbital spektrlarida umumiy fragmentlar.",
+            "ru": "По данным NIST основной пик фенобарбитала — m/z 204, далее 117. m/z 141 и 156 — общие фрагменты в спектрах барбитала, амобарбитала, пентобарбитала и бутобарбитала.",
+            "en": "According to NIST data, phenobarbital's base peak is m/z 204, then 117. m/z 141 and 156 are fragments shared by the spectra of barbital, amobarbital, pentobarbital and butobarbital."
+          },
           "q": {
             "uz": "Fenobarbitalning EI mass-spektridagi asosiy cho‘qqi qaysi?",
             "ru": "Какой основной пик в ЭИ масс-спектре фенобарбитала?",
@@ -4526,6 +4671,11 @@
         },
         {
           "id": "gmt.bar.4",
+          "e": {
+            "uz": "Amobarbital va pentobarbital bir xil formulaga ega (C11H18N2O3) va spektrlarida umumiy m/z 141 va 156 fragmentlari ustun, shuning uchun ular ushlanish vaqti va standart bilan farqlanadi. Dille–Koppani — guruh reaksiyasi.",
+            "ru": "Амобарбитал и пентобарбитал имеют одинаковую формулу (C11H18N2O3), в их спектрах преобладают общие фрагменты m/z 141 и 156, поэтому их различают по времени удерживания и стандарту. Дилле–Коппани — групповая реакция.",
+            "en": "Amobarbital and pentobarbital share the formula C11H18N2O3 and their spectra are dominated by the common m/z 141 and 156 fragments, so they are told apart by retention time and a reference standard. Dille–Koppanyi is a group reaction."
+          },
           "q": {
             "uz": "Amobarbital va pentobarbitalni GC-MS da qanday farqlash mumkin?",
             "ru": "Как различить амобарбитал и пентобарбитал при GC-MS?",
@@ -4777,6 +4927,11 @@
       "quiz": [
         {
           "id": "gmt.bzd.1",
+          "e": {
+            "uz": "Kislotali gidrolizda diazepam 2-metilamino-5-xlorbenzofenon (MXB) beradi; xlordiazepoksid va oksazepam — AXB, nitrazepam — ANB.",
+            "ru": "При кислотном гидролизе диазепам даёт 2-метиламино-5-хлорбензофенон (МХБ); хлордиазепоксид и оксазепам — АХБ, нитразепам — АНБ.",
+            "en": "On acid hydrolysis diazepam gives 2-methylamino-5-chlorobenzophenone (MACB); chlordiazepoxide and oxazepam give ACB, nitrazepam gives ANB."
+          },
           "q": {
             "uz": "Diazepam kislotali gidrolizda qaysi benzofenonni beradi?",
             "ru": "Какой бензофенон образует диазепам при кислотном гидролизе?",
@@ -4808,6 +4963,11 @@
         },
         {
           "id": "gmt.bzd.2",
+          "e": {
+            "uz": "Nitroguruh saqlovchi nitrazepam gidrolizda 2-amino-5-nitrobenzofenon (ANB) beradi; darslikning bir joyida AXB deb yozilgan, ammo shu sahifadagi sxema va jadvalda ANB. AXB — xlordiazepoksid va oksazepam, MXB — diazepam mahsuloti.",
+            "ru": "Нитразепам, содержащий нитрогруппу, при гидролизе даёт 2-амино-5-нитробензофенон (АНБ); в одном месте пособия указан АХБ, но схема и таблица на той же странице дают АНБ. АХБ — продукт хлордиазепоксида и оксазепама, МХБ — диазепама.",
+            "en": "Nitrazepam, which carries a nitro group, gives 2-amino-5-nitrobenzophenone (ANB) on hydrolysis; one passage of the textbook says ACB, but the scheme and table on the same page give ANB. ACB comes from chlordiazepoxide and oxazepam, MACB from diazepam."
+          },
           "q": {
             "uz": "Nitrazepam gidrolizida qaysi benzofenon hosil bo‘ladi?",
             "ru": "Какой бензофенон образуется при гидролизе нитразепама?",
@@ -4839,6 +4999,11 @@
         },
         {
           "id": "gmt.bzd.3",
+          "e": {
+            "uz": "Diazotirlashda birlamchi aromatik amin rangli bo‘yoq hosil qiladi. MXB ikkilamchi amin bo‘lgani uchun sariqligicha qoladi yoki rangsizlanadi; AXB qizil, ANB yorqin zarg‘aldoq rang beradi.",
+            "ru": "Окрашенный краситель при диазотировании образует только первичный ароматический амин. МХБ — вторичный амин, поэтому остаётся жёлтым или обесцвечивается; АХБ даёт красную, АНБ — ярко-оранжевую окраску.",
+            "en": "Diazotization forms a coloured dye only with a primary aromatic amine. MACB is a secondary amine, so it stays yellow or fades, while ACB turns red and ANB bright orange."
+          },
           "q": {
             "uz": "Nima uchun diazotirlashdan keyin MXB dog‘i rangli bo‘yoq bermaydi?",
             "ru": "Почему пятно МХБ не даёт окрашенного красителя после диазотирования?",
@@ -4870,6 +5035,11 @@
         },
         {
           "id": "gmt.bzd.4",
+          "e": {
+            "uz": "Simmerman testida diazepam va ayrim hosilalar qizil-binafsha yoki pushti rang beradi; lorazepam, oksazepam, oksazolam, klorazepat, xlordiazepoksid va midazolam rang bermaydi.",
+            "ru": "В тесте Циммермана диазепам и некоторые производные дают красно-фиолетовую или розовую окраску; лоразепам, оксазепам, оксазолам, клоразепат, хлордиазепоксид и мидазолам не окрашиваются.",
+            "en": "In the Zimmermann test diazepam and some derivatives give reddish-purple or pink; lorazepam, oxazepam, oxazolam, clorazepate, chlordiazepoxide and midazolam give no colour."
+          },
           "q": {
             "uz": "Qaysi benzodiazepin Simmerman testida rang BERMAYDI?",
             "ru": "Какой бензодиазепин НЕ окрашивается в тесте Циммермана?",
@@ -4903,6 +5073,11 @@
         },
         {
           "id": "gmt.bzd.5",
+          "e": {
+            "uz": "NIST yozuvlariga ko‘ra diazepamning asosiy cho‘qqisi m/z 256 (283, 284 bilan); darslikdagi qiymatlar shunga mos.",
+            "ru": "По записям NIST основной пик диазепама — m/z 256 (вместе с 283, 284); значения пособия с этим согласуются.",
+            "en": "According to NIST records, diazepam's base peak is m/z 256 (with 283, 284), matching the textbook values."
+          },
           "q": {
             "uz": "Diazepamning EI mass-spektridagi asosiy cho‘qqi qaysi?",
             "ru": "Какой основной пик в ЭИ масс-спектре диазепама?",
@@ -5164,6 +5339,11 @@
       "quiz": [
         {
           "id": "gmt.pre.1",
+          "e": {
+            "uz": "Geroin morfinni atsetillab olinadi; darslikda sirka angidridi geroin (va metakvalon) prekursori sifatida keltirilgan. Kaliy permanganat — efedrindan metkatinon olishda, antranil kislota — metakvalon, piperidin — fensiklidin uchun.",
+            "ru": "Героин получают ацетилированием морфина; в пособии уксусный ангидрид указан как прекурсор героина (и метаквалона). Перманганат калия используют для получения меткатинона из эфедрина, антраниловая кислота — прекурсор метаквалона, пиперидин — фенциклидина.",
+            "en": "Heroin is made by acetylating morphine; the textbook lists acetic anhydride as a precursor of heroin (and methaqualone). Potassium permanganate is used to make methcathinone from ephedrine, anthranilic acid is a methaqualone precursor and piperidine a phencyclidine precursor."
+          },
           "q": {
             "uz": "Geroin tayyorlashda morfinni atsetillash uchun qaysi prekursor ishlatiladi?",
             "ru": "Какой прекурсор используют для ацетилирования морфина при изготовлении героина?",
@@ -5195,6 +5375,11 @@
         },
         {
           "id": "gmt.pre.2",
+          "e": {
+            "uz": "Aseton ishqoriy muhitda o-nitrobenzaldegid bilan indigo hosil qiladi va xloroform qatlami ko‘karadi. Ishqoriy yod eritmasi yodoform beradi va asetonga xos emas.",
+            "ru": "Ацетон с о-нитробензальдегидом в щелочной среде образует индиго, и хлороформный слой синеет. Щелочной раствор иода даёт йодоформ и для ацетона неспецифичен.",
+            "en": "Acetone forms indigo with o-nitrobenzaldehyde in alkali, and the chloroform layer turns blue. Alkaline iodine gives iodoform and is not specific for acetone."
+          },
           "q": {
             "uz": "Qaysi reaksiya asetonni ko‘k indigo hosil qilish orqali ko‘rsatadi?",
             "ru": "Какая реакция выявляет ацетон по образованию синего индиго?",
@@ -5226,6 +5411,11 @@
         },
         {
           "id": "gmt.pre.3",
+          "e": {
+            "uz": "Ishqoriy yod eritmasi bilan yodoform reaksiyasini aseton bilan bir qatorda etanol va sut kislota ham beradi — shuning uchun u asetonga xos emas.",
+            "ru": "Йодоформную реакцию со щелочным раствором иода наряду с ацетоном дают этанол и молочная кислота — поэтому для ацетона она неспецифична.",
+            "en": "Besides acetone, ethanol and lactic acid also give the iodoform reaction with alkaline iodine, so it is not specific for acetone."
+          },
           "q": {
             "uz": "Nima uchun yodoform reaksiyasi aseton uchun xususiy emas?",
             "ru": "Почему иодоформная реакция неспецифична для ацетона?",
@@ -5257,6 +5447,11 @@
         },
         {
           "id": "gmt.pre.4",
+          "e": {
+            "uz": "Ergot alkaloidlari va lizergin kislota Erlix reaktivi (p-dimetilaminobenzaldegid) bilan ko‘k-binafsha rang va UB nurda ko‘k fluoressensiya beradi. Dille–Koppani — barbituratlar, kobalt tiotsianat — kokain, Fast Blue B — kannabis uchun.",
+            "ru": "Алкалоиды спорыньи и лизергиновая кислота дают с реактивом Эрлиха (п-диметиламинобензальдегид) сине-фиолетовую окраску и голубую флуоресценцию в УФ-свете. Дилле–Коппани — для барбитуратов, тиоцианат кобальта — для кокаина, прочный синий Б — для каннабиса.",
+            "en": "Ergot alkaloids and lysergic acid give a blue-violet colour with Ehrlich reagent (p-dimethylaminobenzaldehyde) and blue fluorescence under UV. Dille–Koppanyi is for barbiturates, cobalt thiocyanate for cocaine and Fast Blue B for cannabis."
+          },
           "q": {
             "uz": "Ergot alkaloidlari va lizergin kislotani qaysi reaktiv ko‘k-binafsha rang bilan ko‘rsatadi?",
             "ru": "Какой реактив выявляет алкалоиды спорыньи и лизергиновую кислоту сине-фиолетовой окраской?",
@@ -5450,6 +5645,11 @@
       "quiz": [
         {
           "id": "gmt.law.1",
+          "e": {
+            "uz": "813-I-son Qonunning 4-moddasiga ko‘ra: I — muomalasi taqiqlangan giyohvandlik vositalari, II — muomalasi cheklangan giyohvandlik vositalari, III — muomalasi cheklangan psixotrop moddalar, IV — muomalasi cheklangan prekursorlar.",
+            "ru": "Согласно статье 4 Закона № 813-I: I — наркотические средства, оборот которых запрещён; II — наркотические средства с ограниченным оборотом; III — психотропные вещества с ограниченным оборотом; IV — прекурсоры с ограниченным оборотом.",
+            "en": "Under Article 4 of Law No. 813-I: I — narcotic drugs whose circulation is prohibited; II — narcotic drugs with restricted circulation; III — psychotropic substances with restricted circulation; IV — precursors with restricted circulation."
+          },
           "q": {
             "uz": "813-I-son Qonun bo‘yicha prekursorlar qaysi ro‘yxatga kiritiladi?",
             "ru": "В какой список по Закону № 813-I вносятся прекурсоры?",
@@ -5483,6 +5683,11 @@
         },
         {
           "id": "gmt.law.2",
+          "e": {
+            "uz": "I–IV ro‘yxatlar Vazirlar Mahkamasining 2015 yil 12 noyabrdagi 330-son qaroriga 4–7-ilovalar sifatida tasdiqlangan va keyin o‘zgartirilgan (masalan, 2018 yildagi 878-son qaror tahriri).",
+            "ru": "Списки I–IV утверждены приложениями 4–7 к постановлению Кабинета Министров от 12 ноября 2015 г. № 330 и затем изменялись (например, в редакции постановления № 878 от 2018 г.).",
+            "en": "Lists I–IV were approved as annexes 4–7 to Cabinet of Ministers Resolution No. 330 of 12 November 2015 and later amended (e.g. as worded by Resolution No. 878 of 2018)."
+          },
           "q": {
             "uz": "Nazorat ro‘yxatlarining amaldagi matni qaysi hujjatga ilova sifatida yuritiladi?",
             "ru": "Приложением к какому документу ведутся действующие списки контроля?",
@@ -5516,6 +5721,11 @@
         },
         {
           "id": "gmt.law.3",
+          "e": {
+            "uz": "Ro‘yxatlar o‘zgarib turadi, shuning uchun moddaning qaysi ro‘yxatda ekanligi har safar lex.uz dagi amaldagi tahrirdan tekshiriladi. Darslik nashr vaqtidagi holatni aks ettiradi; ilova ro‘yxatlarni ko‘chirmaydi.",
+            "ru": "Списки меняются, поэтому принадлежность вещества к списку каждый раз проверяют по действующей редакции на lex.uz. Пособие отражает состояние на момент издания; приложение списки не копирует.",
+            "en": "The lists change, so a substance's list must be checked each time in the current edition on lex.uz. The textbook reflects the situation at publication; the app does not copy the lists."
+          },
           "q": {
             "uz": "Moddaning nazorat holatini qayerdan tekshirish kerak?",
             "ru": "Где следует проверять контрольный статус вещества?",
@@ -5798,6 +6008,11 @@
       "quiz": [
         {
           "id": "toks_iso_1",
+          "e": {
+            "uz": "Kartaga ko‘ra maydalangan ob’ekt oksalat yoki vino kislotasi bilan pH 2,0–2,5 gacha nordonlashtiriladi. Kuchli mineral kislota sianidni parchalashi va fenol kon’yugatlarini gidrolizlab «soxta» fenol berishi mumkin, shuning uchun kuchsiz organik kislotalar afzal; ishqoriy muhit bu bosqichga to‘g‘ri kelmaydi.",
+            "ru": "Согласно карточке, измельчённый объект подкисляют щавелевой или винной кислотой до pH 2,0–2,5. Сильная минеральная кислота может разложить цианид и гидролизовать конъюгаты фенола («ложный» фенол), поэтому предпочтительны слабые органические кислоты; щелочная среда на этом этапе не применяется.",
+            "en": "Per the card, the minced specimen is acidified with oxalic or tartaric acid to pH 2.0–2.5. A strong mineral acid can decompose cyanide and hydrolyse phenol conjugates (a 'false' phenol), so weak organic acids are preferred; an alkaline medium does not fit this step."
+          },
           "q": {
             "uz": "Uchuvchi zaharlarni suv bug‘i bilan haydashdan oldin ob’ekt odatda nima bilan nordonlashtiriladi?",
             "ru": "Чем обычно подкисляют объект перед перегонкой летучих ядов с водяным паром?",
@@ -5829,6 +6044,11 @@
         },
         {
           "id": "toks_iso_2",
+          "e": {
+            "uz": "Birinchi distillyat suyultirilgan natriy ishqori eritmasiga yig‘iladi: HCN uchmaydigan NaCN ga o‘tadi va bu distillyat faqat sianidga tekshiriladi. Fenol, spirtlar va formaldegid ikkinchi distillyatda tekshiriladi.",
+            "ru": "Первый дистиллят собирают в разбавленный раствор гидроксида натрия: HCN переходит в нелетучий NaCN, и этот дистиллят исследуют только на цианид. Фенол, спирты и формальдегид исследуют во втором дистилляте.",
+            "en": "The first distillate is collected into dilute sodium hydroxide: HCN becomes non-volatile NaCN, and this distillate is tested for cyanide only. Phenol, alcohols and formaldehyde are tested in the second distillate."
+          },
           "q": {
             "uz": "Birinchi distillyat nima uchun ishqor eritmasiga yig‘iladi?",
             "ru": "Зачем первый дистиллят собирают в раствор щёлочи?",
@@ -5860,6 +6080,11 @@
         },
         {
           "id": "toks_iso_3",
+          "e": {
+            "uz": "Kartadagi omillar bo‘limiga ko‘ra kuchli mineral kislota tabiiy fenol kon’yugatlarini gidrolizlab «soxta» fenol berishi (va sianidni parchalashi) mumkin. Sirka kislotasi uchun esa, aksincha, kuchli mineral kislota kerak bo‘ladi; qolgan variantlar kartada bunday xato sifatida ko‘rsatilmagan.",
+            "ru": "Согласно разделу карточки о факторах, сильная минеральная кислота может гидролизовать природные конъюгаты фенола и дать «ложный» фенол (а также разложить цианид). Для уксусной кислоты, наоборот, сильная минеральная кислота нужна; остальные варианты в карточке как такая ошибка не указаны.",
+            "en": "According to the card's factors section, a strong mineral acid can hydrolyse natural phenol conjugates and give a 'false' phenol (and decompose cyanide). Acetic acid, by contrast, actually needs a strong mineral acid; the other options are not described in the card as such an error."
+          },
           "q": {
             "uz": "Ob’ektni kuchli mineral kislota bilan nordonlashtirish qaysi xatoga olib kelishi mumkin?",
             "ru": "К какой ошибке может привести подкисление объекта сильной минеральной кислотой?",
@@ -5891,6 +6116,11 @@
         },
         {
           "id": "toks_iso_4",
+          "e": {
+            "uz": "Kartaga ko‘ra Stas usuli (1851) nordonlashtirilgan etil spirti bilan ajratishga asoslangan; Otto (1856) spirtli ajratmani tozalashni qo‘shgan — shuning uchun usul Stas–Otto deb ataladi. Dragendorf, Kramarenko va Vasilyeva nomlari nordonlashtirilgan suv bilan ajratish usullariga tegishli.",
+            "ru": "Согласно карточке, метод Стаса (1851) основан на извлечении подкисленным этанолом; Отто (1856) добавил очистку спиртового извлечения — отсюда название метод Стаса–Отто. Имена Драгендорфа, Крамаренко и Васильевой относятся к методам извлечения подкисленной водой.",
+            "en": "Per the card, the Stas method (1851) extracts with acidified ethanol; Otto (1856) added the clean-up of the ethanolic extract, hence the Stas–Otto method. Dragendorff, Kramarenko and Vasilyeva are associated with acidified-water extraction methods."
+          },
           "q": {
             "uz": "Stas usulini 1856 yilda kim o‘zgartirib, spirtli ajratmani tozalashni qo‘shgan?",
             "ru": "Кто в 1856 году дополнил метод Стаса очисткой спиртового извлечения?",
@@ -5922,6 +6152,11 @@
         },
         {
           "id": "toks_iso_5",
+          "e": {
+            "uz": "Kramarenko usulida ob’ekt pH 2–2,5 da suyultirilgan sulfat kislota bilan bo‘ktiriladi, nordon eritma efir bilan yuviladi, so‘ng alkaloidlar pH 8,5–9 da xloroform bilan ekstraksiya qilinadi. pH 2–2,5 — bo‘ktirish bosqichi, ekstraksiya emas.",
+            "ru": "В методе Крамаренко объект настаивают с разбавленной серной кислотой при pH 2–2,5, кислый раствор промывают эфиром, затем алкалоиды экстрагируют хлороформом при pH 8,5–9. pH 2–2,5 относится к настаиванию, а не к экстракции.",
+            "en": "In the Kramarenko method the specimen is steeped in dilute sulfuric acid at pH 2–2.5, the acidic solution is washed with ether, and the alkaloids are then extracted into chloroform at pH 8.5–9. pH 2–2.5 is the steeping step, not the extraction."
+          },
           "q": {
             "uz": "Kramarenko usulida alkaloidlar nordon suvli ajratmadan qaysi pH da xloroform bilan ekstraksiya qilinadi?",
             "ru": "При каком pH в методе Крамаренко алкалоиды экстрагируют хлороформом из кислого водного извлечения?",
@@ -5953,6 +6188,11 @@
         },
         {
           "id": "toks_iso_6",
+          "e": {
+            "uz": "Kartadagi cheklovlarga ko‘ra qayta ekstraksiya bilan tozalashda kuchsiz asoslar (purin hosilalari, narkotin, promedol, antipirin, amidopirin) yo‘qotilishi mumkin. Qolgan variantlar kartada bu bosqichdagi yo‘qotish sifatida ko‘rsatilmagan.",
+            "ru": "Согласно ограничениям, указанным в карточке, при очистке переэкстракцией могут теряться слабые основания (производные пурина, наркотин, промедол, антипирин, амидопирин). Остальные варианты в карточке как потери на этом этапе не указаны.",
+            "en": "According to the card's limitations, weak bases (purine derivatives, narcotine, promedol, antipyrine, aminophenazone) may be lost during clean-up by back-extraction. The other options are not listed in the card as losses at this step."
+          },
           "q": {
             "uz": "Qayta ekstraksiya bilan tozalashda qaysi moddalar yo‘qotilishi mumkin?",
             "ru": "Какие вещества могут теряться при очистке реэкстракцией?",
@@ -6222,6 +6462,11 @@
       "quiz": [
         {
           "id": "toks_min_1",
+          "e": {
+            "uz": "Kartaga ko‘ra sulfat–nitrat usulida simob deyarli to‘liq yo‘qoladi; quruq va ho‘l mineralizatsiyada ham simob yo‘qolgani uchun chala oksidlash — destruksiya (Vasilyeva usuli) qo‘llanadi. Qolgan variantlar kartada sabab sifatida keltirilmagan.",
+            "ru": "Согласно карточке, при сернокислотно-азотнокислотной минерализации ртуть почти полностью теряется; так как ртуть теряется и при сухой, и при мокрой минерализации, применяют частичное окисление — деструкцию (метод Васильевой). Остальные варианты в карточке как причина не приводятся.",
+            "en": "Per the card, mercury is almost completely lost with sulfuric–nitric acid mineralization; because it is lost in both dry and wet mineralization, partial oxidation — destruction (Vasilyeva method) — is used. The other options are not given in the card as the reason."
+          },
           "q": {
             "uz": "Nima uchun simob uchun ho‘l mineralizatsiya emas, balki destruksiya qo‘llanadi?",
             "ru": "Почему на ртуть применяют деструкцию, а не мокрую минерализацию?",
@@ -6253,6 +6498,11 @@
         },
         {
           "id": "toks_min_2",
+          "e": {
+            "uz": "Bir tomchi mineralizat suv bilan aralashtirilib, difenilaminning konsentrlangan sulfat kislotadagi eritmasi qo‘shiladi; ko‘k rang oksidlovchilar borligini ko‘rsatadi. Ditizon kartada metall kationlarini aniqlash va ajratish uchun keltirilgan.",
+            "ru": "Каплю минерализата смешивают с водой и добавляют раствор дифениламина в концентрированной серной кислоте; синее окрашивание указывает на окислители. Дитизон в карточке приводится для обнаружения и выделения катионов металлов.",
+            "en": "A drop of mineralizate is mixed with water and diphenylamine in concentrated sulfuric acid is added; a blue colour shows that oxidants are present. Dithizone appears in the card for detecting and separating metal cations."
+          },
           "q": {
             "uz": "Mineralizatda oksidlovchilar borligi qaysi reaktiv bilan tekshiriladi?",
             "ru": "Каким реактивом проверяют наличие окислителей в минерализате?",
@@ -6284,6 +6534,11 @@
         },
         {
           "id": "toks_min_3",
+          "e": {
+            "uz": "Kartaga ko‘ra tugash belgisi: oksidlovchisiz qizdirilganda suyuqlik qoraymaydi va oltingugurt(VI) oksidining oq og‘ir bug‘lari chiqadi. Qorayish esa oksidlovchi yetishmasligini bildiradi va nitrat kislota qo‘shishni talab qiladi.",
+            "ru": "Согласно карточке, признак окончания: при нагревании без окислителя жидкость не темнеет и выделяются белые тяжёлые пары оксида серы(VI). Потемнение же означает нехватку окислителя и требует добавления азотной кислоты.",
+            "en": "Per the card, the end point is reached when the liquid no longer darkens on heating without oxidant and white, heavy sulfur(VI) oxide fumes appear. Darkening instead means a lack of oxidant and calls for more nitric acid."
+          },
           "q": {
             "uz": "Ho‘l mineralizatsiya tugaganini qaysi belgi ko‘rsatadi?",
             "ru": "Какой признак указывает на окончание мокрой минерализации?",
@@ -6315,6 +6570,11 @@
         },
         {
           "id": "toks_min_4",
+          "e": {
+            "uz": "Kartadagi niqoblovchilar misolida Fe(III) uchun ftoridlar va fosfatlar (rangsiz komplekslar) ko‘rsatilgan: Fe(III) rodanid bilan qizil rang berib kobalt reaksiyasiga xalaqit beradi. Qolgan moddalar kartada Fe(III) niqoblovchisi sifatida keltirilmagan.",
+            "ru": "В примерах маскирующих агентов карточки для Fe(III) указаны фториды и фосфаты (бесцветные комплексы): Fe(III) с роданидом даёт красную окраску и мешает реакции на кобальт. Остальные вещества в карточке как маскирующие Fe(III) не приводятся.",
+            "en": "Among the card's masking agents, fluorides and phosphates (colourless complexes) are given for Fe(III): Fe(III) forms a red colour with thiocyanate and interferes with the cobalt test. The other substances are not given in the card as Fe(III) masking agents."
+          },
           "q": {
             "uz": "Kasrli usulda Fe(III) ionlari odatda nima bilan niqoblanadi?",
             "ru": "Чем обычно маскируют ионы Fe(III) в дробном методе?",
@@ -6346,6 +6606,11 @@
         },
         {
           "id": "toks_min_5",
+          "e": {
+            "uz": "Kartadagi balanslangan tenglama: 4HNO3 + 3CH2O → 4NO + 3CO2 + 5H2O. Boshqa variantlarda ikki tomondagi atomlar soni teng emas.",
+            "ru": "Сбалансированное уравнение в карточке: 4HNO3 + 3CH2O → 4NO + 3CO2 + 5H2O. В остальных вариантах число атомов в левой и правой частях не совпадает.",
+            "en": "The balanced equation in the card is 4HNO3 + 3CH2O → 4NO + 3CO2 + 5H2O. In the other options the atom counts on the two sides do not match."
+          },
           "q": {
             "uz": "Formaldegid bilan denitratsiyaning balanslangan tenglamasi qaysi?",
             "ru": "Какое уравнение денитрации формальдегидом сбалансировано?",
@@ -6377,6 +6642,11 @@
         },
         {
           "id": "toks_min_6",
+          "e": {
+            "uz": "Kartaga ko‘ra marganets, kadmiy kabi metallar organizmda tabiiy mikroelement sifatida uchraydi, shuning uchun sifat reaksiyasi yetarli emas — miqdoriy tahlil majburiy. Bu elementlar uchun kartada sifat reaksiyalari ham keltirilgan.",
+            "ru": "Согласно карточке, такие металлы, как марганец и кадмий, присутствуют в организме как естественные микроэлементы, поэтому качественной реакции недостаточно — обязателен количественный анализ. Качественные реакции на эти элементы в карточке также приводятся.",
+            "en": "Per the card, metals such as manganese and cadmium occur naturally in the body as trace elements, so a qualitative reaction is not enough and quantitation is mandatory. The card does list qualitative reactions for these elements."
+          },
           "q": {
             "uz": "Nima uchun marganets yoki kadmiy topilganda miqdoriy tahlil majburiy?",
             "ru": "Почему при обнаружении марганца или кадмия обязательно количественное определение?",
@@ -6964,6 +7234,11 @@
       "quiz": [
         {
           "id": "toks_met_1",
+          "e": {
+            "uz": "Mishyak birikmalari ajralayotgan vodorod ta’sirida uchuvchan arsinga (AsH3) qaytariladi; ajralgan arsin simob(II) bromid yoki xlorid shimdirilgan qog‘ozni sariqdan qo‘ng‘irgacha bo‘yaydi.",
+            "ru": "Соединения мышьяка восстанавливаются выделяющимся водородом до летучего арсина (AsH3); выделившийся арсин окрашивает бумагу, пропитанную бромидом или хлоридом ртути(II), от жёлтого до коричневого цвета.",
+            "en": "Arsenic compounds are reduced by nascent hydrogen to volatile arsine (AsH3); the arsine stains paper impregnated with mercury(II) bromide or chloride yellow to brown."
+          },
           "q": {
             "uz": "Zanger–Blek reaksiyasida mishyak qaysi shaklda ajralib, qog‘ozni bo‘yaydi?",
             "ru": "В каком виде мышьяк выделяется и окрашивает бумагу в реакции Зангер–Блека?",
@@ -6995,6 +7270,11 @@
         },
         {
           "id": "toks_met_2",
+          "e": {
+            "uz": "Kartaga ko‘ra avval reaktivlar «bo‘sh» tajribada mishyakka tekshiriladi va qurilmadan havo vodorod bilan to‘liq siqib chiqariladi: vodorod–havo aralashmasi portlaydi. Shuning uchun qurilmani havo bilan to‘ldirish xavfli.",
+            "ru": "Согласно карточке, сначала реактивы проверяют на мышьяк в холостом опыте и полностью вытесняют воздух из прибора водородом: смесь водорода с воздухом взрывоопасна. Поэтому заполнять прибор воздухом опасно.",
+            "en": "Per the card, the reagents are first blank-tested for arsenic and the air is fully displaced from the apparatus by hydrogen, because a hydrogen–air mixture explodes. Filling the apparatus with air is therefore dangerous."
+          },
           "q": {
             "uz": "Marsh usulida mineralizatni qo‘shishdan oldin nima qilinadi?",
             "ru": "Что делают в методе Марша перед внесением минерализата?",
@@ -7026,6 +7306,11 @@
         },
         {
           "id": "toks_met_3",
+          "e": {
+            "uz": "Gipoxlorit eritmasida mishyak dog‘i eriydi, surmaniki erimaydi. Qo‘shimcha belgi: havoda qizdirilganda mishyak dog‘i oktaedrik kristallar, surma dog‘i amorf qoldiq beradi.",
+            "ru": "В растворе гипохлорита налёт мышьяка растворяется, а налёт сурьмы — нет. Дополнительный признак: при нагревании на воздухе налёт мышьяка даёт октаэдрические кристаллы, налёт сурьмы — аморфный остаток.",
+            "en": "In hypochlorite solution the arsenic mirror dissolves and the antimony mirror does not. A further sign: heated in air, the arsenic mirror gives octahedral crystals, the antimony mirror an amorphous residue."
+          },
           "q": {
             "uz": "Marsh trubkasidagi mishyak dog‘ini surma dog‘idan qaysi sinov ajratadi?",
             "ru": "Какая проба отличает налёт мышьяка от налёта сурьмы в трубке Марша?",
@@ -7057,6 +7342,11 @@
         },
         {
           "id": "toks_met_4",
+          "e": {
+            "uz": "Mineralizat cho‘kmasi sirka kislotali issiq ammoniy atsetat bilan yuviladi: qo‘rg‘oshin sulfat eriydi, bariy sulfat qoladi.",
+            "ru": "Осадок минерализата промывают горячим ацетатом аммония, подкисленным уксусной кислотой: сульфат свинца растворяется, сульфат бария остаётся.",
+            "en": "The mineralizate precipitate is washed with hot ammonium acetate acidified with acetic acid: lead sulfate dissolves, barium sulfate remains."
+          },
           "q": {
             "uz": "Mineralizat cho‘kmasida qo‘rg‘oshin sulfatni bariy sulfatdan qanday ajratiladi?",
             "ru": "Как отделяют сульфат свинца от сульфата бария в осадке минерализата?",
@@ -7088,6 +7378,11 @@
         },
         {
           "id": "toks_met_5",
+          "e": {
+            "uz": "Destruktatda mis(I) yodid suspenziyasi simob bilan Cu2[HgI4] ning qizil-to‘q sariq cho‘kmasini beradi; oksidlovchilar xalaqit beradi.",
+            "ru": "В деструктате суспензия иодида меди(I) с ртутью даёт красно-оранжевый осадок Cu2[HgI4]; мешают окислители.",
+            "en": "In the destruction digest, a copper(I) iodide suspension gives a red-orange precipitate of Cu2[HgI4] with mercury; oxidants interfere."
+          },
           "q": {
             "uz": "Destruktatda simob mis(I) yodid bilan qanday natija beradi?",
             "ru": "Что даёт ртуть в деструктате с иодидом меди(I)?",
@@ -7119,6 +7414,11 @@
         },
         {
           "id": "toks_met_6",
+          "e": {
+            "uz": "Kumush va simob ditizonatlari ikkalasi ham sariq; suyultirilgan HCl bilan chayqatilganda kumush ditizonati parchalanadi, simob ditizonati saqlanadi. Shuning uchun ditizon reaksiyalarida niqoblash va farqlovchi sinovlar zarur.",
+            "ru": "Дитизонаты серебра и ртути оба жёлтые; при встряхивании с разбавленной HCl дитизонат серебра разрушается, а дитизонат ртути сохраняется. Поэтому в реакциях с дитизоном необходимы маскирование и различающие пробы.",
+            "en": "Silver and mercury dithizonates are both yellow; shaken with dilute HCl, silver dithizonate decomposes while mercury dithizonate persists. Masking and distinguishing tests are therefore needed with dithizone."
+          },
           "q": {
             "uz": "Kumush va simob ditizonatlari (ikkalasi sariq) qanday farqlanadi?",
             "ru": "Как различают дитизонаты серебра и ртути (оба жёлтые)?",
@@ -7150,6 +7450,11 @@
         },
         {
           "id": "toks_met_7",
+          "e": {
+            "uz": "Marganets persulfat yoki periodat bilan permanganatgacha oksidlanadi (pushti-qizil rang). Kartada natriy rodizonat — bariy, tiomochevina — vismut, difenilkarbazid — xrom uchun keltirilgan.",
+            "ru": "Марганец окисляют персульфатом или периодатом до перманганата (розово-красная окраска). В карточке родизонат натрия приводится для бария, тиомочевина — для висмута, дифенилкарбазид — для хрома.",
+            "en": "Manganese is oxidized with persulfate or periodate to permanganate (pink-red colour). In the card, sodium rhodizonate is given for barium, thiourea for bismuth and diphenylcarbazide for chromium."
+          },
           "q": {
             "uz": "Marganets kationi mineralizatda qanday aniqlanadi?",
             "ru": "Как обнаруживают марганец в минерализате?",
@@ -7448,6 +7753,11 @@
       "quiz": [
         {
           "id": "toks_vol_1",
+          "e": {
+            "uz": "Ishqoriy birinchi distillyatga temir(II) sulfat qo‘shib qizdiriladi, so‘ng xlorid kislota bilan nordonlashtiriladi: ko‘k cho‘kma yoki eritma (Berlin zangorisi) sianid borligini ko‘rsatadi. Yodoform — etanol, izonitril va Fujivara reaksiyalari — alkilgalogenidlar uchun.",
+            "ru": "К щелочному первому дистилляту добавляют сульфат железа(II), нагревают, затем подкисляют соляной кислотой: синий осадок или раствор (берлинская лазурь) указывает на цианид. Йодоформная проба относится к этанолу, изонитрильная и реакция Фудживары — к алкилгалогенидам.",
+            "en": "Iron(II) sulfate is added to the alkaline first distillate, which is heated and then acidified with hydrochloric acid: a blue precipitate or solution (Prussian blue) indicates cyanide. The iodoform test belongs to ethanol; the isonitrile and Fujiwara reactions to alkyl halides."
+          },
           "q": {
             "uz": "Birinchi distillyatda sianid qaysi reaksiya bilan aniqlanadi?",
             "ru": "Какой реакцией обнаруживают цианид в первом дистилляте?",
@@ -7479,6 +7789,11 @@
         },
         {
           "id": "toks_vol_2",
+          "e": {
+            "uz": "Kartaga ko‘ra kodein va konsentrlangan sulfat kislota bilan ko‘k-binafsha rang sezgir va musbat ahamiyatli. Ishqoriy rezorsin reaksiyasi manfiy ahamiyatli (oksidlovchilar va oqsil parchalanish mahsulotlari ham beradi); Feling suyuqligi faqat ko‘p miqdorda qaytariladi.",
+            "ru": "Согласно карточке, сине-фиолетовая окраска с кодеином и концентрированной серной кислотой чувствительна и имеет положительное значение. Реакция со щелочным резорцином имеет отрицательное значение (её дают также окислители и продукты распада белков); жидкость Фелинга восстанавливается лишь при больших количествах.",
+            "en": "Per the card, the blue-violet colour with codeine and concentrated sulfuric acid is sensitive and has positive significance. The alkaline resorcinol reaction is only of negative significance (oxidants and protein breakdown products also give it); Fehling's solution is reduced only by large amounts."
+          },
           "q": {
             "uz": "Qaysi formaldegid reaksiyasi majmuada musbat (o‘ziga xosroq) ahamiyatli deb ko‘rsatilgan?",
             "ru": "Какая реакция на формальдегид указана в комплексе как реакция положительного значения?",
@@ -7510,6 +7825,11 @@
         },
         {
           "id": "toks_vol_3",
+          "e": {
+            "uz": "Kartaga ko‘ra izonitril reaksiyasini xloroform va xloralgidrat beradi, 1,2-dixloretan esa bermaydi (u ishqoriy rezorsin bilan qizil rang ham bermaydi).",
+            "ru": "Согласно карточке, изонитрильную пробу дают хлороформ и хлоралгидрат, а 1,2-дихлорэтан её не даёт (не даёт он и красной окраски со щелочным резорцином).",
+            "en": "Per the card, chloroform and chloral hydrate give the isonitrile test, whereas 1,2-dichloroethane does not (nor does it give the red colour with alkaline resorcinol)."
+          },
           "q": {
             "uz": "Qaysi modda izonitril reaksiyasini BERMAYDI?",
             "ru": "Какое вещество НЕ даёт изонитрильную пробу?",
@@ -7541,6 +7861,11 @@
         },
         {
           "id": "toks_vol_4",
+          "e": {
+            "uz": "Distillyatdan olingan efirli ajralma xona haroratida bug‘latiladi: xloralgidrat efir bilan uchmaydi, shuning uchun qoldiqda reaksiyalar musbat bo‘lsa — xloralgidrat, manfiy bo‘lsa — xloroform. Feling suyuqligi bilan reaksiyani ikkalasi ham beradi.",
+            "ru": "Эфирное извлечение из дистиллята упаривают при комнатной температуре: хлоралгидрат не улетучивается с эфиром, поэтому положительные реакции с остатком означают хлоралгидрат, отрицательные — хлороформ. Реакцию с жидкостью Фелинга дают оба вещества.",
+            "en": "The ether extract of the distillate is evaporated at room temperature: chloral hydrate does not evaporate with the ether, so positive reactions with the residue mean chloral hydrate and negative ones chloroform. Both substances react with Fehling's solution."
+          },
           "q": {
             "uz": "Distillyatda xloroform va xloralgidrat qanday farqlanadi?",
             "ru": "Как различают хлороформ и хлоралгидрат в дистилляте?",
@@ -7572,6 +7897,11 @@
         },
         {
           "id": "toks_vol_5",
+          "e": {
+            "uz": "Metilsalitsilat hidini etanol ham beradi, shuning uchun distillyatda etanol bo‘lsa metanol permanganat bilan formaldegidgacha oksidlanib, fuksin-sulfit kislota bilan aniqlanadi; oksidlashdan oldin distillyatdagi formaldegid yo‘qotiladi.",
+            "ru": "Запах метилсалицилата даёт и этанол, поэтому при наличии этанола в дистилляте метанол окисляют перманганатом до формальдегида и обнаруживают фуксинсернистой кислотой; перед окислением формальдегид дистиллята удаляют.",
+            "en": "Ethanol also produces the methyl salicylate odour, so when ethanol is present methanol is oxidized with permanganate to formaldehyde and detected with fuchsin–sulfurous acid; formaldehyde already in the distillate is removed before oxidation."
+          },
           "q": {
             "uz": "Nima uchun distillyatda etanol bo‘lsa, metanol uchun salitsil kislotali reaksiya yetarli emas?",
             "ru": "Почему при наличии этанола реакции с салициловой кислотой недостаточно для метанола?",
@@ -7603,6 +7933,11 @@
         },
         {
           "id": "toks_vol_6",
+          "e": {
+            "uz": "Fenol bromli suv bilan oq tribromfenol cho‘kmasini beradi. Ko‘k indofenol rangi — fenolning boshqa reaksiyasi (anilin va xlorli ohak, so‘ng ammiak), qizil mis atsetilenidi — dixloretan, sariq yodoform — etanol reaksiyasi.",
+            "ru": "Фенол с бромной водой даёт белый осадок трибромфенола. Синяя окраска индофенола — другая реакция фенола (анилин и хлорная известь, затем аммиак), красный ацетиленид меди — реакция на дихлорэтан, жёлтый йодоформ — на этанол.",
+            "en": "Phenol gives a white tribromophenol precipitate with bromine water. The blue indophenol colour is a different phenol test (aniline and bleaching powder, then ammonia); red copper acetylide belongs to dichloroethane and yellow iodoform to ethanol."
+          },
           "q": {
             "uz": "Fenol bromli suv bilan qanday natija beradi?",
             "ru": "Что даёт фенол с бромной водой?",
@@ -7634,6 +7969,11 @@
         },
         {
           "id": "toks_vol_7",
+          "e": {
+            "uz": "Kartaga ko‘ra HCN va uning tuzlari murdada uzoq saqlanmaydi (gidroliz, rodanidga aylanish, qandlar bilan birikish), shuning uchun salbiy natija iste’molni istisno qilishga yetarli bo‘lmasligi mumkin. Sianid suv bug‘i bilan haydaladi — u birinchi distillyatda tekshiriladi.",
+            "ru": "Согласно карточке, HCN и её соли недолго сохраняются в трупе (гидролиз, превращение в роданид, связывание с сахарами), поэтому отрицательный результат может быть недостаточен, чтобы исключить приём. Цианид перегоняется с водяным паром — его исследуют в первом дистилляте.",
+            "en": "Per the card, HCN and its salts do not persist long in a body (hydrolysis, conversion to thiocyanate, binding to sugars), so a negative result may not be enough to exclude intake. Cyanide does distil with steam — it is tested in the first distillate."
+          },
           "q": {
             "uz": "Sianid uchun manfiy natija nima uchun iste’mol bo‘lmaganini isbotlamaydi?",
             "ru": "Почему отрицательный результат на цианид не доказывает отсутствия поступления?",
@@ -7665,6 +8005,11 @@
         },
         {
           "id": "toks_vol_8",
+          "e": {
+            "uz": "Majmuaga ko‘ra spirtlar alkilnitritlarga o‘tkazilib bug‘-gaz fazasi tahlil qilinadi, miqdor esa ichki standart (propanol) bilan kalibrlash grafigi orqali hisoblanadi. Metanol — aniqlanadigan spirtlardan biri, shuning uchun ichki standart bo‘la olmaydi.",
+            "ru": "Согласно пособию, спирты переводят в алкилнитриты и анализируют паровую фазу, а количество рассчитывают по градуировочному графику с внутренним стандартом (пропанолом). Метанол — один из определяемых спиртов, поэтому внутренним стандартом быть не может.",
+            "en": "Per the manual, alcohols are converted to alkyl nitrites and the headspace is analysed, with quantitation by a calibration curve using an internal standard (propanol). Methanol is one of the target alcohols, so it cannot serve as the internal standard."
+          },
           "q": {
             "uz": "Majmuada spirtlarni qon va siydikdan GC bilan aniqlashda ichki standart sifatida nima olinadi?",
             "ru": "Что используют как внутренний стандарт при GC-определении спиртов в крови и моче по комплексу?",
@@ -7961,6 +8306,11 @@
       "quiz": [
         {
           "id": "toks_pest_1",
+          "e": {
+            "uz": "Fosfororganik birikmalar xolinesteraza fermentini bo‘g‘adi: atsetilxolin gidrolizlanmay to‘planadi va nerv impulslari uzatilishi buziladi; tahlil usullaridan biri ham shu ta’sirga asoslanadi. Qolgan variantlar kartada FOB mexanizmi sifatida keltirilmagan.",
+            "ru": "Фосфорорганические соединения угнетают холинэстеразу: ацетилхолин не гидролизуется и накапливается, нарушается передача нервных импульсов; на этом же действии основан один из методов анализа. Остальные варианты в карточке как механизм ФОС не приводятся.",
+            "en": "Organophosphorus compounds inhibit cholinesterase: acetylcholine is not hydrolysed and accumulates, disrupting nerve transmission; one of the analytical methods is based on this effect. The other options are not given in the card as the organophosphate mechanism."
+          },
           "q": {
             "uz": "Fosfororganik birikmalarning zaharli ta’siri asosan nimaga bog‘liq?",
             "ru": "С чем в основном связано токсическое действие фосфорорганических соединений?",
@@ -7992,6 +8342,11 @@
         },
         {
           "id": "toks_pest_2",
+          "e": {
+            "uz": "Fosfor-molibden ko‘ki reaksiyasini fosfor saqlovchi barcha moddalar beradi, shuning uchun u faqat manfiy ahamiyatli: manfiy natija FOB guruhini istisno qiladi. Reaksiya ajralma qoldig‘ini mineralizatsiyalab bajariladi va juda sezgir.",
+            "ru": "Реакцию с образованием фосфорномолибденовой сини дают все фосфорсодержащие вещества, поэтому она имеет лишь отрицательное значение: отрицательный результат исключает группу ФОС. Реакцию проводят после минерализации остатка извлечения, и она очень чувствительна.",
+            "en": "All phosphorus-containing substances give the phosphomolybdenum blue reaction, so it has only negative significance: a negative result rules out the organophosphate group. It is performed after mineralizing the extract residue and is very sensitive."
+          },
           "q": {
             "uz": "Fosfor-molibden ko‘ki reaksiyasi nima uchun faqat manfiy ahamiyatli?",
             "ru": "Почему реакция фосфорномолибденовой сини имеет лишь отрицательное значение?",
@@ -8023,6 +8378,11 @@
         },
         {
           "id": "toks_pest_3",
+          "e": {
+            "uz": "To‘rt purkagichli TLC da ishqoriy rezorsin qizil dog‘ beradi — xlorofos. Natriy ishqori sariq dog‘ (metafos va boshqa p-nitrofenollilar), Dragendorf qo‘ng‘ir dog‘ (fozalon, ftalofos kabi azot saqlovchilar), bromfenol ko‘ki ko‘k dog‘ (tio- va ditiofosfatlar) beradi.",
+            "ru": "В TLC с четырьмя проявителями щелочной резорцин даёт красное пятно — хлорофос. Гидроксид натрия даёт жёлтое пятно (метафос и другие п-нитрофенольные), реактив Драгендорфа — бурые пятна (азотсодержащие: фозалон, фталофос), бромфеноловый синий — синие пятна (тио- и дитиофосфаты).",
+            "en": "In four-spray TLC, alkaline resorcinol gives a red spot — trichlorfon. Sodium hydroxide gives a yellow spot (methyl parathion and other p-nitrophenyl compounds), Dragendorff reagent brown spots (nitrogen-containing: phosalone, phthalophos), bromophenol blue blue spots (thio- and dithiophosphates)."
+          },
           "q": {
             "uz": "To‘rt purkagichli TLC da ishqoriy rezorsin bilan qizil dog‘ qaysi birikmani ko‘rsatadi?",
             "ru": "Какое соединение указывает красное пятно со щелочным резорцином в TLC с четырьмя проявителями?",
@@ -8054,6 +8414,11 @@
         },
         {
           "id": "toks_pest_4",
+          "e": {
+            "uz": "Natriy ishqori bilan sariq dog‘ni p-nitrofenol qoldig‘ini saqlovchi FOB (metafos, metilnitrofos, metiletiltiofos) beradi. Boshqa purkagichlar boshqa guruhlarni ko‘rsatadi: Dragendorf — azot saqlovchilar, ishqoriy rezorsin — xlorofos.",
+            "ru": "Жёлтое пятно с гидроксидом натрия дают ФОС с остатком п-нитрофенола (метафос, метилнитрофос, метилэтилтиофос). Другие проявители выявляют другие группы: реактив Драгендорфа — азотсодержащие, щелочной резорцин — хлорофос.",
+            "en": "The yellow spot with sodium hydroxide is given by organophosphates bearing a p-nitrophenol moiety (methyl parathion, methylnitrophos, methylethylthiophos). The other sprays show other groups: Dragendorff — nitrogen-containing compounds, alkaline resorcinol — trichlorfon."
+          },
           "q": {
             "uz": "TLC da natriy ishqori bilan sariq dog‘ beruvchi FOB larning umumiy tuzilish xususiyati nima?",
             "ru": "Какая общая структурная особенность ФОС, дающих жёлтое пятно с гидроксидом натрия на TLC?",
@@ -8085,6 +8450,11 @@
         },
         {
           "id": "toks_pest_5",
+          "e": {
+            "uz": "Kartaga ko‘ra xolinesteraza testiga sevin, prozerin, galantamin, alkogol va oqsil parchalanish mahsulotlari xalaqit beradi — shuning uchun test manfiy ahamiyatli.",
+            "ru": "Согласно карточке, холинэстеразной пробе мешают севин, прозерин, галантамин, алкоголь и продукты распада белков — поэтому проба имеет отрицательное значение.",
+            "en": "Per the card, carbaryl, neostigmine, galantamine, alcohol and protein breakdown products interfere with the cholinesterase test, which is why it has only negative significance."
+          },
           "q": {
             "uz": "Xolinesteraza testi bo‘yicha FOB aniqlashga qaysi moddalar xalaqit berishi mumkin?",
             "ru": "Какие вещества могут мешать обнаружению ФОС по холинэстеразной пробе?",
@@ -8116,6 +8486,11 @@
         },
         {
           "id": "toks_pest_6",
+          "e": {
+            "uz": "Spirtli ishqor geksaxlorandan 3 ta xlorni, metall natriy va spirt esa barcha 6 tasini ajratadi — kumush xlorid cho‘kmalari nisbati taxminan 1:2 bo‘lishi kerak.",
+            "ru": "Спиртовая щёлочь отщепляет от гексахлорана 3 атома хлора, а металлический натрий со спиртом — все 6, поэтому соотношение осадков хлорида серебра должно быть примерно 1:2.",
+            "en": "Alcoholic alkali removes 3 of hexachlorane's chlorines, while sodium metal with alcohol removes all 6, so the silver chloride precipitates should be in a ratio of about 1:2."
+          },
           "q": {
             "uz": "Geksaxloranda spirtli ishqor va metall natriy bilan ajralgan xlor (AgCl) taxminan qanday nisbatda bo‘lishi kerak?",
             "ru": "В каком примерно соотношении должны быть количества хлора (AgCl), отщеплённого от гексахлорана спиртовой щёлочью и металлическим натрием?",
@@ -8147,6 +8522,11 @@
         },
         {
           "id": "toks_pest_7",
+          "e": {
+            "uz": "Umumiy testlar va rangli TLC natijalari dastlabki hisoblanadi; majmuada pestitsidlarni GC, HPLC va GC-MS bilan aniqlash, tasdiqni esa ushlanish vaqtini standart modda bilan bir xil sharoitda solishtirib qilish ko‘rsatilgan. Rf ni jadval qiymati bilan solishtirgandan keyin ham qo‘shimcha tahlil talab etiladi.",
+            "ru": "Общие пробы и цветная TLC являются предварительными; в пособии указано определение пестицидов методами GC, HPLC и GC-MS, а подтверждение — сравнением времени удерживания со стандартом в одинаковых условиях. Даже после сравнения Rf с табличными значениями требуется дополнительный анализ.",
+            "en": "General tests and colour TLC are preliminary; the manual describes determining pesticides by GC, HPLC and GC-MS, with confirmation by comparing retention times against a reference standard under identical conditions. Even after comparing Rf with table values, further analysis is required."
+          },
           "q": {
             "uz": "Pestitsid skriningining rangli natijasi qanday tasdiqlanadi?",
             "ru": "Как подтверждают цветной результат скрининга пестицидов?",

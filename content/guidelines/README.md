@@ -63,7 +63,11 @@ python3 content/guidelines/sync_app_asset.py   # ilova asset’i (ichki maydonla
   undan olingan savollar **barcha uchun bepul** (`"access": "free"`, G015) —
   kartada manba qatori ko‘rsatiladi, savollar o‘quv rejimida alohida bepul
   to‘plamda.
-- Ixtiyoriy `quiz` maydoni (G016): `{"id","q":{uz,ru,en},"a":{…},"d":{"uz":[3 ta],…},"pages"}`.
+- Ixtiyoriy `quiz` maydoni (G016): `{"id","e":{uz,ru,en},"q":{uz,ru,en},"a":{…},"d":{"uz":[3 ta],…},"pages"}`.
+  `e` — izoh (nega javob to‘g‘ri, variantlar nega noto‘g‘ri), **faqat kartadagi manbali
+  matndan** (yangi fakt yo‘q); majburiy. Quiz matnlarida `content/terminology/canonical_terms.json`
+  dagi taqiqlangan shakllar (GX-MS, SX-MS, YuSSX …) bo‘lmasligi kerak (G016). O‘quv rejimida
+  baholanadigan imtihonga faqat izohi, 3 ta distraktori va sahifa/bo‘limi bor savollar kiradi.
 - Iqtibos sahifasi kalitdan keyin: `[toks_majmua2025] (23-b.)` / `(с. 23)` / `(p. 23)`.
 - Tuzatilgan va chiqarilgan raqamlar: `REVIEW_TOKS.md`.
 

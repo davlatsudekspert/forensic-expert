@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../app/glossary.dart';
 import '../../../app/guidelines.dart';
+import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
@@ -13,6 +14,7 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/glossary/glossary.dart';
 import '../../../domain/guidelines/guideline_models.dart';
+import '../../../domain/library/library_models.dart';
 import '../../guidelines/presentation/guidelines_screens.dart'
     show languageName;
 
@@ -64,6 +66,18 @@ class _GlossaryScreenState extends ConsumerState<GlossaryScreen> {
     final lang = Localizations.localeOf(context).languageCode;
     final glossary = ref.watch(glossaryProvider);
     final terms = glossary.list(lang, query: _query);
+    // Kutubxonadagi lug‘at maqolalari (eski «Glossariy» bo‘limi) — shu
+    // yagona «Ilmiy lug‘at» ichida, filtr ularga ham qo‘llanadi.
+    final q = _query.trim().toLowerCase();
+    final articles = [
+      for (final e
+          in ref
+              .watch(libraryRepositoryProvider)
+              .entries(LibrarySection.glossary))
+        if (q.isEmpty ||
+            e.name.values.values.any((v) => v.toLowerCase().contains(q)))
+          e,
+    ];
     return Scaffold(
       appBar: AppBar(title: Text(l.glossaryTitle)),
       body: SafeArea(
@@ -108,7 +122,7 @@ class _GlossaryScreenState extends ConsumerState<GlossaryScreen> {
                     key: const Key('glossary.count'),
                     style: t.labelSmall?.copyWith(color: c.textSecondary),
                   ),
-                  if (terms.isEmpty)
+                  if (terms.isEmpty && articles.isEmpty)
                     FeEmptyState(
                       key: const Key('glossary.empty'),
                       icon: Icons.search_off,
@@ -120,6 +134,22 @@ class _GlossaryScreenState extends ConsumerState<GlossaryScreen> {
                       lang: lang,
                       onTap: () => context.push(Routes.glossaryTerm(term.id)),
                     ),
+                  if (articles.isNotEmpty) ...[
+                    FeSectionHeader(l.glossaryLibraryArticles),
+                    for (final e in articles)
+                      ListTile(
+                        key: Key('glossary.article.${e.id}'),
+                        contentPadding: EdgeInsets.zero,
+                        title: Text(e.name.resolve(lang), style: t.titleSmall),
+                        trailing: ExcludeSemantics(
+                          child: Icon(
+                            Icons.chevron_right,
+                            color: c.textSecondary,
+                          ),
+                        ),
+                        onTap: () => context.push(Routes.libraryEntry(e.id)),
+                      ),
+                  ],
                   const SizedBox(height: FeSpace.lg),
                 ],
               ),
@@ -241,7 +271,9 @@ class GlossaryTermBody extends ConsumerWidget {
     final tr = term.translation;
     final origLang = tr.originalLang;
     final showOriginal =
-        tr.original.trim().isNotEmpty && tr.original != term.textIn(origLang);
+        term.note == null &&
+        tr.original.trim().isNotEmpty &&
+        tr.original != term.textIn(origLang);
     final translated = tr.status.values.contains(TranslationStatus.translated);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -297,6 +329,14 @@ class GlossaryTermBody extends ConsumerWidget {
             icon: Icons.translate,
             tone: FeBannerTone.warning,
             text: l.glossaryMachineDraftNote,
+          ),
+        ],
+        if (term.explanationIn(lang) case final note?) ...[
+          FeSectionHeader(l.glossaryShortExplanation),
+          Text(
+            note,
+            key: const Key('glossary.explanation'),
+            style: t.bodyMedium?.copyWith(height: 1.45),
           ),
         ],
         const SizedBox(height: FeSpace.sm),

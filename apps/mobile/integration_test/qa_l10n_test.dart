@@ -86,7 +86,7 @@ void main() {
 
     // 1. O‘quv testi: PMR iqtibosi (egasi misoli 1 va «1 tadan 1-savol»).
     await shot('Study quiz forensicToxicology deck', () async {
-      await open(Routes.studyQuiz('discipline.forensicToxicology'));
+      await open(Routes.studyQuiz('discipline.mixed'));
     });
     await shot('Study quiz answered', () async {
       final o = find.byKey(const Key('study.quiz.option.0'));

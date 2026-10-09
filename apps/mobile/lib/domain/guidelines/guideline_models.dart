@@ -228,6 +228,7 @@ class GuidelineQuizItem {
     required this.distractors,
     this.pages,
     this.cite = const [],
+    this.explanation = const Tri({}),
   });
 
   static GuidelineQuizItem? fromJson(Object? j) {
@@ -267,6 +268,7 @@ class GuidelineQuizItem {
         for (final k in (j['cite'] as List? ?? const []))
           if ('$k'.trim().isNotEmpty) '$k'.trim(),
       ],
+      explanation: j['e'] == null ? const Tri({}) : Tri.fromJson(j['e']),
     );
   }
 
@@ -281,6 +283,10 @@ class GuidelineQuizItem {
   /// Savol aniq tayangan manba kalitlari (bo‘sh bo‘lsa — kartadagi
   /// o‘quv-uslubiy material). [pages] o‘quv-uslubiy materialga tegishli.
   final List<String> cite;
+
+  /// Izoh: nega javob to‘g‘ri va variantlar noto‘g‘ri — faqat kartadagi
+  /// manbali matndan (yangi fakt qo‘shilmaydi). Bo‘sh bo‘lishi mumkin.
+  final Tri explanation;
 }
 
 /// Yo‘riqnomalar bo‘limidagi fan guruhlari (egasi belgilagan tartibda).

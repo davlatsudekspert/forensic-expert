@@ -311,7 +311,7 @@ void main() {
       prompt: LocalizedText({'en': 'PMR', 'uz': 'PMR', 'ru': 'PMR'}),
       answer: LocalizedText({'en': quote}),
       answerIsQuote: true,
-      answerQuoteId: claimId,
+      claimId: claimId,
       status: ScientificStatus.needsReview,
       isTestData: false,
       citations: [],

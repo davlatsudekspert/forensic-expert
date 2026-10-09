@@ -19,10 +19,19 @@ import '../../../domain/learn/study_models.dart';
 import '../../disciplines/discipline_strings.dart';
 import '../../evidence/evidence_strings.dart';
 import '../../evidence/presentation/localized_content.dart';
+import '../../glossary/presentation/glossary_linked_text.dart';
 import '../../guidelines/presentation/guidelines_screens.dart';
 
 /// To‘plam nomi (fan, modda guruhi yoki yo‘riqnoma yo‘nalishi).
 String studyDeckTitle(AppLocalizations l, StudyDeck d) {
+  if (d.isMixed) {
+    return switch (d.kind) {
+      StudyDeckKind.discipline => l.studyDeckMixedTopics,
+      StudyDeckKind.substanceGroup => l.studyDeckMixedSubstances,
+      StudyDeckKind.guidelineArea ||
+      StudyDeckKind.teachingMaterial => l.studyDeckMixedGuidelines,
+    };
+  }
   switch (d.kind) {
     case StudyDeckKind.discipline:
       final x = ForensicDiscipline.values.asNameMap()[d.key];
@@ -53,6 +62,15 @@ String _originRoute(StudyItem i) => switch (i.origin) {
   StudyOrigin.libraryEntry => Routes.libraryEntry(i.originId),
   StudyOrigin.guideline => Routes.guideline(i.originId),
 };
+
+/// Kartochka manbasi sahifasi: paketdagi manba bo‘lsa — manba, aks holda
+/// asl yozuv (yo‘riqnoma kartasi adabiyoti bilan).
+String _sourceRoute(StudyItem i) {
+  for (final c in i.citations) {
+    if (c.sourceId != null) return Routes.source(c.sourceId!);
+  }
+  return _originRoute(i);
+}
 
 /// O‘quv rejimi: fan / mavzu bo‘yicha to‘plamlar.
 class StudyHubScreen extends ConsumerWidget {
@@ -122,10 +140,19 @@ class _DeckCard extends ConsumerWidget {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
+    final lang = Localizations.localeOf(context).languageCode;
     final progress = ref.watch(studyProgressProvider);
     final now = ref.watch(studyClockProvider)();
     final due = LeitnerScheduler.dueCount(deck.items, progress, now);
     final canQuiz = StudyQuizBuilder.canQuiz(deck, catalog);
+    final examCount = StudyQuizBuilder.examCount(deck, catalog, lang);
+    final canExam = StudyQuizBuilder.canExam(deck, catalog, lang);
+    // Imtihon savollari bor, lekin tanlangan tildagi tarjimasi qoralama.
+    final draftOnly =
+        !canExam &&
+        StudyQuizBuilder.canExam(deck, catalog, 'uz') &&
+        deck.items.any((i) => i.draftLanguages.contains(lang));
+    final note = t.bodySmall?.copyWith(color: c.textSecondary);
     return FeCard(
       key: Key('study.deck.${deck.id}'),
       child: Column(
@@ -138,15 +165,20 @@ class _DeckCard extends ConsumerWidget {
             runSpacing: FeSpace.xxs,
             crossAxisAlignment: WrapCrossAlignment.center,
             children: [
-              Text(
-                l.studyDeckCount(deck.items.length),
-                style: t.bodySmall?.copyWith(color: c.textSecondary),
-              ),
+              Text(l.studyDeckCount(deck.items.length), style: note),
               StatusChip(
                 key: Key('study.due.${deck.id}'),
                 icon: Icons.schedule,
                 label: l.studyDueCount(due),
                 color: due > 0 ? c.accent : c.textSecondary,
+              ),
+              StatusChip(
+                key: Key('study.examCount.${deck.id}'),
+                icon: canExam ? Icons.verified_outlined : Icons.edit_note,
+                label: canExam
+                    ? l.studyExamCount(examCount)
+                    : l.studyPracticeOnly,
+                color: canExam ? c.verified : c.textSecondary,
               ),
               ReviewStatusBadge(status: deck.status, compact: true),
               if (deck.isTestData) const TestDataBadge(),
@@ -159,7 +191,7 @@ class _DeckCard extends ConsumerWidget {
                   ? l.guidelineGmtAttribution
                   : l.guidelineToksAttribution,
               key: Key('study.attribution.${deck.id}'),
-              style: t.bodySmall?.copyWith(color: c.textSecondary),
+              style: note,
             ),
           ],
           const SizedBox(height: FeSpace.sm),
@@ -175,10 +207,18 @@ class _DeckCard extends ConsumerWidget {
               ),
               OutlinedButton.icon(
                 key: Key('study.quiz.${deck.id}'),
-                icon: const Icon(Icons.quiz_outlined),
-                label: Text(l.learnQuiz),
+                icon: const Icon(Icons.fitness_center_outlined),
+                label: Text(l.studyModePractice),
                 onPressed: canQuiz
                     ? () => context.push(Routes.studyQuiz(deck.id))
+                    : null,
+              ),
+              OutlinedButton.icon(
+                key: Key('study.exam.${deck.id}'),
+                icon: const Icon(Icons.fact_check_outlined),
+                label: Text(l.studyModeExam),
+                onPressed: canExam
+                    ? () => context.push(Routes.studyQuiz(deck.id, exam: true))
                     : null,
               ),
             ],
@@ -186,8 +226,17 @@ class _DeckCard extends ConsumerWidget {
           if (!canQuiz) ...[
             const SizedBox(height: FeSpace.xxs),
             Text(
-              l.studyQuizUnavailable,
-              style: t.bodySmall?.copyWith(color: c.textSecondary),
+              l.studyQuizFlashcardsOnly,
+              key: Key('study.flashcardsOnly.${deck.id}'),
+              style: note,
+            ),
+          ],
+          if (!canExam && canQuiz) ...[
+            const SizedBox(height: FeSpace.xxs),
+            Text(
+              draftOnly ? l.studyExamDraftLanguage : l.studyExamUnavailable,
+              key: Key('study.examUnavailable.${deck.id}'),
+              style: note,
             ),
           ],
         ],
@@ -611,9 +660,8 @@ class _CardBack extends StatelessWidget {
   }
 }
 
-/// Javob matni: manbadagi iqtibos (UI tilidagi tarjima birinchi, asl
-/// iqtibos «Asl manbadagi iqtibosni ko‘rish» ostida), formula yoki mazmun
-/// (tarjima holati bilan).
+/// Javob matni: manbadagi iqtibos (UI tilidagi tarjima birinchi, asl —
+/// alohida ochiladi), formula yoki mazmun (tarjima holati bilan).
 class StudyAnswerText extends ConsumerWidget {
   const StudyAnswerText({super.key, required this.item, this.maxLines});
 
@@ -637,74 +685,11 @@ class StudyAnswerText extends ConsumerWidget {
           textAlign: TextAlign.center,
         );
       case StudyItemKind.topicExcerpt:
-        // Asl iqtibos — manba tilida (inglizcha); tarjima — claim ID bo‘yicha.
-        const kind = ContentTextKind.claimExcerpt;
-        final id = item.answerQuoteId ?? item.id;
-        final r = resolveContent(
-          ref,
-          context,
-          kind,
-          id,
-          source: item.answer.resolve('en'), // asl iqtibos tili
-          originalLang: 'en',
-        );
-        return Column(
-          key: Key('study.quote.${item.id}'),
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              r.isTranslation ? l.trQuoteTranslatedLabel : l.studyQuoteLabel,
-              style: t.labelSmall?.copyWith(color: c.textSecondary),
-            ),
-            const SizedBox(height: FeSpace.xxs),
-            if (r.missingTranslation) ...[
-              NoTranslationNotice(
-                key: Key('l10n.missing.$kind.$id'),
-                originalLang: r.originalLang,
-              ),
-              const SizedBox(height: FeSpace.xxs),
-            ],
-            DecoratedBox(
-              decoration: BoxDecoration(
-                border: BorderDirectional(
-                  start: BorderSide(color: c.accent, width: 3),
-                ),
-              ),
-              child: Padding(
-                padding: const EdgeInsetsDirectional.only(start: FeSpace.sm),
-                child: Text(
-                  r.text,
-                  key: Key('l10n.text.$kind.$id'),
-                  locale: Locale(r.textLang),
-                  maxLines: maxLines,
-                  overflow: overflow,
-                  style: t.bodyLarge?.copyWith(
-                    // Aynan iqtibos — kursiv; tarjima — oddiy matn.
-                    fontStyle: r.isTranslation ? null : FontStyle.italic,
-                    height: 1.45,
-                  ),
-                ),
-              ),
-            ),
-            if (r.isTranslation) ...[
-              const SizedBox(height: FeSpace.xxs),
-              TranslationStatusBadge(
-                key: Key('l10n.status.$kind.$id'),
-                status: r.status!,
-              ),
-              if (maxLines == null)
-                OriginalTextToggle(
-                  key: Key('study.quote.original.${item.id}'),
-                  original: r.original,
-                  originalLang: r.originalLang,
-                  showLabel: l.trOriginalQuoteShow,
-                  toggleKey: Key('l10n.originalToggle.$kind.$id'),
-                  originalKey: Key('l10n.original.$kind.$id'),
-                  style: t.bodyMedium,
-                ),
-            ],
-          ],
+        return StudyQuoteText(
+          claimId: item.claimId,
+          quote: text,
+          maxLines: maxLines,
+          keyPrefix: item.id,
         );
       case StudyItemKind.guidelineSummary:
       case StudyItemKind.guidelineQuestion:
@@ -731,6 +716,106 @@ class StudyAnswerText extends ConsumerWidget {
   }
 }
 
+/// Manbadagi iqtibos: UI tilidagi avtomatik tarjima (holat belgisi bilan)
+/// birinchi; asl matn «Asl manbadagi iqtibosni ko‘rish» orqali. Tarjima
+/// bo‘lmasa — asl iqtibos (asl tilda deb belgilanadi).
+class StudyQuoteText extends ConsumerWidget {
+  const StudyQuoteText({
+    super.key,
+    required this.claimId,
+    required this.quote,
+    required this.keyPrefix,
+    this.maxLines,
+  });
+
+  final String? claimId;
+  final String quote;
+  final String keyPrefix;
+  final int? maxLines;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    // Asl iqtibos — manba tilida (inglizcha); tarjima — claim ID bo‘yicha
+    // (`ContentTranslations.resolve`, docs/L10N_DATA_CONTRACT.md).
+    const kind = ContentTextKind.claimExcerpt;
+    final id = claimId ?? keyPrefix;
+    final r = resolveContent(
+      ref,
+      context,
+      kind,
+      id,
+      source: quote,
+      originalLang: 'en',
+    );
+    final overflow = maxLines == null ? null : TextOverflow.ellipsis;
+    return Column(
+      key: Key(
+        r.isTranslation
+            ? 'study.quote.translated.$keyPrefix'
+            : 'study.quote.$keyPrefix',
+      ),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(
+          r.isTranslation ? l.trQuoteTranslatedLabel : l.studyQuoteLabel,
+          style: t.labelSmall?.copyWith(color: c.textSecondary),
+        ),
+        const SizedBox(height: FeSpace.xxs),
+        if (r.missingTranslation) ...[
+          NoTranslationNotice(
+            key: Key('l10n.missing.$kind.$id'),
+            originalLang: r.originalLang,
+          ),
+          const SizedBox(height: FeSpace.xxs),
+        ],
+        DecoratedBox(
+          decoration: BoxDecoration(
+            border: BorderDirectional(
+              start: BorderSide(color: c.accent, width: 3),
+            ),
+          ),
+          child: Padding(
+            padding: const EdgeInsetsDirectional.only(start: FeSpace.sm),
+            child: Text(
+              r.text,
+              key: Key('l10n.text.$kind.$id'),
+              locale: Locale(r.textLang),
+              maxLines: maxLines,
+              overflow: overflow,
+              style: t.bodyLarge?.copyWith(
+                // Aynan iqtibos — kursiv; tarjima — oddiy matn.
+                fontStyle: r.isTranslation ? null : FontStyle.italic,
+                height: 1.45,
+              ),
+            ),
+          ),
+        ),
+        if (r.isTranslation) ...[
+          const SizedBox(height: FeSpace.xxs),
+          TranslationStatusBadge(
+            key: Key('l10n.status.$kind.$id'),
+            status: r.status!,
+          ),
+          if (maxLines == null)
+            OriginalTextToggle(
+              key: Key('study.quote.original.$keyPrefix'),
+              original: r.original,
+              originalLang: r.originalLang,
+              showLabel: l.trOriginalQuoteShow,
+              toggleKey: Key('l10n.originalToggle.$kind.$id'),
+              originalKey: Key('l10n.original.$kind.$id'),
+              style: t.bodyMedium,
+            ),
+        ],
+      ],
+    );
+  }
+}
+
 /// Kartochka manbalari va asl yozuvga havola.
 class StudySources extends StatelessWidget {
   const StudySources({super.key, required this.item, this.max = 3});
@@ -743,8 +828,10 @@ class StudySources extends StatelessWidget {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
+    final lang = Localizations.localeOf(context).languageCode;
     final shown = item.citations.take(max).toList();
     final more = item.citations.length - shown.length;
+    final small = t.bodySmall?.copyWith(color: c.textSecondary);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
@@ -787,18 +874,19 @@ class StudySources extends StatelessWidget {
                         if (s.detail != null)
                           Text(
                             s.detail!,
-                            style: t.bodySmall?.copyWith(
-                              color: c.textSecondary,
-                              fontStyle: FontStyle.italic,
-                            ),
+                            style: small?.copyWith(fontStyle: FontStyle.italic),
                           ),
                         if (s.pages != null)
                           Text(
                             l.studySourcePages(s.pages!),
                             key: Key('study.source.pages.${item.id}.$i'),
-                            style: t.bodySmall?.copyWith(
-                              color: c.textSecondary,
-                            ),
+                            style: small,
+                          ),
+                        if (s.section case final sec?)
+                          Text(
+                            l.studySourceSection(sec.resolve(lang)),
+                            key: Key('study.source.section.${item.id}.$i'),
+                            style: small,
                           ),
                       ],
                     ),
@@ -808,11 +896,7 @@ class StudySources extends StatelessWidget {
               ),
             ),
           ),
-        if (more > 0)
-          Text(
-            l.studyMoreSources(more),
-            style: t.bodySmall?.copyWith(color: c.textSecondary),
-          ),
+        if (more > 0) Text(l.studyMoreSources(more), style: small),
         Align(
           alignment: AlignmentDirectional.centerStart,
           child: TextButton.icon(
@@ -827,15 +911,157 @@ class StudySources extends StatelessWidget {
   }
 }
 
+/// Javobdan keyingi izoh: «To‘g‘ri / Noto‘g‘ri», nega to‘g‘ri (muallif izohi
+/// yoki manbali claim matni), to‘g‘ri javob va «Manbani ochish».
+class StudyAnswerExplanation extends StatelessWidget {
+  const StudyAnswerExplanation({
+    super.key,
+    required this.question,
+    required this.correct,
+    this.showVerdict = true,
+  });
+
+  final StudyQuestion question;
+  final bool correct;
+  final bool showVerdict;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final lang = Localizations.localeOf(context).languageCode;
+    final item = question.item;
+    final body = t.bodyMedium?.copyWith(height: 1.45);
+    final Widget why = switch (item.explanationKind) {
+      StudyExplanationKind.authored => Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          GlossaryLinkedText(
+            item.explanation?.resolve(lang) ?? '',
+            key: Key('study.explanation.text.${item.id}'),
+            style: body,
+          ),
+          if (item.draftLanguages.contains(lang)) ...[
+            const SizedBox(height: FeSpace.xxs),
+            Text(
+              l.guidelineTranslationDraft,
+              style: t.bodySmall?.copyWith(color: c.textSecondary),
+            ),
+          ],
+        ],
+      ),
+      StudyExplanationKind.sourcedClaim => Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          GlossaryLinkedText(
+            l.studyExplainTopic(item.prompt.resolve(lang)),
+            key: Key('study.explanation.text.${item.id}'),
+            style: body,
+          ),
+          const SizedBox(height: FeSpace.xs),
+          Text(
+            l.studyExplainSourceSays,
+            style: t.labelMedium?.copyWith(color: c.textSecondary),
+          ),
+          const SizedBox(height: FeSpace.xxs),
+          StudyQuoteText(
+            claimId: item.claimId,
+            quote: item.answer.resolve('en'),
+            keyPrefix: 'explain.${item.id}',
+          ),
+        ],
+      ),
+      StudyExplanationKind.substanceIdentity => Text(
+        l.studyExplainSubstance(
+          item.prompt.resolve(lang),
+          item.answer.resolve(lang),
+        ),
+        key: Key('study.explanation.text.${item.id}'),
+        style: body,
+      ),
+      StudyExplanationKind.guidelineSummary => GlossaryLinkedText(
+        l.studyExplainGuideline(item.prompt.resolve(lang)),
+        key: Key('study.explanation.text.${item.id}'),
+        style: body,
+      ),
+    };
+    return Column(
+      key: Key('study.explanation.${item.id}'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        if (showVerdict)
+          Semantics(
+            liveRegion: true,
+            child: Align(
+              alignment: AlignmentDirectional.centerStart,
+              child: StatusChip(
+                key: Key('study.quiz.feedback.${correct ? 'ok' : 'wrong'}'),
+                icon: correct
+                    ? Icons.check_circle_outline
+                    : Icons.highlight_off,
+                label: correct ? l.quizCorrect : l.quizIncorrect,
+                color: correct ? c.verified : c.danger,
+              ),
+            ),
+          ),
+        const SizedBox(height: FeSpace.xs),
+        FeCard(
+          padding: const EdgeInsets.all(FeSpace.sm),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Text(
+                l.quizExplanation,
+                style: t.labelLarge?.copyWith(color: c.textSecondary),
+              ),
+              const SizedBox(height: FeSpace.xxs),
+              if (!correct || question.isTrueFalse) ...[
+                Text(
+                  l.studyQuizCorrectAnswer(question.correctText.resolve(lang)),
+                  key: Key('study.explanation.answer.${item.id}'),
+                  style: t.bodyMedium?.copyWith(
+                    color: c.verified,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                const SizedBox(height: FeSpace.xs),
+              ],
+              why,
+              const SizedBox(height: FeSpace.xs),
+              Align(
+                alignment: AlignmentDirectional.centerStart,
+                child: FilledButton.tonalIcon(
+                  key: Key('study.quiz.openSource.${item.id}'),
+                  icon: const Icon(Icons.menu_book_outlined, size: 18),
+                  label: Text(l.studyOpenSource),
+                  onPressed: () => context.push(_sourceRoute(item)),
+                ),
+              ),
+            ],
+          ),
+        ),
+        StudySources(item: item, max: 2),
+      ],
+    );
+  }
+}
+
 // ---------------------------------------------------------------------------
-// Test
+// Test: mashq va imtihon
 // ---------------------------------------------------------------------------
 
-/// O‘z-o‘zini tekshirish testi: variantlar — shu turdagi boshqa yozuvlar.
+/// O‘z-o‘zini tekshirish: [StudyQuizMode.practice] — darhol izoh bilan,
+/// [StudyQuizMode.exam] — faqat imtihonga mos savollar, natija oxirida.
 class StudyQuizScreen extends ConsumerStatefulWidget {
-  const StudyQuizScreen({super.key, required this.deckId});
+  const StudyQuizScreen({
+    super.key,
+    required this.deckId,
+    this.mode = StudyQuizMode.practice,
+  });
 
   final String deckId;
+  final StudyQuizMode mode;
 
   @override
   ConsumerState<StudyQuizScreen> createState() => _StudyQuizScreenState();
@@ -843,26 +1069,39 @@ class StudyQuizScreen extends ConsumerStatefulWidget {
 
 class _StudyQuizScreenState extends ConsumerState<StudyQuizScreen> {
   List<StudyQuestion>? _questions;
+  String? _lang;
   final _answers = <int>[];
   int? _selected;
   bool _checked = false;
 
-  void _restart(StudyDeck deck) => setState(() {
-    _questions = _build(deck);
+  bool get _exam => widget.mode == StudyQuizMode.exam;
+
+  void _restart(StudyDeck deck, String lang) => setState(() {
+    _questions = _build(deck, lang);
     _answers.clear();
     _selected = null;
     _checked = false;
   });
 
-  List<StudyQuestion> _build(StudyDeck deck) => StudyQuizBuilder.build(
-    deck,
-    ref.read(studyCatalogProvider),
-    seed: ref.read(studySeedProvider)(),
-  );
+  List<StudyQuestion> _build(StudyDeck deck, String lang) =>
+      StudyQuizBuilder.build(
+        deck,
+        ref.read(studyCatalogProvider),
+        seed: ref.read(studySeedProvider)(),
+        mode: widget.mode,
+        lang: lang,
+      );
+
+  void _next() => setState(() {
+    _answers.add(_selected!);
+    _selected = null;
+    _checked = false;
+  });
 
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
+    final lang = Localizations.localeOf(context).languageCode;
     final deck = ref.watch(studyCatalogProvider).deck(widget.deckId);
     final Widget body;
     if (deck == null) {
@@ -872,22 +1111,43 @@ class _StudyQuizScreenState extends ConsumerState<StudyQuizScreen> {
         body: l.studyDeckNotFound,
       );
     } else {
-      final questions = _questions ??= _build(deck);
+      // Til o‘zgarsa — imtihon to‘plami ham o‘zgaradi (qayta tuziladi).
+      if (_lang != lang) {
+        _lang = lang;
+        _questions = _build(deck, lang);
+        _answers.clear();
+        _selected = null;
+        _checked = false;
+      }
+      final questions = _questions!;
       if (questions.isEmpty) {
         body = FeEmptyState(
           key: const Key('study.quiz.unavailable'),
           icon: Icons.quiz_outlined,
-          body: l.studyQuizUnavailable,
+          body: !_exam
+              ? l.studyQuizUnavailable
+              // Savollar bor, lekin shu tildagi tarjimasi qoralama.
+              : StudyQuizBuilder.canExam(
+                  deck,
+                  ref.read(studyCatalogProvider),
+                  'uz',
+                )
+              ? l.studyExamDraftLanguage
+              : l.studyExamUnavailable,
         );
       } else if (_answers.length >= questions.length) {
-        body = _results(context, l, deck, questions);
+        body = _results(context, l, deck, questions, lang);
       } else {
-        body = _question(context, l, questions);
+        body = _question(context, l, questions, lang);
       }
     }
     return Scaffold(
       appBar: AppBar(
-        title: Text(deck == null ? l.learnQuiz : studyDeckTitle(l, deck)),
+        title: Text(
+          deck == null
+              ? (_exam ? l.studyModeExam : l.studyModePractice)
+              : studyDeckTitle(l, deck),
+        ),
       ),
       body: SafeArea(
         child: ListView(
@@ -907,8 +1167,16 @@ class _StudyQuizScreenState extends ConsumerState<StudyQuizScreen> {
     );
   }
 
+  Widget _modeChip(AppLocalizations l, FeColorTokens c) => StatusChip(
+    key: Key('study.mode.${_exam ? 'exam' : 'practice'}'),
+    icon: _exam ? Icons.fact_check_outlined : Icons.fitness_center_outlined,
+    label: _exam ? l.studyModeExam : l.studyModePractice,
+    color: _exam ? c.accent : c.textSecondary,
+  );
+
   Widget _stem(BuildContext context, AppLocalizations l, StudyQuestion q) {
     final t = Theme.of(context).textTheme;
+    final c = FeTheme.of(context);
     final lang = Localizations.localeOf(context).languageCode;
     final title = switch (q.item.kind) {
       StudyItemKind.topicExcerpt => l.studyQuizStemTopic,
@@ -933,30 +1201,63 @@ class _StudyQuizScreenState extends ConsumerState<StudyQuizScreen> {
           const SizedBox(height: FeSpace.sm),
           StudyAnswerText(item: q.item),
         ],
+        if (q.isTrueFalse) ...[
+          const SizedBox(height: FeSpace.md),
+          Text(
+            l.studyTfProposed,
+            style: t.labelMedium?.copyWith(color: c.textSecondary),
+          ),
+          const SizedBox(height: FeSpace.xxs),
+          FeCard(
+            key: const Key('study.quiz.proposed'),
+            padding: const EdgeInsets.all(FeSpace.sm),
+            child: Text(
+              q.proposed.resolve(lang),
+              style: q.item.kind == StudyItemKind.substanceFormula
+                  ? FeThemeBuilder.numeric(t.titleMedium!)
+                  : t.titleSmall,
+            ),
+          ),
+          const SizedBox(height: FeSpace.sm),
+          Text(l.studyTfQuestion, style: t.titleSmall),
+        ],
       ],
     );
   }
+
+  String _choiceText(AppLocalizations l, StudyQuestion q, int i, String lang) =>
+      q.isTrueFalse
+      ? (i == 0 ? l.studyTrue : l.studyFalse)
+      : q.optionText(i).resolve(lang);
 
   Widget _question(
     BuildContext context,
     AppLocalizations l,
     List<StudyQuestion> questions,
+    String lang,
   ) {
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
-    final lang = Localizations.localeOf(context).languageCode;
     final n = _answers.length;
     final q = questions[n];
-    final correct = _selected == q.correctIndex;
     final last = n == questions.length - 1;
-    final mono = q.item.kind == StudyItemKind.substanceFormula;
+    final mono =
+        q.item.kind == StudyItemKind.substanceFormula && !q.isTrueFalse;
+    final eligible = StudyEligibility.examEligible(q.item, lang);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Text(
-          l.studyQuizQuestionOf(n + 1, questions.length),
-          key: const Key('study.quiz.progress'),
-          style: t.labelLarge?.copyWith(color: c.textSecondary),
+        Row(
+          children: [
+            Expanded(
+              child: Text(
+                l.studyQuizQuestionOf(n + 1, questions.length),
+                key: const Key('study.quiz.progress'),
+                style: t.labelLarge?.copyWith(color: c.textSecondary),
+              ),
+            ),
+            _modeChip(l, c),
+          ],
         ),
         const SizedBox(height: FeSpace.xxs),
         LinearProgressIndicator(
@@ -966,11 +1267,22 @@ class _StudyQuizScreenState extends ConsumerState<StudyQuizScreen> {
         if (n == 0) ...[
           const SizedBox(height: FeSpace.sm),
           FeBanner(
-            icon: Icons.info_outline,
-            text: q.item.distractors.isNotEmpty
-                ? l.studyQuizNoteAuthored
-                : l.studyQuizNote,
+            key: Key('study.mode.banner.${_exam ? 'exam' : 'practice'}'),
+            icon: _exam ? Icons.fact_check_outlined : Icons.info_outline,
+            tone: _exam ? FeBannerTone.review : FeBannerTone.info,
+            text: _exam ? l.studyModeExamBanner : l.studyModePracticeBanner,
           ),
+          if (!_exam) ...[
+            const SizedBox(height: FeSpace.xs),
+            FeBanner(
+              icon: Icons.rule,
+              text: q.item.distractors.isNotEmpty
+                  ? l.studyQuizNoteAuthored
+                  : questions.any((x) => x.isTrueFalse)
+                  ? '${l.studyQuizNote} ${l.studyTfNote}'
+                  : l.studyQuizNote,
+            ),
+          ],
         ],
         const SizedBox(height: FeSpace.sm),
         Wrap(
@@ -978,18 +1290,25 @@ class _StudyQuizScreenState extends ConsumerState<StudyQuizScreen> {
           runSpacing: FeSpace.xxs,
           children: [
             ReviewStatusBadge(status: q.item.status, compact: true),
+            if (!_exam && !eligible)
+              StatusChip(
+                key: const Key('study.quiz.practiceOnly'),
+                icon: Icons.edit_note,
+                label: l.studyPracticeOnly,
+                color: c.textSecondary,
+              ),
             if (q.item.isTestData) const TestDataBadge(),
           ],
         ),
         const SizedBox(height: FeSpace.sm),
         _stem(context, l, q),
         const SizedBox(height: FeSpace.md),
-        for (var i = 0; i < q.options.length; i++)
+        for (var i = 0; i < q.choiceCount; i++)
           Padding(
             padding: const EdgeInsets.only(bottom: FeSpace.xs),
             child: _OptionTile(
               key: Key('study.quiz.option.$i'),
-              text: q.optionText(i).resolve(lang),
+              text: _choiceText(l, q, i, lang),
               mono: mono,
               selected: _selected == i,
               state: !_checked
@@ -1003,7 +1322,13 @@ class _StudyQuizScreenState extends ConsumerState<StudyQuizScreen> {
             ),
           ),
         const SizedBox(height: FeSpace.sm),
-        if (!_checked)
+        if (_exam)
+          FilledButton(
+            key: const Key('study.quiz.next'),
+            onPressed: _selected == null ? null : _next,
+            child: Text(last ? l.studyQuizFinish : l.studyQuizNext),
+          )
+        else if (!_checked)
           FilledButton(
             key: const Key('study.quiz.check'),
             onPressed: _selected == null
@@ -1012,29 +1337,11 @@ class _StudyQuizScreenState extends ConsumerState<StudyQuizScreen> {
             child: Text(l.quizCheck),
           )
         else ...[
-          Semantics(
-            liveRegion: true,
-            child: Align(
-              alignment: AlignmentDirectional.centerStart,
-              child: StatusChip(
-                key: Key('study.quiz.feedback.${correct ? 'ok' : 'wrong'}'),
-                icon: correct
-                    ? Icons.check_circle_outline
-                    : Icons.highlight_off,
-                label: correct ? l.quizCorrect : l.quizIncorrect,
-                color: correct ? c.verified : c.danger,
-              ),
-            ),
-          ),
-          StudySources(item: q.item, max: 2),
+          StudyAnswerExplanation(question: q, correct: q.isCorrect(_selected!)),
           const SizedBox(height: FeSpace.sm),
           FilledButton(
             key: const Key('study.quiz.next'),
-            onPressed: () => setState(() {
-              _answers.add(_selected!);
-              _selected = null;
-              _checked = false;
-            }),
+            onPressed: _next,
             child: Text(last ? l.studyQuizFinish : l.studyQuizNext),
           ),
         ],
@@ -1047,15 +1354,17 @@ class _StudyQuizScreenState extends ConsumerState<StudyQuizScreen> {
     AppLocalizations l,
     StudyDeck deck,
     List<StudyQuestion> questions,
+    String lang,
   ) {
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
-    final lang = Localizations.localeOf(context).languageCode;
     final mistakes = [
       for (final (i, q) in questions.indexed)
-        if (_answers[i] != q.correctIndex) (i, q),
+        if (!q.isCorrect(_answers[i])) (i, q),
     ];
     final score = questions.length - mistakes.length;
+    // Imtihonda — barcha javoblar izoh bilan; mashqda — faqat xatolar.
+    final review = _exam ? [...questions.indexed] : mistakes;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
@@ -1067,6 +1376,10 @@ class _StudyQuizScreenState extends ConsumerState<StudyQuizScreen> {
                 color: c.accent,
                 size: 36,
               ),
+              if (_exam) ...[
+                const SizedBox(height: FeSpace.xxs),
+                Text(l.studyExamResultTitle, style: t.titleMedium),
+              ],
               const SizedBox(height: FeSpace.xs),
               Semantics(
                 liveRegion: true,
@@ -1077,6 +1390,12 @@ class _StudyQuizScreenState extends ConsumerState<StudyQuizScreen> {
                   textAlign: TextAlign.center,
                 ),
               ),
+              if (_exam)
+                Text(
+                  l.studyExamPercent((score * 100 / questions.length).round()),
+                  key: const Key('study.exam.percent'),
+                  style: t.bodyMedium?.copyWith(color: c.textSecondary),
+                ),
               const SizedBox(height: FeSpace.xs),
               LinearProgressIndicator(
                 value: score / questions.length,
@@ -1085,8 +1404,8 @@ class _StudyQuizScreenState extends ConsumerState<StudyQuizScreen> {
             ],
           ),
         ),
-        FeSectionHeader(l.studyQuizMistakes),
-        if (mistakes.isEmpty)
+        FeSectionHeader(_exam ? l.studyExamReview : l.studyQuizMistakes),
+        if (review.isEmpty)
           FeEmptyState(
             key: const Key('study.quiz.noMistakes'),
             icon: Icons.check_circle_outline,
@@ -1094,11 +1413,11 @@ class _StudyQuizScreenState extends ConsumerState<StudyQuizScreen> {
             compact: true,
           )
         else
-          for (final (i, q) in mistakes)
+          for (final (i, q) in review)
             Padding(
               padding: const EdgeInsets.only(bottom: FeSpace.sm),
               child: FeCard(
-                key: Key('study.quiz.mistake.$i'),
+                key: Key('study.quiz.${_exam ? 'review' : 'mistake'}.$i'),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
@@ -1122,24 +1441,27 @@ class _StudyQuizScreenState extends ConsumerState<StudyQuizScreen> {
                               ),
                         style: t.titleSmall,
                       ),
+                    if (q.isTrueFalse) ...[
+                      const SizedBox(height: FeSpace.xxs),
+                      Text(
+                        '${l.studyTfProposed}: ${q.proposed.resolve(lang)}',
+                        style: t.bodyMedium,
+                      ),
+                    ],
                     const SizedBox(height: FeSpace.xs),
                     Text(
                       l.studyQuizYourAnswer(
-                        q.optionText(_answers[i]).resolve(lang),
-                      ),
-                      style: t.bodyMedium?.copyWith(color: c.danger),
-                    ),
-                    const SizedBox(height: FeSpace.xxs),
-                    Text(
-                      l.studyQuizCorrectAnswer(
-                        q.optionText(q.correctIndex).resolve(lang),
+                        _choiceText(l, q, _answers[i], lang),
                       ),
                       style: t.bodyMedium?.copyWith(
-                        color: c.verified,
-                        fontWeight: FontWeight.w600,
+                        color: q.isCorrect(_answers[i]) ? c.verified : c.danger,
                       ),
                     ),
-                    StudySources(item: q.item, max: 2),
+                    const SizedBox(height: FeSpace.xs),
+                    StudyAnswerExplanation(
+                      question: q,
+                      correct: q.isCorrect(_answers[i]),
+                    ),
                   ],
                 ),
               ),
@@ -1147,7 +1469,7 @@ class _StudyQuizScreenState extends ConsumerState<StudyQuizScreen> {
         const SizedBox(height: FeSpace.md),
         FilledButton(
           key: const Key('study.quiz.retry'),
-          onPressed: () => _restart(deck),
+          onPressed: () => _restart(deck, lang),
           child: Text(l.studyQuizRetry),
         ),
         const SizedBox(height: FeSpace.xs),
