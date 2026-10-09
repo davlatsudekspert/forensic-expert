@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_riverpod/misc.dart' show Override;
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../core/perf/startup_metrics.dart';
@@ -48,7 +49,11 @@ import 'user_data.dart';
 /// Startup yo‘lida faqat **lokal** va tez ishlar: sozlamalarni o‘qish.
 /// Tarmoq so‘rovi, kontent bazasini ochish yoki og‘ir hisob yo‘q —
 /// ular birinchi kadrdan keyin, kerak bo‘lganda bajariladi.
-Future<void> bootstrap() async {
+///
+/// [testOverrides] — faqat real-ilova QA harness’i uchun
+/// (`integration_test/qa_real_app_test.dart`): tarmoqsiz soxta servislar.
+/// Ilovaning o‘zi uni bo‘sh holda chaqiradi.
+Future<void> bootstrap({List<Override> testOverrides = const []}) async {
   final metrics = StartupMetrics.instance..start();
   WidgetsFlutterBinding.ensureInitialized();
 
@@ -139,6 +144,7 @@ Future<void> bootstrap() async {
                   : EntitlementSource.playStore,
             ),
           ),
+        ...testOverrides,
       ],
       child: const ForensicExpertApp(),
     ),

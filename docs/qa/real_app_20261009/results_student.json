@@ -1,0 +1,293 @@
+{
+  "role": "student",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "s01",
+      "title": "Onboarding: til tanlash ekrani",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s01_onboarding_til_tanlash_ekrani.png"
+    },
+    {
+      "id": "s02",
+      "title": "O‘zbekcha → Davom etish → ilmiy ogohlantirish",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s02_o_zbekcha_davom_etish_ilmiy_ogohlantiris.png"
+    },
+    {
+      "id": "s03",
+      "title": "Tushundim → rejim tanlash",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "s04",
+      "title": "Rejim: Talaba → hisob taklifi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s04_rejim_talaba_hisob_taklifi.png"
+    },
+    {
+      "id": "s05",
+      "title": "Hisobsiz davom etish → Asosiy",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s05_hisobsiz_davom_etish_asosiy.png"
+    },
+    {
+      "id": "s06",
+      "title": "AI ekrani — hisobsiz",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s06_ai_ekrani_hisobsiz.png"
+    },
+    {
+      "id": "s07",
+      "title": "Profil → Kirish (email kod)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s07_profil_kirish_email_kod.png"
+    },
+    {
+      "id": "s08",
+      "title": "Noto‘g‘ri email → tushunarli xato",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s08_noto_g_ri_email_tushunarli_xato.png"
+    },
+    {
+      "id": "s09",
+      "title": "To‘g‘ri email → kod kiritish ekrani",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "s10",
+      "title": "Noto‘g‘ri kod → tushunarli xato",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s10_noto_g_ri_kod_tushunarli_xato.png"
+    },
+    {
+      "id": "s11",
+      "title": "To‘g‘ri kod → tizimga kirildi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s11_to_g_ri_kod_tizimga_kirildi.png"
+    },
+    {
+      "id": "s12",
+      "title": "AI ekrani — kirgan holat, oflayn manbalar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s12_ai_ekrani_kirgan_holat_oflayn_manbalar.png"
+    },
+    {
+      "id": "s13",
+      "title": "Fanni tanlash: Barcha fanlar → Sud toksikologiyasi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s13_fanni_tanlash_barcha_fanlar_sud_toksikol.png"
+    },
+    {
+      "id": "s14",
+      "title": "Kutubxona markazi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "s15",
+      "title": "Yo‘riqnomalar ro‘yxati",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s15_yo_riqnomalar_ro_yxati.png"
+    },
+    {
+      "id": "s16",
+      "title": "Yo‘riqnoma kartasini ochish (etanol, HS-GC-FID)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s16_yo_riqnoma_kartasini_ochish_etanol_hs_gc.png"
+    },
+    {
+      "id": "s17",
+      "title": "Moddalar → Etanol (Tahlil bo‘limi)",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\""
+      ],
+      "screenshot": "s17_moddalar_etanol_tahlil_bo_limi.png"
+    },
+    {
+      "id": "s18",
+      "title": "Manba iqtibosi + o‘zbekcha tarjima",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\""
+      ],
+      "screenshot": "s18_manba_iqtibosi_o_zbekcha_tarjima.png"
+    },
+    {
+      "id": "s19",
+      "title": "Saralanganlarga qo‘shish (yulduzcha)",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\""
+      ],
+      "screenshot": "s19_saralanganlarga_qo_shish_yulduzcha.png"
+    },
+    {
+      "id": "s20",
+      "title": "«Bu ma’lumot qayerdan?» — kelib chiqish oynasi",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\""
+      ],
+      "screenshot": "s20_bu_ma_lumot_qayerdan_kelib_chiqish_oynas.png"
+    },
+    {
+      "id": "s21",
+      "title": "Qidiruv: «alkogol»",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s21_qidiruv_alkogol.png"
+    },
+    {
+      "id": "s22",
+      "title": "Qidiruv: «etanol qon» (yo‘riqnoma ham chiqadi)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s22_qidiruv_etanol_qon_yo_riqnoma_ham_chiqad.png"
+    },
+    {
+      "id": "s23",
+      "title": "Qidiruv: fan filtri (Sud toksikologiyasi)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "s24",
+      "title": "Qidiruv: natija yo‘q — tushunarli xabar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s24_qidiruv_natija_yo_q_tushunarli_xabar.png"
+    },
+    {
+      "id": "s25",
+      "title": "Saqlanganlar Asosiy ekranda ko‘rinadi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s25_saqlanganlar_asosiy_ekranda_ko_rinadi.png"
+    },
+    {
+      "id": "s26",
+      "title": "Pro modda (Alprazolam) — qulf kartasi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s26_pro_modda_alprazolam_qulf_kartasi.png"
+    },
+    {
+      "id": "s27",
+      "title": "Tariflarni ko‘rish → paywall",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s27_tariflarni_ko_rish_paywall.png"
+    },
+    {
+      "id": "s28",
+      "title": "Paywall: do‘kon yo‘q — narx/xarid o‘chiq, xabar bor",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s28_paywall_do_kon_yo_q_narx_xarid_o_chiq_xa.png"
+    },
+    {
+      "id": "s29",
+      "title": "Profil va sozlamalar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s29_profil_va_sozlamalar.png"
+    },
+    {
+      "id": "s30",
+      "title": "Profilni to‘ldirish (talaba)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s30_profilni_to_ldirish_talaba.png"
+    },
+    {
+      "id": "s31",
+      "title": "Til: English",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s31_til_english.png"
+    },
+    {
+      "id": "s32",
+      "title": "Til: Русский",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s32_til.png"
+    },
+    {
+      "id": "s33",
+      "title": "Til: O‘zbekcha (qaytish)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "s34",
+      "title": "320×640: Asosiy",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s34_320_640_asosiy.png"
+    },
+    {
+      "id": "s35",
+      "title": "320×640: Etanol yozuvi",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\""
+      ],
+      "screenshot": "s35_320_640_etanol_yozuvi.png"
+    },
+    {
+      "id": "s36",
+      "title": "320×640: qidiruv «alkogol»",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s36_320_640_qidiruv_alkogol.png"
+    },
+    {
+      "id": "s37",
+      "title": "320×640: tariflar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s37_320_640_tariflar.png"
+    },
+    {
+      "id": "s38",
+      "title": "320×640: Profil",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s38_320_640_profil.png"
+    },
+    {
+      "id": "s39",
+      "title": "Tarmoq o‘chiq: hech bir HTTP so‘rov muvaffaqiyatli emas",
+      "result": "PASS",
+      "notes": [
+        "Bloklangan HTTP urinishlari: 0"
+      ],
+      "screenshot": null
+    }
+  ],
+  "pass": 39,
+  "fail": 0
+}

@@ -141,7 +141,7 @@ class ScientificImageCard extends StatelessWidget {
               ),
               const SizedBox(height: 2),
               Text(
-                meta.attribution,
+                localizedAttribution(l, meta.attribution),
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
                 style: t.bodySmall?.copyWith(color: c.textSecondary),
@@ -211,7 +211,7 @@ class ImageViewerScreen extends ConsumerWidget {
     }
     String date(DateTime d) => feDate(context, d);
     final rows = <(String, String)>[
-      (l.imageAttribution, meta.attribution),
+      (l.imageAttribution, localizedAttribution(l, meta.attribution)),
       if (meta.creator != null) (l.metaCreator, meta.creator!),
       if (meta.sourceName != null) (l.metaSource, meta.sourceName!),
       if (meta.doi != null) ('DOI', meta.doi!),
@@ -286,4 +286,21 @@ class ImageViewerScreen extends ConsumerWidget {
       ),
     );
   }
+}
+
+final _pubchemRdkit = RegExp(
+  r'^Structure drawn from PubChem CID (\d+) SMILES with RDKit$',
+);
+
+/// Kontent paketidagi standart (inglizcha shablonli) atribusiyani tanlangan
+/// tilga o‘giradi. Boshqa (muallif/manba) atribusiyalar o‘zgarmaydi.
+String localizedAttribution(AppLocalizations l, String attribution) {
+  final a = attribution.trim();
+  if (_pubchemRdkit.firstMatch(a) case final m?) {
+    return l.imageAttrPubchemRdkit(m.group(1)!);
+  }
+  if (a == 'Original schematic — FORENSIC EXPERT') {
+    return l.imageAttrOriginalSchematic;
+  }
+  return attribution;
 }

@@ -8639,5 +8639,18 @@
   "admRetry": "Try again",
   "@admRetry": {
     "description": "Action."
+  },
+  "imageAttrPubchemRdkit": "Structure drawn from PubChem CID {cid} SMILES with RDKit",
+  "@imageAttrPubchemRdkit": {
+    "description": "Attribution of a computed structure image (PubChem SMILES rendered with RDKit).",
+    "placeholders": {
+      "cid": {
+        "type": "String"
+      }
+    }
+  },
+  "imageAttrOriginalSchematic": "Original schematic — FORENSIC EXPERT",
+  "@imageAttrOriginalSchematic": {
+    "description": "Attribution of an original schematic drawn by the app team."
   }
 }
