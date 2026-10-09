@@ -5977,4 +5977,94 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get studyDeckNotFound => 'Bu to‘plam mavjud emas.';
+
+  @override
+  String get analysisTitle => 'Tahlil';
+
+  @override
+  String get analysisIntro =>
+      'Bu modda biologik ob’ektlarda qanday tahlil qilinadi — faqat kontent paketidagi mavjud bog‘lanishlar, har biri o‘z manbasi bilan. Ularning hech biri hali ekspert tekshiruvidan o‘tmagan.';
+
+  @override
+  String get analysisSpecimensTitle => 'Namunalar (biologik ob’ektlar)';
+
+  @override
+  String get analysisSpecimensNote =>
+      'Manbada bu modda uchun shu namunalarda qiymat keltirilgan. Qiymatlar pastda, keltirilgan konsentratsiyalar bo‘limida — ular chegaraviy qiymat emas.';
+
+  @override
+  String get analysisNoSpecimens =>
+      'Paketda bu modda uchun hozircha manbali namuna yo‘q.';
+
+  @override
+  String analysisSourcedRecords(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta manbali yozuv',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String analysisSpecimenMethods(String methods) {
+    return 'Shu manbadagi metodlar: $methods';
+  }
+
+  @override
+  String get analysisScreeningTitle => 'Skrining (taxminiy)';
+
+  @override
+  String get analysisScreeningNote =>
+      'Skrining natijasi taxminiy — u tasdiqlovchi metod bilan tasdiqlanishi shart.';
+
+  @override
+  String analysisConfirmedBy(String methods) {
+    return 'Tasdiqlash: $methods';
+  }
+
+  @override
+  String get analysisConfirmationTitle => 'Tasdiqlovchi metodlar';
+
+  @override
+  String analysisAfterScreening(String tests) {
+    return 'Skriningdan keyin: $tests';
+  }
+
+  @override
+  String get analysisMethodsTitle => 'Manbalardagi tahlil metodlari';
+
+  @override
+  String get analysisMethodsRoleNote =>
+      'Metod manbadagi jumlada shu modda bilan birga tilga olingani uchun ko‘rsatilgan; bu validatsiyalangan protsedura emas.';
+
+  @override
+  String get analysisMethodsNotPaired =>
+      'Paketdagi manbalar bu metodlarni aniq namunaga bog‘lamaydi, shuning uchun ular modda uchun umumiy ko‘rsatilgan.';
+
+  @override
+  String get analysisMetabolitesTitle => 'Izlanadigan metabolitlar';
+
+  @override
+  String analysisMetaboliteSpecimens(String specimens) {
+    return 'Namunalar: $specimens';
+  }
+
+  @override
+  String get analysisEmpty =>
+      'Kontent paketida bu modda uchun hozircha manbali tahlil ma’lumoti (namuna, metod yoki metabolit) yo‘q.';
+
+  @override
+  String get analysisShowSource => 'Manbani ko‘rsatish';
+
+  @override
+  String get specimenSubstancesTitle => 'Bu namunada tahlil qilingan moddalar';
+
+  @override
+  String get specimenSubstancesNote =>
+      'Har bir modda uchun manbada shu namunadagi qiymat keltirilgan.';
+
+  @override
+  String get specimenSubstancesNone =>
+      'Paketda bu namunaga bog‘langan modda hozircha yo‘q.';
 }

@@ -6003,4 +6003,98 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get studyDeckNotFound => 'Эта колода недоступна.';
+
+  @override
+  String get analysisTitle => 'Анализ';
+
+  @override
+  String get analysisIntro =>
+      'Как это вещество исследуют в биологических объектах — только связи, уже имеющиеся в пакете контента, каждая со своим источником. Ни одна из них ещё не прошла экспертную проверку.';
+
+  @override
+  String get analysisSpecimensTitle => 'Объекты исследования (биологические)';
+
+  @override
+  String get analysisSpecimensNote =>
+      'Источник приводит значение для этого вещества в этих объектах. Значения показаны ниже в разделе сообщаемых концентраций — это не пороговые значения.';
+
+  @override
+  String get analysisNoSpecimens =>
+      'В пакете пока нет объекта исследования с источником для этого вещества.';
+
+  @override
+  String analysisSourcedRecords(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count записи с источником',
+      many: '$count записей с источником',
+      few: '$count записи с источником',
+      one: '$count запись с источником',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String analysisSpecimenMethods(String methods) {
+    return 'Методы в том же источнике: $methods';
+  }
+
+  @override
+  String get analysisScreeningTitle => 'Скрининг (предварительный)';
+
+  @override
+  String get analysisScreeningNote =>
+      'Результат скрининга предварительный и должен быть подтверждён подтверждающим методом.';
+
+  @override
+  String analysisConfirmedBy(String methods) {
+    return 'Подтверждение: $methods';
+  }
+
+  @override
+  String get analysisConfirmationTitle => 'Подтверждающие методы';
+
+  @override
+  String analysisAfterScreening(String tests) {
+    return 'После скрининга: $tests';
+  }
+
+  @override
+  String get analysisMethodsTitle => 'Аналитические методы в источниках';
+
+  @override
+  String get analysisMethodsRoleNote =>
+      'Метод указан, потому что фраза источника упоминает его вместе с этим веществом; это не валидированная методика.';
+
+  @override
+  String get analysisMethodsNotPaired =>
+      'Источники в пакете не связывают эти методы с конкретным объектом, поэтому они указаны для вещества в целом.';
+
+  @override
+  String get analysisMetabolitesTitle => 'Целевые метаболиты';
+
+  @override
+  String analysisMetaboliteSpecimens(String specimens) {
+    return 'Объекты: $specimens';
+  }
+
+  @override
+  String get analysisEmpty =>
+      'В пакете контента пока нет данных анализа с источниками (объекты, методы или метаболиты) для этого вещества.';
+
+  @override
+  String get analysisShowSource => 'Показать источник';
+
+  @override
+  String get specimenSubstancesTitle =>
+      'Вещества, исследованные в этом объекте';
+
+  @override
+  String get specimenSubstancesNote =>
+      'Для каждого из этих веществ источник приводит значение в этом объекте.';
+
+  @override
+  String get specimenSubstancesNone =>
+      'В пакете пока нет веществ, связанных с этим объектом.';
 }

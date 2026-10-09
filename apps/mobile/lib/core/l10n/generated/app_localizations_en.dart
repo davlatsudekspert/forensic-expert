@@ -5988,4 +5988,95 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get studyDeckNotFound => 'This deck is not available.';
+
+  @override
+  String get analysisTitle => 'Analysis';
+
+  @override
+  String get analysisIntro =>
+      'How this substance is analysed in biological specimens — only links that already exist in the content pack, each with its source. None of them has been expert-reviewed yet.';
+
+  @override
+  String get analysisSpecimensTitle => 'Specimens (biological objects)';
+
+  @override
+  String get analysisSpecimensNote =>
+      'A source reports a value for this substance in these specimens. The values are shown below under reported concentrations — they are not thresholds.';
+
+  @override
+  String get analysisNoSpecimens =>
+      'The pack has no sourced specimen for this substance yet.';
+
+  @override
+  String analysisSourcedRecords(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sourced records',
+      one: '1 sourced record',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String analysisSpecimenMethods(String methods) {
+    return 'Methods in the same source: $methods';
+  }
+
+  @override
+  String get analysisScreeningTitle => 'Screening (presumptive)';
+
+  @override
+  String get analysisScreeningNote =>
+      'A screening result is presumptive and must be confirmed by a confirmation method.';
+
+  @override
+  String analysisConfirmedBy(String methods) {
+    return 'Confirmation: $methods';
+  }
+
+  @override
+  String get analysisConfirmationTitle => 'Confirmation methods';
+
+  @override
+  String analysisAfterScreening(String tests) {
+    return 'After screening: $tests';
+  }
+
+  @override
+  String get analysisMethodsTitle => 'Analytical methods in sources';
+
+  @override
+  String get analysisMethodsRoleNote =>
+      'A method is listed because a source sentence mentions it together with this substance; this is not a validated procedure.';
+
+  @override
+  String get analysisMethodsNotPaired =>
+      'The sources in the pack do not link these methods to a specific specimen, so they are listed for the substance as a whole.';
+
+  @override
+  String get analysisMetabolitesTitle => 'Metabolites to target';
+
+  @override
+  String analysisMetaboliteSpecimens(String specimens) {
+    return 'Specimens: $specimens';
+  }
+
+  @override
+  String get analysisEmpty =>
+      'The content pack has no sourced analysis data (specimens, methods or metabolites) for this substance yet.';
+
+  @override
+  String get analysisShowSource => 'Show the source';
+
+  @override
+  String get specimenSubstancesTitle => 'Substances analysed in this specimen';
+
+  @override
+  String get specimenSubstancesNote =>
+      'A source reports a value for each of these substances in this specimen.';
+
+  @override
+  String get specimenSubstancesNone =>
+      'No substance in the pack is linked to this specimen yet.';
 }

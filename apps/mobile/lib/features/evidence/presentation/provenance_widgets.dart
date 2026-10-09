@@ -592,8 +592,9 @@ class StrictContextTable extends ConsumerWidget {
   }
 }
 
-/// Modda sahifasi: manbali metabolit munosabatlari, o‘lchangan namunalar,
-/// skrining testlari va bilim zanjiriga havola.
+/// Modda sahifasi: manbali metabolit munosabatlari va bilim zanjiriga havola.
+/// Namunalar va skrining testlari «Tahlil» bo‘limida
+/// (`SubstanceAnalysisSection`) ko‘rsatiladi.
 class SubstanceProvenanceSections extends ConsumerWidget {
   const SubstanceProvenanceSections({super.key, required this.entityId});
 
@@ -611,14 +612,15 @@ class SubstanceProvenanceSections extends ConsumerWidget {
     final knowledge = ref.watch(knowledgeRepositoryProvider);
     final mets = index.metabolitesOf(entityId);
     final parents = index.parentsOf(entityId);
-    final measured = <String>{
-      for (final x in ev.linksFrom(entityId))
-        if (x.relation == LinkRelation.measuredIn) x.toId,
-    }.toList();
-    final screened = <String>{
-      for (final x in ev.linksFrom(entityId))
-        if (x.relation == LinkRelation.screenedBy) x.toId,
-    }.toList();
+    // Namuna / skrining bog‘lanishlari «Tahlil» bo‘limida; bu yerda faqat
+    // bilim zanjiri havolasi uchun.
+    final hasGraph = ev
+        .linksFrom(entityId)
+        .any(
+          (x) =>
+              x.relation == LinkRelation.measuredIn ||
+              x.relation == LinkRelation.screenedBy,
+        );
     String nameOf(String id) =>
         library.byId(id)?.name.resolve(lang) ??
         knowledge.byId(id)?.name.resolve(lang) ??
@@ -656,11 +658,7 @@ class SubstanceProvenanceSections extends ConsumerWidget {
       );
     }
 
-    final hasAny =
-        mets.isNotEmpty ||
-        parents.isNotEmpty ||
-        measured.isNotEmpty ||
-        screened.isNotEmpty;
+    final hasAny = mets.isNotEmpty || parents.isNotEmpty || hasGraph;
     return Column(
       key: Key('substance.p7.$entityId'),
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -672,37 +670,6 @@ class SubstanceProvenanceSections extends ConsumerWidget {
           Text(
             l.metRoleNote,
             style: t.bodySmall?.copyWith(color: c.textSecondary),
-          ),
-        ],
-        if (measured.isNotEmpty) ...[
-          FeSectionHeader(l.detailMeasuredIn),
-          Wrap(
-            spacing: FeSpace.xs,
-            runSpacing: FeSpace.xxs,
-            children: [
-              for (final s in measured)
-                ActionChip(
-                  key: Key('measured.$entityId.$s'),
-                  avatar: const Icon(Icons.water_drop_outlined, size: 18),
-                  label: Text(nameOf(s)),
-                  onPressed: () => context.push(Routes.specimen(s)),
-                ),
-            ],
-          ),
-        ],
-        if (screened.isNotEmpty) ...[
-          FeSectionHeader(l.detailScreenedBy),
-          Wrap(
-            spacing: FeSpace.xs,
-            runSpacing: FeSpace.xxs,
-            children: [
-              for (final s in screened)
-                ActionChip(
-                  key: Key('screened.$entityId.$s'),
-                  label: Text(nameOf(s)),
-                  onPressed: () => context.push(Routes.knowledgeEntry(s)),
-                ),
-            ],
           ),
         ],
         if (hasAny)
