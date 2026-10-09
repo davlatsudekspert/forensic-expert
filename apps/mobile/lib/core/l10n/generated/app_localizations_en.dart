@@ -5813,7 +5813,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get studyIntro =>
-      'Every card and question is built from a record that already exists in the app, together with its source. Nothing new is written. Material that is still under expert review is labelled.';
+      'Every card and question is built from a record or guideline that already exists in the app, together with its source. Guideline questions are written by the editors from the card\'s facts. Material that is still under expert review is labelled.';
 
   @override
   String get studySectionTopics => 'Topics by discipline';
@@ -5950,7 +5950,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get studyQuizNote =>
-      'Wrong options are other records of the same type from the app; nothing is invented.';
+      'Wrong options are other records of the same type from the app or, for guideline questions, options set by the editors on the card; every question shows its source.';
 
   @override
   String studyQuizQuestionOf(int current, int total) {
@@ -6848,4 +6848,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String rdGuidelineMeta(int sections, String refs) {
     return '$sections sections · $refs';
   }
+
+  @override
+  String guidelineAuthorPermissionFree(
+    String author,
+    String title,
+    String year,
+  ) {
+    return 'Source: $author et al., «$title», $year — used with the author\'s permission, free for everyone.';
+  }
+
+  @override
+  String get studyFrontGuidelineQuiz => 'Recall the answer, then flip the card';
 }

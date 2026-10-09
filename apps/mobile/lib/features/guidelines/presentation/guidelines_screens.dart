@@ -298,6 +298,21 @@ class _GuidelineDetailScreenState extends ConsumerState<GuidelineDetailScreen> {
                     icon: Icons.menu_book_outlined,
                     text: l.guidelineIndependentNote,
                   ),
+                  if (card.sourceAccess case final a?
+                      when a.isFree && a.byAuthorPermission)
+                    if (bundle.references[a.sourceKey] case final r?) ...[
+                      const SizedBox(height: FeSpace.xs),
+                      FeBanner(
+                        key: const Key('guideline.authorPermissionFree'),
+                        icon: Icons.volunteer_activism_outlined,
+                        tone: FeBannerTone.review,
+                        text: l.guidelineAuthorPermissionFree(
+                          r.firstAuthor,
+                          r.title ?? '',
+                          r.year ?? '',
+                        ),
+                      ),
+                    ],
                   if (title.isFallback) ...[
                     const SizedBox(height: FeSpace.xs),
                     FeBanner(

@@ -5808,7 +5808,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get studyIntro =>
-      'Har bir kartochka va savol ilovada mavjud yozuvdan, uning manbasi bilan birga tuziladi. Yangi matn yozilmaydi. Hali ekspert tekshiruvidan o‘tmagan material belgilab qo‘yilgan.';
+      'Har bir kartochka va savol ilovada mavjud yozuv yoki yo‘riqnomadan, uning manbasi bilan birga tuziladi. Yo‘riqnoma savollarini tahririyat karta faktlari asosida yozgan. Hali ekspert tekshiruvidan o‘tmagan material belgilab qo‘yilgan.';
 
   @override
   String get studySectionTopics => 'Fanlar bo‘yicha mavzular';
@@ -5942,7 +5942,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get studyQuizNote =>
-      'Noto‘g‘ri variantlar — ilovadagi shu turdagi boshqa yozuvlar; hech narsa to‘qib chiqarilmagan.';
+      'Noto‘g‘ri variantlar — ilovadagi shu turdagi boshqa yozuvlar yoki yo‘riqnoma savollarida tahririyat kartada belgilagan variantlar; har bir savolning manbasi ko‘rsatiladi.';
 
   @override
   String studyQuizQuestionOf(int current, int total) {
@@ -6829,4 +6829,17 @@ class AppLocalizationsUz extends AppLocalizations {
   String rdGuidelineMeta(int sections, String refs) {
     return '$sections bo‘lim · $refs';
   }
+
+  @override
+  String guidelineAuthorPermissionFree(
+    String author,
+    String title,
+    String year,
+  ) {
+    return 'Manba: $author va boshq., «$title», $year — muallif ruxsati bilan, barcha uchun bepul.';
+  }
+
+  @override
+  String get studyFrontGuidelineQuiz =>
+      'Javobni eslang, so‘ng kartochkani aylantiring';
 }

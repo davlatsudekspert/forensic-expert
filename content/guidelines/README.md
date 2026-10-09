@@ -12,7 +12,8 @@ integratsiyasi `guidelines_v1.json` faylini o‘qiydi.
 | `references.json` | Tekshirilgan bibliografiya (yagona manba) |
 | `build.py` | `guidelines_v1.json` ni yig‘adi (faqat iqtibos keltirilgan manbalar kiritiladi) |
 | `guidelines_v1.json` | **Iste’mol uchun tayyor fayl** (generatsiya qilinadi, qo‘lda tahrirlanmaydi) |
-| `validate.py` | Tekshiruv (G001–G013) |
+| `validate.py` | Tekshiruv (G001–G016) |
+| `REVIEW_GMT.md` | «Giyohvand moddalar tahlili» kartalari: tuzatilgan va olib tashlangan raqamlar (ekspert uchun) |
 
 ```bash
 python3 content/guidelines/build.py && python3 content/guidelines/validate.py
@@ -24,7 +25,7 @@ python3 content/guidelines/build.py && python3 content/guidelines/validate.py
 {
   "schema": "fe-guidelines/1",
   "language_order": ["uz", "ru", "en"],
-  "section_order": ["basis","scope","methods","advantages","limitations","factors","cautions","alternatives"],
+  "section_order": ["basis","scope","methods","reactions","tlc","instrumental","interpretation","advantages","limitations","factors","cautions","alternatives"],
   "cards": [{
     "id": "guideline.chem.ethanol_gc",          // barqaror ID (bookmark/URL)
     "discipline_codes": ["forensic_chemistry"], // taxonomy.dart ForensicDiscipline.code
@@ -42,7 +43,12 @@ python3 content/guidelines/build.py && python3 content/guidelines/validate.py
     }],
     "reference_keys": ["…"],                    // kartochkadagi barcha kalitlar (build.py)
     "keywords": {"uz":[…],"ru":[…],"en":[…]},   // qidiruv uchun sinonimlar
-    "omitted_unverified": ["…"]                 // ataylab kiritilmagan, tekshirilmagan faktlar (EN, ichki)
+    "omitted_unverified": ["…"],                // ataylab kiritilmagan, tekshirilmagan faktlar (EN, ichki)
+    "source_access": {"source_key": "gmt_yuldashev2024", "access": "free",
+                      "basis": "author_permission_2026-10-09"},  // ixtiyoriy (G016)
+    "quiz": [{"id": "…", "question": {…}, "answer": {…},
+              "distractors": [{…}, {…}, {…}],
+              "citations": [{"key": "…", "pages": "23"}]}]     // ixtiyoriy (G014)
   }],
   "references": [{
     "key": "tiscione2011", "type": "journal_article",
@@ -78,3 +84,10 @@ python3 content/guidelines/build.py && python3 content/guidelines/validate.py
   status o‘zgarmaydi (G002). O‘zbek matni — muallif matni, rus va ingliz —
   mashina yordamidagi qoralama tarjima (`DRAFT`).
 - O‘zbek lotin yozuvi: o‘ / g‘ uchun U+2018, tutuq belgisi uchun ’ (U+2019) (G010).
+
+## Qo‘shimcha qoidalar (2026-10-09)
+- `build.py` ilova assetini ham yozadi: `apps/mobile/assets/content/guidelines/guidelines_v1.json`
+  (`omitted_unverified` olib tashlangan, indent=1).
+- Kitob manbasi sahifa bilan keltiriladi: `[gmt_yuldashev2024] (23-b.)`, `(с. 23)`, `(p. 23)` (G015).
+- Muallif ruxsati bilan olingan manbadan tuzilgan kartalar `source_access.access = "free"` (G016);
+  ilova atribusiya qatorini ko‘rsatadi. Test savollari (`quiz`) o‘quv rejimiga tushadi (G014).

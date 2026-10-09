@@ -5825,7 +5825,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get studyIntro =>
-      'Каждая карточка и вопрос построены из записи, уже имеющейся в приложении, вместе с её источником. Новый текст не создаётся. Материал, ещё не прошедший экспертную проверку, отмечен.';
+      'Каждая карточка и вопрос построены из записи или руководства, уже имеющихся в приложении, вместе с источником. Вопросы к руководствам составлены редакцией по фактам карточки. Материал, ещё не прошедший экспертную проверку, отмечен.';
 
   @override
   String get studySectionTopics => 'Темы по дисциплинам';
@@ -5964,7 +5964,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get studyQuizNote =>
-      'Неверные варианты — другие записи того же типа из приложения; ничего не придумано.';
+      'Неверные варианты — другие записи того же типа из приложения или, для вопросов к руководствам, варианты, заданные редакцией в карточке; у каждого вопроса указан источник.';
 
   @override
   String studyQuizQuestionOf(int current, int total) {
@@ -6876,4 +6876,17 @@ class AppLocalizationsRu extends AppLocalizations {
   String rdGuidelineMeta(int sections, String refs) {
     return 'Разделов: $sections · $refs';
   }
+
+  @override
+  String guidelineAuthorPermissionFree(
+    String author,
+    String title,
+    String year,
+  ) {
+    return 'Источник: $author и др., «$title», $year — с разрешения автора, бесплатно для всех.';
+  }
+
+  @override
+  String get studyFrontGuidelineQuiz =>
+      'Вспомните ответ, затем переверните карточку';
 }

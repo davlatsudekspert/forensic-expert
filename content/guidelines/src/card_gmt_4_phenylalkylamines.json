@@ -1,0 +1,160 @@
+{
+  "id": "guideline.chem.gmt_phenylalkylamines",
+  "discipline_codes": ["forensic_chemistry", "forensic_toxicology"],
+  "status": "NEEDS_REVIEW",
+  "updated": "2026-10-09",
+  "translation_status": {"uz": "AUTHORED", "ru": "DRAFT", "en": "DRAFT"},
+  "related_tool_ids": [],
+  "source_access": {"source_key": "gmt_yuldashev2024", "access": "free", "basis": "author_permission_2026-10-09"},
+  "title": {
+    "uz": "Fenilalkilaminlar: amfetamin, metamfetamin, MDMA, efedrin va efedron",
+    "ru": "Фенилалкиламины: амфетамин, метамфетамин, МДМА, эфедрин и эфедрон",
+    "en": "Phenylalkylamines: amphetamine, methamphetamine, MDMA, ephedrine and methcathinone"
+  },
+  "summary": {
+    "uz": "Fenilalkilaminlar — amfetamin hosilalari va tabiiy analoglari (efedrin, katinon, meskalin). Markis reaktivi guruhlarni farqlashga yordam beradi (amfetamin/metamfetamin — zarg‘aldoqdan jigarranggacha, MDA/MDMA — qora), Saymon testi ikkilamchi aminlarni ko‘rsatadi. Tasdiqlash GX-MS bilan: amfetamin uchun asosiy cho‘qqi m/z 44, MDMA uchun m/z 58. Uchuvchan asoslarni bug‘latishdan oldin kislota qo‘shib tuzga aylantirish kerak.",
+    "ru": "Фенилалкиламины — производные амфетамина и их природные аналоги (эфедрин, катинон, мескалин). Реактив Марки помогает различать группы (амфетамин/метамфетамин — от оранжевой до коричневой, МДА/МДМА — чёрная), тест Саймона выявляет вторичные амины. Подтверждение — ГХ-МС: основной пик амфетамина m/z 44, МДМА — m/z 58. Летучие основания перед упариванием переводят в соли добавлением кислоты.",
+    "en": "Phenylalkylamines are amphetamine derivatives and their natural analogues (ephedrine, cathinone, mescaline). Marquis reagent helps to separate groups (amphetamine/methamphetamine orange to brown, MDA/MDMA black) and the Simon test flags secondary amines. Confirmation is by GC-MS: base peak m/z 44 for amphetamine and m/z 58 for MDMA. Volatile bases are converted to salts with acid before evaporation."
+  },
+  "sections": [
+    {
+      "key": "basis",
+      "title": {"uz": "Tasnif va kimyoviy asos", "ru": "Классификация и химическая основа", "en": "Classification and chemistry"},
+      "body": {
+        "uz": "Darslik fenilalkilaminlarni uch sinfga ajratadi: amino guruh vodorodi almashganlar, alkil zanjiri vodorodi almashganlar va benzol halqasi vodorodi almashganlar. Halqa almashganlarga monometoksi (PMA, PMMA), dimetoksi (DOM, DOET, DOB), metilendioksi (MDA, MDMA, MBDB, BDB) va trimetoksi (TMA, meskalin) hosilalari kiradi [gmt_yuldashev2024] (72–73-b.).\n\nTabiiy manbalar: efedra (efedrin, psevdoefedrin), kata (Catha edulis — katinon va katin) va peyot kaktusi (meskalin) [gmt_yuldashev2024] (73–78-b.). Efedron (metkatinon) efedrinni kaliy permanganat va sirka kislota bilan oksidlab olinadi [gmt_yuldashev2024] (76-b.); metamfetamin efedrindan qizil fosfor va yodid kislota bilan qaytarib olinadi [gmt_yuldashev2024] (82-b.).\n\nAmfetamin asosi — uchuvchan moysimon suyuqlik [gmt_yuldashev2024] (81-b.).",
+        "ru": "Пособие делит фенилалкиламины на три класса: замещённые по аминогруппе, по алкильной цепи и по бензольному кольцу. К кольцезамещённым относятся монометокси- (PMA, PMMA), диметокси- (DOM, DOET, DOB), метилендиокси- (МДА, МДМА, MBDB, BDB) и триметоксипроизводные (TMA, мескалин) [gmt_yuldashev2024] (с. 72–73).\n\nПриродные источники: эфедра (эфедрин, псевдоэфедрин), кат (Catha edulis — катинон и катин) и кактус пейот (мескалин) [gmt_yuldashev2024] (с. 73–78). Эфедрон (меткатинон) получают окислением эфедрина перманганатом калия и уксусной кислотой [gmt_yuldashev2024] (с. 76); метамфетамин — восстановлением эфедрина красным фосфором и иодоводородной кислотой [gmt_yuldashev2024] (с. 82).\n\nОснование амфетамина — летучая маслянистая жидкость [gmt_yuldashev2024] (с. 81).",
+        "en": "The textbook divides phenylalkylamines into three classes: substituted at the amino group, on the alkyl chain, or on the benzene ring. Ring-substituted compounds include monomethoxy (PMA, PMMA), dimethoxy (DOM, DOET, DOB), methylenedioxy (MDA, MDMA, MBDB, BDB) and trimethoxy (TMA, mescaline) derivatives [gmt_yuldashev2024] (pp. 72–73).\n\nNatural sources: Ephedra (ephedrine, pseudoephedrine), khat (Catha edulis — cathinone and cathine) and the peyote cactus (mescaline) [gmt_yuldashev2024] (pp. 73–78). Methcathinone (ephedrone) is made by oxidising ephedrine with potassium permanganate and acetic acid [gmt_yuldashev2024] (p. 76); methamphetamine by reducing ephedrine with red phosphorus and hydriodic acid [gmt_yuldashev2024] (p. 82).\n\nAmphetamine base is a volatile oily liquid [gmt_yuldashev2024] (p. 81)."
+      },
+      "citations": ["gmt_yuldashev2024"]
+    },
+    {
+      "key": "scope",
+      "title": {"uz": "Ob’ektlar va ajratib olish", "ru": "Объекты и изолирование", "en": "Objects and isolation"},
+      "body": {
+        "uz": "• «Ekstazi» tabletkalarida faol moddadan tashqari kofein, aspirin, paratsetamol, efedrin, xinin, lidokain kabi moddalar uchraydi [gmt_yuldashev2024] (85-b.).\n• Efedrin va efedron peshob bilan chiqariladi, shuning uchun asosiy ob’ekt — siydik [gmt_yuldashev2024] (75-b.).\n• Biologik ob’ektdan nordonlashtirilgan suv yoki spirt bilan ajratilib, pH 9–12 da xloroform bilan ekstraksiya qilinadi; qon yoki siydik pH 10–11 da xloroform–n-butanol (9:1) bilan ekstraksiya qilinadi [gmt_yuldashev2024] (78-b.).\n• Bug‘latishdan oldin ekstraktga oz miqdor xlorid kislota qo‘shiladi — uchuvchan asos tuzga aylanadi va yo‘qolmaydi [gmt_yuldashev2024] (79-b.).",
+        "ru": "• В таблетках «экстази» кроме действующего вещества встречаются кофеин, аспирин, парацетамол, эфедрин, хинин, лидокаин и др. [gmt_yuldashev2024] (с. 85).\n• Эфедрин и эфедрон выводятся с мочой, поэтому основной объект — моча [gmt_yuldashev2024] (с. 75).\n• Из биологического объекта изолируют подкисленной водой или спиртом и экстрагируют хлороформом при pH 9–12; кровь или мочу экстрагируют при pH 10–11 смесью хлороформ–н-бутанол (9:1) [gmt_yuldashev2024] (с. 78).\n• Перед упариванием к экстракту добавляют немного соляной кислоты — летучее основание переходит в соль и не теряется [gmt_yuldashev2024] (с. 79).",
+        "en": "• «Ecstasy» tablets contain, besides the active drug, substances such as caffeine, aspirin, paracetamol, ephedrine, quinine and lidocaine [gmt_yuldashev2024] (p. 85).\n• Ephedrine and methcathinone are excreted in urine, so urine is the main specimen [gmt_yuldashev2024] (p. 75).\n• Biological material is isolated with acidified water or ethanol and extracted with chloroform at pH 9–12; blood or urine is extracted at pH 10–11 with chloroform–n-butanol (9:1) [gmt_yuldashev2024] (p. 78).\n• A little hydrochloric acid is added to the extract before evaporation so the volatile base is held as its salt and not lost [gmt_yuldashev2024] (p. 79)."
+      },
+      "citations": ["gmt_yuldashev2024"]
+    },
+    {
+      "key": "reactions",
+      "title": {"uz": "Rangli va mikrokristall reaksiyalar", "ru": "Цветные и микрокристаллические реакции", "en": "Colour and microcrystal reactions"},
+      "body": {
+        "uz": "• Markis: amfetamin yoki metamfetamin — zarg‘aldoqdan jigarranggacha; DOET yoki DOM — sariqdan sariq-jigarranggacha; DMA yoki DOB — sariq-yashildan yashilgacha; MDA, MDMA, MDE — qora [gmt_unodc_rapid_tests] (45-b.). Darslik jadvalida meskalin — zarg‘aldoq [gmt_yuldashev2024] (85-b.).\n• Konsentrlangan sulfat kislota: amfetamin va metamfetamin rang bermaydi, boshqa ko‘p hosilalar turli rang beradi — farqlash uchun foydali [gmt_unodc_rapid_tests] (45–46-b.).\n• Saymon testi: ko‘k rang metamfetamin va boshqa N-almashgan hosilalar (MDMA, MDE va b.) bo‘lishi mumkinligini ko‘rsatadi [gmt_unodc_rapid_tests] (46-b.).\n• Ningidrin: fenilalkilaminlar binafsha rang beradi [gmt_yuldashev2024] (79-b.).\n• Efedrin: mis(II) sulfat + ammiak + uglerod sulfid — benzol qatlami sariq yoki qo‘ng‘ir (ditiokarbamat hosil bo‘ladi); efedron ham shunday reaksiya beradi [gmt_yuldashev2024] (75, 77-b.). Dragendorf bilan to‘q qizil ninasimon, Reyneke tuzi bilan pushti-qizg‘ish kristallar [gmt_yuldashev2024] (75–76-b.).",
+        "ru": "• Марки: амфетамин или метамфетамин — от оранжевой до коричневой; DOET или DOM — от жёлтой до жёлто-коричневой; DMA или DOB — от жёлто-зелёной до зелёной; МДА, МДМА, MDE — чёрная [gmt_unodc_rapid_tests] (с. 45). В таблице пособия мескалин — оранжевая [gmt_yuldashev2024] (с. 85).\n• Концентрированная серная кислота: амфетамин и метамфетамин не окрашиваются, многие другие производные дают различные окраски — полезно для различения [gmt_unodc_rapid_tests] (с. 45–46).\n• Тест Саймона: синяя окраска указывает на возможное присутствие метамфетамина и других N-замещённых производных (МДМА, MDE и др.) [gmt_unodc_rapid_tests] (с. 46).\n• Нингидрин: фенилалкиламины дают фиолетовую окраску [gmt_yuldashev2024] (с. 79).\n• Эфедрин: сульфат меди(II) + аммиак + сероуглерод — бензольный слой жёлтый или коричневый (образуется дитиокарбамат); эфедрон реагирует так же [gmt_yuldashev2024] (с. 75, 77). С Драгендорфом — тёмно-красные игольчатые, с солью Рейнеке — розово-красноватые кристаллы [gmt_yuldashev2024] (с. 75–76).",
+        "en": "• Marquis: amphetamine or methamphetamine — orange changing to brown; DOET or DOM — yellow to yellow-brown; DMA or DOB — yellow-green to green; MDA, MDMA, MDE — black [gmt_unodc_rapid_tests] (p. 45). In the textbook table mescaline gives orange [gmt_yuldashev2024] (p. 85).\n• Concentrated sulfuric acid: amphetamine and methamphetamine give no colour, many other derivatives give various colours — useful for differentiation [gmt_unodc_rapid_tests] (pp. 45–46).\n• Simon test: a blue colour indicates possible methamphetamine and other N-substituted derivatives (MDMA, MDE and others) [gmt_unodc_rapid_tests] (p. 46).\n• Ninhydrin: phenylalkylamines give a violet colour [gmt_yuldashev2024] (p. 79).\n• Ephedrine: copper(II) sulfate + ammonia + carbon disulfide — the benzene layer turns yellow or brown (a dithiocarbamate forms); methcathinone reacts likewise [gmt_yuldashev2024] (pp. 75, 77). Dragendorff gives dark red needles and Reinecke salt pinkish-red crystals [gmt_yuldashev2024] (pp. 75–76)."
+      },
+      "citations": ["gmt_unodc_rapid_tests", "gmt_yuldashev2024"]
+    },
+    {
+      "key": "tlc",
+      "title": {"uz": "YuQX", "ru": "ТСХ", "en": "TLC"},
+      "body": {
+        "uz": "Efedrin va efedron silikagelda xloroform–aseton tizimida ajratiladi va ningidrinning atsetondagi eritmasi bilan ochiladi; efedron efedrindan yuqoriroq ko‘tariladi [gmt_yuldashev2024] (76–77-b.). Halqa almashgan hosilalar uchun dog‘lar Markis va ningidrin bilan ketma-ket ochiladi; ranglar Markis testidagi natijalarga o‘xshaydi [gmt_yuldashev2024] (86-b.).",
+        "ru": "Эфедрин и эфедрон разделяют на силикагеле в системе хлороформ–ацетон и проявляют раствором нингидрина в ацетоне; эфедрон поднимается выше эфедрина [gmt_yuldashev2024] (с. 76–77). Для кольцезамещённых производных пятна последовательно проявляют реактивом Марки и нингидрином; окраски сходны с результатами теста Марки [gmt_yuldashev2024] (с. 86).",
+        "en": "Ephedrine and methcathinone are separated on silica in chloroform–acetone and revealed with ninhydrin in acetone; methcathinone runs higher than ephedrine [gmt_yuldashev2024] (pp. 76–77). For ring-substituted derivatives the spots are revealed successively with Marquis and ninhydrin; the colours resemble the Marquis spot-test results [gmt_yuldashev2024] (p. 86)."
+      },
+      "citations": ["gmt_yuldashev2024"]
+    },
+    {
+      "key": "instrumental",
+      "title": {"uz": "Instrumental tasdiqlash", "ru": "Инструментальное подтверждение", "en": "Instrumental confirmation"},
+      "body": {
+        "uz": "• UB-spektr (0,1 M HCl): amfetamin, metamfetamin, efedrin — 251, 257, 263 nm dagi kuchsiz fenil polosalari; MDA va MDMA — taxminan 235 va 286 nm [gmt_yuldashev2024] (86-b.). UB-spektr guruhni ko‘rsatadi, lekin bir guruh ichidagi moddalarni farqlamaydi.\n• EI mass-spektr (NIST yozuvlari): amfetamin — asosiy cho‘qqi m/z 44 (keyin 91); MDMA — m/z 58 (135, 77) [gmt_pubchem_2026]. Darslikda efedrin va efedron uchun ham asosiy cho‘qqi m/z 58 ko‘rsatilgan [gmt_yuldashev2024] (76–77-b.).\n• Kichik amin fragmentlari ko‘p analoglarda umumiy, shuning uchun identifikatsiya ushlanish vaqti va standart bilan birga baholanadi [maurer2004, swgdrug2024].",
+        "ru": "• УФ-спектр (0,1 М HCl): амфетамин, метамфетамин, эфедрин — слабые фенильные полосы при 251, 257, 263 нм; МДА и МДМА — около 235 и 286 нм [gmt_yuldashev2024] (с. 86). УФ-спектр указывает на группу, но не различает вещества внутри неё.\n• Масс-спектр ЭИ (записи NIST): амфетамин — основной пик m/z 44 (далее 91); МДМА — m/z 58 (135, 77) [gmt_pubchem_2026]. В пособии для эфедрина и эфедрона основной пик также m/z 58 [gmt_yuldashev2024] (с. 76–77).\n• Малые аминные фрагменты общие для многих аналогов, поэтому идентификацию оценивают вместе со временем удерживания и стандартом [maurer2004, swgdrug2024].",
+        "en": "• UV spectrum (0.1 M HCl): amphetamine, methamphetamine, ephedrine — weak phenyl bands at 251, 257, 263 nm; MDA and MDMA — about 235 and 286 nm [gmt_yuldashev2024] (p. 86). UV indicates the group but does not distinguish members within it.\n• EI mass spectra (NIST records): amphetamine — base peak m/z 44 (then 91); MDMA — m/z 58 (135, 77) [gmt_pubchem_2026]. The textbook also gives m/z 58 as the base peak for ephedrine and methcathinone [gmt_yuldashev2024] (pp. 76–77).\n• Small amine fragments are shared by many analogues, so identification is judged together with retention time and a reference standard [maurer2004, swgdrug2024]."
+      },
+      "citations": ["gmt_yuldashev2024", "gmt_pubchem_2026", "maurer2004", "swgdrug2024"]
+    },
+    {
+      "key": "limitations",
+      "title": {"uz": "Cheklovlar", "ru": "Ограничения", "en": "Limitations"},
+      "body": {
+        "uz": "• Markis va Saymon natijalari faqat taxminiy; o‘xshash ranglarni boshqa nazoratdagi va nazoratdagi bo‘lmagan moddalar ham beradi [gmt_unodc_rapid_tests] (45–46-b.).\n• Amfetamin guruhi immunotahlillari ko‘p o‘zaro reaksiyalarga ega [saitman2014].\n• Tabletka tarkibidagi qo‘shimchalar rangli test va UB-spektrni buzishi mumkin [gmt_yuldashev2024] (85-b.).",
+        "ru": "• Результаты Марки и Саймона только предварительные; сходную окраску дают другие контролируемые и неконтролируемые вещества [gmt_unodc_rapid_tests] (с. 45–46).\n• Иммуноанализы на амфетамины имеют много перекрёстных реакций [saitman2014].\n• Компоненты таблеток могут искажать цветные тесты и УФ-спектр [gmt_yuldashev2024] (с. 85).",
+        "en": "• Marquis and Simon results are presumptive only; other controlled and non-controlled substances give similar colours [gmt_unodc_rapid_tests] (pp. 45–46).\n• Amphetamine-class immunoassays have many cross-reactivities [saitman2014].\n• Tablet excipients and additives may distort colour tests and UV spectra [gmt_yuldashev2024] (p. 85)."
+      },
+      "citations": ["gmt_unodc_rapid_tests", "saitman2014", "gmt_yuldashev2024"]
+    },
+    {
+      "key": "cautions",
+      "title": {"uz": "Manbadan olinmagan ma’lumotlar", "ru": "Что не взято из источника", "en": "What was not taken from the source"},
+      "body": {
+        "uz": "Darslikdagi dozalar, o‘lim dozalari va ta’sir kuchi nisbatlari (masalan, DOM, MDA, meskalin uchun) [gmt_yuldashev2024] (78, 83–84-b.) tahlil uchun zarur emas va tekshirilmagan; Rf va Rs jadvali [gmt_yuldashev2024] (86-b.) sharoitga bog‘liq bo‘lgani uchun keltirilmadi.",
+        "ru": "Дозы, смертельные дозы и соотношения активности (например, для DOM, МДА, мескалина) из пособия [gmt_yuldashev2024] (с. 78, 83–84) не нужны для анализа и не проверены; таблица Rf и Rs [gmt_yuldashev2024] (с. 86) зависит от условий и не приводится.",
+        "en": "Doses, lethal doses and potency ratios (for example for DOM, MDA, mescaline) in the textbook [gmt_yuldashev2024] (pp. 78, 83–84) are not needed for analysis and were not verified; the Rf and Rs table [gmt_yuldashev2024] (p. 86) is condition-dependent and not reproduced."
+      },
+      "citations": ["gmt_yuldashev2024"]
+    }
+  ],
+  "keywords": {
+    "uz": ["fenilalkilaminlar", "amfetamin", "metamfetamin", "pervitin", "MDMA", "ekstazi", "MDA", "MDE", "DOM", "DOB", "meskalin", "efedrin", "psevdoefedrin", "efedron", "metkatinon", "katinon", "kata", "Saymon testi", "Markis reaktivi", "ningidrin"],
+    "ru": ["фенилалкиламины", "амфетамин", "метамфетамин", "первитин", "МДМА", "экстази", "МДА", "мескалин", "эфедрин", "псевдоэфедрин", "эфедрон", "меткатинон", "катинон", "кат", "тест Саймона", "реактив Марки", "нингидрин"],
+    "en": ["phenylalkylamines", "amphetamine", "methamphetamine", "MDMA", "ecstasy", "MDA", "MDE", "DOM", "DOB", "mescaline", "ephedrine", "pseudoephedrine", "methcathinone", "ephedrone", "cathinone", "khat", "Simon test", "Marquis reagent", "ninhydrin"]
+  },
+  "omitted_unverified": [
+    "Doses and potency comparisons (DOM vs mescaline/LSD, MDA lethal dose) pp. 78, 83-84: not verified.",
+    "Rf/Rs table (p. 86) and TLC system chloroform-acetone-ethanol-ammonia 20:3:1:20 (p. 79, 86): unusual composition, values not reproduced.",
+    "IR wavenumbers for ephedrine/methcathinone (pp. 76-77): not verified.",
+    "Ephedrine/methcathinone minor MS ions (146 etc., p. 76): not verified; only base peak 58 cited from textbook.",
+    "Stereochemistry wording for ephedrine/pseudoephedrine (p. 75): ambiguous, omitted."
+  ],
+  "quiz": [
+    {
+      "id": "gmt.pa.1",
+      "question": {"uz": "Markis reaktivi MDMA bilan qanday rang beradi?", "ru": "Какую окраску даёт реактив Марки с МДМА?", "en": "What colour does Marquis reagent give with MDMA?"},
+      "answer": {"uz": "Qora", "ru": "Чёрную", "en": "Black"},
+      "distractors": [
+        {"uz": "Zarg‘aldoqdan jigarranggacha", "ru": "От оранжевой до коричневой", "en": "Orange to brown"},
+        {"uz": "Sariq-yashildan yashilgacha", "ru": "От жёлто-зелёной до зелёной", "en": "Yellow-green to green"},
+        {"uz": "Rang bermaydi", "ru": "Не окрашивается", "en": "No colour"}
+      ],
+      "citations": [{"key": "gmt_unodc_rapid_tests", "pages": "45"}]
+    },
+    {
+      "id": "gmt.pa.2",
+      "question": {"uz": "Saymon testi qaysi moddalarni ko‘rsatadi?", "ru": "На какие вещества указывает тест Саймона?", "en": "What does the Simon test indicate?"},
+      "answer": {"uz": "Ikkilamchi aminlar: metamfetamin, MDMA va boshqa N-almashganlar", "ru": "Вторичные амины: метамфетамин, МДМА и другие N-замещённые", "en": "Secondary amines: methamphetamine, MDMA and other N-substituted analogues"},
+      "distractors": [
+        {"uz": "Faqat birlamchi aminlar: amfetamin, MDA", "ru": "Только первичные амины: амфетамин, МДА", "en": "Only primary amines: amphetamine, MDA"},
+        {"uz": "Barbituratlar", "ru": "Барбитураты", "en": "Barbiturates"},
+        {"uz": "Kannabinoidlar", "ru": "Каннабиноиды", "en": "Cannabinoids"}
+      ],
+      "citations": [{"key": "gmt_unodc_rapid_tests", "pages": "46"}]
+    },
+    {
+      "id": "gmt.pa.3",
+      "question": {"uz": "Amfetamin ekstraktini bug‘latishdan oldin nima uchun xlorid kislota qo‘shiladi?", "ru": "Зачем перед упариванием к экстракту амфетамина добавляют соляную кислоту?", "en": "Why is hydrochloric acid added to an amphetamine extract before evaporation?"},
+      "answer": {"uz": "Uchuvchan asos tuzga aylanib, yo‘qolmasligi uchun", "ru": "Чтобы летучее основание перешло в соль и не терялось", "en": "To hold the volatile base as its salt so it is not lost"},
+      "distractors": [
+        {"uz": "Rangli reaksiyani kuchaytirish uchun", "ru": "Чтобы усилить цветную реакцию", "en": "To intensify the colour reaction"},
+        {"uz": "Oqsillarni cho‘ktirish uchun", "ru": "Чтобы осадить белки", "en": "To precipitate proteins"},
+        {"uz": "Moddani oksidlash uchun", "ru": "Чтобы окислить вещество", "en": "To oxidise the analyte"}
+      ],
+      "citations": [{"key": "gmt_yuldashev2024", "pages": "79"}]
+    },
+    {
+      "id": "gmt.pa.4",
+      "question": {"uz": "Efedron (metkatinon) efedrindan qanday olinadi?", "ru": "Как получают эфедрон (меткатинон) из эфедрина?", "en": "How is methcathinone (ephedrone) made from ephedrine?"},
+      "answer": {"uz": "Kaliy permanganat bilan oksidlab", "ru": "Окислением перманганатом калия", "en": "By oxidation with potassium permanganate"},
+      "distractors": [
+        {"uz": "Qizil fosfor va yodid kislota bilan qaytarib", "ru": "Восстановлением красным фосфором и HI", "en": "By reduction with red phosphorus and HI"},
+        {"uz": "Sirka angidrid bilan atsetillab", "ru": "Ацетилированием уксусным ангидридом", "en": "By acetylation with acetic anhydride"},
+        {"uz": "Kislotali gidroliz bilan", "ru": "Кислотным гидролизом", "en": "By acid hydrolysis"}
+      ],
+      "citations": [{"key": "gmt_yuldashev2024", "pages": "76"}]
+    },
+    {
+      "id": "gmt.pa.5",
+      "question": {"uz": "Amfetaminning EI mass-spektridagi asosiy cho‘qqi qaysi?", "ru": "Какой основной пик в ЭИ масс-спектре амфетамина?", "en": "What is the base peak in the EI mass spectrum of amphetamine?"},
+      "answer": {"uz": "m/z 44", "ru": "m/z 44", "en": "m/z 44"},
+      "distractors": [
+        {"uz": "m/z 58", "ru": "m/z 58", "en": "m/z 58"},
+        {"uz": "m/z 82", "ru": "m/z 82", "en": "m/z 82"},
+        {"uz": "m/z 135", "ru": "m/z 135", "en": "m/z 135"}
+      ],
+      "citations": [{"key": "gmt_pubchem_2026"}]
+    }
+  ]
+}

@@ -1732,7 +1732,7 @@
   "searchLinkedVia": "{name} bilan bog‘liq (manbada tilga olingan)",
   "studyTitle": "O‘quv rejimi",
   "studyEntrySubtitle": "Faqat ilovadagi manbali yozuvlardan tuzilgan kartochkalar va o‘z-o‘zini tekshirish testi",
-  "studyIntro": "Har bir kartochka va savol ilovada mavjud yozuvdan, uning manbasi bilan birga tuziladi. Yangi matn yozilmaydi. Hali ekspert tekshiruvidan o‘tmagan material belgilab qo‘yilgan.",
+  "studyIntro": "Har bir kartochka va savol ilovada mavjud yozuv yoki yo‘riqnomadan, uning manbasi bilan birga tuziladi. Yo‘riqnoma savollarini tahririyat karta faktlari asosida yozgan. Hali ekspert tekshiruvidan o‘tmagan material belgilab qo‘yilgan.",
   "studySectionTopics": "Fanlar bo‘yicha mavzular",
   "studySectionSubstances": "Moddalar: molekulyar formulalar",
   "studySectionGuidelines": "Yo‘riqnomalar",
@@ -1766,7 +1766,7 @@
   "studyQuizStemTopic": "Manbadagi bu iqtibos qaysi mavzuga keltirilgan?",
   "studyQuizStemSubstance": "{name} moddasining molekulyar formulasi qanday?",
   "studyQuizStemGuideline": "Bu qisqa mazmun qaysi yo‘riqnomaga tegishli?",
-  "studyQuizNote": "Noto‘g‘ri variantlar — ilovadagi shu turdagi boshqa yozuvlar; hech narsa to‘qib chiqarilmagan.",
+  "studyQuizNote": "Noto‘g‘ri variantlar — ilovadagi shu turdagi boshqa yozuvlar yoki yo‘riqnoma savollarida tahririyat kartada belgilagan variantlar; har bir savolning manbasi ko‘rsatiladi.",
   "studyQuizQuestionOf": "{total} tadan {current}-savol",
   "studyQuizNext": "Keyingi savol",
   "studyQuizFinish": "Natijani ko‘rish",
@@ -2010,5 +2010,7 @@
   "rdGlanceMore": "yana {count} ta",
   "rdGlanceLockedHint": "Quyidagi tafsilotlar Pro’da ochiladi. Nomlar, ogohlantirishlar va manbalar bepul qoladi.",
   "rdJumpTo": "Bo‘limga o‘tish",
-  "rdGuidelineMeta": "{sections} bo‘lim · {refs}"
+  "rdGuidelineMeta": "{sections} bo‘lim · {refs}",
+  "guidelineAuthorPermissionFree": "Manba: {author} va boshq., «{title}», {year} — muallif ruxsati bilan, barcha uchun bepul.",
+  "studyFrontGuidelineQuiz": "Javobni eslang, so‘ng kartochkani aylantiring"
 }

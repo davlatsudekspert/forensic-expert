@@ -1,0 +1,149 @@
+{
+  "id": "guideline.chem.gmt_cannabis",
+  "discipline_codes": ["forensic_chemistry", "forensic_toxicology"],
+  "status": "NEEDS_REVIEW",
+  "updated": "2026-10-09",
+  "translation_status": {"uz": "AUTHORED", "ru": "DRAFT", "en": "DRAFT"},
+  "related_tool_ids": [],
+  "source_access": {"source_key": "gmt_yuldashev2024", "access": "free", "basis": "author_permission_2026-10-09"},
+  "title": {
+    "uz": "Kannabis (nasha) mahsulotlari va kannabinoidlar tahlili",
+    "ru": "Анализ продуктов каннабиса и каннабиноидов",
+    "en": "Cannabis products and cannabinoid analysis"
+  },
+  "summary": {
+    "uz": "Nasha mahsulotlari (o‘simlik qismi — marixuana, smola — gashish, gashish moyi) avval morfologik ko‘rikdan o‘tkaziladi, so‘ng Fast Blue B, Dyukenua–Levin kabi rangli reaksiyalar, YuQX va GX bilan tekshiriladi. Rangli reaksiyalar nasha uchun xususiy emas; giyohvand xossa faqat tetragidrokannabinol (TGK) aniqlanganda tasdiqlanadi.",
+    "ru": "Продукты каннабиса (растительная часть — марихуана, смола — гашиш, гашишное масло) сначала подвергают морфологическому исследованию, затем — цветным реакциям (прочный синий Б, Дюкенуа–Левин), ТСХ и ГХ. Цветные реакции неспецифичны; наркотические свойства подтверждаются только обнаружением тетрагидроканнабинола (ТГК).",
+    "en": "Cannabis products (herbal material — marijuana, resin — hashish, hash oil) are first examined morphologically, then tested with colour reactions such as Fast Blue B and Duquenois–Levine, TLC and GC. Colour reactions are not specific; drug character is confirmed only when tetrahydrocannabinol (THC) is detected."
+  },
+  "sections": [
+    {
+      "key": "basis",
+      "title": {"uz": "Mahsulotlar va faol moddalar", "ru": "Продукты и действующие вещества", "en": "Products and active substances"},
+      "body": {
+        "uz": "Marixuana o‘simlikning yuqori qismidagi barg, gul va mevalaridan; gashish — ajratib olingan smola; gashish moyi — erituvchi yoki o‘simlik moyi bilan olingan quyuq ekstrakt. Uzoq saqlanganda havo kislorodi va yorug‘lik ta’sirida rangi va holati o‘zgaradi [gmt_yuldashev2024] (61-b.).\n\nNasha tarkibida doimo kannabinol (KBN), kannabidiol (KBD) va tetragidrokannabinol (TGK) uchraydi — fenol guruhli dibenzopiran hosilalari; ulardan faqat TGK giyohvand ta’sirga ega, shuning uchun namunaning giyohvand xossasi TGK ni aniqlash orqali baholanadi [gmt_yuldashev2024] (64-b.).\n\nTGK miqdori o‘simlik qayerda va qanday o‘stirilgani hamda mahsulot qanday tayyorlanganiga bog‘liq [gmt_unodc_rapid_tests] (9-b.).",
+        "ru": "Марихуана состоит из листьев, цветков и плодов верхней части растения; гашиш — отделённая смола; гашишное масло — густой экстракт, полученный растворителем или растительным маслом. При длительном хранении под действием кислорода воздуха и света меняются цвет и консистенция [gmt_yuldashev2024] (с. 61).\n\nВ каннабисе постоянно присутствуют каннабинол (КБН), каннабидиол (КБД) и тетрагидроканнабинол (ТГК) — фенольные производные дибензопирана; наркотическим действием обладает только ТГК, поэтому наркотические свойства образца оценивают по обнаружению ТГК [gmt_yuldashev2024] (с. 64).\n\nСодержание ТГК зависит от того, где и как выращено растение и как приготовлен продукт [gmt_unodc_rapid_tests] (с. 9).",
+        "en": "Marijuana consists of leaves, flowers and fruits of the upper plant; hashish is the separated resin; hash oil is a thick extract obtained with a solvent or vegetable oil. On long storage, air oxygen and light change colour and consistency [gmt_yuldashev2024] (p. 61).\n\nCannabinol (CBN), cannabidiol (CBD) and tetrahydrocannabinol (THC) — phenolic dibenzopyran derivatives — are always present; only THC is psychoactive, so the drug character of a sample is judged by detecting THC [gmt_yuldashev2024] (p. 64).\n\nThe THC content depends on where and how the plant is grown and how the product is prepared [gmt_unodc_rapid_tests] (p. 9)."
+      },
+      "citations": ["gmt_yuldashev2024", "gmt_unodc_rapid_tests"]
+    },
+    {
+      "key": "scope",
+      "title": {"uz": "Ob’ektlar: ashyo va shaxsdan olingan namunalar", "ru": "Объекты: вещественные доказательства и образцы от лица", "en": "Objects: seized material and samples from a person"},
+      "body": {
+        "uz": "• Ashyoviy dalil avval morfologik tekshiriladi, so‘ng kannabinoidlar kimyoviy reaksiyalar bilan aniqlanadi [gmt_yuldashev2024] (61–62-b.). SWGDRUG tasnifida makroskopik va mikroskopik ko‘rik faqat kannabis uchun B toifali usul sifatida keltiriladi [swgdrug2024].\n• Nasha chekkanlikka gumon qilinganda qo‘l va barmoqlardan spirtli tampon, so‘lak va og‘iz chayindisi olinadi; har biri alohida idishda yuboriladi [gmt_yuldashev2024] (69-b.).\n• Faqat qo‘ldan olingan tamponda kannabinoidlar topilishi chekkanlik haqida xulosa uchun yetarli emas; so‘lak va og‘iz chayindisida TGK aniqlansa, xulosa asoslanadi [gmt_yuldashev2024] (69–70-b.).\n• Siydikdagi kannabinoid immunotahlili o‘zaro reaksiyalar beradi va tasdiqlanishi kerak [saitman2014].",
+        "ru": "• Вещественное доказательство сначала исследуют морфологически, затем каннабиноиды выявляют химическими реакциями [gmt_yuldashev2024] (с. 61–62). В классификации SWGDRUG макро- и микроскопическое исследование указано как метод категории B только для каннабиса [swgdrug2024].\n• При подозрении на курение каннабиса берут спиртовые смывы с рук и пальцев, слюну и смыв полости рта; каждый объект направляют в отдельной таре [gmt_yuldashev2024] (с. 69).\n• Обнаружение каннабиноидов только в смывах с рук недостаточно для вывода о курении; вывод обоснован, если ТГК найден в слюне и смыве полости рта [gmt_yuldashev2024] (с. 69–70).\n• Иммуноанализ каннабиноидов в моче даёт перекрёстные реакции и требует подтверждения [saitman2014].",
+        "en": "• Seized material is first examined morphologically, then cannabinoids are detected by chemical reactions [gmt_yuldashev2024] (pp. 61–62). In the SWGDRUG scheme macroscopic and microscopic examination counts as a Category B technique for cannabis only [swgdrug2024].\n• When cannabis smoking is suspected, alcohol swabs of the hands and fingers, saliva and a mouth rinse are taken, each in a separate container [gmt_yuldashev2024] (p. 69).\n• Cannabinoids found only on hand swabs are not enough to conclude smoking; the conclusion is supported when THC is found in saliva and mouth rinse [gmt_yuldashev2024] (pp. 69–70).\n• Urine cannabinoid immunoassays show cross-reactivity and need confirmation [saitman2014]."
+      },
+      "citations": ["gmt_yuldashev2024", "swgdrug2024", "saitman2014"]
+    },
+    {
+      "key": "reactions",
+      "title": {"uz": "Rangli reaksiyalar", "ru": "Цветные реакции", "en": "Colour reactions"},
+      "body": {
+        "uz": "• Fast Blue B tuzi (mustahkam ko‘k B): pastki (xloroform) qatlamning binafsha-qizil rangi nasha bo‘lishi mumkinligini ko‘rsatadi; boshqa o‘simliklardan juda kami shunday reaksiya beradi [gmt_unodc_rapid_tests] (41-b.).\n• Dyukenua–Levin testi (vanilin–atsetaldegid, so‘ng xlorid kislota, so‘ng xloroform): xloroform qatlamining binafsha rangi nasha bo‘lishi mumkinligini bildiradi [gmt_unodc_rapid_tests] (41–42-b.).\n• Darslikda spirtli ekstrakt filtr qog‘ozga tomizilib, Pauli reaktivi (diazotirlangan sulfanil kislota) yoki Fast Blue B purkaladi; kannabinoidlar bo‘lsa avval qizil-pushti, keyin ko‘kish va to‘q pushti rang paydo bo‘ladi [gmt_yuldashev2024] (65-b.).",
+        "ru": "• Соль прочного синего Б: пурпурно-красная окраска нижнего (хлороформного) слоя указывает на возможное присутствие каннабиса; сходную реакцию даёт очень мало других растений [gmt_unodc_rapid_tests] (с. 41).\n• Тест Дюкенуа–Левина (ванилин–ацетальдегид, затем соляная кислота, затем хлороформ): фиолетовая окраска хлороформного слоя указывает на возможное присутствие каннабиса [gmt_unodc_rapid_tests] (с. 41–42).\n• В пособии спиртовой экстракт наносят на фильтровальную бумагу и опрыскивают реактивом Паули (диазотированная сульфаниловая кислота) или прочным синим Б; при наличии каннабиноидов появляется сначала красно-розовая, затем синеватая и тёмно-розовая окраска [gmt_yuldashev2024] (с. 65).",
+        "en": "• Fast Blue B salt: a purple-red lower (chloroform) layer indicates possible cannabis; very few other plants react similarly [gmt_unodc_rapid_tests] (p. 41).\n• Duquenois–Levine test (vanillin–acetaldehyde, then hydrochloric acid, then chloroform): a violet chloroform layer indicates possible cannabis [gmt_unodc_rapid_tests] (pp. 41–42).\n• In the textbook the ethanolic extract is spotted on filter paper and sprayed with Pauly reagent (diazotised sulfanilic acid) or Fast Blue B; cannabinoids give first a red-pink, then bluish and deep pink colour [gmt_yuldashev2024] (p. 65)."
+      },
+      "citations": ["gmt_unodc_rapid_tests", "gmt_yuldashev2024"]
+    },
+    {
+      "key": "tlc",
+      "title": {"uz": "Qog‘oz va yupqa qatlamli xromatografiya", "ru": "Бумажная и тонкослойная хроматография", "en": "Paper and thin-layer chromatography"},
+      "body": {
+        "uz": "Rangli reaksiya ijobiy bo‘lsa, TGK bor-yo‘qligi xromatografiya bilan hal qilinadi [gmt_yuldashev2024] (66-b.). Kannabinoidlarni alohida standart sifatida saqlash qiyin bo‘lgani uchun «guvoh» sifatida faol nashaning spirtli ekstrakti ishlatiladi [gmt_yuldashev2024] (66-b.).\n\nQog‘oz xromatografiyasida dimetilformamid shimdirilgan qog‘oz va siklogeksan harakatchan faza sifatida ishlatiladi; YuQX da dimetilformamid bilan shimdirilgan silikagel plastinka siklogeksanda ikki marta ishlab chiqiladi. Fast Blue B yoki Pauli reaktivi bilan ochilganda Rf ortib borish tartibi: kannabidiol < kannabinol < TGK, ranglari ham farq qiladi [gmt_yuldashev2024] (66–68-b.).\n\nOddiy silikagelda ayrim TGK izomerlari va KBD ajralmasligi mumkin; kumush nitrat shimdirilgan plastinka ularni ajratadi — selektivlik sorbentga bog‘liq [tsujikawa2022].",
+        "ru": "При положительной цветной реакции наличие ТГК устанавливают хроматографически [gmt_yuldashev2024] (с. 66). Поскольку каннабиноиды трудно хранить как отдельные стандарты, «свидетелем» служит спиртовой экстракт активного каннабиса [gmt_yuldashev2024] (с. 66).\n\nВ бумажной хроматографии бумагу пропитывают диметилформамидом, подвижная фаза — циклогексан; в ТСХ пластинку силикагеля, пропитанную диметилформамидом, дважды хроматографируют в циклогексане. После проявления прочным синим Б или реактивом Паули Rf возрастает в порядке каннабидиол < каннабинол < ТГК; различаются и окраски [gmt_yuldashev2024] (с. 66–68).\n\nНа обычном силикагеле некоторые изомеры ТГК и КБД могут не разделяться; пластинка, пропитанная нитратом серебра, их разделяет — селективность определяется сорбентом [tsujikawa2022].",
+        "en": "If a colour reaction is positive, the presence of THC is settled by chromatography [gmt_yuldashev2024] (p. 66). Because individual cannabinoids are hard to keep as standards, an ethanolic extract of active cannabis serves as the reference [gmt_yuldashev2024] (p. 66).\n\nIn paper chromatography the paper is impregnated with dimethylformamide and cyclohexane is the mobile phase; in TLC a silica plate impregnated with dimethylformamide is developed twice in cyclohexane. After Fast Blue B or Pauly spray, Rf increases in the order cannabidiol < cannabinol < THC, and the colours differ [gmt_yuldashev2024] (pp. 66–68).\n\nOn plain silica some THC isomers and CBD may not separate; silver nitrate-impregnated plates separate them — selectivity is set by the sorbent [tsujikawa2022]."
+      },
+      "citations": ["gmt_yuldashev2024", "tsujikawa2022"]
+    },
+    {
+      "key": "instrumental",
+      "title": {"uz": "Gaz xromatografiyasi", "ru": "Газовая хроматография", "en": "Gas chromatography"},
+      "body": {
+        "uz": "Darslikda metilsilikon (SE-30) fazali kolonkada alanga-ionizatsion detektor bilan GX tavsiya etiladi; elyutsiya tartibi: kannabidiol, TGK, kannabinol. Miqdor harorat dasturlanadigan xromatografda ichki standart usulida aniqlanadi [gmt_yuldashev2024] (68-b.).\n\nTuzilma ma’lumoti uchun GX-MS yoki SX-MS qo‘llanadi; SWGDRUG sxemasiga ko‘ra kannabis uchun makroskopik/mikroskopik ko‘rik boshqa usullar bilan birgalikda baholanadi [swgdrug2024].",
+        "ru": "В пособии рекомендована ГХ на колонке с метилсиликоновой фазой (SE-30) с пламенно-ионизационным детектором; порядок элюирования: каннабидиол, ТГК, каннабинол. Количество определяют на хроматографе с программированием температуры методом внутреннего стандарта [gmt_yuldashev2024] (с. 68).\n\nДля структурной информации применяют ГХ-МС или ЖХ-МС; по схеме SWGDRUG макро- и микроскопическое исследование каннабиса оценивают в совокупности с другими методами [swgdrug2024].",
+        "en": "The textbook recommends GC on a methylsilicone (SE-30) column with flame-ionisation detection; elution order: cannabidiol, THC, cannabinol. Quantitation uses temperature programming and an internal standard [gmt_yuldashev2024] (p. 68).\n\nFor structural information GC-MS or LC-MS is used; in the SWGDRUG scheme macroscopic/microscopic examination of cannabis is evaluated together with other techniques [swgdrug2024]."
+      },
+      "citations": ["gmt_yuldashev2024", "swgdrug2024"]
+    },
+    {
+      "key": "limitations",
+      "title": {"uz": "Cheklovlar", "ru": "Ограничения", "en": "Limitations"},
+      "body": {
+        "uz": "• Rangli reaksiyalar nasha uchun xususiy emas: ularni TGK saqlamaydigan nasha o‘simliklari va boshqa kannabinoidlar ham beradi [gmt_yuldashev2024] (66-b.).\n• Reaksiya salbiy bo‘lsa, darslikka ko‘ra namuna nasha saqlamaydi deb hisoblanadi [gmt_yuldashev2024] (66-b.); biroq SWGDRUG ga ko‘ra salbiy yoki noaniq natija identifikatsiyaga hissa qo‘shmaydi [swgdrug2024].\n• TGK aniqlanmasdan namuna nasha deb xulosa qilinmaydi [gmt_yuldashev2024] (69-b.).",
+        "ru": "• Цветные реакции неспецифичны для каннабиса: их дают и растения каннабиса без ТГК, и другие каннабиноиды [gmt_yuldashev2024] (с. 66).\n• При отрицательной реакции, по пособию, образец считают не содержащим каннабиса [gmt_yuldashev2024] (с. 66); однако по SWGDRUG отрицательный или неопределённый результат не вносит вклад в идентификацию [swgdrug2024].\n• Без обнаружения ТГК вывод о каннабисе не делается [gmt_yuldashev2024] (с. 69).",
+        "en": "• Colour reactions are not specific for cannabis: cannabis plants without THC and other cannabinoids also react [gmt_yuldashev2024] (p. 66).\n• According to the textbook a negative reaction means the sample contains no cannabis [gmt_yuldashev2024] (p. 66); per SWGDRUG, however, negative or inconclusive results do not contribute to identification [swgdrug2024].\n• No conclusion of cannabis is drawn without detecting THC [gmt_yuldashev2024] (p. 69)."
+      },
+      "citations": ["gmt_yuldashev2024", "swgdrug2024"]
+    },
+    {
+      "key": "cautions",
+      "title": {"uz": "Darslikdagi tuzatilgan joylar", "ru": "Исправления по сравнению с пособием", "en": "Corrections to the textbook"},
+      "body": {
+        "uz": "• Darslikda TGK miqdori marixuana uchun 13–15%, gashish uchun 2–10% deb berilgan [gmt_yuldashev2024] (61-b.); bu nisbat teskari ko‘rinadi (smola — o‘simlikdan ajratilgan, odatda konsentrlangan mahsulot). Raqamlar keltirilmaydi: TGK miqdori o‘stirish va tayyorlash usuliga ko‘ra keng o‘zgaradi [gmt_unodc_rapid_tests] (9-b.).\n• Hayvonlarda ingalyatsion farmakologik sinov [gmt_yuldashev2024] (69-b.) zamonaviy identifikatsiya sxemasiga kirmaydi va tavsiya etilmaydi [swgdrug2024].",
+        "ru": "• В пособии содержание ТГК указано: марихуана 13–15%, гашиш 2–10% [gmt_yuldashev2024] (с. 61); соотношение выглядит перепутанным (смола — отделённый от растения, обычно более концентрированный продукт). Числа не приводятся: содержание ТГК сильно зависит от способа выращивания и приготовления [gmt_unodc_rapid_tests] (с. 9).\n• Ингаляционная фармакологическая проба на животных [gmt_yuldashev2024] (с. 69) не входит в современную схему идентификации и не рекомендуется [swgdrug2024].",
+        "en": "• The textbook gives THC contents of 13–15% for marijuana and 2–10% for hashish [gmt_yuldashev2024] (p. 61); this looks swapped (resin is separated from the plant and usually more concentrated). The numbers are not reproduced: THC content varies widely with cultivation and preparation [gmt_unodc_rapid_tests] (p. 9).\n• The inhalation pharmacological test on animals [gmt_yuldashev2024] (p. 69) is not part of modern identification schemes and is not recommended [swgdrug2024]."
+      },
+      "citations": ["gmt_yuldashev2024", "gmt_unodc_rapid_tests", "swgdrug2024"]
+    }
+  ],
+  "keywords": {
+    "uz": ["kannabis", "nasha", "marixuana", "gashish", "gashish moyi", "kannabinoidlar", "TGK", "tetragidrokannabinol", "kannabidiol", "kannabinol", "Fast Blue B", "mustahkam ko‘k B", "Dyukenua–Levin", "Pauli reaktivi", "nashavandlik"],
+    "ru": ["каннабис", "конопля", "марихуана", "гашиш", "гашишное масло", "каннабиноиды", "ТГК", "тетрагидроканнабинол", "каннабидиол", "каннабинол", "прочный синий Б", "Дюкенуа–Левин", "реактив Паули"],
+    "en": ["cannabis", "marijuana", "hashish", "cannabis resin", "hash oil", "cannabinoids", "THC", "tetrahydrocannabinol", "cannabidiol", "cannabinol", "Fast Blue B", "Duquenois-Levine", "Pauly reagent"]
+  },
+  "omitted_unverified": [
+    "THC percentages for marijuana/hashish/hash oil (p. 61): appear swapped; omitted.",
+    "Rf values in paper and TLC tables and GC retention data (pp. 67-68): condition-dependent, only order kept.",
+    "Absorption/excretion percentages (p. 64): not verified.",
+    "Beam-type 'Buke' reagent (H2SO4/ethanol) red-brown result (p. 65): not cross-checked; omitted.",
+    "Reaction sensitivities 1 ug (p. 65): not verified."
+  ],
+  "quiz": [
+    {
+      "id": "gmt.can.1",
+      "question": {"uz": "Nashaning qaysi komponenti giyohvand (psixoaktiv) ta’sirga ega?", "ru": "Какой компонент каннабиса обладает наркотическим (психоактивным) действием?", "en": "Which cannabis component is psychoactive?"},
+      "answer": {"uz": "Tetragidrokannabinol (TGK)", "ru": "Тетрагидроканнабинол (ТГК)", "en": "Tetrahydrocannabinol (THC)"},
+      "distractors": [
+        {"uz": "Kannabidiol (KBD)", "ru": "Каннабидиол (КБД)", "en": "Cannabidiol (CBD)"},
+        {"uz": "Kannabinol (KBN)", "ru": "Каннабинол (КБН)", "en": "Cannabinol (CBN)"},
+        {"uz": "Xlorofill", "ru": "Хлорофилл", "en": "Chlorophyll"}
+      ],
+      "citations": [{"key": "gmt_yuldashev2024", "pages": "64"}]
+    },
+    {
+      "id": "gmt.can.2",
+      "question": {"uz": "Dyukenua–Levin testida nasha bo‘lishi mumkinligini qaysi belgi ko‘rsatadi?", "ru": "Какой признак в тесте Дюкенуа–Левина указывает на возможное присутствие каннабиса?", "en": "In the Duquenois–Levine test, which sign indicates possible cannabis?"},
+      "answer": {"uz": "Xloroform qatlamining binafsha rangi", "ru": "Фиолетовая окраска хлороформного слоя", "en": "A violet chloroform layer"},
+      "distractors": [
+        {"uz": "Suvli qatlamning sariq rangi", "ru": "Жёлтая окраска водного слоя", "en": "A yellow aqueous layer"},
+        {"uz": "Oq cho‘kma hosil bo‘lishi", "ru": "Образование белого осадка", "en": "A white precipitate"},
+        {"uz": "Ko‘k fluoressensiya", "ru": "Синяя флуоресценция", "en": "Blue fluorescence"}
+      ],
+      "citations": [{"key": "gmt_unodc_rapid_tests", "pages": "41"}]
+    },
+    {
+      "id": "gmt.can.3",
+      "question": {"uz": "Faqat qo‘ldan olingan tamponda kannabinoid topilsa, qanday xulosa to‘g‘ri?", "ru": "Каннабиноиды найдены только в смыве с рук. Какой вывод правилен?", "en": "Cannabinoids are found only on a hand swab. Which conclusion is correct?"},
+      "answer": {"uz": "Chekkanlik haqida xulosa uchun yetarli emas", "ru": "Этого недостаточно для вывода о курении", "en": "It is not enough to conclude smoking"},
+      "distractors": [
+        {"uz": "Shaxs nasha chekkani isbotlangan", "ru": "Курение каннабиса доказано", "en": "Smoking of cannabis is proven"},
+        {"uz": "Namuna TGK saqlamaydi", "ru": "Образец не содержит ТГК", "en": "The sample contains no THC"},
+        {"uz": "Siydik tahlili endi kerak emas", "ru": "Анализ мочи больше не нужен", "en": "Urine testing is no longer needed"}
+      ],
+      "citations": [{"key": "gmt_yuldashev2024", "pages": "69"}]
+    },
+    {
+      "id": "gmt.can.4",
+      "question": {"uz": "Darslikdagi GX sharoitida (SE-30) kannabinoidlar qaysi tartibda chiqadi?", "ru": "В каком порядке элюируются каннабиноиды в условиях ГХ из пособия (SE-30)?", "en": "In the textbook's GC conditions (SE-30), in which order do cannabinoids elute?"},
+      "answer": {"uz": "Kannabidiol → TGK → kannabinol", "ru": "Каннабидиол → ТГК → каннабинол", "en": "Cannabidiol → THC → cannabinol"},
+      "distractors": [
+        {"uz": "TGK → kannabinol → kannabidiol", "ru": "ТГК → каннабинол → каннабидиол", "en": "THC → cannabinol → cannabidiol"},
+        {"uz": "Kannabinol → kannabidiol → TGK", "ru": "Каннабинол → каннабидиол → ТГК", "en": "Cannabinol → cannabidiol → THC"},
+        {"uz": "Hammasi bir vaqtda chiqadi", "ru": "Все элюируются одновременно", "en": "All co-elute"}
+      ],
+      "citations": [{"key": "gmt_yuldashev2024", "pages": "68"}]
+    }
+  ]
+}

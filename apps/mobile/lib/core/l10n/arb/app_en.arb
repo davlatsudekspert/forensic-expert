@@ -7556,7 +7556,7 @@
   "@studyEntrySubtitle": {
     "description": "Learn screen entry."
   },
-  "studyIntro": "Every card and question is built from a record that already exists in the app, together with its source. Nothing new is written. Material that is still under expert review is labelled.",
+  "studyIntro": "Every card and question is built from a record or guideline that already exists in the app, together with its source. Guideline questions are written by the editors from the card's facts. Material that is still under expert review is labelled.",
   "@studyIntro": {
     "description": "Hub banner."
   },
@@ -7741,7 +7741,7 @@
   "@studyQuizStemGuideline": {
     "description": "Quiz stem."
   },
-  "studyQuizNote": "Wrong options are other records of the same type from the app; nothing is invented.",
+  "studyQuizNote": "Wrong options are other records of the same type from the app or, for guideline questions, options set by the editors on the card; every question shows its source.",
   "@studyQuizNote": {
     "description": "Quiz banner."
   },
@@ -8905,5 +8905,24 @@
         "type": "String"
       }
     }
+  },
+  "guidelineAuthorPermissionFree": "Source: {author} et al., «{title}», {year} — used with the author's permission, free for everyone.",
+  "@guidelineAuthorPermissionFree": {
+    "description": "Guideline detail: attribution line for cards built on an author-permitted source (free for everyone).",
+    "placeholders": {
+      "author": {
+        "type": "String"
+      },
+      "title": {
+        "type": "String"
+      },
+      "year": {
+        "type": "String"
+      }
+    }
+  },
+  "studyFrontGuidelineQuiz": "Recall the answer, then flip the card",
+  "@studyFrontGuidelineQuiz": {
+    "description": "Flashcard front hint for a guideline question."
   }
 }

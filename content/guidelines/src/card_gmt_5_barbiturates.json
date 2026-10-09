@@ -1,0 +1,149 @@
+{
+  "id": "guideline.chem.gmt_barbiturates",
+  "discipline_codes": ["forensic_chemistry", "forensic_toxicology"],
+  "status": "NEEDS_REVIEW",
+  "updated": "2026-10-09",
+  "translation_status": {"uz": "AUTHORED", "ru": "DRAFT", "en": "DRAFT"},
+  "related_tool_ids": [],
+  "source_access": {"source_key": "gmt_yuldashev2024", "access": "free", "basis": "author_permission_2026-10-09"},
+  "title": {
+    "uz": "Barbituratlar: ajratib olish va identifikatsiya",
+    "ru": "Барбитураты: изолирование и идентификация",
+    "en": "Barbiturates: isolation and identification"
+  },
+  "summary": {
+    "uz": "Barbituratlar — barbitur kislotaning 5,5-almashgan hosilalari, kuchsiz kislotalar. Kobalt tuzi va amin bilan qizil-binafsha rang (Dille–Koppani), YuQX da difenilkarbazon–simob ochuvchisi, UB-spektrning pH ga bog‘liq siljishi (pH 10 da ~240 nm, pH 13 da ~255 nm) va GX-MS bilan aniqlanadi. Amobarbital va pentobarbital kabi izomerlar mass-spektrda o‘xshash, ular xromatografik ushlanish bilan farqlanadi.",
+    "ru": "Барбитураты — 5,5-замещённые производные барбитуровой кислоты, слабые кислоты. Выявляются красно-фиолетовой окраской с солью кобальта и амином (Дилле–Коппани), проявителем дифенилкарбазон–ртуть в ТСХ, pH-зависимым сдвигом УФ-спектра (около 240 нм при pH 10 и около 255 нм при pH 13) и ГХ-МС. Изомеры, например амобарбитал и пентобарбитал, имеют сходные масс-спектры и различаются по удерживанию.",
+    "en": "Barbiturates are 5,5-disubstituted derivatives of barbituric acid and weak acids. They are detected by the red-violet colour with a cobalt salt and an amine (Dille–Koppanyi), diphenylcarbazone–mercury spray on TLC, the pH-dependent UV shift (about 240 nm at pH 10 and about 255 nm at pH 13) and GC-MS. Isomers such as amobarbital and pentobarbital give similar mass spectra and are told apart by retention."
+  },
+  "sections": [
+    {
+      "key": "basis",
+      "title": {"uz": "Kimyoviy asos", "ru": "Химическая основа", "en": "Chemistry"},
+      "body": {
+        "uz": "Barbitur kislota (malonilmochevina) tibbiyotda ishlatilmaydi; uning 5-holatdagi ikki vodorodi radikallar bilan almashgan hosilalari — barbituratlar — uxlatuvchi, tinchlantiruvchi, narkoz va tutqanoqqa qarshi vositalar [gmt_yuldashev2024] (100-b.). Ular kuchsiz kislotalar (pKa taxminan 7,4–8,0), suvda kam, ishqor eritmalarida yaxshi eriydi [gmt_yuldashev2024] (100–104-b.).\n\n1971 yilgi Psixotrop moddalar to‘g‘risidagi konvensiya bo‘yicha 12 ta barbiturat xalqaro nazoratda (II–IV jadvallar) [gmt_yuldashev2024] (100-b.). Ta’sir davomiyligiga ko‘ra uzoq (barbital, fenobarbital), o‘rta va qisqa ta’sirlilarga bo‘linadi [gmt_yuldashev2024] (105-b.).",
+        "ru": "Барбитуровая кислота (малонилмочевина) в медицине не применяется; её производные, у которых два водорода в положении 5 замещены радикалами, — барбитураты — снотворные, седативные, наркозные и противосудорожные средства [gmt_yuldashev2024] (с. 100). Это слабые кислоты (pKa около 7,4–8,0), мало растворимые в воде и хорошо — в растворах щелочей [gmt_yuldashev2024] (с. 100–104).\n\nПо Конвенции о психотропных веществах 1971 г. 12 барбитуратов находятся под международным контролем (списки II–IV) [gmt_yuldashev2024] (с. 100). По длительности действия различают длительно (барбитал, фенобарбитал), средне и кратко действующие [gmt_yuldashev2024] (с. 105).",
+        "en": "Barbituric acid (malonylurea) itself is not used in medicine; derivatives in which both hydrogens at position 5 are replaced by radicals — barbiturates — are hypnotics, sedatives, anaesthetics and anticonvulsants [gmt_yuldashev2024] (p. 100). They are weak acids (pKa about 7.4–8.0), poorly soluble in water and readily soluble in alkali [gmt_yuldashev2024] (pp. 100–104).\n\nUnder the 1971 Convention on Psychotropic Substances 12 barbiturates are internationally controlled (Schedules II–IV) [gmt_yuldashev2024] (p. 100). By duration of action they are long-acting (barbital, phenobarbital), intermediate and short-acting [gmt_yuldashev2024] (p. 105)."
+      },
+      "citations": ["gmt_yuldashev2024"]
+    },
+    {
+      "key": "scope",
+      "title": {"uz": "Ob’ektlar va ajratib olish", "ru": "Объекты и изолирование", "en": "Objects and isolation"},
+      "body": {
+        "uz": "• Biologik ob’ektdan nordonlashtirilgan spirt yoki suv bilan ajratib olinadi; biologik suyuqliklardan organik erituvchi bilan ekstraksiya qilinadi [gmt_yuldashev2024] (107-b.).\n• Siydik albatta tekshiriladi: barbital asosan o‘zgarmagan holda siydik bilan chiqadi, fenobarbitalning esa kichikroq qismi o‘zgarmagan chiqadi; qisqa ta’sirli barbituratlar jigarda tez parchalanadi [gmt_yuldashev2024] (106-b.).\n• Zaharlanishda patologoanatomik belgilar xarakterli emas, shuning uchun kimyoviy tahlil va miqdorni aniqlash hal qiluvchi [gmt_yuldashev2024] (105-b.).",
+        "ru": "• Из биологического объекта изолируют подкисленным спиртом или водой; из биологических жидкостей экстрагируют органическим растворителем [gmt_yuldashev2024] (с. 107).\n• Мочу исследуют обязательно: барбитал выводится с мочой в основном в неизменённом виде, фенобарбитал — в меньшей доле; короткодействующие барбитураты быстро разрушаются в печени [gmt_yuldashev2024] (с. 106).\n• Патологоанатомические признаки отравления нехарактерны, поэтому решающее значение имеют химический анализ и определение количества [gmt_yuldashev2024] (с. 105).",
+        "en": "• Barbiturates are isolated from biological material with acidified ethanol or water and extracted from biological fluids with an organic solvent [gmt_yuldashev2024] (p. 107).\n• Urine must be examined: barbital is excreted largely unchanged, phenobarbital to a smaller extent; short-acting barbiturates are broken down rapidly in the liver [gmt_yuldashev2024] (p. 106).\n• Post-mortem findings are not characteristic, so chemical analysis and quantitation are decisive [gmt_yuldashev2024] (p. 105)."
+      },
+      "citations": ["gmt_yuldashev2024"]
+    },
+    {
+      "key": "reactions",
+      "title": {"uz": "Rangli va mikrokristall reaksiyalar", "ru": "Цветные и микрокристаллические реакции", "en": "Colour and microcrystal reactions"},
+      "body": {
+        "uz": "• Dille–Koppani testi (kobalt tuzi + amin): qizil-binafsha rang barbituratlar bo‘lishi mumkinligini ko‘rsatadi; boshqa moddalardan juda kami shunday rang beradi [gmt_unodc_rapid_tests] (49-b.).\n• Darslikdagi variantlar: kobalt atsetati va izopropilamin bilan qizil-pushti ichki kompleks; kobalt nitrat shimdirilgan qog‘ozni ammiak bug‘iga tutganda qizil rang. Purin alkaloidlari va biuret guruhli moddalar xalaqit beradi [gmt_yuldashev2024] (109-b.).\n• Ishqor bilan qizdirilganda ammiak hidi chiqadi — barcha barbituratlar uchun umumiy [gmt_yuldashev2024] (108-b.).\n• Mikrokristalloskopiya: konsentrlangan sulfat kislotadagi eritma suyultirilganda xarakterli kristallar; mis–piridin reaktivi bilan cho‘kma [gmt_yuldashev2024] (112-b.).\n• Toza kukunda suyuqlanish harorati va sublimatsiya kristallari yordamchi belgi [gmt_yuldashev2024] (105, 107-b.).",
+        "ru": "• Тест Дилле–Коппани (соль кобальта + амин): красно-фиолетовая окраска указывает на возможное присутствие барбитуратов; очень немногие другие вещества дают такую окраску [gmt_unodc_rapid_tests] (с. 49).\n• Варианты из пособия: с ацетатом кобальта и изопропиламином — красно-розовый внутрикомплексный продукт; бумага, пропитанная нитратом кобальта, в парах аммиака — красная окраска. Мешают пуриновые алкалоиды и вещества с биуретовой группировкой [gmt_yuldashev2024] (с. 109).\n• При нагревании со щёлочью выделяется аммиак — общая реакция всех барбитуратов [gmt_yuldashev2024] (с. 108).\n• Микрокристаллоскопия: при разбавлении раствора в концентрированной серной кислоте выпадают характерные кристаллы; с медно-пиридиновым реактивом — осадок [gmt_yuldashev2024] (с. 112).\n• Для чистого порошка вспомогательные признаки — температура плавления и кристаллы сублимата [gmt_yuldashev2024] (с. 105, 107).",
+        "en": "• Dille–Koppanyi test (cobalt salt + amine): a reddish-purple colour indicates possible barbiturates; very few other drugs react similarly [gmt_unodc_rapid_tests] (p. 49).\n• Textbook variants: cobalt acetate with isopropylamine gives a red-pink inner complex; filter paper soaked in cobalt nitrate turns red over ammonia vapour. Purine alkaloids and biuret-type compounds interfere [gmt_yuldashev2024] (p. 109).\n• Heating with alkali releases ammonia — a reaction common to all barbiturates [gmt_yuldashev2024] (p. 108).\n• Microcrystal tests: a solution in concentrated sulfuric acid gives characteristic crystals on dilution; the copper–pyridine reagent gives a precipitate [gmt_yuldashev2024] (p. 112).\n• For pure powders, melting point and sublimate crystals are supporting features [gmt_yuldashev2024] (pp. 105, 107)."
+      },
+      "citations": ["gmt_unodc_rapid_tests", "gmt_yuldashev2024"]
+    },
+    {
+      "key": "tlc",
+      "title": {"uz": "YuQX", "ru": "ТСХ", "en": "TLC"},
+      "body": {
+        "uz": "Darslikda xloroform–n-butanol–25% ammiak (70:40:5) tizimi; ochuvchi sifatida difenilkarbazon va simob sulfat ketma-ket purkaladi — barbituratlar ko‘k-binafsha dog‘lar beradi [gmt_yuldashev2024] (112-b.). Natija standartlar bilan bir plastinkada solishtiriladi [uchiyama2008].",
+        "ru": "В пособии — система хлороформ–н-бутанол–25% аммиак (70:40:5); проявляют последовательно дифенилкарбазоном и сульфатом ртути — барбитураты дают сине-фиолетовые пятна [gmt_yuldashev2024] (с. 112). Результат сравнивают со стандартами на той же пластинке [uchiyama2008].",
+        "en": "The textbook uses chloroform–n-butanol–25% ammonia (70:40:5); plates are sprayed successively with diphenylcarbazone and mercury sulfate — barbiturates give blue-violet spots [gmt_yuldashev2024] (p. 112). Results are compared with standards on the same plate [uchiyama2008]."
+      },
+      "citations": ["gmt_yuldashev2024", "uchiyama2008"]
+    },
+    {
+      "key": "instrumental",
+      "title": {"uz": "UB-spektrofotometriya va xromatografiya", "ru": "УФ-спектрофотометрия и хроматография", "en": "UV spectrophotometry and chromatography"},
+      "body": {
+        "uz": "• UB: neytral (keto) shaklda 220 nm dan uzun to‘lqinda deyarli yutilish yo‘q; pH 10 da (borat bufer) monoanion taxminan 238–240 nm, pH 13 da (1 M ishqor) dianion taxminan 254–260 nm da maksimum beradi. Bu pH ga bog‘liq siljish 5,5-almashgan barbituratlar uchun xarakterli [gmt_yuldashev2024] (113–114-b.).\n• GX: metilsilikon (SE-30) fazada izotermik sharoitda ushlanish indekslari bo‘yicha; YuSSX: C18 kolonka, fosfat bufer (pH 3,5)–metanol, UB-detektsiya 216 nm [gmt_yuldashev2024] (112–113-b.).\n• EI mass-spektr: fenobarbital — asosiy cho‘qqi m/z 204, keyin 117 (NIST) [gmt_pubchem_2026]. Barbital, amobarbital, pentobarbital va butobarbital spektrlarida umumiy m/z 141 va 156 fragmentlari ustun [gmt_yuldashev2024] (114–115-b.); amobarbital va pentobarbital bir xil formulaga ega (C11H18N2O3) [gmt_yuldashev2024] (101, 103-b.), shuning uchun ular ushlanish vaqti va standart bilan farqlanadi [swgdrug2024].",
+        "ru": "• УФ: в нейтральной (кето) форме поглощения выше 220 нм практически нет; при pH 10 (боратный буфер) моноанион даёт максимум около 238–240 нм, при pH 13 (1 М щёлочь) дианион — около 254–260 нм. Этот pH-зависимый сдвиг характерен для 5,5-замещённых барбитуратов [gmt_yuldashev2024] (с. 113–114).\n• ГХ: на метилсиликоновой фазе (SE-30) в изотермическом режиме по индексам удерживания; ВЭЖХ: колонка C18, фосфатный буфер (pH 3,5)–метанол, УФ-детекция 216 нм [gmt_yuldashev2024] (с. 112–113).\n• Масс-спектр ЭИ: фенобарбитал — основной пик m/z 204, далее 117 (NIST) [gmt_pubchem_2026]. В спектрах барбитала, амобарбитала, пентобарбитала и бутобарбитала преобладают общие фрагменты m/z 141 и 156 [gmt_yuldashev2024] (с. 114–115); амобарбитал и пентобарбитал имеют одинаковую формулу (C11H18N2O3) [gmt_yuldashev2024] (с. 101, 103), поэтому их различают по удерживанию и стандарту [swgdrug2024].",
+        "en": "• UV: the neutral (keto) form shows practically no absorption above 220 nm; at pH 10 (borate buffer) the monoanion absorbs at about 238–240 nm and at pH 13 (1 M alkali) the dianion at about 254–260 nm. This pH-dependent shift is characteristic of 5,5-disubstituted barbiturates [gmt_yuldashev2024] (pp. 113–114).\n• GC: methylsilicone (SE-30) phase, isothermal, by retention indices; HPLC: C18 column, phosphate buffer (pH 3.5)–methanol, UV detection at 216 nm [gmt_yuldashev2024] (pp. 112–113).\n• EI mass spectra: phenobarbital — base peak m/z 204, then 117 (NIST) [gmt_pubchem_2026]. Barbital, amobarbital, pentobarbital and butobarbital spectra are dominated by the shared fragments m/z 141 and 156 [gmt_yuldashev2024] (pp. 114–115); amobarbital and pentobarbital have the same formula (C11H18N2O3) [gmt_yuldashev2024] (pp. 101, 103), so they are told apart by retention and a reference standard [swgdrug2024]."
+      },
+      "citations": ["gmt_yuldashev2024", "gmt_pubchem_2026", "swgdrug2024"]
+    },
+    {
+      "key": "limitations",
+      "title": {"uz": "Cheklovlar", "ru": "Ограничения", "en": "Limitations"},
+      "body": {
+        "uz": "• Kobalt reaksiyalari guruh reaksiyasi: alohida barbituratni ko‘rsatmaydi va purinlar xalaqit beradi [gmt_yuldashev2024] (109-b.).\n• Mikrokristall reaksiyalarda kristall shakli konsentratsiya, pH, harorat va bug‘lanishga bog‘liq; ko‘p moddalar o‘xshash kristallar beradi, shuning uchun standart bilan solishtirish shart [gmt_yuldashev2024] (111–112-b.).\n• Barbiturat immunotahlillari o‘zaro reaksiyalar beradi [saitman2014].",
+        "ru": "• Реакции с кобальтом групповые: не указывают конкретный барбитурат, мешают пурины [gmt_yuldashev2024] (с. 109).\n• В микрокристаллических реакциях форма кристаллов зависит от концентрации, pH, температуры и испарения; многие вещества дают сходные кристаллы, поэтому сравнение со стандартом обязательно [gmt_yuldashev2024] (с. 111–112).\n• Иммуноанализы на барбитураты дают перекрёстные реакции [saitman2014].",
+        "en": "• Cobalt reactions are class reactions: they do not identify an individual barbiturate, and purines interfere [gmt_yuldashev2024] (p. 109).\n• In microcrystal tests the crystal habit depends on concentration, pH, temperature and evaporation; many substances give similar crystals, so comparison with a standard is mandatory [gmt_yuldashev2024] (pp. 111–112).\n• Barbiturate immunoassays show cross-reactivity [saitman2014]."
+      },
+      "citations": ["gmt_yuldashev2024", "saitman2014"]
+    },
+    {
+      "key": "cautions",
+      "title": {"uz": "Darslikdagi tuzatilgan joylar", "ru": "Исправления по сравнению с пособием", "en": "Corrections to the textbook"},
+      "body": {
+        "uz": "• Spektral jadvalda metilfenobarbital uchun UB, IQ va mass-spektr qiymatlari butalbital qatoridan aynan takrorlangan [gmt_yuldashev2024] (114-b.); bu qiymatlar keltirilmaydi.\n• Butalbitalning suyuqlanish harorati barbital qiymati bilan bir xil yozilgan [gmt_yuldashev2024] (101-b.); keltirilmaydi.\n• Darslikda keltirilgan O‘zbekiston ro‘yxatlari va hujjat raqamlari [gmt_yuldashev2024] (104–105-b.) amaldagi tahrirda lex.uz da tekshirilishi kerak («O‘zbekistonda nazorat ro‘yxatlari» kartasiga qarang).",
+        "ru": "• В спектральной таблице значения УФ, ИК и масс-спектра метилфенобарбитала дословно повторяют строку бутальбитала [gmt_yuldashev2024] (с. 114); они не приводятся.\n• Температура плавления бутальбитала записана такой же, как у барбитала [gmt_yuldashev2024] (с. 101); не приводится.\n• Узбекские списки и номера документов из пособия [gmt_yuldashev2024] (с. 104–105) нужно проверять в действующей редакции на lex.uz (см. карточку «Списки контроля в Узбекистане»).",
+        "en": "• In the spectral table, the UV, IR and mass-spectral values for methylphenobarbital repeat the butalbital row verbatim [gmt_yuldashev2024] (p. 114); they are not reproduced.\n• The melting point of butalbital is printed identical to barbital's [gmt_yuldashev2024] (p. 101); not reproduced.\n• Uzbek list memberships and document numbers given in the textbook [gmt_yuldashev2024] (pp. 104–105) must be checked in the current edition on lex.uz (see the card «Control lists in Uzbekistan»)."
+      },
+      "citations": ["gmt_yuldashev2024"]
+    }
+  ],
+  "keywords": {
+    "uz": ["barbituratlar", "barbitur kislota", "fenobarbital", "barbital", "amobarbital", "pentobarbital", "sekobarbital", "tiopental", "Dille–Koppani", "kobalt reaksiyasi", "difenilkarbazon", "UB-spektr siljishi", "psixotrop moddalar"],
+    "ru": ["барбитураты", "барбитуровая кислота", "фенобарбитал", "барбитал", "амобарбитал", "пентобарбитал", "секобарбитал", "тиопентал", "Дилле–Коппани", "реакция с кобальтом", "дифенилкарбазон"],
+    "en": ["barbiturates", "barbituric acid", "phenobarbital", "barbital", "amobarbital", "pentobarbital", "secobarbital", "thiopental", "Dille-Koppanyi", "cobalt reaction", "diphenylcarbazone", "UV shift"]
+  },
+  "omitted_unverified": [
+    "Lethal doses (barbital 6-10 g, phenobarbital 4-6 g) and 'lethal = 20x therapeutic' (p. 105): not verified.",
+    "Urinary excretion percentages (p. 106) and persistence in tissues 1.5-14 months (p. 106): not verified, described qualitatively.",
+    "Solubility ratios, pKa per compound, melting points per compound (pp. 100-108): not reproduced individually.",
+    "Methylphenobarbital row duplicated from butalbital; butalbital mp duplicated from barbital: omitted.",
+    "IR wavenumbers and minor MS ions of individual barbiturates (pp. 114-115): not verified."
+  ],
+  "quiz": [
+    {
+      "id": "gmt.bar.1",
+      "question": {"uz": "Dille–Koppani testida barbituratlar qanday rang beradi?", "ru": "Какую окраску дают барбитураты в тесте Дилле–Коппани?", "en": "What colour do barbiturates give in the Dille–Koppanyi test?"},
+      "answer": {"uz": "Qizil-binafsha", "ru": "Красно-фиолетовую", "en": "Reddish-purple"},
+      "distractors": [
+        {"uz": "Ko‘k, xloroform qatlamida", "ru": "Синюю, в хлороформном слое", "en": "Blue, in the chloroform layer"},
+        {"uz": "Sariq-zarg‘aldoq", "ru": "Жёлто-оранжевую", "en": "Yellow-orange"},
+        {"uz": "Qora", "ru": "Чёрную", "en": "Black"}
+      ],
+      "citations": [{"key": "gmt_unodc_rapid_tests", "pages": "49"}]
+    },
+    {
+      "id": "gmt.bar.2",
+      "question": {"uz": "Barbituratlar UB-spektrining pH 10 dan pH 13 ga o‘tganda o‘zgarishi qanday?", "ru": "Как меняется УФ-спектр барбитуратов при переходе от pH 10 к pH 13?", "en": "How does the barbiturate UV spectrum change from pH 10 to pH 13?"},
+      "answer": {"uz": "Maksimum ~240 nm dan ~255 nm ga siljiydi", "ru": "Максимум смещается примерно с 240 до 255 нм", "en": "The maximum shifts from about 240 to about 255 nm"},
+      "distractors": [
+        {"uz": "Spektr o‘zgarmaydi", "ru": "Спектр не меняется", "en": "The spectrum does not change"},
+        {"uz": "Maksimum 285 nm dan 298 nm ga siljiydi", "ru": "Максимум смещается с 285 до 298 нм", "en": "The maximum moves from 285 to 298 nm"},
+        {"uz": "Yutilish butunlay yo‘qoladi", "ru": "Поглощение полностью исчезает", "en": "Absorption disappears completely"}
+      ],
+      "citations": [{"key": "gmt_yuldashev2024", "pages": "113"}]
+    },
+    {
+      "id": "gmt.bar.3",
+      "question": {"uz": "Fenobarbitalning EI mass-spektridagi asosiy cho‘qqi qaysi?", "ru": "Какой основной пик в ЭИ масс-спектре фенобарбитала?", "en": "What is the base peak in the EI mass spectrum of phenobarbital?"},
+      "answer": {"uz": "m/z 204", "ru": "m/z 204", "en": "m/z 204"},
+      "distractors": [
+        {"uz": "m/z 156", "ru": "m/z 156", "en": "m/z 156"},
+        {"uz": "m/z 256", "ru": "m/z 256", "en": "m/z 256"},
+        {"uz": "m/z 44", "ru": "m/z 44", "en": "m/z 44"}
+      ],
+      "citations": [{"key": "gmt_pubchem_2026"}]
+    },
+    {
+      "id": "gmt.bar.4",
+      "question": {"uz": "Amobarbital va pentobarbitalni GX-MS da qanday farqlash mumkin?", "ru": "Как различить амобарбитал и пентобарбитал при ГХ-МС?", "en": "How are amobarbital and pentobarbital told apart by GC-MS?"},
+      "answer": {"uz": "Ushlanish vaqti va standart bo‘yicha — spektrlar o‘xshash", "ru": "По времени удерживания и стандарту — спектры сходны", "en": "By retention time and a reference standard — the spectra are similar"},
+      "distractors": [
+        {"uz": "Molekulyar formulasi bo‘yicha", "ru": "По молекулярной формуле", "en": "By molecular formula"},
+        {"uz": "Dille–Koppani rangi bo‘yicha", "ru": "По окраске Дилле–Коппани", "en": "By the Dille–Koppanyi colour"},
+        {"uz": "Faqat m/z 141 cho‘qqisi bo‘yicha", "ru": "Только по пику m/z 141", "en": "By the m/z 141 peak alone"}
+      ],
+      "citations": [{"key": "gmt_yuldashev2024", "pages": "101, 103, 114"}, {"key": "swgdrug2024"}]
+    }
+  ]
+}

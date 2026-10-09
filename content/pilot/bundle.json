@@ -60677,6 +60677,822 @@
         "ru": "machine_draft",
         "uz": "machine_draft"
       }
+    },
+    {
+      "term_id": "T-GMT-NARCOTIC-DRUG",
+      "kind": "term",
+      "original": "giyohvandlik vositasi",
+      "original_lang": "uz",
+      "canonical": "narcotic drug",
+      "localized": {
+        "en": "narcotic drug",
+        "ru": "наркотическое средство",
+        "uz": "giyohvandlik vositasi"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-PSYCHOTROPIC-SUBSTANCE",
+      "kind": "term",
+      "original": "psixotrop modda",
+      "original_lang": "uz",
+      "canonical": "psychotropic substance",
+      "localized": {
+        "en": "psychotropic substance",
+        "ru": "психотропное вещество",
+        "uz": "psixotrop modda"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-PRECURSOR",
+      "kind": "term",
+      "original": "prekursor",
+      "original_lang": "uz",
+      "canonical": "precursor",
+      "localized": {
+        "en": "precursor",
+        "ru": "прекурсор",
+        "uz": "prekursor"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-MATERIAL-EVIDENCE",
+      "kind": "term",
+      "original": "ashyoviy dalil",
+      "original_lang": "uz",
+      "canonical": "material evidence",
+      "localized": {
+        "en": "material evidence",
+        "ru": "вещественное доказательство",
+        "uz": "ashyoviy dalil"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-BIOLOGICAL-MATERIAL",
+      "kind": "term",
+      "original": "biologik ob’ekt",
+      "original_lang": "uz",
+      "canonical": "biological material",
+      "localized": {
+        "en": "biological material",
+        "ru": "биологический объект",
+        "uz": "biologik ob’ekt"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-ISOLATION",
+      "kind": "term",
+      "original": "ajratib olish",
+      "original_lang": "uz",
+      "canonical": "isolation",
+      "localized": {
+        "en": "isolation",
+        "ru": "изолирование",
+        "uz": "ajratib olish"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-EXTRACTION",
+      "kind": "term",
+      "original": "ekstraksiya",
+      "original_lang": "uz",
+      "canonical": "extraction",
+      "localized": {
+        "en": "extraction",
+        "ru": "экстракция",
+        "uz": "ekstraksiya"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-ISOLATE-EXTRACT",
+      "kind": "term",
+      "original": "ajralma",
+      "original_lang": "uz",
+      "canonical": "isolate (extract)",
+      "localized": {
+        "en": "isolate (extract)",
+        "ru": "извлечение",
+        "uz": "ajralma"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-DRY-RESIDUE",
+      "kind": "term",
+      "original": "quruq qoldiq",
+      "original_lang": "uz",
+      "canonical": "dry residue",
+      "localized": {
+        "en": "dry residue",
+        "ru": "сухой остаток",
+        "uz": "quruq qoldiq"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-ACIDIFIED-WATER",
+      "kind": "term",
+      "original": "nordonlashtirilgan suv",
+      "original_lang": "uz",
+      "canonical": "acidified water",
+      "localized": {
+        "en": "acidified water",
+        "ru": "подкисленная вода",
+        "uz": "nordonlashtirilgan suv"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-ALKALINE-MEDIUM",
+      "kind": "term",
+      "original": "ishqoriy muhit",
+      "original_lang": "uz",
+      "canonical": "alkaline medium",
+      "localized": {
+        "en": "alkaline medium",
+        "ru": "щелочная среда",
+        "uz": "ishqoriy muhit"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-COLOUR-REACTION",
+      "kind": "term",
+      "original": "rangli reaksiya",
+      "original_lang": "uz",
+      "canonical": "colour reaction",
+      "localized": {
+        "en": "colour reaction",
+        "ru": "цветная реакция",
+        "uz": "rangli reaksiya"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-PRECIPITATING-REAGENT",
+      "kind": "term",
+      "original": "cho‘ktiruvchi reaktiv",
+      "original_lang": "uz",
+      "canonical": "precipitating reagent",
+      "localized": {
+        "en": "precipitating reagent",
+        "ru": "осадительный реактив",
+        "uz": "cho‘ktiruvchi reaktiv"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-MICROCRYSTAL-TEST",
+      "kind": "term",
+      "original": "mikrokristalloskopik reaksiya",
+      "original_lang": "uz",
+      "canonical": "microcrystal test",
+      "localized": {
+        "en": "microcrystal test",
+        "ru": "микрокристаллоскопическая реакция",
+        "uz": "mikrokristalloskopik reaksiya"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-MICROSCOPE-SLIDE",
+      "kind": "term",
+      "original": "buyum oynachasi",
+      "original_lang": "uz",
+      "canonical": "microscope slide",
+      "localized": {
+        "en": "microscope slide",
+        "ru": "предметное стекло",
+        "uz": "buyum oynachasi"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-THIN-LAYER-CHROMATOGRAPHY",
+      "kind": "term",
+      "original": "yupqa qatlamli xromatografiya",
+      "original_lang": "uz",
+      "canonical": "thin-layer chromatography",
+      "localized": {
+        "en": "thin-layer chromatography",
+        "ru": "тонкослойная хроматография",
+        "uz": "yupqa qatlamli xromatografiya"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-SOLVENT-SYSTEM",
+      "kind": "term",
+      "original": "erituvchilar tizimi",
+      "original_lang": "uz",
+      "canonical": "solvent system",
+      "localized": {
+        "en": "solvent system",
+        "ru": "система растворителей",
+        "uz": "erituvchilar tizimi"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-VISUALISING-REAGENT",
+      "kind": "term",
+      "original": "ochuvchi reaktiv",
+      "original_lang": "uz",
+      "canonical": "visualising reagent",
+      "localized": {
+        "en": "visualising reagent",
+        "ru": "проявляющий реактив",
+        "uz": "ochuvchi reaktiv"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-REFERENCE-SOLUTION",
+      "kind": "term",
+      "original": "guvoh eritma",
+      "original_lang": "uz",
+      "canonical": "reference solution",
+      "localized": {
+        "en": "reference solution",
+        "ru": "раствор-свидетель",
+        "uz": "guvoh eritma"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-GAS-LIQUID-CHROMATOGRAPHY",
+      "kind": "term",
+      "original": "gaz-suyuqlik xromatografiyasi",
+      "original_lang": "uz",
+      "canonical": "gas–liquid chromatography",
+      "localized": {
+        "en": "gas–liquid chromatography",
+        "ru": "газожидкостная хроматография",
+        "uz": "gaz-suyuqlik xromatografiyasi"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-HIGH-PERFORMANCE-LIQUID-CHROMATOGRAPHY",
+      "kind": "term",
+      "original": "yuqori samarali suyuqlik xromatografiyasi",
+      "original_lang": "uz",
+      "canonical": "high-performance liquid chromatography",
+      "localized": {
+        "en": "high-performance liquid chromatography",
+        "ru": "высокоэффективная жидкостная хроматография",
+        "uz": "yuqori samarali suyuqlik xromatografiyasi"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-RETENTION-TIME",
+      "kind": "term",
+      "original": "ushlanish vaqti",
+      "original_lang": "uz",
+      "canonical": "retention time",
+      "localized": {
+        "en": "retention time",
+        "ru": "время удерживания",
+        "uz": "ushlanish vaqti"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-RETENTION-INDEX",
+      "kind": "term",
+      "original": "ushlanish indeksi",
+      "original_lang": "uz",
+      "canonical": "retention index",
+      "localized": {
+        "en": "retention index",
+        "ru": "индекс удерживания",
+        "uz": "ushlanish indeksi"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-ABSORPTION-MAXIMUM",
+      "kind": "term",
+      "original": "maksimum nur yutish",
+      "original_lang": "uz",
+      "canonical": "absorption maximum",
+      "localized": {
+        "en": "absorption maximum",
+        "ru": "максимум поглощения",
+        "uz": "maksimum nur yutish"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-IDENTITY-TEST",
+      "kind": "term",
+      "original": "chinligini aniqlash",
+      "original_lang": "uz",
+      "canonical": "identity test",
+      "localized": {
+        "en": "identity test",
+        "ru": "установление подлинности",
+        "uz": "chinligini aniqlash"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-QUANTITATIVE-DETERMINATION",
+      "kind": "term",
+      "original": "miqdorini aniqlash",
+      "original_lang": "uz",
+      "canonical": "quantitative determination",
+      "localized": {
+        "en": "quantitative determination",
+        "ru": "количественное определение",
+        "uz": "miqdorini aniqlash"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-CALIBRATION-GRAPH",
+      "kind": "term",
+      "original": "kalibrlash grafigi",
+      "original_lang": "uz",
+      "canonical": "calibration graph",
+      "localized": {
+        "en": "calibration graph",
+        "ru": "градуировочный график",
+        "uz": "kalibrlash grafigi"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-MARQUIS-REAGENT",
+      "kind": "term",
+      "original": "Markis reaktivi",
+      "original_lang": "uz",
+      "canonical": "Marquis reagent",
+      "localized": {
+        "en": "Marquis reagent",
+        "ru": "реактив Марки",
+        "uz": "Markis reaktivi"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-FR-HDE-REAGENT",
+      "kind": "term",
+      "original": "Frede reaktivi",
+      "original_lang": "uz",
+      "canonical": "Fröhde reagent",
+      "localized": {
+        "en": "Fröhde reagent",
+        "ru": "реактив Фреде",
+        "uz": "Frede reaktivi"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-MANDELIN-REAGENT",
+      "kind": "term",
+      "original": "Mandelin reaktivi",
+      "original_lang": "uz",
+      "canonical": "Mandelin reagent",
+      "localized": {
+        "en": "Mandelin reagent",
+        "ru": "реактив Манделина",
+        "uz": "Mandelin reaktivi"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-DRAGENDORFF-REAGENT",
+      "kind": "term",
+      "original": "Dragendorf reaktivi",
+      "original_lang": "uz",
+      "canonical": "Dragendorff reagent",
+      "localized": {
+        "en": "Dragendorff reagent",
+        "ru": "реактив Драгендорфа",
+        "uz": "Dragendorf reaktivi"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-COBALT-THIOCYANATE",
+      "kind": "term",
+      "original": "kobalt tiotsianat",
+      "original_lang": "uz",
+      "canonical": "cobalt thiocyanate",
+      "localized": {
+        "en": "cobalt thiocyanate",
+        "ru": "тиоцианат кобальта",
+        "uz": "kobalt tiotsianat"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-MECONIC-ACID",
+      "kind": "term",
+      "original": "mekon kislotasi",
+      "original_lang": "uz",
+      "canonical": "meconic acid",
+      "localized": {
+        "en": "meconic acid",
+        "ru": "меконовая кислота",
+        "uz": "mekon kislotasi"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-OPIUM-ALKALOIDS",
+      "kind": "term",
+      "original": "opiy alkaloidlari",
+      "original_lang": "uz",
+      "canonical": "opium alkaloids",
+      "localized": {
+        "en": "opium alkaloids",
+        "ru": "алкалоиды опия",
+        "uz": "opiy alkaloidlari"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-OPIUM-POPPY",
+      "kind": "term",
+      "original": "ko‘knori",
+      "original_lang": "uz",
+      "canonical": "opium poppy",
+      "localized": {
+        "en": "opium poppy",
+        "ru": "мак снотворный",
+        "uz": "ko‘knori"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-CANNABIS",
+      "kind": "term",
+      "original": "nasha",
+      "original_lang": "uz",
+      "canonical": "cannabis",
+      "localized": {
+        "en": "cannabis",
+        "ru": "каннабис",
+        "uz": "nasha"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-HASHISH-CANNABIS-RESIN",
+      "kind": "term",
+      "original": "gashish",
+      "original_lang": "uz",
+      "canonical": "hashish (cannabis resin)",
+      "localized": {
+        "en": "hashish (cannabis resin)",
+        "ru": "гашиш",
+        "uz": "gashish"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-TETRAHYDROCANNABINOL",
+      "kind": "term",
+      "original": "tetragidrokannabinol",
+      "original_lang": "uz",
+      "canonical": "tetrahydrocannabinol",
+      "localized": {
+        "en": "tetrahydrocannabinol",
+        "ru": "тетрагидроканнабинол",
+        "uz": "tetragidrokannabinol"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-PHENYLALKYLAMINES",
+      "kind": "term",
+      "original": "fenilalkilaminlar",
+      "original_lang": "uz",
+      "canonical": "phenylalkylamines",
+      "localized": {
+        "en": "phenylalkylamines",
+        "ru": "фенилалкиламины",
+        "uz": "fenilalkilaminlar"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-BARBITURATES",
+      "kind": "term",
+      "original": "barbituratlar",
+      "original_lang": "uz",
+      "canonical": "barbiturates",
+      "localized": {
+        "en": "barbiturates",
+        "ru": "барбитураты",
+        "uz": "barbituratlar"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-BENZODIAZEPINE-DERIVATIVES",
+      "kind": "term",
+      "original": "benzodiazepin hosilalari",
+      "original_lang": "uz",
+      "canonical": "benzodiazepine derivatives",
+      "localized": {
+        "en": "benzodiazepine derivatives",
+        "ru": "производные бензодиазепина",
+        "uz": "benzodiazepin hosilalari"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-ACID-HYDROLYSIS",
+      "kind": "term",
+      "original": "kislotali gidroliz",
+      "original_lang": "uz",
+      "canonical": "acid hydrolysis",
+      "localized": {
+        "en": "acid hydrolysis",
+        "ru": "кислотный гидролиз",
+        "uz": "kislotali gidroliz"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-AMINOBENZOPHENONE",
+      "kind": "term",
+      "original": "aminobenzofenon",
+      "original_lang": "uz",
+      "canonical": "aminobenzophenone",
+      "localized": {
+        "en": "aminobenzophenone",
+        "ru": "аминобензофенон",
+        "uz": "aminobenzofenon"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-ACETIC-ANHYDRIDE",
+      "kind": "term",
+      "original": "sirka kislota angidridi",
+      "original_lang": "uz",
+      "canonical": "acetic anhydride",
+      "localized": {
+        "en": "acetic anhydride",
+        "ru": "уксусный ангидрид",
+        "uz": "sirka kislota angidridi"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-CONTROL-LIST",
+      "kind": "term",
+      "original": "nazorat ro‘yxati",
+      "original_lang": "uz",
+      "canonical": "control list",
+      "localized": {
+        "en": "control list",
+        "ru": "список контроля",
+        "uz": "nazorat ro‘yxati"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-DRUG-ADDICTION",
+      "kind": "term",
+      "original": "giyohvandlik (narkomaniya)",
+      "original_lang": "uz",
+      "canonical": "drug addiction",
+      "localized": {
+        "en": "drug addiction",
+        "ru": "наркомания",
+        "uz": "giyohvandlik (narkomaniya)"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-TOXICOMANIA",
+      "kind": "term",
+      "original": "zaharvandlik (toksikomaniya)",
+      "original_lang": "uz",
+      "canonical": "toxicomania",
+      "localized": {
+        "en": "toxicomania",
+        "ru": "токсикомания",
+        "uz": "zaharvandlik (toksikomaniya)"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-GMT-NARCOLOGICAL-SIGNIFICANCE",
+      "kind": "term",
+      "original": "narkologik ahamiyat",
+      "original_lang": "uz",
+      "canonical": "narcological significance",
+      "localized": {
+        "en": "narcological significance",
+        "ru": "наркологическое значение",
+        "uz": "narkologik ahamiyat"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
     }
   ],
   "review_actions": [],

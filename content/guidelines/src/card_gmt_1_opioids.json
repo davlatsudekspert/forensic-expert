@@ -1,0 +1,549 @@
+{
+  "id": "guideline.chem.gmt_opioids",
+  "discipline_codes": [
+    "forensic_chemistry",
+    "forensic_toxicology"
+  ],
+  "status": "NEEDS_REVIEW",
+  "updated": "2026-10-09",
+  "translation_status": {
+    "uz": "AUTHORED",
+    "ru": "DRAFT",
+    "en": "DRAFT"
+  },
+  "related_tool_ids": [],
+  "source_access": {
+    "source_key": "gmt_yuldashev2024",
+    "access": "free",
+    "basis": "author_permission_2026-10-09"
+  },
+  "title": {
+    "uz": "Opiatlar va opioidlar: morfin, kodein, geroin, sintetik opioidlar",
+    "ru": "Опиаты и опиоиды: морфин, кодеин, героин, синтетические опиоиды",
+    "en": "Opiates and opioids: morphine, codeine, heroin, synthetic opioids"
+  },
+  "summary": {
+    "uz": "Opiy alkaloidlari (morfin, kodein, noskapin), yarim sintetik geroin va uning metaboliti 6-MAM hamda sintetik opioidlar (promedol, petidin, metadon, fentanil) Markis, Mekke, nitrat kislota, temir(III) xlorid reaksiyalari, YuQX va GX-MS/SX-MS bilan aniqlanadi. Opiy iste’molini isbotlash uchun morfin bilan birga noskapin, kodein va mekon kislotasi, geroin uchun esa 6-MAM izlanadi.",
+    "ru": "Алкалоиды опия (морфин, кодеин, носкапин), полусинтетический героин и его метаболит 6-МАМ, а также синтетические опиоиды (промедол, петидин, метадон, фентанил) выявляют реакциями Марки, Мекке, с азотной кислотой и хлоридом железа(III), ТСХ и ГХ-МС/ЖХ-МС. Для доказательства употребления опия наряду с морфином ищут носкапин, кодеин и меконовую кислоту, для героина — 6-МАМ.",
+    "en": "Opium alkaloids (morphine, codeine, noscapine), semi-synthetic heroin with its metabolite 6-MAM, and synthetic opioids (promedol, pethidine, methadone, fentanyl) are detected with Marquis, Mecke, nitric acid and iron(III) chloride reactions, TLC and GC-MS/LC-MS. To show opium use, noscapine, codeine and meconic acid are sought alongside morphine; for heroin, 6-MAM."
+  },
+  "sections": [
+    {
+      "key": "basis",
+      "title": {
+        "uz": "Identifikatsiya tamoyillari",
+        "ru": "Принципы идентификации",
+        "en": "Identification principles"
+      },
+      "body": {
+        "uz": "Opiatlar — morfinga tuzilishi o‘xshash moddalar: morfin, kodein, yarim sintetik geroin (diatsetilmorfin) va uning asosiy metaboliti 6-monoatsetilmorfin (6-MAM); geroin morfinni atsetillab olinadi. Opioidlar esa morfinga o‘xshash ta’sir qiladigan, lekin boshqa kimyoviy guruhga kiruvchi sintetik moddalar (promedol, metadon, fentanil va boshqalar) [gmt_yuldashev2024] (15-b.).\n\nOpiy alkaloidlari izoxinolin hosilalari: fenantren qatori (morfin, kodein, tebain) va benzilizoxinolin qatori (papaverin, noskapin/narkotin) [gmt_yuldashev2024] (15–16-b.). Morfinda erkin fenol gidroksili bor; kodeinda u metillangan, geroinda atsetillangan — farqlovchi reaksiyalar shunga asoslanadi [gmt_yuldashev2024] (23, 27, 36-b.).\n\nMolekulyar formulalar: morfin C17H19NO3, kodein C18H21NO3, petidin (meperidin, etil 1-metil-4-fenilpiperidin-4-karboksilat) C15H21NO2, promedol (trimeperidin) C17H25NO2, metadon C21H27NO, fentanil C22H28N2O [gmt_pubchem_2026].",
+        "ru": "Опиаты — вещества, близкие по строению к морфину: морфин, кодеин, полусинтетический героин (диацетилморфин) и его основной метаболит 6-моноацетилморфин (6-МАМ); героин получают ацетилированием морфина. Опиоиды — синтетические вещества другой химической группы с морфиноподобным действием (промедол, метадон, фентанил и др.) [gmt_yuldashev2024] (с. 15).\n\nАлкалоиды опия — производные изохинолина: ряд фенантрена (морфин, кодеин, тебаин) и ряд бензилизохинолина (папаверин, носкапин/наркотин) [gmt_yuldashev2024] (с. 15–16). У морфина есть свободный фенольный гидроксил; у кодеина он метилирован, у героина ацетилирован — на этом основаны различающие реакции [gmt_yuldashev2024] (с. 23, 27, 36).\n\nМолекулярные формулы: морфин C17H19NO3, кодеин C18H21NO3, петидин (меперидин, этил-1-метил-4-фенилпиперидин-4-карбоксилат) C15H21NO2, промедол (тримеперидин) C17H25NO2, метадон C21H27NO, фентанил C22H28N2O [gmt_pubchem_2026].",
+        "en": "Opiates are substances structurally related to morphine: morphine, codeine, semi-synthetic heroin (diacetylmorphine) and its main metabolite 6-monoacetylmorphine (6-MAM); heroin is made by acetylating morphine. Opioids are synthetic substances of other chemical classes with morphine-like action (promedol, methadone, fentanyl and others) [gmt_yuldashev2024] (p. 15).\n\nOpium alkaloids are isoquinoline derivatives: the phenanthrene series (morphine, codeine, thebaine) and the benzylisoquinoline series (papaverine, noscapine/narcotine) [gmt_yuldashev2024] (pp. 15–16). Morphine carries a free phenolic hydroxyl; in codeine it is methylated and in heroin acetylated — the differentiating reactions rely on this [gmt_yuldashev2024] (pp. 23, 27, 36).\n\nMolecular formulas: morphine C17H19NO3, codeine C18H21NO3, pethidine (meperidine, ethyl 1-methyl-4-phenylpiperidine-4-carboxylate) C15H21NO2, promedol (trimeperidine) C17H25NO2, methadone C21H27NO, fentanyl C22H28N2O [gmt_pubchem_2026]."
+      },
+      "citations": [
+        "gmt_yuldashev2024",
+        "gmt_pubchem_2026"
+      ]
+    },
+    {
+      "key": "scope",
+      "title": {
+        "uz": "Ob’ektlar va belgi-moddalar",
+        "ru": "Объекты и маркеры",
+        "en": "Objects and marker substances"
+      },
+      "body": {
+        "uz": "• Opiy: morfin, kodein, noskapin va mekon kislotasining birga topilishi opiy borligini isbotlaydi. Mekon kislotasi reaksiyasi kam sezgir va biologik ob’ektda tez parchalanadi, shuning uchun namuna tez tahlil qilinadi va qo‘shimcha ravishda mekonin izlanadi [gmt_yuldashev2024] (16-b.).\n• Omnopon (opiy alkaloidlari gidroxloridlari aralashmasi) tarkibida mekon kislotasi va mekonin bo‘lmaydi — bu opiyni omnopondan farqlashga yordam beradi [gmt_yuldashev2024] (16–17-b.).\n• Geroin organizmda va ishqoriy muhitda tez gidrolizlanib, avval 6-MAM, so‘ng morfin hosil qiladi; shuning uchun ob’ektlarda asosan 6-MAM va morfin topiladi [gmt_yuldashev2024] (35-b.).\n• Morfin asosan glyukuronidlar holida siydik bilan chiqariladi, qisman normorfinga aylanadi; kodein qisman O-demetillanib morfinga, N-demetillanib norkodeinga aylanadi [gmt_yuldashev2024] (22, 26-b.).\n• Fentanil yuqori lipofil; asosan metabolizm orqali chiqariladi, siydikdagi asosiy metaboliti — norfentanil [gmt_bird2023].\n• O‘limdan keyin geroin va morfin glyukuronidlari beqaror [drummer2004].",
+        "ru": "• Опий: совместное обнаружение морфина, кодеина, носкапина и меконовой кислоты доказывает присутствие опия. Реакция на меконовую кислоту малочувствительна, а сама кислота быстро разрушается в биологическом объекте, поэтому пробу анализируют быстро и дополнительно ищут меконин [gmt_yuldashev2024] (с. 16).\n• Омнопон (смесь гидрохлоридов алкалоидов опия) не содержит меконовой кислоты и меконина — это помогает отличить опий от омнопона [gmt_yuldashev2024] (с. 16–17).\n• Героин в организме и в щелочной среде быстро гидролизуется сначала до 6-МАМ, затем до морфина; поэтому в объектах находят в основном 6-МАМ и морфин [gmt_yuldashev2024] (с. 35).\n• Морфин выводится с мочой главным образом в виде глюкуронидов, частично превращается в норморфин; кодеин частично O-деметилируется до морфина и N-деметилируется до норкодеина [gmt_yuldashev2024] (с. 22, 26).\n• Фентанил высоколипофилен; выводится в основном путём метаболизма, главный метаболит в моче — норфентанил [gmt_bird2023].\n• Посмертно героин и глюкурониды морфина нестабильны [drummer2004].",
+        "en": "• Opium: finding morphine, codeine, noscapine and meconic acid together proves the presence of opium. The meconic acid reaction is insensitive and the acid degrades quickly in biological material, so the sample is analysed promptly and meconin is sought in addition [gmt_yuldashev2024] (p. 16).\n• Omnopon (a mixture of opium alkaloid hydrochlorides) contains no meconic acid or meconin, which helps to distinguish opium from omnopon [gmt_yuldashev2024] (pp. 16–17).\n• Heroin hydrolyses rapidly in the body and in alkaline media, first to 6-MAM and then to morphine; therefore mainly 6-MAM and morphine are found [gmt_yuldashev2024] (p. 35).\n• Morphine is excreted in urine mainly as glucuronides and partly converted to normorphine; codeine is partly O-demethylated to morphine and N-demethylated to norcodeine [gmt_yuldashev2024] (pp. 22, 26).\n• Fentanyl is highly lipophilic and is eliminated mainly by metabolism; the main urinary metabolite is norfentanyl [gmt_bird2023].\n• Post mortem, heroin and morphine glucuronides are unstable [drummer2004]."
+      },
+      "citations": [
+        "gmt_yuldashev2024",
+        "gmt_bird2023",
+        "drummer2004"
+      ]
+    },
+    {
+      "key": "reactions",
+      "title": {
+        "uz": "Rangli, cho‘ktiruvchi va mikrokristall reaksiyalar",
+        "ru": "Цветные, осадочные и микрокристаллические реакции",
+        "en": "Colour, precipitation and microcrystal reactions"
+      },
+      "body": {
+        "uz": "• Markis reaktivi: morfin, kodein, geroin — binafshadan qizil-binafshagacha rang [gmt_unodc_rapid_tests] (38-b.); opiy — binafsha [gmt_unodc_rapid_tests] (37-b.).\n• Mekke reaktivi: morfin, kodein, geroin — ko‘kdan yashilgacha [gmt_unodc_rapid_tests] (39-b.).\n• Konsentrlangan nitrat kislota (Markisdan keyingi farqlovchi test): geroin — sariq, sekin och yashilga; morfin — zarg‘aldoq, tez qizilga, so‘ng sariqqa; kodein — zarg‘aldoq, sekin sariqqa [gmt_unodc_rapid_tests] (39–40-b.).\n• Temir(III) xlorid: morfin erkin fenol gidroksili hisobiga ko‘k rang beradi; kodein, geroin va etilmorfin rang bermaydi [gmt_yuldashev2024] (23-b.).\n• Kaliy geksatsianoferrat(III) + temir(III) xlorid: morfin bilan ko‘k rang yoki cho‘kma; kodein reaksiya bermaydi [gmt_yuldashev2024] (24, 27-b.).\n• Vagner reaktivi (yodning kaliy yodiddagi eritmasi): morfin mikroskop ostida to‘g‘ri to‘rtburchak plastinkasimon kristallar hosil qiladi [gmt_yuldashev2024] (24-b.).\n• Mekon kislotasi + temir(III) xlorid — qizil rang, qizdirilganda o‘zgarmaydi; mekonin + konsentrlangan sulfat kislota — yashil rang [gmt_yuldashev2024] (17–18-b.).\n• Metadon: kobalt tiotsianat — ko‘k; Mandelin — yashil, so‘ng ko‘k [gmt_yuldashev2024] (43-b.).\n• Fentanil: limon kislotasining sirka angidriddagi eritmasi bilan qizdirilganda qizil-binafsha rang [gmt_yuldashev2024] (46-b.) — bu reaktiv uchlamchi aminlarga tanlab ta’sir qiladi [kato2001].\n• Petidin: Markis bilan zarg‘aldoq rang [gmt_yuldashev2024] (51-b.).",
+        "ru": "• Реактив Марки: морфин, кодеин, героин — от фиолетовой до красно-фиолетовой окраски [gmt_unodc_rapid_tests] (с. 38); опий — фиолетовая [gmt_unodc_rapid_tests] (с. 37).\n• Реактив Мекке: морфин, кодеин, героин — от синей до зелёной [gmt_unodc_rapid_tests] (с. 39).\n• Концентрированная азотная кислота (дифференцирующий тест после Марки): героин — жёлтая, медленно переходящая в светло-зелёную; морфин — оранжевая, быстро краснеющая, затем жёлтая; кодеин — оранжевая, медленно переходящая в жёлтую [gmt_unodc_rapid_tests] (с. 39–40).\n• Хлорид железа(III): морфин за счёт свободного фенольного гидроксила даёт синее окрашивание; кодеин, героин и этилморфин не окрашиваются [gmt_yuldashev2024] (с. 23).\n• Гексацианоферрат(III) калия + хлорид железа(III): с морфином синий раствор или осадок; кодеин не реагирует [gmt_yuldashev2024] (с. 24, 27).\n• Реактив Вагнера (иод в иодиде калия): морфин образует под микроскопом прямоугольные пластинчатые кристаллы [gmt_yuldashev2024] (с. 24).\n• Меконовая кислота + хлорид железа(III) — красное окрашивание, не исчезающее при нагревании; меконин + концентрированная серная кислота — зелёное окрашивание [gmt_yuldashev2024] (с. 17–18).\n• Метадон: тиоцианат кобальта — синее; Манделина — зелёное, затем синее [gmt_yuldashev2024] (с. 43).\n• Фентанил: раствор лимонной кислоты в уксусном ангидриде при нагревании — красно-фиолетовое окрашивание [gmt_yuldashev2024] (с. 46); этот реактив избирателен к третичным аминам [kato2001].\n• Петидин: с Марки — оранжевое окрашивание [gmt_yuldashev2024] (с. 51).",
+        "en": "• Marquis reagent: morphine, codeine, heroin — violet to reddish-purple [gmt_unodc_rapid_tests] (p. 38); opium — purple to violet [gmt_unodc_rapid_tests] (p. 37).\n• Mecke reagent: morphine, codeine, heroin — blue to green [gmt_unodc_rapid_tests] (p. 39).\n• Concentrated nitric acid (differentiating test after Marquis): heroin — yellow slowly turning light green; morphine — orange turning rapidly red, then slowly yellow; codeine — orange slowly turning yellow [gmt_unodc_rapid_tests] (pp. 39–40).\n• Iron(III) chloride: morphine gives a blue colour through its free phenolic hydroxyl; codeine, heroin and ethylmorphine give none [gmt_yuldashev2024] (p. 23).\n• Potassium hexacyanoferrate(III) + iron(III) chloride: blue solution or precipitate with morphine; codeine does not react [gmt_yuldashev2024] (pp. 24, 27).\n• Wagner reagent (iodine in potassium iodide): morphine forms rectangular plate-like crystals under the microscope [gmt_yuldashev2024] (p. 24).\n• Meconic acid + iron(III) chloride — red colour that persists on heating; meconin + concentrated sulfuric acid — green colour [gmt_yuldashev2024] (pp. 17–18).\n• Methadone: cobalt thiocyanate — blue; Mandelin — green, then blue [gmt_yuldashev2024] (p. 43).\n• Fentanyl: citric acid in acetic anhydride on heating — red-violet [gmt_yuldashev2024] (p. 46); this reagent is selective for tertiary amines [kato2001].\n• Pethidine: orange with Marquis [gmt_yuldashev2024] (p. 51)."
+      },
+      "citations": [
+        "gmt_unodc_rapid_tests",
+        "gmt_yuldashev2024",
+        "kato2001"
+      ]
+    },
+    {
+      "key": "tlc",
+      "title": {
+        "uz": "YuQX: tizimlar va aniqlash",
+        "ru": "ТСХ: системы и детекция",
+        "en": "TLC: systems and detection"
+      },
+      "body": {
+        "uz": "Silikagel plastinkada etilatsetat–metanol–25% ammiak (17:2:1) tizimida morfin, kodein va geroin standartlari bilan birga xromatografiya qilinadi; dog‘lar Markis yoki Frede reaktivi bilan ochiladi. Rf ortib borish tartibi: morfin < kodein < geroin < noskapin < papaverin [gmt_yuldashev2024] (23-b.). Darslikda shu tizim fentanil uchun «TE» (85:10:5) nomi bilan ham keltiriladi [gmt_yuldashev2024] (46-b.).\n\nMune bo‘yicha modifikatsiyalangan Dragendorf reaktivi alkaloidlar uchun umumiy ochuvchi; petidin va fentanil uchun yodoplatinat ishlatiladi [gmt_yuldashev2024] (24, 46, 51-b.). Rf faqat bir xil sharoitdagi standartlar bilan solishtirilganda ma’noga ega [uchiyama2008].",
+        "ru": "На пластинке силикагеля в системе этилацетат–метанол–25% аммиак (17:2:1) хроматографируют вместе со стандартами морфина, кодеина и героина; пятна проявляют реактивом Марки или Фреде. Порядок возрастания Rf: морфин < кодеин < героин < носкапин < папаверин [gmt_yuldashev2024] (с. 23). В пособии та же система приведена для фентанила как «TE» (85:10:5) [gmt_yuldashev2024] (с. 46).\n\nМодифицированный по Мунье реактив Драгендорфа — общий проявитель алкалоидов; для петидина и фентанила применяют иодоплатинат [gmt_yuldashev2024] (с. 24, 46, 51). Rf имеет смысл только при сравнении со стандартами в тех же условиях [uchiyama2008].",
+        "en": "On silica gel in ethyl acetate–methanol–25% ammonia (17:2:1), samples are run alongside morphine, codeine and heroin standards; spots are revealed with Marquis or Fröhde reagent. Rf increases in the order morphine < codeine < heroin < noscapine < papaverine [gmt_yuldashev2024] (p. 23). The textbook lists the same system for fentanyl as «TE» (85:10:5) [gmt_yuldashev2024] (p. 46).\n\nDragendorff reagent modified after Munier is the general alkaloid visualiser; iodoplatinate is used for pethidine and fentanyl [gmt_yuldashev2024] (pp. 24, 46, 51). Rf is meaningful only against standards run under the same conditions [uchiyama2008]."
+      },
+      "citations": [
+        "gmt_yuldashev2024",
+        "uchiyama2008"
+      ]
+    },
+    {
+      "key": "instrumental",
+      "title": {
+        "uz": "Instrumental tasdiqlash",
+        "ru": "Инструментальное подтверждение",
+        "en": "Instrumental confirmation"
+      },
+      "body": {
+        "uz": "• UB-spektr: morfin kislotali eritmada taxminan 285 nm da yutadi, ishqoriy eritmada fenolyat hosil bo‘lishi hisobiga maksimum uzun to‘lqin tomonga siljiydi [gmt_yuldashev2024] (24, 32–33-b.).\n• Geroin va uning metabolitlari (6-MAM, morfin) GX-MS va SX-MS bilan aniqlanadi; immunokimyoviy usullar faqat skrining uchun [gmt_yuldashev2024] (37-b.).\n• EI mass-spektrlarda xarakterli cho‘qqilar (NIST yozuvlari): fentanil — m/z 245 (asosiy), 146, 189; metadon — m/z 72 (asosiy); petidin — m/z 71 (asosiy), molekulyar ion m/z 247 [gmt_pubchem_2026]. Fentanil uchun darslikdagi qiymatlar (245, 146, 189) shu ma’lumotlarga mos [gmt_yuldashev2024] (47-b.).\n• Promedol uchun mustaqil tekshirilgan mass-spektr ma’lumoti topilmadi; PubChem da trimeperidin uchun GX-MS yozuvi yo‘q [gmt_pubchem_2026]; darslikdagi raqamlar keltirilmaydi (pastga qarang).\n• Identifikatsiya mezonlari laboratoriya standartiga ko‘ra baholanadi [asb113_2023].",
+        "ru": "• УФ-спектр: морфин в кислом растворе поглощает около 285 нм, в щелочном максимум смещается в длинноволновую сторону за счёт образования фенолята [gmt_yuldashev2024] (с. 24, 32–33).\n• Героин и его метаболиты (6-МАМ, морфин) определяют ГХ-МС и ЖХ-МС; иммунохимические методы — только для скрининга [gmt_yuldashev2024] (с. 37).\n• Характерные пики в масс-спектрах ЭИ (записи NIST): фентанил — m/z 245 (основной), 146, 189; метадон — m/z 72 (основной); петидин — m/z 71 (основной), молекулярный ион m/z 247 [gmt_pubchem_2026]. Значения для фентанила в пособии (245, 146, 189) с этим согласуются [gmt_yuldashev2024] (с. 47).\n• Независимо проверенных масс-спектральных данных для промедола не найдено; в PubChem нет записи ГХ-МС для тримеперидина [gmt_pubchem_2026]; числа из пособия не приводятся (см. ниже).\n• Критерии идентификации оценивают по лабораторному стандарту [asb113_2023].",
+        "en": "• UV spectrum: morphine absorbs at about 285 nm in acid; in alkali the maximum shifts to longer wavelength because the phenolate forms [gmt_yuldashev2024] (pp. 24, 32–33).\n• Heroin and its metabolites (6-MAM, morphine) are determined by GC-MS and LC-MS; immunochemical methods serve for screening only [gmt_yuldashev2024] (p. 37).\n• Characteristic EI mass-spectral peaks (NIST records): fentanyl — m/z 245 (base), 146, 189; methadone — m/z 72 (base); pethidine — m/z 71 (base) with the molecular ion m/z 247 [gmt_pubchem_2026]. The textbook's fentanyl values (245, 146, 189) agree [gmt_yuldashev2024] (p. 47).\n• No independently verified mass spectrum was found for promedol; PubChem has no GC-MS record for trimeperidine [gmt_pubchem_2026]; the textbook's numbers are not reproduced (see below).\n• Identification criteria are assessed against a laboratory standard [asb113_2023]."
+      },
+      "citations": [
+        "gmt_yuldashev2024",
+        "gmt_pubchem_2026",
+        "asb113_2023"
+      ]
+    },
+    {
+      "key": "interpretation",
+      "title": {
+        "uz": "Ajratib olish va talqin",
+        "ru": "Изолирование и интерпретация",
+        "en": "Isolation and interpretation"
+      },
+      "body": {
+        "uz": "• Morfin oqsillar bilan barqaror birikmalar hosil qiladi va xloroform, efirda yomon eriydi — shuning uchun ajratib olishda katta qismi yo‘qolishi mumkin [gmt_yuldashev2024] (19-b.).\n• Morfin suvli ajratmadan ishqoriy muhitda ekstraksiya qilinadi; darslikda ko‘rsatilgan 8,6–10,2 oralig‘i pH qiymati (Rf emas) [gmt_yuldashev2024] (22-b.). Kodein pH 8–9,5 da morfindan yaxshiroq ekstraksiyalanadi [gmt_yuldashev2024] (25-b.).\n• Morfin va kodeinni ajratish: ishqor qo‘shilganda morfin fenolyat holida suvli qatlamda qoladi, kodein efirga o‘tadi [gmt_yuldashev2024] (28-b.).\n• Faqat morfinning topilishi manbani ko‘rsatmaydi: morfin, opiy yoki omnopon iste’moli mumkin [gmt_yuldashev2024] (19-b.); kodein ham morfinga metabolizlanadi [gmt_yuldashev2024] (26-b.). Manba belgilari — 6-MAM (geroin), noskapin va mekon kislotasi (opiy) [gmt_yuldashev2024] (16, 35-b.).",
+        "ru": "• Морфин образует с белками прочные соединения и плохо растворим в хлороформе и эфире — поэтому при изолировании значительная его часть может теряться [gmt_yuldashev2024] (с. 19).\n• Морфин экстрагируют из водного извлечения в щелочной среде; указанный в пособии интервал 8,6–10,2 — это значения pH (а не Rf) [gmt_yuldashev2024] (с. 22). Кодеин при pH 8–9,5 экстрагируется лучше морфина [gmt_yuldashev2024] (с. 25).\n• Разделение морфина и кодеина: при добавлении щёлочи морфин остаётся в водном слое в виде фенолята, кодеин переходит в эфир [gmt_yuldashev2024] (с. 28).\n• Обнаружение одного морфина не указывает на источник: возможно употребление морфина, опия или омнопона [gmt_yuldashev2024] (с. 19); кодеин также метаболизируется до морфина [gmt_yuldashev2024] (с. 26). Маркеры источника — 6-МАМ (героин), носкапин и меконовая кислота (опий) [gmt_yuldashev2024] (с. 16, 35).",
+        "en": "• Morphine forms stable complexes with proteins and dissolves poorly in chloroform and ether, so a large part may be lost during isolation [gmt_yuldashev2024] (p. 19).\n• Morphine is extracted from the aqueous isolate under alkaline conditions; the range 8.6–10.2 given in the textbook is a pH range (not an Rf) [gmt_yuldashev2024] (p. 22). Codeine is extracted better than morphine at pH 8–9.5 [gmt_yuldashev2024] (p. 25).\n• Separating morphine and codeine: on adding alkali, morphine stays in the aqueous layer as phenolate while codeine passes into ether [gmt_yuldashev2024] (p. 28).\n• Morphine alone does not show the source: morphine, opium or omnopon use are all possible [gmt_yuldashev2024] (p. 19); codeine is also metabolised to morphine [gmt_yuldashev2024] (p. 26). Source markers are 6-MAM (heroin), noscapine and meconic acid (opium) [gmt_yuldashev2024] (pp. 16, 35)."
+      },
+      "citations": [
+        "gmt_yuldashev2024"
+      ]
+    },
+    {
+      "key": "limitations",
+      "title": {
+        "uz": "Cheklovlar",
+        "ru": "Ограничения",
+        "en": "Limitations"
+      },
+      "body": {
+        "uz": "• Markis, Mekke va boshqa rangli testlarda o‘xshash rangni boshqa moddalar ham beradi; natija faqat «mumkin» degan ma’noni anglatadi [gmt_unodc_rapid_tests] (38–39-b.).\n• Nitrat kislota testi yolg‘iz ishlatilmaydi — u Markis testidan keyingi ikkinchi test [gmt_unodc_rapid_tests] (40-b.).\n• Immunokimyoviy opiat skriningi o‘zaro reaksiyalar beradi va tasdiqlashni talab qiladi [saitman2014].",
+        "ru": "• В тестах Марки, Мекке и других сходную окраску дают и другие вещества; результат означает лишь «возможно» [gmt_unodc_rapid_tests] (с. 38–39).\n• Тест с азотной кислотой не применяют самостоятельно — он второй после теста Марки [gmt_unodc_rapid_tests] (с. 40).\n• Иммунохимический скрининг опиатов даёт перекрёстные реакции и требует подтверждения [saitman2014].",
+        "en": "• With Marquis, Mecke and other colour tests other substances give similar colours; a result only means «possible» [gmt_unodc_rapid_tests] (pp. 38–39).\n• The nitric acid test is not used alone — it is a secondary test after Marquis [gmt_unodc_rapid_tests] (p. 40).\n• Immunochemical opiate screening shows cross-reactivity and needs confirmation [saitman2014]."
+      },
+      "citations": [
+        "gmt_unodc_rapid_tests",
+        "saitman2014"
+      ]
+    },
+    {
+      "key": "cautions",
+      "title": {
+        "uz": "Darslikdagi tuzatilgan joylar",
+        "ru": "Исправления по сравнению с пособием",
+        "en": "Corrections to the textbook"
+      },
+      "body": {
+        "uz": "• Petidin darslikda «1-metil-4-etinil-4-fenilpiperidin» deb berilgan [gmt_yuldashev2024] (50-b.); to‘g‘risi — etil 1-metil-4-fenilpiperidin-4-karboksilat, C15H21NO2 [gmt_pubchem_2026].\n• Darslikda petidinning IQ-spektri sifatida promedol bo‘limidagi raqamlar takrorlangan [gmt_yuldashev2024] (41, 52-b.); bu raqamlar (186, 42, 201, 56 …) to‘lqin soni emas, mass-spektr m/z ga o‘xshaydi va mustaqil manba bilan tasdiqlanmadi — keltirilmaydi.\n• Morfin ekstraksiyasi uchun «Rf = 8,6–10,2» yozuvi pH ma’nosida tuzatildi [gmt_yuldashev2024] (22-b.).\n• Darslikdagi opiatlar Markis jadvalida bir modda ikki xil nom va rang bilan takrorlanadi (geroin/diamorfin, buprenorfin) [gmt_yuldashev2024] (31–32-b.); jadval o‘rniga xalqaro qo‘llanmadagi umumiy natija berildi.",
+        "ru": "• Петидин в пособии назван «1-метил-4-этинил-4-фенилпиперидин» [gmt_yuldashev2024] (с. 50); правильно — этил-1-метил-4-фенилпиперидин-4-карбоксилат, C15H21NO2 [gmt_pubchem_2026].\n• В качестве ИК-спектра петидина в пособии повторены числа из раздела о промедоле [gmt_yuldashev2024] (с. 41, 52); эти числа (186, 42, 201, 56 …) не волновые числа, а похожи на m/z масс-спектра и независимым источником не подтверждены — не приводятся.\n• Запись «Rf = 8,6–10,2» для экстракции морфина исправлена в значении pH [gmt_yuldashev2024] (с. 22).\n• В таблице Марки для опиатов одно вещество повторяется под разными названиями и окрасками (героин/диаморфин, бупренорфин) [gmt_yuldashev2024] (с. 31–32); вместо таблицы дан обобщённый результат из международного руководства.",
+        "en": "• The textbook names pethidine «1-methyl-4-ethynyl-4-phenylpiperidine» [gmt_yuldashev2024] (p. 50); correct is ethyl 1-methyl-4-phenylpiperidine-4-carboxylate, C15H21NO2 [gmt_pubchem_2026].\n• The textbook repeats the promedol figures as the IR spectrum of pethidine [gmt_yuldashev2024] (pp. 41, 52); these numbers (186, 42, 201, 56 …) are not wavenumbers but resemble mass-spectral m/z values, and no independent source confirmed them — not reproduced.\n• «Rf = 8.6–10.2» for morphine extraction is corrected to mean pH [gmt_yuldashev2024] (p. 22).\n• In the Marquis table for opiates one substance appears twice under different names and colours (heroin/diamorphine, buprenorphine) [gmt_yuldashev2024] (pp. 31–32); the general result from the international manual is given instead."
+      },
+      "citations": [
+        "gmt_yuldashev2024",
+        "gmt_pubchem_2026"
+      ]
+    }
+  ],
+  "keywords": {
+    "uz": [
+      "opiatlar",
+      "opioidlar",
+      "opiy",
+      "morfin",
+      "kodein",
+      "geroin",
+      "6-MAM",
+      "monoatsetilmorfin",
+      "noskapin",
+      "narkotin",
+      "mekon kislotasi",
+      "mekonin",
+      "omnopon",
+      "promedol",
+      "trimeperidin",
+      "petidin",
+      "meperidin",
+      "metadon",
+      "fentanil",
+      "norfentanil",
+      "Markis reaktivi",
+      "Mekke reaktivi",
+      "temir(III) xlorid",
+      "Vagner reaktivi"
+    ],
+    "ru": [
+      "опиаты",
+      "опиоиды",
+      "опий",
+      "морфин",
+      "кодеин",
+      "героин",
+      "6-МАМ",
+      "носкапин",
+      "наркотин",
+      "меконовая кислота",
+      "меконин",
+      "омнопон",
+      "промедол",
+      "тримеперидин",
+      "петидин",
+      "меперидин",
+      "метадон",
+      "фентанил",
+      "норфентанил",
+      "реактив Марки",
+      "реактив Мекке"
+    ],
+    "en": [
+      "opiates",
+      "opioids",
+      "opium",
+      "morphine",
+      "codeine",
+      "heroin",
+      "diamorphine",
+      "6-MAM",
+      "noscapine",
+      "meconic acid",
+      "meconin",
+      "omnopon",
+      "promedol",
+      "trimeperidine",
+      "pethidine",
+      "meperidine",
+      "methadone",
+      "fentanyl",
+      "norfentanyl",
+      "Marquis reagent",
+      "Mecke reagent"
+    ]
+  },
+  "omitted_unverified": [
+    "Lethal/toxic doses of morphine, codeine, opium and fentanyl potency ratios (pp. 20-21, 26, 44-45): not verified, not analytical.",
+    "Rf numbers in all systems (pp. 23, 32, 43, 46-47): condition-dependent; only elution order kept.",
+    "Fröhde colours and sensitivities (codeine 0.1 ug, heroin 0.05-0.07 ug, p. 27, 36): not verified.",
+    "IR wavenumbers for morphine, codeine, heroin, ethylmorphine, methadone, fentanyl (pp. 24-44): not verified against a reference library.",
+    "Promedol Marquis 'dark red', UV and the 'IR' list (pp. 40-41): not verified; promedol has no PubChem GC-MS record.",
+    "Pethidine UV maxima 204/207/213 nm (p. 52): implausible for a phenylpiperidine ester, not reproduced.",
+    "Methadone concentrations in fatal cases (Baselt, p. 42) and meperidine table (p. 50): secondary citation, omitted."
+  ],
+  "quiz": [
+    {
+      "id": "gmt.op.1",
+      "question": {
+        "uz": "Morfinni kodein va geroindan qaysi oddiy reaktiv bilan farqlash mumkin?",
+        "ru": "Каким простым реактивом можно отличить морфин от кодеина и героина?",
+        "en": "Which simple reagent distinguishes morphine from codeine and heroin?"
+      },
+      "answer": {
+        "uz": "Temir(III) xlorid — morfin ko‘k rang beradi",
+        "ru": "Хлорид железа(III) — морфин даёт синее окрашивание",
+        "en": "Iron(III) chloride — morphine turns blue"
+      },
+      "distractors": [
+        {
+          "uz": "Markis reaktivi — faqat morfin rang beradi",
+          "ru": "Реактив Марки — окрашивается только морфин",
+          "en": "Marquis reagent — only morphine reacts"
+        },
+        {
+          "uz": "Kobalt tiotsianat — morfin ko‘k rang beradi",
+          "ru": "Тиоцианат кобальта — морфин даёт синее окрашивание",
+          "en": "Cobalt thiocyanate — morphine turns blue"
+        },
+        {
+          "uz": "Dille–Koppani — morfin binafsha rang beradi",
+          "ru": "Дилле–Коппани — морфин даёт фиолетовое окрашивание",
+          "en": "Dille–Koppanyi — morphine turns violet"
+        }
+      ],
+      "citations": [
+        {
+          "key": "gmt_yuldashev2024",
+          "pages": "23"
+        }
+      ]
+    },
+    {
+      "id": "gmt.op.2",
+      "question": {
+        "uz": "Geroin iste’molining eng muhim belgi-metaboliti qaysi?",
+        "ru": "Какой метаболит — главный маркер употребления героина?",
+        "en": "Which metabolite is the key marker of heroin use?"
+      },
+      "answer": {
+        "uz": "6-monoatsetilmorfin (6-MAM)",
+        "ru": "6-моноацетилморфин (6-МАМ)",
+        "en": "6-monoacetylmorphine (6-MAM)"
+      },
+      "distractors": [
+        {
+          "uz": "Norkodein",
+          "ru": "Норкодеин",
+          "en": "Norcodeine"
+        },
+        {
+          "uz": "Mekon kislotasi",
+          "ru": "Меконовая кислота",
+          "en": "Meconic acid"
+        },
+        {
+          "uz": "Benzoilekgonin",
+          "ru": "Бензоилэкгонин",
+          "en": "Benzoylecgonine"
+        }
+      ],
+      "citations": [
+        {
+          "key": "gmt_yuldashev2024",
+          "pages": "31, 35"
+        }
+      ]
+    },
+    {
+      "id": "gmt.op.3",
+      "question": {
+        "uz": "Opiyni omnopondan farqlashga qaysi moddalar yordam beradi?",
+        "ru": "Какие вещества помогают отличить опий от омнопона?",
+        "en": "Which substances help distinguish opium from omnopon?"
+      },
+      "answer": {
+        "uz": "Mekon kislotasi va mekonin (omnoponda yo‘q)",
+        "ru": "Меконовая кислота и меконин (в омнопоне отсутствуют)",
+        "en": "Meconic acid and meconin (absent from omnopon)"
+      },
+      "distractors": [
+        {
+          "uz": "Morfin va kodein",
+          "ru": "Морфин и кодеин",
+          "en": "Morphine and codeine"
+        },
+        {
+          "uz": "6-MAM va morfin",
+          "ru": "6-МАМ и морфин",
+          "en": "6-MAM and morphine"
+        },
+        {
+          "uz": "Papaverin va tebain",
+          "ru": "Папаверин и тебаин",
+          "en": "Papaverine and thebaine"
+        }
+      ],
+      "citations": [
+        {
+          "key": "gmt_yuldashev2024",
+          "pages": "16–17"
+        }
+      ]
+    },
+    {
+      "id": "gmt.op.4",
+      "question": {
+        "uz": "Markis reaktivi morfin, kodein va geroin bilan qanday rang beradi?",
+        "ru": "Какую окраску даёт реактив Марки с морфином, кодеином и героином?",
+        "en": "What colour does Marquis reagent give with morphine, codeine and heroin?"
+      },
+      "answer": {
+        "uz": "Binafshadan qizil-binafshagacha",
+        "ru": "От фиолетовой до красно-фиолетовой",
+        "en": "Violet to reddish-purple"
+      },
+      "distractors": [
+        {
+          "uz": "Zarg‘aldoqdan jigarranggacha",
+          "ru": "От оранжевой до коричневой",
+          "en": "Orange to brown"
+        },
+        {
+          "uz": "Ko‘k, xloroform qatlamida saqlanadi",
+          "ru": "Синяя, сохраняется в хлороформном слое",
+          "en": "Blue, persisting in the chloroform layer"
+        },
+        {
+          "uz": "Rang hosil bo‘lmaydi",
+          "ru": "Окраска не появляется",
+          "en": "No colour"
+        }
+      ],
+      "citations": [
+        {
+          "key": "gmt_unodc_rapid_tests",
+          "pages": "38"
+        }
+      ]
+    },
+    {
+      "id": "gmt.op.5",
+      "question": {
+        "uz": "Petidinning (meperidin) to‘g‘ri kimyoviy nomi qaysi?",
+        "ru": "Каково правильное химическое название петидина (меперидина)?",
+        "en": "What is the correct chemical name of pethidine (meperidine)?"
+      },
+      "answer": {
+        "uz": "Etil 1-metil-4-fenilpiperidin-4-karboksilat",
+        "ru": "Этил-1-метил-4-фенилпиперидин-4-карбоксилат",
+        "en": "Ethyl 1-methyl-4-phenylpiperidine-4-carboxylate"
+      },
+      "distractors": [
+        {
+          "uz": "1-metil-4-etinil-4-fenilpiperidin",
+          "ru": "1-метил-4-этинил-4-фенилпиперидин",
+          "en": "1-methyl-4-ethynyl-4-phenylpiperidine"
+        },
+        {
+          "uz": "6-dimetilamino-4,4-difenil-3-geptanon",
+          "ru": "6-диметиламино-4,4-дифенил-3-гептанон",
+          "en": "6-dimethylamino-4,4-diphenyl-3-heptanone"
+        },
+        {
+          "uz": "1,2,5-trimetil-4-fenil-4-propioniloksipiperidin",
+          "ru": "1,2,5-триметил-4-фенил-4-пропионилоксипиперидин",
+          "en": "1,2,5-trimethyl-4-phenyl-4-propionyloxypiperidine"
+        }
+      ],
+      "citations": [
+        {
+          "key": "gmt_pubchem_2026"
+        },
+        {
+          "key": "gmt_yuldashev2024",
+          "pages": "50"
+        }
+      ]
+    },
+    {
+      "id": "gmt.op.6",
+      "question": {
+        "uz": "Fentanilning EI mass-spektridagi asosiy cho‘qqi qaysi?",
+        "ru": "Какой основной пик в ЭИ масс-спектре фентанила?",
+        "en": "What is the base peak in the EI mass spectrum of fentanyl?"
+      },
+      "answer": {
+        "uz": "m/z 245",
+        "ru": "m/z 245",
+        "en": "m/z 245"
+      },
+      "distractors": [
+        {
+          "uz": "m/z 72",
+          "ru": "m/z 72",
+          "en": "m/z 72"
+        },
+        {
+          "uz": "m/z 82",
+          "ru": "m/z 82",
+          "en": "m/z 82"
+        },
+        {
+          "uz": "m/z 204",
+          "ru": "m/z 204",
+          "en": "m/z 204"
+        }
+      ],
+      "citations": [
+        {
+          "key": "gmt_pubchem_2026"
+        },
+        {
+          "key": "gmt_yuldashev2024",
+          "pages": "47"
+        }
+      ]
+    },
+    {
+      "id": "gmt.op.7",
+      "question": {
+        "uz": "Morfin ekstraksiyasi uchun darslikdagi «8,6–10,2» oralig‘i nimani bildiradi?",
+        "ru": "Что означает интервал «8,6–10,2» в пособии для экстракции морфина?",
+        "en": "What does the textbook's «8.6–10.2» for morphine extraction actually denote?"
+      },
+      "answer": {
+        "uz": "Ekstraksiya muhitining pH qiymatini",
+        "ru": "Значение pH среды экстракции",
+        "en": "The pH of the extraction medium"
+      },
+      "distractors": [
+        {
+          "uz": "YuQX dagi Rf qiymatini",
+          "ru": "Значение Rf в ТСХ",
+          "en": "The TLC Rf value"
+        },
+        {
+          "uz": "UB-spektr maksimumini (nm)",
+          "ru": "Максимум УФ-спектра (нм)",
+          "en": "The UV maximum (nm)"
+        },
+        {
+          "uz": "Ekstraksiya unumini (%)",
+          "ru": "Выход экстракции (%)",
+          "en": "The extraction yield (%)"
+        }
+      ],
+      "citations": [
+        {
+          "key": "gmt_yuldashev2024",
+          "pages": "22"
+        }
+      ]
+    },
+    {
+      "id": "gmt.op.8",
+      "question": {
+        "uz": "Nitrat kislota testida qaysi opiat sariq rang berib, sekin och yashilga o‘tadi?",
+        "ru": "Какой опиат в тесте с азотной кислотой даёт жёлтую окраску, медленно переходящую в светло-зелёную?",
+        "en": "In the nitric acid test, which opiate gives yellow slowly turning light green?"
+      },
+      "answer": {
+        "uz": "Geroin",
+        "ru": "Героин",
+        "en": "Heroin"
+      },
+      "distractors": [
+        {
+          "uz": "Morfin",
+          "ru": "Морфин",
+          "en": "Morphine"
+        },
+        {
+          "uz": "Kodein",
+          "ru": "Кодеин",
+          "en": "Codeine"
+        },
+        {
+          "uz": "Metadon",
+          "ru": "Метадон",
+          "en": "Methadone"
+        }
+      ],
+      "citations": [
+        {
+          "key": "gmt_unodc_rapid_tests",
+          "pages": "39"
+        }
+      ]
+    }
+  ]
+}

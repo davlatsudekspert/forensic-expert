@@ -1,0 +1,382 @@
+{
+  "id": "guideline.chem.gmt_analysis_scheme",
+  "discipline_codes": [
+    "forensic_chemistry",
+    "forensic_toxicology"
+  ],
+  "status": "NEEDS_REVIEW",
+  "updated": "2026-10-09",
+  "translation_status": {
+    "uz": "AUTHORED",
+    "ru": "DRAFT",
+    "en": "DRAFT"
+  },
+  "related_tool_ids": [],
+  "source_access": {
+    "source_key": "gmt_yuldashev2024",
+    "access": "free",
+    "basis": "author_permission_2026-10-09"
+  },
+  "title": {
+    "uz": "Giyohvand moddalarni tahlil qilish sxemasi",
+    "ru": "Схема анализа наркотических средств",
+    "en": "Analytical scheme for drugs of abuse"
+  },
+  "summary": {
+    "uz": "Giyohvandlik vositalari, psixotrop moddalar va prekursorlar tahlili bosqichma-bosqich olib boriladi: namuna olish va tayyorlash, yot moddalardan tozalash, rangli va cho‘ktiruvchi reaksiyalar bilan dastlabki skrining, YuQX, so‘ng GX-MS yoki SX-MS bilan tasdiqlash. Rangli testlar faqat taxminiy natija beradi; xulosa boshqa tamoyilga asoslangan usullar majmuasiga tayanadi.",
+    "ru": "Анализ наркотических средств, психотропных веществ и прекурсоров проводится поэтапно: отбор и подготовка пробы, очистка от посторонних веществ, предварительный скрининг цветными и осадочными реакциями, ТСХ, затем подтверждение методом ГХ-МС или ЖХ-МС. Цветные тесты дают лишь предварительный результат; вывод опирается на совокупность методов, основанных на разных принципах.",
+    "en": "Drugs, psychotropic substances and precursors are analysed stepwise: sampling and preparation, clean-up, preliminary screening with colour and precipitation reactions, TLC, then confirmation by GC-MS or LC-MS. Colour tests are presumptive only; a conclusion rests on a combination of techniques based on different principles."
+  },
+  "sections": [
+    {
+      "key": "basis",
+      "title": {
+        "uz": "Tahlil bosqichlari",
+        "ru": "Этапы анализа",
+        "en": "Stages of the analysis"
+      },
+      "body": {
+        "uz": "Darslikda tekshiruv uch bosqichga ajratiladi: namuna olish va tahlilga tayyorlash, ajratmani yot moddalardan tozalash, so‘ng sifat va miqdoriy tahlil [gmt_yuldashev2024] (9-b.).\n\nQo‘llanadigan usullar guruhlari: kimyoviy (rang hosil qiluvchi va cho‘ktiruvchi reaksiyalar), mikrokristalloskopiya, xromatografiya (YuQX, GSX, YuSSX, GX-MS, SX-MS), fotometriya (FEK, UB va IQ spektrofotometriya), fluoressensiya, immunokimyoviy va boshqa usullar [gmt_yuldashev2024] (9–10-b.).\n\nSWGDRUG tavsiyalarida usullar selektivligiga ko‘ra uch toifaga bo‘linadi: A (tuzilma haqida ma’lumot beradi — IQ, MS, YaMR, Raman), B (kimyoviy-fizik xossalar bo‘yicha selektiv — GX, SX, YuQX, mikrokristall testlar) va C (rangli testlar, immunotahlil, suyuqlanish harorati) [swgdrug2024].",
+        "ru": "В учебном пособии исследование делится на три этапа: отбор пробы и подготовка к анализу, очистка извлечения от посторонних веществ, затем качественный и количественный анализ [gmt_yuldashev2024] (с. 9).\n\nГруппы применяемых методов: химические (цветные и осадочные реакции), микрокристаллоскопия, хроматография (ТСХ, ГЖХ, ВЭЖХ, ГХ-МС, ЖХ-МС), фотометрия (ФЭК, УФ- и ИК-спектрофотометрия), флуоресценция, иммунохимические и другие методы [gmt_yuldashev2024] (с. 9–10).\n\nВ рекомендациях SWGDRUG методы делятся по селективности на три категории: A (дают структурную информацию — ИК, МС, ЯМР, рамановская спектроскопия), B (селективность за счёт химико-физических свойств — ГХ, ЖХ, ТСХ, микрокристаллические тесты) и C (цветные тесты, иммуноанализ, температура плавления) [swgdrug2024].",
+        "en": "The textbook divides the examination into three stages: sampling and preparation, clean-up of the extract, then qualitative and quantitative analysis [gmt_yuldashev2024] (p. 9).\n\nThe method families used are chemical (colour and precipitation reactions), microcrystal tests, chromatography (TLC, GC, HPLC, GC-MS, LC-MS), photometry (colorimetry, UV and IR spectrophotometry), fluorescence, immunochemical and other methods [gmt_yuldashev2024] (pp. 9–10).\n\nThe SWGDRUG recommendations group techniques by selectivity into three categories: A (structural information — IR, MS, NMR, Raman), B (selectivity through chemical and physical properties — GC, LC, TLC, microcrystalline tests) and C (colour tests, immunoassay, melting point) [swgdrug2024]."
+      },
+      "citations": [
+        "gmt_yuldashev2024",
+        "swgdrug2024"
+      ]
+    },
+    {
+      "key": "scope",
+      "title": {
+        "uz": "Ob’ektlar va namuna olish",
+        "ru": "Объекты и отбор проб",
+        "en": "Objects and sampling"
+      },
+      "body": {
+        "uz": "Tahlil ob’ektlari: o‘simlik mahsulotlari (nasha, ko‘knori) va ularning ekstraktlari, kukunlar, tabletka va drajelar, in’eksion eritmalar, biologik namunalar (qon, siydik, soch, tirnoq, ichki a’zolar) [gmt_yuldashev2024] (9-b.).\n\nMusodara qilingan ashyodan namuna olishda: modda juda oz bo‘lsa — butun miqdor qayd etiladi; tabletka, qattiq yoki yumshoq massa (nasha smolasi, opiy) avval kesib maydalanadi; kapsula ehtiyotkorlik bilan ochiladi; o‘simlik xomashyosi maydalanadi; tamaki mahsulotida bitta o‘ram ochilib tekshiriladi; qayta tahlil kerak bo‘lsa, ikki baravar ko‘p namuna olinadi [gmt_yuldashev2024] (145-b.).\n\nBiologik namunalarni yig‘ish, konservantlar va saqlash bo‘yicha toksikologik tavsiyalarga amal qilinadi [dinis2010, flanagan2005]; soch uzoq muddatli iste’mol tarixini aks ettiradi, lekin tashqi ifloslanish xavfi bor [kintz2017].",
+        "ru": "Объекты анализа: растительные продукты (каннабис, мак) и их экстракты, порошки, таблетки и драже, инъекционные растворы, биологические образцы (кровь, моча, волосы, ногти, внутренние органы) [gmt_yuldashev2024] (с. 9).\n\nПри отборе проб изъятого материала: если вещества очень мало — фиксируется всё количество; таблетки, твёрдые или мягкие массы (смола каннабиса, опий) сначала измельчают; капсулы вскрывают осторожно; растительное сырьё измельчают; в табачных изделиях вскрывают одну единицу; при необходимости повторного анализа отбирают вдвое больше [gmt_yuldashev2024] (с. 145).\n\nСбор, консервирование и хранение биологических образцов проводят по токсикологическим рекомендациям [dinis2010, flanagan2005]; волосы отражают длительный анамнез потребления, но возможно внешнее загрязнение [kintz2017].",
+        "en": "Objects of analysis: plant products (cannabis, opium poppy) and their extracts, powders, tablets and dragées, injection solutions, biological samples (blood, urine, hair, nails, organs) [gmt_yuldashev2024] (p. 9).\n\nWhen sampling seized material: if very little substance is present, the whole amount is recorded; tablets and hard or soft masses (cannabis resin, opium) are first cut and ground; capsules are opened carefully; plant material is comminuted; for tobacco products one unit is opened; if re-analysis may be needed, twice the amount is taken [gmt_yuldashev2024] (p. 145).\n\nBiological specimens are collected, preserved and stored according to toxicological guidance [dinis2010, flanagan2005]; hair reflects long-term use history but is exposed to external contamination [kintz2017]."
+      },
+      "citations": [
+        "gmt_yuldashev2024",
+        "dinis2010",
+        "flanagan2005",
+        "kintz2017"
+      ]
+    },
+    {
+      "key": "reactions",
+      "title": {
+        "uz": "1-bosqich: rangli va cho‘ktiruvchi reaksiyalar",
+        "ru": "Этап 1: цветные и осадочные реакции",
+        "en": "Step 1: colour and precipitation reactions"
+      },
+      "body": {
+        "uz": "Dastlabki skrining uchun guruh reaktivlari ishlatiladi: Markis (opiatlar, amfetaminlar), Mekke, kobalt tiotsianat (kokain), Saymon (ikkilamchi aminlar), Dyukenua–Levin va Fast Blue B (kannabis), Dille–Koppani (barbituratlar), Simmerman va Vitali–Moren (benzodiazepinlar) [gmt_unodc_rapid_tests]. Ijobiy natija faqat moddaning bo‘lishi «mumkinligini» bildiradi: o‘xshash rangni boshqa nazoratdagi yoki nazoratdagi bo‘lmagan moddalar ham beradi [gmt_unodc_rapid_tests].\n\nAlkaloidlarni umumiy cho‘ktiruvchi reaktivlar (Dragendorf, Mayer, Vagner, pikrin kislota) va mikroskop ostida ko‘riladigan mikrokristall reaksiyalar qo‘shimcha dalil beradi [gmt_yuldashev2024] (24, 26, 28, 40-b.).\n\nRangli testlarning kimyoviy mexanizmi ko‘p hollarda o‘rganilmagan, selektivligi va sezgirligi cheklangan [philp2018].",
+        "ru": "Для предварительного скрининга применяют групповые реактивы: Марки (опиаты, амфетамины), Мекке, тиоцианат кобальта (кокаин), Саймона (вторичные амины), Дюкенуа–Левина и прочный синий Б (каннабис), Дилле–Коппани (барбитураты), Циммермана и Витали–Морена (бензодиазепины) [gmt_unodc_rapid_tests]. Положительный результат указывает лишь на «возможное» присутствие вещества: сходную окраску дают и другие контролируемые и неконтролируемые вещества [gmt_unodc_rapid_tests].\n\nДополнительные данные дают общеалкалоидные осадительные реактивы (Драгендорфа, Майера, Вагнера, пикриновая кислота) и микрокристаллические реакции под микроскопом [gmt_yuldashev2024] (с. 24, 26, 28, 40).\n\nХимизм многих цветных тестов не изучен, их селективность и чувствительность ограничены [philp2018].",
+        "en": "Group reagents are used for preliminary screening: Marquis (opiates, amphetamines), Mecke, cobalt thiocyanate (cocaine), Simon (secondary amines), Duquenois–Levine and Fast Blue B (cannabis), Dille–Koppanyi (barbiturates), Zimmermann and Vitali–Morin (benzodiazepines) [gmt_unodc_rapid_tests]. A positive result only indicates the possible presence of a substance: other controlled and non-controlled substances give similar colours [gmt_unodc_rapid_tests].\n\nGeneral alkaloid precipitating reagents (Dragendorff, Mayer, Wagner, picric acid) and microcrystal reactions viewed under the microscope add supporting evidence [gmt_yuldashev2024] (pp. 24, 26, 28, 40).\n\nThe chemistry of many colour tests has not been investigated, and their selectivity and sensitivity are limited [philp2018]."
+      },
+      "citations": [
+        "gmt_unodc_rapid_tests",
+        "gmt_yuldashev2024",
+        "philp2018"
+      ]
+    },
+    {
+      "key": "tlc",
+      "title": {
+        "uz": "2-bosqich: yupqa qatlamli xromatografiya",
+        "ru": "Этап 2: тонкослойная хроматография",
+        "en": "Step 2: thin-layer chromatography"
+      },
+      "body": {
+        "uz": "Ajratma quruq qoldiqqa keltirilib, oz hajmdagi erituvchida eritiladi va silikagel plastinkaga standart («guvoh») eritmalar bilan yonma-yon tomiziladi; plastinka erituvchi bug‘lari bilan to‘yintirilgan kamerada ishlab chiqiladi, quritiladi va reaktiv (Markis, Frede, Dragendorf, yodoplatinat) purkaladi [gmt_yuldashev2024] (22–23-b.).\n\nRangli testlar va ikki xil erituvchilar tizimidagi YuQX — dastlabki identifikatsiya, natija keyin GX-MS yoki SX-MS bilan tasdiqlanadi [uchiyama2008]. Batafsil: «Yupqa qatlamli xromatografiya (YuQX)» yo‘riqnomasi.",
+        "ru": "Извлечение упаривают досуха, остаток растворяют в малом объёме растворителя и наносят на пластинку силикагеля рядом со стандартными растворами («свидетелями»); пластинку хроматографируют в камере, насыщенной парами растворителей, сушат и опрыскивают реактивом (Марки, Фреде, Драгендорфа, иодоплатинат) [gmt_yuldashev2024] (с. 22–23).\n\nЦветные тесты и ТСХ в двух системах растворителей — предварительная идентификация; результат затем подтверждается ГХ-МС или ЖХ-МС [uchiyama2008]. Подробнее: руководство «Тонкослойная хроматография (ТСХ)».",
+        "en": "The extract is evaporated to dryness, redissolved in a small volume of solvent and spotted on a silica gel plate next to reference standards; the plate is developed in a chamber saturated with solvent vapour, dried and sprayed with a reagent (Marquis, Fröhde, Dragendorff, iodoplatinate) [gmt_yuldashev2024] (pp. 22–23).\n\nColour tests and TLC in two solvent systems give a preliminary identification that is then confirmed by GC-MS or LC-MS [uchiyama2008]. See also the guideline «Thin-layer chromatography (TLC)»."
+      },
+      "citations": [
+        "gmt_yuldashev2024",
+        "uchiyama2008"
+      ]
+    },
+    {
+      "key": "instrumental",
+      "title": {
+        "uz": "3-bosqich: instrumental tasdiqlash",
+        "ru": "Этап 3: инструментальное подтверждение",
+        "en": "Step 3: instrumental confirmation"
+      },
+      "body": {
+        "uz": "Darslikda miqdoriy tahlil va tasdiqlash uchun GX-MS va SX-MS usullari ko‘rsatiladi; UB-spektrofotometriya kalibrlash grafigi bilan miqdor aniqlashda qo‘llanadi [gmt_yuldashev2024] (25, 28-b.).\n\nKeng skrining uchun EI to‘liq skanerli GX-MS tanlov usuli, SX-MS esa qutbli, termolabil va past dozali moddalar uchun to‘ldiruvchi usul hisoblanadi [maurer2004]. SWGDRUG sxemasida A toifasidagi usul bo‘lsa, unga kamida yana bitta usul qo‘shiladi; A toifasi bo‘lmasa, kamida uch usul kerak, ulardan ikkitasi turli xossalarga asoslangan B toifasidan [swgdrug2024]. Toksikologiyada identifikatsiya mezonlari alohida standartda belgilangan [asb113_2023].",
+        "ru": "В пособии для количественного анализа и подтверждения указаны ГХ-МС и ЖХ-МС; УФ-спектрофотометрия применяется для количественного определения по градуировочному графику [gmt_yuldashev2024] (с. 25, 28).\n\nДля широкого скрининга методом выбора является ГХ-МС с ЭИ в режиме полного сканирования, а ЖХ-МС дополняет её для полярных, термолабильных и низкодозных веществ [maurer2004]. По схеме SWGDRUG при наличии метода категории A добавляется ещё как минимум один метод; без категории A нужны не менее трёх методов, из них два категории B, основанные на разных свойствах [swgdrug2024]. В токсикологии критерии идентификации установлены отдельным стандартом [asb113_2023].",
+        "en": "The textbook names GC-MS and LC-MS for quantitation and confirmation; UV spectrophotometry with a calibration graph is used for quantitation [gmt_yuldashev2024] (pp. 25, 28).\n\nFor broad screening, EI full-scan GC-MS is the method of choice, with LC-MS as a supplement for polar, thermolabile and low-dose drugs [maurer2004]. In the SWGDRUG scheme a Category A technique is combined with at least one further technique; without Category A at least three techniques are needed, two of them Category B exploiting different properties [swgdrug2024]. In toxicology, identification criteria are set by a separate standard [asb113_2023]."
+      },
+      "citations": [
+        "gmt_yuldashev2024",
+        "maurer2004",
+        "swgdrug2024",
+        "asb113_2023"
+      ]
+    },
+    {
+      "key": "interpretation",
+      "title": {
+        "uz": "Biologik ob’ektlardan ajratib olish",
+        "ru": "Изолирование из биологических объектов",
+        "en": "Isolation from biological material"
+      },
+      "body": {
+        "uz": "Asos xossali moddalar (alkaloidlar, opioidlar, fenilalkilaminlar) biologik ob’ektdan nordonlashtirilgan suv yoki spirt bilan ajratib olinadi, so‘ng suvli ajratmadan ishqoriy muhitda organik erituvchi bilan ekstraksiya qilinadi [gmt_yuldashev2024] (22, 40, 51, 78-b.). Kuchsiz kislota xossali barbituratlar ham nordonlashtirilgan suv yoki spirt bilan ajratiladi va organik erituvchiga o‘tkaziladi [gmt_yuldashev2024] (107-b.).\n\nQon va siydikdan opiy alkaloidlari oqsil cho‘ktirilgach, neytralga yaqin muhitda butanol–xloroform (1:9) aralashmasi bilan ekstraksiya qilinadi; quruq qoldiq ikkiga bo‘linib, biri YuQX, ikkinchisi rangli va mikrokristall reaksiyalar uchun ishlatiladi [gmt_yuldashev2024] (22-b.).\n\nSiydikdagi immunokimyoviy skrining ko‘p o‘zaro reaksiyalar beradi va mustaqil kimyoviy usul bilan tasdiqlanmaguncha taxminiy hisoblanadi [saitman2014].",
+        "ru": "Вещества основного характера (алкалоиды, опиоиды, фенилалкиламины) изолируют из биологического объекта подкисленной водой или спиртом, затем экстрагируют из водного извлечения органическим растворителем в щелочной среде [gmt_yuldashev2024] (с. 22, 40, 51, 78). Барбитураты — слабые кислоты — также изолируют подкисленной водой или спиртом и переводят в органический растворитель [gmt_yuldashev2024] (с. 107).\n\nИз крови и мочи алкалоиды опия после осаждения белков экстрагируют смесью бутанол–хлороформ (1:9) в среде, близкой к нейтральной; сухой остаток делят на две части: одну для ТСХ, другую для цветных и микрокристаллических реакций [gmt_yuldashev2024] (с. 22).\n\nИммунохимический скрининг мочи даёт много перекрёстных реакций и остаётся предварительным до подтверждения независимым химическим методом [saitman2014].",
+        "en": "Basic substances (alkaloids, opioids, phenylalkylamines) are isolated from biological material with acidified water or ethanol and then extracted from the aqueous isolate into an organic solvent under alkaline conditions [gmt_yuldashev2024] (pp. 22, 40, 51, 78). Barbiturates, which are weak acids, are also isolated with acidified water or ethanol and transferred into an organic solvent [gmt_yuldashev2024] (p. 107).\n\nFrom blood and urine, opium alkaloids are extracted after protein precipitation with butanol–chloroform (1:9) near neutral pH; the dry residue is split, one part for TLC and the other for colour and microcrystal reactions [gmt_yuldashev2024] (p. 22).\n\nImmunochemical urine screening shows many cross-reactivities and stays presumptive until confirmed by an independent chemical technique [saitman2014]."
+      },
+      "citations": [
+        "gmt_yuldashev2024",
+        "saitman2014"
+      ]
+    },
+    {
+      "key": "limitations",
+      "title": {
+        "uz": "Cheklovlar",
+        "ru": "Ограничения",
+        "en": "Limitations"
+      },
+      "body": {
+        "uz": "• Rangli testlar va immunotahlil C toifasiga kiradi va tuzilma haqida ma’lumot bermaydi [swgdrug2024].\n• Salbiy yoki noaniq natija identifikatsiyaga hissa qo‘shmaydi [swgdrug2024].\n• Rangli test natijasi dastlabki: ijobiy natijada material tasdiqlovchi tahlil uchun vakolatli laboratoriyaga yuboriladi [gmt_unodc_rapid_tests].\n• Darslikdagi Rf qiymatlari ma’lum plastinka va sharoitga bog‘liq; bu yo‘riqnomalarda ular raqam sifatida keltirilmaydi — faqat ajralish tartibi beriladi [bogusz1984].",
+        "ru": "• Цветные тесты и иммуноанализ относятся к категории C и не дают структурной информации [swgdrug2024].\n• Отрицательные или неопределённые результаты не вносят вклад в идентификацию [swgdrug2024].\n• Результат цветного теста предварителен: при положительном результате материал направляют в уполномоченную лабораторию на подтверждение [gmt_unodc_rapid_tests].\n• Значения Rf в пособии зависят от конкретных пластинок и условий; в этих руководствах они не приводятся числами — указан только порядок разделения [bogusz1984].",
+        "en": "• Colour tests and immunoassays are Category C and provide no structural information [swgdrug2024].\n• Negative or inconclusive results do not contribute to an identification [swgdrug2024].\n• A colour test result is preliminary: positive material is sent to an authorised laboratory for confirmation [gmt_unodc_rapid_tests].\n• The textbook's Rf values depend on specific plates and conditions; these guidelines do not quote them as numbers, only the elution order [bogusz1984]."
+      },
+      "citations": [
+        "swgdrug2024",
+        "gmt_unodc_rapid_tests",
+        "bogusz1984"
+      ]
+    },
+    {
+      "key": "cautions",
+      "title": {
+        "uz": "Manba haqida eslatma",
+        "ru": "Примечание об источнике",
+        "en": "Note on the source"
+      },
+      "body": {
+        "uz": "Ushbu turkumdagi kartalar Toshkent farmatsevtika instituti o‘quv qo‘llanmasiga asoslangan va muallif ruxsati bilan barcha uchun bepul [gmt_yuldashev2024] (1–6-b.). Matn so‘zma-so‘z ko‘chirilmagan; qo‘llanmadagi aniqlangan xatolar (masalan, petidin formulasi, morfin ekstraksiyasi pH qiymatining Rf deb yozilishi, TGK miqdorlari) tuzatilgan yoki chiqarib tashlangan. Rangli test natijalari xalqaro qo‘llanma [gmt_unodc_rapid_tests] bilan, formulalar va mass-spektr cho‘qqilari PubChem yozuvlari [gmt_pubchem_2026] bilan solishtirilgan. Huquqiy holat uchun «O‘zbekistonda nazorat ro‘yxatlari» kartasiga qarang.",
+        "ru": "Карточки этой серии основаны на учебном пособии Ташкентского фармацевтического института и с разрешения автора бесплатны для всех [gmt_yuldashev2024] (с. 1–6). Текст не копировался дословно; выявленные ошибки пособия (например, формула петидина, рН экстракции морфина, записанный как Rf, доли ТГК) исправлены или исключены. Результаты цветных тестов сверены с международным руководством [gmt_unodc_rapid_tests], формулы и пики масс-спектров — с записями PubChem [gmt_pubchem_2026]. Правовой статус — в карточке «Списки контроля в Узбекистане».",
+        "en": "The cards in this series are based on a Tashkent Pharmaceutical Institute teaching manual and are free for everyone with the author's permission [gmt_yuldashev2024] (pp. 1–6). The text is not copied verbatim; errors found in the manual (for example the pethidine formula, the morphine extraction pH printed as an Rf value, THC contents) are corrected or omitted. Colour-test results were checked against an international manual [gmt_unodc_rapid_tests], formulas and mass-spectral peaks against PubChem records [gmt_pubchem_2026]. For legal status see the card «Control lists in Uzbekistan»."
+      },
+      "citations": [
+        "gmt_yuldashev2024",
+        "gmt_unodc_rapid_tests",
+        "gmt_pubchem_2026"
+      ]
+    }
+  ],
+  "keywords": {
+    "uz": [
+      "giyohvand moddalar tahlili",
+      "GMT",
+      "tahlil sxemasi",
+      "namuna olish",
+      "rangli reaksiyalar",
+      "cho‘ktiruvchi reaktivlar",
+      "mikrokristalloskopiya",
+      "YuQX",
+      "GX-MS",
+      "SX-MS",
+      "skrining",
+      "tasdiqlash",
+      "giyohvandlik vositalari",
+      "psixotrop moddalar",
+      "prekursorlar",
+      "ashyoviy dalil",
+      "Yuldashev"
+    ],
+    "ru": [
+      "анализ наркотических средств",
+      "схема анализа",
+      "отбор проб",
+      "цветные реакции",
+      "осадительные реактивы",
+      "микрокристаллоскопия",
+      "ТСХ",
+      "ГХ-МС",
+      "ЖХ-МС",
+      "скрининг",
+      "подтверждение",
+      "наркотические средства",
+      "психотропные вещества",
+      "прекурсоры",
+      "вещественные доказательства"
+    ],
+    "en": [
+      "drug analysis",
+      "analytical scheme",
+      "sampling",
+      "colour tests",
+      "precipitation reagents",
+      "microcrystal tests",
+      "TLC",
+      "GC-MS",
+      "LC-MS",
+      "screening",
+      "confirmation",
+      "narcotic drugs",
+      "psychotropic substances",
+      "precursors",
+      "seized drugs"
+    ]
+  },
+  "omitted_unverified": [
+    "Statistics on drug crime and UN user estimates (textbook pp. 8, 11): not relevant to analysis, not verified.",
+    "Criminal Code article numbers listed on p. 11 (the textbook attributes them to the Criminal Procedure Code): not reproduced; see legal card.",
+    "Detection limits and recoveries (e.g. 10-15 ug morphine, 83%/71% recovery, p. 23): laboratory-specific, omitted."
+  ],
+  "quiz": [
+    {
+      "id": "gmt.scheme.1",
+      "question": {
+        "uz": "SWGDRUG tasnifida rangli testlar qaysi toifaga kiradi?",
+        "ru": "К какой категории SWGDRUG относятся цветные тесты?",
+        "en": "Which SWGDRUG category do colour tests belong to?"
+      },
+      "answer": {
+        "uz": "C toifasi",
+        "ru": "Категория C",
+        "en": "Category C"
+      },
+      "distractors": [
+        {
+          "uz": "A toifasi",
+          "ru": "Категория A",
+          "en": "Category A"
+        },
+        {
+          "uz": "B toifasi",
+          "ru": "Категория B",
+          "en": "Category B"
+        },
+        {
+          "uz": "Toifaga kirmaydi — tasdiqlovchi usul",
+          "ru": "Вне категорий — подтверждающий метод",
+          "en": "Not categorised — a confirmatory technique"
+        }
+      ],
+      "citations": [
+        {
+          "key": "swgdrug2024"
+        }
+      ]
+    },
+    {
+      "id": "gmt.scheme.2",
+      "question": {
+        "uz": "Rangli test ijobiy bo‘lsa, bu nimani bildiradi?",
+        "ru": "Что означает положительный цветной тест?",
+        "en": "What does a positive colour test mean?"
+      },
+      "answer": {
+        "uz": "Modda bo‘lishi mumkin; tasdiqlovchi tahlil kerak",
+        "ru": "Вещество возможно присутствует; нужно подтверждение",
+        "en": "The substance may be present; confirmation is needed"
+      },
+      "distractors": [
+        {
+          "uz": "Modda aniq identifikatsiya qilindi",
+          "ru": "Вещество однозначно идентифицировано",
+          "en": "The substance is definitely identified"
+        },
+        {
+          "uz": "Moddaning miqdori aniqlandi",
+          "ru": "Определено количество вещества",
+          "en": "The amount of substance is determined"
+        },
+        {
+          "uz": "Namuna nazoratdagi modda saqlamaydi",
+          "ru": "Проба не содержит контролируемых веществ",
+          "en": "The sample contains no controlled substance"
+        }
+      ],
+      "citations": [
+        {
+          "key": "gmt_unodc_rapid_tests",
+          "pages": "37–51"
+        },
+        {
+          "key": "swgdrug2024"
+        }
+      ]
+    },
+    {
+      "id": "gmt.scheme.3",
+      "question": {
+        "uz": "Asos xossali giyohvand moddalar suvli ajratmadan qaysi muhitda organik erituvchiga ekstraksiya qilinadi?",
+        "ru": "В какой среде основные наркотические вещества экстрагируют из водного извлечения органическим растворителем?",
+        "en": "Under which conditions are basic drugs extracted from an aqueous isolate into an organic solvent?"
+      },
+      "answer": {
+        "uz": "Ishqoriy muhitda",
+        "ru": "В щелочной среде",
+        "en": "Alkaline conditions"
+      },
+      "distractors": [
+        {
+          "uz": "Kuchli kislotali muhitda",
+          "ru": "В сильнокислой среде",
+          "en": "Strongly acidic conditions"
+        },
+        {
+          "uz": "Faqat qaynatilgan suvda",
+          "ru": "Только в кипящей воде",
+          "en": "Only in boiling water"
+        },
+        {
+          "uz": "Muhit ahamiyatsiz",
+          "ru": "Среда не имеет значения",
+          "en": "pH does not matter"
+        }
+      ],
+      "citations": [
+        {
+          "key": "gmt_yuldashev2024",
+          "pages": "22, 40, 78"
+        }
+      ]
+    },
+    {
+      "id": "gmt.scheme.4",
+      "question": {
+        "uz": "Keng skrining uchun qaysi usul tanlov usuli hisoblanadi?",
+        "ru": "Какой метод считается методом выбора для широкого скрининга?",
+        "en": "Which technique is the method of choice for broad screening?"
+      },
+      "answer": {
+        "uz": "EI to‘liq skanerli GX-MS",
+        "ru": "ГХ-МС с ЭИ в режиме полного сканирования",
+        "en": "EI full-scan GC-MS"
+      },
+      "distractors": [
+        {
+          "uz": "Faqat Markis testi",
+          "ru": "Только тест Марки",
+          "en": "The Marquis test alone"
+        },
+        {
+          "uz": "Suyuqlanish haroratini aniqlash",
+          "ru": "Определение температуры плавления",
+          "en": "Melting point determination"
+        },
+        {
+          "uz": "Organoleptik baholash",
+          "ru": "Органолептическая оценка",
+          "en": "Organoleptic assessment"
+        }
+      ],
+      "citations": [
+        {
+          "key": "maurer2004"
+        }
+      ]
+    }
+  ]
+}
