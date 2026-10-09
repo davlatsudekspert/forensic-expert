@@ -66,6 +66,12 @@ void main() {
     tester,
   ) async {
     await open(tester, 'uz', Routes.researchFor('fm-postmortem-changes'));
+    final list = find.byType(Scrollable).first;
+    await tester.scrollUntilVisible(
+      find.byKey(const Key('research.RS-e364a9179136')),
+      300,
+      scrollable: list,
+    );
     expect(
       find.text(
         'O‘limdan keyingi o‘zgarishlarga oid adabiyotlarning 19-asrgacha '
@@ -78,10 +84,20 @@ void main() {
       findsOneWidget,
     );
     expect(find.text('Avtomatik tarjima — tekshirilmagan'), findsWidgets);
-    // Tarjimasi yo‘q yozuv — ochiq belgi.
+    // D2: avval tarjimasiz bo‘lgan yozuv endi tarjima bilan (asl tili
+    // belgisi yo‘q).
+    await tester.scrollUntilVisible(
+      find.byKey(const Key('research.RS-27c0a417360d')),
+      300,
+      scrollable: list,
+    );
+    expect(
+      find.textContaining('O‘lim muddatini belgilashning hozirgi holati'),
+      findsOneWidget,
+    );
     expect(
       find.byKey(const Key('research.originalLang.RS-27c0a417360d')),
-      findsOneWidget,
+      findsNothing,
     );
   });
 

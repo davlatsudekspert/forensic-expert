@@ -194,6 +194,21 @@ void main() {
     await shot('C Jurisdiction GB legal titles', () async {
       await open(Routes.jurisdiction('GB'));
     });
+    // D2/C: 63 mavzu/usul kartasi tushuntirishi UI tilida birinchi.
+    await shot('C Method card GC-MS explanation', () async {
+      await open(Routes.knowledgeEntry('method-gcms'));
+    });
+    await shot('C Method card GC-MS original opened', () async {
+      await open(Routes.knowledgeEntry('method-gcms'));
+      final t = keyPrefix('l10n.originalToggle.method_body.');
+      if (t.evaluate().isNotEmpty) {
+        await qa.scrollUntil(t.first);
+        await qa.tapFinder(t.first);
+      }
+    });
+    await shot('C Topic card algor mortis explanation', () async {
+      await open(Routes.knowledgeEntry('fm-algor-mortis'));
+    });
 
     File('${qa.outDir.path}/screen_texts_l10n-$suffix.json').writeAsStringSync(
       const JsonEncoder.withIndent(' ').convert({'lang': lang, 'steps': texts}),
