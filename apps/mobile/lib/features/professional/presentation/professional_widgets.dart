@@ -205,7 +205,10 @@ class FeChoiceCard extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.all(FeSpace.md),
             child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              // Tavsifsiz kartada ikonka, sarlavha va belgi bir o‘qda.
+              crossAxisAlignment: description == null
+                  ? CrossAxisAlignment.center
+                  : CrossAxisAlignment.start,
               children: [
                 DecoratedBox(
                   decoration: BoxDecoration(

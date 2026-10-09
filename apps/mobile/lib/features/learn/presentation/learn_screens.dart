@@ -249,33 +249,39 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
                           ),
                       ],
                     ),
-                  FeSectionHeader(
-                    '${l.learnQuiz} · ${l.learnFlashcards} · ${l.learnExam}',
-                  ),
-                  _PracticeGrid(
-                    items: [
-                      (
-                        const Key('learn.quiz'),
-                        Icons.quiz_outlined,
-                        l.learnQuiz,
-                        () => context.push(noQuiz ? Routes.study : Routes.quiz),
-                      ),
-                      (
-                        const Key('learn.flashcards'),
-                        Icons.style_outlined,
-                        l.learnFlashcards,
-                        () => context.push(
-                          noCards ? Routes.study : Routes.flashcards,
+                  // Namuna to‘plamlari bo‘sh (production) — Test/Kartochkalar/
+                  // Imtihon alohida plitka emas: hammasi «O‘quv rejimi»da.
+                  if (!(noQuiz && noCards)) ...[
+                    FeSectionHeader(
+                      '${l.learnQuiz} · ${l.learnFlashcards} · ${l.learnExam}',
+                    ),
+                    _PracticeGrid(
+                      items: [
+                        (
+                          const Key('learn.quiz'),
+                          Icons.quiz_outlined,
+                          l.learnQuiz,
+                          () =>
+                              context.push(noQuiz ? Routes.study : Routes.quiz),
                         ),
-                      ),
-                      (
-                        const Key('learn.exam'),
-                        Icons.timer_outlined,
-                        l.learnExam,
-                        () => context.push(noQuiz ? Routes.study : Routes.exam),
-                      ),
-                    ],
-                  ),
+                        (
+                          const Key('learn.flashcards'),
+                          Icons.style_outlined,
+                          l.learnFlashcards,
+                          () => context.push(
+                            noCards ? Routes.study : Routes.flashcards,
+                          ),
+                        ),
+                        (
+                          const Key('learn.exam'),
+                          Icons.timer_outlined,
+                          l.learnExam,
+                          () =>
+                              context.push(noQuiz ? Routes.study : Routes.exam),
+                        ),
+                      ],
+                    ),
+                  ],
                   FeSectionHeader(l.studyTitle),
                   FeCard(
                     key: const Key('learn.study'),

@@ -17,11 +17,8 @@ import '../../../core/settings/app_settings.dart';
 import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/brand_mark.dart';
 import '../../../core/widgets/fe_components.dart';
-import '../../../core/widgets/fe_data_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
-import '../../../domain/library/library_models.dart';
-import '../../library/presentation/source_detail_screen.dart';
 import '../../referral/presentation/invite_card.dart';
 import '../../tools/tool_strings.dart';
 import 'first_steps_card.dart';
@@ -148,7 +145,6 @@ class HomeScreen extends ConsumerWidget {
       for (final m in HomeModule.orderFor(mode))
         if (m != HomeModule.ai) m,
     ];
-    final isStudent = mode == UserMode.student;
 
     // Ierarxiya (egasi belgilagan tartib): sarlavha → salomlashish/rol →
     // markaziy ilmiy qidiruv → Expert AI → fan yo‘nalishlari →
@@ -180,10 +176,6 @@ class HomeScreen extends ConsumerWidget {
                     ),
                   ],
                   const FirstStepsCard(),
-                  if (isStudent) ...[
-                    const SizedBox(height: FeSpace.sm),
-                    const _ContinueLearningCard(),
-                  ],
                   FeSectionHeader(l.homeAreasHeading),
                   _ModuleGrid(modules: modules),
                   const SizedBox(height: FeSpace.sm),
@@ -196,24 +188,8 @@ class HomeScreen extends ConsumerWidget {
                     body: l.guidelinesSubtitle,
                     onTap: () => context.push(Routes.guidelines),
                   ),
-                  const SizedBox(height: FeSpace.sm),
-                  _ResourceTile(
-                    key: const Key('home.library'),
-                    icon: Icons.local_library_outlined,
-                    title: l.libraryTitle,
-                    body: l.homeLibraryBody,
-                    onTap: () => context.go(Routes.library),
-                  ),
-                  const SizedBox(height: FeSpace.sm),
-                  _ResourceTile(
-                    key: const Key('home.tools'),
-                    icon: Icons.calculate_outlined,
-                    title: l.toolsTitle,
-                    body: l.toolsSubtitle,
-                    onTap: () => context.go(Routes.tools),
-                  ),
-                  const SizedBox(height: FeSpace.sm),
-                  const _DatabaseCard(),
+                  // Kutubxona va Vositalar — pastki tablarda (takrorlanmaydi);
+                  // baza holati va versiyalar — Profil → Ilova haqida.
                   const _QuickAccess(),
                   const SizedBox(height: FeSpace.md),
                   const InviteColleagueCard(
@@ -360,203 +336,6 @@ class _EntryLayout extends StatelessWidget {
   }
 }
 
-/// Oflayn baza holati: paket versiyasi, ilmiy va yurisdiksiya komponent
-/// versiyalari, maxfiylik eslatmasi. Sun’iy statistika yo‘q.
-class _DatabaseCard extends ConsumerWidget {
-  const _DatabaseCard();
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final l = AppLocalizations.of(context);
-    final c = FeTheme.of(context);
-    final t = Theme.of(context).textTheme;
-    final status = ref.watch(contentStatusProvider);
-    final versions = ref.watch(legalCatalogProvider).componentVersions;
-    final secondary = t.bodySmall?.copyWith(color: c.textSecondary);
-    // Haqiqiy sonlar (oflayn bazadan); HUMAN VERIFIED — faqat inson
-    // ko‘rib chiqqan claim’lar (fixture/AI/avtomatik tekshiruv emas).
-    final review = ref.watch(provenanceIndexProvider).review;
-    final substances = ref
-        .watch(libraryRepositoryProvider)
-        .entries(LibrarySection.substances)
-        .length;
-    final sources = ref.watch(sourceIndexProvider).length;
-    final lines = status.when(
-      data: (s) => s.isInstalled
-          ? [
-              Text(
-                l.homeDbPack(s.packVersion!),
-                key: const Key('home.db.pack'),
-                style: FeThemeBuilder.numeric(t.bodySmall!)
-                    .copyWith(color: c.textPrimary),
-              ),
-              if (versions['scientific'] case final v?)
-                Text(l.homeDbScientific(v), style: secondary),
-              if (versions['jurisdiction'] case final v?)
-                Text(l.homeDbJurisdiction(v), style: secondary),
-              if (review.total > 0) ...[
-                const SizedBox(height: FeSpace.sm),
-                _StatGrid(
-                  key: const Key('home.db.counts'),
-                  stats: [
-                    (substances, l.homeStatSubstances, false),
-                    (sources, l.homeStatSources, false),
-                    (review.total, l.homeStatClaims, false),
-                    (review.humanVerified, l.homeStatHumanVerified, true),
-                  ],
-                ),
-                const SizedBox(height: FeSpace.xs),
-                Text(
-                  l.homeStatPolicy,
-                  key: const Key('home.db.humanVerified'),
-                  style: secondary,
-                ),
-              ],
-            ]
-          : [Text(l.homeDbNotInstalled, style: secondary)],
-      loading: () => [FeSkeleton(lines: 2, semanticLabel: l.homeDbLoading)],
-      error: (_, _) => [Text(l.homeDbNotInstalled, style: secondary)],
-    );
-    return FeCard(
-      key: const Key('home.database'),
-      padding: const EdgeInsets.all(FeSpace.md),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              Icon(Icons.dataset_outlined, color: c.accent, size: 22),
-              const SizedBox(width: FeSpace.xs),
-              Expanded(
-                child: Semantics(
-                  header: true,
-                  child: Text(l.homeDbTitle, style: t.titleSmall),
-                ),
-              ),
-              Icon(Icons.offline_pin_outlined, size: 18, color: c.verified),
-            ],
-          ),
-          const SizedBox(height: FeSpace.xs),
-          ...lines,
-          const SizedBox(height: FeSpace.xs),
-          Text(l.homeDbOffline, style: secondary),
-        ],
-      ),
-    );
-  }
-}
-
-/// Ilmiy baza raqamlari — katta tabular raqam + kichik yorliq.
-class _StatGrid extends StatelessWidget {
-  const _StatGrid({super.key, required this.stats});
-
-  /// (qiymat, yorliq, alohida ta’kid — «inson tasdiqlagan»).
-  final List<(int, String, bool)> stats;
-
-  @override
-  Widget build(BuildContext context) {
-    final c = FeTheme.of(context);
-    final t = Theme.of(context).textTheme;
-    return LayoutBuilder(
-      builder: (context, box) {
-        final cols =
-            box.maxWidth >= 340 &&
-                MediaQuery.textScalerOf(context).scale(1) < 1.6
-            ? 4
-            : 2;
-        final w = (box.maxWidth - FeSpace.xs * (cols - 1)) / cols;
-        return Wrap(
-          spacing: FeSpace.xs,
-          runSpacing: FeSpace.xs,
-          children: [
-            for (final (value, label, emphasis) in stats)
-              SizedBox(
-                width: w,
-                child: DecoratedBox(
-                  decoration: BoxDecoration(
-                    color: emphasis ? c.accentContainer : c.surface,
-                    borderRadius: BorderRadius.circular(FeRadius.md),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: FeSpace.xs,
-                      vertical: FeSpace.sm,
-                    ),
-                    child: Semantics(
-                      label: [label, '$value'].join(': '),
-                      excludeSemantics: true,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            '$value',
-                            style: FeThemeBuilder.figures(t.titleLarge!)
-                                .copyWith(
-                                  fontWeight: FontWeight.w600,
-                                  color: emphasis
-                                      ? c.onAccentContainer
-                                      : c.textPrimary,
-                                ),
-                          ),
-                          Text(
-                            label,
-                            maxLines: 2,
-                            style: t.labelSmall?.copyWith(
-                              color: emphasis
-                                  ? c.onAccentContainer
-                                  : c.textSecondary,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-          ],
-        );
-      },
-    );
-  }
-}
-
-class _ContinueLearningCard extends StatelessWidget {
-  const _ContinueLearningCard();
-
-  @override
-  Widget build(BuildContext context) {
-    final l = AppLocalizations.of(context);
-    final c = FeTheme.of(context);
-    final t = Theme.of(context).textTheme;
-    return FeCard(
-      key: const Key('home.continueLearning'),
-      onTap: () => context.push(Routes.learn),
-      child: Row(
-        children: [
-          Icon(Icons.school_outlined, color: c.accent, size: 32),
-          const SizedBox(width: FeSpace.md),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(l.homeContinueLearning, style: t.titleMedium),
-                const SizedBox(height: 2),
-                Text(
-                  l.homeStudyHubBody,
-                  style: t.bodySmall?.copyWith(color: c.textSecondary),
-                ),
-              ],
-            ),
-          ),
-          ExcludeSemantics(
-            child: Icon(Icons.chevron_right, color: c.textSecondary),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
 /// Tezkor kirish: yaqinda ko‘rilganlar, so‘nggi vositalar, saralanganlar,
 /// so‘nggi qidiruvlar — faqat to‘lgan bloklar ko‘rsatiladi (shovqin kam).
 /// Hammasi bo‘sh bo‘lsa — bitta tushuntiruvchi qator. Sun’iy statistika yo‘q.
@@ -589,13 +368,13 @@ class _QuickAccess extends ConsumerWidget {
 
     void openId(String id) {
       if (ToolsCatalog.byId(id) != null) {
-        context.push(Routes.tool(id));
+        context.push(Routes.homeTool(id));
       } else if (knowledge.byId(id) != null) {
         context.push(Routes.knowledgeEntry(id));
       } else if (evidence.researchById(id) != null) {
         context.push(Routes.researchEntry(id));
       } else {
-        context.push(Routes.libraryEntry(id));
+        context.push(Routes.homeSubstance(id));
       }
     }
 

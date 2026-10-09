@@ -27,6 +27,13 @@ abstract final class Routes {
       Uri(path: research, queryParameters: {'entity': entityId}).toString();
   static String researchEntry(String id) => '/home/research/$id';
   static String image(String id) => '/home/image/$id';
+  // Qidiruv natijalari uchun Home tabidagi nusxa yo‘llar (tab almashmaydi).
+  static String homeSubstance(String id) => '/home/substance/$id';
+  static String homeTool(String id) => '/home/tool/$id';
+  static String homeGuideline(String id) =>
+      '/home/guideline/${Uri.encodeComponent(id)}';
+  static String homeSpecimen(String id) => '/home/specimen/$id';
+  static const homeStandards = '/home/standards';
   static const disciplines = '/home/disciplines';
   static String discipline(String code) => '/home/disciplines/$code';
   static const jurisdictions = '/home/jurisdictions';
@@ -67,6 +74,7 @@ abstract final class Routes {
 
   static const library = '/library';
   static String libraryEntry(String id) => '/library/entry/$id';
+  static const sources = '/library/sources';
   static String source(String id) =>
       '/library/source/${Uri.encodeComponent(id)}';
 

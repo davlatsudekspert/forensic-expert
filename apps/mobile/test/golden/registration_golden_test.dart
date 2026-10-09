@@ -84,6 +84,8 @@ void main() {
           act: (t) async {
             await t.tap(find.byKey(const Key('mode.professional')));
             await t.pumpAndSettle();
+            await t.tap(find.byKey(const Key('mode.roles')));
+            await t.pumpAndSettle();
             await t.tap(find.byKey(const Key('role.forensicChemist')));
             await t.pumpAndSettle();
           },

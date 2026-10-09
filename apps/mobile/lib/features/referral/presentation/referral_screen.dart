@@ -112,6 +112,10 @@ class _Header extends StatelessWidget {
           header: true,
           child: Text(
             l.referralTitle,
+            // ×2 shriftda so‘z o‘rtasidan bo‘linmasin — sarlavha masshtabi
+            // cheklanadi (baribir yirik).
+            textScaler: MediaQuery.textScalerOf(context)
+                .clamp(maxScaleFactor: 1.3),
             style: t.titleLarge?.copyWith(
               color: Colors.white,
               fontWeight: FontWeight.w700,
@@ -121,6 +125,8 @@ class _Header extends StatelessWidget {
         const SizedBox(height: FeSpace.xxs),
         Text(
           l.referralLead,
+          textScaler: MediaQuery.textScalerOf(context)
+              .clamp(maxScaleFactor: 1.6),
           style: t.bodySmall?.copyWith(
             color: const Color(0xFFC9D2E0),
             height: 1.45,

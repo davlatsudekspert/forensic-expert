@@ -362,10 +362,11 @@ void main() {
           act: null,
         ),
         (
-          name: 'fin_31_home_database_uz',
+          // Baza holati Home’dan «Ilova haqida»ga ko‘chirildi.
+          name: 'fin_31_about_database_uz',
           settings: completedSettings(lang: 'uz'),
-          route: Routes.home,
-          scrollTo: const Key('home.db.humanVerified'),
+          route: Routes.about,
+          scrollTo: const Key('about.db.humanVerified'),
           extra: const [],
           act: null,
         ),

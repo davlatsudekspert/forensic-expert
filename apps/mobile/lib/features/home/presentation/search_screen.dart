@@ -25,8 +25,6 @@ import '../../evidence/evidence_strings.dart';
 ///
 /// * Lokal (offline) natijalar guruhlangan: MODDALAR · USULLAR · VOSITALAR
 ///   · TA’LIM · MANBALAR.
-/// * Tashqi ilmiy qidiruv (PubMed/PubChem/Crossref) — **alohida**, vizual
-///   ajratilgan blok; hozir ulanmagan. Natijalar hech qachon aralashmaydi.
 /// * Qidiruv tarixi faqat qurilmada; tozalash mumkin.
 class SearchScreen extends ConsumerStatefulWidget {
   const SearchScreen({super.key, this.initialQuery});
@@ -99,33 +97,45 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
     _run(q);
   }
 
+  /// Natija Home tabi ichida ochiladi (tab almashmaydi, «Back» shu
+  /// natijalarga qaytaradi); aniq yozuvga — marshruti bo‘lsa.
   void _open(SearchGroup group, SearchHit hit) {
     ref.read(userDataProvider.notifier).recordSearch(_query);
-    switch (group) {
-      case SearchGroup.guidelines:
-        context.push(Routes.guideline(hit.entityId));
-      case SearchGroup.tools:
-        context.push(Routes.tool(hit.entityId));
-      case SearchGroup.learning:
-        context.push(Routes.learn);
-      case SearchGroup.standardsLaws
-          when ref.read(provenanceIndexProvider).standard(hit.entityId) != null:
-        context.push(Routes.libraryStandards);
-      case SearchGroup.standardsLaws:
-        context.push(Routes.compare);
-      case SearchGroup.methods when hit.category == SearchCategory.specimen:
-        context.push(Routes.specimen(hit.entityId));
-      case SearchGroup.references
-          when ref.read(evidenceDataProvider).researchById(hit.entityId) !=
-              null:
-        context.push(Routes.researchEntry(hit.entityId));
-      default:
-        context.push(
-          ref.read(knowledgeRepositoryProvider).byId(hit.entityId) != null
-              ? Routes.knowledgeEntry(hit.entityId)
-              : Routes.libraryEntry(hit.entityId),
-        );
+    final id = hit.entityId;
+    final library = ref.read(libraryRepositoryProvider);
+    final knowledge = ref.read(knowledgeRepositoryProvider);
+    String? instrumentJurisdiction() {
+      for (final i in ref.read(jurisdictionResolverProvider).instruments) {
+        if (i.id == id) return i.jurisdictionId;
+      }
+      return null;
     }
+
+    final route = switch (group) {
+      SearchGroup.guidelines => Routes.homeGuideline(id),
+      SearchGroup.tools => Routes.homeTool(id),
+      // Glossariy yozuvi — o‘z sahifasi; kurslar — Ta’lim bo‘limi.
+      SearchGroup.learning when library.byId(id) != null =>
+        Routes.homeSubstance(id),
+      SearchGroup.learning when knowledge.byId(id) != null =>
+        Routes.knowledgeEntry(id),
+      SearchGroup.learning => Routes.learn,
+      SearchGroup.standardsLaws
+          when ref.read(provenanceIndexProvider).standard(id) != null =>
+        Routes.homeStandards,
+      SearchGroup.standardsLaws => switch (instrumentJurisdiction()) {
+        final j? => Routes.jurisdiction(j),
+        null => Routes.compare,
+      },
+      SearchGroup.methods when hit.category == SearchCategory.specimen =>
+        Routes.homeSpecimen(id),
+      SearchGroup.references
+          when ref.read(evidenceDataProvider).researchById(id) != null =>
+        Routes.researchEntry(id),
+      _ when knowledge.byId(id) != null => Routes.knowledgeEntry(id),
+      _ => Routes.homeSubstance(id),
+    };
+    context.push(route);
   }
 
   @override
@@ -221,8 +231,6 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                       onDiscipline: _selectDiscipline,
                     ),
                   const SizedBox(height: FeSpace.lg),
-                  const _ExternalSearchBlock(),
-                  const SizedBox(height: FeSpace.lg),
                 ],
               ),
             ),
@@ -277,6 +285,30 @@ class _Results extends ConsumerWidget {
       _ => l.statusNeedsReview,
     };
 
+    /// Natijaning tekshiruv holati (bo‘lsa).
+    ScientificStatus? statusOf(SearchGroup g, SearchHit hit) {
+      if (evidence.researchById(hit.entityId) case final r?) return r.status;
+      if (library.byId(hit.entityId) case final e?) return e.status;
+      if (knowledge.byId(hit.entityId) case final k?) return k.status;
+      if (g == SearchGroup.tools || g == SearchGroup.guidelines) {
+        return ScientificStatus.needsReview;
+      }
+      return null;
+    }
+
+    // Barcha ko‘rsatilgan natijalar holati bir xil bo‘lsa — har qatorda
+    // takrorlanmaydi, ro‘yxat ustida bir marta aytiladi.
+    final statuses = {
+      for (final g in SearchGroup.values)
+        for (final hit in result.groups[g]!.take(
+          unlocked ? result.groups[g]!.length : freeLimit,
+        ))
+          statusOf(g, hit),
+    };
+    final sharedStatus = statuses.length == 1 ? statuses.single : null;
+    String? rowStatus(ScientificStatus s) =>
+        sharedStatus == null ? statusLabel(s) : null;
+
     /// Natija nima ekanini aniq ko‘rsatadi: kategoriya · (asosiy yozuv) ·
     /// manba turi / dalil darajasi · review holati.
     String metaOf(SearchGroup g, SearchHit hit) {
@@ -290,8 +322,8 @@ class _Results extends ConsumerWidget {
       if (evidence.researchById(hit.entityId) case final r?) {
         parts
           ..add(l.researchKindName(r.kind))
-          ..add(l.researchEvidence(r.evidenceLevel))
-          ..add(statusLabel(r.status));
+          ..add(l.researchEvidence(r.evidenceLevel));
+        if (rowStatus(r.status) case final st?) parts.add(st);
       } else if (library.byId(hit.entityId) case final e?) {
         final name = e.name.resolve(lang);
         parts.add(
@@ -301,19 +333,20 @@ class _Results extends ConsumerWidget {
                     ? name
                     : groupTitle(g)),
         );
-        parts.add(statusLabel(e.status));
+        if (rowStatus(e.status) case final st?) parts.add(st);
       } else if (knowledge.byId(hit.entityId) case final k?) {
         final name = k.name.resolve(lang);
         if (name.toLowerCase() != hit.matchedTerm.toLowerCase()) {
           parts.add(name);
         }
-        parts
-          ..add(groupTitle(g))
-          ..add(statusLabel(k.status));
+        parts.add(groupTitle(g));
+        if (rowStatus(k.status) case final st?) parts.add(st);
       } else {
         parts.add(groupTitle(g));
         if (g == SearchGroup.tools || g == SearchGroup.guidelines) {
-          parts.add(l.statusNeedsReview);
+          if (rowStatus(ScientificStatus.needsReview) case final st?) {
+            parts.add(st);
+          }
         }
       }
       return parts.join(FeGlyphs.middleDot);
@@ -354,6 +387,16 @@ class _Results extends ConsumerWidget {
               ),
             ],
           ),
+          if (sharedStatus case final st?)
+            Padding(
+              padding: const EdgeInsets.only(top: FeSpace.xxs),
+              child: Text(
+                l.searchAllStatus(statusLabel(st)),
+                key: const Key('search.sharedStatus'),
+                style: Theme.of(context).textTheme.bodySmall
+                    ?.copyWith(color: c.textSecondary),
+              ),
+            ),
           if (result.disciplines.isNotEmpty)
             _DisciplineFilter(
               disciplines: result.disciplines,
@@ -518,70 +561,6 @@ class _NoResults extends StatelessWidget {
         icon: Icons.search_off,
         title: l.searchNoResultsTitle(query),
         body: l.searchNoResultsBody,
-      ),
-    );
-  }
-}
-
-/// Tashqi ilmiy qidiruv — vizual ajratilgan (chiziqli chegara, «online»
-/// belgisi) va hozircha ulanmagan.
-class _ExternalSearchBlock extends StatelessWidget {
-  const _ExternalSearchBlock();
-
-  @override
-  Widget build(BuildContext context) {
-    final l = AppLocalizations.of(context);
-    final c = FeTheme.of(context);
-    final t = Theme.of(context).textTheme;
-    return Semantics(
-      container: true,
-      child: DecoratedBox(
-        key: const Key('search.external'),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(FeRadius.md),
-          border: Border.all(color: c.borderStrong),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.all(FeSpace.md),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Icon(Icons.public, color: c.textSecondary),
-                  const SizedBox(width: FeSpace.xs),
-                  Expanded(
-                    child: Wrap(
-                      spacing: FeSpace.xs,
-                      runSpacing: FeSpace.xxs,
-                      crossAxisAlignment: WrapCrossAlignment.center,
-                      children: [
-                        Semantics(
-                          header: true,
-                          child: Text(
-                            l.searchExternalTitle,
-                            style: t.titleSmall,
-                          ),
-                        ),
-                        StatusChip(
-                          icon: Icons.schedule_outlined,
-                          label: l.toolStatusPlanned,
-                          color: c.textSecondary,
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: FeSpace.xs),
-              Text(
-                l.searchExternalBody,
-                style: t.bodySmall?.copyWith(color: c.textSecondary),
-              ),
-            ],
-          ),
-        ),
       ),
     );
   }

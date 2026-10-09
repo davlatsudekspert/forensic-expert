@@ -149,8 +149,11 @@ void main() {
   testWidgets('Home: oflayn baza kartochkasi va yangi bo‘limlar', (
     tester,
   ) async {
+    // Baza holati — Profil → Ilova haqida (Home qisqa).
+    await open(tester, Routes.about);
+    expect(find.byKey(const Key('about.database')), findsOneWidget);
     await open(tester, Routes.home);
-    expect(find.byKey(const Key('home.database')), findsOneWidget);
+    expect(find.byKey(const Key('home.database')), findsNothing);
     await see(tester, find.byKey(const Key('home.module.screening')));
     await tester.tap(find.byKey(const Key('home.module.screening')));
     await tester.pumpAndSettle();

@@ -223,6 +223,19 @@ class VerificationScreen extends ConsumerWidget {
                     textAlign: TextAlign.center,
                     style: t.bodySmall?.copyWith(color: c.textSecondary),
                   ),
+                  // Kirmagan (lekin xizmat ulangan) — kirish yo‘li shu yerda.
+                  if (!signedIn &&
+                      ref.watch(authRepositoryProvider).isConfigured) ...[
+                    const SizedBox(height: FeSpace.xs),
+                    Center(
+                      child: OutlinedButton.icon(
+                        key: const Key('verification.signIn'),
+                        onPressed: () => context.push(Routes.accountEmailCode),
+                        icon: const Icon(Icons.login),
+                        label: Text(l.accountSignInEmailCode),
+                      ),
+                    ),
+                  ],
                   const SizedBox(height: FeSpace.xl),
                 ],
               ),

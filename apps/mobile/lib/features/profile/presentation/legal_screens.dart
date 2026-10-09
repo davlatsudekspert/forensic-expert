@@ -7,6 +7,7 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/brand_mark.dart';
 import '../../../core/widgets/fe_components.dart';
+import 'database_status_card.dart';
 
 enum LegalDocument { privacy, terms, aiDisclaimer }
 
@@ -87,6 +88,8 @@ class AboutScreen extends StatelessWidget {
                 '${l.appVersionLabel} ${AppInfo.version} (${AppInfo.build})',
                 style: FeThemeBuilder.numeric(t.bodySmall!),
               ),
+              const SizedBox(height: FeSpace.md),
+              const DatabaseStatusCard(),
               const SizedBox(height: FeSpace.xs),
               Text(
                 l.aboutVersions,

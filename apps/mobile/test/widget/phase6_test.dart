@@ -246,12 +246,13 @@ void main() {
       expect(find.byKey(const Key('research.filter.clear')), findsOneWidget);
     });
 
-    testWidgets('tafsilot: forensik dolzarblik — baholanmagan (alohida)', (
-      tester,
-    ) async {
+    testWidgets('tafsilot: baholanmagan dolzarblik va noto‘g‘ri «hujjat '
+        'turi» qatori ko‘rsatilmaydi', (tester) async {
       final r = pilot.evidence.research.first;
       await open(tester, Routes.researchEntry(r.id));
-      await see(tester, find.textContaining('Not yet assessed'));
+      await see(tester, find.byKey(const Key('research.limitations')));
+      expect(find.textContaining('Not yet assessed'), findsNothing);
+      expect(find.text('Document type'), findsNothing);
     });
   });
 

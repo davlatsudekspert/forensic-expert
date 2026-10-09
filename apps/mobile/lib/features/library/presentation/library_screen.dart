@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../app/account.dart';
 import '../../../app/guidelines.dart';
 import '../../../app/providers.dart';
 import '../../../app/publications.dart';
@@ -21,6 +22,7 @@ import '../../evidence/presentation/provenance_screens.dart';
 import '../../legal/presentation/jurisdiction_screens.dart';
 import '../../placeholder/presentation/in_development_view.dart';
 import 'content_entry_sections.dart';
+import 'source_detail_screen.dart';
 
 extension LibrarySectionL10n on LibrarySection {
   String label(AppLocalizations l) => switch (this) {
@@ -40,8 +42,6 @@ extension LibrarySectionL10n on LibrarySection {
   };
 }
 
-enum _StatusFilter { all, verified, reviewed, needsReview }
-
 /// Bo‘lim ro‘yxati: filtr, tahririy guruhlar va bo‘lim ichida qidiruv.
 /// (PHASE 6: Library hub’dan ochiladi — `/library/section/:section`.)
 class LibrarySectionScreen extends ConsumerStatefulWidget {
@@ -59,21 +59,27 @@ class LibrarySectionScreen extends ConsumerStatefulWidget {
 
 class _LibrarySectionScreenState extends ConsumerState<LibrarySectionScreen> {
   late LibrarySection _section = widget.section;
-  _StatusFilter _status = _StatusFilter.all;
+  final _filterController = TextEditingController();
   String _filter = '';
 
   /// Tahririy modda guruhi filtri (null — barchasi).
   String? _group;
   static const _normalizer = SearchNormalizer();
 
+  @override
+  void dispose() {
+    _filterController.dispose();
+    super.dispose();
+  }
+
+  /// «Filtrlarni tozalash»: guruh va matn filtri (maydon ham) bekor.
+  void _clearFilters() => setState(() {
+    _group = null;
+    _filter = '';
+    _filterController.clear();
+  });
+
   bool _matches(LibraryEntry e) {
-    final okStatus = switch (_status) {
-      _StatusFilter.all => true,
-      _StatusFilter.verified => e.status == ScientificStatus.verified,
-      _StatusFilter.reviewed => e.status == ScientificStatus.reviewed,
-      _StatusFilter.needsReview => e.status == ScientificStatus.needsReview,
-    };
-    if (!okStatus) return false;
     if (_section == LibrarySection.substances &&
         _group != null &&
         e.group != _group) {
@@ -102,12 +108,12 @@ class _LibrarySectionScreenState extends ConsumerState<LibrarySectionScreen> {
           ))
         : const <String>[];
 
-    String statusLabel(_StatusFilter s) => switch (s) {
-      _StatusFilter.all => l.filterAll,
-      _StatusFilter.verified => l.statusVerified,
-      _StatusFilter.reviewed => l.statusReviewed,
-      _StatusFilter.needsReview => l.statusNeedsReview,
-    };
+    // Faqat yozuvi bor bo‘limlar (bo‘sh sahifaga olib boruvchi chip yo‘q);
+    // bittadan kam bo‘lsa — qator umuman ko‘rsatilmaydi.
+    final sections = [
+      for (final s in LibrarySection.values)
+        if (s == _section || repo.entries(s).isNotEmpty) s,
+    ];
 
     return Scaffold(
       appBar: AppBar(title: Text(_section.label(l))),
@@ -118,50 +124,38 @@ class _LibrarySectionScreenState extends ConsumerState<LibrarySectionScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      children: [
-                        for (final s in LibrarySection.values)
-                          Padding(
-                            padding: const EdgeInsets.only(right: FeSpace.xs),
-                            child: ChoiceChip(
-                              key: Key('library.section.${s.name}'),
-                              avatar: Icon(s.icon, size: 18),
-                              label: Text(s.label(l)),
-                              selected: _section == s,
-                              onSelected: (_) => setState(() {
-                                _section = s;
-                                _group = null;
-                              }),
+                  if (sections.length > 1)
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: [
+                          for (final s in sections)
+                            Padding(
+                              padding: const EdgeInsets.only(right: FeSpace.xs),
+                              child: ChoiceChip(
+                                key: Key('library.section.${s.name}'),
+                                avatar: Icon(s.icon, size: 18),
+                                label: Text(s.label(l)),
+                                selected: _section == s,
+                                onSelected: (_) => setState(() {
+                                  _section = s;
+                                  _group = null;
+                                }),
+                              ),
                             ),
-                          ),
-                      ],
+                        ],
+                      ),
                     ),
-                  ),
                   const SizedBox(height: FeSpace.sm),
                   TextField(
                     key: const Key('library.filter'),
+                    controller: _filterController,
                     onChanged: (v) => setState(() => _filter = v),
                     decoration: InputDecoration(
                       hintText: l.libraryFilterHint,
                       prefixIcon: const Icon(Icons.filter_list),
                       isDense: true,
                     ),
-                  ),
-                  const SizedBox(height: FeSpace.xs),
-                  Wrap(
-                    spacing: FeSpace.xs,
-                    runSpacing: FeSpace.xxs,
-                    children: [
-                      for (final s in _StatusFilter.values)
-                        FilterChip(
-                          key: Key('library.status.${s.name}'),
-                          label: Text(statusLabel(s)),
-                          selected: _status == s,
-                          onSelected: (_) => setState(() => _status = s),
-                        ),
-                    ],
                   ),
                   if (groups.isNotEmpty) ...[
                     const SizedBox(height: FeSpace.xs),
@@ -228,6 +222,8 @@ class _LibrarySectionScreenState extends ConsumerState<LibrarySectionScreen> {
                             onTap: () => setState(() {
                               _section = LibrarySection.substances;
                               _group = null;
+                              _filter = '';
+                              _filterController.clear();
                             }),
                           ),
                         ],
@@ -241,7 +237,7 @@ class _LibrarySectionScreenState extends ConsumerState<LibrarySectionScreen> {
                         (
                           label: l.availClearFilters,
                           icon: Icons.filter_alt_off_outlined,
-                          onTap: () => setState(() => _group = null),
+                          onTap: _clearFilters,
                         ),
                         (
                           label: l.availSearch,
@@ -345,6 +341,8 @@ class LibraryScreen extends ConsumerWidget {
     final evidence = ref.watch(evidenceDataProvider);
     final resolver = ref.watch(jurisdictionResolverProvider);
     final provenance = ref.watch(provenanceIndexProvider);
+    final isAdmin = ref.watch(serverAccessProvider).value?.isAdmin ?? false;
+    final sourceCount = ref.watch(sourceIndexProvider).length;
     int lib(LibrarySection s) => library.entries(s).length;
     int kn(KnowledgeKind k) => knowledge.byKind(k).length;
     // Standartlar ekrani bilan bir xil: ilmiy bo‘lmagan metodlar + rasmiy
@@ -421,11 +419,12 @@ class LibraryScreen extends ConsumerWidget {
         l.moduleResearch,
         evidence.research.length,
       ),
+      // Manbalar — yozuvlar keltirgan haqiqiy manbalar ro‘yxati.
       (
         'references',
         Icons.menu_book_outlined,
         l.libraryReferences,
-        lib(LibrarySection.references),
+        sourceCount,
       ),
       (
         'jurisdictions',
@@ -439,12 +438,14 @@ class LibraryScreen extends ConsumerWidget {
         l.libraryConflicts,
         provenance.conflicts.length,
       ),
-      (
-        'review',
-        Icons.fact_check_outlined,
-        l.libraryReview,
-        provenance.review.total,
-      ),
+      // Tekshiruv holati (QA paneli) — faqat admin uchun.
+      if (isAdmin)
+        (
+          'review',
+          Icons.fact_check_outlined,
+          l.libraryReview,
+          provenance.review.total,
+        ),
     ];
 
     String route(String id) => switch (id) {
@@ -453,7 +454,7 @@ class LibraryScreen extends ConsumerWidget {
       'conflicts' => Routes.conflicts,
       'review' => Routes.reviewStatus,
       'glossary' => Routes.librarySection(LibrarySection.glossary.name),
-      'references' => Routes.librarySection(LibrarySection.references.name),
+      'references' => Routes.sources,
       'methods' => Routes.knowledge(KnowledgeKind.method.name),
       'reagents' => Routes.knowledge(KnowledgeKind.reagent.name),
       'rapid' => Routes.knowledge(KnowledgeKind.screeningTest.name),
@@ -518,10 +519,13 @@ class LibraryScreen extends ConsumerWidget {
                     style: Theme.of(context).textTheme.bodySmall
                         ?.copyWith(color: FeTheme.of(context).textSecondary),
                   ),
+                  // Bo‘sh bo‘limlar ko‘rsatilmaydi (bo‘sh sahifa yo‘q).
                   FeSectionHeader(l.libraryGroupScience),
-                  for (final x in science) tile(x),
+                  for (final x in science)
+                    if (x.$4 > 0) tile(x),
                   FeSectionHeader(l.libraryGroupDocs),
-                  for (final x in docs) tile(x),
+                  for (final x in docs)
+                    if (x.$4 > 0) tile(x),
                   const SizedBox(height: FeSpace.lg),
                 ],
               ),

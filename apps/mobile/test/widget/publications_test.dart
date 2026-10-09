@@ -225,10 +225,7 @@ void main() {
       find.byKey(const Key('library.hub.publications'), skipOffstage: false),
       findsNothing,
     );
-    expect(
-      find.byKey(const Key('library.hub.guidelines'), skipOffstage: false),
-      findsOneWidget,
-    );
+    expect(find.byKey(const Key('library.hub')), findsOneWidget);
     await go(Routes.publications);
     expect(find.byKey(const Key('publications.unavailable')), findsOneWidget);
   });

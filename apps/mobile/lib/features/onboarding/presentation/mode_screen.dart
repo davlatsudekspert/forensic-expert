@@ -110,23 +110,42 @@ class _ModeScreenState extends ConsumerState<ModeScreen> {
                   _mode = UserMode.professional;
                 }),
               ),
+              // Rol ixtiyoriy — yig‘ilgan holda (ekran sodda qoladi).
               if (roles.isNotEmpty) ...[
-                const SizedBox(height: FeSpace.lg),
-                Text(l.modeRoleTitle, style: t.titleSmall),
-                const SizedBox(height: FeSpace.xs),
-                Wrap(
-                  spacing: FeSpace.xs,
-                  runSpacing: FeSpace.xs,
-                  children: [
-                    for (final (id, label) in roles)
-                      ChoiceChip(
-                        key: Key('role.$id'),
-                        label: Text(label),
-                        selected: _role == id,
-                        onSelected: (v) =>
-                            setState(() => _role = v ? id : null),
+                const SizedBox(height: FeSpace.md),
+                Theme(
+                  data: Theme.of(context)
+                      .copyWith(dividerColor: Colors.transparent),
+                  child: ExpansionTile(
+                    key: ValueKey('mode.roles.$_mode'),
+                    tilePadding: EdgeInsets.zero,
+                    childrenPadding: const EdgeInsets.only(bottom: FeSpace.xs),
+                    initiallyExpanded: _role != null,
+                    title: Text(
+                      l.modeRoleExpand,
+                      key: const Key('mode.roles'),
+                      style: t.titleSmall,
+                    ),
+                    children: [
+                      Align(
+                        alignment: AlignmentDirectional.centerStart,
+                        child: Wrap(
+                          spacing: FeSpace.xs,
+                          runSpacing: FeSpace.xs,
+                          children: [
+                            for (final (id, label) in roles)
+                              ChoiceChip(
+                                key: Key('role.$id'),
+                                label: Text(label),
+                                selected: _role == id,
+                                onSelected: (v) =>
+                                    setState(() => _role = v ? id : null),
+                              ),
+                          ],
+                        ),
                       ),
-                  ],
+                    ],
+                  ),
                 ),
               ],
               if (_mode == UserMode.professional) ...[

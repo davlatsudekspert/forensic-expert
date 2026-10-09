@@ -72,6 +72,73 @@ class ProfileScreen extends ConsumerWidget {
                     declaredRole: settings.declaredRole,
                     profile: localProfile,
                   ),
+                  // Hisob — sarlavha kartasidan darhol keyin.
+                  FeSectionHeader(l.accountSection),
+                  if (!authState.signedIn) ...[
+                    Text(
+                      l.accountOptionalNote,
+                      key: const Key('profile.accountOptional'),
+                      style: t.bodyMedium?.copyWith(color: c.textSecondary),
+                    ),
+                    if (!authRepo.isConfigured) ...[
+                      // Akkaunt xizmati ulanmagan: ishlamaydigan kirish
+                      // tugmalari ko‘rsatilmaydi — faqat aniq izoh.
+                      const SizedBox(height: FeSpace.xs),
+                      FeBanner(
+                        key: const Key('profile.accountNotConnected'),
+                        icon: Icons.cloud_off_outlined,
+                        text: l.accountNotConnected,
+                      ),
+                    ] else ...[
+                      // Bitta kirish yo‘li: email kod (parol bilan kirish va
+                      // ro‘yxatdan o‘tish qatorlari ko‘rsatilmaydi).
+                      _Row(
+                        key: const Key('profile.emailCode'),
+                        icon: Icons.login,
+                        title: l.accountSignInEmailCode,
+                        value: l.emailCodeRowHint,
+                        onTap: () => context.push(Routes.accountEmailCode),
+                      ),
+                    ],
+                  ] else ...[
+                    _Row(
+                      key: const Key('profile.accountEmail'),
+                      icon: Icons.person_outline,
+                      title: authState.account!.email,
+                      value: authState.account!.emailVerified
+                          ? l.accountVerified
+                          : l.accountNotVerified,
+                    ),
+                    if (!authState.account!.emailVerified)
+                      _Row(
+                        key: const Key('profile.verify'),
+                        icon: Icons.mark_email_unread_outlined,
+                        title: l.accountVerifyNow,
+                        onTap: () => context.push(
+                          Routes.accountVerify,
+                          extra: authState.account!.email,
+                        ),
+                      ),
+                    _Row(
+                      key: const Key('profile.signOut'),
+                      icon: Icons.logout,
+                      title: l.accountSignOut,
+                      onTap: () async {
+                        final messenger = ScaffoldMessenger.of(context);
+                        await authRepo.signOut();
+                        messenger.showSnackBar(
+                          SnackBar(content: Text(l.accountSignedOut)),
+                        );
+                      },
+                    ),
+                    // Apple 5.1.1(v), Google Play account deletion.
+                    _Row(
+                      key: const Key('profile.deleteAccount'),
+                      icon: Icons.person_remove_outlined,
+                      title: l.deleteAccount,
+                      onTap: () => context.push(Routes.accountDelete),
+                    ),
+                  ],
                   const SizedBox(height: FeSpace.sm),
                   const InviteColleagueCard(key: Key('profile.invite')),
                   if (ref.watch(serverAccessProvider).value?.isAdmin ?? false)
@@ -193,82 +260,6 @@ class ProfileScreen extends ConsumerWidget {
                     l.contrastSystemHint,
                     style: t.bodySmall?.copyWith(color: c.textSecondary),
                   ),
-                  FeSectionHeader(l.accountSection),
-                  if (!authState.signedIn) ...[
-                    Text(
-                      l.accountOptionalNote,
-                      key: const Key('profile.accountOptional'),
-                      style: t.bodyMedium?.copyWith(color: c.textSecondary),
-                    ),
-                    if (!authRepo.isConfigured) ...[
-                      // Akkaunt xizmati ulanmagan: ishlamaydigan kirish
-                      // tugmalari ko‘rsatilmaydi — faqat aniq izoh.
-                      const SizedBox(height: FeSpace.xs),
-                      FeBanner(
-                        key: const Key('profile.accountNotConnected'),
-                        icon: Icons.cloud_off_outlined,
-                        text: l.accountNotConnected,
-                      ),
-                    ] else ...[
-                      _Row(
-                        key: const Key('profile.emailCode'),
-                        icon: Icons.mark_email_read_outlined,
-                        title: l.emailCodeTitle,
-                        value: l.emailCodeRowHint,
-                        onTap: () => context.push(Routes.accountEmailCode),
-                      ),
-                      _Row(
-                        key: const Key('profile.signIn'),
-                        icon: Icons.login,
-                        title: l.accountSignIn,
-                        onTap: () => context.push(Routes.accountSignIn),
-                      ),
-                      _Row(
-                        key: const Key('profile.register'),
-                        icon: Icons.person_add_alt,
-                        title: l.accountCreate,
-                        onTap: () => context.push(Routes.accountRegister),
-                      ),
-                    ],
-                  ] else ...[
-                    _Row(
-                      key: const Key('profile.accountEmail'),
-                      icon: Icons.person_outline,
-                      title: authState.account!.email,
-                      value: authState.account!.emailVerified
-                          ? l.accountVerified
-                          : l.accountNotVerified,
-                    ),
-                    if (!authState.account!.emailVerified)
-                      _Row(
-                        key: const Key('profile.verify'),
-                        icon: Icons.mark_email_unread_outlined,
-                        title: l.accountVerifyNow,
-                        onTap: () => context.push(
-                          Routes.accountVerify,
-                          extra: authState.account!.email,
-                        ),
-                      ),
-                    _Row(
-                      key: const Key('profile.signOut'),
-                      icon: Icons.logout,
-                      title: l.accountSignOut,
-                      onTap: () async {
-                        final messenger = ScaffoldMessenger.of(context);
-                        await authRepo.signOut();
-                        messenger.showSnackBar(
-                          SnackBar(content: Text(l.accountSignedOut)),
-                        );
-                      },
-                    ),
-                    // Apple 5.1.1(v), Google Play account deletion.
-                    _Row(
-                      key: const Key('profile.deleteAccount'),
-                      icon: Icons.person_remove_outlined,
-                      title: l.deleteAccount,
-                      onTap: () => context.push(Routes.accountDelete),
-                    ),
-                  ],
                   FeSectionHeader(l.subscriptionSection),
                   _Row(
                     key: const Key('profile.purchase'),

@@ -8,6 +8,7 @@ import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
+import '../../../core/settings/app_settings.dart';
 import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/ai/ai_architecture.dart';
@@ -37,6 +38,15 @@ class _AiScreenState extends ConsumerState<AiScreen> {
   AiExperience _experience = AiExperience.professional;
   RagAnswer? _rag;
   bool _searching = false;
+
+  @override
+  void initState() {
+    super.initState();
+    // Talaba rejimida standart uslub — «Tushuntirib bering».
+    if (ref.read(settingsControllerProvider).userMode == UserMode.student) {
+      _experience = AiExperience.tutor;
+    }
+  }
 
   /// Bitta savol — bitta quvur, ko‘pi bilan bitta server so‘rovi.
   /// [offlineOnly] — tarmoqqa umuman chiqmaydi (faqat qurilmadagi qidiruv).
@@ -111,33 +121,50 @@ class _AiScreenState extends ConsumerState<AiScreen> {
                 children: [
                   const SizedBox(height: FeSpace.xs),
                   _AiHeader(available: available, needsSignIn: needsSignIn),
-                  const SizedBox(height: FeSpace.sm),
-                  if (ai.availability == AiAvailability.signInRequired) ...[
-                    const _SignInRequiredCard(),
-                    const SizedBox(height: FeSpace.sm),
-                  ] else if (!available) ...[
-                    const _PreviewStateCard(),
-                    const SizedBox(height: FeSpace.sm),
-                  ],
-                  // Doimiy PII ogohlantirishi (18-bo‘lim).
-                  FeBanner(
-                    key: const Key('ai.piiWarning'),
-                    icon: Icons.privacy_tip_outlined,
-                    text: l.aiPiiWarning,
-                    tone: FeBannerTone.warning,
-                  ),
                   FeSectionHeader(l.aiAskTitle),
+                  // Avval savol maydoni; PII ogohlantirishi doim uning ostida
+                  // (ixcham yordamchi matn).
+                  TextField(
+                    key: const Key('ai.input'),
+                    controller: _controller,
+                    minLines: 2,
+                    maxLines: 5,
+                    onChanged: (v) => setState(() => _pii = scanner.scan(v)),
+                    decoration: InputDecoration(hintText: l.aiInputHint),
+                  ),
+                  const SizedBox(height: FeSpace.xxs),
+                  Row(
+                    key: const Key('ai.piiWarning'),
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(top: 1),
+                        child: Icon(
+                          Icons.privacy_tip_outlined,
+                          size: 16,
+                          color: c.warning,
+                        ),
+                      ),
+                      const SizedBox(width: FeSpace.xs),
+                      Expanded(
+                        child: Text(
+                          l.aiPiiWarning,
+                          style: t.bodySmall?.copyWith(color: c.textSecondary),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: FeSpace.sm),
                   SegmentedButton<AiExperience>(
                     key: const Key('ai.experience'),
+                    showSelectedIcon: false,
                     segments: [
                       ButtonSegment(
                         value: AiExperience.professional,
-                        icon: const Icon(Icons.work_outline),
                         label: Text(l.aiExperienceProfessional),
                       ),
                       ButtonSegment(
                         value: AiExperience.tutor,
-                        icon: const Icon(Icons.school_outlined),
                         label: Text(l.aiExperienceTutor),
                       ),
                     ],
@@ -151,15 +178,6 @@ class _AiScreenState extends ConsumerState<AiScreen> {
                         ? l.aiExperienceTutorHint
                         : l.aiExperienceProfessionalHint,
                     style: t.bodySmall?.copyWith(color: c.textSecondary),
-                  ),
-                  const SizedBox(height: FeSpace.sm),
-                  TextField(
-                    key: const Key('ai.input'),
-                    controller: _controller,
-                    minLines: 2,
-                    maxLines: 5,
-                    onChanged: (v) => setState(() => _pii = scanner.scan(v)),
-                    decoration: InputDecoration(hintText: l.aiInputHint),
                   ),
                   if (kinds.isNotEmpty) ...[
                     const SizedBox(height: FeSpace.xs),
@@ -178,10 +196,12 @@ class _AiScreenState extends ConsumerState<AiScreen> {
                   const SizedBox(height: FeSpace.sm),
                   Wrap(
                     alignment: WrapAlignment.end,
+                    crossAxisAlignment: WrapCrossAlignment.center,
                     spacing: FeSpace.xs,
                     runSpacing: FeSpace.xs,
                     children: [
-                      OutlinedButton.icon(
+                      // Ikkilamchi amal — matnli tugma; asosiy — «Yuborish».
+                      TextButton.icon(
                         key: const Key('ai.findSources'),
                         icon: const Icon(Icons.travel_explore_outlined),
                         label: Text(l.aiFindSources),
@@ -217,6 +237,14 @@ class _AiScreenState extends ConsumerState<AiScreen> {
                         style: t.bodySmall?.copyWith(color: c.textSecondary),
                       ),
                     ),
+                  // Holat kartasi — savol maydonidan keyin (avval kiritish).
+                  if (ai.availability == AiAvailability.signInRequired) ...[
+                    const SizedBox(height: FeSpace.sm),
+                    const _SignInRequiredCard(),
+                  ] else if (!available) ...[
+                    const SizedBox(height: FeSpace.sm),
+                    const _PreviewStateCard(),
+                  ],
                   if (_searching)
                     Padding(
                       key: const Key('ai.progress'),
@@ -890,9 +918,9 @@ class _SignInRequiredCard extends StatelessWidget {
             alignment: AlignmentDirectional.centerStart,
             child: FilledButton.icon(
               key: const Key('ai.signIn'),
-              onPressed: () => context.push(Routes.accountSignIn),
+              onPressed: () => context.push(Routes.accountEmailCode),
               icon: const Icon(Icons.login),
-              label: Text(l.accountSignIn),
+              label: Text(l.accountSignInEmailCode),
             ),
           ),
         ],
@@ -918,6 +946,7 @@ class _PreviewStateCard extends StatelessWidget {
           children: [
             Text(l.aiNotConnectedTitle, style: t.titleSmall),
             const SizedBox(height: FeSpace.xxs),
+            // Osilgan chekinish: belgi alohida, matn o‘z ustunida o‘raladi.
             for (final p in [
               l.aiPreviewPoint1,
               l.aiPreviewPoint2,
@@ -926,9 +955,23 @@ class _PreviewStateCard extends StatelessWidget {
             ])
               Padding(
                 padding: const EdgeInsets.only(top: 2),
-                child: Text(
-                  '${FeGlyphs.bullet} $p',
-                  style: t.bodySmall?.copyWith(color: c.textSecondary),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    ExcludeSemantics(
+                      child: Text(
+                        FeGlyphs.bullet,
+                        style: t.bodySmall?.copyWith(color: c.textSecondary),
+                      ),
+                    ),
+                    const SizedBox(width: FeSpace.xs),
+                    Expanded(
+                      child: Text(
+                        p,
+                        style: t.bodySmall?.copyWith(color: c.textSecondary),
+                      ),
+                    ),
+                  ],
                 ),
               ),
           ],

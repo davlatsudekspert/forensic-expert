@@ -121,6 +121,8 @@ class ModuleHubScreen extends ConsumerWidget {
                       l.moduleHubTools,
                       padding: const EdgeInsets.only(bottom: FeSpace.xs),
                     ),
+                    const ToolsReviewNote(),
+                    const SizedBox(height: FeSpace.xs),
                     for (final t in tools)
                       Padding(
                         padding: const EdgeInsets.only(bottom: FeSpace.xs),

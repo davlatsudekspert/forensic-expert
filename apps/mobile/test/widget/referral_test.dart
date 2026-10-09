@@ -335,6 +335,8 @@ void main() {
       expect(firstStepFor('/library/source/SRC-1'), 'source');
       expect(firstStepFor('/home/research/R1'), 'source');
       expect(firstStepFor(Routes.ai), 'ai');
+      expect(firstStepFor(Routes.disciplines), 'discipline');
+      expect(firstStepFor(Routes.module('toxicology')), 'discipline');
       expect(firstStepFor(Routes.home), isNull);
     });
   });

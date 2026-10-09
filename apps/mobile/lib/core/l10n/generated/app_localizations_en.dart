@@ -132,11 +132,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get inDevelopmentBody =>
-      'Content appears here only when it has a verifiable source and has passed expert review. Nothing is filled in just to make the screen look complete.';
+      'No reviewed information has been added to this section yet.';
 
   @override
-  String get unverifiedBanner =>
-      'UNVERIFIED DATA — EXPERT CONFIRMATION REQUIRED';
+  String get unverifiedBanner => 'Not yet confirmed by an expert';
 
   @override
   String get statusVerified => 'Verified';
@@ -151,7 +150,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get statusOutdated => 'Outdated';
 
   @override
-  String get aiNotConnectedTitle => 'Production AI service is not connected';
+  String get aiNotConnectedTitle => 'AI is temporarily unavailable';
 
   @override
   String get aiNotConnectedBody =>
@@ -910,7 +909,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get detailTranslationDraft =>
-      'Names: machine draft, translation not reviewed';
+      'Names are machine-translated and not yet reviewed';
 
   @override
   String get detailNoContentYet => 'No sourced content for this section yet.';
@@ -921,7 +920,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get detailIdentifierVerified => 'Identifier checked automatically';
+  String get detailIdentifierVerified => 'DOI/PMID checked automatically';
 
   @override
   String detailSourceLicence(String mode) {
@@ -1204,7 +1203,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get methodKindNational => 'National methods';
 
   @override
-  String get methodKindSop => 'Institutional SOPs';
+  String get methodKindSop =>
+      'Institutional SOPs (standard operating procedures)';
 
   @override
   String get methodKindNote =>
@@ -1485,10 +1485,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get legalStatusRepealed => 'Repealed';
 
   @override
-  String get aiExperienceProfessional => 'Professional';
+  String get aiExperienceProfessional => 'Short answer';
 
   @override
-  String get aiExperienceTutor => 'Tutor';
+  String get aiExperienceTutor => 'Explain it to me';
 
   @override
   String get aiExperienceProfessionalHint =>
@@ -1544,11 +1544,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get learnHistory => 'Recently studied';
 
   @override
-  String get learnBookmarks => 'Bookmarks';
+  String get learnBookmarks => 'Favorites';
 
   @override
   String get learnBookmarksEmpty =>
-      'Bookmark a topic with the star to find it here.';
+      'Mark a topic with the star to find it here.';
 
   @override
   String get learnMarkComplete => 'Mark as completed';
@@ -2839,7 +2839,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get provHumanVerified => 'Verified by qualified human reviewers';
 
   @override
-  String get provNotVerified => 'NOT VERIFIED — EXPERT CONFIRMATION REQUIRED';
+  String get provNotVerified => 'Not yet confirmed by an expert';
 
   @override
   String provRequiredRole(String role) {
@@ -3747,18 +3747,18 @@ class AppLocalizationsEn extends AppLocalizations {
   String get availSearch => 'Search';
 
   @override
-  String get aiStatusPreview => 'Preview · not connected';
+  String get aiStatusPreview => 'Not available yet';
 
   @override
-  String get aiPreviewPoint1 => 'This screen is an interface preview.';
+  String get aiPreviewPoint1 => 'No AI answers are generated right now.';
 
   @override
   String get aiPreviewPoint2 =>
-      'The production AI service is not connected, so no AI answer is generated.';
+      'This is temporary; the rest of the app works offline.';
 
   @override
   String get aiPreviewPoint3 =>
-      'The sample answer below is a demonstration of the layout only.';
+      'The sample below only shows how an answer is laid out.';
 
   @override
   String get aiPreviewPoint4 =>
@@ -3766,7 +3766,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get aiSendUnavailable =>
-      'Sending is disabled until the AI service is connected.';
+      'AI is temporarily unavailable — sending is disabled.';
 
   @override
   String get concWarning =>
@@ -4016,7 +4016,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get profileLocalOnlyNote =>
-      'Profile details are stored only on this device and are not sent anywhere.';
+      'Your profile is stored on this device. It is sent to the server only when you submit it for verification.';
 
   @override
   String get profileStudentTitle => 'Student profile';
@@ -4604,7 +4604,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String emailCodeResendIn(int seconds) {
-    return 'Resend code in $seconds s';
+    return 'Resend ($seconds)';
   }
 
   @override
@@ -4672,7 +4672,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String homeDbHumanVerified(int count) {
-    return 'Human verified (2 independent experts): $count';
+    return 'Expert verified (2 independent experts): $count';
   }
 
   @override
@@ -4690,11 +4690,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get homeStatClaims => 'Sourced claims';
 
   @override
-  String get homeStatHumanVerified => 'Human verified';
+  String get homeStatHumanVerified => 'Expert verified';
 
   @override
   String get homeStatPolicy =>
-      'Human verified = two independent qualified experts. Automated checks and AI are never counted.';
+      'Expert verified = two independent qualified experts. Automated checks and AI are never counted.';
 
   @override
   String get aiHeroSubtitle =>
@@ -5988,6 +5988,41 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get studyDeckNotFound => 'This deck is not available.';
+
+  @override
+  String get notFoundTitle => 'Page not found';
+
+  @override
+  String get notFoundBody => 'The link may be outdated or incorrect.';
+
+  @override
+  String get notFoundHome => 'Go to Home';
+
+  @override
+  String get accountSignInEmailCode => 'Sign in (email code)';
+
+  @override
+  String get toolsReviewNote =>
+      'Calculation modules are software-tested. Formulas and their sources have not yet been confirmed by an expert.';
+
+  @override
+  String searchAllStatus(String status) {
+    return 'All results: $status';
+  }
+
+  @override
+  String get researchOpenInBrowser => 'Open';
+
+  @override
+  String disciplinesComingSoon(int count) {
+    return 'Coming soon ($count)';
+  }
+
+  @override
+  String get modeRoleExpand => 'Choose a role (optional)';
+
+  @override
+  String get sourcesEmpty => 'No sources are available yet.';
 
   @override
   String get analysisTitle => 'Analysis';

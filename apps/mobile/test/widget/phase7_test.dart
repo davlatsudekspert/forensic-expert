@@ -2,10 +2,12 @@ import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:forensic_expert/app/account.dart';
 import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/app/search_service.dart';
 import 'package:forensic_expert/data/fixtures/test_fixtures.dart';
+import 'package:forensic_expert/domain/admin/admin_models.dart';
 import 'package:forensic_expert/domain/evidence/evidence_models.dart';
 
 import '../helpers/fake_store.dart';
@@ -156,7 +158,10 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.byKey(const Key('provenance.sheet')), findsOneWidget);
       expect(
-        find.text('NOT VERIFIED — EXPERT CONFIRMATION REQUIRED'),
+        find.descendant(
+          of: find.byKey(const Key('provenance.sheet')),
+          matching: find.text('Not yet confirmed by an expert'),
+        ),
         findsOneWidget,
       );
       final sheet = find.descendant(
@@ -308,10 +313,34 @@ void main() {
     await see(tester, find.text('FLAG_CONFLICT'));
   });
 
-  testWidgets('Library hub: namunalar, ziddiyatlar, review', (tester) async {
+  testWidgets('Library hub: namunalar, ziddiyatlar; review — faqat admin', (
+    tester,
+  ) async {
     await open(tester, Routes.library);
     await see(tester, find.byKey(const Key('library.hub.specimens')));
     await see(tester, find.byKey(const Key('library.hub.conflicts')));
+    expect(
+      find.byKey(const Key('library.hub.review'), skipOffstage: false),
+      findsNothing,
+    );
+  });
+
+  testWidgets('Library hub: admin tekshiruv holati panelini ko‘radi', (
+    tester,
+  ) async {
+    await pumpApp(
+      tester,
+      settings: completedSettings(),
+      initialLocation: Routes.library,
+      testFixtures: false,
+      overrides: [
+        ...pilot.overrides,
+        entitlementServiceProvider.overrideWithValue(FakeStore(owned: true)),
+        serverAccessProvider.overrideWith(
+          (ref) async => const ServerAccess(isAdmin: true),
+        ),
+      ],
+    );
     await see(tester, find.byKey(const Key('library.hub.review')));
   });
 

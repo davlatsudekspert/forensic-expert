@@ -34,9 +34,11 @@ import '../features/legal/presentation/jurisdiction_screens.dart';
 import '../features/library/presentation/entry_detail_screen.dart';
 import '../features/library/presentation/library_screen.dart';
 import '../features/library/presentation/source_detail_screen.dart';
+import '../features/library/presentation/sources_list_screen.dart';
 import '../features/onboarding/presentation/disclaimer_screen.dart';
 import '../features/onboarding/presentation/language_screen.dart';
 import '../features/onboarding/presentation/mode_screen.dart';
+import '../features/placeholder/presentation/not_found_screen.dart';
 import '../features/professional/presentation/account_choice_screen.dart';
 import '../features/professional/presentation/profile_edit_screen.dart';
 import '../features/professional/presentation/review_section.dart';
@@ -88,7 +90,9 @@ class _SettingsListenable extends ChangeNotifier {
 
 /// «Birinchi qadamlar»: qaysi bo‘lim ochilganini faqat lokal belgilaydi.
 String? firstStepFor(String location) {
-  if (location.startsWith('/home/disciplines/') ||
+  if (location == Routes.disciplines ||
+      location.startsWith('/home/disciplines/') ||
+      location.startsWith('/home/module/') ||
       location.startsWith('/home/area/')) {
     return 'discipline';
   }
@@ -123,6 +127,8 @@ final routerProvider = Provider<GoRouter>((ref) {
         Routes.home,
     refreshListenable: refresh,
     observers: [NavigationTimingObserver()],
+    // Noma’lum yoki eskirgan havola — tushunarli sahifa va Home tugmasi.
+    errorBuilder: (c, s) => const NotFoundScreen(),
     redirect: (context, state) {
       final settings = ref.read(settingsControllerProvider);
       // Taklif havolasi: kod lokal saqlanadi (attribution — serverda,
@@ -267,11 +273,11 @@ final routerProvider = Provider<GoRouter>((ref) {
                   ),
                   GoRoute(
                     path: 'knowledge/:kind',
-                    builder: (c, s) => KnowledgeListScreen(
-                      kind: KnowledgeKind.values.byName(
-                        s.pathParameters['kind']!,
-                      ),
-                    ),
+                    builder: (c, s) => switch (KnowledgeKind.values
+                        .asNameMap()[s.pathParameters['kind']]) {
+                      final kind? => KnowledgeListScreen(kind: kind),
+                      null => const NotFoundScreen(),
+                    },
                   ),
                   GoRoute(
                     path: 'entry/:id',
@@ -280,11 +286,39 @@ final routerProvider = Provider<GoRouter>((ref) {
                   ),
                   GoRoute(
                     path: 'area/:area',
-                    builder: (c, s) => AreaHubScreen(
-                      area: KnowledgeArea.values.byName(
-                        s.pathParameters['area']!,
-                      ),
+                    builder: (c, s) => switch (KnowledgeArea.values
+                        .asNameMap()[s.pathParameters['area']]) {
+                      final area? => AreaHubScreen(area: area),
+                      null => const NotFoundScreen(),
+                    },
+                  ),
+                  // Qidiruv natijalari Home tabida ochiladi (tab
+                  // almashmaydi, «Back» natijalarga qaytaradi) — boshqa
+                  // tablardagi ekranlarning o‘zi qayta ishlatiladi.
+                  GoRoute(
+                    path: 'substance/:id',
+                    builder: (c, s) =>
+                        EntryDetailScreen(entryId: s.pathParameters['id']!),
+                  ),
+                  GoRoute(
+                    path: 'tool/:id',
+                    builder: (c, s) =>
+                        ToolDetailScreen(toolId: s.pathParameters['id']!),
+                  ),
+                  GoRoute(
+                    path: 'guideline/:id',
+                    builder: (c, s) =>
+                        GuidelineDetailScreen(cardId: s.pathParameters['id']!),
+                  ),
+                  GoRoute(
+                    path: 'specimen/:id',
+                    builder: (c, s) => SpecimenDetailScreen(
+                      specimenId: s.pathParameters['id']!,
                     ),
+                  ),
+                  GoRoute(
+                    path: 'standards',
+                    builder: (c, s) => const StandardsScreen(),
                   ),
                   GoRoute(
                     path: 'module/:id',
@@ -334,12 +368,15 @@ final routerProvider = Provider<GoRouter>((ref) {
                   ),
                   GoRoute(
                     path: 'section/:section',
-                    builder: (c, s) => LibrarySectionScreen(
-                      section:
-                          LibrarySection.values
-                              .asNameMap()[s.pathParameters['section']] ??
-                          LibrarySection.substances,
-                    ),
+                    builder: (c, s) => switch (LibrarySection.values
+                        .asNameMap()[s.pathParameters['section']]) {
+                      final section? => LibrarySectionScreen(section: section),
+                      null => const NotFoundScreen(),
+                    },
+                  ),
+                  GoRoute(
+                    path: 'sources',
+                    builder: (c, s) => const SourcesListScreen(),
                   ),
                   GoRoute(
                     path: 'standards',

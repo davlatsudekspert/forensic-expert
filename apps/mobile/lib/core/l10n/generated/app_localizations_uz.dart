@@ -133,11 +133,11 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get inDevelopmentBody =>
-      'Bu yerda ma’lumot faqat tekshiriladigan manbaga ega bo‘lsa va ekspert tekshiruvidan o‘tgandan keyin paydo bo‘ladi. Ekran to‘liq ko‘rinishi uchun ma’lumot to‘qilmaydi.';
+      'Bu bo‘limga hali tekshirilgan ma’lumot qo‘shilmagan.';
 
   @override
   String get unverifiedBanner =>
-      'MA’LUMOT TEKSHIRILMAGAN — EKSPERT TASDIG‘I KERAK';
+      'Ma’lumot hali ekspert tomonidan tasdiqlanmagan';
 
   @override
   String get statusVerified => 'Tasdiqlangan';
@@ -146,13 +146,13 @@ class AppLocalizationsUz extends AppLocalizations {
   String get statusReviewed => 'Ko‘rib chiqilgan';
 
   @override
-  String get statusNeedsReview => 'Tekshiruv kerak';
+  String get statusNeedsReview => 'Tekshirilmagan';
 
   @override
   String get statusOutdated => 'Eskirgan';
 
   @override
-  String get aiNotConnectedTitle => 'Ishchi AI xizmati ulanmagan';
+  String get aiNotConnectedTitle => 'AI vaqtincha ishlamayapti';
 
   @override
   String get aiNotConnectedBody =>
@@ -590,7 +590,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get piiKindAddress => 'manzil';
 
   @override
-  String get aiPreviewTitle => 'Javob tuzilmasi (namoyish)';
+  String get aiPreviewTitle => 'Javob tuzilmasi (namuna)';
 
   @override
   String get aiPreviewNotice =>
@@ -737,7 +737,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get aboutApp => 'Ilova haqida';
 
   @override
-  String get deleteAccount => 'Akkauntni o‘chirish';
+  String get deleteAccount => 'Hisobni o‘chirish';
 
   @override
   String get legalDraftNotice =>
@@ -745,7 +745,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get privacySummary =>
-      'Asosiy kutubxona va kalkulyatorlar oflayn ishlaydi. Qidiruv tarixi, natijalar va ixtiyoriy profilingiz (ism, tashkilot, mutaxassislik) qurilmangizda saqlanadi. Profil ma’lumotlari va malaka hujjatlari faqat professional tasdiqlash xizmati ulangandan keyin ariza yuborsangiz jo‘natiladi; hujjatlar maxfiy saqlanadi va hech qachon ochiq ko‘rsatilmaydi. Ilovada reklama SDK’lari yo‘q. Shaxsiy ma’lumot va ish tafsilotlari AI’ga hech qachon avtomatik yuborilmaydi.\n\nTakliflar: hamkasbingiz taklif kodidan foydalansangiz, server faqat ikki akkaunt orasidagi bog‘lanishni va emailingizning tuzli xeshini saqlaydi (akkauntni qayta ochish orqali suiiste’molning oldini olish uchun). Taklif qilgan kishi faqat umumiy sonlarni ko‘radi — ismingiz, emailingiz, profilingiz yoki hujjatlaringizni hech qachon ko‘rmaydi. Ilova kontaktlaringizni o‘qimaydi.';
+      'Asosiy kutubxona va kalkulyatorlar oflayn ishlaydi. Qidiruv tarixi, natijalar va ixtiyoriy profilingiz (ism, tashkilot, mutaxassislik) qurilmangizda saqlanadi. Profil ma’lumotlari va malaka hujjatlari faqat professional tasdiqlash xizmati ulangandan keyin ariza yuborsangiz jo‘natiladi; hujjatlar maxfiy saqlanadi va hech qachon ochiq ko‘rsatilmaydi. Ilovada reklama SDK’lari yo‘q. Shaxsiy ma’lumot va ish tafsilotlari AI’ga hech qachon avtomatik yuborilmaydi.\n\nTakliflar: hamkasbingiz taklif kodidan foydalansangiz, server faqat ikki hisob orasidagi bog‘lanishni va elektron pochtangizning tuzli xeshini saqlaydi (hisobni qayta ochish orqali suiiste’molning oldini olish uchun). Taklif qilgan kishi faqat umumiy sonlarni ko‘radi — ismingiz, elektron pochtangiz, profilingiz yoki hujjatlaringizni hech qachon ko‘rmaydi. Ilova kontaktlaringizni o‘qimaydi.';
 
   @override
   String get aboutBody =>
@@ -757,7 +757,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get storeNotConnected =>
-      'Bu yig‘mada App Store / Google Play ulanmagan. Narx va xarid faqat do‘kon bergandagina paydo bo‘ladi.';
+      'App Store / Google Play hozircha mavjud emas. Narx va xarid faqat do‘kon bergandagina paydo bo‘ladi.';
 
   @override
   String get restorePurchases => 'Xaridlarni tiklash';
@@ -835,7 +835,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get purchaseFreeBody =>
-      'Asosiy oflayn ma’lumotnoma, qidiruv va oddiy kalkulyatorlar — akkauntsiz.';
+      'Asosiy oflayn ma’lumotnoma, qidiruv va oddiy kalkulyatorlar — hisobsiz.';
 
   @override
   String get purchaseAiNote =>
@@ -845,7 +845,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get purchaseOwned => 'Obunangiz faol';
 
   @override
-  String get purchaseUnavailableSnack => 'Bu yig‘mada xarid qilib bo‘lmaydi.';
+  String get purchaseUnavailableSnack => 'Xarid hozircha mavjud emas.';
 
   @override
   String get accessFree => 'Bepul';
@@ -912,7 +912,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get detailTranslationDraft =>
-      'Nomlar: mashina qoralamasi, tarjima tekshirilmagan';
+      'Nomlar avtomatik tarjima qilingan, hali tekshirilmagan';
 
   @override
   String get detailNoContentYet => 'Bu bo‘lim uchun manbali kontent hali yo‘q.';
@@ -923,7 +923,7 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String get detailIdentifierVerified => 'Identifikator avtomatik tekshirilgan';
+  String get detailIdentifierVerified => 'DOI/PMID avtomatik tekshirilgan';
 
   @override
   String detailSourceLicence(String mode) {
@@ -964,7 +964,7 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String get lockedTitle => 'Student Pro va Professional Pro tarkibida';
+  String get lockedTitle => 'Talaba Pro va Mutaxassis Pro tarkibida';
 
   @override
   String get lockedBody =>
@@ -989,7 +989,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get contentLoading => 'Ilmiy baza yuklanmoqda…';
 
   @override
-  String get libraryNotInstalled => 'Bu yig‘mada ilmiy baza o‘rnatilmagan.';
+  String get libraryNotInstalled => 'Ilmiy baza hozircha o‘rnatilmagan.';
 
   @override
   String get purchasePending => 'Xarid do‘kon tasdig‘ini kutmoqda.';
@@ -1042,7 +1042,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get moduleScreening => 'Ekspress va skrining testlari';
 
   @override
-  String get moduleMethods => 'Metodlar va SOP';
+  String get moduleMethods => 'Usullar va SOP';
 
   @override
   String get moduleStandardsLaws => 'Huquq va yurisdiksiyalar';
@@ -1159,7 +1159,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get screeningBanner =>
-      'SKRINING NATIJASI ≠ TASDIQLANGAN IDENTIFIKATSIYA. Ijobiy skrining dastlabki natija bo‘lib, validatsiyadan o‘tgan tasdiqlovchi metodni talab qiladi.';
+      'SKRINING NATIJASI ≠ TASDIQLANGAN IDENTIFIKATSIYA. Ijobiy skrining dastlabki natija bo‘lib, validatsiyadan o‘tgan tasdiqlovchi usulni talab qiladi.';
 
   @override
   String get screeningAnalyte => 'Analit';
@@ -1192,10 +1192,10 @@ class AppLocalizationsUz extends AppLocalizations {
   String get screeningLimitations => 'Cheklovlar';
 
   @override
-  String get screeningConfirmatory => 'Tasdiqlovchi metodlar';
+  String get screeningConfirmatory => 'Tasdiqlovchi usullar';
 
   @override
-  String get methodKindScientific => 'Ilmiy metodlar';
+  String get methodKindScientific => 'Ilmiy usullar';
 
   @override
   String get methodKindInternational => 'Xalqaro standartlar';
@@ -1204,11 +1204,11 @@ class AppLocalizationsUz extends AppLocalizations {
   String get methodKindNational => 'Milliy metodikalar';
 
   @override
-  String get methodKindSop => 'Muassasa SOP’lari';
+  String get methodKindSop => 'Muassasa SOP’lari (standart ish tartiblari)';
 
   @override
   String get methodKindNote =>
-      'Metod turlari aralashtirilmaydi: ilmiy metod huquqiy talab emas, muassasa SOP’i esa faqat o‘sha muassasada amal qiladi.';
+      'Usul turlari aralashtirilmaydi: ilmiy usul huquqiy talab emas, muassasa SOP’i esa faqat o‘sha muassasada amal qiladi.';
 
   @override
   String get methodNoKindEntries => 'Bu turdagi yozuv hozircha yo‘q.';
@@ -1274,7 +1274,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get emergingCatStandards => 'Yangi standartlar';
 
   @override
-  String get emergingCatValidation => 'Metod validatsiyasi';
+  String get emergingCatValidation => 'Usul validatsiyasi';
 
   @override
   String get emergingCatQuality => 'Laboratoriya sifati';
@@ -1485,10 +1485,10 @@ class AppLocalizationsUz extends AppLocalizations {
   String get legalStatusRepealed => 'Kuchini yo‘qotgan';
 
   @override
-  String get aiExperienceProfessional => 'Mutaxassis';
+  String get aiExperienceProfessional => 'Qisqa javob';
 
   @override
-  String get aiExperienceTutor => 'Ustoz';
+  String get aiExperienceTutor => 'Tushuntirib bering';
 
   @override
   String get aiExperienceProfessionalHint =>
@@ -1545,7 +1545,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get learnHistory => 'Yaqinda o‘rganilgan';
 
   @override
-  String get learnBookmarks => 'Xatcho‘plar';
+  String get learnBookmarks => 'Saralanganlar';
 
   @override
   String get learnBookmarksEmpty =>
@@ -1649,7 +1649,7 @@ class AppLocalizationsUz extends AppLocalizations {
       'Guruhlar — tahririy navigatsiya, ilmiy tasnif da’vosi emas.';
 
   @override
-  String get detailAnalyticalMethods => 'Analitik metodlar (manbalardan)';
+  String get detailAnalyticalMethods => 'Analitik usullar (manbalardan)';
 
   @override
   String get detailReportedConcentrations => 'Xabar qilingan konsentratsiyalar';
@@ -1673,13 +1673,13 @@ class AppLocalizationsUz extends AppLocalizations {
   String get detailRelated => 'Bog‘liq professional materiallar';
 
   @override
-  String get relationAnalysedBy => 'Tahlil metodi (manbada tilga olingan)';
+  String get relationAnalysedBy => 'Tahlil usuli (manbada tilga olingan)';
 
   @override
   String get relationMetabolism => 'Metabolizm manbasida birga tilga olingan';
 
   @override
-  String get relationConfirmedBy => 'Tasdiqlovchi metodlar';
+  String get relationConfirmedBy => 'Tasdiqlovchi usullar';
 
   @override
   String get relationRelatedTopic => 'Bog‘liq mavzular';
@@ -1887,7 +1887,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tech_qualityControl => 'Sifat nazorati';
 
   @override
-  String get tech_validation => 'Metod validatsiyasi';
+  String get tech_validation => 'Usul validatsiyasi';
 
   @override
   String get tech_uncertainty => 'O‘lchash noaniqligi';
@@ -2001,7 +2001,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get calcPercentLimitationBasis =>
-      'w/v, v/v va w/w o‘zaro almashtirilmaydi — validatsiyadan o‘tgan metod yoki SOP’dagi turni ishlating.';
+      'w/v, v/v va w/w o‘zaro almashtirilmaydi — validatsiyadan o‘tgan usul yoki SOP’dagi turni ishlating.';
 
   @override
   String get calcErrorPercent =>
@@ -2068,7 +2068,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get calcRegLimitationRange =>
-      'Faqat kalibrlangan diapazon ichida amal qiladi; vazn va chiziqlilik metod validatsiyasida belgilanadi.';
+      'Faqat kalibrlangan diapazon ichida amal qiladi; vazn va chiziqlilik usul validatsiyasida belgilanadi.';
 
   @override
   String get calcRegWarnFew =>
@@ -2158,7 +2158,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get emergingCatBiomarkers => 'Yangi biomarkerlar';
 
   @override
-  String get emergingCatMethods => 'Yangi analitik metodlar';
+  String get emergingCatMethods => 'Yangi analitik usullar';
 
   @override
   String get emergingCatLegal => 'Huquqiy / normativ yangilanishlar';
@@ -2320,7 +2320,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get layerIntlStandards =>
-      'Xalqaro standartlar va metodlar — qabul qilinmaguncha qonun emas';
+      'Xalqaro standartlar va usullar — qabul qilinmaguncha qonun emas';
 
   @override
   String get layerCountryLaw =>
@@ -2381,7 +2381,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get docKindGuideline => 'QO‘LLANMA';
 
   @override
-  String get docKindMethod => 'METOD';
+  String get docKindMethod => 'USUL';
 
   @override
   String get docKindSop => 'SOP';
@@ -2478,7 +2478,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get standardsIntro =>
-      'Standart, qo‘llanma va metodlar turi bilan belgilangan. Faqat qonun va normativ hujjatlar qonuniy majburiy — va faqat o‘z yurisdiksiyasida.';
+      'Standart, qo‘llanma va usullar turi bilan belgilangan. Faqat qonun va normativ hujjatlar qonuniy majburiy — va faqat o‘z yurisdiksiyasida.';
 
   @override
   String get researchFilterPeer => 'Faqat taqrizdan o‘tgan';
@@ -2585,7 +2585,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get aiSampleRelated =>
-      'Javobda ishlatilgan modda, metod va tadqiqot yozuvlariga havolalar.';
+      'Javobda ishlatilgan modda, usul va tadqiqot yozuvlariga havolalar.';
 
   @override
   String get tpl_overview => 'Umumiy ma’lumot';
@@ -2612,7 +2612,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tpl_confirmation => 'Tasdiqlovchi tahlil';
 
   @override
-  String get tpl_analyticalMethods => 'Analitik metodlar';
+  String get tpl_analyticalMethods => 'Analitik usullar';
 
   @override
   String get tpl_reportedConcentrations => 'Xabar qilingan konsentratsiyalar';
@@ -2630,7 +2630,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tpl_interferences => 'Interferensiyalar';
 
   @override
-  String get tpl_jurisdiction => 'Yurisdiksiya qonuni va metodlari';
+  String get tpl_jurisdiction => 'Yurisdiksiya qonuni va usullari';
 
   @override
   String get tpl_research => 'Tadqiqotlar va dalillar';
@@ -2690,7 +2690,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tpl_disposal => 'Utilizatsiya';
 
   @override
-  String get tpl_linkedMethods => 'Bog‘liq metod va testlar';
+  String get tpl_linkedMethods => 'Bog‘liq usul va testlar';
 
   @override
   String get tpl_technology => 'Texnologiya';
@@ -2723,7 +2723,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tpl_postmortemLimitations => 'O‘limdan keyingi cheklovlar';
 
   @override
-  String get tpl_analyticalMethod => 'Analitik metod';
+  String get tpl_analyticalMethod => 'Analitik usul';
 
   @override
   String get tpl_interpretationLimitations => 'Talqin cheklovlari';
@@ -2735,7 +2735,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tpl_findings => 'Topilmalar';
 
   @override
-  String get tpl_methods => 'Metodlar';
+  String get tpl_methods => 'Usullar';
 
   @override
   String templateCoverage(int filled, int total) {
@@ -2824,7 +2824,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get lcCurrent => 'Joriy';
 
   @override
-  String get lcNeedsReview => 'Tekshiruv kerak';
+  String get lcNeedsReview => 'Tekshirilmagan';
 
   @override
   String get lcOutdated => 'Eskirgan';
@@ -2844,7 +2844,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get provNotVerified =>
-      'MA’LUMOT TEKSHIRILMAGAN — EKSPERT TASDIG‘I KERAK';
+      'Ma’lumot hali ekspert tomonidan tasdiqlanmagan';
 
   @override
   String provRequiredRole(String role) {
@@ -2957,7 +2957,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get ctxCoIntoxicants => 'Birga aniqlangan moddalar';
 
   @override
-  String get ctxMethod => 'Analitik metod';
+  String get ctxMethod => 'Analitik usul';
 
   @override
   String get ctxTiming => 'Vaqt';
@@ -3088,7 +3088,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get chainScreening => 'Skrining';
 
   @override
-  String get chainConfirmation => 'Tasdiqlovchi metodlar';
+  String get chainConfirmation => 'Tasdiqlovchi usullar';
 
   @override
   String get chainReagents => 'Reagentlar';
@@ -3169,7 +3169,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get reviewExplain =>
-      'Da’vo faqat o‘z sohasidagi ikki mustaqil malakali taqrizchi joriy versiyani tasdiqlagandan keyin VERIFIED bo‘ladi. Ilova va uning mualliflari hech narsani o‘zlari tasdiqlangan deb belgilay olmaydi.';
+      'Da’vo faqat o‘z sohasidagi ikki mustaqil malakali taqrizchi joriy versiyani tasdiqlagandan keyin TASDIQLANGAN bo‘ladi. Ilova va uning mualliflari hech narsani o‘zlari tasdiqlangan deb belgilay olmaydi.';
 
   @override
   String get reviewRolesTitle => 'Taqrizchi rollari va huquqlari';
@@ -3193,7 +3193,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get methodPublishedNote =>
-      'Nashr etilgan ilmiy metod — biror laboratoriya uchun validatsiya qilingan tartib emas.';
+      'Nashr etilgan ilmiy usul — biror laboratoriya uchun validatsiya qilingan tartib emas.';
 
   @override
   String get reagentConcentration => 'Konsentratsiya';
@@ -3226,7 +3226,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get evGuideline => 'Qo‘llanma';
 
   @override
-  String get evPublishedValidated => 'Nashr etilgan validatsiyalangan metod';
+  String get evPublishedValidated => 'Nashr etilgan validatsiyalangan usul';
 
   @override
   String get evNationalMethod => 'Milliy metodika';
@@ -3352,7 +3352,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get deleteLocalDataBody =>
-      'Saralanganlar, qidiruv tarixi, yaqinda ko‘rilgan yozuvlar va darslar holati faqat shu qurilmadan o‘chiriladi. Ilmiy baza, akkauntingiz va do‘kondagi obunalarga ta’sir qilmaydi — akkauntni o‘chirish uchun «Akkauntni o‘chirish» dan foydalaning.';
+      'Saralanganlar, qidiruv tarixi, yaqinda ko‘rilgan yozuvlar va darslar holati faqat shu qurilmadan o‘chiriladi. Ilmiy baza, hisobingiz va do‘kondagi obunalarga ta’sir qilmaydi — hisobni o‘chirish uchun «Hisobni o‘chirish» dan foydalaning.';
 
   @override
   String get deleteLocalDataConfirm => 'O‘chirish';
@@ -3361,10 +3361,10 @@ class AppLocalizationsUz extends AppLocalizations {
   String get deleteLocalDataDone => 'Qurilmadagi ma’lumotlar o‘chirildi';
 
   @override
-  String get tierStudentPro => 'Student Pro';
+  String get tierStudentPro => 'Talaba Pro';
 
   @override
-  String get tierProfessionalPro => 'Professional Pro';
+  String get tierProfessionalPro => 'Mutaxassis Pro';
 
   @override
   String get tierInstitution => 'Muassasa';
@@ -3383,7 +3383,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get tierStudentF1 =>
-      'To‘liq ma’lumotnoma: moddalar, metodlar, reaktivlar, sud tibbiyoti, standartlar, yurisdiksiyalar';
+      'To‘liq ma’lumotnoma: moddalar, usullar, reaktivlar, sud tibbiyoti, standartlar, yurisdiksiyalar';
 
   @override
   String get tierStudentF2 =>
@@ -3393,14 +3393,14 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tierStudentF3 => 'Cheklanmagan qidiruv natijalari';
 
   @override
-  String get tierProF1 => 'Student Pro’dagi barcha imkoniyatlar';
+  String get tierProF1 => 'Talaba Pro’dagi barcha imkoniyatlar';
 
   @override
   String get tierProF2 =>
       'Professional kalkulyatorlar va laboratoriya vositalari';
 
   @override
-  String get tierProF3 => 'Analitik metodlar, tadqiqot va dalillar vositalari';
+  String get tierProF3 => 'Analitik usullar, tadqiqot va dalillar vositalari';
 
   @override
   String get tierProF4 => 'Professional AI funksiyalari — AI xizmati ulanganda';
@@ -3427,7 +3427,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get subscriptionTerms =>
-      'Obuna bekor qilinmaguncha avtomatik yangilanadi. To‘lov App Store / Google Play akkauntingizdan olinadi. Davr tugashidan kamida 24 soat oldin do‘kon akkaunti sozlamalarida bekor qilishingiz mumkin.';
+      'Obuna bekor qilinmaguncha avtomatik yangilanadi. To‘lov App Store / Google Play hisobingizdan olinadi. Davr tugashidan kamida 24 soat oldin do‘kon hisobi sozlamalarida bekor qilishingiz mumkin.';
 
   @override
   String get manageSubscription => 'Obunani boshqarish';
@@ -3479,27 +3479,27 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get accountOptionalNote =>
-      'Akkaunt ixtiyoriy. Oflayn ilmiy ma’lumotnoma tizimga kirmasdan ishlaydi; akkaunt faqat bulut xizmatlari uchun kerak.';
+      'Hisob ixtiyoriy. Oflayn ilmiy ma’lumotnoma tizimga kirmasdan ishlaydi; hisob faqat bulut xizmatlari uchun kerak.';
 
   @override
   String get accountNotConnected =>
-      'Bu yig‘mada akkaunt xizmati hali ulanmagan. Barcha oflayn funksiyalar ishlaydi.';
+      'Hisob xizmati hozircha mavjud emas. Barcha oflayn funksiyalar ishlaydi.';
 
   @override
   String get accountTestBackend =>
-      'SINOV akkaunt serveri — haqiqiy xat yuborilmaydi, ma’lumot faqat xotirada.';
+      'SINOV hisob serveri — haqiqiy xat yuborilmaydi, ma’lumot faqat xotirada.';
 
   @override
   String get accountSignIn => 'Kirish';
 
   @override
-  String get accountCreate => 'Akkaunt yaratish';
+  String get accountCreate => 'Hisob yaratish';
 
   @override
   String get accountSignOut => 'Chiqish';
 
   @override
-  String get accountSignedOut => 'Akkauntdan chiqildi';
+  String get accountSignedOut => 'Hisobdan chiqildi';
 
   @override
   String get accountEmail => 'Elektron pochta';
@@ -3517,13 +3517,13 @@ class AppLocalizationsUz extends AppLocalizations {
   String get accountHidePassword => 'Parolni yashirish';
 
   @override
-  String get accountVerified => 'Email tasdiqlangan';
+  String get accountVerified => 'Elektron pochta tasdiqlangan';
 
   @override
-  String get accountNotVerified => 'Email tasdiqlanmagan';
+  String get accountNotVerified => 'Elektron pochta tasdiqlanmagan';
 
   @override
-  String get accountVerifyNow => 'Emailni tasdiqlash';
+  String get accountVerifyNow => 'Elektron pochtani tasdiqlash';
 
   @override
   String get accountTermsAccept =>
@@ -3531,7 +3531,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get accountMinimalData =>
-      'Faqat email so‘raladi. Kasbiy, ish bo‘yicha yoki shaxsiy ma’lumot yig‘ilmaydi.';
+      'Faqat elektron pochta so‘raladi. Kasbiy, ish bo‘yicha yoki shaxsiy ma’lumot yig‘ilmaydi.';
 
   @override
   String get passwordRulesTitle => 'Parol talablari';
@@ -3548,23 +3548,23 @@ class AppLocalizationsUz extends AppLocalizations {
   String get pwRuleDigit => 'Kamida bitta raqam';
 
   @override
-  String get pwRuleNotEmail => 'Email bilan bir xil emas';
+  String get pwRuleNotEmail => 'Elektron pochta bilan bir xil emas';
 
   @override
   String get accountForgot => 'Parolni unutdingizmi?';
 
   @override
-  String get accountNoAccount => 'Akkaunt yo‘qmi? Yarating';
+  String get accountNoAccount => 'Hisob yo‘qmi? Yarating';
 
   @override
-  String get accountHaveAccount => 'Akkauntingiz bormi? Kiring';
+  String get accountHaveAccount => 'Hisobingiz bormi? Kiring';
 
   @override
-  String get verifyTitle => 'Emailni tasdiqlang';
+  String get verifyTitle => 'Elektron pochtani tasdiqlang';
 
   @override
   String verifyBody(int n, String email) {
-    return '$email manziliga $n xonali kod yubordik. Akkauntni faollashtirish uchun uni kiriting.';
+    return '$email manziliga $n xonali kod yubordik. Hisobni faollashtirish uchun uni kiriting.';
   }
 
   @override
@@ -3578,24 +3578,24 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get verifyResent =>
-      'Agar akkaunt tasdiqlanishi kerak bo‘lsa, yangi kod yuborildi.';
+      'Agar hisob tasdiqlanishi kerak bo‘lsa, yangi kod yuborildi.';
 
   @override
-  String get verifyDone => 'Email tasdiqlandi. Akkauntingiz faol.';
+  String get verifyDone => 'Elektron pochta tasdiqlandi. Hisobingiz faol.';
 
   @override
   String get forgotTitle => 'Parolni tiklash';
 
   @override
   String get forgotBody =>
-      'Akkaunt emailini kiriting. Agar akkaunt mavjud bo‘lsa, tiklash kodini yuboramiz.';
+      'Hisobingiz elektron pochtasini kiriting. Agar hisob mavjud bo‘lsa, tiklash kodini yuboramiz.';
 
   @override
   String get forgotSubmit => 'Tiklash kodini yuborish';
 
   @override
   String forgotSent(int minutes) {
-    return 'Bu email uchun akkaunt mavjud bo‘lsa, tiklash kodi yuborildi. U $minutes daqiqa amal qiladi.';
+    return 'Bu elektron pochta uchun hisob mavjud bo‘lsa, tiklash kodi yuborildi. U $minutes daqiqa amal qiladi.';
   }
 
   @override
@@ -3614,7 +3614,8 @@ class AppLocalizationsUz extends AppLocalizations {
   String get resetDone => 'Parol o‘zgartirildi. Yangi parol bilan kiring.';
 
   @override
-  String get authErrInvalidEmail => 'To‘g‘ri email manzilini kiriting.';
+  String get authErrInvalidEmail =>
+      'To‘g‘ri elektron pochta manzilini kiriting.';
 
   @override
   String get authErrWeakPassword => 'Parol talablarga javob bermaydi.';
@@ -3627,11 +3628,11 @@ class AppLocalizationsUz extends AppLocalizations {
       'Foydalanish shartlari va Maxfiylik siyosatini qabul qiling.';
 
   @override
-  String get authErrCredentials => 'Email yoki parol noto‘g‘ri.';
+  String get authErrCredentials => 'Elektron pochta yoki parol noto‘g‘ri.';
 
   @override
   String get authErrNotVerified =>
-      'Email hali tasdiqlanmagan. Yuborilgan kodni kiriting.';
+      'Elektron pochta hali tasdiqlanmagan. Yuborilgan kodni kiriting.';
 
   @override
   String get authErrCodeInvalid => 'Kod noto‘g‘ri.';
@@ -3641,7 +3642,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get authErrAlreadyVerified =>
-      'Bu email allaqachon tasdiqlangan. Kirishingiz mumkin.';
+      'Bu elektron pochta allaqachon tasdiqlangan. Kirishingiz mumkin.';
 
   @override
   String get authErrTooMany =>
@@ -3653,29 +3654,28 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get authErrServer =>
-      'Akkaunt xizmati vaqtincha ishlamayapti. Keyinroq qayta urinib ko‘ring.';
+      'Hisob xizmati vaqtincha ishlamayapti. Keyinroq qayta urinib ko‘ring.';
 
   @override
-  String get authErrNotConfigured =>
-      'Bu yig‘mada akkaunt xizmati hali ulanmagan.';
+  String get authErrNotConfigured => 'Hisob xizmati hozircha mavjud emas.';
 
   @override
   String get authErrRecentLogin =>
       'Parol noto‘g‘ri. Davom etish uchun joriy parolni tasdiqlang.';
 
   @override
-  String get authErrNotSignedIn => 'Avval akkauntga kiring.';
+  String get authErrNotSignedIn => 'Avval hisobga kiring.';
 
   @override
-  String get deleteAccountTitle => 'Akkauntni o‘chirish';
+  String get deleteAccountTitle => 'Hisobni o‘chirish';
 
   @override
   String get deleteAccountBody =>
-      'Akkauntingiz va serverlarimizdagi unga bog‘liq ma’lumotlar (email, kirish sessiyalari, sinxronlangan ma’lumotlar, bulutdagi huquq yozuvlari) butunlay o‘chiriladi. Buni qaytarib bo‘lmaydi.';
+      'Hisobingiz va serverlarimizdagi unga bog‘liq ma’lumotlar (elektron pochta, kirish sessiyalari, sinxronlangan ma’lumotlar, bulutdagi huquq yozuvlari) butunlay o‘chiriladi. Buni qaytarib bo‘lmaydi.';
 
   @override
   String get deleteAccountStoreNote =>
-      'Akkauntni o‘chirish App Store / Google Play obunasini bekor qilmaydi. Keyingi to‘lovlarni to‘xtatish uchun uni do‘kon akkaunti sozlamalarida bekor qiling.';
+      'Hisobni o‘chirish App Store / Google Play obunasini bekor qilmaydi. Keyingi to‘lovlarni to‘xtatish uchun uni do‘kon hisobi sozlamalarida bekor qiling.';
 
   @override
   String get deleteAccountLocalNote =>
@@ -3689,13 +3689,13 @@ class AppLocalizationsUz extends AppLocalizations {
   String get deleteAccountPassword => 'Joriy parol';
 
   @override
-  String get deleteAccountConfirm => 'Akkauntni butunlay o‘chirish';
+  String get deleteAccountConfirm => 'Hisobni butunlay o‘chirish';
 
   @override
-  String get deleteAccountFinalTitle => 'Akkaunt o‘chirilsinmi?';
+  String get deleteAccountFinalTitle => 'Hisob o‘chirilsinmi?';
 
   @override
-  String get deleteAccountDone => 'Akkauntingiz o‘chirildi.';
+  String get deleteAccountDone => 'Hisobingiz o‘chirildi.';
 
   @override
   String get aiDisclaimerLink => 'AI bo‘yicha ogohlantirish';
@@ -3705,7 +3705,7 @@ class AppLocalizationsUz extends AppLocalizations {
       'Forensic AI javoblari ilovadagi manbali lokal kontent asosida tuziladi va ekspert xulosasi emas. Ular to‘liq bo‘lmasligi yoki xato bo‘lishi mumkin, malakali taqrizchi tomonidan tekshirilmagan va sud-ekspert xulosasi, huquqiy qaror yoki davolash uchun yagona asos bo‘lmasligi kerak. Har doim keltirilgan manbalarni tekshiring va malakali ekspert bilan maslahatlashing.';
 
   @override
-  String get accountSection => 'Akkaunt';
+  String get accountSection => 'Hisob';
 
   @override
   String get subscriptionSection => 'Obuna';
@@ -3748,18 +3748,18 @@ class AppLocalizationsUz extends AppLocalizations {
   String get availSearch => 'Qidirish';
 
   @override
-  String get aiStatusPreview => 'Namoyish · ulanmagan';
+  String get aiStatusPreview => 'Hozircha mavjud emas';
 
   @override
-  String get aiPreviewPoint1 => 'Bu ekran — interfeys namoyishi.';
+  String get aiPreviewPoint1 => 'Hozircha AI javobi yaratilmaydi.';
 
   @override
   String get aiPreviewPoint2 =>
-      'Ishchi AI xizmati ulanmagan, shuning uchun AI javobi yaratilmaydi.';
+      'Bu vaqtinchalik; ilovaning qolgan qismi oflayn ishlaydi.';
 
   @override
   String get aiPreviewPoint3 =>
-      'Quyidagi javob namunasi faqat tuzilma namoyishi.';
+      'Quyidagi namuna faqat javob qanday tuzilishini ko‘rsatadi.';
 
   @override
   String get aiPreviewPoint4 =>
@@ -3767,7 +3767,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get aiSendUnavailable =>
-      'AI xizmati ulanmaguncha yuborish o‘chirilgan.';
+      'AI vaqtincha ishlamayapti — yuborish o‘chirilgan.';
 
   @override
   String get concWarning =>
@@ -4017,7 +4017,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get profileLocalOnlyNote =>
-      'Profil ma’lumotlari faqat shu qurilmada saqlanadi va hech qayerga yuborilmaydi.';
+      'Profil shu qurilmada saqlanadi. Faqat tasdiqlashga yuborganingizda serverga jo‘natiladi.';
 
   @override
   String get profileStudentTitle => 'Talaba profili';
@@ -4548,7 +4548,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get moduleHubSourcedNote =>
-      'Manbasi va joriy tekshiruv holati bilan ko‘rsatiladi. «Tekshiruv kerak» — mavjud manbali ma’lumot ekspert tekshiruvini kutmoqda degani, ma’lumot yo‘q degani emas.';
+      'Manbasi va joriy tekshiruv holati bilan ko‘rsatiladi. «Tekshirilmagan» — mavjud manbali ma’lumot ekspert tekshiruvini kutmoqda degani, ma’lumot yo‘q degani emas.';
 
   @override
   String get moduleHubOpenAll => 'Barchasini ochish';
@@ -4569,15 +4569,15 @@ class AppLocalizationsUz extends AppLocalizations {
       'Faqat bibliografik ma’lumot va qisqa tavsif ko‘rsatiladi; to‘liq matn noshirda.';
 
   @override
-  String get emailCodeTitle => 'Email kod orqali kirish';
+  String get emailCodeTitle => 'Elektron pochta kodi orqali kirish';
 
   @override
   String get emailCodeRowHint =>
-      'Emailingizga 6 xonali kod yuboriladi — parol shart emas';
+      'Elektron pochtangizga 6 xonali kod yuboriladi — parol shart emas';
 
   @override
   String get emailCodeSubtitle =>
-      'Emailingizni kiriting. FORENSIC EXPERT bir martalik 6 xonali tasdiqlash kodini yuboradi.';
+      'Elektron pochtangizni kiriting. FORENSIC EXPERT bir martalik 6 xonali tasdiqlash kodini yuboradi.';
 
   @override
   String get emailCodeSend => 'Kodni yuborish';
@@ -4586,19 +4586,20 @@ class AppLocalizationsUz extends AppLocalizations {
   String get emailCodeEnterTitle => '6 xonali kodni kiriting';
 
   @override
-  String get emailCodeChange => 'Emailni o‘zgartirish';
+  String get emailCodeChange => 'Elektron pochtani o‘zgartirish';
 
   @override
   String emailCodeResendIn(int seconds) {
-    return 'Kodni qayta yuborish: $seconds s';
+    return 'Qayta yuborish ($seconds)';
   }
 
   @override
   String get emailCodeNotProfessional =>
-      'Emailni tasdiqlash hisobga kirishni ta’minlaydi. U mutaxassis maqomini tasdiqlamaydi.';
+      'Elektron pochtani tasdiqlash hisobga kirishni ta’minlaydi. U mutaxassis maqomini tasdiqlamaydi.';
 
   @override
-  String get emailCodeSignedIn => 'Email tasdiqlandi. Hisobga kirdingiz.';
+  String get emailCodeSignedIn =>
+      'Elektron pochta tasdiqlandi. Hisobga kirdingiz.';
 
   @override
   String get actionNext => 'Keyingi';
@@ -4658,7 +4659,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String homeDbHumanVerified(int count) {
-    return 'Inson tasdiqlagan (2 mustaqil ekspert): $count';
+    return 'Ekspertlar tasdiqlagan (2 mustaqil ekspert): $count';
   }
 
   @override
@@ -4676,11 +4677,11 @@ class AppLocalizationsUz extends AppLocalizations {
   String get homeStatClaims => 'Manbali da’volar';
 
   @override
-  String get homeStatHumanVerified => 'Inson tasdiqlagan';
+  String get homeStatHumanVerified => 'Ekspertlar tasdiqlagan';
 
   @override
   String get homeStatPolicy =>
-      '«Inson tasdiqlagan» = ikki mustaqil malakali ekspert. Avtomatik tekshiruv va AI hisoblanmaydi.';
+      '«Ekspertlar tasdiqlagan» = ikki mustaqil malakali ekspert. Avtomatik tekshiruv va AI hisoblanmaydi.';
 
   @override
   String get aiHeroSubtitle =>
@@ -4753,7 +4754,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get referralPrivacyNote =>
-      'Faqat umumiy sonlar ko‘rsatiladi. Hamkasblaringizning ismi, emaili, profili va hujjatlari hech qachon ulashilmaydi — na sizga, na taklifda.';
+      'Faqat umumiy sonlar ko‘rsatiladi. Hamkasblaringizning ismi, elektron pochtasi, profili va hujjatlari hech qachon ulashilmaydi — na sizga, na taklifda.';
 
   @override
   String get referralShareSubject => 'FORENSIC EXPERT’ga taklif';
@@ -4773,11 +4774,11 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get referralSignInBody =>
-      'Shaxsiy kod email orqali kirganingizdan so‘ng serverda yaratiladi. Barcha ilmiy ma’lumotlar akkauntsiz ham ochiq.';
+      'Shaxsiy kod elektron pochta orqali kirganingizdan so‘ng serverda yaratiladi. Barcha ilmiy ma’lumotlar hisobsiz ham ochiq.';
 
   @override
   String get referralNotConfigured =>
-      'FORENSIC EXPERT akkaunt xizmati ulangach, takliflar ishlaydi.';
+      'FORENSIC EXPERT hisob xizmati ulangach, takliflar ishlaydi.';
 
   @override
   String get referralLoadError =>
@@ -4791,7 +4792,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get referralHaveCodeHint =>
-      'Hamkasbingizdan taklif oldingizmi? 8 belgili kodni kiriting. U faqat yangi akkauntlar uchun amal qiladi.';
+      'Hamkasbingizdan taklif oldingizmi? 8 belgili kodni kiriting. U faqat yangi hisoblar uchun amal qiladi.';
 
   @override
   String get referralCodeField => 'Taklif kodi';
@@ -4801,7 +4802,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get referralLinkedNote =>
-      'Akkauntingiz hamkasbingiz taklifi bilan ochilgan.';
+      'Hisobingiz hamkasbingiz taklifi bilan ochilgan.';
 
   @override
   String get referralClaimValid =>
@@ -4809,7 +4810,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get referralClaimPending =>
-      'Taklif saqlandi. Email tasdiqlangach kuchga kiradi.';
+      'Taklif saqlandi. Elektron pochta tasdiqlangach kuchga kiradi.';
 
   @override
   String get referralClaimInvalid =>
@@ -4820,11 +4821,11 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get referralClaimAlready =>
-      'Akkauntingizga taklif allaqachon bog‘langan.';
+      'Hisobingizga taklif allaqachon bog‘langan.';
 
   @override
   String get referralClaimNotEligible =>
-      'Taklif kodlari faqat yangi akkauntlar uchun amal qiladi.';
+      'Taklif kodlari faqat yangi hisoblar uchun amal qiladi.';
 
   @override
   String get referralClaimRateLimited =>
@@ -4921,7 +4922,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get adminUsers => 'Foydalanuvchilar';
 
   @override
-  String get adminConfirmed => 'Email tasdiqlangan';
+  String get adminConfirmed => 'Elektron pochta tasdiqlangan';
 
   @override
   String get adminSignups7d => 'Yangi (7 kun)';
@@ -4961,16 +4962,16 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get adminPrivacyNote =>
-      'Shaxsiy ma’lumot (email) bor. Skrinshotlarni tarqatmang.';
+      'Shaxsiy ma’lumot (elektron pochta) bor. Skrinshotlarni tarqatmang.';
 
   @override
   String get adminGrantTitle => 'Pro berish yoki olib tashlash';
 
   @override
-  String get adminEmail => 'Foydalanuvchi emaili';
+  String get adminEmail => 'Foydalanuvchi elektron pochtasi';
 
   @override
-  String get adminGrantPro => 'Professional Pro berish';
+  String get adminGrantPro => 'Mutaxassis Pro berish';
 
   @override
   String get adminRevoke => 'Olib tashlash';
@@ -4982,7 +4983,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get adminRevoked => 'Kirish olib tashlandi.';
 
   @override
-  String get adminNotFound => 'Bunday emailli foydalanuvchi yo‘q.';
+  String get adminNotFound => 'Bunday elektron pochtali foydalanuvchi yo‘q.';
 
   @override
   String get adminFailed => 'Bajarilmadi. Aloqani tekshiring.';
@@ -5979,6 +5980,41 @@ class AppLocalizationsUz extends AppLocalizations {
   String get studyDeckNotFound => 'Bu to‘plam mavjud emas.';
 
   @override
+  String get notFoundTitle => 'Sahifa topilmadi';
+
+  @override
+  String get notFoundBody => 'Havola eskirgan yoki noto‘g‘ri bo‘lishi mumkin.';
+
+  @override
+  String get notFoundHome => 'Bosh sahifaga';
+
+  @override
+  String get accountSignInEmailCode => 'Kirish (email kod)';
+
+  @override
+  String get toolsReviewNote =>
+      'Hisoblash modullari dasturiy sinovdan o‘tgan. Formulalar va ularning manbalari hali ekspert tomonidan tasdiqlanmagan.';
+
+  @override
+  String searchAllStatus(String status) {
+    return 'Barcha natijalar: $status';
+  }
+
+  @override
+  String get researchOpenInBrowser => 'Ochish';
+
+  @override
+  String disciplinesComingSoon(int count) {
+    return 'Tez orada ($count)';
+  }
+
+  @override
+  String get modeRoleExpand => 'Rolni tanlash (ixtiyoriy)';
+
+  @override
+  String get sourcesEmpty => 'Hozircha manbalar yo‘q.';
+
+  @override
   String get analysisTitle => 'Tahlil';
 
   @override
@@ -6016,7 +6052,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get analysisScreeningNote =>
-      'Skrining natijasi taxminiy — u tasdiqlovchi metod bilan tasdiqlanishi shart.';
+      'Skrining natijasi taxminiy — u tasdiqlovchi usul bilan tasdiqlanishi shart.';
 
   @override
   String analysisConfirmedBy(String methods) {
@@ -6052,7 +6088,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get analysisEmpty =>
-      'Kontent paketida bu modda uchun hozircha manbali tahlil ma’lumoti (namuna, metod yoki metabolit) yo‘q.';
+      'Kontent paketida bu modda uchun hozircha manbali tahlil ma’lumoti (namuna, usul yoki metabolit) yo‘q.';
 
   @override
   String get analysisShowSource => 'Manbani ko‘rsatish';

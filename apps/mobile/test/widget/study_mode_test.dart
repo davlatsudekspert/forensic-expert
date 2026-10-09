@@ -62,14 +62,15 @@ void main() {
     expect(tester.takeException(), isNull);
   });
 
-  testWidgets('namuna to‘plamlari bo‘sh: Test/Kartochkalar/Imtihon '
-      'o‘quv rejimini ochadi', (tester) async {
+  testWidgets('namuna to‘plamlari bo‘sh: Test/Kartochkalar/Imtihon alohida '
+      'plitka emas — yagona «O‘quv rejimi» kirishi', (tester) async {
+    // Production: namuna (fixture) to‘plamlari yo‘q.
+    await open(tester, Routes.learn, fixtures: false);
     for (final key in ['learn.quiz', 'learn.flashcards', 'learn.exam']) {
-      // Production: namuna (fixture) to‘plamlari yo‘q.
-      await open(tester, Routes.learn, fixtures: false);
-      await tap(tester, key);
-      expect(find.byKey(const Key('study.deck.$topicDeck')), findsOneWidget);
+      expect(find.byKey(Key(key), skipOffstage: false), findsNothing);
     }
+    await tap(tester, 'learn.study');
+    expect(find.byKey(const Key('study.deck.$topicDeck')), findsOneWidget);
   });
 
   testWidgets('kartochka aylanadi, manba ko‘rinadi, Leitner saqlanadi', (

@@ -80,6 +80,30 @@ class DisciplinesScreen extends ConsumerWidget {
     final t = Theme.of(context).textTheme;
     final knowledge = ref.watch(knowledgeRepositoryProvider);
     final library = ref.watch(libraryRepositoryProvider);
+    // «Bo‘sh» — na manbali yozuv, na ilova moduli (fan sahifasi bilan bir xil).
+    bool isEmpty(ForensicDiscipline d) =>
+        modulesOf(d).isEmpty && recordCount(d, knowledge, library) == 0;
+    final empty = [
+      for (final d in ForensicDiscipline.values)
+        if (isEmpty(d)) d,
+    ];
+    Widget tile(ForensicDiscipline d) {
+      final count = recordCount(d, knowledge, library);
+      return ListTile(
+        key: Key('discipline.${d.code}'),
+        contentPadding: EdgeInsets.zero,
+        title: Text(l.disciplineName(d)),
+        subtitle: Text(
+          d.referenceOnly
+              ? '${l.disciplineRecords(count)} · ${l.disciplineReferenceOnly}'
+              : l.disciplineRecords(count),
+          style: t.bodySmall?.copyWith(color: c.textSecondary),
+        ),
+        trailing: const Icon(Icons.chevron_right),
+        onTap: () => context.push(Routes.discipline(d.code)),
+      );
+    }
+
     return Scaffold(
       appBar: AppBar(title: Text(l.disciplinesTitle)),
       body: SafeArea(
@@ -95,33 +119,29 @@ class DisciplinesScreen extends ConsumerWidget {
                     icon: Icons.account_tree_outlined,
                     text: l.disciplinesIntro,
                   ),
-                  for (final g in DisciplineGroup.values) ...[
-                    FeSectionHeader(l.disciplineGroupName(g)),
-                    for (final d in ForensicDiscipline.values)
-                      if (d.group == g)
-                        Builder(
-                          builder: (context) {
-                            final count = recordCount(d, knowledge, library);
-                            return ListTile(
-                              key: Key('discipline.${d.code}'),
-                              contentPadding: EdgeInsets.zero,
-                              title: Text(l.disciplineName(d)),
-                              subtitle: Text(
-                                d.referenceOnly
-                                    ? '${l.disciplineRecords(count)} · '
-                                          '${l.disciplineReferenceOnly}'
-                                    : l.disciplineRecords(count),
-                                style: t.bodySmall?.copyWith(
-                                  color: c.textSecondary,
-                                ),
-                              ),
-                              trailing: const Icon(Icons.chevron_right),
-                              onTap: () =>
-                                  context.push(Routes.discipline(d.code)),
-                            );
-                          },
+                  for (final g in DisciplineGroup.values)
+                    if (ForensicDiscipline.values.any(
+                      (d) => d.group == g && !isEmpty(d),
+                    )) ...[
+                      FeSectionHeader(l.disciplineGroupName(g)),
+                      for (final d in ForensicDiscipline.values)
+                        if (d.group == g && !isEmpty(d)) tile(d),
+                    ],
+                  // Hali yozuvi yo‘q fanlar — oxirida, yig‘ilgan guruhda.
+                  if (empty.isNotEmpty)
+                    Theme(
+                      data: Theme.of(context)
+                          .copyWith(dividerColor: Colors.transparent),
+                      child: ExpansionTile(
+                        key: const Key('disciplines.comingSoon'),
+                        tilePadding: EdgeInsets.zero,
+                        title: Text(
+                          l.disciplinesComingSoon(empty.length),
+                          style: t.titleSmall,
                         ),
-                  ],
+                        children: [for (final d in empty) tile(d)],
+                      ),
+                    ),
                   const SizedBox(height: FeSpace.xl),
                 ],
               ),
@@ -155,10 +175,13 @@ class DisciplineScreen extends ConsumerWidget {
       for (final topic in ForensicMedicineTopic.values)
         if (disciplineOfFmTopic(topic) == d) topic,
     ];
-    final covered = {
-      for (final e in knowledge.byKind(KnowledgeKind.topic))
-        if (e.forensicMedicineTopic != null) e.forensicMedicineTopic!,
-    };
+    // Mavzu → uni yorituvchi birinchi yozuv.
+    final covered = <ForensicMedicineTopic, String>{};
+    for (final e in knowledge.byKind(KnowledgeKind.topic)) {
+      if (e.forensicMedicineTopic case final topic?) {
+        covered.putIfAbsent(topic, () => e.id);
+      }
+    }
     // PHASE 8: fanga aniq biriktirilgan manbali mavzular.
     final lang = Localizations.localeOf(context).languageCode;
     final ownTopics = [
@@ -215,23 +238,50 @@ class DisciplineScreen extends ConsumerWidget {
                   ],
                   if (fmTopics.isNotEmpty) ...[
                     FeSectionHeader(l.disciplineTopics),
+                    // Yoritilgan mavzu — yozuvga havola; yoritilmagani —
+                    // oddiy (bosilmaydigan) matn.
                     for (final topic in fmTopics)
-                      ListTile(
-                        contentPadding: EdgeInsets.zero,
-                        dense: true,
-                        leading: Icon(
-                          covered.contains(topic)
-                              ? Icons.check_circle_outline
-                              : Icons.radio_button_unchecked,
-                          color: covered.contains(topic)
-                              ? c.accent
-                              : c.textSecondary,
-                          semanticLabel: covered.contains(topic)
-                              ? l.disciplineRecords(1)
-                              : l.disciplineRecords(0),
+                      if (covered[topic] case final entryId?)
+                        ListTile(
+                          key: Key('discipline.fmTopic.${topic.name}'),
+                          contentPadding: EdgeInsets.zero,
+                          dense: true,
+                          leading: Icon(
+                            Icons.check_circle_outline,
+                            color: c.accent,
+                            semanticLabel: l.disciplineRecords(1),
+                          ),
+                          title: Text(l.fmTopicName(topic)),
+                          trailing: const Icon(Icons.chevron_right),
+                          onTap: () =>
+                              context.push(Routes.knowledgeEntry(entryId)),
+                        )
+                      else
+                        Padding(
+                          key: Key('discipline.fmTopic.${topic.name}'),
+                          padding: const EdgeInsets.symmetric(
+                            vertical: FeSpace.xs,
+                          ),
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.radio_button_unchecked,
+                                size: 20,
+                                color: c.textSecondary,
+                                semanticLabel: l.disciplineRecords(0),
+                              ),
+                              const SizedBox(width: FeSpace.md),
+                              Expanded(
+                                child: Text(
+                                  l.fmTopicName(topic),
+                                  style: t.bodyMedium?.copyWith(
+                                    color: c.textSecondary,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
-                        title: Text(l.fmTopicName(topic)),
-                      ),
                   ],
                   if (count == 0 && modules.isEmpty) ...[
                     const SizedBox(height: FeSpace.md),

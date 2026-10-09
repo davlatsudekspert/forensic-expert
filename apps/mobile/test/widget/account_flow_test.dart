@@ -119,7 +119,7 @@ void main() {
     expect(find.byKey(const Key('profile.deleteAccount')), findsOneWidget);
     await tapKey(tester, 'profile.signOut');
     expect(auth.current.signedIn, isFalse);
-    await show(tester, find.byKey(const Key('profile.signIn')));
+    await show(tester, find.byKey(const Key('profile.emailCode')));
   });
 
   testWidgets('kirish: noto‘g‘ri parol; tasdiqlanmagan → kod ekrani', (
