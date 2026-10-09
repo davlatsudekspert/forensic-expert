@@ -1,9 +1,10 @@
 {
  "format": "fe-text-i18n-pending/1",
- "note": "Research titles left WITHOUT an automatic uz/ru gloss. The original bibliographic title is shown unchanged in every UI language; a human translator/reviewer decides later. Counted by content/tools/translation_qa.py only indirectly (no record = nothing to check).",
- "pending": {
+ "note": "Research records intentionally EXCLUDED from the content pack (owner decision, 2026-10-09). They are not shown in the app at all, so no translation is needed.",
+ "pending": {},
+ "excluded": {
   "RS-f4a36aa65925": {
-   "reason": "Subject matter is a chemical warfare agent (organophosphorus nerve agent); no automatic draft produced — left for a human reviewer."
+   "reason": "Egasi qarori (2026-10-09): mavzu ilovaga tegishli emas — kontent paketidan butunlay chiqarildi."
   }
  }
 }
