@@ -132,11 +132,10 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get inDevelopmentBody =>
-      'Содержание появляется здесь только при наличии проверяемого источника и после экспертной проверки. Экран не заполняется данными ради внешнего вида.';
+      'В этот раздел ещё не добавлена проверенная информация.';
 
   @override
-  String get unverifiedBanner =>
-      'ДАННЫЕ НЕ ПРОВЕРЕНЫ — ТРЕБУЕТСЯ ПОДТВЕРЖДЕНИЕ ЭКСПЕРТА';
+  String get unverifiedBanner => 'Информация ещё не подтверждена экспертом';
 
   @override
   String get statusVerified => 'Подтверждено';
@@ -151,7 +150,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get statusOutdated => 'Устарело';
 
   @override
-  String get aiNotConnectedTitle => 'Рабочий ИИ-сервис не подключён';
+  String get aiNotConnectedTitle => 'ИИ временно недоступен';
 
   @override
   String get aiNotConnectedBody =>
@@ -911,7 +910,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get detailTranslationDraft =>
-      'Названия: машинный черновик, перевод не проверен';
+      'Названия переведены автоматически и ещё не проверены';
 
   @override
   String get detailNoContentYet =>
@@ -923,7 +922,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get detailIdentifierVerified => 'Идентификатор проверен автоматически';
+  String get detailIdentifierVerified => 'DOI/PMID проверены автоматически';
 
   @override
   String detailSourceLicence(String mode) {
@@ -1204,7 +1203,8 @@ class AppLocalizationsRu extends AppLocalizations {
   String get methodKindNational => 'Национальные методики';
 
   @override
-  String get methodKindSop => 'СОП учреждений';
+  String get methodKindSop =>
+      'СОП учреждений (стандартные операционные процедуры)';
 
   @override
   String get methodKindNote =>
@@ -1484,10 +1484,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get legalStatusRepealed => 'Утратил силу';
 
   @override
-  String get aiExperienceProfessional => 'Профессионал';
+  String get aiExperienceProfessional => 'Коротко';
 
   @override
-  String get aiExperienceTutor => 'Наставник';
+  String get aiExperienceTutor => 'Объясните подробно';
 
   @override
   String get aiExperienceProfessionalHint =>
@@ -1544,11 +1544,11 @@ class AppLocalizationsRu extends AppLocalizations {
   String get learnHistory => 'Недавно изученные';
 
   @override
-  String get learnBookmarks => 'Закладки';
+  String get learnBookmarks => 'Избранное';
 
   @override
   String get learnBookmarksEmpty =>
-      'Добавьте тему в закладки звёздочкой, чтобы найти её здесь.';
+      'Отметьте тему звёздочкой, чтобы найти её здесь.';
 
   @override
   String get learnMarkComplete => 'Отметить как пройденный';
@@ -2846,8 +2846,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get provHumanVerified => 'Проверено квалифицированными рецензентами';
 
   @override
-  String get provNotVerified =>
-      'ИНФОРМАЦИЯ НЕ ПРОВЕРЕНА — ТРЕБУЕТСЯ ПОДТВЕРЖДЕНИЕ ЭКСПЕРТА';
+  String get provNotVerified => 'Информация ещё не подтверждена экспертом';
 
   @override
   String provRequiredRole(String role) {
@@ -3172,7 +3171,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get reviewExplain =>
-      'Утверждение становится VERIFIED только после одобрения текущей версии двумя независимыми квалифицированными рецензентами по специальности. Приложение и его авторы не могут сами отметить что-либо как проверенное.';
+      'Утверждение становится ПОДТВЕРЖДЁННЫМ только после одобрения текущей версии двумя независимыми квалифицированными рецензентами по специальности. Приложение и его авторы не могут сами отметить что-либо как проверенное.';
 
   @override
   String get reviewRolesTitle => 'Роли и права рецензентов';
@@ -3754,18 +3753,18 @@ class AppLocalizationsRu extends AppLocalizations {
   String get availSearch => 'Поиск';
 
   @override
-  String get aiStatusPreview => 'Предпросмотр · не подключён';
+  String get aiStatusPreview => 'Пока недоступно';
 
   @override
-  String get aiPreviewPoint1 => 'Этот экран — предпросмотр интерфейса.';
+  String get aiPreviewPoint1 => 'Сейчас ответы ИИ не формируются.';
 
   @override
   String get aiPreviewPoint2 =>
-      'Рабочий ИИ-сервис не подключён, поэтому ответ ИИ не формируется.';
+      'Это временно; остальная часть приложения работает офлайн.';
 
   @override
   String get aiPreviewPoint3 =>
-      'Пример ответа ниже — только демонстрация структуры.';
+      'Пример ниже лишь показывает, как устроен ответ.';
 
   @override
   String get aiPreviewPoint4 =>
@@ -3773,7 +3772,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get aiSendUnavailable =>
-      'Отправка недоступна, пока ИИ-сервис не подключён.';
+      'ИИ временно недоступен — отправка отключена.';
 
   @override
   String get concWarning =>
@@ -4024,7 +4023,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get profileLocalOnlyNote =>
-      'Данные профиля хранятся только на этом устройстве и никуда не отправляются.';
+      'Профиль хранится на этом устройстве. На сервер он отправляется, только когда вы подаёте его на подтверждение.';
 
   @override
   String get profileStudentTitle => 'Профиль студента';
@@ -4613,7 +4612,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String emailCodeResendIn(int seconds) {
-    return 'Повторная отправка через $seconds с';
+    return 'Повторить ($seconds)';
   }
 
   @override
@@ -4681,7 +4680,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String homeDbHumanVerified(int count) {
-    return 'Подтверждено людьми (2 независимых эксперта): $count';
+    return 'Подтверждено экспертами (2 независимых эксперта): $count';
   }
 
   @override
@@ -6003,4 +6002,39 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get studyDeckNotFound => 'Эта колода недоступна.';
+
+  @override
+  String get notFoundTitle => 'Страница не найдена';
+
+  @override
+  String get notFoundBody => 'Ссылка могла устареть или быть неверной.';
+
+  @override
+  String get notFoundHome => 'На главную';
+
+  @override
+  String get accountSignInEmailCode => 'Войти (код по почте)';
+
+  @override
+  String get toolsReviewNote =>
+      'Расчётные модули протестированы программно. Формулы и их источники ещё не подтверждены экспертом.';
+
+  @override
+  String searchAllStatus(String status) {
+    return 'Все результаты: $status';
+  }
+
+  @override
+  String get researchOpenInBrowser => 'Открыть';
+
+  @override
+  String disciplinesComingSoon(int count) {
+    return 'Скоро ($count)';
+  }
+
+  @override
+  String get modeRoleExpand => 'Выбрать роль (необязательно)';
+
+  @override
+  String get sourcesEmpty => 'Источников пока нет.';
 }

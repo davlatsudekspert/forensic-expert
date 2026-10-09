@@ -325,13 +325,13 @@ abstract class AppLocalizations {
   /// Empty state body.
   ///
   /// In en, this message translates to:
-  /// **'Content appears here only when it has a verifiable source and has passed expert review. Nothing is filled in just to make the screen look complete.'**
+  /// **'No reviewed information has been added to this section yet.'**
   String get inDevelopmentBody;
 
   /// Mandatory banner for content that is not reviewed.
   ///
   /// In en, this message translates to:
-  /// **'UNVERIFIED DATA — EXPERT CONFIRMATION REQUIRED'**
+  /// **'Not yet confirmed by an expert'**
   String get unverifiedBanner;
 
   /// Scientific review status.
@@ -361,7 +361,7 @@ abstract class AppLocalizations {
   /// AI state title.
   ///
   /// In en, this message translates to:
-  /// **'Production AI service is not connected'**
+  /// **'AI is temporarily unavailable'**
   String get aiNotConnectedTitle;
 
   /// AI tab body.
@@ -1711,7 +1711,7 @@ abstract class AppLocalizations {
   /// Names are machine draft.
   ///
   /// In en, this message translates to:
-  /// **'Names: machine draft, translation not reviewed'**
+  /// **'Names are machine-translated and not yet reviewed'**
   String get detailTranslationDraft;
 
   /// Section without sourced content.
@@ -1729,7 +1729,7 @@ abstract class AppLocalizations {
   /// Identifier auto-check.
   ///
   /// In en, this message translates to:
-  /// **'Identifier checked automatically'**
+  /// **'DOI/PMID checked automatically'**
   String get detailIdentifierVerified;
 
   /// Licence row.
@@ -2227,7 +2227,7 @@ abstract class AppLocalizations {
   /// Method kind.
   ///
   /// In en, this message translates to:
-  /// **'Institutional SOPs'**
+  /// **'Institutional SOPs (standard operating procedures)'**
   String get methodKindSop;
 
   /// Explains that method kinds are never mixed.
@@ -2737,13 +2737,13 @@ abstract class AppLocalizations {
   /// AI experience toggle.
   ///
   /// In en, this message translates to:
-  /// **'Professional'**
+  /// **'Short answer'**
   String get aiExperienceProfessional;
 
   /// AI experience toggle.
   ///
   /// In en, this message translates to:
-  /// **'Tutor'**
+  /// **'Explain it to me'**
   String get aiExperienceTutor;
 
   /// AI experience hint.
@@ -2839,13 +2839,13 @@ abstract class AppLocalizations {
   /// Bookmarks section.
   ///
   /// In en, this message translates to:
-  /// **'Bookmarks'**
+  /// **'Favorites'**
   String get learnBookmarks;
 
   /// No bookmarks.
   ///
   /// In en, this message translates to:
-  /// **'Bookmark a topic with the star to find it here.'**
+  /// **'Mark a topic with the star to find it here.'**
   String get learnBookmarksEmpty;
 
   /// Toggle lesson completion.
@@ -5221,7 +5221,7 @@ abstract class AppLocalizations {
   /// Unverified marker.
   ///
   /// In en, this message translates to:
-  /// **'NOT VERIFIED — EXPERT CONFIRMATION REQUIRED'**
+  /// **'Not yet confirmed by an expert'**
   String get provNotVerified;
 
   /// Reviewer role.
@@ -6859,25 +6859,25 @@ abstract class AppLocalizations {
   /// AI status chip.
   ///
   /// In en, this message translates to:
-  /// **'Preview · not connected'**
+  /// **'Not available yet'**
   String get aiStatusPreview;
 
   /// AI preview bullet.
   ///
   /// In en, this message translates to:
-  /// **'This screen is an interface preview.'**
+  /// **'No AI answers are generated right now.'**
   String get aiPreviewPoint1;
 
   /// AI preview bullet.
   ///
   /// In en, this message translates to:
-  /// **'The production AI service is not connected, so no AI answer is generated.'**
+  /// **'This is temporary; the rest of the app works offline.'**
   String get aiPreviewPoint2;
 
   /// AI preview bullet.
   ///
   /// In en, this message translates to:
-  /// **'The sample answer below is a demonstration of the layout only.'**
+  /// **'The sample below only shows how an answer is laid out.'**
   String get aiPreviewPoint3;
 
   /// AI preview bullet.
@@ -6889,7 +6889,7 @@ abstract class AppLocalizations {
   /// AI send note.
   ///
   /// In en, this message translates to:
-  /// **'Sending is disabled until the AI service is connected.'**
+  /// **'AI is temporarily unavailable — sending is disabled.'**
   String get aiSendUnavailable;
 
   /// Critical warning on concentration values.
@@ -7369,7 +7369,7 @@ abstract class AppLocalizations {
   /// Note.
   ///
   /// In en, this message translates to:
-  /// **'Profile details are stored only on this device and are not sent anywhere.'**
+  /// **'Your profile is stored on this device. It is sent to the server only when you submit it for verification.'**
   String get profileLocalOnlyNote;
 
   /// Screen.
@@ -8394,7 +8394,7 @@ abstract class AppLocalizations {
   /// Resend countdown.
   ///
   /// In en, this message translates to:
-  /// **'Resend code in {seconds} s'**
+  /// **'Resend ({seconds})'**
   String emailCodeResendIn(int seconds);
 
   /// Note.
@@ -8508,7 +8508,7 @@ abstract class AppLocalizations {
   /// Home DB human-verified count.
   ///
   /// In en, this message translates to:
-  /// **'Human verified (2 independent experts): {count}'**
+  /// **'Expert verified (2 independent experts): {count}'**
   String homeDbHumanVerified(int count);
 
   /// Source identifier.
@@ -8538,13 +8538,13 @@ abstract class AppLocalizations {
   /// Stat label.
   ///
   /// In en, this message translates to:
-  /// **'Human verified'**
+  /// **'Expert verified'**
   String get homeStatHumanVerified;
 
   /// Stat footnote.
   ///
   /// In en, this message translates to:
-  /// **'Human verified = two independent qualified experts. Automated checks and AI are never counted.'**
+  /// **'Expert verified = two independent qualified experts. Automated checks and AI are never counted.'**
   String get homeStatPolicy;
 
   /// AI header subtitle.
@@ -10766,6 +10766,66 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'This deck is not available.'**
   String get studyDeckNotFound;
+
+  /// Router error page title.
+  ///
+  /// In en, this message translates to:
+  /// **'Page not found'**
+  String get notFoundTitle;
+
+  /// Router error page body.
+  ///
+  /// In en, this message translates to:
+  /// **'The link may be outdated or incorrect.'**
+  String get notFoundBody;
+
+  /// Router error page action.
+  ///
+  /// In en, this message translates to:
+  /// **'Go to Home'**
+  String get notFoundHome;
+
+  /// Single sign-in row / action (email one-time code).
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in (email code)'**
+  String get accountSignInEmailCode;
+
+  /// One note at the top of the Tools screen (replaces per-tile chips).
+  ///
+  /// In en, this message translates to:
+  /// **'Calculation modules are software-tested. Formulas and their sources have not yet been confirmed by an expert.'**
+  String get toolsReviewNote;
+
+  /// One line above search results when every result has the same review status.
+  ///
+  /// In en, this message translates to:
+  /// **'All results: {status}'**
+  String searchAllStatus(String status);
+
+  /// Open a research link in the browser.
+  ///
+  /// In en, this message translates to:
+  /// **'Open'**
+  String get researchOpenInBrowser;
+
+  /// Collapsed group of disciplines without records.
+  ///
+  /// In en, this message translates to:
+  /// **'Coming soon ({count})'**
+  String disciplinesComingSoon(int count);
+
+  /// Collapsed role picker on the mode screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a role (optional)'**
+  String get modeRoleExpand;
+
+  /// Sources list empty state.
+  ///
+  /// In en, this message translates to:
+  /// **'No sources are available yet.'**
+  String get sourcesEmpty;
 }
 
 class _AppLocalizationsDelegate
