@@ -42,7 +42,7 @@ status=0
 for role in "${ROLES[@]}"; do
   echo "== QA real app: $role"
   # Eski build konfiguratsiyalari diskni to‘ldirmasin.
-  ls -td .dart_tool/flutter_build/*/ 2>/dev/null | tail -n +3 | xargs -r rm -rf
+  { ls -td .dart_tool/flutter_build/*/ 2>/dev/null || true; } | tail -n +3 | xargs -r rm -rf
   QA_OUT="$OUT" xvfb-run -a -s "-screen 0 1280x1024x24" \
     flutter test "integration_test/qa_${role}_test.dart" -d linux \
     --dart-define=FE_AUTH_MODE=mock \

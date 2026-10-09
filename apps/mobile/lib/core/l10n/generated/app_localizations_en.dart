@@ -2008,7 +2008,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get calcStatsValues =>
-      'Values (separated by spaces, commas or new lines)';
+      'Values (separate with spaces, “;” or new lines; decimal 0.5 or 0,5)';
 
   @override
   String get calcStatsN => 'n';
@@ -2046,7 +2046,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get calcErrorValues => 'Enter numeric values only.';
 
   @override
-  String get calcRegPoints => 'Calibration points (one “x y” pair per line)';
+  String get calcRegPoints =>
+      'Calibration points: one “x y” or “x; y” pair per line';
 
   @override
   String get calcRegSlope => 'Slope (b)';
@@ -5079,7 +5080,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'An estimate, not a measurement. Food, liver function, drinking pattern and medications change the result. Does not replace a measured blood alcohol concentration or an expert opinion.';
 
   @override
-  String get calcBacMeasured => 'Measured blood alcohol, ‰';
+  String get calcBacMeasured => 'Measured blood alcohol';
 
   @override
   String get calcHoursEventToSample => 'Hours from event to blood sampling';
@@ -5100,7 +5101,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get calcBackAssumptionBeta =>
-      'β = 0.10–0.25 g/L/h covers most people (Jones 2010).';
+      'β = 0.10–0.25 g/L/h (10–25 mg/100 mL/h) covers most people (Jones 2010). For ‰ (g/kg) β is converted with blood density 1.055 g/mL.';
 
   @override
   String get calcBackLimitation =>
@@ -6647,4 +6648,37 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get supRelatedUnknown => 'record in the content pack';
+
+  @override
+  String get calcCopyResult => 'Copy result';
+
+  @override
+  String get calcCopied =>
+      'Result copied with inputs, formula and method version.';
+
+  @override
+  String get calcCopyInputs => 'Inputs';
+
+  @override
+  String get calcErrorRequired => 'Fill in all required fields.';
+
+  @override
+  String get calcLockedTitle => 'Included in Expert Pro';
+
+  @override
+  String get calcLockedBody =>
+      'This calculator opens with the Expert Pro plan. Dilution and the concentration unit converter are free.';
+
+  @override
+  String get calcLodUnitNote =>
+      'DL and QL are in the concentration units of the calibration x axis.';
+
+  @override
+  String get calcHenssgeFormulaLow => 'Applied: ambient ≤ 23 °C';
+
+  @override
+  String get calcHenssgeFormulaHigh => 'Applied: ambient > 23 °C';
+
+  @override
+  String get calcEstimatedRange => 'Estimated range';
 }

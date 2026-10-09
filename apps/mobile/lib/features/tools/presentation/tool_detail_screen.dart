@@ -1,8 +1,10 @@
 import 'package:fe_calc_engine/fe_calc_engine.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../app/providers.dart';
+import '../../../app/routes.dart';
 import '../../../app/user_data.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
@@ -12,7 +14,6 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
 import '../../../domain/ports/billing_ports.dart';
 import '../../common/favorite_button.dart';
-import '../../library/presentation/content_entry_sections.dart';
 import '../tool_strings.dart';
 import 'calculator_status.dart';
 import 'lab_calculators.dart';
@@ -64,7 +65,10 @@ class _ToolDetailScreenState extends ConsumerState<ToolDetailScreen> {
                         tool.id,
                         ref.watch(accessProvider),
                       )
-                  ? const LockedContentCard(key: Key('tool.lockedCard'))
+                  ? _ToolLockedCard(
+                      key: const Key('tool.lockedCard'),
+                      tool: tool,
+                    )
                   : tool.engineId == ToolsCatalog.dilution.engineId
                   ? const _DilutionCalculatorView()
                   : tool.engineId == ToolsCatalog.solution.engineId
@@ -87,6 +91,56 @@ class _ToolDetailScreenState extends ConsumerState<ToolDetailScreen> {
                       'fm.pmi.henssge' => const HenssgeView(),
                       _ => _PlannedToolView(tool: tool),
                     },
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Pro kalkulyator qulfi: aynan qaysi tarif ochishini aytadi (kalkulyatorlar
+/// faqat Mutaxassis Pro’da — Talaba Pro’da emas).
+class _ToolLockedCard extends StatelessWidget {
+  const _ToolLockedCard({super.key, required this.tool});
+
+  final ToolEntry tool;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    return Padding(
+      padding: const EdgeInsets.only(top: FeSpace.md),
+      child: FeCard(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Row(
+              children: [
+                Icon(Icons.lock_outline, color: c.accent),
+                const SizedBox(width: FeSpace.xs),
+                Expanded(
+                  child: Semantics(
+                    header: true,
+                    child: Text(l.calcLockedTitle, style: t.titleSmall),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: FeSpace.xs),
+            Text(l.toolDescription(tool), style: t.bodyMedium),
+            const SizedBox(height: FeSpace.xs),
+            Text(
+              l.calcLockedBody,
+              style: t.bodySmall?.copyWith(color: c.textSecondary),
+            ),
+            const SizedBox(height: FeSpace.sm),
+            FilledButton(
+              key: const Key('locked.unlock'),
+              onPressed: () => context.push(Routes.purchase),
+              child: Text(l.purchaseCta),
             ),
           ],
         ),
@@ -140,7 +194,8 @@ class _DilutionCalculatorView extends StatefulWidget {
       _DilutionCalculatorViewState();
 }
 
-class _DilutionCalculatorViewState extends State<_DilutionCalculatorView> {
+class _DilutionCalculatorViewState extends State<_DilutionCalculatorView>
+    with CalcInputsMixin {
   static const _concUnits = [
     Unit.milligramPerMilliliter,
     Unit.microgramPerMilliliter,
@@ -167,6 +222,18 @@ class _DilutionCalculatorViewState extends State<_DilutionCalculatorView> {
   CalcResult<DilutionOutput>? _result;
 
   @override
+  void initState() {
+    super.initState();
+    watchInputs(_controllers.values);
+  }
+
+  @override
+  void clearOutput() {
+    _result = null;
+    _error = null;
+  }
+
+  @override
   void dispose() {
     for (final c in _controllers.values) {
       c.dispose();
@@ -177,14 +244,22 @@ class _DilutionCalculatorViewState extends State<_DilutionCalculatorView> {
   void _calculate(AppLocalizations l) {
     Quantity? q(_Field f) {
       if (f == _unknown) return null;
-      final v = double.tryParse(_controllers[f]!.text.replaceAll(',', '.'));
+      final v = double.tryParse(
+        _controllers[f]!.text.trim().replaceAll(',', '.'),
+      );
       if (v == null || v <= 0 || !v.isFinite) throw const FormatException();
       return Quantity(v, _units[f]!);
     }
 
     setState(() {
-      _result = null;
-      _error = null;
+      clearOutput();
+      if (calcAnyEmpty([
+        for (final f in _Field.values)
+          if (f != _unknown) _controllers[f]!,
+      ])) {
+        _error = l.calcErrorRequired;
+        return;
+      }
       try {
         _result = _calc.calculate(
           DilutionInput(
@@ -211,11 +286,6 @@ class _DilutionCalculatorViewState extends State<_DilutionCalculatorView> {
     _Field.v2 => l.calcFinalVol,
   };
 
-  static String _format(double v) {
-    final s = v.toStringAsPrecision(6);
-    return s.contains('e') ? s : double.parse(s).toString();
-  }
-
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
@@ -223,6 +293,11 @@ class _DilutionCalculatorViewState extends State<_DilutionCalculatorView> {
     final t = Theme.of(context).textTheme;
     final d = _calc.descriptor;
     final result = _result;
+    const formula = 'C₁ × V₁ = C₂ × V₂';
+    final resultText = result == null
+        ? ''
+        : '${l.fmtNum(result.value.result.value)} '
+              '${result.value.result.unit.symbol}';
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -247,10 +322,7 @@ class _DilutionCalculatorViewState extends State<_DilutionCalculatorView> {
                 key: Key('calc.unknown.${f.name}'),
                 label: Text(f.name.toUpperCase()),
                 selected: _unknown == f,
-                onSelected: (_) => setState(() {
-                  _unknown = f;
-                  _result = null;
-                }),
+                onSelected: (_) => changed(() => _unknown = f),
               ),
           ],
         ),
@@ -268,7 +340,7 @@ class _DilutionCalculatorViewState extends State<_DilutionCalculatorView> {
                     ? _volUnits
                     : _concUnits,
                 unitLabel: l.calcUnit,
-                onUnit: (u) => setState(() => _units[f] = u),
+                onUnit: (u) => changed(() => _units[f] = u),
               ),
             ),
         Text(
@@ -285,9 +357,11 @@ class _DilutionCalculatorViewState extends State<_DilutionCalculatorView> {
           const SizedBox(height: FeSpace.sm),
           Semantics(
             liveRegion: true,
-            child: Text(
-              _error!,
-              style: t.bodyMedium?.copyWith(color: c.danger),
+            child: FeBanner(
+              key: const Key('calc.error'),
+              icon: Icons.error_outline,
+              text: _error!,
+              tone: FeBannerTone.warning,
             ),
           ),
         ],
@@ -296,16 +370,15 @@ class _DilutionCalculatorViewState extends State<_DilutionCalculatorView> {
           liveRegion: true,
           label: result == null
               ? null
-              : l.calcResultSemantics(
-                  '${_label(l, _unknown)} = ${_format(result.value.result.value)} '
-                  '${result.value.result.unit.symbol}',
-                ),
+              : l.calcResultSemantics('${_label(l, _unknown)} = $resultText'),
           excludeSemantics: result != null,
           child: DecoratedBox(
             decoration: BoxDecoration(
               color: c.surface,
               borderRadius: BorderRadius.circular(FeRadius.md),
-              border: Border.all(color: c.border),
+              border: Border.all(
+                color: result == null ? c.border : c.accentBorder,
+              ),
             ),
             child: Padding(
               padding: const EdgeInsets.all(FeSpace.md),
@@ -320,8 +393,7 @@ class _DilutionCalculatorViewState extends State<_DilutionCalculatorView> {
                         Text(_label(l, _unknown), style: t.labelLarge),
                         const SizedBox(height: FeSpace.xxs),
                         Text(
-                          '${_format(result.value.result.value)} '
-                          '${result.value.result.unit.symbol}',
+                          resultText,
                           key: const Key('calc.result'),
                           style: FeThemeBuilder.numeric(t.headlineSmall!)
                               .copyWith(color: c.textPrimary),
@@ -334,6 +406,27 @@ class _DilutionCalculatorViewState extends State<_DilutionCalculatorView> {
                             tone: FeBannerTone.warning,
                           ),
                         ],
+                        const SizedBox(height: FeSpace.xxs),
+                        CalcCopyButton(
+                          text: () => calcCopyText(
+                            l,
+                            descriptor: d,
+                            inputs: [
+                              for (final f in _Field.values)
+                                if (f != _unknown)
+                                  (
+                                    _label(l, f),
+                                    '${_controllers[f]!.text} '
+                                        '${_units[f]!.symbol}',
+                                  ),
+                            ],
+                            result: [(_label(l, _unknown), resultText)],
+                            warnings: [
+                              if (result.warnings.isNotEmpty) l.calcWarnExceeds,
+                            ],
+                            formula: formula,
+                          ),
+                        ),
                       ],
                     ),
             ),
@@ -342,10 +435,7 @@ class _DilutionCalculatorViewState extends State<_DilutionCalculatorView> {
         FeSectionHeader(l.calcMethod),
         CalculatorStatusPanel(engineId: d.id, engineVersion: d.engineVersion),
         FeSectionHeader(l.calcFormula),
-        Text(
-          'C₁ × V₁ = C₂ × V₂',
-          style: FeThemeBuilder.numeric(t.titleMedium!),
-        ),
+        Text(formula, style: FeThemeBuilder.numeric(t.titleMedium!)),
         FeSectionHeader(l.calcAssumptions),
         _Bullet(l.calcDilutionAssumptionConservation),
         _Bullet(l.calcDilutionAssumptionMixing),
@@ -370,7 +460,8 @@ class _SolutionCalculatorView extends StatefulWidget {
       _SolutionCalculatorViewState();
 }
 
-class _SolutionCalculatorViewState extends State<_SolutionCalculatorView> {
+class _SolutionCalculatorViewState extends State<_SolutionCalculatorView>
+    with CalcInputsMixin {
   static const _concUnits = [
     Unit.gramPerLiter,
     Unit.milligramPerMilliliter,
@@ -392,6 +483,18 @@ class _SolutionCalculatorViewState extends State<_SolutionCalculatorView> {
   CalcResult<SolutionPreparationOutput>? _result;
 
   @override
+  void initState() {
+    super.initState();
+    watchInputs([_conc, _vol, _molar, _purity]);
+  }
+
+  @override
+  void clearOutput() {
+    _result = null;
+    _error = null;
+  }
+
+  @override
   void dispose() {
     for (final c in [_conc, _vol, _molar, _purity]) {
       c.dispose();
@@ -401,16 +504,16 @@ class _SolutionCalculatorViewState extends State<_SolutionCalculatorView> {
 
   bool get _isMolar => _concUnit.dimension == Dimension.molarConcentration;
 
-  double? _num(TextEditingController c) =>
-      double.tryParse(c.text.trim().replaceAll(',', '.'));
-
   void _calculate(AppLocalizations l) {
     setState(() {
-      _result = null;
-      _error = null;
-      final conc = _num(_conc);
-      final vol = _num(_vol);
-      final purity = _num(_purity);
+      clearOutput();
+      if (calcAnyEmpty([_conc, _vol, _purity, if (_isMolar) _molar])) {
+        _error = l.calcErrorRequired;
+        return;
+      }
+      final conc = calcParse(_conc);
+      final vol = calcParse(_vol);
+      final purity = calcParse(_purity);
       if (conc == null || vol == null || purity == null) {
         _error = l.calcErrorPositive;
         return;
@@ -420,7 +523,7 @@ class _SolutionCalculatorViewState extends State<_SolutionCalculatorView> {
           SolutionPreparationInput(
             targetConcentration: Quantity(conc, _concUnit),
             finalVolume: Quantity(vol, _volUnit),
-            molarMassGPerMol: _isMolar ? _num(_molar) : null,
+            molarMassGPerMol: _isMolar ? calcParse(_molar) : null,
             purityFraction: purity,
           ),
         );
@@ -434,11 +537,6 @@ class _SolutionCalculatorViewState extends State<_SolutionCalculatorView> {
     });
   }
 
-  static String _format(double v) {
-    final s = v.toStringAsPrecision(6);
-    return s.contains('e') ? s : double.parse(s).toString();
-  }
-
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
@@ -446,6 +544,11 @@ class _SolutionCalculatorViewState extends State<_SolutionCalculatorView> {
     final t = Theme.of(context).textTheme;
     final d = _calc.descriptor;
     final result = _result;
+    const formula = 'm = C · V (· M) / p';
+    final resultText = result == null
+        ? FeGlyphs.emDash
+        : '${l.fmtNum(result.value.mass.value)} '
+              '${result.value.mass.unit.symbol}';
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
@@ -471,10 +574,7 @@ class _SolutionCalculatorViewState extends State<_SolutionCalculatorView> {
           unit: _concUnit,
           units: _concUnits,
           unitLabel: l.calcUnit,
-          onUnit: (u) => setState(() {
-            _concUnit = u;
-            _result = null;
-          }),
+          onUnit: (u) => changed(() => _concUnit = u),
         ),
         const SizedBox(height: FeSpace.sm),
         _QuantityField(
@@ -484,7 +584,7 @@ class _SolutionCalculatorViewState extends State<_SolutionCalculatorView> {
           unit: _volUnit,
           units: _volUnits,
           unitLabel: l.calcUnit,
-          onUnit: (u) => setState(() => _volUnit = u),
+          onUnit: (u) => changed(() => _volUnit = u),
         ),
         if (_isMolar) ...[
           const SizedBox(height: FeSpace.sm),
@@ -512,10 +612,11 @@ class _SolutionCalculatorViewState extends State<_SolutionCalculatorView> {
           const SizedBox(height: FeSpace.sm),
           Semantics(
             liveRegion: true,
-            child: Text(
-              _error!,
+            child: FeBanner(
               key: const Key('calc.error'),
-              style: t.bodyMedium?.copyWith(color: c.danger),
+              icon: Icons.error_outline,
+              text: _error!,
+              tone: FeBannerTone.warning,
             ),
           ),
         ],
@@ -536,16 +637,36 @@ class _SolutionCalculatorViewState extends State<_SolutionCalculatorView> {
                   Text(l.calcMassRequired, style: t.labelLarge),
                   const SizedBox(height: FeSpace.xxs),
                   Text(
-                    result == null
-                        ? FeGlyphs.emDash
-                        : '${_format(result.value.mass.value)} '
-                              '${result.value.mass.unit.symbol}',
+                    resultText,
                     key: const Key('calc.result'),
                     style: FeThemeBuilder.numeric(t.headlineSmall!),
                   ),
                   if (result != null && result.warnings.isNotEmpty) ...[
                     const SizedBox(height: FeSpace.xs),
                     FeBanner(icon: Icons.info_outline, text: l.calcWarnPurity),
+                  ],
+                  if (result != null) ...[
+                    const SizedBox(height: FeSpace.xxs),
+                    CalcCopyButton(
+                      text: () => calcCopyText(
+                        l,
+                        descriptor: d,
+                        inputs: [
+                          (
+                            l.calcTargetConc,
+                            '${_conc.text} ${_concUnit.symbol}',
+                          ),
+                          (l.calcFinalVol, '${_vol.text} ${_volUnit.symbol}'),
+                          if (_isMolar) (l.calcMolarMass, _molar.text),
+                          (l.calcPurity, _purity.text),
+                        ],
+                        result: [(l.calcMassRequired, resultText)],
+                        warnings: [
+                          if (result.warnings.isNotEmpty) l.calcWarnPurity,
+                        ],
+                        formula: formula,
+                      ),
+                    ),
                   ],
                 ],
               ),
@@ -555,10 +676,7 @@ class _SolutionCalculatorViewState extends State<_SolutionCalculatorView> {
         FeSectionHeader(l.calcMethod),
         CalculatorStatusPanel(engineId: d.id, engineVersion: d.engineVersion),
         FeSectionHeader(l.calcFormula),
-        Text(
-          'm = C · V (· M) / p',
-          style: FeThemeBuilder.numeric(t.titleMedium!),
-        ),
+        Text(formula, style: FeThemeBuilder.numeric(t.titleMedium!)),
         FeSectionHeader(l.calcAssumptions),
         _Bullet(l.calcSolutionAssumptionDefinition),
         _Bullet(l.calcSolutionAssumptionInputs),

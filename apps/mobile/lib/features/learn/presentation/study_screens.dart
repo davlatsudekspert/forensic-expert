@@ -524,16 +524,29 @@ class _CardFront extends StatelessWidget {
       StudyItemKind.substanceFormula => l.studyFrontSubstance,
       StudyItemKind.guidelineSummary => l.studyFrontGuideline,
     };
+    final prompt = item.prompt.resolve(lang);
+    // Uzun sarlavha yoki katta shrift (2×) — so‘z o‘rtasidan uzilmasin.
+    final largeText = MediaQuery.textScalerOf(context).scale(10) > 13;
+    final compact =
+        largeText ||
+        prompt.length > 32 ||
+        MediaQuery.sizeOf(context).width < 360;
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
         Text(
-          item.prompt.resolve(lang),
+          prompt,
           key: const Key('study.front'),
-          style: t.headlineSmall?.copyWith(color: c.textPrimary),
+          style:
+              (largeText
+                      ? t.titleMedium
+                      : compact
+                      ? t.titleLarge
+                      : t.headlineSmall)
+                  ?.copyWith(color: c.textPrimary),
           textAlign: TextAlign.center,
         ),
-        const SizedBox(height: FeSpace.sm),
+        SizedBox(height: compact ? FeSpace.xs : FeSpace.sm),
         Text(
           hint,
           style: t.bodyMedium?.copyWith(color: c.textSecondary),

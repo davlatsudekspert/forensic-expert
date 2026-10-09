@@ -72,7 +72,11 @@ class HenssgeCalculator implements Calculator<HenssgeInput, HenssgeResult> {
   static double b(double c, double m) =>
       -1.2815 * math.pow(c * m, -0.625) + 0.0284;
 
-  static double qAt(double t, double b, double ambient) => ambient <= 23
+  /// Ta > 23 °C da ikkinchi (1,11 / 0,11 / 10Bt) tenglama ishlatiladi.
+  static bool usesHighAmbientFormula(double ambient) => ambient > 23;
+
+  static double qAt(double t, double b, double ambient) =>
+      !usesHighAmbientFormula(ambient)
       ? 1.25 * math.exp(b * t) - 0.25 * math.exp(5 * b * t)
       : 1.11 * math.exp(b * t) - 0.11 * math.exp(10 * b * t);
 

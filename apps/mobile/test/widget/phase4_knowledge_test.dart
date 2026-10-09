@@ -238,6 +238,7 @@ void main() {
     await tester.tap(find.byKey(const Key('calc.calculate')));
     await tester.pumpAndSettle();
     // 0.1 g/L × 0.1 L = 0.01 g = 10 mg (ta’rifiy hisob).
-    expect(find.text('10.0 mg'), findsOneWidget);
+    // Butun son «.0» siz ko‘rsatiladi (2026-10-09 polish).
+    expect(find.text('10 mg'), findsOneWidget);
   });
 }
