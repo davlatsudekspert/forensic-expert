@@ -28,6 +28,8 @@ void main() {
     final card = find.byKey(const Key('profile.invite'));
     expect(card, findsOneWidget);
     expect(find.text('Invite a colleague'), findsOneWidget);
+    await tester.ensureVisible(card);
+    await tester.pumpAndSettle();
     await tester.tap(card);
     await tester.pumpAndSettle();
     expect(find.byKey(const Key('referral.header')), findsOneWidget);
@@ -296,6 +298,8 @@ void main() {
       await c.read(userDataProvider.notifier).toggleFavorite('morphine');
       await tester.pumpAndSettle();
       expect(find.text('2 of 5 done'), findsOneWidget);
+      await tester.ensureVisible(find.byKey(const Key('home.firstSteps.hide')));
+      await tester.pumpAndSettle();
       await tester.tap(find.byKey(const Key('home.firstSteps.hide')));
       await tester.pumpAndSettle();
       expect(find.byKey(const Key('home.firstSteps')), findsNothing);

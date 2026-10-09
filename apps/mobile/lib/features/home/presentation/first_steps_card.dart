@@ -9,7 +9,8 @@ import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/fe_components.dart';
 
-/// Birinchi foydalanishdagi sokin yo‘l-yo‘riq: 5 ta foydali amal. Uzun
+/// Birinchi foydalanishdagi sokin yo‘l-yo‘riq: 5 ta foydali amal (bir
+/// vaqtda navbatdagi 3 tasi ko‘rinadi). Uzun
 /// tutorial, ball yoki «streak» yo‘q; holat faqat qurilmada saqlanadi.
 /// Hammasi bajarilsa yoki yashirilsa — karta ko‘rinmaydi.
 class FirstStepsCard extends ConsumerWidget {
@@ -66,9 +67,12 @@ class FirstStepsCard extends ConsumerWidget {
     ];
     final done = steps.where((s) => s.$4).length;
     if (done == steps.length) return const SizedBox.shrink();
+    // Ixcham: faqat navbatdagi 3 ta bajarilmagan qadam (bajarilganlar
+    // progress chizig‘ida ko‘rinadi) — Home’ning birinchi ekrani yengil.
+    final next = steps.where((s) => !s.$4).take(3);
 
     return Padding(
-      padding: const EdgeInsets.only(top: FeSpace.sm),
+      padding: const EdgeInsets.only(top: FeSpace.md),
       child: FeCard(
         key: const Key('home.firstSteps'),
         padding: const EdgeInsets.fromLTRB(
@@ -103,39 +107,37 @@ class FirstStepsCard extends ConsumerWidget {
                 ),
               ],
             ),
+            // Holat matni chiziqdan oldin — tor ekran / ×2 shriftda ham
+            // bir tekis o‘raladi (yonma-yon siqilmaydi).
             Padding(
               padding: const EdgeInsets.only(right: FeSpace.sm),
-              child: Row(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Expanded(
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(4),
-                      child: TweenAnimationBuilder<double>(
-                        tween: Tween(end: done / steps.length),
-                        duration: FeMotion.of(context, FeMotion.standard),
-                        builder: (context, v, _) => LinearProgressIndicator(
-                          value: v,
-                          minHeight: 4,
-                          color: c.accent,
-                          backgroundColor: c.border,
-                        ),
-                      ),
-                    ),
+                  Text(
+                    l.firstStepsProgress(done, steps.length),
+                    key: const Key('home.firstSteps.progress'),
+                    style: t.labelSmall?.copyWith(color: c.textSecondary),
                   ),
-                  const SizedBox(width: FeSpace.sm),
-                  Flexible(
-                    child: Text(
-                      l.firstStepsProgress(done, steps.length),
-                      key: const Key('home.firstSteps.progress'),
-                      textAlign: TextAlign.end,
-                      style: t.labelSmall?.copyWith(color: c.textSecondary),
+                  const SizedBox(height: FeSpace.xxs),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(4),
+                    child: TweenAnimationBuilder<double>(
+                      tween: Tween(end: done / steps.length),
+                      duration: FeMotion.of(context, FeMotion.standard),
+                      builder: (context, v, _) => LinearProgressIndicator(
+                        value: v,
+                        minHeight: 4,
+                        color: c.accent,
+                        backgroundColor: c.border,
+                      ),
                     ),
                   ),
                 ],
               ),
             ),
             const SizedBox(height: FeSpace.xxs),
-            for (final (id, icon, label, isDone, route) in steps)
+            for (final (id, icon, label, isDone, route) in next)
               InkWell(
                 key: Key('home.firstSteps.$id'),
                 borderRadius: BorderRadius.circular(FeRadius.sm),

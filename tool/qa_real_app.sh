@@ -5,6 +5,8 @@
 #
 #   ./tool/qa_real_app.sh                 # ikkala rol
 #   ./tool/qa_real_app.sh student         # faqat talaba
+#   ./tool/qa_real_app.sh home            # birinchi ishga tushirish, Asosiy, Profil
+#                                         # (qorong‘i, 320 dp ×2, ru/en)
 #   QA_OUT=/tmp/qa ./tool/qa_real_app.sh  # boshqa natija katalogi
 #
 # Natija: docs/qa/real_app_YYYYMMDD/ (PNG + results_<rol>.json).

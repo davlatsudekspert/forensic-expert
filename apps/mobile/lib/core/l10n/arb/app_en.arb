@@ -76,9 +76,9 @@
   "@modeProfessional": {
     "description": "Mode."
   },
-  "modeProfessionalDescription": "Forensic experts, physicians, toxicologists, chemists, laboratory and other forensic specialists",
+  "modeProfessionalDescription": "Forensic experts, physicians, toxicologists, chemists and lab specialists",
   "@modeProfessionalDescription": {
-    "description": "Mode description."
+    "description": "Mode card description (short)."
   },
   "modeStudent": "Student",
   "@modeStudent": {
@@ -8656,5 +8656,122 @@
   "supRelatedUnknown": "record in the content pack",
   "@supRelatedUnknown": {
     "description": "Fallback when the related record is not in this content pack."
+  },
+  "onbStep": "Step {current} of {total}",
+  "@onbStep": {
+    "description": "Onboarding progress label.",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "disclaimerIntroTitle": "Before you start",
+  "@disclaimerIntroTitle": {
+    "description": "Onboarding disclaimer headline."
+  },
+  "disclaimerPointReference": "A scientific reference and learning tool — it never issues expert conclusions.",
+  "@disclaimerPointReference": {
+    "description": "Disclaimer summary point."
+  },
+  "disclaimerPointLab": "It does not replace validated lab methods, protocols, the law or a specialist’s judgement.",
+  "@disclaimerPointLab": {
+    "description": "Disclaimer summary point."
+  },
+  "disclaimerPointMedical": "For medical questions, consult a qualified doctor.",
+  "@disclaimerPointMedical": {
+    "description": "Disclaimer summary point."
+  },
+  "disclaimerFullText": "Full text",
+  "@disclaimerFullText": {
+    "description": "Expandable full disclaimer."
+  },
+  "accountReadyTitle": "You’re all set",
+  "@accountReadyTitle": {
+    "description": "Last onboarding step title."
+  },
+  "accountReadyBody": "The scientific database, search and calculators work offline — no account needed.",
+  "@accountReadyBody": {
+    "description": "Last onboarding step body."
+  },
+  "accountStartNow": "Start",
+  "@accountStartNow": {
+    "description": "Primary button: open the app without an account."
+  },
+  "accountBenefitsNote": "An account adds professional verification, sync and cloud AI. You can sign in any time in Profile.",
+  "@accountBenefitsNote": {
+    "description": "What an account adds (one line)."
+  },
+  "homeGreetingStudent": "What shall we study today?",
+  "@homeGreetingStudent": {
+    "description": "Home headline, student mode."
+  },
+  "homeGreetingExpert": "What are you working on today?",
+  "@homeGreetingExpert": {
+    "description": "Home headline, professional mode."
+  },
+  "homeAreasTitle": "Areas",
+  "@homeAreasTitle": {
+    "description": "Home section: subject areas."
+  },
+  "homeActLearnTitle": "Study & quizzes",
+  "@homeActLearnTitle": {
+    "description": "Quick action."
+  },
+  "homeActLearnBody": "Flashcards, quizzes, exam practice",
+  "@homeActLearnBody": {
+    "description": "Quick action hint."
+  },
+  "homeActGuidelinesBody": "Practical guidance by discipline",
+  "@homeActGuidelinesBody": {
+    "description": "Quick action hint."
+  },
+  "homeActSubstancesBody": "Properties, analysis, sources",
+  "@homeActSubstancesBody": {
+    "description": "Quick action hint."
+  },
+  "homeActMethodsBody": "Analytical methods, sample prep",
+  "@homeActMethodsBody": {
+    "description": "Quick action hint."
+  },
+  "homeActToolsTitle": "Calculators",
+  "@homeActToolsTitle": {
+    "description": "Quick action."
+  },
+  "homeActToolsBody": "Lab and forensic calculations",
+  "@homeActToolsBody": {
+    "description": "Quick action hint."
+  },
+  "homeActAiBody": "Ask a question — answers cite sources",
+  "@homeActAiBody": {
+    "description": "Quick action hint."
+  },
+  "homeTrustNote": "Database under expert review · every entry shows its source and status",
+  "@homeTrustNote": {
+    "description": "Calm one-line honesty note at the bottom of Home."
+  },
+  "profileSignInBody": "Sync, verification and cloud AI. No password needed.",
+  "@profileSignInBody": {
+    "description": "Signed-out account card hint."
+  },
+  "profileSectionHelp": "Help and community",
+  "@profileSectionHelp": {
+    "description": "Profile section."
+  },
+  "profileSectionAppearance": "Appearance",
+  "@profileSectionAppearance": {
+    "description": "Profile section."
+  },
+  "homeAllDisciplinesCount": "{count, plural, one{{count} discipline} other{{count} disciplines}}",
+  "@homeAllDisciplinesCount": {
+    "description": "Card hint: number of disciplines.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   }
 }

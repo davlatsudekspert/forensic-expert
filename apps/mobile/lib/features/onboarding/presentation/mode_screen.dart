@@ -13,6 +13,7 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../domain/professional/professional_models.dart';
 import '../../professional/presentation/professional_widgets.dart';
 import '../../professional/professional_strings.dart';
+import 'onboarding_progress.dart';
 
 /// «FORENSIC EXPERT’dan qanday foydalanasiz?» — Talaba yoki Mutaxassis.
 ///
@@ -70,10 +71,11 @@ class _ModeScreenState extends ConsumerState<ModeScreen> {
           icon: const Icon(Icons.arrow_back),
           onPressed: () => context.go(Routes.disclaimer),
         ),
+        title: const OnboardingProgress(step: 3),
       ),
       body: SafeArea(
         child: FeScrollableBody(
-          padding: const EdgeInsets.only(bottom: FeSpace.xl),
+          padding: const EdgeInsets.only(top: FeSpace.sm, bottom: FeSpace.xl),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [

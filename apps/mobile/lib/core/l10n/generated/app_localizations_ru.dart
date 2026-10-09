@@ -68,7 +68,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get modeProfessionalDescription =>
-      'Судебные эксперты, врачи, токсикологи, химики, специалисты лабораторий и других судебно-экспертных направлений';
+      'Судебные эксперты, врачи, токсикологи, химики и специалисты лабораторий';
 
   @override
   String get modeStudent => 'Студент';
@@ -6671,4 +6671,101 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get supRelatedUnknown => 'запись в контент-пакете';
+
+  @override
+  String onbStep(int current, int total) {
+    return 'Шаг $current из $total';
+  }
+
+  @override
+  String get disclaimerIntroTitle => 'Прежде чем начать';
+
+  @override
+  String get disclaimerPointReference =>
+      'Научный справочник и учебный инструмент — экспертных заключений не выдаёт.';
+
+  @override
+  String get disclaimerPointLab =>
+      'Не заменяет валидированные методики, протоколы, закон и мнение специалиста.';
+
+  @override
+  String get disclaimerPointMedical =>
+      'По медицинским вопросам обращайтесь к квалифицированному врачу.';
+
+  @override
+  String get disclaimerFullText => 'Полный текст';
+
+  @override
+  String get accountReadyTitle => 'Всё готово';
+
+  @override
+  String get accountReadyBody =>
+      'Научная база, поиск и калькуляторы работают офлайн — аккаунт не нужен.';
+
+  @override
+  String get accountStartNow => 'Начать';
+
+  @override
+  String get accountBenefitsNote =>
+      'Аккаунт добавляет профессиональное подтверждение, синхронизацию и облачный ИИ. Войти можно в любой момент в Профиле.';
+
+  @override
+  String get homeGreetingStudent => 'Что изучим сегодня?';
+
+  @override
+  String get homeGreetingExpert => 'Над чем работаете сегодня?';
+
+  @override
+  String get homeAreasTitle => 'Разделы';
+
+  @override
+  String get homeActLearnTitle => 'Учёба и тесты';
+
+  @override
+  String get homeActLearnBody => 'Карточки, тесты, экзамен';
+
+  @override
+  String get homeActGuidelinesBody => 'Практические руководства по дисциплинам';
+
+  @override
+  String get homeActSubstancesBody => 'Свойства, анализ, источники';
+
+  @override
+  String get homeActMethodsBody => 'Методы анализа, пробоподготовка';
+
+  @override
+  String get homeActToolsTitle => 'Калькуляторы';
+
+  @override
+  String get homeActToolsBody => 'Лабораторные и экспертные расчёты';
+
+  @override
+  String get homeActAiBody => 'Задайте вопрос — ответ со ссылками';
+
+  @override
+  String get homeTrustNote =>
+      'База на экспертной проверке · у каждой записи указаны источник и статус';
+
+  @override
+  String get profileSignInBody =>
+      'Синхронизация, подтверждение и облачный ИИ. Пароль не нужен.';
+
+  @override
+  String get profileSectionHelp => 'Помощь и сообщество';
+
+  @override
+  String get profileSectionAppearance => 'Оформление';
+
+  @override
+  String homeAllDisciplinesCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count дисциплины',
+      many: '$count дисциплин',
+      few: '$count дисциплины',
+      one: '$count дисциплина',
+    );
+    return '$_temp0';
+  }
 }

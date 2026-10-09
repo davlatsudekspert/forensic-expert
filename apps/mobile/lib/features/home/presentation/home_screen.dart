@@ -129,6 +129,92 @@ enum HomeModule {
   };
 }
 
+/// Rejimga mos tezkor amal (Home’ning birinchi bloki).
+class HomeAction {
+  const HomeAction({
+    required this.id,
+    required this.icon,
+    required this.hue,
+    required this.route,
+    this.module,
+    this.isTab = false,
+    this.highlight = false,
+  });
+
+  /// Kalit: `home.module.<modul>` (modulga bog‘liq bo‘lsa) yoki `home.<id>`.
+  final String id;
+  final IconData icon;
+  final FeHue hue;
+  final String route;
+  final HomeModule? module;
+
+  /// Pastki tab — almashtiriladi (`go`); qolganlari ustiga ochiladi.
+  final bool isTab;
+
+  /// AI — oltin aksentli karta.
+  final bool highlight;
+
+  Key get key => Key(module == null ? 'home.$id' : 'home.module.$id');
+
+  String title(AppLocalizations l) => switch (id) {
+    'learn' => l.homeActLearnTitle,
+    'guidelines' => l.guidelinesTitle,
+    'tools' => l.homeActToolsTitle,
+    _ => module!.label(l),
+  };
+
+  String body(AppLocalizations l) => switch (id) {
+    'learn' => l.homeActLearnBody,
+    'guidelines' => l.homeActGuidelinesBody,
+    'substances' => l.homeActSubstancesBody,
+    'methods' => l.homeActMethodsBody,
+    'tools' => l.homeActToolsBody,
+    _ => l.homeActAiBody,
+  };
+
+  static HomeAction _module(HomeModule m) => HomeAction(
+    id: m.name,
+    icon: m.icon,
+    hue: m.hue,
+    route: m.route,
+    module: m,
+    isTab: m.isTab,
+    highlight: m == HomeModule.ai,
+  );
+
+  static const guidelines = HomeAction(
+    id: 'guidelines',
+    icon: Icons.assignment_outlined,
+    hue: FeHues.slate,
+    route: Routes.guidelines,
+  );
+
+  static const tools = HomeAction(
+    id: 'tools',
+    icon: Icons.calculate_outlined,
+    hue: FeHues.ochre,
+    route: Routes.tools,
+    isTab: true,
+  );
+
+  /// Talaba: o‘qish, yo‘riqnomalar, moddalar, AI. Mutaxassis: moddalar,
+  /// tahlil usullari, kalkulyatorlar, AI. Qidiruv — sarlavhada.
+  static List<HomeAction> forMode(UserMode? mode) => switch (mode) {
+    UserMode.student => [
+      _module(HomeModule.learn),
+      guidelines,
+      _module(HomeModule.substances),
+      _module(HomeModule.ai),
+    ],
+    _ => [
+      _module(HomeModule.substances),
+      _module(HomeModule.methods),
+      tools,
+      _module(HomeModule.ai),
+    ],
+  };
+}
+
 /// Professional dashboard. Ochilishi AI yoki backend javobini kutmaydi —
 /// faqat lokal holat (sozlamalar, saralanganlar) dan quriladi.
 class HomeScreen extends ConsumerWidget {
@@ -140,15 +226,18 @@ class HomeScreen extends ConsumerWidget {
     final mode = ref.watch(
       settingsControllerProvider.select((s) => s.userMode),
     );
-    // AI alohida markaziy kartada — to‘rda takrorlanmaydi.
+    final actions = HomeAction.forMode(mode);
+    final featured = {for (final a in actions) ?a.module};
+    // Tezkor amallardagi bo‘limlar to‘rda takrorlanmaydi.
     final modules = [
       for (final m in HomeModule.orderFor(mode))
-        if (m != HomeModule.ai) m,
+        if (!featured.contains(m) && m != HomeModule.ai) m,
     ];
+    final guidelinesFeatured = actions.contains(HomeAction.guidelines);
 
-    // Ierarxiya (egasi belgilagan tartib): sarlavha → salomlashish/rol →
-    // markaziy ilmiy qidiruv → Expert AI → fan yo‘nalishlari →
-    // (Yo‘riqnomalar) → kutubxona → vositalar → davom ettirish/saqlangan.
+    // Ierarxiya: sarlavha (salom, rejim, qidiruv) → rejimga mos 4 ta tezkor
+    // amal → birinchi qadamlar → bo‘limlar → davom ettirish → taklif →
+    // bitta sokin ishonch izohi.
     return Scaffold(
       body: SafeArea(
         top: false,
@@ -161,41 +250,43 @@ class HomeScreen extends ConsumerWidget {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   const SizedBox(height: FeSpace.md),
-                  const _AiEntryCard(),
+                  _ActionGrid(actions: actions),
                   if (FeFlags.showTestFixtures) ...[
                     const SizedBox(height: FeSpace.md),
                     FeBanner(
                       icon: Icons.info_outline,
                       text: l.homePrototypeNotice,
                     ),
-                  ] else if (FeFlags.contentChannel != 'production') ...[
-                    const SizedBox(height: FeSpace.md),
-                    _ReviewNotice(
-                      key: const Key('home.pilotNotice'),
-                      text: l.homePilotNotice,
-                    ),
                   ],
                   const FirstStepsCard(),
-                  FeSectionHeader(l.homeAreasHeading),
+                  FeSectionHeader(l.homeAreasTitle),
                   _ModuleGrid(modules: modules),
-                  const SizedBox(height: FeSpace.sm),
-                  const _AllDisciplinesTile(),
-                  FeSectionHeader(l.homeResourcesHeading),
-                  _ResourceTile(
-                    key: const Key('home.guidelines'),
-                    icon: Icons.assignment_outlined,
-                    title: l.guidelinesTitle,
-                    body: l.guidelinesSubtitle,
-                    onTap: () => context.push(Routes.guidelines),
-                  ),
-                  // Kutubxona va Vositalar — pastki tablarda (takrorlanmaydi);
-                  // baza holati va versiyalar — Profil → Ilova haqida.
+                  if (!guidelinesFeatured) ...[
+                    const SizedBox(height: FeSpace.sm),
+                    _ResourceTile(
+                      key: const Key('home.guidelines'),
+                      icon: Icons.assignment_outlined,
+                      title: l.guidelinesTitle,
+                      body: l.guidelinesSubtitle,
+                      onTap: () => context.push(Routes.guidelines),
+                    ),
+                  ],
+                  // Kutubxona va Vositalar — pastki tablarda; baza holati —
+                  // Profil → Ilova haqida.
                   const _QuickAccess(),
-                  const SizedBox(height: FeSpace.md),
+                  const SizedBox(height: FeSpace.lg),
                   const InviteColleagueCard(
                     key: Key('home.invite'),
                     compact: true,
                   ),
+                  if (!FeFlags.showTestFixtures &&
+                      FeFlags.contentChannel != 'production') ...[
+                    const SizedBox(height: FeSpace.lg),
+                    _ReviewNotice(
+                      key: const Key('home.pilotNotice'),
+                      text: l.homeTrustNote,
+                    ),
+                  ],
                   const SizedBox(height: FeSpace.lg),
                 ],
               ),
@@ -207,33 +298,103 @@ class HomeScreen extends ConsumerWidget {
   }
 }
 
-/// Markaziy «Expert AI» kirishi — bitta aniq amal, oltin ikonka.
-class _AiEntryCard extends StatelessWidget {
-  const _AiEntryCard();
+/// 2×2 tezkor amallar (tor ekran yoki katta shriftda — bitta ustun).
+class _ActionGrid extends StatelessWidget {
+  const _ActionGrid({required this.actions});
+
+  final List<HomeAction> actions;
+
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final w = constraints.maxWidth;
+        final textScale = MediaQuery.textScalerOf(context).scale(1);
+        final columns = w >= 560 ? 4 : (w >= 300 && textScale < 1.6 ? 2 : 1);
+        const gap = FeSpace.sm;
+        return Column(
+          children: [
+            for (var i = 0; i < actions.length; i += columns)
+              Padding(
+                padding: EdgeInsets.only(
+                  bottom: i + columns < actions.length ? gap : 0,
+                ),
+                child: IntrinsicHeight(
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      for (var j = 0; j < columns; j++) ...[
+                        if (j > 0) const SizedBox(width: gap),
+                        Expanded(
+                          child: i + j < actions.length
+                              ? _ActionCard(action: actions[i + j])
+                              : const SizedBox.shrink(),
+                        ),
+                      ],
+                    ],
+                  ),
+                ),
+              ),
+          ],
+        );
+      },
+    );
+  }
+}
+
+class _ActionCard extends StatelessWidget {
+  const _ActionCard({required this.action});
+
+  final HomeAction action;
 
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
+    final b = Theme.of(context).brightness;
+    final gold = action.highlight;
     return FeCard(
-      key: const Key('home.module.ai'),
-      onTap: () => context.go(HomeModule.ai.route),
-      child: _EntryLayout(
-        leading: DecoratedBox(
-          decoration: BoxDecoration(
-            color: c.accentContainer,
-            borderRadius: BorderRadius.circular(FeRadius.md),
-            border: Border.all(color: c.accentBorder),
+      key: action.key,
+      color: gold ? c.accentContainer : null,
+      padding: const EdgeInsets.all(FeSpace.sm),
+      onTap: () =>
+          action.isTab ? context.go(action.route) : context.push(action.route),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          DecoratedBox(
+            decoration: BoxDecoration(
+              color: gold ? c.surfaceRaised : action.hue.bg(b),
+              borderRadius: BorderRadius.circular(FeRadius.md),
+              border: gold ? Border.all(color: c.accentBorder) : null,
+            ),
+            child: SizedBox.square(
+              dimension: 40,
+              child: Icon(
+                action.icon,
+                color: gold ? c.accent : action.hue.fg(b),
+                size: 22,
+              ),
+            ),
           ),
-          child: SizedBox.square(
-            dimension: 44,
-            child: Icon(HomeModule.ai.icon, color: c.accent, size: 22),
+          const SizedBox(height: FeSpace.sm),
+          Text(
+            action.title(l),
+            style: t.titleSmall?.copyWith(
+              fontWeight: FontWeight.w600,
+              height: 1.25,
+              color: gold ? c.onAccentContainer : null,
+            ),
           ),
-        ),
-        title: Text(HomeModule.ai.label(l), style: t.titleMedium),
-        body: l.homeAiEntryBody,
-        trailing: Icon(Icons.arrow_forward, color: c.accent, size: 20),
+          const SizedBox(height: 2),
+          Text(
+            action.body(l),
+            style: t.bodySmall?.copyWith(
+              color: gold ? c.onAccentContainer : c.textSecondary,
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -345,7 +506,6 @@ class _QuickAccess extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
-    final c = FeTheme.of(context);
     final lang = Localizations.localeOf(context).languageCode;
     final data = ref.watch(userDataProvider);
     final library = ref.watch(libraryRepositoryProvider);
@@ -416,20 +576,12 @@ class _QuickAccess extends ConsumerWidget {
           ],
         ),
     ];
+    // Yangi foydalanuvchida bo‘sh bo‘lim ko‘rsatilmaydi (tugallanmagan
+    // ko‘rinish bermaslik uchun) — bloklar ishlatilgach paydo bo‘ladi.
+    if (blocks.isEmpty) return const SizedBox.shrink();
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        FeSectionHeader(l.homeContinueSaved),
-        if (blocks.isEmpty)
-          Text(
-            l.homeQuickEmpty,
-            key: const Key('home.quickEmpty'),
-            style: Theme.of(context).textTheme.bodySmall
-                ?.copyWith(color: c.textSecondary),
-          )
-        else
-          ...blocks,
-      ],
+      children: [FeSectionHeader(l.homeContinueSaved), ...blocks],
     );
   }
 }
@@ -489,8 +641,9 @@ class _JurisdictionContext extends ConsumerWidget {
   }
 }
 
-class _AllDisciplinesTile extends StatelessWidget {
-  const _AllDisciplinesTile();
+/// «Barcha sud-ekspert fanlari» — to‘rdagi oxirgi karta (oltin aksent).
+class _AllDisciplinesCard extends StatelessWidget {
+  const _AllDisciplinesCard();
 
   @override
   Widget build(BuildContext context) {
@@ -499,31 +652,43 @@ class _AllDisciplinesTile extends StatelessWidget {
     final t = Theme.of(context).textTheme;
     return FeCard(
       key: const Key('home.allDisciplines'),
-      padding: const EdgeInsets.symmetric(
-        horizontal: FeSpace.md,
-        vertical: FeSpace.sm,
-      ),
+      padding: const EdgeInsets.all(FeSpace.sm),
       onTap: () => context.push(Routes.disciplines),
-      child: Row(
-        children: [
-          Icon(Icons.apps_outlined, color: c.accent),
-          const SizedBox(width: FeSpace.sm),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(minHeight: 84),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
               children: [
-                Text(l.homeAllDisciplines, style: t.titleSmall),
-                Text(
-                  l.homeAllDisciplinesBody(ForensicDiscipline.values.length),
-                  style: t.bodySmall?.copyWith(color: c.textSecondary),
+                DecoratedBox(
+                  decoration: BoxDecoration(
+                    color: c.accentContainer,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: SizedBox.square(
+                    dimension: 38,
+                    child: Icon(Icons.apps_outlined, color: c.accent, size: 21),
+                  ),
                 ),
+                const Spacer(),
+                Icon(Icons.arrow_outward_rounded, size: 16, color: c.accent),
               ],
             ),
-          ),
-          ExcludeSemantics(
-            child: Icon(Icons.chevron_right, color: c.textSecondary),
-          ),
-        ],
+            const SizedBox(height: FeSpace.sm),
+            Text(
+              l.homeAllDisciplines,
+              style: t.titleSmall?.copyWith(
+                fontWeight: FontWeight.w600,
+                height: 1.25,
+              ),
+            ),
+            Text(
+              l.homeAllDisciplinesCount(ForensicDiscipline.values.length),
+              style: t.bodySmall?.copyWith(color: c.textSecondary),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -607,13 +772,18 @@ class _ModuleGrid extends StatelessWidget {
         // Katta matnda ustunlar kamayadi — overflow o‘rniga qayta joylashuv.
         final columns = w >= 560 ? 3 : (w >= 300 && textScale < 1.6 ? 2 : 1);
         const gap = FeSpace.sm;
+        // Oxirgi karta — «Barcha fanlar» (to‘r yarim bo‘sh qolmaydi).
+        final cards = <Widget>[
+          for (final m in modules) _ModuleCard(module: m),
+          const _AllDisciplinesCard(),
+        ];
         // Har qatordagi kartalar bir xil balandlikda (tartibli to‘r).
         return Column(
           children: [
-            for (var i = 0; i < modules.length; i += columns)
+            for (var i = 0; i < cards.length; i += columns)
               Padding(
                 padding: EdgeInsets.only(
-                  bottom: i + columns < modules.length ? gap : 0,
+                  bottom: i + columns < cards.length ? gap : 0,
                 ),
                 child: IntrinsicHeight(
                   child: Row(
@@ -622,8 +792,8 @@ class _ModuleGrid extends StatelessWidget {
                       for (var j = 0; j < columns; j++) ...[
                         if (j > 0) const SizedBox(width: gap),
                         Expanded(
-                          child: i + j < modules.length
-                              ? _ModuleCard(module: modules[i + j])
+                          child: i + j < cards.length
+                              ? cards[i + j]
                               : const SizedBox.shrink(),
                         ),
                       ],
@@ -816,7 +986,9 @@ class _HomeHero extends ConsumerWidget {
                       Semantics(
                         header: true,
                         child: Text(
-                          l.homeGreeting,
+                          student
+                              ? l.homeGreetingStudent
+                              : l.homeGreetingExpert,
                           textScaler: MediaQuery.textScalerOf(context)
                               .clamp(maxScaleFactor: 1.4),
                           key: const Key('home.greeting'),

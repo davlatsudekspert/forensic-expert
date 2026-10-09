@@ -202,10 +202,10 @@ abstract class AppLocalizations {
   /// **'Professional'**
   String get modeProfessional;
 
-  /// Mode description.
+  /// Mode card description (short).
   ///
   /// In en, this message translates to:
-  /// **'Forensic experts, physicians, toxicologists, chemists, laboratory and other forensic specialists'**
+  /// **'Forensic experts, physicians, toxicologists, chemists and lab specialists'**
   String get modeProfessionalDescription;
 
   /// Mode.
@@ -11858,6 +11858,162 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'record in the content pack'**
   String get supRelatedUnknown;
+
+  /// Onboarding progress label.
+  ///
+  /// In en, this message translates to:
+  /// **'Step {current} of {total}'**
+  String onbStep(int current, int total);
+
+  /// Onboarding disclaimer headline.
+  ///
+  /// In en, this message translates to:
+  /// **'Before you start'**
+  String get disclaimerIntroTitle;
+
+  /// Disclaimer summary point.
+  ///
+  /// In en, this message translates to:
+  /// **'A scientific reference and learning tool — it never issues expert conclusions.'**
+  String get disclaimerPointReference;
+
+  /// Disclaimer summary point.
+  ///
+  /// In en, this message translates to:
+  /// **'It does not replace validated lab methods, protocols, the law or a specialist’s judgement.'**
+  String get disclaimerPointLab;
+
+  /// Disclaimer summary point.
+  ///
+  /// In en, this message translates to:
+  /// **'For medical questions, consult a qualified doctor.'**
+  String get disclaimerPointMedical;
+
+  /// Expandable full disclaimer.
+  ///
+  /// In en, this message translates to:
+  /// **'Full text'**
+  String get disclaimerFullText;
+
+  /// Last onboarding step title.
+  ///
+  /// In en, this message translates to:
+  /// **'You’re all set'**
+  String get accountReadyTitle;
+
+  /// Last onboarding step body.
+  ///
+  /// In en, this message translates to:
+  /// **'The scientific database, search and calculators work offline — no account needed.'**
+  String get accountReadyBody;
+
+  /// Primary button: open the app without an account.
+  ///
+  /// In en, this message translates to:
+  /// **'Start'**
+  String get accountStartNow;
+
+  /// What an account adds (one line).
+  ///
+  /// In en, this message translates to:
+  /// **'An account adds professional verification, sync and cloud AI. You can sign in any time in Profile.'**
+  String get accountBenefitsNote;
+
+  /// Home headline, student mode.
+  ///
+  /// In en, this message translates to:
+  /// **'What shall we study today?'**
+  String get homeGreetingStudent;
+
+  /// Home headline, professional mode.
+  ///
+  /// In en, this message translates to:
+  /// **'What are you working on today?'**
+  String get homeGreetingExpert;
+
+  /// Home section: subject areas.
+  ///
+  /// In en, this message translates to:
+  /// **'Areas'**
+  String get homeAreasTitle;
+
+  /// Quick action.
+  ///
+  /// In en, this message translates to:
+  /// **'Study & quizzes'**
+  String get homeActLearnTitle;
+
+  /// Quick action hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Flashcards, quizzes, exam practice'**
+  String get homeActLearnBody;
+
+  /// Quick action hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Practical guidance by discipline'**
+  String get homeActGuidelinesBody;
+
+  /// Quick action hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Properties, analysis, sources'**
+  String get homeActSubstancesBody;
+
+  /// Quick action hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Analytical methods, sample prep'**
+  String get homeActMethodsBody;
+
+  /// Quick action.
+  ///
+  /// In en, this message translates to:
+  /// **'Calculators'**
+  String get homeActToolsTitle;
+
+  /// Quick action hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Lab and forensic calculations'**
+  String get homeActToolsBody;
+
+  /// Quick action hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask a question — answers cite sources'**
+  String get homeActAiBody;
+
+  /// Calm one-line honesty note at the bottom of Home.
+  ///
+  /// In en, this message translates to:
+  /// **'Database under expert review · every entry shows its source and status'**
+  String get homeTrustNote;
+
+  /// Signed-out account card hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Sync, verification and cloud AI. No password needed.'**
+  String get profileSignInBody;
+
+  /// Profile section.
+  ///
+  /// In en, this message translates to:
+  /// **'Help and community'**
+  String get profileSectionHelp;
+
+  /// Profile section.
+  ///
+  /// In en, this message translates to:
+  /// **'Appearance'**
+  String get profileSectionAppearance;
+
+  /// Card hint: number of disciplines.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, one{{count} discipline} other{{count} disciplines}}'**
+  String homeAllDisciplinesCount(int count);
 }
 
 class _AppLocalizationsDelegate

@@ -81,8 +81,9 @@ void main() {
       // Gistologiya va yangi muammolar — «Barcha fanlar» ichida.
       expect(find.byKey(const Key('home.module.histology')), findsNothing);
       await see(tester, find.byKey(const Key('home.allDisciplines')));
-      // Yangi foydalanuvchi: bo‘sh bloklar o‘rniga bitta qator.
-      await see(tester, find.byKey(const Key('home.quickEmpty')));
+      // Yangi foydalanuvchi: bo‘sh «Davom ettirish» bo‘limi ko‘rsatilmaydi.
+      expect(find.byKey(const Key('home.quickEmpty')), findsNothing);
+      expect(find.text('Continue & saved'), findsNothing);
     });
 
     testWidgets('yaqinda ko‘rilgan yozuv Home’da (faqat lokal)', (

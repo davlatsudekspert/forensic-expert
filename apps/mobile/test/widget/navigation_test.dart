@@ -143,13 +143,30 @@ void main() {
     expect(find.text('AI is temporarily unavailable'), findsOneWidget);
   });
 
-  testWidgets('rejimga qarab Home modullari tartibi', (tester) async {
+  testWidgets('rejimga qarab Home tezkor amallari va bo‘limlar tartibi', (
+    tester,
+  ) async {
+    Offset at(String key) => tester.getTopLeft(find.byKey(Key(key)));
+    // Talaba: o‘qish, yo‘riqnomalar, moddalar, AI — bo‘limlardan oldin.
     await pumpApp(tester, settings: completedSettings(mode: UserMode.student));
-    final learn = tester.getTopLeft(find.text('Learn'));
-    final tox = tester.getTopLeft(find.text('Forensic Toxicology'));
+    expect(find.text('Study & quizzes'), findsOneWidget);
     expect(
-      learn.dy < tox.dy || (learn.dy == tox.dy && learn.dx < tox.dx),
-      isTrue,
+      at('home.module.learn').dy,
+      lessThan(at('home.module.toxicology').dy),
     );
+    expect(at('home.guidelines').dy, lessThan(at('home.module.toxicology').dy));
+    expect(find.byKey(const Key('home.tools')), findsNothing);
+    // Mutaxassis: moddalar, usullar, kalkulyatorlar, AI.
+    await pumpApp(tester, settings: completedSettings());
+    expect(find.byKey(const Key('home.tools')), findsOneWidget);
+    expect(
+      at('home.module.substances').dy,
+      lessThan(at('home.module.toxicology').dy),
+    );
+    expect(
+      at('home.module.methods').dy,
+      lessThan(at('home.module.toxicology').dy),
+    );
+    expect(at('home.module.ai').dy, lessThan(at('home.module.toxicology').dy));
   });
 }

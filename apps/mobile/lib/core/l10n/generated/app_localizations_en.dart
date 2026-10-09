@@ -68,7 +68,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get modeProfessionalDescription =>
-      'Forensic experts, physicians, toxicologists, chemists, laboratory and other forensic specialists';
+      'Forensic experts, physicians, toxicologists, chemists and lab specialists';
 
   @override
   String get modeStudent => 'Student';
@@ -6647,4 +6647,99 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get supRelatedUnknown => 'record in the content pack';
+
+  @override
+  String onbStep(int current, int total) {
+    return 'Step $current of $total';
+  }
+
+  @override
+  String get disclaimerIntroTitle => 'Before you start';
+
+  @override
+  String get disclaimerPointReference =>
+      'A scientific reference and learning tool — it never issues expert conclusions.';
+
+  @override
+  String get disclaimerPointLab =>
+      'It does not replace validated lab methods, protocols, the law or a specialist’s judgement.';
+
+  @override
+  String get disclaimerPointMedical =>
+      'For medical questions, consult a qualified doctor.';
+
+  @override
+  String get disclaimerFullText => 'Full text';
+
+  @override
+  String get accountReadyTitle => 'You’re all set';
+
+  @override
+  String get accountReadyBody =>
+      'The scientific database, search and calculators work offline — no account needed.';
+
+  @override
+  String get accountStartNow => 'Start';
+
+  @override
+  String get accountBenefitsNote =>
+      'An account adds professional verification, sync and cloud AI. You can sign in any time in Profile.';
+
+  @override
+  String get homeGreetingStudent => 'What shall we study today?';
+
+  @override
+  String get homeGreetingExpert => 'What are you working on today?';
+
+  @override
+  String get homeAreasTitle => 'Areas';
+
+  @override
+  String get homeActLearnTitle => 'Study & quizzes';
+
+  @override
+  String get homeActLearnBody => 'Flashcards, quizzes, exam practice';
+
+  @override
+  String get homeActGuidelinesBody => 'Practical guidance by discipline';
+
+  @override
+  String get homeActSubstancesBody => 'Properties, analysis, sources';
+
+  @override
+  String get homeActMethodsBody => 'Analytical methods, sample prep';
+
+  @override
+  String get homeActToolsTitle => 'Calculators';
+
+  @override
+  String get homeActToolsBody => 'Lab and forensic calculations';
+
+  @override
+  String get homeActAiBody => 'Ask a question — answers cite sources';
+
+  @override
+  String get homeTrustNote =>
+      'Database under expert review · every entry shows its source and status';
+
+  @override
+  String get profileSignInBody =>
+      'Sync, verification and cloud AI. No password needed.';
+
+  @override
+  String get profileSectionHelp => 'Help and community';
+
+  @override
+  String get profileSectionAppearance => 'Appearance';
+
+  @override
+  String homeAllDisciplinesCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count disciplines',
+      one: '$count discipline',
+    );
+    return '$_temp0';
+  }
 }

@@ -68,7 +68,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get modeProfessionalDescription =>
-      'Sud ekspertlari, shifokorlar, toksikologlar, kimyogarlar, laboratoriya va boshqa sud-ekspert mutaxassislari';
+      'Sud ekspertlari, shifokorlar, toksikologlar, kimyogarlar va laboratoriya mutaxassislari';
 
   @override
   String get modeStudent => 'Talaba';
@@ -6637,4 +6637,93 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get supRelatedUnknown => 'kontent paketidagi yozuv';
+
+  @override
+  String onbStep(int current, int total) {
+    return 'Qadam $current / $total';
+  }
+
+  @override
+  String get disclaimerIntroTitle => 'Boshlashdan oldin';
+
+  @override
+  String get disclaimerPointReference =>
+      'Ilmiy ma’lumotnoma va o‘quv vositasi — ekspert xulosasini bermaydi.';
+
+  @override
+  String get disclaimerPointLab =>
+      'Validatsiyadan o‘tgan usullar, protokollar, qonun va mutaxassis fikrining o‘rnini bosmaydi.';
+
+  @override
+  String get disclaimerPointMedical =>
+      'Tibbiy savollar bo‘yicha malakali shifokorga murojaat qiling.';
+
+  @override
+  String get disclaimerFullText => 'To‘liq matn';
+
+  @override
+  String get accountReadyTitle => 'Hammasi tayyor';
+
+  @override
+  String get accountReadyBody =>
+      'Ilmiy baza, qidiruv va kalkulyatorlar oflayn ishlaydi — hisob shart emas.';
+
+  @override
+  String get accountStartNow => 'Boshlash';
+
+  @override
+  String get accountBenefitsNote =>
+      'Hisob professional tasdiq, sinxronlash va bulutli AI imkonini beradi. Istalgan vaqtda Profil bo‘limida kirish mumkin.';
+
+  @override
+  String get homeGreetingStudent => 'Bugun nimani o‘rganamiz?';
+
+  @override
+  String get homeGreetingExpert => 'Bugun nima ustida ishlaysiz?';
+
+  @override
+  String get homeAreasTitle => 'Bo‘limlar';
+
+  @override
+  String get homeActLearnTitle => 'O‘qish va testlar';
+
+  @override
+  String get homeActLearnBody => 'Kartochkalar, testlar, imtihon';
+
+  @override
+  String get homeActGuidelinesBody => 'Fanlar bo‘yicha amaliy yo‘riqlar';
+
+  @override
+  String get homeActSubstancesBody => 'Xossalar, tahlil, manbalar';
+
+  @override
+  String get homeActMethodsBody => 'Tahlil usullari, namuna tayyorlash';
+
+  @override
+  String get homeActToolsTitle => 'Kalkulyatorlar';
+
+  @override
+  String get homeActToolsBody => 'Laboratoriya va ekspertiza hisoblari';
+
+  @override
+  String get homeActAiBody => 'Savol bering — javob manbalar bilan';
+
+  @override
+  String get homeTrustNote =>
+      'Baza ekspert tekshiruvida · har bir yozuvda manba va holat ko‘rsatiladi';
+
+  @override
+  String get profileSignInBody =>
+      'Sinxronlash, tasdiq va bulutli AI. Parol shart emas.';
+
+  @override
+  String get profileSectionHelp => 'Yordam va hamjamiyat';
+
+  @override
+  String get profileSectionAppearance => 'Ko‘rinish';
+
+  @override
+  String homeAllDisciplinesCount(int count) {
+    return '$count ta fan';
+  }
 }
