@@ -70,7 +70,7 @@ def _clean(text: str) -> str:
 
 # English number words (original side) — «Twenty-One Cases» ≡ «21 ta holat».
 _NUM_WORDS = {
-    "one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7,
+    "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7,
     "eight": 8, "nine": 9, "ten": 10, "eleven": 11, "twelve": 12,
     "thirteen": 13, "fourteen": 14, "fifteen": 15, "sixteen": 16,
     "seventeen": 17, "eighteen": 18, "nineteen": 19, "twenty": 20,
@@ -95,7 +95,7 @@ _TARGET_NUM_WORDS = {
     9: ("to‘qqiz", "девят", "nine"),
     10: ("o‘n", "десят", "ten"),
     12: ("o‘n ikki", "двенадцат", "twelve"),
-    24: ("sutka", "сутк", "кругл", "day"),
+    24: ("sutka", "сутк", "суток", "кругл", "day"),
     100: ("yuz", "сто", "hundred"),
 }
 
@@ -106,7 +106,10 @@ _MONTHS = [
     ("iyul", "июл", "july"), ("avgust", "август", "august"), ("sentabr", "сентябр", "september"),
     ("oktabr", "октябр", "october"), ("noyabr", "ноябр", "november"), ("dekabr", "декабр", "december"),
 ]
-_MONTH_RE = [(i + 1, re.compile(r"(?<=\d )(?:%s)" % "|".join(m), re.I)) for i, m in enumerate(_MONTHS)]
+# uz/ru month names (lower case, case suffixes allowed; «marta» = «times» is
+# not March); English month names must be capitalised («5 may be» is not May).
+_MONTH_RE = [(i + 1, re.compile(r"(?<=\d )(?:(?:%s)(?!a\b|aba)|%s\b)" % (
+    "|".join(m[:2]), m[2].capitalize()))) for i, m in enumerate(_MONTHS)]
 
 
 def numbers(text: str, lang: str, words: bool = True) -> set[str]:
@@ -131,7 +134,7 @@ def numbers(text: str, lang: str, words: bool = True) -> set[str]:
     if lang == "en" and words:
         for m in _NUM_WORD_RE.finditer(text):
             if m.group(1):
-                out.add(str(_NUM_WORDS[m.group(1).lower()] + _NUM_WORDS[m.group(2).lower()]))
+                out.add(str(_NUM_WORDS[m.group(1).lower()] + {"one": 1, **_NUM_WORDS}[m.group(2).lower()]))
             else:
                 out.add(str(_NUM_WORDS[m.group(3).lower()]))
     return out
@@ -226,7 +229,7 @@ def abbreviations(text: str) -> set[str]:
             continue
         if not re.search(r"[A-Z].*[A-Z0-9]|[A-Z]{2}", tok):
             continue
-        if re.fullmatch(r"[A-Z][a-z]+", tok):  # ordinary capitalised word
+        if re.fullmatch(r"(?:[A-Z][a-z]+)+|[A-Z]{7,}", tok):  # word, CamelCase or SHOUTED word
             continue
         if tok in TRANSLATABLE_ABBR:
             continue
@@ -432,7 +435,7 @@ def check_localized(path: pathlib.Path, rep: Report):
             rep._add(rid, "stale (source_sha256 mismatch)")
         for lang in ("uz", "ru", "en"):
             txt = r.get("text", {}).get(lang)
-            if txt is None or lang == r.get("source_lang"):
+            if txt is None or (lang == r.get("source_lang") and not r.get("derived")):
                 continue
             if r.get("derived"):
                 # explanatory text written from several claims: every number

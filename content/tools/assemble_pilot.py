@@ -31,6 +31,7 @@ import assemble_p8  # noqa: E402
 import apply_text_translations  # noqa: E402
 _sys.path.insert(0, "tools/reagents")
 import assemble_reagents  # noqa: E402
+import apply_l10n_d  # noqa: E402
 
 FREE_DEMO = ["ethanol", "methanol", "carbon-monoxide"]  # 3 ta yozuv
 PACK_VERSION = "2026.10.9"
@@ -241,6 +242,7 @@ def main():
     p7 = assemble_p7.apply(bundle)
     tt = apply_text_translations.apply(bundle)  # machine_draft iqtibos tarjimalari
     rg = assemble_reagents.apply(bundle)  # egasi to‘plami: reaktiv retseptlari (2026-10-09)
+    l10n = apply_l10n_d.apply(bundle)  # Phase D: idora/hujjat nomlari, terminologiya (2026-10-09)
     json.dump(bundle, open("pilot/bundle.json", "w"), ensure_ascii=False,
               indent=2)
     print(f"substances={len(substances)} claims={len(claims)} "
@@ -252,6 +254,7 @@ def main():
     print("p8:", json.dumps(p8, ensure_ascii=False))
     print("text_translations:", tt["rows"], "stale:", tt["stale"])
     print("reagents:", json.dumps(rg, ensure_ascii=False))
+    print("l10n_d:", json.dumps(l10n, ensure_ascii=False))
 
 
 if __name__ == "__main__":

@@ -10,6 +10,15 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
+# Tarjima sifati darvozasi (Phase D): asl matndagi raqam/birlik/formula/
+# qisqartmalar tarjimada o‘zgarmagan va kanonik terminologiya
+# (content/terminology/canonical_terms.json) — buzilish bo‘lsa yig‘ish to‘xtaydi.
+QA_ARGS=(--bundle content/pilot/bundle.json)
+if [ -f content/pilot/translations/localized_texts_d.json ]; then
+  QA_ARGS+=(--localized content/pilot/translations/localized_texts_d.json)
+fi
+python3 content/tools/translation_qa.py "${QA_ARGS[@]}"
+
 OUT=build/content_pack
 DEST=apps/mobile/assets/content/pilot
 # FE027: oxirgi commit qilingan bundle bilan solishtirish — ko‘rib chiqilgan

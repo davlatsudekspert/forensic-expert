@@ -1,0 +1,18 @@
+{
+  "schema": "fe-translation-qa-exceptions/1",
+  "note": "Documented, reviewed-by-reason exceptions for content/tools/translation_qa.py. `match` is a prefix of '<record id> :: <problem>'. Keep this list short; an exception that no longer matches is reported as unused.",
+  "exceptions": [
+    {
+      "match": "bundle:text_translations:claim_excerpt:C-OXAZEPAM-ANALYTICAL_METHOD-P5:ru :: abbreviations/formulas missing: ['MA']",
+      "reason": "«MA» is the postal code of Massachusetts in the manufacturer's address (Milford, MA, USA); the Russian translation writes the state name. Not a scientific claim token."
+    },
+    {
+      "match": "bundle:text_translations:claim_excerpt:C-OXYCODONE-REPORTED_CONCENTRATION-P5:uz :: abbreviations/formulas missing: ['PM']",
+      "reason": "«PM» (post-mortem) is spelled out as «o‘limdan keyingi» in Uzbek; meaning preserved, all numbers/units unchanged."
+    },
+    {
+      "match": "bundle:text_translations:claim_excerpt:C-OXYCODONE-REPORTED_CONCENTRATION-P5:ru :: abbreviations/formulas missing: ['PM']",
+      "reason": "«PM» (post-mortem) is spelled out as «посмертный» in Russian; meaning preserved, all numbers/units unchanged."
+    }
+  ]
+}
