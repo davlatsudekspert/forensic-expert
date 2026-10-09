@@ -151,7 +151,7 @@ void main() {
             InstrumentTitle(instrument: law),
             const SizedBox(height: FeSpace.sm),
             const LocalizedContentText(
-              kind: ContentTextKind.conflictNote,
+              kind: ContentTextKind.conflictText,
               id: 'CF-1',
               source:
                   'The source reports partial overlap with blood values in '

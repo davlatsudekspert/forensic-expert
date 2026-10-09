@@ -82,22 +82,22 @@ class KnowledgeDetailScreen extends ConsumerWidget {
       for (final x in claims)
         if (!safetyClaimFields.contains(x.field)) x,
     ];
-    // (yorliq, izoh, tarjima ID — `entity_note` `<entity>#<maydon>#<i>`)
+    // (yorliq, izoh, tarjima ID — `entity_note` `<entity>#<maydon>[<i>]`)
     final safetyNotes =
         <(String, SourcedNote, String)>[
           if (e.screening case final s?) ...[
             for (final (i, n) in s.limitations.indexed)
-              (l.screeningLimitations, n, '${e.id}#limitations#$i'),
+              (l.screeningLimitations, n, '${e.id}#limitations[$i]'),
             for (final (i, n) in s.crossReactivity.indexed)
-              (l.screeningCrossReactivity, n, '${e.id}#cross_reactivity#$i'),
+              (l.screeningCrossReactivity, n, '${e.id}#cross_reactivity[$i]'),
             for (final (i, n) in s.falsePositive.indexed)
-              (l.screeningFalsePositive, n, '${e.id}#false_positive#$i'),
+              (l.screeningFalsePositive, n, '${e.id}#false_positive[$i]'),
             for (final (i, n) in s.falseNegative.indexed)
-              (l.screeningFalseNegative, n, '${e.id}#false_negative#$i'),
+              (l.screeningFalseNegative, n, '${e.id}#false_negative[$i]'),
           ],
           if (e.recipe case final r?)
             for (final (i, n) in r.hazards.indexed)
-              (l.reagentHazards, n, '${e.id}#hazards#$i'),
+              (l.reagentHazards, n, '${e.id}#hazards[$i]'),
         ].where((x) {
           final (_, note, _) = x;
           return !claimExcerpts.contains(_norm(note.text));
@@ -163,6 +163,7 @@ class KnowledgeDetailScreen extends ConsumerWidget {
                     const SizedBox(height: FeSpace.sm),
                   ],
                   _Header(entry: e),
+                  TopicBodySection(entry: e),
                   if (safetyClaims.isNotEmpty || safetyNotes.isNotEmpty) ...[
                     FeSectionHeader(l.knowledgeSafety),
                     if (e.recipe?.hazards.isNotEmpty ?? false) ...[
@@ -887,7 +888,7 @@ class _ScreeningSection extends ConsumerWidget {
           _Field(
             label: l.screeningInterference,
             note: n,
-            trId: '${entry.id}#interferences#$i',
+            trId: '${entry.id}#interferences[$i]',
             entry: entry,
           ),
         FeSectionHeader(l.screeningConfirmatory),
@@ -1113,5 +1114,60 @@ class TemplateCoverageCard extends ConsumerWidget {
         ),
       ),
     );
+  }
+}
+
+/// Mavzu kartasining qisqa tushuntirishi UI tilida (`topic_body`, kartadagi
+/// manbali da’volardan tuzilgan). Asl matn — da’vo iqtibosi, «Asl matn»
+/// ostida; tarjima yo‘q yoki asl tilda — ko‘rsatilmaydi (iqtibos pastda).
+class TopicBodySection extends ConsumerWidget {
+  const TopicBodySection({super.key, required this.entry});
+
+  final KnowledgeEntry entry;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    for (final claim in entry.claims) {
+      final excerpt = claim.excerpt;
+      if (excerpt == null || excerpt.trim().isEmpty) continue;
+      final r = resolveContent(
+        ref,
+        context,
+        ContentTextKind.topicBody,
+        entry.id,
+        source: excerpt,
+      );
+      if (!r.isTranslation) continue;
+      return Padding(
+        padding: const EdgeInsets.only(top: FeSpace.sm),
+        child: FeCard(
+          key: Key('topic.body.${entry.id}'),
+          padding: const EdgeInsets.all(FeSpace.md),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Text(l.trTopicSummaryLabel, style: t.titleMedium),
+              const SizedBox(height: FeSpace.xxs),
+              Text(
+                l.trTopicSummaryNote,
+                style: t.labelSmall?.copyWith(color: c.textSecondary),
+              ),
+              const SizedBox(height: FeSpace.xs),
+              LocalizedContentView(
+                content: r,
+                kind: ContentTextKind.topicBody,
+                id: entry.id,
+                style: t.bodyLarge,
+                originalShowLabel: l.trOriginalQuoteShow,
+              ),
+            ],
+          ),
+        ),
+      );
+    }
+    return const SizedBox.shrink();
   }
 }

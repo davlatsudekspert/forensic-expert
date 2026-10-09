@@ -7620,4 +7620,11 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get imageCaptionSection => 'Подпись в источнике';
+
+  @override
+  String get trTopicSummaryLabel => 'Краткое объяснение';
+
+  @override
+  String get trTopicSummaryNote =>
+      'Составлено по утверждениям карточки с источниками; оригинальная цитата — ниже.';
 }

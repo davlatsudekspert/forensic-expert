@@ -72,6 +72,12 @@ k("trTranslationSemantics", "Screen-reader label for a translated block.",
   "Asl matnning tarjimasi. {status}. Asl matn «Asl matn» tugmasi orqali ochiladi.", {"status": S})
 k("imageCaptionSection", "Image viewer: section header for the caption from the source (translation shown first).",
   "Caption in the source", "Подпись в источнике", "Manbadagi izoh")
+k("trTopicSummaryLabel", "Topic card: short explanation in the UI language (from the card's sourced statements).",
+  "Brief explanation", "Краткое объяснение", "Qisqacha tushuntirish")
+k("trTopicSummaryNote", "Note under the topic card explanation header.",
+  "Compiled from the sourced statements on this card; the original quote is below.",
+  "Составлено по утверждениям карточки с источниками; оригинальная цитата — ниже.",
+  "Kartadagi manbali da’volar asosida tuzilgan; asl iqtibos quyida.")
 k("legalTitleUnofficial", "Status line under a legal document title shown as a translation.",
   "Unofficial translation of the title — not reviewed", "Неофициальный перевод названия — не проверен",
   "Nomning norasmiy tarjimasi — tekshirilmagan")

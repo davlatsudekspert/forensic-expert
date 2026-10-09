@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:drift/native.dart';
@@ -96,7 +97,17 @@ Future<PilotContent> loadPilotContent() async {
         r.read<String>('image_id'): r.read<Uint8List>('bytes'),
     }),
     prov.index,
-    prov.translations,
+    // Imzolangan paket + ilova asset’idagi yon fayl (localized_texts).
+    prov.translations.merge(
+      ContentTranslations.of(
+        ContentTranslations.rowsFromLocalizedTextsJson(
+          jsonDecode(
+            File('assets/content/translations/localized_texts.json')
+                .readAsStringSync(),
+          ),
+        ),
+      ),
+    ),
   );
   await db.close();
   return content;

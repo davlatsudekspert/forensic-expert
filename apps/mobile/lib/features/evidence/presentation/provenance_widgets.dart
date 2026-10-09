@@ -435,8 +435,8 @@ class _ConflictSummary extends StatelessWidget {
         children: [
           Text(l.conflictKindLabel(conflict.kind), style: t.labelLarge),
           LocalizedInlineText(
-            kind: ContentTextKind.conflictQuestion,
-            id: conflict.id,
+            kind: ContentTextKind.conflictText,
+            id: '${conflict.id}#question',
             source: conflict.question,
             style: t.bodySmall,
           ),
@@ -568,6 +568,21 @@ class StrictContextTable extends ConsumerWidget {
       (l.concSource, source, sourceContent),
     ];
     bool missing(String v) => v == na || v == l.ctxNotStated;
+    final ctxStatuses = [
+      for (final r in rows)
+        if (r.$3?.needsReviewLabel ?? false) r.$3!.status!,
+      for (final (i, x) in limitations.indexed)
+        if (translations
+                .resolve(
+                  ContentTextKind.contextText,
+                  '${claim.claimId}#limitations[$i]',
+                  source: x,
+                  lang: lang,
+                )
+                .status
+            case final st? when !st.isHumanVerified)
+          st,
+    ]..sort((a, b) => a.index.compareTo(b.index));
 
     return FeCard(
       key: Key('claim.context.${claim.claimId}'),
@@ -641,11 +656,21 @@ class StrictContextTable extends ConsumerWidget {
             for (final (i, x) in limitations.indexed)
               LocalizedInlineText(
                 kind: ContentTextKind.contextText,
-                id: '${claim.claimId}#limitations#$i',
+                id: '${claim.claimId}#limitations[$i]',
                 source: x,
                 prefix: FeGlyphs.bullet,
                 style: t.bodySmall,
               ),
+          // Tarjima belgisi (ikonka) izohi — kartaning oxirida bir marta,
+          // eng past (eng kam tekshirilgan) holat bilan.
+          if (ctxStatuses.isNotEmpty)
+            Padding(
+              padding: const EdgeInsets.only(top: FeSpace.xxs),
+              child: TranslationStatusBadge(
+                key: Key('claim.context.trStatus.${claim.claimId}'),
+                status: ctxStatuses.first,
+              ),
+            ),
         ],
       ),
     );
@@ -701,6 +726,7 @@ class SubstanceProvenanceSections extends ConsumerWidget {
                 kind: ContentTextKind.metaboliteName,
                 id: m.id,
                 source: name,
+                sameTextKinds: const {ContentTextKind.listItem},
               ),
         subtitle: Text(
           '${l.metaboliteKindLabel(m.kind)}'

@@ -501,12 +501,12 @@ class ClaimCard extends StatelessWidget {
               runSpacing: FeSpace.xxs,
               children: [
                 // Metabolit/marker nomlari manbadan (inglizcha) — tarjima
-                // `list_item` `<claimId>#<indeks>` bo‘yicha.
+                // `list_item` `<claimId>#items[<i>]` bo‘yicha.
                 for (final (idx, i) in claim.items.indexed)
                   Chip(
                     label: LocalizedInlineText(
                       kind: ContentTextKind.listItem,
-                      id: '${claim.claimId}#$idx',
+                      id: '${claim.claimId}#items[$idx]',
                       source: i,
                     ),
                     visualDensity: VisualDensity.compact,

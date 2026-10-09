@@ -32,6 +32,13 @@ fi
 dart run fe_content_pipeline:build_pack --input content/pilot/bundle.json --out "$OUT" "${PREV_ARGS[@]}"
 mkdir -p "$DEST"
 cp "$OUT/content.db" "$OUT/manifest.json" "$OUT/manifest.sig" "$DEST/"
+# Sxemada maydoni yo‘q matnlar tarjimasi (Phase D yon fayli) — ilova
+# `ContentTranslations` qatlami o‘qiydi (docs/L10N_DATA_CONTRACT.md).
+if [ -f content/pilot/translations/localized_texts_d.json ]; then
+  mkdir -p apps/mobile/assets/content/translations
+  cp content/pilot/translations/localized_texts_d.json \
+    apps/mobile/assets/content/translations/localized_texts.json
+fi
 
 python3 - "$OUT/signing_public_key.json" > apps/mobile/lib/data/content/trusted_keys.g.dart <<'PY'
 import json, sys

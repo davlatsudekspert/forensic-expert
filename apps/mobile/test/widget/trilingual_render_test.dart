@@ -109,7 +109,7 @@ void main() {
 
   group('LocalizedContentText', () {
     const src = 'Vitreous potassium rises after death.';
-    const kind = ContentTextKind.conflictNote;
+    const kind = ContentTextKind.conflictText;
     final tr = ContentTranslations.of([
       row(
         kind,

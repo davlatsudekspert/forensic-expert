@@ -76,6 +76,7 @@ class SubstanceGlanceCard extends ConsumerWidget {
                 ContentTextKind.metaboliteName,
                 m.relation.id,
                 source: m.relation.metaboliteName,
+                sameTextKinds: const {ContentTextKind.listItem},
                 lang: lang,
               );
               if (r.missingTranslation) {

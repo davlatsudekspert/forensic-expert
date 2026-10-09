@@ -79,8 +79,8 @@ class ConflictsScreen extends ConsumerWidget {
                 children: [
                   Text(l.conflictKindLabel(k.kind), style: t.labelLarge),
                   LocalizedInlineText(
-                    kind: ContentTextKind.conflictQuestion,
-                    id: k.id,
+                    kind: ContentTextKind.conflictText,
+                    id: '${k.id}#question',
                     source: k.question,
                     style: t.bodyMedium,
                   ),
@@ -135,15 +135,15 @@ class ConflictDetailScreen extends ConsumerWidget {
         ),
         FeSectionHeader(l.conflictQuestion),
         LocalizedContentText(
-          kind: ContentTextKind.conflictQuestion,
-          id: k.id,
+          kind: ContentTextKind.conflictText,
+          id: '${k.id}#question',
           source: k.question,
           style: t.bodyMedium,
         ),
         FeSectionHeader(l.conflictNoteLabel),
         LocalizedContentText(
-          kind: ContentTextKind.conflictNote,
-          id: k.id,
+          kind: ContentTextKind.conflictText,
+          id: '${k.id}#note',
           source: k.note,
           style: t.bodySmall,
         ),
@@ -458,6 +458,7 @@ class KnowledgeChainScreen extends ConsumerWidget {
               kind: ContentTextKind.metaboliteName,
               id: m.id,
               source: m.metaboliteName,
+              sameTextKinds: const {ContentTextKind.listItem},
             ),
             subtitle: Text(
               '${l.metaboliteKindLabel(m.kind)}${FeGlyphs.middleDot}'

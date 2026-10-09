@@ -1,6 +1,8 @@
+import 'dart:convert';
 import 'dart:typed_data';
 
 import 'package:fe_content_schema/fe_content_schema.dart';
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../core/flags.dart';
@@ -216,9 +218,39 @@ final provenanceIndexProvider = Provider<ProvenanceIndex>(
 /// Paket yuklanmaguncha — bo‘sh (asl matn + «tarjima hali yo‘q» belgisi).
 final contentTranslationsProvider = Provider<ContentTranslations>(
   (ref) =>
-      ref.watch(contentProvenanceProvider).value?.translations ??
-      ContentTranslations.empty,
+      (ref.watch(contentProvenanceProvider).value?.translations ??
+              ContentTranslations.empty)
+          .merge(
+            ref.watch(localizedTextsAssetProvider).value ??
+                ContentTranslations.empty,
+          ),
 );
+
+/// Sxemada maydoni yo‘q matnlar tarjimasi (skrining maydonlari, ziddiyatlar,
+/// kontekst, ro‘yxat elementlari …) — `content/pilot/translations/
+/// localized_texts_d.json` nusxasi (`tool/update_bundled_pack.sh`).
+/// Imzolanmagan: faqat avtomatik statuslar; har yozuv asl matn xeshi
+/// (content.db dagi imzolangan matn) mos bo‘lsagina ko‘rsatiladi.
+const localizedTextsAsset = 'assets/content/translations/localized_texts.json';
+
+final localizedTextsLoaderProvider = Provider<Future<String> Function()>(
+  (ref) =>
+      () => rootBundle.loadString(localizedTextsAsset),
+);
+
+final localizedTextsAssetProvider = FutureProvider<ContentTranslations>((
+  ref,
+) async {
+  try {
+    final text = await ref.watch(localizedTextsLoaderProvider)();
+    return ContentTranslations.of(
+      ContentTranslations.rowsFromLocalizedTextsJson(jsonDecode(text)),
+    );
+  } on Object {
+    // Fayl yo‘q yoki buzilgan — faqat paketdagi tarjimalar.
+    return ContentTranslations.empty;
+  }
+});
 
 /// Bilim sohalari (mavzular, reagentlar, skrining, metodlar, yangi
 /// muammolar) — imzolangan paketdan.

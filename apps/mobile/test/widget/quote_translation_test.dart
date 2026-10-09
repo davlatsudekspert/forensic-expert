@@ -83,10 +83,7 @@ void main() {
       findsOneWidget,
     );
     // Asl matn tarjima OSTIDA.
-    expect(
-      tester.getTopLeft(orig).dy,
-      greaterThan(tester.getTopLeft(tr).dy),
-    );
+    expect(tester.getTopLeft(orig).dy, greaterThan(tester.getTopLeft(tr).dy));
     expect(
       find.descendant(of: toggle, matching: find.text('Asl matnni yashirish')),
       findsOneWidget,
@@ -127,9 +124,7 @@ void main() {
     expect(find.textContaining('§ Abstract'), findsWidgets);
   });
 
-  testWidgets('uz: eskirgan tarjima — halol xabar + asl matn', (
-    tester,
-  ) async {
+  testWidgets('uz: eskirgan tarjima — halol xabar + asl matn', (tester) async {
     await open(
       tester,
       'uz',

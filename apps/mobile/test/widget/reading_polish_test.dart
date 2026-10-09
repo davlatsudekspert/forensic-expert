@@ -64,7 +64,12 @@ void main() {
       ),
       findsOne,
     );
-    expect(inGlance('ethanol', find.textContaining('acetaldehyde')), findsOne);
+    // Metabolit nomi UI tilida (Phase D tarjimasi, Phase C qatlami).
+    expect(inGlance('ethanol', find.textContaining('atsetaldegid')), findsOne);
+    expect(
+      inGlance('ethanol', find.textContaining('acetaldehyde')),
+      findsNothing,
+    );
     // Manbasiz namuna yo‘q — soxta qator ham yo‘q.
     expect(find.byKey(const Key('entry.glance.row.specimens')), findsNothing);
     expect(find.byKey(const Key('entry.glance.row.sources')), findsOne);

@@ -39,6 +39,7 @@ LocalizedContent resolveContent(
   String id, {
   required String source,
   String? originalLang,
+  Set<String> sameTextKinds = const {},
 }) => ref
     .watch(contentTranslationsProvider)
     .resolve(
@@ -47,6 +48,7 @@ LocalizedContent resolveContent(
       source: source,
       lang: Localizations.localeOf(context).languageCode,
       originalLang: originalLang,
+      sameTextKinds: sameTextKinds,
     );
 
 /// Tarjima holati belgisi: «Avtomatik tarjima — tekshirilmagan».
@@ -443,6 +445,7 @@ class LocalizedInlineText extends ConsumerWidget {
     this.style,
     this.prefix,
     this.maxLines,
+    this.sameTextKinds = const {},
   });
 
   final String kind;
@@ -455,6 +458,10 @@ class LocalizedInlineText extends ConsumerWidget {
   final String? prefix;
   final int? maxLines;
 
+  /// Shu ID’da tarjima bo‘lmasa — aynan shu asl matnning boshqa turdagi
+  /// tarjimasi (masalan metabolit nomi ↔ da’vo ro‘yxati elementi).
+  final Set<String> sameTextKinds;
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final r = resolveContent(
@@ -464,6 +471,7 @@ class LocalizedInlineText extends ConsumerWidget {
       id,
       source: source,
       originalLang: originalLang,
+      sameTextKinds: sameTextKinds,
     );
     return LocalizedInlineView(
       key: Key('l10n.inline.$kind.$id'),

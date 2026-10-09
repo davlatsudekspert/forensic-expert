@@ -9879,5 +9879,13 @@
   "imageCaptionSection": "Caption in the source",
   "@imageCaptionSection": {
     "description": "Image viewer: section header for the caption from the source (translation shown first)."
+  },
+  "trTopicSummaryLabel": "Brief explanation",
+  "@trTopicSummaryLabel": {
+    "description": "Topic card: short explanation in the UI language (from the card's sourced statements)."
+  },
+  "trTopicSummaryNote": "Compiled from the sourced statements on this card; the original quote is below.",
+  "@trTopicSummaryNote": {
+    "description": "Note under the topic card explanation header."
   }
 }

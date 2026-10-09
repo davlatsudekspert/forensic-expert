@@ -38,7 +38,17 @@ Joriy cheklov (baza CHECK, `packages/fe_database/.../content.drift`, validator F
 `target_type ∈ {claim_excerpt, rule_excerpt, research_title}`, `lang ∈ {uz, ru}`,
 `status = machine_draft`. Shu doirada D agenti **sxemani o‘zgartirmasdan** to‘ldira oladi.
 
-### 2.2 `localized_texts` (ixtiyoriy, taklif qilingan v8 — ilova allaqachon o‘qiydi)
+### 2.2 Yon fayl `fe-localized-texts/1` (Phase D — **ilova hozir o‘qiydi**)
+
+`content/pilot/translations/localized_texts_d.json` (shartnoma: `docs/L10N_DATA_CONTRACT_D.md`)
+→ `tool/update_bundled_pack.sh` uni `apps/mobile/assets/content/translations/localized_texts.json`
+ga ko‘chiradi → `localizedTextsAssetProvider` o‘qiydi va paket tarjimalari bilan birlashtiradi
+(`ContentTranslations.merge`). Yozuv: `{target_type, target_id, source_sha256, text: {uz, ru, en},
+status}`. Fayl imzolanmagan, shuning uchun **faqat** `machine_draft` / `terminology_checked` /
+`claim_checked` qabul qilinadi; `reviewed`/`official` faqat imzolangan paketdan. Har yozuv baribir
+imzolangan `content.db` dagi asl matn xeshi mos bo‘lsagina ko‘rsatiladi. Sxema (v7) o‘zgarmadi.
+
+### 2.3 `localized_texts` jadvali (ixtiyoriy, taklif qilingan v8 — ilova allaqachon o‘qiydi)
 
 Agar paketda shu nomli jadval bo‘lsa (ustunlar: `target_type, target_id, lang,
 source_sha256, text` yoki `translated_text`, `status`; qo‘shimcha ustunlar e’tiborsiz), ilova
@@ -47,7 +57,7 @@ Bu yerda CHECK cheklovlari yo‘q: barcha 3-bo‘limdagi turlar, `en` va 5 statu
 uchun pipeline (`db_writer.dart`, `bundle_codec.dart`, validator) kengaytmasi kerak —
 **hali qilinmagan** (ruxsat: sxema o‘zgarishi).
 
-### 2.3 Muallif yozgan tilga bog‘liq xaritalar (mavjud)
+### 2.4 Muallif yozgan tilga bog‘liq xaritalar (mavjud)
 
 | Manba | Maydon | Ilova qoidasi |
 |---|---|---|
@@ -63,18 +73,18 @@ uchun pipeline (`db_writer.dart`, `bundle_codec.dart`, validator) kengaytmasi ke
 | `claim_excerpt` | `claims.claim_id` | `value_json.excerpt` | mavzu/modda kartasi, provenance varag‘i, **o‘quv testi** (`StudyItem.answerQuoteId`), **AI bo‘lagi** (`chunkId` = claim ID) | claims | ✅ (357×2 bor) |
 | `rule_excerpt` | `jurisdictional_rules.rule_id` | `value_json.excerpt` | huquqiy qoida kartasi | rules | ✅ |
 | `research_title` | `research_records.research_id` | `title` | tadqiqotlar ro‘yxati va sahifasi (`TranslatedTitle`) | research_records | ✅ (**0 / 883** — D to‘ldiradi) |
-| `source_title` | `sources.source_id` | `title` | manba kartasi, provenance, o‘quv testi manbalari, konsentratsiya jadvali | sources | ❌ → 2.2 |
-| `standard_title` | `standards.standard_id` | `title` | standartlar katalogi | standards | ❌ → 2.2 |
-| `standard_note` | `standards.standard_id` | `note` | standartlar katalogi | standards | ❌ → 2.2 |
-| `conflict_question` | `evidence_conflicts.conflict_id` | `question` | ziddiyatlar ro‘yxati/sahifasi, provenance | evidence_conflicts | ❌ → 2.2 |
-| `conflict_note` | `evidence_conflicts.conflict_id` | `note` | ziddiyat sahifasi | evidence_conflicts | ❌ → 2.2 |
-| `context_text` | `<claimId>#<maydon>` (`case_type`, `population`, `study_size`, `analytical_method`, `co_intoxicants`, `timing`) yoki `<claimId>#limitations#<i>` | `value_json.context_strict.<maydon>` (satr) / `limitations[i]` | konsentratsiya konteksti jadvali | claims | ❌ → 2.2 |
-| `list_item` | `<claimId>#<i>` | `value_json.items[i]` | da’vo kartasidagi metabolit/marker chiplari | claims | ❌ → 2.2 |
-| `metabolite_name` | `metabolite_relations.relation_id` | `metabolite_name` | modda → metabolitlar, bilim zanjiri, tahlil bo‘limi | metabolite_relations | ❌ → 2.2 |
-| `screening_field` | `<entityId>#analyte` \| `#specimen` \| `#principle` | `payload.analyte/specimen/principle` | skrining kartasi | knowledge_entities | ❌ → 2.2 |
-| `entity_note` | `<entityId>#<maydon>[#<i>]` (`limitations`, `cross_reactivity`, `false_positive`, `false_negative`, `hazards`, `result_type`, `detection_window`, `interferences`) | izoh `text` (tilga moslanmagan) | skrining/reaktiv xavfsizlik izohlari | knowledge_entities | ❌ → 2.2 |
-| `rule_convention` | `jurisdictional_rules.rule_id` | `value_json.convention` | huquqiy qoida (nazorat jadvali) | rules | ❌ → 2.2 |
-| `image_caption` | `images.image_id` | `caption_original` | rasm ko‘ruvchisi | images | ❌ → 2.2 |
+| `source_title` | `sources.source_id` | `title` | manba kartasi, provenance, o‘quv testi manbalari, konsentratsiya jadvali | sources | yon fayl (D: 1, `SRC-FE-EDITORIAL` asl tili uz) |
+| `standard_title` | `standards.standard_id` | `title` | standartlar katalogi | standards | yon fayl / 2.3 |
+| `standard_note` | `standards.standard_id` | `note` | standartlar katalogi | standards | yon fayl (D: 7) |
+| `conflict_text` | `<conflict_id>#question` / `<conflict_id>#note` | `question` / `note` | ziddiyatlar ro‘yxati/sahifasi, provenance | evidence_conflicts | yon fayl (D: 8) |
+| `context_text` | `<claimId>#<maydon>` (`case_type`, `population`, `study_size`, `analytical_method`, `co_intoxicants`, `timing`) yoki `<claimId>#limitations[<i>]` | `value_json.context_strict.<maydon>` (satr) / `limitations[i]` | konsentratsiya konteksti jadvali | claims | yon fayl (D: 67) |
+| `list_item` | `<claimId>#items[<i>]` | `value_json.items[i]` | da’vo kartasidagi metabolit/marker chiplari | claims | yon fayl (D: 34) |
+| `metabolite_name` | `metabolite_relations.relation_id` | `metabolite_name` | modda → metabolitlar, bilim zanjiri, tahlil bo‘limi, «Qisqacha» | metabolite_relations | yo‘q bo‘lsa — **aynan shu asl matnli** `list_item` tarjimasi ishlatiladi (xesh mos) |
+| `topic_body` | `<topic_id>` | kartadagi da’vo iqtibosi (`derived`, `source_claims[]`) | mavzu kartasi tepasidagi «Qisqacha tushuntirish» (faqat UI tilida tarjima bo‘lsa) | knowledge_entities | yon fayl (D: 1) |
+| `screening_field` | `<entityId>#analyte` \| `#specimen` \| `#principle` | `payload.analyte/specimen/principle` | skrining kartasi | knowledge_entities | yon fayl (D: 21) |
+| `entity_note` | `<entityId>#<maydon>` yoki `<entityId>#<maydon>[<i>]` (`limitations`, `cross_reactivity`, `false_positive`, `false_negative`, `hazards`, `result_type`, `detection_window`, `interferences`) | izoh `text` (tilga moslanmagan) | skrining/reaktiv xavfsizlik izohlari | knowledge_entities | yon fayl / 2.3 |
+| `rule_convention` | `jurisdictional_rules.rule_id` | `value_json.convention` | huquqiy qoida (nazorat jadvali) | rules | yon fayl / 2.3 |
+| `image_caption` | `images.image_id` | `caption_original` | rasm ko‘ruvchisi | images | yon fayl / 2.3 |
 | `ai_chunk` | (zaxira) | — | hozircha AI bo‘lagi `claim_excerpt` ni ishlatadi | — | — |
 
 Eslatma: `"not specified in source"` (pipeline belgisi) tarjima qilinmaydi — ilova uni UI
@@ -84,5 +94,6 @@ tilidagi «Manbada ko‘rsatilmagan» bilan almashtiradi.
 
 * Ilova birlik testlari: `apps/mobile/test/unit/content_translations_test.dart` (fallback,
   eskirgan xesh, noma’lum tur/status, faqat reviewed/official belgini olib tashlaydi).
-* Widget testlari: `test/widget/trilingual_render_test.dart`, `test/widget/quote_translation_test.dart`.
+* Widget testlari: `test/widget/trilingual_render_test.dart`, `test/widget/quote_translation_test.dart`,
+  `test/widget/trilingual_pilot_test.dart` (haqiqiy paket + D yon fayli).
 * Vizual: `test/golden/trilingual_golden_test.dart` (uz/ru/en, 390/320 dp, qorong‘i).

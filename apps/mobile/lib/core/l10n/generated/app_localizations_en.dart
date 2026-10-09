@@ -7585,4 +7585,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get imageCaptionSection => 'Caption in the source';
+
+  @override
+  String get trTopicSummaryLabel => 'Brief explanation';
+
+  @override
+  String get trTopicSummaryNote =>
+      'Compiled from the sourced statements on this card; the original quote is below.';
 }

@@ -13352,6 +13352,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Caption in the source'**
   String get imageCaptionSection;
+
+  /// Topic card: short explanation in the UI language (from the card's sourced statements).
+  ///
+  /// In en, this message translates to:
+  /// **'Brief explanation'**
+  String get trTopicSummaryLabel;
+
+  /// Note under the topic card explanation header.
+  ///
+  /// In en, this message translates to:
+  /// **'Compiled from the sourced statements on this card; the original quote is below.'**
+  String get trTopicSummaryNote;
 }
 
 class _AppLocalizationsDelegate

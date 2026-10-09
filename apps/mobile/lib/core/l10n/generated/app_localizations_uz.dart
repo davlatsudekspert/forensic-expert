@@ -7556,4 +7556,11 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get imageCaptionSection => 'Manbadagi izoh';
+
+  @override
+  String get trTopicSummaryLabel => 'Qisqacha tushuntirish';
+
+  @override
+  String get trTopicSummaryNote =>
+      'Kartadagi manbali da’volar asosida tuzilgan; asl iqtibos quyida.';
 }

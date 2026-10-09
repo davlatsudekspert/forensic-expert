@@ -181,6 +181,7 @@ class SubstanceAnalysisSection extends ConsumerWidget {
                             ContentTextKind.metaboliteName,
                             r.id,
                             source: r.metaboliteName,
+                            sameTextKinds: const {ContentTextKind.listItem},
                             lang: lang,
                           )
                     : null;

@@ -56,8 +56,9 @@ abstract final class ContentTextKind {
   static const sourceTitle = 'source_title';
   static const standardTitle = 'standard_title';
   static const standardNote = 'standard_note';
-  static const conflictQuestion = 'conflict_question';
-  static const conflictNote = 'conflict_note';
+
+  /// ID: `<conflict_id>#question` yoki `<conflict_id>#note`.
+  static const conflictText = 'conflict_text';
   static const contextText = 'context_text';
   static const listItem = 'list_item';
   static const metaboliteName = 'metabolite_name';
@@ -67,6 +68,10 @@ abstract final class ContentTextKind {
   static const imageCaption = 'image_caption';
   static const aiChunk = 'ai_chunk';
 
+  /// Mavzu kartasining qisqa tushuntirishi (manbali da’volardan olingan,
+  /// `derived`); asl matn — kartadagi da’vo iqtibosi.
+  static const topicBody = 'topic_body';
+
   static const known = {
     claimExcerpt,
     ruleExcerpt,
@@ -74,8 +79,8 @@ abstract final class ContentTextKind {
     sourceTitle,
     standardTitle,
     standardNote,
-    conflictQuestion,
-    conflictNote,
+    conflictText,
+    topicBody,
     contextText,
     listItem,
     metaboliteName,
@@ -251,21 +256,73 @@ class LocalizedContent {
 /// Tarjimalar indeksi: `(kind, id, lang)` → qator.
 @immutable
 class ContentTranslations {
-  const ContentTranslations._(this._byKey);
+  const ContentTranslations._(this._byKey, this._byHash);
 
-  static const empty = ContentTranslations._({});
+  static const empty = ContentTranslations._({}, {});
 
   final Map<String, ContentTranslationRow> _byKey;
 
+  /// `kind|sha256|lang` → qator (bir xil asl matn uchun zaxira qidiruv).
+  final Map<String, ContentTranslationRow> _byHash;
+
   factory ContentTranslations.of(Iterable<ContentTranslationRow> rows) {
     final map = <String, ContentTranslationRow>{};
-    for (final r in rows) {
-      final key = _key(r.kind, r.id, r.lang);
-      final prev = map[key];
+    final byHash = <String, ContentTranslationRow>{};
+    void put(
+      Map<String, ContentTranslationRow> m,
+      String key,
+      ContentTranslationRow r,
+    ) {
+      final prev = m[key];
       // Bir kalitda ikki manba bo‘lsa — yuqoriroq holat ustun.
-      if (prev == null || r.status.index > prev.status.index) map[key] = r;
+      if (prev == null || r.status.index > prev.status.index) m[key] = r;
     }
-    return ContentTranslations._(map);
+
+    for (final r in rows) {
+      put(map, _key(r.kind, r.id, r.lang), r);
+      put(byHash, '${r.kind}|${r.sourceSha256}|${r.lang}', r);
+    }
+    return ContentTranslations._(map, byHash);
+  }
+
+  /// Ikki indeksni birlashtiradi (masalan, imzolangan paket + ilova
+  /// asset’idagi yon fayl).
+  ContentTranslations merge(ContentTranslations other) =>
+      ContentTranslations.of([..._byKey.values, ...other._byKey.values]);
+
+  /// `fe-localized-texts/1` yon fayli (`content/pilot/translations/
+  /// localized_texts_d.json` → ilova asset’i). Imzolanmagan manba bo‘lgani
+  /// uchun **faqat** avtomatik statuslar qabul qilinadi (`machine_draft`,
+  /// `terminology_checked`, `claim_checked`); `reviewed`/`official` faqat
+  /// imzolangan paketdan keladi. Noma’lum format/qator — e’tiborsiz.
+  static List<ContentTranslationRow> rowsFromLocalizedTextsJson(Object? json) {
+    if (json is! Map || json['format'] != 'fe-localized-texts/1') {
+      return const [];
+    }
+    final records = json['records'];
+    if (records is! List) return const [];
+    final out = <ContentTranslationRow>[];
+    for (final rec in records) {
+      if (rec is! Map) continue;
+      final status = ContentTranslationStatus.tryParse(
+        rec['status'] as String?,
+      );
+      if (status == null || status.isHumanVerified) continue;
+      final texts = rec['text'];
+      if (texts is! Map) continue;
+      for (final e in texts.entries) {
+        final row = ContentTranslationRow.tryParse(
+          kind: rec['target_type'],
+          id: rec['target_id'],
+          lang: e.key,
+          sourceSha256: rec['source_sha256'],
+          text: e.value,
+          status: rec['status'],
+        );
+        if (row != null) out.add(row);
+      }
+    }
+    return out;
   }
 
   static String _key(String kind, String id, String lang) => '$kind|$id|$lang';
@@ -287,6 +344,7 @@ class ContentTranslations {
     required String source,
     required String lang,
     String? originalLang,
+    Set<String> sameTextKinds = const {},
   }) {
     final ui = normalizeLang(lang);
     final orig = normalizeLang(originalLang);
@@ -296,9 +354,19 @@ class ContentTranslations {
       requestedLang: ui,
     );
     if (ui == orig || source.trim().isEmpty) return original;
-    final row = _byKey[_key(kind, id, ui)];
+    final hash = TextTranslation.hashOf(source);
+    var row = _byKey[_key(kind, id, ui)];
+    if (row != null && row.sourceSha256 != hash) row = null;
+    // Bir xil asl matn (masalan, metabolit nomi da’vo ro‘yxatida va
+    // metabolit munosabatida) — boshqa ID’dagi tarjima ham to‘g‘ri:
+    // xesh aynan mos bo‘lishi shart.
+    if (row == null && sameTextKinds.isNotEmpty) {
+      for (final k in [kind, ...sameTextKinds]) {
+        row = _byHash['$k|$hash|$ui'];
+        if (row != null) break;
+      }
+    }
     if (row == null) return original;
-    if (row.sourceSha256 != TextTranslation.hashOf(source)) return original;
     if (row.text == source.trim()) return original;
     return LocalizedContent(
       text: row.text,
