@@ -1,6 +1,6 @@
 # Migratsiya hisoboti: `20261009000000_support_and_admin.sql`
 
-Holat: **production’ga QO‘LLANMAGAN** — egasining alohida ruxsatini kutadi.
+Holat: **production’ga QO‘LLANDI (2026-10-09, egasi ruxsati bilan)** — `docs/PRODUCTION_CLOSEOUT.md`.
 Sana: 2026-10-09. Loyiha: `igvzlmpgwybjdgkyowrl`.
 
 ## 1. SQL tarkibi (673 qator)

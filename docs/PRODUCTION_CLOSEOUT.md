@@ -56,3 +56,11 @@ DEBUG build’lar store’ga yuklanmaydi.
 - Keyingi holat: mavjud jadvallar va yozuvlar o‘zgarmagan; anon faqat `list_published` ni chaqira oladi.
 - Smoke (tranzaksiya qaytarilgan, ma’lumot qolmagan): SUBMITTED, can_moderate=true (identity_admin), o‘z maqolasini moderatsiya — FORBIDDEN_OWN.
 - Rollback: migratsiya fayli boshidagi izohda.
+
+## 2026-10-09 — Murojaatlar va admin panel migratsiyasi (egasi ruxsati bilan)
+- Oldin: 7 migratsiya; users 1, account_roles 1, access_grants 1, ai_usage 21, publications 0, storage buckets 1, storage policies 2.
+- Qo‘llandi: `support_and_admin` (repo: `20261009000000_support_and_admin.sql`).
+- Keyin: mavjud qatorlar o‘zgarmagan (1/1/1/21); +2 jadval public, +2 jadval private, bucket `support-attachments` (+1), storage policy +2; authenticated jadvalni to‘g‘ridan o‘qiy olmaydi; anon admin RPC chaqira olmaydi.
+- Smoke (tranzaksiya qaytarilgan): murojaat CREATED → admin_stats (users=1, awaiting=1) → inbox total=1 → admin javobi SENT. Natijada support_threads=0, admin_audit=0.
+- Rollback: migratsiya fayli sarlavhasi + `supabase/rollback/20261009_pre_support_admin_functions.sql`.
+- Qolgan ruxsatlar: `delete-account` Edge Function deploy; maxfiylik siyosati bandi; MFA (TOTP ulangach `admin_requires_aal2`).
