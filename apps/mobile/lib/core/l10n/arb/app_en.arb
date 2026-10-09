@@ -8905,5 +8905,81 @@
         "type": "String"
       }
     }
+  },
+  "toolBeerLambertName": "Beer–Lambert law (A = ε·l·c)",
+  "@toolBeerLambertName": {
+    "description": "Tool name: Beer–Lambert calculator."
+  },
+  "toolBeerLambertDesc": "Find absorbance, concentration or absorptivity from A = ε·l·c, on a molar or mass basis, with units.",
+  "@toolBeerLambertDesc": {
+    "description": "Tool description: Beer–Lambert calculator."
+  },
+  "calcBeerAbsorbance": "Absorbance",
+  "@calcBeerAbsorbance": {
+    "description": "Field/result label: absorbance A."
+  },
+  "calcBeerAbsorptivityMolar": "Molar absorptivity",
+  "@calcBeerAbsorptivityMolar": {
+    "description": "Field/result label: molar absorptivity ε."
+  },
+  "calcBeerAbsorptivityMass": "Specific (mass) absorptivity",
+  "@calcBeerAbsorptivityMass": {
+    "description": "Field/result label: specific (mass) absorptivity a."
+  },
+  "calcBeerConcentration": "Concentration",
+  "@calcBeerConcentration": {
+    "description": "Field/result label: concentration c."
+  },
+  "calcBeerPath": "Path length (l)",
+  "@calcBeerPath": {
+    "description": "Field label: optical path length l."
+  },
+  "calcBeerResultUnit": "Result unit (c)",
+  "@calcBeerResultUnit": {
+    "description": "Dropdown label: unit of the calculated concentration."
+  },
+  "calcBeerBasis": "Absorptivity basis",
+  "@calcBeerBasis": {
+    "description": "Label above the basis choice (molar or mass)."
+  },
+  "calcBeerBasisMolar": "Molar (ε, mol/L)",
+  "@calcBeerBasisMolar": {
+    "description": "Choice: molar basis."
+  },
+  "calcBeerBasisMass": "Mass (a, g/L)",
+  "@calcBeerBasisMass": {
+    "description": "Choice: mass basis."
+  },
+  "calcBeerFormulaNote": "A — absorbance (dimensionless); ε — molar absorptivity, L·mol⁻¹·cm⁻¹ (or a — mass absorptivity, L·g⁻¹·cm⁻¹); l — path length, cm; c — concentration, mol/L (or g/L).",
+  "@calcBeerFormulaNote": {
+    "description": "Note under the formula: symbols and units."
+  },
+  "calcBeerErrorBasis": "The concentration unit does not match the absorptivity basis: use mol/L units with molar ε and g/L-type units with mass a.",
+  "@calcBeerErrorBasis": {
+    "description": "Validation: concentration unit does not match the basis."
+  },
+  "calcBeerAssumptionDefinition": "Definitional relationship: absorbance is proportional to path length and concentration. No absorptivity values are built in — enter a value from your own calibration or a verified source for the same wavelength, solvent and pH.",
+  "@calcBeerAssumptionDefinition": {
+    "description": "Assumption bullet."
+  },
+  "calcBeerAssumptionBlank": "A is the sample absorbance corrected for the blank (reagent or matrix blank) at the chosen wavelength.",
+  "@calcBeerAssumptionBlank": {
+    "description": "Assumption bullet."
+  },
+  "calcBeerLimitationLinear": "Valid only within the working range where linearity has been shown by calibration; ICH Q2(R2) §3.2.2.1 recommends at least five concentrations across the range. Outside it, dilute the sample or use the calibration curve.",
+  "@calcBeerLimitationLinear": {
+    "description": "Limitation bullet."
+  },
+  "calcBeerLimitationIdentity": "Absorbance does not identify a substance. UV-Vis has low specificity; identity must be confirmed by another technique (for example, chromatography with mass spectrometry).",
+  "@calcBeerLimitationIdentity": {
+    "description": "Limitation bullet."
+  },
+  "calcBeerReference": "IUPAC Gold Book: “Beer–Lambert law”, doi:10.1351/goldbook.B00626 · Swinehart DF. The Beer-Lambert law. J Chem Educ 1962;39(7):333, doi:10.1021/ed039p333 · Linearity: ICH Q2(R2) (2023), §3.2.2.1.",
+  "@calcBeerReference": {
+    "description": "Reference bullet for the Beer–Lambert calculator."
+  },
+  "calcBeerRelatedTools": "Related tools: calibration and limits",
+  "@calcBeerRelatedTools": {
+    "description": "Section header: links to calibration and LOD/LOQ tools."
   }
 }

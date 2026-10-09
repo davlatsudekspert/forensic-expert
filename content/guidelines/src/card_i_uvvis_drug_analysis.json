@@ -1,0 +1,195 @@
+{
+  "id": "guideline.chem.uvvis_drug_analysis",
+  "discipline_codes": [
+    "forensic_chemistry",
+    "forensic_toxicology",
+    "analytical_science"
+  ],
+  "status": "NEEDS_REVIEW",
+  "updated": "2026-10-09",
+  "translation_status": {
+    "uz": "AUTHORED",
+    "ru": "DRAFT",
+    "en": "DRAFT"
+  },
+  "related_tool_ids": [
+    "tool.lab.beer_lambert",
+    "tool.lab.calibration",
+    "tool.lab.lod_loq"
+  ],
+  "title": {
+    "uz": "Dori va giyohvand moddalarni UB-ko‘rinadigan spektrofotometriya bilan sifat va miqdoriy aniqlash",
+    "ru": "Качественное и количественное определение лекарственных и наркотических веществ методом УФ-видимой спектрофотометрии",
+    "en": "Qualitative and quantitative UV-Vis spectrophotometric determination of drugs"
+  },
+  "summary": {
+    "uz": "UB-ko‘rinadigan spektrofotometriya Buger–Lambert–Ber qonuniga asoslanadi: optik zichlik konsentratsiya va kyuveta qalinligiga proporsional. Spektr moddadagi xromoforni aks ettiradi, shuning uchun bir xil xromoforli ko‘p moddalar deyarli bir xil spektr beradi — usulning o‘ziga xosligi past. Spektr faqat xromatografik ajratish bilan birga (masalan, YuSSX-DMD) identifikatsiyani qo‘llab-quvvatlaydi va natija tuzilma haqida ma’lumot beruvchi usul (masalan, mass-spektrometriya) bilan tasdiqlanadi. Miqdoriy aniqlash faqat kalibrlash va validatsiya qilingan ishchi oraliqda ishonchli.",
+    "ru": "УФ-видимая спектрофотометрия основана на законе Бугера–Ламберта–Бера: оптическая плотность пропорциональна концентрации и толщине слоя. Спектр отражает хромофор вещества, поэтому многие вещества с одинаковым хромофором дают почти одинаковые спектры — специфичность метода низкая. Спектр поддерживает идентификацию только вместе с хроматографическим разделением (например, ВЭЖХ-ДМД), а результат подтверждается методом, дающим структурную информацию (например, масс-спектрометрией). Количественное определение надёжно лишь в откалиброванном и валидированном рабочем диапазоне.",
+    "en": "UV-Vis spectrophotometry rests on the Beer–Lambert law: absorbance is proportional to concentration and path length. A spectrum reflects the chromophore of a substance, so many substances sharing a chromophore give nearly identical spectra — the technique has low specificity. A spectrum supports identification only together with chromatographic separation (for example HPLC-DAD), and the result is confirmed by a technique giving structural information (for example mass spectrometry). Quantitation is reliable only within a calibrated and validated working range."
+  },
+  "sections": [
+    {
+      "key": "basis",
+      "title": {
+        "uz": "Ilmiy asos",
+        "ru": "Научная основа",
+        "en": "Scientific basis"
+      },
+      "citations": [
+        "iupac_beer_lambert",
+        "swinehart1962",
+        "herzler2003"
+      ],
+      "body": {
+        "uz": "Spektrofotometrik o‘lchovning asosi — Buger–Lambert–Ber qonuni: eritmaning optik zichligi (A) yorug‘lik o‘tadigan qatlam qalinligi (l) va yutuvchi modda konsentratsiyasiga (c) proporsional, proporsionallik koeffitsienti — yutilish koeffitsienti (ε) [iupac_beer_lambert, swinehart1962]. Shu munosabat miqdoriy aniqlashning asosidir: ma’lum sharoitda (to‘lqin uzunligi, erituvchi, pH) o‘lchangan optik zichlik kalibrlash orqali konsentratsiyaga aylantiriladi.\n\nSifat tahlilida esa butun spektr shakli (maksimum va minimumlar holati) solishtiriladi. Biroq UB spektri asosan molekuladagi xromoforni aks ettiradi; toksikologik ahamiyatga ega moddalarning katta kutubxonasida ko‘p moddalar bir xil xromoforga ega bo‘lgan va ularning spektrlari amalda farqlanmagan. Faqat spektr bo‘yicha moddalarning bir qismi bir ma’noli aniqlangan, nisbiy ushlanish vaqti bilan birlashtirilganda esa bu ulush sezilarli oshgan [herzler2003].",
+        "ru": "Основа спектрофотометрического измерения — закон Бугера–Ламберта–Бера: оптическая плотность раствора (A) пропорциональна толщине поглощающего слоя (l) и концентрации поглощающего вещества (c), коэффициент пропорциональности — коэффициент поглощения (ε) [iupac_beer_lambert, swinehart1962]. Это соотношение лежит в основе количественного определения: оптическую плотность, измеренную в заданных условиях (длина волны, растворитель, pH), переводят в концентрацию по калибровке.\n\nПри качественном анализе сравнивают форму всего спектра (положение максимумов и минимумов). Однако УФ-спектр отражает в основном хромофор молекулы; в большой библиотеке токсикологически значимых веществ многие вещества имели одинаковый хромофор, и их спектры практически не различались. Только по спектру однозначно идентифицировалась лишь часть веществ, а при сочетании с относительным временем удерживания эта доля заметно возрастала [herzler2003].",
+        "en": "The basis of spectrophotometric measurement is the Beer–Lambert law: the absorbance of a solution (A) is proportional to the path length (l) and the concentration of the absorbing substance (c), with the absorptivity (ε) as proportionality constant [iupac_beer_lambert, swinehart1962]. This relationship underlies quantitation: absorbance measured under defined conditions (wavelength, solvent, pH) is converted to concentration through calibration.\n\nQualitative analysis compares the shape of the whole spectrum (positions of maxima and minima). However, a UV spectrum mainly reflects the chromophore of the molecule; in a large library of toxicologically relevant substances, many shared a chromophore and their spectra were practically indistinguishable. The spectrum alone unambiguously identified only part of the substances, and combining it with relative retention time increased that share considerably [herzler2003]."
+      }
+    },
+    {
+      "key": "scope",
+      "title": {
+        "uz": "Qo‘llanish sohasi",
+        "ru": "Область применения",
+        "en": "Scope"
+      },
+      "citations": [
+        "swgdrug2024",
+        "tracqui1995",
+        "ich_q2r2_2023"
+      ],
+      "body": {
+        "uz": "Kartochka quyidagilarga tegishli:\n• musodara qilingan moddalar va farmatsevtik shakllarda dori yoki giyohvand moddani aniqlash — SWGDRUG tavsiyalarida to‘lqin uzunligi diapazonida qo‘llanadigan UB/ko‘rinadigan spektroskopiya B toifasiga kiritilgan (tuzilma haqida ma’lumot bermasdan selektivlik beradi) [swgdrug2024];\n• biologik namunalar (qon, plazma) ekstraktlarida tizimli toksikologik tahlil — asosan suyuqlik xromatografiyasi va diod-matritsali detektor (YuSSX-DMD) birikmasida [tracqui1995].\n\nKartochka aniq laboratoriya retseptini (to‘lqin uzunliklari, yutilish koeffitsientlari, reagent tarkibi, chiziqlilik chegaralari) bermaydi: ular modda, erituvchi va asbobga bog‘liq bo‘lib, laboratoriya validatsiyasi bilan belgilanadi. ICH Q2(R2) farmatsevtik doiradagi hujjat; uni sud-kimyoviy usulga qo‘llash laboratoriya qarori [ich_q2r2_2023].",
+        "ru": "Карточка относится к:\n• определению лекарственных и наркотических веществ в изъятых материалах и лекарственных формах — в рекомендациях SWGDRUG УФ/видимая спектроскопия в диапазоне длин волн отнесена к категории B (селективность без структурной информации) [swgdrug2024];\n• систематическому токсикологическому анализу экстрактов биологических образцов (кровь, плазма) — преимущественно в сочетании жидкостной хроматографии с диодно-матричным детектором (ВЭЖХ-ДМД) [tracqui1995].\n\nКарточка не даёт конкретной лабораторной прописи (длины волн, коэффициенты поглощения, состав реагентов, границы линейности): они зависят от вещества, растворителя и прибора и устанавливаются валидацией в лаборатории. ICH Q2(R2) — документ фармацевтической области; его применение к судебно-химическому методу — решение лаборатории [ich_q2r2_2023].",
+        "en": "The card applies to:\n• determination of drugs in seized materials and pharmaceutical forms — the SWGDRUG recommendations place UV/Vis spectroscopy with a wavelength range in Category B (selectivity without structural information) [swgdrug2024];\n• systematic toxicological analysis of extracts of biological specimens (blood, plasma), mainly as liquid chromatography with diode-array detection (HPLC-DAD) [tracqui1995].\n\nThe card gives no specific laboratory recipe (wavelengths, absorptivities, reagent composition, linearity limits): these depend on the substance, solvent and instrument and are set by laboratory validation. ICH Q2(R2) is a pharmaceutical document; applying it to a forensic method is a laboratory decision [ich_q2r2_2023]."
+      }
+    },
+    {
+      "key": "methods",
+      "title": {
+        "uz": "Usullar (konseptual darajada)",
+        "ru": "Методы (на концептуальном уровне)",
+        "en": "Methods (conceptual level)"
+      },
+      "citations": [
+        "tracqui1995",
+        "bogusz1991",
+        "herzler2003",
+        "karpinska2004",
+        "ich_q2r2_2023",
+        "peters2007",
+        "asb036_2019"
+      ],
+      "body": {
+        "uz": "• Namuna tayyorlash. Biologik matritsadan moddani ajratib olish (masalan, suyuqlik–suyuqlik ekstraksiyasi) o‘lchovdan oldin bajariladi [tracqui1995]. Ajratishsiz to‘g‘ridan-to‘g‘ri o‘lchashda ekstraktdagi barcha yutuvchi komponentlar signalga hissa qo‘shadi; shuning uchun usulning boshqa moddalar va matritsa ta’siriga chidamliligi ko‘rsatilishi kerak [ich_q2r2_2023].\n• YuSSX-DMD. Xromatografik ajratish davomida to‘liq UB spektrlari yoziladi; identifikatsiya ushlanish vaqti (yoki ushlanish indeksi) va spektrni kompyuter kutubxonasi bilan solishtirish orqali amalga oshiriladi [tracqui1995, bogusz1991]. Spektrlar o‘xshashligi indeks bilan baholanadi [herzler2003].\n• Hosilaviy spektrofotometriya. Spektrning hosilalari farmatsevtik va klinik tahlilda keng qo‘llanadi [karpinska2004]; ko‘p o‘lchovli kalibrlashda ma’lumotlarni oldindan hosila yoki normallashtirish bilan qayta ishlash odatiy [ich_q2r2_2023].\n• Kalibrlash. Javob va konsentratsiya o‘rtasidagi bog‘liqlik butun oraliqda baholanadi: regressiya chizig‘i (eng kichik kvadratlar usuli), korrelyatsiya yoki determinatsiya koeffitsienti, kesishma, qiyalik va qoldiqlar grafigi keltiriladi; oraliq bo‘ylab kamida beshta konsentratsiya tavsiya etiladi. Chiziqli bo‘lmagan javob uchun mos model tanlanadi [ich_q2r2_2023].\n• Validatsiya. Sud-toksikologiyada yangi usul ishonchli natija berishi uchun puxta validatsiya qilinadi [peters2007]; buning minimal amaliyotlari alohida standartda belgilangan [asb036_2019]. ICH Q2(R2) o‘ziga xoslik/selektivlik, oraliq, aniqlik, pretsizlik, aniqlash va miqdoriy aniqlash chegaralarini ko‘rib chiqadi [ich_q2r2_2023].",
+        "ru": "• Пробоподготовка. Выделение вещества из биологической матрицы (например, жидкость-жидкостная экстракция) выполняется до измерения [tracqui1995]. При прямом измерении без разделения в сигнал вносят вклад все поглощающие компоненты экстракта; поэтому должна быть показана устойчивость метода к влиянию других веществ и матрицы [ich_q2r2_2023].\n• ВЭЖХ-ДМД. Во время хроматографического разделения записываются полные УФ-спектры; идентификацию проводят по времени (или индексу) удерживания и сравнению спектра с компьютерной библиотекой [tracqui1995, bogusz1991]. Сходство спектров оценивают по индексу [herzler2003].\n• Производная спектрофотометрия. Производные спектра широко применяются в фармацевтическом и клиническом анализе [karpinska2004]; при многомерной калибровке данные обычно предварительно обрабатывают производными или нормализацией [ich_q2r2_2023].\n• Калибровка. Зависимость отклика от концентрации оценивают во всём диапазоне: приводят линию регрессии (метод наименьших квадратов), коэффициент корреляции или детерминации, отрезок, наклон и график остатков; рекомендуется не менее пяти концентраций по диапазону. Для нелинейного отклика выбирают соответствующую модель [ich_q2r2_2023].\n• Валидация. В судебной токсикологии новый метод тщательно валидируют, чтобы он давал надёжные данные [peters2007]; минимальные практики описаны в отдельном стандарте [asb036_2019]. ICH Q2(R2) рассматривает специфичность/селективность, диапазон, правильность, прецизионность, пределы обнаружения и количественного определения [ich_q2r2_2023].",
+        "en": "• Sample preparation. The analyte is isolated from the biological matrix (for example by liquid–liquid extraction) before measurement [tracqui1995]. In direct measurement without separation, every absorbing component of the extract contributes to the signal; the method must therefore be shown to be unaffected by other substances and the matrix [ich_q2r2_2023].\n• HPLC-DAD. Full UV spectra are recorded during chromatographic separation; identification compares retention time (or retention index) and spectrum with a computerised library [tracqui1995, bogusz1991]. Spectral similarity is assessed with an index [herzler2003].\n• Derivative spectrophotometry. Spectral derivatives are widely used in pharmaceutical and clinical analysis [karpinska2004]; in multivariate calibration, data are commonly pre-treated by derivatives or normalisation [ich_q2r2_2023].\n• Calibration. The response–concentration relationship is evaluated across the range: the regression line (least squares), correlation or determination coefficient, intercept, slope and a residual plot are reported; at least five concentrations across the range are recommended. For a non-linear response a suitable model is chosen [ich_q2r2_2023].\n• Validation. In forensic toxicology a new method is validated thoroughly so that it yields reliable data [peters2007]; minimum practices are set out in a dedicated standard [asb036_2019]. ICH Q2(R2) covers specificity/selectivity, range, accuracy, precision, and detection and quantitation limits [ich_q2r2_2023]."
+      }
+    },
+    {
+      "key": "advantages",
+      "title": {
+        "uz": "Afzalliklar",
+        "ru": "Преимущества",
+        "en": "Advantages"
+      },
+      "citations": [
+        "tracqui1995",
+        "herzler2003",
+        "swgdrug2024"
+      ],
+      "body": {
+        "uz": "• YuSSX-DMD asosidagi tizimli toksikologik tahlil sodda, tez va nisbatan arzon deb tavsiflangan [tracqui1995].\n• Spektr va nisbiy ushlanish vaqti birgalikda ishlatilganda YuSSX-DMD toksikologik tahlilda moddalarni aniqlashning ishonchli usullaridan biri sifatida baholangan [herzler2003].\n• SWGDRUG sxemasida gibrid usul (masalan, SX-UB/Vis) ikkala qism uchun musbat natija mezonlari bajarilsa, ikkita usul sifatida hisoblanishi mumkin [swgdrug2024].",
+        "ru": "• Систематический токсикологический анализ на основе ВЭЖХ-ДМД описан как простой, быстрый и относительно недорогой [tracqui1995].\n• При совместном использовании спектра и относительного времени удерживания ВЭЖХ-ДМД оценена как один из надёжных методов идентификации в токсикологическом анализе [herzler2003].\n• В схеме SWGDRUG гибридный метод (например, ЖХ-УФ/вид.) может засчитываться как два метода, если критерии положительного результата выполнены для обеих частей [swgdrug2024].",
+        "en": "• Systematic toxicological analysis based on HPLC-DAD has been described as simple, rapid and relatively inexpensive [tracqui1995].\n• Using the spectrum together with relative retention time, HPLC-DAD was assessed as one of the reliable identification techniques in toxicological analysis [herzler2003].\n• In the SWGDRUG scheme a hyphenated technique (for example LC-UV/Vis) may count as two techniques if the positive-result criteria are met for both parts [swgdrug2024]."
+      }
+    },
+    {
+      "key": "limitations",
+      "title": {
+        "uz": "Cheklovlar",
+        "ru": "Ограничения",
+        "en": "Limitations"
+      },
+      "citations": [
+        "herzler2003",
+        "swgdrug2024",
+        "maurer2004",
+        "ich_q2r2_2023"
+      ],
+      "body": {
+        "uz": "• Past o‘ziga xoslik: bir xil xromoforli moddalar spektr bo‘yicha farqlanmaydi [herzler2003].\n• Tuzilma haqida ma’lumot yo‘q — UB/Vis B toifasida, A toifasida emas [swgdrug2024].\n• Keng qamrovli skriningda SX-DMD ajratish kuchi va o‘ziga xosligi bo‘yicha GX-MS dan past deb baholangan [maurer2004].\n• Bitta usulning o‘ziga xosligi yetishmasa, buni boshqa yordamchi usul(lar) bilan qoplash kerak [ich_q2r2_2023].",
+        "ru": "• Низкая специфичность: вещества с одинаковым хромофором по спектру не различаются [herzler2003].\n• Нет структурной информации — УФ/вид. относится к категории B, а не A [swgdrug2024].\n• В широком скрининге ЖХ-ДМД оценивается как уступающая ГХ-МС по разделяющей способности и специфичности [maurer2004].\n• Недостаточную специфичность одного метода следует компенсировать другим(и) вспомогательным(и) методом(ами) [ich_q2r2_2023].",
+        "en": "• Low specificity: substances sharing a chromophore are not distinguished by their spectra [herzler2003].\n• No structural information — UV/Vis is Category B, not Category A [swgdrug2024].\n• In comprehensive screening, LC-DAD has been rated inferior to GC-MS in separation power and specificity [maurer2004].\n• Lack of specificity of one procedure should be compensated by other supporting procedure(s) [ich_q2r2_2023]."
+      }
+    },
+    {
+      "key": "factors",
+      "title": {
+        "uz": "Natijaga ta’sir qiluvchi omillar",
+        "ru": "Факторы, влияющие на результат",
+        "en": "Factors affecting the result"
+      },
+      "citations": [
+        "herzler2003",
+        "bogusz1991",
+        "ich_q2r2_2023"
+      ],
+      "body": {
+        "uz": "• O‘lchash sharoiti. Kutubxona spektrlari ma’lum erituvchi va pH da yozilgan [herzler2003]; namuna spektri shunga o‘xshash sharoitda o‘lchanmasa, solishtirish noto‘g‘ri bo‘lishi mumkin.\n• Ushlanish parametrlarini standartlash. Laboratoriyalararo kutubxonadan foydalanish ushlanish shkalasini standartlash va tuzatishni talab qiladi [bogusz1991].\n• Ishchi oraliq. Natija faqat javob, aniqlik va pretsizlik qoniqarli bo‘lgan oraliqda ishonchli; namunani suyultirish bilan ishchi oraliqqa keltirish mumkin [ich_q2r2_2023].\n• Xalaqit beruvchi moddalar. Aralashmalar, parchalanish mahsulotlari va matritsa komponentlari aniqlashga ta’sir qilmasligi ko‘rsatilishi kerak [ich_q2r2_2023].",
+        "ru": "• Условия измерения. Библиотечные спектры записаны в определённом растворителе и при определённом pH [herzler2003]; если спектр образца измерен в иных условиях, сравнение может быть ошибочным.\n• Стандартизация параметров удерживания. Межлабораторное использование библиотеки требует стандартизованной шкалы удерживания и коррекции [bogusz1991].\n• Рабочий диапазон. Результат надёжен лишь в диапазоне, где отклик, правильность и прецизионность удовлетворительны; образец можно привести в рабочий диапазон разбавлением [ich_q2r2_2023].\n• Мешающие вещества. Должно быть показано, что примеси, продукты разложения и компоненты матрицы не влияют на определение [ich_q2r2_2023].",
+        "en": "• Measurement conditions. Library spectra were recorded in a defined solvent and pH [herzler2003]; if the sample spectrum is measured under different conditions, the comparison may be wrong.\n• Standardised retention. Interlaboratory use of a library requires a standardised retention scale and correction [bogusz1991].\n• Working range. Results are reliable only in the range where response, accuracy and precision are satisfactory; samples can be brought into the working range by dilution [ich_q2r2_2023].\n• Interfering substances. It must be shown that impurities, degradation products and matrix components do not affect the determination [ich_q2r2_2023]."
+      }
+    },
+    {
+      "key": "cautions",
+      "title": {
+        "uz": "Talqin qilishda ehtiyot choralari",
+        "ru": "Предостережения при интерпретации",
+        "en": "Interpretation cautions"
+      },
+      "citations": [
+        "swgdrug2024",
+        "ich_q2r2_2023",
+        "herzler2003"
+      ],
+      "body": {
+        "uz": "• Moddani faqat UB spektri bo‘yicha identifikatsiya qilmang. SWGDRUG sxemasida A toifasidagi usul bo‘lmasa, kamida uchta usul talab qilinadi va ularning ikkitasi turli xossalardan foydalanadigan B toifasidagi usul bo‘lishi kerak [swgdrug2024].\n• O‘ziga xoslikni boshqa o‘lchov tamoyiliga asoslangan ortogonal usul bilan tasdiqlash tavsiya etiladi [ich_q2r2_2023].\n• Kutubxonada «mos kelish» faqat kutubxonadagi moddalar orasida tanlovdir; kutubxonada yo‘q modda o‘xshash xromoforli boshqa modda bilan adashtirilishi mumkin [herzler2003].\n• Manfiy yoki noaniq natija identifikatsiyaga hissa qo‘shmaydi [swgdrug2024].",
+        "ru": "• Не идентифицируйте вещество только по УФ-спектру. В схеме SWGDRUG при отсутствии метода категории A требуется не менее трёх методов, два из которых — методы категории B, использующие разные свойства [swgdrug2024].\n• Специфичность рекомендуется подтверждать ортогональным методом, основанным на ином принципе измерения [ich_q2r2_2023].\n• «Совпадение» с библиотекой — лишь выбор среди веществ библиотеки; отсутствующее в библиотеке вещество можно спутать с другим веществом со сходным хромофором [herzler2003].\n• Отрицательный или неоднозначный результат не вносит вклада в идентификацию [swgdrug2024].",
+        "en": "• Do not identify a substance from its UV spectrum alone. In the SWGDRUG scheme, without a Category A technique at least three techniques are required, two of them Category B techniques exploiting different properties [swgdrug2024].\n• Confirming specificity with an orthogonal procedure based on a different measurement principle is recommended [ich_q2r2_2023].\n• A library “match” is only a choice among the substances in the library; a substance absent from the library may be confused with another having a similar chromophore [herzler2003].\n• Negative or inconclusive results do not contribute to identification [swgdrug2024]."
+      }
+    },
+    {
+      "key": "alternatives",
+      "title": {
+        "uz": "Tasdiqlash va boshqa usullar",
+        "ru": "Подтверждение и другие методы",
+        "en": "Confirmation and other methods"
+      },
+      "citations": [
+        "maurer2004",
+        "maurer2010",
+        "ojanpera2012",
+        "swgdrug2024"
+      ],
+      "body": {
+        "uz": "• GX-MS (elektron ionlash, to‘liq skanerlash) keng qamrovli skriningda tanlov usuli sifatida ko‘rsatilgan; SX-MS qutbli, termolabil va past dozali moddalar uchun qo‘shimcha [maurer2004]. Hozirgi analitik toksikologiyada asosan GX-MS va SX-MS ishlatiladi [maurer2010].\n• Yuqori aniqlikdagi mass-spektrometriya aniq massa va izotop tarkibidan elementar tarkibni aniqlashga imkon beradi [ojanpera2012].\n• Mass-spektrometriya, IQ va YaMR spektroskopiyasi — tuzilma haqida ma’lumot beruvchi A toifasidagi usullar [swgdrug2024]. Skrining va tasdiqlovchi usullarning umumiy taqqoslanishi — alohida «Skrining va tasdiqlovchi usullar» kartochkasida.",
+        "ru": "• ГХ-МС (электронная ионизация, полное сканирование) указывается как метод выбора для широкого скрининга; ЖХ-МС дополняет его для полярных, термолабильных и низкодозных веществ [maurer2004]. В современной аналитической токсикологии в основном применяют ГХ-МС и ЖХ-МС [maurer2010].\n• Масс-спектрометрия высокого разрешения позволяет по точной массе и изотопному распределению установить элементный состав [ojanpera2012].\n• Масс-спектрометрия, ИК- и ЯМР-спектроскопия — методы категории A, дающие структурную информацию [swgdrug2024]. Общее сравнение скрининговых и подтверждающих методов — в отдельной карточке «Скрининговые и подтверждающие методы».",
+        "en": "• GC-MS (electron ionisation, full scan) is presented as the method of choice for comprehensive screening; LC-MS complements it for polar, thermolabile and low-dose substances [maurer2004]. Current analytical toxicology mostly uses GC-MS and LC-MS [maurer2010].\n• High-resolution mass spectrometry derives elemental composition from accurate mass and isotopic pattern [ojanpera2012].\n• Mass spectrometry, IR and NMR spectroscopy are Category A techniques providing structural information [swgdrug2024]. A general comparison of screening and confirmatory techniques is given in the separate card on screening versus confirmatory methods."
+      }
+    }
+  ],
+  "keywords": {
+    "uz": ["UB-ko‘rinadigan spektrofotometriya", "UB spektrofotometriya", "spektrofotometriya", "Buger–Lambert–Ber qonuni", "optik zichlik", "absorbsiya", "yutilish koeffitsienti", "xromofor", "YuSSX-DMD", "HPLC-DAD", "diod-matritsali detektor", "spektr kutubxonasi", "hosilaviy spektrofotometriya", "kalibrlash", "chiziqlilik", "validatsiya", "ICH Q2(R2)", "aniqlash chegarasi", "miqdoriy aniqlash chegarasi", "o‘ziga xoslik", "selektivlik", "dori moddalari", "giyohvand moddalar", "sud-kimyo", "sud-toksikologiya"],
+    "ru": ["УФ-видимая спектрофотометрия", "УФ-спектрофотометрия", "спектрофотометрия", "закон Бугера–Ламберта–Бера", "оптическая плотность", "коэффициент поглощения", "хромофор", "ВЭЖХ-ДМД", "HPLC-DAD", "диодно-матричный детектор", "библиотека спектров", "производная спектрофотометрия", "калибровка", "линейность", "валидация", "ICH Q2(R2)", "предел обнаружения", "предел количественного определения", "специфичность", "селективность", "лекарственные вещества", "наркотические вещества", "судебная химия", "судебная токсикология"],
+    "en": ["UV-Vis spectrophotometry", "UV spectrophotometry", "spectrophotometry", "Beer-Lambert law", "Beer–Lambert law", "absorbance", "absorptivity", "molar absorptivity", "chromophore", "HPLC-DAD", "diode array", "spectral library", "derivative spectrophotometry", "calibration", "linearity", "method validation", "ICH Q2(R2)", "detection limit", "quantitation limit", "LOD", "LOQ", "specificity", "selectivity", "drugs", "forensic chemistry", "forensic toxicology", "analytical science"]
+  },
+  "omitted_unverified": [
+    "Wavelength maxima, molar/specific absorptivities (A 1%/1 cm) and linear ranges for individual drugs: not verified for this card; must come from validated laboratory data or primary references.",
+    "Percentages from herzler2003 (share identified by UV spectrum alone or with RRT) and similarity-index cut-offs: present in the verified abstract but omitted; described qualitatively.",
+    "Specific extraction conditions (pH, solvent ratios) and HPLC conditions reported by tracqui1995 and herzler2003: omitted (method-specific).",
+    "Deviations from the Beer-Lambert law (stray light, high concentration, chemical equilibria): textbook knowledge not verified against a source in this session; the card only states that linearity must be demonstrated by calibration (ICH Q2(R2)).",
+    "Colour-reaction (colorimetric) assays for individual drugs and reagent recipes: not covered; a separate optional card was not written because sources were not verified and reagent recipes are handled in another workstream.",
+    "Pharmacopoeial monographs (e.g., Ph. Eur., USP) and textbooks (e.g., Clarke's): edition details not verified in this session, not cited."
+  ]
+}

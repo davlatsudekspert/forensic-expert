@@ -3,7 +3,9 @@ import 'dart:math' as math;
 import 'package:fe_calc_engine/fe_calc_engine.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:go_router/go_router.dart';
 
+import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
@@ -12,6 +14,7 @@ import '../../../domain/catalog/tools_catalog.dart';
 import '../tool_strings.dart';
 import 'calculator_status.dart';
 
+part 'beer_lambert_view.dart';
 part 'forensic_calculators.dart';
 
 /// PHASE 6 laboratoriya kalkulyatorlari. Har biri bir xil tuzilma:
@@ -193,6 +196,7 @@ class CalcScaffold extends StatelessWidget {
     this.emphasizeFirst = true,
     this.resultNote,
     this.formulaNote,
+    this.footer = const [],
   });
 
   final CalculatorDescriptor descriptor;
@@ -221,6 +225,9 @@ class CalcScaffold extends StatelessWidget {
 
   /// Formula ostidagi izoh (masalan, qaysi tenglama qo‘llangani).
   final String? formulaNote;
+
+  /// Manbalardan keyin qo‘shimcha bloklar (masalan, bog‘liq vositalar).
+  final List<Widget> footer;
 
   @override
   Widget build(BuildContext context) {
@@ -376,6 +383,7 @@ class CalcScaffold extends StatelessWidget {
           )
         else
           for (final r in references) _Bullet(r),
+        ...footer,
         const SizedBox(height: FeSpace.xl),
       ],
     );
@@ -409,11 +417,15 @@ class _NumberField extends StatelessWidget {
     required this.controller,
     this.k,
     this.signed = false,
+    this.suffix,
   });
 
   final String label;
   final TextEditingController controller;
   final String? k;
+
+  /// Maydon ichidagi birlik (masalan, «L·mol⁻¹·cm⁻¹»).
+  final String? suffix;
 
   /// Manfiy qiymat mumkinmi (masalan, muhit harorati).
   final bool signed;
@@ -427,7 +439,7 @@ class _NumberField extends StatelessWidget {
       signed: signed,
     ),
     textInputAction: TextInputAction.next,
-    decoration: InputDecoration(labelText: label),
+    decoration: InputDecoration(labelText: label, suffixText: suffix),
   );
 }
 

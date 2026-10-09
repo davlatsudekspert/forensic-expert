@@ -1,0 +1,52 @@
+{
+  "role": "spectro",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "s01",
+      "title": "[student] Yo‘riqnomalar: UB-spektrofotometriya kartasi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s01_student_yo_riqnomalar_ub_spektrofotometr.png"
+    },
+    {
+      "id": "s02",
+      "title": "[student] Karta ochildi: sarlavha va ilmiy asos",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s02_student_karta_ochildi_sarlavha_va_ilmiy_.png"
+    },
+    {
+      "id": "s03",
+      "title": "[student] Karta: ehtiyot choralari (faqat UB spektri emas)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s03_student_karta_ehtiyot_choralari_faqat_ub.png"
+    },
+    {
+      "id": "s04",
+      "title": "[student] Karta: bog‘liq vositalar va manbalar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s04_student_karta_bog_liq_vositalar_va_manba.png"
+    },
+    {
+      "id": "s05",
+      "title": "[student] Bog‘liq vosita → Ber–Lambert sahifasi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s05_student_bog_liq_vosita_ber_lambert_sahif.png"
+    },
+    {
+      "id": "s06",
+      "title": "Tarmoq o‘chiq",
+      "result": "PASS",
+      "notes": [
+        "Bloklangan HTTP urinishlari: 0"
+      ],
+      "screenshot": null
+    }
+  ],
+  "pass": 6,
+  "fail": 0
+}

@@ -12170,6 +12170,120 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{sections} sections · {refs}'**
   String rdGuidelineMeta(int sections, String refs);
+
+  /// Tool name: Beer–Lambert calculator.
+  ///
+  /// In en, this message translates to:
+  /// **'Beer–Lambert law (A = ε·l·c)'**
+  String get toolBeerLambertName;
+
+  /// Tool description: Beer–Lambert calculator.
+  ///
+  /// In en, this message translates to:
+  /// **'Find absorbance, concentration or absorptivity from A = ε·l·c, on a molar or mass basis, with units.'**
+  String get toolBeerLambertDesc;
+
+  /// Field/result label: absorbance A.
+  ///
+  /// In en, this message translates to:
+  /// **'Absorbance'**
+  String get calcBeerAbsorbance;
+
+  /// Field/result label: molar absorptivity ε.
+  ///
+  /// In en, this message translates to:
+  /// **'Molar absorptivity'**
+  String get calcBeerAbsorptivityMolar;
+
+  /// Field/result label: specific (mass) absorptivity a.
+  ///
+  /// In en, this message translates to:
+  /// **'Specific (mass) absorptivity'**
+  String get calcBeerAbsorptivityMass;
+
+  /// Field/result label: concentration c.
+  ///
+  /// In en, this message translates to:
+  /// **'Concentration'**
+  String get calcBeerConcentration;
+
+  /// Field label: optical path length l.
+  ///
+  /// In en, this message translates to:
+  /// **'Path length (l)'**
+  String get calcBeerPath;
+
+  /// Dropdown label: unit of the calculated concentration.
+  ///
+  /// In en, this message translates to:
+  /// **'Result unit (c)'**
+  String get calcBeerResultUnit;
+
+  /// Label above the basis choice (molar or mass).
+  ///
+  /// In en, this message translates to:
+  /// **'Absorptivity basis'**
+  String get calcBeerBasis;
+
+  /// Choice: molar basis.
+  ///
+  /// In en, this message translates to:
+  /// **'Molar (ε, mol/L)'**
+  String get calcBeerBasisMolar;
+
+  /// Choice: mass basis.
+  ///
+  /// In en, this message translates to:
+  /// **'Mass (a, g/L)'**
+  String get calcBeerBasisMass;
+
+  /// Note under the formula: symbols and units.
+  ///
+  /// In en, this message translates to:
+  /// **'A — absorbance (dimensionless); ε — molar absorptivity, L·mol⁻¹·cm⁻¹ (or a — mass absorptivity, L·g⁻¹·cm⁻¹); l — path length, cm; c — concentration, mol/L (or g/L).'**
+  String get calcBeerFormulaNote;
+
+  /// Validation: concentration unit does not match the basis.
+  ///
+  /// In en, this message translates to:
+  /// **'The concentration unit does not match the absorptivity basis: use mol/L units with molar ε and g/L-type units with mass a.'**
+  String get calcBeerErrorBasis;
+
+  /// Assumption bullet.
+  ///
+  /// In en, this message translates to:
+  /// **'Definitional relationship: absorbance is proportional to path length and concentration. No absorptivity values are built in — enter a value from your own calibration or a verified source for the same wavelength, solvent and pH.'**
+  String get calcBeerAssumptionDefinition;
+
+  /// Assumption bullet.
+  ///
+  /// In en, this message translates to:
+  /// **'A is the sample absorbance corrected for the blank (reagent or matrix blank) at the chosen wavelength.'**
+  String get calcBeerAssumptionBlank;
+
+  /// Limitation bullet.
+  ///
+  /// In en, this message translates to:
+  /// **'Valid only within the working range where linearity has been shown by calibration; ICH Q2(R2) §3.2.2.1 recommends at least five concentrations across the range. Outside it, dilute the sample or use the calibration curve.'**
+  String get calcBeerLimitationLinear;
+
+  /// Limitation bullet.
+  ///
+  /// In en, this message translates to:
+  /// **'Absorbance does not identify a substance. UV-Vis has low specificity; identity must be confirmed by another technique (for example, chromatography with mass spectrometry).'**
+  String get calcBeerLimitationIdentity;
+
+  /// Reference bullet for the Beer–Lambert calculator.
+  ///
+  /// In en, this message translates to:
+  /// **'IUPAC Gold Book: “Beer–Lambert law”, doi:10.1351/goldbook.B00626 · Swinehart DF. The Beer-Lambert law. J Chem Educ 1962;39(7):333, doi:10.1021/ed039p333 · Linearity: ICH Q2(R2) (2023), §3.2.2.1.'**
+  String get calcBeerReference;
+
+  /// Section header: links to calibration and LOD/LOQ tools.
+  ///
+  /// In en, this message translates to:
+  /// **'Related tools: calibration and limits'**
+  String get calcBeerRelatedTools;
 }
 
 class _AppLocalizationsDelegate
