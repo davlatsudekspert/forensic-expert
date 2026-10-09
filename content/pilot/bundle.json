@@ -60677,6 +60677,652 @@
         "ru": "machine_draft",
         "uz": "machine_draft"
       }
+    },
+    {
+      "term_id": "T-TOKS-STEAM-DISTILLATION",
+      "kind": "term",
+      "original": "suv bug‘i bilan haydash",
+      "original_lang": "uz",
+      "canonical": "steam distillation",
+      "localized": {
+        "en": "steam distillation",
+        "ru": "перегонка с водяным паром",
+        "uz": "suv bug‘i bilan haydash"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-DISTILLATE",
+      "kind": "term",
+      "original": "distillyat",
+      "original_lang": "uz",
+      "canonical": "distillate",
+      "localized": {
+        "en": "distillate",
+        "ru": "дистиллят",
+        "uz": "distillyat"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-MINERALIZATION",
+      "kind": "term",
+      "original": "mineralizatsiya",
+      "original_lang": "uz",
+      "canonical": "mineralization",
+      "localized": {
+        "en": "mineralization",
+        "ru": "минерализация",
+        "uz": "mineralizatsiya"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-MINERALIZATE",
+      "kind": "term",
+      "original": "mineralizat",
+      "original_lang": "uz",
+      "canonical": "mineralizate (digest)",
+      "localized": {
+        "en": "mineralizate (digest)",
+        "ru": "минерализат",
+        "uz": "mineralizat"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-DENITRATION",
+      "kind": "term",
+      "original": "denitratsiya",
+      "original_lang": "uz",
+      "canonical": "denitration",
+      "localized": {
+        "en": "denitration",
+        "ru": "денитрация",
+        "uz": "denitratsiya"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-DESTRUCTION",
+      "kind": "term",
+      "original": "destruksiya",
+      "original_lang": "uz",
+      "canonical": "destruction (partial digestion)",
+      "localized": {
+        "en": "destruction (partial digestion)",
+        "ru": "деструкция",
+        "uz": "destruksiya"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-FRACTIONAL-METHOD",
+      "kind": "term",
+      "original": "kasrli usul",
+      "original_lang": "uz",
+      "canonical": "fractional method",
+      "localized": {
+        "en": "fractional method",
+        "ru": "дробный метод",
+        "uz": "kasrli usul"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-MASKING",
+      "kind": "term",
+      "original": "niqoblash",
+      "original_lang": "uz",
+      "canonical": "masking",
+      "localized": {
+        "en": "masking",
+        "ru": "маскирование",
+        "uz": "niqoblash"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-DIALYSIS",
+      "kind": "term",
+      "original": "dializ",
+      "original_lang": "uz",
+      "canonical": "dialysis",
+      "localized": {
+        "en": "dialysis",
+        "ru": "диализ",
+        "uz": "dializ"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-EXTRACTION",
+      "kind": "term",
+      "original": "ekstraksiya",
+      "original_lang": "uz",
+      "canonical": "extraction",
+      "localized": {
+        "en": "extraction",
+        "ru": "экстракция",
+        "uz": "ekstraksiya"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-EXTRACTANT",
+      "kind": "term",
+      "original": "ekstragent",
+      "original_lang": "uz",
+      "canonical": "extractant",
+      "localized": {
+        "en": "extractant",
+        "ru": "экстрагент",
+        "uz": "ekstragent"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-BACK-EXTRACTION",
+      "kind": "term",
+      "original": "qayta ekstraksiya",
+      "original_lang": "uz",
+      "canonical": "back-extraction",
+      "localized": {
+        "en": "back-extraction",
+        "ru": "реэкстракция",
+        "uz": "qayta ekstraksiya"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-PARTITION-COEFFICIENT",
+      "kind": "term",
+      "original": "taqsimlanish koeffitsienti",
+      "original_lang": "uz",
+      "canonical": "partition coefficient",
+      "localized": {
+        "en": "partition coefficient",
+        "ru": "коэффициент распределения",
+        "uz": "taqsimlanish koeffitsienti"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-SALTING-OUT",
+      "kind": "term",
+      "original": "tuzlash (tuzlovchi elektrolit)",
+      "original_lang": "uz",
+      "canonical": "salting-out",
+      "localized": {
+        "en": "salting-out",
+        "ru": "высаливание",
+        "uz": "tuzlash (tuzlovchi elektrolit)"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-AZEOTROPE",
+      "kind": "term",
+      "original": "azeotrop aralashma",
+      "original_lang": "uz",
+      "canonical": "azeotrope",
+      "localized": {
+        "en": "azeotrope",
+        "ru": "азеотропная смесь",
+        "uz": "azeotrop aralashma"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-ACIDIFIED-WATER-METHOD",
+      "kind": "term",
+      "original": "nordonlashtirilgan suv usuli",
+      "original_lang": "uz",
+      "canonical": "acidified-water method",
+      "localized": {
+        "en": "acidified-water method",
+        "ru": "метод подкисленной воды",
+        "uz": "nordonlashtirilgan suv usuli"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-STAS-OTTO-METHOD",
+      "kind": "term",
+      "original": "nordonlashtirilgan spirt (Stas–Otto) usuli",
+      "original_lang": "uz",
+      "canonical": "acidified-alcohol (Stas–Otto) method",
+      "localized": {
+        "en": "acidified-alcohol (Stas–Otto) method",
+        "ru": "метод подкисленного спирта (Стаса–Отто)",
+        "uz": "nordonlashtirilgan spirt (Stas–Otto) usuli"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-VOLATILE-POISONS",
+      "kind": "term",
+      "original": "uchuvchi zaharlar",
+      "original_lang": "uz",
+      "canonical": "volatile poisons",
+      "localized": {
+        "en": "volatile poisons",
+        "ru": "летучие яды",
+        "uz": "uchuvchi zaharlar"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-METAL-POISONS",
+      "kind": "term",
+      "original": "metall zaharlar",
+      "original_lang": "uz",
+      "canonical": "metal poisons",
+      "localized": {
+        "en": "metal poisons",
+        "ru": "металлические яды",
+        "uz": "metall zaharlar"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-MARSH-TEST",
+      "kind": "term",
+      "original": "Marsh reaksiyasi",
+      "original_lang": "uz",
+      "canonical": "Marsh test",
+      "localized": {
+        "en": "Marsh test",
+        "ru": "реакция Марша",
+        "uz": "Marsh reaksiyasi"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-SANGER-BLACK-TEST",
+      "kind": "term",
+      "original": "Zanger–Blek reaksiyasi",
+      "original_lang": "uz",
+      "canonical": "Sanger–Black test",
+      "localized": {
+        "en": "Sanger–Black test",
+        "ru": "реакция Зангер–Блека",
+        "uz": "Zanger–Blek reaksiyasi"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-PRUSSIAN-BLUE",
+      "kind": "term",
+      "original": "Berlin zangorisi",
+      "original_lang": "uz",
+      "canonical": "Prussian blue",
+      "localized": {
+        "en": "Prussian blue",
+        "ru": "берлинская лазурь",
+        "uz": "Berlin zangorisi"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-ISOCYANIDE-TEST",
+      "kind": "term",
+      "original": "izonitril reaksiyasi",
+      "original_lang": "uz",
+      "canonical": "isocyanide (carbylamine) test",
+      "localized": {
+        "en": "isocyanide (carbylamine) test",
+        "ru": "изонитрильная проба",
+        "uz": "izonitril reaksiyasi"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-FUJIWARA-REACTION",
+      "kind": "term",
+      "original": "Fujivara reaksiyasi",
+      "original_lang": "uz",
+      "canonical": "Fujiwara reaction",
+      "localized": {
+        "en": "Fujiwara reaction",
+        "ru": "реакция Фудживары",
+        "uz": "Fujivara reaksiyasi"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-FUCHSIN-SULFUROUS-ACID",
+      "kind": "term",
+      "original": "fuksin-sulfit kislota",
+      "original_lang": "uz",
+      "canonical": "fuchsin-sulfurous acid (Schiff reagent)",
+      "localized": {
+        "en": "fuchsin-sulfurous acid (Schiff reagent)",
+        "ru": "фуксинсернистая кислота",
+        "uz": "fuksin-sulfit kislota"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-DITHIZONE",
+      "kind": "term",
+      "original": "ditizon",
+      "original_lang": "uz",
+      "canonical": "dithizone",
+      "localized": {
+        "en": "dithizone",
+        "ru": "дитизон",
+        "uz": "ditizon"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-DIETHYLDITHIOCARBAMATE",
+      "kind": "term",
+      "original": "dietilditiokarbamat",
+      "original_lang": "uz",
+      "canonical": "diethyldithiocarbamate",
+      "localized": {
+        "en": "diethyldithiocarbamate",
+        "ru": "диэтилдитиокарбамат",
+        "uz": "dietilditiokarbamat"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-CHOLINESTERASE",
+      "kind": "term",
+      "original": "xolinesteraza",
+      "original_lang": "uz",
+      "canonical": "cholinesterase",
+      "localized": {
+        "en": "cholinesterase",
+        "ru": "холинэстераза",
+        "uz": "xolinesteraza"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-ORGANOPHOSPHORUS",
+      "kind": "term",
+      "original": "fosfororganik birikmalar",
+      "original_lang": "uz",
+      "canonical": "organophosphorus compounds",
+      "localized": {
+        "en": "organophosphorus compounds",
+        "ru": "фосфорорганические соединения",
+        "uz": "fosfororganik birikmalar"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-ORGANOCHLORINE",
+      "kind": "term",
+      "original": "xlororganik birikmalar",
+      "original_lang": "uz",
+      "canonical": "organochlorine compounds",
+      "localized": {
+        "en": "organochlorine compounds",
+        "ru": "хлорорганические соединения",
+        "uz": "xlororganik birikmalar"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-SYNTHETIC-PYRETHROIDS",
+      "kind": "term",
+      "original": "sintetik piretroidlar",
+      "original_lang": "uz",
+      "canonical": "synthetic pyrethroids",
+      "localized": {
+        "en": "synthetic pyrethroids",
+        "ru": "синтетические пиретроиды",
+        "uz": "sintetik piretroidlar"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-MOLYBDENUM-BLUE",
+      "kind": "term",
+      "original": "fosfor-molibden ko‘ki",
+      "original_lang": "uz",
+      "canonical": "molybdenum blue",
+      "localized": {
+        "en": "molybdenum blue",
+        "ru": "фосфорномолибденовая синь",
+        "uz": "fosfor-molibden ko‘ki"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-NEGATIVE-VALUE-REACTION",
+      "kind": "term",
+      "original": "manfiy ahamiyatli reaksiya",
+      "original_lang": "uz",
+      "canonical": "reaction of negative (exclusionary) value",
+      "localized": {
+        "en": "reaction of negative (exclusionary) value",
+        "ru": "реакция отрицательного значения",
+        "uz": "manfiy ahamiyatli reaksiya"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-MICROCRYSTAL-TEST",
+      "kind": "term",
+      "original": "mikrokristalloskopik reaksiya",
+      "original_lang": "uz",
+      "canonical": "microcrystal test",
+      "localized": {
+        "en": "microcrystal test",
+        "ru": "микрокристаллоскопическая реакция",
+        "uz": "mikrokristalloskopik reaksiya"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-XENOBIOTIC",
+      "kind": "term",
+      "original": "ksenobiotik",
+      "original_lang": "uz",
+      "canonical": "xenobiotic",
+      "localized": {
+        "en": "xenobiotic",
+        "ru": "ксенобиотик",
+        "uz": "ksenobiotik"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-CUMULATION",
+      "kind": "term",
+      "original": "kumulyatsiya",
+      "original_lang": "uz",
+      "canonical": "cumulation",
+      "localized": {
+        "en": "cumulation",
+        "ru": "кумуляция",
+        "uz": "kumulyatsiya"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-POTENTIATION",
+      "kind": "term",
+      "original": "potensiyalanish (sinergizm)",
+      "original_lang": "uz",
+      "canonical": "potentiation (synergy)",
+      "localized": {
+        "en": "potentiation (synergy)",
+        "ru": "потенцирование (синергизм)",
+        "uz": "potensiyalanish (sinergizm)"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
+    },
+    {
+      "term_id": "T-TOKS-PHYSICAL-EVIDENCE",
+      "kind": "term",
+      "original": "ashyoviy dalil",
+      "original_lang": "uz",
+      "canonical": "physical evidence (exhibit)",
+      "localized": {
+        "en": "physical evidence (exhibit)",
+        "ru": "вещественное доказательство",
+        "uz": "ashyoviy dalil"
+      },
+      "status": {
+        "en": "machine_draft",
+        "ru": "machine_draft",
+        "uz": "machine_draft"
+      }
     }
   ],
   "review_actions": [],

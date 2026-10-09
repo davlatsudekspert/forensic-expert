@@ -139,6 +139,7 @@ class CitationData {
       authors: g.title == null ? const [] : authors,
       container: g.journal,
       publisher: g.publisher,
+      place: g.place,
       year: g.year,
       volume: g.volume,
       issue: g.issue,

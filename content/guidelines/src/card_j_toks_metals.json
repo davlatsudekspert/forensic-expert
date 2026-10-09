@@ -1,0 +1,193 @@
+{
+  "id": "guideline.chem.toks_metal_poisons",
+  "discipline_codes": ["forensic_chemistry", "forensic_toxicology"],
+  "status": "NEEDS_REVIEW",
+  "access": "free",
+  "updated": "2026-10-09",
+  "translation_status": {"uz": "AUTHORED", "ru": "DRAFT", "en": "DRAFT"},
+  "related_tool_ids": [],
+  "title": {
+    "uz": "Metall zaharlar: mishyak, simob, qo‘rg‘oshin, bariy va boshqalarni aniqlash reaksiyalari",
+    "ru": "Металлические яды: реакции обнаружения мышьяка, ртути, свинца, бария и других элементов",
+    "en": "Metal poisons: detection reactions for arsenic, mercury, lead, barium and others"
+  },
+  "summary": {
+    "uz": "Mineralizat yoki destruktatda metall kationlari o‘ziga xos rangli komplekslar, cho‘kmalar va mikrokristallar orqali aniqlanadi. Mishyak arsinga (AsH3) qaytarilib Zanger–Blek (simob galogenidli qog‘oz) va Marsh (qaytaruvchi naychadagi metall dog‘) usullarida, simob ditizon va mis(I) yodid bilan, qo‘rg‘oshin va bariy esa mineralizat cho‘kmasidan aniqlanadi. Ko‘p reaksiyalar faqat «manfiy ahamiyatli» (sezgir, lekin xos emas): musbat natija qo‘shimcha reaksiyalar va miqdoriy tahlil bilan tasdiqlanadi.",
+    "ru": "В минерализате или деструктате катионы металлов обнаруживают по специфичным окрашенным комплексам, осадкам и микрокристаллам. Мышьяк восстанавливают до арсина (AsH3) и обнаруживают методами Зангер–Блека (бумага с галогенидом ртути) и Марша (металлический налёт в восстановительной трубке), ртуть — с дитизоном и иодидом меди(I), свинец и барий — в осадке минерализата. Многие реакции имеют лишь «отрицательное значение» (чувствительны, но не специфичны): положительный результат подтверждают дополнительными реакциями и количественным определением.",
+    "en": "In the digest or destruction liquid, metal cations are detected through specific coloured complexes, precipitates and microcrystals. Arsenic is reduced to arsine (AsH3) and detected by the Sanger–Black test (mercury-halide paper) and the Marsh test (metallic mirror in the reduction tube), mercury with dithizone and copper(I) iodide, lead and barium in the digest precipitate. Many reactions have only 'negative value' (sensitive but not specific): a positive result is confirmed by further reactions and quantitation."
+  },
+  "sections": [
+    {
+      "key": "basis",
+      "title": {"uz": "Asosiy tamoyil", "ru": "Основной принцип", "en": "Principle"},
+      "body": {
+        "uz": "Metall birikmalari organizmda oqsillar, fermentlarning sulfgidril guruhlari bilan birikadi; tahlil uchun ob’ekt mineralizatsiya qilinadi (simob uchun — destruksiya), so‘ng kationlar kasrli usulda aniqlanadi [toks_majmua2025] (50–51, 57, 78-b.).\n\nSud-kimyoviy ahamiyatiga ko‘ra reaksiyalar ikki xil [toks_majmua2025] (61, 76-b.):\n• «manfiy ahamiyatli» — sezgir, lekin o‘ziga xos emas: manfiy natija moddani istisno qiladi, musbat natija esa tekshiruvni davom ettirishni talab qiladi (masalan, ditizon reaksiyalari, Zanger–Blek reaksiyasi);\n• tasdiqlovchi — o‘ziga xosroq reaksiyalar va mikrokristalloskopiya, keyin miqdoriy aniqlash.\n\nAsosiy kimyo: mishyak birikmalari ajralayotgan vodorod ta’sirida uchuvchan arsinga qaytariladi; besh valentli mishyak qiyinroq qaytariladi, shuning uchun qalay(II) xlorid qo‘shiladi va rux mis bilan qoplanadi [toks_majmua2025] (75-b.).",
+        "ru": "Соединения металлов связываются в организме с белками и сульфгидрильными группами ферментов; для анализа объект минерализуют (на ртуть — деструкция), затем катионы обнаруживают дробным методом [toks_majmua2025] (с. 50–51, 57, 78).\n\nПо судебно-химическому значению реакции двух видов [toks_majmua2025] (с. 61, 76):\n• «отрицательного значения» — чувствительные, но неспецифичные: отрицательный результат исключает вещество, положительный требует продолжения исследования (например, реакции с дитизоном, реакция Зангер–Блека);\n• подтверждающие — более специфичные реакции и микрокристаллоскопия, затем количественное определение.\n\nОсновная химия: соединения мышьяка восстанавливаются выделяющимся водородом до летучего арсина; пятивалентный мышьяк восстанавливается труднее, поэтому добавляют хлорид олова(II), а цинк омедняют [toks_majmua2025] (с. 75).",
+        "en": "Metal compounds bind in the body to proteins and enzyme sulfhydryl groups; for analysis the specimen is mineralized (for mercury — destruction) and the cations detected by the fractional method [toks_majmua2025] (pp. 50–51, 57, 78).\n\nBy forensic value the reactions are of two kinds [toks_majmua2025] (pp. 61, 76):\n• of 'negative value' — sensitive but not specific: a negative result excludes the substance, a positive one requires further work (e.g. dithizone reactions, the Sanger–Black test);\n• confirmatory — more specific reactions and microcrystal tests, then quantitation.\n\nCore chemistry: arsenic compounds are reduced by nascent hydrogen to volatile arsine; pentavalent arsenic is reduced less readily, so tin(II) chloride is added and the zinc is copper-coated [toks_majmua2025] (p. 75)."
+      },
+      "citations": ["toks_majmua2025"]
+    },
+    {
+      "key": "scope",
+      "title": {"uz": "Qo‘llanish sohasi", "ru": "Область применения", "en": "Scope"},
+      "body": {
+        "uz": "Majmuada to‘liq tekshiruvga kiruvchi metall zaharlar va ularning manbalari [toks_majmua2025] (58–80-b.):\n• Bariy — kemiruvchilarga qarshi vositalar (bariy karbonat), reaktivlar; mineralizat cho‘kmasida qo‘rg‘oshin sulfat bilan birga bo‘lishi mumkin.\n• Qo‘rg‘oshin — bo‘yoqlar, akkumulyatorlar; tetraetilqo‘rg‘oshin (TEQ) — etillangan yoqilg‘ida.\n• Mishyak — mishyak angidridi va boshqa birikmalar; organizmda to‘planadi, murdada uzoq vaqt aniqlanishi mumkin.\n• Simob — sulema (HgCl2) va organik simob birikmalari (masalan, urug‘ dorilash uchun etilmerkurxlorid).\n• Shuningdek kumush, mis, marganets, xrom, talliy, surma, rux (va rux fosfidi), vismut, kadmiy.\n\nMarganets va xromning yuqori valentli, surmaning uch valentli birikmalari kuchliroq ta’sir qiladi [toks_majmua2025] (58, 68-b.).",
+        "ru": "Металлические яды, входящие в полное исследование, и их источники по комплексу [toks_majmua2025] (с. 58–80):\n• Барий — средства против грызунов (карбонат бария), реактивы; в осадке минерализата может быть вместе с сульфатом свинца.\n• Свинец — краски, аккумуляторы; тетраэтилсвинец (ТЭС) — в этилированном топливе.\n• Мышьяк — мышьяковистый ангидрид и другие соединения; накапливается в организме, может обнаруживаться в трупе длительное время.\n• Ртуть — сулема (HgCl2) и ртутьорганические соединения (например, этилмеркурхлорид для протравливания семян).\n• А также серебро, медь, марганец, хром, таллий, сурьма, цинк (и фосфид цинка), висмут, кадмий.\n\nСоединения марганца и хрома высшей валентности и трёхвалентной сурьмы действуют сильнее [toks_majmua2025] (с. 58, 68).",
+        "en": "Metal poisons in the full examination and their sources, per the teaching complex [toks_majmua2025] (pp. 58–80):\n• Barium — rodenticides (barium carbonate), reagents; in the digest precipitate it may occur together with lead sulfate.\n• Lead — paints, batteries; tetraethyl lead (TEL) — in leaded fuel.\n• Arsenic — arsenic trioxide and other compounds; it accumulates and can be detected in a body for a long time.\n• Mercury — mercuric chloride (HgCl2) and organomercury compounds (e.g. ethylmercury chloride seed dressings).\n• Also silver, copper, manganese, chromium, thallium, antimony, zinc (and zinc phosphide), bismuth, cadmium.\n\nHigher-valence manganese and chromium compounds and trivalent antimony compounds act more strongly [toks_majmua2025] (pp. 58, 68)."
+      },
+      "citations": ["toks_majmua2025"]
+    },
+    {
+      "key": "methods",
+      "title": {"uz": "Reaksiyalar va kutiladigan natijalar", "ru": "Реакции и ожидаемые наблюдения", "en": "Reactions and expected observations"},
+      "body": {
+        "uz": "Mishyak [toks_majmua2025] (75–77, 211–213-b.):\n• Zanger–Blek: mineralizat, sulfat kislota, qalay(II) xlorid va mis bilan qoplangan rux; ajralgan arsin simob(II) bromid yoki xlorid shimdirilgan qog‘ozni sariqdan qo‘ng‘irgacha bo‘yaydi. Vodorod sulfidni ushlash uchun qo‘rg‘oshin atsetatli paxta qo‘yiladi. Manfiy ahamiyatli: manfiy bo‘lsa tekshiruv to‘xtatiladi, musbat bo‘lsa Marsh usuli shart.\n• Marsh: avval reaktivlar «bo‘sh» tajribada mishyakka tekshiriladi va qurilmadan havo vodorod bilan to‘liq siqib chiqariladi; so‘ng mineralizat qo‘shiladi, qaytaruvchi naychaning keng qismi qizdiriladi, tor qismi ho‘l pilik bilan sovitiladi. Mishyak bo‘lsa — yaltiroq qora-kulrang dog‘; alanga ko‘kimtir tus oladi, sarimsoq hidi seziladi, alangaga tutilgan sovuq chinni idishda dog‘ hosil bo‘ladi. Dog‘ havoda qizdirilganda oktaedrik kristallar (mishyak oksidi) hosil bo‘ladi; surma dog‘i amorf qoldiq beradi. Gipoxlorit eritmasida mishyak dog‘i eriydi, surmaniki erimaydi.\n• Kumush dietilditiokarbamatning piridindagi eritmasi arsin bilan qizil-pushti rang beradi (kolorimetriyada ham ishlatiladi).\n\nSimob (destruktatda) [toks_majmua2025] (79, 213-b.):\n• Ditizon (xloroformda, askorbin kislota ishtirokida) — sariq-to‘q sariq rang.\n• Mis(I) yodid suspenziyasi — Cu2[HgI4] ning qizil-to‘q sariq cho‘kmasi; oksidlovchilar xalaqit beradi.\n\nQo‘rg‘oshin va bariy (mineralizat cho‘kmasi) [toks_majmua2025] (59–61-b.):\n• Cho‘kma sirka kislotali issiq ammoniy atsetat bilan yuviladi: qo‘rg‘oshin sulfat eriydi, bariy sulfat qoladi.\n• Bariy: qayta kristallanish (sulfat kislota bilan qizdirilgach mayda «xoch» va linzasimon kristallar), bariy yodat mikrokristallari, natriy rodizonat bilan qizg‘ish-qo‘ng‘ir cho‘kma (HCl dan keyin qizil rang saqlanadi, stronsiyda yo‘qoladi), xromat bilan sariq cho‘kma.\n• Qo‘rg‘oshin: ditizon (qizil rang, manfiy ahamiyatli), mis atsetat va kaliy nitrit bilan qora-qo‘ng‘ir kubsimon kristallar, seziy xlorid va kaliy yodid bilan sariq-yashil ninalar, kaliy xromat bilan sariq cho‘kma (Pb(NO3)2 + K2CrO4 → PbCrO4↓ + 2KNO3), sulfat kislota bilan oq cho‘kma.\n\nBoshqa kationlar (qisqacha) [toks_majmua2025] (62–74-b.): kumush — ditizonat sariq, suyultirilgan HCl bilan chayqatilganda parchalanadi (simob ditizonati saqlanadi); mis — dietilditiokarbamat holida ajratiladi; marganets — persulfat yoki periodat bilan permanganatgacha oksidlanadi (pushti-qizil rang); xrom — difenilkarbazid bilan qizil-binafsha rang; talliy va surma — brilliant yashil bilan toluolga o‘tuvchi ko‘k ion assotsiatlar; vismut — tiomochevina bilan limon-sariq rang; kadmiy va rux — dietilditiokarbamat holida ajratilib, sulfid va mikrokristall reaksiyalari bilan.",
+        "ru": "Мышьяк [toks_majmua2025] (с. 75–77, 211–213):\n• Зангер–Блек: минерализат, серная кислота, хлорид олова(II) и омеднённый цинк; выделяющийся арсин окрашивает бумагу, пропитанную бромидом или хлоридом ртути(II), от жёлтого до бурого. Для поглощения сероводорода помещают вату с ацетатом свинца. Реакция отрицательного значения: при отрицательном результате исследование прекращают, при положительном обязателен метод Марша.\n• Марш: сначала реактивы проверяют на мышьяк в «холостом» опыте и полностью вытесняют воздух из прибора водородом; затем вносят минерализат, широкую часть восстановительной трубки нагревают, узкую охлаждают мокрым фитилём. При наличии мышьяка — блестящий чёрно-серый налёт; пламя приобретает голубоватый оттенок, ощущается чесночный запах, на холодной фарфоровой чашке в пламени образуется налёт. При нагревании налёта на воздухе образуются октаэдрические кристаллы оксида мышьяка; налёт сурьмы даёт аморфный остаток. В растворе гипохлорита налёт мышьяка растворяется, сурьмы — нет.\n• Раствор диэтилдитиокарбамата серебра в пиридине даёт с арсином красно-розовое окрашивание (применяется и для колориметрии).\n\nРтуть (в деструктате) [toks_majmua2025] (с. 79, 213):\n• Дитизон (в хлороформе, в присутствии аскорбиновой кислоты) — жёлто-оранжевое окрашивание.\n• Взвесь иодида меди(I) — красно-оранжевый осадок Cu2[HgI4]; окислители мешают.\n\nСвинец и барий (осадок минерализата) [toks_majmua2025] (с. 59–61):\n• Осадок промывают горячим ацетатом аммония с уксусной кислотой: сульфат свинца растворяется, сульфат бария остаётся.\n• Барий: перекристаллизация (после нагревания с серной кислотой — мелкие крестообразные и линзовидные кристаллы), микрокристаллы иодата бария, родизонат натрия — красно-бурый осадок (после HCl красная окраска сохраняется, у стронция исчезает), хромат — жёлтый осадок.\n• Свинец: дитизон (красное окрашивание, отрицательного значения), ацетат меди и нитрит калия — чёрно-бурые кубические кристаллы, хлорид цезия и иодид калия — жёлто-зелёные иглы, хромат калия — жёлтый осадок (Pb(NO3)2 + K2CrO4 → PbCrO4↓ + 2KNO3), серная кислота — белый осадок.\n\nДругие катионы (кратко) [toks_majmua2025] (с. 62–74): серебро — жёлтый дитизонат, разрушающийся при встряхивании с разбавленной HCl (дитизонат ртути сохраняется); медь — выделяют в виде диэтилдитиокарбамата; марганец — окисляют персульфатом или периодатом до перманганата (розово-красная окраска); хром — дифенилкарбазид, красно-фиолетовая окраска; таллий и сурьма — синие ионные ассоциаты с бриллиантовым зелёным, переходящие в толуол; висмут — тиомочевина, лимонно-жёлтая окраска; кадмий и цинк — выделяют в виде диэтилдитиокарбаматов и обнаруживают сульфидными и микрокристаллическими реакциями.",
+        "en": "Arsenic [toks_majmua2025] (pp. 75–77, 211–213):\n• Sanger–Black: digest, sulfuric acid, tin(II) chloride and copper-coated zinc; arsine colours paper impregnated with mercury(II) bromide or chloride yellow to brown. Cotton with lead acetate traps hydrogen sulfide. A test of negative value: if negative the examination stops; if positive the Marsh test is mandatory.\n• Marsh: first the reagents are checked for arsenic in a blank run and all air is displaced from the apparatus by hydrogen; then the digest is added, the wide part of the reduction tube is heated and the narrow part cooled with a wet wick. Arsenic gives a shiny black-grey mirror; the flame takes a bluish tint, a garlic odour is noticed, and a cold porcelain dish held in the flame acquires a deposit. Heating the mirror in air gives octahedral crystals (arsenic oxide); an antimony mirror leaves an amorphous residue. Hypochlorite dissolves an arsenic mirror but not an antimony one.\n• Silver diethyldithiocarbamate in pyridine gives a red-pink colour with arsine (also used colorimetrically).\n\nMercury (in the destruction liquid) [toks_majmua2025] (pp. 79, 213):\n• Dithizone (in chloroform, with ascorbic acid) — yellow-orange colour.\n• Copper(I) iodide suspension — red-orange precipitate of Cu2[HgI4]; oxidants interfere.\n\nLead and barium (digest precipitate) [toks_majmua2025] (pp. 59–61):\n• The precipitate is washed with hot acidified ammonium acetate: lead sulfate dissolves, barium sulfate remains.\n• Barium: recrystallisation (after heating with sulfuric acid — small cross-shaped and lens-shaped crystals), barium iodate microcrystals, sodium rhodizonate — red-brown precipitate (red colour persists after HCl, fades with strontium), chromate — yellow precipitate.\n• Lead: dithizone (red colour, negative value), copper acetate with potassium nitrite — black-brown cubic crystals, caesium chloride with potassium iodide — yellow-green needles, potassium chromate — yellow precipitate (Pb(NO3)2 + K2CrO4 → PbCrO4↓ + 2KNO3), sulfuric acid — white precipitate.\n\nOther cations (brief) [toks_majmua2025] (pp. 62–74): silver — yellow dithizonate that decomposes on shaking with dilute HCl (mercury dithizonate persists); copper — isolated as the diethyldithiocarbamate; manganese — oxidised by persulfate or periodate to permanganate (pink-red); chromium — diphenylcarbazide, red-violet; thallium and antimony — blue ion associates with brilliant green extracted into toluene; bismuth — thiourea, lemon-yellow; cadmium and zinc — isolated as diethyldithiocarbamates and detected by sulfide and microcrystal reactions."
+      },
+      "citations": ["toks_majmua2025"]
+    },
+    {
+      "key": "advantages",
+      "title": {"uz": "Afzalliklari", "ru": "Преимущества", "en": "Advantages"},
+      "body": {
+        "uz": "• Kasrli reaksiyalar oddiy asbob-uskuna bilan bajariladi va har bir kation alohida qismda tekshiriladi [toks_majmua2025] (57-b.).\n• Marsh usuli dog‘ning bir necha mustaqil xossasini (ko‘rinish, alanga, hid, qizdirilgandagi kristallar, gipoxlorit sinovi) tekshirib, mishyakni surmadan ajratish imkonini beradi [toks_majmua2025] (76–77-b.).\n• Ditizon, dietilditiokarbamat va boshqa rangli komplekslar fotoelektrokolorimetrik miqdoriy aniqlashga ham asos bo‘ladi [toks_majmua2025] (61, 65, 77, 79-b.).",
+        "ru": "• Дробные реакции выполняются на простом оборудовании, каждый катион исследуют в отдельной порции [toks_majmua2025] (с. 57).\n• Метод Марша проверяет несколько независимых свойств налёта (вид, пламя, запах, кристаллы при нагревании, проба с гипохлоритом) и позволяет отличить мышьяк от сурьмы [toks_majmua2025] (с. 76–77).\n• Дитизонаты, диэтилдитиокарбаматы и другие окрашенные комплексы служат также основой фотоэлектроколориметрического количественного определения [toks_majmua2025] (с. 61, 65, 77, 79).",
+        "en": "• Fractional reactions need only simple equipment, and each cation is tested in its own portion [toks_majmua2025] (p. 57).\n• The Marsh test checks several independent properties of the mirror (appearance, flame, odour, crystals on heating, hypochlorite test) and distinguishes arsenic from antimony [toks_majmua2025] (pp. 76–77).\n• Dithizone, diethyldithiocarbamate and other coloured complexes also serve as the basis of photometric quantitation [toks_majmua2025] (pp. 61, 65, 77, 79)."
+      },
+      "citations": ["toks_majmua2025"]
+    },
+    {
+      "key": "limitations",
+      "title": {"uz": "Cheklovlar", "ru": "Ограничения", "en": "Limitations"},
+      "body": {
+        "uz": "• Ditizon ko‘p metallar bilan rangli komplekslar beradi (masalan, kumush va simob ditizonatlari ikkalasi ham sariq), shuning uchun niqoblash va farqlovchi sinovlar zarur [toks_majmua2025] (62–63, 67–68-b.).\n• Mis tetrarodanmerkuriat reaksiyasini temir, kobalt va nikel ham beradi; malaxit yashili reaksiyasini temir(III) berishi mumkin [toks_majmua2025] (64, 68-b.).\n• Mis(I) yodid bilan simob reaksiyasiga oksidlovchilar xalaqit beradi (erkin yod ajraladi) [toks_majmua2025] (79-b.).\n• Marganets, kadmiy kabi elementlar normada ham organlarda bo‘ladi — sifat reaksiyasi yolg‘iz o‘zi zaharlanishni ko‘rsatmaydi [toks_majmua2025] (65, 73-b.).\n• Tetraetilqo‘rg‘oshin qizdirilganda parchalanadi; uni yod bilan ishlab noorganik qo‘rg‘oshinga o‘tkazib aniqlash kerak [toks_majmua2025] (61–62-b.).",
+        "ru": "• Дитизон образует окрашенные комплексы со многими металлами (дитизонаты серебра и ртути оба жёлтые), поэтому необходимы маскирование и различающие пробы [toks_majmua2025] (с. 62–63, 67–68).\n• Реакцию меди с тетрароданомеркуриатом дают также железо, кобальт и никель; реакцию с малахитовым зелёным может давать железо(III) [toks_majmua2025] (с. 64, 68).\n• Реакции ртути с иодидом меди(I) мешают окислители (выделяется свободный иод) [toks_majmua2025] (с. 79).\n• Марганец, кадмий и подобные элементы присутствуют в органах и в норме — одна качественная реакция не доказывает отравления [toks_majmua2025] (с. 65, 73).\n• Тетраэтилсвинец разлагается при нагревании; его обнаруживают после обработки иодом и перевода в неорганический свинец [toks_majmua2025] (с. 61–62).",
+        "en": "• Dithizone forms coloured complexes with many metals (silver and mercury dithizonates are both yellow), so masking and distinguishing tests are needed [toks_majmua2025] (pp. 62–63, 67–68).\n• Iron, cobalt and nickel also give the copper tetrathiocyanatomercurate reaction; iron(III) may give the malachite-green reaction [toks_majmua2025] (pp. 64, 68).\n• Oxidants interfere with the copper(I) iodide test for mercury (free iodine is released) [toks_majmua2025] (p. 79).\n• Manganese, cadmium and similar elements are normally present in organs — a qualitative reaction alone does not prove poisoning [toks_majmua2025] (pp. 65, 73).\n• Tetraethyl lead decomposes on heating; it is detected after treatment with iodine and conversion to inorganic lead [toks_majmua2025] (pp. 61–62)."
+      },
+      "citations": ["toks_majmua2025"]
+    },
+    {
+      "key": "factors",
+      "title": {"uz": "Natijaga ta’sir qiluvchi omillar", "ru": "Факторы, влияющие на результат", "en": "Factors affecting the result"},
+      "body": {
+        "uz": "• Reaktivlar tozaligi: Marsh usulida reaktivlar «bo‘sh» tajribada mishyakdan holi ekanligi isbotlanmaguncha mineralizat tekshirilmaydi [toks_majmua2025] (76, 212-b.).\n• Mineralizatda oksidlovchilar qolmasligi kerak — ular mishyak va qo‘rg‘oshin tahliliga xalaqit beradi [toks_majmua2025] (53-b.).\n• pH va niqoblovchilar: talliy ditizon reaksiyasi kuchli ishqoriy muhitda sianid, sitrat, tiomochevina va gidroksilamin ishtirokida o‘tkaziladi, bunda mis, kadmiy, rux, kobalt va nikel komplekslari buziladi [toks_majmua2025] (67–68-b.).\n• Ob’ekt tanlash: simob uchun jigar va buyrak (alohida), siydik va qon ham tekshiriladi; surunkali zaharlanishda soch va tirnoq ma’lumot beradi [toks_majmua2025] (58, 78-b.).\n• Zanger–Blek qurilmasida vodorod sulfid qo‘rg‘oshin atsetatli paxta bilan ushlanmasa, qog‘ozdagi dog‘ ishonchsiz bo‘ladi [toks_majmua2025] (75–76-b.).",
+        "ru": "• Чистота реактивов: в методе Марша минерализат не исследуют, пока «холостой» опыт не покажет отсутствие мышьяка в реактивах [toks_majmua2025] (с. 76, 212).\n• В минерализате не должно оставаться окислителей — они мешают определению мышьяка и свинца [toks_majmua2025] (с. 53).\n• pH и маскирующие агенты: реакцию таллия с дитизоном ведут в сильнощелочной среде в присутствии цианида, цитрата, тиомочевины и гидроксиламина, при этом комплексы меди, кадмия, цинка, кобальта и никеля разрушаются [toks_majmua2025] (с. 67–68).\n• Выбор объекта: на ртуть — печень и почки (раздельно), также моча и кровь; при хроническом отравлении информативны волосы и ногти [toks_majmua2025] (с. 58, 78).\n• Если в приборе Зангер–Блека сероводород не поглощается ватой с ацетатом свинца, пятно на бумаге недостоверно [toks_majmua2025] (с. 75–76).",
+        "en": "• Reagent purity: in the Marsh test the digest is not examined until a blank run shows the reagents are free of arsenic [toks_majmua2025] (pp. 76, 212).\n• No oxidants may remain in the digest — they interfere with arsenic and lead determinations [toks_majmua2025] (p. 53).\n• pH and masking agents: the thallium–dithizone reaction is run in strongly alkaline medium with cyanide, citrate, thiourea and hydroxylamine, which destroy the copper, cadmium, zinc, cobalt and nickel complexes [toks_majmua2025] (pp. 67–68).\n• Specimen choice: for mercury liver and kidney (separately), plus urine and blood; in chronic poisoning hair and nails are informative [toks_majmua2025] (pp. 58, 78).\n• If hydrogen sulfide is not trapped by lead-acetate cotton in the Sanger–Black apparatus, the paper stain is unreliable [toks_majmua2025] (pp. 75–76)."
+      },
+      "citations": ["toks_majmua2025"]
+    },
+    {
+      "key": "cautions",
+      "title": {"uz": "Ehtiyot choralari va xavfsizlik", "ru": "Предосторожности и безопасность", "en": "Cautions and safety"},
+      "body": {
+        "uz": "• Marsh qurilmasi: vodorod-havo aralashmasi portlaydi. Qurilmadan havo to‘liq siqib chiqarilganini to‘nkarilgan probirkadagi gazni yoqib tekshirish kerak (toza vodorod tovushsiz yonadi); voronkada doimo bir oz kislota qoldiriladi, toki naychaga havo kirmasin; qurilma sochiq bilan yopiladi [toks_majmua2025] (76, 212-b.).\n• Arsin (AsH3) va vodorod sulfid o‘ta zaharli gazlar — Zanger–Blek va Marsh reaksiyalari so‘ruvchi shkafda bajariladi (umumiy laboratoriya xavfsizligi talabi).\n• Talliy, mis va boshqa metallarni niqoblash uchun kaliy sianid ishlatiladi — u faqat ishqoriy muhitda va so‘ruvchi shkafda qo‘llanadi, kislota bilan aralashtirilmaydi [toks_majmua2025] (56, 67–68-b.).\n• Simob tuzlari, ditizon eritmalari (xloroformda) va piridin bilan ishlash — qo‘lqop va so‘ruvchi shkafda; simob chiqindilari alohida yig‘iladi (umumiy laboratoriya xavfsizligi talabi).\n• Bitta rangli reaksiya asosida xulosa chiqarilmaydi; topilgan metall miqdori va uning normada uchrashi hisobga olinadi [toks_majmua2025] (17, 58-b.).",
+        "ru": "• Прибор Марша: смесь водорода с воздухом взрывоопасна. Полноту вытеснения воздуха проверяют поджиганием газа в перевёрнутой пробирке (чистый водород сгорает беззвучно); в воронке всегда оставляют немного кислоты, чтобы в трубку не попал воздух; прибор накрывают полотенцем [toks_majmua2025] (с. 76, 212).\n• Арсин (AsH3) и сероводород — сильно ядовитые газы: реакции Зангер–Блека и Марша выполняют под тягой (общее требование лабораторной безопасности).\n• Для маскирования при обнаружении таллия, меди и других металлов используют цианид калия — только в щелочной среде и под тягой, не смешивая с кислотой [toks_majmua2025] (с. 56, 67–68).\n• Соли ртути, растворы дитизона (в хлороформе) и пиридин — в перчатках и под тягой; ртутные отходы собирают отдельно (общее требование лабораторной безопасности).\n• Вывод не делают по одной цветной реакции; учитывают количество найденного металла и его естественное содержание [toks_majmua2025] (с. 17, 58).",
+        "en": "• Marsh apparatus: hydrogen–air mixtures explode. Complete displacement of air is checked by igniting the gas collected in an inverted test tube (pure hydrogen burns quietly); a little acid is always left in the funnel so that no air enters; the apparatus is covered with a towel [toks_majmua2025] (pp. 76, 212).\n• Arsine (AsH3) and hydrogen sulfide are highly toxic gases — Sanger–Black and Marsh tests are done in a fume hood (general laboratory safety requirement).\n• Potassium cyanide used for masking (thallium, copper and others) is used only in alkaline medium and in a fume hood, never mixed with acid [toks_majmua2025] (pp. 56, 67–68).\n• Mercury salts, dithizone solutions (in chloroform) and pyridine are handled with gloves in a fume hood; mercury waste is collected separately (general laboratory safety requirement).\n• No conclusion is drawn from a single colour reaction; the amount of metal found and its natural occurrence are taken into account [toks_majmua2025] (pp. 17, 58)."
+      },
+      "citations": ["toks_majmua2025"]
+    },
+    {
+      "key": "alternatives",
+      "title": {"uz": "Muqobil va tasdiqlovchi usullar", "ru": "Альтернативные и подтверждающие методы", "en": "Alternatives and confirmation"},
+      "body": {
+        "uz": "• Mishyak miqdori: arsinni ammiakli kumush nitrat eritmasidan o‘tkazib ortiqcha kumushni rodanid bilan titrlash (balanslangan: AsH3 + 6AgNO3 + 3H2O → 6Ag + H3AsO3 + 6HNO3), Zanger–Blek dog‘larini standart shkala bilan solishtirish yoki kumush dietilditiokarbamat bilan kolorimetriya [toks_majmua2025] (77-b.).\n• Simob miqdori: ditizonat holida fotometrik yoki Cu2[HgI4] holida nefelometrik/kolorimetrik [toks_majmua2025] (79, 213-b.).\n• Qo‘rg‘oshin: ditizonat holida fotometriya, kompleksonometriya yoki bixromat-yodometriya; bariy: gravimetriya (BaSO4) yoki trilon B bilan titrlash [toks_majmua2025] (60–61-b.).\n• Etilmerkurxlorid kabi organik simob birikmalari xloroform bilan ajratilib, mis simida simob qoplamasi yoki ditizonatining YuQX tahlili bilan aniqlanadi [toks_majmua2025] (79–80-b.).\n• Kimyoviy rangli reaksiyalar dastlabki (taxminiy) testlar ekanligi adabiyotda ham ta’kidlanadi [philp2018]; usulni validatsiya qilish talab etiladi [peters2007].",
+        "ru": "• Количество мышьяка: пропускание арсина через аммиачный раствор нитрата серебра и обратное титрование избытка серебра роданидом (уравнено: AsH3 + 6AgNO3 + 3H2O → 6Ag + H3AsO3 + 6HNO3), сравнение пятен Зангер–Блека со стандартной шкалой или колориметрия с диэтилдитиокарбаматом серебра [toks_majmua2025] (с. 77).\n• Количество ртути: фотометрически в виде дитизоната или нефелометрически/колориметрически в виде Cu2[HgI4] [toks_majmua2025] (с. 79, 213).\n• Свинец: фотометрия дитизоната, комплексонометрия или бихроматно-иодометрический метод; барий: гравиметрия (BaSO4) или титрование трилоном Б [toks_majmua2025] (с. 60–61).\n• Ртутьорганические соединения (этилмеркурхлорид) извлекают хлороформом и обнаруживают по налёту ртути на медной проволоке или ТСХ дитизоната [toks_majmua2025] (с. 79–80).\n• Цветные химические реакции — предварительные (ориентировочные) пробы, что подчёркивается и в литературе [philp2018]; методика должна быть валидирована [peters2007].",
+        "en": "• Arsenic quantitation: arsine passed into ammoniacal silver nitrate with back-titration of excess silver by thiocyanate (balanced: AsH3 + 6AgNO3 + 3H2O → 6Ag + H3AsO3 + 6HNO3), comparison of Sanger–Black stains with a standard scale, or colorimetry with silver diethyldithiocarbamate [toks_majmua2025] (p. 77).\n• Mercury quantitation: photometrically as the dithizonate or nephelometrically/colorimetrically as Cu2[HgI4] [toks_majmua2025] (pp. 79, 213).\n• Lead: dithizonate photometry, complexometry or dichromate–iodometry; barium: gravimetry (BaSO4) or EDTA titration [toks_majmua2025] (pp. 60–61).\n• Organomercury compounds such as ethylmercury chloride are extracted with chloroform and detected by a mercury deposit on copper wire or TLC of the dithizonate [toks_majmua2025] (pp. 79–80).\n• Chemical colour reactions are presumptive tests, as the literature also stresses [philp2018]; the method must be validated [peters2007]."
+      },
+      "citations": ["toks_majmua2025", "philp2018", "peters2007"]
+    }
+  ],
+  "keywords": {
+    "uz": ["mishyak", "margimush", "arsin", "Marsh reaksiyasi", "Zanger–Blek reaksiyasi", "simob", "sulema", "ditizon", "mis(I) yodid", "qo‘rg‘oshin", "tetraetilqo‘rg‘oshin", "bariy", "rodizonat", "kumush", "mis", "marganets", "xrom", "talliy", "surma", "rux", "vismut", "kadmiy", "dietilditiokarbamat", "metall zaharlar"],
+    "ru": ["мышьяк", "арсин", "реакция Марша", "реакция Зангер–Блека", "ртуть", "сулема", "дитизон", "иодид меди(I)", "свинец", "тетраэтилсвинец", "барий", "родизонат натрия", "серебро", "медь", "марганец", "хром", "таллий", "сурьма", "цинк", "висмут", "кадмий", "диэтилдитиокарбамат", "металлические яды"],
+    "en": ["arsenic", "arsine", "Marsh test", "Sanger-Black test", "Gutzeit", "mercury", "mercuric chloride", "dithizone", "copper(I) iodide", "lead", "tetraethyl lead", "barium", "sodium rhodizonate", "silver", "copper", "manganese", "chromium", "thallium", "antimony", "zinc", "bismuth", "cadmium", "diethyldithiocarbamate", "metal poisons"]
+  },
+  "omitted_unverified": [
+    "LD50 and toxic doses for metal compounds (pp. 52, 59, 66, 73), occupational air limits (pp. 65, 73) and 'TEL 0.3 g per 100 g indicates poisoning' (p. 62): lethal/threshold figures omitted per policy and not verified.",
+    "Garbled or unbalanced equations: Ba2+ with K2Cr2O7 (p. 59), TEL + I2 -> PbI2 + 2C4H10 (p. 62), Mn periodate oxidation giving 'KIO4' as product (p. 65), Sb thiosulfate (p. 69: sodium count), Zn3P2 + 3H2SO4 (p. 70), PH3 + HBrO (p. 70), AsH3 + AgNO3 + H2O (p. 77), HgCl2 + 2KI -> HgI2 + 2HCl (p. 75): omitted, except the arsine/silver nitrate equation which is given in balanced form.",
+    "Pigment names: 'PbSO4 (surik)' (p. 60; minium is Pb3O4), 'Cu(OH)2 (malachite)', Paris/Schweinfurt green formulae (pp. 63-64, 75), 'red mercury oxide (I)' and 'HgCl as fungicide' (p. 77): incorrect or garbled — omitted.",
+    "Detection limits in micrograms for Bi, Cd and other microcrystal tests (pp. 71-74): omitted per card policy.",
+    "Normal Mn/Cd organ contents (pp. 65, 73) attributed to secondary authors: not verified; natural occurrence stated qualitatively.",
+    "Clinical signs per metal (pp. 58-80): outside analytical scope, not used."
+  ],
+  "quiz": [
+    {
+      "id": "toks_met_1",
+      "q": {"uz": "Zanger–Blek reaksiyasida mishyak qaysi shaklda ajralib, qog‘ozni bo‘yaydi?", "ru": "В каком виде мышьяк выделяется и окрашивает бумагу в реакции Зангер–Блека?", "en": "In what form does arsenic leave the solution and stain the paper in the Sanger–Black test?"},
+      "a": {"uz": "Arsin (AsH3) gazi holida", "ru": "В виде газа арсина (AsH3)", "en": "As arsine gas (AsH3)"},
+      "d": {
+        "uz": ["Mishyak trixlorid bug‘i holida", "Erkin mishyak changi holida", "Arsenat ioni holida"],
+        "ru": ["В виде паров трихлорида мышьяка", "В виде пыли свободного мышьяка", "В виде арсенат-иона"],
+        "en": ["As arsenic trichloride vapour", "As elemental arsenic dust", "As arsenate ion"]
+      },
+      "pages": "75"
+    },
+    {
+      "id": "toks_met_2",
+      "q": {"uz": "Marsh usulida mineralizatni qo‘shishdan oldin nima qilinadi?", "ru": "Что делают в методе Марша перед внесением минерализата?", "en": "What is done in the Marsh test before the digest is added?"},
+      "a": {"uz": "Reaktivlar «bo‘sh» tajribada mishyakka tekshiriladi va havo vodorod bilan siqib chiqariladi", "ru": "Проверяют реактивы на мышьяк в холостом опыте и вытесняют воздух водородом", "en": "Reagents are blank-tested for arsenic and air is displaced by hydrogen"},
+      "d": {
+        "uz": ["Naycha nitrat kislota bilan yuviladi", "Rux simob bilan qoplanadi", "Qurilma havo bilan to‘ldiriladi"],
+        "ru": ["Трубку промывают азотной кислотой", "Цинк покрывают ртутью", "Прибор заполняют воздухом"],
+        "en": ["The tube is rinsed with nitric acid", "The zinc is coated with mercury", "The apparatus is filled with air"]
+      },
+      "pages": "76, 212"
+    },
+    {
+      "id": "toks_met_3",
+      "q": {"uz": "Marsh trubkasidagi mishyak dog‘ini surma dog‘idan qaysi sinov ajratadi?", "ru": "Какая проба отличает налёт мышьяка от налёта сурьмы в трубке Марша?", "en": "Which test distinguishes an arsenic mirror from an antimony mirror in the Marsh tube?"},
+      "a": {"uz": "Gipoxlorit eritmasi: mishyak dog‘i eriydi, surmaniki erimaydi", "ru": "Раствор гипохлорита: налёт мышьяка растворяется, сурьмы — нет", "en": "Hypochlorite: the arsenic mirror dissolves, the antimony mirror does not"},
+      "d": {
+        "uz": ["Suv: surma dog‘i eriydi", "Ammiak: ikkalasi ham yo‘qoladi", "Natriy xlorid: mishyak dog‘i qizaradi"],
+        "ru": ["Вода: налёт сурьмы растворяется", "Аммиак: оба исчезают", "Хлорид натрия: налёт мышьяка краснеет"],
+        "en": ["Water: the antimony mirror dissolves", "Ammonia: both disappear", "Sodium chloride: the arsenic mirror turns red"]
+      },
+      "pages": "77"
+    },
+    {
+      "id": "toks_met_4",
+      "q": {"uz": "Mineralizat cho‘kmasida qo‘rg‘oshin sulfatni bariy sulfatdan qanday ajratiladi?", "ru": "Как отделяют сульфат свинца от сульфата бария в осадке минерализата?", "en": "How is lead sulfate separated from barium sulfate in the digest precipitate?"},
+      "a": {"uz": "Sirka kislotali issiq ammoniy atsetat bilan yuvib (PbSO4 eriydi)", "ru": "Промыванием горячим ацетатом аммония с уксусной кислотой (PbSO4 растворяется)", "en": "By washing with hot acidified ammonium acetate (PbSO4 dissolves)"},
+      "d": {
+        "uz": ["Konsentrlangan nitrat kislota bilan (BaSO4 eriydi)", "Suv bilan qaynatib (ikkalasi eriydi)", "Natriy xlorid bilan (PbSO4 cho‘kadi)"],
+        "ru": ["Концентрированной азотной кислотой (BaSO4 растворяется)", "Кипячением с водой (оба растворяются)", "Хлоридом натрия (PbSO4 осаждается)"],
+        "en": ["With concentrated nitric acid (BaSO4 dissolves)", "By boiling with water (both dissolve)", "With sodium chloride (PbSO4 precipitates)"]
+      },
+      "pages": "59, 61"
+    },
+    {
+      "id": "toks_met_5",
+      "q": {"uz": "Destruktatda simob mis(I) yodid bilan qanday natija beradi?", "ru": "Что даёт ртуть в деструктате с иодидом меди(I)?", "en": "What does mercury in the destruction liquid give with copper(I) iodide?"},
+      "a": {"uz": "Cu2[HgI4] ning qizil-to‘q sariq cho‘kmasi", "ru": "Красно-оранжевый осадок Cu2[HgI4]", "en": "A red-orange precipitate of Cu2[HgI4]"},
+      "d": {
+        "uz": ["Ko‘k rangli eritma", "Oq kristall cho‘kma", "Yashil-zumrad xloroform qatlami"],
+        "ru": ["Синий раствор", "Белый кристаллический осадок", "Изумрудно-зелёный хлороформный слой"],
+        "en": ["A blue solution", "A white crystalline precipitate", "An emerald-green chloroform layer"]
+      },
+      "pages": "79"
+    },
+    {
+      "id": "toks_met_6",
+      "q": {"uz": "Kumush va simob ditizonatlari (ikkalasi sariq) qanday farqlanadi?", "ru": "Как различают дитизонаты серебра и ртути (оба жёлтые)?", "en": "How are silver and mercury dithizonates (both yellow) told apart?"},
+      "a": {"uz": "Suyultirilgan HCl bilan chayqatiladi: kumush ditizonati parchalanadi, simobniki saqlanadi", "ru": "Встряхивают с разбавленной HCl: дитизонат серебра разрушается, ртути — сохраняется", "en": "Shake with dilute HCl: silver dithizonate decomposes, mercury dithizonate persists"},
+      "d": {
+        "uz": ["Qizdirilganda simob ditizonati ko‘karadi", "Ammiak qo‘shilganda kumushniki qizaradi", "Ularni farqlab bo‘lmaydi"],
+        "ru": ["При нагревании дитизонат ртути синеет", "С аммиаком дитизонат серебра краснеет", "Различить их невозможно"],
+        "en": ["On heating mercury dithizonate turns blue", "With ammonia silver dithizonate turns red", "They cannot be distinguished"]
+      },
+      "pages": "62–63"
+    },
+    {
+      "id": "toks_met_7",
+      "q": {"uz": "Marganets kationi mineralizatda qanday aniqlanadi?", "ru": "Как обнаруживают марганец в минерализате?", "en": "How is manganese detected in the digest?"},
+      "a": {"uz": "Persulfat yoki periodat bilan permanganatgacha oksidlab (pushti-qizil rang)", "ru": "Окислением персульфатом или периодатом до перманганата (розово-красная окраска)", "en": "By oxidation with persulfate or periodate to permanganate (pink-red colour)"},
+      "d": {
+        "uz": ["Natriy rodizonat bilan qizil cho‘kma", "Tiomochevina bilan limon-sariq rang", "Difenilkarbazid bilan ko‘k rang"],
+        "ru": ["Красный осадок с родизонатом натрия", "Лимонно-жёлтая окраска с тиомочевиной", "Синяя окраска с дифенилкарбазидом"],
+        "en": ["A red precipitate with sodium rhodizonate", "A lemon-yellow colour with thiourea", "A blue colour with diphenylcarbazide"]
+      },
+      "pages": "65"
+    }
+  ]
+}

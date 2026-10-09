@@ -1,0 +1,92 @@
+{
+  "role": "toks-uz-student",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "t01",
+      "title": "Guidelines list toks cards",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t01_guidelines_list_toks_cards.png"
+    },
+    {
+      "id": "t02",
+      "title": "Isolation card top",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t02_isolation_card_top.png"
+    },
+    {
+      "id": "t03",
+      "title": "Metal poisons methods",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t03_metal_poisons_methods.png"
+    },
+    {
+      "id": "t04",
+      "title": "Pesticides card cautions",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t04_pesticides_card_cautions.png"
+    },
+    {
+      "id": "t05",
+      "title": "Volatile card references",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "t06",
+      "title": "Mineralization card",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "t07",
+      "title": "Study hub toks deck",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t07_study_hub_toks_deck.png"
+    },
+    {
+      "id": "t08",
+      "title": "Toks quiz question",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "t09",
+      "title": "Toks quiz answered",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t09_toks_quiz_answered.png"
+    },
+    {
+      "id": "t10",
+      "title": "Toks flashcard",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "t11",
+      "title": "320 2x volatile card",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t11_320_2x_volatile_card.png"
+    },
+    {
+      "id": "t12",
+      "title": "320 2x toks quiz",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t12_320_2x_toks_quiz.png"
+    }
+  ],
+  "pass": 12,
+  "fail": 0
+}

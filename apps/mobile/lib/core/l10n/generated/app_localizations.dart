@@ -12350,6 +12350,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'The app is a reference tool: verify each source against the original before citing it in an expert conclusion.'**
   String get citeVerifyNote;
+
+  /// Attribution line on guideline cards based on Prof. Yuldashev's teaching materials.
+  ///
+  /// In en, this message translates to:
+  /// **'Source: Prof. Yuldashev Z.A. and co-authors, «Toxicological chemistry» teaching complexes (Tashkent Pharmaceutical Institute, 2025) — used with the author’s permission, free for everyone.'**
+  String get guidelineToksAttribution;
+
+  /// Study hub section for decks built from teaching complexes.
+  ///
+  /// In en, this message translates to:
+  /// **'Teaching complexes'**
+  String get studySectionTeaching;
+
+  /// Deck title: questions based on the toxicological chemistry teaching complex.
+  ///
+  /// In en, this message translates to:
+  /// **'Toxicological chemistry (Yuldashev Z.A.)'**
+  String get studyDeckToks;
+
+  /// Flashcard front hint for a question card.
+  ///
+  /// In en, this message translates to:
+  /// **'Recall the answer, then flip the card'**
+  String get studyFrontQuestion;
+
+  /// Quiz banner for decks with written answer options.
+  ///
+  /// In en, this message translates to:
+  /// **'Questions and wrong options were written independently from the facts in the guideline cards; the correct answer and its page are given in the cited source.'**
+  String get studyQuizNoteAuthored;
+
+  /// Page numbers in the cited source.
+  ///
+  /// In en, this message translates to:
+  /// **'pp. {pages}'**
+  String studySourcePages(String pages);
 }
 
 class _AppLocalizationsDelegate

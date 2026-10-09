@@ -101,4 +101,106 @@ void main() {
     expect(raw.contains('omitted_unverified'), isFalse);
     expect(raw.contains('ABY'), isFalse);
   });
+
+  group('«Toksikologik kimyo» majmuasi kartalari (Yuldashev Z.A.)', () {
+    const ids = [
+      'guideline.chem.toks_isolation',
+      'guideline.chem.toks_mineralization',
+      'guideline.chem.toks_metal_poisons',
+      'guideline.chem.toks_volatile_poisons',
+      'guideline.chem.toks_pesticides',
+    ];
+    final cards = [for (final id in ids) bundle.byId(id)];
+
+    test('beshta karta bor, sud-kimyo bo‘limida, NEEDS_REVIEW', () {
+      for (final (i, c) in cards.indexed) {
+        expect(c, isNotNull, reason: ids[i]);
+        expect(c!.area, GuidelineArea.forensicChemistry);
+        expect(c.status, ScientificStatus.needsReview);
+        expect(c.sections, hasLength(8), reason: c.id);
+      }
+    });
+
+    test('egasi qarori: barcha uchun bepul, manba qatori ko‘rsatiladi', () {
+      for (final c in cards.nonNulls) {
+        expect(c.access, GuidelineAccess.free, reason: c.id);
+        expect(c.isFree, isTrue, reason: c.id);
+        expect(bundle.citesYuldashevMaterial(c), isTrue, reason: c.id);
+      }
+      // Yuldashev materialiga tayangan har qanday karta bepul bo‘lishi shart.
+      for (final c in bundle.cards) {
+        if (bundle.citesYuldashevMaterial(c)) {
+          expect(c.isFree, isTrue, reason: c.id);
+        }
+      }
+      // Boshqa kartalarda bu qator chiqmaydi.
+      expect(
+        bundle.citesYuldashevMaterial(
+          bundle.byId('guideline.chem.ethanol_gc')!,
+        ),
+        isFalse,
+      );
+    });
+
+    test('majmua manbasi: teaching_material, iqtiboslar sahifa bilan', () {
+      final ref = bundle.references['toks_majmua2025'];
+      expect(ref, isNotNull);
+      expect(ref!.type, 'teaching_material');
+      expect(ref.isYuldashevMaterial, isTrue);
+      expect(ref.citation, contains('Yuldashev'));
+      expect(
+        ref.citation,
+        contains('Toshkent: Toshkent farmatsevtika instituti'),
+      );
+      expect(ref.citation, contains('(2025)'));
+      expect(ref.doi, isNull);
+      for (final c in cards.nonNulls) {
+        for (final s in c.sections) {
+          for (final lang in ['uz', 'ru', 'en']) {
+            final body = s.body.of(lang);
+            for (final m in RegExp(
+              r'\[toks_majmua2025\](?! \()',
+            ).allMatches(body)) {
+              fail('${c.id}/${s.key}/$lang: page missing at ${m.start}');
+            }
+          }
+        }
+      }
+    });
+
+    test('o‘ldiruvchi yoki «mastlik» chegaralari qoida sifatida yo‘q', () {
+      for (final c in cards.nonNulls) {
+        for (final s in c.sections) {
+          for (final lang in ['uz', 'ru', 'en']) {
+            final body = s.body.of(lang);
+            expect(body.contains('‰'), isFalse, reason: '${c.id}/${s.key}');
+            expect(
+              RegExp(r'\bmg/kg\b').hasMatch(body),
+              isFalse,
+              reason: '${c.id}/${s.key}/$lang',
+            );
+          }
+        }
+      }
+    });
+
+    test('savollar: ≥30, uch tilda, har birida 3 ta distraktor va sahifa', () {
+      final quiz = [for (final c in cards.nonNulls) ...c.quiz];
+      expect(quiz.length, greaterThanOrEqualTo(30));
+      expect({for (final q in quiz) q.id}.length, quiz.length);
+      for (final q in quiz) {
+        expect(q.pages, isNotNull, reason: q.id);
+        expect(q.distractors, hasLength(3), reason: q.id);
+        for (final lang in ['uz', 'ru', 'en']) {
+          expect(q.question.pick(lang).isFallback, isFalse, reason: q.id);
+          expect(q.answer.pick(lang).isFallback, isFalse, reason: q.id);
+          final a = q.answer.of(lang).trim().toLowerCase();
+          for (final d in q.distractors) {
+            expect(d.pick(lang).isFallback, isFalse, reason: q.id);
+            expect(d.of(lang).trim().toLowerCase(), isNot(a), reason: q.id);
+          }
+        }
+      }
+    });
+  });
 }

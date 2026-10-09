@@ -6939,4 +6939,27 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get citeVerifyNote =>
       'Ilova — ma’lumotnoma vosita: xulosaga kiritishdan oldin har bir manbani asl nusxa bilan tekshiring.';
+
+  @override
+  String get guidelineToksAttribution =>
+      'Manba: prof. Yuldashev Z.A. va hammualliflar, «Toksikologik kimyo» o‘quv-uslubiy majmualari (Toshkent farmatsevtika instituti, 2025) — muallif ruxsati bilan, barcha uchun bepul.';
+
+  @override
+  String get studySectionTeaching => 'O‘quv-uslubiy majmualar';
+
+  @override
+  String get studyDeckToks => 'Toksikologik kimyo (Yuldashev Z.A.)';
+
+  @override
+  String get studyFrontQuestion =>
+      'Javobni eslang, so‘ng kartochkani aylantiring';
+
+  @override
+  String get studyQuizNoteAuthored =>
+      'Savollar va noto‘g‘ri variantlar yo‘riqnoma kartalaridagi faktlar asosida mustaqil tuzilgan; to‘g‘ri javob va uning sahifasi keltirilgan manbada.';
+
+  @override
+  String studySourcePages(String pages) {
+    return '$pages-betlar';
+  }
 }

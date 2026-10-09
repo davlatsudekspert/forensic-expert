@@ -6988,4 +6988,26 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get citeVerifyNote =>
       'Приложение — справочный инструмент: перед включением в заключение сверьте каждый источник с оригиналом.';
+
+  @override
+  String get guidelineToksAttribution =>
+      'Источник: проф. Юлдашев З.А. и соавторы, учебно-методические комплексы «Токсикологическая химия» (Ташкентский фармацевтический институт, 2025) — с разрешения автора, бесплатно для всех.';
+
+  @override
+  String get studySectionTeaching => 'Учебно-методические комплексы';
+
+  @override
+  String get studyDeckToks => 'Токсикологическая химия (Юлдашев З.А.)';
+
+  @override
+  String get studyFrontQuestion => 'Вспомните ответ и переверните карточку';
+
+  @override
+  String get studyQuizNoteAuthored =>
+      'Вопросы и неверные варианты составлены самостоятельно по фактам из карточек руководств; правильный ответ и страница указаны в цитируемом источнике.';
+
+  @override
+  String studySourcePages(String pages) {
+    return 'с. $pages';
+  }
 }
