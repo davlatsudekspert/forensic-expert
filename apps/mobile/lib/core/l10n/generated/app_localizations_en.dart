@@ -6979,4 +6979,76 @@ class AppLocalizationsEn extends AppLocalizations {
   String studySourcePages(String pages) {
     return 'pp. $pages';
   }
+
+  @override
+  String reagentHazardBanner(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hazard notes — read before preparing',
+      one: '1 hazard note — read before preparing',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get reagentHazardGhs => 'GHS hazard statements (PubChem)';
+
+  @override
+  String get reagentHazardGeneral => 'General safety advice (app guidance)';
+
+  @override
+  String reagentRecipeSource(String title) {
+    return 'Source: $title';
+  }
+
+  @override
+  String get reagentMachineDraft =>
+      'Translation is an automatic draft and has not been reviewed by a specialist. Numbers are copied from the source unchanged; check them against the original text below.';
+
+  @override
+  String reagentVariant(String label) {
+    return 'Method $label';
+  }
+
+  @override
+  String reagentMakeUpTo(String value) {
+    return 'to $value';
+  }
+
+  @override
+  String get reagentUnitG => 'g';
+
+  @override
+  String get reagentUnitMl => 'mL';
+
+  @override
+  String get reagentUnitL => 'L';
+
+  @override
+  String reagentDropsAmount(int count, String value) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$value drops',
+      one: '$value drop',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get reagentPurpose => 'Purpose (from the source)';
+
+  @override
+  String get reagentNote => 'Note from the source';
+
+  @override
+  String get reagentAmbiguity => 'Check against the original';
+
+  @override
+  String get reagentOriginalText => 'Original text (Russian)';
+
+  @override
+  String get reagentOriginalHint =>
+      'Verbatim from the source, kept for traceability (OCR errors not corrected).';
 }

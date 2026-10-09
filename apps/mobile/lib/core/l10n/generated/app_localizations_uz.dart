@@ -6962,4 +6962,75 @@ class AppLocalizationsUz extends AppLocalizations {
   String studySourcePages(String pages) {
     return '$pages-betlar';
   }
+
+  @override
+  String reagentHazardBanner(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta xavf ogohlantirishi — tayyorlashdan oldin o‘qing',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get reagentHazardGhs => 'GHS xavf bayonotlari (PubChem)';
+
+  @override
+  String get reagentHazardGeneral =>
+      'Umumiy xavfsizlik tavsiyasi (ilova izohi)';
+
+  @override
+  String reagentRecipeSource(String title) {
+    return 'Manba: $title';
+  }
+
+  @override
+  String get reagentMachineDraft =>
+      'Tarjima — avtomatik qoralama, mutaxassis tomonidan tekshirilmagan. Raqamlar manbadan o‘zgarishsiz olingan; quyidagi asl matn bilan solishtiring.';
+
+  @override
+  String reagentVariant(String label) {
+    return 'Usul: $label';
+  }
+
+  @override
+  String reagentMakeUpTo(String value) {
+    return '$value gacha';
+  }
+
+  @override
+  String get reagentUnitG => 'g';
+
+  @override
+  String get reagentUnitMl => 'ml';
+
+  @override
+  String get reagentUnitL => 'l';
+
+  @override
+  String reagentDropsAmount(int count, String value) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$value tomchi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get reagentPurpose => 'Qo‘llanishi (manba bo‘yicha)';
+
+  @override
+  String get reagentNote => 'Manbadagi izoh';
+
+  @override
+  String get reagentAmbiguity => 'Asl matn bilan tekshiring';
+
+  @override
+  String get reagentOriginalText => 'Asl matn (rus)';
+
+  @override
+  String get reagentOriginalHint =>
+      'Manbadan so‘zma-so‘z, kuzatuvchanlik uchun (OCR xatolari tuzatilmagan).';
 }

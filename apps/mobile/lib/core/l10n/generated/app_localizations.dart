@@ -12386,6 +12386,102 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'pp. {pages}'**
   String studySourcePages(String pages);
+
+  /// Reagent page: prominent banner above hazard cards (count of hazard notes).
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 hazard note — read before preparing} other{{count} hazard notes — read before preparing}}'**
+  String reagentHazardBanner(int count);
+
+  /// Hazard card label: GHS hazard statements taken from PubChem.
+  ///
+  /// In en, this message translates to:
+  /// **'GHS hazard statements (PubChem)'**
+  String get reagentHazardGhs;
+
+  /// Hazard card label: general safety advice written by the app (not a cited source).
+  ///
+  /// In en, this message translates to:
+  /// **'General safety advice (app guidance)'**
+  String get reagentHazardGeneral;
+
+  /// Reagent page: which source the preparation comes from.
+  ///
+  /// In en, this message translates to:
+  /// **'Source: {title}'**
+  String reagentRecipeSource(String title);
+
+  /// Reagent page: Uzbek/English texts are automatic drafts, not yet reviewed.
+  ///
+  /// In en, this message translates to:
+  /// **'Translation is an automatic draft and has not been reviewed by a specialist. Numbers are copied from the source unchanged; check them against the original text below.'**
+  String get reagentMachineDraft;
+
+  /// Reagent page: heading of an alternative preparation method.
+  ///
+  /// In en, this message translates to:
+  /// **'Method {label}'**
+  String reagentVariant(String label);
+
+  /// Ingredient amount: make the volume up to this value («до 100 мл»).
+  ///
+  /// In en, this message translates to:
+  /// **'to {value}'**
+  String reagentMakeUpTo(String value);
+
+  /// Unit: grams.
+  ///
+  /// In en, this message translates to:
+  /// **'g'**
+  String get reagentUnitG;
+
+  /// Unit: millilitres.
+  ///
+  /// In en, this message translates to:
+  /// **'mL'**
+  String get reagentUnitMl;
+
+  /// Unit: litres.
+  ///
+  /// In en, this message translates to:
+  /// **'L'**
+  String get reagentUnitL;
+
+  /// Ingredient amount in drops; value is the formatted number or range, count selects the plural form.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{{value} drop} other{{value} drops}}'**
+  String reagentDropsAmount(int count, String value);
+
+  /// Reagent page: purpose stated in the source.
+  ///
+  /// In en, this message translates to:
+  /// **'Purpose (from the source)'**
+  String get reagentPurpose;
+
+  /// Reagent page: additional note from the source.
+  ///
+  /// In en, this message translates to:
+  /// **'Note from the source'**
+  String get reagentNote;
+
+  /// Reagent page: card listing ambiguities / OCR errors found in the source text.
+  ///
+  /// In en, this message translates to:
+  /// **'Check against the original'**
+  String get reagentAmbiguity;
+
+  /// Reagent page: collapsible section with the original Russian source text.
+  ///
+  /// In en, this message translates to:
+  /// **'Original text (Russian)'**
+  String get reagentOriginalText;
+
+  /// Reagent page: hint under the original text heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Verbatim from the source, kept for traceability (OCR errors not corrected).'**
+  String get reagentOriginalHint;
 }
 
 class _AppLocalizationsDelegate

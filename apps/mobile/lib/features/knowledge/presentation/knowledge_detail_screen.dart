@@ -13,7 +13,6 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
-import '../../../core/widgets/fe_data_components.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
 import '../../../domain/library/library_models.dart';
 import '../../../domain/ports/billing_ports.dart';
@@ -160,6 +159,15 @@ class KnowledgeDetailScreen extends ConsumerWidget {
                   _Header(entry: e),
                   if (safetyClaims.isNotEmpty || safetyNotes.isNotEmpty) ...[
                     FeSectionHeader(l.knowledgeSafety),
+                    if (e.recipe?.hazards.isNotEmpty ?? false) ...[
+                      FeBanner(
+                        key: const Key('reagent.hazardBanner'),
+                        icon: Icons.warning_amber_rounded,
+                        text: l.reagentHazardBanner(e.recipe!.hazards.length),
+                        tone: FeBannerTone.critical,
+                      ),
+                      const SizedBox(height: FeSpace.xs),
+                    ],
                     for (final (label, n) in safetyNotes)
                       _NoteCard(label: label, note: n, entry: e),
                     for (final x in safetyClaims)
@@ -285,11 +293,12 @@ class _Field extends StatelessWidget {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
+    final lang = Localizations.localeOf(context).languageCode;
     final sourceId = value?.sourceId ?? note?.sourceId;
     final shown =
         text ??
         (value == null ? null : '${value!.value} ${value!.unit}') ??
-        note?.text;
+        note?.resolve(lang);
     return Padding(
       padding: const EdgeInsets.only(bottom: FeSpace.xs),
       child: Column(
@@ -333,39 +342,82 @@ class _NoteCard extends StatelessWidget {
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
     final l = AppLocalizations.of(context);
+    final lang = Localizations.localeOf(context).languageCode;
+    // Retsept xavf izohlari tilga moslangan (machine_draft) va GHS / umumiy
+    // tavsiya sifatida ajratiladi; boshqa izohlar — asl (inglizcha) iqtibos.
+    final localized = note.texts.isNotEmpty;
+    final hazard = note.kind == 'ghs' || note.kind == 'general';
+    final shownLabel = switch (note.kind) {
+      'ghs' => l.reagentHazardGhs,
+      'general' => l.reagentHazardGeneral,
+      _ => label,
+    };
     return Padding(
       padding: const EdgeInsets.only(bottom: FeSpace.xs),
       child: FeCard(
+        key: hazard ? Key('reagent.hazard.${note.kind}') : null,
         padding: const EdgeInsets.all(FeSpace.sm),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(label, style: t.labelMedium?.copyWith(color: c.textSecondary)),
+            Row(
+              children: [
+                if (hazard) ...[
+                  Icon(
+                    note.kind == 'ghs'
+                        ? Icons.warning_amber_rounded
+                        : Icons.health_and_safety_outlined,
+                    size: 18,
+                    color: note.kind == 'ghs' ? c.danger : c.warning,
+                  ),
+                  const SizedBox(width: FeSpace.xxs),
+                ],
+                Expanded(
+                  child: Text(
+                    shownLabel,
+                    style: t.labelMedium?.copyWith(color: c.textSecondary),
+                  ),
+                ),
+              ],
+            ),
             const SizedBox(height: 2),
             DecoratedBox(
               decoration: BoxDecoration(
-                border: Border(left: BorderSide(color: c.accent, width: 3)),
+                border: Border(
+                  left: BorderSide(
+                    color: note.kind == 'ghs' ? c.danger : c.accent,
+                    width: 3,
+                  ),
+                ),
               ),
               child: Padding(
                 padding: const EdgeInsets.only(left: FeSpace.sm),
-                child: Text(
-                  note.text,
-                  locale: const Locale('en'),
-                  style: t.bodySmall?.copyWith(fontStyle: FontStyle.italic),
+                child: localized
+                    ? Text(note.resolve(lang), style: t.bodyMedium)
+                    : Text(
+                        note.text,
+                        locale: const Locale('en'),
+                        style: t.bodySmall?.copyWith(
+                          fontStyle: FontStyle.italic,
+                        ),
+                      ),
+              ),
+            ),
+            // Ilovaning umumiy tavsiyasi — ilmiy manba emas; ichki ID
+            // ko‘rsatilmaydi (yorliq «ilova izohi» deydi).
+            if (note.kind != 'general') ...[
+              const SizedBox(height: 2),
+              Text(
+                l.knowledgeSourceRef(
+                  [
+                    entry.sourceById(note.sourceId)?.title ?? note.sourceId,
+                    if (note.locator != null)
+                      localizedSectionRef(l, note.locator!),
+                  ].join(' · '),
                 ),
+                style: t.bodySmall?.copyWith(color: c.textSecondary),
               ),
-            ),
-            const SizedBox(height: 2),
-            Text(
-              l.knowledgeSourceRef(
-                [
-                  entry.sourceById(note.sourceId)?.title ?? note.sourceId,
-                  if (note.locator != null)
-                    localizedSectionRef(l, note.locator!),
-                ].join(' · '),
-              ),
-              style: t.bodySmall?.copyWith(color: c.textSecondary),
-            ),
+            ],
           ],
         ),
       ),
@@ -384,6 +436,7 @@ class _RecipeSection extends StatelessWidget {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
+    final lang = Localizations.localeOf(context).languageCode;
     final r = recipe;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -410,38 +463,87 @@ class _RecipeSection extends StatelessWidget {
             ),
           )
         else ...[
-          Text(l.reagentIngredients, style: t.titleSmall),
-          const SizedBox(height: FeSpace.xxs),
-          FeDataTable(
-            key: const Key('reagent.ingredients'),
-            rows: [
-              for (final i in r.ingredients) (i.name, '${i.amount} ${i.unit}'),
+          if (r.originalSourceId != null)
+            Text(
+              l.reagentRecipeSource(
+                entry.sourceById(r.originalSourceId!)?.title ??
+                    r.originalSourceId!,
+              ),
+              key: const Key('reagent.recipeSource'),
+              style: t.bodySmall?.copyWith(color: c.textSecondary),
+            ),
+          if (r.translationStatus == 'machine_draft') ...[
+            const SizedBox(height: FeSpace.xxs),
+            FeBanner(
+              key: const Key('reagent.machineDraft'),
+              icon: Icons.translate,
+              text: l.reagentMachineDraft,
+              tone: FeBannerTone.warning,
+            ),
+          ],
+          const SizedBox(height: FeSpace.xs),
+          for (final g in _variantGroups(r)) ...[
+            if (g.variant != null) ...[
+              const SizedBox(height: FeSpace.xs),
+              Text(
+                l.reagentVariant(
+                  g.variant!.labels[lang] ??
+                      g.variant!.labels['en'] ??
+                      g.variant!.id,
+                ),
+                key: Key('reagent.variant.${g.variant!.id}'),
+                style: t.titleMedium,
+              ),
+              if (g.variant!.sourceId != null &&
+                  g.variant!.sourceId != r.originalSourceId)
+                Text(
+                  l.reagentRecipeSource(
+                    entry.sourceById(g.variant!.sourceId!)?.title ??
+                        g.variant!.sourceId!,
+                  ),
+                  style: t.bodySmall?.copyWith(color: c.textSecondary),
+                ),
             ],
-          ),
+            if (g.ingredients.isNotEmpty) ...[
+              const SizedBox(height: FeSpace.xxs),
+              Text(l.reagentIngredients, style: t.titleSmall),
+              const SizedBox(height: FeSpace.xxs),
+              _IngredientTable(
+                key: Key('reagent.ingredients${g.keySuffix}'),
+                ingredients: g.ingredients,
+              ),
+            ],
+            if (g.steps.isNotEmpty) ...[
+              const SizedBox(height: FeSpace.sm),
+              Text(l.reagentSteps, style: t.titleSmall),
+              if (g.steps.every((s) => s.order == null))
+                Text(
+                  l.reagentOrderNotStated,
+                  key: Key('reagent.orderNotStated${g.keySuffix}'),
+                  style: t.bodySmall?.copyWith(color: c.textSecondary),
+                ),
+              for (final s in g.steps)
+                Padding(
+                  padding: const EdgeInsets.only(top: FeSpace.xxs),
+                  child: Text(
+                    s.order != null
+                        ? '${s.order}. ${s.resolve(lang)}'
+                        : '${FeGlyphs.bullet}${s.resolve(lang)}',
+                    style: t.bodyMedium,
+                  ),
+                ),
+            ],
+          ],
           const SizedBox(height: FeSpace.sm),
           _Field(
             label: l.reagentFinalVolume,
             value: r.finalVolume,
             entry: entry,
           ),
-          Text(l.reagentSteps, style: t.titleSmall),
-          if (!r.orderExplicitInSource)
-            Text(
-              l.reagentOrderNotStated,
-              key: const Key('reagent.orderNotStated'),
-              style: t.bodySmall?.copyWith(color: c.textSecondary),
-            ),
-          for (final (i, s) in r.steps.indexed)
-            Padding(
-              padding: const EdgeInsets.only(top: FeSpace.xxs),
-              child: Text(
-                r.orderExplicitInSource
-                    ? '${s.order ?? i + 1}. ${s.text}'
-                    : '${FeGlyphs.bullet}${s.text}',
-                style: t.bodyMedium,
-              ),
-            ),
-          const SizedBox(height: FeSpace.sm),
+          for (final n in r.notes.where((n) => n.kind == 'purpose'))
+            _Field(label: l.reagentPurpose, note: n, entry: entry),
+          for (final n in r.notes.where((n) => n.kind == 'info'))
+            _Field(label: l.reagentNote, note: n, entry: entry),
           _Field(label: l.reagentStorage, note: r.storage, entry: entry),
           _Field(
             label: l.reagentTemperature,
@@ -464,10 +566,80 @@ class _RecipeSection extends StatelessWidget {
           _Field(label: l.reagentSolvent, note: r.solvent, entry: entry),
           _Field(label: l.reagentPh, value: r.ph, entry: entry),
           _Field(label: l.reagentExpiry, note: r.expiry, entry: entry),
-          for (final h in r.hazards)
+          // GHS/umumiy xavf izohlari sahifa boshidagi «Xavfsizlik» bo‘limida
+          // (har doim ochiq); bu yerda faqat turi berilmagan izohlar.
+          for (final h in r.hazards.where((h) => h.kind == null))
             _Field(label: l.reagentHazards, note: h, entry: entry),
           for (final p in r.ppe)
             _Field(label: l.reagentPpe, note: p, entry: entry),
+          if (r.notes.any((n) => n.kind == 'ambiguity'))
+            Padding(
+              padding: const EdgeInsets.only(bottom: FeSpace.xs),
+              child: FeCard(
+                key: const Key('reagent.ambiguities'),
+                padding: const EdgeInsets.all(FeSpace.sm),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Icon(
+                          Icons.rule_folder_outlined,
+                          size: 18,
+                          color: c.warning,
+                        ),
+                        const SizedBox(width: FeSpace.xxs),
+                        Expanded(
+                          child: Text(l.reagentAmbiguity, style: t.titleSmall),
+                        ),
+                      ],
+                    ),
+                    for (final n in r.notes.where((n) => n.kind == 'ambiguity'))
+                      Padding(
+                        padding: const EdgeInsets.only(top: FeSpace.xxs),
+                        child: Text(
+                          '${FeGlyphs.bullet}${n.resolve(lang)}',
+                          style: t.bodySmall,
+                        ),
+                      ),
+                  ],
+                ),
+              ),
+            ),
+          if (r.originalText case final original?)
+            FeCard(
+              key: const Key('reagent.originalText'),
+              padding: EdgeInsets.zero,
+              child: Theme(
+                data: Theme.of(context)
+                    .copyWith(dividerColor: Colors.transparent),
+                child: ExpansionTile(
+                  key: const Key('reagent.originalText.tile'),
+                  tilePadding: const EdgeInsets.symmetric(
+                    horizontal: FeSpace.sm,
+                  ),
+                  childrenPadding: const EdgeInsets.fromLTRB(
+                    FeSpace.sm,
+                    0,
+                    FeSpace.sm,
+                    FeSpace.sm,
+                  ),
+                  expandedCrossAxisAlignment: CrossAxisAlignment.start,
+                  title: Text(l.reagentOriginalText, style: t.titleSmall),
+                  subtitle: Text(
+                    l.reagentOriginalHint,
+                    style: t.bodySmall?.copyWith(color: c.textSecondary),
+                  ),
+                  children: [
+                    SelectableText(
+                      original,
+                      key: const Key('reagent.originalText.body'),
+                      style: t.bodySmall,
+                    ),
+                  ],
+                ),
+              ),
+            ),
         ],
         const SizedBox(height: FeSpace.xs),
         Align(
@@ -479,6 +651,117 @@ class _RecipeSection extends StatelessWidget {
             onPressed: () => context.push(Routes.tool('tool.lab.solution')),
           ),
         ),
+      ],
+    );
+  }
+}
+
+/// Retsept varianti bo‘yicha guruh (variantsiz retsept — bitta guruh).
+typedef _VariantGroup = ({
+  RecipeVariant? variant,
+  List<Ingredient> ingredients,
+  List<PreparationStep> steps,
+  String keySuffix,
+});
+
+List<_VariantGroup> _variantGroups(SolutionRecipe r) {
+  if (r.variants.isEmpty) {
+    return [
+      (
+        variant: null,
+        ingredients: r.ingredients,
+        steps: r.steps,
+        keySuffix: '',
+      ),
+    ];
+  }
+  return [
+    for (final v in r.variants)
+      (
+        variant: v,
+        ingredients: [
+          for (final i in r.ingredients)
+            if (i.variant == v.id) i,
+        ],
+        steps: [
+          for (final s in r.steps)
+            if (s.variant == v.id) s,
+        ],
+        keySuffix: '.${v.id}',
+      ),
+  ];
+}
+
+/// Ingrediyent miqdori: «8 g», «10–15 ml», «100 ml gacha» yoki manbadagi
+/// raqamsiz izoh. Raqam o‘zgartirilmaydi — faqat o‘nlik ajratkich tilga mos.
+String ingredientAmountText(Ingredient i, String lang, AppLocalizations l) {
+  String n(num x) {
+    final s = x == x.roundToDouble() ? x.toInt().toString() : x.toString();
+    return lang == 'en' ? s : s.replaceAll('.', ',');
+  }
+
+  final note = i.quantityNote[lang] ?? i.quantityNote['en'];
+  final a = i.amount;
+  if (a == null) return note ?? FeGlyphs.emDash;
+  final value = i.amountMax == null ? n(a) : '${n(a)}–${n(i.amountMax!)}';
+  final unit = switch (i.unit) {
+    'g' => l.reagentUnitG,
+    'mL' => l.reagentUnitMl,
+    'L' => l.reagentUnitL,
+    'drop' => null,
+    final u? => u,
+    null => '',
+  };
+  final qty = unit == null
+      ? l.reagentDropsAmount((i.amountMax ?? a).round(), value)
+      : (unit.isEmpty ? value : '$value $unit');
+  final shown = i.makeUpTo ? l.reagentMakeUpTo(qty) : qty;
+  return note == null ? shown : '$shown ($note)';
+}
+
+class _IngredientTable extends StatelessWidget {
+  const _IngredientTable({super.key, required this.ingredients});
+
+  final List<Ingredient> ingredients;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final lang = Localizations.localeOf(context).languageCode;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        for (final (idx, i) in ingredients.indexed)
+          DecoratedBox(
+            decoration: BoxDecoration(
+              border: idx == 0
+                  ? null
+                  : Border(top: BorderSide(color: c.border)),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: FeSpace.xs),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                    flex: 3,
+                    child: Text(i.displayName(lang), style: t.bodyMedium),
+                  ),
+                  const SizedBox(width: FeSpace.sm),
+                  Expanded(
+                    flex: 2,
+                    child: Text(
+                      ingredientAmountText(i, lang, l),
+                      textAlign: TextAlign.end,
+                      style: FeThemeBuilder.numeric(t.bodyMedium!),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
       ],
     );
   }

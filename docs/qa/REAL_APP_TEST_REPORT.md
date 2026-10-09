@@ -256,6 +256,29 @@ ko‘chirildi; uz yorlig‘ida ikki qavs («Optik zichlik (absorbsiya) (A)») �
 «Optik zichlik (A)». Bloklangan HTTP urinishlari: 0. ADMIN roli bu ishga
 taalluqli emas (yangi admin funksiyasi yo‘q).
 
+### 2a. Reaktiv retseptlari (ilova egasi to‘plami, 2026-10-09)
+
+`integration_test/qa_reagents_test.dart` (`./tool/qa_real_app.sh reagents`),
+REAL ILOVA, uz, MOCK akkaunt, tarmoq o‘chiq. Skrinshotlar:
+`docs/qa/reagents_20261009/` (8 ta).
+
+| Rol | Qadamlar | PASS | FAIL |
+|---|---|---|---|
+| Talaba (bepul) | 10 | 10 | 0 |
+| Mutaxassis (Pro, `QA_MODE=professional QA_PRO=1`) | 10 | 10 | 0 |
+
+Tekshirildi: qidiruv «Dragendorf» / «Марки» → reaktiv; Dragendorf (bepul):
+xavf banneri + PubChem GHS kartalari, tarkib jadvali (27,2 g; «100 ml gacha»),
+bosqichlar, «Asl matn (rus)» ochiladi; Marki; Nessler — bepulda retsept
+yopiq, lekin xavf ogohlantirishlari ochiq; Pro’da to‘liq retsept;
+320 dp ekran — overflow yo‘q. Til tekshiruvi faqat PubChem manba havolasi
+domenini («pubchem.ncbi.nlm.nih.gov») belgiladi — URL, xato emas.
+Eslatma: bir xil `pack_version` bilan qayta yig‘ilgan paket desktop’dagi
+eski o‘rnatilgan nusxani almashtirmaydi — QA oldidan
+`~/.local/share/uz.forensicexpert.forensic_expert/content` tozalandi.
+TEKSHIRILMAGAN: haqiqiy iOS/Android qurilma, ru/en rejimlari real ilovada
+(widget testlarida ru/en/320 dp tekshirilgan).
+
 ## 3. Til tekshiruvi (uz rejimi)
 
 Avtomatik tekshiruv har ekranda inglizcha UI so‘zlari va xom kodlarni

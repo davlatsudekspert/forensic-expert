@@ -2046,5 +2046,21 @@
   "studyDeckToks": "Toksikologik kimyo (Yuldashev Z.A.)",
   "studyFrontQuestion": "Javobni eslang, so‘ng kartochkani aylantiring",
   "studyQuizNoteAuthored": "Savollar va noto‘g‘ri variantlar yo‘riqnoma kartalaridagi faktlar asosida mustaqil tuzilgan; to‘g‘ri javob va uning sahifasi keltirilgan manbada.",
-  "studySourcePages": "{pages}-betlar"
+  "studySourcePages": "{pages}-betlar",
+  "reagentHazardBanner": "{count, plural, other{{count} ta xavf ogohlantirishi — tayyorlashdan oldin o‘qing}}",
+  "reagentHazardGhs": "GHS xavf bayonotlari (PubChem)",
+  "reagentHazardGeneral": "Umumiy xavfsizlik tavsiyasi (ilova izohi)",
+  "reagentRecipeSource": "Manba: {title}",
+  "reagentMachineDraft": "Tarjima — avtomatik qoralama, mutaxassis tomonidan tekshirilmagan. Raqamlar manbadan o‘zgarishsiz olingan; quyidagi asl matn bilan solishtiring.",
+  "reagentVariant": "Usul: {label}",
+  "reagentMakeUpTo": "{value} gacha",
+  "reagentUnitG": "g",
+  "reagentUnitMl": "ml",
+  "reagentUnitL": "l",
+  "reagentDropsAmount": "{count, plural, other{{value} tomchi}}",
+  "reagentPurpose": "Qo‘llanishi (manba bo‘yicha)",
+  "reagentNote": "Manbadagi izoh",
+  "reagentAmbiguity": "Asl matn bilan tekshiring",
+  "reagentOriginalText": "Asl matn (rus)",
+  "reagentOriginalHint": "Manbadan so‘zma-so‘z, kuzatuvchanlik uchun (OCR xatolari tuzatilmagan)."
 }

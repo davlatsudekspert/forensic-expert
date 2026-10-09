@@ -1,0 +1,15 @@
+{
+  "_comment": "Umumiy izohlar (tahririy, SRC-FE-EDITORIAL, kind=general). Manbasiz aniq xavf da’vosi yozilmaydi: aniq xavf bayonotlari faqat PubChem GHS’dan. `sds` — har bir retseptga qo‘shiladigan yagona umumiy qator; `restricted_benzidine` — benzidin uchun (PubChem GHS H350 ga tayanadi). uz/ru/en — machine_draft.",
+  "status": "machine_draft",
+  "_groups": {},
+  "sds": {
+    "uz": "Umumiy tavsiya: tayyorlashdan oldin har bir modda uchun laboratoriyangizdagi xavfsizlik ma’lumot varaqasini (SDS) o‘qing va undagi himoya vositalari, ishlash va saqlash talablariga rioya qiling.",
+    "ru": "Общая рекомендация: перед приготовлением прочитайте паспорт безопасности (SDS) каждого вещества, имеющийся в вашей лаборатории, и соблюдайте указанные в нём меры защиты, обращения и хранения.",
+    "en": "General guidance: before preparing, read your laboratory's safety data sheet (SDS) for each substance and follow its protective-equipment, handling and storage requirements."
+  },
+  "restricted_benzidine": {
+    "uz": "MUHIM — umumiy tavsiya: benzidin kanserogen modda (PubChem GHS: H350 — saraton keltirib chiqarishi mumkin). Bu qog‘ozni tayyorlamaslik tavsiya etiladi; zarurat bo‘lsa, mahalliy qoidalarga muvofiq xavfsizroq muqobil reaktiv bilan almashtiring yoki faqat ruxsat etilgan laboratoriyada, mas’ul shaxs nazoratida ishlang.",
+    "ru": "ВАЖНО — общая рекомендация: бензидин — канцероген (PubChem GHS: H350 — может вызывать рак). Рекомендуется не готовить эту бумагу; при необходимости замените её более безопасным реактивом согласно местным правилам или работайте только в разрешённой лаборатории под контролем ответственного лица.",
+    "en": "IMPORTANT — general guidance: benzidine is a carcinogen (PubChem GHS: H350 — may cause cancer). Preparing this paper is not recommended; if needed, substitute a safer reagent according to local rules, or work only in an authorised laboratory under the supervision of a responsible person."
+  }
+}

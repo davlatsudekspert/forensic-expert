@@ -185,6 +185,10 @@ abstract final class BundleCodec {
               _str(s, 'license_mode'),
             ),
             identifierVerified: s['identifier_verified'] == true,
+            // Egasi ruxsati / litsenziya shartnomasi (masalan,
+            // `OWNER-PERMISSION-2026-10-09`) — strukturaviy qiymat va asl
+            // matnni shu manbadan olishga asos.
+            licenseAgreementId: s['license_agreement_id'] as String?,
             isTestData: s['is_test_data'] == true,
             sourceClass: s['source_class'] == null
                 ? null

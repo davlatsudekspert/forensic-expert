@@ -2046,5 +2046,21 @@
   "studyDeckToks": "Токсикологическая химия (Юлдашев З.А.)",
   "studyFrontQuestion": "Вспомните ответ и переверните карточку",
   "studyQuizNoteAuthored": "Вопросы и неверные варианты составлены самостоятельно по фактам из карточек руководств; правильный ответ и страница указаны в цитируемом источнике.",
-  "studySourcePages": "с. {pages}"
+  "studySourcePages": "с. {pages}",
+  "reagentHazardBanner": "{count, plural, one{{count} предупреждение об опасности — прочитайте до приготовления} few{{count} предупреждения об опасности — прочитайте до приготовления} other{{count} предупреждений об опасности — прочитайте до приготовления}}",
+  "reagentHazardGhs": "Формулировки опасности СГС (PubChem)",
+  "reagentHazardGeneral": "Общая рекомендация по безопасности (от приложения)",
+  "reagentRecipeSource": "Источник: {title}",
+  "reagentMachineDraft": "Перевод — автоматический черновик, специалистом не проверен. Числа перенесены из источника без изменений; сверяйте с исходным текстом ниже.",
+  "reagentVariant": "Способ {label}",
+  "reagentMakeUpTo": "до {value}",
+  "reagentUnitG": "г",
+  "reagentUnitMl": "мл",
+  "reagentUnitL": "л",
+  "reagentDropsAmount": "{count, plural, one{{value} капля} few{{value} капли} other{{value} капель}}",
+  "reagentPurpose": "Назначение (по источнику)",
+  "reagentNote": "Примечание из источника",
+  "reagentAmbiguity": "Сверьте с оригиналом",
+  "reagentOriginalText": "Исходный текст (рус.)",
+  "reagentOriginalHint": "Дословно из источника, для прослеживаемости (ошибки распознавания не исправлены)."
 }

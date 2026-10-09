@@ -635,6 +635,15 @@ class ContentDbWriter {
             kind: n.key == 'en' ? TermKind.canonical : TermKind.localized,
             lang: n.key,
           ),
+      // Reaktiv sinonimlari (boshqa yozilishlar: «Dragendorf», «Марки»).
+      for (final r in b.content.recipes)
+        for (final syn in r.synonyms)
+          SearchTerm(
+            entityId: r.reagentId,
+            category: SearchCategory.reagent,
+            term: syn,
+            kind: TermKind.synonym,
+          ),
     ];
     for (final s in b.substances) {
       final cat = s.entityKind == 'metabolite'
