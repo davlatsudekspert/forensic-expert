@@ -1,0 +1,71 @@
+{
+  "schema": "fe-canonical-terms/1",
+  "decided": "2026-10-09",
+  "note": "Owner decision (L10N audit §9): international abbreviations are kept unchanged in uz, ru and en; the full form is written on first use and explained in the glossary. 'forbidden' lists variants that must not appear in UI strings (ARB) or quiz texts. Entries marked 'proposed' were added by the study/terminology (E/F) agent and await reconciliation with the content (D) agent.",
+  "terms": [
+    {
+      "id": "PMI",
+      "abbreviation": "PMI",
+      "expansion": {"uz": "o‘limdan keyin o‘tgan vaqt oralig‘i", "ru": "посмертный интервал", "en": "postmortem interval"},
+      "glossary_term_id": "T-POSTMORTEM-INTERVAL",
+      "forbidden": {"uz": [], "ru": []}
+    },
+    {
+      "id": "PMR",
+      "abbreviation": "PMR",
+      "expansion": {"uz": "o‘limdan keyingi qayta taqsimlanish", "ru": "посмертное перераспределение", "en": "postmortem redistribution"},
+      "glossary_term_id": "T-POSTMORTEM-REDISTRIBUTION",
+      "forbidden": {"uz": [], "ru": []}
+    },
+    {
+      "id": "GC-MS",
+      "abbreviation": "GC-MS",
+      "expansion": {"uz": "gaz xromatografiyasi — mass-spektrometriya", "ru": "газовая хроматография — масс-спектрометрия", "en": "gas chromatography–mass spectrometry"},
+      "glossary_term_id": "T-GC-MS",
+      "forbidden": {"uz": ["GX-MS"], "ru": ["ГХ-МС"]},
+      "proposed": ["forbidden.ru"]
+    },
+    {
+      "id": "LC-MS/MS",
+      "abbreviation": "LC-MS/MS",
+      "expansion": {"uz": "suyuqlik xromatografiyasi — tandem mass-spektrometriya", "ru": "жидкостная хроматография — тандемная масс-спектрометрия", "en": "liquid chromatography–tandem mass spectrometry"},
+      "glossary_term_id": "T-LC-MS-MS",
+      "forbidden": {"uz": ["SX-MS"], "ru": ["ЖХ-МС/МС", "ЖХ-МС"]},
+      "proposed": ["forbidden.ru"]
+    },
+    {
+      "id": "HPLC",
+      "abbreviation": "HPLC",
+      "expansion": {"uz": "yuqori samarali suyuqlik xromatografiyasi", "ru": "высокоэффективная жидкостная хроматография", "en": "high-performance liquid chromatography"},
+      "glossary_term_id": "T-GMT-HIGH-PERFORMANCE-LIQUID-CHROMATOGRAPHY",
+      "forbidden": {"uz": ["YuSSX"], "ru": ["ВЭЖХ"]},
+      "proposed": ["forbidden.ru"]
+    },
+    {
+      "id": "TLC",
+      "abbreviation": "TLC",
+      "expansion": {"uz": "yupqa qatlamli xromatografiya", "ru": "тонкослойная хроматография", "en": "thin-layer chromatography"},
+      "glossary_term_id": "T-GMT-THIN-LAYER-CHROMATOGRAPHY",
+      "forbidden": {"uz": ["YuQX"], "ru": ["ТСХ"]},
+      "proposed": ["forbidden.uz", "forbidden.ru"]
+    },
+    {
+      "id": "Rf",
+      "abbreviation": "Rf",
+      "expansion": {"uz": "harakatchanlik koeffitsienti", "ru": "коэффициент подвижности", "en": "retardation factor"},
+      "forbidden": {"uz": [], "ru": []}
+    },
+    {
+      "id": "Vd",
+      "abbreviation": "Vd",
+      "expansion": {"uz": "taqsimlanish hajmi", "ru": "объём распределения", "en": "volume of distribution"},
+      "forbidden": {"uz": [], "ru": []}
+    },
+    {
+      "id": "COHb",
+      "abbreviation": "COHb",
+      "expansion": {"uz": "karboksigemoglobin", "ru": "карбоксигемоглобин", "en": "carboxyhaemoglobin"},
+      "forbidden": {"uz": [], "ru": []}
+    }
+  ]
+}

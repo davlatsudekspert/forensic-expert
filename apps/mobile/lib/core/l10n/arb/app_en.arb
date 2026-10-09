@@ -7598,7 +7598,7 @@
   "@studyLoading": {
     "description": "Skeleton semantics."
   },
-  "studyQuizUnavailable": "Not enough records of this type for a quiz",
+  "studyQuizUnavailable": "Too few related options for a test — flashcards only",
   "@studyQuizUnavailable": {
     "description": "Deck note."
   },
@@ -7741,7 +7741,7 @@
   "@studyQuizStemGuideline": {
     "description": "Quiz stem."
   },
-  "studyQuizNote": "Wrong options are other records of the same type from the app; nothing is invented.",
+  "studyQuizNote": "Wrong options are other records of the same field or group only; nothing is invented. Practice only — not part of the graded exam.",
   "@studyQuizNote": {
     "description": "Quiz banner."
   },
@@ -9772,5 +9772,163 @@
   "guidelineTermsHint": "Tap a term to see it in Uzbek, Russian and English.",
   "@guidelineTermsHint": {
     "description": "Hint under the Terms section of a guideline card."
+  },
+  "studyModePractice": "Practice",
+  "@studyModePractice": {
+    "description": "Study deck button and quiz mode: ungraded practice."
+  },
+  "studyModeExam": "Exam",
+  "@studyModeExam": {
+    "description": "Study deck button and quiz mode: graded exam."
+  },
+  "studyModePracticeBanner": "Practice mode — not graded. After each answer you see whether it is right, why, and the source.",
+  "@studyModePracticeBanner": {
+    "description": "Banner at the top of a practice quiz."
+  },
+  "studyModeExamBanner": "Graded exam — only questions with an author-written answer key, three related wrong options, an explanation and a page or section in the source. Answers and explanations are shown at the end.",
+  "@studyModeExamBanner": {
+    "description": "Banner at the top of a graded exam."
+  },
+  "studyExamCount": "{count, plural, =0{No exam questions} =1{Exam: 1 question} other{Exam: {count} questions}}",
+  "@studyExamCount": {
+    "description": "Deck card: number of questions eligible for the graded exam.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "studyPracticeOnly": "Practice only",
+  "@studyPracticeOnly": {
+    "description": "Deck card / question badge: material that never enters the graded exam."
+  },
+  "studyExamUnavailable": "No exam for this set: its questions are generated automatically or lack an explanation or page in the source. Use Practice.",
+  "@studyExamUnavailable": {
+    "description": "Deck card: why the exam button is disabled."
+  },
+  "studyExamDraftLanguage": "The exam is available in Uzbek: the English translation of these questions is still a draft.",
+  "@studyExamDraftLanguage": {
+    "description": "Deck card: exam questions exist but the current UI language is a draft translation."
+  },
+  "studyQuizFlashcardsOnly": "Too few related options for a test — flashcards only",
+  "@studyQuizFlashcardsOnly": {
+    "description": "Deck card: no plausible related options — flashcards only."
+  },
+  "studyTfQuestion": "Is this answer correct?",
+  "@studyTfQuestion": {
+    "description": "True/false question: asks whether the proposed answer is correct."
+  },
+  "studyTfProposed": "Proposed answer",
+  "@studyTfProposed": {
+    "description": "True/false question: label above the proposed answer."
+  },
+  "studyTrue": "Correct",
+  "@studyTrue": {
+    "description": "True/false choice."
+  },
+  "studyFalse": "Incorrect",
+  "@studyFalse": {
+    "description": "True/false choice."
+  },
+  "studyTfNote": "Where fewer than three related wrong options exist, the question is shown as Correct / Incorrect.",
+  "@studyTfNote": {
+    "description": "Banner when a practice quiz contains true/false questions."
+  },
+  "studyExplainTopic": "This statement is cited for “{topic}”. The other options are topics of the same field whose sources say something else.",
+  "@studyExplainTopic": {
+    "description": "Explanation after a quote→topic question.",
+    "placeholders": {
+      "topic": {
+        "type": "String"
+      }
+    }
+  },
+  "studyExplainSourceSays": "The source states:",
+  "@studyExplainSourceSays": {
+    "description": "Explanation: label above the sourced statement."
+  },
+  "studyExplainSubstance": "Molecular formula of {name} in its identity record: {formula}. The other options are formulas of substances from the same group.",
+  "@studyExplainSubstance": {
+    "description": "Explanation after a substance→formula question.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "formula": {
+        "type": "String"
+      }
+    }
+  },
+  "studyExplainGuideline": "This summary belongs to the guideline card “{title}”. The other options are cards of the same area.",
+  "@studyExplainGuideline": {
+    "description": "Explanation after a summary→guideline question.",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "studyOpenSource": "Open source",
+  "@studyOpenSource": {
+    "description": "Button after an answer: open the cited source."
+  },
+  "studyQuoteTranslated": "Quote from the source — machine translation, not reviewed",
+  "@studyQuoteTranslated": {
+    "description": "Label above a machine-translated quote in study mode."
+  },
+  "studyShowOriginalQuote": "Show the original quote",
+  "@studyShowOriginalQuote": {
+    "description": "Expandable: show the original-language quote."
+  },
+  "studySourceSection": "Section: {section}",
+  "@studySourceSection": {
+    "description": "Citation line: section of the guideline card where the source is cited.",
+    "placeholders": {
+      "section": {
+        "type": "String"
+      }
+    }
+  },
+  "studyExamResultTitle": "Exam result",
+  "@studyExamResultTitle": {
+    "description": "Exam results header."
+  },
+  "studyExamReview": "Answers and explanations",
+  "@studyExamReview": {
+    "description": "Exam results: list of all answers with explanations."
+  },
+  "studyExamPercent": "{percent}% correct",
+  "@studyExamPercent": {
+    "description": "Exam results: percentage of correct answers.",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "studyDeckMixedTopics": "Other topics (small sets combined)",
+  "@studyDeckMixedTopics": {
+    "description": "Study deck that combines small topic sets (each keeps its own field for wrong options)."
+  },
+  "studyDeckMixedSubstances": "Other groups (small sets combined)",
+  "@studyDeckMixedSubstances": {
+    "description": "Study deck that combines small substance groups."
+  },
+  "studyDeckMixedGuidelines": "Other guidelines (small sets combined)",
+  "@studyDeckMixedGuidelines": {
+    "description": "Study deck that combines small guideline areas."
+  },
+  "glossaryShortExplanation": "Short explanation",
+  "@glossaryShortExplanation": {
+    "description": "Glossary term sheet: short explanation of an abbreviation."
+  },
+  "glossaryAbbrevSemantics": "Abbreviation {abbr}: tap for a short explanation",
+  "@glossaryAbbrevSemantics": {
+    "description": "Screen reader hint on an abbreviation link in text.",
+    "placeholders": {
+      "abbr": {
+        "type": "String"
+      }
+    }
   }
 }

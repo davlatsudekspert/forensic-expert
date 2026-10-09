@@ -40,7 +40,7 @@
 
 ## L10n skriptlari tartibi
 ARB konfliktida: `--theirs`/`--ours` olib, skriptlarni qayta ishga tushiring; terminologiya
-skripti oxirida: `l10n_analysis.py` → `l10n_quote_i18n.py` → `l10n_support_admin.py` → `l10n_qa_fixes.py` → `l10n_qa_admin.py` → `l10n_pmi.py` → `l10n_polish_home.py` → `l10n_polish_tools.py` → `l10n_polish_reading.py` → `l10n_privacy.py` → `l10n_spectro.py` → `l10n_citations.py` → `l10n_toks.py` → `l10n_reagents.py` → `l10n_gmt.py` → `l10n_court.py` → `l10n_glossary.py` → (yangi skriptlar) → `l10n_ux_audit.py` → `flutter gen-l10n`.
+skripti oxirida: `l10n_analysis.py` → `l10n_quote_i18n.py` → `l10n_support_admin.py` → `l10n_qa_fixes.py` → `l10n_qa_admin.py` → `l10n_pmi.py` → `l10n_polish_home.py` → `l10n_polish_tools.py` → `l10n_polish_reading.py` → `l10n_privacy.py` → `l10n_spectro.py` → `l10n_citations.py` → `l10n_toks.py` → `l10n_reagents.py` → `l10n_gmt.py` → `l10n_court.py` → `l10n_glossary.py` → `l10n_study_terms.py` → (yangi skriptlar) → `l10n_ux_audit.py` → `flutter gen-l10n`.
 
 ## Uch tilli kontent (egasi talabi, 2026-10-09) — har bir yangi kontent/ekran uchun majburiy
 - UZ (adabiy lotin), RU, EN — teng chuqurlikda. Foydalanuvchi avval o‘z tilidagi tushuntirishni ko‘radi;

@@ -10548,7 +10548,7 @@ abstract class AppLocalizations {
   /// Deck note.
   ///
   /// In en, this message translates to:
-  /// **'Not enough records of this type for a quiz'**
+  /// **'Too few related options for a test — flashcards only'**
   String get studyQuizUnavailable;
 
   /// Flashcard front hint.
@@ -10704,7 +10704,7 @@ abstract class AppLocalizations {
   /// Quiz banner.
   ///
   /// In en, this message translates to:
-  /// **'Wrong options are other records of the same type from the app; nothing is invented.'**
+  /// **'Wrong options are other records of the same field or group only; nothing is invented. Practice only — not part of the graded exam.'**
   String get studyQuizNote;
 
   /// Quiz progress.
@@ -13244,6 +13244,186 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Tap a term to see it in Uzbek, Russian and English.'**
   String get guidelineTermsHint;
+
+  /// Study deck button and quiz mode: ungraded practice.
+  ///
+  /// In en, this message translates to:
+  /// **'Practice'**
+  String get studyModePractice;
+
+  /// Study deck button and quiz mode: graded exam.
+  ///
+  /// In en, this message translates to:
+  /// **'Exam'**
+  String get studyModeExam;
+
+  /// Banner at the top of a practice quiz.
+  ///
+  /// In en, this message translates to:
+  /// **'Practice mode — not graded. After each answer you see whether it is right, why, and the source.'**
+  String get studyModePracticeBanner;
+
+  /// Banner at the top of a graded exam.
+  ///
+  /// In en, this message translates to:
+  /// **'Graded exam — only questions with an author-written answer key, three related wrong options, an explanation and a page or section in the source. Answers and explanations are shown at the end.'**
+  String get studyModeExamBanner;
+
+  /// Deck card: number of questions eligible for the graded exam.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No exam questions} =1{Exam: 1 question} other{Exam: {count} questions}}'**
+  String studyExamCount(int count);
+
+  /// Deck card / question badge: material that never enters the graded exam.
+  ///
+  /// In en, this message translates to:
+  /// **'Practice only'**
+  String get studyPracticeOnly;
+
+  /// Deck card: why the exam button is disabled.
+  ///
+  /// In en, this message translates to:
+  /// **'No exam for this set: its questions are generated automatically or lack an explanation or page in the source. Use Practice.'**
+  String get studyExamUnavailable;
+
+  /// Deck card: exam questions exist but the current UI language is a draft translation.
+  ///
+  /// In en, this message translates to:
+  /// **'The exam is available in Uzbek: the English translation of these questions is still a draft.'**
+  String get studyExamDraftLanguage;
+
+  /// Deck card: no plausible related options — flashcards only.
+  ///
+  /// In en, this message translates to:
+  /// **'Too few related options for a test — flashcards only'**
+  String get studyQuizFlashcardsOnly;
+
+  /// True/false question: asks whether the proposed answer is correct.
+  ///
+  /// In en, this message translates to:
+  /// **'Is this answer correct?'**
+  String get studyTfQuestion;
+
+  /// True/false question: label above the proposed answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Proposed answer'**
+  String get studyTfProposed;
+
+  /// True/false choice.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct'**
+  String get studyTrue;
+
+  /// True/false choice.
+  ///
+  /// In en, this message translates to:
+  /// **'Incorrect'**
+  String get studyFalse;
+
+  /// Banner when a practice quiz contains true/false questions.
+  ///
+  /// In en, this message translates to:
+  /// **'Where fewer than three related wrong options exist, the question is shown as Correct / Incorrect.'**
+  String get studyTfNote;
+
+  /// Explanation after a quote→topic question.
+  ///
+  /// In en, this message translates to:
+  /// **'This statement is cited for “{topic}”. The other options are topics of the same field whose sources say something else.'**
+  String studyExplainTopic(String topic);
+
+  /// Explanation: label above the sourced statement.
+  ///
+  /// In en, this message translates to:
+  /// **'The source states:'**
+  String get studyExplainSourceSays;
+
+  /// Explanation after a substance→formula question.
+  ///
+  /// In en, this message translates to:
+  /// **'Molecular formula of {name} in its identity record: {formula}. The other options are formulas of substances from the same group.'**
+  String studyExplainSubstance(String name, String formula);
+
+  /// Explanation after a summary→guideline question.
+  ///
+  /// In en, this message translates to:
+  /// **'This summary belongs to the guideline card “{title}”. The other options are cards of the same area.'**
+  String studyExplainGuideline(String title);
+
+  /// Button after an answer: open the cited source.
+  ///
+  /// In en, this message translates to:
+  /// **'Open source'**
+  String get studyOpenSource;
+
+  /// Label above a machine-translated quote in study mode.
+  ///
+  /// In en, this message translates to:
+  /// **'Quote from the source — machine translation, not reviewed'**
+  String get studyQuoteTranslated;
+
+  /// Expandable: show the original-language quote.
+  ///
+  /// In en, this message translates to:
+  /// **'Show the original quote'**
+  String get studyShowOriginalQuote;
+
+  /// Citation line: section of the guideline card where the source is cited.
+  ///
+  /// In en, this message translates to:
+  /// **'Section: {section}'**
+  String studySourceSection(String section);
+
+  /// Exam results header.
+  ///
+  /// In en, this message translates to:
+  /// **'Exam result'**
+  String get studyExamResultTitle;
+
+  /// Exam results: list of all answers with explanations.
+  ///
+  /// In en, this message translates to:
+  /// **'Answers and explanations'**
+  String get studyExamReview;
+
+  /// Exam results: percentage of correct answers.
+  ///
+  /// In en, this message translates to:
+  /// **'{percent}% correct'**
+  String studyExamPercent(int percent);
+
+  /// Study deck that combines small topic sets (each keeps its own field for wrong options).
+  ///
+  /// In en, this message translates to:
+  /// **'Other topics (small sets combined)'**
+  String get studyDeckMixedTopics;
+
+  /// Study deck that combines small substance groups.
+  ///
+  /// In en, this message translates to:
+  /// **'Other groups (small sets combined)'**
+  String get studyDeckMixedSubstances;
+
+  /// Study deck that combines small guideline areas.
+  ///
+  /// In en, this message translates to:
+  /// **'Other guidelines (small sets combined)'**
+  String get studyDeckMixedGuidelines;
+
+  /// Glossary term sheet: short explanation of an abbreviation.
+  ///
+  /// In en, this message translates to:
+  /// **'Short explanation'**
+  String get glossaryShortExplanation;
+
+  /// Screen reader hint on an abbreviation link in text.
+  ///
+  /// In en, this message translates to:
+  /// **'Abbreviation {abbr}: tap for a short explanation'**
+  String glossaryAbbrevSemantics(String abbr);
 }
 
 class _AppLocalizationsDelegate

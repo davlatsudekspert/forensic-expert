@@ -1,4 +1,5 @@
-/// O‘quv rejimi (study mode): kartochkalar va o‘z-o‘zini tekshirish testi.
+/// O‘quv rejimi (study mode): kartochkalar, mashq testi va baholanadigan
+/// imtihon.
 ///
 /// Hech qanday yangi ilmiy matn yozilmaydi: har bir kartochka va savol
 /// ilovada **allaqachon mavjud**, manbasi biriktirilgan yozuvdan
@@ -7,7 +8,18 @@
 /// * bilim yozuvi (mavzu, metod…) ↔ unga biriktirilgan manbadagi asl jumla
 ///   (`definition` / `principle` / `use` / `marker` claim’lari);
 /// * modda ↔ molekulyar formula (`identity` claim’i, manbasi bilan);
-/// * yo‘riqnoma sarlavhasi ↔ uning qisqa mazmuni (karta manbalari bilan).
+/// * yo‘riqnoma sarlavhasi ↔ uning qisqa mazmuni (karta manbalari bilan);
+/// * yo‘riqnomaga biriktirilgan muallif savoli (aniq distraktorlar, izoh,
+///   sahifa yoki bo‘lim bilan).
+///
+/// Distraktorlar faqat **bir xil ma’no sohasidan** olinadi ([StudyItem.domain]:
+/// bir fan oilasi, bir modda guruhi yoki bir yo‘riqnoma yo‘nalishi) va
+/// semantik cheklovlarga mos bo‘lishi kerak (birlik, formula sinfi). 3 tadan
+/// kam mos distraktor bo‘lsa — savol «To‘g‘ri / Noto‘g‘ri» ko‘rinishiga
+/// o‘tadi, umuman bo‘lmasa — faqat kartochka.
+///
+/// Baholanadigan imtihonga faqat [StudyEligibility.examEligible] dagi
+/// elementlar kiradi; qolganlari — faqat mashq (aniq belgilangan).
 ///
 /// Manbasiz yozuv o‘quv materialiga kirmaydi. Status yozuvdan olinadi va
 /// hech qachon ko‘tarilmaydi. Tasodifiylik faqat berilgan `seed` orqali.
@@ -51,6 +63,7 @@ class StudyCitation {
     this.sourceId,
     this.locator,
     this.pages,
+    this.section,
   });
 
   /// Kontent paketidagi manba (manba sahifasiga havola bilan).
@@ -68,9 +81,13 @@ class StudyCitation {
     );
   }
 
-  /// Yo‘riqnoma adabiyoti (to‘liq iqtibos matni), kerak bo‘lsa sahifalar bilan.
-  factory StudyCitation.fromReference(GuidelineReference r, {String? pages}) =>
-      StudyCitation(title: r.citation, pages: pages);
+  /// Yo‘riqnoma adabiyoti (to‘liq iqtibos matni), kerak bo‘lsa sahifalar va
+  /// karta bo‘limi bilan.
+  factory StudyCitation.fromReference(
+    GuidelineReference r, {
+    String? pages,
+    LocalizedText? section,
+  }) => StudyCitation(title: r.citation, pages: pages, section: section);
 
   final String title;
   final String? detail;
@@ -83,6 +100,15 @@ class StudyCitation {
 
   /// Manbadagi sahifa(lar) — o‘quv-uslubiy majmua savollari uchun.
   final String? pages;
+
+  /// Karta bo‘limi (manba shu bo‘limda keltirilgan), bo‘lsa.
+  final LocalizedText? section;
+
+  /// Aniq joy ko‘rsatilgan: sahifa, manba ichidagi bo‘lim yoki karta bo‘limi.
+  bool get hasLocator =>
+      (pages?.trim().isNotEmpty ?? false) ||
+      (locator?.trim().isNotEmpty ?? false) ||
+      (section?.values.values.any((v) => v.trim().isNotEmpty) ?? false);
 }
 
 /// Bitta o‘quv kartochkasi.
@@ -99,15 +125,23 @@ class StudyItem {
     required this.citations,
     required this.origin,
     required this.originId,
+    this.domain = '',
     this.answerIsQuote = false,
     this.draftLanguages = const {},
     this.group,
     this.distractors = const [],
+    this.explanation,
+    this.claimId,
   });
 
   final String id;
   final StudyItemKind kind;
   final String deckId;
+
+  /// Ma’no sohasi: distraktorlar faqat shu sohadan (masalan,
+  /// `topic:forensic_medicine`, `substance:opioids`,
+  /// `guideline:forensicChemistry`). Bo‘sh — distraktor olinmaydi.
+  final String domain;
 
   /// Kartochka old tomoni (yozuv nomi).
   final LocalizedText prompt;
@@ -122,7 +156,8 @@ class StudyItem {
   final StudyOrigin origin;
   final String originId;
 
-  /// Javob — manbadagi asl jumla (asl tilda, tarjima qilinmagan).
+  /// Javob — manbadagi asl jumla (asl tilda; tarjimasi bo‘lsa UI uni
+  /// birinchi ko‘rsatadi, holat belgisi bilan).
   final bool answerIsQuote;
 
   /// Tarjimasi hali qoralama bo‘lgan tillar (yo‘riqnomalar).
@@ -132,8 +167,141 @@ class StudyItem {
   final String? group;
 
   /// Aniq (muallif yozgan) noto‘g‘ri variantlar. Bo‘sh bo‘lsa —
-  /// distraktorlar bir xil turdagi boshqa kartochkalardan olinadi.
+  /// distraktorlar shu [domain] dagi boshqa kartochkalardan olinadi.
   final List<LocalizedText> distractors;
+
+  /// Muallif yozgan izoh (nega to‘g‘ri / nega boshqalari noto‘g‘ri).
+  /// Avtomatik elementlarda `null` — izoh manbali claim matni va manba
+  /// qatoridan quriladi ([StudyExplanationKind]).
+  final LocalizedText? explanation;
+
+  /// Mavzu kartochkasi tayangan claim (tarjima qidirish uchun).
+  final String? claimId;
+
+  StudyItem copyWith({String? deckId}) => StudyItem(
+    id: id,
+    kind: kind,
+    deckId: deckId ?? this.deckId,
+    domain: domain,
+    prompt: prompt,
+    answer: answer,
+    status: status,
+    isTestData: isTestData,
+    citations: citations,
+    origin: origin,
+    originId: originId,
+    answerIsQuote: answerIsQuote,
+    draftLanguages: draftLanguages,
+    group: group,
+    distractors: distractors,
+    explanation: explanation,
+    claimId: claimId,
+  );
+
+  /// Izoh qanday quriladi.
+  StudyExplanationKind get explanationKind => switch (kind) {
+    StudyItemKind.guidelineQuestion => StudyExplanationKind.authored,
+    StudyItemKind.topicExcerpt => StudyExplanationKind.sourcedClaim,
+    StudyItemKind.substanceFormula => StudyExplanationKind.substanceIdentity,
+    StudyItemKind.guidelineSummary => StudyExplanationKind.guidelineSummary,
+  };
+
+  /// Tanlangan tilda izoh bor: muallif izohi shu tilda, yoki avtomatik
+  /// elementda manbali javob matni + kamida bitta manba.
+  bool hasExplanation(String lang) {
+    if (explanationKind == StudyExplanationKind.authored) {
+      final t = explanation?.values[lang]?.trim();
+      return t != null && t.isNotEmpty && citations.isNotEmpty;
+    }
+    return answer.values.values.any((v) => v.trim().isNotEmpty) &&
+        citations.isNotEmpty;
+  }
+}
+
+/// Javobdan keyingi izoh manbai.
+enum StudyExplanationKind {
+  /// Muallif yozgan uch tilli izoh (karta matnidan, sahifa bilan).
+  authored,
+
+  /// Manbadagi claim matni (UI tilidagi tarjima birinchi) + manba qatori.
+  sourcedClaim,
+
+  /// Modda identifikatsiya yozuvidagi formula + manba qatori.
+  substanceIdentity,
+
+  /// Yo‘riqnoma kartasining qisqa mazmuni + adabiyot.
+  guidelineSummary,
+}
+
+/// Savolning test ko‘rinishi.
+enum StudyQuizFormat {
+  /// 4 variantli test (bitta to‘g‘ri javob).
+  multipleChoice,
+
+  /// Taklif etilgan javob — «To‘g‘ri» yoki «Noto‘g‘ri» (mos distraktor
+  /// 3 tadan kam).
+  trueFalse,
+
+  /// Faqat kartochka (mos distraktor yo‘q).
+  flashcardOnly,
+}
+
+/// Test rejimi.
+enum StudyQuizMode {
+  /// Mashq: barcha savollar, javobdan so‘ng darhol izoh. Baholanmaydi.
+  practice,
+
+  /// Imtihon: faqat [StudyEligibility.examEligible] savollar; natija
+  /// oxirida.
+  exam,
+}
+
+/// Baholanadigan imtihonga kirish qoidalari.
+abstract final class StudyEligibility {
+  /// Imtihonda kamida shuncha savol bo‘lishi kerak.
+  static const examMinItems = 5;
+
+  /// Element imtihonga kiradimi ([lang] — UI tili):
+  /// * muallif yozgan javob kaliti va 3 ta mantiqan bog‘liq distraktor;
+  /// * har bir manbada aniq joy (sahifa yoki karta bo‘limi);
+  /// * shu tilda izoh;
+  /// * shu tildagi matn qoralama emas (`AUTHORED` / tekshirilgan);
+  /// * test ma’lumoti emas, rad etilgan/eskirgan emas.
+  static bool examEligible(StudyItem i, String lang) =>
+      i.kind == StudyItemKind.guidelineQuestion &&
+      i.distractors.length >= StudyQuizBuilder.distractorCount &&
+      i.citations.isNotEmpty &&
+      i.citations.every((c) => c.hasLocator) &&
+      i.hasExplanation(lang) &&
+      !i.draftLanguages.contains(lang) &&
+      !i.isTestData &&
+      i.status != ScientificStatus.rejected &&
+      i.status != ScientificStatus.outdated;
+
+  /// Nega imtihonga kirmaydi (UI va hisobot uchun), mos bo‘lsa `null`.
+  static StudyIneligibility? reason(StudyItem i, String lang) {
+    if (i.kind != StudyItemKind.guidelineQuestion ||
+        i.distractors.length < StudyQuizBuilder.distractorCount) {
+      return StudyIneligibility.autoGenerated;
+    }
+    if (i.citations.isEmpty || !i.citations.every((c) => c.hasLocator)) {
+      return StudyIneligibility.noLocator;
+    }
+    if (!i.hasExplanation(lang)) return StudyIneligibility.noExplanation;
+    if (i.draftLanguages.contains(lang)) {
+      return StudyIneligibility.draftTranslation;
+    }
+    if (!examEligible(i, lang)) return StudyIneligibility.notUsable;
+    return null;
+  }
+}
+
+enum StudyIneligibility {
+  autoGenerated,
+  noLocator,
+  noExplanation,
+  draftTranslation,
+  notUsable,
 }
 
 enum StudyDeckKind {
@@ -158,10 +326,13 @@ class StudyDeck {
   final String id;
   final StudyDeckKind kind;
 
-  /// `ForensicDiscipline.name`, modda guruhi, `GuidelineArea.name` yoki
-  /// o‘quv-uslubiy majmua kaliti ([StudyCatalogBuilder.toksDeckKey]).
+  /// `ForensicDiscipline.name`, modda guruhi, `GuidelineArea.name`,
+  /// o‘quv-uslubiy majmua kaliti ([StudyCatalogBuilder.toksDeckKey]) yoki
+  /// [StudyCatalogBuilder.mixedDeckKey] (kichik to‘plamlar birlashmasi).
   final String key;
   final List<StudyItem> items;
+
+  bool get isMixed => key == StudyCatalogBuilder.mixedDeckKey;
 
   /// Eng zaif status (hech qachon ko‘tarilmaydi).
   ScientificStatus get status =>
@@ -170,11 +341,10 @@ class StudyDeck {
   bool get isTestData => items.any((i) => i.isTestData);
 }
 
-@immutable
 class StudyCatalog {
-  const StudyCatalog(this.decks);
+  StudyCatalog(this.decks);
 
-  static const empty = StudyCatalog([]);
+  static final empty = StudyCatalog(const []);
 
   final List<StudyDeck> decks;
 
@@ -187,12 +357,43 @@ class StudyCatalog {
     return null;
   }
 
-  /// Bir xil turdagi barcha kartochkalar (distraktorlar manbai).
+  /// Bir xil turdagi barcha kartochkalar.
   List<StudyItem> itemsOfKind(StudyItemKind kind) => [
     for (final d in decks)
       for (final i in d.items)
         if (i.kind == kind) i,
   ];
+
+  late final Map<String, List<StudyItem>> _pools = _buildPools();
+
+  Map<String, List<StudyItem>> _buildPools() {
+    final out = <String, List<StudyItem>>{};
+    for (final kind in StudyItemKind.values) {
+      final all = itemsOfKind(kind);
+      for (final i in all) {
+        if (i.distractors.isNotEmpty) continue;
+        out[i.id] = StudyQuizBuilder.plausible(i, all);
+      }
+    }
+    return out;
+  }
+
+  /// [item] uchun mantiqan mos distraktorlar (o‘xshashlik bo‘yicha
+  /// saralangan). Muallif distraktorlari bo‘lsa — bo‘sh.
+  List<StudyItem> plausibleDistractors(StudyItem item) =>
+      _pools[item.id] ?? const [];
+
+  /// Element test ko‘rinishi.
+  StudyQuizFormat formatOf(StudyItem item) {
+    if (item.distractors.length >= StudyQuizBuilder.distractorCount) {
+      return StudyQuizFormat.multipleChoice;
+    }
+    final n = plausibleDistractors(item).length;
+    if (n >= StudyQuizBuilder.distractorCount) {
+      return StudyQuizFormat.multipleChoice;
+    }
+    return n > 0 ? StudyQuizFormat.trueFalse : StudyQuizFormat.flashcardOnly;
+  }
 }
 
 /// Mavjud yozuvlardan katalog quradi (sof funksiya).
@@ -206,12 +407,35 @@ abstract final class StudyCatalogBuilder {
   static const gmtDeckKey = 'gmt';
   static const gmtDeckId = 'teaching.$gmtDeckKey';
 
+  /// Kichik to‘plamlar ([minDeckSize] dan kam) shu kalitli bitta aralash
+  /// to‘plamga birlashtiriladi (bo‘lim ichida).
+  static const mixedDeckKey = 'mixed';
+  static const minDeckSize = 4;
+
   /// Manba kaliti prefiksi bo‘yicha o‘quv-uslubiy majmua to‘plami.
   static String teachingDeckKey(List<GuidelineReference> source) =>
       source.any((r) => r.key.startsWith('gmt_')) ? gmtDeckKey : toksDeckKey;
 
   /// Bilim yozuvi uchun claim maydonlari — ustuvorlik tartibida.
   static const topicFields = ['definition', 'principle', 'use', 'marker'];
+
+  /// Mavzu distraktorlari uchun fan oilasi: bir oiladagi fanlar bir ma’no
+  /// sohasi hisoblanadi (masalan, sud-tibbiyot va sud patologiyasi), boshqa
+  /// fanlar aralashtirilmaydi.
+  static const disciplineFamily = {
+    'forensicMedicine': 'forensic_medicine',
+    'forensicPathology': 'forensic_medicine',
+    'clinicalForensicMedicine': 'forensic_medicine',
+    'forensicRadiology': 'forensic_medicine',
+    'forensicAnthropology': 'identification',
+    'forensicOdontology': 'identification',
+    'humanIdentification': 'identification',
+    'forensicEntomology': 'postmortem_biology',
+    'forensicMicrobiology': 'postmortem_biology',
+  };
+
+  static String topicDomain(ForensicDiscipline d) =>
+      'topic:${disciplineFamily[d.name] ?? d.name}';
 
   static const _unusableLifecycles = {
     ClaimLifecycle.outdated,
@@ -236,6 +460,14 @@ abstract final class StudyCatalogBuilder {
   static bool _hasText(Map<String, String> v) =>
       v.values.any((x) => x.trim().isNotEmpty);
 
+  /// Karta bo‘limi, unda [key] manbasi keltirilgan (birinchisi).
+  static LocalizedText? _sectionCiting(GuidelineCard card, String key) {
+    for (final s in card.sections) {
+      if (s.citations.contains(key)) return LocalizedText(s.title.values);
+    }
+    return null;
+  }
+
   /// [substancesUnlocked] / [referencesUnlocked] — pullik yozuvlar
   /// (`EntryAccess.lifetime`) faqat ruxsat bo‘lsa kiritiladi.
   static StudyCatalog build({
@@ -257,19 +489,20 @@ abstract final class StudyCatalogBuilder {
         if (!_hasText(e.name.values)) continue;
         final claim = _topicClaim(e);
         if (claim == null) continue;
-        final discipline = e.effectiveDiscipline.name;
-        final deckId = 'discipline.$discipline';
+        final discipline = e.effectiveDiscipline;
         add(
           StudyDeckKind.discipline,
-          discipline,
+          discipline.name,
           StudyItem(
             id: 'topic.${e.id}',
             kind: StudyItemKind.topicExcerpt,
-            deckId: deckId,
+            deckId: 'discipline.${discipline.name}',
+            domain: topicDomain(discipline),
             prompt: e.name,
-            // Asl jumla tarjima qilinmaydi (manba tili — inglizcha).
+            // Asl jumla (manba tili — inglizcha); tarjima UI’da birinchi.
             answer: LocalizedText({'en': claim.excerpt!.trim()}),
             answerIsQuote: true,
+            claimId: claim.claimId,
             status: aggregateStatus([e.status, claim.status]),
             isTestData: e.isTestData,
             citations: [
@@ -301,8 +534,11 @@ abstract final class StudyCatalogBuilder {
           id: 'substance.${e.id}',
           kind: StudyItemKind.substanceFormula,
           deckId: 'group.$group',
+          // «other» — tahririy guruhi yo‘q: bir sohaga kiritilmaydi.
+          domain: e.group == null ? '' : 'substance:$group',
           prompt: e.name,
           answer: LocalizedText({'en': formula}),
+          claimId: claim.claimId,
           status: aggregateStatus([e.status, claim.status]),
           isTestData: e.isTestData,
           citations: [
@@ -324,6 +560,11 @@ abstract final class StudyCatalogBuilder {
       final refs = guidelines.referencesOf(card);
       if (refs.isEmpty) continue;
       final area = card.area.name;
+      final drafts = {
+        for (final lang in const ['uz', 'ru', 'en'])
+          if (card.translationFor(lang) == GuidelineTranslationStatus.draft)
+            lang,
+      };
       add(
         StudyDeckKind.guidelineArea,
         area,
@@ -331,6 +572,7 @@ abstract final class StudyCatalogBuilder {
           id: 'guideline.${card.id}',
           kind: StudyItemKind.guidelineSummary,
           deckId: 'guideline.$area',
+          domain: area == GuidelineArea.other.name ? '' : 'guideline:$area',
           prompt: LocalizedText(card.title.values),
           answer: LocalizedText(card.summary.values),
           status: card.status,
@@ -338,11 +580,7 @@ abstract final class StudyCatalogBuilder {
           citations: [for (final r in refs) StudyCitation.fromReference(r)],
           origin: StudyOrigin.guideline,
           originId: card.id,
-          draftLanguages: {
-            for (final lang in const ['uz', 'ru', 'en'])
-              if (card.translationFor(lang) == GuidelineTranslationStatus.draft)
-                lang,
-          },
+          draftLanguages: drafts,
         ),
       );
 
@@ -365,6 +603,12 @@ abstract final class StudyCatalogBuilder {
                 for (final r in refs)
                   if (q.cite.contains(r.key)) r,
               ];
+        StudyCitation cite(GuidelineReference r, {required bool paged}) =>
+            StudyCitation.fromReference(
+              r,
+              pages: paged ? q.pages : null,
+              section: _sectionCiting(card, r.key),
+            );
         add(
           toks ? StudyDeckKind.teachingMaterial : StudyDeckKind.guidelineArea,
           toks ? teachingKey : area,
@@ -372,41 +616,51 @@ abstract final class StudyCatalogBuilder {
             id: 'gq.${card.id}.${q.id}',
             kind: StudyItemKind.guidelineQuestion,
             deckId: toks ? 'teaching.$teachingKey' : 'guideline.$area',
+            domain: 'gq:${card.id}',
             prompt: LocalizedText(q.question.values),
             answer: LocalizedText(q.answer.values),
             status: card.status,
             isTestData: false,
             citations: [
               if (cited != null)
-                for (final r in cited)
-                  StudyCitation.fromReference(
-                    r,
-                    pages: r.isYuldashevMaterial ? q.pages : null,
-                  )
+                for (final r in cited) cite(r, paged: r.isYuldashevMaterial)
               else
-                for (final r in toks ? source : refs)
-                  StudyCitation.fromReference(r, pages: toks ? q.pages : null),
+                for (final r in toks ? source : refs) cite(r, paged: toks),
             ],
             origin: StudyOrigin.guideline,
             originId: card.id,
-            draftLanguages: {
-              for (final lang in const ['uz', 'ru', 'en'])
-                if (card.translationFor(lang) ==
-                    GuidelineTranslationStatus.draft)
-                  lang,
-            },
+            draftLanguages: drafts,
             distractors: [
               for (final d in q.distractors) LocalizedText(d.values),
             ],
+            explanation: q.explanation.values.isEmpty
+                ? null
+                : LocalizedText(q.explanation.values),
           ),
         );
       }
     }
 
+    // Kichik to‘plamlar (1–3 element) — bo‘lim ichida bitta aralash
+    // to‘plamga. Distraktor sohasi ([StudyItem.domain]) o‘zgarmaydi, ya’ni
+    // aralash to‘plamda ham fanlar bir-biriga distraktor bo‘lmaydi.
+    final merged = <String, (StudyDeckKind, String, List<StudyItem>)>{};
+    for (final MapEntry(key: id, value: (kind, key, items)) in byDeck.entries) {
+      if (kind == StudyDeckKind.teachingMaterial ||
+          items.length >= minDeckSize) {
+        merged[id] = (kind, key, items);
+        continue;
+      }
+      final mixedId = '${id.split('.').first}.$mixedDeckKey';
+      merged.putIfAbsent(mixedId, () => (kind, mixedDeckKey, [])).$3.addAll([
+        for (final i in items) i.copyWith(deckId: mixedId),
+      ]);
+    }
+
     final decks =
         [
           for (final MapEntry(key: id, value: (kind, key, items))
-              in byDeck.entries)
+              in merged.entries)
             StudyDeck(
               id: id,
               kind: kind,
@@ -415,7 +669,10 @@ abstract final class StudyCatalogBuilder {
             ),
         ]..sort((a, b) {
           final k = a.kind.index.compareTo(b.kind.index);
-          return k != 0 ? k : a.key.compareTo(b.key);
+          if (k != 0) return k;
+          // Aralash to‘plam bo‘lim oxirida.
+          final m = (a.isMixed ? 1 : 0).compareTo(b.isMixed ? 1 : 0);
+          return m != 0 ? m : a.key.compareTo(b.key);
         });
     return StudyCatalog(decks);
   }
@@ -434,7 +691,7 @@ abstract final class StudyCatalogBuilder {
 }
 
 // ---------------------------------------------------------------------------
-// Test (multiple choice)
+// Test (mashq va imtihon)
 // ---------------------------------------------------------------------------
 
 @immutable
@@ -443,13 +700,27 @@ class StudyQuestion {
     required this.item,
     required this.options,
     required this.correctIndex,
+    this.format = StudyQuizFormat.multipleChoice,
   });
 
   final StudyItem item;
 
-  /// Variantlar — bir xil turdagi yozuvlar (to‘g‘risi [correctIndex] da).
+  /// [StudyQuizFormat.multipleChoice]: variantlar — to‘g‘risi [correctIndex]
+  /// da. [StudyQuizFormat.trueFalse]: bitta taklif etilgan javob
+  /// (o‘zi yoki shu sohadagi distraktor).
   final List<StudyItem> options;
+
+  /// Ko‘p variantli: to‘g‘ri variant indeksi. To‘g‘ri/Noto‘g‘ri:
+  /// 0 — «To‘g‘ri», 1 — «Noto‘g‘ri».
   final int correctIndex;
+  final StudyQuizFormat format;
+
+  bool get isTrueFalse => format == StudyQuizFormat.trueFalse;
+
+  /// Tanlov tugmalari soni.
+  int get choiceCount => isTrueFalse ? 2 : options.length;
+
+  bool isCorrect(int choice) => choice == correctIndex;
 
   /// `true` — savol javob matnini ko‘rsatib, yozuv nomini so‘raydi
   /// (asl jumla / mazmun → nom). Formulada — nom → formula.
@@ -463,11 +734,21 @@ class StudyQuestion {
 
   LocalizedText optionText(int i) =>
       asksForPrompt ? options[i].prompt : options[i].answer;
+
+  /// To‘g‘ri/Noto‘g‘ri savolidagi taklif etilgan javob.
+  LocalizedText get proposed => optionText(0);
+
+  /// To‘g‘ri javob matni (ikkala ko‘rinishda ham).
+  LocalizedText get correctText => asksForPrompt ? item.prompt : item.answer;
 }
 
 abstract final class StudyQuizBuilder {
   static const distractorCount = 3;
   static const defaultLength = 10;
+  static const examLength = 20;
+
+  /// Eng o‘xshash nomzodlardan shuncha tasi orasidan tanlanadi.
+  static const _window = 6;
 
   static LocalizedText _shown(StudyItem i) =>
       StudyQuestion.askForPrompt(i.kind) ? i.prompt : i.answer;
@@ -484,64 +765,164 @@ abstract final class StudyQuizBuilder {
     return false;
   }
 
-  /// Distraktorlar: faqat **bir xil turdagi boshqa** yozuvlardan; avval
-  /// shu to‘plamdan, keyin qolganlaridan. Ko‘rinishi to‘g‘ri javobga yoki
-  /// bir-biriga mos keladiganlari tashlanadi.
+  static final _unit = RegExp(
+    r'(?<=\d)\s?(mg/L|mg/kg|µg/mL|μg/mL|ng/mL|g/L|mmol/L|L/kg|°C|nm|%|h|min)'
+    r'(?![A-Za-z])',
+  );
+
+  /// Javobdagi o‘lchov birliklari (raqamli javoblar uchun: variantlar
+  /// bir xil birlikda bo‘lishi shart).
+  static Set<String> unitSignature(String text) => {
+    for (final m in _unit.allMatches(text)) m[1]!,
+    if (RegExp(r'\bpH\b').hasMatch(text)) 'pH',
+  };
+
+  static final _element = RegExp(r'([A-Z][a-z]?)(\d*)');
+
+  /// Formula → element: atomlar soni.
+  static Map<String, int> parseFormula(String f) => {
+    for (final m in _element.allMatches(f))
+      m[1]!: (m[2]!.isEmpty ? 1 : int.parse(m[2]!)),
+  };
+
+  /// Organik molekula: C va H bor va 3 atomdan katta (HCN, CO kabi kichik
+  /// molekulalar noorganik gazlar bilan bir sinfda).
+  static bool _organic(Map<String, int> f) =>
+      f.containsKey('C') &&
+      f.containsKey('H') &&
+      f.values.fold<int>(0, (a, b) => a + b) > 3;
+
+  /// [candidate] — [item] uchun ilmiy jihatdan o‘rinli distraktormi:
+  /// bir xil tur, bir xil ma’no sohasi, bir xil birliklar; formulada —
+  /// bir xil sinf (organik / noorganik). Hech qachon boshqa fan emas.
+  static bool compatible(StudyItem item, StudyItem candidate) {
+    if (candidate.kind != item.kind || candidate.id == item.id) return false;
+    if (item.domain.isEmpty || candidate.domain != item.domain) return false;
+    if (candidate.isTestData != item.isTestData) return false;
+    if (_clash(_shown(candidate), _shown(item))) return false;
+    // Birlik variant sifatida ko‘rsatiladigan matndan olinadi.
+    final a = _shown(item).resolve('en'), b = _shown(candidate).resolve('en');
+    if (!setEquals(unitSignature(a), unitSignature(b))) return false;
+    if (item.kind == StudyItemKind.substanceFormula &&
+        _organic(parseFormula(a)) != _organic(parseFormula(b))) {
+      return false;
+    }
+    return true;
+  }
+
+  /// O‘xshashlik (katta — yaqinroq): formulada umumiy elementlar va uglerod
+  /// soni yaqinligi; boshqalarda 0 (faqat soha).
+  static double similarity(StudyItem item, StudyItem c) {
+    if (item.kind != StudyItemKind.substanceFormula) return 0;
+    final x = parseFormula(item.answer.resolve('en'));
+    final y = parseFormula(c.answer.resolve('en'));
+    final keys = {...x.keys, ...y.keys};
+    final shared = x.keys.where(y.containsKey).length;
+    final jaccard = keys.isEmpty ? 0.0 : shared / keys.length;
+    final cx = x['C'] ?? 0, cy = y['C'] ?? 0;
+    final near = 1 / (1 + (cx - cy).abs() / max(1, max(cx, cy)) * 4);
+    return jaccard + near;
+  }
+
+  /// [pool] dagi mos distraktorlar — o‘xshashlik bo‘yicha, so‘ng ID.
+  static List<StudyItem> plausible(StudyItem item, Iterable<StudyItem> pool) {
+    final out = [
+      for (final p in pool)
+        if (compatible(item, p)) p,
+    ];
+    out.sort((a, b) {
+      final s = similarity(item, b).compareTo(similarity(item, a));
+      return s != 0 ? s : a.id.compareTo(b.id);
+    });
+    // Bir-biriga to‘qnashadiganlar (bir xil formula) — faqat birinchisi.
+    final unique = <StudyItem>[];
+    for (final c in out) {
+      if (unique.any((u) => _clash(_shown(u), _shown(c)))) continue;
+      unique.add(c);
+    }
+    return unique;
+  }
+
+  /// Distraktorlar: faqat [compatible] nomzodlardan; eng o‘xshash
+  /// [_window] tasi orasidan tasodifiy (seed bo‘yicha) [count] ta.
   static List<StudyItem> distractors(
     StudyItem item,
     Iterable<StudyItem> pool,
     Random random, {
     int count = distractorCount,
   }) {
-    final shown = _shown(item);
-    final candidates = [
-      for (final p in pool)
-        if (p.kind == item.kind && p.id != item.id && !_clash(_shown(p), shown))
-          p,
-    ]..sort((a, b) => a.id.compareTo(b.id));
-    final same = [
-      for (final c in candidates)
-        if (c.deckId == item.deckId) c,
-    ]..shuffle(random);
-    final other = [
-      for (final c in candidates)
-        if (c.deckId != item.deckId) c,
-    ]..shuffle(random);
-    final picked = <StudyItem>[];
-    for (final c in [...same, ...other]) {
-      if (picked.length >= count) break;
-      if (picked.any((p) => _clash(_shown(p), _shown(c)))) continue;
-      picked.add(c);
-    }
-    return picked;
+    final ranked = plausible(item, pool);
+    final window = ranked.take(max(_window, count)).toList()..shuffle(random);
+    return window.take(count).toList();
   }
+
+  /// Rejimga mos elementlar ([lang] — UI tili, imtihon uchun).
+  static List<StudyItem> quizItems(
+    StudyDeck deck,
+    StudyCatalog catalog, {
+    StudyQuizMode mode = StudyQuizMode.practice,
+    String lang = 'uz',
+  }) => [
+    for (final i in deck.items)
+      if (mode == StudyQuizMode.exam
+          ? StudyEligibility.examEligible(i, lang)
+          : catalog.formatOf(i) != StudyQuizFormat.flashcardOnly)
+        i,
+  ];
 
   /// To‘plam bo‘yicha test. Bir xil [seed] — bir xil test.
   static List<StudyQuestion> build(
     StudyDeck deck,
     StudyCatalog catalog, {
     required int seed,
-    int length = defaultLength,
+    int? length,
+    StudyQuizMode mode = StudyQuizMode.practice,
+    String lang = 'uz',
   }) {
     final random = Random(seed);
-    final items = [...deck.items]..shuffle(random);
+    final limit =
+        length ?? (mode == StudyQuizMode.exam ? examLength : defaultLength);
+    final items = quizItems(deck, catalog, mode: mode, lang: lang)
+      ..sort((a, b) => a.id.compareTo(b.id))
+      ..shuffle(random);
     final questions = <StudyQuestion>[];
     for (final item in items) {
-      if (questions.length >= length) break;
-      final wrong = item.distractors.isNotEmpty
-          ? _explicit(item)
-          : distractors(item, catalog.itemsOfKind(item.kind), random);
-      if (wrong.isEmpty) continue;
-      final options = [item, ...wrong]..shuffle(random);
-      questions.add(
-        StudyQuestion(
+      if (questions.length >= limit) break;
+      final q = _question(item, catalog, random);
+      if (q != null) questions.add(q);
+    }
+    return questions;
+  }
+
+  static StudyQuestion? _question(
+    StudyItem item,
+    StudyCatalog catalog,
+    Random random,
+  ) {
+    switch (catalog.formatOf(item)) {
+      case StudyQuizFormat.flashcardOnly:
+        return null;
+      case StudyQuizFormat.multipleChoice:
+        final wrong = item.distractors.isNotEmpty
+            ? _explicit(item)
+            : distractors(item, catalog.plausibleDistractors(item), random);
+        final options = [item, ...wrong]..shuffle(random);
+        return StudyQuestion(
           item: item,
           options: options,
           correctIndex: options.indexOf(item),
-        ),
-      );
+        );
+      case StudyQuizFormat.trueFalse:
+        final pool = catalog.plausibleDistractors(item);
+        final truthful = random.nextBool();
+        final shown = truthful ? item : pool[random.nextInt(pool.length)];
+        return StudyQuestion(
+          item: item,
+          options: [shown],
+          correctIndex: truthful ? 0 : 1,
+          format: StudyQuizFormat.trueFalse,
+        );
     }
-    return questions;
   }
 
   /// Aniq distraktorlar — faqat variant matni uchun ishlatiladigan
@@ -552,6 +933,7 @@ abstract final class StudyQuizBuilder {
         id: '${item.id}#d$i',
         kind: item.kind,
         deckId: item.deckId,
+        domain: item.domain,
         prompt: item.prompt,
         answer: d,
         status: item.status,
@@ -562,9 +944,17 @@ abstract final class StudyQuizBuilder {
       ),
   ];
 
-  /// To‘plamdan test tuzish mumkinmi (kamida bitta distraktor bor).
+  /// To‘plamdan mashq testi tuzish mumkinmi.
   static bool canQuiz(StudyDeck deck, StudyCatalog catalog) =>
-      build(deck, catalog, seed: 0, length: 1).isNotEmpty;
+      quizItems(deck, catalog).isNotEmpty;
+
+  /// Imtihonga mos savollar soni ([lang] — UI tili).
+  static int examCount(StudyDeck deck, StudyCatalog catalog, String lang) =>
+      quizItems(deck, catalog, mode: StudyQuizMode.exam, lang: lang).length;
+
+  /// Imtihon tuzish mumkinmi (kamida [StudyEligibility.examMinItems]).
+  static bool canExam(StudyDeck deck, StudyCatalog catalog, String lang) =>
+      examCount(deck, catalog, lang) >= StudyEligibility.examMinItems;
 }
 
 // ---------------------------------------------------------------------------
