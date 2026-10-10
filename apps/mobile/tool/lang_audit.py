@@ -604,7 +604,7 @@ def load_content_db(app: Path) -> tuple[list[Unit], dict]:
     # Manbalar sarlavhasi (E).
     for r in q("SELECT source_id, title FROM sources ORDER BY source_id"):
         ol = _guess_lang(r["title"])
-        if r["source_id"].startswith(("SRC-OWNER", "SRC-FE-")):
+        if r["source_id"].startswith("SRC-FE-"):
             # Ilova/egasi yozgan manba tavsifi — bibliografiya emas, tarjima qilinishi kerak.
             units.append(Unit("content.db", f"{C}#sources", r["source_id"], "title (app-authored)", "B", "28_sources_citation",
                               {l: (r["title"] if l == ol else None) for l in LANGS},
@@ -993,10 +993,68 @@ def translation_layer(units: list[Unit]) -> dict:
     return {k: {l: dict(sorted(c.items())) for l, c in v.items()} for k, v in sorted(agg.items())}
 
 
+def apply_localized_asset(app: Path, units: list[Unit]) -> int:
+    """`assets/content/translations/localized_texts.json` qatlamini hisobga olish.
+
+    Paket sxemasi (v7) ayrim maydonlar uchun uch tilli ustunga ega emas, shuning
+    uchun ularning tarjimasi yon fayl orqali keladi va ilova shu faylni o‘qiydi
+    (docs/L10N_DATA_CONTRACT_D.md). Audit ham xuddi shu manbani ko‘rishi kerak,
+    aks holda ekranda tarjima bo‘la turib «MISSING_TRANSLATION» chiqadi.
+    Moslash kaliti — asl matnning sha256 xeshi (barqaror, ID sxemasiga bog‘liq emas).
+    """
+    path = app / "assets/content/translations/localized_texts.json"
+    if not path.exists():
+        return 0
+    records = json.loads(path.read_text(encoding="utf-8")).get("records", [])
+    by_sha = {r["source_sha256"]: r for r in records if r.get("source_sha256")}
+    applied = 0
+    for u in units:
+        if u.source != "content.db" or u.category not in CHECKED_CATEGORIES:
+            continue
+        # Asl matn qaysi tilda saqlangani maydonga qarab farq qiladi (ingliz
+        # iqtibos, o‘zbekcha tahririy izoh…), shuning uchun mavjud qiymatlarning
+        # har biri bo‘yicha qidiriladi.
+        candidates = [u.values.get(u.original_lang or "en")] + [u.values.get(l) for l in LANGS]
+        rec = None
+        for src in candidates:
+            src = (src or "").strip()
+            if not src:
+                continue
+            rec = by_sha.get(hashlib.sha256(src.encode()).hexdigest())
+            if rec is not None:
+                break
+        if rec is None:
+            continue
+        # Yon faylda asl matnning tili aniq yozilgan — avtomatik taxminni
+        # (`_guess_lang`) shu bilan to‘g‘rilaymiz.
+        sl = rec.get("source_lang")
+        if sl in LANGS and (u.values.get(sl) or "").strip() != src:
+            for lang in LANGS:
+                if (u.values.get(lang) or "").strip() == src and lang != sl:
+                    u.values[lang] = None
+                    u.status[lang] = "missing"
+            u.values[sl] = src
+            u.status[sl] = "authored"
+            u.original_lang = sl
+        hit = False
+        for lang in LANGS:
+            if u.values.get(lang):
+                continue
+            text = (rec.get("text") or {}).get(lang)
+            if not text:
+                continue
+            u.values[lang] = text
+            u.status[lang] = rec.get("status", "machine_draft")
+            hit = True
+        applied += 1 if hit else 0
+    return applied
+
+
 def build_report(app: Path) -> dict:
     units = load_arb(app)
     db_units, meta = load_content_db(app)
     units += db_units + load_guidelines(app) + load_court(app) + load_dart(app)
+    apply_localized_asset(app, units)
     findings = detect(units)
     findings.sort(key=lambda f: ({"error": 0, "warn": 1, "info": 2}[f.severity], f.unit.source, f.unit.container, f.unit.id, f.unit.field, f.lang, f.rule))
     totals = collections.Counter((f.lang, f.severity) for f in findings)

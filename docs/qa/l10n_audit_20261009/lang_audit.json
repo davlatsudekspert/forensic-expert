@@ -5,11 +5,11 @@
   "schema_version": "7",
   "bundle_format": "fe-bundle/4"
  },
- "units_total": 7987,
+ "units_total": 8035,
  "units_by_category_source": {
-  "A:arb": 2189,
+  "A:arb": 2241,
   "A:dart": 1,
-  "B:content.db": 1752,
+  "B:content.db": 1748,
   "B:court_prep": 34,
   "B:dart": 262,
   "B:guidelines": 417,
@@ -26,137 +26,44 @@
   "G:content.db": 164
  },
  "totals": {
-  "en:error": 3,
   "en:info": 8,
-  "ru:error": 122,
-  "ru:warn": 32,
-  "uz:error": 123,
   "uz:info": 8,
-  "uz:warn": 48
+  "uz:warn": 5
  },
  "by_rule": {
-  "CYRILLIC_IN_EN:en": 1,
   "CYRILLIC_QUOTED_IN_EN:en": 8,
   "CYRILLIC_QUOTED_IN_UZ:uz": 8,
-  "ENGLISH_IN_RU:ru": 2,
-  "ENGLISH_IN_UZ:uz": 6,
-  "ENGLISH_SHAPED_IN_UZ:uz": 4,
-  "MISSING_TRANSLATION:en": 1,
-  "MISSING_TRANSLATION:ru": 152,
-  "MISSING_TRANSLATION:uz": 153,
-  "UZBEK_IN_EN:en": 1,
-  "UZ_AWKWARD_COUNTER:uz": 8
+  "ENGLISH_IN_UZ:uz": 2,
+  "ENGLISH_SHAPED_IN_UZ:uz": 3
  },
  "by_section": {
-  "01_home": {
-   "uz:warn": 1
-  },
-  "03_library": {
-   "ru:error": 70,
-   "ru:warn": 30,
-   "uz:error": 70,
-   "uz:warn": 30
-  },
   "05_guidelines": {
-   "uz:warn": 10
+   "uz:warn": 5
   },
   "06_reagents": {
    "en:info": 8,
-   "ru:error": 5,
-   "uz:error": 5,
    "uz:info": 8
-  },
-  "07_narcotics": {
-   "en:error": 1,
-   "ru:error": 10,
-   "uz:error": 10
-  },
-  "08_toxicology": {
-   "ru:error": 21,
-   "uz:error": 21
-  },
-  "15_study": {
-   "uz:warn": 4
-  },
-  "16_court": {
-   "uz:warn": 2
-  },
-  "20_auth_profile": {
-   "ru:warn": 1
-  },
-  "21_admin": {
-   "uz:warn": 1
-  },
-  "23_errors": {
-   "ru:error": 8,
-   "uz:error": 8
-  },
-  "26_privacy_terms": {
-   "ru:warn": 1
-  },
-  "28_sources_citation": {
-   "en:error": 2,
-   "ru:error": 8,
-   "uz:error": 9
   }
  },
  "by_source": {
-  "arb:lib/core/l10n/arb/app_<lang>.arb": {
-   "ru:warn": 2,
-   "uz:warn": 8
-  },
-  "content.db:authorities": {
-   "en:error": 1,
-   "ru:error": 6,
-   "uz:error": 6
-  },
-  "content.db:claims": {
-   "ru:error": 70,
-   "ru:warn": 30,
-   "uz:error": 70,
-   "uz:warn": 30
-  },
-  "content.db:evidence_conflicts": {
-   "ru:error": 8,
-   "uz:error": 8
-  },
-  "content.db:jurisdictional_instruments": {
-   "ru:error": 3,
-   "uz:error": 3
-  },
-  "content.db:jurisdictions": {
-   "ru:error": 1,
-   "uz:error": 1
-  },
   "content.db:knowledge_entities": {
    "en:info": 8,
-   "ru:error": 26,
-   "uz:error": 26,
    "uz:info": 8
   },
-  "content.db:sources": {
-   "en:error": 2,
-   "ru:error": 1,
-   "uz:error": 2
-  },
-  "content.db:standards": {
-   "ru:error": 7,
-   "uz:error": 7
-  },
   "guidelines:assets/content/guidelines/guidelines_v1.json": {
-   "uz:warn": 10
+   "uz:warn": 5
   }
  },
  "coverage": {
   "01_home": {
    "A:en": {
-    "present": 134
+    "present": 152
    },
    "A:ru": {
-    "present": 134
+    "present": 152
    },
    "A:uz": {
-    "present": 134
+    "present": 152
    }
   },
   "02_disciplines": {
@@ -181,13 +88,13 @@
   },
   "03_library": {
    "A:en": {
-    "present": 189
+    "present": 190
    },
    "A:ru": {
-    "present": 189
+    "present": 190
    },
    "A:uz": {
-    "present": 189
+    "present": 190
    },
    "B:en": {
     "machine_draft": 71,
@@ -196,13 +103,11 @@
     "no_status": 312
    },
    "B:ru": {
-    "machine_draft": 71,
-    "missing": 100,
+    "machine_draft": 171,
     "no_status": 312
    },
    "B:uz": {
-    "machine_draft": 71,
-    "missing": 100,
+    "machine_draft": 171,
     "no_status": 312
    },
    "D:en": {
@@ -237,13 +142,13 @@
     "present": 136
    },
    "E:en": {
-    "original": 883
+    "original": 882
    },
    "E:ru": {
-    "missing_gloss": 883
+    "machine_draft": 882
    },
    "E:uz": {
-    "missing_gloss": 883
+    "machine_draft": 882
    }
   },
   "05_guidelines": {
@@ -282,13 +187,11 @@
    },
    "B:ru": {
     "no_status": 76,
-    "machine_draft": 880,
-    "missing": 5
+    "machine_draft": 885
    },
    "B:uz": {
     "no_status": 76,
-    "machine_draft": 880,
-    "missing": 5
+    "machine_draft": 885
    },
    "D:en": {
     "original": 5,
@@ -305,30 +208,27 @@
   },
   "07_narcotics": {
    "A:en": {
-    "present": 109
+    "present": 111
    },
    "A:ru": {
-    "present": 109
+    "present": 111
    },
    "A:uz": {
-    "present": 109
+    "present": 111
    },
    "B:en": {
     "machine_draft": 66,
     "no_status": 16,
-    "authored": 3,
     "draft": 151
    },
    "B:ru": {
     "machine_draft": 66,
-    "no_status": 9,
-    "missing": 10,
+    "no_status": 16,
     "draft": 151
    },
    "B:uz": {
     "machine_draft": 66,
-    "no_status": 9,
-    "missing": 10,
+    "no_status": 16,
     "authored": 151
    },
    "D:en": {
@@ -346,13 +246,13 @@
     "official": 60
    },
    "F:ru": {
-    "machine_draft": 5,
-    "missing": 62,
-    "official/original": 1
+    "machine_draft": 9,
+    "official/original": 1,
+    "missing": 58
    },
    "F:uz": {
-    "machine_draft": 6,
-    "missing": 62
+    "machine_draft": 10,
+    "missing": 58
    }
   },
   "08_toxicology": {
@@ -371,11 +271,11 @@
    },
    "B:ru": {
     "no_status": 39,
-    "missing": 21
+    "machine_draft": 21
    },
    "B:uz": {
     "no_status": 39,
-    "missing": 21
+    "machine_draft": 21
    },
    "D:en": {
     "original": 47
@@ -451,13 +351,13 @@
   },
   "14_glossary": {
    "A:en": {
-    "present": 16
+    "present": 19
    },
    "A:ru": {
-    "present": 16
+    "present": 19
    },
    "A:uz": {
-    "present": 16
+    "present": 19
    },
    "B:en": {
     "machine_draft": 103
@@ -480,13 +380,13 @@
   },
   "15_study": {
    "A:en": {
-    "present": 94
+    "present": 122
    },
    "A:ru": {
-    "present": 94
+    "present": 122
    },
    "A:uz": {
-    "present": 94
+    "present": 122
    },
    "B:en": {
     "present": 2
@@ -651,10 +551,10 @@
     "authored": 8
    },
    "B:ru": {
-    "missing": 8
+    "machine_draft": 8
    },
    "B:uz": {
-    "missing": 8
+    "machine_draft": 8
    }
   },
   "24_empty_loading": {
@@ -701,26 +601,26 @@
     "present": 109
    },
    "B:en": {
-    "authored": 8,
-    "missing": 1
+    "machine_draft": 1,
+    "authored": 7
    },
    "B:ru": {
-    "missing": 8,
-    "authored": 1
+    "machine_draft": 8
    },
    "B:uz": {
-    "missing": 9
+    "authored": 1,
+    "machine_draft": 7
    },
    "E:en": {
     "original": 683,
-    "missing_gloss": 6
+    "missing_gloss": 7
    },
    "E:ru": {
     "missing_gloss": 688,
-    "original": 1
+    "original": 2
    },
    "E:uz": {
-    "missing_gloss": 684,
+    "missing_gloss": 685,
     "original": 5
    },
    "F:en": {
@@ -737,13 +637,13 @@
  "translation_layer": {
   "arb:app_<lang>.arb:value:A": {
    "uz": {
-    "present": 2189
+    "present": 2241
    },
    "ru": {
-    "present": 2189
+    "present": 2241
    },
    "en": {
-    "present": 2189
+    "present": 2241
    }
   },
   "arb:app_<lang>.arb:value:E": {
@@ -759,10 +659,10 @@
   },
   "content.db:authorities:names_json:B": {
    "uz": {
-    "missing": 6
+    "no_status": 6
    },
    "ru": {
-    "missing": 6
+    "no_status": 6
    },
    "en": {
     "no_status": 6
@@ -770,10 +670,10 @@
   },
   "content.db:claims:context_strict.case_type:B": {
    "uz": {
-    "missing": 14
+    "machine_draft": 14
    },
    "ru": {
-    "missing": 14
+    "machine_draft": 14
    },
    "en": {
     "authored": 14
@@ -781,10 +681,10 @@
   },
   "content.db:claims:context_strict.co_intoxicants:B": {
    "uz": {
-    "missing": 2
+    "machine_draft": 2
    },
    "ru": {
-    "missing": 2
+    "machine_draft": 2
    },
    "en": {
     "authored": 2
@@ -792,10 +692,10 @@
   },
   "content.db:claims:context_strict.limitations[]:B": {
    "uz": {
-    "missing": 22
+    "machine_draft": 22
    },
    "ru": {
-    "missing": 22
+    "machine_draft": 22
    },
    "en": {
     "authored": 22
@@ -803,10 +703,10 @@
   },
   "content.db:claims:context_strict.population:B": {
    "uz": {
-    "missing": 14
+    "machine_draft": 14
    },
    "ru": {
-    "missing": 14
+    "machine_draft": 14
    },
    "en": {
     "authored": 14
@@ -814,10 +714,10 @@
   },
   "content.db:claims:context_strict.statistic:B": {
    "uz": {
-    "missing": 14
+    "machine_draft": 14
    },
    "ru": {
-    "missing": 14
+    "machine_draft": 14
    },
    "en": {
     "authored": 14
@@ -847,10 +747,10 @@
   },
   "content.db:claims:value_json.items[]:B": {
    "uz": {
-    "missing": 34
+    "machine_draft": 34
    },
    "ru": {
-    "missing": 34
+    "machine_draft": 34
    },
    "en": {
     "original": 34
@@ -858,10 +758,10 @@
   },
   "content.db:evidence_conflicts:note:B": {
    "uz": {
-    "missing": 4
+    "machine_draft": 4
    },
    "ru": {
-    "missing": 4
+    "machine_draft": 4
    },
    "en": {
     "authored": 4
@@ -869,10 +769,10 @@
   },
   "content.db:evidence_conflicts:question:B": {
    "uz": {
-    "missing": 4
+    "machine_draft": 4
    },
    "ru": {
-    "missing": 4
+    "machine_draft": 4
    },
    "en": {
     "authored": 4
@@ -911,25 +811,12 @@
     "no_status": 156
    }
   },
-  "content.db:jurisdictional_instruments:official_reference:B": {
-   "uz": {
-    "missing": 3
-   },
-   "ru": {
-    "missing": 3
-   },
-   "en": {
-    "authored": 3
-   }
-  },
   "content.db:jurisdictional_instruments:titles_json:F": {
    "uz": {
-    "machine_draft": 4,
-    "missing": 4
+    "machine_draft": 8
    },
    "ru": {
-    "machine_draft": 3,
-    "missing": 4,
+    "machine_draft": 7,
     "official/original": 1
    },
    "en": {
@@ -961,12 +848,10 @@
   },
   "content.db:jurisdictions:names_json:B": {
    "uz": {
-    "missing": 1,
-    "no_status": 8
+    "no_status": 9
    },
    "ru": {
-    "missing": 1,
-    "no_status": 8
+    "no_status": 9
    },
    "en": {
     "no_status": 9
@@ -985,10 +870,10 @@
   },
   "content.db:knowledge_entities:payload.analyte:B": {
    "uz": {
-    "missing": 7
+    "machine_draft": 7
    },
    "ru": {
-    "missing": 7
+    "machine_draft": 7
    },
    "en": {
     "authored": 7
@@ -1029,12 +914,10 @@
   },
   "content.db:knowledge_entities:payload.ingredients[].name:B": {
    "uz": {
-    "machine_draft": 304,
-    "missing": 4
+    "machine_draft": 308
    },
    "ru": {
-    "machine_draft": 304,
-    "missing": 4
+    "machine_draft": 308
    },
    "en": {
     "machine_draft": 308
@@ -1086,10 +969,10 @@
   },
   "content.db:knowledge_entities:payload.principle:B": {
    "uz": {
-    "missing": 7
+    "machine_draft": 7
    },
    "ru": {
-    "missing": 7
+    "machine_draft": 7
    },
    "en": {
     "authored": 7
@@ -1097,10 +980,10 @@
   },
   "content.db:knowledge_entities:payload.specimen:B": {
    "uz": {
-    "missing": 7
+    "machine_draft": 7
    },
    "ru": {
-    "missing": 7
+    "machine_draft": 7
    },
    "en": {
     "authored": 7
@@ -1119,12 +1002,10 @@
   },
   "content.db:knowledge_entities:payload.steps[]:B": {
    "uz": {
-    "machine_draft": 182,
-    "missing": 1
+    "machine_draft": 183
    },
    "ru": {
-    "machine_draft": 182,
-    "missing": 1
+    "machine_draft": 183
    },
    "en": {
     "machine_draft": 183
@@ -1165,38 +1046,36 @@
   },
   "content.db:research_records:title:E": {
    "uz": {
-    "missing_gloss": 883
+    "machine_draft": 882
    },
    "ru": {
-    "missing_gloss": 883
+    "machine_draft": 882
    },
    "en": {
-    "original": 883
+    "original": 882
    }
   },
   "content.db:sources:title:B": {
    "uz": {
-    "missing": 2
+    "authored": 1
    },
    "ru": {
-    "authored": 1,
-    "missing": 1
+    "machine_draft": 1
    },
    "en": {
-    "authored": 1,
-    "missing": 1
+    "machine_draft": 1
    }
   },
   "content.db:sources:title:E": {
    "uz": {
-    "missing_gloss": 521
+    "missing_gloss": 522
    },
    "ru": {
     "missing_gloss": 520,
-    "original": 1
+    "original": 2
    },
    "en": {
-    "missing_gloss": 1,
+    "missing_gloss": 2,
     "original": 520
    }
   },
@@ -1213,10 +1092,10 @@
   },
   "content.db:standards:note:B": {
    "uz": {
-    "missing": 7
+    "machine_draft": 7
    },
    "ru": {
-    "missing": 7
+    "machine_draft": 7
    },
    "en": {
     "authored": 7
@@ -1614,182 +1493,7 @@
    }
   }
  },
- "render_sites": [
-  {
-   "file": "lib/features/ai/presentation/ai_screen.dart",
-   "line": 479,
-   "kind": "forced_en_locale",
-   "code": "locale: const Locale('en'),"
-  },
-  {
-   "file": "lib/features/evidence/presentation/provenance_screens.dart",
-   "line": 81,
-   "kind": "forced_en_locale",
-   "code": "locale: const Locale('en'),"
-  },
-  {
-   "file": "lib/features/evidence/presentation/provenance_screens.dart",
-   "line": 134,
-   "kind": "forced_en_locale",
-   "code": "Text(k.question, locale: const Locale('en'), style: t.bodyMedium),"
-  },
-  {
-   "file": "lib/features/evidence/presentation/provenance_screens.dart",
-   "line": 136,
-   "kind": "forced_en_locale",
-   "code": "Text(k.note, locale: const Locale('en'), style: t.bodySmall),"
-  },
-  {
-   "file": "lib/features/evidence/presentation/provenance_screens.dart",
-   "line": 420,
-   "kind": "en_fallback",
-   "code": "'${i.titles[lang] ?? i.titles['en'] ?? i.titles.values.first}';"
-  },
-  {
-   "file": "lib/features/evidence/presentation/provenance_screens.dart",
-   "line": 444,
-   "kind": "forced_en_locale",
-   "code": "title: Text(m.metaboliteName, locale: const Locale('en')),"
-  },
-  {
-   "file": "lib/features/evidence/presentation/provenance_screens.dart",
-   "line": 603,
-   "kind": "forced_en_locale",
-   "code": "Text(s.title, locale: const Locale('en'), style: t.bodyMedium),"
-  },
-  {
-   "file": "lib/features/evidence/presentation/provenance_screens.dart",
-   "line": 647,
-   "kind": "forced_en_locale",
-   "code": "Text(s.note!, locale: const Locale('en'), style: muted),"
-  },
-  {
-   "file": "lib/features/evidence/presentation/provenance_widgets.dart",
-   "line": 309,
-   "kind": "forced_en_locale",
-   "code": "Text(source.title, style: t.bodyMedium, locale: const Locale('en')),"
-  },
-  {
-   "file": "lib/features/evidence/presentation/provenance_widgets.dart",
-   "line": 433,
-   "kind": "forced_en_locale",
-   "code": "locale: const Locale('en'),"
-  },
-  {
-   "file": "lib/features/evidence/presentation/provenance_widgets.dart",
-   "line": 570,
-   "kind": "forced_en_locale",
-   "code": "? const Locale('en')"
-  },
-  {
-   "file": "lib/features/evidence/presentation/provenance_widgets.dart",
-   "line": 608,
-   "kind": "forced_en_locale",
-   "code": "locale: const Locale('en'),"
-  },
-  {
-   "file": "lib/features/evidence/presentation/provenance_widgets.dart",
-   "line": 662,
-   "kind": "forced_en_locale",
-   "code": "locale: parent ? null : const Locale('en'),"
-  },
-  {
-   "file": "lib/features/evidence/presentation/scientific_image.dart",
-   "line": 276,
-   "kind": "forced_en_locale",
-   "code": "locale: const Locale('en'),"
-  },
-  {
-   "file": "lib/features/evidence/presentation/source_quote.dart",
-   "line": 169,
-   "kind": "forced_en_locale",
-   "code": "if (translated == null) return text(title, style, const Locale('en'));"
-  },
-  {
-   "file": "lib/features/evidence/presentation/source_quote.dart",
-   "line": 177,
-   "kind": "forced_en_locale",
-   "code": "locale: const Locale('en'),"
-  },
-  {
-   "file": "lib/features/knowledge/presentation/knowledge_detail_screen.dart",
-   "line": 399,
-   "kind": "forced_en_locale",
-   "code": "locale: const Locale('en'),"
-  },
-  {
-   "file": "lib/features/knowledge/presentation/knowledge_detail_screen.dart",
-   "line": 491,
-   "kind": "en_fallback",
-   "code": "g.variant!.labels['en'] ??"
-  },
-  {
-   "file": "lib/features/knowledge/presentation/knowledge_detail_screen.dart",
-   "line": 703,
-   "kind": "en_fallback",
-   "code": "final note = i.quantityNote[lang] ?? i.quantityNote['en'];"
-  },
-  {
-   "file": "lib/features/learn/presentation/study_screens.dart",
-   "line": 656,
-   "kind": "forced_en_locale",
-   "code": "locale: const Locale('en'),"
-  },
-  {
-   "file": "lib/features/learn/presentation/study_screens.dart",
-   "line": 734,
-   "kind": "forced_en_locale",
-   "code": "locale: const Locale('en'),"
-  },
-  {
-   "file": "lib/features/legal/presentation/jurisdiction_screens.dart",
-   "line": 623,
-   "kind": "en_fallback",
-   "code": "Text(i.titles[lang] ?? i.titles['en'] ?? i.id, style: t.titleSmall),"
-  },
-  {
-   "file": "lib/features/legal/presentation/legal_rule_card.dart",
-   "line": 101,
-   "kind": "en_fallback",
-   "code": "(v['convention'] as String?) ?? instrument.titles['en'] ?? '',"
-  },
-  {
-   "file": "lib/features/legal/presentation/legal_rule_card.dart",
-   "line": 136,
-   "kind": "en_fallback",
-   "code": "instrument.titles['en'] ?? instrument.id,"
-  },
-  {
-   "file": "lib/features/legal/presentation/legal_rule_card.dart",
-   "line": 137,
-   "kind": "forced_en_locale",
-   "code": "locale: const Locale('en'),"
-  },
-  {
-   "file": "lib/features/library/presentation/content_entry_sections.dart",
-   "line": 591,
-   "kind": "forced_en_locale",
-   "code": "locale: const Locale('en'),"
-  },
-  {
-   "file": "lib/features/library/presentation/library_screen.dart",
-   "line": 623,
-   "kind": "en_fallback",
-   "code": "title: Text(i.titles[lang] ?? i.titles['en'] ?? i.id),"
-  },
-  {
-   "file": "lib/features/library/presentation/substance_analysis_section.dart",
-   "line": 178,
-   "kind": "forced_en_locale",
-   "code": "titleLocale: entry == null ? const Locale('en') : null,"
-  },
-  {
-   "file": "lib/app/search_service.dart",
-   "line": 540,
-   "kind": "en_fallback",
-   "code": "names[lang] ?? names['en'] ?? names.values.first;"
-  }
- ],
+ "render_sites": [],
  "quiz_audit": {
   "summary": {
    "items_total": 274,
@@ -1807,10 +1511,11 @@
    "without_page": 216,
    "without_any_locator": 41,
    "with_page": 58,
-   "with_explanation": 0,
+   "with_explanation": 76,
    "mode_proposal": {
     "practice_only": 198,
-    "graded_after_explanation": 76
+    "graded_after_explanation": 18,
+    "graded": 58
    },
    "decks": {
     "discipline.analyticalScience": 10,
@@ -5400,7 +5105,7 @@
     "deck": "guideline.tox",
     "access": "free",
     "stem_lang": "ui",
-    "stem": "Toksikologik natijaning ishonchliligi birinchi navbatda namunaning turi va butunligiga bog‘liq. Postmortem holatda qon ikki periferik joyda…",
+    "stem": "Toksikologik natijaning ishonchliligi birinchi navbatda namunaning turi va butunligiga bog‘liq. O‘limdan keyingi holatda qon ikki periferik…",
     "translation_status": {
      "uz": "AUTHORED",
      "ru": "DRAFT",
@@ -5423,7 +5128,7 @@
     "deck": "guideline.chem",
     "access": "free",
     "stem_lang": "ui",
-    "stem": "Rangli testlar, immunoanaliz va YuQX — tez va arzon skrining usullari, lekin ularning natijasi taxminiy. GX-AID va YuSSX-DMD moddani xossal…",
+    "stem": "Rangli testlar, immunoanaliz va TLC (yupqa qatlamli xromatografiya) — tez va arzon skrining usullari, lekin ularning natijasi taxminiy. GC-…",
     "translation_status": {
      "uz": "AUTHORED",
      "ru": "DRAFT",
@@ -5482,7 +5187,7 @@
     "pages": null,
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
     "graded_ready": false,
@@ -5508,7 +5213,7 @@
     "pages": null,
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
     "graded_ready": false,
@@ -5534,12 +5239,12 @@
     "pages": "22, 40, 78",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.gmt_analysis_scheme.gmt.scheme.4",
@@ -5560,7 +5265,7 @@
     "pages": null,
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
     "graded_ready": false,
@@ -5609,12 +5314,12 @@
     "pages": "23",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.gmt_opioids.gmt.op.2",
@@ -5635,12 +5340,12 @@
     "pages": "31, 35",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.gmt_opioids.gmt.op.3",
@@ -5661,12 +5366,12 @@
     "pages": "16–17",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.gmt_opioids.gmt.op.4",
@@ -5687,7 +5392,7 @@
     "pages": null,
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
     "graded_ready": false,
@@ -5713,12 +5418,12 @@
     "pages": "50",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.gmt_opioids.gmt.op.6",
@@ -5739,12 +5444,12 @@
     "pages": "47",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.gmt_opioids.gmt.op.7",
@@ -5765,12 +5470,12 @@
     "pages": "22",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.gmt_opioids.gmt.op.8",
@@ -5791,7 +5496,7 @@
     "pages": null,
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
     "graded_ready": false,
@@ -5840,12 +5545,12 @@
     "pages": "57",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.gmt_cocaine.gmt.coc.2",
@@ -5866,12 +5571,12 @@
     "pages": "55",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.gmt_cocaine.gmt.coc.3",
@@ -5892,12 +5597,12 @@
     "pages": "55",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.gmt_cocaine.gmt.coc.4",
@@ -5918,7 +5623,7 @@
     "pages": null,
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
     "graded_ready": false,
@@ -5944,7 +5649,7 @@
     "pages": null,
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
     "graded_ready": false,
@@ -5993,12 +5698,12 @@
     "pages": "64",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.gmt_cannabis.gmt.can.2",
@@ -6019,7 +5724,7 @@
     "pages": null,
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
     "graded_ready": false,
@@ -6045,12 +5750,12 @@
     "pages": "69",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.gmt_cannabis.gmt.can.4",
@@ -6058,7 +5763,7 @@
     "deck": "teaching.gmt",
     "access": "free",
     "stem_lang": "ui",
-    "stem": "Darslikdagi GX sharoitida (SE-30) kannabinoidlar qaysi tartibda chiqadi?",
+    "stem": "Darslikdagi GC sharoitida (SE-30) kannabinoidlar qaysi tartibda chiqadi?",
     "translation_status": {
      "uz": "AUTHORED",
      "ru": "DRAFT",
@@ -6071,12 +5776,12 @@
     "pages": "68",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "guideline.guideline.chem.gmt_phenylalkylamines",
@@ -6120,7 +5825,7 @@
     "pages": null,
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
     "graded_ready": false,
@@ -6146,7 +5851,7 @@
     "pages": null,
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
     "graded_ready": false,
@@ -6172,12 +5877,12 @@
     "pages": "79",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.gmt_phenylalkylamines.gmt.pa.4",
@@ -6198,12 +5903,12 @@
     "pages": "76",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.gmt_phenylalkylamines.gmt.pa.5",
@@ -6224,7 +5929,7 @@
     "pages": null,
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
     "graded_ready": false,
@@ -6273,7 +5978,7 @@
     "pages": null,
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
     "graded_ready": false,
@@ -6299,12 +6004,12 @@
     "pages": "113",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.gmt_barbiturates.gmt.bar.3",
@@ -6325,7 +6030,7 @@
     "pages": null,
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
     "graded_ready": false,
@@ -6338,7 +6043,7 @@
     "deck": "teaching.gmt",
     "access": "free",
     "stem_lang": "ui",
-    "stem": "Amobarbital va pentobarbitalni GX-MS da qanday farqlash mumkin?",
+    "stem": "Amobarbital va pentobarbitalni GC-MS da qanday farqlash mumkin?",
     "translation_status": {
      "uz": "AUTHORED",
      "ru": "DRAFT",
@@ -6351,12 +6056,12 @@
     "pages": "101, 103, 114",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "guideline.guideline.chem.gmt_benzodiazepines",
@@ -6400,12 +6105,12 @@
     "pages": "134–135",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.gmt_benzodiazepines.gmt.bzd.2",
@@ -6426,12 +6131,12 @@
     "pages": "135",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.gmt_benzodiazepines.gmt.bzd.3",
@@ -6452,12 +6157,12 @@
     "pages": "134–136",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.gmt_benzodiazepines.gmt.bzd.4",
@@ -6478,7 +6183,7 @@
     "pages": null,
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
     "graded_ready": false,
@@ -6504,7 +6209,7 @@
     "pages": null,
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
     "graded_ready": false,
@@ -6553,12 +6258,12 @@
     "pages": "15, 146",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.gmt_precursors.gmt.pre.2",
@@ -6579,12 +6284,12 @@
     "pages": "151",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.gmt_precursors.gmt.pre.3",
@@ -6605,12 +6310,12 @@
     "pages": "150",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.gmt_precursors.gmt.pre.4",
@@ -6631,12 +6336,12 @@
     "pages": "155–156",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "guideline.guideline.chem.gmt_uz_control_lists",
@@ -6680,7 +6385,7 @@
     "pages": null,
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
     "graded_ready": false,
@@ -6706,7 +6411,7 @@
     "pages": null,
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
     "graded_ready": false,
@@ -6732,7 +6437,7 @@
     "pages": null,
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
     "graded_ready": false,
@@ -6781,12 +6486,12 @@
     "pages": "25, 173",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_isolation.toks_iso_2",
@@ -6807,12 +6512,12 @@
     "pages": "26",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_isolation.toks_iso_3",
@@ -6833,12 +6538,12 @@
     "pages": "26–27",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_isolation.toks_iso_4",
@@ -6859,12 +6564,12 @@
     "pages": "94",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_isolation.toks_iso_5",
@@ -6885,12 +6590,12 @@
     "pages": "95–96",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_isolation.toks_iso_6",
@@ -6911,12 +6616,12 @@
     "pages": "92–93",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "guideline.guideline.chem.toks_mineralization",
@@ -6960,12 +6665,12 @@
     "pages": "52, 78",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_mineralization.toks_min_2",
@@ -6986,12 +6691,12 @@
     "pages": "54, 194",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_mineralization.toks_min_3",
@@ -7012,12 +6717,12 @@
     "pages": "194",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_mineralization.toks_min_4",
@@ -7038,12 +6743,12 @@
     "pages": "55–56",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_mineralization.toks_min_5",
@@ -7064,12 +6769,12 @@
     "pages": "54",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_mineralization.toks_min_6",
@@ -7090,12 +6795,12 @@
     "pages": "58, 65, 73",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "guideline.guideline.chem.uvvis_drug_analysis",
@@ -7162,12 +6867,12 @@
     "pages": "75",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_metal_poisons.toks_met_2",
@@ -7188,12 +6893,12 @@
     "pages": "76, 212",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_metal_poisons.toks_met_3",
@@ -7214,12 +6919,12 @@
     "pages": "77",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_metal_poisons.toks_met_4",
@@ -7240,12 +6945,12 @@
     "pages": "59, 61",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_metal_poisons.toks_met_5",
@@ -7266,12 +6971,12 @@
     "pages": "79",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_metal_poisons.toks_met_6",
@@ -7292,12 +6997,12 @@
     "pages": "62–63",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_metal_poisons.toks_met_7",
@@ -7318,12 +7023,12 @@
     "pages": "65",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "guideline.guideline.chem.toks_volatile_poisons",
@@ -7367,12 +7072,12 @@
     "pages": "29, 173",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_volatile_poisons.toks_vol_2",
@@ -7393,12 +7098,12 @@
     "pages": "30, 176",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_volatile_poisons.toks_vol_3",
@@ -7419,12 +7124,12 @@
     "pages": "36, 39",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_volatile_poisons.toks_vol_4",
@@ -7445,12 +7150,12 @@
     "pages": "182–183",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_volatile_poisons.toks_vol_5",
@@ -7471,12 +7176,12 @@
     "pages": "40–41",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_volatile_poisons.toks_vol_6",
@@ -7497,12 +7202,12 @@
     "pages": "35",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_volatile_poisons.toks_vol_7",
@@ -7523,12 +7228,12 @@
     "pages": "17, 28",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_volatile_poisons.toks_vol_8",
@@ -7536,7 +7241,7 @@
     "deck": "teaching.toks",
     "access": "free",
     "stem_lang": "ui",
-    "stem": "Majmuada spirtlarni qon va siydikdan GX bilan aniqlashda ichki standart sifatida nima olinadi?",
+    "stem": "Majmuada spirtlarni qon va siydikdan GC bilan aniqlashda ichki standart sifatida nima olinadi?",
     "translation_status": {
      "uz": "AUTHORED",
      "ru": "DRAFT",
@@ -7549,12 +7254,12 @@
     "pages": "49",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "guideline.guideline.chem.toks_pesticides",
@@ -7598,12 +7303,12 @@
     "pages": "150–151",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_pesticides.toks_pest_2",
@@ -7624,12 +7329,12 @@
     "pages": "153",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_pesticides.toks_pest_3",
@@ -7637,7 +7342,7 @@
     "deck": "teaching.toks",
     "access": "free",
     "stem_lang": "ui",
-    "stem": "To‘rt purkagichli YuQX da ishqoriy rezorsin bilan qizil dog‘ qaysi birikmani ko‘rsatadi?",
+    "stem": "To‘rt purkagichli TLC da ishqoriy rezorsin bilan qizil dog‘ qaysi birikmani ko‘rsatadi?",
     "translation_status": {
      "uz": "AUTHORED",
      "ru": "DRAFT",
@@ -7650,12 +7355,12 @@
     "pages": "154",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_pesticides.toks_pest_4",
@@ -7663,7 +7368,7 @@
     "deck": "teaching.toks",
     "access": "free",
     "stem_lang": "ui",
-    "stem": "YuQX da natriy ishqori bilan sariq dog‘ beruvchi FOB larning umumiy tuzilish xususiyati nima?",
+    "stem": "TLC da natriy ishqori bilan sariq dog‘ beruvchi FOB larning umumiy tuzilish xususiyati nima?",
     "translation_status": {
      "uz": "AUTHORED",
      "ru": "DRAFT",
@@ -7676,12 +7381,12 @@
     "pages": "154",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_pesticides.toks_pest_5",
@@ -7702,12 +7407,12 @@
     "pages": "154",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_pesticides.toks_pest_6",
@@ -7728,12 +7433,12 @@
     "pages": "158",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "gq.guideline.chem.toks_pesticides.toks_pest_7",
@@ -7754,12 +7459,12 @@
     "pages": "48, 159, 162–163",
     "authored_distractors": true,
     "distractor_count": 3,
-    "explanation": false,
+    "explanation": true,
     "distractor_origin": "authored",
     "cross_deck_distractors": 0,
-    "graded_ready": false,
+    "graded_ready": true,
     "graded_after_explanation": true,
-    "mode_proposal": "graded_after_explanation"
+    "mode_proposal": "graded"
    },
    {
     "id": "guideline.guideline.chem.co_cohb_determination",
@@ -7790,9 +7495,9 @@
   "PMI": {
    "canonical_uz": "O‘limdan keyin o‘tgan vaqt oralig‘i (PMI)",
    "variants": {
-    "PMI": 12,
-    "o‘limdan keyin o‘tgan vaqt oralig‘i": 5,
-    "o‘limdan keyin o‘tgan vaqt": 3,
+    "PMI": 15,
+    "o‘limdan keyin o‘tgan vaqt oralig‘i": 7,
+    "o‘limdan keyin o‘tgan vaqt": 2,
     "o‘lim vaqti": 2,
     "O‘lim vaqti": 1
    },
@@ -7803,19 +7508,19 @@
     },
     "PMI": {
      "arb": 3,
-     "content.db": 8,
+     "content.db": 11,
      "dart": 1
     },
     "o‘lim vaqti": {
      "court_prep": 2
     },
     "o‘limdan keyin o‘tgan vaqt": {
-     "content.db": 2,
+     "content.db": 1,
      "guidelines": 1
     },
     "o‘limdan keyin o‘tgan vaqt oralig‘i": {
      "arb": 3,
-     "content.db": 1,
+     "content.db": 3,
      "dart": 1
     }
    }
@@ -7846,21 +7551,23 @@
   "LC-MS/MS": {
    "canonical_uz": "Suyuqlik xromatografiyasi — tandem mass-spektrometriya (LC-MS/MS)",
    "variants": {
-    "LC-MS/MS": 41,
-    "SX-MS": 39,
-    "YuSSX": 30,
+    "LC-MS/MS": 53,
+    "LC-MS": 35,
     "suyuqlik xromatografiyasi-tandem mass-spektrometriya": 14,
-    "LC-MS": 11,
+    "suyuqlik xromatografiyasi - mass-spektrometriya": 11,
+    "suyuqlik xromatografiyasi - tandem mass-spektrometriya": 7,
     "suyuqlik xromatografiyasi-mass-spektrometriya": 4,
     "LC-MS-MS": 3,
-    "UPLC-MS/MS": 2,
-    "suyuqlik xromatografiyasi - tandem mass-spektrometriya": 1
+    "SX-MS": 3,
+    "YuSSX": 3,
+    "UPLC-MS/MS": 2
    },
-   "variant_count": 9,
+   "variant_count": 10,
    "by_source": {
     "LC-MS": {
      "arb": 1,
      "content.db": 7,
+     "guidelines": 24,
      "court_prep": 3
     },
     "LC-MS-MS": {
@@ -7868,23 +7575,27 @@
     },
     "LC-MS/MS": {
      "arb": 1,
-     "content.db": 35,
-     "guidelines": 1,
+     "content.db": 36,
+     "guidelines": 12,
      "court_prep": 4
     },
     "SX-MS": {
-     "content.db": 1,
-     "guidelines": 38
+     "guidelines": 3
     },
     "UPLC-MS/MS": {
      "content.db": 2
     },
     "YuSSX": {
-     "content.db": 1,
-     "guidelines": 29
+     "guidelines": 3
+    },
+    "suyuqlik xromatografiyasi - mass-spektrometriya": {
+     "guidelines": 10,
+     "court_prep": 1
     },
     "suyuqlik xromatografiyasi - tandem mass-spektrometriya": {
-     "content.db": 1
+     "content.db": 2,
+     "guidelines": 1,
+     "court_prep": 4
     },
     "suyuqlik xromatografiyasi-mass-spektrometriya": {
      "content.db": 4
@@ -7898,28 +7609,28 @@
   "GC-MS": {
    "canonical_uz": "Gaz xromatografiyasi — mass-spektrometriya (GC-MS)",
    "variants": {
-    "GX-MS": 56,
-    "GC-MS": 44,
+    "GC-MS": 95,
+    "gaz xromatografiyasi - mass-spektrometriya": 14,
     "gaz xromatografiyasi-mass-spektrometriya": 13,
+    "GX-MS": 5,
     "gaz xromatografiyasi/mass-spektrometriya": 2,
-    "gaz xromatografiyasi - mass-spektrometriya": 1,
     "xromato-mass-spektrometriya": 1
    },
    "variant_count": 6,
    "by_source": {
     "GC-MS": {
      "arb": 2,
-     "content.db": 36,
-     "guidelines": 3,
-     "court_prep": 3
+     "content.db": 37,
+     "guidelines": 47,
+     "court_prep": 9
     },
     "GX-MS": {
-     "content.db": 1,
-     "guidelines": 49,
-     "court_prep": 6
+     "guidelines": 5
     },
     "gaz xromatografiyasi - mass-spektrometriya": {
-     "content.db": 1
+     "content.db": 1,
+     "guidelines": 12,
+     "court_prep": 1
     },
     "gaz xromatografiyasi-mass-spektrometriya": {
      "content.db": 11,
@@ -7936,18 +7647,18 @@
   "COHb": {
    "canonical_uz": "Karboksigemoglobin (COHb)",
    "variants": {
-    "COHb": 33,
-    "karboksigemoglobin": 6,
+    "COHb": 34,
+    "karboksigemoglobin": 7,
     "karboksigemoglobinga": 1
    },
    "variant_count": 3,
    "by_source": {
     "COHb": {
-     "content.db": 3,
+     "content.db": 4,
      "guidelines": 30
     },
     "karboksigemoglobin": {
-     "content.db": 1,
+     "content.db": 2,
      "guidelines": 5
     },
     "karboksigemoglobinga": {
@@ -7982,4168 +7693,8 @@
    }
   }
  },
- "findings_sha256": "75632edcd49cfd332a5e5f71fbbbf59aa22dd5d8daf35edbdb6f8e3848cc33dc",
+ "findings_sha256": "87d3992ebb68397a5c4b50c61e8fda07ed89d5436a462b6d6e5b5d9d3c38b8f4",
  "findings": [
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#authorities",
-   "id": "AUTH-DE-BTMG-ANL",
-   "field": "names_json",
-   "category": "B",
-   "section": "07_narcotics",
-   "excerpt": "Bundesministerium der Justiz (Veröffentlichung)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#authorities",
-   "id": "AUTH-DE-BTMG-ANL",
-   "field": "names_json",
-   "category": "B",
-   "section": "07_narcotics",
-   "excerpt": "Bundesministerium der Justiz (Veröffentlichung)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#authorities",
-   "id": "AUTH-GB-MDA-1971-SCH2",
-   "field": "names_json",
-   "category": "B",
-   "section": "07_narcotics",
-   "excerpt": "Parliament of the United Kingdom",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#authorities",
-   "id": "AUTH-GB-MDA-1971-SCH2",
-   "field": "names_json",
-   "category": "B",
-   "section": "07_narcotics",
-   "excerpt": "Parliament of the United Kingdom",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#authorities",
-   "id": "AUTH-GB-PARLIAMENT",
-   "field": "names_json",
-   "category": "B",
-   "section": "07_narcotics",
-   "excerpt": "Parliament of the United Kingdom",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#authorities",
-   "id": "AUTH-GB-PARLIAMENT",
-   "field": "names_json",
-   "category": "B",
-   "section": "07_narcotics",
-   "excerpt": "Parliament of the United Kingdom",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#authorities",
-   "id": "AUTH-GB-SCT-MINISTERS",
-   "field": "names_json",
-   "category": "B",
-   "section": "07_narcotics",
-   "excerpt": "The Scottish Ministers",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#authorities",
-   "id": "AUTH-GB-SCT-MINISTERS",
-   "field": "names_json",
-   "category": "B",
-   "section": "07_narcotics",
-   "excerpt": "The Scottish Ministers",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#authorities",
-   "id": "AUTH-US-21CFR1308",
-   "field": "names_json",
-   "category": "B",
-   "section": "07_narcotics",
-   "excerpt": "Drug Enforcement Administration (DEA), U.S. Department of Justice",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#authorities",
-   "id": "AUTH-US-21CFR1308",
-   "field": "names_json",
-   "category": "B",
-   "section": "07_narcotics",
-   "excerpt": "Drug Enforcement Administration (DEA), U.S. Department of Justice",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "CYRILLIC_IN_EN",
-   "lang": "en",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#authorities",
-   "id": "AUTH-UZ-LAW-813-I",
-   "field": "names_json",
-   "category": "B",
-   "section": "07_narcotics",
-   "excerpt": "Олий Мажлис Республики Узбекистан",
-   "detail": "ОлийМажлисРе"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#authorities",
-   "id": "AUTH-UZ-LAW-813-I",
-   "field": "names_json",
-   "category": "B",
-   "section": "07_narcotics",
-   "excerpt": "Олий Мажлис Республики Узбекистан",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#authorities",
-   "id": "AUTH-UZ-LAW-813-I",
-   "field": "names_json",
-   "category": "B",
-   "section": "07_narcotics",
-   "excerpt": "Олий Мажлис Республики Узбекистан",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-6-MAM-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "heroin-related fatalities",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-6-MAM-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "heroin-related fatalities",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-6-MAM-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Second matrix is given as 'BNaF'; the abbreviation is not expanded in the excerpt.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-6-MAM-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Second matrix is given as 'BNaF'; the abbreviation is not expanded in the excerpt.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-6-MAM-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[1]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Values refer to one age group only.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-6-MAM-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[1]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Values refer to one age group only.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-6-MAM-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "heroin-related fatalities, Jeddah 2008–2018; 61–70-year age group",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-6-MAM-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "heroin-related fatalities, Jeddah 2008–2018; 61–70-year age group",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-6-MAM-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "median 21 ng/mL (BNaF); median 52 ng/mL (vitreous humor)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-6-MAM-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "median 21 ng/mL (BNaF); median 52 ng/mL (vitreous humor)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-ALPRAZOLAM-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "alprazolam toxicity",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-ALPRAZOLAM-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "alprazolam toxicity",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-ALPRAZOLAM-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Cited from other authors.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-ALPRAZOLAM-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Cited from other authors.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-ALPRAZOLAM-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[1]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Outcome of the two cases is not stated in the excerpt.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-ALPRAZOLAM-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[1]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Outcome of the two cases is not stated in the excerpt.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-ALPRAZOLAM-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "two alprazolam toxicity cases",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-ALPRAZOLAM-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "two alprazolam toxicity cases",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-ALPRAZOLAM-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "32.8 and 13.0 ng/mL",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-ALPRAZOLAM-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "32.8 and 13.0 ng/mL",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-ALUMINIUM-PHOSPHIDE-TRANSFORMATION_PRODUCT",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "phosphine gas",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-ALUMINIUM-PHOSPHIDE-TRANSFORMATION_PRODUCT",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "phosphine gas",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-AMPHETAMINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "fatal oral amphetamine ingestion (case reports)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-AMPHETAMINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "fatal oral amphetamine ingestion (case reports)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-AMPHETAMINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Highest values only; different units (μg/mL vs μg/g).",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-AMPHETAMINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Highest values only; different units (μg/mL vs μg/g).",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-AMPHETAMINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[1]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Two cases — not generalisable.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-AMPHETAMINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[1]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Two cases — not generalisable.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-AMPHETAMINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "two fatal cases after oral ingestion",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-AMPHETAMINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "two fatal cases after oral ingestion",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-AMPHETAMINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "highest values: urine 2600 μg/mL (case 1); stomach content 14,000 μg/g (case 2)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-AMPHETAMINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "highest values: urine 2600 μg/mL (case 1); stomach content 14,000 μg/g (case 2)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-BENZOYLECGONINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "drivers tested for alcohol/drugs",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-BENZOYLECGONINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "drivers tested for alcohol/drugs",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-BENZOYLECGONINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Median across all positive drivers; not limited to cocaine-only cases.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-BENZOYLECGONINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Median across all positive drivers; not limited to cocaine-only cases.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-BENZOYLECGONINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "motor vehicle drivers in Brittany, France, with at least one positive test",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-BENZOYLECGONINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "motor vehicle drivers in Brittany, France, with at least one positive test",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-BENZOYLECGONINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "median 173.3 ng/mL",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-BENZOYLECGONINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "median 173.3 ng/mL",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-COCAINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "stratified: cardiac-related deaths / acute intoxication / chronic or binge use",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-COCAINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "stratified: cardiac-related deaths / acute intoxication / chronic or binge use",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-COCAINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Approximate means quoted in the introduction of another paper.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-COCAINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Approximate means quoted in the introduction of another paper.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-COCAINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "deaths reported to the National Programme on Substance Abuse Deaths (2000–2019)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-COCAINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "deaths reported to the National Programme on Substance Abuse Deaths (2000–2019)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-COCAINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "mean ≈900 / ≈19,100 / ≈6,200 ng/mL",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-COCAINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "mean ≈900 / ≈19,100 / ≈6,200 ng/mL",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-FENTANYL-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "natural deaths; fentanyl considered incidental",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-FENTANYL-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "natural deaths; fentanyl considered incidental",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-FENTANYL-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Literature values summarised in a case report / literature review.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-FENTANYL-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Literature values summarised in a case report / literature review.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-FENTANYL-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[1]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Partially overlaps values in fentanyl-attributed deaths (see EVIDENCE CONFLICT).",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-FENTANYL-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[1]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Partially overlaps values in fentanyl-attributed deaths (see EVIDENCE CONFLICT).",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-FENTANYL-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "deaths from natural causes with an incidental fentanyl finding",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-FENTANYL-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "deaths from natural causes with an incidental fentanyl finding",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-FENTANYL-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "range 2.7–33 ng/mL; mean 12 ng/mL",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-FENTANYL-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "range 2.7–33 ng/mL; mean 12 ng/mL",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-MDMA-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "coronial cases",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-MDMA-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "coronial cases",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-MDMA-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Coronial cases include deaths not caused by MDMA; cause of death is not in the excerpt.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-MDMA-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Coronial cases include deaths not caused by MDMA; cause of death is not in the excerpt.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-MDMA-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "MDMA-positive coronial cases, New Zealand",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-MDMA-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "MDMA-positive coronial cases, New Zealand",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-MDMA-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "mean 0.88 mg/L; range 0.01–9.30 mg/L (peripheral blood)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-MDMA-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "mean 0.88 mg/L; range 0.01–9.30 mg/L (peripheral blood)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHADONE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "methadone-related deaths",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHADONE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "methadone-related deaths",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHADONE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "The 400–1000 ng/mL range quoted alongside refers to living patients in methadone maintenance treatment, not t…",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHADONE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "The 400–1000 ng/mL range quoted alongside refers to living patients in methadone maintenance treatment, not t…",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHADONE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[1]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Post-mortem values overlap living-patient values (see EVIDENCE CONFLICT).",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHADONE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[1]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Post-mortem values overlap living-patient values (see EVIDENCE CONFLICT).",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHADONE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "adult methadone-related deaths (compared with children)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHADONE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "adult methadone-related deaths (compared with children)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHADONE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "mean 503 ng/mL (adults)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHADONE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "mean 503 ng/mL (adults)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHAMPHETAMINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "methamphetamine-positive post-mortem cases",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHAMPHETAMINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "methamphetamine-positive post-mortem cases",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHAMPHETAMINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.co_intoxicants",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "compared: methamphetamine only vs multiple substances",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHAMPHETAMINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.co_intoxicants",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "compared: methamphetamine only vs multiple substances",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHAMPHETAMINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "SD exceeds the mean — strongly skewed distribution.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHAMPHETAMINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "SD exceeds the mean — strongly skewed distribution.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHAMPHETAMINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "nation-wide 7-year post-mortem study (see source)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHAMPHETAMINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "nation-wide 7-year post-mortem study (see source)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHAMPHETAMINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "mean 2.68 (SD 13.7) vs 1.62 (SD 7.59) µg/mL; P = 0.255 (not significant)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHAMPHETAMINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "mean 2.68 (SD 13.7) vs 1.62 (SD 7.59) µg/mL; P = 0.255 (not significant)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHANOL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "formic acid",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHANOL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "formic acid",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-MORPHINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "deaths with morphine findings",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-MORPHINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "deaths with morphine findings",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-MORPHINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.co_intoxicants",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "stratified: none / alcohol / benzodiazepines / alcohol + benzodiazepines",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-MORPHINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.co_intoxicants",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "stratified: none / alcohol / benzodiazepines / alcohol + benzodiazepines",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-MORPHINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Analyte reported as free morphine.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-MORPHINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Analyte reported as free morphine.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-MORPHINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[1]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Group medians only; ranges and group sizes are not in the excerpt.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-MORPHINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[1]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Group medians only; ranges and group sizes are not in the excerpt.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-MORPHINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "morphine deaths (study cohort; see source)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-MORPHINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "morphine deaths (study cohort; see source)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-MORPHINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "median per group: 0.30 / 0.40 / 0.53 / 0.80 μg/mL",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-MORPHINE-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "median per group: 0.30 / 0.40 / 0.53 / 0.80 μg/mL",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-PREGABALIN-METABOLISM_NOTE",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "negligible metabolism",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-PREGABALIN-METABOLISM_NOTE",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "almost exclusive renal elimination",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-PREGABALIN-METABOLISM_NOTE",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "negligible metabolism",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-PREGABALIN-METABOLISM_NOTE",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "almost exclusive renal elimination",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-PREGABALIN-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "drug-related deaths",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-PREGABALIN-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "drug-related deaths",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-PREGABALIN-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "National data quoted for comparison, not measured in the citing study.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-PREGABALIN-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "National data quoted for comparison, not measured in the citing study.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-PREGABALIN-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "drug-related deaths, Australia, 2000–2020",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-PREGABALIN-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "drug-related deaths, Australia, 2000–2020",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-PREGABALIN-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "mean 16.3 mg/L",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-PREGABALIN-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "mean 16.3 mg/L",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-THC-COOH-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "cannabis-related case reports",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-THC-COOH-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "cannabis-related case reports",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-THC-COOH-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Kidney tissue values are written in ng/mL in the source — reviewer to check units.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-THC-COOH-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Kidney tissue values are written in ng/mL in the source — reviewer to check units.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-THC-COOH-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "case study reports (see source)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-THC-COOH-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "case study reports (see source)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-THC-COOH-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "range 8.0–3894 ng/g (liver); 3–1774 ng/mL (kidney, as written)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-THC-COOH-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "range 8.0–3894 ng/g (liver); 3–1774 ng/mL (kidney, as written)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-THC-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "paediatric cannabis intoxication",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-THC-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "paediatric cannabis intoxication",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-THC-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Cited from another study.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-THC-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Cited from another study.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-THC-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[1]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Time since exposure not stated in the excerpt.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-THC-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[1]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Time since exposure not stated in the excerpt.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-THC-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "paediatric cannabis intoxication cases, France",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-THC-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "paediatric cannabis intoxication cases, France",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-THC-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "mean THC 29 ng/mL; 11-OH-THC 21 ng/mL; THC-COOH 255 ng/mL (plasma)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-THC-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "mean THC 29 ng/mL; 11-OH-THC 21 ng/mL; THC-COOH 255 ng/mL (plasma)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-TRAMADOL-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "tramadol poisoning with hypoglycaemia and cardiac arrest (fatal outcome)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-TRAMADOL-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.case_type",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "tramadol poisoning with hypoglycaemia and cardiac arrest (fatal outcome)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-TRAMADOL-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Value is cited from an earlier report, not measured by the citing authors.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-TRAMADOL-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[0]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Value is cited from an earlier report, not measured by the citing authors.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-TRAMADOL-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[1]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Whether the plasma sample was taken before or after death is not stated in the excerpt.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-TRAMADOL-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.limitations[1]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Whether the plasma sample was taken before or after death is not stated in the excerpt.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-TRAMADOL-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "single previously reported case",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-TRAMADOL-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.population",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "single previously reported case",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-TRAMADOL-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "single value 5.2 mg/L (plasma)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-TRAMADOL-REPORTED_CONCENTRATION-P5",
-   "field": "context_strict.statistic",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "single value 5.2 mg/L (plasma)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#evidence_conflicts",
-   "id": "CF-FENTANYL-INCIDENTAL",
-   "field": "note",
-   "category": "B",
-   "section": "23_errors",
-   "excerpt": "The source reports partial overlap with blood values in natural-cause deaths where fentanyl was considered in…",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#evidence_conflicts",
-   "id": "CF-FENTANYL-INCIDENTAL",
-   "field": "note",
-   "category": "B",
-   "section": "23_errors",
-   "excerpt": "The source reports partial overlap with blood values in natural-cause deaths where fentanyl was considered in…",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#evidence_conflicts",
-   "id": "CF-FENTANYL-INCIDENTAL",
-   "field": "question",
-   "category": "B",
-   "section": "23_errors",
-   "excerpt": "Can a fentanyl blood concentration alone separate fentanyl-attributed deaths from incidental findings?",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#evidence_conflicts",
-   "id": "CF-FENTANYL-INCIDENTAL",
-   "field": "question",
-   "category": "B",
-   "section": "23_errors",
-   "excerpt": "Can a fentanyl blood concentration alone separate fentanyl-attributed deaths from incidental findings?",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#evidence_conflicts",
-   "id": "CF-METHADONE-PM-VS-LIVING",
-   "field": "note",
-   "category": "B",
-   "section": "23_errors",
-   "excerpt": "The source states that the mean adult post-mortem concentration (503 ng/mL) overlaps the range reported in li…",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#evidence_conflicts",
-   "id": "CF-METHADONE-PM-VS-LIVING",
-   "field": "note",
-   "category": "B",
-   "section": "23_errors",
-   "excerpt": "The source states that the mean adult post-mortem concentration (503 ng/mL) overlaps the range reported in li…",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#evidence_conflicts",
-   "id": "CF-METHADONE-PM-VS-LIVING",
-   "field": "question",
-   "category": "B",
-   "section": "23_errors",
-   "excerpt": "Does a post-mortem methadone blood concentration distinguish toxicity from therapeutic use?",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#evidence_conflicts",
-   "id": "CF-METHADONE-PM-VS-LIVING",
-   "field": "question",
-   "category": "B",
-   "section": "23_errors",
-   "excerpt": "Does a post-mortem methadone blood concentration distinguish toxicity from therapeutic use?",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#evidence_conflicts",
-   "id": "CF-TRAMADOL-M2-ACTIVITY",
-   "field": "note",
-   "category": "B",
-   "section": "23_errors",
-   "excerpt": "One source names only O-desmethyltramadol as the active metabolite and M2 simply as 'the metabolite M2'; anot…",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#evidence_conflicts",
-   "id": "CF-TRAMADOL-M2-ACTIVITY",
-   "field": "note",
-   "category": "B",
-   "section": "23_errors",
-   "excerpt": "One source names only O-desmethyltramadol as the active metabolite and M2 simply as 'the metabolite M2'; anot…",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#evidence_conflicts",
-   "id": "CF-TRAMADOL-M2-ACTIVITY",
-   "field": "question",
-   "category": "B",
-   "section": "23_errors",
-   "excerpt": "Is N-desmethyltramadol (M2) described as an active metabolite?",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#evidence_conflicts",
-   "id": "CF-TRAMADOL-M2-ACTIVITY",
-   "field": "question",
-   "category": "B",
-   "section": "23_errors",
-   "excerpt": "Is N-desmethyltramadol (M2) described as an active metabolite?",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#evidence_conflicts",
-   "id": "CF-VITREOUS-K-PMI",
-   "field": "note",
-   "category": "B",
-   "section": "23_errors",
-   "excerpt": "One source reports a linear rise of vitreous potassium with advancing PMI; another reports an inconsistent in…",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#evidence_conflicts",
-   "id": "CF-VITREOUS-K-PMI",
-   "field": "note",
-   "category": "B",
-   "section": "23_errors",
-   "excerpt": "One source reports a linear rise of vitreous potassium with advancing PMI; another reports an inconsistent in…",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#evidence_conflicts",
-   "id": "CF-VITREOUS-K-PMI",
-   "field": "question",
-   "category": "B",
-   "section": "23_errors",
-   "excerpt": "Can vitreous potassium be used to estimate the post-mortem interval?",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#evidence_conflicts",
-   "id": "CF-VITREOUS-K-PMI",
-   "field": "question",
-   "category": "B",
-   "section": "23_errors",
-   "excerpt": "Can vitreous potassium be used to estimate the post-mortem interval?",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#jurisdictional_instruments",
-   "id": "DE-BTMG-ANL",
-   "field": "official_reference (editorial)",
-   "category": "B",
-   "section": "07_narcotics",
-   "excerpt": "BtMG 1981, Anlagen I–III — consolidated text retrieved 2026-10-04; date of entry into force not recorded (NEE…",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#jurisdictional_instruments",
-   "id": "DE-BTMG-ANL",
-   "field": "official_reference (editorial)",
-   "category": "B",
-   "section": "07_narcotics",
-   "excerpt": "BtMG 1981, Anlagen I–III — consolidated text retrieved 2026-10-04; date of entry into force not recorded (NEE…",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#jurisdictional_instruments",
-   "id": "US-21CFR1308",
-   "field": "official_reference (editorial)",
-   "category": "B",
-   "section": "07_narcotics",
-   "excerpt": "21 CFR 1308.11–1308.15 — consolidated text retrieved 2026-10-04; date of entry into force not recorded (NEEDS…",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#jurisdictional_instruments",
-   "id": "US-21CFR1308",
-   "field": "official_reference (editorial)",
-   "category": "B",
-   "section": "07_narcotics",
-   "excerpt": "21 CFR 1308.11–1308.15 — consolidated text retrieved 2026-10-04; date of entry into force not recorded (NEEDS…",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#jurisdictional_instruments",
-   "id": "UZ-LAW-813-I",
-   "field": "official_reference (editorial)",
-   "category": "B",
-   "section": "07_narcotics",
-   "excerpt": "№ 813-I — consolidated text retrieved 2026-10-04; date of entry into force not recorded (NEEDS LEGAL REVIEW)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#jurisdictional_instruments",
-   "id": "UZ-LAW-813-I",
-   "field": "official_reference (editorial)",
-   "category": "B",
-   "section": "07_narcotics",
-   "excerpt": "№ 813-I — consolidated text retrieved 2026-10-04; date of entry into force not recorded (NEEDS LEGAL REVIEW)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#jurisdictions",
-   "id": "INT",
-   "field": "names_json",
-   "category": "B",
-   "section": "07_narcotics",
-   "excerpt": "International",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#jurisdictions",
-   "id": "INT",
-   "field": "names_json",
-   "category": "B",
-   "section": "07_narcotics",
-   "excerpt": "International",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "reagent-dragendorff",
-   "field": "payload.ingredients[5].name",
-   "category": "B",
-   "section": "06_reagents",
-   "excerpt": "distilled water",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "reagent-dragendorff",
-   "field": "payload.ingredients[5].name",
-   "category": "B",
-   "section": "06_reagents",
-   "excerpt": "distilled water",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "reagent-dragendorff",
-   "field": "payload.ingredients[6].name",
-   "category": "B",
-   "section": "06_reagents",
-   "excerpt": "acetic acid",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "reagent-dragendorff",
-   "field": "payload.ingredients[6].name",
-   "category": "B",
-   "section": "06_reagents",
-   "excerpt": "acetic acid",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "reagent-dragendorff",
-   "field": "payload.ingredients[7].name",
-   "category": "B",
-   "section": "06_reagents",
-   "excerpt": "potassium iodide solution, 40 g% (w/v)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "reagent-dragendorff",
-   "field": "payload.ingredients[7].name",
-   "category": "B",
-   "section": "06_reagents",
-   "excerpt": "potassium iodide solution, 40 g% (w/v)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "reagent-dragendorff",
-   "field": "payload.ingredients[8].name",
-   "category": "B",
-   "section": "06_reagents",
-   "excerpt": "basic bismuth nitrate, 1.7 g% w/v in 20% v/v acetic acid",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "reagent-dragendorff",
-   "field": "payload.ingredients[8].name",
-   "category": "B",
-   "section": "06_reagents",
-   "excerpt": "basic bismuth nitrate, 1.7 g% w/v in 20% v/v acetic acid",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "reagent-dragendorff",
-   "field": "payload.steps[3]",
-   "category": "B",
-   "section": "06_reagents",
-   "excerpt": "Dragendorff’s reagent was prepared by mixing 70 mL distilled water and 20 mL acetic acid with 5 mL of 40 g% p…",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "reagent-dragendorff",
-   "field": "payload.steps[3]",
-   "category": "B",
-   "section": "06_reagents",
-   "excerpt": "Dragendorff’s reagent was prepared by mixing 70 mL distilled water and 20 mL acetic acid with 5 mL of 40 g% p…",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-colour-tests",
-   "field": "payload.analyte",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "various (presumptive)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-colour-tests",
-   "field": "payload.analyte",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "various (presumptive)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-colour-tests",
-   "field": "payload.principle",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "colour (spot) reaction",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-colour-tests",
-   "field": "payload.principle",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "colour (spot) reaction",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-colour-tests",
-   "field": "payload.specimen",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "seized material (see source)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-colour-tests",
-   "field": "payload.specimen",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "seized material (see source)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-fentanyl-test-strips",
-   "field": "payload.analyte",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "fentanyl and some analogues (see source)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-fentanyl-test-strips",
-   "field": "payload.analyte",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "fentanyl and some analogues (see source)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-fentanyl-test-strips",
-   "field": "payload.principle",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "test strip (see source)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-fentanyl-test-strips",
-   "field": "payload.principle",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "test strip (see source)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-fentanyl-test-strips",
-   "field": "payload.specimen",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "not specified in source",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-fentanyl-test-strips",
-   "field": "payload.specimen",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "not specified in source",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-amphetamines",
-   "field": "payload.analyte",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "amphetamines (class-based)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-amphetamines",
-   "field": "payload.analyte",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "amphetamines (class-based)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-amphetamines",
-   "field": "payload.principle",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "immunoassay",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-amphetamines",
-   "field": "payload.principle",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "immunoassay",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-amphetamines",
-   "field": "payload.specimen",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "not specified in source",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-amphetamines",
-   "field": "payload.specimen",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "not specified in source",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-cannabinoids",
-   "field": "payload.analyte",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "THC metabolites (class-based)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-cannabinoids",
-   "field": "payload.analyte",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "THC metabolites (class-based)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-cannabinoids",
-   "field": "payload.principle",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "immunoassay",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-cannabinoids",
-   "field": "payload.principle",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "immunoassay",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-cannabinoids",
-   "field": "payload.specimen",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "not specified in source",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-cannabinoids",
-   "field": "payload.specimen",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "not specified in source",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-drugs",
-   "field": "payload.analyte",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "drugs of abuse (class-based; see source)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-drugs",
-   "field": "payload.analyte",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "drugs of abuse (class-based; see source)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-drugs",
-   "field": "payload.principle",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "immunoassay",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-drugs",
-   "field": "payload.principle",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "immunoassay",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-drugs",
-   "field": "payload.specimen",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "not specified in source",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-drugs",
-   "field": "payload.specimen",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "not specified in source",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-fentanyl",
-   "field": "payload.analyte",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "fentanyl (class-based)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-fentanyl",
-   "field": "payload.analyte",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "fentanyl (class-based)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-fentanyl",
-   "field": "payload.principle",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "immunoassay",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-fentanyl",
-   "field": "payload.principle",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "immunoassay",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-fentanyl",
-   "field": "payload.specimen",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "not specified in source",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-fentanyl",
-   "field": "payload.specimen",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "not specified in source",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-opiates",
-   "field": "payload.analyte",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "opiates (class-based)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-opiates",
-   "field": "payload.analyte",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "opiates (class-based)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-opiates",
-   "field": "payload.principle",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "immunoassay",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-opiates",
-   "field": "payload.principle",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "immunoassay",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-opiates",
-   "field": "payload.specimen",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "not specified in source",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#knowledge_entities",
-   "id": "scr-immunoassay-opiates",
-   "field": "payload.specimen",
-   "category": "B",
-   "section": "08_toxicology",
-   "excerpt": "not specified in source",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "UZBEK_IN_EN",
-   "lang": "en",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#sources",
-   "id": "SRC-FE-EDITORIAL",
-   "field": "title (app-authored)",
-   "category": "B",
-   "section": "28_sources_citation",
-   "excerpt": "FORENSIC EXPERT — tahririy izohlar (umumiy xavfsizlik tavsiyalari, manba noaniqliklari); ilmiy manba emas",
-   "detail": "emas manba"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#sources",
-   "id": "SRC-FE-EDITORIAL",
-   "field": "title (app-authored)",
-   "category": "B",
-   "section": "28_sources_citation",
-   "excerpt": "FORENSIC EXPERT — tahririy izohlar (umumiy xavfsizlik tavsiyalari, manba noaniqliklari); ilmiy manba emas",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#sources",
-   "id": "SRC-FE-EDITORIAL",
-   "field": "title (app-authored)",
-   "category": "B",
-   "section": "28_sources_citation",
-   "excerpt": "FORENSIC EXPERT — tahririy izohlar (umumiy xavfsizlik tavsiyalari, manba noaniqliklari); ilmiy manba emas",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "en",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#sources",
-   "id": "SRC-OWNER-REAGENTS",
-   "field": "title (app-authored)",
-   "category": "B",
-   "section": "28_sources_citation",
-   "excerpt": "«Приготовление реактивов» — reagent preparation compilation (toxicological chemistry), 74 entries",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#sources",
-   "id": "SRC-OWNER-REAGENTS",
-   "field": "title (app-authored)",
-   "category": "B",
-   "section": "28_sources_citation",
-   "excerpt": "«Приготовление реактивов» — reagent preparation compilation (toxicological chemistry), 74 entries",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#standards",
-   "id": "STD-ASB-017-25",
-   "field": "note",
-   "category": "B",
-   "section": "28_sources_citation",
-   "excerpt": "Listed on the OSAC Registry (SDO published standard). Text not reproduced.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#standards",
-   "id": "STD-ASB-017-25",
-   "field": "note",
-   "category": "B",
-   "section": "28_sources_citation",
-   "excerpt": "Listed on the OSAC Registry (SDO published standard). Text not reproduced.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#standards",
-   "id": "STD-ASB-056-25",
-   "field": "note",
-   "category": "B",
-   "section": "28_sources_citation",
-   "excerpt": "Listed on the OSAC Registry (SDO published standard). Text not reproduced.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#standards",
-   "id": "STD-ASB-056-25",
-   "field": "note",
-   "category": "B",
-   "section": "28_sources_citation",
-   "excerpt": "Listed on the OSAC Registry (SDO published standard). Text not reproduced.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#standards",
-   "id": "STD-ASTM-E2329-25",
-   "field": "note",
-   "category": "B",
-   "section": "28_sources_citation",
-   "excerpt": "Listed on the OSAC Registry (SDO published standard). Text not reproduced.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#standards",
-   "id": "STD-ASTM-E2329-25",
-   "field": "note",
-   "category": "B",
-   "section": "28_sources_citation",
-   "excerpt": "Listed on the OSAC Registry (SDO published standard). Text not reproduced.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#standards",
-   "id": "STD-ICH-Q2R1",
-   "field": "note",
-   "category": "B",
-   "section": "28_sources_citation",
-   "excerpt": "Superseded by Q2(R2) (complete revision; history table in Q2(R2)).",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#standards",
-   "id": "STD-ICH-Q2R1",
-   "field": "note",
-   "category": "B",
-   "section": "28_sources_citation",
-   "excerpt": "Superseded by Q2(R2) (complete revision; history table in Q2(R2)).",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#standards",
-   "id": "STD-ICH-Q2R2",
-   "field": "note",
-   "category": "B",
-   "section": "28_sources_citation",
-   "excerpt": "Pharmaceutical scope; applicability to forensic methods is a laboratory decision.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#standards",
-   "id": "STD-ICH-Q2R2",
-   "field": "note",
-   "category": "B",
-   "section": "28_sources_citation",
-   "excerpt": "Pharmaceutical scope; applicability to forensic methods is a laboratory decision.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#standards",
-   "id": "STD-OSAC-2025-S-0010",
-   "field": "note",
-   "category": "B",
-   "section": "28_sources_citation",
-   "excerpt": "OSAC Proposed Standard, in SDO development — not a published SDO standard.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#standards",
-   "id": "STD-OSAC-2025-S-0010",
-   "field": "note",
-   "category": "B",
-   "section": "28_sources_citation",
-   "excerpt": "OSAC Proposed Standard, in SDO development — not a published SDO standard.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#standards",
-   "id": "STD-UNODC-ST-NAR-41",
-   "field": "note",
-   "category": "B",
-   "section": "28_sources_citation",
-   "excerpt": "Status 'current' means no successor was found on the publisher page; not a statement of endorsement.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "error",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#standards",
-   "id": "STD-UNODC-ST-NAR-41",
-   "field": "note",
-   "category": "B",
-   "section": "28_sources_citation",
-   "excerpt": "Status 'current' means no successor was found on the publisher page; not a statement of endorsement.",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "UZ_AWKWARD_COUNTER",
-   "lang": "uz",
-   "source": "arb",
-   "container": "lib/core/l10n/arb/app_<lang>.arb",
-   "id": "admShown",
-   "field": "value",
-   "category": "A",
-   "section": "21_admin",
-   "excerpt": "{total} tadan {shown} tasi",
-   "detail": "{total} tadan {shown}"
-  },
-  {
-   "severity": "warn",
-   "rule": "UZ_AWKWARD_COUNTER",
-   "lang": "uz",
-   "source": "arb",
-   "container": "lib/core/l10n/arb/app_<lang>.arb",
-   "id": "courtDrillStep",
-   "field": "value",
-   "category": "A",
-   "section": "16_court",
-   "excerpt": "{count} tadan {index}-qadam",
-   "detail": "{count} tadan {index}"
-  },
-  {
-   "severity": "warn",
-   "rule": "UZ_AWKWARD_COUNTER",
-   "lang": "uz",
-   "source": "arb",
-   "container": "lib/core/l10n/arb/app_<lang>.arb",
-   "id": "courtQuestionOf",
-   "field": "value",
-   "category": "A",
-   "section": "16_court",
-   "excerpt": "{count} tadan {index}-savol",
-   "detail": "{count} tadan {index}"
-  },
-  {
-   "severity": "warn",
-   "rule": "ENGLISH_IN_RU",
-   "lang": "ru",
-   "source": "arb",
-   "container": "lib/core/l10n/arb/app_<lang>.arb",
-   "id": "emailCodeChange",
-   "field": "value",
-   "category": "A",
-   "section": "20_auth_profile",
-   "excerpt": "Изменить email",
-   "detail": "email"
-  },
-  {
-   "severity": "warn",
-   "rule": "UZ_AWKWARD_COUNTER",
-   "lang": "uz",
-   "source": "arb",
-   "container": "lib/core/l10n/arb/app_<lang>.arb",
-   "id": "firstStepsProgress",
-   "field": "value",
-   "category": "A",
-   "section": "01_home",
-   "excerpt": "{total} tadan {done} tasi bajarildi",
-   "detail": "{total} tadan {done}"
-  },
-  {
-   "severity": "warn",
-   "rule": "ENGLISH_IN_RU",
-   "lang": "ru",
-   "source": "arb",
-   "container": "lib/core/l10n/arb/app_<lang>.arb",
-   "id": "privacySummary",
-   "field": "value",
-   "category": "A",
-   "section": "26_privacy_terms",
-   "excerpt": "Основная библиотека и калькуляторы работают офлайн. История поиска, прогресс и необязательный профиль (имя, о…",
-   "detail": "email"
-  },
-  {
-   "severity": "warn",
-   "rule": "UZ_AWKWARD_COUNTER",
-   "lang": "uz",
-   "source": "arb",
-   "container": "lib/core/l10n/arb/app_<lang>.arb",
-   "id": "studyCardProgress",
-   "field": "value",
-   "category": "A",
-   "section": "15_study",
-   "excerpt": "{total} tadan {current}-kartochka",
-   "detail": "{total} tadan {current}"
-  },
-  {
-   "severity": "warn",
-   "rule": "UZ_AWKWARD_COUNTER",
-   "lang": "uz",
-   "source": "arb",
-   "container": "lib/core/l10n/arb/app_<lang>.arb",
-   "id": "studyQuizQuestionOf",
-   "field": "value",
-   "category": "A",
-   "section": "15_study",
-   "excerpt": "{total} tadan {current}-savol",
-   "detail": "{total} tadan {current}"
-  },
-  {
-   "severity": "warn",
-   "rule": "UZ_AWKWARD_COUNTER",
-   "lang": "uz",
-   "source": "arb",
-   "container": "lib/core/l10n/arb/app_<lang>.arb",
-   "id": "studyQuizScore",
-   "field": "value",
-   "category": "A",
-   "section": "15_study",
-   "excerpt": "Natija: {total} tadan {correct} ta",
-   "detail": "{total} tadan {correct}"
-  },
-  {
-   "severity": "warn",
-   "rule": "UZ_AWKWARD_COUNTER",
-   "lang": "uz",
-   "source": "arb",
-   "container": "lib/core/l10n/arb/app_<lang>.arb",
-   "id": "studySessionSummary",
-   "field": "value",
-   "category": "A",
-   "section": "15_study",
-   "excerpt": "{total} tadan {known} tasini bildingiz",
-   "detail": "{total} tadan {known}"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-ALPRAZOLAM-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "4-hydroxyalprazolam",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-ALPRAZOLAM-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "α-hydroxyalprazolam",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-ALPRAZOLAM-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "4-hydroxyalprazolam",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-ALPRAZOLAM-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "α-hydroxyalprazolam",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-AMITRIPTYLINE-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "nortriptyline",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-AMITRIPTYLINE-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "nortriptyline",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-CARBON-MONOXIDE-BIOMARKER",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Carboxyhaemoglobin (COHb)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-CARBON-MONOXIDE-BIOMARKER",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "Carboxyhaemoglobin (COHb)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-CHLORPYRIFOS-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "chlorpyrifos-oxon",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-CHLORPYRIFOS-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "chlorpyrifos-oxon",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-COCAINE-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "EME",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-COCAINE-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "BE",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-COCAINE-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "ecgonine (EC)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-COCAINE-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "EME",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-COCAINE-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "BE",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-COCAINE-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "ecgonine (EC)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-ETHANOL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "acetaldehyde",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-ETHANOL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "acetate",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-ETHANOL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "acetyl-CoA",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-ETHANOL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "acetaldehyde",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-ETHANOL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "acetate",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-ETHANOL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "acetyl-CoA",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-ETHYLENE-GLYCOL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "glycolaldehyde",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-ETHYLENE-GLYCOL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "glycolate",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-ETHYLENE-GLYCOL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "glycolaldehyde",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-ETHYLENE-GLYCOL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "glycolate",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-FENTANYL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "norfentanyl",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-FENTANYL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "norfentanyl",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-HEROIN-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "6-monoacetylmorphine (6-MAM)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-HEROIN-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "morphine",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-HEROIN-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "6-monoacetylmorphine (6-MAM)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-HEROIN-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "morphine",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHAMPHETAMINE-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "4-hydroxymetamphetamine",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHAMPHETAMINE-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "amphetamine (AM)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHAMPHETAMINE-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "4-hydroxymetamphetamine",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHAMPHETAMINE-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "amphetamine (AM)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHANOL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "formaldehyde",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-METHANOL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "formaldehyde",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-MORPHINE-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "morphine-3-glucuronide (M3G)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-MORPHINE-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "morphine-6-glucuronide (M6G)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-MORPHINE-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "morphine-3-glucuronide (M3G)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-MORPHINE-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "morphine-6-glucuronide (M6G)",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-PARACETAMOL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "sulfate",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-PARACETAMOL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "glucuronide",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-PARACETAMOL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "NAPQI",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-PARACETAMOL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "sulfate",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-PARACETAMOL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "glucuronide",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-PARACETAMOL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "NAPQI",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-PHENAZEPAM-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "3-hydroxyphenazepam",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-PHENAZEPAM-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "3-hydroxyphenazepam",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-THC-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "THC-COOH",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-THC-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "11-OH-THC",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-THC-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "THC-COOH",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-THC-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "11-OH-THC",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-TRAMADOL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "O-desmethyltramadol",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-TRAMADOL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "M2",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "ru",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-TRAMADOL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "M5",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-TRAMADOL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "O-desmethyltramadol",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-TRAMADOL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "M2",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "MISSING_TRANSLATION",
-   "lang": "uz",
-   "source": "content.db",
-   "container": "assets/content/pilot/content.db#claims",
-   "id": "C-TRAMADOL-METABOLITES",
-   "field": "value_json.items[]",
-   "category": "B",
-   "section": "03_library",
-   "excerpt": "M5",
-   "detail": "ilova boshqa tilga qaytadi (fallback)"
-  },
-  {
-   "severity": "warn",
-   "rule": "ENGLISH_SHAPED_IN_UZ",
-   "lang": "uz",
-   "source": "guidelines",
-   "container": "assets/content/guidelines/guidelines_v1.json",
-   "id": "guideline.chem.co_cohb_determination",
-   "field": "sections.advantages.body",
-   "category": "B",
-   "section": "05_guidelines",
-   "excerpt": "Uch yondashuvni qisqa taqqoslash: • CO-oksimetriya (ko‘p to‘lqinli): tez, kichik hajm, bir o‘lchovda bir nech…",
-   "detail": "methemoglobin"
-  },
-  {
-   "severity": "warn",
-   "rule": "ENGLISH_SHAPED_IN_UZ",
-   "lang": "uz",
-   "source": "guidelines",
-   "container": "assets/content/guidelines/guidelines_v1.json",
-   "id": "guideline.chem.co_cohb_determination",
-   "field": "sections.methods.body",
-   "category": "B",
-   "section": "05_guidelines",
-   "excerpt": "• CO-oksimetriya (ko‘p to‘lqinli spektrofotometriya). Avtomatlashtirilgan asboblar umumiy gemoglobin, oksigem…",
-   "detail": "methemoglobin methemoglobinni"
-  },
   {
    "severity": "warn",
    "rule": "ENGLISH_SHAPED_IN_UZ",
@@ -12185,20 +7736,7 @@
   },
   {
    "severity": "warn",
-   "rule": "ENGLISH_IN_UZ",
-   "lang": "uz",
-   "source": "guidelines",
-   "container": "assets/content/guidelines/guidelines_v1.json",
-   "id": "guideline.tox.postmortem_interpretation",
-   "field": "sections.advantages.body",
-   "category": "B",
-   "section": "05_guidelines",
-   "excerpt": "• Bir nechta joydan olingan namunalar PMR ni aniqlash va natijani noto‘g‘ri talqin qilmaslik imkonini beradi …",
-   "detail": "antemortem postmortem"
-  },
-  {
-   "severity": "warn",
-   "rule": "ENGLISH_IN_UZ",
+   "rule": "ENGLISH_SHAPED_IN_UZ",
    "lang": "uz",
    "source": "guidelines",
    "container": "assets/content/guidelines/guidelines_v1.json",
@@ -12207,20 +7745,7 @@
    "category": "B",
    "section": "05_guidelines",
    "excerpt": "• Namuna olingan joy. Markaziy tomirlar (yurak, o‘pka tomirlari) qoni odatda periferik qondan yuqori qiymat b…",
-   "detail": "postmortem"
-  },
-  {
-   "severity": "warn",
-   "rule": "ENGLISH_IN_UZ",
-   "lang": "uz",
-   "source": "guidelines",
-   "container": "assets/content/guidelines/guidelines_v1.json",
-   "id": "guideline.tox.postmortem_interpretation",
-   "field": "sections.methods.body",
-   "category": "B",
-   "section": "05_guidelines",
-   "excerpt": "Postmortem natijani talqin qilish bitta raqamni jadval bilan solishtirish emas, balki bosqichma-bosqich dalil…",
-   "detail": "antemortem postmortem"
+   "detail": "mikroorganizmlar redistribution"
   },
   {
    "severity": "warn",
@@ -12234,19 +7759,6 @@
    "section": "05_guidelines",
    "excerpt": "preanalitika, preanalitik bosqich, namuna olish, namunalarni tanlash, belgilash, markirovka, konservatsiya, k…",
    "detail": "antemortem of"
-  },
-  {
-   "severity": "warn",
-   "rule": "ENGLISH_IN_UZ",
-   "lang": "uz",
-   "source": "guidelines",
-   "container": "assets/content/guidelines/guidelines_v1.json",
-   "id": "guideline.tox.specimen_preanalytics",
-   "field": "sections.scope.body",
-   "category": "B",
-   "section": "05_guidelines",
-   "excerpt": "Kartochka quyidagi holatlarda olinadigan biologik namunalarga taalluqli: • postmortem toksikologiya (o‘lim sa…",
-   "detail": "antemortem postmortem"
   },
   {
    "severity": "info",
