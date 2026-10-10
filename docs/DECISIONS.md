@@ -116,6 +116,11 @@ yozilmas edi. Endi:
 - Xalqaro manba topilsa, u ham yonma-yon keltiriladi; topilmagani endi
   ABY’dan yozishga to‘siq emas.
 
+- **Faqat o‘zbek tilida ko‘rinadi.** Rus va ingliz tilida ABY’ga asoslangan
+  yozuvlar umuman chiqmaydi va tarjima qilinmaydi (`value.locale_only: "uz"`).
+  Bu uch tilli qoidadan ataylab qilingan istisno: hujjat milliy amaliyotga oid
+  va egasi uni boshqa tillarda tarqatishni istamaydi.
+
 Sabab: egasi aytdi — ABY ning o‘zi kitoblardan jamlangan, va O‘zbekistonda
 amalda qo‘llanadigan usullar aynan shu hujjatda yozilgan; usulni manbasiz
 qoldirgandan ko‘ra, uni o‘z manbasi bilan ko‘rsatish to‘g‘riroq.
