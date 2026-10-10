@@ -1,0 +1,473 @@
+{
+  "role": "study",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "s01",
+      "title": "STUDENT uz: study hub decks and modes",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s01_student_uz_study_hub_decks_and_modes.png"
+    },
+    {
+      "id": "s02",
+      "title": "STUDENT uz: hub mixed topics deck",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s02_student_uz_hub_mixed_topics_deck.png"
+    },
+    {
+      "id": "s03",
+      "title": "STUDENT uz: practice toks answered with explanation",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s03_student_uz_practice_toks_answered_with_e.png"
+    },
+    {
+      "id": "s04",
+      "title": "STUDENT uz: practice toks open source",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s04_student_uz_practice_toks_open_source.png"
+    },
+    {
+      "id": "s05",
+      "title": "STUDENT uz: practice topics translated quote",
+      "result": "PASS",
+      "notes": [
+        "deck: discipline.mixed"
+      ],
+      "screenshot": "s05_student_uz_practice_topics_translated_qu.png"
+    },
+    {
+      "id": "s06",
+      "title": "STUDENT uz: mixed deck practice (true/false or MC)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s06_student_uz_mixed_deck_practice_true_fals.png"
+    },
+    {
+      "id": "s07",
+      "title": "STUDENT uz: exam",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s07_student_uz_exam.png"
+    },
+    {
+      "id": "s08",
+      "title": "STUDENT uz: exam review explanations",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s08_student_uz_exam_review_explanations.png"
+    },
+    {
+      "id": "s09",
+      "title": "STUDENT uz: guideline card abbreviation link sheet",
+      "result": "PASS",
+      "notes": [
+        "links: TLC, GC-MS, LC-MS/MS, Rf, HPLC"
+      ],
+      "screenshot": "s09_student_uz_guideline_card_abbreviation_l.png"
+    },
+    {
+      "id": "s10",
+      "title": "STUDENT uz: 320 dp practice explanation",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s10_student_uz_320_dp_practice_explanation.png"
+    },
+    {
+      "id": "s11",
+      "title": "STUDENT uz: 320 dp hub",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s11_student_uz_320_dp_hub.png"
+    },
+    {
+      "id": "s12",
+      "title": "STUDENT uz: counter text style",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s12_student_uz_counter_text_style.png"
+    },
+    {
+      "id": "s13",
+      "title": "STUDENT ru: study hub decks and modes",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s13_student_ru_study_hub_decks_and_modes.png"
+    },
+    {
+      "id": "s14",
+      "title": "STUDENT ru: hub mixed topics deck",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s14_student_ru_hub_mixed_topics_deck.png"
+    },
+    {
+      "id": "s15",
+      "title": "STUDENT ru: practice toks answered with explanation",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s15_student_ru_practice_toks_answered_with_e.png"
+    },
+    {
+      "id": "s16",
+      "title": "STUDENT ru: practice toks open source",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s16_student_ru_practice_toks_open_source.png"
+    },
+    {
+      "id": "s17",
+      "title": "STUDENT ru: practice topics translated quote",
+      "result": "PASS",
+      "notes": [
+        "deck: discipline.mixed"
+      ],
+      "screenshot": "s17_student_ru_practice_topics_translated_qu.png"
+    },
+    {
+      "id": "s18",
+      "title": "STUDENT ru: mixed deck practice (true/false or MC)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s18_student_ru_mixed_deck_practice_true_fals.png"
+    },
+    {
+      "id": "s19",
+      "title": "STUDENT ru: exam",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s19_student_ru_exam.png"
+    },
+    {
+      "id": "s20",
+      "title": "STUDENT ru: guideline card abbreviation link sheet",
+      "result": "PASS",
+      "notes": [
+        "links: TLC, GC-MS, LC-MS/MS, Rf, HPLC"
+      ],
+      "screenshot": "s20_student_ru_guideline_card_abbreviation_l.png"
+    },
+    {
+      "id": "s21",
+      "title": "STUDENT ru: 320 dp practice explanation",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s21_student_ru_320_dp_practice_explanation.png"
+    },
+    {
+      "id": "s22",
+      "title": "STUDENT ru: 320 dp hub",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s22_student_ru_320_dp_hub.png"
+    },
+    {
+      "id": "s23",
+      "title": "STUDENT en: study hub decks and modes",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s23_student_en_study_hub_decks_and_modes.png"
+    },
+    {
+      "id": "s24",
+      "title": "STUDENT en: hub mixed topics deck",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s24_student_en_hub_mixed_topics_deck.png"
+    },
+    {
+      "id": "s25",
+      "title": "STUDENT en: practice toks answered with explanation",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s25_student_en_practice_toks_answered_with_e.png"
+    },
+    {
+      "id": "s26",
+      "title": "STUDENT en: practice toks open source",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s26_student_en_practice_toks_open_source.png"
+    },
+    {
+      "id": "s27",
+      "title": "STUDENT en: practice topics translated quote",
+      "result": "PASS",
+      "notes": [
+        "deck: discipline.mixed"
+      ],
+      "screenshot": "s27_student_en_practice_topics_translated_qu.png"
+    },
+    {
+      "id": "s28",
+      "title": "STUDENT en: mixed deck practice (true/false or MC)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s28_student_en_mixed_deck_practice_true_fals.png"
+    },
+    {
+      "id": "s29",
+      "title": "STUDENT en: exam",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s29_student_en_exam.png"
+    },
+    {
+      "id": "s30",
+      "title": "STUDENT en: guideline card abbreviation link sheet",
+      "result": "PASS",
+      "notes": [
+        "links: TLC, GC-MS, LC-MS/MS, Rf, HPLC"
+      ],
+      "screenshot": "s30_student_en_guideline_card_abbreviation_l.png"
+    },
+    {
+      "id": "s31",
+      "title": "STUDENT en: 320 dp practice explanation",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s31_student_en_320_dp_practice_explanation.png"
+    },
+    {
+      "id": "s32",
+      "title": "STUDENT en: 320 dp hub",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s32_student_en_320_dp_hub.png"
+    },
+    {
+      "id": "s33",
+      "title": "EXPERT uz: study hub decks and modes",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s33_expert_uz_study_hub_decks_and_modes.png"
+    },
+    {
+      "id": "s34",
+      "title": "EXPERT uz: hub mixed topics deck",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s34_expert_uz_hub_mixed_topics_deck.png"
+    },
+    {
+      "id": "s35",
+      "title": "EXPERT uz: practice toks answered with explanation",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s35_expert_uz_practice_toks_answered_with_ex.png"
+    },
+    {
+      "id": "s36",
+      "title": "EXPERT uz: practice toks open source",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s36_expert_uz_practice_toks_open_source.png"
+    },
+    {
+      "id": "s37",
+      "title": "EXPERT uz: practice topics translated quote",
+      "result": "PASS",
+      "notes": [
+        "deck: discipline.mixed"
+      ],
+      "screenshot": "s37_expert_uz_practice_topics_translated_quo.png"
+    },
+    {
+      "id": "s38",
+      "title": "EXPERT uz: mixed deck practice (true/false or MC)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s38_expert_uz_mixed_deck_practice_true_false.png"
+    },
+    {
+      "id": "s39",
+      "title": "EXPERT uz: exam",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s39_expert_uz_exam.png"
+    },
+    {
+      "id": "s40",
+      "title": "EXPERT uz: exam review explanations",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s40_expert_uz_exam_review_explanations.png"
+    },
+    {
+      "id": "s41",
+      "title": "EXPERT uz: guideline card abbreviation link sheet",
+      "result": "PASS",
+      "notes": [
+        "links: TLC, GC-MS, LC-MS/MS, Rf, HPLC"
+      ],
+      "screenshot": "s41_expert_uz_guideline_card_abbreviation_li.png"
+    },
+    {
+      "id": "s42",
+      "title": "EXPERT uz: 320 dp practice explanation",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s42_expert_uz_320_dp_practice_explanation.png"
+    },
+    {
+      "id": "s43",
+      "title": "EXPERT uz: 320 dp hub",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s43_expert_uz_320_dp_hub.png"
+    },
+    {
+      "id": "s44",
+      "title": "EXPERT ru: study hub decks and modes",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s44_expert_ru_study_hub_decks_and_modes.png"
+    },
+    {
+      "id": "s45",
+      "title": "EXPERT ru: hub mixed topics deck",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s45_expert_ru_hub_mixed_topics_deck.png"
+    },
+    {
+      "id": "s46",
+      "title": "EXPERT ru: practice toks answered with explanation",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s46_expert_ru_practice_toks_answered_with_ex.png"
+    },
+    {
+      "id": "s47",
+      "title": "EXPERT ru: practice toks open source",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s47_expert_ru_practice_toks_open_source.png"
+    },
+    {
+      "id": "s48",
+      "title": "EXPERT ru: practice topics translated quote",
+      "result": "PASS",
+      "notes": [
+        "deck: discipline.mixed"
+      ],
+      "screenshot": "s48_expert_ru_practice_topics_translated_quo.png"
+    },
+    {
+      "id": "s49",
+      "title": "EXPERT ru: mixed deck practice (true/false or MC)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s49_expert_ru_mixed_deck_practice_true_false.png"
+    },
+    {
+      "id": "s50",
+      "title": "EXPERT ru: exam",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s50_expert_ru_exam.png"
+    },
+    {
+      "id": "s51",
+      "title": "EXPERT ru: guideline card abbreviation link sheet",
+      "result": "PASS",
+      "notes": [
+        "links: TLC, GC-MS, LC-MS/MS, Rf, HPLC"
+      ],
+      "screenshot": "s51_expert_ru_guideline_card_abbreviation_li.png"
+    },
+    {
+      "id": "s52",
+      "title": "EXPERT ru: 320 dp practice explanation",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s52_expert_ru_320_dp_practice_explanation.png"
+    },
+    {
+      "id": "s53",
+      "title": "EXPERT ru: 320 dp hub",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s53_expert_ru_320_dp_hub.png"
+    },
+    {
+      "id": "s54",
+      "title": "EXPERT en: study hub decks and modes",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s54_expert_en_study_hub_decks_and_modes.png"
+    },
+    {
+      "id": "s55",
+      "title": "EXPERT en: hub mixed topics deck",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s55_expert_en_hub_mixed_topics_deck.png"
+    },
+    {
+      "id": "s56",
+      "title": "EXPERT en: practice toks answered with explanation",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s56_expert_en_practice_toks_answered_with_ex.png"
+    },
+    {
+      "id": "s57",
+      "title": "EXPERT en: practice toks open source",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s57_expert_en_practice_toks_open_source.png"
+    },
+    {
+      "id": "s58",
+      "title": "EXPERT en: practice topics translated quote",
+      "result": "PASS",
+      "notes": [
+        "deck: discipline.mixed"
+      ],
+      "screenshot": "s58_expert_en_practice_topics_translated_quo.png"
+    },
+    {
+      "id": "s59",
+      "title": "EXPERT en: mixed deck practice (true/false or MC)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s59_expert_en_mixed_deck_practice_true_false.png"
+    },
+    {
+      "id": "s60",
+      "title": "EXPERT en: exam",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s60_expert_en_exam.png"
+    },
+    {
+      "id": "s61",
+      "title": "EXPERT en: guideline card abbreviation link sheet",
+      "result": "PASS",
+      "notes": [
+        "links: TLC, GC-MS, LC-MS/MS, Rf, HPLC"
+      ],
+      "screenshot": "s61_expert_en_guideline_card_abbreviation_li.png"
+    },
+    {
+      "id": "s62",
+      "title": "EXPERT en: 320 dp practice explanation",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s62_expert_en_320_dp_practice_explanation.png"
+    },
+    {
+      "id": "s63",
+      "title": "EXPERT en: 320 dp hub",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "s63_expert_en_320_dp_hub.png"
+    }
+  ],
+  "pass": 63,
+  "fail": 0
+}

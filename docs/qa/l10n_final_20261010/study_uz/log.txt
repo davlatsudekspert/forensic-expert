@@ -25,3 +25,139 @@ Got dependencies in `/home/user/forensic-expert`!
 Try `flutter pub outdated` for more information.
 00:00 +0: loading /home/user/forensic-expert/apps/mobile/integration_test/qa_study_test.dart
 Building Linux application...                                   
+✓ Built build/linux/x64/debug/bundle/forensic_expert
+00:00 +0: QA real app — STUDY (Phase E/F)
+[perf] settings.load took 2 ms
+[perf] settings_loaded: 10 ms
+[perf] first_frame: 1613 ms
+[content] bundled pack: installed 
+WARNING (drift): It looks like you've created the database class ContentDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$ContentDatabase (package:fe_database/src/content/content_database.g.dart:18475:40)
+#4      new ContentDatabase (package:fe_database/src/content/content_database.dart)
+#5      LocalContentStore._open.<anonymous closure> (package:forensic_expert/data/local/content_store.dart:101:18)
+#6      StartupMetrics.measure (package:forensic_expert/core/perf/startup_metrics.dart:38:26)
+#7      LocalContentStore._open (package:forensic_expert/data/local/content_store.dart:100:36)
+#8      LocalContentStore.openActive (package:forensic_expert/data/local/content_store.dart:82:12)
+<asynchronous suspension>
+#9      contentLibraryProvider.<anonymous closure> (package:forensic_expert/app/providers.dart:176:14)
+<asynchronous suspension>
+#10     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:232:17)
+<asynchronous suspension>
+#11     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:237:29)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class ContentDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$ContentDatabase (package:fe_database/src/content/content_database.g.dart:18475:40)
+#4      new ContentDatabase (package:fe_database/src/content/content_database.dart)
+#5      LocalContentStore._open.<anonymous closure> (package:forensic_expert/data/local/content_store.dart:101:18)
+#6      StartupMetrics.measure (package:forensic_expert/core/perf/startup_metrics.dart:38:26)
+#7      LocalContentStore._open (package:forensic_expert/data/local/content_store.dart:100:36)
+#8      LocalContentStore.openActive (package:forensic_expert/data/local/content_store.dart:82:12)
+<asynchronous suspension>
+#9      contentKnowledgeProvider.<anonymous closure> (package:forensic_expert/app/providers.dart:260:14)
+<asynchronous suspension>
+#10     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:232:17)
+<asynchronous suspension>
+#11     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:237:29)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class ContentDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$ContentDatabase (package:fe_database/src/content/content_database.g.dart:18475:40)
+#4      new ContentDatabase (package:fe_database/src/content/content_database.dart)
+#5      LocalContentStore._open.<anonymous closure> (package:forensic_expert/data/local/content_store.dart:101:18)
+#6      StartupMetrics.measure (package:forensic_expert/core/perf/startup_metrics.dart:38:26)
+#7      LocalContentStore._open (package:forensic_expert/data/local/content_store.dart:100:36)
+#8      LocalContentStore.openActive (package:forensic_expert/data/local/content_store.dart:82:12)
+<asynchronous suspension>
+#9      contentEvidenceProvider.<anonymous closure> (package:forensic_expert/app/providers.dart:330:14)
+<asynchronous suspension>
+#10     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:232:17)
+<asynchronous suspension>
+#11     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:237:29)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+[perf] content_db.open took 155 ms
+[perf] content_db.open took 169 ms
+[perf] content_db.open took 177 ms
+[perf] content_db.open took 199 ms
+QA s01 PASS STUDENT uz: study hub decks and modes []
+QA s02 PASS STUDENT uz: hub mixed topics deck []
+QA s03 PASS STUDENT uz: practice toks answered with explanation []
+QA s04 PASS STUDENT uz: practice toks open source []
+QA s05 PASS STUDENT uz: practice topics translated quote [deck: discipline.mixed]
+QA s06 PASS STUDENT uz: mixed deck practice (true/false or MC) []
+QA s07 PASS STUDENT uz: exam []
+QA s08 PASS STUDENT uz: exam review explanations []
+QA s09 PASS STUDENT uz: guideline card abbreviation link sheet [links: TLC, GC-MS, LC-MS/MS, Rf, HPLC]
+QA s10 PASS STUDENT uz: 320 dp practice explanation []
+QA s11 PASS STUDENT uz: 320 dp hub []
+QA s12 PASS STUDENT uz: counter text style []
+QA s13 PASS STUDENT ru: study hub decks and modes []
+QA s14 PASS STUDENT ru: hub mixed topics deck []
+QA s15 PASS STUDENT ru: practice toks answered with explanation []
+QA s16 PASS STUDENT ru: practice toks open source []
+QA s17 PASS STUDENT ru: practice topics translated quote [deck: discipline.mixed]
+QA s18 PASS STUDENT ru: mixed deck practice (true/false or MC) []
+QA s19 PASS STUDENT ru: exam []
+QA s20 PASS STUDENT ru: guideline card abbreviation link sheet [links: TLC, GC-MS, LC-MS/MS, Rf, HPLC]
+QA s21 PASS STUDENT ru: 320 dp practice explanation []
+QA s22 PASS STUDENT ru: 320 dp hub []
+QA s23 PASS STUDENT en: study hub decks and modes []
+QA s24 PASS STUDENT en: hub mixed topics deck []
+QA s25 PASS STUDENT en: practice toks answered with explanation []
+QA s26 PASS STUDENT en: practice toks open source []
+QA s27 PASS STUDENT en: practice topics translated quote [deck: discipline.mixed]
+QA s28 PASS STUDENT en: mixed deck practice (true/false or MC) []
+QA s29 PASS STUDENT en: exam []
+QA s30 PASS STUDENT en: guideline card abbreviation link sheet [links: TLC, GC-MS, LC-MS/MS, Rf, HPLC]
+QA s31 PASS STUDENT en: 320 dp practice explanation []
+QA s32 PASS STUDENT en: 320 dp hub []
+QA s33 PASS EXPERT uz: study hub decks and modes []
+QA s34 PASS EXPERT uz: hub mixed topics deck []
+QA s35 PASS EXPERT uz: practice toks answered with explanation []
+QA s36 PASS EXPERT uz: practice toks open source []
+QA s37 PASS EXPERT uz: practice topics translated quote [deck: discipline.mixed]
+QA s38 PASS EXPERT uz: mixed deck practice (true/false or MC) []
+QA s39 PASS EXPERT uz: exam []
+QA s40 PASS EXPERT uz: exam review explanations []
+QA s41 PASS EXPERT uz: guideline card abbreviation link sheet [links: TLC, GC-MS, LC-MS/MS, Rf, HPLC]
+QA s42 PASS EXPERT uz: 320 dp practice explanation []
+QA s43 PASS EXPERT uz: 320 dp hub []
+QA s44 PASS EXPERT ru: study hub decks and modes []
+QA s45 PASS EXPERT ru: hub mixed topics deck []
+QA s46 PASS EXPERT ru: practice toks answered with explanation []
+QA s47 PASS EXPERT ru: practice toks open source []
+QA s48 PASS EXPERT ru: practice topics translated quote [deck: discipline.mixed]
+QA s49 PASS EXPERT ru: mixed deck practice (true/false or MC) []
+QA s50 PASS EXPERT ru: exam []
+QA s51 PASS EXPERT ru: guideline card abbreviation link sheet [links: TLC, GC-MS, LC-MS/MS, Rf, HPLC]
+QA s52 PASS EXPERT ru: 320 dp practice explanation []
+QA s53 PASS EXPERT ru: 320 dp hub []
+QA s54 PASS EXPERT en: study hub decks and modes []
+QA s55 PASS EXPERT en: hub mixed topics deck []
+QA s56 PASS EXPERT en: practice toks answered with explanation []
+QA s57 PASS EXPERT en: practice toks open source []
+QA s58 PASS EXPERT en: practice topics translated quote [deck: discipline.mixed]
+QA s59 PASS EXPERT en: mixed deck practice (true/false or MC) []
+QA s60 PASS EXPERT en: exam []
+QA s61 PASS EXPERT en: guideline card abbreviation link sheet [links: TLC, GC-MS, LC-MS/MS, Rf, HPLC]
+QA s62 PASS EXPERT en: 320 dp practice explanation []
+QA s63 PASS EXPERT en: 320 dp hub []
+QA SUMMARY study: 63/63 PASS
+03:39 +1: (tearDownAll)
+03:39 +1: All tests passed!
