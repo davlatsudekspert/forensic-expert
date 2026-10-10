@@ -81,3 +81,22 @@ bo'limida mikroskopiya va PSA/p30 bir jumlada immunoanaliz manbalariga bog'langa
 mikroskopiya endi o'z manbasiga (`peonim2013`) bog'landi. Blood-presumptive kartasidagi
 4 ta signal evristika xatosi bo'lgani `content/tools/claim_source_reviews.json` da
 asoslantirib yozildi.
+
+## 2026-10-10 — Google Play to'lov profili
+
+To'lov profili (Payments profile) **Google Play dasturchi akkaunti darajasida**
+bo'ladi, har bir ilova uchun alohida emas. Egasining akkauntida profil Mystery
+Room ilovasi uchun NBU hisobi bilan yaratilmoqda — **FORENSIC EXPERT Pro
+obunasi ham shu profildan foydalanadi**, yangisini yaratish kerak emas.
+
+Shundan kelib chiqadigan narsalar:
+
+- Ikkala ilovaning tushumi bitta hisobga tushadi — buxgalteriya va soliq
+  hisobotida ajratib yuritish kerak bo'ladi (Play Console'da har ilova
+  bo'yicha hisobot alohida ko'rinadi).
+- Obuna sotish uchun to'lov profili **to'liq tasdiqlangan** bo'lishi shart
+  (shaxs/tashkilot tekshiruvi + soliq ma'lumotlari). Tasdiqlanmaguncha
+  `Monetize → Subscriptions` da mahsulot yaratilsa ham sotilmaydi.
+- AQSh soliq formasi (tax info) to'ldirilmasa, tushumdan ushlab qolish
+  (withholding) qo'llanadi.
+- To'lov chegarasi bor: summa minimal chegaraga yetmaguncha pul o'tkazilmaydi.
