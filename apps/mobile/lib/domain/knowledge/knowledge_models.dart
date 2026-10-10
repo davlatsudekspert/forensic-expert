@@ -77,6 +77,16 @@ class KnowledgeEntry {
   final MethodRecord? method;
   final EmergingIssue? emerging;
 
+  /// Yozuv shu tilda ko‘rinadimi.
+  ///
+  /// Milliy yo‘riqnomadan olingan mavzular faqat o‘zbek tilida yoziladi
+  /// (`value.locale_only`, egasining qarori — `docs/DECISIONS.md`, 2026-10-10).
+  /// Boshqa tilda ko‘rsatiladigan hech narsasi qolmasa, yozuv ro‘yxatda ham,
+  /// qidiruvda ham, kursda ham chiqmaydi — bo‘sh sahifa ochilmasligi uchun.
+  /// Claim’i yo‘q yozuv (reagent, metod) bu qoidaga tushmaydi.
+  bool visibleIn(String languageCode) =>
+      claims.isEmpty || claims.any((c) => c.visibleIn(languageCode));
+
   /// Barcha manbalar (yozuv + claim’lar), takrorsiz.
   List<SourceView> get allSources {
     final seen = <String>{};
@@ -143,6 +153,35 @@ class ListKnowledgeRepository implements KnowledgeRepository {
       if (e.id == id) return e;
     }
     return null;
+  }
+}
+
+/// Interfeys tiliga ko‘ra filtrlangan repository: faqat bitta tilda mavjud
+/// yozuvlar boshqa tilda umuman ko‘rinmaydi (ro‘yxat, qidiruv, kurslar).
+class LocaleFilteredKnowledgeRepository implements KnowledgeRepository {
+  const LocaleFilteredKnowledgeRepository(this.inner, this.languageCode);
+
+  final KnowledgeRepository inner;
+  final String languageCode;
+
+  @override
+  List<KnowledgeEntry> byKind(KnowledgeKind kind) => [
+    for (final e in inner.byKind(kind))
+      if (e.visibleIn(languageCode)) e,
+  ];
+
+  @override
+  List<KnowledgeEntry> topicsIn(KnowledgeArea area) => [
+    for (final e in inner.topicsIn(area))
+      if (e.visibleIn(languageCode)) e,
+  ];
+
+  /// To‘g‘ridan-to‘g‘ri havola (deep link) bilan kelgan yozuv ham yashiriladi:
+  /// aks holda ru/en interfeysda mazmunsiz sahifa ochilardi.
+  @override
+  KnowledgeEntry? byId(String id) {
+    final e = inner.byId(id);
+    return e != null && e.visibleIn(languageCode) ? e : null;
   }
 }
 

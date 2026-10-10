@@ -4,6 +4,22 @@
  "reference_levels": {},
  "reviews": [
   {
+   "id": "C-ABY-CO-01",
+   "text_sha": "9c40dde416b1e7df",
+   "verdict": "PARTIAL",
+   "action": "kept",
+   "basis": "Heuristic limit: the statement names the analyte in Uzbek as «karboksigemoglobin (COHb)», not the entity id 'carbon-monoxide'. Six named colour tests and their control were read in ABY, G bo'limi, № ABY.G.14.2025, 2.1-band; PARTIAL kept because these are presumptive tests confirmed by no international source here.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "C-ABY-ETHANOL-01",
+   "text_sha": "ab54a0af19d734f2",
+   "verdict": "PARTIAL",
+   "action": "kept",
+   "basis": "Heuristic limit, not a content defect: the audit looks for the entity name in the text, and this Uzbek-only statement names the substance as «etil spirti» (ethanol) and «metilnitrit/etilnitrit», never the id 'ethanol'. The locator (ABY, G bo'limi, № ABY.G.16.2025, 2.2-2.4-bandlar) was read in the guide; PARTIAL stays as the honest level for a single national guide with no international confirmation of this derivatisation method.",
+   "on": "2026-10-10"
+  },
+  {
    "id": "C-FM-ALGOR-MORTIS-DEFINITION",
    "text_sha": "fdb3803acf6cdd4e",
    "verdict": "UNSUPPORTED",

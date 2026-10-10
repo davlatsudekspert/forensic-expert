@@ -1,11 +1,15 @@
 import 'dart:convert';
 import 'dart:typed_data';
+import 'dart:ui' show PlatformDispatcher;
 
 import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:flutter/widgets.dart' show Locale;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../core/flags.dart';
+import '../core/settings/app_settings.dart';
+import '../core/settings/settings_controller.dart';
 import '../core/telemetry/telemetry.dart';
 import '../data/content/content_evidence_loader.dart';
 import '../data/content/content_knowledge_repository.dart';
@@ -265,12 +269,30 @@ final contentKnowledgeProvider = FutureProvider<KnowledgeRepository?>((
   );
 });
 
-final knowledgeRepositoryProvider = Provider<KnowledgeRepository>(
-  (ref) => FeFlags.showTestFixtures
+final knowledgeRepositoryProvider = Provider<KnowledgeRepository>((ref) {
+  final inner = FeFlags.showTestFixtures
       ? FixtureKnowledgeRepository()
       : ref.watch(contentKnowledgeProvider).value ??
-            const EmptyKnowledgeRepository(),
-);
+            const EmptyKnowledgeRepository();
+  // Faqat bitta tilda yozilgan yozuvlar (milliy yo‘riqnomadan olingan
+  // mavzular) boshqa til interfeysida umuman ko‘rinmasligi kerak — shuning
+  // uchun filtr ro‘yxat/qidiruv/kurslar uchun bitta joyda qo‘llanadi.
+  final locale = ref.watch(settingsControllerProvider.select((s) => s.locale));
+  return LocaleFilteredKnowledgeRepository(inner, _uiLanguageCode(locale));
+});
+
+/// Interfeys tili. Foydalanuvchi hali tanlamagan bo‘lsa (birinchi ishga
+/// tushirish) — qurilma tili, agar u qo‘llanmasa `en`: MaterialApp ham xuddi
+/// shunday tanlaydi.
+String _uiLanguageCode(Locale? chosen) {
+  if (chosen != null) return chosen.languageCode;
+  for (final l in PlatformDispatcher.instance.locales) {
+    if (SupportedLanguages.codes.contains(l.languageCode)) {
+      return l.languageCode;
+    }
+  }
+  return 'en';
+}
 
 final contentLegalFutureProvider = FutureProvider<ContentLegalData?>((
   ref,

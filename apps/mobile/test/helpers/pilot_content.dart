@@ -60,7 +60,9 @@ class PilotContent {
     evidenceDataProvider.overrideWithValue(evidence),
     imageBytesLoaderProvider.overrideWith((ref) async => images),
     libraryRepositoryProvider.overrideWithValue(library),
-    knowledgeRepositoryProvider.overrideWithValue(knowledge),
+    // Paket qatlami almashtiriladi, `knowledgeRepositoryProvider` emas: shunda
+    // ilovadagi til filtri (faqat o‘zbekcha yozuvlar) testda ham ishlaydi.
+    contentKnowledgeProvider.overrideWith((ref) async => knowledge),
     contentLegalDataProvider.overrideWithValue(legal),
     contentStatusProvider.overrideWith((ref) async => status),
     provenanceIndexProvider.overrideWithValue(provenance),

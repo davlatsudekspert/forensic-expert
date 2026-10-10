@@ -206,6 +206,8 @@ class AreaHubScreen extends ConsumerWidget {
         title: Text(switch (area) {
           KnowledgeArea.forensicMedicine => l.moduleForensicMedicine,
           KnowledgeArea.histology => l.moduleHistology,
+          KnowledgeArea.toxicology => l.moduleToxicology,
+          KnowledgeArea.laboratory => l.moduleLaboratory,
           _ => l.moduleBiochemistry,
         }),
       ),

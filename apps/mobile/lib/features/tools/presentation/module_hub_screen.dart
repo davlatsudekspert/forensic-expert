@@ -1,3 +1,4 @@
+import 'package:fe_content_schema/fe_content_schema.dart' show KnowledgeArea;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -43,7 +44,23 @@ class ModuleHubScreen extends ConsumerWidget {
     final index = ref.watch(provenanceIndexProvider);
     final evidence = ref.watch(evidenceDataProvider);
 
+    // Shu bo‘limning manbali mavzulari (masalan, milliy amaliyot
+    // yo‘riqnomasidan olingan sud-kimyo va sud-biologiya yozuvlari). Soni 0
+    // bo‘lsa — havola ko‘rsatilmaydi (shu tilda yozuv yo‘q).
+    final topicArea = switch (category) {
+      ToolCategory.toxicology => KnowledgeArea.toxicology,
+      ToolCategory.laboratory => KnowledgeArea.laboratory,
+      _ => null,
+    };
     final links = <(String, IconData, String, int, String)>[
+      if (topicArea != null)
+        (
+          'topics',
+          Icons.menu_book_outlined,
+          l.knowledgeTaxonomy,
+          knowledge.topicsIn(topicArea).length,
+          Routes.area(topicArea.name),
+        ),
       if (category == ToolCategory.toxicology) ...[
         (
           'substances',

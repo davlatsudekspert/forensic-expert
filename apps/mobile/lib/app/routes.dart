@@ -18,6 +18,7 @@ abstract final class Routes {
   static const compare = '/home/compare';
   static String knowledge(String kind) => '/home/knowledge/$kind';
   static String knowledgeEntry(String id) => '/home/entry/$id';
+  static String area(String area) => '/home/area/$area';
   static const forensicMedicine = '/home/area/forensicMedicine';
   static const biochemistry = '/home/area/biochemistry';
   static const exam = '/home/learn/exam';

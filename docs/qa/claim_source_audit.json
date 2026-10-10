@@ -6,16 +6,16 @@
    "SCOPE_MISMATCH": 0,
    "ABSTRACT_ONLY": 680,
    "NO_LOCATOR": 19,
-   "PARTIAL": 70,
-   "SUPPORTED": 1507
+   "PARTIAL": 72,
+   "SUPPORTED": 1537
   },
   "auto_verdict": {
    "UNSUPPORTED": 1,
    "SCOPE_MISMATCH": 7,
    "ABSTRACT_ONLY": 678,
    "NO_LOCATOR": 19,
-   "PARTIAL": 69,
-   "SUPPORTED": 1503
+   "PARTIAL": 71,
+   "SUPPORTED": 1533
   },
   "by_corpus": {
    "bundle": {
@@ -23,8 +23,8 @@
     "SCOPE_MISMATCH": 0,
     "ABSTRACT_ONLY": 3,
     "NO_LOCATOR": 0,
-    "PARTIAL": 11,
-    "SUPPORTED": 817
+    "PARTIAL": 13,
+    "SUPPORTED": 847
    },
    "court_prep": {
     "UNSUPPORTED": 0,
@@ -43,8 +43,8 @@
     "SUPPORTED": 480
    }
   },
-  "claims": 2277,
-  "reviewed": 46,
+  "claims": 2309,
+  "reviewed": 48,
   "general_rule_abstract_only_unreviewed": 7
  },
  "stale_reviews": [],
@@ -296,6 +296,7 @@
    "book/tier3/C": 2,
    "database/tier2/C": 201,
    "guideline/tier1/B": 2,
+   "guideline/tier3/C": 1,
    "journal_article/tier2/A": 8,
    "journal_article/tier2/B": 232,
    "journal_article/tier2/C": 47,
@@ -53780,6 +53781,786 @@
    ],
    "text_sha": "f5b2fe4e38829a41",
    "text": "Other specimens analysed by headspace GC-FID. Brain tissue (post-mortem, when blood is unavailable or contaminated): a 4-fold diluted homogenate of unfixed, volatile-free brain; calibrators and controls prepared in that "
+  },
+  {
+   "id": "C-ABY-ETHANOL-01",
+   "corpus": "bundle",
+   "container": "ethanol",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.16.2025, 2.2–2.4-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "PARTIAL",
+   "verdict": "PARTIAL",
+   "reviewed": true,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted",
+    "subject_not_named_in_excerpt"
+   ],
+   "reasons": [
+    "excerpt does not name the substance it is attached to"
+   ],
+   "text_sha": "ab54a0af19d734f2",
+   "text": "Biologik suyuqliklarda etil spirtini aniqlashning mahalliy usuli: oddiy gaz xromatografi (alanga-ionlashtiruvchi detektor, namuna bug‘ holida qo‘lda shpris bilan kiritiladi), mass-spektrometr talab qilinmaydi. Spirtlar t",
+   "review": {
+    "action": "kept",
+    "basis": "Heuristic limit, not a content defect: the audit looks for the entity name in the text, and this Uzbek-only statement names the substance as «etil spirti» (ethanol) and «metilnitrit/etilnitrit», never the id 'ethanol'. The locator (ABY, G bo'limi, № ABY.G.16.2025, 2.2-2.4-bandlar) was read in the guide; PARTIAL stays as the honest level for a single national guide with no international confirmation of this derivatisation method.",
+    "on": "2026-10-10"
+   }
+  },
+  {
+   "id": "C-ABY-ETHANOL-02",
+   "corpus": "bundle",
+   "container": "ethanol",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.16.2025, 2.3 va 2.4-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "53578a345f79bdd9",
+   "text": "Kalibrlash va hisoblash (ABY bo‘yicha): 1 ‰, 3 ‰ va 6 ‰ li etanol standartlari (2 % li asosiy eritmadan suyultirib tayyorlanadi; saqlash muddati 1 hafta) har biridan 2 ml olinib, 2 ml 0,4 % li propanol bilan aralashtiril"
+  },
+  {
+   "id": "C-ABY-ETHANOL-03",
+   "corpus": "bundle",
+   "container": "ethanol",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.16.2025, 3-bo‘lim «Tahlil. Izohlash»"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "d45a301a45b43635",
+   "text": "ABY etil spirti bilan zaharlanish va mastlik tashxisida miqdoriy natijani promillda (‰) ifodalash muhimligini ta’kidlaydi. Murda qonida etanol baholanganda chirish jarayonida ham etil spirti hosil bo‘lishini hisobga olis"
+  },
+  {
+   "id": "C-ABY-METHANOL-01",
+   "corpus": "bundle",
+   "container": "methanol",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.16.2025, 2.2 va 2.4.1-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "e3c779357e1eb29f",
+   "text": "ABYdagi etil spirti uchun gaz xromatografik usulda (alkil nitritlar orqali) sifat tahlili bosqichida avval metilnitritga xos cho‘qqi belgilanadi, ya’ni shu usul bilan metil spirtini ham aniqlash mumkin. Spirtlarning chiq"
+  },
+  {
+   "id": "C-ABY-CO-01",
+   "corpus": "bundle",
+   "container": "carbon-monoxide",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.14.2025, 2.1-band"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "PARTIAL",
+   "verdict": "PARTIAL",
+   "reviewed": true,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted",
+    "subject_not_named_in_excerpt"
+   ],
+   "reasons": [
+    "excerpt does not name the substance it is attached to"
+   ],
+   "text_sha": "9c40dde416b1e7df",
+   "text": "Qonda karboksigemoglobin (COHb) borligini sifat jihatdan aniqlash uchun ABY oltita rang sinamasini keltiradi; har biri karboksigemoglobin saqlamaydigan yangi qon bilan yonma-yon qo‘yiladi: Goppe-Zeyler sinamasi (30 % NaO",
+   "review": {
+    "action": "kept",
+    "basis": "Heuristic limit: the statement names the analyte in Uzbek as «karboksigemoglobin (COHb)», not the entity id 'carbon-monoxide'. Six named colour tests and their control were read in ABY, G bo'limi, № ABY.G.14.2025, 2.1-band; PARTIAL kept because these are presumptive tests confirmed by no international source here.",
+    "on": "2026-10-10"
+   }
+  },
+  {
+   "id": "C-ABY-CO-02",
+   "corpus": "bundle",
+   "container": "carbon-monoxide",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.14.2025, 2.2-band va 3-bo‘lim"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "25715026573f1258",
+   "text": "COHb miqdoriy aniqlash (ABY bo‘yicha): laxtasiz qon 0,1 % ammiak yoki fosfat bufer (pH 7,38) bilan suyultiriladi (A eritma); unga natriy gidrosulfit qo‘shib qaytariladi (B eritma); taqqoslash uchun xuddi shu qon uglerod "
+  },
+  {
+   "id": "C-ABY-TOX-OPI-01",
+   "corpus": "bundle",
+   "container": "aby-tox-opiates",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.5.2025, «Jarayonni olib borish tartibi»"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "ef8ab2ca90ef22c7",
+   "text": "ABY bo‘yicha qondan opiatlar xloroform bilan ajratiladi: 20 ml qon natriy bikarbonatning to‘yingan eritmasi bilan pH 8,7 ga keltirilib, 3 marta 10 ml xloroformda ekstraksiya qilinadi, ekstrakt suvsiz natriy sulfatdan o‘t"
+  },
+  {
+   "id": "C-ABY-TOX-OPI-02",
+   "corpus": "bundle",
+   "container": "aby-tox-opiates",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.5.2025, TLC va rang reaksiyalari bo‘limlari, 3.5-band"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "1c2dfd88497afcec",
+   "text": "TLC: ekstrakt silikagel plastinkaga tomizilib, yonida morfin va kodeinning 0,01 % li spirtli standarti (guvoh) qo‘yiladi; front 10 sm gacha ko‘tariladi. ABY tavsiya etgan tizimlar: etilatsetat–metanol–ammiak (17:2:1); me"
+  },
+  {
+   "id": "C-ABY-TOX-OPI-03",
+   "corpus": "bundle",
+   "container": "aby-tox-opiates",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.5.2025, 3.3 va 3.4-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "298bcce53388f392",
+   "text": "ABY ta’kidlashicha, namunada aralashmalar ko‘p bo‘lsa yoki boshqa matritsa bo‘lsa, ajratish va tahlil natijalari buzilishi mumkin; bunday holda ekstraktni oldindan tozalash (matritsaning qutbli qismlarini ushlab qoluvchi"
+  },
+  {
+   "id": "C-ABY-TOX-BAR-01",
+   "corpus": "bundle",
+   "container": "aby-tox-barbiturates",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.6.2025, 2.1 va 2.2-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "b942aaa401581449",
+   "text": "ABY bo‘yicha 10 ml qon yoki siydik 2 n xlorid kislota bilan pH 2 ga keltirilib, uch marta 10 ml xloroformda ekstraksiya qilinadi; xloroform qatlami suvsiz natriy sulfatdan o‘tkaziladi. Aniqlash ikki yo‘l bilan olib boril"
+  },
+  {
+   "id": "C-ABY-TOX-BZD-01",
+   "corpus": "bundle",
+   "container": "aby-tox-benzodiazepines",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.7.2025, «Jarayonni olib borish tartibi», 3.3-band"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "43f9ad0106c55bfe",
+   "text": "1,4-benzodiazepinlar ABY bo‘yicha gidroliz mahsulotlari — benzofenonlar — orqali aniqlanadi: 10 ml siydik yoki qon 10 ml konsentrlangan xlorid kislota bilan qaytar sovutgich ostida qaynoq suv hammomida 1 soat qizdiriladi"
+  },
+  {
+   "id": "C-ABY-TOX-CAN-01",
+   "corpus": "bundle",
+   "container": "aby-tox-cannabinoids",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.12.2025, 2.1–2.5-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "462d0a7147be1074",
+   "text": "ABY bo‘yicha kannabinoidlar so‘lakdan (to‘yingan NaCl bilan aralashtirib, etilasetat bilan 2 marta 10 ml ekstraksiya), qon plazmasidan (5 ml, petroley efiri va pentanol aralashmasi bilan 4 marta), siydikdan (2 ml siydikk"
+  },
+  {
+   "id": "C-ABY-TOX-DPH-01",
+   "corpus": "bundle",
+   "container": "aby-tox-diphenhydramine",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.20.2025, 2–3.2-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "bdd90ec9ee39959f",
+   "text": "Difengidraminni qon yoki siydikdan ajratish (ABY): 20 ml namuna 25 % ammiak bilan pH 10 ga keltirilib, 20 ml dan 2–3 marta xloroformda ekstraksiya qilinadi. Ichki a’zolardan: 100 g mayda kesilgan to‘qima 200 ml suv va ok"
+  },
+  {
+   "id": "C-ABY-TOX-H2S-01",
+   "corpus": "bundle",
+   "container": "aby-tox-hydrogen-sulfide",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.18.2025, 2-bo‘lim va 4-bo‘lim «Tahlil. Izohlash»"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "9bd83ddd8596a2fb",
+   "text": "Vodorod sulfid ABY bo‘yicha biologik ob’ektdan ajratilmasdan, uning uchuvchanligidan foydalanib aniqlanadi: ashyoviy dalil (ichki a’zolar) zich yopiladigan idishda keltiriladi, idish qopqog‘i ehtiyotkorlik bilan ochilib,"
+  },
+  {
+   "id": "C-ABY-TOX-URX-01",
+   "corpus": "bundle",
+   "container": "aby-tox-urine-express",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.24.2025, 2-bo‘lim va «Hujjatlashtirish»"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "f9199b2e97932b16",
+   "text": "ABY bo‘yicha siydikda dastlabki (skrining) sud-kimyoviy tekshiruv xromatografik-immunokimyoviy ekspress-test kassetalari bilan o‘tkaziladi. Siydik toza va quruq idishga olinadi; xira bo‘lsa sentrifugalanib filtrlanadi; z"
+  },
+  {
+   "id": "C-ABY-TOX-URX-02",
+   "corpus": "bundle",
+   "container": "aby-tox-urine-express",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.24.2025, «Hujjatlashtirish»"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "952a612fec078770",
+   "text": "ABY ta’kidlashicha, ekspress-test faqat dastlabki, sifat natijasini beradi; miqdoriy aniqlash va tasdiqlash uchun qo‘shimcha kimyoviy usullar kerak, buning uchun gaz xromatografiya/mass-spektrometriya maqsadga muvofiq. M"
+  },
+  {
+   "id": "C-ABY-BIO-BLD-01",
+   "corpus": "bundle",
+   "container": "aby-bio-blood-presence",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.D.1.2025, 5–7-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "2140731d354e95b2",
+   "text": "Qon borligini qog‘ozda xromatografiya bilan aniqlash (ABY): dog‘dan, predmet tashuvchidan va ma’lum qon namunasidan olingan bo‘lakchalar xromatografik qog‘ozning kesiklariga o‘rnatiladi; erituvchi — butanol va 25 % ammia"
+  },
+  {
+   "id": "C-ABY-BIO-BLD-02",
+   "corpus": "bundle",
+   "container": "aby-bio-blood-presence",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.D.2.2025, 5-band"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "7b42ca2afc8eb1eb",
+   "text": "Silufol plastinkada mikroxromatografiya (ABY): universal erituvchi — butanol : sirka kislota : suv = 4 : 1 : 2; ochuvchi — 96 % spirtda benzidin (muzli sirka kislota bilan) eritmasi, so‘ng 3 % vodorod peroksid. Dog‘, pre"
+  },
+  {
+   "id": "C-ABY-BIO-BLD-03",
+   "corpus": "bundle",
+   "container": "aby-bio-blood-presence",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.D.14.2025, 2, 5 va 6-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "681998ac1e58719f",
+   "text": "Immunoxromatografik test (ABAcard Hematrace) odam qonini aniqlash va tur mansubligini taxmin qilish uchun ishlatiladi. ABY ta’kidlashicha, u odam qoni uchun spesifik bo‘lishi bilan birga, sassiqkuzan va primatlar (yuqori"
+  },
+  {
+   "id": "C-ABY-BIO-SPC-01",
+   "corpus": "bundle",
+   "container": "aby-bio-species",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.D.5.2025, 5 va 6-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "5f6547d797b2eed5",
+   "text": "Chistovich–Ulengut usulida tur mansubligi suyuq muhitda halqali pretsipitatsiya bilan aniqlanadi (ABY): dog‘, uning predmet tashuvchisi va ma’lum antigenlardan fiziologik eritmada +4–6 °C da tortilma tayyorlanadi (ekstra"
+  },
+  {
+   "id": "C-ABY-BIO-ABO-01",
+   "corpus": "bundle",
+   "container": "aby-bio-abo",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.D.9.2025, 5 va 6-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "0ffae30ab3e045e4",
+   "text": "Kichik qon dog‘larida ABO guruhini absorbsiya-elyusiya usulida aniqlash (ABY): dog‘, predmet tashuvchi va ma’lum guruhli qon namunalaridan 0,2 × 0,2 sm li bo‘lakchalar spirtda fiksatsiyalanadi (etil spirti 1 soat; metil "
+  },
+  {
+   "id": "C-ABY-BIO-SEM-01",
+   "corpus": "bundle",
+   "container": "aby-bio-semen",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.D.25.2025, 2, 5 va 6-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "fc0031b24153fcbd",
+   "text": "ABAcard p30 testi sperma borligini prostata-spesifik antigen (PSA, p30 oqsili) bo‘yicha immunoxromatografik usulda aniqlaydi. ABY ta’kidlashicha, spermatozoidlari kam yoki yo‘q bo‘lgan erkaklarda (alohida kasalliklar, va"
+  },
+  {
+   "id": "C-ABY-BIO-SAL-01",
+   "corpus": "bundle",
+   "container": "aby-bio-saliva",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.D.29.2025, 5 va 6-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "528af2f32931a958",
+   "text": "So‘lakni amilaza fermenti bo‘yicha aniqlash (ABY): dog‘, predmet tashuvchi va ma’lum so‘lak namunasidan 100 mg dan oshmaydigan bo‘lakchalar toluol ostida xona haroratida 4 soat qoldiriladi, so‘ng har biriga 5 ml kartoshk"
+  },
+  {
+   "id": "C-ABY-BIO-SAL-02",
+   "corpus": "bundle",
+   "container": "aby-bio-saliva",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.D.30.2025, 2, 5 va 6-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "1a8f6231341345c5",
+   "text": "Odam so‘lagini alfa-amilaza bo‘yicha aniqlovchi immunoxromatografik ekspress-test (ABY): maydonda va laboratoriyada ishlatish uchun, qo‘shimcha jihoz talab qilinmaydi, natija taxminan 10 daqiqada olinadi. Dog‘ bo‘lakchas"
+  },
+  {
+   "id": "C-ABY-BIO-HAR-01",
+   "corpus": "bundle",
+   "container": "aby-bio-hair",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.D.42.2025, 5 va 6-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "7b4f8a0f47e8ebca",
+   "text": "Sochga o‘xshash ob’ektlarni morfologik tekshirish (ABY): har bir ob’ekt o‘lchanib alohida o‘raladi; ksilol ostida mikroskopda ko‘riladi; to‘q rangli ob’ektning tuzilishi ko‘rinmasa, silikat elim yoki rangsiz lakda bosma "
+  },
+  {
+   "id": "C-ABY-BIO-HAR-02",
+   "corpus": "bundle",
+   "container": "aby-bio-hair",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.D.43.2025, 5 va 6-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "9f960784523ef6aa",
+   "text": "Sochlarni taqqoslash (ABY): ish bo‘yicha o‘tuvchi shaxs boshining 5 ta sohasidan 5 tadan soch alohida o‘ralib, barcha sochlar makro- va mikroskopik belgilari bo‘yicha jadvalga yoziladi; voqea joyidagi sochlar tola, hayvo"
+  },
+  {
+   "id": "C-ABY-BIO-FEC-01",
+   "corpus": "bundle",
+   "container": "aby-bio-feces",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.D.48.2025, 5 va 6-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "1daa7a71fd7239ea",
+   "text": "Najasga o‘xshash dog‘ ABY bo‘yicha mikroskopik tekshiriladi: dog‘dan bo‘lakcha predmet oynasiga o‘tkazilib, bir tomchi distillangan suv bilan qoplama oyna ostida ko‘riladi. Preparatda hazm bo‘lmagan ovqat qoldiqlari, mus"
+  },
+  {
+   "id": "C-ABY-EVD-IN-01",
+   "corpus": "bundle",
+   "container": "aby-evidence-intake",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.D.49.2025, 5-band"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "d7d9831bfa48f1e1",
+   "text": "Ashyoviy dalillar ABYda ko‘rsatilgan tartibda qabul qilinadi (tartib sud-biologik ekspertiza qoidalari va Sog‘liqni saqlash vazirligi buyruqlariga tayanadi, hujjat shularni keltiradi): dalillar bo‘lim mudiri yoki u tayin"
+  },
+  {
+   "id": "C-ABY-EVD-ST-01",
+   "corpus": "bundle",
+   "container": "aby-evidence-storage",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.D.50.2025, 5-band"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "70e41995ceb60fb3",
+   "text": "Saqlash tartibi (ABY): hujjatlar alohida papkada seyf yoki qulflanadigan shkafda, ish vaqti tugagach bo‘lim muhri bilan muhrlanadi; yangi tushgan va ekspertiza tugagan dalillar alohida shkaf yoki xonada (istisno — alohid"
+  },
+  {
+   "id": "C-ABY-HIS-FIX-01",
+   "corpus": "bundle",
+   "container": "aby-his-fixation",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.E.2.2025, 4–6-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "4362386c1020c211",
+   "text": "Ichki a’zolarni formalinda fiksatsiyalash (ABY): 10 %, 15 % va 20 % li eritmalar 40 % li formalinning vodoprovod (oqar) suviga 1 : 9, 1 : 6 va 1 : 4 nisbatida aralashtirilib tayyorlanadi; distillangan suv to‘qimalarning "
+  },
+  {
+   "id": "C-ABY-HIS-STN-01",
+   "corpus": "bundle",
+   "container": "aby-his-staining",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.E.24.2025, 5-band"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "8249595eea31246e",
+   "text": "Gematoksilin–eozin bilan Mayer bo‘yicha bo‘yash (ABY): parafinsizlantirilgan kesma gematoksilinda 3–15 daqiqa, vodoprovod suvida kamida 2 daqiqa, 0,1 % li suvli eozinda 2–3 daqiqa, 0,1 % li spirtli eozinda 2–5 daqiqa, so"
+  },
+  {
+   "id": "C-ABY-HIS-DIA-01",
+   "corpus": "bundle",
+   "container": "aby-his-diatoms",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.E.31.2025, 5 va 6-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "800dc4bb92d36453",
+   "text": "Diatom-plankton tekshiruvi (ABY) cho‘kishda o‘limni aniqlash uchun: 100 g a’zo (o‘pka va jigardan chekka qismlar, buyrak kapsulasiz) distillangan suv bilan yuvilib, kolbada sulfat va nitrat kislota hamda suvning 1 : 1 : "
   }
  ]
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
+import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 
@@ -24,10 +25,41 @@ class SourcesAuthorsScreen extends StatelessWidget {
       'Ilovadagi ma’lumotlarning bir qismi quyidagi mualliflarning '
       'mehnati asosida tayyorlangan; ularga minnatdorchilik bildiramiz.';
 
-  /// (sarlavha, [(yorliq, qiymat)]) — tartib: Giyohvand moddalar tahlili,
-  /// Toksikologik kimyo majmuasi, so‘ng ilova muallifi. Ro‘yxatga yangi
-  /// manba faqat egasi tasdiqlagandan keyin qo‘shiladi.
+  /// (sarlavha, [(yorliq, qiymat)]) — tartib: amaliyot yo‘riqnomasi (ABY),
+  /// Giyohvand moddalar tahlili, Toksikologik kimyo majmuasi, so‘ng ilova
+  /// muallifi. Ro‘yxatga yangi manba faqat egasi tasdiqlagandan keyin
+  /// qo‘shiladi.
   static const entries = <(String, List<(String, String)>)>[
+    (
+      'Sud-tibbiyot ekspertiza (tekshiruv)lari amaliyotlarini bajarish '
+          'yo‘riqnomasi (ABY). Toshkent, 2025. 439 bet',
+      [
+        (
+          'Tashkilot',
+          'O‘zbekiston Respublikasi Sog‘liqni saqlash vazirligi, '
+              'Respublika sud-tibbiy ekspertiza ilmiy-amaliy markazi',
+        ),
+        (
+          'Tuzuvchilar',
+          'Sh.I. Ro‘ziev, S.I. Indiaminov, O.I. Xvan, A.S. Umarov, '
+              'J.X. Xoshimova, X.I. Primuxamedova, A.M. Hamdamov, '
+              'K.I. Ikromov, A.Z. Otamurodov',
+        ),
+        (
+          'Taqrizchilar',
+          'Q.A. Maxsumxonov (t.f.d., dotsent), I.I. Baxriev (t.f.n., dotsent), '
+              'N. Burankulova (PhD)',
+        ),
+        (
+          'Eslatma',
+          'Yo‘riqnoma ilovada manba sifatida keltiriladi: matni ko‘chirilmaydi, '
+              'mazmuni o‘z so‘zlarimiz bilan beriladi va har bir yozuvda '
+              'yo‘riqnomaning o‘z raqamlash tartibi ko‘rsatiladi '
+              '(masalan, «ABY, G bo‘limi, № ABY.G.16.2025, 2.3-band»). '
+              'Yozuvlar bepul; ilmiy taqriz kutilmoqda.',
+        ),
+      ],
+    ),
     (
       '«Giyohvand moddalar tahlili» (o‘quv qo‘llanma, 2024)',
       [
@@ -62,6 +94,18 @@ class SourcesAuthorsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final t = Theme.of(context).textTheme;
     final c = FeTheme.of(context);
+    // Sahifa faqat o‘zbek tilida mavjud: matn tarjima qilinmaydi va ro‘yxatdagi
+    // manbalar ham boshqa tillarda ko‘rsatilmaydi. Havola ham chiqmaydi, lekin
+    // to‘g‘ridan-to‘g‘ri yo‘l bilan kelinsa bo‘sh holat ko‘rsatiladi.
+    if (Localizations.localeOf(context).languageCode != languageCode) {
+      return Scaffold(
+        appBar: AppBar(),
+        body: FeEmptyState(
+          icon: Icons.inbox_outlined,
+          body: AppLocalizations.of(context).knowledgeEmpty,
+        ),
+      );
+    }
     return Scaffold(
       appBar: AppBar(title: const Text(SourcesAuthorsScreen.title)),
       body: SafeArea(

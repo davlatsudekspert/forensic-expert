@@ -456,3 +456,25 @@ atama varag‘i; orqaga (varaq → atama → ro‘yxat); global qidiruv (ru/en/u
 
 Tekshirilmagan: real iOS/Android qurilma; ADMIN roli (funksiya rolga bog‘liq emas); internet o‘chgan
 holat alohida (lug‘at — lokal paket). Barcha tarjimalar machine_draft — terminolog tekshiruvi kerak.
+
+## 10. ABY 2025 yozuvlari — faqat o‘zbek tilida (2026-10-10)
+
+`integration_test/qa_aby_test.dart` — Linux desktop (Xvfb), haqiqiy ilova va haqiqiy paket
+(32 ABY da’vosi, 19 bepul mavzu), MOCK akkaunt, HTTP bloklangan, **Pro yo‘q** (ABY bepul bo‘lishi
+tekshiriladi). Skrinshotlar sessiya scratchpad’ida (`qa_aby/`, 22 PNG) — repoga qo‘shilmagan.
+
+| Til | TALABA | MUTAXASSIS |
+|---|---|---|
+| uz | 6/6 PASS | 6/6 PASS |
+| ru | 5/5 PASS | — (til filtri rolga bog‘liq emas) |
+| en | 5/5 PASS | — |
+
+Qadamlar: Sud toksikologiyasi moduli → «Mavzular» havolasi (yangi) → mavzular ro‘yxati →
+`aby-tox-opiates` sahifasi (bayon matni, aniq joyi «ABY, G bo‘limi, № ABY.G.5.2025 amaliyoti,
+3.3 va 3.4-bandlar», «Bepul» belgisi, paywall yo‘q) → global qidiruv («opiatlar») →
+«Manbalar va mualliflar» (ABY tashkiloti va 9 tuzuvchisi) → 320 dp × 2 matn (toshish yo‘q).
+Rus va ingliz tilida: ABY mavzusi ro‘yxatda ham, qidiruvda ham, sahifa sifatida ham chiqmaydi
+(bo‘sh holat ko‘rsatiladi), minnatdorchilik sahifasi ham ochilmaydi.
+
+Tekshirilmagan: real iOS/Android qurilma; ADMIN roli (ko‘rinish rolga bog‘liq emas).
+Barcha ABY yozuvlari `NEEDS_REVIEW` — ilmiy taqriz hali o‘tmagan.

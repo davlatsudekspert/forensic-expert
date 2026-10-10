@@ -228,6 +228,11 @@ class Unit:
     original_lang: str | None = None  # D/E/F: asl til
     note: str = ""
     missing_severity: str = "error"
+    # Ataylab bitta tilda yoziladigan birlik (milliy yo‘riqnomadan olingan
+    # mavzular, egasining qarori — docs/DECISIONS.md, 2026-10-10). Ilova uni
+    # boshqa tilda umuman ko‘rsatmaydi (LocaleFilteredKnowledgeRepository),
+    # shuning uchun u tillarda «tarjimasi yo‘q» degan xato bo‘lmaydi.
+    locale_only: str | None = None
 
 
 @dataclass
@@ -380,6 +385,8 @@ def detect(units: list[Unit]) -> list[Finding]:
     for u in units:
         en = (u.values.get("en") or "").strip()
         for lang in LANGS:
+            if u.locale_only and lang != u.locale_only:
+                continue
             v = u.values.get(lang)
             st = u.status.get(lang, "")
             if u.category in CHECKED_CATEGORIES:
@@ -532,6 +539,18 @@ def load_content_db(app: Path) -> tuple[list[Unit], dict]:
         if ex:
             excerpt_claim.setdefault(_norm_ws(ex), r["claim_id"])
 
+    # Yozuvning tili: barcha da’volari bitta tilga belgilangan bo‘lsa
+    # (`value.locale_only`), yozuvning o‘zi ham faqat shu tilda ko‘rsatiladi —
+    # ilovadagi qoida bilan bir xil (LocaleFilteredKnowledgeRepository).
+    entity_locale_only: dict[str, str] = {}
+    _entity_langs: dict[str, set] = {}
+    for r in q("SELECT entity_id, value_json FROM claims ORDER BY claim_id"):
+        _entity_langs.setdefault(r["entity_id"], set()).add(
+            json.loads(r["value_json"]).get("locale_only"))
+    for eid, langs in _entity_langs.items():
+        if len(langs) == 1 and (only := next(iter(langs))):
+            entity_locale_only[eid] = only
+
     # Bilim yozuvlari (mavzu, metod, skrining, reaktiv, yangi muammo).
     for r in q("SELECT entity_id, entity_type, area, names_json, payload_json FROM knowledge_entities ORDER BY entity_id"):
         eid, et, area = r["entity_id"], r["entity_type"], r["area"]
@@ -540,7 +559,8 @@ def load_content_db(app: Path) -> tuple[list[Unit], dict]:
         if eid.startswith("hist"):
             sec = "10_histology"
         units.append(Unit("content.db", f"{C}#knowledge_entities", eid, "names_json", "B", sec,
-                          _tri(r["names_json"]), {l: "no_status" for l in LANGS}))
+                          _tri(r["names_json"]), {l: "no_status" for l in LANGS},
+                          locale_only=entity_locale_only.get(eid)))
         if et == "screening_test":
             for f in ("analyte", "specimen", "principle"):
                 if p.get(f):

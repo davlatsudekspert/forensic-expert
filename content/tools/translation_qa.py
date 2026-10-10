@@ -397,9 +397,24 @@ def check_bundle(path: pathlib.Path, rep: Report):
         st = c.get("value", {}).get("statement") if isinstance(c.get("value"), dict) else None
         if not isinstance(st, dict):
             continue
+        ts = c["value"].get("translation_status", {})
+        only = c["value"].get("locale_only")
+        if only:
+            # Single-language record (owner's rule for the national practice guide): the app never
+            # shows it in another language, so there is nothing to translate and nothing to compare.
+            # It is written by us in that language, so its status is `authored`, not `machine_draft`.
+            rid = f"bundle:claim_statement:{c['claim_id']}:{only}"
+            extra = sorted(k for k in st if k != only)
+            if extra:
+                rep._add(rid, f"locale_only={only}: unexpected languages {extra}")
+            if not (st.get(only) or "").strip():
+                rep._add(rid, f"locale_only={only}: statement text missing")
+            if ts.get(only) != "authored":
+                rep._add(rid, f"locale_only={only}: translation_status must be authored")
+            rep.text(rid, st.get(only) or "", only)
+            continue
         for lang in ("uz", "ru"):
             rep.pair(f"bundle:claim_statement:{c['claim_id']}:{lang}", st.get("en"), st.get(lang), "en", lang)
-        ts = c["value"].get("translation_status", {})
         for lang in ("uz", "ru"):
             if ts.get(lang) != "machine_draft":
                 rep._add(f"bundle:claim_statement:{c['claim_id']}:{lang}", "translation_status must be machine_draft")

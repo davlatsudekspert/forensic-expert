@@ -125,6 +125,24 @@ Sabab: egasi aytdi — ABY ning o‘zi kitoblardan jamlangan, va O‘zbekistonda
 amalda qo‘llanadigan usullar aynan shu hujjatda yozilgan; usulni manbasiz
 qoldirgandan ko‘ra, uni o‘z manbasi bilan ko‘rsatish to‘g‘riroq.
 
+**Bajarildi (2026-10-10).** Yozuvlar paketga kiritildi: 32 da’vo, 19 bepul
+mavzu, manba yozuvi `SRC-ABY-2025`, minnatdorchilik sahifasida tashkilot,
+9 tuzuvchi va 3 taqrizchi. Qamrov va qolgan ish: `docs/ABY_COVERAGE.md`.
+Texnik tafsilotlar:
+
+- Builder `content/tools/build_aby_content.py` (ma’lumot `aby_data.py`),
+  `build_ethanol_gc_content.py` dan keyin ishga tushiriladi.
+- Ilovada til filtri bitta joyda: `LocaleFilteredKnowledgeRepository`
+  (`knowledgeRepositoryProvider`) — ro‘yxat, qidiruv, kurslar va havola bilan
+  kirish ham filtrlanadi, shuning uchun ru/en da bo‘sh sahifa ochilmaydi.
+- `translation_qa.py` va `apps/mobile/tool/lang_audit.py` `locale_only`
+  yozuvlarni biladi: ular faqat o‘z tilida tekshiriladi, boshqa tilda
+  «tarjimasi yo‘q» xatosi chiqmaydi.
+- Qatlam (`layer`) taksonomiyasida «milliy uslubiy hujjat» qiymati yo‘q,
+  `jurisdictional` esa huquqiy hujjatga bog‘lanishni talab qiladi; shuning
+  uchun yozuvlar ilmiy qatlamda qoldi, milliy mansubligi manba va
+  ko‘rsatkich orqali beriladi. Taksonomiyani kengaytirish — backlog.
+
 
 ## 2026-10-10 — Bepul/Pro chegarasi: bilim bepul, vositalar Pro
 
