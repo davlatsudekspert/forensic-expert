@@ -16,6 +16,9 @@ Bu katalogdagi har bir qiymat **real so‘rov yoki tekshiruv** natijasida olinga
   dan tuzilgan retseptlar (`pilot/reagents/recipes_*.yaml`) + GHS xavflari →
   `bundle.json` (`assemble_pilot.py` ham chaqiradi; yakka ishga tushirsa bo‘ladi).
   Raqamlar asl matnga solishtiriladi; uz/en — machine_draft; status NEEDS_REVIEW.
+- `tools/claim_source_audit.py` — da’vo ↔ manba yaxlitligi tekshiruvi (joylashuv, to‘liq matn/annotatsiya,
+  scope, umumiy qoida); `--check` CI’da. Qo‘lda ko‘riklar: `tools/claim_source_reviews.json`; natija:
+  `docs/qa/CLAIM_SOURCE_AUDIT.md`. Kontent matni o‘zgargach qayta ishga tushiring (`python3 content/tools/claim_source_audit.py`).
 - `pilot/candidates/` — qidiruv nomzodlari. Ular ishonchli emas: faqat tekshiruvdan o‘tgani ishlatiladi.
 
 Qayta yig‘ish (repo ildizidan):

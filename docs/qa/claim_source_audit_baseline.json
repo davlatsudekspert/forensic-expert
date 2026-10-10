@@ -1,0 +1,42 @@
+{
+ "schema": "fe-claim-source-audit-baseline/1",
+ "note": "Totals of this checker run on the pack as it was BEFORE the 2026-10-10 claim-source fixes (base commit 198452c, no reviews ledger).",
+ "base_commit": "198452c",
+ "totals": {
+  "verdict": {
+   "UNSUPPORTED": 1,
+   "SCOPE_MISMATCH": 10,
+   "ABSTRACT_ONLY": 569,
+   "NO_LOCATOR": 76,
+   "PARTIAL": 56,
+   "SUPPORTED": 1085
+  },
+  "by_corpus": {
+   "bundle": {
+    "UNSUPPORTED": 1,
+    "SCOPE_MISMATCH": 3,
+    "ABSTRACT_ONLY": 0,
+    "NO_LOCATOR": 0,
+    "PARTIAL": 6,
+    "SUPPORTED": 487
+   },
+   "court_prep": {
+    "UNSUPPORTED": 0,
+    "SCOPE_MISMATCH": 1,
+    "ABSTRACT_ONLY": 166,
+    "NO_LOCATOR": 0,
+    "PARTIAL": 38,
+    "SUPPORTED": 210
+   },
+   "guidelines": {
+    "UNSUPPORTED": 0,
+    "SCOPE_MISMATCH": 6,
+    "ABSTRACT_ONLY": 403,
+    "NO_LOCATOR": 76,
+    "PARTIAL": 12,
+    "SUPPORTED": 388
+   }
+  },
+  "claims": 1797
+ }
+}
