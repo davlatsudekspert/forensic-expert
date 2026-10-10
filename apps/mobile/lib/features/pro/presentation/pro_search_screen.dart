@@ -551,7 +551,8 @@ class _ReverseTab extends ConsumerWidget {
               for (final id in ids)
                 ChoiceChip(
                   key: Key('pro.reverse.target.$id'),
-                  label: Text('${nameOf(id)} (${targets[id]})'),
+                  // Nom tarjimadan keladi, qavs ichidagi son — ma'lumot.
+                  label: Text(_chipLabel(nameOf(id), targets[id])),
                   selected: target == id,
                   onSelected: (on) => onTarget(on ? id : null),
                 ),
@@ -651,3 +652,7 @@ class _ReverseTab extends ConsumerWidget {
     );
   }
 }
+
+/// «Nom (soni)» — ikkala qism ham ma'lumot, alohida tarjima talab qilmaydi.
+String _chipLabel(String name, Object? count) =>
+    count == null ? name : '$name ($count)';

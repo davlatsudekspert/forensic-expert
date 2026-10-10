@@ -74,7 +74,8 @@ class AnalysisPlanScreen extends ConsumerWidget {
             Expanded(
               child: Semantics(
                 header: true,
-                child: Text('$n. $heading', style: t.titleSmall),
+                // Tartib raqami + tarjimadan kelgan sarlavha.
+                child: Text(_numbered(n, heading), style: t.titleSmall),
               ),
             ),
           ],
@@ -460,3 +461,6 @@ class AnalysisPlanScreen extends ConsumerWidget {
     );
   }
 }
+
+/// «1. Sarlavha» — raqam ma'lumot, sarlavha tarjimadan keladi.
+String _numbered(Object n, String heading) => '$n. $heading';
