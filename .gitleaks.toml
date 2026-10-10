@@ -13,4 +13,7 @@ regexes = [
   # Manba kalitlari yilsiz ham bo‘lishi mumkin (gmt_lex_law813,
   # court_uz_cpc): faqat kichik harfli snake_case identifikator.
   '''^(gmt|toks|dvssm|court|ilac|iso|iupac)_[a-z0-9_]+$''',
+  # Da'vo–manba auditidagi manba identifikatorlari («"key": "SRC-PMC12845259"»,
+  # «SRC-ABY-2025») — ommaviy hujjat raqamlari, sir emas.
+  '''^SRC-[A-Z0-9][A-Za-z0-9.\-]*$''',
 ]

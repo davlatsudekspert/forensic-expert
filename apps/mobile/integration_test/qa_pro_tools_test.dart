@@ -108,7 +108,9 @@ void main() {
           find.byKey(const Key('search.field')),
           tr('morfin', 'морфин', 'morphine'),
         );
-        s.notes.add('NOTE: initialQuery natijasi bo‘sh edi, qayta yozilgach topildi');
+        s.notes.add(
+          'NOTE: initialQuery natijasi bo‘sh edi, qayta yozilgach topildi',
+        );
       }
       expectKey('search.hit.morphine', s);
       expectKey('search.pro.entry', s);

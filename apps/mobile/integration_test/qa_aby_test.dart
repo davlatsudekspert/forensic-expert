@@ -114,7 +114,9 @@ void main() {
       if (found != uz) {
         s.passed = false;
         s.notes.add(
-          uz ? 'qidiruvda ABY mavzusi topilmadi' : 'qidiruvda ABY mavzusi $lang tilida chiqdi',
+          uz
+              ? 'qidiruvda ABY mavzusi topilmadi'
+              : 'qidiruvda ABY mavzusi $lang tilida chiqdi',
         );
       }
     });

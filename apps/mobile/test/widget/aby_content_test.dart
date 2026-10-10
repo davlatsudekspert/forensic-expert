@@ -34,9 +34,11 @@ void main() {
       for (final e in topics) ...e.claims,
       // Modda sahifalaridagi ABY yozuvlari (etanol, metanol, CO).
       for (final id in const ['ethanol', 'methanol', 'carbon-monoxide'])
-        ...?pilot.library.byId(id)?.details?.claims.where(
-          (c) => c.claimId.startsWith('C-ABY-'),
-        ),
+        ...?pilot.library
+            .byId(id)
+            ?.details
+            ?.claims
+            .where((c) => c.claimId.startsWith('C-ABY-')),
     ];
     expect(claims.length, 32);
     for (final c in claims) {
