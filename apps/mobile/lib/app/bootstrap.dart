@@ -16,6 +16,7 @@ import '../data/auth/mock_auth_repository.dart';
 import '../data/auth/secure_session_store.dart';
 import '../data/billing/in_app_purchase_client.dart';
 import '../data/billing/store_entitlement_service.dart';
+import '../data/local/casebook_store.dart';
 import '../data/local/court_history_store.dart';
 import '../data/local/profile_store.dart';
 import '../data/local/referral_store.dart';
@@ -37,6 +38,7 @@ import '../domain/ports/billing_ports.dart';
 import 'account.dart';
 import 'app.dart';
 import 'app_info.dart';
+import 'casebook.dart';
 import 'court_prep.dart';
 import 'professional.dart';
 import 'providers.dart';
@@ -107,6 +109,10 @@ Future<void> bootstrap({List<Override> testOverrides = const []}) async {
         // «Sud so‘rog‘i simulyatori» tarixi (Pro) — faqat lokal.
         courtHistoryStoreProvider.overrideWithValue(
           SharedPrefsCourtHistoryStore(prefs),
+        ),
+        // «Ekspert ish daftari» — faqat qurilmada, serverga yuborilmaydi.
+        casebookStoreProvider.overrideWithValue(
+          SharedPrefsCasebookStore(prefs),
         ),
         // Server AI (Gemini, kalit faqat Edge Function’da) — faqat yoqilganda.
         if (SupabaseAiProvider.fromEnvironment(auth) case final ai?) ...[

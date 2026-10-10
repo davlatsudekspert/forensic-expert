@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'package:go_router/go_router.dart';
+
+import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
@@ -34,6 +37,34 @@ class ToolsScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: FeSpace.sm),
                   const ToolsReviewNote(),
+                  const SizedBox(height: FeSpace.sm),
+                  FeCard(
+                    key: const Key('tools.casebook'),
+                    onTap: () => context.push(Routes.casebook),
+                    child: Row(
+                      children: [
+                        Icon(Icons.menu_book_outlined, color: c.accent),
+                        const SizedBox(width: FeSpace.sm),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                l.casebookTitle,
+                                style: Theme.of(context).textTheme.titleSmall,
+                              ),
+                              Text(
+                                l.casebookTileHint,
+                                style: Theme.of(context).textTheme.bodySmall
+                                    ?.copyWith(color: c.textSecondary),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Icon(Icons.chevron_right, color: c.textSecondary),
+                      ],
+                    ),
+                  ),
                   for (final category in ToolCategory.values) ...[
                     FeSectionHeader(l.toolCategoryName(category)),
                     for (final tool in ToolsCatalog.inCategory(category))

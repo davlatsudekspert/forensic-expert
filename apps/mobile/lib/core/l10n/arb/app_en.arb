@@ -933,7 +933,7 @@
   "@legalDraftNotice": {
     "description": "Draft notice on legal documents."
   },
-  "privacySummary": "The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically.\n\nInvitations: if you use a colleague’s invitation code, the server stores only the link between the two accounts and a salted hash of your email (to prevent abuse after account re-creation). Inviters see only totals — never your name, email, profile or documents. The app never reads your contacts.\n\nSuggestions & support: the message you send in «Suggestions & support», an optional screenshot (JPEG/PNG/WebP only, up to 5 MB), the request type and your account e-mail are stored on our server only to reply to you and improve the app. Only an authorised FORENSIC EXPERT team administrator can see them; other users never can. Replies are signed «FORENSIC EXPERT team», not with an administrator's name. Administrator actions are logged (without message text). Your consent is requested before a request is sent. Requests and screenshots are not shared with third parties and are not used for advertising or AI training. If you delete your account, your requests, messages and screenshots are deleted permanently.",
+  "privacySummary": "The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically.\n\nInvitations: if you use a colleague’s invitation code, the server stores only the link between the two accounts and a salted hash of your email (to prevent abuse after account re-creation). Inviters see only totals — never your name, email, profile or documents. The app never reads your contacts.\n\nSuggestions & support: the message you send in «Suggestions & support», an optional screenshot (JPEG/PNG/WebP only, up to 5 MB), the request type and your account e-mail are stored on our server only to reply to you and improve the app. Only an authorised FORENSIC EXPERT team administrator can see them; other users never can. Replies are signed «FORENSIC EXPERT team», not with an administrator's name. Administrator actions are logged (without message text). Your consent is requested before a request is sent. Requests and screenshots are not shared with third parties and are not used for advertising or AI training. If you delete your account, your requests, messages and screenshots are deleted permanently.\n\nExpert casebook: your entries (title, case reference, text, linked items and copied statements) are stored only on this device. They are not sent to a server, to telemetry, to AI or to other users, and are not included in backups. An entry is shared or copied only when you press the button. You can delete the casebook at any time via “Casebook → Clear entire casebook”; if you delete the app, the entries are gone too.",
   "@privacySummary": {
     "description": "Privacy summary."
   },
@@ -10053,5 +10053,260 @@
   "trStatusDerivedDraft": "Automatic explanation — not reviewed",
   "@trStatusDerivedDraft": {
     "description": "Status badge: explanation compiled automatically from the sourced quote in the same language; not reviewed."
+  },
+  "casebookTitle": "Expert casebook",
+  "@casebookTitle": {
+    "description": "Casebook screen title / tools tile."
+  },
+  "casebookTileHint": "Private notes with source-backed limitations — stored only on this device",
+  "@casebookTileHint": {
+    "description": "Tools tile subtitle."
+  },
+  "casebookPrivacyBanner": "Stored only on this device. Nothing is sent to a server, to AI or to other users. Deleting the app or clearing the casebook removes it permanently. Do not enter personal data of people involved in a case.",
+  "@casebookPrivacyBanner": {
+    "description": "Privacy banner."
+  },
+  "casebookEmptyTitle": "Your casebook is empty",
+  "@casebookEmptyTitle": {
+    "description": "Empty state title."
+  },
+  "casebookEmptyBody": "Create an entry for your work and add source-backed limitations from guideline cards. Everything stays on this device.",
+  "@casebookEmptyBody": {
+    "description": "Empty state body."
+  },
+  "casebookNewEntry": "New entry",
+  "@casebookNewEntry": {
+    "description": "Action."
+  },
+  "casebookUntitled": "Untitled entry",
+  "@casebookUntitled": {
+    "description": "Fallback title."
+  },
+  "casebookEntryTitleField": "Title",
+  "@casebookEntryTitleField": {
+    "description": "Field."
+  },
+  "casebookCaseRefField": "Case reference (optional)",
+  "@casebookCaseRefField": {
+    "description": "Field."
+  },
+  "casebookCaseRefHint": "Your own label, e.g. an internal number",
+  "@casebookCaseRefHint": {
+    "description": "Hint."
+  },
+  "casebookDateField": "Date",
+  "@casebookDateField": {
+    "description": "Field."
+  },
+  "casebookBodyField": "Notes",
+  "@casebookBodyField": {
+    "description": "Field."
+  },
+  "casebookSave": "Save",
+  "@casebookSave": {
+    "description": "Action."
+  },
+  "casebookSaved": "Saved on this device",
+  "@casebookSaved": {
+    "description": "Snackbar."
+  },
+  "casebookLinksTitle": "Linked items",
+  "@casebookLinksTitle": {
+    "description": "Section."
+  },
+  "casebookLinksEmpty": "No linked substances, methods, guideline cards or sources yet.",
+  "@casebookLinksEmpty": {
+    "description": "Empty."
+  },
+  "casebookAddLink": "Link an item",
+  "@casebookAddLink": {
+    "description": "Action."
+  },
+  "casebookLinkSearchHint": "Search substance, method, guideline, source…",
+  "@casebookLinkSearchHint": {
+    "description": "Search hint."
+  },
+  "casebookLinkNoResults": "Nothing found. Try another term.",
+  "@casebookLinkNoResults": {
+    "description": "Empty search."
+  },
+  "casebookLinkRemove": "Remove link",
+  "@casebookLinkRemove": {
+    "description": "Tooltip."
+  },
+  "casebookBlocksTitle": "Source-backed statements",
+  "@casebookBlocksTitle": {
+    "description": "Section."
+  },
+  "casebookBlocksEmpty": "No statements yet. Add a limitation or caution from a guideline card — the source and its section are copied with it.",
+  "@casebookBlocksEmpty": {
+    "description": "Empty."
+  },
+  "casebookAddBlock": "Add limitation or caution",
+  "@casebookAddBlock": {
+    "description": "Action."
+  },
+  "casebookPickerTitle": "Choose a statement",
+  "@casebookPickerTitle": {
+    "description": "Sheet title."
+  },
+  "casebookPickerSearchHint": "Filter by card or text",
+  "@casebookPickerSearchHint": {
+    "description": "Search hint."
+  },
+  "casebookPickerEmpty": "No matching limitations found.",
+  "@casebookPickerEmpty": {
+    "description": "Empty."
+  },
+  "casebookKindLimitation": "Limitation",
+  "@casebookKindLimitation": {
+    "description": "Block kind."
+  },
+  "casebookKindCaution": "Caution",
+  "@casebookKindCaution": {
+    "description": "Block kind."
+  },
+  "casebookKindAi": "AI answer",
+  "@casebookKindAi": {
+    "description": "Block kind."
+  },
+  "casebookAiUnverified": "AI-generated — unverified",
+  "@casebookAiUnverified": {
+    "description": "Mark on AI blocks."
+  },
+  "casebookSourceLabel": "Source",
+  "@casebookSourceLabel": {
+    "description": "Export/label."
+  },
+  "casebookLocationLabel": "Section",
+  "@casebookLocationLabel": {
+    "description": "Export/label."
+  },
+  "casebookPagesLabel": "pp.",
+  "@casebookPagesLabel": {
+    "description": "Export/label."
+  },
+  "casebookSourcesLabel": "Sources",
+  "@casebookSourcesLabel": {
+    "description": "Export/label."
+  },
+  "casebookBlockRemove": "Remove statement",
+  "@casebookBlockRemove": {
+    "description": "Tooltip."
+  },
+  "casebookAddToCasebook": "Add to casebook",
+  "@casebookAddToCasebook": {
+    "description": "Action on guideline sections and AI answers."
+  },
+  "casebookChooseEntry": "Add to which entry?",
+  "@casebookChooseEntry": {
+    "description": "Sheet title."
+  },
+  "casebookChooseNew": "New entry",
+  "@casebookChooseNew": {
+    "description": "Option."
+  },
+  "casebookAiAddNote": "This AI text will be marked “AI-generated — unverified”. Check it against the sources before relying on it.",
+  "@casebookAiAddNote": {
+    "description": "Note shown before adding AI text."
+  },
+  "casebookAddedTo": "Added to “{title}”",
+  "@casebookAddedTo": {
+    "description": "Snackbar.",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "casebookOpen": "Open",
+  "@casebookOpen": {
+    "description": "Snackbar action."
+  },
+  "casebookShare": "Share",
+  "@casebookShare": {
+    "description": "Action."
+  },
+  "casebookCopy": "Copy text",
+  "@casebookCopy": {
+    "description": "Action."
+  },
+  "casebookCopied": "Copied to clipboard",
+  "@casebookCopied": {
+    "description": "Snackbar."
+  },
+  "casebookExportDisclaimer": "This is a personal working note, NOT an expert opinion or conclusion. Statements are copied from reference material and do not replace examination of the actual case materials.",
+  "@casebookExportDisclaimer": {
+    "description": "First lines of every export."
+  },
+  "casebookExportFooter": "Exported from the FORENSIC EXPERT casebook (kept on the author’s device). Verify every statement against the original source.",
+  "@casebookExportFooter": {
+    "description": "Export footer."
+  },
+  "casebookExportLinks": "Linked items",
+  "@casebookExportLinks": {
+    "description": "Export label."
+  },
+  "casebookExportBlocks": "Source-backed statements",
+  "@casebookExportBlocks": {
+    "description": "Export label."
+  },
+  "casebookDeleteEntry": "Delete entry",
+  "@casebookDeleteEntry": {
+    "description": "Action."
+  },
+  "casebookDeleteEntryTitle": "Delete this entry?",
+  "@casebookDeleteEntryTitle": {
+    "description": "Dialog."
+  },
+  "casebookDeleteEntryBody": "The entry will be removed from this device. This cannot be undone.",
+  "@casebookDeleteEntryBody": {
+    "description": "Dialog body."
+  },
+  "casebookDeleteConfirm": "Delete",
+  "@casebookDeleteConfirm": {
+    "description": "Dialog button."
+  },
+  "casebookCancel": "Cancel",
+  "@casebookCancel": {
+    "description": "Dialog button."
+  },
+  "casebookClearAll": "Clear entire casebook",
+  "@casebookClearAll": {
+    "description": "Action."
+  },
+  "casebookClearTitle": "Clear the whole casebook?",
+  "@casebookClearTitle": {
+    "description": "Dialog."
+  },
+  "casebookClearBody": "All entries will be deleted from this device permanently. They are not stored anywhere else, so they cannot be restored.",
+  "@casebookClearBody": {
+    "description": "Dialog body."
+  },
+  "casebookCleared": "Casebook cleared",
+  "@casebookCleared": {
+    "description": "Snackbar."
+  },
+  "casebookCount": "{n} entries",
+  "@casebookCount": {
+    "description": "Entry count.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "casebookBlockCount": "{n} statements",
+  "@casebookBlockCount": {
+    "description": "Entry meta.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "casebookNotFound": "This entry no longer exists.",
+  "@casebookNotFound": {
+    "description": "Missing entry."
   }
 }

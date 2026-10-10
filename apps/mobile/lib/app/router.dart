@@ -20,6 +20,7 @@ import '../features/account/presentation/auth_screens.dart';
 import '../features/admin/presentation/admin_screen.dart';
 import '../features/admin/presentation/admin_support_screens.dart';
 import '../features/ai/presentation/ai_screen.dart';
+import '../features/casebook/presentation/casebook_screens.dart';
 import '../features/court_prep/presentation/court_prep_screens.dart';
 import '../features/disciplines/presentation/disciplines_screens.dart';
 import '../features/evidence/presentation/provenance_screens.dart';
@@ -366,6 +367,18 @@ final routerProvider = Provider<GoRouter>((ref) {
                     path: 'tool/:id',
                     builder: (c, s) =>
                         ToolDetailScreen(toolId: s.pathParameters['id']!),
+                  ),
+                  GoRoute(
+                    path: 'casebook',
+                    builder: (c, s) => const CasebookScreen(),
+                    routes: [
+                      GoRoute(
+                        path: 'entry/:id',
+                        builder: (c, s) => CasebookEntryScreen(
+                          entryId: s.pathParameters['id']!,
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),

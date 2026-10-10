@@ -744,7 +744,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get privacySummary =>
-      'Основная библиотека и калькуляторы работают офлайн. История поиска, прогресс и необязательный профиль (имя, организация, специальность) хранятся на вашем устройстве. Данные профиля и документы о квалификации передаются только при подаче заявки на профессиональное подтверждение, когда этот сервис будет подключён; документы хранятся конфиденциально и никогда не публикуются. В приложении нет рекламных SDK. Персональные данные и сведения о делах никогда не передаются ИИ автоматически.\n\nПриглашения: если вы используете код приглашения коллеги, сервер хранит только связь между аккаунтами и солёный хеш адреса вашей электронной почты (для защиты от злоупотреблений при повторном создании аккаунта). Пригласивший видит только итоговые числа — никогда ваше имя, адрес электронной почты, профиль или документы. Приложение не читает ваши контакты.\n\nПредложения и обращения: сообщение, отправленное через раздел «Предложения и обращения», необязательный скриншот (только JPEG/PNG/WebP, до 5 МБ), тип обращения и электронная почта вашего аккаунта хранятся на нашем сервере только для ответа вам и улучшения приложения. Их видит только уполномоченный администратор команды FORENSIC EXPERT; другие пользователи их никогда не видят. В ответе указывается «Команда FORENSIC EXPERT», а не имя администратора. Действия администратора записываются в журнал (без текста сообщений). Перед отправкой обращения запрашивается ваше согласие. Обращения и скриншоты не передаются третьим лицам и не используются для рекламы или обучения ИИ. При удалении аккаунта ваши обращения, сообщения и скриншоты удаляются полностью.';
+      'Основная библиотека и калькуляторы работают офлайн. История поиска, прогресс и необязательный профиль (имя, организация, специальность) хранятся на вашем устройстве. Данные профиля и документы о квалификации передаются только при подаче заявки на профессиональное подтверждение, когда этот сервис будет подключён; документы хранятся конфиденциально и никогда не публикуются. В приложении нет рекламных SDK. Персональные данные и сведения о делах никогда не передаются ИИ автоматически.\n\nПриглашения: если вы используете код приглашения коллеги, сервер хранит только связь между аккаунтами и солёный хеш адреса вашей электронной почты (для защиты от злоупотреблений при повторном создании аккаунта). Пригласивший видит только итоговые числа — никогда ваше имя, адрес электронной почты, профиль или документы. Приложение не читает ваши контакты.\n\nПредложения и обращения: сообщение, отправленное через раздел «Предложения и обращения», необязательный скриншот (только JPEG/PNG/WebP, до 5 МБ), тип обращения и электронная почта вашего аккаунта хранятся на нашем сервере только для ответа вам и улучшения приложения. Их видит только уполномоченный администратор команды FORENSIC EXPERT; другие пользователи их никогда не видят. В ответе указывается «Команда FORENSIC EXPERT», а не имя администратора. Действия администратора записываются в журнал (без текста сообщений). Перед отправкой обращения запрашивается ваше согласие. Обращения и скриншоты не передаются третьим лицам и не используются для рекламы или обучения ИИ. При удалении аккаунта ваши обращения, сообщения и скриншоты удаляются полностью.\n\nРабочий журнал эксперта: ваши записи (название, метка дела, текст, связанные объекты и скопированные утверждения) хранятся только на этом устройстве. Они не отправляются на сервер, в телеметрию, в ИИ или другим пользователям и не попадают в резервные копии. Поделиться записью или скопировать её можно только по вашему нажатию. Журнал можно в любой момент удалить через «Рабочий журнал → Очистить весь журнал»; при удалении приложения записи тоже исчезают.';
 
   @override
   String get aboutBody =>
@@ -7754,4 +7754,203 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get trStatusDerivedDraft => 'Автоматическое объяснение — не проверено';
+
+  @override
+  String get casebookTitle => 'Рабочий журнал эксперта';
+
+  @override
+  String get casebookTileHint =>
+      'Личные заметки с ограничениями из источников — хранятся только на этом устройстве';
+
+  @override
+  String get casebookPrivacyBanner =>
+      'Хранится только на этом устройстве. Ничего не отправляется на сервер, в ИИ или другим пользователям. При удалении приложения или очистке журнала данные удаляются безвозвратно. Не вносите персональные данные участников дела.';
+
+  @override
+  String get casebookEmptyTitle => 'Журнал пуст';
+
+  @override
+  String get casebookEmptyBody =>
+      'Создайте запись по своей работе и добавляйте ограничения с источниками из карточек руководств. Всё остаётся на этом устройстве.';
+
+  @override
+  String get casebookNewEntry => 'Новая запись';
+
+  @override
+  String get casebookUntitled => 'Запись без названия';
+
+  @override
+  String get casebookEntryTitleField => 'Название';
+
+  @override
+  String get casebookCaseRefField => 'Метка дела (необязательно)';
+
+  @override
+  String get casebookCaseRefHint =>
+      'Ваша собственная метка, например внутренний номер';
+
+  @override
+  String get casebookDateField => 'Дата';
+
+  @override
+  String get casebookBodyField => 'Заметки';
+
+  @override
+  String get casebookSave => 'Сохранить';
+
+  @override
+  String get casebookSaved => 'Сохранено на этом устройстве';
+
+  @override
+  String get casebookLinksTitle => 'Связанные объекты';
+
+  @override
+  String get casebookLinksEmpty =>
+      'Пока нет связанных веществ, методов, карточек руководств или источников.';
+
+  @override
+  String get casebookAddLink => 'Связать объект';
+
+  @override
+  String get casebookLinkSearchHint =>
+      'Поиск: вещество, метод, руководство, источник…';
+
+  @override
+  String get casebookLinkNoResults =>
+      'Ничего не найдено. Попробуйте другой запрос.';
+
+  @override
+  String get casebookLinkRemove => 'Убрать связь';
+
+  @override
+  String get casebookBlocksTitle => 'Утверждения с источниками';
+
+  @override
+  String get casebookBlocksEmpty =>
+      'Утверждений пока нет. Добавьте ограничение или предостережение из карточки руководства — источник и раздел копируются вместе с ним.';
+
+  @override
+  String get casebookAddBlock => 'Добавить ограничение';
+
+  @override
+  String get casebookPickerTitle => 'Выберите утверждение';
+
+  @override
+  String get casebookPickerSearchHint => 'Фильтр по карточке или тексту';
+
+  @override
+  String get casebookPickerEmpty => 'Подходящих ограничений не найдено.';
+
+  @override
+  String get casebookKindLimitation => 'Ограничение';
+
+  @override
+  String get casebookKindCaution => 'Предостережение';
+
+  @override
+  String get casebookKindAi => 'Ответ ИИ';
+
+  @override
+  String get casebookAiUnverified => 'Создано ИИ — не проверено';
+
+  @override
+  String get casebookSourceLabel => 'Источник';
+
+  @override
+  String get casebookLocationLabel => 'Раздел';
+
+  @override
+  String get casebookPagesLabel => 'стр.';
+
+  @override
+  String get casebookSourcesLabel => 'Источники';
+
+  @override
+  String get casebookBlockRemove => 'Удалить утверждение';
+
+  @override
+  String get casebookAddToCasebook => 'Добавить в журнал';
+
+  @override
+  String get casebookChooseEntry => 'В какую запись добавить?';
+
+  @override
+  String get casebookChooseNew => 'Новая запись';
+
+  @override
+  String get casebookAiAddNote =>
+      'Этот текст ИИ будет помечен «Создано ИИ — не проверено». Сверьте его с источниками, прежде чем опираться на него.';
+
+  @override
+  String casebookAddedTo(String title) {
+    return 'Добавлено в «$title»';
+  }
+
+  @override
+  String get casebookOpen => 'Открыть';
+
+  @override
+  String get casebookShare => 'Поделиться';
+
+  @override
+  String get casebookCopy => 'Копировать текст';
+
+  @override
+  String get casebookCopied => 'Скопировано в буфер обмена';
+
+  @override
+  String get casebookExportDisclaimer =>
+      'Это личная рабочая заметка, а НЕ заключение эксперта. Утверждения скопированы из справочных материалов и не заменяют исследование реальных материалов дела.';
+
+  @override
+  String get casebookExportFooter =>
+      'Экспортировано из журнала FORENSIC EXPERT (хранится на устройстве автора). Проверяйте каждое утверждение по первоисточнику.';
+
+  @override
+  String get casebookExportLinks => 'Связанные объекты';
+
+  @override
+  String get casebookExportBlocks => 'Утверждения с источниками';
+
+  @override
+  String get casebookDeleteEntry => 'Удалить запись';
+
+  @override
+  String get casebookDeleteEntryTitle => 'Удалить эту запись?';
+
+  @override
+  String get casebookDeleteEntryBody =>
+      'Запись будет удалена с этого устройства. Отменить нельзя.';
+
+  @override
+  String get casebookDeleteConfirm => 'Удалить';
+
+  @override
+  String get casebookCancel => 'Отмена';
+
+  @override
+  String get casebookClearAll => 'Очистить весь журнал';
+
+  @override
+  String get casebookClearTitle => 'Очистить весь журнал?';
+
+  @override
+  String get casebookClearBody =>
+      'Все записи будут безвозвратно удалены с этого устройства. Они нигде больше не хранятся, поэтому восстановить их нельзя.';
+
+  @override
+  String get casebookCleared => 'Журнал очищен';
+
+  @override
+  String casebookCount(int n) {
+    return 'Записей: $n';
+  }
+
+  @override
+  String casebookBlockCount(int n) {
+    return 'Утверждений: $n';
+  }
+
+  @override
+  String get casebookNotFound => 'Эта запись больше не существует.';
 }

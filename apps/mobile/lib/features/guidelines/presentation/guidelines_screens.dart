@@ -18,6 +18,7 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
 import '../../../domain/evidence/citation_format.dart';
 import '../../../domain/guidelines/guideline_models.dart';
+import '../../casebook/presentation/casebook_blocks.dart';
 import '../../evidence/presentation/citation_sheet.dart';
 import '../../evidence/presentation/localized_content.dart';
 import '../../glossary/presentation/glossary_linked_text.dart';
@@ -415,6 +416,15 @@ class _GuidelineDetailScreenState extends ConsumerState<GuidelineDetailScreen> {
                       selectable: true,
                       style: t.bodyMedium?.copyWith(height: 1.5),
                     ),
+                    // Manbali cheklov/ehtiyot bayonini shaxsiy ish daftariga
+                    // (faqat qurilmada) ko‘chirish.
+                    if (isCasebookSection(s))
+                      AddToCasebookButton(
+                        key: Key('guideline.addToCasebook.$i'),
+                        bundle: bundle,
+                        card: card,
+                        section: s,
+                      ),
                   ],
                   if (terms.isNotEmpty) ...[
                     KeyedSubtree(
