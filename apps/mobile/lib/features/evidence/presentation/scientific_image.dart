@@ -36,6 +36,42 @@ class ImageKindBadge extends StatelessWidget {
   }
 }
 
+/// Usul sahifasidagi (`method-*`) real o‘lchov rasmi aniq bir moddaga tegishli:
+/// u foydalanuvchi kelgan moddaga emas, usul tamoyiliga misol. Sxemalar
+/// (umumiy chizmalar) bu qoidaga kirmaydi.
+bool isOtherSubstanceExample(ImageMeta meta) =>
+    meta.entityId.startsWith('method-') && meta.representsRealData;
+
+/// «Misol: boshqa modda» yorlig‘i + qisqa izoh (asl izoh/litsenziya o‘zgarmaydi).
+class OtherSubstanceExampleNote extends StatelessWidget {
+  const OtherSubstanceExampleNote({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    return Padding(
+      padding: const EdgeInsets.only(top: FeSpace.xxs),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          StatusChip(
+            icon: Icons.science_outlined,
+            label: l.imageOtherSubstanceChip,
+            color: c.textSecondary,
+          ),
+          const SizedBox(height: 2),
+          Text(
+            l.imageOtherSubstanceNote,
+            style: t.bodySmall?.copyWith(color: c.textSecondary),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 /// Rasm (baytlar bazadan lazily). Struktura va sxemalar oq «namuna
 /// kartochkasi» ustida — light/dark ikkala rejimda o‘qiladi.
 class ScientificImageView extends ConsumerWidget {
@@ -125,6 +161,8 @@ class ScientificImageCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               ScientificImageView(meta: meta, height: 200),
+              if (isOtherSubstanceExample(meta))
+                const OtherSubstanceExampleNote(),
               const SizedBox(height: FeSpace.xxs),
               Text(meta.title.resolve(lang), style: t.titleSmall),
               const SizedBox(height: 2),
@@ -236,6 +274,8 @@ class ImageViewerScreen extends ConsumerWidget {
                       child: ScientificImageView(meta: meta),
                     ),
                   ),
+                  if (isOtherSubstanceExample(meta))
+                    const OtherSubstanceExampleNote(),
                   const SizedBox(height: FeSpace.sm),
                   Wrap(
                     spacing: FeSpace.xs,

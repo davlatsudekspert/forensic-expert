@@ -8481,4 +8481,35 @@ class AppLocalizationsEn extends AppLocalizations {
   String planExportStatus(String status, String level) {
     return 'status: $status; evidence level: $level';
   }
+
+  @override
+  String get imageOtherSubstanceChip => 'Example: another substance';
+
+  @override
+  String get imageOtherSubstanceNote =>
+      'This figure is from another substance\'s example; it shows how the method works and does not belong to the substance you came from. The title names the substance shown.';
+
+  @override
+  String get detailMethodRecords => 'Method conditions and limits (sourced)';
+
+  @override
+  String get claimFieldSamplePreparation => 'Sample preparation';
+
+  @override
+  String get claimFieldInstrumentation => 'Instrument set-up';
+
+  @override
+  String get claimFieldQc => 'Calibration and quality control';
+
+  @override
+  String get claimFieldInterference => 'Identification and interference';
+
+  @override
+  String get claimFieldValidation => 'Method performance';
+
+  @override
+  String get claimFieldSpecimens => 'Other specimens';
+
+  @override
+  String get claimFieldLimitation => 'Limitation';
 }

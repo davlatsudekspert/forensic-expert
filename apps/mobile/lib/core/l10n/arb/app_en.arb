@@ -11011,5 +11011,45 @@
         "type": "String"
       }
     }
+  },
+  "imageOtherSubstanceChip": "Example: another substance",
+  "@imageOtherSubstanceChip": {
+    "description": "Chip on a method-page figure that shows a real measurement of a specific substance: it is an example for another substance."
+  },
+  "imageOtherSubstanceNote": "This figure is from another substance's example; it shows how the method works and does not belong to the substance you came from. The title names the substance shown.",
+  "@imageOtherSubstanceNote": {
+    "description": "Short note under a method-page figure of a specific substance: it does not belong to the substance the reader came from."
+  },
+  "detailMethodRecords": "Method conditions and limits (sourced)",
+  "@detailMethodRecords": {
+    "description": "Substance page: section heading for sourced method records (sample preparation, instrument set-up, quality control, interferences, validation, specimens, limitations)."
+  },
+  "claimFieldSamplePreparation": "Sample preparation",
+  "@claimFieldSamplePreparation": {
+    "description": "Label of a sourced method record: sample preparation."
+  },
+  "claimFieldInstrumentation": "Instrument set-up",
+  "@claimFieldInstrumentation": {
+    "description": "Label of a sourced method record: instrument set-up (columns, detector, gases, temperatures)."
+  },
+  "claimFieldQc": "Calibration and quality control",
+  "@claimFieldQc": {
+    "description": "Label of a sourced method record: calibration and quality control."
+  },
+  "claimFieldInterference": "Identification and interference",
+  "@claimFieldInterference": {
+    "description": "Label of a sourced method record: identification and interfering substances."
+  },
+  "claimFieldValidation": "Method performance",
+  "@claimFieldValidation": {
+    "description": "Label of a sourced method record: method performance and validation figures."
+  },
+  "claimFieldSpecimens": "Other specimens",
+  "@claimFieldSpecimens": {
+    "description": "Label of a sourced method record: other specimens analysed with the method."
+  },
+  "claimFieldLimitation": "Limitation",
+  "@claimFieldLimitation": {
+    "description": "Label of a sourced method record: limitation of the method or of the result."
   }
 }

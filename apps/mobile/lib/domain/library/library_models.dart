@@ -211,26 +211,55 @@ class ClaimView {
 
   String? get excerpt => value['excerpt'] as String?;
 
-  /// Yopiq litsenziyali manbadan so‘zma-so‘z iqtibos olinmaydi; bunday
-  /// da’voning matni `value.statement` da — bu bizning manbaga asoslangan
-  /// bayonimiz, iqtibos emas. UI uni shunday belgilab ko‘rsatadi.
-  String? statement(String lang) {
-    final m = (value['statement'] as Map?)?.cast<String, Object?>();
-    if (m == null) return null;
-    final v = (m[lang] ?? m['uz'] ?? m['en'] ?? m['ru']) as String?;
-    final t = v?.trim();
-    return (t == null || t.isEmpty) ? null : t;
+  /// `value.locale_only` (sxemada hujjatlashtirilgan, ixtiyoriy): yozuv faqat
+  /// shu til interfeysida ko‘rinadi (masalan `uz`); boshqa tillarda ro‘yxatda
+  /// umuman yo‘q — bo‘sh joy ham, «tarjima yo‘q» yozuvi ham chiqmaydi.
+  String? get localeOnly => value['locale_only'] as String?;
+
+  /// Yozuv [languageCode] interfeysida ko‘rinishi kerakmi.
+  bool visibleIn(String languageCode) =>
+      localeOnly == null || localeOnly == languageCode;
+
+  Map<String, String> _i18n(String key) {
+    final m = value[key];
+    if (m is! Map) return const {};
+    return {
+      for (final e in m.entries)
+        if (e.value is String) '${e.key}': e.value as String,
+    };
   }
 
-  /// Da’vo matni qaysi manbadan va uning qayeridan olingani (bayon uchun).
-  String? localized(String key, String lang) {
-    final m = (value[key] as Map?)?.cast<String, Object?>();
-    if (m == null) return null;
-    final v = (m[lang] ?? m['uz'] ?? m['en'] ?? m['ru']) as String?;
-    final t = v?.trim();
-    return (t == null || t.isEmpty) ? null : t;
+  bool get hasStatement => _i18n('statement').isNotEmpty;
+
+  /// `value.statement` — manbadan o‘z so‘zlarimiz bilan yozilgan matn
+  /// ({en, uz, ru}); iqtibos EMAS. `locale_only` yozuvda faqat o‘sha til.
+  String? statementFor(String languageCode) =>
+      _localized(_i18n('statement'), languageCode);
+
+  /// `value.locator_i18n` — manba nomi bilan birga aniq joyi.
+  String? locatorFor(String languageCode) =>
+      _localized(_i18n('locator_i18n'), languageCode);
+
+  /// Tarjima holati (`authored` / `machine_draft` …) shu til uchun.
+  String? translationStatusFor(String languageCode) =>
+      _i18n('translation_status')[languageCode];
+
+  String? _localized(Map<String, String> m, String languageCode) {
+    final own = m[languageCode];
+    if (own != null) return own;
+    if (localeOnly != null) return null;
+    return m['en'] ?? (m.isEmpty ? null : m.values.first);
   }
 }
+
+/// Faqat [languageCode] interfeysida ko‘rinadigan claim’lar.
+List<ClaimView> visibleClaims(
+  Iterable<ClaimView> claims,
+  String languageCode,
+) => [
+  for (final c in claims)
+    if (c.visibleIn(languageCode)) c,
+];
 
 /// Yurisdiksiya qatlamidagi qoida (masalan, xalqaro nazorat jadvali).
 @immutable

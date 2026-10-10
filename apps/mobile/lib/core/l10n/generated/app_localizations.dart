@@ -14756,6 +14756,66 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'status: {status}; evidence level: {level}'**
   String planExportStatus(String status, String level);
+
+  /// Chip on a method-page figure that shows a real measurement of a specific substance: it is an example for another substance.
+  ///
+  /// In en, this message translates to:
+  /// **'Example: another substance'**
+  String get imageOtherSubstanceChip;
+
+  /// Short note under a method-page figure of a specific substance: it does not belong to the substance the reader came from.
+  ///
+  /// In en, this message translates to:
+  /// **'This figure is from another substance\'s example; it shows how the method works and does not belong to the substance you came from. The title names the substance shown.'**
+  String get imageOtherSubstanceNote;
+
+  /// Substance page: section heading for sourced method records (sample preparation, instrument set-up, quality control, interferences, validation, specimens, limitations).
+  ///
+  /// In en, this message translates to:
+  /// **'Method conditions and limits (sourced)'**
+  String get detailMethodRecords;
+
+  /// Label of a sourced method record: sample preparation.
+  ///
+  /// In en, this message translates to:
+  /// **'Sample preparation'**
+  String get claimFieldSamplePreparation;
+
+  /// Label of a sourced method record: instrument set-up (columns, detector, gases, temperatures).
+  ///
+  /// In en, this message translates to:
+  /// **'Instrument set-up'**
+  String get claimFieldInstrumentation;
+
+  /// Label of a sourced method record: calibration and quality control.
+  ///
+  /// In en, this message translates to:
+  /// **'Calibration and quality control'**
+  String get claimFieldQc;
+
+  /// Label of a sourced method record: identification and interfering substances.
+  ///
+  /// In en, this message translates to:
+  /// **'Identification and interference'**
+  String get claimFieldInterference;
+
+  /// Label of a sourced method record: method performance and validation figures.
+  ///
+  /// In en, this message translates to:
+  /// **'Method performance'**
+  String get claimFieldValidation;
+
+  /// Label of a sourced method record: other specimens analysed with the method.
+  ///
+  /// In en, this message translates to:
+  /// **'Other specimens'**
+  String get claimFieldSpecimens;
+
+  /// Label of a sourced method record: limitation of the method or of the result.
+  ///
+  /// In en, this message translates to:
+  /// **'Limitation'**
+  String get claimFieldLimitation;
 }
 
 class _AppLocalizationsDelegate

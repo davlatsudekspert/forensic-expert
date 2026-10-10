@@ -68,7 +68,10 @@ class KnowledgeDetailScreen extends ConsumerWidget {
     };
     final claims = [
       for (final x in e.claims)
-        if (x.excerpt == null || !recipeSteps.contains(_norm(x.excerpt!))) x,
+        // `value.locale_only` yozuvlar boshqa til interfeysida ko‘rinmaydi.
+        if (x.visibleIn(lang) &&
+            (x.excerpt == null || !recipeSteps.contains(_norm(x.excerpt!))))
+          x,
     ];
     final claimExcerpts = {
       for (final x in claims)

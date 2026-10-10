@@ -4,27 +4,27 @@
   "verdict": {
    "UNSUPPORTED": 1,
    "SCOPE_MISMATCH": 0,
-   "ABSTRACT_ONLY": 677,
+   "ABSTRACT_ONLY": 680,
    "NO_LOCATOR": 19,
-   "PARTIAL": 68,
-   "SUPPORTED": 1503
+   "PARTIAL": 70,
+   "SUPPORTED": 1507
   },
   "auto_verdict": {
    "UNSUPPORTED": 1,
    "SCOPE_MISMATCH": 7,
-   "ABSTRACT_ONLY": 675,
+   "ABSTRACT_ONLY": 678,
    "NO_LOCATOR": 19,
-   "PARTIAL": 67,
-   "SUPPORTED": 1499
+   "PARTIAL": 69,
+   "SUPPORTED": 1503
   },
   "by_corpus": {
    "bundle": {
     "UNSUPPORTED": 1,
     "SCOPE_MISMATCH": 0,
-    "ABSTRACT_ONLY": 0,
+    "ABSTRACT_ONLY": 3,
     "NO_LOCATOR": 0,
-    "PARTIAL": 9,
-    "SUPPORTED": 813
+    "PARTIAL": 11,
+    "SUPPORTED": 817
    },
    "court_prep": {
     "UNSUPPORTED": 0,
@@ -43,9 +43,9 @@
     "SUPPORTED": 480
    }
   },
-  "claims": 2268,
+  "claims": 2277,
   "reviewed": 46,
-  "general_rule_abstract_only_unreviewed": 6
+  "general_rule_abstract_only_unreviewed": 7
  },
  "stale_reviews": [],
  "orphan_reviews": [],
@@ -297,15 +297,19 @@
    "database/tier2/C": 201,
    "guideline/tier1/B": 2,
    "journal_article/tier2/A": 8,
-   "journal_article/tier2/B": 227,
-   "journal_article/tier2/C": 45,
+   "journal_article/tier2/B": 232,
+   "journal_article/tier2/C": 47,
    "journal_article/tier2/D": 32,
    "legislation/tier1/A": 8,
    "report/tier3/C": 1,
    "report/tier3/E": 1
   },
-  "claims_whose_level_differs_from_their_source": [],
-  "claim_level_is_copied_from_source": true,
+  "claims_whose_level_differs_from_their_source": [
+   "C-EP-ETHANOL-06",
+   "C-EP-ETHANOL-07",
+   "C-EP-ETHANOL-09"
+  ],
+  "claim_level_is_copied_from_source": false,
   "ungrounded_or_inconsistent_sources": [
    {
     "source_id": "SRC-DE-BTMG-ANL",
@@ -53477,6 +53481,305 @@
    "reasons": [],
    "text_sha": "6a74a3b2d7d2bdff",
    "text": "In the SWGDRUG scheme microcrystalline tests are a category B technique (selectivity through chemical and physical characteristics, without structural information); data must be reviewable (images or contemporaneous docu"
+  },
+  {
+   "id": "C-EP-ETHANOL-01",
+   "corpus": "bundle",
+   "container": "ethanol",
+   "sources": [
+    {
+     "key": "SRC-PMC9331811",
+     "locators": [
+      "Taylor et al., Molecules 2022;27(15):4771, section 1 (Introduction), paragraphs 3–4"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted",
+    "prescriptive"
+   ],
+   "reasons": [],
+   "text_sha": "d3c575c1254e9048",
+   "text": "Routine method for ethanol in blood or urine: static headspace gas chromatography with a flame ionization detector (HS-GC-FID). The specimen is sealed in a vial with an internal-standard solution, warmed so that volatile"
+  },
+  {
+   "id": "C-EP-ETHANOL-02",
+   "corpus": "bundle",
+   "container": "ethanol",
+   "sources": [
+    {
+     "key": "SRC-PMC9331811",
+     "locators": [
+      "Taylor et al., Molecules 2022;27(15):4771, sections 4.3 (Sample Preparation) and 4.4 (Headspace GC-FID Method)"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "26cb01d53f961965",
+   "text": "Example of a validated sample preparation (one laboratory, one procedure, not a universal rule): 100 µL of blood or urine is added to 1 mL of an aqueous internal-standard solution in a 20 mL headspace vial; the solution "
+  },
+  {
+   "id": "C-EP-ETHANOL-03",
+   "corpus": "bundle",
+   "container": "ethanol",
+   "sources": [
+    {
+     "key": "SRC-PMC9331811",
+     "locators": [
+      "Taylor et al., Molecules 2022;27(15):4771, sections 4.2 (Instrumentation), 2.1 (Separation Conditions) and 4.4"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "b772af4a3e0f2e5d",
+   "text": "Instrument set-up of the same validated method (example): two capillary columns of different selectivity made for alcohol analysis (each 30 m × 0.32 mm internal diameter, film 1.8 µm and 0.6 µm) joined to one inlet throu"
+  },
+  {
+   "id": "C-EP-ETHANOL-04",
+   "corpus": "bundle",
+   "container": "ethanol",
+   "sources": [
+    {
+     "key": "SRC-PMC9331811",
+     "locators": [
+      "Taylor et al., Molecules 2022;27(15):4771, sections 2.2 (Linearity), 2.6 (Limit of Detection and Quantification) and 3 (Discussion)"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted",
+    "prescriptive"
+   ],
+   "reasons": [],
+   "text_sha": "b2ece735033b26f4",
+   "text": "Calibration and quality control in the same validated method: six calibrators of 10, 20, 50, 100, 200 and 400 mg/100 mL; the calibration line must reach a correlation coefficient of at least 0.998 (typical acceptance in "
+  },
+  {
+   "id": "C-EP-ETHANOL-05",
+   "corpus": "bundle",
+   "container": "ethanol",
+   "sources": [
+    {
+     "key": "SRC-PM36346343",
+     "locators": [
+      "Musile et al., J Anal Toxicol 2023;46(9):e274–e279, abstract"
+     ],
+     "level": "abstract"
+    },
+    {
+     "key": "SRC-PM33031530",
+     "locators": [
+      "Pinto et al., J Anal Toxicol 2021;45(9):961–968, abstract"
+     ],
+     "level": "abstract"
+    },
+    {
+     "key": "SRC-PM27488829",
+     "locators": [
+      "Chun et al., J Anal Toxicol 2016;40(8):653–658, abstract"
+     ],
+     "level": "abstract"
+    },
+    {
+     "key": "SRC-PM21404443",
+     "locators": [
+      "Kovatsi et al., J Sep Sci 2011;34(9):1004–1010, abstract"
+     ],
+     "level": "abstract"
+    },
+    {
+     "key": "SRC-PM28766526",
+     "locators": [
+      "Afonin et al., Sud Med Ekspert 2017;60(4):29–33, abstract"
+     ],
+     "level": "abstract"
+    }
+   ],
+   "auto_verdict": "ABSTRACT_ONLY",
+   "verdict": "ABSTRACT_ONLY",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [
+    "source checked at abstract / bibliographic level; no concrete locator"
+   ],
+   "text_sha": "1ee095aba5fe0fbf",
+   "text": "Internal standard: published headspace GC-FID methods for ethanol use tert-butanol (vitreous humour; brain tissue), acetonitrile (blood, urine and vitreous humour; a multi-volatile blood and urine method) or n-propanol ("
+  },
+  {
+   "id": "C-EP-ETHANOL-06",
+   "corpus": "bundle",
+   "container": "ethanol",
+   "sources": [
+    {
+     "key": "SRC-PMC9331811",
+     "locators": [
+      "Taylor et al., Molecules 2022;27(15):4771, sections 2.1 (Separation Conditions) and 3 (Discussion)"
+     ],
+     "level": "fulltext"
+    },
+    {
+     "key": "SRC-PM33031530",
+     "locators": [
+      "Pinto et al., J Anal Toxicol 2021;45(9):961–968, abstract"
+     ],
+     "level": "abstract"
+    },
+    {
+     "key": "SRC-PM28766526",
+     "locators": [
+      "Afonin et al., Sud Med Ekspert 2017;60(4):29–33, abstract"
+     ],
+     "level": "abstract"
+    }
+   ],
+   "auto_verdict": "PARTIAL",
+   "verdict": "PARTIAL",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [
+    "only part of the cited sources is located and read in full"
+   ],
+   "text_sha": "0c15fe3afe12366e",
+   "text": "Identification and interference: ethanol is identified by its retention on two columns of different selectivity. In the Taylor method one column separated ethanol completely from the common interferences (methanol, isopr"
+  },
+  {
+   "id": "C-EP-ETHANOL-07",
+   "corpus": "bundle",
+   "container": "ethanol",
+   "sources": [
+    {
+     "key": "SRC-PMC9331811",
+     "locators": [
+      "Taylor et al., Molecules 2022;27(15):4771, sections 2.4 (Accuracy) and 2.5 (Uncertainty)"
+     ],
+     "level": "fulltext"
+    },
+    {
+     "key": "SRC-PM39198950",
+     "locators": [
+      "Zheng et al., Se Pu 2024;42(9):909–917, abstract"
+     ],
+     "level": "abstract"
+    }
+   ],
+   "auto_verdict": "PARTIAL",
+   "verdict": "PARTIAL",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted",
+    "prescriptive"
+   ],
+   "reasons": [
+    "only part of the cited sources is located and read in full"
+   ],
+   "text_sha": "67c5d7be8e26e34e",
+   "text": "Method performance figures from validated headspace GC-FID work. Taylor et al.: expanded uncertainty at 99.73 % confidence of 5.31 % at 20 mg/100 mL, 3.64 % at 80 mg/100 mL and 1.95 % at 200 mg/100 mL; bias was not signi"
+  },
+  {
+   "id": "C-EP-ETHANOL-08",
+   "corpus": "bundle",
+   "container": "ethanol",
+   "sources": [
+    {
+     "key": "SRC-PM37804205",
+     "locators": [
+      "Olds, Jones, J Anal Toxicol 2024;48(1):9–26, abstract"
+     ],
+     "level": "abstract"
+    },
+    {
+     "key": "SRC-PM36346343",
+     "locators": [
+      "Musile et al., J Anal Toxicol 2023;46(9):e274–e279, abstract"
+     ],
+     "level": "abstract"
+    }
+   ],
+   "auto_verdict": "ABSTRACT_ONLY",
+   "verdict": "ABSTRACT_ONLY",
+   "reviewed": false,
+   "flags": [
+    "general_rule",
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [
+    "source checked at abstract / bibliographic level; no concrete locator"
+   ],
+   "text_sha": "09e1d352b57e88fc",
+   "text": "Limitation for post-mortem blood: ethanol can be formed in a decomposed body by microbial activity and fermentation of blood glucose, so a positive result in putrefied blood does not by itself show drinking before death."
+  },
+  {
+   "id": "C-EP-ETHANOL-09",
+   "corpus": "bundle",
+   "container": "ethanol",
+   "sources": [
+    {
+     "key": "SRC-PM27488829",
+     "locators": [
+      "Chun et al., J Anal Toxicol 2016;40(8):653–658, abstract"
+     ],
+     "level": "abstract"
+    },
+    {
+     "key": "SRC-PM36346343",
+     "locators": [
+      "Musile et al., J Anal Toxicol 2023;46(9):e274–e279, abstract"
+     ],
+     "level": "abstract"
+    },
+    {
+     "key": "SRC-PM33031530",
+     "locators": [
+      "Pinto et al., J Anal Toxicol 2021;45(9):961–968, abstract"
+     ],
+     "level": "abstract"
+    }
+   ],
+   "auto_verdict": "ABSTRACT_ONLY",
+   "verdict": "ABSTRACT_ONLY",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [
+    "source checked at abstract / bibliographic level; no concrete locator"
+   ],
+   "text_sha": "f5b2fe4e38829a41",
+   "text": "Other specimens analysed by headspace GC-FID. Brain tissue (post-mortem, when blood is unavailable or contaminated): a 4-fold diluted homogenate of unfixed, volatile-free brain; calibrators and controls prepared in that "
   }
  ]
 }

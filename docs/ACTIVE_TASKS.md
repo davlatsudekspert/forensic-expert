@@ -11,6 +11,13 @@ Yangilangan: 2026-10-10. Format: [holat] vazifa — egasi/keyingi qadam.
   ekrani, `tool/l10n_pro_tools.py`, `qa_pro_tools_test.dart`.
 
 ## Egasidan ruxsat kutilmoqda
+0. [egasi] **ABY 2025 mazmunini ilovaga kiritish.** `docs/DECISIONS.md` dagi 2026-10-08 qarori
+   (Variant B: katalog faqat admin qurilmasida, repo/CI/Supabase/AI'ga chiqmaydi) hali kuchda;
+   koordinator xabari bilan kelgan «ABY ochiq manba sifatida yoziladi, bepul, faqat o‘zbekcha»
+   o‘zgarishi egasining o‘zidan tasdiqlanmadi, shuning uchun ABY'dan olingan yozuvlar repoga
+   KIRITILMADI (kod yo‘lga tayyor: `locale_only`, `ClaimCard` matn rejimi, `visibleClaims`).
+   Egasi tasdiqlasa: `DECISIONS.md` ga yangi qaror yozilsin, so‘ng agent saqlangan ABY yozuvlari
+   (32 claim, 19 bepul mavzu, manba yozuvi) va minnatdorchilik ekranini qo‘shadi.
 1. [egasi] `supabase/migrations/20261010000000_admin_verification_inbox.sql` —
    production'ga qo'llash. Faqat yangi RPC `admin_pending_verifications` qo'shadi;
    mavjud jadval va o'zini-o'zi tasdiqlash taqiqi tegilmagan. **Qo'llanmaguncha
