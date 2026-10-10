@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../app/app_info.dart';
 import '../../../core/design/theme.dart';
@@ -35,14 +36,35 @@ class LegalDocumentScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              FeBanner(
-                key: const Key('legal.draft'),
-                icon: Icons.edit_note,
-                text: l.legalDraftNotice,
-                tone: FeBannerTone.warning,
-              ),
+              // Maxfiylik siyosati e'lon qilingan (Play Console'dagi havola
+              // bilan bir xil matn); qolgan hujjatlar hali qoralama.
+              if (document == LegalDocument.privacy)
+                FeBanner(
+                  key: const Key('legal.published'),
+                  icon: Icons.public,
+                  text: l.legalPublishedNotice,
+                )
+              else
+                FeBanner(
+                  key: const Key('legal.draft'),
+                  icon: Icons.edit_note,
+                  text: l.legalDraftNotice,
+                  tone: FeBannerTone.warning,
+                ),
               const SizedBox(height: FeSpace.md),
               Text(body, style: t.bodyLarge),
+              if (document == LegalDocument.privacy) ...[
+                const SizedBox(height: FeSpace.md),
+                OutlinedButton.icon(
+                  key: const Key('legal.privacy.open'),
+                  onPressed: () => launchUrl(
+                    Uri.parse(AppInfo.privacyPolicyUrl),
+                    mode: LaunchMode.externalApplication,
+                  ),
+                  icon: const Icon(Icons.open_in_new),
+                  label: Text(l.legalOpenOnline),
+                ),
+              ],
               if (document == LegalDocument.terms) ...[
                 const SizedBox(height: FeSpace.md),
                 Text(l.disclaimerNoConclusions, style: t.bodyMedium),

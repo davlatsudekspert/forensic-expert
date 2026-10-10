@@ -8123,4 +8123,11 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get admActVerificationsView => 'Просмотрены заявки на верификацию';
+
+  @override
+  String get legalOpenOnline => 'Открыть полную политику в интернете';
+
+  @override
+  String get legalPublishedNotice =>
+      'Это опубликованная политика. Тот же текст доступен в интернете.';
 }

@@ -14180,6 +14180,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Viewed verification applications'**
   String get admActVerificationsView;
+
+  /// Button that opens the published privacy policy in a browser.
+  ///
+  /// In en, this message translates to:
+  /// **'Open the full policy online'**
+  String get legalOpenOnline;
+
+  /// Banner shown on the privacy screen: the policy is published.
+  ///
+  /// In en, this message translates to:
+  /// **'This is the published policy. The same text is available online.'**
+  String get legalPublishedNotice;
 }
 
 class _AppLocalizationsDelegate

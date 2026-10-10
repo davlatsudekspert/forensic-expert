@@ -8080,4 +8080,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get admActVerificationsView => 'Viewed verification applications';
+
+  @override
+  String get legalOpenOnline => 'Open the full policy online';
+
+  @override
+  String get legalPublishedNotice =>
+      'This is the published policy. The same text is available online.';
 }

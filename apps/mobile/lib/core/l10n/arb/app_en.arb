@@ -10510,5 +10510,13 @@
   "admActVerificationsView": "Viewed verification applications",
   "@admActVerificationsView": {
     "description": "Audit action."
+  },
+  "legalOpenOnline": "Open the full policy online",
+  "legalPublishedNotice": "This is the published policy. The same text is available online.",
+  "@legalOpenOnline": {
+    "description": "Button that opens the published privacy policy in a browser."
+  },
+  "@legalPublishedNotice": {
+    "description": "Banner shown on the privacy screen: the policy is published."
   }
 }

@@ -90,8 +90,9 @@ unzip -p app-release.aab META-INF/MANIFEST.MF | head
    - yig'ilmaydi: joylashuv, kontaktlar, reklama identifikatorlari;
    - shifrlash: transitda TLS; foydalanuvchi akkauntni o'chirishni ilova ichidan
      so'ray oladi (`delete-account` funksiyasi) — bu Play talabi.
-7. **Privacy policy URL:** majburiy. Maxfiylik siyosati matni repoda bor
-   (`docs/` ichidagi maxfiylik hujjati) — uni ochiq URL'ga joylashtiring.
+7. **Privacy policy URL:** `https://davlatsudekspert.github.io/forensic-expert-legal/`
+   (manba: `docs/legal/privacy.html`, `forensic-expert-legal` ochiq repo + GitHub Pages).
+   2026-10-10 da tekshirildi: HTTP 200, hisobsiz ochiladi, uz/ru/en.
 8. **Ads:** reklama yo'q — «No ads» belgilang.
 
 ---

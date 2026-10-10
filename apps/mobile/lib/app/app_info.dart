@@ -10,4 +10,9 @@ abstract final class AppInfo {
   /// VAQTINCHALIK ID (RG-09). Nomzod: `com.forensicexpert.app` — egasi
   /// tasdiqlamaguncha va store’da ro‘yxatdan o‘tmaguncha o‘zgartirilmaydi.
   static const applicationId = 'uz.forensicexpert.forensic_expert';
+
+  /// Ommaviy maxfiylik siyosati (Play Console «Privacy policy» maydoni bilan
+  /// bir xil manzil). Sahifa manbasi: `docs/legal/privacy.html`.
+  static const privacyPolicyUrl =
+      'https://davlatsudekspert.github.io/forensic-expert-legal/';
 }

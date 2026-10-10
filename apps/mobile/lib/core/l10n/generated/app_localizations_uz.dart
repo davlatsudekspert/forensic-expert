@@ -8055,4 +8055,11 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get admActVerificationsView => 'Tasdiqlash arizalari ko‘rildi';
+
+  @override
+  String get legalOpenOnline => 'To‘liq siyosatni internetda ochish';
+
+  @override
+  String get legalPublishedNotice =>
+      'Bu — e’lon qilingan siyosat. Xuddi shu matn internetda ham bor.';
 }
