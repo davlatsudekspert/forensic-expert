@@ -8215,14 +8215,14 @@ class AppLocalizationsRu extends AppLocalizations {
   String proFamilyName(String code) {
     String _temp0 = intl.Intl.selectLogic(code, {
       'colourTest': 'Цветная (капельная) реакция',
-      'tlc': 'ТСХ (тонкослойная хроматография)',
+      'tlc': 'TLC (тонкослойная хроматография)',
       'microcrystal': 'Микрокристаллоскопия',
       'uvVis': 'УФ/видимая спектрофотометрия',
       'immunoassay': 'Иммунохимический анализ',
       'gcMs': 'GC-MS',
       'lcMs': 'LC-MS, LC-MS/MS',
       'hrms': 'HRMS (масс-спектрометрия высокого разрешения)',
-      'gcFid': 'GC-FID, парофазная ГХ',
+      'gcFid': 'GC-FID, парофазная GC',
       'hplc': 'HPLC',
       'other': '$code',
     });
@@ -8346,7 +8346,7 @@ class AppLocalizationsRu extends AppLocalizations {
       'Предварительные тесты (реагент и наблюдение)';
 
   @override
-  String get planSecBench => 'ТСХ, микрокристаллоскопия и УФ/Вид';
+  String get planSecBench => 'TLC, микрокристаллоскопия и УФ/Вид';
 
   @override
   String get planSecConfirmation => 'Этап подтверждения';
@@ -8383,7 +8383,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get planNoBench =>
-      'Для этого вещества в пакете нет систем ТСХ, микрокристаллоскопии или УФ/Вид.';
+      'Для этого вещества в пакете нет систем TLC, микрокристаллоскопии или УФ/Вид.';
 
   @override
   String get planNoConfirmation =>

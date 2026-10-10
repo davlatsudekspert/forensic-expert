@@ -8120,7 +8120,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get proFacetFamily => 'Usullar oilasi';
 
   @override
-  String get proFacetReagent => 'Reagent';
+  String get proFacetReagent => 'Reaktiv';
 
   @override
   String get proFacetEvidence => 'Dalil darajasi';
@@ -8263,7 +8263,7 @@ class AppLocalizationsUz extends AppLocalizations {
       'Taxminiy (presumptive) testlar: reagent va kuzatuv';
 
   @override
-  String get planSecBench => 'TQX, mikrokristal va UB/Vis';
+  String get planSecBench => 'TLC, mikrokristal va UB/Vis';
 
   @override
   String get planSecConfirmation => 'Tasdiqlash bosqichi';
@@ -8299,7 +8299,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get planNoBench =>
-      'Bu modda uchun paketda TQX, mikrokristal yoki UB/Vis tizimi hujjatlashtirilmagan.';
+      'Bu modda uchun paketda TLC, mikrokristal yoki UB/Vis tizimi hujjatlashtirilmagan.';
 
   @override
   String get planNoConfirmation =>

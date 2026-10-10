@@ -47,7 +47,7 @@ k("proFacetDiscipline", "Facet title.", "Discipline", "Дисциплина", "F
 k("proFacetClass", "Facet title.", "Substance class", "Класс вещества", "Modda sinfi")
 k("proFacetSpecimen", "Facet title.", "Specimen", "Образец", "Namuna")
 k("proFacetFamily", "Facet title.", "Method family", "Семейство методов", "Metodlar oilasi")
-k("proFacetReagent", "Facet title.", "Reagent", "Реагент", "Reagent")
+k("proFacetReagent", "Facet title.", "Reagent", "Реагент", "Reaktiv")
 k("proFacetEvidence", "Facet title.", "Evidence level", "Уровень доказательности", "Dalil darajasi")
 k("proFacetStatus", "Facet title.", "Review status", "Статус проверки", "Tekshiruv holati")
 k("proFacetJurisdiction", "Facet title.", "Jurisdiction", "Юрисдикция", "Yurisdiksiya")
@@ -57,7 +57,7 @@ k("proEvidenceAtLeast", "Evidence facet chip. {level} is A, B, C or D.",
 k("proYearSince", "Year facet chip.", "Since {year}", "С {year} года", "{year}-yildan boshlab", p("year", ints=("year",)))
 k("proFamilyName", "Method family label (select on the family code).",
   "{code, select, colourTest{Colour (spot) test} tlc{TLC (thin-layer chromatography)} microcrystal{Microcrystal test} uvVis{UV/Vis spectrophotometry} immunoassay{Immunoassay} gcMs{GC-MS} lcMs{LC-MS, LC-MS/MS} hrms{HRMS (high-resolution MS)} gcFid{GC-FID, headspace GC} hplc{HPLC} other{{code}}}",
-  "{code, select, colourTest{Цветная (капельная) реакция} tlc{ТСХ (тонкослойная хроматография)} microcrystal{Микрокристаллоскопия} uvVis{УФ/видимая спектрофотометрия} immunoassay{Иммунохимический анализ} gcMs{GC-MS} lcMs{LC-MS, LC-MS/MS} hrms{HRMS (масс-спектрометрия высокого разрешения)} gcFid{GC-FID, парофазная ГХ} hplc{HPLC} other{{code}}}",
+  "{code, select, colourTest{Цветная (капельная) реакция} tlc{TLC (тонкослойная хроматография)} microcrystal{Микрокристаллоскопия} uvVis{УФ/видимая спектрофотометрия} immunoassay{Иммунохимический анализ} gcMs{GC-MS} lcMs{LC-MS, LC-MS/MS} hrms{HRMS (масс-спектрометрия высокого разрешения)} gcFid{GC-FID, парофазная GC} hplc{HPLC} other{{code}}}",
   "{code, select, colourTest{Rangli (tomchi) test} tlc{TQX (yupqa qatlamli xromatografiya)} microcrystal{Mikrokristal test} uvVis{UB/ko‘rinuvchi spektrofotometriya} immunoassay{Immunokimyoviy tahlil} gcMs{GC-MS} lcMs{LC-MS, LC-MS/MS} hrms{HRMS (yuqori aniqlikdagi mass-spektrometriya)} gcFid{GC-FID, bug‘ fazali GC} hplc{HPLC} other{{code}}}",
   p("code"))
 k("proResultCount", "Number of search results.",
@@ -136,7 +136,7 @@ k("planSecSpecimens", "Plan section title.", "Specimens and sampling notes",
 k("planSecPresumptive", "Plan section title.", "Presumptive tests (reagent and observation)",
   "Предварительные тесты (реагент и наблюдение)", "Taxminiy (presumptive) testlar: reagent va kuzatuv")
 k("planSecBench", "Plan section title.", "TLC, microcrystal and UV/Vis",
-  "ТСХ, микрокристаллоскопия и УФ/Вид", "TQX, mikrokristal va UB/Vis")
+  "TLC, микрокристаллоскопия и УФ/Вид", "TLC, mikrokristal va UB/Vis")
 k("planSecConfirmation", "Plan section title.", "Confirmation step",
   "Этап подтверждения", "Tasdiqlash bosqichi")
 k("planSecInstrumental", "Plan section title.", "Other instrumental methods in the sources",
@@ -156,7 +156,7 @@ k("planNoPresumptive", "Empty block.", "No presumptive test is documented for th
 k("planNoReagents", "Empty block.", "No reagent and expected observation pair is documented for this test in the pack.",
   "Для этого теста в пакете нет пары «реагент — ожидаемое наблюдение».", "Bu test uchun paketda «reagent — kutilgan kuzatuv» jufti hujjatlashtirilmagan.")
 k("planNoBench", "Empty block.", "No TLC, microcrystal or UV/Vis system is documented for this substance in the pack.",
-  "Для этого вещества в пакете нет систем ТСХ, микрокристаллоскопии или УФ/Вид.", "Bu modda uchun paketda TQX, mikrokristal yoki UB/Vis tizimi hujjatlashtirilmagan.")
+  "Для этого вещества в пакете нет систем TLC, микрокристаллоскопии или УФ/Вид.", "Bu modda uchun paketda TLC, mikrokristal yoki UB/Vis tizimi hujjatlashtirilmagan.")
 k("planNoConfirmation", "Empty block.", "No confirmation method is documented for this substance in the pack.",
   "Для этого вещества в пакете нет подтверждающего метода.", "Bu modda uchun paketda tasdiqlovchi metod hujjatlashtirilmagan.")
 k("planNoInstrumental", "Empty block.", "No other instrumental method is mentioned with this substance in the pack.",

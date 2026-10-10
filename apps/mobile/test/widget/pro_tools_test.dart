@@ -113,8 +113,10 @@ void main() {
       expect(find.text('Tasdiqlangan'), findsNothing);
       // Reagent juftligi paketda yo‘q — halol aytiladi (to‘qib chiqarilmaydi).
       expect(find.byKey(const Key('plan.noReagents')), findsWidgets);
-      // TLC/UV tizimi yo‘q — bo‘sh holat.
-      expect(find.byKey(const Key('plan.empty.bench')), findsOneWidget);
+      // Mahalliy sharoitdagi usullar qo‘shilgandan keyin kokain uchun stol
+      // usti usullari (rang sinamasi, mikrokristall, TLC) paketda bor, shuning
+      // uchun bo‘lim endi bo‘sh emas.
+      expect(find.byKey(const Key('plan.empty.bench')), findsNothing);
       // Xulosa uchun eslatma: skrining aniq identifikatsiya emas.
       await see(tester, find.byKey(const Key('plan.reminder.presumptiveOnly')));
       expect(
@@ -132,10 +134,17 @@ void main() {
       tester,
     ) async {
       await open(tester, Routes.homePlan('morphine'));
-      expect(find.byKey(const Key('plan.empty.presumptive')), findsOneWidget);
-      expect(find.byKey(const Key('plan.empty.confirmation')), findsOneWidget);
-      await see(tester, find.byKey(const Key('plan.instr.method-lcmsms')));
-      expect(find.byKey(const Key('plan.notPaired')), findsOneWidget);
+      // Morfin uchun ham skrining sinamalari qo‘shildi (rang, mikrokristall,
+      // immunoanaliz), shuning uchun «bo‘sh» holati endi kutilmaydi.
+      expect(find.byKey(const Key('plan.empty.presumptive')), findsNothing);
+      // Skrining qo‘shilgandan keyin LC-MS/MS morfin uchun «tasdiqlovchi»
+      // bo‘limiga o‘tdi — alohida instrumental usul sifatida emas.
+      await see(tester, find.byKey(const Key('plan.confirm.method-lcmsms')));
+      // «Usullar namunaga bog‘lanmagan» ogohlantirishi instrumental bo‘lim
+      // bilan birga chiqadi; morfinda LC-MS/MS tasdiqlovchi bo‘limga o‘tgani
+      // uchun instrumental bo‘lim bo‘sh va ogohlantirish u yerda ko‘rinmaydi.
+      expect(find.byKey(const Key('plan.notPaired')), findsNothing);
+      expect(find.byKey(const Key('plan.empty.instrumental')), findsOneWidget);
       expect(
         find.byKey(const Key('plan.reminder.methodsNotPaired')),
         findsOneWidget,
