@@ -22,3 +22,20 @@ TestFlight closeout’dan KEYIN, limit tiklanganda boshlanadi.
 
 ## 4. Kichik UX
 - ~~AI ekranida hisobdan chiqilganda «ulanmagan» emas, «hisobga kiring» deyish.~~ Bajarildi (`f43a00a`).
+
+## Tillarni kengaytirish (egasi, 2026-10-10)
+
+Hozircha uchta til — UZ / RU / EN — va ular mukammal qilinadi. Keyinchalik
+qo'shiladi: **qozoq, tojik, qirg'iz**.
+
+Har bir yangi til uchun kerak bo'ladigan ish (baholash uchun):
+1. ARB kalitlari (~1400 kalit) — interfeys.
+2. Ilmiy kontent: qo'llanma kartalari, modda yozuvlari, sudda so'roq, testlar.
+   Bu eng og'ir qism — avtomatik tarjima yetarli emas, soha mutaxassisi
+   tekshirishi kerak (raqam, birlik, formula, cutoff o'zgarmaydi).
+3. `SupportedLanguages.locales` ga qo'shish, til tanlash ekrani, `lang_audit.py`
+   va `translation_qa.py` ni yangi tilga kengaytirish.
+4. Tarjima holati belgisi: tekshirilmagan tarjima shunday ko'rsatiladi.
+
+Tavsiya: bitta tilni to'liq tugatib, sinovdan o'tkazib, keyin keyingisiga
+o'tish. Uchtasini bir vaqtda boshlash sifatni tushiradi.
