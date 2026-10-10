@@ -147,6 +147,22 @@ void main() {
           expect(s.sourceClass.canBackClaim, isFalse);
           continue;
         }
+        // Usullar qatlami manbalari: DOI/PMID yo‘q — o‘qilgan rasmiy PDF (URL)
+        // yoki muallif ruxsati (licenseAgreementId) bilan aniqlanadi.
+        if (const {
+          'SRC-YULDASHEV-GMT-2024',
+          'SRC-YULDASHEV-TOKS-2025',
+          'SRC-UNODC-STNAR-13',
+          'SRC-SWGDRUG-8-2',
+        }.contains(s.sourceId)) {
+          expect(s.accessedDate, isNotNull, reason: s.sourceId);
+          expect(
+            s.licenseAgreementId != null || s.officialUrl != null,
+            isTrue,
+            reason: s.sourceId,
+          );
+          continue;
+        }
         expect(s.identifierVerified, isTrue, reason: s.sourceId);
         expect(s.accessedDate, isNotNull, reason: s.sourceId);
       }
