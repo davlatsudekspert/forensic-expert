@@ -143,6 +143,14 @@ void main() {
           expect(s.accessedDate, isNotNull);
           continue;
         }
+        // Milliy amaliyot yo‘riqnomasi (ABY 2025): DOI/ISBN yo‘q, internetda
+        // ham yo‘q — markaz foydalanish huquqini sotib olgan hujjat, aniq
+        // joyi hujjatning o‘z raqamlash tartibi bilan beriladi.
+        if (s.sourceId == 'SRC-ABY-2025') {
+          expect(s.licenseAgreementId, 'OWNER-ABY-USE-RIGHT-2026-10-10');
+          expect(s.accessedDate, isNotNull);
+          continue;
+        }
         if (s.sourceId == 'SRC-FE-EDITORIAL') {
           expect(s.sourceClass.canBackClaim, isFalse);
           continue;
