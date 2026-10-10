@@ -25,3 +25,113 @@ Got dependencies in `/home/user/forensic-expert`!
 Try `flutter pub outdated` for more information.
 00:00 +0: loading /home/user/forensic-expert/apps/mobile/integration_test/qa_expert_test.dart
 Building Linux application...                                   
+✓ Built build/linux/x64/debug/bundle/forensic_expert
+00:00 +0: QA real app — EXPERT
+[perf] settings.load took 3 ms
+[perf] settings_loaded: 12 ms
+[perf] first_frame: 1014 ms
+QA e01 PASS Onboarding: O‘zbekcha + ogohlantirish []
+QA e02 PASS Rejim: Mutaxassis + rol (Sud toksikologi) []
+QA e03 PASS Davom etish → Hisob yaratish / Kirish [LANG? EN:"EXPERT"]
+[content] bundled pack: installed 
+WARNING (drift): It looks like you've created the database class ContentDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$ContentDatabase (package:fe_database/src/content/content_database.g.dart:18475:40)
+#4      new ContentDatabase (package:fe_database/src/content/content_database.dart)
+#5      LocalContentStore._open.<anonymous closure> (package:forensic_expert/data/local/content_store.dart:101:18)
+#6      StartupMetrics.measure (package:forensic_expert/core/perf/startup_metrics.dart:38:26)
+#7      LocalContentStore._open (package:forensic_expert/data/local/content_store.dart:100:36)
+#8      LocalContentStore.openActive (package:forensic_expert/data/local/content_store.dart:82:12)
+<asynchronous suspension>
+#9      contentLibraryProvider.<anonymous closure> (package:forensic_expert/app/providers.dart:176:14)
+<asynchronous suspension>
+#10     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:232:17)
+<asynchronous suspension>
+#11     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:237:29)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class ContentDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$ContentDatabase (package:fe_database/src/content/content_database.g.dart:18475:40)
+#4      new ContentDatabase (package:fe_database/src/content/content_database.dart)
+#5      LocalContentStore._open.<anonymous closure> (package:forensic_expert/data/local/content_store.dart:101:18)
+#6      StartupMetrics.measure (package:forensic_expert/core/perf/startup_metrics.dart:38:26)
+#7      LocalContentStore._open (package:forensic_expert/data/local/content_store.dart:100:36)
+#8      LocalContentStore.openActive (package:forensic_expert/data/local/content_store.dart:82:12)
+<asynchronous suspension>
+#9      contentKnowledgeProvider.<anonymous closure> (package:forensic_expert/app/providers.dart:260:14)
+<asynchronous suspension>
+#10     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:232:17)
+<asynchronous suspension>
+#11     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:237:29)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class ContentDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$ContentDatabase (package:fe_database/src/content/content_database.g.dart:18475:40)
+#4      new ContentDatabase (package:fe_database/src/content/content_database.dart)
+#5      LocalContentStore._open.<anonymous closure> (package:forensic_expert/data/local/content_store.dart:101:18)
+#6      StartupMetrics.measure (package:forensic_expert/core/perf/startup_metrics.dart:38:26)
+#7      LocalContentStore._open (package:forensic_expert/data/local/content_store.dart:100:36)
+#8      LocalContentStore.openActive (package:forensic_expert/data/local/content_store.dart:82:12)
+<asynchronous suspension>
+#9      contentEvidenceProvider.<anonymous closure> (package:forensic_expert/app/providers.dart:330:14)
+<asynchronous suspension>
+#10     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:232:17)
+<asynchronous suspension>
+#11     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:237:29)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+[perf] content_db.open took 85 ms
+[perf] content_db.open took 85 ms
+[perf] content_db.open took 93 ms
+[perf] content_db.open took 96 ms
+QA e04 PASS MOCK OTP bilan kirish []
+QA e05 PASS Profil: 1-qadam (ism, davlat) []
+QA e06 PASS Profil: 2-qadam — ixtisoslik «Sud toksikologiyasi» []
+QA e07 PASS Profil: 3-qadam → Saqlash []
+QA e08 PASS Professional maqomni tasdiqlash (server yo‘q) []
+QA e09 PASS Fanlar → Sud kimyosi []
+QA e10 PASS Kutubxona → Usullar va SOP []
+QA e11 PASS Usul yozuvini ochish (GX) []
+QA e12 PASS Yo‘riqnoma: preanalitika kartasi []
+QA e13 PASS Etanol → «Bu ma’lumot qayerdan?» [LANG? EN:"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…" | RAW:"pubchem.ncbi.nlm.nih.gov" | RAW:"legislation.gov.uk"]
+QA e14 PASS Ekspert maqolalari ro‘yxati []
+QA e15 PASS Maqolani ochish []
+QA e16 PASS Maqola yuborish: bo‘sh forma → xato []
+QA e17 PASS Maqola: to‘ldirish → qoralama saqlash []
+QA e18 PASS Maqola: tasdiqlarsiz yuborish → rad []
+QA e19 PASS Maqola: 3 tasdiq → yuborish → «Mening maqolalarim» []
+QA e20 PASS Qidiruv: «etanol qon» []
+QA e21 PASS Qidiruv: «HS-GC» []
+QA e22 PASS AI: oflayn manbalar «metanol» []
+QA e23 PASS Vositalar ro‘yxati []
+QA e24 PASS Suyultirish: C₁=10, C₂=1, V₂=100 → V₁=10 []
+QA e25 PASS Suyultirish: mantiqsiz kiritish (C₂ > C₁) → ogohlantirish []
+QA e26 PASS Pro kalkulyator (Widmark) → tariflar []
+QA e27 PASS Profil va sozlamalar (Mutaxassis) []
+QA e28 PASS Til: Русский — Профиль []
+QA e29 PASS Til: O‘zbekcha (qaytish) []
+QA e30 PASS 320×640: Vositalar []
+QA e31 PASS 320×640: maqola yuborish formasi []
+QA e32 PASS 320×640: yo‘riqnomalar []
+QA e33 PASS 320×640: profil tahrirlash []
+QA e34 PASS Etanol sahifasi → ⋮ → «Xato haqida xabar berish» []
+QA e35 PASS SCIENTIFIC_ERROR: xabar + rozilik → yuborish []
+QA e36 PASS Admin javobi (simulyatsiya) → chatda ko‘rinadi []
+QA e37 PASS Tarmoq o‘chiq: oflayn ishladi [Bloklangan HTTP urinishlari: 0]
+QA SUMMARY expert: 37/37 PASS
+01:36 +1: (tearDownAll)
+01:36 +1: All tests passed!
