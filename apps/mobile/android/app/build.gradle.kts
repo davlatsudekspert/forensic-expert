@@ -79,6 +79,17 @@ android {
                 )
                 signingConfigs.getByName("debug")
             }
+
+            // Native debug symbols (~91 MB uncompressed) only serve Play's
+            // native crash reports; they never reach a user's device, but they
+            // double the size of the bundle we have to download and upload by
+            // hand. Set FE_NATIVE_DEBUG_SYMBOLS=full before a build when a
+            // native crash actually needs symbolicating.
+            ndk {
+                debugSymbolLevel =
+                    System.getenv("FE_NATIVE_DEBUG_SYMBOLS")?.takeIf { it.isNotBlank() }
+                        ?: "none"
+            }
         }
     }
 }

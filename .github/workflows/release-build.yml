@@ -132,10 +132,22 @@ jobs:
           else
             echo "::notice::ANDROID RELEASE SIGNING NOT CONFIGURED — DEBUG SIGNED, NOT FOR STORE. Required secrets: ANDROID_KEYSTORE_BASE64, ANDROID_KEYSTORE_PASSWORD, ANDROID_KEY_ALIAS, ANDROID_KEY_PASSWORD"
           fi
-      - uses: actions/upload-artifact@v4
+      # Play Console'ga faqat .aab kerak. Uni alohida artefakt qilib qo'yamiz —
+      # APK bilan birga bo'lsa, yuklab olish ikki barobar uzoq ketadi.
+      - name: Upload AAB (Play Console)
+        uses: actions/upload-artifact@v4
+        with:
+          name: aab-${{ env.SIGNING_STATUS }}-${{ github.sha }}
+          path: ${{ runner.temp }}/out/*.aab
+          retention-days: 30
+          if-no-files-found: error
+      - name: Upload APK + checksums (device testing)
+        uses: actions/upload-artifact@v4
         with:
           name: android-${{ env.SIGNING_STATUS }}-${{ github.sha }}
-          path: ${{ runner.temp }}/out/
+          path: |
+            ${{ runner.temp }}/out/*.apk
+            ${{ runner.temp }}/out/SHA256SUMS.txt
           retention-days: 30
           if-no-files-found: error
       - name: Play upload status
