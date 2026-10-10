@@ -3,6 +3,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
+echo "== claim-source audit"; python3 content/tools/claim_source_audit.py --check
 echo "== pub get";            flutter pub get --enforce-lockfile >/dev/null
 echo "== generated code";     (cd packages/fe_database && dart run build_runner build >/dev/null) && (cd apps/mobile && flutter gen-l10n >/dev/null) && git diff --exit-code
 echo "== format";             dart format --output=none --set-exit-if-changed $(git ls-files '*.dart' | grep -v -E '\.g\.dart$|/generated/')

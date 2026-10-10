@@ -34,6 +34,9 @@ jobs:
       - name: Dependencies (bitta workspace lockfile)
         run: flutter pub get --enforce-lockfile
 
+      - name: Content claim-source audit (deterministic, offline)
+        run: python3 content/tools/claim_source_audit.py --check
+
       - name: Generated code is up to date (drift, gen-l10n)
         run: |
           (cd packages/fe_database && dart run build_runner build)

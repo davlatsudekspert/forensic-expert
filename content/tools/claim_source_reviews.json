@@ -1,0 +1,748 @@
+{
+ "schema": "fe-claim-reviews/1",
+ "note": "Human/AI review ledger for content/tools/claim_source_audit.py. 'reviews': one verdict per claim, bound to the SHA-256 prefix of the claim text (an edit makes the entry stale and fails --check). 'locators': passages located in the source itself (sec:/art:/pp:), bound to the claim text hash. 'reference_levels': optional per-reference verification-level overrides. Written with --record-review / --record-locator. Never record a locator that was not actually read in the source.",
+ "reference_levels": {},
+ "reviews": [
+  {
+   "id": "C-FM-ALGOR-MORTIS-DEFINITION",
+   "text_sha": "fdb3803acf6cdd4e",
+   "verdict": "UNSUPPORTED",
+   "action": "kept",
+   "basis": "Source SRC-PMC11580817 is retracted (PubMed 'Retracted Publication', PMID 39575351; notice PMID 39791019). Kept on purpose as the documented retraction fixture: the app shows the retracted banner (claim.retracted.*) and the RAG pipeline excludes it (phase7_test, rag_pipeline_test). Owner decision: replace the claim's source (e.g. SRC-PMC12346081 INTRO: 'algor mortis (cooling of the body)') or keep as fixture.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "court.q.ident_colour_test.explain.1",
+   "text_sha": "fbc40f5740203fec",
+   "verdict": "PARTIAL",
+   "action": "narrowed",
+   "basis": "Jurisdiction: 'separate criteria for biological specimens' now names the US ANSI/ASB 113 (example).",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "court.q.ident_criteria.explain.0",
+   "text_sha": "71ca9365c646f1eb",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "narrowed",
+   "basis": "Jurisdiction and scope: ASB 113 labelled US, voluntary, excluding alcohols, CO, cyanide, metals.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "court.q.instr_gcms.short_answer",
+   "text_sha": "84bad53046520f13",
+   "verdict": "PARTIAL",
+   "action": "narrowed",
+   "basis": "Jurisdiction: ASB 113 labelled as a voluntary US standard.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "court.q.interp_back_calculation.documents.1",
+   "text_sha": "631aecc2a5f44a59",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "kept",
+   "basis": "PubMed abstract re-read 2026-10-10 (NCBI E-utilities / PubMed MCP), jones2010: elimination rate range 10-35 mg/100 mL/h, evidence-based survey; the document list (assumptions and their source) is practice advice resting on it.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "court.q.interp_cause_of_death.short_answer",
+   "text_sha": "f6761ca28e5f9d8a",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "narrowed",
+   "basis": "PubMed abstract re-read 2026-10-10 (NCBI E-utilities / PubMed MCP), ketola2019: distributions of 183 drugs across all causes of death (median = normal PM level, upper percentiles = possible overdose); druid1997: femoral-blood compilation with fatal single-substance, multi-substance and control (other cause of death) groups. The earlier wording 'the same concentrations occur across different causes of death' is not stated in the abstracts; now: reported as distributions incl. a control group.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "court.q.interp_redistribution.explain.0",
+   "text_sha": "02235a304595c3ed",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "narrowed",
+   "basis": "PubMed abstract re-read 2026-10-10 (NCBI E-utilities / PubMed MCP), pelissier2003: analyse specimens from different sampling sites to detect PMR; basic lipophilic drugs with large Vd susceptible but not only these; yarema2005: ideal site is a ligated or clamped femoral vein. The comparison of sites was wrongly attributed to yarema2005; now split between the two sources.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "court.q.method_choice.pitfalls.0",
+   "text_sha": "a82da469a6164a6a",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "kept",
+   "basis": "ASB 036 scope (fit for intended use) read on the official page; the pitfall ('habit is not justification') is practice advice, scope-level support only.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "court.q.method_uncertainty.short_answer",
+   "text_sha": "f4c7cd8dd5229f93",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "kept",
+   "basis": "The word 'threshold' belongs to the sentence attributed to the Uzbek CPC (art:187:1); the JCGM/Gullberg part states only that the uncertainty budget (measurand, components, combination) is documented, which Gullberg's abstract states. JCGM 100 is cited for scope only.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "court.sim.neoformation.option.2.feedback",
+   "text_sha": "deb29f3cb97298c8",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "kept",
+   "basis": "PubMed abstract re-read 2026-10-10 (NCBI E-utilities / PubMed MCP), kugelberg2007: microbial/postmortem ethanol production is a recurring issue; vitreous humour and urine recommended; 'one blood sample proves neither' is the card's conservative inference.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.chem.co_cohb_determination/cautions#1",
+   "text_sha": "e96c6e7a22a912fc",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "kept",
+   "basis": "PubMed abstract re-read 2026-10-10 (NCBI E-utilities / PubMed MCP), drummer2004: 'no concentration of a drug of abuse can be interpreted in isolation'; ferner2008 / kennedy2010: tables of lethal concentrations misleading (registry used_for; abstracts re-read). Claim matches; drummer2004 concerns drugs of abuse (the card applies the principle to CO as a general PM-toxicology rule - expert to confirm).",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.chem.co_cohb_determination/cautions#3",
+   "text_sha": "32d580453fa0511c",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "narrowed",
+   "basis": "delvau2024 is a swine model: the oxygen-administration factor is now marked '(shown in an animal model)'; the other factors are unchanged.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.chem.co_cohb_determination/cautions#4",
+   "text_sha": "35fe02562536f8fb",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "narrowed",
+   "basis": "delvau2024 is a swine model: marked '(shown in an animal model)'.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.chem.co_cohb_determination/factors#9",
+   "text_sha": "c622f3af0d44fb2e",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "narrowed",
+   "basis": "PubMed abstract re-read 2026-10-10: delvau2024 = 'On a swine model' (experimental swine, 940 ppm CO until COHb 30%); bi-compartmental half-life and slight rebound. The claim was stated without the species; now says swine experiment, not transferable directly to humans (species scope).",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.chem.ethanol_gc/limitations#3",
+   "text_sha": "2128d2d93ed42871",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "kept",
+   "basis": "PubMed abstract re-read 2026-10-10 (NCBI E-utilities / PubMed MCP), kugelberg2007: 'If ethanol remains unabsorbed in the stomach at the time of death ... continued local diffusion into surrounding tissues and central blood'. Claim matches; automatic scope flag was a false positive (stomach is the diffusion source, not the specimen).",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.chem.ethanol_gc/scope#1",
+   "text_sha": "c97ee0d463ef0def",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "kept",
+   "basis": "PubMed abstract re-read 2026-10-10 (NCBI E-utilities / PubMed MCP), barnhill2007: serum/whole-blood ratio is concentration-dependent (about 1.12-1.18), 'precluding a generally applicable SAC/BAC conversion factor' (212 patients). Claim states exactly this; not a general rule beyond the abstract.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.chem.gmt_analysis_scheme/instrumental#4",
+   "text_sha": "c3ff17d20030e0e8",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "narrowed",
+   "basis": "Jurisdiction and scope: 'in toxicology identification criteria are set by a separate standard' - now the US ANSI/ASB 113, excluding alcohols, CO, cyanide and metals.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.chem.gmt_benzodiazepines/basis#3",
+   "text_sha": "77b04b79f4f17ff6",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "narrowed",
+   "basis": "PubMed abstract re-read 2026-10-10: drummer2004: benzodiazepines are 'particularly prone to degradation'. 'Especially nitro compounds' is not in the abstract and was removed.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.chem.gmt_cocaine/tlc#3",
+   "text_sha": "d4157f3085b892b7",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "narrowed",
+   "basis": "PubMed abstract re-read 2026-10-10: uchiyama2008 analysed designated substances by TLC under two different solvent conditions; it does not state that one system is not enough. The 'at least two systems' rule is now marked as a practical recommendation derived from the textbook's three systems.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.chem.gmt_opioids/reactions#9",
+   "text_sha": "137c70068697e54f",
+   "verdict": "PARTIAL",
+   "action": "kept",
+   "basis": "Textbook p.46 located; kato2001 abstract: citric acid/acetic anhydride reagent is class-selective for tertiary amines. Automatic method flag (TLC vs colour test) is a false positive: the claim concerns the reagent, not the TLC step.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.chem.method_comparison/basis#4",
+   "text_sha": "5c1b04bc1512456d",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "narrowed",
+   "basis": "Jurisdiction and scope: ASB 113 is a US voluntary standard; the registry scope (official page) excludes alcohols/routine volatiles, carbon monoxide, cyanide and metals - now stated; the card is a general method comparison.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.chem.method_comparison/cautions#1",
+   "text_sha": "214a107c2391d204",
+   "verdict": "PARTIAL",
+   "action": "narrowed",
+   "basis": "saitman2014 abstract: immunoassay positives presumptive until confirmed by a second independent technique (urine drug screens). SWGDRUG IIIB.3.1/3.2 (PDF re-read): a Category B or C technique alone is insufficient. Earlier text said a screening result is 'never' reported as definitive and is always confirmed by a technique of a different principle: narrowed to what the two sources state.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.chem.method_comparison/cautions#5",
+   "text_sha": "b66c9bfd7baec373",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "narrowed",
+   "basis": "Jurisdiction: separate standards named as the US ANSI/ASB 113 and 098.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.chem.method_comparison/factors#3",
+   "text_sha": "0d4453249dd0c069",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "narrowed",
+   "basis": "Jurisdiction: 'the forensic toxicology method-validation standard requires' named as the US ANSI/ASB 036.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.chem.tlc_screening/basis#1",
+   "text_sha": "f15ad6ab0714c64e",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "kept",
+   "basis": "PubMed abstract re-read 2026-10-10 (NCBI E-utilities / PubMed MCP), de Zeeuw 1992 and 1994 abstracts: Rf correction with a reference mixture on each plate gives corrected values compatible with databases; 1997 abstract: databases and validation needed. Wording 'proposed' is within these abstracts.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.chem.tlc_screening/cautions#3",
+   "text_sha": "35dd1c84ed301f26",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "narrowed",
+   "basis": "PubMed abstract re-read 2026-10-10 (NCBI E-utilities / PubMed MCP), dezeeuw1994: the abstract supports only the Rf-correction mixture on every plate (accuracy and reproducibility improved). The earlier text also required standards and negative/positive controls and said results are not interpreted without them; that part is now marked 'general laboratory-practice requirement' and no longer attributed to the paper.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.chem.tlc_screening/factors#3",
+   "text_sha": "ba6efa1ce816df8d",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "kept",
+   "basis": "PubMed abstract re-read 2026-10-10 (NCBI E-utilities / PubMed MCP), de Zeeuw 1992/1994: high temperature and humidity shift Rf values (up to 20-30 Rf units) and worsen reproducibility; correction with a reference mixture on each plate improves it. Claim matches.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.chem.tlc_screening/limitations#6",
+   "text_sha": "c2902c4797f3cb5d",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "kept",
+   "basis": "PubMed abstract re-read 2026-10-10 (NCBI E-utilities / PubMed MCP), siek1997: detection limits 5-200 ng per spot, depending on the drug; kato2001: detectability depends on the reagent. 'Negative result does not prove absence' is the standard logical consequence.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.chem.toks_pesticides/cautions#3",
+   "text_sha": "d21e4cd7b91d9a2b",
+   "verdict": "PARTIAL",
+   "action": "narrowed",
+   "basis": "Textbook pp.153-155 located (earlier TOKS audit). maurer2004 abstract: GC-MS (EI full scan) is the method of choice for screening, LC-MS supplements for polar, thermolabile, low-dose drugs; it does not say 'no conclusion without instrumental confirmation'. Now: maurer attributed to the screening statement, confirmation rule marked as a general principle.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.chem.uvvis_drug_analysis/methods#7",
+   "text_sha": "362221ee5b596859",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "narrowed",
+   "basis": "Jurisdiction: 'a dedicated standard' named as the US ANSI/ASB 036.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.path.diatom_test/advantages#1",
+   "text_sha": "c35b7f8a3c1b9b69",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "narrowed",
+   "basis": "PubMed abstract re-read 2026-10-10: pollanen1998 = six homicidal-drowning case reports, diatoms recovered from femoral bone marrow incl. one grossly decomposed and one burned body; bortolotti2004: passive penetration cannot be excluded in highly transformed cadavers. The earlier mechanistic statement ('siliceous frustule resists decomposition, so the test is applicable') is in neither abstract; replaced by the case evidence plus the caveat.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.path.diatom_test/cautions#2",
+   "text_sha": "9687c95f26463d3b",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "narrowed",
+   "basis": "PubMed abstract re-read 2026-10-10: hurlimann2000 (contamination-free sampling/preparation; water samples from surface and bed) and tyr2025 (contamination and standardisation need further research). 'Blank controls in every batch must be run' is not in either abstract; now marked as a general laboratory-practice requirement and not attributed to the papers.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.path.diatom_test/limitations#6",
+   "text_sha": "92ca50ca2904ed69",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "kept",
+   "basis": "PubMed abstract re-read 2026-10-10 (NCBI E-utilities / PubMed MCP), piette2006: 'the ideal diagnostic test as definite proof for drowning still needs to be established' (review, published 2005-12-27 online, Forensic Sci Int 163:1-9, 2006). Claim within the abstract.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.tox.postmortem_interpretation/cautions#2",
+   "text_sha": "2e9cf8acff048436",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "narrowed",
+   "basis": "PubMed abstract re-read 2026-10-10 (NCBI E-utilities / PubMed MCP), pounder1990: highest levels in central vessels, lowest in peripheral; unknown site undermines the reference value of databases. Wording now states exactly this instead of a reporting rule.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.tox.postmortem_interpretation/cautions#6",
+   "text_sha": "814220dad44467e8",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "kept",
+   "basis": "PubMed abstract re-read 2026-10-10 (NCBI E-utilities / PubMed MCP), drummer2004: heroin, morphine glucuronides, cocaine, benzodiazepines prone to degradation; mcallister2008: cyanide inherently unstable in cadavers and stored samples. 'A negative/low result does not prove absence' is a logical consequence of documented instability; not stated verbatim in the abstracts.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.tox.postmortem_interpretation/cautions#8",
+   "text_sha": "0dc6b1ec3391a4a4",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "narrowed",
+   "basis": "Jurisdiction: 'recommendations are followed' (sounds binding) changed to 'taken into account (for example the US ANSI/ASB 037)'.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.tox.postmortem_interpretation/limitations#8",
+   "text_sha": "b9630454bb3ecda1",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "narrowed",
+   "basis": "PubMed abstract re-read 2026-10-10: kintz2017 says hair gives a retrospective exposure history (weeks to years depending on hair length); it does not say 'only indirect information about prior use' nor that tolerance cannot be measured in a PM specimen. The latter is now marked as a general toxicological principle.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.tox.postmortem_interpretation/scope#2",
+   "text_sha": "d087397c6368e0ed",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "narrowed",
+   "basis": "Jurisdiction: ANSI/ASB BPR 037 is a US (AAFS Standards Board) voluntary recommendation; the card said 'the toxicology consensus body' without naming it. Now names ASB, states voluntary / not binding in Uzbekistan.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.tox.specimen_preanalytics/basis#6",
+   "text_sha": "0b42d77317664191",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "narrowed",
+   "basis": "Jurisdiction: ASB 156 named as US ASB voluntary recommendation (scope read on the official page only).",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.tox.specimen_preanalytics/cautions#1",
+   "text_sha": "8115e305ba2cf18d",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "narrowed",
+   "basis": "PubMed abstract re-read 2026-10-10: flanagan2005: blood 5 mL from two distinct peripheral sites (preferably femoral veins), not central vessels; guidelines cover labelling. 'Never pooled in one container' is not in the abstract and was removed.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.tox.specimen_preanalytics/limitations#3",
+   "text_sha": "f325867155950487",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "kept",
+   "basis": "PubMed abstract re-read 2026-10-10 (NCBI E-utilities / PubMed MCP), skopp2004 / dinis2010: advantages and limitations of preservation procedures discussed; flanagan2005: preservative added to a portion of the blood. Claim matches.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.tox.specimen_preanalytics/limitations#5",
+   "text_sha": "647d9a85442838f2",
+   "verdict": "ABSTRACT_ONLY",
+   "action": "narrowed",
+   "basis": "ASB BPR 156 was read only on the official page (scope). 'Existing recommendations are adapted to laboratory and jurisdictional requirements' went beyond the scope statement; now: the US ASB 156 gives guidance on collection, amounts, preservatives, storage; adaptation is the laboratory's responsibility (general practice).",
+   "on": "2026-10-10"
+  }
+ ],
+ "locators": [
+  {
+   "key": "swgdrug2024",
+   "locator": [
+    "sec:IIIB.2.3"
+   ],
+   "basis": "SWGDRUG v8.2 PDF re-read 2026-10-10: IIIB.2.3 Table 1 (A: IR, MS, NMR, Raman; B: GC, LC, TLC, microcrystalline tests; C: colour tests, immunoassay, melting point)",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.tlc_screening/limitations#2": "ef78f48f4cd960f0",
+    "guideline.chem.method_comparison/basis#2": "e605647eeb5473a8",
+    "guideline.chem.method_comparison/methods#2": "3d0f62b098911037",
+    "guideline.chem.method_comparison/methods#5": "4465e1a14cc3a5b0",
+    "guideline.chem.method_comparison/methods#7": "bdf577d307d91474",
+    "guideline.chem.method_comparison/methods#9": "5746a847bf713d6f",
+    "guideline.chem.method_comparison/methods#12": "c89d03d03d7626f2",
+    "guideline.chem.method_comparison/methods#15": "07e57c891416cece",
+    "guideline.chem.method_comparison/advantages#3": "9a4aa75135dd0a34",
+    "guideline.chem.method_comparison/limitations#2": "4ce8fb09fee9a20d",
+    "guideline.chem.method_comparison/alternatives#5": "01d7627ad69852d6",
+    "guideline.chem.gmt_analysis_scheme/basis#3": "033b89e8b440da28",
+    "guideline.chem.gmt_analysis_scheme/limitations#1": "cca23d8e83c6df8e",
+    "guideline.chem.gmt_cannabis/scope#2": "3ae8a341e9aad628",
+    "guideline.chem.uvvis_drug_analysis/scope#1": "d28a08c311e916bf",
+    "guideline.chem.uvvis_drug_analysis/limitations#2": "7f4c9cef41ff9577",
+    "guideline.chem.uvvis_drug_analysis/alternatives#4": "8d8446ac0075b513",
+    "guideline.chem.gmt_analysis_scheme/quiz#gmt.scheme.1": "1918029e62a830c7"
+   }
+  },
+  {
+   "key": "swgdrug2024",
+   "locator": [
+    "sec:IIIB.3.1",
+    "sec:IIIB.3.2"
+   ],
+   "basis": "SWGDRUG Recommendations v8.2 (official PDF, 2024-06-27) re-read 2026-10-10; passage located and wording compared with the claim: IIIB.3.1 (Category A + at least one other technique) and IIIB.3.2 (without Category A: at least three techniques, two from Category B, third B or C)",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.tlc_screening/cautions#2": "1f40f44c8b18b516",
+    "guideline.chem.method_comparison/basis#3": "5b32bc84fb1a8d83",
+    "guideline.chem.method_comparison/cautions#1": "214a107c2391d204",
+    "guideline.chem.method_comparison/cautions#2": "92c210d49f5e5510",
+    "guideline.chem.method_comparison/alternatives#1": "5c6d5cf9c090d24f",
+    "guideline.chem.gmt_analysis_scheme/instrumental#3": "5a7a82a11d60bf1a",
+    "guideline.chem.uvvis_drug_analysis/cautions#1": "ba49e14147641632"
+   }
+  },
+  {
+   "key": "swgdrug2024",
+   "locator": [
+    "sec:IIIB.3.1"
+   ],
+   "basis": "SWGDRUG Recommendations v8.2 (official PDF, 2024-06-27) re-read 2026-10-10; passage located and wording compared with the claim: IIIB.3.1 (a Category A technique is combined with at least one other technique)",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.gmt_precursors/instrumental#3": "db51ff87d547b29c"
+   }
+  },
+  {
+   "key": "swgdrug2024",
+   "locator": [
+    "sec:IIIB.3.3.4"
+   ],
+   "basis": "SWGDRUG Recommendations v8.2 (official PDF, 2024-06-27) re-read 2026-10-10; passage located and wording compared with the claim: IIIB.3.3.4 (negative or inconclusive results do not contribute towards identification)",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.method_comparison/cautions#4": "bfabb91a232e2c3d",
+    "guideline.chem.gmt_analysis_scheme/limitations#2": "37bacf88c82b107d",
+    "guideline.chem.gmt_cocaine/limitations#2": "30a7c44aa579ea8d",
+    "guideline.chem.gmt_cannabis/limitations#2": "83a32dee622d3ef9",
+    "guideline.chem.uvvis_drug_analysis/cautions#4": "b2cec304969046e5"
+   }
+  },
+  {
+   "key": "swgdrug2024",
+   "locator": [
+    "sec:IIIB.3.4"
+   ],
+   "basis": "SWGDRUG Recommendations v8.2 (official PDF, 2024-06-27) re-read 2026-10-10; passage located and wording compared with the claim: IIIB.3.4 (a hyphenated technique may count as two techniques if the positive-result criteria are fulfilled for both)",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.method_comparison/cautions#3": "c0764eb4334882c8",
+    "guideline.chem.gmt_cannabis/instrumental#2": "d46a5192da9b1b56",
+    "guideline.chem.uvvis_drug_analysis/advantages#3": "5089f0ff755d4695"
+   }
+  },
+  {
+   "key": "swgdrug2024",
+   "locator": [
+    "sec:IIIB.3.1.2"
+   ],
+   "basis": "SWGDRUG Recommendations v8.2 (official PDF, 2024-06-27) re-read 2026-10-10; passage located and wording compared with the claim: IIIB.3.1.2 and IIIB.3.1.2.1-3 (a Category A technique may not give sufficient selectivity: resolution, sample complexity, low quantity)",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.method_comparison/limitations#3": "9427b807ee11192d",
+    "guideline.chem.method_comparison/factors#7": "e07bf631ffac8802"
+   }
+  },
+  {
+   "key": "swgdrug2024",
+   "locator": [
+    "sec:IIIB.3.3.2"
+   ],
+   "basis": "SWGDRUG Recommendations v8.2 (official PDF, 2024-06-27) re-read 2026-10-10; passage located and wording compared with the claim: IIIB.3.3.2 (a positive result needs comparison with reference material / external reference data or structural elucidation) with IIIB.3.3 (QC requirements)",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.method_comparison/factors#4": "46607fffc270a247",
+    "guideline.chem.gmt_cocaine/instrumental#1": "0620d6e6e2c95c3c",
+    "guideline.chem.gmt_phenylalkylamines/instrumental#4": "fd76572ec328a27a"
+   }
+  },
+  {
+   "key": "swgdrug2024",
+   "locator": [
+    "sec:IIIB.2.5",
+    "sec:IIIB.3.6"
+   ],
+   "basis": "SWGDRUG Recommendations v8.2 (official PDF, 2024-06-27) re-read 2026-10-10; passage located and wording compared with the claim: IIIB.2.5 and IIIB.3.6 (relevant limitations of the scheme are documented and reported as required)",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.method_comparison/cautions#7": "86e26c7b3fd3325e"
+   }
+  },
+  {
+   "key": "swgdrug2024",
+   "locator": [
+    "sec:IIIB.2.6",
+    "sec:IIIB.3.6"
+   ],
+   "basis": "SWGDRUG Recommendations v8.2 (official PDF, 2024-06-27) re-read 2026-10-10; passage located and wording compared with the claim: IIIB.2.6 (scheme comprises validated methods appropriate for the analyte) and IIIB.3.6",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.tlc_screening/cautions#4": "799108408fa66002"
+   }
+  },
+  {
+   "key": "swgdrug2024",
+   "locator": [
+    "sec:IIIB.3.2.1"
+   ],
+   "basis": "SWGDRUG Recommendations v8.2 (official PDF, 2024-06-27) re-read 2026-10-10; passage located and wording compared with the claim: IIIB.3.2.1 (high selectivity when the two Category B techniques exploit different chemical or physical properties, e.g. GC and LC)",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.method_comparison/advantages#5": "6f27de19883c5fd6"
+   }
+  },
+  {
+   "key": "swgdrug2024",
+   "locator": [
+    "sec:Introduction"
+   ],
+   "basis": "SWGDRUG Recommendations v8.2 (official PDF, 2024-06-27) re-read 2026-10-10; passage located and wording compared with the claim: Foreword/Introduction (the Recommendations are written for the analysis of seized drugs)",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.method_comparison/scope#1": "04a95ddc575a0457"
+   }
+  },
+  {
+   "key": "gmt_unodc_rapid_tests",
+   "locator": [
+    "pp:38"
+   ],
+   "basis": "Quiz explanation restates the card sentence that cites this UNODC manual with the page given in the card (card text carries the printed page; the page was read in the official PDF when the card was written, see REVIEW_GMT.md); no new claim",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.gmt_opioids/quiz#gmt.op.4": "16d28380af9bd673"
+   }
+  },
+  {
+   "key": "gmt_unodc_rapid_tests",
+   "locator": [
+    "pp:39-40"
+   ],
+   "basis": "Quiz explanation restates the card sentence that cites this UNODC manual with the page given in the card (card text carries the printed page; the page was read in the official PDF when the card was written, see REVIEW_GMT.md); no new claim",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.gmt_opioids/quiz#gmt.op.8": "2408b1ab540afe68"
+   }
+  },
+  {
+   "key": "gmt_unodc_rapid_tests",
+   "locator": [
+    "pp:43"
+   ],
+   "basis": "Quiz explanation restates the card sentence that cites this UNODC manual with the page given in the card (card text carries the printed page; the page was read in the official PDF when the card was written, see REVIEW_GMT.md); no new claim",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.gmt_cocaine/quiz#gmt.coc.1": "73cc952e9cb1c832"
+   }
+  },
+  {
+   "key": "gmt_unodc_rapid_tests",
+   "locator": [
+    "pp:42"
+   ],
+   "basis": "Quiz explanation restates the card sentence that cites this UNODC manual with the page given in the card (card text carries the printed page; the page was read in the official PDF when the card was written, see REVIEW_GMT.md); no new claim",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.gmt_cocaine/quiz#gmt.coc.4": "5e2109fff52a3b3b"
+   }
+  },
+  {
+   "key": "gmt_unodc_rapid_tests",
+   "locator": [
+    "pp:41-42"
+   ],
+   "basis": "Quiz explanation restates the card sentence that cites this UNODC manual with the page given in the card (card text carries the printed page; the page was read in the official PDF when the card was written, see REVIEW_GMT.md); no new claim",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.gmt_cannabis/quiz#gmt.can.2": "6ceadb3bfab3270c"
+   }
+  },
+  {
+   "key": "gmt_unodc_rapid_tests",
+   "locator": [
+    "pp:45"
+   ],
+   "basis": "Quiz explanation restates the card sentence that cites this UNODC manual with the page given in the card (card text carries the printed page; the page was read in the official PDF when the card was written, see REVIEW_GMT.md); no new claim",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.gmt_phenylalkylamines/quiz#gmt.pa.1": "15df6822a88c674c"
+   }
+  },
+  {
+   "key": "gmt_unodc_rapid_tests",
+   "locator": [
+    "pp:46"
+   ],
+   "basis": "Quiz explanation restates the card sentence that cites this UNODC manual with the page given in the card (card text carries the printed page; the page was read in the official PDF when the card was written, see REVIEW_GMT.md); no new claim",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.gmt_phenylalkylamines/quiz#gmt.pa.2": "60e15b087efb4451"
+   }
+  },
+  {
+   "key": "gmt_unodc_rapid_tests",
+   "locator": [
+    "pp:49"
+   ],
+   "basis": "Quiz explanation restates the card sentence that cites this UNODC manual with the page given in the card (card text carries the printed page; the page was read in the official PDF when the card was written, see REVIEW_GMT.md); no new claim",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.gmt_barbiturates/quiz#gmt.bar.1": "46ce721645d60468"
+   }
+  },
+  {
+   "key": "gmt_unodc_rapid_tests",
+   "locator": [
+    "pp:50"
+   ],
+   "basis": "Quiz explanation restates the card sentence that cites this UNODC manual with the page given in the card (card text carries the printed page; the page was read in the official PDF when the card was written, see REVIEW_GMT.md); no new claim",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.gmt_benzodiazepines/quiz#gmt.bzd.4": "e5443a4e225a3f05"
+   }
+  },
+  {
+   "key": "ich_q2r2_2023",
+   "locator": [
+    "sec:1.2"
+   ],
+   "basis": "ICH Q2(R2) official PDF (SHA-256 d935618f...) text re-read 2026-10-10; passage located and compared with the claim: section 1.2 Scope (release and stability testing of commercial drug substances and products; the forensic-application remark in the claim is our own caveat)",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.uvvis_drug_analysis/scope#3": "37e541d95d5ba5ee"
+   }
+  },
+  {
+   "key": "ich_q2r2_2023",
+   "locator": [
+    "sec:3.1.1",
+    "sec:3.1.1.1"
+   ],
+   "basis": "ICH Q2(R2) official PDF (SHA-256 d935618f...) text re-read 2026-10-10; passage located and compared with the claim: 3.1.1 and 3.1.1.1 (specificity shown by absence of interference from impurities, degradation products, matrices)",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.uvvis_drug_analysis/methods#2": "8ac8608773430227",
+    "guideline.chem.uvvis_drug_analysis/factors#4": "a585ae9bd5ae3020"
+   }
+  },
+  {
+   "key": "ich_q2r2_2023",
+   "locator": [
+    "sec:3.1.1"
+   ],
+   "basis": "ICH Q2(R2) official PDF (SHA-256 d935618f...) text re-read 2026-10-10; passage located and compared with the claim: 3.1.1 (where one procedure does not provide sufficient discrimination, a combination of two or more procedures is recommended)",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.uvvis_drug_analysis/limitations#4": "0cb528d7175680a1"
+   }
+  },
+  {
+   "key": "ich_q2r2_2023",
+   "locator": [
+    "sec:3.1.1",
+    "sec:3.1.1.2"
+   ],
+   "basis": "ICH Q2(R2) official PDF (SHA-256 d935618f...) text re-read 2026-10-10; passage located and compared with the claim: 3.1.1 and 3.1.1.2 (orthogonal procedure comparison; ICH words it 'can be verified', combination 'is recommended' where discrimination is insufficient)",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.uvvis_drug_analysis/cautions#2": "4cbe5da4c8f0b9b0"
+   }
+  },
+  {
+   "key": "ich_q2r2_2023",
+   "locator": [
+    "sec:3.2.2.2"
+   ],
+   "basis": "ICH Q2(R2) official PDF (SHA-256 d935618f...) text re-read 2026-10-10; passage located and compared with the claim: 3.2.2.2 Non-linear response (a suitable model or function is necessary)",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.uvvis_drug_analysis/methods#6": "bfbdf8bda1342324"
+   }
+  },
+  {
+   "key": "ich_q2r2_2023",
+   "locator": [
+    "sec:3.2.1"
+   ],
+   "basis": "ICH Q2(R2) official PDF (SHA-256 d935618f...) text re-read 2026-10-10; passage located and compared with the claim: 3.2.1 (range = interval with suitable response, accuracy and precision; working range may use dilutions)",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.uvvis_drug_analysis/factors#3": "f30378a7fe9dca37"
+   }
+  },
+  {
+   "key": "ich_q2r2_2023",
+   "locator": [
+    "sec:3.1",
+    "sec:3.2",
+    "sec:3.3"
+   ],
+   "basis": "ICH Q2(R2) official PDF (SHA-256 d935618f...) text re-read 2026-10-10; passage located and compared with the claim: chapters 3.1-3.3 (specificity/selectivity, range incl. lower range limits, accuracy, precision)",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.uvvis_drug_analysis/methods#8": "4641f29829eccf66",
+    "guideline.chem.co_cohb_determination/methods#9": "40f792154bff9e62"
+   }
+  },
+  {
+   "key": "gmt_lex_law813",
+   "locator": [
+    "art:4"
+   ],
+   "basis": "Law No. 813-I, lex.uz re-read 2026-10-10: Article 4 Lists I-IV",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.gmt_precursors/basis#1": "5dddeedda28fdecf",
+    "guideline.chem.gmt_uz_control_lists/basis#1": "4cbf84cd46b1b0de",
+    "guideline.chem.gmt_uz_control_lists/quiz#gmt.law.1": "71e18a6bbb8dca8a"
+   }
+  },
+  {
+   "key": "gmt_lex_law813",
+   "locator": [
+    "art:28"
+   ],
+   "basis": "Law No. 813-I, lex.uz/docs/86028 re-read 2026-10-10: Article 28 'use of narcotic drugs, psychotropic substances and precursors in expert activity is allowed in the procedure set by the Cabinet of Ministers'",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.gmt_uz_control_lists/basis#2": "937b5e3c7ea1b01e",
+    "guideline.chem.gmt_uz_control_lists/cautions#3": "1f9b195b7b5d3b5a"
+   }
+  },
+  {
+   "key": "gmt_lex_cm330",
+   "locator": [
+    "sec:annexes-4-7"
+   ],
+   "basis": "CM Resolution No. 330 of 12.11.2015, lex.uz/docs/2815342 (Russian consolidated text) re-read 2026-10-10: Annexes 4-7 are Lists I-IV; the text of Annexes 6 and 7 is marked 'as amended by Resolution No. 878 of 27 October 2018'",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.gmt_precursors/limitations#2": "d7060950183f05d2",
+    "guideline.chem.gmt_uz_control_lists/scope#1": "0d14b06225f87872",
+    "guideline.chem.gmt_uz_control_lists/quiz#gmt.law.2": "044e8507d7d42bc2"
+   }
+  },
+  {
+   "key": "gmt_pubchem_2026",
+   "locator": [
+    "sec:CID446220"
+   ],
+   "basis": "PubChem PUG REST property query 2026-10-10: CID 446220 MolecularFormula C17H21NO4 (cocaine) matches the claim",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.gmt_cocaine/basis#1": "e524045b76090001"
+   }
+  },
+  {
+   "key": "gmt_pubchem_2026",
+   "locator": [
+    "sec:CID4058",
+    "sec:CID20055107",
+    "sec:CID3345",
+    "sec:CID4095",
+    "sec:CID5288826",
+    "sec:CID5284371"
+   ],
+   "basis": "PubChem PUG REST property query 2026-10-10: molecular formulas of pethidine (CID 4058) C15H21NO2, trimeperidine (20055107) C17H25NO2, fentanyl (3345) C22H28N2O, methadone (4095) C21H27NO, morphine (5288826) C17H19NO3, codeine (5284371) C18H21NO3 match the claim",
+   "on": "2026-10-10",
+   "claims": {
+    "guideline.chem.gmt_opioids/basis#4": "d3c7f572b92e6b07"
+   }
+  }
+ ]
+}

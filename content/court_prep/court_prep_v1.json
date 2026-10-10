@@ -4450,9 +4450,9 @@
         "en": "That mass spectrometry is a Category A technique, yet identification depends on meeting predefined criteria [swgdrug2024, asb113_2023]."
       },
       "short_answer": {
-        "uz": "Mass-spektrometriya tuzilma haqida ma’lumot beradigan A toifasiga kiradi; GC-MS (gaz xromatografiyasi — mass-spektrometriya) kabi tutash usul ikkala qismning mezonlari bajarilsa, ikki usul sifatida qaralishi mumkin [swgdrug2024]. Biologik namunada identifikatsiya laboratoriya mezonlari bo‘yicha baholanadi [asb113_2023]; natija nazoratlar va noaniqlik bilan beriladi.",
-        "ru": "Масс-спектрометрия относится к категории A со структурной информацией; сопряжённый метод, как GC-MS (газовая хроматография — масс-спектрометрия), может считаться двумя методами, если выполнены критерии обоих [swgdrug2024]. В биологическом образце идентификация оценивается по критериям лаборатории [asb113_2023]; результат даётся с контролями и неопределённостью.",
-        "en": "Mass spectrometry is a structurally informative Category A technique; a hyphenated technique such as GC-MS (gas chromatography–mass spectrometry) may count as two techniques if criteria for both are met [swgdrug2024]. In biological specimens identification is judged against the laboratory's criteria [asb113_2023]; the result comes with controls and uncertainty."
+        "uz": "Mass-spektrometriya tuzilma haqida ma’lumot beradigan A toifasiga kiradi; GC-MS (gaz xromatografiyasi — mass-spektrometriya) kabi tutash usul ikkala qismning mezonlari bajarilsa, ikki usul sifatida qaralishi mumkin [swgdrug2024]. Biologik namunada identifikatsiya laboratoriya mezonlari bo‘yicha baholanadi (AQShdagi ixtiyoriy standart ANSI/ASB 113 ham shunday mezonlarni belgilaydi) [asb113_2023]; natija nazoratlar va noaniqlik bilan beriladi.",
+        "ru": "Масс-спектрометрия относится к категории A со структурной информацией; сопряжённый метод, как GC-MS (газовая хроматография — масс-спектрометрия), может считаться двумя методами, если выполнены критерии обоих [swgdrug2024]. В биологическом образце идентификация оценивается по критериям лаборатории (добровольный американский стандарт ANSI/ASB 113 также задаёт такие критерии) [asb113_2023]; результат даётся с контролями и неопределённостью.",
+        "en": "Mass spectrometry is a structurally informative Category A technique; a hyphenated technique such as GC-MS (gas chromatography–mass spectrometry) may count as two techniques if criteria for both are met [swgdrug2024]. In biological specimens identification is judged against the laboratory's criteria (the voluntary US standard ANSI/ASB 113 also sets such criteria) [asb113_2023]; the result comes with controls and uncertainty."
       },
       "prepare": {
         "documents": [
@@ -4694,9 +4694,9 @@
             "en": "Definitive conclusions are not drawn from presumptive tests [court_ilac_g19_2022]; identification relies on a structurally informative technique (Category A) or a combination of independent techniques [swgdrug2024]."
           },
           {
-            "uz": "SWGDRUG tavsiyalari musodara qilingan dori vositalari uchun; biologik namunalar uchun alohida mezonlar bor [swgdrug2024, asb113_2023].",
-            "ru": "Рекомендации SWGDRUG относятся к изъятым наркотикам; для биологических образцов действуют отдельные критерии [swgdrug2024, asb113_2023].",
-            "en": "SWGDRUG recommendations cover seized drugs; biological specimens have separate criteria [swgdrug2024, asb113_2023]."
+            "uz": "SWGDRUG tavsiyalari musodara qilingan dori vositalari uchun; biologik namunalar uchun alohida mezonlar bor (masalan, AQShdagi ANSI/ASB 113) [swgdrug2024, asb113_2023].",
+            "ru": "Рекомендации SWGDRUG относятся к изъятым наркотикам; для биологических образцов существуют отдельные критерии (например, ANSI/ASB 113, США) [swgdrug2024, asb113_2023].",
+            "en": "SWGDRUG recommendations cover seized drugs; biological specimens have separate criteria (for example the US ANSI/ASB 113) [swgdrug2024, asb113_2023]."
           }
         ],
         "pitfalls": [
@@ -5177,9 +5177,9 @@
         ],
         "explain": [
           {
-            "uz": "ASB 113 sud toksikologiyasida identifikatsiyaning ballarga asoslangan minimal mezonlarini belgilaydi; ASB 098 mass-spektral tahlilning qabul mezonlarini beradi va o‘zi identifikatsiya mezoni emas [asb113_2023, asb098_2023].",
-            "ru": "ASB 113 устанавливает минимальные балльные критерии идентификации в судебной токсикологии; ASB 098 задаёт критерии приемлемости масс-спектрального анализа и сам по себе не является критерием идентификации [asb113_2023, asb098_2023].",
-            "en": "ASB 113 sets minimum point-based identification criteria in forensic toxicology; ASB 098 gives acceptance criteria for mass-spectral analysis and is not itself an identification criterion [asb113_2023, asb098_2023]."
+            "uz": "AQShdagi ANSI/ASB 113 standarti sud toksikologiyasida identifikatsiyaning ballarga asoslangan minimal mezonlarini belgilaydi (ixtiyoriy standart; spirtlar, uglerod oksidi, sianid va metallarga taalluqli emas); ASB 098 mass-spektral tahlilning qabul mezonlarini beradi va o‘zi identifikatsiya mezoni emas [asb113_2023, asb098_2023].",
+            "ru": "Американский стандарт ANSI/ASB 113 устанавливает минимальные балльные критерии идентификации в судебной токсикологии (добровольный стандарт; не распространяется на спирты, оксид углерода, цианид и металлы); ASB 098 задаёт критерии приемлемости масс-спектрального анализа и сам по себе не является критерием идентификации [asb113_2023, asb098_2023].",
+            "en": "The US standard ANSI/ASB 113 sets minimum point-based identification criteria in forensic toxicology (a voluntary standard; it excludes alcohols, carbon monoxide, cyanide and metals); ASB 098 gives acceptance criteria for mass-spectral analysis and is not itself an identification criterion [asb113_2023, asb098_2023]."
           },
           {
             "uz": "Bitta usul yetarli darajada farqlay olmasa, ikki yoki undan ortiq usul birgalikda qo‘llanadi [ich_q2r2_2023].",
@@ -6089,9 +6089,9 @@
       ],
       "topic": "court.topic.interpretation",
       "short_answer": {
-        "uz": "Kimyoviy natija o‘zi o‘lim sababini isbotlamaydi: o‘limdan keyingi konsentratsiyalar turli o‘lim sabablarida bir xil oraliqda uchrashi mumkin [court_ketola2019, court_druid1997]. Hech bir konsentratsiya alohida talqin qilinmaydi [drummer2004]; o‘lim sababi haqidagi yakuniy xulosa sud-tibbiyot ekspertizasi bilan birga shakllanadi [skopp2010].",
-        "ru": "Химический результат сам по себе не доказывает причину смерти: одинаковые посмертные концентрации встречаются при разных причинах смерти [court_ketola2019, court_druid1997]. Ни одна концентрация не интерпретируется изолированно [drummer2004]; итоговый вывод о причине смерти формируется вместе с судебно-медицинской экспертизой [skopp2010].",
-        "en": "A chemical result alone does not prove cause of death: the same postmortem concentrations occur across different causes of death [court_ketola2019, court_druid1997]. No concentration is interpreted in isolation [drummer2004]; the final cause-of-death opinion is formed with the forensic pathology findings [skopp2010]."
+        "uz": "Kimyoviy natija o‘zi o‘lim sababini isbotlamaydi: o‘limdan keyingi konsentratsiyalar ma’lumotnomalarda turli o‘lim sabablari bo‘yicha, shu jumladan dori sabab bo‘lmagan o‘limlarning nazorat guruhi bilan, taqsimot sifatida keltiriladi [court_ketola2019, court_druid1997]. Hech bir konsentratsiya alohida talqin qilinmaydi [drummer2004]; o‘lim sababi haqidagi yakuniy xulosa sud-tibbiyot ekspertizasi bilan birga shakllanadi [skopp2010].",
+        "ru": "Химический результат сам по себе не доказывает причину смерти: посмертные концентрации в справочных работах приводятся как распределения по разным причинам смерти, включая контрольную группу смертей, не связанных с препаратами [court_ketola2019, court_druid1997]. Ни одна концентрация не интерпретируется изолированно [drummer2004]; итоговый вывод о причине смерти формируется вместе с судебно-медицинской экспертизой [skopp2010].",
+        "en": "A chemical result alone does not prove cause of death: reference studies report postmortem concentrations as distributions across causes of death, including a control group of deaths not caused by drugs [court_ketola2019, court_druid1997]. No concentration is interpreted in isolation [drummer2004]; the final cause-of-death opinion is formed with the forensic pathology findings [skopp2010]."
       },
       "followups": [
         {
@@ -6380,9 +6380,9 @@
         ],
         "explain": [
           {
-            "uz": "Taqsimlanish hajmi katta bo‘lgan asosli lipofil moddalar ayniqsa sezgir, lekin yagona emas [pelissier2003]; periferik qon va bir nechta namunani solishtirish bu ta’sirni baholashga yordam beradi [yarema2005].",
-            "ru": "Особенно подвержены основные липофильные вещества с большим объёмом распределения, но не только они [pelissier2003]; сравнение периферической крови и нескольких образцов помогает оценить эффект [yarema2005].",
-            "en": "Basic lipophilic drugs with a large volume of distribution are especially susceptible, but not the only ones [pelissier2003]; comparing peripheral blood with several specimens helps assess the effect [yarema2005]."
+            "uz": "Taqsimlanish hajmi katta bo‘lgan asosli lipofil moddalar ayniqsa sezgir, lekin yagona emas [pelissier2003]; turli joylardan olingan namunalarni solishtirish bu ta’sirni aniqlashga yordam beradi [pelissier2003]; eng maqbul namuna joyi — bog‘langan yoki qisqich bilan berkitilgan son venasi [yarema2005].",
+            "ru": "Особенно подвержены основные липофильные вещества с большим объёмом распределения, но не только они [pelissier2003]; сравнение образцов из разных мест взятия помогает выявить эффект [pelissier2003]; оптимальное место взятия — перевязанная или пережатая бедренная вена [yarema2005].",
+            "en": "Basic lipophilic drugs with a large volume of distribution are especially susceptible, but not the only ones [pelissier2003]; comparing specimens from different sampling sites helps detect the effect [pelissier2003]; the ideal sampling site is a ligated or clamped femoral vein [yarema2005]."
           }
         ],
         "pitfalls": [
@@ -6402,9 +6402,9 @@
       ],
       "topic": "court.topic.interpretation",
       "short_answer": {
-        "uz": "Bu mumkin: o‘limdan keyingi qayta taqsimlanish joyga va vaqtga bog‘liq bo‘lib, zahira a’zolardan modda chiqishi bilan bog‘liq [pelissier2003]. Ta’sirni periferik qon va bir nechta namunani solishtirib baholayman; aniq foizni ayta olmayman [yarema2005].",
-        "ru": "Это возможно: посмертное перераспределение зависит от места и времени и связано с выходом вещества из депо [pelissier2003]. Оцениваю эффект, сравнивая периферическую кровь и несколько образцов; точный процент назвать не могу [yarema2005].",
-        "en": "It is possible: postmortem redistribution is site- and time-dependent and linked to release from reservoirs [pelissier2003]. I assess it by comparing peripheral blood with other specimens; I cannot give an exact percentage [yarema2005]."
+        "uz": "Bu mumkin: o‘limdan keyingi qayta taqsimlanish joyga va vaqtga bog‘liq bo‘lib, zahira a’zolardan modda chiqishi bilan bog‘liq [pelissier2003]. Ta’sirni turli joylardan olingan namunalarni solishtirib baholayman [pelissier2003]; eng maqbul joy — bog‘langan yoki qisqich bilan berkitilgan son venasi [yarema2005]; aniq foizni ayta olmayman.",
+        "ru": "Это возможно: посмертное перераспределение зависит от места и времени и связано с выходом вещества из депо [pelissier2003]. Оцениваю эффект, сравнивая образцы из разных мест взятия [pelissier2003]; оптимальное место — перевязанная или пережатая бедренная вена [yarema2005]; точный процент назвать не могу.",
+        "en": "It is possible: postmortem redistribution is site- and time-dependent and linked to release from reservoirs [pelissier2003]. I assess it by comparing specimens from different sampling sites [pelissier2003]; the ideal site is a ligated or clamped femoral vein [yarema2005]; I cannot give an exact percentage."
       },
       "followups": [
         {

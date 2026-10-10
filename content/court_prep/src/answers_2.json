@@ -85,9 +85,9 @@
   },
   "court.q.interp_cause_of_death": {
     "short_answer": {
-      "uz": "Kimyoviy natija o‘zi o‘lim sababini isbotlamaydi: o‘limdan keyingi konsentratsiyalar turli o‘lim sabablarida bir xil oraliqda uchrashi mumkin [court_ketola2019, court_druid1997]. Hech bir konsentratsiya alohida talqin qilinmaydi [drummer2004]; o‘lim sababi haqidagi yakuniy xulosa sud-tibbiyot ekspertizasi bilan birga shakllanadi [skopp2010].",
-      "ru": "Химический результат сам по себе не доказывает причину смерти: одинаковые посмертные концентрации встречаются при разных причинах смерти [court_ketola2019, court_druid1997]. Ни одна концентрация не интерпретируется изолированно [drummer2004]; итоговый вывод о причине смерти формируется вместе с судебно-медицинской экспертизой [skopp2010].",
-      "en": "A chemical result alone does not prove cause of death: the same postmortem concentrations occur across different causes of death [court_ketola2019, court_druid1997]. No concentration is interpreted in isolation [drummer2004]; the final cause-of-death opinion is formed with the forensic pathology findings [skopp2010]."
+      "uz": "Kimyoviy natija o‘zi o‘lim sababini isbotlamaydi: o‘limdan keyingi konsentratsiyalar ma’lumotnomalarda turli o‘lim sabablari bo‘yicha, shu jumladan dori sabab bo‘lmagan o‘limlarning nazorat guruhi bilan, taqsimot sifatida keltiriladi [court_ketola2019, court_druid1997]. Hech bir konsentratsiya alohida talqin qilinmaydi [drummer2004]; o‘lim sababi haqidagi yakuniy xulosa sud-tibbiyot ekspertizasi bilan birga shakllanadi [skopp2010].",
+      "ru": "Химический результат сам по себе не доказывает причину смерти: посмертные концентрации в справочных работах приводятся как распределения по разным причинам смерти, включая контрольную группу смертей, не связанных с препаратами [court_ketola2019, court_druid1997]. Ни одна концентрация не интерпретируется изолированно [drummer2004]; итоговый вывод о причине смерти формируется вместе с судебно-медицинской экспертизой [skopp2010].",
+      "en": "A chemical result alone does not prove cause of death: reference studies report postmortem concentrations as distributions across causes of death, including a control group of deaths not caused by drugs [court_ketola2019, court_druid1997]. No concentration is interpreted in isolation [drummer2004]; the final cause-of-death opinion is formed with the forensic pathology findings [skopp2010]."
     },
     "followups": [
       {
@@ -110,9 +110,9 @@
   },
   "court.q.interp_redistribution": {
     "short_answer": {
-      "uz": "Bu mumkin: o‘limdan keyingi qayta taqsimlanish joyga va vaqtga bog‘liq bo‘lib, zahira a’zolardan modda chiqishi bilan bog‘liq [pelissier2003]. Ta’sirni periferik qon va bir nechta namunani solishtirib baholayman; aniq foizni ayta olmayman [yarema2005].",
-      "ru": "Это возможно: посмертное перераспределение зависит от места и времени и связано с выходом вещества из депо [pelissier2003]. Оцениваю эффект, сравнивая периферическую кровь и несколько образцов; точный процент назвать не могу [yarema2005].",
-      "en": "It is possible: postmortem redistribution is site- and time-dependent and linked to release from reservoirs [pelissier2003]. I assess it by comparing peripheral blood with other specimens; I cannot give an exact percentage [yarema2005]."
+      "uz": "Bu mumkin: o‘limdan keyingi qayta taqsimlanish joyga va vaqtga bog‘liq bo‘lib, zahira a’zolardan modda chiqishi bilan bog‘liq [pelissier2003]. Ta’sirni turli joylardan olingan namunalarni solishtirib baholayman [pelissier2003]; eng maqbul joy — bog‘langan yoki qisqich bilan berkitilgan son venasi [yarema2005]; aniq foizni ayta olmayman.",
+      "ru": "Это возможно: посмертное перераспределение зависит от места и времени и связано с выходом вещества из депо [pelissier2003]. Оцениваю эффект, сравнивая образцы из разных мест взятия [pelissier2003]; оптимальное место — перевязанная или пережатая бедренная вена [yarema2005]; точный процент назвать не могу.",
+      "en": "It is possible: postmortem redistribution is site- and time-dependent and linked to release from reservoirs [pelissier2003]. I assess it by comparing specimens from different sampling sites [pelissier2003]; the ideal site is a ligated or clamped femoral vein [yarema2005]; I cannot give an exact percentage."
     },
     "followups": [
       {
