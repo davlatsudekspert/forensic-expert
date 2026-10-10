@@ -30,6 +30,9 @@ class _LanguageScreenState extends ConsumerState<LanguageScreen> {
   @override
   void initState() {
     super.initState();
+    // Til ATAYLAB oldindan tanlanmaydi: O‘zbekistonda telefon ko‘pincha rus
+    // tilida bo‘ladi, lekin odam ilovani o‘zbekcha ishlatishi mumkin. Shuning
+    // uchun birinchi kirishda har doim foydalanuvchi o‘zi tanlaydi.
     _selected = ref.read(settingsControllerProvider).locale;
   }
 
