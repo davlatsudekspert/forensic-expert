@@ -256,6 +256,42 @@
    "status": "machine_draft"
   },
   {
+   "target_type": "screening_field",
+   "target_id": "scr-microcrystal-tests#analyte",
+   "source_lang": "en",
+   "source_text": "various (presumptive)",
+   "source_sha256": "a0b016f6305eea875a361b39355e1ab63e8737d7e013d9cb54a81f6c2d566299",
+   "text": {
+    "uz": "turli moddalar (taxminiy natija)",
+    "ru": "различные вещества (предварительный результат)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "screening_field",
+   "target_id": "scr-microcrystal-tests#specimen",
+   "source_lang": "en",
+   "source_text": "seized material or extract (see source)",
+   "source_sha256": "59f51ee73cd2cc4532ce148f0bed868131545f0e4b269cb0b447fa29ccc9301d",
+   "text": {
+    "uz": "musodara qilingan material yoki ekstrakt (manbaga qarang)",
+    "ru": "изъятый материал или экстракт (см. источник)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "screening_field",
+   "target_id": "scr-microcrystal-tests#principle",
+   "source_lang": "en",
+   "source_text": "microcrystalline (crystal-formation) reaction",
+   "source_sha256": "393755e49045316d41956ff730f44750e082539c816e10175539d25d77006435",
+   "text": {
+    "uz": "mikrokristalloskopik (kristall hosil bo‘lish) reaksiyasi",
+    "ru": "микрокристаллоскопическая (кристаллообразующая) реакция"
+   },
+   "status": "machine_draft"
+  },
+  {
    "target_type": "conflict_text",
    "target_id": "CF-VITREOUS-K-PMI#question",
    "source_lang": "en",

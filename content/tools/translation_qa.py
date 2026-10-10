@@ -391,6 +391,18 @@ def check_bundle(path: pathlib.Path, rep: Report):
         if t["status"] not in ("machine_draft",):
             rep._add(rid, f"status {t['status']} not allowed for automated drafts")
         rep.pair(rid, orig, t["text"], "en", t["lang"])
+    # Claims whose text is our own paraphrase of a licensed source: value.statement {en, uz, ru}
+    # (no value.excerpt — that key is reserved for open-licence quotations).
+    for c in b["claims"]:
+        st = c.get("value", {}).get("statement") if isinstance(c.get("value"), dict) else None
+        if not isinstance(st, dict):
+            continue
+        for lang in ("uz", "ru"):
+            rep.pair(f"bundle:claim_statement:{c['claim_id']}:{lang}", st.get("en"), st.get(lang), "en", lang)
+        ts = c["value"].get("translation_status", {})
+        for lang in ("uz", "ru"):
+            if ts.get(lang) != "machine_draft":
+                rep._add(f"bundle:claim_statement:{c['claim_id']}:{lang}", "translation_status must be machine_draft")
     for r in b.get("recipes", []):
         rid = r.get("recipe_id") or r.get("screening_id")
         for i, ing in enumerate(r.get("ingredients", [])):
