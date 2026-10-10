@@ -443,16 +443,26 @@ def bundle_ref(s: dict) -> Ref:
         level = "fulltext"
     elif typ == "journal_article":
         level = "abstract"
-    elif typ in ("legislation", "report"):
+    elif typ in ("legislation", "report", "guideline", "standard"):
+        # official documents whose own PDF was downloaded and read page by page
         level = "fulltext"
     elif typ == "database":
+        level = "fulltext"
+    elif typ == "book" and s.get("license_agreement_id"):
+        # teaching material supplied in full by its author under a recorded permission
         level = "fulltext"
     else:
         level = "scope_only"
     jur, kind = classify_body(" ".join([s.get("organization") or "", s.get("title") or "", s.get("official_url") or ""]))
     retracted_src = s.get("lifecycle") == "retracted"
+    # A DOI/ISBN is not the only way a reference can be identified: an official
+    # publisher URL, or a recorded permission from the author, identifies the
+    # document just as concretely for a book / guideline / standard / report.
+    document_identified = bool(s.get("official_url")) or bool(s.get("license_agreement_id"))
+    identified = bool(s.get("identifier_verified")) or (
+        typ in ("book", "guideline", "standard", "report", "legislation") and document_identified)
     return Ref(key=s["source_id"], type=typ, title=s.get("title") or "", scope_text=s.get("title") or "",
-               level=level, verified=bool(s.get("identifier_verified")) and not retracted_src,
+               level=level, verified=identified and not retracted_src,
                evidence_level=s.get("evidence_level"),
                pmid=s.get("pmid"), doi=s.get("doi"), note=note, jurisdiction=jur, body_kind=kind,
                teaching=False, pages_total=None)
@@ -480,7 +490,17 @@ def load_bundle_claims(root: pathlib.Path, retracted: set[str]):
         if structured:
             text = json.dumps(v, ensure_ascii=False, sort_keys=True)
         else:
+            # `excerpt` is a verbatim quote. Closed-licence sources may not be
+            # quoted, so those claims carry the app's own sourced wording in
+            # `value.statement`; it is audited as text but never counted as a
+            # quotation (the `no_excerpt` flag still applies below).
             text = v.get("excerpt") or ""
+            paraphrase = False
+            if not text.strip():
+                st = v.get("statement")
+                if isinstance(st, dict):
+                    text = st.get("en") or st.get("uz") or st.get("ru") or ""
+                    paraphrase = bool(text.strip())
         names = set()
         s = subs.get(c["entity_id"])
         if s:
@@ -491,6 +511,7 @@ def load_bundle_claims(root: pathlib.Path, retracted: set[str]):
         claims.append(Claim(c["claim_id"], "bundle", c["entity_id"], text, text, srcs,
                             {"field": c["field"], "structured": structured, "names": sorted(names),
                              "section": v.get("section"), "items": v.get("items") or [], "scope_note": v.get("scope_note"), "claim_evidence_level": c["evidence_level"],
+                             "paraphrase": paraphrase if not structured else False,
                              "domain": c.get("domain")}))
     return claims, refs
 
@@ -599,6 +620,10 @@ def evaluate(claim: Claim, refs: dict[str, Ref], teaching_pages: dict[str, int])
     if claim.corpus == "bundle" and not claim.extra.get("structured"):
         ex = claim.text
         names = list(claim.extra.get("names") or []) + list(claim.extra.get("items") or [])
+        if claim.extra.get("paraphrase"):
+            # sourced wording of our own: the passage itself may not be quoted
+            # (closed licence), so the reader is told it is not a quotation
+            flags.append("paraphrase_not_quoted")
         if not ex.strip():
             flags.append("no_excerpt")          # section locator only, passage not quoted
         elif names and not entity_named(ex, names) and claim.extra.get("field") in SUBJECT_FIELDS:

@@ -10,18 +10,18 @@ Verdict = `reviewed` verdict if a ledger entry matches the claim text, otherwise
 |---|---|---|---|---|
 | UNSUPPORTED | 1 | 0 | 0 | 1 |
 | SCOPE_MISMATCH | 0 | 0 | 0 | 0 |
-| ABSTRACT_ONLY | 0 | 167 | 398 | 565 |
-| NO_LOCATOR | 0 | 0 | 17 | 17 |
-| PARTIAL | 9 | 38 | 20 | 67 |
-| SUPPORTED | 487 | 210 | 450 | 1147 |
-| **claims** | 497 | 415 | 885 | 1797 |
+| ABSTRACT_ONLY | 0 | 167 | 510 | 677 |
+| NO_LOCATOR | 0 | 0 | 19 | 19 |
+| PARTIAL | 9 | 38 | 21 | 68 |
+| SUPPORTED | 813 | 210 | 480 | 1503 |
+| **claims** | 823 | 415 | 1030 | 2268 |
 
-Automatic verdicts only (before human review overrides): UNSUPPORTED 1, SCOPE_MISMATCH 3, ABSTRACT_ONLY 563, NO_LOCATOR 17, PARTIAL 66, SUPPORTED 1147.
-Reviewed claims (ledger, text hash matches): 42; stale review entries: 0; orphan entries: 0.
+Automatic verdicts only (before human review overrides): UNSUPPORTED 1, SCOPE_MISMATCH 7, ABSTRACT_ONLY 675, NO_LOCATOR 19, PARTIAL 67, SUPPORTED 1499.
+Reviewed claims (ledger, text hash matches): 46; stale review entries: 0; orphan entries: 0.
 
 Baseline (before fixes): UNSUPPORTED 1, SCOPE_MISMATCH 10, ABSTRACT_ONLY 569, NO_LOCATOR 76, PARTIAL 56, SUPPORTED 1085.
 
-General-rule wording backed only by an abstract (`ABSTRACT_ONLY` + `general_rule`), not yet reviewed: 0 (reviewed: 15).
+General-rule wording backed only by an abstract (`ABSTRACT_ONLY` + `general_rule`), not yet reviewed: 6 (reviewed: 15).
 
 ## Review priority lists
 
@@ -35,14 +35,23 @@ General-rule wording backed only by an abstract (`ABSTRACT_ONLY` + `general_rule
 
 _none_
 
-### ABSTRACT_ONLY + general_rule (0)
-
-_none_
-
-### NO_LOCATOR (17)
+### ABSTRACT_ONLY + general_rule (6)
 
 | Claim | Sources | Reasons | Text |
 |---|---|---|---|
+| `guideline.bio.abo_stains/basis#2` | singh1980 | source checked at abstract / bibliographic level; no concrete locator | Saliva ajratuvchisi har doim ham siydik ajratuvchisi bo‘lavermaydi [singh1980]. |
+| `guideline.bio.semen/basis#2` | peonim2013, boward2013 | source checked at abstract / bibliographic level; no concrete locator | Mikroskopda spermatozoid topish qiyosiy tadqiqotlarda «oltin standart» sifatida olinadi [peonim2013]; ammo spe |
+| `guideline.bio.semen/interpretation#1` | peonim2013 | source checked at abstract / bibliographic level; no concrete locator | 2450 ta zo‘rlash holati bo‘yicha vaginal surtmada spermatozoid mikroskopiyasi «oltin standart» deb olinganda s |
+| `guideline.bio.saliva/interpretation#4` | wornes2018 | source checked at abstract / bibliographic level; no concrete locator | Har qanday so‘lak testining manfiy natijasi ham so‘lak yo‘qligini isbotlamaydi: aralash dog‘larda qon, siydik  |
+| `guideline.bio.urine_sweat_feces/limitations#1` | barni2006, pang2008, old2009 | source checked at abstract / bibliographic level; no concrete locator | • Amilaza: ter va siydikda ham alfa-amilaza faolligi bor [barni2006] — amilaza testi musbat bo‘lishi so‘lakni  |
+| `guideline.bio.urine_sweat_feces/limitations#4` | singh1980 | source checked at abstract / bibliographic level; no concrete locator | Saliva ajratuvchisi har doim siydik ajratuvchisi bo‘lavermaydi, shuning uchun siydik dog‘idagi guruh natijasi  |
+
+### NO_LOCATOR (19)
+
+| Claim | Sources | Reasons | Text |
+|---|---|---|---|
+| `guideline.bio.urine_sweat_feces/cautions#1` | nistir7928 | source read in full but citation names no concrete locator | Siydik, ter va ayniqsa najas dog‘lari yuqumli material sifatida qaraladi — shaxsiy himoya vositalarini qo‘llan |
+| `guideline.bio.evidence_handling/methods#2` | nistir7928 | source read in full but citation names no concrete locator | • Polietilen paketlar saqlash uchun tavsiya etilmaydi (bakteriya va mog‘or o‘sishi); ho‘l buyum vaqtincha suv  |
 | `guideline.chem.gmt_analysis_scheme/reactions#1` | gmt_unodc_rapid_tests | source read in full but citation names no concrete locator | Dastlabki skrining uchun guruh reaktivlari ishlatiladi: Markis (opiatlar, amfetaminlar), Mekke, kobalt tiotsia |
 | `guideline.chem.gmt_analysis_scheme/reactions#2` | gmt_unodc_rapid_tests | source read in full but citation names no concrete locator | Ijobiy natija faqat moddaning bo‘lishi «mumkinligini» bildiradi: o‘xshash rangni boshqa nazoratdagi yoki nazor |
 | `guideline.chem.gmt_analysis_scheme/limitations#3` | gmt_unodc_rapid_tests | source read in full but citation names no concrete locator | • Rangli test natijasi dastlabki: ijobiy natijada material tasdiqlovchi tahlil uchun vakolatli laboratoriyaga  |
@@ -83,6 +92,7 @@ _none_
 | gmt_lex_law813 | legislation | UZ | Uzbekistan Law No. 813-I on narcotic drugs (lex.uz): binding in Uzbekistan only | only in UZ | fulltext | 7 | - |
 | gmt_unodc_rapid_tests | guideline | INT | UNODC manual ST/NAR/13/Rev.1 (rapid tests): UN guidance, non-binding | nowhere (voluntary) | fulltext | 35 | - |
 | ich_q2r2_2023 | guideline | INT | ICH Q2(R2): pharmaceutical analytical validation guideline; scope = release/stability testing of drug substances and products; forensic use is a laboratory decision | nowhere (voluntary) | fulltext | 27 | - |
+| nistir7928 | report | UNKNOWN | unclassified | unknown | fulltext | 29 | - |
 | swgdrug2024 | guideline | INT-US-led | SWGDRUG Recommendations v8.2: international working group sponsored by the US DEA/ONDCP; recommendations for SEIZED drugs only; voluntary | nowhere (voluntary) | fulltext | 63 | - |
 
 ## Evidence levels (A-E) in the bundle
@@ -91,7 +101,9 @@ Levels grade the PUBLICATION TYPE only; the criterion is in code, not in the dat
 
 | source type / tier / level | sources |
 |---|---|
+| book/tier3/C | 2 |
 | database/tier2/C | 201 |
+| guideline/tier1/B | 2 |
 | journal_article/tier2/A | 8 |
 | journal_article/tier2/B | 227 |
 | journal_article/tier2/C | 45 |
@@ -202,6 +214,151 @@ Sources whose level is ungrounded or inconsistent with their own title / type:
 | `guideline.path.diatom_test/alternatives#3` | bortolotti2004 | - | ABSTRACT_ONLY |  |
 | `guideline.path.diatom_test/alternatives#4` | alnajjar2026 | - | ABSTRACT_ONLY |  |
 | `guideline.path.diatom_test/alternatives#5` | tyr2025 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.blood_presumptive/basis#1` | petersen2014<br>barni2007 | -<br>- | ✔ SUPPORTED |  |
+| `guideline.bio.blood_presumptive/methods#1` | cox1991 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.blood_presumptive/methods#2` | vennemann2014 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.blood_presumptive/methods#3` | cox1991<br>vennemann2014 | -<br>- | ABSTRACT_ONLY |  |
+| `guideline.bio.blood_presumptive/methods#4` | cox1991 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.blood_presumptive/methods#5` | johnston2008 | - | ✔ SUPPORTED |  |
+| `guideline.bio.blood_presumptive/methods#6` | johnston2008 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.blood_presumptive/methods#7` | barni2007 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.blood_presumptive/limitations#1` | petersen2014 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.blood_presumptive/limitations#2` | stroud2023 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.blood_presumptive/limitations#3` | gertz1983 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.blood_presumptive/limitations#4` | durdle2015 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.blood_presumptive/limitations#5` | vennemann2014 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.blood_presumptive/limitations#6` | casali2020 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.blood_presumptive/limitations#7` | russell2025 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.blood_presumptive/interpretation#1` | johnston2008<br>casali2020<br>barni2007 | -<br>-<br>- | ✔ SUPPORTED | numbers_or_norms, prescriptive |
+| `guideline.bio.blood_presumptive/cautions#1` | chappell2016 | - | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.blood_presumptive/cautions#2` | cox1991<br>vennemann2014<br>johnston2008<br>barni2007 | -<br>-<br>-<br>- | ✔ SUPPORTED |  |
+| `guideline.bio.blood_presumptive/cautions#3` | cox1991 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.blood_presumptive/cautions#4` | nistir7928 | pp:5 | SUPPORTED |  |
+| `guideline.bio.blood_presumptive/alternatives#1` | horjan2016<br>schweers2008<br>johnston2008 | -<br>-<br>- | ABSTRACT_ONLY |  |
+| `guideline.bio.blood_presumptive/alternatives#2` | tumosa1996 | - | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.blood_species/basis#1` | ouchterlony1949 | - | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.blood_species/basis#2` | elguindi1972<br>ryndin2000<br>olkhovik1988 | -<br>-<br>- | ABSTRACT_ONLY |  |
+| `guideline.bio.blood_species/methods#1` | horjan2016 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.blood_species/methods#2` | schweers2008<br>horjan2016 | -<br>- | ABSTRACT_ONLY |  |
+| `guideline.bio.blood_species/methods#3` | johnston2008 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.blood_species/methods#4` | bardan2024 | - | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.blood_species/methods#5` | bardan2024 | - | ABSTRACT_ONLY | numbers_or_norms, prescriptive |
+| `guideline.bio.blood_species/interpretation#1` | johnston2008<br>horjan2016 | -<br>- | ABSTRACT_ONLY |  |
+| `guideline.bio.blood_species/limitations#1` | horjan2016 | - | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.blood_species/limitations#2` | stroud2023 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.blood_species/limitations#3` | durdle2015 | - | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.blood_species/limitations#4` | horjan2016 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.blood_species/limitations#5` | bardan2024 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.blood_species/cautions#1` | nistir7928 | pp:5 | SUPPORTED |  |
+| `guideline.bio.blood_species/cautions#2` | old2009 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.abo_stains/basis#1` | bassler1986<br>singh1980 | -<br>- | ABSTRACT_ONLY |  |
+| `guideline.bio.abo_stains/basis#2` | singh1980 | - | ABSTRACT_ONLY | general_rule |
+| `guideline.bio.abo_stains/basis#3` | gaensslen1986<br>lee1988<br>singh1980 | -<br>-<br>- | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.abo_stains/methods#1` | gaensslen1986 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.abo_stains/methods#2` | gaensslen1986 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.abo_stains/methods#3` | kobayashi1999 | - | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.abo_stains/methods#4` | lee1988 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.abo_stains/methods#5` | singh1980 | - | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.abo_stains/interpretation#1` | kobayashi1999 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.abo_stains/interpretation#2` | lee1988 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.abo_stains/interpretation#3` | bassler1986 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.abo_stains/limitations#1` | kobayashi1999 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.abo_stains/limitations#2` | lee1988<br>bassler1986 | -<br>- | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.abo_stains/limitations#3` | desoyza1991 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.abo_stains/cautions#1` | nistir7928 | pp:5 | SUPPORTED |  |
+| `guideline.bio.semen/basis#1` | peonim2013<br>hochmeister1999<br>boward2013<br>pang2007 | -<br>-<br>-<br>- | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.semen/basis#2` | peonim2013<br>boward2013 | -<br>- | ABSTRACT_ONLY | general_rule, numbers_or_norms |
+| `guideline.bio.semen/methods#1` | lewis2013 | - | ABSTRACT_ONLY | numbers_or_norms, prescriptive |
+| `guideline.bio.semen/methods#2` | vennemann2014 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.semen/methods#3` | leubitz1984 | - | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.semen/methods#4` | hochmeister1999 | - | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.semen/methods#5` | boward2013<br>pang2007 | -<br>- | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.semen/interpretation#1` | peonim2013 | - | ABSTRACT_ONLY | general_rule, numbers_or_norms |
+| `guideline.bio.semen/interpretation#2` | romero2011 | - | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.semen/interpretation#3` | hobbs2010 | - | ABSTRACT_ONLY | numbers_or_norms, prescriptive |
+| `guideline.bio.semen/interpretation#4` | boward2013 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.semen/limitations#1` | lewis2013<br>vennemann2014 | -<br>- | ABSTRACT_ONLY |  |
+| `guideline.bio.semen/limitations#2` | bardan2024 | - | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.semen/limitations#3` | hobbs2010 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.semen/limitations#4` | durdle2015 | - | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.semen/limitations#5` | stroud2023<br>pang2007 | -<br>- | ABSTRACT_ONLY |  |
+| `guideline.bio.semen/limitations#6` | boward2013 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.semen/alternatives#1` | kobayashi1999<br>lee1988 | -<br>- | ABSTRACT_ONLY |  |
+| `guideline.bio.semen/alternatives#2` | bassler1986 | - | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.semen/cautions#1` | nistir7928 | pp:5 | SUPPORTED |  |
+| `guideline.bio.semen/cautions#2` | lewis2013 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.saliva/basis#1` | old2009<br>ohta2019 | -<br>- | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.saliva/basis#2` | barni2006 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.saliva/basis#3` | ohta2019 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.saliva/methods#1` | wornes2018 | - | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.saliva/methods#2` | old2009 | - | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.saliva/methods#3` | casey2010 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.saliva/methods#4` | pang2008 | - | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.saliva/methods#5` | old2009<br>pang2008 | -<br>- | ABSTRACT_ONLY | numbers_or_norms, prescriptive |
+| `guideline.bio.saliva/methods#6` | vennemann2014 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.saliva/methods#7` | barni2006 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.saliva/interpretation#1` | barni2006<br>wornes2018 | -<br>- | ABSTRACT_ONLY |  |
+| `guideline.bio.saliva/interpretation#2` | pang2008 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.saliva/interpretation#3` | ohta2019 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.saliva/interpretation#4` | wornes2018 | - | ABSTRACT_ONLY | general_rule |
+| `guideline.bio.saliva/limitations#1` | durdle2015 | - | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.saliva/limitations#2` | ohta2019 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.saliva/limitations#3` | stroud2023 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.saliva/cautions#1` | nistir7928 | pp:5 | SUPPORTED |  |
+| `guideline.bio.saliva/cautions#2` | old2009<br>vennemann2014 | -<br>- | ABSTRACT_ONLY |  |
+| `guideline.bio.saliva/cautions#3` | vennemann2014 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.urine_sweat_feces/basis#1` | akutsu2010<br>tsutsumi1988<br>sagawa2003<br>sakurada2010 | -<br>-<br>-<br>- | ABSTRACT_ONLY |  |
+| `guideline.bio.urine_sweat_feces/basis#2` | virkler2009 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.urine_sweat_feces/methods#1` | akutsu2010 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.urine_sweat_feces/methods#2` | akutsu2010 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.urine_sweat_feces/methods#3` | tsutsumi1988 | - | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.urine_sweat_feces/methods#4` | sagawa2003 | - | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.urine_sweat_feces/methods#5` | sakurada2010 | - | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.urine_sweat_feces/limitations#1` | barni2006<br>pang2008<br>old2009 | -<br>-<br>- | ABSTRACT_ONLY | general_rule |
+| `guideline.bio.urine_sweat_feces/limitations#2` | tsutsumi1988 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.urine_sweat_feces/limitations#3` | bassler1986<br>lee1988 | -<br>- | ABSTRACT_ONLY |  |
+| `guideline.bio.urine_sweat_feces/limitations#4` | singh1980 | - | ABSTRACT_ONLY | general_rule |
+| `guideline.bio.urine_sweat_feces/interpretation#1` | akutsu2010<br>tsutsumi1988 | -<br>- | ABSTRACT_ONLY |  |
+| `guideline.bio.urine_sweat_feces/interpretation#2` | pang2007<br>pang2008 | -<br>- | ABSTRACT_ONLY |  |
+| `guideline.bio.urine_sweat_feces/cautions#1` | nistir7928 | - | NO_LOCATOR |  |
+| `guideline.bio.hair/basis#1` | houck2005 | - | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.hair/basis#2` | tridico2014 | - | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.hair/basis#3` | koch2020<br>linch2001 | -<br>- | ABSTRACT_ONLY |  |
+| `guideline.bio.hair/methods#1` | rowe2001<br>houck2005 | -<br>- | ABSTRACT_ONLY |  |
+| `guideline.bio.hair/methods#2` | houck2002 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.hair/interpretation#1` | rowe2001 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.hair/interpretation#2` | houck2002<br>koch2021 | -<br>- | ABSTRACT_ONLY |  |
+| `guideline.bio.hair/interpretation#3` | koch2020 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.hair/limitations#1` | koch2021 | - | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.hair/limitations#2` | rowe2001 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.hair/limitations#3` | tridico2014 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.hair/limitations#4` | kobayashi1999 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.hair/cautions#1` | nistir7928 | pp:15 | SUPPORTED |  |
+| `guideline.bio.hair/cautions#2` | rowe2001<br>houck2005 | -<br>- | ABSTRACT_ONLY |  |
+| `guideline.bio.evidence_handling/basis#1` | nistir7928 | pp:10-11 | SUPPORTED |  |
+| `guideline.bio.evidence_handling/basis#2` | balbudhe2026 | - | ABSTRACT_ONLY | numbers_or_norms |
+| `guideline.bio.evidence_handling/basis#3` | sahayaselvan2026 | - | ABSTRACT_ONLY |  |
+| `guideline.bio.evidence_handling/basis#4` | nistir7928 | pp:24 | SUPPORTED |  |
+| `guideline.bio.evidence_handling/methods#1` | nistir7928 | pp:15 | SUPPORTED |  |
+| `guideline.bio.evidence_handling/methods#2` | nistir7928 | - | NO_LOCATOR | numbers_or_norms |
+| `guideline.bio.evidence_handling/methods#3` | nistir7928 | pp:9 | SUPPORTED |  |
+| `guideline.bio.evidence_handling/methods#4` | nistir7928 | pp:15 | SUPPORTED | numbers_or_norms, prescriptive |
+| `guideline.bio.evidence_handling/methods#5` | nistir7928 | pp:24 | SUPPORTED | numbers_or_norms, prescriptive |
+| `guideline.bio.evidence_handling/methods#6` | nistir7928 | pp:32 | SUPPORTED | numbers_or_norms, prescriptive |
+| `guideline.bio.evidence_handling/factors#1` | nistir7928 | pp:16 | SUPPORTED | numbers_or_norms |
+| `guideline.bio.evidence_handling/factors#2` | nistir7928 | pp:16 | SUPPORTED | numbers_or_norms |
+| `guideline.bio.evidence_handling/factors#3` | nistir7928 | pp:18 | SUPPORTED |  |
+| `guideline.bio.evidence_handling/factors#4` | nistir7928 | pp:17 | SUPPORTED | numbers_or_norms |
+| `guideline.bio.evidence_handling/factors#5` | nistir7928 | pp:12 | SUPPORTED |  |
+| `guideline.bio.evidence_handling/factors#6` | nistir7928 | pp:16 | SUPPORTED |  |
+| `guideline.bio.evidence_handling/factors#7` | nistir7928 | pp:15-16 | SUPPORTED | numbers_or_norms, prescriptive |
+| `guideline.bio.evidence_handling/interpretation#1` | nistir7928 | pp:25 | SUPPORTED | numbers_or_norms, prescriptive |
+| `guideline.bio.evidence_handling/interpretation#2` | nistir7928 | pp:24-25 | SUPPORTED | numbers_or_norms, prescriptive |
+| `guideline.bio.evidence_handling/interpretation#3` | nistir7928 | pp:32 | SUPPORTED | numbers_or_norms, prescriptive |
+| `guideline.bio.evidence_handling/cautions#1` | nistir7928 | pp:5 | SUPPORTED |  |
+| `guideline.bio.evidence_handling/cautions#2` | nistir7928 | pp:6 | SUPPORTED | numbers_or_norms |
+| `guideline.bio.evidence_handling/cautions#3` | nistir7928 | pp:6 | SUPPORTED |  |
+| `guideline.bio.evidence_handling/cautions#4` | nistir7928<br>balbudhe2026 | pp:15<br>- | PARTIAL | numbers_or_norms |
 | `guideline.anthro.stature_long_bones/basis#1` | pearson1899 | - | ABSTRACT_ONLY | numbers_or_norms |
 | `guideline.anthro.stature_long_bones/basis#2` | trotter_gleser1952<br>trotter_gleser1958 | -<br>- | ABSTRACT_ONLY | numbers_or_norms |
 | `guideline.anthro.stature_long_bones/basis#3` | konigsberg1998 | - | ABSTRACT_ONLY |  |
@@ -1934,4 +2091,330 @@ Sources whose level is ungrounded or inconsistent with their own title / type:
 | `C-SPEC-BILE-USE-P7` | SRC-PMC11011420 | ABSTRACT | SUPPORTED |  |
 | `C-SPEC-URINE-LIMITATION-P7` | SRC-PMC8444253 | DISCUSS | SUPPORTED |  |
 | `C-SPEC-BLOOD-PMR-P7` | SRC-PMC11790690 | ABSTRACT | SUPPORTED |  |
+| `C-SM-MORPHINE-COLOUR_TEST-01` | SRC-UNODC-STNAR-13 | printed p. 38 (PDF p. 48) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-CODEINE-COLOUR_TEST-01` | SRC-UNODC-STNAR-13 | printed p. 38 (PDF p. 48) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-HEROIN-COLOUR_TEST-01` | SRC-UNODC-STNAR-13 | printed p. 38 (PDF p. 48) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-MORPHINE-COLOUR_TEST-02` | SRC-UNODC-STNAR-13 | printed p. 39 (PDF p. 49) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-CODEINE-COLOUR_TEST-02` | SRC-UNODC-STNAR-13 | printed p. 39 (PDF p. 49) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-HEROIN-COLOUR_TEST-02` | SRC-UNODC-STNAR-13 | printed p. 39 (PDF p. 49) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-HEROIN-COLOUR_TEST-03` | SRC-UNODC-STNAR-13 | printed pp. 39–40 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-MORPHINE-COLOUR_TEST-03` | SRC-UNODC-STNAR-13 | printed pp. 39–40 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-CODEINE-COLOUR_TEST-03` | SRC-UNODC-STNAR-13 | printed pp. 39–40 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-MORPHINE-COLOUR_TEST-04` | SRC-UNODC-STNAR-13 | printed p. 40 (PDF p. 50) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-MORPHINE-COLOUR_TEST-05` | SRC-YULDASHEV-GMT-2024 | PDF p. 24 (printed p. 23) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-MORPHINE-COLOUR_TEST-06` | SRC-YULDASHEV-GMT-2024 | PDF p. 24 (printed p. 23) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-CODEINE-COLOUR_TEST-04` | SRC-YULDASHEV-GMT-2024 | PDF p. 28 (printed p. 27) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-HEROIN-COLOUR_TEST-04` | SRC-YULDASHEV-GMT-2024 | PDF p. 37 (printed p. 36) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-MORPHINE-COLOUR_TEST-07` | SRC-YULDASHEV-GMT-2024 | PDF p. 25 (printed p. 24) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-CODEINE-COLOUR_TEST-05` | SRC-YULDASHEV-GMT-2024 | PDF p. 27 (printed p. 26) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-CODEINE-COLOUR_TEST-06` | SRC-YULDASHEV-GMT-2024 | PDF p. 28 (printed p. 27) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-HEROIN-COLOUR_TEST-05` | SRC-YULDASHEV-GMT-2024 | PDF p. 37 (printed p. 36) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-HEROIN-COLOUR_TEST-06` | SRC-YULDASHEV-GMT-2024 | PDF p. 37 (printed p. 36) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-MORPHINE-MICROCRYSTAL_TEST-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 25 (printed p. 24) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-MORPHINE-MICROCRYSTAL_TEST-02` | SRC-YULDASHEV-GMT-2024 | PDF p. 29 (printed p. 28) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-CODEINE-MICROCRYSTAL_TEST-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 29 (printed p. 28) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-HEROIN-MICROCRYSTAL_TEST-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 37 (printed p. 36) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-HEROIN-ODOUR_TEST-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 37 (printed p. 36) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-MORPHINE-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 24 (printed p. 23), Table 2 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-CODEINE-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 24 (printed p. 23), Table 2 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-HEROIN-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 24 (printed p. 23), Table 2 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-MORPHINE-TLC_SYSTEM-02` | SRC-YULDASHEV-GMT-2024 | PDF p. 33 (printed p. 32), Table 3 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-CODEINE-TLC_SYSTEM-02` | SRC-YULDASHEV-GMT-2024 | PDF p. 33 (printed p. 32), Table 3 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-HEROIN-TLC_SYSTEM-02` | SRC-YULDASHEV-GMT-2024 | PDF p. 33 (printed p. 32), Table 3 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-MORPHINE-TLC_SYSTEM-03` | SRC-YULDASHEV-GMT-2024 | PDF p. 33 (printed p. 32), Table 3 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-CODEINE-TLC_SYSTEM-03` | SRC-YULDASHEV-GMT-2024 | PDF p. 33 (printed p. 32), Table 3 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-HEROIN-TLC_SYSTEM-03` | SRC-YULDASHEV-GMT-2024 | PDF p. 33 (printed p. 32), Table 3 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-MORPHINE-TLC_SYSTEM-04` | SRC-YULDASHEV-GMT-2024 | PDF p. 25 (printed p. 24) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-CODEINE-TLC_SYSTEM-04` | SRC-YULDASHEV-GMT-2024 | PDF p. 28 (printed p. 27) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-MORPHINE-UV_SPECTRUM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 25 (printed p. 24) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-CODEINE-UV_SPECTRUM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 28 (printed p. 27) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-HEROIN-UV_SPECTRUM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 37 (printed p. 36) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-MORPHINE-PHOTOMETRIC_ASSAY-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 26 (printed p. 25) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-HEROIN-MELTING_POINT-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 36 (printed p. 35) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-CODEINE-MELTING_POINT-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 26 (printed p. 25) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-HEROIN-IMMUNOASSAY_SCREEN-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 38 (printed p. 37) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-MORPHINE-IMMUNOASSAY_SCREEN-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 38 (printed p. 37) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-6-MAM-IMMUNOASSAY_SCREEN-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 38 (printed p. 37) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-HEROIN-CONFIRMATORY_METHOD-01` | SRC-YULDASHEV-GMT-2024 | PDF pp. 37–38 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-MORPHINE-CONFIRMATORY_METHOD-01` | SRC-YULDASHEV-GMT-2024 | PDF pp. 37–38 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-6-MAM-CONFIRMATORY_METHOD-01` | SRC-YULDASHEV-GMT-2024 | PDF pp. 37–38 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-MORPHINE-CONFIRMATORY_METHOD-02` | SRC-YULDASHEV-GMT-2024 | PDF pp. 26–29 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-CODEINE-CONFIRMATORY_METHOD-01` | SRC-YULDASHEV-GMT-2024 | PDF pp. 26–29 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-METHADONE-COLOUR_TEST-01` | SRC-YULDASHEV-GMT-2024 | PDF pp. 43–44 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-METHADONE-COLOUR_TEST-02` | SRC-YULDASHEV-GMT-2024 | PDF p. 44 (printed p. 43) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-METHADONE-COLOUR_TEST-03` | SRC-YULDASHEV-GMT-2024 | PDF p. 44 (printed p. 43) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-METHADONE-COLOUR_TEST-04` | SRC-YULDASHEV-GMT-2024 | PDF p. 44 (printed p. 43) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-METHADONE-COLOUR_TEST-05` | SRC-YULDASHEV-GMT-2024 | PDF p. 44 (printed p. 43) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-METHADONE-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 44 (printed p. 43) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-METHADONE-UV_SPECTRUM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 44 (printed p. 43) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-FENTANYL-COLOUR_TEST-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 47 (printed p. 46) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-FENTANYL-COLOUR_TEST-02` | SRC-YULDASHEV-GMT-2024 | PDF p. 47 (printed p. 46) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-FENTANYL-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF pp. 47–48 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-FENTANYL-UV_SPECTRUM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 48 (printed p. 47) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-FENTANYL-CONFIRMATORY_METHOD-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 48 (printed p. 47) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-COCAINE-COLOUR_TEST-01` | SRC-UNODC-STNAR-13 | printed p. 42 (PDF p. 52) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-COCAINE-COLOUR_TEST-02` | SRC-UNODC-STNAR-13 | printed p. 43 (PDF p. 53) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-COCAINE-ODOUR_TEST-01` | SRC-UNODC-STNAR-13 | printed pp. 43–44 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-COCAINE-COLOUR_TEST-03` | SRC-UNODC-STNAR-13 | printed p. 44 (PDF p. 54) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-COCAINE-MICROCRYSTAL_TEST-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 58 (printed p. 57) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-COCAINE-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF pp. 58–59, Table 3 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-BENZOYLECGONINE-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF pp. 58–59, Table 3 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-COCAINE-UV_SPECTRUM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 59 (printed p. 58) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-COCAINE-CONFIRMATORY_METHOD-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 59 (printed p. 58) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-THC-COLOUR_TEST-01` | SRC-UNODC-STNAR-13 | printed p. 41 (PDF p. 51) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-THC-COLOUR_TEST-02` | SRC-UNODC-STNAR-13 | printed pp. 41–42 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-THC-COLOUR_TEST-03` | SRC-YULDASHEV-GMT-2024 | PDF p. 66 (printed p. 65) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-CBD-COLOUR_TEST-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 66 (printed p. 65) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-THC-COLOUR_TEST-04` | SRC-YULDASHEV-GMT-2024 | PDF p. 66 (printed p. 65) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-CBD-COLOUR_TEST-02` | SRC-YULDASHEV-GMT-2024 | PDF p. 66 (printed p. 65) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-THC-COLOUR_TEST-05` | SRC-YULDASHEV-GMT-2024 | PDF p. 66 (printed p. 65) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-CBD-COLOUR_TEST-03` | SRC-YULDASHEV-GMT-2024 | PDF p. 66 (printed p. 65) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-THC-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF pp. 68–69, Table 5 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-CBD-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF pp. 68–69, Table 5 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-THC-TLC_SYSTEM-02` | SRC-YULDASHEV-GMT-2024 | PDF pp. 67–68, Table 4 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-CBD-TLC_SYSTEM-02` | SRC-YULDASHEV-GMT-2024 | PDF pp. 67–68, Table 4 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-THC-METHOD_CAVEAT-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 70 (printed p. 69) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-THC-METHOD_CAVEAT-02` | SRC-SWGDRUG-8-2 | IIIB.4.2 (printed p. 20); IIIB.5.1 (printed p. 21) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-CBD-METHOD_CAVEAT-01` | SRC-SWGDRUG-8-2 | IIIB.4.2 (printed p. 20); IIIB.5.1 (printed p. 21) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-THC-CONFIRMATORY_METHOD-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 69 (printed p. 68) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-AMPHETAMINE-COLOUR_TEST-01` | SRC-UNODC-STNAR-13 | printed p. 45 (PDF p. 55) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-METHAMPHETAMINE-COLOUR_TEST-01` | SRC-UNODC-STNAR-13 | printed p. 45 (PDF p. 55) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-AMPHETAMINE-COLOUR_TEST-02` | SRC-UNODC-STNAR-13 | printed pp. 45–46 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-METHAMPHETAMINE-COLOUR_TEST-02` | SRC-UNODC-STNAR-13 | printed pp. 45–46 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-METHAMPHETAMINE-COLOUR_TEST-03` | SRC-UNODC-STNAR-13 | printed p. 46 (PDF p. 56) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-AMPHETAMINE-COLOUR_TEST-03` | SRC-UNODC-STNAR-13 | printed p. 47 (PDF p. 57) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-METHAMPHETAMINE-COLOUR_TEST-04` | SRC-YULDASHEV-GMT-2024 | PDF p. 86 (printed p. 85), Table 11 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-AMPHETAMINE-COLOUR_TEST-04` | SRC-YULDASHEV-GMT-2024 | PDF p. 80 (printed p. 79) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-METHAMPHETAMINE-COLOUR_TEST-05` | SRC-YULDASHEV-GMT-2024 | PDF p. 80 (printed p. 79) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-EPHEDRINE-COLOUR_TEST-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 80 (printed p. 79) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-MDMA-COLOUR_TEST-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 80 (printed p. 79) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-MDA-COLOUR_TEST-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 80 (printed p. 79) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-MDEA-COLOUR_TEST-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 80 (printed p. 79) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-METHAMPHETAMINE-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 87 (printed p. 86), Table 12 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-MDMA-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 87 (printed p. 86), Table 12 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-MDA-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 87 (printed p. 86), Table 12 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-MDEA-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 87 (printed p. 86), Table 12 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-AMPHETAMINE-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 80 (printed p. 79) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-EPHEDRINE-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 80 (printed p. 79) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-AMPHETAMINE-UV_SPECTRUM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 87 (printed p. 86) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-METHAMPHETAMINE-UV_SPECTRUM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 87 (printed p. 86) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-EPHEDRINE-UV_SPECTRUM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 87 (printed p. 86) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-MDMA-UV_SPECTRUM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 87 (printed p. 86) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-MDA-UV_SPECTRUM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 87 (printed p. 86) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-MDEA-UV_SPECTRUM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 87 (printed p. 86) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-MDMA-COLOUR_TEST-02` | SRC-YULDASHEV-GMT-2024 | PDF p. 86 (printed p. 85), Table 11 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-MDA-COLOUR_TEST-02` | SRC-YULDASHEV-GMT-2024 | PDF p. 86 (printed p. 85), Table 11 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-MDEA-COLOUR_TEST-02` | SRC-YULDASHEV-GMT-2024 | PDF p. 86 (printed p. 85), Table 11 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-MDMA-COLOUR_TEST-03` | SRC-UNODC-STNAR-13 | printed p. 45 (PDF p. 55) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-MDA-COLOUR_TEST-03` | SRC-UNODC-STNAR-13 | printed p. 45 (PDF p. 55) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-MDEA-COLOUR_TEST-03` | SRC-UNODC-STNAR-13 | printed p. 45 (PDF p. 55) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-MDMA-COLOUR_TEST-04` | SRC-UNODC-STNAR-13 | printed p. 47 (PDF p. 57) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-MDA-COLOUR_TEST-04` | SRC-UNODC-STNAR-13 | printed p. 47 (PDF p. 57) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-MDEA-COLOUR_TEST-04` | SRC-UNODC-STNAR-13 | printed p. 47 (PDF p. 57) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-MDMA-COLOUR_TEST-05` | SRC-UNODC-STNAR-13 | printed p. 46 (PDF p. 56) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-MDEA-COLOUR_TEST-05` | SRC-UNODC-STNAR-13 | printed p. 46 (PDF p. 56) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-MDA-COLOUR_TEST-05` | SRC-UNODC-STNAR-13 | printed p. 47 (PDF p. 57) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-EPHEDRINE-MICROCRYSTAL_TEST-01` | SRC-YULDASHEV-GMT-2024 | PDF pp. 76–77 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-EPHEDRINE-COLOUR_TEST-02` | SRC-YULDASHEV-GMT-2024 | PDF p. 76 (printed p. 75) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-EPHEDRINE-COLOUR_TEST-03` | SRC-YULDASHEV-GMT-2024 | PDF p. 80 (printed p. 79) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-EPHEDRINE-TLC_SYSTEM-02` | SRC-YULDASHEV-GMT-2024 | PDF p. 77 (printed p. 76) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-PCP-COLOUR_TEST-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 91 (printed p. 90) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-PCP-COLOUR_TEST-02` | SRC-YULDASHEV-GMT-2024 | PDF p. 91 (printed p. 90) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-PCP-COLOUR_TEST-03` | SRC-YULDASHEV-GMT-2024 | PDF p. 91 (printed p. 90) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-PCP-COLOUR_TEST-04` | SRC-YULDASHEV-GMT-2024 | PDF p. 91 (printed p. 90) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-PCP-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF pp. 91–92 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-KETAMINE-COLOUR_TEST-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 92 (printed p. 91) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-KETAMINE-COLOUR_TEST-02` | SRC-YULDASHEV-GMT-2024 | PDF p. 92 (printed p. 91) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-KETAMINE-MICROCRYSTAL_TEST-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 93 (printed p. 92) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-KETAMINE-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 93 (printed p. 92) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-KETAMINE-UV_SPECTRUM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 93 (printed p. 92) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-KETAMINE-CONFIRMATORY_METHOD-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 93 (printed p. 92) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-LSD-COLOUR_TEST-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 96 (printed p. 95) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-LSD-COLOUR_TEST-02` | SRC-YULDASHEV-GMT-2024 | PDF p. 96 (printed p. 95) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-LSD-COLOUR_TEST-03` | SRC-UNODC-STNAR-13 | printed p. 52 (PDF p. 62) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-LSD-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 96 (printed p. 95) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-LSD-UV_SPECTRUM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 96 (printed p. 95) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-PSILOCYBIN-UV_SPECTRUM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 99 (printed p. 98) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-PHENOBARBITAL-COLOUR_TEST-01` | SRC-UNODC-STNAR-13 | printed pp. 49–50 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-PENTOBARBITAL-COLOUR_TEST-01` | SRC-UNODC-STNAR-13 | printed pp. 49–50 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-SECOBARBITAL-COLOUR_TEST-01` | SRC-UNODC-STNAR-13 | printed pp. 49–50 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-BUTALBITAL-COLOUR_TEST-01` | SRC-UNODC-STNAR-13 | printed pp. 49–50 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-PHENOBARBITAL-COLOUR_TEST-02` | SRC-YULDASHEV-GMT-2024 | PDF p. 110 (printed p. 109) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-PENTOBARBITAL-COLOUR_TEST-02` | SRC-YULDASHEV-GMT-2024 | PDF p. 110 (printed p. 109) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-SECOBARBITAL-COLOUR_TEST-02` | SRC-YULDASHEV-GMT-2024 | PDF p. 110 (printed p. 109) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-BUTALBITAL-COLOUR_TEST-02` | SRC-YULDASHEV-GMT-2024 | PDF p. 110 (printed p. 109) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-PHENOBARBITAL-COLOUR_TEST-03` | SRC-YULDASHEV-GMT-2024 | PDF pp. 110–111 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-PENTOBARBITAL-COLOUR_TEST-03` | SRC-YULDASHEV-GMT-2024 | PDF pp. 110–111 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-SECOBARBITAL-COLOUR_TEST-03` | SRC-YULDASHEV-GMT-2024 | PDF pp. 110–111 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-BUTALBITAL-COLOUR_TEST-03` | SRC-YULDASHEV-GMT-2024 | PDF pp. 110–111 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-PHENOBARBITAL-COLOUR_TEST-04` | SRC-YULDASHEV-GMT-2024 | PDF p. 109 (printed p. 108) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-PENTOBARBITAL-COLOUR_TEST-04` | SRC-YULDASHEV-GMT-2024 | PDF p. 109 (printed p. 108) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-SECOBARBITAL-COLOUR_TEST-04` | SRC-YULDASHEV-GMT-2024 | PDF p. 109 (printed p. 108) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-BUTALBITAL-COLOUR_TEST-04` | SRC-YULDASHEV-GMT-2024 | PDF p. 109 (printed p. 108) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-PHENOBARBITAL-MICROCRYSTAL_TEST-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 113 (printed p. 112) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-PENTOBARBITAL-MICROCRYSTAL_TEST-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 113 (printed p. 112) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-SECOBARBITAL-MICROCRYSTAL_TEST-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 113 (printed p. 112) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-BUTALBITAL-MICROCRYSTAL_TEST-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 113 (printed p. 112) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-PHENOBARBITAL-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 113 (printed p. 112) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-PENTOBARBITAL-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 113 (printed p. 112) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-SECOBARBITAL-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 113 (printed p. 112) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-BUTALBITAL-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 113 (printed p. 112) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-PHENOBARBITAL-UV_SPECTRUM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 115 (printed p. 114) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-PENTOBARBITAL-UV_SPECTRUM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 115 (printed p. 114) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-SECOBARBITAL-UV_SPECTRUM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 116 (printed p. 115) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-BUTALBITAL-UV_SPECTRUM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 115 (printed p. 114) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-PHENOBARBITAL-MELTING_POINT-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 108 (printed p. 107), Table 15 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-PHENOBARBITAL-CONFIRMATORY_METHOD-01` | SRC-YULDASHEV-GMT-2024 | PDF pp. 114–116 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-PENTOBARBITAL-CONFIRMATORY_METHOD-01` | SRC-YULDASHEV-GMT-2024 | PDF pp. 114–116 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-SECOBARBITAL-CONFIRMATORY_METHOD-01` | SRC-YULDASHEV-GMT-2024 | PDF pp. 114–116 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-BUTALBITAL-CONFIRMATORY_METHOD-01` | SRC-YULDASHEV-GMT-2024 | PDF pp. 114–116 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-DIAZEPAM-COLOUR_TEST-01` | SRC-UNODC-STNAR-13 | printed p. 50 (PDF p. 60) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-LORAZEPAM-COLOUR_TEST-01` | SRC-UNODC-STNAR-13 | printed p. 50 (PDF p. 60) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-OXAZEPAM-COLOUR_TEST-01` | SRC-UNODC-STNAR-13 | printed p. 50 (PDF p. 60) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-MIDAZOLAM-COLOUR_TEST-01` | SRC-UNODC-STNAR-13 | printed p. 50 (PDF p. 60) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-DIAZEPAM-COLOUR_TEST-02` | SRC-UNODC-STNAR-13 | printed p. 51 (PDF p. 61) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-DIAZEPAM-COLOUR_TEST-03` | SRC-UNODC-STNAR-13 | printed p. 51 (PDF p. 61) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-DIAZEPAM-COLOUR_TEST-04` | SRC-YULDASHEV-GMT-2024 | PDF p. 140 (printed p. 139) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-DIAZEPAM-MICROCRYSTAL_TEST-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 140 (printed p. 139) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-DIAZEPAM-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 140 (printed p. 139) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-DIAZEPAM-TLC_SYSTEM-02` | SRC-YULDASHEV-GMT-2024 | PDF pp. 135–136, Table 17 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-OXAZEPAM-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF pp. 135–136, Table 17 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-PHENAZEPAM-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF pp. 135–136, Table 17 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-DIAZEPAM-UV_SPECTRUM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 140 (printed p. 139) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-DIAZEPAM-PHOTOMETRIC_ASSAY-01` | SRC-YULDASHEV-GMT-2024 | PDF pp. 137–138 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-OXAZEPAM-PHOTOMETRIC_ASSAY-01` | SRC-YULDASHEV-GMT-2024 | PDF pp. 137–138 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-PHENAZEPAM-PHOTOMETRIC_ASSAY-01` | SRC-YULDASHEV-GMT-2024 | PDF pp. 137–138 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-OXAZEPAM-TLC_SYSTEM-02` | SRC-YULDASHEV-GMT-2024 | PDF p. 142 (printed p. 141) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-OXAZEPAM-UV_SPECTRUM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 142 (printed p. 141) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-PHENAZEPAM-TLC_SYSTEM-02` | SRC-YULDASHEV-GMT-2024 | PDF p. 143 (printed p. 142) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-PHENAZEPAM-COLOUR_TEST-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 143 (printed p. 142) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-PHENAZEPAM-UV_SPECTRUM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 144 (printed p. 143) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-PHENAZEPAM-MELTING_POINT-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 143 (printed p. 142) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-CHLORPROMAZINE-COLOUR_TEST-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 123 (printed p. 122) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-CHLORPROMAZINE-COLOUR_TEST-02` | SRC-YULDASHEV-GMT-2024 | PDF p. 123 (printed p. 122) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-CHLORPROMAZINE-COLOUR_TEST-03` | SRC-YULDASHEV-GMT-2024 | PDF p. 123 (printed p. 122) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-CHLORPROMAZINE-COLOUR_TEST-04` | SRC-YULDASHEV-GMT-2024 | PDF p. 123 (printed p. 122) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-CHLORPROMAZINE-COLOUR_TEST-05` | SRC-YULDASHEV-GMT-2024 | PDF p. 123 (printed p. 122) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-CHLORPROMAZINE-MICROCRYSTAL_TEST-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 123 (printed p. 122) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-CHLORPROMAZINE-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 123 (printed p. 122) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-CHLORPROMAZINE-UV_SPECTRUM-01` | SRC-YULDASHEV-GMT-2024 | PDF pp. 123–124 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-CHLORPROMAZINE-PHOTOMETRIC_ASSAY-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 124 (printed p. 123) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-HALOPERIDOL-COLOUR_TEST-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 130 (printed p. 129) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-HALOPERIDOL-COLOUR_TEST-02` | SRC-YULDASHEV-GMT-2024 | PDF p. 130 (printed p. 129) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-HALOPERIDOL-COLOUR_TEST-03` | SRC-YULDASHEV-GMT-2024 | PDF p. 131 (printed p. 130) | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-HALOPERIDOL-TLC_SYSTEM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 131 (printed p. 130) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-HALOPERIDOL-UV_SPECTRUM-01` | SRC-YULDASHEV-GMT-2024 | PDF p. 131 (printed p. 130) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-AMITRIPTYLINE-COLOUR_TEST-01` | SRC-YULDASHEV-TOKS-2025 | p. 135 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-AMITRIPTYLINE-MICROCRYSTAL_TEST-01` | SRC-YULDASHEV-TOKS-2025 | p. 135 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-AMITRIPTYLINE-TLC_SYSTEM-01` | SRC-YULDASHEV-TOKS-2025 | p. 135 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-NORTRIPTYLINE-TLC_SYSTEM-01` | SRC-YULDASHEV-TOKS-2025 | p. 135 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-AMITRIPTYLINE-UV_SPECTRUM-01` | SRC-YULDASHEV-TOKS-2025 | p. 135 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-NORTRIPTYLINE-MICROCRYSTAL_TEST-01` | SRC-YULDASHEV-TOKS-2025 | p. 135 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-AMITRIPTYLINE-CONFIRMATORY_METHOD-01` | SRC-YULDASHEV-TOKS-2025 | pp. 133–134 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-NORTRIPTYLINE-CONFIRMATORY_METHOD-01` | SRC-YULDASHEV-TOKS-2025 | pp. 133–134 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-IMIPRAMINE-CONFIRMATORY_METHOD-01` | SRC-YULDASHEV-TOKS-2025 | pp. 133–134 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-DOXEPIN-CONFIRMATORY_METHOD-01` | SRC-YULDASHEV-TOKS-2025 | pp. 133–134 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-MIRTAZAPINE-TLC_SYSTEM-01` | SRC-YULDASHEV-TOKS-2025 | p. 134 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-MIRTAZAPINE-UV_SPECTRUM-01` | SRC-YULDASHEV-TOKS-2025 | p. 134 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-VENLAFAXINE-TLC_SYSTEM-01` | SRC-YULDASHEV-TOKS-2025 | p. 133 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-FLUOXETINE-TLC_SYSTEM-01` | SRC-YULDASHEV-TOKS-2025 | p. 133 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-SALICYLIC-ACID-COLOUR_TEST-01` | SRC-YULDASHEV-TOKS-2025 | pp. 98–99 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-SALICYLIC-ACID-COLOUR_TEST-02` | SRC-YULDASHEV-TOKS-2025 | p. 99 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-SALICYLIC-ACID-ODOUR_TEST-01` | SRC-YULDASHEV-TOKS-2025 | p. 99 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-SALICYLIC-ACID-COLOUR_TEST-03` | SRC-YULDASHEV-TOKS-2025 | p. 99 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-SALICYLIC-ACID-UV_SPECTRUM-01` | SRC-YULDASHEV-TOKS-2025 | p. 99 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-ETHANOL-CHEMICAL_TEST-01` | SRC-YULDASHEV-TOKS-2025 | p. 42 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-ETHANOL-CONFIRMATORY_METHOD-01` | SRC-YULDASHEV-TOKS-2025 | p. 43 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-METHANOL-CHEMICAL_TEST-01` | SRC-YULDASHEV-TOKS-2025 | pp. 40–41 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-METHANOL-CONFIRMATORY_METHOD-01` | SRC-YULDASHEV-TOKS-2025 | p. 41 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-ACETONE-CHEMICAL_TEST-01` | SRC-YULDASHEV-TOKS-2025 | pp. 33–34 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-ACETONE-CONFIRMATORY_METHOD-01` | SRC-YULDASHEV-TOKS-2025 | pp. 33–34 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-CHLOROFORM-CHEMICAL_TEST-01` | SRC-YULDASHEV-TOKS-2025 | pp. 36–37 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-HYDROGEN-CYANIDE-CHEMICAL_TEST-01` | SRC-YULDASHEV-TOKS-2025 | p. 29 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-HYDROGEN-SULFIDE-CHEMICAL_TEST-01` | SRC-YULDASHEV-TOKS-2025 | p. 147 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-PHOSPHINE-CHEMICAL_TEST-01` | SRC-YULDASHEV-TOKS-2025 | pp. 70–71 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-CARBON-MONOXIDE-SPECTROSCOPY-01` | SRC-YULDASHEV-TOKS-2025 | pp. 83–84 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-ARSENIC-TRIOXIDE-CHEMICAL_TEST-01` | SRC-YULDASHEV-TOKS-2025 | pp. 75–77 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-THALLIUM-SULFATE-CHEMICAL_TEST-01` | SRC-YULDASHEV-TOKS-2025 | pp. 67–68 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-STRYCHNINE-CHEMICAL_TEST-01` | SRC-YULDASHEV-TOKS-2025 | p. 107 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-MALATHION-CHEMICAL_TEST-01` | SRC-YULDASHEV-TOKS-2025 | pp. 265–266 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-MALATHION-TLC_SYSTEM-01` | SRC-YULDASHEV-TOKS-2025 | p. 266 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-MALATHION-CHEMICAL_TEST-02` | SRC-YULDASHEV-TOKS-2025 | pp. 153–154 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-CHLORPYRIFOS-CHEMICAL_TEST-01` | SRC-YULDASHEV-TOKS-2025 | pp. 153–154 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-DIAZINON-CHEMICAL_TEST-01` | SRC-YULDASHEV-TOKS-2025 | pp. 153–154 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-PARATHION-CHEMICAL_TEST-01` | SRC-YULDASHEV-TOKS-2025 | pp. 153–154 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-MALATHION-TLC_SYSTEM-02` | SRC-YULDASHEV-TOKS-2025 | pp. 154–155 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-CHLORPYRIFOS-TLC_SYSTEM-01` | SRC-YULDASHEV-TOKS-2025 | pp. 154–155 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-DIAZINON-TLC_SYSTEM-01` | SRC-YULDASHEV-TOKS-2025 | pp. 154–155 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-PARATHION-TLC_SYSTEM-01` | SRC-YULDASHEV-TOKS-2025 | pp. 154–155 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-IBUPROFEN-COLOUR_TEST-01` | SRC-YULDASHEV-TOKS-2025 | p. 139 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-IBUPROFEN-TLC_SYSTEM-01` | SRC-YULDASHEV-TOKS-2025 | p. 139 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-IBUPROFEN-UV_SPECTRUM-01` | SRC-YULDASHEV-TOKS-2025 | p. 139 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-IBUPROFEN-MELTING_POINT-01` | SRC-YULDASHEV-TOKS-2025 | p. 138 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-DIPHENHYDRAMINE-COLOUR_TEST-01` | SRC-YULDASHEV-TOKS-2025 | p. 130 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-DIPHENHYDRAMINE-COLOUR_TEST-02` | SRC-YULDASHEV-TOKS-2025 | p. 130 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-DIPHENHYDRAMINE-COLOUR_TEST-03` | SRC-YULDASHEV-TOKS-2025 | p. 130 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-DIPHENHYDRAMINE-COLOUR_TEST-04` | SRC-YULDASHEV-TOKS-2025 | p. 130 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-DIPHENHYDRAMINE-TLC_SYSTEM-01` | SRC-YULDASHEV-TOKS-2025 | p. 130 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-DIPHENHYDRAMINE-UV_SPECTRUM-01` | SRC-YULDASHEV-TOKS-2025 | p. 130 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-SM-LIDOCAINE-MICROCRYSTAL_TEST-01` | SRC-YULDASHEV-TOKS-2025 | p. 129 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-6-MAM-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-ACETONE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-AMITRIPTYLINE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-AMPHETAMINE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-ARSENIC-TRIOXIDE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-BENZOYLECGONINE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-BUTALBITAL-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-CARBON-MONOXIDE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-CBD-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-CHLOROFORM-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-CHLORPROMAZINE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-CHLORPYRIFOS-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-COCAINE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-CODEINE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-DIAZEPAM-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-DIAZINON-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-DIPHENHYDRAMINE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-DOXEPIN-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-EPHEDRINE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-ETHANOL-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-FENTANYL-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-FLUOXETINE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-HALOPERIDOL-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-HEROIN-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-HYDROGEN-CYANIDE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-HYDROGEN-SULFIDE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-IBUPROFEN-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-IMIPRAMINE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-KETAMINE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-LIDOCAINE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-LORAZEPAM-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-LSD-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-MALATHION-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-MDA-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-MDEA-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-MDMA-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-METHADONE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-METHAMPHETAMINE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-METHANOL-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-MIDAZOLAM-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-MIRTAZAPINE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-MORPHINE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-NORTRIPTYLINE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-OXAZEPAM-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-PARATHION-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-PCP-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-PENTOBARBITAL-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-PHENAZEPAM-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-PHENOBARBITAL-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-PHOSPHINE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-PSILOCYBIN-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-SALICYLIC-ACID-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-SECOBARBITAL-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-STRYCHNINE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-THALLIUM-SULFATE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-THC-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.2.2; IIIB.3.1–IIIB.3.4 (printed pp. 18–19) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-VENLAFAXINE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-SM-SCR-MICROCRYSTAL-TESTS-LIMITATION-01` | SRC-YULDASHEV-GMT-2024 | PDF pp. 112–113 | SUPPORTED | paraphrase_not_quoted |
+| `C-SM-SCR-MICROCRYSTAL-TESTS-LIMITATION-02` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.5.1 (printed p. 21) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
 

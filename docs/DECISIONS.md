@@ -58,3 +58,26 @@
 - Mutaxassis Pro (mavjud `FeatureGate`, `ProductFeature.courtTestimonyPrep`; billing konfiguratsiyasi o‘zgartirilmadi): barcha ssenariylar, ketma-ket rol mashqi, AI tahlili (ulanmagan — halol «tez orada», AI chaqirilmaydi), shaxsiy statistika va tarix (faqat qurilmada, `fe.court.history.v1`).
 - Bo‘lim natijani yashirish/yumshatish/buzishni o‘rgatmaydi; joyi asl matndan tasdiqlanmagan manba «Manba tekshirilmagan» deb ko‘rsatiladi va simulyatorda to‘liq ball olmaydi; holat doim NEEDS_REVIEW.
 - Huquqiy savollar yurisdiksiyaga qarab: O‘zbekiston — JPK (lex.uz/docs/111460, 111463) va «Sud ekspertizasi to‘g‘risida»gi qonun (lex.uz/docs/1633100), 2026-10-09 holatiga; boshqa — umumiy xalqaro tamoyillar. FPK tekshirilmagan — «qonun matni lex.uz da tekshirilishi kerak».
+
+## 2026-10-10 — Da'vo–manba auditi: DOI'siz rasmiy hujjatlar va iqtibossiz da'volar
+
+`content/tools/claim_source_audit.py` ikki holatda noto'g'ri «UNSUPPORTED» bergan edi:
+
+1. **DOI/ISBN'siz manbalar.** Vosita faqat `identifier_verified` ni tan olardi, shuning uchun
+   UNODC ST/NAR/13/Rev.1, SWGDRUG v8.2 va muallif ruxsati bilan olingan Yuldashev GMT-2024 /
+   TOKS-2025 «tekshirilmagan manba» deb belgilanardi (327 ta da'vo). Endi kitob, qo'llanma,
+   standart, hisobot va qonun hujjati uchun **rasmiy URL yoki hujjatlashtirilgan litsenziya
+   shartnomasi** ham identifikatsiya hisoblanadi; jurnal maqolalari uchun qoida o'zgarmadi.
+2. **Iqtibos berilmaydigan manbalar.** Yopiq litsenziyali manbadan so'zma-so'z iqtibos
+   olinmaydi, shuning uchun bunday da'volar matni `value.statement` da saqlanadi. Vosita
+   faqat `value.excerpt` ni o'qiganidan matn bo'sh ko'rinardi. Endi `value.statement`
+   o'qiladi va `paraphrase_not_quoted` bayrog'i qo'yiladi — ya'ni bu **bizning manbaga
+   asoslangan bayonimiz, so'zma-so'z iqtibos emas**.
+
+Natija: UNSUPPORTED 327 → 1 (ataylab qoldirilgan retraksiya fixture'i), SUPPORTED 1503.
+
+Bundan tashqari bitta **haqiqiy iqtibos xatosi** tuzatildi: `guideline.bio.semen` «Ilmiy asos»
+bo'limida mikroskopiya va PSA/p30 bir jumlada immunoanaliz manbalariga bog'langan edi;
+mikroskopiya endi o'z manbasiga (`peonim2013`) bog'landi. Blood-presumptive kartasidagi
+4 ta signal evristika xatosi bo'lgani `content/tools/claim_source_reviews.json` da
+asoslantirib yozildi.

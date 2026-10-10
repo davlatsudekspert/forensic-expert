@@ -84,6 +84,38 @@
    "on": "2026-10-10"
   },
   {
+   "id": "guideline.bio.blood_presumptive/basis#1",
+   "text_sha": "e03f7bec1a36dcbc",
+   "verdict": "SUPPORTED",
+   "action": "none",
+   "basis": "Heuristic false positive. petersen2014 (phenolphthalein false positives from leghemoglobin) and barni2007 (luminol review) both describe the catalytic haemoglobin mechanism the sentence states. The 'dna' scope word comes from barni2007's used_for line ('effect on later serology/DNA'), and the sentence makes no immunoassay claim. Checked by Claude against both used_for records and the card text, 2026-10-10.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.bio.blood_presumptive/cautions#2",
+   "text_sha": "5c04bbab2bdc3c1e",
+   "verdict": "SUPPORTED",
+   "action": "none",
+   "basis": "Same johnston2008 heuristic trigger; the sentence lists the alternatives to benzidine and does not generalise any animal-restricted finding. Checked by Claude, 2026-10-10.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.bio.blood_presumptive/interpretation#1",
+   "text_sha": "0b962e5294a13ff5",
+   "verdict": "SUPPORTED",
+   "action": "none",
+   "basis": "Same johnston2008 'primate-specific' wording triggering the animal-scope heuristic; the cited point (a DNA profile obtained straight from kit buffer) is not animal-restricted. Checked by Claude, 2026-10-10.",
+   "on": "2026-10-10"
+  },
+  {
+   "id": "guideline.bio.blood_presumptive/methods#5",
+   "text_sha": "e91231c857d9d7b1",
+   "verdict": "SUPPORTED",
+   "action": "none",
+   "basis": "Heuristic false positive: the 'animal' flag comes from johnston2008's used_for phrase 'OBTI is primate-specific'. The study compares kits on human dried bloodstains, and the card states the primate specificity of OBTI in the very next sentence. Checked by Claude, 2026-10-10.",
+   "on": "2026-10-10"
+  },
+  {
    "id": "guideline.chem.co_cohb_determination/cautions#1",
    "text_sha": "e96c6e7a22a912fc",
    "verdict": "ABSTRACT_ONLY",
