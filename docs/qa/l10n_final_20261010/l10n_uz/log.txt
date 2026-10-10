@@ -1,0 +1,131 @@
+   Woah! You appear to be trying to run flutter as root.
+   We strongly recommend running the flutter tool without superuser privileges.
+  /
+📎
+Resolving dependencies in `/home/user/forensic-expert`...
+Downloading packages...
+  _fe_analyzer_shared 103.0.0 (109.0.0 available)
+  analyzer 13.3.0 (14.5.0 available)
+  build_runner 2.16.1 (2.16.2 available)
+  cross_file 0.3.5+5 (0.4.0 available)
+  cupertino_ui 1.1.1 (1.1.2 available)
+  drift 2.35.1 (2.35.2 available)
+  in_app_purchase_storekit 0.4.13 (0.4.13+1 available)
+  jni_flutter 1.0.3 (1.0.4+1 available)
+  material_color_utilities 0.13.0 (0.13.1 available)
+  material_ui 1.5.0 (1.6.0 available)
+  package_config 2.2.0 (3.0.0 available)
+  shared_preferences 2.5.5 (2.5.6 available)
+  source_gen 4.2.4 (4.3.0 available)
+  test 1.31.1 (1.33.0 available)
+  test_api 0.7.12 (0.7.15 available)
+  test_core 0.6.18 (0.6.21 available)
+Got dependencies in `/home/user/forensic-expert`!
+16 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading /home/user/forensic-expert/apps/mobile/integration_test/qa_l10n_test.dart
+Building Linux application...                                   
+✓ Built build/linux/x64/debug/bundle/forensic_expert
+00:00 +0: QA real app — L10N AUDIT (uz)
+[perf] settings.load took 3 ms
+[perf] settings_loaded: 15 ms
+[perf] first_frame: 1637 ms
+[content] bundled pack: installed 
+WARNING (drift): It looks like you've created the database class ContentDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$ContentDatabase (package:fe_database/src/content/content_database.g.dart:18475:40)
+#4      new ContentDatabase (package:fe_database/src/content/content_database.dart)
+#5      LocalContentStore._open.<anonymous closure> (package:forensic_expert/data/local/content_store.dart:101:18)
+#6      StartupMetrics.measure (package:forensic_expert/core/perf/startup_metrics.dart:38:26)
+#7      LocalContentStore._open (package:forensic_expert/data/local/content_store.dart:100:36)
+#8      LocalContentStore.openActive (package:forensic_expert/data/local/content_store.dart:82:12)
+<asynchronous suspension>
+#9      contentLibraryProvider.<anonymous closure> (package:forensic_expert/app/providers.dart:176:14)
+<asynchronous suspension>
+#10     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:232:17)
+<asynchronous suspension>
+#11     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:237:29)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class ContentDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$ContentDatabase (package:fe_database/src/content/content_database.g.dart:18475:40)
+#4      new ContentDatabase (package:fe_database/src/content/content_database.dart)
+#5      LocalContentStore._open.<anonymous closure> (package:forensic_expert/data/local/content_store.dart:101:18)
+#6      StartupMetrics.measure (package:forensic_expert/core/perf/startup_metrics.dart:38:26)
+#7      LocalContentStore._open (package:forensic_expert/data/local/content_store.dart:100:36)
+#8      LocalContentStore.openActive (package:forensic_expert/data/local/content_store.dart:82:12)
+<asynchronous suspension>
+#9      contentKnowledgeProvider.<anonymous closure> (package:forensic_expert/app/providers.dart:260:14)
+<asynchronous suspension>
+#10     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:232:17)
+<asynchronous suspension>
+#11     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:237:29)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class ContentDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$ContentDatabase (package:fe_database/src/content/content_database.g.dart:18475:40)
+#4      new ContentDatabase (package:fe_database/src/content/content_database.dart)
+#5      LocalContentStore._open.<anonymous closure> (package:forensic_expert/data/local/content_store.dart:101:18)
+#6      StartupMetrics.measure (package:forensic_expert/core/perf/startup_metrics.dart:38:26)
+#7      LocalContentStore._open (package:forensic_expert/data/local/content_store.dart:100:36)
+#8      LocalContentStore.openActive (package:forensic_expert/data/local/content_store.dart:82:12)
+<asynchronous suspension>
+#9      contentEvidenceProvider.<anonymous closure> (package:forensic_expert/app/providers.dart:330:14)
+<asynchronous suspension>
+#10     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:232:17)
+<asynchronous suspension>
+#11     ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure> (package:riverpod/src/core/element.dart:237:29)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+[perf] content_db.open took 133 ms
+[perf] content_db.open took 142 ms
+[perf] content_db.open took 157 ms
+[perf] content_db.open took 166 ms
+QA l01 PASS Study quiz forensicToxicology deck []
+QA l02 PASS Study quiz answered []
+QA l03 PASS Study cards forensicMedicine deck []
+QA l04 PASS Study hub []
+QA l05 PASS FM postmortem changes research list []
+QA l06 PASS Research list all []
+QA l07 PASS Topic card PMR []
+QA l08 PASS Topic card PMR scrolled []
+QA l09 PASS Topic card livor mortis []
+QA l10 PASS Guideline card CO-COHb []
+QA l11 PASS Guideline card CO-COHb sources []
+QA l12 PASS Court card rights UZ []
+QA l13 PASS Court card rights UZ sources []
+QA l14 PASS Reagent Dragendorff [LANG? RAW:"pubchem.ncbi.nlm.nih.gov"]
+QA l15 PASS Reagent Dragendorff scrolled [LANG? RAW:"pubchem.ncbi.nlm.nih.gov"]
+QA l16 PASS Screening opiates immunoassay []
+QA l17 PASS Conflict vitreous potassium []
+QA l18 PASS Jurisdiction UZ []
+QA l19 PASS Morphine legal status [LANG? RAW:"pubchem.ncbi.nlm.nih.gov" | EN:"Codeine and Metabolite Concentrations in the Breastfed Neonate" | RAW:"legislation.gov.uk" | RAW:"incb.org" | RAW:"ecfr.gov"]
+QA l20 PASS Standards []
+QA l21 PASS AI screen []
+QA l22 PASS AI answer PMR []
+QA l23 PASS AI answer scrolled []
+QA l24 PASS C Study quiz quote original opened []
+QA l25 PASS C Topic card PMR original opened []
+QA l26 PASS C Morphine context and limitations [LANG? RAW:"pubchem.ncbi.nlm.nih.gov" | EN:"Codeine and Metabolite Concentrations in the Breastfed Neonate" | RAW:"legislation.gov.uk" | RAW:"incb.org" | RAW:"ecfr.gov"]
+QA l27 PASS C Conflicts list []
+QA l28 PASS C Jurisdiction GB legal titles []
+QA l29 PASS C Method card GC-MS explanation []
+QA l30 PASS C Method card GC-MS original opened []
+QA l31 PASS C Topic card algor mortis explanation []
+QA SUMMARY l10n-uz: 31/31 PASS
+01:05 +1: (tearDownAll)
+01:05 +1: All tests passed!
