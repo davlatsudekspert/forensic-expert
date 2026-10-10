@@ -5,7 +5,7 @@
 /// ilmiy baza versiyasi kontent paketi manifestidan o‘qiladi.
 abstract final class AppInfo {
   static const version = '0.3.0';
-  static const build = 4;
+  static const build = 5;
 
   /// VAQTINCHALIK ID (RG-09). Nomzod: `com.forensicexpert.app` — egasi
   /// tasdiqlamaguncha va store’da ro‘yxatdan o‘tmaguncha o‘zgartirilmaydi.
