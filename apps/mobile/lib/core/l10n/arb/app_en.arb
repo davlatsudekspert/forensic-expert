@@ -10518,5 +10518,9 @@
   },
   "@legalPublishedNotice": {
     "description": "Banner shown on the privacy screen: the policy is published."
+  },
+  "detailSourcedStatement": "Based on the source (not a direct quotation)",
+  "@detailSourcedStatement": {
+    "description": "Label above a claim body that paraphrases a source we may not quote."
   }
 }

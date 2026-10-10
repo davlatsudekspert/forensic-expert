@@ -8130,4 +8130,7 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get legalPublishedNotice =>
       'Это опубликованная политика. Тот же текст доступен в интернете.';
+
+  @override
+  String get detailSourcedStatement => 'По источнику (не дословная цитата)';
 }

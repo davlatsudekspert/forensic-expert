@@ -8087,4 +8087,8 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get legalPublishedNotice =>
       'This is the published policy. The same text is available online.';
+
+  @override
+  String get detailSourcedStatement =>
+      'Based on the source (not a direct quotation)';
 }

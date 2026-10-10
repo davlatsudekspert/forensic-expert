@@ -460,6 +460,10 @@ class ClaimCard extends StatelessWidget {
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
     final excerpt = claim.excerpt;
+    final lang = Localizations.localeOf(context).languageCode;
+    final statement = claim.statement(lang);
+    final statementSource = claim.localized('source_i18n', lang);
+    final statementLocator = claim.localized('locator_i18n', lang);
     final source = claim.sources.isEmpty ? null : claim.sources.first;
 
     final identityRows = claim.field == 'identity'
@@ -515,7 +519,39 @@ class ClaimCard extends StatelessWidget {
             ),
           if (claim.field != 'identity') ...[
             const SizedBox(height: FeSpace.xs),
-            if (excerpt != null)
+            if (excerpt == null && statement != null)
+              // Yopiq litsenziyali manbadan iqtibos olinmaydi: bu bizning
+              // manbaga asoslangan bayonimiz, shuning uchun shunday belgilanadi.
+              DecoratedBox(
+                key: Key('claim.statement.${claim.claimId}'),
+                decoration: BoxDecoration(
+                  border: Border(
+                    left: BorderSide(color: c.textSecondary, width: 3),
+                  ),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(left: FeSpace.sm),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        l.detailSourcedStatement,
+                        style: t.labelSmall?.copyWith(color: c.textSecondary),
+                      ),
+                      const SizedBox(height: FeSpace.xxs),
+                      SelectableText(statement, style: t.bodyMedium),
+                      if (statementSource != null) ...[
+                        const SizedBox(height: FeSpace.xxs),
+                        Text(
+                          [statementSource, ?statementLocator].join(' · '),
+                          style: t.bodySmall?.copyWith(color: c.textSecondary),
+                        ),
+                      ],
+                    ],
+                  ),
+                ),
+              )
+            else if (excerpt != null)
               DecoratedBox(
                 key: Key('claim.excerpt.${claim.claimId}'),
                 decoration: BoxDecoration(

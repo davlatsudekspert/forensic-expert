@@ -8062,4 +8062,8 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get legalPublishedNotice =>
       'Bu — e’lon qilingan siyosat. Xuddi shu matn internetda ham bor.';
+
+  @override
+  String get detailSourcedStatement =>
+      'Manbaga asoslangan bayon (so‘zma-so‘z iqtibos emas)';
 }

@@ -143,3 +143,22 @@ Chegara printsipi:
   eksport, test natijalari tahlili, kengaytirilgan AI.
 
 Sababi ochiq aytiladi: biz bilimni sotmaymiz, mehnatni tejaymiz.
+
+### Aniqlashtirilgan tijorat modeli (egasi, 2026-10-10 kechqurun)
+
+- **Birinchi oy — Pro bepul.** Ro'yxatdan o'tgan foydalanuvchiga 30 kun to'liq Pro.
+- **Bepul:** kutubxonani o'qish — moddalar, usullar matni, reaktivlar, qo'llanma
+  kartalari, manbalar ro'yxati, oddiy qidiruv va oddiy kalkulyatorlar.
+  **ABY va muallif kitoblaridan olingan matn ham bepul** — boshqaning mehnati
+  sotilmaydi.
+- **Pro:** sudda so'roq moduli; toifaga tayyorlanish va test rejimi, natijalar
+  tahlili; aniq/teskari qidiruv (Rf, rang, massa, alomat); «Modda bo'yicha
+  tahlil rejasi»; xulosa uchun iqtibosli eksport; murakkab hisob (LOD/LOQ,
+  validatsiya, regressiya).
+
+Chegara qoidasi: **manbadan olingan matn — bepul; o'sha matn ustiga biz
+qurgan vosita — Pro.** Foydalanuvchi metodikani o'qiydi bepul; «shu modda
+uchun tahlil rejasini tuzib ber» desa — Pro.
+
+Mamlakat bo'yicha turli tarif hozircha joriy etilmaydi: avval bitta oddiy
+model bilan chiqiladi, haqiqiy foydalanish ko'ringandan keyin qayta qaraladi.

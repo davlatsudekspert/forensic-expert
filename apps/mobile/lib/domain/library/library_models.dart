@@ -210,6 +210,26 @@ class ClaimView {
   ];
 
   String? get excerpt => value['excerpt'] as String?;
+
+  /// Yopiq litsenziyali manbadan so‘zma-so‘z iqtibos olinmaydi; bunday
+  /// da’voning matni `value.statement` da — bu bizning manbaga asoslangan
+  /// bayonimiz, iqtibos emas. UI uni shunday belgilab ko‘rsatadi.
+  String? statement(String lang) {
+    final m = (value['statement'] as Map?)?.cast<String, Object?>();
+    if (m == null) return null;
+    final v = (m[lang] ?? m['uz'] ?? m['en'] ?? m['ru']) as String?;
+    final t = v?.trim();
+    return (t == null || t.isEmpty) ? null : t;
+  }
+
+  /// Da’vo matni qaysi manbadan va uning qayeridan olingani (bayon uchun).
+  String? localized(String key, String lang) {
+    final m = (value[key] as Map?)?.cast<String, Object?>();
+    if (m == null) return null;
+    final v = (m[lang] ?? m['uz'] ?? m['en'] ?? m['ru']) as String?;
+    final t = v?.trim();
+    return (t == null || t.isEmpty) ? null : t;
+  }
 }
 
 /// Yurisdiksiya qatlamidagi qoida (masalan, xalqaro nazorat jadvali).

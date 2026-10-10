@@ -14192,6 +14192,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'This is the published policy. The same text is available online.'**
   String get legalPublishedNotice;
+
+  /// Label above a claim body that paraphrases a source we may not quote.
+  ///
+  /// In en, this message translates to:
+  /// **'Based on the source (not a direct quotation)'**
+  String get detailSourcedStatement;
 }
 
 class _AppLocalizationsDelegate

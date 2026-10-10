@@ -1,0 +1,273 @@
+{
+  "role": "expert",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "e01",
+      "title": "Onboarding: O‘zbekcha + ogohlantirish",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e01_onboarding_o_zbekcha_ogohlantirish.png"
+    },
+    {
+      "id": "e02",
+      "title": "Rejim: Mutaxassis + rol (Sud toksikologi)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e02_rejim_mutaxassis_rol_sud_toksikologi.png"
+    },
+    {
+      "id": "e03",
+      "title": "Davom etish → Hisob yaratish / Kirish",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"EXPERT\""
+      ],
+      "screenshot": null
+    },
+    {
+      "id": "e04",
+      "title": "MOCK OTP bilan kirish",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e04_mock_otp_bilan_kirish.png"
+    },
+    {
+      "id": "e05",
+      "title": "Profil: 1-qadam (ism, davlat)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e05_profil_1_qadam_ism_davlat.png"
+    },
+    {
+      "id": "e06",
+      "title": "Profil: 2-qadam — ixtisoslik «Sud toksikologiyasi»",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e06_profil_2_qadam_ixtisoslik_sud_toksikolog.png"
+    },
+    {
+      "id": "e07",
+      "title": "Profil: 3-qadam → Saqlash",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e07_profil_3_qadam_saqlash.png"
+    },
+    {
+      "id": "e08",
+      "title": "Professional maqomni tasdiqlash (server yo‘q)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e08_professional_maqomni_tasdiqlash_server_y.png"
+    },
+    {
+      "id": "e09",
+      "title": "Fanlar → Sud kimyosi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e09_fanlar_sud_kimyosi.png"
+    },
+    {
+      "id": "e10",
+      "title": "Kutubxona → Usullar va SOP",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "e11",
+      "title": "Usul yozuvini ochish (GX)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e11_usul_yozuvini_ochish_gx.png"
+    },
+    {
+      "id": "e12",
+      "title": "Yo‘riqnoma: preanalitika kartasi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e12_yo_riqnoma_preanalitika_kartasi.png"
+    },
+    {
+      "id": "e13",
+      "title": "Etanol → «Bu ma’lumot qayerdan?»",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | RAW:\"legislation.gov.uk\""
+      ],
+      "screenshot": "e13_etanol_bu_ma_lumot_qayerdan.png"
+    },
+    {
+      "id": "e14",
+      "title": "Ekspert maqolalari ro‘yxati",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e14_ekspert_maqolalari_ro_yxati.png"
+    },
+    {
+      "id": "e15",
+      "title": "Maqolani ochish",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e15_maqolani_ochish.png"
+    },
+    {
+      "id": "e16",
+      "title": "Maqola yuborish: bo‘sh forma → xato",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e16_maqola_yuborish_bo_sh_forma_xato.png"
+    },
+    {
+      "id": "e17",
+      "title": "Maqola: to‘ldirish → qoralama saqlash",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e17_maqola_to_ldirish_qoralama_saqlash.png"
+    },
+    {
+      "id": "e18",
+      "title": "Maqola: tasdiqlarsiz yuborish → rad",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "e19",
+      "title": "Maqola: 3 tasdiq → yuborish → «Mening maqolalarim»",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e19_maqola_3_tasdiq_yuborish_mening_maqolala.png"
+    },
+    {
+      "id": "e20",
+      "title": "Qidiruv: «etanol qon»",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e20_qidiruv_etanol_qon.png"
+    },
+    {
+      "id": "e21",
+      "title": "Qidiruv: «HS-GC»",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "e22",
+      "title": "AI: oflayn manbalar «metanol»",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e22_ai_oflayn_manbalar_metanol.png"
+    },
+    {
+      "id": "e23",
+      "title": "Vositalar ro‘yxati",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "e24",
+      "title": "Suyultirish: C₁=10, C₂=1, V₂=100 → V₁=10",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e24_suyultirish_c_10_c_1_v_100_v_10.png"
+    },
+    {
+      "id": "e25",
+      "title": "Suyultirish: mantiqsiz kiritish (C₂ > C₁) → ogohlantirish",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e25_suyultirish_mantiqsiz_kiritish_c_c_ogohl.png"
+    },
+    {
+      "id": "e26",
+      "title": "Pro kalkulyator (Widmark) → tariflar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e26_pro_kalkulyator_widmark_tariflar.png"
+    },
+    {
+      "id": "e27",
+      "title": "Profil va sozlamalar (Mutaxassis)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e27_profil_va_sozlamalar_mutaxassis.png"
+    },
+    {
+      "id": "e28",
+      "title": "Til: Русский — Профиль",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e28_til.png"
+    },
+    {
+      "id": "e29",
+      "title": "Til: O‘zbekcha (qaytish)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "e30",
+      "title": "320×640: Vositalar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e30_320_640_vositalar.png"
+    },
+    {
+      "id": "e31",
+      "title": "320×640: maqola yuborish formasi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e31_320_640_maqola_yuborish_formasi.png"
+    },
+    {
+      "id": "e32",
+      "title": "320×640: yo‘riqnomalar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e32_320_640_yo_riqnomalar.png"
+    },
+    {
+      "id": "e33",
+      "title": "320×640: profil tahrirlash",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e33_320_640_profil_tahrirlash.png"
+    },
+    {
+      "id": "e34",
+      "title": "Etanol sahifasi → ⋮ → «Xato haqida xabar berish»",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e34_etanol_sahifasi_xato_haqida_xabar_berish.png"
+    },
+    {
+      "id": "e35",
+      "title": "SCIENTIFIC_ERROR: xabar + rozilik → yuborish",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e35_scientific_error_xabar_rozilik_yuborish.png"
+    },
+    {
+      "id": "e36",
+      "title": "Admin javobi (simulyatsiya) → chatda ko‘rinadi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "e36_admin_javobi_simulyatsiya_chatda_ko_rina.png"
+    },
+    {
+      "id": "e37",
+      "title": "Tarmoq o‘chiq: oflayn ishladi",
+      "result": "PASS",
+      "notes": [
+        "Bloklangan HTTP urinishlari: 0"
+      ],
+      "screenshot": null
+    }
+  ],
+  "pass": 37,
+  "fail": 0
+}
