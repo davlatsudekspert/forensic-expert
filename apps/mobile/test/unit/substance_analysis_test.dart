@@ -27,13 +27,24 @@ void main() {
     expect(blood.basisClaims.single.field, 'reported_concentration');
     expect(blood.methodIds, isEmpty);
     expect(a.methodsLinkedToSpecimens, isFalse);
-    expect(a.analyticalMethods.map((m) => m.methodId), ['method-lcmsms']);
-    expect(
-      a.analyticalMethods.single.basisClaims.single.field,
-      'analytical_method',
-    );
-    expect(a.screenings, isEmpty);
-    expect(a.confirmationMethods, isEmpty);
+    // Mahalliy sharoitda qo‘llanadigan usullar qo‘shilgandan keyin morfin
+    // uchun to‘rtta usul bor; har birining asosi — paketdagi claim.
+    expect(a.analyticalMethods.map((m) => m.methodId), [
+      'method-gcms',
+      'method-lcmsms',
+      'method-tlc',
+      'method-uvvis',
+    ]);
+    for (final m in a.analyticalMethods) {
+      expect(m.basisClaims, isNotEmpty);
+      expect(m.basisClaims.first.field, isNotEmpty);
+    }
+    // Skrining sinamalari ham qo‘shildi (rang, mikrokristall, immunoanaliz).
+    expect(a.screenings.map((s) => s.screeningId), [
+      'scr-colour-tests',
+      'scr-immunoassay-opiates',
+      'scr-microcrystal-tests',
+    ]);
     expect(a.metabolites.map((m) => m.relation.metaboliteName), [
       'morphine-3-glucuronide (M3G)',
       'morphine-6-glucuronide (M6G)',
@@ -66,18 +77,23 @@ void main() {
 
   test('kokain: skrining → tasdiqlash (GX-MS, SX-MS/MS), metabolit', () {
     final a = of('cocaine');
-    expect(a.screenings.map((s) => s.screeningId), ['scr-immunoassay-drugs']);
-    expect(a.screenings.single.confirmationMethodIds, [
-      'method-gcms',
-      'method-lcmsms',
+    expect(a.screenings.map((s) => s.screeningId), [
+      'scr-colour-tests',
+      'scr-immunoassay-drugs',
+      'scr-microcrystal-tests',
     ]);
-    expect(a.confirmationMethods.map((m) => m.methodId), [
-      'method-gcms',
-      'method-lcmsms',
-    ]);
+    final immuno = a.screenings.singleWhere(
+      (s) => s.screeningId == 'scr-immunoassay-drugs',
+    );
+    expect(immuno.confirmationMethodIds, ['method-gcms', 'method-lcmsms']);
+    expect(
+      a.confirmationMethods.map((m) => m.methodId),
+      containsAll(<String>['method-gcms', 'method-lcmsms']),
+    );
     for (final m in a.confirmationMethods) {
       expect(m.role, AnalysisMethodRole.confirmation);
-      expect(m.afterScreeningIds, ['scr-immunoassay-drugs']);
+      // Tasdiqlovchi usul kamida bitta skriningdan keyin keladi.
+      expect(m.afterScreeningIds, isNotEmpty);
     }
     final be = a.metabolites.singleWhere(
       (m) => m.relation.metaboliteId == 'benzoylecgonine',

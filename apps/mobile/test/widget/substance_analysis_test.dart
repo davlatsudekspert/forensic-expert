@@ -52,6 +52,9 @@ void main() {
       tester,
       find.byKey(const Key('analysis.method.morphine.method-lcmsms')),
     );
+    // Skrining sinamalari qo‘shilgandan keyin LC-MS/MS ikki joyda chiqadi:
+    // «Tahlil usullari» ro‘yxatida va skriningdan keyingi tasdiqlovchi usul
+    // sifatida — shuning uchun bitta emas, kamida bitta kutiladi.
     expect(
       inAnalysis(
         'morphine',
@@ -59,7 +62,7 @@ void main() {
           'LC-MS/MS (suyuqlik xromatografiyasi — tandem mass-spektrometriya)',
         ),
       ),
-      findsOneWidget,
+      findsWidgets,
     );
     // Metod namunaga bog‘lanmagan — halol izoh.
     expect(
