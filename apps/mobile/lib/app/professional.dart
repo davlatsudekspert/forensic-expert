@@ -6,6 +6,8 @@ import '../data/offline/offline_professional.dart';
 import '../domain/ports/professional_ports.dart';
 import '../domain/professional/professional_models.dart';
 import '../domain/professional/review_models.dart';
+import '../domain/professional/verification_inbox_models.dart';
+import 'account.dart';
 import 'providers.dart';
 
 /// Profil ombori (bootstrap’da SharedPreferences bilan override qilinadi).
@@ -82,6 +84,21 @@ final reviewQueueProvider =
       ProfessionalResult<List<ReviewQueueItem>>,
       ReviewQueue
     >((ref, q) => ref.watch(professionalReviewServiceProvider).queue(q));
+
+/// Admin: tasdiqlash arizalari (bootstrap’da Supabase bilan almashtiriladi).
+final identityAdminServiceProvider = Provider<IdentityAdminService>(
+  (ref) => const OfflineIdentityAdminService(),
+);
+
+/// Kutayotgan arizalar (faqat admin; server baribir tekshiradi).
+final pendingVerificationsProvider =
+    FutureProvider.autoDispose<ProfessionalResult<PendingVerificationPage>?>((
+      ref,
+    ) {
+      final isAdmin = ref.watch(serverAccessProvider).value?.isAdmin ?? false;
+      if (!isAdmin) return Future.value(null);
+      return ref.watch(identityAdminServiceProvider).pending();
+    });
 
 /// Malaka hujjatini tanlash (testlarda soxta implementatsiya bilan).
 final credentialFilePickerProvider = Provider<CredentialFilePicker>(

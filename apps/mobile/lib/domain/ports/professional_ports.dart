@@ -1,5 +1,6 @@
 import '../professional/professional_models.dart';
 import '../professional/review_models.dart';
+import '../professional/verification_inbox_models.dart';
 
 /// Profil — faqat qurilmada (bulutga yuborilmaydi, analitikaga tushmaydi).
 abstract interface class LocalProfileStore {
@@ -64,6 +65,28 @@ abstract interface class ProfessionalVerificationService {
   Future<ProfessionalResult<ProfessionalApplication>> submit({
     required ProfessionalProfile profile,
     required List<CredentialFile> documents,
+  });
+}
+
+/// Admin: kutayotgan tasdiqlash arizalari va qaror (server
+/// `admin_pending_verifications`, `decide_identity`). Vakolat serverda
+/// tekshiriladi; o‘zini tasdiqlash serverda taqiqlangan.
+abstract interface class IdentityAdminService {
+  bool get isConfigured;
+
+  Future<ProfessionalResult<PendingVerificationPage>> pending({
+    int limit = 50,
+    int offset = 0,
+  });
+
+  /// Qaror. `null` — muvaffaqiyat, aks holda sabab.
+  Future<IdentityDecisionFailure?> decide({
+    required String applicantId,
+    required IdentityDecision decision,
+    required ReviewerScope scope,
+    required List<String> checkedDocumentIds,
+    required String reason,
+    String? applicantMessage,
   });
 }
 

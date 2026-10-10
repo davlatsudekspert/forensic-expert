@@ -10053,5 +10053,207 @@
   "trStatusDerivedDraft": "Automatic explanation — not reviewed",
   "@trStatusDerivedDraft": {
     "description": "Status badge: explanation compiled automatically from the sourced quote in the same language; not reviewed."
+  },
+  "admNavVerify": "Verification applications",
+  "@admNavVerify": {
+    "description": "Admin section title: pending identity verification applications."
+  },
+  "admNavVerifyHint": "Review professional applications and decide",
+  "@admNavVerifyHint": {
+    "description": "Admin section hint."
+  },
+  "admVfEmpty": "No applications are waiting.",
+  "@admVfEmpty": {
+    "description": "Empty list."
+  },
+  "admVfUnavailable": "Verification needs the online service, which is not connected in this build.",
+  "@admVfUnavailable": {
+    "description": "Backend not connected."
+  },
+  "admVfLoadFailed": "Could not load applications. Check the connection and try again.",
+  "@admVfLoadFailed": {
+    "description": "Load error."
+  },
+  "admVfSubmitted": "Submitted {date}",
+  "@admVfSubmitted": {
+    "description": "Application meta.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "admVfDocsCount": "{count, plural, =0{No documents} =1{1 document} other{{count} documents}}",
+  "@admVfDocsCount": {
+    "description": "Document count on a list card.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "admVfSelfBadge": "Your own application",
+  "@admVfSelfBadge": {
+    "description": "Badge on the admin's own application."
+  },
+  "admVfSelfNote": "You cannot approve your own application — another authorised admin will decide it.",
+  "@admVfSelfNote": {
+    "description": "Shown instead of the decision form for the admin's own application."
+  },
+  "admVfApplicant": "Applicant",
+  "@admVfApplicant": {
+    "description": "Section header."
+  },
+  "admVfFieldSpecialty": "Specialty",
+  "@admVfFieldSpecialty": {
+    "description": "Field label."
+  },
+  "admVfFieldExperience": "Experience",
+  "@admVfFieldExperience": {
+    "description": "Field label."
+  },
+  "admVfYears": "{count, plural, =1{1 year} other{{count} years}}",
+  "@admVfYears": {
+    "description": "Years of experience.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "admVfFieldEducation": "Education",
+  "@admVfFieldEducation": {
+    "description": "Field label."
+  },
+  "admVfFieldCountry": "Country",
+  "@admVfFieldCountry": {
+    "description": "Field label."
+  },
+  "admVfDocs": "Credential documents",
+  "@admVfDocs": {
+    "description": "Section header."
+  },
+  "admVfDocsHint": "Tick every document you have checked. Approval needs at least one checked document.",
+  "@admVfDocsHint": {
+    "description": "Explains the checkboxes."
+  },
+  "admVfDocsNone": "The applicant has not uploaded any documents, so the application cannot be approved yet.",
+  "@admVfDocsNone": {
+    "description": "No documents uploaded."
+  },
+  "admVfDocsNote": "The app shows document details only (type, size, SHA-256). Check the file itself in the secure server storage.",
+  "@admVfDocsNote": {
+    "description": "Honest note: the app lists metadata only."
+  },
+  "admVfDocMeta": "{type} · {size} · SHA-256 {hash}",
+  "@admVfDocMeta": {
+    "description": "Document line: type, size, hash prefix.",
+    "placeholders": {
+      "type": {
+        "type": "String"
+      },
+      "size": {
+        "type": "String"
+      },
+      "hash": {
+        "type": "String"
+      }
+    }
+  },
+  "admVfDecision": "Decision",
+  "@admVfDecision": {
+    "description": "Section header."
+  },
+  "admVfScope": "Area of the decision",
+  "@admVfScope": {
+    "description": "Dropdown label."
+  },
+  "admVfScopeRequired": "Choose the specialty area this decision refers to.",
+  "@admVfScopeRequired": {
+    "description": "Hint when no area is chosen."
+  },
+  "admVfReason": "Reason (at least 5 characters)",
+  "@admVfReason": {
+    "description": "Field label."
+  },
+  "admVfReasonShort": "Enter a reason of at least 5 characters.",
+  "@admVfReasonShort": {
+    "description": "Validation."
+  },
+  "admVfMessage": "Message to the applicant (optional)",
+  "@admVfMessage": {
+    "description": "Field label."
+  },
+  "admVfApprove": "Approve",
+  "@admVfApprove": {
+    "description": "Action."
+  },
+  "admVfRequestInfo": "Request more information",
+  "@admVfRequestInfo": {
+    "description": "Action."
+  },
+  "admVfReject": "Reject",
+  "@admVfReject": {
+    "description": "Action."
+  },
+  "admVfNoScientific": "Identity verification does not grant scientific review rights.",
+  "@admVfNoScientific": {
+    "description": "Reminder under the decision form."
+  },
+  "admVfDoneVerified": "Application approved.",
+  "@admVfDoneVerified": {
+    "description": "Result."
+  },
+  "admVfDoneInfo": "More information requested.",
+  "@admVfDoneInfo": {
+    "description": "Result."
+  },
+  "admVfDoneRejected": "Application rejected.",
+  "@admVfDoneRejected": {
+    "description": "Result."
+  },
+  "admVfErrSelf": "You cannot approve your own application — another authorised admin will decide it.",
+  "@admVfErrSelf": {
+    "description": "Server refused: self approval."
+  },
+  "admVfErrForbidden": "You have no authority to verify in this area.",
+  "@admVfErrForbidden": {
+    "description": "Server refused: no authority."
+  },
+  "admVfErrNoCredential": "Mark at least one document as checked.",
+  "@admVfErrNoCredential": {
+    "description": "Server refused: no checked document."
+  },
+  "admVfErrUnknownCredential": "A selected document does not belong to this applicant. Refresh the list.",
+  "@admVfErrUnknownCredential": {
+    "description": "Server refused: foreign document."
+  },
+  "admVfErrTransition": "This application has already been decided. Refresh the list.",
+  "@admVfErrTransition": {
+    "description": "Server refused: already decided."
+  },
+  "admVfErrNoApplication": "Application not found.",
+  "@admVfErrNoApplication": {
+    "description": "Server refused: no application."
+  },
+  "admVfErrMfa": "Sign in with two-step verification to continue.",
+  "@admVfErrMfa": {
+    "description": "Server refused: MFA needed."
+  },
+  "admVfErrSignIn": "Please sign in again.",
+  "@admVfErrSignIn": {
+    "description": "Session expired."
+  },
+  "admVfErrOffline": "No connection. Check the internet and try again.",
+  "@admVfErrOffline": {
+    "description": "No network."
+  },
+  "admVfErrServer": "The decision was not saved. Try again later.",
+  "@admVfErrServer": {
+    "description": "Generic failure."
+  },
+  "admActVerificationsView": "Viewed verification applications",
+  "@admActVerificationsView": {
+    "description": "Audit action."
   }
 }

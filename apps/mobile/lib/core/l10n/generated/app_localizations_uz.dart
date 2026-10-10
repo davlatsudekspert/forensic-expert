@@ -7689,4 +7689,171 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get trStatusDerivedDraft => 'Avtomatik tushuntirish — tekshirilmagan';
+
+  @override
+  String get admNavVerify => 'Tasdiqlash arizalari';
+
+  @override
+  String get admNavVerifyHint =>
+      'Mutaxassis arizalarini ko‘rib chiqing va qaror qabul qiling';
+
+  @override
+  String get admVfEmpty => 'Kutayotgan ariza yo‘q.';
+
+  @override
+  String get admVfUnavailable =>
+      'Tasdiqlash uchun onlayn xizmat kerak, u bu yig‘mada ulanmagan.';
+
+  @override
+  String get admVfLoadFailed =>
+      'Arizalarni yuklab bo‘lmadi. Aloqani tekshirib, qayta urinib ko‘ring.';
+
+  @override
+  String admVfSubmitted(String date) {
+    return 'Yuborilgan: $date';
+  }
+
+  @override
+  String admVfDocsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta hujjat',
+      zero: 'Hujjat yo‘q',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get admVfSelfBadge => 'Sizning o‘z arizangiz';
+
+  @override
+  String get admVfSelfNote =>
+      'O‘z arizangizni tasdiqlay olmaysiz — buni boshqa vakolatli admin bajaradi.';
+
+  @override
+  String get admVfApplicant => 'Ariza beruvchi';
+
+  @override
+  String get admVfFieldSpecialty => 'Mutaxassislik';
+
+  @override
+  String get admVfFieldExperience => 'Tajriba';
+
+  @override
+  String admVfYears(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count yil',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get admVfFieldEducation => 'Ma’lumoti';
+
+  @override
+  String get admVfFieldCountry => 'Mamlakat';
+
+  @override
+  String get admVfDocs => 'Malaka hujjatlari';
+
+  @override
+  String get admVfDocsHint =>
+      'Tekshirgan har bir hujjatni belgilang. Tasdiqlash uchun kamida bitta tekshirilgan hujjat kerak.';
+
+  @override
+  String get admVfDocsNone =>
+      'Ariza beruvchi hujjat yuklamagan, shuning uchun arizani hozircha tasdiqlab bo‘lmaydi.';
+
+  @override
+  String get admVfDocsNote =>
+      'Ilova hujjat haqidagi ma’lumotni (tur, hajm, SHA-256) ko‘rsatadi. Faylning o‘zini serverdagi xavfsiz omborda tekshiring.';
+
+  @override
+  String admVfDocMeta(String type, String size, String hash) {
+    return '$type · $size · SHA-256 xeshi: $hash';
+  }
+
+  @override
+  String get admVfDecision => 'Qaror';
+
+  @override
+  String get admVfScope => 'Qaror sohasi';
+
+  @override
+  String get admVfScopeRequired =>
+      'Qaror qaysi mutaxassislik sohasiga tegishli ekanini tanlang.';
+
+  @override
+  String get admVfReason => 'Sabab (kamida 5 belgi)';
+
+  @override
+  String get admVfReasonShort => 'Kamida 5 belgidan iborat sabab kiriting.';
+
+  @override
+  String get admVfMessage => 'Ariza beruvchiga xabar (ixtiyoriy)';
+
+  @override
+  String get admVfApprove => 'Tasdiqlash';
+
+  @override
+  String get admVfRequestInfo => 'Qo‘shimcha ma’lumot so‘rash';
+
+  @override
+  String get admVfReject => 'Rad etish';
+
+  @override
+  String get admVfNoScientific =>
+      'Shaxsni tasdiqlash ilmiy taqriz huquqini bermaydi.';
+
+  @override
+  String get admVfDoneVerified => 'Ariza tasdiqlandi.';
+
+  @override
+  String get admVfDoneInfo => 'Qo‘shimcha ma’lumot so‘raldi.';
+
+  @override
+  String get admVfDoneRejected => 'Ariza rad etildi.';
+
+  @override
+  String get admVfErrSelf =>
+      'O‘z arizangizni tasdiqlay olmaysiz — buni boshqa vakolatli admin bajaradi.';
+
+  @override
+  String get admVfErrForbidden =>
+      'Sizda bu soha bo‘yicha tasdiqlash vakolati yo‘q.';
+
+  @override
+  String get admVfErrNoCredential =>
+      'Kamida bitta hujjatni tekshirilgan deb belgilang.';
+
+  @override
+  String get admVfErrUnknownCredential =>
+      'Tanlangan hujjat bu ariza beruvchiga tegishli emas. Ro‘yxatni yangilang.';
+
+  @override
+  String get admVfErrTransition =>
+      'Bu ariza bo‘yicha qaror allaqachon qabul qilingan. Ro‘yxatni yangilang.';
+
+  @override
+  String get admVfErrNoApplication => 'Ariza topilmadi.';
+
+  @override
+  String get admVfErrMfa =>
+      'Davom etish uchun ikki bosqichli tekshiruv bilan kiring.';
+
+  @override
+  String get admVfErrSignIn => 'Hisobingizga qayta kiring.';
+
+  @override
+  String get admVfErrOffline =>
+      'Aloqa yo‘q. Internetni tekshirib, qayta urinib ko‘ring.';
+
+  @override
+  String get admVfErrServer => 'Qaror saqlanmadi. Keyinroq urinib ko‘ring.';
+
+  @override
+  String get admActVerificationsView => 'Tasdiqlash arizalari ko‘rildi';
 }
