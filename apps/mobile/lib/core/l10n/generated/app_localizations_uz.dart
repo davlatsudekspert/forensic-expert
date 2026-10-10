@@ -746,7 +746,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get privacySummary =>
-      'Asosiy kutubxona va kalkulyatorlar oflayn ishlaydi. Qidiruv tarixi, natijalar va ixtiyoriy profilingiz (ism, tashkilot, mutaxassislik) qurilmangizda saqlanadi. Profil ma’lumotlari va malaka hujjatlari faqat professional tasdiqlash xizmati ulangandan keyin ariza yuborsangiz jo‘natiladi; hujjatlar maxfiy saqlanadi va hech qachon ochiq ko‘rsatilmaydi. Ilovada reklama SDK’lari yo‘q. Shaxsiy ma’lumot va ish tafsilotlari AI’ga hech qachon avtomatik yuborilmaydi.\n\nTakliflar: hamkasbingiz taklif kodidan foydalansangiz, server faqat ikki hisob orasidagi bog‘lanishni va elektron pochtangizning tuzli xeshini saqlaydi (hisobni qayta ochish orqali suiiste’molning oldini olish uchun). Taklif qilgan kishi faqat umumiy sonlarni ko‘radi — ismingiz, elektron pochtangiz, profilingiz yoki hujjatlaringizni hech qachon ko‘rmaydi. Ilova kontaktlaringizni o‘qimaydi.\n\nTaklif va murojaatlar: «Taklif va murojaatlar» bo‘limi orqali yuborgan xabaringiz, ixtiyoriy skrinshotingiz (faqat JPEG/PNG/WebP, 5 MB gacha), murojaat turi va hisobingiz elektron pochtasi serverimizda faqat sizga javob berish va ilovani yaxshilash uchun saqlanadi. Ularni faqat FORENSIC EXPERT jamoasining vakolatli administratori ko‘radi; boshqa foydalanuvchilar hech qachon ko‘rmaydi. Javobda administrator ismi emas, «FORENSIC EXPERT jamoasi» ko‘rsatiladi. Administrator amallari jurnalga yoziladi (xabar matnisiz). Murojaat yuborishdan oldin roziligingiz so‘raladi. Murojaatlar va skrinshotlar uchinchi shaxslarga berilmaydi, reklama yoki AI o‘qitish uchun ishlatilmaydi. Hisobingizni o‘chirsangiz, murojaatlaringiz, xabarlaringiz va skrinshotlaringiz ham butunlay o‘chiriladi.';
+      'Asosiy kutubxona va kalkulyatorlar oflayn ishlaydi. Qidiruv tarixi, natijalar va ixtiyoriy profilingiz (ism, tashkilot, mutaxassislik) qurilmangizda saqlanadi. Profil ma’lumotlari va malaka hujjatlari faqat professional tasdiqlash xizmati ulangandan keyin ariza yuborsangiz jo‘natiladi; hujjatlar maxfiy saqlanadi va hech qachon ochiq ko‘rsatilmaydi. Ilovada reklama SDK’lari yo‘q. Shaxsiy ma’lumot va ish tafsilotlari AI’ga hech qachon avtomatik yuborilmaydi.\n\nTakliflar: hamkasbingiz taklif kodidan foydalansangiz, server faqat ikki hisob orasidagi bog‘lanishni va elektron pochtangizning tuzli xeshini saqlaydi (hisobni qayta ochish orqali suiiste’molning oldini olish uchun). Taklif qilgan kishi faqat umumiy sonlarni ko‘radi — ismingiz, elektron pochtangiz, profilingiz yoki hujjatlaringizni hech qachon ko‘rmaydi. Ilova kontaktlaringizni o‘qimaydi.\n\nTaklif va murojaatlar: «Taklif va murojaatlar» bo‘limi orqali yuborgan xabaringiz, ixtiyoriy skrinshotingiz (faqat JPEG/PNG/WebP, 5 MB gacha), murojaat turi va hisobingiz elektron pochtasi serverimizda faqat sizga javob berish va ilovani yaxshilash uchun saqlanadi. Ularni faqat FORENSIC EXPERT jamoasining vakolatli administratori ko‘radi; boshqa foydalanuvchilar hech qachon ko‘rmaydi. Javobda administrator ismi emas, «FORENSIC EXPERT jamoasi» ko‘rsatiladi. Administrator amallari jurnalga yoziladi (xabar matnisiz). Murojaat yuborishdan oldin roziligingiz so‘raladi. Murojaatlar va skrinshotlar uchinchi shaxslarga berilmaydi, reklama yoki AI o‘qitish uchun ishlatilmaydi. Hisobingizni o‘chirsangiz, murojaatlaringiz, xabarlaringiz va skrinshotlaringiz ham butunlay o‘chiriladi.\n\nEkspert ish daftari: daftardagi yozuvlaringiz (sarlavha, ish belgisi, matn, bog‘langan obyektlar va ko‘chirilgan bayonlar) faqat shu qurilmada saqlanadi. Ular serverga, telemetriyaga, AI’ga yoki boshqa foydalanuvchilarga yuborilmaydi va zaxira nusxaga kiritilmaydi. Yozuvni ulashish yoki nusxalash faqat siz tugmani bossangiz amalga oshadi. Daftarni istalgan vaqtda «Ish daftari → Butun daftarni tozalash» orqali o‘chirishingiz mumkin; ilova o‘chirilsa, yozuvlar ham yo‘qoladi.';
 
   @override
   String get aboutBody =>
@@ -7689,4 +7689,203 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get trStatusDerivedDraft => 'Avtomatik tushuntirish — tekshirilmagan';
+
+  @override
+  String get casebookTitle => 'Ekspert ish daftari';
+
+  @override
+  String get casebookTileHint =>
+      'Manbali cheklovlar bilan shaxsiy yozuvlar — faqat shu qurilmada saqlanadi';
+
+  @override
+  String get casebookPrivacyBanner =>
+      'Faqat shu qurilmada saqlanadi. Hech narsa serverga, AI’ga yoki boshqa foydalanuvchilarga yuborilmaydi. Ilova o‘chirilsa yoki daftar tozalansa, yozuvlar butunlay yo‘qoladi. Ishda ishtirok etuvchi shaxslarning shaxsiy ma’lumotlarini kiritmang.';
+
+  @override
+  String get casebookEmptyTitle => 'Daftaringiz bo‘sh';
+
+  @override
+  String get casebookEmptyBody =>
+      'O‘z ishingiz uchun yozuv yarating va yo‘riqnoma kartalaridagi manbali cheklovlarni qo‘shing. Hammasi shu qurilmada qoladi.';
+
+  @override
+  String get casebookNewEntry => 'Yangi yozuv';
+
+  @override
+  String get casebookUntitled => 'Nomsiz yozuv';
+
+  @override
+  String get casebookEntryTitleField => 'Sarlavha';
+
+  @override
+  String get casebookCaseRefField => 'Ish belgisi (ixtiyoriy)';
+
+  @override
+  String get casebookCaseRefHint =>
+      'O‘zingizning belgingiz, masalan ichki raqam';
+
+  @override
+  String get casebookDateField => 'Sana';
+
+  @override
+  String get casebookBodyField => 'Matn';
+
+  @override
+  String get casebookSave => 'Saqlash';
+
+  @override
+  String get casebookSaved => 'Shu qurilmada saqlandi';
+
+  @override
+  String get casebookLinksTitle => 'Bog‘langan obyektlar';
+
+  @override
+  String get casebookLinksEmpty =>
+      'Hozircha modda, usul, yo‘riqnoma kartasi yoki manba bog‘lanmagan.';
+
+  @override
+  String get casebookAddLink => 'Obyektni bog‘lash';
+
+  @override
+  String get casebookLinkSearchHint =>
+      'Qidiring: modda, usul, qo‘llanma, manba…';
+
+  @override
+  String get casebookLinkNoResults =>
+      'Hech narsa topilmadi. Boshqa so‘z bilan urinib ko‘ring.';
+
+  @override
+  String get casebookLinkRemove => 'Bog‘lanishni olib tashlash';
+
+  @override
+  String get casebookBlocksTitle => 'Manbali bayonlar';
+
+  @override
+  String get casebookBlocksEmpty =>
+      'Hozircha bayon yo‘q. Yo‘riqnoma kartasidan cheklov yoki ehtiyot choralarini qo‘shing — manba va bo‘lim ham birga ko‘chiriladi.';
+
+  @override
+  String get casebookAddBlock => 'Cheklov qo‘shish';
+
+  @override
+  String get casebookPickerTitle => 'Bayonni tanlang';
+
+  @override
+  String get casebookPickerSearchHint => 'Karta yoki matn bo‘yicha saralash';
+
+  @override
+  String get casebookPickerEmpty => 'Mos cheklovlar topilmadi.';
+
+  @override
+  String get casebookKindLimitation => 'Cheklov';
+
+  @override
+  String get casebookKindCaution => 'Ehtiyot chorasi';
+
+  @override
+  String get casebookKindAi => 'AI javobi';
+
+  @override
+  String get casebookAiUnverified => 'AI tomonidan yaratilgan — tekshirilmagan';
+
+  @override
+  String get casebookSourceLabel => 'Manba';
+
+  @override
+  String get casebookLocationLabel => 'Bo‘lim';
+
+  @override
+  String get casebookPagesLabel => 'bet';
+
+  @override
+  String get casebookSourcesLabel => 'Manbalar';
+
+  @override
+  String get casebookBlockRemove => 'Bayonni olib tashlash';
+
+  @override
+  String get casebookAddToCasebook => 'Ish daftariga qo‘shish';
+
+  @override
+  String get casebookChooseEntry => 'Qaysi yozuvga qo‘shamiz?';
+
+  @override
+  String get casebookChooseNew => 'Yangi yozuv';
+
+  @override
+  String get casebookAiAddNote =>
+      'Bu AI matni «AI tomonidan yaratilgan — tekshirilmagan» deb belgilanadi. Tayanishdan oldin manbalar bilan solishtiring.';
+
+  @override
+  String casebookAddedTo(String title) {
+    return '«$title» yozuviga qo‘shildi';
+  }
+
+  @override
+  String get casebookOpen => 'Ochish';
+
+  @override
+  String get casebookShare => 'Ulashish';
+
+  @override
+  String get casebookCopy => 'Matnni nusxalash';
+
+  @override
+  String get casebookCopied => 'Buferga nusxa olindi';
+
+  @override
+  String get casebookExportDisclaimer =>
+      'Bu shaxsiy ish yozuvi, ekspert xulosasi EMAS. Bayonlar ma’lumotnomadan ko‘chirilgan va ish materiallarini haqiqiy tekshirishni almashtirmaydi.';
+
+  @override
+  String get casebookExportFooter =>
+      'FORENSIC EXPERT ish daftaridan eksport qilindi (muallif qurilmasida saqlanadi). Har bir bayonni asl manba bilan tekshiring.';
+
+  @override
+  String get casebookExportLinks => 'Bog‘langan obyektlar';
+
+  @override
+  String get casebookExportBlocks => 'Manbali bayonlar';
+
+  @override
+  String get casebookDeleteEntry => 'Yozuvni o‘chirish';
+
+  @override
+  String get casebookDeleteEntryTitle => 'Bu yozuv o‘chirilsinmi?';
+
+  @override
+  String get casebookDeleteEntryBody =>
+      'Yozuv shu qurilmadan o‘chiriladi. Qaytarib bo‘lmaydi.';
+
+  @override
+  String get casebookDeleteConfirm => 'O‘chirish';
+
+  @override
+  String get casebookCancel => 'Bekor qilish';
+
+  @override
+  String get casebookClearAll => 'Butun daftarni tozalash';
+
+  @override
+  String get casebookClearTitle => 'Butun daftar tozalansinmi?';
+
+  @override
+  String get casebookClearBody =>
+      'Barcha yozuvlar shu qurilmadan butunlay o‘chiriladi. Ular boshqa joyda saqlanmaydi, shuning uchun qayta tiklab bo‘lmaydi.';
+
+  @override
+  String get casebookCleared => 'Daftar tozalandi';
+
+  @override
+  String casebookCount(int n) {
+    return 'Yozuvlar: $n';
+  }
+
+  @override
+  String casebookBlockCount(int n) {
+    return 'Bayonlar: $n';
+  }
+
+  @override
+  String get casebookNotFound => 'Bu yozuv endi mavjud emas.';
 }

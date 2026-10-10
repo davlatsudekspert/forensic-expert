@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../app/casebook.dart';
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
@@ -14,6 +15,7 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../domain/ai/ai_architecture.dart';
 import '../../../domain/ai/rag_pipeline.dart';
 import '../../../domain/ports/ai_ports.dart';
+import '../../casebook/presentation/casebook_blocks.dart';
 import '../../evidence/presentation/localized_content.dart';
 import 'rag_sections.dart';
 
@@ -286,7 +288,7 @@ class _AiScreenState extends ConsumerState<AiScreen> {
 /// Natija: avval AI javobi yoki uning yo‘qligi sababi, keyin alohida —
 /// oflayn bazadan topilgan manbalar. Oflayn natija hech qachon AI javobi
 /// sifatida ko‘rsatilmaydi.
-class _AiResultView extends StatelessWidget {
+class _AiResultView extends ConsumerWidget {
   const _AiResultView({required this.answer});
 
   final RagAnswer answer;
@@ -301,7 +303,7 @@ class _AiResultView extends StatelessWidget {
   };
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
     final t = Theme.of(context).textTheme;
     final blocks = answer.safety?.blocks ?? const <SafetyBlock>{};
@@ -399,6 +401,28 @@ class _AiResultView extends StatelessWidget {
                 answer.text ?? '',
                 style: t.bodyMedium?.copyWith(height: 1.5),
               ),
+              // Faqat foydalanuvchi o‘zi bossa; AI matni daftarda doim
+              // «tekshirilmagan» deb belgilanadi (avtomatik kirmaydi).
+              if ((answer.text ?? '').trim().isNotEmpty)
+                Align(
+                  alignment: AlignmentDirectional.centerStart,
+                  child: TextButton.icon(
+                    key: const Key('ai.addToCasebook'),
+                    icon: const Icon(Icons.bookmark_add_outlined),
+                    label: Text(l.casebookAddToCasebook),
+                    onPressed: () => addBlockToCasebook(
+                      context,
+                      ref,
+                      block: casebookBlockFromAi(
+                        text: answer.text!,
+                        sourceIds: [for (final s in answer.sources) s.sourceId],
+                        lang: Localizations.localeOf(context).languageCode,
+                        id: ref.read(casebookProvider.notifier).newId(),
+                      ),
+                      newTitle: l.casebookKindAi,
+                    ),
+                  ),
+                ),
             ],
           ),
           RagOutcome.notCovered => Column(

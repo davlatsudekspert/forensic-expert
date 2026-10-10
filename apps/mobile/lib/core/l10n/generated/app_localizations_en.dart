@@ -742,7 +742,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get privacySummary =>
-      'The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically.\n\nInvitations: if you use a colleague’s invitation code, the server stores only the link between the two accounts and a salted hash of your email (to prevent abuse after account re-creation). Inviters see only totals — never your name, email, profile or documents. The app never reads your contacts.\n\nSuggestions & support: the message you send in «Suggestions & support», an optional screenshot (JPEG/PNG/WebP only, up to 5 MB), the request type and your account e-mail are stored on our server only to reply to you and improve the app. Only an authorised FORENSIC EXPERT team administrator can see them; other users never can. Replies are signed «FORENSIC EXPERT team», not with an administrator\'s name. Administrator actions are logged (without message text). Your consent is requested before a request is sent. Requests and screenshots are not shared with third parties and are not used for advertising or AI training. If you delete your account, your requests, messages and screenshots are deleted permanently.';
+      'The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically.\n\nInvitations: if you use a colleague’s invitation code, the server stores only the link between the two accounts and a salted hash of your email (to prevent abuse after account re-creation). Inviters see only totals — never your name, email, profile or documents. The app never reads your contacts.\n\nSuggestions & support: the message you send in «Suggestions & support», an optional screenshot (JPEG/PNG/WebP only, up to 5 MB), the request type and your account e-mail are stored on our server only to reply to you and improve the app. Only an authorised FORENSIC EXPERT team administrator can see them; other users never can. Replies are signed «FORENSIC EXPERT team», not with an administrator\'s name. Administrator actions are logged (without message text). Your consent is requested before a request is sent. Requests and screenshots are not shared with third parties and are not used for advertising or AI training. If you delete your account, your requests, messages and screenshots are deleted permanently.\n\nExpert casebook: your entries (title, case reference, text, linked items and copied statements) are stored only on this device. They are not sent to a server, to telemetry, to AI or to other users, and are not included in backups. An entry is shared or copied only when you press the button. You can delete the casebook at any time via “Casebook → Clear entire casebook”; if you delete the app, the entries are gone too.';
 
   @override
   String get aboutBody =>
@@ -7717,4 +7717,201 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get trStatusDerivedDraft => 'Automatic explanation — not reviewed';
+
+  @override
+  String get casebookTitle => 'Expert casebook';
+
+  @override
+  String get casebookTileHint =>
+      'Private notes with source-backed limitations — stored only on this device';
+
+  @override
+  String get casebookPrivacyBanner =>
+      'Stored only on this device. Nothing is sent to a server, to AI or to other users. Deleting the app or clearing the casebook removes it permanently. Do not enter personal data of people involved in a case.';
+
+  @override
+  String get casebookEmptyTitle => 'Your casebook is empty';
+
+  @override
+  String get casebookEmptyBody =>
+      'Create an entry for your work and add source-backed limitations from guideline cards. Everything stays on this device.';
+
+  @override
+  String get casebookNewEntry => 'New entry';
+
+  @override
+  String get casebookUntitled => 'Untitled entry';
+
+  @override
+  String get casebookEntryTitleField => 'Title';
+
+  @override
+  String get casebookCaseRefField => 'Case reference (optional)';
+
+  @override
+  String get casebookCaseRefHint => 'Your own label, e.g. an internal number';
+
+  @override
+  String get casebookDateField => 'Date';
+
+  @override
+  String get casebookBodyField => 'Notes';
+
+  @override
+  String get casebookSave => 'Save';
+
+  @override
+  String get casebookSaved => 'Saved on this device';
+
+  @override
+  String get casebookLinksTitle => 'Linked items';
+
+  @override
+  String get casebookLinksEmpty =>
+      'No linked substances, methods, guideline cards or sources yet.';
+
+  @override
+  String get casebookAddLink => 'Link an item';
+
+  @override
+  String get casebookLinkSearchHint =>
+      'Search substance, method, guideline, source…';
+
+  @override
+  String get casebookLinkNoResults => 'Nothing found. Try another term.';
+
+  @override
+  String get casebookLinkRemove => 'Remove link';
+
+  @override
+  String get casebookBlocksTitle => 'Source-backed statements';
+
+  @override
+  String get casebookBlocksEmpty =>
+      'No statements yet. Add a limitation or caution from a guideline card — the source and its section are copied with it.';
+
+  @override
+  String get casebookAddBlock => 'Add limitation or caution';
+
+  @override
+  String get casebookPickerTitle => 'Choose a statement';
+
+  @override
+  String get casebookPickerSearchHint => 'Filter by card or text';
+
+  @override
+  String get casebookPickerEmpty => 'No matching limitations found.';
+
+  @override
+  String get casebookKindLimitation => 'Limitation';
+
+  @override
+  String get casebookKindCaution => 'Caution';
+
+  @override
+  String get casebookKindAi => 'AI answer';
+
+  @override
+  String get casebookAiUnverified => 'AI-generated — unverified';
+
+  @override
+  String get casebookSourceLabel => 'Source';
+
+  @override
+  String get casebookLocationLabel => 'Section';
+
+  @override
+  String get casebookPagesLabel => 'pp.';
+
+  @override
+  String get casebookSourcesLabel => 'Sources';
+
+  @override
+  String get casebookBlockRemove => 'Remove statement';
+
+  @override
+  String get casebookAddToCasebook => 'Add to casebook';
+
+  @override
+  String get casebookChooseEntry => 'Add to which entry?';
+
+  @override
+  String get casebookChooseNew => 'New entry';
+
+  @override
+  String get casebookAiAddNote =>
+      'This AI text will be marked “AI-generated — unverified”. Check it against the sources before relying on it.';
+
+  @override
+  String casebookAddedTo(String title) {
+    return 'Added to “$title”';
+  }
+
+  @override
+  String get casebookOpen => 'Open';
+
+  @override
+  String get casebookShare => 'Share';
+
+  @override
+  String get casebookCopy => 'Copy text';
+
+  @override
+  String get casebookCopied => 'Copied to clipboard';
+
+  @override
+  String get casebookExportDisclaimer =>
+      'This is a personal working note, NOT an expert opinion or conclusion. Statements are copied from reference material and do not replace examination of the actual case materials.';
+
+  @override
+  String get casebookExportFooter =>
+      'Exported from the FORENSIC EXPERT casebook (kept on the author’s device). Verify every statement against the original source.';
+
+  @override
+  String get casebookExportLinks => 'Linked items';
+
+  @override
+  String get casebookExportBlocks => 'Source-backed statements';
+
+  @override
+  String get casebookDeleteEntry => 'Delete entry';
+
+  @override
+  String get casebookDeleteEntryTitle => 'Delete this entry?';
+
+  @override
+  String get casebookDeleteEntryBody =>
+      'The entry will be removed from this device. This cannot be undone.';
+
+  @override
+  String get casebookDeleteConfirm => 'Delete';
+
+  @override
+  String get casebookCancel => 'Cancel';
+
+  @override
+  String get casebookClearAll => 'Clear entire casebook';
+
+  @override
+  String get casebookClearTitle => 'Clear the whole casebook?';
+
+  @override
+  String get casebookClearBody =>
+      'All entries will be deleted from this device permanently. They are not stored anywhere else, so they cannot be restored.';
+
+  @override
+  String get casebookCleared => 'Casebook cleared';
+
+  @override
+  String casebookCount(int n) {
+    return '$n entries';
+  }
+
+  @override
+  String casebookBlockCount(int n) {
+    return '$n statements';
+  }
+
+  @override
+  String get casebookNotFound => 'This entry no longer exists.';
 }

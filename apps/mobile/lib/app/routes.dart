@@ -93,6 +93,11 @@ abstract final class Routes {
   static const tools = '/tools';
   static String tool(String id) => '/tools/tool/$id';
 
+  /// «Ekspert ish daftari» — faqat qurilmada saqlanadigan shaxsiy yozuvlar.
+  static const casebook = '/tools/casebook';
+  static String casebookEntry(String id) =>
+      '/tools/casebook/entry/${Uri.encodeComponent(id)}';
+
   static const library = '/library';
   static String libraryEntry(String id) => '/library/entry/$id';
   static const sources = '/library/sources';

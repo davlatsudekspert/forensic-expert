@@ -1423,7 +1423,7 @@ abstract class AppLocalizations {
   /// Privacy summary.
   ///
   /// In en, this message translates to:
-  /// **'The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically.\n\nInvitations: if you use a colleague’s invitation code, the server stores only the link between the two accounts and a salted hash of your email (to prevent abuse after account re-creation). Inviters see only totals — never your name, email, profile or documents. The app never reads your contacts.\n\nSuggestions & support: the message you send in «Suggestions & support», an optional screenshot (JPEG/PNG/WebP only, up to 5 MB), the request type and your account e-mail are stored on our server only to reply to you and improve the app. Only an authorised FORENSIC EXPERT team administrator can see them; other users never can. Replies are signed «FORENSIC EXPERT team», not with an administrator\'s name. Administrator actions are logged (without message text). Your consent is requested before a request is sent. Requests and screenshots are not shared with third parties and are not used for advertising or AI training. If you delete your account, your requests, messages and screenshots are deleted permanently.'**
+  /// **'The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically.\n\nInvitations: if you use a colleague’s invitation code, the server stores only the link between the two accounts and a salted hash of your email (to prevent abuse after account re-creation). Inviters see only totals — never your name, email, profile or documents. The app never reads your contacts.\n\nSuggestions & support: the message you send in «Suggestions & support», an optional screenshot (JPEG/PNG/WebP only, up to 5 MB), the request type and your account e-mail are stored on our server only to reply to you and improve the app. Only an authorised FORENSIC EXPERT team administrator can see them; other users never can. Replies are signed «FORENSIC EXPERT team», not with an administrator\'s name. Administrator actions are logged (without message text). Your consent is requested before a request is sent. Requests and screenshots are not shared with third parties and are not used for advertising or AI training. If you delete your account, your requests, messages and screenshots are deleted permanently.\n\nExpert casebook: your entries (title, case reference, text, linked items and copied statements) are stored only on this device. They are not sent to a server, to telemetry, to AI or to other users, and are not included in backups. An entry is shared or copied only when you press the button. You can delete the casebook at any time via “Casebook → Clear entire casebook”; if you delete the app, the entries are gone too.'**
   String get privacySummary;
 
   /// About text.
@@ -13556,6 +13556,366 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Automatic explanation — not reviewed'**
   String get trStatusDerivedDraft;
+
+  /// Casebook screen title / tools tile.
+  ///
+  /// In en, this message translates to:
+  /// **'Expert casebook'**
+  String get casebookTitle;
+
+  /// Tools tile subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Private notes with source-backed limitations — stored only on this device'**
+  String get casebookTileHint;
+
+  /// Privacy banner.
+  ///
+  /// In en, this message translates to:
+  /// **'Stored only on this device. Nothing is sent to a server, to AI or to other users. Deleting the app or clearing the casebook removes it permanently. Do not enter personal data of people involved in a case.'**
+  String get casebookPrivacyBanner;
+
+  /// Empty state title.
+  ///
+  /// In en, this message translates to:
+  /// **'Your casebook is empty'**
+  String get casebookEmptyTitle;
+
+  /// Empty state body.
+  ///
+  /// In en, this message translates to:
+  /// **'Create an entry for your work and add source-backed limitations from guideline cards. Everything stays on this device.'**
+  String get casebookEmptyBody;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'New entry'**
+  String get casebookNewEntry;
+
+  /// Fallback title.
+  ///
+  /// In en, this message translates to:
+  /// **'Untitled entry'**
+  String get casebookUntitled;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Title'**
+  String get casebookEntryTitleField;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Case reference (optional)'**
+  String get casebookCaseRefField;
+
+  /// Hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Your own label, e.g. an internal number'**
+  String get casebookCaseRefHint;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Date'**
+  String get casebookDateField;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Notes'**
+  String get casebookBodyField;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get casebookSave;
+
+  /// Snackbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved on this device'**
+  String get casebookSaved;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Linked items'**
+  String get casebookLinksTitle;
+
+  /// Empty.
+  ///
+  /// In en, this message translates to:
+  /// **'No linked substances, methods, guideline cards or sources yet.'**
+  String get casebookLinksEmpty;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Link an item'**
+  String get casebookAddLink;
+
+  /// Search hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search substance, method, guideline, source…'**
+  String get casebookLinkSearchHint;
+
+  /// Empty search.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing found. Try another term.'**
+  String get casebookLinkNoResults;
+
+  /// Tooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove link'**
+  String get casebookLinkRemove;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Source-backed statements'**
+  String get casebookBlocksTitle;
+
+  /// Empty.
+  ///
+  /// In en, this message translates to:
+  /// **'No statements yet. Add a limitation or caution from a guideline card — the source and its section are copied with it.'**
+  String get casebookBlocksEmpty;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Add limitation or caution'**
+  String get casebookAddBlock;
+
+  /// Sheet title.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a statement'**
+  String get casebookPickerTitle;
+
+  /// Search hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Filter by card or text'**
+  String get casebookPickerSearchHint;
+
+  /// Empty.
+  ///
+  /// In en, this message translates to:
+  /// **'No matching limitations found.'**
+  String get casebookPickerEmpty;
+
+  /// Block kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Limitation'**
+  String get casebookKindLimitation;
+
+  /// Block kind.
+  ///
+  /// In en, this message translates to:
+  /// **'Caution'**
+  String get casebookKindCaution;
+
+  /// Block kind.
+  ///
+  /// In en, this message translates to:
+  /// **'AI answer'**
+  String get casebookKindAi;
+
+  /// Mark on AI blocks.
+  ///
+  /// In en, this message translates to:
+  /// **'AI-generated — unverified'**
+  String get casebookAiUnverified;
+
+  /// Export/label.
+  ///
+  /// In en, this message translates to:
+  /// **'Source'**
+  String get casebookSourceLabel;
+
+  /// Export/label.
+  ///
+  /// In en, this message translates to:
+  /// **'Section'**
+  String get casebookLocationLabel;
+
+  /// Export/label.
+  ///
+  /// In en, this message translates to:
+  /// **'pp.'**
+  String get casebookPagesLabel;
+
+  /// Export/label.
+  ///
+  /// In en, this message translates to:
+  /// **'Sources'**
+  String get casebookSourcesLabel;
+
+  /// Tooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove statement'**
+  String get casebookBlockRemove;
+
+  /// Action on guideline sections and AI answers.
+  ///
+  /// In en, this message translates to:
+  /// **'Add to casebook'**
+  String get casebookAddToCasebook;
+
+  /// Sheet title.
+  ///
+  /// In en, this message translates to:
+  /// **'Add to which entry?'**
+  String get casebookChooseEntry;
+
+  /// Option.
+  ///
+  /// In en, this message translates to:
+  /// **'New entry'**
+  String get casebookChooseNew;
+
+  /// Note shown before adding AI text.
+  ///
+  /// In en, this message translates to:
+  /// **'This AI text will be marked “AI-generated — unverified”. Check it against the sources before relying on it.'**
+  String get casebookAiAddNote;
+
+  /// Snackbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Added to “{title}”'**
+  String casebookAddedTo(String title);
+
+  /// Snackbar action.
+  ///
+  /// In en, this message translates to:
+  /// **'Open'**
+  String get casebookOpen;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Share'**
+  String get casebookShare;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy text'**
+  String get casebookCopy;
+
+  /// Snackbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Copied to clipboard'**
+  String get casebookCopied;
+
+  /// First lines of every export.
+  ///
+  /// In en, this message translates to:
+  /// **'This is a personal working note, NOT an expert opinion or conclusion. Statements are copied from reference material and do not replace examination of the actual case materials.'**
+  String get casebookExportDisclaimer;
+
+  /// Export footer.
+  ///
+  /// In en, this message translates to:
+  /// **'Exported from the FORENSIC EXPERT casebook (kept on the author’s device). Verify every statement against the original source.'**
+  String get casebookExportFooter;
+
+  /// Export label.
+  ///
+  /// In en, this message translates to:
+  /// **'Linked items'**
+  String get casebookExportLinks;
+
+  /// Export label.
+  ///
+  /// In en, this message translates to:
+  /// **'Source-backed statements'**
+  String get casebookExportBlocks;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete entry'**
+  String get casebookDeleteEntry;
+
+  /// Dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete this entry?'**
+  String get casebookDeleteEntryTitle;
+
+  /// Dialog body.
+  ///
+  /// In en, this message translates to:
+  /// **'The entry will be removed from this device. This cannot be undone.'**
+  String get casebookDeleteEntryBody;
+
+  /// Dialog button.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete'**
+  String get casebookDeleteConfirm;
+
+  /// Dialog button.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get casebookCancel;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear entire casebook'**
+  String get casebookClearAll;
+
+  /// Dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear the whole casebook?'**
+  String get casebookClearTitle;
+
+  /// Dialog body.
+  ///
+  /// In en, this message translates to:
+  /// **'All entries will be deleted from this device permanently. They are not stored anywhere else, so they cannot be restored.'**
+  String get casebookClearBody;
+
+  /// Snackbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Casebook cleared'**
+  String get casebookCleared;
+
+  /// Entry count.
+  ///
+  /// In en, this message translates to:
+  /// **'{n} entries'**
+  String casebookCount(int n);
+
+  /// Entry meta.
+  ///
+  /// In en, this message translates to:
+  /// **'{n} statements'**
+  String casebookBlockCount(int n);
+
+  /// Missing entry.
+  ///
+  /// In en, this message translates to:
+  /// **'This entry no longer exists.'**
+  String get casebookNotFound;
 }
 
 class _AppLocalizationsDelegate
