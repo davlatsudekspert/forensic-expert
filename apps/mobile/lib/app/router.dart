@@ -44,6 +44,8 @@ import '../features/onboarding/presentation/disclaimer_screen.dart';
 import '../features/onboarding/presentation/language_screen.dart';
 import '../features/onboarding/presentation/mode_screen.dart';
 import '../features/placeholder/presentation/not_found_screen.dart';
+import '../features/pro/presentation/analysis_plan_screen.dart';
+import '../features/pro/presentation/pro_search_screen.dart';
 import '../features/professional/presentation/account_choice_screen.dart';
 import '../features/professional/presentation/profile_edit_screen.dart';
 import '../features/professional/presentation/review_section.dart';
@@ -190,6 +192,14 @@ final routerProvider = Provider<GoRouter>((ref) {
                     path: 'search',
                     builder: (c, s) =>
                         SearchScreen(initialQuery: s.uri.queryParameters['q']),
+                    routes: [
+                      GoRoute(
+                        path: 'pro',
+                        builder: (c, s) => ProSearchScreen(
+                          initialText: s.uri.queryParameters['q'] ?? '',
+                        ),
+                      ),
+                    ],
                   ),
                   GoRoute(
                     path: 'learn',
@@ -308,6 +318,14 @@ final routerProvider = Provider<GoRouter>((ref) {
                     path: 'substance/:id',
                     builder: (c, s) =>
                         EntryDetailScreen(entryId: s.pathParameters['id']!),
+                    routes: [
+                      GoRoute(
+                        path: 'plan',
+                        builder: (c, s) => AnalysisPlanScreen(
+                          entityId: s.pathParameters['id']!,
+                        ),
+                      ),
+                    ],
                   ),
                   GoRoute(
                     path: 'tool/:id',

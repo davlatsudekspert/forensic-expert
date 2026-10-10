@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../app/pro_tools.dart';
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
@@ -69,6 +70,8 @@ class SubstanceAnalysisSection extends ConsumerWidget {
           text: l.analysisIntro,
           tone: FeBannerTone.review,
         ),
+        // Pro: shu moddaning to‘liq tahlil rejasi (bepulda qisqa ko‘rinish).
+        AnalysisPlanEntry(entityId: entityId),
         // 1. Namunalar (biologik ob’ektlar).
         subheader(l.analysisSpecimensTitle),
         if (a.specimens.isEmpty)
@@ -286,6 +289,60 @@ class AnalysisRow extends StatelessWidget {
               ),
             if (onTap != null)
               Icon(Icons.chevron_right, size: 20, color: c.textSecondary),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// «Tahlil rejasi» kirish kartasi. Bepul foydalanuvchi ham ko‘radi (Pro
+/// belgisi bilan) — sahifada qisqa ko‘rinish va tariflar taklifi.
+class AnalysisPlanEntry extends ConsumerWidget {
+  const AnalysisPlanEntry({super.key, required this.entityId});
+
+  final String entityId;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final unlocked = ref.watch(proToolsUnlockedProvider);
+    return Padding(
+      padding: const EdgeInsets.only(top: FeSpace.sm),
+      child: FeCard(
+        key: Key('analysis.plan.entry.$entityId'),
+        onTap: () => context.push(Routes.homePlan(entityId)),
+        padding: const EdgeInsets.all(FeSpace.sm),
+        child: Row(
+          children: [
+            Icon(Icons.route_outlined, color: c.accent),
+            const SizedBox(width: FeSpace.sm),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    l.planEntryTitle,
+                    style: t.bodyMedium?.copyWith(fontWeight: FontWeight.w600),
+                  ),
+                  Text(
+                    l.planEntryBody,
+                    style: t.bodySmall?.copyWith(color: c.textSecondary),
+                  ),
+                ],
+              ),
+            ),
+            if (!unlocked) ...[
+              Icon(Icons.lock_outline, size: 14, color: c.textSecondary),
+              const SizedBox(width: 3),
+              Text(
+                l.lockedBadge,
+                style: t.labelSmall?.copyWith(color: c.textSecondary),
+              ),
+            ],
+            Icon(Icons.chevron_right, size: 20, color: c.textSecondary),
           ],
         ),
       ),

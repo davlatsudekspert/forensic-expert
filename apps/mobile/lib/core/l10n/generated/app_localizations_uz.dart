@@ -7689,4 +7689,383 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get trStatusDerivedDraft => 'Avtomatik tushuntirish — tekshirilmagan';
+
+  @override
+  String get proSearchTitle => 'Kengaytirilgan qidiruv';
+
+  @override
+  String get proSearchEntry => 'Filtrlar va teskari qidiruv';
+
+  @override
+  String get proSearchIntro =>
+      'Qidiruvni namuna, metod, reagent, dalil darajasi va boshqa belgilar bo‘yicha toraytiring yoki namuna, metod yoki reagentdan unga hujjatlashtirilgan moddalarga o‘ting.';
+
+  @override
+  String proSearchLockedTitle(String tier) {
+    return 'Kengaytirilgan qidiruv — $tier';
+  }
+
+  @override
+  String get proSearchLockedBody =>
+      'Filtrlar (fan, sinf, namuna, metod, reagent, dalil darajasi, tekshiruv holati, yurisdiksiya, yil), aniq ibora bo‘yicha qidiruv va teskari qidiruv pullik tarifga kiradi. Oddiy qidiruv hammaga ochiq.';
+
+  @override
+  String get proSearchHint => 'Nom, sinonim yoki «ibora»';
+
+  @override
+  String get proSearchExact => 'Aniq moslik';
+
+  @override
+  String get proTabSearch => 'Qidiruv';
+
+  @override
+  String get proTabReverse => 'Teskari qidiruv';
+
+  @override
+  String get proFilters => 'Filtrlar';
+
+  @override
+  String get proFiltersClear => 'Filtrlarni tozalash';
+
+  @override
+  String get proFacetAny => 'Istalgan';
+
+  @override
+  String get proFacetDiscipline => 'Fan';
+
+  @override
+  String get proFacetClass => 'Modda sinfi';
+
+  @override
+  String get proFacetSpecimen => 'Namuna';
+
+  @override
+  String get proFacetFamily => 'Metodlar oilasi';
+
+  @override
+  String get proFacetReagent => 'Reagent';
+
+  @override
+  String get proFacetEvidence => 'Dalil darajasi';
+
+  @override
+  String get proFacetStatus => 'Tekshiruv holati';
+
+  @override
+  String get proFacetJurisdiction => 'Yurisdiksiya';
+
+  @override
+  String get proFacetYear => 'Manba yili';
+
+  @override
+  String proEvidenceAtLeast(String level) {
+    return '$level daraja va undan yuqori';
+  }
+
+  @override
+  String proYearSince(int year) {
+    return '$year-yildan boshlab';
+  }
+
+  @override
+  String proFamilyName(String code) {
+    String _temp0 = intl.Intl.selectLogic(code, {
+      'colourTest': 'Rangli (tomchi) test',
+      'tlc': 'TQX (yupqa qatlamli xromatografiya)',
+      'microcrystal': 'Mikrokristal test',
+      'uvVis': 'UB/ko‘rinuvchi spektrofotometriya',
+      'immunoassay': 'Immunokimyoviy tahlil',
+      'gcMs': 'GC-MS',
+      'lcMs': 'LC-MS, LC-MS/MS',
+      'hrms': 'HRMS (yuqori aniqlikdagi mass-spektrometriya)',
+      'gcFid': 'GC-FID, bug‘ fazali GC',
+      'hplc': 'HPLC',
+      'other': '$code',
+    });
+    return '$_temp0';
+  }
+
+  @override
+  String proResultCount(int count) {
+    return '$count ta natija';
+  }
+
+  @override
+  String get proResultsNoneTitle => 'Paketda mos yozuv topilmadi';
+
+  @override
+  String get proResultsNoneBody =>
+      'Bu birikmaga hech narsa mos kelmadi. Filtrni olib tashlang, aniq moslikni o‘chiring yoki boshqa yozilish yoki tilni sinab ko‘ring.';
+
+  @override
+  String get proResultsStart =>
+      'Natijalarni ko‘rish uchun nom yozing yoki filtr tanlang.';
+
+  @override
+  String get proReverseReagent => 'Reagent → moddalar';
+
+  @override
+  String get proReverseSpecimen => 'Namuna → analitlar';
+
+  @override
+  String get proReverseMethod => 'Metod → moddalar';
+
+  @override
+  String get proReversePick =>
+      'Paketda qaysi moddalar hujjatlashtirilganini ko‘rish uchun birini tanlang.';
+
+  @override
+  String proReverseCount(int count) {
+    return '$count ta modda';
+  }
+
+  @override
+  String proReverseNoReagents(int count) {
+    return 'Paketda reagent va modda orasidagi bog‘lanish hali yo‘q (reagent retseptlari: $count ta). Hech narsa taxmin qilinmaydi.';
+  }
+
+  @override
+  String get proReverseEmpty =>
+      'Bu element uchun paketda hujjatlashtirilgan modda yo‘q.';
+
+  @override
+  String get proReverseNote =>
+      'Faqat manbalarda ko‘rsatilgan bog‘lanishlar. Bu yerda topilmasa — mumkin emas degani emas.';
+
+  @override
+  String get proRoleAnalysed => 'shu metod bilan tahlil qilingan (manba)';
+
+  @override
+  String get proRoleConfirmation => 'skriningdan keyingi tasdiqlash';
+
+  @override
+  String get proRoleScreened => 'shu test bilan skrining';
+
+  @override
+  String get proRoleMeasured =>
+      'shu namunada qiymat keltirilgan (chegara emas)';
+
+  @override
+  String proViaLabel(String names) {
+    return '$names orqali';
+  }
+
+  @override
+  String get planEntryTitle => 'Modda bo‘yicha tahlil rejasi';
+
+  @override
+  String get planEntryBody =>
+      'Namunalar, taxminiy testlar, tasdiqlash, halaqitlar, cheklovlar va xulosa uchun eslatma — bitta sahifada, manbalari bilan.';
+
+  @override
+  String get planTitle => 'Tahlil rejasi';
+
+  @override
+  String get planIntro =>
+      'Faqat paketdagi manbali bayonlardan yig‘ilgan. Bu ma’lumotnoma sxema — tasdiqlangan protsedura ham, ekspert xulosasi ham emas.';
+
+  @override
+  String planSummary(int s, int p, int c, int l) {
+    return 'Namunalar: $s · Taxminiy testlar: $p · Tasdiqlash: $c · Cheklovlar: $l';
+  }
+
+  @override
+  String planLockedTitle(String tier) {
+    return 'To‘liq tahlil rejasi — $tier';
+  }
+
+  @override
+  String get planLockedBody =>
+      'Bepul ko‘rinishda sonlar va namunalar ko‘rsatiladi. Pullik tarif reagentli taxminiy testlar, stol usullari va tasdiqlash bosqichlari, halaqitlar, cheklovlar, xulosa uchun eslatma hamda to‘liq iqtiboslar bilan nusxalanadigan matnni qo‘shadi.';
+
+  @override
+  String get planSecSpecimens => 'Namunalar va namuna olish bo‘yicha izohlar';
+
+  @override
+  String get planSecPresumptive =>
+      'Taxminiy (presumptive) testlar: reagent va kuzatuv';
+
+  @override
+  String get planSecBench => 'TQX, mikrokristal va UB/Vis';
+
+  @override
+  String get planSecConfirmation => 'Tasdiqlash bosqichi';
+
+  @override
+  String get planSecInstrumental => 'Manbalardagi boshqa instrumental metodlar';
+
+  @override
+  String get planSecInterferences =>
+      'Halaqitlar, o‘zaro reaksiya va yolg‘on natijalar';
+
+  @override
+  String get planSecLimits => 'Talqin chegaralari';
+
+  @override
+  String get planSecReminder => 'Xulosa uchun eslatma';
+
+  @override
+  String get planNoSpecimens =>
+      'Bu modda uchun paketda hujjatlashtirilgan namuna yo‘q.';
+
+  @override
+  String get planNoSamplingNotes =>
+      'Bu namunalar uchun paketda namuna olish yoki saqlash bo‘yicha izoh yo‘q.';
+
+  @override
+  String get planNoPresumptive =>
+      'Bu modda uchun paketda taxminiy test hujjatlashtirilmagan.';
+
+  @override
+  String get planNoReagents =>
+      'Bu test uchun paketda «reagent — kutilgan kuzatuv» jufti hujjatlashtirilmagan.';
+
+  @override
+  String get planNoBench =>
+      'Bu modda uchun paketda TQX, mikrokristal yoki UB/Vis tizimi hujjatlashtirilmagan.';
+
+  @override
+  String get planNoConfirmation =>
+      'Bu modda uchun paketda tasdiqlovchi metod hujjatlashtirilmagan.';
+
+  @override
+  String get planNoInstrumental =>
+      'Bu modda bilan paketda boshqa instrumental metod tilga olinmagan.';
+
+  @override
+  String get planNoInterferences =>
+      'Bu moddaning testlari uchun paketda halaqit, o‘zaro reaksiya yoki yolg‘on natija hujjatlashtirilmagan.';
+
+  @override
+  String get planNoLimits =>
+      'Bu namunalar va metodlar uchun paketda manbali cheklov bayoni yo‘q.';
+
+  @override
+  String get planConfirmRequired => 'Tasdiqlash shart';
+
+  @override
+  String get planReagentsLabel => 'Manbalarda bog‘langan reagentlar';
+
+  @override
+  String get planReagentRecipe => 'Reagent retsepti';
+
+  @override
+  String planPrinciple(String principle) {
+    return 'Tamoyil: $principle';
+  }
+
+  @override
+  String get planNotDefinitive =>
+      'Manbalar bu testni aniq identifikatsiya sifatida ko‘rsatmaydi.';
+
+  @override
+  String planSourceLine(String title) {
+    return 'Manba: $title';
+  }
+
+  @override
+  String planLocatorLine(String locator) {
+    return 'Manbadagi joyi: $locator';
+  }
+
+  @override
+  String get planNoSource => 'Manba ko‘rsatilmagan';
+
+  @override
+  String planRoleName(String role) {
+    String _temp0 = intl.Intl.selectLogic(role, {
+      'basis': 'Manba bayoni',
+      'presumptive': 'Taxminiy xususiyati',
+      'confirmationRequirement': 'Tasdiqlash talabi',
+      'limitation': 'Cheklov',
+      'crossReactivity': 'O‘zaro reaksiya',
+      'falsePositive': 'Yolg‘on musbat natija',
+      'falseNegative': 'Yolg‘on manfiy natija',
+      'interference': 'Halaqit',
+      'detectionWindow': 'Aniqlash oynasi',
+      'use': 'Namuna olish / qo‘llash izohi',
+      'principle': 'Tamoyil',
+      'application': 'Qo‘llanilishi',
+      'observation': 'Kutilgan kuzatuv',
+      'other': '$role',
+    });
+    return '$_temp0';
+  }
+
+  @override
+  String get planMayHeading => 'Tayanish mumkin';
+
+  @override
+  String get planMayNotHeading => 'Aytmaslik kerak';
+
+  @override
+  String planRemPresumptiveOnly(String tests) {
+    return 'Manbalar quyidagilar bo‘yicha aniq identifikatsiyani tasdiqlamaydi: $tests. Bunday natijani faqat taxminiy deb yozing.';
+  }
+
+  @override
+  String planRemConfirmDocumented(String methods) {
+    return 'Paketda quyidagi tasdiqlovchi metodlar nomlangan: $methods. Ularni faqat laboratoriyangiz haqiqatan bajargan bo‘lsa keltiring.';
+  }
+
+  @override
+  String get planRemConfirmMissing =>
+      'Yuqoridagi testlar uchun paketda tasdiqlovchi metod yo‘q. Shu paket asosida tasdiqlangan identifikatsiya haqida yozmang.';
+
+  @override
+  String planRemNotThreshold(int count) {
+    return 'Paketdagi konsentratsiya yozuvlari ($count ta) — manbada keltirilgan kuzatuv, chegara yoki cut-off emas. Ularni mezon chegarasi sifatida ko‘rsatmang.';
+  }
+
+  @override
+  String get planRemNotPaired =>
+      'Manbalar metodlarni namunalarga bog‘lamaydi. Shu paket asosida qaysi metod qaysi namunada qo‘llanganini yozmang.';
+
+  @override
+  String get planRemNothingVerified =>
+      'Bu yerdagi birorta bayon ekspert-reviewer tomonidan tasdiqlanmagan. Uni tasdiqlangan ilmiy ma’lumot deb ko‘rsatmang.';
+
+  @override
+  String planRemConflict(int count) {
+    return 'Bu modda bo‘yicha ochiq dalillar ziddiyatlari: $count ta. Tayanishdan oldin tekshiring.';
+  }
+
+  @override
+  String get planRemNoData =>
+      'Paketda bu modda uchun tahlil ma’lumoti yo‘q. Bu sahifa xulosaga asos bo‘la olmaydi.';
+
+  @override
+  String get planReminderFootnote =>
+      'Faqat paketdagi belgilar va manbali cheklov bayonlariga asoslangan. Yangi ilmiy da’vo qo‘shmaydi va ekspert xulosasi emas.';
+
+  @override
+  String get planCopy => 'Rejani iqtiboslari bilan nusxalash';
+
+  @override
+  String get planCopied => 'Reja to‘liq iqtiboslari bilan nusxalandi';
+
+  @override
+  String planExportHeader(String name) {
+    return 'TAHLIL REJASI — $name';
+  }
+
+  @override
+  String get planExportDisclaimer =>
+      'Kontent paketidagi manbali bayonlardan tuzilgan ma’lumotnoma sxema. Tasdiqlangan protsedura ham, ekspert xulosasi ham emas; har bir bayonni asl manba bilan tekshiring.';
+
+  @override
+  String get planExportSources => 'MANBALAR';
+
+  @override
+  String get planExportOriginal => 'Asl matn';
+
+  @override
+  String planExportStatus(String status, String level) {
+    return 'holati: $status; dalil darajasi: $level';
+  }
+
+  @override
+  String planAbout(String name) {
+    return 'Tegishli: $name';
+  }
 }
