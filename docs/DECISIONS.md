@@ -125,3 +125,21 @@ Sabab: egasi aytdi — ABY ning o‘zi kitoblardan jamlangan, va O‘zbekistonda
 amalda qo‘llanadigan usullar aynan shu hujjatda yozilgan; usulni manbasiz
 qoldirgandan ko‘ra, uni o‘z manbasi bilan ko‘rsatish to‘g‘riroq.
 
+
+## 2026-10-10 — Bepul/Pro chegarasi: bilim bepul, vositalar Pro
+
+Egasining qarori: **ABY va boshqa muallif manbalari bepul**, Pro paywall ortiga
+qo'yilmaydi. Sabab: ABY markaz o'z ishi uchun sotib olgan hujjat; boshqaning
+mehnatini sotish mumkin emas. Yuldashev GMT-2024 / TOKS-2025 ham shunday.
+
+Chegara printsipi:
+
+- **Bepul — bilim:** butun kutubxona (moddalar, usullar, reaktivlar, qo'llanma
+  kartalari, manbalar), ABY yozuvlari va minnatdorchilik bo'limi, sudda so'roq
+  savollari, test rejimi, oddiy kalkulyatorlar, cheklangan AI.
+- **Pro — vaqtni tejaydigan vositalar:** fasetli/teskari aniq qidiruv (Rf, rang,
+  massa, alomat bo'yicha), «Modda bo'yicha tahlil rejasi», murakkab hisob
+  (LOD/LOQ, regressiya, validatsiya, statistika), xulosa uchun iqtibosli
+  eksport, test natijalari tahlili, kengaytirilgan AI.
+
+Sababi ochiq aytiladi: biz bilimni sotmaymiz, mehnatni tejaymiz.
