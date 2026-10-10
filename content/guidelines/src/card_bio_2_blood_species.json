@@ -1,0 +1,202 @@
+{
+  "id": "guideline.bio.blood_species",
+  "discipline_codes": [
+    "forensic_biology",
+    "forensic_serology"
+  ],
+  "status": "NEEDS_REVIEW",
+  "updated": "2026-10-10",
+  "translation_status": {
+    "uz": "AUTHORED",
+    "ru": "DRAFT",
+    "en": "DRAFT"
+  },
+  "related_tool_ids": [],
+  "term_ids": [
+    "T-CONFIRMATORY-ANALYSIS"
+  ],
+  "title": {
+    "uz": "Qonning tur mansubligi: cho‘ktirish reaksiyalari va immunoxromatografik testlar",
+    "ru": "Видовая принадлежность крови: реакции преципитации и иммунохроматографические тесты",
+    "en": "Species of origin of blood: precipitation reactions and immunochromatographic tests"
+  },
+  "summary": {
+    "uz": "Tur mansubligi testi dog‘dagi qon odamnikimi, degan savolga javob beradi. Karta klassik cho‘ktirish reaksiyalari (Ouchterlony va boshqalar) printsipini hamda ABAcard HemaTrace, RSID-Blood va Hexagon OBTI testlarining sezgirligi, soxta-musbat va «hook» effektini bayon etadi.",
+    "ru": "Тест на видовую принадлежность отвечает на вопрос, принадлежит ли кровь в пятне человеку. Карточка описывает принцип классических реакций преципитации (Оухтерлони и др.) и чувствительность, ложноположительные результаты и «hook»-эффект тестов ABAcard HemaTrace, RSID-Blood и Hexagon OBTI.",
+    "en": "The species test answers whether the blood in a stain is human. The card describes the principle of classical precipitation reactions (Ouchterlony and others) and the sensitivity, false positives and 'hook' effect of the ABAcard HemaTrace, RSID-Blood and Hexagon OBTI tests."
+  },
+  "sections": [
+    {
+      "key": "basis",
+      "title": {
+        "uz": "Ilmiy asos",
+        "ru": "Научная основа",
+        "en": "Scientific basis"
+      },
+      "body": {
+        "uz": "Qonning tur mansubligini aniqlash — dog‘dagi qon odamnikimi yoki hayvonnikimi, degan savolga javob izlash. Barcha usullar antigen–antitelo reaksiyasiga asoslanadi: namuna ekstraktidagi tur-spetsifik oqsil (masalan, gemoglobin yoki eritrositlar membranasi glikoforini) tegishli antitelo bilan bog‘lanadi va ko‘rinadigan belgi (cho‘kma chizig‘i yoki rangli chiziq) hosil qiladi.\n\nUzoq vaqt davomida bu masala gelda ikki tomonlama diffuziya (Ouchterlony usuli, 1949) [ouchterlony1949], qarama-qarshi immunoelektroforez va sellyuloza-asetat plyonkasida elektroforez kabi cho‘ktiruvchi zardoblar usullari bilan hal qilingan. Adabiyotda agar gelida immunoprecipitatsiya [elguindi1972], bufer sistemalarida qarama-qarshi oqimli immunoelektroforez [ryndin2000] va gemoglobinga qarshi zardoblar bilan sellyuloza-asetat plyonkasida elektroforez [olkhovik1988] bilan quruq qon dog‘larining tur mansubligini aniqlash usullari tasvirlangan (bu uchta manba bo‘yicha faqat bibliografik yozuv tekshirilgan; to‘liq matni ko‘rib chiqilmagan).",
+        "ru": "Определение видовой принадлежности крови — это ответ на вопрос, принадлежит ли кровь в пятне человеку или животному. Все методы основаны на реакции антиген–антитело: видоспецифичный белок экстракта (например, гемоглобин или гликофорин мембраны эритроцитов) связывается с соответствующим антителом и даёт видимый признак (линию преципитации или цветную полосу).\n\nДлительное время эту задачу решали методами с преципитирующими сыворотками: двойной диффузией в геле (метод Оухтерлони, 1949) [ouchterlony1949], встречным иммуноэлектрофорезом и электрофорезом на плёнке из ацетата целлюлозы. В литературе описаны иммунопреципитация в агаровом геле [elguindi1972], встречный иммуноэлектрофорез в буферных системах [ryndin2000] и электрофорез на плёнке из ацетата целлюлозы с антигемоглобиновыми сыворотками [olkhovik1988] для определения вида сухой крови (по этим трём источникам проверена только библиографическая запись; полный текст не изучался).",
+        "en": "Species determination of blood answers the question whether the blood in a stain is human or animal. All methods rely on the antigen-antibody reaction: a species-specific protein in the extract (for example haemoglobin or the red-cell membrane protein glycophorin) binds the corresponding antibody and produces a visible sign (a precipitation line or a coloured band).\n\nFor a long time this was done with precipitating antisera: double diffusion in gel (the Ouchterlony technique, 1949) [ouchterlony1949], counter-current immunoelectrophoresis and electrophoresis on cellulose acetate film. The literature describes immunoprecipitation in agar gel [elguindi1972], counter-current immunoelectrophoresis in buffer systems [ryndin2000] and electrophoresis on cellulose acetate film with anti-haemoglobin sera [olkhovik1988] for species identification of dried blood (for these three sources only the bibliographic record was verified; the full text was not reviewed)."
+      },
+      "citations": [
+        "ouchterlony1949",
+        "elguindi1972",
+        "ryndin2000",
+        "olkhovik1988"
+      ]
+    },
+    {
+      "key": "scope",
+      "title": {
+        "uz": "Qamrov va holat",
+        "ru": "Область и статус",
+        "en": "Scope and status"
+      },
+      "body": {
+        "uz": "Karta ikki guruh usulni qamrab oladi: (1) gel/elektroforez asosidagi klassik cho‘ktirish reaksiyalari — printsipi va cheklovlari; (2) immunoxromatografik tezkor testlar (ABAcard HemaTrace, RSID-Blood, Hexagon OBTI) — sezgirlik, soxta-musbat va «hook» effekti.\n\nQuyidagi amaliyotlar bu kartada bayon etilmagan, chunki ularning tekshirilgan ochiq manbasi topilmadi — manba tekshirilmoqda: cho‘ktiruvchi zardoblar titrini va spetsifikligini tekshirish, Chistovich–Ulengut usulida suyuq muhitda cho‘ktirish reaksiyasining aniq bajarilish tartibi, qarama-qarshi elektroforezning aniq rejimi, qonni 0,1% papain bilan ekstraksiya qilish. Ularning o‘rniga o‘z laboratoriyangizning tasdiqlangan ish tartibidan foydalaning.\n\nHolat: bu karta ekspert (reviewer) tekshiruvidan o‘tmagan (NEEDS_REVIEW) — undan ish uchun tayanishdan oldin vakolatli ekspert tasdig‘i kerak. Ru va en matnlar — avtomatik qoralama. Milliy huquqiy talablar bu kartada berilmagan; ular alohida huquqiy qatlamda.",
+        "ru": "Карточка охватывает две группы методов: (1) классические реакции преципитации на основе геля/электрофореза — принцип и ограничения; (2) иммунохроматографические экспресс-тесты (ABAcard HemaTrace, RSID-Blood, Hexagon OBTI) — чувствительность, ложноположительные результаты и «hook»-эффект.\n\nСледующие практики в карточке не описаны, так как проверенного открытого источника по ним не найдено — источник уточняется: проверка титра и специфичности преципитирующих сывороток, точная схема реакции преципитации в жидкой среде по Чистовичу–Уленгуту, точный режим встречного электрофореза, экстракция крови 0,1 % папаином. Вместо этого пользуйтесь утверждённой методикой своей лаборатории.\n\nСтатус: карточка не прошла экспертную проверку (NEEDS_REVIEW) — перед использованием в работе нужно подтверждение уполномоченного эксперта. Тексты ru и en — автоматический черновик. Национальные правовые требования в карточке не приводятся; они даны в отдельном правовом слое.",
+        "en": "The card covers two groups of methods: (1) classical precipitation reactions based on gel or electrophoresis — principle and limitations; (2) immunochromatographic rapid tests (ABAcard HemaTrace, RSID-Blood, Hexagon OBTI) — sensitivity, false positives and the 'hook' effect.\n\nThe following practices are not described because no verified open source was found — source under verification: checking the titre and specificity of precipitating sera, the exact scheme of the Chistovich-Ulengut liquid-medium precipitation reaction, the exact counter-electrophoresis conditions, and extraction of blood with 0.1% papain. Use your own laboratory's validated procedure instead.\n\nStatus: this card has not passed expert review (NEEDS_REVIEW) — authorised expert (reviewer) approval is required before relying on it in casework. The ru and en texts are machine drafts. National legal requirements are not given here; they sit in a separate legal layer."
+      },
+      "citations": []
+    },
+    {
+      "key": "methods",
+      "title": {
+        "uz": "Immunoxromatografik testlar",
+        "ru": "Иммунохроматографические тесты",
+        "en": "Immunochromatographic tests"
+      },
+      "body": {
+        "uz": "• ABAcard HemaTrace — insonning (primatning) gemoglobinini aniqlaydi; boshqa ikki test bilan solishtirilganda eng sezgir bo‘lgan [horjan2016].\n• RSID-Blood — eritrositlar glikoforin A’sini aniqlaydi [schweers2008]; qiyosiy tadqiqotda eng past sezgirlikka ega bo‘lgan, eskirgan dog‘larda va dog‘ ketkazuvchi bilan ishlangan qonda eng kam samarali bo‘lgan [horjan2016].\n• Hexagon OBTI — primatlarga xos qon testi; uning buferidan to‘g‘ridan-to‘g‘ri DNK profili olish mumkin bo‘lgan [johnston2008].\n• 2023-yil boshida ABAcard HemaTrace va p30 kartochkalari o‘lchami va namuna hajmi bo‘yicha o‘zgartirilgan; yangi HemaTrace kartochkalari taxminan 2,4 marta sezgirroq (aniqlash chegarasi bo‘yicha), ammo yuqori doza «hook» effektiga ko‘proq moyil bo‘lgan [bardan2024]. «Hook» effekti — antigen juda ko‘p bo‘lganda chiziq yo‘qolishi (soxta-manfiy) demakdir; kuchli qon dog‘ida kutilmagan manfiy natija chiqsa, ekstraktni suyultirib qayta sinash kerak (xulosa [bardan2024] asosida; reviewer tasdig‘i talab etiladi).\n\nTest bajarish bosqichlari (ekstraksiya hajmi, kutish vaqti, talqin vaqti) ishlab chiqaruvchining joriy yo‘riqnomasida beriladi va versiyaga qarab o‘zgaradi — kartada keltirilmagan.",
+        "ru": "• ABAcard HemaTrace определяет гемоглобин человека (приматов); при сравнении с двумя другими тестами оказался самым чувствительным [horjan2016].\n• RSID-Blood определяет гликофорин A эритроцитов [schweers2008]; в сравнительном исследовании показал самую низкую чувствительность и был наименее эффективен на старых пятнах и на крови, обработанной пятновыводителем [horjan2016].\n• Hexagon OBTI — тест на кровь, специфичный для приматов; из его буфера удавалось получить ДНК-профиль напрямую [johnston2008].\n• В начале 2023 года карточки ABAcard HemaTrace и p30 были изменены по размеру и объёму пробы; новые карточки HemaTrace примерно в 2,4 раза чувствительнее (по пределу обнаружения), но более склонны к «hook»-эффекту при высокой дозе [bardan2024]. «Hook»-эффект — исчезновение полосы при избытке антигена (ложноотрицательный результат); при неожиданно отрицательном результате для явно сильного пятна экстракт следует разбавить и повторить пробу (вывод сделан на основе [bardan2024]; требует подтверждения reviewer).\n\nЭтапы выполнения теста (объём экстракции, время ожидания, время считывания) приведены в действующей инструкции производителя и зависят от версии — в карточке не указаны.",
+        "en": "• ABAcard HemaTrace detects human (primate) haemoglobin; compared with two other tests it was the most sensitive [horjan2016].\n• RSID-Blood detects the red-cell protein glycophorin A [schweers2008]; in a comparative study it had the lowest sensitivity and was least effective on aged stains and on blood treated with a stain remover [horjan2016].\n• Hexagon OBTI is a primate-specific blood test; a DNA profile could be obtained directly from its buffer [johnston2008].\n• In early 2023 the ABAcard HemaTrace and p30 cards were changed in size and sample volume; the new HemaTrace cards are about 2.4-fold more sensitive (by limit of detection) but more susceptible to the high-dose 'hook' effect [bardan2024]. The 'hook' effect means that with excess antigen the line disappears (a false negative); if a visibly strong stain gives an unexpected negative result, the extract should be diluted and retested (conclusion drawn from [bardan2024]; needs reviewer confirmation).\n\nThe test steps (extraction volume, waiting time, reading time) are given in the manufacturer's current instructions and depend on the version — they are not stated here."
+      },
+      "citations": [
+        "horjan2016",
+        "schweers2008",
+        "johnston2008",
+        "bardan2024"
+      ]
+    },
+    {
+      "key": "interpretation",
+      "title": {
+        "uz": "Natijani talqin qilish",
+        "ru": "Интерпретация результата",
+        "en": "Interpreting the result"
+      },
+      "body": {
+        "uz": "Immunoxromatografik test musbat bo‘lsa, «insonning/primatning gemoglobini (yoki glikoforini) aniqlandi» deb yoziladi. Bu natija mavjud testlarning ko‘pi uchun «odam» emas, «primat» degan ma’noni beradi: Hexagon OBTI primatlarga xos deb ta’riflangan [johnston2008], HemaTrace va RSID-Blood odam/primat qonini aniqlaydi [horjan2016]. Kamdan-kam hollarda (primat qoni gumoni) bu cheklov alohida e’tiborni talab qiladi.\n\nQon ekanligi uchun dastlabki katalitik sinama («Qonni dastlabki aniqlash» kartasi) va tur testi birga baholanadi; tur testi musbat, katalitik sinama manfiy yoki aksincha bo‘lsa, natija ziddiyatli deb qaraladi va tekshirish takrorlanadi. DNK tahlili tur va shaxsni aniqlashning mustaqil usuli bo‘lib qoladi.",
+        "ru": "Если иммунохроматографический тест положителен, записывают: «обнаружен гемоглобин (или гликофорин) человека/приматов». Для большинства существующих тестов это означает «приматы», а не только «человек»: Hexagon OBTI описан как специфичный для приматов [johnston2008], HemaTrace и RSID-Blood выявляют кровь человека/приматов [horjan2016]. В редких случаях (подозрение на кровь примата) это ограничение требует особого внимания.\n\nНаличие крови оценивают по совокупности ориентировочной каталитической пробы (карточка «Предварительное обнаружение крови») и видового теста; если видовой тест положителен, а каталитическая проба отрицательна или наоборот, результат считают противоречивым, исследование повторяют. ДНК-анализ остаётся независимым методом установления вида и личности.",
+        "en": "If an immunochromatographic test is positive, record: 'human/primate haemoglobin (or glycophorin) detected'. For most current tests this means 'primate' rather than strictly 'human': Hexagon OBTI is described as primate-specific [johnston2008], and HemaTrace and RSID-Blood detect human/primate blood [horjan2016]. In rare cases (suspected primate blood) this limitation needs particular attention.\n\nThe presence of blood is judged from the presumptive catalytic test (card 'Presumptive detection of blood') and the species test together; if the species test is positive and the catalytic test negative, or the reverse, the result is regarded as contradictory and the examination is repeated. DNA analysis remains an independent method for species and identity."
+      },
+      "citations": [
+        "johnston2008",
+        "horjan2016"
+      ]
+    },
+    {
+      "key": "limitations",
+      "title": {
+        "uz": "Cheklovlar",
+        "ru": "Ограничения",
+        "en": "Limitations"
+      },
+      "body": {
+        "uz": "• Soxta-musbat: juda sezgir HemaTrace so‘lak bilan ko‘p soxta-musbat bergan, RSID-Blood so‘lak bilan 40% soxta-musbat bergan [horjan2016]. Boshqa biologik namunalar bilan o‘zaro reaksiyalar tizimli o‘rganilgan [stroud2023].\n• Hasharot izlari: HemaTrace va Hexagon OBTI 3 kunlik pashsha izini qondan ajratgan, ammo 2 haftalik izni ajrata olmagan [durdle2015].\n• Eskirgan va ishlov berilgan dog‘lar: RSID-Blood eskirgan qonda va dog‘ ketkazuvchi bilan ishlangan qonda eng kam samarali [horjan2016].\n• «Hook» effekti: yuqori antigen konsentratsiyasida soxta-manfiy [bardan2024].\n• Ekstraksiya: ishlab chiqaruvchi yo‘riqnomasidan chetga chiqish (masalan, boshqa bufer yoki hajm) natijaga ta’sir qilishi mumkin; har qanday o‘zgartirish validatsiyadan o‘tishi kerak (umumiy tamoyil; ushbu bandga alohida manba keltirilmagan).\n• Gel usullari: miqdoriy ravishda tur-spetsifik zardoblar sifatiga (titr, spetsifiklik) bog‘liq; bu parametrlarni tekshirish tartibi uchun tekshirilgan manba hozircha yo‘q — manba tekshirilmoqda.",
+        "ru": "• Ложноположительные: очень чувствительный HemaTrace давал много ложноположительных результатов со слюной, RSID-Blood — 40 % ложноположительных со слюной [horjan2016]. Перекрёстные реакции с другими биологическими образцами изучены систематически [stroud2023].\n• Следы насекомых: HemaTrace и Hexagon OBTI отличали 3-дневный след мухи от крови, но не отличали 2-недельный [durdle2015].\n• Старые и обработанные пятна: RSID-Blood наименее эффективен на старой крови и на крови, обработанной пятновыводителем [horjan2016].\n• «Hook»-эффект: ложноотрицательный результат при высокой концентрации антигена [bardan2024].\n• Экстракция: отступление от инструкции производителя (например, другой буфер или объём) может повлиять на результат; любое изменение должно проходить валидацию (общий принцип; отдельный источник для этого пункта не приводится).\n• Гелевые методы: зависят от качества видоспецифичных сывороток (титр, специфичность); проверенного источника по порядку проверки этих параметров пока нет — источник уточняется.",
+        "en": "• False positives: the very sensitive HemaTrace gave many false positives with saliva, and RSID-Blood gave 40% false positives with saliva [horjan2016]. Cross-reactions with other biological samples have been studied systematically [stroud2023].\n• Insect traces: HemaTrace and Hexagon OBTI distinguished 3-day-old fly artifacts from blood but not 2-week-old ones [durdle2015].\n• Aged and treated stains: RSID-Blood was least effective on aged blood and on blood treated with a stain remover [horjan2016].\n• 'Hook' effect: false negative at high antigen concentration [bardan2024].\n• Extraction: deviating from the manufacturer's instructions (for example another buffer or volume) may affect the result; any change must be validated (a general principle; no separate source is cited for this item).\n• Gel methods: depend on the quality of the species-specific sera (titre, specificity); there is no verified source yet for how to check these parameters — source under verification."
+      },
+      "citations": [
+        "horjan2016",
+        "stroud2023",
+        "durdle2015",
+        "bardan2024"
+      ]
+    },
+    {
+      "key": "cautions",
+      "title": {
+        "uz": "Ehtiyot choralari",
+        "ru": "Меры предосторожности",
+        "en": "Precautions"
+      },
+      "body": {
+        "uz": "Qon ekstraktlari va ashyolar yuqumli material sifatida qaraladi; quruq qon ham xavfsiz deb hisoblanmaydi — shaxsiy himoya vositalarini qo‘llang [nistir7928] (5-b.). Tur sinamasi dog‘dan olingan ekstraktning bir qismini sarflaydi: DNK tahlili uchun yetarli material qoldirilishini oldindan rejalashtiring (sezgir testlar dog‘ning kichik qismi bilan bajarilishi mumkin: [old2009] saliva testi misolida ko‘rsatilgan, qon testlari uchun alohida tekshirilishi kerak).",
+        "ru": "Экстракты крови и вещественные доказательства рассматривают как потенциально инфекционный материал; даже сухая кровь не считается безопасной — используйте средства индивидуальной защиты [nistir7928] (с. 5). Видовая проба расходует часть экстракта пятна: заранее планируйте, чтобы для ДНК-анализа осталось достаточно материала (чувствительные тесты можно выполнять на малой части пятна: это показано для теста на слюну [old2009]; для тестов на кровь требуется отдельная проверка).",
+        "en": "Blood extracts and exhibits are treated as potentially infectious material; even dry blood is not assumed safe — use personal protective equipment [nistir7928] (p. 5). The species test consumes part of the stain extract: plan in advance to leave enough material for DNA analysis (sensitive tests can be run on a small part of a stain — shown for a saliva test [old2009]; for blood tests this needs separate verification)."
+      },
+      "citations": [
+        "nistir7928",
+        "old2009"
+      ]
+    }
+  ],
+  "keywords": {
+    "uz": [
+      "qonning tur mansubligi",
+      "tur aniqlash",
+      "pretsipitatsiya",
+      "cho‘ktiruvchi zardob",
+      "Ouchterlony",
+      "Ouxterloni",
+      "Chistovich",
+      "Uhlenhuth",
+      "qarama-qarshi elektroforez",
+      "HemaTrace",
+      "ABAcard",
+      "RSID-Blood",
+      "Hexagon OBTI",
+      "glikoforin",
+      "gemoglobin",
+      "hook effekti",
+      "immunoxromatografiya",
+      "inson qoni"
+    ],
+    "ru": [
+      "видовая принадлежность крови",
+      "определение вида",
+      "преципитация",
+      "преципитирующая сыворотка",
+      "Оухтерлони",
+      "Чистович",
+      "Уленгут",
+      "встречный электрофорез",
+      "HemaTrace",
+      "ABAcard",
+      "RSID-Blood",
+      "Hexagon OBTI",
+      "гликофорин",
+      "гемоглобин",
+      "hook-эффект",
+      "иммунохроматография",
+      "кровь человека"
+    ],
+    "en": [
+      "species of origin of blood",
+      "species identification",
+      "precipitin test",
+      "precipitating antiserum",
+      "Ouchterlony",
+      "Chistovich",
+      "Uhlenhuth",
+      "counter-current immunoelectrophoresis",
+      "HemaTrace",
+      "ABAcard",
+      "RSID-Blood",
+      "Hexagon OBTI",
+      "glycophorin",
+      "haemoglobin",
+      "hook effect",
+      "immunochromatography",
+      "human blood"
+    ]
+  },
+  "omitted_unverified": [
+    "Titre and specificity checking of precipitating sera, the Chistovich-Ulengut liquid-medium precipitation scheme, cellulose-acetate counter-electrophoresis conditions, 0.1% papain extraction: no verified source read; deliberately not described.",
+    "Uhlenhuth (1901) and Chistovich (1901) original papers: not located/verified in registries; only named in keywords as method eponyms, not cited.",
+    "elguindi1972, ryndin2000, olkhovik1988 were verified only as PubMed bibliographic records (no abstracts); statements about them are limited to what the titles say.",
+    "Absolute detection limits (volume/concentration) of the immunochromatographic tests: depend on card version; not quoted.",
+    "Whether the hook effect also applies to RSID-Blood or Hexagon OBTI: not established in the sources read."
+  ]
+}

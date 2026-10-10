@@ -1,0 +1,224 @@
+{
+  "id": "guideline.bio.semen",
+  "discipline_codes": [
+    "forensic_biology",
+    "forensic_serology"
+  ],
+  "status": "NEEDS_REVIEW",
+  "updated": "2026-10-10",
+  "translation_status": {
+    "uz": "AUTHORED",
+    "ru": "DRAFT",
+    "en": "DRAFT"
+  },
+  "related_tool_ids": [],
+  "term_ids": [
+    "T-CONFIRMATORY-ANALYSIS"
+  ],
+  "title": {
+    "uz": "Spermani aniqlash: kislotali fosfataza, spermatozoid mikroskopiyasi va PSA/p30",
+    "ru": "Обнаружение спермы: кислая фосфатаза, микроскопия сперматозоидов и PSA/p30",
+    "en": "Semen identification: acid phosphatase, sperm microscopy and PSA/p30"
+  },
+  "summary": {
+    "uz": "Sperma dastlabki sinama (kislotali fosfataza) va tasdiqlovchi bosqich (spermatozoid mikroskopiyasi, PSA/p30, seminogelin) bilan aniqlanadi. Karta bu usullarning solishtirma samaradorligi (2450 ta surtma bo‘yicha), soxta-musbat manbalari va talqin qoidalarini bayon etadi.",
+    "ru": "Сперма определяется ориентировочной пробой (кислая фосфатаза) и подтверждающим этапом (микроскопия сперматозоидов, PSA/p30, семиногелин). Карточка описывает сравнительную эффективность этих методов (по 2450 мазкам), источники ложноположительных результатов и правила интерпретации.",
+    "en": "Semen is identified by a presumptive test (acid phosphatase) and a confirmatory step (sperm microscopy, PSA/p30, semenogelin). The card describes the comparative performance of these methods (in 2450 swabs), sources of false positives and rules of interpretation."
+  },
+  "sections": [
+    {
+      "key": "basis",
+      "title": {
+        "uz": "Ilmiy asos",
+        "ru": "Научная основа",
+        "en": "Scientific basis"
+      },
+      "body": {
+        "uz": "Spermani aniqlash ikki pog‘onali: dastlabki (presumptive) sinama va tasdiqlovchi (confirmatory) bosqich. Dastlabki bosqichda odatda kislotali fosfataza (AP) fermenti faolligi aniqlanadi; tasdiqlovchi bosqich — mikroskopda spermatozoidlarni topish va/yoki prostata ishlab chiqaradigan PSA (p30) glikoproteini yoki seminogelinni immunologik aniqlash [hochmeister1999, boward2013, pang2007].\n\nMikroskopda spermatozoid topish qiyosiy tadqiqotlarda «oltin standart» sifatida olinadi [peonim2013]; ammo spermada spermatozoid bo‘lmasligi mumkin (masalan, vazektomiyadan keyin), bunday namunada p30 aniqlanadi [boward2013]. Shuning uchun mikroskopiya va PSA/p30 bir-birini to‘ldiradi.",
+        "ru": "Обнаружение спермы двухступенчатое: ориентировочная (presumptive) проба и подтверждающий (confirmatory) этап. На первом этапе обычно определяют активность кислой фосфатазы (AP); подтверждающий этап — нахождение сперматозоидов под микроскопом и/или иммунологическое выявление гликопротеина PSA (p30), вырабатываемого предстательной железой, или семиногелина [hochmeister1999, boward2013, pang2007].\n\nОбнаружение сперматозоидов под микроскопом принимают в сравнительных исследованиях за «золотой стандарт» [peonim2013]; но в сперме сперматозоидов может не быть (например, после вазэктомии), в таком образце определяется p30 [boward2013]. Поэтому микроскопия и PSA/p30 дополняют друг друга.",
+        "en": "Semen identification has two tiers: a presumptive test and a confirmatory step. The first tier usually measures acid phosphatase (AP) activity; the confirmatory step is finding spermatozoa under the microscope and/or immunological detection of the prostate glycoprotein PSA (p30) or of semenogelin [hochmeister1999, boward2013, pang2007].\n\nFinding spermatozoa under the microscope is taken as the 'gold standard' in comparative studies [peonim2013]; but semen may contain no spermatozoa (for example after vasectomy), and p30 is detected in such a sample [boward2013]. Microscopy and PSA/p30 therefore complement each other."
+      },
+      "citations": [
+        "hochmeister1999",
+        "boward2013",
+        "pang2007",
+        "peonim2013"
+      ]
+    },
+    {
+      "key": "scope",
+      "title": {
+        "uz": "Qamrov va holat",
+        "ru": "Область и статус",
+        "en": "Scope and status"
+      },
+      "body": {
+        "uz": "Karta spermani aniqlashning kislotali fosfataza, mikroskopik spermatozoid tekshiruvi va PSA/p30 (ABAcard p30, RSID-Semen) usullarini, ularning solishtirma samaradorligini va cheklovlarini qamrab oladi. A.K. Seropyan (1957) bo‘yicha konsentratsiyalangan chiqarish usuli, sperma dog‘larida ABO antigenlarini miqdoriy absorbsiya bilan aniqlash va «ajratuvchanlik» darajasini baholash amaliyotlari bu kartada bayon etilmagan — ularning tekshirilgan ochiq manbasi topilmadi, manba tekshirilmoqda. ABO ajratuvchanligining umumiy printsipi «ABO guruhini dog‘larda aniqlash» kartasida.\n\nHolat: bu karta ekspert (reviewer) tekshiruvidan o‘tmagan (NEEDS_REVIEW) — undan ish uchun tayanishdan oldin vakolatli ekspert tasdig‘i kerak. Ru va en matnlar — avtomatik qoralama. Milliy huquqiy talablar bu kartada berilmagan; ular alohida huquqiy qatlamda.",
+        "ru": "Карточка охватывает определение спермы по кислой фосфатазе, микроскопическому исследованию сперматозоидов и PSA/p30 (ABAcard p30, RSID-Semen), их сравнительную эффективность и ограничения. Метод концентрированного выделения по А.К. Серопяну (1957), количественное определение антигенов ABO в пятнах спермы абсорбцией и оценка степени «выделительства» в карточке не описаны — проверенного открытого источника по ним не найдено, источник уточняется. Общий принцип выделительства ABO — в карточке «Определение группы ABO в пятнах».\n\nСтатус: карточка не прошла экспертную проверку (NEEDS_REVIEW) — перед использованием в работе нужно подтверждение уполномоченного эксперта. Тексты ru и en — автоматический черновик. Национальные правовые требования в карточке не приводятся; они даны в отдельном правовом слое.",
+        "en": "The card covers semen identification by acid phosphatase, microscopic examination for spermatozoa and PSA/p30 (ABAcard p30, RSID-Semen), their comparative performance and limitations. A.K. Seropyan's (1957) concentrated-extraction method, quantitative absorption determination of ABO antigens in semen stains and assessment of the degree of 'secretor status' are not described — no verified open source was found, source under verification. The general principle of ABO secretor status is in the card 'ABO grouping of stains'.\n\nStatus: this card has not passed expert review (NEEDS_REVIEW) — authorised expert (reviewer) approval is required before relying on it in casework. The ru and en texts are machine drafts. National legal requirements are not given here; they sit in a separate legal layer."
+      },
+      "citations": []
+    },
+    {
+      "key": "methods",
+      "title": {
+        "uz": "Usullar",
+        "ru": "Методы",
+        "en": "Methods"
+      },
+      "body": {
+        "uz": "• Kislotali fosfataza (AP): dastlabki sinama. Fast Black reagenti bilan an’anaviy bilvosita (blot) usul va reagentni ashyoga to‘g‘ridan-to‘g‘ri qo‘llash solishtirilgan; to‘g‘ridan-to‘g‘ri usul blot qilish qiyin yoki musbat dog‘ni qayta topish murakkab bo‘lgan ashyolarni skrining qilishda foydali, ammo vaginal material va so‘lakdan soxta-musbat bo‘lishini hisobga olish kerak [lewis2013]. Yuvish vositasi AP sinamasini susaytirgan, choy dog‘lari soxta-musbat bergan [vennemann2014].\n• Mikroskopiya: pikroindigokarmin/yadro tez qizili (PIC/NF) bo‘yog‘i bilan bo‘yalgan surtmada 20 ta katta kattalashtirishli ko‘rish maydonini ko‘rib chiqish orqali spermatozoidlar juda past konsentratsiyada ham aniqlangan [leubitz1984].\n• PSA/p30 immunoxromatografik test (ABAcard p30): eritma ekstraktida PSA/p30 ni aniqlaydi; qo‘lda ELISA, Ouchterlony, qarama-qarshi elektroforez, raket immunoelektroforezi va radial immundiffuziya kabi eski usullarga nisbatan oddiy va tez; ELISA taxminan 4 ng/mL gacha aniqlagan [hochmeister1999].\n• Seminogelin (RSID-Semen): seminal pufakchalar oqsili; ABAcard p30 bilan solishtirilganda p30 sezgirroq, arzonroq va protokoli soddaroq bo‘lgan, ikkalasi ham spetsifik [boward2013, pang2007].",
+        "ru": "• Кислая фосфатаза (AP): ориентировочная проба. Сравнивали традиционный непрямой (блот) метод с реагентом Fast Black и прямое нанесение реагента на объект; прямой метод полезен при скрининге объектов, трудных для блоттинга, или когда трудно заново найти положительное пятно, но нужно учитывать ложноположительные результаты от вагинального материала и слюны [lewis2013]. Моющее средство подавляло пробу на AP, пятна чая давали ложноположительные результаты [vennemann2014].\n• Микроскопия: в мазке, окрашенном пикроиндигокармином/ядерным прочным красным (PIC/NF), при просмотре 20 полей зрения при большом увеличении сперматозоиды обнаруживали даже при очень низкой концентрации [leubitz1984].\n• Иммунохроматографический тест на PSA/p30 (ABAcard p30): выявляет PSA/p30 в экстракте; проще и быстрее старых методов — ELISA, Оухтерлони, встречного электрофореза, ракетного иммуноэлектрофореза и радиальной иммунодиффузии; ELISA определял примерно до 4 нг/мл [hochmeister1999].\n• Семиногелин (RSID-Semen): белок семенных пузырьков; по сравнению с ABAcard p30 тест p30 был чувствительнее, дешевле и проще по протоколу, оба специфичны [boward2013, pang2007].",
+        "en": "• Acid phosphatase (AP): presumptive test. The traditional indirect (blot) method with Fast Black reagent was compared with applying the reagent directly to the exhibit; the direct method is useful for screening exhibits that are hard to blot or when a positive stain is hard to relocate, but false positives from vaginal material and saliva must be kept in mind [lewis2013]. A detergent suppressed the AP test and tea stains gave false positives [vennemann2014].\n• Microscopy: on a smear stained with picroindigocarmine/nuclear fast red (PIC/NF), scanning 20 high-power fields detected spermatozoa even at very low concentration [leubitz1984].\n• PSA/p30 immunochromatographic test (ABAcard p30): detects PSA/p30 in the extract; simpler and faster than the older methods — ELISA, Ouchterlony, counter-electrophoresis, rocket immunoelectrophoresis and radial immunodiffusion; ELISA detected down to about 4 ng/mL [hochmeister1999].\n• Semenogelin (RSID-Semen): a seminal-vesicle protein; compared with ABAcard p30, the p30 test was more sensitive, cheaper and simpler in protocol, and both were specific [boward2013, pang2007]."
+      },
+      "citations": [
+        "lewis2013",
+        "vennemann2014",
+        "leubitz1984",
+        "hochmeister1999",
+        "boward2013",
+        "pang2007"
+      ]
+    },
+    {
+      "key": "interpretation",
+      "title": {
+        "uz": "Talqin",
+        "ru": "Интерпретация",
+        "en": "Interpretation"
+      },
+      "body": {
+        "uz": "2450 ta zo‘rlash holati bo‘yicha vaginal surtmada spermatozoid mikroskopiyasi «oltin standart» deb olinganda sezgirlik/spetsifiklik: AP — 65,5%/96,4%, PSA — 80,4%/92,3%, AP+PSA birga — 84,5%/91,9% [peonim2013]. Bu AP spetsifikroq, PSA esa sezgirroq ekanini, ikkisi birga sezgirlikni oshirishini ko‘rsatadi. Meksika laboratoriyalarida ham spermatoskopiya, AP va p30 natijalarining turli kombinatsiyalari kuzatilgan va ularning kombinatsiyasi alohida toifalarga ajratilgan [romero2011]. Demak, bitta test natijasi o‘zicha yetarli emas: mikroskopiya va PSA/p30 natijalari birga baholanadi.\n\nSaline bilan ekstraksiya vaginal surtmada ABAcard p30 bilan mos kelgan (91% semen musbat), RSID-Semen bilan mos kelmagan (74%) [hobbs2010] — ekstraksiya usuli test turiga qarab validatsiyadan o‘tishi kerak.\n\nVazektomiyadan keyingi sperma, qon, so‘lak va siydik bilan aralashmalar, turli substratlar va vaqt oralig‘idagi surtmalar bo‘yicha tekshiruvda ikkala test ham spetsifik bo‘lgan [boward2013]. Xulosa: «sperma» faqat mikroskopik spermatozoid yoki p30/seminogelin bilan tasdiqlangan hollarda yoziladi; faqat AP musbat bo‘lsa — «sperma bo‘lishi mumkin».",
+        "ru": "При принятии микроскопии сперматозоидов за «золотой стандарт» в 2450 вагинальных мазков по делам об изнасиловании чувствительность/специфичность составили: AP — 65,5 %/96,4 %, PSA — 80,4 %/92,3 %, AP+PSA вместе — 84,5 %/91,9 % [peonim2013]. Это показывает, что AP специфичнее, PSA чувствительнее, а вместе они повышают чувствительность. В мексиканских лабораториях также наблюдались разные сочетания результатов сперматоскопии, AP и p30, которые классифицировали по категориям [romero2011]. Результат одного теста сам по себе недостаточен: микроскопию и PSA/p30 оценивают вместе.\n\nЭкстракция физраствором в вагинальных мазках была совместима с ABAcard p30 (91 % образцов со спермой положительны) и несовместима с RSID-Semen (74 %) [hobbs2010] — способ экстракции должен проходить валидацию для каждого типа теста.\n\nПри проверке на сперме после вазэктомии, смесях с кровью, слюной и мочой, на разных субстратах и мазках в разные интервалы оба теста были специфичны [boward2013]. Вывод «сперма» формулируют только при подтверждении микроскопически найденными сперматозоидами или p30/семиногелином; при положительной лишь AP — «сперма возможна».",
+        "en": "Taking microscopic sperm detection as the 'gold standard' in 2450 vaginal swabs from sexual-assault cases, sensitivity/specificity were: AP — 65.5%/96.4%, PSA — 80.4%/92.3%, AP+PSA combined — 84.5%/91.9% [peonim2013]. This shows that AP is more specific, PSA more sensitive, and the two together raise sensitivity. In Mexican laboratories too, different combinations of spermatoscopy, AP and p30 results were observed and classified into categories [romero2011]. The result of a single test is therefore not enough on its own: microscopy and PSA/p30 are assessed together.\n\nSaline extraction of vaginal swabs was compatible with ABAcard p30 (91% of semen-containing samples positive) but not with RSID-Semen (74%) [hobbs2010] — the extraction method must be validated for each type of test.\n\nIn tests on post-vasectomy semen, mixtures with blood, saliva and urine, various substrates and swabs at different time intervals, both tests were specific [boward2013]. The conclusion 'semen' is written only when confirmed by spermatozoa found microscopically or by p30/semenogelin; if only AP is positive — 'semen is possible'."
+      },
+      "citations": [
+        "peonim2013",
+        "romero2011",
+        "hobbs2010",
+        "boward2013"
+      ]
+    },
+    {
+      "key": "limitations",
+      "title": {
+        "uz": "Cheklovlar",
+        "ru": "Ограничения",
+        "en": "Limitations"
+      },
+      "body": {
+        "uz": "• AP boshqa suyuqliklarda ham bo‘ladi: vaginal material va so‘lakdan soxta-musbat bo‘lishi mumkin [lewis2013]; choy dog‘lari ham [vennemann2014]. Shu sababli AP musbat natijasi spermani tasdiqlamaydi.\n• Sezgirlik: ABAcard p30 va HemaTrace kartochkalari 2023-yil boshida o‘zgargan; yangi p30 kartochkalari taxminan 3,4 marta sezgirroq [bardan2024] — eski spetsifiklik ma’lumotlarini qayta tekshirish zarur.\n• Ekstraksiya: seminogelin testi vaginal surtma uchun saline ekstraksiyasi bilan mos kelmagan [hobbs2010].\n• Hasharot izlari: p30, RSID-Semen va AP 3 kunlik pashsha izini spermadan ajratgan, ammo 2 haftalik izni ajrata olmagan [durdle2015].\n• Boshqa suyuqliklar bilan o‘zaro reaksiyalar tizimli o‘rganilgan [stroud2023]; seminogelin va PSA chiziqlari inson siydigi, qoni, so‘lagi, teri, ona suti, vaginal ajratma va najas bilan sinalgan [pang2007].\n• Qaysi bosqichda spermatozoid topilishi surtma olingan vaqtga ham bog‘liq (surtmalar jinsiy aloqadan keyingi turli vaqtlarda olingan [boward2013]); vaqt bo‘yicha aniq muddatlar bu kartada berilmaydi — bu sharoitga bog‘liq.",
+        "ru": "• AP содержится и в других жидкостях: возможны ложноположительные результаты от вагинального материала и слюны [lewis2013]; а также от пятен чая [vennemann2014]. Поэтому положительная AP не подтверждает сперму.\n• Чувствительность: карточки ABAcard p30 и HemaTrace изменены в начале 2023 года; новые карточки p30 примерно в 3,4 раза чувствительнее [bardan2024] — прежние данные о специфичности требуют перепроверки.\n• Экстракция: тест на семиногелин оказался несовместим с экстракцией физраствором для вагинального мазка [hobbs2010].\n• Следы насекомых: p30, RSID-Semen и AP отличали 3-дневный след мухи от спермы, но не отличали 2-недельный [durdle2015].\n• Перекрёстные реакции с другими жидкостями изучены систематически [stroud2023]; полоски на семиногелин и PSA проверяли на моче, крови, слюне, поте, грудном молоке, вагинальном секрете и фекалиях человека [pang2007].\n• Обнаружение сперматозоидов зависит и от времени взятия мазка (мазки брали через разные интервалы после полового акта [boward2013]); точные сроки в карточке не приводятся — они зависят от условий.",
+        "en": "• AP is present in other fluids: false positives from vaginal material and saliva are possible [lewis2013]; so are tea stains [vennemann2014]. A positive AP result therefore does not confirm semen.\n• Sensitivity: the ABAcard p30 and HemaTrace cards were changed in early 2023; the new p30 cards are about 3.4-fold more sensitive [bardan2024] — earlier specificity data need re-checking.\n• Extraction: the semenogelin test was not compatible with saline extraction of vaginal swabs [hobbs2010].\n• Insect traces: p30, RSID-Semen and AP distinguished 3-day-old fly artifacts from semen but not 2-week-old ones [durdle2015].\n• Cross-reactions with other fluids have been studied systematically [stroud2023]; semenogelin and PSA strips were tested against human urine, blood, saliva, sweat, breast milk, vaginal secretion and faeces [pang2007].\n• Finding spermatozoa also depends on when the swab was taken (swabs were collected at various intervals after intercourse [boward2013]); exact time limits are not given here — they depend on conditions."
+      },
+      "citations": [
+        "lewis2013",
+        "vennemann2014",
+        "bardan2024",
+        "hobbs2010",
+        "durdle2015",
+        "stroud2023",
+        "pang2007",
+        "boward2013"
+      ]
+    },
+    {
+      "key": "alternatives",
+      "title": {
+        "uz": "Ajratuvchanlik va muqobillar",
+        "ru": "Выделительство и альтернативы",
+        "en": "Secretor status and alternatives"
+      },
+      "body": {
+        "uz": "Sperma dog‘larida ABO antigenlari ajratuvchi erkaklarda aniqlanishi mumkin; ammo seminal dog‘lar monoklonal reagentlarning ko‘pchiligi bilan noto‘g‘ri guruhlangan [kobayashi1999]; ikki o‘lchovli absorbsiya–ingibitsiya ajratuvchi sperma uchun sezgir usul [lee1988]. Lewis antigenlari sperma dog‘larida kamida 40 kungacha aniqlangan [bassler1986]. Tafsilotlar — «ABO guruhini dog‘larda aniqlash» kartasida.\n\nSperma aniqlash uchun DNK tahlili (shu jumladan spermatozoidli va epiteliy hujayra qismlarini ajratish) mustaqil usul bo‘lib qoladi; bu kartada uning tafsiloti berilmagan.",
+        "ru": "Антигены ABO в пятнах спермы можно выявить у мужчин-выделителей; однако пятна спермы неправильно группировались большинством моноклональных реагентов [kobayashi1999]; двумерная абсорбция–ингибиция — чувствительный метод для спермы выделителей [lee1988]. Антигены Lewis в пятнах спермы определялись не менее 40 суток [bassler1986]. Подробности — в карточке «Определение группы ABO в пятнах».\n\nДНК-анализ (включая разделение сперматозоидной и эпителиальной фракций) остаётся независимым методом; его детали в карточке не приводятся.",
+        "en": "ABO antigens can be detected in semen stains from male secretors; however, semen stains were typed incorrectly with most monoclonal reagents [kobayashi1999]; two-dimensional absorption-inhibition is a sensitive method for secretor semen [lee1988]. Lewis antigens were detected in semen stains for at least 40 days [bassler1986]. Details are in the card 'ABO grouping of stains'.\n\nDNA analysis (including separation of the sperm and epithelial fractions) remains an independent method; its details are not given here."
+      },
+      "citations": [
+        "kobayashi1999",
+        "lee1988",
+        "bassler1986"
+      ]
+    },
+    {
+      "key": "cautions",
+      "title": {
+        "uz": "Ehtiyot choralari",
+        "ru": "Меры предосторожности",
+        "en": "Precautions"
+      },
+      "body": {
+        "uz": "Sperma bilan ifloslangan ashyolar yuqumli material sifatida qaraladi — shaxsiy himoya vositalarini qo‘llang [nistir7928] (5-b.). To‘g‘ridan-to‘g‘ri AP reagentini ashyoga qo‘llash ashyoni o‘zgartiradi: u gistologik bo‘yashga va keyingi DNK tahliliga ta’siri bo‘yicha o‘rganilgan [lewis2013] — qo‘llashdan oldin laboratoriyada validatsiya natijalarini ko‘rib chiqing.",
+        "ru": "Предметы, загрязнённые спермой, рассматривают как потенциально инфекционный материал — используйте средства индивидуальной защиты [nistir7928] (с. 5). Прямое нанесение реагента AP на объект изменяет объект: его влияние на гистологическое окрашивание и последующий ДНК-анализ изучалось [lewis2013] — перед применением изучите результаты валидации в своей лаборатории.",
+        "en": "Items contaminated with semen are treated as potentially infectious material — use personal protective equipment [nistir7928] (p. 5). Applying AP reagent directly to an exhibit alters it: its effect on histological staining and on later DNA analysis has been studied [lewis2013] — review your laboratory's validation results before using it."
+      },
+      "citations": [
+        "nistir7928",
+        "lewis2013"
+      ]
+    }
+  ],
+  "keywords": {
+    "uz": [
+      "sperma",
+      "spermatozoid",
+      "kislotali fosfataza",
+      "PSA",
+      "p30",
+      "ABAcard p30",
+      "RSID-Semen",
+      "seminogelin",
+      "spermatoskopiya",
+      "PIC/NF",
+      "pikroindigokarmin",
+      "Seropyan",
+      "sperma dog‘i",
+      "zo‘rlash",
+      "vazektomiya",
+      "sud serologiyasi"
+    ],
+    "ru": [
+      "сперма",
+      "сперматозоиды",
+      "кислая фосфатаза",
+      "PSA",
+      "p30",
+      "ABAcard p30",
+      "RSID-Semen",
+      "семиногелин",
+      "сперматоскопия",
+      "PIC/NF",
+      "пикроиндигокармин",
+      "Серопян",
+      "пятно спермы",
+      "изнасилование",
+      "вазэктомия",
+      "судебная серология"
+    ],
+    "en": [
+      "semen",
+      "spermatozoa",
+      "acid phosphatase",
+      "PSA",
+      "p30",
+      "ABAcard p30",
+      "RSID-Semen",
+      "semenogelin",
+      "sperm microscopy",
+      "PIC/NF",
+      "picroindigocarmine",
+      "Seropyan",
+      "semen stain",
+      "sexual assault",
+      "vasectomy",
+      "forensic serology"
+    ]
+  },
+  "omitted_unverified": [
+    "A.K. Seropyan (1957) concentrated-extraction modification; quantitative absorption ABO determination in semen stains and 'secretor degree': no verified source read; deliberately not described.",
+    "Reagent formulations for AP (Fast Black, Brentamine etc.), PIC/NF staining times and smear preparation: not stated, laboratory SOP governs.",
+    "Time windows for recovering sperm or p30 after intercourse: study-specific and not extracted.",
+    "Differential extraction/DNA workflow: not covered.",
+    "Hochmeister 1999 abstract was read only up to its truncated end; the claim about ELISA ~4 ng/mL is from the visible part."
+  ]
+}

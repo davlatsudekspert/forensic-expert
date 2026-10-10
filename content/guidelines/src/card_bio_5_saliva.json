@@ -1,0 +1,189 @@
+{
+  "id": "guideline.bio.saliva",
+  "discipline_codes": [
+    "forensic_biology",
+    "forensic_serology"
+  ],
+  "status": "NEEDS_REVIEW",
+  "updated": "2026-10-10",
+  "translation_status": {
+    "uz": "AUTHORED",
+    "ru": "DRAFT",
+    "en": "DRAFT"
+  },
+  "related_tool_ids": [],
+  "term_ids": [
+    "T-CONFIRMATORY-ANALYSIS"
+  ],
+  "title": {
+    "uz": "So‘lak dog‘lari: amilaza (Phadebas) va inson so‘lagini immunoxromatografik aniqlash",
+    "ru": "Пятна слюны: амилаза (Phadebas) и иммунохроматографическое определение слюны человека",
+    "en": "Saliva stains: amylase (Phadebas) and immunochromatographic detection of human saliva"
+  },
+  "summary": {
+    "uz": "So‘lak dog‘i alfa-amilaza orqali aniqlanadi: katalitik (Phadebas) sinama dastlabki, immunoxromatografik test (RSID-Saliva, SALIgAE) esa buzilgan namunalarda ham ishlaydi. Karta usullarni sezgirlik va spetsifiklik bo‘yicha solishtiradi, manbalar o‘rtasidagi qarama-qarshi natijani ochiq ko‘rsatadi.",
+    "ru": "Пятно слюны определяют по альфа-амилазе: каталитическая проба (Phadebas) ориентировочная, а иммунохроматографический тест (RSID-Saliva, SALIgAE) работает и на разложившихся образцах. Карточка сравнивает методы по чувствительности и специфичности и открыто показывает противоречия между источниками.",
+    "en": "Saliva stains are identified through alpha-amylase: the catalytic test (Phadebas) is presumptive, whereas the immunochromatographic test (RSID-Saliva, SALIgAE) also works on degraded samples. The card compares the methods by sensitivity and specificity and openly shows contradictions between sources."
+  },
+  "sections": [
+    {
+      "key": "basis",
+      "title": {
+        "uz": "Ilmiy asos",
+        "ru": "Научная основа",
+        "en": "Scientific basis"
+      },
+      "body": {
+        "uz": "So‘lak dog‘ini aniqlashda odatda so‘lak alfa-amilazasi aniqlanadi. Ikki tamoyil bor: (1) ferment faolligi (katalitik) — amilaza kraxmalni parchalaydi, ajralgan mahsulot ko‘rinadigan belgi beradi (Phadebas, kraxmal-qog‘oz sinamalari) va (2) immunologik — amilaza oqsilining o‘zi monoklonal antitelolar bilan topiladi (RSID-Saliva kabi lateral flow chiziqlari) [old2009, ohta2019].\n\nKatalitik sinamalar dastlabki (presumptive) hisoblanadi, chunki alfa-amilaza so‘lakdan tashqari boshqa suyuqliklarda ham bor: qiyosiy tadqiqotlarda ter va siydikda ham amilaza faolligi o‘lchangan [barni2006]. Immunologik testlar oqsilning o‘zini topgani uchun faolligi yo‘qolgan (buzilgan) namunalarda ham ishlaydi [ohta2019].",
+        "ru": "Для обнаружения пятен слюны обычно определяют альфа-амилазу слюны. Есть два принципа: (1) ферментативная активность (каталитический) — амилаза расщепляет крахмал, и продукт даёт видимый сигнал (Phadebas, крахмальные бумажные пробы) и (2) иммунологический — сам белок амилазы выявляют моноклональными антителами (латеральные полоски типа RSID-Saliva) [old2009, ohta2019].\n\nКаталитические пробы считаются ориентировочными (presumptive), потому что альфа-амилаза есть не только в слюне, но и в других жидкостях: активность амилазы измеряли и в поте, и в моче [barni2006]. Иммунологические тесты выявляют сам белок, поэтому работают и на образцах с утраченной активностью (разложившихся) [ohta2019].",
+        "en": "Saliva stains are usually identified through salivary alpha-amylase. There are two principles: (1) enzymatic activity (catalytic) — amylase breaks down starch and the product gives a visible signal (Phadebas, starch-paper tests) and (2) immunological — the amylase protein itself is detected with monoclonal antibodies (lateral-flow strips such as RSID-Saliva) [old2009, ohta2019].\n\nCatalytic tests are presumptive because alpha-amylase is present not only in saliva but also in other fluids: amylase activity was measured in sweat and urine as well [barni2006]. Immunological tests detect the protein itself and therefore also work on samples that have lost enzymatic activity (degraded samples) [ohta2019]."
+      },
+      "citations": [
+        "old2009",
+        "ohta2019",
+        "barni2006"
+      ]
+    },
+    {
+      "key": "scope",
+      "title": {
+        "uz": "Qamrov va holat",
+        "ru": "Область и статус",
+        "en": "Scope and status"
+      },
+      "body": {
+        "uz": "Karta so‘lakni amilaza bo‘yicha aniqlash (Phadebas va boshqa katalitik sinamalar) hamda inson so‘lagini aniqlovchi immunoxromatografik ekspress testlar (RSID-Saliva, SALIgAE)ni, ularning sezgirligi, spetsifikligi va cheklovlarini qamrab oladi. Amilazani aniqlashning klassik «kraxmal–yod» ishchi eritmalari tarkibi, so‘lak dog‘larida ABO antigenlarini absorbsiya–elyusiya va miqdoriy absorbsiya bilan aniqlash va «ajratuvchanlik»ni baholash bu kartada bayon etilmagan — tekshirilgan ochiq manba topilmadi, manba tekshirilmoqda (ABO bo‘yicha umumiy printsip «ABO guruhini dog‘larda aniqlash» kartasida).\n\nHolat: bu karta ekspert (reviewer) tekshiruvidan o‘tmagan (NEEDS_REVIEW) — undan ish uchun tayanishdan oldin vakolatli ekspert tasdig‘i kerak. Ru va en matnlar — avtomatik qoralama. Milliy huquqiy talablar bu kartada berilmagan; ular alohida huquqiy qatlamda.",
+        "ru": "Карточка охватывает обнаружение слюны по амилазе (Phadebas и другие каталитические пробы) и иммунохроматографические экспресс-тесты на слюну человека (RSID-Saliva, SALIgAE), их чувствительность, специфичность и ограничения. Состав рабочих растворов классической пробы «крахмал–йод» на амилазу, определение антигенов ABO в пятнах слюны абсорбцией–элюцией и количественной абсорбцией и оценка «выделительства» в карточке не описаны — проверенного открытого источника не найдено, источник уточняется (общий принцип по ABO — в карточке «Определение группы ABO в пятнах»).\n\nСтатус: карточка не прошла экспертную проверку (NEEDS_REVIEW) — перед использованием в работе нужно подтверждение уполномоченного эксперта. Тексты ru и en — автоматический черновик. Национальные правовые требования в карточке не приводятся; они даны в отдельном правовом слое.",
+        "en": "The card covers detecting saliva by amylase (Phadebas and other catalytic tests) and immunochromatographic rapid tests for human saliva (RSID-Saliva, SALIgAE), with their sensitivity, specificity and limitations. The composition of the working solutions of the classical starch-iodine amylase test, ABO antigen determination in saliva stains by absorption-elution and quantitative absorption, and assessment of 'secretor status' are not described — no verified open source was found, source under verification (the general ABO principle is in the card 'ABO grouping of stains').\n\nStatus: this card has not passed expert review (NEEDS_REVIEW) — authorised expert (reviewer) approval is required before relying on it in casework. The ru and en texts are machine drafts. National legal requirements are not given here; they sit in a separate legal layer."
+      },
+      "citations": []
+    },
+    {
+      "key": "methods",
+      "title": {
+        "uz": "Usullar va ularning solishtirilishi",
+        "ru": "Методы и их сравнение",
+        "en": "Methods compared"
+      },
+      "body": {
+        "uz": "• Phadebas press-test (katalitik): Phadebas qog‘ozi so‘lak amilazasiga juda sezgir, lekin avval ma’lum bo‘lgandan kamroq spetsifik; 37 °C da tekshirish sezgirlikni o‘zgartirmagan, lekin boshqa dog‘lar bilan o‘zaro reaksiyani oshirgan; qon, siydik va vaginal ajratmalar aralash dog‘larda amilazani aniqlashga to‘sqinlik qilgan [wornes2018].\n• RSID-Saliva (immunologik): ikkita monoklonal antitelo; 1 µL dan kam so‘lakni aniqlagan; qon, sperma, siydik va vaginal suyuqlik bilan o‘zaro reaksiya bermagan; shuning uchun dog‘ning faqat bir qismi bilan sinash va qolganini DNK uchun saqlash mumkin [old2009]. Dublin laboratoriyasida RSID-Saliva Phadebas miqdoriy testidan past konsentratsiyani aniqlagan [casey2010].\n• RSID-Saliva, SALIgAE va Phadebas aniqlash chegaralari mos ravishda 10, 4 va 1000 nL (inson so‘lagi) bo‘lgan; RSID va SALIgAE siydik, ona suti va najas bilan reaksiya bergan, sperma, vaginal ajratma, qon va ter bilan bermagan [pang2008]. Eslatma: RSID-Saliva siydik bilan reaksiya bermaydi degan [old2009] va reaksiya beradi degan [pang2008] natijalar bir-biriga zid — buni laboratoriya o‘z validatsiyasida tekshirishi kerak.\n• Kraxmal-qog‘oz (red starch paper, RSP) testi so‘lakni muvaffaqiyatli aniqlagan va ishlatilgan RSPda kislotali fosfataza (AP) testini o‘tkazish mumkin [vennemann2014].\n• Amilaza kinetik (spektrofotometrik) testi: faollik qiymatlari va reaksiya egri chiziqlari bo‘yicha so‘lakni amilaza bor boshqa suyuqliklardan (ter, siydik) ajratgan, jumladan aralash dog‘larda [barni2006].",
+        "ru": "• Press-тест Phadebas (каталитический): бумага Phadebas очень чувствительна к амилазе слюны, но менее специфична, чем считалось ранее; исследование при 37 °C не изменило чувствительность, но повысило перекрёстные реакции с другими пятнами; кровь, моча и вагинальные выделения мешали обнаружению амилазы в смешанных пятнах [wornes2018].\n• RSID-Saliva (иммунологический): два моноклональных антитела; обнаруживал менее 1 мкл слюны; не реагировал с кровью, спермой, мочой и вагинальной жидкостью; поэтому можно проверить лишь часть пятна, а остальное сохранить для ДНК [old2009]. В лаборатории Дублина RSID-Saliva выявлял более низкие концентрации, чем количественный тест Phadebas [casey2010].\n• Пределы обнаружения RSID-Saliva, SALIgAE и Phadebas — 10, 4 и 1000 нл (слюна человека) соответственно; RSID и SALIgAE реагировали с мочой, грудным молоком и фекалиями, но не со спермой, вагинальным секретом, кровью и потом [pang2008]. Примечание: результаты «RSID-Saliva не реагирует с мочой» [old2009] и «реагирует» [pang2008] противоречат друг другу — лаборатория должна проверить это в собственной валидации.\n• Тест с красной крахмальной бумагой (red starch paper, RSP) успешно выявлял слюну, а на использованной RSP можно проводить пробу на кислую фосфатазу (AP) [vennemann2014].\n• Кинетический (спектрофотометрический) тест амилазы: по значениям активности и кривым реакции отличал слюну от других жидкостей, содержащих амилазу (пот, моча), в том числе в смешанных пятнах [barni2006].",
+        "en": "• Phadebas press test (catalytic): Phadebas paper is very sensitive to salivary amylase but less specific than previously reported; testing at 37 °C did not change sensitivity but increased cross-reactivity with other stains; blood, urine and vaginal secretions inhibited amylase detection in mixed stains [wornes2018].\n• RSID-Saliva (immunological): two monoclonal antibodies; detected less than 1 µL of saliva; did not cross-react with blood, semen, urine or vaginal fluid; so only part of a stain can be tested and the rest kept for DNA [old2009]. In the Dublin laboratory RSID-Saliva detected lower concentrations than the quantitative Phadebas test [casey2010].\n• The detection limits of RSID-Saliva, SALIgAE and Phadebas were 10, 4 and 1000 nL (human saliva) respectively; RSID and SALIgAE reacted with urine, breast milk and faeces but not with semen, vaginal secretion, blood or sweat [pang2008]. Note: the results 'RSID-Saliva does not react with urine' [old2009] and 'it does' [pang2008] contradict each other — the laboratory must check this in its own validation.\n• The red starch paper (RSP) test detected saliva successfully, and the acid phosphatase (AP) test can be run on used RSP [vennemann2014].\n• Amylase kinetic (spectrophotometric) test: from activity values and reaction curves it distinguished saliva from other amylase-containing fluids (sweat, urine), including in mixed stains [barni2006]."
+      },
+      "citations": [
+        "wornes2018",
+        "old2009",
+        "casey2010",
+        "pang2008",
+        "vennemann2014",
+        "barni2006"
+      ]
+    },
+    {
+      "key": "interpretation",
+      "title": {
+        "uz": "Talqin",
+        "ru": "Интерпретация",
+        "en": "Interpretation"
+      },
+      "body": {
+        "uz": "Katalitik sinama musbat: «amilaza faolligi aniqlandi; so‘lak bo‘lishi mumkin» — chunki amilaza boshqa suyuqliklarda ham bor [barni2006] va Phadebas boshqa dog‘lar bilan o‘zaro reaksiya berishi mumkin [wornes2018]. Immunologik test musbat bo‘lsa, inson so‘lak amilazasi aniqlangan deb yoziladi; bu so‘lakka xos, lekin mutlaq emas (RSID siydik va najas bilan o‘zaro reaksiya berganligi haqida ma’lumot bor [pang2008]). Katalitik manfiy, immunologik musbat natija — buzilgan (faolligi yo‘qolgan) namuna belgisi bo‘lishi mumkin: nam tuproqda parchalangan so‘lak dog‘larida barcha Phadebas testlari manfiy, RSID-Saliva va ELISA esa musbat bo‘lgan [ohta2019].\n\nHar qanday so‘lak testining manfiy natijasi ham so‘lak yo‘qligini isbotlamaydi: aralash dog‘larda qon, siydik va vaginal ajratma amilaza aniqlanishini susaytirgan [wornes2018].",
+        "ru": "Каталитическая проба положительна: «обнаружена активность амилазы; слюна возможна» — так как амилаза есть и в других жидкостях [barni2006], а Phadebas может перекрёстно реагировать с другими пятнами [wornes2018]. При положительном иммунологическом тесте записывают, что обнаружена амилаза слюны человека; это характерно для слюны, но не абсолютно (есть данные о перекрёстной реакции RSID с мочой и фекалиями [pang2008]). Отрицательный каталитический и положительный иммунологический результаты могут быть признаком разложившегося образца (с утраченной активностью): в пятнах слюны, разложенных во влажной почве, все пробы Phadebas были отрицательны, а RSID-Saliva и ELISA — положительны [ohta2019].\n\nОтрицательный результат любого теста на слюну также не доказывает отсутствия слюны: в смешанных пятнах кровь, моча и вагинальные выделения подавляли обнаружение амилазы [wornes2018].",
+        "en": "Catalytic test positive: 'amylase activity detected; saliva is possible' — because amylase also occurs in other fluids [barni2006] and Phadebas may cross-react with other stains [wornes2018]. If an immunological test is positive, record that human salivary amylase was detected; this is characteristic of saliva but not absolute (cross-reaction of RSID with urine and faeces has been reported [pang2008]). A negative catalytic and positive immunological result can indicate a degraded sample (with lost activity): in saliva stains degraded in humid soil all Phadebas tests were negative while RSID-Saliva and ELISA were positive [ohta2019].\n\nA negative result of any saliva test also does not prove the absence of saliva: in mixed stains blood, urine and vaginal secretion suppressed amylase detection [wornes2018]."
+      },
+      "citations": [
+        "barni2006",
+        "wornes2018",
+        "pang2008",
+        "ohta2019"
+      ]
+    },
+    {
+      "key": "limitations",
+      "title": {
+        "uz": "Cheklovlar",
+        "ru": "Ограничения",
+        "en": "Limitations"
+      },
+      "body": {
+        "uz": "• Hasharot izlari: Phadebas va SALIgAE pashsha izini so‘lakdan ajrata olmagan; RSID-Saliva 3 kunlik izni ajratgan, 2 haftalik izni ajrata olmagan [durdle2015].\n• Eskirgan/buzilgan namunalar: katalitik testlar uchun faollik yo‘qolishi [ohta2019].\n• Laboratoriyalararo farqlar: qiyosiy sezgirlik chegaralari (10, 4, 1000 nL) laboratoriya, partiya va protokolga qarab o‘zgaradi — o‘z validatsiyangizga tayaning.\n• Boshqa biologik namunalar bilan o‘zaro reaksiyalar tizimli o‘rganilgan [stroud2023].\n• Marker faqat amilaza bo‘lgani uchun spetsifiklik cheklangan: so‘lakning boshqa markerlari alohida tadqiqotlarda ko‘rib chiqilgan, ammo bu kartada tekshirilmagan.",
+        "ru": "• Следы насекомых: Phadebas и SALIgAE не отличали следы мух от слюны; RSID-Saliva отличал 3-дневный след, но не 2-недельный [durdle2015].\n• Старые/разложившиеся образцы: потеря активности для каталитических тестов [ohta2019].\n• Межлабораторные различия: сравнительные пределы чувствительности (10, 4, 1000 нл) меняются в зависимости от лаборатории, партии и протокола — опирайтесь на собственную валидацию.\n• Перекрёстные реакции с другими биологическими образцами изучены систематически [stroud2023].\n• Так как маркер только один — амилаза, специфичность ограничена: другие маркеры слюны рассматривались в отдельных работах, но в карточке не проверялись.",
+        "en": "• Insect traces: Phadebas and SALIgAE could not distinguish fly artifacts from saliva; RSID-Saliva distinguished 3-day-old but not 2-week-old artifacts [durdle2015].\n• Aged/degraded samples: loss of activity for catalytic tests [ohta2019].\n• Inter-laboratory differences: the comparative sensitivity limits (10, 4, 1000 nL) vary with laboratory, batch and protocol — rely on your own validation.\n• Cross-reactions with other biological samples have been studied systematically [stroud2023].\n• Because amylase is the only marker, specificity is limited: other saliva markers have been examined in separate studies but were not checked in this card."
+      },
+      "citations": [
+        "durdle2015",
+        "ohta2019",
+        "stroud2023"
+      ]
+    },
+    {
+      "key": "cautions",
+      "title": {
+        "uz": "Ehtiyot choralari",
+        "ru": "Меры предосторожности",
+        "en": "Precautions"
+      },
+      "body": {
+        "uz": "So‘lak dog‘lari yuqumli material sifatida qaraladi — shaxsiy himoya vositalarini qo‘llang [nistir7928] (5-b.). Dog‘ning bir qismini sinashda qolgan qismini DNK uchun saqlash: sezgir immunologik test dog‘ning kichik qismi bilan bajarilishi mumkin [old2009]; kraxmal-qog‘oz testi ishlatilgan qog‘ozda AP testini davom ettirishga imkon beradi [vennemann2014]. Yuvish vositasi AP sinamasini susaytirgan [vennemann2014] — ashyoning yuvilgan-yuvilmaganini hisobga oling.",
+        "ru": "Пятна слюны рассматривают как потенциально инфекционный материал — используйте средства индивидуальной защиты [nistir7928] (с. 5). При исследовании части пятна остальное сохраняйте для ДНК: чувствительный иммунологический тест можно выполнить на небольшой части пятна [old2009]; проба с крахмальной бумагой позволяет продолжить пробу на AP на использованной бумаге [vennemann2014]. Моющее средство подавляло пробу на AP [vennemann2014] — учитывайте, стирался ли объект.",
+        "en": "Saliva stains are treated as potentially infectious material — use personal protective equipment [nistir7928] (p. 5). When testing part of a stain, keep the rest for DNA: a sensitive immunological test can be run on a small part of a stain [old2009]; the starch-paper test allows an AP test to continue on the used paper [vennemann2014]. A detergent suppressed the AP test [vennemann2014] — consider whether the item has been laundered."
+      },
+      "citations": [
+        "nistir7928",
+        "old2009",
+        "vennemann2014"
+      ]
+    }
+  ],
+  "keywords": {
+    "uz": [
+      "so‘lak",
+      "so‘lak dog‘i",
+      "amilaza",
+      "alfa-amilaza",
+      "Phadebas",
+      "RSID-Saliva",
+      "SALIgAE",
+      "kraxmal-qog‘oz",
+      "immunoxromatografiya",
+      "ekspress test",
+      "inson so‘lagi",
+      "sud serologiyasi"
+    ],
+    "ru": [
+      "слюна",
+      "пятно слюны",
+      "амилаза",
+      "альфа-амилаза",
+      "Phadebas",
+      "RSID-Saliva",
+      "SALIgAE",
+      "крахмальная бумага",
+      "иммунохроматография",
+      "экспресс-тест",
+      "слюна человека",
+      "судебная серология"
+    ],
+    "en": [
+      "saliva",
+      "saliva stain",
+      "amylase",
+      "alpha-amylase",
+      "Phadebas",
+      "RSID-Saliva",
+      "SALIgAE",
+      "starch paper",
+      "immunochromatography",
+      "rapid test",
+      "human saliva",
+      "forensic serology"
+    ]
+  },
+  "omitted_unverified": [
+    "Classical starch-iodine amylase test reagent compositions and incubation conditions: no verified source read; not given.",
+    "ABO absorption-elution and quantitative absorption on saliva stains, 'secretor degree' assessment: not described here (see ABO card).",
+    "Other saliva markers (e.g. statherin): not verified in this card; only mentioned as existing in separate studies.",
+    "The conflict between old2009 (no urine cross-reaction) and pang2008 (urine cross-reaction) is stated openly, not resolved.",
+    "Reading of 'Phadebas is more sensitive and less specific than previously reported' follows the abstract of wornes2018 only."
+  ]
+}
