@@ -24,6 +24,9 @@ Yangilangan: 2026-10-10. Format: [holat] vazifa — egasi/keyingi qadam.
   Qamrov va qolgan bo‘limlar: `docs/ABY_COVERAGE.md`.
 
 ## Play Console (Internal testing)
+- [bajarildi] 2026-10-10 22:5x — ABY mazmuni bilan yangi build: Play internal (draft,
+  versionCode **4**, run 38092553561) va TestFlight (run 38091538066). versionCode 3
+  Play'da band edi, shuning uchun 4 ga ko‘tarildi.
 - [bajarildi] Imzolangan `.aab` — CI artefakti, `fe-upload` kaliti bilan imzolangan,
   SHA-256 `7419a168…1711c8`. Build: Actions run 38060031190.
 - [bajarildi] Do'kon matnlari uch tilda — `docs/play_store/listing.md`.
