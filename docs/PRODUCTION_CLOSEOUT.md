@@ -71,3 +71,8 @@ DEBUG build’lar store’ga yuklanmaydi.
 - 0.3.0 (85) — `4238338`: + yangi logotip (egasi tasdiqladi: ikon, splash, ilova ichidagi variantlar). Delivery a3f75e67-9e1b-4656-b052-69498a035917.
 - Ikkalasi ham UPLOAD SUCCEEDED; ko‘rib chiqishga yuborilmagan (public release yo‘q). CI yashil, to‘liq suite 2514 PASS, real-ilova 374/374.
 - Ma’lum: uch tilli ilmiy kontent loyihasi davom etmoqda (`docs/L10N_AUDIT_20261009.md`).
+- 0.3.0 (101) — `198452c`: uch tilli lokalizatsiya (C+D+D2+E/F): 882 ta tadqiqot sarlavhasi glossi,
+  63 ta karta tushuntirishi, tarjima-birinchi ko‘rinish + «Asl matn», O‘zbekiston qonunlarining rasmiy
+  nomlari, yagona terminologiya, qayta qurilgan o‘quv testi (izoh + imtihon/mashq). Delivery
+  3c1a955a-2c22-46e0-b809-8bfba466f93c. CI yashil; to‘liq suite 2582 PASS; SQL 229 PASS;
+  real-ilova 255/256; lang_audit uz/ru/en 0/0/0 error.
