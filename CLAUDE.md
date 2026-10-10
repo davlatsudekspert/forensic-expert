@@ -12,6 +12,13 @@
 - **ABY 2025:** yopiq/admin integratsiyaga tayyorlanadi (qoidalar: `docs/35_…` “YANGI QAROR”). Fayl va undan olingan katalog repoga, Supabase’ga, boshqa AI’ga yoki ommaviy kanalga chiqmaydi — egasining alohida roziligisiz.
 - NFCSTORE va BugunBor repolarini o‘zgartirmang; maxfiy kalitlarni chiqarmang.
 
+## Model tanlash (egasi talabi, 2026-10-10)
+- **Fable ishlatilmaydi** — limitni tez yeydi.
+- Agentlar (subagent) uchun standart model — **Sonnet**.
+- Kuchli model (Opus) faqat zarur joyda: branchlarni birlashtirish va konflikt
+  yechish, ilmiy/huquqiy qaror, xato sababini tahlil qilish, egasi bilan muloqot.
+- Uzoq va mexanik ishlar (kontent yig'ish, test yozish, build kutish) — Sonnet.
+
 ## Keyingi sessiya uchun (davom ettirish)
 1. `docs/PROJECT_STATUS.md`, `docs/ACTIVE_TASKS.md`, `docs/DECISIONS.md`, `docs/TEST_REPORT.md` ni o‘qing — haqiqiy holat shu yerda.
 2. `git log --oneline -15` va worktree branchlar (`git branch -a | grep worktree`) — birlashtirilmagan agent ishlari bo‘lishi mumkin.
