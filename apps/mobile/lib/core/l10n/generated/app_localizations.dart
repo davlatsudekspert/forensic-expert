@@ -14198,6 +14198,564 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Based on the source (not a direct quotation)'**
   String get detailSourcedStatement;
+
+  /// Title of the Pro advanced search screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Advanced search'**
+  String get proSearchTitle;
+
+  /// Chip on the search screen that opens the Pro advanced search.
+  ///
+  /// In en, this message translates to:
+  /// **'Filters and reverse lookups'**
+  String get proSearchEntry;
+
+  /// Intro text of the advanced search screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Narrow the offline pack by specimen, method, reagent, evidence level and more, or go from a specimen, method or reagent to the substances documented for it.'**
+  String get proSearchIntro;
+
+  /// Paywall card title on the advanced search screen. {tier} is the plan name.
+  ///
+  /// In en, this message translates to:
+  /// **'Advanced search — {tier}'**
+  String proSearchLockedTitle(String tier);
+
+  /// Paywall card body on the advanced search screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Filters (discipline, class, specimen, method, reagent, evidence, review status, jurisdiction, year), exact-phrase search and reverse lookups need a paid plan. The regular search stays available to everyone.'**
+  String get proSearchLockedBody;
+
+  /// Hint of the advanced search text field.
+  ///
+  /// In en, this message translates to:
+  /// **'Name, synonym or \"phrase\"'**
+  String get proSearchHint;
+
+  /// Switch: match the whole name or synonym only.
+  ///
+  /// In en, this message translates to:
+  /// **'Exact match'**
+  String get proSearchExact;
+
+  /// Tab: faceted search.
+  ///
+  /// In en, this message translates to:
+  /// **'Search'**
+  String get proTabSearch;
+
+  /// Tab: reverse lookups.
+  ///
+  /// In en, this message translates to:
+  /// **'Reverse lookup'**
+  String get proTabReverse;
+
+  /// Heading of the filter block.
+  ///
+  /// In en, this message translates to:
+  /// **'Filters'**
+  String get proFilters;
+
+  /// Button: reset all facet filters.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear filters'**
+  String get proFiltersClear;
+
+  /// Facet subtitle when nothing is selected.
+  ///
+  /// In en, this message translates to:
+  /// **'Any'**
+  String get proFacetAny;
+
+  /// Facet title.
+  ///
+  /// In en, this message translates to:
+  /// **'Discipline'**
+  String get proFacetDiscipline;
+
+  /// Facet title.
+  ///
+  /// In en, this message translates to:
+  /// **'Substance class'**
+  String get proFacetClass;
+
+  /// Facet title.
+  ///
+  /// In en, this message translates to:
+  /// **'Specimen'**
+  String get proFacetSpecimen;
+
+  /// Facet title.
+  ///
+  /// In en, this message translates to:
+  /// **'Method family'**
+  String get proFacetFamily;
+
+  /// Facet title.
+  ///
+  /// In en, this message translates to:
+  /// **'Reagent'**
+  String get proFacetReagent;
+
+  /// Facet title.
+  ///
+  /// In en, this message translates to:
+  /// **'Evidence level'**
+  String get proFacetEvidence;
+
+  /// Facet title.
+  ///
+  /// In en, this message translates to:
+  /// **'Review status'**
+  String get proFacetStatus;
+
+  /// Facet title.
+  ///
+  /// In en, this message translates to:
+  /// **'Jurisdiction'**
+  String get proFacetJurisdiction;
+
+  /// Facet title.
+  ///
+  /// In en, this message translates to:
+  /// **'Source year'**
+  String get proFacetYear;
+
+  /// Evidence facet chip. {level} is A, B, C or D.
+  ///
+  /// In en, this message translates to:
+  /// **'Level {level} or higher'**
+  String proEvidenceAtLeast(String level);
+
+  /// Year facet chip.
+  ///
+  /// In en, this message translates to:
+  /// **'Since {year}'**
+  String proYearSince(int year);
+
+  /// Method family label (select on the family code).
+  ///
+  /// In en, this message translates to:
+  /// **'{code, select, colourTest{Colour (spot) test} tlc{TLC (thin-layer chromatography)} microcrystal{Microcrystal test} uvVis{UV/Vis spectrophotometry} immunoassay{Immunoassay} gcMs{GC-MS} lcMs{LC-MS, LC-MS/MS} hrms{HRMS (high-resolution MS)} gcFid{GC-FID, headspace GC} hplc{HPLC} other{{code}}}'**
+  String proFamilyName(String code);
+
+  /// Number of search results.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 result} other{{count} results}}'**
+  String proResultCount(int count);
+
+  /// Empty-result title.
+  ///
+  /// In en, this message translates to:
+  /// **'No match in the pack'**
+  String get proResultsNoneTitle;
+
+  /// Empty-result body.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing matches this combination. Remove a filter, switch off exact match or try another spelling or language.'**
+  String get proResultsNoneBody;
+
+  /// Hint before any query or filter.
+  ///
+  /// In en, this message translates to:
+  /// **'Type a name or pick a filter to see results.'**
+  String get proResultsStart;
+
+  /// Reverse lookup mode.
+  ///
+  /// In en, this message translates to:
+  /// **'Reagent → substances'**
+  String get proReverseReagent;
+
+  /// Reverse lookup mode.
+  ///
+  /// In en, this message translates to:
+  /// **'Specimen → analytes'**
+  String get proReverseSpecimen;
+
+  /// Reverse lookup mode.
+  ///
+  /// In en, this message translates to:
+  /// **'Method → substances'**
+  String get proReverseMethod;
+
+  /// Prompt in reverse lookup.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose one to see which substances the pack documents for it.'**
+  String get proReversePick;
+
+  /// Number of substances in a reverse lookup.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 substance} other{{count} substances}}'**
+  String proReverseCount(int count);
+
+  /// Reverse reagent lookup when the pack has no reagent-substance link.
+  ///
+  /// In en, this message translates to:
+  /// **'The pack documents no link between a reagent and a substance yet ({count} reagent recipes exist). Nothing is guessed.'**
+  String proReverseNoReagents(int count);
+
+  /// Reverse lookup with no substances.
+  ///
+  /// In en, this message translates to:
+  /// **'No substance is documented for this item in the pack.'**
+  String get proReverseEmpty;
+
+  /// Reverse lookup caveat.
+  ///
+  /// In en, this message translates to:
+  /// **'Only links stated in the sources. Not found here does not mean not possible.'**
+  String get proReverseNote;
+
+  /// Reverse lookup role.
+  ///
+  /// In en, this message translates to:
+  /// **'analysed with this method (source)'**
+  String get proRoleAnalysed;
+
+  /// Reverse lookup role.
+  ///
+  /// In en, this message translates to:
+  /// **'confirmation after screening'**
+  String get proRoleConfirmation;
+
+  /// Reverse lookup role.
+  ///
+  /// In en, this message translates to:
+  /// **'screened with this test'**
+  String get proRoleScreened;
+
+  /// Reverse lookup role.
+  ///
+  /// In en, this message translates to:
+  /// **'value reported in this specimen (not a threshold)'**
+  String get proRoleMeasured;
+
+  /// Reverse lookup: intermediate record names.
+  ///
+  /// In en, this message translates to:
+  /// **'via {names}'**
+  String proViaLabel(String names);
+
+  /// Entry card on the substance page.
+  ///
+  /// In en, this message translates to:
+  /// **'Analysis plan for this substance'**
+  String get planEntryTitle;
+
+  /// Entry card body.
+  ///
+  /// In en, this message translates to:
+  /// **'Specimens, presumptive tests, confirmation, interferences, limits and a note for your conclusion on one page, with sources.'**
+  String get planEntryBody;
+
+  /// Screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Analysis plan'**
+  String get planTitle;
+
+  /// Banner at the top of the plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Assembled only from sourced statements already in the pack. It is a reference outline, not a validated procedure and not an expert conclusion.'**
+  String get planIntro;
+
+  /// Free preview summary line.
+  ///
+  /// In en, this message translates to:
+  /// **'Specimens: {s} · Presumptive tests: {p} · Confirmation: {c} · Limits: {l}'**
+  String planSummary(int s, int p, int c, int l);
+
+  /// Paywall card title on the plan. {tier} is the plan name.
+  ///
+  /// In en, this message translates to:
+  /// **'Full analysis plan — {tier}'**
+  String planLockedTitle(String tier);
+
+  /// Paywall card body on the plan.
+  ///
+  /// In en, this message translates to:
+  /// **'The free preview shows the counts and the specimens. The paid plan adds presumptive tests with reagents, bench and confirmation steps, interferences, limits, the note for your conclusion and a copyable text with full citations.'**
+  String get planLockedBody;
+
+  /// Plan section title.
+  ///
+  /// In en, this message translates to:
+  /// **'Specimens and sampling notes'**
+  String get planSecSpecimens;
+
+  /// Plan section title.
+  ///
+  /// In en, this message translates to:
+  /// **'Presumptive tests (reagent and observation)'**
+  String get planSecPresumptive;
+
+  /// Plan section title.
+  ///
+  /// In en, this message translates to:
+  /// **'TLC, microcrystal and UV/Vis'**
+  String get planSecBench;
+
+  /// Plan section title.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirmation step'**
+  String get planSecConfirmation;
+
+  /// Plan section title.
+  ///
+  /// In en, this message translates to:
+  /// **'Other instrumental methods in the sources'**
+  String get planSecInstrumental;
+
+  /// Plan section title.
+  ///
+  /// In en, this message translates to:
+  /// **'Interferences, cross-reactivity and false results'**
+  String get planSecInterferences;
+
+  /// Plan section title.
+  ///
+  /// In en, this message translates to:
+  /// **'Interpretation limits'**
+  String get planSecLimits;
+
+  /// Plan section title.
+  ///
+  /// In en, this message translates to:
+  /// **'Note for the conclusion'**
+  String get planSecReminder;
+
+  /// Empty block.
+  ///
+  /// In en, this message translates to:
+  /// **'No specimen is documented for this substance in the pack.'**
+  String get planNoSpecimens;
+
+  /// Empty block.
+  ///
+  /// In en, this message translates to:
+  /// **'No collection or preservation note is documented for these specimens in the pack.'**
+  String get planNoSamplingNotes;
+
+  /// Empty block.
+  ///
+  /// In en, this message translates to:
+  /// **'No presumptive test is documented for this substance in the pack.'**
+  String get planNoPresumptive;
+
+  /// Empty block.
+  ///
+  /// In en, this message translates to:
+  /// **'No reagent and expected observation pair is documented for this test in the pack.'**
+  String get planNoReagents;
+
+  /// Empty block.
+  ///
+  /// In en, this message translates to:
+  /// **'No TLC, microcrystal or UV/Vis system is documented for this substance in the pack.'**
+  String get planNoBench;
+
+  /// Empty block.
+  ///
+  /// In en, this message translates to:
+  /// **'No confirmation method is documented for this substance in the pack.'**
+  String get planNoConfirmation;
+
+  /// Empty block.
+  ///
+  /// In en, this message translates to:
+  /// **'No other instrumental method is mentioned with this substance in the pack.'**
+  String get planNoInstrumental;
+
+  /// Empty block.
+  ///
+  /// In en, this message translates to:
+  /// **'No interference, cross-reactivity or false result is documented for the tests of this substance in the pack.'**
+  String get planNoInterferences;
+
+  /// Empty block.
+  ///
+  /// In en, this message translates to:
+  /// **'No sourced limitation statement for these specimens and methods in the pack.'**
+  String get planNoLimits;
+
+  /// Chip on the confirmation block.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirmation required'**
+  String get planConfirmRequired;
+
+  /// Label above the reagents of a presumptive test.
+  ///
+  /// In en, this message translates to:
+  /// **'Reagents linked in the sources'**
+  String get planReagentsLabel;
+
+  /// Button: open the reagent recipe.
+  ///
+  /// In en, this message translates to:
+  /// **'Reagent recipe'**
+  String get planReagentRecipe;
+
+  /// Presumptive test principle line.
+  ///
+  /// In en, this message translates to:
+  /// **'Principle: {principle}'**
+  String planPrinciple(String principle);
+
+  /// Presumptive test note.
+  ///
+  /// In en, this message translates to:
+  /// **'The sources do not present this test as definitive identification.'**
+  String get planNotDefinitive;
+
+  /// Line under a quote: which test, method or specimen the statement belongs to (not the substance).
+  ///
+  /// In en, this message translates to:
+  /// **'Applies to: {name}'**
+  String planAbout(String name);
+
+  /// Source line under a plan statement.
+  ///
+  /// In en, this message translates to:
+  /// **'Source: {title}'**
+  String planSourceLine(String title);
+
+  /// Locator line under a plan statement.
+  ///
+  /// In en, this message translates to:
+  /// **'Location: {locator}'**
+  String planLocatorLine(String locator);
+
+  /// Statement without a source.
+  ///
+  /// In en, this message translates to:
+  /// **'Source not stated'**
+  String get planNoSource;
+
+  /// Role label of a quote (select on the role code).
+  ///
+  /// In en, this message translates to:
+  /// **'{role, select, basis{Source statement} presumptive{Presumptive nature} confirmationRequirement{Confirmation requirement} limitation{Limitation} crossReactivity{Cross-reactivity} falsePositive{False positive} falseNegative{False negative} interference{Interference} detectionWindow{Detection window} use{Collection / use note} principle{Principle} application{Application} observation{Expected observation} other{{role}}}'**
+  String planRoleName(String role);
+
+  /// Reminder group heading.
+  ///
+  /// In en, this message translates to:
+  /// **'May rely on'**
+  String get planMayHeading;
+
+  /// Reminder group heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Do not state'**
+  String get planMayNotHeading;
+
+  /// Reminder. {tests} are screening test names.
+  ///
+  /// In en, this message translates to:
+  /// **'The sources do not support definitive identification by: {tests}. State such a result as presumptive only.'**
+  String planRemPresumptiveOnly(String tests);
+
+  /// Reminder. {methods} are confirmation method names.
+  ///
+  /// In en, this message translates to:
+  /// **'The pack names these confirmation methods: {methods}. Cite them only if your laboratory actually performed them.'**
+  String planRemConfirmDocumented(String methods);
+
+  /// Reminder.
+  ///
+  /// In en, this message translates to:
+  /// **'No confirmation method is documented in the pack for the tests above. Do not state a confirmed identification on the basis of this pack.'**
+  String get planRemConfirmMissing;
+
+  /// Reminder.
+  ///
+  /// In en, this message translates to:
+  /// **'Concentration records in the pack ({count}) are reported observations, not thresholds or cut-offs. Do not present them as reference limits.'**
+  String planRemNotThreshold(int count);
+
+  /// Reminder.
+  ///
+  /// In en, this message translates to:
+  /// **'The sources do not tie the methods to the specimens. Do not state which method was used on which specimen on the basis of this pack.'**
+  String get planRemNotPaired;
+
+  /// Reminder.
+  ///
+  /// In en, this message translates to:
+  /// **'No statement here has been verified by an expert reviewer. Do not present it as verified scientific data.'**
+  String get planRemNothingVerified;
+
+  /// Reminder.
+  ///
+  /// In en, this message translates to:
+  /// **'Open evidence conflicts recorded for this substance: {count}. Check before relying on it.'**
+  String planRemConflict(int count);
+
+  /// Reminder.
+  ///
+  /// In en, this message translates to:
+  /// **'The pack has no analysis data for this substance. This page cannot support a conclusion.'**
+  String get planRemNoData;
+
+  /// Footnote under the conclusion note.
+  ///
+  /// In en, this message translates to:
+  /// **'Based only on flags and sourced limitation statements in the pack. It adds no new scientific claim and is not an expert opinion.'**
+  String get planReminderFootnote;
+
+  /// Tooltip: copy the plan as text.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy the plan with citations'**
+  String get planCopy;
+
+  /// Snackbar after copying.
+  ///
+  /// In en, this message translates to:
+  /// **'Plan copied with full citations'**
+  String get planCopied;
+
+  /// Header of the copied text.
+  ///
+  /// In en, this message translates to:
+  /// **'ANALYSIS PLAN — {name}'**
+  String planExportHeader(String name);
+
+  /// Disclaimer in the copied text.
+  ///
+  /// In en, this message translates to:
+  /// **'Reference outline compiled from the sourced statements of the content pack. Not a validated procedure and not an expert conclusion; check every statement against the original source.'**
+  String get planExportDisclaimer;
+
+  /// Heading of the reference list in the copied text.
+  ///
+  /// In en, this message translates to:
+  /// **'SOURCES'**
+  String get planExportSources;
+
+  /// Label of the original quote in the copied text.
+  ///
+  /// In en, this message translates to:
+  /// **'Original'**
+  String get planExportOriginal;
+
+  /// Status and level in the copied text. {status} is the review status, {level} the evidence level.
+  ///
+  /// In en, this message translates to:
+  /// **'status: {status}; evidence level: {level}'**
+  String planExportStatus(String status, String level);
 }
 
 class _AppLocalizationsDelegate

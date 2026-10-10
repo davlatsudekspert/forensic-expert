@@ -29,6 +29,14 @@ abstract final class Routes {
   static String image(String id) => '/home/image/$id';
   // Qidiruv natijalari uchun Home tabidagi nusxa yo‘llar (tab almashmaydi).
   static String homeSubstance(String id) => '/home/substance/$id';
+
+  /// Pro: modda bo‘yicha tahlil rejasi.
+  static String homePlan(String id) => '/home/substance/$id/plan';
+
+  /// Pro: kengaytirilgan qidiruv (faset + teskari qidiruv).
+  static const proSearch = '/home/search/pro';
+  static String proSearchWith(String query) =>
+      Uri(path: proSearch, queryParameters: {'q': query}).toString();
   static String homeTool(String id) => '/home/tool/$id';
   static String homeGuideline(String id) =>
       '/home/guideline/${Uri.encodeComponent(id)}';

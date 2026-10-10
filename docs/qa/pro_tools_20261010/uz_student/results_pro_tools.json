@@ -1,0 +1,62 @@
+{
+  "role": "pro_tools",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "p01",
+      "title": "Oddiy qidiruv morfin + Pro kirish",
+      "result": "FAIL",
+      "notes": [
+        "NOTE: initialQuery natijasi bo‘sh edi, qayta yozilgach topildi",
+        "KALIT YO‘Q: search.hit.morphine"
+      ],
+      "screenshot": "p01_oddiy_qidiruv_morfin_pro_kirish.png"
+    },
+    {
+      "id": "p02",
+      "title": "Pro qidiruv: bepul ko‘rinish",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "p02_pro_qidiruv_bepul_ko_rinish.png"
+    },
+    {
+      "id": "p03",
+      "title": "Tahlil rejasi kirishi (etanol, bepul yozuv)",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | RAW:\"legislation.gov.uk\""
+      ],
+      "screenshot": "p03_tahlil_rejasi_kirishi_etanol_bepul_yozuv.png"
+    },
+    {
+      "id": "p04",
+      "title": "Tahlil rejasi: qisqa ko‘rinish + tarif",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "p04_tahlil_rejasi_qisqa_ko_rinish_tarif.png"
+    },
+    {
+      "id": "p05",
+      "title": "Tahlil rejasi: tarif tugmasi tariflarga olib boradi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "p05_tahlil_rejasi_tarif_tugmasi_tariflarga_o.png"
+    },
+    {
+      "id": "p06",
+      "title": "320 dp: tahlil rejasi (bepul)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "p06_320_dp_tahlil_rejasi_bepul.png"
+    },
+    {
+      "id": "p07",
+      "title": "320 dp: Pro qidiruv (bepul)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "p07_320_dp_pro_qidiruv_bepul.png"
+    }
+  ],
+  "pass": 6,
+  "fail": 1
+}

@@ -10522,5 +10522,494 @@
   "detailSourcedStatement": "Based on the source (not a direct quotation)",
   "@detailSourcedStatement": {
     "description": "Label above a claim body that paraphrases a source we may not quote."
+  },
+  "proSearchTitle": "Advanced search",
+  "@proSearchTitle": {
+    "description": "Title of the Pro advanced search screen."
+  },
+  "proSearchEntry": "Filters and reverse lookups",
+  "@proSearchEntry": {
+    "description": "Chip on the search screen that opens the Pro advanced search."
+  },
+  "proSearchIntro": "Narrow the offline pack by specimen, method, reagent, evidence level and more, or go from a specimen, method or reagent to the substances documented for it.",
+  "@proSearchIntro": {
+    "description": "Intro text of the advanced search screen."
+  },
+  "proSearchLockedTitle": "Advanced search — {tier}",
+  "@proSearchLockedTitle": {
+    "description": "Paywall card title on the advanced search screen. {tier} is the plan name.",
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "proSearchLockedBody": "Filters (discipline, class, specimen, method, reagent, evidence, review status, jurisdiction, year), exact-phrase search and reverse lookups need a paid plan. The regular search stays available to everyone.",
+  "@proSearchLockedBody": {
+    "description": "Paywall card body on the advanced search screen."
+  },
+  "proSearchHint": "Name, synonym or \"phrase\"",
+  "@proSearchHint": {
+    "description": "Hint of the advanced search text field."
+  },
+  "proSearchExact": "Exact match",
+  "@proSearchExact": {
+    "description": "Switch: match the whole name or synonym only."
+  },
+  "proTabSearch": "Search",
+  "@proTabSearch": {
+    "description": "Tab: faceted search."
+  },
+  "proTabReverse": "Reverse lookup",
+  "@proTabReverse": {
+    "description": "Tab: reverse lookups."
+  },
+  "proFilters": "Filters",
+  "@proFilters": {
+    "description": "Heading of the filter block."
+  },
+  "proFiltersClear": "Clear filters",
+  "@proFiltersClear": {
+    "description": "Button: reset all facet filters."
+  },
+  "proFacetAny": "Any",
+  "@proFacetAny": {
+    "description": "Facet subtitle when nothing is selected."
+  },
+  "proFacetDiscipline": "Discipline",
+  "@proFacetDiscipline": {
+    "description": "Facet title."
+  },
+  "proFacetClass": "Substance class",
+  "@proFacetClass": {
+    "description": "Facet title."
+  },
+  "proFacetSpecimen": "Specimen",
+  "@proFacetSpecimen": {
+    "description": "Facet title."
+  },
+  "proFacetFamily": "Method family",
+  "@proFacetFamily": {
+    "description": "Facet title."
+  },
+  "proFacetReagent": "Reagent",
+  "@proFacetReagent": {
+    "description": "Facet title."
+  },
+  "proFacetEvidence": "Evidence level",
+  "@proFacetEvidence": {
+    "description": "Facet title."
+  },
+  "proFacetStatus": "Review status",
+  "@proFacetStatus": {
+    "description": "Facet title."
+  },
+  "proFacetJurisdiction": "Jurisdiction",
+  "@proFacetJurisdiction": {
+    "description": "Facet title."
+  },
+  "proFacetYear": "Source year",
+  "@proFacetYear": {
+    "description": "Facet title."
+  },
+  "proEvidenceAtLeast": "Level {level} or higher",
+  "@proEvidenceAtLeast": {
+    "description": "Evidence facet chip. {level} is A, B, C or D.",
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "proYearSince": "Since {year}",
+  "@proYearSince": {
+    "description": "Year facet chip.",
+    "placeholders": {
+      "year": {
+        "type": "int"
+      }
+    }
+  },
+  "proFamilyName": "{code, select, colourTest{Colour (spot) test} tlc{TLC (thin-layer chromatography)} microcrystal{Microcrystal test} uvVis{UV/Vis spectrophotometry} immunoassay{Immunoassay} gcMs{GC-MS} lcMs{LC-MS, LC-MS/MS} hrms{HRMS (high-resolution MS)} gcFid{GC-FID, headspace GC} hplc{HPLC} other{{code}}}",
+  "@proFamilyName": {
+    "description": "Method family label (select on the family code).",
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "proResultCount": "{count, plural, =1{1 result} other{{count} results}}",
+  "@proResultCount": {
+    "description": "Number of search results.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "proResultsNoneTitle": "No match in the pack",
+  "@proResultsNoneTitle": {
+    "description": "Empty-result title."
+  },
+  "proResultsNoneBody": "Nothing matches this combination. Remove a filter, switch off exact match or try another spelling or language.",
+  "@proResultsNoneBody": {
+    "description": "Empty-result body."
+  },
+  "proResultsStart": "Type a name or pick a filter to see results.",
+  "@proResultsStart": {
+    "description": "Hint before any query or filter."
+  },
+  "proReverseReagent": "Reagent → substances",
+  "@proReverseReagent": {
+    "description": "Reverse lookup mode."
+  },
+  "proReverseSpecimen": "Specimen → analytes",
+  "@proReverseSpecimen": {
+    "description": "Reverse lookup mode."
+  },
+  "proReverseMethod": "Method → substances",
+  "@proReverseMethod": {
+    "description": "Reverse lookup mode."
+  },
+  "proReversePick": "Choose one to see which substances the pack documents for it.",
+  "@proReversePick": {
+    "description": "Prompt in reverse lookup."
+  },
+  "proReverseCount": "{count, plural, =1{1 substance} other{{count} substances}}",
+  "@proReverseCount": {
+    "description": "Number of substances in a reverse lookup.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "proReverseNoReagents": "The pack documents no link between a reagent and a substance yet ({count} reagent recipes exist). Nothing is guessed.",
+  "@proReverseNoReagents": {
+    "description": "Reverse reagent lookup when the pack has no reagent-substance link.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "proReverseEmpty": "No substance is documented for this item in the pack.",
+  "@proReverseEmpty": {
+    "description": "Reverse lookup with no substances."
+  },
+  "proReverseNote": "Only links stated in the sources. Not found here does not mean not possible.",
+  "@proReverseNote": {
+    "description": "Reverse lookup caveat."
+  },
+  "proRoleAnalysed": "analysed with this method (source)",
+  "@proRoleAnalysed": {
+    "description": "Reverse lookup role."
+  },
+  "proRoleConfirmation": "confirmation after screening",
+  "@proRoleConfirmation": {
+    "description": "Reverse lookup role."
+  },
+  "proRoleScreened": "screened with this test",
+  "@proRoleScreened": {
+    "description": "Reverse lookup role."
+  },
+  "proRoleMeasured": "value reported in this specimen (not a threshold)",
+  "@proRoleMeasured": {
+    "description": "Reverse lookup role."
+  },
+  "proViaLabel": "via {names}",
+  "@proViaLabel": {
+    "description": "Reverse lookup: intermediate record names.",
+    "placeholders": {
+      "names": {
+        "type": "String"
+      }
+    }
+  },
+  "planEntryTitle": "Analysis plan for this substance",
+  "@planEntryTitle": {
+    "description": "Entry card on the substance page."
+  },
+  "planEntryBody": "Specimens, presumptive tests, confirmation, interferences, limits and a note for your conclusion on one page, with sources.",
+  "@planEntryBody": {
+    "description": "Entry card body."
+  },
+  "planTitle": "Analysis plan",
+  "@planTitle": {
+    "description": "Screen title."
+  },
+  "planIntro": "Assembled only from sourced statements already in the pack. It is a reference outline, not a validated procedure and not an expert conclusion.",
+  "@planIntro": {
+    "description": "Banner at the top of the plan."
+  },
+  "planSummary": "Specimens: {s} · Presumptive tests: {p} · Confirmation: {c} · Limits: {l}",
+  "@planSummary": {
+    "description": "Free preview summary line.",
+    "placeholders": {
+      "s": {
+        "type": "int"
+      },
+      "p": {
+        "type": "int"
+      },
+      "c": {
+        "type": "int"
+      },
+      "l": {
+        "type": "int"
+      }
+    }
+  },
+  "planLockedTitle": "Full analysis plan — {tier}",
+  "@planLockedTitle": {
+    "description": "Paywall card title on the plan. {tier} is the plan name.",
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "planLockedBody": "The free preview shows the counts and the specimens. The paid plan adds presumptive tests with reagents, bench and confirmation steps, interferences, limits, the note for your conclusion and a copyable text with full citations.",
+  "@planLockedBody": {
+    "description": "Paywall card body on the plan."
+  },
+  "planSecSpecimens": "Specimens and sampling notes",
+  "@planSecSpecimens": {
+    "description": "Plan section title."
+  },
+  "planSecPresumptive": "Presumptive tests (reagent and observation)",
+  "@planSecPresumptive": {
+    "description": "Plan section title."
+  },
+  "planSecBench": "TLC, microcrystal and UV/Vis",
+  "@planSecBench": {
+    "description": "Plan section title."
+  },
+  "planSecConfirmation": "Confirmation step",
+  "@planSecConfirmation": {
+    "description": "Plan section title."
+  },
+  "planSecInstrumental": "Other instrumental methods in the sources",
+  "@planSecInstrumental": {
+    "description": "Plan section title."
+  },
+  "planSecInterferences": "Interferences, cross-reactivity and false results",
+  "@planSecInterferences": {
+    "description": "Plan section title."
+  },
+  "planSecLimits": "Interpretation limits",
+  "@planSecLimits": {
+    "description": "Plan section title."
+  },
+  "planSecReminder": "Note for the conclusion",
+  "@planSecReminder": {
+    "description": "Plan section title."
+  },
+  "planNoSpecimens": "No specimen is documented for this substance in the pack.",
+  "@planNoSpecimens": {
+    "description": "Empty block."
+  },
+  "planNoSamplingNotes": "No collection or preservation note is documented for these specimens in the pack.",
+  "@planNoSamplingNotes": {
+    "description": "Empty block."
+  },
+  "planNoPresumptive": "No presumptive test is documented for this substance in the pack.",
+  "@planNoPresumptive": {
+    "description": "Empty block."
+  },
+  "planNoReagents": "No reagent and expected observation pair is documented for this test in the pack.",
+  "@planNoReagents": {
+    "description": "Empty block."
+  },
+  "planNoBench": "No TLC, microcrystal or UV/Vis system is documented for this substance in the pack.",
+  "@planNoBench": {
+    "description": "Empty block."
+  },
+  "planNoConfirmation": "No confirmation method is documented for this substance in the pack.",
+  "@planNoConfirmation": {
+    "description": "Empty block."
+  },
+  "planNoInstrumental": "No other instrumental method is mentioned with this substance in the pack.",
+  "@planNoInstrumental": {
+    "description": "Empty block."
+  },
+  "planNoInterferences": "No interference, cross-reactivity or false result is documented for the tests of this substance in the pack.",
+  "@planNoInterferences": {
+    "description": "Empty block."
+  },
+  "planNoLimits": "No sourced limitation statement for these specimens and methods in the pack.",
+  "@planNoLimits": {
+    "description": "Empty block."
+  },
+  "planConfirmRequired": "Confirmation required",
+  "@planConfirmRequired": {
+    "description": "Chip on the confirmation block."
+  },
+  "planReagentsLabel": "Reagents linked in the sources",
+  "@planReagentsLabel": {
+    "description": "Label above the reagents of a presumptive test."
+  },
+  "planReagentRecipe": "Reagent recipe",
+  "@planReagentRecipe": {
+    "description": "Button: open the reagent recipe."
+  },
+  "planPrinciple": "Principle: {principle}",
+  "@planPrinciple": {
+    "description": "Presumptive test principle line.",
+    "placeholders": {
+      "principle": {
+        "type": "String"
+      }
+    }
+  },
+  "planNotDefinitive": "The sources do not present this test as definitive identification.",
+  "@planNotDefinitive": {
+    "description": "Presumptive test note."
+  },
+  "planAbout": "Applies to: {name}",
+  "@planAbout": {
+    "description": "Line under a quote: which test, method or specimen the statement belongs to (not the substance).",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "planSourceLine": "Source: {title}",
+  "@planSourceLine": {
+    "description": "Source line under a plan statement.",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "planLocatorLine": "Location: {locator}",
+  "@planLocatorLine": {
+    "description": "Locator line under a plan statement.",
+    "placeholders": {
+      "locator": {
+        "type": "String"
+      }
+    }
+  },
+  "planNoSource": "Source not stated",
+  "@planNoSource": {
+    "description": "Statement without a source."
+  },
+  "planRoleName": "{role, select, basis{Source statement} presumptive{Presumptive nature} confirmationRequirement{Confirmation requirement} limitation{Limitation} crossReactivity{Cross-reactivity} falsePositive{False positive} falseNegative{False negative} interference{Interference} detectionWindow{Detection window} use{Collection / use note} principle{Principle} application{Application} observation{Expected observation} other{{role}}}",
+  "@planRoleName": {
+    "description": "Role label of a quote (select on the role code).",
+    "placeholders": {
+      "role": {
+        "type": "String"
+      }
+    }
+  },
+  "planMayHeading": "May rely on",
+  "@planMayHeading": {
+    "description": "Reminder group heading."
+  },
+  "planMayNotHeading": "Do not state",
+  "@planMayNotHeading": {
+    "description": "Reminder group heading."
+  },
+  "planRemPresumptiveOnly": "The sources do not support definitive identification by: {tests}. State such a result as presumptive only.",
+  "@planRemPresumptiveOnly": {
+    "description": "Reminder. {tests} are screening test names.",
+    "placeholders": {
+      "tests": {
+        "type": "String"
+      }
+    }
+  },
+  "planRemConfirmDocumented": "The pack names these confirmation methods: {methods}. Cite them only if your laboratory actually performed them.",
+  "@planRemConfirmDocumented": {
+    "description": "Reminder. {methods} are confirmation method names.",
+    "placeholders": {
+      "methods": {
+        "type": "String"
+      }
+    }
+  },
+  "planRemConfirmMissing": "No confirmation method is documented in the pack for the tests above. Do not state a confirmed identification on the basis of this pack.",
+  "@planRemConfirmMissing": {
+    "description": "Reminder."
+  },
+  "planRemNotThreshold": "Concentration records in the pack ({count}) are reported observations, not thresholds or cut-offs. Do not present them as reference limits.",
+  "@planRemNotThreshold": {
+    "description": "Reminder.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planRemNotPaired": "The sources do not tie the methods to the specimens. Do not state which method was used on which specimen on the basis of this pack.",
+  "@planRemNotPaired": {
+    "description": "Reminder."
+  },
+  "planRemNothingVerified": "No statement here has been verified by an expert reviewer. Do not present it as verified scientific data.",
+  "@planRemNothingVerified": {
+    "description": "Reminder."
+  },
+  "planRemConflict": "Open evidence conflicts recorded for this substance: {count}. Check before relying on it.",
+  "@planRemConflict": {
+    "description": "Reminder.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planRemNoData": "The pack has no analysis data for this substance. This page cannot support a conclusion.",
+  "@planRemNoData": {
+    "description": "Reminder."
+  },
+  "planReminderFootnote": "Based only on flags and sourced limitation statements in the pack. It adds no new scientific claim and is not an expert opinion.",
+  "@planReminderFootnote": {
+    "description": "Footnote under the conclusion note."
+  },
+  "planCopy": "Copy the plan with citations",
+  "@planCopy": {
+    "description": "Tooltip: copy the plan as text."
+  },
+  "planCopied": "Plan copied with full citations",
+  "@planCopied": {
+    "description": "Snackbar after copying."
+  },
+  "planExportHeader": "ANALYSIS PLAN — {name}",
+  "@planExportHeader": {
+    "description": "Header of the copied text.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "planExportDisclaimer": "Reference outline compiled from the sourced statements of the content pack. Not a validated procedure and not an expert conclusion; check every statement against the original source.",
+  "@planExportDisclaimer": {
+    "description": "Disclaimer in the copied text."
+  },
+  "planExportSources": "SOURCES",
+  "@planExportSources": {
+    "description": "Heading of the reference list in the copied text."
+  },
+  "planExportOriginal": "Original",
+  "@planExportOriginal": {
+    "description": "Label of the original quote in the copied text."
+  },
+  "planExportStatus": "status: {status}; evidence level: {level}",
+  "@planExportStatus": {
+    "description": "Status and level in the copied text. {status} is the review status, {level} the evidence level.",
+    "placeholders": {
+      "status": {
+        "type": "String"
+      },
+      "level": {
+        "type": "String"
+      }
+    }
   }
 }

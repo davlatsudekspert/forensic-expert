@@ -8133,4 +8133,400 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get detailSourcedStatement => 'По источнику (не дословная цитата)';
+
+  @override
+  String get proSearchTitle => 'Расширенный поиск';
+
+  @override
+  String get proSearchEntry => 'Фильтры и обратный поиск';
+
+  @override
+  String get proSearchIntro =>
+      'Сузьте поиск по образцу, методу, реагенту, уровню доказательности и другим признакам или перейдите от образца, метода или реагента к веществам, для которых они задокументированы.';
+
+  @override
+  String proSearchLockedTitle(String tier) {
+    return 'Расширенный поиск — $tier';
+  }
+
+  @override
+  String get proSearchLockedBody =>
+      'Фильтры (дисциплина, класс, образец, метод, реагент, уровень доказательности, статус проверки, юрисдикция, год), поиск по точной фразе и обратный поиск доступны по платному тарифу. Обычный поиск остаётся доступным всем.';
+
+  @override
+  String get proSearchHint => 'Название, синоним или «фраза»';
+
+  @override
+  String get proSearchExact => 'Точное совпадение';
+
+  @override
+  String get proTabSearch => 'Поиск';
+
+  @override
+  String get proTabReverse => 'Обратный поиск';
+
+  @override
+  String get proFilters => 'Фильтры';
+
+  @override
+  String get proFiltersClear => 'Сбросить фильтры';
+
+  @override
+  String get proFacetAny => 'Любой';
+
+  @override
+  String get proFacetDiscipline => 'Дисциплина';
+
+  @override
+  String get proFacetClass => 'Класс вещества';
+
+  @override
+  String get proFacetSpecimen => 'Образец';
+
+  @override
+  String get proFacetFamily => 'Семейство методов';
+
+  @override
+  String get proFacetReagent => 'Реагент';
+
+  @override
+  String get proFacetEvidence => 'Уровень доказательности';
+
+  @override
+  String get proFacetStatus => 'Статус проверки';
+
+  @override
+  String get proFacetJurisdiction => 'Юрисдикция';
+
+  @override
+  String get proFacetYear => 'Год источника';
+
+  @override
+  String proEvidenceAtLeast(String level) {
+    return 'Уровень $level и выше';
+  }
+
+  @override
+  String proYearSince(int year) {
+    return 'С $year года';
+  }
+
+  @override
+  String proFamilyName(String code) {
+    String _temp0 = intl.Intl.selectLogic(code, {
+      'colourTest': 'Цветная (капельная) реакция',
+      'tlc': 'ТСХ (тонкослойная хроматография)',
+      'microcrystal': 'Микрокристаллоскопия',
+      'uvVis': 'УФ/видимая спектрофотометрия',
+      'immunoassay': 'Иммунохимический анализ',
+      'gcMs': 'GC-MS',
+      'lcMs': 'LC-MS, LC-MS/MS',
+      'hrms': 'HRMS (масс-спектрометрия высокого разрешения)',
+      'gcFid': 'GC-FID, парофазная ГХ',
+      'hplc': 'HPLC',
+      'other': '$code',
+    });
+    return '$_temp0';
+  }
+
+  @override
+  String proResultCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count результата',
+      many: '$count результатов',
+      few: '$count результата',
+      one: '$count результат',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get proResultsNoneTitle => 'В пакете ничего не найдено';
+
+  @override
+  String get proResultsNoneBody =>
+      'Ничего не подходит под эту комбинацию. Уберите фильтр, отключите точное совпадение или попробуйте другое написание или язык.';
+
+  @override
+  String get proResultsStart =>
+      'Введите название или выберите фильтр, чтобы увидеть результаты.';
+
+  @override
+  String get proReverseReagent => 'Реагент → вещества';
+
+  @override
+  String get proReverseSpecimen => 'Образец → аналиты';
+
+  @override
+  String get proReverseMethod => 'Метод → вещества';
+
+  @override
+  String get proReversePick =>
+      'Выберите, чтобы увидеть, для каких веществ в пакете есть данные.';
+
+  @override
+  String proReverseCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count вещества',
+      many: '$count веществ',
+      few: '$count вещества',
+      one: '$count вещество',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String proReverseNoReagents(int count) {
+    return 'В пакете пока нет связей «реагент — вещество» (рецептов реагентов: $count). Ничего не домысливается.';
+  }
+
+  @override
+  String get proReverseEmpty =>
+      'Для этого элемента в пакете нет задокументированных веществ.';
+
+  @override
+  String get proReverseNote =>
+      'Только связи, указанные в источниках. «Не найдено» не означает «невозможно».';
+
+  @override
+  String get proRoleAnalysed => 'анализировалось этим методом (источник)';
+
+  @override
+  String get proRoleConfirmation => 'подтверждение после скрининга';
+
+  @override
+  String get proRoleScreened => 'скрининг этим тестом';
+
+  @override
+  String get proRoleMeasured =>
+      'значение приведено для этого образца (не порог)';
+
+  @override
+  String proViaLabel(String names) {
+    return 'через $names';
+  }
+
+  @override
+  String get planEntryTitle => 'План анализа для этого вещества';
+
+  @override
+  String get planEntryBody =>
+      'Образцы, предварительные тесты, подтверждение, помехи, ограничения и памятка для заключения на одной странице, с источниками.';
+
+  @override
+  String get planTitle => 'План анализа';
+
+  @override
+  String get planIntro =>
+      'Составлен только из утверждений с источниками, уже имеющихся в пакете. Это справочная схема, а не валидированная методика и не заключение эксперта.';
+
+  @override
+  String planSummary(int s, int p, int c, int l) {
+    return 'Образцы: $s · Предварительные тесты: $p · Подтверждение: $c · Ограничения: $l';
+  }
+
+  @override
+  String planLockedTitle(String tier) {
+    return 'Полный план анализа — $tier';
+  }
+
+  @override
+  String get planLockedBody =>
+      'Бесплатный просмотр показывает количество и образцы. Платный тариф добавляет предварительные тесты с реагентами, лабораторные и подтверждающие этапы, помехи, ограничения, памятку для заключения и копируемый текст с полными ссылками.';
+
+  @override
+  String get planSecSpecimens => 'Образцы и заметки о взятии';
+
+  @override
+  String get planSecPresumptive =>
+      'Предварительные тесты (реагент и наблюдение)';
+
+  @override
+  String get planSecBench => 'ТСХ, микрокристаллоскопия и УФ/Вид';
+
+  @override
+  String get planSecConfirmation => 'Этап подтверждения';
+
+  @override
+  String get planSecInstrumental =>
+      'Другие инструментальные методы в источниках';
+
+  @override
+  String get planSecInterferences =>
+      'Помехи, перекрёстная реактивность и ложные результаты';
+
+  @override
+  String get planSecLimits => 'Границы интерпретации';
+
+  @override
+  String get planSecReminder => 'Памятка для заключения';
+
+  @override
+  String get planNoSpecimens =>
+      'Для этого вещества в пакете нет задокументированных образцов.';
+
+  @override
+  String get planNoSamplingNotes =>
+      'Для этих образцов в пакете нет заметок о взятии или консервации.';
+
+  @override
+  String get planNoPresumptive =>
+      'Для этого вещества в пакете нет предварительных тестов.';
+
+  @override
+  String get planNoReagents =>
+      'Для этого теста в пакете нет пары «реагент — ожидаемое наблюдение».';
+
+  @override
+  String get planNoBench =>
+      'Для этого вещества в пакете нет систем ТСХ, микрокристаллоскопии или УФ/Вид.';
+
+  @override
+  String get planNoConfirmation =>
+      'Для этого вещества в пакете нет подтверждающего метода.';
+
+  @override
+  String get planNoInstrumental =>
+      'Других инструментальных методов для этого вещества в пакете не упоминается.';
+
+  @override
+  String get planNoInterferences =>
+      'Для тестов этого вещества в пакете нет помех, перекрёстной реактивности и ложных результатов.';
+
+  @override
+  String get planNoLimits =>
+      'Для этих образцов и методов в пакете нет ограничений с источником.';
+
+  @override
+  String get planConfirmRequired => 'Требуется подтверждение';
+
+  @override
+  String get planReagentsLabel => 'Реагенты, связанные в источниках';
+
+  @override
+  String get planReagentRecipe => 'Рецепт реагента';
+
+  @override
+  String planPrinciple(String principle) {
+    return 'Принцип: $principle';
+  }
+
+  @override
+  String get planNotDefinitive =>
+      'Источники не представляют этот тест как окончательную идентификацию.';
+
+  @override
+  String planAbout(String name) {
+    return 'Относится к: $name';
+  }
+
+  @override
+  String planSourceLine(String title) {
+    return 'Источник: $title';
+  }
+
+  @override
+  String planLocatorLine(String locator) {
+    return 'Место в источнике: $locator';
+  }
+
+  @override
+  String get planNoSource => 'Источник не указан';
+
+  @override
+  String planRoleName(String role) {
+    String _temp0 = intl.Intl.selectLogic(role, {
+      'basis': 'Утверждение источника',
+      'presumptive': 'Предварительный характер',
+      'confirmationRequirement': 'Требование подтверждения',
+      'limitation': 'Ограничение',
+      'crossReactivity': 'Перекрёстная реактивность',
+      'falsePositive': 'Ложноположительный результат',
+      'falseNegative': 'Ложноотрицательный результат',
+      'interference': 'Помеха',
+      'detectionWindow': 'Окно обнаружения',
+      'use': 'Заметка о взятии / применении',
+      'principle': 'Принцип',
+      'application': 'Применение',
+      'observation': 'Ожидаемое наблюдение',
+      'other': '$role',
+    });
+    return '$_temp0';
+  }
+
+  @override
+  String get planMayHeading => 'На что можно опираться';
+
+  @override
+  String get planMayNotHeading => 'Чего не утверждать';
+
+  @override
+  String planRemPresumptiveOnly(String tests) {
+    return 'Источники не подтверждают окончательную идентификацию по: $tests. Такой результат указывайте только как предварительный.';
+  }
+
+  @override
+  String planRemConfirmDocumented(String methods) {
+    return 'Пакет называет эти подтверждающие методы: $methods. Ссылайтесь на них, только если ваша лаборатория действительно их выполнила.';
+  }
+
+  @override
+  String get planRemConfirmMissing =>
+      'Для тестов выше в пакете нет подтверждающего метода. Не утверждайте подтверждённую идентификацию на основании этого пакета.';
+
+  @override
+  String planRemNotThreshold(int count) {
+    return 'Записи о концентрации в пакете ($count) — сообщённые наблюдения, а не пороги или cut-off. Не выдавайте их за референсные границы.';
+  }
+
+  @override
+  String get planRemNotPaired =>
+      'Источники не связывают методы с образцами. Не утверждайте, какой метод применялся к какому образцу, на основании этого пакета.';
+
+  @override
+  String get planRemNothingVerified =>
+      'Ни одно утверждение здесь не проверено рецензентом-экспертом. Не выдавайте его за проверенные научные данные.';
+
+  @override
+  String planRemConflict(int count) {
+    return 'Открытых конфликтов данных по этому веществу: $count. Проверьте, прежде чем опираться.';
+  }
+
+  @override
+  String get planRemNoData =>
+      'В пакете нет данных об анализе этого вещества. Эта страница не может служить основанием для заключения.';
+
+  @override
+  String get planReminderFootnote =>
+      'Основано только на признаках и ограничениях с источниками в пакете. Не добавляет новых научных утверждений и не является заключением эксперта.';
+
+  @override
+  String get planCopy => 'Скопировать план со ссылками';
+
+  @override
+  String get planCopied => 'План скопирован с полными ссылками';
+
+  @override
+  String planExportHeader(String name) {
+    return 'ПЛАН АНАЛИЗА — $name';
+  }
+
+  @override
+  String get planExportDisclaimer =>
+      'Справочная схема, составленная из утверждений с источниками в пакете контента. Не валидированная методика и не заключение эксперта; проверяйте каждое утверждение по первоисточнику.';
+
+  @override
+  String get planExportSources => 'ИСТОЧНИКИ';
+
+  @override
+  String get planExportOriginal => 'Оригинал';
+
+  @override
+  String planExportStatus(String status, String level) {
+    return 'статус: $status; уровень доказательности: $level';
+  }
 }

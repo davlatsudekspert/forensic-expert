@@ -8091,4 +8091,394 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get detailSourcedStatement =>
       'Based on the source (not a direct quotation)';
+
+  @override
+  String get proSearchTitle => 'Advanced search';
+
+  @override
+  String get proSearchEntry => 'Filters and reverse lookups';
+
+  @override
+  String get proSearchIntro =>
+      'Narrow the offline pack by specimen, method, reagent, evidence level and more, or go from a specimen, method or reagent to the substances documented for it.';
+
+  @override
+  String proSearchLockedTitle(String tier) {
+    return 'Advanced search — $tier';
+  }
+
+  @override
+  String get proSearchLockedBody =>
+      'Filters (discipline, class, specimen, method, reagent, evidence, review status, jurisdiction, year), exact-phrase search and reverse lookups need a paid plan. The regular search stays available to everyone.';
+
+  @override
+  String get proSearchHint => 'Name, synonym or \"phrase\"';
+
+  @override
+  String get proSearchExact => 'Exact match';
+
+  @override
+  String get proTabSearch => 'Search';
+
+  @override
+  String get proTabReverse => 'Reverse lookup';
+
+  @override
+  String get proFilters => 'Filters';
+
+  @override
+  String get proFiltersClear => 'Clear filters';
+
+  @override
+  String get proFacetAny => 'Any';
+
+  @override
+  String get proFacetDiscipline => 'Discipline';
+
+  @override
+  String get proFacetClass => 'Substance class';
+
+  @override
+  String get proFacetSpecimen => 'Specimen';
+
+  @override
+  String get proFacetFamily => 'Method family';
+
+  @override
+  String get proFacetReagent => 'Reagent';
+
+  @override
+  String get proFacetEvidence => 'Evidence level';
+
+  @override
+  String get proFacetStatus => 'Review status';
+
+  @override
+  String get proFacetJurisdiction => 'Jurisdiction';
+
+  @override
+  String get proFacetYear => 'Source year';
+
+  @override
+  String proEvidenceAtLeast(String level) {
+    return 'Level $level or higher';
+  }
+
+  @override
+  String proYearSince(int year) {
+    return 'Since $year';
+  }
+
+  @override
+  String proFamilyName(String code) {
+    String _temp0 = intl.Intl.selectLogic(code, {
+      'colourTest': 'Colour (spot) test',
+      'tlc': 'TLC (thin-layer chromatography)',
+      'microcrystal': 'Microcrystal test',
+      'uvVis': 'UV/Vis spectrophotometry',
+      'immunoassay': 'Immunoassay',
+      'gcMs': 'GC-MS',
+      'lcMs': 'LC-MS, LC-MS/MS',
+      'hrms': 'HRMS (high-resolution MS)',
+      'gcFid': 'GC-FID, headspace GC',
+      'hplc': 'HPLC',
+      'other': '$code',
+    });
+    return '$_temp0';
+  }
+
+  @override
+  String proResultCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count results',
+      one: '1 result',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get proResultsNoneTitle => 'No match in the pack';
+
+  @override
+  String get proResultsNoneBody =>
+      'Nothing matches this combination. Remove a filter, switch off exact match or try another spelling or language.';
+
+  @override
+  String get proResultsStart => 'Type a name or pick a filter to see results.';
+
+  @override
+  String get proReverseReagent => 'Reagent → substances';
+
+  @override
+  String get proReverseSpecimen => 'Specimen → analytes';
+
+  @override
+  String get proReverseMethod => 'Method → substances';
+
+  @override
+  String get proReversePick =>
+      'Choose one to see which substances the pack documents for it.';
+
+  @override
+  String proReverseCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count substances',
+      one: '1 substance',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String proReverseNoReagents(int count) {
+    return 'The pack documents no link between a reagent and a substance yet ($count reagent recipes exist). Nothing is guessed.';
+  }
+
+  @override
+  String get proReverseEmpty =>
+      'No substance is documented for this item in the pack.';
+
+  @override
+  String get proReverseNote =>
+      'Only links stated in the sources. Not found here does not mean not possible.';
+
+  @override
+  String get proRoleAnalysed => 'analysed with this method (source)';
+
+  @override
+  String get proRoleConfirmation => 'confirmation after screening';
+
+  @override
+  String get proRoleScreened => 'screened with this test';
+
+  @override
+  String get proRoleMeasured =>
+      'value reported in this specimen (not a threshold)';
+
+  @override
+  String proViaLabel(String names) {
+    return 'via $names';
+  }
+
+  @override
+  String get planEntryTitle => 'Analysis plan for this substance';
+
+  @override
+  String get planEntryBody =>
+      'Specimens, presumptive tests, confirmation, interferences, limits and a note for your conclusion on one page, with sources.';
+
+  @override
+  String get planTitle => 'Analysis plan';
+
+  @override
+  String get planIntro =>
+      'Assembled only from sourced statements already in the pack. It is a reference outline, not a validated procedure and not an expert conclusion.';
+
+  @override
+  String planSummary(int s, int p, int c, int l) {
+    return 'Specimens: $s · Presumptive tests: $p · Confirmation: $c · Limits: $l';
+  }
+
+  @override
+  String planLockedTitle(String tier) {
+    return 'Full analysis plan — $tier';
+  }
+
+  @override
+  String get planLockedBody =>
+      'The free preview shows the counts and the specimens. The paid plan adds presumptive tests with reagents, bench and confirmation steps, interferences, limits, the note for your conclusion and a copyable text with full citations.';
+
+  @override
+  String get planSecSpecimens => 'Specimens and sampling notes';
+
+  @override
+  String get planSecPresumptive =>
+      'Presumptive tests (reagent and observation)';
+
+  @override
+  String get planSecBench => 'TLC, microcrystal and UV/Vis';
+
+  @override
+  String get planSecConfirmation => 'Confirmation step';
+
+  @override
+  String get planSecInstrumental => 'Other instrumental methods in the sources';
+
+  @override
+  String get planSecInterferences =>
+      'Interferences, cross-reactivity and false results';
+
+  @override
+  String get planSecLimits => 'Interpretation limits';
+
+  @override
+  String get planSecReminder => 'Note for the conclusion';
+
+  @override
+  String get planNoSpecimens =>
+      'No specimen is documented for this substance in the pack.';
+
+  @override
+  String get planNoSamplingNotes =>
+      'No collection or preservation note is documented for these specimens in the pack.';
+
+  @override
+  String get planNoPresumptive =>
+      'No presumptive test is documented for this substance in the pack.';
+
+  @override
+  String get planNoReagents =>
+      'No reagent and expected observation pair is documented for this test in the pack.';
+
+  @override
+  String get planNoBench =>
+      'No TLC, microcrystal or UV/Vis system is documented for this substance in the pack.';
+
+  @override
+  String get planNoConfirmation =>
+      'No confirmation method is documented for this substance in the pack.';
+
+  @override
+  String get planNoInstrumental =>
+      'No other instrumental method is mentioned with this substance in the pack.';
+
+  @override
+  String get planNoInterferences =>
+      'No interference, cross-reactivity or false result is documented for the tests of this substance in the pack.';
+
+  @override
+  String get planNoLimits =>
+      'No sourced limitation statement for these specimens and methods in the pack.';
+
+  @override
+  String get planConfirmRequired => 'Confirmation required';
+
+  @override
+  String get planReagentsLabel => 'Reagents linked in the sources';
+
+  @override
+  String get planReagentRecipe => 'Reagent recipe';
+
+  @override
+  String planPrinciple(String principle) {
+    return 'Principle: $principle';
+  }
+
+  @override
+  String get planNotDefinitive =>
+      'The sources do not present this test as definitive identification.';
+
+  @override
+  String planAbout(String name) {
+    return 'Applies to: $name';
+  }
+
+  @override
+  String planSourceLine(String title) {
+    return 'Source: $title';
+  }
+
+  @override
+  String planLocatorLine(String locator) {
+    return 'Location: $locator';
+  }
+
+  @override
+  String get planNoSource => 'Source not stated';
+
+  @override
+  String planRoleName(String role) {
+    String _temp0 = intl.Intl.selectLogic(role, {
+      'basis': 'Source statement',
+      'presumptive': 'Presumptive nature',
+      'confirmationRequirement': 'Confirmation requirement',
+      'limitation': 'Limitation',
+      'crossReactivity': 'Cross-reactivity',
+      'falsePositive': 'False positive',
+      'falseNegative': 'False negative',
+      'interference': 'Interference',
+      'detectionWindow': 'Detection window',
+      'use': 'Collection / use note',
+      'principle': 'Principle',
+      'application': 'Application',
+      'observation': 'Expected observation',
+      'other': '$role',
+    });
+    return '$_temp0';
+  }
+
+  @override
+  String get planMayHeading => 'May rely on';
+
+  @override
+  String get planMayNotHeading => 'Do not state';
+
+  @override
+  String planRemPresumptiveOnly(String tests) {
+    return 'The sources do not support definitive identification by: $tests. State such a result as presumptive only.';
+  }
+
+  @override
+  String planRemConfirmDocumented(String methods) {
+    return 'The pack names these confirmation methods: $methods. Cite them only if your laboratory actually performed them.';
+  }
+
+  @override
+  String get planRemConfirmMissing =>
+      'No confirmation method is documented in the pack for the tests above. Do not state a confirmed identification on the basis of this pack.';
+
+  @override
+  String planRemNotThreshold(int count) {
+    return 'Concentration records in the pack ($count) are reported observations, not thresholds or cut-offs. Do not present them as reference limits.';
+  }
+
+  @override
+  String get planRemNotPaired =>
+      'The sources do not tie the methods to the specimens. Do not state which method was used on which specimen on the basis of this pack.';
+
+  @override
+  String get planRemNothingVerified =>
+      'No statement here has been verified by an expert reviewer. Do not present it as verified scientific data.';
+
+  @override
+  String planRemConflict(int count) {
+    return 'Open evidence conflicts recorded for this substance: $count. Check before relying on it.';
+  }
+
+  @override
+  String get planRemNoData =>
+      'The pack has no analysis data for this substance. This page cannot support a conclusion.';
+
+  @override
+  String get planReminderFootnote =>
+      'Based only on flags and sourced limitation statements in the pack. It adds no new scientific claim and is not an expert opinion.';
+
+  @override
+  String get planCopy => 'Copy the plan with citations';
+
+  @override
+  String get planCopied => 'Plan copied with full citations';
+
+  @override
+  String planExportHeader(String name) {
+    return 'ANALYSIS PLAN — $name';
+  }
+
+  @override
+  String get planExportDisclaimer =>
+      'Reference outline compiled from the sourced statements of the content pack. Not a validated procedure and not an expert conclusion; check every statement against the original source.';
+
+  @override
+  String get planExportSources => 'SOURCES';
+
+  @override
+  String get planExportOriginal => 'Original';
+
+  @override
+  String planExportStatus(String status, String level) {
+    return 'status: $status; evidence level: $level';
+  }
 }

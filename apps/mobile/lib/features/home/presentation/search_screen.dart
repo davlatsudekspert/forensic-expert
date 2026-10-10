@@ -9,6 +9,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../app/glossary.dart';
 import '../../../app/guidelines.dart';
+import '../../../app/pro_tools.dart';
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../app/search_service.dart';
@@ -193,6 +194,40 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
+                  // Pro: faset filtrlar va teskari qidiruv (oddiy qidiruv
+                  // o‘zgarmagan; bepul foydalanuvchi tavsifni va taklifni
+                  // ko‘radi).
+                  ListTile(
+                    key: const Key('search.pro.entry'),
+                    contentPadding: EdgeInsets.zero,
+                    dense: true,
+                    leading: Icon(Icons.tune, color: c.accent),
+                    title: Text(l.proSearchEntry),
+                    trailing: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        if (!ref.watch(proToolsUnlockedProvider)) ...[
+                          Icon(
+                            Icons.lock_outline,
+                            size: 14,
+                            color: c.textSecondary,
+                          ),
+                          const SizedBox(width: 3),
+                          Text(
+                            l.lockedBadge,
+                            style: Theme.of(context).textTheme.labelSmall
+                                ?.copyWith(color: c.textSecondary),
+                          ),
+                        ],
+                        const Icon(Icons.chevron_right),
+                      ],
+                    ),
+                    onTap: () => context.push(
+                      _query.trim().isEmpty
+                          ? Routes.proSearch
+                          : Routes.proSearchWith(_query.trim()),
+                    ),
+                  ),
                   if (!hasQuery) ...[
                     FeSectionHeader(
                       l.homeRecentSearches,
