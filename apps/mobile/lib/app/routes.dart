@@ -132,6 +132,9 @@ abstract final class Routes {
       '/profile/admin/inbox/${Uri.encodeComponent(id)}';
   static const adminUsers = '/profile/admin/users';
   static const adminAudit = '/profile/admin/audit';
+  static const adminVerifications = '/profile/admin/verifications';
+  static String adminVerification(String applicantId) =>
+      '/profile/admin/verifications/${Uri.encodeComponent(applicantId)}';
 
   /// «Taklif va murojaatlar» (foydalanuvchi).
   static const support = '/profile/support';

@@ -26,6 +26,7 @@ extension SupportStrings on AppLocalizations {
     'SUPPORT_STATUS' => admActSupportStatus,
     'SUPPORT_THREAD_VIEW' => admActSupportView,
     'USERS_VIEW' => admActUsersView,
+    'VERIFICATIONS_VIEW' => admActVerificationsView,
     'ACCESS_SET' => admActAccessSet,
     'ROLE_GRANTED' => admActRoleGranted,
     'ROLE_REVOKED' => admActRoleRevoked,

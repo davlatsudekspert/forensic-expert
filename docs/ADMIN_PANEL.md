@@ -30,6 +30,16 @@ Yangilangan: 2026-10-09. Migratsiya: `supabase/migrations/20261009000000_support
   yoki email), «Yana yuklash»; murojaatni ochish, «Javob yozish», holatni o‘zgartirish.
 - Foydalanuvchilar: qidiruv (email/ism), rol va tarif saralash, sahifalash.
 - Amallar jurnali: har bir admin amali (xabar matnisiz).
+- **Tasdiqlash arizalari (2026-10-10):** kutayotgan (`APPLICATION_PENDING`) arizalar
+  ro‘yxati (`admin_pending_verifications`, faqat identity_admin + MFA qoidasi),
+  tafsilot (profil + hujjat metama’lumoti: tur, MIME, hajm, SHA-256 — fayl mazmuni
+  EMAS), tekshirilgan hujjatlarni belgilash, sabab (>= 5 belgi) va qaror
+  (`decide_identity`: Tasdiqlash / Qo‘shimcha ma’lumot so‘rash / Rad etish).
+  O‘z arizasi ro‘yxatda «Sizning o‘z arizangiz» deb belgilanadi va uni tasdiqlab
+  bo‘lmaydi (server ham rad etadi) — boshqa vakolatli admin hal qiladi.
+  Hujjat faylining o‘zini ilovadan ochish hozir YO‘Q (imzolangan URL serverda
+  yozilmagan); admin faylni xavfsiz omborda tekshiradi. `verifier_grants` bo‘yicha
+  tasdiqlovchi tengdoshlar uchun bu ro‘yxat yoqilmagan (soha xaritasi yo‘q).
 - Admin bo‘lmagan foydalanuvchi admin marshrutini ochsa — «Kirish taqiqlangan»
   sahifasi (`AdminGate`). Bu faqat UI qulayligi: **xavfsizlik chegarasi server**.
 
@@ -143,3 +153,5 @@ holda TOTP’siz egasi panelga kira olmay qoladi.
 3. MFA (aal2) yoqish — TOTP enroll’dan keyin.
 4. Maxfiylik siyosatiga «murojaatlar va skrinshotlar» bandini qo‘shish.
 5. Har qanday push/email provayderi (pullik bo‘lishi mumkin).
+6. `20261010000000_admin_verification_inbox.sql` ni production’ga qo‘llash
+   (faqat yangi RPC `admin_pending_verifications`; mavjud jadval/funksiyalar o‘zgarmaydi).

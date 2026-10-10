@@ -19,6 +19,7 @@ import '../domain/support/support_models.dart';
 import '../features/account/presentation/auth_screens.dart';
 import '../features/admin/presentation/admin_screen.dart';
 import '../features/admin/presentation/admin_support_screens.dart';
+import '../features/admin/presentation/admin_verification_screens.dart';
 import '../features/ai/presentation/ai_screen.dart';
 import '../features/casebook/presentation/casebook_screens.dart';
 import '../features/court_prep/presentation/court_prep_screens.dart';
@@ -683,6 +684,20 @@ final routerProvider = Provider<GoRouter>((ref) {
                         path: 'audit',
                         parentNavigatorKey: rootKey,
                         builder: (c, s) => const AdminAuditScreen(),
+                      ),
+                      GoRoute(
+                        path: 'verifications',
+                        parentNavigatorKey: rootKey,
+                        builder: (c, s) => const AdminVerificationsScreen(),
+                        routes: [
+                          GoRoute(
+                            path: ':id',
+                            parentNavigatorKey: rootKey,
+                            builder: (c, s) => AdminVerificationDetailScreen(
+                              applicantId: s.pathParameters['id']!,
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),

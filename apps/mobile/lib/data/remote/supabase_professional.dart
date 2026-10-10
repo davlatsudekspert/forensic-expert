@@ -8,6 +8,7 @@ import '../../domain/ports/backend_ports.dart';
 import '../../domain/ports/professional_ports.dart';
 import '../../domain/professional/professional_models.dart';
 import '../../domain/professional/review_models.dart';
+import '../../domain/professional/verification_inbox_models.dart';
 import 'supabase_rest.dart';
 
 /// Supabase (PostgREST + Storage) orqali professional tasdiqlash va
@@ -270,6 +271,103 @@ class SupabaseVerificationService implements ProfessionalVerificationService {
       ),
     );
   });
+}
+
+/// Admin: `admin_pending_verifications` (ro‘yxat) va `decide_identity`
+/// (qaror). Ikkalasi ham serverda identity_admin / vakolatni tekshiradi;
+/// o‘zini tasdiqlash serverda taqiqlangan.
+class SupabaseIdentityAdminService implements IdentityAdminService {
+  SupabaseIdentityAdminService({
+    required SupabaseConfig config,
+    required AuthRepository auth,
+    RestTransport? transport,
+  }) : _s = _SupabaseSession(config, auth, transport ?? HttpClientTransport());
+
+  final _SupabaseSession _s;
+
+  @override
+  bool get isConfigured => true;
+
+  @override
+  Future<ProfessionalResult<PendingVerificationPage>> pending({
+    int limit = 50,
+    int offset = 0,
+  }) => _s.guard((h) async {
+    final r = await _s.http.send(
+      'POST',
+      _s.rest('rpc/admin_pending_verifications'),
+      headers: h,
+      jsonBody: {'p_limit': limit, 'p_offset': offset},
+    );
+    if (!r.ok) return ProfessionalResult.fail(_SupabaseSession.failure(r));
+    final m = r.map;
+    final items = [
+      for (final x in (m['items'] as List? ?? const []))
+        ?PendingVerification.fromJson(x),
+    ];
+    return ProfessionalResult.ok(
+      PendingVerificationPage(
+        items: items,
+        total: (m['total'] as num?)?.toInt() ?? items.length,
+      ),
+    );
+  });
+
+  static String _wire(IdentityDecision d) => switch (d) {
+    IdentityDecision.verify => 'VERIFY',
+    IdentityDecision.requestMoreInformation => 'REQUEST_MORE_INFORMATION',
+    IdentityDecision.reject => 'REJECT',
+    IdentityDecision.suspend => 'SUSPEND',
+  };
+
+  @override
+  Future<IdentityDecisionFailure?> decide({
+    required String applicantId,
+    required IdentityDecision decision,
+    required ReviewerScope scope,
+    required List<String> checkedDocumentIds,
+    required String reason,
+    String? applicantMessage,
+  }) async {
+    // Oldindan tekshiruv (server baribir qayta tekshiradi).
+    if (!IdentityDecisionRules.reasonOk(reason)) {
+      return IdentityDecisionFailure.invalidInput;
+    }
+    if (decision == IdentityDecision.verify && checkedDocumentIds.isEmpty) {
+      return IdentityDecisionFailure.noCredentialChecked;
+    }
+    final h = await _s.headers();
+    if (h == null) return IdentityDecisionFailure.notSignedIn;
+    try {
+      final r = await _s.http.send(
+        'POST',
+        _s.rest('rpc/decide_identity'),
+        headers: h,
+        jsonBody: {
+          'applicant': applicantId,
+          'p_decision': _wire(decision),
+          'p_scope': scope.code,
+          'p_checked': checkedDocumentIds,
+          'p_reason': reason.trim(),
+          'p_message': applicantMessage?.trim(),
+        },
+      );
+      if (r.ok) return null;
+      final f = IdentityDecisionFailure.fromServerMessage(
+        '${r.map['message'] ?? ''}',
+      );
+      if (f == IdentityDecisionFailure.server && r.status == 403) {
+        return IdentityDecisionFailure.forbidden;
+      }
+      return f;
+    } on SocketException {
+      return IdentityDecisionFailure.offline;
+    } on TimeoutException {
+      return IdentityDecisionFailure.offline;
+    } on HandshakeException {
+      return IdentityDecisionFailure.offline;
+    }
+  }
 }
 
 class SupabaseReviewService implements ProfessionalReviewService {

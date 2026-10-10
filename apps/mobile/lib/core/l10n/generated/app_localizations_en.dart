@@ -7914,4 +7914,170 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get casebookNotFound => 'This entry no longer exists.';
+
+  @override
+  String get admNavVerify => 'Verification applications';
+
+  @override
+  String get admNavVerifyHint => 'Review professional applications and decide';
+
+  @override
+  String get admVfEmpty => 'No applications are waiting.';
+
+  @override
+  String get admVfUnavailable =>
+      'Verification needs the online service, which is not connected in this build.';
+
+  @override
+  String get admVfLoadFailed =>
+      'Could not load applications. Check the connection and try again.';
+
+  @override
+  String admVfSubmitted(String date) {
+    return 'Submitted $date';
+  }
+
+  @override
+  String admVfDocsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count documents',
+      one: '1 document',
+      zero: 'No documents',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get admVfSelfBadge => 'Your own application';
+
+  @override
+  String get admVfSelfNote =>
+      'You cannot approve your own application — another authorised admin will decide it.';
+
+  @override
+  String get admVfApplicant => 'Applicant';
+
+  @override
+  String get admVfFieldSpecialty => 'Specialty';
+
+  @override
+  String get admVfFieldExperience => 'Experience';
+
+  @override
+  String admVfYears(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count years',
+      one: '1 year',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get admVfFieldEducation => 'Education';
+
+  @override
+  String get admVfFieldCountry => 'Country';
+
+  @override
+  String get admVfDocs => 'Credential documents';
+
+  @override
+  String get admVfDocsHint =>
+      'Tick every document you have checked. Approval needs at least one checked document.';
+
+  @override
+  String get admVfDocsNone =>
+      'The applicant has not uploaded any documents, so the application cannot be approved yet.';
+
+  @override
+  String get admVfDocsNote =>
+      'The app shows document details only (type, size, SHA-256). Check the file itself in the secure server storage.';
+
+  @override
+  String admVfDocMeta(String type, String size, String hash) {
+    return '$type · $size · SHA-256 $hash';
+  }
+
+  @override
+  String get admVfDecision => 'Decision';
+
+  @override
+  String get admVfScope => 'Area of the decision';
+
+  @override
+  String get admVfScopeRequired =>
+      'Choose the specialty area this decision refers to.';
+
+  @override
+  String get admVfReason => 'Reason (at least 5 characters)';
+
+  @override
+  String get admVfReasonShort => 'Enter a reason of at least 5 characters.';
+
+  @override
+  String get admVfMessage => 'Message to the applicant (optional)';
+
+  @override
+  String get admVfApprove => 'Approve';
+
+  @override
+  String get admVfRequestInfo => 'Request more information';
+
+  @override
+  String get admVfReject => 'Reject';
+
+  @override
+  String get admVfNoScientific =>
+      'Identity verification does not grant scientific review rights.';
+
+  @override
+  String get admVfDoneVerified => 'Application approved.';
+
+  @override
+  String get admVfDoneInfo => 'More information requested.';
+
+  @override
+  String get admVfDoneRejected => 'Application rejected.';
+
+  @override
+  String get admVfErrSelf =>
+      'You cannot approve your own application — another authorised admin will decide it.';
+
+  @override
+  String get admVfErrForbidden =>
+      'You have no authority to verify in this area.';
+
+  @override
+  String get admVfErrNoCredential => 'Mark at least one document as checked.';
+
+  @override
+  String get admVfErrUnknownCredential =>
+      'A selected document does not belong to this applicant. Refresh the list.';
+
+  @override
+  String get admVfErrTransition =>
+      'This application has already been decided. Refresh the list.';
+
+  @override
+  String get admVfErrNoApplication => 'Application not found.';
+
+  @override
+  String get admVfErrMfa => 'Sign in with two-step verification to continue.';
+
+  @override
+  String get admVfErrSignIn => 'Please sign in again.';
+
+  @override
+  String get admVfErrOffline =>
+      'No connection. Check the internet and try again.';
+
+  @override
+  String get admVfErrServer => 'The decision was not saved. Try again later.';
+
+  @override
+  String get admActVerificationsView => 'Viewed verification applications';
 }

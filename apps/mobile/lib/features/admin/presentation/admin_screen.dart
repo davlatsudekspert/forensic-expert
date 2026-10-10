@@ -215,6 +215,13 @@ class _AdminSections extends ConsumerWidget {
     final stats = ref.watch(adminStatsProvider).value;
     final support = ref.watch(supportAvailableProvider);
     final tiles = [
+      AdminNavTile(
+        key: const Key('admin.nav.verifications'),
+        icon: Icons.how_to_reg_outlined,
+        title: l.admNavVerify,
+        hint: l.admNavVerifyHint,
+        onTap: () => context.push(Routes.adminVerifications),
+      ),
       if (support) ...[
         AdminNavTile(
           key: const Key('admin.nav.inbox'),

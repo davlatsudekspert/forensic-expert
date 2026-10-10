@@ -13916,6 +13916,270 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'This entry no longer exists.'**
   String get casebookNotFound;
+
+  /// Admin section title: pending identity verification applications.
+  ///
+  /// In en, this message translates to:
+  /// **'Verification applications'**
+  String get admNavVerify;
+
+  /// Admin section hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Review professional applications and decide'**
+  String get admNavVerifyHint;
+
+  /// Empty list.
+  ///
+  /// In en, this message translates to:
+  /// **'No applications are waiting.'**
+  String get admVfEmpty;
+
+  /// Backend not connected.
+  ///
+  /// In en, this message translates to:
+  /// **'Verification needs the online service, which is not connected in this build.'**
+  String get admVfUnavailable;
+
+  /// Load error.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not load applications. Check the connection and try again.'**
+  String get admVfLoadFailed;
+
+  /// Application meta.
+  ///
+  /// In en, this message translates to:
+  /// **'Submitted {date}'**
+  String admVfSubmitted(String date);
+
+  /// Document count on a list card.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No documents} =1{1 document} other{{count} documents}}'**
+  String admVfDocsCount(int count);
+
+  /// Badge on the admin's own application.
+  ///
+  /// In en, this message translates to:
+  /// **'Your own application'**
+  String get admVfSelfBadge;
+
+  /// Shown instead of the decision form for the admin's own application.
+  ///
+  /// In en, this message translates to:
+  /// **'You cannot approve your own application — another authorised admin will decide it.'**
+  String get admVfSelfNote;
+
+  /// Section header.
+  ///
+  /// In en, this message translates to:
+  /// **'Applicant'**
+  String get admVfApplicant;
+
+  /// Field label.
+  ///
+  /// In en, this message translates to:
+  /// **'Specialty'**
+  String get admVfFieldSpecialty;
+
+  /// Field label.
+  ///
+  /// In en, this message translates to:
+  /// **'Experience'**
+  String get admVfFieldExperience;
+
+  /// Years of experience.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 year} other{{count} years}}'**
+  String admVfYears(int count);
+
+  /// Field label.
+  ///
+  /// In en, this message translates to:
+  /// **'Education'**
+  String get admVfFieldEducation;
+
+  /// Field label.
+  ///
+  /// In en, this message translates to:
+  /// **'Country'**
+  String get admVfFieldCountry;
+
+  /// Section header.
+  ///
+  /// In en, this message translates to:
+  /// **'Credential documents'**
+  String get admVfDocs;
+
+  /// Explains the checkboxes.
+  ///
+  /// In en, this message translates to:
+  /// **'Tick every document you have checked. Approval needs at least one checked document.'**
+  String get admVfDocsHint;
+
+  /// No documents uploaded.
+  ///
+  /// In en, this message translates to:
+  /// **'The applicant has not uploaded any documents, so the application cannot be approved yet.'**
+  String get admVfDocsNone;
+
+  /// Honest note: the app lists metadata only.
+  ///
+  /// In en, this message translates to:
+  /// **'The app shows document details only (type, size, SHA-256). Check the file itself in the secure server storage.'**
+  String get admVfDocsNote;
+
+  /// Document line: type, size, hash prefix.
+  ///
+  /// In en, this message translates to:
+  /// **'{type} · {size} · SHA-256 {hash}'**
+  String admVfDocMeta(String type, String size, String hash);
+
+  /// Section header.
+  ///
+  /// In en, this message translates to:
+  /// **'Decision'**
+  String get admVfDecision;
+
+  /// Dropdown label.
+  ///
+  /// In en, this message translates to:
+  /// **'Area of the decision'**
+  String get admVfScope;
+
+  /// Hint when no area is chosen.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose the specialty area this decision refers to.'**
+  String get admVfScopeRequired;
+
+  /// Field label.
+  ///
+  /// In en, this message translates to:
+  /// **'Reason (at least 5 characters)'**
+  String get admVfReason;
+
+  /// Validation.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a reason of at least 5 characters.'**
+  String get admVfReasonShort;
+
+  /// Field label.
+  ///
+  /// In en, this message translates to:
+  /// **'Message to the applicant (optional)'**
+  String get admVfMessage;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Approve'**
+  String get admVfApprove;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Request more information'**
+  String get admVfRequestInfo;
+
+  /// Action.
+  ///
+  /// In en, this message translates to:
+  /// **'Reject'**
+  String get admVfReject;
+
+  /// Reminder under the decision form.
+  ///
+  /// In en, this message translates to:
+  /// **'Identity verification does not grant scientific review rights.'**
+  String get admVfNoScientific;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Application approved.'**
+  String get admVfDoneVerified;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'More information requested.'**
+  String get admVfDoneInfo;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Application rejected.'**
+  String get admVfDoneRejected;
+
+  /// Server refused: self approval.
+  ///
+  /// In en, this message translates to:
+  /// **'You cannot approve your own application — another authorised admin will decide it.'**
+  String get admVfErrSelf;
+
+  /// Server refused: no authority.
+  ///
+  /// In en, this message translates to:
+  /// **'You have no authority to verify in this area.'**
+  String get admVfErrForbidden;
+
+  /// Server refused: no checked document.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark at least one document as checked.'**
+  String get admVfErrNoCredential;
+
+  /// Server refused: foreign document.
+  ///
+  /// In en, this message translates to:
+  /// **'A selected document does not belong to this applicant. Refresh the list.'**
+  String get admVfErrUnknownCredential;
+
+  /// Server refused: already decided.
+  ///
+  /// In en, this message translates to:
+  /// **'This application has already been decided. Refresh the list.'**
+  String get admVfErrTransition;
+
+  /// Server refused: no application.
+  ///
+  /// In en, this message translates to:
+  /// **'Application not found.'**
+  String get admVfErrNoApplication;
+
+  /// Server refused: MFA needed.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in with two-step verification to continue.'**
+  String get admVfErrMfa;
+
+  /// Session expired.
+  ///
+  /// In en, this message translates to:
+  /// **'Please sign in again.'**
+  String get admVfErrSignIn;
+
+  /// No network.
+  ///
+  /// In en, this message translates to:
+  /// **'No connection. Check the internet and try again.'**
+  String get admVfErrOffline;
+
+  /// Generic failure.
+  ///
+  /// In en, this message translates to:
+  /// **'The decision was not saved. Try again later.'**
+  String get admVfErrServer;
+
+  /// Audit action.
+  ///
+  /// In en, this message translates to:
+  /// **'Viewed verification applications'**
+  String get admActVerificationsView;
 }
 
 class _AppLocalizationsDelegate

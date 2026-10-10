@@ -129,6 +129,9 @@ Future<void> bootstrap({List<Override> testOverrides = const []}) async {
           professionalReviewServiceProvider.overrideWithValue(
             SupabaseReviewService(config: supabase, auth: auth),
           ),
+          identityAdminServiceProvider.overrideWithValue(
+            SupabaseIdentityAdminService(config: supabase, auth: auth),
+          ),
           referralServiceProvider.overrideWithValue(
             SupabaseReferralService(config: supabase, auth: auth),
           ),

@@ -7953,4 +7953,174 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get casebookNotFound => 'Эта запись больше не существует.';
+
+  @override
+  String get admNavVerify => 'Заявки на верификацию';
+
+  @override
+  String get admNavVerifyHint =>
+      'Проверьте заявки специалистов и примите решение';
+
+  @override
+  String get admVfEmpty => 'Ожидающих заявок нет.';
+
+  @override
+  String get admVfUnavailable =>
+      'Для верификации нужен онлайн-сервис, он не подключён в этой сборке.';
+
+  @override
+  String get admVfLoadFailed =>
+      'Не удалось загрузить заявки. Проверьте соединение и повторите.';
+
+  @override
+  String admVfSubmitted(String date) {
+    return 'Подана: $date';
+  }
+
+  @override
+  String admVfDocsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count документов',
+      few: '$count документа',
+      one: '$count документ',
+      zero: 'Нет документов',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get admVfSelfBadge => 'Ваша собственная заявка';
+
+  @override
+  String get admVfSelfNote =>
+      'Вы не можете подтвердить собственную заявку — это сделает другой уполномоченный администратор.';
+
+  @override
+  String get admVfApplicant => 'Заявитель';
+
+  @override
+  String get admVfFieldSpecialty => 'Специальность';
+
+  @override
+  String get admVfFieldExperience => 'Стаж';
+
+  @override
+  String admVfYears(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count лет',
+      few: '$count года',
+      one: '$count год',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get admVfFieldEducation => 'Образование';
+
+  @override
+  String get admVfFieldCountry => 'Страна';
+
+  @override
+  String get admVfDocs => 'Документы о квалификации';
+
+  @override
+  String get admVfDocsHint =>
+      'Отметьте каждый проверенный документ. Для подтверждения нужен хотя бы один проверенный документ.';
+
+  @override
+  String get admVfDocsNone =>
+      'Заявитель не загрузил документов, поэтому заявку пока нельзя подтвердить.';
+
+  @override
+  String get admVfDocsNote =>
+      'Приложение показывает только сведения о документе (тип, размер, SHA-256). Сам файл проверяйте в защищённом хранилище на сервере.';
+
+  @override
+  String admVfDocMeta(String type, String size, String hash) {
+    return '$type · $size · хеш SHA-256: $hash';
+  }
+
+  @override
+  String get admVfDecision => 'Решение';
+
+  @override
+  String get admVfScope => 'Область решения';
+
+  @override
+  String get admVfScopeRequired =>
+      'Выберите область специальности, к которой относится решение.';
+
+  @override
+  String get admVfReason => 'Причина (не менее 5 символов)';
+
+  @override
+  String get admVfReasonShort => 'Укажите причину не короче 5 символов.';
+
+  @override
+  String get admVfMessage => 'Сообщение заявителю (необязательно)';
+
+  @override
+  String get admVfApprove => 'Подтвердить';
+
+  @override
+  String get admVfRequestInfo => 'Запросить дополнительные сведения';
+
+  @override
+  String get admVfReject => 'Отклонить';
+
+  @override
+  String get admVfNoScientific =>
+      'Подтверждение личности не даёт прав научного рецензирования.';
+
+  @override
+  String get admVfDoneVerified => 'Заявка подтверждена.';
+
+  @override
+  String get admVfDoneInfo => 'Дополнительные сведения запрошены.';
+
+  @override
+  String get admVfDoneRejected => 'Заявка отклонена.';
+
+  @override
+  String get admVfErrSelf =>
+      'Вы не можете подтвердить собственную заявку — это сделает другой уполномоченный администратор.';
+
+  @override
+  String get admVfErrForbidden =>
+      'У вас нет полномочий подтверждать в этой области.';
+
+  @override
+  String get admVfErrNoCredential =>
+      'Отметьте проверенным хотя бы один документ.';
+
+  @override
+  String get admVfErrUnknownCredential =>
+      'Выбранный документ не принадлежит заявителю. Обновите список.';
+
+  @override
+  String get admVfErrTransition =>
+      'По этой заявке решение уже принято. Обновите список.';
+
+  @override
+  String get admVfErrNoApplication => 'Заявка не найдена.';
+
+  @override
+  String get admVfErrMfa => 'Для продолжения войдите с двухэтапной проверкой.';
+
+  @override
+  String get admVfErrSignIn => 'Войдите в аккаунт снова.';
+
+  @override
+  String get admVfErrOffline =>
+      'Нет соединения. Проверьте интернет и повторите.';
+
+  @override
+  String get admVfErrServer => 'Решение не сохранено. Повторите позже.';
+
+  @override
+  String get admActVerificationsView => 'Просмотрены заявки на верификацию';
 }
