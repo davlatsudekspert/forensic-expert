@@ -97,3 +97,13 @@ tilidagi «Manbada ko‘rsatilmagan» bilan almashtiradi.
 * Widget testlari: `test/widget/trilingual_render_test.dart`, `test/widget/quote_translation_test.dart`,
   `test/widget/trilingual_pilot_test.dart` (haqiqiy paket + D yon fayli).
 * Vizual: `test/golden/trilingual_golden_test.dart` (uz/ru/en, 390/320 dp, qorong‘i).
+
+## `value.locale_only` (2026-10-10)
+Ixtiyoriy claim maydoni: `value.locale_only = "uz"` — yozuv faqat shu til interfeysida
+ko‘rinadi; `value.statement` da faqat shu til kaliti bo‘ladi (tarjima yozilmaydi). Boshqa tilda
+yozuv ro‘yxatdan butunlay chiqariladi (bo‘sh joy, «tarjima yo‘q» yoki inglizcha matn chiqmaydi).
+Kod: `ClaimView.visibleIn/statementFor` va `visibleClaims` (`library_models.dart`); testlar:
+`test/widget/method_images_records_test.dart`. Hozircha kontent paketida bunday yozuv YO‘Q
+(ABY mazmuni egasining tasdig‘ini kutmoqda, `docs/ACTIVE_TASKS.md`). `translation_qa.py` bunday
+yozuvlarni tekshirishga tayyor emas: kontent qo‘shilganda `statement.en` yo‘qligini istisno
+qilish va faqat `uz` matnini terminologiya uchun tekshirish kerak.

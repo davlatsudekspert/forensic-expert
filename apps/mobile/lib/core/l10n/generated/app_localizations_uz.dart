@@ -8062,4 +8062,36 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get legalPublishedNotice =>
       'Bu — e’lon qilingan siyosat. Xuddi shu matn internetda ham bor.';
+
+  @override
+  String get imageOtherSubstanceChip => 'Misol: boshqa modda';
+
+  @override
+  String get imageOtherSubstanceNote =>
+      'Bu rasm boshqa modda misolida; usul tamoyilini ko‘rsatadi va siz kelgan moddaga tegishli emas. Qaysi modda ko‘rsatilgani sarlavhada yozilgan.';
+
+  @override
+  String get detailMethodRecords =>
+      'Usul sharoitlari va cheklovlari (manbalardan)';
+
+  @override
+  String get claimFieldSamplePreparation => 'Namunani tayyorlash';
+
+  @override
+  String get claimFieldInstrumentation => 'Asbob sozlamasi';
+
+  @override
+  String get claimFieldQc => 'Kalibrlash va sifat nazorati';
+
+  @override
+  String get claimFieldInterference => 'Aynanlik va halaqit beruvchi moddalar';
+
+  @override
+  String get claimFieldValidation => 'Usul ko‘rsatkichlari';
+
+  @override
+  String get claimFieldSpecimens => 'Boshqa namunalar';
+
+  @override
+  String get claimFieldLimitation => 'Cheklov';
 }

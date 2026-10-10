@@ -768,11 +768,18 @@ DART_TRI_MAP = re.compile(r"'en':\s*'([^']*)',\s*'ru':\s*'([^']*)',\s*'uz':\s*'(
 DART_COUNTRY = re.compile(r"(?:CountryName|_country)\(\s*'([A-Z]{2})',\s*'([^']*)',\s*'([^']*)',\s*'([^']*)',?\s*\)", re.S)
 
 
+# Faqat o‘zbek tilida ko‘rsatiladigan ekran (egasining qarori, 2026-10-10: «Manbalar va
+# mualliflar»; ruscha/inglizcha interfeysda havolasi ham chiqmaydi, test bilan tekshiriladi).
+# Matni hujjat nomlari va ismlardan iborat — tarjima qilinmaydi, shuning uchun «barcha tillarda
+# bir xil» qoidasidan istisno.
+UZ_ONLY_DART = {"lib/features/profile/presentation/sources_authors_screen.dart"}
+
+
 def load_dart(app: Path) -> list[Unit]:
     units = []
     for path in sorted((app / "lib").rglob("*.dart")):
         rel = path.relative_to(app).as_posix()
-        if "/generated/" in rel or "/fixtures/" in rel:
+        if "/generated/" in rel or "/fixtures/" in rel or rel in UZ_ONLY_DART:
             continue
         text = path.read_text()
         # Izohlarni olib tashlash (qator raqamlari saqlanadi).

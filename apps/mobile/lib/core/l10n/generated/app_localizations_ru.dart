@@ -8130,4 +8130,36 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get legalPublishedNotice =>
       'Это опубликованная политика. Тот же текст доступен в интернете.';
+
+  @override
+  String get imageOtherSubstanceChip => 'Пример: другое вещество';
+
+  @override
+  String get imageOtherSubstanceNote =>
+      'Этот рисунок взят из примера по другому веществу; он показывает принцип метода и не относится к веществу, с которого вы пришли. Название рисунка указывает показанное вещество.';
+
+  @override
+  String get detailMethodRecords =>
+      'Условия метода и ограничения (по источникам)';
+
+  @override
+  String get claimFieldSamplePreparation => 'Подготовка пробы';
+
+  @override
+  String get claimFieldInstrumentation => 'Настройка прибора';
+
+  @override
+  String get claimFieldQc => 'Калибровка и контроль качества';
+
+  @override
+  String get claimFieldInterference => 'Идентификация и мешающие вещества';
+
+  @override
+  String get claimFieldValidation => 'Характеристики метода';
+
+  @override
+  String get claimFieldSpecimens => 'Другие образцы';
+
+  @override
+  String get claimFieldLimitation => 'Ограничение';
 }

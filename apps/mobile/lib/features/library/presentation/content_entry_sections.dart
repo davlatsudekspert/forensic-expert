@@ -88,7 +88,15 @@ class _ContentEntryBodyState extends ConsumerState<ContentEntryBody> {
       ('biomarker', l.detailBiomarker),
       ('transformation_product', l.detailTransformationProduct),
     ];
-    final presentFields = {for (final c in d.claims) c.field};
+    final lang = Localizations.localeOf(context).languageCode;
+    // `value.locale_only` yozuvlar boshqa til interfeysida umuman ko‘rinmaydi.
+    final claims = visibleClaims(d.claims, lang);
+    final presentFields = {for (final c in claims) c.field};
+    final methodRecords = [
+      for (final f in methodRecordFields)
+        for (final c in claims)
+          if (c.field == f && c.hasStatement) c,
+    ];
     final hasSpecimens = ref
         .watch(evidenceDataProvider)
         .linksFrom(entry.id)
@@ -121,6 +129,7 @@ class _ContentEntryBodyState extends ConsumerState<ContentEntryBody> {
           if (presentFields.contains(field)) (field, title),
         if (presentFields.contains('analytical_method'))
           ('analytical_method', l.detailAnalyticalMethods),
+        if (methodRecords.isNotEmpty) ('method_records', l.detailMethodRecords),
         if (presentFields.contains('reported_concentration'))
           ('reported_concentration', l.detailReportedConcentrations),
         ('jurisdiction', l.detailJurisdictionShort),
@@ -197,9 +206,9 @@ class _ContentEntryBodyState extends ConsumerState<ContentEntryBody> {
             text: l.detailLayerScientificNote,
           ),
           for (final (field, title) in scientificFields)
-            if (d.claims.any((c) => c.field == field)) ...[
+            if (claims.any((c) => c.field == field)) ...[
               _section(field, title),
-              for (final claim in d.claims.where((c) => c.field == field))
+              for (final claim in claims.where((c) => c.field == field))
                 Padding(
                   padding: const EdgeInsets.only(bottom: FeSpace.xs),
                   child: ClaimCard(claim: claim),
@@ -207,12 +216,33 @@ class _ContentEntryBodyState extends ConsumerState<ContentEntryBody> {
             ],
           if (presentFields.contains('analytical_method')) ...[
             _section('analytical_method', l.detailAnalyticalMethods),
-            for (final claim in d.claims.where(
+            for (final claim in claims.where(
               (c) => c.field == 'analytical_method',
             ))
               Padding(
                 padding: const EdgeInsets.only(bottom: FeSpace.xs),
                 child: ClaimCard(claim: claim),
+              ),
+          ],
+          if (methodRecords.isNotEmpty) ...[
+            _section('method_records', l.detailMethodRecords),
+            for (final claim in methodRecords)
+              Padding(
+                padding: const EdgeInsets.only(bottom: FeSpace.xs),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: FeSpace.xxs),
+                      child: Text(
+                        methodRecordLabel(l, claim.field),
+                        key: Key('methodRecord.label.${claim.claimId}'),
+                        style: Theme.of(context).textTheme.labelLarge,
+                      ),
+                    ),
+                    ClaimCard(claim: claim),
+                  ],
+                ),
               ),
           ],
           if (presentFields.contains('reported_concentration')) ...[
@@ -224,7 +254,7 @@ class _ContentEntryBodyState extends ConsumerState<ContentEntryBody> {
               tone: FeBannerTone.critical,
             ),
             const SizedBox(height: FeSpace.xs),
-            for (final claim in d.claims.where(
+            for (final claim in claims.where(
               (c) => c.field == 'reported_concentration',
             ))
               _ConcentrationClaim(claim: claim),
@@ -449,6 +479,30 @@ class _ProvenanceCard extends StatelessWidget {
   }
 }
 
+/// Usul rejimi bo‘limida ko‘rsatiladigan claim maydonlari (faqat
+/// `value.statement` matni bor yozuvlar): namuna tayyorlash, asbob sozlamasi,
+/// sifat nazorati, halaqit beruvchi moddalar, validatsiya, namunalar, cheklov.
+const methodRecordFields = [
+  'sample_preparation',
+  'instrumentation',
+  'qc_requirement',
+  'interference',
+  'validation_requirement',
+  'specimens',
+  'limitation',
+];
+
+String methodRecordLabel(AppLocalizations l, String field) => switch (field) {
+  'sample_preparation' => l.claimFieldSamplePreparation,
+  'instrumentation' => l.claimFieldInstrumentation,
+  'qc_requirement' => l.claimFieldQc,
+  'interference' => l.claimFieldInterference,
+  'validation_requirement' => l.claimFieldValidation,
+  'specimens' => l.claimFieldSpecimens,
+  'limitation' => l.claimFieldLimitation,
+  _ => field,
+};
+
 class ClaimCard extends StatelessWidget {
   const ClaimCard({super.key, required this.claim});
 
@@ -459,7 +513,12 @@ class ClaimCard extends StatelessWidget {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
+    final lang = Localizations.localeOf(context).languageCode;
     final excerpt = claim.excerpt;
+    // Iqtibosi yo‘q claim: manbadan o‘z so‘zlarimiz bilan yozilgan matn
+    // (`value.statement`) — iqtibos sifatida ko‘rsatilmaydi.
+    final statement = excerpt == null ? claim.statementFor(lang) : null;
+    final statementLocator = statement == null ? null : claim.locatorFor(lang);
     final source = claim.sources.isEmpty ? null : claim.sources.first;
 
     final identityRows = claim.field == 'identity'
@@ -531,6 +590,34 @@ class ClaimCard extends StatelessWidget {
                   ),
                 ),
               )
+            else if (statement != null)
+              DecoratedBox(
+                key: Key('claim.statement.${claim.claimId}'),
+                decoration: BoxDecoration(
+                  border: Border(left: BorderSide(color: c.accent, width: 3)),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(left: FeSpace.sm),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SelectableText(statement, style: t.bodyMedium),
+                      if (lang != 'en' &&
+                          claim.translationStatusFor(lang) == 'machine_draft')
+                        Padding(
+                          padding: const EdgeInsets.only(top: FeSpace.xxs),
+                          child: Text(
+                            l.trStatusMachineDraft,
+                            key: Key('claim.statement.draft.${claim.claimId}'),
+                            style: t.bodySmall?.copyWith(
+                              color: c.textSecondary,
+                            ),
+                          ),
+                        ),
+                    ],
+                  ),
+                ),
+              )
             else
               Text(
                 l.detailExcerptWithheld,
@@ -538,7 +625,14 @@ class ClaimCard extends StatelessWidget {
                 style: t.bodySmall?.copyWith(color: c.textSecondary),
               ),
           ],
-          if (source != null) ...[
+          if (statementLocator != null) ...[
+            const SizedBox(height: FeSpace.xs),
+            Text(
+              statementLocator,
+              key: Key('claim.locator.${claim.claimId}'),
+              style: t.bodySmall?.copyWith(color: c.textSecondary),
+            ),
+          ] else if (source != null) ...[
             const SizedBox(height: FeSpace.xs),
             Text(
               [

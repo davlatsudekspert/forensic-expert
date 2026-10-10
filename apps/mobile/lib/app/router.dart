@@ -54,6 +54,7 @@ import '../features/profile/presentation/legal_screens.dart';
 import '../features/profile/presentation/paywall_screen.dart';
 import '../features/profile/presentation/profile_screen.dart';
 import '../features/profile/presentation/settings_pickers.dart';
+import '../features/profile/presentation/sources_authors_screen.dart';
 import '../features/publications/presentation/moderation_queue_screen.dart';
 import '../features/publications/presentation/my_publications_screen.dart';
 import '../features/publications/presentation/publications_screen.dart';
@@ -756,6 +757,13 @@ final routerProvider = Provider<GoRouter>((ref) {
                     path: 'about',
                     parentNavigatorKey: rootKey,
                     builder: (c, s) => const AboutScreen(),
+                    routes: [
+                      GoRoute(
+                        path: 'sources',
+                        parentNavigatorKey: rootKey,
+                        builder: (c, s) => const SourcesAuthorsScreen(),
+                      ),
+                    ],
                   ),
                 ],
               ),

@@ -420,6 +420,9 @@ def main():
     sct["source_ids"] = sorted(set(sct["source_ids"]) | {"SRC-UNODC-STNAR-13", "SRC-YULDASHEV-TOKS-2025",
                                                          "SRC-SWGDRUG-8-2"})
 
+    # Ethanol GC-FID records (international literature) are merged by their own builder.
+    import build_ethanol_gc_content
+    b = build_ethanol_gc_content.merge(b)
     out = json.dumps(b, indent=2, ensure_ascii=False) + "\n"
     if a.check:
         if BUNDLE.read_text(encoding="utf-8") != out:

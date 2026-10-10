@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../app/app_info.dart';
+import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
@@ -9,6 +11,7 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/brand_mark.dart';
 import '../../../core/widgets/fe_components.dart';
 import 'database_status_card.dart';
+import 'sources_authors_screen.dart';
 
 enum LegalDocument { privacy, terms, aiDisclaimer }
 
@@ -112,6 +115,16 @@ class AboutScreen extends StatelessWidget {
               ),
               const SizedBox(height: FeSpace.md),
               const DatabaseStatusCard(),
+              // Manbalar va mualliflar — faqat o‘zbekcha interfeysda.
+              if (Localizations.localeOf(context).languageCode ==
+                  SourcesAuthorsScreen.languageCode)
+                ListTile(
+                  key: const Key('about.sourcesAuthors'),
+                  contentPadding: EdgeInsets.zero,
+                  title: const Text(SourcesAuthorsScreen.title),
+                  trailing: const Icon(Icons.chevron_right),
+                  onTap: () => context.push(Routes.aboutSources),
+                ),
               const SizedBox(height: FeSpace.xs),
               Text(
                 l.aboutVersions,

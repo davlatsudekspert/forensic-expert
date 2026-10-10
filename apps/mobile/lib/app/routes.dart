@@ -114,6 +114,7 @@ abstract final class Routes {
   static const privacy = '/profile/privacy';
   static const terms = '/profile/terms';
   static const about = '/profile/about';
+  static const aboutSources = '/profile/about/sources';
   static const aiDisclaimer = '/profile/ai-disclaimer';
 
   // Profil, professional tasdiqlash va taqriz ish joyi.

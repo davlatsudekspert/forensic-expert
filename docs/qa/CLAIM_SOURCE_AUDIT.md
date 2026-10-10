@@ -10,18 +10,18 @@ Verdict = `reviewed` verdict if a ledger entry matches the claim text, otherwise
 |---|---|---|---|---|
 | UNSUPPORTED | 1 | 0 | 0 | 1 |
 | SCOPE_MISMATCH | 0 | 0 | 0 | 0 |
-| ABSTRACT_ONLY | 0 | 167 | 510 | 677 |
+| ABSTRACT_ONLY | 3 | 167 | 510 | 680 |
 | NO_LOCATOR | 0 | 0 | 19 | 19 |
-| PARTIAL | 9 | 38 | 21 | 68 |
-| SUPPORTED | 813 | 210 | 480 | 1503 |
-| **claims** | 823 | 415 | 1030 | 2268 |
+| PARTIAL | 11 | 38 | 21 | 70 |
+| SUPPORTED | 817 | 210 | 480 | 1507 |
+| **claims** | 832 | 415 | 1030 | 2277 |
 
-Automatic verdicts only (before human review overrides): UNSUPPORTED 1, SCOPE_MISMATCH 7, ABSTRACT_ONLY 675, NO_LOCATOR 19, PARTIAL 67, SUPPORTED 1499.
+Automatic verdicts only (before human review overrides): UNSUPPORTED 1, SCOPE_MISMATCH 7, ABSTRACT_ONLY 678, NO_LOCATOR 19, PARTIAL 69, SUPPORTED 1503.
 Reviewed claims (ledger, text hash matches): 46; stale review entries: 0; orphan entries: 0.
 
 Baseline (before fixes): UNSUPPORTED 1, SCOPE_MISMATCH 10, ABSTRACT_ONLY 569, NO_LOCATOR 76, PARTIAL 56, SUPPORTED 1085.
 
-General-rule wording backed only by an abstract (`ABSTRACT_ONLY` + `general_rule`), not yet reviewed: 6 (reviewed: 15).
+General-rule wording backed only by an abstract (`ABSTRACT_ONLY` + `general_rule`), not yet reviewed: 7 (reviewed: 15).
 
 ## Review priority lists
 
@@ -35,7 +35,7 @@ General-rule wording backed only by an abstract (`ABSTRACT_ONLY` + `general_rule
 
 _none_
 
-### ABSTRACT_ONLY + general_rule (6)
+### ABSTRACT_ONLY + general_rule (7)
 
 | Claim | Sources | Reasons | Text |
 |---|---|---|---|
@@ -45,6 +45,7 @@ _none_
 | `guideline.bio.saliva/interpretation#4` | wornes2018 | source checked at abstract / bibliographic level; no concrete locator | Har qanday so‘lak testining manfiy natijasi ham so‘lak yo‘qligini isbotlamaydi: aralash dog‘larda qon, siydik  |
 | `guideline.bio.urine_sweat_feces/limitations#1` | barni2006, pang2008, old2009 | source checked at abstract / bibliographic level; no concrete locator | • Amilaza: ter va siydikda ham alfa-amilaza faolligi bor [barni2006] — amilaza testi musbat bo‘lishi so‘lakni  |
 | `guideline.bio.urine_sweat_feces/limitations#4` | singh1980 | source checked at abstract / bibliographic level; no concrete locator | Saliva ajratuvchisi har doim siydik ajratuvchisi bo‘lavermaydi, shuning uchun siydik dog‘idagi guruh natijasi  |
+| `C-EP-ETHANOL-08` | SRC-PM37804205, SRC-PM36346343 | source checked at abstract / bibliographic level; no concrete locator | Limitation for post-mortem blood: ethanol can be formed in a decomposed body by microbial activity and ferment |
 
 ### NO_LOCATOR (19)
 
@@ -105,14 +106,14 @@ Levels grade the PUBLICATION TYPE only; the criterion is in code, not in the dat
 | database/tier2/C | 201 |
 | guideline/tier1/B | 2 |
 | journal_article/tier2/A | 8 |
-| journal_article/tier2/B | 227 |
-| journal_article/tier2/C | 45 |
+| journal_article/tier2/B | 232 |
+| journal_article/tier2/C | 47 |
 | journal_article/tier2/D | 32 |
 | legislation/tier1/A | 8 |
 | report/tier3/C | 1 |
 | report/tier3/E | 1 |
 
-Claim level copied from its source level: True.
+Claim level copied from its source level: False.
 
 Sources whose level is ungrounded or inconsistent with their own title / type:
 
@@ -2417,4 +2418,13 @@ Sources whose level is ungrounded or inconsistent with their own title / type:
 | `C-SM-VENLAFAXINE-IDENTIFICATION_METHODS_OVERVIEW-00` | SRC-YULDASHEV-TOKS-2025 | pp. 102–103 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
 | `C-SM-SCR-MICROCRYSTAL-TESTS-LIMITATION-01` | SRC-YULDASHEV-GMT-2024 | PDF pp. 112–113 | SUPPORTED | paraphrase_not_quoted |
 | `C-SM-SCR-MICROCRYSTAL-TESTS-LIMITATION-02` | SRC-SWGDRUG-8-2 | Part IIIB, Table 1 (printed p. 17); IIIB.5.1 (printed p. 21) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-EP-ETHANOL-01` | SRC-PMC9331811 | Taylor et al., Molecules 2022;27(15):4771, section 1 (Introduction), paragraphs 3–4 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-EP-ETHANOL-02` | SRC-PMC9331811 | Taylor et al., Molecules 2022;27(15):4771, sections 4.3 (Sample Preparation) and 4.4 (Headspace GC-FID Method) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-EP-ETHANOL-03` | SRC-PMC9331811 | Taylor et al., Molecules 2022;27(15):4771, sections 4.2 (Instrumentation), 2.1 (Separation Conditions) and 4.4 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-EP-ETHANOL-04` | SRC-PMC9331811 | Taylor et al., Molecules 2022;27(15):4771, sections 2.2 (Linearity), 2.6 (Limit of Detection and Quantification) and 3 (Discussion) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-EP-ETHANOL-05` | SRC-PM36346343<br>SRC-PM33031530<br>SRC-PM27488829<br>SRC-PM21404443<br>SRC-PM28766526 | Musile et al., J Anal Toxicol 2023;46(9):e274–e279, abstract<br>Pinto et al., J Anal Toxicol 2021;45(9):961–968, abstract<br>Chun et al., J Anal Toxicol 2016;40(8):653–658, abstract<br>Kovatsi et al., J Sep Sci 2011;34(9):1004–1010, abstract<br>Afonin et al., Sud Med Ekspert 2017;60(4):29–33, abstract | ABSTRACT_ONLY | paraphrase_not_quoted |
+| `C-EP-ETHANOL-06` | SRC-PMC9331811<br>SRC-PM33031530<br>SRC-PM28766526 | Taylor et al., Molecules 2022;27(15):4771, sections 2.1 (Separation Conditions) and 3 (Discussion)<br>Pinto et al., J Anal Toxicol 2021;45(9):961–968, abstract<br>Afonin et al., Sud Med Ekspert 2017;60(4):29–33, abstract | PARTIAL | numbers_or_norms, paraphrase_not_quoted |
+| `C-EP-ETHANOL-07` | SRC-PMC9331811<br>SRC-PM39198950 | Taylor et al., Molecules 2022;27(15):4771, sections 2.4 (Accuracy) and 2.5 (Uncertainty)<br>Zheng et al., Se Pu 2024;42(9):909–917, abstract | PARTIAL | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-EP-ETHANOL-08` | SRC-PM37804205<br>SRC-PM36346343 | Olds, Jones, J Anal Toxicol 2024;48(1):9–26, abstract<br>Musile et al., J Anal Toxicol 2023;46(9):e274–e279, abstract | ABSTRACT_ONLY | general_rule, numbers_or_norms, paraphrase_not_quoted |
+| `C-EP-ETHANOL-09` | SRC-PM27488829<br>SRC-PM36346343<br>SRC-PM33031530 | Chun et al., J Anal Toxicol 2016;40(8):653–658, abstract<br>Musile et al., J Anal Toxicol 2023;46(9):e274–e279, abstract<br>Pinto et al., J Anal Toxicol 2021;45(9):961–968, abstract | ABSTRACT_ONLY | numbers_or_norms, paraphrase_not_quoted |
 
