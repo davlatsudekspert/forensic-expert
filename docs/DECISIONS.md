@@ -100,3 +100,23 @@ Shundan kelib chiqadigan narsalar:
 - AQSh soliq formasi (tax info) to'ldirilmasa, tushumdan ushlab qolish
   (withholding) qo'llanadi.
 - To'lov chegarasi bor: summa minimal chegaraga yetmaguncha pul o'tkazilmaydi.
+
+## 2026-10-10 — ABY: manba sifatida ochiq keltiriladi
+
+Egasining qarori o‘zgardi. Ilgari ABY faqat ichki mavzu ro‘yxati bo‘lib, nomi
+yozilmas edi. Endi:
+
+- ABY **manba sifatida yoziladi**, aniq joyi bilan: «ABY, 2-bob, 3-bo‘lim».
+- So‘zma-so‘z iqtibos **olinmaydi**: mazmun o‘z so‘zimiz bilan `value.statement`
+  {en,uz,ru} da, manba nomi `value.source_i18n`, joyi `value.locator_i18n`.
+  Bu Yuldashev GMT-2024 / TOKS-2025 bilan bir xil yondashuv.
+- ABY faylining o‘zi repoga, ilova assetlariga yoki Supabase’ga ko‘chirilmaydi.
+- Bundle’dagi source yozuvi `license_agreement_id` bilan: markaz hujjatni
+  foydalanish uchun sotib olgan.
+- Xalqaro manba topilsa, u ham yonma-yon keltiriladi; topilmagani endi
+  ABY’dan yozishga to‘siq emas.
+
+Sabab: egasi aytdi — ABY ning o‘zi kitoblardan jamlangan, va O‘zbekistonda
+amalda qo‘llanadigan usullar aynan shu hujjatda yozilgan; usulni manbasiz
+qoldirgandan ko‘ra, uni o‘z manbasi bilan ko‘rsatish to‘g‘riroq.
+

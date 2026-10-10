@@ -9,7 +9,7 @@
   referral real E2E → imzolangan store build’lar.
   Holat: `docs/PRODUCTION_CLOSEOUT.md`. Keyingi ishlar: `docs/BACKLOG.md`.
 - **Keyingi katta topshiriq (2026-10-08):** `docs/35_MASTER_PROMPT_GLOBAL_PLATFORM.md` — Phase A (read-only audit) dan boshlanadi.
-- **ABY 2025:** yopiq/admin integratsiyaga tayyorlanadi (qoidalar: `docs/35_…` “YANGI QAROR”). Fayl va undan olingan katalog repoga, Supabase’ga, boshqa AI’ga yoki ommaviy kanalga chiqmaydi — egasining alohida roziligisiz.
+- **ABY 2025 (egasi qarori, 2026-10-10 — avvalgi qoidani almashtiradi):** ABY **manba sifatida ochiq yoziladi** va **aniq joyi ko‘rsatiladi** («ABY, 2-bob, 3-bo‘lim»). Shartlar: so‘zma-so‘z iqtibos olinmaydi (`value.excerpt` yo‘q) — mazmun o‘z so‘zimiz bilan `value.statement` da, ustiga `value.source_i18n` va `value.locator_i18n`; ABY faylining o‘zi repoga, assetlarga yoki Supabase’ga ko‘chirilmaydi; bundle’dagi source yozuvi `license_agreement_id` bilan (markaz foydalanish uchun sotib olgan). Xalqaro manba topilsa yonma-yon keltiriladi.
 - NFCSTORE va BugunBor repolarini o‘zgartirmang; maxfiy kalitlarni chiqarmang.
 
 ## Model tanlash (egasi talabi, 2026-10-10)
