@@ -2,7 +2,28 @@
 
 Holat: QABUL QILINDI, limit tiklangach (shanba) boshlanadi. Hali hech bir faza bajarilmagan.
 
-## ✅ YANGI QAROR (2026-10-08, kechroq) — quyidagi “TUZATISH”dan USTUN
+## ✅ ENG SO‘NGGI QAROR (2026-10-10) — quyidagi hamma narsadan USTUN
+
+Egasi qarorini o‘zgartirdi. ABY 2025 endi **ilovada ochiq manba sifatida
+keltiriladi**, quyidagi shartlar bilan:
+
+- **Manba sifatida yoziladi va aniq joyi ko‘rsatiladi** — «ABY, G bo‘limi,
+  № ABY.G.16.2025, 2.3-band» uslubida. Bibliografiya: tashkilot, yil,
+  tuzuvchilar va taqrizchilar to‘liq ko‘rsatiladi.
+- **So‘zma-so‘z iqtibos OLINMAYDI** (`value.excerpt` yo‘q): mazmun o‘z
+  so‘zimiz bilan `value.statement` da, ustiga `value.source_i18n` va
+  `value.locator_i18n`. Yuldashev kitoblari bilan bir xil yondashuv.
+- **Faqat o‘zbek tilida ko‘rinadi** (`value.locale_only: "uz"`): rus va
+  ingliz tilida yozuv ro‘yxatda umuman bo‘lmaydi va tarjima qilinmaydi.
+- **Bepul** — Pro paywall ortiga qo‘yilmaydi. Markaz hujjatni o‘z ishi uchun
+  sotib olgan; boshqaning mehnati sotilmaydi.
+- **Fayl o‘zi repoga, ilova assetlariga, Supabase’ga va boshqa AI xizmatiga
+  KO‘CHIRILMAYDI** — faqat undan olingan bilim va unga havola.
+- Barcha yozuvlar `NEEDS_REVIEW`; ilmiy taqriz alohida.
+
+Batafsil: `docs/DECISIONS.md`, 2026-10-10 sanasidagi ikki qaror.
+
+## ⚠️ ESKIRGAN QAROR (2026-10-08, kechroq) — yuqoridagi 2026-10-10 qarori bilan almashtirildi
 Egasi: ABY 2025 egasi ma’lumotiga ko‘ra ma’qullangan, hali sotuvga chiqmagan; ilmiy kutubxonaga integratsiyaga tayyorlanadi.
 - Ruxsat: lokal ochish va to‘liq tahlil (mundarija, fanlar, metodlar); fanlarga bog‘lash; qidiriladigan katalog; manba/sahifa/versiya/holat; barcha yozuvlar NEEDS_REVIEW.
 - Faqat yopiq test / admin ko‘rinishi. Taqiqlangan: ommaviy API, public GitHub, ochiq PDF havolasi, boshqa AI xizmatiga yuborish, ommaviy ilovada to‘liq chop etish, to‘liq tarjimani tarqatish — huquq tekshiruvi va alohida rozilikkacha.
