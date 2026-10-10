@@ -137,3 +137,14 @@ QA s39 PASS Profil → «Taklif va murojaatlar» (bo‘sh ro‘yxat) []
 QA s40 PASS Yangi murojaat: bo‘sh forma → validatsiya []
 QA s41 PASS TAKLIF: mavzu, xabar, skrinshot biriktirish [Tizim fayl dialogi (GTK/SAF) boshqarilmaydi — QaImagePicker haqiqiy PNG qaytaradi]
 QA s42 PASS Rozilik + Yuborish → chat ochiladi []
+QA s43 PASS Ro‘yxatda: holat «Yangi» []
+QA s44 PASS Admin javobi (simulyatsiya) → Profil belgisi + banner []
+QA s45 PASS Boshqa tabda pastki banner []
+QA s46 PASS Banner → murojaat: javob chatda, holat yangilandi []
+QA s47 PASS Foydalanuvchi yana yozadi → holat «Yangi» []
+QA s48 PASS Talaba /admin marshrutlarini ocha olmaydi []
+QA s49 PASS Tarmoq o‘chiq: hech bir HTTP so‘rov muvaffaqiyatli emas [Bloklangan HTTP urinishlari: 0]
+QA SUMMARY student: 48/49 PASS
+  FAIL s18 Manba iqtibosi + o‘zbekcha tarjima: [KUTILGAN MATN YO‘Q: "Manbadan iqtibos", LANG? EN:"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…" | RAW:"pubchem.ncbi.nlm.nih.gov" | RAW:"legislation.gov.uk"]
+01:46 +1: (tearDownAll)
+01:46 +1: All tests passed!

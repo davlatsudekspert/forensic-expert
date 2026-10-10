@@ -163,7 +163,9 @@ void main() {
 
     await qa.step('Manba iqtibosi + o‘zbekcha tarjima', (s) async {
       await qa.tapText('Metabolitlar');
-      await qa.scrollUntil(find.text('Avtomatik tarjima — tekshirilmagan'));
+      // Tarjima belgisi endi yuqoridagi bo‘limlarda ham uchraydi, shuning uchun
+      // aynan iqtibos blokigacha aylantiriladi.
+      await qa.scrollUntil(find.text('Manbadan iqtibos'));
       qa.expectText('Manbadan iqtibos', s);
       qa.expectText('Avtomatik tarjima', s);
       qa.expectText('atsetaldegid', s);
