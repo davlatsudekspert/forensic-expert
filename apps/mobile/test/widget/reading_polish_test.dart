@@ -83,10 +83,17 @@ void main() {
     // «Manbalar» qatori sahifadagi manbalar ro‘yxatiga olib boradi.
     await tester.tap(find.byKey(const Key('entry.glance.row.sources')));
     await tester.pumpAndSettle();
-    expect(
-      find.byKey(const Key('source.meta.SRC-PUBCHEM-702')).hitTestable(),
-      findsOne,
+    // Etanolga HS-GC-FID manbalari qo‘shilgandan keyin ro‘yxat uzaydi,
+    // shuning uchun kerakli manbagacha aylantiriladi.
+    final pubchem = find.byKey(const Key('source.meta.SRC-PUBCHEM-702'));
+    await tester.dragUntilVisible(
+      pubchem,
+      find.byType(Scrollable).first,
+      const Offset(0, -240),
+      maxIteration: 60,
     );
+    await tester.pumpAndSettle();
+    expect(pubchem.hitTestable(), findsOne);
   });
 
   testWidgets('morfin (Pro, bepul rejim): faqat sonlar va qulf, manba ochiq', (
