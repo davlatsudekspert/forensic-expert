@@ -147,3 +147,20 @@ Uch tilda (uz, ru, en) to'ldiring:
 Har safar: `pubspec.yaml` dagi `+N` ni oshiring → `flutter build appbundle` →
 Play Console'da yangi release → `.aab` yuklang. Internal testing'dan
 Closed/Production'ga «Promote release» orqali o'tkaziladi.
+
+---
+
+## Holat: Internal testing jonli (2026-10-10)
+
+- Versiya **0.3.0**, 10-oktabr 22:30 da ichki testerlar uchun ochildi.
+- Testerlar uchun havola:
+  `https://play.google.com/apps/internaltest/4699917367893320231`
+  Tester havolani telefonida, ro'yxatdagi Google hisobi bilan ochadi →
+  «Accept invite» → «Download it on Google Play».
+- `.aab` CI orqali avtomatik yuklanadi: workflow `release-build.yml` ni
+  `workflow_dispatch` bilan, `play_internal: true` kalitchasi yoqilgan holda
+  ishga tushirish kifoya. Qo'lda yuklab olish kerak emas.
+- Qolgan ish: **Store listing** — ilova nomi va tavsiflari uch tilda
+  (`docs/play_store/listing.md`), ikonka 512×512, feature graphic 1024×500,
+  kamida 2 ta telefon skrinshoti. To'ldirilmaguncha ilova do'konda paket
+  nomi bilan ko'rinadi.
