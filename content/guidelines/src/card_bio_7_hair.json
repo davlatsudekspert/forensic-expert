@@ -1,0 +1,192 @@
+{
+  "id": "guideline.bio.hair",
+  "discipline_codes": [
+    "forensic_biology",
+    "medical_criminalistics",
+    "trace_evidence"
+  ],
+  "status": "NEEDS_REVIEW",
+  "updated": "2026-10-10",
+  "translation_status": {
+    "uz": "AUTHORED",
+    "ru": "DRAFT",
+    "en": "DRAFT"
+  },
+  "related_tool_ids": [],
+  "term_ids": [
+    "T-CONFIRMATORY-ANALYSIS"
+  ],
+  "title": {
+    "uz": "Sochni morfologik va taqqosiy tekshirish: imkoniyatlari va DNK bilan solishtirganda cheklovlari",
+    "ru": "Морфологическое и сравнительное исследование волос: возможности и ограничения по сравнению с ДНК",
+    "en": "Morphological and comparative hair examination: possibilities and limits relative to DNA"
+  },
+  "summary": {
+    "uz": "Sochning mikroskopik tekshiruvi odam yoki hayvon sochini, tana sohasini va shikastlanishni aniqlay oladi, ammo sochni muayyan shaxsga bog‘lamaydi. Karta mikroskopiya va mtDNA birga qo‘llanganda olingan ma’lumotlarni, laboratoriyalararo aniqlikni va sochda ABO guruhlashning ishonchsizligini bayon etadi.",
+    "ru": "Микроскопия волос позволяет определить, волос ли человека или животного, область тела и повреждения, но не связывает волос с конкретным лицом. Карточка описывает данные при совместном применении микроскопии и мтДНК, межлабораторную точность и ненадёжность группирования ABO по волосам.",
+    "en": "Hair microscopy can tell human from animal hair, body area and damage, but does not link a hair to a particular person. The card describes the information gained when microscopy and mtDNA are used together, interlaboratory accuracy, and the unreliability of ABO grouping of hair."
+  },
+  "sections": [
+    {
+      "key": "basis",
+      "title": {
+        "uz": "Ilmiy asos",
+        "ru": "Научная основа",
+        "en": "Scientific basis"
+      },
+      "body": {
+        "uz": "Soch — hodisa joyida ko‘p uchraydigan iz. Mikroskopik tekshiruv orqali: (1) soch odamnikimi yoki hayvonnikimi, (2) odam sochi bo‘lsa — tananing qaysi qismidan, (3) shikastlanish, kasallik yoki kosmetik ishlov izlari, (4) tekshiriluvchi soch bilan ma’lum (namunaviy) sochlar solishtirilib, ularning bir manbadan bo‘lishi mumkinligi aniqlanadi [houck2005]. Hayvon sochini aniqlash odam sochini solishtirishdan boshqa ko‘nikmalarni talab qiladi, va hayvon sochi morfologiyasi bo‘yicha ko‘plab noto‘g‘ri tasavvurlar bor [tridico2014].\n\nSoch biologiyasi bo‘yicha sharhda soch mikrostrukturasi va morfologiyasining ilmiy asoslari, tahlilning hozirgi cheklovlari va ildiz o‘sish bosqichlari bo‘yicha yagona terminologiya taklifi keltirilgan [koch2020]; soch gistogenezi va mikroskopiyasining mtDNA tahlili bilan aloqasi [linch2001] da yoritilgan.",
+        "ru": "Волос — частый след на месте происшествия. Микроскопическое исследование позволяет определить: (1) принадлежит ли волос человеку или животному, (2) для волоса человека — с какой области тела, (3) признаки повреждения, болезни или косметической обработки, (4) путём сравнения исследуемого волоса с известными (образцами) — могли ли они происходить из одного источника [houck2005]. Определение волос животных требует иных навыков, чем сравнение волос человека, и вокруг морфологии волос животных существует много заблуждений [tridico2014].\n\nВ обзоре по биологии волоса изложены научные основы микроструктуры и морфологии волоса, нынешние ограничения анализа и предложена единая терминология стадий роста корня [koch2020]; связь гистогенеза и микроскопии волоса с анализом мтДНК рассмотрена в [linch2001].",
+        "en": "Hair is a common trace at scenes. Microscopic examination can determine: (1) whether a hair is human or animal, (2) for a human hair, the body area it comes from, (3) signs of damage, disease or cosmetic treatment, and (4) by comparing the questioned hair with known (reference) hairs, whether they could have come from the same source [houck2005]. Identifying animal hairs requires different skills from comparing human hairs, and there are many misconceptions about animal hair morphology [tridico2014].\n\nA review of hair biology sets out the scientific basis of hair microstructure and morphology, the current limitations of hair analysis, and proposes consensus terminology for root growth stages [koch2020]; the link between hair histogenesis, microscopy and mtDNA analysis is covered in [linch2001]."
+      },
+      "citations": [
+        "houck2005",
+        "tridico2014",
+        "koch2020",
+        "linch2001"
+      ]
+    },
+    {
+      "key": "scope",
+      "title": {
+        "uz": "Qamrov va holat",
+        "ru": "Область и статус",
+        "en": "Scope and status"
+      },
+      "body": {
+        "uz": "Karta sochning morfologik va taqqosiy mikroskopik tekshiruvining imkoniyatlari va cheklovlarini, ayniqsa DNK tahliliga nisbatan, bayon etadi. Mikroskopik belgilarning batafsil tavsifi (kutikula, korteks, medulla indekslari, pigment taqsimoti), preparat tayyorlash va taqqoslash protokoli, taqqoslash uchun namunaviy soch miqdori bu kartada berilmagan — ular bo‘yicha o‘qib chiqilgan tekshirilgan manba hozircha yo‘q, manba tekshirilmoqda; laboratoriyaning tasdiqlangan ish tartibidan foydalaning. Sochda ABO guruhini aniqlash bu kartada tavsiya etilmaydi (sababi «Cheklovlar» da).\n\nHolat: bu karta ekspert (reviewer) tekshiruvidan o‘tmagan (NEEDS_REVIEW) — undan ish uchun tayanishdan oldin vakolatli ekspert tasdig‘i kerak. Ru va en matnlar — avtomatik qoralama. Milliy huquqiy talablar bu kartada berilmagan; ular alohida huquqiy qatlamda.",
+        "ru": "Карточка описывает возможности и ограничения морфологического и сравнительного микроскопического исследования волос, особенно по отношению к ДНК-анализу. Подробное описание микроскопических признаков (кутикула, корковое вещество, индексы медуллы, распределение пигмента), приготовление препаратов и протокол сравнения, количество образцов волос для сравнения в карточке не приводятся — по ним нет прочитанного проверенного источника, источник уточняется; пользуйтесь утверждённой методикой лаборатории. Определение группы ABO по волосам в карточке не рекомендуется (причина — в «Ограничениях»).\n\nСтатус: карточка не прошла экспертную проверку (NEEDS_REVIEW) — перед использованием в работе нужно подтверждение уполномоченного эксперта. Тексты ru и en — автоматический черновик. Национальные правовые требования в карточке не приводятся; они даны в отдельном правовом слое.",
+        "en": "The card describes the possibilities and limits of morphological and comparative microscopic examination of hair, especially relative to DNA analysis. A detailed description of microscopic features (cuticle, cortex, medullary indices, pigment distribution), slide preparation and the comparison protocol, and the number of reference hairs are not given here — there is no verified source read for them yet, source under verification; use your laboratory's validated procedure. ABO grouping of hair is not recommended in this card (the reason is in 'Limitations').\n\nStatus: this card has not passed expert review (NEEDS_REVIEW) — authorised expert (reviewer) approval is required before relying on it in casework. The ru and en texts are machine drafts. National legal requirements are not given here; they sit in a separate legal layer."
+      },
+      "citations": []
+    },
+    {
+      "key": "methods",
+      "title": {
+        "uz": "Mikroskopik tekshiruv va uning DNK bilan uyg‘unligi",
+        "ru": "Микроскопическое исследование и его сочетание с ДНК",
+        "en": "Microscopic examination and its combination with DNA"
+      },
+      "body": {
+        "uz": "Mikroskopik taqqoslash tajribali ekspertga tayanadi: sochning mikroskopik taqqoslash natijalarining ishonchliligi ekspertning tayyorgarligiga kuchli bog‘liq [rowe2001], ekspertning o‘qitilishi va malakasi soch ekspertizasi sifati uchun hal qiluvchi hisoblanadi [houck2005].\n\nFBI laboratoriyasining 1996–2000 yillardagi 170 ta soch ekspertizasida mikroskopik taqqoslash 80 ta holatda «mos» natija bergan; shulardan atigi 9 tasi mtDNA bilan istisno qilingan. Mikroskopik taqqoslashga yaroqsiz yoki noaniq deb topilgan 66 ta soch mtDNA natijasini bergan: faqat 6 tasida mtDNA yetarli bo‘lmagan, 3 tasida noaniq natija chiqqan. Bu ikki usul bir-birini to‘ldirishini, ikkalasi ham alohida qo‘llanishi mumkin bo‘lsa-da, birga ishlatilganda qo‘shimcha ma’lumot berishini ko‘rsatadi [houck2002].",
+        "ru": "Микроскопическое сравнение опирается на опытного эксперта: надёжность результатов микроскопического сравнения волос сильно зависит от подготовки эксперта [rowe2001], а обучение и квалификация эксперта — решающее условие качества экспертизы волос [houck2005].\n\nИз 170 экспертиз волос в лаборатории ФБР в 1996–2000 годах микроскопическое сравнение дало «совпадение» в 80 случаях; из них лишь 9 были исключены мтДНК. Из волос, признанных непригодными или неопределёнными для микроскопического сравнения, 66 дали результат мтДНК: лишь у 6 мтДНК оказалось недостаточно и у 3 результат был неопределённым. Это показывает, что методы дополняют друг друга: каждый можно применять отдельно, но вместе они дают дополнительную информацию [houck2002].",
+        "en": "Microscopic comparison relies on an experienced examiner: the reliability of microscopic hair comparison is strongly affected by the examiner's training [rowe2001], and training and qualification of examiners are crucial to the quality of hair examination [houck2005].\n\nOf 170 hair examinations in the FBI Laboratory in 1996-2000, microscopic comparison gave an 'association' in 80 cases; only 9 of them were excluded by mtDNA. Of the hairs judged unsuitable or inconclusive for microscopic comparison, 66 gave an mtDNA result: only 6 had insufficient mtDNA and 3 gave an inconclusive result. This shows that the methods complement each other: each can be used separately, but together they give additional information [houck2002]."
+      },
+      "citations": [
+        "rowe2001",
+        "houck2005",
+        "houck2002"
+      ]
+    },
+    {
+      "key": "interpretation",
+      "title": {
+        "uz": "Talqin",
+        "ru": "Интерпретация",
+        "en": "Interpretation"
+      },
+      "body": {
+        "uz": "Mikroskopik taqqoslash natijasi sochning namunaviy sochlarga «mos» yoki «mos emas» ekanini bildiradi; «mos» natija sochni muayyan shaxsga bog‘lamaydi, faqat bir manbadan bo‘lish ehtimolini istisno qilmaydi. Shuning uchun xulosa «... namunaviy sochlardan kelib chiqishi mumkin; kelib chiqishi istisno etilmaydi» tarzida yoziladi, «aynan shu shaxsniki» deb emas (soch mikroskopiyasining individuallashtira olmasligi tufayli; [rowe2001] DNK yordamida keyin oqlangan sudlanganlar haqida xabar beradi).\n\nSoch mikroskopiyasi va mtDNA birga qo‘llanganda ma’lumot ko‘proq bo‘ladi [houck2002, koch2021]. mtDNA ona chizig‘i bo‘yicha irsiylanadi va shaxsni emas, ona qarindoshlar guruhini ajratadi (umumiy ma’lumot; bu bandga alohida manba keltirilmagan) — shu sababli mtDNA ham individuallashtiruvchi emas. Yadro DNK uchun ildiz holati muhim: ildiz o‘sish bosqichlari terminologiyasi [koch2020] da keltirilgan.",
+        "ru": "Результат микроскопического сравнения означает, что волос «совпадает» или «не совпадает» с образцами; «совпадение» не связывает волос с конкретным лицом, а лишь не исключает происхождение из одного источника. Поэтому вывод формулируют как «... может происходить от образцов; происхождение не исключается», а не «принадлежит именно этому лицу» (из-за неиндивидуализирующей природы микроскопии волос; [rowe2001] сообщает об осуждённых, позднее оправданных с помощью ДНК).\n\nПри совместном применении микроскопии волос и мтДНК информации больше [houck2002, koch2021]. мтДНК наследуется по материнской линии и различает группы материнских родственников, а не отдельных лиц (общие сведения; отдельный источник не приводится) — поэтому мтДНК тоже не индивидуализирует. Для ядерной ДНК важно состояние корня: терминология стадий роста корня дана в [koch2020].",
+        "en": "A microscopic comparison result says that a hair 'matches' or 'does not match' the reference hairs; a 'match' does not link the hair to a particular person, it only does not exclude origin from the same source. The conclusion is therefore written as '... may originate from the reference hairs; origin is not excluded', not 'belongs to this very person' (because hair microscopy is not individualising; [rowe2001] reports convicted persons later exonerated by DNA).\n\nWhen hair microscopy and mtDNA are used together there is more information [houck2002, koch2021]. mtDNA is inherited maternally and distinguishes groups of maternal relatives, not individuals (general knowledge; no separate source is cited) — so mtDNA does not individualise either. For nuclear DNA the condition of the root matters: terminology for root growth stages is given in [koch2020]."
+      },
+      "citations": [
+        "rowe2001",
+        "houck2002",
+        "koch2021",
+        "koch2020"
+      ]
+    },
+    {
+      "key": "limitations",
+      "title": {
+        "uz": "Cheklovlar",
+        "ru": "Ограничения",
+        "en": "Limitations"
+      },
+      "body": {
+        "uz": "• Mikroskopik taqqoslash bo‘yicha laboratoriyalararo tadqiqotda tajribali ekspertlar juft taqqoslashlarning 85% ida to‘g‘ri xulosa (kiritish/istisno qilish) bergan; qisqa sochlarda aniqlik pastroq bo‘lgan; ekspertga notanish populyatsiyalar sochlari ularning xulosasiga ta’sir qilgan bo‘lishi mumkin; nasabni (ancestry) aniqlashning ishonchliligi hali aniq emas [koch2021].\n• Tarixiy kontekst: mikroskopik soch taqqoslashi asr davomida sudlarda qabul qilingan, lekin DNK testlari asosida sudlanganlarning keyinchalik oqlangan holatlari va Daubert tinglovi uning ilmiy asosliligiga savol tug‘dirgan; shunga qaramay, to‘g‘ri bajarilgan mikroskopik taqqoslash ilmiy asoslangan xulosalar bera olishi qayd etilgan [rowe2001].\n• Hayvon sochi: morfologik aniqlashda cheklovlar va noto‘g‘ri tasavvurlar mavjud [tridico2014].\n• Sochda ABO guruhini absorbsiya–elyusiya bilan aniqlash: sochda barcha tekshirilgan monoklonal reagentlar kuchsiz yoki nospetsifik agglyutinatsiya bergan va to‘g‘ri guruhlash amalga oshmagan; faqat Bioclone reagentlari AB zardobi yoki qo‘y zardobi bilan erituvchini almashtirgandan keyin guruhlay olgan [kobayashi1999] — usul ishonchsiz.",
+        "ru": "• В межлабораторном исследовании микроскопического сравнения опытные эксперты давали правильный вывод (включение/исключение) в 85 % парных сравнений; на коротких волосах точность была ниже; волосы незнакомых экспертам популяций могли повлиять на их выводы; надёжность определения происхождения по расе (ancestry) пока неясна [koch2021].\n• Исторический контекст: микроскопическое сравнение волос около века принималось судами, но случаи последующего оправдания осуждённых по результатам ДНК и слушание Дауберта поставили под вопрос его научную обоснованность; тем не менее отмечено, что правильно выполненное микроскопическое сравнение может давать научно обоснованные выводы [rowe2001].\n• Волосы животных: у морфологического определения есть ограничения и заблуждения [tridico2014].\n• Определение группы ABO по волосам абсорбцией–элюцией: на волосах все проверенные моноклональные реагенты давали слабую или неспецифическую агглютинацию и верное группирование не удавалось; лишь реагенты Bioclone смогли сгруппировать после замены растворителя на сыворотку AB или овцы [kobayashi1999] — метод ненадёжен.",
+        "en": "• In an interlaboratory study of microscopic comparison, experienced examiners reached the correct conclusion (inclusion/exclusion) in 85% of pairwise comparisons; accuracy was lower on shorter hairs, and hairs from populations unfamiliar to the examiners may have affected their conclusions; the reliability of ancestry determination is not yet clear [koch2021].\n• Historical context: microscopic hair comparison was accepted by courts for about a century, but later exonerations of convicted persons by DNA and a Daubert hearing questioned its scientific validity; it is nevertheless noted that properly performed microscopic comparison can yield scientifically defensible conclusions [rowe2001].\n• Animal hairs: morphological identification has limitations and misconceptions [tridico2014].\n• ABO grouping of hair by absorption-elution: on hair all tested monoclonal reagents gave weak or non-specific agglutination and correct grouping was not achieved; only Bioclone reagents could group it after the solvent was replaced with AB or sheep serum [kobayashi1999] — the method is unreliable."
+      },
+      "citations": [
+        "koch2021",
+        "rowe2001",
+        "tridico2014",
+        "kobayashi1999"
+      ]
+    },
+    {
+      "key": "cautions",
+      "title": {
+        "uz": "Ehtiyot choralari",
+        "ru": "Меры предосторожности",
+        "en": "Precautions"
+      },
+      "body": {
+        "uz": "Soch iplari juda kichik va ko‘chiruvchan: ularni alohida, toza qadoqlarda saqlang va o‘zaro ifloslanishdan himoyalang [nistir7928] (15-b.). Mikroskopik tekshiruvdan keyin DNK tahlili uchun sochni (ayniqsa ildizini) saqlash maqsadga muvofiq — buzilmaydigan tekshiruvlar oldin o‘tkaziladi (umumiy tamoyil; bu bandga alohida manba keltirilmagan). Ekspert malakasi natija sifati uchun hal qiluvchi [rowe2001, houck2005]; ikkinchi ekspert tomonidan mustaqil tekshirish umumiy sifat nazorati amaliyoti bo‘lib, bu kartada manba bilan tasdiqlanmagan — manba tekshirilmoqda.",
+        "ru": "Волосы мелкие и легко переносятся: храните их в отдельных чистых упаковках и защищайте от перекрёстного загрязнения [nistir7928] (с. 15). После микроскопического исследования целесообразно сохранять волос (особенно корень) для ДНК-анализа — неразрушающие исследования проводят первыми (общий принцип; отдельный источник не приводится). Квалификация эксперта решающе влияет на качество результата [rowe2001, houck2005]; независимая проверка вторым экспертом — общая практика контроля качества, в карточке источником не подтверждена — источник уточняется.",
+        "en": "Hairs are small and easily transferred: keep them in separate clean packages and protect them from cross-contamination [nistir7928] (p. 15). After microscopic examination it is sensible to keep the hair (especially the root) for DNA analysis — non-destructive examinations are done first (a general principle; no separate source is cited). Examiner qualification is crucial to result quality [rowe2001, houck2005]; independent verification by a second examiner is a general quality-control practice that is not supported by a source in this card — source under verification."
+      },
+      "citations": [
+        "nistir7928",
+        "rowe2001",
+        "houck2005"
+      ]
+    }
+  ],
+  "keywords": {
+    "uz": [
+      "soch",
+      "soch morfologiyasi",
+      "taqqosiy mikroskopiya",
+      "soch taqqoslash",
+      "kutikula",
+      "medulla",
+      "korteks",
+      "mtDNA",
+      "hayvon sochi",
+      "soch ildizi",
+      "tananing sohasi",
+      "ABO soch",
+      "sud biologiyasi"
+    ],
+    "ru": [
+      "волосы",
+      "морфология волос",
+      "сравнительная микроскопия",
+      "сравнение волос",
+      "кутикула",
+      "медулла",
+      "корковое вещество",
+      "мтДНК",
+      "волосы животных",
+      "корень волоса",
+      "область тела",
+      "ABO волосы",
+      "судебная биология"
+    ],
+    "en": [
+      "hair",
+      "hair morphology",
+      "comparison microscopy",
+      "hair comparison",
+      "cuticle",
+      "medulla",
+      "cortex",
+      "mtDNA",
+      "animal hair",
+      "hair root",
+      "body area",
+      "ABO hair",
+      "forensic biology"
+    ]
+  },
+  "omitted_unverified": [
+    "Detailed morphological feature descriptions (cuticle scale patterns, medullary index, pigment), slide preparation, comparison protocol and the number of reference hairs: no verified source read for these; not given.",
+    "Ancestry/race prediction from hair: only the existence of unresolved reliability is stated (koch2021); no category descriptions.",
+    "Exact error rates of hair comparison: only the 85% pairwise accuracy of koch2021 and the FBI series of houck2002 are quoted, each with its own design.",
+    "mtDNA inheritance statement is general knowledge, not cited.",
+    "Daubert hearing and exoneration statements come only from the rowe2001 abstract; no legal commentary is made."
+  ]
+}

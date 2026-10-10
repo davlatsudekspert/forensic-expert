@@ -452,4 +452,51 @@ void main() {
       }
     });
   });
+  group('Sud biologiyasi va serologiyasi kartalari (2026-10-10)', () {
+    const ids = [
+      'guideline.bio.blood_presumptive',
+      'guideline.bio.blood_species',
+      'guideline.bio.abo_stains',
+      'guideline.bio.semen',
+      'guideline.bio.saliva',
+      'guideline.bio.urine_sweat_feces',
+      'guideline.bio.hair',
+      'guideline.bio.evidence_handling',
+    ];
+    final cards = [for (final id in ids) bundle.byId(id)];
+
+    test('sakkizta karta bor, biologiya bo‘limida, NEEDS_REVIEW, ru/en qoralama', () {
+      for (final (i, c) in cards.indexed) {
+        expect(c, isNotNull, reason: ids[i]);
+        expect(c!.area, GuidelineArea.forensicBiology, reason: c.id);
+        expect(c.status, ScientificStatus.needsReview, reason: c.id);
+        expect(c.translationFor('uz'), GuidelineTranslationStatus.authored);
+        expect(c.translationFor('ru'), GuidelineTranslationStatus.draft);
+        expect(c.translationFor('en'), GuidelineTranslationStatus.draft);
+      }
+    });
+
+    test('har bir kartada tasdiqlanmagan qismlar ochiq aytilgan va ichki maydon yo‘q', () {
+      for (final c in cards.nonNulls) {
+        final scope = c.sections.firstWhere((s) => s.key == 'scope');
+        for (final lang in ['uz', 'ru', 'en']) {
+          final t = scope.body.of(lang);
+          expect(t, contains('NEEDS_REVIEW'), reason: '${c.id}/$lang');
+        }
+      }
+      final blob = raw;
+      expect(blob.contains('omitted_unverified'), isFalse);
+    });
+
+    test('benzidin xavfi manbali aytilgan va muqobillar nomlangan', () {
+      final c = bundle.byId('guideline.bio.blood_presumptive')!;
+      final cautions = c.sections.firstWhere((s) => s.key == 'cautions');
+      expect(cautions.citations, contains('chappell2016'));
+      for (final lang in ['uz', 'ru', 'en']) {
+        final t = cautions.body.of(lang);
+        expect(t.toLowerCase(), matches(RegExp(r'[\s\S]*(benzidin|бензидин)[\s\S]*')), reason: lang);
+        expect(t, contains('HemaTrace'), reason: lang);
+      }
+    });
+  });
 }

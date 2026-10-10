@@ -1,0 +1,185 @@
+{
+  "id": "guideline.bio.evidence_handling",
+  "discipline_codes": [
+    "evidence_handling",
+    "forensic_biology",
+    "medical_criminalistics"
+  ],
+  "status": "NEEDS_REVIEW",
+  "updated": "2026-10-10",
+  "translation_status": {
+    "uz": "AUTHORED",
+    "ru": "DRAFT",
+    "en": "DRAFT"
+  },
+  "related_tool_ids": [],
+  "term_ids": [
+    "T-TOKS-PHYSICAL-EVIDENCE"
+  ],
+  "title": {
+    "uz": "Biologik ashyoviy dalillarni qabul qilish, qadoqlash, saqlash va nazorat zanjiri: umumiy yaxshi amaliyot",
+    "ru": "Приём, упаковка, хранение биологических вещественных доказательств и цепь сохранности: общая надлежащая практика",
+    "en": "Receiving, packaging, storing biological evidence and chain of custody: general good practice"
+  },
+  "summary": {
+    "uz": "Karta biologik dalillarni qabul qilish, qadoqlash, saqlash va nazorat zanjirini yuritishning umumiy xalqaro amaliyotini bayon etadi: quritish, g‘ovak qadoq, harorat toifalari, yorliq va muhr, topshirish yozuvlari. Bu milliy me’yoriy matn emas; O‘zbekiston talablari alohida huquqiy qatlamda.",
+    "ru": "Карточка описывает общую международную практику приёма, упаковки, хранения биологических доказательств и ведения цепи сохранности: сушка, пористая упаковка, температурные категории, маркировка и пломбы, записи передач. Это не национальный нормативный текст; требования Узбекистана — в отдельном правовом слое.",
+    "en": "The card describes general international practice for receiving, packaging, storing biological evidence and maintaining chain of custody: drying, porous packaging, temperature categories, labels and seals, transfer records. It is not a national normative text; Uzbek requirements are in a separate legal layer."
+  },
+  "sections": [
+    {
+      "key": "basis",
+      "title": {
+        "uz": "Ilmiy asos",
+        "ru": "Научная основа",
+        "en": "Scientific basis"
+      },
+      "body": {
+        "uz": "Biologik dalil (qon, sperma, so‘lak, soch va ularning dog‘lari) noto‘g‘ri qadoqlansa va saqlansa, uning tarkibidagi DNK va oqsillar buziladi, tahlil natijasi ishonchsiz yoki mumkin bo‘lmay qoladi. Eng muhim omil — namlik: ho‘l biologik material to‘g‘ri quritilmasa, bakteriya o‘sishi bilan buzilish ehtimoli yuqori va DNK natijasi olinmay qolishi mumkin; DNK odatda quritilgan, suvsiz muhitda eng yaxshi saqlanadi [nistir7928] (10–11-b.). Hodisa joyidagi qon, sperma, so‘lak va teginish DNKsi bo‘yicha 57 ta tadqiqotning sharhida ham tez havoda quritish, sovuq saqlash, ifloslanishga qarshi tadbirlar (shaxsiy himoya vositalari, taqqoslash bazalari, manfiy nazorat) muhim deb ko‘rsatilgan [balbudhe2026]. Resurslari cheklangan sharoitlarda an’anaviy yig‘ish usullari, qadoqlashdan oldin yetarlicha quritilmaslik va harorati nazorat qilinmaydigan saqlash xonalari past sifatli namunalarga olib kelishi qayd etilgan [sahayaselvan2026].\n\nNazorat zanjiri hujjati dalil yig‘ilganidan yo‘q qilinishigacha uning harakatini, joylashuvini va holatini xronologik tarzda qayd etadi; zanjirning uzilishi dalilning ishonchliligini shubha ostiga qo‘yishi mumkin [nistir7928] (24-b.).",
+        "ru": "Если биологические доказательства (кровь, сперма, слюна, волосы и их следы) неправильно упакованы и хранятся, содержащиеся в них ДНК и белки разрушаются, и результат анализа становится ненадёжным или невозможным. Важнейший фактор — влага: если влажный биологический материал не высушен правильно, велика вероятность разрушения из-за роста бактерий, и результат ДНК-анализа может быть не получен; ДНК обычно лучше всего сохраняется в высушенной среде без воды [nistir7928] (с. 10–11). В обзоре 57 исследований по крови, сперме, слюне и контактной ДНК на месте происшествия также подчёркнуты быстрая сушка на воздухе, холодное хранение и меры против загрязнения (средства индивидуальной защиты, базы исключения, отрицательные контроли) [balbudhe2026]. В условиях ограниченных ресурсов отмечено, что традиционные способы сбора, недостаточная сушка перед упаковкой и помещения хранения без контроля температуры приводят к образцам низкого качества [sahayaselvan2026].\n\nДокумент цепи сохранности хронологически фиксирует перемещение, местонахождение и состояние доказательства от сбора до уничтожения; разрыв цепи может поставить под сомнение достоверность доказательства [nistir7928] (с. 24).",
+        "en": "If biological evidence (blood, semen, saliva, hair and their stains) is packaged and stored incorrectly, the DNA and proteins in it degrade, and the analytical result becomes unreliable or impossible. The most important factor is moisture: if wet biological material is not dried correctly, there is a high probability of destruction by bacterial growth and a DNA result may not be obtained; DNA is generally best preserved in an air-dried, water-free environment [nistir7928] (pp. 10-11). A review of 57 studies on blood, semen, saliva and touch DNA at scenes likewise stresses rapid air drying, cold storage and anti-contamination measures (personal protective equipment, elimination databases, negative controls) [balbudhe2026]. In resource-limited settings, traditional collection methods, inadequate drying before packaging and evidence rooms without temperature control have been noted to lead to poor-quality samples [sahayaselvan2026].\n\nThe chain-of-custody record documents, in chronological order, the movement, location and custodial status of evidence from collection to disposition; a break in the chain may cast doubt on the reliability of the evidence [nistir7928] (p. 24)."
+      },
+      "citations": [
+        "nistir7928",
+        "balbudhe2026",
+        "sahayaselvan2026"
+      ]
+    },
+    {
+      "key": "scope",
+      "title": {
+        "uz": "Qamrov va holat",
+        "ru": "Область и статус",
+        "en": "Scope and status"
+      },
+      "body": {
+        "uz": "Karta biologik ashyoviy dalillarni qabul qilish, qadoqlash, saqlash va nazorat zanjirini yuritishning umumiy yaxshi amaliyotini xalqaro tavsiyalar asosida bayon etadi (asosiy manba: AQSh Standartlar va texnologiya instituti qo‘llanmasi NISTIR 7928, 2013). Bu milliy me’yoriy hujjat emas va uni almashtirmaydi: O‘zbekistondagi huquqiy talablar, qabul qilish aktlari va yo‘llanma hujjatlari shakli alohida huquqiy qatlamda; laboratoriya o‘z tasdiqlangan ish tartibiga amal qiladi.\n\nTuproq va sochiluvchan moddalar ichidagi (qon yoki ajratmaga shubha qilingan) ob’ektlar va qirindilarni tekshiruvga tayyorlash, predmet tashuvchi ta’sirida absorbsiya–elyusiya reaksiyasini o‘tkazish sxemasi kabi aniq laboratoriya amaliyotlari bu kartada berilmagan — tekshirilgan ochiq manba topilmadi, manba tekshirilmoqda.\n\nHolat: bu karta ekspert (reviewer) tekshiruvidan o‘tmagan (NEEDS_REVIEW) — undan ish uchun tayanishdan oldin vakolatli ekspert tasdig‘i kerak. Ru va en matnlar — avtomatik qoralama. Milliy huquqiy talablar bu kartada berilmagan; ular alohida huquqiy qatlamda.",
+        "ru": "Карточка описывает общую надлежащую практику приёма, упаковки, хранения биологических вещественных доказательств и ведения цепи сохранности на основе международных рекомендаций (основной источник — руководство Национального института стандартов и технологий США NISTIR 7928, 2013). Это не национальный нормативный документ и он его не заменяет: правовые требования Узбекистана, акты приёма и форма сопроводительных документов — в отдельном правовом слое; лаборатория следует своей утверждённой методике.\n\nКонкретные лабораторные практики — подготовка к исследованию объектов в почве и сыпучих веществах (при подозрении на кровь или выделения) и стружек, схема реакции абсорбции–элюции под влиянием предмета-носителя — в карточке не приводятся: проверенного открытого источника не найдено, источник уточняется.\n\nСтатус: карточка не прошла экспертную проверку (NEEDS_REVIEW) — перед использованием в работе нужно подтверждение уполномоченного эксперта. Тексты ru и en — автоматический черновик. Национальные правовые требования в карточке не приводятся; они даны в отдельном правовом слое.",
+        "en": "The card describes general good practice for receiving, packaging, storing and maintaining chain of custody of biological exhibits, based on international guidance (main source: the US National Institute of Standards and Technology handbook NISTIR 7928, 2013). It is not a national normative text and does not replace one: Uzbek legal requirements, receipt records and the form of accompanying documents are in a separate legal layer; the laboratory follows its own validated procedure.\n\nSpecific laboratory practices — preparing objects in soil and loose materials (suspected blood or secretions) and shavings for examination, and the scheme of the absorption-elution reaction under the influence of the substrate — are not given here: no verified open source was found, source under verification.\n\nStatus: this card has not passed expert review (NEEDS_REVIEW) — authorised expert (reviewer) approval is required before relying on it in casework. The ru and en texts are machine drafts. National legal requirements are not given here; they sit in a separate legal layer."
+      },
+      "citations": []
+    },
+    {
+      "key": "methods",
+      "title": {
+        "uz": "Qadoqlash va qabul qilish",
+        "ru": "Упаковка и приём",
+        "en": "Packaging and receipt"
+      },
+      "body": {
+        "uz": "• G‘ovak materiallar: biologik dalil uchun qog‘oz xaltalar, qog‘oz konvertlar, karton qutilar kabi g‘ovak qadoqlar ishlatiladi; har bir buyum alohida qadoqlanadi va o‘zaro aralashtirilmaydi; qadoq yopiladi va ochilish izi qoladigan tarzda muhrlanadi; biologik xavf belgisi qo‘yiladi [nistir7928] (15-b.).\n• Polietilen paketlar saqlash uchun tavsiya etilmaydi (bakteriya va mog‘or o‘sishi); ho‘l buyum vaqtincha suv o‘tkazmaydigan, g‘ovaksiz idishga (metall banka, shisha idish) solinib, 2–8 °C da yorug‘likdan uzoqda sovutgichda saqlanadi, quritish imkoni bo‘lgunga qadar [nistir7928] (9-b., 15-b.). Istisno — desikanti bor paketlar yoki nam buyumlar va surtmalar uchun nafas oladigan paketlar [nistir7928] (9-b.).\n• Yorliq: hech bo‘lmaganda noyob identifikator, yig‘uvchining shaxsi va yig‘ilgan sana yoziladi; identifikator ashyolar ro‘yxatidagi tavsifga mos kelishi kerak [nistir7928] (15-b.). Muhr ustiga muhrlovchining belgisi va sana yoziladi.\n• Qabul qilish: har bir shaxs paket holatini (muhrlangan/muhrsiz, shikastlangan), tarkibdagi har qanday o‘zgarishni va barcha topshirishlarning holatini tasdiqlay olishi kerak [nistir7928] (24-b.). Paket muhrsiz qabul qilingan holatlar uchun alohida tartib bo‘lishi kerak; ochilgan dalil qayta muhrlanadi [nistir7928] (32-b.). Yo‘llanma hujjatlardagi tavsifning paketga mosligi tekshiriladi va farqlar qayd etiladi (umumiy ehtiyotkorlik; bu band uchun alohida manba keltirilmagan).",
+        "ru": "• Пористые материалы: для биологических доказательств используют пористые упаковки — бумажные пакеты, бумажные конверты, картонные коробки; каждый предмет упаковывают отдельно, не смешивая; упаковку закрывают и опечатывают так, чтобы при вскрытии оставались следы; ставят знак биологической опасности [nistir7928] (с. 15).\n• Полиэтиленовые пакеты для хранения не рекомендуются (рост бактерий и плесени); влажный предмет временно помещают в непроницаемую непористую ёмкость (металлическая банка, стеклянная посуда) и хранят в холодильнике при 2–8 °C вдали от света до возможности высушить [nistir7928] (с. 9, 15). Исключения — пакеты с осушителем или «дышащие» пакеты для влажных предметов и мазков [nistir7928] (с. 9).\n• Маркировка: как минимум уникальный идентификатор, кто собрал и дата сбора; идентификатор должен соответствовать описанию в перечне вещественных доказательств [nistir7928] (с. 15). На пломбе ставят отметку опечатавшего и дату.\n• Приём: каждый участник должен мочь подтвердить состояние упаковки (опечатана/нет, повреждена), любые изменения содержимого и состояние всех передач [nistir7928] (с. 24). Должен быть порядок на случай, когда упаковка поступила не опечатанной; вскрытое доказательство опечатывают повторно [nistir7928] (с. 32). Соответствие описания в сопроводительных документах упаковке проверяют, расхождения фиксируют (общая осторожность; отдельный источник для этого пункта не приводится).",
+        "en": "• Porous materials: porous packaging — paper bags, paper envelopes, cardboard boxes — is used for biological evidence; each item is packaged separately without mixing; the package is closed and sealed so that opening leaves visible damage; a biohazard label is applied [nistir7928] (p. 15).\n• Plastic bags are not recommended for storage (bacterial and mould growth); a wet item is temporarily placed in an impermeable, non-porous container (metal can, glass jar) and kept in a refrigerator at 2-8 °C away from light until it can be dried [nistir7928] (pp. 9, 15). Exceptions are bags with a desiccant or breathable bags for damp items and swabs [nistir7928] (p. 9).\n• Labelling: at a minimum a unique identifier, who collected the item and the collection date; the identifier should match the description on the evidence list [nistir7928] (p. 15). The sealer's mark and date are written across the seal.\n• Receipt: each person must be able to attest to the condition of the package (sealed or not, damaged), any change to the contents and the condition of every transfer [nistir7928] (p. 24). There should be a procedure for packages received unsealed; evidence that has been opened is resealed [nistir7928] (p. 32). The description in the accompanying documents is checked against the package and discrepancies are recorded (general caution; no separate source is cited for this item)."
+      },
+      "citations": [
+        "nistir7928"
+      ]
+    },
+    {
+      "key": "factors",
+      "title": {
+        "uz": "Saqlash sharoitlari",
+        "ru": "Условия хранения",
+        "en": "Storage conditions"
+      },
+      "body": {
+        "uz": "Qo‘llanmada saqlash toifalari: muzlatilgan (−10 °C yoki past), sovutilgan (2–8 °C), haroratni nazorat qiladigan (15,5–24 °C) va xona harorati [nistir7928] (16-b.). Vaqtincha saqlash — 72 soat va undan kam, uzoq muddatli — 72 soatdan ortiq [nistir7928] (16-b.).\n\nUzoq muddatli saqlash jadvali bo‘yicha: suyuq qon — sovutilgan (muzlatish hech qachon), siydik va najas — muzlatilgan, quruq bo‘yalgan buyumlar, quritilgan surtmalar, soch — haroratni nazorat qiladigan muhit eng yaxshi (soch uchun xona harorati ham maqbul) [nistir7928] (18-b.). Qisqa muddatli saqlash jadvalida suyuq qon sovutilgan holda eng yaxshi, siydik 24 soatgacha sovutilgan, quruq bo‘yalgan buyumlar haroratni nazorat qiladigan muhitda eng yaxshi [nistir7928] (17-b.). Qon solingan shisha probirka hech qachon muzlatilmaydi (portlashi yoki yorilishi mumkin) [nistir7928] (12-b.).\n\nEslatma: o‘z laboratoriyangizning siyosati bu jadvallardan ustun bo‘ladi; qo‘llanma ularni o‘zi ham shunday ta’riflaydi [nistir7928] (16-b.). Saqlash joyida namlik, haddan tashqari issiqlik va quyosh nuridan himoya zarur [nistir7928] (15–16-b.).",
+        "ru": "В руководстве категории хранения: замороженное (−10 °C и ниже), охлаждённое (2–8 °C), с контролем температуры (15,5–24 °C) и комнатная температура [nistir7928] (с. 16). Временное хранение — 72 часа и менее, длительное — более 72 часов [nistir7928] (с. 16).\n\nПо таблице длительного хранения: жидкая кровь — охлаждённая (замораживание никогда), моча и кал — замороженные, сухие окрашенные предметы, высушенные мазки, волосы — наилучшая среда с контролем температуры (для волос приемлема и комнатная температура) [nistir7928] (с. 18). В таблице кратковременного хранения жидкая кровь лучше всего охлаждённой, моча охлаждённой до 24 часов, сухие окрашенные предметы лучше всего в среде с контролем температуры [nistir7928] (с. 17). Стеклянную пробирку с кровью никогда не замораживают (может разорваться или треснуть) [nistir7928] (с. 12).\n\nОговорка: политика вашей лаборатории выше этих таблиц; так их и определяет само руководство [nistir7928] (с. 16). В месте хранения необходима защита от влаги, чрезмерного тепла и солнечного света [nistir7928] (с. 15–16).",
+        "en": "The handbook's storage categories are: frozen (−10 °C or below), refrigerated (2-8 °C), temperature controlled (15.5-24 °C) and room temperature [nistir7928] (p. 16). Temporary storage means 72 hours or less, long-term storage more than 72 hours [nistir7928] (p. 16).\n\nIn the long-term storage matrix: liquid blood — refrigerated (never frozen), urine and faeces — frozen, dry stained items, dried swabs and hair — temperature-controlled is best (room temperature is acceptable for hair) [nistir7928] (p. 18). In the short-term matrix liquid blood is best refrigerated, urine refrigerated for up to 24 hours, and dry stained items best in a temperature-controlled environment [nistir7928] (p. 17). A glass vial of blood is never frozen (it may burst or crack) [nistir7928] (p. 12).\n\nCaveat: your own laboratory's policy takes precedence over these tables, as the handbook itself states [nistir7928] (p. 16). The storage area must protect against moisture, excessive heat and sunlight [nistir7928] (pp. 15-16)."
+      },
+      "citations": [
+        "nistir7928"
+      ]
+    },
+    {
+      "key": "interpretation",
+      "title": {
+        "uz": "Nazorat zanjiri hujjatlari",
+        "ru": "Документы цепи сохранности",
+        "en": "Chain-of-custody records"
+      },
+      "body": {
+        "uz": "Nazorat zanjiri hujjatida kamida quyidagilar bo‘lishi kerak: dalilni yig‘gan shaxsning, hodisa joyida va tashish davomida egalik qilgan shaxslarning, topshirgan shaxsning, qabul qilgan saqlovchining, keyin dalil berilgan va qaytargan shaxslarning sana/vaqt/shaxsi; buyumning tavsifi va noyob raqami; saqlash joyi (javon yoki quti raqami) va uni joylagan shaxs [nistir7928] (25-b.). Har bir buyumda nazorat zanjiri bo‘lishi shart; tahlil davomida olingan hosilalar (masalan, DNK ekstraktlari) uchun ham xuddi shunday zanjir yuritiladi [nistir7928] (24–25-b.).\n\nDalil bir tashkilotdan boshqasiga o‘tkazilganda — qo‘lda olib borish yoki ichki batafsil nazorat zanjiri va yetkazilishi tasdiqlanadigan tashuvchi orqali; qadoq muhrlangan bo‘lishi kerak [nistir7928] (32-b.).\n\nYo‘llanma va ilova hujjatlarini saqlash (ashyoviy dalillar bilan birga yuritiladigan hujjatlar) uchun alohida xalqaro manba o‘qilmadi — milliy tartib huquqiy qatlamda; manba tekshirilmoqda.",
+        "ru": "Документ цепи сохранности должен содержать как минимум: дату/время/личность собравшего доказательство, лиц, владевших им на месте и при перевозке, передавшего, принявшего хранителя, а также лиц, которым доказательство выдавали и которые его возвращали; описание и уникальный номер предмета; место хранения (номер полки или контейнера) и лицо, разместившее его [nistir7928] (с. 25). Каждый предмет должен иметь цепь сохранности; производные материалы, полученные при анализе (например, экстракты ДНК), ведутся в такой же цепи [nistir7928] (с. 24–25).\n\nПри передаче доказательства от одной организации другой — вручную или через перевозчика с внутренней подробной цепью сохранности и подтверждённой доставкой; упаковка должна быть опечатана [nistir7928] (с. 32).\n\nХранение сопроводительных документов (документов, сопровождающих вещественные доказательства): отдельный международный источник не читался — национальный порядок в правовом слое; источник уточняется.",
+        "en": "A chain-of-custody record should contain at least: the date/time/identity of the person who collected the evidence, of anyone holding it at the scene and in transport, of the person who submitted it, of the custodian who accepted it, and of anyone to whom it was released and who returned it; the description and unique number of the item; and the storage location (shelf or bin) and the person who placed it there [nistir7928] (p. 25). Every item must have a chain of custody; derived material produced during analysis (for example DNA extracts) is kept in the same chain [nistir7928] (pp. 24-25).\n\nWhen evidence is transferred from one entity to another, it is hand-carried or sent by a carrier that maintains a detailed internal chain of custody with confirmed delivery; the package must be sealed [nistir7928] (p. 32).\n\nStoring the accompanying documents (documents that travel with the exhibits): no separate international source was read — the national procedure is in the legal layer; source under verification."
+      },
+      "citations": [
+        "nistir7928"
+      ]
+    },
+    {
+      "key": "cautions",
+      "title": {
+        "uz": "Xavfsizlik va ifloslanishning oldini olish",
+        "ru": "Безопасность и предотвращение загрязнения",
+        "en": "Safety and contamination control"
+      },
+      "body": {
+        "uz": "Quruq qon yoki boshqa quruq potensial yuqumli material ham xavfsiz deb hisoblanmaydi — shaxsiy himoya vositalarini qo‘llang va ishdan chiqishdan oldin ularni olib tashlang [nistir7928] (5-b.). Suyuqlik to‘kilganda joy qog‘oz sochiqlar bilan yopilib, dezinfeksiya eritmasi (10% belilash eritmasi, bleach) bilan namlanadi, kamida 10 daqiqa ushlanadi va biologik xavfli chiqindi paketiga solinadi [nistir7928] (6-b.). Biologik xavfli dalil qadoqlari, javonlar va xonalar belgi bilan belgilanadi [nistir7928] (6-b.).\n\nIfloslanishga qarshi: har bir buyumni alohida qadoqlash [nistir7928] (15-b.), shaxsiy himoya vositalari, taqqoslash (elimination) bazalari va manfiy nazorat [balbudhe2026].",
+        "ru": "Даже сухая кровь или иной сухой потенциально инфекционный материал не считаются безопасными — используйте средства индивидуальной защиты и снимайте их перед выходом из рабочей зоны [nistir7928] (с. 5). При проливе жидкости место накрывают бумажными полотенцами, заливают дезинфицирующим раствором (10 % раствор отбеливателя, bleach), выдерживают не менее 10 минут и помещают в пакет для биологически опасных отходов [nistir7928] (с. 6). Упаковки с биологически опасными доказательствами, полки и помещения маркируют соответствующим знаком [nistir7928] (с. 6).\n\nПротив загрязнения: упаковывать каждый предмет отдельно [nistir7928] (с. 15), средства индивидуальной защиты, базы исключения и отрицательные контроли [balbudhe2026].",
+        "en": "Even dry blood or other dry potentially infectious material is not assumed safe — use personal protective equipment and remove it before leaving the work area [nistir7928] (p. 5). When liquid is spilled, the area is covered with paper towels, doused with a disinfectant solution (10% bleach solution), left for at least 10 minutes and placed in a biohazard waste bag [nistir7928] (p. 6). Packages, shelves and rooms holding hazardous biological evidence are marked with a biohazard label [nistir7928] (p. 6).\n\nAgainst contamination: package each item separately [nistir7928] (p. 15), use personal protective equipment, elimination databases and negative controls [balbudhe2026]."
+      },
+      "citations": [
+        "nistir7928",
+        "balbudhe2026"
+      ]
+    }
+  ],
+  "keywords": {
+    "uz": [
+      "ashyoviy dalil",
+      "biologik dalil",
+      "qabul qilish",
+      "qadoqlash",
+      "saqlash",
+      "nazorat zanjiri",
+      "chain of custody",
+      "muhrlash",
+      "quritish",
+      "ifloslanish",
+      "yorliq",
+      "NISTIR 7928",
+      "biologik xavf",
+      "sud biologiyasi"
+    ],
+    "ru": [
+      "вещественные доказательства",
+      "биологические доказательства",
+      "приём",
+      "упаковка",
+      "хранение",
+      "цепь сохранности",
+      "chain of custody",
+      "опечатывание",
+      "сушка",
+      "загрязнение",
+      "маркировка",
+      "NISTIR 7928",
+      "биологическая опасность",
+      "судебная биология"
+    ],
+    "en": [
+      "physical evidence",
+      "biological evidence",
+      "receipt",
+      "packaging",
+      "storage",
+      "chain of custody",
+      "sealing",
+      "drying",
+      "contamination",
+      "labelling",
+      "NISTIR 7928",
+      "biohazard",
+      "forensic biology"
+    ]
+  },
+  "omitted_unverified": [
+    "National receipt/transfer acts, forms of accompanying documents and retention periods: deliberately not stated (separate jurisdiction layer).",
+    "Preparing soil / loose-material objects and shavings for examination; substrate-influenced absorption-elution scheme: no verified source read.",
+    "nistir7928 is a US handbook; ENFSI documents on evidence handling could not be retrieved (HTTP 404) and are not cited.",
+    "Retention periods and disposition rules from NISTIR 7928 section V: not included (they reflect US practice).",
+    "sahayaselvan2026 is used for its stated background context only (abstract truncated); its numerical results were not read.",
+    "Storage matrix rows for other items (bones, buccal swabs, DNA extracts): not reproduced."
+  ]
+}

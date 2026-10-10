@@ -1,0 +1,197 @@
+{
+  "id": "guideline.bio.urine_sweat_feces",
+  "discipline_codes": [
+    "forensic_biology",
+    "forensic_serology"
+  ],
+  "status": "NEEDS_REVIEW",
+  "updated": "2026-10-10",
+  "translation_status": {
+    "uz": "AUTHORED",
+    "ru": "DRAFT",
+    "en": "DRAFT"
+  },
+  "related_tool_ids": [],
+  "term_ids": [
+    "T-CONFIRMATORY-ANALYSIS"
+  ],
+  "title": {
+    "uz": "Siydik, ter va najas dog‘larini aniqlash: oqsil markerlari va cheklovlar",
+    "ru": "Обнаружение пятен мочи, пота и кала: белковые маркеры и ограничения",
+    "en": "Identifying urine, sweat and faecal stains: protein markers and limitations"
+  },
+  "summary": {
+    "uz": "Siydik va ter dog‘lari uchun Tamm–Horsfall oqsili va dermtsidin kabi immunologik markerlar o‘rganilgan, ammo ular dastlabki test sifatida baholanadi. Karta amilaza bilan o‘zaro reaksiyalarni, ABO ajratuvchanligi cheklovlarini va tekshirilgan manbasi topilmagan klassik amaliyotlarni ochiq ko‘rsatadi.",
+    "ru": "Для пятен мочи и пота изучены иммунологические маркеры — белок Тамма–Хорсфалла и дермцидин, — но их оценивают как ориентировочные тесты. Карточка открыто показывает перекрёстные реакции с амилазой, ограничения выделительства ABO и классические практики, по которым проверенного источника не найдено.",
+    "en": "Immunological markers such as Tamm-Horsfall protein and dermcidin have been studied for urine and sweat stains, but they are rated as presumptive tests. The card openly shows cross-reactions with amylase, the limits of ABO secretor typing and the classical practices for which no verified source was found."
+  },
+  "sections": [
+    {
+      "key": "basis",
+      "title": {
+        "uz": "Ilmiy asos",
+        "ru": "Научная основа",
+        "en": "Scientific basis"
+      },
+      "body": {
+        "uz": "Siydik, ter va najas dog‘larini aniqlash qon va spermaga qaraganda qiyinroq: ular uchun keng qabul qilingan, oddiy va tasdiqlangan tezkor tasdiqlovchi testlar kam. Oqsil markerlari ustida ishlar mavjud: siydik uchun Tamm–Horsfall oqsili (uromukoid) va ter uchun dermtsidin (dermcidin) — ular immunologik usullar (ELISA, monoklonal antitelolar) bilan aniqlanadi [akutsu2010, tsutsumi1988, sagawa2003, sakurada2010]. Tana suyuqliklarini aniqlash usullarining umumiy sharhi [virkler2009] da keltirilgan.\n\nBu kartada faqat o‘qib chiqilgan manbalarda tasdiqlangan ma’lumotlar keltiriladi; ko‘p klassik amaliyotlar bo‘yicha tekshirilgan ochiq manba topilmadi (quyida «Qamrov» ga qarang).",
+        "ru": "Обнаружение пятен мочи, пота и кала сложнее, чем крови и спермы: для них мало общепринятых, простых и валидированных быстрых подтверждающих тестов. Существуют работы по белковым маркерам: для мочи — белок Тамма–Хорсфалла (уромукоид), для пота — дермцидин (dermcidin); их выявляют иммунологическими методами (ELISA, моноклональные антитела) [akutsu2010, tsutsumi1988, sagawa2003, sakurada2010]. Общий обзор методов идентификации биологических жидкостей приведён в [virkler2009].\n\nВ карточке приведены только сведения, подтверждённые прочитанными источниками; по многим классическим практикам проверенного открытого источника не найдено (см. «Область» ниже).",
+        "en": "Identifying urine, sweat and faecal stains is harder than blood and semen: there are few widely accepted, simple and validated rapid confirmatory tests for them. Work exists on protein markers: Tamm-Horsfall protein (uromucoid) for urine and dermcidin for sweat, detected by immunological methods (ELISA, monoclonal antibodies) [akutsu2010, tsutsumi1988, sagawa2003, sakurada2010]. A general review of body-fluid identification methods is given in [virkler2009].\n\nThis card gives only information confirmed in sources that were read; no verified open source was found for many classical practices (see 'Scope' below)."
+      },
+      "citations": [
+        "akutsu2010",
+        "tsutsumi1988",
+        "sagawa2003",
+        "sakurada2010",
+        "virkler2009"
+      ]
+    },
+    {
+      "key": "scope",
+      "title": {
+        "uz": "Qamrov va holat",
+        "ru": "Область и статус",
+        "en": "Scope and status"
+      },
+      "body": {
+        "uz": "Qamrovga kiradi: siydik va ter dog‘larini aniqlashning oqsil markerlari (ELISA), amilaza va boshqa dastlabki testlar bilan o‘zaro reaksiyalar, ABO ajratuvchanligi bo‘yicha cheklovlar.\n\nBayon etilmagan (tekshirilgan ochiq manba topilmadi — manba tekshirilmoqda): ter mavjudligini serin, treonin, valin va leysin aminokislotalari bo‘yicha silufol plastinkada xromatografiya bilan aniqlash; siydik dog‘ini yupqa qatlam xromatografiyasi bilan aniqlash; najas dog‘ini tekshirish (najasni aniqlashning tasdiqlangan usuli); siydik va ter dog‘larida A, B va H antigenlarini miqdoriy absorbsiya bilan aniqlash va «ajratuvchanlik» darajasini baholash. Ular uchun laboratoriyaning tasdiqlangan ish tartibidan foydalaning.\n\nHolat: bu karta ekspert (reviewer) tekshiruvidan o‘tmagan (NEEDS_REVIEW) — undan ish uchun tayanishdan oldin vakolatli ekspert tasdig‘i kerak. Ru va en matnlar — avtomatik qoralama. Milliy huquqiy talablar bu kartada berilmagan; ular alohida huquqiy qatlamda.",
+        "ru": "Входит: белковые маркеры (ELISA) для обнаружения пятен мочи и пота, перекрёстные реакции с амилазой и другими ориентировочными тестами, ограничения по выделительству ABO.\n\nНе описано (проверенного открытого источника не найдено — источник уточняется): определение пота по аминокислотам серину, треонину, валину и лейцину хроматографией на пластинке «Силуфол»; идентификация пятна мочи тонкослойной хроматографией; исследование пятна кала (подтверждённый метод идентификации кала); количественное определение антигенов A, B и H в пятнах мочи и пота абсорбцией и оценка степени «выделительства». Для них пользуйтесь утверждённой методикой лаборатории.\n\nСтатус: карточка не прошла экспертную проверку (NEEDS_REVIEW) — перед использованием в работе нужно подтверждение уполномоченного эксперта. Тексты ru и en — автоматический черновик. Национальные правовые требования в карточке не приводятся; они даны в отдельном правовом слое.",
+        "en": "Included: protein markers (ELISA) for detecting urine and sweat stains, cross-reactions with amylase and other presumptive tests, and limits on ABO secretor typing.\n\nNot described (no verified open source found — source under verification): identifying sweat by the amino acids serine, threonine, valine and leucine using chromatography on a Silufol plate; identifying a urine stain by thin-layer chromatography; examining a faecal stain (a confirmed method for identifying faeces); quantitative absorption determination of A, B and H antigens in urine and sweat stains and assessment of 'secretor degree'. For these use your laboratory's validated procedure.\n\nStatus: this card has not passed expert review (NEEDS_REVIEW) — authorised expert (reviewer) approval is required before relying on it in casework. The ru and en texts are machine drafts. National legal requirements are not given here; they sit in a separate legal layer."
+      },
+      "citations": []
+    },
+    {
+      "key": "methods",
+      "title": {
+        "uz": "Siydik va ter: oqsil markerlari",
+        "ru": "Моча и пот: белковые маркеры",
+        "en": "Urine and sweat: protein markers"
+      },
+      "body": {
+        "uz": "• Siydik, Tamm–Horsfall oqsili (THP): oddiy ELISA usuli bilan THP siydikda aniqlangan, zardob, so‘lak, sperma, vaginal suyuqlik va terda aniqlanmagan; eskirgan siydik dog‘larining ko‘pchiligi musbat bo‘lgan. Shuning uchun THP ELISA siydikni dastlabki aniqlash testi sifatida qo‘llanishi mumkin [akutsu2010]. Uroplakin III faqat siydik cho‘kmasi hujayralarini immunogistokimyoviy bo‘yashda spetsifik bo‘lgan; uning ELISA va RT-PCR usullari siydikka xos bo‘lmagan [akutsu2010].\n• Siydik, inson uromukoidi ELISA: sun’iy tayyorlangan siydik dog‘larida inson dog‘larini hayvon dog‘laridan ajratgan (shimpanze va Eski dunyo maymunlaridan tashqari); boshqa inson suyuqliklarining dog‘lari manfiy bo‘lgan; xona haroratida 3 oy saqlangan dog‘larda reaksiya pasaymagan [tsutsumi1988].\n• Ter: terga xos oqsil bo‘lgan dermtsidin fragmentini taniydigan monoklonal antitelo (G-81) ELISAda ter bilan reaksiyaga kirishgan, zardob, so‘lak, sperma, sut, siydik va ko‘z yoshi bilan reaksiyaga kirishmagan [sagawa2003]. Dermtsidinni real-vaqt RT-PCR va ELISA bilan aniqlash ter dog‘larini (7 kunlik dog‘larda ham) aniqlashga yaroqli bo‘lgan; ELISA ter 10 000 baravar suyultirilganda ham aniqlagan [sakurada2010].",
+        "ru": "• Моча, белок Тамма–Хорсфалла (THP): простым методом ELISA THP обнаружен в моче и не обнаружен в плазме, слюне, сперме, вагинальной жидкости и поте; большинство старых пятен мочи были положительны. Поэтому ELISA на THP можно использовать как ориентировочный тест на мочу [akutsu2010]. Уроплакин III был специфичен лишь при иммуногистохимическом окрашивании клеток осадка мочи; его ELISA и RT-PCR не были специфичны для мочи [akutsu2010].\n• Моча, ELISA на уромукоид человека: на искусственно приготовленных пятнах мочи отличал пятна человека от пятен животных (кроме шимпанзе и обезьян Старого Света); пятна других жидкостей человека были отрицательны; реакция не снижалась в пятнах, хранившихся при комнатной температуре 3 месяца [tsutsumi1988].\n• Пот: моноклональное антитело (G-81), распознающее фрагмент дермцидина — белка, специфичного для пота, реагировало с потом в ELISA и не реагировало с сывороткой, слюной, спермой, молоком, мочой и слезами [sagawa2003]. Определение дермцидина методами RT-PCR в реальном времени и ELISA подходило для обнаружения пятен пота (в том числе 7-дневных); ELISA определял пот при разведении примерно в 10 000 раз [sakurada2010].",
+        "en": "• Urine, Tamm-Horsfall protein (THP): with a simple ELISA, THP was detected in urine but not in plasma, saliva, semen, vaginal fluid or sweat; most aged urine stains were positive. THP ELISA can therefore be used as a presumptive test for urine [akutsu2010]. Uroplakin III was specific only for immunohistochemical staining of cells in urine sediment; its ELISA and RT-PCR were not specific for urine [akutsu2010].\n• Urine, ELISA for human uromucoid: on experimentally prepared urine stains it distinguished human from animal stains (except chimpanzee and Old World monkey); stains of other human fluids were negative; the reaction did not decline in stains stored at room temperature for 3 months [tsutsumi1988].\n• Sweat: a monoclonal antibody (G-81) recognising a fragment of dermcidin, a sweat-specific protein, reacted with sweat in ELISA and did not react with serum, saliva, semen, milk, urine or tears [sagawa2003]. Detecting dermcidin by real-time RT-PCR and ELISA was suitable for identifying sweat stains (including 7-day-old ones); ELISA detected sweat diluted about 10,000-fold [sakurada2010]."
+      },
+      "citations": [
+        "akutsu2010",
+        "tsutsumi1988",
+        "sagawa2003",
+        "sakurada2010"
+      ]
+    },
+    {
+      "key": "limitations",
+      "title": {
+        "uz": "Cheklovlar va o‘zaro reaksiyalar",
+        "ru": "Ограничения и перекрёстные реакции",
+        "en": "Limitations and cross-reactions"
+      },
+      "body": {
+        "uz": "• Amilaza: ter va siydikda ham alfa-amilaza faolligi bor [barni2006] — amilaza testi musbat bo‘lishi so‘lakni isbotlamaydi; RSID-Saliva va SALIgAE siydik, ona suti va najas bilan reaksiya bergan, ter bilan bermagan [pang2008] (boshqa tadqiqotda RSID siydik bilan reaksiya bermagan [old2009] — manbalar ziddiyatli).\n• Immunologik testlar odam va hayvon o‘rtasida cheklangan spetsifiklikka ega: uromukoid ELISA shimpanze va Eski dunyo maymunlarini ajrata olmagan [tsutsumi1988].\n• Ter va siydik dog‘larida Lewis antigenlarini aniqlab bo‘lmagan [bassler1986]; ter va siydik ABH antigenlarining past konsentratsiyali ajratmalari uchun sezgir usul (ikki o‘lchovli absorbsiya–ingibitsiya) kerak [lee1988]. Saliva ajratuvchisi har doim siydik ajratuvchisi bo‘lavermaydi, shuning uchun siydik dog‘idagi guruh natijasi so‘lak natijasidan farq qilishi mumkin [singh1980].\n• ELISA tadqiqotlaridagi dog‘lar tajribada tayyorlangan; haqiqiy ashyolarda (kiyim, yuvilgan dog‘lar) natijalar farq qilishi mumkin; har bir usul o‘z validatsiyasidan o‘tishi kerak (umumiy ehtiyotkorlik; alohida manba keltirilmagan).",
+        "ru": "• Амилаза: альфа-амилазная активность есть и в поте, и в моче [barni2006] — положительная проба на амилазу не доказывает слюну; RSID-Saliva и SALIgAE реагировали с мочой, грудным молоком и калом, но не с потом [pang2008] (в другом исследовании RSID с мочой не реагировал [old2009] — источники противоречат друг другу).\n• Иммунологические тесты имеют ограниченную специфичность в различении человека и животных: ELISA на уромукоид не отличил шимпанзе и обезьян Старого Света [tsutsumi1988].\n• В пятнах пота и мочи антигены Lewis определить не удалось [bassler1986]; для выделений пота и мочи с низкой концентрацией антигенов ABH нужен чувствительный метод (двумерная абсорбция–ингибиция) [lee1988]. Выделитель по слюне не всегда является выделителем по моче, поэтому групповой результат пятна мочи может отличаться от результата слюны [singh1980].\n• Пятна в ELISA-исследованиях приготовлены экспериментально; на реальных объектах (одежда, застиранные пятна) результаты могут отличаться; каждый метод должен проходить собственную валидацию (общая осторожность; отдельный источник не приводится).",
+        "en": "• Amylase: alpha-amylase activity is present in sweat and urine too [barni2006] — a positive amylase test does not prove saliva; RSID-Saliva and SALIgAE reacted with urine, breast milk and faeces but not with sweat [pang2008] (in another study RSID did not react with urine [old2009] — the sources contradict each other).\n• Immunological tests have limited specificity between human and animal: the uromucoid ELISA could not distinguish chimpanzee and Old World monkey [tsutsumi1988].\n• Lewis antigens could not be determined in sweat and urine stains [bassler1986]; a sensitive method (two-dimensional absorption-inhibition) is needed for sweat and urine secretions with low ABH antigen concentration [lee1988]. A saliva secretor is not always a urine secretor, so the group result of a urine stain may differ from that of saliva [singh1980].\n• The stains in the ELISA studies were prepared experimentally; results on real exhibits (clothing, laundered stains) may differ; each method must undergo its own validation (general caution; no separate source is cited)."
+      },
+      "citations": [
+        "barni2006",
+        "pang2008",
+        "old2009",
+        "tsutsumi1988",
+        "bassler1986",
+        "lee1988",
+        "singh1980"
+      ]
+    },
+    {
+      "key": "interpretation",
+      "title": {
+        "uz": "Talqin",
+        "ru": "Интерпретация",
+        "en": "Interpretation"
+      },
+      "body": {
+        "uz": "Siydik va ter uchun ELISA natijalari odatda dastlabki yoki tasdiqlovchi deb baholanadi, ammo bu kartada o‘qilgan manbalar THP ELISAni siydikni dastlabki aniqlash testi [akutsu2010] va uromukoid ELISAni inson siydik dog‘lari uchun dastlabki test [tsutsumi1988] deb ataydi — ya’ni ular mustaqil yakuniy tasdiq emas. Xulosa «siydik bo‘lishi mumkin» yoki «siydik bilan mos» tarzida yoziladi va DNK natijalari bilan birga baholanadi.\n\nNajas dog‘i bo‘yicha: najas bilan ifloslangan materialda seminogelin va PSA chiziqlari sinalgan [pang2007], RSID-Saliva va SALIgAE najas bilan reaksiya bergan [pang2008]; najasni mustaqil aniqlash usuli esa bu kartada keltirilmagan (manba tekshirilmoqda).",
+        "ru": "Результаты ELISA на мочу и пот обычно оценивают как ориентировочные или подтверждающие, но прочитанные в этой карточке источники называют ELISA на THP ориентировочным тестом на мочу [akutsu2010], а ELISA на уромукоид — ориентировочным тестом для пятен мочи человека [tsutsumi1988], то есть они не являются самостоятельным окончательным подтверждением. Вывод формулируют как «моча возможна» или «согласуется с мочой» и оценивают вместе с результатами ДНК.\n\nПо пятну кала: на материале с фекалиями проверяли полоски на семиногелин и PSA [pang2007], RSID-Saliva и SALIgAE реагировали с калом [pang2008]; самостоятельный метод идентификации кала в карточке не приводится (источник уточняется).",
+        "en": "ELISA results for urine and sweat are generally rated presumptive or confirmatory, but the sources read for this card call the THP ELISA a presumptive test for urine [akutsu2010] and the uromucoid ELISA a presumptive test for human urine stains [tsutsumi1988] — that is, they are not a stand-alone final confirmation. The conclusion is written as 'urine is possible' or 'consistent with urine' and assessed together with DNA results.\n\nFor a faecal stain: semenogelin and PSA strips were tested against faecal material [pang2007], and RSID-Saliva and SALIgAE reacted with faeces [pang2008]; an independent method for identifying faeces is not given here (source under verification)."
+      },
+      "citations": [
+        "akutsu2010",
+        "tsutsumi1988",
+        "pang2007",
+        "pang2008"
+      ]
+    },
+    {
+      "key": "cautions",
+      "title": {
+        "uz": "Ehtiyot choralari",
+        "ru": "Меры предосторожности",
+        "en": "Precautions"
+      },
+      "body": {
+        "uz": "Siydik, ter va ayniqsa najas dog‘lari yuqumli material sifatida qaraladi — shaxsiy himoya vositalarini qo‘llang va ashyolarni alohida qadoqlang [nistir7928] (5-b., 15-b.). Dog‘ning kichik qismi bilan sinash va qolganini DNK uchun saqlash: bu, ayniqsa siydik va ter kabi kam DNK beradigan dog‘larda muhim (umumiy ehtiyotkorlik; alohida manba keltirilmagan).",
+        "ru": "Пятна мочи, пота и особенно кала рассматривают как потенциально инфекционный материал — используйте средства индивидуальной защиты и упаковывайте объекты раздельно [nistir7928] (с. 5, 15). Проверяйте небольшую часть пятна, остальное сохраняйте для ДНК: это особенно важно для пятен мочи и пота, дающих мало ДНК (общая осторожность; отдельный источник не приводится).",
+        "en": "Urine, sweat and especially faecal stains are treated as potentially infectious material — use personal protective equipment and package items separately [nistir7928] (pp. 5, 15). Test a small part of the stain and keep the rest for DNA: this is especially important for urine and sweat stains that yield little DNA (general caution; no separate source is cited)."
+      },
+      "citations": [
+        "nistir7928"
+      ]
+    }
+  ],
+  "keywords": {
+    "uz": [
+      "siydik",
+      "siydik dog‘i",
+      "ter",
+      "ter dog‘i",
+      "najas",
+      "najas dog‘i",
+      "Tamm–Horsfall",
+      "uromukoid",
+      "dermtsidin",
+      "ELISA",
+      "aminokislotalar",
+      "silufol",
+      "tana suyuqliklari",
+      "sud serologiyasi"
+    ],
+    "ru": [
+      "моча",
+      "пятно мочи",
+      "пот",
+      "пятно пота",
+      "кал",
+      "пятно кала",
+      "Тамма–Хорсфалла",
+      "уромукоид",
+      "дермцидин",
+      "ELISA",
+      "аминокислоты",
+      "силуфол",
+      "биологические жидкости",
+      "судебная серология"
+    ],
+    "en": [
+      "urine",
+      "urine stain",
+      "sweat",
+      "sweat stain",
+      "faeces",
+      "faecal stain",
+      "Tamm-Horsfall protein",
+      "uromucoid",
+      "dermcidin",
+      "ELISA",
+      "amino acids",
+      "Silufol",
+      "body fluids",
+      "forensic serology"
+    ]
+  },
+  "omitted_unverified": [
+    "Silufol chromatography of sweat amino acids (serine, threonine, valine, leucine) and TLC of urine stains: no verified source; not described.",
+    "Faecal stain identification: no verified method source found; the card says so and cites only cross-reaction observations.",
+    "Quantitative absorption ABO determination in urine and sweat stains: not described.",
+    "Detection thresholds and storage tolerances of THP/dermcidin assays beyond what the abstracts state: not extracted.",
+    "akutsu2010 and tsutsumi1988 describe their ELISAs as presumptive; no source read here states a validated confirmatory urine test."
+  ]
+}

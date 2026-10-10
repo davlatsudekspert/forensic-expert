@@ -1,0 +1,234 @@
+{
+  "id": "guideline.bio.blood_presumptive",
+  "discipline_codes": [
+    "forensic_biology",
+    "forensic_serology"
+  ],
+  "status": "NEEDS_REVIEW",
+  "updated": "2026-10-10",
+  "translation_status": {
+    "uz": "AUTHORED",
+    "ru": "DRAFT",
+    "en": "DRAFT"
+  },
+  "related_tool_ids": [],
+  "term_ids": [
+    "T-CONFIRMATORY-ANALYSIS"
+  ],
+  "title": {
+    "uz": "Qonni dastlabki aniqlash: katalitik sinamalar, lyuminol va xavfsiz reagentlar",
+    "ru": "Предварительное обнаружение крови: каталитические пробы, люминол и безопасные реагенты",
+    "en": "Presumptive detection of blood: catalytic tests, luminol and safer reagents"
+  },
+  "summary": {
+    "uz": "Qonga dastlabki sinamalar gemoglobinning katalitik faolligiga asoslanadi va faqat «qon bo‘lishi mumkin» degan xulosa beradi. Karta Kastle–Meyer, leykomalaxit yashili, tetrametilbenzidin, lyuminol va test-chiziqlarni solishtiradi, benzidinni xavfsiz muqobillar bilan almashtirish sabablarini va soxta-musbat manbalarini bayon etadi.",
+    "ru": "Ориентировочные пробы на кровь основаны на каталитической активности гемоглобина и дают лишь вывод «кровь возможна». Карточка сравнивает пробы Кастле–Мейера, с лейкомалахитовым зелёным, тетраметилбензидином, люминолом и тест-полоски, объясняет, почему бензидин заменяют безопасными реагентами, и описывает источники ложноположительных результатов.",
+    "en": "Presumptive blood tests rely on the catalytic activity of haemoglobin and support only the conclusion 'blood is possible'. The card compares Kastle-Meyer, leucomalachite green, tetramethylbenzidine, luminol and test strips, explains why benzidine is replaced by safer reagents, and describes sources of false positives."
+  },
+  "sections": [
+    {
+      "key": "basis",
+      "title": {
+        "uz": "Ilmiy asos",
+        "ru": "Научная основа",
+        "en": "Scientific basis"
+      },
+      "body": {
+        "uz": "Dastlabki (presumptive) sinamalarning ko‘pchiligi gemoglobinning katalitik faolligidan foydalanadi: gemoglobin oksidlovchi ishtirokida reagentni rangli mahsulotga aylantiradi (masalan, fenolftalein bilan Kastle–Meyer sinamasi) yoki yorug‘lik chiqarishga olib keladi (lyuminol) [petersen2014, barni2007].\n\nKatalizator gemoglobin yoki unga o‘xshash faollikka ega modda bo‘lgani uchun sinama qonga xos (spetsifik) emas. Shu sababli musbat natija faqat «qon bo‘lishi mumkin» degan ma’noni beradi: u ob’ektning aynan qon ekanligini ham, qonning odamga tegishliligini ham isbotlamaydi. Qon ekanligi va tur mansubligi alohida usullar bilan aniqlanadi («Qonning tur mansubligi» kartasiga qarang).",
+        "ru": "Большинство ориентировочных (presumptive) проб используют каталитическую активность гемоглобина: в присутствии окислителя он превращает реагент в окрашенный продукт (например, проба Кастле–Мейера с фенолфталеином) или вызывает испускание света (люминол) [petersen2014, barni2007].\n\nПоскольку катализатором служит гемоглобин или вещество с подобной активностью, проба не специфична для крови. Поэтому положительный результат означает лишь «кровь возможна»: он не доказывает ни того, что объект — именно кровь, ни того, что кровь принадлежит человеку. Подтверждение природы пятна и видовая принадлежность определяются отдельными методами (см. карточку «Видовая принадлежность крови»).",
+        "en": "Most presumptive tests exploit the catalytic activity of haemoglobin: in the presence of an oxidant it converts the reagent into a coloured product (for example the Kastle-Meyer test with phenolphthalein) or makes it emit light (luminol) [petersen2014, barni2007].\n\nBecause the catalyst is haemoglobin or any substance with similar activity, the test is not specific for blood. A positive result therefore means only 'blood is possible': it proves neither that the material is blood nor that the blood is human. Confirmation of the stain and species determination are done by separate methods (see the card 'Species of origin of blood')."
+      },
+      "citations": [
+        "petersen2014",
+        "barni2007"
+      ]
+    },
+    {
+      "key": "scope",
+      "title": {
+        "uz": "Qamrov va holat",
+        "ru": "Область и статус",
+        "en": "Scope and status"
+      },
+      "body": {
+        "uz": "Karta quyidagilarni qamrab oladi: fenolftalein (Kastle–Meyer), leykomalaxit yashili (LMG), tetrametilbenzidin (TMB), lyuminol va gemoglobin test-chiziqlari kabi dastlabki sinamalarning solishtirma xususiyatlari, ularning soxta-musbat va soxta-manfiy sabablari, xavfli reagentlarni xavfsiz muqobillarga almashtirish.\n\nQog‘ozda xromatografiya, silufol plastinkada mikroxromatografiya va kristall (gemin, gemoxromogen) sinamalari bu kartada bayon etilmagan: ular uchun tekshirilgan ochiq manba hozircha topilmadi — manba tekshirilmoqda. Ushbu usullar bilan ishlaydigan laboratoriyalar amaldagi tasdiqlangan ish tartibidan foydalanishi kerak.\n\nHolat: bu karta ekspert (reviewer) tekshiruvidan o‘tmagan (NEEDS_REVIEW) — undan ish uchun tayanishdan oldin vakolatli ekspert tasdig‘i kerak. Ru va en matnlar — avtomatik qoralama. Milliy huquqiy talablar bu kartada berilmagan; ular alohida huquqiy qatlamda.",
+        "ru": "Карточка охватывает: сравнительные свойства ориентировочных проб — фенолфталеиновой (Кастле–Мейера), с лейкомалахитовым зелёным (LMG), тетраметилбензидином (TMB), люминолом и тест-полосок на гемоглобин, причины ложноположительных и ложноотрицательных результатов, замену опасных реагентов безопасными.\n\nХроматография крови на бумаге, микрохроматография на пластинках «Силуфол» и кристаллические пробы (гемин, гемохромоген) в карточке не описаны: проверенного открытого источника по ним пока не найдено — источник уточняется. Лаборатории, работающие этими методами, должны пользоваться действующей утверждённой методикой.\n\nСтатус: карточка не прошла экспертную проверку (NEEDS_REVIEW) — перед использованием в работе нужно подтверждение уполномоченного эксперта. Тексты ru и en — автоматический черновик. Национальные правовые требования в карточке не приводятся; они даны в отдельном правовом слое.",
+        "en": "The card covers: the comparative properties of presumptive tests — phenolphthalein (Kastle-Meyer), leucomalachite green (LMG), tetramethylbenzidine (TMB), luminol and haemoglobin test strips — the causes of false-positive and false-negative results, and the replacement of hazardous reagents by safer ones.\n\nPaper chromatography of blood, micro-chromatography on Silufol plates and crystal tests (haemin, haemochromogen) are not described here: no verified open source has been found for them yet — source under verification. Laboratories using these methods should follow their current validated procedure.\n\nStatus: this card has not passed expert review (NEEDS_REVIEW) — authorised expert (reviewer) approval is required before relying on it in casework. The ru and en texts are machine drafts. National legal requirements are not given here; they sit in a separate legal layer."
+      },
+      "citations": []
+    },
+    {
+      "key": "methods",
+      "title": {
+        "uz": "Dastlabki sinamalar va ularning solishtirilishi",
+        "ru": "Ориентировочные пробы и их сравнение",
+        "en": "Presumptive tests compared"
+      },
+      "body": {
+        "uz": "• Fenolftalein (Kastle–Meyer, KM): to‘rt sinama (fenolftalein, TMB, LMG, o-tolidin) taqqoslangan tadqiqotda fenolftalein va LMG eng spetsifik, fenolftalein esa eng yaxshi yagona sinama deb baholangan [cox1991]. Boshqa tadqiqot KMning LMGdan sezgirroq va spetsifikroq ekanini tasdiqlagan [vennemann2014].\n• Leykomalaxit yashili (LMG): spetsifik, lekin KMdan kamroq sezgir [cox1991, vennemann2014].\n• Tetrametilbenzidin (TMB) va o-tolidin: to‘rt sinama ichida eng sezgir, lekin kamroq spetsifik [cox1991].\n• Gemoglobinga mo‘ljallangan test-chiziqlar (Hemastix): quruq dog‘larda iz miqdordagi qonni topishda KM, LMG va Hexagon OBTIdan sezgirroq bo‘lgan [johnston2008]. Hexagon OBTI esa primatlar qoniga xos (primate-specific) test hisoblanadi [johnston2008].\n• Lyuminol: ko‘zga ko‘rinmas (latent) qon izlarini qidirishda ishlatiladi; sharh maqolada reaksiya mexanizmi, xalaqit beruvchi omillar va keyingi serologik hamda DNK tahlilga ta’siri muhokama qilingan [barni2007].\n\nReagent tarkibi va konsentratsiyalari kartada berilmagan: ular tasdiqlangan laboratoriya ish tartibidan yoki ishlab chiqaruvchi yo‘riqnomasidan olinadi; ochiq manbadan tekshirilgan retsept hozircha kiritilmagan — manba tekshirilmoqda.",
+        "ru": "• Фенолфталеин (Кастле–Мейер, KM): в исследовании, сравнившем четыре пробы (фенолфталеин, TMB, LMG, о-толидин), фенолфталеин и LMG оказались наиболее специфичными, а фенолфталеиновая проба признана лучшей единичной пробой [cox1991]. Другое исследование подтвердило, что KM чувствительнее и специфичнее LMG [vennemann2014].\n• Лейкомалахитовый зелёный (LMG): специфичен, но менее чувствителен, чем KM [cox1991, vennemann2014].\n• Тетраметилбензидин (TMB) и о-толидин: наиболее чувствительные из четырёх проб, но менее специфичные [cox1991].\n• Тест-полоски на гемоглобин (Hemastix): на сухих пятнах оказались чувствительнее KM, LMG и Hexagon OBTI при обнаружении следовых количеств крови [johnston2008]. Hexagon OBTI — тест, специфичный для приматов (primate-specific) [johnston2008].\n• Люминол: применяется для поиска невидимых (латентных) следов крови; в обзоре обсуждаются механизм реакции, мешающие факторы и влияние на последующее серологическое и ДНК-исследование [barni2007].\n\nСостав и концентрации реагентов в карточке не приводятся: их берут из утверждённой лабораторной методики или инструкции производителя; проверенная по открытому источнику пропись пока не включена — источник уточняется.",
+        "en": "• Phenolphthalein (Kastle-Meyer, KM): in a study comparing four tests (phenolphthalein, TMB, LMG, o-tolidine) phenolphthalein and LMG were the most specific, and phenolphthalein was judged the best single test [cox1991]. Another study confirmed that KM is more sensitive and more specific than LMG [vennemann2014].\n• Leucomalachite green (LMG): specific but less sensitive than KM [cox1991, vennemann2014].\n• Tetramethylbenzidine (TMB) and o-tolidine: the most sensitive of the four tests but less specific [cox1991].\n• Haemoglobin test strips (Hemastix): on dry stains they were more sensitive than KM, LMG and Hexagon OBTI for trace blood [johnston2008]. Hexagon OBTI is a primate-specific test [johnston2008].\n• Luminol: used to search for invisible (latent) blood traces; a review discusses the reaction mechanism, interfering factors and the effect on later serological and DNA testing [barni2007].\n\nReagent compositions and concentrations are not given here: they come from a validated laboratory procedure or the manufacturer's instructions; no recipe verified from an open source has been included yet — source under verification."
+      },
+      "citations": [
+        "cox1991",
+        "vennemann2014",
+        "johnston2008",
+        "barni2007"
+      ]
+    },
+    {
+      "key": "limitations",
+      "title": {
+        "uz": "Cheklovlar: soxta-musbat va soxta-manfiy natijalar",
+        "ru": "Ограничения: ложноположительные и ложноотрицательные результаты",
+        "en": "Limitations: false positives and false negatives"
+      },
+      "body": {
+        "uz": "• O‘simlik manbalari: dukkakli o‘simliklar ildiz tugunaklari tarkibidagi leggemoglobin fenolftalein bilan haqiqiy qon dog‘idan rangi va rivojlanish vaqti bo‘yicha farq qilmaydigan soxta-musbat reaksiya bergan; bunday dog‘lar kiyimda yillar davomida reaktivligini saqlagan [petersen2014].\n• Boshqa biologik materiallar: bir qancha dastlabki sinamaning «boshqa» biologik namunalar bilan o‘zaro reaksiyasi tizimli o‘rganilgan; sinamalarning ko‘pchiligi soxta-musbat berish xususiyatiga ega [stroud2023]. So‘lak Hemastix chizig‘ida qonga soxta-musbat natija bergan [gertz1983].\n• Hasharot izlari: pashsha qoldiqlarini Hemastix, Hemident va Hemascein qondan ajrata olmagan [durdle2015].\n• Oksidlovchi va antioksidantlar: gipoxlorit (oksidlovchi) va askorbin kislotasi (antioksidant) mavjudligida KM va LMG sezgirligi/spetsifikligi alohida tekshirilgan [vennemann2014] — bunday ifloslantiruvchilar natijani buzishi mumkin.\n• Hayvon qoni ham musbat beradi: KM va Hemastix hayvon qoniga ham validatsiya qilingan; to‘g‘ridan-to‘g‘ri sinamada KM Hemastixdan sezgirroq, surtma (rub) sinamada esa g‘ovak materiallarda Hemastix sezgirroq bo‘lgan [casali2020].\n• Eskirgan va ko‘milgan dog‘lar: LMG tuproqqa ko‘milgan matolardagi eskirgan qon dog‘larini aniqlashda mustahkam emas deb topilgan [russell2025]. Shu sababli manfiy natija qon yo‘qligini isbotlamaydi.",
+        "ru": "• Растительные источники: леггемоглобин в клубеньках бобовых давал с фенолфталеином ложноположительную реакцию, неотличимую от реакции настоящего пятна крови по цвету и времени развития; такие пятна на одежде сохраняли реактивность годами [petersen2014].\n• Другие биологические материалы: перекрёстные реакции нескольких ориентировочных проб с «другими» биологическими образцами изучены систематически; значительная часть проб склонна давать ложноположительные результаты [stroud2023]. Слюна давала на полоске Hemastix ложноположительную реакцию на кровь [gertz1983].\n• Следы насекомых: Hemastix, Hemident и Hemascein не отличали следы мух от крови [durdle2015].\n• Окислители и антиоксиданты: чувствительность и специфичность KM и LMG отдельно проверяли в присутствии гипохлорита (окислитель) и аскорбиновой кислоты (антиоксидант) [vennemann2014] — такие загрязнители могут искажать результат.\n• Кровь животных тоже даёт положительную реакцию: KM и Hemastix валидированы и на крови животных; при прямой пробе KM чувствительнее Hemastix, а при пробе методом растирания (rub) на пористых материалах чувствительнее Hemastix [casali2020].\n• Старые и закопанные пятна: LMG оказался нестабилен при обнаружении старых пятен крови на тканях, закопанных в почву [russell2025]. Поэтому отрицательный результат не доказывает отсутствия крови.",
+        "en": "• Plant sources: leghaemoglobin in legume root nodules gave a phenolphthalein false positive indistinguishable from a true bloodstain in colour and development time; such stains on clothing stayed reactive for years [petersen2014].\n• Other biological materials: cross-reactions of several presumptive tests with 'other' biological samples have been studied systematically, and many of the tests show false positives [stroud2023]. Saliva gave a false-positive result for blood on Hemastix strips [gertz1983].\n• Insect traces: Hemastix, Hemident and Hemascein could not distinguish fly artifacts from blood [durdle2015].\n• Oxidants and antioxidants: the sensitivity and specificity of KM and LMG were examined in the presence of hypochlorite (oxidant) and ascorbic acid (antioxidant) [vennemann2014] — such contaminants can distort the result.\n• Animal blood also reacts: KM and Hemastix were validated on animal blood too; in the direct test KM was more sensitive than Hemastix, whereas in the rub test on porous materials Hemastix was more sensitive [casali2020].\n• Aged and buried stains: LMG proved not robust for detecting aged bloodstains on fabrics buried in soil [russell2025]. A negative result therefore does not prove the absence of blood."
+      },
+      "citations": [
+        "petersen2014",
+        "stroud2023",
+        "gertz1983",
+        "durdle2015",
+        "vennemann2014",
+        "casali2020",
+        "russell2025"
+      ]
+    },
+    {
+      "key": "interpretation",
+      "title": {
+        "uz": "Natijani talqin qilish",
+        "ru": "Интерпретация результата",
+        "en": "Interpreting the result"
+      },
+      "body": {
+        "uz": "Natija «dastlabki sinama musbat/manfiy» tarzida, reagent nomi va nazorat (musbat va manfiy) natijalari bilan birga yoziladi. Musbat natija «qon bo‘lishi mumkin» ma’nosini beradi; xulosani kuchaytirish uchun keyingi bosqich zarur: tur mansubligi (immunologik test) va DNK tahlili.\n\nDastlabki sinamaning keyingi tahlilga ta’sirini oldindan bilish kerak: ba’zi test to‘plamlari buferidan to‘g‘ridan-to‘g‘ri DNK profili olingan [johnston2008], reagentlarning DNK tahliliga ta’siri esa alohida tekshirilgan [casali2020]; lyuminolning keyingi serologik va DNK tahlilga ta’siri sharhda muhokama qilingan [barni2007]. Shuning uchun dog‘ning faqat kichik qismi sarflanishi va qolgani saqlanishi maqsadga muvofiq (umumiy ehtiyotkorlik tamoyili; bu tamoyil uchun alohida manba keltirilmagan).",
+        "ru": "Результат записывают как «ориентировочная проба положительна/отрицательна» с названием реагента и результатами контролей (положительного и отрицательного). Положительный результат означает «кровь возможна»; для усиления вывода необходим следующий этап: видовая принадлежность (иммунологический тест) и ДНК-анализ.\n\nВлияние ориентировочной пробы на дальнейший анализ нужно знать заранее: из буфера некоторых тест-наборов получали ДНК-профиль напрямую [johnston2008], влияние реагентов на ДНК-анализ изучалось отдельно [casali2020], влияние люминола на последующее серологическое и ДНК-исследование обсуждается в обзоре [barni2007]. Поэтому целесообразно расходовать лишь небольшую часть пятна, а остальное сохранять (общий принцип осторожности; отдельный источник для этого принципа не приводится).",
+        "en": "The result is recorded as 'presumptive test positive/negative', with the reagent name and the results of the positive and negative controls. A positive result means 'blood is possible'; to strengthen the conclusion a next step is needed: species determination (immunological test) and DNA analysis.\n\nThe effect of the presumptive test on later analysis should be known in advance: a DNA profile has been obtained directly from the buffer of some test kits [johnston2008], the effect of reagents on DNA analysis was studied separately [casali2020], and the effect of luminol on subsequent serological and DNA testing is discussed in a review [barni2007]. It is therefore sensible to consume only a small part of the stain and keep the rest (a general principle of caution; no separate source is cited for this principle)."
+      },
+      "citations": [
+        "johnston2008",
+        "casali2020",
+        "barni2007"
+      ]
+    },
+    {
+      "key": "cautions",
+      "title": {
+        "uz": "Xavfsizlik: benzidin va boshqa xavfli reagentlar",
+        "ru": "Безопасность: бензидин и другие опасные реагенты",
+        "en": "Safety: benzidine and other hazardous reagents"
+      },
+      "body": {
+        "uz": "Benzidin — odam uchun kanserogen: u Xalqaro saraton tadqiqotlari agentligi (IARC) 100F monografiyasida «odam uchun kanserogen» (1-guruh) agentlar qatorida keltirilgan [chappell2016]. Qonga tarixiy «benzidin sinamasi»ni qo‘llash shu sababli tavsiya etilmaydi; uning o‘rniga xalqaro amaliyotda quyidagilar qo‘llanadi: fenolftalein (Kastle–Meyer), leykomalaxit yashili, tetrametilbenzidin, lyuminol va gemoglobin test-chiziqlari [cox1991, vennemann2014, johnston2008, barni2007]. Qonning odamga tegishliligi esa immunoxromatografik testlar bilan aniqlanadi (HemaTrace/ABAcard, RSID-Blood va boshqalar — «Qonning tur mansubligi» kartasiga qarang).\n\no-Tolidin benzidinning hosilasi bo‘lib, qiyosiy tadqiqotda dastlabki sinama sifatida ishlatilgan [cox1991]; uning xavf sinfi bu kartada tekshirilmagan — manba tekshirilmoqda. Shuning uchun o-tolidin va shunga o‘xshash reagentlar bilan ishlashdan oldin amaldagi xavfsizlik varaqasi (SDS) va cheklov hujjatlarini ko‘rib chiqing.\n\nBiologik xavf: qonli ashyolar yuqumli material sifatida qaraladi, quruq qon ham xavfsiz deb hisoblanmaydi — shaxsiy himoya vositalaridan foydalaning [nistir7928] (5-b.).",
+        "ru": "Бензидин — канцероген для человека: Международное агентство по изучению рака (IARC) включило его в монографию 100F среди агентов, канцерогенных для человека (группа 1) [chappell2016]. Поэтому применять историческую «бензидиновую пробу» на кровь не рекомендуется; в международной практике вместо неё используют: фенолфталеин (Кастле–Мейер), лейкомалахитовый зелёный, тетраметилбензидин, люминол и тест-полоски на гемоглобин [cox1991, vennemann2014, johnston2008, barni2007]. Принадлежность крови человеку определяют иммунохроматографическими тестами (HemaTrace/ABAcard, RSID-Blood и др. — см. карточку «Видовая принадлежность крови»).\n\no-Толидин — производное бензидина; он использовался как ориентировочная проба в сравнительном исследовании [cox1991]; класс его опасности в карточке не проверялся — источник уточняется. Поэтому перед работой с о-толидином и подобными реагентами изучите действующий паспорт безопасности (SDS) и ограничительные документы.\n\nБиологическая опасность: предметы со следами крови считаются потенциально инфекционным материалом, даже сухая кровь не считается безопасной — используйте средства индивидуальной защиты [nistir7928] (с. 5).",
+        "en": "Benzidine is a human carcinogen: the International Agency for Research on Cancer (IARC) lists it in Monograph 100F among agents carcinogenic to humans (Group 1) [chappell2016]. The historical 'benzidine test' for blood is therefore not recommended; international practice uses instead phenolphthalein (Kastle-Meyer), leucomalachite green, tetramethylbenzidine, luminol and haemoglobin test strips [cox1991, vennemann2014, johnston2008, barni2007]. Whether the blood is human is determined by immunochromatographic tests (HemaTrace/ABAcard, RSID-Blood and others — see the card 'Species of origin of blood').\n\no-Tolidine is a benzidine derivative that was used as a presumptive test in a comparative study [cox1991]; its hazard class was not checked in this card — source under verification. Before working with o-tolidine and similar reagents, consult the current safety data sheet (SDS) and restriction documents.\n\nBiological hazard: blood-stained items are treated as potentially infectious material, and even dry blood is not assumed safe — use personal protective equipment [nistir7928] (p. 5)."
+      },
+      "citations": [
+        "chappell2016",
+        "cox1991",
+        "vennemann2014",
+        "johnston2008",
+        "barni2007",
+        "nistir7928"
+      ]
+    },
+    {
+      "key": "alternatives",
+      "title": {
+        "uz": "Muqobil va qo‘shimcha usullar",
+        "ru": "Альтернативные и дополнительные методы",
+        "en": "Alternatives and complementary methods"
+      },
+      "body": {
+        "uz": "Odamga (primatga) xos immunoxromatografik testlar — HemaTrace/ABAcard (gemoglobin), RSID-Blood (glikoforin A), Hexagon OBTI — dastlabki katalitik sinamaga qo‘shimcha tasdiqlovchi bosqich sifatida qo‘llanadi [horjan2016, schweers2008, johnston2008]; ularning cheklovlari «Qonning tur mansubligi» kartasida.\n\nQon aniqlash va tur aniqlash bo‘yicha 1980–1995 yillardagi adabiyotlar ro‘yxati [tumosa1996] qog‘oz va yupqa qatlam xromatografiyasi, kristall sinamalar kabi klassik usullar bo‘yicha manba qidirishda boshlang‘ich nuqta bo‘lishi mumkin; uning mazmuni bu kartada ko‘rib chiqilmagan.",
+        "ru": "Иммунохроматографические тесты, специфичные для человека (приматов), — HemaTrace/ABAcard (гемоглобин), RSID-Blood (гликофорин A), Hexagon OBTI — применяют как подтверждающий этап после первичной каталитической пробы [horjan2016, schweers2008, johnston2008]; их ограничения описаны в карточке «Видовая принадлежность крови».\n\nБиблиография 1980–1995 годов по обнаружению крови и определению вида [tumosa1996] может быть отправной точкой при поиске источников по классическим методам (хроматография на бумаге и в тонком слое, кристаллические пробы); её содержание в карточке не рассматривалось.",
+        "en": "Immunochromatographic tests specific for humans (primates) — HemaTrace/ABAcard (haemoglobin), RSID-Blood (glycophorin A), Hexagon OBTI — are used as a confirmatory step after the first catalytic test [horjan2016, schweers2008, johnston2008]; their limitations are in the card 'Species of origin of blood'.\n\nThe 1980-1995 bibliography on blood detection and species identification [tumosa1996] can be a starting point when looking for sources on classical methods (paper and thin-layer chromatography, crystal tests); its content was not reviewed in this card."
+      },
+      "citations": [
+        "horjan2016",
+        "schweers2008",
+        "johnston2008",
+        "tumosa1996"
+      ]
+    }
+  ],
+  "keywords": {
+    "uz": [
+      "qon",
+      "qon dog‘i",
+      "dastlabki sinama",
+      "Kastle–Meyer",
+      "fenolftalein",
+      "leykomalaxit yashili",
+      "LMG",
+      "tetrametilbenzidin",
+      "TMB",
+      "lyuminol",
+      "Hemastix",
+      "benzidin",
+      "o-tolidin",
+      "soxta-musbat",
+      "gemoglobin",
+      "sud serologiyasi",
+      "presumptive",
+      "qon izlari",
+      "qog‘ozda xromatografiya",
+      "silufol"
+    ],
+    "ru": [
+      "кровь",
+      "пятно крови",
+      "ориентировочная проба",
+      "Кастле–Мейер",
+      "фенолфталеин",
+      "лейкомалахитовый зелёный",
+      "LMG",
+      "тетраметилбензидин",
+      "TMB",
+      "люминол",
+      "Hemastix",
+      "бензидин",
+      "о-толидин",
+      "ложноположительный",
+      "гемоглобин",
+      "судебная серология",
+      "presumptive",
+      "следы крови",
+      "хроматография на бумаге",
+      "силуфол"
+    ],
+    "en": [
+      "blood",
+      "bloodstain",
+      "presumptive test",
+      "Kastle-Meyer",
+      "phenolphthalein",
+      "leucomalachite green",
+      "LMG",
+      "tetramethylbenzidine",
+      "TMB",
+      "luminol",
+      "Hemastix",
+      "benzidine",
+      "o-tolidine",
+      "false positive",
+      "haemoglobin",
+      "forensic serology",
+      "latent blood",
+      "paper chromatography",
+      "Silufol"
+    ]
+  },
+  "omitted_unverified": [
+    "Reagent recipes and concentrations (phenolphthalein, LMG, TMB, luminol working solutions): no verified open source read; deliberately not stated.",
+    "Paper chromatography and Silufol micro-chromatography of blood, haemin/haemochromogen crystal tests: no verified source found; only listed as 'source under verification'.",
+    "Hazard classification of o-tolidine and other benzidine analogues: not verified; reader is directed to the current SDS.",
+    "Sensitivity limits in absolute concentrations for each test: figures differ by study design and were not extracted.",
+    "Hemastix saliva false positive (gertz1983) is cited at title level only (no abstract available)."
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "id": "guideline.bio.abo_stains",
+  "discipline_codes": [
+    "forensic_biology",
+    "forensic_serology",
+    "human_identification"
+  ],
+  "status": "NEEDS_REVIEW",
+  "updated": "2026-10-10",
+  "translation_status": {
+    "uz": "AUTHORED",
+    "ru": "DRAFT",
+    "en": "DRAFT"
+  },
+  "related_tool_ids": [],
+  "term_ids": [
+    "T-CONFIRMATORY-ANALYSIS"
+  ],
+  "title": {
+    "uz": "ABO guruhini dog‘larda aniqlash: absorbsiya–elyusiya, absorbsiya–ingibitsiya va ajratuvchanlik",
+    "ru": "Определение группы ABO в пятнах: абсорбция–элюция, абсорбция–ингибиция и выделительство",
+    "en": "ABO grouping of stains: absorption-elution, absorption-inhibition and secretor status"
+  },
+  "summary": {
+    "uz": "Karta qon va ajratma (so‘lak, sperma, siydik, ter) dog‘larida ABO antigenlarini aniqlashning ikki asosiy usulini — absorbsiya–elyusiya va absorbsiya–ingibitsiyani — omillari, nazorati, cheklovlari va ajratuvchanlik tushunchasi bilan bayon etadi. ABO sinfiy belgi bo‘lib, shaxsni individuallashtirmaydi.",
+    "ru": "Карточка описывает два основных метода определения антигенов ABO в пятнах крови и выделений (слюна, сперма, моча, пот) — абсорбцию–элюцию и абсорбцию–ингибицию — их факторы, контроли, ограничения и понятие выделительства. ABO — групповой признак, не индивидуализирующий личность.",
+    "en": "The card describes the two main methods for detecting ABO antigens in blood and secretion stains (saliva, semen, urine, sweat) — absorption-elution and absorption-inhibition — with their factors, controls, limitations and the concept of secretor status. ABO is a class characteristic and does not individualise a person."
+  },
+  "sections": [
+    {
+      "key": "basis",
+      "title": {
+        "uz": "Ilmiy asos",
+        "ru": "Научная основа",
+        "en": "Scientific basis"
+      },
+      "body": {
+        "uz": "ABO tizimining A, B va H antigenlari qizil qon hujayralarida bo‘ladi; «ajratuvchilar» (sekretorlar)da esa bu antigenlar suvda eruvchan shaklda so‘lak, sperma, siydik, ter kabi suyuqliklarda ham uchraydi. Shu sababli dog‘da guruh mansubligini qon va ajratmalar uchun aniqlash mumkin, ammo ajratma dog‘larida natija odamning ajratuvchi yoki ajratmaydigan ekanligiga bog‘liq [bassler1986, singh1980]. Saliva ajratuvchisi har doim ham siydik ajratuvchisi bo‘lavermaydi [singh1980].\n\nQuruq dog‘da antigenni topishning ikki asosiy yo‘li bor: (1) absorbsiya–elyusiya — dog‘ ma’lum antiserum (anti-A, anti-B) yoki lektin (anti-H uchun Ulex europaeus lektini, UEA I) bilan inkubatsiya qilinadi, dog‘dagi antigen mos antitelo yoki lektinni bog‘laydi, so‘ng yuvilgan dog‘dan antitelo ajratib olinadi (elyusiya) va indikator eritrositlarning agglyutinatsiyasi bilan aniqlanadi [gaensslen1986]; (2) absorbsiya–ingibitsiya — suyuq ekstrakt antiserumning agglyutinlovchi faolligini susaytiradi (ingibitsiya darajasi bo‘yicha antigen mavjudligi baholanadi) [lee1988, singh1980].",
+        "ru": "Антигены A, B и H системы ABO находятся на эритроцитах; у «выделителей» (секреторов) эти антигены в растворимой форме содержатся и в слюне, сперме, моче, поте. Поэтому групповую принадлежность можно определять в пятнах крови и выделений, но в пятнах выделений результат зависит от того, является ли человек выделителем [bassler1986, singh1980]. Выделитель по слюне не всегда является выделителем по моче [singh1980].\n\nВ сухом пятне антиген выявляют двумя основными путями: (1) абсорбция–элюция — пятно инкубируют с известной антисывороткой (анти-A, анти-B) или лектином (лектин Ulex europaeus, UEA I, для анти-H); антиген пятна связывает соответствующее антитело или лектин, затем из промытого пятна антитело вымывают (элюция) и обнаруживают по агглютинации индикаторных эритроцитов [gaensslen1986]; (2) абсорбция–ингибиция — жидкий экстракт подавляет агглютинирующую активность антисыворотки (по степени ингибиции судят о наличии антигена) [lee1988, singh1980].",
+        "en": "The A, B and H antigens of the ABO system are present on red blood cells; in 'secretors' they also occur in soluble form in saliva, semen, urine and sweat. ABO group can therefore be determined in blood and secretion stains, but in secretion stains the result depends on whether the person is a secretor [bassler1986, singh1980]. A saliva secretor is not always a urine secretor [singh1980].\n\nThere are two main ways to detect the antigen in a dry stain: (1) absorption-elution — the stain is incubated with a known antiserum (anti-A, anti-B) or lectin (Ulex europaeus lectin, UEA I, for anti-H); antigen in the stain binds the matching antibody or lectin, the antibody is then released from the washed stain (elution) and detected by agglutination of indicator red cells [gaensslen1986]; (2) absorption-inhibition — a liquid extract suppresses the agglutinating activity of the antiserum (the degree of inhibition shows whether antigen is present) [lee1988, singh1980]."
+      },
+      "citations": [
+        "bassler1986",
+        "singh1980",
+        "gaensslen1986",
+        "lee1988"
+      ]
+    },
+    {
+      "key": "scope",
+      "title": {
+        "uz": "Qamrov va holat",
+        "ru": "Область и статус",
+        "en": "Scope and status"
+      },
+      "body": {
+        "uz": "Karta ABO guruhini dog‘larda aniqlash usullarining printsipi, nazorat talablari, cheklovlari va ajratuvchanlik (sekretor holati) tushunchasini qamrab oladi. Quyidagi amaliyotlar bu kartada bayon etilmagan, chunki ular uchun tekshirilgan ochiq manba topilmadi — manba tekshirilmoqda: agglyutininlarni Lattes bo‘yicha qoplovchi oynalar usulida (Lattes «qobiq» sinamasi) aniqlash; izozardoblar (anti-A, anti-B) va o‘tli buzina (Ulex) ekstrakti titrini aniqlash va tayyorlash; absorbsiya reaksiyasining miqdoriy modifikatsiyasi va agglyutininlar bilan «yuklash»; Shiff bo‘yicha suyuq qon guruhini kesishgan usulda aniqlash; 1% standart test-eritrotsitlar tayyorlash; fiziologik eritma tayyorlash. Bu amaliyotlar uchun o‘z laboratoriyangizning tasdiqlangan ish tartibidan foydalaning.\n\nAmaliy eslatma: ABO guruhi faqat sinfiy belgi — odamlarning katta ulushi bir xil guruhga ega, shuning uchun u shaxsni individuallashtirmaydi; shaxsni aniqlash uchun DNK tahlili kerak (umumiy ilmiy bilim; alohida manba keltirilmagan).\n\nHolat: bu karta ekspert (reviewer) tekshiruvidan o‘tmagan (NEEDS_REVIEW) — undan ish uchun tayanishdan oldin vakolatli ekspert tasdig‘i kerak. Ru va en matnlar — avtomatik qoralama. Milliy huquqiy talablar bu kartada berilmagan; ular alohida huquqiy qatlamda.",
+        "ru": "Карточка охватывает принцип методов определения группы ABO в пятнах, требования к контролям, ограничения и понятие выделительства (секреторного статуса). Следующие практики в карточке не описаны, так как проверенного открытого источника по ним не найдено — источник уточняется: определение агглютининов по Латтесу методом покровных стёкол (проба «корочки» Латтеса); определение титра и приготовление изосывороток (анти-A, анти-B) и экстракта улекса (Ulex); количественная модификация реакции абсорбции и «нагрузка» агглютининами; определение группы жидкой крови перекрёстным методом по Шиффу; приготовление 1 % стандартных тест-эритроцитов; приготовление физиологического раствора. Для этих практик пользуйтесь утверждённой методикой своей лаборатории.\n\nПрактическое замечание: группа ABO — лишь групповой признак: значительная доля людей имеет одну и ту же группу, поэтому она не индивидуализирует личность; для установления личности нужен ДНК-анализ (общее научное знание; отдельный источник не приводится).\n\nСтатус: карточка не прошла экспертную проверку (NEEDS_REVIEW) — перед использованием в работе нужно подтверждение уполномоченного эксперта. Тексты ru и en — автоматический черновик. Национальные правовые требования в карточке не приводятся; они даны в отдельном правовом слое.",
+        "en": "The card covers the principle of ABO grouping methods on stains, control requirements, limitations and the concept of secretor status. The following practices are not described because no verified open source was found — source under verification: detection of agglutinins by Lattes' cover-glass method (Lattes crust test); determining the titre and preparing the iso-sera (anti-A, anti-B) and the Ulex (gorse) extract; the quantitative modification of the absorption reaction and 'loading' with agglutinins; Schiff's crossed method for liquid blood; preparing 1% standard test red cells; preparing physiological saline. For these practices use your laboratory's validated procedure.\n\nPractical remark: ABO group is only a class characteristic — a large share of people share the same group, so it does not individualise a person; DNA analysis is needed to identify a person (general scientific knowledge; no separate source is cited).\n\nStatus: this card has not passed expert review (NEEDS_REVIEW) — authorised expert (reviewer) approval is required before relying on it in casework. The ru and en texts are machine drafts. National legal requirements are not given here; they sit in a separate legal layer."
+      },
+      "citations": []
+    },
+    {
+      "key": "methods",
+      "title": {
+        "uz": "Absorbsiya–elyusiya va absorbsiya–ingibitsiya: omillar",
+        "ru": "Абсорбция–элюция и абсорбция–ингибиция: факторы",
+        "en": "Absorption-elution and absorption-inhibition: factors"
+      },
+      "body": {
+        "uz": "Absorbsiya–elyusiyada elyuatdagi antitelo yoki lektin miqdoriga absorbsiya vaqti, antiserum yoki lektin titri va elyusiya harorati ta’sir qiladi; qon dog‘ining ammiakli ekstrakti va paxtadagi quruq dog‘ shu parametrlar bo‘yicha o‘xshash natija bergan [gaensslen1986]. Monoklonal anti-A, anti-B va tozalangan UEA I reagentlari an’anaviy reagentlar bilan taqqoslanadigan qoniqarli natija bergan [gaensslen1986].\n\nMonoklonal anti-A/anti-B bilan absorbsiya–elyusiya qon dog‘larida deyarli barcha reagentlar bilan to‘g‘ri guruhlangan, lekin so‘lak va sperma dog‘lari hamda tirnoqlar faqat Bioclone reagentlarida to‘g‘ri guruhlangan; soch va qattiq miya pardasida barcha reagentlar kuchsiz yoki nospetsifik agglyutinatsiya bergan. Antitelo erituvchisini 5–20% bovin zardob albumini yoki AB guruhli odam zardobi bilan almashtirish titrni 2–8 baravar oshirgan [kobayashi1999].\n\nIkki o‘lchovli absorbsiya–ingibitsiya usuli ingibitsiya-titrlash va titrlash-ingibitsiya usullaridan sezgirroq bo‘lib, ajratuvchi so‘lak, sperma, siydik, siydik dog‘i va ter dog‘laridagi past konsentratsiyali ABH antigenlarini to‘g‘ri aniqlashda ayniqsa foydali bo‘lgan [lee1988]. Yangi ajratmalar absorbsiya–ingibitsiya bilan, dog‘lar absorbsiya–elyusiya bilan guruhlangan tadqiqotda so‘lak dog‘larining 72% i va siydik dog‘larining 64% i to‘g‘ri guruhlangan [singh1980].",
+        "ru": "В абсорбции–элюции количество антитела или лектина в элюате зависит от времени абсорбции, титра антисыворотки или лектина и температуры элюции; аммиачный экстракт пятна крови и сухое пятно на хлопке по этим параметрам вели себя сходно [gaensslen1986]. Моноклональные анти-A, анти-B и очищенный UEA I дали удовлетворительные результаты, сравнимые с традиционными реагентами [gaensslen1986].\n\nПри абсорбции–элюции с моноклональными анти-A/анти-B пятна крови правильно группировались почти всеми реагентами, а пятна слюны и спермы и ногти — только реагентами Bioclone; на волосах и твёрдой мозговой оболочке все реагенты давали слабую или неспецифическую агглютинацию. Замена растворителя антитела на 5–20 % бычий сывороточный альбумин или сыворотку донора группы AB повышала титры в 2–8 раз [kobayashi1999].\n\nДвумерная абсорбция–ингибиция чувствительнее методов ингибиции-титрования и титрования-ингибиции и особенно полезна для правильного определения антигенов ABH низкой концентрации в слюне, сперме, моче, пятнах мочи и пота выделителей [lee1988]. В исследовании, где свежие выделения группировали абсорбцией–ингибицией, а пятна — абсорбцией–элюцией, правильно сгруппированы 72 % пятен слюны и 64 % пятен мочи [singh1980].",
+        "en": "In absorption-elution the amount of antibody or lectin in the eluate depends on absorption time, the titre of the antiserum or lectin, and the elution temperature; an ammoniacal extract of a bloodstain and a dry stain on cotton behaved similarly for these parameters [gaensslen1986]. Monoclonal anti-A, anti-B and purified UEA I gave satisfactory results comparable to conventional reagents [gaensslen1986].\n\nIn absorption-elution with monoclonal anti-A/anti-B, bloodstains were grouped correctly with almost all reagents, whereas saliva and semen stains and nails were grouped correctly only with Bioclone reagents; on hair and dura mater all reagents gave weak or non-specific agglutination. Replacing the antibody solvent with 5-20% bovine serum albumin or serum of an AB donor raised titres 2-8 times [kobayashi1999].\n\nTwo-dimensional absorption-inhibition is more sensitive than inhibition-titration and titration-inhibition and is especially useful for correctly determining low-concentration ABH antigens in secretor saliva, semen, urine, urine stains and perspiration stains [lee1988]. In a study where fresh secretions were grouped by absorption-inhibition and stains by absorption-elution, 72% of saliva stains and 64% of urine stains were typed correctly [singh1980]."
+      },
+      "citations": [
+        "gaensslen1986",
+        "kobayashi1999",
+        "lee1988",
+        "singh1980"
+      ]
+    },
+    {
+      "key": "interpretation",
+      "title": {
+        "uz": "Talqin va nazorat",
+        "ru": "Интерпретация и контроли",
+        "en": "Interpretation and controls"
+      },
+      "body": {
+        "uz": "• Nazorat: dog‘siz tashuvchi (substrat) bo‘lagi bilan bir xil sharoitda parallel sinov o‘tkaziladi — chunki hatto to‘g‘ri reagentlarda ham tashuvchi va biologik material nospetsifik agglyutinatsiya berishi mumkin (soch va qattiq miya pardasida kuzatilgan [kobayashi1999]).\n• Ajratma dog‘ida guruh antigeni topilmasa, bu ikki ma’noga ega: odam ajratmaydigan (non-secretor) yoki antigen miqdori sezgirlik chegarasidan past; shuning uchun «ajratmaydigan» xulosasi faqat sezgir usul (masalan, ikki o‘lchovli absorbsiya–ingibitsiya) bilan tasdiqlangandan keyin beriladi [lee1988]. Lewis tizimini aniqlash ABO natijasi bo‘yicha ajratuvchanlik holatini qo‘shimcha tekshirish va ajratuvchi hamda ajratmaydigan odamlar ajratmalari aralashmasini aniqlashga yordam berishi mumkin [bassler1986].\n• Aralash dog‘lar (qon + ajratma, ikki ajratma): natija aralashmani aks ettiradi; bir dog‘dagi antigenlar bir odamdan deb avtomatik hisoblanmaydi (umumiy mantiq; alohida manba keltirilmagan).\n• Xulosa so‘zlari: «dog‘da ... guruh antigenlari topildi; bu ... guruhli odam(lar)ga zid emas» tarzida — individual aniqlash emas, ajratib ko‘rsatish (exclusion) qiymatiga ega.",
+        "ru": "• Контроль: параллельно в тех же условиях исследуют участок носителя без пятна — даже при правильных реагентах носитель и биологический материал могут давать неспецифическую агглютинацию (наблюдалась на волосах и твёрдой мозговой оболочке [kobayashi1999]).\n• Если в пятне выделений групповой антиген не найден, это имеет два значения: человек не выделяет антигены (non-secretor) или количество антигена ниже предела чувствительности; поэтому вывод «не выделитель» делают только после подтверждения чувствительным методом (например, двумерной абсорбцией–ингибицией) [lee1988]. Определение системы Lewis может дополнительно проверить статус выделительства по результату ABO и помочь выявить смесь выделений выделителей и невыделителей [bassler1986].\n• Смешанные пятна (кровь + выделения, два выделения): результат отражает смесь; антигены одного пятна автоматически не считают происходящими от одного лица (общая логика; отдельный источник не приводится).\n• Формулировка вывода: «в пятне обнаружены антигены группы ...; это не противоречит происхождению от лица(лиц) группы ...» — это исключающая, а не идентифицирующая ценность.",
+        "en": "• Control: an unstained piece of the substrate is tested in parallel under the same conditions — even with correct reagents the carrier and the biological material may give non-specific agglutination (seen with hair and dura mater [kobayashi1999]).\n• If no group antigen is found in a secretion stain, it has two possible meanings: the person is a non-secretor, or the amount of antigen is below the sensitivity limit; the conclusion 'non-secretor' is therefore drawn only after confirmation with a sensitive method (for example two-dimensional absorption-inhibition) [lee1988]. Lewis typing can additionally check secretor status against the ABO result and help detect a mixture of secretor and non-secretor secretions [bassler1986].\n• Mixed stains (blood + secretion, two secretions): the result reflects the mixture; antigens in one stain are not automatically taken as coming from one person (general logic; no separate source is cited).\n• Wording of the conclusion: 'antigens of group ... were found in the stain; this is not inconsistent with origin from a person(s) of group ...' — it has exclusion value, not identifying value."
+      },
+      "citations": [
+        "kobayashi1999",
+        "lee1988",
+        "bassler1986"
+      ]
+    },
+    {
+      "key": "limitations",
+      "title": {
+        "uz": "Cheklovlar va zamonaviy muqobillar",
+        "ru": "Ограничения и современные альтернативы",
+        "en": "Limitations and modern alternatives"
+      },
+      "body": {
+        "uz": "• Matritsa ta’siri: tashuvchi (mato, tirnoq, soch) va dog‘ yoshi natijaga ta’sir qiladi; qon dog‘laridan boshqa ob’ektlarda ko‘p reagentlar noto‘g‘ri yoki kuchsiz natija bergan [kobayashi1999].\n• Past antigen konsentratsiyali ajratmalarda (ter, siydik) sezgir usul kerak [lee1988]; Lewis tizimi so‘lak dog‘larida 5 yildan keyin ham, sperma dog‘larida kamida 40 kungacha aniqlanadigan bo‘lgan, lekin ter va siydik dog‘larida aniqlanmagan [bassler1986].\n• ELISA asosidagi usul qon bo‘lmagan suyuqliklar va dog‘lar uchun agglyutinatsiya usullaridan muvaffaqiyat darajasi yuqoriroq bo‘lgan [desoyza1991].\n• Qiymati: ABO sinfiy belgi bo‘lgani uchun DNK tahlili bilan solishtirilmaydi; dog‘ DNK tahliliga yaroqli bo‘lsa, ABO uchun materialni sarflash o‘rniga DNK uchun saqlash maqsadga muvofiq (umumiy ehtiyotkorlik; alohida manba keltirilmagan).\n• Mahalliy aholida ajratuvchilar ulushi: bu kartada O‘zbekiston uchun tekshirilgan ma’lumot yo‘q — manba tekshirilmoqda.",
+        "ru": "• Влияние матрицы: носитель (ткань, ногти, волосы) и возраст пятна влияют на результат; на объектах, отличных от пятен крови, многие реагенты давали неверный или слабый результат [kobayashi1999].\n• Для выделений с низкой концентрацией антигена (пот, моча) нужен чувствительный метод [lee1988]; система Lewis определялась в пятнах слюны даже через 5 лет и в пятнах спермы не менее 40 суток, но не определялась в пятнах пота и мочи [bassler1986].\n• Метод на основе ELISA для жидкостей и пятен, кроме крови, имел более высокий процент успеха, чем методы агглютинации [desoyza1991].\n• Ценность: ABO — групповой признак, поэтому с ДНК-анализом она несопоставима; если пятно пригодно для ДНК-анализа, целесообразно сохранять материал для ДНК, а не расходовать на ABO (общая осторожность; отдельный источник не приводится).\n• Доля выделителей среди местного населения: проверенных данных для Узбекистана в карточке нет — источник уточняется.",
+        "en": "• Matrix effects: the carrier (fabric, nails, hair) and the age of the stain influence the result; on objects other than bloodstains many reagents gave wrong or weak results [kobayashi1999].\n• Secretions with a low antigen concentration (sweat, urine) need a sensitive method [lee1988]; the Lewis system could be typed in saliva stains even after 5 years and in semen stains for at least 40 days, but not in sweat and urine stains [bassler1986].\n• An ELISA-based method for fluids and stains other than blood had a higher success rate than agglutination methods [desoyza1991].\n• Value: ABO is a class characteristic and cannot be compared with DNA analysis; if a stain is suitable for DNA analysis, it is sensible to keep the material for DNA rather than consume it for ABO (general caution; no separate source is cited).\n• Share of secretors in the local population: the card holds no verified data for Uzbekistan — source under verification."
+      },
+      "citations": [
+        "kobayashi1999",
+        "lee1988",
+        "bassler1986",
+        "desoyza1991"
+      ]
+    },
+    {
+      "key": "cautions",
+      "title": {
+        "uz": "Ehtiyot choralari",
+        "ru": "Меры предосторожности",
+        "en": "Precautions"
+      },
+      "body": {
+        "uz": "Qon va ajratma dog‘lari yuqumli material sifatida qaraladi — shaxsiy himoya vositalarini qo‘llang [nistir7928] (5-b.). Antiserumlar, lektinlar va test-eritrotsitlar uchun ishlab chiqaruvchi ko‘rsatmalari va saqlash shartlariga rioya qiling; reagentlarning har bir partiyasi ishlatishdan oldin ma’lum eritrotsitlar va ma’lum dog‘lar bilan tekshiriladi (umumiy sifat nazorati tamoyili; alohida manba keltirilmagan).",
+        "ru": "Пятна крови и выделений рассматривают как потенциально инфекционный материал — используйте средства индивидуальной защиты [nistir7928] (с. 5). Соблюдайте указания производителя и условия хранения антисывороток, лектинов и тест-эритроцитов; каждую партию реагентов перед использованием проверяют на известных эритроцитах и известных пятнах (общий принцип контроля качества; отдельный источник не приводится).",
+        "en": "Blood and secretion stains are treated as potentially infectious material — use personal protective equipment [nistir7928] (p. 5). Follow the manufacturer's instructions and storage conditions for antisera, lectins and test red cells; each batch of reagents is checked on known red cells and known stains before use (a general quality-control principle; no separate source is cited)."
+      },
+      "citations": [
+        "nistir7928"
+      ]
+    }
+  ],
+  "keywords": {
+    "uz": [
+      "ABO guruhi",
+      "dog‘larda guruh aniqlash",
+      "absorbsiya-elyusiya",
+      "absorbsiya-ingibitsiya",
+      "izozardob",
+      "anti-A",
+      "anti-B",
+      "anti-H",
+      "o‘tli buzina",
+      "Ulex europaeus",
+      "UEA I",
+      "Lattes",
+      "ajratuvchanlik",
+      "sekretor",
+      "Lewis",
+      "agglyutinatsiya",
+      "test-eritrotsit",
+      "sud serologiyasi"
+    ],
+    "ru": [
+      "группа ABO",
+      "группа крови в пятнах",
+      "абсорбция-элюция",
+      "абсорбция-ингибиция",
+      "изосыворотка",
+      "анти-A",
+      "анти-B",
+      "анти-H",
+      "улекс",
+      "Ulex europaeus",
+      "UEA I",
+      "Латтес",
+      "выделительство",
+      "секретор",
+      "Lewis",
+      "агглютинация",
+      "тест-эритроциты",
+      "судебная серология"
+    ],
+    "en": [
+      "ABO group",
+      "ABO grouping of stains",
+      "absorption-elution",
+      "absorption-inhibition",
+      "anti-A",
+      "anti-B",
+      "anti-H",
+      "Ulex europaeus",
+      "gorse",
+      "UEA I",
+      "Lattes",
+      "secretor",
+      "non-secretor",
+      "Lewis",
+      "agglutination",
+      "test red cells",
+      "forensic serology"
+    ]
+  },
+  "omitted_unverified": [
+    "Lattes cover-glass/crust test, titration and preparation of iso-sera and Ulex extract, quantitative absorption modification and agglutinin 'loading', Schiff crossed method, 1% test-cell and saline preparation: no verified source read; deliberately not described.",
+    "Original Lattes papers (1913 onwards) and Fiori/Siracusa modified absorption-elution (J Forensic Sci 1963) are present in PubMed only as records without abstracts; not used.",
+    "Prevalence of secretors / ABO frequencies in Uzbekistan or Central Asia: no verified source; no numbers given.",
+    "That UEA I is the anti-H reagent in gorse-extract practice is inferred from gaensslen1986 (UEA I used with ABH grouping); the equivalence of the local 'o'tli buzina' extract with purified UEA I was not verified.",
+    "The statement that ABO is a class characteristic is general knowledge, with no citation."
+  ]
+}
