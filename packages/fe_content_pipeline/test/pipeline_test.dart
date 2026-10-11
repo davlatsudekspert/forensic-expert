@@ -480,6 +480,39 @@ void main() {
       );
     });
 
+    test('baza: hech bir matn ustuni bo‘sh satr emas', () async {
+      final d = db.ContentDatabase(
+        NativeDatabase(File('${pack.directory.path}/content.db')),
+      );
+      addTearDown(d.close);
+      // Manbada bo‘sh satr bo‘lgan maydon bazaga NULL bo‘lib tushishi kerak:
+      // aks holda ekranda sarlavhasi bor, qiymati yo‘q qator chiqadi.
+      final tables = await d
+          .customSelect(
+            "SELECT name FROM sqlite_master WHERE type = 'table' "
+            "AND name NOT LIKE 'sqlite_%' AND name NOT LIKE '%_fts%'",
+          )
+          .get();
+      final offenders = <String>[];
+      for (final t in tables) {
+        final table = t.read<String>('name');
+        final cols = await d.customSelect('PRAGMA table_info($table)').get();
+        for (final c in cols) {
+          final col = c.read<String>('name');
+          final n = await d
+              .customSelect(
+                'SELECT COUNT(*) AS n FROM "$table" '
+                'WHERE typeof("$col") = \'text\' AND trim("$col") = \'\'',
+              )
+              .getSingle();
+          if (n.read<int>('n') > 0) {
+            offenders.add('$table.$col (${n.read<int>('n')})');
+          }
+        }
+      }
+      expect(offenders, isEmpty, reason: offenders.join(', '));
+    });
+
     test('baza: text_translations — faqat machine_draft', () async {
       final d = db.ContentDatabase(
         NativeDatabase(File('${pack.directory.path}/content.db')),

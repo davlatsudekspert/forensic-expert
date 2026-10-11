@@ -377,16 +377,24 @@ class ResearchDetailScreen extends ConsumerWidget {
     }
     final library = ref.watch(libraryRepositoryProvider);
     final knowledge = ref.watch(knowledgeRepositoryProvider);
+    // Manbada maydon bo‘sh satr bo‘lib kelishi mumkin — bunda null tekshiruvi
+    // yetmaydi va ekranda sarlavhasi bor, qiymati yo‘q qator qolib ketadi.
+    String? filled(String? v) {
+      final s = v?.trim();
+      return (s == null || s.isEmpty) ? null : s;
+    }
+
     final rows = <(String, String)>[
-      if (r.authors.isNotEmpty) (l.metaAuthors, r.authors.join(', ')),
-      if (r.container != null) (l.metaContainer, r.container!),
-      if (r.organization != null) (l.metaInstitution, r.organization!),
-      if (r.degree != null) (l.metaDegree, r.degree!),
-      if (r.year != null) (l.metaYear, r.year!),
-      if (r.doi != null) ('DOI', r.doi!),
-      if (r.pmid != null) ('PMID', r.pmid!),
-      if (r.pmcid != null) ('PMCID', r.pmcid!),
-      if (r.handle != null) (l.metaHandle, r.handle!),
+      if (r.authors.map(filled).nonNulls.toList() case final a when a.isNotEmpty)
+        (l.metaAuthors, a.join(', ')),
+      if (filled(r.container) case final v?) (l.metaContainer, v),
+      if (filled(r.organization) case final v?) (l.metaInstitution, v),
+      if (filled(r.degree) case final v?) (l.metaDegree, v),
+      if (filled(r.year) case final v?) (l.metaYear, v),
+      if (filled(r.doi) case final v?) ('DOI', v),
+      if (filled(r.pmid) case final v?) ('PMID', v),
+      if (filled(r.pmcid) case final v?) ('PMCID', v),
+      if (filled(r.handle) case final v?) (l.metaHandle, v),
       // «Hujjat turi» qatori yo‘q (documentKindOfResearch deyarli hammasini
       // «maqola» deb ko‘rsatardi); noma’lum ochiq kirish va baholanmagan
       // ahamiyat ko‘rsatilmaydi.
