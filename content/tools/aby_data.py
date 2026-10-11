@@ -20,9 +20,15 @@ from __future__ import annotations
 
 SRC_ID = "SRC-ABY-2025"
 
+# Bo‘lim harflari va nomlari yo‘riqnomaning o‘z kodlash tartibidan
+# (A — murda ekspertizasi … G — sud-kimyo).
 SECTION_UZ = {
+    "A": "A bo‘limi (murda ekspertizasi)",
+    "B": "B bo‘limi (tirik shaxslar ekspertizasi)",
+    "C": "C bo‘limi (qayta, komission va kompleks ekspertizalar)",
     "D": "D bo‘limi (sud-biologik ekspertizalar va tekshiruvlar)",
     "E": "E bo‘limi (sud-gistologik ekspertizalar va tekshiruvlar)",
+    "F": "F bo‘limi (tibbiy-kriminalistik ekspertizalar va tekshiruvlar)",
     "G": "G bo‘limi (sud-kimyo ekspertizalari va tekshiruvlari)",
 }
 
