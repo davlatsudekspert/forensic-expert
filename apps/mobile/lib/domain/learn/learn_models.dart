@@ -112,11 +112,16 @@ class ContentLearnRepository implements LearnRepository {
     return [
       if (fm.isNotEmpty || bio.isNotEmpty)
         Course(
+          // ID o‘zgarmaydi (foydalanuvchining o‘zlashtirishi shunga bog‘langan),
+          // lekin sarlavha mazmunga qarab kengaytirildi: kurs ichida endi PMI
+          // dan tashqari sud tibbiyotining boshqa mavzulari ham bor (suyak
+          // bo‘yicha jins/yosh/bo‘y, dalil bilan ishlash va h.k.).
+          // Keyinchalik mavzular bo‘yicha alohida kurslarga bo‘lish — backlog.
           id: 'course.postmortem',
           title: const LocalizedText({
-            'en': 'Postmortem changes and postmortem interval (PMI) — source reading',
-            'ru': 'Посмертные изменения и посмертный интервал (PMI) — чтение источников',
-            'uz': 'O‘limdan keyingi o‘zgarishlar va o‘limdan keyin o‘tgan vaqt oralig‘i (PMI) — manbalarni o‘qish',
+            'en': 'Forensic medicine and biochemistry — source reading',
+            'ru': 'Судебная медицина и биохимия — чтение источников',
+            'uz': 'Sud tibbiyoti va biokimyo — manbalarni o‘qish',
           }),
           lessons: [
             for (final e in [...fm, ...bio]) lesson(e),
