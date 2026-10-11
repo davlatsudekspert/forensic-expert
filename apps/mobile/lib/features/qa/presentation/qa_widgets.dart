@@ -98,11 +98,13 @@ class QaAuthorBadge extends StatelessWidget {
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
-    if (role == null) return const SizedBox.shrink();
+    final badge = role;
+    if (badge == null) return const SizedBox.shrink();
+    final label = '${l.qaVerifiedBadge} · ${l.qaRole(badge)}';
     return StatusChip(
       key: const Key('qa.verifiedBadge'),
       icon: Icons.verified_outlined,
-      label: '${l.qaVerifiedBadge} · ${l.qaRole(role!)}',
+      label: label,
       color: c.verified,
     );
   }

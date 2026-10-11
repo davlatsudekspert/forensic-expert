@@ -56,9 +56,10 @@ String? sniffDocumentMime(Uint8List b) {
 class SystemQaDocumentPicker implements QaDocumentPicker {
   const SystemQaDocumentPicker();
 
-  /// Format nomlari tarjima qilinmaydi.
+  /// Tizim dialogidagi fayl turi nomi (format nomlari — tarjima qilinmaydi).
+  static const _typeLabel = 'JPEG / PNG / WebP / PDF';
   static const _group = XTypeGroup(
-    label: 'JPEG / PNG / WebP / PDF',
+    label: _typeLabel,
     extensions: ['jpg', 'jpeg', 'png', 'webp', 'pdf'],
     mimeTypes: ['image/jpeg', 'image/png', 'image/webp', 'application/pdf'],
     uniformTypeIdentifiers: [
