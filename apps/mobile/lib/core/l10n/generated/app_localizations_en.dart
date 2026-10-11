@@ -8909,4 +8909,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get qaAdminOnly => 'Only an administrator can open this.';
+
+  @override
+  String get admNavQa => 'Community Q&A';
+
+  @override
+  String admNavQaHint(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count posts waiting',
+      one: '1 post waiting',
+      zero: 'Nothing is waiting',
+    );
+    return '$_temp0';
+  }
 }

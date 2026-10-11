@@ -8873,4 +8873,18 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get qaAdminOnly => 'Buni faqat administrator ochadi.';
+
+  @override
+  String get admNavQa => 'Savol-javob (Hamjamiyat)';
+
+  @override
+  String admNavQaHint(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta yozuv kutmoqda',
+      zero: 'Kutayotgan narsa yo‘q',
+    );
+    return '$_temp0';
+  }
 }

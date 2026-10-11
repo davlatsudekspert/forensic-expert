@@ -8962,4 +8962,20 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get qaAdminOnly => 'Это может открыть только администратор.';
+
+  @override
+  String get admNavQa => 'Вопросы и ответы';
+
+  @override
+  String admNavQaHint(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count публикаций ожидают',
+      few: '$count публикации ожидают',
+      one: '1 публикация ожидает',
+      zero: 'Ничего не ожидает',
+    );
+    return '$_temp0';
+  }
 }

@@ -15512,6 +15512,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Only an administrator can open this.'**
   String get qaAdminOnly;
+
+  /// Title of the admin panel tile that opens the Q&A moderation queue.
+  ///
+  /// In en, this message translates to:
+  /// **'Community Q&A'**
+  String get admNavQa;
+
+  /// Subtitle of the admin panel tile for Q&A moderation.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{Nothing is waiting} =1{1 post waiting} other{{count} posts waiting}}'**
+  String admNavQaHint(int count);
 }
 
 class _AppLocalizationsDelegate

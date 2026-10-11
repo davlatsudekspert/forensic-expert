@@ -11550,5 +11550,18 @@
   "qaAdminOnly": "Only an administrator can open this.",
   "@qaAdminOnly": {
     "description": "Shown when a non-admin reaches the Q&A moderation queue."
+  },
+  "admNavQa": "Community Q&A",
+  "@admNavQa": {
+    "description": "Title of the admin panel tile that opens the Q&A moderation queue."
+  },
+  "admNavQaHint": "{count, plural, =0{Nothing is waiting} =1{1 post waiting} other{{count} posts waiting}}",
+  "@admNavQaHint": {
+    "description": "Subtitle of the admin panel tile for Q&A moderation.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   }
 }

@@ -213,10 +213,18 @@ class _SubmitPublicationScreenState
               DropdownButtonFormField<PublicationLanguage>(
                 key: const Key('submit.language'),
                 initialValue: _language,
+                // Kattalashtirilgan shriftda til nomi qatorga sig‘masdi.
+                isExpanded: true,
                 decoration: InputDecoration(labelText: l.pubLanguage),
                 items: [
                   for (final x in PublicationLanguage.values)
-                    DropdownMenuItem(value: x, child: Text(l.pubLang(x))),
+                    DropdownMenuItem(
+                      value: x,
+                      child: Text(
+                        l.pubLang(x),
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
                 ],
                 onChanged: (v) => setState(() => _language = v ?? _language),
               ),

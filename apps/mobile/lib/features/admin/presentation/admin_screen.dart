@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../app/account.dart';
+import '../../../app/qa.dart';
 import '../../../app/routes.dart';
 import '../../../app/support.dart';
 import '../../../core/design/theme.dart';
@@ -255,6 +256,19 @@ class _AdminSections extends ConsumerWidget {
         badge: stats?.publicationsAwaiting ?? 0,
         onTap: () => context.push(Routes.publicationsModeration),
       ),
+      // «Savol-javob» moderatsiyasi ham shu yerdan ochilsin: admin uni
+      // bo‘limning o‘zidan emas, admin panelidan qidiradi.
+      if (ref.watch(qaVisibleProvider))
+        AdminNavTile(
+          key: const Key('admin.nav.qa'),
+          icon: Icons.forum_outlined,
+          title: l.admNavQa,
+          hint: l.admNavQaHint(
+            ref.watch(qaModerationQueueProvider).value?.length ?? 0,
+          ),
+          badge: ref.watch(qaModerationQueueProvider).value?.length ?? 0,
+          onTap: () => context.push(Routes.qaModeration),
+        ),
     ];
     return LayoutBuilder(
       builder: (context, box) {

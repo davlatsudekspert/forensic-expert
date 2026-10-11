@@ -396,12 +396,25 @@ ROWS = [
      "Это может открыть только администратор.",
      "Buni faqat administrator ochadi.",
      "Shown when a non-admin reaches the Q&A moderation queue."),
+    # ------------------------------------------------- admin panelidagi plitka
+    ("admNavQa", "Community Q&A", "Вопросы и ответы",
+     "Savol-javob (Hamjamiyat)",
+     "Title of the admin panel tile that opens the Q&A moderation queue."),
+    ("admNavQaHint",
+     "{count, plural, =0{Nothing is waiting} =1{1 post waiting} "
+     "other{{count} posts waiting}}",
+     "{count, plural, =0{Ничего не ожидает} =1{1 публикация ожидает} "
+     "few{{count} публикации ожидают} other{{count} публикаций ожидают}}",
+     "{count, plural, =0{Kutayotgan narsa yo‘q} "
+     "other{{count} ta yozuv kutmoqda}}",
+     "Subtitle of the admin panel tile for Q&A moderation."),
 ]
 
 PLACEHOLDERS = {
     "qaAnswersCount": {"count": {"type": "int"}},
     "qaVerifyAttemptsLeft": {"count": {"type": "int"}},
     "qaReportsCount": {"count": {"type": "int"}},
+    "admNavQaHint": {"count": {"type": "int"}},
     "qaScore": {"score": {"type": "int"}},
     "qaFlagsFound": {"flags": {"type": "String"}},
     "qaVerifyRejected": {"reason": {"type": "String"}},
