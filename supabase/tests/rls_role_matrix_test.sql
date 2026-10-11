@@ -112,7 +112,16 @@ insert into matrix_tables values
  ('private.admin_settings',        null,           false, false, 'admin_requires_aal2'),
  ('private.referral_secret',       null,           false, false, 'id'),
  ('private.account_email_history', null,           false, false, 'email_hash'),
- ('private.referral_audit',        null,           false, false, 'event');
+ ('private.referral_audit',        null,           false, false, 'event'),
+ -- «Savol-javob»: no policy at all, so every role is denied directly and
+ -- only the SECURITY DEFINER functions let anything through.
+ ('public.qa_profiles',            'user_id',      false, false, 'status'),
+ ('public.qa_rate',                'user_id',      false, false, 'n'),
+ ('public.qa_questions',           'author_id',    false, false, 'title'),
+ ('public.qa_answers',             'author_id',    false, false, 'body'),
+ ('public.qa_votes',               'voter_id',     false, false, 'value'),
+ ('public.qa_reports',             'reporter_id',  false, false, 'reason'),
+ ('public.qa_translations',        null,           false, false, 'body');
 grant select on matrix_tables to anon, authenticated;
 
 -- Fix the column used for the no-op UPDATE to a real column of each table.
@@ -244,6 +253,32 @@ insert into private.referral_audit (event) select 'MATRIX_SEED'
 insert into private.account_email_history (email_hash) select repeat('c', 64)
   where not exists (select 1 from private.account_email_history);
 insert into content_records (record_id, published_version) select 'matrix-record', '1' where not exists (select 1 from content_records);
+
+-- «Savol-javob» rows: b is a verified expert, a asks, d reports.
+insert into qa_profiles (user_id, role, country_code, status, reason, decided_at)
+values ('50000000-0000-0000-0000-00000000000b', 'forensic_chemist', 'UZ', 'verified',
+        'document_ok', now());
+insert into qa_rate (user_id, day, kind, n)
+values ('50000000-0000-0000-0000-00000000000a', current_date, 'ask', 1);
+insert into qa_questions (id, author_id, lang, title, body, tags)
+values ('60000000-0000-0000-0000-0000000000b1'::uuid,
+        '50000000-0000-0000-0000-00000000000a', 'uz',
+        'Matritsa testi uchun savol sarlavhasi',
+        'Matritsa testi uchun yetarlicha uzun savol matni.', array['methods']);
+insert into qa_answers (id, question_id, author_id, lang, body)
+values ('60000000-0000-0000-0000-0000000000b2'::uuid,
+        '60000000-0000-0000-0000-0000000000b1'::uuid,
+        '50000000-0000-0000-0000-00000000000b', 'uz',
+        'Matritsa testi uchun yetarlicha uzun javob matni.');
+insert into qa_votes (answer_id, voter_id, value)
+values ('60000000-0000-0000-0000-0000000000b2'::uuid,
+        '50000000-0000-0000-0000-00000000000d', 1);
+insert into qa_reports (target_type, target_id, reporter_id, reason)
+values ('answer', '60000000-0000-0000-0000-0000000000b2',
+        '50000000-0000-0000-0000-00000000000d', 'matritsa testi');
+insert into qa_translations (target_type, target_id, lang, title, body, engine)
+values ('question', '60000000-0000-0000-0000-0000000000b1'::uuid, 'ru',
+        'Вопрос', 'Текст', 'matrix-seed');
 
 -- Every table must hold rows, otherwise "0 rows touched" proves nothing.
 do $$
