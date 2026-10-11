@@ -41,3 +41,31 @@ eski. Yangisi kerak bo‘lsa — `tool/qa_real_app.sh` bilan qayta olinadi.
 
 Do‘kon matnlari (nom, qisqa va to‘liq tavsif, uch tilda):
 `docs/play_store/listing.md`.
+
+## CI orqali yuklash: nega ishlamadi (2026-10-11)
+
+`tool/play_store_graphics.py` Play Developer API orqali yuklashga uringanda
+quyidagi aniq natija chiqdi (run 156):
+
+| Sinov | Natija |
+| --- | --- |
+| Bo'sh edit → commit | **o'tdi** |
+| Faqat `icon` → commit | 403 PERMISSION_DENIED |
+| Faqat `featureGraphic` → commit | 403 PERMISSION_DENIED |
+| Faqat `phoneScreenshots` → commit | 403 PERMISSION_DENIED |
+
+Ishlagan hisob: `play-upload@amiable-anagram-509514-f8.iam.gserviceaccount.com`
+(AAB yuklaydigan hisobning o'zi; unda «Управление страницей приложения» —
+Store presence — belgisi bor).
+
+`changesNotSentForReview=true` bilan urinilganda Play qaytardi:
+**«Changes are sent for review automatically. The query parameter
+changesNotSentForReview must not be set.»**
+
+Xulosa: bu ilovada do'kon sahifasi o'zgarishi avtomatik ko'rikka yuboriladi,
+ya'ni commit = nashrga yuborish. Shuning uchun «tahrirlash» huquqi yetmaydi —
+nashr (publish/release) darajasidagi huquq kerak. Bu ancha keng huquq
+(production'ga chiqarish imkonini ham beradi), shuning uchun tavsiya
+etilmaydi: rasmlarni Play Console'dan **qo'lda** yuklash xavfsizroq.
+
+Rasmlar yuklanmadi — Play'da sahifa o'zgarmagan holida qoldi.
