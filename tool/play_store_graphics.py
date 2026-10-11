@@ -26,7 +26,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 GRAPHICS = ROOT / "docs/play_store/graphics"
 
 
-def session() -> google.auth.transport.requests.AuthorizedSession:
+def session() -> tuple[google.auth.transport.requests.AuthorizedSession, str]:
     raw = os.environ.get("PLAY_SERVICE_ACCOUNT_JSON", "").strip()
     if not raw:
         sys.exit("PLAY_SERVICE_ACCOUNT_JSON is not set")
@@ -34,7 +34,34 @@ def session() -> google.auth.transport.requests.AuthorizedSession:
     creds = service_account.Credentials.from_service_account_info(
         info, scopes=[SCOPE]
     )
-    return google.auth.transport.requests.AuthorizedSession(creds)
+    # client_email — bu identifikator, sir emas: u Play Console’dagi
+    # «Пользователи и разрешения» ro‘yxatida ochiq turadi. Shuni chop etish
+    # CI qaysi hisob nomidan ishlayotganini aniqlashga imkon beradi.
+    # Kalitning o‘zi (private_key) hech qachon chop etilmaydi.
+    return (
+        google.auth.transport.requests.AuthorizedSession(creds),
+        str(info.get("client_email", "?")),
+    )
+
+
+def probe_commit(s, pkg: str) -> None:
+    """Bo‘sh edit yaratib, uni darhol commit qiladi.
+
+    Hech narsani o‘zgartirmaydi. Agar shu ham 403 bersa — muammo rasmlarda
+    emas, umuman commit huquqida; agar o‘tsa — muammo aynan do‘kon sahifasi
+    o‘zgarishida.
+    """
+    r = s.post(f"{API}/applications/{pkg}/edits", json={})
+    if not r.ok:
+        sys.exit(f"probe: cannot even create an edit: HTTP {r.status_code} "
+                 f"{r.text[:400]}")
+    edit = r.json()["id"]
+    r = s.post(f"{API}/applications/{pkg}/edits/{edit}:commit")
+    if r.ok:
+        print("probe: an empty edit commits fine — write access is there")
+        return
+    print(f"probe: empty commit refused: HTTP {r.status_code} {r.text[:600]}")
+    sys.exit("probe failed — the account cannot commit any edit at all")
 
 
 def check(response, what: str):
@@ -79,7 +106,9 @@ def main() -> None:
     # Play telefon skrinshotlari uchun 8 tadan ko‘pini qabul qilmaydi.
     shots = shots[:8]
 
-    s = session()
+    s, who = session()
+    print(f"acting as: {who}")
+    probe_commit(s, pkg)
     edit = check(
         s.post(f"{API}/applications/{pkg}/edits", json={}), "create edit"
     ).json()["id"]
@@ -115,9 +144,11 @@ def main() -> None:
             )
             print(f"  phoneScreenshots: {shot.name}")
 
-    check(
-        s.post(f"{API}/applications/{pkg}/edits/{edit}:commit"), "commit edit"
-    )
+    done = s.post(f"{API}/applications/{pkg}/edits/{edit}:commit")
+    if not done.ok:
+        print(f"commit refused: HTTP {done.status_code}")
+        print(done.text[:2000])
+        sys.exit("commit failed")
     print(f"committed: icon + feature + {len(shots)} screenshots "
           f"for {len(languages)} language(s)")
 
