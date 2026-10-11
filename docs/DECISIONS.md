@@ -180,3 +180,29 @@ uchun tahlil rejasini tuzib ber» desa — Pro.
 
 Mamlakat bo'yicha turli tarif hozircha joriy etilmaydi: avval bitta oddiy
 model bilan chiqiladi, haqiqiy foydalanish ko'ringandan keyin qayta qaraladi.
+
+## 2026-10-11 — Egasi «ruxsat senga» dedi: kutib turgan bandlar hal qilindi
+
+1. **Admin «Tasdiqlash arizalari» RPC production'ga qo‘llandi.**
+   `public.admin_pending_verifications(int,int)` — faqat qo‘shadi, hech narsa
+   o‘zgartirmaydi/o‘chirmaydi. Tekshirildi: SECURITY DEFINER, `anon` ga ruxsat
+   yo‘q, `authenticated` ga bor (ichkarida `private.admin_guard()` tekshiradi).
+   Orqaga qaytarish (bir qator):
+   `drop function if exists public.admin_pending_verifications(int, int);`
+   Supabase advisor: yangi ERROR yo‘q; funksiya boshqa `admin_*` RPC'lar bilan
+   bir xil WARN ro‘yxatida (bu kutilgan — himoya funksiya ichida).
+2. **Ekspert ish daftari — bepul.** Qurilmada saqlanadigan ish vositasi,
+   boshqa muallifning mehnati emas; Pro paywall ortiga qo‘yilmaydi.
+3. **Umumiy qurilma:** daftar chiqishda **avtomatik tozalanmaydi** — bu yolg‘iz
+   ishlaydigan ekspertning yozuvlarini bexosdan yo‘qotadi. Hozirgi himoya:
+   yozuvlar faqat qurilmada, serverga/AI'ga ketmaydi, «Butun daftarni tozalash»
+   tugmasi bor va maxfiylik matnida aytilgan. PIN/biometrika — backlog
+   (feature-freeze davrida qo‘shilmaydi).
+4. **`C-FM-ALGOR-MORTIS-DEFINITION` qoldirildi** — chaqirib olingan manbaga
+   bog‘langan ataylab qoldirilgan namuna: retraksiya ogohlantirishi va RAG
+   filtri ishlayotganini ko‘rsatadi (phase7_test, rag_pipeline_test).
+5. **Ikkinchi admin akkaunt — hali ochiq.** DB o‘zini-o‘zi tasdiqlashni
+   taqiqlaydi (to‘g‘ri qoida). Egasining maqomini tasdiqlash uchun ishonchli
+   hamkasbning elektron pochtasi kerak; keyin server tomonida rol beriladi
+   (audit yozuvi bilan). Egasidan: shu shaxsning emaili.
+

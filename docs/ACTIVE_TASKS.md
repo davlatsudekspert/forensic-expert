@@ -17,17 +17,14 @@ Yangilangan: 2026-10-11. Format: [holat] vazifa — egasi/keyingi qadam.
    Shuning uchun undan birorta yozuv yozilmadi (o‘qilmagan kitobdan yozish mumkin emas).
    Kerak: egasining kutubxona akkaunti bilan yuklangan PDF (yoki bosma nusxa). Kelgach — ABY bilan bir xil tartibda
    (o‘z so‘zimiz bilan, bet raqami bilan, muallifga hurmat sahifasida nomi bilan).
-1. [egasi] `supabase/migrations/20261010000000_admin_verification_inbox.sql` —
-   production'ga qo'llash. Faqat yangi RPC `admin_pending_verifications` qo'shadi;
-   mavjud jadval va o'zini-o'zi tasdiqlash taqiqi tegilmagan. **Qo'llanmaguncha
-   admin panelidagi «Tasdiqlash arizalari» ro'yxati bo'sh keladi.**
-2. [egasi] Egasining o'z professional maqomi: DB cheklovi o'zini-o'zi tasdiqlashni
-   taqiqlaydi (`approver_id <> applicant_id`). Yechim — ikkinchi admin akkaunt.
-3. [egasi] Ekspert ish daftari bepulmi yoki Pro? Hozir hamma uchun bepul.
-4. [egasi] Umumiy qurilmada daftarni chiqishda tozalash / PIN bilan himoyalash kerakmi?
-5. [egasi] `C-FM-ALGOR-MORTIS-DEFINITION` — chaqirib olingan manbaga bog'langan
-   ataylab qoldirilgan test namunasi. Qoldirilsinmi yoki `SRC-PMC12346081` ga ko'chirilsinmi?
-   (Tavsiya: qoldirilsin — retraksiya ogohlantirishi ishlayotganini ko'rsatadi.)
+1. [egasi] **Ikkinchi admin akkaunt** — egasining o‘z professional maqomini
+   tasdiqlash uchun. DB o‘zini-o‘zi tasdiqlashni taqiqlaydi. Kerak: ishonchli
+   hamkasbning elektron pochtasi; rol server tomonida, audit bilan beriladi.
+2. [egasi] **Giyasov «Sud tibbiyoti» (2018) PDF** — NIU kutubxonada bor
+   (`lib.niuuz.online/book/17769`), yuklab olish mehmon uchun yopiq.
+3. [egasi] **Play Console do‘kon sahifasi** — ilova nomi, tavsiflar (uz/ru/en),
+   512×512 ikonka, 1024×500 banner, ≥2 skrinshot; usiz ilova paket nomi bilan
+   ko‘rinadi. Matnlar tayyor: `docs/play_store/listing.md`.
 
 ## Bajarildi (2026-10-10)
 - [bajarildi] Ilmiy ishonchlilik statuslari va Pro vositalari (fasetli/teskari
