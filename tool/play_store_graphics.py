@@ -90,6 +90,53 @@ def upload_image(s, pkg: str, edit: str, lang: str, kind: str,
     print(f"  {kind}: {path.name}")
 
 
+def commit(s, pkg: str, edit: str, what: str) -> bool:
+    """Edit’ni commit qiladi. 403 bo‘lsa, bir marta
+    `changesNotSentForReview=true` bilan qayta uriniladi: nashr etilmagan
+    ilovada Play ba’zi o‘zgarishlarni avtomatik ko‘rikka yubora olmaydi.
+    Bu bayroq hech narsani ommaga chiqarmaydi.
+    """
+    url = f"{API}/applications/{pkg}/edits/{edit}:commit"
+    r = s.post(url)
+    if r.ok:
+        print(f"  OK: {what}")
+        return True
+    first = f"HTTP {r.status_code} {r.text.strip()[:300]}"
+    r2 = s.post(f"{url}?changesNotSentForReview=true")
+    if r2.ok:
+        print(f"  OK: {what} (changesNotSentForReview)")
+        return True
+    print(f"  REFUSED: {what}")
+    print(f"    plain:  {first}")
+    print(f"    noReview: HTTP {r2.status_code} {r2.text.strip()[:300]}")
+    return False
+
+
+def apply_one(s, pkg: str, lang: str, kind: str,
+              files: list[pathlib.Path]) -> bool:
+    """Bitta rasm turini o‘z edit’ida qo‘llaydi — qaysi biri rad etilishi
+    shunda aniq ko‘rinadi."""
+    edit = check(
+        s.post(f"{API}/applications/{pkg}/edits", json={}), "create edit"
+    ).json()["id"]
+    check(
+        s.delete(f"{API}/applications/{pkg}/edits/{edit}/listings/{lang}"
+                 f"/{kind}"),
+        f"clear {kind}",
+    )
+    for path in files:
+        check(
+            s.post(
+                f"{UPLOAD}/applications/{pkg}/edits/{edit}/listings/{lang}"
+                f"/{kind}?uploadType=media",
+                data=path.read_bytes(),
+                headers={"Content-Type": "image/png"},
+            ),
+            f"upload {kind} {path.name}",
+        )
+    return commit(s, pkg, edit, f"{kind} ({lang}, {len(files)} file(s))")
+
+
 def main() -> None:
     pkg = os.environ.get("FE_ANDROID_PACKAGE", "").strip()
     if not pkg:
@@ -97,25 +144,22 @@ def main() -> None:
 
     icon = GRAPHICS / "play-icon-512.png"
     feature = GRAPHICS / "play-feature-1024x500.png"
-    shots = sorted((GRAPHICS / "screenshots").glob("*.png"))
+    shots = sorted((GRAPHICS / "screenshots").glob("*.png"))[:8]
     for p in (icon, feature):
         if not p.is_file():
             sys.exit(f"missing {p.relative_to(ROOT)}")
     if len(shots) < 2:
         sys.exit("Play needs at least two phone screenshots")
-    # Play telefon skrinshotlari uchun 8 tadan ko‘pini qabul qilmaydi.
-    shots = shots[:8]
 
     s, who = session()
     print(f"acting as: {who}")
     probe_commit(s, pkg)
-    edit = check(
+
+    read_edit = check(
         s.post(f"{API}/applications/{pkg}/edits", json={}), "create edit"
     ).json()["id"]
-    print(f"edit {edit} for {pkg}")
-
     listings = check(
-        s.get(f"{API}/applications/{pkg}/edits/{edit}/listings"),
+        s.get(f"{API}/applications/{pkg}/edits/{read_edit}/listings"),
         "read listings",
     ).json().get("listings", [])
     languages = [x["language"] for x in listings]
@@ -123,34 +167,20 @@ def main() -> None:
         sys.exit("no store listing exists yet — write the texts first")
     print("languages:", ", ".join(languages))
 
+    failed = []
     for lang in languages:
         print(f"[{lang}]")
-        upload_image(s, pkg, edit, lang, "icon", icon)
-        upload_image(s, pkg, edit, lang, "featureGraphic", feature)
-        check(
-            s.delete(f"{API}/applications/{pkg}/edits/{edit}/listings/{lang}"
-                     f"/phoneScreenshots"),
-            f"clear phoneScreenshots ({lang})",
-        )
-        for shot in shots:
-            check(
-                s.post(
-                    f"{UPLOAD}/applications/{pkg}/edits/{edit}/listings/{lang}"
-                    f"/phoneScreenshots?uploadType=media",
-                    data=shot.read_bytes(),
-                    headers={"Content-Type": "image/png"},
-                ),
-                f"upload screenshot ({lang}) {shot.name}",
-            )
-            print(f"  phoneScreenshots: {shot.name}")
+        for kind, files in (
+            ("icon", [icon]),
+            ("featureGraphic", [feature]),
+            ("phoneScreenshots", shots),
+        ):
+            if not apply_one(s, pkg, lang, kind, files):
+                failed.append(f"{kind} ({lang})")
 
-    done = s.post(f"{API}/applications/{pkg}/edits/{edit}:commit")
-    if not done.ok:
-        print(f"commit refused: HTTP {done.status_code}")
-        print(done.text[:2000])
-        sys.exit("commit failed")
-    print(f"committed: icon + feature + {len(shots)} screenshots "
-          f"for {len(languages)} language(s)")
+    if failed:
+        sys.exit("refused by Play: " + ", ".join(failed))
+    print("all listing graphics committed")
 
 
 if __name__ == "__main__":
