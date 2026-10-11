@@ -478,3 +478,21 @@ Rus va ingliz tilida: ABY mavzusi ro‘yxatda ham, qidiruvda ham, sahifa sifatid
 
 Tekshirilmagan: real iOS/Android qurilma; ADMIN roli (ko‘rinish rolga bog‘liq emas).
 Barcha ABY yozuvlari `NEEDS_REVIEW` — ilmiy taqriz hali o‘tmagan.
+
+### 2-to‘plam (2026-10-11)
+
+ABY ning ikkinchi to‘plami (60 yozuv, 20 mavzu) va ikkita ekspert eslatmasi
+qo‘shilgandan keyin xuddi shu harness qayta ishga tushirildi:
+
+| Til / rol | Natija |
+|---|---|
+| uz TALABA | 6/6 PASS |
+| uz MUTAXASSIS | 6/6 PASS |
+| ru TALABA | 5/5 PASS |
+| en TALABA | 5/5 PASS |
+
+Shu yurishda topilgan va tuzatilgan nomuvofiqlik: yangi sud-tibbiyot mavzulari
+«O‘limdan keyingi o‘zgarishlar va PMI» kursiga tushib qolgan edi (suyak bo‘yicha
+yosh/jins, dalil bilan ishlash — PMI emas); kurs sarlavhasi mazmuniga moslandi.
+To‘liq suite: 2676 o‘tdi / 1 o‘tkazib yuborildi / 0 xato.
+
