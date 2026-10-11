@@ -19,6 +19,10 @@ on:
         description: "Upload release-signed AAB to Google Play INTERNAL testing as a DRAFT (requires signing + PLAY_SERVICE_ACCOUNT_JSON)"
         type: boolean
         default: false
+      qa_community:
+        description: "Enable the community Q&A section (FE_QA=true). TEST DISTRIBUTION ONLY — never for a public release build."
+        type: boolean
+        default: false
   push:
     branches:
       - claude/phase-8-12-final-release
@@ -50,6 +54,7 @@ jobs:
       # Mavjud FORENSIC EXPERT ilovasining o‘zgarmas ID’si. Boshqa ilovalar
       # (NFCSTORE, BugunBor) hech qachon nishon bo‘lmaydi.
       FE_ANDROID_PACKAGE: uz.forensicexpert.forensic_expert
+      FE_QA_INPUT: ${{ inputs.qa_community }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
@@ -90,6 +95,13 @@ jobs:
             DEFINES="--dart-define-from-file=config/backend.json"
             [ "$HAS_GEMINI" = "true" ] && DEFINES="$DEFINES --dart-define=FE_AI_REMOTE=true"
             echo "::notice::Backend: config/backend.json (FORENSIC EXPERT Supabase, AI remote: $HAS_GEMINI)"
+          fi
+          # «Savol-javob (Hamjamiyat)» — faqat qo‘lda ishga tushirilgan test
+          # tarqatishda. `push` bilan kelgan yig‘mada input bo‘sh bo‘ladi,
+          # ya’ni bo‘lim o‘chiq qoladi.
+          if [ "$FE_QA_INPUT" = "true" ]; then
+            DEFINES="$DEFINES --dart-define=FE_QA=true"
+            echo "::notice::Community Q&A: ON (test distribution only)"
           fi
           flutter build appbundle --release $DEFINES
           flutter build apk --release $DEFINES
@@ -177,6 +189,7 @@ jobs:
       FE_SUPABASE_URL: ${{ secrets.FE_SUPABASE_URL }}
       FE_SUPABASE_ANON_KEY: ${{ secrets.FE_SUPABASE_ANON_KEY }}
       HAS_GEMINI: ${{ secrets.GEMINI_API_KEY != '' }}
+      FE_QA_INPUT: ${{ inputs.qa_community }}
     steps:
       - uses: actions/checkout@v4
       - name: Select newest Xcode (26+ required for upload)
@@ -207,6 +220,10 @@ jobs:
             DEFINES="--dart-define-from-file=config/backend.json"
             [ "$HAS_GEMINI" = "true" ] && DEFINES="$DEFINES --dart-define=FE_AI_REMOTE=true"
             echo "::notice::Backend: config/backend.json (FORENSIC EXPERT Supabase, AI remote: $HAS_GEMINI)"
+          fi
+          if [ "$FE_QA_INPUT" = "true" ]; then
+            DEFINES="$DEFINES --dart-define=FE_QA=true"
+            echo "::notice::Community Q&A: ON (test distribution only)"
           fi
           echo "DEFINES=$DEFINES" >> "$GITHUB_ENV"
           flutter build ios --release --no-codesign $DEFINES
