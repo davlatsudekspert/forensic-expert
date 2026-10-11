@@ -114,48 +114,49 @@ void main() {
     ]);
   });
 
-  for (final (lang, chip, note) in const [
-    (
-      'uz',
-      'Misol: boshqa modda',
-      'Bu rasm boshqa modda misolida; usul tamoyilini ko‘rsatadi',
-    ),
-    (
-      'ru',
-      'Пример: другое вещество',
-      'Этот рисунок взят из примера по другому веществу',
-    ),
-    (
-      'en',
-      'Example: another substance',
-      "This figure is from another substance's example",
-    ),
-  ]) {
-    testWidgets('$lang: GC-MS usul sahifasida real rasmlar «boshqa modda»', (
-      tester,
-    ) async {
+  for (final lang in const ['uz', 'ru', 'en']) {
+    testWidgets('$lang: GC-MS usul sahifasida boshqa moddaning real rasmi '
+        'ko‘rsatilmaydi', (tester) async {
       await open(tester, lang, Routes.knowledgeEntry('method-gcms'));
-      final gallery = find.byKey(const Key('gallery.method-gcms'));
-      await tester.dragUntilVisible(
-        gallery,
-        find.byType(ListView).first,
-        const Offset(0, -300),
-      );
       await tester.pumpAndSettle();
+      // Paketda bunday rasm bor (5-MAPB), lekin usul kartasida chiqmaydi:
+      // foydalanuvchi kelgan moddaga aloqasi yo‘q.
       final meta = pilot.evidence.imagesFor('method-gcms');
-      final real = meta.where(isOtherSubstanceExample).length;
-      expect(real, greaterThanOrEqualTo(2)); // 5-MAPB va siydikda THC-COOH
-      expect(meta.length, greaterThan(real)); // sxema ham bor
-      // Galereya lazy ListView ichida: ko‘rinadiganlari sanaladi, lekin kamida
-      // bittasi belgilangan va sxema kartasida belgi yo‘q.
-      expect(find.text(chip), findsWidgets);
-      expect(find.textContaining(note), findsWidgets);
-      expect(
-        find.byType(OtherSubstanceExampleNote).evaluate().length,
-        lessThanOrEqualTo(real),
-      );
+      expect(meta.where(isOtherSubstanceExample), isNotEmpty);
+      // Galereya qoladi — umumiy sxema uchun; lekin boshqa moddaning real
+      // o‘lchov rasmi va uning yorlig‘i yo‘q.
+      expect(find.byType(OtherSubstanceExampleNote), findsNothing);
+      for (final m in meta.where(isOtherSubstanceExample)) {
+        expect(find.byKey(Key('image.${m.id}')), findsNothing, reason: m.id);
+      }
     });
   }
+
+  testWidgets('TLC usul sahifasida kannabinoid plastinkasi yo‘q', (
+    tester,
+  ) async {
+    await open(tester, 'uz', Routes.knowledgeEntry('method-tlc'));
+    await tester.pumpAndSettle();
+    expect(
+      pilot.evidence
+          .imagesFor('method-tlc')
+          .where(isOtherSubstanceExample),
+      isEmpty,
+      reason: 'rasm o‘zi ko‘rsatayotgan moddaga ko‘chirilgan',
+    );
+    expect(find.byType(OtherSubstanceExampleNote), findsNothing);
+  });
+
+  testWidgets('kannabinoid plastinkasi THC modda sahifasida turadi', (
+    tester,
+  ) async {
+    expect(
+      pilot.evidence
+          .imagesFor('thc')
+          .map((m) => m.id),
+      contains('IMG-EXT-pmc9558087-ac2c01627_0004'),
+    );
+  });
 
   testWidgets('modda sahifasi (etanol): struktura rasmida belgi yo‘q', (
     tester,

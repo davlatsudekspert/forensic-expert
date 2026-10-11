@@ -207,9 +207,14 @@ class ScientificImageGallery extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
+    // Usul yozuviga biriktirilgan real o‘lchov rasmi aniq bir moddani
+    // ko‘rsatadi, foydalanuvchi kelgan moddani emas. Shuning uchun usul
+    // kartasida ko‘rsatilmaydi: benzodiazepin o‘qiyotgan ekspertga
+    // kannabinoid plastinkasi chiqishi xato. Bunday rasm o‘zi ko‘rsatayotgan
+    // modda sahifasida turadi; usul kartasida umumiy sxema qoladi.
     final images = [
       for (final m in ref.watch(evidenceDataProvider).imagesFor(entityId))
-        if (!exclude.contains(m.kind)) m,
+        if (!exclude.contains(m.kind) && !isOtherSubstanceExample(m)) m,
     ];
     if (images.isEmpty) return const SizedBox.shrink();
     return Column(
