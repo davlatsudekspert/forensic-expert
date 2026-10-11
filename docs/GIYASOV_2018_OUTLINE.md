@@ -8,7 +8,8 @@
 Egasi 2026-10-11 da ikkinchi darslikni ham berdi: **Искандаров А.И.,
 Қулдошев Д.Р. «Суд тиббиёти», «MERIYUS», Тошкент, 2009** (Google Drive
 fayli `14bwRGi6ZdwHT6nZgqT5BWesG_nKN6C-x`, PDF, 17,3 MB). Uning tuzilmasi
-hali chiqarilmagan — sabab quyida.
+`docs/ISKANDAROV_2009_OUTLINE.md` da; u ham to'liq o'qilmadi (287 KB,
+VI bob o'rtasida kesilgan).
 
 ## Manbadan foydalanish qoidasi (ABY bilan bir xil)
 
