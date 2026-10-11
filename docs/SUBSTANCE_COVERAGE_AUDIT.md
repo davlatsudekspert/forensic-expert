@@ -68,3 +68,30 @@ bilan** (`claim` + `citation`, `source_id` + `locator`):
 
 **Qoida:** manbasiz bironta jumla yozilmaydi. Topilmagan joyda bo'lim
 «ma'lumot topilmadi» deb ochiq ko'rsatiladi — to'qib yozilmaydi.
+
+
+## «Tergovchi savollari» bo'limi (2026-10-11)
+
+Egasining talabi: o'lim sababini aniqlash va tergovchi qo'yadigan savollarni
+alohida saralab, Pro ichiga qo'shish.
+
+Yangi mavzu `court.topic.investigator` — «Sudda so'roq: tayyorgarlik»
+bo'limining ichida, shuning uchun u allaqachon **Pro** darvozasi ortida
+(`ProductFeature.courtTestimonyPrep`) va bepul foydalanuvchi namunaviy
+qismini ko'radi. Yangi imkoniyat ochilmadi — mavjudi kengaytirildi.
+
+Kiritilgan beshta savol, hammasi Ғиёсов 2018 dan, bo'limi ko'rsatilgan
+holda: qaror savollariga xulosada qanday javob beriladi (1.11); qo'yilmagan
+savolga tashabbus bo'yicha javob berish va to'xtamda huquqbuzarlik sabablari
+(1.9, 1.11); savol vakolatdan tashqarida bo'lsa nima qilinadi (1.9, 1.10);
+qayta ekspertizada o'sha savollar qayta qo'yilishi va usullarning ilmiy
+asoslanganligi (1.10); «ekspert xulosasi» bilan «tekshiruv dalolatnomasi»
+farqi (1.11).
+
+**Hali yozilmagani — va sababi.** O'lim sababini aniqlash bo'yicha
+tergovchining tipik savollari (o'lim sababi, o'lim muddati, jarohatlarning
+hayotiyligi, sababiy bog'liqlik, mastlik darajasi, shikastlanishdan keyin
+mustaqil harakat) kitobning **80-betdan keyingi** boblarida. Ular hali
+olinmadi: Drive ulagichi 10 MB dan katta faylni bermaydi va matnni ~287 KB
+da kesadi. Kitob Google hujjatiga aylantirilsa, bu savollar ham shu tartibda
+yoziladi. Manbasiz yozilmaydi.

@@ -228,6 +228,51 @@ void main() {
     expect(find.textContaining('lex.uz'), findsWidgets);
   });
 
+  testWidgets('tergovchi savollari: qaror savollariga javob, vakolat '
+      'chegarasi va qayta ekspertiza', (tester) async {
+    await pumpApp(
+      tester,
+      settings: completedSettings(lang: 'uz'),
+      initialLocation: Routes.courtPrepTopic('court.topic.investigator'),
+      overrides: _overrides(pro: true),
+    );
+    // Beshta savol ham shu mavzuda.
+    for (final id in [
+      'court.q.inv_answer_form',
+      'court.q.inv_initiative',
+      'court.q.inv_out_of_competence',
+      'court.q.inv_repeat',
+      'court.q.inv_act_vs_report',
+    ]) {
+      expect(_row(id), findsOne, reason: id);
+    }
+    await tester.tap(_row('court.q.inv_out_of_competence'));
+    await tester.pumpAndSettle();
+    // Vakolatdan tashqaridagi savolga taxmin yozilmaydi — shu aytilgan.
+    await _scrollTo(tester, _key('court.shortAnswer'));
+    expect(find.textContaining('vakolati doirasida'), findsWidgets);
+    // Manba — ustozning darsligi, bo‘limi ko‘rsatilgan holda.
+    await _scrollTo(tester, _key('court.loc.court_giyasov_fm2018'));
+    expect(find.textContaining('1.9'), findsWidgets);
+  });
+
+  testWidgets('tergovchi savollari: qayta ekspertizada o‘sha savollar '
+      'qo‘yiladi (ru va en ham)', (tester) async {
+    for (final (lang, needle) in [
+      ('ru', 'не новые'),
+      ('en', 'not new questions'),
+    ]) {
+      await pumpApp(
+        tester,
+        settings: completedSettings(lang: lang),
+        initialLocation: Routes.courtPrepQuestion('court.q.inv_repeat'),
+        overrides: _overrides(pro: true),
+      );
+      await _scrollTo(tester, _key('court.shortAnswer'));
+      expect(find.textContaining(needle), findsWidgets, reason: lang);
+    }
+  });
+
   testWidgets('yurisdiksiya: xalqaro — umumiy tamoyillar', (tester) async {
     await pumpApp(
       tester,

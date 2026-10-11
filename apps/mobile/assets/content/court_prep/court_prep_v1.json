@@ -368,6 +368,29 @@
         "court.q.comm_own_error",
         "court.q.comm_numbers"
       ]
+    },
+    {
+      "id": "court.topic.investigator",
+      "order": 18,
+      "icon": "gavel",
+      "title": {
+        "uz": "Tergovchi qo‘yadigan savollar",
+        "ru": "Вопросы, которые ставит следователь",
+        "en": "The questions the investigator puts"
+      },
+      "summary": {
+        "uz": "Qarordagi savollar qanday javob oladi, vakolat qayerda tugaydi.",
+        "ru": "Как отвечают на вопросы постановления и где кончается компетенция.",
+        "en": "How the questions in the order are answered, and where competence ends."
+      },
+      "pending": false,
+      "question_ids": [
+        "court.q.inv_answer_form",
+        "court.q.inv_initiative",
+        "court.q.inv_out_of_competence",
+        "court.q.inv_repeat",
+        "court.q.inv_act_vs_report"
+      ]
     }
   ],
   "questions": [
@@ -11733,6 +11756,819 @@
           ]
         }
       ]
+    },
+    {
+      "id": "court.q.inv_answer_form",
+      "topic": "court.topic.investigator",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Tergovchi qarorida qo‘yilgan savollarga xulosada qanday javob berasiz?",
+        "ru": "Как вы отвечаете в заключении на вопросы, поставленные в постановлении следователя?",
+        "en": "How do you answer, in the report, the questions put in the investigator's order?"
+      },
+      "tests": {
+        "uz": "Yakuniy qism aynan qo‘yilgan savollarga javob shaklida tuzilganmi va turlicha talqinga yo‘l qo‘ymaydimi [court_giyasov_fm2018].",
+        "ru": "Составлена ли итоговая часть именно в форме ответов на поставленные вопросы и не допускает ли разночтений [court_giyasov_fm2018].",
+        "en": "Whether the final part is written as answers to the questions actually put, and leaves no room for differing readings [court_giyasov_fm2018]."
+      },
+      "short_answer": {
+        "uz": "Xulosaning yakuniy qismi (to‘xtam) qo‘yilgan savollarga javob shaklida, turli talqinga yo‘l qo‘ymaydigan aniq va tushunarli tilda yoziladi. Savollar xulosaning kirish qismida o‘zgartirilmasdan keltiriladi, tadqiqot qismi esa maxsus bilimi yo‘q odam uchun ham tushunarli tilda bayon etiladi [court_giyasov_fm2018].",
+        "ru": "Итоговая часть заключения составляется в форме ответов на поставленные вопросы, ясным языком, не допускающим разночтений. Сами вопросы приводятся во вводной части без изменений, а исследовательская часть излагается языком, понятным и человеку без специальных познаний [court_giyasov_fm2018].",
+        "en": "The final part of the report is written as answers to the questions put, in clear language that leaves no room for differing readings. The questions themselves appear unchanged in the introduction, and the examination part is written so that a person without special knowledge can follow it [court_giyasov_fm2018]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Qaror yoki ajrim, undagi savollar ro‘yxati; xulosaning kirish qismida ular o‘zgarmagan holda turganini tekshiring [court_giyasov_fm2018].",
+            "ru": "Постановление или определение и перечень вопросов из него; проверьте, что во вводной части они приведены без изменений [court_giyasov_fm2018].",
+            "en": "The order and the list of questions it contains; check that the introduction reproduces them unchanged [court_giyasov_fm2018]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Har bir savolga alohida javob beriladi; javobsiz qolgan savol bo‘lsa, sababi aytiladi.",
+            "ru": "На каждый вопрос даётся отдельный ответ; если вопрос остался без ответа, называется причина.",
+            "en": "Each question gets its own answer; where a question is left unanswered, the reason is given."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Ikki xil tushunishga yo‘l qo‘yadigan ifoda — to‘xtam aniq bo‘lishi shart.",
+            "ru": "Формулировка, допускающая двоякое понимание, — итоговая часть должна быть однозначной.",
+            "en": "A wording open to two readings — the final part must be unambiguous."
+          }
+        ]
+      },
+      "followups": [
+        {
+          "q": {
+            "uz": "Savol noaniq qo‘yilgan bo‘lsa nima qilasiz?",
+            "ru": "Что вы делаете, если вопрос поставлен неясно?",
+            "en": "What do you do if a question is put unclearly?"
+          },
+          "a": {
+            "uz": "Savolni qanday tushunganimni xulosada ochiq yozaman va shu tushunish bo‘yicha javob beraman; kerak bo‘lsa aniqlashtirishni so‘rayman.",
+            "ru": "Я прямо указываю в заключении, как понял вопрос, и отвечаю в этом понимании; при необходимости прошу уточнения.",
+            "en": "I state in the report how I understood the question and answer on that understanding; where necessary I ask for clarification."
+          }
+        },
+        {
+          "q": {
+            "uz": "Savollar tartibini o‘zgartira olasizmi?",
+            "ru": "Можете ли вы изменить порядок вопросов?",
+            "en": "May you change the order of the questions?"
+          },
+          "a": {
+            "uz": "Javoblarni mantiqiy tartibda berish mumkin, lekin savolning o‘zi kirish qismida qaror matnidagidek keltiriladi va hech bir savol tushib qolmaydi [court_giyasov_fm2018].",
+            "ru": "Ответы можно дать в логическом порядке, но сам вопрос во вводной части приводится так, как в постановлении, и ни один вопрос не выпадает [court_giyasov_fm2018].",
+            "en": "The answers may follow a logical order, but each question appears in the introduction as the order worded it, and none is dropped [court_giyasov_fm2018]."
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "uz": "Hujjat shakli va mazmuni Sog‘liqni saqlash vazirligi belgilagan tartibga bo‘ysunadi; darslikdagi umumiy tavsif amaldagi shaklni almashtirmaydi [court_giyasov_fm2018].",
+          "ru": "Форма и содержание документа подчиняются порядку, установленному Министерством здравоохранения; общее описание в учебнике не заменяет действующую форму [court_giyasov_fm2018].",
+          "en": "The form and content of the document follow the procedure set by the Ministry of Health; the textbook's general description does not replace the form in force [court_giyasov_fm2018]."
+        }
+      ],
+      "links": [],
+      "locators": {
+        "court_giyasov_fm2018": [
+          "sec:1.11"
+        ]
+      },
+      "sample": false,
+      "jurisdiction": "ALL",
+      "updated": "2026-10-09",
+      "translation_status": {
+        "uz": "AUTHORED",
+        "ru": "DRAFT",
+        "en": "DRAFT"
+      },
+      "citations": [
+        "court_giyasov_fm2018"
+      ],
+      "claims": [
+        {
+          "id": "court.q.inv_answer_form.tests",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.11"
+              ],
+              "support": "full"
+            }
+          ]
+        },
+        {
+          "id": "court.q.inv_answer_form.short_answer",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.11"
+              ],
+              "support": "full"
+            }
+          ]
+        },
+        {
+          "id": "court.q.inv_answer_form.documents.0",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.11"
+              ],
+              "support": "full"
+            }
+          ]
+        },
+        {
+          "id": "court.q.inv_answer_form.followup.1.a",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.11"
+              ],
+              "support": "full"
+            }
+          ]
+        },
+        {
+          "id": "court.q.inv_answer_form.limitation.0",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.11"
+              ],
+              "support": "full"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "court.q.inv_initiative",
+      "topic": "court.topic.investigator",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Sizga qo‘yilmagan, lekin ish uchun muhim holatni xulosaga yoza olasizmi?",
+        "ru": "Можете ли вы включить в заключение обстоятельство, о котором вас не спрашивали, но которое важно для дела?",
+        "en": "May you include in the report a circumstance you were not asked about but which matters to the case?"
+      },
+      "tests": {
+        "uz": "Ekspert tashabbus huquqidan to‘g‘ri foydalanganmi — faqat ekspertiza predmetiga oid masalada [court_giyasov_fm2018].",
+        "ru": "Правильно ли эксперт воспользовался правом инициативы — только по вопросу, относящемуся к предмету экспертизы [court_giyasov_fm2018].",
+        "en": "Whether the expert used the right of initiative correctly — only on a matter within the subject of the examination [court_giyasov_fm2018]."
+      },
+      "short_answer": {
+        "uz": "Ha. Ekspertning tashabbus huquqi bor: xulosada nafaqat qo‘yilgan savollar bo‘yicha, balki ekspertiza predmetiga oid va ish uchun ahamiyatli boshqa masalalar bo‘yicha ham fikr bildirish mumkin. Bunday holatlar to‘xtamda alohida ko‘rsatiladi [court_giyasov_fm2018].",
+        "ru": "Да. У эксперта есть право инициативы: в заключении можно высказаться не только по поставленным вопросам, но и по другим обстоятельствам, относящимся к предмету экспертизы и значимым для дела. Такие обстоятельства указываются в итоговой части отдельно [court_giyasov_fm2018].",
+        "en": "Yes. The expert has a right of initiative: the report may address not only the questions put but other matters within the subject of the examination that matter to the case. Such findings are set out separately in the final part [court_giyasov_fm2018]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Qaysi holat tashabbus bo‘yicha kiritilganini va u ekspertiza predmetiga qanday aloqadorligini yozib qo‘ying.",
+            "ru": "Зафиксируйте, какое обстоятельство внесено по инициативе и как оно относится к предмету экспертизы.",
+            "en": "Record which finding was added on your own initiative and how it falls within the subject of the examination."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "To‘xtamda huquqbuzarlik sabablari, uning sodir etilishiga imkon bergan shart-sharoitlar va ularni bartaraf etish bo‘yicha tavsiyalar ham berilishi mumkin [court_giyasov_fm2018].",
+            "ru": "В итоговой части могут приводиться причины правонарушения, условия, способствовавшие его совершению, и рекомендации по их устранению [court_giyasov_fm2018].",
+            "en": "The final part may also give the causes of the offence, the conditions that allowed it, and recommendations for removing them [court_giyasov_fm2018]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Tashabbus niqobi ostida ekspertiza predmetidan tashqariga chiqish.",
+            "ru": "Под видом инициативы выходить за пределы предмета экспертизы.",
+            "en": "Using initiative as cover for going outside the subject of the examination."
+          }
+        ]
+      },
+      "followups": [
+        {
+          "q": {
+            "uz": "Bu fikringiz dalil kuchiga ega bo‘ladimi?",
+            "ru": "Будет ли это суждение иметь доказательственную силу?",
+            "en": "Does that opinion carry evidential weight?"
+          },
+          "a": {
+            "uz": "Ekspert xulosasi boshqa dalillar qatorida baholanadi va hech qachon oldindan muqarrar dalil kuchiga ega emas; tergovchi yoki sud qo‘shilmasa, buni qaror yoki ajrimda asoslab berishi lozim [court_giyasov_fm2018].",
+            "ru": "Заключение эксперта оценивается наряду с другими доказательствами и никогда не имеет заранее установленной силы; если следователь или суд не согласны, они обязаны обосновать это в постановлении или определении [court_giyasov_fm2018].",
+            "en": "The expert's report is weighed alongside the other evidence and never has predetermined force; if the investigator or the court disagrees, they must give their reasons in the order or ruling [court_giyasov_fm2018]."
+          }
+        },
+        {
+          "q": {
+            "uz": "Tashabbus bo‘yicha yozgan holatingiz qarorda so‘ralmagan bo‘lsa, uni qayerga yozasiz?",
+            "ru": "Если обстоятельство, выявленное по инициативе, не запрашивалось в постановлении, где вы его укажете?",
+            "en": "Where do you put a finding made on your own initiative that the order did not ask for?"
+          },
+          "a": {
+            "uz": "Xulosaning yakuniy qismida, qo‘yilgan savollarga javoblardan keyin, alohida ko‘rsatiladi [court_giyasov_fm2018].",
+            "ru": "В итоговой части заключения, после ответов на поставленные вопросы, отдельно [court_giyasov_fm2018].",
+            "en": "In the final part of the report, separately, after the answers to the questions put [court_giyasov_fm2018]."
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "uz": "Tashabbus huquqi vakolat chegarasini kengaytirmaydi: to‘xtamdagi holatlar ekspertiza vakolati doirasida, obyektiv ma’lumotlardan kelib chiqqan va ilmiy asoslangan bo‘lishi shart [court_giyasov_fm2018].",
+          "ru": "Право инициативы не расширяет пределы компетенции: обстоятельства в итоговой части должны быть в рамках компетенции экспертизы, основаны на объективных данных и научно обоснованы [court_giyasov_fm2018].",
+          "en": "The right of initiative does not widen competence: what the final part states must lie within the remit of the examination, rest on objective data and be scientifically grounded [court_giyasov_fm2018]."
+        }
+      ],
+      "links": [],
+      "locators": {
+        "court_giyasov_fm2018": [
+          "sec:1.9",
+          "sec:1.11"
+        ]
+      },
+      "sample": false,
+      "jurisdiction": "ALL",
+      "updated": "2026-10-09",
+      "translation_status": {
+        "uz": "AUTHORED",
+        "ru": "DRAFT",
+        "en": "DRAFT"
+      },
+      "citations": [
+        "court_giyasov_fm2018"
+      ],
+      "claims": [
+        {
+          "id": "court.q.inv_initiative.tests",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.9",
+                "sec:1.11"
+              ],
+              "support": "full"
+            }
+          ]
+        },
+        {
+          "id": "court.q.inv_initiative.short_answer",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.9",
+                "sec:1.11"
+              ],
+              "support": "full"
+            }
+          ]
+        },
+        {
+          "id": "court.q.inv_initiative.explain.0",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.9",
+                "sec:1.11"
+              ],
+              "support": "full"
+            }
+          ]
+        },
+        {
+          "id": "court.q.inv_initiative.followup.0.a",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.9",
+                "sec:1.11"
+              ],
+              "support": "full"
+            }
+          ]
+        },
+        {
+          "id": "court.q.inv_initiative.followup.1.a",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.9",
+                "sec:1.11"
+              ],
+              "support": "full"
+            }
+          ]
+        },
+        {
+          "id": "court.q.inv_initiative.limitation.0",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.9",
+                "sec:1.11"
+              ],
+              "support": "full"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "court.q.inv_out_of_competence",
+      "topic": "court.topic.investigator",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Qarordagi savol vakolatingizdan tashqarida bo‘lsa nima qilasiz?",
+        "ru": "Что вы делаете, если вопрос в постановлении выходит за пределы вашей компетенции?",
+        "en": "What do you do when a question in the order falls outside your competence?"
+      },
+      "tests": {
+        "uz": "Ekspert faqat o‘z vakolati doirasida ish ko‘rganmi va chegarani ochiq aytganmi [court_giyasov_fm2018].",
+        "ru": "Действовал ли эксперт только в пределах своей компетенции и прямо ли обозначил границу [court_giyasov_fm2018].",
+        "en": "Whether the expert acted only within their remit and said plainly where the line is [court_giyasov_fm2018]."
+      },
+      "short_answer": {
+        "uz": "Ekspert faqat o‘z vakolati doirasida faoliyat olib boradi. Savol vakolatdan tashqarida bo‘lsa, bu xulosada ochiq yoziladi va javob berilmaydi; o‘rniga taxmin yozilmaydi [court_giyasov_fm2018].",
+        "ru": "Эксперт действует только в пределах своей компетенции. Если вопрос выходит за её пределы, это прямо указывается в заключении и ответ не даётся; предположение вместо ответа не пишется [court_giyasov_fm2018].",
+        "en": "The expert works only within their remit. If a question falls outside it, that is stated plainly in the report and no answer is given; a guess is not written in its place [court_giyasov_fm2018]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Xulosada vakolat chegarasi va javobsiz qolgan savolning sababi yozilganini tekshiring.",
+            "ru": "Проверьте, что в заключении указаны границы компетенции и причина, по которой вопрос остался без ответа.",
+            "en": "Check that the report states the limit of competence and why the question was left unanswered."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Ekspertning protsessual mustaqilligi o‘tkazilgan tekshiruv, uning natijalari va xulosa uchun shaxsiy mas’uliyat yuklaydi [court_giyasov_fm2018].",
+            "ru": "Процессуальная самостоятельность эксперта влечёт его личную ответственность за проведённое исследование, его результаты и заключение [court_giyasov_fm2018].",
+            "en": "The expert's procedural independence carries personal responsibility for the examination, its results and the conclusion [court_giyasov_fm2018]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Huquqiy kvalifikatsiya haqidagi savolga tibbiy xulosa ko‘rinishida javob berish.",
+            "ru": "Отвечать на вопрос о правовой квалификации в форме медицинского вывода.",
+            "en": "Answering a question of legal classification as if it were a medical finding."
+          }
+        ]
+      },
+      "followups": [
+        {
+          "q": {
+            "uz": "Boshqa mutaxassis kerak bo‘lsa-chi?",
+            "ru": "А если нужен другой специалист?",
+            "en": "And if another specialist is needed?"
+          },
+          "a": {
+            "uz": "Buni xulosada ko‘rsataman; kompleks yoki komission ekspertiza tayinlanishi mumkin [court_giyasov_fm2018].",
+            "ru": "Указываю это в заключении; может быть назначена комплексная или комиссионная экспертиза [court_giyasov_fm2018].",
+            "en": "I state it in the report; a complex or commission examination may be ordered [court_giyasov_fm2018]."
+          }
+        },
+        {
+          "q": {
+            "uz": "Savol vakolatdan tashqarida ekanini kim hal qiladi?",
+            "ru": "Кто решает, что вопрос выходит за пределы компетенции?",
+            "en": "Who decides that a question is outside competence?"
+          },
+          "a": {
+            "uz": "Buni ekspertning o‘zi baholaydi va xulosada asoslaydi; protsessual mustaqillik shuni talab qiladi va shu bilan birga shaxsiy mas’uliyat yuklaydi [court_giyasov_fm2018].",
+            "ru": "Это оценивает сам эксперт и обосновывает в заключении; процессуальная самостоятельность этого требует и одновременно влечёт личную ответственность [court_giyasov_fm2018].",
+            "en": "The expert judges it and gives reasons in the report; procedural independence requires that and carries personal responsibility with it [court_giyasov_fm2018]."
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "uz": "Vakolat chegarasi ekspertning o‘z ixtisosligi va tayyorgarligi bilan belgilanadi; bu yerdagi umumiy qoida muayyan ekspertiza turi qoidalarini almashtirmaydi [court_giyasov_fm2018].",
+          "ru": "Пределы компетенции определяются специальностью и подготовкой самого эксперта; общее правило здесь не заменяет правил конкретного вида экспертизы [court_giyasov_fm2018].",
+          "en": "The limit of competence is set by the expert's own specialty and training; the general rule here does not replace the rules for a particular kind of examination [court_giyasov_fm2018]."
+        }
+      ],
+      "links": [],
+      "locators": {
+        "court_giyasov_fm2018": [
+          "sec:1.9",
+          "sec:1.10"
+        ]
+      },
+      "sample": false,
+      "jurisdiction": "ALL",
+      "updated": "2026-10-09",
+      "translation_status": {
+        "uz": "AUTHORED",
+        "ru": "DRAFT",
+        "en": "DRAFT"
+      },
+      "citations": [
+        "court_giyasov_fm2018"
+      ],
+      "claims": [
+        {
+          "id": "court.q.inv_out_of_competence.tests",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.9",
+                "sec:1.10"
+              ],
+              "support": "full"
+            }
+          ]
+        },
+        {
+          "id": "court.q.inv_out_of_competence.short_answer",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.9",
+                "sec:1.10"
+              ],
+              "support": "full"
+            }
+          ]
+        },
+        {
+          "id": "court.q.inv_out_of_competence.explain.0",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.9",
+                "sec:1.10"
+              ],
+              "support": "full"
+            }
+          ]
+        },
+        {
+          "id": "court.q.inv_out_of_competence.followup.0.a",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.9",
+                "sec:1.10"
+              ],
+              "support": "full"
+            }
+          ]
+        },
+        {
+          "id": "court.q.inv_out_of_competence.followup.1.a",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.9",
+                "sec:1.10"
+              ],
+              "support": "full"
+            }
+          ]
+        },
+        {
+          "id": "court.q.inv_out_of_competence.limitation.0",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.9",
+                "sec:1.10"
+              ],
+              "support": "full"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "court.q.inv_repeat",
+      "topic": "court.topic.investigator",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "Qayta ekspertizada ekspertlar oldiga qanday savollar qo‘yiladi?",
+        "ru": "Какие вопросы ставятся перед экспертами при повторной экспертизе?",
+        "en": "What questions are put to the experts in a repeat examination?"
+      },
+      "tests": {
+        "uz": "Qayta ekspertizaning mohiyati tushunilganmi: yangi emas, aynan hal qilingan savollar [court_giyasov_fm2018].",
+        "ru": "Понята ли суть повторной экспертизы: не новые, а те же разрешённые вопросы [court_giyasov_fm2018].",
+        "en": "Whether the point of a repeat examination is understood: not new questions but the same ones already answered [court_giyasov_fm2018]."
+      },
+      "short_answer": {
+        "uz": "Qayta ekspertizada ekspertlar oldiga yangi emas, dastlabki ekspertizada hal qilingan o‘sha savollar takroran qo‘yiladi. Bundan tashqari, avvalgi ekspertizada qo‘llanilgan tekshiruv usullarining ilmiy asoslanganligi masalasi ham qo‘yilishi mumkin [court_giyasov_fm2018].",
+        "ru": "При повторной экспертизе перед экспертами ставятся не новые, а те же вопросы, которые были разрешены первичной экспертизой. Кроме того, может быть поставлен вопрос о научной обоснованности применённых ранее методов исследования [court_giyasov_fm2018].",
+        "en": "A repeat examination puts to the experts not new questions but the same ones the first examination answered. In addition, the scientific soundness of the methods used earlier may itself be put in question [court_giyasov_fm2018]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Dastlabki xulosa, undagi savollar va qo‘llanilgan usullar ro‘yxati.",
+            "ru": "Первичное заключение, перечень его вопросов и применённых методов.",
+            "en": "The first report, the questions it answered and the methods it used."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Bir ish bo‘yicha o‘tkazilgan bir necha ekspertiza natijalari farqli bo‘lsa, tergovchi yoki sud o‘z tanlovini qaror yoki ajrimda asoslab berishi lozim [court_giyasov_fm2018].",
+            "ru": "Если результаты нескольких экспертиз по одному делу расходятся, следователь или суд обязаны обосновать свой выбор в постановлении или определении [court_giyasov_fm2018].",
+            "en": "Where several examinations in one case disagree, the investigator or the court must give reasons for the choice made, in the order or ruling [court_giyasov_fm2018]."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Qayta ekspertizani yangi savollar ro‘yxati deb tushunish.",
+            "ru": "Понимать повторную экспертизу как перечень новых вопросов.",
+            "en": "Treating a repeat examination as a list of new questions."
+          }
+        ]
+      },
+      "followups": [
+        {
+          "q": {
+            "uz": "Avvalgi xulosa bilan rozi bo‘lmasangiz-chi?",
+            "ru": "А если вы не согласны с прежним заключением?",
+            "en": "And if you disagree with the earlier report?"
+          },
+          "a": {
+            "uz": "Farqni va uning ilmiy asosini xulosada ko‘rsataman; baho berish tergovchi va sudning ishi.",
+            "ru": "Указываю расхождение и его научное основание в заключении; оценка — дело следователя и суда.",
+            "en": "I set out the difference and its scientific basis in the report; weighing it is for the investigator and the court."
+          }
+        },
+        {
+          "q": {
+            "uz": "Qayta ekspertizada usullarning o‘zi ham tekshiriladimi?",
+            "ru": "Проверяются ли при повторной экспертизе сами методы?",
+            "en": "Are the methods themselves examined in a repeat examination?"
+          },
+          "a": {
+            "uz": "Ha — avvalgi ekspertizada qo‘llanilgan tekshiruv usullarining ilmiy asoslanganligi masalasi ham qo‘yilishi mumkin [court_giyasov_fm2018].",
+            "ru": "Да — может быть поставлен вопрос о научной обоснованности применённых ранее методов [court_giyasov_fm2018].",
+            "en": "Yes — the scientific soundness of the methods used earlier may itself be put in question [court_giyasov_fm2018]."
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "uz": "Bu yerda ekspertizaning protsessual turi tavsiflanadi, muayyan ishdagi tayinlash asosi emas [court_giyasov_fm2018].",
+          "ru": "Здесь описан процессуальный вид экспертизы, а не основание её назначения по конкретному делу [court_giyasov_fm2018].",
+          "en": "What is described here is the procedural kind of examination, not the grounds for ordering one in a particular case [court_giyasov_fm2018]."
+        }
+      ],
+      "links": [],
+      "locators": {
+        "court_giyasov_fm2018": [
+          "sec:1.10"
+        ]
+      },
+      "sample": false,
+      "jurisdiction": "ALL",
+      "updated": "2026-10-09",
+      "translation_status": {
+        "uz": "AUTHORED",
+        "ru": "DRAFT",
+        "en": "DRAFT"
+      },
+      "citations": [
+        "court_giyasov_fm2018"
+      ],
+      "claims": [
+        {
+          "id": "court.q.inv_repeat.tests",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.10"
+              ],
+              "support": "full"
+            }
+          ]
+        },
+        {
+          "id": "court.q.inv_repeat.short_answer",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.10"
+              ],
+              "support": "full"
+            }
+          ]
+        },
+        {
+          "id": "court.q.inv_repeat.explain.0",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.10"
+              ],
+              "support": "full"
+            }
+          ]
+        },
+        {
+          "id": "court.q.inv_repeat.followup.1.a",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.10"
+              ],
+              "support": "full"
+            }
+          ]
+        },
+        {
+          "id": "court.q.inv_repeat.limitation.0",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.10"
+              ],
+              "support": "full"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "court.q.inv_act_vs_report",
+      "topic": "court.topic.investigator",
+      "status": "NEEDS_REVIEW",
+      "question": {
+        "uz": "«Ekspert xulosasi» bilan «sud-tibbiy tekshiruv dalolatnomasi» orasida qanday farq bor?",
+        "ru": "Чем отличается «заключение эксперта» от «акта судебно-медицинского исследования»?",
+        "en": "What is the difference between an expert's report and a forensic medical examination act?"
+      },
+      "tests": {
+        "uz": "Hujjat turi to‘g‘ri nomlanganmi va ogohlantirish tartibi farqi bilinadimi [court_giyasov_fm2018].",
+        "ru": "Правильно ли назван вид документа и понятна ли разница в порядке предупреждения [court_giyasov_fm2018].",
+        "en": "Whether the kind of document is named correctly and the difference in the warning procedure is understood [court_giyasov_fm2018]."
+      },
+      "short_answer": {
+        "uz": "Dalolatnoma suriştiruv, tergov va sud idoralarining yozma topshirig‘i yoki yo‘llanma asosida o‘tkazilgan tekshiruvda tuziladi. Rasmiylashtirish ekspert xulosasiga o‘xshaydi, lekin ikki farq bor: huquq va majburiyatlar tushuntirilgani hamda jinoiy javobgarlik haqida ogohlantirilgani to‘g‘risida tilxat olinmaydi, va yakuniy qism «to‘xtam» emas, «xotima» deb nomlanadi [court_giyasov_fm2018].",
+        "ru": "Акт составляется при исследовании, проведённом по письменному поручению органов дознания, следствия и суда или по направлению. Оформление сходно с заключением эксперта, но есть два отличия: не берётся расписка о разъяснении прав и обязанностей и о предупреждении об уголовной ответственности, а итоговая часть называется не «тўхтам», а «хотима» [court_giyasov_fm2018].",
+        "en": "An act is drawn up for an examination carried out on the written instruction of the investigating or judicial authorities, or on a referral. It is formatted like an expert's report with two differences: no signed acknowledgement is taken of the rights, duties and the warning of criminal liability, and the closing part is called a summary rather than a conclusion [court_giyasov_fm2018]."
+      },
+      "prepare": {
+        "documents": [
+          {
+            "uz": "Tekshiruv qaysi asosda o‘tkazilgani — qaror, ajrim, yozma topshiriq yoki yo‘llanma [court_giyasov_fm2018].",
+            "ru": "На каком основании проведено исследование — постановление, определение, письменное поручение или направление [court_giyasov_fm2018].",
+            "en": "On what basis the examination was carried out — an order, a ruling, a written instruction or a referral [court_giyasov_fm2018]."
+          }
+        ],
+        "explain": [
+          {
+            "uz": "Hujjat nomi tasodifiy emas: u tekshiruv qaysi protsessual holatda o‘tkazilganini ko‘rsatadi.",
+            "ru": "Название документа не случайно: оно показывает, в каком процессуальном положении проведено исследование.",
+            "en": "The name of the document is not incidental: it shows the procedural footing the examination stood on."
+          }
+        ],
+        "pitfalls": [
+          {
+            "uz": "Dalolatnomani ekspert xulosasi deb atash yoki aksincha.",
+            "ru": "Называть акт заключением эксперта или наоборот.",
+            "en": "Calling an act an expert's report, or the reverse."
+          }
+        ]
+      },
+      "followups": [
+        {
+          "q": {
+            "uz": "Dalolatnoma dalil bo‘la oladimi?",
+            "ru": "Может ли акт быть доказательством?",
+            "en": "Can an act serve as evidence?"
+          },
+          "a": {
+            "uz": "Uning protsessual maqomi ekspert xulosasinikidan farq qiladi; bu huquqiy baho masalasi va uni tergovchi yoki sud hal qiladi.",
+            "ru": "Его процессуальный статус отличается от статуса заключения эксперта; это вопрос правовой оценки, который решают следователь или суд.",
+            "en": "Its procedural standing differs from that of an expert's report; that is a legal question for the investigator or the court."
+          }
+        },
+        {
+          "q": {
+            "uz": "Dalolatnomada ham savollarga javob beriladimi?",
+            "ru": "Даются ли в акте ответы на вопросы?",
+            "en": "Does an act also answer questions?"
+          },
+          "a": {
+            "uz": "Rasmiylashtirish o‘xshash, lekin yakuniy qism «to‘xtam» emas, «xotima» deb nomlanadi — bu farq hujjatning protsessual holatini ko‘rsatadi [court_giyasov_fm2018].",
+            "ru": "Оформление сходно, но итоговая часть называется не «тўхтам», а «хотима» — это различие показывает процессуальное положение документа [court_giyasov_fm2018].",
+            "en": "The format is similar, but the closing part is a summary rather than a conclusion — the difference marks the document's procedural standing [court_giyasov_fm2018]."
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "uz": "Hujjatlarning shakli va mazmuni Sog‘liqni saqlash vazirligi tomonidan belgilanadi; bu yerda faqat farqning mohiyati beriladi [court_giyasov_fm2018].",
+          "ru": "Форма и содержание документов устанавливаются Министерством здравоохранения; здесь приведена только суть различия [court_giyasov_fm2018].",
+          "en": "The form and content of these documents are set by the Ministry of Health; only the substance of the difference is given here [court_giyasov_fm2018]."
+        }
+      ],
+      "links": [],
+      "locators": {
+        "court_giyasov_fm2018": [
+          "sec:1.11"
+        ]
+      },
+      "sample": false,
+      "jurisdiction": "ALL",
+      "updated": "2026-10-09",
+      "translation_status": {
+        "uz": "AUTHORED",
+        "ru": "DRAFT",
+        "en": "DRAFT"
+      },
+      "citations": [
+        "court_giyasov_fm2018"
+      ],
+      "claims": [
+        {
+          "id": "court.q.inv_act_vs_report.tests",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.11"
+              ],
+              "support": "full"
+            }
+          ]
+        },
+        {
+          "id": "court.q.inv_act_vs_report.short_answer",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.11"
+              ],
+              "support": "full"
+            }
+          ]
+        },
+        {
+          "id": "court.q.inv_act_vs_report.documents.0",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.11"
+              ],
+              "support": "full"
+            }
+          ]
+        },
+        {
+          "id": "court.q.inv_act_vs_report.followup.1.a",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.11"
+              ],
+              "support": "full"
+            }
+          ]
+        },
+        {
+          "id": "court.q.inv_act_vs_report.limitation.0",
+          "sources": [
+            {
+              "key": "court_giyasov_fm2018",
+              "locator": [
+                "sec:1.11"
+              ],
+              "support": "full"
+            }
+          ]
+        }
+      ]
     }
   ],
   "principles": [
@@ -14237,6 +15073,28 @@
       "used_for": "PDF p. 4: abbreviations — TLC, GLC, HPLC, immunoenzyme assay, GC-MS, HPLC-MS, UV and IR spectrometry. PDF p. 37: heroin is currently determined by gas-liquid chromatography, GC-MS and immunological methods.",
       "verified_via": "PDF copy provided by the owner (text extracted; passages located on the cited PDF pages)",
       "verified_on": "2026-10-09"
+    },
+    {
+      "key": "court_giyasov_fm2018",
+      "type": "book",
+      "authors": [
+        "Ғиёсов З.А."
+      ],
+      "title": "Суд тиббиёти. Тиббиёт олий ўқув юртлари талабалари учун дарслик",
+      "publisher": "Global Books",
+      "year": 2018,
+      "doi": null,
+      "pmid": null,
+      "url": null,
+      "note": "Toshkent, 356 bet, ISBN 978-9943-5345-7-5. Тошкент тиббиёт академияси илмий кенгаши 2018-02-07, 7-сон баённома. So‘zma-so‘z iqtibos olinmaydi — mazmun o‘z so‘zimiz bilan, joy bo‘lim raqami bilan ko‘rsatiladi. Ilmiy review kutilmoqda.",
+      "used_for": "1.9: ekspert huquq va majburiyatlari, tashabbus huquqi, vakolat chegarasi. 1.10: protsessual turlar, qayta ekspertizada qo‘yiladigan savollar. 1.11: ekspert xulosasining tuzilishi, yakuniy qism savollarga javob shaklida, to‘xtamda huquqbuzarlik sabablari va tavsiyalar, xulosaning oldindan muqarrar dalil kuchi yo‘qligi.",
+      "verified_via": "Kitob matni egasining Google Drive nusxasidan o‘qildi (2026-10-11); bibliografik yozuv kitobning o‘zidan.",
+      "verified_on": "2026-10-11",
+      "titles": {
+        "uz": "Ғиёсов З.А. «Суд тиббиёти» (darslik), Тошкент, 2018",
+        "ru": "Гиёсов З.А. «Суд тиббиёти» (Судебная медицина, учебник), Ташкент, 2018",
+        "en": "Giyasov Z.A., Forensic Medicine (textbook, in Uzbek), Tashkent, 2018"
+      }
     }
   ]
 }
