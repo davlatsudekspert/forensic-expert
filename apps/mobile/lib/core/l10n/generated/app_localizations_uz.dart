@@ -8972,4 +8972,32 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get qaRulesEnforceBody =>
       'Ish materialiga o‘xshagan matn avtomatik tekshiruvga tushadi. Uch xil foydalanuvchining shikoyati postni yashiradi yoki mutaxassis belgisini administrator qaroriga qadar to‘xtatadi. Qonunga qarshi qaratilgan post o‘chiriladi, belgi ham u bilan birga ketadi.';
+
+  @override
+  String get adminGrantStudent => 'Talaba Pro berish';
+
+  @override
+  String get adminGrantHint =>
+      'Odam ilovaga qaysi pochta bilan kirgan bo‘lsa, shuni yozing. Hisob allaqachon mavjud bo‘lishi kerak; bu yerdan taklif yuborilmaydi.';
+
+  @override
+  String get adminEmailInvalid => 'Bu elektron pochta manzili emas.';
+
+  @override
+  String adminGrantedTier(String tier) {
+    return 'Berildi: $tier';
+  }
+
+  @override
+  String get adminRevokeConfirmTitle => 'Kirishni olib tashlansinmi?';
+
+  @override
+  String get adminRevokeConfirmBody =>
+      'Odam pullik bo‘limlarni darhol yo‘qotadi. Do‘kondan qilingan xaridga bu ta’sir qilmaydi — faqat shu paneldan berilgan huquqqa.';
+
+  @override
+  String get adminTierStudent => 'Talaba Pro';
+
+  @override
+  String get adminTierProfessional => 'Mutaxassis Pro';
 }

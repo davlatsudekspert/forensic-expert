@@ -11655,5 +11655,42 @@
   "qaRulesEnforceBody": "Text that looks like case material is held for review automatically. Reports from three different users hide a post, or suspend a specialist badge, until an administrator decides. A post that works against the law is removed and the badge goes with it.",
   "@qaRulesEnforceBody": {
     "description": "Body of the enforcement section in the Q&A rules."
+  },
+  "adminGrantStudent": "Grant Student Pro",
+  "@adminGrantStudent": {
+    "description": "Admin panel button that gives the Student Pro tier to an e-mail."
+  },
+  "adminGrantHint": "Enter the e-mail the person signed in with. The account must already exist; an invitation is not sent from here.",
+  "@adminGrantHint": {
+    "description": "Helper text under the e-mail field in the admin grant section."
+  },
+  "adminEmailInvalid": "This is not an e-mail address.",
+  "@adminEmailInvalid": {
+    "description": "Validation message for the admin grant e-mail field."
+  },
+  "adminGrantedTier": "Granted: {tier}",
+  "@adminGrantedTier": {
+    "description": "Confirmation after granting, naming the tier that was given.",
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "adminRevokeConfirmTitle": "Remove access?",
+  "@adminRevokeConfirmTitle": {
+    "description": "Title of the confirmation dialog before revoking a grant."
+  },
+  "adminRevokeConfirmBody": "The person loses the paid sections at once. A purchase made in the store is not affected — only a grant given from here.",
+  "@adminRevokeConfirmBody": {
+    "description": "Body of the confirmation dialog before revoking a grant."
+  },
+  "adminTierStudent": "Student Pro",
+  "@adminTierStudent": {
+    "description": "Name of the Student Pro tier in the admin panel."
+  },
+  "adminTierProfessional": "Professional Pro",
+  "@adminTierProfessional": {
+    "description": "Name of the Professional Pro tier in the admin panel."
   }
 }

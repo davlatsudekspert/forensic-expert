@@ -402,19 +402,27 @@ class _GrantSectionState extends ConsumerState<_GrantSection> {
     super.dispose();
   }
 
-  Future<void> _run(String? tier) async {
+  /// Oddiy tekshiruv: server baribir hisobni topa olmasa `NOT_FOUND`
+  /// qaytaradi, lekin xato terilgan manzil uchun so‘rov yuborishning
+  /// hojati yo‘q.
+  static final _emailRe = RegExp(r'^[^\s@]+@[^\s@]+\.[^\s@]{2,}$');
+
+  bool get _valid => _emailRe.hasMatch(_email.text.trim());
+
+  Future<void> _run(String? tier, {String? tierName}) async {
     final l = AppLocalizations.of(context);
     final messenger = ScaffoldMessenger.of(context);
     setState(() => _busy = true);
     final r = await ref
         .read(accountServiceProvider)
-        .setAccess(_email.text, tier);
+        .setAccess(_email.text.trim(), tier);
     if (!mounted) return;
     setState(() => _busy = false);
     messenger.showSnackBar(
       SnackBar(
         content: Text(switch (r) {
-          AdminGrantResult.granted => l.adminGranted,
+          AdminGrantResult.granted =>
+            tierName == null ? l.adminGranted : l.adminGrantedTier(tierName),
           AdminGrantResult.revoked => l.adminRevoked,
           AdminGrantResult.notFound => l.adminNotFound,
           _ => l.adminFailed,
@@ -422,9 +430,39 @@ class _GrantSectionState extends ConsumerState<_GrantSection> {
       ),
     );
     if (r == AdminGrantResult.granted || r == AdminGrantResult.revoked) {
+      // Keyingi odamga o‘tish oson bo‘lsin; tasodifan ikki marta
+      // yuborilmasin ham.
+      _email.clear();
+      setState(() {});
       ref.invalidate(adminDashboardProvider);
       ref.invalidate(serverAccessProvider);
     }
+  }
+
+  /// Kirishni olib tashlash — qaytarib bo‘ladigan, lekin odam uchun darhol
+  /// sezilarli amal, shuning uchun tasdiq so‘raladi.
+  Future<void> _confirmRevoke() async {
+    final l = AppLocalizations.of(context);
+    final ok = await showDialog<bool>(
+      context: context,
+      builder: (c) => AlertDialog(
+        title: Text(l.adminRevokeConfirmTitle),
+        content: Text(l.adminRevokeConfirmBody),
+        actions: [
+          TextButton(
+            key: const Key('admin.revoke.cancel'),
+            onPressed: () => Navigator.of(c).pop(false),
+            child: Text(MaterialLocalizations.of(c).cancelButtonLabel),
+          ),
+          FilledButton(
+            key: const Key('admin.revoke.confirm'),
+            onPressed: () => Navigator.of(c).pop(true),
+            child: Text(l.adminRevoke),
+          ),
+        ],
+      ),
+    );
+    if (ok ?? false) await _run(null);
   }
 
   @override
@@ -440,7 +478,15 @@ class _GrantSectionState extends ConsumerState<_GrantSection> {
           controller: _email,
           keyboardType: TextInputType.emailAddress,
           autocorrect: false,
-          decoration: InputDecoration(labelText: l.adminEmail),
+          onChanged: (_) => setState(() {}),
+          decoration: InputDecoration(
+            labelText: l.adminEmail,
+            helperText: l.adminGrantHint,
+            helperMaxLines: 3,
+            errorText: _email.text.isEmpty || _valid
+                ? null
+                : l.adminEmailInvalid,
+          ),
         ),
         const SizedBox(height: FeSpace.xs),
         Wrap(
@@ -449,12 +495,24 @@ class _GrantSectionState extends ConsumerState<_GrantSection> {
           children: [
             FilledButton(
               key: const Key('admin.grant'),
-              onPressed: _busy ? null : () => _run('professionalPro'),
+              onPressed: _busy || !_valid
+                  ? null
+                  : () => _run(
+                      'professionalPro',
+                      tierName: l.adminTierProfessional,
+                    ),
               child: Text(l.adminGrantPro),
+            ),
+            FilledButton.tonal(
+              key: const Key('admin.grantStudent'),
+              onPressed: _busy || !_valid
+                  ? null
+                  : () => _run('studentPro', tierName: l.adminTierStudent),
+              child: Text(l.adminGrantStudent),
             ),
             OutlinedButton(
               key: const Key('admin.revoke'),
-              onPressed: _busy ? null : () => _run(null),
+              onPressed: _busy || !_valid ? null : _confirmRevoke,
               child: Text(l.adminRevoke),
             ),
           ],

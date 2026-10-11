@@ -15662,6 +15662,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Text that looks like case material is held for review automatically. Reports from three different users hide a post, or suspend a specialist badge, until an administrator decides. A post that works against the law is removed and the badge goes with it.'**
   String get qaRulesEnforceBody;
+
+  /// Admin panel button that gives the Student Pro tier to an e-mail.
+  ///
+  /// In en, this message translates to:
+  /// **'Grant Student Pro'**
+  String get adminGrantStudent;
+
+  /// Helper text under the e-mail field in the admin grant section.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the e-mail the person signed in with. The account must already exist; an invitation is not sent from here.'**
+  String get adminGrantHint;
+
+  /// Validation message for the admin grant e-mail field.
+  ///
+  /// In en, this message translates to:
+  /// **'This is not an e-mail address.'**
+  String get adminEmailInvalid;
+
+  /// Confirmation after granting, naming the tier that was given.
+  ///
+  /// In en, this message translates to:
+  /// **'Granted: {tier}'**
+  String adminGrantedTier(String tier);
+
+  /// Title of the confirmation dialog before revoking a grant.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove access?'**
+  String get adminRevokeConfirmTitle;
+
+  /// Body of the confirmation dialog before revoking a grant.
+  ///
+  /// In en, this message translates to:
+  /// **'The person loses the paid sections at once. A purchase made in the store is not affected — only a grant given from here.'**
+  String get adminRevokeConfirmBody;
+
+  /// Name of the Student Pro tier in the admin panel.
+  ///
+  /// In en, this message translates to:
+  /// **'Student Pro'**
+  String get adminTierStudent;
+
+  /// Name of the Professional Pro tier in the admin panel.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional Pro'**
+  String get adminTierProfessional;
 }
 
 class _AppLocalizationsDelegate

@@ -9062,4 +9062,32 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get qaRulesEnforceBody =>
       'Текст, похожий на материалы дела, автоматически отправляется на проверку. Жалобы трёх разных пользователей скрывают публикацию или приостанавливают подтверждение специалиста до решения администратора. Публикация, направленная против закона, удаляется вместе с подтверждением.';
+
+  @override
+  String get adminGrantStudent => 'Выдать «Студент Pro»';
+
+  @override
+  String get adminGrantHint =>
+      'Укажите адрес, с которым человек вошёл в приложение. Учётная запись должна уже существовать; приглашение отсюда не отправляется.';
+
+  @override
+  String get adminEmailInvalid => 'Это не адрес электронной почты.';
+
+  @override
+  String adminGrantedTier(String tier) {
+    return 'Выдано: $tier';
+  }
+
+  @override
+  String get adminRevokeConfirmTitle => 'Убрать доступ?';
+
+  @override
+  String get adminRevokeConfirmBody =>
+      'Человек сразу потеряет платные разделы. Покупки в магазине это не затрагивает — только выдачу из этой панели.';
+
+  @override
+  String get adminTierStudent => '«Студент Pro»';
+
+  @override
+  String get adminTierProfessional => '«Специалист Pro»';
 }

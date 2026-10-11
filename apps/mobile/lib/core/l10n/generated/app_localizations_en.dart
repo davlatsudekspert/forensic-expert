@@ -9009,4 +9009,32 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get qaRulesEnforceBody =>
       'Text that looks like case material is held for review automatically. Reports from three different users hide a post, or suspend a specialist badge, until an administrator decides. A post that works against the law is removed and the badge goes with it.';
+
+  @override
+  String get adminGrantStudent => 'Grant Student Pro';
+
+  @override
+  String get adminGrantHint =>
+      'Enter the e-mail the person signed in with. The account must already exist; an invitation is not sent from here.';
+
+  @override
+  String get adminEmailInvalid => 'This is not an e-mail address.';
+
+  @override
+  String adminGrantedTier(String tier) {
+    return 'Granted: $tier';
+  }
+
+  @override
+  String get adminRevokeConfirmTitle => 'Remove access?';
+
+  @override
+  String get adminRevokeConfirmBody =>
+      'The person loses the paid sections at once. A purchase made in the store is not affected — only a grant given from here.';
+
+  @override
+  String get adminTierStudent => 'Student Pro';
+
+  @override
+  String get adminTierProfessional => 'Professional Pro';
 }

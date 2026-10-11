@@ -26,6 +26,15 @@ Yangilangan: 2026-10-09. Migratsiya: `supabase/migrations/20261009000000_support
   jurnali, Maqolalar moderatsiyasi), `admin_stats()` kartalari, 14 kunlik ustunli
   diagramma (ro‘yxatdan o‘tish + AI savollari), turkumlar bo‘yicha ustunlar, eski
   `admin_dashboard()` bloklari (platforma, davlat, Pro berish).
+- **Pro sovg‘a qilish (2026-10-11):** «Pro berish» bo‘limiga istalgan elektron
+  pochta yoziladi va uch amal bor — «Mutaxassis Pro berish» (`professionalPro`),
+  «Talaba Pro berish» (`studentPro`), «Olib tashlash» (tarif `null`). Hammasi
+  `admin_set_access(p_email, p_tier)` orqali, server tomonida `admin_guard()` va
+  `ACCESS_SET` audit yozuvi bilan. Manzil shakli ilovada ham tekshiriladi
+  (xato terilganda so‘rov yuborilmaydi), olib tashlash tasdiq oynasi so‘raydi,
+  muvaffaqiyatdan keyin maydon tozalanadi. Hisob **allaqachon mavjud** bo‘lishi
+  kerak: bu paneldan taklif/ro‘yxatdan o‘tkazish yuborilmaydi, topilmasa
+  `NOT_FOUND`. Do‘kondan qilingan xaridga ta’sir qilmaydi — faqat server grantiga.
 - Inbox: holat (javob kutmoqda / hammasi / har bir holat), turkum, qidiruv (mavzu
   yoki email), «Yana yuklash»; murojaatni ochish, «Javob yozish», holatni o‘zgartirish.
 - Foydalanuvchilar: qidiruv (email/ism), rol va tarif saralash, sahifalash.
