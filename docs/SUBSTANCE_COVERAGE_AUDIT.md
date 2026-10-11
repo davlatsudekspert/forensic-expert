@@ -14,16 +14,21 @@ manbalar bo'limlari bor). **Muammo tuzilishda emas — kontentda.**
 | Bo'lim | Bor | Yetishmaydi |
 | --- | ---: | ---: |
 | Identifikatsiya | 137 / 137 | 0 |
-| Metabolizm izohi | 95 / 137 | 42 |
 | Aniqlash usullari | 99 / 137 | 38 |
+| Metabolizm izohi | 95 / 137 | 42 |
 | Konsentratsiyalar | 54 / 137 | 83 |
-| Metabolitlar | 15 / 137 | 122 |
+| Namuna (qon / siydik / jigar …) | 54 / 137 | 83 |
+| Skrining usuli (bog'lama) | 50 / 137 | 87 |
+| Metabolitlar (yozuv) | 15 / 137 | 122 |
+| Metabolitlar (bog'lama) | 5 / 137 | 132 |
 | Biomarker | 1 / 137 | 136 |
-| Parchalanish mahsuloti | 1 / 137 | 136 |
-| Namuna (qon / siydik / jigar …) | 0 / 137 | 137 |
+| Tasdiqlovchi usul (bog'lama) | 0 / 137 | 137 |
 
 Bir moddaga to'g'ri keladigan yozuv: eng kami **1**, o'rtachasi **4**, eng
 ko'pi **24**.
+
+Namuna va skrining qatorlari bog'lama (`links`) orqali hisoblanadi, yozuv
+(`claims`) orqali emas — ikkisi boshqa-boshqa saqlanadi.
 
 Eng bo'sh moddalar: butane, colchicine, etonitazene, etonitazepyne, nitrous
 oxide (har birida 1 ta yozuv — faqat identifikatsiya).
