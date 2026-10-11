@@ -66,3 +66,21 @@ Yangilangan: 2026-10-11. Format: [holat] vazifa — egasi/keyingi qadam.
 - Biologiya kartalaridagi ~25 ta eski sovet usuli uchun manba topilmadi
   («manba tekshirilmoqda» deb belgilangan, to'qilmagan).
 - Barcha yangi kartalar `NEEDS_REVIEW`; ilmiy taqriz hali o'tmagan.
+
+## Savol-javob (Hamjamiyat) — bosqichlar
+1. [bajarildi] QA-1 DB: 7 jadval (RLS yoniq, policy yo'q), 12 RPC, 8 private
+   yordamchi, maxfiylik filtri, limitlar, shikoyat chegarasi. Productionda
+   qo'llangan. SQL: `20261011000000_qa_community.sql`.
+2. [bajarildi] QA-2 Edge Function: `qa-verify-expert` (hujjat faqat xotirada)
+   va `qa-translate` (Cloudflare Workers AI + Gemini zaxirasi, kesh).
+   `public.qa_service_*` wrapper'lari faqat `service_role`ga berilgan.
+   Egasining qo'lda tekshirilgan belgisi seed qilindi. Batafsil:
+   `docs/QA_COMMUNITY.md`.
+3. [keyingi] QA-3 Flutter: domen, Supabase adapter, feed / savol / savol
+   berish / mening savollarim / tasdiqlash / admin moderatsiya ekranlari,
+   Home kartasi. Server ulanmagan bo'lsa bo'lim yashirin.
+4. [keyingi] QA-4 l10n uz/ru/en + kalit parity, 3 tilda widget testlar
+   (320 dp, katta matn), maxfiylik siyosati va Data safety yangilanishi,
+   faqat TestFlight / Play internal.
+5. [egasi] Cloudflare `CF_ACCOUNT_ID` va `CF_API_TOKEN` (Workers AI).
+6. [egasi] Q&A roli tasdiqlash: hozir `forensic_physician`.

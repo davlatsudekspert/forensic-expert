@@ -20,6 +20,7 @@ $P -d fe -f "$HERE/publications_test.sql"
 $P -d fe -f "$HERE/support_admin_test.sql"
 $P -d fe -f "$HERE/admin_verification_test.sql"
 $P -d fe -f "$HERE/qa_community_test.sql"
+$P -d fe -f "$HERE/qa_service_api_test.sql"
 # RLS role matrix: fresh database with Supabase-like default table grants
 # (the files above grant/revoke privileges for their own checks). Roles are
 # cluster-wide, so stubs.sql is loaded without its CREATE ROLE lines.

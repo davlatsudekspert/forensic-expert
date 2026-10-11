@@ -79,6 +79,20 @@ jobs:
           grep -q "ALL RLS ROLE MATRIX TESTS PASSED" db.log
           ! grep -q "FAIL" db.log
 
+  edge-functions:
+    name: Edge Function tests (Deno, AI mocked)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+      - name: Check types
+        run: deno check supabase/functions/*/index.ts
+      - name: Test (no network, no database)
+        run: deno test supabase/functions/
+
   secrets-inventory:
     # Reports ONLY whether external credentials exist (true/false); values are
     # never printed. Used for the release blocker report.

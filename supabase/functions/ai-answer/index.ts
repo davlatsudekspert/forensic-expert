@@ -31,7 +31,9 @@ let discovered: string[] | null = null;
 // models this key can use for generateContent. Cached per instance.
 async function candidateModels(key: string): Promise<string[]> {
   if (discovered === null) {
-    discovered = [];
+    // Built in a local first: the compiler cannot narrow a module-level
+    // variable across the await below.
+    let found: string[] = [];
     try {
       const r = await fetch(`${API}/models?pageSize=200`, {
         headers: { "x-goog-api-key": key },
@@ -39,7 +41,7 @@ async function candidateModels(key: string): Promise<string[]> {
       });
       if (r.ok) {
         const out = await r.json();
-        discovered = (out?.models ?? [])
+        found = (out?.models ?? [])
           .filter((m: { name?: string; supportedGenerationMethods?: string[] }) =>
             /flash/i.test(m.name ?? "") && !/(image|tts|audio|live|embedding)/i.test(m.name ?? "") &&
             (m.supportedGenerationMethods ?? []).includes("generateContent"))
@@ -51,6 +53,7 @@ async function candidateModels(key: string): Promise<string[]> {
     } catch (e) {
       console.error("gemini_models_failed", e instanceof Error ? e.name : "error");
     }
+    discovered = found;
   }
   return [...new Set([...PREFERRED, ...discovered])].slice(0, 5);
 }

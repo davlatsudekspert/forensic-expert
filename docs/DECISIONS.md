@@ -206,3 +206,27 @@ model bilan chiqiladi, haqiqiy foydalanish ko'ringandan keyin qayta qaraladi.
    hamkasbning elektron pochtasi kerak; keyin server tomonida rol beriladi
    (audit yozuvi bilan). Egasidan: shu shaxsning emaili.
 
+6. **Savol-javob: ilova baza jadvallariga tegmaydi.** Barcha 7 jadvalda RLS
+   yoniq va **policy yo'q**, `anon`/`authenticated` uchun DML grant yo'q.
+   Sabab: ekspert hamjamiyatida bitta noto'g'ri policy boshqa odamning
+   savolini yoki shikoyat kimdan kelganini oshkor qiladi. Hamma ish
+   `SECURITY DEFINER` RPC'lar orqali, ularning ichida qoida yoziladi.
+7. **Server funksiyalari `public.qa_service_*` orqali.** PostgREST faqat
+   `public` sxemasini ochadi, shuning uchun `private.*`ga berilgan grant
+   HTTP orqali yetib bo'lmaydi. Referral server funksiyalaridagi naqsh
+   takrorlandi: yupqa `public` wrapper, faqat `service_role`ga grant.
+   Orqaga qaytarish: `supabase/rollback/20261011010000_qa_service_api_down.sql`.
+8. **Tekshiruv hujjati saqlanmaydi — bu arxitektura qarori, sozlama emas.**
+   Sxemada fayl/yo'l/rasm ustuni umuman yo'q, server funksiyalari hujjatni
+   parametr sifatida qabul qilmaydi, Edge Function esa uni faqat xotirada
+   ushlaydi. Shuning uchun keyinchalik «hujjatni saqlab qo'yaylik» degan
+   o'zgartirish migratsiya talab qiladi — tasodifan yuz bermaydi.
+9. **Tarjima dvigateli: Cloudflare Workers AI (m2m100), zaxirasi Gemini.**
+   Egasining qarori (2026-10-10). Kalit faqat Edge Function muhitida.
+   Cloudflare m2m100 til parametrini ikki xil yozgan (to'liq ism va ISO
+   kod) — ikkisi ham ketma-ket sinaladi, shuning uchun API o'zgarsa ham
+   tarjima to'xtamaydi.
+10. **Egasining belgisi `manual = true` bilan.** Keyingi avtomatik tekshiruv
+    bu belgini o'chirmaydi (`manual = manual or excluded.manual`), ya'ni
+    qo'lda tekshirilgan maqom AI qarori bilan yo'qolmaydi. Email hech
+    qayerda saqlanmaydi — faqat seed chaqirig'ida argument.
