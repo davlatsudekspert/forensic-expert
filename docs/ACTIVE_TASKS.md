@@ -1,8 +1,19 @@
 # ACTIVE TASKS
 
-Yangilangan: 2026-10-10. Format: [holat] vazifa — egasi/keyingi qadam.
+Yangilangan: 2026-10-11. Format: [holat] vazifa — egasi/keyingi qadam.
 
 ## Egasidan ruxsat kutilmoqda
+0. [egasi] **Giyasov Z.I. «Sud tibbiyoti» (Toshkent, 2018) — nusxasi kerak.**
+   Muallif aniqlandi: **Giyasov Zaynitdin Isamutdinovich**, t.f.d., professor,
+   Toshkent davlat tibbiyot universiteti, «Sud tibbiyoti va tibbiyot huquqi» 1-kafedrasi
+   (2003–2012 yillarda kafedra mudiri). Ayrim iqtiboslarda inisiallari «Z.A.» deb
+   yozilgan — bu kafedra sahifasidagi «Z.I.» bilan mos emas; kitob qo‘lga tushgach
+   titul varag‘idan aniqlanadi.
+   Qidiruv natijasi (2026-10-11): kitobning qonuniy elektron nusxasi internetda
+   **topilmadi** — faqat bibliografik iqtibos va kutubxona katalogi qaydi bor.
+   Shuning uchun undan birorta yozuv yozilmadi (o‘qilmagan kitobdan yozish mumkin emas).
+   Kerak: egasidagi PDF/skan yoki bosma nusxa. Kelgach — ABY bilan bir xil tartibda
+   (o‘z so‘zimiz bilan, bet raqami bilan, muallifga hurmat sahifasida nomi bilan).
 1. [egasi] `supabase/migrations/20261010000000_admin_verification_inbox.sql` —
    production'ga qo'llash. Faqat yangi RPC `admin_pending_verifications` qo'shadi;
    mavjud jadval va o'zini-o'zi tasdiqlash taqiqi tegilmagan. **Qo'llanmaguncha
