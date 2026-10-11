@@ -70,6 +70,7 @@ class _AdminInboxScreenState extends ConsumerState<AdminInboxScreen> {
         ),
         body: SafeArea(
           child: ListView(
+            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
             key: const Key('adminInbox.list'),
             children: [
               FeContentFrame(
@@ -78,6 +79,7 @@ class _AdminInboxScreenState extends ConsumerState<AdminInboxScreen> {
                   children: [
                     const SizedBox(height: FeSpace.sm),
                     TextField(
+                      onTapOutside: (_) => FocusScope.of(context).unfocus(),
                       key: const Key('adminInbox.search'),
                       controller: _search,
                       textInputAction: TextInputAction.search,
@@ -95,6 +97,8 @@ class _AdminInboxScreenState extends ConsumerState<AdminInboxScreen> {
                     ),
                     const SizedBox(height: FeSpace.xs),
                     SingleChildScrollView(
+                      keyboardDismissBehavior:
+                          ScrollViewKeyboardDismissBehavior.onDrag,
                       scrollDirection: Axis.horizontal,
                       child: Row(
                         children: [
@@ -358,6 +362,7 @@ class _AdminUsersScreenState extends ConsumerState<AdminUsersScreen> {
         appBar: AppBar(title: Text(l.admNavUsers)),
         body: SafeArea(
           child: ListView(
+            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
             key: const Key('adminUsers.list'),
             children: [
               FeContentFrame(
@@ -371,6 +376,7 @@ class _AdminUsersScreenState extends ConsumerState<AdminUsersScreen> {
                     ),
                     const SizedBox(height: FeSpace.sm),
                     TextField(
+                      onTapOutside: (_) => FocusScope.of(context).unfocus(),
                       key: const Key('adminUsers.search'),
                       controller: _search,
                       textInputAction: TextInputAction.search,
@@ -384,6 +390,8 @@ class _AdminUsersScreenState extends ConsumerState<AdminUsersScreen> {
                     ),
                     const SizedBox(height: FeSpace.xs),
                     SingleChildScrollView(
+                      keyboardDismissBehavior:
+                          ScrollViewKeyboardDismissBehavior.onDrag,
                       scrollDirection: Axis.horizontal,
                       child: Row(
                         children: [
@@ -405,6 +413,8 @@ class _AdminUsersScreenState extends ConsumerState<AdminUsersScreen> {
                       ),
                     ),
                     SingleChildScrollView(
+                      keyboardDismissBehavior:
+                          ScrollViewKeyboardDismissBehavior.onDrag,
                       scrollDirection: Axis.horizontal,
                       child: Row(
                         children: [
@@ -648,6 +658,7 @@ class AdminAuditScreen extends ConsumerWidget {
               body: l.admAuditEmpty,
             ),
             AsyncData(:final value?) => ListView(
+              keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
               key: const Key('adminAudit.list'),
               children: [
                 FeContentFrame(

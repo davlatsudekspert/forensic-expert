@@ -133,6 +133,7 @@ class _QaQuestionScreenState extends ConsumerState<QaQuestionScreen> {
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
     return ListView(
+      keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
       key: const Key('qa.question'),
       children: [
         FeContentFrame(
@@ -224,6 +225,7 @@ class _QaQuestionScreenState extends ConsumerState<QaQuestionScreen> {
                 const QaPrivacyWarning(),
                 const SizedBox(height: FeSpace.xs),
                 TextField(
+                  onTapOutside: (_) => FocusScope.of(context).unfocus(),
                   key: const Key('qa.answer.body'),
                   controller: _answer,
                   minLines: 3,
@@ -377,6 +379,7 @@ class _ReportDialogState extends State<_ReportDialog> {
   @override
   Widget build(BuildContext context) => AlertDialog(
     content: TextField(
+      onTapOutside: (_) => FocusScope.of(context).unfocus(),
       key: const Key('qa.report.reason'),
       controller: _reason,
       autofocus: true,

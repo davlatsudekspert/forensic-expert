@@ -323,6 +323,7 @@ class _SupportComposerState extends State<SupportComposer> {
           children: [
             Expanded(
               child: TextField(
+                onTapOutside: (_) => FocusScope.of(context).unfocus(),
                 key: widget.fieldKey,
                 controller: _c,
                 minLines: 1,

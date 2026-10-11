@@ -88,6 +88,43 @@ void main() {
     expect(offenders, isEmpty, reason: offenders.join('\n'));
   });
 
+  // Klaviatura ochilganda pastdagi navigatsiya berkiladi; agar uni yopish
+  // yo‘li bo‘lmasa, foydalanuvchi boshqa bo‘limga o‘tolmay qoladi (egasi
+  // AI ekranida shu holatga tushgan). Shuning uchun matn maydoni bor har bir
+  // ekranda: maydondan tashqariga bosish va ro‘yxatni surish — ikkalasi ham
+  // klaviaturani yopishi shart.
+  test('matn maydoni bor ekranlarda klaviaturani yopish yo‘li bor', () {
+    final offenders = <String>[];
+    const scrolls = [
+      'ListView(',
+      'ListView.builder(',
+      'ListView.separated(',
+      'SingleChildScrollView(',
+      'CustomScrollView(',
+    ];
+    for (final f in dartFiles('lib')) {
+      final src = f.readAsStringSync();
+      final fields =
+          'TextField('.allMatches(src).length +
+          'TextFormField('.allMatches(src).length;
+      if (fields == 0) continue;
+      final outside = 'onTapOutside'.allMatches(src).length;
+      if (outside < fields) {
+        offenders.add('${f.path}: $fields ta maydon, $outside ta onTapOutside');
+      }
+      final scrollCount = [for (final c in scrolls) c.allMatches(src).length]
+          .fold(0, (a, b) => a + b);
+      final dismiss = 'keyboardDismissBehavior'.allMatches(src).length;
+      if (scrollCount > 0 && dismiss < scrollCount) {
+        offenders.add(
+          '${f.path}: $scrollCount ta ro‘yxat, $dismiss ta '
+          'keyboardDismissBehavior',
+        );
+      }
+    }
+    expect(offenders, isEmpty, reason: offenders.join('\n'));
+  });
+
   test('ilova kodida maxfiy kalitga o‘xshash satr yo‘q', () {
     final suspicious = RegExp(
       r'(sk-[A-Za-z0-9]{20,}|service_role|-----BEGIN [A-Z ]*PRIVATE KEY-----|'

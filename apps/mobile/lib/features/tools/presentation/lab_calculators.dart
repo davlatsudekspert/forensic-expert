@@ -432,6 +432,7 @@ class _NumberField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => TextField(
+    onTapOutside: (_) => FocusScope.of(context).unfocus(),
     key: k == null ? null : Key(k!),
     controller: controller,
     keyboardType: TextInputType.numberWithOptions(
@@ -928,6 +929,7 @@ class _StatsState extends State<DescriptiveStatsView> with CalcInputsMixin {
       descriptor: _calc.descriptor,
       inputs: [
         TextField(
+          onTapOutside: (_) => FocusScope.of(context).unfocus(),
           key: const Key('calc.values'),
           controller: _values,
           minLines: 3,
@@ -1049,6 +1051,7 @@ class _CalibrationState extends State<CalibrationView> with CalcInputsMixin {
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
     final pointsField = TextField(
+      onTapOutside: (_) => FocusScope.of(context).unfocus(),
       key: const Key('calc.points'),
       controller: _points,
       minLines: 4,

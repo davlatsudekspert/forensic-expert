@@ -117,6 +117,7 @@ class JurisdictionHubScreen extends ConsumerWidget {
       appBar: AppBar(title: Text(l.jurisdictionsTitle)),
       body: SafeArea(
         child: ListView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           key: const Key('jurisdictions.hub'),
           children: [
             FeContentFrame(
@@ -352,6 +353,7 @@ class _JurisdictionSelectState extends ConsumerState<JurisdictionSelectScreen> {
       body: SafeArea(
         // 249 davlat — lazy ro‘yxat (faqat ko‘rinadigan qatorlar quriladi).
         child: CustomScrollView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           key: const Key('jurisdictions.select'),
           slivers: [
             SliverToBoxAdapter(
@@ -366,6 +368,7 @@ class _JurisdictionSelectState extends ConsumerState<JurisdictionSelectScreen> {
                     ),
                     const SizedBox(height: FeSpace.sm),
                     TextField(
+                      onTapOutside: (_) => FocusScope.of(context).unfocus(),
                       key: const Key('jurisdictions.search'),
                       onChanged: (v) => setState(() => _q = v),
                       decoration: InputDecoration(
@@ -445,6 +448,7 @@ class JurisdictionDetailScreen extends ConsumerWidget {
       appBar: AppBar(title: Text(j?.name(lang) ?? id)),
       body: SafeArea(
         child: ListView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           key: Key('jurisdictionDetail.$id'),
           children: [
             FeContentFrame(

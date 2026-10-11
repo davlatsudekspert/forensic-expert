@@ -91,6 +91,7 @@ class _QaVerifyScreenState extends ConsumerState<QaVerifyScreen> {
         appBar: AppBar(title: Text(l.qaVerifyTitle)),
         body: SafeArea(
           child: ListView(
+            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
             key: const Key('qa.verify'),
             children: [
               FeContentFrame(
@@ -147,6 +148,7 @@ class _QaVerifyScreenState extends ConsumerState<QaVerifyScreen> {
                     ),
                     const SizedBox(height: FeSpace.sm),
                     TextField(
+                      onTapOutside: (_) => FocusScope.of(context).unfocus(),
                       key: const Key('qa.verify.country'),
                       controller: _country,
                       textCapitalization: TextCapitalization.characters,

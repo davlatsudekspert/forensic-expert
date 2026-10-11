@@ -80,6 +80,7 @@ class _QaAskScreenState extends ConsumerState<QaAskScreen> {
         appBar: AppBar(title: Text(l.qaAskTitle)),
         body: SafeArea(
           child: ListView(
+            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
             key: const Key('qa.ask.form'),
             children: [
               FeContentFrame(
@@ -96,6 +97,7 @@ class _QaAskScreenState extends ConsumerState<QaAskScreen> {
                     ),
                     const SizedBox(height: FeSpace.md),
                     TextField(
+                      onTapOutside: (_) => FocusScope.of(context).unfocus(),
                       key: const Key('qa.ask.title'),
                       controller: _title,
                       maxLength: 160,
@@ -111,6 +113,7 @@ class _QaAskScreenState extends ConsumerState<QaAskScreen> {
                     ),
                     const SizedBox(height: FeSpace.sm),
                     TextField(
+                      onTapOutside: (_) => FocusScope.of(context).unfocus(),
                       key: const Key('qa.ask.body'),
                       controller: _body,
                       maxLines: 8,

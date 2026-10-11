@@ -66,6 +66,7 @@ class _QaFeedScreenState extends ConsumerState<QaFeedScreen> {
           child: RefreshIndicator(
             onRefresh: () => ref.refresh(qaFeedProvider(request).future),
             child: ListView(
+              keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
               key: const Key('qa.list'),
               children: [
                 FeContentFrame(
@@ -148,6 +149,7 @@ class _SearchField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => TextField(
+    onTapOutside: (_) => FocusScope.of(context).unfocus(),
     key: const Key('qa.search'),
     onChanged: onChanged,
     textInputAction: TextInputAction.search,

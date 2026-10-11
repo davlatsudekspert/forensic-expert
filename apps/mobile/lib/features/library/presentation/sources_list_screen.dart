@@ -55,6 +55,7 @@ class _SourcesListScreenState extends ConsumerState<SourcesListScreen> {
       appBar: AppBar(title: Text(l.libraryReferences)),
       body: SafeArea(
         child: ListView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           key: const Key('sources.list'),
           children: [
             FeContentFrame(
@@ -63,6 +64,7 @@ class _SourcesListScreenState extends ConsumerState<SourcesListScreen> {
                 children: [
                   const SizedBox(height: FeSpace.sm),
                   TextField(
+                    onTapOutside: (_) => FocusScope.of(context).unfocus(),
                     key: const Key('sources.filter'),
                     onChanged: (v) => setState(() => _filter = v),
                     decoration: InputDecoration(

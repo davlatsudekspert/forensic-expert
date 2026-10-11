@@ -65,6 +65,7 @@ class _Frame extends StatelessWidget {
     appBar: AppBar(title: Text(title)),
     body: SafeArea(
       child: ListView(
+        keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
         key: listKey,
         children: [
           FeContentFrame(
@@ -330,6 +331,7 @@ class _CourtScenarioViewState extends ConsumerState<CourtScenarioView> {
         ),
         FeSectionHeader(l.courtSimYourAnswer),
         TextField(
+          onTapOutside: (_) => FocusScope.of(context).unfocus(),
           key: const Key('court.sim.text'),
           controller: _text,
           minLines: 2,

@@ -398,6 +398,7 @@ class _ReviewComposerState extends ConsumerState<ReviewComposer> {
     return Padding(
       padding: EdgeInsets.only(bottom: MediaQuery.viewInsetsOf(context).bottom),
       child: ListView(
+        keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
         key: const Key('review.composer'),
         shrinkWrap: true,
         padding: const EdgeInsets.all(FeSpace.md),
@@ -423,6 +424,7 @@ class _ReviewComposerState extends ConsumerState<ReviewComposer> {
             ),
           ),
           TextField(
+            onTapOutside: (_) => FocusScope.of(context).unfocus(),
             key: const Key('review.note'),
             controller: _note,
             minLines: 4,
@@ -441,6 +443,7 @@ class _ReviewComposerState extends ConsumerState<ReviewComposer> {
           ),
           const SizedBox(height: FeSpace.sm),
           TextField(
+            onTapOutside: (_) => FocusScope.of(context).unfocus(),
             key: const Key('review.source'),
             controller: _source,
             decoration: InputDecoration(
@@ -499,6 +502,7 @@ class _ReviewDashboardScreenState extends ConsumerState<ReviewDashboardScreen> {
       appBar: AppBar(title: Text(l.dashboardTitle)),
       body: SafeArea(
         child: ListView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           key: const Key('dashboard.list'),
           padding: const EdgeInsets.symmetric(
             vertical: FeSpace.md,

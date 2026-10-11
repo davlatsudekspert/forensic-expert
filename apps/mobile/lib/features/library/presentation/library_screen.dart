@@ -129,6 +129,7 @@ class _LibrarySectionScreenState extends ConsumerState<LibrarySectionScreen> {
       appBar: AppBar(title: Text(_section.label(l))),
       body: SafeArea(
         child: ListView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           children: [
             FeContentFrame(
               child: Column(
@@ -136,6 +137,8 @@ class _LibrarySectionScreenState extends ConsumerState<LibrarySectionScreen> {
                 children: [
                   if (sections.length > 1)
                     SingleChildScrollView(
+                      keyboardDismissBehavior:
+                          ScrollViewKeyboardDismissBehavior.onDrag,
                       scrollDirection: Axis.horizontal,
                       child: Row(
                         children: [
@@ -158,6 +161,7 @@ class _LibrarySectionScreenState extends ConsumerState<LibrarySectionScreen> {
                     ),
                   const SizedBox(height: FeSpace.sm),
                   TextField(
+                    onTapOutside: (_) => FocusScope.of(context).unfocus(),
                     key: const Key('library.filter'),
                     controller: _filterController,
                     onChanged: (v) => setState(() => _filter = v),
@@ -170,6 +174,8 @@ class _LibrarySectionScreenState extends ConsumerState<LibrarySectionScreen> {
                   if (groups.isNotEmpty) ...[
                     const SizedBox(height: FeSpace.xs),
                     SingleChildScrollView(
+                      keyboardDismissBehavior:
+                          ScrollViewKeyboardDismissBehavior.onDrag,
                       key: const Key('library.groups'),
                       scrollDirection: Axis.horizontal,
                       child: Row(
@@ -536,6 +542,7 @@ class LibraryScreen extends ConsumerWidget {
       appBar: AppBar(title: Text(l.libraryTitle)),
       body: SafeArea(
         child: ListView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           key: const Key('library.hub'),
           children: [
             FeContentFrame(
@@ -594,6 +601,7 @@ class StandardsScreen extends ConsumerWidget {
       appBar: AppBar(title: Text(l.libraryStandards)),
       body: SafeArea(
         child: ListView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           key: const Key('library.standards'),
           children: [
             FeContentFrame(

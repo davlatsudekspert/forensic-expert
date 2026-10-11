@@ -152,6 +152,7 @@ class _PracticeCatalogScreenState extends ConsumerState<PracticeCatalogScreen> {
       appBar: AppBar(title: Text(l.restrictedCatalogTitle)),
       body: SafeArea(
         child: CustomScrollView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           slivers: [
             SliverToBoxAdapter(
               child: FeContentFrame(
@@ -166,6 +167,7 @@ class _PracticeCatalogScreenState extends ConsumerState<PracticeCatalogScreen> {
                     ),
                     const SizedBox(height: FeSpace.sm),
                     TextField(
+                      onTapOutside: (_) => FocusScope.of(context).unfocus(),
                       key: const Key('practice.search'),
                       decoration: InputDecoration(
                         prefixIcon: const Icon(Icons.search),
@@ -248,6 +250,7 @@ class _PracticeCatalogScreenState extends ConsumerState<PracticeCatalogScreen> {
         final title = r.title.pick(lang);
         return SafeArea(
           child: ListView(
+            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
             key: const Key('practice.sheet'),
             shrinkWrap: true,
             padding: const EdgeInsets.fromLTRB(

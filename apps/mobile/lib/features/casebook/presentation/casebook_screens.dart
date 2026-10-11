@@ -86,6 +86,7 @@ class CasebookScreen extends ConsumerWidget {
       ),
       body: SafeArea(
         child: ListView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           key: const Key('casebook.list'),
           children: [
             FeContentFrame(
@@ -451,6 +452,7 @@ class _CasebookEntryScreenState extends ConsumerState<CasebookEntryScreen> {
                     ),
                     const SizedBox(height: FeSpace.md),
                     TextField(
+                      onTapOutside: (_) => FocusScope.of(context).unfocus(),
                       key: const Key('casebook.field.title'),
                       controller: _title,
                       onChanged: (_) => _touch(),
@@ -461,6 +463,7 @@ class _CasebookEntryScreenState extends ConsumerState<CasebookEntryScreen> {
                     ),
                     const SizedBox(height: FeSpace.sm),
                     TextField(
+                      onTapOutside: (_) => FocusScope.of(context).unfocus(),
                       key: const Key('casebook.field.caseRef'),
                       controller: _caseRef,
                       onChanged: (_) => _touch(),
@@ -482,6 +485,7 @@ class _CasebookEntryScreenState extends ConsumerState<CasebookEntryScreen> {
                     ),
                     const SizedBox(height: FeSpace.sm),
                     TextField(
+                      onTapOutside: (_) => FocusScope.of(context).unfocus(),
                       key: const Key('casebook.field.body'),
                       controller: _body,
                       onChanged: (_) => _touch(),
@@ -721,6 +725,7 @@ class _BlockPickerState extends State<_BlockPicker> {
             Padding(
               padding: const EdgeInsets.all(FeSpace.md),
               child: TextField(
+                onTapOutside: (_) => FocusScope.of(context).unfocus(),
                 key: const Key('casebook.picker.search'),
                 onChanged: (v) => setState(() => _q = v),
                 decoration: InputDecoration(
@@ -737,6 +742,8 @@ class _BlockPickerState extends State<_BlockPicker> {
                       body: l.casebookPickerEmpty,
                     )
                   : ListView.builder(
+                      keyboardDismissBehavior:
+                          ScrollViewKeyboardDismissBehavior.onDrag,
                       key: const Key('casebook.picker.list'),
                       itemCount: items.length,
                       itemBuilder: (ctx, i) {
@@ -888,6 +895,7 @@ class _LinkPickerState extends ConsumerState<_LinkPicker> {
             Padding(
               padding: const EdgeInsets.all(FeSpace.md),
               child: TextField(
+                onTapOutside: (_) => FocusScope.of(context).unfocus(),
                 key: const Key('casebook.linkSearch'),
                 autofocus: true,
                 onChanged: _run,
@@ -907,6 +915,8 @@ class _LinkPickerState extends ConsumerState<_LinkPicker> {
                           )
                         : const SizedBox.shrink())
                   : ListView.builder(
+                      keyboardDismissBehavior:
+                          ScrollViewKeyboardDismissBehavior.onDrag,
                       key: const Key('casebook.linkResults'),
                       itemCount: _results.length,
                       itemBuilder: (ctx, i) {

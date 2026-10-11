@@ -162,6 +162,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
         title: Padding(
           padding: const EdgeInsets.only(right: FeSpace.md),
           child: TextField(
+            onTapOutside: (_) => FocusScope.of(context).unfocus(),
             key: const Key('search.field'),
             controller: _controller,
             autofocus: widget.initialQuery == null,
@@ -563,6 +564,7 @@ class _DisciplineFilter extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.only(top: FeSpace.xs),
         child: SingleChildScrollView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           key: const Key('search.disciplines'),
           scrollDirection: Axis.horizontal,
           child: Row(

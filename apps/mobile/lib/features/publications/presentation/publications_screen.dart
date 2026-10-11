@@ -90,6 +90,7 @@ class _PublicationsScreenState extends ConsumerState<PublicationsScreen> {
           child: RefreshIndicator(
             onRefresh: () => ref.refresh(publishedPublicationsProvider.future),
             child: ListView(
+              keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
               key: const Key('publications.list'),
               children: [
                 FeContentFrame(
@@ -141,6 +142,7 @@ class _PublicationsScreenState extends ConsumerState<PublicationsScreen> {
         final shown = all.where(_matches).toList();
         return [
           TextField(
+            onTapOutside: (_) => FocusScope.of(context).unfocus(),
             key: const Key('publications.search'),
             onChanged: (v) => setState(() => _query = v),
             decoration: InputDecoration(
@@ -151,6 +153,7 @@ class _PublicationsScreenState extends ConsumerState<PublicationsScreen> {
           ),
           const SizedBox(height: FeSpace.xs),
           SingleChildScrollView(
+            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
             scrollDirection: Axis.horizontal,
             child: Row(
               children: [
@@ -330,6 +333,7 @@ class _ReportDialogState extends State<_ReportDialog> {
     return AlertDialog(
       title: Text(l.pubReportTitle),
       content: SingleChildScrollView(
+        keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -351,6 +355,7 @@ class _ReportDialogState extends State<_ReportDialog> {
               ),
             ),
             TextField(
+              onTapOutside: (_) => FocusScope.of(context).unfocus(),
               key: const Key('publication.reportDetails'),
               controller: _details,
               maxLines: 3,
@@ -398,6 +403,7 @@ class _Detail extends StatelessWidget {
       ),
     );
     return ListView(
+      keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
       key: const Key('publication.detail'),
       children: [
         FeContentFrame(

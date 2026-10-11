@@ -57,6 +57,7 @@ class _ToolDetailScreenState extends ConsumerState<ToolDetailScreen> {
       ),
       body: SafeArea(
         child: ListView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           children: [
             FeContentFrame(
               child:
@@ -590,6 +591,7 @@ class _SolutionCalculatorViewState extends State<_SolutionCalculatorView>
         if (_isMolar) ...[
           const SizedBox(height: FeSpace.sm),
           TextField(
+            onTapOutside: (_) => FocusScope.of(context).unfocus(),
             key: const Key('calc.solution.molar'),
             controller: _molar,
             keyboardType: const TextInputType.numberWithOptions(decimal: true),
@@ -598,6 +600,7 @@ class _SolutionCalculatorViewState extends State<_SolutionCalculatorView>
         ],
         const SizedBox(height: FeSpace.sm),
         TextField(
+          onTapOutside: (_) => FocusScope.of(context).unfocus(),
           key: const Key('calc.solution.purity'),
           controller: _purity,
           keyboardType: const TextInputType.numberWithOptions(decimal: true),
@@ -742,6 +745,7 @@ class _QuantityField extends StatelessWidget {
         Expanded(
           flex: 3,
           child: TextField(
+            onTapOutside: (_) => FocusScope.of(context).unfocus(),
             controller: controller,
             keyboardType: const TextInputType.numberWithOptions(decimal: true),
             decoration: InputDecoration(labelText: label),

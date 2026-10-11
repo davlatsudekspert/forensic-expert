@@ -56,6 +56,8 @@ class _AiScreenState extends ConsumerState<AiScreen> {
   Future<void> _submit(String lang, {required bool offlineOnly}) async {
     final text = _controller.text.trim();
     if (text.isEmpty || _searching) return;
+    // Klaviatura yopilsin: javob ham, pastdagi navigatsiya ham ko‘rinsin.
+    FocusScope.of(context).unfocus();
     setState(() {
       _searching = true;
       _rag = null;
@@ -117,6 +119,9 @@ class _AiScreenState extends ConsumerState<AiScreen> {
       appBar: AppBar(title: Text(l.moduleAi)),
       body: SafeArea(
         child: ListView(
+          // Ro‘yxat surilganda klaviatura yopiladi — aks holda u pastdagi
+          // navigatsiyani berkitib qoladi va boshqa bo‘limga o‘tib bo‘lmaydi.
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           children: [
             FeContentFrame(
               child: Column(
@@ -133,6 +138,7 @@ class _AiScreenState extends ConsumerState<AiScreen> {
                     minLines: 2,
                     maxLines: 5,
                     onChanged: (v) => setState(() => _pii = scanner.scan(v)),
+                    onTapOutside: (_) => FocusScope.of(context).unfocus(),
                     decoration: InputDecoration(hintText: l.aiInputHint),
                   ),
                   const SizedBox(height: FeSpace.xxs),

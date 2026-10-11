@@ -145,6 +145,7 @@ class _SubmitPublicationScreenState
     final disciplines = [...ForensicDiscipline.values]
       ..sort((a, b) => l.disciplineName(a).compareTo(l.disciplineName(b)));
     return ListView(
+      keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
       key: const Key('submit.form'),
       children: [
         FeContentFrame(
@@ -162,6 +163,7 @@ class _SubmitPublicationScreenState
               ),
               gap(),
               TextField(
+                onTapOutside: (_) => FocusScope.of(context).unfocus(),
                 key: const Key('submit.title'),
                 controller: _title,
                 maxLength: 300,
@@ -173,6 +175,7 @@ class _SubmitPublicationScreenState
               ),
               gap(),
               TextField(
+                onTapOutside: (_) => FocusScope.of(context).unfocus(),
                 key: const Key('submit.abstract'),
                 controller: _abstract,
                 maxLength: 5000,
@@ -219,12 +222,14 @@ class _SubmitPublicationScreenState
               ),
               gap(),
               TextField(
+                onTapOutside: (_) => FocusScope.of(context).unfocus(),
                 key: const Key('submit.keywords'),
                 controller: _keywords,
                 decoration: InputDecoration(labelText: l.pubFormKeywords),
               ),
               gap(),
               TextField(
+                onTapOutside: (_) => FocusScope.of(context).unfocus(),
                 key: const Key('submit.authors'),
                 controller: _authors,
                 minLines: 2,
@@ -233,6 +238,7 @@ class _SubmitPublicationScreenState
               ),
               gap(),
               TextField(
+                onTapOutside: (_) => FocusScope.of(context).unfocus(),
                 key: const Key('submit.affiliation'),
                 controller: _affiliation,
                 maxLength: 300,
@@ -240,6 +246,7 @@ class _SubmitPublicationScreenState
               ),
               gap(),
               TextField(
+                onTapOutside: (_) => FocusScope.of(context).unfocus(),
                 key: const Key('submit.doi'),
                 controller: _doi,
                 autocorrect: false,
@@ -247,6 +254,7 @@ class _SubmitPublicationScreenState
               ),
               gap(),
               TextField(
+                onTapOutside: (_) => FocusScope.of(context).unfocus(),
                 key: const Key('submit.url'),
                 controller: _url,
                 autocorrect: false,
@@ -255,6 +263,7 @@ class _SubmitPublicationScreenState
               ),
               gap(),
               TextField(
+                onTapOutside: (_) => FocusScope.of(context).unfocus(),
                 key: const Key('submit.references'),
                 controller: _references,
                 minLines: 3,

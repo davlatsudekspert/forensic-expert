@@ -61,6 +61,7 @@ class _Queue extends ConsumerWidget {
     final t = Theme.of(context).textTheme;
     final c = FeTheme.of(context);
     return ListView(
+      keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
       key: const Key('moderation.queue'),
       children: [
         FeContentFrame(
@@ -231,6 +232,7 @@ class _CommentDialogState extends State<_CommentDialog> {
     return AlertDialog(
       title: Text(widget.title),
       content: TextField(
+        onTapOutside: (_) => FocusScope.of(context).unfocus(),
         key: const Key('moderation.comment'),
         controller: _c,
         maxLines: 4,

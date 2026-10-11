@@ -97,6 +97,7 @@ class _Body extends StatelessWidget {
     ];
     final maxDaily = d.daily.fold<int>(1, (m, e) => e.$2 > m ? e.$2 : m);
     return ListView(
+      keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
       key: const Key('admin.list'),
       children: [
         FeContentFrame(
@@ -420,6 +421,7 @@ class _GrantSectionState extends ConsumerState<_GrantSection> {
       children: [
         FeSectionHeader(l.adminGrantTitle),
         TextField(
+          onTapOutside: (_) => FocusScope.of(context).unfocus(),
           key: const Key('admin.grantEmail'),
           controller: _email,
           keyboardType: TextInputType.emailAddress,

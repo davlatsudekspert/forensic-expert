@@ -59,6 +59,7 @@ class AdminVerificationsScreen extends ConsumerWidget {
         ),
         body: SafeArea(
           child: ListView(
+            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
             key: const Key('adminVerify.list'),
             children: [
               FeContentFrame(
@@ -370,6 +371,7 @@ class _DetailState extends ConsumerState<_Detail> {
       a.organization,
     ].where((s) => s.trim().isNotEmpty).join(' · ');
     return ListView(
+      keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
       key: const Key('adminVerify.detail'),
       children: [
         FeContentFrame(
@@ -476,6 +478,7 @@ class _DetailState extends ConsumerState<_Detail> {
                 ),
                 const SizedBox(height: FeSpace.xs),
                 TextField(
+                  onTapOutside: (_) => FocusScope.of(context).unfocus(),
                   key: const Key('adminVerify.reason'),
                   controller: _reason,
                   enabled: !_busy,
@@ -492,6 +495,7 @@ class _DetailState extends ConsumerState<_Detail> {
                 ),
                 const SizedBox(height: FeSpace.xs),
                 TextField(
+                  onTapOutside: (_) => FocusScope.of(context).unfocus(),
                   key: const Key('adminVerify.message'),
                   controller: _message,
                   enabled: !_busy,

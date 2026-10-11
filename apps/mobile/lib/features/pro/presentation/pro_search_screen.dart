@@ -326,6 +326,7 @@ class _SearchTab extends ConsumerWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         TextField(
+          onTapOutside: (_) => FocusScope.of(context).unfocus(),
           key: const Key('pro.field'),
           controller: controller,
           textInputAction: TextInputAction.search,

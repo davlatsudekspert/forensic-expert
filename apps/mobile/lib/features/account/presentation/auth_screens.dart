@@ -109,6 +109,7 @@ class _AuthScaffold extends ConsumerWidget {
       ),
       body: SafeArea(
         child: ListView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           children: [
             FeContentFrame(
               child: AutofillGroup(
@@ -187,6 +188,7 @@ class _EmailField extends StatelessWidget {
   Widget build(BuildContext context) => Padding(
     padding: const EdgeInsets.only(bottom: FeSpace.sm),
     child: TextField(
+      onTapOutside: (_) => FocusScope.of(context).unfocus(),
       key: const Key('auth.email'),
       controller: controller,
       keyboardType: TextInputType.emailAddress,
@@ -230,6 +232,7 @@ class _PasswordFieldState extends State<_PasswordField> {
     return Padding(
       padding: const EdgeInsets.only(bottom: FeSpace.sm),
       child: TextField(
+        onTapOutside: (_) => FocusScope.of(context).unfocus(),
         key: widget.fieldKey,
         controller: widget.controller,
         obscureText: _obscure,
@@ -623,6 +626,7 @@ class _VerifyEmailScreenState extends ConsumerState<VerifyEmailScreen> {
         ),
         const SizedBox(height: FeSpace.md),
         TextField(
+          onTapOutside: (_) => FocusScope.of(context).unfocus(),
           key: const Key('auth.code'),
           controller: _code,
           keyboardType: TextInputType.number,
@@ -805,6 +809,7 @@ class _ResetPasswordScreenState extends ConsumerState<ResetPasswordScreen> {
         ),
         const SizedBox(height: FeSpace.md),
         TextField(
+          onTapOutside: (_) => FocusScope.of(context).unfocus(),
           key: const Key('auth.code'),
           controller: _code,
           keyboardType: TextInputType.number,
@@ -1106,6 +1111,7 @@ class _EmailCodeScreenState extends ConsumerState<EmailCodeScreen> {
           ),
           const SizedBox(height: FeSpace.md),
           TextField(
+            onTapOutside: (_) => FocusScope.of(context).unfocus(),
             key: const Key('emailCode.code'),
             controller: _code,
             autofocus: true,

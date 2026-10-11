@@ -41,6 +41,7 @@ class _CourtScaffold extends StatelessWidget {
     appBar: AppBar(title: Text(title), actions: actions),
     body: SafeArea(
       child: ListView(
+        keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
         key: listKey,
         children: [
           FeContentFrame(
@@ -182,6 +183,7 @@ class _CourtPrepScreenState extends ConsumerState<CourtPrepScreen> {
           )
         else ...[
           TextField(
+            onTapOutside: (_) => FocusScope.of(context).unfocus(),
             key: const Key('court.search'),
             decoration: InputDecoration(
               prefixIcon: const Icon(Icons.search),

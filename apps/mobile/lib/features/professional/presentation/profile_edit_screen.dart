@@ -246,6 +246,7 @@ class _ProfileEditScreenState extends ConsumerState<ProfileEditScreen> {
     }) => Padding(
       padding: const EdgeInsets.only(bottom: FeSpace.sm),
       child: TextField(
+        onTapOutside: (_) => FocusScope.of(context).unfocus(),
         key: Key('profileEdit.$key'),
         controller: ctrl,
         keyboardType: keyboard,
@@ -272,6 +273,7 @@ class _ProfileEditScreenState extends ConsumerState<ProfileEditScreen> {
       ),
       body: SafeArea(
         child: ListView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           key: const Key('profileEdit.list'),
           padding: const EdgeInsets.symmetric(vertical: FeSpace.md),
           children: [
@@ -716,6 +718,7 @@ class _CountrySheetState extends State<_CountrySheet> {
           Padding(
             padding: const EdgeInsets.all(FeSpace.md),
             child: TextField(
+              onTapOutside: (_) => FocusScope.of(context).unfocus(),
               key: const Key('country.search'),
               autofocus: true,
               decoration: InputDecoration(
@@ -728,6 +731,7 @@ class _CountrySheetState extends State<_CountrySheet> {
           ),
           Expanded(
             child: ListView.builder(
+              keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
               itemCount: list.length,
               itemBuilder: (_, i) => ListTile(
                 key: Key('country.${list[i].code}'),

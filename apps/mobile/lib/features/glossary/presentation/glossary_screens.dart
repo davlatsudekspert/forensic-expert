@@ -96,6 +96,7 @@ class _GlossaryScreenState extends ConsumerState<GlossaryScreen> {
                   ),
                   const SizedBox(height: FeSpace.sm),
                   TextField(
+                    onTapOutside: (_) => FocusScope.of(context).unfocus(),
                     key: const Key('glossary.filter'),
                     controller: _filter,
                     onChanged: (v) => setState(() => _query = v),
@@ -228,6 +229,7 @@ class GlossaryTermScreen extends ConsumerWidget {
       appBar: AppBar(title: Text(l.glossaryTitle)),
       body: SafeArea(
         child: ListView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           key: const Key('glossary.detail'),
           children: [
             FeContentFrame(
@@ -406,6 +408,7 @@ Future<void> showGlossaryTermSheet(
           maxHeight: MediaQuery.sizeOf(sheet).height * 0.85,
         ),
         child: SingleChildScrollView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           key: const Key('glossary.sheet'),
           padding: const EdgeInsets.fromLTRB(
             FeSpace.md,

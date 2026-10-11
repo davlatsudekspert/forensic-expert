@@ -62,6 +62,7 @@ class ReferralScreen extends ConsumerWidget {
       appBar: AppBar(title: Text(l.referralTitle)),
       body: SafeArea(
         child: ListView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           key: const Key('referral.list'),
           padding: const EdgeInsets.only(bottom: FeSpace.xl),
           children: [
@@ -583,6 +584,7 @@ class _ClaimSectionState extends ConsumerState<_ClaimSection> {
           children: [
             Expanded(
               child: TextField(
+                onTapOutside: (_) => FocusScope.of(context).unfocus(),
                 key: const Key('referral.codeField'),
                 controller: _ctl,
                 textCapitalization: TextCapitalization.characters,

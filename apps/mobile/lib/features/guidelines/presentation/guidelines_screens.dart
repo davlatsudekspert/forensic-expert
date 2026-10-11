@@ -86,6 +86,7 @@ class _GuidelinesScreenState extends ConsumerState<GuidelinesScreen> {
       appBar: AppBar(title: Text(l.guidelinesTitle)),
       body: SafeArea(
         child: ListView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           children: [
             FeContentFrame(
               child: Column(
@@ -99,6 +100,7 @@ class _GuidelinesScreenState extends ConsumerState<GuidelinesScreen> {
                   ),
                   const SizedBox(height: FeSpace.sm),
                   TextField(
+                    onTapOutside: (_) => FocusScope.of(context).unfocus(),
                     key: const Key('guidelines.search'),
                     decoration: InputDecoration(
                       prefixIcon: const Icon(Icons.search),
@@ -262,6 +264,7 @@ class _GuidelineDetailScreenState extends ConsumerState<GuidelineDetailScreen> {
       ),
       body: SafeArea(
         child: ListView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           key: const Key('guideline.detail'),
           children: [
             FeContentFrame(
@@ -355,6 +358,8 @@ class _GuidelineDetailScreenState extends ConsumerState<GuidelineDetailScreen> {
                     // Bir qator (gorizontal) — uzun sarlavhalar qisqartiriladi,
                     // to‘liq nomi bo‘lim sarlavhasida.
                     SingleChildScrollView(
+                      keyboardDismissBehavior:
+                          ScrollViewKeyboardDismissBehavior.onDrag,
                       key: const Key('guideline.index'),
                       scrollDirection: Axis.horizontal,
                       child: Row(

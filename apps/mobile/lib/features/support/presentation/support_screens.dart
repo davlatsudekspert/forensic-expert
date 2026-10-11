@@ -96,6 +96,8 @@ class SupportListScreen extends ConsumerWidget {
                 return ref.refresh(mySupportThreadsProvider.future);
               },
               child: ListView(
+                keyboardDismissBehavior:
+                    ScrollViewKeyboardDismissBehavior.onDrag,
                 key: const Key('support.list'),
                 children: [
                   FeContentFrame(
@@ -261,6 +263,7 @@ class _NewSupportThreadScreenState
                 ? AutovalidateMode.onUserInteraction
                 : AutovalidateMode.disabled,
             child: ListView(
+              keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
               key: const Key('supportNew.list'),
               children: [
                 FeContentFrame(
@@ -313,6 +316,7 @@ class _NewSupportThreadScreenState
                       ],
                       const SizedBox(height: FeSpace.sm),
                       TextFormField(
+                        onTapOutside: (_) => FocusScope.of(context).unfocus(),
                         key: const Key('supportNew.subject'),
                         controller: _subject,
                         maxLength: SupportLimits.subject,
@@ -324,6 +328,7 @@ class _NewSupportThreadScreenState
                       ),
                       const SizedBox(height: FeSpace.xs),
                       TextFormField(
+                        onTapOutside: (_) => FocusScope.of(context).unfocus(),
                         key: const Key('supportNew.body'),
                         controller: _body,
                         minLines: 5,
@@ -558,6 +563,7 @@ class SupportConversation extends ConsumerWidget {
       children: [
         Expanded(
           child: ListView(
+            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
             key: const Key('support.conversation'),
             children: [
               FeContentFrame(
