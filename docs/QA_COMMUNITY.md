@@ -1,9 +1,9 @@
 # «Savol-javob (Hamjamiyat)» — server qismi
 
-Holat: **QA-1 (DB) va QA-2 (Edge Function) bajarildi.** Flutter qatlami
-(QA-3) va l10n/testlar (QA-4) keyingi bosqichda. Bo'lim ilovada server
-ulanmaguncha **ko'rinmaydi** — ulanmagan funksiya ishlayotgandek
-ko'rsatilmaydi.
+Holat: **QA-1 (DB), QA-2 (Edge Function) va QA-3 (Flutter qatlami)
+bajarildi.** Bo'lim ilovada server ulanmaguncha **ko'rinmaydi** — ulanmagan
+funksiya ishlayotgandek ko'rsatilmaydi. Yoqish: `--dart-define=FE_QA=true`
+(yoki admin hisobi), server ulangan va foydalanuvchi kirgan bo'lsa.
 
 Egasining shartlari qanday bajarilgani quyida.
 
@@ -119,3 +119,32 @@ sinaladi. Haqiqiy foydalanuvchilarga hech qanday sinov xabari yuborilmadi.
    huquqi). Ularsiz tarjima Gemini zaxirasi bilan ishlaydi.
 2. Egasining Q&A rolini tasdiqlash: `forensic_physician` (hozir) yoki
    `forensic_chemist`.
+
+## 5. Ilova qatlami (QA-3)
+
+* Domen: `lib/domain/qa/qa_models.dart`, port `lib/domain/ports/qa_ports.dart`
+  (`UnconfiguredQaService` — server yo'q holat).
+* Adapter: `lib/data/remote/supabase_qa.dart` — 12 RPC + ikki Edge Function.
+  Hech qanday AI kaliti ilovada yo'q.
+* Providerlar: `lib/app/qa.dart`. `qaVisibleProvider` uchta shartni
+  tekshiradi: bayroq/admin, server ulangan, foydalanuvchi kirgan.
+* Ekranlar (`lib/features/qa/presentation/`): ro'yxat, savol sahifasi, savol
+  berish, menikilar, mutaxassis tasdig'i, admin moderatsiyasi. Kutubxona
+  hub'ida yangi plitka.
+* Hujjat tanlagich `lib/features/qa/qa_document_picker.dart` — baytlar faqat
+  xotirada, turi baytlardan aniqlanadi (kengaytmaga ishonilmaydi). Ekran
+  yopilganda havola uziladi; yuborilgandan keyin ham darhol tozalanadi.
+* Postga rasm biriktirish **yo'q** — formada bunday tugma umuman yo'q (test
+  shuni tekshiradi).
+
+## 6. l10n va testlar (QA-4, qisman)
+
+* `apps/mobile/tool/l10n_qa_community.py` — 90 ga yaqin kalit uz/ru/en teng
+  chuqurlikda, idempotent; `CLAUDE.md` dagi skriptlar tartibiga qo'shildi.
+* `apps/mobile/test/widget/qa_community_test.dart` — 16 test: server
+  ulanmagan holat, kirmagan foydalanuvchi, ro'yxat va qidiruv, javob yozish
+  huquqi, maxfiylik filtri sababi, tarjima belgisi va «Asl matn», hujjat
+  «saqlanmaydi» va'dasi **uch tilda**, katta fayl rad etilishi, tasdiq va rad
+  javobi, 320 dp + 1.3× matn, admin bo'lmaganga moderatsiya berilmasligi.
+* Maxfiylik siyosatiga 7a bo'limi qo'shildi (uz/ru/en), Play Data safety
+  yo'riqnomasi yangilandi: «Files and docs» va «Photos» **belgilanmaydi**.

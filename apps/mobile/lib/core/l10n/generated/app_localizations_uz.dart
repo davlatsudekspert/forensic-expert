@@ -8477,4 +8477,400 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get claimFieldLimitation => 'Cheklov';
+
+  @override
+  String get qaTitle => 'Savol-javob (Hamjamiyat)';
+
+  @override
+  String get qaIntro =>
+      'Bu yerda sud tabiblari va sud kimyogarlari bir-biriga amaliy savollar beradi. Javob yozishni faqat tasdiqlangan mutaxassislar oladi.';
+
+  @override
+  String get qaNotice =>
+      'Bu yerdagi javob — hamkasbning fikri; ilmiy xulosa ham, ish uchun ekspert xulosasi ham emas.';
+
+  @override
+  String get qaUnavailable => 'Bu bo‘lim hozircha mavjud emas.';
+
+  @override
+  String get qaSignInRequired =>
+      'Savollarni o‘qish va berish uchun hisobingizga kiring.';
+
+  @override
+  String get qaSignIn => 'Kirish';
+
+  @override
+  String get qaSearchHint => 'Savollar ichidan qidirish';
+
+  @override
+  String get qaAllTopics => 'Barcha mavzular';
+
+  @override
+  String get qaEmpty => 'Hozircha savol yo‘q. Birinchi savolni siz bering.';
+
+  @override
+  String get qaLoadFailed =>
+      'Savollarni yuklab bo‘lmadi. Internet aloqasini tekshiring.';
+
+  @override
+  String qaAnswersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count javob',
+      zero: 'Javob yo‘q',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get qaAcceptedAnswer => 'Eng yaxshi javob';
+
+  @override
+  String get qaPinned => 'Qadalgan';
+
+  @override
+  String get qaOpenMine => 'Mening savollarim';
+
+  @override
+  String get qaAsk => 'Savol berish';
+
+  @override
+  String get qaOpenModeration => 'Moderatsiya';
+
+  @override
+  String get qaTagToxicology => 'Toksikologiya';
+
+  @override
+  String get qaTagAlcohol => 'Alkogol';
+
+  @override
+  String get qaTagDrugs => 'Narkotik moddalar';
+
+  @override
+  String get qaTagDna => 'DNK';
+
+  @override
+  String get qaTagHistology => 'Gistologiya';
+
+  @override
+  String get qaTagThanatology => 'Tanatologiya';
+
+  @override
+  String get qaTagMethods => 'Usullar';
+
+  @override
+  String get qaTagRegulations => 'Normativ hujjatlar';
+
+  @override
+  String get qaTagBiology => 'Biologiya';
+
+  @override
+  String get qaTagCriminalistics => 'Kriminalistika';
+
+  @override
+  String get qaTagDocumentation => 'Hujjatlar';
+
+  @override
+  String get qaRolePhysician => 'Sud tabibi';
+
+  @override
+  String get qaRoleChemist => 'Sud kimyogari';
+
+  @override
+  String get qaRoleTechnician => 'Laborant';
+
+  @override
+  String get qaRoleStudent => 'Talaba';
+
+  @override
+  String get qaRoleOther => 'Boshqa';
+
+  @override
+  String get qaVerifiedBadge => 'Tasdiqlangan mutaxassis';
+
+  @override
+  String get qaManualBadge => 'Qo‘lda tekshirilgan';
+
+  @override
+  String get qaAskTitle => 'Savol berish';
+
+  @override
+  String get qaFieldTitle => 'Savol';
+
+  @override
+  String get qaFieldBody => 'Batafsil';
+
+  @override
+  String get qaFieldTopics => 'Mavzular (5 tagacha)';
+
+  @override
+  String get qaPrivacyWarning =>
+      'Ish materialini hech qachon yozmang: ish yoki ekspertiza raqami, shaxsning ismi, manzil, sana bilan birga joy va shaxsni aniqlashga imkon beradigan boshqa ma’lumot. Savolni umumiy holda yozing. Fotosurat ilova qilinmaydi.';
+
+  @override
+  String get qaNoImages => 'Postlarga rasm ilova qilinmaydi.';
+
+  @override
+  String get qaTitleTooShort => 'Savolni kamida 10 belgida yozing.';
+
+  @override
+  String get qaBodyTooShort => 'Kamida 30 belgilik tushuntirish qo‘shing.';
+
+  @override
+  String get qaSend => 'Yuborish';
+
+  @override
+  String get qaPosted => 'Joylandi.';
+
+  @override
+  String get qaHeldForReview =>
+      'Tekshiruvga qoldirildi: matnda ish materiali bordek ko‘rinadi. Administrator ko‘rib chiqadi.';
+
+  @override
+  String get qaFlagCaseNumber => 'ish yoki ekspertiza raqami';
+
+  @override
+  String get qaFlagPersonName => 'shaxsning ismi';
+
+  @override
+  String get qaFlagDateAndPlace => 'sana bilan birga joy';
+
+  @override
+  String get qaFlagContact => 'telefon raqami yoki manzil';
+
+  @override
+  String get qaFlagIdentifier => 'shaxsni tasdiqlovchi hujjat raqami';
+
+  @override
+  String qaFlagsFound(String flags) {
+    return 'Topildi: $flags';
+  }
+
+  @override
+  String get qaDailyLimit =>
+      'Bugungi chegaraga yetdingiz. Ertaga qayta urinib ko‘ring.';
+
+  @override
+  String get qaSendFailed => 'Yuborib bo‘lmadi. Internet aloqasini tekshiring.';
+
+  @override
+  String get qaAnswerHint => 'Javobingizni yozing';
+
+  @override
+  String get qaOnlyVerifiedMayAnswer =>
+      'Javob yozishni faqat tasdiqlangan mutaxassislar oladi. Qatnashish uchun tasdiqdan o‘ting.';
+
+  @override
+  String get qaNoAnswers => 'Hozircha javob yo‘q.';
+
+  @override
+  String get qaMarkBest => 'Eng yaxshi javob deb belgilash';
+
+  @override
+  String get qaUnmarkBest => 'Eng yaxshi javob belgisini olish';
+
+  @override
+  String get qaUpvote => 'Foydali javob';
+
+  @override
+  String get qaDownvote => 'Foydasiz javob';
+
+  @override
+  String get qaOnlyVerifiedMayVote =>
+      'Ovoz berishni faqat tasdiqlangan mutaxassislar oladi.';
+
+  @override
+  String get qaReport => 'Shikoyat qilish';
+
+  @override
+  String get qaReportReasonHint => 'Bu postda nima noto‘g‘ri?';
+
+  @override
+  String get qaReportSent => 'Rahmat. Administrator ko‘rib chiqadi.';
+
+  @override
+  String get qaReportHidden =>
+      'Administrator qaroriga qadar yashirildi: uch xil foydalanuvchi shikoyat qildi.';
+
+  @override
+  String get qaMachineTranslation => 'Mashina tarjimasi';
+
+  @override
+  String get qaShowTranslation => 'Tarjima qilish';
+
+  @override
+  String get qaShowOriginal => 'Asl matn';
+
+  @override
+  String get qaTranslationFailed => 'Hozir tarjima qilib bo‘lmadi.';
+
+  @override
+  String get qaVerifyTitle => 'Mutaxassis sifatida tasdiqlanish';
+
+  @override
+  String get qaVerifyIntro =>
+      'Kasbiy hujjatingizning surati yoki PDF faylini yuboring — diplom, sertifikat, litsenziya yoki malaka guvohnomasi. Tekshiruv avtomatik bo‘ladi.';
+
+  @override
+  String get qaVerifyFileNotStored =>
+      'Fayl SAQLANMAYDI. U faqat tekshiruv vaqtida xotirada bo‘ladi va bazaga, saqlagichga yoki jurnalga tushmaydi. Saqlanadigani: hisobingiz identifikatori, rol, mamlakat, natija va sana. Hujjat raqami va to‘liq ism yozilmaydi.';
+
+  @override
+  String get qaVerifyRole => 'Sizning rolingiz';
+
+  @override
+  String get qaVerifyCountry => 'Mamlakat (ikki harf)';
+
+  @override
+  String get qaVerifyPickFile => 'Hujjatni tanlash';
+
+  @override
+  String qaVerifyFileChosen(String size) {
+    return 'Hujjat tanlandi ($size)';
+  }
+
+  @override
+  String get qaVerifySend => 'Tekshirishga yuborish';
+
+  @override
+  String qaVerifyAttemptsLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bugun $count urinish qoldi',
+      zero: 'Bugun urinish qolmadi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get qaVerifyChecking => 'Hujjat tekshirilmoqda…';
+
+  @override
+  String get qaVerifyAccepted =>
+      'Tasdiqlandi. Endi savollarga javob yozishingiz va ovoz berishingiz mumkin.';
+
+  @override
+  String qaVerifyRejected(String reason) {
+    return 'Tasdiqlanmadi: $reason';
+  }
+
+  @override
+  String get qaReasonNotACredential => 'fayl kasbiy hujjatga o‘xshamaydi';
+
+  @override
+  String get qaReasonUnreadable => 'hujjatni o‘qib bo‘lmadi';
+
+  @override
+  String get qaReasonRoleMismatch =>
+      'hujjatda siz tanlagan kasbdan boshqasi ko‘rsatilgan';
+
+  @override
+  String get qaReasonLowConfidence => 'tekshiruv yetarlicha ishonchli bo‘lmadi';
+
+  @override
+  String get qaReasonExpired => 'hujjat muddati o‘tganga o‘xshaydi';
+
+  @override
+  String get qaReasonReported =>
+      'profilga boshqa foydalanuvchilar shikoyat qildi';
+
+  @override
+  String get qaVerifyBadDocument =>
+      'JPEG, PNG, WebP yoki PDF faylni tanlang — 6 MB dan oshmasin.';
+
+  @override
+  String get qaVerifyUnavailable =>
+      'Tekshiruv hozir ishlamayapti. Urinishingiz sarflanmadi.';
+
+  @override
+  String get qaStatusUnverified => 'Tasdiqlanmagan';
+
+  @override
+  String get qaStatusVerified => 'Tasdiqlangan';
+
+  @override
+  String get qaStatusRejected => 'Rad etilgan';
+
+  @override
+  String get qaStatusSuspended => 'To‘xtatilgan';
+
+  @override
+  String get qaMineTitle => 'Mening savollarim va javoblarim';
+
+  @override
+  String get qaMineQuestions => 'Savollar';
+
+  @override
+  String get qaMineAnswers => 'Javoblar';
+
+  @override
+  String get qaMineEmpty => 'Siz hali hech narsa joylamagansiz.';
+
+  @override
+  String get qaPostPublished => 'Joylangan';
+
+  @override
+  String get qaPostModeration => 'Tekshiruvda';
+
+  @override
+  String get qaPostRemoved => 'Olib tashlangan';
+
+  @override
+  String qaScore(int score) {
+    return 'Baho: $score';
+  }
+
+  @override
+  String get qaModerationTitle => 'Savol-javob moderatsiyasi';
+
+  @override
+  String get qaModerationEmpty => 'Kutayotgan narsa yo‘q.';
+
+  @override
+  String get qaModerationQuestions => 'Tekshiruvdagi savollar';
+
+  @override
+  String get qaModerationAnswers => 'Tekshiruvdagi javoblar';
+
+  @override
+  String get qaModerationSuspended => 'To‘xtatilgan belgilar';
+
+  @override
+  String qaReportsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count shikoyat',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get qaActionPublish => 'Joylash';
+
+  @override
+  String get qaActionRemove => 'Olib tashlash';
+
+  @override
+  String get qaActionPin => 'Qadash';
+
+  @override
+  String get qaActionUnpin => 'Qadashni olish';
+
+  @override
+  String get qaActionReinstate => 'Belgini qaytarish';
+
+  @override
+  String get qaActionSuspend => 'Belgini to‘xtatish';
+
+  @override
+  String get qaActionDone => 'Bajarildi.';
+
+  @override
+  String get qaActionFailed => 'Bajarib bo‘lmadi.';
+
+  @override
+  String get qaAdminOnly => 'Buni faqat administrator ochadi.';
 }

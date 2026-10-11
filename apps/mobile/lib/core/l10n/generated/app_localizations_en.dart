@@ -8512,4 +8512,401 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get claimFieldLimitation => 'Limitation';
+
+  @override
+  String get qaTitle => 'Questions & answers';
+
+  @override
+  String get qaIntro =>
+      'Forensic physicians and forensic chemists ask each other practical questions here. Only verified specialists may answer.';
+
+  @override
+  String get qaNotice =>
+      'An answer here is a colleague\'s opinion, not a scientific conclusion and not an expert opinion for a case file.';
+
+  @override
+  String get qaUnavailable => 'This section is not available yet.';
+
+  @override
+  String get qaSignInRequired => 'Sign in to read and ask questions.';
+
+  @override
+  String get qaSignIn => 'Sign in';
+
+  @override
+  String get qaSearchHint => 'Search questions';
+
+  @override
+  String get qaAllTopics => 'All topics';
+
+  @override
+  String get qaEmpty => 'No questions yet. Be the first to ask.';
+
+  @override
+  String get qaLoadFailed =>
+      'Could not load the questions. Check the connection.';
+
+  @override
+  String qaAnswersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count answers',
+      one: '1 answer',
+      zero: 'No answers',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get qaAcceptedAnswer => 'Best answer';
+
+  @override
+  String get qaPinned => 'Pinned';
+
+  @override
+  String get qaOpenMine => 'My questions';
+
+  @override
+  String get qaAsk => 'Ask a question';
+
+  @override
+  String get qaOpenModeration => 'Moderation';
+
+  @override
+  String get qaTagToxicology => 'Toxicology';
+
+  @override
+  String get qaTagAlcohol => 'Alcohol';
+
+  @override
+  String get qaTagDrugs => 'Narcotic drugs';
+
+  @override
+  String get qaTagDna => 'DNA';
+
+  @override
+  String get qaTagHistology => 'Histology';
+
+  @override
+  String get qaTagThanatology => 'Thanatology';
+
+  @override
+  String get qaTagMethods => 'Methods';
+
+  @override
+  String get qaTagRegulations => 'Regulations';
+
+  @override
+  String get qaTagBiology => 'Biology';
+
+  @override
+  String get qaTagCriminalistics => 'Criminalistics';
+
+  @override
+  String get qaTagDocumentation => 'Documentation';
+
+  @override
+  String get qaRolePhysician => 'Forensic physician';
+
+  @override
+  String get qaRoleChemist => 'Forensic chemist';
+
+  @override
+  String get qaRoleTechnician => 'Laboratory technician';
+
+  @override
+  String get qaRoleStudent => 'Student';
+
+  @override
+  String get qaRoleOther => 'Other';
+
+  @override
+  String get qaVerifiedBadge => 'Verified specialist';
+
+  @override
+  String get qaManualBadge => 'Checked by hand';
+
+  @override
+  String get qaAskTitle => 'Ask a question';
+
+  @override
+  String get qaFieldTitle => 'Question';
+
+  @override
+  String get qaFieldBody => 'Details';
+
+  @override
+  String get qaFieldTopics => 'Topics (up to 5)';
+
+  @override
+  String get qaPrivacyWarning =>
+      'Never write case material: case or examination numbers, a person\'s name, an address, a date together with a place, or anything else that identifies someone. Describe the question in general terms. Photographs cannot be attached.';
+
+  @override
+  String get qaNoImages => 'Images cannot be attached to posts.';
+
+  @override
+  String get qaTitleTooShort => 'Write the question in at least 10 characters.';
+
+  @override
+  String get qaBodyTooShort => 'Add at least 30 characters of detail.';
+
+  @override
+  String get qaSend => 'Send';
+
+  @override
+  String get qaPosted => 'Published.';
+
+  @override
+  String get qaHeldForReview =>
+      'Held for review: the text looks like it contains case material. An administrator will look at it.';
+
+  @override
+  String get qaFlagCaseNumber => 'a case or examination number';
+
+  @override
+  String get qaFlagPersonName => 'a person\'s name';
+
+  @override
+  String get qaFlagDateAndPlace => 'a date together with a place';
+
+  @override
+  String get qaFlagContact => 'a phone number or an address';
+
+  @override
+  String get qaFlagIdentifier => 'an identity document number';
+
+  @override
+  String qaFlagsFound(String flags) {
+    return 'Found: $flags';
+  }
+
+  @override
+  String get qaDailyLimit =>
+      'You have reached today\'s limit. Try again tomorrow.';
+
+  @override
+  String get qaSendFailed => 'Could not send. Check the connection.';
+
+  @override
+  String get qaAnswerHint => 'Write your answer';
+
+  @override
+  String get qaOnlyVerifiedMayAnswer =>
+      'Only verified specialists may answer. Get verified to join in.';
+
+  @override
+  String get qaNoAnswers => 'No answers yet.';
+
+  @override
+  String get qaMarkBest => 'Mark as best answer';
+
+  @override
+  String get qaUnmarkBest => 'Remove the best-answer mark';
+
+  @override
+  String get qaUpvote => 'Useful answer';
+
+  @override
+  String get qaDownvote => 'Not a useful answer';
+
+  @override
+  String get qaOnlyVerifiedMayVote => 'Only verified specialists may vote.';
+
+  @override
+  String get qaReport => 'Report';
+
+  @override
+  String get qaReportReasonHint => 'What is wrong with this post?';
+
+  @override
+  String get qaReportSent => 'Thank you. An administrator will look at it.';
+
+  @override
+  String get qaReportHidden =>
+      'Hidden until an administrator decides: three different users reported it.';
+
+  @override
+  String get qaMachineTranslation => 'Machine translation';
+
+  @override
+  String get qaShowTranslation => 'Translate';
+
+  @override
+  String get qaShowOriginal => 'Original text';
+
+  @override
+  String get qaTranslationFailed => 'Could not translate right now.';
+
+  @override
+  String get qaVerifyTitle => 'Verify as a specialist';
+
+  @override
+  String get qaVerifyIntro =>
+      'Send a photograph or a PDF of your professional credential — a diploma, certificate, licence or qualification certificate. It is checked automatically.';
+
+  @override
+  String get qaVerifyFileNotStored =>
+      'The file is NOT stored. It is held only in memory during the check and goes to no database, no storage and no log. Only this is kept: your account id, role, country, the outcome and the date. The document number and your full name are not written down.';
+
+  @override
+  String get qaVerifyRole => 'Your role';
+
+  @override
+  String get qaVerifyCountry => 'Country (two letters)';
+
+  @override
+  String get qaVerifyPickFile => 'Choose the document';
+
+  @override
+  String qaVerifyFileChosen(String size) {
+    return 'Document chosen ($size)';
+  }
+
+  @override
+  String get qaVerifySend => 'Send for checking';
+
+  @override
+  String qaVerifyAttemptsLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count attempts left today',
+      one: '1 attempt left today',
+      zero: 'No attempts left today',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get qaVerifyChecking => 'Checking the document…';
+
+  @override
+  String get qaVerifyAccepted =>
+      'Verified. You may now answer questions and vote.';
+
+  @override
+  String qaVerifyRejected(String reason) {
+    return 'Not verified: $reason';
+  }
+
+  @override
+  String get qaReasonNotACredential =>
+      'the file does not look like a professional credential';
+
+  @override
+  String get qaReasonUnreadable => 'the document could not be read';
+
+  @override
+  String get qaReasonRoleMismatch =>
+      'the document shows a different profession from the one you chose';
+
+  @override
+  String get qaReasonLowConfidence => 'the check was not confident enough';
+
+  @override
+  String get qaReasonExpired => 'the document looks expired';
+
+  @override
+  String get qaReasonReported => 'other users reported the profile';
+
+  @override
+  String get qaVerifyBadDocument =>
+      'Choose a JPEG, PNG, WebP or PDF file no larger than 6 MB.';
+
+  @override
+  String get qaVerifyUnavailable =>
+      'The check is unavailable right now. Your attempt was not used.';
+
+  @override
+  String get qaStatusUnverified => 'Not verified';
+
+  @override
+  String get qaStatusVerified => 'Verified';
+
+  @override
+  String get qaStatusRejected => 'Rejected';
+
+  @override
+  String get qaStatusSuspended => 'Suspended';
+
+  @override
+  String get qaMineTitle => 'My questions and answers';
+
+  @override
+  String get qaMineQuestions => 'Questions';
+
+  @override
+  String get qaMineAnswers => 'Answers';
+
+  @override
+  String get qaMineEmpty => 'You have not posted anything yet.';
+
+  @override
+  String get qaPostPublished => 'Published';
+
+  @override
+  String get qaPostModeration => 'Under review';
+
+  @override
+  String get qaPostRemoved => 'Removed';
+
+  @override
+  String qaScore(int score) {
+    return 'Rating: $score';
+  }
+
+  @override
+  String get qaModerationTitle => 'Q&A moderation';
+
+  @override
+  String get qaModerationEmpty => 'Nothing is waiting.';
+
+  @override
+  String get qaModerationQuestions => 'Questions under review';
+
+  @override
+  String get qaModerationAnswers => 'Answers under review';
+
+  @override
+  String get qaModerationSuspended => 'Suspended badges';
+
+  @override
+  String qaReportsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count reports',
+      one: '1 report',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get qaActionPublish => 'Publish';
+
+  @override
+  String get qaActionRemove => 'Remove';
+
+  @override
+  String get qaActionPin => 'Pin';
+
+  @override
+  String get qaActionUnpin => 'Unpin';
+
+  @override
+  String get qaActionReinstate => 'Reinstate the badge';
+
+  @override
+  String get qaActionSuspend => 'Suspend the badge';
+
+  @override
+  String get qaActionDone => 'Done.';
+
+  @override
+  String get qaActionFailed => 'Could not do that.';
+
+  @override
+  String get qaAdminOnly => 'Only an administrator can open this.';
 }

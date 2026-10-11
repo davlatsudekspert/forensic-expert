@@ -14816,6 +14816,702 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Limitation'**
   String get claimFieldLimitation;
+
+  /// Title of the community Q&A section.
+  ///
+  /// In en, this message translates to:
+  /// **'Questions & answers'**
+  String get qaTitle;
+
+  /// One-paragraph intro at the top of the Q&A feed.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic physicians and forensic chemists ask each other practical questions here. Only verified specialists may answer.'**
+  String get qaIntro;
+
+  /// Standing warning banner in the Q&A section.
+  ///
+  /// In en, this message translates to:
+  /// **'An answer here is a colleague\'s opinion, not a scientific conclusion and not an expert opinion for a case file.'**
+  String get qaNotice;
+
+  /// Empty state when the Q&A section is switched off or the server is unreachable.
+  ///
+  /// In en, this message translates to:
+  /// **'This section is not available yet.'**
+  String get qaUnavailable;
+
+  /// Empty state for a signed-out user in the Q&A section.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in to read and ask questions.'**
+  String get qaSignInRequired;
+
+  /// Sign-in button in Q&A.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in'**
+  String get qaSignIn;
+
+  /// Search field hint in the Q&A feed.
+  ///
+  /// In en, this message translates to:
+  /// **'Search questions'**
+  String get qaSearchHint;
+
+  /// Chip that clears the tag filter.
+  ///
+  /// In en, this message translates to:
+  /// **'All topics'**
+  String get qaAllTopics;
+
+  /// Empty state for the Q&A feed.
+  ///
+  /// In en, this message translates to:
+  /// **'No questions yet. Be the first to ask.'**
+  String get qaEmpty;
+
+  /// Error state for the Q&A feed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not load the questions. Check the connection.'**
+  String get qaLoadFailed;
+
+  /// Number of answers on a question card.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No answers} =1{1 answer} other{{count} answers}}'**
+  String qaAnswersCount(int count);
+
+  /// Badge on the answer the asker accepted.
+  ///
+  /// In en, this message translates to:
+  /// **'Best answer'**
+  String get qaAcceptedAnswer;
+
+  /// Badge on a question an admin pinned.
+  ///
+  /// In en, this message translates to:
+  /// **'Pinned'**
+  String get qaPinned;
+
+  /// Toolbar action that opens the user's own questions and answers.
+  ///
+  /// In en, this message translates to:
+  /// **'My questions'**
+  String get qaOpenMine;
+
+  /// Primary action that opens the ask form.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask a question'**
+  String get qaAsk;
+
+  /// Toolbar action that opens the admin moderation queue.
+  ///
+  /// In en, this message translates to:
+  /// **'Moderation'**
+  String get qaOpenModeration;
+
+  /// Q&A topic tag.
+  ///
+  /// In en, this message translates to:
+  /// **'Toxicology'**
+  String get qaTagToxicology;
+
+  /// Q&A topic tag.
+  ///
+  /// In en, this message translates to:
+  /// **'Alcohol'**
+  String get qaTagAlcohol;
+
+  /// Q&A topic tag.
+  ///
+  /// In en, this message translates to:
+  /// **'Narcotic drugs'**
+  String get qaTagDrugs;
+
+  /// Q&A topic tag.
+  ///
+  /// In en, this message translates to:
+  /// **'DNA'**
+  String get qaTagDna;
+
+  /// Q&A topic tag.
+  ///
+  /// In en, this message translates to:
+  /// **'Histology'**
+  String get qaTagHistology;
+
+  /// Q&A topic tag.
+  ///
+  /// In en, this message translates to:
+  /// **'Thanatology'**
+  String get qaTagThanatology;
+
+  /// Q&A topic tag.
+  ///
+  /// In en, this message translates to:
+  /// **'Methods'**
+  String get qaTagMethods;
+
+  /// Q&A topic tag.
+  ///
+  /// In en, this message translates to:
+  /// **'Regulations'**
+  String get qaTagRegulations;
+
+  /// Q&A topic tag.
+  ///
+  /// In en, this message translates to:
+  /// **'Biology'**
+  String get qaTagBiology;
+
+  /// Q&A topic tag.
+  ///
+  /// In en, this message translates to:
+  /// **'Criminalistics'**
+  String get qaTagCriminalistics;
+
+  /// Q&A topic tag.
+  ///
+  /// In en, this message translates to:
+  /// **'Documentation'**
+  String get qaTagDocumentation;
+
+  /// Q&A role of a verified specialist.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic physician'**
+  String get qaRolePhysician;
+
+  /// Q&A role of a verified specialist.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic chemist'**
+  String get qaRoleChemist;
+
+  /// Q&A role of a verified specialist.
+  ///
+  /// In en, this message translates to:
+  /// **'Laboratory technician'**
+  String get qaRoleTechnician;
+
+  /// Q&A role.
+  ///
+  /// In en, this message translates to:
+  /// **'Student'**
+  String get qaRoleStudent;
+
+  /// Q&A role.
+  ///
+  /// In en, this message translates to:
+  /// **'Other'**
+  String get qaRoleOther;
+
+  /// Badge next to the author of a post when the server reports a verified profile.
+  ///
+  /// In en, this message translates to:
+  /// **'Verified specialist'**
+  String get qaVerifiedBadge;
+
+  /// Extra note on a profile a human verified instead of the automatic document check.
+  ///
+  /// In en, this message translates to:
+  /// **'Checked by hand'**
+  String get qaManualBadge;
+
+  /// Title of the ask form.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask a question'**
+  String get qaAskTitle;
+
+  /// Label of the question title field.
+  ///
+  /// In en, this message translates to:
+  /// **'Question'**
+  String get qaFieldTitle;
+
+  /// Label of the question body field.
+  ///
+  /// In en, this message translates to:
+  /// **'Details'**
+  String get qaFieldBody;
+
+  /// Label of the tag picker in the ask form.
+  ///
+  /// In en, this message translates to:
+  /// **'Topics (up to 5)'**
+  String get qaFieldTopics;
+
+  /// Privacy warning shown above the ask form and the answer field.
+  ///
+  /// In en, this message translates to:
+  /// **'Never write case material: case or examination numbers, a person\'s name, an address, a date together with a place, or anything else that identifies someone. Describe the question in general terms. Photographs cannot be attached.'**
+  String get qaPrivacyWarning;
+
+  /// Note explaining that image upload is not available in Q&A posts.
+  ///
+  /// In en, this message translates to:
+  /// **'Images cannot be attached to posts.'**
+  String get qaNoImages;
+
+  /// Validation message for the question title.
+  ///
+  /// In en, this message translates to:
+  /// **'Write the question in at least 10 characters.'**
+  String get qaTitleTooShort;
+
+  /// Validation message for the question body.
+  ///
+  /// In en, this message translates to:
+  /// **'Add at least 30 characters of detail.'**
+  String get qaBodyTooShort;
+
+  /// Submit button in the ask and answer forms.
+  ///
+  /// In en, this message translates to:
+  /// **'Send'**
+  String get qaSend;
+
+  /// Confirmation after a post went straight to the feed.
+  ///
+  /// In en, this message translates to:
+  /// **'Published.'**
+  String get qaPosted;
+
+  /// Shown when the server's privacy filter moved a post to moderation.
+  ///
+  /// In en, this message translates to:
+  /// **'Held for review: the text looks like it contains case material. An administrator will look at it.'**
+  String get qaHeldForReview;
+
+  /// Name of a privacy filter rule, listed after qaHeldForReview.
+  ///
+  /// In en, this message translates to:
+  /// **'a case or examination number'**
+  String get qaFlagCaseNumber;
+
+  /// Name of a privacy filter rule.
+  ///
+  /// In en, this message translates to:
+  /// **'a person\'s name'**
+  String get qaFlagPersonName;
+
+  /// Name of a privacy filter rule.
+  ///
+  /// In en, this message translates to:
+  /// **'a date together with a place'**
+  String get qaFlagDateAndPlace;
+
+  /// Name of a privacy filter rule.
+  ///
+  /// In en, this message translates to:
+  /// **'a phone number or an address'**
+  String get qaFlagContact;
+
+  /// Name of a privacy filter rule.
+  ///
+  /// In en, this message translates to:
+  /// **'an identity document number'**
+  String get qaFlagIdentifier;
+
+  /// Prefix for the list of privacy rules that matched a post.
+  ///
+  /// In en, this message translates to:
+  /// **'Found: {flags}'**
+  String qaFlagsFound(String flags);
+
+  /// Message for a server-side daily rate limit.
+  ///
+  /// In en, this message translates to:
+  /// **'You have reached today\'s limit. Try again tomorrow.'**
+  String get qaDailyLimit;
+
+  /// Generic failure message for a Q&A write.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not send. Check the connection.'**
+  String get qaSendFailed;
+
+  /// Hint of the answer field.
+  ///
+  /// In en, this message translates to:
+  /// **'Write your answer'**
+  String get qaAnswerHint;
+
+  /// Shown in place of the answer field for a user without a verified badge.
+  ///
+  /// In en, this message translates to:
+  /// **'Only verified specialists may answer. Get verified to join in.'**
+  String get qaOnlyVerifiedMayAnswer;
+
+  /// Empty state on a question page.
+  ///
+  /// In en, this message translates to:
+  /// **'No answers yet.'**
+  String get qaNoAnswers;
+
+  /// Action available to the asker on each answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark as best answer'**
+  String get qaMarkBest;
+
+  /// Action that clears the accepted answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove the best-answer mark'**
+  String get qaUnmarkBest;
+
+  /// Tooltip of the up-vote button.
+  ///
+  /// In en, this message translates to:
+  /// **'Useful answer'**
+  String get qaUpvote;
+
+  /// Tooltip of the down-vote button.
+  ///
+  /// In en, this message translates to:
+  /// **'Not a useful answer'**
+  String get qaDownvote;
+
+  /// Message when a user without a badge tries to vote.
+  ///
+  /// In en, this message translates to:
+  /// **'Only verified specialists may vote.'**
+  String get qaOnlyVerifiedMayVote;
+
+  /// Action that reports a post or a profile.
+  ///
+  /// In en, this message translates to:
+  /// **'Report'**
+  String get qaReport;
+
+  /// Hint of the report reason field.
+  ///
+  /// In en, this message translates to:
+  /// **'What is wrong with this post?'**
+  String get qaReportReasonHint;
+
+  /// Confirmation after a report.
+  ///
+  /// In en, this message translates to:
+  /// **'Thank you. An administrator will look at it.'**
+  String get qaReportSent;
+
+  /// Shown when a report crossed the three-reporter threshold.
+  ///
+  /// In en, this message translates to:
+  /// **'Hidden until an administrator decides: three different users reported it.'**
+  String get qaReportHidden;
+
+  /// Badge above a post that the server translated automatically.
+  ///
+  /// In en, this message translates to:
+  /// **'Machine translation'**
+  String get qaMachineTranslation;
+
+  /// Action that asks the server for a machine translation.
+  ///
+  /// In en, this message translates to:
+  /// **'Translate'**
+  String get qaShowTranslation;
+
+  /// Action that switches back to the text the author wrote.
+  ///
+  /// In en, this message translates to:
+  /// **'Original text'**
+  String get qaShowOriginal;
+
+  /// Failure message for the machine translation.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not translate right now.'**
+  String get qaTranslationFailed;
+
+  /// Title of the expert verification screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Verify as a specialist'**
+  String get qaVerifyTitle;
+
+  /// Intro on the verification screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Send a photograph or a PDF of your professional credential — a diploma, certificate, licence or qualification certificate. It is checked automatically.'**
+  String get qaVerifyIntro;
+
+  /// Privacy promise on the verification screen; must stay accurate.
+  ///
+  /// In en, this message translates to:
+  /// **'The file is NOT stored. It is held only in memory during the check and goes to no database, no storage and no log. Only this is kept: your account id, role, country, the outcome and the date. The document number and your full name are not written down.'**
+  String get qaVerifyFileNotStored;
+
+  /// Role picker on the verification screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Your role'**
+  String get qaVerifyRole;
+
+  /// Country code field on the verification screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Country (two letters)'**
+  String get qaVerifyCountry;
+
+  /// Button that opens the file picker on the verification screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose the document'**
+  String get qaVerifyPickFile;
+
+  /// Shown after a document is picked; size is a human-readable file size.
+  ///
+  /// In en, this message translates to:
+  /// **'Document chosen ({size})'**
+  String qaVerifyFileChosen(String size);
+
+  /// Submit button on the verification screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Send for checking'**
+  String get qaVerifySend;
+
+  /// Daily attempt counter on the verification screen (three per day).
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No attempts left today} =1{1 attempt left today} other{{count} attempts left today}}'**
+  String qaVerifyAttemptsLeft(int count);
+
+  /// Progress message while the vision check runs.
+  ///
+  /// In en, this message translates to:
+  /// **'Checking the document…'**
+  String get qaVerifyChecking;
+
+  /// Success message after verification.
+  ///
+  /// In en, this message translates to:
+  /// **'Verified. You may now answer questions and vote.'**
+  String get qaVerifyAccepted;
+
+  /// Failure message after verification; reason is one of the qaReason* strings.
+  ///
+  /// In en, this message translates to:
+  /// **'Not verified: {reason}'**
+  String qaVerifyRejected(String reason);
+
+  /// Machine reason for a rejected verification.
+  ///
+  /// In en, this message translates to:
+  /// **'the file does not look like a professional credential'**
+  String get qaReasonNotACredential;
+
+  /// Machine reason for a rejected verification.
+  ///
+  /// In en, this message translates to:
+  /// **'the document could not be read'**
+  String get qaReasonUnreadable;
+
+  /// Machine reason for a rejected verification.
+  ///
+  /// In en, this message translates to:
+  /// **'the document shows a different profession from the one you chose'**
+  String get qaReasonRoleMismatch;
+
+  /// Machine reason for a rejected verification.
+  ///
+  /// In en, this message translates to:
+  /// **'the check was not confident enough'**
+  String get qaReasonLowConfidence;
+
+  /// Machine reason for a rejected verification.
+  ///
+  /// In en, this message translates to:
+  /// **'the document looks expired'**
+  String get qaReasonExpired;
+
+  /// Machine reason for a suspended badge.
+  ///
+  /// In en, this message translates to:
+  /// **'other users reported the profile'**
+  String get qaReasonReported;
+
+  /// Validation message for the picked document.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a JPEG, PNG, WebP or PDF file no larger than 6 MB.'**
+  String get qaVerifyBadDocument;
+
+  /// Shown when the vision model could not be reached.
+  ///
+  /// In en, this message translates to:
+  /// **'The check is unavailable right now. Your attempt was not used.'**
+  String get qaVerifyUnavailable;
+
+  /// Q&A profile status.
+  ///
+  /// In en, this message translates to:
+  /// **'Not verified'**
+  String get qaStatusUnverified;
+
+  /// Q&A profile status.
+  ///
+  /// In en, this message translates to:
+  /// **'Verified'**
+  String get qaStatusVerified;
+
+  /// Q&A profile status.
+  ///
+  /// In en, this message translates to:
+  /// **'Rejected'**
+  String get qaStatusRejected;
+
+  /// Q&A profile status.
+  ///
+  /// In en, this message translates to:
+  /// **'Suspended'**
+  String get qaStatusSuspended;
+
+  /// Title of the user's own Q&A posts screen.
+  ///
+  /// In en, this message translates to:
+  /// **'My questions and answers'**
+  String get qaMineTitle;
+
+  /// Section header on the user's own Q&A posts screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Questions'**
+  String get qaMineQuestions;
+
+  /// Section header on the user's own Q&A posts screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Answers'**
+  String get qaMineAnswers;
+
+  /// Empty state on the user's own Q&A posts screen.
+  ///
+  /// In en, this message translates to:
+  /// **'You have not posted anything yet.'**
+  String get qaMineEmpty;
+
+  /// Status of a Q&A post.
+  ///
+  /// In en, this message translates to:
+  /// **'Published'**
+  String get qaPostPublished;
+
+  /// Status of a Q&A post.
+  ///
+  /// In en, this message translates to:
+  /// **'Under review'**
+  String get qaPostModeration;
+
+  /// Status of a Q&A post.
+  ///
+  /// In en, this message translates to:
+  /// **'Removed'**
+  String get qaPostRemoved;
+
+  /// Vote score of an answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Rating: {score}'**
+  String qaScore(int score);
+
+  /// Title of the admin moderation queue for Q&A.
+  ///
+  /// In en, this message translates to:
+  /// **'Q&A moderation'**
+  String get qaModerationTitle;
+
+  /// Empty state of the Q&A moderation queue.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing is waiting.'**
+  String get qaModerationEmpty;
+
+  /// Section header in the moderation queue.
+  ///
+  /// In en, this message translates to:
+  /// **'Questions under review'**
+  String get qaModerationQuestions;
+
+  /// Section header in the moderation queue.
+  ///
+  /// In en, this message translates to:
+  /// **'Answers under review'**
+  String get qaModerationAnswers;
+
+  /// Section header in the moderation queue.
+  ///
+  /// In en, this message translates to:
+  /// **'Suspended badges'**
+  String get qaModerationSuspended;
+
+  /// Number of distinct reporters on a post.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 report} other{{count} reports}}'**
+  String qaReportsCount(int count);
+
+  /// Admin action in the Q&A moderation queue.
+  ///
+  /// In en, this message translates to:
+  /// **'Publish'**
+  String get qaActionPublish;
+
+  /// Admin action in the Q&A moderation queue.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove'**
+  String get qaActionRemove;
+
+  /// Admin action in the Q&A moderation queue.
+  ///
+  /// In en, this message translates to:
+  /// **'Pin'**
+  String get qaActionPin;
+
+  /// Admin action in the Q&A moderation queue.
+  ///
+  /// In en, this message translates to:
+  /// **'Unpin'**
+  String get qaActionUnpin;
+
+  /// Admin action in the Q&A moderation queue.
+  ///
+  /// In en, this message translates to:
+  /// **'Reinstate the badge'**
+  String get qaActionReinstate;
+
+  /// Admin action in the Q&A moderation queue.
+  ///
+  /// In en, this message translates to:
+  /// **'Suspend the badge'**
+  String get qaActionSuspend;
+
+  /// Confirmation after an admin action in Q&A.
+  ///
+  /// In en, this message translates to:
+  /// **'Done.'**
+  String get qaActionDone;
+
+  /// Failure after an admin action in Q&A.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not do that.'**
+  String get qaActionFailed;
+
+  /// Shown when a non-admin reaches the Q&A moderation queue.
+  ///
+  /// In en, this message translates to:
+  /// **'Only an administrator can open this.'**
+  String get qaAdminOnly;
 }
 
 class _AppLocalizationsDelegate

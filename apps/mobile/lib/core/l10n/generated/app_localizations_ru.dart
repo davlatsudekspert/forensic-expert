@@ -8561,4 +8561,405 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get claimFieldLimitation => 'Ограничение';
+
+  @override
+  String get qaTitle => 'Вопросы и ответы';
+
+  @override
+  String get qaIntro =>
+      'Здесь судебные медики и судебные химики задают друг другу практические вопросы. Отвечать могут только подтверждённые специалисты.';
+
+  @override
+  String get qaNotice =>
+      'Ответ здесь — мнение коллеги, а не научный вывод и не экспертное заключение для дела.';
+
+  @override
+  String get qaUnavailable => 'Этот раздел пока недоступен.';
+
+  @override
+  String get qaSignInRequired => 'Войдите, чтобы читать и задавать вопросы.';
+
+  @override
+  String get qaSignIn => 'Войти';
+
+  @override
+  String get qaSearchHint => 'Поиск по вопросам';
+
+  @override
+  String get qaAllTopics => 'Все темы';
+
+  @override
+  String get qaEmpty => 'Вопросов пока нет. Задайте первый.';
+
+  @override
+  String get qaLoadFailed =>
+      'Не удалось загрузить вопросы. Проверьте соединение.';
+
+  @override
+  String qaAnswersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ответов',
+      few: '$count ответа',
+      one: '1 ответ',
+      zero: 'Нет ответов',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get qaAcceptedAnswer => 'Лучший ответ';
+
+  @override
+  String get qaPinned => 'Закреплено';
+
+  @override
+  String get qaOpenMine => 'Мои вопросы';
+
+  @override
+  String get qaAsk => 'Задать вопрос';
+
+  @override
+  String get qaOpenModeration => 'Модерация';
+
+  @override
+  String get qaTagToxicology => 'Токсикология';
+
+  @override
+  String get qaTagAlcohol => 'Алкоголь';
+
+  @override
+  String get qaTagDrugs => 'Наркотические средства';
+
+  @override
+  String get qaTagDna => 'ДНК';
+
+  @override
+  String get qaTagHistology => 'Гистология';
+
+  @override
+  String get qaTagThanatology => 'Танатология';
+
+  @override
+  String get qaTagMethods => 'Методы';
+
+  @override
+  String get qaTagRegulations => 'Нормативные документы';
+
+  @override
+  String get qaTagBiology => 'Биология';
+
+  @override
+  String get qaTagCriminalistics => 'Криминалистика';
+
+  @override
+  String get qaTagDocumentation => 'Документация';
+
+  @override
+  String get qaRolePhysician => 'Судебный медик';
+
+  @override
+  String get qaRoleChemist => 'Судебный химик';
+
+  @override
+  String get qaRoleTechnician => 'Лаборант';
+
+  @override
+  String get qaRoleStudent => 'Студент';
+
+  @override
+  String get qaRoleOther => 'Другое';
+
+  @override
+  String get qaVerifiedBadge => 'Подтверждённый специалист';
+
+  @override
+  String get qaManualBadge => 'Проверено вручную';
+
+  @override
+  String get qaAskTitle => 'Задать вопрос';
+
+  @override
+  String get qaFieldTitle => 'Вопрос';
+
+  @override
+  String get qaFieldBody => 'Подробности';
+
+  @override
+  String get qaFieldTopics => 'Темы (до 5)';
+
+  @override
+  String get qaPrivacyWarning =>
+      'Никогда не пишите материалы дела: номер дела или экспертизы, имя человека, адрес, дату вместе с местом и любые другие данные, по которым можно установить личность. Опишите вопрос в общем виде. Фотографии прикрепить нельзя.';
+
+  @override
+  String get qaNoImages => 'К публикациям нельзя прикреплять изображения.';
+
+  @override
+  String get qaTitleTooShort => 'Сформулируйте вопрос минимум в 10 символах.';
+
+  @override
+  String get qaBodyTooShort => 'Добавьте не менее 30 символов подробностей.';
+
+  @override
+  String get qaSend => 'Отправить';
+
+  @override
+  String get qaPosted => 'Опубликовано.';
+
+  @override
+  String get qaHeldForReview =>
+      'Отправлено на проверку: текст похож на материалы дела. Его посмотрит администратор.';
+
+  @override
+  String get qaFlagCaseNumber => 'номер дела или экспертизы';
+
+  @override
+  String get qaFlagPersonName => 'имя человека';
+
+  @override
+  String get qaFlagDateAndPlace => 'дата вместе с местом';
+
+  @override
+  String get qaFlagContact => 'номер телефона или адрес';
+
+  @override
+  String get qaFlagIdentifier => 'номер документа, удостоверяющего личность';
+
+  @override
+  String qaFlagsFound(String flags) {
+    return 'Найдено: $flags';
+  }
+
+  @override
+  String get qaDailyLimit => 'Вы достигли дневного лимита. Попробуйте завтра.';
+
+  @override
+  String get qaSendFailed => 'Не удалось отправить. Проверьте соединение.';
+
+  @override
+  String get qaAnswerHint => 'Напишите ответ';
+
+  @override
+  String get qaOnlyVerifiedMayAnswer =>
+      'Отвечать могут только подтверждённые специалисты. Пройдите подтверждение, чтобы участвовать.';
+
+  @override
+  String get qaNoAnswers => 'Ответов пока нет.';
+
+  @override
+  String get qaMarkBest => 'Отметить лучшим ответом';
+
+  @override
+  String get qaUnmarkBest => 'Снять отметку лучшего';
+
+  @override
+  String get qaUpvote => 'Полезный ответ';
+
+  @override
+  String get qaDownvote => 'Бесполезный ответ';
+
+  @override
+  String get qaOnlyVerifiedMayVote =>
+      'Голосовать могут только подтверждённые специалисты.';
+
+  @override
+  String get qaReport => 'Пожаловаться';
+
+  @override
+  String get qaReportReasonHint => 'Что не так с этой публикацией?';
+
+  @override
+  String get qaReportSent => 'Спасибо. Администратор посмотрит.';
+
+  @override
+  String get qaReportHidden =>
+      'Скрыто до решения администратора: пожаловались три разных пользователя.';
+
+  @override
+  String get qaMachineTranslation => 'Машинный перевод';
+
+  @override
+  String get qaShowTranslation => 'Перевести';
+
+  @override
+  String get qaShowOriginal => 'Исходный текст';
+
+  @override
+  String get qaTranslationFailed => 'Сейчас не удалось перевести.';
+
+  @override
+  String get qaVerifyTitle => 'Подтверждение специалиста';
+
+  @override
+  String get qaVerifyIntro =>
+      'Отправьте фотографию или PDF вашего профессионального документа — диплома, сертификата, лицензии или удостоверения о квалификации. Проверка автоматическая.';
+
+  @override
+  String get qaVerifyFileNotStored =>
+      'Файл НЕ сохраняется. Он находится только в памяти во время проверки и не попадает ни в базу, ни в хранилище, ни в журнал. Сохраняется лишь: идентификатор вашей учётной записи, роль, страна, результат и дата. Номер документа и полное имя не записываются.';
+
+  @override
+  String get qaVerifyRole => 'Ваша роль';
+
+  @override
+  String get qaVerifyCountry => 'Страна (две буквы)';
+
+  @override
+  String get qaVerifyPickFile => 'Выбрать документ';
+
+  @override
+  String qaVerifyFileChosen(String size) {
+    return 'Документ выбран ($size)';
+  }
+
+  @override
+  String get qaVerifySend => 'Отправить на проверку';
+
+  @override
+  String qaVerifyAttemptsLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Осталось $count попыток на сегодня',
+      few: 'Осталось $count попытки на сегодня',
+      one: 'Осталась 1 попытка на сегодня',
+      zero: 'Сегодня попыток не осталось',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get qaVerifyChecking => 'Проверяем документ…';
+
+  @override
+  String get qaVerifyAccepted =>
+      'Подтверждено. Теперь вы можете отвечать на вопросы и голосовать.';
+
+  @override
+  String qaVerifyRejected(String reason) {
+    return 'Не подтверждено: $reason';
+  }
+
+  @override
+  String get qaReasonNotACredential =>
+      'файл не похож на профессиональный документ';
+
+  @override
+  String get qaReasonUnreadable => 'документ не удалось прочитать';
+
+  @override
+  String get qaReasonRoleMismatch =>
+      'в документе указана другая специальность, чем выбранная вами';
+
+  @override
+  String get qaReasonLowConfidence =>
+      'проверка оказалась недостаточно уверенной';
+
+  @override
+  String get qaReasonExpired => 'срок действия документа, похоже, истёк';
+
+  @override
+  String get qaReasonReported => 'на профиль пожаловались другие пользователи';
+
+  @override
+  String get qaVerifyBadDocument =>
+      'Выберите файл JPEG, PNG, WebP или PDF размером не более 6 МБ.';
+
+  @override
+  String get qaVerifyUnavailable =>
+      'Проверка сейчас недоступна. Попытка не израсходована.';
+
+  @override
+  String get qaStatusUnverified => 'Не подтверждён';
+
+  @override
+  String get qaStatusVerified => 'Подтверждён';
+
+  @override
+  String get qaStatusRejected => 'Отклонён';
+
+  @override
+  String get qaStatusSuspended => 'Приостановлен';
+
+  @override
+  String get qaMineTitle => 'Мои вопросы и ответы';
+
+  @override
+  String get qaMineQuestions => 'Вопросы';
+
+  @override
+  String get qaMineAnswers => 'Ответы';
+
+  @override
+  String get qaMineEmpty => 'Вы пока ничего не публиковали.';
+
+  @override
+  String get qaPostPublished => 'Опубликовано';
+
+  @override
+  String get qaPostModeration => 'На проверке';
+
+  @override
+  String get qaPostRemoved => 'Удалено';
+
+  @override
+  String qaScore(int score) {
+    return 'Оценка: $score';
+  }
+
+  @override
+  String get qaModerationTitle => 'Модерация вопросов и ответов';
+
+  @override
+  String get qaModerationEmpty => 'Ничего не ожидает.';
+
+  @override
+  String get qaModerationQuestions => 'Вопросы на проверке';
+
+  @override
+  String get qaModerationAnswers => 'Ответы на проверке';
+
+  @override
+  String get qaModerationSuspended => 'Приостановленные подтверждения';
+
+  @override
+  String qaReportsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count жалоб',
+      few: '$count жалобы',
+      one: '1 жалоба',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get qaActionPublish => 'Опубликовать';
+
+  @override
+  String get qaActionRemove => 'Удалить';
+
+  @override
+  String get qaActionPin => 'Закрепить';
+
+  @override
+  String get qaActionUnpin => 'Открепить';
+
+  @override
+  String get qaActionReinstate => 'Вернуть подтверждение';
+
+  @override
+  String get qaActionSuspend => 'Приостановить подтверждение';
+
+  @override
+  String get qaActionDone => 'Готово.';
+
+  @override
+  String get qaActionFailed => 'Не удалось выполнить.';
+
+  @override
+  String get qaAdminOnly => 'Это может открыть только администратор.';
 }

@@ -88,6 +88,13 @@ unzip -p app-release.aab META-INF/MANIFEST.MF | head
    - yig'iladi: email (autentifikatsiya), professional profil ma'lumotlari,
      yuklangan malaka hujjatlari (maxfiy, faqat tekshiruvchi ko'radi);
    - yig'ilmaydi: joylashuv, kontaktlar, reklama identifikatorlari;
+   - «Savol-javob (Hamjamiyat)» yoqilgan build uchun qo'shimcha: yig'iladi
+     foydalanuvchi yaratgan matn (savol va javob — ommaviy ko'rinadi) va
+     mutaxassis tasdig'i natijasi (rol, mamlakat kodi, status, qisqa sabab,
+     sana). **Tekshiruv hujjatining o'zi yig'ilmaydi va saqlanmaydi** — u
+     faqat tekshiruv vaqtida serverning xotirasida bo'ladi, shuning uchun
+     Data safety'da «Files and docs» **belgilanmaydi**; «Photos» ham
+     belgilanmaydi, chunki postga rasm biriktirib bo'lmaydi;
    - shifrlash: transitda TLS; foydalanuvchi akkauntni o'chirishni ilova ichidan
      so'ray oladi (`delete-account` funksiyasi) — bu Play talabi.
 7. **Privacy policy URL:** `https://davlatsudekspert.github.io/forensic-expert-legal/`

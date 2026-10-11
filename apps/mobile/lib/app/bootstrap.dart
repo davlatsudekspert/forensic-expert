@@ -30,6 +30,7 @@ import '../data/remote/supabase_ai_provider.dart';
 import '../data/remote/supabase_auth_repository.dart';
 import '../data/remote/supabase_professional.dart';
 import '../data/remote/supabase_publications.dart';
+import '../data/remote/supabase_qa.dart';
 import '../data/remote/supabase_referral.dart';
 import '../data/remote/supabase_rest.dart';
 import '../data/remote/supabase_support.dart';
@@ -43,6 +44,7 @@ import 'court_prep.dart';
 import 'professional.dart';
 import 'providers.dart';
 import 'publications.dart';
+import 'qa.dart';
 import 'referral.dart';
 import 'study.dart';
 import 'support.dart';
@@ -143,6 +145,9 @@ Future<void> bootstrap({List<Override> testOverrides = const []}) async {
           ),
           supportServiceProvider.overrideWithValue(
             SupabaseSupportService(config: supabase, auth: auth),
+          ),
+          qaServiceProvider.overrideWithValue(
+            SupabaseQaService(config: supabase, auth: auth),
           ),
         ],
         // Obunalar: faqat mobil store’larda. Boshqa platformada — store yo‘q.

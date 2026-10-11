@@ -33,4 +33,10 @@ abstract final class FeFlags {
   /// admin uchun bayroqsiz ham ko‘rinadi (egasi sinovi). O‘qish bepul.
   /// `--dart-define=FE_PUBLICATIONS=true`.
   static const publications = bool.fromEnvironment('FE_PUBLICATIONS');
+
+  /// «Savol-javob (Hamjamiyat)» bo‘limi. Standart o‘chiq — faqat test
+  /// tarqatishda yoqiladi (`--dart-define=FE_QA=true`). Bayroq yoqilgan
+  /// bo‘lsa ham bo‘lim server ulanmagan bo‘lsa ko‘rinmaydi: ishlamaydigan
+  /// funksiya ishlayotgandek ko‘rsatilmaydi.
+  static const qaCommunity = bool.fromEnvironment('FE_QA');
 }

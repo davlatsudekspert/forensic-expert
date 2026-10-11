@@ -76,11 +76,13 @@ Yangilangan: 2026-10-11. Format: [holat] vazifa — egasi/keyingi qadam.
    `public.qa_service_*` wrapper'lari faqat `service_role`ga berilgan.
    Egasining qo'lda tekshirilgan belgisi seed qilindi. Batafsil:
    `docs/QA_COMMUNITY.md`.
-3. [keyingi] QA-3 Flutter: domen, Supabase adapter, feed / savol / savol
-   berish / mening savollarim / tasdiqlash / admin moderatsiya ekranlari,
-   Home kartasi. Server ulanmagan bo'lsa bo'lim yashirin.
-4. [keyingi] QA-4 l10n uz/ru/en + kalit parity, 3 tilda widget testlar
-   (320 dp, katta matn), maxfiylik siyosati va Data safety yangilanishi,
-   faqat TestFlight / Play internal.
+3. [bajarildi] QA-3 Flutter: domen, port, Supabase adapter, providerlar,
+   olti ekran, kutubxona hub'ida plitka, hujjat tanlagich (xotirada).
+   Server ulanmagan bo'lsa bo'lim yashirin (`qaVisibleProvider`).
+4. [bajarildi] QA-4 l10n uz/ru/en (`l10n_qa_community.py`), 16 widget test
+   (uch tilda «fayl saqlanmaydi», 320 dp + 1.3x matn), maxfiylik siyosati
+   7a bo'limi, Play Data safety yo'riqnomasi.
+4a. [keyingi] Test tarqatish: `FE_QA=true` bilan Play internal / TestFlight
+   build (ommaviy nashr YO'Q).
 5. [egasi] Cloudflare `CF_ACCOUNT_ID` va `CF_API_TOKEN` (Workers AI).
 6. [egasi] Q&A roli tasdiqlash: hozir `forensic_physician`.

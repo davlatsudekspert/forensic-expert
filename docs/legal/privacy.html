@@ -100,6 +100,24 @@ yuboriladi. Shaxsiy ma’lumotlaringiz va ish daftaringiz <strong>avtomatik
 yuborilmaydi</strong> — faqat siz yozgan savol yuboriladi. Shuning uchun
 savolga ish tafsilotlarini yoki shaxsga oid ma’lumotni yozmang.</p>
 
+<h3>7a. Savol-javob (Hamjamiyat) va mutaxassis tasdig‘i</h3>
+<p>Savol-javob bo‘limida siz yozgan savol va javob matni serverda saqlanadi va
+boshqa foydalanuvchilarga ko‘rinadi. Postlarga <strong>rasm biriktirib
+bo‘lmaydi</strong>. Matnda ish yoki ekspertiza raqami, shaxs ismi, manzil yoki
+sana bilan joy birikmasi topilsa, post avtomatik ravishda tekshiruvga
+yuboriladi.</p>
+<p>Mutaxassis sifatida tasdiqlanish uchun yuborilgan hujjat (diplom,
+sertifikat, litsenziya) <strong>saqlanmaydi</strong>: u faqat tekshiruv
+vaqtida serverning xotirasida bo‘ladi, bazaga, saqlagichga yoki jurnalga
+tushmaydi. Saqlanadigani: hisobingiz identifikatori, rol, mamlakat kodi,
+natija (tasdiqlandi/rad etildi/to‘xtatildi), qisqa mashina sababi va sana.
+Hujjat raqami va to‘liq ism yozilmaydi. Tekshiruvni Google Gemini modeli
+bajaradi; unga faqat hujjat tasviri va tanlagan rolingiz yuboriladi.</p>
+<p>Boshqa tildagi postni o‘qish uchun mashina tarjimasi serverda bajariladi
+(Cloudflare Workers AI, zaxira sifatida Google Gemini) va keshlanadi; tarjima
+dvigateliga faqat post matni yuboriladi — muallif identifikatori yoki
+elektron pochtasi emas. Tarjima «Mashina tarjimasi» deb belgilanadi.</p>
+
 <h3>8. Saqlash muddati va o‘chirish</h3>
 <p>Hisobingizni ilovaning o‘zidan (<em>Profil → Hisobni o‘chirish</em>) butunlay
 o‘chirishingiz mumkin. Hisob o‘chirilganda profilingiz, hujjatlaringiz,
@@ -182,6 +200,25 @@ ichida ham e’lon qilinadi.</p>
 ответа. Ваши персональные данные и рабочий журнал <strong>не отправляются
 автоматически</strong> — передаётся только написанный вами вопрос. Поэтому не
 указывайте в вопросе детали дела или персональные данные.</p>
+
+<h3>7a. Вопросы и ответы (сообщество) и подтверждение специалиста</h3>
+<p>Текст вашего вопроса или ответа хранится на сервере и виден другим
+пользователям. Прикреплять изображения к публикациям
+<strong>нельзя</strong>. Если в тексте обнаружены номер дела или экспертизы,
+имя человека, адрес либо дата вместе с местом, публикация автоматически
+отправляется на проверку.</p>
+<p>Документ, отправленный для подтверждения специалиста (диплом, сертификат,
+лицензия), <strong>не сохраняется</strong>: он находится только в памяти
+сервера во время проверки и не попадает ни в базу, ни в хранилище, ни в
+журнал. Сохраняются: идентификатор учётной записи, роль, код страны,
+результат (подтверждён/отклонён/приостановлен), краткая машинная причина и
+дата. Номер документа и полное имя не записываются. Проверку выполняет
+модель Google Gemini; ей передаются только изображение документа и выбранная
+вами роль.</p>
+<p>Машинный перевод публикаций выполняется на сервере (Cloudflare Workers AI,
+резервно Google Gemini) и кэшируется; движку перевода передаётся только текст
+публикации — не идентификатор автора и не его адрес электронной почты.
+Перевод помечается как «Машинный перевод».</p>
 
 <h3>8. Срок хранения и удаление</h3>
 <p>Вы можете полностью удалить учётную запись из самого приложения
@@ -266,6 +303,23 @@ AI models.</p>
 answer. Your personal data and your casebook are <strong>not sent
 automatically</strong> — only the question you typed is sent. For that reason,
 do not put case details or personal data into a question.</p>
+
+<h3>7a. Community questions and answers, and specialist verification</h3>
+<p>The text of your question or answer is stored on the server and is visible
+to other users. Images <strong>cannot be attached</strong> to posts. If the
+text contains a case or examination number, a person's name, an address or a
+date together with a place, the post is sent for review automatically.</p>
+<p>A document sent for specialist verification (diploma, certificate, licence)
+is <strong>not stored</strong>: it is held only in the server's memory during
+the check and reaches no database, no storage and no log. What is kept: your
+account id, role, country code, the outcome (verified / rejected /
+suspended), a short machine reason and the date. The document number and your
+full name are not written down. The check is carried out by the Google Gemini
+model; only the document image and the role you chose are sent to it.</p>
+<p>Machine translation of posts runs on the server (Cloudflare Workers AI,
+with Google Gemini as the fallback) and is cached; only the post text is sent
+to the translation engine — not the author's id or e-mail address. The result
+is labelled "machine translation".</p>
 
 <h3>8. Retention and deletion</h3>
 <p>You can delete your account entirely from inside the app

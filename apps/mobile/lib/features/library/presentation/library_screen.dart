@@ -10,6 +10,7 @@ import '../../../app/glossary.dart';
 import '../../../app/guidelines.dart';
 import '../../../app/providers.dart';
 import '../../../app/publications.dart';
+import '../../../app/qa.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
@@ -429,6 +430,14 @@ class LibraryScreen extends ConsumerWidget {
           l.pubTitle,
           ref.watch(publishedPublicationsProvider).value?.length ?? 0,
         ),
+      // «Savol-javob (Hamjamiyat)»: FE_QA yoki admin, server ulangan bo‘lsa.
+      if (ref.watch(qaVisibleProvider))
+        (
+          'qa',
+          Icons.forum_outlined,
+          l.qaTitle,
+          ref.watch(qaFeedProvider(qaAllQuestions)).value?.total ?? 0,
+        ),
       ('standards', Icons.rule_folder_outlined, l.libraryStandards, standards),
       (
         'research',
@@ -480,6 +489,7 @@ class LibraryScreen extends ConsumerWidget {
       'guidelines' => Routes.guidelines,
       'court' => Routes.courtPrep,
       'publications' => Routes.publications,
+      'qa' => Routes.qa,
       'research' => Routes.research,
       _ => Routes.jurisdictions,
     };

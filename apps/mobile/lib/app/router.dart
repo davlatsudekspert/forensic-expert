@@ -61,6 +61,12 @@ import '../features/publications/presentation/moderation_queue_screen.dart';
 import '../features/publications/presentation/my_publications_screen.dart';
 import '../features/publications/presentation/publications_screen.dart';
 import '../features/publications/presentation/submit_publication_screen.dart';
+import '../features/qa/presentation/qa_ask_screen.dart';
+import '../features/qa/presentation/qa_feed_screen.dart';
+import '../features/qa/presentation/qa_mine_screen.dart';
+import '../features/qa/presentation/qa_moderation_screen.dart';
+import '../features/qa/presentation/qa_question_screen.dart';
+import '../features/qa/presentation/qa_verify_screen.dart';
 import '../features/referral/presentation/referral_screen.dart';
 import '../features/shell/presentation/app_shell.dart';
 import '../features/support/presentation/support_screens.dart';
@@ -528,6 +534,34 @@ final routerProvider = Provider<GoRouter>((ref) {
                       GoRoute(
                         path: 'moderation',
                         builder: (c, s) => const ModerationQueueScreen(),
+                      ),
+                    ],
+                  ),
+                  GoRoute(
+                    path: 'qa',
+                    builder: (c, s) => const QaFeedScreen(),
+                    routes: [
+                      GoRoute(
+                        path: 'q/:id',
+                        builder: (c, s) => QaQuestionScreen(
+                          questionId: s.pathParameters['id']!,
+                        ),
+                      ),
+                      GoRoute(
+                        path: 'ask',
+                        builder: (c, s) => const QaAskScreen(),
+                      ),
+                      GoRoute(
+                        path: 'mine',
+                        builder: (c, s) => const QaMineScreen(),
+                      ),
+                      GoRoute(
+                        path: 'verify',
+                        builder: (c, s) => const QaVerifyScreen(),
+                      ),
+                      GoRoute(
+                        path: 'moderation',
+                        builder: (c, s) => const QaModerationScreen(),
                       ),
                     ],
                   ),

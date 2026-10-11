@@ -11051,5 +11051,504 @@
   "claimFieldLimitation": "Limitation",
   "@claimFieldLimitation": {
     "description": "Label of a sourced method record: limitation of the method or of the result."
+  },
+  "qaTitle": "Questions & answers",
+  "@qaTitle": {
+    "description": "Title of the community Q&A section."
+  },
+  "qaIntro": "Forensic physicians and forensic chemists ask each other practical questions here. Only verified specialists may answer.",
+  "@qaIntro": {
+    "description": "One-paragraph intro at the top of the Q&A feed."
+  },
+  "qaNotice": "An answer here is a colleague's opinion, not a scientific conclusion and not an expert opinion for a case file.",
+  "@qaNotice": {
+    "description": "Standing warning banner in the Q&A section."
+  },
+  "qaUnavailable": "This section is not available yet.",
+  "@qaUnavailable": {
+    "description": "Empty state when the Q&A section is switched off or the server is unreachable."
+  },
+  "qaSignInRequired": "Sign in to read and ask questions.",
+  "@qaSignInRequired": {
+    "description": "Empty state for a signed-out user in the Q&A section."
+  },
+  "qaSignIn": "Sign in",
+  "@qaSignIn": {
+    "description": "Sign-in button in Q&A."
+  },
+  "qaSearchHint": "Search questions",
+  "@qaSearchHint": {
+    "description": "Search field hint in the Q&A feed."
+  },
+  "qaAllTopics": "All topics",
+  "@qaAllTopics": {
+    "description": "Chip that clears the tag filter."
+  },
+  "qaEmpty": "No questions yet. Be the first to ask.",
+  "@qaEmpty": {
+    "description": "Empty state for the Q&A feed."
+  },
+  "qaLoadFailed": "Could not load the questions. Check the connection.",
+  "@qaLoadFailed": {
+    "description": "Error state for the Q&A feed."
+  },
+  "qaAnswersCount": "{count, plural, =0{No answers} =1{1 answer} other{{count} answers}}",
+  "@qaAnswersCount": {
+    "description": "Number of answers on a question card.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "qaAcceptedAnswer": "Best answer",
+  "@qaAcceptedAnswer": {
+    "description": "Badge on the answer the asker accepted."
+  },
+  "qaPinned": "Pinned",
+  "@qaPinned": {
+    "description": "Badge on a question an admin pinned."
+  },
+  "qaOpenMine": "My questions",
+  "@qaOpenMine": {
+    "description": "Toolbar action that opens the user's own questions and answers."
+  },
+  "qaAsk": "Ask a question",
+  "@qaAsk": {
+    "description": "Primary action that opens the ask form."
+  },
+  "qaOpenModeration": "Moderation",
+  "@qaOpenModeration": {
+    "description": "Toolbar action that opens the admin moderation queue."
+  },
+  "qaTagToxicology": "Toxicology",
+  "@qaTagToxicology": {
+    "description": "Q&A topic tag."
+  },
+  "qaTagAlcohol": "Alcohol",
+  "@qaTagAlcohol": {
+    "description": "Q&A topic tag."
+  },
+  "qaTagDrugs": "Narcotic drugs",
+  "@qaTagDrugs": {
+    "description": "Q&A topic tag."
+  },
+  "qaTagDna": "DNA",
+  "@qaTagDna": {
+    "description": "Q&A topic tag."
+  },
+  "qaTagHistology": "Histology",
+  "@qaTagHistology": {
+    "description": "Q&A topic tag."
+  },
+  "qaTagThanatology": "Thanatology",
+  "@qaTagThanatology": {
+    "description": "Q&A topic tag."
+  },
+  "qaTagMethods": "Methods",
+  "@qaTagMethods": {
+    "description": "Q&A topic tag."
+  },
+  "qaTagRegulations": "Regulations",
+  "@qaTagRegulations": {
+    "description": "Q&A topic tag."
+  },
+  "qaTagBiology": "Biology",
+  "@qaTagBiology": {
+    "description": "Q&A topic tag."
+  },
+  "qaTagCriminalistics": "Criminalistics",
+  "@qaTagCriminalistics": {
+    "description": "Q&A topic tag."
+  },
+  "qaTagDocumentation": "Documentation",
+  "@qaTagDocumentation": {
+    "description": "Q&A topic tag."
+  },
+  "qaRolePhysician": "Forensic physician",
+  "@qaRolePhysician": {
+    "description": "Q&A role of a verified specialist."
+  },
+  "qaRoleChemist": "Forensic chemist",
+  "@qaRoleChemist": {
+    "description": "Q&A role of a verified specialist."
+  },
+  "qaRoleTechnician": "Laboratory technician",
+  "@qaRoleTechnician": {
+    "description": "Q&A role of a verified specialist."
+  },
+  "qaRoleStudent": "Student",
+  "@qaRoleStudent": {
+    "description": "Q&A role."
+  },
+  "qaRoleOther": "Other",
+  "@qaRoleOther": {
+    "description": "Q&A role."
+  },
+  "qaVerifiedBadge": "Verified specialist",
+  "@qaVerifiedBadge": {
+    "description": "Badge next to the author of a post when the server reports a verified profile."
+  },
+  "qaManualBadge": "Checked by hand",
+  "@qaManualBadge": {
+    "description": "Extra note on a profile a human verified instead of the automatic document check."
+  },
+  "qaAskTitle": "Ask a question",
+  "@qaAskTitle": {
+    "description": "Title of the ask form."
+  },
+  "qaFieldTitle": "Question",
+  "@qaFieldTitle": {
+    "description": "Label of the question title field."
+  },
+  "qaFieldBody": "Details",
+  "@qaFieldBody": {
+    "description": "Label of the question body field."
+  },
+  "qaFieldTopics": "Topics (up to 5)",
+  "@qaFieldTopics": {
+    "description": "Label of the tag picker in the ask form."
+  },
+  "qaPrivacyWarning": "Never write case material: case or examination numbers, a person's name, an address, a date together with a place, or anything else that identifies someone. Describe the question in general terms. Photographs cannot be attached.",
+  "@qaPrivacyWarning": {
+    "description": "Privacy warning shown above the ask form and the answer field."
+  },
+  "qaNoImages": "Images cannot be attached to posts.",
+  "@qaNoImages": {
+    "description": "Note explaining that image upload is not available in Q&A posts."
+  },
+  "qaTitleTooShort": "Write the question in at least 10 characters.",
+  "@qaTitleTooShort": {
+    "description": "Validation message for the question title."
+  },
+  "qaBodyTooShort": "Add at least 30 characters of detail.",
+  "@qaBodyTooShort": {
+    "description": "Validation message for the question body."
+  },
+  "qaSend": "Send",
+  "@qaSend": {
+    "description": "Submit button in the ask and answer forms."
+  },
+  "qaPosted": "Published.",
+  "@qaPosted": {
+    "description": "Confirmation after a post went straight to the feed."
+  },
+  "qaHeldForReview": "Held for review: the text looks like it contains case material. An administrator will look at it.",
+  "@qaHeldForReview": {
+    "description": "Shown when the server's privacy filter moved a post to moderation."
+  },
+  "qaFlagCaseNumber": "a case or examination number",
+  "@qaFlagCaseNumber": {
+    "description": "Name of a privacy filter rule, listed after qaHeldForReview."
+  },
+  "qaFlagPersonName": "a person's name",
+  "@qaFlagPersonName": {
+    "description": "Name of a privacy filter rule."
+  },
+  "qaFlagDateAndPlace": "a date together with a place",
+  "@qaFlagDateAndPlace": {
+    "description": "Name of a privacy filter rule."
+  },
+  "qaFlagContact": "a phone number or an address",
+  "@qaFlagContact": {
+    "description": "Name of a privacy filter rule."
+  },
+  "qaFlagIdentifier": "an identity document number",
+  "@qaFlagIdentifier": {
+    "description": "Name of a privacy filter rule."
+  },
+  "qaFlagsFound": "Found: {flags}",
+  "@qaFlagsFound": {
+    "description": "Prefix for the list of privacy rules that matched a post.",
+    "placeholders": {
+      "flags": {
+        "type": "String"
+      }
+    }
+  },
+  "qaDailyLimit": "You have reached today's limit. Try again tomorrow.",
+  "@qaDailyLimit": {
+    "description": "Message for a server-side daily rate limit."
+  },
+  "qaSendFailed": "Could not send. Check the connection.",
+  "@qaSendFailed": {
+    "description": "Generic failure message for a Q&A write."
+  },
+  "qaAnswerHint": "Write your answer",
+  "@qaAnswerHint": {
+    "description": "Hint of the answer field."
+  },
+  "qaOnlyVerifiedMayAnswer": "Only verified specialists may answer. Get verified to join in.",
+  "@qaOnlyVerifiedMayAnswer": {
+    "description": "Shown in place of the answer field for a user without a verified badge."
+  },
+  "qaNoAnswers": "No answers yet.",
+  "@qaNoAnswers": {
+    "description": "Empty state on a question page."
+  },
+  "qaMarkBest": "Mark as best answer",
+  "@qaMarkBest": {
+    "description": "Action available to the asker on each answer."
+  },
+  "qaUnmarkBest": "Remove the best-answer mark",
+  "@qaUnmarkBest": {
+    "description": "Action that clears the accepted answer."
+  },
+  "qaUpvote": "Useful answer",
+  "@qaUpvote": {
+    "description": "Tooltip of the up-vote button."
+  },
+  "qaDownvote": "Not a useful answer",
+  "@qaDownvote": {
+    "description": "Tooltip of the down-vote button."
+  },
+  "qaOnlyVerifiedMayVote": "Only verified specialists may vote.",
+  "@qaOnlyVerifiedMayVote": {
+    "description": "Message when a user without a badge tries to vote."
+  },
+  "qaReport": "Report",
+  "@qaReport": {
+    "description": "Action that reports a post or a profile."
+  },
+  "qaReportReasonHint": "What is wrong with this post?",
+  "@qaReportReasonHint": {
+    "description": "Hint of the report reason field."
+  },
+  "qaReportSent": "Thank you. An administrator will look at it.",
+  "@qaReportSent": {
+    "description": "Confirmation after a report."
+  },
+  "qaReportHidden": "Hidden until an administrator decides: three different users reported it.",
+  "@qaReportHidden": {
+    "description": "Shown when a report crossed the three-reporter threshold."
+  },
+  "qaMachineTranslation": "Machine translation",
+  "@qaMachineTranslation": {
+    "description": "Badge above a post that the server translated automatically."
+  },
+  "qaShowTranslation": "Translate",
+  "@qaShowTranslation": {
+    "description": "Action that asks the server for a machine translation."
+  },
+  "qaShowOriginal": "Original text",
+  "@qaShowOriginal": {
+    "description": "Action that switches back to the text the author wrote."
+  },
+  "qaTranslationFailed": "Could not translate right now.",
+  "@qaTranslationFailed": {
+    "description": "Failure message for the machine translation."
+  },
+  "qaVerifyTitle": "Verify as a specialist",
+  "@qaVerifyTitle": {
+    "description": "Title of the expert verification screen."
+  },
+  "qaVerifyIntro": "Send a photograph or a PDF of your professional credential — a diploma, certificate, licence or qualification certificate. It is checked automatically.",
+  "@qaVerifyIntro": {
+    "description": "Intro on the verification screen."
+  },
+  "qaVerifyFileNotStored": "The file is NOT stored. It is held only in memory during the check and goes to no database, no storage and no log. Only this is kept: your account id, role, country, the outcome and the date. The document number and your full name are not written down.",
+  "@qaVerifyFileNotStored": {
+    "description": "Privacy promise on the verification screen; must stay accurate."
+  },
+  "qaVerifyRole": "Your role",
+  "@qaVerifyRole": {
+    "description": "Role picker on the verification screen."
+  },
+  "qaVerifyCountry": "Country (two letters)",
+  "@qaVerifyCountry": {
+    "description": "Country code field on the verification screen."
+  },
+  "qaVerifyPickFile": "Choose the document",
+  "@qaVerifyPickFile": {
+    "description": "Button that opens the file picker on the verification screen."
+  },
+  "qaVerifyFileChosen": "Document chosen ({size})",
+  "@qaVerifyFileChosen": {
+    "description": "Shown after a document is picked; size is a human-readable file size.",
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "qaVerifySend": "Send for checking",
+  "@qaVerifySend": {
+    "description": "Submit button on the verification screen."
+  },
+  "qaVerifyAttemptsLeft": "{count, plural, =0{No attempts left today} =1{1 attempt left today} other{{count} attempts left today}}",
+  "@qaVerifyAttemptsLeft": {
+    "description": "Daily attempt counter on the verification screen (three per day).",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "qaVerifyChecking": "Checking the document…",
+  "@qaVerifyChecking": {
+    "description": "Progress message while the vision check runs."
+  },
+  "qaVerifyAccepted": "Verified. You may now answer questions and vote.",
+  "@qaVerifyAccepted": {
+    "description": "Success message after verification."
+  },
+  "qaVerifyRejected": "Not verified: {reason}",
+  "@qaVerifyRejected": {
+    "description": "Failure message after verification; reason is one of the qaReason* strings.",
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "qaReasonNotACredential": "the file does not look like a professional credential",
+  "@qaReasonNotACredential": {
+    "description": "Machine reason for a rejected verification."
+  },
+  "qaReasonUnreadable": "the document could not be read",
+  "@qaReasonUnreadable": {
+    "description": "Machine reason for a rejected verification."
+  },
+  "qaReasonRoleMismatch": "the document shows a different profession from the one you chose",
+  "@qaReasonRoleMismatch": {
+    "description": "Machine reason for a rejected verification."
+  },
+  "qaReasonLowConfidence": "the check was not confident enough",
+  "@qaReasonLowConfidence": {
+    "description": "Machine reason for a rejected verification."
+  },
+  "qaReasonExpired": "the document looks expired",
+  "@qaReasonExpired": {
+    "description": "Machine reason for a rejected verification."
+  },
+  "qaReasonReported": "other users reported the profile",
+  "@qaReasonReported": {
+    "description": "Machine reason for a suspended badge."
+  },
+  "qaVerifyBadDocument": "Choose a JPEG, PNG, WebP or PDF file no larger than 6 MB.",
+  "@qaVerifyBadDocument": {
+    "description": "Validation message for the picked document."
+  },
+  "qaVerifyUnavailable": "The check is unavailable right now. Your attempt was not used.",
+  "@qaVerifyUnavailable": {
+    "description": "Shown when the vision model could not be reached."
+  },
+  "qaStatusUnverified": "Not verified",
+  "@qaStatusUnverified": {
+    "description": "Q&A profile status."
+  },
+  "qaStatusVerified": "Verified",
+  "@qaStatusVerified": {
+    "description": "Q&A profile status."
+  },
+  "qaStatusRejected": "Rejected",
+  "@qaStatusRejected": {
+    "description": "Q&A profile status."
+  },
+  "qaStatusSuspended": "Suspended",
+  "@qaStatusSuspended": {
+    "description": "Q&A profile status."
+  },
+  "qaMineTitle": "My questions and answers",
+  "@qaMineTitle": {
+    "description": "Title of the user's own Q&A posts screen."
+  },
+  "qaMineQuestions": "Questions",
+  "@qaMineQuestions": {
+    "description": "Section header on the user's own Q&A posts screen."
+  },
+  "qaMineAnswers": "Answers",
+  "@qaMineAnswers": {
+    "description": "Section header on the user's own Q&A posts screen."
+  },
+  "qaMineEmpty": "You have not posted anything yet.",
+  "@qaMineEmpty": {
+    "description": "Empty state on the user's own Q&A posts screen."
+  },
+  "qaPostPublished": "Published",
+  "@qaPostPublished": {
+    "description": "Status of a Q&A post."
+  },
+  "qaPostModeration": "Under review",
+  "@qaPostModeration": {
+    "description": "Status of a Q&A post."
+  },
+  "qaPostRemoved": "Removed",
+  "@qaPostRemoved": {
+    "description": "Status of a Q&A post."
+  },
+  "qaScore": "Rating: {score}",
+  "@qaScore": {
+    "description": "Vote score of an answer.",
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "qaModerationTitle": "Q&A moderation",
+  "@qaModerationTitle": {
+    "description": "Title of the admin moderation queue for Q&A."
+  },
+  "qaModerationEmpty": "Nothing is waiting.",
+  "@qaModerationEmpty": {
+    "description": "Empty state of the Q&A moderation queue."
+  },
+  "qaModerationQuestions": "Questions under review",
+  "@qaModerationQuestions": {
+    "description": "Section header in the moderation queue."
+  },
+  "qaModerationAnswers": "Answers under review",
+  "@qaModerationAnswers": {
+    "description": "Section header in the moderation queue."
+  },
+  "qaModerationSuspended": "Suspended badges",
+  "@qaModerationSuspended": {
+    "description": "Section header in the moderation queue."
+  },
+  "qaReportsCount": "{count, plural, =1{1 report} other{{count} reports}}",
+  "@qaReportsCount": {
+    "description": "Number of distinct reporters on a post.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "qaActionPublish": "Publish",
+  "@qaActionPublish": {
+    "description": "Admin action in the Q&A moderation queue."
+  },
+  "qaActionRemove": "Remove",
+  "@qaActionRemove": {
+    "description": "Admin action in the Q&A moderation queue."
+  },
+  "qaActionPin": "Pin",
+  "@qaActionPin": {
+    "description": "Admin action in the Q&A moderation queue."
+  },
+  "qaActionUnpin": "Unpin",
+  "@qaActionUnpin": {
+    "description": "Admin action in the Q&A moderation queue."
+  },
+  "qaActionReinstate": "Reinstate the badge",
+  "@qaActionReinstate": {
+    "description": "Admin action in the Q&A moderation queue."
+  },
+  "qaActionSuspend": "Suspend the badge",
+  "@qaActionSuspend": {
+    "description": "Admin action in the Q&A moderation queue."
+  },
+  "qaActionDone": "Done.",
+  "@qaActionDone": {
+    "description": "Confirmation after an admin action in Q&A."
+  },
+  "qaActionFailed": "Could not do that.",
+  "@qaActionFailed": {
+    "description": "Failure after an admin action in Q&A."
+  },
+  "qaAdminOnly": "Only an administrator can open this.",
+  "@qaAdminOnly": {
+    "description": "Shown when a non-admin reaches the Q&A moderation queue."
   }
 }

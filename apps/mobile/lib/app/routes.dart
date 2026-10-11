@@ -80,6 +80,14 @@ abstract final class Routes {
   static const publicationSubmit = '/library/publications/submit';
   static const publicationsMine = '/library/publications/mine';
   static const publicationsModeration = '/library/publications/moderation';
+  // «Savol-javob (Hamjamiyat)» (FE_QA yoki admin; server ulangan bo‘lsa).
+  static const qa = '/library/qa';
+  static String qaQuestion(String id) =>
+      '/library/qa/q/${Uri.encodeComponent(id)}';
+  static const qaAsk = '/library/qa/ask';
+  static const qaMine = '/library/qa/mine';
+  static const qaVerify = '/library/qa/verify';
+  static const qaModeration = '/library/qa/moderation';
   // Provenance qatlami.
   static const conflicts = '/library/conflicts';
   static String conflict(String id) => '/library/conflicts/$id';
