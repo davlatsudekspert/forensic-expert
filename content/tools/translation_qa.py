@@ -413,9 +413,24 @@ def check_bundle(path: pathlib.Path, rep: Report):
                 rep._add(rid, f"locale_only={only}: translation_status must be authored")
             rep.text(rid, st.get(only) or "", only)
             continue
-        for lang in ("uz", "ru"):
-            rep.pair(f"bundle:claim_statement:{c['claim_id']}:{lang}", st.get("en"), st.get(lang), "en", lang)
-        for lang in ("uz", "ru"):
+        # The source is usually English, but a record taken from an Uzbek
+        # textbook is written in Uzbek first; `value.source_lang` says so, and
+        # then that language is the authored one and the other two are drafts
+        # compared against it. Claiming English was authored when it was in
+        # fact translated would misstate what was checked.
+        src_lang = c["value"].get("source_lang", "en")
+        if src_lang not in ("uz", "ru", "en"):
+            rep._add(f"bundle:claim_statement:{c['claim_id']}",
+                     f"unknown source_lang {src_lang!r}")
+            continue
+        others = [l for l in ("uz", "ru", "en") if l != src_lang]
+        if ts.get(src_lang) != "authored":
+            rep._add(f"bundle:claim_statement:{c['claim_id']}:{src_lang}",
+                     "translation_status must be authored "
+                     f"(source_lang={src_lang})")
+        for lang in others:
+            rep.pair(f"bundle:claim_statement:{c['claim_id']}:{lang}",
+                     st.get(src_lang), st.get(lang), src_lang, lang)
             if ts.get(lang) != "machine_draft":
                 rep._add(f"bundle:claim_statement:{c['claim_id']}:{lang}", "translation_status must be machine_draft")
     for r in b.get("recipes", []):

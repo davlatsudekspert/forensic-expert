@@ -1684,6 +1684,138 @@
    "status": "machine_draft"
   },
   {
+   "target_type": "list_item",
+   "target_id": "C-BUTANE-METABOLITES-D1#items[0]",
+   "source_lang": "en",
+   "source_text": "2-butanol",
+   "source_sha256": "88428216c2fbaed40a53c660d6964ba4df832a254503ee70d8a2dfdb62db7118",
+   "text": {
+    "uz": "2-butanol",
+    "ru": "2-бутанол"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "list_item",
+   "target_id": "C-BUTANE-METABOLITES-D1#items[1]",
+   "source_lang": "en",
+   "source_text": "2-butanone",
+   "source_sha256": "a337563460068aabc72820bf1c089cb4092d2a4d11f78d2b0591517241f2fef5",
+   "text": {
+    "uz": "2-butanon (metiletilketon)",
+    "ru": "2-бутанон (метилэтилкетон)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-BUTANE-REPORTED_CONCENTRATION-D1#population",
+   "source_lang": "en",
+   "source_text": "adolescents and adults, individual cases",
+   "source_sha256": "c868c109c6ae5eb88d1661cb157632c56969ed1b07e94370c9be77b4c1123069",
+   "text": {
+    "uz": "o‘smirlar va kattalar, alohida holatlar",
+    "ru": "подростки и взрослые, отдельные случаи"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-BUTANE-REPORTED_CONCENTRATION-D1#study_size",
+   "source_lang": "en",
+   "source_text": "6 cases (2 + 3 + 1)",
+   "source_sha256": "0c93c4238a60634c6fa5c1a46eab89e7619765f66a462b2203bc3e8e5b0c9d0e",
+   "text": {
+    "uz": "6 ta holat (2 + 3 + 1)",
+    "ru": "6 случаев (2 + 3 + 1)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-BUTANE-REPORTED_CONCENTRATION-D1#case_type",
+   "source_lang": "en",
+   "source_text": "death after inhalation of a volatile substance",
+   "source_sha256": "60012441be1aaaae3d91d976aa726cfb2dc691bb654b2a8240a3bd081e3bfefe",
+   "text": {
+    "uz": "uchuvchi moddani nafas olish natijasidagi o‘lim",
+    "ru": "смерть после вдыхания летучего вещества"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-BUTANE-REPORTED_CONCENTRATION-D1#co_intoxicants",
+   "source_lang": "en",
+   "source_text": "propane (one case, blood, tenfold lower)",
+   "source_sha256": "1d9930d10af399fa633916383517b5be79d19ea078252d01d62fd8228b559453",
+   "text": {
+    "uz": "propan (bir holatda, qonda, o‘n barobar kam)",
+    "ru": "пропан (один случай, кровь, в десять раз меньше)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-BUTANE-REPORTED_CONCENTRATION-D1#analytical_method",
+   "source_lang": "en",
+   "source_text": "headspace GC-MS",
+   "source_sha256": "30bce36b27b3f92ce08e02c2b18978dfa26333996130cef7e7e67efffcf448b4",
+   "text": {
+    "uz": "headspace GC-MS",
+    "ru": "парофазная GC-MS"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-BUTANE-REPORTED_CONCENTRATION-D1#statistic",
+   "source_lang": "en",
+   "source_text": "individual case values (not an average)",
+   "source_sha256": "ddaab8be4f5229364738e61467a97ba6a774531029aab1459bd4c176aff2b370",
+   "text": {
+    "uz": "alohida holat qiymatlari (o‘rtacha emas)",
+    "ru": "значения по отдельным случаям (не среднее)"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-BUTANE-REPORTED_CONCENTRATION-D1#limitations[0]",
+   "source_lang": "en",
+   "source_text": "no lethal threshold is established",
+   "source_sha256": "92dd607e88c5ff07025df49cf6d840a422aedc47d4555b7b1f78d693bcfa180d",
+   "text": {
+    "uz": "o‘limga olib keluvchi chegara belgilanmagan",
+    "ru": "смертельный порог не установлен"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-BUTANE-REPORTED_CONCENTRATION-D1#limitations[1]",
+   "source_lang": "en",
+   "source_text": "tissue concentrations vary substantially",
+   "source_sha256": "0ea76dcad4b1385bd5f6bcc08bbe33a4c2ef75ecc49827e8f4d6cb29cac960e8",
+   "text": {
+    "uz": "to‘qimalardagi miqdor keng oraliqda o‘zgaradi",
+    "ru": "концентрации в тканях варьируют в широких пределах"
+   },
+   "status": "machine_draft"
+  },
+  {
+   "target_type": "context_text",
+   "target_id": "C-BUTANE-REPORTED_CONCENTRATION-D1#limitations[2]",
+   "source_lang": "en",
+   "source_text": "sampling and storage strongly affect the result",
+   "source_sha256": "50f1d1b05fa2093b49a3956fe5872e82fd54353b0500a91ff4f6e5b2850d1c37",
+   "text": {
+    "uz": "namuna olish va saqlash natijaga kuchli ta’sir qiladi",
+    "ru": "отбор и хранение образца сильно влияют на результат"
+   },
+   "status": "machine_draft"
+  },
+  {
    "target_type": "topic_body",
    "target_id": "bio-bhb-ketoacidosis",
    "source_lang": "en",
@@ -2054,9 +2186,9 @@
    "source_text": "Blunt force trauma causes external injuries in form of abrasions, contusions, and lacerations of the skin and internal injuries such as fractures, intracranial hemorrhages, and damage to internal organs.",
    "source_sha256": "12811f037c42a3ebee3572a7124180083722f792290ad363bdd3c6da2f7dfcab",
    "text": {
-    "uz": "To‘mtoq jism jarohati — sud tibbiyotida keng uchraydigan jarohat turi. Kartadagi manbali da’voga ko‘ra, u terida siyrilish, ko‘karish va yorilish ko‘rinishidagi tashqi jarohatlarni hamda suyak sinishi, kalla ichi qon quyilishlari va ichki organlar zararlanishi kabi ichki jarohatlarni keltirib chiqaradi. Tushuntirish faqat shu manbali da’vodan olingan; boshqa bo‘limlar uchun hali manba yo‘q.",
-    "ru": "Травма тупым твёрдым предметом — часто встречающийся в судебной медицине вид повреждения. Согласно источнику карточки, она вызывает наружные повреждения в виде ссадин, кровоподтёков и ран кожи, а также внутренние повреждения: переломы, внутричерепные кровоизлияния и повреждения внутренних органов. Пояснение составлено только по этому утверждению из источника; для других разделов источника пока нет.",
-    "en": "Blunt force trauma is a common injury type in forensic medicine. According to the card's source, it causes external injuries in the form of abrasions, contusions and lacerations of the skin, and internal injuries such as fractures, intracranial haemorrhages and damage to internal organs. This explanation rests only on that sourced statement; the other sections have no source yet."
+    "uz": "To‘mtoq jism jarohati — sud tibbiyotida keng uchraydigan jarohat turi. Kartadagi manbali da’voga ko‘ra, u terida siyrilish, ko‘karish va yorilish ko‘rinishidagi tashqi jarohatlarni hamda suyak sinishi, kalla ichi qon quyilishlari va ichki organlar zararlanishi kabi ichki jarohatlarni keltirib chiqaradi. Tushuntirish shu manbali da’vodan olingan; kartaning qolgan bo‘limlari o‘z manbalariga ega.",
+    "ru": "Травма тупым твёрдым предметом — часто встречающийся в судебной медицине вид повреждения. Согласно источнику карточки, она вызывает наружные повреждения в виде ссадин, кровоподтёков и ран кожи, а также внутренние повреждения: переломы, внутричерепные кровоизлияния и повреждения внутренних органов. Пояснение составлено по этому утверждению из источника; остальные разделы карточки имеют собственные источники.",
+    "en": "Blunt force trauma is a common injury type in forensic medicine. According to the card's source, it causes external injuries in the form of abrasions, contusions and lacerations of the skin, and internal injuries such as fractures, intracranial haemorrhages and damage to internal organs. This explanation rests on that sourced statement; the other sections of the card carry sources of their own."
    },
    "status": "machine_draft"
   },
