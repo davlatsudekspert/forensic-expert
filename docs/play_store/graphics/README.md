@@ -62,10 +62,20 @@ Store presence — belgisi bor).
 **«Changes are sent for review automatically. The query parameter
 changesNotSentForReview must not be set.»**
 
-Xulosa: bu ilovada do'kon sahifasi o'zgarishi avtomatik ko'rikka yuboriladi,
-ya'ni commit = nashrga yuborish. Shuning uchun «tahrirlash» huquqi yetmaydi —
-nashr (publish/release) darajasidagi huquq kerak. Bu ancha keng huquq
-(production'ga chiqarish imkonini ham beradi), shuning uchun tavsiya
-etilmaydi: rasmlarni Play Console'dan **qo'lda** yuklash xavfsizroq.
+**Isbotlangani** (dalil yuqoridagi jadvalda):
+
+* hisob edit yarata oladi, listings o'qiy oladi, rasm yuklay oladi va bo'sh
+  edit'ni commit qila oladi — demak token, OAuth scope va paket nomi to'g'ri;
+* do'kon sahifasiga tegadigan edit'ni commit qila olmaydi;
+* bu ilovada do'kon sahifasi o'zgarishi avtomatik ko'rikka yuboriladi
+  (Play'ning o'z xabari).
+
+**Isbotlanmagani (taxmin):** aynan qaysi huquq yetishmayotganini Play
+aytmadi. Ehtimoliy tushuntirish — commit = ko'rikka yuborish bo'lgani uchun
+nashr (publish/release) darajasidagi huquq talab qilinadi. Buni tekshirish
+uchun o'sha huquqni berib ko'rish kerak bo'lardi, lekin u service-account'ga
+production'ga chiqarish imkonini ham beradi — sakkizta rasm uchun bu juda
+katta huquq. Shuning uchun **tavsiya: rasmlarni Play Console'dan qo'lda
+yuklash**.
 
 Rasmlar yuklanmadi — Play'da sahifa o'zgarmagan holida qoldi.

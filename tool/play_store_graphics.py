@@ -112,6 +112,29 @@ def commit(s, pkg: str, edit: str, what: str) -> bool:
     return False
 
 
+def probe_listing_text(s, pkg: str, lang: str) -> None:
+    """Mavjud matnni aynan o‘zini qayta yozib commit qiladi — hech narsa
+    o‘zgarmaydi. Maqsad: rad etish «do‘kon sahifasining har qanday
+    o‘zgarishi» uchunmi yoki aynan rasmlar uchunmi, shuni ajratish.
+    """
+    edit = check(
+        s.post(f"{API}/applications/{pkg}/edits", json={}), "create edit"
+    ).json()["id"]
+    current = check(
+        s.get(f"{API}/applications/{pkg}/edits/{edit}/listings/{lang}"),
+        f"read listing ({lang})",
+    ).json()
+    body = {k: current.get(k) for k in
+            ("language", "title", "shortDescription", "fullDescription",
+             "video") if current.get(k) is not None}
+    check(
+        s.put(f"{API}/applications/{pkg}/edits/{edit}/listings/{lang}",
+              json=body),
+        f"write back the same listing text ({lang})",
+    )
+    commit(s, pkg, edit, f"unchanged listing text ({lang})")
+
+
 def apply_one(s, pkg: str, lang: str, kind: str,
               files: list[pathlib.Path]) -> bool:
     """Bitta rasm turini o‘z edit’ida qo‘llaydi — qaysi biri rad etilishi
@@ -166,6 +189,9 @@ def main() -> None:
     if not languages:
         sys.exit("no store listing exists yet — write the texts first")
     print("languages:", ", ".join(languages))
+
+    # Matn o‘zgarishi ham rad etiladimi — shu savolga javob.
+    probe_listing_text(s, pkg, languages[0])
 
     failed = []
     for lang in languages:
