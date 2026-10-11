@@ -17,7 +17,7 @@ sahifasini to‘ldiramiz va saqlaymiz (Save). Ommaviy nashrga yuborishga
 ruxsat alohida beriladi. Hozirgi maqsad — TestFlight orqali ichki sinov.
 
 **Build:** 148-build eskirgan. Hozir yangi build yig‘ilmoqda — **0.3.0**,
-build raqami **166** (148 emas).
+build raqami **168** (148 emas).
 TestFlight’da ikkita build ko‘rinsa, **eng kattasini** oling: unda bugungi
 to‘rtta tuzatish bor (klaviatura, kichik ekranlar, Savol-javob qoidalari,
 admin paneldan Pro berish).
