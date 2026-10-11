@@ -175,4 +175,40 @@ void main() {
     // Sahifa faqat o‘zbek tilida.
     expect(SourcesAuthorsScreen.languageCode, 'uz');
   });
+
+  testWidgets('ABY yozuvida ob’ekt alohida qator bo‘lib turadi (qon, siydik)',
+      (tester) async {
+    await pumpApp(
+      tester,
+      settings: completedSettings(lang: 'uz'),
+      initialLocation: Routes.knowledgeEntry('aby-tox-benzodiazepines'),
+      testFixtures: false,
+      overrides: [
+        ...pilot.overrides,
+        entitlementServiceProvider.overrideWithValue(FakeStore(owned: true)),
+      ],
+    );
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('claim.objects.C-ABY-TOX-BZD-01')), findsOne);
+    expect(find.textContaining('Ob’ekt'), findsWidgets);
+    expect(find.textContaining('qon'), findsWidgets);
+    expect(find.textContaining('siydik'), findsWidgets);
+  });
+
+  test('ABY ob’ekti: faqat matnda aytilgani, taxmin yo‘q', () {
+    final claims = [
+      for (final area in KnowledgeArea.values)
+        for (final e in pilot.knowledge.topicsIn(area))
+          if (e.id.startsWith('aby-')) ...e.claims,
+    ];
+    expect(claims, isNotEmpty);
+    for (final c in claims) {
+      // Har ABY yozuvi ob’ekt holatini e’lon qiladi.
+      expect(c.objectsStated, isNotNull, reason: c.claimId);
+      // Aytilmagan bo‘lsa — ro‘yxat bo‘sh; aytilgan bo‘lsa — bo‘sh emas.
+      expect(c.objects.isNotEmpty, c.objectsStated, reason: c.claimId);
+    }
+    final bzd = claims.firstWhere((c) => c.claimId == 'C-ABY-TOX-BZD-01');
+    expect(bzd.objects, ['blood', 'urine']);
+  });
 }

@@ -15710,6 +15710,132 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Professional Pro'**
   String get adminTierProfessional;
+
+  /// Label for the specimen row on an ABY method card.
+  ///
+  /// In en, this message translates to:
+  /// **'Specimen'**
+  String get abyObjectLabel;
+
+  /// Shown when the ABY text names no specimen.
+  ///
+  /// In en, this message translates to:
+  /// **'The ABY text does not name a specimen'**
+  String get abyObjectNotStated;
+
+  /// Specimen name: blood.
+  ///
+  /// In en, this message translates to:
+  /// **'blood'**
+  String get abyObjBlood;
+
+  /// Specimen name: urine.
+  ///
+  /// In en, this message translates to:
+  /// **'urine'**
+  String get abyObjUrine;
+
+  /// Specimen name: liver.
+  ///
+  /// In en, this message translates to:
+  /// **'liver'**
+  String get abyObjLiver;
+
+  /// Specimen name: gastric contents.
+  ///
+  /// In en, this message translates to:
+  /// **'gastric contents'**
+  String get abyObjGastric;
+
+  /// Specimen name: kidney.
+  ///
+  /// In en, this message translates to:
+  /// **'kidney'**
+  String get abyObjKidney;
+
+  /// Specimen name: lung.
+  ///
+  /// In en, this message translates to:
+  /// **'lung'**
+  String get abyObjLung;
+
+  /// Specimen name: hair.
+  ///
+  /// In en, this message translates to:
+  /// **'hair'**
+  String get abyObjHair;
+
+  /// Specimen name: brain.
+  ///
+  /// In en, this message translates to:
+  /// **'brain'**
+  String get abyObjBrain;
+
+  /// Specimen name: muscle.
+  ///
+  /// In en, this message translates to:
+  /// **'muscle'**
+  String get abyObjMuscle;
+
+  /// Specimen name: bile.
+  ///
+  /// In en, this message translates to:
+  /// **'bile'**
+  String get abyObjBile;
+
+  /// Specimen name: intestine.
+  ///
+  /// In en, this message translates to:
+  /// **'intestine'**
+  String get abyObjIntestine;
+
+  /// Specimen name: trachea.
+  ///
+  /// In en, this message translates to:
+  /// **'trachea'**
+  String get abyObjTrachea;
+
+  /// Specimen name: plasma.
+  ///
+  /// In en, this message translates to:
+  /// **'plasma'**
+  String get abyObjPlasma;
+
+  /// Specimen name: serum.
+  ///
+  /// In en, this message translates to:
+  /// **'serum'**
+  String get abyObjSerum;
+
+  /// Specimen name: saliva.
+  ///
+  /// In en, this message translates to:
+  /// **'saliva'**
+  String get abyObjSaliva;
+
+  /// Specimen name: semen.
+  ///
+  /// In en, this message translates to:
+  /// **'semen'**
+  String get abyObjSemen;
+
+  /// Specimen name: faeces.
+  ///
+  /// In en, this message translates to:
+  /// **'faeces'**
+  String get abyObjFaeces;
+
+  /// Specimen name: vomit.
+  ///
+  /// In en, this message translates to:
+  /// **'vomit'**
+  String get abyObjVomit;
+
+  /// Specimen name: internal organs.
+  ///
+  /// In en, this message translates to:
+  /// **'internal organs'**
+  String get abyObjOrgans;
 }
 
 class _AppLocalizationsDelegate

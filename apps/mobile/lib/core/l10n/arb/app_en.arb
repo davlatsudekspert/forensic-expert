@@ -11692,5 +11692,89 @@
   "adminTierProfessional": "Professional Pro",
   "@adminTierProfessional": {
     "description": "Name of the Professional Pro tier in the admin panel."
+  },
+  "abyObjectLabel": "Specimen",
+  "abyObjectNotStated": "The ABY text does not name a specimen",
+  "abyObjBlood": "blood",
+  "abyObjUrine": "urine",
+  "abyObjLiver": "liver",
+  "abyObjGastric": "gastric contents",
+  "abyObjKidney": "kidney",
+  "abyObjLung": "lung",
+  "abyObjHair": "hair",
+  "abyObjBrain": "brain",
+  "abyObjMuscle": "muscle",
+  "abyObjBile": "bile",
+  "abyObjIntestine": "intestine",
+  "abyObjTrachea": "trachea",
+  "abyObjPlasma": "plasma",
+  "abyObjSerum": "serum",
+  "abyObjSaliva": "saliva",
+  "abyObjSemen": "semen",
+  "abyObjFaeces": "faeces",
+  "abyObjVomit": "vomit",
+  "abyObjOrgans": "internal organs",
+  "@abyObjectLabel": {
+    "description": "Label for the specimen row on an ABY method card."
+  },
+  "@abyObjectNotStated": {
+    "description": "Shown when the ABY text names no specimen."
+  },
+  "@abyObjBlood": {
+    "description": "Specimen name: blood."
+  },
+  "@abyObjUrine": {
+    "description": "Specimen name: urine."
+  },
+  "@abyObjLiver": {
+    "description": "Specimen name: liver."
+  },
+  "@abyObjGastric": {
+    "description": "Specimen name: gastric contents."
+  },
+  "@abyObjKidney": {
+    "description": "Specimen name: kidney."
+  },
+  "@abyObjLung": {
+    "description": "Specimen name: lung."
+  },
+  "@abyObjHair": {
+    "description": "Specimen name: hair."
+  },
+  "@abyObjBrain": {
+    "description": "Specimen name: brain."
+  },
+  "@abyObjMuscle": {
+    "description": "Specimen name: muscle."
+  },
+  "@abyObjBile": {
+    "description": "Specimen name: bile."
+  },
+  "@abyObjIntestine": {
+    "description": "Specimen name: intestine."
+  },
+  "@abyObjTrachea": {
+    "description": "Specimen name: trachea."
+  },
+  "@abyObjPlasma": {
+    "description": "Specimen name: plasma."
+  },
+  "@abyObjSerum": {
+    "description": "Specimen name: serum."
+  },
+  "@abyObjSaliva": {
+    "description": "Specimen name: saliva."
+  },
+  "@abyObjSemen": {
+    "description": "Specimen name: semen."
+  },
+  "@abyObjFaeces": {
+    "description": "Specimen name: faeces."
+  },
+  "@abyObjVomit": {
+    "description": "Specimen name: vomit."
+  },
+  "@abyObjOrgans": {
+    "description": "Specimen name: internal organs."
   }
 }

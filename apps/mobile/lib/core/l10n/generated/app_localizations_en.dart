@@ -9037,4 +9037,67 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get adminTierProfessional => 'Professional Pro';
+
+  @override
+  String get abyObjectLabel => 'Specimen';
+
+  @override
+  String get abyObjectNotStated => 'The ABY text does not name a specimen';
+
+  @override
+  String get abyObjBlood => 'blood';
+
+  @override
+  String get abyObjUrine => 'urine';
+
+  @override
+  String get abyObjLiver => 'liver';
+
+  @override
+  String get abyObjGastric => 'gastric contents';
+
+  @override
+  String get abyObjKidney => 'kidney';
+
+  @override
+  String get abyObjLung => 'lung';
+
+  @override
+  String get abyObjHair => 'hair';
+
+  @override
+  String get abyObjBrain => 'brain';
+
+  @override
+  String get abyObjMuscle => 'muscle';
+
+  @override
+  String get abyObjBile => 'bile';
+
+  @override
+  String get abyObjIntestine => 'intestine';
+
+  @override
+  String get abyObjTrachea => 'trachea';
+
+  @override
+  String get abyObjPlasma => 'plasma';
+
+  @override
+  String get abyObjSerum => 'serum';
+
+  @override
+  String get abyObjSaliva => 'saliva';
+
+  @override
+  String get abyObjSemen => 'semen';
+
+  @override
+  String get abyObjFaeces => 'faeces';
+
+  @override
+  String get abyObjVomit => 'vomit';
+
+  @override
+  String get abyObjOrgans => 'internal organs';
 }

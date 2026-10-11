@@ -9090,4 +9090,67 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get adminTierProfessional => '«Специалист Pro»';
+
+  @override
+  String get abyObjectLabel => 'Объект';
+
+  @override
+  String get abyObjectNotStated => 'В тексте ABY объект не указан';
+
+  @override
+  String get abyObjBlood => 'кровь';
+
+  @override
+  String get abyObjUrine => 'моча';
+
+  @override
+  String get abyObjLiver => 'печень';
+
+  @override
+  String get abyObjGastric => 'содержимое желудка';
+
+  @override
+  String get abyObjKidney => 'почка';
+
+  @override
+  String get abyObjLung => 'лёгкое';
+
+  @override
+  String get abyObjHair => 'волосы';
+
+  @override
+  String get abyObjBrain => 'головной мозг';
+
+  @override
+  String get abyObjMuscle => 'мышца';
+
+  @override
+  String get abyObjBile => 'жёлчь';
+
+  @override
+  String get abyObjIntestine => 'кишечник';
+
+  @override
+  String get abyObjTrachea => 'трахея';
+
+  @override
+  String get abyObjPlasma => 'плазма';
+
+  @override
+  String get abyObjSerum => 'сыворотка';
+
+  @override
+  String get abyObjSaliva => 'слюна';
+
+  @override
+  String get abyObjSemen => 'сперма';
+
+  @override
+  String get abyObjFaeces => 'кал';
+
+  @override
+  String get abyObjVomit => 'рвотные массы';
+
+  @override
+  String get abyObjOrgans => 'внутренние органы';
 }

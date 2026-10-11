@@ -209,6 +209,17 @@ class ClaimView {
     for (final i in (value['items'] as List? ?? const [])) '$i',
   ];
 
+  /// ABY yozuvi uchun: tekshiriladigan ob’ekt (`value.objects`) — qon,
+  /// siydik, ichki a’zolar… Ekspert xulosa yozishda birinchi bo‘lib shuni
+  /// biladi. Ro‘yxat faqat ABY matnida aytilganidan olinadi.
+  List<String> get objects => [
+    for (final o in (value['objects'] as List? ?? const [])) '$o',
+  ];
+
+  /// ABY matnida ob’ekt umuman aytilganmi (`value.objects_stated`).
+  /// `null` — bu ABY yozuvi emas, qator ko‘rsatilmaydi.
+  bool? get objectsStated => value['objects_stated'] as bool?;
+
   String? get excerpt => value['excerpt'] as String?;
 
   /// `value.locale_only` (sxemada hujjatlashtirilgan, ixtiyoriy): yozuv faqat

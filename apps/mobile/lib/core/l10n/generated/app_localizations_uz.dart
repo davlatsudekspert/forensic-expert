@@ -9000,4 +9000,67 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get adminTierProfessional => 'Mutaxassis Pro';
+
+  @override
+  String get abyObjectLabel => 'Ob’ekt';
+
+  @override
+  String get abyObjectNotStated => 'ABY matnida ob’ekt ko‘rsatilmagan';
+
+  @override
+  String get abyObjBlood => 'qon';
+
+  @override
+  String get abyObjUrine => 'siydik';
+
+  @override
+  String get abyObjLiver => 'jigar';
+
+  @override
+  String get abyObjGastric => 'me’da ichidagi massa';
+
+  @override
+  String get abyObjKidney => 'buyrak';
+
+  @override
+  String get abyObjLung => 'o‘pka';
+
+  @override
+  String get abyObjHair => 'soch';
+
+  @override
+  String get abyObjBrain => 'miya';
+
+  @override
+  String get abyObjMuscle => 'mushak';
+
+  @override
+  String get abyObjBile => 'o‘t';
+
+  @override
+  String get abyObjIntestine => 'ichak';
+
+  @override
+  String get abyObjTrachea => 'traxeya';
+
+  @override
+  String get abyObjPlasma => 'plazma';
+
+  @override
+  String get abyObjSerum => 'zardob';
+
+  @override
+  String get abyObjSaliva => 'so‘lak';
+
+  @override
+  String get abyObjSemen => 'sperma';
+
+  @override
+  String get abyObjFaeces => 'najas';
+
+  @override
+  String get abyObjVomit => 'qusuq massasi';
+
+  @override
+  String get abyObjOrgans => 'ichki a’zolar';
 }
