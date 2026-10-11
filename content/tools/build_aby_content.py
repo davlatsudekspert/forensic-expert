@@ -26,18 +26,36 @@ HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
 import aby_data  # noqa: E402
+import aby_data_b2  # noqa: E402
+import aby_expert_notes  # noqa: E402
 
 ROOT = HERE.parents[1]
 BUNDLE = ROOT / "content/pilot/bundle.json"
 
-CLAIM_PREFIX = "C-ABY-"
+CLAIM_PREFIXES = ("C-ABY-", "C-ABYX-")
+MANAGED_SOURCES = {s["source_id"] for s in aby_expert_notes.SOURCES} | {aby_data.SRC_ID}
 TOPIC_PREFIX = "aby-"
+
+
+def _short(locator: str) -> str:
+    """Locator without the source name: «ABY.G.16.2025, 2.3-band».
+
+    A record may rest on two practices of the same section; each part keeps its
+    own number, so the short form lists both."""
+    return "; ".join(
+        part.split("№ ", 1)[-1].replace(" amaliyoti", "", 1)
+        for part in locator.split("; ")
+    )
 
 
 def aby_claims():
     claims, cits = [], []
-    for cid, etype, ent, field, eclass, locator, text in aby_data.CLAIMS:
-        short_loc = locator.split("№ ", 1)[-1].replace(" amaliyoti", "", 1)
+    for claim in aby_data.CLAIMS + aby_data_b2.CLAIMS_B2:
+        cid, etype, ent, field, eclass, locator, text = claim[:7]
+        # A record may carry extra value keys; a reported concentration must
+        # (schema rule FE032/FE033: specimen, context, «not a threshold»).
+        extra = claim[7] if len(claim) > 7 else {}
+        short_loc = _short(locator)
         value = {
             "statement": {"uz": text},
             "locale_only": "uz",
@@ -49,6 +67,7 @@ def aby_claims():
             "locator_i18n": {"uz": locator},
             "source_i18n": {"uz": aby_data.SOURCE_I18N_UZ},
             "source_check": {"level": "guide_text_read"},
+            **extra,
         }
         claims.append({
             "claim_id": cid, "entity_type": etype, "entity_id": ent, "field": field,
@@ -63,18 +82,48 @@ def aby_claims():
     return claims, cits
 
 
+def expert_notes():
+    """Our own notes on the guide's procedures, each with its own sources."""
+    claims, cits = [], []
+    for cid, etype, ent, field, level, sources, text in aby_expert_notes.CLAIMS:
+        value = {
+            "statement": {"uz": text},
+            "locale_only": "uz",
+            "translation_status": {"uz": "authored"},
+            "section": "; ".join(sid for sid, _ in sources),
+            "method_family": "expert_note",
+            "evidence_class": "framing",
+            "scope": "topic",
+            "locator_i18n": {
+                "uz": "; ".join(f"{sid}, {loc}" for sid, loc in sources),
+            },
+            "source_i18n": {"uz": "Xalqaro ilmiy adabiyot (PubMed)"},
+            "source_check": {"level": "abstract"},
+        }
+        claims.append({
+            "claim_id": cid, "entity_type": etype, "entity_id": ent, "field": field,
+            "domain": "lab", "declared_status": "NEEDS_REVIEW", "evidence_level": level,
+            "layer": "international_scientific", "is_structured_value": False, "value": value,
+        })
+        for sid, loc in sources:
+            cits.append({"claim_id": cid, "source_id": sid, "locator": loc})
+    return claims, cits
+
+
 def merge(b: dict) -> dict:
-    b["claims"] = [c for c in b["claims"] if not c["claim_id"].startswith(CLAIM_PREFIX)]
+    b["claims"] = [c for c in b["claims"] if not c["claim_id"].startswith(CLAIM_PREFIXES)]
     kept = {c["claim_id"] for c in b["claims"]}
     b["citations"] = [c for c in b["citations"] if c["claim_id"] in kept]
-    b["sources"] = [s for s in b["sources"] if s["source_id"] != aby_data.SRC_ID]
+    b["sources"] = [s for s in b["sources"] if s["source_id"] not in MANAGED_SOURCES]
     b["topics"] = [t for t in b["topics"] if not t["topic_id"].startswith(TOPIC_PREFIX)]
 
     b["sources"].append(aby_data.SOURCE)
+    b["sources"].extend(aby_expert_notes.SOURCES)
     ac, acit = aby_claims()
-    b["claims"].extend(ac)
-    b["citations"].extend(acit)
-    for tid, area, name in aby_data.TOPICS:
+    xc, xcit = expert_notes()
+    b["claims"].extend(ac + xc)
+    b["citations"].extend(acit + xcit)
+    for tid, area, name in aby_data.TOPICS + aby_data_b2.TOPICS_B2:
         b["topics"].append({
             "topic_id": tid, "area": area, "tier_access": "free", "locale_only": "uz",
             # Uzbek-only name: there is no Russian or English version of this topic, and the
@@ -99,7 +148,11 @@ def main() -> int:
         print("bundle.json up to date (ABY records)")
         return 0
     BUNDLE.write_text(out, encoding="utf-8")
-    print(f"sources +1, claims +{len(aby_data.CLAIMS)}, topics +{len(aby_data.TOPICS)}")
+    print(
+        f"sources +{1 + len(aby_expert_notes.SOURCES)}, "
+        f"claims +{len(aby_data.CLAIMS) + len(aby_data_b2.CLAIMS_B2) + len(aby_expert_notes.CLAIMS)}, "
+        f"topics +{len(aby_data.TOPICS) + len(aby_data_b2.TOPICS_B2)}"
+    )
     return 0
 
 

@@ -4,27 +4,27 @@
   "verdict": {
    "UNSUPPORTED": 1,
    "SCOPE_MISMATCH": 0,
-   "ABSTRACT_ONLY": 680,
+   "ABSTRACT_ONLY": 682,
    "NO_LOCATOR": 19,
    "PARTIAL": 72,
-   "SUPPORTED": 1537
+   "SUPPORTED": 1597
   },
   "auto_verdict": {
    "UNSUPPORTED": 1,
    "SCOPE_MISMATCH": 7,
-   "ABSTRACT_ONLY": 678,
+   "ABSTRACT_ONLY": 680,
    "NO_LOCATOR": 19,
    "PARTIAL": 71,
-   "SUPPORTED": 1533
+   "SUPPORTED": 1593
   },
   "by_corpus": {
    "bundle": {
     "UNSUPPORTED": 1,
     "SCOPE_MISMATCH": 0,
-    "ABSTRACT_ONLY": 3,
+    "ABSTRACT_ONLY": 5,
     "NO_LOCATOR": 0,
     "PARTIAL": 13,
-    "SUPPORTED": 847
+    "SUPPORTED": 907
    },
    "court_prep": {
     "UNSUPPORTED": 0,
@@ -43,7 +43,7 @@
     "SUPPORTED": 480
    }
   },
-  "claims": 2309,
+  "claims": 2371,
   "reviewed": 48,
   "general_rule_abstract_only_unreviewed": 7
  },
@@ -298,8 +298,8 @@
    "guideline/tier1/B": 2,
    "guideline/tier3/C": 1,
    "journal_article/tier2/A": 8,
-   "journal_article/tier2/B": 232,
-   "journal_article/tier2/C": 47,
+   "journal_article/tier2/B": 234,
+   "journal_article/tier2/C": 49,
    "journal_article/tier2/D": 32,
    "legislation/tier1/A": 8,
    "report/tier3/C": 1,
@@ -308,7 +308,9 @@
   "claims_whose_level_differs_from_their_source": [
    "C-EP-ETHANOL-06",
    "C-EP-ETHANOL-07",
-   "C-EP-ETHANOL-09"
+   "C-EP-ETHANOL-09",
+   "C-ABYX-BENZIDINE-01",
+   "C-ABYX-FLOAT-01"
   ],
   "claim_level_is_copied_from_source": false,
   "ungrounded_or_inconsistent_sources": [
@@ -54561,6 +54563,1498 @@
    "reasons": [],
    "text_sha": "800dc4bb92d36453",
    "text": "Diatom-plankton tekshiruvi (ABY) cho‘kishda o‘limni aniqlash uchun: 100 g a’zo (o‘pka va jigardan chekka qismlar, buyrak kapsulasiz) distillangan suv bilan yuvilib, kolbada sulfat va nitrat kislota hamda suvning 1 : 1 : "
+  },
+  {
+   "id": "C-ABY-SMH-01",
+   "corpus": "bundle",
+   "container": "aby-tox-sulfonylureas",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.1.2025, «Jarayonni olib borish tartibi»; ABY.G.2.2025, 2.1-band"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "2868ba62d60f9d2d",
+   "text": "Sulfonilmochevina hosilalari (SMH) kislotali xususiyatga ega, shu sabab ABY ularni barbituratlar kabi nordonlashtirilgan suv yordamida ajratadi. Biologik suyuqlikdan: 10 ml qon (yoki 20 ml siydik) 2 n xlorid kislota bila"
+  },
+  {
+   "id": "C-ABY-SMH-02",
+   "corpus": "bundle",
+   "container": "aby-tox-sulfonylureas",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.1.2025, «Jarayonni olib borish tartibi», 1- va 2-jadvallar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "ffe806666cf89ae8",
+   "text": "SMH ning TLC aniqlashi (ABY): 2 ml xloroformli ekstrakt 0,5 ml gacha bug‘latilib, plastinka start nuqtasiga bir tomchi tomiziladi, 2 sm o‘ngga preparatning 0,01 % li metanoldagi standarti qo‘yiladi; plastinka xloroform–a"
+  },
+  {
+   "id": "C-ABY-SMH-03",
+   "corpus": "bundle",
+   "container": "aby-tox-sulfonylureas",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.1.2025, «Jarayonni olib borish tartibi», 3- va 4-jadvallar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "62e44844a804dbdd",
+   "text": "SMH ni sirt termodesorbsion ionlanish spektroskopiyasi (STDIS, PII-N-S «Iskovich» asbobi) bilan aniqlash: emitter harorati 390–420 °C, emitter kuchlanishi 400 V, bug‘latgich xona haroratidan 310 °C gacha; 1 ml xloroforml"
+  },
+  {
+   "id": "C-ABY-OP-01",
+   "corpus": "bundle",
+   "container": "aby-tox-organophosphates",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.9.2025, 2.1 va 2.2.1-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "1b9c0753dafd5884",
+   "text": "Fosfororganik birikmalarni (FOB) ajratish va xolinesteraza sinamasi (ABY): 20 g mayda murda materiali, qon yoki siydik (20 ml) alohida kolbalarga solinib, har biriga 20 ml benzol qo‘shiladi, elektr chayqatgichda 20 daqiq"
+  },
+  {
+   "id": "C-ABY-OP-02",
+   "corpus": "bundle",
+   "container": "aby-tox-organophosphates",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.9.2025, 2.2.2 va 3.3-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "c2317554cd43cf6e",
+   "text": "FOB ning TLC aniqlashi (ABY): 5 ml benzolli ajratma 0,5 ml gacha bug‘latilib silikagel plastinkaga tomiziladi, 2 sm o‘ngga standart (FOB ning 0,01 % li spirtli eritmasi) qo‘yiladi; plastinka suv bilan to‘yingan benzol bu"
+  },
+  {
+   "id": "C-ABY-HG-01",
+   "corpus": "bundle",
+   "container": "aby-tox-mercury",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.10.2025, «Jarayonni olib borish tartibi», destruksiya bo‘limlari"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "13558ffe190671dd",
+   "text": "Simobni aniqlash uchun ob’ekt destruksiya qilinadi (ABY). Ichki a’zolar: har bir a’zodan alohida 20 g, 200 ml konussimon kolbaga 5 ml suv, 1 ml etanol va 10 ml kons. nitrat kislota solinadi, azot oksidlari chiqib ketmasl"
+  },
+  {
+   "id": "C-ABY-HG-02",
+   "corpus": "bundle",
+   "container": "aby-tox-mercury",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.10.2025, «Destruktatdan simobni aniqlash» va «Tahlil. Izohlash»"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "fc53199bbd065d84",
+   "text": "Destruktatda simobni aniqlash (ABY): (1) ditizon bilan — destruktat avval xloroform bilan tozalanadi, so‘ng 10 ml 10 % gidroksilamin sulfat (yoki 10 % askorbin kislota), 5 ml xloroform va 0,3 ml 0,01 n yashil ditizon eri"
+  },
+  {
+   "id": "C-ABY-MET-01",
+   "corpus": "bundle",
+   "container": "aby-tox-metals",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.11.2025, «Jarayonni o‘tkazish tavsifi», mineralizatsiya va denitratsiya"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "a4bb0fcf783533f4",
+   "text": "Metalli zaharlar uchun kasrli usulda ob’ekt avval mineralizatsiya qilinadi (ABY): jigar, oshqozon (ichidagi massa bilan), buyrak va boshqalardan har biridan alohida 100 g olinadi, aralashtirilmaydi. 100 g maydalangan mat"
+  },
+  {
+   "id": "C-ABY-MET-02",
+   "corpus": "bundle",
+   "container": "aby-tox-metals",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.11.2025, «Jarayonni o‘tkazish tavsifi», metallar bo‘yicha reaksiyalar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "89a0b9df237dd414",
+   "text": "Mineralizatda ayrim metallarni aniqlash reaksiyalari va ABYda ko‘rsatilgan sezgirliklar. Qo‘rg‘oshin: pH 7,5–8,0 da ditizon bilan xloroform qatlami olvon-qizil; sulfid (qora), sulfat (oq) va xromat (sariq) cho‘kmalari; m"
+  },
+  {
+   "id": "C-ABY-MET-03",
+   "corpus": "bundle",
+   "container": "aby-tox-metals",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.11.2025, «Tahlil. Izohlash. Hujjatlashtirish» (3.1-band va keyingilar)"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "24806ffd1236a6ee",
+   "text": "ABY metallarni baholashda organizmning tabiiy tarkibini hisobga olishni talab qiladi. Keltirilgan ma’lumotlar (100 g a’zoga, mg): A.I. Voynar bo‘yicha qo‘rg‘oshin — jigarda 0,13, buyrakda 0,027, miyada 0,013, o‘pkada 0,0"
+  },
+  {
+   "id": "C-ABY-ACA-01",
+   "corpus": "bundle",
+   "container": "aby-tox-acetic-acid",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.13.2025, 2-bo‘lim va 3.1-band"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "fc61ae5ef125fccb",
+   "text": "Sirka kislotasi suv bug‘i bilan haydab ajratiladi (ABY): 100 g ob’ekt distillangan suv bilan quyuq bo‘tqa qilinib yumaloq tubli kolbaga (hajmning 1/3 gacha) solinadi, 10 % sulfat kislota bilan pH 2–3 gacha nordonlashtiri"
+  },
+  {
+   "id": "C-ABY-PHT-01",
+   "corpus": "bundle",
+   "container": "aby-tox-phenothiazines",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.17.2025, 2.1 va 2.2-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "c6b4b2c603900727",
+   "text": "Fenotiazinlarni siydikda dastlabki aniqlash (ABY): 1 ml siydikka 10 % sulfat kislota (60 ml) va 5 % temir (III) xlorid (20 ml) aralashmasidan 1 ml qo‘shilganda to‘q-qizil rang; ikkinchi usulda 5 % temir (III) xlorid (5 m"
+  },
+  {
+   "id": "C-ABY-PHT-02",
+   "corpus": "bundle",
+   "container": "aby-tox-phenothiazines",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.17.2025, 2.3-band, 1- va 2-jadvallar, 3.2-band"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "046bc983d30f5c13",
+   "text": "Fenotiazinlarning quruq qoldiqdagi rang reaksiyalari (ABY, nomlar ABYdagidek): kons. H₂SO₄ — aminazin, diprazin, levomepromazin va etaperazinda to‘q-qizil, triftazinda qizil; kons. HNO₃ — aminazin va levomepromazinda to‘"
+  },
+  {
+   "id": "C-ABY-NH3-01",
+   "corpus": "bundle",
+   "container": "aby-tox-ammonia",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.19.2025, 2.1 va 3.1–3.3-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "26c97a871bb5a5b1",
+   "text": "Ammiak biologik ob’ektdan suv bilan dializ yo‘li bilan ajratiladi (ABY): 100 g mayda ichki a’zo, 2–3 l li kristallizatorning 1/3 qismigacha tozalangan suv solinadi; ichiga tagi kesilgan, tagi pergament qog‘ozi bilan o‘ra"
+  },
+  {
+   "id": "C-ABY-NH3-02",
+   "corpus": "bundle",
+   "container": "aby-tox-ammonia",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.19.2025, 4-bo‘lim «Tahlil. Izohlash»; ABY.G.22.2025, 5.4–5.5-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "2489b1a956f891b3",
+   "text": "Chirish jarayonida ob’ektda ammiak va vodorod sulfid hosil bo‘ladi, shuning uchun ammiak topilishi o‘z-o‘zidan zaharlanishni isbotlamaydi. ABY bo‘yicha ammiakni tekshirishdan oldin ob’ekt vodorod sulfidga tekshiriladi: v"
+  },
+  {
+   "id": "C-ABY-VOL-01",
+   "corpus": "bundle",
+   "container": "aby-tox-isolation-methods",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.3.2025, «Tahlil. Izohlash. Hujjatlashtirish»"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "35034f20e6e8e7db",
+   "text": "Uchuvchi zaharlar guruhini tekshirishda ABY quyidagilarga e’tibor berishni talab qiladi: ob’ekt hidi (izoamil spirti — spirt tozalash moyining hidi; nitrobenzol va sinil kislota — achchiq bodom hidi) va distillyatning ta"
+  },
+  {
+   "id": "C-ABY-VOL-02",
+   "corpus": "bundle",
+   "container": "aby-tox-isolation-methods",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.21.2025, 2-bo‘lim va 4.1-band; ABY.G.4.2025, «Jarayonni olib borish tartibi» va «Tahlil»"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "3919601be91948d7",
+   "text": "Chirigan biologik ob’ektlardan organik zaharlarni oksalat kislota bilan nordonlashtirilgan 96 % etanol yordamida ajratish (Stass–Otto usuli, ABY): 100 g maydalangan ob’ekt etanol bilan qoplanib, 10 % spirtli oksalat kisl"
+  },
+  {
+   "id": "C-ABY-DIA-01",
+   "corpus": "bundle",
+   "container": "aby-tox-isolation-methods",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.22.2025, 4.1-band va 5.1–5.3-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "f11830f49be9d5c4",
+   "text": "Dializ usuli mineral kislotalar (sulfat, nitrat, xlorid), ishqorlar (natriy, kaliy, ammiak) va ayrim tuzlar (kaliy xlorat, nitrit va nitratlar) ni suvda yaxshi erishiga asoslanib ajratadi (ABY). Tekshiriladigan ob’ektlar"
+  },
+  {
+   "id": "C-ABY-DIA-02",
+   "corpus": "bundle",
+   "container": "aby-tox-isolation-methods",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.22.2025, 4.2–4.10-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "7367e1a2b6c5945d",
+   "text": "Dializatda aniqlash reaksiyalari (ABY). Sulfat kislota: bariy xlorid — nitrat va xlorid kislotada hamda ishqorda erimaydigan oq cho‘kma; qo‘rg‘oshin asetat — nitrat kislotada erimaydigan, ammoniy asetatda qizdirilganda e"
+  },
+  {
+   "id": "C-ABY-CBZ-01",
+   "corpus": "bundle",
+   "container": "carbamazepine",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.25.2025, «Jarayonni olib borish», 1–4-bandlar va 1-jadval"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "4a55550ae8f2a188",
+   "text": "Karbamazepin va metabolitlarini ajratish va TLC (ABY): qon 20 (10) ml — pH 9–10 gacha 30 % NaOH yoki pH 2–2,5 gacha 50 % oksalat kislota bilan, 2–3 marta 20 ml xloroformda 2–3 daqiqadan chayqatiladi; siydik 20 ml — pH 2–"
+  },
+  {
+   "id": "C-ABY-CBZ-02",
+   "corpus": "bundle",
+   "container": "carbamazepine",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.25.2025, «Tahlil. Izohlash. Hujjatlashtirish»"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "a45ab680eeb82022",
+   "text": "ABY farmakokinetikasi bo‘yicha karbamazepin ichga qabul qilinganda deyarli to‘liq so‘riladi, plazma oqsillari bilan 75 % bog‘lanadi; bir martalik dozadan so‘ng o‘zgarmagan moddaning cho‘qqi konsentratsiyasiga 4–10 soatda"
+  },
+  {
+   "id": "C-ABY-AMI-01",
+   "corpus": "bundle",
+   "container": "amitriptyline",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.23.2025, 2-bo‘lim (ajratish va TLC), 1- va 1a-jadvallar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "f3321ab7dbf82974",
+   "text": "Amitriptilinni ajratish va TLC (ABY): 5 ml qon (amaliyotda 10 ml olish ehtimolni oshirishi qayd etilgan) yoki 50 ml siydik pH 9–10 gacha 30 % NaOH bilan ishqoriy qilinib, efir (xloroform) bilan 2–3 marta 20 ml dan ekstra"
+  },
+  {
+   "id": "C-ABY-AMI-02",
+   "corpus": "bundle",
+   "container": "amitriptyline",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.G.23.2025, 3.1–3.2-bandlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "5658cba591b6b943",
+   "text": "ABY amitriptilin haqida: narkotik, psixotrop va uyqu chaqiruvchi moddalar ta’sirini kuchaytiradi va uzaytiradi; organizmga tez so‘riladi, plazma oqsillari bilan 33–62 % bog‘lanadi, asosan jigarda metabolizmga uchraydi; q"
+  },
+  {
+   "id": "C-ABY-SUP-01",
+   "corpus": "bundle",
+   "container": "aby-fm-supravital",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.A.17.2025, «Ko‘z rangdor pardasi mushaklarining kimyoviy moddalarga reaksiyasi»"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "08a9cbddcf5f6d59",
+   "text": "Supravital reaksiyalar o‘lim vaqtini aniqlashda postmortal davrning dastlabki 20 soatiga qadar qo‘shimcha usul sifatida qo‘llanadi (ABY). Qorachiq reaksiyasi: qorachiq diametri o‘lchanadi; ingichka in’eksion igna shoxpar"
+  },
+  {
+   "id": "C-ABY-SUP-02",
+   "corpus": "bundle",
+   "container": "aby-fm-supravital",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.A.17.2025, mushaklarning mexanik va elektr ta’siriga reaksiyalari, ter bezlari reaksiyasi"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "4c97e91a385e451b",
+   "text": "Mushaklarning mexanik ta’siriga reaksiyasi (ABY): nevrologik bolg‘acha yoki shunga o‘xshash predmet bilan ko‘rsatilgan sohalarga urilganda dastlabki 2–3 soatda mushak qisqarishi (masalan, trapetsiyasimon mushak qisqarib "
+  },
+  {
+   "id": "C-ABY-STR-01",
+   "corpus": "bundle",
+   "container": "aby-fm-strangulation",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.A.20.2025, tartib bandlari"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "f758444ab16a9858",
+   "text": "Strangulyatsion egatni tavsiflash tartibi (ABY): egatning umumiy ko‘rinishi masshtabli suratga olinadi; bo‘yinda joylashuvi anatomik qismlarga nisbatan ko‘rsatiladi; yon tomonlarda egat yuqori qirrasidan so‘rg‘ichsimon o"
+  },
+  {
+   "id": "C-ABY-STR-02",
+   "corpus": "bundle",
+   "container": "aby-fm-strangulation",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.A.21.2025, tartib bandlari; ABY.A.16.2025, tartib bandlari (E.S. Mishin, 1986)"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "ff231d025f123ad0",
+   "text": "Strangulyatsion asfiksiyada bo‘yin a’zolarini tekshirish (ABY). Egat yaqqol bo‘lsa, terida kesma o‘rta chiziq bo‘ylab iyak ostidan boshlanadi; egat juda sust bo‘lsa, bo‘yin quyi uchligida yoqasimon kesma o‘tkaziladi. Ter"
+  },
+  {
+   "id": "C-ABY-STR-03",
+   "corpus": "bundle",
+   "container": "aby-fm-strangulation",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.A.22.2025, tartib bandlari (N.S. Bokarius sinamasi)"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "41a3da758011b6f1",
+   "text": "Egat zararlanishining hayotiyligini aniqlash — Bokarius sinamasi (ABY): strangulyatsion egatdan uning zararlanmagan yuqori va pastki sohalarini ham qamrab oluvchi teri va teri osti to‘qimasi bo‘lakchasi kesib olinadi; te"
+  },
+  {
+   "id": "C-ABY-NB-01",
+   "corpus": "bundle",
+   "container": "aby-fm-newborn",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.A.29.2025, tartib bandlari (Galen–Shreyer sinamasi)"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "15aac1f0bf5b87d5",
+   "text": "O‘pka suzish sinamasi (ABY): havo tutgan (nafas olgan) chaqaloq o‘pkasining solishtirma og‘irligi birdan past, shuning uchun suvda qalqib chiqadi; nafas olmagan o‘pka cho‘kadi. Tartib: ko‘krak qafasi ochilishidan oldin t"
+  },
+  {
+   "id": "C-ABY-NB-02",
+   "corpus": "bundle",
+   "container": "aby-fm-newborn",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.A.30.2025, tartib bandlari (Breslau sinamasi); ABY.A.27.2025, tartib bandlari (Dillon sinamasi)"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "d72580dceec5f887",
+   "text": "Oshqozon-ichak suzish sinamasi (Breslau, ABY): qorin a’zolarini ajratishdan oldin oshqozonning kirish va chiqish joyiga, ichakning to‘rt joyiga va to‘g‘ri ichak quyi uchligiga ligatura qo‘yiladi, ajratilgan oshqozon va i"
+  },
+  {
+   "id": "C-ABY-AUT-01",
+   "corpus": "bundle",
+   "container": "aby-fm-autopsy-technique",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.A.10.2025, tartib bandlari (Sunsov sinamasi)"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "63057fd424ef7b77",
+   "text": "Havo (gaz) emboliyasi sinamasi — Sunsov sinamasi (ABY): ichki tekshiruv ko‘krak-qorin bo‘shlig‘idan boshlanadi, teri kesmasi bo‘yindan emas, balki to‘sh suyagi dastasi sohasidan ochiladi; to‘sh suyagi ikkinchi qovurg‘a b"
+  },
+  {
+   "id": "C-ABY-AUT-02",
+   "corpus": "bundle",
+   "container": "aby-fm-autopsy-technique",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.A.19.2025, tartib bandlari"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "face4bd646ddfe19",
+   "text": "Murdada suyaklar sinishini tavsiflash (ABY): sinish sohasi yumshoq to‘qimadan to‘liq tozalanadi; joylashuvi anatomik tuzilishga ko‘ra aniq ko‘rsatiladi; turi (darz ketish, chiziqli, darchasimon, parchalangan va h.k.); yo"
+  },
+  {
+   "id": "C-ABY-AUT-03",
+   "corpus": "bundle",
+   "container": "aby-fm-autopsy-technique",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.A.23.2025, tartib bandlari"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "4df8daf1f3d1dfc8",
+   "text": "Murdani topilgan joyida sirtdan ko‘zdan kechirish (ABY): hodisa joyi va murdani ko‘zdan kechirishni JPK talablariga binoan tergov organlari o‘tkazadi, jalb qilingan vrach-mutaxassis (sud-tibbiy ekspert) murdani sirtdan t"
+  },
+  {
+   "id": "C-ABY-LIV-01",
+   "corpus": "bundle",
+   "container": "aby-fm-living-persons",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.B.1.2025, tartib bandlari"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "65ef6c4dcb62b59b",
+   "text": "Tirik shaxs ekspertizasi tartibi (ABY): qaror yoki ajrim bilan tanishib, maqsad va vazifalarga ko‘ra reja tuziladi; ekspertizadan o‘tayotgan shaxs hujjat asosida tasdiqlanadi (hujjat bo‘lmasa ekspertiza tayinlagan organ "
+  },
+  {
+   "id": "C-ABY-LIV-02",
+   "corpus": "bundle",
+   "container": "aby-fm-living-persons",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.B.2.2025, tartib bandlari"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "85019f90b577e93a",
+   "text": "Jarohat va uning izlarini tasvirlash (ABY): joylashuvi umumqabul qilingan ikki anatomik nuqta yoki chiziqqa nisbatan masofa bilan ko‘rsatiladi; turi (shilinma, qontalash, chandiq va h.k.); ajralmalar va xususiyatlari; sh"
+  },
+  {
+   "id": "C-ABY-LIV-03",
+   "corpus": "bundle",
+   "container": "aby-fm-living-persons",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.B.3.2025, tartib bandlari"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "3c7e59474483e654",
+   "text": "Jinsiy yetuklikni aniqlash (ABY): zaruriyat 14–18 yosh oralig‘ida paydo bo‘ladi, chunki 14 yoshga yetmaganlar fiziologik jihatdan yetuk emas deb hisoblanadi, 18 yoshda esa nikoh yoshiga yetiladi. Tartib: ambulator va sta"
+  },
+  {
+   "id": "C-ABY-COM-01",
+   "corpus": "bundle",
+   "container": "aby-fm-repeat-commission",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.C.1.2025, tartib bandlari"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "f154e020e27d4f1a",
+   "text": "Takroriy, komission va kompleks ekspertizalar tartibi (ABY): qaror va unga ilova ob’ektlar qayd etiladi, to‘liqligi va yaroqliligi tekshiriladi; to‘liq yoki yaroqli bo‘lmasa, ekspertiza tayinlagan organga xabar berilib i"
+  },
+  {
+   "id": "C-ABY-COM-02",
+   "corpus": "bundle",
+   "container": "aby-fm-repeat-commission",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.C.4.2025, tartib bandlari"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "114d53fbf01bc996",
+   "text": "Tibbiy yordam ko‘rsatishdagi nuqsonlarni aniqlash (ABY): nuqsonning bosqichi; turi (profilaktik, tashkiliy, diagnostik, davolash, aralash va h.k.); nuqsonga olib kelgan shart-sharoit, jumladan tibbiyot xodimining harakat"
+  },
+  {
+   "id": "C-ABY-CLO-01",
+   "corpus": "bundle",
+   "container": "aby-fm-clothing-gunshot",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.F.7.2025, 4-bo‘lim «Amal»"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "1c7e28623148f99d",
+   "text": "Kiyimdagi jarohatlarni tavsiflash (ABY): quruq qon tufayli jarohat sohasi mato deformatsiyalangan bo‘lsa, shu soha suv bo‘yalmay qolguncha almashtirib turib suvga solinadi va quritiladi. Kiyim yuqoridan pastga, fasoni, m"
+  },
+  {
+   "id": "C-ABY-CLO-02",
+   "corpus": "bundle",
+   "container": "aby-fm-clothing-gunshot",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.F.8.2025, 2- va 4-bo‘limlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "24825bf7f88ccd25",
+   "text": "O‘q-otar jarohat va elektrotamg‘alarni kontakt-diffuzion usulda tekshirish (ABY): fiksatsiyalangan, yuvilgan, quritilgan oddiy glyansli fotoqog‘oz erituvchi reaktivga shimdiriladi: ammiakning 12 % eritmasi (mis, nikel, k"
+  },
+  {
+   "id": "C-ABY-MCL-01",
+   "corpus": "bundle",
+   "container": "aby-fm-medcrim-lab",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.F.1.2025, 5-bo‘lim «Amal»"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "e5c9fe99c332455a",
+   "text": "Tibbiy-kriminalistika bo‘limiga ashyoviy dalillarni qabul qilish (ABY): ekspertiza sud-tergov idorasining qarori yoki ajrimi bilan, tekshiruv esa markazning boshqa bo‘linmasidagi ekspert yo‘llanmasi bilan boshlanadi. Dal"
+  },
+  {
+   "id": "C-ABY-MCL-02",
+   "corpus": "bundle",
+   "container": "aby-fm-medcrim-lab",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.F.2.2025, 5-bo‘lim «Amal», 6-band"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "aadf49d4a162750a",
+   "text": "Tibbiy-kriminalistika bo‘limida saqlash (ABY): hujjatlar alohida papkada seyf yoki qulflanadigan metall shkafda, ish vaqti tugagach bo‘lim muhri bilan muhrlanadi (har bir ekspertga alohida shkaf); sovuq va o‘q-otar qurol"
+  },
+  {
+   "id": "C-ABY-PRP-01",
+   "corpus": "bundle",
+   "container": "aby-fm-medcrim-lab",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.F.4.2025, 4-bo‘lim «Amal»"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "6c23b4b677d7c0ae",
+   "text": "Suyak qoldiqlarini tekshiruvga tayyorlash (ABY), maqsadga qarab: (a) yumshoq to‘qimalar o‘ta chiriganda suyaklar oqar suvda yuviladi, qoldiq mexanik olib tashlanadi, xona haroratida quritiladi; (b) jarohatlarni tekshiris"
+  },
+  {
+   "id": "C-ABY-PRP-02",
+   "corpus": "bundle",
+   "container": "aby-fm-medcrim-lab",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.F.5.2025, 3- va 4-bo‘limlar"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "a8b36d5e9625c257",
+   "text": "Teri laxtagini tekshiruvga tayyorlash (ABY, Ratnevskiy eritmalari): 1-raqamli eritma — 10 ml kons. sirka kislota, 20 ml etanol va distillangan suv bilan 100 ml gacha. Teri osti yog‘i mexanik olib tashlanadi, laxtak qurit"
+  },
+  {
+   "id": "C-ABY-PRP-03",
+   "corpus": "bundle",
+   "container": "aby-fm-medcrim-lab",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.F.6.2025, 4-bo‘lim «Amal»"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "6bdb59ef474a12d6",
+   "text": "Bo‘yin organokompleksini tekshiruvga tayyorlash (ABY): rentgenologik tekshiruvdan keyin yumshoq to‘qimalarni olish osonlashishi uchun kompleks 10–12 % formalinda 24 soat saqlanadi, so‘ng yumshoq to‘qimalar mexanik tozala"
+  },
+  {
+   "id": "C-ABY-SEX-01",
+   "corpus": "bundle",
+   "container": "aby-fm-bone-sex",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.F.9.2025, 3-bo‘lim «Amal»"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "0b79564a292be091",
+   "text": "To‘sh suyagi bo‘yicha jinsni aniqlash (ABY, Dyurvald, 1960): o‘rta chiziq bo‘ylab xanjarsimon o‘siqsiz umumiy uzunlik, 2- va 3-qovurg‘a o‘yig‘i orasidagi kenglik, 3- va 4-qovurg‘a o‘yig‘i orasidagi kenglik, dastaning eng"
+  },
+  {
+   "id": "C-ABY-SEX-02",
+   "corpus": "bundle",
+   "container": "aby-fm-bone-sex",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.F.10.2025, 3-bo‘lim «Amal»"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "42392d08229bc1fd",
+   "text": "O‘mrov suyagi bo‘yicha jinsni aniqlash (ABY, Z.L. Laptev, 1975): diafiz kengligi, egrilik kattaligi, yelka tomoni oxiri kengligi va umumiy uzunlik qo‘shilib jins ko‘rsatkichi (JK) olinadi; o‘ng va chap suyak alohida baho"
+  },
+  {
+   "id": "C-ABY-SEX-03",
+   "corpus": "bundle",
+   "container": "aby-fm-bone-sex",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.F.11.2025, 3-bo‘lim «Amal», jadval; ABY.F.12.2025, 3-bo‘lim"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "8f9f608484247a26",
+   "text": "Kurak suyagi bo‘yicha jinsni aniqlash (ABY, L.A. Koshelev, 1971): 11 ta o‘lcham (balandlik, kenglik, lateral va yuqori chekka uzunligi, qirra usti va osti chuqurchalari kengligi, qirra, yelka o‘sig‘i, tumshuqsimon o‘siq,"
+  },
+  {
+   "id": "C-ABY-SEX-04",
+   "corpus": "bundle",
+   "container": "aby-fm-bone-sex",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.F.14.2025, 3-bo‘lim «Amal»"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "340df3b10cf406b3",
+   "text": "Tos suyaklari bo‘yicha jinsni aniqlash (ABY, K. Garmus, 1991): tos tuzilishidagi 20 ta sifat belgisi (kichik tosga kirish konturi, qov burchagi, qov do‘ngligi, chanoq teshigi shakli, o‘tirg‘ich o‘sig‘i, quloq suprasi old"
+  },
+  {
+   "id": "C-ABY-SEX-05",
+   "corpus": "bundle",
+   "container": "aby-fm-bone-sex",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.F.16.2025, 3-bo‘lim «Amal», 3.2–3.3-bandlar (V.N. Zvyagin)"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "3b929028e592c5cb",
+   "text": "Bosh suyaklari bo‘yicha jinsni aniqlash (ABY, V.N. Zvyagin, 1984): bosh suyagining 40 ta asosiy sifat belgisi (peshona, tepa, ensa, asosiy, chakka suyaklari, yuz va pastki jag‘ belgilari) erkak/ayol uchun «+» va «−» bila"
+  },
+  {
+   "id": "C-ABY-AGE-01",
+   "corpus": "bundle",
+   "container": "aby-fm-bone-age",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.F.17.2025, 3-bo‘lim (M.M. Gerasimov, 1955); ABY.F.22.2025, 3-bo‘lim"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "5cfa426028dfeb38",
+   "text": "Tishlar bo‘yicha yosh (ABY). Yuqori jag‘ tishlarining yeyilishi (Gerasimov) 0–6 balli shkalada baholanadi (0 — yeyilish yo‘q, 1 — faqat emal, 2 — do‘ngliklar, 3 — dentin, 4 — tish kanali, 5 — toj qismigacha, 6 — toj to‘l"
+  },
+  {
+   "id": "C-ABY-AGE-02",
+   "corpus": "bundle",
+   "container": "aby-fm-bone-age",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.F.18.2025, 3-bo‘lim (Hansen jadvali); ABY.F.19.2025, 3-bo‘lim (Hansen jadvali)"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "8ec9da1a457ce386",
+   "text": "Yelka va son suyagi proksimal uchi bo‘yicha yosh (ABY, Hansen, 1953–1954): suyak proksimal qismi frontal yo‘nalishda arralanib, epifizar chiziq, kompakt va g‘ovak qavatlar, to‘sin tizimi baholanadi; suyak ko‘migi bo‘shli"
+  },
+  {
+   "id": "C-ABY-AGE-03",
+   "corpus": "bundle",
+   "container": "aby-fm-bone-age",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.F.20.2025, 3-bo‘lim (V.N. Zvyagin, 1983)"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "45ebd06e69a9c618",
+   "text": "Bolalar bosh suyagi qalinligi bo‘yicha yosh (ABY): choklar bo‘ylab markerda 6 ta doimiy nuqta belgilanadi — A (peshona suyagi o‘ng toj chokining o‘rta qismi), B (chakka suyagi o‘ng toj chokining o‘rta qismi), V (o‘ng tep"
+  },
+  {
+   "id": "C-ABY-AGE-04",
+   "corpus": "bundle",
+   "container": "aby-fm-bone-age",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.F.21.2025, 3-bo‘lim (A.K. Garmus, 1988)"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "a2eb68eaefcce3f8",
+   "text": "Qov birikmasi bo‘yicha yosh (ABY): simfizdagi yosh o‘zgarishlari 5 guruh bo‘yicha ballanadi — A (bo‘g‘im yuzasi, 1–7 ball: chuqur gorizontal chiziqlardan eroziya va ekzostozlargacha), B (old qirra, 1–7), C (orqa qirra, 1"
+  },
+  {
+   "id": "C-ABY-AGE-05",
+   "corpus": "bundle",
+   "container": "aby-fm-bone-age",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.F.23.2025, 3-bo‘lim (V.N. Zvyagin, 1975)"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "f550685938dcadc0",
+   "text": "Bosh suyagi choklarining bitishi bo‘yicha yosh (ABY): avval bosh suyagi jinsi va shakli (dolixokran, mezokran, braxikran; ko‘ndalang o‘lcham·100 / bo‘ylama o‘lcham) aniqlanadi; gumbaz choklari 16 qismga bo‘linadi (toj — "
+  },
+  {
+   "id": "C-ABY-AGE-06",
+   "corpus": "bundle",
+   "container": "aby-fm-bone-age",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.F.47.2025, «Natijalarni baholash», to‘sh suyagi va yelka kamari bo‘limlari"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "731c41034f14d352",
+   "text": "To‘sh suyagi va yelka kamarining yoshga xos rentgenologik o‘zgarishlari (ABY). To‘sh suyagi: suyaklanish homila ichi rivojlanishining 5–6 oyidan boshlanadi; yangi tug‘ilganda 4 tadan 13 tagacha suyaklanish markazi (1–2 t"
+  },
+  {
+   "id": "C-ABY-STA-01",
+   "corpus": "bundle",
+   "container": "aby-fm-bone-stature",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.F.24.2025, 3-bo‘lim (Manuvrie, 1892)"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "312db955e0b6766c",
+   "text": "Naysimon suyaklar bo‘yicha bo‘y (Manuvrie, ABY): suyak uzunligi (mm) santimetrli lenta va Brok taxtachasida o‘lchanib, erkaklar va ayollar uchun alohida jadvaldan (son, katta va kichik boldir, yelka, bilak, tirsak suyakl"
+  },
+  {
+   "id": "C-ABY-STA-02",
+   "corpus": "bundle",
+   "container": "aby-fm-bone-stature",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.F.25.2025, 3-bo‘lim (Pirson, 1889)"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "7eba838a666bf8f5",
+   "text": "Pirson formulalari bo‘yicha bo‘y (ABY), yangi suyaklar uchun, S — bo‘y, F — son, H — yelka, T — katta boldir, R — bilak suyagi uzunligi. Erkaklar: S = 81,231 + 1,880·F; S = 70,714 + 2,894·H; S = 78,807 + 2,376·T; S = 86,"
+  },
+  {
+   "id": "C-ABY-STA-03",
+   "corpus": "bundle",
+   "container": "aby-fm-bone-stature",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.F.26.2025, 3-bo‘lim va izoh (Rolle, 1888)"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "1478ce1283dc0563",
+   "text": "Rolle usuli bo‘yicha bo‘y (ABY): suyak uzunligi (mm) jadvaldagi erkaklar yoki ayollar qatoriga mos bo‘y (sm) bilan solishtiriladi (erkaklar jadvali 152–180 sm, ayollar 140–172 sm). Jadval yangi suyaklarga tegishli bo‘lga"
+  },
+  {
+   "id": "C-ABY-ID-01",
+   "corpus": "bundle",
+   "container": "aby-fm-photo-identification",
+   "sources": [
+    {
+     "key": "SRC-ABY-2025",
+     "locators": [
+      "ABY.F.27.2025, 3-bo‘lim (AGI-1); ABY.F.28.2025, 3-bo‘lim (AGI-4)"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "7f2617ee03cbff0c",
+   "text": "Grafik identifikatsion algoritm (AGI, Elbur R.E., 1965) bo‘yicha noma’lum murda bosh suyagi (pastki jag‘i bilan) va bedarak yo‘qolgan shaxsning hayotlikdagi surati solishtiriladi (ABY). Avval suratning rakursi aniqlanib,"
+  },
+  {
+   "id": "C-ABYX-BENZIDINE-01",
+   "corpus": "bundle",
+   "container": "aby-bio-blood-presence",
+   "sources": [
+    {
+     "key": "SRC-PM16497705",
+     "locators": [
+      "abstract"
+     ],
+     "level": "abstract"
+    },
+    {
+     "key": "SRC-PM25757908",
+     "locators": [
+      "abstract"
+     ],
+     "level": "abstract"
+    }
+   ],
+   "auto_verdict": "ABSTRACT_ONLY",
+   "verdict": "ABSTRACT_ONLY",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [
+    "source checked at abstract / bibliographic level; no concrete locator"
+   ],
+   "text_sha": "4b34f840f604c9a3",
+   "text": "Xavfsizlik eslatmasi (yo‘riqnomadan emas, xalqaro adabiyotdan). Yo‘riqnomada qon dog‘ini aniqlash reaksiyalarida benzidin ishlatiladi. Xalqaro adabiyotda benzidin odam uchun kanserogen deb tan olingan: uzoq ta’sirida siy"
+  },
+  {
+   "id": "C-ABYX-FLOAT-01",
+   "corpus": "bundle",
+   "container": "aby-fm-newborn",
+   "sources": [
+    {
+     "key": "SRC-PM22733108",
+     "locators": [
+      "abstract"
+     ],
+     "level": "abstract"
+    },
+    {
+     "key": "SRC-PM31286205",
+     "locators": [
+      "abstract"
+     ],
+     "level": "abstract"
+    }
+   ],
+   "auto_verdict": "ABSTRACT_ONLY",
+   "verdict": "ABSTRACT_ONLY",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [
+    "source checked at abstract / bibliographic level; no concrete locator"
+   ],
+   "text_sha": "1a4ca268197eb926",
+   "text": "Cheklov (yo‘riqnomadan emas, xalqaro adabiyotdan). O‘pka suzish sinamasining ishonchliligi bo‘yicha 208 ta yangi tug‘ilgan chaqaloq o‘pkasi tekshirilgan istiqbolli tadqiqotda natija 98 % holatda kutilganiga mos kelgan; t"
   }
  ]
 }

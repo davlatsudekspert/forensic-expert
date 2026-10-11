@@ -23,26 +23,34 @@ void main() {
   late PilotContent pilot;
   setUpAll(() async => pilot = await loadPilotContent());
 
-  test('paketda: 32 ABY yozuvi, faqat o‘zbekcha, iqtibossiz, bepul', () {
+  test('paketda: 94 ABY yozuvi, faqat o‘zbekcha, iqtibossiz, bepul', () {
     final topics = [
       for (final area in KnowledgeArea.values)
         for (final e in pilot.knowledge.topicsIn(area))
           if (e.id.startsWith('aby-')) e,
     ];
-    expect(topics.length, 19);
+    expect(topics.length, 39);
     final claims = [
       for (final e in topics) ...e.claims,
       // Modda sahifalaridagi ABY yozuvlari (etanol, metanol, CO).
-      for (final id in const ['ethanol', 'methanol', 'carbon-monoxide'])
+      for (final id in const [
+        'ethanol',
+        'methanol',
+        'carbon-monoxide',
+        'amitriptyline',
+        'carbamazepine',
+      ])
         ...?pilot.library
             .byId(id)
             ?.details
             ?.claims
             .where((c) => c.claimId.startsWith('C-ABY-')),
     ];
-    expect(claims.length, 32);
+    expect(claims.length, 94);
     for (final c in claims) {
-      expect(c.claimId, startsWith('C-ABY-'));
+      // `C-ABY-…` — yo‘riqnomadan olingan yozuv; `C-ABYX-…` — uning ustiga
+      // yozilgan, xalqaro manbaga tayangan ekspert eslatmasi.
+      expect(c.claimId, startsWith('C-ABY'));
       // Hech bir yozuvda so‘zma-so‘z iqtibos yo‘q.
       expect(c.excerpt, isNull, reason: c.claimId);
       expect(c.visibleIn('uz'), isTrue, reason: c.claimId);
@@ -50,14 +58,26 @@ void main() {
       expect(c.visibleIn('en'), isFalse, reason: c.claimId);
       // Matn va aniq joyi o‘zbekcha; ABY nomi bilan keltiriladi.
       expect(c.statementFor('uz'), isNotNull, reason: c.claimId);
-      expect(c.locatorFor('uz'), contains('ABY'), reason: c.claimId);
-      expect(c.locatorFor('uz'), contains('.2025'), reason: c.claimId);
+      if (!c.claimId.startsWith('C-ABYX-')) {
+        expect(c.locatorFor('uz'), contains('ABY'), reason: c.claimId);
+        expect(c.locatorFor('uz'), contains('.2025'), reason: c.claimId);
+      }
       expect(c.status, ScientificStatus.needsReview, reason: c.claimId);
-      expect(
-        c.sources.map((s) => s.sourceId),
-        contains('SRC-ABY-2025'),
-        reason: c.claimId,
-      );
+      if (c.claimId.startsWith('C-ABYX-')) {
+        // Ekspert eslatmasi yo‘riqnomaga emas, xalqaro manbaga tayanadi.
+        expect(c.sources, isNotEmpty, reason: c.claimId);
+        expect(
+          c.sources.every((s) => s.sourceId != 'SRC-ABY-2025'),
+          isTrue,
+          reason: c.claimId,
+        );
+      } else {
+        expect(
+          c.sources.map((s) => s.sourceId),
+          contains('SRC-ABY-2025'),
+          reason: c.claimId,
+        );
+      }
     }
     // Mavzular bepul.
     for (final e in topics) {

@@ -27,7 +27,9 @@ Yangilangan: 2026-10-10.
 Minnatdorchilik: Profil → Ilova haqida → **«Manbalar va mualliflar»** (faqat
 o‘zbek tilida): tashkilot, 9 tuzuvchi, 3 taqrizchi va foydalanish izohi.
 
-## Kiritilgan yozuvlar (32 ta da’vo, 19 ta mavzu)
+## Kiritilgan yozuvlar (92 ta da’vo, 39 ta mavzu) + 2 ta ekspert eslatmasi
+
+### 1-to‘plam (2026-10-10): 32 da’vo, 19 mavzu
 
 | Bo‘lim | Amaliyot | Ilovadagi joyi |
 |---|---|---|
@@ -53,7 +55,36 @@ o‘zbek tilida): tashkilot, 9 tuzuvchi, 3 taqrizchi va foydalanish izohi.
 | E.24 | gematoksilin–eozin (Mayer) | `aby-his-staining` |
 | E.31 | diatom-plankton | `aby-his-diatoms` |
 
-Manba: `content/tools/aby_data.py`, builder `content/tools/build_aby_content.py`
+### 2-to‘plam (2026-10-11): 60 da’vo, 20 mavzu
+
+| Bo‘lim | Amaliyotlar | Mazmuni |
+|---|---|---|
+| G.1–G.2 | sulfonilmochevina hosilalari | ajratish, TLC, STDIS |
+| G.3, G.4, G.21, G.22 | uchuvchi zaharlar, Stass–Otto, dializ | ajratish usullari |
+| G.9 | fosfororganik birikmalar | xolinesteraza sinamasi, TLC |
+| G.10, G.11, G.13, G.19 | simob, metallar, sirka kislotasi, ammiak | destruksiya/mineralizatsiya va aniqlash |
+| G.17 | fenotiazinlar | rang reaksiyalari, TLC |
+| G.23, G.25 | amitriptilin, karbamazepin | ajratish, TLC, farmakokinetika |
+| A.10, A.16–A.23, A.27, A.29–A.30 | supravital reaksiyalar, strangulyatsiya, chaqaloq sinamalari, emboliya, sinishlar, voqea joyi | murdani tekshirish |
+| B.1–B.3 | tirik shaxs ekspertizasi tartibi, jarohatni tavsiflash, jinsiy yetuklik | |
+| C.1, C.4 | takroriy/komission ekspertiza, tibbiy yordam nuqsonlari | |
+| F.1–F.8 | dalillarni qabul/saqlash, tayyorlash, kiyim, o‘q-otar iz | |
+| F.9–F.16 | suyaklar bo‘yicha jins | to‘sh, o‘mrov, kurak, tos, bosh suyagi |
+| F.17–F.23, F.47 | yosh | tishlar, epifiz, bosh suyagi, simfiz, choklar, rentgen |
+| F.24–F.26 | bo‘y | Manuvrie, Pirson, Rolle |
+| F.27–F.28 | aynanlik | AGI (grafik identifikatsiya) |
+
+### Ekspert eslatmalari (yo‘riqnomadan emas, xalqaro adabiyotdan)
+
+| ID | Mavzu | Mazmuni |
+|---|---|---|
+| `C-ABYX-BENZIDINE-01` | qon dog‘ini aniqlash | benzidin — odam uchun kanserogen; xavfsizroq alternativalar |
+| `C-ABYX-FLOAT-01` | chaqaloq o‘pka sinamasi | manfiy natija nafas olmaganlikni isbotlamaydi (208 ta o‘pka, 98 %) |
+
+To‘liq ekspert tahlili va taqrizga qoldirilgan fikrlar: `docs/qa/ABY_EXPERT_REVIEW.md`.
+
+Manba: `content/tools/aby_data.py`, `aby_data_b2.py`, `aby_expert_notes.py`;
+builder `content/tools/build_aby_content.py`
 (`build_substance_methods.py` va `build_ethanol_gc_content.py` dan **keyin**
 ishga tushiriladi; `--check` bilan idempotentligi tekshiriladi).
 
@@ -62,7 +93,8 @@ ishga tushiriladi; `--check` bilan idempotentligi tekshiriladi).
 Yo‘riqnomada jami 207 amaliyot: A (murdani tekshirish) 33, B (tirik shaxslar)
 10, C (takroriy/komissiyali/kompleks) 4, D (sud-biologiya) 50,
 E (sud-gistologiya) 37, F (tibbiy kriminalistika) 50, G (sud-kimyo) 23.
-O‘qilib yozuvga aylantirilgani — 26 amaliyot (yuqoridagi jadval).
+O‘qilib yozuvga aylantirilgani — 60 dan ortiq amaliyot (yuqoridagi jadvallar).
+Eslatma: matndagi haqiqiy raqamlash A.1–A.32 va G.1–G.25.
 
 Kiritilmagani:
 - A, B, C va F bo‘limlari butunlay;
