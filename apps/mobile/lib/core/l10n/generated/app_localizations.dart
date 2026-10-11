@@ -15524,6 +15524,144 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count, plural, =0{Nothing is waiting} =1{1 post waiting} other{{count} posts waiting}}'**
   String admNavQaHint(int count);
+
+  /// Link that opens the Q&A community rules screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Community rules'**
+  String get qaRulesOpen;
+
+  /// Title of the Q&A rules screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Community rules'**
+  String get qaRulesTitle;
+
+  /// Opening paragraph of the Q&A rules.
+  ///
+  /// In en, this message translates to:
+  /// **'This section is a professional conversation between forensic practitioners. Two rules decide everything else: no case material, and nothing that works against the law.'**
+  String get qaRulesIntro;
+
+  /// Section header in the Q&A rules.
+  ///
+  /// In en, this message translates to:
+  /// **'What this section is for'**
+  String get qaRulesPurposeTitle;
+
+  /// Body of the purpose section in the Q&A rules.
+  ///
+  /// In en, this message translates to:
+  /// **'Questions about method, reagent, specimen, instrument, interpretation of a result, a standard or a regulation — asked in general terms, the way they would be asked at a conference, not about a particular case.'**
+  String get qaRulesPurposeBody;
+
+  /// Section header in the Q&A rules.
+  ///
+  /// In en, this message translates to:
+  /// **'How to ask well'**
+  String get qaRulesGoodTitle;
+
+  /// First item in the how-to-ask list.
+  ///
+  /// In en, this message translates to:
+  /// **'Name the substance, the method and the specimen type. Without them an answer is guesswork.'**
+  String get qaRulesGood1;
+
+  /// Second item in the how-to-ask list.
+  ///
+  /// In en, this message translates to:
+  /// **'Say what you already tried and where exactly you got stuck.'**
+  String get qaRulesGood2;
+
+  /// Third item in the how-to-ask list.
+  ///
+  /// In en, this message translates to:
+  /// **'Write numbers with their units, and say which guideline or edition you are working from.'**
+  String get qaRulesGood3;
+
+  /// Fourth item in the how-to-ask list.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose the topics, so the right specialists see the question.'**
+  String get qaRulesGood4;
+
+  /// Section header in the Q&A rules.
+  ///
+  /// In en, this message translates to:
+  /// **'Never write this'**
+  String get qaRulesForbiddenTitle;
+
+  /// First item in the forbidden list of the Q&A rules.
+  ///
+  /// In en, this message translates to:
+  /// **'Case material: a case or examination number, a person\'s name, an address, a date together with a place, a photograph, or anything else by which someone could be identified.'**
+  String get qaRulesForbidden1;
+
+  /// Second item in the forbidden list.
+  ///
+  /// In en, this message translates to:
+  /// **'Material from an examination in progress, or a draft opinion.'**
+  String get qaRulesForbidden2;
+
+  /// Third item in the forbidden list — tampering with results.
+  ///
+  /// In en, this message translates to:
+  /// **'Anything aimed at bending a result: how to make a conclusion come out a particular way, how to alter or hide a finding, how to backdate or forge a document, how to make evidence disappear.'**
+  String get qaRulesForbidden3;
+
+  /// Fourth item in the forbidden list — harm and evasion.
+  ///
+  /// In en, this message translates to:
+  /// **'How to obtain, make, conceal or use a substance in order to harm someone or to avoid detection.'**
+  String get qaRulesForbidden4;
+
+  /// Fifth item in the forbidden list — advice.
+  ///
+  /// In en, this message translates to:
+  /// **'Legal advice, a diagnosis, a treatment or a dose for a particular person. This section is not a consultation.'**
+  String get qaRulesForbidden5;
+
+  /// Sixth item in the forbidden list.
+  ///
+  /// In en, this message translates to:
+  /// **'Advertising, spam, and anything insulting to a colleague.'**
+  String get qaRulesForbidden6;
+
+  /// Section header in the Q&A rules.
+  ///
+  /// In en, this message translates to:
+  /// **'Answering'**
+  String get qaRulesAnswerTitle;
+
+  /// First item in the answering section.
+  ///
+  /// In en, this message translates to:
+  /// **'Only verified specialists may answer, and only within what they actually practise.'**
+  String get qaRulesAnswer1;
+
+  /// Second item in the answering section.
+  ///
+  /// In en, this message translates to:
+  /// **'Lean on a source and name it. Where you are guessing, say that you are guessing.'**
+  String get qaRulesAnswer2;
+
+  /// Third item in the answering section.
+  ///
+  /// In en, this message translates to:
+  /// **'An answer here is a colleague\'s opinion. It is not an expert opinion for a case file and cannot be cited as one.'**
+  String get qaRulesAnswer3;
+
+  /// Section header in the Q&A rules.
+  ///
+  /// In en, this message translates to:
+  /// **'What happens if a rule is broken'**
+  String get qaRulesEnforceTitle;
+
+  /// Body of the enforcement section in the Q&A rules.
+  ///
+  /// In en, this message translates to:
+  /// **'Text that looks like case material is held for review automatically. Reports from three different users hide a post, or suspend a specialist badge, until an administrator decides. A post that works against the law is removed and the badge goes with it.'**
+  String get qaRulesEnforceBody;
 }
 
 class _AppLocalizationsDelegate

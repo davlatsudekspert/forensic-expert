@@ -42,6 +42,12 @@ class _QaFeedScreenState extends ConsumerState<QaFeedScreen> {
           title: Text(l.qaTitle),
           actions: [
             IconButton(
+              key: const Key('qa.rules'),
+              tooltip: l.qaRulesOpen,
+              icon: const Icon(Icons.menu_book_outlined),
+              onPressed: () => context.push(Routes.qaRules),
+            ),
+            IconButton(
               key: const Key('qa.mine'),
               tooltip: l.qaOpenMine,
               icon: const Icon(Icons.folder_shared_outlined),

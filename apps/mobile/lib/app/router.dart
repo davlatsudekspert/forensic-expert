@@ -66,6 +66,7 @@ import '../features/qa/presentation/qa_feed_screen.dart';
 import '../features/qa/presentation/qa_mine_screen.dart';
 import '../features/qa/presentation/qa_moderation_screen.dart';
 import '../features/qa/presentation/qa_question_screen.dart';
+import '../features/qa/presentation/qa_rules_screen.dart';
 import '../features/qa/presentation/qa_verify_screen.dart';
 import '../features/referral/presentation/referral_screen.dart';
 import '../features/shell/presentation/app_shell.dart';
@@ -550,6 +551,10 @@ final routerProvider = Provider<GoRouter>((ref) {
                       GoRoute(
                         path: 'ask',
                         builder: (c, s) => const QaAskScreen(),
+                      ),
+                      GoRoute(
+                        path: 'rules',
+                        builder: (c, s) => const QaRulesScreen(),
                       ),
                       GoRoute(
                         path: 'mine',

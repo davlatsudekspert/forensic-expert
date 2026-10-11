@@ -95,6 +95,15 @@ class _QaAskScreenState extends ConsumerState<QaAskScreen> {
                       key: const Key('qa.noImages'),
                       style: Theme.of(context).textTheme.bodySmall,
                     ),
+                    Align(
+                      alignment: AlignmentDirectional.centerStart,
+                      child: TextButton.icon(
+                        key: const Key('qa.ask.rules'),
+                        onPressed: () => context.push(Routes.qaRules),
+                        icon: const Icon(Icons.menu_book_outlined, size: 18),
+                        label: Text(l.qaRulesOpen),
+                      ),
+                    ),
                     const SizedBox(height: FeSpace.md),
                     TextField(
                       onTapOutside: (_) => FocusScope.of(context).unfocus(),

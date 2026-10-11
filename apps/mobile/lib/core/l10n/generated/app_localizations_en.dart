@@ -8924,4 +8924,89 @@ class AppLocalizationsEn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get qaRulesOpen => 'Community rules';
+
+  @override
+  String get qaRulesTitle => 'Community rules';
+
+  @override
+  String get qaRulesIntro =>
+      'This section is a professional conversation between forensic practitioners. Two rules decide everything else: no case material, and nothing that works against the law.';
+
+  @override
+  String get qaRulesPurposeTitle => 'What this section is for';
+
+  @override
+  String get qaRulesPurposeBody =>
+      'Questions about method, reagent, specimen, instrument, interpretation of a result, a standard or a regulation — asked in general terms, the way they would be asked at a conference, not about a particular case.';
+
+  @override
+  String get qaRulesGoodTitle => 'How to ask well';
+
+  @override
+  String get qaRulesGood1 =>
+      'Name the substance, the method and the specimen type. Without them an answer is guesswork.';
+
+  @override
+  String get qaRulesGood2 =>
+      'Say what you already tried and where exactly you got stuck.';
+
+  @override
+  String get qaRulesGood3 =>
+      'Write numbers with their units, and say which guideline or edition you are working from.';
+
+  @override
+  String get qaRulesGood4 =>
+      'Choose the topics, so the right specialists see the question.';
+
+  @override
+  String get qaRulesForbiddenTitle => 'Never write this';
+
+  @override
+  String get qaRulesForbidden1 =>
+      'Case material: a case or examination number, a person\'s name, an address, a date together with a place, a photograph, or anything else by which someone could be identified.';
+
+  @override
+  String get qaRulesForbidden2 =>
+      'Material from an examination in progress, or a draft opinion.';
+
+  @override
+  String get qaRulesForbidden3 =>
+      'Anything aimed at bending a result: how to make a conclusion come out a particular way, how to alter or hide a finding, how to backdate or forge a document, how to make evidence disappear.';
+
+  @override
+  String get qaRulesForbidden4 =>
+      'How to obtain, make, conceal or use a substance in order to harm someone or to avoid detection.';
+
+  @override
+  String get qaRulesForbidden5 =>
+      'Legal advice, a diagnosis, a treatment or a dose for a particular person. This section is not a consultation.';
+
+  @override
+  String get qaRulesForbidden6 =>
+      'Advertising, spam, and anything insulting to a colleague.';
+
+  @override
+  String get qaRulesAnswerTitle => 'Answering';
+
+  @override
+  String get qaRulesAnswer1 =>
+      'Only verified specialists may answer, and only within what they actually practise.';
+
+  @override
+  String get qaRulesAnswer2 =>
+      'Lean on a source and name it. Where you are guessing, say that you are guessing.';
+
+  @override
+  String get qaRulesAnswer3 =>
+      'An answer here is a colleague\'s opinion. It is not an expert opinion for a case file and cannot be cited as one.';
+
+  @override
+  String get qaRulesEnforceTitle => 'What happens if a rule is broken';
+
+  @override
+  String get qaRulesEnforceBody =>
+      'Text that looks like case material is held for review automatically. Reports from three different users hide a post, or suspend a specialist badge, until an administrator decides. A post that works against the law is removed and the badge goes with it.';
 }

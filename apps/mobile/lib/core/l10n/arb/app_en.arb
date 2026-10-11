@@ -11563,5 +11563,97 @@
         "type": "int"
       }
     }
+  },
+  "qaRulesOpen": "Community rules",
+  "@qaRulesOpen": {
+    "description": "Link that opens the Q&A community rules screen."
+  },
+  "qaRulesTitle": "Community rules",
+  "@qaRulesTitle": {
+    "description": "Title of the Q&A rules screen."
+  },
+  "qaRulesIntro": "This section is a professional conversation between forensic practitioners. Two rules decide everything else: no case material, and nothing that works against the law.",
+  "@qaRulesIntro": {
+    "description": "Opening paragraph of the Q&A rules."
+  },
+  "qaRulesPurposeTitle": "What this section is for",
+  "@qaRulesPurposeTitle": {
+    "description": "Section header in the Q&A rules."
+  },
+  "qaRulesPurposeBody": "Questions about method, reagent, specimen, instrument, interpretation of a result, a standard or a regulation — asked in general terms, the way they would be asked at a conference, not about a particular case.",
+  "@qaRulesPurposeBody": {
+    "description": "Body of the purpose section in the Q&A rules."
+  },
+  "qaRulesGoodTitle": "How to ask well",
+  "@qaRulesGoodTitle": {
+    "description": "Section header in the Q&A rules."
+  },
+  "qaRulesGood1": "Name the substance, the method and the specimen type. Without them an answer is guesswork.",
+  "@qaRulesGood1": {
+    "description": "First item in the how-to-ask list."
+  },
+  "qaRulesGood2": "Say what you already tried and where exactly you got stuck.",
+  "@qaRulesGood2": {
+    "description": "Second item in the how-to-ask list."
+  },
+  "qaRulesGood3": "Write numbers with their units, and say which guideline or edition you are working from.",
+  "@qaRulesGood3": {
+    "description": "Third item in the how-to-ask list."
+  },
+  "qaRulesGood4": "Choose the topics, so the right specialists see the question.",
+  "@qaRulesGood4": {
+    "description": "Fourth item in the how-to-ask list."
+  },
+  "qaRulesForbiddenTitle": "Never write this",
+  "@qaRulesForbiddenTitle": {
+    "description": "Section header in the Q&A rules."
+  },
+  "qaRulesForbidden1": "Case material: a case or examination number, a person's name, an address, a date together with a place, a photograph, or anything else by which someone could be identified.",
+  "@qaRulesForbidden1": {
+    "description": "First item in the forbidden list of the Q&A rules."
+  },
+  "qaRulesForbidden2": "Material from an examination in progress, or a draft opinion.",
+  "@qaRulesForbidden2": {
+    "description": "Second item in the forbidden list."
+  },
+  "qaRulesForbidden3": "Anything aimed at bending a result: how to make a conclusion come out a particular way, how to alter or hide a finding, how to backdate or forge a document, how to make evidence disappear.",
+  "@qaRulesForbidden3": {
+    "description": "Third item in the forbidden list — tampering with results."
+  },
+  "qaRulesForbidden4": "How to obtain, make, conceal or use a substance in order to harm someone or to avoid detection.",
+  "@qaRulesForbidden4": {
+    "description": "Fourth item in the forbidden list — harm and evasion."
+  },
+  "qaRulesForbidden5": "Legal advice, a diagnosis, a treatment or a dose for a particular person. This section is not a consultation.",
+  "@qaRulesForbidden5": {
+    "description": "Fifth item in the forbidden list — advice."
+  },
+  "qaRulesForbidden6": "Advertising, spam, and anything insulting to a colleague.",
+  "@qaRulesForbidden6": {
+    "description": "Sixth item in the forbidden list."
+  },
+  "qaRulesAnswerTitle": "Answering",
+  "@qaRulesAnswerTitle": {
+    "description": "Section header in the Q&A rules."
+  },
+  "qaRulesAnswer1": "Only verified specialists may answer, and only within what they actually practise.",
+  "@qaRulesAnswer1": {
+    "description": "First item in the answering section."
+  },
+  "qaRulesAnswer2": "Lean on a source and name it. Where you are guessing, say that you are guessing.",
+  "@qaRulesAnswer2": {
+    "description": "Second item in the answering section."
+  },
+  "qaRulesAnswer3": "An answer here is a colleague's opinion. It is not an expert opinion for a case file and cannot be cited as one.",
+  "@qaRulesAnswer3": {
+    "description": "Third item in the answering section."
+  },
+  "qaRulesEnforceTitle": "What happens if a rule is broken",
+  "@qaRulesEnforceTitle": {
+    "description": "Section header in the Q&A rules."
+  },
+  "qaRulesEnforceBody": "Text that looks like case material is held for review automatically. Reports from three different users hide a post, or suspend a specialist badge, until an administrator decides. A post that works against the law is removed and the badge goes with it.",
+  "@qaRulesEnforceBody": {
+    "description": "Body of the enforcement section in the Q&A rules."
   }
 }

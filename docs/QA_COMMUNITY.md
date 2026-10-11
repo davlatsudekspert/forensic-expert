@@ -148,3 +148,28 @@ sinaladi. Haqiqiy foydalanuvchilarga hech qanday sinov xabari yuborilmadi.
   javobi, 320 dp + 1.3× matn, admin bo'lmaganga moderatsiya berilmasligi.
 * Maxfiylik siyosatiga 7a bo'limi qo'shildi (uz/ru/en), Play Data safety
   yo'riqnomasi yangilandi: «Files and docs» va «Photos» **belgilanmaydi**.
+
+## 7. Hamjamiyat qoidalari ekrani
+
+`/library/qa/rules` — `lib/features/qa/presentation/qa_rules_screen.dart`.
+Ro‘yxatning yuqorisidagi tugmadan ham, savol berish formasidan ham ochiladi.
+Matn uch tilda teng (`tool/l10n_qa_rules.py`, idempotent).
+
+Qoidalar ikki narsani ajratadi:
+
+* **Maxfiylik** — ish yoki ekspertiza raqami, ism, manzil, sana bilan joy,
+  fotosurat, tugallanmagan ekspertiza materiali va xulosa loyihasi
+  yozilmaydi.
+* **Qonuniylik** — natijani buzishga qaratilgan har qanday iltimos
+  taqiqlanadi: xulosani kerakli tomonga moslashtirish, natijani o‘zgartirish
+  yoki yashirish, hujjatni orqa sana bilan rasmiylashtirish yoki
+  soxtalashtirish, dalilni yo‘q qilish; shuningdek moddani zarar yetkazish
+  yoki aniqlanishdan qochish maqsadida olish/tayyorlash/yashirish yo‘llari.
+  Bunday post o‘chiriladi va mutaxassis belgisi ham u bilan ketadi.
+
+Qolgan bo‘limlar: bo‘lim nima uchun, savolni qanday yozish, javob yozish
+tartibi (faqat tasdiqlangan mutaxassis, manbaga tayanish, «bu ekspert
+xulosasi emas»), va qoida buzilganda nima bo‘lishi.
+
+Testlar: `qa_community_test.dart` — qonunga zid iltimos taqiqlangani uch
+tilda tekshiriladi, ikkala kirish yo‘li ham sinaladi.

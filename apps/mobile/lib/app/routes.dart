@@ -85,6 +85,7 @@ abstract final class Routes {
   static String qaQuestion(String id) =>
       '/library/qa/q/${Uri.encodeComponent(id)}';
   static const qaAsk = '/library/qa/ask';
+  static const qaRules = '/library/qa/rules';
   static const qaMine = '/library/qa/mine';
   static const qaVerify = '/library/qa/verify';
   static const qaModeration = '/library/qa/moderation';

@@ -8887,4 +8887,89 @@ class AppLocalizationsUz extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get qaRulesOpen => 'Hamjamiyat qoidalari';
+
+  @override
+  String get qaRulesTitle => 'Hamjamiyat qoidalari';
+
+  @override
+  String get qaRulesIntro =>
+      'Bu bo‘lim — sud ekspertlari o‘rtasidagi kasbiy suhbat. Qolgan hammasini ikki qoida belgilaydi: ish materiali yozilmaydi va qonunga qarshi ishlaydigan narsa yozilmaydi.';
+
+  @override
+  String get qaRulesPurposeTitle => 'Bu bo‘lim nima uchun';
+
+  @override
+  String get qaRulesPurposeBody =>
+      'Usul, reaktiv, namuna, asbob, natijani talqin qilish, standart yoki normativ hujjat haqidagi savollar — umumiy holda, xuddi konferensiyada so‘ralganidek, aniq ish haqida emas.';
+
+  @override
+  String get qaRulesGoodTitle => 'Savolni qanday yozish kerak';
+
+  @override
+  String get qaRulesGood1 =>
+      'Modda, usul va namuna turini ayting. Ularsiz javob taxmin bo‘ladi.';
+
+  @override
+  String get qaRulesGood2 =>
+      'Nima qilib ko‘rganingizni va aynan qayerda to‘xtab qolganingizni yozing.';
+
+  @override
+  String get qaRulesGood3 =>
+      'Raqamlarni birligi bilan yozing va qaysi qo‘llanma yoki nashrga tayanayotganingizni ayting.';
+
+  @override
+  String get qaRulesGood4 =>
+      'Mavzularni tanlang — savolni kerakli mutaxassislar ko‘rsin.';
+
+  @override
+  String get qaRulesForbiddenTitle => 'Bularni yozish mumkin emas';
+
+  @override
+  String get qaRulesForbidden1 =>
+      'Ish materiali: ish yoki ekspertiza raqami, shaxsning ismi, manzil, sana bilan birga joy, fotosurat va shaxsni aniqlashga imkon beradigan boshqa har qanday ma’lumot.';
+
+  @override
+  String get qaRulesForbidden2 =>
+      'Tugallanmagan ekspertiza materiali yoki xulosa loyihasi.';
+
+  @override
+  String get qaRulesForbidden3 =>
+      'Natijani buzishga qaratilgan har qanday narsa: xulosani kerakli tomonga moslashtirish, natijani o‘zgartirish yoki yashirish, hujjatni orqa sana bilan rasmiylashtirish yoki soxtalashtirish, dalilni yo‘q qilish.';
+
+  @override
+  String get qaRulesForbidden4 =>
+      'Biror moddani zarar yetkazish yoki aniqlanishdan qochish maqsadida olish, tayyorlash, yashirish yoki qo‘llash yo‘llari.';
+
+  @override
+  String get qaRulesForbidden5 =>
+      'Huquqiy maslahat, tashxis, davolash yoki aniq odam uchun doza. Bu bo‘lim maslahatxona emas.';
+
+  @override
+  String get qaRulesForbidden6 =>
+      'Reklama, spam va hamkasbni kamsitadigan har qanday narsa.';
+
+  @override
+  String get qaRulesAnswerTitle => 'Javob yozish';
+
+  @override
+  String get qaRulesAnswer1 =>
+      'Javob yozishni faqat tasdiqlangan mutaxassislar oladi va faqat o‘zi amalda shug‘ullanadigan doirada.';
+
+  @override
+  String get qaRulesAnswer2 =>
+      'Manbaga tayaning va uni ayting. Taxmin qilayotgan joyingizni taxmin deb yozing.';
+
+  @override
+  String get qaRulesAnswer3 =>
+      'Bu yerdagi javob — hamkasbning fikri. U ish uchun ekspert xulosasi emas va unga havola qilib bo‘lmaydi.';
+
+  @override
+  String get qaRulesEnforceTitle => 'Qoida buzilsa nima bo‘ladi';
+
+  @override
+  String get qaRulesEnforceBody =>
+      'Ish materialiga o‘xshagan matn avtomatik tekshiruvga tushadi. Uch xil foydalanuvchining shikoyati postni yashiradi yoki mutaxassis belgisini administrator qaroriga qadar to‘xtatadi. Qonunga qarshi qaratilgan post o‘chiriladi, belgi ham u bilan birga ketadi.';
 }

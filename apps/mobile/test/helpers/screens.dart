@@ -98,6 +98,7 @@ const everyScreen = <String>[
   Routes.publicationsModeration,
   Routes.qa,
   Routes.qaAsk,
+  Routes.qaRules,
   Routes.qaMine,
   Routes.qaVerify,
   Routes.qaModeration,

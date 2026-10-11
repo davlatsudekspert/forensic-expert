@@ -540,4 +540,52 @@ void main() {
     expect(find.byKey(const Key('qa.mine.q9')), findsOneWidget);
     expect(find.text('Tekshiruvda'), findsOneWidget);
   });
+
+  for (final (lang, forbidden) in const [
+    ('uz', 'dalilni yo‘q qilish'),
+    ('ru', 'избавиться от доказательства'),
+    ('en', 'make evidence disappear'),
+  ]) {
+    testWidgets('qoidalar: qonunga zid iltimos taqiqlangani yozilgan ($lang)', (
+      tester,
+    ) async {
+      await pump(
+        tester,
+        at: Routes.qaRules,
+        svc: _FakeQa(me: _verifiedMe),
+        lang: lang,
+      );
+      expect(find.byKey(const Key('qa.rules')), findsOneWidget);
+      expect(find.textContaining(forbidden), findsOneWidget);
+      expect(find.byKey(const Key('qa.rules.enforcement')), findsOneWidget);
+    });
+  }
+
+  testWidgets('qoidalarga ro‘yxatdan ham, savol formasidan ham kirish bor', (
+    tester,
+  ) async {
+    await pump(
+      tester,
+      at: Routes.qa,
+      svc: _FakeQa(me: _verifiedMe),
+    );
+    expect(find.byKey(const Key('qa.rules')), findsOneWidget);
+    await tester.tap(find.byKey(const Key('qa.rules')));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('qa.rules.enforcement')), findsOneWidget);
+  });
+
+  testWidgets('savol formasida qoidalar havolasi bor', (tester) async {
+    await pump(
+      tester,
+      at: Routes.qaAsk,
+      svc: _FakeQa(me: _verifiedMe),
+    );
+    final link = find.byKey(const Key('qa.ask.rules'));
+    await tester.ensureVisible(link);
+    await tester.pumpAndSettle();
+    await tester.tap(link);
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('qa.rules.enforcement')), findsOneWidget);
+  });
 }
