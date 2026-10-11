@@ -44,12 +44,13 @@ Do‘kon matnlari (nom, qisqa va to‘liq tavsif, uch tilda):
 
 ## CI orqali yuklash: nega ishlamadi (2026-10-11)
 
-`tool/play_store_graphics.py` Play Developer API orqali yuklashga uringanda
-quyidagi aniq natija chiqdi (run 156):
+`tool/play_store_graphics.py` Play Developer API orqali bir necha marta
+sinaldi. Yakuniy, aniq manzara (run 159):
 
 | Sinov | Natija |
 | --- | --- |
 | Bo'sh edit → commit | **o'tdi** |
+| Mavjud matnni aynan qayta yozish → commit | **o'tdi** |
 | Faqat `icon` → commit | 403 PERMISSION_DENIED |
 | Faqat `featureGraphic` → commit | 403 PERMISSION_DENIED |
 | Faqat `phoneScreenshots` → commit | 403 PERMISSION_DENIED |
@@ -58,24 +59,24 @@ Ishlagan hisob: `play-upload@amiable-anagram-509514-f8.iam.gserviceaccount.com`
 (AAB yuklaydigan hisobning o'zi; unda «Управление страницей приложения» —
 Store presence — belgisi bor).
 
-`changesNotSentForReview=true` bilan urinilganda Play qaytardi:
-**«Changes are sent for review automatically. The query parameter
-changesNotSentForReview must not be set.»**
+**Isbotlangani:**
 
-**Isbotlangani** (dalil yuqoridagi jadvalda):
+* token, OAuth scope va paket nomi to'g'ri — xuddi shu hisob edit yaratadi,
+  listings o'qiydi, rasm yuklaydi va matnli edit'ni commit qiladi;
+* rad etilayotgani **faqat rasm** o'zgarishi (uchala tur ham, alohida-alohida
+  sinalganda);
+* `changesNotSentForReview=true` ishlamaydi: Play «Changes are sent for
+  review automatically» deydi.
 
-* hisob edit yarata oladi, listings o'qiy oladi, rasm yuklay oladi va bo'sh
-  edit'ni commit qila oladi — demak token, OAuth scope va paket nomi to'g'ri;
-* do'kon sahifasiga tegadigan edit'ni commit qila olmaydi;
-* bu ilovada do'kon sahifasi o'zgarishi avtomatik ko'rikka yuboriladi
-  (Play'ning o'z xabari).
+**Avvalgi xulosa (2026-10-11, ertalab) NOTO'G'RI edi** — «har qanday do'kon
+sahifasi o'zgarishi rad etiladi, demak nashr darajasidagi huquq kerak»
+deyilgandi. Matn sinovi buni rad etdi: matn o'tadi. Shuning uchun nashr
+huquqini berishning hojati yo'q va tavsiya ham qilinmaydi.
 
-**Isbotlanmagani (taxmin):** aynan qaysi huquq yetishmayotganini Play
-aytmadi. Ehtimoliy tushuntirish — commit = ko'rikka yuborish bo'lgani uchun
-nashr (publish/release) darajasidagi huquq talab qilinadi. Buni tekshirish
-uchun o'sha huquqni berib ko'rish kerak bo'lardi, lekin u service-account'ga
-production'ga chiqarish imkonini ham beradi — sakkizta rasm uchun bu juda
-katta huquq. Shuning uchun **tavsiya: rasmlarni Play Console'dan qo'lda
-yuklash**.
+**Aniq sabab noma'lum.** Play faqat `PERMISSION_DENIED` deydi, boshqa
+tafsilot bermaydi. Yangi taxmin o'ylab topilmadi.
+
+**Amaliy yo'l:** rasmlarni Play Console'dan **qo'lda** yuklash. Matnni esa
+kerak bo'lsa CI orqali ham yangilash mumkin — u ishlaydi.
 
 Rasmlar yuklanmadi — Play'da sahifa o'zgarmagan holida qoldi.
