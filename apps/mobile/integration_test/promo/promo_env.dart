@@ -74,6 +74,19 @@ class Promo {
       ],
     );
     await settle(maxMs: 8000);
+    // Sinxronizatsiya belgisi: 800 ms davomida to‘liq ekran magenta
+    // (post-produksiyada aniqlanadi va kesib tashlanadi).
+    final overlay = tester.state<OverlayState>(find.byType(Overlay).first);
+    final entry = OverlayEntry(
+      builder: (_) =>
+          const Positioned.fill(child: ColoredBox(color: Color(0xFFFF00FF))),
+    );
+    final markEpoch = nowMs;
+    overlay.insert(entry);
+    _events.add({'type': 'marker', 'epoch': markEpoch});
+    await wait(800);
+    entry.remove();
+    await wait(500);
     _sw.start();
     _t0 = nowMs;
     _events.add({'type': 'start', 'epoch': _t0});
@@ -269,7 +282,7 @@ class Promo {
       curve: Curves.easeInOut,
     );
     await wait(1000);
-    await fut;
+    await fut.timeout(const Duration(seconds: 3), onTimeout: () {});
     await wait(after);
     return true;
   }
