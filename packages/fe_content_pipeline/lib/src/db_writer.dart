@@ -45,13 +45,11 @@ class ContentDbWriter {
       // Bunday qiymat NULL emas, shuning uchun ekranda sarlavhasi bor, qiymati
       // yo'q qator qolib ketardi. Yozishdan oldin bitta joyda normallashtiramiz
       // — shunda hamma jadval va hamma ekran uchun bir xil qoida ishlaydi.
-      Future<void> run(String sql, List<Object?> args) => _db.customStatement(
-        sql,
-        [
-          for (final a in args)
-            if (a is String) (a.trim().isEmpty ? null : a.trim()) else a,
-        ],
-      );
+      Future<void> run(String sql, List<Object?> args) =>
+          _db.customStatement(sql, [
+            for (final a in args)
+              if (a is String) (a.trim().isEmpty ? null : a.trim()) else a,
+          ]);
 
       for (final m in {
         'pack_version': b.packVersion,
