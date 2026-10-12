@@ -66,9 +66,9 @@ void main() {
     late ContentLibraryRepository repo;
     setUpAll(() async => repo = await loadPilotLibrary());
 
-    test('137 ta modda, TEST DATA yo‘q, hech biri VERIFIED emas', () {
+    test('140 ta modda, TEST DATA yo‘q, hech biri VERIFIED emas', () {
       final all = repo.entries(LibrarySection.substances);
-      expect(all, hasLength(137));
+      expect(all, hasLength(140));
       for (final e in all) {
         expect(e.isTestData, isFalse);
         expect(e.status, ScientificStatus.needsReview, reason: e.id);

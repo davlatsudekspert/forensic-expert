@@ -11182,6 +11182,19 @@
    "identifier_verified": true,
    "language": "uz",
    "notes": "Darslik, 356 bet, «Global Books», Тошкент, 2018; ISBN 978-9943-5345-7-5. Тошкент тиббиёт академияси илмий кенгаши 2018-02-07, 7-сон баённома. Matn so‘zma-so‘z ko‘chirilmagan — mazmun o‘z so‘zimiz bilan; joy bo‘lim raqami bilan ko‘rsatiladi. Ilmiy review kutilmoqda."
+  },
+  {
+   "source_id": "SRC-PUBCHEM-222",
+   "source_type": "database",
+   "title": "PubChem Compound Summary for CID 222 (Ammonia)",
+   "organization": "National Center for Biotechnology Information (NCBI), U.S. National Library of Medicine",
+   "official_url": "https://pubchem.ncbi.nlm.nih.gov/compound/222",
+   "accessed_date": "2026-10-12",
+   "tier": "tier2",
+   "evidence_level": "C",
+   "license_mode": "openReuse",
+   "identifier_verified": true,
+   "notes": "PubChem PUG REST orqali avtomatik; bitta CID. Reviewer tasdig'ini talab qiladi."
   }
  ],
  "substances": [
@@ -13802,6 +13815,63 @@
     "en": "Thallium(I) sulfate",
     "ru": "Сульфат таллия(I)",
     "uz": "Talliy(I) sulfat"
+   },
+   "translation_status": {
+    "en": "machine_draft",
+    "ru": "machine_draft",
+    "uz": "machine_draft"
+   },
+   "synonyms": []
+  },
+  {
+   "substance_id": "mercury",
+   "canonical_name": "mercury",
+   "entity_kind": "substance",
+   "molecular_formula": "Hg",
+   "tier_access": "pro",
+   "group": "metals_inorganic",
+   "names": {
+    "en": "Mercury",
+    "ru": "Ртуть",
+    "uz": "Simob"
+   },
+   "translation_status": {
+    "en": "machine_draft",
+    "ru": "machine_draft",
+    "uz": "machine_draft"
+   },
+   "synonyms": []
+  },
+  {
+   "substance_id": "acetic-acid",
+   "canonical_name": "acetic-acid",
+   "entity_kind": "substance",
+   "molecular_formula": "C2H4O2",
+   "tier_access": "pro",
+   "group": "alcohols_volatiles",
+   "names": {
+    "en": "Acetic acid",
+    "ru": "Уксусная кислота",
+    "uz": "Sirka kislotasi"
+   },
+   "translation_status": {
+    "en": "machine_draft",
+    "ru": "machine_draft",
+    "uz": "machine_draft"
+   },
+   "synonyms": []
+  },
+  {
+   "substance_id": "ammonia",
+   "canonical_name": "ammonia",
+   "entity_kind": "substance",
+   "molecular_formula": "H3N",
+   "tier_access": "pro",
+   "group": "toxic_gases",
+   "names": {
+    "en": "Ammonia",
+    "ru": "Аммиак",
+    "uz": "Ammiak"
    },
    "translation_status": {
     "en": "machine_draft",
@@ -43138,6 +43208,60 @@
      "en": "Giyasov Z.A., Forensic Medicine (in Uzbek), Tashkent, 2018"
     }
    }
+  },
+  {
+   "claim_id": "C-MERCURY-IDENTITY",
+   "entity_type": "substance",
+   "entity_id": "mercury",
+   "field": "identity",
+   "domain": "tox",
+   "declared_status": "NEEDS_REVIEW",
+   "evidence_level": "C",
+   "layer": "international_scientific",
+   "is_structured_value": true,
+   "value": {
+    "pubchem_cid": 23931,
+    "molecular_formula": "Hg",
+    "molecular_weight": "200.59",
+    "inchikey": "QSHDDOUJBYECFT-UHFFFAOYSA-N",
+    "iupac_name": "mercury"
+   }
+  },
+  {
+   "claim_id": "C-ACETIC-ACID-IDENTITY",
+   "entity_type": "substance",
+   "entity_id": "acetic-acid",
+   "field": "identity",
+   "domain": "tox",
+   "declared_status": "NEEDS_REVIEW",
+   "evidence_level": "C",
+   "layer": "international_scientific",
+   "is_structured_value": true,
+   "value": {
+    "pubchem_cid": 176,
+    "molecular_formula": "C2H4O2",
+    "molecular_weight": "60.05",
+    "inchikey": "QTBSBXVTEAMEQO-UHFFFAOYSA-N",
+    "iupac_name": "acetic acid"
+   }
+  },
+  {
+   "claim_id": "C-AMMONIA-IDENTITY",
+   "entity_type": "substance",
+   "entity_id": "ammonia",
+   "field": "identity",
+   "domain": "tox",
+   "declared_status": "NEEDS_REVIEW",
+   "evidence_level": "C",
+   "layer": "international_scientific",
+   "is_structured_value": true,
+   "value": {
+    "pubchem_cid": 222,
+    "molecular_formula": "H3N",
+    "molecular_weight": "17.031",
+    "inchikey": "QGZKDVFQNNGYKY-UHFFFAOYSA-N",
+    "iupac_name": "azane"
+   }
   }
  ],
  "citations": [
@@ -47910,6 +48034,21 @@
    "claim_id": "C-GIYASOV-ABRASION-LIMITS-01",
    "source_id": "SRC-GIYASOV-FM-2018",
    "locator": "2.9-бўлим «Ўтмас жисмлардан етказилган жароҳатлар», шилинмалар"
+  },
+  {
+   "claim_id": "C-MERCURY-IDENTITY",
+   "source_id": "SRC-PUBCHEM-23931",
+   "locator": "Computed Properties"
+  },
+  {
+   "claim_id": "C-ACETIC-ACID-IDENTITY",
+   "source_id": "SRC-PUBCHEM-176",
+   "locator": "Computed Properties"
+  },
+  {
+   "claim_id": "C-AMMONIA-IDENTITY",
+   "source_id": "SRC-PUBCHEM-222",
+   "locator": "Computed Properties"
   }
  ],
  "instruments": [
@@ -93639,6 +93778,60 @@
    "to": "aby-bio-hair",
    "relation": "related_topic",
    "basis": "editorial:aby-order"
+  },
+  {
+   "from": "mercury",
+   "to": "aby-tox-mercury",
+   "relation": "related_topic",
+   "basis": "editorial:aby-order"
+  },
+  {
+   "from": "mercury",
+   "to": "aby-tox-urine-express",
+   "relation": "related_topic",
+   "basis": "editorial:aby-order"
+  },
+  {
+   "from": "mercury",
+   "to": "aby-tox-isolation-methods",
+   "relation": "related_topic",
+   "basis": "editorial:aby-order"
+  },
+  {
+   "from": "acetic-acid",
+   "to": "aby-tox-acetic-acid",
+   "relation": "related_topic",
+   "basis": "editorial:aby-order"
+  },
+  {
+   "from": "acetic-acid",
+   "to": "aby-tox-urine-express",
+   "relation": "related_topic",
+   "basis": "editorial:aby-order"
+  },
+  {
+   "from": "acetic-acid",
+   "to": "aby-tox-isolation-methods",
+   "relation": "related_topic",
+   "basis": "editorial:aby-order"
+  },
+  {
+   "from": "ammonia",
+   "to": "aby-tox-ammonia",
+   "relation": "related_topic",
+   "basis": "editorial:aby-order"
+  },
+  {
+   "from": "ammonia",
+   "to": "aby-tox-urine-express",
+   "relation": "related_topic",
+   "basis": "editorial:aby-order"
+  },
+  {
+   "from": "ammonia",
+   "to": "aby-tox-isolation-methods",
+   "relation": "related_topic",
+   "basis": "editorial:aby-order"
   }
  ],
  "images": [
@@ -98011,6 +98204,81 @@
    "caption_original": "Illustration\nof xylazine interaction with commercial and on-site drug screening\ntools. (A) NARKII Marquis reagent rendered a false positive for amphetamine.\n(B) NARKII nitric acid reagent system yielded false positives for\ncodeine and morphine. (C, D) NARKII Liebermann reagent system and\nNARKII opiate reagent system produced unique transparent-to-red-brown\nand red color changes, respectively. (E) NARKII Marquis reagent (opium\nalkaloids) yielded a false positive for amphetamine. (F) Marquis reagent\ngave false positives for amphetamine and methamphetamine. (G) Fentanyl\nreagent system yielded a f",
    "graphic": false,
    "accessed": "2026-10-04"
+  },
+  {
+   "image_id": "IMG-STRUCT-mercury",
+   "kind": "chemical_structure",
+   "entity_id": "mercury",
+   "file": "../phase5/images/structures/mercury.png",
+   "sha256": "78b186fde39944e242000383cdd8dde8fa1eb2a9f6179441568531ef32c291fa",
+   "title": {
+    "en": "Chemical structure: Mercury",
+    "ru": "Химическая структура: Ртуть",
+    "uz": "Kimyoviy tuzilishi: Simob"
+   },
+   "alt": {
+    "en": "2D chemical structure diagram of Mercury (Hg)",
+    "ru": "Двумерная структурная формула: Ртуть",
+    "uz": "Ikki o‘lchamli struktura formulasi: Simob"
+   },
+   "license": "original_depiction_of_factual_data",
+   "attribution": "Structure drawn from PubChem CID 23931 SMILES with RDKit",
+   "is_original_diagram": true,
+   "represents_real_data": false,
+   "creator": "FORENSIC EXPERT content pipeline (RDKit depiction)",
+   "source_name": "PubChem (structure data: SMILES)",
+   "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/23931",
+   "accessed_date": "2026-10-12"
+  },
+  {
+   "image_id": "IMG-STRUCT-acetic-acid",
+   "kind": "chemical_structure",
+   "entity_id": "acetic-acid",
+   "file": "../phase5/images/structures/acetic-acid.png",
+   "sha256": "1ac2fa1e37cccf6cef96692b9b54f31d24a56c55ecd600005c4cde6f5a1f73d3",
+   "title": {
+    "en": "Chemical structure: Acetic acid",
+    "ru": "Химическая структура: Уксусная кислота",
+    "uz": "Kimyoviy tuzilishi: Sirka kislotasi"
+   },
+   "alt": {
+    "en": "2D chemical structure diagram of Acetic acid (C2H4O2)",
+    "ru": "Двумерная структурная формула: Уксусная кислота",
+    "uz": "Ikki o‘lchamli struktura formulasi: Sirka kislotasi"
+   },
+   "license": "original_depiction_of_factual_data",
+   "attribution": "Structure drawn from PubChem CID 176 SMILES with RDKit",
+   "is_original_diagram": true,
+   "represents_real_data": false,
+   "creator": "FORENSIC EXPERT content pipeline (RDKit depiction)",
+   "source_name": "PubChem (structure data: SMILES)",
+   "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/176",
+   "accessed_date": "2026-10-12"
+  },
+  {
+   "image_id": "IMG-STRUCT-ammonia",
+   "kind": "chemical_structure",
+   "entity_id": "ammonia",
+   "file": "../phase5/images/structures/ammonia.png",
+   "sha256": "c023d935ce5403b266cc1e2a14094f724bf4165ead2632fb09f5fdd3d15458e2",
+   "title": {
+    "en": "Chemical structure: Ammonia",
+    "ru": "Химическая структура: Аммиак",
+    "uz": "Kimyoviy tuzilishi: Ammiak"
+   },
+   "alt": {
+    "en": "2D chemical structure diagram of Ammonia (H3N)",
+    "ru": "Двумерная структурная формула: Аммиак",
+    "uz": "Ikki o‘lchamli struktura formulasi: Ammiak"
+   },
+   "license": "original_depiction_of_factual_data",
+   "attribution": "Structure drawn from PubChem CID 222 SMILES with RDKit",
+   "is_original_diagram": true,
+   "represents_real_data": false,
+   "creator": "FORENSIC EXPERT content pipeline (RDKit depiction)",
+   "source_name": "PubChem (structure data: SMILES)",
+   "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/222",
+   "accessed_date": "2026-10-12"
   }
  ],
  "reviewers": [],

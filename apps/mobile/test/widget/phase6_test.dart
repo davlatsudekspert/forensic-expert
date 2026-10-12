@@ -191,7 +191,7 @@ void main() {
     ) async {
       await open(tester, Routes.library);
       expect(find.byKey(const Key('library.hub.substances')), findsOneWidget);
-      expect(find.text('137 records'), findsOneWidget);
+      expect(find.text('140 records'), findsOneWidget);
       await see(tester, find.byKey(const Key('library.hub.jurisdictions')));
       await tester.tap(find.byKey(const Key('library.hub.standards')));
       await tester.pumpAndSettle();
