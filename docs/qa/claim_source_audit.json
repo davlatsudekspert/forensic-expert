@@ -4,27 +4,27 @@
   "verdict": {
    "UNSUPPORTED": 1,
    "SCOPE_MISMATCH": 0,
-   "ABSTRACT_ONLY": 682,
-   "NO_LOCATOR": 19,
+   "ABSTRACT_ONLY": 688,
+   "NO_LOCATOR": 25,
    "PARTIAL": 72,
-   "SUPPORTED": 1597
+   "SUPPORTED": 1627
   },
   "auto_verdict": {
    "UNSUPPORTED": 1,
    "SCOPE_MISMATCH": 7,
-   "ABSTRACT_ONLY": 680,
-   "NO_LOCATOR": 19,
+   "ABSTRACT_ONLY": 686,
+   "NO_LOCATOR": 25,
    "PARTIAL": 71,
-   "SUPPORTED": 1593
+   "SUPPORTED": 1623
   },
   "by_corpus": {
    "bundle": {
     "UNSUPPORTED": 1,
     "SCOPE_MISMATCH": 0,
-    "ABSTRACT_ONLY": 5,
-    "NO_LOCATOR": 0,
+    "ABSTRACT_ONLY": 11,
+    "NO_LOCATOR": 6,
     "PARTIAL": 13,
-    "SUPPORTED": 907
+    "SUPPORTED": 910
    },
    "court_prep": {
     "UNSUPPORTED": 0,
@@ -32,7 +32,7 @@
     "ABSTRACT_ONLY": 167,
     "NO_LOCATOR": 0,
     "PARTIAL": 38,
-    "SUPPORTED": 210
+    "SUPPORTED": 237
    },
    "guidelines": {
     "UNSUPPORTED": 0,
@@ -43,7 +43,7 @@
     "SUPPORTED": 480
    }
   },
-  "claims": 2371,
+  "claims": 2413,
   "reviewed": 48,
   "general_rule_abstract_only_unreviewed": 7
  },
@@ -293,13 +293,13 @@
  ],
  "evidence_levels": {
   "levels_by_source_type": {
-   "book/tier3/C": 2,
-   "database/tier2/C": 201,
+   "book/tier3/C": 3,
+   "database/tier2/C": 202,
    "guideline/tier1/B": 2,
    "guideline/tier3/C": 1,
    "journal_article/tier2/A": 8,
    "journal_article/tier2/B": 234,
-   "journal_article/tier2/C": 49,
+   "journal_article/tier2/C": 52,
    "journal_article/tier2/D": 32,
    "legislation/tier1/A": 8,
    "report/tier3/C": 1,
@@ -531,6 +531,15 @@
     "why": [
      "title says case report/series but level is not D",
      "title says (narrative) review but level is A/B (the pipeline rule gives C)"
+    ]
+   },
+   {
+    "source_id": "SRC-PMID-26364197",
+    "level": "C",
+    "type": "journal_article",
+    "title": "Is it worth carrying out determination of N-butane in postmortem samples? A case report and a compre",
+    "why": [
+     "title says case report/series but level is not D"
     ]
    },
    {
@@ -33899,6 +33908,596 @@
    "text": "Ha, lekin qaysi birlik va o‘tkazish asosi ishlatilganini ayting; qonuniy birliklar mamlakatlarga qarab farq qiladi [jones2024units]."
   },
   {
+   "id": "court.q.inv_answer_form.tests",
+   "corpus": "court_prep",
+   "container": "court.q.inv_answer_form",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.11"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "8becf3faf2d49f2b",
+   "text": "Yakuniy qism aynan qo‘yilgan savollarga javob shaklida tuzilganmi va turlicha talqinga yo‘l qo‘ymaydimi [court_giyasov_fm2018]."
+  },
+  {
+   "id": "court.q.inv_answer_form.short_answer",
+   "corpus": "court_prep",
+   "container": "court.q.inv_answer_form",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.11"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "707afc9b3acc42d6",
+   "text": "Xulosaning yakuniy qismi (to‘xtam) qo‘yilgan savollarga javob shaklida, turli talqinga yo‘l qo‘ymaydigan aniq va tushunarli tilda yoziladi. Savollar xulosaning kirish qismida o‘zgartirilmasdan keltiriladi, tadqiqot qismi"
+  },
+  {
+   "id": "court.q.inv_answer_form.documents.0",
+   "corpus": "court_prep",
+   "container": "court.q.inv_answer_form",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.11"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "51e07648e6d3ad69",
+   "text": "Qaror yoki ajrim, undagi savollar ro‘yxati; xulosaning kirish qismida ular o‘zgarmagan holda turganini tekshiring [court_giyasov_fm2018]."
+  },
+  {
+   "id": "court.q.inv_answer_form.followup.1.a",
+   "corpus": "court_prep",
+   "container": "court.q.inv_answer_form",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.11"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "0f22fb1cf08f151f",
+   "text": "Javoblarni mantiqiy tartibda berish mumkin, lekin savolning o‘zi kirish qismida qaror matnidagidek keltiriladi va hech bir savol tushib qolmaydi [court_giyasov_fm2018]."
+  },
+  {
+   "id": "court.q.inv_answer_form.limitation.0",
+   "corpus": "court_prep",
+   "container": "court.q.inv_answer_form",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.11"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "27397126ffa554e0",
+   "text": "Hujjat shakli va mazmuni Sog‘liqni saqlash vazirligi belgilagan tartibga bo‘ysunadi; darslikdagi umumiy tavsif amaldagi shaklni almashtirmaydi [court_giyasov_fm2018]."
+  },
+  {
+   "id": "court.q.inv_initiative.tests",
+   "corpus": "court_prep",
+   "container": "court.q.inv_initiative",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.9",
+      "sec:1.11"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "cdd6b83c75611fae",
+   "text": "Ekspert tashabbus huquqidan to‘g‘ri foydalanganmi — faqat ekspertiza predmetiga oid masalada [court_giyasov_fm2018]."
+  },
+  {
+   "id": "court.q.inv_initiative.short_answer",
+   "corpus": "court_prep",
+   "container": "court.q.inv_initiative",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.9",
+      "sec:1.11"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "ac60da09a30bd4c7",
+   "text": "Ha. Ekspertning tashabbus huquqi bor: xulosada nafaqat qo‘yilgan savollar bo‘yicha, balki ekspertiza predmetiga oid va ish uchun ahamiyatli boshqa masalalar bo‘yicha ham fikr bildirish mumkin. Bunday holatlar to‘xtamda a"
+  },
+  {
+   "id": "court.q.inv_initiative.explain.0",
+   "corpus": "court_prep",
+   "container": "court.q.inv_initiative",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.9",
+      "sec:1.11"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "f1d6bab733574617",
+   "text": "To‘xtamda huquqbuzarlik sabablari, uning sodir etilishiga imkon bergan shart-sharoitlar va ularni bartaraf etish bo‘yicha tavsiyalar ham berilishi mumkin [court_giyasov_fm2018]."
+  },
+  {
+   "id": "court.q.inv_initiative.followup.0.a",
+   "corpus": "court_prep",
+   "container": "court.q.inv_initiative",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.9",
+      "sec:1.11"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "prescriptive"
+   ],
+   "reasons": [],
+   "text_sha": "39ac5c17eef26c89",
+   "text": "Ekspert xulosasi boshqa dalillar qatorida baholanadi va hech qachon oldindan muqarrar dalil kuchiga ega emas; tergovchi yoki sud qo‘shilmasa, buni qaror yoki ajrimda asoslab berishi lozim [court_giyasov_fm2018]."
+  },
+  {
+   "id": "court.q.inv_initiative.followup.1.a",
+   "corpus": "court_prep",
+   "container": "court.q.inv_initiative",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.9",
+      "sec:1.11"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "32da98a37385e191",
+   "text": "Xulosaning yakuniy qismida, qo‘yilgan savollarga javoblardan keyin, alohida ko‘rsatiladi [court_giyasov_fm2018]."
+  },
+  {
+   "id": "court.q.inv_initiative.limitation.0",
+   "corpus": "court_prep",
+   "container": "court.q.inv_initiative",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.9",
+      "sec:1.11"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "prescriptive"
+   ],
+   "reasons": [],
+   "text_sha": "b6869938fbf1116c",
+   "text": "Tashabbus huquqi vakolat chegarasini kengaytirmaydi: to‘xtamdagi holatlar ekspertiza vakolati doirasida, obyektiv ma’lumotlardan kelib chiqqan va ilmiy asoslangan bo‘lishi shart [court_giyasov_fm2018]."
+  },
+  {
+   "id": "court.q.inv_out_of_competence.tests",
+   "corpus": "court_prep",
+   "container": "court.q.inv_out_of_competence",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.9",
+      "sec:1.10"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "a932c2bdcc48eafe",
+   "text": "Ekspert faqat o‘z vakolati doirasida ish ko‘rganmi va chegarani ochiq aytganmi [court_giyasov_fm2018]."
+  },
+  {
+   "id": "court.q.inv_out_of_competence.short_answer",
+   "corpus": "court_prep",
+   "container": "court.q.inv_out_of_competence",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.9",
+      "sec:1.10"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "68197dd91db8a7b3",
+   "text": "Ekspert faqat o‘z vakolati doirasida faoliyat olib boradi. Savol vakolatdan tashqarida bo‘lsa, bu xulosada ochiq yoziladi va javob berilmaydi; o‘rniga taxmin yozilmaydi [court_giyasov_fm2018]."
+  },
+  {
+   "id": "court.q.inv_out_of_competence.explain.0",
+   "corpus": "court_prep",
+   "container": "court.q.inv_out_of_competence",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.9",
+      "sec:1.10"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "329cc8616f754da2",
+   "text": "Ekspertning protsessual mustaqilligi o‘tkazilgan tekshiruv, uning natijalari va xulosa uchun shaxsiy mas’uliyat yuklaydi [court_giyasov_fm2018]."
+  },
+  {
+   "id": "court.q.inv_out_of_competence.followup.0.a",
+   "corpus": "court_prep",
+   "container": "court.q.inv_out_of_competence",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.9",
+      "sec:1.10"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "4247fb04d50fc121",
+   "text": "Buni xulosada ko‘rsataman; kompleks yoki komission ekspertiza tayinlanishi mumkin [court_giyasov_fm2018]."
+  },
+  {
+   "id": "court.q.inv_out_of_competence.followup.1.a",
+   "corpus": "court_prep",
+   "container": "court.q.inv_out_of_competence",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.9",
+      "sec:1.10"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms"
+   ],
+   "reasons": [],
+   "text_sha": "9119ac6ed1028ead",
+   "text": "Buni ekspertning o‘zi baholaydi va xulosada asoslaydi; protsessual mustaqillik shuni talab qiladi va shu bilan birga shaxsiy mas’uliyat yuklaydi [court_giyasov_fm2018]."
+  },
+  {
+   "id": "court.q.inv_out_of_competence.limitation.0",
+   "corpus": "court_prep",
+   "container": "court.q.inv_out_of_competence",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.9",
+      "sec:1.10"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "045405b60eb130c9",
+   "text": "Vakolat chegarasi ekspertning o‘z ixtisosligi va tayyorgarligi bilan belgilanadi; bu yerdagi umumiy qoida muayyan ekspertiza turi qoidalarini almashtirmaydi [court_giyasov_fm2018]."
+  },
+  {
+   "id": "court.q.inv_repeat.tests",
+   "corpus": "court_prep",
+   "container": "court.q.inv_repeat",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.10"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "df7af938fa47ccc1",
+   "text": "Qayta ekspertizaning mohiyati tushunilganmi: yangi emas, aynan hal qilingan savollar [court_giyasov_fm2018]."
+  },
+  {
+   "id": "court.q.inv_repeat.short_answer",
+   "corpus": "court_prep",
+   "container": "court.q.inv_repeat",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.10"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "7107379380db0350",
+   "text": "Qayta ekspertizada ekspertlar oldiga yangi emas, dastlabki ekspertizada hal qilingan o‘sha savollar takroran qo‘yiladi. Bundan tashqari, avvalgi ekspertizada qo‘llanilgan tekshiruv usullarining ilmiy asoslanganligi masal"
+  },
+  {
+   "id": "court.q.inv_repeat.explain.0",
+   "corpus": "court_prep",
+   "container": "court.q.inv_repeat",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.10"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "prescriptive"
+   ],
+   "reasons": [],
+   "text_sha": "df0aebdef38f2bf7",
+   "text": "Bir ish bo‘yicha o‘tkazilgan bir necha ekspertiza natijalari farqli bo‘lsa, tergovchi yoki sud o‘z tanlovini qaror yoki ajrimda asoslab berishi lozim [court_giyasov_fm2018]."
+  },
+  {
+   "id": "court.q.inv_repeat.followup.1.a",
+   "corpus": "court_prep",
+   "container": "court.q.inv_repeat",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.10"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "9d333593a0436def",
+   "text": "Ha — avvalgi ekspertizada qo‘llanilgan tekshiruv usullarining ilmiy asoslanganligi masalasi ham qo‘yilishi mumkin [court_giyasov_fm2018]."
+  },
+  {
+   "id": "court.q.inv_repeat.limitation.0",
+   "corpus": "court_prep",
+   "container": "court.q.inv_repeat",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.10"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "46a10cfe610b8835",
+   "text": "Bu yerda ekspertizaning protsessual turi tavsiflanadi, muayyan ishdagi tayinlash asosi emas [court_giyasov_fm2018]."
+  },
+  {
+   "id": "court.q.inv_act_vs_report.tests",
+   "corpus": "court_prep",
+   "container": "court.q.inv_act_vs_report",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.11"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "8ee079cffb136e59",
+   "text": "Hujjat turi to‘g‘ri nomlanganmi va ogohlantirish tartibi farqi bilinadimi [court_giyasov_fm2018]."
+  },
+  {
+   "id": "court.q.inv_act_vs_report.short_answer",
+   "corpus": "court_prep",
+   "container": "court.q.inv_act_vs_report",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.11"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "26f0491d08e29ce6",
+   "text": "Dalolatnoma suriştiruv, tergov va sud idoralarining yozma topshirig‘i yoki yo‘llanma asosida o‘tkazilgan tekshiruvda tuziladi. Rasmiylashtirish ekspert xulosasiga o‘xshaydi, lekin ikki farq bor: huquq va majburiyatlar tu"
+  },
+  {
+   "id": "court.q.inv_act_vs_report.documents.0",
+   "corpus": "court_prep",
+   "container": "court.q.inv_act_vs_report",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.11"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "173af98a42826547",
+   "text": "Tekshiruv qaysi asosda o‘tkazilgani — qaror, ajrim, yozma topshiriq yoki yo‘llanma [court_giyasov_fm2018]."
+  },
+  {
+   "id": "court.q.inv_act_vs_report.followup.1.a",
+   "corpus": "court_prep",
+   "container": "court.q.inv_act_vs_report",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.11"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "42dd0deed6a3e32f",
+   "text": "Rasmiylashtirish o‘xshash, lekin yakuniy qism «to‘xtam» emas, «xotima» deb nomlanadi — bu farq hujjatning protsessual holatini ko‘rsatadi [court_giyasov_fm2018]."
+  },
+  {
+   "id": "court.q.inv_act_vs_report.limitation.0",
+   "corpus": "court_prep",
+   "container": "court.q.inv_act_vs_report",
+   "sources": [
+    {
+     "key": "court_giyasov_fm2018",
+     "locators": [
+      "sec:1.11"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "d3c7d5bd5bcfeda1",
+   "text": "Hujjatlarning shakli va mazmuni Sog‘liqni saqlash vazirligi tomonidan belgilanadi; bu yerda faqat farqning mohiyati beriladi [court_giyasov_fm2018]."
+  },
+  {
    "id": "court.p.all_findings.text",
    "corpus": "court_prep",
    "container": "court.p.all_findings",
@@ -56055,6 +56654,419 @@
    ],
    "text_sha": "1a4ca268197eb926",
    "text": "Cheklov (yo‘riqnomadan emas, xalqaro adabiyotdan). O‘pka suzish sinamasining ishonchliligi bo‘yicha 208 ta yangi tug‘ilgan chaqaloq o‘pkasi tekshirilgan istiqbolli tadqiqotda natija 98 % holatda kutilganiga mos kelgan; t"
+  },
+  {
+   "id": "C-BUTANE-METABOLISM_NOTE-D1",
+   "corpus": "bundle",
+   "container": "butane",
+   "sources": [
+    {
+     "key": "SRC-PMID-26247128",
+     "locators": [
+      "Abstract; Results"
+     ],
+     "level": "abstract"
+    }
+   ],
+   "auto_verdict": "ABSTRACT_ONLY",
+   "verdict": "ABSTRACT_ONLY",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [
+    "source checked at abstract / bibliographic level; no concrete locator"
+   ],
+   "text_sha": "3d60745c51ca6dcd",
+   "text": "Part of absorbed butane is converted to 2-butanol and 2-butanone (methyl ethyl ketone). In three butane-sniffing deaths these metabolites were found in blood in two cases and absent in the third; the authors relate this "
+  },
+  {
+   "id": "C-BUTANE-METABOLITES-D1",
+   "corpus": "bundle",
+   "container": "butane",
+   "sources": [
+    {
+     "key": "SRC-PMID-26247128",
+     "locators": [
+      "Abstract; Results"
+     ],
+     "level": "abstract"
+    }
+   ],
+   "auto_verdict": "ABSTRACT_ONLY",
+   "verdict": "ABSTRACT_ONLY",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [
+    "source checked at abstract / bibliographic level; no concrete locator"
+   ],
+   "text_sha": "03efa2d1fa088c60",
+   "text": "Metabolites that can be measured: 2-butanol and 2-butanone. In a three-case series blood levels were 6.5 and 6.3 µg/mL for 2-butanol and 1.8 and 5.6 µg/mL for 2-butanone."
+  },
+  {
+   "id": "C-BUTANE-ANALYTICAL_METHOD-D1",
+   "corpus": "bundle",
+   "container": "butane",
+   "sources": [
+    {
+     "key": "SRC-PMID-28718908",
+     "locators": [
+      "Abstract; Methods"
+     ],
+     "level": "abstract"
+    },
+    {
+     "key": "SRC-PMID-26364197",
+     "locators": [
+      "Discussion; sample handling and storage"
+     ],
+     "level": "abstract"
+    }
+   ],
+   "auto_verdict": "ABSTRACT_ONLY",
+   "verdict": "ABSTRACT_ONLY",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted",
+    "prescriptive"
+   ],
+   "reasons": [
+    "source checked at abstract / bibliographic level; no concrete locator"
+   ],
+   "text_sha": "8083862b640c842f",
+   "text": "Because butane is a volatile gas it is determined by headspace gas chromatography–mass spectrometry (HS-GC-MS). Sampling and storage are decisive: the vial must be filled completely, sealed gas-tight and kept cold, other"
+  },
+  {
+   "id": "C-BUTANE-REPORTED_CONCENTRATION-D1",
+   "corpus": "bundle",
+   "container": "butane",
+   "sources": [
+    {
+     "key": "SRC-PMID-28718908",
+     "locators": [
+      "Abstract"
+     ],
+     "level": "abstract"
+    },
+    {
+     "key": "SRC-PMID-26247128",
+     "locators": [
+      "Abstract"
+     ],
+     "level": "abstract"
+    },
+    {
+     "key": "SRC-PMID-26364197",
+     "locators": [
+      "Abstract"
+     ],
+     "level": "abstract"
+    }
+   ],
+   "auto_verdict": "ABSTRACT_ONLY",
+   "verdict": "ABSTRACT_ONLY",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted",
+    "subject_not_named_in_excerpt"
+   ],
+   "reasons": [
+    "source checked at abstract / bibliographic level; no concrete locator"
+   ],
+   "text_sha": "cb63ed105bdd0c95",
+   "text": "Concentrations reported in fatal cases: femoral blood 18 and 22 mg/L (two teenagers); heart blood 54.3, 25.5 and 30.7 µg/mL (three cases); in a further case heart blood 1280 µg/L, femoral blood 1170 µg/L, gastric content"
+  },
+  {
+   "id": "C-BUTANE-LIMITATION-D1",
+   "corpus": "bundle",
+   "container": "butane",
+   "sources": [
+    {
+     "key": "SRC-PMID-26364197",
+     "locators": [
+      "Abstract; Discussion"
+     ],
+     "level": "abstract"
+    }
+   ],
+   "auto_verdict": "ABSTRACT_ONLY",
+   "verdict": "ABSTRACT_ONLY",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [
+    "source checked at abstract / bibliographic level; no concrete locator"
+   ],
+   "text_sha": "727862ced1444d70",
+   "text": "No lethal threshold is established for butane: tissue concentrations vary widely and sampling and storage strongly affect the result. A conclusion cannot rest on the number alone; it is weighed together with the circumst"
+  },
+  {
+   "id": "C-BUTANE-INTERPRETATION-D1",
+   "corpus": "bundle",
+   "container": "butane",
+   "sources": [
+    {
+     "key": "SRC-PMID-26364197",
+     "locators": [
+      "Abstract"
+     ],
+     "level": "abstract"
+    },
+    {
+     "key": "SRC-PMID-28718908",
+     "locators": [
+      "Abstract; Conclusion"
+     ],
+     "level": "abstract"
+    }
+   ],
+   "auto_verdict": "ABSTRACT_ONLY",
+   "verdict": "ABSTRACT_ONLY",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted",
+    "prescriptive"
+   ],
+   "reasons": [
+    "source checked at abstract / bibliographic level; no concrete locator"
+   ],
+   "text_sha": "052bd4cec24ed81c",
+   "text": "Death is caused by asphyxia and/or cardiac arrhythmia. Butane appears in three settings: deliberate inhalation (volatile substance abuse), accidental exposure and homicide. Volatile substance poisoning should be consider"
+  },
+  {
+   "id": "C-GIYASOV-BLUNT-SHARE-01",
+   "corpus": "bundle",
+   "container": "fm-blunt-trauma",
+   "sources": [
+    {
+     "key": "SRC-GIYASOV-FM-2018",
+     "locators": [
+      "2.7-бўлим «Ўтмас жисмлардан жароҳатланиш»"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "NO_LOCATOR",
+   "verdict": "NO_LOCATOR",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [
+    "source read in full but citation names no concrete locator"
+   ],
+   "text_sha": "d5599c8d204928ea",
+   "text": "In Uzbek practice blunt-force injuries predominate: more than 80 per cent of examinations of living persons and about half of the violent deaths examined at autopsy involve them."
+  },
+  {
+   "id": "C-GIYASOV-BLUNT-DEFINITION-01",
+   "corpus": "bundle",
+   "container": "fm-blunt-trauma",
+   "sources": [
+    {
+     "key": "SRC-GIYASOV-FM-2018",
+     "locators": [
+      "2.7-бўлим «Ўтмас жисмлардан жароҳатланиш. Ўтмас жисмларнинг турлари»"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "NO_LOCATOR",
+   "verdict": "NO_LOCATOR",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [
+    "source read in full but citation names no concrete locator"
+   ],
+   "text_sha": "03e275750b92f235",
+   "text": "An object counts as blunt when it acts through a surface; hard (stone, stick), soft (scarf, towel) and elastic (rubber ball) types are distinguished. An injury at the site of impact is direct, one elsewhere is indirect. "
+  },
+  {
+   "id": "C-GIYASOV-BLUNT-MECHANISM-01",
+   "corpus": "bundle",
+   "container": "fm-blunt-trauma",
+   "sources": [
+    {
+     "key": "SRC-GIYASOV-FM-2018",
+     "locators": [
+      "2.8-бўлим «Ўтмас жисмларнинг таъсир механизми»"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "NO_LOCATOR",
+   "verdict": "NO_LOCATOR",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [
+    "source read in full but citation names no concrete locator"
+   ],
+   "text_sha": "b3589871837d491a",
+   "text": "Blunt injuries arise mainly through four mechanisms. Impact is one-sided and brief (0.1–0.01 second or less), producing abrasions, bruises, lacerations, fractures and injury to the brain and internal organs. Compression "
+  },
+  {
+   "id": "C-GIYASOV-ABRASION-STAGES-01",
+   "corpus": "bundle",
+   "container": "fm-blunt-trauma",
+   "sources": [
+    {
+     "key": "SRC-GIYASOV-FM-2018",
+     "locators": [
+      "2.9-бўлим «Ўтмас жисмлардан етказилган жароҳатлар», шилинмалар"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "NO_LOCATOR",
+   "verdict": "NO_LOCATOR",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [
+    "source read in full but citation names no concrete locator"
+   ],
+   "text_sha": "6b431caf6b9f5ec8",
+   "text": "An abrasion is a breach of the superficial skin layers: superficial when only the epidermis is involved, deep when it reaches the papillary layer, and a linear one is called a scratch. Taykov (1951) describes four stages"
+  },
+  {
+   "id": "C-GIYASOV-ABRASION-VALUE-01",
+   "corpus": "bundle",
+   "container": "fm-blunt-trauma",
+   "sources": [
+    {
+     "key": "SRC-GIYASOV-FM-2018",
+     "locators": [
+      "2.9-бўлим «Ўтмас жисмлардан етказилган жароҳатлар», шилинмалар"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "NO_LOCATOR",
+   "verdict": "NO_LOCATOR",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted",
+    "prescriptive"
+   ],
+   "reasons": [
+    "source read in full but citation names no concrete locator"
+   ],
+   "text_sha": "6007ab1b950f783c",
+   "text": "The forensic value of an abrasion: it establishes that mechanical force was applied; it allows the mechanism and the age of the injury to be determined; its site, shape and number may suggest what happened — arc-shaped a"
+  },
+  {
+   "id": "C-GIYASOV-ABRASION-LIMITS-01",
+   "corpus": "bundle",
+   "container": "fm-blunt-trauma",
+   "sources": [
+    {
+     "key": "SRC-GIYASOV-FM-2018",
+     "locators": [
+      "2.9-бўлим «Ўтмас жисмлардан етказилган жароҳатлар», шилинмалар"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "NO_LOCATOR",
+   "verdict": "NO_LOCATOR",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted",
+    "prescriptive"
+   ],
+   "reasons": [
+    "source read in full but citation names no concrete locator"
+   ],
+   "text_sha": "e745ad2892186b0c",
+   "text": "The stage timings are conditional: they depend on the person's age and health, the skin at the injured site and the depth of the abrasion. A crust may form within 4–6 hours and the residual mark persist for 30 days or mo"
+  },
+  {
+   "id": "C-MERCURY-IDENTITY",
+   "corpus": "bundle",
+   "container": "mercury",
+   "sources": [
+    {
+     "key": "SRC-PUBCHEM-23931",
+     "locators": [
+      "Computed Properties"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms"
+   ],
+   "reasons": [],
+   "text_sha": "b8dbac2d80b737ea",
+   "text": "{\"inchikey\": \"QSHDDOUJBYECFT-UHFFFAOYSA-N\", \"iupac_name\": \"mercury\", \"molecular_formula\": \"Hg\", \"molecular_weight\": \"200.59\", \"pubchem_cid\": 23931}"
+  },
+  {
+   "id": "C-ACETIC-ACID-IDENTITY",
+   "corpus": "bundle",
+   "container": "acetic-acid",
+   "sources": [
+    {
+     "key": "SRC-PUBCHEM-176",
+     "locators": [
+      "Computed Properties"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms"
+   ],
+   "reasons": [],
+   "text_sha": "efd961fe41e54b76",
+   "text": "{\"inchikey\": \"QTBSBXVTEAMEQO-UHFFFAOYSA-N\", \"iupac_name\": \"acetic acid\", \"molecular_formula\": \"C2H4O2\", \"molecular_weight\": \"60.05\", \"pubchem_cid\": 176}"
+  },
+  {
+   "id": "C-AMMONIA-IDENTITY",
+   "corpus": "bundle",
+   "container": "ammonia",
+   "sources": [
+    {
+     "key": "SRC-PUBCHEM-222",
+     "locators": [
+      "Computed Properties"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms"
+   ],
+   "reasons": [],
+   "text_sha": "f59e7f710f3e04b4",
+   "text": "{\"inchikey\": \"QGZKDVFQNNGYKY-UHFFFAOYSA-N\", \"iupac_name\": \"azane\", \"molecular_formula\": \"H3N\", \"molecular_weight\": \"17.031\", \"pubchem_cid\": 222}"
   }
  ]
 }

@@ -10,13 +10,13 @@ Verdict = `reviewed` verdict if a ledger entry matches the claim text, otherwise
 |---|---|---|---|---|
 | UNSUPPORTED | 1 | 0 | 0 | 1 |
 | SCOPE_MISMATCH | 0 | 0 | 0 | 0 |
-| ABSTRACT_ONLY | 5 | 167 | 510 | 682 |
-| NO_LOCATOR | 0 | 0 | 19 | 19 |
+| ABSTRACT_ONLY | 11 | 167 | 510 | 688 |
+| NO_LOCATOR | 6 | 0 | 19 | 25 |
 | PARTIAL | 13 | 38 | 21 | 72 |
-| SUPPORTED | 907 | 210 | 480 | 1597 |
-| **claims** | 926 | 415 | 1030 | 2371 |
+| SUPPORTED | 910 | 237 | 480 | 1627 |
+| **claims** | 941 | 442 | 1030 | 2413 |
 
-Automatic verdicts only (before human review overrides): UNSUPPORTED 1, SCOPE_MISMATCH 7, ABSTRACT_ONLY 680, NO_LOCATOR 19, PARTIAL 71, SUPPORTED 1593.
+Automatic verdicts only (before human review overrides): UNSUPPORTED 1, SCOPE_MISMATCH 7, ABSTRACT_ONLY 686, NO_LOCATOR 25, PARTIAL 71, SUPPORTED 1623.
 Reviewed claims (ledger, text hash matches): 48; stale review entries: 0; orphan entries: 0.
 
 Baseline (before fixes): UNSUPPORTED 1, SCOPE_MISMATCH 10, ABSTRACT_ONLY 569, NO_LOCATOR 76, PARTIAL 56, SUPPORTED 1085.
@@ -47,7 +47,7 @@ _none_
 | `guideline.bio.urine_sweat_feces/limitations#4` | singh1980 | source checked at abstract / bibliographic level; no concrete locator | Saliva ajratuvchisi har doim siydik ajratuvchisi bo‘lavermaydi, shuning uchun siydik dog‘idagi guruh natijasi  |
 | `C-EP-ETHANOL-08` | SRC-PM37804205, SRC-PM36346343 | source checked at abstract / bibliographic level; no concrete locator | Limitation for post-mortem blood: ethanol can be formed in a decomposed body by microbial activity and ferment |
 
-### NO_LOCATOR (19)
+### NO_LOCATOR (25)
 
 | Claim | Sources | Reasons | Text |
 |---|---|---|---|
@@ -70,6 +70,12 @@ _none_
 | `guideline.chem.gmt_uz_control_lists/basis#3` | gmt_lex_law813 | source read in full but citation names no concrete locator | Qonun matni bir necha bor o‘zgartirilgan; amaldagi tahrir lex.uz da (kirish sanasi 2026-10-09) [gmt_lex_law813 |
 | `guideline.chem.gmt_uz_control_lists/cautions#1` | gmt_lex_cm330 | source read in full but citation names no concrete locator | Moddaning qaysi ro‘yxatda ekanligi va miqdoriy mezonlar har safar lex.uz dagi amaldagi tahrirdan tekshiriladi  |
 | `guideline.chem.gmt_uz_control_lists/quiz#gmt.law.3` | gmt_lex_cm330, gmt_lex_law813 | source read in full but citation names no concrete locator | Ro‘yxatlar o‘zgarib turadi, shuning uchun moddaning qaysi ro‘yxatda ekanligi har safar lex.uz dagi amaldagi ta |
+| `C-GIYASOV-BLUNT-SHARE-01` | SRC-GIYASOV-FM-2018 | source read in full but citation names no concrete locator | In Uzbek practice blunt-force injuries predominate: more than 80 per cent of examinations of living persons an |
+| `C-GIYASOV-BLUNT-DEFINITION-01` | SRC-GIYASOV-FM-2018 | source read in full but citation names no concrete locator | An object counts as blunt when it acts through a surface; hard (stone, stick), soft (scarf, towel) and elastic |
+| `C-GIYASOV-BLUNT-MECHANISM-01` | SRC-GIYASOV-FM-2018 | source read in full but citation names no concrete locator | Blunt injuries arise mainly through four mechanisms. Impact is one-sided and brief (0.1–0.01 second or less),  |
+| `C-GIYASOV-ABRASION-STAGES-01` | SRC-GIYASOV-FM-2018 | source read in full but citation names no concrete locator | An abrasion is a breach of the superficial skin layers: superficial when only the epidermis is involved, deep  |
+| `C-GIYASOV-ABRASION-VALUE-01` | SRC-GIYASOV-FM-2018 | source read in full but citation names no concrete locator | The forensic value of an abrasion: it establishes that mechanical force was applied; it allows the mechanism a |
+| `C-GIYASOV-ABRASION-LIMITS-01` | SRC-GIYASOV-FM-2018 | source read in full but citation names no concrete locator | The stage timings are conditional: they depend on the person's age and health, the skin at the injured site an |
 
 ## International standards / guidance and jurisdiction
 
@@ -102,13 +108,13 @@ Levels grade the PUBLICATION TYPE only; the criterion is in code, not in the dat
 
 | source type / tier / level | sources |
 |---|---|
-| book/tier3/C | 2 |
-| database/tier2/C | 201 |
+| book/tier3/C | 3 |
+| database/tier2/C | 202 |
 | guideline/tier1/B | 2 |
 | guideline/tier3/C | 1 |
 | journal_article/tier2/A | 8 |
 | journal_article/tier2/B | 234 |
-| journal_article/tier2/C | 49 |
+| journal_article/tier2/C | 52 |
 | journal_article/tier2/D | 32 |
 | legislation/tier1/A | 8 |
 | report/tier3/C | 1 |
@@ -144,6 +150,7 @@ Sources whose level is ungrounded or inconsistent with their own title / type:
 | SRC-PMC9325463 Postmortem forensic toxicology cases: A retrospective review | B | title says (narrative) review but level is A/B (the pipeline rule gives C) |
 | SRC-PMC9822528 The Use of Volatile Substances in Drug-Facilitated Sexual As | C | title says systematic review/meta-analysis but level is not A |
 | SRC-PMC9863810 Atypical Fentanyl Transdermal Patch Consumption and Fataliti | B | title says case report/series but level is not D; title says (narrative) review but level is A/B (the pipeline rule gives C) |
+| SRC-PMID-26364197 Is it worth carrying out determination of N-butane in postmo | C | title says case report/series but level is not D |
 | SRC-US-21CFR1308 21 CFR Part 1308 — Schedules of Controlled Substances | A | a legal instrument has no study-design level; A conflates legal authority with scientific evidence |
 | SRC-UZ-LAW-813-I Закон Республики Узбекистан «О наркотических средствах и пси | A | a legal instrument has no study-design level; A conflates legal authority with scientific evidence |
 
@@ -1567,6 +1574,33 @@ Sources whose level is ungrounded or inconsistent with their own title / type:
 | `court.q.comm_numbers.pitfalls.0` | court_thompson1987 | title | ABSTRACT_ONLY |  |
 | `court.q.comm_numbers.followup.0.a` | court_jcgm100_2008 | scope | ABSTRACT_ONLY |  |
 | `court.q.comm_numbers.followup.1.a` | jones2024units | abstract | ABSTRACT_ONLY |  |
+| `court.q.inv_answer_form.tests` | court_giyasov_fm2018 | sec:1.11 | SUPPORTED |  |
+| `court.q.inv_answer_form.short_answer` | court_giyasov_fm2018 | sec:1.11 | SUPPORTED |  |
+| `court.q.inv_answer_form.documents.0` | court_giyasov_fm2018 | sec:1.11 | SUPPORTED |  |
+| `court.q.inv_answer_form.followup.1.a` | court_giyasov_fm2018 | sec:1.11 | SUPPORTED |  |
+| `court.q.inv_answer_form.limitation.0` | court_giyasov_fm2018 | sec:1.11 | SUPPORTED |  |
+| `court.q.inv_initiative.tests` | court_giyasov_fm2018 | sec:1.9, sec:1.11 | SUPPORTED |  |
+| `court.q.inv_initiative.short_answer` | court_giyasov_fm2018 | sec:1.9, sec:1.11 | SUPPORTED |  |
+| `court.q.inv_initiative.explain.0` | court_giyasov_fm2018 | sec:1.9, sec:1.11 | SUPPORTED |  |
+| `court.q.inv_initiative.followup.0.a` | court_giyasov_fm2018 | sec:1.9, sec:1.11 | SUPPORTED | numbers_or_norms, prescriptive |
+| `court.q.inv_initiative.followup.1.a` | court_giyasov_fm2018 | sec:1.9, sec:1.11 | SUPPORTED |  |
+| `court.q.inv_initiative.limitation.0` | court_giyasov_fm2018 | sec:1.9, sec:1.11 | SUPPORTED | numbers_or_norms, prescriptive |
+| `court.q.inv_out_of_competence.tests` | court_giyasov_fm2018 | sec:1.9, sec:1.10 | SUPPORTED |  |
+| `court.q.inv_out_of_competence.short_answer` | court_giyasov_fm2018 | sec:1.9, sec:1.10 | SUPPORTED |  |
+| `court.q.inv_out_of_competence.explain.0` | court_giyasov_fm2018 | sec:1.9, sec:1.10 | SUPPORTED |  |
+| `court.q.inv_out_of_competence.followup.0.a` | court_giyasov_fm2018 | sec:1.9, sec:1.10 | SUPPORTED |  |
+| `court.q.inv_out_of_competence.followup.1.a` | court_giyasov_fm2018 | sec:1.9, sec:1.10 | SUPPORTED | numbers_or_norms |
+| `court.q.inv_out_of_competence.limitation.0` | court_giyasov_fm2018 | sec:1.9, sec:1.10 | SUPPORTED |  |
+| `court.q.inv_repeat.tests` | court_giyasov_fm2018 | sec:1.10 | SUPPORTED |  |
+| `court.q.inv_repeat.short_answer` | court_giyasov_fm2018 | sec:1.10 | SUPPORTED |  |
+| `court.q.inv_repeat.explain.0` | court_giyasov_fm2018 | sec:1.10 | SUPPORTED | numbers_or_norms, prescriptive |
+| `court.q.inv_repeat.followup.1.a` | court_giyasov_fm2018 | sec:1.10 | SUPPORTED |  |
+| `court.q.inv_repeat.limitation.0` | court_giyasov_fm2018 | sec:1.10 | SUPPORTED |  |
+| `court.q.inv_act_vs_report.tests` | court_giyasov_fm2018 | sec:1.11 | SUPPORTED |  |
+| `court.q.inv_act_vs_report.short_answer` | court_giyasov_fm2018 | sec:1.11 | SUPPORTED |  |
+| `court.q.inv_act_vs_report.documents.0` | court_giyasov_fm2018 | sec:1.11 | SUPPORTED |  |
+| `court.q.inv_act_vs_report.followup.1.a` | court_giyasov_fm2018 | sec:1.11 | SUPPORTED |  |
+| `court.q.inv_act_vs_report.limitation.0` | court_giyasov_fm2018 | sec:1.11 | SUPPORTED |  |
 | `court.p.all_findings.text` | court_ilac_g19_2022<br>court_uz_expertise_law | sec:4.9<br>art:8 | SUPPORTED | numbers_or_norms, prescriptive |
 | `court.p.dont_know.text` | court_enfsi2015 | sec:1.3 | SUPPORTED |  |
 | `court.p.correct_errors.text` | court_ilac_g19_2022 | sec:2.14, sec:3.2 | SUPPORTED |  |
@@ -2522,4 +2556,19 @@ Sources whose level is ungrounded or inconsistent with their own title / type:
 | `C-ABY-ID-01` | SRC-ABY-2025 | ABY.F.27.2025, 3-bo‘lim (AGI-1); ABY.F.28.2025, 3-bo‘lim (AGI-4) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
 | `C-ABYX-BENZIDINE-01` | SRC-PM16497705<br>SRC-PM25757908 | abstract<br>abstract | ABSTRACT_ONLY | paraphrase_not_quoted |
 | `C-ABYX-FLOAT-01` | SRC-PM22733108<br>SRC-PM31286205 | abstract<br>abstract | ABSTRACT_ONLY | numbers_or_norms, paraphrase_not_quoted |
+| `C-BUTANE-METABOLISM_NOTE-D1` | SRC-PMID-26247128 | Abstract; Results | ABSTRACT_ONLY | numbers_or_norms, paraphrase_not_quoted |
+| `C-BUTANE-METABOLITES-D1` | SRC-PMID-26247128 | Abstract; Results | ABSTRACT_ONLY | numbers_or_norms, paraphrase_not_quoted |
+| `C-BUTANE-ANALYTICAL_METHOD-D1` | SRC-PMID-28718908<br>SRC-PMID-26364197 | Abstract; Methods<br>Discussion; sample handling and storage | ABSTRACT_ONLY | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-BUTANE-REPORTED_CONCENTRATION-D1` | SRC-PMID-28718908<br>SRC-PMID-26247128<br>SRC-PMID-26364197 | Abstract<br>Abstract<br>Abstract | ABSTRACT_ONLY | numbers_or_norms, paraphrase_not_quoted, subject_not_named_in_excerpt |
+| `C-BUTANE-LIMITATION-D1` | SRC-PMID-26364197 | Abstract; Discussion | ABSTRACT_ONLY | numbers_or_norms, paraphrase_not_quoted |
+| `C-BUTANE-INTERPRETATION-D1` | SRC-PMID-26364197<br>SRC-PMID-28718908 | Abstract<br>Abstract; Conclusion | ABSTRACT_ONLY | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-GIYASOV-BLUNT-SHARE-01` | SRC-GIYASOV-FM-2018 | 2.7-бўлим «Ўтмас жисмлардан жароҳатланиш» | NO_LOCATOR | numbers_or_norms, paraphrase_not_quoted |
+| `C-GIYASOV-BLUNT-DEFINITION-01` | SRC-GIYASOV-FM-2018 | 2.7-бўлим «Ўтмас жисмлардан жароҳатланиш. Ўтмас жисмларнинг турлари» | NO_LOCATOR | paraphrase_not_quoted |
+| `C-GIYASOV-BLUNT-MECHANISM-01` | SRC-GIYASOV-FM-2018 | 2.8-бўлим «Ўтмас жисмларнинг таъсир механизми» | NO_LOCATOR | numbers_or_norms, paraphrase_not_quoted |
+| `C-GIYASOV-ABRASION-STAGES-01` | SRC-GIYASOV-FM-2018 | 2.9-бўлим «Ўтмас жисмлардан етказилган жароҳатлар», шилинмалар | NO_LOCATOR | numbers_or_norms, paraphrase_not_quoted |
+| `C-GIYASOV-ABRASION-VALUE-01` | SRC-GIYASOV-FM-2018 | 2.9-бўлим «Ўтмас жисмлардан етказилган жароҳатлар», шилинмалар | NO_LOCATOR | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-GIYASOV-ABRASION-LIMITS-01` | SRC-GIYASOV-FM-2018 | 2.9-бўлим «Ўтмас жисмлардан етказилган жароҳатлар», шилинмалар | NO_LOCATOR | numbers_or_norms, paraphrase_not_quoted, prescriptive |
+| `C-MERCURY-IDENTITY` | SRC-PUBCHEM-23931 | Computed Properties | SUPPORTED | numbers_or_norms |
+| `C-ACETIC-ACID-IDENTITY` | SRC-PUBCHEM-176 | Computed Properties | SUPPORTED | numbers_or_norms |
+| `C-AMMONIA-IDENTITY` | SRC-PUBCHEM-222 | Computed Properties | SUPPORTED | numbers_or_norms |
 

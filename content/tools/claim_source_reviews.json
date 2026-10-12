@@ -1,7 +1,16 @@
 {
  "schema": "fe-claim-reviews/1",
  "note": "Human/AI review ledger for content/tools/claim_source_audit.py. 'reviews': one verdict per claim, bound to the SHA-256 prefix of the claim text (an edit makes the entry stale and fails --check). 'locators': passages located in the source itself (sec:/art:/pp:), bound to the claim text hash. 'reference_levels': optional per-reference verification-level overrides. Written with --record-review / --record-locator. Never record a locator that was not actually read in the source.",
- "reference_levels": {},
+ "reference_levels": {
+  "court_giyasov_fm2018": {
+   "level": "fulltext",
+   "basis": "Egasi bergan Ғиёсов 2018 kitobi matni (Google Hujjatlar nusxasi) 2026-10-11 da o'qildi: 1–80 betlar to'liq; da'volar shu qismdan, bo'lim raqami bilan. Keyingi boblar o'qilmagan va ishlatilmagan."
+  },
+  "SRC-GIYASOV-FM-2018": {
+   "level": "fulltext",
+   "basis": "Egasi bergan Ғиёсов 2018 kitobi matni (Google Hujjatlar nusxasi) 2026-10-11 da o'qildi: 1–80 betlar to'liq; da'volar shu qismdan, bo'lim raqami bilan. Keyingi boblar o'qilmagan va ishlatilmagan."
+  }
+ },
  "reviews": [
   {
    "id": "C-ABY-CO-01",

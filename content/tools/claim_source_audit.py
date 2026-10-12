@@ -436,10 +436,13 @@ def load_court_claims(root: pathlib.Path):
     return claims
 
 
-def bundle_ref(s: dict) -> Ref:
+def bundle_ref(s: dict, overrides: dict | None = None) -> Ref:
     note = s.get("notes") or ""
     typ = s.get("source_type") or ""
-    if typ == "journal_article" and re.search(r"BioC|asl matn", note):
+    ov = (overrides or {}).get(s.get("source_id"))
+    if ov:
+        level = ov["level"]
+    elif typ == "journal_article" and re.search(r"BioC|asl matn", note):
         level = "fulltext"
     elif typ == "journal_article":
         level = "abstract"
@@ -468,14 +471,14 @@ def bundle_ref(s: dict) -> Ref:
                teaching=False, pages_total=None)
 
 
-def load_bundle_claims(root: pathlib.Path, retracted: set[str]):
+def load_bundle_claims(root: pathlib.Path, retracted: set[str], ref_levels: dict | None = None):
     path = root / "content/pilot/bundle.json"
     if not path.exists():
         return [], {}
     b = read_json(path)
     refs: dict[str, Ref] = {}
     for s in b["sources"]:
-        r = bundle_ref(s)
+        r = bundle_ref(s, ref_levels)
         if r.pmid in retracted:
             r.verified = False
         refs[s["source_id"]] = r
@@ -833,7 +836,7 @@ def run(root: pathlib.Path, ledger_path: pathlib.Path, teach_text: dict | None =
     teaching_pages.setdefault("dvssm_majmua2025", 350)
 
     claims = load_guideline_claims(root, refs) + load_court_claims(root)
-    bclaims, brefs = load_bundle_claims(root, retracted)
+    bclaims, brefs = load_bundle_claims(root, retracted, ref_levels)
     # locators found in the source itself by a reviewer (ledger "locators"); each entry is
     # bound to the claim text hash, so editing the text invalidates it
     extra_loc = {}
