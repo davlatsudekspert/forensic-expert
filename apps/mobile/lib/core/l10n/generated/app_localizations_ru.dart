@@ -9219,4 +9219,9 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get bookMethodsNote =>
       'Методы исследования из подтверждённых источников (книги преподавателя и пособия): цветные реакции, микрокристаллоскопия, TLC, УФ-спектр, подтверждающий метод. В каждой записи — полное описание, источник и точное место.';
+
+  @override
+  String abySpecimenFrom(String topic) {
+    return 'Объект по ABY: $topic';
+  }
 }

@@ -9129,4 +9129,9 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get bookMethodsNote =>
       'Tekshirish usullari tasdiqlangan manbadan (ustoz kitobi va qo‘llanmalar): rangli reaksiyalar, mikrokristall, TLC, UB spektr, tasdiqlovchi usul. Har yozuvda to‘liq tavsif, manba va aniq joyi bor.';
+
+  @override
+  String abySpecimenFrom(String topic) {
+    return 'ABY bo‘yicha ob’ekt: $topic';
+  }
 }

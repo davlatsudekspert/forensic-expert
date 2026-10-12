@@ -15956,6 +15956,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Analytical methods from confirmed sources (the teacher\'s books and manuals): colour tests, microcrystal tests, TLC, UV spectrum, confirmatory method. Each entry gives the full description, source and exact place.'**
   String get bookMethodsNote;
+
+  /// Row under Specimens: specimens named by the national guide for a topic.
+  ///
+  /// In en, this message translates to:
+  /// **'Specimen per ABY: {topic}'**
+  String abySpecimenFrom(String topic);
 }
 
 class _AppLocalizationsDelegate

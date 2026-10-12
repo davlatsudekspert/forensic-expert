@@ -63,6 +63,26 @@ class SubstanceAnalysisSection extends ConsumerWidget {
           if (knowledge.byId(x.toId) case final e?)
             (e, visibleClaims(e.claims, lang)),
     ].where((x) => x.$2.isNotEmpty).toList();
+    // Ob’ektlar (ABY): har ABY mavzusi bo‘yicha qon / siydik / ichki a’zo —
+    // maqoladan olingan namunalardan oldin turadi.
+    final abySpecimens = [
+      for (final (e, claims) in abyTopics)
+        if ({for (final cl in claims) ...cl.objects}.toList() case final objs
+            when objs.isNotEmpty)
+          (e, objs, claims.firstWhere((cl) => cl.objects.isNotEmpty)),
+    ];
+    List<Widget> abySpecimenRows() => [
+      for (final (e, objs, cl) in abySpecimens)
+        AnalysisRow(
+          key: Key('analysis.abySpecimen.$entityId.${e.id}'),
+          icon: Icons.water_drop_outlined,
+          title: [for (final o in objs) ?abyObjectName(l, o)]
+              .join(FeGlyphs.listSeparator),
+          details: [l.abySpecimenFrom(e.name.resolve(lang))],
+          claim: cl,
+          onTap: null,
+        ),
+    ];
     Widget abyBlock() => Column(
       key: Key('analysis.aby.$entityId'),
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -162,7 +182,7 @@ class SubstanceAnalysisSection extends ConsumerWidget {
         AnalysisPlanEntry(entityId: entityId),
         // 1. Namunalar (biologik ob’ektlar).
         subheader(l.analysisSpecimensTitle),
-        if (a.specimens.isEmpty)
+        if (a.specimens.isEmpty && abySpecimens.isEmpty)
           FeEmptyState(
             key: Key('analysis.noSpecimens.$entityId'),
             icon: Icons.water_drop_outlined,
@@ -171,6 +191,7 @@ class SubstanceAnalysisSection extends ConsumerWidget {
           )
         else ...[
           note(l.analysisSpecimensNote),
+          ...abySpecimenRows(),
           for (final s in a.specimens)
             AnalysisRow(
               // Eski kalit saqlanadi (testlar va chuqur havolalar).

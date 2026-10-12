@@ -11856,5 +11856,14 @@
   "bookMethodsNote": "Analytical methods from confirmed sources (the teacher's books and manuals): colour tests, microcrystal tests, TLC, UV spectrum, confirmatory method. Each entry gives the full description, source and exact place.",
   "@bookMethodsNote": {
     "description": "Note under the textbook-methods heading."
+  },
+  "abySpecimenFrom": "Specimen per ABY: {topic}",
+  "@abySpecimenFrom": {
+    "description": "Row under Specimens: specimens named by the national guide for a topic.",
+    "placeholders": {
+      "topic": {
+        "type": "String"
+      }
+    }
   }
 }

@@ -156,4 +156,40 @@ void main() {
       );
     }
   });
+
+  testWidgets(
+    'THC-COOH: ob’ektlar ABY bo‘yicha (qon, siydik…), maqola — tasdiqlash kerak',
+    (tester) async {
+      await open(tester, Routes.libraryEntry('thc-cooh'));
+      final row = find.byKey(
+        const Key('analysis.abySpecimen.thc-cooh.aby-tox-cannabinoids'),
+      );
+      await scrollTo(tester, row);
+      expect(
+        find.descendant(of: row, matching: find.textContaining('qon')),
+        findsOneWidget,
+      );
+      expect(
+        find.descendant(of: row, matching: find.textContaining('siydik')),
+        findsOneWidget,
+      );
+      expect(
+        find.descendant(
+          of: row,
+          matching: find.textContaining('Tasdiqlangan manba'),
+        ),
+        findsOneWidget,
+      );
+      // maqoladan olingan jigar/buyrak qatori «Tasdiqlash kerak» deb turadi.
+      final liver = find.byKey(const Key('measured.thc-cooh.liver'));
+      await scrollTo(tester, liver);
+      expect(
+        find.descendant(
+          of: liver,
+          matching: find.textContaining('Tasdiqlash kerak'),
+        ),
+        findsOneWidget,
+      );
+    },
+  );
 }

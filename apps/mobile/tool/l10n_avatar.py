@@ -61,3 +61,12 @@ for i, lang in enumerate(("uz", "ru", "en")):
         if lang == "en": d.setdefault("@" + k, {"description": v[3]})
     p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 print("book ok")
+
+SP = {"abySpecimenFrom": ("ABY bo‘yicha ob’ekt: {topic}", "Объект по ABY: {topic}", "Specimen per ABY: {topic}", "Row under Specimens: specimens named by the national guide for a topic.")}
+for i, lang in enumerate(("uz", "ru", "en")):
+    p = ARB / f"app_{lang}.arb"; d = json.loads(p.read_text(encoding="utf-8"))
+    for k, v in SP.items():
+        d.setdefault(k, v[i])
+        if lang == "en": d.setdefault("@" + k, {"description": v[3], "placeholders": {"topic": {"type": "String"}}})
+    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+print("sp ok")

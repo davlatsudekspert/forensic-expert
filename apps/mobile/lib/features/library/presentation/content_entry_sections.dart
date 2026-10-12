@@ -503,6 +503,30 @@ String methodRecordLabel(AppLocalizations l, String field) => switch (field) {
   _ => field,
 };
 
+/// ABY ob’ekt kodi → nom (qon, siydik, jigar…).
+String? abyObjectName(AppLocalizations l, String id) => switch (id) {
+  'blood' => l.abyObjBlood,
+  'urine' => l.abyObjUrine,
+  'liver' => l.abyObjLiver,
+  'gastric' => l.abyObjGastric,
+  'kidney' => l.abyObjKidney,
+  'lung' => l.abyObjLung,
+  'hair' => l.abyObjHair,
+  'brain' => l.abyObjBrain,
+  'muscle' => l.abyObjMuscle,
+  'bile' => l.abyObjBile,
+  'intestine' => l.abyObjIntestine,
+  'trachea' => l.abyObjTrachea,
+  'plasma' => l.abyObjPlasma,
+  'serum' => l.abyObjSerum,
+  'saliva' => l.abyObjSaliva,
+  'semen' => l.abyObjSemen,
+  'faeces' => l.abyObjFaeces,
+  'vomit' => l.abyObjVomit,
+  'organs' => l.abyObjOrgans,
+  _ => null,
+};
+
 /// ABY yozuvining tekshiriladigan ob’ekti: qon, siydik, ichki a’zolar…
 /// ABY matnida aytilmagan bo‘lsa — shu ham ochiq yoziladi, taxmin qilinmaydi.
 class _AbyObjects extends StatelessWidget {
@@ -510,28 +534,7 @@ class _AbyObjects extends StatelessWidget {
 
   final ClaimView claim;
 
-  static String? _name(AppLocalizations l, String id) => switch (id) {
-    'blood' => l.abyObjBlood,
-    'urine' => l.abyObjUrine,
-    'liver' => l.abyObjLiver,
-    'gastric' => l.abyObjGastric,
-    'kidney' => l.abyObjKidney,
-    'lung' => l.abyObjLung,
-    'hair' => l.abyObjHair,
-    'brain' => l.abyObjBrain,
-    'muscle' => l.abyObjMuscle,
-    'bile' => l.abyObjBile,
-    'intestine' => l.abyObjIntestine,
-    'trachea' => l.abyObjTrachea,
-    'plasma' => l.abyObjPlasma,
-    'serum' => l.abyObjSerum,
-    'saliva' => l.abyObjSaliva,
-    'semen' => l.abyObjSemen,
-    'faeces' => l.abyObjFaeces,
-    'vomit' => l.abyObjVomit,
-    'organs' => l.abyObjOrgans,
-    _ => null,
-  };
+  static String? _name(AppLocalizations l, String id) => abyObjectName(l, id);
 
   @override
   Widget build(BuildContext context) {
@@ -1106,7 +1109,7 @@ class ClaimMeta extends StatelessWidget {
         c.accent,
         Icons.verified_outlined,
       ),
-      _ => (l.statusNeedsReview, c.accent, Icons.pending_outlined),
+      _ => (l.needsConfirmationChip, c.accent, Icons.pending_outlined),
     };
     return EvidenceMetaLine(
       statusLabel: label,

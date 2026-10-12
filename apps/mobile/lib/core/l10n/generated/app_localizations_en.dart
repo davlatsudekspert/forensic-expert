@@ -9166,4 +9166,9 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get bookMethodsNote =>
       'Analytical methods from confirmed sources (the teacher\'s books and manuals): colour tests, microcrystal tests, TLC, UV spectrum, confirmatory method. Each entry gives the full description, source and exact place.';
+
+  @override
+  String abySpecimenFrom(String topic) {
+    return 'Specimen per ABY: $topic';
+  }
 }
