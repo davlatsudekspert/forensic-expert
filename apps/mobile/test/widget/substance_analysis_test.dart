@@ -70,7 +70,7 @@ void main() {
       findsOneWidget,
     );
     // Hech biri «tasdiqlangan» emas; dalil darajasi ko‘rinadi.
-    expect(inAnalysis('morphine', find.text('Tekshirilmagan')), findsWidgets);
+    expect(inAnalysis('morphine', find.text('Tasdiqlash kerak')), findsWidgets);
     expect(inAnalysis('morphine', find.text('Tasdiqlangan')), findsNothing);
     // Metabolitlar.
     await see(
@@ -156,20 +156,17 @@ void main() {
     );
   });
 
-  testWidgets('GHB: tahlil ma’lumoti yo‘q — bo‘sh holat, soxta qator yo‘q', (
-    tester,
-  ) async {
-    await open(tester, Routes.libraryEntry('ghb'));
-    await see(tester, find.byKey(const Key('analysis.empty.ghb')));
-    expect(find.byKey(const Key('analysis.ghb')), findsNothing);
-    expect(
-      find.text(
-        'Kontent paketida bu modda uchun hozircha manbali tahlil ma’lumoti '
-        '(namuna, usul yoki metabolit) yo‘q.',
-      ),
-      findsOneWidget,
-    );
-  });
+  testWidgets(
+    'GHB: moddaga xos tahlil yo‘q — soxta qator yo‘q, faqat ABY umumiy bosqichlari',
+    (tester) async {
+      await open(tester, Routes.libraryEntry('ghb'));
+      await see(tester, find.byKey(const Key('analysis.ghb')));
+      // Namuna / metod / metabolit qatorlari to‘qilmaydi.
+      expect(find.byKey(const Key('analysis.aby.ghb')), findsOneWidget);
+      expect(find.byKey(const Key('measured.ghb.blood')), findsNothing);
+      expect(find.byKey(const Key('analysis.empty.ghb')), findsNothing);
+    },
+  );
 
   testWidgets('namuna sahifasi: shu namunada tahlil qilingan moddalar', (
     tester,

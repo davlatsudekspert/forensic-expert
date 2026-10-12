@@ -15962,6 +15962,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Specimen per ABY: {topic}'**
   String abySpecimenFrom(String topic);
+
+  /// Heading of the third layer on the analysis tab.
+  ///
+  /// In en, this message translates to:
+  /// **'Additional information: articles, theses, literature'**
+  String get extraInfoTitle;
+
+  /// Note explaining the literature layer.
+  ///
+  /// In en, this message translates to:
+  /// **'This part comes from international sources (SWGDRUG, UNODC, articles, theses). Not a primary source — needs confirmation. GC-MS and LC-MS/MS methods and forensic cases are in the international scientific layer below.'**
+  String get extraInfoNote;
+
+  /// Heading of the full literature claims list.
+  ///
+  /// In en, this message translates to:
+  /// **'Evidence from the literature (in full)'**
+  String get litClaimsTitle;
 }
 
 class _AppLocalizationsDelegate

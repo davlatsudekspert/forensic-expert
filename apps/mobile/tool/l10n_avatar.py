@@ -70,3 +70,16 @@ for i, lang in enumerate(("uz", "ru", "en")):
         if lang == "en": d.setdefault("@" + k, {"description": v[3], "placeholders": {"topic": {"type": "String"}}})
     p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 print("sp ok")
+
+XT = {
+ "extraInfoTitle": ("Qo‘shimcha ma’lumot: ilmiy maqola, tezis, adabiyot", "Дополнительно: научные статьи, тезисы, литература", "Additional information: articles, theses, literature", "Heading of the third layer on the analysis tab."),
+ "extraInfoNote": ("Bu qism xalqaro manbalardan (SWGDRUG, UNODC, maqola, tezis). Asosiy manba emas — tasdiqlash kerak. GC-MS, LC-MS/MS usullari va sud-tibbiy holatlar pastdagi «Xalqaro ilmiy qatlam»da.", "Эта часть — из международных источников (SWGDRUG, UNODC, статьи, тезисы). Не основной источник — требует подтверждения. Методы GC-MS, LC-MS/MS и судебно-медицинские случаи — ниже, в «Международном научном слое».", "This part comes from international sources (SWGDRUG, UNODC, articles, theses). Not a primary source — needs confirmation. GC-MS and LC-MS/MS methods and forensic cases are in the international scientific layer below.", "Note explaining the literature layer."),
+ "litClaimsTitle": ("Adabiyotdagi dalillar (to‘liq)", "Данные из литературы (полностью)", "Evidence from the literature (in full)", "Heading of the full literature claims list."),
+}
+for i, lang in enumerate(("uz", "ru", "en")):
+    p = ARB / f"app_{lang}.arb"; d = json.loads(p.read_text(encoding="utf-8"))
+    for k, v in XT.items():
+        d.setdefault(k, v[i])
+        if lang == "en": d.setdefault("@" + k, {"description": v[3]})
+    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+print("xt ok")

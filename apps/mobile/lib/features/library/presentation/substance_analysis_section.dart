@@ -89,6 +89,7 @@ class SubstanceAnalysisSection extends ConsumerWidget {
       children: [
         subheader(l.abyOrderTitle),
         note(l.abyOrderNote),
+        ...abySpecimenRows(),
         for (final (e, claims) in abyTopics) ...[
           Padding(
             padding: const EdgeInsets.only(
@@ -134,6 +135,39 @@ class SubstanceAnalysisSection extends ConsumerWidget {
         for (final cl in own)
           if (cl.field == f && cl.fromConfirmedSource && cl.hasStatement) cl,
     ];
+    // 3-qatlam: tasdiqlanmagan (xalqaro maqola, tezis, SWGDRUG/UNODC) dalillar
+    // — GC-MS / LC-MS/MS usullari, sud-tibbiy holatlar, metabolizm.
+    const litOrder = [
+      'immunoassay_screen',
+      'colour_test',
+      'odour_test',
+      'chemical_test',
+      'microcrystal_test',
+      'tlc_system',
+      'uv_spectrum',
+      'photometric_assay',
+      'confirmatory_method',
+      'melting_point',
+    ];
+
+    final litClaims = [
+      for (final f in litOrder)
+        for (final cl in own)
+          if (cl.field == f && !cl.fromConfirmedSource) cl,
+    ];
+    final hasExtra = litClaims.isNotEmpty || !a.isEmpty;
+    Widget litBlock() => Column(
+      key: Key('analysis.lit.$entityId'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        subheader(l.litClaimsTitle),
+        for (final cl in litClaims)
+          Padding(
+            padding: const EdgeInsets.only(bottom: FeSpace.xs),
+            child: ClaimCard(claim: cl),
+          ),
+      ],
+    );
     Widget bookBlock() => Column(
       key: Key('analysis.book.$entityId'),
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -148,13 +182,21 @@ class SubstanceAnalysisSection extends ConsumerWidget {
       ],
     );
 
-    if (a.isEmpty && (abyTopics.isNotEmpty || bookClaims.isNotEmpty)) {
+    if (a.isEmpty &&
+        (abyTopics.isNotEmpty ||
+            bookClaims.isNotEmpty ||
+            litClaims.isNotEmpty)) {
       return Column(
         key: Key('analysis.$entityId'),
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           if (abyTopics.isNotEmpty) abyBlock(),
           if (bookClaims.isNotEmpty) bookBlock(),
+          if (litClaims.isNotEmpty) ...[
+            subheader(l.extraInfoTitle),
+            FeBanner(icon: Icons.menu_book_outlined, text: l.extraInfoNote),
+            litBlock(),
+          ],
         ],
       );
     }
@@ -176,13 +218,24 @@ class SubstanceAnalysisSection extends ConsumerWidget {
           text: l.analysisIntro,
           tone: FeBannerTone.review,
         ),
-        if (abyTopics.isNotEmpty) abyBlock(),
-        if (bookClaims.isNotEmpty) bookBlock(),
         // Pro: shu moddaning to‘liq tahlil rejasi (bepulda qisqa ko‘rinish).
         AnalysisPlanEntry(entityId: entityId),
-        // 1. Namunalar (biologik ob’ektlar).
+        // 1-qatlam: ABY. 2-qatlam: kitob qo‘llanmalari. 3-qatlam: ilmiy
+        // adabiyot (qo‘shimcha) — aralashtirilmaydi, har biri o‘z sarlavhasi
+        // ostida.
+        if (abyTopics.isNotEmpty) abyBlock(),
+        if (bookClaims.isNotEmpty) bookBlock(),
+        if (hasExtra) ...[
+          subheader(l.extraInfoTitle),
+          FeBanner(
+            key: Key('analysis.extra.$entityId'),
+            icon: Icons.menu_book_outlined,
+            text: l.extraInfoNote,
+          ),
+        ],
+        // Namunalar (biologik ob’ektlar) — adabiyotdan.
         subheader(l.analysisSpecimensTitle),
-        if (a.specimens.isEmpty && abySpecimens.isEmpty)
+        if (a.specimens.isEmpty)
           FeEmptyState(
             key: Key('analysis.noSpecimens.$entityId'),
             icon: Icons.water_drop_outlined,
@@ -191,7 +244,6 @@ class SubstanceAnalysisSection extends ConsumerWidget {
           )
         else ...[
           note(l.analysisSpecimensNote),
-          ...abySpecimenRows(),
           for (final s in a.specimens)
             AnalysisRow(
               // Eski kalit saqlanadi (testlar va chuqur havolalar).
@@ -322,6 +374,7 @@ class SubstanceAnalysisSection extends ConsumerWidget {
               },
             ),
         ],
+        if (litClaims.isNotEmpty) litBlock(),
       ],
     );
   }

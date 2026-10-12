@@ -11865,5 +11865,17 @@
         "type": "String"
       }
     }
+  },
+  "extraInfoTitle": "Additional information: articles, theses, literature",
+  "@extraInfoTitle": {
+    "description": "Heading of the third layer on the analysis tab."
+  },
+  "extraInfoNote": "This part comes from international sources (SWGDRUG, UNODC, articles, theses). Not a primary source — needs confirmation. GC-MS and LC-MS/MS methods and forensic cases are in the international scientific layer below.",
+  "@extraInfoNote": {
+    "description": "Note explaining the literature layer."
+  },
+  "litClaimsTitle": "Evidence from the literature (in full)",
+  "@litClaimsTitle": {
+    "description": "Heading of the full literature claims list."
   }
 }

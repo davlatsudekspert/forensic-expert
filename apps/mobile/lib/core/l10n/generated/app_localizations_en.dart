@@ -9171,4 +9171,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String abySpecimenFrom(String topic) {
     return 'Specimen per ABY: $topic';
   }
+
+  @override
+  String get extraInfoTitle =>
+      'Additional information: articles, theses, literature';
+
+  @override
+  String get extraInfoNote =>
+      'This part comes from international sources (SWGDRUG, UNODC, articles, theses). Not a primary source — needs confirmation. GC-MS and LC-MS/MS methods and forensic cases are in the international scientific layer below.';
+
+  @override
+  String get litClaimsTitle => 'Evidence from the literature (in full)';
 }

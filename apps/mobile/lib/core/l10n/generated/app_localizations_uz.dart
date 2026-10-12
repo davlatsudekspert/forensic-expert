@@ -9134,4 +9134,15 @@ class AppLocalizationsUz extends AppLocalizations {
   String abySpecimenFrom(String topic) {
     return 'ABY bo‘yicha ob’ekt: $topic';
   }
+
+  @override
+  String get extraInfoTitle =>
+      'Qo‘shimcha ma’lumot: ilmiy maqola, tezis, adabiyot';
+
+  @override
+  String get extraInfoNote =>
+      'Bu qism xalqaro manbalardan (SWGDRUG, UNODC, maqola, tezis). Asosiy manba emas — tasdiqlash kerak. GC-MS, LC-MS/MS usullari va sud-tibbiy holatlar pastdagi «Xalqaro ilmiy qatlam»da.';
+
+  @override
+  String get litClaimsTitle => 'Adabiyotdagi dalillar (to‘liq)';
 }

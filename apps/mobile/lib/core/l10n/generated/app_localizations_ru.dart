@@ -9224,4 +9224,15 @@ class AppLocalizationsRu extends AppLocalizations {
   String abySpecimenFrom(String topic) {
     return 'Объект по ABY: $topic';
   }
+
+  @override
+  String get extraInfoTitle =>
+      'Дополнительно: научные статьи, тезисы, литература';
+
+  @override
+  String get extraInfoNote =>
+      'Эта часть — из международных источников (SWGDRUG, UNODC, статьи, тезисы). Не основной источник — требует подтверждения. Методы GC-MS, LC-MS/MS и судебно-медицинские случаи — ниже, в «Международном научном слое».';
+
+  @override
+  String get litClaimsTitle => 'Данные из литературы (полностью)';
 }

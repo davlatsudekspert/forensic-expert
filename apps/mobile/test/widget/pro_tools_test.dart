@@ -109,7 +109,7 @@ void main() {
       expect(find.textContaining('Manba: '), findsWidgets);
       expect(find.textContaining('Manbadagi joyi: '), findsWidgets);
       // Hech narsa «Tasdiqlangan» emas; holat ko‘rinadi.
-      expect(find.text('Tekshirilmagan'), findsWidgets);
+      expect(find.text('Tasdiqlash kerak'), findsWidgets);
       expect(find.text('Tasdiqlangan'), findsNothing);
       // Reagent juftligi paketda yo‘q — halol aytiladi (to‘qib chiqarilmaydi).
       expect(find.byKey(const Key('plan.noReagents')), findsWidgets);
