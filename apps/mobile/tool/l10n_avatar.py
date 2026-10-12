@@ -1,0 +1,63 @@
+#!/usr/bin/env python3
+"""Profil rasmi (avatar) matnlari (uz/ru/en). Rasm faqat telefonda saqlanadi."""
+import json, pathlib
+ARB = pathlib.Path(__file__).resolve().parent.parent / "lib/core/l10n/arb"
+K = {
+ "avatarSemantics": ("Profil rasmi", "Фото профиля", "Profile photo", "Semantics label of the profile photo."),
+ "avatarChange": ("Rasmni o‘zgartirish", "Изменить фото", "Change photo", "Sheet title / action for changing the profile photo."),
+ "avatarChoose": ("Galereyadan tanlash", "Выбрать из галереи", "Choose from gallery", "Action: pick a photo from the gallery."),
+ "avatarView": ("Kattalashtirib ko‘rish", "Увеличить", "View larger", "Action: show the profile photo enlarged."),
+ "avatarRemove": ("Rasmni olib tashlash", "Удалить фото", "Remove photo", "Action: remove the profile photo."),
+ "avatarCropTitle": ("Rasmni moslash", "Настройка фото", "Adjust photo", "Title of the crop screen."),
+ "avatarCropHint": ("Suring va barmoqlar bilan yaqinlashtiring", "Двигайте и увеличивайте пальцами", "Drag and pinch to zoom", "Hint on the crop screen."),
+ "avatarSave": ("Saqlash", "Сохранить", "Save", "Save button on the crop screen."),
+ "avatarCancel": ("Bekor qilish", "Отмена", "Cancel", "Cancel button on the crop screen."),
+ "avatarDeviceOnly": ("Rasm faqat shu telefonda saqlanadi, serverga yuborilmaydi.", "Фото хранится только на этом телефоне и не отправляется на сервер.", "The photo stays on this phone only and is never sent to a server.", "Privacy note under the avatar actions."),
+ "avatarError": ("Rasmni ochib bo‘lmadi. Boshqa rasm tanlang.", "Не удалось открыть фото. Выберите другое.", "Could not open the photo. Choose another one.", "Error when the chosen image cannot be read."),
+}
+for i, lang in enumerate(("uz", "ru", "en")):
+    p = ARB / f"app_{lang}.arb"; d = json.loads(p.read_text(encoding="utf-8"))
+    for k, v in K.items():
+        d.setdefault(k, v[i])
+        if lang == "en": d.setdefault("@" + k, {"description": v[3]})
+    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+print("ok")
+
+# Maxfiylik xulosasiga bir gap: profil rasmi faqat qurilmada.
+ADD = {"uz": " Profil rasmingiz (agar qo‘ysangiz) faqat shu qurilmada saqlanadi.",
+       "ru": " Фото профиля (если вы его задали) хранится только на этом устройстве.",
+       "en": " Your profile photo (if you set one) stays on this device only."}
+for lang in ("uz", "ru", "en"):
+    p = ARB / f"app_{lang}.arb"; d = json.loads(p.read_text(encoding="utf-8"))
+    s = d["privacySummary"]
+    if ADD[lang].strip() not in s:
+        marker = "\n\n"
+        i = s.index(marker)
+        d["privacySummary"] = s[:i] + ADD[lang] + s[i:]
+        p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+print("privacy ok")
+
+# ABY tartibi bloki (Tahlil bo'limi): ABY matni faqat o'zbekcha ko'rinadi.
+AB = {
+ "abyOrderTitle": ("ABY bo‘yicha tartib va ob’ekt", "Порядок по ABY и объект", "ABY order and specimen", "Heading of the ABY block on the substance analysis tab (shown in Uzbek only)."),
+ "abyOrderNote": ("Milliy yo‘riqnoma (ABY) bo‘yicha: ekspress test → ajratish → rangli reaksiya → TLC → GC-MS / LC-MS/MS → spektrofotometriya. Har yozuvda qaysi ob’ekt (qon, siydik, ichki a’zo) tekshirilishi ko‘rsatilgan; manba va aniq joyi yozuv ichida.", "По национальному руководству (ABY): экспресс-тест → выделение → цветные реакции → TLC → GC-MS / LC-MS/MS → спектрофотометрия. В каждой записи указан объект (кровь, моча, внутренние органы), источник и точное место.", "Following the national guide (ABY): rapid test → isolation → colour tests → TLC → GC-MS / LC-MS/MS → spectrophotometry. Each entry names the specimen (blood, urine, internal organs), its source and exact place.", "Note under the ABY block heading."),
+}
+for i, lang in enumerate(("uz", "ru", "en")):
+    p = ARB / f"app_{lang}.arb"; d = json.loads(p.read_text(encoding="utf-8"))
+    for k, v in AB.items():
+        d.setdefault(k, v[i])
+        if lang == "en": d.setdefault("@" + k, {"description": v[3]})
+    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+print("aby ok")
+
+BK = {
+ "bookMethodsTitle": ("Kitob qo‘llanmasi bo‘yicha usullar", "Методы по руководствам и учебникам", "Methods from the textbooks and manuals", "Heading of the textbook-methods block on the substance analysis tab."),
+ "bookMethodsNote": ("Tekshirish usullari tasdiqlangan manbadan (ustoz kitobi va qo‘llanmalar): rangli reaksiyalar, mikrokristall, TLC, UB spektr, tasdiqlovchi usul. Har yozuvda to‘liq tavsif, manba va aniq joyi bor.", "Методы исследования из подтверждённых источников (книги преподавателя и пособия): цветные реакции, микрокристаллоскопия, TLC, УФ-спектр, подтверждающий метод. В каждой записи — полное описание, источник и точное место.", "Analytical methods from confirmed sources (the teacher's books and manuals): colour tests, microcrystal tests, TLC, UV spectrum, confirmatory method. Each entry gives the full description, source and exact place.", "Note under the textbook-methods heading."),
+}
+for i, lang in enumerate(("uz", "ru", "en")):
+    p = ARB / f"app_{lang}.arb"; d = json.loads(p.read_text(encoding="utf-8"))
+    for k, v in BK.items():
+        d.setdefault(k, v[i])
+        if lang == "en": d.setdefault("@" + k, {"description": v[3]})
+    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+print("book ok")

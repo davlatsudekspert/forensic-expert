@@ -933,7 +933,7 @@
   "@legalDraftNotice": {
     "description": "Draft notice on legal documents."
   },
-  "privacySummary": "The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically.\n\nInvitations: if you use a colleague’s invitation code, the server stores only the link between the two accounts and a salted hash of your email (to prevent abuse after account re-creation). Inviters see only totals — never your name, email, profile or documents. The app never reads your contacts.\n\nSuggestions & support: the message you send in «Suggestions & support», an optional screenshot (JPEG/PNG/WebP only, up to 5 MB), the request type and your account e-mail are stored on our server only to reply to you and improve the app. Only an authorised FORENSIC EXPERT team administrator can see them; other users never can. Replies are signed «FORENSIC EXPERT team», not with an administrator's name. Administrator actions are logged (without message text). Your consent is requested before a request is sent. Requests and screenshots are not shared with third parties and are not used for advertising or AI training. If you delete your account, your requests, messages and screenshots are deleted permanently.\n\nExpert casebook: your entries (title, case reference, text, linked items and copied statements) are stored only on this device. They are not sent to a server, to telemetry, to AI or to other users, and are not included in backups. An entry is shared or copied only when you press the button. You can delete the casebook at any time via “Casebook → Clear entire casebook”; if you delete the app, the entries are gone too.",
+  "privacySummary": "The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically. Your profile photo (if you set one) stays on this device only.\n\nInvitations: if you use a colleague’s invitation code, the server stores only the link between the two accounts and a salted hash of your email (to prevent abuse after account re-creation). Inviters see only totals — never your name, email, profile or documents. The app never reads your contacts.\n\nSuggestions & support: the message you send in «Suggestions & support», an optional screenshot (JPEG/PNG/WebP only, up to 5 MB), the request type and your account e-mail are stored on our server only to reply to you and improve the app. Only an authorised FORENSIC EXPERT team administrator can see them; other users never can. Replies are signed «FORENSIC EXPERT team», not with an administrator's name. Administrator actions are logged (without message text). Your consent is requested before a request is sent. Requests and screenshots are not shared with third parties and are not used for advertising or AI training. If you delete your account, your requests, messages and screenshots are deleted permanently.\n\nExpert casebook: your entries (title, case reference, text, linked items and copied statements) are stored only on this device. They are not sent to a server, to telemetry, to AI or to other users, and are not included in backups. An entry is shared or copied only when you press the button. You can delete the casebook at any time via “Casebook → Clear entire casebook”; if you delete the app, the entries are gone too.",
   "@privacySummary": {
     "description": "Privacy summary."
   },
@@ -11796,5 +11796,65 @@
   "needsConfirmationBanner": "From international literature (article, thesis): needs confirmation.",
   "@needsConfirmationBanner": {
     "description": "Banner for claims from international literature."
+  },
+  "avatarSemantics": "Profile photo",
+  "@avatarSemantics": {
+    "description": "Semantics label of the profile photo."
+  },
+  "avatarChange": "Change photo",
+  "@avatarChange": {
+    "description": "Sheet title / action for changing the profile photo."
+  },
+  "avatarChoose": "Choose from gallery",
+  "@avatarChoose": {
+    "description": "Action: pick a photo from the gallery."
+  },
+  "avatarView": "View larger",
+  "@avatarView": {
+    "description": "Action: show the profile photo enlarged."
+  },
+  "avatarRemove": "Remove photo",
+  "@avatarRemove": {
+    "description": "Action: remove the profile photo."
+  },
+  "avatarCropTitle": "Adjust photo",
+  "@avatarCropTitle": {
+    "description": "Title of the crop screen."
+  },
+  "avatarCropHint": "Drag and pinch to zoom",
+  "@avatarCropHint": {
+    "description": "Hint on the crop screen."
+  },
+  "avatarSave": "Save",
+  "@avatarSave": {
+    "description": "Save button on the crop screen."
+  },
+  "avatarCancel": "Cancel",
+  "@avatarCancel": {
+    "description": "Cancel button on the crop screen."
+  },
+  "avatarDeviceOnly": "The photo stays on this phone only and is never sent to a server.",
+  "@avatarDeviceOnly": {
+    "description": "Privacy note under the avatar actions."
+  },
+  "avatarError": "Could not open the photo. Choose another one.",
+  "@avatarError": {
+    "description": "Error when the chosen image cannot be read."
+  },
+  "abyOrderTitle": "ABY order and specimen",
+  "@abyOrderTitle": {
+    "description": "Heading of the ABY block on the substance analysis tab (shown in Uzbek only)."
+  },
+  "abyOrderNote": "Following the national guide (ABY): rapid test → isolation → colour tests → TLC → GC-MS / LC-MS/MS → spectrophotometry. Each entry names the specimen (blood, urine, internal organs), its source and exact place.",
+  "@abyOrderNote": {
+    "description": "Note under the ABY block heading."
+  },
+  "bookMethodsTitle": "Methods from the textbooks and manuals",
+  "@bookMethodsTitle": {
+    "description": "Heading of the textbook-methods block on the substance analysis tab."
+  },
+  "bookMethodsNote": "Analytical methods from confirmed sources (the teacher's books and manuals): colour tests, microcrystal tests, TLC, UV spectrum, confirmatory method. Each entry gives the full description, source and exact place.",
+  "@bookMethodsNote": {
+    "description": "Note under the textbook-methods heading."
   }
 }

@@ -1,3 +1,4 @@
+import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -52,6 +53,91 @@ class SubstanceAnalysisSection extends ConsumerWidget {
       child: Text(text, style: t.bodySmall?.copyWith(color: c.textSecondary)),
     );
 
+    // ABY bo‘yicha tartib: bog‘langan ABY mavzulari va ularning yozuvlari
+    // (ob’ekt — qon / siydik / ichki a’zo — har yozuvda). ABY faqat o‘zbek
+    // tilida ko‘rinadi (`locale_only: uz`), shuning uchun boshqa tilda bo‘sh.
+    final abyTopics = [
+      for (final x in ref.watch(evidenceDataProvider).linksFrom(entityId))
+        if (x.relation == LinkRelation.relatedTopic &&
+            x.basis == 'editorial:aby-order')
+          if (knowledge.byId(x.toId) case final e?)
+            (e, visibleClaims(e.claims, lang)),
+    ].where((x) => x.$2.isNotEmpty).toList();
+    Widget abyBlock() => Column(
+      key: Key('analysis.aby.$entityId'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        subheader(l.abyOrderTitle),
+        note(l.abyOrderNote),
+        for (final (e, claims) in abyTopics) ...[
+          Padding(
+            padding: const EdgeInsets.only(
+              top: FeSpace.xs,
+              bottom: FeSpace.xxs,
+            ),
+            child: Text(
+              e.name.resolve(lang),
+              style: t.titleSmall?.copyWith(color: c.accent),
+            ),
+          ),
+          for (final cl in claims)
+            Padding(
+              padding: const EdgeInsets.only(bottom: FeSpace.xs),
+              child: ClaimCard(claim: cl),
+            ),
+        ],
+      ],
+    );
+
+    // Kitob qo‘llanmalari (Yuldashev GMT/TOKS va b.) bo‘yicha moddaga xos
+    // tahlil yozuvlari — ABY tartibida: ekspress → rangli → mikrokristall →
+    // TLC → spektr → tasdiqlovchi → suyuqlanish. Har biri to‘liq matn va
+    // aniq joyi bilan.
+    const bookOrder = [
+      'immunoassay_screen',
+      'colour_test',
+      'odour_test',
+      'microcrystal_test',
+      'tlc_system',
+      'uv_spectrum',
+      'photometric_assay',
+      'confirmatory_method',
+      'melting_point',
+      'method_caveat',
+    ];
+    final own = visibleClaims(
+      library.byId(entityId)?.details?.claims ?? const <ClaimView>[],
+      lang,
+    );
+    final bookClaims = [
+      for (final f in bookOrder)
+        for (final cl in own)
+          if (cl.field == f && cl.fromConfirmedSource && cl.hasStatement) cl,
+    ];
+    Widget bookBlock() => Column(
+      key: Key('analysis.book.$entityId'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        subheader(l.bookMethodsTitle),
+        note(l.bookMethodsNote),
+        for (final cl in bookClaims)
+          Padding(
+            padding: const EdgeInsets.only(bottom: FeSpace.xs),
+            child: ClaimCard(claim: cl),
+          ),
+      ],
+    );
+
+    if (a.isEmpty && (abyTopics.isNotEmpty || bookClaims.isNotEmpty)) {
+      return Column(
+        key: Key('analysis.$entityId'),
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          if (abyTopics.isNotEmpty) abyBlock(),
+          if (bookClaims.isNotEmpty) bookBlock(),
+        ],
+      );
+    }
     if (a.isEmpty) {
       return FeEmptyState(
         key: Key('analysis.empty.$entityId'),
@@ -70,6 +156,8 @@ class SubstanceAnalysisSection extends ConsumerWidget {
           text: l.analysisIntro,
           tone: FeBannerTone.review,
         ),
+        if (abyTopics.isNotEmpty) abyBlock(),
+        if (bookClaims.isNotEmpty) bookBlock(),
         // Pro: shu moddaning to‘liq tahlil rejasi (bepulda qisqa ko‘rinish).
         AnalysisPlanEntry(entityId: entityId),
         // 1. Namunalar (biologik ob’ektlar).

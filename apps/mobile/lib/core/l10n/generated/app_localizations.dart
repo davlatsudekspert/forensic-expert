@@ -1423,7 +1423,7 @@ abstract class AppLocalizations {
   /// Privacy summary.
   ///
   /// In en, this message translates to:
-  /// **'The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically.\n\nInvitations: if you use a colleague’s invitation code, the server stores only the link between the two accounts and a salted hash of your email (to prevent abuse after account re-creation). Inviters see only totals — never your name, email, profile or documents. The app never reads your contacts.\n\nSuggestions & support: the message you send in «Suggestions & support», an optional screenshot (JPEG/PNG/WebP only, up to 5 MB), the request type and your account e-mail are stored on our server only to reply to you and improve the app. Only an authorised FORENSIC EXPERT team administrator can see them; other users never can. Replies are signed «FORENSIC EXPERT team», not with an administrator\'s name. Administrator actions are logged (without message text). Your consent is requested before a request is sent. Requests and screenshots are not shared with third parties and are not used for advertising or AI training. If you delete your account, your requests, messages and screenshots are deleted permanently.\n\nExpert casebook: your entries (title, case reference, text, linked items and copied statements) are stored only on this device. They are not sent to a server, to telemetry, to AI or to other users, and are not included in backups. An entry is shared or copied only when you press the button. You can delete the casebook at any time via “Casebook → Clear entire casebook”; if you delete the app, the entries are gone too.'**
+  /// **'The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically. Your profile photo (if you set one) stays on this device only.\n\nInvitations: if you use a colleague’s invitation code, the server stores only the link between the two accounts and a salted hash of your email (to prevent abuse after account re-creation). Inviters see only totals — never your name, email, profile or documents. The app never reads your contacts.\n\nSuggestions & support: the message you send in «Suggestions & support», an optional screenshot (JPEG/PNG/WebP only, up to 5 MB), the request type and your account e-mail are stored on our server only to reply to you and improve the app. Only an authorised FORENSIC EXPERT team administrator can see them; other users never can. Replies are signed «FORENSIC EXPERT team», not with an administrator\'s name. Administrator actions are logged (without message text). Your consent is requested before a request is sent. Requests and screenshots are not shared with third parties and are not used for advertising or AI training. If you delete your account, your requests, messages and screenshots are deleted permanently.\n\nExpert casebook: your entries (title, case reference, text, linked items and copied statements) are stored only on this device. They are not sent to a server, to telemetry, to AI or to other users, and are not included in backups. An entry is shared or copied only when you press the button. You can delete the casebook at any time via “Casebook → Clear entire casebook”; if you delete the app, the entries are gone too.'**
   String get privacySummary;
 
   /// About text.
@@ -15866,6 +15866,96 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'From international literature (article, thesis): needs confirmation.'**
   String get needsConfirmationBanner;
+
+  /// Semantics label of the profile photo.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile photo'**
+  String get avatarSemantics;
+
+  /// Sheet title / action for changing the profile photo.
+  ///
+  /// In en, this message translates to:
+  /// **'Change photo'**
+  String get avatarChange;
+
+  /// Action: pick a photo from the gallery.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose from gallery'**
+  String get avatarChoose;
+
+  /// Action: show the profile photo enlarged.
+  ///
+  /// In en, this message translates to:
+  /// **'View larger'**
+  String get avatarView;
+
+  /// Action: remove the profile photo.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove photo'**
+  String get avatarRemove;
+
+  /// Title of the crop screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Adjust photo'**
+  String get avatarCropTitle;
+
+  /// Hint on the crop screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Drag and pinch to zoom'**
+  String get avatarCropHint;
+
+  /// Save button on the crop screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get avatarSave;
+
+  /// Cancel button on the crop screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get avatarCancel;
+
+  /// Privacy note under the avatar actions.
+  ///
+  /// In en, this message translates to:
+  /// **'The photo stays on this phone only and is never sent to a server.'**
+  String get avatarDeviceOnly;
+
+  /// Error when the chosen image cannot be read.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open the photo. Choose another one.'**
+  String get avatarError;
+
+  /// Heading of the ABY block on the substance analysis tab (shown in Uzbek only).
+  ///
+  /// In en, this message translates to:
+  /// **'ABY order and specimen'**
+  String get abyOrderTitle;
+
+  /// Note under the ABY block heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Following the national guide (ABY): rapid test → isolation → colour tests → TLC → GC-MS / LC-MS/MS → spectrophotometry. Each entry names the specimen (blood, urine, internal organs), its source and exact place.'**
+  String get abyOrderNote;
+
+  /// Heading of the textbook-methods block on the substance analysis tab.
+  ///
+  /// In en, this message translates to:
+  /// **'Methods from the textbooks and manuals'**
+  String get bookMethodsTitle;
+
+  /// Note under the textbook-methods heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Analytical methods from confirmed sources (the teacher\'s books and manuals): colour tests, microcrystal tests, TLC, UV spectrum, confirmatory method. Each entry gives the full description, source and exact place.'**
+  String get bookMethodsNote;
 }
 
 class _AppLocalizationsDelegate

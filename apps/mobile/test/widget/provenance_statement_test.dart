@@ -86,4 +86,74 @@ void main() {
       findsNothing,
     );
   });
+
+  testWidgets('modda «Tahlil»ida ABY tartibi: ob’ekt va aniq joyi bilan', (
+    tester,
+  ) async {
+    await open(tester, Routes.libraryEntry('phenobarbital'));
+    final block = find.byKey(const Key('analysis.aby.phenobarbital'));
+    await scrollTo(tester, block);
+    expect(find.text('ABY bo‘yicha tartib va ob’ekt'), findsOneWidget);
+    // Barbituratlar yozuvi: to‘liq usul matni va ob’ekt qatori.
+    final card = find.byKey(const Key('claim.C-ABY-TOX-BAR-01'));
+    await scrollTo(tester, card);
+    expect(
+      find.descendant(
+        of: card,
+        matching: find.textContaining('10 ml qon yoki siydik'),
+      ),
+      findsOneWidget,
+    );
+    expect(
+      find.byKey(const Key('claim.objects.C-ABY-TOX-BAR-01')),
+      findsOneWidget,
+    );
+    expect(
+      find.descendant(of: card, matching: find.textContaining('ABY.G.6.2025')),
+      findsOneWidget,
+    );
+  });
+
+  testWidgets('ABY bloki rus tilida umuman ko‘rinmaydi', (tester) async {
+    await pumpApp(
+      tester,
+      settings: completedSettings(lang: 'ru'),
+      initialLocation: Routes.libraryEntry('phenobarbital'),
+      testFixtures: false,
+      overrides: [
+        ...pilot.overrides,
+        entitlementServiceProvider.overrideWithValue(FakeStore(owned: true)),
+      ],
+    );
+    for (var i = 0; i < 40; i++) {
+      await tester.drag(find.byType(Scrollable).first, const Offset(0, -300));
+      await tester.pump();
+    }
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('analysis.aby.phenobarbital')), findsNothing);
+    expect(find.byKey(const Key('claim.C-ABY-TOX-BAR-01')), findsNothing);
+  });
+
+  testWidgets('modda «Tahlil»ida kitob usullari: rangli, TLC, UB — to‘liq', (
+    tester,
+  ) async {
+    await open(tester, Routes.libraryEntry('phenobarbital'));
+    await scrollTo(
+      tester,
+      find.byKey(const Key('analysis.book.phenobarbital')),
+    );
+    for (final (id, text) in const [
+      ('C-SM-PHENOBARBITAL-COLOUR_TEST-02', 'Kobalt tuzi, ammiak va metanol'),
+      ('C-SM-PHENOBARBITAL-TLC_SYSTEM-01', 'xloroform–n-butanol'),
+      ('C-SM-PHENOBARBITAL-UV_SPECTRUM-01', '239, 254 nm'),
+    ]) {
+      final card = find.byKey(Key('claim.$id'));
+      await scrollTo(tester, card);
+      expect(
+        find.descendant(of: card, matching: find.textContaining(text)),
+        findsWidgets,
+        reason: id,
+      );
+    }
+  });
 }

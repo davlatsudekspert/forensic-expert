@@ -742,7 +742,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get privacySummary =>
-      'The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically.\n\nInvitations: if you use a colleague’s invitation code, the server stores only the link between the two accounts and a salted hash of your email (to prevent abuse after account re-creation). Inviters see only totals — never your name, email, profile or documents. The app never reads your contacts.\n\nSuggestions & support: the message you send in «Suggestions & support», an optional screenshot (JPEG/PNG/WebP only, up to 5 MB), the request type and your account e-mail are stored on our server only to reply to you and improve the app. Only an authorised FORENSIC EXPERT team administrator can see them; other users never can. Replies are signed «FORENSIC EXPERT team», not with an administrator\'s name. Administrator actions are logged (without message text). Your consent is requested before a request is sent. Requests and screenshots are not shared with third parties and are not used for advertising or AI training. If you delete your account, your requests, messages and screenshots are deleted permanently.\n\nExpert casebook: your entries (title, case reference, text, linked items and copied statements) are stored only on this device. They are not sent to a server, to telemetry, to AI or to other users, and are not included in backups. An entry is shared or copied only when you press the button. You can delete the casebook at any time via “Casebook → Clear entire casebook”; if you delete the app, the entries are gone too.';
+      'The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically. Your profile photo (if you set one) stays on this device only.\n\nInvitations: if you use a colleague’s invitation code, the server stores only the link between the two accounts and a salted hash of your email (to prevent abuse after account re-creation). Inviters see only totals — never your name, email, profile or documents. The app never reads your contacts.\n\nSuggestions & support: the message you send in «Suggestions & support», an optional screenshot (JPEG/PNG/WebP only, up to 5 MB), the request type and your account e-mail are stored on our server only to reply to you and improve the app. Only an authorised FORENSIC EXPERT team administrator can see them; other users never can. Replies are signed «FORENSIC EXPERT team», not with an administrator\'s name. Administrator actions are logged (without message text). Your consent is requested before a request is sent. Requests and screenshots are not shared with third parties and are not used for advertising or AI training. If you delete your account, your requests, messages and screenshots are deleted permanently.\n\nExpert casebook: your entries (title, case reference, text, linked items and copied statements) are stored only on this device. They are not sent to a server, to telemetry, to AI or to other users, and are not included in backups. An entry is shared or copied only when you press the button. You can delete the casebook at any time via “Casebook → Clear entire casebook”; if you delete the app, the entries are gone too.';
 
   @override
   String get aboutBody =>
@@ -9118,4 +9118,52 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get needsConfirmationBanner =>
       'From international literature (article, thesis): needs confirmation.';
+
+  @override
+  String get avatarSemantics => 'Profile photo';
+
+  @override
+  String get avatarChange => 'Change photo';
+
+  @override
+  String get avatarChoose => 'Choose from gallery';
+
+  @override
+  String get avatarView => 'View larger';
+
+  @override
+  String get avatarRemove => 'Remove photo';
+
+  @override
+  String get avatarCropTitle => 'Adjust photo';
+
+  @override
+  String get avatarCropHint => 'Drag and pinch to zoom';
+
+  @override
+  String get avatarSave => 'Save';
+
+  @override
+  String get avatarCancel => 'Cancel';
+
+  @override
+  String get avatarDeviceOnly =>
+      'The photo stays on this phone only and is never sent to a server.';
+
+  @override
+  String get avatarError => 'Could not open the photo. Choose another one.';
+
+  @override
+  String get abyOrderTitle => 'ABY order and specimen';
+
+  @override
+  String get abyOrderNote =>
+      'Following the national guide (ABY): rapid test → isolation → colour tests → TLC → GC-MS / LC-MS/MS → spectrophotometry. Each entry names the specimen (blood, urine, internal organs), its source and exact place.';
+
+  @override
+  String get bookMethodsTitle => 'Methods from the textbooks and manuals';
+
+  @override
+  String get bookMethodsNote =>
+      'Analytical methods from confirmed sources (the teacher\'s books and manuals): colour tests, microcrystal tests, TLC, UV spectrum, confirmatory method. Each entry gives the full description, source and exact place.';
 }

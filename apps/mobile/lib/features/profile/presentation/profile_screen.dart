@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../app/account.dart';
 import '../../../app/app_info.dart';
+import '../../../app/avatar.dart';
 import '../../../app/professional.dart';
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
@@ -26,6 +27,7 @@ import '../../professional/presentation/verification_screens.dart';
 import '../../professional/professional_strings.dart';
 import '../../referral/presentation/invite_card.dart';
 import '../../support/presentation/support_widgets.dart';
+import 'avatar_widgets.dart';
 import 'subscription_ui.dart';
 
 class ProfileScreen extends ConsumerWidget {
@@ -661,7 +663,7 @@ class _Row extends StatelessWidget {
 
 /// Profil kartasi: ism (bo‘lsa), foydalanish rejimi, rol. Professional
 /// rejim — maqom emas; maqom alohida «Tasdiqlash» bo‘limida.
-class _IdentityCard extends StatelessWidget {
+class _IdentityCard extends ConsumerWidget {
   const _IdentityCard({
     required this.mode,
     required this.declaredRole,
@@ -673,7 +675,7 @@ class _IdentityCard extends StatelessWidget {
   final LocalUserProfile profile;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
     final t = Theme.of(context).textTheme;
     final isStudent = mode == UserMode.student;
@@ -706,6 +708,7 @@ class _IdentityCard extends StatelessWidget {
         .map((w) => w.characters.first.toUpperCase())
         .join();
     const muted = Color(0xFFC9D2E0);
+    final photo = ref.watch(avatarProvider).value;
     return Padding(
       padding: const EdgeInsets.only(top: FeSpace.sm),
       child: Material(
@@ -726,33 +729,72 @@ class _IdentityCard extends StatelessWidget {
               padding: const EdgeInsets.all(FeSpace.md),
               child: Row(
                 children: [
-                  Container(
-                    width: 56,
-                    height: 56,
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: const Color(0x1AFFFFFF),
-                      border: Border.all(
-                        color: const Color(0xFFC9A75E),
-                        width: 1.5,
+                  Semantics(
+                    label: l.avatarSemantics,
+                    button: true,
+                    child: GestureDetector(
+                      key: const Key('profile.avatar'),
+                      behavior: HitTestBehavior.opaque,
+                      onTap: () => showAvatarActions(context, ref),
+                      child: SizedBox(
+                        width: 56,
+                        height: 56,
+                        child: Stack(
+                          clipBehavior: Clip.none,
+                          children: [
+                            Container(
+                              width: 56,
+                              height: 56,
+                              alignment: Alignment.center,
+                              clipBehavior: Clip.antiAlias,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: const Color(0x1AFFFFFF),
+                                border: Border.all(
+                                  color: const Color(0xFFC9A75E),
+                                  width: 1.5,
+                                ),
+                              ),
+                              child: photo != null
+                                  ? Image.memory(
+                                      photo,
+                                      width: 56,
+                                      height: 56,
+                                      fit: BoxFit.cover,
+                                    )
+                                  : initials != null
+                                  ? Text(
+                                      initials,
+                                      style: t.titleMedium?.copyWith(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.w700,
+                                        letterSpacing: 1,
+                                      ),
+                                    )
+                                  : Icon(
+                                      isStudent
+                                          ? Icons.school_outlined
+                                          : Icons.biotech_outlined,
+                                      color: muted,
+                                    ),
+                            ),
+                            const Positioned(
+                              right: -2,
+                              bottom: -2,
+                              child: CircleAvatar(
+                                radius: 10,
+                                backgroundColor: Color(0xFFC9A75E),
+                                child: Icon(
+                                  Icons.photo_camera_outlined,
+                                  size: 12,
+                                  color: Color(0xFF0F1E3D),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
-                    child: initials != null
-                        ? Text(
-                            initials,
-                            style: t.titleMedium?.copyWith(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w700,
-                              letterSpacing: 1,
-                            ),
-                          )
-                        : Icon(
-                            isStudent
-                                ? Icons.school_outlined
-                                : Icons.biotech_outlined,
-                            color: muted,
-                          ),
                   ),
                   const SizedBox(width: FeSpace.md),
                   Expanded(
