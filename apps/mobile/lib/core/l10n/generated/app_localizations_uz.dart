@@ -9063,4 +9063,22 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get abyObjOrgans => 'ichki a’zolar';
+
+  @override
+  String get provOwnWordsNote =>
+      'Manbadagi mazmun o‘z so‘zlarimiz bilan berilgan; asl matn ko‘chirilmagan. Aniq joyi quyida.';
+
+  @override
+  String get confirmedSourceBanner =>
+      'Tasdiqlangan manba asosida: milliy yo‘riqnoma (ABY) yoki ustoz kitobi. Aniq joyi ko‘rsatilgan.';
+
+  @override
+  String get confirmedSourceChip => 'Tasdiqlangan manba';
+
+  @override
+  String get needsConfirmationChip => 'Tasdiqlash kerak';
+
+  @override
+  String get needsConfirmationBanner =>
+      'Xalqaro adabiyotdan (maqola, tezis): tasdiqlash kerak.';
 }

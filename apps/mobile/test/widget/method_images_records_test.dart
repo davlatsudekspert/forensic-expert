@@ -138,9 +138,7 @@ void main() {
     await open(tester, 'uz', Routes.knowledgeEntry('method-tlc'));
     await tester.pumpAndSettle();
     expect(
-      pilot.evidence
-          .imagesFor('method-tlc')
-          .where(isOtherSubstanceExample),
+      pilot.evidence.imagesFor('method-tlc').where(isOtherSubstanceExample),
       isEmpty,
       reason: 'rasm o‘zi ko‘rsatayotgan moddaga ko‘chirilgan',
     );
@@ -151,9 +149,7 @@ void main() {
     tester,
   ) async {
     expect(
-      pilot.evidence
-          .imagesFor('thc')
-          .map((m) => m.id),
+      pilot.evidence.imagesFor('thc').map((m) => m.id),
       contains('IMG-EXT-pmc9558087-ac2c01627_0004'),
     );
   });

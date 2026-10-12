@@ -243,9 +243,17 @@ class ProvenanceSheet extends ConsumerWidget {
         const SizedBox(height: FeSpace.xs),
         FeBanner(
           key: const Key('provenance.verification'),
-          icon: verified ? Icons.verified_outlined : Icons.pending_outlined,
-          text: verified ? l.provHumanVerified : l.provNotVerified,
-          tone: verified ? FeBannerTone.info : FeBannerTone.review,
+          icon: (verified || claim.fromConfirmedSource)
+              ? Icons.verified_outlined
+              : Icons.pending_outlined,
+          text: verified
+              ? l.provHumanVerified
+              : claim.fromConfirmedSource
+              ? l.confirmedSourceBanner
+              : l.needsConfirmationBanner,
+          tone: (verified || claim.fromConfirmedSource)
+              ? FeBannerTone.info
+              : FeBannerTone.review,
         ),
         const SizedBox(height: FeSpace.xs),
         ClaimLifecycleBanners(claim: claim),
@@ -257,7 +265,23 @@ class ProvenanceSheet extends ConsumerWidget {
             text: claim.excerpt!,
             large: true,
           )
-        else
+        else if (claim.statementFor(
+              Localizations.localeOf(context).languageCode,
+            )
+            case final own?) ...[
+          // O‘z so‘zimiz bilan yozilgan da‘vo: matnning o‘zi ko‘rsatiladi
+          // (avval bu yerda «iqtibos ko‘rsatilmaydi» chiqib, tahlil
+          // ko‘rinmay qolardi).
+          Padding(
+            key: const Key('provenance.statement'),
+            padding: const EdgeInsets.symmetric(vertical: 2),
+            child: SelectableText(own, style: t.bodyMedium),
+          ),
+          line(l.provOwnWordsNote),
+          if (claim.locatorFor(Localizations.localeOf(context).languageCode)
+              case final loc?)
+            line(loc),
+        ] else
           line(l.detailExcerptWithheld),
         if (location != null)
           line(l.provLocation(localizedSectionName(l, location))),

@@ -176,8 +176,9 @@ void main() {
     expect(SourcesAuthorsScreen.languageCode, 'uz');
   });
 
-  testWidgets('ABY yozuvida ob’ekt alohida qator bo‘lib turadi (qon, siydik)',
-      (tester) async {
+  testWidgets('ABY yozuvida ob’ekt alohida qator bo‘lib turadi (qon, siydik)', (
+    tester,
+  ) async {
     await pumpApp(
       tester,
       settings: completedSettings(lang: 'uz'),

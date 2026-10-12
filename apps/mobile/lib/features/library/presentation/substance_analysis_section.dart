@@ -275,7 +275,11 @@ class AnalysisRow extends StatelessWidget {
                     ),
                   if (claim case final cl?) ...[
                     const SizedBox(height: 2),
-                    ClaimMeta(status: cl.status, level: cl.evidenceLevel),
+                    ClaimMeta(
+                      status: cl.status,
+                      level: cl.evidenceLevel,
+                      confirmedSource: cl.fromConfirmedSource,
+                    ),
                   ],
                 ],
               ),

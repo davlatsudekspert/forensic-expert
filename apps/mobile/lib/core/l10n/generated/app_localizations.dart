@@ -15836,6 +15836,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'internal organs'**
   String get abyObjOrgans;
+
+  /// Note under a claim written in our own words, shown in the provenance sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'The content of the source is given in our own words; the original text is not copied. The exact place is below.'**
+  String get provOwnWordsNote;
+
+  /// Banner for claims resting on an owner-confirmed source.
+  ///
+  /// In en, this message translates to:
+  /// **'Based on a confirmed source: the national guide (ABY) or the teacher\'s textbook. The exact place is given.'**
+  String get confirmedSourceBanner;
+
+  /// Chip: the claim's source is confirmed.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirmed source'**
+  String get confirmedSourceChip;
+
+  /// Chip: a claim from international literature still needs confirmation.
+  ///
+  /// In en, this message translates to:
+  /// **'Needs confirmation'**
+  String get needsConfirmationChip;
+
+  /// Banner for claims from international literature.
+  ///
+  /// In en, this message translates to:
+  /// **'From international literature (article, thesis): needs confirmation.'**
+  String get needsConfirmationBanner;
 }
 
 class _AppLocalizationsDelegate

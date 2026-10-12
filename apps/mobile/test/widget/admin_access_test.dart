@@ -228,44 +228,45 @@ void main() {
     expect(find.text('Granted: Student Pro'), findsOneWidget);
   });
 
-  testWidgets('admin: olib tashlash tasdiq so‘raydi; bekor qilsa — yubormaydi', (
-    tester,
-  ) async {
-    final acc = _FakeAccount(
-      access: const ServerAccess(isAdmin: true),
-      data: _dash,
-    );
-    await pumpApp(
-      tester,
-      settings: completedSettings(),
-      initialLocation: Routes.admin,
-      overrides: [
-        authRepositoryProvider.overrideWithValue(await signedInMockAuth()),
-        accountServiceProvider.overrideWithValue(acc),
-      ],
-    );
-    final email = find.byKey(const Key('admin.grantEmail'));
-    await tester.scrollUntilVisible(
-      email,
-      300,
-      scrollable: find.byType(Scrollable).first,
-    );
-    await tester.pumpAndSettle();
-    await tester.enterText(email, 'friend@lab.uz');
-    await tester.pumpAndSettle();
-    await tester.tap(find.byKey(const Key('admin.revoke')));
-    await tester.pumpAndSettle();
-    expect(find.text('Remove access?'), findsOneWidget);
-    await tester.tap(find.byKey(const Key('admin.revoke.cancel')));
-    await tester.pumpAndSettle();
-    expect(acc.grants, isEmpty);
+  testWidgets(
+    'admin: olib tashlash tasdiq so‘raydi; bekor qilsa — yubormaydi',
+    (tester) async {
+      final acc = _FakeAccount(
+        access: const ServerAccess(isAdmin: true),
+        data: _dash,
+      );
+      await pumpApp(
+        tester,
+        settings: completedSettings(),
+        initialLocation: Routes.admin,
+        overrides: [
+          authRepositoryProvider.overrideWithValue(await signedInMockAuth()),
+          accountServiceProvider.overrideWithValue(acc),
+        ],
+      );
+      final email = find.byKey(const Key('admin.grantEmail'));
+      await tester.scrollUntilVisible(
+        email,
+        300,
+        scrollable: find.byType(Scrollable).first,
+      );
+      await tester.pumpAndSettle();
+      await tester.enterText(email, 'friend@lab.uz');
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const Key('admin.revoke')));
+      await tester.pumpAndSettle();
+      expect(find.text('Remove access?'), findsOneWidget);
+      await tester.tap(find.byKey(const Key('admin.revoke.cancel')));
+      await tester.pumpAndSettle();
+      expect(acc.grants, isEmpty);
 
-    await tester.tap(find.byKey(const Key('admin.revoke')));
-    await tester.pumpAndSettle();
-    await tester.tap(find.byKey(const Key('admin.revoke.confirm')));
-    await tester.pumpAndSettle();
-    expect(acc.grants.single, ('friend@lab.uz', null));
-  });
+      await tester.tap(find.byKey(const Key('admin.revoke')));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const Key('admin.revoke.confirm')));
+      await tester.pumpAndSettle();
+      expect(acc.grants.single, ('friend@lab.uz', null));
+    },
+  );
 
   testWidgets('oddiy foydalanuvchi: panel ko‘rinmaydi, to‘g‘ridan ham yopiq', (
     tester,

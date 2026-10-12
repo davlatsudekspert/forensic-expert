@@ -123,7 +123,22 @@ class EntryDetailScreen extends ConsumerWidget {
                   ),
                   const SizedBox(height: FeSpace.sm),
                   if (entry.status != ScientificStatus.verified)
-                    const UnverifiedBanner(),
+                    // Hamma da’vo egasi bergan manbaga (ABY / ustoz kitobi)
+                    // tayansa — «tasdiqlangan manba»; aralash yoki xorijiy
+                    // adabiyot bo‘lsa — avvalgi «tasdiqlanmagan» ogohlantirish.
+                    if (entry.details != null &&
+                        entry.details!.claims.isNotEmpty &&
+                        entry.details!.claims.every(
+                          (c) => c.fromConfirmedSource,
+                        ))
+                      FeBanner(
+                        key: const Key('entry.confirmedSource'),
+                        icon: Icons.verified_outlined,
+                        text: l.confirmedSourceBanner,
+                        tone: FeBannerTone.info,
+                      )
+                    else
+                      const UnverifiedBanner(),
                   if (entry.details == null) ...[
                     FeSectionHeader(l.detailEvidenceStatus),
                     _KeyValue(

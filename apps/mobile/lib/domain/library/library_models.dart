@@ -56,6 +56,20 @@ class LibraryEntry {
 enum EntryAccess { free, lifetime }
 
 /// Manba (provenance) — UI uchun.
+/// Egasi bergan va tasdiqlagan manbalar: milliy yo‘riqnoma (ABY) va ustoz
+/// kitoblari. Ekranda «tasdiqlangan manba» deb ko‘rsatiladi.
+///
+/// Bu **manba** haqida gap, da’vo haqida emas: ichki ekspert-taqriz tizimi
+/// (`ScientificStatus.verified`) bunga tegmaydi — u taqrizchi harakatini
+/// talab qiladi. Xorijiy maqola va tezislar bu ro‘yxatda yo‘q: ular
+/// «tasdiqlash kerak» bo‘lib qoladi.
+const ownerConfirmedSourceIds = {
+  'SRC-ABY-2025',
+  'SRC-YULDASHEV-GMT-2024',
+  'SRC-YULDASHEV-TOKS-2025',
+  'SRC-GIYASOV-FM-2018',
+};
+
 @immutable
 class SourceView {
   const SourceView({
@@ -204,6 +218,11 @@ class ClaimView {
   /// Qat’iy konsentratsiya konteksti (`context_strict`), bo‘lsa.
   Map<String, Object?>? get strictContext =>
       (value['context_strict'] as Map?)?.cast<String, Object?>();
+
+  /// Da’vo egasi tasdiqlagan manbaga (ABY / ustoz kitobi) tayanadimi.
+  bool get fromConfirmedSource =>
+      sources.isNotEmpty &&
+      sources.every((s) => ownerConfirmedSourceIds.contains(s.sourceId));
 
   List<String> get items => [
     for (final i in (value['items'] as List? ?? const [])) '$i',

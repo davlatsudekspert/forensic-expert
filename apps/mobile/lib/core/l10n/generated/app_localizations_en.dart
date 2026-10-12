@@ -9100,4 +9100,22 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get abyObjOrgans => 'internal organs';
+
+  @override
+  String get provOwnWordsNote =>
+      'The content of the source is given in our own words; the original text is not copied. The exact place is below.';
+
+  @override
+  String get confirmedSourceBanner =>
+      'Based on a confirmed source: the national guide (ABY) or the teacher\'s textbook. The exact place is given.';
+
+  @override
+  String get confirmedSourceChip => 'Confirmed source';
+
+  @override
+  String get needsConfirmationChip => 'Needs confirmation';
+
+  @override
+  String get needsConfirmationBanner =>
+      'From international literature (article, thesis): needs confirmation.';
 }

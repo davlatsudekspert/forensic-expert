@@ -385,7 +385,8 @@ class ResearchDetailScreen extends ConsumerWidget {
     }
 
     final rows = <(String, String)>[
-      if (r.authors.map(filled).nonNulls.toList() case final a when a.isNotEmpty)
+      if (r.authors.map(filled).nonNulls.toList() case final a
+          when a.isNotEmpty)
         (l.metaAuthors, a.join(', ')),
       if (filled(r.container) case final v?) (l.metaContainer, v),
       if (filled(r.organization) case final v?) (l.metaInstitution, v),

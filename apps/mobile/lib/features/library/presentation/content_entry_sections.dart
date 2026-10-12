@@ -602,6 +602,24 @@ class ClaimCard extends StatelessWidget {
           // Qatlamli karta (egasi): asosiy matn (UI tilida) → ilmiy asos
           // → asl matn (yig‘ilgan) → manba → tekshiruv/tarjima holati.
           ClaimLifecycleBanners(claim: claim),
+          // Manba ishonchi: egasi bergan manba — «tasdiqlangan»; xorijiy
+          // maqola/tezis — «tasdiqlash kerak». Ichki taqriz holatiga tegmaydi.
+          Padding(
+            padding: const EdgeInsets.only(bottom: FeSpace.xxs),
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: StatusChip(
+                key: Key('claim.trust.${claim.claimId}'),
+                icon: claim.fromConfirmedSource
+                    ? Icons.verified_outlined
+                    : Icons.pending_outlined,
+                label: claim.fromConfirmedSource
+                    ? l.confirmedSourceChip
+                    : l.needsConfirmationChip,
+                color: claim.fromConfirmedSource ? c.accent : c.textSecondary,
+              ),
+            ),
+          ),
           if (claim.objectsStated != null) _AbyObjects(claim: claim),
           for (final (k, v) in identityRows)
             Padding(
@@ -709,7 +727,11 @@ class ClaimCard extends StatelessWidget {
             ),
           ],
           const SizedBox(height: FeSpace.xs),
-          ClaimMeta(status: claim.status, level: claim.evidenceLevel),
+          ClaimMeta(
+            status: claim.status,
+            level: claim.evidenceLevel,
+            confirmedSource: claim.fromConfirmedSource,
+          ),
           ProvenanceButton(claim: claim),
         ],
       ),
@@ -1043,10 +1065,20 @@ class AccessBadge extends ConsumerWidget {
 
 /// Claim holati + dalil darajasi — bitta ixcham qator.
 class ClaimMeta extends StatelessWidget {
-  const ClaimMeta({super.key, required this.status, required this.level});
+  const ClaimMeta({
+    super.key,
+    required this.status,
+    required this.level,
+    this.confirmedSource = false,
+  });
 
   final ScientificStatus status;
   final String level;
+
+  /// Da’vo egasi tasdiqlagan manbaga (ABY / ustoz kitobi) tayanadi: holat
+  /// qatorida «Tekshirilmagan» o‘rniga «Tasdiqlangan manba». Ichki taqriz
+  /// holati (`status`) o‘zgarmaydi.
+  final bool confirmedSource;
 
   @override
   Widget build(BuildContext context) {
@@ -1069,6 +1101,11 @@ class ClaimMeta extends StatelessWidget {
         Icons.history,
       ),
       ScientificStatus.rejected => (l.statusNeedsReview, c.danger, Icons.block),
+      _ when confirmedSource => (
+        l.confirmedSourceChip,
+        c.accent,
+        Icons.verified_outlined,
+      ),
       _ => (l.statusNeedsReview, c.accent, Icons.pending_outlined),
     };
     return EvidenceMetaLine(

@@ -9153,4 +9153,22 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get abyObjOrgans => 'внутренние органы';
+
+  @override
+  String get provOwnWordsNote =>
+      'Содержание источника изложено своими словами; оригинальный текст не копировался. Точное место — ниже.';
+
+  @override
+  String get confirmedSourceBanner =>
+      'На основе подтверждённого источника: национальное руководство (ABY) или учебник преподавателя. Точное место указано.';
+
+  @override
+  String get confirmedSourceChip => 'Подтверждённый источник';
+
+  @override
+  String get needsConfirmationChip => 'Требует подтверждения';
+
+  @override
+  String get needsConfirmationBanner =>
+      'Из международной литературы (статья, тезис): требует подтверждения.';
 }

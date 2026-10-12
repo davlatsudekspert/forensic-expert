@@ -160,7 +160,9 @@ void main() {
       expect(
         find.descendant(
           of: find.byKey(const Key('provenance.sheet')),
-          matching: find.text('Not yet confirmed by an expert'),
+          matching: find.text(
+            'From international literature (article, thesis): needs confirmation.',
+          ),
         ),
         findsOneWidget,
       );

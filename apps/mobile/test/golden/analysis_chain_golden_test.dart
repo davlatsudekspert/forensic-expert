@@ -41,17 +41,29 @@ void main() {
   }
 
   testWidgets('fenazepam — tahlil bo‘limi', (tester) async {
-    await shot(tester, Routes.libraryEntry('phenazepam'), 'chain_phenazepam',
-        scroll: 700);
+    await shot(
+      tester,
+      Routes.libraryEntry('phenazepam'),
+      'chain_phenazepam',
+      scroll: 700,
+    );
   });
 
   testWidgets('fenazepam — ABY usullari', (tester) async {
-    await shot(tester, Routes.libraryEntry('phenazepam'), 'chain_phenazepam_aby',
-        scroll: 2600);
+    await shot(
+      tester,
+      Routes.libraryEntry('phenazepam'),
+      'chain_phenazepam_aby',
+      scroll: 2600,
+    );
   });
 
   testWidgets('TLC usul kartasi', (tester) async {
-    await shot(tester, Routes.knowledgeEntry('method-tlc'), 'chain_method_tlc',
-        scroll: 900);
+    await shot(
+      tester,
+      Routes.knowledgeEntry('method-tlc'),
+      'chain_method_tlc',
+      scroll: 900,
+    );
   });
 }

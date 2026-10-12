@@ -128,29 +128,22 @@ class EvidenceMetaLine extends StatelessWidget {
     return Semantics(
       label: [statusLabel, levelLabel].join(FeGlyphs.listSeparator),
       excludeSemantics: true,
-      child: Row(
+      child: Wrap(
+        crossAxisAlignment: WrapCrossAlignment.center,
+        spacing: FeSpace.xxs,
+        runSpacing: 2,
         children: [
           Icon(statusIcon, size: 16, color: statusColor),
-          const SizedBox(width: FeSpace.xxs),
-          Flexible(
-            child: Text(
-              statusLabel,
-              style: t.labelMedium?.copyWith(color: statusColor),
-              overflow: TextOverflow.ellipsis,
-            ),
-          ),
+          Text(statusLabel, style: t.labelMedium?.copyWith(color: statusColor)),
           Text(
             FeGlyphs.middleDot,
             style: t.labelMedium?.copyWith(color: c.textSecondary),
           ),
-          Flexible(
-            child: Text(
-              levelLabel,
-              style: t.labelMedium?.copyWith(
-                color: strong ? c.accent : c.textSecondary,
-                fontWeight: FontWeight.w700,
-              ),
-              overflow: TextOverflow.ellipsis,
+          Text(
+            levelLabel,
+            style: t.labelMedium?.copyWith(
+              color: strong ? c.accent : c.textSecondary,
+              fontWeight: FontWeight.w700,
             ),
           ),
         ],
