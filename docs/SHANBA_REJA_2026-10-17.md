@@ -59,3 +59,12 @@ GLOBAL_GROWTH_PLAN tavsiyasi:
 - Maqola va tezislardan GC-MS/LC-MS usullarini hamma moddaga to‘liq qo‘shish.
 - Ghiyosov/Iskandarov kitoblarining qolgan boblari (Google Hujjat havolalari kerak).
 - Institutsional litsenziya (muassasa) oqimi.
+
+## 5. Limit tiklangach ko‘rib chiqiladigan masalalar (egasi topgan, 2026-10-13)
+
+1. **«Коды практик Узбекистана (закрыто)» kartasi (Методические руководства, rus tili).**
+   - Nima ekani: eski «yopiq katalog» modeli (qo‘lda fayl import qilish). U faqat **admin** hisobida ko‘rinadi (`guidelines_screens.dart`: `if (isAdmin)`), oddiy foydalanuvchida yo‘q. Egasi admin bo‘lgani uchun ko‘rdi.
+   - Muammo 1: ABY endi ochiq va bepul (egasi qarori 2026-10-10), shuning uchun «yopiq / import qiling» matni eskirgan va chalg‘itadi. Qaror kerak: kartani olib tashlash yoki «Ichki katalog (admin)» deb qayta nomlash.
+   - Muammo 2: kartaning ko‘rinishi **yurisdiksiyaga bog‘liq emas** (Profil → Yurisdiksiya: Узбекистан). Savol: yurisdiksiya o‘zgarsa (masalan, Rossiya, AQSh) karta yashirinishi kerakmi? Tavsiya: faqat O‘zbekiston yurisdiksiyasida va faqat admin uchun ko‘rinsin; boshqalarida umuman chiqmasin.
+   - Tekshirish: yurisdiksiyani almashtirib (UZ/RU/US/GB/DE), karta va ABY bloklari to‘g‘ri yashiringanini ko‘rish; rus/ingliz interfeysda ABY chiqmasligi bilan mosligi.
+2. Umuman: yurisdiksiya almashganda qaysi bo‘limlar yashirinadi/o‘zgaradi — ro‘yxat tuzib, har birini sinash.
