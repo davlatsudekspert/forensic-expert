@@ -59,6 +59,7 @@ GLOBAL_GROWTH_PLAN tavsiyasi:
 - Maqola va tezislardan GC-MS/LC-MS usullarini hamma moddaga to‘liq qo‘shish.
 - Ghiyosov/Iskandarov kitoblarining qolgan boblari (Google Hujjat havolalari kerak).
 - Institutsional litsenziya (muassasa) oqimi.
+- **Sud tibbiyoti fakulteti dars jadvali** (4/5/6-kurs): LabGuide’ga o‘xshash bo‘lim + har mavzuga test + har mavzuga PPTX (Ustoz). Fayllar: `docs/curriculum/`. Adabiyotlarni egasi beradi.
 
 ## 5. Limit tiklangach ko‘rib chiqiladigan masalalar (egasi topgan, 2026-10-13)
 
@@ -68,3 +69,5 @@ GLOBAL_GROWTH_PLAN tavsiyasi:
    - Muammo 2: kartaning ko‘rinishi **yurisdiksiyaga bog‘liq emas** (Profil → Yurisdiksiya: Узбекистан). Savol: yurisdiksiya o‘zgarsa (masalan, Rossiya, AQSh) karta yashirinishi kerakmi? Tavsiya: faqat O‘zbekiston yurisdiksiyasida va faqat admin uchun ko‘rinsin; boshqalarida umuman chiqmasin.
    - Tekshirish: yurisdiksiyani almashtirib (UZ/RU/US/GB/DE), karta va ABY bloklari to‘g‘ri yashiringanini ko‘rish; rus/ingliz interfeysda ABY chiqmasligi bilan mosligi.
 2. Umuman: yurisdiksiya almashganda qaysi bo‘limlar yashirinadi/o‘zgaradi — ro‘yxat tuzib, har birini sinash.
+
+- **Sud tibbiyoti fakulteti dars jadvali (4/5/6-kurs):** LabGuide kabi bo‘lim + har mavzuga test + har mavzuga PPTX (Ustoz). Egasi 4 ta .doc bergan (matni scratchpad’da ajratilgan, repoga hali ko‘chirilmagan); adabiyotlarni egasi beradi. Shanbadan keyin.
