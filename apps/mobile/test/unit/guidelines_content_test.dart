@@ -3,7 +3,6 @@ import 'dart:io';
 
 import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forensic_expert/core/aby_flag.dart';
 import 'package:forensic_expert/domain/catalog/tools_catalog.dart';
 import 'package:forensic_expert/domain/guidelines/guideline_models.dart';
 import 'package:forensic_expert/features/guidelines/presentation/guidelines_screens.dart';
@@ -11,10 +10,6 @@ import 'package:forensic_expert/features/guidelines/presentation/guidelines_scre
 /// Ilovaga qo‘shilgan haqiqiy yo‘riqnoma paketi: tuzilma, til to‘liqligi,
 /// iqtiboslar va ichki maydonlar sizib chiqmasligi.
 void main() {
-  // ABY yashirin bo‘lsa-da, ABY kontentining o‘zi shu testda tekshiriladi.
-  setUpAll(() => abyContentEnabled = true);
-  tearDownAll(() => abyContentEnabled = false);
-
   final raw = File('assets/content/guidelines/guidelines_v1.json')
       .readAsStringSync();
   final json = (jsonDecode(raw) as Map).cast<String, Object?>();

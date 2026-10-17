@@ -51,7 +51,6 @@ abstract final class Routes {
   static String librarySection(String section) => '/library/section/$section';
   static const libraryStandards = '/library/standards';
   static const guidelines = '/library/guidelines';
-  static const practiceCatalog = '/library/guidelines/practice';
   // «Ilmiy lug‘at» (term_translations).
   static const glossary = '/library/glossary';
   static String glossaryTerm(String id) =>

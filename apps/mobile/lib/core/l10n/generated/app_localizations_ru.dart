@@ -5342,71 +5342,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get languageNameEn => 'английский';
 
   @override
-  String get restrictedCatalogTitle => 'Коды практик Узбекистана (закрыто)';
-
-  @override
-  String get restrictedCatalogNote =>
-      'Видно только администраторам. Метаданные каталога закрытого источника: полный текст не хранится в приложении, не передаётся ИИ и не подлежит распространению.';
-
-  @override
-  String get restrictedCatalogImport => 'Импортировать файл каталога';
-
-  @override
-  String get restrictedCatalogRemove => 'Удалить с устройства';
-
-  @override
-  String get restrictedCatalogEmpty =>
-      'На устройстве нет каталога. Импортируйте файл, полученный закрытым способом.';
-
-  @override
-  String restrictedCatalogImported(int count) {
-    return 'Каталог импортирован: $count записей.';
-  }
-
-  @override
-  String get restrictedCatalogInvalid =>
-      'Файл не является корректным каталогом.';
-
-  @override
-  String restrictedCatalogRecords(int count) {
-    return '$count записей';
-  }
-
-  @override
-  String restrictedCatalogPages(String from, String to) {
-    return 'с. $from–$to';
-  }
-
-  @override
-  String restrictedCatalogPage(String page) {
-    return 'с. $page';
-  }
-
-  @override
-  String restrictedCatalogCodeOriginal(String code) {
-    return 'Код в источнике: $code';
-  }
-
-  @override
-  String get restrictedCatalogSearchHint =>
-      'Поиск по коду, названию или термину';
-
-  @override
-  String get restrictedCatalogLinkedCards =>
-      'Связанные независимые руководства';
-
-  @override
-  String get restrictedCatalogNormative => 'Связанные официальные документы';
-
-  @override
-  String restrictedCatalogSection(String section) {
-    return 'Раздел $section';
-  }
-
-  @override
-  String get restrictedCatalogTitleDraft => 'Перевод названия — черновик';
-
-  @override
   String get aiWorking =>
       'Готовим ответ по источникам… Это может занять до минуты.';
 
@@ -9092,75 +9027,8 @@ class AppLocalizationsRu extends AppLocalizations {
   String get adminTierProfessional => '«Специалист Pro»';
 
   @override
-  String get abyObjectLabel => 'Объект';
-
-  @override
-  String get abyObjectNotStated => 'В тексте ABY объект не указан';
-
-  @override
-  String get abyObjBlood => 'кровь';
-
-  @override
-  String get abyObjUrine => 'моча';
-
-  @override
-  String get abyObjLiver => 'печень';
-
-  @override
-  String get abyObjGastric => 'содержимое желудка';
-
-  @override
-  String get abyObjKidney => 'почка';
-
-  @override
-  String get abyObjLung => 'лёгкое';
-
-  @override
-  String get abyObjHair => 'волосы';
-
-  @override
-  String get abyObjBrain => 'головной мозг';
-
-  @override
-  String get abyObjMuscle => 'мышца';
-
-  @override
-  String get abyObjBile => 'жёлчь';
-
-  @override
-  String get abyObjIntestine => 'кишечник';
-
-  @override
-  String get abyObjTrachea => 'трахея';
-
-  @override
-  String get abyObjPlasma => 'плазма';
-
-  @override
-  String get abyObjSerum => 'сыворотка';
-
-  @override
-  String get abyObjSaliva => 'слюна';
-
-  @override
-  String get abyObjSemen => 'сперма';
-
-  @override
-  String get abyObjFaeces => 'кал';
-
-  @override
-  String get abyObjVomit => 'рвотные массы';
-
-  @override
-  String get abyObjOrgans => 'внутренние органы';
-
-  @override
   String get provOwnWordsNote =>
       'Содержание источника изложено своими словами; оригинальный текст не копировался. Точное место — ниже.';
-
-  @override
-  String get confirmedSourceBanner =>
-      'На основе подтверждённого источника: национальное руководство (ABY) или учебник преподавателя. Точное место указано.';
 
   @override
   String get confirmedSourceBannerTextbook =>
@@ -9211,23 +9079,11 @@ class AppLocalizationsRu extends AppLocalizations {
   String get avatarError => 'Не удалось открыть фото. Выберите другое.';
 
   @override
-  String get abyOrderTitle => 'Порядок по ABY и объект';
-
-  @override
-  String get abyOrderNote =>
-      'По национальному руководству (ABY): экспресс-тест → выделение → цветные реакции → TLC → GC-MS / LC-MS/MS → спектрофотометрия. В каждой записи указан объект (кровь, моча, внутренние органы), источник и точное место.';
-
-  @override
   String get bookMethodsTitle => 'Методы по руководствам и учебникам';
 
   @override
   String get bookMethodsNote =>
       'Методы исследования из подтверждённых источников (книги преподавателя и пособия): цветные реакции, микрокристаллоскопия, TLC, УФ-спектр, подтверждающий метод. В каждой записи — полное описание, источник и точное место.';
-
-  @override
-  String abySpecimenFrom(String topic) {
-    return 'Объект по ABY: $topic';
-  }
 
   @override
   String get extraInfoTitle =>

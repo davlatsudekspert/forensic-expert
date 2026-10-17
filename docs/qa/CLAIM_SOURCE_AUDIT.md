@@ -10,14 +10,14 @@ Verdict = `reviewed` verdict if a ledger entry matches the claim text, otherwise
 |---|---|---|---|---|
 | UNSUPPORTED | 1 | 0 | 0 | 1 |
 | SCOPE_MISMATCH | 0 | 0 | 0 | 0 |
-| ABSTRACT_ONLY | 11 | 167 | 510 | 688 |
+| ABSTRACT_ONLY | 9 | 167 | 510 | 686 |
 | NO_LOCATOR | 6 | 0 | 19 | 25 |
-| PARTIAL | 13 | 38 | 21 | 72 |
-| SUPPORTED | 910 | 237 | 480 | 1627 |
-| **claims** | 941 | 442 | 1030 | 2413 |
+| PARTIAL | 11 | 38 | 21 | 70 |
+| SUPPORTED | 820 | 237 | 480 | 1537 |
+| **claims** | 847 | 442 | 1030 | 2319 |
 
-Automatic verdicts only (before human review overrides): UNSUPPORTED 1, SCOPE_MISMATCH 7, ABSTRACT_ONLY 686, NO_LOCATOR 25, PARTIAL 71, SUPPORTED 1623.
-Reviewed claims (ledger, text hash matches): 48; stale review entries: 0; orphan entries: 0.
+Automatic verdicts only (before human review overrides): UNSUPPORTED 1, SCOPE_MISMATCH 7, ABSTRACT_ONLY 684, NO_LOCATOR 25, PARTIAL 69, SUPPORTED 1533.
+Reviewed claims (ledger, text hash matches): 46; stale review entries: 0; orphan entries: 0.
 
 Baseline (before fixes): UNSUPPORTED 1, SCOPE_MISMATCH 10, ABSTRACT_ONLY 569, NO_LOCATOR 76, PARTIAL 56, SUPPORTED 1085.
 
@@ -111,10 +111,9 @@ Levels grade the PUBLICATION TYPE only; the criterion is in code, not in the dat
 | book/tier3/C | 3 |
 | database/tier2/C | 202 |
 | guideline/tier1/B | 2 |
-| guideline/tier3/C | 1 |
 | journal_article/tier2/A | 8 |
-| journal_article/tier2/B | 234 |
-| journal_article/tier2/C | 52 |
+| journal_article/tier2/B | 232 |
+| journal_article/tier2/C | 50 |
 | journal_article/tier2/D | 32 |
 | legislation/tier1/A | 8 |
 | report/tier3/C | 1 |
@@ -2462,100 +2461,6 @@ Sources whose level is ungrounded or inconsistent with their own title / type:
 | `C-EP-ETHANOL-07` | SRC-PMC9331811<br>SRC-PM39198950 | Taylor et al., Molecules 2022;27(15):4771, sections 2.4 (Accuracy) and 2.5 (Uncertainty)<br>Zheng et al., Se Pu 2024;42(9):909–917, abstract | PARTIAL | numbers_or_norms, paraphrase_not_quoted, prescriptive |
 | `C-EP-ETHANOL-08` | SRC-PM37804205<br>SRC-PM36346343 | Olds, Jones, J Anal Toxicol 2024;48(1):9–26, abstract<br>Musile et al., J Anal Toxicol 2023;46(9):e274–e279, abstract | ABSTRACT_ONLY | general_rule, numbers_or_norms, paraphrase_not_quoted |
 | `C-EP-ETHANOL-09` | SRC-PM27488829<br>SRC-PM36346343<br>SRC-PM33031530 | Chun et al., J Anal Toxicol 2016;40(8):653–658, abstract<br>Musile et al., J Anal Toxicol 2023;46(9):e274–e279, abstract<br>Pinto et al., J Anal Toxicol 2021;45(9):961–968, abstract | ABSTRACT_ONLY | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-ETHANOL-01` | SRC-ABY-2025 | ABY.G.16.2025, 2.2–2.4-bandlar | ✔ PARTIAL | numbers_or_norms, paraphrase_not_quoted, subject_not_named_in_excerpt |
-| `C-ABY-ETHANOL-02` | SRC-ABY-2025 | ABY.G.16.2025, 2.3 va 2.4-bandlar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-ETHANOL-03` | SRC-ABY-2025 | ABY.G.16.2025, 3-bo‘lim «Tahlil. Izohlash» | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-METHANOL-01` | SRC-ABY-2025 | ABY.G.16.2025, 2.2 va 2.4.1-bandlar | SUPPORTED | paraphrase_not_quoted |
-| `C-ABY-CO-01` | SRC-ABY-2025 | ABY.G.14.2025, 2.1-band | ✔ PARTIAL | numbers_or_norms, paraphrase_not_quoted, subject_not_named_in_excerpt |
-| `C-ABY-CO-02` | SRC-ABY-2025 | ABY.G.14.2025, 2.2-band va 3-bo‘lim | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-TOX-OPI-01` | SRC-ABY-2025 | ABY.G.5.2025, «Jarayonni olib borish tartibi» | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-TOX-OPI-02` | SRC-ABY-2025 | ABY.G.5.2025, TLC va rang reaksiyalari bo‘limlari, 3.5-band | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-TOX-OPI-03` | SRC-ABY-2025 | ABY.G.5.2025, 3.3 va 3.4-bandlar | SUPPORTED | paraphrase_not_quoted |
-| `C-ABY-TOX-BAR-01` | SRC-ABY-2025 | ABY.G.6.2025, 2.1 va 2.2-bandlar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-TOX-BZD-01` | SRC-ABY-2025 | ABY.G.7.2025, «Jarayonni olib borish tartibi», 3.3-band | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-TOX-CAN-01` | SRC-ABY-2025 | ABY.G.12.2025, 2.1–2.5-bandlar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-TOX-DPH-01` | SRC-ABY-2025 | ABY.G.20.2025, 2–3.2-bandlar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-TOX-H2S-01` | SRC-ABY-2025 | ABY.G.18.2025, 2-bo‘lim va 4-bo‘lim «Tahlil. Izohlash» | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-TOX-URX-01` | SRC-ABY-2025 | ABY.G.24.2025, 2-bo‘lim va «Hujjatlashtirish» | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-TOX-URX-02` | SRC-ABY-2025 | ABY.G.24.2025, «Hujjatlashtirish» | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-BIO-BLD-01` | SRC-ABY-2025 | ABY.D.1.2025, 5–7-bandlar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-BIO-BLD-02` | SRC-ABY-2025 | ABY.D.2.2025, 5-band | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-BIO-BLD-03` | SRC-ABY-2025 | ABY.D.14.2025, 2, 5 va 6-bandlar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-BIO-SPC-01` | SRC-ABY-2025 | ABY.D.5.2025, 5 va 6-bandlar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-BIO-ABO-01` | SRC-ABY-2025 | ABY.D.9.2025, 5 va 6-bandlar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-BIO-SEM-01` | SRC-ABY-2025 | ABY.D.25.2025, 2, 5 va 6-bandlar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-BIO-SAL-01` | SRC-ABY-2025 | ABY.D.29.2025, 5 va 6-bandlar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-BIO-SAL-02` | SRC-ABY-2025 | ABY.D.30.2025, 2, 5 va 6-bandlar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-BIO-HAR-01` | SRC-ABY-2025 | ABY.D.42.2025, 5 va 6-bandlar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-BIO-HAR-02` | SRC-ABY-2025 | ABY.D.43.2025, 5 va 6-bandlar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-BIO-FEC-01` | SRC-ABY-2025 | ABY.D.48.2025, 5 va 6-bandlar | SUPPORTED | paraphrase_not_quoted |
-| `C-ABY-EVD-IN-01` | SRC-ABY-2025 | ABY.D.49.2025, 5-band | SUPPORTED | paraphrase_not_quoted |
-| `C-ABY-EVD-ST-01` | SRC-ABY-2025 | ABY.D.50.2025, 5-band | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-HIS-FIX-01` | SRC-ABY-2025 | ABY.E.2.2025, 4–6-bandlar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-HIS-STN-01` | SRC-ABY-2025 | ABY.E.24.2025, 5-band | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-HIS-DIA-01` | SRC-ABY-2025 | ABY.E.31.2025, 5 va 6-bandlar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-SMH-01` | SRC-ABY-2025 | ABY.G.1.2025, «Jarayonni olib borish tartibi»; ABY.G.2.2025, 2.1-band | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-SMH-02` | SRC-ABY-2025 | ABY.G.1.2025, «Jarayonni olib borish tartibi», 1- va 2-jadvallar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-SMH-03` | SRC-ABY-2025 | ABY.G.1.2025, «Jarayonni olib borish tartibi», 3- va 4-jadvallar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-OP-01` | SRC-ABY-2025 | ABY.G.9.2025, 2.1 va 2.2.1-bandlar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-OP-02` | SRC-ABY-2025 | ABY.G.9.2025, 2.2.2 va 3.3-bandlar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-HG-01` | SRC-ABY-2025 | ABY.G.10.2025, «Jarayonni olib borish tartibi», destruksiya bo‘limlari | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-HG-02` | SRC-ABY-2025 | ABY.G.10.2025, «Destruktatdan simobni aniqlash» va «Tahlil. Izohlash» | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-MET-01` | SRC-ABY-2025 | ABY.G.11.2025, «Jarayonni o‘tkazish tavsifi», mineralizatsiya va denitratsiya | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-MET-02` | SRC-ABY-2025 | ABY.G.11.2025, «Jarayonni o‘tkazish tavsifi», metallar bo‘yicha reaksiyalar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-MET-03` | SRC-ABY-2025 | ABY.G.11.2025, «Tahlil. Izohlash. Hujjatlashtirish» (3.1-band va keyingilar) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-ACA-01` | SRC-ABY-2025 | ABY.G.13.2025, 2-bo‘lim va 3.1-band | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-PHT-01` | SRC-ABY-2025 | ABY.G.17.2025, 2.1 va 2.2-bandlar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-PHT-02` | SRC-ABY-2025 | ABY.G.17.2025, 2.3-band, 1- va 2-jadvallar, 3.2-band | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-NH3-01` | SRC-ABY-2025 | ABY.G.19.2025, 2.1 va 3.1–3.3-bandlar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-NH3-02` | SRC-ABY-2025 | ABY.G.19.2025, 4-bo‘lim «Tahlil. Izohlash»; ABY.G.22.2025, 5.4–5.5-bandlar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-VOL-01` | SRC-ABY-2025 | ABY.G.3.2025, «Tahlil. Izohlash. Hujjatlashtirish» | SUPPORTED | paraphrase_not_quoted |
-| `C-ABY-VOL-02` | SRC-ABY-2025 | ABY.G.21.2025, 2-bo‘lim va 4.1-band; ABY.G.4.2025, «Jarayonni olib borish tartibi» va «Tahlil» | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-DIA-01` | SRC-ABY-2025 | ABY.G.22.2025, 4.1-band va 5.1–5.3-bandlar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-DIA-02` | SRC-ABY-2025 | ABY.G.22.2025, 4.2–4.10-bandlar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-CBZ-01` | SRC-ABY-2025 | ABY.G.25.2025, «Jarayonni olib borish», 1–4-bandlar va 1-jadval | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-CBZ-02` | SRC-ABY-2025 | ABY.G.25.2025, «Tahlil. Izohlash. Hujjatlashtirish» | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-AMI-01` | SRC-ABY-2025 | ABY.G.23.2025, 2-bo‘lim (ajratish va TLC), 1- va 1a-jadvallar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-AMI-02` | SRC-ABY-2025 | ABY.G.23.2025, 3.1–3.2-bandlar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-SUP-01` | SRC-ABY-2025 | ABY.A.17.2025, «Ko‘z rangdor pardasi mushaklarining kimyoviy moddalarga reaksiyasi» | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-SUP-02` | SRC-ABY-2025 | ABY.A.17.2025, mushaklarning mexanik va elektr ta’siriga reaksiyalari, ter bezlari reaksiyasi | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-STR-01` | SRC-ABY-2025 | ABY.A.20.2025, tartib bandlari | SUPPORTED | paraphrase_not_quoted |
-| `C-ABY-STR-02` | SRC-ABY-2025 | ABY.A.21.2025, tartib bandlari; ABY.A.16.2025, tartib bandlari (E.S. Mishin, 1986) | SUPPORTED | paraphrase_not_quoted |
-| `C-ABY-STR-03` | SRC-ABY-2025 | ABY.A.22.2025, tartib bandlari (N.S. Bokarius sinamasi) | SUPPORTED | paraphrase_not_quoted |
-| `C-ABY-NB-01` | SRC-ABY-2025 | ABY.A.29.2025, tartib bandlari (Galen–Shreyer sinamasi) | SUPPORTED | paraphrase_not_quoted |
-| `C-ABY-NB-02` | SRC-ABY-2025 | ABY.A.30.2025, tartib bandlari (Breslau sinamasi); ABY.A.27.2025, tartib bandlari (Dillon sinamasi) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-AUT-01` | SRC-ABY-2025 | ABY.A.10.2025, tartib bandlari (Sunsov sinamasi) | SUPPORTED | paraphrase_not_quoted |
-| `C-ABY-AUT-02` | SRC-ABY-2025 | ABY.A.19.2025, tartib bandlari | SUPPORTED | paraphrase_not_quoted |
-| `C-ABY-AUT-03` | SRC-ABY-2025 | ABY.A.23.2025, tartib bandlari | SUPPORTED | paraphrase_not_quoted |
-| `C-ABY-LIV-01` | SRC-ABY-2025 | ABY.B.1.2025, tartib bandlari | SUPPORTED | paraphrase_not_quoted |
-| `C-ABY-LIV-02` | SRC-ABY-2025 | ABY.B.2.2025, tartib bandlari | SUPPORTED | paraphrase_not_quoted |
-| `C-ABY-LIV-03` | SRC-ABY-2025 | ABY.B.3.2025, tartib bandlari | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-COM-01` | SRC-ABY-2025 | ABY.C.1.2025, tartib bandlari | SUPPORTED | paraphrase_not_quoted |
-| `C-ABY-COM-02` | SRC-ABY-2025 | ABY.C.4.2025, tartib bandlari | SUPPORTED | paraphrase_not_quoted |
-| `C-ABY-CLO-01` | SRC-ABY-2025 | ABY.F.7.2025, 4-bo‘lim «Amal» | SUPPORTED | paraphrase_not_quoted |
-| `C-ABY-CLO-02` | SRC-ABY-2025 | ABY.F.8.2025, 2- va 4-bo‘limlar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-MCL-01` | SRC-ABY-2025 | ABY.F.1.2025, 5-bo‘lim «Amal» | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-MCL-02` | SRC-ABY-2025 | ABY.F.2.2025, 5-bo‘lim «Amal», 6-band | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-PRP-01` | SRC-ABY-2025 | ABY.F.4.2025, 4-bo‘lim «Amal» | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-PRP-02` | SRC-ABY-2025 | ABY.F.5.2025, 3- va 4-bo‘limlar | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-PRP-03` | SRC-ABY-2025 | ABY.F.6.2025, 4-bo‘lim «Amal» | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-SEX-01` | SRC-ABY-2025 | ABY.F.9.2025, 3-bo‘lim «Amal» | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-SEX-02` | SRC-ABY-2025 | ABY.F.10.2025, 3-bo‘lim «Amal» | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-SEX-03` | SRC-ABY-2025 | ABY.F.11.2025, 3-bo‘lim «Amal», jadval; ABY.F.12.2025, 3-bo‘lim | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-SEX-04` | SRC-ABY-2025 | ABY.F.14.2025, 3-bo‘lim «Amal» | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-SEX-05` | SRC-ABY-2025 | ABY.F.16.2025, 3-bo‘lim «Amal», 3.2–3.3-bandlar (V.N. Zvyagin) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-AGE-01` | SRC-ABY-2025 | ABY.F.17.2025, 3-bo‘lim (M.M. Gerasimov, 1955); ABY.F.22.2025, 3-bo‘lim | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-AGE-02` | SRC-ABY-2025 | ABY.F.18.2025, 3-bo‘lim (Hansen jadvali); ABY.F.19.2025, 3-bo‘lim (Hansen jadvali) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-AGE-03` | SRC-ABY-2025 | ABY.F.20.2025, 3-bo‘lim (V.N. Zvyagin, 1983) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-AGE-04` | SRC-ABY-2025 | ABY.F.21.2025, 3-bo‘lim (A.K. Garmus, 1988) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-AGE-05` | SRC-ABY-2025 | ABY.F.23.2025, 3-bo‘lim (V.N. Zvyagin, 1975) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-AGE-06` | SRC-ABY-2025 | ABY.F.47.2025, «Natijalarni baholash», to‘sh suyagi va yelka kamari bo‘limlari | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-STA-01` | SRC-ABY-2025 | ABY.F.24.2025, 3-bo‘lim (Manuvrie, 1892) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-STA-02` | SRC-ABY-2025 | ABY.F.25.2025, 3-bo‘lim (Pirson, 1889) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-STA-03` | SRC-ABY-2025 | ABY.F.26.2025, 3-bo‘lim va izoh (Rolle, 1888) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABY-ID-01` | SRC-ABY-2025 | ABY.F.27.2025, 3-bo‘lim (AGI-1); ABY.F.28.2025, 3-bo‘lim (AGI-4) | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
-| `C-ABYX-BENZIDINE-01` | SRC-PM16497705<br>SRC-PM25757908 | abstract<br>abstract | ABSTRACT_ONLY | paraphrase_not_quoted |
-| `C-ABYX-FLOAT-01` | SRC-PM22733108<br>SRC-PM31286205 | abstract<br>abstract | ABSTRACT_ONLY | numbers_or_norms, paraphrase_not_quoted |
 | `C-BUTANE-METABOLISM_NOTE-D1` | SRC-PMID-26247128 | Abstract; Results | ABSTRACT_ONLY | numbers_or_norms, paraphrase_not_quoted |
 | `C-BUTANE-METABOLITES-D1` | SRC-PMID-26247128 | Abstract; Results | ABSTRACT_ONLY | numbers_or_norms, paraphrase_not_quoted |
 | `C-BUTANE-ANALYTICAL_METHOD-D1` | SRC-PMID-28718908<br>SRC-PMID-26364197 | Abstract; Methods<br>Discussion; sample handling and storage | ABSTRACT_ONLY | numbers_or_norms, paraphrase_not_quoted, prescriptive |

@@ -7,7 +7,6 @@ import 'package:go_router/go_router.dart';
 import '../../../app/account.dart';
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
-import '../../../core/aby_flag.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/date_format.dart';
@@ -250,9 +249,7 @@ class ProvenanceSheet extends ConsumerWidget {
           text: verified
               ? l.provHumanVerified
               : claim.fromConfirmedSource
-              ? (abyContentEnabled
-                    ? l.confirmedSourceBanner
-                    : l.confirmedSourceBannerTextbook)
+              ? l.confirmedSourceBannerTextbook
               : l.needsConfirmationBanner,
           tone: (verified || claim.fromConfirmedSource)
               ? FeBannerTone.info

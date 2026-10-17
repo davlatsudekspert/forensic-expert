@@ -4,7 +4,6 @@ import 'package:drift/drift.dart' show Variable;
 import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:fe_database/fe_database.dart' show ContentDatabase;
 
-import '../../core/aby_flag.dart';
 import '../../domain/evidence/content_translations.dart';
 import '../../domain/evidence/provenance_models.dart';
 import '../../domain/library/library_models.dart';
@@ -18,10 +17,6 @@ class ContentProvenance {
 
   /// entity_id → claim’lar.
   final Map<String, List<ClaimView>> claimsByEntity;
-
-  /// Faqat ABY claim’lariga tayangan yozuvlar (ABY yashirin bo‘lganda
-  /// ro‘yxat, qidiruv va havolalarda chiqmaydi).
-  final Set<String> abyHiddenEntities = {};
 
   /// PHASE 7 provenance qatlami.
   ProvenanceIndex index = ProvenanceIndex.empty;
@@ -146,20 +141,12 @@ class ContentProvenance {
             .read<int>('n'),
     };
 
-    final abyOnly = <String>{};
     for (final r
         in await db
             .customSelect('SELECT * FROM claims ORDER BY claim_id')
             .get()) {
       final id = r.read<String>('claim_id');
       final version = r.read<int>('version');
-      if (!abyContentEnabled &&
-          isAbyClaim(id, [
-            for (final s in citations[id] ?? const <SourceView>[]) s.sourceId,
-          ])) {
-        abyOnly.add(r.read<String>('entity_id'));
-        continue;
-      }
       p.claimsByEntity
           .putIfAbsent(r.read<String>('entity_id'), () => [])
           .add(
@@ -184,12 +171,6 @@ class ContentProvenance {
               entityId: r.read<String>('entity_id'),
             ),
           );
-    }
-
-    for (final e in abyOnly) {
-      if ((p.claimsByEntity[e] ?? const []).isEmpty) {
-        p.abyHiddenEntities.add(e);
-      }
     }
 
     List<String> strings(String json) =>

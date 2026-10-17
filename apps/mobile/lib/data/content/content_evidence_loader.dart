@@ -5,7 +5,6 @@ import 'package:drift/drift.dart' show Variable;
 import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:fe_database/fe_database.dart' show ContentDatabase;
 
-import '../../core/aby_flag.dart';
 import '../../domain/evidence/evidence_models.dart';
 import '../../domain/library/library_models.dart';
 import 'content_provenance.dart';
@@ -13,39 +12,14 @@ import 'content_provenance.dart';
 /// `research_records`, `entity_links` va `images` (metadata) — `content.db`.
 abstract final class ContentEvidenceLoader {
   static Future<EvidenceData> load(ContentDatabase db) async {
-    // ABY yashirin bo‘lsa: faqat ABY claim’lariga tayangan yozuvlarga
-    // (ABY mavzulari) olib boradigan havolalar ham tushiriladi.
-    final abyHidden = <String>{};
-    if (!abyContentEnabled) {
-      final abyEntities = {
-        for (final r
-            in await db
-                .customSelect(
-                  "SELECT DISTINCT entity_id FROM claims WHERE claim_id LIKE 'C-ABY%'",
-                )
-                .get())
-          r.read<String>('entity_id'),
-      };
-      for (final e in abyEntities) {
-        final others = await db
-            .customSelect(
-              "SELECT COUNT(*) AS n FROM claims WHERE entity_id = ? AND claim_id NOT LIKE 'C-ABY%'",
-              variables: [Variable<String>(e)],
-            )
-            .getSingle();
-        if (others.read<int>('n') == 0) abyHidden.add(e);
-      }
-    }
     final links = [
       for (final r in await db.customSelect('SELECT * FROM entity_links').get())
-        if (!abyHidden.contains(r.read<String>('from_id')) &&
-            !abyHidden.contains(r.read<String>('to_id')))
-          GraphLink(
-            fromId: r.read<String>('from_id'),
-            toId: r.read<String>('to_id'),
-            relation: LinkRelation.fromCode(r.read<String>('relation')),
-            basis: r.read<String>('basis'),
-          ),
+        GraphLink(
+          fromId: r.read<String>('from_id'),
+          toId: r.read<String>('to_id'),
+          relation: LinkRelation.fromCode(r.read<String>('relation')),
+          basis: r.read<String>('basis'),
+        ),
     ];
     final linked = <String, List<String>>{};
     for (final l in links) {

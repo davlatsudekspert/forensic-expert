@@ -4,11 +4,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../../../app/account.dart';
 import '../../../app/glossary.dart';
 import '../../../app/guidelines.dart';
 import '../../../app/routes.dart';
-import '../../../core/aby_flag.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/date_format.dart';
@@ -26,7 +24,6 @@ import '../../glossary/presentation/glossary_linked_text.dart';
 import '../../glossary/presentation/glossary_screens.dart';
 import '../../support/presentation/support_widgets.dart' show ReportErrorMenu;
 import '../../tools/tool_strings.dart';
-import 'practice_catalog_screen.dart';
 
 extension GuidelineAreaL10n on GuidelineArea {
   String label(AppLocalizations l) => switch (this) {
@@ -78,7 +75,6 @@ class _GuidelinesScreenState extends ConsumerState<GuidelinesScreen> {
     final l = AppLocalizations.of(context);
     final lang = Localizations.localeOf(context).languageCode;
     final bundle = ref.watch(guidelinesProvider).value ?? GuidelineBundle.empty;
-    final isAdmin = ref.watch(serverAccessProvider).value?.isAdmin ?? false;
     final cards = bundle.cards.where(_matches).toList();
     final t = Theme.of(context).textTheme;
     final c = FeTheme.of(context);
@@ -109,10 +105,6 @@ class _GuidelinesScreenState extends ConsumerState<GuidelinesScreen> {
                     ),
                     onChanged: (v) => setState(() => _query = v),
                   ),
-                  if (isAdmin && abyContentEnabled) ...[
-                    const SizedBox(height: FeSpace.sm),
-                    const RestrictedCatalogEntry(),
-                  ],
                   if (_query.isNotEmpty && cards.isEmpty)
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: FeSpace.lg),

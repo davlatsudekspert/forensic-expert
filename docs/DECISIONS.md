@@ -234,3 +234,9 @@ model bilan chiqiladi, haqiqiy foydalanish ko'ringandan keyin qayta qaraladi.
 ## 2026-10-17 — Pro/pullik funksiyalar to‘xtatildi (Apple 2.5.19, 2.1)
 Egasi qarori: ilovaga yangi to‘lov/paywall/yashirin bayroq qo‘shilmaydi; hamma funksiya bepul. Server tomonida faqat `plan` (free/pro, `pro_until`) tayyorgarligi mumkin. Pro tayyor bo‘lganda to‘liq ishlaydigan yangi versiya sifatida yuboriladi (do‘kon mahsulotlari, sandbox, server tekshiruvi, restore, ekranda shartlar, intro-offer). Tafsilot: CLAUDE.md.
 Mavjud kod (paywall_screen.dart, billing_ports.dart, 4 ta store mahsuloti ID, entitlement/gating) repoda BOR — uni olib tashlash/o‘chirish qarori egasidan kutilmoqda.
+
+## 2026-10-17 — ABY 2025 ilovadan to‘liq olib tashlandi (Apple 2.5.19)
+Egasi qarori (aynan): «ABY ni ilovadan to‘liq o‘chir, git tarixidan tiklash mumkin». Sabab: `kShowAbyContent=false` bilan yashirilgan kod va ma’lumot Apple 2.5.19 bo‘yicha «yashirin funksiya» xavfini tug‘diradi.
+Olib tashlandi: bundle’dan 94 claim (`C-ABY-*`, `C-ABYX-*`), ularning iqtiboslari, `SRC-ABY-2025` va ekspert-izoh manbalari, 39 ta `aby-*` mavzu, 356 ta `editorial:aby-order` havola; `content.db` qayta yig‘ildi va imzolandi (development kalit yangilandi); builder va dossier skriptlari; `aby_flag.dart`; analiz tabidagi ABY qatlami (qolgan qatlamlar: kitob qo‘llanmalari + ilmiy adabiyot); «ob’ekt» qatori; admin «yopiq katalog» (`practice_catalog*`, import, marshrut); ARB kalitlari (`aby*`, `restrictedCatalog*`, `confirmedSourceBanner`); testlar va goldenlar. «Manbalar va mualliflar»dan ABY bandi olib tashlandi.
+Qoldi: modda sifatida simob, sirka kislotasi, ammiak (PubChem identifikatsiyasi; ABY havolasiz), ustoz kitoblari va xalqaro adabiyot — o‘zgarmagan.
+Tiklash: faqat git tarixidan (holat `05bffed`, tafsilot `docs/ABY_COVERAGE.md` tepasida). Qayta qo‘shish yangi egasi qarorini talab qiladi.

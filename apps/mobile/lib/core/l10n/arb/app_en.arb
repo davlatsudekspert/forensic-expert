@@ -6915,103 +6915,6 @@
   "@languageNameEn": {
     "description": "Language name."
   },
-  "restrictedCatalogTitle": "Uzbekistan practice codes (restricted)",
-  "@restrictedCatalogTitle": {
-    "description": "Admin section."
-  },
-  "restrictedCatalogNote": "Visible to administrators only. Catalogue metadata of a restricted source: the full text is not stored in the app, is not sent to AI and must not be distributed.",
-  "@restrictedCatalogNote": {
-    "description": "Admin banner."
-  },
-  "restrictedCatalogImport": "Import catalogue file",
-  "@restrictedCatalogImport": {
-    "description": "Action."
-  },
-  "restrictedCatalogRemove": "Remove from this device",
-  "@restrictedCatalogRemove": {
-    "description": "Action."
-  },
-  "restrictedCatalogEmpty": "No catalogue on this device. Import the file you received privately.",
-  "@restrictedCatalogEmpty": {
-    "description": "Empty."
-  },
-  "restrictedCatalogImported": "Catalogue imported: {count} records.",
-  "@restrictedCatalogImported": {
-    "description": "Snack.",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "restrictedCatalogInvalid": "This file is not a valid catalogue.",
-  "@restrictedCatalogInvalid": {
-    "description": "Snack."
-  },
-  "restrictedCatalogRecords": "{count} records",
-  "@restrictedCatalogRecords": {
-    "description": "Count.",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "restrictedCatalogPages": "pp. {from}–{to}",
-  "@restrictedCatalogPages": {
-    "description": "Meta.",
-    "placeholders": {
-      "from": {
-        "type": "String"
-      },
-      "to": {
-        "type": "String"
-      }
-    }
-  },
-  "restrictedCatalogPage": "p. {page}",
-  "@restrictedCatalogPage": {
-    "description": "Meta.",
-    "placeholders": {
-      "page": {
-        "type": "String"
-      }
-    }
-  },
-  "restrictedCatalogCodeOriginal": "Code as written in the source: {code}",
-  "@restrictedCatalogCodeOriginal": {
-    "description": "Meta.",
-    "placeholders": {
-      "code": {
-        "type": "String"
-      }
-    }
-  },
-  "restrictedCatalogSearchHint": "Search by code, title or term",
-  "@restrictedCatalogSearchHint": {
-    "description": "Search."
-  },
-  "restrictedCatalogLinkedCards": "Linked independent guidelines",
-  "@restrictedCatalogLinkedCards": {
-    "description": "Header."
-  },
-  "restrictedCatalogNormative": "Related official documents",
-  "@restrictedCatalogNormative": {
-    "description": "Header."
-  },
-  "restrictedCatalogSection": "Section {section}",
-  "@restrictedCatalogSection": {
-    "description": "Label.",
-    "placeholders": {
-      "section": {
-        "type": "String"
-      }
-    }
-  },
-  "restrictedCatalogTitleDraft": "Title translation is a draft",
-  "@restrictedCatalogTitleDraft": {
-    "description": "Meta."
-  },
   "aiWorking": "Preparing an answer from sources… This can take up to a minute.",
   "@aiWorking": {
     "description": "Progress."
@@ -11693,101 +11596,13 @@
   "@adminTierProfessional": {
     "description": "Name of the Professional Pro tier in the admin panel."
   },
-  "abyObjectLabel": "Specimen",
-  "abyObjectNotStated": "The ABY text does not name a specimen",
-  "abyObjBlood": "blood",
-  "abyObjUrine": "urine",
-  "abyObjLiver": "liver",
-  "abyObjGastric": "gastric contents",
-  "abyObjKidney": "kidney",
-  "abyObjLung": "lung",
-  "abyObjHair": "hair",
-  "abyObjBrain": "brain",
-  "abyObjMuscle": "muscle",
-  "abyObjBile": "bile",
-  "abyObjIntestine": "intestine",
-  "abyObjTrachea": "trachea",
-  "abyObjPlasma": "plasma",
-  "abyObjSerum": "serum",
-  "abyObjSaliva": "saliva",
-  "abyObjSemen": "semen",
-  "abyObjFaeces": "faeces",
-  "abyObjVomit": "vomit",
-  "abyObjOrgans": "internal organs",
-  "@abyObjectLabel": {
-    "description": "Label for the specimen row on an ABY method card."
-  },
-  "@abyObjectNotStated": {
-    "description": "Shown when the ABY text names no specimen."
-  },
-  "@abyObjBlood": {
-    "description": "Specimen name: blood."
-  },
-  "@abyObjUrine": {
-    "description": "Specimen name: urine."
-  },
-  "@abyObjLiver": {
-    "description": "Specimen name: liver."
-  },
-  "@abyObjGastric": {
-    "description": "Specimen name: gastric contents."
-  },
-  "@abyObjKidney": {
-    "description": "Specimen name: kidney."
-  },
-  "@abyObjLung": {
-    "description": "Specimen name: lung."
-  },
-  "@abyObjHair": {
-    "description": "Specimen name: hair."
-  },
-  "@abyObjBrain": {
-    "description": "Specimen name: brain."
-  },
-  "@abyObjMuscle": {
-    "description": "Specimen name: muscle."
-  },
-  "@abyObjBile": {
-    "description": "Specimen name: bile."
-  },
-  "@abyObjIntestine": {
-    "description": "Specimen name: intestine."
-  },
-  "@abyObjTrachea": {
-    "description": "Specimen name: trachea."
-  },
-  "@abyObjPlasma": {
-    "description": "Specimen name: plasma."
-  },
-  "@abyObjSerum": {
-    "description": "Specimen name: serum."
-  },
-  "@abyObjSaliva": {
-    "description": "Specimen name: saliva."
-  },
-  "@abyObjSemen": {
-    "description": "Specimen name: semen."
-  },
-  "@abyObjFaeces": {
-    "description": "Specimen name: faeces."
-  },
-  "@abyObjVomit": {
-    "description": "Specimen name: vomit."
-  },
-  "@abyObjOrgans": {
-    "description": "Specimen name: internal organs."
-  },
   "provOwnWordsNote": "The content of the source is given in our own words; the original text is not copied. The exact place is below.",
   "@provOwnWordsNote": {
     "description": "Note under a claim written in our own words, shown in the provenance sheet."
   },
-  "confirmedSourceBanner": "Based on a confirmed source: the national guide (ABY) or the teacher's textbook. The exact place is given.",
-  "@confirmedSourceBanner": {
-    "description": "Banner for claims resting on an owner-confirmed source."
-  },
   "confirmedSourceBannerTextbook": "Based on a confirmed source: the teacher's textbook. The exact place is given.",
   "@confirmedSourceBannerTextbook": {
-    "description": "Banner for owner-confirmed textbook sources (ABY hidden)."
+    "description": "Banner for owner-confirmed textbook sources."
   },
   "confirmedSourceChip": "Confirmed source",
   "@confirmedSourceChip": {
@@ -11845,14 +11660,6 @@
   "@avatarError": {
     "description": "Error when the chosen image cannot be read."
   },
-  "abyOrderTitle": "ABY order and specimen",
-  "@abyOrderTitle": {
-    "description": "Heading of the ABY block on the substance analysis tab (shown in Uzbek only)."
-  },
-  "abyOrderNote": "Following the national guide (ABY): rapid test → isolation → colour tests → TLC → GC-MS / LC-MS/MS → spectrophotometry. Each entry names the specimen (blood, urine, internal organs), its source and exact place.",
-  "@abyOrderNote": {
-    "description": "Note under the ABY block heading."
-  },
   "bookMethodsTitle": "Methods from the textbooks and manuals",
   "@bookMethodsTitle": {
     "description": "Heading of the textbook-methods block on the substance analysis tab."
@@ -11860,15 +11667,6 @@
   "bookMethodsNote": "Analytical methods from confirmed sources (the teacher's books and manuals): colour tests, microcrystal tests, TLC, UV spectrum, confirmatory method. Each entry gives the full description, source and exact place.",
   "@bookMethodsNote": {
     "description": "Note under the textbook-methods heading."
-  },
-  "abySpecimenFrom": "Specimen per ABY: {topic}",
-  "@abySpecimenFrom": {
-    "description": "Row under Specimens: specimens named by the national guide for a topic.",
-    "placeholders": {
-      "topic": {
-        "type": "String"
-      }
-    }
   },
   "extraInfoTitle": "Additional information: articles, theses, literature",
   "@extraInfoTitle": {

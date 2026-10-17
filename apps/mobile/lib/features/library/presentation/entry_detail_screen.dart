@@ -6,7 +6,6 @@ import 'package:go_router/go_router.dart';
 import '../../../app/providers.dart';
 import '../../../app/referral.dart';
 import '../../../app/routes.dart';
-import '../../../core/aby_flag.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/date_format.dart';
@@ -125,7 +124,7 @@ class EntryDetailScreen extends ConsumerWidget {
                   ),
                   const SizedBox(height: FeSpace.sm),
                   if (entry.status != ScientificStatus.verified)
-                    // Hamma da’vo egasi bergan manbaga (ABY / ustoz kitobi)
+                    // Hamma da’vo egasi bergan manbaga (ustoz kitobi)
                     // tayansa — «tasdiqlangan manba»; aralash yoki xorijiy
                     // adabiyot bo‘lsa — avvalgi «tasdiqlanmagan» ogohlantirish.
                     if (entry.details != null &&
@@ -136,9 +135,7 @@ class EntryDetailScreen extends ConsumerWidget {
                       FeBanner(
                         key: const Key('entry.confirmedSource'),
                         icon: Icons.verified_outlined,
-                        text: (abyContentEnabled
-                            ? l.confirmedSourceBanner
-                            : l.confirmedSourceBannerTextbook),
+                        text: l.confirmedSourceBannerTextbook,
                         tone: FeBannerTone.info,
                       )
                     else

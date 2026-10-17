@@ -37,19 +37,6 @@ for lang in ("uz", "ru", "en"):
         p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 print("privacy ok")
 
-# ABY tartibi bloki (Tahlil bo'limi): ABY matni faqat o'zbekcha ko'rinadi.
-AB = {
- "abyOrderTitle": ("ABY bo‘yicha tartib va ob’ekt", "Порядок по ABY и объект", "ABY order and specimen", "Heading of the ABY block on the substance analysis tab (shown in Uzbek only)."),
- "abyOrderNote": ("Milliy yo‘riqnoma (ABY) bo‘yicha: ekspress test → ajratish → rangli reaksiya → TLC → GC-MS / LC-MS/MS → spektrofotometriya. Har yozuvda qaysi ob’ekt (qon, siydik, ichki a’zo) tekshirilishi ko‘rsatilgan; manba va aniq joyi yozuv ichida.", "По национальному руководству (ABY): экспресс-тест → выделение → цветные реакции → TLC → GC-MS / LC-MS/MS → спектрофотометрия. В каждой записи указан объект (кровь, моча, внутренние органы), источник и точное место.", "Following the national guide (ABY): rapid test → isolation → colour tests → TLC → GC-MS / LC-MS/MS → spectrophotometry. Each entry names the specimen (blood, urine, internal organs), its source and exact place.", "Note under the ABY block heading."),
-}
-for i, lang in enumerate(("uz", "ru", "en")):
-    p = ARB / f"app_{lang}.arb"; d = json.loads(p.read_text(encoding="utf-8"))
-    for k, v in AB.items():
-        d.setdefault(k, v[i])
-        if lang == "en": d.setdefault("@" + k, {"description": v[3]})
-    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-print("aby ok")
-
 BK = {
  "bookMethodsTitle": ("Kitob qo‘llanmasi bo‘yicha usullar", "Методы по руководствам и учебникам", "Methods from the textbooks and manuals", "Heading of the textbook-methods block on the substance analysis tab."),
  "bookMethodsNote": ("Tekshirish usullari tasdiqlangan manbadan (ustoz kitobi va qo‘llanmalar): rangli reaksiyalar, mikrokristall, TLC, UB spektr, tasdiqlovchi usul. Har yozuvda to‘liq tavsif, manba va aniq joyi bor.", "Методы исследования из подтверждённых источников (книги преподавателя и пособия): цветные реакции, микрокристаллоскопия, TLC, УФ-спектр, подтверждающий метод. В каждой записи — полное описание, источник и точное место.", "Analytical methods from confirmed sources (the teacher's books and manuals): colour tests, microcrystal tests, TLC, UV spectrum, confirmatory method. Each entry gives the full description, source and exact place.", "Note under the textbook-methods heading."),
@@ -61,15 +48,6 @@ for i, lang in enumerate(("uz", "ru", "en")):
         if lang == "en": d.setdefault("@" + k, {"description": v[3]})
     p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 print("book ok")
-
-SP = {"abySpecimenFrom": ("ABY bo‘yicha ob’ekt: {topic}", "Объект по ABY: {topic}", "Specimen per ABY: {topic}", "Row under Specimens: specimens named by the national guide for a topic.")}
-for i, lang in enumerate(("uz", "ru", "en")):
-    p = ARB / f"app_{lang}.arb"; d = json.loads(p.read_text(encoding="utf-8"))
-    for k, v in SP.items():
-        d.setdefault(k, v[i])
-        if lang == "en": d.setdefault("@" + k, {"description": v[3], "placeholders": {"topic": {"type": "String"}}})
-    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-print("sp ok")
 
 XT = {
  "extraInfoTitle": ("Qo‘shimcha ma’lumot: ilmiy maqola, tezis, adabiyot", "Дополнительно: научные статьи, тезисы, литература", "Additional information: articles, theses, literature", "Heading of the third layer on the analysis tab."),

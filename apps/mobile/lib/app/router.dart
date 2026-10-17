@@ -29,7 +29,6 @@ import '../features/evidence/presentation/research_screens.dart';
 import '../features/evidence/presentation/scientific_image.dart';
 import '../features/glossary/presentation/glossary_screens.dart';
 import '../features/guidelines/presentation/guidelines_screens.dart';
-import '../features/guidelines/presentation/practice_catalog_screen.dart';
 import '../features/home/presentation/home_screen.dart';
 import '../features/home/presentation/search_screen.dart';
 import '../features/knowledge/presentation/knowledge_detail_screen.dart';
@@ -458,10 +457,6 @@ final routerProvider = Provider<GoRouter>((ref) {
                         builder: (c, s) => GuidelineDetailScreen(
                           cardId: s.pathParameters['id']!,
                         ),
-                      ),
-                      GoRoute(
-                        path: 'practice',
-                        builder: (c, s) => const PracticeCatalogScreen(),
                       ),
                     ],
                   ),

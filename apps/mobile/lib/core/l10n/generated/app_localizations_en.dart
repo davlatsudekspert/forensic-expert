@@ -5335,68 +5335,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get languageNameEn => 'English';
 
   @override
-  String get restrictedCatalogTitle => 'Uzbekistan practice codes (restricted)';
-
-  @override
-  String get restrictedCatalogNote =>
-      'Visible to administrators only. Catalogue metadata of a restricted source: the full text is not stored in the app, is not sent to AI and must not be distributed.';
-
-  @override
-  String get restrictedCatalogImport => 'Import catalogue file';
-
-  @override
-  String get restrictedCatalogRemove => 'Remove from this device';
-
-  @override
-  String get restrictedCatalogEmpty =>
-      'No catalogue on this device. Import the file you received privately.';
-
-  @override
-  String restrictedCatalogImported(int count) {
-    return 'Catalogue imported: $count records.';
-  }
-
-  @override
-  String get restrictedCatalogInvalid => 'This file is not a valid catalogue.';
-
-  @override
-  String restrictedCatalogRecords(int count) {
-    return '$count records';
-  }
-
-  @override
-  String restrictedCatalogPages(String from, String to) {
-    return 'pp. $from–$to';
-  }
-
-  @override
-  String restrictedCatalogPage(String page) {
-    return 'p. $page';
-  }
-
-  @override
-  String restrictedCatalogCodeOriginal(String code) {
-    return 'Code as written in the source: $code';
-  }
-
-  @override
-  String get restrictedCatalogSearchHint => 'Search by code, title or term';
-
-  @override
-  String get restrictedCatalogLinkedCards => 'Linked independent guidelines';
-
-  @override
-  String get restrictedCatalogNormative => 'Related official documents';
-
-  @override
-  String restrictedCatalogSection(String section) {
-    return 'Section $section';
-  }
-
-  @override
-  String get restrictedCatalogTitleDraft => 'Title translation is a draft';
-
-  @override
   String get aiWorking =>
       'Preparing an answer from sources… This can take up to a minute.';
 
@@ -9039,75 +8977,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get adminTierProfessional => 'Professional Pro';
 
   @override
-  String get abyObjectLabel => 'Specimen';
-
-  @override
-  String get abyObjectNotStated => 'The ABY text does not name a specimen';
-
-  @override
-  String get abyObjBlood => 'blood';
-
-  @override
-  String get abyObjUrine => 'urine';
-
-  @override
-  String get abyObjLiver => 'liver';
-
-  @override
-  String get abyObjGastric => 'gastric contents';
-
-  @override
-  String get abyObjKidney => 'kidney';
-
-  @override
-  String get abyObjLung => 'lung';
-
-  @override
-  String get abyObjHair => 'hair';
-
-  @override
-  String get abyObjBrain => 'brain';
-
-  @override
-  String get abyObjMuscle => 'muscle';
-
-  @override
-  String get abyObjBile => 'bile';
-
-  @override
-  String get abyObjIntestine => 'intestine';
-
-  @override
-  String get abyObjTrachea => 'trachea';
-
-  @override
-  String get abyObjPlasma => 'plasma';
-
-  @override
-  String get abyObjSerum => 'serum';
-
-  @override
-  String get abyObjSaliva => 'saliva';
-
-  @override
-  String get abyObjSemen => 'semen';
-
-  @override
-  String get abyObjFaeces => 'faeces';
-
-  @override
-  String get abyObjVomit => 'vomit';
-
-  @override
-  String get abyObjOrgans => 'internal organs';
-
-  @override
   String get provOwnWordsNote =>
       'The content of the source is given in our own words; the original text is not copied. The exact place is below.';
-
-  @override
-  String get confirmedSourceBanner =>
-      'Based on a confirmed source: the national guide (ABY) or the teacher\'s textbook. The exact place is given.';
 
   @override
   String get confirmedSourceBannerTextbook =>
@@ -9158,23 +9029,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get avatarError => 'Could not open the photo. Choose another one.';
 
   @override
-  String get abyOrderTitle => 'ABY order and specimen';
-
-  @override
-  String get abyOrderNote =>
-      'Following the national guide (ABY): rapid test → isolation → colour tests → TLC → GC-MS / LC-MS/MS → spectrophotometry. Each entry names the specimen (blood, urine, internal organs), its source and exact place.';
-
-  @override
   String get bookMethodsTitle => 'Methods from the textbooks and manuals';
 
   @override
   String get bookMethodsNote =>
       'Analytical methods from confirmed sources (the teacher\'s books and manuals): colour tests, microcrystal tests, TLC, UV spectrum, confirmatory method. Each entry gives the full description, source and exact place.';
-
-  @override
-  String abySpecimenFrom(String topic) {
-    return 'Specimen per ABY: $topic';
-  }
 
   @override
   String get extraInfoTitle =>

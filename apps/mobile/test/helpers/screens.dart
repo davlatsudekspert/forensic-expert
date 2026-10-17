@@ -80,7 +80,6 @@ const everyScreen = <String>[
   Routes.library,
   Routes.libraryStandards,
   Routes.guidelines,
-  Routes.practiceCatalog,
   Routes.glossary,
   Routes.sources,
   Routes.conflicts,
