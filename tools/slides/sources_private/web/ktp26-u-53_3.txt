@@ -1,40 +1,53 @@
-BIBLIOGRAFIYA
-Mualliflar: Pigaiani N, Oliva A, Cirielli V, Grassi S, Arena V, Solari LM, Tatriele N, Raniero D, Brunelli M, Gobbo S, Scarpa A, Pantanowitz L va boshq.
-Sarlavha: iForensic, multicentric validation of digital whole slide images (WSI) in forensic histopathology setting according to the College of American Pathologists guidelines
-Jurnal: International Journal of Legal Medicine, 2025, 139
-DOI: 10.1007/s00414-025-03421-5  PMID: 39836212  PMCID: PMC12003450
+BIBLIOGRAPHY
+Authors: Pigaiani N, Oliva A, Cirielli V, Grassi S, Arena V, Solari LM, Tatriele N, Raniero D, Brunelli M, Gobbo S, Scarpa A, Pantanowitz L, Rodegher P, Bortolotti F, Ausania F
+Title: iForensic, multicentric validation of digital whole slide images (WSI) in forensic histopathology setting according to the College of American Pathologists guidelines
+Journal: International Journal of Legal Medicine, 2025
+DOI: 10.1007/s00414-025-03421-5
+PMID: 39836212  PMCID: PMC12003450
 URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC12003450/
-Litsenziya: cc by Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as l
-Olingan sana: 2026-10-17 (Europe PMC / PubMed Central Open Access)
+License:  | Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as l
+Retrieved: 2026-10-17 via Europe PMC Open Access full text
 -----
-# Abstract
-AbstractPathology has benefited from the rapid progress of image-digitizing technology during the last decade. However, the application of digital whole slide images (WSI) in forensic pathology still needs to be improved. WSI validation is crucial to ensure diagnostic performance, at least equivalent to glass slides and light microscopy. The College of American Pathologists Pathology and Laboratory Quality Center recently updated internal digital pathology system validation recommendations. Following these guidelines, this pilot study aimed to validate the performance of a digital approach for forensic histopathological diagnosis. Six independent skilled forensic pathologists from different forensic medicine institutes evaluated 100 glass slides of forensic interest (80 stained with standard hematoxylin and eosin, 20 with special staining), including different organs and tissues, with light microscopy (Olympus BX51, Tokyo, Japan). Glass slides were scanned using the Aperio GT 450 DX Digital Slides Scanner (Leica Biosystems, Nussloch, Germany). After two wash-out weeks, forensic pathologists evaluated WSIs in front of a widescreen using computer devices with dedicated software (O3 viewer, O3 Enterprise, Zucchetti, Trieste, Italy). Side-by-side comparisons between diagnoses performed on tissue glass slides versus WSIs were above the threshold stated in the validation guidelines (mean concordance of 97.8%). CSUQ Version 3 questionnaire showed high satisfaction for all pathologists (mean result: 6.6/7). Our institutional digital forensic pathology system has been validated for practical casework application. This approach opens new scenarios in practical forensic casework investigations, such as sharing live histological ex-glass slides online, as well as educational and research perspectives, with improving impacts on the whole daily workflow.Keywords: Digital forensic histopathology, Digital glass, Digital whole slide images, Forensic pathology, Method validation
+ABSTRACT: AbstractPathology has benefited from the rapid progress of image-digitizing technology during the last decade. However, the application of digital whole slide images (WSI) in forensic pathology still needs to be improved. WSI validation is crucial to ensure diagnostic performance, at least equivalent to glass slides and light microscopy. The College of American Pathologists Pathology and Laboratory Quality Center recently updated internal digital pathology system validation recommendations. Following these guidelines, this pilot study aimed to validate the performance of a digital approach for forensic histopathological diagnosis. Six independent skilled forensic pathologists from different forensic medicine institutes evaluated 100 glass slides of forensic interest (80 stained with standard hematoxylin and eosin, 20 with special staining), including different organs and tissues, with light microscopy (Olympus BX51, Tokyo, Japan). Glass slides were scanned using the Aperio GT 450 DX Digital Slides Scanner (Leica Biosystems, Nussloch, Germany). After two wash-out weeks, forensic pathologists evaluated WSIs in front of a widescreen using computer devices with dedicated software (O3 viewer, O3 Enterprise, Zucchetti, Trieste, Italy). Side-by-side comparisons between diagnoses performed on tissue glass slides versus WSIs were above the threshold stated in the validation guidelines (mean concordance of 97.8%). CSUQ Version 3 questionnaire showed high satisfaction for all pathologists (mean result: 6.6/7). Our institutional digital forensic pathology system has been validated for practical casework application. This approach opens new scenarios in practical forensic casework investigations, such as sharing live histological ex-glass slides online, as well as educational and research perspectives, with improving impacts on the whole daily workflow.Keywords: Digital forensic histopathology, Digital glass, Digital whole slide images, Forensic pathology, Method validation
 
-# Introduction
+
+## Introduction
 The crucial role of systematic histological examination in the medico-legal field, especially in forensic autopsies, has been gradually established over the last two decades [1]. Histology and histopathology can assist forensic scientists in many forensic contexts. Conventional histological techniques, such as hematoxylin–eosin (H&E) staining and special stains like histochemical stains and immunohistochemistry (IHC), play a pivotal role in forensic investigations. These techniques are applied to a wide range of sample types, including human hard tissues like bones, human soft tissues, and diatoms, being able to provide insights into various aspects, such as the age and vitality of lesions (whether they are acute, subacute, or chronic, as well as antemortem, perimortem, or post-mortem) and the determination of the cause of death, distinguishing between natural and non-natural causes [2].
 Since the late 1990s, digital whole slide imaging (WSI) has become increasingly integrated into pathology practice, introducing the concept of using digital scans of histological glass slides in diagnostic processes. Initially, the first whole slide scanners (WSS) were rudimentary, taking significant time to acquire images and producing large files (approximately 7 Gigabytes of data for each focal plane). Nevertheless, advancements in automation, scanner technology, file compression systems, high-quality lenses and objectives, enhanced camera sensors, and expanded digital storage capacities have greatly improved the usability and accessibility of WSIs, making them more appealing in the market [3, 4]. The advent of digitized images, technical advances in scanning speed, and decreased costs have driven traditional pathology into the “digital pathology” era. Nowadays, pathology diagnosis on computer monitor screens using WSIs has been approved by the Food and Drug Administrations of the United States of America, the European Union, and Japan [5–7].
 Despite the exponential growth of digital pathology literature, although histopathology is almost always performed within the forensic pathology field, WSIs in the forensic context have yet to gain significant traction. Given the extensive potential of this innovative technique for service, education, and research applications, it is noteworthy that, to the best of our knowledge, only two forensic pathology publications utilizing WSIs have been published to date [8, 9].
 Given the importance of the validation step for routinely applying this technology to practical casework, the expert non-vendor panel convened by the College of American Pathologists Pathology and Laboratory Quality Center published in 2013 and recently updated practice guidelines for internal digital pathology system validation, recommended the evaluation of intra-observer diagnostic concordance between glass slides and WSIs in at least 60 routine cases, viewed firstly using a light microscope and after two wash-out weeks, using a digital viewer; the guidelines stated that diagnostic concordance between digital and glass slides for the same observer should be above 95% [10, 11].
 Following these guidelines, this study aimed to validate the multicenter performance of a digital approach for forensic histopathological diagnosis, ensuring accuracy at least equivalent to that obtained by viewing glass slides through light microscopy.
 
-# Material and methods
+## Material and methods
 Six independent skilled forensic pathologists from different forensic medicine institutes evaluated 100 histopathological glass slides with light microscopy (Olympus BX51, Tokyo, Japan). Forensic pathologists were selected based on their experience: all physicians should have performed more than 500 complete autopsies, including histopathology analyses, before the study started. Glass slides were anonymized by applying a progressive alphanumeric code.
 All glass slides analyzed in the first phase were scanned using the Aperio GT 450 DX Digital Slides Scanner (Leica Biosystems, Nussloch, Germany). Digital files were named using the same progressive alphanumeric code assigned to the original glass slides. All files were uploaded to a local server, and each pathologist was provided with confidential access to the server to recover images.
 After two wash-out weeks, forensic pathologists evaluated WSIs in front of a widescreen using a specific digital viewer—O3 viewer (O3 Enterprise, Zucchetti, Trieste, Italy) shown in Fig. 1. Quality indicators related to images, usability, and workflow were recorded based on pathologists’ subjective perceptions (high versus poor).
-[Figure] Digital environment for WSIs analysis. The digital glass holder is shown on the left side. The digital slide and the WSI portion viewed are shown at the bottom right
+Digital environment for WSIs analysis. The digital glass holder is shown on the left side. The digital slide and the WSI portion viewed are shown at the bottom right
 A further independent pathologist check compared each pathologist’s diagnosis on glass and WSI to evaluate intra-operator concordance.
 At the end of the procedure, the CSUQ Version 3 questionnaire was administered to study perceived usability. The original CSUQ Version 3 questionnaire established values between 1 and 7 or non-applicable (NA), with lower scores indicating higher satisfaction. For this study, the authors preferred higher scores to indicate higher satisfaction, as this format is also considered in the literature [12].
 
-# Results
+## Results
 One hundred glass slides of forensic interest, including different organs and tissues, have been selected. The manner of death included homicide (10 slides), suicide (15), natural (30 slides), accidental (15 slides), and medical liability (30 slides). Eighty slides were stained with standard hematoxylin and eosin, and 20 with histochemical stains (PTAH, ALCIAN-PAS, PAS, Masson Trichrome, Perls, Von Kossa) and immunohistochemical markers (CD20, CD31, MPX, CD61, CD163, CD34, CD3, CD5, CD68, CD15, alpha-smooth muscle actin). Table 1 shows tissues, stains, and synthetic histopathological diagnoses. Figure 2 displays some of the WSI analyzed.
-[Table] List of glasses examined by pathologists. N: case number, H&E: hematoxylin–eosin; αSMA: alpha-smooth muscle actin; + : weak expression; + + : moderate expression; + + + : strong expression; -: no expression
-[Figure] A: WSI 1 – Brain H&E; Intraparenchymal hemorrhage. B: WSI 39 – Aortic valve H&E: Bacterial endocarditis. C: WSI 33 – Lung H&E; Hyaline membranes. D: WSI 52 – Larynx H&E; Cartilage and muscular hemorrhage. E: WSI 91 – Heart Masson; Myocardial fibrosis. F: WSI 81 – Lung PAS; Fungal spores
+List of glasses examined by pathologists. N: case number, H&E: hematoxylin–eosin; αSMA: alpha-smooth muscle actin; + : weak expression; + + : moderate expression; + + + : strong expression; -: no expression
+A: WSI 1 – Brain H&E; Intraparenchymal hemorrhage. B: WSI 39 – Aortic valve H&E: Bacterial endocarditis. C: WSI 33 – Lung H&E; Hyaline membranes. D: WSI 52 – Larynx H&E; Cartilage and muscular hemorrhage. E: WSI 91 – Heart Masson; Myocardial fibrosis. F: WSI 81 – Lung PAS; Fungal spores
 Scan times averaged 44 s per slide, and storage sizes ranged from 119 to 997 Megabytes (with a mean of 640 Megabytes per slide). All pathologists reported high-performance scores for the system’s reliance on glass slides, image quality (including resolution and color fidelity), and ease and efficiency of digital slide navigation (supplementary material contains downloadable WSI 57—H&E—Skin with electric mark).
 Side-by-side comparisons between diagnoses performed on the microscope versus WSIs on a widescreen were excellent, with a mean concordance of 97.8% (Table 2).
-[Table] Intra-operator concordance between diagnoses performed on the microscope versus WSIs on a widescreen (mean concordance: 97.8%) and CSUQ V.3 questionnaire results (mean score: 6.6/7). Diagnosis concordance between glass and WSIs was marked when each pathologist reported an identical diagnosis in both examinations
+Intra-operator concordance between diagnoses performed on the microscope versus WSIs on a widescreen (mean concordance: 97.8%) and CSUQ V.3 questionnaire results (mean score: 6.6/7). Diagnosis concordance between glass and WSIs was marked when each pathologist reported an identical diagnosis in both examinations
+98/100
+98%
+95/100
+95%
+99/100
+99%
+98/100
+98%
+100/100
+100%
+97/100
+97%
 CSUQ Version 3 questionnaire showed high satisfaction for all pathologists (mean score: 6.6/7).
 
-# Discussion
+## Discussion
 Digitalization is transforming nearly every aspect of medicine, ushering in a new era marked by greater efficiency, precision, and accessibility in healthcare. From electronic health records and telemedicine to artificial intelligence and data analytics, digital tools are changing how healthcare professionals work [13].
 In this context, the introduction of digital technology for acquiring stained tissue sections on glass slides has profoundly impacted the pathology field. Nowadays, increasingly more pathology diagnosis and research services worldwide consider WSIs the mainstream option in daily caseload management [14].
 WSIs, often called digital or virtual pathology, is a technique that captures high-resolution digital images of entire stained tissue sections from glass slides using high-technology dedicated scanners. These images can then be viewed on a computer with a dedicated monitor for reporting, characterized by high resolution, tone balancing systems, and a high refresh rate, enabling pathologists to examine WSIs with magnification and spatial navigation similar to traditional microscopy [10]. This technique, combined with other digital tools such as barcoding, specimen tracking, and digital dictation, can significantly improve a pathology department’s safety, quality, and efficiency [15].
@@ -50,23 +63,23 @@ Moreover, such findings can have broader implications, influencing public health
 Finally, digital forensic histopathology may reshape forensic pathology education by harnessing the power of digital imaging and interactive learning tools. The first advantage is the standardization of digital images, which avoids discrepancies in student, resident, and fellow testing and scores.
 In addition, WSIs can allow students and trainees to access high-resolution images without being physically present in a laboratory. Indeed, traditional histopathology teaching relies heavily on in-person observation through microscopes, which limits accessibility and can be challenging for students who cannot physically be on-site. With digital platforms, students can remotely access these materials, enabling flexible learning and reaching a more diverse range of learners. These educational innovations also support collaborative learning. Digital platforms may allow students to discuss findings in real-time or asynchronously, often in global, cross-institutional settings. Students can work together on complex cases, consult with experts remotely, and receive feedback on their diagnostic approaches. In this sense, digital forensic histopathology may contribute to a more dynamic, connected learning environment [18, 19].
 
-# Conclusion
+## Conclusion
 Our multicenter study represents the first successful validation of WSIs in forensic pathology. Results were highly satisfactory in terms of slide reliability, digital image quality, navigational efficiency, and user interaction with the device. Additionally, diagnostic concordance between tissue glass slides on the microscope and widescreen digital viewing was excellent.
 The anticipated broader adoption of WSIs in forensic pathology holds significant promise for advancing service quality, research capabilities, and educational opportunities. By enhancing diagnostic accuracy and process efficiency, WSIs align well with the precision and reliability essential to forensic pathology investigations.
 
-# Acknowledgements
+## Acknowledgements
 Partial data from the current study have been presented during the National Congress of the Italian Group of Forensic Pathology, April 18-20, 2024, Rome, Italy.
 
-# Authors contribution
+## Authors contribution
 N.P., M.B., and S.Go. built conceptualization; N.P. and M.B. performed data curation; the investigation was carried out by A.O., V.C., S.Gr., V.A., D.R., and F.A.; the methodology was developed by N.P., M.B., S.Go., and L.P.; resources were provided by N.P., M.B., S.Go., and P.R.; software was supplied by M.B., S.Go., and A.S.; L.P. and F.B. supervised the work; N.P., L.M.S., N.T., and P.R. wrote the original draft; A.O., S.Gr., A.S., L.P., F.B., and F.A. reviewed and edited the manuscript.
 
-# Funding
+## Funding
 Open access funding provided by Università degli Studi di Verona within the CRUI-CARE Agreement. The authors received no financial support for this article’s research, authorship, and/or publication.
 
-# Data availability
+## Data availability
 The data analyzed during the current study are available from the corresponding author upon reasonable request.
 
-# Declarations
+## Declarations
 
 ## Conflict of interest
 The authors declared no potential competing interest concerning this article’s research, authorship, and/or publication.
@@ -77,11 +90,13 @@ Not applicable.
 ## Ethical approval and informed consent
 This article does not contain any studies with animals. Informed consent is unnecessary in this work because only judicial–autopsy cases were considered. The report does not contain personal data. In any case, all data are covered by the Italian Law – Data Protection Authority (Official Gazette no. 72 of March 26, 2012) for scientific research purposes.
 
-# Footnotes
+## Footnotes
+Publisher's Note
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
 
-# References
+## References
 
-# Associated Data
+## Associated Data
 
 ## Data Availability Statement
 The data analyzed during the current study are available from the corresponding author upon reasonable request.
