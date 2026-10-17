@@ -139,14 +139,14 @@ def call_api(client, system, user):
         4000, "plan")
     items = plan["plan"]
     slides = []
-    for i in range(0, len(items), 6):
-        part = items[i:i + 6]
+    for i in range(0, len(items), 3):
+        part = items[i:i + 3]
         r = _json_call(client, system, [src, {"type": "text", "text":
             f'BOSQICH 2. Quyidagi {len(part)} ta slaydni to\'liq yozing (tartib saqlansin): {json.dumps(part, ensure_ascii=False)}. '
             'Faqat JSON: {"slides":[{"title":str,"bullets":[{"text":str,"source":{"author":str,"title":str,"page":str},"uncertain":bool}],'
             '"diagram":null|{"kind":"flow"|"table","caption":str,"nodes":[str],"header":[str],"rows":[[str]]},"teacher_notes":str}]}. '
             'Har slaydda 2-4 qisqa band; diagram:true bo\'lsa diagram to\'ldirilsin.'}],
-            9000, f"slides{i // 6 + 1}")
+            12000, f"slides{i // 3 + 1}")
         slides += r["slides"]
     tail = _json_call(client, system, [src, {"type": "text", "text":
         'BOSQICH 3. Faqat JSON: {"mcq":[10 ta savol: {"question","options":[4 ta],"correct_index","explanation","source":{"author","title","page"}}],'
