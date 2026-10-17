@@ -87,10 +87,13 @@ def validate_output(data, sources):
 
 def call_api(client, system, user):
     resp = client.messages.create(
-        model=MODEL, max_tokens=MAX_TOKENS, temperature=TEMPERATURE,
+        model=MODEL, max_tokens=MAX_TOKENS,
         system=[{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
         messages=[{"role": "user", "content": user}])
     text = "".join(b.text for b in resp.content if getattr(b, "type", "") == "text")
+    text = text.strip()
+    if text.startswith("```"):
+        text = text.split("\n", 1)[1].rsplit("```", 1)[0]
     return json.loads(text)
 
 
