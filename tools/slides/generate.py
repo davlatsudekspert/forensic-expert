@@ -19,7 +19,7 @@ QOIDALAR:
 1. Faqat o'zbek tili (lotin). Faqat quyida berilgan MANBA MATNLARIDAN foydalaning.
 2. KAMIDA 30 ta slayd (30-40). Mavzuning barcha bo'limlarini qamrang. Slaydlarning kamida 6 tasida "diagram" bo'lsin (o'zingiz chizgan sodda sxema: kind="flow" nodes=[matn...] yoki kind="table" header=[...] rows=[[...]]; jadvalni manbadan o'z so'zingiz bilan qayta tuzing, rasmni ko'chirmang, haqiqiy foto deb ko'rsatmang). Oxirida "extras": 3-5 ta qiziqarli fakt/hodisa tahlili/eslab qolish usuli (manbali). Matn sodda, tushunarli.
 USLUB QOIDALARI: har band 220 belgidan oshmasin (1-2 qisqa jumla, kitob jumlasini so'zma-so'z ko'chirma — o'z so'zingiz bilan); slaydda 3-4 band, ~60 so'z; bandlar matni ichiga [muallif, bet] iqtibos YOZMANG (u source maydonida); qisqartmalar (MNT, AUF...) birinchi uchrashganda ochilsin; apostrof o' va g' uchun ‘, boshqa o'rinda ’ ishlating.
-DIAGRAMMA: slaydlarning kamida yarmida diagram bo'lsin; flow tugunlari <=40 belgi (muddat/belgi bilan), 3-6 tugun; table <=5 qator va <=4 ustun, katak <=80 belgi; vaqt chizig'i, solishtirish (A vs B), jarayon zanjiri, hisoblash misoli uchun jadval/flow ishlating; diagram sarlavhasi (caption) qisqa.
+DIAGRAMMA: slaydlarning kamida yarmida diagram bo'lsin; diagrammali slaydda band soni 3 tadan oshmasin va har band <=110 belgi (diagramma matnni takrorlamasin); flow <=5 tugun, har tugun <=32 belgi; table <=4 qator (sarlavhadan tashqari), <=3 ustun, katak <=45 belgi, sarlavha <=14 belgi, 4 ustunli jadval YARATMANG; slayd sarlavhasi <=55 belgi; servis maydonlarini (_note va h.k.) yozmang; vaqt chizig'i, solishtirish (A vs B), jarayon zanjiri, hisoblash misoli uchun jadval/flow ishlating; diagram sarlavhasi (caption) qisqa.
 TALABANI USHLAB TURISH: har bo'limdan keyin 1 ta "Voqea tahlili" slaydi (manbadagi ma'lumotlardan tuzilgan qisqa vaziyat + savol), har 6-8 slaydda "Tezkor savol" slaydi, "Diqqat: xato qilish xavfi" bandi (manbada bor farqlash: masalan A ≠ B), "Eslab qoling" mnemonikasi (manbada bo'lsa). teacher_notes: vaqt (daq), 1-2 muhokama savoli, doskada chizish topshirig'i, tipik xato. Har slaydning har bir bandi oxirida [muallif, kitob, bet] ko'rsatilsin; manba va bet faqat berilgan ro'yxatdan.
 3. Raqam, bet, foiz, sana TO'QIMANG. Manbada bo'lmasa yozmang.
 4. Ishonchsiz yoki manbada aniq bo'lmagan bandni "uncertain": true bilan belgilang.
@@ -78,7 +78,7 @@ def clean_text(data):
         if isinstance(o, list):
             return [walk(x, key) for x in o]
         if isinstance(o, dict):
-            return {k: walk(v, k) for k, v in o.items() if k not in ("}", "]", "") }
+            return {k: walk(v, k) for k, v in o.items() if k not in ("}", "]", "") and not str(k).startswith("_") }
         return o
     return walk(data)
 
