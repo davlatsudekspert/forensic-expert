@@ -1,0 +1,32 @@
+{"slides":[
+{"title":"Early Post-mortem Changes: Overview",
+"bullets":[
+{"text":"Eyes: corneal and pupillary reflexes vanish; retinal blood columns fragment ('trucking'); tension falls.","source":{"author":"Payne-James J., Jones R., Karch S.B., Manlove J.","title":"Simpson's Forensic Medicine","page":"42"},"uncertain":false},
+{"text":"Muscles go flaccid but may twitch or react to taps for some hours; skin and mucosae turn pale.","source":{"author":"Payne-James J., Jones R., Karch S.B., Manlove J.","title":"Simpson's Forensic Medicine","page":"42-43"},"uncertain":false},
+{"text":"Urine voiding, semen emission and gastric regurgitation are common and prove nothing about the cause.","source":{"author":"Payne-James J., Jones R., Karch S.B., Manlove J.","title":"Simpson's Forensic Medicine","page":"43"},"uncertain":false}],
+"diagram":{"kind":"table","caption":"Main early changes (first day) and their limits","nodes":[],"header":["Change","Basis","Limitation"],"rows":[
+["Rigor mortis","ATP loss, acidic muscle cells","Very variable; poor PMI marker"],
+["Livor (hypostasis)","Red cells settle by gravity","Onset time too variable for PMI"],
+["Algor (cooling)","Heat loss to the environment","Most useful PMI marker, still approximate"],
+["Drying, autolysis","Evaporation; lysosomal enzymes","Depends on climate and tissue"]]},
+"teacher_notes":"Time: 6 min. Discussion: Why is a doctor expected to know the normal early changes? Which findings could be mistaken for injury or asphyxia? Whiteboard task: draw the chain from cardiac arrest to rigor, livor and cooling. Typical mistake: treating vomit in the airway or semen as proof of cause of death or recent sexual activity."},
+{"title":"Supravital Reactions",
+"bullets":[
+{"text":"Some tissues still react to stimuli for hours after death; the reaction fades with time and helps date death.","source":{"author":"Ромодановский П.О., Баринов Е.Х.","title":"Судебная медицина в схемах и рисунках: учебное пособие","page":"57"},"uncertain":false},
+{"text":"A tap on the biceps raises an idiomuscular ridge that shrinks, then becomes a dent by about 10-11 hours.","source":{"author":"G‘iyosov Z.A.","title":"Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik)","page":"222"},"uncertain":false},
+{"text":"Caution: white cells can move up to 12 h after arrest, so microscopic 'vital reactions' are doubtful.","source":{"author":"Payne-James J., Jones R., Karch S.B., Manlove J.","title":"Simpson's Forensic Medicine","page":"24"},"uncertain":false}],
+"diagram":{"kind":"table","caption":"Supravital tests (approximate windows from local textbooks)","nodes":[],"header":["Stimulus","Reaction","Time window"],"rows":[
+["Mechanical tap (biceps)","Firm ridge, later a dent","Ridge to ~9 h; dent to ~11 h"],
+["Electrical current","Face muscles, then eye muscles","Face 2-3 h; eye muscles to 11-12 h"],
+["Pilocarpine / atropine","Pupil narrows / widens","Slower with time; up to ~24 h"],
+["Adrenaline on skin","Sweat glands: blue stain","Up to about 30 h"]]},
+"teacher_notes":"Time: 7 min. Discussion: Why do supravital reactions fade in a fixed order? Why can they give only a rough PMI? Whiteboard task: draw a time axis 0-12 h and mark when each reaction ends. Typical mistake: using one textbook's figures as exact; ranges differ between sources and depend on temperature."},
+{"title":"Post-mortem Cooling (Algor Mortis)",
+"bullets":[
+{"text":"By Newton's law heat passes from the warm body to cooler surroundings. A body cools unevenly and each body lies in its own environment, so rates differ.","source":{"author":"Payne-James J., Jones R., Karch S.B., Manlove J.","title":"Simpson's Forensic Medicine","page":"46"},"uncertain":false},
+{"text":"Textbooks quote about 1 degree C per hour at room temperature, but Simpson's calls such rules of thumb too unreliable to use.","source":{"author":"Payne-James J., Jones R., Karch S.B., Manlove J.","title":"Simpson's Forensic Medicine","page":"50"},"uncertain":false},
+{"text":"Three assumptions: body temperature was 37 C at death; a few readings can be extrapolated by formula; the environment stayed thermally constant.","source":{"author":"Payne-James J., Jones R., Karch S.B., Manlove J.","title":"Simpson's Forensic Medicine","page":"46"},"uncertain":false},
+{"text":"Rate depends on mass, clothing, fat, posture and air movement. Rectal probing may spoil forensic samples; nose or ear readings differ from deep rectal or liver values.","source":{"author":"Payne-James J., Jones R., Karch S.B., Manlove J.","title":"Simpson's Forensic Medicine","page":"46, 50"},"uncertain":false}],
+"diagram":null,
+"teacher_notes":"Time: 7 min. Discussion: Which of the three assumptions is most often violated at a scene? Why should the first police officers record the ambient temperature and time? Whiteboard task: list factors that slow cooling and factors that speed it. Typical mistake: assuming a body is at 37 C at death or using 'warm to touch' as evidence of time of death."}
+]}

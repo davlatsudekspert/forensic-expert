@@ -1,0 +1,36 @@
+{"slides":[
+{"title":"Post-mortem Lividity (Hypostasis)",
+"bullets":[
+{"text":"Gravity settles red cells in the lowest vessels; the colour shows through the skin as lividity.","source":{"author":"Payne-James J., Jones R., Karch S.B., Manlove J.","title":"Simpson's Forensic Medicine, 13th ed.","page":"44"},"uncertain":false},
+{"text":"Pressed or clothed areas stay pale; the site follows body position (hanging: legs and arms).","source":{"author":"Payne-James J., Jones R., Karch S.B., Manlove J.","title":"Simpson's Forensic Medicine, 13th ed.","page":"44"},"uncertain":false},
+{"text":"CO: cherry-pink; cyanide: brick-red. Colour alone never proves the cause of death.","source":{"author":"Payne-James J., Jones R., Karch S.B., Manlove J.","title":"Simpson's Forensic Medicine, 13th ed.","page":"45"},"uncertain":false}
+],
+"diagram":{"kind":"table","caption":"Three stages of lividity","nodes":[],"header":["Stage","Timing","Finger pressure"],"rows":[
+["Hypostasis","Appears 1.5-2 h; lasts to 8-12 h","Disappears, returns quickly; moves if body turned"],
+["Stasis","About 12-24 h","Only pales, recovers slowly; partial shift"],
+["Imbibition","After stasis; haemolysis, putrefaction","Colour unchanged; does not move"]
+]},
+"teacher_notes":"Time: 6 min. Discussion: (1) Why is lividity absent in severe blood loss or anaemia? (2) Why can lividity not date death precisely? Whiteboard: draw a supine body and shade the lividity and the pale pressure areas. Typical mistake: treating lividity colour as proof of cause of death. Note: Simpson's calls cyanide lividity brick-red, whereas G'iyosov's textbook calls it cherry-red; state that colour is only a clue."},
+{"title":"Lividity versus Bruises; Autolysis",
+"bullets":[
+{"text":"Caution: lividity is not a bruise; make a cross-shaped incision in the doubtful area.","source":{"author":"G‘iyosov Z.A.","title":"Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik)","page":"228-229"},"uncertain":false},
+{"text":"Autolysis begins in enzyme-rich tissues: stomach and gut mucosa, pancreas, adrenal medulla.","source":{"author":"G‘iyosov Z.A.","title":"Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik)","page":"229"},"uncertain":false},
+{"text":"Autolysed gastric mucosa can be mistaken for corrosive poisoning; the pancreas may mimic necrosis.","source":{"author":"G‘iyosov Z.A.","title":"Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik)","page":"229"},"uncertain":false}
+],
+"diagram":{"kind":"table","caption":"Lividity compared with a bruise","nodes":[],"header":["Feature","Lividity","Bruise"],"rows":[
+["Site","Dependent areas of the body","Any body region"],
+["Outline","Vague, patches merge","Defined shape, no merging"],
+["Finger pressure","Disappears or pales (early stages)","Colour unchanged"],
+["Cross incision","Blood drops from cut vessels","Clotted blood within the tissues"]
+]},
+"teacher_notes":"Time: 6 min. Discussion: (1) Why can lay people mistake lividity for bruising? (2) Which methods separate autolytic from vital changes? (Microscopy.) Whiteboard: list the four comparison features. Typical mistake: judging by colour alone without incision; also reading autolytic gastric changes as poisoning."},
+{"title":"Case Analysis: Lividity and Body Position",
+"bullets":[
+{"text":"Scenario: an adult is found face down on a bed. The face is congested with petechiae; the skin around the nose and mouth is pale, with linear marks from blanket creases.","source":{"author":"Payne-James J., Jones R., Karch S.B., Manlove J.","title":"Simpson's Forensic Medicine, 13th ed.","page":"45"},"uncertain":false},
+{"text":"The pallor comes from pressure against the bedding and the congestion from hypostasis in lax facial tissue. Neither proves suffocation; neck, nose and mouth must be dissected to exclude pressure.","source":{"author":"Payne-James J., Jones R., Karch S.B., Manlove J.","title":"Simpson's Forensic Medicine, 13th ed.","page":"44-45"},"uncertain":false},
+{"text":"Compare: a hanged body has lividity in the lower legs and arms but none on the torso; a body slipped head-first off a bed shows it on the head and upper chest.","source":{"author":"Payne-James J., Jones R., Karch S.B., Manlove J.","title":"Simpson's Forensic Medicine, 13th ed.","page":"44"},"uncertain":false},
+{"text":"Question: the body is turned onto its back during the first hours. Where will the lividity be, and how does the stage of lividity change your answer?","source":{"author":"G‘iyosov Z.A.","title":"Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik)","page":"227-228"},"uncertain":false}
+],
+"diagram":null,
+"teacher_notes":"Time: 7 min. Answer: in hypostasis the lividity fades and reappears on the new dependent side; in stasis it shifts only partly, so two overlapping patterns are seen; in imbibition it stays where it is. Discussion: what findings would support or exclude smothering? Whiteboard: sketch the pattern for a hanged body and for a body face down. Typical mistake: calling facial petechiae and pallor around the nose proof of suffocation without dissection."}
+]}
