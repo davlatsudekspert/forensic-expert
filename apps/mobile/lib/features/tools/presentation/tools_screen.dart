@@ -24,6 +24,7 @@ class ToolsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text(l.toolsTitle)),
       body: SafeArea(
+        bottom: false,
         child: ListView(
           children: [
             FeContentFrame(

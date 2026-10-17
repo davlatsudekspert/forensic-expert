@@ -14,22 +14,28 @@ import 'package:forensic_expert/features/tools/presentation/tools_screen.dart';
 import '../helpers/pump_app.dart';
 
 void main() {
-  testWidgets('pastki navigatsiya: 5 ta tab', (tester) async {
-    await pumpApp(tester, settings: completedSettings());
-    for (final (key, type) in [
-      ('nav.tools', ToolsScreen),
-      ('nav.library', LibraryScreen),
-      ('nav.ai', AiScreen),
-      ('nav.profile', ProfileScreen),
-      ('nav.home', HomeScreen),
-    ]) {
-      await tester.ensureVisible(find.byKey(Key(key)));
+  testWidgets(
+    'pastki navigatsiya: 4 ta bo‘lim + Kutubxona Asosiy tugmasi orqali',
+    (tester) async {
+      await pumpApp(tester, settings: completedSettings());
+      for (final (key, type) in [
+        ('nav.tools', ToolsScreen),
+        ('nav.ai', AiScreen),
+        ('nav.profile', ProfileScreen),
+        ('nav.home', HomeScreen),
+      ]) {
+        await tester.ensureVisible(find.byKey(Key(key)));
+        await tester.pumpAndSettle();
+        await tester.tap(find.byKey(Key(key)));
+        await tester.pumpAndSettle();
+        expect(find.byType(type), findsOneWidget, reason: key);
+      }
+      // Kutubxona — tab emas; Asosiy tepasidagi katta tugma orqali.
+      await tester.tap(find.byKey(const Key('home.library')));
       await tester.pumpAndSettle();
-      await tester.tap(find.byKey(Key(key)));
-      await tester.pumpAndSettle();
-      expect(find.byType(type), findsOneWidget, reason: key);
-    }
-  });
+      expect(find.byType(LibraryScreen), findsOneWidget);
+    },
+  );
 
   testWidgets('Home modullari va Global Search kirish nuqtasi', (tester) async {
     await pumpApp(tester, settings: completedSettings());

@@ -103,6 +103,7 @@ class EntryDetailScreen extends ConsumerWidget {
         ],
       ),
       body: SafeArea(
+        bottom: false,
         child: ListView(
           children: [
             ViewRecorder(id: entry.id),

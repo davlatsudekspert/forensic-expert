@@ -118,6 +118,7 @@ class _AiScreenState extends ConsumerState<AiScreen> {
     return Scaffold(
       appBar: AppBar(title: Text(l.moduleAi)),
       body: SafeArea(
+        bottom: false,
         child: ListView(
           // Ro‘yxat surilganda klaviatura yopiladi — aks holda u pastdagi
           // navigatsiyani berkitib qoladi va boshqa bo‘limga o‘tib bo‘lmaydi.

@@ -12,7 +12,12 @@ void main() {
       await pumpApp(tester, settings: completedSettings(lang: code));
       final l = lookupAppLocalizations(Locale(code));
       expect(find.text(l.navHome), findsWidgets);
-      for (final key in ['nav.tools', 'nav.library', 'nav.ai', 'nav.profile']) {
+      // Kutubxona — Asosiy tepasidagi katta tugma (tab emas).
+      await tester.tap(find.byKey(const Key('home.library')));
+      await tester.pumpAndSettle();
+      expect(tester.takeException(), isNull);
+      expect(find.text(l.libraryTitle), findsWidgets);
+      for (final key in ['nav.tools', 'nav.ai', 'nav.profile']) {
         await tester.tap(find.byKey(Key(key)));
         await tester.pumpAndSettle();
         expect(tester.takeException(), isNull);

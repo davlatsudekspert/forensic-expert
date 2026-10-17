@@ -128,6 +128,7 @@ class _LibrarySectionScreenState extends ConsumerState<LibrarySectionScreen> {
     return Scaffold(
       appBar: AppBar(title: Text(_section.label(l))),
       body: SafeArea(
+        bottom: false,
         child: ListView(
           keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           children: [
@@ -541,6 +542,7 @@ class LibraryScreen extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(title: Text(l.libraryTitle)),
       body: SafeArea(
+        bottom: false,
         child: ListView(
           keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           key: const Key('library.hub'),
@@ -600,6 +602,7 @@ class StandardsScreen extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(title: Text(l.libraryStandards)),
       body: SafeArea(
+        bottom: false,
         child: ListView(
           keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           key: const Key('library.standards'),
