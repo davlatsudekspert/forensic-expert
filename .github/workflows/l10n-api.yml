@@ -1,0 +1,105 @@
+name: l10n-api
+# Uch tilli (uz/ru/en) tekshiruv va tarjima TAKLIFLARI. ARB va kontent fayllarini O'ZGARTIRMAYDI:
+# natija `slides-out` branchidagi l10n/<run_id>/ papkasiga saqlanadi (maxfiy repo, ilovaga tushmaydi).
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: "Vazifa: arb (ARB tekshiruvi), content (tarjimasiz kontent), both"
+        type: choice
+        options: [arb, content, both]
+        default: arb
+      max_usd:
+        description: "Umumiy byudjet (USD, taxminiy narx; both bo'lsa ikkalasiga bo'linadi)"
+        default: "3.00"
+      dry_run:
+        description: "Dry-run (API chaqirilmaydi, faqat narx taxmini)"
+        type: boolean
+        default: true
+      batch_limit:
+        description: "ARB: faqat dastlabki N batch (0 = hammasi; sinov uchun 1-2)"
+        default: "0"
+permissions:
+  contents: write
+concurrency:
+  group: l10n-api-${{ github.run_id }}
+  cancel-in-progress: false
+jobs:
+  l10n:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install anthropic pytest pyyaml
+      - name: Testlar (mock API)
+        run: python -m pytest tools/l10n_api/tests -q
+      - name: ARB tekshiruvi
+        if: ${{ inputs.task == 'arb' || inputs.task == 'both' }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MAXUSD: ${{ inputs.max_usd }}
+          DRY: ${{ inputs.dry_run }}
+          TASK: ${{ inputs.task }}
+          BLIMIT: ${{ inputs.batch_limit }}
+        run: |
+          FLAG=""; [ "$DRY" = "true" ] && FLAG="--dry-run"
+          BUDGET="$MAXUSD"; [ "$TASK" = "both" ] && BUDGET=$(python -c "print(round(float('$MAXUSD')*0.6, 4))")
+          python tools/l10n_api/proofread_arb.py --out-dir out_l10n --max-usd "$BUDGET" --batch-limit "${BLIMIT:-0}" $FLAG
+      - name: Kontent tarjimasi
+        if: ${{ inputs.task == 'content' || inputs.task == 'both' }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MAXUSD: ${{ inputs.max_usd }}
+          DRY: ${{ inputs.dry_run }}
+        run: |
+          FLAG=""; [ "$DRY" = "true" ] && FLAG="--dry-run"
+          # ARB sarfi bo'lsa, qolgan byudjetni beramiz
+          BUDGET=$(python - <<'PY'
+          import json, os, pathlib
+          total = float(os.environ["MAXUSD"])
+          p = pathlib.Path("out_l10n/arb_spent.json")
+          spent = json.loads(p.read_text())["spent_usd_estimate"] if p.exists() else 0.0
+          print(round(max(total - spent, 0.0), 4))
+          PY
+          )
+          python tools/l10n_api/translate_content.py --out-dir out_l10n --max-usd "$BUDGET" $FLAG
+      - name: Hisobot (Actions xulosasi)
+        if: ${{ always() }}
+        run: |
+          for f in out_l10n/arb_review.md out_l10n/content_translations.md; do
+            [ -f "$f" ] && { echo "## $f" >> "$GITHUB_STEP_SUMMARY"; cat "$f" >> "$GITHUB_STEP_SUMMARY"; } || true
+          done
+          for f in out_l10n/arb_dryrun.json out_l10n/content_dryrun.json; do
+            [ -f "$f" ] && { echo "## $f" >> "$GITHUB_STEP_SUMMARY"; echo '```json' >> "$GITHUB_STEP_SUMMARY"; cat "$f" >> "$GITHUB_STEP_SUMMARY"; echo '```' >> "$GITHUB_STEP_SUMMARY"; } || true
+          done
+      - uses: actions/upload-artifact@v4
+        if: ${{ always() && inputs.dry_run != true }}
+        with:
+          name: l10n-${{ github.run_id }}
+          path: out_l10n/
+          if-no-files-found: ignore
+      - name: Natijani slides-out branchidagi l10n/ papkasiga saqlash (maxfiy repo, ilovaga tushmaydi)
+        if: ${{ always() && inputs.dry_run != true }}
+        env:
+          TASK: ${{ inputs.task }}
+        run: |
+          [ -d out_l10n ] || exit 0
+          rm -rf /tmp/o && mkdir -p /tmp/o/raw
+          cp out_l10n/*.json out_l10n/*.md /tmp/o/ 2>/dev/null || true
+          cp out_l10n/raw/raw_*.txt /tmp/o/raw/ 2>/dev/null || true
+          git config user.name "slides-bot"; git config user.email "slides-bot@users.noreply.github.com"
+          if git fetch origin slides-out 2>/dev/null; then git checkout -B slides-out origin/slides-out
+          else git checkout --orphan slides-out; git rm -rfq . ; fi
+          mkdir -p "l10n/$GITHUB_RUN_ID/raw"
+          cp /tmp/o/*.json /tmp/o/*.md "l10n/$GITHUB_RUN_ID/" 2>/dev/null || true
+          cp /tmp/o/raw/* "l10n/$GITHUB_RUN_ID/raw/" 2>/dev/null || true
+          git add l10n
+          git commit -qm "l10n output: $TASK run $GITHUB_RUN_ID" || exit 0
+          for i in 1 2 3 4 5 6; do
+            git push -q origin slides-out && exit 0
+            git fetch -q origin slides-out && git rebase origin/slides-out || { git rebase --abort; exit 1; }
+            sleep $((RANDOM % 5 + 2))
+          done
+          exit 1
