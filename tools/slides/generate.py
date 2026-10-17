@@ -12,6 +12,7 @@ CHARS_PER_TOKEN = 3.0           # o'zbek lotin uchun konservativ taxmin
 MAX_TOKENS = 9000  # bosqich uchun eng katta chegara
 TEMPERATURE = 0.2
 MAX_SOURCE_CHARS = 150000
+TOTAL_SOURCE_CHARS = 330000  # barcha manbalar yig'indisi (kontekst oynasiga sig'ishi uchun)
 PENDING = "ADABIYOT KUTILMOQDA"
 
 SYSTEM_PROMPT = """Siz sud-tibbiyot fani o'qituvchisi uchun ma'ruza materiali tayyorlaysiz.
@@ -88,6 +89,22 @@ def est_cost(in_tok, out_tok):
     return in_tok / 1e6 * PRICE_IN_PER_MTOK_USD + out_tok / 1e6 * PRICE_OUT_PER_MTOK_USD
 
 
+def _fit_budget(items, budget=None):
+    """Manbalar yig'indisi budjetdan oshsa, har manbaga adolatli ulush (water-filling): kichiklari to'liq, kattalari kesiladi."""
+    budget = budget or TOTAL_SOURCE_CHARS
+    if sum(len(e["text"]) for e in items) <= budget:
+        return items
+    remaining, left = budget, sorted(items, key=lambda e: len(e["text"]))
+    caps = {}
+    for i, e in enumerate(left):
+        share = remaining // (len(left) - i)
+        caps[id(e)] = min(len(e["text"]), share)
+        remaining -= caps[id(e)]
+    for e in items:
+        e["text"] = e["text"][:caps[id(e)]]
+    return items
+
+
 def load_sources(topic_id, path, lang="uz", intl_only=False):
     p = Path(path)
     if not p.exists():
@@ -103,6 +120,7 @@ def load_sources(topic_id, path, lang="uz", intl_only=False):
         f = Path(lp)
         if f.exists() and f.read_text(encoding="utf-8").strip():
             out.append({**e, "text": f.read_text(encoding="utf-8")[:MAX_SOURCE_CHARS]})
+    _fit_budget(out)
     if lang == "en":
         out.sort(key=lambda e: 0 if is_international(e) else 1)  # xalqaro manba oldinda (barqaror)
         if intl_only and any(is_international(e) for e in out):
