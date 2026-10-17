@@ -1,5 +1,5 @@
 """JSON -> 16:9 .pptx (kontent vositasi). Katta ekran/AirPlay uchun yirik shrift, tahrirlanadigan shakllar."""
-import json, sys
+import json, re, sys
 from pptx import Presentation
 from pptx.dml.color import RGBColor
 from pptx.enum.shapes import MSO_SHAPE
@@ -15,10 +15,10 @@ MX = Inches(0.7)  # overscan uchun chekka
 STR = {
     "uz": {"page": "-bet", "pages": "betlar", "source": "Manba", "subtitle": "Sud tibbiyoti · ma’ruza taqdimoti",
            "extras": "Qiziqarli ma’lumotlar", "quiz": "Bilimingizni sinang", "nq": "{n} ta test savoli",
-           "q": "Savol {i} / {n}", "a": "Javob {i}: {c}", "refs": "Adabiyotlar"},
+           "q": "Savol {i} / {n}", "a": "Javob {i}: {c}", "refs": "Adabiyotlar", "check": "Tekshirish kerak (manbada noaniq)"},
     "en": {"page": "p.", "pages": "pp.", "source": "Source", "subtitle": "Forensic medicine · lecture presentation",
            "extras": "Did you know?", "quiz": "Quiz", "nq": "{n} quiz questions",
-           "q": "Question {i} / {n}", "a": "Answer {i}: {c}", "refs": "References"},
+           "q": "Question {i} / {n}", "a": "Answer {i}: {c}", "refs": "References", "check": "Verify (uncertain in source)"},
 }
 
 
@@ -78,7 +78,7 @@ def _bullets(slide, items, x, y, w, h, size=22, gap=12):
     tb = slide.shapes.add_textbox(x, y, w, h); tf = tb.text_frame; tf.word_wrap = True
     for i, b in enumerate(items):
         p = tf.paragraphs[0] if i == 0 else tf.add_paragraph()
-        r = p.add_run(); r.text = "▸  " + b["text"] + (" (?)" if b.get("uncertain") else "")
+        r = p.add_run(); r.text = "▸  " + b["text"]
         r.font.size, r.font.name = Pt(size), "Calibri"; r.font.color.rgb = INK
         p.space_after = Pt(gap)
 
@@ -88,15 +88,24 @@ def _diagram(slide, d, x, y, w, h):
     if kind == "table" and d.get("header"):
         rows = [d["header"]] + list(d.get("rows", []))[:5]
         cols = len(d["header"])
-        fs = 13 if cols <= 2 else (12 if cols == 3 else 11)
-        lens = [min(40, max([len(str(r[j])) if j < len(r) else 0 for r in rows] + [len(str(d["header"][j])) + 6, 16])) for j in range(cols)]
+        fs = 17 if cols <= 2 else (15 if cols == 3 else 13)
+        word = [max([len(wd) for r in rows if j < len(r) for wd in str(r[j]).split()] + [4]) for j in range(cols)]
+        lens = [max(min(40, max([len(str(r[j])) if j < len(r) else 0 for r in rows] + [len(str(d["header"][j])) + 6, 16])), word[j] + 4) for j in range(cols)]
+        need = [Inches(word[j] * fs * 0.62 / 72 + 0.3) for j in range(cols)]  # eng uzun so'z bo'linmasin
         tot = sum(lens)
-        gs = slide.shapes.add_table(len(rows), cols, x, y, w, Inches(0.5) * len(rows))
+        widths = [max(need[j], int(w * lens[j] / tot)) for j in range(cols)]
+        over = sum(widths) - w
+        if over > 0:  # ortiqchani keng ustunlardan olamiz
+            slack = [widths[j] - need[j] for j in range(cols)]
+            ss = sum(slack) or 1
+            widths = [int(widths[j] - over * slack[j] / ss) for j in range(cols)]
+        rh = min(Inches(0.95), int(h * 0.8 / len(rows)))
+        gs = slide.shapes.add_table(len(rows), cols, x, y, w, rh * len(rows))
         t = gs.table
         for j in range(cols):
-            t.columns[j].width = int(w * lens[j] / tot)
+            t.columns[j].width = widths[j]
         for i, r in enumerate(rows):
-            t.rows[i].height = Inches(0.45)
+            t.rows[i].height = rh
             for j in range(cols):
                 c = t.cell(i, j); c.text = str(r[j]) if j < len(r) else ""
                 c.margin_left = c.margin_right = Inches(0.08); c.margin_top = c.margin_bottom = Inches(0.04)
@@ -125,6 +134,15 @@ def _diagram(slide, d, x, y, w, h):
         _text(slide, x, y + h + Inches(0.05), w, Inches(0.4), d["caption"][:70], 11, GREY)
 
 
+def _clean_ref(t):
+    """Ichki izohlar (egasi taqdim etgan, yopiq foydalanish, PDF-bet) slaydga chiqmasin."""
+    t = re.sub(r"\s*\((?:egasi taqdim etgan|yopiq foydalanish)[^)]*\)", "", t)
+    t = re.sub(r";?\s*(?:egasi taqdim etgan|yopiq foydalanish)[^.;)]*", "", t)
+    t = re.sub(r"\s*\(?\b\d+-qism,\s*PDF-bet[^)]*\)?", "", t)
+    t = re.sub(r"\s*\(PDF-bet[^)]*\)", "", t)
+    return re.sub(r"\.\s*\.", ".", t).strip()
+
+
 def build(data, out_path, lang=None):
     lang = lang or data.get("lang") or "uz"
     L = STR.get(lang, STR["uz"])
@@ -148,8 +166,12 @@ def build(data, out_path, lang=None):
         _bullets(s, sl["bullets"], MX, Inches(1.55), bw, Inches(4.9), size, 8 if has_d else 12)
         if has_d:
             _diagram(s, d, MX + Inches(6.15), Inches(1.6), W - 2 * MX - Inches(6.15), Inches(4.2))
-        _text(s, MX, Inches(6.62), W - 2 * MX, Inches(0.35), L["source"] + ": " + _srcline(sl["bullets"], lang), 10, GREY)
-        s.notes_slide.notes_text_frame.text = sl.get("teacher_notes", "")
+        _text(s, MX, Inches(6.45), W - 2 * MX, Inches(0.5), L["source"] + ": " + _srcline(sl["bullets"], lang), 13, GREY)
+        unsure = [b["text"] for b in sl["bullets"] if b.get("uncertain")]
+        notes = sl.get("teacher_notes", "")
+        if unsure:
+            notes += "\n\n" + L.get("check", "Check") + ":\n- " + "\n- ".join(unsure)
+        s.notes_slide.notes_text_frame.text = notes
     if extras:
         n += 1
         s = _frame(prs, L["extras"], n, total, topic)
@@ -176,7 +198,14 @@ def build(data, out_path, lang=None):
             _text(s, MX, Inches(6.4), W - 2 * MX, Inches(0.5), L["source"] + ": " + _src(q, lang), 11, GREY)
     n += 1
     s = _frame(prs, L["refs"], n, total, topic)
-    _bullets(s, [{"text": f"{(x.get('author') or '').rstrip('.')}. {x.get('title')}. {x.get('year') or ''}. {x.get('pages')}"} for x in data.get("sources", [])], MX, Inches(1.6), W - 2 * MX, Inches(5), 20)
+    refs = {}
+    for x in data.get("sources", []):
+        k = ((x.get("author") or "").rstrip("."), x.get("title") or "", x.get("year") or "")
+        refs.setdefault(k, [])
+        if x.get("pages") and x["pages"] not in refs[k]:
+            refs[k].append(str(x["pages"]))
+    items = [{"text": _clean_ref(f"{a}. {t}. {y}. {'; '.join(ps)}")} for (a, t, y), ps in refs.items()]
+    _bullets(s, items, MX, Inches(1.6), W - 2 * MX, Inches(5.2), 20 if len(items) <= 4 else (16 if len(items) <= 7 else 13), 8)
     prs.save(out_path)
     return out_path
 
