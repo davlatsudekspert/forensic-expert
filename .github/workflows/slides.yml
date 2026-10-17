@@ -1,0 +1,41 @@
+name: slides
+on:
+  workflow_dispatch:
+    inputs:
+      topic_id:
+        description: "Mavzu id (masalan 4-kurs-davolash-01)"
+        required: true
+      max_usd:
+        description: "Bir ishga tushirish byudjeti (USD)"
+        default: "0.50"
+      dry_run:
+        description: "Dry-run (API chaqirilmaydi)"
+        type: boolean
+        default: true
+permissions:
+  contents: read
+jobs:
+  slides:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install anthropic python-pptx
+      - name: Generate
+        working-directory: tools/slides
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TOPIC: ${{ inputs.topic_id }}
+          MAXUSD: ${{ inputs.max_usd }}
+          DRY: ${{ inputs.dry_run }}
+        run: |
+          FLAG=""; [ "$DRY" = "true" ] && FLAG="--dry-run"
+          python generate.py "$TOPIC" --max-usd "$MAXUSD" $FLAG
+          if [ -f "out/$TOPIC.json" ]; then python build_pptx.py "out/$TOPIC.json"; fi
+      - uses: actions/upload-artifact@v4
+        if: ${{ inputs.dry_run != true }}
+        with:
+          name: slides-${{ inputs.topic_id }}
+          path: tools/slides/out/
+          if-no-files-found: ignore
