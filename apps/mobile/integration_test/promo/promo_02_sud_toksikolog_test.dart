@@ -45,22 +45,6 @@ void main() {
       },
     );
     await p.caption(
-      'ABY bo‘yicha tartib: ekspress test → ajratish → TLC → GC-MS / LC-MS/MS',
-      () async {
-        await p.reveal(
-          find.text('ABY bo‘yicha tartib va ob’ekt'),
-          alignment: 0.1,
-          after: 3500,
-        );
-        p.screen('Etanol: ABY bo‘yicha tartib');
-      },
-    );
-    await p.caption('ABY bo‘yicha ob’ektlar: siydik, jigar, ichki a’zolar — manba va aniq joyi bilan', () async {
-      await p.scroll(330, ms: 1700);
-      await p.wait(2400);
-      p.screen('Etanol: ABY ob’ektlari');
-    });
-    await p.caption(
       'Analitik usullar va ularning cheklovlari — manbalardan',
       () async {
         await p.scroll(520, ms: 2000);

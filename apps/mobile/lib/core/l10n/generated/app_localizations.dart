@@ -9645,102 +9645,6 @@ abstract class AppLocalizations {
   /// **'English'**
   String get languageNameEn;
 
-  /// Admin section.
-  ///
-  /// In en, this message translates to:
-  /// **'Uzbekistan practice codes (restricted)'**
-  String get restrictedCatalogTitle;
-
-  /// Admin banner.
-  ///
-  /// In en, this message translates to:
-  /// **'Visible to administrators only. Catalogue metadata of a restricted source: the full text is not stored in the app, is not sent to AI and must not be distributed.'**
-  String get restrictedCatalogNote;
-
-  /// Action.
-  ///
-  /// In en, this message translates to:
-  /// **'Import catalogue file'**
-  String get restrictedCatalogImport;
-
-  /// Action.
-  ///
-  /// In en, this message translates to:
-  /// **'Remove from this device'**
-  String get restrictedCatalogRemove;
-
-  /// Empty.
-  ///
-  /// In en, this message translates to:
-  /// **'No catalogue on this device. Import the file you received privately.'**
-  String get restrictedCatalogEmpty;
-
-  /// Snack.
-  ///
-  /// In en, this message translates to:
-  /// **'Catalogue imported: {count} records.'**
-  String restrictedCatalogImported(int count);
-
-  /// Snack.
-  ///
-  /// In en, this message translates to:
-  /// **'This file is not a valid catalogue.'**
-  String get restrictedCatalogInvalid;
-
-  /// Count.
-  ///
-  /// In en, this message translates to:
-  /// **'{count} records'**
-  String restrictedCatalogRecords(int count);
-
-  /// Meta.
-  ///
-  /// In en, this message translates to:
-  /// **'pp. {from}–{to}'**
-  String restrictedCatalogPages(String from, String to);
-
-  /// Meta.
-  ///
-  /// In en, this message translates to:
-  /// **'p. {page}'**
-  String restrictedCatalogPage(String page);
-
-  /// Meta.
-  ///
-  /// In en, this message translates to:
-  /// **'Code as written in the source: {code}'**
-  String restrictedCatalogCodeOriginal(String code);
-
-  /// Search.
-  ///
-  /// In en, this message translates to:
-  /// **'Search by code, title or term'**
-  String get restrictedCatalogSearchHint;
-
-  /// Header.
-  ///
-  /// In en, this message translates to:
-  /// **'Linked independent guidelines'**
-  String get restrictedCatalogLinkedCards;
-
-  /// Header.
-  ///
-  /// In en, this message translates to:
-  /// **'Related official documents'**
-  String get restrictedCatalogNormative;
-
-  /// Label.
-  ///
-  /// In en, this message translates to:
-  /// **'Section {section}'**
-  String restrictedCatalogSection(String section);
-
-  /// Meta.
-  ///
-  /// In en, this message translates to:
-  /// **'Title translation is a draft'**
-  String get restrictedCatalogTitleDraft;
-
   /// Progress.
   ///
   /// In en, this message translates to:
@@ -15711,145 +15615,13 @@ abstract class AppLocalizations {
   /// **'Professional Pro'**
   String get adminTierProfessional;
 
-  /// Label for the specimen row on an ABY method card.
-  ///
-  /// In en, this message translates to:
-  /// **'Specimen'**
-  String get abyObjectLabel;
-
-  /// Shown when the ABY text names no specimen.
-  ///
-  /// In en, this message translates to:
-  /// **'The ABY text does not name a specimen'**
-  String get abyObjectNotStated;
-
-  /// Specimen name: blood.
-  ///
-  /// In en, this message translates to:
-  /// **'blood'**
-  String get abyObjBlood;
-
-  /// Specimen name: urine.
-  ///
-  /// In en, this message translates to:
-  /// **'urine'**
-  String get abyObjUrine;
-
-  /// Specimen name: liver.
-  ///
-  /// In en, this message translates to:
-  /// **'liver'**
-  String get abyObjLiver;
-
-  /// Specimen name: gastric contents.
-  ///
-  /// In en, this message translates to:
-  /// **'gastric contents'**
-  String get abyObjGastric;
-
-  /// Specimen name: kidney.
-  ///
-  /// In en, this message translates to:
-  /// **'kidney'**
-  String get abyObjKidney;
-
-  /// Specimen name: lung.
-  ///
-  /// In en, this message translates to:
-  /// **'lung'**
-  String get abyObjLung;
-
-  /// Specimen name: hair.
-  ///
-  /// In en, this message translates to:
-  /// **'hair'**
-  String get abyObjHair;
-
-  /// Specimen name: brain.
-  ///
-  /// In en, this message translates to:
-  /// **'brain'**
-  String get abyObjBrain;
-
-  /// Specimen name: muscle.
-  ///
-  /// In en, this message translates to:
-  /// **'muscle'**
-  String get abyObjMuscle;
-
-  /// Specimen name: bile.
-  ///
-  /// In en, this message translates to:
-  /// **'bile'**
-  String get abyObjBile;
-
-  /// Specimen name: intestine.
-  ///
-  /// In en, this message translates to:
-  /// **'intestine'**
-  String get abyObjIntestine;
-
-  /// Specimen name: trachea.
-  ///
-  /// In en, this message translates to:
-  /// **'trachea'**
-  String get abyObjTrachea;
-
-  /// Specimen name: plasma.
-  ///
-  /// In en, this message translates to:
-  /// **'plasma'**
-  String get abyObjPlasma;
-
-  /// Specimen name: serum.
-  ///
-  /// In en, this message translates to:
-  /// **'serum'**
-  String get abyObjSerum;
-
-  /// Specimen name: saliva.
-  ///
-  /// In en, this message translates to:
-  /// **'saliva'**
-  String get abyObjSaliva;
-
-  /// Specimen name: semen.
-  ///
-  /// In en, this message translates to:
-  /// **'semen'**
-  String get abyObjSemen;
-
-  /// Specimen name: faeces.
-  ///
-  /// In en, this message translates to:
-  /// **'faeces'**
-  String get abyObjFaeces;
-
-  /// Specimen name: vomit.
-  ///
-  /// In en, this message translates to:
-  /// **'vomit'**
-  String get abyObjVomit;
-
-  /// Specimen name: internal organs.
-  ///
-  /// In en, this message translates to:
-  /// **'internal organs'**
-  String get abyObjOrgans;
-
   /// Note under a claim written in our own words, shown in the provenance sheet.
   ///
   /// In en, this message translates to:
   /// **'The content of the source is given in our own words; the original text is not copied. The exact place is below.'**
   String get provOwnWordsNote;
 
-  /// Banner for claims resting on an owner-confirmed source.
-  ///
-  /// In en, this message translates to:
-  /// **'Based on a confirmed source: the national guide (ABY) or the teacher\'s textbook. The exact place is given.'**
-  String get confirmedSourceBanner;
-
-  /// Banner for owner-confirmed textbook sources (ABY hidden).
+  /// Banner for owner-confirmed textbook sources.
   ///
   /// In en, this message translates to:
   /// **'Based on a confirmed source: the teacher\'s textbook. The exact place is given.'**
@@ -15939,18 +15711,6 @@ abstract class AppLocalizations {
   /// **'Could not open the photo. Choose another one.'**
   String get avatarError;
 
-  /// Heading of the ABY block on the substance analysis tab (shown in Uzbek only).
-  ///
-  /// In en, this message translates to:
-  /// **'ABY order and specimen'**
-  String get abyOrderTitle;
-
-  /// Note under the ABY block heading.
-  ///
-  /// In en, this message translates to:
-  /// **'Following the national guide (ABY): rapid test → isolation → colour tests → TLC → GC-MS / LC-MS/MS → spectrophotometry. Each entry names the specimen (blood, urine, internal organs), its source and exact place.'**
-  String get abyOrderNote;
-
   /// Heading of the textbook-methods block on the substance analysis tab.
   ///
   /// In en, this message translates to:
@@ -15962,12 +15722,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Analytical methods from confirmed sources (the teacher\'s books and manuals): colour tests, microcrystal tests, TLC, UV spectrum, confirmatory method. Each entry gives the full description, source and exact place.'**
   String get bookMethodsNote;
-
-  /// Row under Specimens: specimens named by the national guide for a topic.
-  ///
-  /// In en, this message translates to:
-  /// **'Specimen per ABY: {topic}'**
-  String abySpecimenFrom(String topic);
 
   /// Heading of the third layer on the analysis tab.
   ///

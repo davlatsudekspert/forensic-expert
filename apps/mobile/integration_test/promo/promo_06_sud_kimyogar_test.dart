@@ -91,19 +91,7 @@ void main() {
       },
     );
 
-    // ABY + darslik
-    await p.go(Routes.knowledgeEntry('aby-tox-opiates'), after: 2200);
-    p.screen('ABY mavzusi: opiatlar');
-    await p.caption(
-      'ABY bo‘yicha usul matni — manba va aniq joyi bilan',
-      () async {
-        await p.wait(2000);
-        await p.scroll(520, ms: 2000);
-        await p.wait(2000);
-        await p.scroll(520, ms: 2000);
-        await p.wait(1800);
-      },
-    );
+    // Darslik
     await p.go(Routes.guideline('guideline.chem.gmt_opioids'), after: 2200);
     p.screen('Darslik: opiatlar');
     await p.caption('Darslik asosida: rangli reaksiyalar, TLC tizimlari, instrumental tasdiqlash', () async {

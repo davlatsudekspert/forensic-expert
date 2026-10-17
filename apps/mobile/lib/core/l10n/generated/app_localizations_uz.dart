@@ -5324,70 +5324,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String get languageNameEn => 'inglizcha';
 
   @override
-  String get restrictedCatalogTitle => 'O‘zbekiston amaliyot kodlari (yopiq)';
-
-  @override
-  String get restrictedCatalogNote =>
-      'Faqat administratorlarga ko‘rinadi. Cheklangan manba katalogining metama’lumotlari: to‘liq matn ilovada saqlanmaydi, AI’ga berilmaydi va tarqatilmaydi.';
-
-  @override
-  String get restrictedCatalogImport => 'Katalog faylini import qilish';
-
-  @override
-  String get restrictedCatalogRemove => 'Qurilmadan o‘chirish';
-
-  @override
-  String get restrictedCatalogEmpty =>
-      'Bu qurilmada katalog yo‘q. Yopiq yo‘l bilan olingan faylni import qiling.';
-
-  @override
-  String restrictedCatalogImported(int count) {
-    return 'Katalog import qilindi: $count ta yozuv.';
-  }
-
-  @override
-  String get restrictedCatalogInvalid => 'Bu fayl yaroqli katalog emas.';
-
-  @override
-  String restrictedCatalogRecords(int count) {
-    return '$count ta yozuv';
-  }
-
-  @override
-  String restrictedCatalogPages(String from, String to) {
-    return '$from–$to-betlar';
-  }
-
-  @override
-  String restrictedCatalogPage(String page) {
-    return '$page-bet';
-  }
-
-  @override
-  String restrictedCatalogCodeOriginal(String code) {
-    return 'Manbadagi asl kod: $code';
-  }
-
-  @override
-  String get restrictedCatalogSearchHint =>
-      'Kod, nom yoki atama bo‘yicha qidirish';
-
-  @override
-  String get restrictedCatalogLinkedCards =>
-      'Bog‘langan mustaqil yo‘riqnomalar';
-
-  @override
-  String get restrictedCatalogNormative => 'Bog‘liq rasmiy hujjatlar';
-
-  @override
-  String restrictedCatalogSection(String section) {
-    return '$section-bo‘lim';
-  }
-
-  @override
-  String get restrictedCatalogTitleDraft => 'Sarlavha tarjimasi qoralama';
-
-  @override
   String get aiWorking =>
       'Manbalar asosida javob tayyorlanmoqda… Bu bir daqiqagacha cho‘zilishi mumkin.';
 
@@ -9002,75 +8938,8 @@ class AppLocalizationsUz extends AppLocalizations {
   String get adminTierProfessional => 'Mutaxassis Pro';
 
   @override
-  String get abyObjectLabel => 'Ob’ekt';
-
-  @override
-  String get abyObjectNotStated => 'ABY matnida ob’ekt ko‘rsatilmagan';
-
-  @override
-  String get abyObjBlood => 'qon';
-
-  @override
-  String get abyObjUrine => 'siydik';
-
-  @override
-  String get abyObjLiver => 'jigar';
-
-  @override
-  String get abyObjGastric => 'me’da ichidagi massa';
-
-  @override
-  String get abyObjKidney => 'buyrak';
-
-  @override
-  String get abyObjLung => 'o‘pka';
-
-  @override
-  String get abyObjHair => 'soch';
-
-  @override
-  String get abyObjBrain => 'miya';
-
-  @override
-  String get abyObjMuscle => 'mushak';
-
-  @override
-  String get abyObjBile => 'o‘t';
-
-  @override
-  String get abyObjIntestine => 'ichak';
-
-  @override
-  String get abyObjTrachea => 'traxeya';
-
-  @override
-  String get abyObjPlasma => 'plazma';
-
-  @override
-  String get abyObjSerum => 'zardob';
-
-  @override
-  String get abyObjSaliva => 'so‘lak';
-
-  @override
-  String get abyObjSemen => 'sperma';
-
-  @override
-  String get abyObjFaeces => 'najas';
-
-  @override
-  String get abyObjVomit => 'qusuq massasi';
-
-  @override
-  String get abyObjOrgans => 'ichki a’zolar';
-
-  @override
   String get provOwnWordsNote =>
       'Manbadagi mazmun o‘z so‘zlarimiz bilan berilgan; asl matn ko‘chirilmagan. Aniq joyi quyida.';
-
-  @override
-  String get confirmedSourceBanner =>
-      'Tasdiqlangan manba asosida: milliy yo‘riqnoma (ABY) yoki ustoz kitobi. Aniq joyi ko‘rsatilgan.';
 
   @override
   String get confirmedSourceBannerTextbook =>
@@ -9121,23 +8990,11 @@ class AppLocalizationsUz extends AppLocalizations {
   String get avatarError => 'Rasmni ochib bo‘lmadi. Boshqa rasm tanlang.';
 
   @override
-  String get abyOrderTitle => 'ABY bo‘yicha tartib va ob’ekt';
-
-  @override
-  String get abyOrderNote =>
-      'Milliy yo‘riqnoma (ABY) bo‘yicha: ekspress test → ajratish → rangli reaksiya → TLC → GC-MS / LC-MS/MS → spektrofotometriya. Har yozuvda qaysi ob’ekt (qon, siydik, ichki a’zo) tekshirilishi ko‘rsatilgan; manba va aniq joyi yozuv ichida.';
-
-  @override
   String get bookMethodsTitle => 'Kitob qo‘llanmasi bo‘yicha usullar';
 
   @override
   String get bookMethodsNote =>
       'Tekshirish usullari tasdiqlangan manbadan (ustoz kitobi va qo‘llanmalar): rangli reaksiyalar, mikrokristall, TLC, UB spektr, tasdiqlovchi usul. Har yozuvda to‘liq tavsif, manba va aniq joyi bor.';
-
-  @override
-  String abySpecimenFrom(String topic) {
-    return 'ABY bo‘yicha ob’ekt: $topic';
-  }
 
   @override
   String get extraInfoTitle =>

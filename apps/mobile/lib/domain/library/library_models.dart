@@ -4,8 +4,6 @@ library;
 import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/foundation.dart';
 
-import '../../core/aby_flag.dart';
-
 enum LibrarySection { substances, methods, specimens, references, glossary }
 
 /// Ko‘p tilli nom: `en`, `ru`, `uz`.
@@ -58,15 +56,13 @@ class LibraryEntry {
 enum EntryAccess { free, lifetime }
 
 /// Manba (provenance) — UI uchun.
-/// Egasi bergan va tasdiqlagan manbalar: milliy yo‘riqnoma (ABY) va ustoz
-/// kitoblari. Ekranda «tasdiqlangan manba» deb ko‘rsatiladi.
+/// Egasi bergan va tasdiqlagan manbalar: ustoz kitoblari. Ekranda «tasdiqlangan manba» deb ko‘rsatiladi.
 ///
 /// Bu **manba** haqida gap, da’vo haqida emas: ichki ekspert-taqriz tizimi
 /// (`ScientificStatus.verified`) bunga tegmaydi — u taqrizchi harakatini
 /// talab qiladi. Xorijiy maqola va tezislar bu ro‘yxatda yo‘q: ular
 /// «tasdiqlash kerak» bo‘lib qoladi.
 const ownerConfirmedSourceIds = {
-  'SRC-ABY-2025',
   'SRC-YULDASHEV-GMT-2024',
   'SRC-YULDASHEV-TOKS-2025',
   'SRC-GIYASOV-FM-2018',
@@ -221,7 +217,7 @@ class ClaimView {
   Map<String, Object?>? get strictContext =>
       (value['context_strict'] as Map?)?.cast<String, Object?>();
 
-  /// Da’vo egasi tasdiqlagan manbaga (ABY / ustoz kitobi) tayanadimi.
+  /// Da’vo egasi tasdiqlagan manbaga (ustoz kitobi) tayanadimi.
   bool get fromConfirmedSource =>
       sources.isNotEmpty &&
       sources.every((s) => ownerConfirmedSourceIds.contains(s.sourceId));
@@ -229,17 +225,6 @@ class ClaimView {
   List<String> get items => [
     for (final i in (value['items'] as List? ?? const [])) '$i',
   ];
-
-  /// ABY yozuvi uchun: tekshiriladigan ob’ekt (`value.objects`) — qon,
-  /// siydik, ichki a’zolar… Ekspert xulosa yozishda birinchi bo‘lib shuni
-  /// biladi. Ro‘yxat faqat ABY matnida aytilganidan olinadi.
-  List<String> get objects => [
-    for (final o in (value['objects'] as List? ?? const [])) '$o',
-  ];
-
-  /// ABY matnida ob’ekt umuman aytilganmi (`value.objects_stated`).
-  /// `null` — bu ABY yozuvi emas, qator ko‘rsatilmaydi.
-  bool? get objectsStated => value['objects_stated'] as bool?;
 
   String? get excerpt => value['excerpt'] as String?;
 
@@ -250,9 +235,7 @@ class ClaimView {
 
   /// Yozuv [languageCode] interfeysida ko‘rinishi kerakmi.
   bool visibleIn(String languageCode) =>
-      (abyContentEnabled ||
-          !isAbyClaim(claimId, [for (final s in sources) s.sourceId])) &&
-      (localeOnly == null || localeOnly == languageCode);
+      localeOnly == null || localeOnly == languageCode;
 
   Map<String, String> _i18n(String key) {
     final m = value[key];

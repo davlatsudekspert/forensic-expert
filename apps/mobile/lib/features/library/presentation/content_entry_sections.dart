@@ -503,71 +503,6 @@ String methodRecordLabel(AppLocalizations l, String field) => switch (field) {
   _ => field,
 };
 
-/// ABY ob’ekt kodi → nom (qon, siydik, jigar…).
-String? abyObjectName(AppLocalizations l, String id) => switch (id) {
-  'blood' => l.abyObjBlood,
-  'urine' => l.abyObjUrine,
-  'liver' => l.abyObjLiver,
-  'gastric' => l.abyObjGastric,
-  'kidney' => l.abyObjKidney,
-  'lung' => l.abyObjLung,
-  'hair' => l.abyObjHair,
-  'brain' => l.abyObjBrain,
-  'muscle' => l.abyObjMuscle,
-  'bile' => l.abyObjBile,
-  'intestine' => l.abyObjIntestine,
-  'trachea' => l.abyObjTrachea,
-  'plasma' => l.abyObjPlasma,
-  'serum' => l.abyObjSerum,
-  'saliva' => l.abyObjSaliva,
-  'semen' => l.abyObjSemen,
-  'faeces' => l.abyObjFaeces,
-  'vomit' => l.abyObjVomit,
-  'organs' => l.abyObjOrgans,
-  _ => null,
-};
-
-/// ABY yozuvining tekshiriladigan ob’ekti: qon, siydik, ichki a’zolar…
-/// ABY matnida aytilmagan bo‘lsa — shu ham ochiq yoziladi, taxmin qilinmaydi.
-class _AbyObjects extends StatelessWidget {
-  const _AbyObjects({required this.claim});
-
-  final ClaimView claim;
-
-  static String? _name(AppLocalizations l, String id) => abyObjectName(l, id);
-
-  @override
-  Widget build(BuildContext context) {
-    final l = AppLocalizations.of(context);
-    final c = FeTheme.of(context);
-    final t = Theme.of(context).textTheme;
-    final names = [for (final o in claim.objects) ?_name(l, o)];
-    final text = names.isEmpty
-        ? l.abyObjectNotStated
-        : names.join(FeGlyphs.listSeparator);
-    return Padding(
-      key: Key('claim.objects.${claim.claimId}'),
-      padding: const EdgeInsets.only(bottom: FeSpace.xxs),
-      child: Wrap(
-        spacing: FeSpace.xs,
-        children: [
-          Text(
-            l.abyObjectLabel,
-            style: t.bodySmall?.copyWith(color: c.textSecondary),
-          ),
-          Text(
-            text,
-            style: t.bodySmall?.copyWith(
-              color: names.isEmpty ? c.textSecondary : null,
-              fontWeight: names.isEmpty ? null : FontWeight.w600,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
 class ClaimCard extends StatelessWidget {
   const ClaimCard({super.key, required this.claim});
 
@@ -623,7 +558,6 @@ class ClaimCard extends StatelessWidget {
               ),
             ),
           ),
-          if (claim.objectsStated != null) _AbyObjects(claim: claim),
           for (final (k, v) in identityRows)
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 2),
@@ -1078,7 +1012,7 @@ class ClaimMeta extends StatelessWidget {
   final ScientificStatus status;
   final String level;
 
-  /// Da’vo egasi tasdiqlagan manbaga (ABY / ustoz kitobi) tayanadi: holat
+  /// Da’vo egasi tasdiqlagan manbaga (ustoz kitobi) tayanadi: holat
   /// qatorida «Tekshirilmagan» o‘rniga «Tasdiqlangan manba». Ichki taqriz
   /// holati (`status`) o‘zgarmaydi.
   final bool confirmedSource;

@@ -1,4 +1,3 @@
-import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -6,7 +5,6 @@ import 'package:go_router/go_router.dart';
 import '../../../app/pro_tools.dart';
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
-import '../../../core/aby_flag.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
@@ -54,66 +52,8 @@ class SubstanceAnalysisSection extends ConsumerWidget {
       child: Text(text, style: t.bodySmall?.copyWith(color: c.textSecondary)),
     );
 
-    // ABY bo‘yicha tartib: bog‘langan ABY mavzulari va ularning yozuvlari
-    // (ob’ekt — qon / siydik / ichki a’zo — har yozuvda). ABY faqat o‘zbek
-    // tilida ko‘rinadi (`locale_only: uz`), shuning uchun boshqa tilda bo‘sh.
-    final abyTopics = [
-      for (final x in ref.watch(evidenceDataProvider).linksFrom(entityId))
-        if (abyContentEnabled &&
-            x.relation == LinkRelation.relatedTopic &&
-            x.basis == 'editorial:aby-order')
-          if (knowledge.byId(x.toId) case final e?)
-            (e, visibleClaims(e.claims, lang)),
-    ].where((x) => x.$2.isNotEmpty).toList();
-    // Ob’ektlar (ABY): har ABY mavzusi bo‘yicha qon / siydik / ichki a’zo —
-    // maqoladan olingan namunalardan oldin turadi.
-    final abySpecimens = [
-      for (final (e, claims) in abyTopics)
-        if ({for (final cl in claims) ...cl.objects}.toList() case final objs
-            when objs.isNotEmpty)
-          (e, objs, claims.firstWhere((cl) => cl.objects.isNotEmpty)),
-    ];
-    List<Widget> abySpecimenRows() => [
-      for (final (e, objs, cl) in abySpecimens)
-        AnalysisRow(
-          key: Key('analysis.abySpecimen.$entityId.${e.id}'),
-          icon: Icons.water_drop_outlined,
-          title: [for (final o in objs) ?abyObjectName(l, o)]
-              .join(FeGlyphs.listSeparator),
-          details: [l.abySpecimenFrom(e.name.resolve(lang))],
-          claim: cl,
-          onTap: null,
-        ),
-    ];
-    Widget abyBlock() => Column(
-      key: Key('analysis.aby.$entityId'),
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        subheader(l.abyOrderTitle),
-        note(l.abyOrderNote),
-        ...abySpecimenRows(),
-        for (final (e, claims) in abyTopics) ...[
-          Padding(
-            padding: const EdgeInsets.only(
-              top: FeSpace.xs,
-              bottom: FeSpace.xxs,
-            ),
-            child: Text(
-              e.name.resolve(lang),
-              style: t.titleSmall?.copyWith(color: c.accent),
-            ),
-          ),
-          for (final cl in claims)
-            Padding(
-              padding: const EdgeInsets.only(bottom: FeSpace.xs),
-              child: ClaimCard(claim: cl),
-            ),
-        ],
-      ],
-    );
-
     // Kitob qo‘llanmalari (Yuldashev GMT/TOKS va b.) bo‘yicha moddaga xos
-    // tahlil yozuvlari — ABY tartibida: ekspress → rangli → mikrokristall →
+    // tahlil yozuvlari — tartib: ekspress → rangli → mikrokristall →
     // TLC → spektr → tasdiqlovchi → suyuqlanish. Har biri to‘liq matn va
     // aniq joyi bilan.
     const bookOrder = [
@@ -137,7 +77,7 @@ class SubstanceAnalysisSection extends ConsumerWidget {
         for (final cl in own)
           if (cl.field == f && cl.fromConfirmedSource && cl.hasStatement) cl,
     ];
-    // 3-qatlam: tasdiqlanmagan (xalqaro maqola, tezis, SWGDRUG/UNODC) dalillar
+    // 2-qatlam: tasdiqlanmagan (xalqaro maqola, tezis, SWGDRUG/UNODC) dalillar
     // — GC-MS / LC-MS/MS usullari, sud-tibbiy holatlar, metabolizm.
     const litOrder = [
       'immunoassay_screen',
@@ -184,15 +124,11 @@ class SubstanceAnalysisSection extends ConsumerWidget {
       ],
     );
 
-    if (a.isEmpty &&
-        (abyTopics.isNotEmpty ||
-            bookClaims.isNotEmpty ||
-            litClaims.isNotEmpty)) {
+    if (a.isEmpty && (bookClaims.isNotEmpty || litClaims.isNotEmpty)) {
       return Column(
         key: Key('analysis.$entityId'),
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          if (abyTopics.isNotEmpty) abyBlock(),
           if (bookClaims.isNotEmpty) bookBlock(),
           if (litClaims.isNotEmpty) ...[
             subheader(l.extraInfoTitle),
@@ -222,10 +158,8 @@ class SubstanceAnalysisSection extends ConsumerWidget {
         ),
         // Pro: shu moddaning to‘liq tahlil rejasi (bepulda qisqa ko‘rinish).
         AnalysisPlanEntry(entityId: entityId),
-        // 1-qatlam: ABY. 2-qatlam: kitob qo‘llanmalari. 3-qatlam: ilmiy
-        // adabiyot (qo‘shimcha) — aralashtirilmaydi, har biri o‘z sarlavhasi
-        // ostida.
-        if (abyTopics.isNotEmpty) abyBlock(),
+        // 1-qatlam: kitob qo‘llanmalari. 2-qatlam: ilmiy adabiyot
+        // (qo‘shimcha) — aralashtirilmaydi, har biri o‘z sarlavhasi ostida.
         if (bookClaims.isNotEmpty) bookBlock(),
         if (hasExtra) ...[
           subheader(l.extraInfoTitle),

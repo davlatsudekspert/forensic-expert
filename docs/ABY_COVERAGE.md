@@ -1,4 +1,17 @@
-# ABY 2025 — ilovadagi qamrov
+> **Ilovadan olib tashlandi (2026-10-17).** Egasi qarori: «ABY ni ilovadan
+> to‘liq o‘chir, git tarixidan tiklash mumkin» (Apple 2.5.19 — yashirin
+> funksiyalar bo‘lmasin). Bundle (`content/pilot/bundle.json`), `content.db`,
+> builder (`content/tools/build_aby_content.py`, `aby_data*.py`,
+> `aby_expert_notes.py`), `content/dossier/*aby*`, ilova kodi
+> (`kShowAbyContent`, ob’ekt qatori, «ABY bo‘yicha tartib» bloki, admin
+> «yopiq katalog»), testlar, goldenlar va ARB kalitlari olib tashlangan.
+> **Tiklash: git tarixidan.** Olib tashlashdan oldingi holat — `05bffed`
+> (branch `claude/phase-8-12-final-release`). ABY qo‘shgan commitlar:
+> `c7e4a2c` (yopiq katalog), `d5de958`, `e98ab76`, `b06ce17`, `130ee15`,
+> `13a98ba`, `6891337`, `357da52` (moddalar — ular ilovada qoldi, faqat
+> ABY havolasi yo‘q), `92ea0f3` (yashirish). Quyidagi matn — tarixiy hujjat.
+
+# ABY 2025 — ilovadagi qamrov (tarixiy)
 
 Hujjat: **Sud-tibbiyot ekspertiza (tekshiruv)lari amaliyotlarini bajarish
 yo‘riqnomasi (ABY)**. Respublika sud-tibbiy ekspertiza ilmiy-amaliy markazi,
