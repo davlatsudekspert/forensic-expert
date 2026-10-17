@@ -4,8 +4,8 @@ import 'package:forensic_expert/domain/ai/ai_architecture.dart';
 import 'package:forensic_expert/domain/ai/provenance_retrieval.dart';
 import 'package:forensic_expert/domain/ai/rag_pipeline.dart';
 import 'package:forensic_expert/domain/library/library_models.dart';
+import 'package:forensic_expert/domain/ports/ai_entitlement.dart';
 import 'package:forensic_expert/domain/ports/ai_ports.dart';
-import 'package:forensic_expert/domain/ports/billing_ports.dart';
 import 'package:forensic_expert/domain/privacy/telemetry_policy.dart';
 
 import '../helpers/pilot_content.dart';

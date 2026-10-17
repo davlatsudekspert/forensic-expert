@@ -97,6 +97,11 @@ void main() {
       c.read(routerProvider).go(Routes.home);
       await tester.pumpAndSettle();
       expect(find.byKey(const Key('support.replyBanner')), findsOneWidget);
+      // «Yuborildi» snackbar’i (4 s) bannerni vaqtincha yopib turadi.
+      ScaffoldMessenger.of(
+        tester.element(find.byKey(const Key('support.replyBanner'))),
+      ).clearSnackBars();
+      await tester.pumpAndSettle();
       await _tap(tester, find.byKey(const Key('support.replyBanner.open')));
       expect(find.byKey(const Key('support.list')), findsOneWidget);
       await _tap(
@@ -270,13 +275,11 @@ void main() {
     expect(find.textContaining('professionalPro'), findsNothing);
     expect(find.textContaining('forensicToxicology'), findsNothing);
     expect(find.textContaining('android'), findsNothing);
-    await _tap(tester, find.byKey(const Key('adminUsers.tier.pro')));
+    // Tarif (Pro/Bepul) filtri va yorlig‘i olib tashlangan.
+    expect(find.byKey(const Key('adminUsers.tier.pro')), findsNothing);
+    expect(find.byKey(const Key('adminUsers.tier.any')), findsNothing);
     expect(
       find.byKey(const Key('adminUsers.user.student@univ.test')),
-      findsNothing,
-    );
-    expect(
-      find.byKey(const Key('adminUsers.user.expert@lab.test')),
       findsOneWidget,
     );
 

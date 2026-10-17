@@ -12,11 +12,11 @@ Verdict = `reviewed` verdict if a ledger entry matches the claim text, otherwise
 | SCOPE_MISMATCH | 0 | 0 | 0 | 0 |
 | ABSTRACT_ONLY | 9 | 167 | 510 | 686 |
 | NO_LOCATOR | 6 | 0 | 19 | 25 |
-| PARTIAL | 11 | 38 | 21 | 70 |
-| SUPPORTED | 820 | 237 | 480 | 1537 |
-| **claims** | 847 | 442 | 1030 | 2319 |
+| PARTIAL | 14 | 38 | 21 | 73 |
+| SUPPORTED | 871 | 237 | 480 | 1588 |
+| **claims** | 901 | 442 | 1030 | 2373 |
 
-Automatic verdicts only (before human review overrides): UNSUPPORTED 1, SCOPE_MISMATCH 7, ABSTRACT_ONLY 684, NO_LOCATOR 25, PARTIAL 69, SUPPORTED 1533.
+Automatic verdicts only (before human review overrides): UNSUPPORTED 1, SCOPE_MISMATCH 7, ABSTRACT_ONLY 684, NO_LOCATOR 25, PARTIAL 72, SUPPORTED 1584.
 Reviewed claims (ledger, text hash matches): 46; stale review entries: 0; orphan entries: 0.
 
 Baseline (before fixes): UNSUPPORTED 1, SCOPE_MISMATCH 10, ABSTRACT_ONLY 569, NO_LOCATOR 76, PARTIAL 56, SUPPORTED 1085.
@@ -113,7 +113,7 @@ Levels grade the PUBLICATION TYPE only; the criterion is in code, not in the dat
 | guideline/tier1/B | 2 |
 | journal_article/tier2/A | 8 |
 | journal_article/tier2/B | 232 |
-| journal_article/tier2/C | 50 |
+| journal_article/tier2/C | 68 |
 | journal_article/tier2/D | 32 |
 | legislation/tier1/A | 8 |
 | report/tier3/C | 1 |
@@ -139,7 +139,9 @@ Sources whose level is ungrounded or inconsistent with their own title / type:
 | SRC-PMC12030428 Pharmacokinetics of Psilocybin: A Systematic Review | C | title says systematic review/meta-analysis but level is not A |
 | SRC-PMC12346081 Current Understanding and Future Research Direction for Esti | B | title says systematic review/meta-analysis but level is not A |
 | SRC-PMC12793923 Vitreous Humor Versus Peripheral Blood for Accurate Estimati | C | title says systematic review/meta-analysis but level is not A |
+| SRC-PMC12794522 Decoding the Unseen: A Systematic Review of the Analytical P | C | title says systematic review/meta-analysis but level is not A |
 | SRC-PMC12808249 Characterizing post-mortem blood concentrations in methadone | A | level A without 'systematic review/meta-analysis/guideline' in the title - check PubMed publication type |
+| SRC-PMC13024865 Conventional Chromatographic Techniques and Biosensors for M | C | title says systematic review/meta-analysis but level is not A |
 | SRC-PMC13224331 Forensic Utility of Vitreous Potassium Concentration in Esti | C | title says systematic review/meta-analysis but level is not A |
 | SRC-PMC13331822 "Detection of sedative and antipsychotic in exhumed institut | B | title says case report/series but level is not D |
 | SRC-PMC13342391 Lorazepam during breastfeeding: a pharmacokinetic case repor | B | title says case report/series but level is not D |
@@ -2476,4 +2478,58 @@ Sources whose level is ungrounded or inconsistent with their own title / type:
 | `C-MERCURY-IDENTITY` | SRC-PUBCHEM-23931 | Computed Properties | SUPPORTED | numbers_or_norms |
 | `C-ACETIC-ACID-IDENTITY` | SRC-PUBCHEM-176 | Computed Properties | SUPPORTED | numbers_or_norms |
 | `C-AMMONIA-IDENTITY` | SRC-PUBCHEM-222 | Computed Properties | SUPPORTED | numbers_or_norms |
+| `C-AS-MERCURY-COLOUR_TEST-01` | SRC-YULDASHEV-TOKS-2025 | pp. 79, 202 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-AS-MERCURY-CHEMICAL_TEST-01` | SRC-YULDASHEV-TOKS-2025 | p. 79 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-AS-MERCURY-SAMPLE_PREPARATION-01` | SRC-YULDASHEV-TOKS-2025 | pp. 78, 213 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-AS-MERCURY-ANALYTICAL_METHOD-01` | SRC-YULDASHEV-TOKS-2025 | pp. 79, 213 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-AS-ACETIC-ACID-ODOUR_TEST-01` | SRC-YULDASHEV-TOKS-2025 | p. 31 | SUPPORTED | paraphrase_not_quoted |
+| `C-AS-ACETIC-ACID-COLOUR_TEST-01` | SRC-YULDASHEV-TOKS-2025 | p. 32 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-AS-ACETIC-ACID-COLOUR_TEST-02` | SRC-YULDASHEV-TOKS-2025 | p. 32 | SUPPORTED | paraphrase_not_quoted |
+| `C-AS-ACETIC-ACID-CHEMICAL_TEST-01` | SRC-YULDASHEV-TOKS-2025 | p. 32 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-AS-ACETIC-ACID-SAMPLE_PREPARATION-01` | SRC-YULDASHEV-TOKS-2025 | pp. 27, 31–32 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-AS-ACETIC-ACID-ANALYTICAL_METHOD-01` | SRC-YULDASHEV-TOKS-2025 | p. 32 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-AS-AMMONIA-EXPRESS_TEST-01` | SRC-YULDASHEV-TOKS-2025 | pp. 147, 262–263 | SUPPORTED | paraphrase_not_quoted |
+| `C-AS-AMMONIA-CHEMICAL_TEST-01` | SRC-YULDASHEV-TOKS-2025 | pp. 147, 263 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-AS-CHLORPROMAZINE-EXPRESS_TEST-01` | SRC-YULDASHEV-TOKS-2025 | pp. 20, 170 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-AS-PHENOBARBITAL-EXPRESS_TEST-01` | SRC-YULDASHEV-TOKS-2025 | p. 20 | SUPPORTED | paraphrase_not_quoted |
+| `C-AS-PENTOBARBITAL-EXPRESS_TEST-01` | SRC-YULDASHEV-TOKS-2025 | p. 20 | SUPPORTED | paraphrase_not_quoted |
+| `C-AS-SECOBARBITAL-EXPRESS_TEST-01` | SRC-YULDASHEV-TOKS-2025 | p. 20 | SUPPORTED | paraphrase_not_quoted |
+| `C-AS-BUTALBITAL-EXPRESS_TEST-01` | SRC-YULDASHEV-TOKS-2025 | p. 20 | SUPPORTED | paraphrase_not_quoted |
+| `C-AS-HYDROGEN-CYANIDE-EXPRESS_TEST-01` | SRC-YULDASHEV-TOKS-2025 | p. 170 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-AS-ARSENIC-TRIOXIDE-EXPRESS_TEST-01` | SRC-YULDASHEV-TOKS-2025 | p. 170 | SUPPORTED | paraphrase_not_quoted |
+| `C-AS-SERTRALINE-ANALYTICAL_METHOD-01` | SRC-YULDASHEV-TOKS-2025 | pp. 141, 257–258 | SUPPORTED | numbers_or_norms, paraphrase_not_quoted |
+| `C-AS-BROMAZOLAM-ANALYTICAL_METHOD-01` | SRC-PMC13040413 | ABSTRACT | PARTIAL | numbers_or_norms, subject_not_named_in_excerpt |
+| `C-AS-BROMAZOLAM-PHOTOMETRIC_ASSAY-01` | SRC-PMC13211992 | ABSTRACT | SUPPORTED |  |
+| `C-AS-FLUALPRAZOLAM-PHOTOMETRIC_ASSAY-01` | SRC-PMC13211992 | ABSTRACT | SUPPORTED |  |
+| `C-AS-ETIZOLAM-PHOTOMETRIC_ASSAY-01` | SRC-PMC13211992 | ABSTRACT | SUPPORTED |  |
+| `C-AS-FLUALPRAZOLAM-ANALYTICAL_METHOD-01` | SRC-PMC9715448 | ABSTRACT | SUPPORTED |  |
+| `C-AS-HYDROCODONE-ANALYTICAL_METHOD-01` | SRC-PMC10300969 | ABSTRACT | SUPPORTED |  |
+| `C-AS-ETONITAZENE-IMMUNOASSAY_SCREEN-01` | SRC-PMC12794522 | ABSTRACT | SUPPORTED | numbers_or_norms, prescriptive |
+| `C-AS-METONITAZENE-IMMUNOASSAY_SCREEN-01` | SRC-PMC12794522 | ABSTRACT | SUPPORTED | numbers_or_norms, prescriptive |
+| `C-AS-ISOTONITAZENE-IMMUNOASSAY_SCREEN-01` | SRC-PMC12794522 | ABSTRACT | SUPPORTED | numbers_or_norms, prescriptive |
+| `C-AS-PROTONITAZENE-IMMUNOASSAY_SCREEN-01` | SRC-PMC12794522 | ABSTRACT | SUPPORTED | numbers_or_norms, prescriptive |
+| `C-AS-ETONITAZEPYNE-IMMUNOASSAY_SCREEN-01` | SRC-PMC12794522 | ABSTRACT | SUPPORTED | numbers_or_norms, prescriptive |
+| `C-AS-ETONITAZEPYNE-ANALYTICAL_METHOD-01` | SRC-PMC10444644 | ABSTRACT | SUPPORTED | numbers_or_norms |
+| `C-AS-BUPROPION-ANALYTICAL_METHOD-01` | SRC-PMC11983492 | ABSTRACT | SUPPORTED | numbers_or_norms |
+| `C-AS-RISPERIDONE-TLC_SYSTEM-01` | SRC-PMC12905903 | ABSTRACT | SUPPORTED | numbers_or_norms |
+| `C-AS-RISPERIDONE-TLC_SYSTEM-02` | SRC-PMC12905903 | ABSTRACT | SUPPORTED | numbers_or_norms |
+| `C-AS-RISPERIDONE-ANALYTICAL_METHOD-01` | SRC-PMC12905903 | ABSTRACT | PARTIAL | subject_not_named_in_excerpt |
+| `C-AS-JWH-018-ANALYTICAL_METHOD-01` | SRC-PMC11541396 | ABSTRACT | SUPPORTED | numbers_or_norms |
+| `C-AS-FURANYLFENTANYL-ANALYTICAL_METHOD-01` | SRC-PMC6314982 | ABSTRACT | SUPPORTED |  |
+| `C-AS-FURANYLFENTANYL-SAMPLE_PREPARATION-01` | SRC-PMC6314982 | ABSTRACT | SUPPORTED |  |
+| `C-AS-FURANYLFENTANYL-ANALYTICAL_METHOD-02` | SRC-PMC6314982 | ABSTRACT | SUPPORTED | numbers_or_norms |
+| `C-AS-ACETYLFENTANYL-ANALYTICAL_METHOD-02` | SRC-PMC6314982 | ABSTRACT | SUPPORTED |  |
+| `C-AS-ACETYLFENTANYL-ANALYTICAL_METHOD-03` | SRC-PMC6314982 | ABSTRACT | SUPPORTED | numbers_or_norms |
+| `C-AS-ACETYLFENTANYL-ANALYTICAL_METHOD-04` | SRC-PMC5754386 | ABSTRACT | PARTIAL | subject_not_named_in_excerpt |
+| `C-AS-COLCHICINE-ANALYTICAL_METHOD-01` | SRC-PMC12457077 | ABSTRACT | SUPPORTED |  |
+| `C-AS-MERCURY-ANALYTICAL_METHOD-02` | SRC-PMC13024865 | ABSTRACT | SUPPORTED |  |
+| `C-AS-GHB-ANALYTICAL_METHOD-01` | SRC-PMC12944385 | ABSTRACT | SUPPORTED | numbers_or_norms |
+| `C-AS-GHB-ANALYTICAL_METHOD-02` | SRC-PMC12567942 | ABSTRACT | SUPPORTED |  |
+| `C-AS-TRAMADOL-IMMUNOASSAY_SCREEN-01` | SRC-PMC12842606 | ABSTRACT | SUPPORTED | numbers_or_norms |
+| `C-AS-TRAMADOL-IMMUNOASSAY_SCREEN-02` | SRC-PMC9836806 | ABSTRACT | SUPPORTED |  |
+| `C-AS-PARACETAMOL-IMMUNOASSAY_SCREEN-01` | SRC-PMC12980178 | ABSTRACT | SUPPORTED |  |
+| `C-AS-ZOPICLONE-IMMUNOASSAY_SCREEN-01` | SRC-PMC11591615 | ABSTRACT | SUPPORTED |  |
+| `C-AS-LEVAMISOLE-IMMUNOASSAY_SCREEN-01` | SRC-PMC12866554 | ABSTRACT | SUPPORTED | numbers_or_norms |
+| `C-AS-OXYCODONE-IMMUNOASSAY_SCREEN-01` | SRC-PMC13335650 | ABSTRACT | SUPPORTED | numbers_or_norms |
+| `C-AS-BUPRENORPHINE-IMMUNOASSAY_SCREEN-01` | SRC-PMC13335650 | ABSTRACT | SUPPORTED | numbers_or_norms |
 

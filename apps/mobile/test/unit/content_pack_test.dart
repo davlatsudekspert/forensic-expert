@@ -6,7 +6,6 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/data/content/bundled_pack.dart';
 import 'package:forensic_expert/data/content/content_library_repository.dart';
 import 'package:forensic_expert/domain/library/library_models.dart';
-import 'package:forensic_expert/domain/ports/billing_ports.dart';
 
 import '../helpers/pilot_content.dart';
 
@@ -79,13 +78,6 @@ void main() {
           expect(c.layer, KnowledgeLayer.internationalScientific);
         }
       }
-    });
-
-    test('bepul demo — aynan AccessPolicy chegarasida', () {
-      final free = repo
-          .entries(LibrarySection.substances)
-          .where((e) => e.access == EntryAccess.free);
-      expect(free.length, AccessPolicy.freeEntriesPerSection);
     });
 
     test('provenance: identifikatsiya, iqtibos, litsenziya', () {

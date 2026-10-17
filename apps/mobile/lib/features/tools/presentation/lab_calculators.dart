@@ -431,16 +431,19 @@ class _NumberField extends StatelessWidget {
   final bool signed;
 
   @override
-  Widget build(BuildContext context) => TextField(
-    onTapOutside: (_) => FocusScope.of(context).unfocus(),
-    key: k == null ? null : Key(k!),
-    controller: controller,
-    keyboardType: TextInputType.numberWithOptions(
-      decimal: true,
-      signed: signed,
+  Widget build(BuildContext context) => CalcLabeled(
+    label: label,
+    child: TextField(
+      onTapOutside: (_) => FocusScope.of(context).unfocus(),
+      key: k == null ? null : Key(k!),
+      controller: controller,
+      keyboardType: TextInputType.numberWithOptions(
+        decimal: true,
+        signed: signed,
+      ),
+      textInputAction: TextInputAction.next,
+      decoration: InputDecoration(suffixText: suffix),
     ),
-    textInputAction: TextInputAction.next,
-    decoration: InputDecoration(labelText: label, suffixText: suffix),
   );
 }
 
@@ -458,16 +461,20 @@ class _UnitDropdown extends StatelessWidget {
   final ValueChanged<Unit> onChanged;
 
   @override
-  Widget build(BuildContext context) => DropdownButtonFormField<Unit>(
-    initialValue: value,
-    isExpanded: true,
-    decoration: InputDecoration(labelText: label),
-    items: [
-      for (final u in units) DropdownMenuItem(value: u, child: Text(u.symbol)),
-    ],
-    onChanged: (u) {
-      if (u != null) onChanged(u);
-    },
+  Widget build(BuildContext context) => CalcLabeled(
+    label: label,
+    child: DropdownButtonFormField<Unit>(
+      style: Theme.of(context).textTheme.bodyLarge,
+      initialValue: value,
+      isExpanded: true,
+      items: [
+        for (final u in units)
+          DropdownMenuItem(value: u, child: Text(u.symbol)),
+      ],
+      onChanged: (u) {
+        if (u != null) onChanged(u);
+      },
+    ),
   );
 }
 
@@ -480,13 +487,47 @@ class _ValueWithUnit extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Row(
-    crossAxisAlignment: CrossAxisAlignment.start,
+    // Yorliqlar maydon ustida: uzun yorliq 2 qatorga o‘tsa ham maydonlar
+    // bir chiziqda turadi.
+    crossAxisAlignment: CrossAxisAlignment.end,
     children: [
       Expanded(flex: 3, child: field),
       const SizedBox(width: FeSpace.xs),
       Expanded(flex: 2, child: unit),
     ],
   );
+}
+
+/// Kirish maydoni yorlig‘i — maydon **ustida**, doim ko‘rinadi va to‘liq
+/// (Material suzuvchi yorlig‘i tor maydonda «Boshlang‘ich konse…» bo‘lib
+/// kesilardi). Ekran o‘quvchisi uchun yorliq maydonni o‘rab turgan semantik
+/// konteynerda (MergeSemantics dropdown/chip almashganda framework
+/// assertion’iga olib kelgani uchun ishlatilmaydi).
+class CalcLabeled extends StatelessWidget {
+  const CalcLabeled({super.key, required this.label, required this.child});
+
+  final String label;
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    final t = Theme.of(context).textTheme;
+    final c = FeTheme.of(context);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        ExcludeSemantics(
+          child: Text(
+            label,
+            style: t.labelLarge?.copyWith(color: c.textSecondary),
+          ),
+        ),
+        const SizedBox(height: FeSpace.xxs),
+        Semantics(container: true, label: label, child: child),
+      ],
+    );
+  }
 }
 
 const _concUnits = [
@@ -822,17 +863,20 @@ class _PercentState extends State<PercentSolutionView> with CalcInputsMixin {
     return CalcScaffold(
       descriptor: _calc.descriptor,
       inputs: [
-        DropdownButtonFormField<PercentBasis>(
-          initialValue: _basis,
-          isExpanded: true,
-          decoration: InputDecoration(labelText: l.calcPercentBasis),
-          items: [
-            for (final b in PercentBasis.values)
-              DropdownMenuItem(value: b, child: Text(basisLabel(b))),
-          ],
-          onChanged: (b) {
-            if (b != null) changed(() => _basis = b);
-          },
+        CalcLabeled(
+          label: l.calcPercentBasis,
+          child: DropdownButtonFormField<PercentBasis>(
+            style: Theme.of(context).textTheme.bodyLarge,
+            initialValue: _basis,
+            isExpanded: true,
+            items: [
+              for (final b in PercentBasis.values)
+                DropdownMenuItem(value: b, child: Text(basisLabel(b))),
+            ],
+            onChanged: (b) {
+              if (b != null) changed(() => _basis = b);
+            },
+          ),
         ),
         _NumberField(
           label: l.calcPercentValue,
@@ -928,16 +972,15 @@ class _StatsState extends State<DescriptiveStatsView> with CalcInputsMixin {
     return CalcScaffold(
       descriptor: _calc.descriptor,
       inputs: [
-        TextField(
-          onTapOutside: (_) => FocusScope.of(context).unfocus(),
-          key: const Key('calc.values'),
-          controller: _values,
-          minLines: 3,
-          maxLines: 8,
-          keyboardType: TextInputType.multiline,
-          decoration: InputDecoration(
-            labelText: l.calcStatsValues,
-            alignLabelWithHint: true,
+        CalcLabeled(
+          label: l.calcStatsValues,
+          child: TextField(
+            onTapOutside: (_) => FocusScope.of(context).unfocus(),
+            key: const Key('calc.values'),
+            controller: _values,
+            minLines: 3,
+            maxLines: 8,
+            keyboardType: TextInputType.multiline,
           ),
         ),
       ],
@@ -1050,16 +1093,15 @@ class _CalibrationState extends State<CalibrationView> with CalcInputsMixin {
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
-    final pointsField = TextField(
-      onTapOutside: (_) => FocusScope.of(context).unfocus(),
-      key: const Key('calc.points'),
-      controller: _points,
-      minLines: 4,
-      maxLines: 10,
-      keyboardType: TextInputType.multiline,
-      decoration: InputDecoration(
-        labelText: l.calcRegPoints,
-        alignLabelWithHint: true,
+    final pointsField = CalcLabeled(
+      label: l.calcRegPoints,
+      child: TextField(
+        onTapOutside: (_) => FocusScope.of(context).unfocus(),
+        key: const Key('calc.points'),
+        controller: _points,
+        minLines: 4,
+        maxLines: 10,
+        keyboardType: TextInputType.multiline,
       ),
     );
     final pointsCopy = (
@@ -1111,17 +1153,20 @@ class _CalibrationState extends State<CalibrationView> with CalcInputsMixin {
             '${l.calcRegR2} ${l.fmtFixed(reg.rSquared, 4)}',
             style: Theme.of(context).textTheme.bodySmall,
           ),
-        DropdownButtonFormField<SigmaBasis>(
-          initialValue: _basis,
-          isExpanded: true,
-          decoration: InputDecoration(labelText: l.calcLodSigmaBasis),
-          items: [
-            for (final b in SigmaBasis.values)
-              DropdownMenuItem(value: b, child: Text(basisLabel(b))),
-          ],
-          onChanged: (b) {
-            if (b != null) changed(() => _basis = b);
-          },
+        CalcLabeled(
+          label: l.calcLodSigmaBasis,
+          child: DropdownButtonFormField<SigmaBasis>(
+            style: Theme.of(context).textTheme.bodyLarge,
+            initialValue: _basis,
+            isExpanded: true,
+            items: [
+              for (final b in SigmaBasis.values)
+                DropdownMenuItem(value: b, child: Text(basisLabel(b))),
+            ],
+            onChanged: (b) {
+              if (b != null) changed(() => _basis = b);
+            },
+          ),
         ),
         _NumberField(
           label: l.calcLodSigma,

@@ -41,3 +41,5 @@ Tavsiya: bitta tilni to'liq tugatib, sinovdan o'tkazib, keyin keyingisiga
 o'tish. Uchtasini bir vaqtda boshlash sifatni tushiradi.
 
 - **3D anatomiya ko‘rinishi (egasi taklifi, 2026-10-17):** ochiq «Human Atlas» (BodyParts3D asosida, GitHub) kabi 3D atlas. Hozir boshlanmaydi. Avval: (1) litsenziya (BodyParts3D CC BY-SA — nomlash va share-alike talabi tekshiriladi), (2) hajm (2 234 qism — faqat kerakli to‘plam), (3) Flutter 3D ko‘rish usuli va past qurilmada tezlik, (4) oflayn. Foydasi: sud-tibbiy jarohat joyi va a’zolar uchun ustoz/talaba rejimi. Qaror egasida.
+
+- **Serverdagi Pro qoldiqlari (2026-10-17):** `admin_set_access`, `account_access`/tier ustuni, `admin_users(p_tier)`, `admin_stats().tiers` va xarid-tekshiruv edge funksiyalari ilova tomonidan chaqirilmaydi. Egasi tasdig‘idan keyin alohida migratsiya bilan olib tashlanadi (production DB o‘zgarishi — tasdiq kerak).

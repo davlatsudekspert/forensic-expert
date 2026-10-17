@@ -21,7 +21,6 @@ const shellScreens = <String>[
   '/tools/tool/tool.lab.dilution',
   Routes.forensicMedicine,
   '/library/entry/TEST-SUB-ETOH',
-  Routes.purchase,
   Routes.privacy,
   Routes.terms,
   Routes.about,
@@ -59,6 +58,8 @@ const onboardingScreens = <String>[
 /// yuradi, shunda yangi bo‘lim qo‘shilganda u ham avtomatik sinaladi.
 const everyScreen = <String>[
   Routes.home,
+  Routes.teacher,
+  Routes.teacherResults,
   Routes.search,
   Routes.proSearch,
   Routes.learn,
@@ -108,7 +109,6 @@ const everyScreen = <String>[
   Routes.profileJurisdiction,
   Routes.profileDisclaimer,
   Routes.profileEdit,
-  Routes.purchase,
   Routes.privacy,
   Routes.terms,
   Routes.about,

@@ -6,6 +6,7 @@ import 'package:go_router/go_router.dart';
 import '../../../app/account.dart';
 import '../../../app/app_info.dart';
 import '../../../app/avatar.dart';
+import '../../../app/moderation.dart';
 import '../../../app/professional.dart';
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
@@ -19,7 +20,6 @@ import '../../../core/perf/startup_metrics.dart';
 import '../../../core/settings/app_settings.dart';
 import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/fe_components.dart';
-import '../../../domain/ports/billing_ports.dart' hide VerificationStatus;
 import '../../../domain/ports/professional_ports.dart';
 import '../../../domain/professional/professional_models.dart';
 import '../../professional/presentation/professional_widgets.dart';
@@ -28,7 +28,6 @@ import '../../professional/professional_strings.dart';
 import '../../referral/presentation/invite_card.dart';
 import '../../support/presentation/support_widgets.dart';
 import 'avatar_widgets.dart';
-import 'subscription_ui.dart';
 
 class ProfileScreen extends ConsumerWidget {
   const ProfileScreen({super.key});
@@ -42,7 +41,6 @@ class ProfileScreen extends ConsumerWidget {
     final content = ref.watch(contentStatusProvider);
     final authRepo = ref.watch(authRepositoryProvider);
     final authState = ref.watch(authStateProvider);
-    final access = ref.watch(accessProvider);
     final localProfile = ref.watch(localProfileProvider);
     final verification =
         ref.watch(professionalSnapshotProvider).value ??
@@ -104,11 +102,11 @@ class ProfileScreen extends ConsumerWidget {
       }
     }
 
-    // Tartib: kim (kartochka) → hisob → obuna → sozlamalar → ko‘rinish →
+    // Tartib: kim (kartochka) → hisob → sozlamalar → ko‘rinish →
     // yordam → tasdiqlash → ma’lumotlar → ilova haqida. Har bo‘lim —
     // bitta guruhlangan karta.
     return Scaffold(
-      appBar: AppBar(title: Text(l.profileTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.profileTitle)),
       body: SafeArea(
         bottom: false,
         child: ListView(
@@ -225,54 +223,6 @@ class ProfileScreen extends ConsumerWidget {
                         ),
                       ),
                     ),
-                  FeSectionHeader(l.subscriptionSection),
-                  _Group(
-                    children: [
-                      _Row(
-                        key: const Key('profile.purchase'),
-                        icon: Icons.workspace_premium_outlined,
-                        title: l.planLabel,
-                        value: tierLabel(l, access.effectiveTier),
-                        onTap: () => context.push(Routes.purchase),
-                      ),
-                      _Row(
-                        key: const Key('profile.subscriptionStatus'),
-                        icon: Icons.event_repeat_outlined,
-                        title: l.subscriptionStateLabel,
-                        value: subscriptionStatusLabel(context, access),
-                      ),
-                      _Row(
-                        key: const Key('profile.restore'),
-                        icon: Icons.restore,
-                        title: l.restorePurchases,
-                        onTap: () async {
-                          final messenger = ScaffoldMessenger.of(context);
-                          final e = await ref
-                              .read(entitlementServiceProvider)
-                              .restore();
-                          messenger.showSnackBar(
-                            SnackBar(
-                              content: Text(
-                                e.effectiveTier == PlanTier.free
-                                    ? l.restoreNothing
-                                    : l.purchaseOwned,
-                              ),
-                            ),
-                          );
-                        },
-                      ),
-                      if (access.effectiveTier != PlanTier.free)
-                        _Row(
-                          key: const Key('profile.manage'),
-                          icon: Icons.open_in_new,
-                          title: l.manageSubscription,
-                          onTap: () => openManageSubscription(
-                            context,
-                            productId: access.productId,
-                          ),
-                        ),
-                    ],
-                  ),
                   FeSectionHeader(l.profileSectionPreferences),
                   _Group(
                     children: [
@@ -365,6 +315,21 @@ class ProfileScreen extends ConsumerWidget {
                     ],
                   ),
                   FeSectionHeader(l.profileSectionHelp),
+                  // Shikoyat: kirmagan foydalanuvchi ham yuboradi (Apple 1.2).
+                  if (ref.watch(reportAvailableProvider)) ...[
+                    _Group(
+                      children: [
+                        _Row(
+                          key: const Key('profile.report'),
+                          icon: Icons.report_gmailerrorred_outlined,
+                          title: l.repTitle,
+                          value: l.repProfileHint,
+                          onTap: () => context.push(Routes.report),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: FeSpace.sm),
+                  ],
                   if (supportOn) ...[
                     _Group(
                       children: [
@@ -505,17 +470,6 @@ class ProfileScreen extends ConsumerWidget {
                   if (kDebugMode || kProfileMode) ...[
                     FeSectionHeader(l.diagnosticsSection),
                     _Diagnostics(color: c.textSecondary),
-                    Text(
-                      switch (ref.watch(accessProvider).verification) {
-                        EntitlementVerification.none => l.diagPurchaseNone,
-                        EntitlementVerification.storeConfirmed =>
-                          l.diagPurchaseStore,
-                        EntitlementVerification.serverVerified =>
-                          l.diagPurchaseServer,
-                      },
-                      key: const Key('diag.purchase'),
-                      style: t.bodySmall?.copyWith(color: c.textSecondary),
-                    ),
                   ],
                   const SizedBox(height: FeSpace.xl),
                 ],
@@ -694,9 +648,12 @@ class _IdentityCard extends ConsumerWidget {
             final r? => l.professionalRoleLabel(r),
             null => null,
           };
+    final modeText = isStudent ? l.modeStudent : l.modeProfessional;
     final subtitle = [
-      isStudent ? l.modeStudent : l.modeProfessional,
-      ?role,
+      modeText,
+      // «Talaba · Talaba» takrori bo‘lmasin: rol rejim nomi bilan bir xil
+      // bo‘lsa, bir marta ko‘rsatiladi.
+      if (role != null && role != modeText) role,
       if (!isStudent)
         if (profile.professional case final p?)
           l.specialtyLabel(p.primarySpecialty),

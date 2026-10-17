@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/professional.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/professional_fixtures.dart';
 import '../helpers/pump_app.dart';
@@ -55,9 +53,6 @@ void main() {
                 testFixtures: false,
                 overrides: [
                   ...pilot.overrides,
-                  entitlementServiceProvider.overrideWithValue(
-                    FakeStore(withOffers: false),
-                  ),
                   // Ish joyi to‘liq ko‘rinishi uchun FIXTURE taqrizchi.
                   if (route == Routes.reviewDashboard)
                     professionalIdentityProvider.overrideWithValue(

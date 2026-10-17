@@ -52,7 +52,7 @@ void main() {
     expect(find.byKey(const Key('referral.claim')), findsNothing);
   });
 
-  testWidgets('kirgan: kod, statistika, 10% izohi, ulashish (native)', (
+  testWidgets('kirgan: kod, statistika (kreditsiz), ulashish (native)', (
     tester,
   ) async {
     final share = RecordingShareService();
@@ -85,7 +85,6 @@ void main() {
       ('3', 'Joined'),
       ('2', 'Verified'),
       ('1', 'Pending'),
-      ('0.00', 'FORENSIC Credits'),
     ]) {
       expect(
         find.descendant(of: stats, matching: find.text(v)),
@@ -96,8 +95,10 @@ void main() {
         findsOneWidget,
       );
     }
-    expect(find.textContaining('10% of the purchase value'), findsOneWidget);
-    expect(find.textContaining('not cash'), findsOneWidget);
+    // To‘lov/kredit/mukofot matni yo‘q (ilovada to‘lov qatlami olib tashlangan).
+    expect(find.text('FORENSIC Credits'), findsNothing);
+    expect(find.textContaining('purchase'), findsNothing);
+    expect(find.byKey(const Key('referral.creditsNote')), findsNothing);
     // Ommaviy domen sozlanmagan — soxta havola yo‘q, kod ulashiladi.
     expect(find.byKey(const Key('referral.noLink')), findsOneWidget);
     expect(find.byKey(const Key('referral.link')), findsNothing);

@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 
@@ -105,16 +103,6 @@ void main() {
     ('profile_en_light', s('en'), Routes.profile, std, 1),
     ('profile_uz_hc', s('uz', hc: true), Routes.profile, std, 1),
     ('jurisdiction_en', s('en'), Routes.profileJurisdiction, std, 1),
-    // Lifetime purchase (store ulanmagan → reference narx, tugma o‘chiq).
-    ('purchase_en_light', s('en'), Routes.purchase, std, 1),
-    ('purchase_uz_dark', s('uz', theme: dark), Routes.purchase, std, 1),
-    (
-      'purchase_ru_dark_320_x13',
-      s('ru', theme: dark),
-      Routes.purchase,
-      small,
-      1.3,
-    ),
   ];
 
   for (final (name, settings, route, size, scale) in cases) {
@@ -192,7 +180,7 @@ void main() {
       ('p4_compare_uz_320', s('uz'), Routes.compare, false, small),
       ('p4_home_pilot_en', s('en'), Routes.home, false, std),
     ];
-    for (final (name, settings, route, owned, size) in pilot) {
+    for (final (name, settings, route, _, size) in pilot) {
       testWidgets(name, (tester) async {
         await pumpApp(
           tester,
@@ -201,12 +189,7 @@ void main() {
           initialLocation: route,
           pixelRatio: 1.5,
           testFixtures: false,
-          overrides: [
-            ...content.overrides,
-            entitlementServiceProvider.overrideWithValue(
-              FakeStore(owned: owned),
-            ),
-          ],
+          overrides: [...content.overrides],
         );
         await settleImages(tester);
         await expectLater(

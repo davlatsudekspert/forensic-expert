@@ -81,8 +81,9 @@ class StudyHubScreen extends ConsumerWidget {
     final l = AppLocalizations.of(context);
     final catalog = ref.watch(studyCatalogProvider);
     final loading = ref.watch(studyCatalogLoadingProvider);
+    final lang = Localizations.localeOf(context).languageCode;
     return Scaffold(
-      appBar: AppBar(title: Text(l.studyTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.studyTitle)),
       body: SafeArea(
         child: ListView(
           children: [
@@ -95,6 +96,60 @@ class StudyHubScreen extends ConsumerWidget {
                     icon: Icons.menu_book_outlined,
                     text: l.studyIntro,
                     tone: FeBannerTone.review,
+                  ),
+                  if (catalog.decks.any(
+                    (d) =>
+                        StudyQuizBuilder.canQuiz(d, catalog) &&
+                        !StudyQuizBuilder.canExam(d, catalog, lang),
+                  )) ...[
+                    const SizedBox(height: FeSpace.xs),
+                    FeBanner(
+                      key: const Key('study.examUnavailableNote'),
+                      icon: Icons.edit_note,
+                      text: l.studyExamUnavailableHub,
+                    ),
+                  ],
+                  const SizedBox(height: FeSpace.sm),
+                  FeCard(
+                    key: const Key('study.classQuiz'),
+                    onTap: () => context.push(Routes.classQuiz),
+                    child: Row(
+                      children: [
+                        DecoratedBox(
+                          decoration: BoxDecoration(
+                            color: FeTheme.of(context).accentContainer,
+                            borderRadius: BorderRadius.circular(FeRadius.md),
+                          ),
+                          child: SizedBox.square(
+                            dimension: 44,
+                            child: Icon(
+                              Icons.groups_2_outlined,
+                              color: FeTheme.of(context).accent,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: FeSpace.md),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                l.classQuizTitle,
+                                style: Theme.of(context).textTheme.titleSmall,
+                              ),
+                              Text(
+                                l.classQuizCardSubtitle,
+                                style: Theme.of(context).textTheme.bodySmall
+                                    ?.copyWith(
+                                      color: FeTheme.of(context).textSecondary,
+                                    ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const Icon(Icons.chevron_right),
+                      ],
+                    ),
                   ),
                   if (catalog.isEmpty)
                     Padding(
@@ -213,14 +268,16 @@ class _DeckCard extends ConsumerWidget {
                     ? () => context.push(Routes.studyQuiz(deck.id))
                     : null,
               ),
-              OutlinedButton.icon(
-                key: Key('study.exam.${deck.id}'),
-                icon: const Icon(Icons.fact_check_outlined),
-                label: Text(l.studyModeExam),
-                onPressed: canExam
-                    ? () => context.push(Routes.studyQuiz(deck.id, exam: true))
-                    : null,
-              ),
+              // Imtihon yo‘q to‘plamda o‘chirilgan tugma takrorlanmaydi:
+              // «Faqat mashq» chipi va sahifa boshidagi bitta izoh yetarli.
+              if (canExam)
+                OutlinedButton.icon(
+                  key: Key('study.exam.${deck.id}'),
+                  icon: const Icon(Icons.fact_check_outlined),
+                  label: Text(l.studyModeExam),
+                  onPressed: () =>
+                      context.push(Routes.studyQuiz(deck.id, exam: true)),
+                ),
             ],
           ),
           if (!canQuiz) ...[
@@ -231,10 +288,12 @@ class _DeckCard extends ConsumerWidget {
               style: note,
             ),
           ],
-          if (!canExam && canQuiz) ...[
+          // Tarjima qoralama bo‘lgani uchun imtihon yo‘qligi — tilga xos,
+          // shu to‘plamning o‘zida aytiladi (umumiy sabab — sahifa boshida).
+          if (!canExam && canQuiz && draftOnly) ...[
             const SizedBox(height: FeSpace.xxs),
             Text(
-              draftOnly ? l.studyExamDraftLanguage : l.studyExamUnavailable,
+              l.studyExamDraftLanguage,
               key: Key('study.examUnavailable.${deck.id}'),
               style: note,
             ),
@@ -315,7 +374,9 @@ class _StudyFlashcardsScreenState extends ConsumerState<StudyFlashcardsScreen> {
     }
     return Scaffold(
       appBar: AppBar(
-        title: Text(deck == null ? l.learnFlashcards : studyDeckTitle(l, deck)),
+        title: FeAppBarTitle(
+          deck == null ? l.learnFlashcards : studyDeckTitle(l, deck),
+        ),
       ),
       body: SafeArea(
         child: ListView(
@@ -1143,7 +1204,7 @@ class _StudyQuizScreenState extends ConsumerState<StudyQuizScreen> {
     }
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: FeAppBarTitle(
           deck == null
               ? (_exam ? l.studyModeExam : l.studyModePractice)
               : studyDeckTitle(l, deck),
@@ -1266,23 +1327,28 @@ class _StudyQuizScreenState extends ConsumerState<StudyQuizScreen> {
         ),
         if (n == 0) ...[
           const SizedBox(height: FeSpace.sm),
-          FeBanner(
-            key: Key('study.mode.banner.${_exam ? 'exam' : 'practice'}'),
-            icon: _exam ? Icons.fact_check_outlined : Icons.info_outline,
-            tone: _exam ? FeBannerTone.review : FeBannerTone.info,
-            text: _exam ? l.studyModeExamBanner : l.studyModePracticeBanner,
-          ),
-          if (!_exam) ...[
-            const SizedBox(height: FeSpace.xs),
+          if (_exam)
             FeBanner(
-              icon: Icons.rule,
-              text: q.item.distractors.isNotEmpty
-                  ? l.studyQuizNoteAuthored
-                  : questions.any((x) => x.isTrueFalse)
-                  ? '${l.studyQuizNote} ${l.studyTfNote}'
-                  : l.studyQuizNote,
+              key: const Key('study.mode.banner.exam'),
+              icon: Icons.fact_check_outlined,
+              tone: FeBannerTone.review,
+              text: l.studyModeExamBanner,
+            )
+          else
+            // Mashq: rejim va variantlar haqidagi ikki izoh — bitta,
+            // yig‘iladigan qutida (savolni pastga surib yubormasin).
+            _CollapsibleNote(
+              key: const Key('study.mode.banner.practice'),
+              title: l.studyQuizAboutPractice,
+              paragraphs: [
+                l.studyModePracticeBanner,
+                q.item.distractors.isNotEmpty
+                    ? l.studyQuizNoteAuthored
+                    : questions.any((x) => x.isTrueFalse)
+                    ? '${l.studyQuizNote} ${l.studyTfNote}'
+                    : l.studyQuizNote,
+              ],
             ),
-          ],
         ],
         const SizedBox(height: FeSpace.sm),
         Wrap(
@@ -1544,6 +1610,60 @@ class _OptionTile extends StatelessWidget {
               ],
             ),
           ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Yig‘iladigan izoh qutisi (mayin fon, sarlavha + ochiladigan matn).
+class _CollapsibleNote extends StatelessWidget {
+  const _CollapsibleNote({
+    super.key,
+    required this.title,
+    required this.paragraphs,
+  });
+
+  final String title;
+  final List<String> paragraphs;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    return Material(
+      color: c.surface,
+      borderRadius: BorderRadius.circular(FeRadius.md),
+      clipBehavior: Clip.antiAlias,
+      child: Theme(
+        data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+        child: ExpansionTile(
+          dense: true,
+          tilePadding: const EdgeInsets.symmetric(horizontal: FeSpace.sm),
+          childrenPadding: const EdgeInsets.fromLTRB(
+            FeSpace.sm,
+            0,
+            FeSpace.sm,
+            FeSpace.sm,
+          ),
+          expandedCrossAxisAlignment: CrossAxisAlignment.start,
+          leading: Icon(Icons.info_outline, size: 20, color: c.borderStrong),
+          title: Text(
+            title,
+            style: t.bodySmall?.copyWith(color: c.textSecondary),
+          ),
+          children: [
+            for (final (i, p) in paragraphs.indexed) ...[
+              if (i > 0) const SizedBox(height: FeSpace.xs),
+              Text(
+                p,
+                style: t.bodySmall?.copyWith(
+                  color: c.textSecondary,
+                  height: 1.45,
+                ),
+              ),
+            ],
+          ],
         ),
       ),
     );

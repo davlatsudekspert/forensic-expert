@@ -17,9 +17,6 @@ abstract interface class AccountService {
 
   /// Faqat admin; aks holda `null`.
   Future<AdminDashboard?> dashboard();
-
-  /// Email bo‘yicha Pro berish (`tier`) yoki olib tashlash (`null`).
-  Future<AdminGrantResult> setAccess(String email, String? tier);
 }
 
 class UnconfiguredAccountService implements AccountService {
@@ -41,8 +38,4 @@ class UnconfiguredAccountService implements AccountService {
 
   @override
   Future<AdminDashboard?> dashboard() async => null;
-
-  @override
-  Future<AdminGrantResult> setAccess(String email, String? tier) async =>
-      AdminGrantResult.failed;
 }

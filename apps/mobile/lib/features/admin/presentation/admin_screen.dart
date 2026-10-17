@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../app/account.dart';
+import '../../../app/moderation.dart';
 import '../../../app/qa.dart';
 import '../../../app/routes.dart';
 import '../../../app/support.dart';
@@ -13,12 +14,13 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/brand_mark.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/admin/admin_models.dart';
+import '../../moderation/presentation/admin_ext_overview.dart';
 import 'admin_gate.dart';
 import 'admin_widgets.dart';
 
 /// Egasi uchun admin panel: bo‘limlar (murojaatlar, foydalanuvchilar,
 /// jurnal, moderatsiya), agregat statistika (`admin_stats`), platformalar,
-/// davlatlar, Pro berish. Ma’lumot faqat serverdan va faqat identity_admin
+/// davlatlar. Ma’lumot faqat serverdan va faqat identity_admin
 /// uchun; marshrut [AdminGate] bilan yopiq.
 class AdminScreen extends ConsumerWidget {
   const AdminScreen({super.key});
@@ -53,6 +55,7 @@ class _AdminDashboard extends ConsumerWidget {
             onPressed: () {
               ref.invalidate(adminDashboardProvider);
               ref.invalidate(adminStatsProvider);
+              ref.invalidate(adminStatsExtProvider);
             },
           ),
         ],
@@ -94,7 +97,6 @@ class _Body extends StatelessWidget {
       (l.adminIos, d.total('ios')),
       (l.adminAiRequests, d.total('ai_requests')),
       (l.adminReferrals, d.total('referrals')),
-      (l.adminProGrants, d.total('pro_grants')),
     ];
     final maxDaily = d.daily.fold<int>(1, (m, e) => e.$2 > m ? e.$2 : m);
     return ListView(
@@ -106,10 +108,14 @@ class _Body extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               const SizedBox(height: FeSpace.sm),
-              FeBanner(icon: Icons.lock_outline, text: l.adminPrivacyNote),
+              FeBanner(
+                icon: Icons.privacy_tip_outlined,
+                text: l.adminPrivacyNote,
+              ),
               const SizedBox(height: FeSpace.sm),
               const _AdminSections(),
               const _AdminOverview(),
+              const AdminExtOverview(),
               FeSectionHeader(l.adminTitle),
               LayoutBuilder(
                 builder: (context, box) {
@@ -197,7 +203,6 @@ class _Body extends StatelessWidget {
                     ],
                   ),
                 ),
-              const _GrantSection(),
               const SizedBox(height: FeSpace.xl),
             ],
           ),
@@ -248,6 +253,17 @@ class _AdminSections extends ConsumerWidget {
           onTap: () => context.push(Routes.adminAudit),
         ),
       ],
+      if (ref.watch(reportAvailableProvider))
+        AdminNavTile(
+          key: const Key('admin.nav.reports'),
+          icon: Icons.report_gmailerrorred_outlined,
+          title: l.admxNavReports,
+          hint: l.admxNavReportsHint(
+            ref.watch(adminStatsExtProvider).value?.reportsOpen ?? 0,
+          ),
+          badge: ref.watch(adminStatsExtProvider).value?.reportsOpen ?? 0,
+          onTap: () => context.push(Routes.adminReports),
+        ),
       AdminNavTile(
         key: const Key('admin.nav.moderation'),
         icon: Icons.fact_check_outlined,
@@ -323,8 +339,6 @@ class _AdminOverview extends ConsumerWidget {
                 '${value.active30d}',
                 l.admStatActive30d,
               ),
-              (Icons.workspace_premium_outlined, '${value.pro}', l.admStatPro),
-              (Icons.person_outline, '${value.free}', l.admStatFree),
               (
                 Icons.badge_outlined,
                 '${value.professionalProfiles}',
@@ -354,7 +368,7 @@ class _AdminOverview extends ConsumerWidget {
             ],
           ),
           const SizedBox(height: FeSpace.xs),
-          for (final note in [l.admModesNote, l.admActiveNote, l.admProNote])
+          for (final note in [l.admModesNote, l.admActiveNote])
             Padding(
               padding: const EdgeInsets.only(bottom: FeSpace.xxs),
               child: Text(
@@ -382,142 +396,5 @@ class _AdminOverview extends ConsumerWidget {
         ),
       ),
     };
-  }
-}
-
-class _GrantSection extends ConsumerStatefulWidget {
-  const _GrantSection();
-
-  @override
-  ConsumerState<_GrantSection> createState() => _GrantSectionState();
-}
-
-class _GrantSectionState extends ConsumerState<_GrantSection> {
-  final _email = TextEditingController();
-  bool _busy = false;
-
-  @override
-  void dispose() {
-    _email.dispose();
-    super.dispose();
-  }
-
-  /// Oddiy tekshiruv: server baribir hisobni topa olmasa `NOT_FOUND`
-  /// qaytaradi, lekin xato terilgan manzil uchun so‘rov yuborishning
-  /// hojati yo‘q.
-  static final _emailRe = RegExp(r'^[^\s@]+@[^\s@]+\.[^\s@]{2,}$');
-
-  bool get _valid => _emailRe.hasMatch(_email.text.trim());
-
-  Future<void> _run(String? tier, {String? tierName}) async {
-    final l = AppLocalizations.of(context);
-    final messenger = ScaffoldMessenger.of(context);
-    setState(() => _busy = true);
-    final r = await ref
-        .read(accountServiceProvider)
-        .setAccess(_email.text.trim(), tier);
-    if (!mounted) return;
-    setState(() => _busy = false);
-    messenger.showSnackBar(
-      SnackBar(
-        content: Text(switch (r) {
-          AdminGrantResult.granted =>
-            tierName == null ? l.adminGranted : l.adminGrantedTier(tierName),
-          AdminGrantResult.revoked => l.adminRevoked,
-          AdminGrantResult.notFound => l.adminNotFound,
-          _ => l.adminFailed,
-        }),
-      ),
-    );
-    if (r == AdminGrantResult.granted || r == AdminGrantResult.revoked) {
-      // Keyingi odamga o‘tish oson bo‘lsin; tasodifan ikki marta
-      // yuborilmasin ham.
-      _email.clear();
-      setState(() {});
-      ref.invalidate(adminDashboardProvider);
-      ref.invalidate(serverAccessProvider);
-    }
-  }
-
-  /// Kirishni olib tashlash — qaytarib bo‘ladigan, lekin odam uchun darhol
-  /// sezilarli amal, shuning uchun tasdiq so‘raladi.
-  Future<void> _confirmRevoke() async {
-    final l = AppLocalizations.of(context);
-    final ok = await showDialog<bool>(
-      context: context,
-      builder: (c) => AlertDialog(
-        title: Text(l.adminRevokeConfirmTitle),
-        content: Text(l.adminRevokeConfirmBody),
-        actions: [
-          TextButton(
-            key: const Key('admin.revoke.cancel'),
-            onPressed: () => Navigator.of(c).pop(false),
-            child: Text(MaterialLocalizations.of(c).cancelButtonLabel),
-          ),
-          FilledButton(
-            key: const Key('admin.revoke.confirm'),
-            onPressed: () => Navigator.of(c).pop(true),
-            child: Text(l.adminRevoke),
-          ),
-        ],
-      ),
-    );
-    if (ok ?? false) await _run(null);
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final l = AppLocalizations.of(context);
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        FeSectionHeader(l.adminGrantTitle),
-        TextField(
-          onTapOutside: (_) => FocusScope.of(context).unfocus(),
-          key: const Key('admin.grantEmail'),
-          controller: _email,
-          keyboardType: TextInputType.emailAddress,
-          autocorrect: false,
-          onChanged: (_) => setState(() {}),
-          decoration: InputDecoration(
-            labelText: l.adminEmail,
-            helperText: l.adminGrantHint,
-            helperMaxLines: 3,
-            errorText: _email.text.isEmpty || _valid
-                ? null
-                : l.adminEmailInvalid,
-          ),
-        ),
-        const SizedBox(height: FeSpace.xs),
-        Wrap(
-          spacing: FeSpace.xs,
-          runSpacing: FeSpace.xs,
-          children: [
-            FilledButton(
-              key: const Key('admin.grant'),
-              onPressed: _busy || !_valid
-                  ? null
-                  : () => _run(
-                      'professionalPro',
-                      tierName: l.adminTierProfessional,
-                    ),
-              child: Text(l.adminGrantPro),
-            ),
-            FilledButton.tonal(
-              key: const Key('admin.grantStudent'),
-              onPressed: _busy || !_valid
-                  ? null
-                  : () => _run('studentPro', tierName: l.adminTierStudent),
-              child: Text(l.adminGrantStudent),
-            ),
-            OutlinedButton(
-              key: const Key('admin.revoke'),
-              onPressed: _busy || !_valid ? null : _confirmRevoke,
-              child: Text(l.adminRevoke),
-            ),
-          ],
-        ),
-      ],
-    );
   }
 }

@@ -31,15 +31,6 @@ void main() {
         deck.items.every((i) => i.originId.startsWith('guideline.chem.gmt_')),
         isTrue,
       );
-      final unlocked = StudyCatalogBuilder.build(
-        guidelines: guidelines,
-        substancesUnlocked: true,
-        referencesUnlocked: true,
-      );
-      expect(
-        unlocked.deck(StudyCatalogBuilder.gmtDeckId)!.items.length,
-        deck.items.length,
-      );
       // «Toksikologik kimyo» to‘plamiga aralashmaydi.
       final toks = free.deck(StudyCatalogBuilder.toksDeckId);
       if (toks != null) {

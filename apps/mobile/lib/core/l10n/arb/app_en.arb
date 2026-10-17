@@ -136,11 +136,11 @@
   "@moduleLaboratory": {
     "description": "Home module."
   },
-  "moduleSubstances": "Substance Library",
+  "moduleSubstances": "Substances",
   "@moduleSubstances": {
     "description": "Home module."
   },
-  "moduleLearn": "Learn",
+  "moduleLearn": "Learning",
   "@moduleLearn": {
     "description": "Home module."
   },
@@ -216,7 +216,7 @@
   "@themeDark": {
     "description": "Theme option."
   },
-  "settingsMode": "Usage mode",
+  "settingsMode": "Mode: student or professional",
   "@settingsMode": {
     "description": "Settings row."
   },
@@ -945,22 +945,6 @@
   "@aboutVersions": {
     "description": "About text."
   },
-  "storeNotConnected": "The App Store / Google Play is not connected in this build. Prices and purchases appear only when the store provides them.",
-  "@storeNotConnected": {
-    "description": "Banner."
-  },
-  "restorePurchases": "Restore purchases",
-  "@restorePurchases": {
-    "description": "Button."
-  },
-  "restoreNothing": "No active subscriptions to restore.",
-  "@restoreNothing": {
-    "description": "Snackbar."
-  },
-  "subscriptionSafetyNote": "Disclaimers, limitations and sources are never behind a paywall.",
-  "@subscriptionSafetyNote": {
-    "description": "Subscription principle."
-  },
   "moduleHubTools": "Tools in this section",
   "@moduleHubTools": {
     "description": "Module hub section."
@@ -1029,38 +1013,6 @@
   "detailChangeJurisdiction": "Change jurisdiction",
   "@detailChangeJurisdiction": {
     "description": "Action."
-  },
-  "purchaseTitle": "Plans",
-  "@purchaseTitle": {
-    "description": "Paywall title."
-  },
-  "purchaseCta": "See plans",
-  "@purchaseCta": {
-    "description": "Locked-content button."
-  },
-  "purchaseFreeTitle": "Free",
-  "@purchaseFreeTitle": {
-    "description": "Tier name."
-  },
-  "purchaseFreeBody": "Core offline reference, search and basic calculators — no account required.",
-  "@purchaseFreeBody": {
-    "description": "Free tier summary."
-  },
-  "purchaseAiNote": "Professional AI features become available only when the AI service is connected; limits will be stated before purchase.",
-  "@purchaseAiNote": {
-    "description": "Paywall note."
-  },
-  "purchaseOwned": "Your subscription is active",
-  "@purchaseOwned": {
-    "description": "Snackbar after restore."
-  },
-  "purchaseUnavailableSnack": "Purchases are not available in this build.",
-  "@purchaseUnavailableSnack": {
-    "description": "Purchase tapped while store unavailable."
-  },
-  "accessFree": "Free",
-  "@accessFree": {
-    "description": "Plan name."
   },
   "homePilotNotice": "The scientific database is under expert review. Every entry is shown with its sources and review status and is not a final conclusion.",
   "@homePilotNotice": {
@@ -1233,31 +1185,6 @@
       }
     }
   },
-  "lockedTitle": "Included in Student Pro and Professional Pro",
-  "@lockedTitle": {
-    "description": "Locked content title."
-  },
-  "lockedBody": "Names, warnings and sources stay open. Scientific details and the jurisdiction layer unlock with a paid plan.",
-  "@lockedBody": {
-    "description": "Locked content body."
-  },
-  "freeDemoBadge": "Free",
-  "@freeDemoBadge": {
-    "description": "Access chip on a free entry (permanently free, not a time-limited demo)."
-  },
-  "lockedBadge": "Pro",
-  "@lockedBadge": {
-    "description": "Badge."
-  },
-  "searchMoreLocked": "{count} more results with a paid plan",
-  "@searchMoreLocked": {
-    "description": "Search.",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "learnEmptyCourses": "Courses will appear after expert review of the learning content.",
   "@learnEmptyCourses": {
     "description": "No real courses yet."
@@ -1270,37 +1197,9 @@
   "@libraryNotInstalled": {
     "description": "No pack."
   },
-  "purchasePending": "Purchase is waiting for confirmation from the store.",
-  "@purchasePending": {
-    "description": "Store pending."
-  },
-  "purchaseFailed": "The purchase was not completed.",
-  "@purchaseFailed": {
-    "description": "Purchase failed."
-  },
-  "purchaseCancelled": "Purchase cancelled.",
-  "@purchaseCancelled": {
-    "description": "Purchase cancelled."
-  },
-  "purchaseSuccess": "Subscription activated. Thank you!",
-  "@purchaseSuccess": {
-    "description": "Snackbar."
-  },
   "aboutTrademarkPending": "Name and logo: trademark clearance pending.",
   "@aboutTrademarkPending": {
     "description": "Brand status."
-  },
-  "diagPurchaseNone": "Subscription: none confirmed by the store",
-  "@diagPurchaseNone": {
-    "description": "Diagnostics."
-  },
-  "diagPurchaseStore": "Subscription: confirmed by the store only — server verification not connected (release blocker)",
-  "@diagPurchaseStore": {
-    "description": "Diagnostics."
-  },
-  "diagPurchaseServer": "Subscription: verified by the server",
-  "@diagPurchaseServer": {
-    "description": "Diagnostics."
   },
   "statusDraft": "Draft",
   "@statusDraft": {
@@ -1407,7 +1306,7 @@
   },
   "knowledgeSafety": "Limitations & safety",
   "@knowledgeSafety": {
-    "description": "Section: limitations and safety (never paywalled)."
+    "description": "Section: limitations and safety (always open)."
   },
   "knowledgeSources": "Sources",
   "@knowledgeSources": {
@@ -1498,7 +1397,7 @@
   "@reagentOpenCalculator": {
     "description": "Button to the solution preparation calculator."
   },
-  "screeningBanner": "SCREENING RESULT ≠ CONFIRMED IDENTIFICATION. A positive screen is presumptive and requires a validated confirmatory method.",
+  "screeningBanner": "A screening result is not a confirmed identification. A positive screen is presumptive and requires a validated confirmatory method.",
   "@screeningBanner": {
     "description": "Permanent screening disclaimer."
   },
@@ -1928,11 +1827,11 @@
   "@legalStatusRepealed": {
     "description": "Instrument legal status."
   },
-  "aiExperienceProfessional": "Short answer",
+  "aiExperienceProfessional": "Short",
   "@aiExperienceProfessional": {
     "description": "AI experience toggle."
   },
-  "aiExperienceTutor": "Explain it to me",
+  "aiExperienceTutor": "Detailed",
   "@aiExperienceTutor": {
     "description": "AI experience toggle."
   },
@@ -4381,7 +4280,7 @@
   "@deleteLocalData": {
     "description": "Profile action."
   },
-  "deleteLocalDataBody": "Bookmarks, search history, recently viewed records and lesson progress will be deleted from this device only. The scientific database, your account and store subscriptions are not affected — use “Delete account” to delete the account.",
+  "deleteLocalDataBody": "Bookmarks, search history, recently viewed records and lesson progress will be deleted from this device only. The scientific database and your account are not affected — use “Delete account” to delete the account.",
   "@deleteLocalDataBody": {
     "description": "Dialog."
   },
@@ -4392,164 +4291,6 @@
   "deleteLocalDataDone": "Local data deleted",
   "@deleteLocalDataDone": {
     "description": "Snackbar."
-  },
-  "tierStudentPro": "Student Pro",
-  "@tierStudentPro": {
-    "description": "Tier name."
-  },
-  "tierProfessionalPro": "Professional Pro",
-  "@tierProfessionalPro": {
-    "description": "Tier name."
-  },
-  "tierInstitution": "Institution",
-  "@tierInstitution": {
-    "description": "Tier name."
-  },
-  "tierCurrent": "Current plan",
-  "@tierCurrent": {
-    "description": "Badge."
-  },
-  "tierFreeF1": "Offline scientific database with safety warnings and sources",
-  "@tierFreeF1": {
-    "description": "Feature."
-  },
-  "tierFreeF2": "Search and selected reference entries",
-  "@tierFreeF2": {
-    "description": "Feature."
-  },
-  "tierFreeF3": "Basic calculators",
-  "@tierFreeF3": {
-    "description": "Feature."
-  },
-  "tierStudentF1": "Full reference: substances, methods, reagents, forensic medicine, standards, jurisdictions",
-  "@tierStudentF1": {
-    "description": "Feature."
-  },
-  "tierStudentF2": "All courses, quizzes, flashcards and exam practice",
-  "@tierStudentF2": {
-    "description": "Feature."
-  },
-  "tierStudentF3": "Unlimited search results",
-  "@tierStudentF3": {
-    "description": "Feature."
-  },
-  "tierProF1": "Everything in Student Pro",
-  "@tierProF1": {
-    "description": "Feature."
-  },
-  "tierProF2": "Professional calculators and laboratory tools",
-  "@tierProF2": {
-    "description": "Feature."
-  },
-  "tierProF3": "Analytical methods, research and evidence tools",
-  "@tierProF3": {
-    "description": "Feature."
-  },
-  "tierProF4": "Professional AI features — when the AI service is connected",
-  "@tierProF4": {
-    "description": "Feature."
-  },
-  "periodMonthly": "Monthly",
-  "@periodMonthly": {
-    "description": "Billing period."
-  },
-  "periodYearly": "Yearly",
-  "@periodYearly": {
-    "description": "Billing period."
-  },
-  "periodUnknown": "Subscription",
-  "@periodUnknown": {
-    "description": "Billing period."
-  },
-  "offerPriceLine": "{price} · {period}",
-  "@offerPriceLine": {
-    "description": "Price line.",
-    "placeholders": {
-      "price": {
-        "type": "String"
-      },
-      "period": {
-        "type": "String"
-      }
-    }
-  },
-  "offerSubscribe": "Subscribe",
-  "@offerSubscribe": {
-    "description": "Button."
-  },
-  "offerPriceFromStore": "Price is shown by the App Store / Google Play",
-  "@offerPriceFromStore": {
-    "description": "Note."
-  },
-  "subscriptionTerms": "Subscriptions renew automatically until cancelled. Payment is charged to your App Store / Google Play account. You can cancel at least 24 hours before the end of the period in your store account settings.",
-  "@subscriptionTerms": {
-    "description": "Apple/Google required disclosure."
-  },
-  "manageSubscription": "Manage subscription",
-  "@manageSubscription": {
-    "description": "Button."
-  },
-  "manageSubscriptionFailed": "Could not open the store subscription settings.",
-  "@manageSubscriptionFailed": {
-    "description": "Snackbar."
-  },
-  "planLabel": "Plan",
-  "@planLabel": {
-    "description": "Profile row."
-  },
-  "subscriptionStateLabel": "Subscription status",
-  "@subscriptionStateLabel": {
-    "description": "Profile row."
-  },
-  "stActive": "Active",
-  "@stActive": {
-    "description": "Status."
-  },
-  "stExpired": "Expired",
-  "@stExpired": {
-    "description": "Status."
-  },
-  "stGrace": "Payment issue — grace period",
-  "@stGrace": {
-    "description": "Status."
-  },
-  "stBillingRetry": "Payment issue — access paused",
-  "@stBillingRetry": {
-    "description": "Status."
-  },
-  "stCancelled": "Cancelled — active until {date}",
-  "@stCancelled": {
-    "description": "Status.",
-    "placeholders": {
-      "date": {
-        "type": "String"
-      }
-    }
-  },
-  "stCancelledNoDate": "Cancelled — active until the end of the period",
-  "@stCancelledNoDate": {
-    "description": "Status."
-  },
-  "stRevoked": "Revoked by the store",
-  "@stRevoked": {
-    "description": "Status."
-  },
-  "stUnknown": "Status unknown",
-  "@stUnknown": {
-    "description": "Status."
-  },
-  "stNone": "No subscription",
-  "@stNone": {
-    "description": "Status."
-  },
-  "stRenewsOn": "Renews or ends on {date}",
-  "@stRenewsOn": {
-    "description": "Status detail.",
-    "placeholders": {
-      "date": {
-        "type": "String"
-      }
-    }
   },
   "accountOptionalNote": "An account is optional. The offline scientific reference works without signing in; an account is needed only for cloud services.",
   "@accountOptionalNote": {
@@ -4801,10 +4542,6 @@
   "@deleteAccountBody": {
     "description": "Body."
   },
-  "deleteAccountStoreNote": "Deleting the account does not cancel an App Store / Google Play subscription. Cancel it in your store account settings to stop future charges.",
-  "@deleteAccountStoreNote": {
-    "description": "Body."
-  },
   "deleteAccountLocalNote": "Data on this device (bookmarks, history) is a separate action: “Delete data on this device”.",
   "@deleteAccountLocalNote": {
     "description": "Body."
@@ -4839,10 +4576,6 @@
   },
   "accountSection": "Account",
   "@accountSection": {
-    "description": "Section."
-  },
-  "subscriptionSection": "Subscription",
-  "@subscriptionSection": {
     "description": "Section."
   },
   "availNoDataTitle": "No records yet",
@@ -5211,10 +4944,6 @@
   },
   "accountNeedSync": "Synchronisation between devices",
   "@accountNeedSync": {
-    "description": "Item."
-  },
-  "accountNeedSubscriptions": "Subscriptions across devices",
-  "@accountNeedSubscriptions": {
     "description": "Item."
   },
   "accountNeedCloudAi": "Cloud AI (when connected)",
@@ -6176,37 +5905,6 @@
   "@referralStatPending": {
     "description": "Stat."
   },
-  "referralStatCredits": "FORENSIC Credits",
-  "@referralStatCredits": {
-    "description": "Stat."
-  },
-  "referralCreditsPending": "{amount} credits awaiting confirmation",
-  "@referralCreditsPending": {
-    "description": "Pending credits line.",
-    "placeholders": {
-      "amount": {
-        "type": "String"
-      }
-    }
-  },
-  "referralCreditsFuture": "When paid services launch, eligible purchases by colleagues you invite may earn you FORENSIC Credits — {percent}% of the purchase value. Credits are an internal promotional bonus, not cash, and are not awarded for registration.",
-  "@referralCreditsFuture": {
-    "description": "Credits note (rewards not live).",
-    "placeholders": {
-      "percent": {
-        "type": "String"
-      }
-    }
-  },
-  "referralCreditsActive": "You receive FORENSIC Credits worth {percent}% of eligible purchases by colleagues you invite. Credits are confirmed after the refund period. They are an internal promotional bonus, not cash.",
-  "@referralCreditsActive": {
-    "description": "Credits note (rewards live).",
-    "placeholders": {
-      "percent": {
-        "type": "String"
-      }
-    }
-  },
   "referralPrivacyNote": "Only totals are shown. Your colleagues’ names, emails, profiles and documents are never shared — neither with you nor in the invitation.",
   "@referralPrivacyNote": {
     "description": "Privacy note."
@@ -6393,10 +6091,6 @@
   "@fullTextPdfNote": {
     "description": "Note."
   },
-  "fullTextPdfPro": "Downloading full-text PDFs is available with Pro.",
-  "@fullTextPdfPro": {
-    "description": "Locked note."
-  },
   "fullTextOpenFailed": "Couldn’t open the PDF. Check your connection.",
   "@fullTextOpenFailed": {
     "description": "Snackbar."
@@ -6441,10 +6135,6 @@
   "@adminReferrals": {
     "description": "Stat."
   },
-  "adminProGrants": "Pro granted",
-  "@adminProGrants": {
-    "description": "Stat."
-  },
   "adminRegions": "Countries (device region)",
   "@adminRegions": {
     "description": "Section."
@@ -6469,34 +6159,6 @@
   "adminPrivacyNote": "Contains personal data (emails). Do not share screenshots.",
   "@adminPrivacyNote": {
     "description": "Note."
-  },
-  "adminGrantTitle": "Give or remove Pro",
-  "@adminGrantTitle": {
-    "description": "Section."
-  },
-  "adminEmail": "User email",
-  "@adminEmail": {
-    "description": "Field."
-  },
-  "adminGrantPro": "Give Professional Pro",
-  "@adminGrantPro": {
-    "description": "Action."
-  },
-  "adminRevoke": "Remove",
-  "@adminRevoke": {
-    "description": "Action."
-  },
-  "adminGranted": "Pro granted.",
-  "@adminGranted": {
-    "description": "Result."
-  },
-  "adminRevoked": "Access removed.",
-  "@adminRevoked": {
-    "description": "Result."
-  },
-  "adminNotFound": "No user with this email.",
-  "@adminNotFound": {
-    "description": "Result."
   },
   "adminFailed": "Action failed. Check the connection.",
   "@adminFailed": {
@@ -7042,7 +6704,7 @@
   "@homeResourcesHeading": {
     "description": "Home section: scientific library and professional tools."
   },
-  "homeLibraryBody": "Substances, methods, standards and references",
+  "homeLibraryBody": "Everything: substances, methods, standards, references",
   "@homeLibraryBody": {
     "description": "Home: subtitle of the scientific library entry."
   },
@@ -7344,10 +7006,6 @@
   "@pubEditTitle": {
     "description": "Screen title."
   },
-  "pubPaidNote": "A paid subscription does not affect moderation.",
-  "@pubPaidNote": {
-    "description": "Note."
-  },
   "pubRequired": "Required",
   "@pubRequired": {
     "description": "Field error."
@@ -7451,7 +7109,7 @@
       }
     }
   },
-  "studyTitle": "Study mode",
+  "studyTitle": "Practice",
   "@studyTitle": {
     "description": "Study mode title."
   },
@@ -8271,14 +7929,6 @@
   "@admStatActive30d": {
     "description": "Stat card."
   },
-  "admStatPro": "Pro (server grants)",
-  "@admStatPro": {
-    "description": "Stat card."
-  },
-  "admStatFree": "Free",
-  "@admStatFree": {
-    "description": "Stat card."
-  },
   "admStatAwaiting": "Requests awaiting reply",
   "@admStatAwaiting": {
     "description": "Stat card."
@@ -8310,10 +7960,6 @@
   "admActiveNote": "Active = signed in, opened the app (device check-in) or asked the AI within the window.",
   "@admActiveNote": {
     "description": "Definition of active users."
-  },
-  "admProNote": "Pro counts server grants only; store purchases are verified on the device.",
-  "@admProNote": {
-    "description": "Definition of Pro count."
   },
   "admChart14d": "Last 14 days: sign-ups and AI questions",
   "@admChart14d": {
@@ -8435,18 +8081,6 @@
   },
   "admRoleModerator": "Moderators",
   "@admRoleModerator": {
-    "description": "Filter chip."
-  },
-  "admTierAny": "Any plan",
-  "@admTierAny": {
-    "description": "Filter chip."
-  },
-  "admTierFree": "Free",
-  "@admTierFree": {
-    "description": "Filter chip."
-  },
-  "admTierPro": "Pro plan",
-  "@admTierPro": {
     "description": "Filter chip."
   },
   "admUsersEmpty": "No users match the filter.",
@@ -8620,11 +8254,11 @@
   "@homeAreasTitle": {
     "description": "Home section: subject areas."
   },
-  "homeActLearnTitle": "Study & quizzes",
+  "homeActLearnTitle": "Learning",
   "@homeActLearnTitle": {
     "description": "Quick action."
   },
-  "homeActLearnBody": "Flashcards, quizzes, exam practice",
+  "homeActLearnBody": "Courses, practice, class quiz",
   "@homeActLearnBody": {
     "description": "Quick action hint."
   },
@@ -8696,14 +8330,6 @@
   "calcEstimatedRange": "Estimated range",
   "@calcEstimatedRange": {
     "description": "Headline row: estimated min–max range."
-  },
-  "calcLockedTitle": "Included in Expert Pro",
-  "@calcLockedTitle": {
-    "description": "Locked calculator card title."
-  },
-  "calcLockedBody": "This calculator opens with the Expert Pro plan. Dilution and the concentration unit converter are free.",
-  "@calcLockedBody": {
-    "description": "Locked calculator card body."
   },
   "calcLodUnitNote": "DL and QL are in the concentration units of the calibration x axis.",
   "@calcLodUnitNote": {
@@ -8788,10 +8414,6 @@
         "type": "int"
       }
     }
-  },
-  "rdGlanceLockedHint": "Details below open with Pro. Names, warnings and sources stay free.",
-  "@rdGlanceLockedHint": {
-    "description": "Summary card when details are locked: what is behind Pro (counts only)."
   },
   "rdJumpTo": "Go to section",
   "@rdJumpTo": {
@@ -9482,27 +9104,6 @@
       }
     }
   },
-  "courtProTitle": "Advanced preparation in {tier}",
-  "@courtProTitle": {
-    "description": "Pro features card title.",
-    "placeholders": {
-      "tier": {
-        "type": "String"
-      }
-    }
-  },
-  "courtProBody": "Full simulator (all scenarios), sequential role drills, AI analysis (coming soon), personal statistics and history. Q&A cards with sources are free for everyone.",
-  "@courtProBody": {
-    "description": "Pro features card body."
-  },
-  "courtProBadge": "Pro",
-  "@courtProBadge": {
-    "description": "Small badge on Pro-only entries."
-  },
-  "courtAiPro": "AI analysis (Pro)",
-  "@courtAiPro": {
-    "description": "AI analysis button label for free users."
-  },
   "courtScoreSemantics": "{criterion}: {score} of 2",
   "@courtScoreSemantics": {
     "description": "Screen-reader label of a score bar.",
@@ -9515,13 +9116,9 @@
       }
     }
   },
-  "courtSimFreeNote": "Free: basic scenarios. The other scenarios, role drills and statistics are in Pro.",
-  "@courtSimFreeNote": {
-    "description": "Simulator list note for free users."
-  },
   "courtDrill": "Role drill",
   "@courtDrill": {
-    "description": "Pro: sequential role drill."
+    "description": "Sequential role drill."
   },
   "courtDrillBody": "Judge → prosecutor → defence → another expert, one after another",
   "@courtDrillBody": {
@@ -9549,7 +9146,7 @@
   },
   "courtStats": "Statistics and history",
   "@courtStats": {
-    "description": "Pro: statistics and history."
+    "description": "Statistics and history."
   },
   "courtStatsBody": "Your scores and attempt history — stored on this device only",
   "@courtStatsBody": {
@@ -9582,7 +9179,7 @@
   },
   "courtAi": "AI analysis",
   "@courtAi": {
-    "description": "Pro: AI analysis of the answer."
+    "description": "AI analysis of the answer."
   },
   "courtAiUnavailable": "AI analysis is not connected yet — coming soon. Your answer was not sent anywhere.",
   "@courtAiUnavailable": {
@@ -10428,28 +10025,15 @@
   },
   "proSearchTitle": "Advanced search",
   "@proSearchTitle": {
-    "description": "Title of the Pro advanced search screen."
+    "description": "Title of the advanced search screen."
   },
   "proSearchEntry": "Filters and reverse lookups",
   "@proSearchEntry": {
-    "description": "Chip on the search screen that opens the Pro advanced search."
+    "description": "Chip on the search screen that opens the advanced search."
   },
   "proSearchIntro": "Narrow the offline pack by specimen, method, reagent, evidence level and more, or go from a specimen, method or reagent to the substances documented for it.",
   "@proSearchIntro": {
     "description": "Intro text of the advanced search screen."
-  },
-  "proSearchLockedTitle": "Advanced search — {tier}",
-  "@proSearchLockedTitle": {
-    "description": "Paywall card title on the advanced search screen. {tier} is the plan name.",
-    "placeholders": {
-      "tier": {
-        "type": "String"
-      }
-    }
-  },
-  "proSearchLockedBody": "Filters (discipline, class, specimen, method, reagent, evidence, review status, jurisdiction, year), exact-phrase search and reverse lookups need a paid plan. The regular search stays available to everyone.",
-  "@proSearchLockedBody": {
-    "description": "Paywall card body on the advanced search screen."
   },
   "proSearchHint": "Name, synonym or \"phrase\"",
   "@proSearchHint": {
@@ -10663,19 +10247,6 @@
         "type": "int"
       }
     }
-  },
-  "planLockedTitle": "Full analysis plan — {tier}",
-  "@planLockedTitle": {
-    "description": "Paywall card title on the plan. {tier} is the plan name.",
-    "placeholders": {
-      "tier": {
-        "type": "String"
-      }
-    }
-  },
-  "planLockedBody": "The free preview shows the counts and the specimens. The paid plan adds presumptive tests with reagents, bench and confirmation steps, interferences, limits, the note for your conclusion and a copyable text with full citations.",
-  "@planLockedBody": {
-    "description": "Paywall card body on the plan."
   },
   "planSecSpecimens": "Specimens and sampling notes",
   "@planSecSpecimens": {
@@ -11559,43 +11130,6 @@
   "@qaRulesEnforceBody": {
     "description": "Body of the enforcement section in the Q&A rules."
   },
-  "adminGrantStudent": "Grant Student Pro",
-  "@adminGrantStudent": {
-    "description": "Admin panel button that gives the Student Pro tier to an e-mail."
-  },
-  "adminGrantHint": "Enter the e-mail the person signed in with. The account must already exist; an invitation is not sent from here.",
-  "@adminGrantHint": {
-    "description": "Helper text under the e-mail field in the admin grant section."
-  },
-  "adminEmailInvalid": "This is not an e-mail address.",
-  "@adminEmailInvalid": {
-    "description": "Validation message for the admin grant e-mail field."
-  },
-  "adminGrantedTier": "Granted: {tier}",
-  "@adminGrantedTier": {
-    "description": "Confirmation after granting, naming the tier that was given.",
-    "placeholders": {
-      "tier": {
-        "type": "String"
-      }
-    }
-  },
-  "adminRevokeConfirmTitle": "Remove access?",
-  "@adminRevokeConfirmTitle": {
-    "description": "Title of the confirmation dialog before revoking a grant."
-  },
-  "adminRevokeConfirmBody": "The person loses the paid sections at once. A purchase made in the store is not affected — only a grant given from here.",
-  "@adminRevokeConfirmBody": {
-    "description": "Body of the confirmation dialog before revoking a grant."
-  },
-  "adminTierStudent": "Student Pro",
-  "@adminTierStudent": {
-    "description": "Name of the Student Pro tier in the admin panel."
-  },
-  "adminTierProfessional": "Professional Pro",
-  "@adminTierProfessional": {
-    "description": "Name of the Professional Pro tier in the admin panel."
-  },
   "provOwnWordsNote": "The content of the source is given in our own words; the original text is not copied. The exact place is below.",
   "@provOwnWordsNote": {
     "description": "Note under a claim written in our own words, shown in the provenance sheet."
@@ -11679,5 +11213,1448 @@
   "litClaimsTitle": "Evidence from the literature (in full)",
   "@litClaimsTitle": {
     "description": "Heading of the full literature claims list."
+  },
+  "analysisS1Title": "1. Tests (rapid / screening)",
+  "@analysisS1Title": {
+    "description": "Analysis tab, section 1 heading."
+  },
+  "analysisS1Note": "Quick presumptive tests: immunoassays, test strips. The result is preliminary only and must be confirmed by a confirmation method.",
+  "@analysisS1Note": {
+    "description": "Analysis tab, section 1 note."
+  },
+  "analysisS2Title": "2. Qualitative reactions (colour reagents)",
+  "@analysisS2Title": {
+    "description": "Analysis tab, section 2 heading."
+  },
+  "analysisS2Note": "Reagent, colour, comment, selectivity and false positives. Presumptive: it does not prove identity by itself.",
+  "@analysisS2Note": {
+    "description": "Analysis tab, section 2 note."
+  },
+  "analysisS3Title": "3. Quantification (GC-MS, LC-MS/MS, spectrophotometry)",
+  "@analysisS3Title": {
+    "description": "Analysis tab, section 3 heading."
+  },
+  "analysisS3Note": "Sample preparation, key parameters, LOD/LOQ (if the source gives them) and limitations. Numbers only as stated in the source; not a substitute for a validated laboratory method.",
+  "@analysisS3Note": {
+    "description": "Analysis tab, section 3 note."
+  },
+  "analysisSectionEmpty": "No sourced information for this section yet — a source is needed. Nothing is guessed.",
+  "@analysisSectionEmpty": {
+    "description": "Analysis tab, empty section."
+  },
+  "trPendingTranslation": "Translation pending — the original Uzbek text is shown",
+  "@trPendingTranslation": {
+    "description": "Note under a claim statement that exists only in its source language (Uzbek) until the translation table is added."
+  },
+  "contactLine": "Contact: {email}",
+  "@contactLine": {
+    "description": "Visible support contact line; tapping opens the mail app.",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "repTitle": "Send a report",
+  "@repTitle": {
+    "description": "Title of the report screen and the profile row."
+  },
+  "repProfileHint": "Inappropriate content, a bug, advertising or anything else",
+  "@repProfileHint": {
+    "description": "Subtitle of the profile row that opens the report form."
+  },
+  "repIntro": "Tell us about inappropriate content, a bug or another problem. You can send a report without signing in.",
+  "@repIntro": {
+    "description": "Intro text on the report form."
+  },
+  "repKindField": "Type",
+  "@repKindField": {
+    "description": "Label of the report type dropdown."
+  },
+  "repKindComplaint": "Complaint",
+  "@repKindComplaint": {
+    "description": "Report type: complaint."
+  },
+  "repKindInappropriate": "Inappropriate content",
+  "@repKindInappropriate": {
+    "description": "Report type: inappropriate content."
+  },
+  "repKindBug": "Bug",
+  "@repKindBug": {
+    "description": "Report type: bug."
+  },
+  "repKindAdvertising": "Advertising",
+  "@repKindAdvertising": {
+    "description": "Report type: advertising or spam."
+  },
+  "repKindOther": "Other",
+  "@repKindOther": {
+    "description": "Report type: other."
+  },
+  "repBody": "What happened?",
+  "@repBody": {
+    "description": "Label of the report text field."
+  },
+  "repBodyHint": "Do not write personal data, case numbers or patient information.",
+  "@repBodyHint": {
+    "description": "Helper text under the report text field."
+  },
+  "repBodyShort": "Write at least {min} characters.",
+  "@repBodyShort": {
+    "description": "Validation message for a too short report.",
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "repContact": "E-mail for a reply (optional)",
+  "@repContact": {
+    "description": "Label of the optional contact field."
+  },
+  "repContactHint": "If you are not signed in, leave an address if you want a reply.",
+  "@repContactHint": {
+    "description": "Helper text under the optional contact field."
+  },
+  "repPrivacy": "The text is stored only to review your report. To fight spam, an irreversible hash of the device or network address is kept; the address itself is not.",
+  "@repPrivacy": {
+    "description": "Privacy note under the report form."
+  },
+  "repSend": "Send",
+  "@repSend": {
+    "description": "Send button."
+  },
+  "repSent": "Your report was sent. Thank you.",
+  "@repSent": {
+    "description": "Confirmation after sending a report."
+  },
+  "repInvalid": "Check the text and try again.",
+  "@repInvalid": {
+    "description": "Server rejected the report as invalid."
+  },
+  "repRateLimited": "You can send up to {n} reports per hour. Try again later.",
+  "@repRateLimited": {
+    "description": "Rate limit message.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "repFailed": "Not sent. Check your connection and try again.",
+  "@repFailed": {
+    "description": "Network or server error while sending a report."
+  },
+  "repSuspended": "This account is suspended. Write to us by e-mail for help.",
+  "@repSuspended": {
+    "description": "Message for a suspended account."
+  },
+  "repUnavailable": "The report service is not connected in this build. Write to us by e-mail.",
+  "@repUnavailable": {
+    "description": "Honest empty state when no backend is connected."
+  },
+  "repMine": "My reports",
+  "@repMine": {
+    "description": "Section with the signed-in user's own reports."
+  },
+  "repStatusOpen": "Under review",
+  "@repStatusOpen": {
+    "description": "Report status: open."
+  },
+  "repStatusResolved": "Resolved",
+  "@repStatusResolved": {
+    "description": "Report status: resolved."
+  },
+  "ctTitle": "Community rules",
+  "@ctTitle": {
+    "description": "Title of the rules acceptance screen."
+  },
+  "ctDraft": "This text is a draft and must be checked by a lawyer before the public release.",
+  "@ctDraft": {
+    "description": "Draft label on the rules acceptance screen."
+  },
+  "ctZeroTolerance": "Abusive, hateful, violent, illegal or spam content is not allowed. Every post has «Report» and «Block author» buttons. Content that breaks the rules can be removed and the account suspended.",
+  "@ctZeroTolerance": {
+    "description": "Zero-tolerance statement shown before accepting the rules."
+  },
+  "ctOpenTerms": "Terms of Use (draft)",
+  "@ctOpenTerms": {
+    "description": "Button that opens the Terms of Use draft."
+  },
+  "ctAgree": "I have read the rules and accept them",
+  "@ctAgree": {
+    "description": "Checkbox label."
+  },
+  "ctAccept": "Accept",
+  "@ctAccept": {
+    "description": "Accept button."
+  },
+  "ctDecline": "Not now",
+  "@ctDecline": {
+    "description": "Decline button."
+  },
+  "ctSaveFailed": "Not saved. Try again.",
+  "@ctSaveFailed": {
+    "description": "Error when accepting the rules failed."
+  },
+  "blkTitle": "Blocked authors",
+  "@blkTitle": {
+    "description": "Title of the blocked authors screen."
+  },
+  "blkIntro": "Posts of blocked authors are hidden from you. You are not shown who they are.",
+  "@blkIntro": {
+    "description": "Explains blocking."
+  },
+  "blkEmpty": "You have not blocked anyone.",
+  "@blkEmpty": {
+    "description": "Empty state of the blocked list."
+  },
+  "blkItem": "Blocked author",
+  "@blkItem": {
+    "description": "Row title in the blocked list."
+  },
+  "blkSince": "since {date}",
+  "@blkSince": {
+    "description": "Row subtitle: block date.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "blkUnblock": "Unblock",
+  "@blkUnblock": {
+    "description": "Unblock button."
+  },
+  "blkUnblocked": "Unblocked.",
+  "@blkUnblocked": {
+    "description": "Confirmation after unblocking."
+  },
+  "blkAction": "Block author",
+  "@blkAction": {
+    "description": "Block button on a post."
+  },
+  "blkConfirmTitle": "Block this author?",
+  "@blkConfirmTitle": {
+    "description": "Block confirmation title."
+  },
+  "blkConfirmBody": "You will no longer see this author's questions and answers. You are not told who it is. You can undo this in the blocked list.",
+  "@blkConfirmBody": {
+    "description": "Block confirmation body."
+  },
+  "blkDone": "Author blocked.",
+  "@blkDone": {
+    "description": "Confirmation after blocking."
+  },
+  "blkAlready": "This author is already blocked.",
+  "@blkAlready": {
+    "description": "Already blocked."
+  },
+  "blkSelf": "You cannot block yourself.",
+  "@blkSelf": {
+    "description": "Self block attempt."
+  },
+  "blkFailed": "Could not complete. Try again.",
+  "@blkFailed": {
+    "description": "Block or load failure."
+  },
+  "admxNavReports": "Reports",
+  "@admxNavReports": {
+    "description": "Admin section tile title."
+  },
+  "admxNavReportsHint": "{n} open",
+  "@admxNavReportsHint": {
+    "description": "Admin section tile subtitle with the open count.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "admxReportsTitle": "Reports",
+  "@admxReportsTitle": {
+    "description": "Admin reports screen title."
+  },
+  "admxReportsSearch": "Search by text or e-mail",
+  "@admxReportsSearch": {
+    "description": "Search hint in the admin reports list."
+  },
+  "admxOpen": "Open",
+  "@admxOpen": {
+    "description": "Filter: open."
+  },
+  "admxResolvedFilter": "Resolved",
+  "@admxResolvedFilter": {
+    "description": "Filter: resolved."
+  },
+  "admxAll": "All",
+  "@admxAll": {
+    "description": "Filter: all."
+  },
+  "admxKindAny": "All types",
+  "@admxKindAny": {
+    "description": "Filter: any report type."
+  },
+  "admxQaLink": "Open Q&A moderation (posts reported by three people)",
+  "@admxQaLink": {
+    "description": "Link from the reports list to the existing Q&A moderation queue."
+  },
+  "admxReportsEmpty": "No reports.",
+  "@admxReportsEmpty": {
+    "description": "Empty admin reports list."
+  },
+  "admxLoadMore": "Load more",
+  "@admxLoadMore": {
+    "description": "Pagination."
+  },
+  "admxAnonymous": "Not signed in",
+  "@admxAnonymous": {
+    "description": "Reporter was not signed in."
+  },
+  "admxContact": "Contact: {value}",
+  "@admxContact": {
+    "description": "Contact given by the reporter.",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "admxTarget": "About: {type}",
+  "@admxTarget": {
+    "description": "Target type of the report (technical code).",
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "admxNoteLabel": "Note (admins only)",
+  "@admxNoteLabel": {
+    "description": "Admin note field."
+  },
+  "admxNoteSave": "Save note",
+  "@admxNoteSave": {
+    "description": "Save note button."
+  },
+  "admxNoteSaved": "Note saved.",
+  "@admxNoteSaved": {
+    "description": "Confirmation."
+  },
+  "admxResolve": "Mark as resolved",
+  "@admxResolve": {
+    "description": "Resolve button."
+  },
+  "admxReopen": "Reopen",
+  "@admxReopen": {
+    "description": "Reopen button."
+  },
+  "admxResolvedDone": "Report marked as resolved.",
+  "@admxResolvedDone": {
+    "description": "Confirmation."
+  },
+  "admxReopened": "Report reopened.",
+  "@admxReopened": {
+    "description": "Confirmation."
+  },
+  "admxActionFailed": "Action failed. Try again.",
+  "@admxActionFailed": {
+    "description": "Generic admin action error."
+  },
+  "admxActions": "Actions",
+  "@admxActions": {
+    "description": "Tooltip of the user actions button."
+  },
+  "admxActionsHint": "Every action is checked by the server and written to the audit log.",
+  "@admxActionsHint": {
+    "description": "Hint at the top of the user actions sheet."
+  },
+  "admxReason": "Reason",
+  "@admxReason": {
+    "description": "Reason field of the user actions sheet."
+  },
+  "admxReasonHint": "At least 5 characters. Saved in the audit log.",
+  "@admxReasonHint": {
+    "description": "Helper text for the reason."
+  },
+  "admxReasonShort": "The reason must be at least 5 characters.",
+  "@admxReasonShort": {
+    "description": "Validation."
+  },
+  "admxCancel": "Cancel",
+  "@admxCancel": {
+    "description": "Cancel button."
+  },
+  "admxConfirm": "Confirm",
+  "@admxConfirm": {
+    "description": "Confirm button."
+  },
+  "admxSelfNote": "You cannot change your own role or suspend your own account.",
+  "@admxSelfNote": {
+    "description": "Shown instead of actions when the admin opens their own row."
+  },
+  "admxModeratorGrant": "Make publication moderator",
+  "@admxModeratorGrant": {
+    "description": "Grant the publication_moderator role."
+  },
+  "admxModeratorRemove": "Remove moderator role",
+  "@admxModeratorRemove": {
+    "description": "Revoke the publication_moderator role."
+  },
+  "admxRemoveAdmin": "Remove admin role",
+  "@admxRemoveAdmin": {
+    "description": "Revoke identity_admin."
+  },
+  "admxRemoveAdminTitle": "Remove admin role?",
+  "@admxRemoveAdminTitle": {
+    "description": "Dialog title."
+  },
+  "admxRemoveAdminBody": "This person loses access to the admin panel at once. The last admin cannot be removed. A scientific reviewer role is separate and is not changed here.",
+  "@admxRemoveAdminBody": {
+    "description": "Dialog body."
+  },
+  "admxAdminNotSuspendable": "An admin account cannot be suspended.",
+  "@admxAdminNotSuspendable": {
+    "description": "Shown instead of the suspend button for admins."
+  },
+  "admxSuspend": "Suspend account",
+  "@admxSuspend": {
+    "description": "Suspend button."
+  },
+  "admxRestore": "Restore account",
+  "@admxRestore": {
+    "description": "Restore button."
+  },
+  "admxSuspendTitle": "Suspend this account?",
+  "@admxSuspendTitle": {
+    "description": "Dialog title."
+  },
+  "admxSuspendConfirmBody": "The person is signed out everywhere and cannot sign in again until you restore the account. The action is written to the audit log.",
+  "@admxSuspendConfirmBody": {
+    "description": "Dialog body."
+  },
+  "admxRoleGranted": "Role granted.",
+  "@admxRoleGranted": {
+    "description": "Result."
+  },
+  "admxRoleRevoked": "Role removed.",
+  "@admxRoleRevoked": {
+    "description": "Result."
+  },
+  "admxNoChange": "Nothing changed.",
+  "@admxNoChange": {
+    "description": "Result: already in that state."
+  },
+  "admxUserNotFound": "User not found.",
+  "@admxUserNotFound": {
+    "description": "Result."
+  },
+  "admxRoleForbidden": "This role cannot be granted from the app. The owner does it on the server.",
+  "@admxRoleForbidden": {
+    "description": "Result: role not grantable in-app."
+  },
+  "admxEmailUnconfirmed": "The e-mail address is not confirmed.",
+  "@admxEmailUnconfirmed": {
+    "description": "Result."
+  },
+  "admxSelfAdmin": "You cannot change your own admin role.",
+  "@admxSelfAdmin": {
+    "description": "Result."
+  },
+  "admxLastAdmin": "The last admin cannot be removed.",
+  "@admxLastAdmin": {
+    "description": "Result."
+  },
+  "admxCannotSuspendAdmin": "An admin cannot be suspended.",
+  "@admxCannotSuspendAdmin": {
+    "description": "Result."
+  },
+  "admxCannotSuspendSelf": "You cannot suspend yourself.",
+  "@admxCannotSuspendSelf": {
+    "description": "Result."
+  },
+  "admxSuspended": "Account suspended. Its sessions were closed.",
+  "@admxSuspended": {
+    "description": "Result."
+  },
+  "admxRestored": "Account restored.",
+  "@admxRestored": {
+    "description": "Result."
+  },
+  "admxExtTitle": "Roles, reports and objects",
+  "@admxExtTitle": {
+    "description": "Section title of the extended statistics."
+  },
+  "admxStatAdmins": "Admins",
+  "@admxStatAdmins": {
+    "description": "Stat label."
+  },
+  "admxStatModerators": "Moderators",
+  "@admxStatModerators": {
+    "description": "Stat label."
+  },
+  "admxStatSuspended": "Suspended",
+  "@admxStatSuspended": {
+    "description": "Stat label."
+  },
+  "admxStatReportsOpen": "Open reports",
+  "@admxStatReportsOpen": {
+    "description": "Stat label."
+  },
+  "admxStatReportsResolved": "Resolved reports",
+  "@admxStatReportsResolved": {
+    "description": "Stat label."
+  },
+  "admxStatQaQuestions": "Q&A questions",
+  "@admxStatQaQuestions": {
+    "description": "Stat label."
+  },
+  "admxStatQaAnswers": "Q&A answers",
+  "@admxStatQaAnswers": {
+    "description": "Stat label."
+  },
+  "admxStatQaModeration": "In moderation",
+  "@admxStatQaModeration": {
+    "description": "Stat label."
+  },
+  "admxStatBlocks": "Blocks",
+  "@admxStatBlocks": {
+    "description": "Stat label."
+  },
+  "admxCasebookNote": "Casebooks: stored on the device, not counted.",
+  "@admxCasebookNote": {
+    "description": "Honest note: casebooks are not on the server."
+  },
+  "admxOnlineNote": "Online now: not available (there is no activity tracking).",
+  "@admxOnlineNote": {
+    "description": "Honest note: no real-time presence."
+  },
+  "admxStoresTitle": "Downloads",
+  "@admxStoresTitle": {
+    "description": "Section title."
+  },
+  "admxDownloadsNote": "Downloads: the server cannot see them. Open the store consoles.",
+  "@admxDownloadsNote": {
+    "description": "Honest note about downloads."
+  },
+  "admxSalesNote": "Sales: 0 — there is no payment system.",
+  "@admxSalesNote": {
+    "description": "Honest note about sales."
+  },
+  "admxOpenAsc": "App Store Connect",
+  "@admxOpenAsc": {
+    "description": "Button that opens App Store Connect."
+  },
+  "admxOpenPlay": "Google Play Console",
+  "@admxOpenPlay": {
+    "description": "Button that opens Google Play Console."
+  },
+  "admxOpenFailed": "Could not open the link.",
+  "@admxOpenFailed": {
+    "description": "External link failure."
+  },
+  "admActAdminRoleSet": "Role changed from the panel",
+  "@admActAdminRoleSet": {
+    "description": "Audit action label."
+  },
+  "admActUserSuspended": "Account suspended",
+  "@admActUserSuspended": {
+    "description": "Audit action label."
+  },
+  "admActUserRestored": "Account restored",
+  "@admActUserRestored": {
+    "description": "Audit action label."
+  },
+  "admActReportsView": "Report list viewed",
+  "@admActReportsView": {
+    "description": "Audit action label."
+  },
+  "admActReportNote": "Note on a report",
+  "@admActReportNote": {
+    "description": "Audit action label."
+  },
+  "admActReportResolved": "Report resolved",
+  "@admActReportResolved": {
+    "description": "Audit action label."
+  },
+  "admActReportReopened": "Report reopened",
+  "@admActReportReopened": {
+    "description": "Audit action label."
+  },
+  "admActAdminBootstrap": "First admin assigned (owner bootstrap)",
+  "@admActAdminBootstrap": {
+    "description": "Audit action label."
+  },
+  "socialOr": "or",
+  "@socialOr": {
+    "description": "Divider between email form and social sign-in buttons."
+  },
+  "socialContinueGoogle": "Continue with Google",
+  "@socialContinueGoogle": {
+    "description": "Google sign-in button label (brand guideline wording)."
+  },
+  "socialContinueApple": "Continue with Apple",
+  "@socialContinueApple": {
+    "description": "Apple sign-in button label (Apple HIG wording)."
+  },
+  "socialErrUnavailable": "Sign-in with this provider is unavailable right now. Try again or use your email.",
+  "@socialErrUnavailable": {
+    "description": "Error: Google/Apple sign-in failed or is unavailable on this device."
+  },
+  "socialTermsNote": "By continuing you accept the Terms of Use and the Privacy Policy.",
+  "@socialTermsNote": {
+    "description": "Note under social buttons: continuing means accepting terms."
+  },
+  "deleteAccountSocialNote": "This account was created with Google or Apple, so no password is needed. Confirm below to delete it.",
+  "@deleteAccountSocialNote": {
+    "description": "Delete-account screen note for accounts created with Google/Apple (no password)."
+  },
+  "deleteAccountAppleNote": "This account was created with Apple, so no password is needed. After you confirm, Apple will ask you to verify it is you, and the app's access to your Apple ID will be revoked.",
+  "@deleteAccountAppleNote": {
+    "description": "Delete-account screen note for Apple accounts: Apple re-confirmation step."
+  },
+  "classQuizTitle": "Class quiz",
+  "@classQuizTitle": {
+    "description": "Class quiz title."
+  },
+  "classQuizCardSubtitle": "Live quiz run by your teacher: join with a code or QR",
+  "@classQuizCardSubtitle": {
+    "description": "Study hub card subtitle."
+  },
+  "classQuizIntro": "The teacher shows a 6-digit code and QR on the screen. Students join with a nickname and answer each question before the timer ends.",
+  "@classQuizIntro": {
+    "description": "Hub intro."
+  },
+  "classDemoBanner": "Demo mode: data stays on this device only. A real class needs the server connection.",
+  "@classDemoBanner": {
+    "description": "Demo adapter banner."
+  },
+  "classDemoChip": "DEMO",
+  "@classDemoChip": {
+    "description": "Demo chip."
+  },
+  "classJoinSection": "Join a class",
+  "@classJoinSection": {
+    "description": "Section."
+  },
+  "classJoinHint": "Enter the 6-digit code from the teacher’s screen or scan the QR.",
+  "@classJoinHint": {
+    "description": "Hint."
+  },
+  "classJoinTitle": "Join class",
+  "@classJoinTitle": {
+    "description": "Join screen title."
+  },
+  "classJoinAction": "Join",
+  "@classJoinAction": {
+    "description": "Button."
+  },
+  "classCodeLabel": "Class code",
+  "@classCodeLabel": {
+    "description": "Field label."
+  },
+  "classCodeSpoken": "Class code {code}",
+  "@classCodeSpoken": {
+    "description": "Screen reader.",
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "classNickLabel": "Nickname",
+  "@classNickLabel": {
+    "description": "Field label."
+  },
+  "classNickHelper": "2–20 characters. The teacher sees only this nickname — not your name or e-mail.",
+  "@classNickHelper": {
+    "description": "Helper."
+  },
+  "classScanAction": "Scan QR",
+  "@classScanAction": {
+    "description": "Button."
+  },
+  "classScanTitle": "Scan class QR",
+  "@classScanTitle": {
+    "description": "Scan screen title."
+  },
+  "classScanHint": "Point the camera at the QR on the teacher’s screen.",
+  "@classScanHint": {
+    "description": "Hint."
+  },
+  "classScanPermission": "Camera access is off. Allow it in Settings or enter the code by hand.",
+  "@classScanPermission": {
+    "description": "Camera denied."
+  },
+  "classScanUnavailable": "The camera can’t be used here. Enter the code by hand.",
+  "@classScanUnavailable": {
+    "description": "Camera unavailable."
+  },
+  "classScanManual": "Enter code by hand",
+  "@classScanManual": {
+    "description": "Button."
+  },
+  "classResume": "Continue: {topic}",
+  "@classResume": {
+    "description": "Resume card.",
+    "placeholders": {
+      "topic": {
+        "type": "String"
+      }
+    }
+  },
+  "classTeacherSection": "For teachers",
+  "@classTeacherSection": {
+    "description": "Section."
+  },
+  "classNotTeacherNote": "The test is run by a teacher. The teacher role is granted by the FORENSIC EXPERT team on the server; ask us if you teach a class.",
+  "@classNotTeacherNote": {
+    "description": "Not a teacher note."
+  },
+  "classNewAction": "Run a quiz",
+  "@classNewAction": {
+    "description": "Button."
+  },
+  "classNewTitle": "Run a quiz",
+  "@classNewTitle": {
+    "description": "Screen title."
+  },
+  "classRecentSection": "Recent classes",
+  "@classRecentSection": {
+    "description": "Section."
+  },
+  "classSessionLine": "{code} · {status}",
+  "@classSessionLine": {
+    "description": "Session subtitle.",
+    "placeholders": {
+      "code": {
+        "type": "String"
+      },
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "classStatusLobby": "Waiting for students",
+  "@classStatusLobby": {
+    "description": "Status."
+  },
+  "classStatusRunning": "In progress",
+  "@classStatusRunning": {
+    "description": "Status."
+  },
+  "classStatusFinished": "Finished",
+  "@classStatusFinished": {
+    "description": "Status."
+  },
+  "classPrivacyNote": "The teacher sees only your nickname. Finished classes are deleted automatically after 30 days. Offensive nicknames can be reported and removed.",
+  "@classPrivacyNote": {
+    "description": "Privacy note."
+  },
+  "classSignInTitle": "Sign in to join",
+  "@classSignInTitle": {
+    "description": "Sign-in card."
+  },
+  "classSignInBody": "Your result is tied to your account on the server. Other students and the teacher only see your nickname.",
+  "@classSignInBody": {
+    "description": "Sign-in body."
+  },
+  "classSignInAction": "Sign in",
+  "@classSignInAction": {
+    "description": "Button."
+  },
+  "classTeacherOnlyTitle": "Teachers only",
+  "@classTeacherOnlyTitle": {
+    "description": "Forbidden title."
+  },
+  "classTeacherOnlyBody": "This screen is available to accounts with the teacher role. The server enforces this.",
+  "@classTeacherOnlyBody": {
+    "description": "Forbidden body."
+  },
+  "classTopicSection": "Topic",
+  "@classTopicSection": {
+    "description": "Section."
+  },
+  "classNoTopics": "No question bank is available yet.",
+  "@classNoTopics": {
+    "description": "Empty topics."
+  },
+  "classQuestionsAvailable": "{count} questions",
+  "@classQuestionsAvailable": {
+    "description": "Topic subtitle.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "classSettingsSection": "Settings",
+  "@classSettingsSection": {
+    "description": "Section."
+  },
+  "classQuestionCount": "Number of questions",
+  "@classQuestionCount": {
+    "description": "Slider label."
+  },
+  "classStudentLimit": "Student limit",
+  "@classStudentLimit": {
+    "description": "Slider label."
+  },
+  "classSecondsPerQuestion": "Time per question",
+  "@classSecondsPerQuestion": {
+    "description": "Label."
+  },
+  "classSecondsShort": "{seconds} s",
+  "@classSecondsShort": {
+    "description": "Segment.",
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "classSecondsLeft": "{seconds} seconds left",
+  "@classSecondsLeft": {
+    "description": "Screen reader.",
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "classCreateAction": "Create class",
+  "@classCreateAction": {
+    "description": "Button."
+  },
+  "classHostJoinHint": "Open FORENSIC EXPERT → Class quiz and enter this code, or scan the QR:",
+  "@classHostJoinHint": {
+    "description": "Projector hint."
+  },
+  "classQrSemantics": "QR code to join the class",
+  "@classQrSemantics": {
+    "description": "Screen reader."
+  },
+  "classJoinedCount": "Joined: {joined} / {limit}",
+  "@classJoinedCount": {
+    "description": "Counter.",
+    "placeholders": {
+      "joined": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "classWaitingForStudents": "Waiting for students to join…",
+  "@classWaitingForStudents": {
+    "description": "Empty lobby."
+  },
+  "classReportsCount": "{count} nickname report(s) — review the list",
+  "@classReportsCount": {
+    "description": "Reports.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "classStartAction": "Start",
+  "@classStartAction": {
+    "description": "Button."
+  },
+  "classKickTitle": "Remove from class?",
+  "@classKickTitle": {
+    "description": "Dialog title."
+  },
+  "classKickBody": "“{nickname}” will be removed and cannot rejoin.",
+  "@classKickBody": {
+    "description": "Dialog body.",
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
+  "classKickAction": "Remove",
+  "@classKickAction": {
+    "description": "Button."
+  },
+  "classCancel": "Cancel",
+  "@classCancel": {
+    "description": "Button."
+  },
+  "classQuestionOf": "Question {n} of {total}",
+  "@classQuestionOf": {
+    "description": "Header.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "classAnswered": "Answered: {count} of {total}",
+  "@classAnswered": {
+    "description": "Live stat.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "classCorrectPct": "{pct}% correct",
+  "@classCorrectPct": {
+    "description": "Live stat.",
+    "placeholders": {
+      "pct": {
+        "type": "int"
+      }
+    }
+  },
+  "classLeaderboard": "Leaderboard",
+  "@classLeaderboard": {
+    "description": "Section."
+  },
+  "classNoScoresYet": "No scores yet.",
+  "@classNoScoresYet": {
+    "description": "Empty."
+  },
+  "classCloseQuestion": "Close question",
+  "@classCloseQuestion": {
+    "description": "Button."
+  },
+  "classNextQuestion": "Next question",
+  "@classNextQuestion": {
+    "description": "Button."
+  },
+  "classFinishAction": "Finish quiz",
+  "@classFinishAction": {
+    "description": "Button."
+  },
+  "classEndAction": "End quiz",
+  "@classEndAction": {
+    "description": "Button."
+  },
+  "classEndTitle": "End the quiz now?",
+  "@classEndTitle": {
+    "description": "Dialog."
+  },
+  "classEndBody": "Students will see their results. This can’t be undone.",
+  "@classEndBody": {
+    "description": "Dialog."
+  },
+  "classFinishedTitle": "Quiz finished",
+  "@classFinishedTitle": {
+    "description": "Title."
+  },
+  "classFinishedSummary": "{students} students · {questions} questions",
+  "@classFinishedSummary": {
+    "description": "Summary.",
+    "placeholders": {
+      "students": {
+        "type": "int"
+      },
+      "questions": {
+        "type": "int"
+      }
+    }
+  },
+  "classHardestTitle": "Hardest questions",
+  "@classHardestTitle": {
+    "description": "Section."
+  },
+  "classNoAnswersYet": "No answers recorded.",
+  "@classNoAnswersYet": {
+    "description": "Empty."
+  },
+  "classExportCsv": "Save / share results (CSV)",
+  "@classExportCsv": {
+    "description": "Button."
+  },
+  "classCsvSubject": "Class quiz results",
+  "@classCsvSubject": {
+    "description": "Share subject."
+  },
+  "classDone": "Done",
+  "@classDone": {
+    "description": "Button."
+  },
+  "classRetentionNote": "The class is deleted automatically {days} days after it ends.",
+  "@classRetentionNote": {
+    "description": "Retention.",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "classRetry": "Try again",
+  "@classRetry": {
+    "description": "Button."
+  },
+  "classExit": "Leave",
+  "@classExit": {
+    "description": "Button."
+  },
+  "classLobbyWelcome": "You’re in, {nickname}!",
+  "@classLobbyWelcome": {
+    "description": "Lobby.",
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
+  "classLobbyWait": "Wait for the teacher to start the quiz.",
+  "@classLobbyWait": {
+    "description": "Lobby."
+  },
+  "classChooseAnswer": "Choose an answer.",
+  "@classChooseAnswer": {
+    "description": "Status."
+  },
+  "classAnswerAccepted": "Answer received. The result appears when the time is up.",
+  "@classAnswerAccepted": {
+    "description": "Status."
+  },
+  "classTimeUpWaiting": "Time’s up. Checking the answer…",
+  "@classTimeUpWaiting": {
+    "description": "Status."
+  },
+  "classResultCorrect": "Correct! +{points} points",
+  "@classResultCorrect": {
+    "description": "Status.",
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
+  "classResultWrong": "Not correct.",
+  "@classResultWrong": {
+    "description": "Status."
+  },
+  "classResultNoAnswer": "No answer given.",
+  "@classResultNoAnswer": {
+    "description": "Status."
+  },
+  "classWaitNext": "Wait for the teacher to open the next question.",
+  "@classWaitNext": {
+    "description": "Status."
+  },
+  "classScoreLine": "Score: {score}",
+  "@classScoreLine": {
+    "description": "Score.",
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "classRankLine": "Rank {rank} of {total}",
+  "@classRankLine": {
+    "description": "Rank.",
+    "placeholders": {
+      "rank": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "classCorrectOfTotal": "{correct} of {total} correct",
+  "@classCorrectOfTotal": {
+    "description": "Result.",
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "classTopFive": "Top 5",
+  "@classTopFive": {
+    "description": "Section."
+  },
+  "classMistakesTitle": "Questions to review",
+  "@classMistakesTitle": {
+    "description": "Section."
+  },
+  "classNoMistakes": "Every answer was correct. Well done!",
+  "@classNoMistakes": {
+    "description": "Empty."
+  },
+  "classQuestionNumber": "Question {n}",
+  "@classQuestionNumber": {
+    "description": "Label.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "classYourAnswer": "Your answer: {text}",
+  "@classYourAnswer": {
+    "description": "Label.",
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "classCorrectAnswer": "Correct answer: {text}",
+  "@classCorrectAnswer": {
+    "description": "Label.",
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "classSourceLine": "Source: {author}, {title}, p. {page}",
+  "@classSourceLine": {
+    "description": "Source.",
+    "placeholders": {
+      "author": {
+        "type": "String"
+      },
+      "title": {
+        "type": "String"
+      },
+      "page": {
+        "type": "String"
+      }
+    }
+  },
+  "classOptionCorrect": "correct",
+  "@classOptionCorrect": {
+    "description": "Option tag."
+  },
+  "classOptionWrong": "your answer, wrong",
+  "@classOptionWrong": {
+    "description": "Option tag."
+  },
+  "classOptionChosen": "your choice",
+  "@classOptionChosen": {
+    "description": "Option tag."
+  },
+  "classReportTitle": "Report this nickname?",
+  "@classReportTitle": {
+    "description": "Dialog."
+  },
+  "classReportBody": "“{nickname}” will be sent to the teacher for review.",
+  "@classReportBody": {
+    "description": "Dialog.",
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
+  "classReportAction": "Report",
+  "@classReportAction": {
+    "description": "Button."
+  },
+  "classReportReason": "Inappropriate nickname",
+  "@classReportReason": {
+    "description": "Report reason sent to the server."
+  },
+  "classReportSent": "Report sent. Thank you.",
+  "@classReportSent": {
+    "description": "Snackbar."
+  },
+  "classErrNotConfigured": "Class quiz will be available once the FORENSIC EXPERT server is connected.",
+  "@classErrNotConfigured": {
+    "description": "Error."
+  },
+  "classErrNotSignedIn": "Please sign in first.",
+  "@classErrNotSignedIn": {
+    "description": "Error."
+  },
+  "classErrOffline": "No connection. Check the internet and try again.",
+  "@classErrOffline": {
+    "description": "Error."
+  },
+  "classErrServer": "Something went wrong on the server. Try again in a moment.",
+  "@classErrServer": {
+    "description": "Error."
+  },
+  "classErrForbidden": "You don’t have access to this class.",
+  "@classErrForbidden": {
+    "description": "Error."
+  },
+  "classErrBadCode": "Enter the 6-digit code.",
+  "@classErrBadCode": {
+    "description": "Error."
+  },
+  "classErrNotFound": "No class with this code. Check it and try again.",
+  "@classErrNotFound": {
+    "description": "Error."
+  },
+  "classErrRateLimited": "Too many attempts. Try again in an hour.",
+  "@classErrRateLimited": {
+    "description": "Error."
+  },
+  "classErrOwnSession": "You are the teacher of this class and can’t join it as a student.",
+  "@classErrOwnSession": {
+    "description": "Error."
+  },
+  "classErrFinished": "This quiz has already finished.",
+  "@classErrFinished": {
+    "description": "Error."
+  },
+  "classErrKicked": "The teacher removed you from this class.",
+  "@classErrKicked": {
+    "description": "Error."
+  },
+  "classErrAlreadyStarted": "The quiz has already started — new students can’t join.",
+  "@classErrAlreadyStarted": {
+    "description": "Error."
+  },
+  "classErrFull": "This class is full.",
+  "@classErrFull": {
+    "description": "Error."
+  },
+  "classErrNickLength": "Nickname must be 2–20 characters.",
+  "@classErrNickLength": {
+    "description": "Error."
+  },
+  "classErrNickChars": "This nickname contains characters that aren’t allowed.",
+  "@classErrNickChars": {
+    "description": "Error."
+  },
+  "classErrNickBlocked": "Please choose a different nickname.",
+  "@classErrNickBlocked": {
+    "description": "Error."
+  },
+  "classErrInvalidSettings": "Check the settings: 5–20 questions, 5–200 students, 15/30/45/60 seconds.",
+  "@classErrInvalidSettings": {
+    "description": "Error."
+  },
+  "classErrTooManySessions": "Too many open classes. Finish one first.",
+  "@classErrTooManySessions": {
+    "description": "Error."
+  },
+  "classErrNotEnoughQuestions": "This topic has too few questions (at least 5 are needed).",
+  "@classErrNotEnoughQuestions": {
+    "description": "Error."
+  },
+  "classErrBadState": "That action isn’t possible right now.",
+  "@classErrBadState": {
+    "description": "Error."
+  },
+  "classErrNoParticipants": "Wait until at least one student has joined.",
+  "@classErrNoParticipants": {
+    "description": "Error."
+  },
+  "classErrNotCurrent": "This question is already closed.",
+  "@classErrNotCurrent": {
+    "description": "Error."
+  },
+  "classErrTimeOver": "Time is up — your answer was not counted.",
+  "@classErrTimeOver": {
+    "description": "Error."
+  },
+  "classErrAlreadyAnswered": "You have already answered this question.",
+  "@classErrAlreadyAnswered": {
+    "description": "Error."
+  },
+  "classErrNotFinished": "Results will be available when the quiz ends.",
+  "@classErrNotFinished": {
+    "description": "Error."
+  },
+  "classErrBadReason": "Reason is too short.",
+  "@classErrBadReason": {
+    "description": "Error."
+  },
+  "unverifiedChip": "Not yet expert-confirmed",
+  "@unverifiedChip": {
+    "description": "Short one-line status chip on a record page. Full meaning is unverifiedBanner (read by screen readers)."
+  },
+  "legalNationalMethodsEmpty": "National methods are not loaded yet.",
+  "@legalNationalMethodsEmpty": {
+    "description": "Short empty note under 'National methods and procedures' when legal rules exist."
+  },
+  "teacherPanelTitle": "Teacher panel",
+  "@teacherPanelTitle": {
+    "description": "Home card and screen title: teacher tools for the class quiz."
+  },
+  "teacherPanelHomeBody": "Run a class quiz and get the results as CSV",
+  "@teacherPanelHomeBody": {
+    "description": "Home card subtitle for users with the teacher role."
+  },
+  "teacherPanelHomeBodyStudent": "Join a class quiz with your teacher's code",
+  "@teacherPanelHomeBodyStudent": {
+    "description": "Home card subtitle for users without the teacher role."
+  },
+  "teacherPanelIntro": "Three simple actions: run a quiz, see the results, and students join with a code.",
+  "@teacherPanelIntro": {
+    "description": "Intro line on the teacher panel."
+  },
+  "teacherRunTitle": "Run a quiz",
+  "@teacherRunTitle": {
+    "description": "Teacher panel action: create and host a class quiz."
+  },
+  "teacherRunBody": "Pick a topic — a 6-digit code and QR appear for the class",
+  "@teacherRunBody": {
+    "description": "Teacher panel action subtitle."
+  },
+  "teacherResultsTitle": "Results and CSV",
+  "@teacherResultsTitle": {
+    "description": "Teacher panel action and screen title: past class quizzes with CSV export."
+  },
+  "teacherResultsBody": "Past quizzes, leaderboard and a CSV file",
+  "@teacherResultsBody": {
+    "description": "Teacher panel action subtitle."
+  },
+  "teacherJoinTitle": "Join a class (student)",
+  "@teacherJoinTitle": {
+    "description": "Teacher panel action: the student join flow."
+  },
+  "teacherJoinBody": "With the code or QR from the teacher",
+  "@teacherJoinBody": {
+    "description": "Teacher panel action subtitle."
+  },
+  "teacherRoleNeeded": "Teacher role required — see the note below",
+  "@teacherRoleNeeded": {
+    "description": "Subtitle of a disabled teacher action for users without the teacher role."
+  },
+  "teacherResultsEmpty": "No quizzes yet. Start with “Run a quiz” — the results will appear here.",
+  "@teacherResultsEmpty": {
+    "description": "Empty state of the teacher results list."
+  },
+  "disciplineNextTitle": "Next steps",
+  "@disciplineNextTitle": {
+    "description": "Section heading at the end of a discipline page."
+  },
+  "disciplineSearchCta": "Search this discipline",
+  "@disciplineSearchCta": {
+    "description": "Discipline page tile: opens search pre-filled with the discipline name."
+  },
+  "disciplineSearchBody": "Across substances, methods and sources",
+  "@disciplineSearchBody": {
+    "description": "Subtitle of the discipline search tile."
+  },
+  "referralHowTitle": "How it works",
+  "@referralHowTitle": {
+    "description": "Heading of the three referral steps."
+  },
+  "referralHow1": "You send your personal code or link to a colleague.",
+  "@referralHow1": {
+    "description": "Referral step 1."
+  },
+  "referralHow2": "Your colleague creates a new account with that code.",
+  "@referralHow2": {
+    "description": "Referral step 2."
+  },
+  "referralHow3": "You see only totals — never names or personal data.",
+  "@referralHow3": {
+    "description": "Referral step 3 (privacy)."
+  },
+  "pubEmptyTitle": "No articles yet",
+  "@pubEmptyTitle": {
+    "description": "Title of the empty published-articles list."
+  },
+  "pubEmptyBody": "Be the first to share your experience: the “Submit an article” button is below. After moderation the article appears here.",
+  "@pubEmptyBody": {
+    "description": "Body of the empty published-articles list."
+  },
+  "calcWarnZeroMeasured": "No ethanol in the sample (0): back-calculation cannot show the level at the time of the event — the ethanol may have been fully eliminated before sampling.",
+  "@calcWarnZeroMeasured": {
+    "description": "Back-calculation warning when the measured concentration is zero."
+  },
+  "calcTechInfo": "Technical details",
+  "@calcTechInfo": {
+    "description": "Collapsed section on a calculator page with the module id and version."
+  },
+  "calcTechModule": "Calculation module: {id}, version {version}",
+  "@calcTechModule": {
+    "description": "Technical line inside the collapsed 'Technical details' section.",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      },
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "classSourceLineNoPage": "Source: {author}, {title}",
+  "@classSourceLineNoPage": {
+    "description": "Class quiz source line when the source has no page.",
+    "placeholders": {
+      "author": {
+        "type": "String"
+      },
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "classSourceLineLocator": "Source: {author}, {title}, {locator}",
+  "@classSourceLineLocator": {
+    "description": "Class quiz source line when the place is a chapter/section, not a page number.",
+    "placeholders": {
+      "author": {
+        "type": "String"
+      },
+      "title": {
+        "type": "String"
+      },
+      "locator": {
+        "type": "String"
+      }
+    }
+  },
+  "classTopicSearchHint": "Search a topic or course",
+  "@classTopicSearchHint": {
+    "description": "Search field above the grouped topic list (teacher, new class quiz)."
+  },
+  "classTopicGroupOther": "Other topics",
+  "@classTopicGroupOther": {
+    "description": "Group title for topics without a course/subject in the question bank index."
+  },
+  "classTopicNoMatch": "No matching topics.",
+  "@classTopicNoMatch": {
+    "description": "Topic search returned nothing."
+  },
+  "classTopicSelected": "Selected topic",
+  "@classTopicSelected": {
+    "description": "Label above the selected topic summary."
+  },
+  "classTopicGroupCount": "{count} topics",
+  "@classTopicGroupCount": {
+    "description": "Number of topics in a course group.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "ghsPCodesDetails": "Details: precautionary statements ({count} P-codes)",
+  "@ghsPCodesDetails": {
+    "description": "Collapsed list of GHS precautionary P-codes under a hazard note.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "studyExamUnavailableHub": "Sets marked “Practice only” have no exam: their questions are generated automatically or lack an explanation or page in the source. Use Practice for them.",
+  "@studyExamUnavailableHub": {
+    "description": "One note at the top of the study hub (replaces the repeated per-set text and disabled Exam buttons)."
+  },
+  "studyQuizAboutPractice": "About practice mode and options",
+  "@studyQuizAboutPractice": {
+    "description": "Title of the single collapsible info box on the first practice question."
   }
 }

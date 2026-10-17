@@ -25,7 +25,7 @@ class QaMineScreen extends ConsumerWidget {
     return QaGate(
       title: l.qaMineTitle,
       child: Scaffold(
-        appBar: AppBar(title: Text(l.qaMineTitle)),
+        appBar: AppBar(title: FeAppBarTitle(l.qaMineTitle)),
         body: SafeArea(
           child: switch (async) {
             AsyncData(value: final mine?) => _body(context, l, mine),

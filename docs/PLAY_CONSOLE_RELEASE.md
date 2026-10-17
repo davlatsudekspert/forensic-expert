@@ -76,7 +76,7 @@ unzip -p app-release.aab META-INF/MANIFEST.MF | head
    (bir martalik $25). Tashkilot nomidan ochilsa, D-U-N-S raqami va tashkilot
    hujjatlari so'raladi; shaxs nomidan ochilsa, shaxsni tasdiqlash (ID) kerak.
 2. **Create app:** nomi «FORENSIC EXPERT», standart til, App turi — *App*,
-   Free/Paid — hozircha *Free* (Pro obunasi ilova ichidagi xarid orqali).
+   Free/Paid — *Free* (ilova ichida xaridlar va obunalar yo‘q; hamma funksiya bepul).
 3. **App access:** ilovaning bir qismi hisob bilan ochilishi aytiladi. Google
    tekshiruvchisi uchun **test akkaunt** (email + OTP olish tartibi) yoziladi.
    Bu majburiy — aks holda rad etiladi.

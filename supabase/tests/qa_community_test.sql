@@ -46,6 +46,10 @@ insert into auth.users (id, email, created_at, email_confirmed_at) values
  ('50000000-0000-0000-0000-0000000000a6', 'qa-admin@x', now(), now());
 insert into account_roles (user_id, role, granted_by)
 values ('50000000-0000-0000-0000-0000000000a6', 'identity_admin', null);
+-- Posting needs accepted community rules (20261017000000_admin_extension.sql).
+insert into user_terms (user_id, doc, version)
+select id, 'ugc_rules', 'test' from auth.users
+where id::text like '50000000-0000-0000-0000-0000000000a%';
 
 -- ---------------------------------------------------------------- schema
 select pg_temp.qa_check(not exists (

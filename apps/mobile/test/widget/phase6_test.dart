@@ -2,7 +2,6 @@ import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/router.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/app/search_service.dart';
@@ -14,11 +13,8 @@ import 'package:forensic_expert/data/offline/offline_ai.dart';
 import 'package:forensic_expert/domain/ai/ai_architecture.dart';
 import 'package:forensic_expert/domain/jurisdiction/country_directory.dart';
 import 'package:forensic_expert/domain/jurisdiction/jurisdiction_catalog.dart';
-import 'package:forensic_expert/domain/ports/billing_ports.dart';
-import 'package:forensic_expert/domain/ports/product_tiers.dart';
 import 'package:forensic_expert/domain/privacy/telemetry_policy.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 
@@ -40,10 +36,7 @@ void main() {
         .copyWith(jurisdictionId: jurisdiction),
     initialLocation: location,
     testFixtures: false,
-    overrides: [
-      ...pilot.overrides,
-      entitlementServiceProvider.overrideWithValue(FakeStore(owned: owned)),
-    ],
+    overrides: [...pilot.overrides],
   );
 
   Future<void> see(WidgetTester tester, Finder f) async {
@@ -266,10 +259,15 @@ void main() {
         find.byKey(const Key('calc.points')),
         '0 0.1\n1 2.0\n2 4.1\n3 5.9\n4 8.1',
       );
-      await tester.tap(find.byKey(const Key('calc.regress')));
-      await tester.pumpAndSettle();
-      await tester.ensureVisible(find.byKey(const Key('calc.calculate')));
-      await tester.tap(find.byKey(const Key('calc.calculate')));
+      for (final k in ['calc.regress', 'calc.calculate']) {
+        await Scrollable.ensureVisible(
+          tester.element(find.byKey(Key(k))),
+          alignment: 0.5,
+        );
+        await tester.pumpAndSettle();
+        await tester.tap(find.byKey(Key(k)));
+        await tester.pumpAndSettle();
+      }
       await tester.pumpAndSettle();
       expect(find.byKey(const Key('calc.result')), findsOneWidget);
       // PHASE 7 (RG-25): havola ICH Q2(R2) ga ko‘chirildi.
@@ -394,13 +392,7 @@ void main() {
     });
   });
 
-  group('Billing va maxfiylik arxitekturasi', () {
-    test('darajalar: faqat store’da mavjud mahsulot xarid qilinadi', () {
-      expect(ProductTiers.purchasableProductIds, ProductIds.all);
-      expect(ProductTiers.tierOf(Entitlements.free), PlanTier.free);
-      expect(PlanTier.values.length, 4);
-    });
-
+  group('Maxfiylik arxitekturasi', () {
     test('telemetriya: so‘rov, matn va ID’lar hech qachon o‘tmaydi', () {
       final out = TelemetryPolicy.sanitize({
         'event': 'screen_view',

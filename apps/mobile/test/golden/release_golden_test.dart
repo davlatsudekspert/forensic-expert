@@ -4,12 +4,10 @@ import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/router.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/data/auth/mock_auth_repository.dart';
-import 'package:forensic_expert/domain/ports/billing_ports.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pump_app.dart';
 
-/// Release: akkaunt va obuna ekranlari (MOCK backend, TEST narx).
+/// Release: akkaunt ekranlari (MOCK backend).
 /// Nusxa: `docs/screenshots/release/`.
 void main() {
   Future<MockAuthRepository> signedIn() async {
@@ -31,44 +29,15 @@ void main() {
           ThemeMode theme,
           String route,
           bool auth,
-          FakeStore store,
           Key? scrollTo,
         })
       >[
-        (
-          name: 'rc_01_paywall_en',
-          lang: 'en',
-          theme: ThemeMode.light,
-          route: Routes.purchase,
-          auth: false,
-          store: FakeStore(price: 'TEST 1.00'),
-          scrollTo: null,
-        ),
-        (
-          name: 'rc_02_paywall_pro_ru_dark',
-          lang: 'ru',
-          theme: ThemeMode.dark,
-          route: Routes.purchase,
-          auth: true,
-          store: FakeStore(price: 'TEST 1.00', owned: true),
-          scrollTo: const Key('paywall.tier.professionalPro'),
-        ),
-        (
-          name: 'rc_03_paywall_no_store_uz',
-          lang: 'uz',
-          theme: ThemeMode.light,
-          route: Routes.purchase,
-          auth: false,
-          store: FakeStore(withOffers: false),
-          scrollTo: null,
-        ),
         (
           name: 'rc_04_register_en',
           lang: 'en',
           theme: ThemeMode.light,
           route: Routes.accountRegister,
           auth: false,
-          store: FakeStore(),
           scrollTo: null,
         ),
         (
@@ -77,7 +46,6 @@ void main() {
           theme: ThemeMode.light,
           route: Routes.accountSignIn,
           auth: false,
-          store: FakeStore(),
           scrollTo: null,
         ),
         (
@@ -86,7 +54,6 @@ void main() {
           theme: ThemeMode.dark,
           route: Routes.accountVerify,
           auth: false,
-          store: FakeStore(),
           scrollTo: null,
         ),
         (
@@ -95,11 +62,7 @@ void main() {
           theme: ThemeMode.light,
           route: Routes.profile,
           auth: true,
-          store: FakeStore(
-            tier: PlanTier.studentPro,
-            status: EntitlementStatus.cancelledActiveUntilExpiry,
-          ),
-          scrollTo: const Key('profile.restore'),
+          scrollTo: const Key('profile.deleteAccount'),
         ),
         (
           name: 'rc_08_delete_account_en',
@@ -107,7 +70,6 @@ void main() {
           theme: ThemeMode.light,
           route: Routes.accountDelete,
           auth: true,
-          store: FakeStore(),
           scrollTo: null,
         ),
         (
@@ -116,7 +78,6 @@ void main() {
           theme: ThemeMode.light,
           route: Routes.profile,
           auth: false,
-          store: FakeStore(),
           scrollTo: const Key('profile.emailCode'),
         ),
       ];
@@ -127,10 +88,7 @@ void main() {
       final container = await pumpApp(
         tester,
         settings: completedSettings(lang: c.lang, theme: c.theme),
-        overrides: [
-          authRepositoryProvider.overrideWithValue(auth),
-          entitlementServiceProvider.overrideWithValue(c.store),
-        ],
+        overrides: [authRepositoryProvider.overrideWithValue(auth)],
       );
       container.read(routerProvider).go(c.route, extra: 'expert@lab.uz');
       await tester.pumpAndSettle();

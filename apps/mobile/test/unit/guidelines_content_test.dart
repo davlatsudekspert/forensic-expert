@@ -123,15 +123,7 @@ void main() {
 
     test('egasi qarori: barcha uchun bepul, manba qatori ko‘rsatiladi', () {
       for (final c in cards.nonNulls) {
-        expect(c.access, GuidelineAccess.free, reason: c.id);
-        expect(c.isFree, isTrue, reason: c.id);
         expect(bundle.citesYuldashevMaterial(c), isTrue, reason: c.id);
-      }
-      // Yuldashev materialiga tayangan har qanday karta bepul bo‘lishi shart.
-      for (final c in bundle.cards) {
-        if (bundle.citesYuldashevMaterial(c)) {
-          expect(c.isFree, isTrue, reason: c.id);
-        }
       }
       // Boshqa kartalarda bu qator chiqmaydi.
       expect(
@@ -273,7 +265,6 @@ void main() {
       expect(card!.area, GuidelineArea.forensicChemistry);
       expect(card.status, ScientificStatus.needsReview);
       expect(card.sections, hasLength(8));
-      expect(card.access, GuidelineAccess.free);
       expect(bundle.citesYuldashevMaterial(card), isFalse);
       for (final id in card.relatedToolIds) {
         expect(ToolsCatalog.byId(id)?.isAvailable, isTrue, reason: id);
@@ -371,8 +362,6 @@ void main() {
 
     test('egasi qarori: barcha uchun bepul, atribusiya qatori', () {
       for (final c in gmt) {
-        expect(c.access, GuidelineAccess.free, reason: c.id);
-        expect(c.isFree, isTrue, reason: c.id);
         expect(bundle.citesYuldashevMaterial(c), isTrue, reason: c.id);
         expect(
           bundle.referencesOf(c).map((r) => r.key),

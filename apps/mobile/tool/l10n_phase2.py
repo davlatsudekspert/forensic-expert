@@ -187,11 +187,7 @@ k("planStudentPro","Plan name (brand).","Student Pro","Student Pro","Student Pro
 k("planProfessionalPro","Plan name (brand).","Professional Pro","Professional Pro","Professional Pro")
 k("planCurrent","Current plan marker.","Current plan","Текущий тариф","Joriy tarif")
 k("priceUnavailable","No store price.","Price unavailable","Цена недоступна","Narx mavjud emas")
-k("storeNotConnected","Store not connected notice.","The store is not connected in this build. Prices are shown only from the App Store or Google Play.","В этой сборке магазин не подключён. Цены показываются только из App Store или Google Play.","Ushbu yig‘mada do‘kon ulanmagan. Narxlar faqat App Store yoki Google Play’dan ko‘rsatiladi.")
 k("subscribeAction","Subscribe button.","Subscribe","Оформить подписку","Obuna bo‘lish")
-k("restorePurchases","Restore purchases.","Restore purchases","Восстановить покупки","Xaridlarni tiklash")
-k("manageSubscription","Manage subscription.","Manage subscription","Управление подпиской","Obunani boshqarish")
-k("restoreNothing","Restore result.","No purchases to restore.","Нет покупок для восстановления.","Tiklanadigan xarid yo‘q.")
 k("featLibrary","Plan feature.","Substance library","Библиотека веществ","Moddalar kutubxonasi")
 k("featLabTools","Plan feature.","Laboratory calculators","Лабораторные калькуляторы","Laboratoriya kalkulyatorlari")
 k("featLearning","Plan feature.","Courses, quizzes and flashcards","Курсы, тесты и карточки","Kurslar, testlar va kartochkalar")
@@ -205,7 +201,6 @@ k("valueExtended","Plan feature value.","Extended","Расширенно","Kenga
 k("valueFull","Plan feature value.","Full","Полностью","To‘liq")
 k("valueIncluded","Plan feature value (screen reader).","Included","Включено","Mavjud")
 k("valueNotIncluded","Plan feature value (screen reader).","Not included","Не включено","Mavjud emas")
-k("subscriptionSafetyNote","Subscription principle.","Disclaimers, limitations and sources are never behind a paywall.","Предупреждения, ограничения и источники никогда не скрываются за подпиской.","Ogohlantirishlar, cheklovlar va manbalar hech qachon pullik obuna ortida yashirilmaydi.")
 k("moduleHubTools","Module hub section.","Tools in this section","Инструменты раздела","Bo‘lim vositalari")
 k("moduleHubReference","Module hub section.","Reference","Справочник","Ma’lumotnoma")
 
@@ -226,7 +221,6 @@ k("detailNationalMethods","Detail row in jurisdiction layer.","National methods 
 k("detailChangeJurisdiction","Action.","Change jurisdiction","Сменить юрисдикцию","Yurisdiksiyani o‘zgartirish")
 
 # --- Monetizatsiya: FORENSIC EXPERT Lifetime (bir martalik xarid) ---
-k("purchaseTitle","Purchase screen title and profile row.","Lifetime Access","Пожизненный доступ","Umrbod kirish")
 k("purchaseOneTime","Purchase type label.","One-time purchase","Разовая покупка","Bir martalik xarid")
 k("purchasePriceLine","Price line; {price} comes from the store (or reference price).","{price} · One-time purchase","{price} · Разовая покупка","{price} · Bir martalik xarid",{"price":{"type":"String"}})
 k("purchaseReferencePriceNote","Shown when the store price is not available.","Reference price. The final price in your currency is shown by the App Store or Google Play.","Ориентировочная цена. Окончательную цену в вашей валюте покажет App Store или Google Play.","Taxminiy narx. Yakuniy narxni sizning valyutangizda App Store yoki Google Play ko‘rsatadi.")
@@ -236,21 +230,12 @@ k("purchaseValueSources","Lifetime value.","Verified sources & evidence status",
 k("purchaseValueOffline","Lifetime value.","Offline professional database","Профессиональная офлайн-база","Oflayn professional baza")
 k("purchaseValueLearning","Lifetime value.","Learning & professional development","Обучение и профессиональное развитие","Ta’lim va kasbiy rivojlanish")
 k("purchaseValueUpdates","Lifetime value.","Future scientific content updates","Будущие обновления научного контента","Kelgusi ilmiy kontent yangilanishlari")
-k("purchaseCta","Primary purchase button.","Unlock FORENSIC EXPERT","Открыть FORENSIC EXPERT","FORENSIC EXPERT’ni ochish")
 k("purchaseFooter","Below the purchase button.","One-time purchase · No recurring subscription","Разовая покупка · Без регулярной подписки","Bir martalik xarid · Takroriy obuna yo‘q")
-k("purchaseFreeTitle","Free version section.","Free version","Бесплатная версия","Bepul versiya")
-k("purchaseFreeBody","What the free version includes.","Try before you buy: a search demo, selected reference entries, selected tools and demo lessons.","Попробуйте до покупки: демо поиска, избранные справочные статьи, отдельные инструменты и демо-уроки.","Xariddan oldin sinab ko‘ring: qidiruv demosi, tanlangan ma’lumotnoma yozuvlari, ayrim vositalar va demo darslar.")
-k("purchaseAiNote","AI is not unlimited.","Forensic AI is not included without limits: it has server costs. Any AI allowance will be stated clearly before purchase.","Forensic AI не входит без ограничений: у него есть серверные расходы. Любой объём AI будет чётко указан до покупки.","Forensic AI cheklovsiz kirmaydi: uning server xarajati bor. AI hajmi xariddan oldin aniq ko‘rsatiladi.")
-k("purchaseOwned","Shown when lifetime is active.","Lifetime access is active","Пожизненный доступ активен","Umrbod kirish faol")
-k("purchaseUnavailableSnack","Purchase tapped while store unavailable.","Purchases are not available in this build.","Покупки недоступны в этой сборке.","Bu yig‘mada xarid qilib bo‘lmaydi.")
-k("accessFree","Profile value: free access.","Free version","Бесплатная версия","Bepul versiya")
 k("accessLifetime","Profile value: lifetime.","Lifetime","Пожизненный","Umrbod")
 
 # Changed value (owner request in PHASE 2)
 REMOVED = {"currentPlanFree","planFree","planStudentPro","planProfessionalPro","planCurrent","priceUnavailable","manageSubscription","featLibrary","featLabTools","featLearning","featAdvancedTools","featAi","featOffline","featSafety","valueLimited","valueBasic","valueExtended","valueFull","valueIncluded","valueNotIncluded","subscribeAction","subscriptionTitle"}
 CHANGED = {
- "restorePurchases": ("Restore Purchase","Восстановить покупку","Xaridni tiklash"),
- "storeNotConnected": ("The store is not connected in this build, so purchase is unavailable.","В этой сборке магазин не подключён, поэтому покупка недоступна.","Bu yig‘mada do‘kon ulanmagan, shuning uchun xarid qilib bo‘lmaydi."),
  "profileSectionAccount": ("Account and purchases","Аккаунт и покупки","Akkaunt va xaridlar"),
  "searchHint": ("Search substances, methods, tools, references…","Поиск веществ, методов, инструментов, источников…","Moddalar, usullar, vositalar va manbalarni qidiring…")}
 

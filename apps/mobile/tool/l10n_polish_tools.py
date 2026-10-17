@@ -23,12 +23,6 @@ k("calcErrorRequired", "Validation: a required field is empty.",
   "Barcha majburiy maydonlarni to‘ldiring.")
 k("calcEstimatedRange", "Headline row: estimated min–max range.",
   "Estimated range", "Оценочный диапазон", "Baholangan oraliq")
-k("calcLockedTitle", "Locked calculator card title.",
-  "Included in Expert Pro", "Входит в Эксперт Pro", "Mutaxassis Pro tarkibida")
-k("calcLockedBody", "Locked calculator card body.",
-  "This calculator opens with the Expert Pro plan. Dilution and the concentration unit converter are free.",
-  "Этот калькулятор доступен в тарифе Эксперт Pro. Разведение и конвертер единиц концентрации — бесплатны.",
-  "Bu kalkulyator Mutaxassis Pro tarifida ochiladi. Suyultirish va konsentratsiya birliklari konvertori — bepul.")
 
 # --------------------------------------------------------- statistika
 k("calcStatsValues", "Field label: list of values.",

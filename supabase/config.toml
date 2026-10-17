@@ -63,3 +63,10 @@ verify_jwt = false
 
 [functions.delete-account]
 verify_jwt = true
+
+# Owner bootstrap of the first admin (ADMIN_EMAILS secret). Called by the
+# owner with the service-role key from a terminal; the function checks that
+# key itself, so the gateway JWT check is off (the service key is not a user
+# JWT). See docs/ADMIN_EXTENSION_DEPLOY.md.
+[functions.admin-bootstrap]
+verify_jwt = false

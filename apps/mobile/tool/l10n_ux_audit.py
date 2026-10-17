@@ -59,8 +59,6 @@ s("aiPreviewTitle", uz="Javob tuzilmasi (namuna)")
 s("aiSendUnavailable", en="AI is temporarily unavailable — sending is disabled.", ru="ИИ временно недоступен — отправка отключена.", uz="AI vaqtincha ishlamayapti — yuborish o‘chirilgan.")
 s("accountNotConnected", uz="Hisob xizmati hozircha mavjud emas. Barcha oflayn funksiyalar ishlaydi.")
 s("authErrNotConfigured", uz="Hisob xizmati hozircha mavjud emas.")
-s("storeNotConnected", uz="App Store / Google Play hozircha mavjud emas. Narx va xarid faqat do‘kon bergandagina paydo bo‘ladi.")
-s("purchaseUnavailableSnack", uz="Xarid hozircha mavjud emas.")
 s("libraryNotInstalled", uz="Ilmiy baza hozircha o‘rnatilmagan.")
 # 24.
 s("reviewExplain", ru="Утверждение становится ПОДТВЕРЖДЁННЫМ только после одобрения текущей версии двумя независимыми квалифицированными рецензентами по специальности. Приложение и его авторы не могут сами отметить что-либо как проверенное.",
@@ -93,8 +91,6 @@ s("referralSignInBody", uz="Shaxsiy kod elektron pochta orqali kirganingizdan so
 s("referralClaimPending", uz="Taklif saqlandi. Elektron pochta tasdiqlangach kuchga kiradi.")
 s("adminConfirmed", uz="Elektron pochta tasdiqlangan")
 s("adminPrivacyNote", uz="Shaxsiy ma’lumot (elektron pochta) bor. Skrinshotlarni tarqatmang.")
-s("adminEmail", uz="Foydalanuvchi elektron pochtasi")
-s("adminNotFound", uz="Bunday elektron pochtali foydalanuvchi yo‘q.")
 # 26. SOP bir marta izohlanadi.
 s("moduleMethods", uz="Usullar va SOP")
 s("methodKindSop", en="Institutional SOPs (standard operating procedures)", ru="СОП учреждений (стандартные операционные процедуры)", uz="Muassasa SOP’lari (standart ish tartiblari)")
@@ -108,12 +104,11 @@ s("homeDbHumanVerified", en="Expert verified (2 independent experts): {count}", 
 # 29.
 s("learnBookmarks", en="Favorites", ru="Избранное", uz="Saralanganlar")
 s("learnBookmarksEmpty", en="Mark a topic with the star to find it here.", ru="Отметьте тему звёздочкой, чтобы найти её здесь.")
-# 30. AI uslubi.
-s("aiExperienceProfessional", en="Short answer", ru="Коротко", uz="Qisqa javob")
-s("aiExperienceTutor", en="Explain it to me", ru="Объясните подробно", uz="Tushuntirib bering")
+# 30. AI uslubi. Premium dizayn (2026-10-17): 320 dp da segment bir qatorda —
+# qisqa yorliq, ma’no ostidagi izohda (l10n_design_premium.py bilan bir xil).
+s("aiExperienceProfessional", en="Short", ru="Коротко", uz="Qisqa")
+s("aiExperienceTutor", en="Detailed", ru="Подробно", uz="Batafsil")
 # 33.
-s("tierStudentPro", uz="Talaba Pro")
-s("tierProfessionalPro", uz="Mutaxassis Pro")
 # 35. Qisqaroq hisoblagich.
 s("emailCodeResendIn", en="Resend ({seconds})", ru="Повторить ({seconds})", uz="Qayta yuborish ({seconds})")
 

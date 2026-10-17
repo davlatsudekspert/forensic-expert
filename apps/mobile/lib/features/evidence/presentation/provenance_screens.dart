@@ -25,7 +25,7 @@ Widget _page({
   required String title,
   required List<Widget> children,
 }) => Scaffold(
-  appBar: AppBar(title: Text(title)),
+  appBar: AppBar(title: FeAppBarTitle(title)),
   body: SafeArea(
     child: ListView(
       key: key,

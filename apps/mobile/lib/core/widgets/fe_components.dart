@@ -4,6 +4,52 @@ import '../design/theme.dart';
 import '../design/tokens.dart';
 import '../l10n/generated/app_localizations.dart';
 
+/// AppBar sarlavhasi: bir qatorga sig‘sa — odatdagi 20 sp serif; sig‘masa —
+/// biroz kichikroq shrift bilan **ikki qator** (uzun modda/usul nomlari
+/// «GC (gaz xromat…» bo‘lib kesilmasin). Ikki qatorga ham sig‘masa — oxiri
+/// «…» bilan.
+class FeAppBarTitle extends StatelessWidget {
+  const FeAppBarTitle(this.text, {super.key});
+
+  final String text;
+
+  /// Ikki qatorli rejimdagi shrift (toolbar 60 dp ga 2 qator sig‘adi).
+  static const double twoLineFontSize = 16.5;
+
+  @override
+  Widget build(BuildContext context) {
+    final base = DefaultTextStyle.of(context).style;
+    final scaler = MediaQuery.textScalerOf(context);
+    final dir = Directionality.of(context);
+    return LayoutBuilder(
+      builder: (context, box) {
+        final one = TextPainter(
+          text: TextSpan(text: text, style: base),
+          maxLines: 1,
+          textDirection: dir,
+          textScaler: scaler,
+        )..layout(maxWidth: box.maxWidth);
+        final fits = !one.didExceedMaxLines;
+        one.dispose();
+        if (fits) {
+          return Text(text, maxLines: 1, overflow: TextOverflow.ellipsis);
+        }
+        return Text(
+          text,
+          maxLines: 2,
+          softWrap: true,
+          overflow: TextOverflow.ellipsis,
+          style: base.copyWith(
+            fontSize: twoLineFontSize,
+            height: 1.15,
+            letterSpacing: -0.1,
+          ),
+        );
+      },
+    );
+  }
+}
+
 /// Bo‘lim sarlavhasi (header semantikasi bilan) va ixtiyoriy amal.
 class FeSectionHeader extends StatelessWidget {
   const FeSectionHeader(
@@ -204,7 +250,15 @@ class FeBanner extends StatelessWidget {
   Widget build(BuildContext context) {
     final c = FeTheme.of(context);
     final (bg, fg, border, width) = switch (tone) {
-      FeBannerTone.critical => (c.surface, c.textPrimary, c.danger, 2.0),
+      // Mayin xavf foni (qattiq qizil ramka va KATTA HARF o‘rniga): daraja
+      // ikonka shakli, qizil ikonka va ekran o‘quvchisi uchun nomi bilan
+      // ajraladi.
+      FeBannerTone.critical => (
+        Color.alphaBlend(c.danger.withValues(alpha: 0.07), c.surface),
+        c.textPrimary,
+        c.danger.withValues(alpha: 0.35),
+        1.0,
+      ),
       FeBannerTone.warning => (
         c.warningContainer,
         c.onWarningContainer,
@@ -228,6 +282,9 @@ class FeBanner extends StatelessWidget {
       FeBannerTone.review => c.reviewed,
     };
     final hc = FeTheme.isHighContrast(context);
+    // Mayin tonal blok: yumaloq, chap chiziqsiz. Daraja ikonka shakli,
+    // ikonka rangi va ekran o‘quvchisi uchun daraja nomi bilan ajraladi;
+    // kritik daraja (va yuqori kontrast rejimi) — to‘liq chegara bilan.
     return Semantics(
       container: true,
       label: level,
@@ -235,58 +292,44 @@ class FeBanner extends StatelessWidget {
         decoration: BoxDecoration(
           color: tone == FeBannerTone.review ? c.surface : bg,
           borderRadius: BorderRadius.circular(FeRadius.md),
-          // Yuqori kontrastda to‘liq chegara; aks holda faqat chap chiziq.
           border: hc || tone == FeBannerTone.critical
               ? Border.all(color: border, width: width)
               : null,
         ),
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(FeRadius.md),
-          child: IntrinsicHeight(
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Container(width: 3, color: stripe),
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.fromLTRB(
-                      FeSpace.sm,
-                      FeSpace.sm,
-                      FeSpace.sm,
-                      FeSpace.sm,
-                    ),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Icon(
-                          icon,
-                          size: 20,
-                          color: switch (tone) {
-                            FeBannerTone.critical => c.danger,
-                            FeBannerTone.review => c.reviewed,
-                            _ => fg,
-                          },
-                        ),
-                        const SizedBox(width: FeSpace.xs),
-                        Expanded(
-                          child: Text(
-                            text,
-                            style: Theme.of(context).textTheme.bodySmall
-                                ?.copyWith(
-                                  color: fg,
-                                  height: 1.45,
-                                  fontWeight: tone == FeBannerTone.critical
-                                      ? FontWeight.w600
-                                      : null,
-                                ),
-                          ),
-                        ),
-                      ],
-                    ),
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(
+            FeSpace.sm,
+            FeSpace.sm,
+            FeSpace.md,
+            FeSpace.sm,
+          ),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Icon(
+                icon,
+                size: 20,
+                color: switch (tone) {
+                  FeBannerTone.critical => c.danger,
+                  FeBannerTone.review => c.reviewed,
+                  FeBannerTone.info => stripe,
+                  _ => fg,
+                },
+              ),
+              const SizedBox(width: FeSpace.sm),
+              Expanded(
+                child: Text(
+                  text,
+                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                    color: fg,
+                    height: 1.45,
+                    fontWeight: tone == FeBannerTone.critical
+                        ? FontWeight.w500
+                        : null,
                   ),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),
@@ -302,12 +345,20 @@ class FeEmptyState extends StatelessWidget {
     required this.body,
     this.title,
     this.compact = false,
+    this.actionLabel,
+    this.actionIcon,
+    this.onAction,
   });
 
   final IconData icon;
   final String? title;
   final String body;
   final bool compact;
+
+  /// Ixtiyoriy keyingi qadam (bo‘sh holat «boshi berk» bo‘lmasin).
+  final String? actionLabel;
+  final IconData? actionIcon;
+  final VoidCallback? onAction;
 
   @override
   Widget build(BuildContext context) {
@@ -319,32 +370,49 @@ class FeEmptyState extends StatelessWidget {
       else
         DecoratedBox(
           decoration: BoxDecoration(
-            color: c.surface,
+            color: c.accentContainer,
             shape: BoxShape.circle,
-            border: Border.all(color: c.border),
+            border: Border.all(color: c.accentBorder),
           ),
           child: Padding(
-            padding: const EdgeInsets.all(FeSpace.md),
-            child: Icon(icon, size: 28, color: c.accent),
+            padding: const EdgeInsets.all(FeSpace.md + 2),
+            child: Icon(icon, size: 30, color: c.accent),
           ),
         ),
-      SizedBox(height: compact ? 0 : FeSpace.sm, width: FeSpace.sm),
+      SizedBox(height: compact ? 0 : FeSpace.md, width: FeSpace.sm),
       if (title != null)
         Semantics(
           header: true,
           child: Text(title!, style: t.titleSmall, textAlign: TextAlign.center),
         ),
+      if (title != null && !compact) const SizedBox(height: FeSpace.xxs),
       Flexible(
         child: Text(
           body,
           textAlign: compact ? TextAlign.start : TextAlign.center,
-          style: t.bodySmall?.copyWith(color: c.textSecondary),
+          style: (compact ? t.bodySmall : t.bodyMedium)?.copyWith(
+            color: c.textSecondary,
+          ),
         ),
       ),
+      if (!compact && actionLabel != null && onAction != null) ...[
+        const SizedBox(height: FeSpace.md),
+        FilledButton.tonalIcon(
+          onPressed: onAction,
+          icon: Icon(actionIcon ?? Icons.arrow_forward, size: 20),
+          label: Text(actionLabel!),
+          style: FilledButton.styleFrom(
+            backgroundColor: c.accentContainer,
+            foregroundColor: c.onAccentContainer,
+            minimumSize: const Size(0, FeTouch.minTarget),
+          ),
+        ),
+      ],
     ];
     return Padding(
       padding: EdgeInsets.symmetric(
         vertical: compact ? FeSpace.xs : FeSpace.lg,
+        horizontal: compact ? 0 : FeSpace.lg,
       ),
       child: compact
           ? Row(children: children)
@@ -390,9 +458,9 @@ class _FeCardState extends State<FeCard> {
       button: widget.onTap != null,
       label: widget.semanticLabel,
       child: AnimatedScale(
-        scale: _pressed ? 0.985 : 1,
+        scale: _pressed ? 0.98 : 1,
         duration: FeMotion.of(context, FeMotion.fast),
-        curve: Curves.easeOut,
+        curve: FeMotion.curve,
         child: DecoratedBox(
           decoration: BoxDecoration(
             borderRadius: radius,
@@ -406,7 +474,7 @@ class _FeCardState extends State<FeCard> {
                 color: hc
                     ? c.borderStrong
                     : c.border.withValues(
-                        alpha: brightness == Brightness.dark ? 1 : 0.7,
+                        alpha: brightness == Brightness.dark ? 0.9 : 0.55,
                       ),
               ),
             ),

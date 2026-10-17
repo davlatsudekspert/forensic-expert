@@ -27,7 +27,6 @@ class LibraryEntry {
     required this.isTestData,
     this.synonyms = const [],
     this.lastReviewed,
-    this.access = EntryAccess.free,
     this.details,
     this.group,
   });
@@ -42,18 +41,12 @@ class LibraryEntry {
   final bool isTestData;
   final DateTime? lastReviewed;
 
-  /// Bepul demo yoki Lifetime ([EntryAccess]).
-  final EntryAccess access;
-
   /// Kontent paketidan kelgan to‘liq ma’lumot. TEST fixture’larda `null`.
   final EntryDetails? details;
 
   /// Tahririy guruh (masalan `opioids`) — navigatsiya uchun.
   final String? group;
 }
-
-/// Kutubxona yozuviga kirish darajasi (kontent paketidagi `tier_access`).
-enum EntryAccess { free, lifetime }
 
 /// Manba (provenance) — UI uchun.
 /// Egasi bergan va tasdiqlagan manbalar: ustoz kitoblari. Ekranda «tasdiqlangan manba» deb ko‘rsatiladi.
@@ -256,6 +249,14 @@ class ClaimView {
   /// `value.locator_i18n` — manba nomi bilan birga aniq joyi.
   String? locatorFor(String languageCode) =>
       _localized(_i18n('locator_i18n'), languageCode);
+
+  /// `value.statement` faqat asl tilda (masalan, o‘zbekcha) va [languageCode]
+  /// uchun tarjima hali qo‘shilmagan — matn asl tilda ko‘rsatiladi va
+  /// «tarjima kutilmoqda» belgisi chiqadi (tarjima to‘qilmaydi).
+  bool statementTranslationPending(String languageCode) =>
+      localeOnly == null &&
+      hasStatement &&
+      !_i18n('statement').containsKey(languageCode);
 
   /// Tarjima holati (`authored` / `machine_draft` …) shu til uchun.
   String? translationStatusFor(String languageCode) =>

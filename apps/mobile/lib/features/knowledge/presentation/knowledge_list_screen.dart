@@ -5,11 +5,13 @@ import 'package:go_router/go_router.dart';
 
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
+import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
+import '../../../domain/evidence/content_translations.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
 import '../../tools/presentation/tool_tile.dart';
 import '../knowledge_strings.dart';
@@ -27,6 +29,7 @@ class KnowledgeListScreen extends ConsumerWidget {
     final entries = ref.watch(knowledgeRepositoryProvider).byKind(kind);
     final lang = Localizations.localeOf(context).languageCode;
     final standards = ref.watch(provenanceIndexProvider).standards.length;
+    final translations = ref.watch(contentTranslationsProvider);
 
     List<Widget> body() {
       if (kind == KnowledgeKind.method) {
@@ -103,14 +106,27 @@ class KnowledgeListScreen extends ConsumerWidget {
               entry: e,
               subtitle: switch (e.emerging) {
                 final x? => l.emergingCategoryName(x.category),
-                null => e.screening?.principle,
+                // Prinsip manbada inglizcha («colour (spot) reaction»):
+                // ro‘yxatda ham sahifadagidek UI tilidagi tarjima.
+                null => switch (e.screening?.principle) {
+                  final p? when p.trim().isNotEmpty =>
+                    translations
+                        .resolve(
+                          ContentTextKind.screeningField,
+                          '${e.id}#principle',
+                          source: p,
+                          lang: lang,
+                        )
+                        .text,
+                  _ => null,
+                },
               },
             ),
       ];
     }
 
     return Scaffold(
-      appBar: AppBar(title: Text(l.knowledgeKindTitle(kind))),
+      appBar: AppBar(title: FeAppBarTitle(l.knowledgeKindTitle(kind))),
       body: SafeArea(
         child: ListView(
           key: Key('knowledgeList.${kind.name}.$lang'),
@@ -203,7 +219,7 @@ class AreaHubScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(switch (area) {
+        title: FeAppBarTitle(switch (area) {
           KnowledgeArea.forensicMedicine => l.moduleForensicMedicine,
           KnowledgeArea.histology => l.moduleHistology,
           KnowledgeArea.toxicology => l.moduleToxicology,
@@ -237,31 +253,40 @@ class _EmptyTopicRow extends StatelessWidget {
   final String title;
   final String body;
 
+  /// Boshqa mavzu kartalari bilan bir xil karta (sarlavha + holat qatori);
+  /// bosilmaydi — ochiladigan narsa yo‘q, shuning uchun «›» ham yo‘q.
   @override
   Widget build(BuildContext context) {
     final t = Theme.of(context).textTheme;
-    final secondary = Theme.of(context).colorScheme.onSurfaceVariant;
-    return Semantics(
-      container: true,
-      child: Padding(
-        padding: const EdgeInsets.symmetric(
-          horizontal: FeSpace.sm,
-          vertical: FeSpace.xs,
-        ),
-        child: Row(
-          children: [
-            Icon(Icons.radio_button_unchecked, size: 16, color: secondary),
-            const SizedBox(width: FeSpace.sm),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+    final c = FeTheme.of(context);
+    return Padding(
+      padding: const EdgeInsets.only(bottom: FeSpace.xs),
+      child: Semantics(
+        container: true,
+        child: FeCard(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(title, style: t.titleSmall),
+              const SizedBox(height: FeSpace.xxs),
+              Row(
                 children: [
-                  Text(title, style: t.bodyMedium),
-                  Text(body, style: t.bodySmall?.copyWith(color: secondary)),
+                  Icon(
+                    Icons.hourglass_empty_rounded,
+                    size: 14,
+                    color: c.textSecondary,
+                  ),
+                  const SizedBox(width: FeSpace.xxs),
+                  Flexible(
+                    child: Text(
+                      body,
+                      style: t.labelMedium?.copyWith(color: c.textSecondary),
+                    ),
+                  ),
                 ],
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

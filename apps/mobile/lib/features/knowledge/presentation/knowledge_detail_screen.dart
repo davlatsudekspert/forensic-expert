@@ -14,8 +14,6 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
-import '../../../domain/library/library_models.dart';
-import '../../../domain/ports/billing_ports.dart';
 import '../../../domain/professional/review_models.dart';
 import '../../../domain/referral/share_text.dart';
 import '../../common/favorite_button.dart';
@@ -32,10 +30,7 @@ import '../knowledge_strings.dart';
 
 /// Bilim yozuvi sahifasi.
 ///
-/// Paywall qoidasi: nom, status, ogohlantirishlar, **cheklovlar va xavfsizlik**
-/// (cheklov, cross-reactivity, xavflar, «skrining ≠ tasdiqlash»), provenance
-/// va manbalar hech qachon yopilmaydi. Lifetime’siz faqat tuzilgan
-/// tafsilotlar va boshqa claim’lar yopiladi.
+/// Hamma bo‘lim hamma foydalanuvchiga bepul va ochiq.
 class KnowledgeDetailScreen extends ConsumerWidget {
   const KnowledgeDetailScreen({super.key, required this.entryId});
 
@@ -54,12 +49,6 @@ class KnowledgeDetailScreen extends ConsumerWidget {
         body: FeEmptyState(icon: Icons.inbox_outlined, body: l.knowledgeEmpty),
       );
     }
-    final unlocked =
-        e.access == EntryAccess.free ||
-        AccessPolicy.unlocks(
-          ProductFeature.verifiedReferences,
-          ref.watch(accessProvider),
-        );
     // Bir xil manba jumlasi sahifada bir marta: claim (status va dalil
     // darajasi bilan) tuzilgan izohdan ustun; retsept qadami esa claim’dan.
     final recipeSteps = {
@@ -108,7 +97,7 @@ class KnowledgeDetailScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(e.name.resolve(lang)),
+        title: FeAppBarTitle(e.name.resolve(lang)),
         actions: [
           ShareButton(
             text: (l) => recordShareText(
@@ -144,7 +133,10 @@ class KnowledgeDetailScreen extends ConsumerWidget {
                     const SizedBox(height: FeSpace.xs),
                   ],
                   if (e.status != ScientificStatus.verified) ...[
-                    const UnverifiedBanner(),
+                    const Align(
+                      alignment: AlignmentDirectional.centerStart,
+                      child: UnverifiedBanner(),
+                    ),
                     const SizedBox(height: FeSpace.sm),
                   ],
                   if (e.kind == KnowledgeKind.screeningTest) ...[
@@ -186,10 +178,7 @@ class KnowledgeDetailScreen extends ConsumerWidget {
                         child: ClaimCard(claim: x),
                       ),
                   ],
-                  if (!unlocked) ...[
-                    const SizedBox(height: FeSpace.md),
-                    const LockedContentCard(key: Key('knowledge.locked')),
-                  ] else ...[
+                  ...[
                     if (e.recipe case final r?)
                       _RecipeSection(recipe: r, entry: e),
                     if (e.screening case final s?)
@@ -207,7 +196,7 @@ class KnowledgeDetailScreen extends ConsumerWidget {
                   ],
                   ScientificImageGallery(entityId: e.id),
                   RelatedSection(entityId: e.id),
-                  if (unlocked) TemplateCoverageCard(entry: e),
+                  TemplateCoverageCard(entry: e),
                   FeSectionHeader(l.knowledgeSources),
                   if (e.allSources.isEmpty)
                     Text(
@@ -261,7 +250,6 @@ class _Header extends StatelessWidget {
             runSpacing: FeSpace.xxs,
             children: [
               ReviewStatusBadge(status: entry.status),
-              AccessBadge(access: entry.access),
               StatusChip(
                 icon: Icons.category_outlined,
                 label: entry.method != null
@@ -452,7 +440,9 @@ class _NoteCard extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.only(left: FeSpace.sm),
                 child: localized
-                    ? Text(note.resolve(lang), style: t.bodyMedium)
+                    ? (note.kind == 'ghs'
+                          ? _GhsNoteText(text: note.resolve(lang))
+                          : Text(note.resolve(lang), style: t.bodyMedium))
                     // Manbadan asl izoh: tarjima birinchi, asl «Asl matn».
                     : LocalizedContentText(
                         kind: ContentTextKind.entityNote,
@@ -481,6 +471,66 @@ class _NoteCard extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+/// GHS izohidagi ehtiyot choralari P-kodlari (masalan, 25 ta) uzun ro‘yxat
+/// bo‘lib turmasin: xavf bayonotlari (H) va piktogrammalar ko‘rinadi,
+/// P-kodlar «Batafsil» ostida yig‘ilgan.
+(String, List<String>)? splitGhsPCodes(String text) {
+  final m = RegExp(
+    r'\s*[^.;]*\(P-[^)]*\)\s*:\s*((?:P\d{3}(?:\+P\d{3})*(?:,\s*)?)+)\.?\s*$',
+  ).firstMatch(text);
+  if (m == null) return null;
+  final codes = [
+    for (final c in m.group(1)!.split(RegExp(r',\s*')))
+      if (c.trim().isNotEmpty) c.trim(),
+  ];
+  if (codes.isEmpty) return null;
+  return (text.substring(0, m.start).trim(), codes);
+}
+
+class _GhsNoteText extends StatelessWidget {
+  const _GhsNoteText({required this.text});
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final t = Theme.of(context).textTheme;
+    final c = FeTheme.of(context);
+    final split = splitGhsPCodes(text);
+    if (split == null) return Text(text, style: t.bodyMedium);
+    final (summary, codes) = split;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(summary, style: t.bodyMedium),
+        Theme(
+          data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+          child: ExpansionTile(
+            key: const Key('reagent.ghs.pcodes'),
+            dense: true,
+            tilePadding: EdgeInsets.zero,
+            childrenPadding: const EdgeInsets.only(bottom: FeSpace.xs),
+            expandedAlignment: AlignmentDirectional.centerStart,
+            visualDensity: VisualDensity.compact,
+            title: Text(
+              l.ghsPCodesDetails(codes.length),
+              style: t.labelLarge?.copyWith(color: c.accent),
+            ),
+            children: [
+              Text(
+                codes.join(', '),
+                style: FeThemeBuilder.numeric(t.bodySmall!)
+                    .copyWith(color: c.textSecondary),
+              ),
+            ],
+          ),
+        ),
+      ],
     );
   }
 }

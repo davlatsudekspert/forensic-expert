@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 
@@ -24,10 +22,7 @@ void main() {
       size: const Size(390, 1400),
       pixelRatio: 1.5,
       testFixtures: false,
-      overrides: [
-        ...pilot.overrides,
-        entitlementServiceProvider.overrideWithValue(FakeStore(owned: true)),
-      ],
+      overrides: [...pilot.overrides],
     );
     await settleImages(tester);
     if (scroll > 0) {

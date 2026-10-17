@@ -42,10 +42,6 @@ k("rdSourcesCount", "Count of sources / references.",
   "{count, plural, other{{count} ta manba}}", {"count": I})
 k("rdGlanceMore", "Suffix after a shortened list of names.",
   "+{count} more", "ещё {count}", "yana {count} ta", {"count": I})
-k("rdGlanceLockedHint", "Summary card when details are locked: what is behind Pro (counts only).",
-  "Details below open with Pro. Names, warnings and sources stay free.",
-  "Подробности ниже открываются в Pro. Названия, предупреждения и источники остаются бесплатными.",
-  "Quyidagi tafsilotlar Pro’da ochiladi. Nomlar, ogohlantirishlar va manbalar bepul qoladi.")
 k("rdJumpTo", "Semantics hint: tap to jump to a section on this page.",
   "Go to section", "Перейти к разделу", "Bo‘limga o‘tish")
 

@@ -6,6 +6,7 @@ import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../../domain/knowledge/method_short_name.dart';
 import '../../../domain/library/library_models.dart';
 import '../../evidence/presentation/localized_content.dart';
 
@@ -14,24 +15,22 @@ import '../../evidence/presentation/localized_content.dart';
 /// Yangi ma’lumot YO‘Q: faqat sahifadagi manbali bo‘limlardan (identifikatsiya
 /// claim’i, «Tahlil» graf bog‘lanishlari, konsentratsiya claim’lari, manbalar)
 /// nomlar va sonlar yig‘iladi. Har qator o‘sha bo‘limga olib boradi — iqtibos,
-/// holat va manba bo‘lim ichida. Tafsilot yopiq bo‘lsa — faqat sonlar
-/// (manbalar har doim ochiq).
+/// holat va manba bo‘lim ichida.
 class SubstanceGlanceCard extends ConsumerWidget {
   const SubstanceGlanceCard({
     super.key,
     required this.entry,
-    required this.unlocked,
     required this.onJump,
   });
 
   final LibraryEntry entry;
-  final bool unlocked;
 
   /// Sahifa ichidagi bo‘limga o‘tish (`analysis`, `identity`,
-  /// `reported_concentration`, `sources`, `locked`).
+  /// `reported_concentration`, `sources`).
   final ValueChanged<String> onJump;
 
   static const _maxNames = 3;
+  static const _maxChips = 5;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -62,6 +61,10 @@ class SubstanceGlanceCard extends ConsumerWidget {
       for (final id in a.allMethodIds)
         knowledge.byId(id)?.name.resolve(lang) ?? id,
     ];
+    // Usullar — qisqa nom chiplari (GC-MS, LC-MS/MS…); to‘liq nom «Tahlil»
+    // bo‘limida va semantik yorliqda.
+    final methodChips = <String>{for (final m in methods) methodShortName(m)}
+        .toList();
     // Kutubxonada yozuvi yo‘q metabolit — manbadagi nom (`metabolite_name`
     // tarjimasi bo‘lsa — u); UI tilida bo‘lmasa, qator oxirida ochiq belgi.
     final translations = ref.watch(contentTranslationsProvider);
@@ -92,7 +95,7 @@ class SubstanceGlanceCard extends ConsumerWidget {
 
     // (kalit, ikonka, sarlavha, qiymat, bo‘lim)
     final rows = <(String, IconData, String, String, String)>[
-      if (unlocked && formula != null)
+      if (formula != null)
         (
           'formula',
           Icons.science_outlined,
@@ -108,30 +111,28 @@ class SubstanceGlanceCard extends ConsumerWidget {
           'specimens',
           Icons.water_drop_outlined,
           l.rdGlanceSpecimens,
-          unlocked ? names(specimens) : l.rdGlanceRecords(specimens.length),
-          unlocked ? 'analysis' : 'locked',
+          names(specimens),
+          'analysis',
         ),
       if (methods.isNotEmpty)
         (
           'methods',
           Icons.biotech_outlined,
           l.rdGlanceMethods,
-          unlocked ? names(methods) : l.rdGlanceRecords(methods.length),
-          unlocked ? 'analysis' : 'locked',
+          methods.join(FeGlyphs.listSeparator),
+          'analysis',
         ),
       if (metabolites.isNotEmpty)
         (
           'metabolites',
           Icons.subdirectory_arrow_right,
           l.rdGlanceMetabolites,
-          unlocked
-              ? [
-                  names(metabolites),
-                  for (final o in metaboliteOriginal)
-                    '(${l.trInOriginalLanguage(contentLanguageName(l, o))})',
-                ].join(' ')
-              : l.rdGlanceRecords(metabolites.length),
-          unlocked ? 'analysis' : 'locked',
+          [
+            names(metabolites),
+            for (final o in metaboliteOriginal)
+              '(${l.trInOriginalLanguage(contentLanguageName(l, o))})',
+          ].join(' '),
+          'analysis',
         ),
       if (concentrations > 0)
         (
@@ -139,7 +140,7 @@ class SubstanceGlanceCard extends ConsumerWidget {
           Icons.show_chart,
           l.rdGlanceConcentrations,
           l.rdGlanceRecords(concentrations),
-          unlocked ? 'reported_concentration' : 'locked',
+          'reported_concentration',
         ),
       (
         'sources',
@@ -172,7 +173,7 @@ class SubstanceGlanceCard extends ConsumerWidget {
           Padding(
             padding: const EdgeInsets.only(right: FeSpace.xs),
             child: Text(
-              unlocked ? l.rdGlanceNote : l.rdGlanceLockedHint,
+              l.rdGlanceNote,
               style: t.bodySmall?.copyWith(color: c.textSecondary),
             ),
           ),
@@ -183,7 +184,13 @@ class SubstanceGlanceCard extends ConsumerWidget {
               icon: icon,
               label: label,
               value: value,
-              locked: target == 'locked',
+              chips: key == 'methods'
+                  ? [
+                      ...methodChips.take(_maxChips),
+                      if (methodChips.length > _maxChips)
+                        l.rdGlanceMore(methodChips.length - _maxChips),
+                    ]
+                  : null,
               hint: l.rdJumpTo,
               onTap: () => onJump(target),
             ),
@@ -199,15 +206,19 @@ class _GlanceRow extends StatelessWidget {
     required this.icon,
     required this.label,
     required this.value,
-    required this.locked,
     required this.hint,
     required this.onTap,
+    this.chips,
   });
 
   final IconData icon;
   final String label;
+
+  /// To‘liq qiymat (ekran o‘quvchisi uchun ham).
   final String value;
-  final bool locked;
+
+  /// Berilsa — qiymat o‘rniga ixcham chiplar (to‘liq [value] semantikada).
+  final List<String>? chips;
   final String hint;
   final VoidCallback onTap;
 
@@ -215,9 +226,12 @@ class _GlanceRow extends StatelessWidget {
   Widget build(BuildContext context) {
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
+    final chips = this.chips;
     return Semantics(
       button: true,
       hint: hint,
+      label: chips == null ? null : '$label: $value',
+      excludeSemantics: chips != null,
       child: InkWell(
         onTap: onTap,
         borderRadius: BorderRadius.circular(FeRadius.sm),
@@ -239,24 +253,61 @@ class _GlanceRow extends StatelessWidget {
                         label,
                         style: t.labelMedium?.copyWith(color: c.textSecondary),
                       ),
-                      Text(
-                        value,
-                        style: t.bodyMedium?.copyWith(
-                          fontWeight: FontWeight.w600,
+                      if (chips == null)
+                        Text(
+                          value,
+                          style: t.bodyMedium?.copyWith(
+                            fontWeight: FontWeight.w600,
+                          ),
+                        )
+                      else
+                        Padding(
+                          padding: const EdgeInsets.only(top: FeSpace.xxs),
+                          child: Wrap(
+                            spacing: 6,
+                            runSpacing: 6,
+                            children: [
+                              for (final chip in chips) _MiniChip(label: chip),
+                            ],
+                          ),
                         ),
-                      ),
                     ],
                   ),
                 ),
-                Icon(
-                  locked ? Icons.lock_outline : Icons.chevron_right,
-                  size: 18,
-                  color: c.textSecondary,
-                ),
+                Icon(Icons.chevron_right, size: 18, color: c.textSecondary),
                 const SizedBox(width: FeSpace.xxs),
               ],
             ),
           ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Bosilmaydigan ixcham belgi (qator o‘zi bosiladi).
+class _MiniChip extends StatelessWidget {
+  const _MiniChip({required this.label});
+
+  final String label;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = FeTheme.of(context);
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        color: c.surface,
+        borderRadius: BorderRadius.circular(FeRadius.sm),
+        border: Border.all(color: c.border),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+        child: Text(
+          label,
+          maxLines: 2,
+          overflow: TextOverflow.ellipsis,
+          style: Theme.of(context).textTheme.labelLarge
+              ?.copyWith(fontWeight: FontWeight.w600, height: 1.2),
         ),
       ),
     );

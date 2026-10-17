@@ -259,7 +259,6 @@ void main() {
           '/rest/v1/rpc/admin_stats' => const RestResponse(200, {
             'users': {'total': 10, 'new_today': 1, 'new_7d': 3, 'new_30d': 9},
             'modes': {'students': null, 'experts': null},
-            'tiers': {'pro': 2, 'free': 8},
             'active': {'d7': 4, 'd30': 6},
             'support': {
               'awaiting': 3,
@@ -340,7 +339,6 @@ void main() {
       expect(t.calls.last.body, {
         'p_search': 'e@x',
         'p_role': 'admin',
-        'p_tier': null,
         'p_limit': AdminUserFilter.pageSize,
         'p_offset': 25,
       });

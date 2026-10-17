@@ -69,7 +69,7 @@ class VerificationScreen extends ConsumerWidget {
     ];
 
     return Scaffold(
-      appBar: AppBar(title: Text(l.verifTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.verifTitle)),
       body: SafeArea(
         child: ListView(
           key: const Key('verification.list'),
@@ -299,7 +299,7 @@ class _CredentialUploadScreenState
         .isConfigured;
     final pending = ref.watch(pendingCredentialsProvider);
     return Scaffold(
-      appBar: AppBar(title: Text(l.credUploadTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.credUploadTitle)),
       body: SafeArea(
         child: ListView(
           key: const Key('credentials.list'),

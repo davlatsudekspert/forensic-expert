@@ -19,7 +19,7 @@ class LanguagePickerScreen extends ConsumerWidget {
     final l = AppLocalizations.of(context);
     final current = ref.watch(settingsControllerProvider).locale;
     return Scaffold(
-      appBar: AppBar(title: Text(l.settingsLanguage)),
+      appBar: AppBar(title: FeAppBarTitle(l.settingsLanguage)),
       body: SafeArea(
         child: ListView(
           children: [
@@ -88,7 +88,7 @@ class ModePickerScreen extends ConsumerWidget {
       ),
     ];
     return Scaffold(
-      appBar: AppBar(title: Text(l.settingsMode)),
+      appBar: AppBar(title: FeAppBarTitle(l.settingsMode)),
       body: SafeArea(
         child: FeScrollableBody(
           padding: const EdgeInsets.symmetric(vertical: FeSpace.md),

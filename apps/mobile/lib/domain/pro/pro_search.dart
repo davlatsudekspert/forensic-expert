@@ -1,4 +1,4 @@
-/// Professional qidiruv (Pro): faset filtrlar, aniq/ibora qidiruvi va teskari
+/// Professional qidiruv: faset filtrlar, aniq/ibora qidiruvi va teskari
 /// (reverse) qidiruvlar.
 ///
 /// Hammasi faqat kontent paketidagi **mavjud** bog‘lanishlar va claim’lardan
@@ -279,7 +279,7 @@ int _evidenceRank(String? level) {
   return i < 0 ? 99 : i;
 }
 
-/// Pro indeks. Qurilmada, offline.
+/// Qidiruv indeksi. Qurilmada, offline.
 class ProSearchIndex {
   ProSearchIndex._(
     this.records,

@@ -15,4 +15,7 @@ abstract final class AppInfo {
   /// bir xil manzil). Sahifa manbasi: `docs/legal/privacy.html`.
   static const privacyPolicyUrl =
       'https://davlatsudekspert.github.io/forensic-expert-legal/';
+
+  /// Ko‘rinadigan aloqa (Apple 1.2): `docs/legal/privacy.html` dagi manzil.
+  static const supportEmail = 'davlatsudekspert@gmail.com';
 }

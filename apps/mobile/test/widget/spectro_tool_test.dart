@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pump_app.dart';
 
 /// 2026-10-09 spektrofotometriya: Buger–Lambert–Ber kalkulyatori (UI).
@@ -14,16 +12,13 @@ void main() {
   Future<void> open(
     WidgetTester tester, {
     String lang = 'uz',
-    bool owned = true,
     Size size = const Size(390, 844),
   }) => pumpApp(
     tester,
     settings: completedSettings(lang: lang),
     initialLocation: Routes.tool(id),
     size: size,
-    overrides: [
-      entitlementServiceProvider.overrideWithValue(FakeStore(owned: owned)),
-    ],
+    overrides: [],
   );
 
   Future<void> type(WidgetTester tester, String key, String v) async {
@@ -120,9 +115,12 @@ void main() {
     expect(find.text(uz.toolCalibrationName), findsWidgets);
   });
 
-  testWidgets('Pro bo‘lmasa — qulf kartasi', (tester) async {
-    await open(tester, owned: false);
-    expect(find.byKey(const Key('tool.lockedCard')), findsOneWidget);
+  testWidgets('kalkulyator hamma uchun ochiq — qulf kartasi yo‘q', (
+    tester,
+  ) async {
+    await open(tester);
+    expect(find.byKey(const Key('tool.lockedCard')), findsNothing);
+    expect(find.byKey(const Key('calc.calculate')), findsOneWidget);
   });
 
   testWidgets('320 dp ekranda toshib ketish yo‘q', (tester) async {

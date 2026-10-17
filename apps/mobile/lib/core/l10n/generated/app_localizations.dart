@@ -295,13 +295,13 @@ abstract class AppLocalizations {
   /// Home module.
   ///
   /// In en, this message translates to:
-  /// **'Substance Library'**
+  /// **'Substances'**
   String get moduleSubstances;
 
   /// Home module.
   ///
   /// In en, this message translates to:
-  /// **'Learn'**
+  /// **'Learning'**
   String get moduleLearn;
 
   /// Home module.
@@ -415,7 +415,7 @@ abstract class AppLocalizations {
   /// Settings row.
   ///
   /// In en, this message translates to:
-  /// **'Usage mode'**
+  /// **'Mode: student or professional'**
   String get settingsMode;
 
   /// Settings row showing content pack version.
@@ -1438,30 +1438,6 @@ abstract class AppLocalizations {
   /// **'The app version and the scientific database version are tracked separately.'**
   String get aboutVersions;
 
-  /// Banner.
-  ///
-  /// In en, this message translates to:
-  /// **'The App Store / Google Play is not connected in this build. Prices and purchases appear only when the store provides them.'**
-  String get storeNotConnected;
-
-  /// Button.
-  ///
-  /// In en, this message translates to:
-  /// **'Restore purchases'**
-  String get restorePurchases;
-
-  /// Snackbar.
-  ///
-  /// In en, this message translates to:
-  /// **'No active subscriptions to restore.'**
-  String get restoreNothing;
-
-  /// Subscription principle.
-  ///
-  /// In en, this message translates to:
-  /// **'Disclaimers, limitations and sources are never behind a paywall.'**
-  String get subscriptionSafetyNote;
-
   /// Module hub section.
   ///
   /// In en, this message translates to:
@@ -1557,54 +1533,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Change jurisdiction'**
   String get detailChangeJurisdiction;
-
-  /// Paywall title.
-  ///
-  /// In en, this message translates to:
-  /// **'Plans'**
-  String get purchaseTitle;
-
-  /// Locked-content button.
-  ///
-  /// In en, this message translates to:
-  /// **'See plans'**
-  String get purchaseCta;
-
-  /// Tier name.
-  ///
-  /// In en, this message translates to:
-  /// **'Free'**
-  String get purchaseFreeTitle;
-
-  /// Free tier summary.
-  ///
-  /// In en, this message translates to:
-  /// **'Core offline reference, search and basic calculators — no account required.'**
-  String get purchaseFreeBody;
-
-  /// Paywall note.
-  ///
-  /// In en, this message translates to:
-  /// **'Professional AI features become available only when the AI service is connected; limits will be stated before purchase.'**
-  String get purchaseAiNote;
-
-  /// Snackbar after restore.
-  ///
-  /// In en, this message translates to:
-  /// **'Your subscription is active'**
-  String get purchaseOwned;
-
-  /// Purchase tapped while store unavailable.
-  ///
-  /// In en, this message translates to:
-  /// **'Purchases are not available in this build.'**
-  String get purchaseUnavailableSnack;
-
-  /// Plan name.
-  ///
-  /// In en, this message translates to:
-  /// **'Free'**
-  String get accessFree;
 
   /// Home review notice.
   ///
@@ -1786,36 +1714,6 @@ abstract class AppLocalizations {
   /// **'No national legal content has been loaded for {name} yet.'**
   String legalNoNational(String name);
 
-  /// Locked content title.
-  ///
-  /// In en, this message translates to:
-  /// **'Included in Student Pro and Professional Pro'**
-  String get lockedTitle;
-
-  /// Locked content body.
-  ///
-  /// In en, this message translates to:
-  /// **'Names, warnings and sources stay open. Scientific details and the jurisdiction layer unlock with a paid plan.'**
-  String get lockedBody;
-
-  /// Access chip on a free entry (permanently free, not a time-limited demo).
-  ///
-  /// In en, this message translates to:
-  /// **'Free'**
-  String get freeDemoBadge;
-
-  /// Badge.
-  ///
-  /// In en, this message translates to:
-  /// **'Pro'**
-  String get lockedBadge;
-
-  /// Search.
-  ///
-  /// In en, this message translates to:
-  /// **'{count} more results with a paid plan'**
-  String searchMoreLocked(int count);
-
   /// No real courses yet.
   ///
   /// In en, this message translates to:
@@ -1834,53 +1732,11 @@ abstract class AppLocalizations {
   /// **'The scientific database is not installed in this build.'**
   String get libraryNotInstalled;
 
-  /// Store pending.
-  ///
-  /// In en, this message translates to:
-  /// **'Purchase is waiting for confirmation from the store.'**
-  String get purchasePending;
-
-  /// Purchase failed.
-  ///
-  /// In en, this message translates to:
-  /// **'The purchase was not completed.'**
-  String get purchaseFailed;
-
-  /// Purchase cancelled.
-  ///
-  /// In en, this message translates to:
-  /// **'Purchase cancelled.'**
-  String get purchaseCancelled;
-
-  /// Snackbar.
-  ///
-  /// In en, this message translates to:
-  /// **'Subscription activated. Thank you!'**
-  String get purchaseSuccess;
-
   /// Brand status.
   ///
   /// In en, this message translates to:
   /// **'Name and logo: trademark clearance pending.'**
   String get aboutTrademarkPending;
-
-  /// Diagnostics.
-  ///
-  /// In en, this message translates to:
-  /// **'Subscription: none confirmed by the store'**
-  String get diagPurchaseNone;
-
-  /// Diagnostics.
-  ///
-  /// In en, this message translates to:
-  /// **'Subscription: confirmed by the store only — server verification not connected (release blocker)'**
-  String get diagPurchaseStore;
-
-  /// Diagnostics.
-  ///
-  /// In en, this message translates to:
-  /// **'Subscription: verified by the server'**
-  String get diagPurchaseServer;
 
   /// Scientific status: draft, not yet submitted for review.
   ///
@@ -2014,7 +1870,7 @@ abstract class AppLocalizations {
   /// **'Sourced statements'**
   String get knowledgeStatements;
 
-  /// Section: limitations and safety (never paywalled).
+  /// Section: limitations and safety (always open).
   ///
   /// In en, this message translates to:
   /// **'Limitations & safety'**
@@ -2137,7 +1993,7 @@ abstract class AppLocalizations {
   /// Permanent screening disclaimer.
   ///
   /// In en, this message translates to:
-  /// **'SCREENING RESULT ≠ CONFIRMED IDENTIFICATION. A positive screen is presumptive and requires a validated confirmatory method.'**
+  /// **'A screening result is not a confirmed identification. A positive screen is presumptive and requires a validated confirmatory method.'**
   String get screeningBanner;
 
   /// Screening field.
@@ -2737,13 +2593,13 @@ abstract class AppLocalizations {
   /// AI experience toggle.
   ///
   /// In en, this message translates to:
-  /// **'Short answer'**
+  /// **'Short'**
   String get aiExperienceProfessional;
 
   /// AI experience toggle.
   ///
   /// In en, this message translates to:
-  /// **'Explain it to me'**
+  /// **'Detailed'**
   String get aiExperienceTutor;
 
   /// AI experience hint.
@@ -6151,7 +6007,7 @@ abstract class AppLocalizations {
   /// Dialog.
   ///
   /// In en, this message translates to:
-  /// **'Bookmarks, search history, recently viewed records and lesson progress will be deleted from this device only. The scientific database, your account and store subscriptions are not affected — use “Delete account” to delete the account.'**
+  /// **'Bookmarks, search history, recently viewed records and lesson progress will be deleted from this device only. The scientific database and your account are not affected — use “Delete account” to delete the account.'**
   String get deleteLocalDataBody;
 
   /// Button.
@@ -6165,216 +6021,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Local data deleted'**
   String get deleteLocalDataDone;
-
-  /// Tier name.
-  ///
-  /// In en, this message translates to:
-  /// **'Student Pro'**
-  String get tierStudentPro;
-
-  /// Tier name.
-  ///
-  /// In en, this message translates to:
-  /// **'Professional Pro'**
-  String get tierProfessionalPro;
-
-  /// Tier name.
-  ///
-  /// In en, this message translates to:
-  /// **'Institution'**
-  String get tierInstitution;
-
-  /// Badge.
-  ///
-  /// In en, this message translates to:
-  /// **'Current plan'**
-  String get tierCurrent;
-
-  /// Feature.
-  ///
-  /// In en, this message translates to:
-  /// **'Offline scientific database with safety warnings and sources'**
-  String get tierFreeF1;
-
-  /// Feature.
-  ///
-  /// In en, this message translates to:
-  /// **'Search and selected reference entries'**
-  String get tierFreeF2;
-
-  /// Feature.
-  ///
-  /// In en, this message translates to:
-  /// **'Basic calculators'**
-  String get tierFreeF3;
-
-  /// Feature.
-  ///
-  /// In en, this message translates to:
-  /// **'Full reference: substances, methods, reagents, forensic medicine, standards, jurisdictions'**
-  String get tierStudentF1;
-
-  /// Feature.
-  ///
-  /// In en, this message translates to:
-  /// **'All courses, quizzes, flashcards and exam practice'**
-  String get tierStudentF2;
-
-  /// Feature.
-  ///
-  /// In en, this message translates to:
-  /// **'Unlimited search results'**
-  String get tierStudentF3;
-
-  /// Feature.
-  ///
-  /// In en, this message translates to:
-  /// **'Everything in Student Pro'**
-  String get tierProF1;
-
-  /// Feature.
-  ///
-  /// In en, this message translates to:
-  /// **'Professional calculators and laboratory tools'**
-  String get tierProF2;
-
-  /// Feature.
-  ///
-  /// In en, this message translates to:
-  /// **'Analytical methods, research and evidence tools'**
-  String get tierProF3;
-
-  /// Feature.
-  ///
-  /// In en, this message translates to:
-  /// **'Professional AI features — when the AI service is connected'**
-  String get tierProF4;
-
-  /// Billing period.
-  ///
-  /// In en, this message translates to:
-  /// **'Monthly'**
-  String get periodMonthly;
-
-  /// Billing period.
-  ///
-  /// In en, this message translates to:
-  /// **'Yearly'**
-  String get periodYearly;
-
-  /// Billing period.
-  ///
-  /// In en, this message translates to:
-  /// **'Subscription'**
-  String get periodUnknown;
-
-  /// Price line.
-  ///
-  /// In en, this message translates to:
-  /// **'{price} · {period}'**
-  String offerPriceLine(String price, String period);
-
-  /// Button.
-  ///
-  /// In en, this message translates to:
-  /// **'Subscribe'**
-  String get offerSubscribe;
-
-  /// Note.
-  ///
-  /// In en, this message translates to:
-  /// **'Price is shown by the App Store / Google Play'**
-  String get offerPriceFromStore;
-
-  /// Apple/Google required disclosure.
-  ///
-  /// In en, this message translates to:
-  /// **'Subscriptions renew automatically until cancelled. Payment is charged to your App Store / Google Play account. You can cancel at least 24 hours before the end of the period in your store account settings.'**
-  String get subscriptionTerms;
-
-  /// Button.
-  ///
-  /// In en, this message translates to:
-  /// **'Manage subscription'**
-  String get manageSubscription;
-
-  /// Snackbar.
-  ///
-  /// In en, this message translates to:
-  /// **'Could not open the store subscription settings.'**
-  String get manageSubscriptionFailed;
-
-  /// Profile row.
-  ///
-  /// In en, this message translates to:
-  /// **'Plan'**
-  String get planLabel;
-
-  /// Profile row.
-  ///
-  /// In en, this message translates to:
-  /// **'Subscription status'**
-  String get subscriptionStateLabel;
-
-  /// Status.
-  ///
-  /// In en, this message translates to:
-  /// **'Active'**
-  String get stActive;
-
-  /// Status.
-  ///
-  /// In en, this message translates to:
-  /// **'Expired'**
-  String get stExpired;
-
-  /// Status.
-  ///
-  /// In en, this message translates to:
-  /// **'Payment issue — grace period'**
-  String get stGrace;
-
-  /// Status.
-  ///
-  /// In en, this message translates to:
-  /// **'Payment issue — access paused'**
-  String get stBillingRetry;
-
-  /// Status.
-  ///
-  /// In en, this message translates to:
-  /// **'Cancelled — active until {date}'**
-  String stCancelled(String date);
-
-  /// Status.
-  ///
-  /// In en, this message translates to:
-  /// **'Cancelled — active until the end of the period'**
-  String get stCancelledNoDate;
-
-  /// Status.
-  ///
-  /// In en, this message translates to:
-  /// **'Revoked by the store'**
-  String get stRevoked;
-
-  /// Status.
-  ///
-  /// In en, this message translates to:
-  /// **'Status unknown'**
-  String get stUnknown;
-
-  /// Status.
-  ///
-  /// In en, this message translates to:
-  /// **'No subscription'**
-  String get stNone;
-
-  /// Status detail.
-  ///
-  /// In en, this message translates to:
-  /// **'Renews or ends on {date}'**
-  String stRenewsOn(String date);
 
   /// Profile note.
   ///
@@ -6727,12 +6373,6 @@ abstract class AppLocalizations {
   /// Body.
   ///
   /// In en, this message translates to:
-  /// **'Deleting the account does not cancel an App Store / Google Play subscription. Cancel it in your store account settings to stop future charges.'**
-  String get deleteAccountStoreNote;
-
-  /// Body.
-  ///
-  /// In en, this message translates to:
   /// **'Data on this device (bookmarks, history) is a separate action: “Delete data on this device”.'**
   String get deleteAccountLocalNote;
 
@@ -6783,12 +6423,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Account'**
   String get accountSection;
-
-  /// Section.
-  ///
-  /// In en, this message translates to:
-  /// **'Subscription'**
-  String get subscriptionSection;
 
   /// Empty state.
   ///
@@ -7341,12 +6975,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Synchronisation between devices'**
   String get accountNeedSync;
-
-  /// Item.
-  ///
-  /// In en, this message translates to:
-  /// **'Subscriptions across devices'**
-  String get accountNeedSubscriptions;
 
   /// Item.
   ///
@@ -8643,30 +8271,6 @@ abstract class AppLocalizations {
   /// **'Pending'**
   String get referralStatPending;
 
-  /// Stat.
-  ///
-  /// In en, this message translates to:
-  /// **'FORENSIC Credits'**
-  String get referralStatCredits;
-
-  /// Pending credits line.
-  ///
-  /// In en, this message translates to:
-  /// **'{amount} credits awaiting confirmation'**
-  String referralCreditsPending(String amount);
-
-  /// Credits note (rewards not live).
-  ///
-  /// In en, this message translates to:
-  /// **'When paid services launch, eligible purchases by colleagues you invite may earn you FORENSIC Credits — {percent}% of the purchase value. Credits are an internal promotional bonus, not cash, and are not awarded for registration.'**
-  String referralCreditsFuture(String percent);
-
-  /// Credits note (rewards live).
-  ///
-  /// In en, this message translates to:
-  /// **'You receive FORENSIC Credits worth {percent}% of eligible purchases by colleagues you invite. Credits are confirmed after the refund period. They are an internal promotional bonus, not cash.'**
-  String referralCreditsActive(String percent);
-
   /// Privacy note.
   ///
   /// In en, this message translates to:
@@ -8919,12 +8523,6 @@ abstract class AppLocalizations {
   /// **'Open-access article (PubMed Central via Europe PMC). Opens in your device’s PDF viewer or browser.'**
   String get fullTextPdfNote;
 
-  /// Locked note.
-  ///
-  /// In en, this message translates to:
-  /// **'Downloading full-text PDFs is available with Pro.'**
-  String get fullTextPdfPro;
-
   /// Snackbar.
   ///
   /// In en, this message translates to:
@@ -8991,12 +8589,6 @@ abstract class AppLocalizations {
   /// **'Referrals'**
   String get adminReferrals;
 
-  /// Stat.
-  ///
-  /// In en, this message translates to:
-  /// **'Pro granted'**
-  String get adminProGrants;
-
   /// Section.
   ///
   /// In en, this message translates to:
@@ -9026,48 +8618,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Contains personal data (emails). Do not share screenshots.'**
   String get adminPrivacyNote;
-
-  /// Section.
-  ///
-  /// In en, this message translates to:
-  /// **'Give or remove Pro'**
-  String get adminGrantTitle;
-
-  /// Field.
-  ///
-  /// In en, this message translates to:
-  /// **'User email'**
-  String get adminEmail;
-
-  /// Action.
-  ///
-  /// In en, this message translates to:
-  /// **'Give Professional Pro'**
-  String get adminGrantPro;
-
-  /// Action.
-  ///
-  /// In en, this message translates to:
-  /// **'Remove'**
-  String get adminRevoke;
-
-  /// Result.
-  ///
-  /// In en, this message translates to:
-  /// **'Pro granted.'**
-  String get adminGranted;
-
-  /// Result.
-  ///
-  /// In en, this message translates to:
-  /// **'Access removed.'**
-  String get adminRevoked;
-
-  /// Result.
-  ///
-  /// In en, this message translates to:
-  /// **'No user with this email.'**
-  String get adminNotFound;
 
   /// Result.
   ///
@@ -9816,7 +9366,7 @@ abstract class AppLocalizations {
   /// Home: subtitle of the scientific library entry.
   ///
   /// In en, this message translates to:
-  /// **'Substances, methods, standards and references'**
+  /// **'Everything: substances, methods, standards, references'**
   String get homeLibraryBody;
 
   /// Home section: recently viewed, recent tools, favourites, recent searches.
@@ -10251,12 +9801,6 @@ abstract class AppLocalizations {
   /// **'Edit draft'**
   String get pubEditTitle;
 
-  /// Note.
-  ///
-  /// In en, this message translates to:
-  /// **'A paid subscription does not affect moderation.'**
-  String get pubPaidNote;
-
   /// Field error.
   ///
   /// In en, this message translates to:
@@ -10392,7 +9936,7 @@ abstract class AppLocalizations {
   /// Study mode title.
   ///
   /// In en, this message translates to:
-  /// **'Study mode'**
+  /// **'Practice'**
   String get studyTitle;
 
   /// Learn screen entry.
@@ -11382,18 +10926,6 @@ abstract class AppLocalizations {
   /// Stat card.
   ///
   /// In en, this message translates to:
-  /// **'Pro (server grants)'**
-  String get admStatPro;
-
-  /// Stat card.
-  ///
-  /// In en, this message translates to:
-  /// **'Free'**
-  String get admStatFree;
-
-  /// Stat card.
-  ///
-  /// In en, this message translates to:
   /// **'Requests awaiting reply'**
   String get admStatAwaiting;
 
@@ -11438,12 +10970,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Active = signed in, opened the app (device check-in) or asked the AI within the window.'**
   String get admActiveNote;
-
-  /// Definition of Pro count.
-  ///
-  /// In en, this message translates to:
-  /// **'Pro counts server grants only; store purchases are verified on the device.'**
-  String get admProNote;
 
   /// Chart title.
   ///
@@ -11600,24 +11126,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Moderators'**
   String get admRoleModerator;
-
-  /// Filter chip.
-  ///
-  /// In en, this message translates to:
-  /// **'Any plan'**
-  String get admTierAny;
-
-  /// Filter chip.
-  ///
-  /// In en, this message translates to:
-  /// **'Free'**
-  String get admTierFree;
-
-  /// Filter chip.
-  ///
-  /// In en, this message translates to:
-  /// **'Pro plan'**
-  String get admTierPro;
 
   /// Empty list.
   ///
@@ -11844,13 +11352,13 @@ abstract class AppLocalizations {
   /// Quick action.
   ///
   /// In en, this message translates to:
-  /// **'Study & quizzes'**
+  /// **'Learning'**
   String get homeActLearnTitle;
 
   /// Quick action hint.
   ///
   /// In en, this message translates to:
-  /// **'Flashcards, quizzes, exam practice'**
+  /// **'Courses, practice, class quiz'**
   String get homeActLearnBody;
 
   /// Quick action hint.
@@ -11949,18 +11457,6 @@ abstract class AppLocalizations {
   /// **'Estimated range'**
   String get calcEstimatedRange;
 
-  /// Locked calculator card title.
-  ///
-  /// In en, this message translates to:
-  /// **'Included in Expert Pro'**
-  String get calcLockedTitle;
-
-  /// Locked calculator card body.
-  ///
-  /// In en, this message translates to:
-  /// **'This calculator opens with the Expert Pro plan. Dilution and the concentration unit converter are free.'**
-  String get calcLockedBody;
-
   /// Note under LOD/LOQ result.
   ///
   /// In en, this message translates to:
@@ -12056,12 +11552,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'+{count} more'**
   String rdGlanceMore(int count);
-
-  /// Summary card when details are locked: what is behind Pro (counts only).
-  ///
-  /// In en, this message translates to:
-  /// **'Details below open with Pro. Names, warnings and sources stay free.'**
-  String get rdGlanceLockedHint;
 
   /// Semantics hint: tap to jump to a section on this page.
   ///
@@ -12909,43 +12399,13 @@ abstract class AppLocalizations {
   /// **'{count, plural, =1{1 scenario} other{{count} scenarios}}'**
   String courtScenarioCount(int count);
 
-  /// Pro features card title.
-  ///
-  /// In en, this message translates to:
-  /// **'Advanced preparation in {tier}'**
-  String courtProTitle(String tier);
-
-  /// Pro features card body.
-  ///
-  /// In en, this message translates to:
-  /// **'Full simulator (all scenarios), sequential role drills, AI analysis (coming soon), personal statistics and history. Q&A cards with sources are free for everyone.'**
-  String get courtProBody;
-
-  /// Small badge on Pro-only entries.
-  ///
-  /// In en, this message translates to:
-  /// **'Pro'**
-  String get courtProBadge;
-
-  /// AI analysis button label for free users.
-  ///
-  /// In en, this message translates to:
-  /// **'AI analysis (Pro)'**
-  String get courtAiPro;
-
   /// Screen-reader label of a score bar.
   ///
   /// In en, this message translates to:
   /// **'{criterion}: {score} of 2'**
   String courtScoreSemantics(String criterion, int score);
 
-  /// Simulator list note for free users.
-  ///
-  /// In en, this message translates to:
-  /// **'Free: basic scenarios. The other scenarios, role drills and statistics are in Pro.'**
-  String get courtSimFreeNote;
-
-  /// Pro: sequential role drill.
+  /// Sequential role drill.
   ///
   /// In en, this message translates to:
   /// **'Role drill'**
@@ -12975,7 +12435,7 @@ abstract class AppLocalizations {
   /// **'Role drill complete'**
   String get courtDrillDone;
 
-  /// Pro: statistics and history.
+  /// Statistics and history.
   ///
   /// In en, this message translates to:
   /// **'Statistics and history'**
@@ -13017,7 +12477,7 @@ abstract class AppLocalizations {
   /// **'Clear history'**
   String get courtStatsClear;
 
-  /// Pro: AI analysis of the answer.
+  /// AI analysis of the answer.
   ///
   /// In en, this message translates to:
   /// **'AI analysis'**
@@ -14103,13 +13563,13 @@ abstract class AppLocalizations {
   /// **'Based on the source (not a direct quotation)'**
   String get detailSourcedStatement;
 
-  /// Title of the Pro advanced search screen.
+  /// Title of the advanced search screen.
   ///
   /// In en, this message translates to:
   /// **'Advanced search'**
   String get proSearchTitle;
 
-  /// Chip on the search screen that opens the Pro advanced search.
+  /// Chip on the search screen that opens the advanced search.
   ///
   /// In en, this message translates to:
   /// **'Filters and reverse lookups'**
@@ -14120,18 +13580,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Narrow the offline pack by specimen, method, reagent, evidence level and more, or go from a specimen, method or reagent to the substances documented for it.'**
   String get proSearchIntro;
-
-  /// Paywall card title on the advanced search screen. {tier} is the plan name.
-  ///
-  /// In en, this message translates to:
-  /// **'Advanced search — {tier}'**
-  String proSearchLockedTitle(String tier);
-
-  /// Paywall card body on the advanced search screen.
-  ///
-  /// In en, this message translates to:
-  /// **'Filters (discipline, class, specimen, method, reagent, evidence, review status, jurisdiction, year), exact-phrase search and reverse lookups need a paid plan. The regular search stays available to everyone.'**
-  String get proSearchLockedBody;
 
   /// Hint of the advanced search text field.
   ///
@@ -14378,18 +13826,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Specimens: {s} · Presumptive tests: {p} · Confirmation: {c} · Limits: {l}'**
   String planSummary(int s, int p, int c, int l);
-
-  /// Paywall card title on the plan. {tier} is the plan name.
-  ///
-  /// In en, this message translates to:
-  /// **'Full analysis plan — {tier}'**
-  String planLockedTitle(String tier);
-
-  /// Paywall card body on the plan.
-  ///
-  /// In en, this message translates to:
-  /// **'The free preview shows the counts and the specimens. The paid plan adds presumptive tests with reagents, bench and confirmation steps, interferences, limits, the note for your conclusion and a copyable text with full citations.'**
-  String get planLockedBody;
 
   /// Plan section title.
   ///
@@ -15567,54 +15003,6 @@ abstract class AppLocalizations {
   /// **'Text that looks like case material is held for review automatically. Reports from three different users hide a post, or suspend a specialist badge, until an administrator decides. A post that works against the law is removed and the badge goes with it.'**
   String get qaRulesEnforceBody;
 
-  /// Admin panel button that gives the Student Pro tier to an e-mail.
-  ///
-  /// In en, this message translates to:
-  /// **'Grant Student Pro'**
-  String get adminGrantStudent;
-
-  /// Helper text under the e-mail field in the admin grant section.
-  ///
-  /// In en, this message translates to:
-  /// **'Enter the e-mail the person signed in with. The account must already exist; an invitation is not sent from here.'**
-  String get adminGrantHint;
-
-  /// Validation message for the admin grant e-mail field.
-  ///
-  /// In en, this message translates to:
-  /// **'This is not an e-mail address.'**
-  String get adminEmailInvalid;
-
-  /// Confirmation after granting, naming the tier that was given.
-  ///
-  /// In en, this message translates to:
-  /// **'Granted: {tier}'**
-  String adminGrantedTier(String tier);
-
-  /// Title of the confirmation dialog before revoking a grant.
-  ///
-  /// In en, this message translates to:
-  /// **'Remove access?'**
-  String get adminRevokeConfirmTitle;
-
-  /// Body of the confirmation dialog before revoking a grant.
-  ///
-  /// In en, this message translates to:
-  /// **'The person loses the paid sections at once. A purchase made in the store is not affected — only a grant given from here.'**
-  String get adminRevokeConfirmBody;
-
-  /// Name of the Student Pro tier in the admin panel.
-  ///
-  /// In en, this message translates to:
-  /// **'Student Pro'**
-  String get adminTierStudent;
-
-  /// Name of the Professional Pro tier in the admin panel.
-  ///
-  /// In en, this message translates to:
-  /// **'Professional Pro'**
-  String get adminTierProfessional;
-
   /// Note under a claim written in our own words, shown in the provenance sheet.
   ///
   /// In en, this message translates to:
@@ -15740,6 +15128,1842 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Evidence from the literature (in full)'**
   String get litClaimsTitle;
+
+  /// Analysis tab, section 1 heading.
+  ///
+  /// In en, this message translates to:
+  /// **'1. Tests (rapid / screening)'**
+  String get analysisS1Title;
+
+  /// Analysis tab, section 1 note.
+  ///
+  /// In en, this message translates to:
+  /// **'Quick presumptive tests: immunoassays, test strips. The result is preliminary only and must be confirmed by a confirmation method.'**
+  String get analysisS1Note;
+
+  /// Analysis tab, section 2 heading.
+  ///
+  /// In en, this message translates to:
+  /// **'2. Qualitative reactions (colour reagents)'**
+  String get analysisS2Title;
+
+  /// Analysis tab, section 2 note.
+  ///
+  /// In en, this message translates to:
+  /// **'Reagent, colour, comment, selectivity and false positives. Presumptive: it does not prove identity by itself.'**
+  String get analysisS2Note;
+
+  /// Analysis tab, section 3 heading.
+  ///
+  /// In en, this message translates to:
+  /// **'3. Quantification (GC-MS, LC-MS/MS, spectrophotometry)'**
+  String get analysisS3Title;
+
+  /// Analysis tab, section 3 note.
+  ///
+  /// In en, this message translates to:
+  /// **'Sample preparation, key parameters, LOD/LOQ (if the source gives them) and limitations. Numbers only as stated in the source; not a substitute for a validated laboratory method.'**
+  String get analysisS3Note;
+
+  /// Analysis tab, empty section.
+  ///
+  /// In en, this message translates to:
+  /// **'No sourced information for this section yet — a source is needed. Nothing is guessed.'**
+  String get analysisSectionEmpty;
+
+  /// Note under a claim statement that exists only in its source language (Uzbek) until the translation table is added.
+  ///
+  /// In en, this message translates to:
+  /// **'Translation pending — the original Uzbek text is shown'**
+  String get trPendingTranslation;
+
+  /// Visible support contact line; tapping opens the mail app.
+  ///
+  /// In en, this message translates to:
+  /// **'Contact: {email}'**
+  String contactLine(String email);
+
+  /// Title of the report screen and the profile row.
+  ///
+  /// In en, this message translates to:
+  /// **'Send a report'**
+  String get repTitle;
+
+  /// Subtitle of the profile row that opens the report form.
+  ///
+  /// In en, this message translates to:
+  /// **'Inappropriate content, a bug, advertising or anything else'**
+  String get repProfileHint;
+
+  /// Intro text on the report form.
+  ///
+  /// In en, this message translates to:
+  /// **'Tell us about inappropriate content, a bug or another problem. You can send a report without signing in.'**
+  String get repIntro;
+
+  /// Label of the report type dropdown.
+  ///
+  /// In en, this message translates to:
+  /// **'Type'**
+  String get repKindField;
+
+  /// Report type: complaint.
+  ///
+  /// In en, this message translates to:
+  /// **'Complaint'**
+  String get repKindComplaint;
+
+  /// Report type: inappropriate content.
+  ///
+  /// In en, this message translates to:
+  /// **'Inappropriate content'**
+  String get repKindInappropriate;
+
+  /// Report type: bug.
+  ///
+  /// In en, this message translates to:
+  /// **'Bug'**
+  String get repKindBug;
+
+  /// Report type: advertising or spam.
+  ///
+  /// In en, this message translates to:
+  /// **'Advertising'**
+  String get repKindAdvertising;
+
+  /// Report type: other.
+  ///
+  /// In en, this message translates to:
+  /// **'Other'**
+  String get repKindOther;
+
+  /// Label of the report text field.
+  ///
+  /// In en, this message translates to:
+  /// **'What happened?'**
+  String get repBody;
+
+  /// Helper text under the report text field.
+  ///
+  /// In en, this message translates to:
+  /// **'Do not write personal data, case numbers or patient information.'**
+  String get repBodyHint;
+
+  /// Validation message for a too short report.
+  ///
+  /// In en, this message translates to:
+  /// **'Write at least {min} characters.'**
+  String repBodyShort(int min);
+
+  /// Label of the optional contact field.
+  ///
+  /// In en, this message translates to:
+  /// **'E-mail for a reply (optional)'**
+  String get repContact;
+
+  /// Helper text under the optional contact field.
+  ///
+  /// In en, this message translates to:
+  /// **'If you are not signed in, leave an address if you want a reply.'**
+  String get repContactHint;
+
+  /// Privacy note under the report form.
+  ///
+  /// In en, this message translates to:
+  /// **'The text is stored only to review your report. To fight spam, an irreversible hash of the device or network address is kept; the address itself is not.'**
+  String get repPrivacy;
+
+  /// Send button.
+  ///
+  /// In en, this message translates to:
+  /// **'Send'**
+  String get repSend;
+
+  /// Confirmation after sending a report.
+  ///
+  /// In en, this message translates to:
+  /// **'Your report was sent. Thank you.'**
+  String get repSent;
+
+  /// Server rejected the report as invalid.
+  ///
+  /// In en, this message translates to:
+  /// **'Check the text and try again.'**
+  String get repInvalid;
+
+  /// Rate limit message.
+  ///
+  /// In en, this message translates to:
+  /// **'You can send up to {n} reports per hour. Try again later.'**
+  String repRateLimited(int n);
+
+  /// Network or server error while sending a report.
+  ///
+  /// In en, this message translates to:
+  /// **'Not sent. Check your connection and try again.'**
+  String get repFailed;
+
+  /// Message for a suspended account.
+  ///
+  /// In en, this message translates to:
+  /// **'This account is suspended. Write to us by e-mail for help.'**
+  String get repSuspended;
+
+  /// Honest empty state when no backend is connected.
+  ///
+  /// In en, this message translates to:
+  /// **'The report service is not connected in this build. Write to us by e-mail.'**
+  String get repUnavailable;
+
+  /// Section with the signed-in user's own reports.
+  ///
+  /// In en, this message translates to:
+  /// **'My reports'**
+  String get repMine;
+
+  /// Report status: open.
+  ///
+  /// In en, this message translates to:
+  /// **'Under review'**
+  String get repStatusOpen;
+
+  /// Report status: resolved.
+  ///
+  /// In en, this message translates to:
+  /// **'Resolved'**
+  String get repStatusResolved;
+
+  /// Title of the rules acceptance screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Community rules'**
+  String get ctTitle;
+
+  /// Draft label on the rules acceptance screen.
+  ///
+  /// In en, this message translates to:
+  /// **'This text is a draft and must be checked by a lawyer before the public release.'**
+  String get ctDraft;
+
+  /// Zero-tolerance statement shown before accepting the rules.
+  ///
+  /// In en, this message translates to:
+  /// **'Abusive, hateful, violent, illegal or spam content is not allowed. Every post has «Report» and «Block author» buttons. Content that breaks the rules can be removed and the account suspended.'**
+  String get ctZeroTolerance;
+
+  /// Button that opens the Terms of Use draft.
+  ///
+  /// In en, this message translates to:
+  /// **'Terms of Use (draft)'**
+  String get ctOpenTerms;
+
+  /// Checkbox label.
+  ///
+  /// In en, this message translates to:
+  /// **'I have read the rules and accept them'**
+  String get ctAgree;
+
+  /// Accept button.
+  ///
+  /// In en, this message translates to:
+  /// **'Accept'**
+  String get ctAccept;
+
+  /// Decline button.
+  ///
+  /// In en, this message translates to:
+  /// **'Not now'**
+  String get ctDecline;
+
+  /// Error when accepting the rules failed.
+  ///
+  /// In en, this message translates to:
+  /// **'Not saved. Try again.'**
+  String get ctSaveFailed;
+
+  /// Title of the blocked authors screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Blocked authors'**
+  String get blkTitle;
+
+  /// Explains blocking.
+  ///
+  /// In en, this message translates to:
+  /// **'Posts of blocked authors are hidden from you. You are not shown who they are.'**
+  String get blkIntro;
+
+  /// Empty state of the blocked list.
+  ///
+  /// In en, this message translates to:
+  /// **'You have not blocked anyone.'**
+  String get blkEmpty;
+
+  /// Row title in the blocked list.
+  ///
+  /// In en, this message translates to:
+  /// **'Blocked author'**
+  String get blkItem;
+
+  /// Row subtitle: block date.
+  ///
+  /// In en, this message translates to:
+  /// **'since {date}'**
+  String blkSince(String date);
+
+  /// Unblock button.
+  ///
+  /// In en, this message translates to:
+  /// **'Unblock'**
+  String get blkUnblock;
+
+  /// Confirmation after unblocking.
+  ///
+  /// In en, this message translates to:
+  /// **'Unblocked.'**
+  String get blkUnblocked;
+
+  /// Block button on a post.
+  ///
+  /// In en, this message translates to:
+  /// **'Block author'**
+  String get blkAction;
+
+  /// Block confirmation title.
+  ///
+  /// In en, this message translates to:
+  /// **'Block this author?'**
+  String get blkConfirmTitle;
+
+  /// Block confirmation body.
+  ///
+  /// In en, this message translates to:
+  /// **'You will no longer see this author\'s questions and answers. You are not told who it is. You can undo this in the blocked list.'**
+  String get blkConfirmBody;
+
+  /// Confirmation after blocking.
+  ///
+  /// In en, this message translates to:
+  /// **'Author blocked.'**
+  String get blkDone;
+
+  /// Already blocked.
+  ///
+  /// In en, this message translates to:
+  /// **'This author is already blocked.'**
+  String get blkAlready;
+
+  /// Self block attempt.
+  ///
+  /// In en, this message translates to:
+  /// **'You cannot block yourself.'**
+  String get blkSelf;
+
+  /// Block or load failure.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not complete. Try again.'**
+  String get blkFailed;
+
+  /// Admin section tile title.
+  ///
+  /// In en, this message translates to:
+  /// **'Reports'**
+  String get admxNavReports;
+
+  /// Admin section tile subtitle with the open count.
+  ///
+  /// In en, this message translates to:
+  /// **'{n} open'**
+  String admxNavReportsHint(int n);
+
+  /// Admin reports screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Reports'**
+  String get admxReportsTitle;
+
+  /// Search hint in the admin reports list.
+  ///
+  /// In en, this message translates to:
+  /// **'Search by text or e-mail'**
+  String get admxReportsSearch;
+
+  /// Filter: open.
+  ///
+  /// In en, this message translates to:
+  /// **'Open'**
+  String get admxOpen;
+
+  /// Filter: resolved.
+  ///
+  /// In en, this message translates to:
+  /// **'Resolved'**
+  String get admxResolvedFilter;
+
+  /// Filter: all.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get admxAll;
+
+  /// Filter: any report type.
+  ///
+  /// In en, this message translates to:
+  /// **'All types'**
+  String get admxKindAny;
+
+  /// Link from the reports list to the existing Q&A moderation queue.
+  ///
+  /// In en, this message translates to:
+  /// **'Open Q&A moderation (posts reported by three people)'**
+  String get admxQaLink;
+
+  /// Empty admin reports list.
+  ///
+  /// In en, this message translates to:
+  /// **'No reports.'**
+  String get admxReportsEmpty;
+
+  /// Pagination.
+  ///
+  /// In en, this message translates to:
+  /// **'Load more'**
+  String get admxLoadMore;
+
+  /// Reporter was not signed in.
+  ///
+  /// In en, this message translates to:
+  /// **'Not signed in'**
+  String get admxAnonymous;
+
+  /// Contact given by the reporter.
+  ///
+  /// In en, this message translates to:
+  /// **'Contact: {value}'**
+  String admxContact(String value);
+
+  /// Target type of the report (technical code).
+  ///
+  /// In en, this message translates to:
+  /// **'About: {type}'**
+  String admxTarget(String type);
+
+  /// Admin note field.
+  ///
+  /// In en, this message translates to:
+  /// **'Note (admins only)'**
+  String get admxNoteLabel;
+
+  /// Save note button.
+  ///
+  /// In en, this message translates to:
+  /// **'Save note'**
+  String get admxNoteSave;
+
+  /// Confirmation.
+  ///
+  /// In en, this message translates to:
+  /// **'Note saved.'**
+  String get admxNoteSaved;
+
+  /// Resolve button.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark as resolved'**
+  String get admxResolve;
+
+  /// Reopen button.
+  ///
+  /// In en, this message translates to:
+  /// **'Reopen'**
+  String get admxReopen;
+
+  /// Confirmation.
+  ///
+  /// In en, this message translates to:
+  /// **'Report marked as resolved.'**
+  String get admxResolvedDone;
+
+  /// Confirmation.
+  ///
+  /// In en, this message translates to:
+  /// **'Report reopened.'**
+  String get admxReopened;
+
+  /// Generic admin action error.
+  ///
+  /// In en, this message translates to:
+  /// **'Action failed. Try again.'**
+  String get admxActionFailed;
+
+  /// Tooltip of the user actions button.
+  ///
+  /// In en, this message translates to:
+  /// **'Actions'**
+  String get admxActions;
+
+  /// Hint at the top of the user actions sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'Every action is checked by the server and written to the audit log.'**
+  String get admxActionsHint;
+
+  /// Reason field of the user actions sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'Reason'**
+  String get admxReason;
+
+  /// Helper text for the reason.
+  ///
+  /// In en, this message translates to:
+  /// **'At least 5 characters. Saved in the audit log.'**
+  String get admxReasonHint;
+
+  /// Validation.
+  ///
+  /// In en, this message translates to:
+  /// **'The reason must be at least 5 characters.'**
+  String get admxReasonShort;
+
+  /// Cancel button.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get admxCancel;
+
+  /// Confirm button.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm'**
+  String get admxConfirm;
+
+  /// Shown instead of actions when the admin opens their own row.
+  ///
+  /// In en, this message translates to:
+  /// **'You cannot change your own role or suspend your own account.'**
+  String get admxSelfNote;
+
+  /// Grant the publication_moderator role.
+  ///
+  /// In en, this message translates to:
+  /// **'Make publication moderator'**
+  String get admxModeratorGrant;
+
+  /// Revoke the publication_moderator role.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove moderator role'**
+  String get admxModeratorRemove;
+
+  /// Revoke identity_admin.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove admin role'**
+  String get admxRemoveAdmin;
+
+  /// Dialog title.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove admin role?'**
+  String get admxRemoveAdminTitle;
+
+  /// Dialog body.
+  ///
+  /// In en, this message translates to:
+  /// **'This person loses access to the admin panel at once. The last admin cannot be removed. A scientific reviewer role is separate and is not changed here.'**
+  String get admxRemoveAdminBody;
+
+  /// Shown instead of the suspend button for admins.
+  ///
+  /// In en, this message translates to:
+  /// **'An admin account cannot be suspended.'**
+  String get admxAdminNotSuspendable;
+
+  /// Suspend button.
+  ///
+  /// In en, this message translates to:
+  /// **'Suspend account'**
+  String get admxSuspend;
+
+  /// Restore button.
+  ///
+  /// In en, this message translates to:
+  /// **'Restore account'**
+  String get admxRestore;
+
+  /// Dialog title.
+  ///
+  /// In en, this message translates to:
+  /// **'Suspend this account?'**
+  String get admxSuspendTitle;
+
+  /// Dialog body.
+  ///
+  /// In en, this message translates to:
+  /// **'The person is signed out everywhere and cannot sign in again until you restore the account. The action is written to the audit log.'**
+  String get admxSuspendConfirmBody;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Role granted.'**
+  String get admxRoleGranted;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Role removed.'**
+  String get admxRoleRevoked;
+
+  /// Result: already in that state.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing changed.'**
+  String get admxNoChange;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'User not found.'**
+  String get admxUserNotFound;
+
+  /// Result: role not grantable in-app.
+  ///
+  /// In en, this message translates to:
+  /// **'This role cannot be granted from the app. The owner does it on the server.'**
+  String get admxRoleForbidden;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'The e-mail address is not confirmed.'**
+  String get admxEmailUnconfirmed;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'You cannot change your own admin role.'**
+  String get admxSelfAdmin;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'The last admin cannot be removed.'**
+  String get admxLastAdmin;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'An admin cannot be suspended.'**
+  String get admxCannotSuspendAdmin;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'You cannot suspend yourself.'**
+  String get admxCannotSuspendSelf;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Account suspended. Its sessions were closed.'**
+  String get admxSuspended;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Account restored.'**
+  String get admxRestored;
+
+  /// Section title of the extended statistics.
+  ///
+  /// In en, this message translates to:
+  /// **'Roles, reports and objects'**
+  String get admxExtTitle;
+
+  /// Stat label.
+  ///
+  /// In en, this message translates to:
+  /// **'Admins'**
+  String get admxStatAdmins;
+
+  /// Stat label.
+  ///
+  /// In en, this message translates to:
+  /// **'Moderators'**
+  String get admxStatModerators;
+
+  /// Stat label.
+  ///
+  /// In en, this message translates to:
+  /// **'Suspended'**
+  String get admxStatSuspended;
+
+  /// Stat label.
+  ///
+  /// In en, this message translates to:
+  /// **'Open reports'**
+  String get admxStatReportsOpen;
+
+  /// Stat label.
+  ///
+  /// In en, this message translates to:
+  /// **'Resolved reports'**
+  String get admxStatReportsResolved;
+
+  /// Stat label.
+  ///
+  /// In en, this message translates to:
+  /// **'Q&A questions'**
+  String get admxStatQaQuestions;
+
+  /// Stat label.
+  ///
+  /// In en, this message translates to:
+  /// **'Q&A answers'**
+  String get admxStatQaAnswers;
+
+  /// Stat label.
+  ///
+  /// In en, this message translates to:
+  /// **'In moderation'**
+  String get admxStatQaModeration;
+
+  /// Stat label.
+  ///
+  /// In en, this message translates to:
+  /// **'Blocks'**
+  String get admxStatBlocks;
+
+  /// Honest note: casebooks are not on the server.
+  ///
+  /// In en, this message translates to:
+  /// **'Casebooks: stored on the device, not counted.'**
+  String get admxCasebookNote;
+
+  /// Honest note: no real-time presence.
+  ///
+  /// In en, this message translates to:
+  /// **'Online now: not available (there is no activity tracking).'**
+  String get admxOnlineNote;
+
+  /// Section title.
+  ///
+  /// In en, this message translates to:
+  /// **'Downloads'**
+  String get admxStoresTitle;
+
+  /// Honest note about downloads.
+  ///
+  /// In en, this message translates to:
+  /// **'Downloads: the server cannot see them. Open the store consoles.'**
+  String get admxDownloadsNote;
+
+  /// Honest note about sales.
+  ///
+  /// In en, this message translates to:
+  /// **'Sales: 0 — there is no payment system.'**
+  String get admxSalesNote;
+
+  /// Button that opens App Store Connect.
+  ///
+  /// In en, this message translates to:
+  /// **'App Store Connect'**
+  String get admxOpenAsc;
+
+  /// Button that opens Google Play Console.
+  ///
+  /// In en, this message translates to:
+  /// **'Google Play Console'**
+  String get admxOpenPlay;
+
+  /// External link failure.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open the link.'**
+  String get admxOpenFailed;
+
+  /// Audit action label.
+  ///
+  /// In en, this message translates to:
+  /// **'Role changed from the panel'**
+  String get admActAdminRoleSet;
+
+  /// Audit action label.
+  ///
+  /// In en, this message translates to:
+  /// **'Account suspended'**
+  String get admActUserSuspended;
+
+  /// Audit action label.
+  ///
+  /// In en, this message translates to:
+  /// **'Account restored'**
+  String get admActUserRestored;
+
+  /// Audit action label.
+  ///
+  /// In en, this message translates to:
+  /// **'Report list viewed'**
+  String get admActReportsView;
+
+  /// Audit action label.
+  ///
+  /// In en, this message translates to:
+  /// **'Note on a report'**
+  String get admActReportNote;
+
+  /// Audit action label.
+  ///
+  /// In en, this message translates to:
+  /// **'Report resolved'**
+  String get admActReportResolved;
+
+  /// Audit action label.
+  ///
+  /// In en, this message translates to:
+  /// **'Report reopened'**
+  String get admActReportReopened;
+
+  /// Audit action label.
+  ///
+  /// In en, this message translates to:
+  /// **'First admin assigned (owner bootstrap)'**
+  String get admActAdminBootstrap;
+
+  /// Divider between email form and social sign-in buttons.
+  ///
+  /// In en, this message translates to:
+  /// **'or'**
+  String get socialOr;
+
+  /// Google sign-in button label (brand guideline wording).
+  ///
+  /// In en, this message translates to:
+  /// **'Continue with Google'**
+  String get socialContinueGoogle;
+
+  /// Apple sign-in button label (Apple HIG wording).
+  ///
+  /// In en, this message translates to:
+  /// **'Continue with Apple'**
+  String get socialContinueApple;
+
+  /// Error: Google/Apple sign-in failed or is unavailable on this device.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign-in with this provider is unavailable right now. Try again or use your email.'**
+  String get socialErrUnavailable;
+
+  /// Note under social buttons: continuing means accepting terms.
+  ///
+  /// In en, this message translates to:
+  /// **'By continuing you accept the Terms of Use and the Privacy Policy.'**
+  String get socialTermsNote;
+
+  /// Delete-account screen note for accounts created with Google/Apple (no password).
+  ///
+  /// In en, this message translates to:
+  /// **'This account was created with Google or Apple, so no password is needed. Confirm below to delete it.'**
+  String get deleteAccountSocialNote;
+
+  /// Delete-account screen note for Apple accounts: Apple re-confirmation step.
+  ///
+  /// In en, this message translates to:
+  /// **'This account was created with Apple, so no password is needed. After you confirm, Apple will ask you to verify it is you, and the app\'s access to your Apple ID will be revoked.'**
+  String get deleteAccountAppleNote;
+
+  /// Class quiz title.
+  ///
+  /// In en, this message translates to:
+  /// **'Class quiz'**
+  String get classQuizTitle;
+
+  /// Study hub card subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Live quiz run by your teacher: join with a code or QR'**
+  String get classQuizCardSubtitle;
+
+  /// Hub intro.
+  ///
+  /// In en, this message translates to:
+  /// **'The teacher shows a 6-digit code and QR on the screen. Students join with a nickname and answer each question before the timer ends.'**
+  String get classQuizIntro;
+
+  /// Demo adapter banner.
+  ///
+  /// In en, this message translates to:
+  /// **'Demo mode: data stays on this device only. A real class needs the server connection.'**
+  String get classDemoBanner;
+
+  /// Demo chip.
+  ///
+  /// In en, this message translates to:
+  /// **'DEMO'**
+  String get classDemoChip;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Join a class'**
+  String get classJoinSection;
+
+  /// Hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the 6-digit code from the teacher’s screen or scan the QR.'**
+  String get classJoinHint;
+
+  /// Join screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Join class'**
+  String get classJoinTitle;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Join'**
+  String get classJoinAction;
+
+  /// Field label.
+  ///
+  /// In en, this message translates to:
+  /// **'Class code'**
+  String get classCodeLabel;
+
+  /// Screen reader.
+  ///
+  /// In en, this message translates to:
+  /// **'Class code {code}'**
+  String classCodeSpoken(String code);
+
+  /// Field label.
+  ///
+  /// In en, this message translates to:
+  /// **'Nickname'**
+  String get classNickLabel;
+
+  /// Helper.
+  ///
+  /// In en, this message translates to:
+  /// **'2–20 characters. The teacher sees only this nickname — not your name or e-mail.'**
+  String get classNickHelper;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Scan QR'**
+  String get classScanAction;
+
+  /// Scan screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Scan class QR'**
+  String get classScanTitle;
+
+  /// Hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Point the camera at the QR on the teacher’s screen.'**
+  String get classScanHint;
+
+  /// Camera denied.
+  ///
+  /// In en, this message translates to:
+  /// **'Camera access is off. Allow it in Settings or enter the code by hand.'**
+  String get classScanPermission;
+
+  /// Camera unavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'The camera can’t be used here. Enter the code by hand.'**
+  String get classScanUnavailable;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter code by hand'**
+  String get classScanManual;
+
+  /// Resume card.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue: {topic}'**
+  String classResume(String topic);
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'For teachers'**
+  String get classTeacherSection;
+
+  /// Not a teacher note.
+  ///
+  /// In en, this message translates to:
+  /// **'The test is run by a teacher. The teacher role is granted by the FORENSIC EXPERT team on the server; ask us if you teach a class.'**
+  String get classNotTeacherNote;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Run a quiz'**
+  String get classNewAction;
+
+  /// Screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Run a quiz'**
+  String get classNewTitle;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Recent classes'**
+  String get classRecentSection;
+
+  /// Session subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'{code} · {status}'**
+  String classSessionLine(String code, String status);
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Waiting for students'**
+  String get classStatusLobby;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'In progress'**
+  String get classStatusRunning;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Finished'**
+  String get classStatusFinished;
+
+  /// Privacy note.
+  ///
+  /// In en, this message translates to:
+  /// **'The teacher sees only your nickname. Finished classes are deleted automatically after 30 days. Offensive nicknames can be reported and removed.'**
+  String get classPrivacyNote;
+
+  /// Sign-in card.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in to join'**
+  String get classSignInTitle;
+
+  /// Sign-in body.
+  ///
+  /// In en, this message translates to:
+  /// **'Your result is tied to your account on the server. Other students and the teacher only see your nickname.'**
+  String get classSignInBody;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in'**
+  String get classSignInAction;
+
+  /// Forbidden title.
+  ///
+  /// In en, this message translates to:
+  /// **'Teachers only'**
+  String get classTeacherOnlyTitle;
+
+  /// Forbidden body.
+  ///
+  /// In en, this message translates to:
+  /// **'This screen is available to accounts with the teacher role. The server enforces this.'**
+  String get classTeacherOnlyBody;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Topic'**
+  String get classTopicSection;
+
+  /// Empty topics.
+  ///
+  /// In en, this message translates to:
+  /// **'No question bank is available yet.'**
+  String get classNoTopics;
+
+  /// Topic subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} questions'**
+  String classQuestionsAvailable(int count);
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get classSettingsSection;
+
+  /// Slider label.
+  ///
+  /// In en, this message translates to:
+  /// **'Number of questions'**
+  String get classQuestionCount;
+
+  /// Slider label.
+  ///
+  /// In en, this message translates to:
+  /// **'Student limit'**
+  String get classStudentLimit;
+
+  /// Label.
+  ///
+  /// In en, this message translates to:
+  /// **'Time per question'**
+  String get classSecondsPerQuestion;
+
+  /// Segment.
+  ///
+  /// In en, this message translates to:
+  /// **'{seconds} s'**
+  String classSecondsShort(int seconds);
+
+  /// Screen reader.
+  ///
+  /// In en, this message translates to:
+  /// **'{seconds} seconds left'**
+  String classSecondsLeft(int seconds);
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Create class'**
+  String get classCreateAction;
+
+  /// Projector hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Open FORENSIC EXPERT → Class quiz and enter this code, or scan the QR:'**
+  String get classHostJoinHint;
+
+  /// Screen reader.
+  ///
+  /// In en, this message translates to:
+  /// **'QR code to join the class'**
+  String get classQrSemantics;
+
+  /// Counter.
+  ///
+  /// In en, this message translates to:
+  /// **'Joined: {joined} / {limit}'**
+  String classJoinedCount(int joined, int limit);
+
+  /// Empty lobby.
+  ///
+  /// In en, this message translates to:
+  /// **'Waiting for students to join…'**
+  String get classWaitingForStudents;
+
+  /// Reports.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} nickname report(s) — review the list'**
+  String classReportsCount(int count);
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Start'**
+  String get classStartAction;
+
+  /// Dialog title.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove from class?'**
+  String get classKickTitle;
+
+  /// Dialog body.
+  ///
+  /// In en, this message translates to:
+  /// **'“{nickname}” will be removed and cannot rejoin.'**
+  String classKickBody(String nickname);
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove'**
+  String get classKickAction;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get classCancel;
+
+  /// Header.
+  ///
+  /// In en, this message translates to:
+  /// **'Question {n} of {total}'**
+  String classQuestionOf(int n, int total);
+
+  /// Live stat.
+  ///
+  /// In en, this message translates to:
+  /// **'Answered: {count} of {total}'**
+  String classAnswered(int count, int total);
+
+  /// Live stat.
+  ///
+  /// In en, this message translates to:
+  /// **'{pct}% correct'**
+  String classCorrectPct(int pct);
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Leaderboard'**
+  String get classLeaderboard;
+
+  /// Empty.
+  ///
+  /// In en, this message translates to:
+  /// **'No scores yet.'**
+  String get classNoScoresYet;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Close question'**
+  String get classCloseQuestion;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Next question'**
+  String get classNextQuestion;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Finish quiz'**
+  String get classFinishAction;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'End quiz'**
+  String get classEndAction;
+
+  /// Dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'End the quiz now?'**
+  String get classEndTitle;
+
+  /// Dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Students will see their results. This can’t be undone.'**
+  String get classEndBody;
+
+  /// Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Quiz finished'**
+  String get classFinishedTitle;
+
+  /// Summary.
+  ///
+  /// In en, this message translates to:
+  /// **'{students} students · {questions} questions'**
+  String classFinishedSummary(int students, int questions);
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Hardest questions'**
+  String get classHardestTitle;
+
+  /// Empty.
+  ///
+  /// In en, this message translates to:
+  /// **'No answers recorded.'**
+  String get classNoAnswersYet;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Save / share results (CSV)'**
+  String get classExportCsv;
+
+  /// Share subject.
+  ///
+  /// In en, this message translates to:
+  /// **'Class quiz results'**
+  String get classCsvSubject;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get classDone;
+
+  /// Retention.
+  ///
+  /// In en, this message translates to:
+  /// **'The class is deleted automatically {days} days after it ends.'**
+  String classRetentionNote(int days);
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Try again'**
+  String get classRetry;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Leave'**
+  String get classExit;
+
+  /// Lobby.
+  ///
+  /// In en, this message translates to:
+  /// **'You’re in, {nickname}!'**
+  String classLobbyWelcome(String nickname);
+
+  /// Lobby.
+  ///
+  /// In en, this message translates to:
+  /// **'Wait for the teacher to start the quiz.'**
+  String get classLobbyWait;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose an answer.'**
+  String get classChooseAnswer;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Answer received. The result appears when the time is up.'**
+  String get classAnswerAccepted;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Time’s up. Checking the answer…'**
+  String get classTimeUpWaiting;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct! +{points} points'**
+  String classResultCorrect(int points);
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Not correct.'**
+  String get classResultWrong;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'No answer given.'**
+  String get classResultNoAnswer;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Wait for the teacher to open the next question.'**
+  String get classWaitNext;
+
+  /// Score.
+  ///
+  /// In en, this message translates to:
+  /// **'Score: {score}'**
+  String classScoreLine(int score);
+
+  /// Rank.
+  ///
+  /// In en, this message translates to:
+  /// **'Rank {rank} of {total}'**
+  String classRankLine(int rank, int total);
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'{correct} of {total} correct'**
+  String classCorrectOfTotal(int correct, int total);
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Top 5'**
+  String get classTopFive;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Questions to review'**
+  String get classMistakesTitle;
+
+  /// Empty.
+  ///
+  /// In en, this message translates to:
+  /// **'Every answer was correct. Well done!'**
+  String get classNoMistakes;
+
+  /// Label.
+  ///
+  /// In en, this message translates to:
+  /// **'Question {n}'**
+  String classQuestionNumber(int n);
+
+  /// Label.
+  ///
+  /// In en, this message translates to:
+  /// **'Your answer: {text}'**
+  String classYourAnswer(String text);
+
+  /// Label.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct answer: {text}'**
+  String classCorrectAnswer(String text);
+
+  /// Source.
+  ///
+  /// In en, this message translates to:
+  /// **'Source: {author}, {title}, p. {page}'**
+  String classSourceLine(String author, String title, String page);
+
+  /// Option tag.
+  ///
+  /// In en, this message translates to:
+  /// **'correct'**
+  String get classOptionCorrect;
+
+  /// Option tag.
+  ///
+  /// In en, this message translates to:
+  /// **'your answer, wrong'**
+  String get classOptionWrong;
+
+  /// Option tag.
+  ///
+  /// In en, this message translates to:
+  /// **'your choice'**
+  String get classOptionChosen;
+
+  /// Dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Report this nickname?'**
+  String get classReportTitle;
+
+  /// Dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'“{nickname}” will be sent to the teacher for review.'**
+  String classReportBody(String nickname);
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Report'**
+  String get classReportAction;
+
+  /// Report reason sent to the server.
+  ///
+  /// In en, this message translates to:
+  /// **'Inappropriate nickname'**
+  String get classReportReason;
+
+  /// Snackbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Report sent. Thank you.'**
+  String get classReportSent;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Class quiz will be available once the FORENSIC EXPERT server is connected.'**
+  String get classErrNotConfigured;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Please sign in first.'**
+  String get classErrNotSignedIn;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'No connection. Check the internet and try again.'**
+  String get classErrOffline;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Something went wrong on the server. Try again in a moment.'**
+  String get classErrServer;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'You don’t have access to this class.'**
+  String get classErrForbidden;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the 6-digit code.'**
+  String get classErrBadCode;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'No class with this code. Check it and try again.'**
+  String get classErrNotFound;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Too many attempts. Try again in an hour.'**
+  String get classErrRateLimited;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'You are the teacher of this class and can’t join it as a student.'**
+  String get classErrOwnSession;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'This quiz has already finished.'**
+  String get classErrFinished;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'The teacher removed you from this class.'**
+  String get classErrKicked;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'The quiz has already started — new students can’t join.'**
+  String get classErrAlreadyStarted;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'This class is full.'**
+  String get classErrFull;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Nickname must be 2–20 characters.'**
+  String get classErrNickLength;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'This nickname contains characters that aren’t allowed.'**
+  String get classErrNickChars;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Please choose a different nickname.'**
+  String get classErrNickBlocked;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Check the settings: 5–20 questions, 5–200 students, 15/30/45/60 seconds.'**
+  String get classErrInvalidSettings;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Too many open classes. Finish one first.'**
+  String get classErrTooManySessions;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'This topic has too few questions (at least 5 are needed).'**
+  String get classErrNotEnoughQuestions;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'That action isn’t possible right now.'**
+  String get classErrBadState;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Wait until at least one student has joined.'**
+  String get classErrNoParticipants;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'This question is already closed.'**
+  String get classErrNotCurrent;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Time is up — your answer was not counted.'**
+  String get classErrTimeOver;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'You have already answered this question.'**
+  String get classErrAlreadyAnswered;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Results will be available when the quiz ends.'**
+  String get classErrNotFinished;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Reason is too short.'**
+  String get classErrBadReason;
+
+  /// Short one-line status chip on a record page. Full meaning is unverifiedBanner (read by screen readers).
+  ///
+  /// In en, this message translates to:
+  /// **'Not yet expert-confirmed'**
+  String get unverifiedChip;
+
+  /// Short empty note under 'National methods and procedures' when legal rules exist.
+  ///
+  /// In en, this message translates to:
+  /// **'National methods are not loaded yet.'**
+  String get legalNationalMethodsEmpty;
+
+  /// Home card and screen title: teacher tools for the class quiz.
+  ///
+  /// In en, this message translates to:
+  /// **'Teacher panel'**
+  String get teacherPanelTitle;
+
+  /// Home card subtitle for users with the teacher role.
+  ///
+  /// In en, this message translates to:
+  /// **'Run a class quiz and get the results as CSV'**
+  String get teacherPanelHomeBody;
+
+  /// Home card subtitle for users without the teacher role.
+  ///
+  /// In en, this message translates to:
+  /// **'Join a class quiz with your teacher\'s code'**
+  String get teacherPanelHomeBodyStudent;
+
+  /// Intro line on the teacher panel.
+  ///
+  /// In en, this message translates to:
+  /// **'Three simple actions: run a quiz, see the results, and students join with a code.'**
+  String get teacherPanelIntro;
+
+  /// Teacher panel action: create and host a class quiz.
+  ///
+  /// In en, this message translates to:
+  /// **'Run a quiz'**
+  String get teacherRunTitle;
+
+  /// Teacher panel action subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick a topic — a 6-digit code and QR appear for the class'**
+  String get teacherRunBody;
+
+  /// Teacher panel action and screen title: past class quizzes with CSV export.
+  ///
+  /// In en, this message translates to:
+  /// **'Results and CSV'**
+  String get teacherResultsTitle;
+
+  /// Teacher panel action subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Past quizzes, leaderboard and a CSV file'**
+  String get teacherResultsBody;
+
+  /// Teacher panel action: the student join flow.
+  ///
+  /// In en, this message translates to:
+  /// **'Join a class (student)'**
+  String get teacherJoinTitle;
+
+  /// Teacher panel action subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'With the code or QR from the teacher'**
+  String get teacherJoinBody;
+
+  /// Subtitle of a disabled teacher action for users without the teacher role.
+  ///
+  /// In en, this message translates to:
+  /// **'Teacher role required — see the note below'**
+  String get teacherRoleNeeded;
+
+  /// Empty state of the teacher results list.
+  ///
+  /// In en, this message translates to:
+  /// **'No quizzes yet. Start with “Run a quiz” — the results will appear here.'**
+  String get teacherResultsEmpty;
+
+  /// Section heading at the end of a discipline page.
+  ///
+  /// In en, this message translates to:
+  /// **'Next steps'**
+  String get disciplineNextTitle;
+
+  /// Discipline page tile: opens search pre-filled with the discipline name.
+  ///
+  /// In en, this message translates to:
+  /// **'Search this discipline'**
+  String get disciplineSearchCta;
+
+  /// Subtitle of the discipline search tile.
+  ///
+  /// In en, this message translates to:
+  /// **'Across substances, methods and sources'**
+  String get disciplineSearchBody;
+
+  /// Heading of the three referral steps.
+  ///
+  /// In en, this message translates to:
+  /// **'How it works'**
+  String get referralHowTitle;
+
+  /// Referral step 1.
+  ///
+  /// In en, this message translates to:
+  /// **'You send your personal code or link to a colleague.'**
+  String get referralHow1;
+
+  /// Referral step 2.
+  ///
+  /// In en, this message translates to:
+  /// **'Your colleague creates a new account with that code.'**
+  String get referralHow2;
+
+  /// Referral step 3 (privacy).
+  ///
+  /// In en, this message translates to:
+  /// **'You see only totals — never names or personal data.'**
+  String get referralHow3;
+
+  /// Title of the empty published-articles list.
+  ///
+  /// In en, this message translates to:
+  /// **'No articles yet'**
+  String get pubEmptyTitle;
+
+  /// Body of the empty published-articles list.
+  ///
+  /// In en, this message translates to:
+  /// **'Be the first to share your experience: the “Submit an article” button is below. After moderation the article appears here.'**
+  String get pubEmptyBody;
+
+  /// Back-calculation warning when the measured concentration is zero.
+  ///
+  /// In en, this message translates to:
+  /// **'No ethanol in the sample (0): back-calculation cannot show the level at the time of the event — the ethanol may have been fully eliminated before sampling.'**
+  String get calcWarnZeroMeasured;
+
+  /// Collapsed section on a calculator page with the module id and version.
+  ///
+  /// In en, this message translates to:
+  /// **'Technical details'**
+  String get calcTechInfo;
+
+  /// Technical line inside the collapsed 'Technical details' section.
+  ///
+  /// In en, this message translates to:
+  /// **'Calculation module: {id}, version {version}'**
+  String calcTechModule(String id, String version);
+
+  /// Class quiz source line when the source has no page.
+  ///
+  /// In en, this message translates to:
+  /// **'Source: {author}, {title}'**
+  String classSourceLineNoPage(String author, String title);
+
+  /// Class quiz source line when the place is a chapter/section, not a page number.
+  ///
+  /// In en, this message translates to:
+  /// **'Source: {author}, {title}, {locator}'**
+  String classSourceLineLocator(String author, String title, String locator);
+
+  /// Search field above the grouped topic list (teacher, new class quiz).
+  ///
+  /// In en, this message translates to:
+  /// **'Search a topic or course'**
+  String get classTopicSearchHint;
+
+  /// Group title for topics without a course/subject in the question bank index.
+  ///
+  /// In en, this message translates to:
+  /// **'Other topics'**
+  String get classTopicGroupOther;
+
+  /// Topic search returned nothing.
+  ///
+  /// In en, this message translates to:
+  /// **'No matching topics.'**
+  String get classTopicNoMatch;
+
+  /// Label above the selected topic summary.
+  ///
+  /// In en, this message translates to:
+  /// **'Selected topic'**
+  String get classTopicSelected;
+
+  /// Number of topics in a course group.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} topics'**
+  String classTopicGroupCount(int count);
+
+  /// Collapsed list of GHS precautionary P-codes under a hazard note.
+  ///
+  /// In en, this message translates to:
+  /// **'Details: precautionary statements ({count} P-codes)'**
+  String ghsPCodesDetails(int count);
+
+  /// One note at the top of the study hub (replaces the repeated per-set text and disabled Exam buttons).
+  ///
+  /// In en, this message translates to:
+  /// **'Sets marked “Practice only” have no exam: their questions are generated automatically or lack an explanation or page in the source. Use Practice for them.'**
+  String get studyExamUnavailableHub;
+
+  /// Title of the single collapsible info box on the first practice question.
+  ///
+  /// In en, this message translates to:
+  /// **'About practice mode and options'**
+  String get studyQuizAboutPractice;
 }
 
 class _AppLocalizationsDelegate

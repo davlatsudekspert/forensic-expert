@@ -12,7 +12,6 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/learn/learn_models.dart';
-import '../../../domain/ports/billing_ports.dart';
 import '../../placeholder/presentation/in_development_view.dart';
 
 /// Student / Resident dashboard. Professional rejim bilan bir xil dizayn
@@ -53,10 +52,6 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
         .where((x) => data.completedLessons.contains(x.id))
         .length;
     final lessonById = {for (final x in lessons) x.id: x};
-    final unlockedAll = AccessPolicy.unlocks(
-      ProductFeature.learn,
-      ref.watch(accessProvider),
-    );
     final bookmarks = [for (final id in data.favorites) ?knowledge.byId(id)];
     // Eski namuna to‘plamlari production’da bo‘sh: plitkalar manbali
     // o‘quv rejimiga olib boradi.
@@ -64,7 +59,7 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
     final noCards = repo.flashcards().isEmpty;
 
     return Scaffold(
-      appBar: AppBar(title: Text(l.moduleLearn)),
+      appBar: AppBar(title: FeAppBarTitle(l.moduleLearn)),
       body: SafeArea(
         child: ListView(
           children: [
@@ -72,10 +67,48 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  FeSectionHeader(
-                    l.learnProgress,
-                    padding: const EdgeInsets.only(bottom: FeSpace.xs),
+                  const SizedBox(height: FeSpace.xs),
+                  // «Sinfda test» — O‘qish bo‘limining tepasida (Asosiydan
+                  // 2 bosish; ustozlar uchun — Asosiydagi «Ustoz paneli»).
+                  FeCard(
+                    key: const Key('learn.classQuiz'),
+                    onTap: () => context.push(Routes.classQuiz),
+                    child: Row(
+                      children: [
+                        DecoratedBox(
+                          decoration: BoxDecoration(
+                            color: c.accentContainer,
+                            borderRadius: BorderRadius.circular(FeRadius.md),
+                          ),
+                          child: SizedBox.square(
+                            dimension: 44,
+                            child: Icon(
+                              Icons.groups_2_outlined,
+                              color: c.accent,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: FeSpace.md),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(l.classQuizTitle, style: t.titleSmall),
+                              const SizedBox(height: 2),
+                              Text(
+                                l.classQuizCardSubtitle,
+                                style: t.bodySmall?.copyWith(
+                                  color: c.textSecondary,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Icon(Icons.chevron_right, color: c.textSecondary),
+                      ],
+                    ),
                   ),
+                  FeSectionHeader(l.learnProgress),
                   if (lessons.isEmpty)
                     FeEmptyState(
                       icon: Icons.insights_outlined,
@@ -157,9 +190,6 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
                   else
                     for (final course in courses)
                       () {
-                        final i = all.indexOf(course);
-                        final free =
-                            i < AccessPolicy.freeCourses || unlockedAll;
                         final courseDone = course.lessons
                             .where((x) => data.completedLessons.contains(x.id))
                             .length;
@@ -167,10 +197,7 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
                           padding: const EdgeInsets.only(bottom: FeSpace.xs),
                           child: FeCard(
                             key: Key('learn.course.${course.id}'),
-                            // Bepul demo: birinchi kurs(lar); qolganlari Lifetime.
-                            onTap: free
-                                ? () => _showLessons(context, course, lang)
-                                : () => context.push(Routes.purchase),
+                            onTap: () => _showLessons(context, course, lang),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -199,13 +226,6 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
                                       status: course.status,
                                       compact: true,
                                     ),
-                                    if (!free)
-                                      StatusChip(
-                                        key: Key('learn.locked.${course.id}'),
-                                        icon: Icons.lock_outline,
-                                        label: l.lockedBadge,
-                                        color: c.textSecondary,
-                                      ),
                                     if (courseDone == 0)
                                       StatusChip(
                                         icon: Icons.radio_button_unchecked,
@@ -365,6 +385,7 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
   void _showLessons(BuildContext context, Course course, String lang) {
     final l = AppLocalizations.of(context);
     showModalBottomSheet<void>(
+      useRootNavigator: true,
       context: context,
       showDragHandle: true,
       builder: (context) => Consumer(
@@ -430,7 +451,7 @@ class _ExamScreenState extends ConsumerState<ExamScreen> {
         .length;
 
     return Scaffold(
-      appBar: AppBar(title: Text(l.learnExam)),
+      appBar: AppBar(title: FeAppBarTitle(l.learnExam)),
       body: SafeArea(
         child: ListView(
           children: [
@@ -589,7 +610,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     final questions = ref.watch(learnRepositoryProvider).quiz();
 
     return Scaffold(
-      appBar: AppBar(title: Text(l.learnQuiz)),
+      appBar: AppBar(title: FeAppBarTitle(l.learnQuiz)),
       body: SafeArea(
         child: questions.isEmpty
             ? const AvailabilityStateView(kind: AvailabilityKind.noReviewedData)
@@ -719,7 +740,7 @@ class _FlashcardsScreenState extends ConsumerState<FlashcardsScreen> {
     final lang = Localizations.localeOf(context).languageCode;
     final cards = ref.watch(learnRepositoryProvider).flashcards();
     return Scaffold(
-      appBar: AppBar(title: Text(l.learnFlashcards)),
+      appBar: AppBar(title: FeAppBarTitle(l.learnFlashcards)),
       body: SafeArea(
         child: cards.isEmpty
             ? const AvailabilityStateView(kind: AvailabilityKind.noReviewedData)

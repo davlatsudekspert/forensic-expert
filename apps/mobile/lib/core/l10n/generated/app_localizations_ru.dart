@@ -116,7 +116,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get moduleLaboratory => 'Лаборатория';
 
   @override
-  String get moduleSubstances => 'Библиотека веществ';
+  String get moduleSubstances => 'Вещества';
 
   @override
   String get moduleLearn => 'Обучение';
@@ -179,7 +179,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get themeDark => 'Тёмное';
 
   @override
-  String get settingsMode => 'Режим использования';
+  String get settingsMode => 'Режим: студент или специалист';
 
   @override
   String get scientificDatabaseLabel => 'Научная база данных';
@@ -755,20 +755,6 @@ class AppLocalizationsRu extends AppLocalizations {
       'Версия приложения и версия научной базы данных учитываются раздельно.';
 
   @override
-  String get storeNotConnected =>
-      'В этой сборке App Store / Google Play не подключены. Цены и покупки появятся только из магазина.';
-
-  @override
-  String get restorePurchases => 'Восстановить покупки';
-
-  @override
-  String get restoreNothing => 'Нет активных подписок для восстановления.';
-
-  @override
-  String get subscriptionSafetyNote =>
-      'Предупреждения, ограничения и источники никогда не скрываются за подпиской.';
-
-  @override
   String get moduleHubTools => 'Инструменты раздела';
 
   @override
@@ -822,32 +808,6 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get detailChangeJurisdiction => 'Сменить юрисдикцию';
-
-  @override
-  String get purchaseTitle => 'Тарифы';
-
-  @override
-  String get purchaseCta => 'Посмотреть тарифы';
-
-  @override
-  String get purchaseFreeTitle => 'Бесплатно';
-
-  @override
-  String get purchaseFreeBody =>
-      'Базовый офлайн-справочник, поиск и основные калькуляторы — без аккаунта.';
-
-  @override
-  String get purchaseAiNote =>
-      'Профессиональные функции ИИ станут доступны только после подключения ИИ-сервиса; лимиты будут указаны до покупки.';
-
-  @override
-  String get purchaseOwned => 'Ваша подписка активна';
-
-  @override
-  String get purchaseUnavailableSnack => 'Покупки недоступны в этой сборке.';
-
-  @override
-  String get accessFree => 'Бесплатно';
 
   @override
   String get homePilotNotice =>
@@ -963,24 +923,6 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get lockedTitle => 'Входит в Student Pro и Professional Pro';
-
-  @override
-  String get lockedBody =>
-      'Названия, предупреждения и источники остаются открытыми. Научные данные и юрисдикционный слой открываются в платном тарифе.';
-
-  @override
-  String get freeDemoBadge => 'Бесплатно';
-
-  @override
-  String get lockedBadge => 'Pro';
-
-  @override
-  String searchMoreLocked(int count) {
-    return 'Ещё $count результатов в платном тарифе';
-  }
-
-  @override
   String get learnEmptyCourses =>
       'Курсы появятся после экспертной проверки учебного контента.';
 
@@ -992,30 +934,8 @@ class AppLocalizationsRu extends AppLocalizations {
       'В этой сборке научная база не установлена.';
 
   @override
-  String get purchasePending => 'Покупка ожидает подтверждения магазина.';
-
-  @override
-  String get purchaseFailed => 'Покупка не завершена.';
-
-  @override
-  String get purchaseCancelled => 'Покупка отменена.';
-
-  @override
-  String get purchaseSuccess => 'Подписка активирована. Спасибо!';
-
-  @override
   String get aboutTrademarkPending =>
       'Название и логотип: проверка товарного знака не завершена.';
-
-  @override
-  String get diagPurchaseNone => 'Подписка: магазин не подтвердил';
-
-  @override
-  String get diagPurchaseStore =>
-      'Подписка: подтверждена только магазином — серверная проверка не подключена (блокирует релиз)';
-
-  @override
-  String get diagPurchaseServer => 'Подписка: проверена сервером';
 
   @override
   String get statusDraft => 'Черновик';
@@ -1158,7 +1078,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get screeningBanner =>
-      'РЕЗУЛЬТАТ СКРИНИНГА ≠ ПОДТВЕРЖДЁННАЯ ИДЕНТИФИКАЦИЯ. Положительный скрининг предварителен и требует валидированного подтверждающего метода.';
+      'Результат скрининга — не подтверждённая идентификация. Положительный скрининг предварителен и требует валидированного подтверждающего метода.';
 
   @override
   String get screeningAnalyte => 'Аналит';
@@ -1487,7 +1407,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get aiExperienceProfessional => 'Коротко';
 
   @override
-  String get aiExperienceTutor => 'Объясните подробно';
+  String get aiExperienceTutor => 'Подробно';
 
   @override
   String get aiExperienceProfessionalHint =>
@@ -3357,132 +3277,13 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get deleteLocalDataBody =>
-      'Закладки, история поиска, недавно просмотренные записи и прогресс уроков будут удалены только с этого устройства. Научная база, аккаунт и подписки в магазине не затрагиваются — для удаления аккаунта используйте «Удалить аккаунт».';
+      'Закладки, история поиска, недавно просмотренные записи и прогресс уроков будут удалены только с этого устройства. Научная база и аккаунт не затрагиваются — для удаления аккаунта используйте «Удалить аккаунт».';
 
   @override
   String get deleteLocalDataConfirm => 'Удалить';
 
   @override
   String get deleteLocalDataDone => 'Локальные данные удалены';
-
-  @override
-  String get tierStudentPro => 'Student Pro';
-
-  @override
-  String get tierProfessionalPro => 'Professional Pro';
-
-  @override
-  String get tierInstitution => 'Организация';
-
-  @override
-  String get tierCurrent => 'Текущий тариф';
-
-  @override
-  String get tierFreeF1 =>
-      'Офлайн научная база с предупреждениями и источниками';
-
-  @override
-  String get tierFreeF2 => 'Поиск и избранные справочные записи';
-
-  @override
-  String get tierFreeF3 => 'Основные калькуляторы';
-
-  @override
-  String get tierStudentF1 =>
-      'Полный справочник: вещества, методы, реактивы, судебная медицина, стандарты, юрисдикции';
-
-  @override
-  String get tierStudentF2 =>
-      'Все курсы, тесты, карточки и подготовка к экзамену';
-
-  @override
-  String get tierStudentF3 => 'Поиск без ограничения результатов';
-
-  @override
-  String get tierProF1 => 'Всё из Student Pro';
-
-  @override
-  String get tierProF2 =>
-      'Профессиональные калькуляторы и лабораторные инструменты';
-
-  @override
-  String get tierProF3 =>
-      'Аналитические методы, исследования и инструменты доказательств';
-
-  @override
-  String get tierProF4 =>
-      'Профессиональные функции ИИ — после подключения ИИ-сервиса';
-
-  @override
-  String get periodMonthly => 'Ежемесячно';
-
-  @override
-  String get periodYearly => 'Ежегодно';
-
-  @override
-  String get periodUnknown => 'Подписка';
-
-  @override
-  String offerPriceLine(String price, String period) {
-    return '$price · $period';
-  }
-
-  @override
-  String get offerSubscribe => 'Оформить подписку';
-
-  @override
-  String get offerPriceFromStore => 'Цену показывает App Store / Google Play';
-
-  @override
-  String get subscriptionTerms =>
-      'Подписка продлевается автоматически, пока вы её не отмените. Оплата списывается с аккаунта App Store / Google Play. Отменить можно не позднее чем за 24 часа до конца периода в настройках аккаунта магазина.';
-
-  @override
-  String get manageSubscription => 'Управлять подпиской';
-
-  @override
-  String get manageSubscriptionFailed =>
-      'Не удалось открыть настройки подписки в магазине.';
-
-  @override
-  String get planLabel => 'Тариф';
-
-  @override
-  String get subscriptionStateLabel => 'Статус подписки';
-
-  @override
-  String get stActive => 'Активна';
-
-  @override
-  String get stExpired => 'Истекла';
-
-  @override
-  String get stGrace => 'Проблема с оплатой — льготный период';
-
-  @override
-  String get stBillingRetry => 'Проблема с оплатой — доступ приостановлен';
-
-  @override
-  String stCancelled(String date) {
-    return 'Отменена — действует до $date';
-  }
-
-  @override
-  String get stCancelledNoDate => 'Отменена — действует до конца периода';
-
-  @override
-  String get stRevoked => 'Отозвана магазином';
-
-  @override
-  String get stUnknown => 'Статус неизвестен';
-
-  @override
-  String get stNone => 'Нет подписки';
-
-  @override
-  String stRenewsOn(String date) {
-    return 'Продление или окончание: $date';
-  }
 
   @override
   String get accountOptionalNote =>
@@ -3681,10 +3482,6 @@ class AppLocalizationsRu extends AppLocalizations {
       'Аккаунт и связанные с ним данные на наших серверах (эл. почта, сессии входа, синхронизированные данные, записи о правах) будут удалены безвозвратно. Это действие нельзя отменить.';
 
   @override
-  String get deleteAccountStoreNote =>
-      'Удаление аккаунта не отменяет подписку App Store / Google Play. Отмените её в настройках аккаунта магазина, чтобы прекратить списания.';
-
-  @override
   String get deleteAccountLocalNote =>
       'Данные на этом устройстве (закладки, история) удаляются отдельно: «Удалить данные на этом устройстве».';
 
@@ -3712,9 +3509,6 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get accountSection => 'Аккаунт';
-
-  @override
-  String get subscriptionSection => 'Подписка';
 
   @override
   String get availNoDataTitle => 'Записей пока нет';
@@ -4009,9 +3803,6 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get accountNeedSync => 'Синхронизации между устройствами';
-
-  @override
-  String get accountNeedSubscriptions => 'Подписок на нескольких устройствах';
 
   @override
   String get accountNeedCloudAi => 'Облачного ИИ (после подключения)';
@@ -4757,24 +4548,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get referralStatPending => 'Ожидают';
 
   @override
-  String get referralStatCredits => 'Кредиты FORENSIC';
-
-  @override
-  String referralCreditsPending(String amount) {
-    return '$amount кредитов ожидают подтверждения';
-  }
-
-  @override
-  String referralCreditsFuture(String percent) {
-    return 'После запуска платных услуг подходящие покупки приглашённых вами коллег могут приносить вам FORENSIC Credits — $percent% от суммы покупки. Кредиты — внутренний промо-бонус, а не деньги; за регистрацию они не начисляются.';
-  }
-
-  @override
-  String referralCreditsActive(String percent) {
-    return 'Вы получаете FORENSIC Credits в размере $percent% от подходящих покупок приглашённых коллег. Кредиты подтверждаются после периода возврата. Это внутренний промо-бонус, а не деньги.';
-  }
-
-  @override
   String get referralPrivacyNote =>
       'Показываются только итоговые числа. Имена, email, профили и документы коллег никогда не передаются — ни вам, ни в приглашении.';
 
@@ -4924,9 +4697,6 @@ class AppLocalizationsRu extends AppLocalizations {
       'Статья открытого доступа (PubMed Central через Europe PMC). Открывается в программе просмотра PDF или браузере устройства.';
 
   @override
-  String get fullTextPdfPro => 'Загрузка полного текста (PDF) доступна в Pro.';
-
-  @override
   String get fullTextOpenFailed =>
       'Не удалось открыть PDF. Проверьте соединение.';
 
@@ -4961,9 +4731,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get adminReferrals => 'Приглашения';
 
   @override
-  String get adminProGrants => 'Выдано Pro';
-
-  @override
   String get adminRegions => 'Страны (регион устройства)';
 
   @override
@@ -4981,27 +4748,6 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get adminPrivacyNote =>
       'Содержит персональные данные (email). Не пересылайте скриншоты.';
-
-  @override
-  String get adminGrantTitle => 'Выдать или снять Pro';
-
-  @override
-  String get adminEmail => 'Email пользователя';
-
-  @override
-  String get adminGrantPro => 'Выдать Professional Pro';
-
-  @override
-  String get adminRevoke => 'Снять';
-
-  @override
-  String get adminGranted => 'Pro выдан.';
-
-  @override
-  String get adminRevoked => 'Доступ снят.';
-
-  @override
-  String get adminNotFound => 'Пользователь с таким email не найден.';
 
   @override
   String get adminFailed => 'Не удалось. Проверьте соединение.';
@@ -5441,7 +5187,8 @@ class AppLocalizationsRu extends AppLocalizations {
   String get homeResourcesHeading => 'Библиотека и инструменты';
 
   @override
-  String get homeLibraryBody => 'Вещества, методы, стандарты и источники';
+  String get homeLibraryBody =>
+      'Все разделы: вещества, методы, стандарты, источники';
 
   @override
   String get homeContinueSaved => 'Продолжить и сохранённое';
@@ -5674,9 +5421,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get pubEditTitle => 'Редактировать черновик';
 
   @override
-  String get pubPaidNote => 'Платная подписка не влияет на модерацию.';
-
-  @override
   String get pubRequired => 'Обязательно';
 
   @override
@@ -5752,7 +5496,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get studyTitle => 'Режим обучения';
+  String get studyTitle => 'Упражнения';
 
   @override
   String get studyEntrySubtitle =>
@@ -6392,12 +6136,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get admStatActive30d => 'Активные за 30 дней';
 
   @override
-  String get admStatPro => 'Pro (серверный доступ)';
-
-  @override
-  String get admStatFree => 'Бесплатно';
-
-  @override
   String get admStatAwaiting => 'Обращения без ответа';
 
   @override
@@ -6422,10 +6160,6 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get admActiveNote =>
       'Активный — вход, запуск приложения (отметка устройства) или вопрос к ИИ за период.';
-
-  @override
-  String get admProNote =>
-      'Pro учитывает только серверный доступ; покупки в магазине проверяются на устройстве.';
 
   @override
   String get admChart14d => 'Последние 14 дней: регистрации и вопросы к ИИ';
@@ -6519,15 +6253,6 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get admRoleModerator => 'Модераторы';
-
-  @override
-  String get admTierAny => 'Любой тариф';
-
-  @override
-  String get admTierFree => 'Бесплатный';
-
-  @override
-  String get admTierPro => 'Тариф Pro';
 
   @override
   String get admUsersEmpty => 'Нет пользователей по фильтру.';
@@ -6655,10 +6380,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get homeAreasTitle => 'Разделы';
 
   @override
-  String get homeActLearnTitle => 'Учёба и тесты';
+  String get homeActLearnTitle => 'Обучение';
 
   @override
-  String get homeActLearnBody => 'Карточки, тесты, экзамен';
+  String get homeActLearnBody => 'Курсы, упражнения, тест в классе';
 
   @override
   String get homeActGuidelinesBody => 'Практические руководства по дисциплинам';
@@ -6720,13 +6445,6 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get calcEstimatedRange => 'Оценочный диапазон';
-
-  @override
-  String get calcLockedTitle => 'Входит в Эксперт Pro';
-
-  @override
-  String get calcLockedBody =>
-      'Этот калькулятор доступен в тарифе Эксперт Pro. Разведение и конвертер единиц концентрации — бесплатны.';
 
   @override
   String get calcLodUnitNote =>
@@ -6799,10 +6517,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String rdGlanceMore(int count) {
     return 'ещё $count';
   }
-
-  @override
-  String get rdGlanceLockedHint =>
-      'Подробности ниже открываются в Pro. Названия, предупреждения и источники остаются бесплатными.';
 
   @override
   String get rdJumpTo => 'Перейти к разделу';
@@ -7338,28 +7052,9 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String courtProTitle(String tier) {
-    return 'Расширенная подготовка — в тарифе $tier';
-  }
-
-  @override
-  String get courtProBody =>
-      'Полный симулятор (все сценарии), последовательные ролевые тренировки, ИИ-анализ (скоро), личная статистика и история. Карточки вопросов с источниками бесплатны для всех.';
-
-  @override
-  String get courtProBadge => 'В Pro';
-
-  @override
-  String get courtAiPro => 'ИИ-анализ (Pro)';
-
-  @override
   String courtScoreSemantics(String criterion, int score) {
     return '$criterion: $score из 2';
   }
-
-  @override
-  String get courtSimFreeNote =>
-      'Бесплатно: базовые сценарии. Остальные сценарии, ролевые тренировки и статистика — в Pro.';
 
   @override
   String get courtDrill => 'Ролевая тренировка';
@@ -8080,15 +7775,6 @@ class AppLocalizationsRu extends AppLocalizations {
       'Сузьте поиск по образцу, методу, реагенту, уровню доказательности и другим признакам или перейдите от образца, метода или реагента к веществам, для которых они задокументированы.';
 
   @override
-  String proSearchLockedTitle(String tier) {
-    return 'Расширенный поиск — $tier';
-  }
-
-  @override
-  String get proSearchLockedBody =>
-      'Фильтры (дисциплина, класс, образец, метод, реагент, уровень доказательности, статус проверки, юрисдикция, год), поиск по точной фразе и обратный поиск доступны по платному тарифу. Обычный поиск остаётся доступным всем.';
-
-  @override
   String get proSearchHint => 'Название, синоним или «фраза»';
 
   @override
@@ -8263,15 +7949,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String planSummary(int s, int p, int c, int l) {
     return 'Образцы: $s · Предварительные тесты: $p · Подтверждение: $c · Ограничения: $l';
   }
-
-  @override
-  String planLockedTitle(String tier) {
-    return 'Полный план анализа — $tier';
-  }
-
-  @override
-  String get planLockedBody =>
-      'Бесплатный просмотр показывает количество и образцы. Платный тариф добавляет предварительные тесты с реагентами, лабораторные и подтверждающие этапы, помехи, ограничения, памятку для заключения и копируемый текст с полными ссылками.';
 
   @override
   String get planSecSpecimens => 'Образцы и заметки о взятии';
@@ -8999,34 +8676,6 @@ class AppLocalizationsRu extends AppLocalizations {
       'Текст, похожий на материалы дела, автоматически отправляется на проверку. Жалобы трёх разных пользователей скрывают публикацию или приостанавливают подтверждение специалиста до решения администратора. Публикация, направленная против закона, удаляется вместе с подтверждением.';
 
   @override
-  String get adminGrantStudent => 'Выдать «Студент Pro»';
-
-  @override
-  String get adminGrantHint =>
-      'Укажите адрес, с которым человек вошёл в приложение. Учётная запись должна уже существовать; приглашение отсюда не отправляется.';
-
-  @override
-  String get adminEmailInvalid => 'Это не адрес электронной почты.';
-
-  @override
-  String adminGrantedTier(String tier) {
-    return 'Выдано: $tier';
-  }
-
-  @override
-  String get adminRevokeConfirmTitle => 'Убрать доступ?';
-
-  @override
-  String get adminRevokeConfirmBody =>
-      'Человек сразу потеряет платные разделы. Покупки в магазине это не затрагивает — только выдачу из этой панели.';
-
-  @override
-  String get adminTierStudent => '«Студент Pro»';
-
-  @override
-  String get adminTierProfessional => '«Специалист Pro»';
-
-  @override
   String get provOwnWordsNote =>
       'Содержание источника изложено своими словами; оригинальный текст не копировался. Точное место — ниже.';
 
@@ -9095,4 +8744,1062 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get litClaimsTitle => 'Данные из литературы (полностью)';
+
+  @override
+  String get analysisS1Title => '1. Экспресс-тесты (скрининг)';
+
+  @override
+  String get analysisS1Note =>
+      'Быстрые предварительные пробы: иммуноанализ, тест-полоски. Результат только ориентировочный; обязательно подтверждение подтверждающим методом.';
+
+  @override
+  String get analysisS2Title => '2. Качественные реакции (цветные реактивы)';
+
+  @override
+  String get analysisS2Note =>
+      'Реактив, цвет, пояснение, избирательность и ложноположительные результаты. Предварительно: сам по себе не доказывает идентичность вещества.';
+
+  @override
+  String get analysisS3Title =>
+      '3. Количественное определение (GC-MS, LC-MS/MS, спектрофотометрия)';
+
+  @override
+  String get analysisS3Note =>
+      'Подготовка пробы, основные параметры, LOD/LOQ (если есть в источнике) и ограничения. Числа только как в источнике; не заменяет валидированную методику лаборатории.';
+
+  @override
+  String get analysisSectionEmpty =>
+      'Для этого раздела пока нет данных с источником — нужен источник. Ничего не домысливается.';
+
+  @override
+  String get trPendingTranslation =>
+      'Перевод ожидается — показан оригинал на узбекском';
+
+  @override
+  String contactLine(String email) {
+    return 'Связь: $email';
+  }
+
+  @override
+  String get repTitle => 'Отправить жалобу';
+
+  @override
+  String get repProfileHint =>
+      'Недопустимый контент, ошибка, реклама или другое';
+
+  @override
+  String get repIntro =>
+      'Сообщите о недопустимом контенте, ошибке или другой проблеме. Отправить жалобу можно и без входа в аккаунт.';
+
+  @override
+  String get repKindField => 'Тип';
+
+  @override
+  String get repKindComplaint => 'Жалоба';
+
+  @override
+  String get repKindInappropriate => 'Недопустимый контент';
+
+  @override
+  String get repKindBug => 'Ошибка';
+
+  @override
+  String get repKindAdvertising => 'Реклама';
+
+  @override
+  String get repKindOther => 'Другое';
+
+  @override
+  String get repBody => 'Что произошло?';
+
+  @override
+  String get repBodyHint =>
+      'Не указывайте персональные данные, номера дел и сведения о пациентах.';
+
+  @override
+  String repBodyShort(int min) {
+    return 'Напишите не менее $min символов.';
+  }
+
+  @override
+  String get repContact => 'E-mail для ответа (необязательно)';
+
+  @override
+  String get repContactHint =>
+      'Если вы не вошли в аккаунт, оставьте адрес, чтобы получить ответ.';
+
+  @override
+  String get repPrivacy =>
+      'Текст хранится только для рассмотрения жалобы. Для защиты от спама хранится необратимый хеш устройства или сетевого адреса, сам адрес не сохраняется.';
+
+  @override
+  String get repSend => 'Отправить';
+
+  @override
+  String get repSent => 'Жалоба отправлена. Спасибо.';
+
+  @override
+  String get repInvalid => 'Проверьте текст и попробуйте снова.';
+
+  @override
+  String repRateLimited(int n) {
+    return 'Можно отправить не более $n жалоб в час. Попробуйте позже.';
+  }
+
+  @override
+  String get repFailed =>
+      'Не отправлено. Проверьте соединение и попробуйте снова.';
+
+  @override
+  String get repSuspended => 'Аккаунт приостановлен. Напишите нам по e-mail.';
+
+  @override
+  String get repUnavailable =>
+      'Сервис жалоб в этой сборке не подключён. Напишите нам по e-mail.';
+
+  @override
+  String get repMine => 'Мои жалобы';
+
+  @override
+  String get repStatusOpen => 'На рассмотрении';
+
+  @override
+  String get repStatusResolved => 'Решено';
+
+  @override
+  String get ctTitle => 'Правила сообщества';
+
+  @override
+  String get ctDraft =>
+      'Этот текст — черновик, его должен проверить юрист до публичного релиза.';
+
+  @override
+  String get ctZeroTolerance =>
+      'Оскорбительный, враждебный, насильственный, незаконный контент и спам запрещены. У каждой записи есть кнопки «Пожаловаться» и «Заблокировать автора». Нарушающий правила контент может быть удалён, а аккаунт приостановлен.';
+
+  @override
+  String get ctOpenTerms => 'Условия использования (черновик)';
+
+  @override
+  String get ctAgree => 'Я прочитал(а) правила и принимаю их';
+
+  @override
+  String get ctAccept => 'Принять';
+
+  @override
+  String get ctDecline => 'Не сейчас';
+
+  @override
+  String get ctSaveFailed => 'Не сохранено. Попробуйте снова.';
+
+  @override
+  String get blkTitle => 'Заблокированные авторы';
+
+  @override
+  String get blkIntro =>
+      'Записи заблокированных авторов вам не показываются. Кто они, вы также не видите.';
+
+  @override
+  String get blkEmpty => 'Вы никого не блокировали.';
+
+  @override
+  String get blkItem => 'Заблокированный автор';
+
+  @override
+  String blkSince(String date) {
+    return 'с $date';
+  }
+
+  @override
+  String get blkUnblock => 'Разблокировать';
+
+  @override
+  String get blkUnblocked => 'Разблокировано.';
+
+  @override
+  String get blkAction => 'Заблокировать автора';
+
+  @override
+  String get blkConfirmTitle => 'Заблокировать автора?';
+
+  @override
+  String get blkConfirmBody =>
+      'Вы больше не увидите вопросы и ответы этого автора. Кто это, вам не сообщается. Отменить можно в списке заблокированных.';
+
+  @override
+  String get blkDone => 'Автор заблокирован.';
+
+  @override
+  String get blkAlready => 'Этот автор уже заблокирован.';
+
+  @override
+  String get blkSelf => 'Нельзя заблокировать самого себя.';
+
+  @override
+  String get blkFailed => 'Не удалось выполнить. Попробуйте снова.';
+
+  @override
+  String get admxNavReports => 'Жалобы';
+
+  @override
+  String admxNavReportsHint(int n) {
+    return 'Открытых: $n';
+  }
+
+  @override
+  String get admxReportsTitle => 'Жалобы';
+
+  @override
+  String get admxReportsSearch => 'Поиск по тексту или e-mail';
+
+  @override
+  String get admxOpen => 'Открытые';
+
+  @override
+  String get admxResolvedFilter => 'Решённые';
+
+  @override
+  String get admxAll => 'Все';
+
+  @override
+  String get admxKindAny => 'Все типы';
+
+  @override
+  String get admxQaLink =>
+      'Открыть модерацию «Вопросов и ответов» (записи, на которые пожаловались трое)';
+
+  @override
+  String get admxReportsEmpty => 'Жалоб нет.';
+
+  @override
+  String get admxLoadMore => 'Загрузить ещё';
+
+  @override
+  String get admxAnonymous => 'Не вошёл в аккаунт';
+
+  @override
+  String admxContact(String value) {
+    return 'Связь: $value';
+  }
+
+  @override
+  String admxTarget(String type) {
+    return 'Касается: $type';
+  }
+
+  @override
+  String get admxNoteLabel => 'Заметка (только для админов)';
+
+  @override
+  String get admxNoteSave => 'Сохранить заметку';
+
+  @override
+  String get admxNoteSaved => 'Заметка сохранена.';
+
+  @override
+  String get admxResolve => 'Отметить решённой';
+
+  @override
+  String get admxReopen => 'Открыть снова';
+
+  @override
+  String get admxResolvedDone => 'Жалоба отмечена как решённая.';
+
+  @override
+  String get admxReopened => 'Жалоба открыта снова.';
+
+  @override
+  String get admxActionFailed => 'Действие не выполнено. Попробуйте снова.';
+
+  @override
+  String get admxActions => 'Действия';
+
+  @override
+  String get admxActionsHint =>
+      'Каждое действие проверяется сервером и записывается в журнал.';
+
+  @override
+  String get admxReason => 'Причина';
+
+  @override
+  String get admxReasonHint => 'Не менее 5 символов. Записывается в журнал.';
+
+  @override
+  String get admxReasonShort => 'Причина — не менее 5 символов.';
+
+  @override
+  String get admxCancel => 'Отмена';
+
+  @override
+  String get admxConfirm => 'Подтвердить';
+
+  @override
+  String get admxSelfNote =>
+      'Нельзя менять собственную роль или приостанавливать собственный аккаунт.';
+
+  @override
+  String get admxModeratorGrant => 'Назначить модератором статей';
+
+  @override
+  String get admxModeratorRemove => 'Снять роль модератора';
+
+  @override
+  String get admxRemoveAdmin => 'Снять роль администратора';
+
+  @override
+  String get admxRemoveAdminTitle => 'Снять роль администратора?';
+
+  @override
+  String get admxRemoveAdminBody =>
+      'Человек сразу потеряет доступ к админ-панели. Последнего администратора снять нельзя. Роль научного рецензента отдельная и здесь не меняется.';
+
+  @override
+  String get admxAdminNotSuspendable =>
+      'Аккаунт администратора нельзя приостановить.';
+
+  @override
+  String get admxSuspend => 'Приостановить аккаунт';
+
+  @override
+  String get admxRestore => 'Восстановить аккаунт';
+
+  @override
+  String get admxSuspendTitle => 'Приостановить этот аккаунт?';
+
+  @override
+  String get admxSuspendConfirmBody =>
+      'Человек будет выведен из аккаунта на всех устройствах и не сможет войти, пока вы не восстановите аккаунт. Действие записывается в журнал.';
+
+  @override
+  String get admxRoleGranted => 'Роль назначена.';
+
+  @override
+  String get admxRoleRevoked => 'Роль снята.';
+
+  @override
+  String get admxNoChange => 'Изменений нет.';
+
+  @override
+  String get admxUserNotFound => 'Пользователь не найден.';
+
+  @override
+  String get admxRoleForbidden =>
+      'Эту роль нельзя назначить из приложения. Владелец делает это на сервере.';
+
+  @override
+  String get admxEmailUnconfirmed => 'Адрес e-mail не подтверждён.';
+
+  @override
+  String get admxSelfAdmin => 'Нельзя менять собственную роль администратора.';
+
+  @override
+  String get admxLastAdmin => 'Последнего администратора снять нельзя.';
+
+  @override
+  String get admxCannotSuspendAdmin => 'Администратора нельзя приостановить.';
+
+  @override
+  String get admxCannotSuspendSelf => 'Нельзя приостановить самого себя.';
+
+  @override
+  String get admxSuspended => 'Аккаунт приостановлен. Его сеансы закрыты.';
+
+  @override
+  String get admxRestored => 'Аккаунт восстановлен.';
+
+  @override
+  String get admxExtTitle => 'Роли, жалобы и объекты';
+
+  @override
+  String get admxStatAdmins => 'Администраторы';
+
+  @override
+  String get admxStatModerators => 'Модераторы';
+
+  @override
+  String get admxStatSuspended => 'Приостановлено';
+
+  @override
+  String get admxStatReportsOpen => 'Открытые жалобы';
+
+  @override
+  String get admxStatReportsResolved => 'Решённые жалобы';
+
+  @override
+  String get admxStatQaQuestions => 'Вопросы (В&О)';
+
+  @override
+  String get admxStatQaAnswers => 'Ответы (В&О)';
+
+  @override
+  String get admxStatQaModeration => 'На модерации';
+
+  @override
+  String get admxStatBlocks => 'Блокировки';
+
+  @override
+  String get admxCasebookNote =>
+      'Рабочие дневники: хранятся на устройстве, не учитываются.';
+
+  @override
+  String get admxOnlineNote =>
+      'Сейчас в системе: недоступно (нет отслеживания активности).';
+
+  @override
+  String get admxStoresTitle => 'Загрузки';
+
+  @override
+  String get admxDownloadsNote =>
+      'Загрузки: сервер их не видит. Откройте консоли магазинов.';
+
+  @override
+  String get admxSalesNote => 'Продажи: 0 — платёжной системы нет.';
+
+  @override
+  String get admxOpenAsc => 'App Store Connect';
+
+  @override
+  String get admxOpenPlay => 'Google Play Console';
+
+  @override
+  String get admxOpenFailed => 'Не удалось открыть ссылку.';
+
+  @override
+  String get admActAdminRoleSet => 'Роль изменена из панели';
+
+  @override
+  String get admActUserSuspended => 'Аккаунт приостановлен';
+
+  @override
+  String get admActUserRestored => 'Аккаунт восстановлен';
+
+  @override
+  String get admActReportsView => 'Просмотр списка жалоб';
+
+  @override
+  String get admActReportNote => 'Заметка к жалобе';
+
+  @override
+  String get admActReportResolved => 'Жалоба решена';
+
+  @override
+  String get admActReportReopened => 'Жалоба открыта снова';
+
+  @override
+  String get admActAdminBootstrap =>
+      'Назначен первый администратор (начальная настройка)';
+
+  @override
+  String get socialOr => 'или';
+
+  @override
+  String get socialContinueGoogle => 'Продолжить с Google';
+
+  @override
+  String get socialContinueApple => 'Продолжить с Apple';
+
+  @override
+  String get socialErrUnavailable =>
+      'Вход через этого провайдера сейчас недоступен. Попробуйте ещё раз или войдите по email.';
+
+  @override
+  String get socialTermsNote =>
+      'Продолжая, вы принимаете Условия использования и Политику конфиденциальности.';
+
+  @override
+  String get deleteAccountSocialNote =>
+      'Этот аккаунт создан через Google или Apple, пароль не нужен. Подтвердите ниже, чтобы удалить его.';
+
+  @override
+  String get deleteAccountAppleNote =>
+      'Этот аккаунт создан через Apple, пароль не нужен. После подтверждения Apple попросит подтвердить, что это вы, и доступ приложения к вашему Apple ID будет отозван.';
+
+  @override
+  String get classQuizTitle => 'Тест в классе';
+
+  @override
+  String get classQuizCardSubtitle =>
+      'Живой тест под руководством преподавателя: вход по коду или QR';
+
+  @override
+  String get classQuizIntro =>
+      'Преподаватель показывает на экране 6-значный код и QR. Студенты входят под псевдонимом и отвечают на каждый вопрос до конца таймера.';
+
+  @override
+  String get classDemoBanner =>
+      'Демо-режим: данные хранятся только на этом устройстве. Для настоящего занятия нужно подключение к серверу.';
+
+  @override
+  String get classDemoChip => 'ДЕМО';
+
+  @override
+  String get classJoinSection => 'Войти в класс';
+
+  @override
+  String get classJoinHint =>
+      'Введите 6-значный код с экрана преподавателя или отсканируйте QR.';
+
+  @override
+  String get classJoinTitle => 'Вход в класс';
+
+  @override
+  String get classJoinAction => 'Войти';
+
+  @override
+  String get classCodeLabel => 'Код класса';
+
+  @override
+  String classCodeSpoken(String code) {
+    return 'Код класса $code';
+  }
+
+  @override
+  String get classNickLabel => 'Псевдоним';
+
+  @override
+  String get classNickHelper =>
+      '2–20 символов. Преподаватель видит только этот псевдоним — не ваше имя и не e-mail.';
+
+  @override
+  String get classScanAction => 'Сканировать QR';
+
+  @override
+  String get classScanTitle => 'Сканирование QR класса';
+
+  @override
+  String get classScanHint => 'Наведите камеру на QR на экране преподавателя.';
+
+  @override
+  String get classScanPermission =>
+      'Доступ к камере выключен. Разрешите его в настройках или введите код вручную.';
+
+  @override
+  String get classScanUnavailable =>
+      'Камера здесь недоступна. Введите код вручную.';
+
+  @override
+  String get classScanManual => 'Ввести код вручную';
+
+  @override
+  String classResume(String topic) {
+    return 'Продолжить: $topic';
+  }
+
+  @override
+  String get classTeacherSection => 'Для преподавателей';
+
+  @override
+  String get classNotTeacherNote =>
+      'Тест проводит преподаватель. Роль преподавателя выдаёт команда FORENSIC EXPERT на сервере; если вы ведёте занятия, напишите нам.';
+
+  @override
+  String get classNewAction => 'Провести тест';
+
+  @override
+  String get classNewTitle => 'Провести тест';
+
+  @override
+  String get classRecentSection => 'Недавние занятия';
+
+  @override
+  String classSessionLine(String code, String status) {
+    return '$code · $status';
+  }
+
+  @override
+  String get classStatusLobby => 'Ожидание студентов';
+
+  @override
+  String get classStatusRunning => 'Идёт тест';
+
+  @override
+  String get classStatusFinished => 'Завершён';
+
+  @override
+  String get classPrivacyNote =>
+      'Преподаватель видит только ваш псевдоним. Завершённые занятия автоматически удаляются через 30 дней. На неприемлемые псевдонимы можно пожаловаться, их удаляют.';
+
+  @override
+  String get classSignInTitle => 'Войдите, чтобы присоединиться';
+
+  @override
+  String get classSignInBody =>
+      'Ваш результат привязан к аккаунту на сервере. Другие студенты и преподаватель видят только ваш псевдоним.';
+
+  @override
+  String get classSignInAction => 'Войти в аккаунт';
+
+  @override
+  String get classTeacherOnlyTitle => 'Только для преподавателей';
+
+  @override
+  String get classTeacherOnlyBody =>
+      'Этот экран доступен аккаунтам с ролью преподавателя. Это проверяет сервер.';
+
+  @override
+  String get classTopicSection => 'Тема';
+
+  @override
+  String get classNoTopics => 'Банк вопросов пока недоступен.';
+
+  @override
+  String classQuestionsAvailable(int count) {
+    return '$count вопросов';
+  }
+
+  @override
+  String get classSettingsSection => 'Настройки';
+
+  @override
+  String get classQuestionCount => 'Количество вопросов';
+
+  @override
+  String get classStudentLimit => 'Лимит студентов';
+
+  @override
+  String get classSecondsPerQuestion => 'Время на вопрос';
+
+  @override
+  String classSecondsShort(int seconds) {
+    return '$seconds с';
+  }
+
+  @override
+  String classSecondsLeft(int seconds) {
+    return 'Осталось $seconds с';
+  }
+
+  @override
+  String get classCreateAction => 'Создать класс';
+
+  @override
+  String get classHostJoinHint =>
+      'Откройте FORENSIC EXPERT → Тест в классе и введите этот код или отсканируйте QR:';
+
+  @override
+  String get classQrSemantics => 'QR-код для входа в класс';
+
+  @override
+  String classJoinedCount(int joined, int limit) {
+    return 'Вошли: $joined / $limit';
+  }
+
+  @override
+  String get classWaitingForStudents => 'Ожидаем студентов…';
+
+  @override
+  String classReportsCount(int count) {
+    return 'Жалоб на псевдонимы: $count — проверьте список';
+  }
+
+  @override
+  String get classStartAction => 'Начать';
+
+  @override
+  String get classKickTitle => 'Убрать из класса?';
+
+  @override
+  String classKickBody(String nickname) {
+    return '«$nickname» будет удалён и не сможет войти снова.';
+  }
+
+  @override
+  String get classKickAction => 'Убрать';
+
+  @override
+  String get classCancel => 'Отмена';
+
+  @override
+  String classQuestionOf(int n, int total) {
+    return 'Вопрос $n из $total';
+  }
+
+  @override
+  String classAnswered(int count, int total) {
+    return 'Ответили: $count из $total';
+  }
+
+  @override
+  String classCorrectPct(int pct) {
+    return '$pct% верно';
+  }
+
+  @override
+  String get classLeaderboard => 'Рейтинг';
+
+  @override
+  String get classNoScoresYet => 'Баллов пока нет.';
+
+  @override
+  String get classCloseQuestion => 'Закрыть вопрос';
+
+  @override
+  String get classNextQuestion => 'Следующий вопрос';
+
+  @override
+  String get classFinishAction => 'Завершить тест';
+
+  @override
+  String get classEndAction => 'Завершить тест';
+
+  @override
+  String get classEndTitle => 'Завершить тест сейчас?';
+
+  @override
+  String get classEndBody =>
+      'Студенты увидят свои результаты. Это нельзя отменить.';
+
+  @override
+  String get classFinishedTitle => 'Тест завершён';
+
+  @override
+  String classFinishedSummary(int students, int questions) {
+    return 'Студентов: $students · вопросов: $questions';
+  }
+
+  @override
+  String get classHardestTitle => 'Самые трудные вопросы';
+
+  @override
+  String get classNoAnswersYet => 'Ответов нет.';
+
+  @override
+  String get classExportCsv => 'Сохранить / отправить результаты (CSV)';
+
+  @override
+  String get classCsvSubject => 'Результаты теста в классе';
+
+  @override
+  String get classDone => 'Готово';
+
+  @override
+  String classRetentionNote(int days) {
+    return 'Занятие автоматически удаляется через $days дн. после завершения.';
+  }
+
+  @override
+  String get classRetry => 'Повторить';
+
+  @override
+  String get classExit => 'Выйти';
+
+  @override
+  String classLobbyWelcome(String nickname) {
+    return 'Вы в классе, $nickname!';
+  }
+
+  @override
+  String get classLobbyWait => 'Дождитесь, пока преподаватель начнёт тест.';
+
+  @override
+  String get classChooseAnswer => 'Выберите ответ.';
+
+  @override
+  String get classAnswerAccepted =>
+      'Ответ принят. Результат появится, когда время закончится.';
+
+  @override
+  String get classTimeUpWaiting => 'Время вышло. Проверяем ответ…';
+
+  @override
+  String classResultCorrect(int points) {
+    return 'Верно! +$points баллов';
+  }
+
+  @override
+  String get classResultWrong => 'Неверно.';
+
+  @override
+  String get classResultNoAnswer => 'Ответ не дан.';
+
+  @override
+  String get classWaitNext => 'Дождитесь следующего вопроса от преподавателя.';
+
+  @override
+  String classScoreLine(int score) {
+    return 'Баллы: $score';
+  }
+
+  @override
+  String classRankLine(int rank, int total) {
+    return 'Место $rank из $total';
+  }
+
+  @override
+  String classCorrectOfTotal(int correct, int total) {
+    return 'Верно $correct из $total';
+  }
+
+  @override
+  String get classTopFive => 'Топ-5';
+
+  @override
+  String get classMistakesTitle => 'Вопросы для повторения';
+
+  @override
+  String get classNoMistakes => 'Все ответы верные. Отлично!';
+
+  @override
+  String classQuestionNumber(int n) {
+    return 'Вопрос $n';
+  }
+
+  @override
+  String classYourAnswer(String text) {
+    return 'Ваш ответ: $text';
+  }
+
+  @override
+  String classCorrectAnswer(String text) {
+    return 'Верный ответ: $text';
+  }
+
+  @override
+  String classSourceLine(String author, String title, String page) {
+    return 'Источник: $author, $title, с. $page';
+  }
+
+  @override
+  String get classOptionCorrect => 'верный';
+
+  @override
+  String get classOptionWrong => 'ваш ответ, неверный';
+
+  @override
+  String get classOptionChosen => 'ваш выбор';
+
+  @override
+  String get classReportTitle => 'Пожаловаться на этот псевдоним?';
+
+  @override
+  String classReportBody(String nickname) {
+    return '«$nickname» будет отправлен преподавателю на проверку.';
+  }
+
+  @override
+  String get classReportAction => 'Пожаловаться';
+
+  @override
+  String get classReportReason => 'Неприемлемый псевдоним';
+
+  @override
+  String get classReportSent => 'Жалоба отправлена. Спасибо.';
+
+  @override
+  String get classErrNotConfigured =>
+      'Тест в классе станет доступен после подключения сервера FORENSIC EXPERT.';
+
+  @override
+  String get classErrNotSignedIn => 'Сначала войдите в аккаунт.';
+
+  @override
+  String get classErrOffline =>
+      'Нет соединения. Проверьте интернет и повторите.';
+
+  @override
+  String get classErrServer => 'Сбой на сервере. Повторите чуть позже.';
+
+  @override
+  String get classErrForbidden => 'У вас нет доступа к этому классу.';
+
+  @override
+  String get classErrBadCode => 'Введите 6-значный код.';
+
+  @override
+  String get classErrNotFound =>
+      'Класс с таким кодом не найден. Проверьте код и повторите.';
+
+  @override
+  String get classErrRateLimited =>
+      'Слишком много попыток. Повторите через час.';
+
+  @override
+  String get classErrOwnSession =>
+      'Вы преподаватель этого класса и не можете войти как студент.';
+
+  @override
+  String get classErrFinished => 'Этот тест уже завершён.';
+
+  @override
+  String get classErrKicked => 'Преподаватель убрал вас из этого класса.';
+
+  @override
+  String get classErrAlreadyStarted =>
+      'Тест уже начался — новые студенты войти не могут.';
+
+  @override
+  String get classErrFull => 'Класс заполнен.';
+
+  @override
+  String get classErrNickLength => 'Псевдоним должен содержать 2–20 символов.';
+
+  @override
+  String get classErrNickChars => 'В псевдониме есть недопустимые символы.';
+
+  @override
+  String get classErrNickBlocked => 'Выберите другой псевдоним.';
+
+  @override
+  String get classErrInvalidSettings =>
+      'Проверьте настройки: 5–20 вопросов, 5–200 студентов, 15/30/45/60 секунд.';
+
+  @override
+  String get classErrTooManySessions =>
+      'Слишком много открытых занятий. Сначала завершите одно.';
+
+  @override
+  String get classErrNotEnoughQuestions =>
+      'В этой теме слишком мало вопросов (нужно не меньше 5).';
+
+  @override
+  String get classErrBadState => 'Сейчас это действие невозможно.';
+
+  @override
+  String get classErrNoParticipants =>
+      'Дождитесь, пока войдёт хотя бы один студент.';
+
+  @override
+  String get classErrNotCurrent => 'Этот вопрос уже закрыт.';
+
+  @override
+  String get classErrTimeOver => 'Время вышло — ответ не засчитан.';
+
+  @override
+  String get classErrAlreadyAnswered => 'Вы уже ответили на этот вопрос.';
+
+  @override
+  String get classErrNotFinished =>
+      'Результаты будут доступны после завершения теста.';
+
+  @override
+  String get classErrBadReason => 'Причина слишком короткая.';
+
+  @override
+  String get unverifiedChip => 'Эксперт ещё не подтвердил';
+
+  @override
+  String get legalNationalMethodsEmpty =>
+      'Национальные методики ещё не загружены.';
+
+  @override
+  String get teacherPanelTitle => 'Панель преподавателя';
+
+  @override
+  String get teacherPanelHomeBody =>
+      'Проведите тест в классе и получите результаты в CSV';
+
+  @override
+  String get teacherPanelHomeBodyStudent =>
+      'Войдите в тест в классе по коду преподавателя';
+
+  @override
+  String get teacherPanelIntro =>
+      'Три простых действия: проведите тест, посмотрите результаты, а студенты войдут по коду.';
+
+  @override
+  String get teacherRunTitle => 'Провести тест';
+
+  @override
+  String get teacherRunBody =>
+      'Выберите тему — для класса появятся 6-значный код и QR';
+
+  @override
+  String get teacherResultsTitle => 'Результаты и CSV';
+
+  @override
+  String get teacherResultsBody => 'Проведённые тесты, рейтинг и файл CSV';
+
+  @override
+  String get teacherJoinTitle => 'Войти в класс (студент)';
+
+  @override
+  String get teacherJoinBody => 'По коду или QR от преподавателя';
+
+  @override
+  String get teacherRoleNeeded =>
+      'Нужна роль преподавателя — см. примечание ниже';
+
+  @override
+  String get teacherResultsEmpty =>
+      'Тестов ещё не было. Начните с «Провести тест» — результаты появятся здесь.';
+
+  @override
+  String get disciplineNextTitle => 'Что дальше';
+
+  @override
+  String get disciplineSearchCta => 'Искать по этой дисциплине';
+
+  @override
+  String get disciplineSearchBody => 'Среди веществ, методов и источников';
+
+  @override
+  String get referralHowTitle => 'Как это работает';
+
+  @override
+  String get referralHow1 => 'Вы отправляете коллеге личный код или ссылку.';
+
+  @override
+  String get referralHow2 => 'Коллега создаёт новый аккаунт с этим кодом.';
+
+  @override
+  String get referralHow3 =>
+      'Вы видите только общие числа — без имён и данных.';
+
+  @override
+  String get pubEmptyTitle => 'Статей пока нет';
+
+  @override
+  String get pubEmptyBody =>
+      'Поделитесь опытом первым: кнопка «Отправить статью» внизу. После модерации статья появится здесь.';
+
+  @override
+  String get calcWarnZeroMeasured =>
+      'Этанол в образце не обнаружен (0): обратный расчёт не может показать уровень на момент события — этанол мог полностью выйти до взятия образца.';
+
+  @override
+  String get calcTechInfo => 'Техническая информация';
+
+  @override
+  String calcTechModule(String id, String version) {
+    return 'Расчётный модуль: $id, версия $version';
+  }
+
+  @override
+  String classSourceLineNoPage(String author, String title) {
+    return 'Источник: $author, $title';
+  }
+
+  @override
+  String classSourceLineLocator(String author, String title, String locator) {
+    return 'Источник: $author, $title, $locator';
+  }
+
+  @override
+  String get classTopicSearchHint => 'Поиск темы или курса';
+
+  @override
+  String get classTopicGroupOther => 'Другие темы';
+
+  @override
+  String get classTopicNoMatch => 'Подходящих тем не найдено.';
+
+  @override
+  String get classTopicSelected => 'Выбранная тема';
+
+  @override
+  String classTopicGroupCount(int count) {
+    return 'Тем: $count';
+  }
+
+  @override
+  String ghsPCodesDetails(int count) {
+    return 'Подробнее: меры предосторожности (P-коды: $count)';
+  }
+
+  @override
+  String get studyExamUnavailableHub =>
+      'В наборах с отметкой «Только тренировка» экзамена нет: вопросы созданы автоматически или у них нет пояснения либо страницы источника. Для них используйте тренировку.';
+
+  @override
+  String get studyQuizAboutPractice => 'О режиме тренировки и вариантах';
 }

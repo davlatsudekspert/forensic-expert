@@ -105,7 +105,7 @@ class DisciplinesScreen extends ConsumerWidget {
     }
 
     return Scaffold(
-      appBar: AppBar(title: Text(l.disciplinesTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.disciplinesTitle)),
       body: SafeArea(
         child: ListView(
           key: const Key('disciplines.list'),
@@ -189,7 +189,7 @@ class DisciplineScreen extends ConsumerWidget {
         if (e.discipline == d) e,
     ];
     return Scaffold(
-      appBar: AppBar(title: Text(l.disciplineName(d))),
+      appBar: AppBar(title: FeAppBarTitle(l.disciplineName(d))),
       body: SafeArea(
         child: ListView(
           key: Key('disciplineDetail.${d.code}'),
@@ -214,15 +214,15 @@ class DisciplineScreen extends ConsumerWidget {
                   ],
                   if (modules.isNotEmpty) ...[
                     FeSectionHeader(l.disciplineModules),
-                    for (final m in modules)
-                      ListTile(
+                    for (final (i, m) in modules.indexed) ...[
+                      if (i > 0) const SizedBox(height: FeSpace.sm),
+                      _NextStepTile(
                         key: Key('discipline.module.${m.name}'),
-                        contentPadding: EdgeInsets.zero,
-                        leading: Icon(m.icon, color: c.accent),
-                        title: Text(m.label(l)),
-                        trailing: const Icon(Icons.chevron_right),
+                        icon: m.icon,
+                        title: m.label(l),
                         onTap: () => context.push(m.route),
                       ),
+                    ],
                   ],
                   if (ownTopics.isNotEmpty) ...[
                     FeSectionHeader(l.disciplineSourcedTopics),
@@ -291,12 +291,84 @@ class DisciplineScreen extends ConsumerWidget {
                       body: l.disciplineEmpty,
                     ),
                   ],
+                  // Keyingi qadam: fan nomi bilan qidiruv va AI — sahifa
+                  // qisqa bo‘lsa ham «boshi berk» emas.
+                  FeSectionHeader(l.disciplineNextTitle),
+                  _NextStepTile(
+                    key: const Key('discipline.search'),
+                    icon: Icons.search,
+                    title: l.disciplineSearchCta,
+                    body: l.disciplineSearchBody,
+                    onTap: () =>
+                        context.push(Routes.searchWith(l.disciplineName(d))),
+                  ),
+                  const SizedBox(height: FeSpace.sm),
+                  _NextStepTile(
+                    key: const Key('discipline.ai'),
+                    icon: Icons.auto_awesome_outlined,
+                    title: l.moduleAi,
+                    body: l.homeActAiBody,
+                    onTap: () => context.go(Routes.ai),
+                  ),
                   const SizedBox(height: FeSpace.xl),
                 ],
               ),
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+/// Fan sahifasidagi «keyingi qadam» plitasi.
+class _NextStepTile extends StatelessWidget {
+  const _NextStepTile({
+    super.key,
+    required this.icon,
+    required this.title,
+    required this.onTap,
+    this.body,
+  });
+
+  final IconData icon;
+  final String title;
+  final String? body;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    return FeCard(
+      onTap: onTap,
+      child: Row(
+        children: [
+          DecoratedBox(
+            decoration: BoxDecoration(
+              color: c.accentContainer,
+              borderRadius: BorderRadius.circular(FeRadius.md),
+            ),
+            child: SizedBox.square(
+              dimension: 44,
+              child: Icon(icon, color: c.accent, size: 22),
+            ),
+          ),
+          const SizedBox(width: FeSpace.md),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(title, style: t.titleSmall),
+                if (body case final b?) ...[
+                  const SizedBox(height: 2),
+                  Text(b, style: t.bodySmall?.copyWith(color: c.textSecondary)),
+                ],
+              ],
+            ),
+          ),
+          Icon(Icons.chevron_right, color: c.textSecondary),
+        ],
       ),
     );
   }

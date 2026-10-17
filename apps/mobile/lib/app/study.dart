@@ -2,26 +2,16 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../domain/guidelines/guideline_models.dart';
 import '../domain/learn/study_models.dart';
-import '../domain/ports/billing_ports.dart';
 import 'guidelines.dart';
 import 'providers.dart';
 
 /// O‘quv rejimi katalogi — kutubxona, bilim yozuvlari va yo‘riqnomalardan
-/// (faqat manbasi bor yozuvlar). Pullik yozuvlar ruxsat bo‘lsagina.
+/// (faqat manbasi bor yozuvlar).
 final studyCatalogProvider = Provider<StudyCatalog>((ref) {
-  final access = ref.watch(accessProvider);
   return StudyCatalogBuilder.build(
     knowledge: ref.watch(knowledgeRepositoryProvider),
     library: ref.watch(libraryRepositoryProvider),
     guidelines: ref.watch(guidelinesProvider).value ?? GuidelineBundle.empty,
-    substancesUnlocked: AccessPolicy.unlocks(
-      ProductFeature.substanceLibrary,
-      access,
-    ),
-    referencesUnlocked: AccessPolicy.unlocks(
-      ProductFeature.verifiedReferences,
-      access,
-    ),
   );
 });
 

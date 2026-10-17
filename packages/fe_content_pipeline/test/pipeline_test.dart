@@ -306,16 +306,21 @@ void main() {
         expect(t.matches(excerpts[t.targetId]!), isTrue, reason: t.targetId);
         expect(t.text, isNot(excerpts[t.targetId]), reason: t.targetId);
       }
-      // Har bir iqtibos uchun uz va ru (asl matn o‘zgarmagan).
+      // Har bir iqtibos uchun uz va ru (asl matn o‘zgarmagan). Istisno:
+      // «Tahlil» 3 bo‘lim to‘plami (C-AS-*, 2026-10-17) — egasining til
+      // tartibi (2026-10-12): avval faqat o‘zbekcha, RU keyinroq qo‘shiladi,
+      // tarjima to‘qilmaydi. Ularda uz shart, ru hali bo‘lmasligi mumkin.
       for (final id in excerpts.keys) {
-        expect(
-          {
-            for (final t in tt)
-              if (t.targetId == id) t.lang,
-          },
-          {'uz', 'ru'},
-          reason: id,
-        );
+        final langs = {
+          for (final t in tt)
+            if (t.targetId == id) t.lang,
+        };
+        if (id.startsWith('C-AS-')) {
+          expect(langs, contains('uz'), reason: id);
+          expect({'uz', 'ru'}.containsAll(langs), isTrue, reason: id);
+        } else {
+          expect(langs, {'uz', 'ru'}, reason: id);
+        }
       }
     });
 

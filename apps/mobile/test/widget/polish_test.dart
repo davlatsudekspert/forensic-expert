@@ -11,7 +11,6 @@ import 'package:forensic_expert/domain/ports/ai_ports.dart';
 import 'package:forensic_expert/features/account/presentation/auth_screens.dart';
 import 'package:forensic_expert/features/placeholder/presentation/in_development_view.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 
@@ -77,18 +76,12 @@ void main() {
       WidgetTester tester,
       String location, {
       String lang = 'en',
-      FakeStore? store,
     }) => pumpApp(
       tester,
       settings: completedSettings(lang: lang),
       initialLocation: location,
       testFixtures: false,
-      overrides: [
-        ...pilot.overrides,
-        entitlementServiceProvider.overrideWithValue(
-          store ?? FakeStore(owned: true),
-        ),
-      ],
+      overrides: [...pilot.overrides],
     );
 
     Future<void> see(WidgetTester tester, Finder f) async {
@@ -115,7 +108,6 @@ void main() {
         Routes.tools,
         Routes.ai,
         Routes.profile,
-        Routes.purchase,
         Routes.libraryEntry('brodifacoum'),
       ]) {
         testWidgets('$lang $route — ichki atama ko‘rinmaydi', (tester) async {
@@ -211,7 +203,6 @@ void main() {
         testFixtures: false,
         overrides: [
           ...pilot.overrides,
-          entitlementServiceProvider.overrideWithValue(FakeStore(owned: true)),
           aiAssistantProvider.overrideWithValue(const _SignedOutAi()),
         ],
       );

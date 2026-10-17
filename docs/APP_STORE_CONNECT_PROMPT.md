@@ -19,8 +19,8 @@ ruxsat alohida beriladi. Hozirgi maqsad — TestFlight orqali ichki sinov.
 **Build:** 148-build eskirgan. Hozir yangi build yig‘ilmoqda — **0.3.0**,
 build raqami **168** (148 emas).
 TestFlight’da ikkita build ko‘rinsa, **eng kattasini** oling: unda bugungi
-to‘rtta tuzatish bor (klaviatura, kichik ekranlar, Savol-javob qoidalari,
-admin paneldan Pro berish).
+to‘rtta tuzatish bor (klaviatura, kichik ekranlar, Savol-javob qoidalari).
+Qaror 2026-10-17: ilovada to‘lov qatlami yo‘q — hamma funksiya bepul va ochiq.
 
 ### 1. App Information
 
@@ -41,7 +41,7 @@ admin paneldan Pro berish).
 
 ### 2. Pricing and Availability
 
-- **Price:** Free (ilova ichida obuna bor, lekin ilovaning o‘zi bepul).
+- **Price:** Free. Ilovada ilova ichida xaridlar (In-App Purchase), obunalar va tariflar YO‘Q — hamma funksiya bepul va ochiq (egasi qarori, 2026-10-17). ASC’da In-App Purchases / Subscriptions bo‘limini bo‘sh qoldiring.
 - **Availability:** barcha mamlakatlar (yoki egasi aytgan ro‘yxat).
 
 ### 3. App Privacy
@@ -84,8 +84,8 @@ xulosasi o‘rnini bosmaydi» degan halollik bandi bor, u turishi shart).
 **What's New in This Version:**
 ```
 First TestFlight build of 0.3.0. Keyboard now dismisses on every screen, all
-screens checked at small size and large text, community Q&A rules added, and
-Pro access can be granted from the admin panel.
+screens checked at small size and large text, and community Q&A rules added.
+All features are free.
 ```
 
 ### 5. App Review Information — ENG MUHIM QISMI

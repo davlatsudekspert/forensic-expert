@@ -14,9 +14,11 @@ import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/ai/ai_architecture.dart';
 import '../../../domain/ai/rag_pipeline.dart';
+import '../../../domain/library/library_models.dart';
 import '../../../domain/ports/ai_ports.dart';
 import '../../casebook/presentation/casebook_blocks.dart';
 import '../../evidence/presentation/localized_content.dart';
+import '../../library/presentation/source_detail_screen.dart';
 import 'rag_sections.dart';
 
 /// Forensic AI. Production AI provayderi ulanmaguncha ekran yuqorisida
@@ -116,7 +118,7 @@ class _AiScreenState extends ConsumerState<AiScreen> {
     final kinds = {for (final f in _pii) f.kind}.toList();
 
     return Scaffold(
-      appBar: AppBar(title: Text(l.moduleAi)),
+      appBar: AppBar(title: FeAppBarTitle(l.moduleAi)),
       body: SafeArea(
         bottom: false,
         child: ListView(
@@ -489,6 +491,8 @@ class _ChunkCard extends StatelessWidget {
         // Kartani bosish — to‘liq yozuv; SRC — manba sahifasi.
         final isLibrary =
             ref.watch(libraryRepositoryProvider).byId(ch.entityId) != null;
+        final sources = ref.watch(sourceIndexProvider);
+        final l = AppLocalizations.of(context);
         return FeCard(
           key: Key('ai.chunk.${ch.chunkId}'),
           padding: const EdgeInsets.all(FeSpace.sm),
@@ -516,26 +520,38 @@ class _ChunkCard extends StatelessWidget {
                       style: t.bodySmall,
                     ),
                     const SizedBox(height: 2),
-                    Wrap(
-                      spacing: FeSpace.xs,
-                      children: [
-                        for (final id in ch.sourceIds)
-                          InkWell(
-                            key: Key('ai.chunk.source.$id'),
-                            onTap: () => context.push(Routes.source(id)),
-                            child: Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 4),
-                              child: Text(
-                                id,
-                                style: t.bodySmall?.copyWith(
-                                  color: c.accent,
-                                  decoration: TextDecoration.underline,
+                    // Manba — inson o‘qiydigan nom (jurnal/tashkilot · yil),
+                    // ichki ID («SRC-PMC…») emas.
+                    for (final id in ch.sourceIds)
+                      InkWell(
+                        key: Key('ai.chunk.source.$id'),
+                        onTap: () => context.push(Routes.source(id)),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 4),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Icon(
+                                Icons.menu_book_outlined,
+                                size: 14,
+                                color: c.accent,
+                              ),
+                              const SizedBox(width: FeSpace.xxs),
+                              Expanded(
+                                child: Text(
+                                  _sourceLabel(l, sources[id]?.source),
+                                  maxLines: 2,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: t.bodySmall?.copyWith(
+                                    color: c.accent,
+                                    decoration: TextDecoration.underline,
+                                  ),
                                 ),
                               ),
-                            ),
+                            ],
                           ),
-                      ],
-                    ),
+                        ),
+                      ),
                   ],
                 ),
               ),
@@ -546,6 +562,17 @@ class _ChunkCard extends StatelessWidget {
       },
     );
   }
+}
+
+/// «Sarlavha — jurnal, yil». Manba indeksda topilmasa — umumiy «Manba»
+/// (ichki ID ko‘rsatilmaydi).
+String _sourceLabel(AppLocalizations l, SourceView? s) {
+  if (s == null) return l.sourceDetailTitle;
+  final meta = [
+    ?(s.journal ?? s.organization),
+    if (s.year case final y?) '$y',
+  ].join(', ');
+  return [s.title, if (meta.isNotEmpty) meta].join(' — ');
 }
 
 /// Javob tuzilmasi namoyishi. Matnlar — namuna (ARB’dan), ilmiy emas.

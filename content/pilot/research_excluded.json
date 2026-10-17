@@ -1,0 +1,350 @@
+{
+ "format": "fe.research_excluded/1",
+ "note": "content/tools/research_relevance.py --apply; assemble_p5.build_research bularni o‘tkazib yuboradi",
+ "excluded": [
+  {
+   "research_id": "RS-02c2e18ff695",
+   "title": "Efficacy and safety of pregabalin in eye pain: A systematic review",
+   "container": "Medicine",
+   "doi": "10.1097/MD.0000000000032875",
+   "pmid": "36820573",
+   "reason": "klinik terapiya sinovi (davolash samaradorligi)"
+  },
+  {
+   "research_id": "RS-0fdbb5b6573f",
+   "title": "HIV: treating Pneumocystis pneumonia (PCP)",
+   "container": "BMJ clinical evidence",
+   "doi": null,
+   "pmid": "19445734",
+   "reason": "klinik fan (sud tibbiyoti/toksikologiyaga aloqasiz kasallik)"
+  },
+  {
+   "research_id": "RS-101341659a55",
+   "title": "Semaglutide and Nonarteritic Anterior Ischemic Optic Neuropathy",
+   "container": "JAMA ophthalmology",
+   "doi": "10.1001/jamaophthalmol.2024.6555",
+   "pmid": "39976940",
+   "reason": "klinik fan (sud tibbiyoti/toksikologiyaga aloqasiz kasallik)"
+  },
+  {
+   "research_id": "RS-1734eea85656",
+   "title": "Isolation, purification, and characterization of immunosuppressive compounds from tripterygium: triptolide and tripdiolide",
+   "container": "International journal of immunopharmacology",
+   "doi": "10.1016/0192-0561(95)00022-t",
+   "pmid": "7591358",
+   "reason": "fundamental kimyo/biotexnologiya (sud amaliyotiga aloqasiz)"
+  },
+  {
+   "research_id": "RS-17aeac7917f3",
+   "title": "Twice-Yearly Lenacapavir for HIV Prevention in Men and Gender-Diverse Persons",
+   "container": "The New England journal of medicine",
+   "doi": "10.1056/NEJMoa2411858",
+   "pmid": "39602624",
+   "reason": "klinik fan (sud tibbiyoti/toksikologiyaga aloqasiz kasallik)"
+  },
+  {
+   "research_id": "RS-213bb0316af6",
+   "title": "An Integrated QuEChERS LC-MS/MS Method for Screening, Confirmation, and Quantification of Nitroimidazole Residues in Food",
+   "container": "Journal of AOAC International",
+   "doi": "10.1093/jaoacint/qsag047",
+   "pmid": "42226025",
+   "reason": "oziq-ovqat / veterinariya / hayvonlar"
+  },
+  {
+   "research_id": "RS-23814029a47c",
+   "title": "Probing toluene catalytic removal mechanism over supported Pt nano- and single-atom-catalyst",
+   "container": "Journal of hazardous materials",
+   "doi": "10.1016/j.jhazmat.2020.122258",
+   "pmid": "32092645",
+   "reason": "sanoat kimyosi / kataliz (sud amaliyotiga aloqasiz)"
+  },
+  {
+   "research_id": "RS-28297e878824",
+   "title": "Ceramide plays a prominent role in MDA-7/IL-24-induced cancer-specific apoptosis",
+   "container": "Journal of cellular physiology",
+   "doi": "10.1002/jcp.21969",
+   "pmid": "19937735",
+   "reason": "onkologiya"
+  },
+  {
+   "research_id": "RS-2e9b4a506560",
+   "title": "Determination of emerging chlorinated byproducts of diazepam in drinking water",
+   "container": "Chemosphere",
+   "doi": "10.1016/j.chemosphere.2018.11.076",
+   "pmid": "30471503",
+   "reason": "atrof-muhit / biodegradatsiya"
+  },
+  {
+   "research_id": "RS-41f046804817",
+   "title": "Ibuprofen use and clinical outcomes in COVID-19 patients",
+   "container": "Clinical microbiology and infection : the official publication of the European Society of Clinical Microbiology and Infectious Diseases",
+   "doi": "10.1016/j.cmi.2020.06.003",
+   "pmid": "32535147",
+   "reason": "klinik fan (sud tibbiyoti/toksikologiyaga aloqasiz kasallik)"
+  },
+  {
+   "research_id": "RS-4423264b1d28",
+   "title": "Relationship between the characteristics of rigor-mortis-related actomyosin and muscle fiber types in the ordinary muscle of various fishes",
+   "container": "Journal of the science of food and agriculture",
+   "doi": "10.1002/jsfa.9880",
+   "pmid": "31226220",
+   "reason": "oziq-ovqat / veterinariya / hayvonlar"
+  },
+  {
+   "research_id": "RS-4e9dd027238b",
+   "title": "Triple Inhaled Therapy at Two Glucocorticoid Doses in Moderate-to-Very-Severe COPD",
+   "container": "The New England journal of medicine",
+   "doi": "10.1056/NEJMoa1916046",
+   "pmid": "32579807",
+   "reason": "klinik fan (sud tibbiyoti/toksikologiyaga aloqasiz kasallik)"
+  },
+  {
+   "research_id": "RS-4ee9496a85a0",
+   "title": "Sudan",
+   "container": "Department of State publication. Background notes series",
+   "doi": null,
+   "pmid": "12178062",
+   "reason": "mamlakat sharhi (mavzuga aloqasiz)"
+  },
+  {
+   "research_id": "RS-4ff62aad9d45",
+   "title": "Metformin induces lipogenic differentiation in myofibroblasts to reverse lung fibrosis",
+   "container": "Nature communications",
+   "doi": "10.1038/s41467-019-10839-0",
+   "pmid": "31278260",
+   "reason": "klinik fan (sud tibbiyoti/toksikologiyaga aloqasiz kasallik)"
+  },
+  {
+   "research_id": "RS-51bc7bd6ad31",
+   "title": "Cancer initiatives in Sudan",
+   "container": "Annals of oncology : official journal of the European Society for Medical Oncology",
+   "doi": "10.1093/annonc/mdl985",
+   "pmid": "16801337",
+   "reason": "mamlakat sharhi (mavzuga aloqasiz)"
+  },
+  {
+   "research_id": "RS-6aa0d9d81828",
+   "title": "Residual Organic Solvent Analysis in Nanoformulations Using Headspace Gas Chromatography: Version 1",
+   "container": "",
+   "doi": "10.17917/QFEP-HD46",
+   "pmid": "39012987",
+   "reason": "sanoat kimyosi / kataliz (sud amaliyotiga aloqasiz)"
+  },
+  {
+   "research_id": "RS-6ebb229b61ec",
+   "title": "Headspace gas chromatography for the determination of volatile methylsiloxanes in personal care products",
+   "container": "Analytical and bioanalytical chemistry",
+   "doi": "10.1007/s00216-020-02478-y",
+   "pmid": "32062831",
+   "reason": "sanoat kimyosi / kataliz (sud amaliyotiga aloqasiz)"
+  },
+  {
+   "research_id": "RS-7a8db085cee8",
+   "title": "Colchicine and gout",
+   "container": "Arthritis and rheumatism",
+   "doi": "10.1002/art.1780340622",
+   "pmid": "2053926",
+   "reason": "klinik fan (sud tibbiyoti/toksikologiyaga aloqasiz kasallik)"
+  },
+  {
+   "research_id": "RS-7aa1d9e96f3c",
+   "title": "Energy Processes During Rigor Mortis in the Adductor Muscle of the Lion's Paw Scallop (Nodipecten subnodosus): Effects of Seasonality and Storage Temperature",
+   "container": "Animals : an open access journal from MDPI",
+   "doi": "10.3390/ani15202953",
+   "pmid": "41153880",
+   "reason": "oziq-ovqat / veterinariya / hayvonlar"
+  },
+  {
+   "research_id": "RS-7ef099c4dfae",
+   "title": "Pesticide Residue Analysis in Fruit- and Vegetable-Based Baby Foods Using GC-Orbitrap MS",
+   "container": "Journal of AOAC International",
+   "doi": "10.5740/jaoacint.17-0413",
+   "pmid": "29141710",
+   "reason": "oziq-ovqat / veterinariya / hayvonlar"
+  },
+  {
+   "research_id": "RS-80f3fb4786f3",
+   "title": "Dissociative Adsorption of Acetone on Platinum Single-Crystal Electrodes",
+   "container": "The journal of physical chemistry. C, Nanomaterials and interfaces",
+   "doi": "10.1021/acs.jpcc.0c11360",
+   "pmid": "33868544",
+   "reason": "sanoat kimyosi / kataliz (sud amaliyotiga aloqasiz)"
+  },
+  {
+   "research_id": "RS-8211c3617b0a",
+   "title": "Randomized trial of TAS-102 for refractory metastatic colorectal cancer",
+   "container": "The New England journal of medicine",
+   "doi": "10.1056/NEJMoa1414325",
+   "pmid": "25970050",
+   "reason": "klinik terapiya sinovi (davolash samaradorligi)"
+  },
+  {
+   "research_id": "RS-8c2dc51e79e7",
+   "title": "Allergic Rhinitis and Its Impact on Asthma (ARIA)-EAACI Guidelines-2024-2025 Revision: Part I-Guidelines on Intranasal Treatments",
+   "container": "Allergy",
+   "doi": "10.1111/all.70131",
+   "pmid": "41324154",
+   "reason": "klinik fan (sud tibbiyoti/toksikologiyaga aloqasiz kasallik)"
+  },
+  {
+   "research_id": "RS-9215ad4363dc",
+   "title": "Cagrilintide-Semaglutide in Adults with Overweight or Obesity and Type 2 Diabetes",
+   "container": "The New England journal of medicine",
+   "doi": "10.1056/NEJMoa2502082",
+   "pmid": "40544432",
+   "reason": "klinik fan (sud tibbiyoti/toksikologiyaga aloqasiz kasallik)"
+  },
+  {
+   "research_id": "RS-9a74f454f698",
+   "title": "Chlorpyrifos and wildlife",
+   "container": "The Veterinary record",
+   "doi": "10.1136/vr.114.4.101-a",
+   "pmid": "6202046",
+   "reason": "oziq-ovqat / veterinariya / hayvonlar"
+  },
+  {
+   "research_id": "RS-9c5cfb191761",
+   "title": "Management of MDA-5 antibody positive clinically amyopathic dermatomyositis associated interstitial lung disease: A systematic review",
+   "container": "Seminars in arthritis and rheumatism",
+   "doi": "10.1016/j.semarthrit.2022.151959",
+   "pmid": "35134633",
+   "reason": "klinik fan (tropik/revmatologik kasallik)"
+  },
+  {
+   "research_id": "RS-a566cafe4342",
+   "title": "B-cell depletion with obinutuzumab for the treatment of proliferative lupus nephritis: a randomised, double-blind, placebo-controlled trial",
+   "container": "Annals of the rheumatic diseases",
+   "doi": "10.1136/annrheumdis-2021-220920",
+   "pmid": "34615636",
+   "reason": "klinik terapiya sinovi (davolash samaradorligi)"
+  },
+  {
+   "research_id": "RS-aa2b4fe3959a",
+   "title": "The Mbam drainage system and onchocerciasis transmission post ivermectin mass drug administration (MDA) campaign, Cameroon",
+   "container": "PLoS neglected tropical diseases",
+   "doi": "10.1371/journal.pntd.0008926",
+   "pmid": "33465080",
+   "reason": "klinik fan (tropik/revmatologik kasallik)"
+  },
+  {
+   "research_id": "RS-b2dc948cc4ab",
+   "title": "Sepsis in patients who are immunocompromised: diagnostic challenges and future therapies",
+   "container": "The Lancet. Respiratory medicine",
+   "doi": "10.1016/S2213-2600(25)00124-9",
+   "pmid": "40409328",
+   "reason": "klinik fan (sud tibbiyoti/toksikologiyaga aloqasiz kasallik)"
+  },
+  {
+   "research_id": "RS-b465cc85bf29",
+   "title": "Lenvatinib plus pembrolizumab versus lenvatinib plus placebo for advanced hepatocellular carcinoma (LEAP-002): a randomised, double-blind, phase 3 trial",
+   "container": "The Lancet. Oncology",
+   "doi": "10.1016/S1470-2045(23)00469-2",
+   "pmid": "38039993",
+   "reason": "klinik terapiya sinovi (davolash samaradorligi)"
+  },
+  {
+   "research_id": "RS-c12efab77548",
+   "title": "Formation of chloroform and chlorinated organics by free-chlorine-mediated oxidation of triclosan",
+   "container": "Environmental science & technology",
+   "doi": "10.1021/es048943+",
+   "pmid": "15926568",
+   "reason": "atrof-muhit / biodegradatsiya"
+  },
+  {
+   "research_id": "RS-c471187e6a51",
+   "title": "COVID-19 in Sudan",
+   "container": "Journal of infection in developing countries",
+   "doi": "10.3855/jidc.14520",
+   "pmid": "33690201",
+   "reason": "mamlakat sharhi (mavzuga aloqasiz)"
+  },
+  {
+   "research_id": "RS-c6b081ea4f6f",
+   "title": "Efficacy and safety of once-weekly semaglutide versus once-daily sitagliptin as an add-on to metformin, thiazolidinediones, or both, in patients with type 2 diabetes (SUSTAIN 2): a 56-week, double-blind, phase 3a, randomised trial",
+   "container": "The lancet. Diabetes & endocrinology",
+   "doi": "10.1016/S2213-8587(17)30092-X",
+   "pmid": "28385659",
+   "reason": "klinik terapiya sinovi (davolash samaradorligi)"
+  },
+  {
+   "research_id": "RS-c7cbbf3f8a54",
+   "title": "Measuring Ambulation, Motor, and Behavioral Outcomes with Post-stroke Fluoxetine in Tanzania: The Phase II MAMBO Trial",
+   "container": "The American journal of tropical medicine and hygiene",
+   "doi": "10.4269/ajtmh.21-0653",
+   "pmid": "34872059",
+   "reason": "klinik terapiya sinovi (davolash samaradorligi)"
+  },
+  {
+   "research_id": "RS-ce512277fa21",
+   "title": "The biotransformation of ibuprofen to trihydroxyibuprofen in activated sludge and by Variovorax Ibu-1",
+   "container": "Biodegradation",
+   "doi": "10.1007/s10532-015-9719-4",
+   "pmid": "25663336",
+   "reason": "atrof-muhit / biodegradatsiya"
+  },
+  {
+   "research_id": "RS-dc1842852526",
+   "title": "Methadone for cancer pain",
+   "container": "The Cochrane database of systematic reviews",
+   "doi": "10.1002/14651858.CD003971.pub4",
+   "pmid": "28177515",
+   "reason": "onkologiya"
+  },
+  {
+   "research_id": "RS-eaba2aaaed1d",
+   "title": "The Determination of Polycyclic Aromatic Hydrocarbons (PAHs) with HPLC-DAD-FLD and GC-MS Techniques in the Dissolved and Particulate Phase of Road-Tunnel Wash Water: A Case Study for Cross-Array Comparisons and Applications",
+   "container": "Toxics",
+   "doi": "10.3390/toxics10070399",
+   "pmid": "35878304",
+   "reason": "atrof-muhit / biodegradatsiya"
+  },
+  {
+   "research_id": "RS-eb411790d89f",
+   "title": "Heterogeneity of multiple sclerosis lesions: implications for the pathogenesis of demyelination",
+   "container": "Annals of neurology",
+   "doi": "10.1002/1531-8249(200006)47:6<707::aid-ana3>3.0.co;2-q",
+   "pmid": "10852536",
+   "reason": "klinik fan (sud tibbiyoti/toksikologiyaga aloqasiz kasallik)"
+  },
+  {
+   "research_id": "RS-ecd12a271e4a",
+   "title": "First-Principles-Based Multiscale Modelling of Nonoxidative Butane Dehydrogenation on Cr(2)O(3)(0001)",
+   "container": "ACS catalysis",
+   "doi": "10.1021/acscatal.0c03197",
+   "pmid": "33362945",
+   "reason": "sanoat kimyosi / kataliz (sud amaliyotiga aloqasiz)"
+  },
+  {
+   "research_id": "RS-eee65ab3d77e",
+   "title": "Switch to fulvestrant and palbociclib versus no switch in advanced breast cancer with rising ESR1 mutation during aromatase inhibitor and palbociclib therapy (PADA-1): a randomised, open-label, multicentre, phase 3 trial",
+   "container": "The Lancet. Oncology",
+   "doi": "10.1016/S1470-2045(22)00555-1",
+   "pmid": "36183733",
+   "reason": "klinik terapiya sinovi (davolash samaradorligi)"
+  },
+  {
+   "research_id": "RS-f0817bcfb48f",
+   "title": "Diphenhydramine photoallergy",
+   "container": "Archives of dermatology",
+   "doi": null,
+   "pmid": "4277438",
+   "reason": "klinik fan (sud tibbiyoti/toksikologiyaga aloqasiz kasallik)"
+  },
+  {
+   "research_id": "RS-f428f4ec942c",
+   "title": "Recent Advances in Quenchbody, a Fluorescent Immunosensor",
+   "container": "Sensors (Basel, Switzerland)",
+   "doi": "10.3390/s21041223",
+   "pmid": "33572319",
+   "reason": "fundamental kimyo/biotexnologiya (sud amaliyotiga aloqasiz)"
+  },
+  {
+   "research_id": "RS-fee1a99c5a05",
+   "title": "The use of intravenous lidocaine for postoperative pain and recovery: international consensus statement on efficacy and safety",
+   "container": "Anaesthesia",
+   "doi": "10.1111/anae.15270",
+   "pmid": "33141959",
+   "reason": "klinik terapiya sinovi (davolash samaradorligi)"
+  }
+ ]
+}

@@ -5,6 +5,7 @@ import 'dart:math';
 import 'package:crypto/crypto.dart';
 
 import '../../domain/auth/auth_models.dart';
+import '../../domain/auth/social_sign_in.dart';
 import '../../domain/ports/backend_ports.dart';
 
 /// MOCK email (haqiqiy xat yuborilmaydi). Faqat testlar va
@@ -213,6 +214,15 @@ class MockAuthRepository implements AuthRepository {
   }
 
   @override
+  Future<AuthOutcome> signInWithIdToken({
+    required SocialProvider provider,
+    required String idToken,
+    String? nonce,
+    String? fullName,
+    String? acceptedTermsVersion,
+  }) async => const AuthOutcome.fail(AuthFailure.backendNotConfigured);
+
+  @override
   Future<AuthOutcome> signIn({
     required String email,
     required String password,
@@ -320,7 +330,10 @@ class MockAuthRepository implements AuthRepository {
   }
 
   @override
-  Future<AuthOutcome> deleteAccount({required String password}) async {
+  Future<AuthOutcome> deleteAccount({
+    required String password,
+    String? appleAuthorizationCode,
+  }) async {
     final a = _state.account;
     if (a == null) return const AuthOutcome.fail(AuthFailure.notSignedIn);
     final u = _users[a.email]!;

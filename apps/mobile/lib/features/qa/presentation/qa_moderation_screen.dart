@@ -48,7 +48,7 @@ class _QaModerationScreenState extends ConsumerState<QaModerationScreen> {
     return QaGate(
       title: l.qaModerationTitle,
       child: Scaffold(
-        appBar: AppBar(title: Text(l.qaModerationTitle)),
+        appBar: AppBar(title: FeAppBarTitle(l.qaModerationTitle)),
         body: SafeArea(
           child: !isAdmin
               ? FeEmptyState(

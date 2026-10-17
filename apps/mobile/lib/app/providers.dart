@@ -11,6 +11,7 @@ import '../core/flags.dart';
 import '../core/settings/app_settings.dart';
 import '../core/settings/settings_controller.dart';
 import '../core/telemetry/telemetry.dart';
+import '../data/auth/native_social_credential_source.dart';
 import '../data/content/content_evidence_loader.dart';
 import '../data/content/content_knowledge_repository.dart';
 import '../data/content/content_library_repository.dart';
@@ -20,12 +21,11 @@ import '../data/fixtures/test_fixtures.dart';
 import '../data/local/content_store.dart';
 import '../data/offline/offline_ai.dart';
 import '../data/offline/offline_backend.dart';
-import '../data/offline/offline_billing.dart';
-import '../domain/admin/admin_models.dart';
 import '../domain/ai/ai_architecture.dart';
 import '../domain/ai/local_retrieval.dart';
 import '../domain/ai/provenance_retrieval.dart';
 import '../domain/ai/rag_pipeline.dart';
+import '../domain/auth/social_sign_in.dart';
 import '../domain/evidence/content_translations.dart';
 import '../domain/evidence/evidence_models.dart';
 import '../domain/evidence/provenance_models.dart';
@@ -34,10 +34,9 @@ import '../domain/jurisdiction/jurisdiction_catalog.dart';
 import '../domain/knowledge/knowledge_models.dart';
 import '../domain/learn/learn_models.dart';
 import '../domain/library/library_models.dart';
+import '../domain/ports/ai_entitlement.dart';
 import '../domain/ports/ai_ports.dart';
 import '../domain/ports/backend_ports.dart';
-import '../domain/ports/billing_ports.dart';
-import 'account.dart';
 
 /// Dependency injection nuqtasi. Feature’lar `lib/data` ni to‘g‘ridan-to‘g‘ri
 /// import qilmaydi — faqat shu provayderlar orqali (architecture testi).
@@ -46,6 +45,15 @@ import 'account.dart';
 
 final authRepositoryProvider = Provider<AuthRepository>(
   (ref) => const OfflineAuthRepository(),
+);
+
+/// Native Google/Apple token manbai (testlarda soxta bilan almashtiriladi).
+final socialCredentialSourceProvider = Provider<SocialCredentialSource>(
+  (ref) => NativeSocialCredentialSource(),
+);
+
+final socialSignInServiceProvider = Provider<SocialSignInService>(
+  (ref) => SocialSignInService(ref.watch(socialCredentialSourceProvider)),
 );
 
 /// Akkaunt holati. Akkaunt ixtiyoriy — `signedOut` normal holat.
@@ -74,11 +82,7 @@ final contentUpdateRepositoryProvider = Provider<ContentUpdateRepository>(
   (ref) => const DisabledContentUpdateRepository(),
 );
 
-final entitlementServiceProvider = Provider<EntitlementService>(
-  (ref) => const StoreUnavailableEntitlementService(),
-);
-
-/// Forensic AI ruxsati tarifdan alohida (server xarajati bor).
+/// Forensic AI ruxsati: kirgan foydalanuvchiga server kvotasi doirasida.
 final aiEntitlementServiceProvider = Provider<AiEntitlementService>(
   (ref) => const NoAiEntitlementService(),
 );
@@ -382,18 +386,3 @@ final imageBytesProvider = FutureProvider.family<Uint8List?, String>((
   final loader = await ref.watch(imageBytesLoaderProvider.future);
   return loader.load(imageId);
 });
-
-/// Joriy kirish huquqi (store o‘zgarishlarini kuzatadi).
-final entitlementsProvider = StreamProvider<Entitlements>(
-  (ref) => ref.watch(entitlementServiceProvider).watch(),
-);
-
-/// UI uchun sinxron qiymat: oqim hali kelmagan bo‘lsa — servisning joriy holati.
-/// Store huquqi va server grant (`access_grants`, masalan egasi) — yuqorisi.
-final accessProvider = Provider<Entitlements>(
-  (ref) => mergeServerGrant(
-    ref.watch(entitlementsProvider).value ??
-        ref.watch(entitlementServiceProvider).current,
-    ref.watch(serverAccessProvider).value ?? ServerAccess.none,
-  ),
-);

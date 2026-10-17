@@ -137,7 +137,11 @@ void main() {
     });
 
     await qa.step('Kutubxona markazi', (s) async {
-      await qa.tapTooltip('Kutubxona');
+      // Kutubxona suzuvchi menyuda tab emas — Asosiy tepasidagi katta tugma.
+      goTo(tester, Routes.home);
+      await qa.settle();
+      await qa.scrollToTop();
+      await qa.tapFinder(find.byKey(const Key('home.library')));
       qa.expectText('Moddalar', s);
       qa.expectText('Yo‘riqnomalar', s);
     }, shot: false);
@@ -161,14 +165,13 @@ void main() {
       qa.expectText('Tahlil usullari', s);
     });
 
-    await qa.step('Manba iqtibosi + o‘zbekcha tarjima', (s) async {
+    await qa.step('Metabolitlar → tadqiqotlar va dalillar bloki', (s) async {
       await qa.tapText('Metabolitlar');
-      // Tarjima belgisi endi yuqoridagi bo‘limlarda ham uchraydi, shuning uchun
-      // aynan iqtibos blokigacha aylantiriladi.
-      await qa.scrollUntil(find.text('Manbadan iqtibos'));
-      qa.expectText('Manbadan iqtibos', s);
-      qa.expectText('Avtomatik tarjima', s);
-      qa.expectText('atsetaldegid', s);
+      // Tahlil bo‘limi 3 qismga bo‘lingandan keyin «Manbadan iqtibos» bloki
+      // modda sahifasining shu yo‘lida emas: dalil kartalari «Tadqiqotlar va
+      // dalillar» bo‘limida (tahlil: docs/UX_AUDIT_2026-10-17.md).
+      await qa.scrollUntil(find.text('Tadqiqotlar va dalillar'));
+      qa.expectText('Tadqiqotlar va dalillar', s);
       qa.expectNoText('untitled opening section', s, why: 'xom bo‘lim izohi');
     });
 
@@ -233,29 +236,14 @@ void main() {
       qa.expectText('Etanol', s);
     });
 
-    // ------------------------------------------------------ Bepul vs Pro
-    await qa.step('Pro modda (Alprazolam) — qulf kartasi', (s) async {
+    // --------------------------------- hamma bepul va ochiq (Pro/paywall yo‘q)
+    await qa.step('Alprazolam — qulf/tarif yo‘q, Tahlil ochiq', (s) async {
       goTo(tester, Routes.librarySection('substances'));
       await qa.settle();
       await qa.tapText('Alprazolam');
-      await qa.scrollUntil(find.text('Tariflarni ko‘rish'));
-      qa.expectText('Tariflarni ko‘rish', s);
-    });
-
-    await qa.step('Tariflarni ko‘rish → paywall', (s) async {
-      await qa.tapText('Tariflarni ko‘rish');
-      qa.expectText('Talaba Pro', s);
-      qa.expectText('Xaridlarni tiklash', s);
-    });
-
-    await qa.step('Paywall: do‘kon yo‘q — narx/xarid o‘chiq, xabar bor', (
-      s,
-    ) async {
-      await qa.tapText('Obuna bo‘lish');
-      final t = qa.visibleTexts().join(' ');
-      if (!t.contains('mavjud emas') && !t.contains('do‘kon')) {
-        s.passed = false;
-        s.notes.add('Do‘kon yo‘qligi haqida xabar ko‘rinmadi');
+      qa.expectText('Tahlil', s);
+      for (final t in ['Tariflarni ko‘rish', 'Talaba Pro', 'Obuna bo‘lish']) {
+        qa.expectNoText(t, s, why: 'paywall qolmasligi kerak');
       }
     });
 
@@ -329,7 +317,6 @@ void main() {
       ('320×640: Asosiy', Routes.home),
       ('320×640: Etanol yozuvi', Routes.libraryEntry('ethanol')),
       ('320×640: qidiruv «alkogol»', Routes.searchWith('alkogol')),
-      ('320×640: tariflar', Routes.purchase),
       ('320×640: Profil', Routes.profile),
     ]) {
       await qa.step(title, (s) async {

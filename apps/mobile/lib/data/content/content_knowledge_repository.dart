@@ -72,9 +72,6 @@ abstract final class ContentKnowledgeLoader {
             ownStatus,
             for (final c in claims) c.status,
           ]),
-          access: r.read<String>('tier_access') == 'free'
-              ? EntryAccess.free
-              : EntryAccess.lifetime,
           isTestData: r.read<int>('is_test_data') == 1,
           version: r.read<int>('version'),
           packVersion: packVersion,

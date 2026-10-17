@@ -17,9 +17,8 @@ import '../analysis_plan_text.dart';
 import '../pro_strings.dart';
 import 'pro_widgets.dart';
 
-/// «Modda bo‘yicha tahlil rejasi» (Pro). Bepul foydalanuvchi: qisqa ko‘rinish
-/// (sonlar va namunalar) + tariflar taklifi. Pro: to‘liq reja, har blokda
-/// manba va aniq joyi, holat belgisi, hamda iqtiboslar bilan nusxalash.
+/// «Modda bo‘yicha tahlil rejasi»: to‘liq reja, har blokda manba va aniq
+/// joyi, holat belgisi, hamda iqtiboslar bilan nusxalash.
 class AnalysisPlanScreen extends ConsumerWidget {
   const AnalysisPlanScreen({super.key, required this.entityId});
 
@@ -31,7 +30,6 @@ class AnalysisPlanScreen extends ConsumerWidget {
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
     final lang = Localizations.localeOf(context).languageCode;
-    final unlocked = ref.watch(proToolsUnlockedProvider);
     final plan = ref.watch(analysisPlanProvider(entityId));
     final nameOf = proNameResolver(ref, lang);
     final title = nameOf(entityId);
@@ -155,52 +153,7 @@ class AnalysisPlanScreen extends ConsumerWidget {
       const SizedBox(height: FeSpace.sm),
     ];
 
-    if (!unlocked) {
-      body
-        ..add(
-          FeCard(
-            key: const Key('plan.preview'),
-            padding: const EdgeInsets.all(FeSpace.sm),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  l.planSummary(
-                    plan.specimens.length,
-                    plan.presumptive.length,
-                    plan.confirmation.length,
-                    plan.limits.length,
-                  ),
-                  key: const Key('plan.summary'),
-                  style: t.bodyMedium,
-                ),
-                if (plan.specimens.isNotEmpty) ...[
-                  const SizedBox(height: FeSpace.xs),
-                  Text(
-                    l.planSecSpecimens,
-                    style: t.labelMedium?.copyWith(color: c.textSecondary),
-                  ),
-                  Text(
-                    plan.specimens
-                        .map((s) => nameOf(s.specimenId))
-                        .join(FeGlyphs.listSeparator),
-                    key: const Key('plan.preview.specimens'),
-                    style: t.bodyMedium,
-                  ),
-                ],
-              ],
-            ),
-          ),
-        )
-        ..add(const SizedBox(height: FeSpace.sm))
-        ..add(
-          ProLockedCard(
-            title: l.planLockedTitle(l.tierProfessionalPro),
-            body: l.planLockedBody,
-            buttonKey: const Key('plan.unlock'),
-          ),
-        );
-    } else if (plan.isEmpty && plan.presumptive.isEmpty) {
+    if (plan.isEmpty && plan.presumptive.isEmpty) {
       body.add(
         FeEmptyState(
           key: const Key('plan.noData'),
@@ -413,9 +366,9 @@ class AnalysisPlanScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(l.planTitle),
+        title: FeAppBarTitle(l.planTitle),
         actions: [
-          if (unlocked && !plan.isEmpty)
+          if (!plan.isEmpty)
             IconButton(
               key: const Key('plan.copy'),
               tooltip: l.planCopy,

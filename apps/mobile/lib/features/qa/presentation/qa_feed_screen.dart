@@ -12,6 +12,7 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/qa/qa_models.dart';
+import '../../moderation/presentation/moderation_widgets.dart';
 import '../qa_strings.dart';
 import 'qa_widgets.dart';
 
@@ -39,7 +40,7 @@ class _QaFeedScreenState extends ConsumerState<QaFeedScreen> {
       title: l.qaTitle,
       child: Scaffold(
         appBar: AppBar(
-          title: Text(l.qaTitle),
+          title: FeAppBarTitle(l.qaTitle),
           actions: [
             IconButton(
               key: const Key('qa.rules'),
@@ -102,6 +103,8 @@ class _QaFeedScreenState extends ConsumerState<QaFeedScreen> {
                       ),
                       const SizedBox(height: FeSpace.sm),
                       ..._content(context, l, feed),
+                      // Ko‘rinadigan aloqa (Apple 1.2).
+                      const Center(child: SupportContactLine()),
                       const SizedBox(height: FeSpace.xxl),
                     ],
                   ),

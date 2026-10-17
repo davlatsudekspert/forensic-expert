@@ -80,7 +80,7 @@ class _GuidelinesScreenState extends ConsumerState<GuidelinesScreen> {
     final c = FeTheme.of(context);
 
     return Scaffold(
-      appBar: AppBar(title: Text(l.guidelinesTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.guidelinesTitle)),
       body: SafeArea(
         child: ListView(
           keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
@@ -250,7 +250,7 @@ class _GuidelineDetailScreenState extends ConsumerState<GuidelineDetailScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(l.guidelinesTitle),
+        title: FeAppBarTitle(l.guidelinesTitle),
         actions: [
           ReportErrorMenu(entityId: 'guideline:${card.id}', title: title.text),
         ],

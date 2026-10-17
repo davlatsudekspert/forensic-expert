@@ -20,6 +20,8 @@ import '../../../core/widgets/brand_mark.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
+import '../../class_quiz/presentation/teacher_panel_screen.dart'
+    show watchIsTeacher;
 import '../../referral/presentation/invite_card.dart';
 import '../../tools/tool_strings.dart';
 import 'first_steps_card.dart';
@@ -235,6 +237,9 @@ class HomeScreen extends ConsumerWidget {
         if (!featured.contains(m) && m != HomeModule.ai) m,
     ];
     final guidelinesFeatured = actions.contains(HomeAction.guidelines);
+    // Ustoz paneli hamma rejimda ko‘rinadi; server ustoz rolini bersa —
+    // tezkor amallardan keyin (yuqorida), aks holda bo‘limlardan keyin.
+    final teacher = watchIsTeacher(ref);
 
     // Ierarxiya: sarlavha (salom, rejim, qidiruv) → rejimga mos 4 ta tezkor
     // amal → birinchi qadamlar → bo‘limlar → davom ettirish → taklif →
@@ -255,8 +260,12 @@ class HomeScreen extends ConsumerWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  const SizedBox(height: FeSpace.md),
+                  const SizedBox(height: FeSpace.lg),
                   _ActionGrid(actions: actions),
+                  if (teacher) ...[
+                    const SizedBox(height: FeSpace.sm),
+                    const _TeacherPanelCard(teacher: true),
+                  ],
                   if (FeFlags.showTestFixtures) ...[
                     const SizedBox(height: FeSpace.md),
                     FeBanner(
@@ -267,6 +276,10 @@ class HomeScreen extends ConsumerWidget {
                   const FirstStepsCard(),
                   FeSectionHeader(l.homeAreasTitle),
                   _ModuleGrid(modules: modules),
+                  if (!teacher) ...[
+                    const SizedBox(height: FeSpace.sm),
+                    const _TeacherPanelCard(teacher: false),
+                  ],
                   if (!guidelinesFeatured) ...[
                     const SizedBox(height: FeSpace.sm),
                     _ResourceTile(
@@ -277,8 +290,8 @@ class HomeScreen extends ConsumerWidget {
                       onTap: () => context.push(Routes.guidelines),
                     ),
                   ],
-                  // Mutaxassis rejimi: sudda so‘roqqa tayyorgarlik (Pro;
-                  // bepul — namunaviy savollar). Talabada — Kutubxonada.
+                  // Mutaxassis rejimi: sudda so‘roqqa tayyorgarlik.
+                  // Talabada — Kutubxonada.
                   if (mode != UserMode.student) ...[
                     const SizedBox(height: FeSpace.sm),
                     _ResourceTile(
@@ -375,7 +388,12 @@ class _ActionCard extends StatelessWidget {
     return FeCard(
       key: action.key,
       color: gold ? c.accentContainer : null,
-      padding: const EdgeInsets.all(FeSpace.sm),
+      padding: const EdgeInsets.fromLTRB(
+        FeSpace.md,
+        FeSpace.md,
+        FeSpace.sm,
+        FeSpace.md,
+      ),
       onTap: () =>
           action.isTab ? context.go(action.route) : context.push(action.route),
       child: Column(
@@ -388,11 +406,11 @@ class _ActionCard extends StatelessWidget {
               border: gold ? Border.all(color: c.accentBorder) : null,
             ),
             child: SizedBox.square(
-              dimension: 40,
+              dimension: 44,
               child: Icon(
                 action.icon,
                 color: gold ? c.accent : action.hue.fg(b),
-                size: 22,
+                size: 24,
               ),
             ),
           ),
@@ -442,16 +460,54 @@ class _ResourceTile extends StatelessWidget {
       child: _EntryLayout(
         leading: DecoratedBox(
           decoration: BoxDecoration(
-            color: c.surface,
+            color: c.accentContainer,
             borderRadius: BorderRadius.circular(FeRadius.md),
           ),
           child: SizedBox.square(
-            dimension: 40,
-            child: Icon(icon, color: c.textPrimary, size: 21),
+            dimension: 44,
+            child: Icon(icon, color: c.accent, size: 22),
           ),
         ),
         title: Text(title, style: t.titleSmall),
         body: body,
+        trailing: Icon(Icons.chevron_right, color: c.textSecondary),
+      ),
+    );
+  }
+}
+
+/// «Ustoz paneli» kirishi: bitta bosishda panel (test o‘tkazish, natijalar
+/// va CSV, sinfga qo‘shilish). Ustoz rolida — yuqorida, oltin aksent bilan.
+class _TeacherPanelCard extends StatelessWidget {
+  const _TeacherPanelCard({required this.teacher});
+
+  final bool teacher;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    return FeCard(
+      key: const Key('home.teacher'),
+      onTap: () => context.push(Routes.teacher),
+      child: _EntryLayout(
+        leading: DecoratedBox(
+          decoration: BoxDecoration(
+            color: c.accentContainer,
+            borderRadius: BorderRadius.circular(FeRadius.md),
+            border: Border.all(color: c.accentBorder),
+          ),
+          child: SizedBox.square(
+            dimension: 44,
+            child: Icon(Icons.co_present_outlined, color: c.accent, size: 24),
+          ),
+        ),
+        title: Text(
+          l.teacherPanelTitle,
+          style: t.titleMedium?.copyWith(fontSize: 17, height: 1.25),
+        ),
+        body: teacher ? l.teacherPanelHomeBody : l.teacherPanelHomeBodyStudent,
         trailing: Icon(Icons.chevron_right, color: c.textSecondary),
       ),
     );
@@ -670,7 +726,12 @@ class _AllDisciplinesCard extends StatelessWidget {
     final t = Theme.of(context).textTheme;
     return FeCard(
       key: const Key('home.allDisciplines'),
-      padding: const EdgeInsets.all(FeSpace.sm),
+      padding: const EdgeInsets.fromLTRB(
+        FeSpace.md,
+        FeSpace.md,
+        FeSpace.sm,
+        FeSpace.md,
+      ),
       onTap: () => context.push(Routes.disciplines),
       child: ConstrainedBox(
         constraints: const BoxConstraints(minHeight: 84),
@@ -868,10 +929,10 @@ class _ModuleCard extends StatelessWidget {
     return FeCard(
       key: Key('home.module.${module.name}'),
       padding: const EdgeInsets.fromLTRB(
+        FeSpace.md,
+        FeSpace.md,
         FeSpace.sm,
-        FeSpace.sm,
-        FeSpace.sm,
-        FeSpace.sm,
+        FeSpace.md,
       ),
       onTap: () =>
           module.isTab ? context.go(module.route) : context.push(module.route),
@@ -1014,7 +1075,7 @@ class _HomeHero extends ConsumerWidget {
                       _RoleChip(
                         icon: student
                             ? Icons.school_outlined
-                            : Icons.workspace_premium_outlined,
+                            : Icons.badge_outlined,
                         label: l.homeRoleChip(modeLabel),
                       ),
                       const SizedBox(height: FeSpace.sm),

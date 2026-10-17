@@ -1,12 +1,10 @@
 import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/widgets/common.dart';
 import 'package:forensic_expert/domain/knowledge/knowledge_models.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 
@@ -25,10 +23,7 @@ void main() {
     settings: completedSettings().copyWith(jurisdictionId: jurisdiction),
     initialLocation: location,
     testFixtures: false,
-    overrides: [
-      ...pilot.overrides,
-      entitlementServiceProvider.overrideWithValue(FakeStore(owned: owned)),
-    ],
+    overrides: [...pilot.overrides],
   );
 
   Future<void> see(WidgetTester tester, Finder f) async {
@@ -84,11 +79,11 @@ void main() {
     );
   });
 
-  testWidgets('Lifetime yozuvda ham cheklovlar va manbalar ochiq', (
+  testWidgets('yozuvda cheklovlar va manbalar ochiq, qulf kartasi yo‘q', (
     tester,
   ) async {
     await open(tester, Routes.knowledgeEntry('fm-postmortem-interval'));
-    await see(tester, find.byKey(const Key('knowledge.locked')));
+    expect(find.byKey(const Key('knowledge.locked')), findsNothing);
     await see(
       tester,
       find.byKey(const Key('claim.C-FM-POSTMORTEM-INTERVAL-LIMITATION')),
@@ -226,9 +221,7 @@ void main() {
       tester,
       settings: completedSettings(),
       initialLocation: Routes.tool('tool.lab.solution'),
-      overrides: [
-        entitlementServiceProvider.overrideWithValue(FakeStore(owned: true)),
-      ],
+      overrides: [],
     );
     await tester.enterText(
       find.descendant(
@@ -244,7 +237,12 @@ void main() {
       ),
       '100',
     );
-    await tester.ensureVisible(find.byKey(const Key('calc.calculate')));
+    // Markazga: pastki suzuvchi navigatsiya tugmani yopib qo‘ymasin.
+    await Scrollable.ensureVisible(
+      tester.element(find.byKey(const Key('calc.calculate'))),
+      alignment: 0.5,
+    );
+    await tester.pumpAndSettle();
     await tester.tap(find.byKey(const Key('calc.calculate')));
     await tester.pumpAndSettle();
     // 0.1 g/L × 0.1 L = 0.01 g = 10 mg (ta’rifiy hisob).

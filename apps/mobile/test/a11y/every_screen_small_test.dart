@@ -35,10 +35,6 @@ class _AdminAccount implements AccountService {
 
   @override
   Future<AdminDashboard?> dashboard() async => null;
-
-  @override
-  Future<AdminGrantResult> setAccess(String email, String? tier) async =>
-      AdminGrantResult.failed;
 }
 
 void main() {

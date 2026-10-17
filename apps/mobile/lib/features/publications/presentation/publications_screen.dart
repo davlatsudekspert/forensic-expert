@@ -62,7 +62,7 @@ class _PublicationsScreenState extends ConsumerState<PublicationsScreen> {
       title: l.pubTitle,
       child: Scaffold(
         appBar: AppBar(
-          title: Text(l.pubTitle),
+          title: FeAppBarTitle(l.pubTitle),
           actions: [
             if (signedIn)
               IconButton(
@@ -134,7 +134,8 @@ class _PublicationsScreenState extends ConsumerState<PublicationsScreen> {
             FeEmptyState(
               key: const Key('publications.empty'),
               icon: Icons.article_outlined,
-              body: l.pubEmpty,
+              title: l.pubEmptyTitle,
+              body: l.pubEmptyBody,
             ),
           ];
         }
@@ -261,7 +262,7 @@ class PublicationDetailScreen extends ConsumerWidget {
       title: l.pubTitle,
       child: Scaffold(
         appBar: AppBar(
-          title: Text(l.pubTitle),
+          title: FeAppBarTitle(l.pubTitle),
           actions: [
             if (signedIn && data.value?.status == PublicationStatus.published)
               IconButton(

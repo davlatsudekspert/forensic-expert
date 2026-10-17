@@ -14,7 +14,6 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
 import '../../../domain/library/full_text.dart';
 import '../../../domain/library/library_models.dart';
-import '../../../domain/ports/billing_ports.dart';
 import '../../../domain/referral/share_text.dart';
 import '../../common/share_button.dart';
 import 'content_entry_sections.dart';
@@ -110,7 +109,7 @@ class SourceDetailScreen extends ConsumerWidget {
     final entry = ref.watch(sourceIndexProvider)[sourceId];
     return Scaffold(
       appBar: AppBar(
-        title: Text(l.sourceDetailTitle),
+        title: FeAppBarTitle(l.sourceDetailTitle),
         actions: [
           if (entry != null)
             ShareButton(
@@ -175,21 +174,17 @@ class SourceDetailScreen extends ConsumerWidget {
 }
 
 /// «To‘liq matn (PDF)» — faqat ochiq kirishdagi (PubMed Central) maqolalar,
-/// Pro foydalanuvchilar uchun. PDF qurilmaning ko‘ruvchisida ochiladi.
-class _FullTextButton extends ConsumerWidget {
+/// hamma uchun. PDF qurilmaning ko‘ruvchisida ochiladi.
+class _FullTextButton extends StatelessWidget {
   const _FullTextButton({required this.pdf});
 
   final Uri pdf;
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
     final t = Theme.of(context).textTheme;
     final c = FeTheme.of(context);
-    final pro = AccessPolicy.unlocks(
-      ProductFeature.verifiedReferences,
-      ref.watch(accessProvider),
-    );
     return Padding(
       padding: const EdgeInsets.only(top: FeSpace.sm),
       child: Column(
@@ -197,15 +192,9 @@ class _FullTextButton extends ConsumerWidget {
         children: [
           FilledButton.tonalIcon(
             key: const Key('source.fullTextPdf'),
-            icon: Icon(
-              pro ? Icons.picture_as_pdf_outlined : Icons.lock_outline,
-            ),
+            icon: const Icon(Icons.picture_as_pdf_outlined),
             label: Text(l.fullTextPdf),
             onPressed: () async {
-              if (!pro) {
-                await context.push(Routes.purchase);
-                return;
-              }
               final messenger = ScaffoldMessenger.of(context);
               final ok = await launchUrl(
                 pdf,
@@ -220,7 +209,7 @@ class _FullTextButton extends ConsumerWidget {
           ),
           const SizedBox(height: FeSpace.xxs),
           Text(
-            pro ? l.fullTextPdfNote : l.fullTextPdfPro,
+            l.fullTextPdfNote,
             key: const Key('source.fullTextNote'),
             style: t.bodySmall?.copyWith(color: c.textSecondary),
           ),

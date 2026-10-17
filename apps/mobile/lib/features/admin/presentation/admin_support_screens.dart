@@ -12,6 +12,7 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/professional/professional_models.dart';
 import '../../../domain/support/support_models.dart';
+import '../../moderation/presentation/admin_user_actions.dart';
 import '../../professional/professional_strings.dart';
 import '../../support/presentation/support_screens.dart';
 import '../../support/presentation/support_widgets.dart';
@@ -59,7 +60,7 @@ class _AdminInboxScreenState extends ConsumerState<AdminInboxScreen> {
     return AdminGate(
       child: Scaffold(
         appBar: AppBar(
-          title: Text(l.admNavInbox),
+          title: FeAppBarTitle(l.admNavInbox),
           actions: [
             IconButton(
               tooltip: l.adminRefresh,
@@ -125,6 +126,7 @@ class _AdminInboxScreenState extends ConsumerState<AdminInboxScreen> {
                     ),
                     const SizedBox(height: FeSpace.xs),
                     DropdownButtonFormField<SupportCategory?>(
+                      style: Theme.of(context).textTheme.bodyLarge,
                       key: const Key('adminInbox.category'),
                       initialValue: _filter.category,
                       isExpanded: true,
@@ -267,7 +269,7 @@ class _AdminThreadScreenState extends ConsumerState<AdminThreadScreen> {
     return AdminGate(
       child: Scaffold(
         appBar: AppBar(
-          title: Text(l.admNavInbox),
+          title: FeAppBarTitle(l.admNavInbox),
           actions: [
             PopupMenuButton<SupportStatus>(
               key: const Key('admin.status'),
@@ -323,7 +325,7 @@ class _AdminThreadScreenState extends ConsumerState<AdminThreadScreen> {
   }
 }
 
-/// Admin: foydalanuvchilar — qidiruv, rol/tarif saralash, sahifalash.
+/// Admin: foydalanuvchilar — qidiruv, rol saralash, sahifalash.
 class AdminUsersScreen extends ConsumerStatefulWidget {
   const AdminUsersScreen({super.key});
 
@@ -359,7 +361,7 @@ class _AdminUsersScreenState extends ConsumerState<AdminUsersScreen> {
         );
     return AdminGate(
       child: Scaffold(
-        appBar: AppBar(title: Text(l.admNavUsers)),
+        appBar: AppBar(title: FeAppBarTitle(l.admNavUsers)),
         body: SafeArea(
           child: ListView(
             keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
@@ -371,7 +373,7 @@ class _AdminUsersScreenState extends ConsumerState<AdminUsersScreen> {
                   children: [
                     const SizedBox(height: FeSpace.sm),
                     FeBanner(
-                      icon: Icons.lock_outline,
+                      icon: Icons.privacy_tip_outlined,
                       text: l.adminPrivacyNote,
                     ),
                     const SizedBox(height: FeSpace.sm),
@@ -407,29 +409,6 @@ class _AdminUsersScreenState extends ConsumerState<AdminUsersScreen> {
                               () => setState(
                                 () =>
                                     _f = _f.copyWith(role: () => v, offset: 0),
-                              ),
-                            ),
-                        ],
-                      ),
-                    ),
-                    SingleChildScrollView(
-                      keyboardDismissBehavior:
-                          ScrollViewKeyboardDismissBehavior.onDrag,
-                      scrollDirection: Axis.horizontal,
-                      child: Row(
-                        children: [
-                          for (final (v, label) in [
-                            (null, l.admTierAny),
-                            ('free', l.admTierFree),
-                            ('pro', l.admTierPro),
-                          ])
-                            chip(
-                              'adminUsers.tier.${v ?? 'any'}',
-                              label,
-                              _f.tier == v,
-                              () => setState(
-                                () =>
-                                    _f = _f.copyWith(tier: () => v, offset: 0),
                               ),
                             ),
                         ],
@@ -571,6 +550,12 @@ class _UserCard extends StatelessWidget {
                       color: c.accent,
                     ),
                   ),
+                IconButton(
+                  key: Key('adminUsers.actions.${u.email}'),
+                  tooltip: l.admxActions,
+                  icon: const Icon(Icons.more_vert),
+                  onPressed: () => showUserActionsSheet(context, u),
+                ),
               ],
             ),
             const SizedBox(height: FeSpace.xxs),
@@ -582,11 +567,6 @@ class _UserCard extends StatelessWidget {
                   icon: statusIcon,
                   label: statusLabel,
                   color: statusColor,
-                ),
-                StatusChip(
-                  icon: Icons.workspace_premium_outlined,
-                  label: l.admTierLabel(u.tier),
-                  color: u.tier == null ? c.textSecondary : c.accent,
                 ),
                 // Admin’dan boshqa rollar (masalan, maqolalar moderatori —
                 // admin huquqi YO‘Q).
@@ -641,7 +621,7 @@ class AdminAuditScreen extends ConsumerWidget {
     return AdminGate(
       child: Scaffold(
         appBar: AppBar(
-          title: Text(l.admNavAudit),
+          title: FeAppBarTitle(l.admNavAudit),
           actions: [
             IconButton(
               tooltip: l.adminRefresh,
@@ -688,8 +668,6 @@ class AdminAuditScreen extends ConsumerWidget {
                                         e.detail['to'] != null)
                                       '${l.admAuditValue('${e.detail['from']}')} → '
                                           '${l.admAuditValue('${e.detail['to']}')}',
-                                    if (e.detail['tier'] != null)
-                                      l.admAuditValue('${e.detail['tier']}'),
                                     if (e.detail['role'] != null)
                                       l.admAuditValue('${e.detail['role']}'),
                                   ].where((x) => x.isNotEmpty).join(FeGlyphs.middleDot),

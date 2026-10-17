@@ -5,7 +5,7 @@
 /// (qaysi tugmani ko‘rsatish). Server baribir har bir o‘tishni tekshiradi.
 ///
 /// Muhim: maqola yuborilishi yoki nashr etilishi uning ilmiy tasdiqlanganini
-/// bildirmaydi. Pullik obuna moderatsiya natijasiga ta’sir qilmaydi.
+/// bildirmaydi.
 library;
 
 enum PublicationStatus {

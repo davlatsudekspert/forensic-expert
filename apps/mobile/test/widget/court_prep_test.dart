@@ -6,11 +6,9 @@ import 'package:flutter_riverpod/misc.dart' show Override;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/court_prep.dart';
 import 'package:forensic_expert/app/guidelines.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/router.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
-import 'package:forensic_expert/domain/ports/billing_ports.dart';
 
 import '../helpers/pump_app.dart';
 
@@ -21,17 +19,9 @@ final _court = File('assets/content/court_prep/court_prep_v1.json')
 final _guidelines = File('assets/content/guidelines/guidelines_v1.json')
     .readAsStringSync();
 
-const _pro = Entitlements(
-  tier: PlanTier.professionalPro,
-  status: EntitlementStatus.active,
-  source: EntitlementSource.promo,
-  verification: EntitlementVerification.serverVerified,
-);
-
-List<Override> _overrides({bool pro = false}) => [
+List<Override> _overrides() => [
   courtPrepLoaderProvider.overrideWithValue(() async => _court),
   guidelineBundleLoaderProvider.overrideWithValue(() async => _guidelines),
-  if (pro) accessProvider.overrideWithValue(_pro),
 ];
 
 Finder _key(String k) => find.byKey(Key(k));
@@ -68,10 +58,8 @@ String? _mockClipboard(WidgetTester tester) {
 }
 
 void main() {
-  testWidgets('mutaxassis (bepul): Home → bo‘lim, ogohlantirish; har bir '
-      'karta to‘liq (A–I, manbalar bilan); Pro faqat kengaytirilgan mashq', (
-    tester,
-  ) async {
+  testWidgets('mutaxassis: Home → bo‘lim, ogohlantirish; har bir karta to‘liq '
+      '(A–I, manbalar bilan); mashq va statistika ham ochiq', (tester) async {
     final c = await pumpApp(
       tester,
       settings: completedSettings(lang: 'uz'),
@@ -89,18 +77,22 @@ void main() {
       ),
       findsOne,
     );
-    expect(_key('court.locked'), findsOne);
+    expect(_key('court.locked'), findsNothing);
     expect(_key('court.principles'), findsOne);
     expect(_key('court.simulator'), findsOne);
     // Standart yurisdiksiya — xalqaro.
     expect(_key('court.jurisdiction.intl'), findsOne);
 
-    // Pro imkoniyatlari bepul foydalanuvchiga tariflar sahifasini ochadi.
-    for (final k in ['court.drill', 'court.stats']) {
+    // Mashq va statistika hamma uchun ochiq (tariflar sahifasi yo‘q).
+    for (final (k, view) in [
+      ('court.drill', 'court.drillView'),
+      ('court.stats', 'court.statsView'),
+    ]) {
       await _scrollTo(tester, _key(k));
       await tester.tap(_key(k));
       await tester.pumpAndSettle();
-      expect(_key('paywall.list'), findsOne, reason: k);
+      expect(_key(view), findsOne, reason: k);
+      expect(_key('court.locked'), findsNothing, reason: k);
       c.read(routerProvider).go(Routes.courtPrep);
       await tester.pumpAndSettle();
     }
@@ -147,7 +139,7 @@ void main() {
       tester,
       settings: completedSettings(lang: 'uz'),
       initialLocation: Routes.courtPrepQuestion('court.q.qa_accreditation'),
-      overrides: _overrides(pro: true),
+      overrides: _overrides(),
     );
     final f = _key('court.unverified.court_iso17025_2017');
     await _scrollTo(tester, f);
@@ -159,7 +151,7 @@ void main() {
     expect(_key('court.loc.court_ilac_g19_2022'), findsOne);
   });
 
-  testWidgets('Pro: belgilash, bog‘liq material, iqtibos va eksport', (
+  testWidgets('belgilash, bog‘liq material, iqtibos va eksport', (
     tester,
   ) async {
     String? copied;
@@ -182,7 +174,7 @@ void main() {
       tester,
       settings: completedSettings(lang: 'en'),
       initialLocation: Routes.courtPrepQuestion('court.q.method_lod'),
-      overrides: _overrides(pro: true),
+      overrides: _overrides(),
     );
     expect(_key('court.locked'), findsNothing);
     expect(_key('court.draftTranslation'), findsOne);
@@ -216,7 +208,7 @@ void main() {
       tester,
       settings: completedSettings(lang: 'uz').copyWith(jurisdictionId: 'UZ'),
       initialLocation: Routes.courtPrepTopic('court.topic.rights'),
-      overrides: _overrides(pro: true),
+      overrides: _overrides(),
     );
     expect(_row('court.q.rights_uz'), findsOne);
     expect(_row('court.q.duties_uz'), findsOne);
@@ -234,7 +226,7 @@ void main() {
       tester,
       settings: completedSettings(lang: 'uz'),
       initialLocation: Routes.courtPrepTopic('court.topic.investigator'),
-      overrides: _overrides(pro: true),
+      overrides: _overrides(),
     );
     // Beshta savol ham shu mavzuda.
     for (final id in [
@@ -266,7 +258,7 @@ void main() {
         tester,
         settings: completedSettings(lang: lang),
         initialLocation: Routes.courtPrepQuestion('court.q.inv_repeat'),
-        overrides: _overrides(pro: true),
+        overrides: _overrides(),
       );
       await _scrollTo(tester, _key('court.shortAnswer'));
       expect(find.textContaining(needle), findsWidgets, reason: lang);
@@ -278,7 +270,7 @@ void main() {
       tester,
       settings: completedSettings(lang: 'uz'),
       initialLocation: Routes.courtPrepTopic('court.topic.rights'),
-      overrides: _overrides(pro: true),
+      overrides: _overrides(),
     );
     expect(_row('court.q.rights_intl'), findsOne);
     expect(_row('court.q.rights_uz'), findsNothing);
@@ -291,7 +283,7 @@ void main() {
       tester,
       settings: completedSettings(lang: 'uz'),
       initialLocation: Routes.courtPrepTopic('court.topic.histology'),
-      overrides: _overrides(pro: true),
+      overrides: _overrides(),
     );
     expect(_key('court.topicPending'), findsOne);
     expect(find.text('Tayyorlanmoqda — manbalar tekshirilmoqda'), findsOne);
@@ -312,13 +304,13 @@ void main() {
     expect(_key('court.locked'), findsNothing);
   });
 
-  testWidgets('simulyator (Pro): variant tanlash, 4 mezon bo‘yicha baho, '
+  testWidgets('simulyator: variant tanlash, 4 mezon bo‘yicha baho, '
       'namunaviy javob; erkin matn baholanadi', (tester) async {
     await pumpApp(
       tester,
       settings: completedSettings(lang: 'uz'),
       initialLocation: Routes.courtPrepScenario('court.sim.colour_test'),
-      overrides: _overrides(pro: true),
+      overrides: _overrides(),
     );
     expect(_key('court.sim.prompt'), findsOne);
     // Erkin matn: mutlaq ibora — ogohlantirish.
@@ -363,7 +355,7 @@ void main() {
     expect(_key('court.sim.best'), findsNothing);
   });
 
-  testWidgets('simulyator (bepul): faqat namunaviy ssenariylar', (
+  testWidgets('simulyator: barcha ssenariylar ochiq, AI/tarif tugmasi yo‘q', (
     tester,
   ) async {
     final c = await pumpApp(
@@ -373,28 +365,22 @@ void main() {
       overrides: _overrides(),
     );
     expect(_key('court.scenario.court.sim.colour_test'), findsOne);
-    // Asosiy ssenariy bepul ochiladi; AI tahlili — Pro.
+    expect(_key('court.locked'), findsNothing);
     c
         .read(routerProvider)
         .go(Routes.courtPrepScenario('court.sim.colour_test'));
     await tester.pumpAndSettle();
     expect(_key('court.sim.prompt'), findsOne);
-    await tester.tap(_key('court.sim.ai'));
-    await tester.pumpAndSettle();
-    expect(_key('paywall.list'), findsOne);
+    expect(_key('court.sim.ai'), findsNothing);
+    // Ilgari yopiq bo‘lgan ssenariy ham to‘liq ochiladi.
     c.read(routerProvider).go(Routes.courtPrepSimulator);
     await tester.pumpAndSettle();
-    final locked = _key('court.scenario.court.sim.redistribution');
-    await _scrollTo(tester, locked);
-    await tester.tap(locked);
+    final other = _key('court.scenario.court.sim.redistribution');
+    await _scrollTo(tester, other);
+    await tester.tap(other);
     await tester.pumpAndSettle();
-    expect(_key('paywall.list'), findsOne);
-    c
-        .read(routerProvider)
-        .go(Routes.courtPrepScenario('court.sim.redistribution'));
-    await tester.pumpAndSettle();
-    expect(_key('court.locked'), findsOne);
-    expect(_key('court.sim.prompt'), findsNothing);
+    expect(_key('court.locked'), findsNothing);
+    expect(_key('court.sim.prompt'), findsOne);
   });
 
   testWidgets('qidiruv: uch tilda; topilmasa — tushunarli xabar', (
@@ -404,7 +390,7 @@ void main() {
       tester,
       settings: completedSettings(lang: 'ru'),
       initialLocation: Routes.courtPrep,
-      overrides: _overrides(pro: true),
+      overrides: _overrides(),
     );
     await tester.enterText(_key('court.search'), 'LOQ');
     await tester.pumpAndSettle();
@@ -417,14 +403,14 @@ void main() {
     expect(_key('court.noResults'), findsOne);
   });
 
-  testWidgets('mashq rejimi (Pro): savol → qisqa javob → karta → keyingi', (
+  testWidgets('mashq rejimi: savol → qisqa javob → karta → keyingi', (
     tester,
   ) async {
     await pumpApp(
       tester,
       settings: completedSettings(lang: 'uz'),
       initialLocation: Routes.courtPrepPractice,
-      overrides: _overrides(pro: true),
+      overrides: _overrides(),
     );
     expect(_key('court.practice.question'), findsOne);
     expect(_key('court.practice.think'), findsOne);
@@ -444,7 +430,7 @@ void main() {
     );
   });
 
-  testWidgets('mashq rejimi (bepul): to‘liq ochiq', (tester) async {
+  testWidgets('mashq rejimi: manbalar bilan to‘liq ochiq', (tester) async {
     await pumpApp(
       tester,
       settings: completedSettings(lang: 'uz'),
@@ -458,20 +444,16 @@ void main() {
     expect(_key('court.locked'), findsNothing);
   });
 
-  testWidgets('Pro: AI tahlili — halol «tez orada»; rol mashqi va shaxsiy '
-      'statistika (faqat lokal)', (tester) async {
+  testWidgets('rol mashqi va shaxsiy statistika (faqat lokal)', (tester) async {
     final c = await pumpApp(
       tester,
       settings: completedSettings(lang: 'uz'),
-      initialLocation: Routes.courtPrepScenario('court.sim.certainty'),
-      overrides: _overrides(pro: true),
+      initialLocation: Routes.courtPrepDrill,
+      overrides: _overrides(),
     );
-    await tester.tap(_key('court.sim.ai'));
-    await tester.pumpAndSettle();
-    expect(_key('court.sim.aiUnavailable'), findsOne);
-    expect(find.textContaining('tez orada'), findsOne);
+    expect(_key('court.sim.ai'), findsNothing);
+    expect(_key('court.sim.aiUnavailable'), findsNothing);
 
-    c.read(routerProvider).go(Routes.courtPrepDrill);
     await tester.pumpAndSettle();
     expect(find.text('1-qadam / 4 ta'), findsOne);
     for (var step = 0; step < 4; step++) {
@@ -501,7 +483,7 @@ void main() {
     expect(c.read(courtHistoryProvider), isEmpty);
   });
 
-  testWidgets('talaba: Home’da yo‘q, Kutubxonada bor (bepul — qulf bilan)', (
+  testWidgets('talaba: Home’da yo‘q, Kutubxonada bor (hammasi ochiq)', (
     tester,
   ) async {
     final c = await pumpApp(
@@ -516,7 +498,8 @@ void main() {
     await _scrollTo(tester, tile);
     await tester.tap(tile);
     await tester.pumpAndSettle();
-    expect(_key('court.locked'), findsOne);
+    expect(_key('court.locked'), findsNothing);
+    expect(_key('court.principles'), findsOne);
     expect(_mockClipboard(tester), isNull);
   });
 }

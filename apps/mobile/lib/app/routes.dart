@@ -31,10 +31,10 @@ abstract final class Routes {
   // Qidiruv natijalari uchun Home tabidagi nusxa yo‘llar (tab almashmaydi).
   static String homeSubstance(String id) => '/home/substance/$id';
 
-  /// Pro: modda bo‘yicha tahlil rejasi.
+  /// Modda bo‘yicha tahlil rejasi.
   static String homePlan(String id) => '/home/substance/$id/plan';
 
-  /// Pro: kengaytirilgan qidiruv (faset + teskari qidiruv).
+  /// Kengaytirilgan qidiruv (faset + teskari qidiruv).
   static const proSearch = '/home/search/pro';
   static String proSearchWith(String query) =>
       Uri(path: proSearch, queryParameters: {'q': query}).toString();
@@ -59,7 +59,7 @@ abstract final class Routes {
       '/home/glossary/${Uri.encodeComponent(id)}';
   static String guideline(String id) =>
       '/library/guidelines/card/${Uri.encodeComponent(id)}';
-  // «Sudda so‘roq: tayyorgarlik» (Mutaxassis Pro; bepul — namunalar).
+  // «Sudda so‘roq: tayyorgarlik» .
   static const courtPrep = '/library/court-prep';
   static const courtPrepPractice = '/library/court-prep/practice';
   static const courtPrepPrinciples = '/library/court-prep/principles';
@@ -88,6 +88,8 @@ abstract final class Routes {
   static const qaMine = '/library/qa/mine';
   static const qaVerify = '/library/qa/verify';
   static const qaModeration = '/library/qa/moderation';
+  static const qaTerms = '/library/qa/terms';
+  static const qaBlocked = '/library/qa/blocked';
   // Provenance qatlami.
   static const conflicts = '/library/conflicts';
   static String conflict(String id) => '/library/conflicts/$id';
@@ -127,7 +129,6 @@ abstract final class Routes {
   static const profileMode = '/profile/mode';
   static const profileJurisdiction = '/profile/jurisdiction';
   static const profileDisclaimer = '/profile/disclaimer';
-  static const purchase = '/profile/purchase';
   static const privacy = '/profile/privacy';
   static const terms = '/profile/terms';
   static const about = '/profile/about';
@@ -150,9 +151,13 @@ abstract final class Routes {
       '/profile/admin/inbox/${Uri.encodeComponent(id)}';
   static const adminUsers = '/profile/admin/users';
   static const adminAudit = '/profile/admin/audit';
+  static const adminReports = '/profile/admin/reports';
   static const adminVerifications = '/profile/admin/verifications';
   static String adminVerification(String applicantId) =>
       '/profile/admin/verifications/${Uri.encodeComponent(applicantId)}';
+
+  /// Shikoyat yuborish (kirmagan foydalanuvchi ham).
+  static const report = '/profile/report';
 
   /// «Taklif va murojaatlar» (foydalanuvchi).
   static const support = '/profile/support';
@@ -173,6 +178,23 @@ abstract final class Routes {
 
   /// Kiruvchi taklif havolasi: `/invite/<CODE>` (deep link).
   static const invitePrefix = '/invite/';
+
+  /// «Sinfda test»: kiruvchi havola `/join/<6 raqam>` (deep link / QR).
+  static const joinPrefix = '/join/';
+  static const classQuiz = '/home/learn/class';
+  static const classNew = '/home/learn/class/new';
+  static String classHost(String id) =>
+      '/home/learn/class/host/${Uri.encodeComponent(id)}';
+  static const classJoin = '/home/learn/class/join';
+  static String classJoinWith(String code) =>
+      Uri(path: classJoin, queryParameters: {'code': code}).toString();
+  static String classPlay(String id) =>
+      '/home/learn/class/play/${Uri.encodeComponent(id)}';
+  static const classScan = '/home/learn/class/scan';
+
+  /// Ustoz paneli (Asosiydan 1 bosish) va natijalar ro‘yxati.
+  static const teacher = '/home/teacher';
+  static const teacherResults = '/home/teacher/results';
 
   // Akkaunt (ixtiyoriy). Email marshrut satriga yozilmaydi — `extra`.
   static const accountSignIn = '/profile/account/sign-in';

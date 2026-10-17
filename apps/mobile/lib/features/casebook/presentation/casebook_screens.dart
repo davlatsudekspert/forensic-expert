@@ -62,7 +62,7 @@ class CasebookScreen extends ConsumerWidget {
     final entries = ref.watch(casebookProvider);
     return Scaffold(
       appBar: AppBar(
-        title: Text(l.casebookTitle),
+        title: FeAppBarTitle(l.casebookTitle),
         actions: [
           if (entries.isNotEmpty)
             PopupMenuButton<String>(
@@ -272,6 +272,7 @@ class _CasebookEntryScreenState extends ConsumerState<CasebookEntryScreen> {
 
   Future<void> _addLink() async {
     final link = await showModalBottomSheet<CasebookLink>(
+      useRootNavigator: true,
       context: context,
       isScrollControlled: true,
       showDragHandle: true,
@@ -286,6 +287,7 @@ class _CasebookEntryScreenState extends ConsumerState<CasebookEntryScreen> {
   Future<void> _addBlock() async {
     final bundle = ref.read(guidelinesProvider).value ?? GuidelineBundle.empty;
     final pick = await showModalBottomSheet<(GuidelineCard, GuidelineSection)>(
+      useRootNavigator: true,
       context: context,
       isScrollControlled: true,
       showDragHandle: true,
@@ -396,7 +398,7 @@ class _CasebookEntryScreenState extends ConsumerState<CasebookEntryScreen> {
     }
     if (_id != null && stored == null) {
       return Scaffold(
-        appBar: AppBar(title: Text(l.casebookTitle)),
+        appBar: AppBar(title: FeAppBarTitle(l.casebookTitle)),
         body: FeEmptyState(
           key: const Key('casebook.notFound'),
           icon: Icons.menu_book_outlined,
@@ -413,7 +415,7 @@ class _CasebookEntryScreenState extends ConsumerState<CasebookEntryScreen> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: Text(l.casebookTitle),
+          title: FeAppBarTitle(l.casebookTitle),
           actions: [
             IconButton(
               key: const Key('casebook.share'),

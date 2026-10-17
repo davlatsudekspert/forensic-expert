@@ -16,6 +16,8 @@ import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/brand_mark.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/auth/auth_models.dart';
+import '../../../domain/auth/social_sign_in.dart';
+import 'social_sign_in_buttons.dart';
 
 /// Joriy Shartlar / Maxfiylik versiyasi (ro‘yxatdan o‘tishda serverga
 /// yuboriladi; matn o‘zgarsa oshiriladi).
@@ -37,6 +39,8 @@ String authFailureText(AppLocalizations l, AuthFailure f) => switch (f) {
   AuthFailure.backendNotConfigured => l.authErrNotConfigured,
   AuthFailure.requiresRecentLogin => l.authErrRecentLogin,
   AuthFailure.notSignedIn => l.authErrNotSignedIn,
+  AuthFailure.cancelled => '',
+  AuthFailure.socialUnavailable => l.socialErrUnavailable,
 };
 
 /// Akkaunt ekranlari uchun umumiy karkas: backend holati banneri (ulanmagan
@@ -47,6 +51,7 @@ String authFailureText(AppLocalizations l, AuthFailure f) => switch (f) {
 Future<void> _showLanguageSheet(BuildContext context, WidgetRef ref) {
   final current = ref.read(settingsControllerProvider).locale;
   return showModalBottomSheet<void>(
+    useRootNavigator: true,
     context: context,
     showDragHandle: true,
     builder: (sheet) => SafeArea(
@@ -97,7 +102,7 @@ class _AuthScaffold extends ConsumerWidget {
     return Scaffold(
       key: screenKey,
       appBar: AppBar(
-        title: Text(title),
+        title: FeAppBarTitle(title),
         actions: [
           IconButton(
             key: const Key('auth.language'),
@@ -179,29 +184,79 @@ class _ErrorText extends StatelessWidget {
   }
 }
 
-class _EmailField extends StatelessWidget {
-  const _EmailField({required this.controller});
+/// Email maydoni. Noto‘g‘ri manzil (masalan «abc») — maydon ostida
+/// tushunarli inline xato (faqat o‘chirilgan tugma emas). Xato yozish
+/// paytida emas, maydondan chiqilganda yoki «Keyingi» bosilganda chiqadi;
+/// tuzatilishi bilan yo‘qoladi.
+class _EmailField extends StatefulWidget {
+  const _EmailField({required this.controller, this.parentShowsError = false});
 
   final TextEditingController controller;
 
+  /// Yuborishda ekran o‘zi xatoni ko‘rsatgan bo‘lsa — takrorlanmaydi.
+  final bool parentShowsError;
+
   @override
-  Widget build(BuildContext context) => Padding(
-    padding: const EdgeInsets.only(bottom: FeSpace.sm),
-    child: TextField(
-      onTapOutside: (_) => FocusScope.of(context).unfocus(),
-      key: const Key('auth.email'),
-      controller: controller,
-      keyboardType: TextInputType.emailAddress,
-      autofillHints: const [AutofillHints.email],
-      autocorrect: false,
-      enableSuggestions: false,
-      textInputAction: TextInputAction.next,
-      decoration: InputDecoration(
-        labelText: AppLocalizations.of(context).accountEmail,
-        border: const OutlineInputBorder(),
+  State<_EmailField> createState() => _EmailFieldState();
+}
+
+class _EmailFieldState extends State<_EmailField> {
+  final _focus = FocusNode();
+  bool _touched = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _focus.addListener(() {
+      if (!_focus.hasFocus && widget.controller.text.trim().isNotEmpty) {
+        setState(() => _touched = true);
+      }
+    });
+    widget.controller.addListener(_onText);
+  }
+
+  void _onText() {
+    if (mounted && _touched) setState(() {});
+  }
+
+  @override
+  void dispose() {
+    widget.controller.removeListener(_onText);
+    _focus.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final text = widget.controller.text.trim();
+    final invalid =
+        _touched &&
+        !widget.parentShowsError &&
+        text.isNotEmpty &&
+        !EmailAddress.isValid(EmailAddress.normalize(text));
+    return Padding(
+      padding: const EdgeInsets.only(bottom: FeSpace.sm),
+      child: TextField(
+        onTapOutside: (_) => FocusScope.of(context).unfocus(),
+        key: const Key('auth.email'),
+        focusNode: _focus,
+        controller: widget.controller,
+        keyboardType: TextInputType.emailAddress,
+        autofillHints: const [AutofillHints.email],
+        autocorrect: false,
+        enableSuggestions: false,
+        textInputAction: TextInputAction.next,
+        onSubmitted: (_) => setState(() => _touched = true),
+        decoration: InputDecoration(
+          labelText: l.accountEmail,
+          border: const OutlineInputBorder(),
+          errorText: invalid ? l.authErrInvalidEmail : null,
+          errorMaxLines: 2,
+        ),
       ),
-    ),
-  );
+    );
+  }
 }
 
 class _PasswordField extends StatefulWidget {
@@ -397,7 +452,10 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
       brand: true,
       title: l.accountSignIn,
       children: [
-        _EmailField(controller: _email),
+        _EmailField(
+          controller: _email,
+          parentShowsError: _error == AuthFailure.invalidEmail,
+        ),
         _PasswordField(
           controller: _password,
           label: l.accountPassword,
@@ -409,6 +467,10 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
           busy: _busy,
           buttonKey: const Key('auth.submit'),
           onPressed: configured ? _submit : null,
+        ),
+        SocialSignInButtons(
+          onSignedIn: () => context.go(Routes.profile),
+          onError: (f) => setState(() => _error = f),
         ),
         TextButton(
           key: const Key('auth.toForgot'),
@@ -499,7 +561,10 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
           style: t.bodyMedium?.copyWith(color: c.textSecondary),
         ),
         const SizedBox(height: FeSpace.md),
-        _EmailField(controller: _email),
+        _EmailField(
+          controller: _email,
+          parentShowsError: _error == AuthFailure.invalidEmail,
+        ),
         _PasswordField(
           controller: _password,
           label: l.accountPassword,
@@ -541,6 +606,10 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
           busy: _busy,
           buttonKey: const Key('auth.submit'),
           onPressed: configured ? _submit : null,
+        ),
+        SocialSignInButtons(
+          onSignedIn: () => context.go(Routes.profile),
+          onError: (f) => setState(() => _error = f),
         ),
         TextButton(
           key: const Key('auth.toSignIn'),
@@ -717,7 +786,10 @@ class _ForgotPasswordScreenState extends ConsumerState<ForgotPasswordScreen> {
       children: [
         Text(l.forgotBody, style: t.bodyLarge),
         const SizedBox(height: FeSpace.md),
-        _EmailField(controller: _email),
+        _EmailField(
+          controller: _email,
+          parentShowsError: _error == AuthFailure.invalidEmail,
+        ),
         _ErrorText(_error),
         _Submit(
           label: l.forgotSubmit,
@@ -903,9 +975,33 @@ class _DeleteAccountScreenState extends ConsumerState<DeleteAccountScreen> {
       _busy = true;
       _error = null;
     });
+    // Apple akkaunti: Apple tokenini bekor qilish (5.1.1(v)) uchun yangi,
+    // bir martalik authorizationCode kerak — foydalanuvchi Apple bilan qayta
+    // tasdiqlaydi. Bekor qilsa o‘chirilmaydi; Apple oynasi umuman ishlamasa
+    // (xato) o‘chirish kodsiz davom etadi — o‘chirish bloklanmaydi.
+    String? appleCode;
+    if (ref.read(authStateProvider).account?.provider == 'apple') {
+      try {
+        final res = await ref
+            .read(socialCredentialSourceProvider)
+            .obtain(SocialProvider.apple);
+        if (!mounted) return;
+        if (res.failure == AuthFailure.cancelled) {
+          setState(() => _busy = false);
+          return;
+        }
+        appleCode = res.credential?.authorizationCode;
+      } on Object {
+        appleCode = null;
+      }
+      if (!mounted) return;
+    }
     final r = await ref
         .read(authRepositoryProvider)
-        .deleteAccount(password: _password.text);
+        .deleteAccount(
+          password: _password.text,
+          appleAuthorizationCode: appleCode,
+        );
     if (!mounted) return;
     setState(() => _busy = false);
     if (r.ok) {
@@ -924,6 +1020,7 @@ class _DeleteAccountScreenState extends ConsumerState<DeleteAccountScreen> {
     final t = Theme.of(context).textTheme;
     final state = ref.watch(authStateProvider);
     final signedIn = state.signedIn;
+    final needsPassword = !(state.account?.isSocial ?? false);
     return _AuthScaffold(
       screenKey: const Key('screen.deleteAccount'),
       title: l.deleteAccountTitle,
@@ -932,12 +1029,6 @@ class _DeleteAccountScreenState extends ConsumerState<DeleteAccountScreen> {
           icon: Icons.warning_amber_outlined,
           text: l.deleteAccountBody,
           tone: FeBannerTone.critical,
-        ),
-        const SizedBox(height: FeSpace.sm),
-        FeBanner(
-          key: const Key('auth.delete.storeNote'),
-          icon: Icons.storefront_outlined,
-          text: l.deleteAccountStoreNote,
         ),
         const SizedBox(height: FeSpace.sm),
         Text(
@@ -949,12 +1040,21 @@ class _DeleteAccountScreenState extends ConsumerState<DeleteAccountScreen> {
           const SizedBox(height: FeSpace.md),
           Text(state.account!.email, style: t.titleSmall),
           const SizedBox(height: FeSpace.sm),
-          _PasswordField(
-            controller: _password,
-            label: l.deleteAccountPassword,
-            fieldKey: const Key('auth.password'),
-            onChanged: (_) => setState(() {}),
-          ),
+          if (needsPassword)
+            _PasswordField(
+              controller: _password,
+              label: l.deleteAccountPassword,
+              fieldKey: const Key('auth.password'),
+              onChanged: (_) => setState(() {}),
+            )
+          else
+            Text(
+              state.account?.provider == 'apple'
+                  ? l.deleteAccountAppleNote
+                  : l.deleteAccountSocialNote,
+              key: const Key('auth.delete.socialNote'),
+              style: t.bodyMedium?.copyWith(color: c.textSecondary),
+            ),
           CheckboxListTile(
             key: const Key('auth.delete.understand'),
             value: _understood,
@@ -969,7 +1069,10 @@ class _DeleteAccountScreenState extends ConsumerState<DeleteAccountScreen> {
             child: FilledButton(
               key: const Key('auth.delete.submit'),
               style: FilledButton.styleFrom(backgroundColor: c.danger),
-              onPressed: _busy || !_understood || _password.text.isEmpty
+              onPressed:
+                  _busy ||
+                      !_understood ||
+                      (needsPassword && _password.text.isEmpty)
                   ? null
                   : _delete,
               child: Text(l.deleteAccountConfirm),
@@ -1095,13 +1198,26 @@ class _EmailCodeScreenState extends ConsumerState<EmailCodeScreen> {
         if (sent == null) ...[
           Text(l.emailCodeSubtitle, style: t.bodyLarge),
           const SizedBox(height: FeSpace.md),
-          _EmailField(controller: _email),
+          _EmailField(
+            controller: _email,
+            parentShowsError: _error == AuthFailure.invalidEmail,
+          ),
           _ErrorText(_error),
           _Submit(
             label: l.emailCodeSend,
             busy: _busy,
             buttonKey: const Key('emailCode.send'),
             onPressed: configured ? _send : null,
+          ),
+          SocialSignInButtons(
+            onSignedIn: () {
+              if (context.canPop()) {
+                context.pop(true);
+              } else {
+                context.go(Routes.profile);
+              }
+            },
+            onError: (f) => setState(() => _error = f),
           ),
         ] else ...[
           Text(

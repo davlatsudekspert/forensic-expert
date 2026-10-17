@@ -45,6 +45,7 @@ Future<void> showCitationSheet(
   // Oldingi «nusxalandi» xabari «Nusxalash» tugmasini to‘sib qo‘ymasin.
   final messenger = ScaffoldMessenger.maybeOf(context)?..hideCurrentSnackBar();
   return showModalBottomSheet<void>(
+    useRootNavigator: true,
     context: context,
     isScrollControlled: true,
     showDragHandle: true,

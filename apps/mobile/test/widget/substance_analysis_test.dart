@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 
@@ -20,10 +18,7 @@ void main() {
         settings: completedSettings(lang: 'uz'),
         initialLocation: location,
         testFixtures: false,
-        overrides: [
-          ...pilot.overrides,
-          entitlementServiceProvider.overrideWithValue(FakeStore(owned: true)),
-        ],
+        overrides: [...pilot.overrides],
       );
 
   Future<void> see(WidgetTester tester, Finder f) async {
@@ -156,15 +151,16 @@ void main() {
     );
   });
 
-  testWidgets(
-    'GHB: moddaga xos tahlil yo‘q — soxta qator yo‘q, bo‘sh holat',
-    (tester) async {
-      await open(tester, Routes.libraryEntry('ghb'));
-      await see(tester, find.byKey(const Key('analysis.empty.ghb')));
-      // Namuna / metod / metabolit qatorlari to‘qilmaydi.
-      expect(find.byKey(const Key('measured.ghb.blood')), findsNothing);
-    },
-  );
+  testWidgets('GHB: moddaga xos tahlil yo‘q — soxta qator yo‘q, bo‘sh holat', (
+    tester,
+  ) async {
+    await open(tester, Routes.libraryEntry('ghb'));
+    await see(tester, find.byKey(const Key('analysis.ghb')));
+    // Uch bo‘lim ham mavjud; manbasiz bo‘lim halol bo‘sh holatda.
+    expect(find.byKey(const Key('analysis.empty.ghb')), findsNothing);
+    // Namuna / metod / metabolit qatorlari to‘qilmaydi.
+    expect(find.byKey(const Key('measured.ghb.blood')), findsNothing);
+  });
 
   testWidgets('namuna sahifasi: shu namunada tahlil qilingan moddalar', (
     tester,

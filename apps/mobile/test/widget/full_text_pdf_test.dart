@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/domain/library/full_text.dart';
 import 'package:forensic_expert/domain/library/library_models.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 
@@ -37,28 +35,19 @@ void main() {
   late PilotContent pilot;
   setUpAll(() async => pilot = await loadPilotContent());
 
-  for (final pro in [false, true]) {
-    testWidgets('manba sahifasi: PDF tugmasi (pro=$pro)', (tester) async {
-      await pumpApp(
-        tester,
-        settings: completedSettings(),
-        initialLocation: Routes.source('SRC-PMC8400298'),
-        testFixtures: false,
-        overrides: [
-          ...pilot.overrides,
-          entitlementServiceProvider.overrideWithValue(FakeStore(owned: pro)),
-        ],
-      );
-      expect(find.byKey(const Key('source.fullTextPdf')), findsOneWidget);
-      expect(find.text('Full text (PDF)'), findsOneWidget);
-      expect(
-        find.textContaining(pro ? 'Open-access article' : 'available with Pro'),
-        findsOneWidget,
-      );
-      expect(
-        find.byIcon(pro ? Icons.picture_as_pdf_outlined : Icons.lock_outline),
-        findsOneWidget,
-      );
-    });
-  }
+  testWidgets('manba sahifasi: PDF tugmasi hamma uchun ochiq', (tester) async {
+    await pumpApp(
+      tester,
+      settings: completedSettings(),
+      initialLocation: Routes.source('SRC-PMC8400298'),
+      testFixtures: false,
+      overrides: [...pilot.overrides],
+    );
+    expect(find.byKey(const Key('source.fullTextPdf')), findsOneWidget);
+    expect(find.text('Full text (PDF)'), findsOneWidget);
+    expect(find.textContaining('Open-access article'), findsOneWidget);
+    expect(find.textContaining(RegExp(r'\bPro\b')), findsNothing);
+    expect(find.byIcon(Icons.picture_as_pdf_outlined), findsOneWidget);
+    expect(find.byIcon(Icons.lock_outline), findsNothing);
+  });
 }

@@ -39,12 +39,24 @@ void main() {
       expect(m, contains('android:usesCleartextTraffic="false"'));
       for (final p in [
         'ACCESS_FINE_LOCATION',
-        'CAMERA',
         'READ_CONTACTS',
         'RECORD_AUDIO',
       ]) {
         expect(m, isNot(contains(p)));
       }
+      // CAMERA faqat «Sinfda test» QR skaneri uchun (docs/CLASS_QUIZ.md):
+      // kamera qurilmada bo‘lishi shart emas — kod qo‘lda ham kiritiladi.
+      final perms = RegExp(
+        r'uses-permission android:name="android\.permission\.(\w+)"',
+      ).allMatches(m).map((x) => x[1]).toSet();
+      expect(perms, {'INTERNET', 'CAMERA'});
+      expect(
+        m,
+        contains(
+          '<uses-feature android:name="android.hardware.camera" '
+          'android:required="false"/>',
+        ),
+      );
     });
 
     test('Android: kalit/parol repozitoriyda yo‘q; imzo himoyasi bor', () {
@@ -68,15 +80,15 @@ void main() {
       );
     });
 
-    test('release: INTERNET (faqat HTTPS), email va xarid tarixi e’lon '
-        'qilingan, kuzatuv yo‘q', () {
+    test('release: INTERNET (faqat HTTPS), faqat email e’lon qilingan, '
+        'xarid ma’lumoti yo‘q, kuzatuv yo‘q', () {
       final m = File('android/app/src/main/AndroidManifest.xml')
           .readAsStringSync();
       expect(m, contains('android.permission.INTERNET'));
       expect(m, contains('android:usesCleartextTraffic="false"'));
       final p = File('ios/Runner/PrivacyInfo.xcprivacy').readAsStringSync();
       expect(p, contains('NSPrivacyCollectedDataTypeEmailAddress'));
-      expect(p, contains('NSPrivacyCollectedDataTypePurchaseHistory'));
+      expect(p, isNot(contains('NSPrivacyCollectedDataTypePurchaseHistory')));
       expect(
         p,
         isNot(

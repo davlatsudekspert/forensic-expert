@@ -18,17 +18,6 @@ abstract final class FeFlags {
     defaultValue: 'development',
   );
 
-  /// Lifetime huquqi uchun server tekshiruvi majburiymi.
-  ///
-  /// `false` (hozirgi standart): store tasdig‘i (StoreKit / Play Billing)
-  /// yetarli — faqat development/QA uchun. Public release:
-  /// `--dart-define=FE_REQUIRE_SERVER_PURCHASE_VERIFICATION=true` va ishlaydigan
-  /// backend (App Store Server API, Google Play Developer API).
-  /// RELEASE BLOCKER RG-18.
-  static const requireServerPurchaseVerification = bool.fromEnvironment(
-    'FE_REQUIRE_SERVER_PURCHASE_VERIFICATION',
-  );
-
   /// «Ekspert maqolalari» bo‘limi (hub plitkasi, yuborish). Standart o‘chiq;
   /// admin uchun bayroqsiz ham ko‘rinadi (egasi sinovi). O‘qish bepul.
   /// `--dart-define=FE_PUBLICATIONS=true`.

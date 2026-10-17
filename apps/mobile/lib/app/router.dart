@@ -10,9 +10,11 @@ import '../core/perf/navigation_timing.dart';
 import '../core/settings/app_settings.dart';
 import '../core/settings/settings_controller.dart';
 import '../domain/catalog/tools_catalog.dart';
+import '../domain/class_quiz/class_quiz_models.dart';
 import '../domain/knowledge/knowledge_models.dart';
 import '../domain/learn/study_models.dart' show StudyQuizMode;
 import '../domain/library/library_models.dart';
+import '../domain/moderation/moderation_models.dart';
 import '../domain/publications/publication_models.dart';
 import '../domain/referral/referral_models.dart';
 import '../domain/support/support_models.dart';
@@ -22,6 +24,10 @@ import '../features/admin/presentation/admin_support_screens.dart';
 import '../features/admin/presentation/admin_verification_screens.dart';
 import '../features/ai/presentation/ai_screen.dart';
 import '../features/casebook/presentation/casebook_screens.dart';
+import '../features/class_quiz/presentation/class_quiz_host_screen.dart';
+import '../features/class_quiz/presentation/class_quiz_hub_screen.dart';
+import '../features/class_quiz/presentation/class_quiz_play_screen.dart';
+import '../features/class_quiz/presentation/teacher_panel_screen.dart';
 import '../features/court_prep/presentation/court_prep_screens.dart';
 import '../features/disciplines/presentation/disciplines_screens.dart';
 import '../features/evidence/presentation/provenance_screens.dart';
@@ -41,6 +47,10 @@ import '../features/library/presentation/entry_detail_screen.dart';
 import '../features/library/presentation/library_screen.dart';
 import '../features/library/presentation/source_detail_screen.dart';
 import '../features/library/presentation/sources_list_screen.dart';
+import '../features/moderation/presentation/admin_reports_screen.dart';
+import '../features/moderation/presentation/blocked_authors_screen.dart';
+import '../features/moderation/presentation/community_terms_screen.dart';
+import '../features/moderation/presentation/report_screen.dart';
 import '../features/onboarding/presentation/disclaimer_screen.dart';
 import '../features/onboarding/presentation/language_screen.dart';
 import '../features/onboarding/presentation/mode_screen.dart';
@@ -52,7 +62,6 @@ import '../features/professional/presentation/profile_edit_screen.dart';
 import '../features/professional/presentation/review_section.dart';
 import '../features/professional/presentation/verification_screens.dart';
 import '../features/profile/presentation/legal_screens.dart';
-import '../features/profile/presentation/paywall_screen.dart';
 import '../features/profile/presentation/profile_screen.dart';
 import '../features/profile/presentation/settings_pickers.dart';
 import '../features/profile/presentation/sources_authors_screen.dart';
@@ -73,6 +82,7 @@ import '../features/support/presentation/support_screens.dart';
 import '../features/tools/presentation/module_hub_screen.dart';
 import '../features/tools/presentation/tool_detail_screen.dart';
 import '../features/tools/presentation/tools_screen.dart';
+import 'class_quiz.dart';
 import 'referral.dart';
 import 'routes.dart';
 import 'user_data.dart';
@@ -157,6 +167,18 @@ final routerProvider = Provider<GoRouter>((ref) {
         }
         return onboardingRedirect(settings, Routes.referral) ?? Routes.referral;
       }
+      // Sinf havolasi (QR / deep link): kod xotirada saqlanadi, so‘ng
+      // qo‘shilish ekrani (kirish kerak bo‘lsa — o‘sha ekranda so‘raladi).
+      if (state.uri.path.startsWith(Routes.joinPrefix)) {
+        final code = ClassCode.extract(state.uri);
+        if (code != null) {
+          ref.read(pendingClassCodeProvider.notifier).remember(code);
+          final target = Routes.classJoinWith(code);
+          return onboardingRedirect(settings, target) ?? target;
+        }
+        return onboardingRedirect(settings, Routes.classQuiz) ??
+            Routes.classQuiz;
+      }
       _recordFirstStep(ref, state.matchedLocation);
       return onboardingRedirect(settings, state.matchedLocation);
     },
@@ -173,6 +195,11 @@ final routerProvider = Provider<GoRouter>((ref) {
       // Faqat moslik uchun: redirect har doim taklif sahifasiga yo‘naltiradi.
       GoRoute(
         path: '${Routes.invitePrefix}:code',
+        builder: (c, s) => const SizedBox.shrink(),
+      ),
+      // Faqat moslik uchun: redirect har doim qo‘shilish ekraniga yo‘naltiradi.
+      GoRoute(
+        path: '${Routes.joinPrefix}:code',
         builder: (c, s) => const SizedBox.shrink(),
       ),
       GoRoute(
@@ -211,6 +238,16 @@ final routerProvider = Provider<GoRouter>((ref) {
                     ],
                   ),
                   GoRoute(
+                    path: 'teacher',
+                    builder: (c, s) => const TeacherPanelScreen(),
+                    routes: [
+                      GoRoute(
+                        path: 'results',
+                        builder: (c, s) => const TeacherResultsScreen(),
+                      ),
+                    ],
+                  ),
+                  GoRoute(
                     path: 'learn',
                     builder: (c, s) => const LearnScreen(),
                     routes: [
@@ -225,6 +262,43 @@ final routerProvider = Provider<GoRouter>((ref) {
                       GoRoute(
                         path: 'exam',
                         builder: (c, s) => const ExamScreen(),
+                      ),
+                      GoRoute(
+                        path: 'class',
+                        builder: (c, s) => const ClassQuizHubScreen(),
+                        routes: [
+                          GoRoute(
+                            path: 'new',
+                            parentNavigatorKey: rootKey,
+                            builder: (c, s) => const ClassCreateScreen(),
+                          ),
+                          GoRoute(
+                            path: 'join',
+                            parentNavigatorKey: rootKey,
+                            builder: (c, s) => ClassJoinScreen(
+                              initialCode: s.uri.queryParameters['code'],
+                            ),
+                          ),
+                          GoRoute(
+                            path: 'scan',
+                            parentNavigatorKey: rootKey,
+                            builder: (c, s) => const ClassScanScreen(),
+                          ),
+                          GoRoute(
+                            path: 'host/:id',
+                            parentNavigatorKey: rootKey,
+                            builder: (c, s) => ClassHostScreen(
+                              sessionId: s.pathParameters['id']!,
+                            ),
+                          ),
+                          GoRoute(
+                            path: 'play/:id',
+                            parentNavigatorKey: rootKey,
+                            builder: (c, s) => ClassPlayScreen(
+                              sessionId: s.pathParameters['id']!,
+                            ),
+                          ),
+                        ],
                       ),
                       GoRoute(
                         path: 'study',
@@ -563,6 +637,14 @@ final routerProvider = Provider<GoRouter>((ref) {
                         path: 'moderation',
                         builder: (c, s) => const QaModerationScreen(),
                       ),
+                      GoRoute(
+                        path: 'terms',
+                        builder: (c, s) => const CommunityTermsScreen(),
+                      ),
+                      GoRoute(
+                        path: 'blocked',
+                        builder: (c, s) => const BlockedAuthorsScreen(),
+                      ),
                     ],
                   ),
                   GoRoute(
@@ -637,11 +719,6 @@ final routerProvider = Provider<GoRouter>((ref) {
                     path: 'disclaimer',
                     parentNavigatorKey: rootKey,
                     builder: (c, s) => const DisclaimerScreen(readOnly: true),
-                  ),
-                  GoRoute(
-                    path: 'purchase',
-                    parentNavigatorKey: rootKey,
-                    builder: (c, s) => const PaywallScreen(),
                   ),
                   GoRoute(
                     path: 'ai-disclaimer',
@@ -739,6 +816,11 @@ final routerProvider = Provider<GoRouter>((ref) {
                         builder: (c, s) => const AdminAuditScreen(),
                       ),
                       GoRoute(
+                        path: 'reports',
+                        parentNavigatorKey: rootKey,
+                        builder: (c, s) => const AdminReportsScreen(),
+                      ),
+                      GoRoute(
                         path: 'verifications',
                         parentNavigatorKey: rootKey,
                         builder: (c, s) => const AdminVerificationsScreen(),
@@ -753,6 +835,18 @@ final routerProvider = Provider<GoRouter>((ref) {
                         ],
                       ),
                     ],
+                  ),
+                  GoRoute(
+                    path: 'report',
+                    parentNavigatorKey: rootKey,
+                    builder: (c, s) {
+                      final q = s.uri.queryParameters;
+                      return ReportScreen(
+                        initialKind: q['kind'] == null
+                            ? null
+                            : ReportKind.fromWire(q['kind']),
+                      );
+                    },
                   ),
                   GoRoute(
                     path: 'support',

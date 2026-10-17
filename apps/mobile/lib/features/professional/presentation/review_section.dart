@@ -127,6 +127,7 @@ class ProfessionalReviewSection extends ConsumerWidget {
           OutlinedButton.icon(
             key: Key('review.write.$recordId'),
             onPressed: () => showModalBottomSheet<void>(
+              useRootNavigator: true,
               context: context,
               isScrollControlled: true,
               useSafeArea: true,
@@ -499,7 +500,7 @@ class _ReviewDashboardScreenState extends ConsumerState<ReviewDashboardScreen> {
         identity.scopes.isNotEmpty;
     final result = allowed ? ref.watch(reviewQueueProvider(_queue)) : null;
     return Scaffold(
-      appBar: AppBar(title: Text(l.dashboardTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.dashboardTitle)),
       body: SafeArea(
         child: ListView(
           keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,

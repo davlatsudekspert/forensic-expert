@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 
@@ -283,10 +281,7 @@ void main() {
         initialLocation: c.route,
         pixelRatio: 1.5,
         testFixtures: false,
-        overrides: [
-          ...content.overrides,
-          entitlementServiceProvider.overrideWithValue(FakeStore(owned: true)),
-        ],
+        overrides: [...content.overrides],
       );
       await tester.pump(const Duration(milliseconds: 400));
       await settleImages(tester);

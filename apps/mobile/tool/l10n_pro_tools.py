@@ -28,12 +28,6 @@ k("proSearchIntro", "Intro text of the advanced search screen.",
   "Narrow the offline pack by specimen, method, reagent, evidence level and more, or go from a specimen, method or reagent to the substances documented for it.",
   "Сузьте поиск по образцу, методу, реагенту, уровню доказательности и другим признакам или перейдите от образца, метода или реагента к веществам, для которых они задокументированы.",
   "Qidiruvni namuna, metod, reagent, dalil darajasi va boshqa belgilar bo‘yicha toraytiring yoki namuna, metod yoki reagentdan unga hujjatlashtirilgan moddalarga o‘ting.")
-k("proSearchLockedTitle", "Paywall card title on the advanced search screen. {tier} is the plan name.",
-  "Advanced search — {tier}", "Расширенный поиск — {tier}", "Kengaytirilgan qidiruv — {tier}", p("tier"))
-k("proSearchLockedBody", "Paywall card body on the advanced search screen.",
-  "Filters (discipline, class, specimen, method, reagent, evidence, review status, jurisdiction, year), exact-phrase search and reverse lookups need a paid plan. The regular search stays available to everyone.",
-  "Фильтры (дисциплина, класс, образец, метод, реагент, уровень доказательности, статус проверки, юрисдикция, год), поиск по точной фразе и обратный поиск доступны по платному тарифу. Обычный поиск остаётся доступным всем.",
-  "Filtrlar (fan, sinf, namuna, metod, reagent, dalil darajasi, tekshiruv holati, yurisdiksiya, yil), aniq ibora bo‘yicha qidiruv va teskari qidiruv pullik tarifga kiradi. Oddiy qidiruv hammaga ochiq.")
 k("proSearchHint", "Hint of the advanced search text field.",
   "Name, synonym or \"phrase\"", "Название, синоним или «фраза»", "Nom, sinonim yoki «ibora»")
 k("proSearchExact", "Switch: match the whole name or synonym only.",
@@ -125,12 +119,6 @@ k("planSummary", "Free preview summary line.",
   "Образцы: {s} · Предварительные тесты: {p} · Подтверждение: {c} · Ограничения: {l}",
   "Namunalar: {s} · Taxminiy testlar: {p} · Tasdiqlash: {c} · Cheklovlar: {l}",
   p("s", "p", "c", "l", ints=("s", "p", "c", "l")))
-k("planLockedTitle", "Paywall card title on the plan. {tier} is the plan name.",
-  "Full analysis plan — {tier}", "Полный план анализа — {tier}", "To‘liq tahlil rejasi — {tier}", p("tier"))
-k("planLockedBody", "Paywall card body on the plan.",
-  "The free preview shows the counts and the specimens. The paid plan adds presumptive tests with reagents, bench and confirmation steps, interferences, limits, the note for your conclusion and a copyable text with full citations.",
-  "Бесплатный просмотр показывает количество и образцы. Платный тариф добавляет предварительные тесты с реагентами, лабораторные и подтверждающие этапы, помехи, ограничения, памятку для заключения и копируемый текст с полными ссылками.",
-  "Bepul ko‘rinishda sonlar va namunalar ko‘rsatiladi. Pullik tarif reagentli taxminiy testlar, stol usullari va tasdiqlash bosqichlari, halaqitlar, cheklovlar, xulosa uchun eslatma hamda to‘liq iqtiboslar bilan nusxalanadigan matnni qo‘shadi.")
 k("planSecSpecimens", "Plan section title.", "Specimens and sampling notes",
   "Образцы и заметки о взятии", "Namunalar va namuna olish bo‘yicha izohlar")
 k("planSecPresumptive", "Plan section title.", "Presumptive tests (reagent and observation)",

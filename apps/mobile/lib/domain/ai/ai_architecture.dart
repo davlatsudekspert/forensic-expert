@@ -9,13 +9,13 @@
 ///   javob rad etiladi (to‘qilgan manba hech qachon ko‘rsatilmaydi).
 /// * **Xavfsizlik**: [SafetyPolicy] PII’ni, yakuniy o‘lim sababi/turi va
 ///   huquqiy xulosa so‘rovlarini bloklaydi.
-/// * **Kvota**: AI Lifetime’ga «cheksiz» kirmaydi ([AiEntitlement]).
+/// * **Kvota**: AI «cheksiz» emas — server kvotasi bor ([AiEntitlement]).
 library;
 
 import 'package:flutter/foundation.dart';
 
+import '../ports/ai_entitlement.dart';
 import '../ports/ai_ports.dart';
-import '../ports/billing_ports.dart';
 
 /// Ikki tajriba: professional (qisqa, manbali) va o‘quv (tushuntiruvchi).
 enum AiExperience { professional, tutor }

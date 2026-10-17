@@ -1,8 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/data/offline/offline_ai.dart';
 import 'package:forensic_expert/domain/ai/ai_architecture.dart';
+import 'package:forensic_expert/domain/ports/ai_entitlement.dart';
 import 'package:forensic_expert/domain/ports/ai_ports.dart';
-import 'package:forensic_expert/domain/ports/billing_ports.dart';
 
 // TEST DATA — sintetik bo‘laklar; ilmiy matn emas.
 const _chunk = RetrievedChunk(

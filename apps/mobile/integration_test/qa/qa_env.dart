@@ -281,10 +281,6 @@ class QaAccountService implements AccountService {
           ],
         })
       : null;
-
-  @override
-  Future<AdminGrantResult> setAccess(String email, String? tier) async =>
-      AdminGrantResult.failed;
 }
 
 /// QA FIXTURE statistika (soxta; haqiqiy server ma’lumoti emas).
@@ -296,7 +292,6 @@ final qaAdminStats = AdminStats.fromJson(const {
     'professional_profiles': 23,
     'verified_professionals': 9,
   },
-  'tiers': {'pro': 14, 'free': 114},
   'active': {'d7': 41, 'd30': 88},
   'support': {
     'awaiting': 3,
@@ -342,7 +337,6 @@ List<AdminUserSummary> qaAdminUsers() => [
     'created_at': '2026-09-01T09:00:00Z',
     'last_activity': '2026-10-09T08:00:00Z',
     'roles': ['identity_admin'],
-    'tier': 'professionalPro',
     'locale': 'uz',
     'platforms': 'android',
     'status': 'ACTIVE',
@@ -363,7 +357,6 @@ List<AdminUserSummary> qaAdminUsers() => [
       'email': 'user${i.toString().padLeft(2, '0')}@example.test',
       'created_at': '2026-10-0${i % 9 + 1}T09:00:00Z',
       'last_activity': i.isEven ? '2026-10-08T18:00:00Z' : null,
-      'tier': i % 7 == 0 ? 'studentPro' : null,
       'locale': i.isEven ? 'uz' : 'ru',
       'platforms': i.isEven ? 'android' : 'ios',
       'status': i % 10 == 0 ? 'UNCONFIRMED' : 'ACTIVE',

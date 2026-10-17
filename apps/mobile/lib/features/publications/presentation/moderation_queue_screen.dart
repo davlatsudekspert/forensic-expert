@@ -25,7 +25,7 @@ class ModerationQueueScreen extends ConsumerWidget {
     final data = ref.watch(moderationQueueProvider);
     return Scaffold(
       appBar: AppBar(
-        title: Text(l.pubModeration),
+        title: FeAppBarTitle(l.pubModeration),
         actions: [
           IconButton(
             key: const Key('moderation.refresh'),

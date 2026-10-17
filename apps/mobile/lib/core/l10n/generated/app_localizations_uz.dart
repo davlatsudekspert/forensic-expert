@@ -116,10 +116,10 @@ class AppLocalizationsUz extends AppLocalizations {
   String get moduleLaboratory => 'Laboratoriya';
 
   @override
-  String get moduleSubstances => 'Moddalar kutubxonasi';
+  String get moduleSubstances => 'Moddalar';
 
   @override
-  String get moduleLearn => 'Ta’lim';
+  String get moduleLearn => 'O‘qish';
 
   @override
   String get moduleAi => 'Forensic AI';
@@ -181,7 +181,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get themeDark => 'Qorong‘i';
 
   @override
-  String get settingsMode => 'Foydalanish rejimi';
+  String get settingsMode => 'Rejim: talaba yoki mutaxassis';
 
   @override
   String get scientificDatabaseLabel => 'Ilmiy baza';
@@ -522,7 +522,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get searchGroupTools => 'Vositalar';
 
   @override
-  String get searchGroupLearning => 'Ta’lim';
+  String get searchGroupLearning => 'O‘qish';
 
   @override
   String get searchClearHistory => 'Tarixni tozalash';
@@ -757,20 +757,6 @@ class AppLocalizationsUz extends AppLocalizations {
       'Ilova versiyasi va ilmiy baza versiyasi alohida yuritiladi.';
 
   @override
-  String get storeNotConnected =>
-      'App Store / Google Play hozircha mavjud emas. Narx va xarid faqat do‘kon bergandagina paydo bo‘ladi.';
-
-  @override
-  String get restorePurchases => 'Xaridlarni tiklash';
-
-  @override
-  String get restoreNothing => 'Tiklanadigan faol obuna yo‘q.';
-
-  @override
-  String get subscriptionSafetyNote =>
-      'Ogohlantirishlar, cheklovlar va manbalar hech qachon pullik obuna ortida yashirilmaydi.';
-
-  @override
   String get moduleHubTools => 'Bo‘lim vositalari';
 
   @override
@@ -824,32 +810,6 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get detailChangeJurisdiction => 'Yurisdiksiyani o‘zgartirish';
-
-  @override
-  String get purchaseTitle => 'Tariflar';
-
-  @override
-  String get purchaseCta => 'Tariflarni ko‘rish';
-
-  @override
-  String get purchaseFreeTitle => 'Bepul';
-
-  @override
-  String get purchaseFreeBody =>
-      'Asosiy oflayn ma’lumotnoma, qidiruv va oddiy kalkulyatorlar — hisobsiz.';
-
-  @override
-  String get purchaseAiNote =>
-      'Professional AI funksiyalari faqat AI xizmati ulanganda ishlaydi; cheklovlar xariddan oldin ko‘rsatiladi.';
-
-  @override
-  String get purchaseOwned => 'Obunangiz faol';
-
-  @override
-  String get purchaseUnavailableSnack => 'Xarid hozircha mavjud emas.';
-
-  @override
-  String get accessFree => 'Bepul';
 
   @override
   String get homePilotNotice =>
@@ -965,24 +925,6 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String get lockedTitle => 'Talaba Pro va Mutaxassis Pro tarkibida';
-
-  @override
-  String get lockedBody =>
-      'Nomlar, ogohlantirishlar va manbalar ochiq qoladi. Ilmiy tafsilotlar va yurisdiksiya qatlami pullik tarifda ochiladi.';
-
-  @override
-  String get freeDemoBadge => 'Bepul';
-
-  @override
-  String get lockedBadge => 'Pro';
-
-  @override
-  String searchMoreLocked(int count) {
-    return 'Pullik tarifda yana $count ta natija';
-  }
-
-  @override
   String get learnEmptyCourses =>
       'Kurslar o‘quv kontenti ekspert tekshiruvidan o‘tgach paydo bo‘ladi.';
 
@@ -993,30 +935,8 @@ class AppLocalizationsUz extends AppLocalizations {
   String get libraryNotInstalled => 'Ilmiy baza hozircha o‘rnatilmagan.';
 
   @override
-  String get purchasePending => 'Xarid do‘kon tasdig‘ini kutmoqda.';
-
-  @override
-  String get purchaseFailed => 'Xarid yakunlanmadi.';
-
-  @override
-  String get purchaseCancelled => 'Xarid bekor qilindi.';
-
-  @override
-  String get purchaseSuccess => 'Obuna faollashtirildi. Rahmat!';
-
-  @override
   String get aboutTrademarkPending =>
       'Nom va logo: tovar belgisi tekshiruvi yakunlanmagan.';
-
-  @override
-  String get diagPurchaseNone => 'Obuna: do‘kon tasdiqlamagan';
-
-  @override
-  String get diagPurchaseStore =>
-      'Obuna: faqat do‘kon tasdiqlagan — server tekshiruvi ulanmagan (reliz to‘sig‘i)';
-
-  @override
-  String get diagPurchaseServer => 'Obuna: server tomonidan tekshirilgan';
 
   @override
   String get statusDraft => 'Qoralama';
@@ -1160,7 +1080,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get screeningBanner =>
-      'SKRINING NATIJASI ≠ TASDIQLANGAN IDENTIFIKATSIYA. Ijobiy skrining dastlabki natija bo‘lib, validatsiyadan o‘tgan tasdiqlovchi usulni talab qiladi.';
+      'Skrining natijasi — tasdiqlangan identifikatsiya emas. Ijobiy skrining dastlabki natija bo‘lib, validatsiyadan o‘tgan tasdiqlovchi usulni talab qiladi.';
 
   @override
   String get screeningAnalyte => 'Analit';
@@ -1487,10 +1407,10 @@ class AppLocalizationsUz extends AppLocalizations {
   String get legalStatusRepealed => 'Kuchini yo‘qotgan';
 
   @override
-  String get aiExperienceProfessional => 'Qisqa javob';
+  String get aiExperienceProfessional => 'Qisqa';
 
   @override
-  String get aiExperienceTutor => 'Tushuntirib bering';
+  String get aiExperienceTutor => 'Batafsil';
 
   @override
   String get aiExperienceProfessionalHint =>
@@ -3354,130 +3274,13 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get deleteLocalDataBody =>
-      'Saralanganlar, qidiruv tarixi, yaqinda ko‘rilgan yozuvlar va darslar holati faqat shu qurilmadan o‘chiriladi. Ilmiy baza, hisobingiz va do‘kondagi obunalarga ta’sir qilmaydi — hisobni o‘chirish uchun «Hisobni o‘chirish» dan foydalaning.';
+      'Saralanganlar, qidiruv tarixi, yaqinda ko‘rilgan yozuvlar va darslar holati faqat shu qurilmadan o‘chiriladi. Ilmiy baza va hisobingizga ta’sir qilmaydi — hisobni o‘chirish uchun «Hisobni o‘chirish» dan foydalaning.';
 
   @override
   String get deleteLocalDataConfirm => 'O‘chirish';
 
   @override
   String get deleteLocalDataDone => 'Qurilmadagi ma’lumotlar o‘chirildi';
-
-  @override
-  String get tierStudentPro => 'Talaba Pro';
-
-  @override
-  String get tierProfessionalPro => 'Mutaxassis Pro';
-
-  @override
-  String get tierInstitution => 'Muassasa';
-
-  @override
-  String get tierCurrent => 'Joriy tarif';
-
-  @override
-  String get tierFreeF1 => 'Ogohlantirish va manbalari bilan oflayn ilmiy baza';
-
-  @override
-  String get tierFreeF2 => 'Qidiruv va tanlangan ma’lumotnoma yozuvlari';
-
-  @override
-  String get tierFreeF3 => 'Oddiy kalkulyatorlar';
-
-  @override
-  String get tierStudentF1 =>
-      'To‘liq ma’lumotnoma: moddalar, usullar, reaktivlar, sud tibbiyoti, standartlar, yurisdiksiyalar';
-
-  @override
-  String get tierStudentF2 =>
-      'Barcha kurslar, testlar, kartochkalar va imtihonga tayyorgarlik';
-
-  @override
-  String get tierStudentF3 => 'Cheklanmagan qidiruv natijalari';
-
-  @override
-  String get tierProF1 => 'Talaba Pro’dagi barcha imkoniyatlar';
-
-  @override
-  String get tierProF2 =>
-      'Professional kalkulyatorlar va laboratoriya vositalari';
-
-  @override
-  String get tierProF3 => 'Analitik usullar, tadqiqot va dalillar vositalari';
-
-  @override
-  String get tierProF4 => 'Professional AI funksiyalari — AI xizmati ulanganda';
-
-  @override
-  String get periodMonthly => 'Oylik';
-
-  @override
-  String get periodYearly => 'Yillik';
-
-  @override
-  String get periodUnknown => 'Obuna';
-
-  @override
-  String offerPriceLine(String price, String period) {
-    return '$price · $period';
-  }
-
-  @override
-  String get offerSubscribe => 'Obuna bo‘lish';
-
-  @override
-  String get offerPriceFromStore => 'Narxni App Store / Google Play ko‘rsatadi';
-
-  @override
-  String get subscriptionTerms =>
-      'Obuna bekor qilinmaguncha avtomatik yangilanadi. To‘lov App Store / Google Play hisobingizdan olinadi. Davr tugashidan kamida 24 soat oldin do‘kon hisobi sozlamalarida bekor qilishingiz mumkin.';
-
-  @override
-  String get manageSubscription => 'Obunani boshqarish';
-
-  @override
-  String get manageSubscriptionFailed =>
-      'Do‘kondagi obuna sozlamalarini ochib bo‘lmadi.';
-
-  @override
-  String get planLabel => 'Tarif';
-
-  @override
-  String get subscriptionStateLabel => 'Obuna holati';
-
-  @override
-  String get stActive => 'Faol';
-
-  @override
-  String get stExpired => 'Muddati tugagan';
-
-  @override
-  String get stGrace => 'To‘lov muammosi — imtiyozli davr';
-
-  @override
-  String get stBillingRetry => 'To‘lov muammosi — kirish to‘xtatilgan';
-
-  @override
-  String stCancelled(String date) {
-    return 'Bekor qilingan — $date gacha amal qiladi';
-  }
-
-  @override
-  String get stCancelledNoDate =>
-      'Bekor qilingan — davr oxirigacha amal qiladi';
-
-  @override
-  String get stRevoked => 'Do‘kon tomonidan bekor qilingan';
-
-  @override
-  String get stUnknown => 'Holat noma’lum';
-
-  @override
-  String get stNone => 'Obuna yo‘q';
-
-  @override
-  String stRenewsOn(String date) {
-    return 'Yangilanish yoki tugash sanasi: $date';
-  }
 
   @override
   String get accountOptionalNote =>
@@ -3676,10 +3479,6 @@ class AppLocalizationsUz extends AppLocalizations {
       'Hisobingiz va serverlarimizdagi unga bog‘liq ma’lumotlar (elektron pochta, kirish sessiyalari, sinxronlangan ma’lumotlar, bulutdagi huquq yozuvlari) butunlay o‘chiriladi. Buni qaytarib bo‘lmaydi.';
 
   @override
-  String get deleteAccountStoreNote =>
-      'Hisobni o‘chirish App Store / Google Play obunasini bekor qilmaydi. Keyingi to‘lovlarni to‘xtatish uchun uni do‘kon hisobi sozlamalarida bekor qiling.';
-
-  @override
   String get deleteAccountLocalNote =>
       'Qurilmadagi ma’lumotlar (saralanganlar, tarix) alohida amal: «Qurilmadagi ma’lumotlarni o‘chirish».';
 
@@ -3708,9 +3507,6 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get accountSection => 'Hisob';
-
-  @override
-  String get subscriptionSection => 'Obuna';
 
   @override
   String get availNoDataTitle => 'Hozircha yozuvlar yo‘q';
@@ -4004,9 +3800,6 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get accountNeedSync => 'Qurilmalar o‘rtasida sinxronlash';
-
-  @override
-  String get accountNeedSubscriptions => 'Bir nechta qurilmada obuna';
 
   @override
   String get accountNeedCloudAi => 'Bulutli AI (ulanganda)';
@@ -4737,24 +4530,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String get referralStatPending => 'Kutilmoqda';
 
   @override
-  String get referralStatCredits => 'FORENSIC kreditlari';
-
-  @override
-  String referralCreditsPending(String amount) {
-    return '$amount kredit tasdiqlanishini kutmoqda';
-  }
-
-  @override
-  String referralCreditsFuture(String percent) {
-    return 'Pullik xizmatlar ishga tushgach, taklif qilgan hamkasblaringizning mos xaridlaridan sizga FORENSIC Credits hisoblanishi mumkin — xarid qiymatining $percent%. Kreditlar pul emas, ichki promo-bonus; ro‘yxatdan o‘tish uchun berilmaydi.';
-  }
-
-  @override
-  String referralCreditsActive(String percent) {
-    return 'Taklif qilgan hamkasblaringizning mos xaridlaridan $percent% miqdorida FORENSIC Credits olasiz. Kreditlar qaytarish muddatidan keyin tasdiqlanadi. Ular pul emas, ichki promo-bonus.';
-  }
-
-  @override
   String get referralPrivacyNote =>
       'Faqat umumiy sonlar ko‘rsatiladi. Hamkasblaringizning ismi, elektron pochtasi, profili va hujjatlari hech qachon ulashilmaydi — na sizga, na taklifda.';
 
@@ -4907,10 +4682,6 @@ class AppLocalizationsUz extends AppLocalizations {
       'Ochiq kirishdagi maqola (PubMed Central, Europe PMC orqali). Qurilmangizdagi PDF ko‘ruvchi yoki brauzerda ochiladi.';
 
   @override
-  String get fullTextPdfPro =>
-      'To‘liq matnni (PDF) yuklab olish Pro versiyada mavjud.';
-
-  @override
   String get fullTextOpenFailed => 'PDF ochilmadi. Aloqani tekshiring.';
 
   @override
@@ -4945,9 +4716,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String get adminReferrals => 'Takliflar';
 
   @override
-  String get adminProGrants => 'Pro berilganlar';
-
-  @override
   String get adminRegions => 'Davlatlar (qurilma hududi)';
 
   @override
@@ -4965,27 +4733,6 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get adminPrivacyNote =>
       'Shaxsiy ma’lumot (elektron pochta) bor. Skrinshotlarni tarqatmang.';
-
-  @override
-  String get adminGrantTitle => 'Pro berish yoki olib tashlash';
-
-  @override
-  String get adminEmail => 'Foydalanuvchi elektron pochtasi';
-
-  @override
-  String get adminGrantPro => 'Mutaxassis Pro berish';
-
-  @override
-  String get adminRevoke => 'Olib tashlash';
-
-  @override
-  String get adminGranted => 'Pro berildi.';
-
-  @override
-  String get adminRevoked => 'Kirish olib tashlandi.';
-
-  @override
-  String get adminNotFound => 'Bunday elektron pochtali foydalanuvchi yo‘q.';
 
   @override
   String get adminFailed => 'Bajarilmadi. Aloqani tekshiring.';
@@ -5423,7 +5170,8 @@ class AppLocalizationsUz extends AppLocalizations {
   String get homeResourcesHeading => 'Kutubxona va vositalar';
 
   @override
-  String get homeLibraryBody => 'Moddalar, usullar, standartlar va manbalar';
+  String get homeLibraryBody =>
+      'Hamma bo‘limlar: moddalar, usullar, standartlar, manbalar';
 
   @override
   String get homeContinueSaved => 'Davom ettirish va saqlanganlar';
@@ -5657,10 +5405,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String get pubEditTitle => 'Qoralamani tahrirlash';
 
   @override
-  String get pubPaidNote =>
-      'Pullik obuna moderatsiya natijasiga ta’sir qilmaydi.';
-
-  @override
   String get pubRequired => 'Majburiy';
 
   @override
@@ -5736,7 +5480,7 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String get studyTitle => 'O‘quv rejimi';
+  String get studyTitle => 'Mashqlar';
 
   @override
   String get studyEntrySubtitle =>
@@ -6361,12 +6105,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String get admStatActive30d => '30 kunda faol';
 
   @override
-  String get admStatPro => 'Pro (server ruxsati)';
-
-  @override
-  String get admStatFree => 'Bepul';
-
-  @override
   String get admStatAwaiting => 'Javob kutayotgan murojaatlar';
 
   @override
@@ -6391,10 +6129,6 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get admActiveNote =>
       'Faol — davr ichida hisobga kirgan, ilovani ochgan (qurilma belgisi) yoki AI’ga savol bergan.';
-
-  @override
-  String get admProNote =>
-      'Pro faqat server ruxsatini sanaydi; do‘kon xaridlari qurilmada tekshiriladi.';
 
   @override
   String get admChart14d => 'So‘nggi 14 kun: ro‘yxatdan o‘tish va AI savollari';
@@ -6486,15 +6220,6 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get admRoleModerator => 'Moderatorlar';
-
-  @override
-  String get admTierAny => 'Har qanday tarif';
-
-  @override
-  String get admTierFree => 'Bepul';
-
-  @override
-  String get admTierPro => 'Pro tarif';
 
   @override
   String get admUsersEmpty => 'Saralashga mos foydalanuvchi yo‘q.';
@@ -6621,10 +6346,10 @@ class AppLocalizationsUz extends AppLocalizations {
   String get homeAreasTitle => 'Bo‘limlar';
 
   @override
-  String get homeActLearnTitle => 'O‘qish va testlar';
+  String get homeActLearnTitle => 'O‘qish';
 
   @override
-  String get homeActLearnBody => 'Kartochkalar, testlar, imtihon';
+  String get homeActLearnBody => 'Kurslar, mashqlar, sinfda test';
 
   @override
   String get homeActGuidelinesBody => 'Fanlar bo‘yicha amaliy yo‘riqlar';
@@ -6678,13 +6403,6 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get calcEstimatedRange => 'Baholangan oraliq';
-
-  @override
-  String get calcLockedTitle => 'Mutaxassis Pro tarkibida';
-
-  @override
-  String get calcLockedBody =>
-      'Bu kalkulyator Mutaxassis Pro tarifida ochiladi. Suyultirish va konsentratsiya birliklari konvertori — bepul.';
 
   @override
   String get calcLodUnitNote =>
@@ -6753,10 +6471,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String rdGlanceMore(int count) {
     return 'yana $count ta';
   }
-
-  @override
-  String get rdGlanceLockedHint =>
-      'Quyidagi tafsilotlar Pro’da ochiladi. Nomlar, ogohlantirishlar va manbalar bepul qoladi.';
 
   @override
   String get rdJumpTo => 'Bo‘limga o‘tish';
@@ -7275,28 +6989,9 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String courtProTitle(String tier) {
-    return 'Kengaytirilgan tayyorgarlik — $tier tarifida';
-  }
-
-  @override
-  String get courtProBody =>
-      'To‘liq simulyator (barcha ssenariylar), ketma-ket rol mashqlari, AI tahlili (tez orada), shaxsiy statistika va tarix. Manbali savol-javob kartalari hamma uchun bepul.';
-
-  @override
-  String get courtProBadge => 'Pro’da';
-
-  @override
-  String get courtAiPro => 'AI tahlili (Pro)';
-
-  @override
   String courtScoreSemantics(String criterion, int score) {
     return '$criterion: 2 dan $score';
   }
-
-  @override
-  String get courtSimFreeNote =>
-      'Bepul: asosiy ssenariylar. Qolgan ssenariylar, rol mashqlari va statistika — Pro’da.';
 
   @override
   String get courtDrill => 'Rol mashqi';
@@ -8014,15 +7709,6 @@ class AppLocalizationsUz extends AppLocalizations {
       'Qidiruvni namuna, usul, reagent, dalil darajasi va boshqa belgilar bo‘yicha toraytiring yoki namuna, usul yoki reagentdan unga hujjatlashtirilgan moddalarga o‘ting.';
 
   @override
-  String proSearchLockedTitle(String tier) {
-    return 'Kengaytirilgan qidiruv — $tier';
-  }
-
-  @override
-  String get proSearchLockedBody =>
-      'Filtrlar (fan, sinf, namuna, usul, reagent, dalil darajasi, tekshiruv holati, yurisdiksiya, yil), aniq ibora bo‘yicha qidiruv va teskari qidiruv pullik tarifga kiradi. Oddiy qidiruv hammaga ochiq.';
-
-  @override
   String get proSearchHint => 'Nom, sinonim yoki «ibora»';
 
   @override
@@ -8181,15 +7867,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String planSummary(int s, int p, int c, int l) {
     return 'Namunalar: $s · Taxminiy testlar: $p · Tasdiqlash: $c · Cheklovlar: $l';
   }
-
-  @override
-  String planLockedTitle(String tier) {
-    return 'To‘liq tahlil rejasi — $tier';
-  }
-
-  @override
-  String get planLockedBody =>
-      'Bepul ko‘rinishda sonlar va namunalar ko‘rsatiladi. Pullik tarif reagentli taxminiy testlar, stol usullari va tasdiqlash bosqichlari, halaqitlar, cheklovlar, xulosa uchun eslatma hamda to‘liq iqtiboslar bilan nusxalanadigan matnni qo‘shadi.';
 
   @override
   String get planSecSpecimens => 'Namunalar va namuna olish bo‘yicha izohlar';
@@ -8910,34 +8587,6 @@ class AppLocalizationsUz extends AppLocalizations {
       'Ish materialiga o‘xshagan matn avtomatik tekshiruvga tushadi. Uch xil foydalanuvchining shikoyati postni yashiradi yoki mutaxassis belgisini administrator qaroriga qadar to‘xtatadi. Qonunga qarshi qaratilgan post o‘chiriladi, belgi ham u bilan birga ketadi.';
 
   @override
-  String get adminGrantStudent => 'Talaba Pro berish';
-
-  @override
-  String get adminGrantHint =>
-      'Odam ilovaga qaysi pochta bilan kirgan bo‘lsa, shuni yozing. Hisob allaqachon mavjud bo‘lishi kerak; bu yerdan taklif yuborilmaydi.';
-
-  @override
-  String get adminEmailInvalid => 'Bu elektron pochta manzili emas.';
-
-  @override
-  String adminGrantedTier(String tier) {
-    return 'Berildi: $tier';
-  }
-
-  @override
-  String get adminRevokeConfirmTitle => 'Kirishni olib tashlansinmi?';
-
-  @override
-  String get adminRevokeConfirmBody =>
-      'Odam pullik bo‘limlarni darhol yo‘qotadi. Do‘kondan qilingan xaridga bu ta’sir qilmaydi — faqat shu paneldan berilgan huquqqa.';
-
-  @override
-  String get adminTierStudent => 'Talaba Pro';
-
-  @override
-  String get adminTierProfessional => 'Mutaxassis Pro';
-
-  @override
   String get provOwnWordsNote =>
       'Manbadagi mazmun o‘z so‘zlarimiz bilan berilgan; asl matn ko‘chirilmagan. Aniq joyi quyida.';
 
@@ -9006,4 +8655,1064 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get litClaimsTitle => 'Adabiyotdagi dalillar (to‘liq)';
+
+  @override
+  String get analysisS1Title => '1. Test (ekspress / skrining)';
+
+  @override
+  String get analysisS1Note =>
+      'Tez, taxminiy sinamalar: immunoanaliz, test-chiziqlar. Natija faqat dastlabki; tasdiqlovchi usul bilan tasdiqlanishi shart.';
+
+  @override
+  String get analysisS2Title => '2. Sifat reaksiyalari (rangli reaktivlar)';
+
+  @override
+  String get analysisS2Note =>
+      'Reaktiv, rang, izoh va tanlovchanlik yoki yolg‘on musbat natijalar. Taxminiy: o‘zi bilan modda aynanligini isbotlamaydi.';
+
+  @override
+  String get analysisS3Title =>
+      '3. Miqdoriy aniqlash (GC-MS, LC-MS/MS, spektrofotometriya)';
+
+  @override
+  String get analysisS3Note =>
+      'Namuna tayyorlash, asosiy parametrlar, LOD/LOQ (manbada bo‘lsa) va cheklovlar. Raqamlar faqat manbada keltirilganicha; validatsiyadan o‘tgan laboratoriya usuli o‘rnini bosmaydi.';
+
+  @override
+  String get analysisSectionEmpty =>
+      'Bu bo‘lim uchun manbali ma’lumot hali yo‘q — manba kerak. Hech narsa taxmin qilinmaydi.';
+
+  @override
+  String get trPendingTranslation =>
+      'Tarjima kutilmoqda — asl o‘zbekcha matn ko‘rsatilmoqda';
+
+  @override
+  String contactLine(String email) {
+    return 'Aloqa: $email';
+  }
+
+  @override
+  String get repTitle => 'Shikoyat yuborish';
+
+  @override
+  String get repProfileHint =>
+      'Nomaqbul kontent, xato, reklama yoki boshqa muammo';
+
+  @override
+  String get repIntro =>
+      'Nomaqbul kontent, xato yoki boshqa muammo haqida xabar bering. Hisobga kirmasdan ham yuborish mumkin.';
+
+  @override
+  String get repKindField => 'Turi';
+
+  @override
+  String get repKindComplaint => 'Shikoyat';
+
+  @override
+  String get repKindInappropriate => 'Nomaqbul kontent';
+
+  @override
+  String get repKindBug => 'Xato';
+
+  @override
+  String get repKindAdvertising => 'Reklama';
+
+  @override
+  String get repKindOther => 'Boshqa';
+
+  @override
+  String get repBody => 'Nima bo‘ldi?';
+
+  @override
+  String get repBodyHint =>
+      'Shaxsiy ma’lumot, ish raqami yoki bemor ma’lumotini yozmang.';
+
+  @override
+  String repBodyShort(int min) {
+    return 'Kamida $min belgi yozing.';
+  }
+
+  @override
+  String get repContact => 'Javob uchun email (ixtiyoriy)';
+
+  @override
+  String get repContactHint =>
+      'Hisobga kirmagan bo‘lsangiz, javob olish uchun manzil qoldiring.';
+
+  @override
+  String get repPrivacy =>
+      'Matn faqat shikoyatni ko‘rib chiqish uchun saqlanadi. Spamdan himoya uchun qurilma yoki tarmoq manzilining qaytarib bo‘lmas xeshi saqlanadi, manzilning o‘zi saqlanmaydi.';
+
+  @override
+  String get repSend => 'Yuborish';
+
+  @override
+  String get repSent => 'Shikoyatingiz yuborildi. Rahmat.';
+
+  @override
+  String get repInvalid => 'Matnni tekshirib, qayta urinib ko‘ring.';
+
+  @override
+  String repRateLimited(int n) {
+    return 'Soatiga $n tagacha shikoyat yuborish mumkin. Keyinroq urinib ko‘ring.';
+  }
+
+  @override
+  String get repFailed =>
+      'Yuborilmadi. Internetni tekshirib, qayta urinib ko‘ring.';
+
+  @override
+  String get repSuspended =>
+      'Hisob to‘xtatilgan. Yordam uchun email orqali yozing.';
+
+  @override
+  String get repUnavailable =>
+      'Bu yig‘mada shikoyat xizmati ulanmagan. Email orqali yozing.';
+
+  @override
+  String get repMine => 'Mening shikoyatlarim';
+
+  @override
+  String get repStatusOpen => 'Ko‘rib chiqilmoqda';
+
+  @override
+  String get repStatusResolved => 'Hal qilindi';
+
+  @override
+  String get ctTitle => 'Foydalanish qoidalari';
+
+  @override
+  String get ctDraft =>
+      'Bu matn qoralama — ommaviy chiqarishdan oldin yurist tekshirishi kerak.';
+
+  @override
+  String get ctZeroTolerance =>
+      'Haqoratli, nafrat uyg‘otuvchi, zo‘ravonlikka undovchi, noqonuniy kontent va spamga yo‘l qo‘yilmaydi. Har bir postda «Shikoyat» va «Muallifni bloklash» tugmalari bor. Qoidani buzgan kontent olib tashlanishi va hisob to‘xtatilishi mumkin.';
+
+  @override
+  String get ctOpenTerms => 'Foydalanish shartlari (qoralama)';
+
+  @override
+  String get ctAgree => 'Qoidalarni o‘qidim va qabul qilaman';
+
+  @override
+  String get ctAccept => 'Qabul qilish';
+
+  @override
+  String get ctDecline => 'Hozir emas';
+
+  @override
+  String get ctSaveFailed => 'Saqlanmadi. Qayta urinib ko‘ring.';
+
+  @override
+  String get blkTitle => 'Bloklangan mualliflar';
+
+  @override
+  String get blkIntro =>
+      'Bloklangan mualliflarning postlari sizga ko‘rinmaydi. Ular kimligi sizga ham ko‘rsatilmaydi.';
+
+  @override
+  String get blkEmpty => 'Hech kim bloklanmagan.';
+
+  @override
+  String get blkItem => 'Bloklangan muallif';
+
+  @override
+  String blkSince(String date) {
+    return '$date dan beri';
+  }
+
+  @override
+  String get blkUnblock => 'Blokdan chiqarish';
+
+  @override
+  String get blkUnblocked => 'Blokdan chiqarildi.';
+
+  @override
+  String get blkAction => 'Muallifni bloklash';
+
+  @override
+  String get blkConfirmTitle => 'Muallifni bloklaysizmi?';
+
+  @override
+  String get blkConfirmBody =>
+      'Siz bu muallifning savol va javoblarini endi ko‘rmaysiz. Muallif kimligi sizga ko‘rsatilmaydi. Keyinroq bloklanganlar ro‘yxatida qaytarishingiz mumkin.';
+
+  @override
+  String get blkDone => 'Muallif bloklandi.';
+
+  @override
+  String get blkAlready => 'Bu muallif allaqachon bloklangan.';
+
+  @override
+  String get blkSelf => 'O‘zingizni bloklab bo‘lmaydi.';
+
+  @override
+  String get blkFailed => 'Bajarilmadi. Qayta urinib ko‘ring.';
+
+  @override
+  String get admxNavReports => 'Shikoyatlar';
+
+  @override
+  String admxNavReportsHint(int n) {
+    return '$n ta ochiq';
+  }
+
+  @override
+  String get admxReportsTitle => 'Shikoyatlar';
+
+  @override
+  String get admxReportsSearch => 'Matn yoki email bo‘yicha qidirish';
+
+  @override
+  String get admxOpen => 'Ochiq';
+
+  @override
+  String get admxResolvedFilter => 'Hal qilingan';
+
+  @override
+  String get admxAll => 'Hammasi';
+
+  @override
+  String get admxKindAny => 'Barcha turlar';
+
+  @override
+  String get admxQaLink =>
+      'Savol-javob moderatsiyasini ochish (uch kishi shikoyat qilgan postlar)';
+
+  @override
+  String get admxReportsEmpty => 'Shikoyat yo‘q.';
+
+  @override
+  String get admxLoadMore => 'Yana yuklash';
+
+  @override
+  String get admxAnonymous => 'Kirmagan foydalanuvchi';
+
+  @override
+  String admxContact(String value) {
+    return 'Aloqa: $value';
+  }
+
+  @override
+  String admxTarget(String type) {
+    return 'Qaysi post: $type';
+  }
+
+  @override
+  String get admxNoteLabel => 'Izoh (faqat adminlar uchun)';
+
+  @override
+  String get admxNoteSave => 'Izohni saqlash';
+
+  @override
+  String get admxNoteSaved => 'Izoh saqlandi.';
+
+  @override
+  String get admxResolve => 'Hal qilindi deb belgilash';
+
+  @override
+  String get admxReopen => 'Qayta ochish';
+
+  @override
+  String get admxResolvedDone => 'Shikoyat hal qilindi.';
+
+  @override
+  String get admxReopened => 'Shikoyat qayta ochildi.';
+
+  @override
+  String get admxActionFailed => 'Amal bajarilmadi. Qayta urinib ko‘ring.';
+
+  @override
+  String get admxActions => 'Amallar';
+
+  @override
+  String get admxActionsHint =>
+      'Har bir amalni server tekshiradi va jurnalga yozadi.';
+
+  @override
+  String get admxReason => 'Sabab';
+
+  @override
+  String get admxReasonHint => 'Kamida 5 belgi. Jurnalga yoziladi.';
+
+  @override
+  String get admxReasonShort => 'Sabab kamida 5 belgi bo‘lsin.';
+
+  @override
+  String get admxCancel => 'Bekor qilish';
+
+  @override
+  String get admxConfirm => 'Tasdiqlash';
+
+  @override
+  String get admxSelfNote =>
+      'O‘zingizning rolingizni o‘zgartirib yoki hisobingizni to‘xtatib bo‘lmaydi.';
+
+  @override
+  String get admxModeratorGrant => 'Maqolalar moderatori qilish';
+
+  @override
+  String get admxModeratorRemove => 'Moderatorlikni olib tashlash';
+
+  @override
+  String get admxRemoveAdmin => 'Adminlikni olib tashlash';
+
+  @override
+  String get admxRemoveAdminTitle => 'Adminlik olib tashlansinmi?';
+
+  @override
+  String get admxRemoveAdminBody =>
+      'Odam admin panelga kirish huquqini darhol yo‘qotadi. Oxirgi adminni olib tashlab bo‘lmaydi. Ilmiy reviewer roli alohida va bu yerda o‘zgarmaydi.';
+
+  @override
+  String get admxAdminNotSuspendable => 'Admin hisobini to‘xtatib bo‘lmaydi.';
+
+  @override
+  String get admxSuspend => 'Hisobni to‘xtatish';
+
+  @override
+  String get admxRestore => 'Hisobni qayta yoqish';
+
+  @override
+  String get admxSuspendTitle => 'Hisob to‘xtatilsinmi?';
+
+  @override
+  String get admxSuspendConfirmBody =>
+      'Foydalanuvchi barcha qurilmalardan chiqariladi va hisob qayta yoqilmaguncha kira olmaydi. Amal jurnalga yoziladi.';
+
+  @override
+  String get admxRoleGranted => 'Rol berildi.';
+
+  @override
+  String get admxRoleRevoked => 'Rol olib tashlandi.';
+
+  @override
+  String get admxNoChange => 'O‘zgarish yo‘q.';
+
+  @override
+  String get admxUserNotFound => 'Foydalanuvchi topilmadi.';
+
+  @override
+  String get admxRoleForbidden =>
+      'Bu rolni ilovadan berib bo‘lmaydi. Egasi buni server orqali qiladi.';
+
+  @override
+  String get admxEmailUnconfirmed => 'Email manzili tasdiqlanmagan.';
+
+  @override
+  String get admxSelfAdmin =>
+      'O‘zingizning admin rolingizni o‘zgartirib bo‘lmaydi.';
+
+  @override
+  String get admxLastAdmin => 'Oxirgi adminni olib tashlab bo‘lmaydi.';
+
+  @override
+  String get admxCannotSuspendAdmin => 'Adminni to‘xtatib bo‘lmaydi.';
+
+  @override
+  String get admxCannotSuspendSelf => 'O‘zingizni to‘xtatib bo‘lmaydi.';
+
+  @override
+  String get admxSuspended => 'Hisob to‘xtatildi. Sessiyalari o‘chirildi.';
+
+  @override
+  String get admxRestored => 'Hisob qayta yoqildi.';
+
+  @override
+  String get admxExtTitle => 'Rollar, shikoyatlar va obyektlar';
+
+  @override
+  String get admxStatAdmins => 'Adminlar';
+
+  @override
+  String get admxStatModerators => 'Moderatorlar';
+
+  @override
+  String get admxStatSuspended => 'To‘xtatilgan';
+
+  @override
+  String get admxStatReportsOpen => 'Ochiq shikoyatlar';
+
+  @override
+  String get admxStatReportsResolved => 'Hal qilingan shikoyatlar';
+
+  @override
+  String get admxStatQaQuestions => 'Savol-javob: savollar';
+
+  @override
+  String get admxStatQaAnswers => 'Savol-javob: javoblar';
+
+  @override
+  String get admxStatQaModeration => 'Moderatsiyada';
+
+  @override
+  String get admxStatBlocks => 'Bloklashlar';
+
+  @override
+  String get admxCasebookNote =>
+      'Casebook: qurilmada saqlanadi, hisoblanmaydi.';
+
+  @override
+  String get admxOnlineNote =>
+      'Hozir tizimda: mavjud emas (faol kuzatuv yo‘q).';
+
+  @override
+  String get admxStoresTitle => 'Yuklab olishlar';
+
+  @override
+  String get admxDownloadsNote =>
+      'Yuklab olishlar: serverga ko‘rinmaydi. Do‘kon konsollarini oching.';
+
+  @override
+  String get admxSalesNote => 'Sotuvlar: 0 — to‘lov tizimi yo‘q.';
+
+  @override
+  String get admxOpenAsc => 'App Store Connect';
+
+  @override
+  String get admxOpenPlay => 'Google Play Console';
+
+  @override
+  String get admxOpenFailed => 'Havola ochilmadi.';
+
+  @override
+  String get admActAdminRoleSet => 'Rol paneldan o‘zgartirildi';
+
+  @override
+  String get admActUserSuspended => 'Hisob to‘xtatildi';
+
+  @override
+  String get admActUserRestored => 'Hisob qayta yoqildi';
+
+  @override
+  String get admActReportsView => 'Shikoyatlar ro‘yxati ko‘rildi';
+
+  @override
+  String get admActReportNote => 'Shikoyatga izoh';
+
+  @override
+  String get admActReportResolved => 'Shikoyat hal qilindi';
+
+  @override
+  String get admActReportReopened => 'Shikoyat qayta ochildi';
+
+  @override
+  String get admActAdminBootstrap =>
+      'Birinchi admin tayinlandi (egasi bootstrap)';
+
+  @override
+  String get socialOr => 'yoki';
+
+  @override
+  String get socialContinueGoogle => 'Google bilan davom etish';
+
+  @override
+  String get socialContinueApple => 'Apple bilan davom etish';
+
+  @override
+  String get socialErrUnavailable =>
+      'Bu usulda kirish hozir mavjud emas. Qayta urinib ko‘ring yoki email orqali kiring.';
+
+  @override
+  String get socialTermsNote =>
+      'Davom etib, Foydalanish shartlari va Maxfiylik siyosatiga rozilik bildirasiz.';
+
+  @override
+  String get deleteAccountSocialNote =>
+      'Bu hisob Google yoki Apple orqali ochilgan, shuning uchun parol kerak emas. O‘chirish uchun pastda tasdiqlang.';
+
+  @override
+  String get deleteAccountAppleNote =>
+      'Bu hisob Apple orqali ochilgan, shuning uchun parol kerak emas. Tasdiqlaganingizdan so‘ng Apple o‘zingizni tasdiqlashni so‘raydi va ilovaning Apple ID’ingizga kirish huquqi bekor qilinadi.';
+
+  @override
+  String get classQuizTitle => 'Sinfda test';
+
+  @override
+  String get classQuizCardSubtitle =>
+      'Ustoz boshqaradigan jonli test: kod yoki QR bilan qo‘shiling';
+
+  @override
+  String get classQuizIntro =>
+      'Ustoz ekranda 6 xonali kod va QR ko‘rsatadi. Talabalar laqab bilan qo‘shiladi va har bir savolga vaqt tugaguncha javob beradi.';
+
+  @override
+  String get classDemoBanner =>
+      'Demo rejim: ma’lumot faqat shu qurilmada qoladi. Haqiqiy sinf uchun server ulanishi kerak.';
+
+  @override
+  String get classDemoChip => 'DEMO';
+
+  @override
+  String get classJoinSection => 'Sinfga qo‘shilish';
+
+  @override
+  String get classJoinHint =>
+      'Ustoz ekranidagi 6 xonali kodni kiriting yoki QR kodni skanerlang.';
+
+  @override
+  String get classJoinTitle => 'Sinfga qo‘shilish';
+
+  @override
+  String get classJoinAction => 'Qo‘shilish';
+
+  @override
+  String get classCodeLabel => 'Sinf kodi';
+
+  @override
+  String classCodeSpoken(String code) {
+    return 'Sinf kodi $code';
+  }
+
+  @override
+  String get classNickLabel => 'Laqab';
+
+  @override
+  String get classNickHelper =>
+      '2–20 belgi. Ustozga faqat shu laqab ko‘rinadi — ismingiz va elektron pochtangiz emas.';
+
+  @override
+  String get classScanAction => 'QR skanerlash';
+
+  @override
+  String get classScanTitle => 'Sinf QR kodini skanerlash';
+
+  @override
+  String get classScanHint => 'Kamerani ustoz ekranidagi QR kodga qarating.';
+
+  @override
+  String get classScanPermission =>
+      'Kameraga ruxsat berilmagan. Sozlamalardan ruxsat bering yoki kodni qo‘lda kiriting.';
+
+  @override
+  String get classScanUnavailable =>
+      'Kameradan bu yerda foydalanib bo‘lmaydi. Kodni qo‘lda kiriting.';
+
+  @override
+  String get classScanManual => 'Kodni qo‘lda kiritish';
+
+  @override
+  String classResume(String topic) {
+    return 'Davom etish: $topic';
+  }
+
+  @override
+  String get classTeacherSection => 'Ustozlar uchun';
+
+  @override
+  String get classNotTeacherNote =>
+      'Testni ustoz o‘tkazadi. Ustoz rolini FORENSIC EXPERT jamoasi serverda beradi; dars o‘tsangiz, bizga yozing.';
+
+  @override
+  String get classNewAction => 'Test o‘tkazish';
+
+  @override
+  String get classNewTitle => 'Test o‘tkazish';
+
+  @override
+  String get classRecentSection => 'So‘nggi sinflar';
+
+  @override
+  String classSessionLine(String code, String status) {
+    return '$code · $status';
+  }
+
+  @override
+  String get classStatusLobby => 'Talabalar kutilmoqda';
+
+  @override
+  String get classStatusRunning => 'Davom etmoqda';
+
+  @override
+  String get classStatusFinished => 'Tugagan';
+
+  @override
+  String get classPrivacyNote =>
+      'Ustoz faqat laqabingizni ko‘radi. Tugagan sinflar 30 kundan keyin avtomatik o‘chiriladi. Nomaqbul laqabga shikoyat qilish mumkin, u olib tashlanadi.';
+
+  @override
+  String get classSignInTitle => 'Qo‘shilish uchun hisobga kiring';
+
+  @override
+  String get classSignInBody =>
+      'Natijangiz serverda hisobingizga bog‘lanadi. Boshqa talabalar va ustoz faqat laqabingizni ko‘radi.';
+
+  @override
+  String get classSignInAction => 'Hisobga kirish';
+
+  @override
+  String get classTeacherOnlyTitle => 'Faqat ustozlar uchun';
+
+  @override
+  String get classTeacherOnlyBody =>
+      'Bu ekran ustoz roli bor hisoblarga ochiq. Buni server tekshiradi.';
+
+  @override
+  String get classTopicSection => 'Mavzu';
+
+  @override
+  String get classNoTopics => 'Savollar banki hozircha mavjud emas.';
+
+  @override
+  String classQuestionsAvailable(int count) {
+    return '$count ta savol';
+  }
+
+  @override
+  String get classSettingsSection => 'Sozlamalar';
+
+  @override
+  String get classQuestionCount => 'Savollar soni';
+
+  @override
+  String get classStudentLimit => 'Talabalar chegarasi';
+
+  @override
+  String get classSecondsPerQuestion => 'Har savolga vaqt';
+
+  @override
+  String classSecondsShort(int seconds) {
+    return '$seconds s';
+  }
+
+  @override
+  String classSecondsLeft(int seconds) {
+    return '$seconds soniya qoldi';
+  }
+
+  @override
+  String get classCreateAction => 'Sinfni yaratish';
+
+  @override
+  String get classHostJoinHint =>
+      'FORENSIC EXPERT → Sinfda test bo‘limida shu kodni kiriting yoki QR kodni skanerlang:';
+
+  @override
+  String get classQrSemantics => 'Sinfga qo‘shilish QR kodi';
+
+  @override
+  String classJoinedCount(int joined, int limit) {
+    return 'Qo‘shilganlar: $joined / $limit';
+  }
+
+  @override
+  String get classWaitingForStudents => 'Talabalar qo‘shilishi kutilmoqda…';
+
+  @override
+  String classReportsCount(int count) {
+    return 'Laqabga shikoyatlar: $count — ro‘yxatni tekshiring';
+  }
+
+  @override
+  String get classStartAction => 'Boshlash';
+
+  @override
+  String get classKickTitle => 'Sinfdan chiqarilsinmi?';
+
+  @override
+  String classKickBody(String nickname) {
+    return '«$nickname» chiqariladi va qayta qo‘shila olmaydi.';
+  }
+
+  @override
+  String get classKickAction => 'Chiqarish';
+
+  @override
+  String get classCancel => 'Bekor qilish';
+
+  @override
+  String classQuestionOf(int n, int total) {
+    return '$n-savol / $total';
+  }
+
+  @override
+  String classAnswered(int count, int total) {
+    return 'Javob berdi: $count / $total';
+  }
+
+  @override
+  String classCorrectPct(int pct) {
+    return '$pct% to‘g‘ri';
+  }
+
+  @override
+  String get classLeaderboard => 'Reyting jadvali';
+
+  @override
+  String get classNoScoresYet => 'Hozircha ball yo‘q.';
+
+  @override
+  String get classCloseQuestion => 'Savolni yopish';
+
+  @override
+  String get classNextQuestion => 'Keyingi savol';
+
+  @override
+  String get classFinishAction => 'Testni yakunlash';
+
+  @override
+  String get classEndAction => 'Testni tugatish';
+
+  @override
+  String get classEndTitle => 'Test hozir tugatilsinmi?';
+
+  @override
+  String get classEndBody =>
+      'Talabalar natijalarini ko‘radi. Buni bekor qilib bo‘lmaydi.';
+
+  @override
+  String get classFinishedTitle => 'Test yakunlandi';
+
+  @override
+  String classFinishedSummary(int students, int questions) {
+    return 'Talabalar: $students · savollar: $questions';
+  }
+
+  @override
+  String get classHardestTitle => 'Eng qiyin savollar';
+
+  @override
+  String get classNoAnswersYet => 'Javoblar qayd etilmagan.';
+
+  @override
+  String get classExportCsv => 'Natijani saqlash / ulashish (CSV)';
+
+  @override
+  String get classCsvSubject => 'Sinf testi natijalari';
+
+  @override
+  String get classDone => 'Tayyor';
+
+  @override
+  String classRetentionNote(int days) {
+    return 'Sinf tugagach $days kundan keyin avtomatik o‘chiriladi.';
+  }
+
+  @override
+  String get classRetry => 'Qayta urinish';
+
+  @override
+  String get classExit => 'Chiqish';
+
+  @override
+  String classLobbyWelcome(String nickname) {
+    return 'Siz qo‘shildingiz, $nickname!';
+  }
+
+  @override
+  String get classLobbyWait => 'Ustoz testni boshlashini kuting.';
+
+  @override
+  String get classChooseAnswer => 'Javobni tanlang.';
+
+  @override
+  String get classAnswerAccepted =>
+      'Javob qabul qilindi. Natija vaqt tugagach ko‘rinadi.';
+
+  @override
+  String get classTimeUpWaiting => 'Vaqt tugadi. Javob tekshirilmoqda…';
+
+  @override
+  String classResultCorrect(int points) {
+    return 'To‘g‘ri! +$points ball';
+  }
+
+  @override
+  String get classResultWrong => 'Noto‘g‘ri.';
+
+  @override
+  String get classResultNoAnswer => 'Javob berilmagan.';
+
+  @override
+  String get classWaitNext => 'Ustoz keyingi savolni ochishini kuting.';
+
+  @override
+  String classScoreLine(int score) {
+    return 'Ball: $score';
+  }
+
+  @override
+  String classRankLine(int rank, int total) {
+    return '$rank-o‘rin / $total';
+  }
+
+  @override
+  String classCorrectOfTotal(int correct, int total) {
+    return '$total tadan $correct tasi to‘g‘ri';
+  }
+
+  @override
+  String get classTopFive => 'Eng yaxshi beshlik';
+
+  @override
+  String get classMistakesTitle => 'Takrorlash kerak bo‘lgan savollar';
+
+  @override
+  String get classNoMistakes => 'Barcha javoblar to‘g‘ri. Barakalla!';
+
+  @override
+  String classQuestionNumber(int n) {
+    return '$n-savol';
+  }
+
+  @override
+  String classYourAnswer(String text) {
+    return 'Sizning javobingiz: $text';
+  }
+
+  @override
+  String classCorrectAnswer(String text) {
+    return 'To‘g‘ri javob: $text';
+  }
+
+  @override
+  String classSourceLine(String author, String title, String page) {
+    return 'Manba: $author, $title, $page-bet';
+  }
+
+  @override
+  String get classOptionCorrect => 'to‘g‘ri';
+
+  @override
+  String get classOptionWrong => 'sizning javobingiz, noto‘g‘ri';
+
+  @override
+  String get classOptionChosen => 'sizning tanlovingiz';
+
+  @override
+  String get classReportTitle => 'Bu laqabga shikoyat qilinsinmi?';
+
+  @override
+  String classReportBody(String nickname) {
+    return '«$nickname» ustozga ko‘rib chiqish uchun yuboriladi.';
+  }
+
+  @override
+  String get classReportAction => 'Shikoyat qilish';
+
+  @override
+  String get classReportReason => 'Nomaqbul laqab';
+
+  @override
+  String get classReportSent => 'Shikoyat yuborildi. Rahmat.';
+
+  @override
+  String get classErrNotConfigured =>
+      'Sinfda test FORENSIC EXPERT serveri ulangach ishlaydi.';
+
+  @override
+  String get classErrNotSignedIn => 'Avval hisobga kiring.';
+
+  @override
+  String get classErrOffline =>
+      'Aloqa yo‘q. Internetni tekshirib, qayta urinib ko‘ring.';
+
+  @override
+  String get classErrServer =>
+      'Serverda xatolik. Birozdan so‘ng qayta urinib ko‘ring.';
+
+  @override
+  String get classErrForbidden => 'Bu sinfga kirish huquqingiz yo‘q.';
+
+  @override
+  String get classErrBadCode => '6 xonali kodni kiriting.';
+
+  @override
+  String get classErrNotFound =>
+      'Bunday kodli sinf topilmadi. Kodni tekshirib, qayta urinib ko‘ring.';
+
+  @override
+  String get classErrRateLimited =>
+      'Urinishlar juda ko‘p. Bir soatdan keyin qayta urinib ko‘ring.';
+
+  @override
+  String get classErrOwnSession =>
+      'Siz bu sinfning ustozisiz, talaba sifatida qo‘shila olmaysiz.';
+
+  @override
+  String get classErrFinished => 'Bu test allaqachon tugagan.';
+
+  @override
+  String get classErrKicked => 'Ustoz sizni bu sinfdan chiqargan.';
+
+  @override
+  String get classErrAlreadyStarted =>
+      'Test allaqachon boshlangan — yangi talaba qo‘shila olmaydi.';
+
+  @override
+  String get classErrFull => 'Sinf to‘lgan.';
+
+  @override
+  String get classErrNickLength => 'Laqab 2–20 belgidan iborat bo‘lishi kerak.';
+
+  @override
+  String get classErrNickChars => 'Laqabda ruxsat etilmagan belgilar bor.';
+
+  @override
+  String get classErrNickBlocked => 'Boshqa laqab tanlang.';
+
+  @override
+  String get classErrInvalidSettings =>
+      'Sozlamalarni tekshiring: 5–20 savol, 5–200 talaba, 15/30/45/60 soniya.';
+
+  @override
+  String get classErrTooManySessions =>
+      'Ochiq sinflar juda ko‘p. Avval birini tugating.';
+
+  @override
+  String get classErrNotEnoughQuestions =>
+      'Bu mavzuda savollar yetarli emas (kamida 5 ta kerak).';
+
+  @override
+  String get classErrBadState => 'Hozir bu amalni bajarib bo‘lmaydi.';
+
+  @override
+  String get classErrNoParticipants =>
+      'Kamida bitta talaba qo‘shilishini kuting.';
+
+  @override
+  String get classErrNotCurrent => 'Bu savol allaqachon yopilgan.';
+
+  @override
+  String get classErrTimeOver => 'Vaqt tugadi — javobingiz hisobga olinmadi.';
+
+  @override
+  String get classErrAlreadyAnswered =>
+      'Bu savolga allaqachon javob bergansiz.';
+
+  @override
+  String get classErrNotFinished => 'Natijalar test tugagach ko‘rinadi.';
+
+  @override
+  String get classErrBadReason => 'Sabab juda qisqa.';
+
+  @override
+  String get unverifiedChip => 'Ekspert hali tasdiqlamagan';
+
+  @override
+  String get legalNationalMethodsEmpty =>
+      'Milliy metodikalar hali yuklanmagan.';
+
+  @override
+  String get teacherPanelTitle => 'Ustoz paneli';
+
+  @override
+  String get teacherPanelHomeBody =>
+      'Sinfda test o‘tkazing, natijalarni CSV’da oling';
+
+  @override
+  String get teacherPanelHomeBodyStudent =>
+      'Ustoz kodi bilan sinfda testga qo‘shiling';
+
+  @override
+  String get teacherPanelIntro =>
+      'Uchta oddiy amal: test o‘tkazing, natijalarni ko‘ring, talabalar esa kod bilan qo‘shiladi.';
+
+  @override
+  String get teacherRunTitle => 'Test o‘tkazish';
+
+  @override
+  String get teacherRunBody =>
+      'Mavzuni tanlang — sinf uchun 6 xonali kod va QR chiqadi';
+
+  @override
+  String get teacherResultsTitle => 'Natijalar va CSV';
+
+  @override
+  String get teacherResultsBody => 'O‘tkazilgan testlar, reyting va CSV fayl';
+
+  @override
+  String get teacherJoinTitle => 'Sinfga qo‘shilish (talaba)';
+
+  @override
+  String get teacherJoinBody => 'Ustoz bergan kod yoki QR bilan';
+
+  @override
+  String get teacherRoleNeeded => 'Ustoz roli kerak — pastdagi izohga qarang';
+
+  @override
+  String get teacherResultsEmpty =>
+      'Hali test o‘tkazilmagan. «Test o‘tkazish»dan boshlang — natijalar shu yerda chiqadi.';
+
+  @override
+  String get disciplineNextTitle => 'Keyingi qadam';
+
+  @override
+  String get disciplineSearchCta => 'Shu fan bo‘yicha qidirish';
+
+  @override
+  String get disciplineSearchBody => 'Moddalar, usullar va manbalar ichidan';
+
+  @override
+  String get referralHowTitle => 'Qanday ishlaydi';
+
+  @override
+  String get referralHow1 =>
+      'Shaxsiy kodingiz yoki havolangizni hamkasbingizga yuborasiz.';
+
+  @override
+  String get referralHow2 => 'Hamkasbingiz shu kod bilan yangi hisob ochadi.';
+
+  @override
+  String get referralHow3 =>
+      'Siz faqat umumiy sonlarni ko‘rasiz — ismlar va ma’lumotlar ko‘rinmaydi.';
+
+  @override
+  String get pubEmptyTitle => 'Hali maqola yo‘q';
+
+  @override
+  String get pubEmptyBody =>
+      'Tajribangiz bilan birinchi bo‘lib bo‘lishing: «Maqola yuborish» tugmasi pastda. Moderatsiyadan so‘ng maqola shu yerda chiqadi.';
+
+  @override
+  String get calcWarnZeroMeasured =>
+      'Namunada etanol aniqlanmagan (0): teskari hisob hodisa paytidagi darajani ko‘rsata olmaydi — etanol namuna olinguncha to‘liq chiqib ketgan bo‘lishi mumkin.';
+
+  @override
+  String get calcTechInfo => 'Texnik ma’lumot';
+
+  @override
+  String calcTechModule(String id, String version) {
+    return 'Hisoblash moduli: $id, versiya $version';
+  }
+
+  @override
+  String classSourceLineNoPage(String author, String title) {
+    return 'Manba: $author, $title';
+  }
+
+  @override
+  String classSourceLineLocator(String author, String title, String locator) {
+    return 'Manba: $author, $title, $locator';
+  }
+
+  @override
+  String get classTopicSearchHint => 'Mavzu yoki kursni qidiring';
+
+  @override
+  String get classTopicGroupOther => 'Boshqa mavzular';
+
+  @override
+  String get classTopicNoMatch => 'Mos mavzu topilmadi.';
+
+  @override
+  String get classTopicSelected => 'Tanlangan mavzu';
+
+  @override
+  String classTopicGroupCount(int count) {
+    return '$count ta mavzu';
+  }
+
+  @override
+  String ghsPCodesDetails(int count) {
+    return 'Batafsil: ehtiyot choralari (P-kodlar, $count ta)';
+  }
+
+  @override
+  String get studyExamUnavailableHub =>
+      '«Faqat mashq» belgili to‘plamlarda imtihon yo‘q: savollar avtomatik tuzilgan yoki ularda izoh yoki manbadagi sahifa yo‘q. Ular bo‘yicha mashq rejimidan foydalaning.';
+
+  @override
+  String get studyQuizAboutPractice => 'Mashq rejimi va variantlar haqida';
 }

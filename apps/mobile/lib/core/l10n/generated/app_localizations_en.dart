@@ -116,10 +116,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get moduleLaboratory => 'Laboratory';
 
   @override
-  String get moduleSubstances => 'Substance Library';
+  String get moduleSubstances => 'Substances';
 
   @override
-  String get moduleLearn => 'Learn';
+  String get moduleLearn => 'Learning';
 
   @override
   String get moduleAi => 'Forensic AI';
@@ -179,7 +179,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get themeDark => 'Dark';
 
   @override
-  String get settingsMode => 'Usage mode';
+  String get settingsMode => 'Mode: student or professional';
 
   @override
   String get scientificDatabaseLabel => 'Scientific database';
@@ -753,20 +753,6 @@ class AppLocalizationsEn extends AppLocalizations {
       'The app version and the scientific database version are tracked separately.';
 
   @override
-  String get storeNotConnected =>
-      'The App Store / Google Play is not connected in this build. Prices and purchases appear only when the store provides them.';
-
-  @override
-  String get restorePurchases => 'Restore purchases';
-
-  @override
-  String get restoreNothing => 'No active subscriptions to restore.';
-
-  @override
-  String get subscriptionSafetyNote =>
-      'Disclaimers, limitations and sources are never behind a paywall.';
-
-  @override
   String get moduleHubTools => 'Tools in this section';
 
   @override
@@ -820,33 +806,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get detailChangeJurisdiction => 'Change jurisdiction';
-
-  @override
-  String get purchaseTitle => 'Plans';
-
-  @override
-  String get purchaseCta => 'See plans';
-
-  @override
-  String get purchaseFreeTitle => 'Free';
-
-  @override
-  String get purchaseFreeBody =>
-      'Core offline reference, search and basic calculators — no account required.';
-
-  @override
-  String get purchaseAiNote =>
-      'Professional AI features become available only when the AI service is connected; limits will be stated before purchase.';
-
-  @override
-  String get purchaseOwned => 'Your subscription is active';
-
-  @override
-  String get purchaseUnavailableSnack =>
-      'Purchases are not available in this build.';
-
-  @override
-  String get accessFree => 'Free';
 
   @override
   String get homePilotNotice =>
@@ -961,24 +920,6 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get lockedTitle => 'Included in Student Pro and Professional Pro';
-
-  @override
-  String get lockedBody =>
-      'Names, warnings and sources stay open. Scientific details and the jurisdiction layer unlock with a paid plan.';
-
-  @override
-  String get freeDemoBadge => 'Free';
-
-  @override
-  String get lockedBadge => 'Pro';
-
-  @override
-  String searchMoreLocked(int count) {
-    return '$count more results with a paid plan';
-  }
-
-  @override
   String get learnEmptyCourses =>
       'Courses will appear after expert review of the learning content.';
 
@@ -990,31 +931,8 @@ class AppLocalizationsEn extends AppLocalizations {
       'The scientific database is not installed in this build.';
 
   @override
-  String get purchasePending =>
-      'Purchase is waiting for confirmation from the store.';
-
-  @override
-  String get purchaseFailed => 'The purchase was not completed.';
-
-  @override
-  String get purchaseCancelled => 'Purchase cancelled.';
-
-  @override
-  String get purchaseSuccess => 'Subscription activated. Thank you!';
-
-  @override
   String get aboutTrademarkPending =>
       'Name and logo: trademark clearance pending.';
-
-  @override
-  String get diagPurchaseNone => 'Subscription: none confirmed by the store';
-
-  @override
-  String get diagPurchaseStore =>
-      'Subscription: confirmed by the store only — server verification not connected (release blocker)';
-
-  @override
-  String get diagPurchaseServer => 'Subscription: verified by the server';
 
   @override
   String get statusDraft => 'Draft';
@@ -1158,7 +1076,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get screeningBanner =>
-      'SCREENING RESULT ≠ CONFIRMED IDENTIFICATION. A positive screen is presumptive and requires a validated confirmatory method.';
+      'A screening result is not a confirmed identification. A positive screen is presumptive and requires a validated confirmatory method.';
 
   @override
   String get screeningAnalyte => 'Analyte';
@@ -1485,10 +1403,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get legalStatusRepealed => 'Repealed';
 
   @override
-  String get aiExperienceProfessional => 'Short answer';
+  String get aiExperienceProfessional => 'Short';
 
   @override
-  String get aiExperienceTutor => 'Explain it to me';
+  String get aiExperienceTutor => 'Detailed';
 
   @override
   String get aiExperienceProfessionalHint =>
@@ -3348,132 +3266,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get deleteLocalDataBody =>
-      'Bookmarks, search history, recently viewed records and lesson progress will be deleted from this device only. The scientific database, your account and store subscriptions are not affected — use “Delete account” to delete the account.';
+      'Bookmarks, search history, recently viewed records and lesson progress will be deleted from this device only. The scientific database and your account are not affected — use “Delete account” to delete the account.';
 
   @override
   String get deleteLocalDataConfirm => 'Delete';
 
   @override
   String get deleteLocalDataDone => 'Local data deleted';
-
-  @override
-  String get tierStudentPro => 'Student Pro';
-
-  @override
-  String get tierProfessionalPro => 'Professional Pro';
-
-  @override
-  String get tierInstitution => 'Institution';
-
-  @override
-  String get tierCurrent => 'Current plan';
-
-  @override
-  String get tierFreeF1 =>
-      'Offline scientific database with safety warnings and sources';
-
-  @override
-  String get tierFreeF2 => 'Search and selected reference entries';
-
-  @override
-  String get tierFreeF3 => 'Basic calculators';
-
-  @override
-  String get tierStudentF1 =>
-      'Full reference: substances, methods, reagents, forensic medicine, standards, jurisdictions';
-
-  @override
-  String get tierStudentF2 =>
-      'All courses, quizzes, flashcards and exam practice';
-
-  @override
-  String get tierStudentF3 => 'Unlimited search results';
-
-  @override
-  String get tierProF1 => 'Everything in Student Pro';
-
-  @override
-  String get tierProF2 => 'Professional calculators and laboratory tools';
-
-  @override
-  String get tierProF3 => 'Analytical methods, research and evidence tools';
-
-  @override
-  String get tierProF4 =>
-      'Professional AI features — when the AI service is connected';
-
-  @override
-  String get periodMonthly => 'Monthly';
-
-  @override
-  String get periodYearly => 'Yearly';
-
-  @override
-  String get periodUnknown => 'Subscription';
-
-  @override
-  String offerPriceLine(String price, String period) {
-    return '$price · $period';
-  }
-
-  @override
-  String get offerSubscribe => 'Subscribe';
-
-  @override
-  String get offerPriceFromStore =>
-      'Price is shown by the App Store / Google Play';
-
-  @override
-  String get subscriptionTerms =>
-      'Subscriptions renew automatically until cancelled. Payment is charged to your App Store / Google Play account. You can cancel at least 24 hours before the end of the period in your store account settings.';
-
-  @override
-  String get manageSubscription => 'Manage subscription';
-
-  @override
-  String get manageSubscriptionFailed =>
-      'Could not open the store subscription settings.';
-
-  @override
-  String get planLabel => 'Plan';
-
-  @override
-  String get subscriptionStateLabel => 'Subscription status';
-
-  @override
-  String get stActive => 'Active';
-
-  @override
-  String get stExpired => 'Expired';
-
-  @override
-  String get stGrace => 'Payment issue — grace period';
-
-  @override
-  String get stBillingRetry => 'Payment issue — access paused';
-
-  @override
-  String stCancelled(String date) {
-    return 'Cancelled — active until $date';
-  }
-
-  @override
-  String get stCancelledNoDate =>
-      'Cancelled — active until the end of the period';
-
-  @override
-  String get stRevoked => 'Revoked by the store';
-
-  @override
-  String get stUnknown => 'Status unknown';
-
-  @override
-  String get stNone => 'No subscription';
-
-  @override
-  String stRenewsOn(String date) {
-    return 'Renews or ends on $date';
-  }
 
   @override
   String get accountOptionalNote =>
@@ -3674,10 +3473,6 @@ class AppLocalizationsEn extends AppLocalizations {
       'This permanently deletes your account and the data linked to it on our servers (email, sign-in sessions, synced data, cloud entitlement records). This cannot be undone.';
 
   @override
-  String get deleteAccountStoreNote =>
-      'Deleting the account does not cancel an App Store / Google Play subscription. Cancel it in your store account settings to stop future charges.';
-
-  @override
   String get deleteAccountLocalNote =>
       'Data on this device (bookmarks, history) is a separate action: “Delete data on this device”.';
 
@@ -3706,9 +3501,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get accountSection => 'Account';
-
-  @override
-  String get subscriptionSection => 'Subscription';
 
   @override
   String get availNoDataTitle => 'No records yet';
@@ -4002,9 +3794,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get accountNeedSync => 'Synchronisation between devices';
-
-  @override
-  String get accountNeedSubscriptions => 'Subscriptions across devices';
 
   @override
   String get accountNeedCloudAi => 'Cloud AI (when connected)';
@@ -4749,24 +4538,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get referralStatPending => 'Pending';
 
   @override
-  String get referralStatCredits => 'FORENSIC Credits';
-
-  @override
-  String referralCreditsPending(String amount) {
-    return '$amount credits awaiting confirmation';
-  }
-
-  @override
-  String referralCreditsFuture(String percent) {
-    return 'When paid services launch, eligible purchases by colleagues you invite may earn you FORENSIC Credits — $percent% of the purchase value. Credits are an internal promotional bonus, not cash, and are not awarded for registration.';
-  }
-
-  @override
-  String referralCreditsActive(String percent) {
-    return 'You receive FORENSIC Credits worth $percent% of eligible purchases by colleagues you invite. Credits are confirmed after the refund period. They are an internal promotional bonus, not cash.';
-  }
-
-  @override
   String get referralPrivacyNote =>
       'Only totals are shown. Your colleagues’ names, emails, profiles and documents are never shared — neither with you nor in the invitation.';
 
@@ -4917,10 +4688,6 @@ class AppLocalizationsEn extends AppLocalizations {
       'Open-access article (PubMed Central via Europe PMC). Opens in your device’s PDF viewer or browser.';
 
   @override
-  String get fullTextPdfPro =>
-      'Downloading full-text PDFs is available with Pro.';
-
-  @override
   String get fullTextOpenFailed =>
       'Couldn’t open the PDF. Check your connection.';
 
@@ -4955,9 +4722,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get adminReferrals => 'Referrals';
 
   @override
-  String get adminProGrants => 'Pro granted';
-
-  @override
   String get adminRegions => 'Countries (device region)';
 
   @override
@@ -4975,27 +4739,6 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get adminPrivacyNote =>
       'Contains personal data (emails). Do not share screenshots.';
-
-  @override
-  String get adminGrantTitle => 'Give or remove Pro';
-
-  @override
-  String get adminEmail => 'User email';
-
-  @override
-  String get adminGrantPro => 'Give Professional Pro';
-
-  @override
-  String get adminRevoke => 'Remove';
-
-  @override
-  String get adminGranted => 'Pro granted.';
-
-  @override
-  String get adminRevoked => 'Access removed.';
-
-  @override
-  String get adminNotFound => 'No user with this email.';
 
   @override
   String get adminFailed => 'Action failed. Check the connection.';
@@ -5434,7 +5177,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get homeResourcesHeading => 'Library & tools';
 
   @override
-  String get homeLibraryBody => 'Substances, methods, standards and references';
+  String get homeLibraryBody =>
+      'Everything: substances, methods, standards, references';
 
   @override
   String get homeContinueSaved => 'Continue & saved';
@@ -5665,9 +5409,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get pubEditTitle => 'Edit draft';
 
   @override
-  String get pubPaidNote => 'A paid subscription does not affect moderation.';
-
-  @override
   String get pubRequired => 'Required';
 
   @override
@@ -5743,7 +5484,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get studyTitle => 'Study mode';
+  String get studyTitle => 'Practice';
 
   @override
   String get studyEntrySubtitle =>
@@ -6373,12 +6114,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get admStatActive30d => 'Active in 30 days';
 
   @override
-  String get admStatPro => 'Pro (server grants)';
-
-  @override
-  String get admStatFree => 'Free';
-
-  @override
   String get admStatAwaiting => 'Requests awaiting reply';
 
   @override
@@ -6403,10 +6138,6 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get admActiveNote =>
       'Active = signed in, opened the app (device check-in) or asked the AI within the window.';
-
-  @override
-  String get admProNote =>
-      'Pro counts server grants only; store purchases are verified on the device.';
 
   @override
   String get admChart14d => 'Last 14 days: sign-ups and AI questions';
@@ -6498,15 +6229,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get admRoleModerator => 'Moderators';
-
-  @override
-  String get admTierAny => 'Any plan';
-
-  @override
-  String get admTierFree => 'Free';
-
-  @override
-  String get admTierPro => 'Pro plan';
 
   @override
   String get admUsersEmpty => 'No users match the filter.';
@@ -6634,10 +6356,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get homeAreasTitle => 'Areas';
 
   @override
-  String get homeActLearnTitle => 'Study & quizzes';
+  String get homeActLearnTitle => 'Learning';
 
   @override
-  String get homeActLearnBody => 'Flashcards, quizzes, exam practice';
+  String get homeActLearnBody => 'Courses, practice, class quiz';
 
   @override
   String get homeActGuidelinesBody => 'Practical guidance by discipline';
@@ -6697,13 +6419,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get calcEstimatedRange => 'Estimated range';
-
-  @override
-  String get calcLockedTitle => 'Included in Expert Pro';
-
-  @override
-  String get calcLockedBody =>
-      'This calculator opens with the Expert Pro plan. Dilution and the concentration unit converter are free.';
 
   @override
   String get calcLodUnitNote =>
@@ -6774,10 +6489,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String rdGlanceMore(int count) {
     return '+$count more';
   }
-
-  @override
-  String get rdGlanceLockedHint =>
-      'Details below open with Pro. Names, warnings and sources stay free.';
 
   @override
   String get rdJumpTo => 'Go to section';
@@ -7306,28 +7017,9 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String courtProTitle(String tier) {
-    return 'Advanced preparation in $tier';
-  }
-
-  @override
-  String get courtProBody =>
-      'Full simulator (all scenarios), sequential role drills, AI analysis (coming soon), personal statistics and history. Q&A cards with sources are free for everyone.';
-
-  @override
-  String get courtProBadge => 'Pro';
-
-  @override
-  String get courtAiPro => 'AI analysis (Pro)';
-
-  @override
   String courtScoreSemantics(String criterion, int score) {
     return '$criterion: $score of 2';
   }
-
-  @override
-  String get courtSimFreeNote =>
-      'Free: basic scenarios. The other scenarios, role drills and statistics are in Pro.';
 
   @override
   String get courtDrill => 'Role drill';
@@ -8041,15 +7733,6 @@ class AppLocalizationsEn extends AppLocalizations {
       'Narrow the offline pack by specimen, method, reagent, evidence level and more, or go from a specimen, method or reagent to the substances documented for it.';
 
   @override
-  String proSearchLockedTitle(String tier) {
-    return 'Advanced search — $tier';
-  }
-
-  @override
-  String get proSearchLockedBody =>
-      'Filters (discipline, class, specimen, method, reagent, evidence, review status, jurisdiction, year), exact-phrase search and reverse lookups need a paid plan. The regular search stays available to everyone.';
-
-  @override
   String get proSearchHint => 'Name, synonym or \"phrase\"';
 
   @override
@@ -8219,15 +7902,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String planSummary(int s, int p, int c, int l) {
     return 'Specimens: $s · Presumptive tests: $p · Confirmation: $c · Limits: $l';
   }
-
-  @override
-  String planLockedTitle(String tier) {
-    return 'Full analysis plan — $tier';
-  }
-
-  @override
-  String get planLockedBody =>
-      'The free preview shows the counts and the specimens. The paid plan adds presumptive tests with reagents, bench and confirmation steps, interferences, limits, the note for your conclusion and a copyable text with full citations.';
 
   @override
   String get planSecSpecimens => 'Specimens and sampling notes';
@@ -8949,34 +8623,6 @@ class AppLocalizationsEn extends AppLocalizations {
       'Text that looks like case material is held for review automatically. Reports from three different users hide a post, or suspend a specialist badge, until an administrator decides. A post that works against the law is removed and the badge goes with it.';
 
   @override
-  String get adminGrantStudent => 'Grant Student Pro';
-
-  @override
-  String get adminGrantHint =>
-      'Enter the e-mail the person signed in with. The account must already exist; an invitation is not sent from here.';
-
-  @override
-  String get adminEmailInvalid => 'This is not an e-mail address.';
-
-  @override
-  String adminGrantedTier(String tier) {
-    return 'Granted: $tier';
-  }
-
-  @override
-  String get adminRevokeConfirmTitle => 'Remove access?';
-
-  @override
-  String get adminRevokeConfirmBody =>
-      'The person loses the paid sections at once. A purchase made in the store is not affected — only a grant given from here.';
-
-  @override
-  String get adminTierStudent => 'Student Pro';
-
-  @override
-  String get adminTierProfessional => 'Professional Pro';
-
-  @override
   String get provOwnWordsNote =>
       'The content of the source is given in our own words; the original text is not copied. The exact place is below.';
 
@@ -9045,4 +8691,1064 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get litClaimsTitle => 'Evidence from the literature (in full)';
+
+  @override
+  String get analysisS1Title => '1. Tests (rapid / screening)';
+
+  @override
+  String get analysisS1Note =>
+      'Quick presumptive tests: immunoassays, test strips. The result is preliminary only and must be confirmed by a confirmation method.';
+
+  @override
+  String get analysisS2Title => '2. Qualitative reactions (colour reagents)';
+
+  @override
+  String get analysisS2Note =>
+      'Reagent, colour, comment, selectivity and false positives. Presumptive: it does not prove identity by itself.';
+
+  @override
+  String get analysisS3Title =>
+      '3. Quantification (GC-MS, LC-MS/MS, spectrophotometry)';
+
+  @override
+  String get analysisS3Note =>
+      'Sample preparation, key parameters, LOD/LOQ (if the source gives them) and limitations. Numbers only as stated in the source; not a substitute for a validated laboratory method.';
+
+  @override
+  String get analysisSectionEmpty =>
+      'No sourced information for this section yet — a source is needed. Nothing is guessed.';
+
+  @override
+  String get trPendingTranslation =>
+      'Translation pending — the original Uzbek text is shown';
+
+  @override
+  String contactLine(String email) {
+    return 'Contact: $email';
+  }
+
+  @override
+  String get repTitle => 'Send a report';
+
+  @override
+  String get repProfileHint =>
+      'Inappropriate content, a bug, advertising or anything else';
+
+  @override
+  String get repIntro =>
+      'Tell us about inappropriate content, a bug or another problem. You can send a report without signing in.';
+
+  @override
+  String get repKindField => 'Type';
+
+  @override
+  String get repKindComplaint => 'Complaint';
+
+  @override
+  String get repKindInappropriate => 'Inappropriate content';
+
+  @override
+  String get repKindBug => 'Bug';
+
+  @override
+  String get repKindAdvertising => 'Advertising';
+
+  @override
+  String get repKindOther => 'Other';
+
+  @override
+  String get repBody => 'What happened?';
+
+  @override
+  String get repBodyHint =>
+      'Do not write personal data, case numbers or patient information.';
+
+  @override
+  String repBodyShort(int min) {
+    return 'Write at least $min characters.';
+  }
+
+  @override
+  String get repContact => 'E-mail for a reply (optional)';
+
+  @override
+  String get repContactHint =>
+      'If you are not signed in, leave an address if you want a reply.';
+
+  @override
+  String get repPrivacy =>
+      'The text is stored only to review your report. To fight spam, an irreversible hash of the device or network address is kept; the address itself is not.';
+
+  @override
+  String get repSend => 'Send';
+
+  @override
+  String get repSent => 'Your report was sent. Thank you.';
+
+  @override
+  String get repInvalid => 'Check the text and try again.';
+
+  @override
+  String repRateLimited(int n) {
+    return 'You can send up to $n reports per hour. Try again later.';
+  }
+
+  @override
+  String get repFailed => 'Not sent. Check your connection and try again.';
+
+  @override
+  String get repSuspended =>
+      'This account is suspended. Write to us by e-mail for help.';
+
+  @override
+  String get repUnavailable =>
+      'The report service is not connected in this build. Write to us by e-mail.';
+
+  @override
+  String get repMine => 'My reports';
+
+  @override
+  String get repStatusOpen => 'Under review';
+
+  @override
+  String get repStatusResolved => 'Resolved';
+
+  @override
+  String get ctTitle => 'Community rules';
+
+  @override
+  String get ctDraft =>
+      'This text is a draft and must be checked by a lawyer before the public release.';
+
+  @override
+  String get ctZeroTolerance =>
+      'Abusive, hateful, violent, illegal or spam content is not allowed. Every post has «Report» and «Block author» buttons. Content that breaks the rules can be removed and the account suspended.';
+
+  @override
+  String get ctOpenTerms => 'Terms of Use (draft)';
+
+  @override
+  String get ctAgree => 'I have read the rules and accept them';
+
+  @override
+  String get ctAccept => 'Accept';
+
+  @override
+  String get ctDecline => 'Not now';
+
+  @override
+  String get ctSaveFailed => 'Not saved. Try again.';
+
+  @override
+  String get blkTitle => 'Blocked authors';
+
+  @override
+  String get blkIntro =>
+      'Posts of blocked authors are hidden from you. You are not shown who they are.';
+
+  @override
+  String get blkEmpty => 'You have not blocked anyone.';
+
+  @override
+  String get blkItem => 'Blocked author';
+
+  @override
+  String blkSince(String date) {
+    return 'since $date';
+  }
+
+  @override
+  String get blkUnblock => 'Unblock';
+
+  @override
+  String get blkUnblocked => 'Unblocked.';
+
+  @override
+  String get blkAction => 'Block author';
+
+  @override
+  String get blkConfirmTitle => 'Block this author?';
+
+  @override
+  String get blkConfirmBody =>
+      'You will no longer see this author\'s questions and answers. You are not told who it is. You can undo this in the blocked list.';
+
+  @override
+  String get blkDone => 'Author blocked.';
+
+  @override
+  String get blkAlready => 'This author is already blocked.';
+
+  @override
+  String get blkSelf => 'You cannot block yourself.';
+
+  @override
+  String get blkFailed => 'Could not complete. Try again.';
+
+  @override
+  String get admxNavReports => 'Reports';
+
+  @override
+  String admxNavReportsHint(int n) {
+    return '$n open';
+  }
+
+  @override
+  String get admxReportsTitle => 'Reports';
+
+  @override
+  String get admxReportsSearch => 'Search by text or e-mail';
+
+  @override
+  String get admxOpen => 'Open';
+
+  @override
+  String get admxResolvedFilter => 'Resolved';
+
+  @override
+  String get admxAll => 'All';
+
+  @override
+  String get admxKindAny => 'All types';
+
+  @override
+  String get admxQaLink =>
+      'Open Q&A moderation (posts reported by three people)';
+
+  @override
+  String get admxReportsEmpty => 'No reports.';
+
+  @override
+  String get admxLoadMore => 'Load more';
+
+  @override
+  String get admxAnonymous => 'Not signed in';
+
+  @override
+  String admxContact(String value) {
+    return 'Contact: $value';
+  }
+
+  @override
+  String admxTarget(String type) {
+    return 'About: $type';
+  }
+
+  @override
+  String get admxNoteLabel => 'Note (admins only)';
+
+  @override
+  String get admxNoteSave => 'Save note';
+
+  @override
+  String get admxNoteSaved => 'Note saved.';
+
+  @override
+  String get admxResolve => 'Mark as resolved';
+
+  @override
+  String get admxReopen => 'Reopen';
+
+  @override
+  String get admxResolvedDone => 'Report marked as resolved.';
+
+  @override
+  String get admxReopened => 'Report reopened.';
+
+  @override
+  String get admxActionFailed => 'Action failed. Try again.';
+
+  @override
+  String get admxActions => 'Actions';
+
+  @override
+  String get admxActionsHint =>
+      'Every action is checked by the server and written to the audit log.';
+
+  @override
+  String get admxReason => 'Reason';
+
+  @override
+  String get admxReasonHint => 'At least 5 characters. Saved in the audit log.';
+
+  @override
+  String get admxReasonShort => 'The reason must be at least 5 characters.';
+
+  @override
+  String get admxCancel => 'Cancel';
+
+  @override
+  String get admxConfirm => 'Confirm';
+
+  @override
+  String get admxSelfNote =>
+      'You cannot change your own role or suspend your own account.';
+
+  @override
+  String get admxModeratorGrant => 'Make publication moderator';
+
+  @override
+  String get admxModeratorRemove => 'Remove moderator role';
+
+  @override
+  String get admxRemoveAdmin => 'Remove admin role';
+
+  @override
+  String get admxRemoveAdminTitle => 'Remove admin role?';
+
+  @override
+  String get admxRemoveAdminBody =>
+      'This person loses access to the admin panel at once. The last admin cannot be removed. A scientific reviewer role is separate and is not changed here.';
+
+  @override
+  String get admxAdminNotSuspendable => 'An admin account cannot be suspended.';
+
+  @override
+  String get admxSuspend => 'Suspend account';
+
+  @override
+  String get admxRestore => 'Restore account';
+
+  @override
+  String get admxSuspendTitle => 'Suspend this account?';
+
+  @override
+  String get admxSuspendConfirmBody =>
+      'The person is signed out everywhere and cannot sign in again until you restore the account. The action is written to the audit log.';
+
+  @override
+  String get admxRoleGranted => 'Role granted.';
+
+  @override
+  String get admxRoleRevoked => 'Role removed.';
+
+  @override
+  String get admxNoChange => 'Nothing changed.';
+
+  @override
+  String get admxUserNotFound => 'User not found.';
+
+  @override
+  String get admxRoleForbidden =>
+      'This role cannot be granted from the app. The owner does it on the server.';
+
+  @override
+  String get admxEmailUnconfirmed => 'The e-mail address is not confirmed.';
+
+  @override
+  String get admxSelfAdmin => 'You cannot change your own admin role.';
+
+  @override
+  String get admxLastAdmin => 'The last admin cannot be removed.';
+
+  @override
+  String get admxCannotSuspendAdmin => 'An admin cannot be suspended.';
+
+  @override
+  String get admxCannotSuspendSelf => 'You cannot suspend yourself.';
+
+  @override
+  String get admxSuspended => 'Account suspended. Its sessions were closed.';
+
+  @override
+  String get admxRestored => 'Account restored.';
+
+  @override
+  String get admxExtTitle => 'Roles, reports and objects';
+
+  @override
+  String get admxStatAdmins => 'Admins';
+
+  @override
+  String get admxStatModerators => 'Moderators';
+
+  @override
+  String get admxStatSuspended => 'Suspended';
+
+  @override
+  String get admxStatReportsOpen => 'Open reports';
+
+  @override
+  String get admxStatReportsResolved => 'Resolved reports';
+
+  @override
+  String get admxStatQaQuestions => 'Q&A questions';
+
+  @override
+  String get admxStatQaAnswers => 'Q&A answers';
+
+  @override
+  String get admxStatQaModeration => 'In moderation';
+
+  @override
+  String get admxStatBlocks => 'Blocks';
+
+  @override
+  String get admxCasebookNote =>
+      'Casebooks: stored on the device, not counted.';
+
+  @override
+  String get admxOnlineNote =>
+      'Online now: not available (there is no activity tracking).';
+
+  @override
+  String get admxStoresTitle => 'Downloads';
+
+  @override
+  String get admxDownloadsNote =>
+      'Downloads: the server cannot see them. Open the store consoles.';
+
+  @override
+  String get admxSalesNote => 'Sales: 0 — there is no payment system.';
+
+  @override
+  String get admxOpenAsc => 'App Store Connect';
+
+  @override
+  String get admxOpenPlay => 'Google Play Console';
+
+  @override
+  String get admxOpenFailed => 'Could not open the link.';
+
+  @override
+  String get admActAdminRoleSet => 'Role changed from the panel';
+
+  @override
+  String get admActUserSuspended => 'Account suspended';
+
+  @override
+  String get admActUserRestored => 'Account restored';
+
+  @override
+  String get admActReportsView => 'Report list viewed';
+
+  @override
+  String get admActReportNote => 'Note on a report';
+
+  @override
+  String get admActReportResolved => 'Report resolved';
+
+  @override
+  String get admActReportReopened => 'Report reopened';
+
+  @override
+  String get admActAdminBootstrap => 'First admin assigned (owner bootstrap)';
+
+  @override
+  String get socialOr => 'or';
+
+  @override
+  String get socialContinueGoogle => 'Continue with Google';
+
+  @override
+  String get socialContinueApple => 'Continue with Apple';
+
+  @override
+  String get socialErrUnavailable =>
+      'Sign-in with this provider is unavailable right now. Try again or use your email.';
+
+  @override
+  String get socialTermsNote =>
+      'By continuing you accept the Terms of Use and the Privacy Policy.';
+
+  @override
+  String get deleteAccountSocialNote =>
+      'This account was created with Google or Apple, so no password is needed. Confirm below to delete it.';
+
+  @override
+  String get deleteAccountAppleNote =>
+      'This account was created with Apple, so no password is needed. After you confirm, Apple will ask you to verify it is you, and the app\'s access to your Apple ID will be revoked.';
+
+  @override
+  String get classQuizTitle => 'Class quiz';
+
+  @override
+  String get classQuizCardSubtitle =>
+      'Live quiz run by your teacher: join with a code or QR';
+
+  @override
+  String get classQuizIntro =>
+      'The teacher shows a 6-digit code and QR on the screen. Students join with a nickname and answer each question before the timer ends.';
+
+  @override
+  String get classDemoBanner =>
+      'Demo mode: data stays on this device only. A real class needs the server connection.';
+
+  @override
+  String get classDemoChip => 'DEMO';
+
+  @override
+  String get classJoinSection => 'Join a class';
+
+  @override
+  String get classJoinHint =>
+      'Enter the 6-digit code from the teacher’s screen or scan the QR.';
+
+  @override
+  String get classJoinTitle => 'Join class';
+
+  @override
+  String get classJoinAction => 'Join';
+
+  @override
+  String get classCodeLabel => 'Class code';
+
+  @override
+  String classCodeSpoken(String code) {
+    return 'Class code $code';
+  }
+
+  @override
+  String get classNickLabel => 'Nickname';
+
+  @override
+  String get classNickHelper =>
+      '2–20 characters. The teacher sees only this nickname — not your name or e-mail.';
+
+  @override
+  String get classScanAction => 'Scan QR';
+
+  @override
+  String get classScanTitle => 'Scan class QR';
+
+  @override
+  String get classScanHint =>
+      'Point the camera at the QR on the teacher’s screen.';
+
+  @override
+  String get classScanPermission =>
+      'Camera access is off. Allow it in Settings or enter the code by hand.';
+
+  @override
+  String get classScanUnavailable =>
+      'The camera can’t be used here. Enter the code by hand.';
+
+  @override
+  String get classScanManual => 'Enter code by hand';
+
+  @override
+  String classResume(String topic) {
+    return 'Continue: $topic';
+  }
+
+  @override
+  String get classTeacherSection => 'For teachers';
+
+  @override
+  String get classNotTeacherNote =>
+      'The test is run by a teacher. The teacher role is granted by the FORENSIC EXPERT team on the server; ask us if you teach a class.';
+
+  @override
+  String get classNewAction => 'Run a quiz';
+
+  @override
+  String get classNewTitle => 'Run a quiz';
+
+  @override
+  String get classRecentSection => 'Recent classes';
+
+  @override
+  String classSessionLine(String code, String status) {
+    return '$code · $status';
+  }
+
+  @override
+  String get classStatusLobby => 'Waiting for students';
+
+  @override
+  String get classStatusRunning => 'In progress';
+
+  @override
+  String get classStatusFinished => 'Finished';
+
+  @override
+  String get classPrivacyNote =>
+      'The teacher sees only your nickname. Finished classes are deleted automatically after 30 days. Offensive nicknames can be reported and removed.';
+
+  @override
+  String get classSignInTitle => 'Sign in to join';
+
+  @override
+  String get classSignInBody =>
+      'Your result is tied to your account on the server. Other students and the teacher only see your nickname.';
+
+  @override
+  String get classSignInAction => 'Sign in';
+
+  @override
+  String get classTeacherOnlyTitle => 'Teachers only';
+
+  @override
+  String get classTeacherOnlyBody =>
+      'This screen is available to accounts with the teacher role. The server enforces this.';
+
+  @override
+  String get classTopicSection => 'Topic';
+
+  @override
+  String get classNoTopics => 'No question bank is available yet.';
+
+  @override
+  String classQuestionsAvailable(int count) {
+    return '$count questions';
+  }
+
+  @override
+  String get classSettingsSection => 'Settings';
+
+  @override
+  String get classQuestionCount => 'Number of questions';
+
+  @override
+  String get classStudentLimit => 'Student limit';
+
+  @override
+  String get classSecondsPerQuestion => 'Time per question';
+
+  @override
+  String classSecondsShort(int seconds) {
+    return '$seconds s';
+  }
+
+  @override
+  String classSecondsLeft(int seconds) {
+    return '$seconds seconds left';
+  }
+
+  @override
+  String get classCreateAction => 'Create class';
+
+  @override
+  String get classHostJoinHint =>
+      'Open FORENSIC EXPERT → Class quiz and enter this code, or scan the QR:';
+
+  @override
+  String get classQrSemantics => 'QR code to join the class';
+
+  @override
+  String classJoinedCount(int joined, int limit) {
+    return 'Joined: $joined / $limit';
+  }
+
+  @override
+  String get classWaitingForStudents => 'Waiting for students to join…';
+
+  @override
+  String classReportsCount(int count) {
+    return '$count nickname report(s) — review the list';
+  }
+
+  @override
+  String get classStartAction => 'Start';
+
+  @override
+  String get classKickTitle => 'Remove from class?';
+
+  @override
+  String classKickBody(String nickname) {
+    return '“$nickname” will be removed and cannot rejoin.';
+  }
+
+  @override
+  String get classKickAction => 'Remove';
+
+  @override
+  String get classCancel => 'Cancel';
+
+  @override
+  String classQuestionOf(int n, int total) {
+    return 'Question $n of $total';
+  }
+
+  @override
+  String classAnswered(int count, int total) {
+    return 'Answered: $count of $total';
+  }
+
+  @override
+  String classCorrectPct(int pct) {
+    return '$pct% correct';
+  }
+
+  @override
+  String get classLeaderboard => 'Leaderboard';
+
+  @override
+  String get classNoScoresYet => 'No scores yet.';
+
+  @override
+  String get classCloseQuestion => 'Close question';
+
+  @override
+  String get classNextQuestion => 'Next question';
+
+  @override
+  String get classFinishAction => 'Finish quiz';
+
+  @override
+  String get classEndAction => 'End quiz';
+
+  @override
+  String get classEndTitle => 'End the quiz now?';
+
+  @override
+  String get classEndBody =>
+      'Students will see their results. This can’t be undone.';
+
+  @override
+  String get classFinishedTitle => 'Quiz finished';
+
+  @override
+  String classFinishedSummary(int students, int questions) {
+    return '$students students · $questions questions';
+  }
+
+  @override
+  String get classHardestTitle => 'Hardest questions';
+
+  @override
+  String get classNoAnswersYet => 'No answers recorded.';
+
+  @override
+  String get classExportCsv => 'Save / share results (CSV)';
+
+  @override
+  String get classCsvSubject => 'Class quiz results';
+
+  @override
+  String get classDone => 'Done';
+
+  @override
+  String classRetentionNote(int days) {
+    return 'The class is deleted automatically $days days after it ends.';
+  }
+
+  @override
+  String get classRetry => 'Try again';
+
+  @override
+  String get classExit => 'Leave';
+
+  @override
+  String classLobbyWelcome(String nickname) {
+    return 'You’re in, $nickname!';
+  }
+
+  @override
+  String get classLobbyWait => 'Wait for the teacher to start the quiz.';
+
+  @override
+  String get classChooseAnswer => 'Choose an answer.';
+
+  @override
+  String get classAnswerAccepted =>
+      'Answer received. The result appears when the time is up.';
+
+  @override
+  String get classTimeUpWaiting => 'Time’s up. Checking the answer…';
+
+  @override
+  String classResultCorrect(int points) {
+    return 'Correct! +$points points';
+  }
+
+  @override
+  String get classResultWrong => 'Not correct.';
+
+  @override
+  String get classResultNoAnswer => 'No answer given.';
+
+  @override
+  String get classWaitNext => 'Wait for the teacher to open the next question.';
+
+  @override
+  String classScoreLine(int score) {
+    return 'Score: $score';
+  }
+
+  @override
+  String classRankLine(int rank, int total) {
+    return 'Rank $rank of $total';
+  }
+
+  @override
+  String classCorrectOfTotal(int correct, int total) {
+    return '$correct of $total correct';
+  }
+
+  @override
+  String get classTopFive => 'Top 5';
+
+  @override
+  String get classMistakesTitle => 'Questions to review';
+
+  @override
+  String get classNoMistakes => 'Every answer was correct. Well done!';
+
+  @override
+  String classQuestionNumber(int n) {
+    return 'Question $n';
+  }
+
+  @override
+  String classYourAnswer(String text) {
+    return 'Your answer: $text';
+  }
+
+  @override
+  String classCorrectAnswer(String text) {
+    return 'Correct answer: $text';
+  }
+
+  @override
+  String classSourceLine(String author, String title, String page) {
+    return 'Source: $author, $title, p. $page';
+  }
+
+  @override
+  String get classOptionCorrect => 'correct';
+
+  @override
+  String get classOptionWrong => 'your answer, wrong';
+
+  @override
+  String get classOptionChosen => 'your choice';
+
+  @override
+  String get classReportTitle => 'Report this nickname?';
+
+  @override
+  String classReportBody(String nickname) {
+    return '“$nickname” will be sent to the teacher for review.';
+  }
+
+  @override
+  String get classReportAction => 'Report';
+
+  @override
+  String get classReportReason => 'Inappropriate nickname';
+
+  @override
+  String get classReportSent => 'Report sent. Thank you.';
+
+  @override
+  String get classErrNotConfigured =>
+      'Class quiz will be available once the FORENSIC EXPERT server is connected.';
+
+  @override
+  String get classErrNotSignedIn => 'Please sign in first.';
+
+  @override
+  String get classErrOffline =>
+      'No connection. Check the internet and try again.';
+
+  @override
+  String get classErrServer =>
+      'Something went wrong on the server. Try again in a moment.';
+
+  @override
+  String get classErrForbidden => 'You don’t have access to this class.';
+
+  @override
+  String get classErrBadCode => 'Enter the 6-digit code.';
+
+  @override
+  String get classErrNotFound =>
+      'No class with this code. Check it and try again.';
+
+  @override
+  String get classErrRateLimited => 'Too many attempts. Try again in an hour.';
+
+  @override
+  String get classErrOwnSession =>
+      'You are the teacher of this class and can’t join it as a student.';
+
+  @override
+  String get classErrFinished => 'This quiz has already finished.';
+
+  @override
+  String get classErrKicked => 'The teacher removed you from this class.';
+
+  @override
+  String get classErrAlreadyStarted =>
+      'The quiz has already started — new students can’t join.';
+
+  @override
+  String get classErrFull => 'This class is full.';
+
+  @override
+  String get classErrNickLength => 'Nickname must be 2–20 characters.';
+
+  @override
+  String get classErrNickChars =>
+      'This nickname contains characters that aren’t allowed.';
+
+  @override
+  String get classErrNickBlocked => 'Please choose a different nickname.';
+
+  @override
+  String get classErrInvalidSettings =>
+      'Check the settings: 5–20 questions, 5–200 students, 15/30/45/60 seconds.';
+
+  @override
+  String get classErrTooManySessions =>
+      'Too many open classes. Finish one first.';
+
+  @override
+  String get classErrNotEnoughQuestions =>
+      'This topic has too few questions (at least 5 are needed).';
+
+  @override
+  String get classErrBadState => 'That action isn’t possible right now.';
+
+  @override
+  String get classErrNoParticipants =>
+      'Wait until at least one student has joined.';
+
+  @override
+  String get classErrNotCurrent => 'This question is already closed.';
+
+  @override
+  String get classErrTimeOver => 'Time is up — your answer was not counted.';
+
+  @override
+  String get classErrAlreadyAnswered =>
+      'You have already answered this question.';
+
+  @override
+  String get classErrNotFinished =>
+      'Results will be available when the quiz ends.';
+
+  @override
+  String get classErrBadReason => 'Reason is too short.';
+
+  @override
+  String get unverifiedChip => 'Not yet expert-confirmed';
+
+  @override
+  String get legalNationalMethodsEmpty =>
+      'National methods are not loaded yet.';
+
+  @override
+  String get teacherPanelTitle => 'Teacher panel';
+
+  @override
+  String get teacherPanelHomeBody =>
+      'Run a class quiz and get the results as CSV';
+
+  @override
+  String get teacherPanelHomeBodyStudent =>
+      'Join a class quiz with your teacher\'s code';
+
+  @override
+  String get teacherPanelIntro =>
+      'Three simple actions: run a quiz, see the results, and students join with a code.';
+
+  @override
+  String get teacherRunTitle => 'Run a quiz';
+
+  @override
+  String get teacherRunBody =>
+      'Pick a topic — a 6-digit code and QR appear for the class';
+
+  @override
+  String get teacherResultsTitle => 'Results and CSV';
+
+  @override
+  String get teacherResultsBody => 'Past quizzes, leaderboard and a CSV file';
+
+  @override
+  String get teacherJoinTitle => 'Join a class (student)';
+
+  @override
+  String get teacherJoinBody => 'With the code or QR from the teacher';
+
+  @override
+  String get teacherRoleNeeded => 'Teacher role required — see the note below';
+
+  @override
+  String get teacherResultsEmpty =>
+      'No quizzes yet. Start with “Run a quiz” — the results will appear here.';
+
+  @override
+  String get disciplineNextTitle => 'Next steps';
+
+  @override
+  String get disciplineSearchCta => 'Search this discipline';
+
+  @override
+  String get disciplineSearchBody => 'Across substances, methods and sources';
+
+  @override
+  String get referralHowTitle => 'How it works';
+
+  @override
+  String get referralHow1 =>
+      'You send your personal code or link to a colleague.';
+
+  @override
+  String get referralHow2 =>
+      'Your colleague creates a new account with that code.';
+
+  @override
+  String get referralHow3 =>
+      'You see only totals — never names or personal data.';
+
+  @override
+  String get pubEmptyTitle => 'No articles yet';
+
+  @override
+  String get pubEmptyBody =>
+      'Be the first to share your experience: the “Submit an article” button is below. After moderation the article appears here.';
+
+  @override
+  String get calcWarnZeroMeasured =>
+      'No ethanol in the sample (0): back-calculation cannot show the level at the time of the event — the ethanol may have been fully eliminated before sampling.';
+
+  @override
+  String get calcTechInfo => 'Technical details';
+
+  @override
+  String calcTechModule(String id, String version) {
+    return 'Calculation module: $id, version $version';
+  }
+
+  @override
+  String classSourceLineNoPage(String author, String title) {
+    return 'Source: $author, $title';
+  }
+
+  @override
+  String classSourceLineLocator(String author, String title, String locator) {
+    return 'Source: $author, $title, $locator';
+  }
+
+  @override
+  String get classTopicSearchHint => 'Search a topic or course';
+
+  @override
+  String get classTopicGroupOther => 'Other topics';
+
+  @override
+  String get classTopicNoMatch => 'No matching topics.';
+
+  @override
+  String get classTopicSelected => 'Selected topic';
+
+  @override
+  String classTopicGroupCount(int count) {
+    return '$count topics';
+  }
+
+  @override
+  String ghsPCodesDetails(int count) {
+    return 'Details: precautionary statements ($count P-codes)';
+  }
+
+  @override
+  String get studyExamUnavailableHub =>
+      'Sets marked “Practice only” have no exam: their questions are generated automatically or lack an explanation or page in the source. Use Practice for them.';
+
+  @override
+  String get studyQuizAboutPractice => 'About practice mode and options';
 }

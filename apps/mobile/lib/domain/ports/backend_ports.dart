@@ -11,6 +11,7 @@ library;
 import 'package:flutter/foundation.dart';
 
 import '../auth/auth_models.dart';
+import '../auth/social_sign_in.dart';
 
 enum AuthStatus { signedOut, signedIn }
 
@@ -70,6 +71,18 @@ abstract interface class AuthRepository {
     required String code,
   });
 
+  /// Google/Apple native ID-token bilan kirish (Supabase `grant_type=id_token`).
+  /// Apple uchun [nonce] — xom qiymat (SDK’ga uning SHA-256 xeshi berilgan).
+  /// [fullName] Apple faqat birinchi kirishda beradi — profilga saqlanadi.
+  /// Token va nonce jurnalga yozilmaydi.
+  Future<AuthOutcome> signInWithIdToken({
+    required SocialProvider provider,
+    required String idToken,
+    String? nonce,
+    String? fullName,
+    String? acceptedTermsVersion,
+  });
+
   /// Yaroqli kirishda har doim `ok` (email band bo‘lsa ham — server egasiga
   /// xabar xati yuboradi). Sessiya bermaydi: akkaunt email kodi bilan
   /// tasdiqlangach faollashadi ([verifyEmail]).
@@ -106,7 +119,13 @@ abstract interface class AuthRepository {
   /// Akkauntni o‘chirish (Apple 5.1.1(v), Google Play account deletion).
   /// Parol qayta so‘raladi. Lokal qurilma ma’lumotlarini o‘chirish — alohida
   /// amal (`UserDataController.deleteAllLocalData`).
-  Future<AuthOutcome> deleteAccount({required String password});
+  ///
+  /// [appleAuthorizationCode]: Apple akkaunti uchun qayta tasdiqlashda olingan
+  /// bir martalik kod — server Apple tokenini bekor qiladi (best-effort).
+  Future<AuthOutcome> deleteAccount({
+    required String password,
+    String? appleAuthorizationCode,
+  });
 
   /// Server so‘rovlari uchun qisqa muddatli token (bo‘lmasa `null`).
   Future<String?> accessToken();

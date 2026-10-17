@@ -17,6 +17,7 @@ import '../../../core/widgets/fe_data_components.dart';
 import '../../../domain/evidence/citation_format.dart';
 import '../../../domain/evidence/evidence_models.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
+import '../../../domain/knowledge/method_short_name.dart';
 import '../../../domain/library/library_models.dart';
 import '../../../domain/professional/professional_models.dart';
 import '../../../domain/professional/review_models.dart';
@@ -207,7 +208,7 @@ class _ResearchLibraryScreenState extends ConsumerState<ResearchLibraryScreen> {
       _Period.older => l.researchPeriodOlder,
     };
     return Scaffold(
-      appBar: AppBar(title: Text(l.researchTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.researchTitle)),
       body: SafeArea(
         child: CustomScrollView(
           key: const Key('research.list'),
@@ -270,6 +271,7 @@ class _ResearchLibraryScreenState extends ConsumerState<ResearchLibraryScreen> {
                       children: [
                         Expanded(
                           child: DropdownButtonFormField<_Period>(
+                            style: Theme.of(context).textTheme.bodyLarge,
                             key: const Key('research.filter.period'),
                             initialValue: _period,
                             isExpanded: true,
@@ -292,6 +294,7 @@ class _ResearchLibraryScreenState extends ConsumerState<ResearchLibraryScreen> {
                           const SizedBox(width: FeSpace.xs),
                           Expanded(
                             child: DropdownButtonFormField<ForensicDiscipline?>(
+                              style: Theme.of(context).textTheme.bodyLarge,
                               key: const Key('research.filter.discipline'),
                               initialValue: _discipline,
                               isExpanded: true,
@@ -416,7 +419,7 @@ class ResearchDetailScreen extends ConsumerWidget {
         (l.researchRelevance, rel),
     ];
     return Scaffold(
-      appBar: AppBar(title: Text(l.researchKindName(r.kind))),
+      appBar: AppBar(title: FeAppBarTitle(l.researchKindName(r.kind))),
       body: SafeArea(
         child: ListView(
           key: Key('researchDetail.${r.id}'),
@@ -635,16 +638,34 @@ class RelatedSection extends ConsumerWidget {
         research.isNotEmpty;
     if (!any) return const SizedBox.shrink();
 
-    Widget chips(List<String> ids) => Wrap(
+    // Usul chiplari — qisqa nom (GC-MS, LC-MS/MS…), kesilmaydi; to‘liq nom
+    // maslahat va semantik yorliqda, bosilganda — usul sahifasida.
+    Widget chips(List<String> ids, {bool methods = false}) => Wrap(
       spacing: FeSpace.xs,
-      runSpacing: FeSpace.xxs,
+      runSpacing: FeSpace.xs,
       children: [
         for (final id in ids)
-          ActionChip(
-            key: Key('related.$entityId.$id'),
-            label: Text(nameOf(id)),
-            onPressed: () => context.push(routeOf(id)),
-          ),
+          if (methods && methodShortName(nameOf(id)) != nameOf(id))
+            Tooltip(
+              message: nameOf(id),
+              excludeFromSemantics: true,
+              child: Semantics(
+                label: nameOf(id),
+                button: true,
+                excludeSemantics: true,
+                child: ActionChip(
+                  key: Key('related.$entityId.$id'),
+                  label: Text(methodShortName(nameOf(id))),
+                  onPressed: () => context.push(routeOf(id)),
+                ),
+              ),
+            )
+          else
+            ActionChip(
+              key: Key('related.$entityId.$id'),
+              label: Text(nameOf(id)),
+              onPressed: () => context.push(routeOf(id)),
+            ),
       ],
     );
 
@@ -656,8 +677,13 @@ class RelatedSection extends ConsumerWidget {
         for (final (rel, title, ids) in groups)
           if (ids.isNotEmpty) ...[
             Text(title, style: t.labelLarge),
-            const SizedBox(height: FeSpace.xxs),
-            chips(ids),
+            const SizedBox(height: FeSpace.xs),
+            chips(
+              ids,
+              methods:
+                  rel == LinkRelation.analysedBy ||
+                  rel == LinkRelation.confirmedBy,
+            ),
             if (rel == LinkRelation.metabolismCoMention)
               Text(
                 l.relationBasis(l.relationBasisSourceExcerpt),

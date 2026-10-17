@@ -35,10 +35,6 @@ class FakeAccountService implements AccountService {
           ],
         })
       : null;
-
-  @override
-  Future<AdminGrantResult> setAccess(String email, String? tier) async =>
-      AdminGrantResult.failed;
 }
 
 /// Tanlangan «skrinshot» (haqiqiy fayl tanlagichsiz).
@@ -67,7 +63,6 @@ final fixtureAdminStats = AdminStats.fromJson(const {
     'professional_profiles': 23,
     'verified_professionals': 9,
   },
-  'tiers': {'pro': 14, 'free': 114},
   'active': {'d7': 41, 'd30': 88},
   'support': {
     'awaiting': 3,
@@ -112,7 +107,6 @@ final fixtureAdminUsers = [
     'created_at': '2026-09-01T09:00:00Z',
     'last_activity': '2026-10-09T08:00:00Z',
     'roles': ['identity_admin'],
-    'tier': 'professionalPro',
     'locale': 'uz',
     'platforms': 'android',
     'status': 'ACTIVE',
@@ -132,7 +126,6 @@ final fixtureAdminUsers = [
     'display_name': 'Expert',
     'specialty': 'forensicToxicology',
     'created_at': '2026-10-05T09:00:00Z',
-    'tier': 'studentPro',
     'status': 'UNCONFIRMED',
   }),
 ];

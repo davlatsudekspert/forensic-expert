@@ -1,21 +1,17 @@
 // TEST DATA — fixture nomlari; ilmiy qiymat yo‘q. Shaxsiy ma’lumotlar sun’iy.
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/router.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/app/user_data.dart';
 import 'package:forensic_expert/core/design/theme.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
 import 'package:forensic_expert/core/settings/settings_controller.dart';
-import 'package:forensic_expert/domain/ports/billing_ports.dart';
 import 'package:forensic_expert/features/home/presentation/search_screen.dart';
 import 'package:forensic_expert/features/learn/presentation/learn_screens.dart';
 import 'package:forensic_expert/features/legal/presentation/jurisdiction_screens.dart';
 import 'package:forensic_expert/features/library/presentation/entry_detail_screen.dart';
-import 'package:forensic_expert/features/profile/presentation/paywall_screen.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pump_app.dart';
 
 void main() {
@@ -226,7 +222,8 @@ void main() {
           of: jur,
           matching: find.textContaining('No legal or procedural content'),
         ),
-        findsNWidgets(2),
+        // Huquqiy maqom va milliy metodikalar uchun bitta izoh (takror yo‘q).
+        findsOneWidget,
       );
     });
 
@@ -242,99 +239,7 @@ void main() {
     });
   });
 
-  group('Profil, obuna, rejim', () {
-    testWidgets('Paywall: store yo‘q — narx yo‘q, tugmalar o‘chiq', (
-      tester,
-    ) async {
-      await pumpApp(
-        tester,
-        settings: completedSettings(),
-        initialLocation: Routes.purchase,
-      );
-      expect(find.byType(PaywallScreen), findsOneWidget);
-      expect(find.text('Plans'), findsWidgets);
-      expect(
-        find.byKey(const Key('purchase.storeUnavailable')),
-        findsOneWidget,
-      );
-      for (final t in ['free', 'studentPro', 'professionalPro']) {
-        expect(find.byKey(Key('paywall.tier.$t')), findsOneWidget);
-      }
-      expect(find.byKey(const Key('paywall.tier.institution')), findsNothing);
-      for (final t in ['studentPro', 'professionalPro']) {
-        final b = find.byKey(Key('paywall.buyDisabled.$t'));
-        await tester.ensureVisible(b);
-        expect(tester.widget<FilledButton>(b).onPressed, isNull);
-        expect(find.byKey(Key('paywall.noPrice.$t')), findsOneWidget);
-      }
-      // Narx kodda yo‘q: hech qanday valyuta belgisi ko‘rinmaydi.
-      for (final banned in [r'$', '€', '£', 'Lifetime', 'One-time']) {
-        expect(find.textContaining(banned), findsNothing, reason: banned);
-      }
-      await tester.ensureVisible(find.byKey(const Key('purchase.restore')));
-      expect(find.text('Restore purchases'), findsOneWidget);
-      expect(find.byKey(const Key('purchase.terms')), findsOneWidget);
-      await tester.ensureVisible(find.byKey(const Key('purchase.aiNote')));
-      expect(find.byKey(const Key('purchase.aiNote')), findsOneWidget);
-    });
-
-    testWidgets('Paywall: narx va davr store’dan; xarid tanlangan mahsulot', (
-      tester,
-    ) async {
-      final store = FakeStore(price: 'TEST-PRICE 1.00');
-      await pumpApp(
-        tester,
-        settings: completedSettings(),
-        initialLocation: Routes.purchase,
-        overrides: [entitlementServiceProvider.overrideWithValue(store)],
-      );
-      expect(find.byKey(const Key('purchase.storeUnavailable')), findsNothing);
-      expect(find.text('TEST-PRICE 1.00 · Monthly'), findsNWidgets(2));
-      expect(find.text('TEST-PRICE 1.00 · Yearly'), findsNWidgets(2));
-      final buy = find.byKey(
-        const Key('paywall.buy.${ProductIds.studentYearly}'),
-      );
-      await tester.ensureVisible(buy);
-      await tester.pumpAndSettle();
-      await tester.tap(buy);
-      await tester.pumpAndSettle();
-      expect(store.purchased, [ProductIds.studentYearly]);
-      expect(find.text('Purchase cancelled.'), findsOneWidget);
-    });
-
-    testWidgets('Professional Pro egasi: joriy tarif, boshqarish, Profil', (
-      tester,
-    ) async {
-      final store = FakeStore(owned: true);
-      final c = await pumpApp(
-        tester,
-        settings: completedSettings(),
-        initialLocation: Routes.purchase,
-        overrides: [entitlementServiceProvider.overrideWithValue(store)],
-      );
-      expect(
-        find.byKey(const Key('paywall.current.professionalPro')),
-        findsOneWidget,
-      );
-      await tester.ensureVisible(find.byKey(const Key('purchase.manage')));
-      expect(find.byKey(const Key('purchase.manage')), findsOneWidget);
-      c.read(routerProvider).go(Routes.profile);
-      await tester.pumpAndSettle();
-      final row = find.byKey(const Key('profile.purchase'));
-      await tester.ensureVisible(row);
-      expect(
-        find.descendant(of: row, matching: find.text('Professional Pro')),
-        findsOneWidget,
-      );
-      expect(
-        find.descendant(
-          of: find.byKey(const Key('profile.subscriptionStatus')),
-          matching: find.text('Active'),
-        ),
-        findsOneWidget,
-      );
-    });
-
+  group('Profil, rejim', () {
     testWidgets('Delete Account akkaunt yo‘qligida ko‘rinmaydi', (
       tester,
     ) async {
@@ -350,7 +255,6 @@ void main() {
         'profile.jurisdiction',
         'profile.theme',
         'profile.contrast',
-        'profile.purchase',
         'profile.privacy',
         'profile.terms',
         'profile.disclaimer',

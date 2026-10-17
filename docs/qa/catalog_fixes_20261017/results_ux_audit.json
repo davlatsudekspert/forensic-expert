@@ -1,0 +1,422 @@
+{
+  "role": "ux_audit",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "u01",
+      "title": "Onboarding",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "u02",
+      "title": "Ogohlantirish",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u02_ogohlantirish.png"
+    },
+    {
+      "id": "u03",
+      "title": "Rejim tanlash",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u03_rejim_tanlash.png"
+    },
+    {
+      "id": "u04",
+      "title": "Hisob taklifi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u04_hisob_taklifi.png"
+    },
+    {
+      "id": "u05",
+      "title": "TALABA Asosiy",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u05_talaba_asosiy.png"
+    },
+    {
+      "id": "u06",
+      "title": "TALABA Asosiy pastki",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u06_talaba_asosiy_pastki.png"
+    },
+    {
+      "id": "u07",
+      "title": "TALABA Kutubxona",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u07_talaba_kutubxona.png"
+    },
+    {
+      "id": "u08",
+      "title": "TALABA Kutubxona pastki",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u08_talaba_kutubxona_pastki.png"
+    },
+    {
+      "id": "u09",
+      "title": "TALABA Vositalar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u09_talaba_vositalar.png"
+    },
+    {
+      "id": "u10",
+      "title": "TALABA Vositalar pastki",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u10_talaba_vositalar_pastki.png"
+    },
+    {
+      "id": "u11",
+      "title": "TALABA O‘qish va testlar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u11_talaba_o_qish_va_testlar.png"
+    },
+    {
+      "id": "u12",
+      "title": "TALABA O‘quv rejimi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u12_talaba_o_quv_rejimi.png"
+    },
+    {
+      "id": "u13",
+      "title": "TALABA Sinfda test",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u13_talaba_sinfda_test.png"
+    },
+    {
+      "id": "u14",
+      "title": "USTOZ paneli: Asosiydan 1 bosish",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u14_ustoz_paneli_asosiydan_1_bosish.png"
+    },
+    {
+      "id": "u15",
+      "title": "USTOZ: Test o‘tkazish → mavzu (2-bosish)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u15_ustoz_test_o_tkazish_mavzu_2_bosish.png"
+    },
+    {
+      "id": "u16",
+      "title": "USTOZ: mavzu qidiruvi (haqiqiy savollar banki)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u16_ustoz_mavzu_qidiruvi_haqiqiy_savollar_ba.png"
+    },
+    {
+      "id": "u17",
+      "title": "USTOZ: mavzu → kod va QR",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u17_ustoz_mavzu_kod_va_qr.png"
+    },
+    {
+      "id": "u18",
+      "title": "USTOZ: Natijalar va CSV (2-bosish)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u18_ustoz_natijalar_va_csv_2_bosish.png"
+    },
+    {
+      "id": "u19",
+      "title": "USTOZ: Sinfga qo‘shilish (talaba, 2-bosish)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u19_ustoz_sinfga_qo_shilish_talaba_2_bosish.png"
+    },
+    {
+      "id": "u20",
+      "title": "TALABA Yo‘riqnomalar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u20_talaba_yo_riqnomalar.png"
+    },
+    {
+      "id": "u21",
+      "title": "TALABA Fanlar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u21_talaba_fanlar.png"
+    },
+    {
+      "id": "u22",
+      "title": "TALABA Moddalar ro‘yxati",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u22_talaba_moddalar_ro_yxati.png"
+    },
+    {
+      "id": "u23",
+      "title": "TALABA Modda: Etanol",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\" | EN:\"[The development of the method for the determination of the low-molecu…\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | RAW:\"legislation.gov.uk\""
+      ],
+      "screenshot": "u23_talaba_modda_etanol.png"
+    },
+    {
+      "id": "u24",
+      "title": "TALABA Modda: Tahlil bo‘limi",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\" | EN:\"[The development of the method for the determination of the low-molecu…\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | RAW:\"legislation.gov.uk\""
+      ],
+      "screenshot": "u24_talaba_modda_tahlil_bo_limi.png"
+    },
+    {
+      "id": "u25",
+      "title": "TALABA Ish daftari (bo‘sh)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u25_talaba_ish_daftari_bo_sh.png"
+    },
+    {
+      "id": "u26",
+      "title": "TALABA AI",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u26_talaba_ai.png"
+    },
+    {
+      "id": "u27",
+      "title": "TALABA Profil",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u27_talaba_profil.png"
+    },
+    {
+      "id": "u28",
+      "title": "TALABA Ilova haqida",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u28_talaba_ilova_haqida.png"
+    },
+    {
+      "id": "u29",
+      "title": "TALABA Taklif (referral)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u29_talaba_taklif_referral.png"
+    },
+    {
+      "id": "u30",
+      "title": "QORONG‘I Asosiy",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u30_qorong_i_asosiy.png"
+    },
+    {
+      "id": "u31",
+      "title": "QORONG‘I Vositalar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u31_qorong_i_vositalar.png"
+    },
+    {
+      "id": "u32",
+      "title": "QORONG‘I Kutubxona",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u32_qorong_i_kutubxona.png"
+    },
+    {
+      "id": "u33",
+      "title": "QORONG‘I AI",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u33_qorong_i_ai.png"
+    },
+    {
+      "id": "u34",
+      "title": "QORONG‘I Profil",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u34_qorong_i_profil.png"
+    },
+    {
+      "id": "u35",
+      "title": "QORONG‘I Sinfda test",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u35_qorong_i_sinfda_test.png"
+    },
+    {
+      "id": "u36",
+      "title": "QORONG‘I Ustoz paneli",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u36_qorong_i_ustoz_paneli.png"
+    },
+    {
+      "id": "u37",
+      "title": "QORONG‘I Modda: Etanol",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\" | EN:\"[The development of the method for the determination of the low-molecu…\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | RAW:\"legislation.gov.uk\""
+      ],
+      "screenshot": "u37_qorong_i_modda_etanol.png"
+    },
+    {
+      "id": "u38",
+      "title": "320 TALABA Asosiy",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u38_320_talaba_asosiy.png"
+    },
+    {
+      "id": "u39",
+      "title": "320 TALABA Kutubxona",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u39_320_talaba_kutubxona.png"
+    },
+    {
+      "id": "u40",
+      "title": "320 TALABA Vositalar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u40_320_talaba_vositalar.png"
+    },
+    {
+      "id": "u41",
+      "title": "320 TALABA O‘qish",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u41_320_talaba_o_qish.png"
+    },
+    {
+      "id": "u42",
+      "title": "320 TALABA Sinfda test",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u42_320_talaba_sinfda_test.png"
+    },
+    {
+      "id": "u43",
+      "title": "320 TALABA Ustoz paneli",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u43_320_talaba_ustoz_paneli.png"
+    },
+    {
+      "id": "u44",
+      "title": "320 TALABA Modda Etanol",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"Perry PJ va boshq. · The journal of the American Academy of Psychiatry…\" | EN:\"[The development of the method for the determination of the low-molecu…\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | RAW:\"legislation.gov.uk\""
+      ],
+      "screenshot": "u44_320_talaba_modda_etanol.png"
+    },
+    {
+      "id": "u45",
+      "title": "320 TALABA Yo‘riqnomalar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u45_320_talaba_yo_riqnomalar.png"
+    },
+    {
+      "id": "u46",
+      "title": "320 TALABA AI",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u46_320_talaba_ai.png"
+    },
+    {
+      "id": "u47",
+      "title": "320 TALABA Profil",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u47_320_talaba_profil.png"
+    },
+    {
+      "id": "u48",
+      "title": "MUTAXASSIS Asosiy",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u48_mutaxassis_asosiy.png"
+    },
+    {
+      "id": "u49",
+      "title": "MUTAXASSIS Asosiy pastki",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u49_mutaxassis_asosiy_pastki.png"
+    },
+    {
+      "id": "u50",
+      "title": "MUTAXASSIS Vositalar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u50_mutaxassis_vositalar.png"
+    },
+    {
+      "id": "u51",
+      "title": "MUTAXASSIS Kutubxona",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u51_mutaxassis_kutubxona.png"
+    },
+    {
+      "id": "u52",
+      "title": "MUTAXASSIS Sudda so‘roq",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u52_mutaxassis_sudda_so_roq.png"
+    },
+    {
+      "id": "u53",
+      "title": "MUTAXASSIS Profil",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u53_mutaxassis_profil.png"
+    },
+    {
+      "id": "u54",
+      "title": "MUTAXASSIS Profil pastki",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u54_mutaxassis_profil_pastki.png"
+    },
+    {
+      "id": "u55",
+      "title": "MUTAXASSIS Maqolalar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u55_mutaxassis_maqolalar.png"
+    },
+    {
+      "id": "u56",
+      "title": "320 MUTAXASSIS Asosiy",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u56_320_mutaxassis_asosiy.png"
+    },
+    {
+      "id": "u57",
+      "title": "320 MUTAXASSIS Vositalar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u57_320_mutaxassis_vositalar.png"
+    },
+    {
+      "id": "u58",
+      "title": "320 MUTAXASSIS Profil",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "u58_320_mutaxassis_profil.png"
+    }
+  ],
+  "pass": 58,
+  "fail": 0
+}

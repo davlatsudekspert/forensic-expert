@@ -5,6 +5,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/glossary.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/app/study.dart';
+import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
 import 'package:forensic_expert/domain/learn/study_models.dart';
 
@@ -68,14 +69,20 @@ void main() {
     expect(find.byKey(const Key('study.deck.$substanceDeck')), findsOneWidget);
     expect(find.byKey(const Key('study.deck.$guidelineDeck')), findsOneWidget);
     expect(find.text('4 cards'), findsWidgets);
-    // Avtomatik to‘plamlar — faqat mashq, imtihon tugmasi o‘chiq.
+    // Avtomatik to‘plamlar — faqat mashq: har kartada o‘chirilgan «Imtihon»
+    // tugmasi va uzun izoh takrorlanmaydi (katalog ko‘rigi, 2026-10-17) —
+    // «Practice only» chipi va sahifa boshida bitta izoh.
     expect(find.text('Practice only'), findsWidgets);
-    final exam = tester.widget<OutlinedButton>(
-      find.byKey(const Key('study.exam.$substanceDeck')),
-    );
-    expect(exam.onPressed, isNull);
+    expect(find.byKey(const Key('study.exam.$substanceDeck')), findsNothing);
     expect(
       find.byKey(const Key('study.examUnavailable.$substanceDeck')),
+      findsNothing,
+    );
+    expect(find.byKey(const Key('study.examUnavailableNote')), findsOneWidget);
+    expect(
+      find.text(
+        lookupAppLocalizations(const Locale('en')).studyExamUnavailableHub,
+      ),
       findsOneWidget,
     );
     expect(tester.takeException(), isNull);
@@ -280,10 +287,8 @@ void main() {
       lang: 'ru',
       catalog: testStudyCatalog(quiz: true),
     );
-    final exam = tester.widget<OutlinedButton>(
-      find.byKey(const Key('study.exam.$guidelineDeck')),
-    );
-    expect(exam.onPressed, isNull);
+    // Imtihon tugmasi yo‘q; tilga xos sabab shu to‘plamning o‘zida.
+    expect(find.byKey(const Key('study.exam.$guidelineDeck')), findsNothing);
     expect(
       find.text(
         'Экзамен доступен на узбекском: русский перевод этих вопросов пока '
@@ -376,7 +381,7 @@ void main() {
 
   testWidgets('qorong‘i rejim va o‘zbekcha: xatosiz chiziladi', (tester) async {
     await open(tester, Routes.study, theme: ThemeMode.dark, lang: 'uz');
-    expect(find.text('O‘quv rejimi'), findsOneWidget);
+    expect(find.text('Mashqlar'), findsOneWidget);
     await tap(tester, 'study.quiz.$guidelineDeck');
     expect(find.textContaining('TEST mazmun g'), findsWidgets);
     expect(tester.takeException(), isNull);

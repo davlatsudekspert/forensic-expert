@@ -1,42 +1,20 @@
-/// Server tomonidan berilgan kirish va egasi uchun admin panel ma’lumotlari.
-/// Huquq faqat serverdan (`my_access`, `admin_dashboard`) — mijoz bayrog‘i
-/// hech qachon Pro yoki admin bermaydi.
+/// Server tomonidan berilgan admin kirishi va egasi uchun admin panel
+/// ma’lumotlari. Huquq faqat serverdan (`my_access`, `admin_dashboard`) —
+/// mijoz bayrog‘i hech qachon admin bermaydi.
 library;
 
 import 'package:flutter/foundation.dart';
 
-import '../ports/billing_ports.dart';
-
 @immutable
 class ServerAccess {
-  const ServerAccess({this.tier, this.isAdmin = false});
+  const ServerAccess({this.isAdmin = false});
 
-  factory ServerAccess.fromJson(Map<String, Object?> j) => ServerAccess(
-    tier: switch (j['tier']) {
-      'studentPro' => PlanTier.studentPro,
-      'professionalPro' => PlanTier.professionalPro,
-      _ => null,
-    },
-    isAdmin: j['is_admin'] == true,
-  );
+  factory ServerAccess.fromJson(Map<String, Object?> j) =>
+      ServerAccess(isAdmin: j['is_admin'] == true);
 
   static const none = ServerAccess();
 
-  /// Bepul yoki xodim kirishi (masalan, egasi). `null` — grant yo‘q.
-  final PlanTier? tier;
   final bool isAdmin;
-}
-
-/// Store huquqi + server grant: yuqorisi olinadi.
-Entitlements mergeServerGrant(Entitlements store, ServerAccess server) {
-  final grant = server.tier;
-  if (grant == null || store.effectiveTier.index >= grant.index) return store;
-  return Entitlements(
-    tier: grant,
-    status: EntitlementStatus.active,
-    source: EntitlementSource.promo,
-    verification: EntitlementVerification.serverVerified,
-  );
 }
 
 @immutable
@@ -48,7 +26,6 @@ class AdminUserRow {
     this.confirmed = false,
     this.platforms = const [],
     this.region,
-    this.tier,
     this.isAdmin = false,
   });
 
@@ -62,7 +39,6 @@ class AdminUserRow {
         .where((p) => p.isNotEmpty)
         .toList(),
     region: j['region'] as String?,
-    tier: j['tier'] as String?,
     isAdmin: j['is_admin'] == true,
   );
 
@@ -72,7 +48,6 @@ class AdminUserRow {
   final bool confirmed;
   final List<String> platforms;
   final String? region;
-  final String? tier;
   final bool isAdmin;
 }
 
@@ -118,5 +93,3 @@ class AdminDashboard {
 
   int total(String key) => totals[key] ?? 0;
 }
-
-enum AdminGrantResult { granted, revoked, notFound, invalid, failed }

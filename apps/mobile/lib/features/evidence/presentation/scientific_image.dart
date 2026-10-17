@@ -262,7 +262,7 @@ class ImageViewerScreen extends ConsumerWidget {
       if (meta.accessedDate != null) (l.metaAccessed, date(meta.accessedDate!)),
     ];
     return Scaffold(
-      appBar: AppBar(title: Text(meta.title.resolve(lang))),
+      appBar: AppBar(title: FeAppBarTitle(meta.title.resolve(lang))),
       body: SafeArea(
         child: ListView(
           key: Key('imageViewer.${meta.id}'),

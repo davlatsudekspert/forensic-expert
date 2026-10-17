@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/widgets/common.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 
@@ -25,10 +23,7 @@ void main() {
     size: size,
     initialLocation: Routes.knowledgeEntry(id),
     testFixtures: false,
-    overrides: [
-      ...pilot.overrides,
-      entitlementServiceProvider.overrideWithValue(FakeStore(owned: owned)),
-    ],
+    overrides: [...pilot.overrides],
   );
 
   Future<void> see(WidgetTester tester, Finder f) async {

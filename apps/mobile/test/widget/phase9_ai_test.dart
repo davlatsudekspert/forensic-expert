@@ -4,7 +4,6 @@ import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/domain/ai/ai_architecture.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 
@@ -19,10 +18,7 @@ void main() {
       settings: completedSettings(lang: lang),
       initialLocation: Routes.ai,
       testFixtures: false,
-      overrides: [
-        ...pilot.overrides,
-        entitlementServiceProvider.overrideWithValue(FakeStore(owned: true)),
-      ],
+      overrides: [...pilot.overrides],
     );
     await tester.enterText(find.byKey(const Key('ai.input')), q);
     await tester.ensureVisible(find.byKey(const Key('ai.findSources')));
@@ -92,7 +88,6 @@ void main() {
       testFixtures: false,
       overrides: [
         ...pilot.overrides,
-        entitlementServiceProvider.overrideWithValue(FakeStore(owned: true)),
         aiProviderProvider.overrideWithValue(spy),
       ],
     );

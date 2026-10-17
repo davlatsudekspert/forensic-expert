@@ -28,7 +28,7 @@ class _SupportGate extends ConsumerWidget {
     final l = AppLocalizations.of(context);
     if (!ref.watch(supportAvailableProvider)) {
       return Scaffold(
-        appBar: AppBar(title: Text(title)),
+        appBar: AppBar(title: FeAppBarTitle(title)),
         body: Center(
           child: FeEmptyState(
             key: const Key('support.unavailable'),
@@ -40,7 +40,7 @@ class _SupportGate extends ConsumerWidget {
     }
     if (!ref.watch(authStateProvider).signedIn) {
       return Scaffold(
-        appBar: AppBar(title: Text(title)),
+        appBar: AppBar(title: FeAppBarTitle(title)),
         body: const Center(child: SupportSignInPrompt()),
       );
     }
@@ -60,7 +60,7 @@ class SupportListScreen extends ConsumerWidget {
       title: l.supTitle,
       child: Scaffold(
         appBar: AppBar(
-          title: Text(l.supTitle),
+          title: FeAppBarTitle(l.supTitle),
           actions: [
             IconButton(
               tooltip: l.adminRefresh,
@@ -255,7 +255,7 @@ class _NewSupportThreadScreenState
     return _SupportGate(
       title: l.supNew,
       child: Scaffold(
-        appBar: AppBar(title: Text(l.supNew)),
+        appBar: AppBar(title: FeAppBarTitle(l.supNew)),
         body: SafeArea(
           child: Form(
             key: _form,
@@ -272,6 +272,7 @@ class _NewSupportThreadScreenState
                     children: [
                       const SizedBox(height: FeSpace.sm),
                       DropdownButtonFormField<SupportCategory>(
+                        style: Theme.of(context).textTheme.bodyLarge,
                         key: const Key('supportNew.category'),
                         initialValue: _category,
                         isExpanded: true,
@@ -508,7 +509,7 @@ class _SupportThreadScreenState extends ConsumerState<SupportThreadScreen> {
     return _SupportGate(
       title: l.supTitle,
       child: Scaffold(
-        appBar: AppBar(title: Text(l.supTitle)),
+        appBar: AppBar(title: FeAppBarTitle(l.supTitle)),
         body: SafeArea(
           child: switch (data) {
             AsyncData(:final value?) => SupportConversation(

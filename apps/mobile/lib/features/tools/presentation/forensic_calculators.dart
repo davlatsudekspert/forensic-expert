@@ -44,6 +44,7 @@ String _warningFor(AppLocalizations l, CalcWarning w) => switch (w.code) {
   'absorption_phase' => l.calcWarnAbsorption,
   'no_cooling' => l.calcWarnNoCooling,
   'late_phase' => l.calcWarnLatePhase,
+  'zero_measured' => l.calcWarnZeroMeasured,
   _ => w.code,
 };
 
@@ -163,24 +164,27 @@ class _WidmarkState extends State<WidmarkView> with CalcInputsMixin {
     return CalcScaffold(
       descriptor: _calc.descriptor,
       inputs: [
-        DropdownButtonFormField<BiologicalSex>(
-          key: const Key('calc.sex'),
-          initialValue: _sex,
-          isExpanded: true,
-          decoration: InputDecoration(labelText: l.calcSex),
-          items: [
-            DropdownMenuItem(
-              value: BiologicalSex.male,
-              child: Text(l.calcSexMale),
-            ),
-            DropdownMenuItem(
-              value: BiologicalSex.female,
-              child: Text(l.calcSexFemale),
-            ),
-          ],
-          onChanged: (s) {
-            if (s != null) changed(() => _sex = s);
-          },
+        CalcLabeled(
+          label: l.calcSex,
+          child: DropdownButtonFormField<BiologicalSex>(
+            style: Theme.of(context).textTheme.bodyLarge,
+            key: const Key('calc.sex'),
+            initialValue: _sex,
+            isExpanded: true,
+            items: [
+              DropdownMenuItem(
+                value: BiologicalSex.male,
+                child: Text(l.calcSexMale),
+              ),
+              DropdownMenuItem(
+                value: BiologicalSex.female,
+                child: Text(l.calcSexFemale),
+              ),
+            ],
+            onChanged: (s) {
+              if (s != null) changed(() => _sex = s);
+            },
+          ),
         ),
         _NumberField(
           label: l.calcBodyWeight,
@@ -214,7 +218,7 @@ class _WidmarkState extends State<WidmarkView> with CalcInputsMixin {
             ],
           ),
           Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               Expanded(
                 child: _NumberField(
@@ -360,7 +364,7 @@ class _BackCalcState extends State<BackCalculationView> with CalcInputsMixin {
       descriptor: _calc.descriptor,
       inputs: [
         Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             Expanded(
               flex: 3,
@@ -373,21 +377,24 @@ class _BackCalcState extends State<BackCalculationView> with CalcInputsMixin {
             const SizedBox(width: FeSpace.xs),
             Expanded(
               flex: 2,
-              child: DropdownButtonFormField<EthanolUnit>(
-                key: const Key('calc.bacUnit'),
-                initialValue: _unit,
-                isExpanded: true,
-                decoration: InputDecoration(labelText: l.calcUnit),
-                items: [
-                  for (final u in const [
-                    EthanolUnit.promille,
-                    EthanolUnit.gramPerLiter,
-                  ])
-                    DropdownMenuItem(value: u, child: Text(u.symbol)),
-                ],
-                onChanged: (u) {
-                  if (u != null) changed(() => _unit = u);
-                },
+              child: CalcLabeled(
+                label: l.calcUnit,
+                child: DropdownButtonFormField<EthanolUnit>(
+                  style: Theme.of(context).textTheme.bodyLarge,
+                  key: const Key('calc.bacUnit'),
+                  initialValue: _unit,
+                  isExpanded: true,
+                  items: [
+                    for (final u in const [
+                      EthanolUnit.promille,
+                      EthanolUnit.gramPerLiter,
+                    ])
+                      DropdownMenuItem(value: u, child: Text(u.symbol)),
+                  ],
+                  onChanged: (u) {
+                    if (u != null) changed(() => _unit = u);
+                  },
+                ),
               ),
             ),
           ],
@@ -511,38 +518,44 @@ class _EthanolUnitsState extends State<EthanolUnitsView> with CalcInputsMixin {
             controller: _value,
             k: 'calc.value',
           ),
-          unit: DropdownButtonFormField<EthanolUnit>(
-            key: const Key('calc.ethanolUnit'),
-            initialValue: _unit,
-            isExpanded: true,
-            decoration: InputDecoration(labelText: l.calcUnit),
-            items: [
-              for (final u in EthanolUnit.values)
-                DropdownMenuItem(value: u, child: Text(u.symbol)),
-            ],
-            onChanged: (u) {
-              if (u != null) changed(() => _unit = u);
-            },
+          unit: CalcLabeled(
+            label: l.calcUnit,
+            child: DropdownButtonFormField<EthanolUnit>(
+              style: Theme.of(context).textTheme.bodyLarge,
+              key: const Key('calc.ethanolUnit'),
+              initialValue: _unit,
+              isExpanded: true,
+              items: [
+                for (final u in EthanolUnit.values)
+                  DropdownMenuItem(value: u, child: Text(u.symbol)),
+              ],
+              onChanged: (u) {
+                if (u != null) changed(() => _unit = u);
+              },
+            ),
           ),
         ),
-        DropdownButtonFormField<EthanolMatrix>(
-          key: const Key('calc.matrix'),
-          initialValue: _matrix,
-          isExpanded: true,
-          decoration: InputDecoration(labelText: l.calcEthanolMatrix),
-          items: [
-            DropdownMenuItem(
-              value: EthanolMatrix.wholeBlood,
-              child: Text(l.calcMatrixBlood),
-            ),
-            DropdownMenuItem(
-              value: EthanolMatrix.serum,
-              child: Text(l.calcMatrixSerum),
-            ),
-          ],
-          onChanged: (m) {
-            if (m != null) changed(() => _matrix = m);
-          },
+        CalcLabeled(
+          label: l.calcEthanolMatrix,
+          child: DropdownButtonFormField<EthanolMatrix>(
+            style: Theme.of(context).textTheme.bodyLarge,
+            key: const Key('calc.matrix'),
+            initialValue: _matrix,
+            isExpanded: true,
+            items: [
+              DropdownMenuItem(
+                value: EthanolMatrix.wholeBlood,
+                child: Text(l.calcMatrixBlood),
+              ),
+              DropdownMenuItem(
+                value: EthanolMatrix.serum,
+                child: Text(l.calcMatrixSerum),
+              ),
+            ],
+            onChanged: (m) {
+              if (m != null) changed(() => _matrix = m);
+            },
+          ),
         ),
         if (_matrix == EthanolMatrix.serum)
           _NumberField(
@@ -701,21 +714,24 @@ class _HenssgeState extends State<HenssgeView> with CalcInputsMixin {
           controller: _weight,
           k: 'calc.weight',
         ),
-        DropdownButtonFormField<double>(
-          key: const Key('calc.factor'),
-          initialValue: _factor,
-          isExpanded: true,
-          decoration: InputDecoration(labelText: l.calcCorrectiveFactor),
-          items: [
-            for (final (f, label) in factors)
-              DropdownMenuItem(
-                value: f,
-                child: Text(label, overflow: TextOverflow.ellipsis),
-              ),
-          ],
-          onChanged: (f) {
-            if (f != null) changed(() => _factor = f);
-          },
+        CalcLabeled(
+          label: l.calcCorrectiveFactor,
+          child: DropdownButtonFormField<double>(
+            style: Theme.of(context).textTheme.bodyLarge,
+            key: const Key('calc.factor'),
+            initialValue: _factor,
+            isExpanded: true,
+            items: [
+              for (final (f, label) in factors)
+                DropdownMenuItem(
+                  value: f,
+                  child: Text(label, overflow: TextOverflow.ellipsis),
+                ),
+            ],
+            onChanged: (f) {
+              if (f != null) changed(() => _factor = f);
+            },
+          ),
         ),
       ],
       onCalculate: () => _run(l),

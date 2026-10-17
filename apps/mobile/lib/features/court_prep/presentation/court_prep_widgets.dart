@@ -94,54 +94,6 @@ class CourtDisclaimer extends StatelessWidget {
   );
 }
 
-/// Pro taklifi — faqat kengaytirilgan mashg‘ulotlar uchun (savol-javob
-/// kartalari va manbalar hamma uchun bepul). Soxta shoshirish yoki
-/// chegirmasiz, mavjud tariflar sahifasiga olib boradi.
-class CourtProCard extends StatelessWidget {
-  const CourtProCard({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    final l = AppLocalizations.of(context);
-    final c = FeTheme.of(context);
-    final t = Theme.of(context).textTheme;
-    return FeCard(
-      key: const Key('court.locked'),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Row(
-            children: [
-              Icon(Icons.workspace_premium_outlined, color: c.accent),
-              const SizedBox(width: FeSpace.xs),
-              Expanded(
-                child: Semantics(
-                  header: true,
-                  child: Text(
-                    l.courtProTitle(l.tierProfessionalPro),
-                    style: t.titleSmall,
-                  ),
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: FeSpace.xs),
-          Text(
-            l.courtProBody,
-            style: t.bodySmall?.copyWith(color: c.textSecondary),
-          ),
-          const SizedBox(height: FeSpace.sm),
-          FilledButton(
-            key: const Key('court.unlock'),
-            onPressed: () => context.push(Routes.purchase),
-            child: Text(l.purchaseCta),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
 /// Belgilanadigan ro‘yxat (faqat shu ekranda; hech qayerga saqlanmaydi).
 class CourtChecklist extends StatefulWidget {
   const CourtChecklist({

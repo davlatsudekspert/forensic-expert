@@ -264,8 +264,6 @@ class AdminStats {
     this.experts,
     this.professionalProfiles = 0,
     this.verifiedProfessionals = 0,
-    this.pro = 0,
-    this.free = 0,
     this.active7d = 0,
     this.active30d = 0,
     this.supportAwaiting = 0,
@@ -281,7 +279,6 @@ class AdminStats {
   factory AdminStats.fromJson(Map<String, Object?> j) {
     final users = _map(j['users']);
     final modes = _map(j['modes']);
-    final tiers = _map(j['tiers']);
     final active = _map(j['active']);
     final support = _map(j['support']);
     final pubs = _map(j['publications']);
@@ -295,8 +292,6 @@ class AdminStats {
       experts: _intOrNull(modes['experts']),
       professionalProfiles: _int(modes['professional_profiles']),
       verifiedProfessionals: _int(modes['verified_professionals']),
-      pro: _int(tiers['pro']),
-      free: _int(tiers['free']),
       active7d: _int(active['d7']),
       active30d: _int(active['d30']),
       supportAwaiting: _int(support['awaiting']),
@@ -340,8 +335,6 @@ class AdminStats {
   final int? experts;
   final int professionalProfiles;
   final int verifiedProfessionals;
-  final int pro;
-  final int free;
   final int active7d;
   final int active30d;
   final int supportAwaiting;
@@ -368,7 +361,6 @@ class AdminUserSummary {
     this.locale,
     this.platforms = const [],
     this.verification,
-    this.tier,
     this.roles = const [],
     this.status = AdminAccountStatus.active,
   });
@@ -386,7 +378,6 @@ class AdminUserSummary {
         .where((p) => p.isNotEmpty)
         .toList(),
     verification: j['verification'] as String?,
-    tier: j['tier'] as String?,
     roles: [
       for (final r in (j['roles'] as List?) ?? const [])
         if (r is String) r,
@@ -407,7 +398,6 @@ class AdminUserSummary {
   final String? locale;
   final List<String> platforms;
   final String? verification;
-  final String? tier;
   final List<String> roles;
   final AdminAccountStatus status;
 
@@ -469,20 +459,12 @@ class SupportInboxFilter {
 /// Foydalanuvchilar saralashi.
 @immutable
 class AdminUserFilter {
-  const AdminUserFilter({
-    this.search = '',
-    this.role,
-    this.tier,
-    this.offset = 0,
-  });
+  const AdminUserFilter({this.search = '', this.role, this.offset = 0});
 
   final String search;
 
   /// `admin` | `moderator` | `null`.
   final String? role;
-
-  /// `free` | `pro` | `null`.
-  final String? tier;
   final int offset;
 
   static const pageSize = 25;
@@ -490,12 +472,10 @@ class AdminUserFilter {
   AdminUserFilter copyWith({
     String? search,
     String? Function()? role,
-    String? Function()? tier,
     int? offset,
   }) => AdminUserFilter(
     search: search ?? this.search,
     role: role == null ? this.role : role(),
-    tier: tier == null ? this.tier : tier(),
     offset: offset ?? this.offset,
   );
 
@@ -504,11 +484,10 @@ class AdminUserFilter {
       other is AdminUserFilter &&
       other.search == search &&
       other.role == role &&
-      other.tier == tier &&
       other.offset == offset;
 
   @override
-  int get hashCode => Object.hash(search, role, tier, offset);
+  int get hashCode => Object.hash(search, role, offset);
 }
 
 /// Kontent yozuvi identifikatorini server qoidasiga moslaydi

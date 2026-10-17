@@ -75,10 +75,30 @@ class CalculatorStatusPanel extends StatelessWidget {
               style: t.bodySmall,
             ),
           ),
-          Text(
-            '$engineId · v$engineVersion',
-            style: FeThemeBuilder.numeric(t.labelSmall!)
-                .copyWith(color: c.textSecondary),
+          // Modul ID/versiyasi — foydalanuvchi uchun emas, ekspert yozuvi va
+          // xato xabari uchun: yig‘ilgan «Texnik ma’lumot» ichida.
+          Theme(
+            data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+            child: ExpansionTile(
+              key: const Key('calc.techInfo'),
+              dense: true,
+              tilePadding: EdgeInsets.zero,
+              childrenPadding: const EdgeInsets.only(bottom: FeSpace.xs),
+              expandedAlignment: AlignmentDirectional.centerStart,
+              visualDensity: VisualDensity.compact,
+              title: Text(
+                l.calcTechInfo,
+                style: t.labelMedium?.copyWith(color: c.textSecondary),
+              ),
+              children: [
+                Text(
+                  l.calcTechModule(engineId, engineVersion),
+                  key: const Key('calc.techInfo.module'),
+                  style: FeThemeBuilder.numeric(t.labelSmall!)
+                      .copyWith(color: c.textSecondary),
+                ),
+              ],
+            ),
           ),
         ],
       ),

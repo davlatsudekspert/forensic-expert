@@ -79,7 +79,6 @@ k("pubDraftSaved","Result.","Draft saved.","Черновик сохранён.",
 k("pubSubmitted","Result.","The article was sent for moderation.","Статья отправлена на модерацию.","Maqola moderatsiyaga yuborildi.")
 k("pubSubmitRejected","Result.","Not sent: fill in the required fields and confirmations.","Не отправлено: заполните обязательные поля и подтверждения.","Yuborilmadi: majburiy maydonlar va tasdiqlarni to‘ldiring.")
 k("pubEditTitle","Screen title.","Edit draft","Редактировать черновик","Qoralamani tahrirlash")
-k("pubPaidNote","Note.","A paid subscription does not affect moderation.","Платная подписка не влияет на модерацию.","Pullik obuna moderatsiya natijasiga ta’sir qilmaydi.")
 k("pubRequired","Field error.","Required","Обязательно","Majburiy")
 k("pubMineEmpty","Empty list.","You have no articles yet.","У вас пока нет статей.","Sizda hozircha maqola yo‘q.")
 k("pubTimeline","Section.","History","История","Holat tarixi")

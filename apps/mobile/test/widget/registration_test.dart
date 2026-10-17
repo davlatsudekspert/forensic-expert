@@ -18,7 +18,6 @@ import 'package:forensic_expert/domain/professional/review_models.dart';
 import 'package:forensic_expert/features/home/presentation/home_screen.dart';
 import 'package:forensic_expert/features/professional/presentation/account_choice_screen.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/professional_fixtures.dart';
 import '../helpers/pump_app.dart';
@@ -186,7 +185,6 @@ void main() {
         'Verification',
         'Preferences',
         'Account',
-        'Subscription',
         'Data and privacy',
         'About and legal',
       ]) {
@@ -197,6 +195,8 @@ void main() {
         );
         expect(find.text(h), findsOneWidget, reason: h);
       }
+      // To‘lov qatlami olib tashlangan: «Subscription» bo‘limi yo‘q.
+      expect(find.text('Subscription', skipOffstage: false), findsNothing);
     });
 
     testWidgets('rejimni Talabaga almashtirish tasdiqlangan maqomni '
@@ -326,7 +326,6 @@ void main() {
       testFixtures: false,
       overrides: [
         ...pilot.overrides,
-        entitlementServiceProvider.overrideWithValue(FakeStore(owned: true)),
         professionalIdentityProvider.overrideWithValue(identity),
         if (reviews != null)
           professionalReviewServiceProvider.overrideWithValue(reviews),

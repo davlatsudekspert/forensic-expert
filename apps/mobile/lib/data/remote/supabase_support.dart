@@ -241,7 +241,6 @@ class SupabaseSupportService implements SupportService {
     final r = await _rpc('admin_users', {
       'p_search': q.isEmpty ? null : q,
       'p_role': filter.role,
-      'p_tier': filter.tier,
       'p_limit': AdminUserFilter.pageSize,
       'p_offset': filter.offset,
     });

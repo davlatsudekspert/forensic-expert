@@ -1,7 +1,6 @@
 import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/app/search_service.dart';
 import 'package:forensic_expert/core/widgets/common.dart';
@@ -9,7 +8,6 @@ import 'package:forensic_expert/data/fixtures/test_fixtures.dart';
 import 'package:forensic_expert/domain/knowledge/knowledge_models.dart';
 import 'package:forensic_expert/domain/library/library_models.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 
@@ -29,10 +27,7 @@ void main() {
       settings: completedSettings(),
       initialLocation: location,
       testFixtures: false,
-      overrides: [
-        ...pilot.overrides,
-        entitlementServiceProvider.overrideWithValue(FakeStore(owned: owned)),
-      ],
+      overrides: [...pilot.overrides],
     );
     await settleImages(tester);
   }
@@ -74,8 +69,11 @@ void main() {
             expect(c.value['specimen'], isNotEmpty, reason: c.claimId);
             expect(c.value['context'], isNotNull, reason: c.claimId);
             expect(c.sources, isNotEmpty, reason: c.claimId);
-          } else if (c.field != 'identity') {
+          } else if (c.field != 'identity' &&
+              c.value['analytical_performance'] != true) {
             // Konsentratsiya qiymati faqat banner ostidagi bo‘limda.
+            // (`analytical_performance: true` — raqam usul / test ko‘rsatkichi:
+            // LOD/LOQ, kross-reaktivlik; namunadagi konsentratsiya emas.)
             expect(
               concentrationUnit.hasMatch(text),
               isFalse,
@@ -186,12 +184,14 @@ void main() {
     await see(tester, find.byKey(const Key('related.morphine')));
   });
 
-  testWidgets('modda Lifetime’siz: dalillar yopiq', (tester) async {
-    await open(tester, Routes.libraryEntry('morphine'), owned: false);
-    expect(find.byKey(const Key('entry.locked')), findsOneWidget);
-    expect(
+  testWidgets('modda: dalillar hamma uchun ochiq (qulf kartasi yo‘q)', (
+    tester,
+  ) async {
+    await open(tester, Routes.libraryEntry('morphine'));
+    expect(find.byKey(const Key('entry.locked')), findsNothing);
+    await see(
+      tester,
       find.byKey(const Key('entry.concentration.notThreshold')),
-      findsNothing,
     );
   });
 

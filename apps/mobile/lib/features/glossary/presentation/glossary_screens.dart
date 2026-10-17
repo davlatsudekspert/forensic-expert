@@ -79,7 +79,7 @@ class _GlossaryScreenState extends ConsumerState<GlossaryScreen> {
           e,
     ];
     return Scaffold(
-      appBar: AppBar(title: Text(l.glossaryTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.glossaryTitle)),
       body: SafeArea(
         child: ListView(
           key: const Key('glossary.list'),
@@ -226,7 +226,7 @@ class GlossaryTermScreen extends ConsumerWidget {
     final l = AppLocalizations.of(context);
     final term = ref.watch(glossaryProvider).byId(termId);
     return Scaffold(
-      appBar: AppBar(title: Text(l.glossaryTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.glossaryTitle)),
       body: SafeArea(
         child: ListView(
           keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
@@ -399,6 +399,7 @@ Future<void> showGlossaryTermSheet(
   final home = inHome ?? _inHomeTab(context);
   final l = AppLocalizations.of(context);
   return showModalBottomSheet<void>(
+    useRootNavigator: true,
     context: context,
     isScrollControlled: true,
     showDragHandle: true,

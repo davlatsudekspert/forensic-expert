@@ -14,6 +14,14 @@
 				<string>forensicexpert</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>google-sign-in</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>$(GOOGLE_REVERSED_CLIENT_ID)</string>
+			</array>
+		</dict>
 	</array>
 	<key>FlutterDeepLinkingEnabled</key>
 	<true/>
@@ -33,6 +41,8 @@
 	</array>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Kamera faqat sinf testiga qo‘shilish uchun ustoz ko‘rsatgan QR kodni o‘qishda ishlatiladi. Rasm yoki video saqlanmaydi va yuborilmaydi.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Profil rasmi sifatida tanlangan rasm faqat shu telefonda saqlanadi.</string>
 	<key>CFBundleName</key>

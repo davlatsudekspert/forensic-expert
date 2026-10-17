@@ -1,4 +1,4 @@
-/// «Modda bo‘yicha tahlil rejasi» (Pro): bitta moddaning paketdagi mavjud
+/// «Modda bo‘yicha tahlil rejasi»: bitta moddaning paketdagi mavjud
 /// ma’lumotlaridan amaliy ketma-ketlik.
 ///
 /// Qat’iy qoida: hech qanday yangi ilmiy da’vo, metod, qiymat yoki chegara

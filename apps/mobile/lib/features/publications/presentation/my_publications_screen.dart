@@ -28,7 +28,7 @@ class MyPublicationsScreen extends ConsumerWidget {
     return PublicationsGate(
       title: l.pubMine,
       child: Scaffold(
-        appBar: AppBar(title: Text(l.pubMine)),
+        appBar: AppBar(title: FeAppBarTitle(l.pubMine)),
         body: SafeArea(
           child: !signedIn
               ? const Center(child: PublicationsSignInPrompt())

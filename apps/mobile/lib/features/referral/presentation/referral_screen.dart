@@ -18,7 +18,7 @@ import '../../../domain/referral/referral_models.dart';
 import '../../professional/presentation/professional_widgets.dart';
 
 /// «Hamkasbingizni taklif qiling»: o‘z kodi/havolasi, ulashish, agregat
-/// statistika va FORENSIC Credits izohi. Hech qanday shaxsiy ma’lumot
+/// statistika. Hech qanday shaxsiy ma’lumot
 /// (taklif qilinganlarning email/ismi) ko‘rsatilmaydi.
 class ReferralScreen extends ConsumerWidget {
   const ReferralScreen({super.key});
@@ -36,10 +36,17 @@ class ReferralScreen extends ConsumerWidget {
         dashboard: value.dashboard!,
       ),
       AsyncData(:final value) => switch (value.failure) {
-        ReferralFailure.notConfigured => FeNote(
-          key: const Key('referral.notConfigured'),
-          icon: Icons.cloud_off_outlined,
-          text: l.referralNotConfigured,
+        // Xizmat ulanmagan: halol izoh + qanday ishlashi (bo‘sh sahifa emas).
+        ReferralFailure.notConfigured => Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            FeNote(
+              key: const Key('referral.notConfigured'),
+              icon: Icons.cloud_off_outlined,
+              text: l.referralNotConfigured,
+            ),
+            const _HowItWorks(),
+          ],
         ),
         ReferralFailure.notSignedIn => const _SignInCard(),
         _ => _ErrorCard(
@@ -59,7 +66,7 @@ class ReferralScreen extends ConsumerWidget {
         (!auth.signedIn || (dashboard != null && !dashboard.hasReferrer));
 
     return Scaffold(
-      appBar: AppBar(title: Text(l.referralTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.referralTitle)),
       body: SafeArea(
         child: ListView(
           keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
@@ -188,9 +195,6 @@ class _Dashboard extends ConsumerWidget {
     final c = FeTheme.of(context);
     final links = ref.watch(referralLinksProvider);
     final link = links.inviteLink(dashboard.code)?.toString();
-    final percent = dashboard.rewardPercent == dashboard.rewardPercent.round()
-        ? dashboard.rewardPercent.round().toString()
-        : dashboard.rewardPercent.toStringAsFixed(1);
 
     Future<void> copy(String text) async {
       await Clipboard.setData(ClipboardData(text: text));
@@ -296,24 +300,6 @@ class _Dashboard extends ConsumerWidget {
         FeSectionHeader(l.referralStatsTitle),
         _Stats(dashboard: dashboard),
         const SizedBox(height: FeSpace.sm),
-        if (dashboard.creditsPendingMinor > 0)
-          Padding(
-            padding: const EdgeInsets.only(bottom: FeSpace.xs),
-            child: Text(
-              l.referralCreditsPending(
-                formatCredits(dashboard.creditsPendingMinor),
-              ),
-              style: t.bodySmall?.copyWith(color: c.textSecondary),
-            ),
-          ),
-        FeNote(
-          key: const Key('referral.creditsNote'),
-          icon: Icons.workspace_premium_outlined,
-          text: dashboard.rewardsEnabled
-              ? l.referralCreditsActive(percent)
-              : l.referralCreditsFuture(percent),
-        ),
-        const SizedBox(height: FeSpace.xs),
         FeNote(
           key: const Key('referral.privacy'),
           icon: Icons.lock_outline,
@@ -338,17 +324,12 @@ class _Stats extends StatelessWidget {
       ('${dashboard.joined}', l.referralStatJoined, false),
       ('${dashboard.verified}', l.referralStatVerified, true),
       ('${dashboard.pending}', l.referralStatPending, false),
-      (
-        formatCredits(dashboard.creditsEarnedMinor),
-        l.referralStatCredits,
-        false,
-      ),
     ];
     return LayoutBuilder(
       builder: (context, box) {
         final scale = MediaQuery.textScalerOf(context).scale(1);
-        // So‘zlar bo‘linmasligi uchun telefonda 2×2; keng ekranda 4 ustun.
-        final cols = box.maxWidth >= 520 && scale < 1.6 ? 4 : 2;
+        // So‘zlar bo‘linmasligi uchun telefonda 2 ustun; keng ekranda 3 ustun.
+        final cols = box.maxWidth >= 520 && scale < 1.6 ? 3 : 2;
         const gap = FeSpace.xs;
         final w = (box.maxWidth - gap * (cols - 1)) / cols;
         return Wrap(
@@ -638,6 +619,56 @@ class _ClaimSectionState extends ConsumerState<_ClaimSection> {
                     ],
                   ),
                 ),
+        ),
+      ],
+    );
+  }
+}
+
+/// «Qanday ishlaydi» — uch qadam (maxfiylik qoidalariga mos: faqat umumiy
+/// sonlar, ismlar ko‘rinmaydi).
+class _HowItWorks extends StatelessWidget {
+  const _HowItWorks();
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final steps = [
+      (Icons.ios_share, l.referralHow1),
+      (Icons.person_add_alt_1_outlined, l.referralHow2),
+      (Icons.lock_outline, l.referralHow3),
+    ];
+    return Column(
+      key: const Key('referral.how'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        FeSectionHeader(l.referralHowTitle),
+        FeCard(
+          child: Column(
+            children: [
+              for (final (i, (icon, text)) in steps.indexed) ...[
+                if (i > 0) const SizedBox(height: FeSpace.md),
+                Row(
+                  children: [
+                    DecoratedBox(
+                      decoration: BoxDecoration(
+                        color: c.accentContainer,
+                        shape: BoxShape.circle,
+                      ),
+                      child: SizedBox.square(
+                        dimension: 40,
+                        child: Icon(icon, size: 20, color: c.accent),
+                      ),
+                    ),
+                    const SizedBox(width: FeSpace.md),
+                    Expanded(child: Text(text, style: t.bodyMedium)),
+                  ],
+                ),
+              ],
+            ],
+          ),
         ),
       ],
     );

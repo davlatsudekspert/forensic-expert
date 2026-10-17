@@ -34,9 +34,8 @@ void main() {
     'toolLodName',
     // O‘zbek tilida ham aynan «Formula» — tarjima to‘g‘ri.
     'calcFormula',
-    // PHASE 3: o‘zbekcha ham «Biomarker»; brend nomi «Lifetime».
+    // PHASE 3: o‘zbekcha ham «Biomarker».
     'detailBiomarker',
-    'lockedBadge',
     // PHASE 5: xalqaro analitik qisqartmalar (o‘zbekchada ham aynan shunday).
     'tech_gc',
     'tech_gcFid',
@@ -44,6 +43,9 @@ void main() {
     'tech_hplc',
     'tech_lcMsMs',
     'tech_headspaceGc',
+    // Do‘kon konsollarining rasmiy nomlari (admin paneli, 2026-10-17).
+    'admxOpenAsc',
+    'admxOpenPlay',
     // Admin panel: platforma nomlari va o‘zbekchada ham «Admin» belgisi.
     'adminAndroid',
     'adminIos',
@@ -66,13 +68,14 @@ void main() {
     'citeStyleApa',
     'metKindMarker',
     'reagentPh',
-    // Tarif nomlari — mahsulot brendi, har tilda bir xil.
-    'tierStudentPro',
-    'tierProfessionalPro',
-    // Faqat o‘rin belgilari (narx va davr store/lokalizatsiyadan).
-    'offerPriceLine',
     // Fayl hajmi: «KB» — o‘zbekchada ham xalqaro birlik belgisi (ru: «КБ»).
     'fileSizeKb',
+    // «Sinfda test»: «DEMO» belgisi o‘zbekchada ham aynan shunday; sessiya
+    // qatori faqat o‘rin belgilari va «·» ({code} · {status}).
+    'classDemoChip',
+    'classSessionLine',
+    // «{seconds} s» — soniya belgisi o‘zbekchada ham «s».
+    'classSecondsShort',
   };
 
   // ICU argumentlari: `{name}` yoki `{name, select, …}`; select/plural

@@ -114,7 +114,7 @@ class JurisdictionHubScreen extends ConsumerWidget {
           ..sort((a, b) => a.name(lang).compareTo(b.name(lang)));
 
     return Scaffold(
-      appBar: AppBar(title: Text(l.jurisdictionsTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.jurisdictionsTitle)),
       body: SafeArea(
         child: ListView(
           keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
@@ -349,7 +349,7 @@ class _JurisdictionSelectState extends ConsumerState<JurisdictionSelectScreen> {
     }
 
     return Scaffold(
-      appBar: AppBar(title: Text(l.settingsJurisdiction)),
+      appBar: AppBar(title: FeAppBarTitle(l.settingsJurisdiction)),
       body: SafeArea(
         // 249 davlat — lazy ro‘yxat (faqat ko‘rinadigan qatorlar quriladi).
         child: CustomScrollView(
@@ -445,7 +445,7 @@ class JurisdictionDetailScreen extends ConsumerWidget {
     final isIntl = id == JurisdictionCatalog.internationalId;
 
     return Scaffold(
-      appBar: AppBar(title: Text(j?.name(lang) ?? id)),
+      appBar: AppBar(title: FeAppBarTitle(j?.name(lang) ?? id)),
       body: SafeArea(
         child: ListView(
           keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
@@ -567,8 +567,10 @@ class InstrumentCard extends ConsumerWidget {
       if (i.lastAmendedAt != null) (l.instrAmended, date(i.lastAmendedAt!)),
       (l.instrVersion, i.version),
       (l.instrLegalStatus, l.legalStatusLabel(i.legalStatus)),
+      // Qiymat ustunida — bosh harf bilan («Rasmiy til: Rus», «rus» emas);
+      // gap ichida («… rus tilida») kichik harf saqlanadi.
       if (i.language != null)
-        (l.instrLanguage, contentLanguageName(l, i.language!)),
+        (l.instrLanguage, _capitalize(contentLanguageName(l, i.language!))),
       (
         l.instrTranslation,
         switch (i.translationStatus) {
@@ -665,3 +667,6 @@ class InstrumentCard extends ConsumerWidget {
     );
   }
 }
+
+String _capitalize(String s) =>
+    s.isEmpty ? s : s[0].toUpperCase() + s.substring(1);

@@ -239,22 +239,8 @@ k("courtScenarioCount", "Number of scenarios.",
   "{count} ta ssenariy", {"count": I})
 
 # --- Pro: kengaytirilgan tayyorgarlik (savol-javob kartalari — bepul) -------
-k("courtProTitle", "Pro features card title.", "Advanced preparation in {tier}",
-  "Расширенная подготовка — в тарифе {tier}", "Kengaytirilgan tayyorgarlik — {tier} tarifida",
-  {"tier": S})
-k("courtProBody", "Pro features card body.",
-  "Full simulator (all scenarios), sequential role drills, AI analysis (coming soon), personal statistics and history. Q&A cards with sources are free for everyone.",
-  "Полный симулятор (все сценарии), последовательные ролевые тренировки, ИИ-анализ (скоро), личная статистика и история. Карточки вопросов с источниками бесплатны для всех.",
-  "To‘liq simulyator (barcha ssenariylar), ketma-ket rol mashqlari, AI tahlili (tez orada), shaxsiy statistika va tarix. Manbali savol-javob kartalari hamma uchun bepul.")
-k("courtProBadge", "Small badge on Pro-only entries.", "Pro", "В Pro", "Pro’da")
-k("courtAiPro", "AI analysis button label for free users.", "AI analysis (Pro)",
-  "ИИ-анализ (Pro)", "AI tahlili (Pro)")
 k("courtScoreSemantics", "Screen-reader label of a score bar.", "{criterion}: {score} of 2",
   "{criterion}: {score} из 2", "{criterion}: 2 dan {score}", {"criterion": S, "score": I})
-k("courtSimFreeNote", "Simulator list note for free users.",
-  "Free: basic scenarios. The other scenarios, role drills and statistics are in Pro.",
-  "Бесплатно: базовые сценарии. Остальные сценарии, ролевые тренировки и статистика — в Pro.",
-  "Bepul: asosiy ssenariylar. Qolgan ssenariylar, rol mashqlari va statistika — Pro’da.")
 k("courtDrill", "Pro: sequential role drill.", "Role drill", "Ролевая тренировка", "Rol mashqi")
 k("courtDrillBody", "Role drill subtitle.",
   "Judge → prosecutor → defence → another expert, one after another",

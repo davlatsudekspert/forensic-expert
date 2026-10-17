@@ -38,23 +38,11 @@ k("legalLastVerified","Last verified.","Last verified {date}","Последня�
 k("legalInternationalLayer","INT jurisdiction label.","International (UN conventions)","Международный уровень (конвенции ООН)","Xalqaro daraja (BMT konvensiyalari)")
 k("legalNotInListNote","Absence is not proof.","Absence from these lists does not mean a substance is uncontrolled: national law may differ.","Отсутствие в этих списках не означает, что вещество не контролируется: национальное законодательство может отличаться.","Bu ro‘yxatlarda yo‘qligi modda nazoratda emas degani emas: milliy qonunchilik farq qilishi mumkin.")
 k("legalNoNational","No national content.","No national legal content has been loaded for {name} yet.","Национальный правовой контент для {name} пока не загружен.","{name} uchun milliy huquqiy kontent hali yuklanmagan.",{"name":S})
-k("lockedTitle","Paywall card title.","Included in FORENSIC EXPERT Lifetime","Входит в FORENSIC EXPERT Lifetime","FORENSIC EXPERT Lifetime tarkibida")
-k("lockedBody","What stays open.","Names, warnings and sources stay open. Scientific details and the jurisdiction layer unlock with Lifetime Access.","Названия, предупреждения и источники остаются открытыми. Научные данные и юрисдикционный слой открываются с Lifetime Access.","Nomlar, ogohlantirishlar va manbalar ochiq qoladi. Ilmiy tafsilotlar va yurisdiksiya qatlami Lifetime Access bilan ochiladi.")
-k("freeDemoBadge","Badge on free demo entries.","Free demo","Бесплатно (демо)","Bepul demo")
-k("lockedBadge","Badge on locked entries.","Lifetime","Lifetime","Lifetime")
-k("searchMoreLocked","Hidden results count.","{count} more results with Lifetime","Ещё {count} результатов в Lifetime","Lifetime bilan yana {count} ta natija",{"count":I})
 k("learnEmptyCourses","No real courses yet.","Courses will appear after expert review of the learning content.","Курсы появятся после экспертной проверки учебного контента.","Kurslar o‘quv kontenti ekspert tekshiruvidan o‘tgach paydo bo‘ladi.")
 k("contentLoading","Loading DB.","Loading scientific database…","Загрузка научной базы…","Ilmiy baza yuklanmoqda…")
 k("libraryNotInstalled","No pack.","The scientific database is not installed in this build.","В этой сборке научная база не установлена.","Bu yig‘mada ilmiy baza o‘rnatilmagan.")
-k("purchasePending","Store pending.","Purchase is waiting for confirmation from the store.","Покупка ожидает подтверждения магазина.","Xarid do‘kon tasdig‘ini kutmoqda.")
-k("purchaseFailed","Purchase failed.","The purchase was not completed.","Покупка не завершена.","Xarid yakunlanmadi.")
-k("purchaseCancelled","Purchase cancelled.","Purchase cancelled.","Покупка отменена.","Xarid bekor qilindi.")
-k("purchaseSuccess","Unlocked.","Lifetime access unlocked. Thank you!","Пожизненный доступ открыт. Спасибо!","Umrbod kirish ochildi. Rahmat!")
 k("aboutTrademarkPending","Brand status.","Name and logo: trademark clearance pending.","Название и логотип: проверка товарного знака не завершена.","Nom va logo: tovar belgisi tekshiruvi yakunlanmagan.")
 
-k("diagPurchaseNone","Diagnostics (debug/profile only).","Purchase: none confirmed by the store","Покупка: магазин не подтвердил","Xarid: do‘kon tasdiqlamagan")
-k("diagPurchaseStore","Diagnostics (debug/profile only).","Purchase: confirmed by the store only — server verification not connected (release blocker)","Покупка: подтверждена только магазином — серверная проверка не подключена (блокирует релиз)","Xarid: faqat do‘kon tasdiqlagan — server tekshiruvi ulanmagan (release blocker)")
-k("diagPurchaseServer","Diagnostics (debug/profile only).","Purchase: verified by the server","Покупка: проверена сервером","Xarid: server tomonidan tekshirilgan")
 
 for idx, code in enumerate(["en","ru","uz"]):
     p = f"{D}/app_{code}.arb"

@@ -197,8 +197,8 @@ LAT_WORD = re.compile(r"[A-Za-z](?:[A-Za-z\-]|[‘ʻ’'`](?=[A-Za-z]))*")
 # ARB: inglizcha qiymat qolishi ruxsat etilgan kalitlar (brend, qisqartma,
 # bibliografik nom — E toifa) — qarang: hujjat «allowlist».
 ARB_ALLOW_SAME = {
-    "appTitle", "moduleAi", "tierStudentPro", "tierProfessionalPro",
-    "offerPriceLine", "languageOptionSemantics", "sourcePmid",
+    "appTitle", "moduleAi",
+    "languageOptionSemantics", "sourcePmid",
     "sourceSectionRef", "adminAndroid", "adminAdminBadge", "rdGlanceMolarMass",
     "fileSizeKb", "tech_hplc", "citeStyleGost", "citeStyleVancouver",
     "calcFormula", "detailBiomarker", "metKindMarker", "tpl_marker",
