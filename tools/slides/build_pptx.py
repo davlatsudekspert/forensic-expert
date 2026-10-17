@@ -28,6 +28,37 @@ def _src(b):
     return f"[{s.get('author','')}, {s.get('title','')}, {s.get('page','')}]"
 
 
+def _diagram(slide, d):
+    x0, y0, w = Inches(0.6), Inches(4.4), Inches(12.1)
+    if d.get("kind") == "table" and d.get("header"):
+        rows = [d["header"]] + list(d.get("rows", []))
+        t = slide.shapes.add_table(len(rows), len(d["header"]), x0, y0, w, Inches(0.4) * len(rows)).table
+        for i, r in enumerate(rows):
+            for j, c in enumerate(r[:len(d["header"])]):
+                cell = t.cell(i, j)
+                cell.text = str(c)
+                for p in cell.text_frame.paragraphs:
+                    for run in p.runs:
+                        run.font.size = Pt(12)
+    else:
+        nodes = d.get("nodes", [])[:6]
+        if nodes:
+            bw = (w - Inches(0.4) * (len(nodes) - 1)) / len(nodes)
+            for i, n in enumerate(nodes):
+                x = x0 + i * (bw + Inches(0.4))
+                sh = slide.shapes.add_shape(5, x, y0, bw, Inches(1.3))
+                sh.fill.solid(); sh.fill.fore_color.rgb = NAVY; sh.line.fill.background()
+                tf = sh.text_frame; tf.word_wrap = True
+                tf.text = n
+                for p in tf.paragraphs:
+                    for run in p.runs:
+                        run.font.size = Pt(13); run.font.color.rgb = RGBColor(255, 255, 255)
+                if i < len(nodes) - 1:
+                    slide.shapes.add_shape(33, x + bw, y0 + Inches(0.5), Inches(0.4), Inches(0.3))
+    if d.get("caption"):
+        _text(slide, x0, Inches(6.2), w, Inches(0.4), d["caption"], 11, GREY)
+
+
 def build(data, out_path):
     prs = Presentation()
     prs.slide_width, prs.slide_height = W, H
@@ -50,9 +81,19 @@ def build(data, out_path):
             r.font.size, r.font.name = Pt(18), "Calibri"
             r.font.color.rgb = INK
             p.space_after = Pt(8)
+        d = sl.get("diagram")
+        if d:
+            _diagram(s, d)
         srcs = "; ".join(dict.fromkeys(_src(b) for b in sl["bullets"]))
         _text(s, Inches(0.6), Inches(6.7), Inches(12.1), Inches(0.6), "Manba: " + srcs, 10, GREY)
         s.notes_slide.notes_text_frame.text = sl.get("teacher_notes", "")
+    if data.get("extras"):
+        s = prs.slides.add_slide(blank)
+        _text(s, Inches(0.6), Inches(0.35), Inches(12), Inches(1), "Qiziqarli ma'lumotlar", 30, NAVY, True, "Georgia")
+        tf = _text(s, Inches(0.6), Inches(1.65), Inches(12.1), Inches(5), "", 18, INK)
+        for i, e in enumerate(data["extras"]):
+            p = tf.paragraphs[0] if i == 0 else tf.add_paragraph()
+            p.text = "• " + e["text"] + " " + _src(e)
     s = prs.slides.add_slide(blank)
     _text(s, Inches(0.6), Inches(0.35), Inches(12), Inches(1), "Manbalar", 30, NAVY, True, "Georgia")
     _bar(s, Inches(0.6), Inches(1.35), Inches(1.8), Inches(0.06), GOLD)

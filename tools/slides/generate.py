@@ -9,7 +9,7 @@ MODEL = "claude-sonnet-5-5"
 PRICE_IN_PER_MTOK_USD = 3.00    # TEKSHIRILMAGAN taxmin
 PRICE_OUT_PER_MTOK_USD = 15.00  # TEKSHIRILMAGAN taxmin
 CHARS_PER_TOKEN = 3.0           # o'zbek lotin uchun konservativ taxmin
-MAX_TOKENS = 8000
+MAX_TOKENS = 16000
 TEMPERATURE = 0.2
 MAX_SOURCE_CHARS = 60000
 PENDING = "ADABIYOT KUTILMOQDA"
@@ -17,12 +17,13 @@ PENDING = "ADABIYOT KUTILMOQDA"
 SYSTEM_PROMPT = """Siz sud-tibbiyot fani o'qituvchisi uchun ma'ruza materiali tayyorlaysiz.
 QOIDALAR:
 1. Faqat o'zbek tili (lotin). Faqat quyida berilgan MANBA MATNLARIDAN foydalaning.
-2. 12-18 ta slayd rejasi. Har slaydning har bir bandi oxirida [muallif, kitob, bet] ko'rsatilsin; manba va bet faqat berilgan ro'yxatdan.
+2. KAMIDA 30 ta slayd (30-40). Mavzuning barcha bo'limlarini qamrang. Slaydlarning kamida 6 tasida "diagram" bo'lsin (o'zingiz chizgan sodda sxema: kind="flow" nodes=[matn...] yoki kind="table" header=[...] rows=[[...]]; jadvalni manbadan o'z so'zingiz bilan qayta tuzing, rasmni ko'chirmang, haqiqiy foto deb ko'rsatmang). Oxirida "extras": 3-5 ta qiziqarli fakt/hodisa tahlili/eslab qolish usuli (manbali). Matn sodda, tushunarli. Har slaydning har bir bandi oxirida [muallif, kitob, bet] ko'rsatilsin; manba va bet faqat berilgan ro'yxatdan.
 3. Raqam, bet, foiz, sana TO'QIMANG. Manbada bo'lmasa yozmang.
 4. Ishonchsiz yoki manbada aniq bo'lmagan bandni "uncertain": true bilan belgilang.
 5. 10 ta MCQ: bitta to'g'ri javob, mantiqan yaqin chalg'ituvchi variantlar, tushuntirish, manba+bet.
 6. Faqat JSON qaytaring, boshqa matn yo'q. Sxema:
-{"topic":str,"slides":[{"title":str,"bullets":[{"text":str,"source":{"author":str,"title":str,"page":str},"uncertain":bool}],"teacher_notes":str}],
+{"topic":str,"slides":[{"title":str,"bullets":[{"text":str,"source":{"author":str,"title":str,"page":str},"uncertain":bool}],"diagram":null|{"kind":"flow"|"table","caption":str,"nodes":[str],"header":[str],"rows":[[str]]},"teacher_notes":str}],
+"extras":[{"text":str,"source":{"author":str,"title":str,"page":str}}],
 "mcq":[{"question":str,"options":[str,str,str,str],"correct_index":int,"explanation":str,"source":{"author":str,"title":str,"page":str}}]}"""
 
 
@@ -68,8 +69,8 @@ def validate_output(data, sources):
                 and (src["author"].strip().lower(), src["title"].strip().lower()) in allowed)
 
     slides = data.get("slides", [])
-    if not 12 <= len(slides) <= 18:
-        raise ValueError(f"Slaydlar soni 12-18 bo'lishi kerak, hozir {len(slides)}")
+    if not 30 <= len(slides) <= 45:
+        raise ValueError(f"Slaydlar soni 30-45 bo'lishi kerak, hozir {len(slides)}")
     for i, sl in enumerate(slides, 1):
         for b in sl.get("bullets", []):
             if not ok(b.get("source")):

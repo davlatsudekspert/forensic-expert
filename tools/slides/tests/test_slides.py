@@ -20,7 +20,7 @@ def _sources(tmp_path, with_text=True):
 
 def _good():
     s = {"author": "Aliyev", "title": "Sud tibbiyoti", "page": "5"}
-    return {"slides": [{"title": f"S{i}", "bullets": [{"text": "x", "source": s, "uncertain": i == 1}], "teacher_notes": "n"} for i in range(12)],
+    return {"slides": [{"title": f"S{i}", "bullets": [{"text": "x", "source": s, "uncertain": i == 1}], "teacher_notes": "n"} for i in range(32)],
             "mcq": [{"question": "q", "options": list("abcd"), "correct_index": 1, "explanation": "e", "source": s} for _ in range(10)]}
 
 
