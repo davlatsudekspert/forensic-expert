@@ -17,7 +17,6 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../core/widgets/fe_data_components.dart';
 import '../../../domain/evidence/citation_format.dart';
 import '../../../domain/library/library_models.dart';
-import '../../../domain/ports/billing_ports.dart';
 import '../../evidence/presentation/citation_sheet.dart';
 import '../../evidence/presentation/provenance_widgets.dart';
 import '../../evidence/presentation/research_screens.dart';
@@ -29,9 +28,7 @@ import 'substance_glance.dart';
 
 /// Kontent paketidan kelgan yozuv uchun bo‘limlar.
 ///
-/// Paywall qoidasi: nomlar, ogohlantirishlar, provenance va **manbalar**
-/// hech qachon yopilmaydi. Lifetime’siz faqat ilmiy tafsilotlar va
-/// yurisdiksiya qatlami yopiladi.
+/// Hamma bo‘lim hamma foydalanuvchiga bepul va ochiq.
 class ContentEntryBody extends ConsumerStatefulWidget {
   const ContentEntryBody({
     super.key,
@@ -74,12 +71,6 @@ class _ContentEntryBodyState extends ConsumerState<ContentEntryBody> {
     final entry = widget.entry;
     final l = AppLocalizations.of(context);
     final d = entry.details!;
-    final unlocked =
-        entry.access == EntryAccess.free ||
-        AccessPolicy.unlocks(
-          ProductFeature.substanceLibrary,
-          ref.watch(accessProvider),
-        );
 
     final scientificFields = [
       ('identity', l.detailIdentity),
@@ -122,9 +113,9 @@ class _ContentEntryBodyState extends ConsumerState<ContentEntryBody> {
         .any((m) => m.kind == ImageKind.chemicalStructure);
     final isSubstance = entry.section == LibrarySection.substances;
     final index = <(String, String)>[
-      if (unlocked && isSubstance) ('analysis', l.analysisTitle),
+      if (isSubstance) ('analysis', l.analysisTitle),
       if (hasStructure) ('structure', l.detailStructure),
-      if (unlocked) ...[
+      ...[
         for (final (field, title) in scientificFields)
           if (presentFields.contains(field)) (field, title),
         if (presentFields.contains('analytical_method'))
@@ -141,8 +132,7 @@ class _ContentEntryBodyState extends ConsumerState<ContentEntryBody> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        if (isSubstance)
-          SubstanceGlanceCard(entry: entry, unlocked: unlocked, onJump: _jump),
+        if (isSubstance) SubstanceGlanceCard(entry: entry, onJump: _jump),
         ...widget.names,
         const SizedBox(height: FeSpace.sm),
         _ProvenanceCard(entry: entry),
@@ -177,13 +167,12 @@ class _ContentEntryBodyState extends ConsumerState<ContentEntryBody> {
           ),
         ),
         // «Tahlil» — biologik ob’ektlarda qanday tahlil qilinadi (yuqorida,
-        // to‘g‘ridan-to‘g‘ri ko‘rinadi). Ilmiy tafsilot: paywall qoidasi
-        // boshqa ilmiy bo‘limlar bilan bir xil.
-        if (unlocked && isSubstance) ...[
+        // to‘g‘ridan-to‘g‘ri ko‘rinadi).
+        if (isSubstance) ...[
           _section('analysis', l.analysisTitle),
           SubstanceAnalysisSection(entityId: entry.id),
         ],
-        // Struktura — identifikatsiya (paywall ortida emas).
+        // Struktura — identifikatsiya.
         for (final im
             in ref
                 .watch(evidenceDataProvider)
@@ -192,13 +181,7 @@ class _ContentEntryBodyState extends ConsumerState<ContentEntryBody> {
           _section('structure', l.detailStructure),
           ScientificImageCard(meta: im),
         ],
-        if (!unlocked) ...[
-          const SizedBox(height: FeSpace.md),
-          KeyedSubtree(
-            key: _anchor('locked'),
-            child: const LockedContentCard(key: Key('entry.locked')),
-          ),
-        ] else ...[
+        ...[
           FeSectionHeader(l.detailLayerScientific),
           FeBanner(
             key: const Key('entry.layer.scientific'),
@@ -370,48 +353,6 @@ class _ConcentrationClaim extends StatelessWidget {
             ),
           const SizedBox(height: FeSpace.xxs),
           ClaimCard(claim: claim),
-        ],
-      ),
-    );
-  }
-}
-
-/// Lifetime’ga taklif — soxta shoshirish yoki chegirmasiz.
-class LockedContentCard extends StatelessWidget {
-  const LockedContentCard({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    final l = AppLocalizations.of(context);
-    final c = FeTheme.of(context);
-    final t = Theme.of(context).textTheme;
-    return FeCard(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Row(
-            children: [
-              Icon(Icons.lock_outline, color: c.accent),
-              const SizedBox(width: FeSpace.xs),
-              Expanded(
-                child: Semantics(
-                  header: true,
-                  child: Text(l.lockedTitle, style: t.titleSmall),
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: FeSpace.xs),
-          Text(
-            l.lockedBody,
-            style: t.bodySmall?.copyWith(color: c.textSecondary),
-          ),
-          const SizedBox(height: FeSpace.sm),
-          FilledButton(
-            key: const Key('locked.unlock'),
-            onPressed: () => context.push(Routes.purchase),
-            child: Text(l.purchaseCta),
-          ),
         ],
       ),
     );
@@ -996,72 +937,6 @@ class _ContentJurisdictionLayer extends ConsumerWidget {
           compact: true,
         ),
       ],
-    );
-  }
-}
-
-/// «Bepul demo» yoki «Lifetime» belgisi (ikonka + matn, faqat rangga
-/// tayanmaydi).
-class AccessBadge extends ConsumerWidget {
-  const AccessBadge({super.key, required this.access, this.compact = false});
-
-  final EntryAccess access;
-
-  /// Ro‘yxat uchun ixcham ko‘rinish (kichik belgi va xira matn).
-  final bool compact;
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final l = AppLocalizations.of(context);
-    final c = FeTheme.of(context);
-    final unlocked = AccessPolicy.unlocks(
-      ProductFeature.substanceLibrary,
-      ref.watch(accessProvider),
-    );
-    if (compact) {
-      final free = access == EntryAccess.free;
-      final label = free ? l.freeDemoBadge : l.lockedBadge;
-      return Semantics(
-        label: label,
-        excludeSemantics: true,
-        child: Row(
-          key: Key(free ? 'badge.freeDemo' : 'badge.lifetime'),
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Icon(
-              free
-                  ? Icons.lock_open_outlined
-                  : unlocked
-                  ? Icons.workspace_premium_outlined
-                  : Icons.lock_outline,
-              size: 13,
-              color: free ? c.accent : c.textSecondary,
-            ),
-            const SizedBox(width: 3),
-            Flexible(
-              child: Text(
-                label,
-                style: Theme.of(context).textTheme.labelSmall
-                    ?.copyWith(color: c.textSecondary),
-              ),
-            ),
-          ],
-        ),
-      );
-    }
-    if (access == EntryAccess.free) {
-      return StatusChip(
-        key: const Key('badge.freeDemo'),
-        icon: Icons.lock_open_outlined,
-        label: l.freeDemoBadge,
-        color: c.accent,
-      );
-    }
-    return StatusChip(
-      key: const Key('badge.lifetime'),
-      icon: unlocked ? Icons.workspace_premium_outlined : Icons.lock_outline,
-      label: l.lockedBadge,
-      color: c.textSecondary,
     );
   }
 }

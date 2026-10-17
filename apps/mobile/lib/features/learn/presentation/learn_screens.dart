@@ -12,7 +12,6 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/learn/learn_models.dart';
-import '../../../domain/ports/billing_ports.dart';
 import '../../placeholder/presentation/in_development_view.dart';
 
 /// Student / Resident dashboard. Professional rejim bilan bir xil dizayn
@@ -53,10 +52,6 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
         .where((x) => data.completedLessons.contains(x.id))
         .length;
     final lessonById = {for (final x in lessons) x.id: x};
-    final unlockedAll = AccessPolicy.unlocks(
-      ProductFeature.learn,
-      ref.watch(accessProvider),
-    );
     final bookmarks = [for (final id in data.favorites) ?knowledge.byId(id)];
     // Eski namuna to‘plamlari production’da bo‘sh: plitkalar manbali
     // o‘quv rejimiga olib boradi.
@@ -157,9 +152,6 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
                   else
                     for (final course in courses)
                       () {
-                        final i = all.indexOf(course);
-                        final free =
-                            i < AccessPolicy.freeCourses || unlockedAll;
                         final courseDone = course.lessons
                             .where((x) => data.completedLessons.contains(x.id))
                             .length;
@@ -167,10 +159,7 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
                           padding: const EdgeInsets.only(bottom: FeSpace.xs),
                           child: FeCard(
                             key: Key('learn.course.${course.id}'),
-                            // Bepul demo: birinchi kurs(lar); qolganlari Lifetime.
-                            onTap: free
-                                ? () => _showLessons(context, course, lang)
-                                : () => context.push(Routes.purchase),
+                            onTap: () => _showLessons(context, course, lang),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -199,13 +188,6 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
                                       status: course.status,
                                       compact: true,
                                     ),
-                                    if (!free)
-                                      StatusChip(
-                                        key: Key('learn.locked.${course.id}'),
-                                        icon: Icons.lock_outline,
-                                        label: l.lockedBadge,
-                                        color: c.textSecondary,
-                                      ),
                                     if (courseDone == 0)
                                       StatusChip(
                                         icon: Icons.radio_button_unchecked,

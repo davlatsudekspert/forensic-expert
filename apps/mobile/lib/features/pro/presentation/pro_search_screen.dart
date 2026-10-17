@@ -24,9 +24,8 @@ enum _Tab { search, reverse }
 
 enum _Reverse { reagent, specimen, method }
 
-/// Kengaytirilgan qidiruv (Pro): faset filtrlar, aniq/ibora qidiruvi, turlar
+/// Kengaytirilgan qidiruv: faset filtrlar, aniq/ibora qidiruvi, turlar
 /// bo‘yicha guruhlash va teskari qidiruvlar. Oddiy qidiruv o‘zgarmagan.
-/// Bepul foydalanuvchi: tavsif, filtr ro‘yxati va tariflar taklifi.
 class ProSearchScreen extends ConsumerStatefulWidget {
   const ProSearchScreen({super.key, this.initialText = ''});
 
@@ -63,7 +62,6 @@ class _ProSearchScreenState extends ConsumerState<ProSearchScreen> {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
-    final unlocked = ref.watch(proToolsUnlockedProvider);
     final lang = Localizations.localeOf(context).languageCode;
 
     return Scaffold(
@@ -82,9 +80,7 @@ class _ProSearchScreenState extends ConsumerState<ProSearchScreen> {
                     style: t.bodySmall?.copyWith(color: c.textSecondary),
                   ),
                   const SizedBox(height: FeSpace.sm),
-                  if (!unlocked)
-                    _LockedPreview(lang: lang)
-                  else ...[
+                  ...[
                     SegmentedButton<_Tab>(
                       key: const Key('pro.tabs'),
                       segments: [
@@ -135,55 +131,6 @@ class _ProSearchScreenState extends ConsumerState<ProSearchScreen> {
           ],
         ),
       ),
-    );
-  }
-}
-
-/// Bepul ko‘rinish: nimalar kirishi (filtr nomlari) va tariflar taklifi.
-class _LockedPreview extends StatelessWidget {
-  const _LockedPreview({required this.lang});
-
-  final String lang;
-
-  @override
-  Widget build(BuildContext context) {
-    final l = AppLocalizations.of(context);
-    final titles = [
-      l.proFacetDiscipline,
-      l.proFacetClass,
-      l.proFacetSpecimen,
-      l.proFacetFamily,
-      l.proFacetReagent,
-      l.proFacetEvidence,
-      l.proFacetStatus,
-      l.proFacetJurisdiction,
-      l.proFacetYear,
-      l.proReverseReagent,
-      l.proReverseSpecimen,
-      l.proReverseMethod,
-    ];
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Wrap(
-          key: const Key('pro.preview'),
-          spacing: FeSpace.xs,
-          runSpacing: FeSpace.xs,
-          children: [
-            for (final s in titles)
-              Chip(
-                avatar: const Icon(Icons.lock_outline, size: 14),
-                label: Text(s),
-              ),
-          ],
-        ),
-        const SizedBox(height: FeSpace.md),
-        ProLockedCard(
-          title: l.proSearchLockedTitle(l.tierProfessionalPro),
-          body: l.proSearchLockedBody,
-          buttonKey: const Key('pro.unlock'),
-        ),
-      ],
     );
   }
 }

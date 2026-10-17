@@ -308,7 +308,7 @@ class _SubmitPublicationScreenState
               ),
               const SizedBox(height: FeSpace.xs),
               Text(
-                '${l.pubSubmitHint} ${l.pubPaidNote}',
+                l.pubSubmitHint,
                 style: t.bodySmall?.copyWith(color: c.textSecondary),
               ),
               gap(),

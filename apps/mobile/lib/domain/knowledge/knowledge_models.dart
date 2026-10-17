@@ -30,7 +30,6 @@ class KnowledgeEntry {
     required this.area,
     required this.name,
     required this.status,
-    required this.access,
     required this.isTestData,
     required this.claims,
     required this.sources,
@@ -51,7 +50,6 @@ class KnowledgeEntry {
 
   /// Yozuvning o‘z statusi (mavzu uchun — eng zaif claim statusi).
   final ScientificStatus status;
-  final EntryAccess access;
   final bool isTestData;
   final int version;
   final String? packVersion;

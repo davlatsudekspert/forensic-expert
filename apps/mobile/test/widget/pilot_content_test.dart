@@ -5,7 +5,6 @@ import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/widgets/common.dart';
 import 'package:forensic_expert/data/content/content_library_repository.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 
@@ -29,10 +28,7 @@ void main() {
       settings: completedSettings().copyWith(jurisdictionId: jurisdiction),
       initialLocation: Routes.libraryEntry(id),
       testFixtures: false,
-      overrides: [
-        ...pilot.overrides,
-        entitlementServiceProvider.overrideWithValue(FakeStore(owned: owned)),
-      ],
+      overrides: [...pilot.overrides],
     );
   }
 
@@ -46,13 +42,11 @@ void main() {
     expect(f, findsWidgets);
   }
 
-  testWidgets('bepul demo yozuv: ilmiy qatlam, iqtibos va manbalar ochiq', (
-    tester,
-  ) async {
+  testWidgets('yozuv: ilmiy qatlam, iqtibos va manbalar ochiq', (tester) async {
     await open(tester, 'methanol');
     // «MA’LUMOT TEKSHIRILMAGAN — EKSPERT TASDIG‘I KERAK» banneri.
     expect(find.byType(UnverifiedBanner), findsOneWidget);
-    expect(find.byKey(const Key('badge.freeDemo')), findsOneWidget);
+    expect(find.byKey(const Key('badge.freeDemo')), findsNothing);
     expect(find.byKey(const Key('entry.provenance')), findsOneWidget);
     expect(find.text('No expert reviews yet (2 required)'), findsOneWidget);
     expect(find.byKey(const Key('entry.locked')), findsNothing);
@@ -64,25 +58,12 @@ void main() {
     await see(tester, find.byKey(const Key('source.SRC-PMC11728796')));
   });
 
-  testWidgets('Lifetime yozuv qulflangan: ogohlantirish va manbalar ochiq', (
+  testWidgets('morfin: qulf yo‘q — claim, INT nazorat qoidasi va manbalar', (
     tester,
   ) async {
     await open(tester, 'morphine');
-    expect(find.byKey(const Key('badge.lifetime')), findsOneWidget);
+    expect(find.byKey(const Key('badge.lifetime')), findsNothing);
     expect(find.byKey(const Key('entry.provenance')), findsOneWidget);
-    await see(tester, find.byKey(const Key('entry.locked')));
-    // Ilmiy tafsilot va huquqiy qatlam yopiq.
-    expect(find.byKey(const Key('claim.C-MORPHINE-METABOLITES')), findsNothing);
-    expect(find.byKey(const Key('entry.layer.jurisdiction')), findsNothing);
-    // Manbalar paywall ortida EMAS.
-    await see(tester, find.byKey(const Key('source.SRC-PMC9134088')));
-    await see(tester, find.byKey(const Key('source.SRC-INCB-YELLOW-LIST-65')));
-  });
-
-  testWidgets('Lifetime egasi: claim va INT nazorat qoidasi ko‘rinadi', (
-    tester,
-  ) async {
-    await open(tester, 'morphine', owned: true);
     expect(find.byKey(const Key('entry.locked')), findsNothing);
     await see(tester, find.byKey(const Key('claim.C-MORPHINE-METABOLITES')));
     await see(tester, find.byKey(const Key('legal.R-INT-MORPHINE-YELLOW')));
@@ -90,6 +71,8 @@ void main() {
       find.textContaining('Single Convention on Narcotic Drugs, 1961'),
       findsWidgets,
     );
+    await see(tester, find.byKey(const Key('source.SRC-PMC9134088')));
+    await see(tester, find.byKey(const Key('source.SRC-INCB-YELLOW-LIST-65')));
   });
 
   testWidgets(
@@ -106,7 +89,9 @@ void main() {
     },
   );
 
-  testWidgets('kutubxona ro‘yxati: demo va Lifetime belgilari', (tester) async {
+  testWidgets('kutubxona ro‘yxati: demo/Lifetime belgilari yo‘q', (
+    tester,
+  ) async {
     await pumpApp(
       tester,
       settings: completedSettings(),
@@ -115,8 +100,9 @@ void main() {
       testFixtures: false,
       overrides: [libraryRepositoryProvider.overrideWithValue(repo)],
     );
-    expect(find.byKey(const Key('badge.freeDemo')), findsWidgets);
-    expect(find.byKey(const Key('badge.lifetime')), findsWidgets);
+    expect(find.byKey(const Key('badge.freeDemo')), findsNothing);
+    expect(find.byKey(const Key('badge.lifetime')), findsNothing);
+    expect(find.byIcon(Icons.lock_outline), findsNothing);
     expect(find.text('TEST DATA'), findsNothing);
   });
 }

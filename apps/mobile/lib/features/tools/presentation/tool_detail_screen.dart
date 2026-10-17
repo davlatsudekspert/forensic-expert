@@ -1,10 +1,7 @@
 import 'package:fe_calc_engine/fe_calc_engine.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 
-import '../../../app/providers.dart';
-import '../../../app/routes.dart';
 import '../../../app/user_data.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
@@ -12,7 +9,6 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
-import '../../../domain/ports/billing_ports.dart';
 import '../../common/favorite_button.dart';
 import '../tool_strings.dart';
 import 'calculator_status.dart';
@@ -60,17 +56,7 @@ class _ToolDetailScreenState extends ConsumerState<ToolDetailScreen> {
           keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           children: [
             FeContentFrame(
-              child:
-                  tool.isAvailable &&
-                      !AccessPolicy.isToolUnlocked(
-                        tool.id,
-                        ref.watch(accessProvider),
-                      )
-                  ? _ToolLockedCard(
-                      key: const Key('tool.lockedCard'),
-                      tool: tool,
-                    )
-                  : tool.engineId == ToolsCatalog.dilution.engineId
+              child: tool.engineId == ToolsCatalog.dilution.engineId
                   ? const _DilutionCalculatorView()
                   : tool.engineId == ToolsCatalog.solution.engineId
                   ? const _SolutionCalculatorView()
@@ -93,56 +79,6 @@ class _ToolDetailScreenState extends ConsumerState<ToolDetailScreen> {
                       'lab.beer_lambert' => const BeerLambertView(),
                       _ => _PlannedToolView(tool: tool),
                     },
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-/// Pro kalkulyator qulfi: aynan qaysi tarif ochishini aytadi (kalkulyatorlar
-/// faqat Mutaxassis Pro’da — Talaba Pro’da emas).
-class _ToolLockedCard extends StatelessWidget {
-  const _ToolLockedCard({super.key, required this.tool});
-
-  final ToolEntry tool;
-
-  @override
-  Widget build(BuildContext context) {
-    final l = AppLocalizations.of(context);
-    final c = FeTheme.of(context);
-    final t = Theme.of(context).textTheme;
-    return Padding(
-      padding: const EdgeInsets.only(top: FeSpace.md),
-      child: FeCard(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Row(
-              children: [
-                Icon(Icons.lock_outline, color: c.accent),
-                const SizedBox(width: FeSpace.xs),
-                Expanded(
-                  child: Semantics(
-                    header: true,
-                    child: Text(l.calcLockedTitle, style: t.titleSmall),
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: FeSpace.xs),
-            Text(l.toolDescription(tool), style: t.bodyMedium),
-            const SizedBox(height: FeSpace.xs),
-            Text(
-              l.calcLockedBody,
-              style: t.bodySmall?.copyWith(color: c.textSecondary),
-            ),
-            const SizedBox(height: FeSpace.sm),
-            FilledButton(
-              key: const Key('locked.unlock'),
-              onPressed: () => context.push(Routes.purchase),
-              child: Text(l.purchaseCta),
             ),
           ],
         ),

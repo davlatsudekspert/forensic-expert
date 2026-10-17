@@ -270,13 +270,11 @@ void main() {
     expect(find.textContaining('professionalPro'), findsNothing);
     expect(find.textContaining('forensicToxicology'), findsNothing);
     expect(find.textContaining('android'), findsNothing);
-    await _tap(tester, find.byKey(const Key('adminUsers.tier.pro')));
+    // Tarif (Pro/Bepul) filtri va yorlig‘i olib tashlangan.
+    expect(find.byKey(const Key('adminUsers.tier.pro')), findsNothing);
+    expect(find.byKey(const Key('adminUsers.tier.any')), findsNothing);
     expect(
       find.byKey(const Key('adminUsers.user.student@univ.test')),
-      findsNothing,
-    );
-    expect(
-      find.byKey(const Key('adminUsers.user.expert@lab.test')),
       findsOneWidget,
     );
 

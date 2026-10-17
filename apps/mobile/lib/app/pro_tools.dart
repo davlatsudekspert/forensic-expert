@@ -1,21 +1,10 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../domain/ports/billing_ports.dart';
 import '../domain/pro/analysis_plan.dart';
 import '../domain/pro/pro_search.dart';
 import 'providers.dart';
 
-/// Pro vositalar (kengaytirilgan qidiruv, tahlil rejasi) ochiqmi.
-/// Mavjud [FeatureGate] — `analyticalMethods` (Professional Pro); billing
-/// konfiguratsiyasi o‘zgartirilmaydi.
-final proToolsUnlockedProvider = Provider<bool>(
-  (ref) => AccessPolicy.unlocks(
-    ProductFeature.analyticalMethods,
-    ref.watch(accessProvider),
-  ),
-);
-
-/// Paketdan qurilgan Pro qidiruv indeksi (offline, qurilmada).
+/// Paketdan qurilgan kengaytirilgan qidiruv indeksi (offline, qurilmada).
 final proSearchIndexProvider = Provider<ProSearchIndex>(
   (ref) => ProSearchIndex.build(
     library: ref.watch(libraryRepositoryProvider),

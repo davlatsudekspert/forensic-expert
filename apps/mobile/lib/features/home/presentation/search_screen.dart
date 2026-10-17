@@ -9,7 +9,6 @@ import 'package:go_router/go_router.dart';
 
 import '../../../app/glossary.dart';
 import '../../../app/guidelines.dart';
-import '../../../app/pro_tools.dart';
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../app/search_service.dart';
@@ -20,8 +19,6 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
-import '../../../domain/library/library_models.dart' show EntryAccess;
-import '../../../domain/ports/billing_ports.dart';
 import '../../disciplines/discipline_strings.dart';
 import '../../evidence/evidence_strings.dart';
 import '../../tools/tool_strings.dart';
@@ -195,34 +192,14 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  // Pro: faset filtrlar va teskari qidiruv (oddiy qidiruv
-                  // o‘zgarmagan; bepul foydalanuvchi tavsifni va taklifni
-                  // ko‘radi).
+                  // Faset filtrlar va teskari qidiruv (hamma uchun ochiq).
                   ListTile(
                     key: const Key('search.pro.entry'),
                     contentPadding: EdgeInsets.zero,
                     dense: true,
                     leading: Icon(Icons.tune, color: c.accent),
                     title: Text(l.proSearchEntry),
-                    trailing: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        if (!ref.watch(proToolsUnlockedProvider)) ...[
-                          Icon(
-                            Icons.lock_outline,
-                            size: 14,
-                            color: c.textSecondary,
-                          ),
-                          const SizedBox(width: 3),
-                          Text(
-                            l.lockedBadge,
-                            style: Theme.of(context).textTheme.labelSmall
-                                ?.copyWith(color: c.textSecondary),
-                          ),
-                        ],
-                        const Icon(Icons.chevron_right),
-                      ],
-                    ),
+                    trailing: const Icon(Icons.chevron_right),
                     onTap: () => context.push(
                       _query.trim().isEmpty
                           ? Routes.proSearch
@@ -307,25 +284,6 @@ class _Results extends ConsumerWidget {
     final guidelines = ref.watch(guidelinesProvider).value;
     final glossary = ref.watch(glossaryProvider);
     final lang = Localizations.localeOf(context).languageCode;
-    final unlocked = AccessPolicy.unlocks(
-      ProductFeature.globalSearch,
-      ref.watch(accessProvider),
-    );
-    const freeLimit = AccessPolicy.freeSearchResultsPerGroup;
-    final access = ref.watch(accessProvider);
-
-    /// Yozuv to‘liq faqat Pro bilan ochiladimi (ochishdan oldin ko‘rinsin).
-    bool lockedHit(SearchHit hit) {
-      if (library.byId(hit.entityId) case final e?) {
-        return e.access != EntryAccess.free &&
-            !AccessPolicy.unlocks(ProductFeature.substanceLibrary, access);
-      }
-      if (knowledge.byId(hit.entityId) case final k?) {
-        return k.access != EntryAccess.free &&
-            !AccessPolicy.unlocks(ProductFeature.verifiedReferences, access);
-      }
-      return false;
-    }
 
     String groupTitle(SearchGroup g) => switch (g) {
       SearchGroup.substances => l.librarySubstances,
@@ -361,10 +319,7 @@ class _Results extends ConsumerWidget {
     // takrorlanmaydi, ro‘yxat ustida bir marta aytiladi.
     final statuses = {
       for (final g in SearchGroup.values)
-        for (final hit in result.groups[g]!.take(
-          unlocked ? result.groups[g]!.length : freeLimit,
-        ))
-          statusOf(g, hit),
+        for (final hit in result.groups[g]!) statusOf(g, hit),
     };
     final sharedStatus = statuses.length == 1 ? statuses.single : null;
     String? rowStatus(ScientificStatus s) =>
@@ -504,9 +459,7 @@ class _Results extends ConsumerWidget {
           for (final g in SearchGroup.values)
             if (result.groups[g]!.isNotEmpty) ...[
               FeSectionHeader(groupTitle(g)),
-              for (final hit in result.groups[g]!.take(
-                unlocked ? result.groups[g]!.length : freeLimit,
-              ))
+              for (final hit in result.groups[g]!)
                 _ResultTile(
                   // Bir yozuv bir nechta guruhda (yoki turli atama bilan)
                   // chiqishi mumkin — kalit takrorlanmasligi kerak.
@@ -520,21 +473,7 @@ class _Results extends ConsumerWidget {
                   isPlannedTool:
                       g == SearchGroup.tools &&
                       !(ToolsCatalog.byId(hit.entityId)?.isAvailable ?? true),
-                  isLocked: lockedHit(hit),
                   onTap: () => onOpen(g, hit),
-                ),
-              // Bepul demo: har guruhda cheklangan natija; qolganlari
-              // Lifetime bilan (yashirin emas — soni aniq ko‘rsatiladi).
-              if (!unlocked && result.groups[g]!.length > freeLimit)
-                ListTile(
-                  key: Key('search.more.${g.name}'),
-                  contentPadding: EdgeInsets.zero,
-                  leading: Icon(Icons.lock_outline, color: c.accent),
-                  title: Text(
-                    l.searchMoreLocked(result.groups[g]!.length - freeLimit),
-                  ),
-                  trailing: const Icon(Icons.chevron_right),
-                  onTap: () => context.push(Routes.purchase),
                 ),
             ],
         ],
@@ -598,7 +537,6 @@ class _ResultTile extends StatelessWidget {
     required this.isTestData,
     required this.isPlannedTool,
     required this.onTap,
-    this.isLocked = false,
   });
 
   final IconData icon;
@@ -610,8 +548,6 @@ class _ResultTile extends StatelessWidget {
   final bool isTestData;
   final bool isPlannedTool;
 
-  /// To‘liq tafsilot Pro’da (nom, ogohlantirish va manbalar baribir ochiq).
-  final bool isLocked;
   final VoidCallback onTap;
 
   @override
@@ -634,20 +570,6 @@ class _ResultTile extends StatelessWidget {
               style: Theme.of(context).textTheme.bodySmall
                   ?.copyWith(color: c.textSecondary),
             ),
-            if (isLocked)
-              Row(
-                key: const Key('search.hit.locked'),
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Icon(Icons.lock_outline, size: 13, color: c.textSecondary),
-                  const SizedBox(width: 3),
-                  Text(
-                    l.lockedBadge,
-                    style: Theme.of(context).textTheme.labelSmall
-                        ?.copyWith(color: c.textSecondary),
-                  ),
-                ],
-              ),
             if (isTestData) const TestDataBadge(),
             if (isPlannedTool)
               StatusChip(

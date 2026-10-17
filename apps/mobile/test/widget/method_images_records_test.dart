@@ -10,7 +10,6 @@ import 'package:forensic_expert/domain/knowledge/knowledge_models.dart';
 import 'package:forensic_expert/domain/library/library_models.dart';
 import 'package:forensic_expert/features/evidence/presentation/scientific_image.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 import '../helpers/study_fixtures.dart';
@@ -39,11 +38,7 @@ void main() {
     settings: completedSettings(lang: lang),
     initialLocation: route,
     testFixtures: false,
-    overrides: [
-      ...pilot.overrides,
-      entitlementServiceProvider.overrideWithValue(FakeStore(owned: true)),
-      ...extra,
-    ],
+    overrides: [...pilot.overrides, ...extra],
   );
 
   ImageMeta image(String kind, String entity, {required bool real}) =>
@@ -235,7 +230,6 @@ void main() {
           knowledgeRepositoryProvider.overrideWithValue(
             ListKnowledgeRepository([topic]),
           ),
-          entitlementServiceProvider.overrideWithValue(FakeStore(owned: true)),
         ],
       );
       expect(find.byKey(const Key('claim.statement.C-BOTH')), findsOneWidget);

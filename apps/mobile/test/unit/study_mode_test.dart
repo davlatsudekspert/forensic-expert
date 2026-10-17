@@ -118,29 +118,6 @@ void main() {
       );
     });
 
-    test('pullik yozuvlar faqat ruxsat bo‘lsa', () {
-      final knowledge = ListKnowledgeRepository([
-        testTopic('A', access: EntryAccess.lifetime),
-      ]);
-      final library = TestLibrary([
-        testSubstance('s1', access: EntryAccess.lifetime),
-      ]);
-      expect(
-        StudyCatalogBuilder.build(
-          knowledge: knowledge,
-          library: library,
-        ).isEmpty,
-        isTrue,
-      );
-      final unlocked = StudyCatalogBuilder.build(
-        knowledge: knowledge,
-        library: library,
-        substancesUnlocked: true,
-        referencesUnlocked: true,
-      );
-      expect(unlocked.decks, hasLength(2));
-    });
-
     test('modda: formula identity claim’idan, guruh bo‘yicha to‘plam', () {
       final catalog = StudyCatalogBuilder.build(
         library: TestLibrary([
@@ -635,8 +612,6 @@ void main() {
         knowledge: pilot.knowledge,
         library: pilot.library,
         guidelines: guidelines,
-        substancesUnlocked: true,
-        referencesUnlocked: true,
       );
       excerpts = {
         for (final kind in KnowledgeKind.values)

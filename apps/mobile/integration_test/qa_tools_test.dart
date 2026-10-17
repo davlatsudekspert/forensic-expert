@@ -1,8 +1,7 @@
 // REAL-ILOVA QA — PROFESSIONAL VOSITALAR va O‘QUV REJIMI.
 //
 // Haqiqiy ilova (`bootstrap()`), haqiqiy pilot kontent paketi, Linux desktop
-// dvigateli. Akkaunt yo‘q, tarmoq — o‘chirilgan; Pro kirish faqat test
-// override bilan (xarid simulyatsiyasi emas — `accessProvider`).
+// dvigateli. Akkaunt yo‘q, tarmoq — o‘chirilgan; hamma narsa bepul va ochiq.
 // Ishga tushirish: `./tool/qa_real_app.sh tools`.
 //
 // Har kalkulyator real qiymatlar bilan, natija qo‘lda hisob bilan
@@ -13,12 +12,10 @@ import 'package:fe_calc_engine/fe_calc_engine.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/app/study.dart';
 import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
 import 'package:forensic_expert/core/settings/settings_controller.dart';
-import 'package:forensic_expert/domain/ports/billing_ports.dart';
 import 'package:integration_test/integration_test.dart';
 
 import 'qa/harness.dart';
@@ -50,12 +47,6 @@ void main() {
         return null;
       },
     );
-    const pro = Entitlements(
-      tier: PlanTier.professionalPro,
-      status: EntitlementStatus.active,
-      source: EntitlementSource.promo,
-      verification: EntitlementVerification.serverVerified,
-    );
     final qa = await launchRealApp(
       tester,
       role: 'tools',
@@ -65,7 +56,6 @@ void main() {
         'fe.settings.mode': 'professional',
         'fe.settings.disclaimer_version': 1,
       },
-      overrides: [accessProvider.overrideWithValue(pro)],
     );
 
     Future<void> open(String toolId) async {

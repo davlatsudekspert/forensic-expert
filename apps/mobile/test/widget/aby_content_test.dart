@@ -1,14 +1,11 @@
 import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/aby_flag.dart';
 import 'package:forensic_expert/domain/knowledge/knowledge_models.dart';
-import 'package:forensic_expert/domain/library/library_models.dart';
 import 'package:forensic_expert/features/profile/presentation/sources_authors_screen.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 import '../helpers/study_fixtures.dart';
@@ -84,10 +81,6 @@ void main() {
         );
       }
     }
-    // Mavzular bepul.
-    for (final e in topics) {
-      expect(e.access, EntryAccess.free, reason: e.id);
-    }
   });
 
   test('yo‘riqnomaning fayli paketda yo‘q — faqat unga havola', () {
@@ -141,10 +134,7 @@ void main() {
         settings: completedSettings(lang: lang),
         initialLocation: Routes.knowledgeEntry('aby-tox-opiates'),
         testFixtures: false,
-        overrides: [
-          ...pilot.overrides,
-          entitlementServiceProvider.overrideWithValue(FakeStore(owned: true)),
-        ],
+        overrides: [...pilot.overrides],
       );
       final statement = find.byKey(
         const Key('claim.statement.C-ABY-TOX-OPI-01'),
@@ -189,10 +179,7 @@ void main() {
       settings: completedSettings(lang: 'uz'),
       initialLocation: Routes.knowledgeEntry('aby-tox-benzodiazepines'),
       testFixtures: false,
-      overrides: [
-        ...pilot.overrides,
-        entitlementServiceProvider.overrideWithValue(FakeStore(owned: true)),
-      ],
+      overrides: [...pilot.overrides],
     );
     await tester.pumpAndSettle();
     expect(find.byKey(const Key('claim.objects.C-ABY-TOX-BZD-01')), findsOne);

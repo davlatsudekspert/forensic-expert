@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
 import 'package:forensic_expert/features/tools/presentation/lab_calculators.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pump_app.dart';
 
 /// 2026-10-09 «polish tools»: kalkulyator UI xatolari va qulayliklari.
@@ -20,9 +18,7 @@ void main() {
     tester,
     settings: completedSettings(lang: lang),
     initialLocation: Routes.tool(toolId),
-    overrides: [
-      entitlementServiceProvider.overrideWithValue(FakeStore(owned: owned)),
-    ],
+    overrides: [],
   );
 
   Future<void> type(WidgetTester tester, Finder f, String v) async {
@@ -127,11 +123,12 @@ void main() {
       expect(find.text(uz.calcCopied), findsOneWidget);
     });
 
-    testWidgets('Pro’siz: «Mutaxassis Pro tarkibida» qulfi', (tester) async {
-      await open(tester, 'tool.tox.widmark', owned: false, lang: 'en');
-      expect(find.byKey(const Key('tool.lockedCard')), findsOneWidget);
-      expect(find.text(en.calcLockedTitle), findsOneWidget);
-      expect(find.byKey(const Key('calc.calculate')), findsNothing);
+    testWidgets('Widmark kalkulyatori hamma uchun ochiq (qulf kartasi yo‘q)', (
+      tester,
+    ) async {
+      await open(tester, 'tool.tox.widmark', lang: 'en');
+      expect(find.byKey(const Key('tool.lockedCard')), findsNothing);
+      expect(find.byKey(const Key('calc.calculate')), findsOneWidget);
     });
   });
 

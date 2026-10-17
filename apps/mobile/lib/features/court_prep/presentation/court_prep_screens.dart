@@ -68,16 +68,12 @@ class _EntryCard extends StatelessWidget {
     required this.title,
     required this.body,
     required this.onTap,
-    this.pro = false,
   });
 
   final IconData icon;
   final String title;
   final String body;
   final VoidCallback onTap;
-
-  /// Mutaxassis Pro’dagi imkoniyat (kichik belgi bilan).
-  final bool pro;
 
   @override
   Widget build(BuildContext context) {
@@ -104,19 +100,7 @@ class _EntryCard extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Wrap(
-                    spacing: FeSpace.xs,
-                    crossAxisAlignment: WrapCrossAlignment.center,
-                    children: [
-                      Text(title, style: t.titleSmall),
-                      if (pro)
-                        StatusChip(
-                          icon: Icons.workspace_premium_outlined,
-                          label: AppLocalizations.of(context).courtProBadge,
-                          color: c.accent,
-                        ),
-                    ],
-                  ),
+                  Text(title, style: t.titleSmall),
                   const SizedBox(height: FeSpace.xxs),
                   Text(
                     body,
@@ -161,7 +145,6 @@ class _CourtPrepScreenState extends ConsumerState<CourtPrepScreen> {
     final t = Theme.of(context).textTheme;
     final async = ref.watch(courtPrepProvider);
     final bundle = async.value ?? CourtPrepBundle.empty;
-    final unlocked = ref.watch(courtPrepUnlockedProvider);
     final uz = ref.watch(courtUzbekistanProvider);
     final results = _query.trim().isEmpty
         ? const <CourtPrepQuestion>[]
@@ -231,7 +214,7 @@ class _CourtPrepScreenState extends ConsumerState<CourtPrepScreen> {
               key: const Key('court.simulator'),
               icon: Icons.record_voice_over_outlined,
               title: l.courtSimulator,
-              body: unlocked ? l.courtSimulatorBody : l.courtSimFreeNote,
+              body: l.courtSimulatorBody,
               onTap: () => context.push(Routes.courtPrepSimulator),
             ),
             _EntryCard(
@@ -239,25 +222,15 @@ class _CourtPrepScreenState extends ConsumerState<CourtPrepScreen> {
               icon: Icons.groups_outlined,
               title: l.courtDrill,
               body: l.courtDrillBody,
-              pro: true,
-              onTap: () => context.push(
-                unlocked ? Routes.courtPrepDrill : Routes.purchase,
-              ),
+              onTap: () => context.push(Routes.courtPrepDrill),
             ),
             _EntryCard(
               key: const Key('court.stats'),
               icon: Icons.insights_outlined,
               title: l.courtStats,
               body: l.courtStatsBody,
-              pro: true,
-              onTap: () => context.push(
-                unlocked ? Routes.courtPrepStats : Routes.purchase,
-              ),
+              onTap: () => context.push(Routes.courtPrepStats),
             ),
-            if (!unlocked) ...[
-              const SizedBox(height: FeSpace.xs),
-              const CourtProCard(),
-            ],
             FeSectionHeader(l.courtTopics),
             for (final topic in bundle.topics)
               _TopicCard(topic: topic, bundle: bundle, uzbekistan: uz),
@@ -368,7 +341,7 @@ class _TopicCard extends StatelessWidget {
   }
 }
 
-/// Savol qatori: ochiq bo‘lsa — batafsil sahifa; yopiq bo‘lsa — tariflar.
+/// Savol qatori: batafsil sahifaga olib boradi.
 class _QuestionRow extends StatelessWidget {
   const _QuestionRow({
     required this.question,

@@ -9,7 +9,6 @@ import 'package:forensic_expert/data/auth/mock_auth_repository.dart';
 import 'package:forensic_expert/domain/ports/professional_ports.dart';
 import 'package:forensic_expert/domain/professional/professional_models.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/professional_fixtures.dart';
 import '../helpers/pump_app.dart';
@@ -379,13 +378,7 @@ void main() {
         settings: c.settings,
         initialLocation: c.route,
         testFixtures: false,
-        overrides: [
-          ...pilot.overrides,
-          entitlementServiceProvider.overrideWithValue(
-            FakeStore(withOffers: false),
-          ),
-          ...c.extra,
-        ],
+        overrides: [...pilot.overrides, ...c.extra],
       );
       await settleImages(tester);
       if (c.act case final act?) await act(tester);

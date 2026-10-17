@@ -23,7 +23,7 @@ Faqat audit: kod, kontent, migratsiya va build o'zgartirilmadi; commit qilinmadi
 | UGC faqat test buildda mi | **OK, lekin shartli** | FE_QA standart o'chiq. Public buildga tushmasligi uchun CI'da to'siq (guard) yo'q. Admin uchun bayroqsiz ham ko'rinadi. |
 | 2.5.19 yashirin/dormant | **RISK** | Sabab: bayroqlar bilan yashirilgan kod bor (Q&A, Publications, ABY, yopiq katalog, admin panel). Review notes'da hujjatlashtirish kerak. |
 | Review notes | **KERAK TUZATISH** | Namuna matn bor, lekin 2.5.19 bo'yicha yashirin bo'limlar va auth tavsifi noto'g'ri/to'liq emas. |
-| 3.1.1 IAP | **OK** | Faqat StoreKit obunalar, restore bor, tashqi to'lov havolasi topilmadi. |
+| 3.1.1 IAP | **OK** | To'lov qatlami ilovadan olib tashlandi (qaror 2026-10-17): IAP, obuna, paywall, restore, Pro yorliqlari yo'q; hamma funksiya bepul va ochiq. Quyidagi 3-bo'limdagi tafsilotlar olib tashlashdan OLDINGI holat uchun yozilgan (tarixiy). |
 | 3.1.1(a) entitlement | **OK** (kerak emas) | Tashqi to'lov havolasi yo'q, entitlement kerak emas. |
 | 2.3.14 creative assets | **RISK** | ASC prompt va metadata fayllari bir-biriga mos emas. FIXTURE belgili skrinshotlar bor. Skrinshot o'lchami yetishmaydi. |
 | 5 — odam savdosi / bolalar | **OK** | Ilova bunday narsaga yordam bermaydi. Sud-tibbiy ta'limiy kontent. |
@@ -83,6 +83,8 @@ Review notes bor-yo'qligi:
 - Muammolar: (1) Q&A, Publications, admin panel, ABY/yopiq katalog haqida **hech narsa yozilmagan**; (2) "Signing in ... uses a one-time code" deyilgan, lekin kodda email+**parol** bilan kirish va emailni tasdiqlash bor (`auth_screens.dart:375, 402`, `ForgotPasswordScreen:666`, hisob o'chirishda "joriy parol" `:354`): tavsif noaniq bo'lishi mumkin, tekshirib to'g'rilang; (3) "demo account kerak emas" mantiqi to'g'ri faqat agar Pro/Q&A/referral ko'rib chiqilmasa. Pro obuna paywall'i login talab qilsa, review uchun demo hisob berish kerak bo'lishi mumkin (3.1.1 sinovi uchun sandbox xarid ham).
 
 ### 3. Guideline 3.1.1 / to'lov
+
+> **Yangilanish (2026-10-17, branch `claude/no-paywall`):** to'lov qatlami ilovadan olib tashlandi. `paywall_screen.dart`, `subscription_ui.dart`, `in_app_purchase_client.dart` o'chirildi; `in_app_purchase*` paketlari pubspec'dan olib tashlandi; Profil'dagi Obuna/Restore qatorlari, bepul-demo chegaralari, qulf belgilari, admin 'Pro berish' bo'limi va referral kredit matni olib tashlandi. Domen/port kodi (`billing_ports.dart`, `product_tiers.dart`, `store_entitlement_service.dart`, `http_purchase_verifier.dart`) UI'dan ajratilgan holda qoldi. Quyidagi bandlar tarixiy.
 
 Apple matni (qisqa): "If you want to unlock features or functionality ... (subscriptions ... access to premium content ...), you must use in-app purchase." 3.1.1(a): "Developers may apply for entitlements to provide a link in their app to a permitted destination ... These entitlements are not required ... in their United States storefront apps." Music Streaming Services Entitlement endi StoreKit External Purchase Link Entitlements bandi ichida.
 

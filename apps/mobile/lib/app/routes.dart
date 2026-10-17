@@ -31,10 +31,10 @@ abstract final class Routes {
   // Qidiruv natijalari uchun Home tabidagi nusxa yo‘llar (tab almashmaydi).
   static String homeSubstance(String id) => '/home/substance/$id';
 
-  /// Pro: modda bo‘yicha tahlil rejasi.
+  /// Modda bo‘yicha tahlil rejasi.
   static String homePlan(String id) => '/home/substance/$id/plan';
 
-  /// Pro: kengaytirilgan qidiruv (faset + teskari qidiruv).
+  /// Kengaytirilgan qidiruv (faset + teskari qidiruv).
   static const proSearch = '/home/search/pro';
   static String proSearchWith(String query) =>
       Uri(path: proSearch, queryParameters: {'q': query}).toString();
@@ -60,7 +60,7 @@ abstract final class Routes {
       '/home/glossary/${Uri.encodeComponent(id)}';
   static String guideline(String id) =>
       '/library/guidelines/card/${Uri.encodeComponent(id)}';
-  // «Sudda so‘roq: tayyorgarlik» (Mutaxassis Pro; bepul — namunalar).
+  // «Sudda so‘roq: tayyorgarlik» .
   static const courtPrep = '/library/court-prep';
   static const courtPrepPractice = '/library/court-prep/practice';
   static const courtPrepPrinciples = '/library/court-prep/principles';
@@ -128,7 +128,6 @@ abstract final class Routes {
   static const profileMode = '/profile/mode';
   static const profileJurisdiction = '/profile/jurisdiction';
   static const profileDisclaimer = '/profile/disclaimer';
-  static const purchase = '/profile/purchase';
   static const privacy = '/profile/privacy';
   static const terms = '/profile/terms';
   static const about = '/profile/about';

@@ -9,7 +9,6 @@ import 'package:forensic_expert/features/home/presentation/home_screen.dart';
 import 'package:forensic_expert/features/home/presentation/search_screen.dart';
 import 'package:forensic_expert/features/library/presentation/entry_detail_screen.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 
@@ -104,10 +103,7 @@ void main() {
       settings: completedSettings(),
       initialLocation: Routes.searchWith('morphine'),
       testFixtures: false,
-      overrides: [
-        ...pilot.overrides,
-        entitlementServiceProvider.overrideWithValue(FakeStore(owned: true)),
-      ],
+      overrides: [...pilot.overrides],
     );
     await tapKey(tester, 'search.hit.morphine');
     expect(find.byType(EntryDetailScreen), findsOneWidget);

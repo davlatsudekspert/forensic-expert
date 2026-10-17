@@ -5,9 +5,7 @@ import 'package:forensic_expert/app/router.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/app/user_data.dart';
 import 'package:forensic_expert/data/auth/mock_auth_repository.dart';
-import 'package:forensic_expert/domain/ports/billing_ports.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pump_app.dart';
 
 const _pw = 'TestPassw0rd!';
@@ -236,7 +234,7 @@ void main() {
     await c.read(userDataProvider.notifier).toggleFavorite('morphine');
     await tapKey(tester, 'profile.deleteAccount');
     expect(find.byKey(const Key('screen.deleteAccount')), findsOneWidget);
-    expect(find.byKey(const Key('auth.delete.storeNote')), findsOneWidget);
+    expect(find.byKey(const Key('auth.delete.storeNote')), findsNothing);
     expect(find.byKey(const Key('auth.delete.localNote')), findsOneWidget);
     final submit = find.byKey(const Key('auth.delete.submit'));
     await show(tester, submit);
@@ -262,48 +260,22 @@ void main() {
     expect(c.read(userDataProvider).favorites, contains('morphine'));
   });
 
-  testWidgets('profil: obuna holati, restore va boshqarish', (tester) async {
-    final store = FakeStore(
-      tier: PlanTier.studentPro,
-      status: EntitlementStatus.cancelledActiveUntilExpiry,
-    );
+  testWidgets('profil: obuna/xarid/restore qatorlari yo‘q (hammasi bepul)', (
+    tester,
+  ) async {
     await pumpApp(
       tester,
       settings: completedSettings(),
       initialLocation: Routes.profile,
-      overrides: [entitlementServiceProvider.overrideWithValue(store)],
     );
-    final plan = find.byKey(const Key('profile.purchase'));
-    await show(tester, plan);
-    expect(
-      find.descendant(of: plan, matching: find.text('Student Pro')),
-      findsOneWidget,
-    );
-    final status = find.byKey(const Key('profile.subscriptionStatus'));
-    expect(
-      find.descendant(
-        of: status,
-        matching: find.textContaining('Cancelled — active until'),
-      ),
-      findsOneWidget,
-    );
-    expect(find.byKey(const Key('profile.manage')), findsOneWidget);
-    await tapKey(tester, 'profile.restore');
-    expect(store.restoreCalls, 1);
-    expect(find.text('Your subscription is active'), findsOneWidget);
+    for (final k in [
+      'profile.purchase',
+      'profile.subscriptionStatus',
+      'profile.restore',
+      'profile.manage',
+    ]) {
+      expect(find.byKey(Key(k)), findsNothing, reason: k);
+    }
     await show(tester, find.byKey(const Key('profile.aiDisclaimer')));
-  });
-
-  testWidgets('restore: faol obuna yo‘q — halol xabar', (tester) async {
-    final store = FakeStore();
-    await pumpApp(
-      tester,
-      settings: completedSettings(),
-      initialLocation: Routes.purchase,
-      overrides: [entitlementServiceProvider.overrideWithValue(store)],
-    );
-    await tapKey(tester, 'purchase.restore');
-    expect(store.restoreCalls, 1);
-    expect(find.text('No active subscriptions to restore.'), findsOneWidget);
   });
 }

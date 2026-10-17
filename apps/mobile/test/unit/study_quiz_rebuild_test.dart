@@ -26,8 +26,6 @@ void main() {
       knowledge: pilot.knowledge,
       library: pilot.library,
       guidelines: guidelines,
-      substancesUnlocked: true,
-      referencesUnlocked: true,
     );
     items = [for (final d in catalog.decks) ...d.items];
   });

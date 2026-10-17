@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../app/pro_tools.dart';
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../core/aby_flag.dart';
@@ -220,7 +219,7 @@ class SubstanceAnalysisSection extends ConsumerWidget {
           text: l.analysisIntro,
           tone: FeBannerTone.review,
         ),
-        // Pro: shu moddaning to‘liq tahlil rejasi (bepulda qisqa ko‘rinish).
+        // Shu moddaning to‘liq tahlil rejasi.
         AnalysisPlanEntry(entityId: entityId),
         // 1-qatlam: ABY. 2-qatlam: kitob qo‘llanmalari. 3-qatlam: ilmiy
         // adabiyot (qo‘shimcha) — aralashtirilmaydi, har biri o‘z sarlavhasi
@@ -464,8 +463,7 @@ class AnalysisRow extends StatelessWidget {
   }
 }
 
-/// «Tahlil rejasi» kirish kartasi. Bepul foydalanuvchi ham ko‘radi (Pro
-/// belgisi bilan) — sahifada qisqa ko‘rinish va tariflar taklifi.
+/// «Tahlil rejasi» kirish kartasi (hamma uchun bepul va ochiq).
 class AnalysisPlanEntry extends ConsumerWidget {
   const AnalysisPlanEntry({super.key, required this.entityId});
 
@@ -476,7 +474,6 @@ class AnalysisPlanEntry extends ConsumerWidget {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
-    final unlocked = ref.watch(proToolsUnlockedProvider);
     return Padding(
       padding: const EdgeInsets.only(top: FeSpace.sm),
       child: FeCard(
@@ -502,14 +499,6 @@ class AnalysisPlanEntry extends ConsumerWidget {
                 ],
               ),
             ),
-            if (!unlocked) ...[
-              Icon(Icons.lock_outline, size: 14, color: c.textSecondary),
-              const SizedBox(width: 3),
-              Text(
-                l.lockedBadge,
-                style: t.labelSmall?.copyWith(color: c.textSecondary),
-              ),
-            ],
             Icon(Icons.chevron_right, size: 20, color: c.textSecondary),
           ],
         ),

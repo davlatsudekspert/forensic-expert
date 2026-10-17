@@ -25,7 +25,6 @@ import '../../evidence/presentation/provenance_screens.dart';
 import '../../legal/presentation/instrument_title.dart';
 import '../../legal/presentation/jurisdiction_screens.dart';
 import '../../placeholder/presentation/in_development_view.dart';
-import 'content_entry_sections.dart';
 import 'source_detail_screen.dart';
 
 extension LibrarySectionL10n on LibrarySection {
@@ -312,11 +311,6 @@ class _LibrarySectionScreenState extends ConsumerState<LibrarySectionScreen> {
                                           compact: true,
                                         ),
                                         if (e.isTestData) const TestDataBadge(),
-                                        if (e.details != null)
-                                          AccessBadge(
-                                            access: e.access,
-                                            compact: true,
-                                          ),
                                       ],
                                     ),
                                   ],

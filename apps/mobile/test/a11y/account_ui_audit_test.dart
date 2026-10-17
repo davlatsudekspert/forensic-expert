@@ -4,9 +4,7 @@ import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/router.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/data/auth/mock_auth_repository.dart';
-import 'package:forensic_expert/domain/ports/billing_ports.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pump_app.dart';
 
 /// Akkaunt va obuna ekranlari: 320 dp, shrift ×2.0, EN/RU/UZ, light/dark;
@@ -21,7 +19,6 @@ void main() {
     Routes.accountForgot,
     Routes.accountReset,
     Routes.accountDelete,
-    Routes.purchase,
     Routes.profile,
     Routes.aiDisclaimer,
   ];
@@ -72,17 +69,7 @@ void main() {
                 size: const Size(320, 568),
                 textScale: 2.0,
                 settings: completedSettings(lang: lang, theme: theme),
-                overrides: [
-                  authRepositoryProvider.overrideWithValue(auth),
-                  entitlementServiceProvider.overrideWithValue(
-                    signedIn
-                        ? FakeStore(
-                            tier: PlanTier.professionalPro,
-                            status: EntitlementStatus.gracePeriod,
-                          )
-                        : FakeStore(withOffers: false),
-                  ),
-                ],
+                overrides: [authRepositoryProvider.overrideWithValue(auth)],
               );
               c.read(routerProvider).go(route, extra: 'audit@lab.uz');
               await tester.pumpAndSettle();

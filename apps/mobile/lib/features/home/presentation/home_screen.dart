@@ -271,8 +271,8 @@ class HomeScreen extends ConsumerWidget {
                       onTap: () => context.push(Routes.guidelines),
                     ),
                   ],
-                  // Mutaxassis rejimi: sudda so‘roqqa tayyorgarlik (Pro;
-                  // bepul — namunaviy savollar). Talabada — Kutubxonada.
+                  // Mutaxassis rejimi: sudda so‘roqqa tayyorgarlik.
+                  // Talabada — Kutubxonada.
                   if (mode != UserMode.student) ...[
                     const SizedBox(height: FeSpace.sm),
                     _ResourceTile(

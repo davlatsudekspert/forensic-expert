@@ -83,12 +83,7 @@ void main() {
       settings: completedSettings(lang: lang),
       initialLocation: location,
       testFixtures: false,
-      overrides: [
-        ...pilot.overrides,
-        entitlementServiceProvider.overrideWithValue(
-          store ?? FakeStore(owned: true),
-        ),
-      ],
+      overrides: [...pilot.overrides],
     );
 
     Future<void> see(WidgetTester tester, Finder f) async {
@@ -115,7 +110,6 @@ void main() {
         Routes.tools,
         Routes.ai,
         Routes.profile,
-        Routes.purchase,
         Routes.libraryEntry('brodifacoum'),
       ]) {
         testWidgets('$lang $route — ichki atama ko‘rinmaydi', (tester) async {
@@ -211,7 +205,6 @@ void main() {
         testFixtures: false,
         overrides: [
           ...pilot.overrides,
-          entitlementServiceProvider.overrideWithValue(FakeStore(owned: true)),
           aiAssistantProvider.overrideWithValue(const _SignedOutAi()),
         ],
       );

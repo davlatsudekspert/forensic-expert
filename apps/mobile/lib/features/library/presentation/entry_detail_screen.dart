@@ -118,8 +118,6 @@ class EntryDetailScreen extends ConsumerWidget {
                       Icon(entry.section.icon, size: 18, color: c.accent),
                       Text(entry.section.label(l), style: t.labelLarge),
                       if (entry.isTestData) const TestDataBadge(),
-                      if (entry.details != null)
-                        AccessBadge(access: entry.access),
                     ],
                   ),
                   const SizedBox(height: FeSpace.sm),

@@ -12,9 +12,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
-import 'package:forensic_expert/domain/ports/billing_ports.dart';
 import 'package:integration_test/integration_test.dart';
 
 import 'qa/harness.dart';
@@ -43,17 +41,7 @@ void main() {
         'fe.settings.mode': mode,
         'fe.settings.disclaimer_version': 1,
       },
-      overrides: [
-        if (pro)
-          accessProvider.overrideWithValue(
-            const Entitlements(
-              tier: PlanTier.professionalPro,
-              status: EntitlementStatus.active,
-              source: EntitlementSource.promo,
-              verification: EntitlementVerification.serverVerified,
-            ),
-          ),
-      ],
+      overrides: [],
     );
     qa.lang = lang;
 

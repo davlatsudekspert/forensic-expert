@@ -1,0 +1,143 @@
+{
+  "role": "nopaywall",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "n01",
+      "title": "Asosiy",
+      "result": "PASS",
+      "notes": [
+        "matn: 65 ta, ekran(lar) aylantirildi"
+      ],
+      "screenshot": "n01_asosiy.png"
+    },
+    {
+      "id": "n02",
+      "title": "Kutubxona (markaz)",
+      "result": "PASS",
+      "notes": [
+        "matn: 52 ta, ekran(lar) aylantirildi"
+      ],
+      "screenshot": "n02_kutubxona_markaz.png"
+    },
+    {
+      "id": "n03",
+      "title": "Kutubxona: Moddalar — BARCHA yozuvlar ko‘rinadi",
+      "result": "PASS",
+      "notes": [
+        "matn: 176 ta, ekran(lar) aylantirildi",
+        "yozuvlar: 140 / 140 (paketdagi jami)"
+      ],
+      "screenshot": "n03_kutubxona_moddalar_barcha_yozuvlar_ko_ri.png"
+    },
+    {
+      "id": "n04",
+      "title": "Modda detallari (tanlama): qulf kartasi yo‘q",
+      "result": "PASS",
+      "notes": [
+        "qulf kartasi: 0, taqiqlangan so‘z: 0"
+      ],
+      "screenshot": null
+    },
+    {
+      "id": "n05",
+      "title": "Modda detali (difluoroethane) — oxirigacha",
+      "result": "PASS",
+      "notes": [
+        "matn: 128 ta, ekran(lar) aylantirildi",
+        "«Shu sahifada» bo‘limlari: 7 ta"
+      ],
+      "screenshot": "n05_modda_detali_difluoroethane_oxirigacha.png"
+    },
+    {
+      "id": "n06",
+      "title": "Vositalar",
+      "result": "PASS",
+      "notes": [
+        "matn: 49 ta, ekran(lar) aylantirildi"
+      ],
+      "screenshot": "n06_vositalar.png"
+    },
+    {
+      "id": "n07",
+      "title": "Vosita: LOD/LOQ kalkulyatori (ilgari Pro)",
+      "result": "PASS",
+      "notes": [
+        "matn: 46 ta, ekran(lar) aylantirildi"
+      ],
+      "screenshot": "n07_vosita_lod_loq_kalkulyatori_ilgari_pro.png"
+    },
+    {
+      "id": "n08",
+      "title": "Vosita: C1V1 suyultirish",
+      "result": "PASS",
+      "notes": [
+        "matn: 53 ta, ekran(lar) aylantirildi"
+      ],
+      "screenshot": "n08_vosita_c1v1_suyultirish.png"
+    },
+    {
+      "id": "n09",
+      "title": "AI",
+      "result": "PASS",
+      "notes": [
+        "matn: 68 ta, ekran(lar) aylantirildi"
+      ],
+      "screenshot": "n09_ai.png"
+    },
+    {
+      "id": "n10",
+      "title": "O‘quv",
+      "result": "PASS",
+      "notes": [
+        "matn: 37 ta, ekran(lar) aylantirildi"
+      ],
+      "screenshot": "n10_o_quv.png"
+    },
+    {
+      "id": "n11",
+      "title": "Qidiruv",
+      "result": "PASS",
+      "notes": [
+        "matn: 53 ta, ekran(lar) aylantirildi"
+      ],
+      "screenshot": "n11_qidiruv.png"
+    },
+    {
+      "id": "n12",
+      "title": "Kengaytirilgan qidiruv (ilgari Pro)",
+      "result": "PASS",
+      "notes": [
+        "matn: 395 ta, ekran(lar) aylantirildi"
+      ],
+      "screenshot": "n12_kengaytirilgan_qidiruv_ilgari_pro.png"
+    },
+    {
+      "id": "n13",
+      "title": "Profil",
+      "result": "PASS",
+      "notes": [
+        "matn: 64 ta, ekran(lar) aylantirildi"
+      ],
+      "screenshot": "n13_profil.png"
+    },
+    {
+      "id": "n14",
+      "title": "/profile/purchase yo‘li yo‘q (paywall ochilmaydi)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "n14_profile_purchase_yo_li_yo_q_paywall_ochi.png"
+    },
+    {
+      "id": "n15",
+      "title": "Tarmoq o‘chiq: hech bir HTTP so‘rov muvaffaqiyatli emas",
+      "result": "PASS",
+      "notes": [
+        "Bloklangan HTTP urinishlari: 0"
+      ],
+      "screenshot": null
+    }
+  ],
+  "pass": 15,
+  "fail": 0
+}

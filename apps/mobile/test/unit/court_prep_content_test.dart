@@ -8,7 +8,6 @@ import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
 import 'package:forensic_expert/domain/catalog/tools_catalog.dart';
 import 'package:forensic_expert/domain/court_prep/court_prep_models.dart';
 import 'package:forensic_expert/domain/guidelines/guideline_models.dart';
-import 'package:forensic_expert/domain/ports/billing_ports.dart';
 import 'package:forensic_expert/features/court_prep/presentation/court_prep_screens.dart';
 
 /// Ilovaga qo‘shilgan haqiqiy «Sudda so‘roq» paketi: karta tuzilmasi
@@ -142,22 +141,9 @@ void main() {
     expect(law.url, 'https://lex.uz/docs/1633100');
   });
 
-  test('bepul/Pro: kartalar hamma uchun; Pro — faqat kengaytirilgan mashq', () {
-    expect(bundle.samples, isEmpty, reason: 'karta paywall belgisi yo‘q');
-    expect(
-      FeatureGate.minimumTier(ProductFeature.courtTestimonyPrep),
-      PlanTier.professionalPro,
-    );
-    // Asosiy (bepul) ssenariylar bor, qolganlari Pro.
-    final free = bundle.scenarios.where(
-      (s) => courtScenarioOpen(s, unlocked: false),
-    );
-    expect(free.length, inInclusiveRange(1, 3));
-    expect(free.length, lessThan(bundle.scenarios.length));
-    expect(
-      bundle.scenarios.every((s) => courtScenarioOpen(s, unlocked: true)),
-      isTrue,
-    );
+  test('kartalar va ssenariylar hamma uchun bepul va ochiq', () {
+    expect(bundle.samples, isEmpty, reason: 'karta qulf belgisi yo‘q');
+    expect(bundle.scenarios, isNotEmpty);
     // Rol mashqi — har roldan bittadan, belgilangan tartibda.
     expect(
       courtDrillScenarios(bundle).map((s) => s.role).toList(),
