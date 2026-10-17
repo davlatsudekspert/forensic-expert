@@ -238,7 +238,6 @@ void main() {
       qa.expectText(l.admShown(25, 30), s);
       qa.expectText('owner@example.test', s);
       qa.expectText(l.adminPrivacyNote, s);
-      qa.expectText(l.tierProfessionalPro, s, why: 'tarif nomi');
       qa.expectText(RegExp(l.adminAndroid), s);
       for (final raw in ['professionalPro', 'studentPro', ' android', ' ios']) {
         qa.expectNoText(raw, s, why: 'xom kod');
@@ -256,7 +255,7 @@ void main() {
       qa.expectText('owner@example.test', s, why: '«Oldingi»');
     }, shot: false);
 
-    await qa.step('Foydalanuvchilar: qidiruv + rol/tarif filtri', (s) async {
+    await qa.step('Foydalanuvchilar: qidiruv + rol filtri', (s) async {
       await qa.enterText(find.byKey(const Key('adminUsers.search')), 'user07');
       await tester.testTextInput.receiveAction(TextInputAction.search);
       await qa.settle();
@@ -271,10 +270,7 @@ void main() {
       qa.expectNoText('publication_moderator', s, why: 'xom kod');
       qa.expectNoText('owner@example.test', s);
       await qa.tapFinder(find.byKey(const Key('adminUsers.role.any')));
-      await qa.tapFinder(find.byKey(const Key('adminUsers.tier.pro')));
       qa.expectText('owner@example.test', s);
-      qa.expectText('user07@example.test', s);
-      qa.expectNoText('user08@example.test', s);
     });
 
     // ------------------------------------------------------------- jurnal

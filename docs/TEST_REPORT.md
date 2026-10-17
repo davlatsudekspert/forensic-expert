@@ -19,6 +19,22 @@ Edge function (`ai-answer`) uchun Deno type-check bu muhitda yo‘q — deployda
 **CI holati (2026-10-08):** GitHub Actions barcha ishga tushirishlarda `startup_failure` (hisob darajasida — ehtimol Actions daqiqalari/billing). Workflow YAML’lari to‘g‘ri. Egasi GitHub Billing’ni tekshirishi kerak.
 
 
+## Integratsiya 0.3.0 (2026-10-17, branch `claude/integration-0.3.0`)
+
+Birlashtirilgan: no-paywall → analysis-structure → admin-ext → apple-revoke (social-sign-in bilan) → class-quiz (asos: `claude/phase-8-12-final-release`, ABY’siz). Lokal Linux konteyner; real qurilma emas.
+
+| Nima | Natija |
+|---|---|
+| `flutter analyze --fatal-infos` (app) / `dart analyze --fatal-infos packages` | No issues / No issues |
+| To‘liq `flutter test` (bir marta, goldenlar yangilangandan keyin) | **2913 PASS, 1 skip, 3 FAIL** → 3 tasi tuzatildi va alohida qayta sinaldi (13/13 PASS): arb_parity (class-quiz «DEMO», `{code} · {status}`, `{seconds} s`), phase11 (class-quiz QR uchun CAMERA ruxsati, `required=false`) |
+| Goldenlar | konflikt/no-paywall tufayli yiqilgan 58 tasi `--update-goldens` bilan yangilandi (Pro belgisi/obuna qatori yo‘q, ABY’siz Tahlil, admin-ext profil qatorlari); tolerans ichida qayta yozilgan 11 tasi qaytarildi |
+| Paketlar (`dart test`, 7 paket) | hammasi PASS (fe_content_pipeline: C-AS-* iqtiboslari faqat uz — egasi til tartibi bo‘yicha test moslandi) |
+| SQL `supabase/tests/run_local.sh` (vaqtinchalik PostgreSQL 16) | hammasi PASS, RLS matritsa PASS (class_quiz_test fixture id’lari 79000000-* ga o‘zgartirildi; class_quiz migratsiyasi 20261017010000 ga ko‘chirildi — admin_extension bilan versiya to‘qnashuvi) |
+| `translation_qa.py` / `claim_source_audit.py --check` / `analysis_structure_audit.py --check` | 0 xato / OK / OK |
+| Kontent build (development, vaqtinchalik katalog) | warnings=0; ilovadagi `content.db` bundle.json bilan bir xil (faqat `built_at` farq) — qayta yig‘ish kerak bo‘lmadi |
+| Real-app harness (Linux, Xvfb, MOCK) | STUDENT 40/6, EXPERT 37/0, ADMIN 23/0, nopaywall 15/0. STUDENT’dagi 6 FAIL (s12–s16, s18) asosiy shoxda ham aynan shunday (43/6) — integratsiyadan emas (kirgandan keyingi snackbar AI tugmasini to‘sadi, keyingi qadamlar zanjirli yiqiladi). Pro/paywall qadamlari «hamma ochiq» tekshiruviga almashtirildi |
+| Sinalmagan | real iOS/Android qurilma, haqiqiy Google/Apple kirish va Apple token revoke (Deno yo‘q — `apple_revoke_test.ts` ishga tushirilmadi), teacher roli real-app harnessda (faqat widget/unit/SQL testlari), haqiqiy Supabase’ga migratsiya/deploy (qilinmadi) |
+
 ## Sinfda test (2026-10-17, branch `claude/class-quiz`)
 
 | Nima | Natija |

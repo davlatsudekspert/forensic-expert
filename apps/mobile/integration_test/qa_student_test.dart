@@ -233,29 +233,14 @@ void main() {
       qa.expectText('Etanol', s);
     });
 
-    // ------------------------------------------------------ Bepul vs Pro
-    await qa.step('Pro modda (Alprazolam) — qulf kartasi', (s) async {
+    // --------------------------------- hamma bepul va ochiq (Pro/paywall yo‘q)
+    await qa.step('Alprazolam — qulf/tarif yo‘q, Tahlil ochiq', (s) async {
       goTo(tester, Routes.librarySection('substances'));
       await qa.settle();
       await qa.tapText('Alprazolam');
-      await qa.scrollUntil(find.text('Tariflarni ko‘rish'));
-      qa.expectText('Tariflarni ko‘rish', s);
-    });
-
-    await qa.step('Tariflarni ko‘rish → paywall', (s) async {
-      await qa.tapText('Tariflarni ko‘rish');
-      qa.expectText('Talaba Pro', s);
-      qa.expectText('Xaridlarni tiklash', s);
-    });
-
-    await qa.step('Paywall: do‘kon yo‘q — narx/xarid o‘chiq, xabar bor', (
-      s,
-    ) async {
-      await qa.tapText('Obuna bo‘lish');
-      final t = qa.visibleTexts().join(' ');
-      if (!t.contains('mavjud emas') && !t.contains('do‘kon')) {
-        s.passed = false;
-        s.notes.add('Do‘kon yo‘qligi haqida xabar ko‘rinmadi');
+      qa.expectText('Tahlil', s);
+      for (final t in ['Tariflarni ko‘rish', 'Talaba Pro', 'Obuna bo‘lish']) {
+        qa.expectNoText(t, s, why: 'paywall qolmasligi kerak');
       }
     });
 

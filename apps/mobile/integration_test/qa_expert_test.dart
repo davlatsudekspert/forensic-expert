@@ -309,11 +309,12 @@ void main() {
       qa.expectText('ma’lumotlarni tekshiring', s, why: 'ogohlantirish');
     });
 
-    await qa.step('Pro kalkulyator (Widmark) → tariflar', (s) async {
+    await qa.step('Widmark kalkulyatori — bepul, tarif so‘ralmaydi', (s) async {
       goTo(tester, Routes.tools);
       await qa.settle();
       await qa.tapText('Qondagi alkogol (Widmark)');
-      qa.expectText('Mutaxassis Pro', s);
+      qa.expectNoText('Mutaxassis Pro', s, why: 'paywall qolmasligi kerak');
+      qa.expectNoText('Tariflarni ko‘rish', s, why: 'paywall qolmasligi kerak');
     });
 
     // --------------------------------------------- profil, til, kichik ekran
