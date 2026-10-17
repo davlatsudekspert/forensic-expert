@@ -151,15 +151,16 @@ void main() {
     );
   });
 
-  testWidgets(
-    'GHB: moddaga xos tahlil yo‘q — soxta qator yo‘q, bo‘sh holat',
-    (tester) async {
-      await open(tester, Routes.libraryEntry('ghb'));
-      await see(tester, find.byKey(const Key('analysis.empty.ghb')));
-      // Namuna / metod / metabolit qatorlari to‘qilmaydi.
-      expect(find.byKey(const Key('measured.ghb.blood')), findsNothing);
-    },
-  );
+  testWidgets('GHB: moddaga xos tahlil yo‘q — soxta qator yo‘q, bo‘sh holat', (
+    tester,
+  ) async {
+    await open(tester, Routes.libraryEntry('ghb'));
+    await see(tester, find.byKey(const Key('analysis.ghb')));
+    // Uch bo‘lim ham mavjud; manbasiz bo‘lim halol bo‘sh holatda.
+    expect(find.byKey(const Key('analysis.empty.ghb')), findsNothing);
+    // Namuna / metod / metabolit qatorlari to‘qilmaydi.
+    expect(find.byKey(const Key('measured.ghb.blood')), findsNothing);
+  });
 
   testWidgets('namuna sahifasi: shu namunada tahlil qilingan moddalar', (
     tester,

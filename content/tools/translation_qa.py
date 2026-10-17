@@ -429,6 +429,10 @@ def check_bundle(path: pathlib.Path, rep: Report):
                      "translation_status must be authored "
                      f"(source_lang={src_lang})")
         for lang in others:
+            if not isinstance(st.get(lang), str):
+                # Til tartibi (egasi qarori 2026-10-12): yangi yozuv avval faqat asl tilda;
+                # tarjima keyin alohida qo‘shiladi — hozircha yo‘q, shuning uchun tekshiriladigan narsa yo‘q.
+                continue
             rep.pair(f"bundle:claim_statement:{c['claim_id']}:{lang}",
                      st.get(src_lang), st.get(lang), src_lang, lang)
             if ts.get(lang) != "machine_draft":

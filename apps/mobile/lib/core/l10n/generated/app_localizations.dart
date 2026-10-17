@@ -15740,6 +15740,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Evidence from the literature (in full)'**
   String get litClaimsTitle;
+
+  /// Analysis tab, section 1 heading.
+  ///
+  /// In en, this message translates to:
+  /// **'1. Tests (rapid / screening)'**
+  String get analysisS1Title;
+
+  /// Analysis tab, section 1 note.
+  ///
+  /// In en, this message translates to:
+  /// **'Quick presumptive tests: immunoassays, test strips. The result is preliminary only and must be confirmed by a confirmation method.'**
+  String get analysisS1Note;
+
+  /// Analysis tab, section 2 heading.
+  ///
+  /// In en, this message translates to:
+  /// **'2. Qualitative reactions (colour reagents)'**
+  String get analysisS2Title;
+
+  /// Analysis tab, section 2 note.
+  ///
+  /// In en, this message translates to:
+  /// **'Reagent, colour, comment, selectivity and false positives. Presumptive: it does not prove identity by itself.'**
+  String get analysisS2Note;
+
+  /// Analysis tab, section 3 heading.
+  ///
+  /// In en, this message translates to:
+  /// **'3. Quantification (GC-MS, LC-MS/MS, spectrophotometry)'**
+  String get analysisS3Title;
+
+  /// Analysis tab, section 3 note.
+  ///
+  /// In en, this message translates to:
+  /// **'Sample preparation, key parameters, LOD/LOQ (if the source gives them) and limitations. Numbers only as stated in the source; not a substitute for a validated laboratory method.'**
+  String get analysisS3Note;
+
+  /// Analysis tab, empty section.
+  ///
+  /// In en, this message translates to:
+  /// **'No sourced information for this section yet — a source is needed. Nothing is guessed.'**
+  String get analysisSectionEmpty;
+
+  /// Note under a claim statement that exists only in its source language (Uzbek) until the translation table is added.
+  ///
+  /// In en, this message translates to:
+  /// **'Translation pending — the original Uzbek text is shown'**
+  String get trPendingTranslation;
 }
 
 class _AppLocalizationsDelegate

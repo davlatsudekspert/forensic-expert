@@ -9045,4 +9045,34 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get litClaimsTitle => 'Evidence from the literature (in full)';
+
+  @override
+  String get analysisS1Title => '1. Tests (rapid / screening)';
+
+  @override
+  String get analysisS1Note =>
+      'Quick presumptive tests: immunoassays, test strips. The result is preliminary only and must be confirmed by a confirmation method.';
+
+  @override
+  String get analysisS2Title => '2. Qualitative reactions (colour reagents)';
+
+  @override
+  String get analysisS2Note =>
+      'Reagent, colour, comment, selectivity and false positives. Presumptive: it does not prove identity by itself.';
+
+  @override
+  String get analysisS3Title =>
+      '3. Quantification (GC-MS, LC-MS/MS, spectrophotometry)';
+
+  @override
+  String get analysisS3Note =>
+      'Sample preparation, key parameters, LOD/LOQ (if the source gives them) and limitations. Numbers only as stated in the source; not a substitute for a validated laboratory method.';
+
+  @override
+  String get analysisSectionEmpty =>
+      'No sourced information for this section yet — a source is needed. Nothing is guessed.';
+
+  @override
+  String get trPendingTranslation =>
+      'Translation pending — the original Uzbek text is shown';
 }

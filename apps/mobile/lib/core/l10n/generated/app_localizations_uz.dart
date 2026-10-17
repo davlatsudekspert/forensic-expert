@@ -9006,4 +9006,34 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get litClaimsTitle => 'Adabiyotdagi dalillar (to‘liq)';
+
+  @override
+  String get analysisS1Title => '1. Test (ekspress / skrining)';
+
+  @override
+  String get analysisS1Note =>
+      'Tez, taxminiy sinamalar: immunoanaliz, test-chiziqlar. Natija faqat dastlabki; tasdiqlovchi usul bilan tasdiqlanishi shart.';
+
+  @override
+  String get analysisS2Title => '2. Sifat reaksiyalari (rangli reaktivlar)';
+
+  @override
+  String get analysisS2Note =>
+      'Reaktiv, rang, izoh va tanlovchanlik yoki yolg‘on musbat natijalar. Taxminiy: o‘zi bilan modda aynanligini isbotlamaydi.';
+
+  @override
+  String get analysisS3Title =>
+      '3. Miqdoriy aniqlash (GC-MS, LC-MS/MS, spektrofotometriya)';
+
+  @override
+  String get analysisS3Note =>
+      'Namuna tayyorlash, asosiy parametrlar, LOD/LOQ (manbada bo‘lsa) va cheklovlar. Raqamlar faqat manbada keltirilganicha; validatsiyadan o‘tgan laboratoriya usuli o‘rnini bosmaydi.';
+
+  @override
+  String get analysisSectionEmpty =>
+      'Bu bo‘lim uchun manbali ma’lumot hali yo‘q — manba kerak. Hech narsa taxmin qilinmaydi.';
+
+  @override
+  String get trPendingTranslation =>
+      'Tarjima kutilmoqda — asl o‘zbekcha matn ko‘rsatilmoqda';
 }

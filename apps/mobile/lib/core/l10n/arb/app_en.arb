@@ -11679,5 +11679,37 @@
   "litClaimsTitle": "Evidence from the literature (in full)",
   "@litClaimsTitle": {
     "description": "Heading of the full literature claims list."
+  },
+  "analysisS1Title": "1. Tests (rapid / screening)",
+  "@analysisS1Title": {
+    "description": "Analysis tab, section 1 heading."
+  },
+  "analysisS1Note": "Quick presumptive tests: immunoassays, test strips. The result is preliminary only and must be confirmed by a confirmation method.",
+  "@analysisS1Note": {
+    "description": "Analysis tab, section 1 note."
+  },
+  "analysisS2Title": "2. Qualitative reactions (colour reagents)",
+  "@analysisS2Title": {
+    "description": "Analysis tab, section 2 heading."
+  },
+  "analysisS2Note": "Reagent, colour, comment, selectivity and false positives. Presumptive: it does not prove identity by itself.",
+  "@analysisS2Note": {
+    "description": "Analysis tab, section 2 note."
+  },
+  "analysisS3Title": "3. Quantification (GC-MS, LC-MS/MS, spectrophotometry)",
+  "@analysisS3Title": {
+    "description": "Analysis tab, section 3 heading."
+  },
+  "analysisS3Note": "Sample preparation, key parameters, LOD/LOQ (if the source gives them) and limitations. Numbers only as stated in the source; not a substitute for a validated laboratory method.",
+  "@analysisS3Note": {
+    "description": "Analysis tab, section 3 note."
+  },
+  "analysisSectionEmpty": "No sourced information for this section yet — a source is needed. Nothing is guessed.",
+  "@analysisSectionEmpty": {
+    "description": "Analysis tab, empty section."
+  },
+  "trPendingTranslation": "Translation pending — the original Uzbek text is shown",
+  "@trPendingTranslation": {
+    "description": "Note under a claim statement that exists only in its source language (Uzbek) until the translation table is added."
   }
 }

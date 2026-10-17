@@ -9095,4 +9095,34 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get litClaimsTitle => 'Данные из литературы (полностью)';
+
+  @override
+  String get analysisS1Title => '1. Экспресс-тесты (скрининг)';
+
+  @override
+  String get analysisS1Note =>
+      'Быстрые предварительные пробы: иммуноанализ, тест-полоски. Результат только ориентировочный; обязательно подтверждение подтверждающим методом.';
+
+  @override
+  String get analysisS2Title => '2. Качественные реакции (цветные реактивы)';
+
+  @override
+  String get analysisS2Note =>
+      'Реактив, цвет, пояснение, избирательность и ложноположительные результаты. Предварительно: сам по себе не доказывает идентичность вещества.';
+
+  @override
+  String get analysisS3Title =>
+      '3. Количественное определение (GC-MS, LC-MS/MS, спектрофотометрия)';
+
+  @override
+  String get analysisS3Note =>
+      'Подготовка пробы, основные параметры, LOD/LOQ (если есть в источнике) и ограничения. Числа только как в источнике; не заменяет валидированную методику лаборатории.';
+
+  @override
+  String get analysisSectionEmpty =>
+      'Для этого раздела пока нет данных с источником — нужен источник. Ничего не домысливается.';
+
+  @override
+  String get trPendingTranslation =>
+      'Перевод ожидается — показан оригинал на узбекском';
 }

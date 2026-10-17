@@ -83,10 +83,16 @@ class _ContentEntryBodyState extends ConsumerState<ContentEntryBody> {
     // `value.locale_only` yozuvlar boshqa til interfeysida umuman ko‘rinmaydi.
     final claims = visibleClaims(d.claims, lang);
     final presentFields = {for (final c in claims) c.field};
+    final isSubstance = entry.section == LibrarySection.substances;
+    // Modda sahifasida «namuna tayyorlash» «Tahlil» → «Miqdoriy aniqlash»
+    // bo‘limida ko‘rsatiladi (takrorlanmaydi).
     final methodRecords = [
       for (final f in methodRecordFields)
         for (final c in claims)
-          if (c.field == f && c.hasStatement) c,
+          if (c.field == f &&
+              c.hasStatement &&
+              !(isSubstance && f == 'sample_preparation'))
+            c,
     ];
     final hasSpecimens = ref
         .watch(evidenceDataProvider)
@@ -111,7 +117,6 @@ class _ContentEntryBodyState extends ConsumerState<ContentEntryBody> {
         .watch(evidenceDataProvider)
         .imagesFor(entry.id)
         .any((m) => m.kind == ImageKind.chemicalStructure);
-    final isSubstance = entry.section == LibrarySection.substances;
     final index = <(String, String)>[
       if (isSubstance) ('analysis', l.analysisTitle),
       if (hasStructure) ('structure', l.detailStructure),
@@ -561,7 +566,20 @@ class ClaimCard extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       SelectableText(statement, style: t.bodyMedium),
-                      if (lang != 'en' &&
+                      if (claim.statementTranslationPending(lang))
+                        Padding(
+                          padding: const EdgeInsets.only(top: FeSpace.xxs),
+                          child: Text(
+                            l.trPendingTranslation,
+                            key: Key(
+                              'claim.statement.pending.${claim.claimId}',
+                            ),
+                            style: t.bodySmall?.copyWith(
+                              color: c.textSecondary,
+                            ),
+                          ),
+                        )
+                      else if (lang != 'en' &&
                           claim.translationStatusFor(lang) == 'machine_draft')
                         Padding(
                           padding: const EdgeInsets.only(top: FeSpace.xxs),

@@ -6,16 +6,16 @@
    "SCOPE_MISMATCH": 0,
    "ABSTRACT_ONLY": 686,
    "NO_LOCATOR": 25,
-   "PARTIAL": 70,
-   "SUPPORTED": 1537
+   "PARTIAL": 73,
+   "SUPPORTED": 1588
   },
   "auto_verdict": {
    "UNSUPPORTED": 1,
    "SCOPE_MISMATCH": 7,
    "ABSTRACT_ONLY": 684,
    "NO_LOCATOR": 25,
-   "PARTIAL": 69,
-   "SUPPORTED": 1533
+   "PARTIAL": 72,
+   "SUPPORTED": 1584
   },
   "by_corpus": {
    "bundle": {
@@ -23,8 +23,8 @@
     "SCOPE_MISMATCH": 0,
     "ABSTRACT_ONLY": 9,
     "NO_LOCATOR": 6,
-    "PARTIAL": 11,
-    "SUPPORTED": 820
+    "PARTIAL": 14,
+    "SUPPORTED": 871
    },
    "court_prep": {
     "UNSUPPORTED": 0,
@@ -43,7 +43,7 @@
     "SUPPORTED": 480
    }
   },
-  "claims": 2319,
+  "claims": 2373,
   "reviewed": 46,
   "general_rule_abstract_only_unreviewed": 7
  },
@@ -298,7 +298,7 @@
    "guideline/tier1/B": 2,
    "journal_article/tier2/A": 8,
    "journal_article/tier2/B": 232,
-   "journal_article/tier2/C": 50,
+   "journal_article/tier2/C": 68,
    "journal_article/tier2/D": 32,
    "legislation/tier1/A": 8,
    "report/tier3/C": 1,
@@ -307,7 +307,10 @@
   "claims_whose_level_differs_from_their_source": [
    "C-EP-ETHANOL-06",
    "C-EP-ETHANOL-07",
-   "C-EP-ETHANOL-09"
+   "C-EP-ETHANOL-09",
+   "C-AS-BROMAZOLAM-ANALYTICAL_METHOD-01",
+   "C-AS-FLUALPRAZOLAM-ANALYTICAL_METHOD-01",
+   "C-AS-TRAMADOL-IMMUNOASSAY_SCREEN-01"
   ],
   "claim_level_is_copied_from_source": false,
   "ungrounded_or_inconsistent_sources": [
@@ -438,12 +441,30 @@
     ]
    },
    {
+    "source_id": "SRC-PMC12794522",
+    "level": "C",
+    "type": "journal_article",
+    "title": "Decoding the Unseen: A Systematic Review of the Analytical Performance of Nitazene Test Strips for I",
+    "why": [
+     "title says systematic review/meta-analysis but level is not A"
+    ]
+   },
+   {
     "source_id": "SRC-PMC12808249",
     "level": "A",
     "type": "journal_article",
     "title": "Characterizing post-mortem blood concentrations in methadone-related deaths",
     "why": [
      "level A without 'systematic review/meta-analysis/guideline' in the title - check PubMed publication type"
+    ]
+   },
+   {
+    "source_id": "SRC-PMC13024865",
+    "level": "C",
+    "type": "journal_article",
+    "title": "Conventional Chromatographic Techniques and Biosensors for Mercury Speciation in Seafood: A Systemat",
+    "why": [
+     "title says systematic review/meta-analysis but level is not A"
     ]
    },
    {
@@ -54792,6 +54813,1244 @@
    "reasons": [],
    "text_sha": "f59e7f710f3e04b4",
    "text": "{\"inchikey\": \"QGZKDVFQNNGYKY-UHFFFAOYSA-N\", \"iupac_name\": \"azane\", \"molecular_formula\": \"H3N\", \"molecular_weight\": \"17.031\", \"pubchem_cid\": 222}"
+  },
+  {
+   "id": "C-AS-MERCURY-COLOUR_TEST-01",
+   "corpus": "bundle",
+   "container": "mercury",
+   "sources": [
+    {
+     "key": "SRC-YULDASHEV-TOKS-2025",
+     "locators": [
+      "pp. 79, 202"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "9c66a23bcb450df5",
+   "text": "Ditizon bilan sinama (destruktatda): destruktat avval xloroform bilan chayqatib yuviladi (xloroform ulushi rangsiz bo‘lguncha), so‘ng tozalangan destruktatga 10% askorbin kislota, xloroform va ditizonning 0,01% xloroform"
+  },
+  {
+   "id": "C-AS-MERCURY-CHEMICAL_TEST-01",
+   "corpus": "bundle",
+   "container": "mercury",
+   "sources": [
+    {
+     "key": "SRC-YULDASHEV-TOKS-2025",
+     "locators": [
+      "p. 79"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "d69836d3f35c5a16",
+   "text": "Mis(I) yodid osilmasi bilan sinama: destruktatning aniq hajmiga 10 ml CuI osilmasi qo‘shilsa, qizil-zarg‘aldoq cho‘kma — Cu2[HgI4] hosil bo‘ladi. Reaksiyaga oksidlovchilar xalaqit beradi: ular CuI dan erkin yod ajratadi."
+  },
+  {
+   "id": "C-AS-MERCURY-SAMPLE_PREPARATION-01",
+   "corpus": "bundle",
+   "container": "mercury",
+   "sources": [
+    {
+     "key": "SRC-YULDASHEV-TOKS-2025",
+     "locators": [
+      "pp. 78, 213"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "419e3b719f4081ca",
+   "text": "Simob quruq va ho‘l mineralizatsiyada deyarli butunlay yo‘qoladi, shuning uchun manba ob’ektni destruksiya qilishni tavsiya etadi (Vasileva usuli): ob’ekt nitrat va sulfat kislota bilan qisman parchalanadi, tezlashtirish"
+  },
+  {
+   "id": "C-AS-MERCURY-ANALYTICAL_METHOD-01",
+   "corpus": "bundle",
+   "container": "mercury",
+   "sources": [
+    {
+     "key": "SRC-YULDASHEV-TOKS-2025",
+     "locators": [
+      "pp. 79, 213"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "5d0acc9ad09cbfae",
+   "text": "Miqdoriy aniqlash (destruktatda) kitobda ikki yo‘l bilan keltirilgan: ditizonat holida fotokolorimetrik usulda va Cu2[HgI4] holida kolorimetrik usulda. Laboratoriya mashg‘ulotida bular Cu2[HgI4] holida nefelometrik va di"
+  },
+  {
+   "id": "C-AS-ACETIC-ACID-ODOUR_TEST-01",
+   "corpus": "bundle",
+   "container": "acetic-acid",
+   "sources": [
+    {
+     "key": "SRC-YULDASHEV-TOKS-2025",
+     "locators": [
+      "p. 31"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "68f27a6484af9ea2",
+   "text": "Dastlabki belgi: ob’ektdan suv bug‘i bilan haydalgan distillyatdan sirka kislotasining o‘ziga xos hidi kelsa (bu ob’ektda kislota ko‘p bo‘lganda seziladi), bu sirka kislotasiga tekshirish uchun yo‘naltiruvchi belgi. Sirk"
+  },
+  {
+   "id": "C-AS-ACETIC-ACID-COLOUR_TEST-01",
+   "corpus": "bundle",
+   "container": "acetic-acid",
+   "sources": [
+    {
+     "key": "SRC-YULDASHEV-TOKS-2025",
+     "locators": [
+      "p. 32"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "d95209b12579acc8",
+   "text": "Temir(III) xlorid bilan: distillyat neytrallanib bug‘latilgach, qoldiqning bir qismiga FeCl3 reaktivi qo‘shilsa qizil mahsulot hosil bo‘ladi, qizdirilganda u qo‘ng‘ir rangga o‘tadi. Manba keltirgan sezgirlik — 0,5 mg sir"
+  },
+  {
+   "id": "C-AS-ACETIC-ACID-COLOUR_TEST-02",
+   "corpus": "bundle",
+   "container": "acetic-acid",
+   "sources": [
+    {
+     "key": "SRC-YULDASHEV-TOKS-2025",
+     "locators": [
+      "p. 32"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "879be44c2fac3944",
+   "text": "Lantan nitrat va yod bilan: qoldiqning bir qismiga lantan nitrat, yodning spirtli eritmasi va ammiak qo‘shilsa, to‘q ko‘k rang yoki shu rangdagi cho‘kma hosil bo‘ladi. Faqat taxminiy natija: u o‘zi bilan modda aynanligin"
+  },
+  {
+   "id": "C-AS-ACETIC-ACID-CHEMICAL_TEST-01",
+   "corpus": "bundle",
+   "container": "acetic-acid",
+   "sources": [
+    {
+     "key": "SRC-YULDASHEV-TOKS-2025",
+     "locators": [
+      "p. 32"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "f7d9c77b71f369e6",
+   "text": "Efir hosil qilish reaksiyalari: qoldiq etanol va konsentrlangan sulfat kislota bilan qizdirilsa sirka-etil efirining xarakterli hidi paydo bo‘ladi (manba keltirgan sezgirlik — 5 mg sirka kislota); amil spirti va konsentr"
+  },
+  {
+   "id": "C-AS-ACETIC-ACID-SAMPLE_PREPARATION-01",
+   "corpus": "bundle",
+   "container": "acetic-acid",
+   "sources": [
+    {
+     "key": "SRC-YULDASHEV-TOKS-2025",
+     "locators": [
+      "pp. 27, 31–32"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "e2c8a5b82b24d231",
+   "text": "Sirka kislota uchuvchan, shuning uchun suv bug‘i bilan haydab ajratiladi. Erkin (bog‘lanmagan) kislotani aniqlash uchun ob’ekt to‘g‘ridan-to‘g‘ri haydaladi; organizmda hosil qilgan tuzlarini aniqlash uchun ob’ekt muhiti "
+  },
+  {
+   "id": "C-AS-ACETIC-ACID-ANALYTICAL_METHOD-01",
+   "corpus": "bundle",
+   "container": "acetic-acid",
+   "sources": [
+    {
+     "key": "SRC-YULDASHEV-TOKS-2025",
+     "locators": [
+      "p. 32"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "b41cd2e4c63a1e57",
+   "text": "Miqdoriy aniqlash: sirka kislotaning o‘zi neytrallash (titrlash) usuli bilan aniqlanadi. Kislotaning havodagi miqdori yodometrik usulda aniqlanadi: KI va KIO3 sirka kislota bilan ekvivalent miqdorda yod ajratadi, ajralga"
+  },
+  {
+   "id": "C-AS-AMMONIA-EXPRESS_TEST-01",
+   "corpus": "bundle",
+   "container": "ammonia",
+   "sources": [
+    {
+     "key": "SRC-YULDASHEV-TOKS-2025",
+     "locators": [
+      "pp. 147, 262–263"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "765a9a1cd3c98e5d",
+   "text": "Dastlabki sinama: ob’ektning suvli ajratmasi (yoki dializat) ammoniy ionini saqlab, fenolftalein bo‘yicha aniq ishqoriy muhit ko‘rsatsa, bu ammiak bilan zaharlanishga shubha qilish uchun asos. Ikki indikator qog‘ozi — na"
+  },
+  {
+   "id": "C-AS-AMMONIA-CHEMICAL_TEST-01",
+   "corpus": "bundle",
+   "container": "ammonia",
+   "sources": [
+    {
+     "key": "SRC-YULDASHEV-TOKS-2025",
+     "locators": [
+      "pp. 147, 263"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "109f98eeef53f47f",
+   "text": "Nessler reaktivi bilan: ammiak saqlagan dializat yoki biologik materialdan ajratilgan ishqoriy suvli eritmaga Nessler reaktivi qo‘shilsa, diyoddimerkurammoniy yodid cho‘kmasi hosil bo‘ladi (manba bu o‘rinda cho‘kma rangi"
+  },
+  {
+   "id": "C-AS-CHLORPROMAZINE-EXPRESS_TEST-01",
+   "corpus": "bundle",
+   "container": "chlorpromazine",
+   "sources": [
+    {
+     "key": "SRC-YULDASHEV-TOKS-2025",
+     "locators": [
+      "pp. 20, 170"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "91f3a948e9cf5e6e",
+   "text": "Peshobda aminazinni (xlorpromazin) dastlabki aniqlash: 1 ml peshobga 1 ml reaktiv (80 ml 10% H2SO4 va 20 ml 5% FeCl3 aralashmasi) qo‘shilsa, eritma qizil-pushti rangga bo‘yaladi; yoki 1 ml FPN reaktivi (5 ml 5% FeCl3, 45"
+  },
+  {
+   "id": "C-AS-PHENOBARBITAL-EXPRESS_TEST-01",
+   "corpus": "bundle",
+   "container": "phenobarbital",
+   "sources": [
+    {
+     "key": "SRC-YULDASHEV-TOKS-2025",
+     "locators": [
+      "p. 20"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "b8d205022a83b5c7",
+   "text": "Peshobda barbituratlar bilan zaharlanishni taxminiy tekshirish uchun peshobga kobalt atsetati eritmasi ammiak yoki litiy ishqori sharoitida qo‘shilib, ekstraksiya qilinib aniqlanadi (manba bu o‘rinda rangni ko‘rsatmaydi)"
+  },
+  {
+   "id": "C-AS-PENTOBARBITAL-EXPRESS_TEST-01",
+   "corpus": "bundle",
+   "container": "pentobarbital",
+   "sources": [
+    {
+     "key": "SRC-YULDASHEV-TOKS-2025",
+     "locators": [
+      "p. 20"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "b8d205022a83b5c7",
+   "text": "Peshobda barbituratlar bilan zaharlanishni taxminiy tekshirish uchun peshobga kobalt atsetati eritmasi ammiak yoki litiy ishqori sharoitida qo‘shilib, ekstraksiya qilinib aniqlanadi (manba bu o‘rinda rangni ko‘rsatmaydi)"
+  },
+  {
+   "id": "C-AS-SECOBARBITAL-EXPRESS_TEST-01",
+   "corpus": "bundle",
+   "container": "secobarbital",
+   "sources": [
+    {
+     "key": "SRC-YULDASHEV-TOKS-2025",
+     "locators": [
+      "p. 20"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "b8d205022a83b5c7",
+   "text": "Peshobda barbituratlar bilan zaharlanishni taxminiy tekshirish uchun peshobga kobalt atsetati eritmasi ammiak yoki litiy ishqori sharoitida qo‘shilib, ekstraksiya qilinib aniqlanadi (manba bu o‘rinda rangni ko‘rsatmaydi)"
+  },
+  {
+   "id": "C-AS-BUTALBITAL-EXPRESS_TEST-01",
+   "corpus": "bundle",
+   "container": "butalbital",
+   "sources": [
+    {
+     "key": "SRC-YULDASHEV-TOKS-2025",
+     "locators": [
+      "p. 20"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "b8d205022a83b5c7",
+   "text": "Peshobda barbituratlar bilan zaharlanishni taxminiy tekshirish uchun peshobga kobalt atsetati eritmasi ammiak yoki litiy ishqori sharoitida qo‘shilib, ekstraksiya qilinib aniqlanadi (manba bu o‘rinda rangni ko‘rsatmaydi)"
+  },
+  {
+   "id": "C-AS-HYDROGEN-CYANIDE-EXPRESS_TEST-01",
+   "corpus": "bundle",
+   "container": "hydrogen-cyanide",
+   "sources": [
+    {
+     "key": "SRC-YULDASHEV-TOKS-2025",
+     "locators": [
+      "p. 170"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "7e787760c2940d8a",
+   "text": "Ob’ektda sianid kislotasini dastlabki aniqlash: ob’ektning kichik bo‘lagi chinni tavoqchaga solinib, oksalat kislota qo‘shiladi; ustiga ostki tomonida ishqor tomchisi bor buyum oynasi yopilib, bir muddat qoldiriladi. So‘"
+  },
+  {
+   "id": "C-AS-ARSENIC-TRIOXIDE-EXPRESS_TEST-01",
+   "corpus": "bundle",
+   "container": "arsenic-trioxide",
+   "sources": [
+    {
+     "key": "SRC-YULDASHEV-TOKS-2025",
+     "locators": [
+      "p. 170"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "432e9a3b44a56c4b",
+   "text": "Ob’ektdagi chinnisimon oq bo‘lakchalar (oq mishyak, arsenit angidridi) uchun dastlabki sinama: bo‘lakcha pinset bilan ajratilib ingichka shisha probirkaga solinadi, ustiga kichik ko‘mir bo‘lagi qo‘shib kuchsiz alangada q"
+  },
+  {
+   "id": "C-AS-SERTRALINE-ANALYTICAL_METHOD-01",
+   "corpus": "bundle",
+   "container": "sertraline",
+   "sources": [
+    {
+     "key": "SRC-YULDASHEV-TOKS-2025",
+     "locators": [
+      "pp. 141, 257–258"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "paraphrase_not_quoted"
+   ],
+   "reasons": [],
+   "text_sha": "7b8c8c86eb75ff65",
+   "text": "Termodesorbsion sirt-ionlashuv spektroskopiyasi (TDSIS) bilan sertralinni tahlil qilish: O‘zbekiston Fanlar akademiyasi Elektronika instituti xodimlari taklif etgan PII-N-S «Iskovich-1» sirt-ionlashuv indikatoridan foyda"
+  },
+  {
+   "id": "C-AS-BROMAZOLAM-ANALYTICAL_METHOD-01",
+   "corpus": "bundle",
+   "container": "bromazolam",
+   "sources": [
+    {
+     "key": "SRC-PMC13040413",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "PARTIAL",
+   "verdict": "PARTIAL",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "subject_not_named_in_excerpt"
+   ],
+   "reasons": [
+    "excerpt does not name the substance it is attached to"
+   ],
+   "text_sha": "f67499bd41ccde76",
+   "text": "Using validated GC-EI-MS and 1H NMR methods, 47 tablet samples were quantified"
+  },
+  {
+   "id": "C-AS-BROMAZOLAM-PHOTOMETRIC_ASSAY-01",
+   "corpus": "bundle",
+   "container": "bromazolam",
+   "sources": [
+    {
+     "key": "SRC-PMC13211992",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "b382460f701c875c",
+   "text": "This study determined specific absorbance values for bromazolam, etizolam, flualprazolam, and flubromazepam using ultraviolet-visible spectroscopy in an aqueous acidic solution."
+  },
+  {
+   "id": "C-AS-FLUALPRAZOLAM-PHOTOMETRIC_ASSAY-01",
+   "corpus": "bundle",
+   "container": "flualprazolam",
+   "sources": [
+    {
+     "key": "SRC-PMC13211992",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "b382460f701c875c",
+   "text": "This study determined specific absorbance values for bromazolam, etizolam, flualprazolam, and flubromazepam using ultraviolet-visible spectroscopy in an aqueous acidic solution."
+  },
+  {
+   "id": "C-AS-ETIZOLAM-PHOTOMETRIC_ASSAY-01",
+   "corpus": "bundle",
+   "container": "etizolam",
+   "sources": [
+    {
+     "key": "SRC-PMC13211992",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "b382460f701c875c",
+   "text": "This study determined specific absorbance values for bromazolam, etizolam, flualprazolam, and flubromazepam using ultraviolet-visible spectroscopy in an aqueous acidic solution."
+  },
+  {
+   "id": "C-AS-FLUALPRAZOLAM-ANALYTICAL_METHOD-01",
+   "corpus": "bundle",
+   "container": "flualprazolam",
+   "sources": [
+    {
+     "key": "SRC-PMC9715448",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "5d328a195d58abb1",
+   "text": "The standard addition method was employed to quantify flualprazolam in postmortem blood and tissues."
+  },
+  {
+   "id": "C-AS-HYDROCODONE-ANALYTICAL_METHOD-01",
+   "corpus": "bundle",
+   "container": "hydrocodone",
+   "sources": [
+    {
+     "key": "SRC-PMC10300969",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "0624ef5a66812d9e",
+   "text": "We describe an ultra-high-performance liquid chromatography coupled with tandem mass spectrometry method for the simultaneous quantification of methadone, morphine, oxycodone, hydrocodone, oxymorphone, hydromorphone and "
+  },
+  {
+   "id": "C-AS-ETONITAZENE-IMMUNOASSAY_SCREEN-01",
+   "corpus": "bundle",
+   "container": "etonitazene",
+   "sources": [
+    {
+     "key": "SRC-PMC12794522",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "prescriptive"
+   ],
+   "reasons": [],
+   "text_sha": "b2f472dbae7fde66",
+   "text": "In conclusion, Nitazene LFA test strips show potential value as preliminary material-based screening tools in forensic and harm-reduction applications, but should not be interpreted as confirmatory."
+  },
+  {
+   "id": "C-AS-METONITAZENE-IMMUNOASSAY_SCREEN-01",
+   "corpus": "bundle",
+   "container": "metonitazene",
+   "sources": [
+    {
+     "key": "SRC-PMC12794522",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "prescriptive"
+   ],
+   "reasons": [],
+   "text_sha": "b2f472dbae7fde66",
+   "text": "In conclusion, Nitazene LFA test strips show potential value as preliminary material-based screening tools in forensic and harm-reduction applications, but should not be interpreted as confirmatory."
+  },
+  {
+   "id": "C-AS-ISOTONITAZENE-IMMUNOASSAY_SCREEN-01",
+   "corpus": "bundle",
+   "container": "isotonitazene",
+   "sources": [
+    {
+     "key": "SRC-PMC12794522",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "prescriptive"
+   ],
+   "reasons": [],
+   "text_sha": "b2f472dbae7fde66",
+   "text": "In conclusion, Nitazene LFA test strips show potential value as preliminary material-based screening tools in forensic and harm-reduction applications, but should not be interpreted as confirmatory."
+  },
+  {
+   "id": "C-AS-PROTONITAZENE-IMMUNOASSAY_SCREEN-01",
+   "corpus": "bundle",
+   "container": "protonitazene",
+   "sources": [
+    {
+     "key": "SRC-PMC12794522",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "prescriptive"
+   ],
+   "reasons": [],
+   "text_sha": "b2f472dbae7fde66",
+   "text": "In conclusion, Nitazene LFA test strips show potential value as preliminary material-based screening tools in forensic and harm-reduction applications, but should not be interpreted as confirmatory."
+  },
+  {
+   "id": "C-AS-ETONITAZEPYNE-IMMUNOASSAY_SCREEN-01",
+   "corpus": "bundle",
+   "container": "etonitazepyne",
+   "sources": [
+    {
+     "key": "SRC-PMC12794522",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms",
+    "prescriptive"
+   ],
+   "reasons": [],
+   "text_sha": "b2f472dbae7fde66",
+   "text": "In conclusion, Nitazene LFA test strips show potential value as preliminary material-based screening tools in forensic and harm-reduction applications, but should not be interpreted as confirmatory."
+  },
+  {
+   "id": "C-AS-ETONITAZEPYNE-ANALYTICAL_METHOD-01",
+   "corpus": "bundle",
+   "container": "etonitazepyne",
+   "sources": [
+    {
+     "key": "SRC-PMC10444644",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms"
+   ],
+   "reasons": [],
+   "text_sha": "655c782ef3413b70",
+   "text": "In this study, the 13 opioids morphine, oxycodone, codeine, O-desmethyl tramadol, ethylmorphine, tramadol, pethidine, ketobemidone, buprenorphine, fentanyl, cyclopropylfentanyl, etonitazepyne, and methadone were extracte"
+  },
+  {
+   "id": "C-AS-BUPROPION-ANALYTICAL_METHOD-01",
+   "corpus": "bundle",
+   "container": "bupropion",
+   "sources": [
+    {
+     "key": "SRC-PMC11983492",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms"
+   ],
+   "reasons": [],
+   "text_sha": "634e2174ec8907ff",
+   "text": "In this paper, we developed a high-performance liquid chromatography-tandem mass spectrometry (HPLC-MS/MS) method to study simultaneously TDM and clinical pharmacokinetics of 23 antidepressants and active metabolites: se"
+  },
+  {
+   "id": "C-AS-RISPERIDONE-TLC_SYSTEM-01",
+   "corpus": "bundle",
+   "container": "risperidone",
+   "sources": [
+    {
+     "key": "SRC-PMC12905903",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms"
+   ],
+   "reasons": [],
+   "text_sha": "47fb447e34a3ff63",
+   "text": "A mixture of methanol, ethylacetate, and 33% ammonia solution (6: 4: 0.2, by volume) was successfully utilized as a solvent system to separate the proposed components."
+  },
+  {
+   "id": "C-AS-RISPERIDONE-TLC_SYSTEM-02",
+   "corpus": "bundle",
+   "container": "risperidone",
+   "sources": [
+    {
+     "key": "SRC-PMC12905903",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms"
+   ],
+   "reasons": [],
+   "text_sha": "9ea1395db46720c9",
+   "text": "The resulting retardation factors (Rf) were 0.02, 0.32, 0.46 and 0.59 for plasma, DLX, PRP and RSP, respectively."
+  },
+  {
+   "id": "C-AS-RISPERIDONE-ANALYTICAL_METHOD-01",
+   "corpus": "bundle",
+   "container": "risperidone",
+   "sources": [
+    {
+     "key": "SRC-PMC12905903",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "PARTIAL",
+   "verdict": "PARTIAL",
+   "reviewed": false,
+   "flags": [
+    "subject_not_named_in_excerpt"
+   ],
+   "reasons": [
+    "excerpt does not name the substance it is attached to"
+   ],
+   "text_sha": "e350a6c12ff1de90",
+   "text": "This research targets to develop an environmentally harmonious, selective, and accurate TLC method to measure the levels of both DLX and RSP in spiked human plasma samples."
+  },
+  {
+   "id": "C-AS-JWH-018-ANALYTICAL_METHOD-01",
+   "corpus": "bundle",
+   "container": "jwh-018",
+   "sources": [
+    {
+     "key": "SRC-PMC11541396",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms"
+   ],
+   "reasons": [],
+   "text_sha": "956448d19fe9ed6c",
+   "text": "In this work, we propose a novel methodology to screen eight SCs (AM-694, cumyl-5F-PINACA, MAM-2201, 5F-UR-144, JWH-018, JWH-122, UR-144 and APINACA) in oral fluids."
+  },
+  {
+   "id": "C-AS-FURANYLFENTANYL-ANALYTICAL_METHOD-01",
+   "corpus": "bundle",
+   "container": "furanylfentanyl",
+   "sources": [
+    {
+     "key": "SRC-PMC6314982",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "efcf56fd93bf9569",
+   "text": "A GC-MS method was developed and fully validated for the determination of furanylfentanyl and ocfentanil in whole blood."
+  },
+  {
+   "id": "C-AS-FURANYLFENTANYL-SAMPLE_PREPARATION-01",
+   "corpus": "bundle",
+   "container": "furanylfentanyl",
+   "sources": [
+    {
+     "key": "SRC-PMC6314982",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "12928922e0e8d177",
+   "text": "The method included solid-phase extraction after protein precipitation using acetonitrile, and it was applied during the toxicological investigation of forensic cases."
+  },
+  {
+   "id": "C-AS-FURANYLFENTANYL-ANALYTICAL_METHOD-02",
+   "corpus": "bundle",
+   "container": "furanylfentanyl",
+   "sources": [
+    {
+     "key": "SRC-PMC6314982",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms"
+   ],
+   "reasons": [],
+   "text_sha": "6a27055bd05178ce",
+   "text": "The limit of detection and limit of quantification values were 0.30 and 1.0 ng/mL for furanylfentanyl and ocfentanil and 0.15 and 0.50 ng/mL for acetylfentanyl and butyrfentanyl, respectively."
+  },
+  {
+   "id": "C-AS-ACETYLFENTANYL-ANALYTICAL_METHOD-02",
+   "corpus": "bundle",
+   "container": "acetylfentanyl",
+   "sources": [
+    {
+     "key": "SRC-PMC6314982",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "f2b6c3d29a851b4d",
+   "text": "This method was also suitable for the determination of acetylfentanyl and butyrfentanyl."
+  },
+  {
+   "id": "C-AS-ACETYLFENTANYL-ANALYTICAL_METHOD-03",
+   "corpus": "bundle",
+   "container": "acetylfentanyl",
+   "sources": [
+    {
+     "key": "SRC-PMC6314982",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms"
+   ],
+   "reasons": [],
+   "text_sha": "6a27055bd05178ce",
+   "text": "The limit of detection and limit of quantification values were 0.30 and 1.0 ng/mL for furanylfentanyl and ocfentanil and 0.15 and 0.50 ng/mL for acetylfentanyl and butyrfentanyl, respectively."
+  },
+  {
+   "id": "C-AS-ACETYLFENTANYL-ANALYTICAL_METHOD-04",
+   "corpus": "bundle",
+   "container": "acetylfentanyl",
+   "sources": [
+    {
+     "key": "SRC-PMC5754386",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "PARTIAL",
+   "verdict": "PARTIAL",
+   "reviewed": false,
+   "flags": [
+    "subject_not_named_in_excerpt"
+   ],
+   "reasons": [
+    "excerpt does not name the substance it is attached to"
+   ],
+   "text_sha": "5b75fdabbdb44196",
+   "text": "We have thus established a detailed procedure for quantification of mepirapim and acetyl fentanyl in whole blood and urine specimens using gas chromatography (GC)-tandem mass spectrometry (MS/MS)."
+  },
+  {
+   "id": "C-AS-COLCHICINE-ANALYTICAL_METHOD-01",
+   "corpus": "bundle",
+   "container": "colchicine",
+   "sources": [
+    {
+     "key": "SRC-PMC12457077",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "ce403929b6d4d51a",
+   "text": "The present study introduces an LC-MS/MS method for quantifying colchicine in human plasma."
+  },
+  {
+   "id": "C-AS-MERCURY-ANALYTICAL_METHOD-02",
+   "corpus": "bundle",
+   "container": "mercury",
+   "sources": [
+    {
+     "key": "SRC-PMC13024865",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "2cc5d0180fa087f1",
+   "text": "Hyphenated techniques such as HPLC-ICP-MS and GC-ICP-MS have enabled significant advancements in mercury speciation analysis."
+  },
+  {
+   "id": "C-AS-GHB-ANALYTICAL_METHOD-01",
+   "corpus": "bundle",
+   "container": "ghb",
+   "sources": [
+    {
+     "key": "SRC-PMC12944385",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms"
+   ],
+   "reasons": [],
+   "text_sha": "7ee02af9d20c2818",
+   "text": "In PB at +4 °C, alcohols were measured by HS-GC/FID, drugs and narcotics by LC-HRMS, GHB by GC-MS and cannabinoids by LC-MS/MS."
+  },
+  {
+   "id": "C-AS-GHB-ANALYTICAL_METHOD-02",
+   "corpus": "bundle",
+   "container": "ghb",
+   "sources": [
+    {
+     "key": "SRC-PMC12567942",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "2102f499246037b8",
+   "text": "A systematic search of scientific databases was conducted to identify studies investigating GHB metabolites, conjugates, and related biochemical markers using advanced analytical techniques such as LC-MS/MS and GC-MS."
+  },
+  {
+   "id": "C-AS-TRAMADOL-IMMUNOASSAY_SCREEN-01",
+   "corpus": "bundle",
+   "container": "tramadol",
+   "sources": [
+    {
+     "key": "SRC-PMC12842606",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms"
+   ],
+   "reasons": [],
+   "text_sha": "06d5414d4d1dc1cc",
+   "text": "This study evaluated the performance of the Immunalysis Tapentadol 343 Urine Enzyme Immunoassay (EIA) screening kit, focusing on the prevalence of false-positive results due to cross-reactivity with tramadol."
+  },
+  {
+   "id": "C-AS-TRAMADOL-IMMUNOASSAY_SCREEN-02",
+   "corpus": "bundle",
+   "container": "tramadol",
+   "sources": [
+    {
+     "key": "SRC-PMC9836806",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "279c976e19770c49",
+   "text": "We recommend caution when interpreting positive tramadol urine screening among patients on fexofenadine treatment."
+  },
+  {
+   "id": "C-AS-PARACETAMOL-IMMUNOASSAY_SCREEN-01",
+   "corpus": "bundle",
+   "container": "paracetamol",
+   "sources": [
+    {
+     "key": "SRC-PMC12980178",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "3940ecda3d1b569b",
+   "text": "This work addresses the detection and quantification of paracetamol (PAR) in human serum using a point-of-care approach, an essential assessment for intoxication cases in clinical analysis."
+  },
+  {
+   "id": "C-AS-ZOPICLONE-IMMUNOASSAY_SCREEN-01",
+   "corpus": "bundle",
+   "container": "zopiclone",
+   "sources": [
+    {
+     "key": "SRC-PMC11591615",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "ea38cd06b9072776",
+   "text": "This study proposes a portable and IoT-based electrochemical point-of-care sensing device for detecting zopiclone in cocktails."
+  },
+  {
+   "id": "C-AS-LEVAMISOLE-IMMUNOASSAY_SCREEN-01",
+   "corpus": "bundle",
+   "container": "levamisole",
+   "sources": [
+    {
+     "key": "SRC-PMC12866554",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms"
+   ],
+   "reasons": [],
+   "text_sha": "9c11dc07e4730f85",
+   "text": "The veterinary sedative detomidine HCl caused false positives on all the strips at concentrations down to 0.07 mg/mL, and levamisole gave faint test lines (which can be misread as false positives) for almost all the stri"
+  },
+  {
+   "id": "C-AS-OXYCODONE-IMMUNOASSAY_SCREEN-01",
+   "corpus": "bundle",
+   "container": "oxycodone",
+   "sources": [
+    {
+     "key": "SRC-PMC13335650",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms"
+   ],
+   "reasons": [],
+   "text_sha": "a3272845fd949e4a",
+   "text": "The performance of the SAMElife™ rapid hair screening kit was evaluated for the detection of drugs of abuse in 31 anonymized hair samples, encompassing 217 analyses for morphine, cocaine, amphetamines, buprenorphine, oxy"
+  },
+  {
+   "id": "C-AS-BUPRENORPHINE-IMMUNOASSAY_SCREEN-01",
+   "corpus": "bundle",
+   "container": "buprenorphine",
+   "sources": [
+    {
+     "key": "SRC-PMC13335650",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms"
+   ],
+   "reasons": [],
+   "text_sha": "a3272845fd949e4a",
+   "text": "The performance of the SAMElife™ rapid hair screening kit was evaluated for the detection of drugs of abuse in 31 anonymized hair samples, encompassing 217 analyses for morphine, cocaine, amphetamines, buprenorphine, oxy"
   }
  ]
 }

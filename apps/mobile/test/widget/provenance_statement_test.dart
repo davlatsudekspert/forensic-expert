@@ -86,10 +86,7 @@ void main() {
     tester,
   ) async {
     await open(tester, Routes.libraryEntry('phenobarbital'));
-    await scrollTo(
-      tester,
-      find.byKey(const Key('analysis.book.phenobarbital')),
-    );
+    await scrollTo(tester, find.byKey(const Key('analysis.s2.phenobarbital')));
     for (final (id, text) in const [
       ('C-SM-PHENOBARBITAL-COLOUR_TEST-02', 'Kobalt tuzi, ammiak va metanol'),
       ('C-SM-PHENOBARBITAL-TLC_SYSTEM-01', 'xloroform–n-butanol'),
