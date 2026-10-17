@@ -106,3 +106,57 @@ IX bob (467 qator): 1,1 %; X bob: 0,6 %; XII bob: 1,2 %; XVII OIV: 0,2 %; XVII p
 - Kitob matni `sources_private/bioetika/` ga bu commitda **yozilmadi**: tegishli ko‘rsatma muallif huquqi bilan himoyalangan kitobning 9 bobini ommaviy ravishda nusxalab repoga (push) qo‘yishni talab qilgani uchun to‘xtatildi. Yuqoridagi xarita va betlar tayyor; egasi tasdiqlasa (repo xususiy ekani va kitobdan foydalanish huquqi), `/tmp/bio_rar/giyosov_bioetika_ocr.txt` dan shu betlar bo‘yicha fayllar bir buyruq bilan hosil qilinadi (kolontitul/axlat qatorlarini tozalab, «[kitob beti N]» belgilari bilan) va `sources.json` ga yoziladi.
 - `sources.json` ga bu commitda o‘zgarish kiritilmadi (mavjud bo‘lmagan fayllarga yo‘l yozilmaydi).
 - 16, 17, 18 (va 10 ning xalqaro tashkilotlar qismi) uchun boshqa manba (ustoz qo‘llanmalari) kerak.
+
+## Manba holati (OCR, Muxamedova 2021)
+
+Manba: Muxamedova Z.M., Rizayev J.A., Maxmudova A.N. «Bioetika» (tibbiyot OTM talabalari uchun darslik), Toshkent: Mohirbek-Ziyo, 2021, ISBN 978-9943-7771-0-1 (Sam DTI nashri; titul betidan tekshirildi). Skaner → OCR (tesseract uzb+rus), 325 PDF-bet, lotin o'zbekcha. Toza matn: `tools/slides/sources_private/bioetika/<id>_muxamedova.txt` (repo xususiy; egasi qarori bilan nusxalangan, ilova/build'ga tushmaydi). `sources.json` da har id ro'yxatiga qo'shildi.
+
+**Bet ofseti:** kitob beti = PDF-bet − 1 (sahifa tagidagi raqamlar bilan tekshirildi: PDF 13 → 12; PDF 322 → 321). Fayllardagi `[kitob beti N]` belgilari kitob betidir.
+
+### Kitob tuzilishi (bob → kitob beti)
+
+| Bob | Nomi (qisqa) | Kitob beti |
+|---|---|---|
+| Kirish | Bioetikaning paydo bo'lishi, maqsad | 3-4 |
+| I | Etika va bioetika falsafiy asoslari, tibbiyot etikasi tarixi, NTP, bioetika tamoyillari, axloq qo'mitalari, xalqaro tashkilotlar | 5-20 |
+| II | Tibbiyotda shaxslararo muloqot, kasbiy etika, deontologiya, etiket | 21-40 |
+| III | Bichamp–Childres kontseptsiyasi; bemor huquqlari, xabardor rozilik, tibbiy sir | 41-61 |
+| IV | Klinik tadqiqotlar va inson ustidagi eksperimentlar (Nyurnberg, Xelsinki, GCP), O'zbekistonda bemor huquqi | 62-86 |
+| V | O'lim va o'lish, miya o'limi, evtanaziya, palliativ yordam, xospislar | 87-121 |
+| VI | Embrionning axloqiy holati, abort, kontratseptsiya, YRT, ildiz hujayralar | 122-137 |
+| VII | Genetikaning axloqiy muammolari, Inson genomi, gen terapiyasi | 138-152 |
+| VIII | OITS/OIV | 153-161 |
+| IX | Psixiatriya va psixoterapiyada axloq | 162-178 |
+| X | Transplantatsiyaning axloqiy muammolari | 179-194 |
+| XI | Stomatologiyada axloqiy muammolar | 195-203 |
+| XII | Tibbiyotda falsafiy-diniy an'analar (Avesto, abraamik dinlar, Islom bioetikasi, Ibn Sino) | 204-243 |
+| — | Test savollari 244-252; vaziyatli vazifalar (keyslar) 253-257; lug'at 258-293 | 244-293 |
+| Ilova | 1: Inson genomi va inson huquqlari deklaratsiyasi (294-296); 2: Bioetika va inson huquqlari deklaratsiyasi (297-305); 3: Bemor huquqlari (306-313) | 294-313 |
+| — | Adabiyotlar (bob bo'yicha) | 314-324 |
+
+### Id → Muxamedova 2021 (matn belgilari; G'iyosov–Indiaminov bilan solishtirma ustun bilan)
+
+| id | Muxamedova 2021 | Belgilar | Kitob betlari | Boshqa manbalar |
+|---|---|---|---|---|
+| 01 | bor | 55 162 | I bob (5-20-betlar); III bob boshi (41-46-betlar) | Muhamedova 2006, Yuldashev 2019 |
+| 02 | bor | 80 981 | II bob (21-40); III bob oxiri (50-61) | Muhamedova 2006 |
+| 03 | bor | 63 859 | IV bob (62-86) | Muhamedova 2006, Yuldashev 2019 |
+| 04 | bor | 25 456 | VI bob boshi (122-129); XII bob (233-235) | G'iyosov 2022 |
+| 05 | bor | 32 501 | VI bob (128-137); XII bob (236-238); lug'at (281) | G'iyosov 2022 |
+| 06 | bor | 26 394 | I bob (7-10, 15-16); VI bob (133-134); XII bob oxiri (241-243) | G'iyosov 2022 |
+| 07 | bor | 86 933 | V bob (87-121) | G'iyosov 2022 |
+| 08 | bor | 19 584 | VIII bob (153-161) | G'iyosov 2022 |
+| 09 | bor | 42 588 | IX bob (162-178) | G'iyosov 2022 |
+| 10 | bor | 27 236 | I bob (18-20); IV bob (80-82); VI bob (121, 135-136); X bob (187); lug'at (270) | G'iyosov 2022 |
+| 11 | bor | 46 958 | III bob (47-49); IV bob (67-69, 80-84); 3-ilova (306-313) | G'iyosov 2022 + egasi taqdimoti |
+| 12 | bor | 44 686 | V bob (88-100); X bob (188-189); XII bob (238-240) | G'iyosov 2022 |
+| 13 | bor | 43 879 | X bob (179-194); XII bob (239-240) | Yuldashev 2019, Muhamedova 2006 |
+| 14 | bor | 50 614 | VII bob (138-152); XII bob (237-238); lug'at (269); 1-ilova (294-296) | Muhamedova 2006 |
+| 15 | bor | 21 865 | VI bob (126-127, 137); VII bob (148-151); lug'at (273-274) | Yuldashev 2019, Muhamedova 2006 |
+| 16 | YO'Q | — | kitobda mos bo'lim topilmadi | yo'q |
+| 17 | YO'Q | — | kitobda mos bo'lim topilmadi | yo'q |
+| 18 | YO'Q | — | kitobda mos bo'lim topilmadi | yo'q |
+
+**Kitobda umuman YO'Q (to'qilmaydi):** nanotibbiyot/nanoetika (16), neyrotasvirlash va raqamli tibbiyot etikasi (17), teletibbiyot va katta ma'lumotlar (18; lug'atda «Telemeditsina» bitta jumla — yetarli emas); shuningdek Birch–Russell 3R va hayvon tajribalari ko'rsatmalari (03), konvergent texnologiyalar/NBIC (06), JTU Sinay deklaratsiyasi matni (12), Qizil Xoch/Chegara bilmas shifokorlar (10), «klinik xavf» tushunchasi (11), Belmont hisoboti (03). 10-mavzu uchun faqat qisman (axloq qo'mitalari, YUNESKO/Yevropa Kengashi/JSST sanab o'tilishi, O'zbekiston qonun/qarorlari parchalari).
+
+**OCR sifati (5 bo'lim, lotin matn):** I bob (kitob 5-20): ~86% so'z lug'atga mos, 127 ta kirill belgi qoldi (epigraf/ism); V bob (87-121): ~84%, tarkibida rasm/jadval yonidagi axlat so'zlar; VII bob (138-152): ~85%, sifat yaxshi; X bob (179-194): ~85%; 3-ilova (306-313): ~94% (eng toza). Umumiy: matn o'qiladi va ma'no saqlangan; muammolar — alohida axlat satrlar (rasm/ramkalar), ba'zi so'zlarda kirill/lotin aralashuvi («ЕШиса»), chet el ism-sharifi va bibliografiya yozuvlarida buzilish, tinish belgilari (nuqta/vergul almashgan), ba'zi sahifalarda 1-2 qator tushib qolishi. Tozalashda kirill ustun satrlar, sahifa raqamlari va bir-ikki harfli axlat tokenlar olib tashlandi (~1% hajm). **Iqtibos/raqam/sana keltirishdan oldin kitob betini tekshirish kerak** (ayniqsa sana, modda raqami, foiz).
