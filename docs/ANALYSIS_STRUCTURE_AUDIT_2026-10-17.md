@@ -294,5 +294,4 @@ LOD/LOQ, iyon/RT) faqat yuqorida sanalgan ~15 modda uchun, manbada bor bo‘lgan
   (validator, 0 ogohlantirish); vidjet testlari haqiqiy pilot paketda (390 va 320 dp), o‘zbek va rus tilida.
 - **Bajarilmagan:** haqiqiy telefonda (iOS/Android) STUDENT va EXPERT rollarida qo‘lda sinov; internet o‘chganda xatti-harakat;
   haqiqiy backend. Bu ish davomida ilova qurilmada ishga tushirilmadi — «sinadim» deb yozilmaydi.
-- Ma’lum cheklov: ABY olib tashlanayotgan `claude/remove-aby` bilan `substance_analysis_section.dart` da birlashtirish
-  konflikti bo‘lishi mumkin (ABY bloki o‘z holicha qoldirilgan, atrofi qayta tuzilgan).
+- Branch `claude/phase-8-12-final-release` (ABY ilovadan olib tashlangan) ustiga rebase qilindi; ABY bloki kodi tabdan olib tashlandi, to‘liq suite (~2900 test) o‘tdi.

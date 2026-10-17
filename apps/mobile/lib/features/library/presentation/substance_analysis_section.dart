@@ -1,4 +1,3 @@
-import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
