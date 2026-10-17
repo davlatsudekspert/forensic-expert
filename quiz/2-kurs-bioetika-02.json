@@ -1,0 +1,1386 @@
+{
+  "topic_id": "2-kurs-bioetika-02",
+  "source_lang": "uz",
+  "title_i18n": {
+    "uz": "Tibbiy bioetikaning oldingi modellardan farqi: bioetika ijtimoiy institut sifatida, tibbiyot xodimi va jamiyat, yatrogen kasalliklar, xodim–bemor munosabat qoidalari, xodimlar huquqlari, Jeneva deklaratsiyasi, Xalqaro tibbiy etika kodeksi (M2)",
+    "ru": "Отличие медицинской биоэтики от прежних моделей: биоэтика как социальный институт, медицинский работник и общество, ятрогенные заболевания, правила взаимоотношений работник–пациент, права работников, Женевская декларация, Международный кодекс медицинской этики (M2)",
+    "en": "How medical bioethics differs from earlier models: bioethics as a social institution, the medical worker and society, iatrogenic diseases, rules of worker–patient relations, workers' rights, the Declaration of Geneva, the International Code of Medical Ethics (M2)"
+  },
+  "translation_status": {
+    "uz": "source",
+    "ru": "auto_unreviewed",
+    "en": "auto_unreviewed"
+  },
+  "questions": [
+    {
+      "id": "2-kurs-bioetika-02-q01",
+      "question_i18n": {
+        "uz": "Tibbiyot etikasi shifokorning majburiyatlarini ifodalaydi. Bioetikaning asosiy tamoyillari esa asosan nimani ta’riflashda ifodalanadi?",
+        "ru": "Медицинская этика выражает обязанности врача. А основные принципы биоэтики в основном выражаются при определении чего?",
+        "en": "Medical ethics expresses the obligations of the physician. What do the basic principles of bioethics mainly serve to define?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Shifokor sirini saqlash majburiyatini ta’riflashda",
+          "Shifokorlar o‘rtasidagi kasbiy hamjihatlik qoidalarini belgilashda",
+          "Bemorning huquqlarini ta’riflashda",
+          "Sog‘liqni saqlash tashkilotlarining ichki tartib-qoidalarini belgilashda"
+        ],
+        "ru": [
+          "При определении обязанности хранить врачебную тайну",
+          "При установлении правил профессиональной солидарности между врачами",
+          "При определении прав пациента",
+          "При установлении внутреннего распорядка организаций здравоохранения"
+        ],
+        "en": [
+          "Defining the obligation to keep physician-patient confidentiality",
+          "Establishing rules of professional solidarity among physicians",
+          "Defining the rights of the patient",
+          "Establishing the internal rules and procedures of healthcare organizations"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Tibbiyot etikasida asosiy tamoyillar shifokor burchlari orqali beriladi. Bioetikada esa markazda bemor huquqlari turadi: ma’lumot olish, qarorda ishtirok etish, erkin tanlash. Boshqa variantlar an’anaviy tibbiyot etikasi va deontologiyaga xos.",
+        "ru": "В медицинской этике основные принципы задаются через обязанности врача. В биоэтике же в центре стоят права пациента: получение информации, участие в принятии решения, свободный выбор. Остальные варианты характерны для традиционной медицинской этики и деонтологии.",
+        "en": "In medical ethics, the basic principles are presented through the physician's duties. In bioethics, the patient's rights are central: receiving information, taking part in decisions, and free choice. The other options are characteristic of traditional medical ethics and deontology."
+      },
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "I bob, 1.4"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q02",
+      "question_i18n": {
+        "uz": "Jahon tibbiyot uyushmasining Jeneva deklaratsiyasi (2006-yilgi tahrir) matniga ko‘ra, shifokorga ishonib topshirilgan sirlarni hurmat qilish majburiyati qachongacha amal qiladi?",
+        "ru": "Согласно тексту Женевской декларации Всемирной медицинской ассоциации (редакция 2006 года), до какого момента действует обязанность уважать тайны, доверенные врачу?",
+        "en": "According to the text of the Declaration of Geneva of the World Medical Association (2006 revision), until when does the obligation to respect the secrets entrusted to the physician remain in force?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Bemor vafot etganidan keyin ham davom etadi",
+          "Faqat bemor davolanayotgan davrda amal qiladi",
+          "Davolanish tugagach, bemorning yaqinlari ruxsat berguncha amal qiladi",
+          "Shifokor ish joyini almashtirgunga qadar amal qiladi"
+        ],
+        "ru": [
+          "Продолжает действовать и после смерти пациента",
+          "Действует только в период лечения пациента",
+          "После завершения лечения действует до тех пор, пока родственники пациента не дадут разрешение",
+          "Действует до тех пор, пока врач не сменит место работы"
+        ],
+        "en": [
+          "It continues even after the patient's death",
+          "It applies only during the period of the patient's treatment",
+          "After treatment ends, it applies until the patient's relatives give permission",
+          "It applies until the physician changes workplace"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Deklaratsiyada shifokor ishonib topshirilgan sirlarni bemor vafotidan keyin ham hurmat qilishi aytilgan. Boshqa variantlar sir saqlash majburiyatini vaqt yoki shart bilan cheklaydi, deklaratsiyada esa bunday cheklov yo‘q.",
+        "ru": "В декларации сказано, что врач должен уважать доверенные ему тайны и после смерти пациента. Остальные варианты ограничивают обязанность хранить тайну временем или условием, а в декларации такого ограничения нет.",
+        "en": "The Declaration states that the physician must respect the secrets entrusted to him even after the patient's death. The other options limit the obligation of confidentiality by time or condition, whereas the Declaration contains no such limitation."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "13"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q03",
+      "question_i18n": {
+        "uz": "Jahon tibbiyot uyushmasining qaysi deklaratsiyasi (1964-yil) odamlar ustida tajriba o‘tkazish va klinik sinovlar masalasiga bag‘ishlangan?",
+        "ru": "Какая декларация Всемирной медицинской ассоциации (1964 год) посвящена вопросам проведения экспериментов на людях и клинических испытаний?",
+        "en": "Which declaration of the World Medical Association (1964) is devoted to experimentation on humans and clinical trials?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Tokio deklaratsiyasi",
+          "Lissabon deklaratsiyasi",
+          "Venetsiya deklaratsiyasi",
+          "Xelsinki deklaratsiyasi"
+        ],
+        "ru": [
+          "Токийская декларация",
+          "Лиссабонская декларация",
+          "Венецианская декларация",
+          "Хельсинкская декларация"
+        ],
+        "en": [
+          "Declaration of Tokyo",
+          "Declaration of Lisbon",
+          "Declaration of Venice",
+          "Declaration of Helsinki"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Xelsinki deklaratsiyasi odamlarda tajriba va klinik sinovlarni tartibga soladi. Tokio deklaratsiyasi qiynoqlarga, Lissabon bemor huquqlariga, Venetsiya terminal bosqichdagi kasalliklarga bag‘ishlangan.",
+        "ru": "Хельсинкская декларация регулирует эксперименты на людях и клинические испытания. Токийская декларация посвящена пыткам, Лиссабонская — правам пациента, Венецианская — заболеваниям в терминальной стадии.",
+        "en": "The Declaration of Helsinki regulates experimentation on humans and clinical trials. The Declaration of Tokyo is devoted to torture, Lisbon to patient rights, and Venice to terminal illness."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "14"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q04",
+      "question_i18n": {
+        "uz": "Bemor kasallik tarixidagi «sigma va mezokolon» yozuvini o‘qib, bu davosiz kasallik nomlari deb o‘yladi va o‘z joniga qasd qildi. Manbada bu holat qaysi hodisaga misol sifatida keltirilgan?",
+        "ru": "Пациент, прочитав в истории болезни запись «сигма и мезоколон», решил, что это названия неизлечимых болезней, и покончил с собой. Примером какого явления это приведено в источнике?",
+        "en": "A patient read the entry \"sigma and mesocolon\" in his medical history, thought these were the names of incurable diseases, and committed suicide. According to the source, this case is given as an example of which phenomenon?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Tibbiy sirning oshkor etilishiga",
+          "Tibbiy yozuvlarni noto‘g‘ri talqin qilish tufayli yuzaga kelgan yatrogeniyaga",
+          "Bemorning axborot olishdan voz kechish huquqidan foydalanishiga",
+          "Shifokorning bemorni atayin chalg‘itishiga"
+        ],
+        "ru": [
+          "Разглашения врачебной тайны",
+          "Ятрогении, возникшей из-за неправильного истолкования медицинских записей",
+          "Реализации пациентом права отказаться от получения информации",
+          "Умышленного введения пациента в заблуждение врачом"
+        ],
+        "en": [
+          "Disclosure of medical confidentiality",
+          "Iatrogenesis caused by misinterpretation of medical records",
+          "The patient's exercise of the right to refuse information",
+          "The physician's deliberate misleading of the patient"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Tibbiy ma’lumotga ega bo‘lmagan odam hujjatdagi atamalarni noto‘g‘ri tushunib, yatrogeniya shakllanishi mumkin. Bunda sir oshkor bo‘lmagan, bemor axborotdan voz kechmagan va shifokor chalg‘itmagan: zararga yozuvning noto‘g‘ri tushunilishi sabab bo‘lgan.",
+        "ru": "Человек без медицинских знаний может неправильно понять термины в документе, и в результате может сформироваться ятрогения. При этом тайна не была разглашена, пациент не отказывался от информации, а врач не вводил в заблуждение: вред стал следствием неправильного понимания записи.",
+        "en": "A person without medical knowledge may misunderstand the terms in a document, and iatrogenesis may result. In this case, confidentiality was not breached, the patient did not refuse information, and the physician did not mislead: the harm was caused by the misunderstanding of the record."
+      },
+      "source": {
+        "author": "Muxamedova Z.M.",
+        "title": "Bioetika (darslik), Toshkent",
+        "page": "51"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q05",
+      "question_i18n": {
+        "uz": "Jahon tibbiyot uyushmasining Xalqaro tibbiy etika kodeksiga ko‘ra, shifokor shoshilinch yordam ko‘rsatishdan qaysi holatda o‘zini tiya oladi?",
+        "ru": "Согласно Международному кодексу медицинской этики Всемирной медицинской ассоциации, в каком случае врач может воздержаться от оказания неотложной помощи?",
+        "en": "According to the International Code of Medical Ethics of the World Medical Association, in which situation may a physician refrain from providing emergency care?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Bemor yordam uchun to‘lov qila olmasa",
+          "Navbatchilik vaqti tugagan bo‘lsa",
+          "Boshqalar bunday yordamni ko‘rsatishga tayyor va qodir ekaniga ishonch hosil qilsa",
+          "Bemorning kasalligi shifokor mutaxassisligiga to‘g‘ri kelmasa"
+        ],
+        "ru": [
+          "Если пациент не может оплатить помощь",
+          "Если закончилось время дежурства",
+          "Если он убедился, что другие готовы и способны оказать такую помощь",
+          "Если заболевание пациента не соответствует специальности врача"
+        ],
+        "en": [
+          "If the patient cannot pay for the care",
+          "If the duty hours have ended",
+          "If he is assured that others are willing and able to provide such care",
+          "If the patient's illness does not fall within the physician's specialty"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Kodeksda shoshilinch yordam insonparvarlik burchi deb belgilangan. Istisno faqat boshqalar uni ko‘rsatishga tayyor va qodir ekani aniq bo‘lgandagina mumkin. To‘lov, ish vaqti yoki mutaxassislik bunday asos emas.",
+        "ru": "В кодексе оказание неотложной помощи определено как гуманитарный долг. Исключение возможно лишь тогда, когда точно известно, что другие готовы и способны её оказать. Оплата, рабочее время или специальность не являются таким основанием.",
+        "en": "The Code defines emergency care as a humanitarian duty. An exception is possible only when it is certain that others are willing and able to provide it. Payment, working hours, or specialty are not such grounds."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "14"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q06",
+      "question_i18n": {
+        "uz": "Tibbiyot va jamiyat o‘zaro ta’siriga oid matnga ko‘ra, jamoatchilik bosimi ostida shifokorlar XX asrda nimaga alohida e’tibor bera boshladi?",
+        "ru": "Согласно тексту о взаимодействии медицины и общества, чему врачи под давлением общественности начали уделять особое внимание в XX веке?",
+        "en": "According to the text on the interaction of medicine and society, what did physicians begin to pay special attention to in the XX century under public pressure?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Davolash xizmatlari narxini davlat tomonidan belgilashga",
+          "Bemorlarni uyda davolashga o‘tkazishga",
+          "Klonlash tajribalarini butunlay to‘xtatishga",
+          "Yangi dori vositalarini tibbiy amaliyotga joriy etishga"
+        ],
+        "ru": [
+          "Государственному установлению стоимости лечебных услуг",
+          "Переводу пациентов на лечение на дому",
+          "Полному прекращению экспериментов по клонированию",
+          "Внедрению новых лекарственных средств в медицинскую практику"
+        ],
+        "en": [
+          "State regulation of the price of treatment services",
+          "Transferring patients to home treatment",
+          "Completely stopping cloning experiments",
+          "Introducing new drugs into medical practice"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Matnda aytilishicha, jamoatchilik bosimi tufayli yangi dori vositalarini amaliyotga joriy etishga ehtiyotkorlik bilan yondashila boshlandi va natijada «dalillar tibbiyoti» tamoyillari shakllandi. Boshqa variantlar matnda bunday asos sifatida keltirilmagan.",
+        "ru": "В тексте говорится, что под давлением общественности к внедрению новых лекарственных средств в практику стали подходить осторожно, и в результате сформировались принципы «доказательной медицины». Остальные варианты в тексте в качестве такого основания не приводятся.",
+        "en": "The text states that, owing to public pressure, a cautious approach to introducing new drugs into practice began, and as a result the principles of \"evidence-based medicine\" took shape. The other options are not given in the text as such a basis."
+      },
+      "source": {
+        "author": "Muxamedova Z.M.",
+        "title": "Bioetika (darslik), Toshkent",
+        "page": "31"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q07",
+      "question_i18n": {
+        "uz": "Muhamedova ga ko‘ra, Gippokrat qasamyodida bayon etish izchilligi va ma’nosiga ko‘ra birinchi o‘ringa nima qo‘yilgan?",
+        "ru": "По Мухамедовой, что поставлено на первое место по последовательности изложения и смыслу в клятве Гиппократа?",
+        "en": "According to Muhamedova, what is placed first in the Hippocratic Oath in terms of sequence and meaning of presentation?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Bemorga har qanday zarar yetkazishdan o‘zini tiyish majburiyati",
+          "Shifokor sirini saqlash va uni oshkor qilmaslik majburiyati",
+          "Kasbni egallayotgan shaxsning o‘z ustozi oldidagi burchlari",
+          "Kuch va bilimga qarab bemorlarga foyda keltirishga intilish"
+        ],
+        "ru": [
+          "Обязанность воздерживаться от причинения пациенту любого вреда",
+          "Обязанность хранить врачебную тайну и не разглашать её",
+          "Обязанности овладевающего профессией перед своим учителем",
+          "Стремление приносить пользу пациентам в меру сил и знаний"
+        ],
+        "en": [
+          "The obligation to refrain from causing any harm to the patient",
+          "The obligation to keep the physician's secret and not to disclose it",
+          "The duties of the person entering the profession toward his teacher",
+          "The aspiration to benefit patients according to one's strength and knowledge"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Qo‘llanmada «zarar yetkazma» qoidasini qasamyodning mohiyati deb bo‘lmasligi aytilgan, chunki matnda birinchi o‘ringa ustoz oldidagi burchlar qo‘yilgan. Boshqa variantlar qasamyodda bor, lekin birinchi o‘rinda emas.",
+        "ru": "В пособии сказано, что правило «не навреди» нельзя считать сутью клятвы, поскольку в тексте на первое место поставлены обязанности перед учителем. Остальные варианты в клятве есть, но не на первом месте.",
+        "en": "The manual states that the \"do no harm\" rule cannot be considered the essence of the oath, because in the text the duties toward the teacher are placed first. The other options are present in the oath, but not in first place."
+      },
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "I bob, 1.4-bo‘lim"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q08",
+      "question_i18n": {
+        "uz": "Jahon tibbiyot uyushmasining 1981-yilgi Lissabon deklaratsiyasi qaysi masalaga bag‘ishlangan?",
+        "ru": "Какому вопросу посвящена Лиссабонская декларация Всемирной медицинской ассоциации 1981 года?",
+        "en": "What issue is the 1981 Declaration of Lisbon of the World Medical Association devoted to?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Bemorning huquqlari",
+          "Terminal bosqichdagi kasalliklar",
+          "Terapevtik abort masalasi",
+          "Qiynoq va shafqatsiz muomala"
+        ],
+        "ru": [
+          "Правам пациента",
+          "Заболеваниям в терминальной стадии",
+          "Вопросу терапевтического аборта",
+          "Пыткам и жестокому обращению"
+        ],
+        "en": [
+          "The rights of the patient",
+          "Terminal illness",
+          "The issue of therapeutic abortion",
+          "Torture and cruel treatment"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Jadvalga ko‘ra Lissabon deklaratsiyasi bemor huquqlariga tegishli. Terminal kasallik Venetsiya deklaratsiyasi, terapevtik abort Oslo deklaratsiyasi, qiynoqlar esa Tokio deklaratsiyasi mavzusi.",
+        "ru": "Согласно таблице, Лиссабонская декларация относится к правам пациента. Терминальные заболевания — тема Венецианской декларации, терапевтический аборт — Ословской декларации, а пытки — Токийской декларации.",
+        "en": "According to the table, the Declaration of Lisbon concerns patient rights. Terminal illness is the subject of the Declaration of Venice, therapeutic abortion of the Declaration of Oslo, and torture of the Declaration of Tokyo."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "14"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q09",
+      "question_i18n": {
+        "uz": "Ikkinchi jahon urushidan keyin, 1947-yilda qabul qilingan Nyurnberg kodeksi odamlarga tibbiy eksperiment o‘tkazishning nechta axloqiy qoidasini o‘z ichiga oladi?",
+        "ru": "Сколько этических правил проведения медицинского эксперимента на людях содержит Нюрнбергский кодекс, принятый после Второй мировой войны, в 1947 году?",
+        "en": "How many ethical rules for conducting medical experiments on humans does the Nuremberg Code, adopted in 1947 after the Second World War, contain?"
+      },
+      "options_i18n": {
+        "uz": [
+          "4 ta qoidani",
+          "6 ta qoidani",
+          "8 ta qoidani",
+          "10 ta qoidani"
+        ],
+        "ru": [
+          "4 правила",
+          "6 правил",
+          "8 правил",
+          "10 правил"
+        ],
+        "en": [
+          "4 rules",
+          "6 rules",
+          "8 rules",
+          "10 rules"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Darslikda Nyurnberg kodeksi odamlarda tibbiy eksperiment o‘tkazishning 10 ta axloqiy qoidasi sifatida tibbiy etikaning dastlabki xalqaro hujjatlaridan biri deb ko‘rsatilgan. Qolgan raqamlar matnga mos kelmaydi.",
+        "ru": "В учебнике Нюрнбергский кодекс указан как один из первых международных документов по медицинской этике, содержащий 10 этических правил проведения медицинского эксперимента на людях. Остальные числа не соответствуют тексту.",
+        "en": "The textbook presents the Nuremberg Code as one of the first international documents of medical ethics, containing 10 ethical rules for conducting medical experiments on humans. The other numbers do not match the text."
+      },
+      "source": {
+        "author": "Muxamedova Z.M.",
+        "title": "Bioetika (darslik), Toshkent",
+        "page": "53"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q10",
+      "question_i18n": {
+        "uz": "N. A. Semashko 1920-yillarda tibbiy sirga nisbatan qanday pozitsiyani bildirgan?",
+        "ru": "Какую позицию в отношении врачебной тайны занимал Н. А. Семашко в 1920-х годах?",
+        "en": "What position did N. A. Semashko express toward medical confidentiality in the 1920s?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Tibbiy sirni qat’iy saqlash kursini qo‘llab-quvvatlagan",
+          "Tibbiy sirni butunlay yo‘q qilish kursini ilgari surgan",
+          "Sirni faqat sud qarori bilan ochishni talab qilgan",
+          "Sirni faqat bemor qarindoshlariga ochishga ruxsat bergan"
+        ],
+        "ru": [
+          "Поддерживал курс на строгое сохранение врачебной тайны",
+          "Выдвигал курс на полную ликвидацию врачебной тайны",
+          "Требовал раскрывать тайну только по решению суда",
+          "Разрешал раскрывать тайну только родственникам пациента"
+        ],
+        "en": [
+          "He supported a course of strictly preserving medical confidentiality",
+          "He advanced a course of completely abolishing medical confidentiality",
+          "He demanded that secrets be disclosed only by court order",
+          "He allowed secrets to be disclosed only to the patient's relatives"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Semashko «kasallik sharmandalik emas, baxtsizlik» shiori asosida tibbiy sirni butunlay yo‘q qilish kursini saqlashini aytgan. Boshqa variantlar uning pozitsiyasiga zid yoki manbada uchramaydi.",
+        "ru": "Семашко, исходя из лозунга «болезнь — не позор, а несчастье», заявил о сохранении курса на полную ликвидацию врачебной тайны. Остальные варианты противоречат его позиции или в источнике не встречаются.",
+        "en": "Semashko, on the basis of the slogan \"illness is not a disgrace but a misfortune,\" stated that he maintained a course of completely abolishing medical confidentiality. The other options contradict his position or do not appear in the source."
+      },
+      "source": {
+        "author": "Muxamedova Z.M.",
+        "title": "Bioetika (darslik), Toshkent",
+        "page": "53"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q11",
+      "question_i18n": {
+        "uz": "Darslikda keltirilgan O‘zbekiston qonuniga ko‘ra, tibbiy sirni bemorning roziligisiz qaysi holatda berishga yo‘l qo‘yiladi?",
+        "ru": "Согласно закону Узбекистана, приведённому в учебнике, в каком случае допускается раскрытие врачебной тайны без согласия пациента?",
+        "en": "According to the Uzbekistan law cited in the textbook, in which situation is it permissible to disclose medical confidentiality without the patient's consent?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Bemorning do‘stlari uning ahvolidan xavotirlanib so‘raganda",
+          "Ish beruvchi xodimning kasalligi haqida ma’lumot so‘raganda",
+          "Tergov yoki sud organi jarayon munosabati bilan so‘raganda",
+          "Ommaviy axborot vositasi ma’lumotni efirga berish uchun so‘raganda"
+        ],
+        "ru": [
+          "Когда друзья пациента спрашивают о его состоянии, беспокоясь за него",
+          "Когда работодатель запрашивает сведения о болезни работника",
+          "Когда следственный или судебный орган запрашивает сведения в связи с производством по делу",
+          "Когда средство массовой информации запрашивает сведения для выхода в эфир"
+        ],
+        "en": [
+          "When the patient's friends ask about his condition out of concern",
+          "When an employer asks for information about an employee's illness",
+          "When an investigative or judicial body requests it in connection with proceedings",
+          "When a media outlet requests the information in order to broadcast it"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Qonun rozilik so‘ramasdan ma’lumot berishni cheklangan holatlarda, jumladan tergov va sud iltimosiga binoan ruxsat etadi. Do‘stlar, ish beruvchi va ommaviy axborot vositalari so‘rovi bunday holat emas, sirni oshkor qilish hisoblanadi.",
+        "ru": "Закон допускает предоставление сведений без запроса согласия в ограниченных случаях, в том числе по запросу следствия и суда. Запросы друзей, работодателя и средств массовой информации таким случаем не являются, это считается разглашением тайны.",
+        "en": "The law permits disclosure of information without requesting consent only in limited cases, including at the request of an investigative or judicial body. Requests from friends, an employer, or the media are not such cases and amount to a breach of confidentiality."
+      },
+      "source": {
+        "author": "Muxamedova Z.M.",
+        "title": "Bioetika (darslik), Toshkent",
+        "page": "54"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q12",
+      "question_i18n": {
+        "uz": "Angliya va Uelsda 16 yoshgacha bo‘lgan bolaning davolanishga rozilik bera olish qobiliyati, agar u yetarli tushuncha va aql-idrokka ega bo‘lsa, qanday ataladi?",
+        "ru": "Как называется способность ребёнка в возрасте до 16 лет в Англии и Уэльсе давать согласие на лечение, если он обладает достаточным пониманием и разумом?",
+        "en": "In England and Wales, what is the term for the ability of a child under 16 to consent to treatment, provided the child has sufficient understanding and intelligence?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Gillick qobiliyati (Gillick competence)",
+          "Caldicott vasiyligi",
+          "Chester qoidasi",
+          "Helsinki mezoni"
+        ],
+        "ru": [
+          "Компетентность Гиллика (Gillick competence)",
+          "Опекун Caldicott",
+          "Правило Chester",
+          "Критерий Helsinki"
+        ],
+        "en": [
+          "Gillick competence",
+          "Caldicott guardianship",
+          "Chester rule",
+          "Helsinki criterion"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Bola davolanishning maqsadi, mohiyati, oqibati va xavfini anglasa, u Gillick qobiliyatiga ega hisoblanadi. Caldicott vasiyligi maxfiylikni himoya qiluvchi lavozim, Chester ishi xavf haqida ogohlantirish burchiga oid, Helsinki esa tajribalar deklaratsiyasi.",
+        "ru": "Если ребёнок осознаёт цель, сущность, последствия и риск лечения, он считается обладающим компетентностью Гиллика. Опекун Caldicott — должность, защищающая конфиденциальность, дело Chester относится к обязанности предупреждать о риске, а Хельсинкская — это декларация об экспериментах.",
+        "en": "If a child understands the purpose, nature, consequences, and risks of the treatment, the child is considered to have Gillick competence. The Caldicott guardian is a post that protects confidentiality, the Chester case concerns the duty to warn about risks, and Helsinki is the declaration on research."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "20"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q13",
+      "question_i18n": {
+        "uz": "AQShda D. Karnegi rahbarligida o‘tkazilgan ijtimoiy tadqiqotga ko‘ra, inson faoliyatida (jumladan sog‘liqni saqlashda) muvaffaqiyatning necha foizi odamlar bilan muomala qila olish, ularga ta’sir ko‘rsatish qobiliyatiga bog‘liq?",
+        "ru": "Согласно социальному исследованию, проведённому в США (AQShda) под руководством Д. Карнеги, от умения общаться с людьми и влиять на них зависит какой процент успеха в деятельности человека (в том числе в здравоохранении)?",
+        "en": "In the USA (AQShda), according to a social study conducted under the leadership of D. Carnegie, what percentage of success in human activity (including in healthcare) depends on the ability to communicate with people and influence them?"
+      },
+      "options_i18n": {
+        "uz": [
+          "15 foiz",
+          "50 foiz",
+          "85 foiz",
+          "70 foiz"
+        ],
+        "ru": [
+          "15 процентов",
+          "50 процентов",
+          "85 процентов",
+          "70 процентов"
+        ],
+        "en": [
+          "15 percent",
+          "50 percent",
+          "85 percent",
+          "70 percent"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Tadqiqotda muvaffaqiyatning atigi 15 foizi maxsus bilimga, qolgan 85 foizi muloqot qobiliyatiga bog‘liqligi aniqlangan. Shu sababli shifokor uchun muloqot madaniyati kasbiy bilim kabi muhim. Boshqa raqamlar manbada bunday ma’noda keltirilmagan.",
+        "ru": "В исследовании установлено, что лишь 15 процентов успеха зависит от специальных знаний, остальные 85 процентов — от коммуникативных способностей. Поэтому культура общения для врача так же важна, как профессиональные знания. Другие цифры в источнике в таком значении не приводятся.",
+        "en": "The study found that only 15 percent of success depends on specialized knowledge, while the remaining 85 percent depends on communication skills. For this reason, a culture of communication is as important for a physician as professional knowledge. The other figures are not given in the source in this sense."
+      },
+      "source": {
+        "author": "Muxamedova Z.M.",
+        "title": "Bioetika (darslik), Toshkent",
+        "page": "34–35"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q14",
+      "question_i18n": {
+        "uz": "Tibbiy etiket talablariga ko‘ra, shifokor ish jarayonida qaysi kiyim turini tanlagani afzal?",
+        "ru": "Согласно требованиям медицинского этикета, какой вид одежды врачу предпочтительно выбирать в процессе работы?",
+        "en": "According to the requirements of medical etiquette, which type of clothing is preferable for a physician to choose while working?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Kostyum kiyish va galstuk taqish",
+          "Mayka va jinsi shim kiyish",
+          "Zamonaviy liboslar va qimmatbaho zargarlik buyumlari",
+          "Yorqin kiyim va ko‘zga tashlanuvchi pardoz"
+        ],
+        "ru": [
+          "Носить костюм и галстук",
+          "Носить майку и джинсы",
+          "Современную одежду и дорогие ювелирные украшения",
+          "Яркую одежду и заметный макияж"
+        ],
+        "en": [
+          "Wearing a suit and a tie",
+          "Wearing a T-shirt and jeans",
+          "Fashionable clothes and expensive jewelry",
+          "Bright clothing and conspicuous makeup"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Manbada shifokorning ko‘rinishi bemorga ishonch uyg‘otishi kerakligi aytilgan va ish paytida kostyum hamda galstuk afzal ko‘rilgan. Mayka-jinsi, zargarlik buyumlari va yorqin pardoz esa mos kelmaydigan, yomon did belgisi sifatida qaralgan.",
+        "ru": "В источнике сказано, что внешний вид врача должен вызывать у пациента доверие, и во время работы предпочтение отдаётся костюму и галстуку. Майка и джинсы, ювелирные украшения и яркий макияж рассматриваются как неподходящие и признак дурного вкуса.",
+        "en": "The source states that a physician's appearance should inspire trust in the patient, and a suit and tie are preferred at work. A T-shirt with jeans, jewelry, and bright makeup are regarded as unsuitable and a sign of poor taste."
+      },
+      "source": {
+        "author": "Muxamedova Z.M.",
+        "title": "Bioetika (darslik), Toshkent",
+        "page": "32"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q15",
+      "question_i18n": {
+        "uz": "Shifokor bemorlarga ismi bilan emas, kasalligi nomi bilan murojaat qiladi: «oshqozon yaradori», «astmatik». Manbaga ko‘ra, bunday muloqotning asosiy salbiy oqibati qaysi?",
+        "ru": "Врач обращается к пациентам не по имени, а по названию болезни: «язвенник», «астматик». Какова, согласно источнику, основная отрицательная последствие такого общения?",
+        "en": "A physician addresses patients not by name but by the name of their disease: \"stomach ulcer,\" \"asthmatic.\" According to the source, what is the main negative consequence of such communication?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Murojaat qisqa va aniq bo‘lgani uchun bemorning ishonchi ortadi",
+          "Tibbiy sirni saqlash talabi yanada mustahkamlanadi",
+          "Nutqdagi intonatsiya va ichki mazmun ahamiyatsiz bo‘lib qoladi",
+          "Bemor shaxsining boyligi kasallik doirasiga qisqartiriladi, salbiy his-tuyg‘u uyg‘onadi"
+        ],
+        "ru": [
+          "Доверие пациента возрастает, так как обращение краткое и точное",
+          "Требование сохранения врачебной тайны ещё более укрепляется",
+          "Интонация и внутреннее содержание речи становятся несущественными",
+          "Богатство личности пациента сводится к рамкам болезни, пробуждается негативное чувство"
+        ],
+        "en": [
+          "The patient's trust increases because the form of address is short and precise",
+          "The requirement to maintain medical confidentiality is further strengthened",
+          "Intonation and inner meaning in speech become unimportant",
+          "The richness of the patient's personality is reduced to the scope of the disease, and negative feelings are aroused"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Kasallik nomi bilan chaqirish insonni faqat kasalligi bilan belgilab qo‘yadi va yoqimsiz taassurot qoldiradi. Boshqa variantlar manbadagi fikrga zid yoki unda bunday asoslanmagan.",
+        "ru": "Обращение по названию болезни определяет человека только его болезнью и оставляет неприятное впечатление. Остальные варианты противоречат мысли источника или не обоснованы в нём.",
+        "en": "Calling a person by the name of the disease defines the person only by the illness and leaves an unpleasant impression. The other options contradict the view in the source or are not substantiated in it."
+      },
+      "source": {
+        "author": "Muxamedova Z.M.",
+        "title": "Bioetika (darslik), Toshkent",
+        "page": "34"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q16",
+      "question_i18n": {
+        "uz": "Shifokor og‘ir yuqumli kasallikka chalingan bemorning holatini biladi. Bemor oila a’zolariga aytishga rozilik bermayapti, ammo ularga real va yaqin xavf tahdid solmoqda. Bu xavfni faqat sirni ochish orqali bartaraf etish mumkin. Jahon tibbiyot uyushmasining Xalqaro tibbiy etika kodeksiga ko‘ra, qaysi javob to‘g‘ri?",
+        "ru": "Врач знает о состоянии пациента с тяжёлым инфекционным заболеванием. Пациент не соглашается сообщить об этом членам семьи, однако им угрожает реальная и непосредственная опасность. Эту опасность можно устранить только путём раскрытия тайны. Какой ответ верен согласно Международному кодексу медицинской этики Всемирной медицинской ассоциации?",
+        "en": "A physician knows the condition of a patient with a severe infectious disease. The patient does not consent to telling family members, but they are under a real and imminent risk. This risk can be eliminated only by disclosing the secret. According to the International Code of Medical Ethics of the World Medical Association, which answer is correct?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Maxfiylik mutlaq majburiyat, hech qanday holatda ochib bo‘lmaydi",
+          "Real va yaqin xavf bo‘lsa va uni faqat sirni ochish bilan yo‘qotish mumkin bo‘lsa, ochish axloqan joiz",
+          "Faqat bemorning yozma roziligi bo‘lgandagina ma’lumotni ochish mumkin",
+          "Faqat sud qarori bo‘lgandagina ma’lumotni ochish mumkin"
+        ],
+        "ru": [
+          "Конфиденциальность — абсолютная обязанность, ни в каком случае раскрывать нельзя",
+          "Если существует реальная и непосредственная опасность и её можно устранить только раскрытием тайны, раскрытие этически допустимо",
+          "Раскрыть сведения можно только при наличии письменного согласия пациента",
+          "Раскрыть сведения можно только при наличии решения суда"
+        ],
+        "en": [
+          "Confidentiality is an absolute obligation and cannot be disclosed under any circumstances",
+          "If there is a real and imminent threat and it can be removed only by disclosure, disclosure is ethically permissible",
+          "Information may be disclosed only with the patient's written consent",
+          "Information may be disclosed only with a court order"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Kodeksda maxfiy ma’lumotni bemor roziligi bilan yoki bemor yoxud boshqalarga real va yaqin zarar tahdidi bo‘lib, uni faqat sirni buzish bilan yo‘qotish mumkin bo‘lganda ochish axloqiy ekani aytilgan. Shuning uchun maxfiylik muhim, lekin mutlaq emas; roziliksiz yoki sudsiz ochish ham ayrim hollarda joiz.",
+        "ru": "В кодексе сказано, что конфиденциальную информацию этично раскрывать с согласия пациента либо при реальной и непосредственной угрозе вреда пациенту или другим лицам, если её можно устранить только нарушением тайны. Поэтому конфиденциальность важна, но не абсолютна; раскрытие без согласия или без суда в некоторых случаях также допустимо.",
+        "en": "The Code states that it is ethical to disclose confidential information with the patient's consent, or when there is a real and imminent threat of harm to the patient or others that can be removed only by breaching confidentiality. Therefore confidentiality is important but not absolute; disclosure without consent or without a court is also permissible in certain cases."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "14"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q17",
+      "question_i18n": {
+        "uz": "Bemor shifokorga o‘z kasalligining tashxisi va prognozini bilishni istamasligini aytdi. Muhamedova darsligiga ko‘ra, shifokor qanday yo‘l tutishi to‘g‘ri?",
+        "ru": "Пациент сказал врачу, что не желает знать диагноз и прогноз своего заболевания. Как, согласно учебнику Мухамедовой, правильно поступить врачу?",
+        "en": "A patient told the physician that he does not wish to know the diagnosis and prognosis of his illness. According to Muhamedova's textbook, what is the correct course of action for the physician?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Majburlab, to‘liq ma’lumotni darhol aytadi, chunki bu shifokorning burchi",
+          "Prognozni birinchi navbatda qarindoshlariga aytadi, bemordan esa yashiradi",
+          "Bemor so‘ramaguncha majburlamaydi, lekin xabardor bo‘lish nega muhimligini tushuntiradi",
+          "Prognozni haqiqatdan ko‘ra yaxshiroq ko‘rsatib, optimizm bilan yumshatib aytadi"
+        ],
+        "ru": [
+          "Принудительно и сразу сообщает полную информацию, так как это долг врача",
+          "В первую очередь сообщает прогноз родственникам, а от пациента скрывает",
+          "Не настаивает, пока пациент не спросит, но объясняет, почему важно быть осведомлённым",
+          "Преподносит прогноз лучше, чем он есть на самом деле, смягчая его оптимизмом"
+        ],
+        "en": [
+          "Forces the patient and immediately tells the full information, because this is the physician's duty",
+          "Tells the prognosis to relatives first and hides it from the patient",
+          "Does not force the patient until he asks, but explains why being informed is important",
+          "Presents the prognosis as better than it really is, softening it with optimism"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Inson o‘z sog‘lig‘i holatini bilmaslik huquqiga ega va uning irodasiga qarshi ma’lumot berilmaydi. Shifokor faqat xabardor bo‘lish ahamiyatini tushuntirishi mumkin. Qarindoshlarga birinchi aytish va asossiz optimizm esa manbada to‘g‘ri yo‘l sifatida ko‘rsatilmagan va ziddiyat hamda ishonchsizlikka olib keladi.",
+        "ru": "Человек имеет право не знать о состоянии своего здоровья, и информация против его воли не предоставляется. Врач может лишь объяснить важность осведомлённости. Сообщение в первую очередь родственникам и необоснованный оптимизм в источнике не указаны как правильный путь и приводят к конфликту и недоверию.",
+        "en": "A person has the right not to know the state of his own health, and information is not given against his will. The physician may only explain the importance of being informed. Telling relatives first and unfounded optimism are not presented in the source as the right course and lead to conflict and distrust."
+      },
+      "source": {
+        "author": "Muxamedova Z.M.",
+        "title": "Bioetika (darslik), Toshkent",
+        "page": "51"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q18",
+      "question_i18n": {
+        "uz": "Shifokor hamkasbi qo‘ygan tashxis va davolash noto‘g‘ri ekanini aniqladi, bemor hozir shifoxonada. Muhamedova darsligida kasbiy hamjihatlik va tibbiy xatoga munosabat haqida aytilganiga ko‘ra, qaysi harakat to‘g‘ri?",
+        "ru": "Врач обнаружил, что диагноз и лечение, назначенные коллегой, неверны; пациент сейчас находится в стационаре. Какое действие правильно согласно сказанному в учебнике Мухамедовой о профессиональной солидарности и отношении к врачебной ошибке?",
+        "en": "A physician discovered that the diagnosis and treatment given by a colleague are wrong, and the patient is currently in the hospital. According to what Muhamedova's textbook says about professional solidarity and attitude toward medical error, which action is correct?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Avval bemorga qanday yordam berishni o‘ylaydi, so‘ng xatoni hamkasbi bilan yakka va ichkarida asosli muhokama qiladi",
+          "Bemor va qarindoshlari oldida hamkasbining malakasini shubha ostiga qo‘yib, xatoni ochiq aytadi",
+          "Korporativ hamjihatlikni saqlash uchun xatoga ko‘z yumadi va hech narsa demaydi",
+          "Bemorni boshqa shifokorga o‘tkazib, avvalgi barcha shifokorlarni aybdor deb e’lon qiladi"
+        ],
+        "ru": [
+          "Сначала думает, как помочь пациенту, затем обосновANно обсуждает ошибку с коллегой наедине и в закрытой обстановке",
+          "Открыто говорит об ошибке в присутствии пациента и его родственников, ставя под сомнение квалификацию коллеги",
+          "Закрывает глаза на ошибку и ничего не говорит, чтобы сохранить корпоративную солидарность",
+          "Переводит пациента к другому врачу и объявляет виновными всех прежних врачей"
+        ],
+        "en": [
+          "First thinks about how to help the patient, then discusses the error with the colleague on a well-founded basis, one-on-one and privately",
+          "Openly states the error in front of the patient and relatives, casting doubt on the colleague's qualifications",
+          "Turns a blind eye to the error and says nothing in order to preserve corporate solidarity",
+          "Transfers the patient to another physician and declares all previous physicians guilty"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Xato isbotlansa, asosiy e’tibor bemorga yordam berishga qaratiladi, tanqid esa asosli bo‘lib, hamkasbning shaxsiga o‘tmasligi va yakka tartibda bildirilishi kerak. Hamjihatlik xatoga ko‘z yumishni anglatmaydi, bemor oldida hamkasbni obro‘sizlantirish esa axloqsizlik hisoblanadi.",
+        "ru": "Если ошибка доказана, основное внимание направляется на помощь пациенту, а критика должна быть обоснованной, не переходить на личность коллеги и высказываться наедине. Солидарность не означает закрывать глаза на ошибку, а дискредитация коллеги перед пациентом считается неэтичной.",
+        "en": "When an error is proven, the main focus is on helping the patient, and criticism should be well-founded, should not become personal toward the colleague, and should be expressed individually. Solidarity does not mean turning a blind eye to an error, and discrediting a colleague in front of the patient is unethical."
+      },
+      "source": {
+        "author": "Muxamedova Z.M.",
+        "title": "Bioetika (darslik), Toshkent",
+        "page": "35"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q19",
+      "question_i18n": {
+        "uz": "Shifokor o‘z klinikasiga bemorlarni ko‘proq jalb qilish maqsadida pasiyentlarga hamkasbining davosi noto‘g‘ri ekanini aytib, ularning o‘sha hamkasb bilan munosabatini susaytirmoqda. Jahon tibbiyot uyushmasining Xalqaro tibbiy etika kodeksiga ko‘ra bu xatti-harakat qanday baholanadi?",
+        "ru": "Врач, чтобы привлечь в свою клинику больше пациентов, говорит им, что лечение коллеги неверно, и ослабляет их отношения с этим коллегой. Как оценивается это поведение согласно Международному кодексу медицинской этики Всемирной медицинской ассоциации?",
+        "en": "In order to attract more patients to his clinic, a physician tells patients that a colleague's treatment is wrong, weakening their relationship with that colleague. According to the International Code of Medical Ethics of the World Medical Association, how is this behavior assessed?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Ruxsat etiladi, chunki shifokor har bir bemorga to‘liq sadoqat va barcha ilmiy imkoniyatlarini bag‘ishlashi shart",
+          "Faqat bemorning o‘zi bunga rozilik bergan taqdirdagina, hamkasbning munosabatiga putur yetkazmasdan ruxsat etiladi",
+          "Etika qoidasiga zid: shifokor bemor jalb qilish uchun hamkasbining bemor bilan munosabatini buzmasligi kerak",
+          "Bu faqat reklama va raqobat masalasi, shuning uchun tibbiy etika talablari unga tatbiq etilmaydi"
+        ],
+        "ru": [
+          "Разрешается, так как врач обязан быть полностью предан каждому пациенту и посвящать ему все свои научные возможности",
+          "Разрешается только если сам пациент дал на это согласие, без ущерба для отношений с коллегой",
+          "Противоречит этическому правилу: врач не должен нарушать отношения коллеги с пациентом ради привлечения пациентов",
+          "Это лишь вопрос рекламы и конкуренции, поэтому требования медицинской этики к нему не применяются"
+        ],
+        "en": [
+          "It is permitted, because a physician must devote full loyalty and all scientific capabilities to every patient",
+          "It is permitted only if the patient himself consents to it, without damaging the colleague's relationship",
+          "It contradicts the rule of ethics: a physician must not undermine a colleague's relationship with a patient in order to attract patients",
+          "It is only a matter of advertising and competition, so the requirements of medical ethics do not apply to it"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Kodeksda shifokor hamkasblari bilan o‘ziga qanday munosabat kutsa, shunday munosabatda bo‘lishi va bemor jalb qilish uchun hamkasbining bemor bilan munosabatini susaytirmasligi belgilangan. Qolgan variantlar bu qoidani yoki uning mohiyatini noto‘g‘ri talqin qiladi.",
+        "ru": "В кодексе установлено, что врач должен относиться к коллегам так, как хотел бы, чтобы относились к нему, и не ослаблять отношения коллеги с пациентом ради привлечения пациентов. Остальные варианты неверно истолковывают это правило или его суть.",
+        "en": "The Code stipulates that a physician should behave toward colleagues as he would wish them to behave toward him, and should not weaken a colleague's relationship with a patient in order to attract patients. The other options misinterpret this rule or its essence."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "14"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q20",
+      "question_i18n": {
+        "uz": "Bemor ishdan vaqtincha ozod etilishi uchun ma’lumotnoma so‘radi. Shifokor uni shaxsan ko‘rmagan, faqat hamkasbi og‘zaki aytganiga tayanmoqda. Jahon tibbiyot uyushmasining shifokor umumiy majburiyatlariga ko‘ra, u qanday yo‘l tutishi kerak?",
+        "ru": "Пациент попросил справку для временного освобождения от работы. Врач лично его не осматривал, а полагается только на устные слова коллеги. Как он должен поступить согласно общим обязанностям врача, изложенным Всемирной медицинской ассоциацией?",
+        "en": "A patient asked for a certificate for temporary release from work. The physician has not seen him in person and relies only on what a colleague said verbally. According to the general duties of the physician set out by the World Medical Association, how should he act?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Shaxsan tekshirmagan holatni tasdiqlamasligi kerak, chunki faqat o‘zi tekshirgan narsanigina tasdiqlash mumkin",
+          "Hamkasbiga ishonib imzolashi mumkin, chunki kasbiy hamjihatlik tasdiqlashda o‘zaro ishonchni taqozo etadi",
+          "Bemor ma’lumotnomani kasbiy sir sifatida iltimos qilgan bo‘lsa, imzolashi mumkin, sirni saqlash ustun turadi",
+          "Ma’lumotnoma bemorning ish joyidagi manfaatiga xizmat qilsa, imzolashi etik jihatdan oqlanadi"
+        ],
+        "ru": [
+          "Не должен подтверждать состояние, которое лично не проверял, так как можно подтверждать только то, что проверил сам",
+          "Может подписать, доверившись коллеге, так как профессиональная солидарность предполагает взаимное доверие при подтверждении",
+          "Может подписать, если пациент просит справку как врачебную тайну, сохранение тайны преобладает",
+          "Если справка служит интересам пациента на работе, подписание этически оправдано"
+        ],
+        "en": [
+          "He must not certify a condition he has not personally examined, because one may certify only what one has examined oneself",
+          "He may sign relying on the colleague, because professional solidarity requires mutual trust in certification",
+          "If the patient requested the certificate as a professional secret, he may sign, since keeping the secret takes precedence",
+          "If the certificate serves the patient's interest at the workplace, signing is ethically justified"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Kodeksga ko‘ra shifokor faqat o‘zi shaxsan tekshirib aniqlagan narsanigina tasdiqlaydi. Hamkasbga ishonish, bemor manfaati yoki sir saqlash bu talabni o‘zgartirmaydi.",
+        "ru": "Согласно кодексу, врач подтверждает только то, что установил сам лично при осмотре. Доверие коллеге, интересы пациента или сохранение тайны это требование не меняют.",
+        "en": "According to the Code, a physician certifies only what he has personally examined and established. Trusting a colleague, the patient's interest, or keeping a secret does not change this requirement."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "14"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q21",
+      "question_i18n": {
+        "uz": "Muolajadan so‘ng bemor aniq xabardor bo‘lgan holda shifokor umumiy foyda keltirmaydi deb hisoblagan davoni talab qilmoqda. Rozilik bo‘yicha manbadagi bosqichlarga muvofiq shifokor qanday harakat qilishi to‘g‘ri?",
+        "ru": "После процедуры пациент, будучи полностью информированным, требует лечения, которое, по мнению врача, не принесёт общей пользы. Как правильно поступить врачу в соответствии с этапами согласия, изложенными в источнике?",
+        "en": "After the procedure, a clearly well-informed patient demands a treatment that the physician believes offers no overall benefit. According to the consent stages in the source, what is the correct course of action for the physician?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Davoni albatta tayinlashi kerak, chunki bemorning avtonomiyasi shifokorning kasbiy bahosidan har doim ustun turadi",
+          "Davoni jimgina tayinlab qo‘yishi kerak, shunda nizo kelib chiqmaydi va bemor bilan ishonch saqlanadi",
+          "Davoni rad etishi mumkin va sababni tushuntirishi shart emas, chunki klinik qaror faqat shifokorga tegishli",
+          "Davoni tayinlashga majbur emas, lekin bemorga o‘z sabablarini tushuntirishi kerak"
+        ],
+        "ru": [
+          "Он обязательно должен назначить лечение, так как автономия пациента всегда превыше профессиональной оценки врача",
+          "Он должен молча назначить лечение, чтобы не возник конфликт и сохранилось доверие пациента",
+          "Он может отказаться назначать лечение и не обязан объяснять причину, так как клиническое решение принадлежит только врачу",
+          "Он не обязан назначать лечение, но должен объяснить пациенту свои причины"
+        ],
+        "en": [
+          "The physician must prescribe the treatment, because the patient's autonomy always outweighs the physician's professional judgment",
+          "The physician should quietly prescribe the treatment so that no conflict arises and trust with the patient is preserved",
+          "The physician may refuse the treatment and does not need to explain the reason, since the clinical decision belongs solely to the physician",
+          "The physician is not obliged to prescribe the treatment, but must explain their reasons to the patient"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Bemor tanlash huquqiga ega, biroq umumiy foydasiz deb topilgan davoni berish shifokorning majburiyati emas. Shu bilan birga shifokor rad etish sabablarini bemorga tushuntirishi lozim.",
+        "ru": "Пациент имеет право выбора, однако назначать лечение, признанное не приносящим общей пользы, врач не обязан. Вместе с тем врач должен объяснить пациенту причины отказа.",
+        "en": "The patient has the right to choose, but the physician is not obliged to provide a treatment judged to be of no overall benefit. At the same time, the physician must explain the reasons for refusal to the patient."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "20"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q22",
+      "question_i18n": {
+        "uz": "Bemorga jiddiy jarrohlik amaliyoti taklif qilindi. U yaqinlaridan maslahat so‘radi, ular rozi bo‘lishni aytdi, bemor ham rozi bo‘ldi. Muhamedova qo‘llanmasiga ko‘ra, uning yakuniy qarori qanday holatda o‘zining erkin qarori hisoblanadi?",
+        "ru": "Пациенту предложили серьёзную хирургическую операцию. Он попросил совета у близких, они посоветовали согласиться, и пациент согласился. Согласно пособию Мухамедовой, в каком случае его окончательное решение считается его собственным свободным решением?",
+        "en": "A patient was offered a major surgical operation. The patient asked close relatives for advice, they said to agree, and the patient agreed. According to Muhamedova's manual, under what circumstances is the patient's final decision considered their own free decision?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Faqat yaqinlarining fikri shifokorning taklifiga to‘liq mos kelgan taqdirda",
+          "Agar yaqinlarining maslahatini buyruq deb emas, qaror uchun qo‘shimcha ma’lumot deb qabul qilgan bo‘lsa",
+          "Agar bemor shifokordek barcha maxsus tibbiy bilimlarni to‘liq egallagan bo‘lsa",
+          "Agar bemor shifokor obro‘siga umuman tayanmasdan, qarorni mustaqil qabul qilgan bo‘lsa"
+        ],
+        "ru": [
+          "Только если мнение близких полностью совпало с предложением врача",
+          "Если он воспринял совет близких не как приказ, а как дополнительную информацию для решения",
+          "Если пациент полностью владеет всеми специальными медицинскими знаниями, как врач",
+          "Если пациент принял решение самостоятельно, совершенно не опираясь на авторитет врача"
+        ],
+        "en": [
+          "Only if the relatives' opinion fully coincides with the physician's proposal",
+          "If the patient took the relatives' advice not as an order but as additional information for the decision",
+          "If the patient has fully mastered all the specialized medical knowledge, like a physician",
+          "If the patient made the decision independently, without relying on the physician's authority at all"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Bemor ishning mohiyatini tushunsa kifoya, maxsus bilimlarga ega bo‘lishi shart emas. Yaqinlari maslahati qo‘shimcha ma’lumot sifatida olinsa va shifokor obro‘siga tayanilsa ham, qaror bemorning o‘ziniki bo‘lib qoladi.",
+        "ru": "Достаточно, чтобы пациент понимал суть дела; обладать специальными знаниями он не обязан. Если совет близких принят как дополнительная информация, то даже при опоре на авторитет врача решение остаётся решением самого пациента.",
+        "en": "It is sufficient for the patient to understand the essence of the matter; possessing specialized knowledge is not required. If the relatives' advice is taken as additional information, and even if the physician's authority is relied upon, the decision remains the patient's own."
+      },
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "I bob, 1.4-band"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q23",
+      "question_i18n": {
+        "uz": "Sug‘urta kompaniyasi shifokordan bemorning to‘liq kasallik tarixini so‘ramoqda. Bemor bilan bu haqda hali gaplashilmagan, so‘rov davolash yoki audit bilan bog‘liq emas. Manbaga ko‘ra qaysi yo‘l to‘g‘ri?",
+        "ru": "Страховая компания запрашивает у врача полную историю болезни пациента. С пациентом об этом ещё не говорили, запрос не связан с лечением или аудитом. Какой путь верен согласно источнику?",
+        "en": "An insurance company is asking the physician for the patient's complete medical history. The patient has not yet been told about this, and the request is not related to treatment or audit. According to the source, which course of action is correct?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Bu klinik yordamning davomi hisoblanadi, shuning uchun ma’lumot bemor roziligisiz berilishi mumkin",
+          "Bemorning aniq roziligini olib, ma’lumot hajmini bildirib, faqat xolis, tegishli va so‘ralgan doiradagi ma’lumotni berish",
+          "Kasallik tarixini to‘liq yuborish, chunki qisman ma’lumot berish sug‘urta qarorini noto‘g‘ri yo‘naltirishi mumkin",
+          "Sirni hech qanday sharoitda oshkor qilmaslik, sug‘urta so‘rovi ko‘rib chiqilmaydi, bemorga ham aytilmaydi"
+        ],
+        "ru": [
+          "Это продолжение клинической помощи, поэтому информацию можно предоставить без согласия пациента",
+          "Получить явное согласие пациента, сообщить ему объём информации и предоставить только объективные, относящиеся к делу сведения в пределах запрошенного",
+          "Отправить историю болезни полностью, так как частичное предоставление информации может неверно повлиять на решение страховой компании",
+          "Ни при каких обстоятельствах не разглашать тайну: запрос страховой компании не рассматривается, и пациенту о нём тоже не сообщается"
+        ],
+        "en": [
+          "This is considered a continuation of clinical care, so the information may be disclosed without the patient's consent",
+          "Obtain the patient's explicit consent, inform them of the extent of the information, and provide only objective, relevant information within the scope requested",
+          "Send the complete medical history, because providing partial information may misdirect the insurance decision",
+          "Never disclose the confidential information under any circumstances; the insurance request will not be considered and the patient will not be told either"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Klinik yordam va auditdan tashqari maqsadlarda, masalan sug‘urta da’vosi uchun, shifokor maxsus rozilik so‘rashi, bemorga ma’lumot hajmini bildirishi va faqat tegishli, cheklangan ma’lumot berishi kerak. Mutlaq taqiq ham, to‘liq tarixni yuborish ham to‘g‘ri emas.",
+        "ru": "В целях, не связанных с клинической помощью и аудитом, например для страхового иска, врач должен запросить специальное согласие, сообщить пациенту объём информации и предоставить только относящиеся к делу, ограниченные сведения. Неверны и абсолютный запрет, и отправка полной истории болезни.",
+        "en": "For purposes other than clinical care and audit, such as an insurance claim, the physician must request specific consent, inform the patient of the extent of the information, and provide only relevant, limited information. Neither an absolute prohibition nor sending the complete history is correct."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "18"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q24",
+      "question_i18n": {
+        "uz": "Shifokorga siyosiy qarashlari uning o‘z qarashlariga qarama-qarshi bo‘lgan bemor murojaat qildi. Shifokor bu bemorga yordam berishni xohlamayapti. Jeneva deklaratsiyasining (2006-yilgi tahrir) qasamiga ko‘ra, qanday yo‘l tutish to‘g‘ri?",
+        "ru": "К врачу обратился пациент, политические взгляды которого противоположны взглядам врача. Врач не хочет помогать этому пациенту. Как следует поступить согласно клятве Женевской декларации (редакция 2006 года)?",
+        "en": "A patient whose political views are contrary to the physician's own came to see the physician. The physician does not want to help this patient. According to the oath of the Declaration of Geneva (2006 version), what is the correct course of action?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Bemorni rad etishga haqli, chunki shifokorning shaxsiy e’tiqodi ham uning kasbiy erkinligi doirasiga kiradi",
+          "Siyosiy mansubligi shifokor burchi bilan bemor o‘rtasiga tushishiga yo‘l qo‘ymaslik, ya’ni uni oddiy bemor kabi davolash",
+          "Faqat shoshilinch holatda davolash, boshqa vaziyatlarda esa siyosiy qarashlar hisobga olinishi mumkin",
+          "Davolashni boshqa shifokorga topshirib, o‘z qarashlari sababini bemorga aytib qo‘yish"
+        ],
+        "ru": [
+          "Он вправе отказать пациенту, так как личные убеждения врача входят в сферу его профессиональной свободы",
+          "Не допустить, чтобы политическая принадлежность встала между долгом врача и пациентом, то есть лечить его как обычного пациента",
+          "Лечить только в неотложной ситуации, а в остальных случаях политические взгляды могут учитываться",
+          "Передать лечение другому врачу и сообщить пациенту о причине своих взглядов"
+        ],
+        "en": [
+          "The physician has the right to refuse the patient, because personal beliefs also fall within the scope of professional freedom",
+          "Not allowing political affiliation to come between the physician's duty and the patient, that is, treating them like any other patient",
+          "Treat only in an emergency, while in other situations political views may be taken into account",
+          "Hand the treatment over to another physician and tell the patient the reason for one's own views"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Deklaratsiyada shifokor yosh, kasallik, e’tiqod, siyosiy mansublik va boshqa omillar o‘zining burchi bilan bemor o‘rtasiga tushishiga yo‘l qo‘ymaslikka qasam ichadi. Shaxsiy qarashlar yoki faqat shoshilinch holatlarga cheklash bu qoidaga zid.",
+        "ru": "В Декларации врач клянётся не допускать, чтобы возраст, болезнь, убеждения, политическая принадлежность и другие факторы вставали между его долгом и пациентом. Ссылка на личные взгляды или ограничение лишь неотложными случаями противоречит этому правилу.",
+        "en": "In the Declaration, the physician swears not to allow considerations of age, disease, creed, political affiliation, and other factors to come between their duty and the patient. Personal views, or limiting treatment to emergencies only, contradict this rule."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "13"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q25",
+      "question_i18n": {
+        "uz": "Shifokorga dori ishlab chiqaruvchi kompaniya vakili taklif qildi: u bemorlarga aynan shu kompaniyaning preparatini tayinlasa, har bir retsept uchun foizli mukofot oladi. Jahon tibbiyot uyushmasining Xalqaro tibbiy etika kodeksiga ko‘ra qaysi yo‘l to‘g‘ri?",
+        "ru": "Представитель фармацевтической компании предложил врачу: если он будет назначать пациентам именно препарат этой компании, то получит процентное вознаграждение за каждый рецепт. Какой путь верен согласно Международному кодексу медицинской этики Всемирной медицинской ассоциации?",
+        "en": "A representative of a pharmaceutical company offered a physician a percentage-based reward for every prescription if the physician prescribes that company's drug to patients. According to the World Medical Association's International Code of Medical Ethics, which course of action is correct?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Mukofotni qabul qilish mumkin, agar preparat bemorga zarar keltirmasa",
+          "Mukofotni qabul qilish mumkin, agar miqdori bemorga oldindan aytilgan bo‘lsa",
+          "Taklifni rad etish: faqat bemorlarni yo‘llash yoki muayyan mahsulotni tayinlash evaziga moliyaviy foyda olish mumkin emas",
+          "Mukofotni qabul qilish mumkin, agar u hamkasblar bilan teng bo‘lishilsa"
+        ],
+        "ru": [
+          "Вознаграждение можно принять, если препарат не причиняет вреда пациенту",
+          "Вознаграждение можно принять, если его размер заранее сообщён пациенту",
+          "Отказаться от предложения: нельзя получать финансовую выгоду только за направление пациентов или назначение определённого продукта",
+          "Вознаграждение можно принять, если оно разделено поровну с коллегами"
+        ],
+        "en": [
+          "The reward may be accepted if the drug does not harm the patient",
+          "The reward may be accepted if its amount has been disclosed to the patient in advance",
+          "Refuse the offer: financial benefit may not be received solely for referring patients or prescribing a particular product",
+          "The reward may be accepted if it is shared equally with colleagues"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Kodeksga ko‘ra shifokor faqat bemorlarni yo‘llagani yoki aniq mahsulotni tayinlagani uchun hech qanday moliyaviy foyda yoki rag‘bat olmasligi kerak. Boshqa variantlar foydani zararsizlik, oshkoralik yoki bo‘lishish bilan oqlashga urinadi, lekin kodeks bunday istisno nazarda tutmaydi.",
+        "ru": "Согласно Кодексу, врач не должен получать никакой финансовой выгоды или поощрения только за направление пациентов или назначение конкретного продукта. Остальные варианты пытаются оправдать выгоду безвредностью, открытостью или разделом, но Кодекс такого исключения не предусматривает.",
+        "en": "According to the Code, the physician must not receive any financial benefit or incentive solely for referring patients or prescribing a specific product. The other options try to justify the benefit by harmlessness, transparency, or sharing, but the Code provides no such exception."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "14"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q26",
+      "question_i18n": {
+        "uz": "Shifokor korxona rahbariyati buyurtmasi bilan xodimlarni tibbiy ko‘rikdan o‘tkazmoqda. Jahon tibbiyot uyushmasining Xalqaro tibbiy etika kodeksiga ko‘ra, ko‘rikdan oldin u nima qilishi shart?",
+        "ru": "Врач проводит медицинский осмотр сотрудников по заказу руководства предприятия. Что он обязан сделать перед осмотром согласно Международному кодексу медицинской этики Всемирной медицинской ассоциации?",
+        "en": "A physician is conducting medical examinations of employees at the request of a company's management. According to the World Medical Association's International Code of Medical Ethics, what must the physician do before the examination?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Ko‘rik uchinchi tomon nomidan o‘tkazilayotganini bemorga to‘liq tushuntirib, vaziyatdan to‘liq xabardor qilish",
+          "Ko‘rikni oddiy davolovchi shifokor sifatida o‘tkazib, buyurtmachi haqida natijadan keyin aytish",
+          "Buyurtmachi haqida aytmaslik, chunki tibbiy sir shifokorni uchinchi tomondan to‘liq himoya qiladi",
+          "To‘liq tibbiy hujjatni rahbariyatga berish, chunki ko‘rik aynan uning buyurtmasi bilan o‘tmoqda"
+        ],
+        "ru": [
+          "Полностью объяснить пациенту, что осмотр проводится от имени третьей стороны, и полностью проинформировать его о ситуации",
+          "Провести осмотр как обычный лечащий врач, а о заказчике сообщить после получения результата",
+          "Не сообщать о заказчике, так как врачебная тайна полностью защищает врача от третьей стороны",
+          "Передать руководству полную медицинскую документацию, так как осмотр проводится по его заказу"
+        ],
+        "en": [
+          "Fully explain to the patient that the examination is being conducted on behalf of a third party, fully informing them of the situation",
+          "Conduct the examination as an ordinary treating physician and tell about the requesting party after the result",
+          "Not mention the requesting party, because medical confidentiality fully protects the physician from the third party",
+          "Give the complete medical record to the management, because the examination is taking place at its request"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Shifokor uchinchi tomon uchun ish ko‘rganda bemor bu holatni to‘liq bilishi kerak. Keyinroq xabar berish yoki yashirish bemor erkinligiga zid. Hujjatni rozilik va cheklovlarsiz topshirish esa maxfiylik talabini buzadi.",
+        "ru": "Когда врач действует в интересах третьей стороны, пациент должен полностью знать об этой ситуации. Сообщение об этом позже или сокрытие противоречит свободе пациента. Передача документации без согласия и ограничений нарушает требование конфиденциальности.",
+        "en": "When a physician acts for a third party, the patient must be fully aware of this situation. Informing them later or concealing it contradicts the patient's freedom. Handing over the record without consent and restrictions violates the confidentiality requirement."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "14"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q27",
+      "question_i18n": {
+        "uz": "Umumiy amaliyot shifokori kamdan-kam uchraydigan holatdagi bemorni ko‘rdi. Tekshiruv va davo uning malakasi doirasidan chiqayotgani aniq. Jahon tibbiyot uyushmasining kodeksiga ko‘ra, u qanday harakat qilishi kerak?",
+        "ru": "Врач общей практики осмотрел пациента с редким состоянием. Очевидно, что обследование и лечение выходят за рамки его квалификации. Как он должен поступить согласно кодексу Всемирной медицинской ассоциации?",
+        "en": "A general practitioner saw a patient with a rare condition. It is clear that the examination and treatment exceed the scope of the physician's competence. According to the World Medical Association's Code, how should the physician act?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Bemorni boshqaga yubormay, o‘zi davolashni davom ettirish: yo‘llash ishonchni susaytiradi",
+          "Faqat alomatlarga qarshi davo tayinlab, bemorni keyingi ko‘rikka kutishga yo‘llash",
+          "Bemorga bildirmay, tashxis bo‘yicha hamkasbining nomini retseptga yashirincha yozib qo‘yish",
+          "Zarur qobiliyatga ega boshqa shifokor bilan maslahatlashish yoki bemorni unga yo‘llash"
+        ],
+        "ru": [
+          "Не направлять пациента к другому специалисту и продолжать лечить самому: направление ослабит доверие",
+          "Назначить только симптоматическое лечение и отправить пациента ждать следующего осмотра",
+          "Тайком, не сообщая пациенту, вписать в рецепт имя коллеги по диагнозу",
+          "Проконсультироваться с другим врачом, обладающим необходимыми способностями, или направить пациента к нему"
+        ],
+        "en": [
+          "Continue treating the patient personally without referring them elsewhere: referral would weaken trust",
+          "Prescribe only symptomatic treatment and tell the patient to wait for the next visit",
+          "Without telling the patient, secretly write a colleague's name on the prescription regarding the diagnosis",
+          "Consult another physician with the necessary ability or refer the patient to that physician"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Kodeksga ko‘ra shifokor bemorga to‘liq sadoqat va barcha ilmiy imkoniyatni bag‘ishlashi lozim; tekshiruv yoki davo uning qobiliyatidan tashqarida bo‘lsa, malakali hamkasb bilan maslahatlashadi yoki bemorni unga yo‘llaydi. Boshqa variantlar bemor manfaatini obro‘ yoki sir tutish ortiga qo‘yadi.",
+        "ru": "Согласно кодексу, врач должен посвятить пациенту полную преданность и все свои научные возможности; если обследование или лечение выходит за пределы его способностей, он консультируется с квалифицированным коллегой или направляет пациента к нему. Остальные варианты ставят интерес пациента ниже репутации или секретности.",
+        "en": "According to the Code, the physician must owe complete loyalty to the patient and apply all scientific resources; if the examination or treatment is beyond the physician's ability, the physician consults a qualified colleague or refers the patient to that colleague. The other options place the patient's interest behind reputation or secrecy."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "14"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q28",
+      "question_i18n": {
+        "uz": "Ikki kishi «yaxshilik qil» tamoyiliga amal qilib buyrak berishni o‘ylamoqda: biri butunlay notanish bemorga, ikkinchisi o‘z farzandiga. Muhamedova qo‘llanmasiga ko‘ra, ularning majburiyati haqida qaysi fikr to‘g‘ri?",
+        "ru": "Два человека, следуя принципу «твори добро», размышляют о donation почки: один — совершенно незнакомому пациенту, другой — собственному ребёнку. Какое утверждение об их обязанности верно согласно пособию Мухамедовой?",
+        "en": "Two people are considering donating a kidney following the principle of beneficence (\"do good\"): one to a complete stranger who is a patient, the other to their own child. According to Muhamedova's manual, which statement about their obligation is correct?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Ikkala holatda ham majburiyat bir xil, chunki tamoyil universal va maxsus munosabatlarga bog‘liq emas",
+          "Ota yoki ona farzandiga bersa, ijtimoiy vazifa tufayli bu ko‘proq majburiy; notanishga berish esa majburiyat emas",
+          "Notanishga berish ko‘proq majburiy, chunki bunda manfaat bo‘lmagani uchun yaxshilik sof bo‘ladi",
+          "Ikkalasi ham majburiy emas, chunki yaxshilik qilish tamoyili hech qachon ahamiyatga ega bo‘lmaydi"
+        ],
+        "ru": [
+          "В обоих случаях обязанность одинакова, так как принцип универсален и не зависит от особых отношений",
+          "Если отец или мать отдаёт почку своему ребёнку, это более обязательно в силу социальной роли; отдать незнакомому человеку не является обязанностью",
+          "Отдать незнакомому человеку более обязательно, так как из-за отсутствия выгоды добро в этом случае чистое",
+          "Ни то ни другое не обязательно, так как принцип благодеяния никогда не имеет значения"
+        ],
+        "en": [
+          "The obligation is the same in both cases, because the principle is universal and does not depend on special relationships",
+          "If a parent gives to their child, this is more obligatory because of social duty; giving to a stranger is not an obligation",
+          "Giving to a stranger is more obligatory, because with no personal benefit involved, the good deed is pure",
+          "Neither is obligatory, because the principle of beneficence never carries any significance"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Manbada maxsus munosabatlar (masalan, ota-onalik) yaxshilik qilish majburiyatini kuchaytirishi, notanish odamga bunday qurbonlik talab qilinmasligi aytilgan. Shuningdek, bunday donorlikni qonunchilik taqiqlaydi. Birinchi va uchinchi variantlar maxsus munosabatlar rolini inkor etadi.",
+        "ru": "В источнике сказано, что особые отношения (например, родительские) усиливают обязанность творить добро, а от незнакомого человека такая жертва не требуется. Кроме того, законодательство запрещает такое донорство. Первый и третий варианты отрицают роль особых отношений.",
+        "en": "The source states that special relationships (for example, parenthood) strengthen the obligation of beneficence, and that such a sacrifice is not demanded for a stranger. In addition, legislation prohibits such donation. The first and third options deny the role of special relationships."
+      },
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "I bob, 1.4-bo‘lim"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q29",
+      "question_i18n": {
+        "uz": "Ginekolog ko‘krak bezini ko‘rishdan oldin bemorga hamroh (chaperone) bo‘lishini taklif qildi, bemor bunga rozi bo‘lmadi. Ko‘rik talabi o‘rinli. Qo‘llanmaga ko‘ra, shifokor keyingi qadamda nima qilishi to‘g‘ri?",
+        "ru": "Гинеколог перед осмотром молочной железы предложил пациентке сопровождающего (chaperone), пациентка не согласилась. Требование об осмотре обосновано. Что правильно сделать врачу на следующем шаге согласно пособию?",
+        "en": "Before a breast examination, a gynecologist offered the patient a chaperone, and the patient did not agree. The examination is justified. According to the manual, what is the correct next step for the physician?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Ko‘rikni to‘xtatib, bemorni boshqa kunga yozish",
+          "Rad etishni inobatga olmay, hujjatda faqat ko‘rik natijasini qayd etish",
+          "Ko‘rikni bemor ruxsati va tushuntirish bilan davom ettirib, hamroh taklif qilingani va rad etilganini yozib qo‘yish",
+          "Bemorni ko‘rik uchun hamroh bo‘lishiga majburan ko‘ndirish"
+        ],
+        "ru": [
+          "Прекратить осмотр и записать пациентку на другой день",
+          "Не учитывая отказ, записать в документе только результат осмотра",
+          "Продолжить осмотр с разрешения пациентки и после объяснений, записав, что сопровождающий был предложен и от него отказались",
+          "Принудительно уговорить пациентку согласиться на сопровождающего"
+        ],
+        "en": [
+          "Stop the examination and schedule the patient for another day",
+          "Disregard the refusal and record only the examination findings in the documentation",
+          "Continue the examination with the patient's permission and an explanation, and document that a chaperone was offered and declined",
+          "Forcibly persuade the patient to have a chaperone present for the examination"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Intim ko‘rik qoidalariga ko‘ra hamroh taklif qilinadi, bemor istamasa, taklif qilingani va rad etilgani yozuvga kiritiladi. Majburlash yoki ko‘rikni sababsiz to‘xtatish talab qilinmaydi. Natijalarni yozib, taklifni qayd etmaslik esa shifokorning keyingi himoyasini zaiflashtiradi.",
+        "ru": "Согласно правилам интимного осмотра, сопровождающий предлагается, а если пациент не желает, в запись вносится, что он был предложен и от него отказались. Принуждение или прекращение осмотра без причины не требуется. Запись результатов без фиксации предложения ослабляет последующую защиту врача.",
+        "en": "According to the rules for intimate examinations, a chaperone is offered, and if the patient does not wish it, the fact that it was offered and declined is entered in the record. Coercion or stopping the examination without reason is not required. Recording the findings without noting the offer weakens the physician's later protection."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "16"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-02-q30",
+      "question_i18n": {
+        "uz": "Voyaga yetgan, aqli raso bemor diniy e’tiqodi tufayli qon quyishni rad etmoqda, shifokor esa bu o‘limga olib kelishini biladi. Jahon tibbiyot uyushmasi kodeksi va rozilik tamoyiliga ko‘ra qaysi yo‘l to‘g‘ri?",
+        "ru": "Совершеннолетний вменяемый пациент отказывается от переливания крови по религиозным убеждениям, а врач знает, что это приведёт к смерти. Какой путь верен согласно кодексу Всемирной медицинской ассоциации и принципу согласия?",
+        "en": "An adult patient of sound mind is refusing a blood transfusion because of religious belief, and the physician knows this will lead to death. According to the World Medical Association's Code and the principle of consent, which course of action is correct?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Xavf va oqibatlarni tushuntirgach, vakolatli bemorning rad etishini hurmat qilib, qaror qabul qilish yo‘lini yozuvda aks ettirish",
+          "Hayotni saqlash uchun qon quyish, chunki zarar yetkazmaslik tamoyili bemor erkinligidan ustun",
+          "Bemorning o‘rniga qarorni yaqinlaridan so‘rab qabul qilish, chunki ular aqli raso bemorning qarorini o‘zgartirishi mumkin",
+          "Rad etishni e’tiborsiz qoldirib, davolashni boshqa shifokorga bildirmay kechiktirish"
+        ],
+        "ru": [
+          "После разъяснения рисков и последствий уважать отказ дееспособного пациента и отразить в записи путь принятия решения",
+          "Перелить кровь для сохранения жизни, так как принцип непричинения вреда превыше свободы пациента",
+          "Принять решение вместо пациента, спросив его близких, так как они могут изменить решение вменяемого пациента",
+          "Проигнорировать отказ и, не сообщая другому врачу, отложить лечение"
+        ],
+        "en": [
+          "After explaining the risks and consequences, respect the competent patient's refusal and reflect the decision-making process in the record",
+          "Give the transfusion to save life, because the principle of non-maleficence outweighs patient autonomy",
+          "Make the decision in place of the patient by asking the relatives, because they can change the decision of a patient of sound mind",
+          "Ignore the refusal and delay the treatment, without telling another physician"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Shifokor vakolatli bemorning davolanishni qabul qilish yoki rad etish huquqini hurmat qilishi, bemor qarori unga mantiqsiz tuyulsa ham, uni inobatga olishi kerak. Qarorga kelish yo‘li yozib qo‘yiladi. Bu holat erkinlik va yaxshilik tamoyillari to‘qnashuviga misol, ammo aqli raso bemor uchun hal qiluvchisi uning o‘z qarori.",
+        "ru": "Врач должен уважать право дееспособного пациента принять лечение или отказаться от него, даже если решение пациента кажется ему неразумным. Путь принятия решения фиксируется в записи. Эта ситуация является примером столкновения принципов свободы и благодеяния, но для вменяемого пациента решающим является его собственное решение.",
+        "en": "The physician must respect a competent patient's right to accept or refuse treatment and take it into account even if the patient's decision seems irrational to the physician. The path to the decision is documented. This case is an example of a clash between the principles of autonomy and beneficence, but for a patient of sound mind, their own decision is decisive."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "17"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "author": "Muhamedova Z.M.",
+      "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+      "year": 2006,
+      "pages": "I bob 1.4 «Bioetikaning asosiy tamoyillari va modellari» (tibbiyot etikasi tamoyillari va modellari, paternalizm, bemor erkinligini hurmat qilish, bioetika modellari)"
+    },
+    {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "year": 2021,
+      "pages": "II bob (21-40); III bob oxiri (50-61)"
+    },
+    {
+      "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+      "title": "Simpson's Forensic Medicine, 13th ed.",
+      "year": 2011,
+      "pages": "Chapter 2. The ethics of medical practice, pp. 12–23"
+    }
+  ]
+}

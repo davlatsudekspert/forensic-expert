@@ -1,0 +1,1392 @@
+{
+  "topic_id": "4-kurs-davolash-05",
+  "source_lang": "uz",
+  "title_i18n": {
+    "uz": "Amaliy mashg’ulot: O‘q otar qurollardan yetkazilgan jarohatlar.",
+    "ru": "Практическое занятие: Повреждения, причиняемые огнестрельным оружием.",
+    "en": "Practical session: Injuries caused by firearms."
+  },
+  "translation_status": {
+    "uz": "source",
+    "ru": "auto_unreviewed",
+    "en": "auto_unreviewed"
+  },
+  "questions": [
+    {
+      "id": "4-kurs-davolash-05-q01",
+      "question_i18n": {
+        "uz": "Teri va yumshoq to‘qimada o‘q otar jarohat natijasida paydo bo‘ladigan to‘qima defekti (minus-to‘qima) ilk bor 1849 yilda kim tomonidan tavsiflangan?",
+        "ru": "Кем впервые в 1849 году был описан дефект ткани (минус-ткань), возникающий на коже и мягких тканях в результате огнестрельного ранения?",
+        "en": "Who was the first to describe, in 1849, the tissue defect (minus-tissue) that arises in the skin and soft tissues as a result of a gunshot wound?"
+      },
+      "options_i18n": {
+        "uz": [
+          "I.V. Vinogradov",
+          "N.I. Pirogov",
+          "L.M. Eydlin",
+          "V.L. Popov"
+        ],
+        "ru": [
+          "И.В. Виноградов",
+          "Н.И. Пирогов",
+          "Л.М. Эйдлин",
+          "В.Л. Попов"
+        ],
+        "en": [
+          "I.V. Vinogradov",
+          "N.I. Pirogov",
+          "L.M. Eydlin",
+          "V.L. Popov"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "To‘qima defektini birinchi bo‘lib N.I. Pirogov 1849 yilda Kavkaz bo‘ylab sayohat haqidagi hisobotida tasvirlagan va uni “to‘qima o‘zligini yo‘qotishi” deb atagan. Boshqa nomlar o‘q otar jarohatlar sud tibbiyoti bilan bog‘liq bo‘lsa-da, bu belgini ular kashf etmagan: Vinogradov qurum fenomeni bilan, Popov portlash omillari tasnifi bilan tanilgan.",
+        "ru": "Дефект ткани первым описал Н.И. Пирогов в 1849 году в отчёте о поездке по Кавказу и назвал его «потерей вещества ткани». Хотя другие названные авторы связаны с судебной медициной огнестрельных повреждений, этот признак открыли не они: Виноградов известен феноменом копоти, Попов — классификацией взрывных факторов.",
+        "en": "The tissue defect was first described by N.I. Pirogov in 1849 in his report on a journey through the Caucasus, and he called it \"the tissue losing its identity.\" Although the other names are associated with the forensic medicine of gunshot wounds, they did not discover this sign: Vinogradov is known for the soot phenomenon, and Popov for the classification of blast factors."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "85"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q02",
+      "question_i18n": {
+        "uz": "Snaryad nishonga tegish vaqtida bir necha o‘n joul energiyaga ega edi. Bunda teridagi yara qanday ko‘rinishda bo‘ladi?",
+        "ru": "В момент попадания в цель снаряд обладал энергией в несколько десятков джоулей. Как в этом случае выглядит рана на коже?",
+        "en": "At the moment of hitting the target, the projectile had an energy of several tens of joules. What does the skin wound look like in this case?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Chetlari radial yoriqli, o‘lchami snaryad diametridan bir necha barobar katta yara",
+          "Dumaloq, chetlari tekis, to‘qima defekti bor va o‘lchami snaryaddan kichik yara",
+          "Faqat yuzaki shilinma va qontalashdan iborat kontuzion o‘zgarish",
+          "To‘qima defektisiz, yoriqsimon yoki yulduzsimon yara"
+        ],
+        "ru": [
+          "Рана с радиальными разрывами краёв, по размеру в несколько раз превышающая диаметр снаряда",
+          "Округлая рана с ровными краями, с дефектом ткани, по размеру меньше снаряда",
+          "Контузионное изменение, состоящее только из поверхностной ссадины и кровоподтёка",
+          "Щелевидная или звёздчатая рана без дефекта ткани"
+        ],
+        "en": [
+          "A wound with radially torn edges, several times larger than the projectile diameter",
+          "A round wound with smooth edges, with a tissue defect, smaller than the projectile",
+          "A contusion change consisting only of superficial abrasion and bruising",
+          "A slit-like or stellate wound without a tissue defect"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Bir necha o‘n joul energiyada snaryad ponasimon ta’sir qiladi: to‘qima yulib olinmaydi, shuning uchun yoriqsimon yoki yulduzsimon yara hosil bo‘ladi. Birinchi variant yorma ta’sirga (ming joullar), ikkinchisi yulma ta’sirga (yuzlab joul) xos. To‘rtinchisi esa energiya deyarli tugaganda kuzatiladi.",
+        "ru": "При энергии в несколько десятков джоулей снаряд оказывает клиновидное действие: ткань не вырывается, поэтому образуется щелевидная или звёздчатая рана. Первый вариант характерен для разрывного действия (тысячи джоулей), второй — для вырывающего действия (сотни джоулей). Четвёртый наблюдается, когда энергия почти исчерпана.",
+        "en": "At an energy of several tens of joules, the projectile acts like a wedge: the tissue is not torn out, so a slit-like or stellate wound is formed. The first option is typical of the bursting effect (thousands of joules), and the second of the tearing-out effect (hundreds of joules). The fourth is observed when the energy is almost exhausted."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "85"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q03",
+      "question_i18n": {
+        "uz": "Otishda hosil bo‘ladigan alanga termik ta’sirni qaysi masofada ko‘rsatadi?",
+        "ru": "На каком расстоянии пламя, образующееся при выстреле, оказывает термическое действие?",
+        "en": "At what distance does the flame produced during firing exert a thermal effect?"
+      },
+      "options_i18n": {
+        "uz": [
+          "3-10 sm masofada",
+          "25-35 sm masofada",
+          "1-2 m masofada",
+          "50-100 sm masofada"
+        ],
+        "ru": [
+          "На расстоянии 3-10 см",
+          "На расстоянии 25-35 см",
+          "На расстоянии 1-2 м",
+          "На расстоянии 50-100 см"
+        ],
+        "en": [
+          "At a distance of 3-10 cm",
+          "At a distance of 25-35 cm",
+          "At a distance of 1-2 m",
+          "At a distance of 50-100 cm"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "O‘q otish alangasi to‘liq yonmagan porox zarrachalarining kislorod bilan portlashidan hosil bo‘ladi va 3-10 sm masofada kiyim, teri va sochni kuydirishi mumkin. Boshqa variantlardagi masofalar alanganing ta’sir doirasiga to‘g‘ri kelmaydi; 25-35 sm esa ikkinchi zona uzunligiga yaqin raqam.",
+        "ru": "Пламя выстрела образуется при взрыве не полностью сгоревших частиц пороха с кислородом и может обжечь одежду, кожу и волосы на расстоянии 3-10 см. Расстояния в остальных вариантах не соответствуют зоне действия пламени; 25-35 см — число, близкое к длине второй зоны.",
+        "en": "The muzzle flame arises from the explosion of incompletely burned powder particles with oxygen and can burn clothing, skin and hair at a distance of 3-10 cm. The distances in the other options do not correspond to the range of action of the flame; 25-35 cm is a figure close to the length of the second zone."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "86"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q04",
+      "question_i18n": {
+        "uz": "7,62 kalibrli Kalashnikov avtomatidan yaqin distansiyadan otilganda birinchi zonaning (porox gazlari ta’siri zonasi) uzunligi qancha?",
+        "ru": "Какова длина первой зоны (зоны действия пороховых газов) при выстреле с близкой дистанции из автомата Калашникова калибра 7,62?",
+        "en": "When fired at close range from a 7.62-caliber Kalashnikov assault rifle, what is the length of the first zone (the zone of action of powder gases)?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Taxminan 1 sm",
+          "Taxminan 25 sm",
+          "3 sm gacha",
+          "Taxminan 200 sm"
+        ],
+        "ru": [
+          "Около 1 см",
+          "Около 25 см",
+          "До 3 см",
+          "Около 200 см"
+        ],
+        "en": [
+          "About 1 cm",
+          "About 25 cm",
+          "Up to 3 cm",
+          "About 200 cm"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Birinchi zona uzunligi qurolga bog‘liq: Makarov pistoleti uchun taxminan 1 sm, Kalashnikov avtomati uchun 3 sm gacha, o‘yiqli miltiqlar uchun taxminan 5 sm. 200 sm esa uchinchi zonaning (faqat porox va metall zarrachalari) chegarasi.",
+        "ru": "Длина первой зоны зависит от оружия: для пистолета Макарова около 1 см, для автомата Калашникова до 3 см, для нарезных винтовок около 5 см. 200 см — граница третьей зоны (только частицы пороха и металла).",
+        "en": "The length of the first zone depends on the weapon: about 1 cm for the Makarov pistol, up to 3 cm for the Kalashnikov assault rifle, and about 5 cm for rifled long guns. 200 cm is the limit of the third zone (only powder and metal particles)."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "88"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q05",
+      "question_i18n": {
+        "uz": "Qiyalab tirab otishda kirish teshigi atrofidagi o‘zgarishlar qanday joylashadi?",
+        "ru": "Как располагаются изменения вокруг входного отверстия при выстреле в упор под углом?",
+        "en": "In oblique contact firing, how are the changes around the entrance hole arranged?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Teri yoriqlari va qurum, porox, metall zarrachalari faqat o‘tmas burchak tomonida “tilsimon” bo‘ladi",
+          "Teri yoriqlari teshik atrofida to‘liq halqa shaklida, qurum esa yara kanali ichida bo‘ladi",
+          "Stvol uchi kesimiga mos shilinma-qontalash shaklidagi bosma iz yaqqol hosil bo‘ladi",
+          "Qo‘shimcha omillar belgisi umuman bo‘lmaydi, faqat o‘qning shilinish hoshiyasi ko‘rinadi"
+        ],
+        "ru": [
+          "Разрывы кожи и копоть, частицы пороха и металла в виде «язычка» располагаются только со стороны тупого угла",
+          "Разрывы кожи в виде полного кольца вокруг отверстия, а копоть находится внутри раневого канала",
+          "Чётко образуется отпечаток в виде ссадины-кровоподтёка, соответствующий срезу дульного конца ствола",
+          "Признаков дополнительных факторов нет совсем, виден только поясок осаднения от пули"
+        ],
+        "en": [
+          "Skin tears and soot, powder, and metal particles are tongue-shaped only on the obtuse-angle side",
+          "Skin tears form a complete ring around the hole, while soot is inside the wound channel",
+          "A distinct imprint in the form of an abrasion-bruise corresponding to the muzzle end cross-section is formed",
+          "There are no signs of additional factors at all; only the abrasion collar of the bullet is visible"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Qiyalab tirab otishda qo‘shimcha omillarning faqat bir qismi yara kanaliga kiradi; teri yoriqlari va zarrachalar teshikning faqat o‘tmas burchak tomonida tilsimon joylashadi. Ikkinchi va uchinchi variantlar to‘liq tirab otishga (to‘liq germetik tirab otishda shtansmarka) xos, to‘rtinchisi esa yaqin bo‘lmagan distansiyaga to‘g‘ri keladi.",
+        "ru": "При выстреле в упор под углом в раневой канал попадает лишь часть дополнительных факторов; разрывы кожи и частицы располагаются в виде язычка только со стороны тупого угла отверстия. Второй и третий варианты характерны для полного упора (при полном герметичном упоре — штамп-отпечаток), а четвёртый соответствует неблизкой дистанции.",
+        "en": "In oblique contact firing, only part of the additional factors enters the wound channel; skin tears and particles are located in a tongue-shaped pattern only on the obtuse-angle side of the hole. The second and third options are typical of full contact firing (the stamp mark in fully hermetic contact firing), and the fourth corresponds to a non-close range."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "87"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q06",
+      "question_i18n": {
+        "uz": "O‘q otar yara devorida ajratiladigan uch zonadan to‘qimalarning chayqalish zonasining kengligi qancha bo‘ladi?",
+        "ru": "Какова ширина зоны сотрясения тканей из трёх зон, выделяемых в стенке огнестрельной раны?",
+        "en": "Of the three zones distinguished in the wall of a gunshot wound, what is the width of the zone of tissue concussion?"
+      },
+      "options_i18n": {
+        "uz": [
+          "0,3 sm dan 1-2 sm gacha",
+          "Taxminan 1-3 mm",
+          "Faqat 1-2 mm atrofida",
+          "4-5 sm va undan ortiq"
+        ],
+        "ru": [
+          "От 0,3 см до 1-2 см",
+          "Примерно 1-3 мм",
+          "Только около 1-2 мм",
+          "4-5 см и более"
+        ],
+        "en": [
+          "From 0.3 cm to 1-2 cm",
+          "About 1-3 mm",
+          "Only about 1-2 mm",
+          "4-5 cm or more"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Zarb ta’siri nazariyasiga ko‘ra yara devorida yara kanali, lat yeyish va chayqalish zonalari ajratiladi. Chayqalish zonasi eng keng bo‘lib, 4-5 sm va undan ortiq. 0,3 sm dan 1-2 sm gacha bo‘lgani esa lat yeyish zonasining kengligi, 1-3 mm esa shilinish hoshiyasining kengligi.",
+        "ru": "Согласно теории ударного действия, в стенке раны выделяют зоны раневого канала, ушиба и сотрясения. Зона сотрясения самая широкая — 4-5 см и более. Ширина от 0,3 см до 1-2 см соответствует зоне ушиба, а 1-3 мм — ширине пояска осаднения.",
+        "en": "According to the impact action theory, the wound channel, contusion, and concussion zones are distinguished in the wall of the wound. The concussion zone is the widest, at 4-5 cm or more. The range from 0.3 cm to 1-2 cm is the width of the contusion zone, and 1-3 mm is the width of the abrasion collar."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "90"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q07",
+      "question_i18n": {
+        "uz": "Yassi suyakning o‘q otar shikastlanishida o‘q kirgan sohada qanday shakldagi defekt hosil bo‘ladi?",
+        "ru": "Какой формы дефект образуется в области входа пули при огнестрельном повреждении плоской кости?",
+        "en": "In a gunshot injury of a flat bone, what shape of defect is formed at the site of bullet entry?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Silindrsimon shakldagi, devorlari tik defekt",
+          "Kesik konus shaklidagi, kichik asosi o‘q kirgan tomonda bo‘lgan defekt",
+          "Kesik konus shaklidagi, katta asosi o‘q kirgan tomonda bo‘lgan defekt",
+          "Yulduzsimon shakldagi, radial darzlarsiz defekt"
+        ],
+        "ru": [
+          "Дефект цилиндрической формы с отвесными стенками",
+          "Дефект в форме усечённого конуса, малое основание которого обращено в сторону входа пули",
+          "Дефект в форме усечённого конуса, большое основание которого обращено в сторону входа пули",
+          "Дефект звёздчатой формы без радиальных трещин"
+        ],
+        "en": [
+          "A cylindrical defect with vertical walls",
+          "A truncated cone-shaped defect with the small base on the bullet entrance side",
+          "A truncated cone-shaped defect with the large base on the bullet entrance side",
+          "A star-shaped defect without radial cracks"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Yassi suyakda kirish tomonida kesik konus shaklidagi defekt hosil bo‘ladi va o‘qning yo‘nalishi kichik asosdan katta asos tomonga qaratilgan bo‘ladi. Shuning uchun katta asosning kirish tomonida bo‘lishi xato. Silindrsimon va yulduzsimon shakllar yassi suyak defektiga xos emas.",
+        "ru": "В плоской кости со стороны входа образуется дефект в форме усечённого конуса, и направление пули идёт от малого основания к большому. Поэтому расположение большого основания со стороны входа ошибочно. Цилиндрическая и звёздчатая формы для дефекта плоской кости не характерны.",
+        "en": "In a flat bone, a truncated cone-shaped defect is formed on the entrance side, and the direction of the bullet is from the small base toward the large base. Therefore, the large base being on the entrance side is incorrect. Cylindrical and star-shaped forms are not typical of a flat bone defect."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "92"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q08",
+      "question_i18n": {
+        "uz": "Sochmali patrondagi tiqinlar qancha masofagacha mexanik, ba’zan termik ta’sir ko‘rsatishi mumkin?",
+        "ru": "На каком расстоянии пыжи в дробовом патроне могут оказывать механическое, а иногда и термическое действие?",
+        "en": "Up to what distance can the wads in a shotgun cartridge exert a mechanical, and sometimes thermal, effect?"
+      },
+      "options_i18n": {
+        "uz": [
+          "5 m gacha",
+          "15 m gacha",
+          "100 m gacha",
+          "40 m gacha"
+        ],
+        "ru": [
+          "До 5 м",
+          "До 15 м",
+          "До 100 м",
+          "До 40 м"
+        ],
+        "en": [
+          "Up to 5 m",
+          "Up to 15 m",
+          "Up to 100 m",
+          "Up to 40 m"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Tiqinlar 40 m gacha bo‘lgan masofada mexanik, ba’zan termik ta’sir ko‘rsatadi. Boshqa variantlar manbada ko‘rsatilgan masofaga mos kelmaydi. Sochmalarning o‘zi esa yuzlab metrgacha uchadi, tiqinlar bilan adashtirmang.",
+        "ru": "Пыжи оказывают механическое, иногда термическое действие на расстоянии до 40 м. Остальные варианты не соответствуют расстоянию, указанному в источнике. Сама дробь летит на сотни метров, не путайте её с пыжами.",
+        "en": "Wads exert a mechanical, and sometimes thermal, effect at distances up to 40 m. The other options do not correspond to the distance given in the source. The shot pellets themselves fly hundreds of meters; do not confuse them with the wads."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "93"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q09",
+      "question_i18n": {
+        "uz": "Bir necha santimetr masofadan snaryadsiz (bo‘sh) patron bilan otilganda terida odatda nima aniqlanadi?",
+        "ru": "Что обычно обнаруживается на коже при выстреле холостым патроном (без снаряда) с расстояния в несколько сантиметров?",
+        "en": "When fired from a distance of several centimeters with a blank (projectile-less) cartridge, what is usually found on the skin?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Terining mayda yuzaki yorilishlari va qurum, porox zarrachalari bilan qoplangan doira shaklidagi shilinma",
+          "Chuqur ko‘r yara kanali va ichki a’zolarning yorilishi",
+          "Dumaloq, chetlari ichkariga qayrilgan teshib o‘tuvchi yara",
+          "Markaziy teshik atrofida mayda dumaloq yaralar to‘plami"
+        ],
+        "ru": [
+          "Мелкие поверхностные разрывы кожи и ссадина округлой формы, покрытая копотью и частицами пороха",
+          "Глубокий слепой раневой канал и разрывы внутренних органов",
+          "Округлая сквозная рана с завёрнутыми внутрь краями",
+          "Скопление мелких округлых ран вокруг центрального отверстия"
+        ],
+        "en": [
+          "Small superficial skin tears and a circular abrasion covered with soot and powder particles",
+          "A deep blind wound channel and rupture of internal organs",
+          "A round perforating wound with inverted edges",
+          "A cluster of small round wounds around a central hole"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Bir necha santimetr masofadan snaryadsiz patrondan jiddiy jarohat etkazilmaydi. Faqat yuzaki yorilishlar va qurum, porox bilan qoplangan shilinma qoladi. Chuqur kanal va ichki a’zolar yorilishi tirab otishga xos. Teshib o‘tuvchi yara va mayda yaralar to‘plami esa snaryadli yoki sochmali otishga xos.",
+        "ru": "Холостой патрон с расстояния в несколько сантиметров серьёзных повреждений не причиняет. Остаются лишь поверхностные разрывы и ссадина, покрытая копотью и порохом. Глубокий канал и разрывы внутренних органов характерны для выстрела в упор. Сквозная рана и скопление мелких ран характерны для выстрела снарядом или дробью.",
+        "en": "A blank cartridge fired from a distance of several centimeters does not cause serious injury. Only superficial tears and an abrasion covered with soot and powder remain. A deep channel and rupture of internal organs are typical of contact firing. A perforating wound and a cluster of small wounds are typical of firing with a projectile or shot."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "94"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q10",
+      "question_i18n": {
+        "uz": "Gaz quroli irritantlarining izlarini jabrlanganning teri yuzasidan olish uchun qaysi vosita ishlatiladi?",
+        "ru": "Какое средство применяется для взятия следов раздражающих веществ газового оружия с поверхности кожи потерпевшего?",
+        "en": "Which means is used to collect traces of gas weapon irritants from the skin surface of the victim?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Distillangan suv bilan namlangan paxta",
+          "Formalin bilan namlangan doka",
+          "Etil spirti bilan namlangan doka tampon",
+          "Quruq filtr qog‘ozi"
+        ],
+        "ru": [
+          "Вата, смоченная дистиллированной водой",
+          "Марля, смоченная формалином",
+          "Марлевый тампон, смоченный этиловым спиртом",
+          "Сухая фильтровальная бумага"
+        ],
+        "en": [
+          "Cotton moistened with distilled water",
+          "Gauze moistened with formalin",
+          "A gauze swab moistened with ethyl alcohol",
+          "Dry filter paper"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Teri yuzasidan yuvmalar etil spirti bilan namlangan doka tampon yordamida olinadi. Keyin ular plastik paket yoki germetik idishga solinib, laboratoriyaga yuboriladi. Boshqa variantlar manbada ko‘rsatilmagan.",
+        "ru": "Смывы с поверхности кожи берутся марлевым тампоном, смоченным этиловым спиртом. Затем их помещают в пластиковый пакет или герметичную ёмкость и направляют в лабораторию. Остальные варианты в источнике не указаны.",
+        "en": "Washings from the skin surface are collected with a gauze swab moistened with ethyl alcohol. They are then placed in a plastic bag or hermetic container and sent to the laboratory. The other options are not specified in the source."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "95"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q11",
+      "question_i18n": {
+        "uz": "To‘q rangli kiyimda o‘q otishning qo‘shimcha omillari (qurum, porox va metall zarrachalari)ni aniqlash uchun qaysi tekshiruv qo‘llaniladi?",
+        "ru": "Какое исследование применяется для выявления дополнительных факторов выстрела (копоти, порошинок и частиц металла) на тёмной одежде?",
+        "en": "Which examination is used to detect the additional factors of a gunshot (soot, gunpowder and metal particles) on dark-colored clothing?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Infraqizil nurlarda fotografiya",
+          "Ultrabinafsha nurlarda tekshiruv",
+          "Yumshoq (Bukki) nurlarda rentgenografiya",
+          "Emission spektral analiz"
+        ],
+        "ru": [
+          "Фотографирование в инфракрасных лучах",
+          "Исследование в ультрафиолетовых лучах",
+          "Рентгенография мягкими лучами (Букки)",
+          "Эмиссионный спектральный анализ"
+        ],
+        "en": [
+          "Infrared photography",
+          "Ultraviolet examination",
+          "Radiography with soft (Bucky) rays",
+          "Emission spectral analysis"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "To‘q rangli kiyimda qo‘shimcha omillar infraqizil nurlarda fotografiya qilib aniqlanadi. Ultrabinafsha nur oz miqdordagi qurum va moy zarrachalari uchun, Bukki nurlari kirish teshigi atrofidagi metall uchun mo‘ljallangan. Emission spektral analiz esa metallning turini aniqlaydi.",
+        "ru": "На тёмной одежде дополнительные факторы выявляются фотографированием в инфракрасных лучах. Ультрафиолетовое излучение предназначено для выявления небольшого количества частиц копоти и масла, лучи Букки — для выявления металла вокруг входного отверстия. Эмиссионный спектральный анализ определяет вид металла.",
+        "en": "On dark-colored clothing, additional factors are detected by infrared photography. Ultraviolet light is intended for small amounts of soot and oil particles, and Bucky rays are intended for metal around the entrance hole. Emission spectral analysis determines the type of metal."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "98"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q12",
+      "question_i18n": {
+        "uz": "Trotil portlovchi moddalarning qaysi guruhiga kiradi?",
+        "ru": "К какой группе взрывчатых веществ относится тротил?",
+        "en": "Which group of explosives does TNT (trotyl) belong to?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Birlamchi (initsial) portlovchi moddalar",
+          "Ikkilamchi (brizant) portlovchi moddalar",
+          "Tarqatuvchi portlovchi moddalar",
+          "Pirotexnik tarkiblar"
+        ],
+        "ru": [
+          "Первичные (инициирующие) взрывчатые вещества",
+          "Вторичные (бризантные) взрывчатые вещества",
+          "Метательные взрывчатые вещества",
+          "Пиротехнические составы"
+        ],
+        "en": [
+          "Primary (initiating) explosives",
+          "Secondary (brisant) explosives",
+          "Propellant explosives",
+          "Pyrotechnic compositions"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Trotil ikkilamchi (brizant) guruhga kiradi: bunday moddalar detonatsiya ta’sirida qo‘zg‘aladi va ulardan snaryad, granata, mina tayyorlanadi. Birlamchi guruhga simob sianid va qo‘rg‘oshin trinitrorezorsinat kiradi. Tarqatuvchi guruhga porox kiradi. Pirotexnik tarkiblar esa oksidlovchi va yonilg‘i aralashmasidir.",
+        "ru": "Тротил относится к вторичной (бризантной) группе: такие вещества возбуждаются под действием детонации, из них изготавливают снаряды, гранаты, мины. К первичной группе относятся цианид ртути и тринитрорезорцинат свинца. К метательной группе относится порох. Пиротехнические составы — это смесь окислителя и горючего.",
+        "en": "TNT belongs to the secondary (brisant) group: such substances are set off by the action of detonation and are used to make shells, grenades and mines. The primary group includes mercury fulminate and lead trinitroresorcinate. The propellant group includes gunpowder. Pyrotechnic compositions are mixtures of an oxidizer and a fuel."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "99"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q13",
+      "question_i18n": {
+        "uz": "Zamonaviy mayda kalibrli jangovor qurollarda og‘irlik markazi snaryadning pastki tomoniga siljitilgan o‘qlar qo‘llaniladi. Bunday o‘q tanaga kirganda qanday o‘zgarish ro‘y beradi?",
+        "ru": "В современном малокалиберном боевом оружии применяются пули с центром тяжести, смещённым к донной части снаряда. Какое изменение происходит при попадании такой пули в тело?",
+        "en": "Modern small-caliber military weapons use bullets whose center of gravity is shifted toward the base of the projectile. What change occurs when such a bullet enters the body?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Aylanma harakati kuchayib, to‘qimadan tor yara kanali hosil qilib o‘tadi",
+          "Tezligi keskin ortib, to‘qimada deyarli energiya qoldirmasdan chiqib ketadi",
+          "Turg‘unligini yo‘qotib, traektoriyasi va ta’sir vaqti ortadi, energiyasi to‘qimaga to‘liqroq beriladi",
+          "Darhol mayda bo‘laklarga bo‘linib, faqat yuzaki kontuzion ta’sir ko‘rsatadi"
+        ],
+        "ru": [
+          "Вращательное движение усиливается, и она проходит через ткань, образуя узкий раневой канал",
+          "Скорость резко возрастает, и она выходит, почти не оставляя энергии в тканях",
+          "Теряя устойчивость, она удлиняет свой путь и время воздействия, и энергия передаётся тканям более полно",
+          "Сразу распадается на мелкие осколки и оказывает лишь поверхностное контузионное действие"
+        ],
+        "en": [
+          "Its rotational motion increases, and it passes through the tissue forming a narrow wound channel",
+          "Its speed increases sharply, and it exits leaving almost no energy in the tissue",
+          "It loses stability, its trajectory and time of action increase, and its energy is transferred to the tissue more fully",
+          "It immediately fragments into small pieces and produces only a superficial contusion effect"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Og‘irlik markazi siljigan o‘q tanada turg‘un uchishini yo‘qotadi. Shu sababli uning yo‘li va ta’sir vaqti uzayadi, energiya to‘qimalarga ko‘proq o‘tadi va katta jarohat kanali, ichki a’zolar yorilishi, suyaklar sinishi kuzatiladi. Qolgan variantlar bunday o‘qning ta’siriga to‘g‘ri kelmaydi.",
+        "ru": "Пуля со смещённым центром тяжести теряет устойчивость полёта в теле. Поэтому её путь и время воздействия увеличиваются, в ткани передаётся больше энергии, наблюдаются большой раневой канал, разрывы внутренних органов и переломы костей. Остальные варианты не соответствуют действию такой пули.",
+        "en": "A bullet with a shifted center of gravity loses stable flight in the body. As a result, its path and time of action lengthen and more energy is transferred to the tissues, producing a large wound channel, rupture of internal organs and bone fractures. The other options do not correspond to the effect of such a bullet."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "90"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q14",
+      "question_i18n": {
+        "uz": "Ekspert murdada o‘q otar yaraning kanali uzlukli ekanini aniqladi (kanal o‘tgan ayrim to‘qimalar qisqargan). Bu holat odatda nimadan dalolat beradi?",
+        "ru": "Эксперт на трупе установил, что раневой канал огнестрельного ранения прерывистый (некоторые ткани, через которые прошёл канал, сократились). О чём это обычно свидетельствует?",
+        "en": "The expert found that the channel of a gunshot wound in a corpse is discontinuous (some tissues the channel passed through are contracted). What does this finding usually indicate?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Shikastlanishning hayotiyligidan, ya’ni jarohat tirik paytda etkazilganidan",
+          "Jarohat o‘lim qayd etilgandan keyin etkazilganidan",
+          "O‘q tirab otish yo‘li bilan etkazilganidan",
+          "O‘q tanaga kirishdan oldin to‘siqdan qaytganidan"
+        ],
+        "ru": [
+          "О прижизненности повреждения, то есть ранение причинено при жизни",
+          "О том, что ранение причинено после констатации смерти",
+          "О том, что выстрел произведён в упор",
+          "О том, что пуля перед попаданием в тело срикошетила от преграды"
+        ],
+        "en": [
+          "The vitality of the injury, i.e., that the wound was inflicted while the person was alive",
+          "That the wound was inflicted after death was recorded",
+          "That the injury was inflicted by a contact shot",
+          "That the bullet ricocheted off an obstacle before entering the body"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Uzlukli kanal to‘qimalarning qisqarishi natijasida hosil bo‘ladi, bu esa tirik to‘qimaga xos reaksiya. Shuning uchun u shikastlanishning hayotiyligini ko‘rsatadi. Distansiya yoki to‘siq bilan o‘zaro ta’sir kanalning uzluksizligi bilan bog‘liq emas.",
+        "ru": "Прерывистый канал образуется в результате сокращения тканей, а это реакция, свойственная живой ткани. Поэтому он указывает на прижизненность повреждения. Дистанция выстрела или взаимодействие с преградой не связаны с прерывистостью канала.",
+        "en": "A discontinuous channel results from contraction of the tissues, which is a reaction characteristic of living tissue. Therefore, it indicates the vitality of the injury. Range or interaction with an obstacle is not related to the continuity of the channel."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "90"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q15",
+      "question_i18n": {
+        "uz": "Quyidagi moddalardan qaysi biri birlamchi (initsial) portlovchi moddalar guruhiga kiradi va detonatorlar tarkibida ikkilamchi portlovchi moddalarni qo‘zg‘atish uchun ishlatiladi?",
+        "ru": "Какое из перечисленных веществ относится к группе первичных (инициирующих) взрывчатых веществ и применяется в составе детонаторов для возбуждения вторичных взрывчатых веществ?",
+        "en": "Which of the following substances belongs to the group of primary (initiating) explosives and is used in detonators to set off secondary explosives?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Ammonal",
+          "Qora porox",
+          "Trotil",
+          "Qo‘rg‘oshin trinitrorezorsinat"
+        ],
+        "ru": [
+          "Аммонал",
+          "Чёрный порох",
+          "Тротил",
+          "Тринитрорезорцинат свинца"
+        ],
+        "en": [
+          "Ammonal",
+          "Black powder",
+          "TNT (trotyl)",
+          "Lead trinitroresorcinate"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Birlamchi portlovchi moddalar turli ta’sirlarga juda sezgir bo‘ladi, shuning uchun ular detonator va kapsyul tarkibida qo‘llanadi; ularga simob sianid va qo‘rg‘oshin trinitrorezorsinat kiradi. Ammonal va trotil ikkilamchi (brizant), qora porox esa tarqatuvchi moddalar guruhiga mansub.",
+        "ru": "Первичные взрывчатые вещества очень чувствительны к различным воздействиям, поэтому они применяются в составе детонаторов и капсюлей; к ним относятся цианид ртути и тринитрорезорцинат свинца. Аммонал и тротил относятся к вторичным (бризантным), а чёрный порох — к метательным веществам.",
+        "en": "Primary explosives are highly sensitive to various influences, so they are used in detonators and caps; they include mercury fulminate and lead trinitroresorcinate. Ammonal and TNT belong to the secondary (brisant) group, and black powder belongs to the propellant group."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "99"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q16",
+      "question_i18n": {
+        "uz": "Ekspert uzun naysimon suyak bo‘laklarini yopishtirib tikladi. Suyakning bir tomonida atrofiga radial darzlar tarqalgan dumaloq defekt, qarama-qarshi tomonida esa kattaroq defekt va undan uzunasiga yo‘nalgan darzlar bor. O‘qning yo‘nalishi qanday?",
+        "ru": "Эксперт склеил фрагменты длинной трубчатой кости. На одной стороне кости имеется круглый дефект с радиальными трещинами по периметру, на противоположной — более крупный дефект и отходящие от него трещины продольного направления. Каково направление полёта пули?",
+        "en": "The expert reconstructed fragments of a long tubular bone by gluing them together. On one side of the bone there is a round defect with radial cracks spreading around it, and on the opposite side there is a larger defect with cracks running lengthwise from it. What is the direction of the bullet?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Kattaroq defekt tomonidan kirib, radial darzli dumaloq defekt tomonidan chiqqan",
+          "Radial darzli dumaloq defekt tomonidan kirib, kattaroq defekt tomonidan chiqqan",
+          "Ikkala defekt ham kirish teshigi bo‘lib, jarohat ikkita o‘q bilan etkazilgan",
+          "Naysimon suyakda kirish va chiqish tomonini farqlab bo‘lmaydi"
+        ],
+        "ru": [
+          "Вошла со стороны более крупного дефекта и вышла со стороны круглого дефекта с радиальными трещинами",
+          "Вошла со стороны круглого дефекта с радиальными трещинами и вышла со стороны более крупного дефекта",
+          "Оба дефекта являются входными, повреждение причинено двумя пулями",
+          "В трубчатой кости невозможно различить сторону входа и выхода"
+        ],
+        "en": [
+          "It entered on the side of the larger defect and exited on the side of the round defect with radial cracks",
+          "It entered on the side of the round defect with radial cracks and exited on the side of the larger defect",
+          "Both defects are entrance holes, and the injury was inflicted by two bullets",
+          "In a tubular bone, the entrance and exit sides cannot be distinguished"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Naysimon suyakda kirish tomonida radial darzli dumaloq defekt bo‘ladi. Chiqish tomonida defekt kattaroq, undan chiquvchi darzlar esa uzunasiga yo‘nalgan. Shu belgilar bo‘yicha o‘qning yo‘nalishi aniqlanadi, qolgan fikrlar bu qonuniyatga zid.",
+        "ru": "В трубчатой кости на стороне входа образуется круглый дефект с радиальными трещинами. На стороне выхода дефект крупнее, а отходящие от него трещины направлены продольно. По этим признакам определяется направление полёта пули; остальные утверждения противоречат этой закономерности.",
+        "en": "In a tubular bone, the entrance side has a round defect with radial cracks. On the exit side, the defect is larger, and the cracks extending from it run lengthwise. The direction of the bullet is determined by these signs; the other statements contradict this pattern."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "92"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q17",
+      "question_i18n": {
+        "uz": "Portlash qurboni jarohatlarini tahlil qilgan ekspert detonatsiya mahsulotlarining ta’sirini topmadi. Jarohatlar atrof-muhit zarb to‘lqini, portlovchi moslama bo‘laklari va ikkilamchi snaryadlar ta’sirida vujudga kelgan. Bu portlashning qaysi distansiyasiga mos keladi?",
+        "ru": "Эксперт, анализируя повреждения пострадавшего при взрыве, не обнаружил действия продуктов детонации. Повреждения возникли от действия ударной волны окружающей среды, осколков взрывного устройства и вторичных снарядов. Какой дистанции взрыва это соответствует?",
+        "en": "An expert analyzing the injuries of an explosion victim found no effect of detonation products. The injuries were caused by the environmental shock wave, fragments of the explosive device and secondary projectiles. Which explosion range does this correspond to?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Nisbatan yaqin distansiya",
+          "Portlovchi moslamaning tana bilan kontakti",
+          "Yaqin distansiya",
+          "Yaqin bo‘lmagan distansiya"
+        ],
+        "ru": [
+          "Относительно близкая дистанция",
+          "Контакт взрывного устройства с телом",
+          "Близкая дистанция",
+          "Неблизкая дистанция"
+        ],
+        "en": [
+          "Relatively close range",
+          "Contact of the explosive device with the body",
+          "Close range",
+          "Non-close range"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Nisbatan yaqin distansiyada detonatsiya mahsulotlari yetib bormaydi, shikastni zarb to‘lqini, moslama bo‘laklari va ikkilamchi snaryadlar etkazadi. Kontakt va yaqin distansiyada detonatsiya mahsulotlari ham ta’sir qiladi. Yaqin bo‘lmagan distansiyada zarb to‘lqini ham yo‘q, asosiy omillar faqat bo‘laklar va ikkilamchi snaryadlardir.",
+        "ru": "На относительно близкой дистанции продукты детонации не достигают тела, повреждения причиняют ударная волна, осколки устройства и вторичные снаряды. При контакте и на близкой дистанции действуют и продукты детонации. На неблизкой дистанции нет и ударной волны, основными факторами являются только осколки и вторичные снаряды.",
+        "en": "At relatively close range, detonation products do not reach the victim, and the damage is caused by the shock wave, device fragments and secondary projectiles. At contact and close range, detonation products also have an effect. At non-close range, there is no shock wave either, and the main factors are only fragments and secondary projectiles."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "101"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q18",
+      "question_i18n": {
+        "uz": "Murda ekspertizasida o‘q otar jarohat jabrlanganning o‘zi tomonidan etkazilganmi, degan savol hal etilmoqda. Qurol tepkisini bosa olish imkoniyati, otish distansiyasi va masofasi hamda kanal yo‘nalishi inobatga olinganda, qaysi topilma o‘z qo‘li bilan otilganlikni qo‘llab-quvvatlaydi?",
+        "ru": "При экспертизе трупа решается вопрос, причинено ли огнестрельное ранение самим пострадавшим. С учётом возможности нажать на спусковой крючок, дистанции и расстояния выстрела, а также направления канала, какая находка подтверждает самостоятельный выстрел?",
+        "en": "In a corpse examination, the question of whether a gunshot wound was self-inflicted is being resolved. Taking into account the possibility of pulling the trigger, the firing distance and range, and the direction of the channel, which finding supports self-inflicted shooting?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Chiqish teshigi atrofida qurum va porox zarrachalarining aniqlanishi",
+          "Kirish teshigida shilinish hoshiyasining butunlay yo‘qligi",
+          "Qo‘l yuzalari, burun va quloq teshiklarida qurum, stvol uchi va kaftda jabrlanganning qon izlari",
+          "Ichki a’zolarda karboksigemoglobin hosil bo‘lmaganligi"
+        ],
+        "ru": [
+          "Обнаружение копоти и частиц пороха вокруг выходного отверстия",
+          "Полное отсутствие пояска осаднения на входном отверстии",
+          "Следы копоти на поверхностях рук, в носовых и ушных отверстиях, следы крови пострадавшего на дульном срезе ствола и на ладони",
+          "Отсутствие образования карбоксигемоглобина во внутренних органах"
+        ],
+        "en": [
+          "Detection of soot and gunpowder particles around the exit hole",
+          "Complete absence of an abrasion collar at the entrance hole",
+          "Soot on the surfaces of the hand, in the nostrils and ear openings, and the victim's own blood traces on the muzzle end and palm",
+          "Absence of carboxyhemoglobin formation in the internal organs"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "O‘zini otgan shaxsning qo‘llarida, burun va quloq teshiklarida qurum izlari, qurol stvoli uchi va kaftida esa uning o‘z qoni topilishi mumkin. Chiqish teshigi atrofida qo‘shimcha omillar bo‘lmaydi. Shilinish hoshiyasi kirish teshigining odatiy belgisi, karboksigemoglobin esa porox gazlari ta’sirini ko‘rsatadi, ikkalasi ham o‘z qo‘li bilan otilganlikni isbotlamaydi.",
+        "ru": "У стрелявшего в себя на руках, в носовых и ушных отверстиях могут быть обнаружены следы копоти, а на дульном срезе ствола оружия и на ладони — его собственная кровь. Вокруг выходного отверстия дополнительных факторов не бывает. Поясок осаднения — обычный признак входного отверстия, а карбоксигемоглобин указывает на действие пороховых газов; ни то, ни другое не доказывает самостоятельный выстрел.",
+        "en": "On the hands, in the nostrils and ear openings of a person who shot himself, soot traces may be found, and his own blood may be found on the muzzle end of the weapon and the palm. There are no additional factors around the exit hole. The abrasion collar is a usual sign of an entrance hole, and carboxyhemoglobin indicates the effect of powder gases; neither proves self-inflicted shooting."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "97"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q19",
+      "question_i18n": {
+        "uz": "Bilak sohasidagi teshib o‘tuvchi o‘q otar jarohatda chiqish teshigi atrofida konus shaklidagi to‘qima defekti aniqlandi, konusning uchi tashqariga qaragan. Bu defekt qaysi sharoitda hosil bo‘lishi mumkin?",
+        "ru": "При сквозном огнестрельном ранении области предплечья вокруг выходного отверстия обнаружен конусообразный дефект ткани, вершина конуса обращена наружу. В каких условиях мог образоваться этот дефект?",
+        "en": "In a perforating gunshot wound of the forearm, a cone-shaped tissue defect with its apex pointing outward was found around the exit hole. Under what circumstances can this defect form?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Porox gazlari chiqish teshigigacha yetib borib, to‘qimani emirgan bo‘lsa",
+          "O‘q tanada deformatsiyaga uchrab, yon yuzasi bilan chiqqan bo‘lsa",
+          "Tananing yupqa sohasida o‘q chiqish paytida katta energiyasini saqlab, yulma ta’sir ko‘rsatgan bo‘lsa",
+          "Chiqish sohasida tana qattiq jismga zich tiralib turgan bo‘lsa"
+        ],
+        "ru": [
+          "Если пороховые газы достигли выходного отверстия и разрушили ткань",
+          "Если пуля деформировалась в теле и вышла боковой поверхностью",
+          "Если в тонкой области тела пуля при выходе сохранила большую энергию и оказала отрывающее действие",
+          "Если в области выхода тело было плотно прижато к твёрдому предмету"
+        ],
+        "en": [
+          "If powder gases reached the exit hole and destroyed the tissue",
+          "If the bullet deformed in the body and exited with its side surface",
+          "If, in a thin area of the body, the bullet retained high energy at the moment of exit and exerted a tearing effect",
+          "If the body was pressed tightly against a hard object in the exit area"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Chiqish teshigi uchun defekt odatda xos emas. Faqat bilak, elka kabi yupqa sohalarda o‘q energiyasini yo‘qotmasdan chiqadi va yulma ta’sir ko‘rsatib, uchi tashqariga qaragan konussimon defekt hosil qiladi. Qattiq jismga tirab turish esa asosan shilinish hoshiyasini beradi, porox gazlari chiqish sohasiga ta’sir qilmaydi.",
+        "ru": "Для выходного отверстия дефект обычно не характерен. Лишь в тонких областях, таких как предплечье или плечо, пуля выходит, не теряя энергии, и, оказывая отрывающее действие, образует конусовидный дефект с вершиной, обращённой наружу. Прижатие к твёрдому предмету в основном даёт поясок осаднения, а пороховые газы на область выхода не действуют.",
+        "en": "A defect is usually not characteristic of an exit hole. Only in thin areas such as the forearm or shoulder does the bullet exit without losing energy and, through a tearing effect, produce a cone-shaped defect with its apex pointing outward. Pressing against a hard object mainly produces an abrasion collar, and powder gases do not affect the exit area."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "93"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q20",
+      "question_i18n": {
+        "uz": "Murdada bitta kirish yarasi bor, uning atrofida ham kiyimda ham qurum, porox va metall zarrachalari topilmadi. Voqea joyida o‘q teshib o‘tgan eshik aniqlandi. Ekspertning qaysi xulosasi to‘g‘ri?",
+        "ru": "На трупе имеется одна входная рана, вокруг которой ни на коже, ни на одежде не обнаружено копоти, частиц пороха и металла. На месте происшествия обнаружена дверь, простреленная пулей. Какой вывод эксперта верен?",
+        "en": "The corpse has a single entrance wound, and no soot, gunpowder or metal particles were found around it or on the clothing. At the scene, a door that the bullet had perforated was identified. Which conclusion of the expert is correct?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Qo‘shimcha omillar izining yo‘qligi yaqin masofadan otilganlikni inkor etmaydi, chunki ular to‘siqda qolgan bo‘lishi mumkin",
+          "Qo‘shimcha omillar yo‘qligi otish faqat yaqin bo‘lmagan masofadan amalga oshirilganini ishonchli isbotlaydi",
+          "Bunday manzara faqat to‘liq germetik tirab otilganda kuzatiladi, shuning uchun otish tirab bo‘lgan",
+          "Bunday topilma jarohat o‘q otar quroldan emas, balki o‘tkir predmetdan etkazilganini bildiradi"
+        ],
+        "ru": [
+          "Отсутствие следов дополнительных факторов не исключает выстрела с близкого расстояния, так как они могли остаться на преграде",
+          "Отсутствие дополнительных факторов достоверно доказывает, что выстрел произведён только с неблизкого расстояния",
+          "Такая картина наблюдается только при полностью герметичном выстреле в упор, поэтому выстрел был в упор",
+          "Такая находка означает, что повреждение причинено не огнестрельным оружием, а острым предметом"
+        ],
+        "en": [
+          "The absence of traces of additional factors does not exclude a shot from close range, since they may have remained on the obstacle",
+          "The absence of additional factors reliably proves that the shot was fired only from a non-close range",
+          "Such a picture is observed only in a fully tight contact shot, so the shot was a contact shot",
+          "Such a finding indicates that the injury was inflicted not by a firearm but by a sharp object"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "O‘q va qurol stvoli orasida to‘siq bo‘lsa, qurum, porox va boshqa qo‘shimcha omillar to‘siqda qoladi, o‘q esa uni teshib nishonga tegadi. Shu sababli bu omillarning yo‘qligi masofa haqida bir ma’noli xulosa chiqarishga imkon bermaydi. Tirab otishda esa omillar aksincha yara kanalida topiladi.",
+        "ru": "Если между пулей и стволом оружия есть преграда, копоть, порох и другие дополнительные факторы остаются на преграде, а пуля пробивает её и попадает в цель. Поэтому отсутствие этих факторов не позволяет сделать однозначный вывод о расстоянии. При выстреле в упор, напротив, факторы обнаруживаются в раневом канале.",
+        "en": "If there is an obstacle between the bullet and the weapon's muzzle, soot, gunpowder and other additional factors remain on the obstacle, while the bullet perforates it and hits the target. Therefore, the absence of these factors does not allow an unambiguous conclusion about the distance. In a contact shot, on the contrary, the factors are found in the wound channel."
+      },
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "188"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q21",
+      "question_i18n": {
+        "uz": "Stvolni kalla asosiga qaratgan holda bo‘yinga snaryadsiz (bo‘sh) patron bilan tirab otilgan. Jabrlanganda qaysi o‘zgarishni kutish mumkin?",
+        "ru": "Выстрел в упор в область шеи произведён холостым патроном (без снаряда) при направлении ствола к основанию черепа. Какое изменение можно ожидать у потерпевшего?",
+        "en": "A blank cartridge (without a projectile) was fired in contact with the neck, with the barrel directed at the base of the skull. Which change can be expected in the victim?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Bo‘yinning orqa tomonida yulduzsimon chiqish teshigi va undan chiqqan snaryad",
+          "Uzunligi 40-50 sm bo‘lgan ko‘r yara kanali va unda plastmassa bo‘laklari",
+          "Faqat kirish sohasida qurum va porox bilan qoplangan yuzaki halqasimon shilinma",
+          "Bosh miya va uning pardalari ostiga qon quyilishlar"
+        ],
+        "ru": [
+          "Звёздчатое выходное отверстие на задней поверхности шеи и вышедший из него снаряд",
+          "Слепой раневой канал длиной 40-50 см с обломками пластмассы в нём",
+          "Только поверхностная кольцевидная ссадина в области входа, покрытая копотью и порохом",
+          "Кровоизлияния в головной мозг и под его оболочки"
+        ],
+        "en": [
+          "A stellate exit wound on the back of the neck and a projectile that has exited through it",
+          "A blind wound track 40-50 cm long containing plastic fragments",
+          "Only a superficial ring-shaped abrasion at the entrance site, covered with soot and gunpowder",
+          "Hemorrhages in the brain and under its membranes"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Snaryadsiz patronda o‘q yo‘q, jarohatni tirab otishda porox gazlarining bosimi hosil qiladi. Stvol kalla asosiga yo‘naltirilganda gazlar bosh miya va pardalari ostiga qon quyilishlarini keltirib chiqaradi. Chiqish teshigi bo‘lmaydi, yuzaki shilinma esa faqat bir necha santimetr masofadan otishda uchraydi.",
+        "ru": "В патроне без снаряда пули нет, повреждение при выстреле в упор создаётся давлением пороховых газов. Когда ствол направлен к основанию черепа, газы вызывают кровоизлияния в головной мозг и под его оболочки. Выходного отверстия не будет, а поверхностная ссадина встречается только при выстреле с расстояния нескольких сантиметров.",
+        "en": "A blank cartridge contains no bullet; in a contact shot the injury is produced by the pressure of the powder gases. When the barrel is directed at the base of the skull, the gases cause hemorrhages in the brain and under its membranes. There is no exit wound, and a superficial abrasion occurs only when firing from a distance of a few centimeters."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "94"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q22",
+      "question_i18n": {
+        "uz": "Ekspert murdaning bir tomonida ko‘p sonli, bir-biriga yaqin joylashgan kirish teshiklarini topdi. Teshiklarning shakli va o‘lchami, yara kanallari yo‘nalishi hamda otish distansiyasi o‘zaro farqlanmaydi. Jarohatlar qanday quroldan etkazilgan bo‘lishi ehtimol?",
+        "ru": "Эксперт обнаружил на одной стороне трупа множественные, близко расположенные входные отверстия. Форма и размеры отверстий, направление раневых каналов и дистанция выстрела между собой не различаются. Из какого оружия, вероятно, причинены повреждения?",
+        "en": "The expert found multiple closely spaced entrance wounds on one side of a corpse. The shape and size of the wounds, the direction of the wound tracks, and the firing distance do not differ from one another. From what type of weapon were the injuries most likely inflicted?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Silliq stvolli ikki stvolli ov miltig‘idan sochmali patron bilan",
+          "Avtomatik o‘q otar quroldan",
+          "Siqilgan havoda ishlaydigan pnevmatik quroldan",
+          "Yagona o‘qli kalta stvolli pistoletdan bitta otishda"
+        ],
+        "ru": [
+          "Из двуствольного охотничьего ружья с гладкими стволами дробовым патроном",
+          "Из автоматического огнестрельного оружия",
+          "Из пневматического оружия, работающего на сжатом воздухе",
+          "Из короткоствольного пистолета с одной пулей одним выстрелом"
+        ],
+        "en": [
+          "A smooth-bore double-barreled hunting shotgun with a shot cartridge",
+          "An automatic firearm",
+          "A pneumatic weapon operating on compressed air",
+          "A single-shot short-barreled pistol, in a single discharge"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Avtomatik qurollardan bir minutda 900 tagacha o‘q uzish mumkin. Shu sababli tananing bir tomonida bir-biriga yaqin, bir xil ko‘rinishdagi ko‘p sonli jarohatlar hosil bo‘ladi. Sochmali patron ko‘pincha bitta asosiy teshik va atrofida mayda yaralar beradi, pnevmatik qurol esa bunday zichlikda jarohat etkazmaydi.",
+        "ru": "Из автоматического оружия можно произвести до 900 выстрелов в минуту. Поэтому на одной стороне тела образуются многочисленные близко расположенные однотипные повреждения. Дробовой патрон чаще даёт одно основное отверстие и мелкие раны вокруг него, а пневматическое оружие не причиняет повреждений с такой плотностью.",
+        "en": "Automatic weapons can fire up to 900 rounds per minute. For this reason, numerous closely spaced injuries of identical appearance are produced on one side of the body. A shot cartridge usually produces one main hole with small wounds around it, while a pneumatic weapon does not inflict injuries of such density."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "97"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q23",
+      "question_i18n": {
+        "uz": "Jabrlanganda tirab otilgan jarohat topildi: terida siqilgan havo oqimiga xos lat eyish alomatlari bor, kirish atrofida qurum va porox yo‘q, yara kanali ko‘r. Jarohat qaysi quroldan etkazilgan bo‘lishi ehtimol?",
+        "ru": "У потерпевшего обнаружено повреждение от выстрела в упор: на коже имеются признаки контузионного действия струи сжатого воздуха, вокруг входного отверстия нет копоти и пороха, раневой канал слепой. Из какого оружия, вероятно, причинено повреждение?",
+        "en": "A contact gunshot wound was found in the victim: the skin shows signs of contusion characteristic of a compressed-air jet, there is no soot or gunpowder around the entrance, and the wound track is blind. From what weapon was the injury most likely inflicted?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Porox gazlari hisobiga ishlaydigan start pistoletidan",
+          "Stvolli gaz quroli patronidan",
+          "Pnevmatik quroldan",
+          "Qo‘lbola tayyorlangan atipik quroldan"
+        ],
+        "ru": [
+          "Из стартового пистолета, работающего за счёт пороховых газов",
+          "Из патрона газового оружия со стволом",
+          "Из пневматического оружия",
+          "Из самодельного атипичного оружия"
+        ],
+        "en": [
+          "A starter pistol operating by means of powder gases",
+          "A cartridge of a barreled gas weapon",
+          "A pneumatic weapon",
+          "A homemade atypical weapon"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Pnevmatik qurolda snaryad siqilgan havo bilan harakatlanadi, shuning uchun qo‘shimcha omillar izi bo‘lmaydi, tirab otilganda esa havo oqimi lat eyish belgisini beradi. Bunday qurollardan tanani teshib o‘tadigan jarohat etkazilmaydi, yara kanallari ko‘r bo‘ladi. Porox ishlatadigan qurollarda qurum va porox izlari kutiladi.",
+        "ru": "В пневматическом оружии снаряд приводится в движение сжатым воздухом, поэтому следов дополнительных факторов выстрела нет, а при выстреле в упор поток воздуха оставляет признак контузионного действия. Из такого оружия не причиняются сквозные повреждения тела, раневые каналы бывают слепыми. При использовании оружия с порохом следует ожидать следы копоти и пороха.",
+        "en": "In a pneumatic weapon the projectile is propelled by compressed air, so there are no traces of additional factors, and in a contact shot the air jet produces a sign of contusion. Such weapons do not inflict through-and-through wounds; the wound tracks are blind. Soot and gunpowder traces are expected with weapons that use gunpowder."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "96"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q24",
+      "question_i18n": {
+        "uz": "Kirish teshigi atrofida yonib ulgurmagan o‘q dori zarrachalari ignasimon shaklda ekani aniqlandi. Bu holat jarohat qaysi quroldan etkazilganligidan darak berishi mumkin?",
+        "ru": "Установлено, что вокруг входного отверстия частицы несгоревшего пороха имеют игольчатую форму. Из какого оружия, возможно, причинено повреждение, судя по этому признаку?",
+        "en": "It was found that the unburnt gunpowder particles around the entrance wound are needle-shaped. What type of weapon might this indicate the injury was inflicted from?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Revolverdan",
+          "Miltiqdan",
+          "Pistolet-pulemyotdan",
+          "Stvoli kesilgan qo‘lbola miltiqdan"
+        ],
+        "ru": [
+          "Из револьвера",
+          "Из винтовки",
+          "Из пистолета-пулемёта",
+          "Из самодельной винтовки с обрезанным стволом"
+        ],
+        "en": [
+          "A revolver",
+          "A rifle",
+          "A submachine gun",
+          "A homemade sawed-off rifle"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Yonib ulgurmagan o‘q dori zarrachalari uchburchak shaklda bo‘lsa, bu miltiqdan otilganligini ko‘rsatadi, ignasimon bo‘lsa revolverdan otilganligini bildiradi. Boshqa variantlar zarracha shakliga ko‘ra bunday xulosaga asos bermaydi.",
+        "ru": "Если частицы несгоревшего пороха имеют треугольную форму, это указывает на выстрел из винтовки, если игольчатую — на выстрел из револьвера. Остальные варианты по форме частиц не дают оснований для такого вывода.",
+        "en": "If the unburnt gunpowder particles are triangular, this indicates firing from a rifle; if they are needle-shaped, it indicates firing from a revolver. The other options provide no basis for such a conclusion based on particle shape."
+      },
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "201"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q25",
+      "question_i18n": {
+        "uz": "Tananing qalin bo‘lmagan sohalari (bilak va ko‘krak) shikastlangan murdada ikkita kirish va ikkita chiqish teshigi topildi. Voqea joyida faqat bitta o‘q otilgani aniqlangan. Bu holat qanday izohlanadi?",
+        "ru": "На трупе с повреждением тонких участков тела (предплечье и грудь) обнаружены два входных и два выходных отверстия. Установлено, что на месте происшествия был произведён только один выстрел. Как это объясняется?",
+        "en": "Two entrance wounds and two exit wounds were found on a corpse with injuries to thin parts of the body (forearm and chest). It was established that only one bullet was fired at the scene. How is this explained?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Ikkinchi juft teshikni bilak suyagining bo‘laklari ikkilamchi snaryad sifatida hosil qilgan, o‘q esa faqat ko‘krakka kirgan",
+          "Bitta o‘q avval bilakni, so‘ng ko‘krakni teshib o‘tgan va har ikki sohada kirish hamda chiqish teshigi hosil qilgan",
+          "O‘q suyakka urilib ikkiga bo‘lingan va bitta kirish teshigidan ikkita chiqish teshigi paydo bo‘lgan",
+          "Ikkita o‘q bir nuqtadan birin-ketin kirgan va shu sababli teshiklar soni ikki baravar ko‘paygan"
+        ],
+        "ru": [
+          "Вторую пару отверстий образовали обломки кости предплечья как вторичные снаряды, а пуля вошла только в грудь",
+          "Одна пуля сначала прошла через предплечье, затем через грудь и образовала входное и выходное отверстия в обеих областях",
+          "Пуля, ударившись о кость, разделилась надвое, и из одного входного отверстия образовались два выходных",
+          "Две пули последовательно вошли в одну точку, поэтому число отверстий удвоилось"
+        ],
+        "en": [
+          "The second pair of wounds was produced by fragments of the forearm bone acting as secondary projectiles, while the bullet entered only the chest",
+          "A single bullet first passed through the forearm and then the chest, producing an entrance and an exit wound in both areas",
+          "The bullet struck a bone and split in two, and two exit wounds appeared from one entrance wound",
+          "Two bullets entered one after another through the same point, and therefore the number of wounds doubled"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Tananing yupqa qismlarida (bilak, ko‘krak) bitta o‘q ketma-ket ikki sohadan o‘tib, ikki juft teshik qoldirishi mumkin. Bo‘linib ketgan o‘q yoki ikki o‘q bir nuqtadan kirgan holda esa kirish teshiklari soni ikkita bo‘lmaydi. Bitta o‘q otilgani aniq bo‘lsa, ikki o‘q varianti ham mos kelmaydi.",
+        "ru": "В тонких частях тела (предплечье, грудь) одна пуля может последовательно пройти через две области и оставить две пары отверстий. При разделившейся пуле или при входе двух пуль в одну точку входных отверстий не было бы два. Если точно известно, что выстрел был один, вариант с двумя пулями также не подходит.",
+        "en": "In thin parts of the body (forearm, chest), a single bullet can pass consecutively through two areas and leave two pairs of wounds. If the bullet split or two bullets entered through the same point, the number of entrance wounds would not be two. If it is certain that only one bullet was fired, the two-bullet option also does not fit."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "90"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q26",
+      "question_i18n": {
+        "uz": "Jarrohlik paytida shifokor ko‘r o‘q otar yaradan o‘qni topdi va uni keyinchalik kriminalistik tekshiruvga topshirishi kerak. O‘qni olishda qaysi usul to‘g‘ri hisoblanadi?",
+        "ru": "Во время операции врач обнаружил в слепой огнестрельной ране пулю, которую впоследствии необходимо передать на криминалистическое исследование. Какой способ извлечения пули правильный?",
+        "en": "During surgery, a physician found a bullet in a blind gunshot wound and must later hand it over for forensic examination. Which method of removing the bullet is correct?"
+      },
+      "options_i18n": {
+        "uz": [
+          "O‘qni metall pinset bilan mahkam qisib, tez tortib olish",
+          "O‘qni qisqich bilan ushlab, yuzasini doka bilan artib tozalash",
+          "O‘qni olgach, qurum izlarini yo‘qotish uchun antiseptik eritmada yuvish",
+          "Yuzasini tirnamaslik uchun o‘qni qo‘l barmoqlari yordamida olish"
+        ],
+        "ru": [
+          "Крепко зажать пулю металлическим пинцетом и быстро вытянуть",
+          "Удерживая пулю зажимом, очистить её поверхность, протерев марлей",
+          "После извлечения промыть пулю в антисептическом растворе, чтобы удалить следы копоти",
+          "Извлечь пулю пальцами рук, чтобы не поцарапать её поверхность"
+        ],
+        "en": [
+          "Gripping the bullet firmly with metal forceps and pulling it out quickly",
+          "Holding the bullet with a clamp and wiping its surface clean with gauze",
+          "After removal, washing the bullet in an antiseptic solution to get rid of soot traces",
+          "Removing the bullet with the fingers so as not to scratch its surface"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "O‘q stvol kanalidan o‘tganda uning yuzasida ko‘zga ko‘rinmaydigan izlar qoladi, ular orqali qaysi stvoldan otilgani aniqlanadi. Metall asbob bilan qisish, artish yoki yuvish bu izlarni buzib, identifikatsiyani imkonsiz qilishi mumkin. Shuning uchun o‘qni barmoqlar bilan olish tavsiya etiladi.",
+        "ru": "При прохождении пули по каналу ствола на её поверхности остаются невидимые глазом следы, по которым определяют, из какого ствола произведён выстрел. Сдавление металлическим инструментом, протирание или промывание могут нарушить эти следы и сделать идентификацию невозможной. Поэтому рекомендуется извлекать пулю пальцами.",
+        "en": "When a bullet passes through the barrel bore, invisible marks remain on its surface, by which the barrel it was fired from can be determined. Gripping with a metal instrument, wiping, or washing may destroy these marks and make identification impossible. Therefore, removing the bullet with the fingers is recommended."
+      },
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "181"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q27",
+      "question_i18n": {
+        "uz": "Murda terisida cho‘zinchoq tarnovsimon tegib o‘tuvchi yara topildi. Uning bir uchida egilgan, yarim oy shaklida shilingan chet va ifloslanish belbog‘i bor, ikkinchi uchi esa o‘tkirroq, kam shilingan va torroq yirtilishli. O‘q qaysi yo‘nalishda uchgan?",
+        "ru": "На коже трупа обнаружена удлинённая желобовидная касательная рана. На одном её конце имеется изогнутый, полулунной формы осаднённый край и пояс загрязнения, другой конец более острый, с меньшей осаднённостью и более узкими разрывами. В каком направлении летела пуля?",
+        "en": "An elongated, groove-like grazing (tangential) wound was found on the skin of a corpse. At one end there is a curved, crescent-shaped abraded margin and a bullet wipe (contamination ring); the other end is sharper, less abraded, and has a narrower laceration. In which direction did the bullet travel?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Shilingan va ifloslangan uchdan o‘tkir uchga qarab",
+          "O‘tkir uchdan shilingan va ifloslangan uchga qarab",
+          "Yaraning o‘rtasidan ikkala uchiga qarab",
+          "Yo‘nalishni aniqlab bo‘lmaydi, chunki tegib o‘tuvchi yarada kirish va chiqish farqi bo‘lmaydi"
+        ],
+        "ru": [
+          "От осаднённого и загрязнённого конца к острому концу",
+          "От острого конца к осаднённому и загрязнённому концу",
+          "От середины раны к обоим её концам",
+          "Направление определить невозможно, так как при касательной ране нет различия между входом и выходом"
+        ],
+        "en": [
+          "From the abraded and contaminated end toward the sharp end",
+          "From the sharp end toward the abraded and contaminated end",
+          "From the middle of the wound toward both ends",
+          "The direction cannot be determined, because in a grazing wound there is no difference between entrance and exit"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Tegib o‘tuvchi yarada o‘qning kirish tomoni egilgan, shilingan chetga ega bo‘ladi va u yerda ifloslanish belbog‘i uchraydi. Chiqish tomoni esa o‘tkirroq, kam shilingan, ba’zan torroq yirtilishli bo‘ladi. Shuning uchun o‘q shilingan uchdan o‘tkir uchga qarab harakatlangan.",
+        "ru": "При касательной ране входная сторона пули имеет изогнутый осаднённый край, и там встречается пояс загрязнения. Выходная сторона более острая, с меньшей осаднённостью, иногда с более узкими разрывами. Поэтому пуля двигалась от осаднённого конца к острому.",
+        "en": "In a grazing wound, the entrance side of the bullet has a curved, abraded margin, and a bullet wipe is found there. The exit side is sharper, less abraded, and sometimes has a narrower laceration. Therefore, the bullet traveled from the abraded end toward the sharp end."
+      },
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "181-182"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q28",
+      "question_i18n": {
+        "uz": "Bir xil o‘qdan etkazilgan ikkita kirish yarasi tekshirilmoqda: biri peshonada (teri ostida suyak yaqin), ikkinchisi qorinda. Qaysi birida shilinish hoshiyasi kengroq bo‘lishi kutiladi?",
+        "ru": "Исследуются две входные раны от одной и той же пули: одна на лбу (под кожей близко находится кость), другая на животе. В какой из них ожидается более широкий поясок осаднения?",
+        "en": "Two entrance wounds inflicted by identical bullets are being examined: one on the forehead (bone close beneath the skin), the other on the abdomen. In which one is the abrasion collar expected to be wider?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Peshonada, chunki suyak yaqin bo‘lgan joyda o‘q terini ko‘proq ishqalaydi",
+          "Ikkalasida bir xil, chunki hoshiya kengligi faqat o‘q diametriga bog‘liq",
+          "Qorinda, chunki yumshoq sohalarda hoshiya suyak yaqin joylarga nisbatan kengroq bo‘ladi",
+          "Hoshiya faqat chiqish teshigida bo‘ladi, kirish teshigida shilinish hoshiyasi hosil bo‘lmaydi"
+        ],
+        "ru": [
+          "На лбу, так как там, где близко кость, пуля сильнее трёт кожу",
+          "В обеих одинаковый, так как ширина пояска зависит только от диаметра пули",
+          "На животе, так как в мягких областях поясок шире, чем в местах близкого расположения кости",
+          "Поясок бывает только у выходного отверстия, во входном отверстии поясок осаднения не образуется"
+        ],
+        "en": [
+          "On the forehead, because where bone is close, the bullet rubs the skin more",
+          "Equal in both, because the width of the collar depends only on the bullet diameter",
+          "On the abdomen, because in soft areas the collar is wider than in areas where bone is close",
+          "The collar is present only at the exit wound; no abrasion collar forms at the entrance wound"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Kirishda o‘qning yon tomoni teriga ishqalanib, 1-3 mm kenglikdagi shilinish hoshiyasi hosil qiladi. Qorin va dumba kabi yumshoq sohalarda terining chuqurroq botishi tufayli hoshiya suyak yaqin joylarga qaraganda kengroq bo‘ladi. Hoshiya chiqish teshigida ko‘pincha bo‘lmaydi.",
+        "ru": "При входе боковая поверхность пули трётся о кожу и образует поясок осаднения шириной 1-3 мм. В мягких областях, таких как живот и ягодицы, из-за более глубокого вдавления кожи поясок шире, чем в местах, близких к кости. У выходного отверстия поясок часто отсутствует.",
+        "en": "At entry, the side of the bullet rubs against the skin and forms an abrasion collar 1-3 mm wide. In soft areas such as the abdomen and buttock, because the skin indents more deeply, the collar is wider than in areas where bone is close. The collar is often absent at the exit wound."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "91"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q29",
+      "question_i18n": {
+        "uz": "Kirish teshigi atrofidan 180 sm masofada otishning faqat porox va metall zarrachalari (uchinchi zona) topildi. Qaysi qurol uchun uchinchi zona bunday masofaga yetmaydi, ya’ni ular otgan bo‘lishi mumkin emas?",
+        "ru": "На расстоянии 180 см от входного отверстия обнаружены только порох и металлические частицы выстрела (третья зона). Для какого оружия третья зона не достигает такого расстояния, то есть оно не могло произвести выстрел?",
+        "en": "Only gunpowder and metal particles of the shot (the third zone) were found around the entrance wound at a distance of 180 cm. For which weapon does the third zone not reach such a distance, i.e., which weapon could not have fired it?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Makarov pistoleti",
+          "Kalashnikov avtomati",
+          "O‘yiqli stvolli miltiq",
+          "Silliq stvolli ov miltig‘i"
+        ],
+        "ru": [
+          "Пистолет Макарова",
+          "Автомат Калашникова",
+          "Нарезная винтовка",
+          "Охотничье ружьё с гладким стволом"
+        ],
+        "en": [
+          "Makarov pistol",
+          "Kalashnikov assault rifle",
+          "Rifled-barrel rifle",
+          "Smooth-bore hunting shotgun"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Uchinchi zona Makarov pistoletida 150 sm gacha, Kalashnikov avtomatida 200 sm gacha, o‘yiqli stvolli miltiqlarda 250 sm gacha, silliq stvolli ov miltiqlarida 500 sm gacha davom etadi. 180 sm Makarov uchun chegaradan oshadi, boshqa uchta qurol uchun esa mumkin.",
+        "ru": "Третья зона у пистолета Макарова простирается до 150 см, у автомата Калашникова до 200 см, у нарезных винтовок до 250 см, у охотничьих ружей с гладким стволом до 500 см. Расстояние 180 см превышает предел для пистолета Макарова, а для остальных трёх видов оружия возможно.",
+        "en": "The third zone extends up to 150 cm for the Makarov pistol, up to 200 cm for the Kalashnikov assault rifle, up to 250 cm for rifled-barrel rifles, and up to 500 cm for smooth-bore hunting shotguns. 180 cm exceeds the limit for the Makarov, while it is possible for the other three weapons."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "88"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-05-q30",
+      "question_i18n": {
+        "uz": "Ekspert 6 mm kalibrli stvolli gaz quroli patronini tekshirdi va unda porox yo‘qligini aniqladi. Ta’sirlovchi moddalar bunday patronda qaysi energiya hisobiga sochiladi?",
+        "ru": "Эксперт исследовал патрон газового оружия со стволом калибра 6 мм и установил, что в нём нет пороха. За счёт какой энергии в таком патроне распыляются раздражающие вещества?",
+        "en": "An expert examined a cartridge for a 6 mm caliber barreled gas weapon and found that it contains no gunpowder. By what energy are the irritant substances dispersed in such a cartridge?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Porox gazlarining kengayish energiyasi hisobiga",
+          "Siqilgan havoning energiyasi hisobiga",
+          "Stvol ichidagi pruzhinaning mexanik kuchi hisobiga",
+          "Kapsyul tarkibidagi moddalarning yonishidan hosil bo‘ladigan energiya hisobiga"
+        ],
+        "ru": [
+          "За счёт энергии расширения пороховых газов",
+          "За счёт энергии сжатого воздуха",
+          "За счёт механической силы пружины внутри ствола",
+          "За счёт энергии, образующейся при горении веществ, входящих в состав капсюля"
+        ],
+        "en": [
+          "By the expansion energy of powder gases",
+          "By the energy of compressed air",
+          "By the mechanical force of a spring inside the barrel",
+          "By the energy produced from the combustion of the substances in the primer"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Kalibri 6 mm bo‘lgan gaz qurollari patronida porox bo‘lmaydi. Irritantlar kapsyul tarkibidagi moddalar yonganda ajraladigan energiya bilan sochiladi. Porox yoki siqilgan havo varianti bu patronga mos emas, chunki porox yo‘q, siqilgan havo esa pnevmatik qurolga xos.",
+        "ru": "В патроне газового оружия калибра 6 мм пороха нет. Раздражающие вещества распыляются энергией, выделяющейся при горении веществ, входящих в состав капсюля. Варианты с порохом или сжатым воздухом для этого патрона не подходят, так как пороха нет, а сжатый воздух характерен для пневматического оружия.",
+        "en": "The cartridge of gas weapons of 6 mm caliber contains no gunpowder. Irritants are dispersed by the energy released when the substances in the primer burn. The gunpowder or compressed-air options do not fit this cartridge, because there is no gunpowder, and compressed air is characteristic of a pneumatic weapon."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "95"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "year": 2018,
+      "pages": "Bob 4. O'q otar qurollardan jarohatlar"
+    },
+    {
+      "author": "Ромодановский П.О., Баринов Е.Х.",
+      "title": "Судебная медицина в схемах и рисунках: учебное пособие, М.: Проспект (egasi taqdim etgan; yopiq foydalanish)",
+      "year": 2017,
+      "pages": "3-modul. O‘tkir qurollar va o‘q otar jarohatlar; bet 230-290"
+    },
+    {
+      "author": "Харин Г.М. (Kharin G.M.)",
+      "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+      "year": 2006,
+      "pages": "IV bo‘lim (10-13-boblar). O‘tkir qurollar, o‘q otar va portlash travmasi; bet 92-117"
+    },
+    {
+      "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+      "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+      "year": null,
+      "pages": "IX-X-boblar. O‘tkir vositalar va o‘q otar qurollar; bet 149-201"
+    }
+  ]
+}
