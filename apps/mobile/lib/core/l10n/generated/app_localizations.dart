@@ -15986,6 +15986,780 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Evidence from the literature (in full)'**
   String get litClaimsTitle;
+
+  /// Class quiz title.
+  ///
+  /// In en, this message translates to:
+  /// **'Class quiz'**
+  String get classQuizTitle;
+
+  /// Study hub card subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Live quiz run by your teacher: join with a code or QR'**
+  String get classQuizCardSubtitle;
+
+  /// Hub intro.
+  ///
+  /// In en, this message translates to:
+  /// **'The teacher shows a 6-digit code and QR on the screen. Students join with a nickname and answer each question before the timer ends.'**
+  String get classQuizIntro;
+
+  /// Demo adapter banner.
+  ///
+  /// In en, this message translates to:
+  /// **'Demo mode: data stays on this device only. A real class needs the server connection.'**
+  String get classDemoBanner;
+
+  /// Demo chip.
+  ///
+  /// In en, this message translates to:
+  /// **'DEMO'**
+  String get classDemoChip;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Join a class'**
+  String get classJoinSection;
+
+  /// Hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the 6-digit code from the teacher’s screen or scan the QR.'**
+  String get classJoinHint;
+
+  /// Join screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Join class'**
+  String get classJoinTitle;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Join'**
+  String get classJoinAction;
+
+  /// Field label.
+  ///
+  /// In en, this message translates to:
+  /// **'Class code'**
+  String get classCodeLabel;
+
+  /// Screen reader.
+  ///
+  /// In en, this message translates to:
+  /// **'Class code {code}'**
+  String classCodeSpoken(String code);
+
+  /// Field label.
+  ///
+  /// In en, this message translates to:
+  /// **'Nickname'**
+  String get classNickLabel;
+
+  /// Helper.
+  ///
+  /// In en, this message translates to:
+  /// **'2–20 characters. The teacher sees only this nickname — not your name or e-mail.'**
+  String get classNickHelper;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Scan QR'**
+  String get classScanAction;
+
+  /// Scan screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Scan class QR'**
+  String get classScanTitle;
+
+  /// Hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Point the camera at the QR on the teacher’s screen.'**
+  String get classScanHint;
+
+  /// Camera denied.
+  ///
+  /// In en, this message translates to:
+  /// **'Camera access is off. Allow it in Settings or enter the code by hand.'**
+  String get classScanPermission;
+
+  /// Camera unavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'The camera can’t be used here. Enter the code by hand.'**
+  String get classScanUnavailable;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter code by hand'**
+  String get classScanManual;
+
+  /// Resume card.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue: {topic}'**
+  String classResume(String topic);
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'For teachers'**
+  String get classTeacherSection;
+
+  /// Not a teacher note.
+  ///
+  /// In en, this message translates to:
+  /// **'The test is run by a teacher. The teacher role is granted by the FORENSIC EXPERT team on the server; ask us if you teach a class.'**
+  String get classNotTeacherNote;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'New class quiz'**
+  String get classNewAction;
+
+  /// Screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'New class quiz'**
+  String get classNewTitle;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Recent classes'**
+  String get classRecentSection;
+
+  /// Session subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'{code} · {status}'**
+  String classSessionLine(String code, String status);
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Waiting for students'**
+  String get classStatusLobby;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'In progress'**
+  String get classStatusRunning;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Finished'**
+  String get classStatusFinished;
+
+  /// Privacy note.
+  ///
+  /// In en, this message translates to:
+  /// **'The teacher sees only your nickname. Finished classes are deleted automatically after 30 days. Offensive nicknames can be reported and removed.'**
+  String get classPrivacyNote;
+
+  /// Sign-in card.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in to join'**
+  String get classSignInTitle;
+
+  /// Sign-in body.
+  ///
+  /// In en, this message translates to:
+  /// **'Your result is tied to your account on the server. Other students and the teacher only see your nickname.'**
+  String get classSignInBody;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in'**
+  String get classSignInAction;
+
+  /// Forbidden title.
+  ///
+  /// In en, this message translates to:
+  /// **'Teachers only'**
+  String get classTeacherOnlyTitle;
+
+  /// Forbidden body.
+  ///
+  /// In en, this message translates to:
+  /// **'This screen is available to accounts with the teacher role. The server enforces this.'**
+  String get classTeacherOnlyBody;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Topic'**
+  String get classTopicSection;
+
+  /// Empty topics.
+  ///
+  /// In en, this message translates to:
+  /// **'No question bank is available yet.'**
+  String get classNoTopics;
+
+  /// Topic subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} questions'**
+  String classQuestionsAvailable(int count);
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get classSettingsSection;
+
+  /// Slider label.
+  ///
+  /// In en, this message translates to:
+  /// **'Number of questions'**
+  String get classQuestionCount;
+
+  /// Slider label.
+  ///
+  /// In en, this message translates to:
+  /// **'Student limit'**
+  String get classStudentLimit;
+
+  /// Label.
+  ///
+  /// In en, this message translates to:
+  /// **'Time per question'**
+  String get classSecondsPerQuestion;
+
+  /// Segment.
+  ///
+  /// In en, this message translates to:
+  /// **'{seconds} s'**
+  String classSecondsShort(int seconds);
+
+  /// Screen reader.
+  ///
+  /// In en, this message translates to:
+  /// **'{seconds} seconds left'**
+  String classSecondsLeft(int seconds);
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Create class'**
+  String get classCreateAction;
+
+  /// Projector hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Open FORENSIC EXPERT → Class quiz and enter this code, or scan the QR:'**
+  String get classHostJoinHint;
+
+  /// Screen reader.
+  ///
+  /// In en, this message translates to:
+  /// **'QR code to join the class'**
+  String get classQrSemantics;
+
+  /// Counter.
+  ///
+  /// In en, this message translates to:
+  /// **'Joined: {joined} / {limit}'**
+  String classJoinedCount(int joined, int limit);
+
+  /// Empty lobby.
+  ///
+  /// In en, this message translates to:
+  /// **'Waiting for students to join…'**
+  String get classWaitingForStudents;
+
+  /// Reports.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} nickname report(s) — review the list'**
+  String classReportsCount(int count);
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Start'**
+  String get classStartAction;
+
+  /// Dialog title.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove from class?'**
+  String get classKickTitle;
+
+  /// Dialog body.
+  ///
+  /// In en, this message translates to:
+  /// **'“{nickname}” will be removed and cannot rejoin.'**
+  String classKickBody(String nickname);
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove'**
+  String get classKickAction;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get classCancel;
+
+  /// Header.
+  ///
+  /// In en, this message translates to:
+  /// **'Question {n} of {total}'**
+  String classQuestionOf(int n, int total);
+
+  /// Live stat.
+  ///
+  /// In en, this message translates to:
+  /// **'Answered: {count} of {total}'**
+  String classAnswered(int count, int total);
+
+  /// Live stat.
+  ///
+  /// In en, this message translates to:
+  /// **'{pct}% correct'**
+  String classCorrectPct(int pct);
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Leaderboard'**
+  String get classLeaderboard;
+
+  /// Empty.
+  ///
+  /// In en, this message translates to:
+  /// **'No scores yet.'**
+  String get classNoScoresYet;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Close question'**
+  String get classCloseQuestion;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Next question'**
+  String get classNextQuestion;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Finish quiz'**
+  String get classFinishAction;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'End quiz'**
+  String get classEndAction;
+
+  /// Dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'End the quiz now?'**
+  String get classEndTitle;
+
+  /// Dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Students will see their results. This can’t be undone.'**
+  String get classEndBody;
+
+  /// Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Quiz finished'**
+  String get classFinishedTitle;
+
+  /// Summary.
+  ///
+  /// In en, this message translates to:
+  /// **'{students} students · {questions} questions'**
+  String classFinishedSummary(int students, int questions);
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Hardest questions'**
+  String get classHardestTitle;
+
+  /// Empty.
+  ///
+  /// In en, this message translates to:
+  /// **'No answers recorded.'**
+  String get classNoAnswersYet;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Save / share results (CSV)'**
+  String get classExportCsv;
+
+  /// Share subject.
+  ///
+  /// In en, this message translates to:
+  /// **'Class quiz results'**
+  String get classCsvSubject;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get classDone;
+
+  /// Retention.
+  ///
+  /// In en, this message translates to:
+  /// **'The class is deleted automatically {days} days after it ends.'**
+  String classRetentionNote(int days);
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Try again'**
+  String get classRetry;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Leave'**
+  String get classExit;
+
+  /// Lobby.
+  ///
+  /// In en, this message translates to:
+  /// **'You’re in, {nickname}!'**
+  String classLobbyWelcome(String nickname);
+
+  /// Lobby.
+  ///
+  /// In en, this message translates to:
+  /// **'Wait for the teacher to start the quiz.'**
+  String get classLobbyWait;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose an answer.'**
+  String get classChooseAnswer;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Answer received. The result appears when the time is up.'**
+  String get classAnswerAccepted;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Time’s up. Checking the answer…'**
+  String get classTimeUpWaiting;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct! +{points} points'**
+  String classResultCorrect(int points);
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Not correct.'**
+  String get classResultWrong;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'No answer given.'**
+  String get classResultNoAnswer;
+
+  /// Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Wait for the teacher to open the next question.'**
+  String get classWaitNext;
+
+  /// Score.
+  ///
+  /// In en, this message translates to:
+  /// **'Score: {score}'**
+  String classScoreLine(int score);
+
+  /// Rank.
+  ///
+  /// In en, this message translates to:
+  /// **'Rank {rank} of {total}'**
+  String classRankLine(int rank, int total);
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'{correct} of {total} correct'**
+  String classCorrectOfTotal(int correct, int total);
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Top 5'**
+  String get classTopFive;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Questions to review'**
+  String get classMistakesTitle;
+
+  /// Empty.
+  ///
+  /// In en, this message translates to:
+  /// **'Every answer was correct. Well done!'**
+  String get classNoMistakes;
+
+  /// Label.
+  ///
+  /// In en, this message translates to:
+  /// **'Question {n}'**
+  String classQuestionNumber(int n);
+
+  /// Label.
+  ///
+  /// In en, this message translates to:
+  /// **'Your answer: {text}'**
+  String classYourAnswer(String text);
+
+  /// Label.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct answer: {text}'**
+  String classCorrectAnswer(String text);
+
+  /// Source.
+  ///
+  /// In en, this message translates to:
+  /// **'Source: {author}, {title}, p. {page}'**
+  String classSourceLine(String author, String title, String page);
+
+  /// Option tag.
+  ///
+  /// In en, this message translates to:
+  /// **'correct'**
+  String get classOptionCorrect;
+
+  /// Option tag.
+  ///
+  /// In en, this message translates to:
+  /// **'your answer, wrong'**
+  String get classOptionWrong;
+
+  /// Option tag.
+  ///
+  /// In en, this message translates to:
+  /// **'your choice'**
+  String get classOptionChosen;
+
+  /// Dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Report this nickname?'**
+  String get classReportTitle;
+
+  /// Dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'“{nickname}” will be sent to the teacher for review.'**
+  String classReportBody(String nickname);
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Report'**
+  String get classReportAction;
+
+  /// Report reason sent to the server.
+  ///
+  /// In en, this message translates to:
+  /// **'Inappropriate nickname'**
+  String get classReportReason;
+
+  /// Snackbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Report sent. Thank you.'**
+  String get classReportSent;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Class quiz will be available once the FORENSIC EXPERT server is connected.'**
+  String get classErrNotConfigured;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Please sign in first.'**
+  String get classErrNotSignedIn;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'No connection. Check the internet and try again.'**
+  String get classErrOffline;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Something went wrong on the server. Try again in a moment.'**
+  String get classErrServer;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'You don’t have access to this class.'**
+  String get classErrForbidden;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the 6-digit code.'**
+  String get classErrBadCode;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'No class with this code. Check it and try again.'**
+  String get classErrNotFound;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Too many attempts. Try again in an hour.'**
+  String get classErrRateLimited;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'You are the teacher of this class and can’t join it as a student.'**
+  String get classErrOwnSession;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'This quiz has already finished.'**
+  String get classErrFinished;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'The teacher removed you from this class.'**
+  String get classErrKicked;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'The quiz has already started — new students can’t join.'**
+  String get classErrAlreadyStarted;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'This class is full.'**
+  String get classErrFull;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Nickname must be 2–20 characters.'**
+  String get classErrNickLength;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'This nickname contains characters that aren’t allowed.'**
+  String get classErrNickChars;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Please choose a different nickname.'**
+  String get classErrNickBlocked;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Check the settings: 5–20 questions, 5–200 students, 15/30/45/60 seconds.'**
+  String get classErrInvalidSettings;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Too many open classes. Finish one first.'**
+  String get classErrTooManySessions;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'This topic has too few questions (at least 5 are needed).'**
+  String get classErrNotEnoughQuestions;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'That action isn’t possible right now.'**
+  String get classErrBadState;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Wait until at least one student has joined.'**
+  String get classErrNoParticipants;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'This question is already closed.'**
+  String get classErrNotCurrent;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Time is up — your answer was not counted.'**
+  String get classErrTimeOver;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'You have already answered this question.'**
+  String get classErrAlreadyAnswered;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Results will be available when the quiz ends.'**
+  String get classErrNotFinished;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Reason is too short.'**
+  String get classErrBadReason;
 }
 
 class _AppLocalizationsDelegate

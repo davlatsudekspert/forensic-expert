@@ -1,6 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Akkaunt xizmati va server tomonida xarid tekshiruvi (faqat HTTPS). -->
     <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- «Sinfda test»: faqat QR kodni o‘qish uchun (ixtiyoriy: kod qo‘lda ham kiritiladi). -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
     <application
         android:label="Forensic"
         android:name="${applicationName}"
@@ -40,6 +44,15 @@
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
                 <data android:scheme="forensicexpert" android:host="app" android:pathPrefix="/invite/"/>
+            </intent-filter>
+            <!-- Sinf testi: forensicexpert://app/join/<6 raqam> (QR / havola).
+                 HTTPS App Link (https://<domen>/join/<kod>) egasi domen va
+                 assetlinks.json ni sozlagach qo‘shiladi (docs/CLASS_QUIZ.md). -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="forensicexpert" android:host="app" android:pathPrefix="/join/"/>
             </intent-filter>
         </activity>
         <!-- Don't delete the meta-data below.

@@ -175,6 +175,19 @@ abstract final class Routes {
   /// Kiruvchi taklif havolasi: `/invite/<CODE>` (deep link).
   static const invitePrefix = '/invite/';
 
+  /// «Sinfda test»: kiruvchi havola `/join/<6 raqam>` (deep link / QR).
+  static const joinPrefix = '/join/';
+  static const classQuiz = '/home/learn/class';
+  static const classNew = '/home/learn/class/new';
+  static String classHost(String id) =>
+      '/home/learn/class/host/${Uri.encodeComponent(id)}';
+  static const classJoin = '/home/learn/class/join';
+  static String classJoinWith(String code) =>
+      Uri(path: classJoin, queryParameters: {'code': code}).toString();
+  static String classPlay(String id) =>
+      '/home/learn/class/play/${Uri.encodeComponent(id)}';
+  static const classScan = '/home/learn/class/scan';
+
   // Akkaunt (ixtiyoriy). Email marshrut satriga yozilmaydi — `extra`.
   static const accountSignIn = '/profile/account/sign-in';
   static const accountRegister = '/profile/account/register';

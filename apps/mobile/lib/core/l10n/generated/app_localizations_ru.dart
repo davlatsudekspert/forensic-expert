@@ -9239,4 +9239,464 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get litClaimsTitle => 'Данные из литературы (полностью)';
+
+  @override
+  String get classQuizTitle => 'Тест в классе';
+
+  @override
+  String get classQuizCardSubtitle =>
+      'Живой тест под руководством преподавателя: вход по коду или QR';
+
+  @override
+  String get classQuizIntro =>
+      'Преподаватель показывает на экране 6-значный код и QR. Студенты входят под псевдонимом и отвечают на каждый вопрос до конца таймера.';
+
+  @override
+  String get classDemoBanner =>
+      'Демо-режим: данные хранятся только на этом устройстве. Для настоящего занятия нужно подключение к серверу.';
+
+  @override
+  String get classDemoChip => 'ДЕМО';
+
+  @override
+  String get classJoinSection => 'Войти в класс';
+
+  @override
+  String get classJoinHint =>
+      'Введите 6-значный код с экрана преподавателя или отсканируйте QR.';
+
+  @override
+  String get classJoinTitle => 'Вход в класс';
+
+  @override
+  String get classJoinAction => 'Войти';
+
+  @override
+  String get classCodeLabel => 'Код класса';
+
+  @override
+  String classCodeSpoken(String code) {
+    return 'Код класса $code';
+  }
+
+  @override
+  String get classNickLabel => 'Псевдоним';
+
+  @override
+  String get classNickHelper =>
+      '2–20 символов. Преподаватель видит только этот псевдоним — не ваше имя и не e-mail.';
+
+  @override
+  String get classScanAction => 'Сканировать QR';
+
+  @override
+  String get classScanTitle => 'Сканирование QR класса';
+
+  @override
+  String get classScanHint => 'Наведите камеру на QR на экране преподавателя.';
+
+  @override
+  String get classScanPermission =>
+      'Доступ к камере выключен. Разрешите его в настройках или введите код вручную.';
+
+  @override
+  String get classScanUnavailable =>
+      'Камера здесь недоступна. Введите код вручную.';
+
+  @override
+  String get classScanManual => 'Ввести код вручную';
+
+  @override
+  String classResume(String topic) {
+    return 'Продолжить: $topic';
+  }
+
+  @override
+  String get classTeacherSection => 'Для преподавателей';
+
+  @override
+  String get classNotTeacherNote =>
+      'Тест проводит преподаватель. Роль преподавателя выдаёт команда FORENSIC EXPERT на сервере; если вы ведёте занятия, напишите нам.';
+
+  @override
+  String get classNewAction => 'Новый тест для класса';
+
+  @override
+  String get classNewTitle => 'Новый тест для класса';
+
+  @override
+  String get classRecentSection => 'Недавние занятия';
+
+  @override
+  String classSessionLine(String code, String status) {
+    return '$code · $status';
+  }
+
+  @override
+  String get classStatusLobby => 'Ожидание студентов';
+
+  @override
+  String get classStatusRunning => 'Идёт тест';
+
+  @override
+  String get classStatusFinished => 'Завершён';
+
+  @override
+  String get classPrivacyNote =>
+      'Преподаватель видит только ваш псевдоним. Завершённые занятия автоматически удаляются через 30 дней. На неприемлемые псевдонимы можно пожаловаться, их удаляют.';
+
+  @override
+  String get classSignInTitle => 'Войдите, чтобы присоединиться';
+
+  @override
+  String get classSignInBody =>
+      'Ваш результат привязан к аккаунту на сервере. Другие студенты и преподаватель видят только ваш псевдоним.';
+
+  @override
+  String get classSignInAction => 'Войти в аккаунт';
+
+  @override
+  String get classTeacherOnlyTitle => 'Только для преподавателей';
+
+  @override
+  String get classTeacherOnlyBody =>
+      'Этот экран доступен аккаунтам с ролью преподавателя. Это проверяет сервер.';
+
+  @override
+  String get classTopicSection => 'Тема';
+
+  @override
+  String get classNoTopics => 'Банк вопросов пока недоступен.';
+
+  @override
+  String classQuestionsAvailable(int count) {
+    return '$count вопросов';
+  }
+
+  @override
+  String get classSettingsSection => 'Настройки';
+
+  @override
+  String get classQuestionCount => 'Количество вопросов';
+
+  @override
+  String get classStudentLimit => 'Лимит студентов';
+
+  @override
+  String get classSecondsPerQuestion => 'Время на вопрос';
+
+  @override
+  String classSecondsShort(int seconds) {
+    return '$seconds с';
+  }
+
+  @override
+  String classSecondsLeft(int seconds) {
+    return 'Осталось $seconds с';
+  }
+
+  @override
+  String get classCreateAction => 'Создать класс';
+
+  @override
+  String get classHostJoinHint =>
+      'Откройте FORENSIC EXPERT → Тест в классе и введите этот код или отсканируйте QR:';
+
+  @override
+  String get classQrSemantics => 'QR-код для входа в класс';
+
+  @override
+  String classJoinedCount(int joined, int limit) {
+    return 'Вошли: $joined / $limit';
+  }
+
+  @override
+  String get classWaitingForStudents => 'Ожидаем студентов…';
+
+  @override
+  String classReportsCount(int count) {
+    return 'Жалоб на псевдонимы: $count — проверьте список';
+  }
+
+  @override
+  String get classStartAction => 'Начать';
+
+  @override
+  String get classKickTitle => 'Убрать из класса?';
+
+  @override
+  String classKickBody(String nickname) {
+    return '«$nickname» будет удалён и не сможет войти снова.';
+  }
+
+  @override
+  String get classKickAction => 'Убрать';
+
+  @override
+  String get classCancel => 'Отмена';
+
+  @override
+  String classQuestionOf(int n, int total) {
+    return 'Вопрос $n из $total';
+  }
+
+  @override
+  String classAnswered(int count, int total) {
+    return 'Ответили: $count из $total';
+  }
+
+  @override
+  String classCorrectPct(int pct) {
+    return '$pct% верно';
+  }
+
+  @override
+  String get classLeaderboard => 'Рейтинг';
+
+  @override
+  String get classNoScoresYet => 'Баллов пока нет.';
+
+  @override
+  String get classCloseQuestion => 'Закрыть вопрос';
+
+  @override
+  String get classNextQuestion => 'Следующий вопрос';
+
+  @override
+  String get classFinishAction => 'Завершить тест';
+
+  @override
+  String get classEndAction => 'Завершить тест';
+
+  @override
+  String get classEndTitle => 'Завершить тест сейчас?';
+
+  @override
+  String get classEndBody =>
+      'Студенты увидят свои результаты. Это нельзя отменить.';
+
+  @override
+  String get classFinishedTitle => 'Тест завершён';
+
+  @override
+  String classFinishedSummary(int students, int questions) {
+    return 'Студентов: $students · вопросов: $questions';
+  }
+
+  @override
+  String get classHardestTitle => 'Самые трудные вопросы';
+
+  @override
+  String get classNoAnswersYet => 'Ответов нет.';
+
+  @override
+  String get classExportCsv => 'Сохранить / отправить результаты (CSV)';
+
+  @override
+  String get classCsvSubject => 'Результаты теста в классе';
+
+  @override
+  String get classDone => 'Готово';
+
+  @override
+  String classRetentionNote(int days) {
+    return 'Занятие автоматически удаляется через $days дн. после завершения.';
+  }
+
+  @override
+  String get classRetry => 'Повторить';
+
+  @override
+  String get classExit => 'Выйти';
+
+  @override
+  String classLobbyWelcome(String nickname) {
+    return 'Вы в классе, $nickname!';
+  }
+
+  @override
+  String get classLobbyWait => 'Дождитесь, пока преподаватель начнёт тест.';
+
+  @override
+  String get classChooseAnswer => 'Выберите ответ.';
+
+  @override
+  String get classAnswerAccepted =>
+      'Ответ принят. Результат появится, когда время закончится.';
+
+  @override
+  String get classTimeUpWaiting => 'Время вышло. Проверяем ответ…';
+
+  @override
+  String classResultCorrect(int points) {
+    return 'Верно! +$points баллов';
+  }
+
+  @override
+  String get classResultWrong => 'Неверно.';
+
+  @override
+  String get classResultNoAnswer => 'Ответ не дан.';
+
+  @override
+  String get classWaitNext => 'Дождитесь следующего вопроса от преподавателя.';
+
+  @override
+  String classScoreLine(int score) {
+    return 'Баллы: $score';
+  }
+
+  @override
+  String classRankLine(int rank, int total) {
+    return 'Место $rank из $total';
+  }
+
+  @override
+  String classCorrectOfTotal(int correct, int total) {
+    return 'Верно $correct из $total';
+  }
+
+  @override
+  String get classTopFive => 'Топ-5';
+
+  @override
+  String get classMistakesTitle => 'Вопросы для повторения';
+
+  @override
+  String get classNoMistakes => 'Все ответы верные. Отлично!';
+
+  @override
+  String classQuestionNumber(int n) {
+    return 'Вопрос $n';
+  }
+
+  @override
+  String classYourAnswer(String text) {
+    return 'Ваш ответ: $text';
+  }
+
+  @override
+  String classCorrectAnswer(String text) {
+    return 'Верный ответ: $text';
+  }
+
+  @override
+  String classSourceLine(String author, String title, String page) {
+    return 'Источник: $author, $title, с. $page';
+  }
+
+  @override
+  String get classOptionCorrect => 'верный';
+
+  @override
+  String get classOptionWrong => 'ваш ответ, неверный';
+
+  @override
+  String get classOptionChosen => 'ваш выбор';
+
+  @override
+  String get classReportTitle => 'Пожаловаться на этот псевдоним?';
+
+  @override
+  String classReportBody(String nickname) {
+    return '«$nickname» будет отправлен преподавателю на проверку.';
+  }
+
+  @override
+  String get classReportAction => 'Пожаловаться';
+
+  @override
+  String get classReportReason => 'Неприемлемый псевдоним';
+
+  @override
+  String get classReportSent => 'Жалоба отправлена. Спасибо.';
+
+  @override
+  String get classErrNotConfigured =>
+      'Тест в классе станет доступен после подключения сервера FORENSIC EXPERT.';
+
+  @override
+  String get classErrNotSignedIn => 'Сначала войдите в аккаунт.';
+
+  @override
+  String get classErrOffline =>
+      'Нет соединения. Проверьте интернет и повторите.';
+
+  @override
+  String get classErrServer => 'Сбой на сервере. Повторите чуть позже.';
+
+  @override
+  String get classErrForbidden => 'У вас нет доступа к этому классу.';
+
+  @override
+  String get classErrBadCode => 'Введите 6-значный код.';
+
+  @override
+  String get classErrNotFound =>
+      'Класс с таким кодом не найден. Проверьте код и повторите.';
+
+  @override
+  String get classErrRateLimited =>
+      'Слишком много попыток. Повторите через час.';
+
+  @override
+  String get classErrOwnSession =>
+      'Вы преподаватель этого класса и не можете войти как студент.';
+
+  @override
+  String get classErrFinished => 'Этот тест уже завершён.';
+
+  @override
+  String get classErrKicked => 'Преподаватель убрал вас из этого класса.';
+
+  @override
+  String get classErrAlreadyStarted =>
+      'Тест уже начался — новые студенты войти не могут.';
+
+  @override
+  String get classErrFull => 'Класс заполнен.';
+
+  @override
+  String get classErrNickLength => 'Псевдоним должен содержать 2–20 символов.';
+
+  @override
+  String get classErrNickChars => 'В псевдониме есть недопустимые символы.';
+
+  @override
+  String get classErrNickBlocked => 'Выберите другой псевдоним.';
+
+  @override
+  String get classErrInvalidSettings =>
+      'Проверьте настройки: 5–20 вопросов, 5–200 студентов, 15/30/45/60 секунд.';
+
+  @override
+  String get classErrTooManySessions =>
+      'Слишком много открытых занятий. Сначала завершите одно.';
+
+  @override
+  String get classErrNotEnoughQuestions =>
+      'В этой теме слишком мало вопросов (нужно не меньше 5).';
+
+  @override
+  String get classErrBadState => 'Сейчас это действие невозможно.';
+
+  @override
+  String get classErrNoParticipants =>
+      'Дождитесь, пока войдёт хотя бы один студент.';
+
+  @override
+  String get classErrNotCurrent => 'Этот вопрос уже закрыт.';
+
+  @override
+  String get classErrTimeOver => 'Время вышло — ответ не засчитан.';
+
+  @override
+  String get classErrAlreadyAnswered => 'Вы уже ответили на этот вопрос.';
+
+  @override
+  String get classErrNotFinished =>
+      'Результаты будут доступны после завершения теста.';
+
+  @override
+  String get classErrBadReason => 'Причина слишком короткая.';
 }

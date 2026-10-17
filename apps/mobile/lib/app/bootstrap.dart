@@ -28,6 +28,7 @@ import '../data/remote/http_purchase_verifier.dart';
 import '../data/remote/supabase_account.dart';
 import '../data/remote/supabase_ai_provider.dart';
 import '../data/remote/supabase_auth_repository.dart';
+import '../data/remote/supabase_class_quiz.dart';
 import '../data/remote/supabase_professional.dart';
 import '../data/remote/supabase_publications.dart';
 import '../data/remote/supabase_qa.dart';
@@ -40,6 +41,7 @@ import 'account.dart';
 import 'app.dart';
 import 'app_info.dart';
 import 'casebook.dart';
+import 'class_quiz.dart';
 import 'court_prep.dart';
 import 'professional.dart';
 import 'providers.dart';
@@ -145,6 +147,9 @@ Future<void> bootstrap({List<Override> testOverrides = const []}) async {
           ),
           supportServiceProvider.overrideWithValue(
             SupabaseSupportService(config: supabase, auth: auth),
+          ),
+          classQuizServiceProvider.overrideWithValue(
+            SupabaseClassQuizService(config: supabase, auth: auth),
           ),
           qaServiceProvider.overrideWithValue(
             SupabaseQaService(config: supabase, auth: auth),
