@@ -1,6 +1,6 @@
 # Admin panel va «Taklif va murojaatlar»
 
-Yangilangan: 2026-10-09. Migratsiya: `supabase/migrations/20261009000000_support_and_admin.sql`
+Yangilangan: 2026-10-09; kengaytma 2026-10-17 (§9). Migratsiya: `supabase/migrations/20261009000000_support_and_admin.sql`
 (PRODUCTION’GA HALI QO‘LLANMAGAN — egasining ruxsati kerak). SQL testlar:
 `supabase/tests/support_admin_test.sql` (CI: «Supabase migration security tests»).
 
@@ -164,3 +164,84 @@ holda TOTP’siz egasi panelga kira olmay qoladi.
 5. Har qanday push/email provayderi (pullik bo‘lishi mumkin).
 6. `20261010000000_admin_verification_inbox.sql` ni production’ga qo‘llash
    (faqat yangi RPC `admin_pending_verifications`; mavjud jadval/funksiyalar o‘zgarmaydi).
+
+## 9. Kengaytma (2026-10-17, branch `claude/admin-ext`)
+
+Migratsiya: `supabase/migrations/20261017000000_admin_extension.sql` — **PRODUCTION’GA
+QO‘LLANMAGAN**; egasi ishlari: `docs/ADMIN_EXTENSION_DEPLOY.md`. Yangi kod: Flutter
+`lib/features/moderation/`, `lib/app/moderation.dart`, `lib/domain/moderation/`,
+`lib/data/remote/supabase_moderation.dart`; Edge Function `supabase/functions/admin-bootstrap`.
+To‘lov, paywall yoki yashirin bayroq QO‘SHILMAGAN.
+
+### 9.1 Admin aniqlash (o‘zgarmadi, mustahkamlandi)
+- Huquq manbai avvalgidek **server roli**: `account_roles` + `private.has_role(uid, 'identity_admin')`
+  (loyihadagi admin roli nomi `identity_admin`; «admin» deganda shu tushuniladi).
+- `private.admin_guard()` endi **tasdiqlangan email** va **bloklanmagan hisob**ni ham talab qiladi.
+  Har bir admin RPC har so‘rovda uni qayta chaqiradi; ilovadagi tugma/ko‘rinish xavfsizlik emas.
+- `ADMIN_EMAILS` (vergul bilan sir) **faqat bootstrap** uchun: `admin-bootstrap` Edge Function
+  (service-role kalit bilan chaqiriladi) ro‘yxatdagi **email tasdiqlangan** hisoblarga birinchi
+  marta `identity_admin` beradi (`private.admin_bootstrap`, audit `ADMIN_BOOTSTRAP`). Email o‘zi
+  huquq bermaydi va oddiy so‘rovda tekshirilmaydi. Ro‘yxatdagi tasdiqlanmagan/noma’lum manzil
+  o‘tkazib yuboriladi; bir martada ≤ 10 manzil.
+- Ilovadan admin **berish** sukut bo‘yicha o‘chiq (`private.admin_settings.allow_admin_grant_in_app
+  = false`): ikkinchi admin kerak bo‘lsa egasi SQL konsolda yoqadi yoki bootstrap ro‘yxatiga
+  qo‘shadi. Ilmiy reviewer roli (`scope_grantor`) paneldan berilmaydi: admin ≠ reviewer.
+
+### 9.2 Shikoyat/murojaat (`user_reports`)
+- Turlar: shikoyat, nomaqbul kontent, xato, reklama, boshqa. `submit_report(...)` **anon ham**
+  chaqiradi. Tezlik: soatiga **5 ta** — kirgan foydalanuvchi uchun `user id`, kirmagan uchun IP
+  xeshi (`cf-connecting-ip` → `x-real-ip` → `x-forwarded-for`) **yoki** qurilma kaliti xeshi
+  (qaysi biri 5 ga yetsa to‘xtaydi); kirmaganlar uchun umumiy shift 100/soat. IP va kalit
+  **tuzlangan SHA-256** ko‘rinishida saqlanadi, xomi hech qayerda.
+- Admin: `admin_reports` (holat/tur/qidiruv), `admin_report_note`, `admin_resolve_report`
+  (hal qilindi / qayta ochish), hammasi audit’da (matnsiz). Foydalanuvchi `my_reports` orqali
+  faqat **o‘zining** shikoyatlarining turi va holatini ko‘radi (matn va admin izohi emas).
+- Savol-javob postlari: mavjud `qa_report` (3 ta alohida shikoyat → post yashiriladi) o‘zgarmadi;
+  admin ro‘yxatida unga havola bor (`Routes.qaModeration`). Umumiy shikoyatda `target_type`
+  (`qa_question` / `qa_answer`) ixtiyoriy.
+
+### 9.3 Foydalanuvchilar
+- Qidiruv (`admin_users`, `admin_support_inbox`, `admin_reports`, `qa_feed`): LIKE belgilari
+  `%`, `_`, `\` **ekranlanadi** (`private.like_escape` + `ESCAPE '\'`).
+- Rol: `admin_set_role(user, 'publication_moderator' | 'identity_admin', grant, reason ≥ 5)`.
+  O‘zining admin rolini o‘zgartirib bo‘lmaydi; oxirgi admin olinmaydi; admin berish faqat
+  tasdiqlangan email + yuqoridagi sozlama bilan. Audit: `ADMIN_ROLE_SET` (+ trigger
+  `ROLE_GRANTED/REVOKED`).
+- To‘xtatish: `admin_set_suspension(user, true|false, reason ≥ 5)`: `auth.users.banned_until`
+  (Auth kirish va **token yangilashni** rad etadi) + foydalanuvchining `auth.sessions` va
+  `auth.refresh_tokens` qatorlari o‘chiriladi + `account_suspensions` yozuvi. **Admin va o‘zini
+  to‘xtatib bo‘lmaydi.** Cheklov (halol): allaqachon berilgan access token muddati tugaguncha
+  (`jwt_expiry = 3600` s) **eski** RPC’larda ishlashi mumkin; yangi/qayta yozilgan RPC’lar
+  (`submit_report`, `accept_terms`, `qa_feed`, `qa_question`, `qa_block_author`) `private.assert_active`
+  bilan darhol rad etadi. Production’da `auth.sessions` o‘chirish huquqi **tekshirilmagan** —
+  deploy hujjatida tekshiruv qadami bor; zaxira: Dashboard → Authentication → Users → Ban.
+
+### 9.4 Statistika (`admin_stats_ext` + mavjud `admin_stats`)
+Jami/yangi (7, 30 kun)/rollar/14 kunlik ustunli grafik (mavjud), shikoyatlar (ochiq/hal qilingan),
+Savol-javob (savol, javob, moderatsiyada), bloklashlar, to‘xtatilganlar. Serverga ko‘rinmaydi va
+panelda **halol izoh** bilan yoziladi: casebook (qurilmada, hisoblanmaydi), «hozir tizimda»
+(kuzatuv yo‘q — `user_devices.last_seen` faqat ilova ochilishidagi belgi, 15 daqiqalik faollik
+hisoblanmaydi), yuklab olishlar (App Store Connect / Google Play Console tugmalari, tashqi
+brauzer), sotuvlar «0 — to‘lov tizimi yo‘q».
+
+### 9.5 Apple 1.2
+- **Bloklash:** `qa_block_author('question'|'answer', id)` muallif kimligini **bilmasdan** blok
+  qo‘yadi (`user_blocks`, RLS yopiq); `qa_feed`/`qa_question` bloklanganlarning post va
+  javoblarini yashiradi; `my_blocks` faqat ichki belgi + sana qaytaradi; blokdan chiqarish bor.
+  UI: savol/javobda «Muallifni bloklash», Qoidalar → «Bloklangan mualliflar».
+- **Foydalanish qoidalari (EULA):** `CommunityTermsScreen` — mavjud hamjamiyat qoidalari matni +
+  «Foydalanish shartlari (qoralama)» havolasi; ekranda «qoralama, yurist tekshirishi kerak»
+  belgisi. Qabul `accept_terms` bilan serverga yoziladi va **server trigger’i** (`qa_terms_required`)
+  qabulsiz yangi savol/javobni rad etadi (eski yoki o‘zgartirilgan mijoz ham o‘ta olmaydi).
+  Juridik matn to‘qilmagan: mavjud `disclaimerBody` qoralamasi ishlatilgan.
+- **Ko‘rinadigan aloqa:** `davlatsudekspert@gmail.com` (`docs/legal/privacy.html` da bor) —
+  Savol-javob lentasi, qoidalar, qabul ekrani, bloklanganlar va shikoyat formasida (`mailto`).
+
+### 9.6 Nima soxta/haqiqiy (kengaytma)
+- Haqiqiy: SQL migratsiya va RPC’lar lokal PostgreSQL 16 da `admin_extension_test.sql` (135 tekshiruv)
+  bilan sinalgan; Flutter servis qatlami soxta transport bilan.
+- Soxta/demo: `InMemoryModerationService` (faqat test); widget testlar server o‘rniga shu.
+- **Sinalmagan:** production Supabase (migratsiya qo‘llanmagan), `auth.sessions` o‘chirishning
+  production’dagi huquqi, haqiqiy iOS/Android qurilmada admin oqimi, `admin-bootstrap` deploy,
+  IP sarlavhasining haqiqiy proksi orqali kelishi (`request.headers`), do‘kon konsol havolalari
+  haqiqiy qurilmada.

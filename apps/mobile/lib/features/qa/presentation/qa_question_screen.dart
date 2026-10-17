@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
+import '../../../app/moderation.dart';
 import '../../../app/qa.dart';
+import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/date_format.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../../domain/moderation/moderation_models.dart';
 import '../../../domain/qa/qa_models.dart';
+import '../../moderation/presentation/moderation_widgets.dart';
 import '../qa_strings.dart';
 import 'qa_widgets.dart';
 
@@ -38,6 +43,9 @@ class _QaQuestionScreenState extends ConsumerState<QaQuestionScreen> {
 
   Future<void> _sendAnswer() async {
     final l = AppLocalizations.of(context);
+    // Birinchi yozishdan oldin hamjamiyat qoidalari qabul qilinadi.
+    if (!await ensureCommunityTerms(context, ref)) return;
+    if (!mounted) return;
     setState(() {
       _sending = true;
       _message = null;
@@ -98,6 +106,61 @@ class _QaQuestionScreenState extends ConsumerState<QaQuestionScreen> {
           : (out.hidden ? l.qaReportHidden : l.qaReportSent),
     );
     ref.invalidate(qaQuestionProvider(widget.questionId));
+  }
+
+  /// Post muallifini bloklash: kimligi mijozga hech qachon kelmaydi; bloklangan
+  /// muallifning savol/javoblari ko‘rinmaydi (server filtri).
+  Future<void> _block(QaTargetType target, String id) async {
+    final l = AppLocalizations.of(context);
+    final ok = await showDialog<bool>(
+      context: context,
+      builder: (c) => AlertDialog(
+        title: Text(l.blkConfirmTitle),
+        content: Text(l.blkConfirmBody),
+        actions: [
+          TextButton(
+            key: const Key('qa.block.cancel'),
+            onPressed: () => Navigator.pop(c, false),
+            child: Text(l.admxCancel),
+          ),
+          FilledButton(
+            key: const Key('qa.block.confirm'),
+            onPressed: () => Navigator.pop(c, true),
+            child: Text(l.blkAction),
+          ),
+        ],
+      ),
+    );
+    if (ok != true || !mounted) return;
+    final out = await ref
+        .read(moderationServiceProvider)
+        .blockAuthor(
+          target == QaTargetType.question
+              ? ReportTarget.qaQuestion
+              : ReportTarget.qaAnswer,
+          id,
+        );
+    if (!mounted) return;
+    _say(switch (out) {
+      BlockResult.blocked => l.blkDone,
+      BlockResult.already => l.blkAlready,
+      BlockResult.self => l.blkSelf,
+      _ => l.blkFailed,
+    });
+    if (out.ok) {
+      ref.invalidate(qaFeedProvider);
+      ref.invalidate(myBlocksProvider);
+      if (target == QaTargetType.question) {
+        if (!mounted) return;
+        if (context.canPop()) {
+          context.pop();
+        } else {
+          context.go(Routes.qa);
+        }
+      } else {
+        ref.invalidate(qaQuestionProvider(widget.questionId));
+      }
+    }
   }
 
   @override
@@ -196,6 +259,14 @@ class _QaQuestionScreenState extends ConsumerState<QaQuestionScreen> {
                             icon: const Icon(Icons.flag_outlined, size: 18),
                             label: Text(l.qaReport),
                           ),
+                        if (!q.isMine && ref.watch(reportAvailableProvider))
+                          TextButton.icon(
+                            key: const Key('qa.question.block'),
+                            onPressed: () =>
+                                _block(QaTargetType.question, q.id),
+                            icon: const Icon(Icons.block, size: 18),
+                            label: Text(l.blkAction),
+                          ),
                       ],
                     ),
                   ],
@@ -217,6 +288,9 @@ class _QaQuestionScreenState extends ConsumerState<QaQuestionScreen> {
                   onVote: (value) => _vote(a, value),
                   onAccept: () => _accept(q, a),
                   onReport: () => _report(QaTargetType.answer, a.id),
+                  onBlock: ref.watch(reportAvailableProvider)
+                      ? () => _block(QaTargetType.answer, a.id)
+                      : null,
                 ),
                 const SizedBox(height: FeSpace.xs),
               ],
@@ -276,6 +350,7 @@ class _AnswerCard extends StatelessWidget {
     required this.onVote,
     required this.onAccept,
     required this.onReport,
+    this.onBlock,
   });
 
   final QaAnswer answer;
@@ -284,6 +359,7 @@ class _AnswerCard extends StatelessWidget {
   final ValueChanged<int> onVote;
   final VoidCallback onAccept;
   final VoidCallback onReport;
+  final VoidCallback? onBlock;
 
   @override
   Widget build(BuildContext context) {
@@ -348,6 +424,13 @@ class _AnswerCard extends StatelessWidget {
                   onPressed: onReport,
                   icon: const Icon(Icons.flag_outlined, size: 18),
                   label: Text(l.qaReport),
+                ),
+              if (!answer.isMine && onBlock != null)
+                TextButton.icon(
+                  key: Key('qa.block.${answer.id}'),
+                  onPressed: onBlock,
+                  icon: const Icon(Icons.block, size: 18),
+                  label: Text(l.blkAction),
                 ),
             ],
           ),

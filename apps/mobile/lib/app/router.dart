@@ -13,6 +13,7 @@ import '../domain/catalog/tools_catalog.dart';
 import '../domain/knowledge/knowledge_models.dart';
 import '../domain/learn/study_models.dart' show StudyQuizMode;
 import '../domain/library/library_models.dart';
+import '../domain/moderation/moderation_models.dart';
 import '../domain/publications/publication_models.dart';
 import '../domain/referral/referral_models.dart';
 import '../domain/support/support_models.dart';
@@ -41,6 +42,10 @@ import '../features/library/presentation/entry_detail_screen.dart';
 import '../features/library/presentation/library_screen.dart';
 import '../features/library/presentation/source_detail_screen.dart';
 import '../features/library/presentation/sources_list_screen.dart';
+import '../features/moderation/presentation/admin_reports_screen.dart';
+import '../features/moderation/presentation/blocked_authors_screen.dart';
+import '../features/moderation/presentation/community_terms_screen.dart';
+import '../features/moderation/presentation/report_screen.dart';
 import '../features/onboarding/presentation/disclaimer_screen.dart';
 import '../features/onboarding/presentation/language_screen.dart';
 import '../features/onboarding/presentation/mode_screen.dart';
@@ -562,6 +567,14 @@ final routerProvider = Provider<GoRouter>((ref) {
                         path: 'moderation',
                         builder: (c, s) => const QaModerationScreen(),
                       ),
+                      GoRoute(
+                        path: 'terms',
+                        builder: (c, s) => const CommunityTermsScreen(),
+                      ),
+                      GoRoute(
+                        path: 'blocked',
+                        builder: (c, s) => const BlockedAuthorsScreen(),
+                      ),
                     ],
                   ),
                   GoRoute(
@@ -733,6 +746,11 @@ final routerProvider = Provider<GoRouter>((ref) {
                         builder: (c, s) => const AdminAuditScreen(),
                       ),
                       GoRoute(
+                        path: 'reports',
+                        parentNavigatorKey: rootKey,
+                        builder: (c, s) => const AdminReportsScreen(),
+                      ),
+                      GoRoute(
                         path: 'verifications',
                         parentNavigatorKey: rootKey,
                         builder: (c, s) => const AdminVerificationsScreen(),
@@ -747,6 +765,18 @@ final routerProvider = Provider<GoRouter>((ref) {
                         ],
                       ),
                     ],
+                  ),
+                  GoRoute(
+                    path: 'report',
+                    parentNavigatorKey: rootKey,
+                    builder: (c, s) {
+                      final q = s.uri.queryParameters;
+                      return ReportScreen(
+                        initialKind: q['kind'] == null
+                            ? null
+                            : ReportKind.fromWire(q['kind']),
+                      );
+                    },
                   ),
                   GoRoute(
                     path: 'support',

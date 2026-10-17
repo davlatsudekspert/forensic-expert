@@ -9125,4 +9125,418 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get trPendingTranslation =>
       'Перевод ожидается — показан оригинал на узбекском';
+
+  @override
+  String contactLine(String email) {
+    return 'Связь: $email';
+  }
+
+  @override
+  String get repTitle => 'Отправить жалобу';
+
+  @override
+  String get repProfileHint =>
+      'Недопустимый контент, ошибка, реклама или другое';
+
+  @override
+  String get repIntro =>
+      'Сообщите о недопустимом контенте, ошибке или другой проблеме. Отправить жалобу можно и без входа в аккаунт.';
+
+  @override
+  String get repKindField => 'Тип';
+
+  @override
+  String get repKindComplaint => 'Жалоба';
+
+  @override
+  String get repKindInappropriate => 'Недопустимый контент';
+
+  @override
+  String get repKindBug => 'Ошибка';
+
+  @override
+  String get repKindAdvertising => 'Реклама';
+
+  @override
+  String get repKindOther => 'Другое';
+
+  @override
+  String get repBody => 'Что произошло?';
+
+  @override
+  String get repBodyHint =>
+      'Не указывайте персональные данные, номера дел и сведения о пациентах.';
+
+  @override
+  String repBodyShort(int min) {
+    return 'Напишите не менее $min символов.';
+  }
+
+  @override
+  String get repContact => 'E-mail для ответа (необязательно)';
+
+  @override
+  String get repContactHint =>
+      'Если вы не вошли в аккаунт, оставьте адрес, чтобы получить ответ.';
+
+  @override
+  String get repPrivacy =>
+      'Текст хранится только для рассмотрения жалобы. Для защиты от спама хранится необратимый хеш устройства или сетевого адреса, сам адрес не сохраняется.';
+
+  @override
+  String get repSend => 'Отправить';
+
+  @override
+  String get repSent => 'Жалоба отправлена. Спасибо.';
+
+  @override
+  String get repInvalid => 'Проверьте текст и попробуйте снова.';
+
+  @override
+  String repRateLimited(int n) {
+    return 'Можно отправить не более $n жалоб в час. Попробуйте позже.';
+  }
+
+  @override
+  String get repFailed =>
+      'Не отправлено. Проверьте соединение и попробуйте снова.';
+
+  @override
+  String get repSuspended => 'Аккаунт приостановлен. Напишите нам по e-mail.';
+
+  @override
+  String get repUnavailable =>
+      'Сервис жалоб в этой сборке не подключён. Напишите нам по e-mail.';
+
+  @override
+  String get repMine => 'Мои жалобы';
+
+  @override
+  String get repStatusOpen => 'На рассмотрении';
+
+  @override
+  String get repStatusResolved => 'Решено';
+
+  @override
+  String get ctTitle => 'Правила сообщества';
+
+  @override
+  String get ctDraft =>
+      'Этот текст — черновик, его должен проверить юрист до публичного релиза.';
+
+  @override
+  String get ctZeroTolerance =>
+      'Оскорбительный, враждебный, насильственный, незаконный контент и спам запрещены. У каждой записи есть кнопки «Пожаловаться» и «Заблокировать автора». Нарушающий правила контент может быть удалён, а аккаунт приостановлен.';
+
+  @override
+  String get ctOpenTerms => 'Условия использования (черновик)';
+
+  @override
+  String get ctAgree => 'Я прочитал(а) правила и принимаю их';
+
+  @override
+  String get ctAccept => 'Принять';
+
+  @override
+  String get ctDecline => 'Не сейчас';
+
+  @override
+  String get ctSaveFailed => 'Не сохранено. Попробуйте снова.';
+
+  @override
+  String get blkTitle => 'Заблокированные авторы';
+
+  @override
+  String get blkIntro =>
+      'Записи заблокированных авторов вам не показываются. Кто они, вы также не видите.';
+
+  @override
+  String get blkEmpty => 'Вы никого не блокировали.';
+
+  @override
+  String get blkItem => 'Заблокированный автор';
+
+  @override
+  String blkSince(String date) {
+    return 'с $date';
+  }
+
+  @override
+  String get blkUnblock => 'Разблокировать';
+
+  @override
+  String get blkUnblocked => 'Разблокировано.';
+
+  @override
+  String get blkAction => 'Заблокировать автора';
+
+  @override
+  String get blkConfirmTitle => 'Заблокировать автора?';
+
+  @override
+  String get blkConfirmBody =>
+      'Вы больше не увидите вопросы и ответы этого автора. Кто это, вам не сообщается. Отменить можно в списке заблокированных.';
+
+  @override
+  String get blkDone => 'Автор заблокирован.';
+
+  @override
+  String get blkAlready => 'Этот автор уже заблокирован.';
+
+  @override
+  String get blkSelf => 'Нельзя заблокировать самого себя.';
+
+  @override
+  String get blkFailed => 'Не удалось выполнить. Попробуйте снова.';
+
+  @override
+  String get admxNavReports => 'Жалобы';
+
+  @override
+  String admxNavReportsHint(int n) {
+    return 'Открытых: $n';
+  }
+
+  @override
+  String get admxReportsTitle => 'Жалобы';
+
+  @override
+  String get admxReportsSearch => 'Поиск по тексту или e-mail';
+
+  @override
+  String get admxOpen => 'Открытые';
+
+  @override
+  String get admxResolvedFilter => 'Решённые';
+
+  @override
+  String get admxAll => 'Все';
+
+  @override
+  String get admxKindAny => 'Все типы';
+
+  @override
+  String get admxQaLink =>
+      'Открыть модерацию «Вопросов и ответов» (записи, на которые пожаловались трое)';
+
+  @override
+  String get admxReportsEmpty => 'Жалоб нет.';
+
+  @override
+  String get admxLoadMore => 'Загрузить ещё';
+
+  @override
+  String get admxAnonymous => 'Не вошёл в аккаунт';
+
+  @override
+  String admxContact(String value) {
+    return 'Связь: $value';
+  }
+
+  @override
+  String admxTarget(String type) {
+    return 'Касается: $type';
+  }
+
+  @override
+  String get admxNoteLabel => 'Заметка (только для админов)';
+
+  @override
+  String get admxNoteSave => 'Сохранить заметку';
+
+  @override
+  String get admxNoteSaved => 'Заметка сохранена.';
+
+  @override
+  String get admxResolve => 'Отметить решённой';
+
+  @override
+  String get admxReopen => 'Открыть снова';
+
+  @override
+  String get admxResolvedDone => 'Жалоба отмечена как решённая.';
+
+  @override
+  String get admxReopened => 'Жалоба открыта снова.';
+
+  @override
+  String get admxActionFailed => 'Действие не выполнено. Попробуйте снова.';
+
+  @override
+  String get admxActions => 'Действия';
+
+  @override
+  String get admxActionsHint =>
+      'Каждое действие проверяется сервером и записывается в журнал.';
+
+  @override
+  String get admxReason => 'Причина';
+
+  @override
+  String get admxReasonHint => 'Не менее 5 символов. Записывается в журнал.';
+
+  @override
+  String get admxReasonShort => 'Причина — не менее 5 символов.';
+
+  @override
+  String get admxCancel => 'Отмена';
+
+  @override
+  String get admxConfirm => 'Подтвердить';
+
+  @override
+  String get admxSelfNote =>
+      'Нельзя менять собственную роль или приостанавливать собственный аккаунт.';
+
+  @override
+  String get admxModeratorGrant => 'Назначить модератором статей';
+
+  @override
+  String get admxModeratorRemove => 'Снять роль модератора';
+
+  @override
+  String get admxRemoveAdmin => 'Снять роль администратора';
+
+  @override
+  String get admxRemoveAdminTitle => 'Снять роль администратора?';
+
+  @override
+  String get admxRemoveAdminBody =>
+      'Человек сразу потеряет доступ к админ-панели. Последнего администратора снять нельзя. Роль научного рецензента отдельная и здесь не меняется.';
+
+  @override
+  String get admxAdminNotSuspendable =>
+      'Аккаунт администратора нельзя приостановить.';
+
+  @override
+  String get admxSuspend => 'Приостановить аккаунт';
+
+  @override
+  String get admxRestore => 'Восстановить аккаунт';
+
+  @override
+  String get admxSuspendTitle => 'Приостановить этот аккаунт?';
+
+  @override
+  String get admxSuspendConfirmBody =>
+      'Человек будет выведен из аккаунта на всех устройствах и не сможет войти, пока вы не восстановите аккаунт. Действие записывается в журнал.';
+
+  @override
+  String get admxRoleGranted => 'Роль назначена.';
+
+  @override
+  String get admxRoleRevoked => 'Роль снята.';
+
+  @override
+  String get admxNoChange => 'Изменений нет.';
+
+  @override
+  String get admxUserNotFound => 'Пользователь не найден.';
+
+  @override
+  String get admxRoleForbidden =>
+      'Эту роль нельзя назначить из приложения. Владелец делает это на сервере.';
+
+  @override
+  String get admxEmailUnconfirmed => 'Адрес e-mail не подтверждён.';
+
+  @override
+  String get admxSelfAdmin => 'Нельзя менять собственную роль администратора.';
+
+  @override
+  String get admxLastAdmin => 'Последнего администратора снять нельзя.';
+
+  @override
+  String get admxCannotSuspendAdmin => 'Администратора нельзя приостановить.';
+
+  @override
+  String get admxCannotSuspendSelf => 'Нельзя приостановить самого себя.';
+
+  @override
+  String get admxSuspended => 'Аккаунт приостановлен. Его сеансы закрыты.';
+
+  @override
+  String get admxRestored => 'Аккаунт восстановлен.';
+
+  @override
+  String get admxExtTitle => 'Роли, жалобы и объекты';
+
+  @override
+  String get admxStatAdmins => 'Администраторы';
+
+  @override
+  String get admxStatModerators => 'Модераторы';
+
+  @override
+  String get admxStatSuspended => 'Приостановлено';
+
+  @override
+  String get admxStatReportsOpen => 'Открытые жалобы';
+
+  @override
+  String get admxStatReportsResolved => 'Решённые жалобы';
+
+  @override
+  String get admxStatQaQuestions => 'Вопросы (В&О)';
+
+  @override
+  String get admxStatQaAnswers => 'Ответы (В&О)';
+
+  @override
+  String get admxStatQaModeration => 'На модерации';
+
+  @override
+  String get admxStatBlocks => 'Блокировки';
+
+  @override
+  String get admxCasebookNote =>
+      'Рабочие дневники: хранятся на устройстве, не учитываются.';
+
+  @override
+  String get admxOnlineNote =>
+      'Сейчас в системе: недоступно (нет отслеживания активности).';
+
+  @override
+  String get admxStoresTitle => 'Загрузки и продажи';
+
+  @override
+  String get admxDownloadsNote =>
+      'Загрузки: сервер их не видит. Откройте консоли магазинов.';
+
+  @override
+  String get admxSalesNote => 'Продажи: 0 — платёжной системы нет.';
+
+  @override
+  String get admxOpenAsc => 'App Store Connect';
+
+  @override
+  String get admxOpenPlay => 'Google Play Console';
+
+  @override
+  String get admxOpenFailed => 'Не удалось открыть ссылку.';
+
+  @override
+  String get admActAdminRoleSet => 'Роль изменена из панели';
+
+  @override
+  String get admActUserSuspended => 'Аккаунт приостановлен';
+
+  @override
+  String get admActUserRestored => 'Аккаунт восстановлен';
+
+  @override
+  String get admActReportsView => 'Просмотр списка жалоб';
+
+  @override
+  String get admActReportNote => 'Заметка к жалобе';
+
+  @override
+  String get admActReportResolved => 'Жалоба решена';
+
+  @override
+  String get admActReportReopened => 'Жалоба открыта снова';
+
+  @override
+  String get admActAdminBootstrap =>
+      'Назначен первый администратор (начальная настройка)';
 }

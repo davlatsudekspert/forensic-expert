@@ -17,6 +17,7 @@ import '../data/local/casebook_store.dart';
 import '../data/local/court_history_store.dart';
 import '../data/local/profile_store.dart';
 import '../data/local/referral_store.dart';
+import '../data/local/report_device_key.dart';
 import '../data/local/study_progress_store.dart';
 import '../data/local/user_data_repository.dart';
 import '../data/offline/offline_backend.dart';
@@ -24,6 +25,7 @@ import '../data/remote/http_auth_repository.dart';
 import '../data/remote/supabase_account.dart';
 import '../data/remote/supabase_ai_provider.dart';
 import '../data/remote/supabase_auth_repository.dart';
+import '../data/remote/supabase_moderation.dart';
 import '../data/remote/supabase_professional.dart';
 import '../data/remote/supabase_publications.dart';
 import '../data/remote/supabase_qa.dart';
@@ -35,6 +37,7 @@ import 'account.dart';
 import 'app.dart';
 import 'casebook.dart';
 import 'court_prep.dart';
+import 'moderation.dart';
 import 'professional.dart';
 import 'providers.dart';
 import 'publications.dart';
@@ -142,6 +145,13 @@ Future<void> bootstrap({List<Override> testOverrides = const []}) async {
           ),
           qaServiceProvider.overrideWithValue(
             SupabaseQaService(config: supabase, auth: auth),
+          ),
+          moderationServiceProvider.overrideWithValue(
+            SupabaseModerationService(
+              config: supabase,
+              auth: auth,
+              deviceKey: () => reportDeviceKey(prefs),
+            ),
           ),
         ],
         ...testOverrides,

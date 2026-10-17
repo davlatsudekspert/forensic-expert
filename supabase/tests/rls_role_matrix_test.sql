@@ -121,7 +121,13 @@ insert into matrix_tables values
  ('public.qa_answers',             'author_id',    false, false, 'body'),
  ('public.qa_votes',               'voter_id',     false, false, 'value'),
  ('public.qa_reports',             'reporter_id',  false, false, 'reason'),
- ('public.qa_translations',        null,           false, false, 'body');
+ ('public.qa_translations',        null,           false, false, 'body'),
+ -- Admin extension (20261017000000): reports, blocks, terms, suspensions.
+ -- No policy, no grant: only the SECURITY DEFINER functions touch them.
+ ('public.user_reports',           'reporter_id',  false, false, 'body'),
+ ('public.user_blocks',            'blocker_id',   false, false, 'created_at'),
+ ('public.user_terms',             'user_id',      false, false, 'version'),
+ ('public.account_suspensions',    'user_id',      false, false, 'reason');
 grant select on matrix_tables to anon, authenticated;
 
 -- Fix the column used for the no-op UPDATE to a real column of each table.
@@ -260,6 +266,9 @@ values ('50000000-0000-0000-0000-00000000000b', 'forensic_chemist', 'UZ', 'verif
         'document_ok', now());
 insert into qa_rate (user_id, day, kind, n)
 values ('50000000-0000-0000-0000-00000000000a', current_date, 'ask', 1);
+insert into user_terms (user_id, doc, version)
+values ('50000000-0000-0000-0000-00000000000a', 'ugc_rules', 'test'),
+       ('50000000-0000-0000-0000-00000000000b', 'ugc_rules', 'test');
 insert into qa_questions (id, author_id, lang, title, body, tags)
 values ('60000000-0000-0000-0000-0000000000b1'::uuid,
         '50000000-0000-0000-0000-00000000000a', 'uz',
@@ -279,6 +288,14 @@ values ('answer', '60000000-0000-0000-0000-0000000000b2',
 insert into qa_translations (target_type, target_id, lang, title, body, engine)
 values ('question', '60000000-0000-0000-0000-0000000000b1'::uuid, 'ru',
         'Вопрос', 'Текст', 'matrix-seed');
+-- Admin extension rows.
+insert into user_reports (kind, body, reporter_id, rate_key)
+values ('BUG', 'Matritsa testi uchun shikoyat', '50000000-0000-0000-0000-00000000000a',
+        'u:50000000-0000-0000-0000-00000000000a');
+insert into user_blocks (blocker_id, blocked_id)
+values ('50000000-0000-0000-0000-00000000000d', '50000000-0000-0000-0000-00000000000a');
+insert into account_suspensions (user_id, reason)
+values ('50000000-0000-0000-0000-00000000000d', 'matritsa testi uchun sabab');
 
 -- Every table must hold rows, otherwise "0 rows touched" proves nothing.
 do $$
