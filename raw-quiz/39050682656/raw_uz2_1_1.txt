@@ -1,0 +1,108 @@
+```json
+{
+  "questions": [
+    {
+      "question": "Mexanik jarohatning yaqqolligi va ko‘lami harakatdagi omilga (shikastlovchi vosita yoki tana qismiga) qanday bog‘liq bo‘ladi?",
+      "options": [
+        "Ta’sir yuzasining relefi va ta’sir davomiyligiga to‘g‘ri proporsional bo‘ladi",
+        "Omilning massasi va harakat tezligiga to‘g‘ri proporsional bo‘ladi",
+        "Shikastlanuvchi shaxsning yoshi va jinsiga to‘g‘ri proporsional bo‘ladi",
+        "Atrof-muhit harorati va namligiga to‘g‘ri proporsional bo‘ladi"
+      ],
+      "correct_index": 1,
+      "explanation": "Mexanik jarohat uchun asosiy shart harakat bo‘lib, shikast xususiyati o‘zaro ta’sir paytidagi kinetik energiyaga bog‘liq. Kinetik energiya esa massa va tezlik bilan belgilanadi. Boshqa variantlar jarohat turiga ta’sir qilishi mumkin, lekin ko‘lamning to‘g‘ri proporsional omili emas.",
+      "difficulty": "easy",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik",
+        "page": "29-30"
+      }
+    },
+    {
+      "question": "Jabrlanuvchining tanasi og‘ir jism va devor orasida uzoqroq vaqt qisilgan. Tashqi jarohatlar kam, ichki a’zolar va suyaklar esa jiddiy shikastlangan. Qaysi ta’sir mexanizmi ishtirok etgan?",
+      "options": [
+        "Zarb",
+        "Ishqalanish",
+        "Cho‘zilish",
+        "Siqilish"
+      ],
+      "correct_index": 3,
+      "explanation": "Siqilishda tanaga bir-biriga qarab yo‘nalgan ikki kuch nisbatan uzoq ta’sir etadi, ikkinchi kuch vazifasini ko‘pincha harakatsiz jism (devor) bajaradi. Shikastlovchi jism massiv va sekin harakatlanadi, shuning uchun ichki shikast tashqidan jiddiyroq bo‘ladi. Zarb qisqa muddatli, ishqalanishda asosan shilinma hosil bo‘ladi, cho‘zilishda kuchlar markazdan qochadi.",
+      "difficulty": "medium",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik",
+        "page": "35"
+      }
+    },
+    {
+      "question": "Tishlama yaralar odam tishlarining ko‘ndalang kesimi shakliga mos keladi. Qoziq tishlar ta’sirida qanday shakldagi yaralar hosil bo‘ladi?",
+      "options": [
+        "Halqasimon",
+        "Uzunchoq",
+        "To‘rtburchak",
+        "Yoysimon"
+      ],
+      "correct_index": 0,
+      "explanation": "Qoziq tishning kesimi dumaloq bo‘lgani uchun uning izi halqasimon yara bo‘ladi. Uzunchoq iz kurak tishlarga, to‘rtburchak iz jag‘ tishlariga xos. Yoysimon yara esa tishlama yara shakllari ro‘yxatida yo‘q, u dumaloq yassi yuzaning qiya ta’siri natijasi.",
+      "difficulty": "medium",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik",
+        "page": "40"
+      }
+    },
+    {
+      "question": "Kesilgan (incised) jarohat sanchma (stab) yaradan qaysi o‘lchov nisbati bilan farqlanadi?",
+      "options": [
+        "Yara chuqurligi teri yuzasidagi uzunligidan katta bo‘ladi",
+        "Yara eni uning uzunligi va chuqurligidan katta bo‘ladi",
+        "Yara teri yuzasida chuqurligidan uzunroq bo‘ladi",
+        "Yara uzunligi bilan chuqurligi doim teng bo‘ladi"
+      ],
+      "correct_index": 2,
+      "explanation": "Kesilgan jarohat teri yuzasida chuqurligidan uzunroq, sanchma yara esa aksincha, chuqurligi sirtdagi uzunligidan katta. Boshqa variantlar kesma jarohat tavsifiga mos kelmaydi.",
+      "difficulty": "easy",
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "86"
+      }
+    },
+    {
+      "question": "O‘z joniga qasd qilgan shaxslarda o‘zi etkazgan kesilgan jarohatlar eng ko‘p qaysi “tanlangan” sohalarda uchraydi?",
+      "options": [
+        "Qo‘l panjasining orqa yuzasi va tizza sohasida",
+        "Bilak oldi yuzasi va bo‘yin sohasida",
+        "Ko‘z qovoqlari va lab sohasida",
+        "Ko‘krak so‘rg‘ichlari va jinsiy a’zolar sohasida"
+      ],
+      "correct_index": 1,
+      "explanation": "Suitsidal kesma jarohatlar odatda bilaklarning oldingi yuzasida va bo‘yinda uchraydi, sanchma jarohatlar esa yurak proyeksiyasi va qorin sohasida. Ko‘z, lab, so‘rg‘ich va jinsiy a’zolar o‘zini jarohatlovchilarda odatda saqlanib qoladi, shuning uchun ular tanlangan soha emas.",
+      "difficulty": "medium",
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "92"
+      }
+    },
+    {
+      "question": "Shaxs o‘z bo‘yi balandligidan orqaga yiqilib, ensasini urdi. Bosh miya shikastlanishi qayerda kuchliroq bo‘ladi?",
+      "options": [
+        "Faqat zarb tushgan ensa sohasida, qarama-qarshi tomonda o‘zgarish bo‘lmaydi",
+        "Faqat miya poyasida, yarim sharlar shikastlanmaydi",
+        "Zarb sohasiga nisbatan qarama-qarshi joylarda (aks zarb sohalarida)",
+        "Faqat chakka bo‘laklarida, peshona bo‘laklari saqlanadi"
+      ],
+      "correct_index": 2,
+      "explanation": "Orqaga yiqilganda ensa sohasida shilinma, qontalash va suyak sinishi bo‘lishi mumkin, lekin miyaning shikastlanishi zarb joyiga qarama-qarshi (aks zarb) sohalarda jiddiyroq bo‘ladi. Boshqa variantlar bu qonuniyatga zid.",
+      "difficulty": "medium",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik",
+        "page": "47"
+      }
+    }
+  ]
+}
+```
