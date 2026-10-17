@@ -9451,4 +9451,29 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get admActAdminBootstrap =>
       'Birinchi admin tayinlandi (egasi bootstrap)';
+
+  @override
+  String get socialOr => 'yoki';
+
+  @override
+  String get socialContinueGoogle => 'Google bilan davom etish';
+
+  @override
+  String get socialContinueApple => 'Apple bilan davom etish';
+
+  @override
+  String get socialErrUnavailable =>
+      'Bu usulda kirish hozir mavjud emas. Qayta urinib ko‘ring yoki email orqali kiring.';
+
+  @override
+  String get socialTermsNote =>
+      'Davom etib, Foydalanish shartlari va Maxfiylik siyosatiga rozilik bildirasiz.';
+
+  @override
+  String get deleteAccountSocialNote =>
+      'Bu hisob Google yoki Apple orqali ochilgan, shuning uchun parol kerak emas. O‘chirish uchun pastda tasdiqlang.';
+
+  @override
+  String get deleteAccountAppleNote =>
+      'Bu hisob Apple orqali ochilgan, shuning uchun parol kerak emas. Tasdiqlaganingizdan so‘ng Apple o‘zingizni tasdiqlashni so‘raydi va ilovaning Apple ID’ingizga kirish huquqi bekor qilinadi.';
 }

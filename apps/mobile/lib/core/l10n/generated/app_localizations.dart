@@ -16544,6 +16544,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'First admin assigned (owner bootstrap)'**
   String get admActAdminBootstrap;
+
+  /// Divider between email form and social sign-in buttons.
+  ///
+  /// In en, this message translates to:
+  /// **'or'**
+  String get socialOr;
+
+  /// Google sign-in button label (brand guideline wording).
+  ///
+  /// In en, this message translates to:
+  /// **'Continue with Google'**
+  String get socialContinueGoogle;
+
+  /// Apple sign-in button label (Apple HIG wording).
+  ///
+  /// In en, this message translates to:
+  /// **'Continue with Apple'**
+  String get socialContinueApple;
+
+  /// Error: Google/Apple sign-in failed or is unavailable on this device.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign-in with this provider is unavailable right now. Try again or use your email.'**
+  String get socialErrUnavailable;
+
+  /// Note under social buttons: continuing means accepting terms.
+  ///
+  /// In en, this message translates to:
+  /// **'By continuing you accept the Terms of Use and the Privacy Policy.'**
+  String get socialTermsNote;
+
+  /// Delete-account screen note for accounts created with Google/Apple (no password).
+  ///
+  /// In en, this message translates to:
+  /// **'This account was created with Google or Apple, so no password is needed. Confirm below to delete it.'**
+  String get deleteAccountSocialNote;
+
+  /// Delete-account screen note for Apple accounts: Apple re-confirmation step.
+  ///
+  /// In en, this message translates to:
+  /// **'This account was created with Apple, so no password is needed. After you confirm, Apple will ask you to verify it is you, and the app\'s access to your Apple ID will be revoked.'**
+  String get deleteAccountAppleNote;
 }
 
 class _AppLocalizationsDelegate

@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import '../../domain/auth/auth_models.dart';
+import '../../domain/auth/social_sign_in.dart';
 import '../../domain/ports/backend_ports.dart';
 
 /// Akkaunt backend’ining HTTP adapteri (REST kontrakti:
@@ -211,6 +212,15 @@ class HttpAuthRepository implements AuthRepository {
   );
 
   @override
+  Future<AuthOutcome> signInWithIdToken({
+    required SocialProvider provider,
+    required String idToken,
+    String? nonce,
+    String? fullName,
+    String? acceptedTermsVersion,
+  }) async => const AuthOutcome.fail(AuthFailure.backendNotConfigured);
+
+  @override
   Future<AuthOutcome> signIn({
     required String email,
     required String password,
@@ -283,7 +293,10 @@ class HttpAuthRepository implements AuthRepository {
   }
 
   @override
-  Future<AuthOutcome> deleteAccount({required String password}) async {
+  Future<AuthOutcome> deleteAccount({
+    required String password,
+    String? appleAuthorizationCode,
+  }) async {
     if (!_state.signedIn) {
       return const AuthOutcome.fail(AuthFailure.notSignedIn);
     }

@@ -101,6 +101,12 @@ enum AuthFailure {
   /// Xavfli amal uchun parol qayta kiritilishi kerak.
   requiresRecentLogin,
   notSignedIn,
+
+  /// Foydalanuvchi Google/Apple oynasini yopdi — xato emas, jim qaytiladi.
+  cancelled,
+
+  /// Google/Apple kirishi shu qurilmada ishlamaydi yoki sozlanmagan.
+  socialUnavailable,
 }
 
 @immutable
@@ -119,12 +125,20 @@ class AuthAccount {
     required this.userId,
     required this.email,
     required this.emailVerified,
+    this.provider = 'email',
   });
 
   /// Ichki identifikator (server bergan).
   final String userId;
   final String email;
   final bool emailVerified;
+
+  /// Kirish usuli (Supabase `app_metadata.provider`): `email`, `google`,
+  /// `apple`.
+  final String provider;
+
+  /// Google/Apple orqali ochilgan akkaunt — parol yo‘q.
+  bool get isSocial => provider == 'google' || provider == 'apple';
 }
 
 /// Tasdiqlash / tiklash kodlarining amal qilish muddati (server bilan bir

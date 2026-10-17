@@ -1,0 +1,7 @@
+// Google bilan kirish: iOS OAuth client ID'ning "REVERSED_CLIENT_ID" qiymati
+// (masalan com.googleusercontent.apps.<raqamlar>-<harflar>). Bu maxfiy kalit
+// EMAS, lekin repoga egasining qiymati yozilmaydi: haqiqiy qiymat
+// `Flutter/SocialLocal.xcconfig` (gitignored) yoki CI'da shu faylni yaratish
+// orqali beriladi. Qadamlar: docs/SOCIAL_SIGN_IN.md.
+GOOGLE_REVERSED_CLIENT_ID = com.googleusercontent.apps.PLACEHOLDER-NOT-CONFIGURED
+#include? "SocialLocal.xcconfig"

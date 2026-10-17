@@ -9539,4 +9539,29 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get admActAdminBootstrap =>
       'Назначен первый администратор (начальная настройка)';
+
+  @override
+  String get socialOr => 'или';
+
+  @override
+  String get socialContinueGoogle => 'Продолжить с Google';
+
+  @override
+  String get socialContinueApple => 'Продолжить с Apple';
+
+  @override
+  String get socialErrUnavailable =>
+      'Вход через этого провайдера сейчас недоступен. Попробуйте ещё раз или войдите по email.';
+
+  @override
+  String get socialTermsNote =>
+      'Продолжая, вы принимаете Условия использования и Политику конфиденциальности.';
+
+  @override
+  String get deleteAccountSocialNote =>
+      'Этот аккаунт создан через Google или Apple, пароль не нужен. Подтвердите ниже, чтобы удалить его.';
+
+  @override
+  String get deleteAccountAppleNote =>
+      'Этот аккаунт создан через Apple, пароль не нужен. После подтверждения Apple попросит подтвердить, что это вы, и доступ приложения к вашему Apple ID будет отозван.';
 }

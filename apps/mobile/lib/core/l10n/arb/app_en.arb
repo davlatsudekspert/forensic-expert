@@ -12250,5 +12250,33 @@
   "admActAdminBootstrap": "First admin assigned (owner bootstrap)",
   "@admActAdminBootstrap": {
     "description": "Audit action label."
+  },
+  "socialOr": "or",
+  "@socialOr": {
+    "description": "Divider between email form and social sign-in buttons."
+  },
+  "socialContinueGoogle": "Continue with Google",
+  "@socialContinueGoogle": {
+    "description": "Google sign-in button label (brand guideline wording)."
+  },
+  "socialContinueApple": "Continue with Apple",
+  "@socialContinueApple": {
+    "description": "Apple sign-in button label (Apple HIG wording)."
+  },
+  "socialErrUnavailable": "Sign-in with this provider is unavailable right now. Try again or use your email.",
+  "@socialErrUnavailable": {
+    "description": "Error: Google/Apple sign-in failed or is unavailable on this device."
+  },
+  "socialTermsNote": "By continuing you accept the Terms of Use and the Privacy Policy.",
+  "@socialTermsNote": {
+    "description": "Note under social buttons: continuing means accepting terms."
+  },
+  "deleteAccountSocialNote": "This account was created with Google or Apple, so no password is needed. Confirm below to delete it.",
+  "@deleteAccountSocialNote": {
+    "description": "Delete-account screen note for accounts created with Google/Apple (no password)."
+  },
+  "deleteAccountAppleNote": "This account was created with Apple, so no password is needed. After you confirm, Apple will ask you to verify it is you, and the app's access to your Apple ID will be revoked.",
+  "@deleteAccountAppleNote": {
+    "description": "Delete-account screen note for Apple accounts: Apple re-confirmation step."
   }
 }

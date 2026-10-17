@@ -9487,4 +9487,29 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get admActAdminBootstrap => 'First admin assigned (owner bootstrap)';
+
+  @override
+  String get socialOr => 'or';
+
+  @override
+  String get socialContinueGoogle => 'Continue with Google';
+
+  @override
+  String get socialContinueApple => 'Continue with Apple';
+
+  @override
+  String get socialErrUnavailable =>
+      'Sign-in with this provider is unavailable right now. Try again or use your email.';
+
+  @override
+  String get socialTermsNote =>
+      'By continuing you accept the Terms of Use and the Privacy Policy.';
+
+  @override
+  String get deleteAccountSocialNote =>
+      'This account was created with Google or Apple, so no password is needed. Confirm below to delete it.';
+
+  @override
+  String get deleteAccountAppleNote =>
+      'This account was created with Apple, so no password is needed. After you confirm, Apple will ask you to verify it is you, and the app\'s access to your Apple ID will be revoked.';
 }
