@@ -158,7 +158,7 @@ def build(data, out_path):
             _text(s, MX, Inches(2.6), W - 2 * MX, Inches(3.6), q["explanation"], 20, INK)
             _text(s, MX, Inches(6.4), W - 2 * MX, Inches(0.5), "Manba: " + _src(q), 11, GREY)
     n += 1
-    s = _frame(prs, "Foydalanilgan manbalar", n, total, topic)
+    s = _frame(prs, "Adabiyotlar", n, total, topic)
     _bullets(s, [{"text": f"{(x.get('author') or '').rstrip('.')}. {x.get('title')}. {x.get('year') or ''}. {x.get('pages')}"} for x in data.get("sources", [])], MX, Inches(1.6), W - 2 * MX, Inches(5), 20)
     prs.save(out_path)
     return out_path
