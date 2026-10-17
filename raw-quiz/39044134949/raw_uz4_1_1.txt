@@ -1,0 +1,73 @@
+```json
+{
+  "questions": [
+    {
+      "question": "Xonada is gazining konsentratsiyasi juda yuqori (1% dan ortiq) bo‘lgan. Shaxs bir necha soniya ichida hushini yo‘qotdi va nafasi to‘xtashidan vafot etdi. Periferik venadan olingan qonda karboksigemoglobin deyarli topilmadi. Qaysi namunada uni aniqlash ehtimoli eng yuqori?",
+      "options": [
+        "Son venasi va tirsak venasidan olingan qon aralashmasi",
+        "Yurakning chap qorinchasi va aortaning boshlang‘ich qismidan olingan qon",
+        "Siydik qopidagi siydik va o‘t pufagidagi o‘t aralashmasi",
+        "Oshqozon ichidagi massa va jigar to‘qimasidan olingan bo‘lak"
+      ],
+      "correct_index": 1,
+      "explanation": "Is gazining yashinsimon shaklida o‘lim bir necha soniyada yuz beradi. Karboksigemoglobin shunda faqat yurakning chap qorinchasi va aorta boshlang‘ich qismidagi qonda topilishi mumkin. Periferik qon, siydik, o‘t va oshqozon massasi bunday holatda ishonchli natija bermaydi.",
+      "difficulty": "hard",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik",
+        "page": "150"
+      }
+    },
+    {
+      "question": "Rezina ishlab chiqarish korxonasida ikki ishchi tasodifan teng miqdorda zahar ichdi: biri natriy nitrit, ikkinchisi natriy nitrat. Nitrit ichgan ishchida metgemoglobin hosil bo‘lishi va umumiy ta’sir tezroq hamda kuchliroq namoyon bo‘ldi. Buning asosiy sababi qaysi?",
+      "options": [
+        "Nitratlar suvda erimaydi va shu sababli oshqozon-ichakdan qonga deyarli so‘rilmaydi",
+        "Nitratlar gemoglobindagi temirni ikki valentli holatda mustahkam bog‘lab, oksidlanishiga to‘sqinlik qiladi",
+        "Nitritlar jigarda sulfgidril guruhlarni bog‘lab, gemoglobinni karboksigemoglobinga aylantiradi",
+        "Nitratlar ichak mikroflorasi ta’sirida nitritga aylangandagina metgemoglobin hosil qilish xususiyatiga ega bo‘ladi"
+      ],
+      "correct_index": 3,
+      "explanation": "Nitratlar to‘g‘ridan-to‘g‘ri metgemoglobin hosil qilmaydi. Avval ichak mikroflorasi ularni nitritlarga aylantirishi kerak, shuning uchun ular nitritlarga nisbatan kuchsizroq ta’sir ko‘rsatadi. Boshqa variantlar manbada keltirilgan mexanizmlarga mos kelmaydi.",
+      "difficulty": "hard",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik",
+        "page": "152"
+      }
+    },
+    {
+      "question": "Murdadan olingan qonda 3,8 promille etil spirti aniqlandi. Voqea joyida tarkibida propil, butil va amil spirtlari bo‘lgan surrogat ichimlik topilgan. Boshqa o‘lim sababi aniqlanmadi. Qaysi xulosa to‘g‘ri?",
+      "options": [
+        "Yuqori molekulyar spirtlar bo‘lganda o‘tkir zaharlanishdan o‘lim 4,0 promilledan past konsentratsiyada ham yuz berishi mumkin",
+        "Konsentratsiya 5,0 promilledan past bo‘lgani uchun etil spirti o‘lim sababi bo‘la olmaydi",
+        "Bunday holatda o‘lim sababi faqat surunkali alkogol iste’moli fonidagi kardiomiopatiya hisoblanadi",
+        "3,8 promille kuchli darajali mastlikka mos keladi va o‘limni faqat mastlikdagi baxtsiz hodisa bilan izohlash kerak"
+      ],
+      "correct_index": 0,
+      "explanation": "Odatda murdada 5,0 promille va undan ortiq spirt o‘tkir zaharlanishdan o‘lim sababi hisoblanadi. Ichimlikda yuqori molekulyar spirtlar bo‘lsa, o‘lim pastroq konsentratsiyalarda, hatto 4,0 promilledan past bo‘lganda ham sodir bo‘lishi mumkin. Boshqa variantlar bu qoidani va voqea tafsilotini hisobga olmaydi.",
+      "difficulty": "hard",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik",
+        "page": "160"
+      }
+    },
+    {
+      "question": "Kuchli alkogol intoksikatsiyasidan komaga tushgan bemordan namunalar olindi. Ichimlik qachon ichilganini Vidmark usulida hisoblash uchun Vidmark konstantasini (p) aniqlash kerak, individual o‘lchash imkoni yo‘q. Koma holatida eliminatsiya sur’ati qaysi oraliqda kutiladi?",
+      "options": [
+        "Soatiga 0,13–0,15 promille oralig‘ida",
+        "Soatiga 0,20–0,24 promille oralig‘ida",
+        "Soatiga 0,10 promilledan past qiymatda",
+        "Soatiga 0,30–0,40 promille oralig‘ida"
+      ],
+      "correct_index": 2,
+      "explanation": "Uyqu va koma holatlarida spirtning chiqarilish sur’ati sekinlashadi, koma uchun p ko‘rsatkichi 0,10 dan past bo‘ladi. Yuqori qiymatlar (0,20–0,24 va 0,30–0,40) kuchli jismoniy yuklama, sovuq urish yoki alkogolga tolerantlikka xos. 0,13–0,15 esa individual aniqlash imkoni bo‘lmaganda olinadigan o‘rtacha qiymat.",
+      "difficulty": "hard",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik",
+        "page": "159"
+      }
+    },
+    {
+      "question": "Antifriz ichgan bemorda dastlab mastlik alomatlari, qisqa yashirin davr, so‘ng markaziy n
