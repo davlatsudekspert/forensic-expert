@@ -57,6 +57,9 @@ def abbrevs(text):
     Faqat KATTA HARFLI so'zlar (DNK/DNA kabi tilga qarab o'zgaradiganlar) tekshirilmaydi."""
     out = set()
     for t in TOKEN_RE.findall(text or ""):
+        m = re.match(r"^([A-Z][A-Z0-9-]+)([a-z‘’']{2,})$", t)
+        if m:  # OITSga, DNKning: katta harfli qisqartma + o'zbekcha qo'shimcha — tilga bog'liq
+            continue
         if sum(c.isupper() for c in t) >= 2 and (not t.isupper() or "-" in t):
             out.add(t)
     return out
@@ -180,6 +183,18 @@ def _q_schema():
             '"difficulty":"easy"|"medium"|"hard","source":{"author":str,"title":str,"page":str}}]}')
 
 
+def _fit_batch(qs, want_easy, want_hard):
+    """Model ortiqcha savol bersa, qiyinlik taqsimotiga mos birinchilarini olamiz (kam bo'lsa — o'zgarishsiz, validator rad etadi)."""
+    if len(qs) <= want_easy + want_hard:
+        return qs
+    easy = [q for q in qs if q.get("difficulty") in ("easy", "medium")][:want_easy]
+    hard = [q for q in qs if q.get("difficulty") == "hard"][:want_hard]
+    if len(easy) == want_easy and len(hard) == want_hard:
+        keep = {id(q) for q in easy + hard}
+        return [q for q in qs if id(q) in keep]
+    return qs[:want_easy + want_hard]
+
+
 def gen_uz(client, user, sources, existing, raw_dir):
     """(a) uz savollar 6 tadan batchlarda. Manba matni keshlanadi; oldingi savollar dublikat nazorati uchun beriladi."""
     src = {"type": "text", "text": user, "cache_control": {"type": "ephemeral"}}
@@ -194,7 +209,7 @@ def gen_uz(client, user, sources, existing, raw_dir):
                     f"quyidagi savollarni TAKRORLAMANG va ularga o'xshash qilmang: {json.dumps(avoid, ensure_ascii=False)}. "
                     f"{err}Sxema: {_q_schema()}")
             r = g._json_call(client, QUIZ_SYSTEM, [src, {"type": "text", "text": task}], UZ_MAX_TOKENS, f"uz{b}_{attempt}", raw_dir)
-            qs = g.clean_text({"mcq": r.get("questions", [])})["mcq"]
+            qs = _fit_batch(g.clean_text({"mcq": r.get("questions", [])})["mcq"], ne, nh)
             fixed = {"mcq": qs}
             g.canonicalize_sources(fixed, sources)
             try:

@@ -69,9 +69,9 @@ jobs:
           cp /tmp/o/raw/* "raw/$GITHUB_RUN_ID/" 2>/dev/null || true
           git add out raw
           git commit -qm "slides output: $TOPIC" || exit 0
-          for i in 1 2 3 4 5 6; do
+          for i in $(seq 1 20); do
             git push -q origin slides-out && exit 0
             git fetch -q origin slides-out && git rebase origin/slides-out || { git rebase --abort; exit 1; }
-            sleep $((RANDOM % 5 + 2))
+            sleep $((RANDOM % 20 + 5))
           done
           exit 1
