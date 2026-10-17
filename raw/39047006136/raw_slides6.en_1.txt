@@ -1,0 +1,37 @@
+{"slides":[
+{"title":"Case Analysis: Was the Patient Dead?",
+"bullets":[
+{"text":"Scenario: a 70-year-old man collapses in a clinic and CPR fails. The doctor then observes no central pulse, no heart sounds, fixed pupils and no corneal reflex.","source":{"author":"Payne-James J., Jones R., Karch S.B., Manlove J.","title":"Simpson's Forensic Medicine, 13th ed.","page":"25"},"uncertain":false},
+{"text":"UK code of practice: death is confirmed after at least 5 minutes of observed absent circulation, with apnoea and unconsciousness. The time of death is then recorded.","source":{"author":"Payne-James J., Jones R., Karch S.B., Manlove J.","title":"Simpson's Forensic Medicine, 13th ed.","page":"25"},"uncertain":false},
+{"text":"Reliable signs of death: Beloglazov's 'cat's eye' sign (an oval pupil when the eyeball is squeezed) at 15–20 minutes, cooling to 23°C or below, and early cadaveric changes.","source":{"author":"G‘iyosov Z.A.","title":"Sud tibbiyoti","page":"220"},"uncertain":false},
+{"text":"Question: if the heart stopped only 2 minutes ago, is this clinical or biological death? Which signs are merely probable and which are reliable?","source":{"author":"G‘iyosov Z.A.","title":"Sud tibbiyoti","page":"218"},"uncertain":false}
+],
+"diagram":null,
+"teacher_notes":"Time: 8 min. Discussion: (1) Why is irreversibility the key word in defining death? (2) Why do probable signs, such as pallor and absent pulse, not suffice on their own? Whiteboard task: list probable signs in one column and reliable signs in the other. Typical mistake: treating absence of heartbeat alone as proof of biological death. Clinical death lasts about 5–6 minutes in normal conditions, and resuscitation is still possible."},
+{"title":"Medico-Legal Classification of Death",
+"bullets":[
+{"text":"Violent death results from an external factor; non-violent death results from disease.","source":{"author":"G‘iyosov Z.A.","title":"Sud tibbiyoti","page":"221"},"uncertain":false},
+{"text":"Only violent death is divided into kinds. Non-violent death is typed by the causative disease.","source":{"author":"G‘iyosov Z.A.","title":"Sud tibbiyoti","page":"221"},"uncertain":false},
+{"text":"Caution: experts set category and type; the kind depends on intent, which is for law enforcement.","source":{"author":"G‘iyosov Z.A.","title":"Sud tibbiyoti","page":"221"},"uncertain":false}
+],
+"diagram":{"kind":"table","caption":"Levels of the medico-legal classification of death","nodes":[],"header":["Level","Options","Decided by"],
+"rows":[
+["Category","Violent or non-violent","Forensic experts"],
+["Kind (violent only)","Homicide, suicide, accident","Law enforcement (intent)"],
+["Type (violent)","Injury, asphyxia, poisoning, heat/cold, electricity","Forensic experts"],
+["Type (non-violent)","Cardiovascular, respiratory, digestive disease etc.","Forensic experts"]]},
+"teacher_notes":"Time: 6 min. Discussion: (1) Why is the kind of death left to law enforcement? (2) Give an example of each violent type. Whiteboard task: classify three short cases by category, kind and type. Typical mistake: students state homicide or suicide as the expert's conclusion, when the expert only describes the category and type. In England and Wales a Coroner decides the manner of death."},
+{"title":"Supravital Reactions",
+"bullets":[
+{"text":"Idiomuscular tumour: a ridge up to 2 cm high at the tap site; it lowers as time passes.","source":{"author":"G‘iyosov Z.A.","title":"Sud tibbiyoti","page":"222"},"uncertain":false},
+{"text":"Tissues still react to mechanical, electrical and chemical stimuli for hours after brain death.","source":{"author":"G‘iyosov Z.A.","title":"Sud tibbiyoti","page":"221"},"uncertain":false},
+{"text":"Caution: cells stay active for hours, so such tests give only estimates.","source":{"author":"Payne-James J., Jones R., Karch S.B., Manlove J.","title":"Simpson's Forensic Medicine, 13th ed.","page":"24"},"uncertain":false}
+],
+"diagram":{"kind":"table","caption":"Supravital reactions and time windows","nodes":[],"header":["Reaction","Time window","Finding"],
+"rows":[
+["Mechanical (muscle)","Contraction 1–2 h; ridge up to 10 h","Ridge fades; pit at 10–11 h"],
+["Electrical (muscle)","Limbs/face 2–3 h; eye muscles to 12 h","Fewer muscle groups respond over time"],
+["Pupil, drugs","Drops 5–6 h; injection up to 24 h","Atropine dilates; pilocarpine constricts"],
+["Sweat glands","Up to 30 h","Blue spot 0.5–1 h after injection"]]},
+"teacher_notes":"Time: 7 min. Discussion: (1) Why do tissues react after brain death? (2) Why is no single supravital test enough to fix the time of death? Whiteboard task: draw a timeline from 0 to 30 hours and mark when each reaction ends. Typical mistake: treating a positive reaction as proof of life, when it only shows that tissue is still metabolically active. No single reliable method exists, so combine several methods."}
+]}

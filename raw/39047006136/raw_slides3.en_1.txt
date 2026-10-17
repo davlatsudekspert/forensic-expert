@@ -1,0 +1,27 @@
+{"slides":[
+{"title":"Case Analysis: Euthanasia vs Pain Relief",
+"bullets":[
+{"text":"Scenario: a patient with an incurable disease is in severe pain. The doctor injects a large dose of an analgesic to ease the suffering. The patient dies soon afterwards.","source":{"author":"G‘iyosov Z.A.","title":"Sud tibbiyoti (Global Books, 2018)","page":"219"},"uncertain":false},
+{"text":"If the aim was only to relieve pain and not to hasten death, this is 'indirect active euthanasia'. The death is judged as negligent homicide or as an accident.","source":{"author":"G‘iyosov Z.A.","title":"Sud tibbiyoti (Global Books, 2018)","page":"218-219"},"uncertain":false},
+{"text":"Caution: common error. If the act was meant to hasten death (direct active euthanasia), it appears as homicide or suicide. Passive euthanasia (withdrawing care) is judged as failure of duty or endangering life.","source":{"author":"G‘iyosov Z.A.","title":"Sud tibbiyoti (Global Books, 2018)","page":"218-219"},"uncertain":false},
+{"text":"Question: which element of the doctor's conduct decides whether this case is direct or indirect active euthanasia, and why does the legal assessment differ?","source":{"author":"G‘iyosov Z.A.","title":"Sud tibbiyoti (Global Books, 2018)","page":"218-219"},"uncertain":false}
+],
+"diagram":null,
+"teacher_notes":"Time: 6 min. Discussion: (1) How can intent be shown from medical records? (2) Why is a high analgesic dose not automatically homicide? Whiteboard task: draw the four types of euthanasia and mark which are active and which passive. Typical mistake: students equate any death after high-dose analgesia with direct euthanasia, ignoring the aim of the act."},
+{"title":"Diagnosis of Death After Cardiorespiratory Arrest",
+"bullets":[
+{"text":"Irreversible apnoea, unconsciousness and absent circulation, after full attempts to reverse causes","source":{"author":"Payne-James J. et al.","title":"Simpson's Forensic Medicine, 13th ed.","page":"25"},"uncertain":false},
+{"text":"Observe for at least 5 minutes: no central pulse on palpation, no heart sounds on auscultation","source":{"author":"Payne-James J. et al.","title":"Simpson's Forensic Medicine, 13th ed.","page":"25"},"uncertain":false},
+{"text":"Pupil, corneal and supra-orbital pressure responses are absent; then the time of death is recorded","source":{"author":"Payne-James J. et al.","title":"Simpson's Forensic Medicine, 13th ed.","page":"25"},"uncertain":false}
+],
+"diagram":{"kind":"flow","caption":"Confirmation sequence (UK code; ECG is supplementary)","nodes":["Arrest; CPR failed or not done","Observe for 5 minutes","No pulse, no heart sounds","No pupil/corneal/motor response","Record time of death"],"header":[],"rows":[]},
+"teacher_notes":"Time: 5 min. Discussion: (1) Why is a minimum observation period required? (2) What extra evidence can a hospital provide, such as ECG asystole or absent flow on echocardiography? Whiteboard task: write the five steps in order. Typical mistake: recording the time of death before all criteria are fulfilled."},
+{"title":"Brain-Stem Death: Criteria and Preconditions",
+"bullets":[
+{"text":"Applies to adults and children over 2 months; brain-stem testing needs a known irreversible cause of damage.","source":{"author":"Payne-James J. et al.","title":"Simpson's Forensic Medicine, 13th ed.","page":"25-26"},"uncertain":false},
+{"text":"Exclude first: sedatives, hypothermia, metabolic/endocrine disturbance, neuromuscular blockade.","source":{"author":"Payne-James J. et al.","title":"Simpson's Forensic Medicine, 13th ed.","page":"26"},"uncertain":false},
+{"text":"Ancillary tests may help when brain-stem tests are impossible, e.g. extensive maxillofacial injuries.","source":{"author":"Payne-James J. et al.","title":"Simpson's Forensic Medicine, 13th ed.","page":"25"},"uncertain":false}
+],
+"diagram":{"kind":"table","caption":"Brain-stem death testing (UK code, 2008)","nodes":[],"header":["Domain","Required"],"rows":[["Preconditions","Known damage; reversible causes excluded"],["Reflexes","Pupil, corneal, vestibular, cough, gag: none"],["Apnoea test","No breathing; PaCO2 rise >0.5 kPa"],["Examiners","2 doctors, 5+ years registered; 1 consultant"]]},
+"teacher_notes":"Time: 6 min. Discussion: (1) Why must reversible causes of coma be excluded before testing? (2) How does brain-stem death differ from a persistent vegetative state? Whiteboard task: list the brain-stem reflexes tested and the stimulus for each. Typical mistake: forgetting that the apnoea test requires a measured rise in PaCO2, not just disconnection from the ventilator."}
+]}

@@ -1,0 +1,31 @@
+{"slides":[
+{"title":"Estimation of Time of Death: Temperature Methods",
+"bullets":[
+{"text":"Rectal temperature is the classic site. Ear or nose probes are quicker but may not match deep rectal or liver temperature.","source":{"author":"Payne-James J. et al.","title":"Simpson's Forensic Medicine, 13th ed.","page":"50"},"uncertain":false},
+{"text":"Henssge's nomogram is the most useful method, but its 95% limits are still about ±2.8 h around the likeliest time.","source":{"author":"Payne-James J. et al.","title":"Simpson's Forensic Medicine, 13th ed.","page":"50"},"uncertain":false},
+{"text":"Caution: rules of thumb and 'warm to touch' statements are unreliable and should not be used.","source":{"author":"Payne-James J. et al.","title":"Simpson's Forensic Medicine, 13th ed.","page":"50"},"uncertain":false}],
+"diagram":{"kind":"table","caption":"Temperature-based tools for estimating the PMI","nodes":[],"header":["Tool","Inputs","Key point"],"rows":[
+["Henssge nomogram","Rectal and ambient temp, body weight","95% limits ±2.8 h"],
+["Corrective factors","Clothing, air movement, water","Widen the time range"],
+["Bilkun table (local)","Rectal temperature at known hours","12 h: 29.2°C; 24 h: 23.2°C"],
+["Room-temperature rule","About 1°C fall per hour","Rough guide only"]]},
+"teacher_notes":"Time: 10 min. Discussion: (1) Why must the ambient temperature be recorded at the scene by the first officers? (2) Why does the nomogram need the body weight? Whiteboard task: list the three measurements the nomogram relies on and the factors that widen its error. Typical mistake: quoting one exact hour of death instead of a range. Also note that a 5°C ambient error can shift the estimate by at least 1 hour (Simpson p.50)."},
+{"title":"Other Methods of PMI Estimation",
+"bullets":[
+{"text":"Vitreous potassium: research only. Gastric contents and fungi may corroborate other evidence but do not fix the time.","source":{"author":"Payne-James J. et al.","title":"Simpson's Forensic Medicine, 13th ed.","page":"53"},"uncertain":false},
+{"text":"Forensic entomology gives estimates of days to months; egg-to-pupation takes about 21-24 days.","source":{"author":"Payne-James J. et al.","title":"Simpson's Forensic Medicine, 13th ed.","page":"53"},"uncertain":false},
+{"text":"No single method is reliable; combine many. Precision falls from hours to days, then months or years.","source":{"author":"G'iyosov Z.A.","title":"Sud tibbiyoti, 8.7-bo'lim","page":"238"},"uncertain":false}],
+"diagram":{"kind":"table","caption":"Seconds for lividity colour to recover after pressure (Kononenko)","nodes":[],"header":["PMI","Rapid (s)","Agonal (s)"],"rows":[
+["2 h","9-10","5-6"],
+["8 h","38-48","36-52"],
+["12 h","55-62","46-58"],
+["20 h","121-151","210-270"]]},
+"teacher_notes":"Time: 8 min. Discussion: (1) Why does recovery time depend on the type of death? (2) Why does accuracy fall as the PMI grows? Whiteboard task: draw the egg, larva, instar, pupa and adult sequence of a blowfly. Typical mistake: treating stomach contents as a clock. They only help to corroborate. Note that the pressure test used 196 kPa for 3 seconds (Giyosov p.237)."},
+{"title":"Cause of Death: Thanatogenesis and Competition",
+"bullets":[
+{"text":"Thanatogenesis is the mechanism of death: a chain of cause-and-effect links from remote to immediate cause.","source":{"author":"G'iyosov Z.A.","title":"Sud tibbiyoti, 8.10-bo'lim","page":"241"},"uncertain":false},
+{"text":"Competition of causes: two or more conditions that could each kill. The expert tries to name the main one.","source":{"author":"G'iyosov Z.A.","title":"Sud tibbiyoti, 8.10-bo'lim","page":"242"},"uncertain":false},
+{"text":"For clinicians, competing links complicate diagnosis, treatment and the later review of care given.","source":{"author":"G'iyosov Z.A.","title":"Sud tibbiyoti, 8.10-bo'lim","page":"242"},"uncertain":false}],
+"diagram":{"kind":"flow","caption":"Example chain: gastric ulcer","nodes":["Remote: gastric ulcer","Perforation of stomach wall","Peritonitis","Immediate: sepsis"],"header":[],"rows":[]},
+"teacher_notes":"Time: 10 min. Discussion: (1) How does this chain compare with Part I (a)-(c) of the WHO certificate, where the lowest line is the underlying condition? (2) A victim has a severe head injury and is then thrown into water: which causes compete? Whiteboard task: build a chain for a stab wound of the right ventricle (stab wound, haemopericardium, cardiac tamponade). Typical mistake: listing the mode of death (e.g. cardiac arrest) as the remote cause."}
+]}

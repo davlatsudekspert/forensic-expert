@@ -1,0 +1,2451 @@
+{
+  "topic": "Lecture No. 1: Forensic Thanatology (4th-year General Medicine)",
+  "slides": [
+    {
+      "title": "Forensic Thanatology: Aims and Scope",
+      "bullets": [
+        {
+          "text": "Every doctor meets death and dying at some point in a career, so every doctor needs to understand its medical and legal aspects.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "24"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Life and death are closely linked: death is the logical end of life, and there is no death without prior life.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "217"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Forensic thanatology studies death for the needs of inquiry, investigation and court. Key questions are whether death has occurred, its cause, and when it happened.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "217"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Death certification, medico-legal investigation, autopsy and exhumation are all part of the medical aspects of death covered in this lecture.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "24"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Time: 5 min. Discussion: When have students already met death in clinical practice? Why must a clinician know the legal side of death? Whiteboard task: list the questions a doctor may be asked about a dead body. Typical mistake: thinking thanatology only concerns the moment of death, when it also covers post-mortem changes and burial."
+    },
+    {
+      "title": "Thanatology: Definition and Subdivisions",
+      "bullets": [
+        {
+          "text": "The term 'thanatology' was introduced into medicine by I.I. Mechnikov. It means the study of death (Greek thanatos = death, logos = teaching).",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "217"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "It covers the dying process, confirmation of death, causes of death, post-mortem changes and the effect of external and internal factors on them, and burial and preservation.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "217"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "General thanatology studies the general aspects; special thanatology studies specific types of death; forensic thanatology serves the investigating and judicial bodies.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "217"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Subdivisions of thanatology",
+        "nodes": [],
+        "header": [
+          "Branch",
+          "Focus"
+        ],
+        "rows": [
+          [
+            "General",
+            "General aspects of dying and death"
+          ],
+          [
+            "Special",
+            "Particular types of death"
+          ],
+          [
+            "Forensic",
+            "Questions of inquiry, investigation, court"
+          ]
+        ]
+      },
+      "teacher_notes": "Time: 5 min. Discussion: Why does the law need a separate forensic branch? Give one example of a question from a court. Whiteboard task: draw the three branches and add one example question for each. Typical mistake: confusing special thanatology with forensic thanatology."
+    },
+    {
+      "title": "Definition of Death: Cellular vs Somatic",
+      "bullets": [
+        {
+          "text": "Death is a process, not a single event: cellular metabolism fails at different rates in different tissues and organs.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "24"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "A cortical neuron dies after only 3-7 minutes without oxygen, whereas skin and bone cells stay metabolically active for hours.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "24"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Caution: lack of response alone is not death. Deep sleep, anaesthesia, drugs or temporary coma also stop interaction; the key word is 'irreversible'.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "25"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Two aspects of death",
+        "nodes": [],
+        "header": [
+          "Aspect",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "Cellular death",
+            "Respiration and metabolism of cells cease"
+          ],
+          [
+            "Somatic death",
+            "Irreversible loss of consciousness and interaction"
+          ],
+          [
+            "Evidence",
+            "Autolysis and decay of the whole body"
+          ]
+        ]
+      },
+      "teacher_notes": "Time: 7 min. Discussion: Why is it practical to separate cellular and somatic death? Why are white-cell movement and skin viability unreliable for judging the time of death? Whiteboard task: order the tissues (cortical neuron, white blood cell, skin) by how long they survive after cardiac arrest. Typical mistake: believing that all cells die at the same moment as the heart stops."
+    },
+    {
+      "title": "Dying Process: Terminal States",
+      "bullets": [
+        {
+          "text": "Dying is a process of finite duration, not a single moment. The Uzbek textbook calls its stages 'terminal' or borderline states.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti, Bob 8 (8.1)",
+            "page": "217"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "In preagony, the higher brain centres are inhibited and circulation and breathing fail. Acidosis and hypoxia develop, blood pressure falls, and the pulse is felt only in large arteries.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti, Bob 8 (8.1)",
+            "page": "217"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "In the terminal pause, breathing stops suddenly and the heart is severely disturbed. The pupils dilate and the reflexes fade, lasting from seconds to 3-4 minutes.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti, Bob 8 (8.1)",
+            "page": "217"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Sequence of terminal states",
+        "nodes": [
+          "Preagony",
+          "Terminal pause",
+          "Agony",
+          "Clinical death",
+          "Biological death"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Time: 8 min. Discussion: Why is dying called a process and not an event (compare Simpson's view that death is a process)? What clinical signs separate preagony from the terminal pause? Whiteboard: draw the five stages as a chain and write the typical duration beside each. Typical mistake: students treat the terminal pause as the same thing as agony."
+    },
+    {
+      "title": "Clinical Death and Types of Agony",
+      "bullets": [
+        {
+          "text": "Agony: lower, immature brain centres take over, so breathing returns and blood pressure rises. It is the last attempt to survive; breathing stops first, then the heart.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti, Bob 8 (8.1)",
+            "page": "217"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Facies hippocratica: the face turns pale and earthy, the eyes sink, and the lower jaw sags so the mouth hangs open.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti, Bob 8 (8.1)",
+            "page": "218"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Clinical death begins when the heart stops and usually lasts 5-6 minutes. In cold conditions it can last up to 30 minutes. Caution: clinical death is reversible; biological death is not.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti, Bob 8 (8.1)",
+            "page": "218"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Agony types (Lawes and Berg, 1965)",
+        "nodes": [],
+        "header": [
+          "Type",
+          "Duration / example"
+        ],
+        "rows": [
+          [
+            "No agony",
+            "Instant; body disruption"
+          ],
+          [
+            "Short agony",
+            "4-5 min; asphyxia, electrotrauma"
+          ],
+          [
+            "Long agony",
+            "Hours-days; disease or injury"
+          ],
+          [
+            "Artificially prolonged",
+            "Weeks to years with treatment"
+          ]
+        ]
+      },
+      "teacher_notes": "Time: 8 min. Discussion: Why does clinical death last longer in the cold? How did clinical death lead to the development of resuscitation science? Whiteboard: reproduce the table and add one real-life example per agony type. Typical mistake: confusing clinical death with biological death. Fast death (electrotrauma, mechanical asphyxia, anaphylactic shock) differs from slow death (diseases)."
+    },
+    {
+      "title": "Euthanasia: Types and Legal Assessment",
+      "bullets": [
+        {
+          "text": "Euthanasia was named by Francis Bacon in the 16th century (Greek 'good death'). Its original aim is to relieve the suffering of terminally ill patients.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti, Bob 8 (8.2)",
+            "page": "218"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Active euthanasia is a deliberate act that hastens death. Direct means killing or suicide; indirect has no such intent and is judged as negligent homicide or an accident.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti, Bob 8 (8.2)",
+            "page": "219"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Caution: in the narrow, common sense the term covers only active and passive euthanasia. Medicotanasia and dysthanasia are not usually counted as hastening death.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti, Bob 8 (8.2)",
+            "page": "219"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Euthanasia classification",
+        "nodes": [],
+        "header": [
+          "Type",
+          "Essence"
+        ],
+        "rows": [
+          [
+            "Active direct",
+            "Act intended to hasten death"
+          ],
+          [
+            "Active indirect",
+            "Large analgesic dose; no intent to kill"
+          ],
+          [
+            "Passive (orthotanasia)",
+            "Care limited or withdrawn; legally negligence"
+          ],
+          [
+            "Medicotanasia / dysthanasia",
+            "Comfort care / maximal prolongation"
+          ]
+        ]
+      },
+      "teacher_notes": "Time: 8 min. Discussion: How does indirect active euthanasia differ from murder? How does criminal law view passive euthanasia? Whiteboard: write a one-line example for each of the four types. Typical mistake: treating a large analgesic dose given for pain as intentional killing; the text says the intent is absent."
+    },
+    {
+      "title": "Case Analysis: Euthanasia vs Pain Relief",
+      "bullets": [
+        {
+          "text": "Scenario: a patient with an incurable disease is in severe pain. The doctor injects a large dose of an analgesic to ease the suffering. The patient dies soon afterwards.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "219"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "If the aim was only to relieve pain and not to hasten death, this is 'indirect active euthanasia'. The death is judged as negligent homicide or as an accident.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "218-219"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Caution: common error. If the act was meant to hasten death (direct active euthanasia), it appears as homicide or suicide. Passive euthanasia (withdrawing care) is judged as failure of duty or endangering life.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "218-219"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Question: which element of the doctor's conduct decides whether this case is direct or indirect active euthanasia, and why does the legal assessment differ?",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "218-219"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Time: 6 min. Discussion: (1) How can intent be shown from medical records? (2) Why is a high analgesic dose not automatically homicide? Whiteboard task: draw the four types of euthanasia and mark which are active and which passive. Typical mistake: students equate any death after high-dose analgesia with direct euthanasia, ignoring the aim of the act."
+    },
+    {
+      "title": "Diagnosis of Death After Cardiorespiratory Arrest",
+      "bullets": [
+        {
+          "text": "Irreversible apnoea, unconsciousness and absent circulation, after full attempts to reverse causes",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "25"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Observe for at least 5 minutes: no central pulse on palpation, no heart sounds on auscultation",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "25"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Pupil, corneal and supra-orbital pressure responses are absent; then the time of death is recorded",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "25"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Confirmation sequence (UK code; ECG is supplementary)",
+        "nodes": [
+          "Arrest; CPR failed or not done",
+          "Observe for 5 minutes",
+          "No pulse, no heart sounds",
+          "No pupil/corneal/motor response",
+          "Record time of death"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Time: 5 min. Discussion: (1) Why is a minimum observation period required? (2) What extra evidence can a hospital provide, such as ECG asystole or absent flow on echocardiography? Whiteboard task: write the five steps in order. Typical mistake: recording the time of death before all criteria are fulfilled."
+    },
+    {
+      "title": "Brain-Stem Death: Criteria and Preconditions",
+      "bullets": [
+        {
+          "text": "Applies to adults and children over 2 months; brain-stem testing needs a known irreversible cause of damage.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "25-26"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Exclude first: sedatives, hypothermia, metabolic/endocrine disturbance, neuromuscular blockade.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "26"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ancillary tests may help when brain-stem tests are impossible, e.g. extensive maxillofacial injuries.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "25"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Brain-stem death testing (UK code, 2008)",
+        "nodes": [],
+        "header": [
+          "Domain",
+          "Required"
+        ],
+        "rows": [
+          [
+            "Preconditions",
+            "Known damage; reversible causes excluded"
+          ],
+          [
+            "Reflexes",
+            "Pupil, corneal, vestibular, cough, gag: none"
+          ],
+          [
+            "Apnoea test",
+            "No breathing; PaCO2 rise >0.5 kPa"
+          ],
+          [
+            "Examiners",
+            "2 doctors, 5+ years registered; 1 consultant"
+          ]
+        ]
+      },
+      "teacher_notes": "Time: 6 min. Discussion: (1) Why must reversible causes of coma be excluded before testing? (2) How does brain-stem death differ from a persistent vegetative state? Whiteboard task: list the brain-stem reflexes tested and the stimulus for each. Typical mistake: forgetting that the apnoea test requires a measured rise in PaCO2, not just disconnection from the ventilator."
+    },
+    {
+      "title": "Brain Death in the Uzbek Textbook",
+      "bullets": [
+        {
+          "text": "Death of the cerebral cortex is treated as the start of biological death ('brain death'). The integrative function of the central nervous system is lost, and the organism no longer functions as a whole.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Other organs and tissues may keep working, or be restored by treatment, after cortical death. The interval between cortical death and the death of the other tissues is about 20 hours.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "This interval is the basis for removing organs from a cadaver for transplantation. The earlier organs are taken after biological death, the better the transplant result. Resuscitation can be stopped under the law.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Brain death is confirmed by a procedure set by the Ministry of Health, usually by a trained resuscitation specialist and neurologists. Without the equipment, death is judged from cadaveric changes.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "220"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Time: 6 min. Discussion: Why does cortical death count as the death of the person even if the heart still beats? Why is the ~20-hour interval important for transplantation? Whiteboard task: draw a timeline from cortical death to death of all other tissues. Typical mistake: students equate brain death with clinical death; clinical death is potentially reversible (about 5-6 min in normal conditions), while brain death is irreversible. Note that in the textbook the vegetative state is the survival of vegetative functions after cortical death, kept up by modern resuscitation for years."
+    },
+    {
+      "title": "Quick Question: Defining Death",
+      "bullets": [
+        {
+          "text": "Question 1: Why is the word 'irreversible' the key term in the definition of somatic death? Name two reversible states in which a person also does not interact with the environment.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "25"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Question 2: Death is a process, not a single event. How do cellular death and somatic death differ? Which cell type dies first after complete loss of oxygen, and after how long?",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "24"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Question 3: List the terminal stages in the Uzbek textbook in order: preagony, terminal pause, agony, clinical death, biological death. Which of them can still be reversed?",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "217-218"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Caution: common error – clinical death is not biological death. Clinical death follows cardiac arrest and can be reversed (up to about 5-6 min normally); biological death is irreversible.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "218"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Time: 5 min. Run as a quick oral or poll format. Suggested answers: 1) Deep sleep, anaesthesia, drugs/alcohol or temporary coma are reversible. 2) Cellular death is cessation of respiration in cells; somatic death is loss of integrated functioning; cortical neurons die after 3-7 min. 3) Only clinical death is potentially reversible. Whiteboard task: students write the five stages in order with typical duration. Typical mistake: confusing the terminal pause (seconds to 3-4 min) with agony (minutes to days)."
+    },
+    {
+      "title": "Vegetative State and Withdrawal of Treatment",
+      "bullets": [
+        {
+          "text": "In the vegetative state (VS) brain-stem function survives without cortical function: wakefulness without awareness. The patient may recover or enter a minimally conscious state (MCS).",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "26"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Under the 2003 Royal College of Physicians guidelines, VS is 'permanent' if it lasts 12 months after traumatic brain injury or 6 months after other causes. Withdrawing hydration and feeding may then be considered.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "26"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "The leading case on withdrawing life-sustaining treatment was Airedale NHS Trust v Bland (Tony Bland, injured at a football ground). Permission to remove assisted feeding was granted.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "26"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Functional MRI studies found some patients thought to be in VS whose brain activity fitted MCS. None recovered beyond MCS, but law and practice may change in future.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "26"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Time: 7 min. Discussion: Why is a vegetative state not the same as brain-stem death? How could fMRI findings change the ethics of withdrawing treatment? Whiteboard task: draw a three-column comparison of brain-stem death, VS and MCS (breathing, awareness, prognosis). Typical mistake: students think a patient in VS is dead or is in a coma; VS means wakefulness without awareness with preserved brain-stem function. Also stress that the 12/6 month rule comes from UK guidelines and the withdrawal decision rests on the patient's best interests."
+    },
+    {
+      "title": "Tissue and Organ Transplantation: Sources",
+      "bullets": [
+        {
+          "text": "Transplant laws depend on the religious and ethical views of each country. Few countries ban transplantation outright, and few religions forbid it.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "26"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Live donation uses matched tissue, e.g. blood, marrow or one kidney. Paid kidney donation is illegal in many countries and unethical elsewhere.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "26"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xenografts (usually pig tissue) face problems of tissue matching and viral transfer. Cloning remains theoretical, with moral and ethical questions.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "27"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Sources of transplant tissue",
+        "nodes": [],
+        "header": [
+          "Source",
+          "Key point"
+        ],
+        "rows": [
+          [
+            "Homologous",
+            "Moved between sites on the same body"
+          ],
+          [
+            "Live donor",
+            "Matched donor, e.g. blood, marrow, kidney"
+          ],
+          [
+            "Cadaveric",
+            "Major source in many countries"
+          ],
+          [
+            "Xenograft",
+            "Animal tissue; viral risk, poor match"
+          ]
+        ]
+      },
+      "teacher_notes": "Time: 6 min. Discuss: Why is paid kidney donation unethical even when the donor consents? Whiteboard: list the four sources and one limitation of each. Typical mistake: 'homologous' is confused with donation from another person; here it means the same body."
+    },
+    {
+      "title": "Cadaveric Donation and Legal Framework",
+      "bullets": [
+        {
+          "text": "Best results come when organs are taken while circulation is present or just after it stops. The aim is to keep the warm ischaemic time short.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "27"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kidneys tolerate anoxia better than most organs and can survive up to 30 minutes after cardiac activity ceases.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "27"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Some countries use opting-out, where organs may be taken unless relatives object. The UK uses opting-in: the donor consented or did not object, and no close relative objects.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "27"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "In the UK the Human Tissue Act 2004 sets the framework. If an autopsy is legally required, the Coroner's permission is needed before any organ is removed.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "27"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Time: 6 min. Discuss: Which system, opt-in or opt-out, better respects families, and why? Whiteboard: draw a timeline from cardiac arrest to organ retrieval, marking warm ischaemic time. Typical mistake: students think the Coroner usually blocks donation; the source says objections are seldom needed."
+    },
+    {
+      "title": "Signs of Death: Probable vs Reliable",
+      "bullets": [
+        {
+          "text": "Early signs are only probable: immobility, pallor, no consciousness, breathing or heartbeat, slight cooling and no response to stimuli.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti, Bob 8 (Sud-tibbiy tanatologiya)",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Beloglazov's sign (cat's eye) is the earliest reliable sign. It appears after 15-20 minutes: pressing the eyeball makes the pupil oval. It may be absent after 1.5-2 hours.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti, Bob 8 (Sud-tibbiy tanatologiya)",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Caution: a cooled body is a reliable sign only when body temperature falls to 23 °C or lower. Cadaveric spots, rigor and drying are also reliable.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti, Bob 8 (Sud-tibbiy tanatologiya)",
+            "page": "221"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Probable vs reliable signs of death",
+        "nodes": [],
+        "header": [
+          "Group",
+          "Examples"
+        ],
+        "rows": [
+          [
+            "Probable (early)",
+            "Immobility, pallor, no breathing or pulse"
+          ],
+          [
+            "Reliable, earliest",
+            "Beloglazov sign at 15-20 min"
+          ],
+          [
+            "Reliable, cooling",
+            "Body temperature 23 °C or lower"
+          ],
+          [
+            "Reliable, early changes",
+            "Cadaveric spots, rigor, drying"
+          ]
+        ]
+      },
+      "teacher_notes": "Time: 6 min. Discuss: Why is absence of pulse alone not proof of death? Whiteboard: sort the listed signs into probable and reliable columns. Typical mistake: treating mild body cooling as a reliable sign; only 23 °C or lower counts."
+    },
+    {
+      "title": "Case Analysis: Was the Patient Dead?",
+      "bullets": [
+        {
+          "text": "Scenario: a 70-year-old man collapses in a clinic and CPR fails. The doctor then observes no central pulse, no heart sounds, fixed pupils and no corneal reflex.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "25"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "UK code of practice: death is confirmed after at least 5 minutes of observed absent circulation, with apnoea and unconsciousness. The time of death is then recorded.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "25"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reliable signs of death: Beloglazov's 'cat's eye' sign (an oval pupil when the eyeball is squeezed) at 15–20 minutes, cooling to 23°C or below, and early cadaveric changes.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Question: if the heart stopped only 2 minutes ago, is this clinical or biological death? Which signs are merely probable and which are reliable?",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "218"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Time: 8 min. Discussion: (1) Why is irreversibility the key word in defining death? (2) Why do probable signs, such as pallor and absent pulse, not suffice on their own? Whiteboard task: list probable signs in one column and reliable signs in the other. Typical mistake: treating absence of heartbeat alone as proof of biological death. Clinical death lasts about 5–6 minutes in normal conditions, and resuscitation is still possible."
+    },
+    {
+      "title": "Medico-Legal Classification of Death",
+      "bullets": [
+        {
+          "text": "Violent death results from an external factor; non-violent death results from disease.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "221"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Only violent death is divided into kinds. Non-violent death is typed by the causative disease.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "221"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Caution: experts set category and type; the kind depends on intent, which is for law enforcement.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "221"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Levels of the medico-legal classification of death",
+        "nodes": [],
+        "header": [
+          "Level",
+          "Options",
+          "Decided by"
+        ],
+        "rows": [
+          [
+            "Category",
+            "Violent or non-violent",
+            "Forensic experts"
+          ],
+          [
+            "Kind (violent only)",
+            "Homicide, suicide, accident",
+            "Law enforcement (intent)"
+          ],
+          [
+            "Type (violent)",
+            "Injury, asphyxia, poisoning, heat/cold, electricity",
+            "Forensic experts"
+          ],
+          [
+            "Type (non-violent)",
+            "Cardiovascular, respiratory, digestive disease etc.",
+            "Forensic experts"
+          ]
+        ]
+      },
+      "teacher_notes": "Time: 6 min. Discussion: (1) Why is the kind of death left to law enforcement? (2) Give an example of each violent type. Whiteboard task: classify three short cases by category, kind and type. Typical mistake: students state homicide or suicide as the expert's conclusion, when the expert only describes the category and type. In England and Wales a Coroner decides the manner of death."
+    },
+    {
+      "title": "Supravital Reactions",
+      "bullets": [
+        {
+          "text": "Idiomuscular tumour: a ridge up to 2 cm high at the tap site; it lowers as time passes.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "222"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tissues still react to mechanical, electrical and chemical stimuli for hours after brain death.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "221"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Caution: cells stay active for hours, so such tests give only estimates.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "24"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Supravital reactions and time windows",
+        "nodes": [],
+        "header": [
+          "Reaction",
+          "Time window",
+          "Finding"
+        ],
+        "rows": [
+          [
+            "Mechanical (muscle)",
+            "Contraction 1–2 h; ridge up to 10 h",
+            "Ridge fades; pit at 10–11 h"
+          ],
+          [
+            "Electrical (muscle)",
+            "Limbs/face 2–3 h; eye muscles to 12 h",
+            "Fewer muscle groups respond over time"
+          ],
+          [
+            "Pupil, drugs",
+            "Drops 5–6 h; injection up to 24 h",
+            "Atropine dilates; pilocarpine constricts"
+          ],
+          [
+            "Sweat glands",
+            "Up to 30 h",
+            "Blue spot 0.5–1 h after injection"
+          ]
+        ]
+      },
+      "teacher_notes": "Time: 7 min. Discussion: (1) Why do tissues react after brain death? (2) Why is no single supravital test enough to fix the time of death? Whiteboard task: draw a timeline from 0 to 30 hours and mark when each reaction ends. Typical mistake: treating a positive reaction as proof of life, when it only shows that tissue is still metabolically active. No single reliable method exists, so combine several methods."
+    },
+    {
+      "title": "Early Post-Mortem Changes: Overview",
+      "bullets": [
+        {
+          "text": "After cardiac arrest, blood pressure falls and oxygen supply to the cells stops. Nervous activity, reflexes and breathing cease, and the corneal reflex and pupillary light response are lost.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "42"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Muscles become flaccid at once (primary flaccidity) but may twitch to touch or taps for some hours. Skin and mucosae usually turn pale, though the face may stay red or blue in congestive deaths.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "42"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Urine voiding and semen emission are common after death. Semen does not prove recent sexual activity, and urine voiding does not point to epilepsy or asphyxia.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "43"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Caution: gastric contents in the mouth or airways are common after terminal collapse or resuscitation. They do not prove aspiration as the cause of death without eyewitness or microscopic evidence.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "43"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Time: 6 min. Discussion: Why must a doctor know these normal changes before suspecting an unnatural death? Why can regurgitated stomach contents mislead an examiner? Whiteboard task: list the changes seen in the eyes, muscles, skin and sphincters in the first hours after death. Typical mistake: treating semen or urine emission as evidence of sexual assault or epilepsy."
+    },
+    {
+      "title": "Cooling of the Body (Algor Mortis)",
+      "bullets": [
+        {
+          "text": "Newton's law: heat passes from a warm body to a cooler environment, so body temperature falls.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "46"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Three assumptions: 37°C at death, a reliable extrapolation from few readings, a thermally static environment.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "46"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "In a room the body loses about 1°C per hour (Uzbek textbook); this is only a rough guide.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti, Bob 8 (8.6.1)",
+            "page": "224"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Factors changing the cooling rate (Box 5.1)",
+        "nodes": [],
+        "header": [
+          "Factor",
+          "Slows cooling",
+          "Speeds cooling"
+        ],
+        "rows": [
+          [
+            "Body build",
+            "Obesity (fat insulates)",
+            "Emaciation, low muscle bulk"
+          ],
+          [
+            "Clothing",
+            "Several thick layers",
+            "Naked body"
+          ],
+          [
+            "Air movement",
+            "Still air",
+            "Wind, draughts, rain"
+          ],
+          [
+            "Ambient temp.",
+            "Warm surroundings",
+            "Cold surroundings"
+          ]
+        ]
+      },
+      "teacher_notes": "Time: 8 min. Discussion: Why is a single temperature reading unreliable? Which of the three assumptions is most often broken at a real scene? Whiteboard task: draw a cooling curve and mark the early plateau, then add a second curve for a thin naked body in a cold draught. Typical mistake: using the 1°C per hour rule as an exact formula."
+    },
+    {
+      "title": "Drying of the Body",
+      "bullets": [
+        {
+          "text": "Drying appears first where surfaces were moist in life: lips, mucous membranes, cornea and conjunctiva, scrotum, glans penis. It also appears where the epidermis is damaged, such as abrasions and ligature furrows.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti, Bob 8 (8.6.1)",
+            "page": "224"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "In open eyes, the cornea turns cloudy at 1-3 hours. At 4-5 hours brown triangular or band-like spots (Larcher spots) form on the conjunctiva at both sides of the cornea.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti, Bob 8 (8.6.1)",
+            "page": "225"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Skin shrinkage by drying creates the false impression that hair, beard and nails keep growing after death. Hair does not grow after death.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti, Bob 8 (8.6.1)",
+            "page": "225"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Caution: parchment patches are not vital abrasions. A gauze soaked in warm saline for 5-10 minutes softens and pales parchment patches, while true vital abrasions stay unchanged.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti, Bob 8 (8.6.1)",
+            "page": "225"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Time: 6 min. Discussion: Why does drying start at the eyes and lips? How could a parchment patch on the neck be mistaken for a ligature injury? Whiteboard task: list the body sites where drying is seen first and the reason for each. Typical mistake: interpreting a hard yellow-brown dried area as an injury inflicted before death."
+    },
+    {
+      "title": "Rigor Mortis: Mechanism",
+      "bullets": [
+        {
+          "text": "Without oxygen, muscle cells cannot make ATP (adenosine triphosphate) by oxidative phosphorylation. Anaerobic metabolism briefly takes over, and lactic acid makes the cytoplasm more acidic.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "43"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "With low ATP and high acidity, actin and myosin bind together and form a gel. The muscles become stiff, but they shorten only if they are held under tension.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "43"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "The Uzbek textbook also links rigor to ATP breakdown and a rise in muscle calcium. ATP disappears from muscle about 10-12 hours after death.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti (darslik), Bob 8",
+            "page": "225-226"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Rigor is faster with low glycogen, exercise acidosis, electrocution, heat, strong muscles, or convulsant poisons (strychnine). It is weak in the young, old, emaciated and cold bodies. Caution: rigor is not a precise clock.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "43"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Time: 7 min. Discussion: (1) Why does a sprinter's body stiffen faster than a sedentary person's? (2) Why do the two textbooks stress different biochemical details? Whiteboard task: draw the chain 'no oxygen -> low ATP + lactic acid -> actin-myosin gel -> stiffness'. Typical mistake: saying rigor means muscle shortening, or that it gives an exact time of death."
+    },
+    {
+      "title": "Rigor Mortis: Timeline and Cadaveric Spasm",
+      "bullets": [
+        {
+          "text": "Test across a joint with very gentle pressure from one or two fingers. The aim is to detect stiffness, not to break it, because broken rigor cannot be reliably tested again.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "44"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Cadaveric rigidity is stiffness from the moment of death, e.g. weeds gripped in a drowned person's hand. Its mechanism is unexplained, so 'instantaneous rigor' is a poor term.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "44"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Caution: stiffness from cold or freezing is not true rigor. It disappears when the body warms, and true rigor may then develop.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "43"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Rigor timeline (temperate conditions; guidelines only)",
+        "nodes": [],
+        "header": [
+          "Stage",
+          "Simpson (2011)",
+          "Giyosov (2018)"
+        ],
+        "rows": [
+          [
+            "Onset",
+            "Face 1-4 h; limbs 3-6 h",
+            "Detectable from 1-3 h"
+          ],
+          [
+            "Order",
+            "Small muscles, then larger",
+            "Chewing muscles, then neck, trunk, limbs"
+          ],
+          [
+            "Peak",
+            "About 18 h",
+            "About 24 h; all muscles by 12-16 h"
+          ],
+          [
+            "Resolution",
+            "Up to about 50 h",
+            "From mid day 2; gone by days 3-7"
+          ]
+        ]
+      },
+      "teacher_notes": "Time: 8 min. Discussion: (1) Why do the textbook values differ, and what does this say about using rigor to time death? (2) Which findings suggest a body was moved after death (rigor present in face and legs but weak in arms)? Whiteboard task: draw a rigor curve over 0-72 h marking onset, peak and resolution. Typical mistake: treating the hour ranges as exact or applying them to a cold body."
+    },
+    {
+      "title": "Post-Mortem Hypostasis (Livor Mortis)",
+      "bullets": [
+        {
+          "text": "After circulation stops, blood settles under gravity into the lowest vessels. This gives a pink-blue-purple skin colour that is visible once red cells fill the dependent vessels.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "44"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Distribution follows body position: back and sides if supine, front if prone, lower limbs and hands in hanging. Pressure from a surface or clothing leaves pale areas within the livor.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "44"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Special colours: cherry pink or pink-red in carbon monoxide poisoning, dark or brick red in cyanide poisoning, brown in methaemoglobin-forming poisons. Otherwise colour should not suggest the cause of death.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "45"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Caution: a face-down body may show facial congestion, petechiae and pale areas around the mouth and nose. These can mimic neck compression or suffocation, so the pathologist must exclude true pressure.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "44-45"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Time: 7 min. Discussion: (1) How could you tell a pale mark from pressure by a blanket from a genuine ligature or hand mark? (2) Why is livor a 'certain' sign of death yet a poor clock? Whiteboard task: sketch a body lying supine and one hanging, shading where livor appears. Typical mistake: confusing livor with bruising, or reading the cause of death from its colour alone."
+    },
+    {
+      "title": "Three Stages of Cadaveric Spots",
+      "bullets": [
+        {
+          "text": "After circulation stops, blood sinks by gravity into dependent skin and fat; the same process in organs is called hypostasis.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "227"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Repositioning: spots move fully in hypostasis, only partly in early stasis, and not at all in imbibition.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "227-228"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Onset time is so variable that livor alone cannot reliably fix the time of death.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "45"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Stages are gradual; sharp time borders cannot be drawn",
+        "nodes": [],
+        "header": [
+          "Stage",
+          "Timing",
+          "Finger pressure"
+        ],
+        "rows": [
+          [
+            "Hypostasis",
+            "From 1.5-2 h, lasts to 8-12 h",
+            "Spot vanishes, colour returns fast"
+          ],
+          [
+            "Stasis",
+            "12 to 24 h after death",
+            "Spot only pales, recovers slowly"
+          ],
+          [
+            "Imbibition",
+            "Later, with putrefaction and haemolysis",
+            "No colour change"
+          ]
+        ]
+      },
+      "teacher_notes": "Time: 7 min. Discussion: Why does the spot stop moving when the body is turned in the late stage? Why is livor a poor clock for PMI (post-mortem interval)? Whiteboard: draw a supine body and shade the areas of livor, then mark pressure pallor at contact points. Typical mistake: treating the time limits as exact; the stages merge gradually."
+    },
+    {
+      "title": "Cadaveric Spots vs Bruises; Autolysis",
+      "bullets": [
+        {
+          "text": "A cross-shaped incision through the doubtful area separates the two: bruises hold clotted blood in the tissues.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "228"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Autolysis: enzyme self-digestion, fastest in gut mucosa, pancreas, adrenal medulla, thymus, kidneys.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "229"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Caution: autolysis may mimic corrosive poisoning or haemorrhagic pancreatic necrosis.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "229"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Bedside and autopsy differences",
+        "nodes": [],
+        "header": [
+          "Feature",
+          "Cadaveric spot",
+          "Bruise"
+        ],
+        "rows": [
+          [
+            "Location",
+            "Low-lying body areas",
+            "Any body region"
+          ],
+          [
+            "Borders",
+            "Indistinct, merging together",
+            "Defined shape, not merging"
+          ],
+          [
+            "Finger pressure",
+            "Pales or vanishes (early stages)",
+            "Colour unchanged"
+          ],
+          [
+            "Incision",
+            "Blood drops in vessels or imbibed fat",
+            "Clotted blood in the tissues"
+          ]
+        ]
+      },
+      "teacher_notes": "Time: 7 min. Discussion: How could relatives mistake livor for bruises and request an unnecessary exhumation? Why does autolysis begin first in enzyme-rich organs? Whiteboard: a 2-column checklist for livor versus bruise. Typical mistake: judging by colour alone; old bruises can look greenish-yellow, and autolytic changes are separated from vital ones mainly by microscopy."
+    },
+    {
+      "title": "Quick Question: Early Changes",
+      "bullets": [
+        {
+          "text": "Q1. When is rigor mortis first detectable, and where? A: In the face at about 1-4 h and the limbs at 3-6 h; maximal by about 18 h, gone by about 50 h; temperature alters these times.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "43-44"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Q2. Spots do not blanch on pressure and do not move when the body is turned: which stage? A: Imbibition, caused by haemolysis of red cells during putrefaction.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "228"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Q3. How fast does a body cool in a room? A: Roughly 1 °C per hour, until it equals the ambient temperature; this is only a rough textbook estimate.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "224"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Q4. What are the first drying signs? A: Corneal clouding at 1-3 h, then brown Larchet spots on the conjunctiva at 4-5 h; skin drying falsely suggests hair growth.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "225"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Time: 5 min. Discussion: Which early change is the most useful for estimating PMI, and why do all of them need caution? Whiteboard: students list the four early changes with one time marker each. Typical mistake: quoting rigor times as exact; Simpson's stresses that rigor is highly variable and only gives an estimate, and that body temperature is also unreliable on its own (95% limits about 2.8 h either side)."
+    },
+    {
+      "title": "Putrefaction: Process and Signs",
+      "bullets": [
+        {
+          "text": "Warm conditions start and speed up decomposition; in temperate climates greening is first seen at about 3–4 days.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "47"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Three types: gaseous (sepsis), moist (fluid-retaining disease), dry (cachexia, no emphysema or blisters).",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti, Bob 8",
+            "page": "231"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Caution: purge fluid is not injury haemorrhage, and early decomposition is not a sign of violence.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "47"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Sequence of visible putrefactive changes",
+        "nodes": [
+          "Gut bacteria cross bowel wall",
+          "Green right iliac fossa, 3–4 d",
+          "Marbling in superficial veins",
+          "Gas, bloating, skin blisters",
+          "Purge fluid, skin slippage"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Time: 8 min. Discussion: Why does greening begin in the right iliac fossa (caecum lies close to the abdominal wall)? Why can purge fluid be mistaken for injury? Whiteboard: draw the five-step chain and mark which signs are visible externally. Typical mistake: using a fixed day-count as a precise timetable; note that the Uzbek textbook places greening on day 2 whereas Simpson gives 3–4 days, so timing varies."
+    },
+    {
+      "title": "Casper's Law and Environmental Effects",
+      "bullets": [
+        {
+          "text": "Casper's ratio (air:water:earth = 1:2:8): decomposition in air is twice as fast as in water, eight times as fast as in soil.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "47"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "In water the epidermis is lost first; gas may float the body at about 1 week, but timing varies widely.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "48"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "No reliable decomposition timetable exists; investigators rarely know the environmental factors involved.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "47"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Environmental effects on putrefaction",
+        "nodes": [],
+        "header": [
+          "Condition",
+          "Effect",
+          "Comment"
+        ],
+        "rows": [
+          [
+            "Air",
+            "Reference rate (1)",
+            "Free access of air"
+          ],
+          [
+            "Water",
+            "About 2x slower than air",
+            "Cooler, less oxygen"
+          ],
+          [
+            "Earth (burial)",
+            "About 8x slower than air",
+            "Depth, moisture, soil acidity matter"
+          ],
+          [
+            "Temperature",
+            "Best +20 to +40°C",
+            "Stops below 0°C and at +55°C or above"
+          ]
+        ]
+      },
+      "teacher_notes": "Time: 7 min. Discussion: Why does a buried body decompose more slowly than one lying in air? Why is Casper's ratio only a guide? Whiteboard: write 1:2:8 and give an example (a body found after 2 weeks in air compared with the same changes in water). Typical mistake: treating the ratio as exact; it applies only if all other factors are equal. Temperature limits are from the Uzbek textbook (G'iyosov, p. 229)."
+    },
+    {
+      "title": "Insects and Animal Predation",
+      "bullets": [
+        {
+          "text": "Flies lay eggs on moist sites (eyes, nose, mouth); larvae moult (instars), pupate and emerge as adults in about 21–24 days. Entomologists estimate the post-mortem interval (days to months) from species and stage.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "53"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "At room temperature larvae hatch after 24–30 hours and dissolve soft tissue with proteolytic enzymes; an adult's soft tissue may be gone in 4–6 weeks, a child's in 1–2 weeks.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti, Bob 8",
+            "page": "232"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Post-mortem injuries from animals, insects and water can mimic trauma; they may bleed (scalp, bodies from water), and lack of an inflammatory rim does not exclude injury at the moment of death.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "49–50"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Caution: animal, bird or fish damage cannot date death, unlike insects; separate it from ante-mortem injury by scene, tooth or claw marks, and animal hairs or feathers.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti, Bob 8",
+            "page": "233"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Time: 7 min. Discussion: Why is insect evidence more useful for dating death than damage by rodents or fish? How would you decide whether a wound near the eye is a rat bite or an ante-mortem injury? Whiteboard: draw the fly life cycle (egg, larva with instars, pupa, adult). Typical mistake: believing that post-mortem injuries never bleed; Simpson stresses that some do. Collected insects should be preserved and sent to an entomologist."
+    },
+    {
+      "title": "Preservative Changes: Adipocere, Mummification, Peat",
+      "bullets": [
+        {
+          "text": "Adipocere is hydrolysis of body fat into a soap-like wax. It needs water but can form in dry vaults.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "48"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mummification is desiccation instead of putrefaction. A full adult body usually needs 6-12 months.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti (textbook), Ch. 8",
+            "page": "233"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "In peat bogs, humic acids tan the tissues and soften the bones. The body can survive for many years.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti (textbook), Ch. 8",
+            "page": "234"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Preservative changes compared",
+        "nodes": [],
+        "header": [
+          "Change",
+          "Conditions",
+          "Features"
+        ],
+        "rows": [
+          [
+            "Adipocere",
+            "Wet or humid, little air, cool",
+            "Early: pale, greasy; full: grey, firm wax"
+          ],
+          [
+            "Mummification",
+            "Hot, dry, ventilated, draught",
+            "Dry, leathery, brown skin; organs shrink"
+          ],
+          [
+            "Peat tanning",
+            "Peat bog, humic acids",
+            "Dark, brittle skin; soft, cartilage-like bone"
+          ],
+          [
+            "Freezing",
+            "Natural deep cold",
+            "Body kept intact for years"
+          ]
+        ]
+      },
+      "teacher_notes": "Time: 6 min. Discussion: Why does putrefaction stop in each of the four conditions? Why can adipocere and mummification coexist on one body (Simpson, p. 48)? Whiteboard task: draw a decision tree 'wet vs dry vs acidic vs cold' leading to the preservative change. Typical mistake: believing adipocere forms only under water; Simpson notes it occurs in some dry vaults. Timings are guidelines only, because the microenvironment decides."
+    },
+    {
+      "title": "Case Analysis: Body Found in Water",
+      "bullets": [
+        {
+          "text": "Scenario: a bloated body is pulled from a shallow river. There are abrasions on the face, backs of the hands and knees, and the hand skin is lost.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "48"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Floating bodies usually hang with head and limbs down. Hypostasis and bottom-contact injuries therefore appear there. Adipocere is unusual unless immersion lasts many weeks.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "47-48"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Caution: post-mortem wounds can bleed, especially on the scalp and in bodies from water. A missing inflammatory rim does not prove an injury was post-mortem.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "49-50"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Question: which findings would you use to explain the injuries, and can you call them ante-mortem or post-mortem from the wound edges alone?",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "50"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Time: 7 min. Discussion: How would you separate bottom-contact injuries from assault injuries? What would you do about possible animal predation (odontologist, Simpson p. 49)? Whiteboard task: sketch a floating body and mark where hypostasis and abrasions are expected. Typical mistake: stating that post-mortem injuries never bleed or that a lack of vital reaction proves post-mortem origin. Expected answer: injuries match the floating posture and the bottom contact; the wound edges alone cannot decide the timing."
+    },
+    {
+      "title": "Artificial Changes and Skeletalization",
+      "bullets": [
+        {
+          "text": "Simple embalming: equal parts ethanol and formalin are injected into the femoral artery and body cavities. Cold storage also preserves a body temporarily.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti (textbook), Ch. 8",
+            "page": "235"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Defensive dismemberment hides the crime. Offensive dismemberment comes from passion or revenge and aims to display the act, not to conceal it.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti (textbook), Ch. 8",
+            "page": "235"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Burning a whole adult body takes about 20 hours; a small child takes 2-3 hours. Dissolving in acids is rare and casuistic.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti (textbook), Ch. 8",
+            "page": "235"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "In a buried body, soft tissue is usually gone by about 2 years and bones are bare at about 5 years. Bone dating is difficult, so involve a forensic anthropologist.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "49"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Time: 6 min. Discussion: Which questions are put to the expert when dismembered remains are found (human or animal, one person, sex, age, weapon)? Why is dating of bones so uncertain? Whiteboard task: list artificial changes as 'preserving' versus 'destructive'. Typical mistake: confusing natural preservation (mummification, adipocere) with artificial preservation (embalming). Extra detail for advanced students: strontium-90 helps separate bones from before and after the 1940s (Simpson, p. 49)."
+    },
+    {
+      "title": "Estimation of Time of Death: Temperature Methods",
+      "bullets": [
+        {
+          "text": "Rectal temperature is the classic site. Ear or nose probes are quicker but may not match deep rectal or liver temperature.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "50"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Henssge's nomogram is the most useful method, but its 95% limits are still about ±2.8 h around the likeliest time.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "50"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Caution: rules of thumb and 'warm to touch' statements are unreliable and should not be used.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "50"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Temperature-based tools for estimating the PMI",
+        "nodes": [],
+        "header": [
+          "Tool",
+          "Inputs",
+          "Key point"
+        ],
+        "rows": [
+          [
+            "Henssge nomogram",
+            "Rectal and ambient temp, body weight",
+            "95% limits ±2.8 h"
+          ],
+          [
+            "Corrective factors",
+            "Clothing, air movement, water",
+            "Widen the time range"
+          ],
+          [
+            "Bilkun table (local)",
+            "Rectal temperature at known hours",
+            "12 h: 29.2°C; 24 h: 23.2°C"
+          ],
+          [
+            "Room-temperature rule",
+            "About 1°C fall per hour",
+            "Rough guide only"
+          ]
+        ]
+      },
+      "teacher_notes": "Time: 10 min. Discussion: (1) Why must the ambient temperature be recorded at the scene by the first officers? (2) Why does the nomogram need the body weight? Whiteboard task: list the three measurements the nomogram relies on and the factors that widen its error. Typical mistake: quoting one exact hour of death instead of a range. Also note that a 5°C ambient error can shift the estimate by at least 1 hour (Simpson p.50)."
+    },
+    {
+      "title": "Other Methods of PMI Estimation",
+      "bullets": [
+        {
+          "text": "Vitreous potassium: research only. Gastric contents and fungi may corroborate other evidence but do not fix the time.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "53"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Forensic entomology gives estimates of days to months; egg-to-pupation takes about 21-24 days.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "53"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "No single method is reliable; combine many. Precision falls from hours to days, then months or years.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti, 8.7-bo'lim",
+            "page": "238"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Seconds for lividity colour to recover after pressure (Kononenko)",
+        "nodes": [],
+        "header": [
+          "PMI",
+          "Rapid (s)",
+          "Agonal (s)"
+        ],
+        "rows": [
+          [
+            "2 h",
+            "9-10",
+            "5-6"
+          ],
+          [
+            "8 h",
+            "38-48",
+            "36-52"
+          ],
+          [
+            "12 h",
+            "55-62",
+            "46-58"
+          ],
+          [
+            "20 h",
+            "121-151",
+            "210-270"
+          ]
+        ]
+      },
+      "teacher_notes": "Time: 8 min. Discussion: (1) Why does recovery time depend on the type of death? (2) Why does accuracy fall as the PMI grows? Whiteboard task: draw the egg, larva, instar, pupa and adult sequence of a blowfly. Typical mistake: treating stomach contents as a clock. They only help to corroborate. Note that the pressure test used 196 kPa for 3 seconds (Giyosov p.237)."
+    },
+    {
+      "title": "Cause of Death: Thanatogenesis and Competition",
+      "bullets": [
+        {
+          "text": "Thanatogenesis is the mechanism of death: a chain of cause-and-effect links from remote to immediate cause.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti, 8.10-bo'lim",
+            "page": "241"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Competition of causes: two or more conditions that could each kill. The expert tries to name the main one.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti, 8.10-bo'lim",
+            "page": "242"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "For clinicians, competing links complicate diagnosis, treatment and the later review of care given.",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti, 8.10-bo'lim",
+            "page": "242"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Example chain: gastric ulcer",
+        "nodes": [
+          "Remote: gastric ulcer",
+          "Perforation of stomach wall",
+          "Peritonitis",
+          "Immediate: sepsis"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Time: 10 min. Discussion: (1) How does this chain compare with Part I (a)-(c) of the WHO certificate, where the lowest line is the underlying condition? (2) A victim has a severe head injury and is then thrown into water: which causes compete? Whiteboard task: build a chain for a stab wound of the right ventricle (stab wound, haemopericardium, cardiac tamponade). Typical mistake: listing the mode of death (e.g. cardiac arrest) as the remote cause."
+    },
+    {
+      "title": "Death Certification and Medico-Legal Investigation",
+      "bullets": [
+        {
+          "text": "Part I of the WHO certificate is the causal chain; its lowest line is the underlying cause. Part II lists other contributing conditions.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "28"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Each condition gets a four-digit ICD code, so mortality data can be compared internationally.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "30"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Uzbekistan: body released for burial within 1 day after autopsy; up to 3 days in the morgue if burial is difficult.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "246"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Coroner pathway (England and Wales)",
+        "nodes": [
+          "Death reported to Coroner",
+          "Autopsy if cause unclear",
+          "Inquest if not natural",
+          "Inquest: who, when, where, how",
+          "Verdict, e.g. open or narrative"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Time: 8 min. Discuss: Why is the lowest Part I line the most important statistically? Why should the Coroner's court not imply blame? Whiteboard: write a Part I chain (Ia, Ib, Ic) for subarachnoid haemorrhage from a ruptured aneurysm. Typical mistake: writing only a mode of death (e.g. 'heart failure') without the underlying disease. Caution: the mode of death is not the cause of death. Note: the source gives inquest verdicts such as unlawful killing, accident, suicide, natural causes and open verdict."
+    },
+    {
+      "title": "Forensic Autopsy: Purposes, Stages, Documentation",
+      "bullets": [
+        {
+          "text": "Aims: identify the body, estimate time of death, document injuries, natural disease, poisons and effects of treatment.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "32"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Stages: documents, external exam, internal exam, diagnosis, lab tests, conclusion; report has 3 parts.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "239"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Verbal autopsy uses records and relatives; virtual autopsy (CT, MRI) is mainly a research tool.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "246"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Forensic vs pathological autopsy",
+        "header": [
+          "Feature",
+          "Forensic",
+          "Pathological"
+        ],
+        "rows": [
+          [
+            "Ordered by",
+            "Investigator or court decision",
+            "Head of the hospital"
+          ],
+          [
+            "Place of death",
+            "Any place",
+            "Mainly in hospital"
+          ],
+          [
+            "Time of death",
+            "Must be determined",
+            "Stated in case history"
+          ],
+          [
+            "Result",
+            "Expert report to investigator",
+            "Protocol filed in case history"
+          ]
+        ],
+        "nodes": []
+      },
+      "teacher_notes": "Time: 8 min. Discuss: Why is a poorly performed autopsy worse than a delayed one? When is a verbal autopsy acceptable? Whiteboard: list the six stages of the forensic examination in order. Typical mistake: treating clothing and injuries as study objects in a pathological autopsy; in the source they are examined only in the forensic examination. The three parts of the report are introduction, investigation and conclusion. The expert signs the diagnosis and conclusion. Caution: the forensic autopsy is not the same as the clinical (pathological) autopsy."
+    },
+    {
+      "title": "Special Cases: Unknown, Dismembered, Skeletal, Exhumed",
+      "bullets": [
+        {
+          "text": "Unknown or dismembered bodies: describe clothing, face (verbal portrait), tattoos and scars; take blood for group typing; fingerprint; keep all parts in the morgue.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "243"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Skeletal remains: bones give sex, age and height. Cause of death is seldom found, but bone injuries, diatoms and some poisons may be detected.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "244"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Exhumation needs legal permission and a confirmed grave site. If poisoning is suspected, take soil above, below and beside the coffin, plus a control sample from a distant part of the cemetery.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "34"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "The Minnesota Protocol is a UN model autopsy protocol for human-rights abuse cases. It covers scene examination to ancillary tests and suits difficult or sensitive cases.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "33"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Time: 8 min. Discuss: Why must parts of a dismembered body be kept until the investigator gives permission? Why take control soil samples at exhumation? Whiteboard: list the features of a 'verbal portrait'. Typical mistake: expecting to find the cause of death from skeletal remains; the source says this is usually impossible. In Uzbekistan, exhumation is a procedural act carried out on a formal decision, with a record made (Giyosov, p. 244)."
+    },
+    {
+      "title": "Conclusion and Key Messages",
+      "bullets": [
+        {
+          "text": "Death is a process, not a single event. Cells die at different rates, so we separate cellular death from somatic death. Irreversible loss of integrated function defines somatic death.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "24"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Post-mortem changes (cooling, rigor mortis, hypostasis, putrefaction) help to estimate the post-mortem interval (PMI). No single marker is precise, so combine several methods.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "50"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Cause of death is certified in WHO format, with the underlying disease lowest in Part I. Unnatural or unexplained deaths go to a legal officer, and an autopsy is often needed to be certain.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "28"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Further reading: Simpson's Forensic Medicine (Ch. 3 and 5) and G'iyosov, Sud tibbiyoti (Ch. 8 on forensic thanatology: terminal states, cadaveric changes, thanatogenesis, expert examination).",
+          "source": {
+            "author": "G'iyosov Z.A.",
+            "title": "Sud tibbiyoti, Bob 8 Sud-tibbiy tanatologiya",
+            "page": "217"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Time: 5 min. Discussion: (1) Why can no single post-mortem change give an exact time of death? (2) How does the chain of causes in thanatogenesis relate to Part I of the death certificate? Whiteboard task: students list from memory the early and late post-mortem changes and the factors that speed up or slow them. Typical mistake: treating rigor mortis or body warmth to the touch as an accurate clock."
+    }
+  ],
+  "mcq": [
+    {
+      "question": "A 30-year-old ventilated man is in deep coma after a suspected sedative overdose. Which condition must be excluded before brain-stem death testing can be valid?",
+      "options": [
+        "Any previous history of neurological symptoms",
+        "Use of an ECG display during observation",
+        "Depressant drug effect as the cause of coma",
+        "Spontaneous eye opening at the first test"
+      ],
+      "correct_index": 2,
+      "explanation": "Simpson's lists preconditions for diagnosing brain-stem death. Reversible causes of coma must be excluded, including depressant drugs such as narcotics, hypnotics and tranquillizers, hypothermia, and metabolic or endocrine disturbances. Specific antagonists may be needed to exclude drug effect.",
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "26"
+      }
+    },
+    {
+      "question": "A doctor gives a large dose of an analgesic only to relieve the pain of a dying patient, with no aim of hastening death, and the patient dies. How does the Uzbek textbook classify this?",
+      "options": [
+        "Indirect active euthanasia, as death was not the aim",
+        "Direct active euthanasia, as death was the aim",
+        "Passive euthanasia, as treatment was withdrawn",
+        "Dysthanasia, as life was prolonged maximally"
+      ],
+      "correct_index": 0,
+      "explanation": "In indirect (bilvosita) active euthanasia the act is not intended to cause death, so the death is assessed as negligent homicide or an accident. Direct active euthanasia is an act performed in order to hasten death. Passive euthanasia means limiting or stopping medical care.",
+      "source": {
+        "author": "G'iyosov Z.A.",
+        "title": "Sud tibbiyoti, Bob 8, 8.2 Evtanaziya",
+        "page": "218-219"
+      }
+    },
+    {
+      "question": "A healthy adult in a room at normal temperature suffers cardiac arrest. Under ordinary conditions, how long does clinical death usually last before irreversible cortical changes develop?",
+      "options": [
+        "About 30 seconds to 1 minute",
+        "About 20 to 30 minutes",
+        "About 1 to 2 hours",
+        "Up to about 5–6 minutes"
+      ],
+      "correct_index": 3,
+      "explanation": "Clinical death begins when the heart stops. Under ordinary conditions it lasts up to 5–6 minutes, after which irreversible changes develop in the cerebral cortex. In low temperatures it can be prolonged up to about 30 minutes.",
+      "source": {
+        "author": "G'iyosov Z.A.",
+        "title": "Sud tibbiyoti, Bob 8, 8.1 O'lish va o'lim. Terminal holatlar",
+        "page": "218"
+      }
+    },
+    {
+      "question": "According to Simpson's, which feature separates somatic death from deep sleep, anaesthesia or temporary coma?",
+      "options": [
+        "Absence of communication with the surroundings",
+        "Irreversibility of the loss of awareness",
+        "Absence of pupillary response to light",
+        "Cessation of cellular respiration in skin"
+      ],
+      "correct_index": 1,
+      "explanation": "Lack of communication also occurs in sleep, anaesthesia, drug intoxication and temporary coma. The key word in the definition of somatic death is 'irreversible'. Skin cells may stay metabolically active for many hours after somatic death.",
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "24-25"
+      }
+    },
+    {
+      "question": "A dying patient's breathing suddenly stops, the pupils dilate and do not react to light, and cardiac activity is sharply disturbed. This lasts about 40 seconds. Which stage is this?",
+      "options": [
+        "Preagony",
+        "Agony",
+        "Terminal pause",
+        "Clinical death"
+      ],
+      "correct_index": 2,
+      "explanation": "The terminal pause is marked by sudden respiratory arrest, sharply disturbed cardiac function, dilated non-reactive pupils and fading reflexes. It lasts from a few seconds to 3–4 minutes. Preagony shows pallor, hypotension and dyspnoea. Agony shows partial recovery of breathing and pulse.",
+      "source": {
+        "author": "G'iyosov Z.A.",
+        "title": "Sud tibbiyoti, Bob 8, 8.1 O'lish va o'lim. Terminal holatlar",
+        "page": "217"
+      }
+    },
+    {
+      "question": "A patient with a traumatic brain injury is wakeful but shows no awareness. This state has lasted 12 months. How is it judged under the Royal College of Physicians guidelines (2003)?",
+      "options": [
+        "Minimally conscious state, with recovery still expected",
+        "Brain-stem death, confirmed by an apnoea test",
+        "Permanent vegetative state, after 12 months",
+        "Temporary coma, caused by depressant drugs"
+      ],
+      "correct_index": 2,
+      "explanation": "Wakefulness without awareness is the vegetative state. After traumatic brain injury it is judged permanent at 12 months (6 months for other causes). Withdrawal of hydration and assisted nutrition can then be considered in the patient's best interests. Brain-stem death means absent brain-stem reflexes, which is not the case here.",
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "26"
+      }
+    },
+    {
+      "question": "A man dies in a UK hospital. He never stated a view on donation, and his close relatives object to organ removal. What should the transplant team do?",
+      "options": [
+        "Not remove organs, because the UK system needs opting in and no relative objecting",
+        "Remove organs, because the UK uses an opting-out system for all donors",
+        "Remove organs, because the patient himself never voiced any objection",
+        "Remove organs, because the Coroner's permission alone is sufficient"
+      ],
+      "correct_index": 0,
+      "explanation": "The UK practises 'opting in'. The team must ensure the donor gave permission in life, or at least did not object, and that no close relative objects after death. Opting-out systems, used in some other countries, allow removal unless relatives object, so that is not the UK model.",
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "27"
+      }
+    },
+    {
+      "question": "About 20 minutes after cardiac arrest, a doctor presses the eyeball from the sides. The pupil becomes oval, like a 'cat's eye'. What does this finding represent?",
+      "options": [
+        "Facies hippocratica, a sign seen during the agonal stage",
+        "Pergament spots, a drying change of damaged skin",
+        "Lyarshe spots, a drying sign appearing after 4-5 hours",
+        "Beloglazov's sign, the earliest reliable sign of death"
+      ],
+      "correct_index": 3,
+      "explanation": "Beloglazov's ('cat's eye') sign is the earliest reliable sign of death and is detectable after 15-20 minutes. It may no longer be demonstrable after 1.5-2 hours because of pupillary muscle rigidity. The other options are not early reliable signs of death.",
+      "source": {
+        "author": "G'iyosov Z.A.",
+        "title": "Sud tibbiyoti, Bob 8 Sud-tibbiy tanatologiya",
+        "page": "220"
+      }
+    },
+    {
+      "question": "About 5 hours after death, an expert taps the biceps muscle with a metal ruler. What supravital reaction is expected?",
+      "options": [
+        "Brisk contraction of the whole limb muscle group",
+        "A local ridge-like swelling without muscle contraction",
+        "A depression forming at the point of impact",
+        "No reaction, because supravital responses have ended"
+      ],
+      "correct_index": 1,
+      "explanation": "Mechanical stimulation causes muscle contraction only in the first 1-2 hours. Up to about 10 hours there is no contraction but an idiomuscular swelling (ridge) appears. A depression at the site forms at about 10-11 hours.",
+      "source": {
+        "author": "G'iyosov Z.A.",
+        "title": "Sud tibbiyoti, Bob 8 Sud-tibbiy tanatologiya",
+        "page": "222"
+      }
+    },
+    {
+      "question": "A forensic expert finds that a man died of a gunshot wound, which is a violent death. Who determines whether it was homicide, suicide or accident?",
+      "options": [
+        "The forensic expert, using only the morphology of the wound",
+        "The hospital pathologist, at the clinical autopsy",
+        "Law enforcement officers, because intent must be established",
+        "The treating doctor, on the medical death certificate"
+      ],
+      "correct_index": 2,
+      "explanation": "Forensic experts determine the category (violent or non-violent) and the type of death. The kind of death (homicide, suicide, accident) is the competence of law enforcement bodies, because it depends on establishing intent.",
+      "source": {
+        "author": "G'iyosov Z.A.",
+        "title": "Sud tibbiyoti, Bob 8 Sud-tibbiy tanatologiya",
+        "page": "221"
+      }
+    },
+    {
+      "question": "A body lying on its back is examined about 5 hours after death. Purple-blue patches on the back vanish under finger pressure and quickly return. When the body is turned over, they reappear on the new dependent area. Which stage of cadaveric spots is this?",
+      "options": [
+        "Imbibition stage",
+        "Stasis stage",
+        "Hypostasis stage",
+        "Autolysis stage"
+      ],
+      "correct_index": 2,
+      "explanation": "In the hypostasis stage (about 1.5-2 h to 8-12 h after death) the blood is still mobile. The spots blanch fully on pressure and shift when the body is repositioned. In the stasis stage they only pale and recover slowly. In the imbibition stage they no longer change colour or move.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+        "page": "227"
+      }
+    },
+    {
+      "question": "A young athlete collapses and dies at the end of an exhausting race. At the scene, rigor mortis is already well developed much earlier than usual. What is the best explanation?",
+      "options": [
+        "Low muscle glycogen and acidic muscle cells speed up rigor",
+        "Cold surroundings accelerate the muscle chemical reactions",
+        "Rising ATP levels after death lock actin and myosin together",
+        "Death of the hair follicles triggers early muscle stiffening"
+      ],
+      "correct_index": 0,
+      "explanation": "Rigor results from falling ATP and increasing acidity, which make actin and myosin bind. Exhaustion before death leaves low glycogen and acidic muscle, so rigor develops faster. Cold slows the reactions, and ATP falls rather than rises.",
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "43"
+      }
+    },
+    {
+      "question": "Relatives of the deceased claim that dark patches on the back of a body are bruises from a beating. The expert makes a cross-incision through the patch. Which finding would indicate a true bruise?",
+      "options": [
+        "Blood drops flowing only from cut vessels",
+        "Pale tissue with no blood in the fat layer",
+        "Fat stained by haemoglobin, without clotted blood",
+        "Clotted blood infiltrating the soft tissues"
+      ],
+      "correct_index": 3,
+      "explanation": "A bruise shows extravasated, clotted blood within the tissues. Cadaveric spots show blood in vessels (drops), or haemoglobin soaking the fat in the imbibition stage, without clotting.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+        "page": "228-229"
+      }
+    },
+    {
+      "question": "Under Casper's ratio, other factors being equal, a body in open air reaches a certain stage of decomposition in 2 weeks. How long would the same stage take if the body were buried in earth?",
+      "options": [
+        "About 4 weeks",
+        "About 16 weeks",
+        "About 24 weeks",
+        "About 32 weeks"
+      ],
+      "correct_index": 1,
+      "explanation": "Casper's ratio for air : water : earth is 1 : 2 : 8. Burial therefore slows decomposition eight times compared with open air, so 2 weeks becomes about 16 weeks. Water would give about 4 weeks.",
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "47"
+      }
+    },
+    {
+      "question": "A body is found in a warm room with small white eggs around the eyes, nose and mouth. Roughly how long after the eggs were laid do larvae normally hatch at room temperature?",
+      "options": [
+        "Within 1-2 hours",
+        "About 7-10 days",
+        "About 24-30 hours",
+        "About 2 weeks"
+      ],
+      "correct_index": 2,
+      "explanation": "Flies lay eggs around natural orifices and wounds soon after death. At room temperature larvae hatch after about 24-30 hours. Pupae appear at 7-10 days, and adult flies at about 2 weeks.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+        "page": "232"
+      }
+    },
+    {
+      "question": "A body is recovered from waterlogged ground. The fat is grey, firm and waxy, and the body shape is preserved. Which process explains this finding?",
+      "options": [
+        "Hydrolysis of body fat into a waxy, soap-like compound",
+        "Desiccation of soft tissue in dry, draughty air",
+        "Breakdown of haemoglobin by gut bacteria producing green skin",
+        "Tanning of tissues by humic acids of a peat bog"
+      ],
+      "correct_index": 0,
+      "explanation": "Adipocere is hydrolysis of body fat to a waxy, soap-like compound. It needs water and is typical of wet conditions. Desiccation describes mummification. Greening is early putrefaction. Peat tanning needs a bog environment.",
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "48"
+      }
+    },
+    {
+      "question": "A body is found in a river. Under Casper's law, with all other factors equal, how does its decomposition compare with a body lying in free air?",
+      "options": [
+        "Eight times as slowly as the body in air",
+        "Twice as slowly as the body in air",
+        "Four times as slowly as the body in air",
+        "At the same rate as the body in air"
+      ],
+      "correct_index": 1,
+      "explanation": "Casper's law gives a ratio of air : water : earth of about 1 : 2 : 8. A body in water decomposes about twice as slowly as in air. Eight times slower applies to burial in earth.",
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "47"
+      }
+    },
+    {
+      "question": "A pathologist wants to estimate the post-mortem interval of a naked body in still air using Henssge's nomogram. Which three measurements does the method rely on?",
+      "options": [
+        "Rectal temperature, body height and age of the person",
+        "Ambient temperature, humidity and wind speed at the scene",
+        "Body temperature, ambient temperature and body weight",
+        "Liver temperature, type of clothing and season of the year"
+      ],
+      "correct_index": 2,
+      "explanation": "Henssge's nomogram uses body temperature, ambient temperature and body weight. An error in any one of them reduces the accuracy of the result. Corrective factors are then applied for clothing, air movement and water.",
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "50"
+      }
+    },
+    {
+      "question": "A man with a gastric ulcer develops perforation of the stomach wall, then peritonitis, and dies of sepsis. Which condition is the proximate (immediate) cause of death?",
+      "options": [
+        "Gastric ulcer disease",
+        "Perforation of the stomach wall",
+        "Peritonitis",
+        "Sepsis"
+      ],
+      "correct_index": 3,
+      "explanation": "In the thanatogenesis chain the first link (ulcer disease) is the remote cause. The middle links (perforation, peritonitis) are intermediate causes. The final link (sepsis) is the proximate cause.",
+      "source": {
+        "author": "G'iyosov Z.A.",
+        "title": "Sud tibbiyoti, 8-bob 'Sud-tibbiy tanatologiya'",
+        "page": "241"
+      }
+    },
+    {
+      "question": "A death certificate lists: Ia Coma; Ib Subarachnoid haemorrhage; Ic Ruptured congenital aneurysm. Which entry is the primary condition used for mortality statistics?",
+      "options": [
+        "Ic Ruptured congenital aneurysm",
+        "Ia Coma",
+        "Ib Subarachnoid haemorrhage",
+        "Any condition entered in Part II"
+      ],
+      "correct_index": 0,
+      "explanation": "In WHO-style certification the disease lowest in Part I is the primary pathological condition in the chain of events. It is the one used for national and international mortality statistics. Coma is only a mode of death.",
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "28"
+      }
+    }
+  ],
+  "extras": [
+    {
+      "text": "Memory aid, Casper's ratio: 'Air 1 – Water 2 – Earth 8'. With all other factors equal, a body decomposes twice as slowly in water as in free air, and eight times more slowly when buried in earth. The Uzbek textbook gives the same 1:2:8 ratio. Both sources explain it by lower oxygen and lower temperature in water and soil.",
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "47"
+      }
+    },
+    {
+      "text": "Case analysis, calculation: rectal temperature 26.4°C, ambient temperature 12°C, body weight 90 kg. Henssge's nomogram gives a time since death of 16 ± 1.8 hours, with 95% reliability. That is a window of about 13 to 19 hours before measurement. Question: how would the window change if the ambient temperature had been misrecorded? The source says a 5°C error can shift the estimate by at least 1 hour. This is a teaching example only, not for real cases.",
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "50-52"
+      }
+    },
+    {
+      "text": "Case analysis, hypostasis or suffocation? A body is found face down on a bed. It shows pale areas around the mouth and nose, and linear marks that match blanket creases. This pattern is post-mortem hypostasis with pressure pallor from lying on the bedding. It is not proof of suffocation. The pathologist must still exclude pressure on the mouth, nose and neck by careful dissection. Question: what findings would you look for?",
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "44-45"
+      }
+    },
+    {
+      "text": "Interesting fact: a body dies cell by cell. Cortical neurons die after only 3–7 minutes of complete oxygen deprivation. White blood cells can still move up to 12 hours after cardiac arrest, and skin cells can be cultured days later. This is why microscopic 'vital reaction' to injury is of doubtful reliability.",
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "24"
+      }
+    },
+    {
+      "text": "Memory aid, thanatogenesis as a chain: remote cause → intermediate causes → immediate cause. Example: gastric ulcer → perforation → peritonitis → sepsis. Ulcer is the remote cause, perforation and peritonitis are intermediate, and sepsis is the immediate cause of death. In the forensic diagnosis, list the remote cause first.",
+      "source": {
+        "author": "G'iyosov Z.A.",
+        "title": "Sud tibbiyoti (darslik), Bob 8 «Sud-tibbiy tanatologiya»",
+        "page": "241"
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{"slides":[
+{"title":"Death Certification and Medico-Legal Investigation",
+"bullets":[
+{"text":"Part I of the WHO certificate is the causal chain; its lowest line is the underlying cause. Part II lists other contributing conditions.","source":{"author":"Payne-James J., Jones R., Karch S.B., Manlove J.","title":"Simpson's Forensic Medicine, 13th ed.","page":"28"},"uncertain":false},
+{"text":"Each condition gets a four-digit ICD code, so mortality data can be compared internationally.","source":{"author":"Payne-James J., Jones R., Karch S.B., Manlove J.","title":"Simpson's Forensic Medicine, 13th ed.","page":"30"},"uncertain":false},
+{"text":"Uzbekistan: body released for burial within 1 day after autopsy; up to 3 days in the morgue if burial is difficult.","source":{"author":"G'iyosov Z.A.","title":"Sud tibbiyoti","page":"246"},"uncertain":false}
+],
+"diagram":{"kind":"flow","caption":"Coroner pathway (England and Wales)","nodes":["Death reported to Coroner","Autopsy if cause unclear","Inquest if not natural","Inquest: who, when, where, how","Verdict, e.g. open or narrative"],"header":[],"rows":[]},
+"teacher_notes":"Time: 8 min. Discuss: Why is the lowest Part I line the most important statistically? Why should the Coroner's court not imply blame? Whiteboard: write a Part I chain (Ia, Ib, Ic) for subarachnoid haemorrhage from a ruptured aneurysm. Typical mistake: writing only a mode of death (e.g. 'heart failure') without the underlying disease. Caution: the mode of death is not the cause of death. Note: the source gives inquest verdicts such as unlawful killing, accident, suicide, natural causes and open verdict."},
+{"title":"Forensic Autopsy: Purposes, Stages, Documentation",
+"bullets":[
+{"text":"Aims: identify the body, estimate time of death, document injuries, natural disease, poisons and effects of treatment.","source":{"author":"Payne-James J., Jones R., Karch S.B., Manlove J.","title":"Simpson's Forensic Medicine, 13th ed.","page":"32"},"uncertain":false},
+{"text":"Stages: documents, external exam, internal exam, diagnosis, lab tests, conclusion; report has 3 parts.","source":{"author":"G'iyosov Z.A.","title":"Sud tibbiyoti","page":"239"},"uncertain":false},
+{"text":"Verbal autopsy uses records and relatives; virtual autopsy (CT, MRI) is mainly a research tool.","source":{"author":"G'iyosov Z.A.","title":"Sud tibbiyoti","page":"246"},"uncertain":false}
+],
+"diagram":{"kind":"table","caption":"Forensic vs pathological autopsy","header":["Feature","Forensic","Pathological"],"rows":[["Ordered by","Investigator or court decision","Head of the hospital"],["Place of death","Any place","Mainly in hospital"],["Time of death","Must be determined","Stated in case history"],["Result","Expert report to investigator","Protocol filed in case history"]],"nodes":[]},
+"teacher_notes":"Time: 8 min. Discuss: Why is a poorly performed autopsy worse than a delayed one? When is a verbal autopsy acceptable? Whiteboard: list the six stages of the forensic examination in order. Typical mistake: treating clothing and injuries as study objects in a pathological autopsy; in the source they are examined only in the forensic examination. The three parts of the report are introduction, investigation and conclusion. The expert signs the diagnosis and conclusion. Caution: the forensic autopsy is not the same as the clinical (pathological) autopsy."},
+{"title":"Special Cases: Unknown, Dismembered, Skeletal, Exhumed",
+"bullets":[
+{"text":"Unknown or dismembered bodies: describe clothing, face (verbal portrait), tattoos and scars; take blood for group typing; fingerprint; keep all parts in the morgue.","source":{"author":"G'iyosov Z.A.","title":"Sud tibbiyoti","page":"243"},"uncertain":false},
+{"text":"Skeletal remains: bones give sex, age and height. Cause of death is seldom found, but bone injuries, diatoms and some poisons may be detected.","source":{"author":"G'iyosov Z.A.","title":"Sud tibbiyoti","page":"244"},"uncertain":false},
+{"text":"Exhumation needs legal permission and a confirmed grave site. If poisoning is suspected, take soil above, below and beside the coffin, plus a control sample from a distant part of the cemetery.","source":{"author":"Payne-James J., Jones R., Karch S.B., Manlove J.","title":"Simpson's Forensic Medicine, 13th ed.","page":"34"},"uncertain":false},
+{"text":"The Minnesota Protocol is a UN model autopsy protocol for human-rights abuse cases. It covers scene examination to ancillary tests and suits difficult or sensitive cases.","source":{"author":"Payne-James J., Jones R., Karch S.B., Manlove J.","title":"Simpson's Forensic Medicine, 13th ed.","page":"33"},"uncertain":false}
+],
+"diagram":null,
+"teacher_notes":"Time: 8 min. Discuss: Why must parts of a dismembered body be kept until the investigator gives permission? Why take control soil samples at exhumation? Whiteboard: list the features of a 'verbal portrait'. Typical mistake: expecting to find the cause of death from skeletal remains; the source says this is usually impossible. In Uzbekistan, exhumation is a procedural act carried out on a formal decision, with a record made (Giyosov, p. 244)."}
+]}
