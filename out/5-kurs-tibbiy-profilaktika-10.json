@@ -1,0 +1,2228 @@
+{
+  "topic": "Amaliy mashg’ulot: Fizik omillar ta’siridan o‘lim hollarida murdalar sud-tibbiy ekspertizasi.",
+  "slides": [
+    {
+      "title": "Kirish: fizik omillar va mashg‘ulot maqsadi",
+      "bullets": [
+        {
+          "text": "Bobda to‘rt guruh fizik omil ko‘riladi: yuqori va past harorat, elektr toki, bosim o‘zgarishi hamda radiatsiya.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "183"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Past haroratning ta’siri deyarli barcha holatlarda baxtsiz hodisa oqibatida ro‘y beradi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "191"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Elektrotravma shikastlanishlarning 1-2,5% ini tashkil etadi. Biroq nogironlik va o‘limga olib kelishda u etakchi o‘rinlardan birini egallaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "196"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yong‘indan keyin topilgan murdada alanga ta’sirining hayotiyligini (o‘limdan oldin yoki keyin ekanini) aniqlash zarur bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "188"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nima uchun fizik omillardan o‘lim holatlarida voqea tafsiloti muhim? 2) Qaysi omilda baxtsiz hodisa ko‘proq uchraydi? Doskada chizish: bobning to‘rt bo‘limini (harorat, elektr, bosim, radiatsiya) to‘rt ustun qilib yozing. Tipik xato: talabalar umumiy va mahalliy ta’sirni (issiq urish va kuyish) aralashtiradi."
+    },
+    {
+      "title": "Tana harorati va issiqlik ajralish yo‘llari",
+      "bullets": [
+        {
+          "text": "Tana harorati me’yorda 36-37°S; issiqlik hosil bo‘lishi va ajralishi tartibga solinadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "183"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "22-25°S dan past yoki 43-44°S dan baland haroratda to‘qimalar hayot bilan nomutanosib o‘zgaradi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "183"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Umumiy ta’sir — issiq urish yoki sovuq qotish; mahalliy ta’sir — kuyish yoki sovuq urishi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "183"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Issiqlik ajralishi",
+        "nodes": [],
+        "header": [
+          "Yo‘l",
+          "Ulushi"
+        ],
+        "rows": [
+          [
+            "Nurlanish",
+            "55%"
+          ],
+          [
+            "Ter bilan",
+            "27%"
+          ],
+          [
+            "O‘tkazish",
+            "15%"
+          ],
+          [
+            "Turli ajratmalar",
+            "3%"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun issiqlikning yarmidan ko‘pi nurlanish orqali chiqadi? 2) Umumiy va mahalliy ta’sir qanday farqlanadi? Doskada chizish: jadvaldagi to‘rt yo‘lni ulushlari bilan chizing. Tipik xato: ter bilan ajralish ulushini (27%) o‘tkazish ulushi (15%) bilan almashtirish."
+    },
+    {
+      "title": "Issiq urish: sabablar va rivojlanish mexanizmi",
+      "bullets": [
+        {
+          "text": "Sabab: issiq ko‘p hosil bo‘lib, kam ajraladi — baland harorat va namlik, shamolsizlik, og‘ir mehnat.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "183"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Moyillik: havo o‘tkazmas kiyim, yurak-qon tomir kasalligi, semizlik, keksalik.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "183"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Asosiy o‘rinda gemodinamika buzilishi: qon quyuqlashib, aylanish sustlashadi, gipoksiya rivojlanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "183"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Issiq urish mexanizmi",
+        "nodes": [
+          "Issiq ko‘p hosil, kam ajraladi",
+          "Qon quyuqlashadi, oqim sekin",
+          "Gipertermiya, so‘ng gipoksiya",
+          "Stress: katexolamin, staz",
+          "Modda almashinuvi buzilishi"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Sportchi va harbiy xizmatchilarda issiq urish nima uchun xavfli? 2) Qon quyuqlashishi gipoksiyani qanday kuchaytiradi? Doskada chizish: zanjirni o‘qlar bilan chizing va har bosqichga bittadan sabab yozing. Tipik xato: issiq urishni faqat tashqi haroratga bog‘lash, kiyim va kasalliklar kabi moyillik omillarini unutish."
+    },
+    {
+      "title": "Issiq urishning o‘tkir va uzaytirilgan shakli",
+      "bullets": [
+        {
+          "text": "O‘tkir shakl: o‘rganmagan organizmda birdan hush yo‘qolib, koma rivojlanadi va qisqa muddatda o‘lim bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "183-184"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Uzaytirilgan shaklda belgilar sekin kuchayadi; markaziy nerv tizimi (MNT) avval susayadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "184"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tana harorati 42-43°S dan oshsa, nafas olishning birlamchi to‘xtashidan o‘lim sodir bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "184"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Uzaytirilgan issiq urish zanjiri",
+        "nodes": [
+          "1. Susayish (latent) davri",
+          "2. Qo‘zg‘alish davri",
+          "3. Holsizlik: 41-42°S+",
+          "Predagonal: koma, talvasa",
+          "42-43°S+: nafas to‘xtashi"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega o‘tkir shakl faqat o‘rganmagan organizmda tez o‘limga olib keladi? 2) Qaysi davrda tana harorati eng yuqori bo‘ladi va nega u predagonal deyiladi? Doskada: uch davr zanjirini chizib, har davrga 2 ta asosiy belgini yozdiring (qo‘zg‘alishda taxikardiya, hansirash; holsizlikda koma, talvasa). Tipik xato: talabalar qo‘zg‘alish davrini holsizlik davri bilan almashtirib yuboradi va 42-43°S dan keyingi o‘lim sababini (nafasning birlamchi to‘xtashi) unutadi."
+    },
+    {
+      "title": "Quyosh urishi va murdadagi o‘zgarishlar",
+      "bullets": [
+        {
+          "text": "Murdada miya va pardalar to‘laqon, shishgan; miya to‘qimasida mayda perivaskulyar qon quyilishlar topiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "184"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ichki a’zolarda to‘laqonlik, yurak va yirik tomirlarda quyuq qon; o‘pka qo‘ng‘ir tusda bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "184"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Murda qotishi tez va kuchli rivojlanadi, murda dog‘lari esa kech paydo bo‘lib, oz bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "184"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Issiq urish va quyosh urishi",
+        "nodes": [],
+        "header": [
+          "Belgi",
+          "Issiq urish",
+          "Quyosh urishi"
+        ],
+        "rows": [
+          [
+            "Sababi",
+            "Issiqlik ko‘p ishlanib, kam ajraladi",
+            "Quyosh nurlari uzoq vaqt boshga ta’sir etadi"
+          ],
+          [
+            "Harorat",
+            "41-42°S dan oshishi mumkin",
+            "Salmoqli ko‘tarilish xos emas"
+          ],
+          [
+            "Belgilar",
+            "Koma, talvasa, nafas sekinlashishi",
+            "Bosh og‘rig‘i, gallyusinatsiya, talvasa"
+          ],
+          [
+            "Murdada",
+            "Morfologik o‘zgarish o‘xshash",
+            "Spetsifik xususiyati yo‘q"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 10 daq. Muhokama: 1) Ikkala holatda murdadagi o‘zgarishlar nega spetsifik emas va bu ekspertizada qanday qiyinchilik tug‘diradi? 2) Nega murda dog‘lari kech va oz paydo bo‘ladi, murda qotishi esa tez? Doskada: jadvalni ko‘chiring va ’murdada’ qatoriga miya, o‘pka, qotish, dog‘larni qo‘shing. Tipik xato: talabalar quyosh urishida ham issiq urishdagidek yuqori harorat bo‘ladi deb o‘ylaydi, murdada esa ikkala holat uchun maxsus belgi borligini taxmin qiladi."
+    },
+    {
+      "title": "Tezkor savol: issiq va quyosh urishi",
+      "bullets": [
+        {
+          "text": "Savol: issiq urishning uzaytirilgan shaklida nechta davr bor? Javob: uchta — susayish, qo‘zg‘alish va holsizlik.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "184"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: issiq urishga qanday omillar moyillik yaratadi? Javob: yuqori harorat va namlik, shamolsizlik, og‘ir ish, havo o‘tkazmaydigan kiyim, semizlik, keksalik, yurak-qon tomir kasalliklari.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "183"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: murdada issiq yoki quyosh urishiga xos maxsus morfologik belgi bormi? Javob: yo‘q, o‘zgarishlar o‘xshash va spetsifik emas.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "184"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: xato qilish xavfi — issiq urish ≠ quyosh urishi. Issiq urishda tananing umumiy qizishi, quyosh urishida esa boshning nur ta’sirida isishi asosiy; quyoshda harorat salmoqli ko‘tarilmaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "183-184"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Talabalarga savollarni og‘zaki berib, 2-3 kishidan javob oling. Muhokama: 1) Bir yoshgacha bo‘lgan bolalar nega issiq urishga o‘ta sezgir? 2) Spetsifik klinik belgilar yo‘qligi nega xato diagnoz qo‘yilishiga olib keladi? Doskada: ’issiq urish ≠ quyosh urishi’ juftligini yozib, ostiga farqlovchi bittadan belgi qo‘ydiring. Tipik xato: moyillik omillari ro‘yxatida sababni (issiqlikning ko‘p ishlanishi, kam ajralishi) omillar bilan aralashtirish."
+    },
+    {
+      "title": "Termik kuyish: manbalar va to‘rt daraja",
+      "bullets": [
+        {
+          "text": "Sabab: alanga, quyushqoq moddalar, 60°S dan issiq suv, bug‘, gaz yoki qizdirilgan jism.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "185"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Murdada I daraja ko‘pincha sezilmaydi. II darajada pufak tubi qo‘ng‘ir, zich; kesilsa qon chiqmaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "185"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "I-III darajali kuyish har qanday manbadan bo‘ladi. IV daraja faqat alanga ta’sirida hosil bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "185-186"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Kuyish darajalari",
+        "nodes": [],
+        "header": [
+          "Daraja",
+          "Belgisi",
+          "Tuzalishi"
+        ],
+        "rows": [
+          [
+            "I",
+            "Eritema, yengil shish, og‘riq",
+            "3-4 kunda izsiz o‘tadi"
+          ],
+          [
+            "II",
+            "Seroz suyuqlikli pufaklar",
+            "10-20 kunda, chandiqsiz"
+          ],
+          [
+            "III",
+            "Nekroz: III-A yuzaki, III-B to‘liq",
+            "2-3 haftada granulyasiya, so‘ng chandiq"
+          ],
+          [
+            "IV",
+            "Teri, mushak, boylam, suyak nekrozi",
+            "Manbada ko‘rsatilmagan"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 12 daqiqa. Muhokama: nega yupqa terili sohalarda kuyish chuqurroq bo‘ladi? Murdada I va II daraja farqi nimada? Doskada: to‘rt darajali jadvalni talabalar bilan birga chizing. Tipik xato: IV darajani har qanday manbadan bo‘ladi deb o‘ylash; u faqat alanga ta’sirida hosil bo‘ladi."
+    },
+    {
+      "title": "Kuyish manbaini aniqlash",
+      "bullets": [
+        {
+          "text": "Oqmalar tananing past sohalariga, “alanga tillari” esa yuqori sohalarga yo‘naladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "186"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yo‘nalish jabrlanganning hodisa paytidagi holatini baholashga yordam beradi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "186"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: nafas yo‘llari kuyishi faqat bug‘ va issiq gaz ta’siri uchun xos jarohat deb keltiriladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "186"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Manbalar farqi",
+        "nodes": [],
+        "header": [
+          "Manba",
+          "Soch, kiyim",
+          "Jarohat xususiyati"
+        ],
+        "rows": [
+          [
+            "Issiq suyuqlik",
+            "Shikastlanmaydi",
+            "Yuzaki, oqmasimon; yopiq joyga ham oqadi"
+          ],
+          [
+            "Alanga",
+            "Shikastlanadi",
+            "Chuqur, tilsimon; qurum izi bor"
+          ],
+          [
+            "Qizdirilgan jism",
+            "Manbada ko‘rsatilmagan",
+            "Chuqur, cheklangan, kontakt shakliga mos"
+          ],
+          [
+            "Bug‘, issiq gaz",
+            "Manbada ko‘rsatilmagan",
+            "Nafas yo‘llari kuyishi xos"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 10 daqiqa. Muhokama: issiq suyuqlik oqmalari nega kiyim ostidagi sohalarni ham kuydirishi mumkin? Kuyish izlari jabrlanganning holatini qanday ko‘rsatadi? Doskada: oqmalar va alanga tillari yo‘nalishini ikki tana sxemasida chizing. Tipik xato: tamg‘asimon kuyishni alangadan deb baholash; u qizdirilgan jismga xos."
+    },
+    {
+      "title": "Kuyish maydoni va og‘irlik mezonlari",
+      "bullets": [
+        {
+          "text": "Kaft qoidasi: bir kishining kafti tana yuzasining taxminan 1% ini tashkil etadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "187"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diagnoz kasr shaklida yoziladi: suratda yuza, mahrajda daraja. Masalan: 30% (10%) / II-III.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "188"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kuyish kasalligi yoki nafas yo‘llari shishi bo‘lsa, kichikroq yuza ham hayotga xavfli bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "187-188"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Maydon va xavf chegaralari",
+        "nodes": [],
+        "header": [
+          "Mezon",
+          "Ko‘rsatkich",
+          "Izoh"
+        ],
+        "rows": [
+          [
+            "III-IV daraja",
+            "Yuzaning 10% dan ortig‘i",
+            "Hayot uchun xavfli"
+          ],
+          [
+            "III daraja",
+            "Yuzaning 15% dan ortig‘i",
+            "Hayot uchun xavfli"
+          ],
+          [
+            "II daraja",
+            "Yuzaning 20% dan ortig‘i",
+            "Hayot uchun xavfli"
+          ],
+          [
+            "To‘qqizliklar",
+            "Bosh/bo‘yin, qo‘l, son, boldir: 9%",
+            "Old, orqa yuza: 18%; oraliq 1%"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 12 daqiqa. Muhokama: to‘qqizliklar qoidasi bilan kaft qoidasi qaysi holatda qulay? Kasr shaklidagi diagnozda qavs ichidagi son nimani bildiradi? Doskada: tana sxemasiga 9% va 18% bo‘laklarini yozing. Tipik xato: kasrning surat va mahrajini adashtirish; suratda yuza, mahrajda daraja yoziladi."
+    },
+    {
+      "title": "Kuyish kasalligining to‘rt davri",
+      "bullets": [
+        {
+          "text": "Nafas yo‘llari kuyishi va is gazi qo‘shilsa, shokda o‘lim ehtimoli ikki va undan ko‘p marta ortadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "188"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Septikotoksemiyada pnevmoniya, abssess, flegmona, pielonefrit, sepsis va kaxeksiya (o‘ta ozish) kuzatiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "188"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kichik yoshdagi bolalarda va keksalarda kuyish kasalligi og‘irroq kechadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "188"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Kuyish kasalligi davrlari",
+        "nodes": [
+          "Kuyish shoki: 1 sutkagacha",
+          "Toksemiya: 1-2 hafta",
+          "Septikotoksemiya: 2-3 hafta–oy",
+          "Rekonvalessensiya: tuzalish"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nima uchun shok davrida is gazi va nafas yo‘llari kuyishi xavfni oshiradi? 2) Toksemiya davrida intoksikatsiya nimadan kelib chiqadi (kuyish sohasidagi oqsil parchalanishi mahsulotlarining qonga so‘rilishi)? Doskada chizish: to‘rt davrni o‘q bilan bog‘lab, har davrga muddat va asosiy belgini yozing. Tipik xato: shok davri 1 sutkagacha, ba’zan 2-3 sutkagacha cho‘zilishini va septikotoksemiya muddati oygacha borishini unutish; toksemiyani septikotoksemiya bilan aralashtirish (yiringlash faqat septikotoksemiyada)."
+    },
+    {
+      "title": "Alanga ta’sirining hayotiyligini aniqlash",
+      "bullets": [
+        {
+          "text": "Qurum peshona suyagi bo‘shlig‘i, qon tomirlar, leykotsitlar va jigar Kupfer hujayralarida ham topiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "189"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ko‘z olmalari odatda shikastlanmaydi; qovoq terisi yoyilganda kuygan va kuymagan joylar navbatlashadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "189"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Arterial tromblar, o‘pka yog‘ emboliyasi va pufaklarda oqsilning ikki baravar ko‘pligi ham tiriklik belgisi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "189"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Hayotiylik belgilari",
+        "nodes": [],
+        "header": [
+          "Belgi",
+          "Joyi",
+          "Ahamiyati"
+        ],
+        "rows": [
+          [
+            "Qurum",
+            "Nafas yo‘li, qizilo‘ngach, oshqozon",
+            "Alanga hayotda ta’sir qilgan"
+          ],
+          [
+            "Karboksigemoglobin",
+            "Yurak kameralari, chuqur qon tomirlar",
+            "Hayotda 60%gacha, keyin 20%dan oshmaydi"
+          ],
+          [
+            "Karboksimioglobin",
+            "Chuqur joylashgan mushaklar",
+            "Tiriklik belgisi, namuna chuqurdan olinadi"
+          ],
+          [
+            "“G‘oz panjasi”",
+            "Qovoq burmalari terisi",
+            "Burma tubi qurumsiz, yuqorisi qurumli"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 10 daq. Muhokama: 1) Nima uchun qon yurak kameralari va chuqur tomirlardan, mushak esa chuqur qatlamdan olinadi (yuzaki tomirda o‘limdan keyin ham 20%gacha bo‘lishi mumkin)? 2) Yong‘inda o‘lim sababi ko‘pincha nima (is gazi) va murda qachon ko‘mirlanadi? Doskada chizish: qovoq burmasi kesimi va “g‘oz panjasi” belgisini sxematik tasvirlang. Tipik xato: karboksigemoglobin topilishining o‘zini hayotiylik isboti deb hisoblash; foiz chegarasini (20% va 60%) farqlamaslik."
+    },
+    {
+      "title": "Voqea tahlili: yong‘indan topilgan murda",
+      "bullets": [
+        {
+          "text": "Vaziyat: yong‘indan so‘ng tana to‘liq ko‘mirlangan, qo‘l-oyoqlari bukilgan “bokser pozasi”da topildi. Poza namlik bug‘lanishi, oqsil ivishi va mushaklar kaltalashishidan hosil bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "190"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kalla ichida epidural gematoma aniqlandi. Savol: alanga o‘limdan oldin ta’sir qilganmi yoki keyinmi? Qaysi belgi va namunalarni tekshirasiz?",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "189"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yong‘in o‘limi ko‘pincha is gazidan zaharlanishdan bo‘ladi, murda esa o‘limdan so‘ng ko‘mirlanadi. Shuning uchun teri va ichki a’zolarning mikroskopik tekshiruvi zarur.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "190"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: travmadan kelgan epidural gematoma urchuqsimon va qattiq pardaga birikkan; o‘limdan keyingi alanga ta’siridagisi o‘roqsimon va birikmagan.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "190"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Bokser pozasi alanganing hayotiy ta’sirini isbotlaydimi? (yo‘q, bu o‘limdan keyingi mushak zichlashuvi natijasi). 2) Hayotiylikni isbotlash uchun qaysi belgilarni jamlaysiz (qurum, karboksigemoglobin, karboksimioglobin, g‘oz panjasi, gistologiya)? Doskada chizish: urchuqsimon va o‘roqsimon epidural gematomaning kesimdagi shaklini yonma-yon chizing. Tipik xato: bitta belgiga tayanib xulosa qilish; urchuqsimon va o‘roqsimon gematomani almashtirib yuborish."
+    },
+    {
+      "title": "Past harorat: omillar va sovuq qotish bosqichlari",
+      "bullets": [
+        {
+          "text": "Namlik, shamol, noto‘g‘ri kiyim, charchoq va mastlik sovuq qotishga moyillik yaratadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "191"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Go‘daklar termoregulyasiya to‘liq shakllanmagani va tana yuzasi nisbatan katta bo‘lgani uchun o‘ta sezgir.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "191"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sovuq suvda o‘lim 1–1,5 soatda; to‘satdan tushganda qon tomir kollapsi yoki shokdan ham bo‘lishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "191"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Sovuq qotish bosqichlari zanjiri",
+        "nodes": [
+          "Kompensatsiya: issiqlik ↑",
+          "Dekompensatsiya: harorat ↓",
+          "+30…+28°S: po‘stloq buziladi",
+          "+25…+22°S: yakuniy bosqich"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega alkogol mastligi sovuq qotish xavfini oshiradi (teri tomirlari kengayib, issiqlik ajralishi kuchayadi)? 2) Nega sovuq suvda o‘lim havodagiga nisbatan tezroq sodir bo‘ladi? Doskada: to‘rt tugunli bosqichlar zanjirini harorat qiymatlari bilan chizdiring. Tipik xato: kompensatsiya bosqichida tana harorati pasayadi deb o‘ylash; aslida bu bosqichda organizm haroratni normada ushlab turishga harakat qiladi."
+    },
+    {
+      "title": "Sovuq qotishning murdadagi tashqi belgilari",
+      "bullets": [
+        {
+          "text": "Diqqat: qor tagidagi muz qatlami spetsifik emas — sovub ulgurmagan murdada ham hosil bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "192"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kuchli mastlikda “sovuq qotgan odam pozasi” bo‘lmasligi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "192"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Musbat haroratda (+10°S gacha) dog‘lar ko‘kimtir-binafsha; manfiy haroratda pushti-qizg‘ish.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "192–193"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Tashqi belgilar jadvali",
+        "nodes": [],
+        "header": [
+          "Belgi",
+          "Ko‘rinishi"
+        ],
+        "rows": [
+          [
+            "Sovuq qotgan odam pozasi",
+            "Qo‘llar ko‘krakka, oyoqlar qoringa bukilgan"
+          ],
+          [
+            "Rayskiy belgilari",
+            "Og‘iz-burunda muz, qosh-kiprikda qirov"
+          ],
+          [
+            "Puparev belgisi",
+            "Moyak qisqargan, yorg‘oq tepaga tortilgan"
+          ],
+          [
+            "Dog‘lar rangi",
+            "Pushti-qizg‘ish, qonda kislorod ko‘p"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega bu poza tana yuzasidagi issiqlik ajralishini kamaytiradi? 2) Murda dog‘lari rangi haroratga qanday bog‘liq? Doskada: jadvalni ko‘chirib, har belgi yoniga muallif nomini yozdiring. Tipik xato: qor tagidagi muzni sovuq qotishning spetsifik belgisi deb hisoblash."
+    },
+    {
+      "title": "Sovuq qotishning ichki a’zolardagi belgilari",
+      "bullets": [
+        {
+          "text": "Qon tomir devori o‘tkazuvchanligi oshgani sababli ichki a’zolarda diapedez qon quyilishlar topiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "193"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Innervatsiya buzilib, silliq mushaklar falajlanadi va siydik qopi siydikka to‘lgan bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "193"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Vishnevskiy dog‘lari (oshqozon shilliq qavatida) 80–90% holatda uchraydi; tez o‘limda kam yoki yo‘q.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "193"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Ichki belgilar jadvali",
+        "nodes": [],
+        "header": [
+          "Belgi",
+          "Topilma"
+        ],
+        "rows": [
+          [
+            "To‘laqonlik, tus",
+            "A’zolar to‘laqon, to‘qimalar pushti-qizg‘ish"
+          ],
+          [
+            "Qon",
+            "Chap yurak, aortada laxtali qip-qizil qon"
+          ],
+          [
+            "Puxnarevich belgisi",
+            "Oshqozon bo‘sh, o‘lchami ancha kichik"
+          ],
+          [
+            "Fabrikantov belgisi",
+            "Buyrak jomida mayda qon quyilishlar"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 9 daq. Muhokama: 1) Nega Vishnevskiy dog‘lari kichik bolalarda ko‘pincha kuzatilmaydi (o‘lim tez sodir bo‘ladi)? 2) Qip-qizil qon laxtalarining chap yurakda topilishi nimani bildiradi (o‘lim sekin kechgan)? Doskada: jadvaldagi to‘rt belgini muallif nomi bilan juftlab yozdiring. Tipik xato: Puxnarevich (oshqozon) va Fabrikantov (buyrak jomi) belgilarini adashtirish."
+    },
+    {
+      "title": "Vishnevskiy dog‘lari: belgi va mexanizm",
+      "bullets": [
+        {
+          "text": "Oshqozon, ba’zan o‘n ikki barmoqli ichak shilliq qavatida diametri 0,5 sm gacha mayda qon quyilishlar bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "193"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sovuq qotishdan o‘lganlarning 80-90%ida uchraydi, o‘limdan 6-9 oy keyin ham aniqlanishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "193"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tez o‘limda dog‘lar kam yoki yo‘q, bolalarda ko‘pincha kuzatilmaydi; sekin o‘limda ko‘p bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "193-194"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Dog‘lar paydo bo‘lish zanjiri",
+        "nodes": [
+          "Past harorat ta’siri",
+          "Vegetativ nerv buzilishi",
+          "Qon tomir spazmi, diapedez",
+          "Gemorragik infarkt",
+          "Vishnevskiy dog‘lari"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 10 daq. Muhokama: 1) Nega tez o‘limda va bolalarda dog‘lar kam bo‘ladi? 2) Dog‘lar nega qo‘ng‘ir-jigar rang tusga kiradi (xlorid kislota ta’sirida nordon gematin hosil bo‘lishi)? Doskada: mexanizm zanjirini chizing va dog‘larning joylashuvini (burmalar tepasi, oshqozonning kirish qismi) belgilang. Tipik xato: dog‘lar yo‘qligidan sovuq qotishni butunlay inkor etish; tez o‘limda ular bo‘lmasligi mumkin."
+    },
+    {
+      "title": "Mikroskopiya, gistokimyo va muzlagan murda",
+      "bullets": [
+        {
+          "text": "Mikroskopiyada buyrak to‘g‘ri naychalari epiteliysining proliferatsiyasi va nekrobiotik o‘zgarishlari topiladi (Kasyanov belgisi).",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "194"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Jigar, oshqozon osti bezi, yurak va miyada glikogen, buyrak usti bezi po‘stlog‘ida lipoidlar yo‘qoladi. Juda tez o‘limda qand kamayadi, jigarda glikogen esa saqlanib qolishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "194"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kuchli mastlikda sovuq ta’sirida qonda alkogol kam, siydikda esa ko‘p bo‘lishi mumkin; sababi alkogolning kuchli utilizatsiyasi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "194"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Minus haroratda muzlagan murdada mayda yoriqlar paydo bo‘ladi, miya muzlashi kalla suyaklarini sindirishi mumkin. Tez eritish gemoliz va imbibitsiyani kuchaytiradi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "194-195"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Siydik va qondagi alkogol miqdori farqi ekspertiza xulosasiga qanday ta’sir qiladi? 2) Muzlashdan hosil bo‘lgan yoriqlarni hayotiy jarohatlardan nega farqlash kerak? Doskada: muzlagan murdani eritish bosqichlarini yozing (xona harorati; tezlatish uchun iliq havo yoki +50°S gacha issiq suv). Tipik xato: muzlash natijasidagi kalla suyaklari sinishini travma deb baholash."
+    },
+    {
+      "title": "Sovuq urish: darajalar va xususiyatlar",
+      "bullets": [
+        {
+          "text": "Yashirin davr — sovish vaqti; reaktiv davr isishdan so‘ng boshlanib, chuqurlikka qarab daraja ajratiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "195"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Repersussiya: bir tomon sovuq ursa, qarama-qarshi qo‘l yoki oyoqda ham o‘zgarish rivojlanishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "196"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "10%dan ortiq yuzaning III-IV, 15%dan ortiq III, 20%dan ortiq II daraja sovuq urishi hayot uchun xavfli.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "196"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Sovuq urish darajalari",
+        "nodes": [],
+        "header": [
+          "Daraja",
+          "Asosiy belgi",
+          "Tuzalish"
+        ],
+        "rows": [
+          [
+            "I",
+            "Qizg‘ish-ko‘kimtir, biroz shishgan teri",
+            "3-7 kunda o‘tadi"
+          ],
+          [
+            "II",
+            "Tiniq suyuqlikli pufaklar",
+            "10-20 kun, chandiqsiz"
+          ],
+          [
+            "III",
+            "Teri nekrozi, gemorragik pufaklar",
+            "1-2 oy, chandiq bilan"
+          ],
+          [
+            "IV",
+            "To‘qima va suyak nekrozi",
+            "Hafta-oylarda ajralib, cho‘ltoq qoladi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 10 daq. Muhokama: 1) Yashirin va reaktiv davr farqi nimada? 2) Repersussiya fenomeni jabrlangan tomonni baholashda qanday xatoga olib keladi? Doskada: jadvalni ko‘chiring va yoniga og‘irlik mezonlarini (10%, 15%, 20%) yozing. Tipik xato: tananing sovuq qotishi (umumiy ta’sir) bilan sovuq urishini (mahalliy ta’sir) aralashtirish; sovuq qotishdan o‘lganda murdada mahalliy sovuq urish belgilari odatda bo‘lmaydi."
+    },
+    {
+      "title": "Voqea tahlili: sovuq qotish va sovuq urish",
+      "bullets": [
+        {
+          "text": "Vaziyat: qishda ochiq joyda mast shaxs murdasi topildi, qo‘llari ko‘krakka, oyoqlari qorinka bukilgan. Savol: qaysi belgilar past harorat hayotiy ta’sir qilganini tasdiqlaydi?",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "192"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bukilgan “sovuq qotgan odam pozasi” hayotiy ta’sirdan dalolat beradi. Kuchli mast shaxslarda bu poza bo‘lmasligi mumkin, shuning uchun uning yo‘qligi ta’sirni inkor etmaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "192"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oshqozon shilliq qavatidagi mayda (0,5 sm gacha) qon quyilishlar, ya’ni Vishnevskiy dog‘lari, 80-90% holatda uchraydi. O‘lim tez bo‘lsa, ular kam yoki umuman bo‘lmasligi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "193"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kuchli mastlikda sovuq ta’sirida qonda alkogol past, siydikda esa baland bo‘lishi mumkin. Sababi organizmning alkogolni kuchli utilizatsiya qilishidir.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "194"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 8-10 daq. Muhokama: 1) Poza yo‘q bo‘lsa, sovuq qotishni butunlay inkor etish mumkinmi? 2) Qonda alkogolning pastligi mastlik bo‘lmaganini bildiradimi? Doskaga chizing: murdani ko‘zdan kechirish bosqichlari (poza, tashqi belgilar, ichki belgilar, laboratoriya). Tipik xato: qor tagidagi muz qatlamini past haroratning spetsifik belgisi deb olish. Manbaga ko‘ra bu belgi spetsifik emas, sovub ulgurmagan murda qorga qo‘yilganda ham hosil bo‘ladi (192-bet). Diqqat: Vishnevskiy dog‘larining yo‘qligi sovuq qotishni inkor etmaydi."
+    },
+    {
+      "title": "Elektrotravma: xususiyatlari va tok omillari",
+      "bullets": [
+        {
+          "text": "Elektrotravma jarohatlarning 1-2,5% ini tashkil etsa-da, nogironlik va o‘lim bo‘yicha etakchi o‘rinda turadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "196"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tokni maxsus asbobsiz aniqlab bo‘lmaydi; u kontakt, bilvosita yoki masofadan ta’sir qilishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "196"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ta’sir qisqa bo‘lsa ham, jarohat hajmi va og‘irligi o‘rtasida nomutanosiblik kuzatiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "197"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Tok omillari: xavfli va xavfsiz chegaralar",
+        "nodes": [],
+        "header": [
+          "Omil",
+          "Muhim ma’lumot"
+        ],
+        "rows": [
+          [
+            "Tok turi",
+            "500 V gacha o‘zgaruvchan tok xavfliroq"
+          ],
+          [
+            "Kuchlanish",
+            "24 V xavfsiz; o‘limlar ko‘pi 220-380 V"
+          ],
+          [
+            "Tok kuchi",
+            "50 mA xavfli; 100 mA da ko‘pincha o‘lim"
+          ],
+          [
+            "Chastota",
+            "40-60 gers o‘ta xavfli; 10000+ zararsiz"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega kuchlanishi 3000 V dan baland tokda o‘lim kamroq uchraydi (elektr yoyi, kirish sohasida kuyish, qarshilik ortishi)? 2) Nega yuqori chastotali tok fizioterapiyada qo‘llanadi? Doskaga chizing: jadvaldagi to‘rt omilni va ularning chegaralarini. Tipik xato: o‘zgaruvchan tok doim xavfliroq deb o‘ylash. Aslida 500 V da ikkala tokning xavfi tenglashadi, undan yuqorida o‘zgarmas tok xavfliroq. Tezkor savol: xavfsiz kuchlanishning xalqaro me’yori qancha?"
+    },
+    {
+      "title": "Organizm omillari va to‘qimalar qarshiligi",
+      "bullets": [
+        {
+          "text": "Bolalar, keksalar, homilador ayollar sezgirroq. Yurak, nerv, nafas kasalliklari, gipoksiya, mastlik va issiq urish organizm qarshiligini pasaytiradi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "198"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "“Diqqat omili”: tok ehtimolini kutish ehtiyotkorlikka, tok urganda esa manbadan tez uzilishga olib keladi. Elektromonterlarda elektrotravma kam uchrashi shu bilan izohlanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "198"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qarshilik oshib borishi: qon, shilliq qavat, jigar, buyrak, mushak, miya, o‘pka, boylam, tog‘ay, nerv, suyak, teri. Morfologik o‘zgarishlar asosan suyak va terida.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "198"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nam teri va terlash xavfni oshiradi, shuning uchun o‘lim yozda ko‘proq. Rezina, teri, shoyi qarshiligi katta; nam kiyim va metall bezaklar qarshilikni kamaytiradi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "198"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega elektrotravmada mavsumiylik kuzatiladi? 2) Nega tokning izlari asosan teri va suyakda topiladi? Doskaga chizing: to‘qimalar qarshiligi zanjirini (qondan teriga qarab ortib boradi). Tipik xato: terining qarshiligini doimiy deb hisoblash. Aslida u shox qavat qalinligi, namlik, terlash, ifloslanishga bog‘liq. Eslab qolish: qon eng yaxshi o‘tkazadi, teri eng ko‘p qarshilik qiladi."
+    },
+    {
+      "title": "Tok sirtmog‘i va qadam kuchlanishi",
+      "bullets": [
+        {
+          "text": "Tok yurak va bosh miya orqali o‘tsa xavfli: yuqori, chap, chap egri, chap to‘liq sirtmoqlar.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "199"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ikki qutbli yoki yerga ulangan holatda tok tarqaladi; izolyatsiyalangan bir qutbli ulanish odatda xavfsiz.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "199"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qadam kuchlanishi — 0,8 m oraliqdagi ikki nuqta potensiallari farqi; uzilgan sim yaqiniga 10 m dan yaqin bormang.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "200"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Qadam kuchlanishi zanjiri",
+        "nodes": [
+          "Uzilgan sim yerga tushadi",
+          "Yerda elektr krateri hosil bo‘ladi",
+          "Oyoqlar potensiali farq qiladi",
+          "Pastki sirtmoq, oyoq talvasasi",
+          "Yiqilish: to‘liq sirtmoq xavfi"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: nima uchun yurak va miya orqali o‘tadigan sirtmoqlar xavfli? Qadam kuchlanishida qurbon nega yiqilgandan keyin xavf ortadi? Doskada: elektr kraterini va undagi ikki nuqtani (0,8 m) chizdiring. Tipik xato: pastki sirtmoqni har doim xavfsiz deb hisoblash — xavf yiqilgandan so‘ng to‘liq sirtmoq paydo bo‘lganda ortadi."
+    },
+    {
+      "title": "Elektr tokining spetsifik va nospetsifik ta’siri",
+      "bullets": [
+        {
+          "text": "Umumiy ta’sirda hujayra elektr jarayonlari buziladi: qorinchalar fibrillyasiyasi, nafas buzilishi, shok.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "200"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Suyakda kalsiy fosfat erib qotib, 1–5 mm li ichi bo‘sh oq sharchalar — “marvarid marjonlari” hosil bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "201"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Terida metall zarrachalari impregnatsiyasi — kimyoviy ta’sir; mexanik ta’sir yuqori kuchlanishda ko‘p.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "201"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Ta’sir turlari",
+        "nodes": [],
+        "header": [
+          "Ta’sir",
+          "Mexanizm",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "Kimyoviy",
+            "Ion muvozanati va qutblanish buziladi",
+            "Anod: koagulyatsion, katod: kollikvatsion"
+          ],
+          [
+            "Termik",
+            "Tok issiqlikka aylanadi",
+            "Kuyish; suyakda marvarid marjonlari"
+          ],
+          [
+            "Mexanik",
+            "Skelet mushaklari talvasasi",
+            "Bo‘g‘im chiqishi, suyak siniqlari, yaralar"
+          ],
+          [
+            "Nospetsifik",
+            "Energiya tanadan tashqarida aylanadi",
+            "Kiyim alangasi, ko‘z kuyishi, yiqilish"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: spetsifik va nospetsifik ta’sirning asosiy farqi nimada? Elektr yoyi ko‘zga qanday ta’sir qiladi? Doskada: to‘rt qatorli jadvalni talabalar bilan birga to‘ldiring. Tipik xato: kiyim alangalanishidan kuyishni spetsifik ta’sir deb hisoblash — bu energiya tanadan tashqarida aylanganda hosil bo‘ladi (nospetsifik)."
+    },
+    {
+      "title": "Elektr tamg‘a va metallizatsiya",
+      "bullets": [
+        {
+          "text": "Tok kirish-chiqish joyida hosil bo‘ladi; dumaloq yoki oval, zich, chekkasi ko‘tarilgan, o‘rtasi kraterdek.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "201–202"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mikroskopda shox va yaltiroq qavatda bo‘shliqlar, hujayralar supurgisimon, metall zarrachalari uyasimon.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "202"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yupqa yoki nam terida tamg‘a hosil bo‘lmaydi; bu elektrotravmaning 10–20% ida bo‘lishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "202"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Metallizatsiya ranglari",
+        "nodes": [],
+        "header": [
+          "Metall",
+          "Tamg‘a rang tusi"
+        ],
+        "rows": [
+          [
+            "Mis",
+            "Havorang, yashil, sarg‘ish-jigarrang"
+          ],
+          [
+            "Temir",
+            "Sariq, jigarrang, qora"
+          ],
+          [
+            "Alyuminiy",
+            "Kulrang, sarg‘ish-jigarrang"
+          ],
+          [
+            "Qo‘rg‘oshin",
+            "Kulrang, qoramtir"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: tamg‘a rangi bo‘yicha o‘tkazgich metallini qanday aniqlash mumkin? Tamg‘a bo‘lmasa elektrotravmani inkor etish mumkinmi? Doskada: tamg‘aning kesimini (krater, ko‘tarilgan chekka) chizing. Eslatma: metall zarrachalarini rangli bosmalar, rentgenologik va emission spektrografiya usullari aniqlaydi. Tipik xato: tamg‘a yo‘qligini tok ta’sirining yo‘qligi deb hisoblash."
+    },
+    {
+      "title": "Elektr kuyish va o‘lim turlari",
+      "bullets": [
+        {
+          "text": "Elektr kuyish og‘riqsiz, atrofida yallig‘lanish yo‘q: sezuvchi nerv oxirlari buzilgan.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "203"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Haqiqiy yuza 2-3 haftada ayon bo‘ladi; keyin tomir arroziyasi ikkilamchi qon ketishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "203-204"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Soxta o‘lim (vita minima) ko‘p uchraydi: ishonchli belgi yo‘q bo‘lsa, reanimatsiya o‘tkaziladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "204"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Avdeev bo‘yicha 4 o‘lim turi",
+        "nodes": [
+          "1. O‘ta tez: darhol to‘xtash",
+          "2. Sekin: hayot alomatlari bor",
+          "3. Uzilgan: o‘ziga kelgach o‘lim",
+          "4. Kech: soatlar-sutkadan so‘ng"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Elektr kuyish nega og‘riqsiz bo‘ladi? 2) Nega dastlabki baho keyin o‘zgaradi? Doskada: 4 o‘lim turi zanjirini chizing, har biriga bittadan misol yozing. Tipik xato: uzilgan o‘limni sekin o‘lim bilan aralashtirish; uzilganda jabrlangan o‘ziga kelib, keyin vafot etadi. Diqqat: o‘ziga kelgan jabrlanganni kuzatuvsiz qoldirish xavfli."
+    },
+    {
+      "title": "Yashin urishi",
+      "bullets": [
+        {
+          "text": "Yashinning shikastlovchi omillari: elektr toki, yorug‘lik, tovush va zarb to‘lqini. U bevosita yoki bilvosita (telefon, televizor, radio) ta’sir qiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "205"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Terida qizil yoki pushti daraxtsimon “yashin figurasi” paydo bo‘ladi: tomirlar kengayadi, mayda qon quyilishlar bo‘ladi. Belgi beqaror, soatlar-sutkada yo‘qoladi, shuning uchun darhol suratga olinadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "205"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kiyimda kuyish va shikast bo‘ladi. Ba’zan tashqi kiyim butun, ichki kiyim yoki tana shikastlangan bo‘ladi; metall detallar va tangalar erishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "205"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tirik qolganlarda figura bir necha kun saqlanishi, simmetrik parez va falajlar rivojlanishi mumkin. Ba’zan tana va kiyimda jarohat umuman bo‘lmaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "205"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Yashin bilvosita qanday ta’sir qiladi? 2) Kiyim butun bo‘lsa, yashin urishini istisno qilish mumkinmi? Doskada: yashinning 4 ta shikastlovchi omilini diagramma shaklida chizing. Tipik xato: yashin figurasini terining qon quyilishi yoki elektr tamg‘a bilan bir xil deb o‘ylash; figura beqaror, tamg‘a esa kirish-chiqish joyida hosil bo‘ladi."
+    },
+    {
+      "title": "Voqea tahlili: elektrotravma va yashin",
+      "bullets": [
+        {
+          "text": "Vaziyat: uyda nam sharoitda murda topildi. Kaftda dumaloq, chekkasi ko‘tarilgan, markazi chuqur zich dog‘; atrofdagi teri o‘zgarmagan, bu elektr tamg‘aga mos.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "202"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Metallizatsiya tamg‘a rangini beradi: mis o‘tkazgichdan havorang-yashil, temirdan sariq-qora. Metall rangli bosma, rentgen va emission spektrografiya bilan aniqlanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "202"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nam teri tokka qulay sharoit yaratadi. Ishonchli o‘lim belgisi bo‘lmasa, soxta o‘lim ehtimoli bor: murda dog‘lari paydo bo‘lguncha reanimatsiya o‘tkaziladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "198, 204"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: yashin figurasi nima uchun darhol suratga olinadi? Javob: u beqaror belgi bo‘lib, bir necha soatdan, ba’zan sutkadan so‘ng yo‘qoladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "205"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Tamg‘a bo‘lmasa, elektrotravmani istisno qilish mumkinmi? 2) Hodisa joyida soxta o‘limni nega hisobga olish kerak? Doskada: tamg‘a belgilarini (shakli, chekkasi, markazi, atrofdagi teri) sxema qilib chizing. Tipik xato: nam yoki yupqa teridagi tamg‘asizlikni elektrotravma yo‘qligi deb baholash; bunday holatlar elektrotravmaning 10-20%ida bo‘lishi mumkin."
+    },
+    {
+      "title": "Yuqori bosim: barotravma va o‘pka shikastlanishi",
+      "bullets": [
+        {
+          "text": "Suv ostida atmosfera bosimiga gidrostatik bosim qo‘shiladi: 10 m da bosim 2 marta, 20 m da 3 marta ortadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "206"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Akvalangda ko‘tarilayotib 10 m chuqurlikda nafasni ushlash o‘pka ichi bosimini keskin oshiradi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "206–207"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bosim 80–100 mm Hg ustuniga keskin o‘zgarsa, o‘pka barotravmasi (bosim bilan bog‘liq shikast) rivojlanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "207"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Barotravmadan emboliyagacha",
+        "nodes": [
+          "Bosimning keskin o‘zgarishi",
+          "Bronx va alveolalar yorilishi",
+          "Havo kapillyarlarga o‘tadi",
+          "Arterial havo emboliyasi",
+          "Murdada suv ostida pufakchalar"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 12 daq. Muhokama: 1) Nega suv ostida olingan jarohat sezilmay qolishi mumkin? 2) Murdada o‘pka barotravmasini qanday isbotlaymiz (yurak va o‘pka tomirlarini bog‘lab, suvda havo yuborish)? Doskada zanjirni chizdiring. Diqqat: niqob yoki nafas naychasi bilan sho‘ng‘ishda o‘pka barotravmasi bo‘lmaydi, akvalangda esa bo‘ladi. Tipik xato: shu ikkisini aralashtirish."
+    },
+    {
+      "title": "G‘avvoslikdagi siqilish va gaz zaharlanishlari",
+      "bullets": [
+        {
+          "text": "Tananing siqilishi g‘avvoslarga xos: skafandr nosoz bo‘lsa, qon boshga intilib, yuz ko‘karadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "207–208"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Karbonat angidridi 3% va undan ko‘p bo‘lsa, hansirash, holsizlik, bosh og‘rig‘i va terlash kuzatiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "209"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Azot yog‘da qondan 5 barobar yaxshi eriydi; miyada mastlikka o‘xshash eyforiya paydo bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "209"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Kislorod bilan zaharlanish formalari",
+        "nodes": [],
+        "header": [
+          "Belgi",
+          "Neyrotoksik",
+          "O‘pka formasi"
+        ],
+        "rows": [
+          [
+            "Bosim (MPa — megapaskal)",
+            "2,5–3,0 va yuqori, qisqa vaqt",
+            "1,0–1,5, 2 soatdan ko‘p yoki takror"
+          ],
+          [
+            "Asosiy zarar",
+            "Miya: hush yo‘qolishi, talvasa",
+            "O‘pka kuyishi, pnevmoniya"
+          ],
+          [
+            "Murdada",
+            "Spetsifik o‘zgarish yo‘q",
+            "Spetsifik o‘zgarish yo‘q"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 12 daq. Muhokama: 1) Kislorod va karbonat angidridi zaharlanishi murdada nega faqat o‘lim tafsilotlari, klinika va boshqa sabablarning yo‘qligi bilan tashxislanadi? 2) Azot ta’siri nega tez qaytadi? Doskada jadvalni ko‘chirtiring. Tipik xato: neyrotoksik (o‘tkir) va o‘pka formasini bosim va muddat bo‘yicha almashtirish."
+    },
+    {
+      "title": "Dekompression kasallik va past bosim",
+      "bullets": [
+        {
+          "text": "Tez ko‘tarilganda qon va to‘qimadagi azot ajralib, erkin gaz pufaklari qon tomirlarini yopadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "209"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Murdada: o‘ng yurak va venalarda gazli laxtalar, teri osti emfizemasi, jigarda ko‘pikli suyuqlik.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "210"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Balandlik kasalligi — kislorod tanqisligi; 6 kilopaskalda (18000 m) to‘qima suyuqligi “qaynaydi”.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "210–211"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Kesson kasalligi zanjiri",
+        "nodes": [
+          "Chuqurdan tez ko‘tarilish",
+          "Bosim keskin pasayadi",
+          "Azot gaz pufaklariga aylanadi",
+          "Dekompression (kesson) kasallik",
+          "Murdada: qonda gaz pufaklari"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 12 daq. Muhokama: 1) Bosim sekin pasayganda gazlar nega xavf tug‘dirmaydi? 2) Tog‘da topilgan murdada o‘lim sabablarini yana nimalar tushuntirishi mumkin (yurak-qon tomir kasalligi, yashin, quyosh urishi, yiqilish)? Doskada zanjirni chizdiring. Tipik xato: dekompression kasallikni gipoksik balandlik kasalligi bilan bir deb o‘ylash; ikkalasida ham gaz emboliyasi belgilari uchrashi mumkin."
+    },
+    {
+      "title": "Voqea tahlili: bosim o‘zgarishi",
+      "bullets": [
+        {
+          "text": "Vaziyat: g‘avvos akvalang bilan suv yuzasiga ko‘tarilmoqda va 10 m chuqurlikda nafasini to‘xtatib qo‘ygan.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "207"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bunda o‘pkadagi havo hajmi oshadi, o‘pka ichidagi bosim keskin ko‘tariladi. Natijada o‘pka barotravmasi paydo bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "207"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘pka yorilsa, havo qon tomirga o‘tadi. Bosh miya arteriyalarining havo emboliyasi eng xavfli hisoblanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "207"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Murdada yurak va o‘pka qon tomirlari bog‘lanib suvga solinadi, o‘pkaga havo yuboriladi. Yorilgan joydan pufakchalar chiqadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "207"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega suv yuzasiga ko‘tarilishda nafasni to‘xtatish xavfli? 2) Murdada havo emboliyasi qanday tasdiqlanadi? Doskada chizing: suv sathi, 10 m chuqurlik, o‘pkadagi havo hajmi o‘zgarishi o‘qlari. Tipik xato: niqob yoki nafas naychasi bilan sho‘ng‘ishni akvalang bilan adashtirish. Naychada o‘pka barotravmasi rivojlanmaydi. Diqqat: xato qilish xavfi: eshitish va burun bo‘shliqlari barotravmasi o‘limga olib kelmaydi, o‘pka barotravmasi esa olib keladi.",
+      "focus_note": null
+    },
+    {
+      "title": "Radiatsiya: ta’sir mexanizmi va doza formalari",
+      "bullets": [
+        {
+          "text": "Neytron, gamma va rentgen nurlari chuqur o‘tadi. Alfa va beta zarrachalar o‘tuvchanligi past, kiyimda ushlanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "212"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ionlashtiruvchi nur suv radiolizi va DNK shikastini chaqiradi. Hujayra bo‘linishi so‘nadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "212"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Eng sezgir: suyak miya, teri, ichak, jinsiy bezlar. Suyak miya formasi 6 greydan yuqorida o‘limga olib keladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "212"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Doza va forma",
+        "nodes": [],
+        "header": [
+          "Doza",
+          "Forma"
+        ],
+        "rows": [
+          [
+            "10 greygacha",
+            "Suyak miya"
+          ],
+          [
+            "10-20 grey",
+            "Ichak"
+          ],
+          [
+            "20-80 grey",
+            "Toksemik (qon tomir)"
+          ],
+          [
+            "80 greydan katta",
+            "Serebral"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 10 daq. Muhokama: 1) Nega bo‘linishi tez to‘qimalar nurga sezgir? 2) Alfa va beta zarrachalar nega tashqi nurlanishda kam xavfli? Doskada chizing: dozalar bo‘yicha to‘rt formali shkala (1 grey = 100 rad). Tipik xato: o‘tuvchanlikni (neytron, gamma) zarracha turlari bilan (alfa, beta) adashtirish. Eslab qoling: doza ortgan sari shikast suyak miyadan miyagacha ‘ko‘tariladi‘.",
+      "focus_note": null
+    },
+    {
+      "title": "O‘tkir nur kasalligi va murdadagi o‘zgarishlar",
+      "bullets": [
+        {
+          "text": "Birlamchi reaksiya: ko‘ngil aynishi, qusish, holsizlik. Latent davr 2-4 hafta, sochlar to‘kila boshlaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "213"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yaqqol davrda o‘lim: ko‘plab qon quyilishlar, suyak miya, limfa tugunlari va taloqda destruktiv o‘zgarishlar.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "213"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Jinsiy bezlar: yorg‘oq kichrayadi, tuxumdonda follikullar atrofiyaga uchraydi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "214"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "O‘tkir nur kasalligi",
+        "nodes": [
+          "Birlamchi reaksiya (3-4 sutka)",
+          "Latent davr (2-4 hafta)",
+          "Yaqqol klinik davr",
+          "Qon quyilish, infeksiya",
+          "O‘lim: 4-hafta oxiri"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 10 daq. Muhokama: 1) Nega dastlabki soatlardagi o‘limda faqat tez o‘lim belgilari topiladi? 2) Infeksion asoratlar qanday ko‘rinishda bo‘ladi? Doskada chizing: uch davr vaqt chizig‘i. Tipik xato: latent davrni tuzalish deb o‘ylash. Ahvol faqat yaxshilangandek bo‘ladi. Eslatma: 50 grey dozada o‘lim odatda ikki sutkada, 150 greydan katta dozada darhol sodir bo‘ladi.",
+      "focus_note": null
+    },
+    {
+      "title": "Surunkali, mahalliy nur shikastlanishi va ekspertiza",
+      "bullets": [
+        {
+          "text": "Surunkali nur kasalligi kichik dozalar takror ta’sir etganda rivojlanadi: qon hosil bo‘lishi buziladi, qon ketish kuchayadi. O‘lim ko‘pincha infeksiyadan, ko‘pincha leykoz qo‘shiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "214"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nur kuyishlari termik kuyishga o‘xshaydi; neytron, gamma va rentgen nurlari mushak, suyak, ichki a’zolarni ham shikastlaydi. Nur yaralari uzoq bitmaydi, yiringlash va o‘sma xavfi bor.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "214"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ekspertiza vazifalari: shikastlovchi omil turi, manbaning fizik xususiyatlari, doza, ta’sir necha marta va qachon bo‘lgani, tan jarohatining og‘irlik darajasi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "214"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hal etishda voqea tafsiloti, mehnat sharoiti, manbaning texnik xususiyatlari, dispanser hujjatlari, radiometriya va murdaning makro-, mikroskopik tekshiruvi ishlatiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "215"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega nur yarasi termik kuyishdan uzoq bitadi? 2) Ekspertiza vazifalarini hal etishda qaysi hujjatlar kerak? Doskada: ekspertizaning 5 vazifasini ro‘yxat qilib yozdiring. Tipik xato: surunkali kasallikni o‘tkir formadagi davrlar (birlamchi reaksiya, latent davr) bilan aralashtirish."
+    },
+    {
+      "title": "Voqea tahlili: nurlanish bilan bog‘liq o‘lim",
+      "bullets": [
+        {
+          "text": "Vaziyat A: nurlanishdan keyingi dastlabki soatlarda o‘lim. Murdada faqat tez sodir bo‘lgan o‘limga xos belgilar kutiladi, nur kasalligiga xos o‘zgarishlar hali yo‘q.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "213"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Vaziyat B: yaqqol klinik belgilar davrida o‘lim. Ko‘p qon quyilish, suyak miya, limfa tugunlari, taloqda destruksiya, pnevmoniya, peritonit, sepsis kutiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "213"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Doza va forma: 10 greygacha suyak miya, 10-20 ichak, 20-80 toksemik, 80 dan yuqori serebral forma. Suyak miya formasi 6 greydan yuqorida o‘limga olib keladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "212"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: bir martalik 50 grey dozada o‘lim qachon kutiladi, 150 greydan yuqorida-chi? Javob: odatda dastlabki ikki sutkada; 150 dan yuqorida miya markazlari falajidan darhol.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "213"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) A va B vaziyatlarda murda tekshiruvi qanday farq qiladi? 2) 50 grey qaysi formaga to‘g‘ri keladi? Doskada: doza (grey) bo‘yicha to‘rt formani shkala ko‘rinishida chizdiring. Tipik xato: dastlabki soatlardagi o‘limda ham spetsifik nur belgilarini kutish."
+    },
+    {
+      "title": "Xulosa: fizik omillar ekspertizasi bo‘yicha asosiy nuqtalar",
+      "bullets": [
+        {
+          "text": "Alanga hayotiy ta’sirida nafas yo‘llari, qizilo‘ngach, oshqozonda qurum bo‘ladi. Diqqat: karboksigemoglobin o‘limdan keyin ham topiladi, lekin 20% dan oshmaydi; hayotda 60% gacha.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "189"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sovuq qotishda “sovuq qotgan odam pozasi” va oshqozon shilliq qavatida Vishnevskiy dog‘lari. Diqqat: tez o‘limda dog‘lar kam yoki yo‘q, bolalarda ko‘pincha bo‘lmaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "192-193"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Elektrotravmada tok kirish-chiqish joyida elektr tamg‘a hosil bo‘ladi; soxta o‘limda reanimatsiya o‘tkaziladi. “Yashin figurasi” tez yo‘qoladi, darhol suratga olinadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "201, 204, 205"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘pka barotravmasida o‘pka, yurak, bosh miya tomirlarida havo emboliyasi topilishi uni tasdiqlaydi. Nur shikastlanishining og‘irligi avvalo dozaga bog‘liq.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "207, 212"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 8 daq. Yakuniy savollar: 1) Alanganing hayotiy ta’sirini qaysi belgilar isbotlaydi? 2) Sovuq qotishni qaysi belgilar tasdiqlaydi? 3) Elektr tamg‘a yo‘q bo‘lishi mumkinmi? Mustaqil ish: har bir omil (harorat, elektr, bosim, radiatsiya) uchun hayotiy ta’sir belgilari jadvalini tuzing. Doskada: bitta omilni tanlab, “belgi - nimani bildiradi” sxemasini chizdiring. Tipik xato: o‘limdan keyingi ta’sir belgilarini (karboksigemoglobin, qor ostidagi muz) hayotiy ta’sir deb baholash."
+    }
+  ],
+  "mcq": [
+    {
+      "question": "Tanadagi ortiqcha issiqlikning eng katta qismi qaysi yo‘l bilan tashqariga chiqariladi?",
+      "options": [
+        "O‘tkazish orqali ajralish yo‘li",
+        "Ter bilan ajralish yo‘li",
+        "Nurlanish orqali ajralish yo‘li",
+        "Turli ajratmalar bilan ajralish"
+      ],
+      "correct_index": 2,
+      "explanation": "Issiqlikning 55% nurlanish orqali chiqadi. Ter bilan 27%, o‘tkazish bilan 15%, turli ajratmalar bilan 3% ajraladi. Shu sababli nurlanish eng katta ulushni tashkil etadi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "183"
+      }
+    },
+    {
+      "question": "Issiq sexda og‘ir ishlagan, issiqqa o‘rganmagan ishchi birdan hushini yo‘qotib, komaga tushdi va qisqa muddatda vafot etdi. Bu qaysi holat?",
+      "options": [
+        "Issiq urishning o‘tkir shakli",
+        "Issiq urishning uzaytirilgan shakli",
+        "Quyosh urishi (insolyatsiya) holati",
+        "Kuyish kasalligining shok davri"
+      ],
+      "correct_index": 0,
+      "explanation": "O‘rganmagan organizmda o‘ta baland harorat ta’sirida o‘tkir shakl rivojlanadi: birdan hush yo‘qoladi, koma boshlanadi va qisqa muddatda o‘lim sodir bo‘ladi. Uzaytirilgan shaklda belgilar sekin-asta kuchayadi va uch davr o‘tadi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "183-184"
+      }
+    },
+    {
+      "question": "Dalada bosh kiyimsiz ishlagan odamda bosh og‘rig‘i, ko‘rishning buzilishi, gallyusinatsiya va talvasa kuzatildi. Tana harorati salmoqli ko‘tarilmagan. Bu qaysi holat?",
+      "options": [
+        "Issiq urishning holsizlik davri",
+        "Termik kuyishning I darajasi",
+        "Issiq urishning o‘tkir shakli",
+        "Quyosh urishi (insolyatsiya) holati"
+      ],
+      "correct_index": 3,
+      "explanation": "Quyosh urishi uzoq vaqt quyosh nurlarining boshga ta’siridan kelib chiqadi va MNT (markaziy nerv tizimi) faoliyati buziladi. Uning uchun tana haroratining salmoqli ko‘tarilishi xos emas. Issiq urishning holsizlik davrida esa harorat 41-42°S dan ham oshishi mumkin.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "184"
+      }
+    },
+    {
+      "question": "Yong‘in joyida topilgan jabrlanganda soch va kiyim shikastlangan, kuyish yaralari tilsimon shaklda, yaralarda qurum izlari bor. Kuyish manbai qaysi?",
+      "options": [
+        "Qaynoq suyuqlik ta’siri",
+        "Ochiq alanga ta’siri",
+        "Qaynoq bug‘ ta’siri",
+        "Qizdirilgan jism ta’siri"
+      ],
+      "correct_index": 1,
+      "explanation": "Alangadan kuyishda soch va kiyim shikastlanadi, yaralar tilsimon shaklda bo‘ladi va qurum izlari topiladi. Issiq suyuqlikda esa soch va kiyim shikastlanmaydi, jarohatlar oqmalar shaklida bo‘ladi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "186"
+      }
+    },
+    {
+      "question": "Jabrlanganning faqat tananing old yuzasi to‘liq kuygan. “To‘qqizliklar qoidasi” bo‘yicha kuyish maydoni qancha?",
+      "options": [
+        "Tana yuzasining 9% i",
+        "Tana yuzasining 1% i",
+        "Tana yuzasining 18% i",
+        "Tana yuzasining 36% i"
+      ],
+      "correct_index": 2,
+      "explanation": "To‘qqizliklar qoidasiga ko‘ra tananing old yuzasi 18%, orqa yuzasi ham 18% ni egallaydi. Bosh va bo‘yin, qo‘l, son, boldir va tovon esa 9% dan, oraliq soha 1% ni tashkil etadi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "187"
+      }
+    },
+    {
+      "question": "Kuyishdan keyin 1–2 hafta o‘tdi: kuyish sohalaridagi oqsil parchalanishidan hosil moddalar qonga so‘rilib, intoksikatsiya yuz bermoqda. Bu kuyish kasalligining qaysi davri?",
+      "options": [
+        "Kuyish shoki davri",
+        "Septikotoksemiya davri",
+        "Kuyish toksemiyasi davri",
+        "Rekonvalessensiya davri"
+      ],
+      "correct_index": 2,
+      "explanation": "Toksemiya davrida kuyish sohalaridagi oqsil moddalar parchalanadi, hosil bo‘lgan moddalar qonga so‘riladi va intoksikatsiya yuzaga keladi. Davr 1–2 hafta davom etadi. Shok davri odatda bir sutkagacha, septikotoksemiya esa yiringlash va asoratlar bilan bog‘liq.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "188"
+      }
+    },
+    {
+      "question": "Yong‘indan keyin topilgan murdada nafas yo‘llari, qizilo‘ngach va oshqozonda qurum aniqlandi. Bu nimadan dalolat beradi?",
+      "options": [
+        "Alanga ta’siri o‘limdan keyin bo‘lganidan",
+        "Alanga hayot paytida ta’sir qilganidan",
+        "Murda qizdirilgan jism bilan tegganidan",
+        "Epidural gematoma o‘roqsimon ekanidan"
+      ],
+      "correct_index": 1,
+      "explanation": "Nafas yo‘llari, qizilo‘ngach va oshqozonda qurum bo‘lishi alanga hayot paytida ta’sir qilganini ko‘rsatadi. Qurum o‘limdan keyin shu a’zolarga tushmaydi, chunki nafas olish to‘xtagan bo‘ladi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "189"
+      }
+    },
+    {
+      "question": "S.M.Vishnevskiy dog‘lari sovuq qotishdan o‘lim holatlarining taxminan qancha qismida kuzatiladi?",
+      "options": [
+        "80–90% holatda",
+        "50–60% holatda",
+        "20–30% holatda",
+        "Barcha holatda"
+      ],
+      "correct_index": 0,
+      "explanation": "Oshqozon shilliq qavatidagi mayda qon quyilishlar (Vishnevskiy dog‘lari) sovuq qotishdan o‘lim holatlarining 80–90%ida uchraydi. Ular har doim bo‘lavermaydi: o‘lim tez sodir bo‘lganda ular juda kam bo‘lishi yoki umuman bo‘lmasligi mumkin.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "193"
+      }
+    },
+    {
+      "question": "Sovuq qotish manfiy haroratli sharoitda sodir bo‘lgan. Murdada murda dog‘lari qanday rangda bo‘ladi?",
+      "options": [
+        "Ko‘kimtir-binafsha rangda",
+        "Qora-yashil rangda",
+        "Sarg‘ish-kulrang rangda",
+        "Pushti-qizg‘ish rangda"
+      ],
+      "correct_index": 3,
+      "explanation": "Qonda kislorod ko‘p bo‘lgani uchun murda dog‘lari pushti-qizg‘ish bo‘ladi. Musbat haroratda (+10°S gacha) to‘qimalar kislorodni o‘zlashtirib ulguradi va dog‘lar ko‘kimtir-binafsha tusda bo‘ladi. Manfiy haroratda bu holat kuzatilmaydi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "192–193"
+      }
+    },
+    {
+      "question": "Bemorning bitta qo‘lini sovuq urdi. Keyin sovuq urishga xos o‘zgarishlar sovuq ta’sir qilmagan qarama-qarshi qo‘lda ham rivojlandi. Bu holat qanday nomlanadi?",
+      "options": [
+        "Puparev belgisi",
+        "Kasyanov belgisi",
+        "Reperkussiya fenomeni",
+        "Vishnevskiy belgisi"
+      ],
+      "correct_index": 2,
+      "explanation": "Sovuq urishda o‘zgarishlar sovuq ta’sir qilmagan qarama-qarshi qo‘l yoki oyoqda ham rivojlansa, bu reperkussiya fenomeni deyiladi. Puparev, Kasyanov va Vishnevskiy belgilari boshqa o‘zgarishlarni ifodalaydi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "196"
+      }
+    },
+    {
+      "question": "Sovuq qotishdan o‘lgan odam murdasida oshqozon shilliq qavati burmalarining tepasida diametri 0,5 sm gacha mayda qon quyilishlar topildi. Ular pichoq orqasi bilan oson olinadi. Bu qaysi belgi?",
+      "options": [
+        "M.I.Rayskiy belgilari",
+        "S.M.Vishnevskiy dog‘lari",
+        "K.V.Puparev belgisi",
+        "P.A.Fabrikantov belgisi"
+      ],
+      "correct_index": 1,
+      "explanation": "Oshqozon (ba’zan o‘n ikki barmoqli ichak) shilliq qavatidagi mayda qon quyilishlar Vishnevskiy dog‘lari deyiladi. Ular sovuq qotishdan o‘lim holatlarining 80-90 foizida uchraydi. Rayskiy belgilari – og‘iz va burun atrofidagi muz sumalaklari hamda qosh va kipriklardagi qirov. Puparev belgisi – moyakning qisqarishi. Fabrikantov belgisi – buyrak jomlaridagi qon quyilishlar.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "193"
+      }
+    },
+    {
+      "question": "Korxonada kuchlanishi 380 volt bo‘lgan o‘zgaruvchan tok bilan elektrotravma ro‘y berdi. Kuchlanish 500 voltdan past bo‘lsa, qaysi tok turi xavfliroq hisoblanadi?",
+      "options": [
+        "O‘zgaruvchan tok xavfliroq bo‘ladi",
+        "O‘zgarmas tok xavfliroq bo‘ladi",
+        "Ikkala tok turi bir xil xavfli",
+        "Xavfni faqat tok chastotasi hal qiladi"
+      ],
+      "correct_index": 0,
+      "explanation": "Kuchlanish 500 voltgacha bo‘lganda o‘zgaruvchan tok o‘zgarmasdan xavfliroq. 500 voltda ikkalasining xavfi tenglashadi, undan yuqorida esa o‘zgarmas tok xavfliroq bo‘ladi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "197"
+      }
+    },
+    {
+      "question": "Elektrotravmadan o‘lgan jabrlanganda tok kirgan joyda o‘zgarishlar asosan suyak va terida aniqlandi. Buning sababi nima?",
+      "options": [
+        "Bu to‘qimalarda o‘tkazuvchanlik eng baland",
+        "Bu to‘qimalar qonga eng boy bo‘lgani uchun",
+        "Bu to‘qimalar tokni umuman o‘tkazmagani uchun",
+        "Bu to‘qimalarning tokka qarshiligi katta"
+      ],
+      "correct_index": 3,
+      "explanation": "Elektr toki o‘tkazuvchanligi baland, qarshiligi kichik to‘qimalardan o‘tadi. Qarshilik qatorida suyak va teri oxirida turadi. Shuning uchun elektrotravmaga xos morfologik o‘zgarishlar asosan shu to‘qimalarda hosil bo‘ladi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "198"
+      }
+    },
+    {
+      "question": "Yuqori kuchlanishli sim yerga uzilib tushgan joyda “qadam kuchlanishi” hosil bo‘ladi. Pastki tok sirtmog‘i hayot uchun xavfsiz bo‘lsa ham, qachon hayotga xavf tug‘iladi?",
+      "options": [
+        "Qadam uzunligi 0,8 m dan kam bo‘lganda",
+        "Tok faqat oyoqlardan o‘tib turganda",
+        "Jabrlangan talvasadan yiqilib, to‘liq sirtmoq hosil bo‘lganda",
+        "Jabrlangan yerdan izolyatsiya qilingan bo‘lganda"
+      ],
+      "correct_index": 2,
+      "explanation": "Pastki tok sirtmog‘i hayot uchun xavf tug‘dirmaydi. Lekin oyoq mushaklari talvasasi tufayli jabrlangan yiqilsa, to‘liq tok sirtmog‘i vujudga keladi va xavf paydo bo‘ladi. Shu sababli uzilgan simga 10 m dan kam masofada yaqinlashmaslik kerak.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "200"
+      }
+    },
+    {
+      "question": "Qo‘l kaftidagi dumaloq elektr tamg‘aning markazi chuqur, chekkalari ko‘tarilgan, rangi havorang-yashil. Qaysi metalldan yasalgan o‘tkazgich tegilgan bo‘lishi mumkin?",
+      "options": [
+        "Temir o‘tkazgich",
+        "Mis o‘tkazgich",
+        "Alyuminiy o‘tkazgich",
+        "Qo‘rg‘oshin o‘tkazgich"
+      ],
+      "correct_index": 1,
+      "explanation": "Metallizatsiya tamg‘aga metallga xos tus beradi. Mis o‘tkazgichdan havorang, yashil yoki sarg‘ish-jigarrang tus hosil bo‘ladi. Temirdan sariq, jigarrang, qora tus; alyuminiydan kulrang, sarg‘ish-jigarrang tus; qo‘rg‘oshindan kulrang, qoramtir tus hosil bo‘ladi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "202"
+      }
+    },
+    {
+      "question": "Akvalangli g‘avvos suv yuzasiga ko‘tarilayotib, 10 m chuqurlikda nafasini ushlab qoldi. Unda eng ehtimoliy shikastlanish qaysi?",
+      "options": [
+        "Nog‘ora pardaning alohida yorilishi",
+        "O‘pkaning barotravmasi",
+        "Azotning narkotik ta’siri",
+        "Karbonat angidridi bilan zaharlanish"
+      ],
+      "correct_index": 1,
+      "explanation": "Ko‘tarilishda nafas ushlansa, o‘pkadagi havo hajmi oshadi va o‘pka ichi bosimi keskin ko‘tariladi. Natijada o‘pkaning barotravmasi yuz beradi. Quloq barotravmasi esa odatda o‘pka shikasti bilan birga uchraydi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "207"
+      }
+    },
+    {
+      "question": "Suv ostidan tez ko‘tarilgan g‘avvos murdasida yurakning o‘ng kameralarida mayda gaz pufaklari bor qon laxtalari topildi. Eng ehtimoliy tashxis qaysi?",
+      "options": [
+        "Kislorodning o‘pka formasi bilan zaharlanish",
+        "Tananing siqilishi (kompression asfiksiya)",
+        "Ikki tomonlama pnevmotoraksdan o‘lim",
+        "Dekompression (kesson) kasallik"
+      ],
+      "correct_index": 3,
+      "explanation": "Tez ko‘tarilganda qon va to‘qimalarda erigan azot erkin gaz pufaklariga aylanadi. Murdada o‘ng yurak kameralari va venalarda gaz pufakli laxtalar, teri osti emfizemasi topiladi. Bu dekompression kasallikka xos.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "210"
+      }
+    },
+    {
+      "question": "G‘avvos skafandri shikastlanib, shlem ostida bosim keskin pasaygan. Murdada bosh kattalashgan, yuz ko‘kargan, o‘mrov suyagi pastki chekkasi bo‘ylab simmetrik qon quyilishlar bor. Bu qaysi holat?",
+      "options": [
+        "Tananing siqilishi (skafandr travmasi)",
+        "Azot bilan zaharlanish",
+        "Kislorodning neyrotoksik formasi",
+        "Balandlik (tog‘) kasalligi"
+      ],
+      "correct_index": 0,
+      "explanation": "Skafandr shikastlanganda shlem ostida bosim pasayadi va qon boshga intiladi. Bosh kattalashadi, yuz ko‘karadi, shlem chekkasiga mos simmetrik qon quyilishlar paydo bo‘ladi. Bular g‘avvoslarga xos tananing siqilishi belgilari.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "208"
+      }
+    },
+    {
+      "question": "Jabrlanganda nurlanishdan so‘ng dastlab ko‘ngil aynishi va qusish bo‘lgan. Keyin 2–4 hafta ahvol yaxshilangandek bo‘lib, sochlari to‘kila boshladi. Bu o‘tkir nur kasalligining qaysi davri?",
+      "options": [
+        "Umumiy birlamchi reaksiya davri",
+        "Yaqqol klinik belgilar davri",
+        "Latent davr",
+        "Predagonal davr"
+      ],
+      "correct_index": 2,
+      "explanation": "Latent davr 2–4 hafta davom etadi. Umumiy ahvol yaxshilangandek tuyuladi, ammo sochlar to‘kilib, qondagi hujayralar soni kamayadi. Birlamchi reaksiya esa dastlabki soatlarda boshlanib 3–4 sutkagacha davom etadi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "213"
+      }
+    },
+    {
+      "question": "Nurlanish dozasi 10–20 grey bo‘lganda qaysi klinik forma rivojlanadi?",
+      "options": [
+        "Suyak miya formasi",
+        "Ichak formasi",
+        "Toksemik (qon tomir) forma",
+        "Serebral forma"
+      ],
+      "correct_index": 1,
+      "explanation": "Doza 10 greygacha bo‘lsa suyak miya formasi, 10–20 grey bo‘lsa ichak formasi rivojlanadi. 20–80 greyda toksemik forma, 80 greydan katta dozada esa serebral forma kuzatiladi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "212"
+      }
+    }
+  ],
+  "extras": [
+    {
+      "text": "Eslab qoling: sovuq qotishda “oshqozon” belgisini izlang. S.M.Vishnevskiy dog‘lari, ya’ni oshqozon shilliq qavatidagi mayda qon quyilishlar, bu o‘limlarning 80-90%ida uchraydi. Ular o‘limdan 6-9 oy o‘tgach ham aniqlanishi mumkin.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "193"
+      }
+    },
+    {
+      "text": "Qiziqarli belgi: “g‘oz panjasi”. Alanga tirik odamga ta’sir qilganda qovoq terisining burmalar tubida kuyish va qurum bo‘lmaydi. Teri yoyilganda shikastlangan va shikastlanmagan sohalar navbatma-navbat ko‘rinadi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "189"
+      }
+    },
+    {
+      "text": "Hodisa tahlili: yong‘indan keyin topilgan murdada epidural gematoma bor. Urchuqsimon va qattiq pardaga birikkan bo‘lsa, travmadan hosil bo‘lgan. O‘roqsimon va birikmagan bo‘lsa, o‘limdan keyin alanga ta’sirida paydo bo‘lgan.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "190"
+      }
+    },
+    {
+      "text": "Amaliy maslahat: “yashin figurasi” terida qizil yoki pushti daraxtsimon shakl ko‘rinishida bo‘ladi. U bir necha soatdan sutkagacha yo‘qolishi mumkin, shuning uchun murdada uni darhol suratga olish kerak.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "205"
+      }
+    },
+    {
+      "text": "Eslab qolish usuli: “to‘qqizliklar qoidasi”. Bosh va bo‘yin 9%, tananing old yuzasi 18%, orqa yuzasi 18%, oraliq soha 1%. Qo‘l kafti esa taxminan 1%. Bu raqamlar kuyish maydonini tez baholashga yordam beradi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "187"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "year": 2018,
+      "pages": "Bob 7. Fizik omillar ta'siri"
+    }
+  ]
+}

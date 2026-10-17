@@ -1,0 +1,2088 @@
+{
+  "topic": "Genetik muhandislik texnologiyalarini qo‘llashda axloqiy masalalar: genetik usullar, implantatsiyadan oldingi va prenatal diagnostika, evgenika, Inson genomi va inson huquqlari deklaratsiyasi (A8)",
+  "slides": [
+    {
+      "title": "Kirish: mavzu va ma’ruza rejasi",
+      "bullets": [
+        {
+          "text": "Genetika yutuqlari tez rivojlanmoqda, ammo ularni amalda qo‘llash oqibatlari noaniq yoki xavfli bo‘lishi mumkin.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ma’ruza bo‘limlari: xalqaro hujjatlar, genom va patent, genetik ma’lumotlar, evgenika.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-4-bo‘limlar"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Implantatsiyadan oldingi va prenatal diagnostika manbada alohida yo‘q; faqat genetik testlar doirasida ko‘riladi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": true
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Ma’ruza rejasi",
+        "nodes": [
+          "Xalqaro hujjatlar",
+          "Genom va patent",
+          "Genetik ma’lumotlar",
+          "Evgenika"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega genetika yutuqlari axloqiy savollar tug‘diradi? 2) Genom kimning mulki? Doskada: ma’ruza rejasini 4 bosqichli zanjir ko‘rinishida chizdiring. Tipik xato: prenatal va implantatsiyadan oldingi diagnostika manbada batafsil berilgan deb o‘ylash; bu qismni o‘qituvchi qo‘shimcha manbadan to‘ldirishi kerak."
+    },
+    {
+      "title": "XX asr ikkinchi yarmi: genomika va proteomika",
+      "bullets": [
+        {
+          "text": "Asrning ikkinchi yarmida fundamental tibbiyot-biologiya fanlari jadal rivojlandi, inson genomi tuzilishini o‘rganish deyarli yakunlandi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Genetikaning yangi sohalari — genomika va proteomika kashf etildi, tegishli ma’lumotlar banklari tashkil qilindi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Irsiy farmakologiya vujudga keldi; sun’iy vaksinalar muvaffaqiyatli ishlab chiqilmoqda.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: genomika ≠ proteomika. Bular genetikaning ikkita alohida yangi sohasi sifatida tilga olingan.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Ma’lumotlar banklari nima uchun axloqiy masala bo‘lishi mumkin? 2) Irsiy farmakologiya tibbiyotga qanday ta’sir qiladi? Doskada: yangi sohalarni (genomika, proteomika, irsiy farmakologiya) ro‘yxat qilib yozing. Tipik xato: genomika va proteomikani bir xil tushuncha deb qabul qilish."
+    },
+    {
+      "title": "Yangi texnologiyalar: noaniqlik va xavf",
+      "bullets": [
+        {
+          "text": "Ko‘plab yangi texnologiyalar bilan ularni qo‘llash oqibatlarining noaniqligi yoki joriy etishning aniq xavfliligi bog‘liq.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Evgenikaning genetikaga asoslangan zamonaviy yo‘nalishi — maqbul xossali odamlarni sun’iy yetishtirish — ijtimoiy jihatdan juda xavfli.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "1980-yillar oxirida Yevropa Kengashi salbiy oqibatlar xavfi real bo‘lgani uchun umumevropa ahamiyatidagi hujjat yaratishga qaror qildi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "1993-yilda Yevropa Kengashi Bosh assambleyasi inson huquqlari va qadr-qimmatini himoya qiluvchi Konvensiyani qabul qildi; matn 1996-yil noyabrda tasdiqlandi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun texnologiya oqibatlari noaniq bo‘lsa, huquqiy hujjat kerak? 2) Odamlarni sun’iy ‘yetishtirish’ nega xavfli? Doskada: ‘texnologiya → noaniq oqibat → xalqaro hujjat’ zanjirini chizdiring. Tipik xato: Konvensiya qabul qilingan yil (1993) va matn tasdiqlangan sanani (1996-yil noyabr) aralashtirish."
+    },
+    {
+      "title": "Yevropa Kengashi konvensiyasi: vaqt chizig‘i",
+      "bullets": [
+        {
+          "text": "80-yillar oxirida salbiy oqibatlar xavfi real edi; Yevropa Kengashi umumyevropa hujjatini yaratishga qaror qildi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "1993 yilda Bosh assambleya inson huquqi va qadr-qimmatini himoya qiluvchi konvensiyani qabul qildi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Jiddiy o‘zgartirishlardan so‘ng matn 1996 yil noyabrda Parlament assambleyasi majlisida tasdiqlandi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Konvensiya yo‘li",
+        "nodes": [
+          "80-yillar oxiri: qaror",
+          "1993: Bosh assambleya qabuli",
+          "Matnga jiddiy o‘zgartirishlar",
+          "1996-noyabr: matn tasdiqlandi"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: nega hujjat aynan tibbiyot va biologiya jadal rivojlangan paytda zarur bo‘ldi? Salbiy oqibatlar xavfi nimani anglatadi? Doskada: 4 bosqichli vaqt chizig‘ini chizdiring. Tipik xato: 1993 yil (Bosh assambleya qabuli) va 1996 yil (o‘zgartirilgan matn tasdig‘i)ni aralashtirish."
+    },
+    {
+      "title": "UNESCO Umumiy deklaratsiyasi: qabul qilinish tarixi",
+      "bullets": [
+        {
+          "text": "1997 yil 11 noyabrda UNESCO Bosh konferensiyasida a’zo davlatlar deklaratsiyani tasdiqladi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "1998 yilda deklaratsiya BMT Bosh assambleyasida ham qabul qilindi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2000 yil Okinavada Sakkizlik (G-8) rahbarlari genomdan daromad olmaslik kontseptsiyasini tasdiqladi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Deklaratsiya sanalari",
+        "nodes": [],
+        "header": [
+          "Sana",
+          "Voqea"
+        ],
+        "rows": [
+          [
+            "1997-yil 11-noyabr",
+            "UNESCO Bosh konferensiyasi 29-sessiyasi"
+          ],
+          [
+            "1998-yil",
+            "BMT Bosh assambleyasi qabul qildi"
+          ],
+          [
+            "2000-yil iyul",
+            "Okinava: G-8 rahbarlari tasdiqladi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: nega deklaratsiyani avval UNESCO, so‘ng BMT darajasida qabul qilish muhim? G-8 tasdig‘i nimaga xizmat qiladi? Doskada: uchta sanani zanjir shaklida yozdiring. Tipik xato: UNESCO Bosh konferensiyasi (1997) bilan BMT Bosh assambleyasi (1998)ni almashtirib yuborish."
+    },
+    {
+      "title": "Deklaratsiyaning 1-moddasi: genom va qadr-qimmat",
+      "bullets": [
+        {
+          "text": "1-modda: inson genomi inson zotining barcha vakillari birligi, ularning qadr-qimmati va xilma-xilligini e’tirof etish asosida yotadi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Genom inson qadr-qimmatini ifodalaydi; modda barcha odamlarning tengligi va rang-barangligini falsafiy jihatdan asoslaydi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Insoniyat million yillar davomida yagona genlar to‘plami asosida rivojlangan, shuning uchun har kimning genomi barchaning boyligidir.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2001 yilgacha olingan ma’lumotga ko‘ra genom 30 000 gendan iborat; ularning variantlari teng qadrli odamlarni shakllantirib kelmoqda.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: ‘genom butun insoniyat mulki’ degani nimani anglatadi? Genetik farq nega qadr-qimmat farqi bo‘lmaydi? Doskada: ‘Genom → birlik, qadr-qimmat, xilma-xillik’ sxemasini chizdiring. Tipik xato: 30 000 gen raqamini hozirgi aniq ma’lumot deb olish; manbada u 2001 yilgacha olingan ma’lumot sifatida berilgan."
+    },
+    {
+      "title": "Har bir genom – butun insoniyat mulki",
+      "bullets": [
+        {
+          "text": "Inson genomi va inson huquqlari to‘g‘risidagi Umumiy deklaratsiya 1997-yil 11-noyabrda qabul qilindi. 1-modda genomni insonning qadr-qimmati bilan bog‘laydi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Genlar to‘plami avloddan-avlodga o‘tib kelgan. Million yil oldin genlar kimdan kelganini ham, ming yildan keyin kimga o‘tishini ham hech kim bilmaydi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shu sababli har kimning genomi butun insoniyatning mulki va boyligi hisoblanadi. 1-modda barcha odamlarning tengligi va rang-barangligini asoslaydi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2-modda 1-moddaning mantiqiy davomi: har bir inson irsiy xususiyatlaridan qat’i nazar, huquqlari va qadr-qimmati hurmat qilinishiga haqli.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Nega genom ‘butun insoniyat mulki’ deyiladi? 2) Irsiy xususiyat (masalan, kasallik moyilligi) inson huquqiga ta’sir qilishi kerakmi? Doskada: 1-modda va 2-modda orasidagi mantiqiy bog‘lanishni o‘q bilan chizing. Tipik xato: 1-moddani ‘barcha odamlar genetik jihatdan bir xil’ deb tushunish. Aslida gap birlik va xilma-xillikni birga e’tirof etish haqida."
+    },
+    {
+      "title": "4-modda: genom daromad manbai emas",
+      "bullets": [
+        {
+          "text": "4-modda: inson genomi tabiiy holatda daromad manbai bo‘lib xizmat qila olmaydi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tadqiqotchi tasvirlagan («kashf qilingan») genom qismi patentlanib, tijoratga aylantirilmaydi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: tasvirlash (kashf qilish) ≠ egalik qilish. Genom qismi savdo predmeti bo‘lmaydi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Mumkin / mumkin emas",
+        "nodes": [],
+        "header": [
+          "Holat",
+          "Baho"
+        ],
+        "rows": [
+          [
+            "Genomdan tabiiy holda daromad olish",
+            "Mumkin emas"
+          ],
+          [
+            "Kashf etilgan genom qismini patentlash",
+            "Mumkin emas"
+          ],
+          [
+            "Genomni savdo predmetiga aylantirish",
+            "Mumkin emas"
+          ],
+          [
+            "Natijalarga ilmiy hamjamiyat erkin kirishi",
+            "Tamoyil sifatida qo‘llab-quvvatlanadi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Genom qismini tasvirlagan olim nega unga ega bo‘la olmaydi? 2) Patentlash tijoratlashtirish bilan qanday bog‘liq? Doskada: ‘mumkin / mumkin emas’ jadvalini talabalar bilan birga to‘ldiring. Tipik xato: ‘kashf qildim, demak meniki’ degan fikr. Manba bo‘yicha genom tijorat predmeti bo‘lolmaydi."
+    },
+    {
+      "title": "Okinava uchrashuvi va Matsuura murojaati",
+      "bullets": [
+        {
+          "text": "2000-yil iyulida Okinavada o‘tgan uchrashuvda dunyoning yetakchi sakkiz davlati (G-8) rahbarlari shu konsepsiyani tasdiqladi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "UNESCO (BMTning ta’lim, fan va madaniyat tashkiloti) Bosh direktori Koitiro Matsuura G-8 ishtirokchilariga maktub yo‘lladi. U genom natijalaridan ilmiy hamjamiyat erkin foydalanishi haqida bayonot qabul qilishni talab qildi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Matsuuraga ko‘ra, erkin kirish tamoyili inson huquqi va qadr-qimmatini hurmat qilgan holda tadqiqot va ilmiy natijalarni qo‘llash uchun mo‘ljal bo‘ladi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu fikr professor Ryuti Ida boshchiligidagi UNESCO Bioetika bo‘yicha xalqaro qo‘mitasi fikrini aks ettiradi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Ma’lumotlarga erkin kirish inson salomatligiga qanday foyda beradi? 2) Nega bunday tamoyilni yetakchi davlatlar rahbarlari tasdiqlashi muhim? Doskada: ‘Deklaratsiya → Okinava (2000) → Matsuura maktubi’ vaqt chizig‘ini chizing. Tipik xato: erkin kirish tamoyilini tadqiqotchi huquqlarini cheklash deb tushunish. Gap natijalardan butun insoniyat manfaati uchun foydalanish haqida."
+    },
+    {
+      "title": "Tezkor savol: Deklaratsiya moddalari",
+      "bullets": [
+        {
+          "text": "1-modda: inson genomi barcha odamlarning birligini, qadr-qimmati va xilma-xilligini tan olishga asoslanadi. Genom inson qadr-qimmatini ifodalaydi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim «Genomika etikasi xalqaro nuqtai nazardan»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2-modda: har bir inson irsiy xususiyatlaridan qat’i nazar, o‘z huquqlari va qadr-qimmati hurmat qilinishi huquqiga ega.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim «Genomika etikasi xalqaro nuqtai nazardan»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "4-modda: tabiiy holatdagi genom daromad manbai bo‘la olmaydi. Eslab qoling: 4-modda – “savdo yo‘q”.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim «Genomika etikasi xalqaro nuqtai nazardan»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "7-modda: shaxsni aniqlash mumkin bo‘lgan genetik ma’lumotlar sir tutilishi kerak. Eslab qoling: 7-modda – “sir saqlash”.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim «Genomika etikasi xalqaro nuqtai nazardan»"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Tezkor savol: moddalar mazmunini doskaga aralash yozing (qadr-qimmat; savdo yo‘q; sir saqlash; huquqlar hurmati), talabalar ularni 1-, 2-, 4-, 7-moddalarga moslaydi. Muhokama: nega genomni sotish mumkin emas? Doskada: to‘rt modda raqamini ustunga, mazmunini yoniga yozdiring. Tipik xato: 4-modda (savdo yo‘q) bilan 7-moddani (sir saqlash) aralashtirish."
+    },
+    {
+      "title": "7-modda: genetik ma’lumotlar sirini saqlash",
+      "bullets": [
+        {
+          "text": "Shaxsini aniqlash mumkin bo‘lgan genetik ma’lumotlar qonunga muvofiq himoyalanishi shart.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim «Genomika etikasi xalqaro nuqtai nazardan»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Himoya ma’lumot ilmiy maqsadda ham, boshqa maqsadda ham saqlanayotgan yoki qayta ishlanayotgan bo‘lsa amal qiladi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim «Genomika etikasi xalqaro nuqtai nazardan»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xavf: genom ketma-ketligi kasallikka moyillikni ko‘rsatsa, korxona odamni ishdan bo‘shatishi mumkin. Bu kamsitish shakllaridan biri.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim «Genomika etikasi xalqaro nuqtai nazardan»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: xato qilish xavfi. 7-modda sir saqlashni talab qiladi, 4-modda esa genomdan daromad olishni taqiqlaydi. Ular bir narsa emas.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim «Genomika etikasi xalqaro nuqtai nazardan»"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: ish beruvchi xodimning genetik ma’lumotini bilishi kerakmi? Ma’lumotlar banki kamsitishga qanday olib kelishi mumkin? Doskada: ‘ma’lumot – saqlash – kamsitish xavfi’ zanjirini chizdiring. Tipik xato: sirni faqat tibbiy maqsadga tegishli deb o‘ylash, aslida ilmiy va boshqa maqsadlar ham kiradi."
+    },
+    {
+      "title": "Genom tadqiqotlari: inson huquqi va ilm erkinligi",
+      "bullets": [
+        {
+          "text": "C bo‘limi ikki tomonni: tekshiriluvchi va tadqiqotchi huquqini ko‘rib chiqadi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim «Genomika etikasi xalqaro nuqtai nazardan»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hech qanday genom tadqiqoti inson huquqi, erkinligi va qadr-qimmatidan ustun qo‘yilishi mumkin emas.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim «Genomika etikasi xalqaro nuqtai nazardan»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Inson yaratish maqsadida klonlash yo‘l qo‘yilmaydi. Bu klonlash ilmini o‘rganishni taqiqlash emas.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim «Genomika etikasi xalqaro nuqtai nazardan»"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Ikki tomon huquqi",
+        "nodes": [],
+        "header": [
+          "Jihat",
+          "Tekshiriluvchi",
+          "Tadqiqotchi"
+        ],
+        "rows": [
+          [
+            "Kim",
+            "Bemor yoki sog‘lom odam",
+            "Ilmiy izlanuvchi olim"
+          ],
+          [
+            "Himoya",
+            "Huquq, erkinlik, qadr-qimmat",
+            "Ilm bilan shug‘ullanish huquqi"
+          ],
+          [
+            "Chegara",
+            "Tadqiqotdan ustun turadi",
+            "Inson huquqidan ustun emas"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: ilm erkinligi va inson qadr-qimmati to‘qnashsa, qaysi biri ustun? Klonlash tadqiqoti bilan inson yaratish klonlashi qanday farq qiladi? Doskada: jadvalni talabalar bilan birga chizdiring. Tipik xato: C bo‘limi klonlash fanini butunlay taqiqlaydi deb o‘ylash. Taqiq faqat inson yaratishga qaratilgan."
+    },
+    {
+      "title": "Klonlash: nima taqiqlangan, nima taqiqlanmagan",
+      "bullets": [
+        {
+          "text": "Deklaratsiyaga ko‘ra, inson yaratish maqsadidagi klonlash insonning qadr-qimmatini kamsitadi, shuning uchun unga yo‘l qo‘yilmaydi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: taqiq ≠ fanni to‘xtatish. Klonlash sohasidagi ilmiy ishlarni o‘rganish taqiqlanmaydi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ayrim davlatlar taqiq qonunini qabul qildi. AQSh va Rossiya masalani keyin ko‘rish uchun 5 yilga moratoriy e’lon qildi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Klonlash: holatlar",
+        "nodes": [],
+        "header": [
+          "Masala",
+          "Holat"
+        ],
+        "rows": [
+          [
+            "Inson yaratish uchun klonlash",
+            "Taqiqlanadi"
+          ],
+          [
+            "Klonlash bo‘yicha ilmiy ish",
+            "Taqiqlanmaydi, o‘rganiladi"
+          ],
+          [
+            "Ayrim davlatlar",
+            "Taqiq qonuni qabul qilgan"
+          ],
+          [
+            "AQSh va Rossiya",
+            "5 yillik moratoriy"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Inson yaratish uchun klonlashni taqiqlash bilan klonlash fanini taqiqlash o‘rtasida qanday farq bor? 2) Moratoriy qonuniy taqiqdan nimasi bilan farq qiladi? Doskada: jadvalni chizib, har qatorga misol yozdiring. Tipik xato: talabalar taqiqni klonlash bo‘yicha barcha tadqiqotlarga taalluqli deb o‘ylaydi."
+    },
+    {
+      "title": "Voqea tahlili 1: genom va inson huquqlari",
+      "bullets": [
+        {
+          "text": "Vaziyat: tadqiqot guruhi inson genomining bir bo‘lagini ta’riflab, uni patentlab, tijorat obyektiga aylantirmoqchi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Deklaratsiyaning 4-moddasi: inson genomi tabiiy holatda daromad manbai bo‘lolmaydi. Ta’riflangan qismni patentlab, tijoratga aylantirib bo‘lmaydi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "1-modda genomni insoniyat birligi va qadr-qimmatining ifodasi deydi. 2-modda: irsiy xususiyatidan qat’i nazar, har kim hurmat huquqiga ega.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: guruhning rejasiga Deklaratsiyaning qaysi moddalari to‘siq bo‘ladi va nima uchun? Javobni moddalar mazmuniga tayanib asoslang.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Talabalar juftlikda ishlasin. Muhokama: 1) 4-modda bilan 1-modda qanday bog‘langan? 2) Genom ‘butun insoniyat mulki’ degani nimani anglatadi? Doskada: vaziyat–modda–xulosa ustunlarini chizdiring. Tipik xato: faqat 4-moddani sanab, 1-modda va qadr-qimmat g‘oyasini unutish."
+    },
+    {
+      "title": "Irsiy ma’lumot egasi kim?",
+      "bullets": [
+        {
+          "text": "Manba to‘rt da’vogarni sanaydi: material bergan inson, olim, tadqiqotchi va tadqiqotga pul bergan firma.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Manbada aniq javob berilmagan: bu savol ochiq qoldirilgan.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Patent arizalari juda ko‘p. Patentlar ko‘payishi davolash va genetik testlarni ko‘pchilik uchun qimmatlashtirmoqda.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Da’vogarlar",
+        "nodes": [
+          "Material bergan inson",
+          "Bo‘lakni ta’riflagan olim",
+          "Uni qo‘llagan tadqiqotchi",
+          "Pul bergan firma",
+          "Egasi kim? Ochiq savol"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Har bir da’vogar qanday asos keltirishi mumkin? 2) Donor jamoa daromaddan ulush olmasa, manbadagi ‘biologik qaroqchilik’ xavfi paydo bo‘ladimi? Doskada: to‘rt da’vogarni chizib, ularning argumentlarini yozdiring. Tipik xato: savolga manbada tayyor javob bor deb o‘ylash; u ochiq qoldirilgan."
+    },
+    {
+      "title": "Patentlar va narx dilemmasi",
+      "bullets": [
+        {
+          "text": "Genom ketma-ketligi bo‘yicha patent arizalari juda ko‘p, kelgusi foydasi noma’lum bo‘lsa ham.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Patentlar ko‘payib, davolash va genetik testlar ko‘pchilik odam va mamlakat uchun juda qimmatlashmoqda.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dilemma: kashfiyotni himoyalash kerakmi yoki himoyani toraytirib, investitsiya kamayishi xavfiga borish kerakmi?",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Ikki yondashuv",
+        "nodes": [],
+        "header": [
+          "Yondashuv",
+          "Foydasi",
+          "Xavfi"
+        ],
+        "rows": [
+          [
+            "Patentni himoyalash",
+            "Daromad va investitsiya rag‘bati",
+            "Narx ko‘pchilikka erishilmas bo‘ladi"
+          ],
+          [
+            "Himoyani toraytirish",
+            "Odamlar kashfiyot foydasidan bahramand",
+            "Daromadsiz sohaga investitsiya kamayadi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Patent kim manfaatiga xizmat qiladi? 2) Narx va investitsiya o‘rtasida qanday muvozanat topish mumkin? Doskada: ikki ustunli jadval (himoya / cheklash) chizdiring, talabalar foyda va xavfni to‘ldirsin. Tipik xato: patent faqat zararli deb o‘ylash; manbada ikkala tomonning xavfi ko‘rsatilgan."
+    },
+    {
+      "title": "OITS dorilari: patent va narx misoli",
+      "bullets": [
+        {
+          "text": "OITS (orttirilgan immunitet tanqisligi sindromi) dorilari patent bilan himoyalangan, shu sababli ko‘p mamlakatlarda juda qimmat.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Patent va narx ziddiyati yangi emas: u uzoq vaqtdan beri aynan shu dorilar misolida ko‘rinib kelmoqda.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Genetika sohasidagi kashfiyotlar bu muammo ko‘lamini yanada kengaytiradi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daq. Muhokama: 1) OITS dorilari misoli genetik testlarga qanday taalluqli? 2) Qimmat dori kimlar uchun yetib bo‘lmas bo‘lishi mumkin? Doskada: ‘patent → himoya → yuqori narx’ zanjirini chizing. Tipik xato: manbada bo‘lmagan raqam yoki dori nomlarini keltirish."
+    },
+    {
+      "title": "Tezkor savol: patent va mulk",
+      "bullets": [
+        {
+          "text": "1-savol: genom kimning mulki? Manbaga ko‘ra, har kimning genomi barchaning boyligi, butun insoniyat mulki.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2-savol: patent narxga qanday ta’sir qiladi? Patentlar ko‘payishi bilan davolash va testlar qimmatlashmoqda.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Deklaratsiya 4-moddasi: inson genomi tabiiy holatda daromad manbai bo‘la olmaydi; tavsiflangan qismni patentlab bo‘lmaydi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: ilmiy ma’lumotlarga erkin kirish ≠ patentlangan mahsulotdan bepul foydalanish; ikkinchisi manbada aniq aytilmagan.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": true
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daq (juftlikda 2-3 daq o‘ylash, so‘ng javob). Muhokama: 1) Genomning tabiiy holati va tavsiflangan qismi farqi nimada? 2) Erkin kirish va narx masalasi qanday bog‘liq? Doskada: ‘erkin kirish ≠ bepul foydalanish’ tengsizligini yozing. Tipik xato: ma’lumotlarga erkin kirishni patent narxidan ozod bo‘lish deb tushunish."
+    },
+    {
+      "title": "Genetik ma’lumotlar banki: axloqiy jihatlar",
+      "bullets": [
+        {
+          "text": "Genetik ma’lumotni yig‘ish, qayta ishlash, saqlash va ishlatish axloqiy savollar tug‘diradigan soha hisoblanadi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "YUNESKO huzuridagi Bioetika bo‘yicha xalqaro qo‘mita bu masalaga alohida hisobot bag‘ishladi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ijtimoiy, diniy yoki etnik guruhning tanaga an’anaviy munosabatini hisobga olish zarur.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qarindoshlikni aniqlaydigan testlarni o‘tkazishda ehtiyotkor bo‘lish kerak.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Qo‘mita ko‘rgan jihatlar",
+        "nodes": [
+          "Ma’lumot yig‘ish maqsadi",
+          "Donorga axborot berish",
+          "Ixtiyoriy, xabardor rozilik",
+          "Sir saqlash",
+          "Keyingi foydalanish nazorati"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Donorga qanday ma’lumot berilishi shart? 2) Nega keyingi foydalanish alohida jihat sifatida ajratilgan? Doskada: 5 bosqichli zanjirni chizdirib, har bosqichga bittadan axloqiy savol yozdiring. Tipik xato: talabalar rozilikni bir martalik formallik deb o‘ylaydi. Eslatma: prenatal va implantatsiyadan oldingi diagnostika bu manbada alohida berilmagan, shuning uchun u yerda faqat umumiy genetik test tamoyillari aytiladi."
+    },
+    {
+      "title": "Kamsitish xavfi: ish va aholi guruhlari",
+      "bullets": [
+        {
+          "text": "Genetik ma’lumotlar banklarining keng tarqalishi ortida kamsitishning turli shakllari xavfi yotadi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Genomik ketma-ketlik mavjud yoki rivojlanishi mumkin bo‘lgan kasallikka ishora qilsa, odam ishdan bo‘shatilishi mumkin.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bunday xavf korxonaning kasbiy kasalliklarga qarshi kurash siyosati natijasida paydo bo‘lishi mumkin.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Genetik tadqiqot natijalariga qarab aholining katta guruhlari ham kamsitilishi mumkin.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daq. Muhokama: 1) Ish beruvchi xodimning genetik ma’lumotini bilishga haqlimi? 2) Genetik ma’lumotni sir saqlash kamsitishning oldini qanday oladi? Doskada: ikki ustun chizdiring: «shaxsga xavf» va «guruhga xavf». Tipik xato: kamsitishni faqat ishdan bo‘shatish bilan cheklab qo‘yish, holbuki manbada katta aholi guruhlari ham tilga olingan. Diqqat: kasallikka moyillik kasallikning o‘zi emas."
+    },
+    {
+      "title": "Tub xalqlar, rozilik va “biologik qaroqchilik”",
+      "bullets": [
+        {
+          "text": "Xabardorlikka asoslangan rozilik tub xalqlar orasida ma’no kasb etadimi, degan savol qo‘yiladi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Rozilik uchun zarur axborot tub xalqlarga qaysi tilda beriladi, degan masala ham ochiq qolmoqda.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Natija patent bilan mustahkamlansa-yu, donor jamoa daromaddan ulush olmasa, bu “biologik qaroqchilik” bo‘lmaydimi?",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Muammo zanjiri",
+        "nodes": [
+          "Jamoa genetik material beradi",
+          "Axborot tili va rozilik masalasi",
+          "Tadqiqot natija beradi",
+          "Natijaga patent olinadi",
+          "Ulush berilmasa: qaroqchilik?"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Rozilik haqiqatan «xabardor» bo‘lishi uchun nima qilish kerak? 2) Donor jamoa daromaddan ulush olishi adolatlimi? Doskada: zanjirni chizib, qaysi bosqichda adolatsizlik boshlanishini belgilashni so‘rang. Tipik xato: manbada bu savollar shaklida qo‘yilgan, talabalar ularni tayyor qonun yoki aniq javob deb qabul qiladi."
+    },
+    {
+      "title": "Voqea tahlili 2: genetik ma’lumot va rozilik",
+      "bullets": [
+        {
+          "text": "Vaziyat: uzoq jamoadan genetik namuna olindi, tadqiqot natijasi patentlandi, lekin jamoa daromaddan hech qanday ulush olmadi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Manba shunday holatni “biologik qaroqchilik” bo‘lmasmikan, deb savol ostiga qo‘yadi: donor jamoa foydadan chetda qolmoqda.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Rozilik muammosi: tub xalqlar zarur ma’lumotni qaysi tilda oladi? “Xabardorlikka asoslangan rozilik” ular uchun ma’noga egami?",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oldini olish: jamoa tadqiqotda ixtiyoriy qatnashishi va u haqida to‘liq ma’lumotga ega bo‘lishi lozim.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Bu holat nega “biologik qaroqchilik” deb baholanishi mumkin? 2) Rozilik haqiqatan ixtiyoriy bo‘lishi uchun ma’lumot qanday berilishi kerak? Doskada chizish: “jamoa → namuna → tadqiqot → patent → foyda” zanjirini chizib, jamoa qayerda chetda qolganini belgilang. Tipik xato: talabalar imzolangan rozilikni avtomatik ravishda “xabardorlikka asoslangan” deb hisoblaydi, holbuki ma’lumot tushunarli tilda berilishi shart."
+    },
+    {
+      "title": "Evgenika: Galton ta’rifi va uch bosqich",
+      "bullets": [
+        {
+          "text": "“Evgenika” atamasini 1883 yilda ingliz olimi F. Galton taklif qilgan.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Galton ta’rifi: kelajak avlod fazilatlariga ta’sir etuvchi, jamoatchilik nazoratini talab qiladigan omillarni o‘rganish.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oxirgi bosqichda qonunlar keraksiz bo‘ladi, chunki odamlar evgenika zarurligini o‘zlari tushunib yetadi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Galton bo‘yicha uch bosqich",
+        "nodes": [
+          "1. Ilmiy ishlov va targ‘ibot",
+          "2. Amaliy tadbirlar, qonunlar",
+          "3. Qonunlar keraksiz bo‘ladi"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega Galton uchinchi bosqichda qonunlarni keraksiz deb hisoblagan? 2) Jamoatchilik nazorati nimani anglatadi? Doskada chizish: uch bosqichli zanjirni chizib, har bosqichga bittadan misol yozdiring. Tipik xato: Galton bilan Mellerni adashtirish. Atamani Galton kiritgan (1883), “evgenika otasi” esa Meller deyiladi."
+    },
+    {
+      "title": "Meller g‘oyasi va tanlash mezonlari",
+      "bullets": [
+        {
+          "text": "Meller (AQSh) Yer yuzini daho odamlar bilan to‘ldirishni orzu qilgan.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "U eng aqlli odamlarni tanlab, qolganlarini sterilizatsiya qilishni taklif qilgan va tanlash mezonlarini ishlab chiqqan.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: atamani Galton (1883) kiritgan; “evgenika otasi” deb Meller ataladi. Ular bir kishi emas.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Meller mezonlari",
+        "nodes": [],
+        "header": [
+          "Mezon",
+          "Mazmuni"
+        ],
+        "rows": [
+          [
+            "Zehn",
+            "Zehnlilik, aqliy salohiyat"
+          ],
+          [
+            "Uyushqoqlik, altruizm",
+            "Boshqalar bilan hamkorlikda ishlay olish"
+          ],
+          [
+            "Salomatlik",
+            "Jismoniy va ruhiy salomatlik"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Mezonlarni kim va qanday belgilashi kerak? 2) Qolganlarni sterilizatsiya qilish taklifi nega axloqiy jihatdan xavfli? Doskada chizish: uch mezonli jadvalni chizib, har biriga bittadan misol yozdiring. Tipik xato: mezonlarni faqat aql bilan cheklash. Manbada hamkorlik, altruizm va salomatlik ham sanalgan."
+    },
+    {
+      "title": "Mendel qonunlari va irsiyat xulosalari",
+      "bullets": [
+        {
+          "text": "1900 yilda G. Mendel nomi bilan bog‘liq tug‘ma belgilarning ajralish qonunlari kashf etildi. Ular barcha o‘simlik va hayvonlarga tegishli edi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Irsiyatning xromosoma nazariyasi qaror topgach, barcha tirik mavjudotlarda irsiy apparat o‘xshash ekani ayon bo‘ldi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu inson uchun ham to‘g‘ri: jismoniy yoki aqliy nuqsonlar kuzatilgan oilalarda ular avloddan avlodga o‘tadi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shu nazariyalarga tayanib turlar va irqlar haqida katta xulosalar chiqarildi. Biroq irsiyat rolini oshirib yuborish xato.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Nega bir xil irsiy apparat haqidagi bilim ortiqcha umumlashtirishga olib kelishi mumkin? 2) Oilada uchraydigan nuqson nimani isbotlaydi va nimani isbotlamaydi? Doskada: «Mendel (1900) → xromosoma nazariyasi → inson uchun xulosa» zanjirini chizdiring. Tipik xato: talabalar irsiyatning mavjudligini irsiyat hamma narsani belgilaydi, deb tushunadi."
+    },
+    {
+      "title": "Madaniy relyativizm va poligenlik",
+      "bullets": [
+        {
+          "text": "Aqliy qobiliyat monogen emas, poligen: u bir nechta genning o‘zaro ta’siri bilan belgilanadi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Genlar bola o‘sgan va tarbiyalangan sharoitga qarab namoyon bo‘ladi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: irsiyat ≠ taqdir. Nasl sifati ko‘p omilga, ayniqsa irsiyat va madaniy muhitga bog‘liq.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Irqchilik va relyativizm",
+        "nodes": [],
+        "header": [
+          "Mezon",
+          "Irqchilik",
+          "Relyativizm"
+        ],
+        "rows": [
+          [
+            "Asosiy g‘oya",
+            "Irqlar qobiliyati jihatidan farq qiladi",
+            "Fazilatlar ko‘p omilga bog‘liq"
+          ],
+          [
+            "Omillar",
+            "Faqat tug‘ma belgilar",
+            "Irsiyat va madaniy muhit"
+          ],
+          [
+            "Irqlarga qarash",
+            "Yuqori va past irqlar bor",
+            "Irqchi g‘oyalar rad etiladi"
+          ],
+          [
+            "Oqibat",
+            "Fashizm asosi bo‘ldi",
+            "Irsiyat rolini oshirmaslik"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Nima uchun poligen belgini bitta «yaxshi gen» orqali ko‘paytirib bo‘lmaydi? 2) Tarbiya va muhit irsiy belgining namoyon bo‘lishiga qanday ta’sir qiladi? Doskada: ikki ustunli «irqchilik / relyativizm» solishtirma jadvalini chizdiring. Tipik xato: poligen belgini monogen deb o‘ylash va «irsiyat = taqdir» deb xulosa qilish."
+    },
+    {
+      "title": "Salbiy va ijobiy evgenika",
+      "bullets": [
+        {
+          "text": "Ikkala yo‘nalish ham irsiyatni yaxshilashni maqsad qiladi, lekin usuli bilan farq qiladi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Salbiy evgenika dramatik tarixga ega: majburiy sterilizatsiya qonunlari qabul qilingan.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: salbiy evgenika ≠ ijobiy evgenika. Birinchisi taqiqlaydi, ikkinchisi rag‘batlantiradi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Evgenikaning ikki yo‘nalishi",
+        "nodes": [],
+        "header": [
+          "Mezon",
+          "Salbiy",
+          "Ijobiy"
+        ],
+        "rows": [
+          [
+            "Usul",
+            "Taqiqlash choralari",
+            "Rag‘batlantirish choralari"
+          ],
+          [
+            "Vosita",
+            "Sterilizatsiya",
+            "Selektsiya"
+          ],
+          [
+            "Maqsad",
+            "Zararli irsiy belgilardan tozalash",
+            "Noyob irsiy belgilar bilan boyitish"
+          ],
+          [
+            "Misol",
+            "1907 yil Indiana qonuni",
+            "Nobel sohiblari sperma banki"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Nima uchun «ijobiy» evgenika ham axloqiy savollar tug‘diradi? 2) Qaysi mezon bo‘yicha «mақbul» xususiyatlar tanlanishi kerak? Doskada: ikki yo‘nalish jadvalini chizib, har biriga bittadan tarixiy misol yozdiring. Tipik xato: salbiy va ijobiy evgenikani aralashtirish yoki selektsiyani sterilizatsiya deb atash."
+    },
+    {
+      "title": "Tezkor savol: evgenika tushunchalari",
+      "bullets": [
+        {
+          "text": "Moslang: Galton – «evgenika» atamasini 1883 yilda taklif qilgan olim; Meller (AQSh) – «evgenika otasi», eng aqlli kishilarni tanlash tarafdori.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: Meller mezonlaridan qaysi biri ro‘yxatda yo‘q – zehnlilik, uyushqoqlik va altruizm, jismoniy va ruhiy salomatlik, boylik?",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Eslab qoling: salbiy evgenika – “taqiq/sterilizatsiya”; ijobiy evgenika – “rag‘bat/selektsiya”.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: monogen ≠ poligen. Aqliy qobiliyat bitta genga emas, bir necha genning o‘zaro ta’siriga va tarbiya muhitiga bog‘liq.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nima uchun qobiliyat ota-onadan bolaga odatda o‘tmaydi? 2) Salbiy va ijobiy evgenikaning asosiy farqi nimada? Doskada: ikki ustunli jadval chizdiring – «salbiy: taqiq, sterilizatsiya» va «ijobiy: rag‘bat, selektsiya». Tipik xato: poligen belgini monogen deb o‘ylash va ijobiy evgenikani «zararsiz» deb hisoblash."
+    },
+    {
+      "title": "AQShda majburiy sterilizatsiya: sanalar",
+      "bullets": [
+        {
+          "text": "Ruhiy xasta, aqli zaif, jinsiy jinoyatda sudlanganlar; ayrim shtatlarda ichkilikbozlar, yetimlar ham sterilizatsiya qilindi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: sterilizatsiya qilinganlarda zararli genlar borligiga hech qanday dalil bo‘lmagan.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "G‘oya tarqalishiga sabab: muhojirlar “yuksak” anglosakslarni siqib chiqaryapti, degan qarash edi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "AQSh: sana jadvali",
+        "nodes": [],
+        "header": [
+          "Yil",
+          "Voqea"
+        ],
+        "rows": [
+          [
+            "1907",
+            "Indiana: majburiy sterilizatsiya qonuni"
+          ],
+          [
+            "1924",
+            "Shimolliklarga qulay, janub/sharqqa qiyin"
+          ],
+          [
+            "1937",
+            "Jorjiya: oxirgi majburiy qonun"
+          ],
+          [
+            "Natija",
+            "100 mingdan ortiq kishi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Dalilsiz «zararli gen» tushunchasi nega majburlashni oqlay olmaydi? 2) Immigratsiya cheklovi evgenika bilan qanday bog‘langan? Doskada: 1907–1924–1937 sanalarini vaqt o‘qida chizdiring. Tipik xato: 1924 yilni sterilizatsiya qonuni deb adashtirish – u immigratsiya (muhojirlik) qonuni edi."
+    },
+    {
+      "title": "Germaniya: irqiy tozalik va fashizm",
+      "bullets": [
+        {
+          "text": "Dastlab ruhiy xastalar va Fransiya armiyasi askarlaridan tug‘ilgan metislar sterilizatsiya qilindi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gollandiyada XX asr o‘rtalarida qabul qilingan (yashirin bajarilgan) qonunlar haqida ma’lumot bor.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Maqsad – aholini zararli irsiy belgilardan “tozalash”; asosi ilmga zid irqchilik qoidalari edi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Germaniya: vaqt chizig‘i",
+        "nodes": [
+          "«Irqiy tozalik» kitoblari",
+          "1933: Gitler, davlat dasturi",
+          "Dastlab: sterilizatsiya",
+          "O‘lim lagerlari",
+          "6 mln dan ortiq yahudiy"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Fan nomidan aytilgan g‘oyalar qanday qilib jinoyatni oqlashga xizmat qildi? 2) Nima uchun «tozalash» maqsadini unutmaslik muhim? Doskada: besh bosqichli zanjirni chizib, har bosqichga bir so‘z yozdiring. Tipik xato: yo‘q qilingan lo‘lilar sonini aniq deb aytish – manbada bu son noma’lum; 6 mln faqat yahudiylarga tegishli."
+    },
+    {
+      "title": "Voqea tahlili 3: evgenika va inson huquqlari",
+      "bullets": [
+        {
+          "text": "Vaziyat: AQShda 1907-yilda Indiana shtatida majburiy sterilizatsiya qonuni qabul qilindi. Oxirgi shunday qonun 1937-yilda Jorjiyada chiqdi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qonunlar amalda bo‘lgan davrda 100 mingdan ortiq kishi, jumladan ko‘plab habashlar, majburan sterilizatsiya qilindi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Germaniyada 1933-yildan irqchilik davlat dasturiga aylandi. Avval ruhiy xastalar sterilizatsiya qilindi, keyin o‘lim lagerlari boshlandi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: “zararli genlardan tozalash” maqsadi nega huquqbuzarlikka olib keldi? Sterilizatsiya qilinganlar haqida qanday dalil yetishmagan edi?",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6–7 daq. Muhokama: 1) Manbaga ko‘ra sterilizatsiya qilinganlarda zararli genlar borligi haqida hech qanday dalil bo‘lmagan. Maqsad “tozalash” bo‘lsa-da, asos ilmga zid irqchilik qoidalari edi. Bu holat qaysi inson huquqlarini buzdi? 2) Maqsad ezgu bo‘lsa, vosita oqlanadimi? Doskada chizish: “g‘oya → qonun → majburiy amaliyot → jinoyat” zanjiri. Tipik xato: evgenika maqsadini faqat Germaniya bilan bog‘lash; manbada AQSh ham alohida ko‘rsatilgan."
+    },
+    {
+      "title": "Ijobiy evgenika: banklar va g‘oyalar",
+      "bullets": [
+        {
+          "text": "Grem Nobel sovrindorlari spermasi bankini tashkil etdi; undan ayollarni ixtiyoriy urug‘lantirish mo‘ljallangan.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Serebrovskiy va Meller donorlarning muzlatilgan spermasini urug‘lantirish uchun saqlashni taklif qildi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Meller: yadro urushidan keyin erkaklar nasl qoldirish qobiliyatini yo‘qotsa, yashovchan spermaga talab oshadi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "AQShdagi hujayra banklari (kitob yozilgan davrda)",
+        "nodes": [],
+        "header": [
+          "Bank turi",
+          "Soni",
+          "Vazifasi"
+        ],
+        "rows": [
+          [
+            "Hujayra va to‘qima banklari",
+            "1000 dan ortiq",
+            "Inson hujayra, to‘qimalarini saqlash"
+          ],
+          [
+            "Jinsiy hujayra banklari",
+            "343 ta",
+            "Jinsiy hujayralarni saqlash"
+          ],
+          [
+            "Embrion hujayra banklari",
+            "200 ta",
+            "Embrion hujayralarini saqlash"
+          ],
+          [
+            "Yagona uyushma (1976)",
+            "Barcha banklar",
+            "Umumiy standartlar ishlab chiqdi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) “Ijobiy” evgenika (rag‘batlantirish, selektsiya) “salbiy” evgenikadan (taqiqlash, sterilizatsiya) nimasi bilan farq qiladi? 2) Nobel sovrindorlari spermasi banki qanday axloqiy savollar tug‘diradi? Doskada chizish: ijobiy va salbiy evgenika ikki ustunli jadvali. Tipik xato: raqamlarni bugungi holat deb o‘ylash; ular manbadagi kitob yozilgan davrga tegishli. Tezkor savol: Serebrovskiy va Meller nimani taklif qilgan?"
+    },
+    {
+      "title": "Qobiliyat poligen: nega “dahollar” yaratib bo‘lmaydi",
+      "bullets": [
+        {
+          "text": "Qobiliyat poligen: u bir necha yoki ko‘p genlarning tasodifiy chatishuvidan iborat, ya’ni monogen emas.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qobiliyatli ota-ona bolasida qobiliyat genlari ajralib ketadi, keyingi avlodlarda tarqaladi. Qobiliyat odatda ota-onadan o‘tmaydi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Har bir odamda, qobiliyatlisida ham, yashirin holda bir nechta “zararli” gen bor. Ular jiddiy jismoniy va aqliy nuqson keltirishi mumkin.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Genotipda nomaqbul genlar bor-yo‘qligini 100% ishonch bilan aniqlash hozircha mumkin emas. Yashirin ma’lumotni o‘qisak ham, uni to‘liq tushunish qiyin.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5–6 daq. Muhokama: 1) Nega faqat dahollardan iborat jamiyat qulay bo‘lmasdi (manbada moslashuvchanlik, emotsional barqarorlik, salomatlik ham zarur deyiladi)? 2) Genni “yaxshi” yoki “yomon” deb ajratish nega qiyin? Doskada chizish: monogen va poligen belgi sxemasi. Diqqat: xato qilish xavfi: poligen ≠ monogen. Tipik xato: “qobiliyatli ota-onadan qobiliyatli bola albatta tug‘iladi” deb o‘ylash."
+    },
+    {
+      "title": "Evgenikadan tibbiy genetikaga",
+      "bullets": [
+        {
+          "text": "Evgenika qo‘ygan maqsad – insoniyatni zararli irsiyatdan xalos etish – endi tibbiy genetika zimmasida.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dubininga ko‘ra, tibbiyot qavm irsiyatini zaiflashtiradi: shaxs va qavm salomatligi o‘zaro ziddiyatda.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: evgenika – o‘tmish, qo‘yilgan maqsadlar esa tibbiy genetikaga o‘tgan.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Savol-javob",
+        "nodes": [],
+        "header": [
+          "Savol",
+          "Javob"
+        ],
+        "rows": [
+          [
+            "Kim amalga oshiradi?",
+            "Faqat umuminsoniy; sinfiy/kasbiy emas"
+          ],
+          [
+            "Qanday xislatlar kerak?",
+            "Aql bilan birga moslashuvchanlik, salomatlik"
+          ],
+          [
+            "Bugungi asosiy vazifa?",
+            "Irsiy o‘zgarishlarni boshqarish"
+          ],
+          [
+            "Adaptiv muhit nima?",
+            "Iqlim, parhez, dori-darmonlar"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Shaxs salomatligi va qavm salomatligi ziddiyati haqida Dubinin fikriga qo‘shilasizmi? 2) Nega genofondni o‘zgartirish buyurtmasi sinfiy yoki kasbiy bo‘lmasligi kerak? Doskada: evgenika → tibbiy genetika o‘tish strelkasini va jadvaldagi to‘rt savolni chizing. Tipik xato: talabalar tibbiy genetikani evgenikaning davomi (majburlash usuli) deb tushunadi; aslida vazifa irsiy o‘zgarishlarni boshqarish va sifatli hayot yaratishdir."
+    },
+    {
+      "title": "Xulosa: texnologiya, huquq va mas’uliyat",
+      "bullets": [
+        {
+          "text": "Inson genomi – butun insoniyat mulki: tabiiy holatda daromad manbai bo‘lolmaydi, inson yaratish uchun klonlash esa taqiqlanadi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim «Genomika etikasi xalqaro nuqtai nazardan»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Genetik ma’lumotlar banklari kamsitish (masalan, ishdan bo‘shatish) xavfini tug‘diradi; patentlar davolash va testlarni qimmatlashtiradi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim «Genomika etikasi xalqaro nuqtai nazardan»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Evgenika saboqi: u majburiy sterilizatsiya va irqchilik jinoyatlarini oqlash uchun ishlatilgan. Bugun tibbiy genetika irsiy o‘zgarishlarni boshqarib, sifatli hayotni ta’minlashga xizmat qiladi.",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mustaqil ish: genetik ma’lumotlar banklarining salbiy oqibatlari; xabardorlikka asoslangan rozilik mazmuni; inson biotexnologik yaratilishi nega taqiqlangan?",
+          "source": {
+            "author": "Muhamedova Z.M.",
+            "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+            "page": "II bob, 3-bo‘lim «Genomika etikasi xalqaro nuqtai nazardan»"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Genom «insoniyat mulki» degani patent va tijorat uchun nimani anglatadi? 2) Evgenika saboqlaridan bugungi genetik tadqiqotlarda qanday xulosa chiqaramiz? Doskada: to‘rt asosiy xulosani (mulk, kamsitish xavfi, klonlash taqiqi, tibbiy genetika vazifasi) markazga qo‘yib chizing. Tipik xato: klonlash tadqiqotining o‘zi taqiqlangan deb o‘ylash; taqiq inson yaratish maqsadidagi klonlashga tegishli."
+    }
+  ],
+  "mcq": [
+    {
+      "question": "Talaba Umumiy deklaratsiya UNESCO Bosh konferensiyasining 29-sessiyasida a’zo barcha mamlakatlar tomonidan qaysi yilda qabul qilinganini aniqlamoqchi. To‘g‘ri yilni tanlang.",
+      "options": [
+        "1993-yil",
+        "1997-yil",
+        "1996-yil",
+        "1998-yil"
+      ],
+      "correct_index": 1,
+      "explanation": "Inson genomi va inson huquqlari to‘g‘risidagi Umumiy deklaratsiya 1997-yil 11-noyabrda UNESCO Bosh konferensiyasining 29-sessiyasida qabul qilingan. 1993-yil Yevropa Kengashi Bosh assambleyasi konvensiyani qabul qilgan yil. 1996-yil noyabrda konvensiya matni tasdiqlangan. 1998-yilda BMT Bosh assambleyasi deklaratsiyani qabul qilgan.",
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "II bob, 3-bo‘lim"
+      }
+    },
+    {
+      "question": "Tadqiqotchilar guruhi o‘zi tavsiflagan genom qismini patentlab, tijorat maqsadida sotmoqchi. Deklaratsiyaning qaysi moddasi bunga yo‘l qo‘ymaydi?",
+      "options": [
+        "1-modda: genom insonning qadr-qimmatini ifodalaydi",
+        "2-modda: har kim o‘z huquqlari hurmat qilinishiga ega",
+        "7-modda: shaxsni aniqlovchi ma’lumotlar sir saqlanadi",
+        "4-modda: genom tabiiy holatda daromad manbai emas"
+      ],
+      "correct_index": 3,
+      "explanation": "4-moddaga ko‘ra, inson genomi tabiiy holatda daromad manbai bo‘la olmaydi. Shu sabab tavsiflangan genom qismini patentlab, tijorat predmetiga aylantirib bo‘lmaydi. 1-modda qadr-qimmat haqida, 2-modda huquqlarni hurmat qilish haqida, 7-modda ma’lumotlar sirini saqlash haqida.",
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "II bob, 3-bo‘lim"
+      }
+    },
+    {
+      "question": "Munozarada talaba: «Genomim faqat menga tegishli, insoniyatga aloqasi yo‘q», dedi. Muallif mantiqiga ko‘ra, qaysi e’tiroz eng to‘g‘ri?",
+      "options": [
+        "Genlar to‘plami avloddan avlodga o‘tgan, kelib chiqishini hech kim bilmaydi",
+        "Genlar soni 2001-yilgacha 30 000 ga yetgani uchun u umumiy hisoblanadi",
+        "Genomni birinchi tavsiflagan olim uning yagona egasi hisoblanadi",
+        "Genom tadqiqotga pul bergan firmaning mulki sifatida e’tirof etiladi"
+      ],
+      "correct_index": 0,
+      "explanation": "Muallifga ko‘ra, har bir odam genlari million yil oldin kimdan kelganini va ming yildan keyin kimga o‘tishini bilmaydi. Shu sabab har kimning genomi butun insoniyat mulki hisoblanadi. Boshqa variantlar manbadagi asosni aks ettirmaydi.",
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "II bob, 3-bo‘lim"
+      }
+    },
+    {
+      "question": "Yevropa Kengashi 80-yillarning oxirida umumyevropa ahamiyatidagi hujjat yaratishga nima sababdan qaror qildi?",
+      "options": [
+        "Genom sekvenatsiyasi yakunlangani uchun patent tartibini belgilash kerak edi",
+        "Evgenikani qayta tiklash uchun qonuniy asos yaratish zarur bo‘lgan edi",
+        "Tibbiyot va biologiya tez rivojlanib, salbiy oqibatlar xavfi real edi",
+        "UNESCO deklaratsiyasini bekor qilish uchun yangi hujjat talab etilgan edi"
+      ],
+      "correct_index": 2,
+      "explanation": "Manbaga ko‘ra, tibbiyot va biologiya jadal rivojlanayotgan, ularni qo‘llashning salbiy oqibatlari xavfi real tahdid solayotgan sharoitda Yevropa Kengashi hujjat yaratishga qaror qildi. Natijada 1993-yilda konvensiya qabul qilindi.",
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "II bob, 3-bo‘lim"
+      }
+    },
+    {
+      "question": "Talaba XX asr ikkinchi yarmidagi yutuqlarni sanamoqda. Genetikaning qaysi yangi sohalari shu davrda kashf etilgani manbada ko‘rsatilgan?",
+      "options": [
+        "Evgenika va selektsiya sohalari",
+        "Genomika va proteomika sohalari",
+        "Klonlash va sterilizatsiya sohalari",
+        "Patentlash va moratoriy sohalari"
+      ],
+      "correct_index": 1,
+      "explanation": "Manbada genetikaning yangi sohalari sifatida genomika va proteomika kashf etilgani, tegishli ma’lumotlar banklari tashkil qilingani aytilgan. Boshqa variantlar genetikaning yangi sohalari emas.",
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "II bob, 3-bo‘lim"
+      }
+    },
+    {
+      "question": "YUNESKO Bosh direktori K. Matsuura 2000-yil iyulida Okinavada G-8 yetakchilariga murojaat qilib, qaysi tamoyilga sodiqlik haqida maxsus bayonot qabul qilishni talab qildi?",
+      "options": [
+        "Genom ma’lumotlari faqat tadqiqotni moliyalagan firmaga tegishli bo‘lishi",
+        "Har bir genom kashfiyoti tadqiqotchi nomiga patentlanishi tamoyiliga",
+        "Genom natijalari bilan jahon ilmiy jamoatchiligi erkin tanishishi",
+        "Genom ma’lumotlari faqat G-8 davlatlari olimlariga ochiq bo‘lishi"
+      ],
+      "correct_index": 2,
+      "explanation": "Matsuura G-8 yetakchilaridan inson genomi tadqiqotlari natijalari bilan jahon ilmiy hamjamiyati erkin tanisha olishi tamoyiliga sodiqlikni tasdiqlovchi bayonot qabul qilishni talab qildi. Bu tamoyil butun insoniyat manfaatiga xizmat qiladi. Boshqa variantlar genomni xususiy yoki cheklangan mulkka aylantiradi va shu tamoyilga zid.",
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "II bob, 3-bo‘lim «Genomika etikasi xalqaro nuqtai nazardan»"
+      }
+    },
+    {
+      "question": "Laboratoriya ilmiy maqsadda shaxsini aniqlash mumkin bo‘lgan bemorning genetik ma’lumotlarini saqlamoqda. Deklaratsiyaning 7-moddasi bu ma’lumotlar bo‘yicha nimani talab qiladi?",
+      "options": [
+        "Ularning sir saqlanishi qonunga muvofiq muhofaza qilinishini",
+        "Ularni ish beruvchining so‘roviga binoan ochib berilishini",
+        "Ularni tadqiqotni moliyalagan firmaga topshirilishini",
+        "Ularni hamma ko‘ra oladigan ochiq bazada e’lon qilinishini"
+      ],
+      "correct_index": 0,
+      "explanation": "7-moddaga ko‘ra shaxsini aniqlash mumkin bo‘lgan odamning ilmiy yoki boshqa maqsadda saqlanayotgan yoki qayta ishlanayotgan genetik ma’lumotlari sirligi qonunga muvofiq muhofaza qilinishi lozim. Ish beruvchiga yoki ochiq bazaga berish kamsitish xavfini oshiradi.",
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "II bob, 3-bo‘lim «Genomika etikasi xalqaro nuqtai nazardan»"
+      }
+    },
+    {
+      "question": "Deputat: «Deklaratsiya klonlash sohasidagi barcha ilmiy ishlarni taqiqlaydi», dedi. Manbaga ko‘ra Deklaratsiya aslida nimani taqiqlaydi?",
+      "options": [
+        "Klonlash bo‘yicha har qanday laboratoriya tadqiqotini o‘tkazishni",
+        "Klonlash imkoniyatlarini o‘rganuvchi biologiya fanini rivojlantirishni",
+        "Klonlash usulini tibbiyotda har qanday maqsadda qo‘llashni",
+        "Klonlash yo‘li bilan inson yaratish amaliyotini amalga oshirishni"
+      ],
+      "correct_index": 3,
+      "explanation": "Manbada ta’kidlanishicha, taqiqlanayotgan narsa klonlash sohasidagi ilmiy ishlar emas, balki bu biotexnologik usulda inson yaratishdir. Inson qadr-qimmatini kamsitadigan amaliyotga, jumladan inson yaratish maqsadidagi klonlashga yo‘l qo‘yilmaydi.",
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "II bob, 3-bo‘lim «Genomika etikasi xalqaro nuqtai nazardan»"
+      }
+    },
+    {
+      "question": "Tadqiqotchilar guruhi inson genomining o‘zi tavsiflagan qismini patentlab, sotishni rejalashtirmoqda. Deklaratsiyaning 4-moddasiga ko‘ra bu reja qanday baholanadi?",
+      "options": [
+        "Kashf etgan guruh genomga to‘liq mulkiy huquq oladi",
+        "Tabiiy holatdagi genom daromad manbai bo‘la olmaydi",
+        "Faqat davlat ruxsati bilan sotish joiz hisoblanadi",
+        "Faqat moliyalagan firma sotsa, bu joiz hisoblanadi"
+      ],
+      "correct_index": 1,
+      "explanation": "4-modda: inson genomi tabiiy holatida daromad olish manbai bo‘lishi mumkin emas. Demak, tadqiqotchi tavsiflagan genom qismi patentlanib, tijorat predmetiga aylantirilmaydi. Davlat ruxsati yoki moliyalovchi firma bu qoidani o‘zgartirmaydi.",
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "II bob, 3-bo‘lim «Genomika etikasi xalqaro nuqtai nazardan»"
+      }
+    },
+    {
+      "question": "Manbaga ko‘ra, genetika sohasida patentlar sonining tez ko‘payishi qanday oqibatga olib kelmoqda?",
+      "options": [
+        "Davolash va genetik testlar arzonlashib, hammaga ochiq bo‘lmoqda",
+        "Genom tadqiqotlari butunlay to‘xtab, yangi kashfiyotlar kamaymoqda",
+        "Davolash va genetik testlar ko‘pchilik uchun hamyonbop bo‘lmay qolmoqda",
+        "Donor jamoalar daromaddan teng ulush olib, tez boyib bormoqda"
+      ],
+      "correct_index": 2,
+      "explanation": "Xalqaro simpozium ma’ruzasi loyihasida qayd etilishicha, patentlar sonining keskin o‘sishi natijasida davolash va genetik testlar aksariyat odamlar va mamlakatlar ko‘tara olmaydigan darajada qimmatlashmoqda. Manbada buning misoli sifatida patent bilan himoyalangan OITS (orttirilgan immunitet tanqisligi sindromi) dori-darmonlari keltirilgan.",
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "II bob, 3-bo‘lim «Genomika etikasi xalqaro nuqtai nazardan»"
+      }
+    },
+    {
+      "question": "Bir mamlakatda OITS (orttirilgan immunitet tanqisligi sindromi) dorilari patent bilan himoyalangan va juda qimmat. Bu holat genomika sohasida qaysi xavfning o‘xshash namunasi?",
+      "options": [
+        "Patent genlarni tadqiqotchining shaxsiy mulkiga aylantirishi shart bo‘lishi",
+        "Dori narxi pasayishi uchun patent himoyasi butunlay bekor qilinishi",
+        "Davolash va genetik testlar ko‘pchilik uchun juda qimmatlashib ketishi",
+        "Donorlar o‘z genlari uchun avtomatik ravishda to‘liq to‘lov olishi"
+      ],
+      "correct_index": 2,
+      "explanation": "Manbada patentlar soni tez ko‘payishi davolash va genetik testlarni ko‘pchilik odam va mamlakatlar uchun hamyonbop bo‘lmaydigan darajada qimmatlashtirishi aytilgan. OITS dorilari bunga misol qilib keltirilgan: ular patent bilan himoyalangani uchun ko‘p mamlakatlarda juda qimmat.",
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "II bob, 3-bo‘lim"
+      }
+    },
+    {
+      "question": "Inson genomi va inson huquqlari bo‘yicha Umumjahon deklaratsiyasining 4-moddasi genomning tabiiy holati haqida nimani belgilaydi?",
+      "options": [
+        "Tadqiqotchi tavsiflagan har bir gen qismi unga mulk bo‘lib o‘tadi",
+        "Inson genomi tabiiy holatda daromad olish manbai bo‘la olmaydi",
+        "Genomni faqat homiy firma patentlash huquqiga ega bo‘ladi",
+        "Genom ma’lumotlari faqat yopiq tarzda saqlanishi shart bo‘ladi"
+      ],
+      "correct_index": 1,
+      "explanation": "4-modda: inson genomi tabiiy holatda daromad olish manbai bo‘lib xizmat qila olmaydi. Shu sababli tadqiqotchi tavsiflagan genom qismi patentlanib, tijorat predmetiga aylantirilishi mumkin emas.",
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "II bob, 3-bo‘lim"
+      }
+    },
+    {
+      "question": "Korxona xodimining genom ketma-ketligi kasbiy kasallikka moyillikni ko‘rsatdi. Genetik ma’lumotlar banklari kengayishining qaysi xavfi shu holatda yuzaga keladi?",
+      "options": [
+        "Donor jamoa tadqiqot daromadidan ulush ololmasligi",
+        "Genom ketma-ketligi patent bilan yopilib qolishi",
+        "Genetik testlar narxining ko‘pchilik uchun oshishi",
+        "Genetik ma’lumot tufayli ishdan bo‘shatilish xavfi"
+      ],
+      "correct_index": 3,
+      "explanation": "Manbada ogohlantirilishicha, genom ketma-ketligi mavjud yoki rivojlanishi mumkin bo‘lgan kasallikka moyillikni ko‘rsatsa, korxonaning kasbiy kasalliklarga qarshi siyosati tufayli odamga ishdan bo‘shatilish xavfi tahdid solishi mumkin. Bu kamsitishning bir shaklidir.",
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "II bob, 3-bo‘lim"
+      }
+    },
+    {
+      "question": "Tub xalq jamoasi genetik tadqiqotda qatnashdi, natija patentlandi, lekin donor jamoa daromaddan ulush olmadi. Manba bu holatni qanday baholaydi?",
+      "options": [
+        "“Biologik qaroqchilik”ka aylanishi mumkin bo‘lgan holat",
+        "Xabardorlikka asoslangan rozilikning mukammal namunasi",
+        "Genom ma’lumotlariga erkin kirish tamoyilining natijasi",
+        "Tadqiqotchi ilmiy erkinligining oddiy himoyasi"
+      ],
+      "correct_index": 0,
+      "explanation": "Manbada savol shunday qo‘yilgan: tadqiqot natija berib, patent bilan mustahkamlansa va donor jamoa daromaddan ulush olmasa, bu “biologik qaroqchilik” bo‘lmaydimi. Tub xalqlar rozilik uchun zarur axborotni qaysi tilda olishi ham muammo sifatida ko‘tarilgan.",
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "II bob, 3-bo‘lim"
+      }
+    },
+    {
+      "question": "F. Galton evgenikaning uchinchi bosqichida nima yuz berishini ko‘zda tutgan?",
+      "options": [
+        "Evgenika ta’limoti butunlay taqiqlanib, tadqiqotlar to‘xtatiladi",
+        "Evgenika qonunlari majburiy tartibda yanada kuchaytiriladi",
+        "Qonunlar keraksiz bo‘ladi, chunki odamlar zarurligini anglaydi",
+        "Evgenika tadbirlari faqat ilmiy targ‘ibot bilan cheklanadi"
+      ],
+      "correct_index": 2,
+      "explanation": "Galton fikricha, birinchi bosqichda masalalar ilmiy ishlanadi va g‘oyalar targ‘ib qilinadi, ikkinchi bosqichda amaliy choralar va qonunlar qabul qilinadi. Uchinchi bosqichda esa odamlar evgenika qonunlari zarurligini tushunib yetgani uchun bunday qonunlar keraksiz bo‘lib qoladi.",
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "II bob, 4-bo‘lim"
+      }
+    },
+    {
+      "question": "Shifokor bola rivojlanishi davomida yuz bergan irsiy o‘zgarishlarni boshqarish uchun iqlim, parhez va dori-darmondan iborat adaptiv muhit yaratmoqda. Bu hozirgi kunda qaysi yo‘nalishning asosiy vazifasi hisoblanadi?",
+      "options": [
+        "Salbiy evgenika dasturlarining majburiy chora-tadbirlari",
+        "Tibbiy genetika va tibbiyotchilarning amaliy faoliyati",
+        "Ijobiy evgenika dasturlarining selektsiya choralari",
+        "Irqchilik nazariyasiga asoslangan ijtimoiy siyosat"
+      ],
+      "correct_index": 1,
+      "explanation": "Manbada evgenika o‘tmishda qoldi, uning qo‘ymagan maqsadlari esa tibbiy genetikaga o‘tdi, deyiladi. Tibbiy genetikaning hozirgi vazifasi — bola rivojlanishida yuz bergan irsiy o‘zgarishlarni boshqarish. Buning uchun kasallanish, mehnatga layoqatsizlik va o‘limning oldini oladigan adaptiv muhit (iqlim, parhez, dori-darmon) yaratiladi.",
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+      }
+    },
+    {
+      "question": "Maktab o‘qituvchisi: «Dahoning farzandi albatta daho bo‘ladi, chunki qobiliyat ota-onadan bolaga o‘tadi», dedi. Manbaga ko‘ra, bu fikr nima uchun noto‘g‘ri?",
+      "options": [
+        "Qobiliyat faqat tarbiyaga bog‘liq bo‘lib, genlarga aloqasi yo‘q",
+        "Qobiliyat bitta genning dominant belgisi sifatida meros bo‘ladi",
+        "Qobiliyat genlari faqat ota tomondan o‘g‘il bolaga o‘tadi",
+        "Qobiliyat poligen, genlar majmui bolada ajralib, avlodlar orasida taqsimlanadi"
+      ],
+      "correct_index": 3,
+      "explanation": "Manbada qobiliyat asosi poligen ekani aytiladi: u bir nechta yoki ko‘p genlarning tasodifiy chatishuvidan iborat. Qobiliyatli ota-onaning bolasida bu genlar majmui ajralib ketadi, keyingi avlodlarda esa tarqaladi. Shuning uchun qobiliyat odatda ota-onadan bolalarga o‘tmaydi.",
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+      }
+    },
+    {
+      "question": "Deputat qonun loyihasini taklif qildi: ruhiy kasal va aqli zaif kishilar majburiy sterilizatsiya qilinsin. Bu chora evgenikaning qaysi turiga kiradi?",
+      "options": [
+        "Salbiy evgenika: taqiqlash choralari va sterilizatsiya",
+        "Ijobiy evgenika: rag‘batlantirish choralari va selektsiya",
+        "Madaniy relyativizm: muhit va tarbiyani yaxshilash",
+        "Genetik terapiya: kasal genni davolash yo‘li bilan tuzatish"
+      ],
+      "correct_index": 0,
+      "explanation": "Manbada irsiyatni yaxshilashning ikki yo‘li ko‘rsatilgan. Taqiqlash choralari, ya’ni sterilizatsiya — «salbiy evgenika», rag‘batlantirish choralari, ya’ni selektsiya — «ijobiy evgenika». Majburiy sterilizatsiya salbiy evgenikaga kiradi. Misol: 1907 yilda Indiana shtatida shunday qonun qabul qilingan.",
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+      }
+    },
+    {
+      "question": "Majburiy sterilizatsiya to‘g‘risidagi birinchi qonun AQShda qaysi yili, Indiana shtatida qabul qilingan?",
+      "options": [
+        "1883 yilda",
+        "1924 yilda",
+        "1907 yilda",
+        "1937 yilda"
+      ],
+      "correct_index": 2,
+      "explanation": "Manbaga ko‘ra, majburiy sterilizatsiya haqidagi birinchi qonun AQShda 1907 yilda Indiana shtatida qabul qilingan. Oxirgisi 1937 yilda Jorjiya shtatida qabul qilingan. 1883 yil «evgenika» atamasi taklif etilgan yil, 1924 yil esa muhojirlarni cheklagan qonun yili.",
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+      }
+    },
+    {
+      "question": "Tarixchi 1933 yildan keyingi Germaniyani tahlil qilmoqda. Gitler hokimiyatga kelgach, irqchilar harakati qanday maqom oldi?",
+      "options": [
+        "Faqat akademik munozara mavzusi bo‘lib qolaverdi",
+        "Kuchayib, davlat dasturiga aylandi",
+        "Ixtiyoriy jamoat tashabbusi sifatida qoldi",
+        "Qonun bilan taqiqlanib, faoliyati to‘xtatildi"
+      ],
+      "correct_index": 1,
+      "explanation": "Manbada 1933 yilda Gitler hokimiyatga kelishi bilan irqchilar harakati kuchaygani va davlat dasturiga aylangani yozilgan. Dastlab ruhiy kasallar sterilizatsiya qilingan. Keyinchalik o‘lim lagerlarida lo‘lilar va yahudiylarni ommaviy qirg‘in qilishga kirishilgan.",
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+      }
+    }
+  ],
+  "extras": [
+    {
+      "text": "Fakt: «evgenika» atamasini 1883 yilda F. Galton taklif qilgan. U uch bosqichni nazarda tutgan: ilmiy ishlov va targ‘ibot, amaliy tadbirlar va qonunlar, so‘ng qonunlarga ehtiyoj qolmasligi. Bu g‘oyaning keyingi qismi tarixda qanday oqibatlarga olib kelganini muhokama qiling.",
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+      }
+    },
+    {
+      "text": "Hodisa tahlili: «biologik qaroqchilik». Tub xalq jamoasidan olingan genetik material asosida patent olinadi, jamoa esa daromaddan ulush olmaydi. Savollar: rozilik uchun ma’lumot qaysi tilda berilgan? «Xabardorlikka asoslangan rozilik» bu jamoada ma’noga egami?",
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "II bob, 3-bo‘lim «Genomika etikasi xalqaro nuqtai nazardan»"
+      }
+    },
+    {
+      "text": "Eslab qolish usuli (Deklaratsiya moddalari): 1 – birlik va qadr-qimmat; 2 – har kimning huquqi, genetik xususiyatidan qat’i nazar; 4 – genom daromad manbai emas; 7 – genetik ma’lumotlar sir saqlanadi. Raqamlarni «Birlik–Huquq–Daromad yo‘q–Sir» tartibida eslang.",
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "II bob, 3-bo‘lim «Genomika etikasi xalqaro nuqtai nazardan»"
+      }
+    },
+    {
+      "text": "Eslab qolish usuli (evgenika turlari): salbiy evgenika taqiqlash choralari va sterilizatsiya bilan bog‘liq («S–S»). Ijobiy evgenika rag‘batlantirish va selektsiya bilan bog‘liq («I–S»). Diqqat: ularni adashtirmang.",
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+      }
+    },
+    {
+      "text": "Tahlil: nega «daholar banki» g‘oyasi ishonchsiz? Qobiliyat ko‘p genli (poligen) bo‘lib, bolada genlar to‘plami ajralib ketadi. Qobiliyat odatda ota-onadan bolaga o‘tmaydi, har kimda esa yashirin «zararli» genlar bor.",
+      "source": {
+        "author": "Muhamedova Z.M.",
+        "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+        "page": "II bob, 4-bo‘lim «Evgenika va bioetika»"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "author": "Muhamedova Z.M.",
+      "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
+      "year": 2006,
+      "pages": "II bob 3-bo‘lim «Genomika etikasi xalqaro nuqtai nazardan» (klonlash va ildiz hujayra bandlaridan tashqari qismlar); 4-bo‘lim «Evgenika va bioetika»"
+    }
+  ]
+}
